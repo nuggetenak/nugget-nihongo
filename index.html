@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0D1117">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Nihongo">
+  <title>Nugget — Nihongo · 日本語文法</title>
+  <link rel="manifest" href="./manifest.json">
+  <!-- iOS PWA: apple-touch-icon (PNG fallback — SVG-as-data-URI not supported on iOS Safari) -->
+  <link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAELElEQVR4nO3dTVKsMBRAYXzl1IEjR67Kbbgct+Gq3MgbUHZZbR8MhE7uTc437GqBhmOA4M/D0/PLIt3yr/cGKC7jEDIOIeMQMg4h4xAyDiHjEDIOIeMQMg4h4xAyDiHjEDIOIeMQMg4h4xAyDiHjEDIOIeMQMg4h4xAyDiHjEDIOIeMQMg4h4xAyDiHjEDIOIeMQeuy9AVG8fXxdvfL5/tplS+Jw5BAyDiHjEDIOIeMQMg4h4xAyDiHjEDIOIeMQMg4h4xAyDiHjEDIOIeMQMg4h4xAyDiHjWJZbP12sxTgWLsNiZo9ju4DJ+5g6jpJjP3Mf88ZRftSn7WPSOK6O95+/3DZnHzPGUVjG1esT9vHw9PzSZcUT7usaXX5xd8aRQ4WMQ8g4hIxDqNsFaTOF9yaFf7xl7z1waoOPHKcfy6nub0eO407f5fP0MWwcdx3/J+ljzDgaXBnM0MeAcTS7Zhy+j9HiaHw3MXYfQ8XR5T5z4D7GiaPjDMSofQwSR/e5qSH7GCGO7mXcXO8AfaSPI0gZN9eevY/ccZxVxolHcaQ+Ej94O6WMPw/eKYtN+nwu68jRpozC9/w2xviRMo5mZex9508D9JEvjsZlHHv/Knsfya456suoPEL1a0x0/ZFp5LhfGeWLOtBW3vEjTRztyyj/gcI/Je0jRxy9xozJ+0gQx53K+Hx/LVkUvW2GPqLHUVnG28cXlbFrOdTH3gOcq4/QcdSXcfP1Y/cLZ51iEvURN45QZWx/7ah9BI0jYBnbSxiyj4iTYDVlHM5i778rP6W/4PNjEUeOn/uoTRkHnDKEHP6kbUSMY/neU2HL2F7ygT4ClrGEjWMJX8b28g+PH6HEjaNczRxXvRNnyaLJHcdZc1z1zpolCyVxHL1OJeTEBzFBZI0jWhnba0/aR8o4YpaxvQ0Z+3jsvQH7RM7iYt2Y35u6vhJqU7dlGjlSlHExwBCSJo5cZayy95EjjoxlrFL3kSCOvnNc9fLOkoWOI84cV72Ms2Rx48h7KiHpTjFB4xivjFWuPiLGMWoZq0R9xJoEGzuLiyyzZIFGjknKuIg/hESJY7YyVsH7CBHHnGWsIvfRP47sc1z1ws6S9YxjpDmuegFnybrFMfOphEQ7xfSJwzJIqD46xGEZ2+L00XQSzCwKBZklazdyWMZe3YeQRnFYxjF9+2gUx80PaRklOu66Pg/ezGIXugS5t3bXHJcgLOOY9juw9a2sZdRovPeaxmEZ9Vruw/4P3hSWcQgZh5BxCBmHkHEIGYeQcQgZh5BxCBmHkHEIGYeQcQgZh5BxCBmHUMT/8aYgHDmEjEPIOISMQ8g4hIxDyDiEjEPIOISMQ8g4hIxDyDiEjEPIOISMQ8g4hIxDyDiEjEPIOISMQ8g4hIxDyDiEjEPIOISMQ8g4hIxDyDiEjEPIOIT+A/1KAQvCWgBiAAAAAElFTkSuQmCC">
+  <!-- Fonts: self-hosted via /fonts/ (see css/style.css §1) -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<!-- OFFLINE BADGE -->
+<div id="offlineBadge">⚡ Offline Mode — Semua konten tersedia</div>
+
+<!-- INSTALL STRIP -->
+<div id="installStrip">
+  <span>Simpan sebagai app di HP kamu</span>
+  <button class="install-strip-btn" onclick="showInstallModal()">Cara Install →</button>
+</div>
+
+<!-- INSTALL MODAL -->
+<div id="installOverlay" onclick="if(event.target===this)hideInstallModal()" style="display:none">
+  <div id="installModal">
+    <div class="modal-header">
+      <div class="modal-title">
+        Pasang di Home Screen
+        <span>Gratis, tanpa Play Store, works offline</span>
+      </div>
+      <button class="modal-close" onclick="hideInstallModal()">✕</button>
+    </div>
+    <div class="os-tabs">
+      <button class="os-tab active" onclick="switchOS('android',this)">🤖 Android</button>
+      <button class="os-tab" onclick="switchOS('ios',this)">🍎 iPhone / iPad</button>
+    </div>
+    <div class="install-steps active" id="steps-android">
+      <div class="step"><div class="step-num">1</div><div class="step-text">Buka di <b>Google Chrome</b></div></div>
+      <div class="step"><div class="step-num">2</div><div class="step-text">Tap ikon <b>⋮</b> pojok kanan atas</div></div>
+      <div class="step"><div class="step-num">3</div><div class="step-text">Pilih <code>Tambahkan ke layar utama</code></div></div>
+      <div class="step"><div class="step-num">4</div><div class="step-text">Tap <b>Tambahkan</b> — icon 文 muncul!</div></div>
+      <div class="install-divider">atau</div>
+      <button class="direct-install-btn" id="directInstallBtn" onclick="triggerInstall()">⚡ Install Langsung</button>
+      <p class="direct-install-note" id="directInstallNote"></p>
+    </div>
+    <div class="install-steps" id="steps-ios">
+      <div class="step"><div class="step-num">1</div><div class="step-text">Buka di <b>Safari</b></div></div>
+      <div class="step"><div class="step-num">2</div><div class="step-text">Tap ikon <b>Share</b> di bawah layar</div></div>
+      <div class="step"><div class="step-num">3</div><div class="step-text">Pilih <code>Add to Home Screen</code></div></div>
+      <div class="step"><div class="step-num">4</div><div class="step-text">Tap <b>Add</b></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <div class="header-top-row">
+      <div>
+        <h1>日本語総まとめ</h1>
+        <p>JLPT N1–N5 · Referensi & Quiz Tata Bahasa Jepang</p>
+      </div>
+      <div style="display:flex;align-items:center;gap:0.5rem">
+        <button class="gs-trigger-btn" onclick="gsOpen()" title="Cari grammar & vocab (Ctrl+K)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <span>Cari</span>
+          <kbd>⌘K</kbd>
+        </button>
+        <div class="streak-badge" id="streakBadge" style="display:none">
+          <span class="streak-fire">🔥</span>
+          <span class="streak-num" id="streakNum">0</span>
+          <span class="streak-label">hari</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-rule"></div>
+</header>
+
+<!-- TAB NAV -->
+<nav class="tab-nav">
+  <button id="tabBtnBrowse" class="tab-btn active" onclick="switchTab('browse',this)">
+    <span class="tab-icon">📖</span>
+    <span class="tab-text">Materi</span>
+    <span class="tab-sub">lihat grammar</span>
+  </button>
+  <button class="tab-btn" onclick="switchTab('quiz',this)">
+    <span class="tab-icon">✏️</span>
+    <span class="tab-text">Latihan</span>
+    <span class="tab-sub">uji kemampuan</span>
+  </button>
+  <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Ganti tema">🌙</button>
+</nav>
+
+<!-- ══════════════ BROWSE PAGE ══════════════ -->
+<div id="browsePage" class="page active">
+
+  <!-- WELCOME BANNER -->
+  <div class="welcome-banner" id="welcomeBanner">
+    <div class="welcome-content">
+      <div class="welcome-title">Halo, selamat datang! 👋</div>
+      <div class="welcome-desc">
+        Di sini kamu bisa belajar pola tata bahasa Jepang (文法) untuk JLPT.
+        Telusuri grammar di tab ini, atau coba <strong>Latihan</strong> untuk quiz interaktif.
+      </div>
+      <!-- DAILY WORD -->
+      <div id="dailyWordBlock" class="dw-block" style="display:none"></div>
+    </div>
+    <button class="welcome-dismiss"
+            onclick="this.closest('.welcome-banner').style.display='none';localStorage.setItem('wb-dismissed','1')"
+            aria-label="Tutup">✕</button>
+  </div>
+
+  <!-- BROWSE SUB-TABS -->
+  <div class="browse-subtabs">
+    <button class="browse-subtab active" id="bstGrammar" onclick="switchBrowseTab('grammar',this)">
+      📖 Grammar
+    </button>
+    <button class="browse-subtab" id="bstVocab" onclick="switchBrowseTab('vocab',this)">
+      📚 Kosakata <span class="bst-badge" id="bstVocabCount"></span>
+    </button>
+  </div>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar">
+
+    <!-- Row 1: Level pills -->
+    <div class="level-pills">
+      <button class="pill active-all" id="pill-all"      onclick="pillLevel('all',this)">Semua</button>
+      <button class="pill"            id="pill-n3"       onclick="pillLevel('n3',this)"><span class="pill-dot" style="background:var(--n3)"></span>N3</button>
+      <button class="pill"            id="pill-n4"       onclick="pillLevel('n4',this)"><span class="pill-dot" style="background:var(--n4)"></span>N4</button>
+      <button class="pill pill-soon"  id="pill-n1"       disabled aria-disabled="true" title="Belum tersedia"><span class="pill-dot" style="background:var(--n1)"></span>N1</button>
+      <button class="pill pill-soon"  id="pill-n2"       disabled aria-disabled="true" title="Belum tersedia"><span class="pill-dot" style="background:var(--n2)"></span>N2</button>
+      <button class="pill pill-soon"  id="pill-n5"       disabled aria-disabled="true" title="Belum tersedia"><span class="pill-dot" style="background:var(--n5)"></span>N5</button>
+      <button class="pill"            id="pill-bookmark" onclick="pillBookmark(this)">⭐ Bookmark</button>
+    </div>
+
+    <!-- Week strip (muncul saat level dipilih) -->
+    <div class="week-strip" id="weekStrip"></div>
+
+    <!-- Row 2: Sort -->
+    <div class="sort-filter-row" id="sortFilterRow">
+      <span class="sort-label-inline">Urutkan:</span>
+      <button class="sort-chip active" id="sortLevelBtn" onclick="setSort('level',this)">Level <span class="sort-chip-arrow" id="sortLevelArrow">▾</span></button>
+      <button class="sort-chip" id="sortCatBtn" onclick="setSort('cat',this)">Kategori <span class="sort-chip-arrow" id="sortCatArrow">▾</span></button>
+    </div>
+
+  </div>
+
+  <!-- Level sort order panel -->
+  <div class="cat-panel" id="levelSortPanel">
+    <button class="cat-chip active-all-cat" id="sortAscBtn" onclick="setSortOrder('asc',this)">N1 → N5</button>
+    <button class="cat-chip" id="sortDescBtn" onclick="setSortOrder('desc',this)">N5 → N1</button>
+  </div>
+
+  <!-- Kategori panel -->
+  <div class="cat-panel" id="catPanel">
+      <button class="cat-chip active-all-cat" id="cat-all" onclick="setCat('all',this)">Semua</button>
+      <button class="cat-chip" onclick="setCat('adverbia',this)">Adverbia</button>
+      <button class="cat-chip" onclick="setCat('aspek',this)">Aspek</button>
+      <button class="cat-chip" onclick="setCat('aspek-kerja',this)">Aspek-kerja</button>
+      <button class="cat-chip" onclick="setCat('batas-waktu',this)">Batas-waktu</button>
+      <button class="cat-chip" onclick="setCat('bersamaan',this)">Bersamaan</button>
+      <button class="cat-chip" onclick="setCat('cara',this)">Cara</button>
+      <button class="cat-chip" onclick="setCat('definisi',this)">Definisi</button>
+      <button class="cat-chip" onclick="setCat('demonstrativa',this)">Demonstrativa</button>
+      <button class="cat-chip" onclick="setCat('derajat',this)">Derajat</button>
+      <button class="cat-chip" onclick="setCat('dugaan',this)">Dugaan</button>
+      <button class="cat-chip" onclick="setCat('ekspektasi',this)">Ekspektasi</button>
+      <button class="cat-chip" onclick="setCat('ekspresi',this)">Ekspresi</button>
+      <button class="cat-chip" onclick="setCat('enumerasi',this)">Enumerasi</button>
+      <button class="cat-chip" onclick="setCat('formal',this)">Formal</button>
+      <button class="cat-chip" onclick="setCat('frekuensi',this)">Frekuensi</button>
+      <button class="cat-chip" onclick="setCat('hampir',this)">Hampir</button>
+      <button class="cat-chip" onclick="setCat('harapan',this)">Harapan</button>
+      <button class="cat-chip" onclick="setCat('inferensi',this)">Inferensi</button>
+      <button class="cat-chip" onclick="setCat('izin',this)">Izin</button>
+      <button class="cat-chip" onclick="setCat('kabar',this)">Kabar</button>
+      <button class="cat-chip" onclick="setCat('kasual',this)">Kasual</button>
+      <button class="cat-chip" onclick="setCat('kata-benda-kualitas',this)">Kata-benda-kualitas</button>
+      <button class="cat-chip" onclick="setCat('kausatif',this)">Kausatif</button>
+      <button class="cat-chip" onclick="setCat('kausatif-pasif',this)">Kausatif-pasif</button>
+      <button class="cat-chip" onclick="setCat('keadaan',this)">Keadaan</button>
+      <button class="cat-chip" onclick="setCat('keadaan-hasil',this)">Keadaan-hasil</button>
+      <button class="cat-chip" onclick="setCat('kebiasaan',this)">Kebiasaan</button>
+      <button class="cat-chip" onclick="setCat('keharusan',this)">Keharusan</button>
+      <button class="cat-chip" onclick="setCat('kehendak',this)">Kehendak</button>
+      <button class="cat-chip" onclick="setCat('keinginan',this)">Keinginan</button>
+      <button class="cat-chip" onclick="setCat('kemudahan',this)">Kemudahan</button>
+      <button class="cat-chip" onclick="setCat('kemungkinan',this)">Kemungkinan</button>
+      <button class="cat-chip" onclick="setCat('kenangan',this)">Kenangan</button>
+      <button class="cat-chip" onclick="setCat('keputusan',this)">Keputusan</button>
+      <button class="cat-chip" onclick="setCat('kesempatan',this)">Kesempatan</button>
+      <button class="cat-chip" onclick="setCat('kewajiban',this)">Kewajiban</button>
+      <button class="cat-chip" onclick="setCat('kondisional',this)">Kondisional</button>
+      <button class="cat-chip" onclick="setCat('konfirmasi',this)">Konfirmasi</button>
+      <button class="cat-chip" onclick="setCat('konjungsi',this)">Konjungsi</button>
+      <button class="cat-chip" onclick="setCat('konsesi',this)">Konsesi</button>
+      <button class="cat-chip" onclick="setCat('kontras',this)">Kontras</button>
+      <button class="cat-chip" onclick="setCat('kutipan',this)">Kutipan</button>
+      <button class="cat-chip" onclick="setCat('larangan',this)">Larangan</button>
+      <button class="cat-chip" onclick="setCat('logika',this)">Logika</button>
+      <button class="cat-chip" onclick="setCat('materi',this)">Materi</button>
+      <button class="cat-chip" onclick="setCat('memberi-menerima',this)">Memberi-menerima</button>
+      <button class="cat-chip" onclick="setCat('niat',this)">Niat</button>
+      <button class="cat-chip" onclick="setCat('nominalisasi',this)">Nominalisasi</button>
+      <button class="cat-chip" onclick="setCat('partikel',this)">Partikel</button>
+      <button class="cat-chip" onclick="setCat('partikel-akhir',this)">Partikel-akhir</button>
+      <button class="cat-chip" onclick="setCat('pasif',this)">Pasif</button>
+      <button class="cat-chip" onclick="setCat('pembatasan',this)">Pembatasan</button>
+      <button class="cat-chip" onclick="setCat('penekanan',this)">Penekanan</button>
+      <button class="cat-chip" onclick="setCat('penemuan',this)">Penemuan</button>
+      <button class="cat-chip" onclick="setCat('pengalaman',this)">Pengalaman</button>
+      <button class="cat-chip" onclick="setCat('penggantian',this)">Penggantian</button>
+      <button class="cat-chip" onclick="setCat('pengulangan',this)">Pengulangan</button>
+      <button class="cat-chip" onclick="setCat('penjelasan',this)">Penjelasan</button>
+      <button class="cat-chip" onclick="setCat('penyangkalan',this)">Penyangkalan</button>
+      <button class="cat-chip" onclick="setCat('penyesalan',this)">Penyesalan</button>
+      <button class="cat-chip" onclick="setCat('peran',this)">Peran</button>
+      <button class="cat-chip" onclick="setCat('perbandingan',this)">Perbandingan</button>
+      <button class="cat-chip" onclick="setCat('perintah',this)">Perintah</button>
+      <button class="cat-chip" onclick="setCat('peristiwa',this)">Peristiwa</button>
+      <button class="cat-chip" onclick="setCat('permintaan',this)">Permintaan</button>
+      <button class="cat-chip" onclick="setCat('permintaan-sopan',this)">Permintaan-sopan</button>
+      <button class="cat-chip" onclick="setCat('persepsi',this)">Persepsi</button>
+      <button class="cat-chip" onclick="setCat('persiapan',this)">Persiapan</button>
+      <button class="cat-chip" onclick="setCat('perspektif',this)">Perspektif</button>
+      <button class="cat-chip" onclick="setCat('perubahan',this)">Perubahan</button>
+      <button class="cat-chip" onclick="setCat('perumpamaan',this)">Perumpamaan</button>
+      <button class="cat-chip" onclick="setCat('potensi',this)">Potensi</button>
+      <button class="cat-chip" onclick="setCat('referensi',this)">Referensi</button>
+      <button class="cat-chip" onclick="setCat('rentang',this)">Rentang</button>
+      <button class="cat-chip" onclick="setCat('saran',this)">Saran</button>
+      <button class="cat-chip" onclick="setCat('sebab',this)">Sebab</button>
+      <button class="cat-chip" onclick="setCat('sebab-akibat',this)">Sebab-akibat</button>
+      <button class="cat-chip" onclick="setCat('te-bentuk',this)">Te-bentuk</button>
+      <button class="cat-chip" onclick="setCat('transitif-intransitif',this)">Transitif-intransitif</button>
+      <button class="cat-chip" onclick="setCat('tujuan',this)">Tujuan</button>
+      <button class="cat-chip" onclick="setCat('usaha',this)">Usaha</button>
+      <button class="cat-chip" onclick="setCat('waktu',this)">Waktu</button>
+    </div>
+
+    <!-- Search -->
+    <div class="search-row">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+      <input type="search" id="searchInput" placeholder="Cari grammar, arti, bacaan..."
+        oninput="filterSearch(this.value)" autocomplete="off" autocorrect="off" spellcheck="false">
+    </div>
+
+    <!-- Progress Panel (SRS-powered) -->
+    <div class="progress-panel" id="progressPanel">
+      <div class="progress-panel-header">
+        <span class="progress-panel-title">📊 Progress Belajar</span>
+        <span class="progress-panel-total" id="progressPanelTotal">0 / 0 dipelajari</span>
+      </div>
+      <div class="progress-due-banner" id="progressDueBanner" style="display:none">
+        <span class="due-fire">⏰</span>
+        <span class="due-text"><strong id="dueCount">0</strong> kartu siap diulang hari ini</span>
+        <button class="due-review-btn" onclick="startQuickReview()">Ulang</button>
+      </div>
+      <div class="progress-legend">
+        <span class="leg-item"><span class="leg-dot mature"></span>Lancar</span>
+        <span class="leg-item"><span class="leg-dot young"></span>Ingat</span>
+        <span class="leg-item"><span class="leg-dot learning"></span>Belajar</span>
+        <span class="leg-item"><span class="leg-dot unseen"></span>Belum</span>
+      </div>
+      <div class="progress-level-row">
+        <span class="progress-lv-badge n1">N1</span>
+        <div class="progress-lv-bar-wrap">
+          <div class="plv-mature"   id="plv-mature-n1"   style="width:0%"></div>
+          <div class="plv-young"    id="plv-young-n1"    style="width:0%"></div>
+          <div class="plv-learning" id="plv-learning-n1" style="width:0%"></div>
+        </div>
+        <span class="progress-lv-count" id="plv-count-n1">0/0</span>
+      </div>
+      <div class="progress-level-row">
+        <span class="progress-lv-badge n2">N2</span>
+        <div class="progress-lv-bar-wrap">
+          <div class="plv-mature"   id="plv-mature-n2"   style="width:0%"></div>
+          <div class="plv-young"    id="plv-young-n2"    style="width:0%"></div>
+          <div class="plv-learning" id="plv-learning-n2" style="width:0%"></div>
+        </div>
+        <span class="progress-lv-count" id="plv-count-n2">0/0</span>
+      </div>
+      <div class="progress-level-row">
+        <span class="progress-lv-badge n3">N3</span>
+        <div class="progress-lv-bar-wrap">
+          <div class="plv-mature"   id="plv-mature-n3"   style="width:0%"></div>
+          <div class="plv-young"    id="plv-young-n3"    style="width:0%"></div>
+          <div class="plv-learning" id="plv-learning-n3" style="width:0%"></div>
+        </div>
+        <span class="progress-lv-count" id="plv-count-n3">0/0</span>
+      </div>
+      <div class="progress-level-row">
+        <span class="progress-lv-badge n4">N4</span>
+        <div class="progress-lv-bar-wrap">
+          <div class="plv-mature"   id="plv-mature-n4"   style="width:0%"></div>
+          <div class="plv-young"    id="plv-young-n4"    style="width:0%"></div>
+          <div class="plv-learning" id="plv-learning-n4" style="width:0%"></div>
+        </div>
+        <span class="progress-lv-count" id="plv-count-n4">0/0</span>
+      </div>
+      <div class="progress-level-row">
+        <span class="progress-lv-badge n5">N5</span>
+        <div class="progress-lv-bar-wrap">
+          <div class="plv-mature"   id="plv-mature-n5"   style="width:0%"></div>
+          <div class="plv-young"    id="plv-young-n5"    style="width:0%"></div>
+          <div class="plv-learning" id="plv-learning-n5" style="width:0%"></div>
+        </div>
+        <span class="progress-lv-count" id="plv-count-n5">0/0</span>
+      </div>
+    </div>
+
+  <div class="stats">Menampilkan <strong id="statCount">0</strong> pola grammar</div>
+  <div class="cards-wrap" id="main"></div>
+  <!-- ══ VOCAB BROWSE PANEL ══ -->
+  <div id="vocabBrowsePanel" style="display:none">
+    <div id="vbBookPanel"></div>
+    <div id="vbProgressPanel" style="display:none"></div>
+    <!-- Vocab filter bar -->
+    <div class="vocab-filter-bar">
+      <div class="level-pills">
+        <button class="pill active-all" id="vpill-all"  onclick="vbPillLevel('all',this)">Semua</button>
+        <button class="pill" id="vpill-n5" onclick="vbPillLevel('n5',this)"><span class="pill-dot" style="background:var(--n5)"></span>N5</button>
+        <button class="pill" id="vpill-n4" onclick="vbPillLevel('n4',this)"><span class="pill-dot" style="background:var(--n4)"></span>N4</button>
+        <button class="pill pill-soon" id="vpill-n3" disabled aria-disabled="true" title="Belum tersedia"><span class="pill-dot" style="background:var(--n3)"></span>N3</button>
+      </div>
+      <div class="vocab-pos-row" id="vocabPosRow">
+        <button class="cat-chip active-all-cat" onclick="vbPillPos('all',this)">Semua POS</button>
+        <button class="cat-chip" onclick="vbPillPos('verb-u',this)">Kata Kerja</button>
+        <button class="cat-chip" onclick="vbPillPos('noun',this)">Kata Benda</button>
+        <button class="cat-chip" onclick="vbPillPos('adj-i',this)">Kata Sifat い</button>
+        <button class="cat-chip" onclick="vbPillPos('adj-na',this)">Kata Sifat な</button>
+        <button class="cat-chip" onclick="vbPillPos('adv',this)">Kata Keterangan</button>
+      </div>
+      <div class="search-row">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input type="search" id="vocabSearchInput" placeholder="Cari kata, arti, romaji..."
+          oninput="vbSearch(this.value)" autocomplete="off" spellcheck="false">
+      </div>
+    </div>
+    <!-- Vocab count -->
+    <div class="vocab-count-row">
+      <span id="vocabCountTxt" class="browse-count-label">0 kata</span>
+    </div>
+    <!-- Vocab cards -->
+    <div class="vocab-grid" id="vocabGrid"></div>
+  </div>
+
+</div><!-- end browsePage -->
+
+<!-- ══════════════ QUIZ PAGE ══════════════ -->
+<div id="quizPage" class="page">
+
+  <!-- SETUP -->
+  <div id="quizSetup" class="quiz-setup">
+
+    <div class="quiz-setup-intro">
+      <div class="quiz-setup-title">Pilih Mode Latihan</div>
+      <div class="quiz-setup-sub">Mulai dari Flashcard kalau baru pertama kali, atau coba Challenge kalau sudah lebih mahir.</div>
+    </div>
+
+    <div class="quiz-category-tabs">
+      <button class="qcat-tab active" onclick="switchQuizCategory('flashcard',this)">
+        <span class="qcat-icon">📖</span>
+        <span class="qcat-label">Flashcard</span>
+      </button>
+      <button class="qcat-tab" onclick="switchQuizCategory('latihan',this)">
+        <span class="qcat-icon">✍️</span>
+        <span class="qcat-label">Latihan</span>
+      </button>
+      <button class="qcat-tab" onclick="switchQuizCategory('challenge',this)">
+        <span class="qcat-icon">🔥</span>
+        <span class="qcat-label">Challenge</span>
+      </button>
+      <button class="qcat-tab" onclick="switchQuizCategory('vocab',this)">
+        <span class="qcat-icon">📚</span>
+        <span class="qcat-label">Kosakata</span>
+      </button>
+      <button class="qcat-tab" onclick="switchQuizCategory('mixed',this)">
+        <span class="qcat-icon">🔀</span>
+        <span class="qcat-label">Mixed</span>
+      </button>
+    </div>
+
+    <div class="quiz-mode-group active" id="qcat-flashcard">
+      <div class="qcat-desc">Balik kartu grammar, nilai sendiri seberapa hafal. Cocok untuk pemula.</div>
+      <button class="mode-btn active" id="modeFlip" onclick="setQuizMode('flip',this)">
+        <span class="mode-icon">📖</span>
+        <div class="mode-text">
+          <span class="mode-label">Flip Card</span>
+          <span class="mode-desc">Lihat grammar → balik kartu → nilai diri sendiri</span>
+        </div>
+      </button>
+    </div>
+
+    <div class="quiz-mode-group" id="qcat-latihan">
+      <div class="qcat-desc">Isi kalimat dan pilih jawaban yang tepat. Bagus untuk memperkuat pemahaman.</div>
+      <button class="mode-btn" id="modeFill" onclick="setQuizMode('fill',this)">
+        <span class="mode-icon">✏️</span>
+        <div class="mode-text">
+          <span class="mode-label">Fill In</span>
+          <span class="mode-desc">Isi bagian yang hilang dalam kalimat Jepang</span>
+        </div>
+      </button>
+      <button class="mode-btn" id="modeRearrange" onclick="setQuizMode('rearrange',this)">
+        <span class="mode-icon">🔀</span>
+        <div class="mode-text">
+          <span class="mode-label">Susun Kalimat</span>
+          <span class="mode-desc">Taruh grammar (★) di posisi yang paling tepat</span>
+        </div>
+      </button>
+      <button class="mode-btn" id="modeMultiChoice" onclick="setQuizMode('multi_choice',this)">
+        <span class="mode-icon">🎯</span>
+        <div class="mode-text">
+          <span class="mode-label">Pilihan Ganda</span>
+          <span class="mode-desc">Pilih satu dari empat jawaban yang tersedia</span>
+        </div>
+      </button>
+    </div>
+
+    <div class="quiz-mode-group" id="qcat-challenge">
+      <div class="qcat-desc">Lebih menantang — ubah bentuk kata, terjemahkan, dan deteksi kesalahan grammar.</div>
+      <button class="mode-btn" id="modeConjugation" onclick="setQuizMode('conjugation',this)">
+        <span class="mode-icon">🔤</span>
+        <div class="mode-text">
+          <span class="mode-label">Konjugasi</span>
+          <span class="mode-desc">Ubah bentuk kata kerja sesuai konteks kalimat</span>
+        </div>
+      </button>
+      <button class="mode-btn" id="modeTranslation" onclick="setQuizMode('translation',this)">
+        <span class="mode-icon">🔄</span>
+        <div class="mode-text">
+          <span class="mode-label">Terjemahan</span>
+          <span class="mode-desc">Terjemahkan kalimat antara Jepang dan Indonesia</span>
+        </div>
+      </button>
+      <button class="mode-btn" id="modeTypeTr" onclick="setQuizMode('typetr',this)">
+        <span class="mode-icon">⌨️</span>
+        <div class="mode-text">
+          <span class="mode-label">Ketik Terjemahan</span>
+          <span class="mode-desc">Terjemahkan kalimat dengan mengetik — JP↔ID</span>
+        </div>
+      </button>
+      <button class="mode-btn" id="modeErrorFind" onclick="setQuizMode('error_find',this)">
+        <span class="mode-icon">🔍</span>
+        <div class="mode-text">
+          <span class="mode-label">Cari Kesalahan</span>
+          <span class="mode-desc">Temukan kalimat yang mengandung kesalahan grammar</span>
+        </div>
+      </button>
+    </div>
+
+    <div class="quiz-mode-group" id="qcat-vocab">
+      <div class="qcat-desc">Latih kosakata dari Vocab DB — arti, cara baca, dan penggunaan dalam kalimat.</div>
+      <button class="mode-btn" id="modeVocabFlash" onclick="setQuizMode('vocab_flash',this)">
+        <span class="mode-icon">🃏</span>
+        <div class="mode-text">
+          <span class="mode-label">Flashcard Kata</span>
+          <span class="mode-desc">Balik kartu — lihat kanji, tebak artinya</span>
+        </div>
+      </button>
+      <button class="mode-btn" id="modeVocabMc" onclick="setQuizMode('vocab_mc',this)">
+        <span class="mode-icon">🎯</span>
+        <div class="mode-text">
+          <span class="mode-label">Pilihan Ganda Arti</span>
+          <span class="mode-desc">Pilih arti yang paling tepat dari 4 pilihan</span>
+        </div>
+      </button>
+      <button class="mode-btn" id="modeVocabFill" onclick="setQuizMode('vocab_fill',this)">
+        <span class="mode-icon">✏️</span>
+        <div class="mode-text">
+          <span class="mode-label">Isi Kalimat</span>
+          <span class="mode-desc">Pilih kata yang tepat untuk melengkapi kalimat</span>
+        </div>
+      </button>
+    </div>
+
+    <div class="quiz-mode-group" id="qcat-mixed">
+      <div class="qcat-desc">Grammar flashcard + pilihan ganda kosakata dalam satu sesi. Cocok untuk review harian.</div>
+      <button class="mode-btn" id="modeMixedReview" onclick="setQuizMode('mixed_review',this)">
+        <span class="mode-icon">🔀</span>
+        <div class="mode-text">
+          <span class="mode-label">Mixed Review</span>
+          <span class="mode-desc">Grammar + Kosakata acak dalam satu sesi (20 soal)</span>
+        </div>
+      </button>
+    </div>
+
+    <!-- Quick Review banner (SRS due) -->
+    <div class="quick-review-card" id="quickReviewCard" style="display:none">
+      <div class="qr-left">
+        <span class="qr-icon">⚡</span>
+        <div>
+          <div class="qr-title">Review Hari Ini</div>
+          <div class="qr-sub"><span id="qrDueCount">0</span> kartu siap diulang hari ini</div>
+        </div>
+      </div>
+      <button class="qr-btn" onclick="startQuickReview()">Mulai</button>
+    </div>
+
+    <div class="quiz-section-divider" id="quizDivider" style="display:none">
+      <span>atau pilih manual</span>
+    </div>
+
+    <!-- Level pills -->
+    <div class="quiz-option-group">
+      <span class="quiz-option-label">Level</span>
+      <div class="level-pills" style="margin-top:0.35rem">
+        <button class="pill quiz-level-pill active-all" onclick="quizPillLevel('all',this)">Semua</button>
+        <button class="pill quiz-level-pill" onclick="quizPillLevel('n1',this)"><span class="pill-dot" style="background:var(--n1)"></span>N1</button>
+        <button class="pill quiz-level-pill" onclick="quizPillLevel('n2',this)"><span class="pill-dot" style="background:var(--n2)"></span>N2</button>
+        <button class="pill quiz-level-pill" onclick="quizPillLevel('n3',this)"><span class="pill-dot" style="background:var(--n3)"></span>N3</button>
+        <button class="pill quiz-level-pill" onclick="quizPillLevel('n4',this)"><span class="pill-dot" style="background:var(--n4)"></span>N4</button>
+        <button class="pill quiz-level-pill" onclick="quizPillLevel('n5',this)"><span class="pill-dot" style="background:var(--n5)"></span>N5</button>
+      </div>
+    </div>
+
+    <!-- Week strip -->
+    <div class="week-strip" id="quizWeekStrip" style="margin: 0.1rem -0.9rem 0; padding: 0 0.9rem;"></div>
+
+    <!-- Kategori -->
+    <div class="quiz-option-group" id="quizCatGroup">
+      <span class="quiz-option-label">Kategori</span>
+      <div class="cat-panel show" style="position:static;border:none;padding:0.4rem 0 0;background:none;margin:0;animation:none">
+        <button class="cat-chip quiz-cat-chip active-all-cat" onclick="quizSelCat('all',this)">Semua</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('adverbia',this)">Adverbia</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('aspek',this)">Aspek</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('aspek-kerja',this)">Aspek-kerja</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('batas-waktu',this)">Batas-waktu</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('bersamaan',this)">Bersamaan</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('cara',this)">Cara</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('definisi',this)">Definisi</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('demonstrativa',this)">Demonstrativa</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('derajat',this)">Derajat</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('dugaan',this)">Dugaan</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('ekspektasi',this)">Ekspektasi</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('ekspresi',this)">Ekspresi</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('enumerasi',this)">Enumerasi</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('formal',this)">Formal</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('frekuensi',this)">Frekuensi</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('hampir',this)">Hampir</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('harapan',this)">Harapan</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('inferensi',this)">Inferensi</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('izin',this)">Izin</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('kabar',this)">Kabar</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('kasual',this)">Kasual</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('kata-benda-kualitas',this)">Kata-benda-kualitas</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('kausatif',this)">Kausatif</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('kausatif-pasif',this)">Kausatif-pasif</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('keadaan',this)">Keadaan</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('keadaan-hasil',this)">Keadaan-hasil</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('kebiasaan',this)">Kebiasaan</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('keharusan',this)">Keharusan</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('kehendak',this)">Kehendak</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('keinginan',this)">Keinginan</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('kemudahan',this)">Kemudahan</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('kemungkinan',this)">Kemungkinan</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('kenangan',this)">Kenangan</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('keputusan',this)">Keputusan</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('kesempatan',this)">Kesempatan</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('kewajiban',this)">Kewajiban</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('kondisional',this)">Kondisional</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('konfirmasi',this)">Konfirmasi</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('konjungsi',this)">Konjungsi</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('konsesi',this)">Konsesi</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('kontras',this)">Kontras</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('kutipan',this)">Kutipan</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('larangan',this)">Larangan</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('logika',this)">Logika</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('materi',this)">Materi</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('memberi-menerima',this)">Memberi-menerima</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('niat',this)">Niat</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('nominalisasi',this)">Nominalisasi</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('partikel',this)">Partikel</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('partikel-akhir',this)">Partikel-akhir</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('pasif',this)">Pasif</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('pembatasan',this)">Pembatasan</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('penekanan',this)">Penekanan</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('penemuan',this)">Penemuan</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('pengalaman',this)">Pengalaman</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('penggantian',this)">Penggantian</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('pengulangan',this)">Pengulangan</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('penjelasan',this)">Penjelasan</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('penyangkalan',this)">Penyangkalan</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('penyesalan',this)">Penyesalan</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('peran',this)">Peran</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('perbandingan',this)">Perbandingan</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('perintah',this)">Perintah</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('peristiwa',this)">Peristiwa</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('permintaan',this)">Permintaan</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('permintaan-sopan',this)">Permintaan-sopan</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('persepsi',this)">Persepsi</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('persiapan',this)">Persiapan</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('perspektif',this)">Perspektif</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('perubahan',this)">Perubahan</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('perumpamaan',this)">Perumpamaan</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('potensi',this)">Potensi</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('referensi',this)">Referensi</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('rentang',this)">Rentang</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('saran',this)">Saran</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('sebab',this)">Sebab</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('sebab-akibat',this)">Sebab-akibat</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('te-bentuk',this)">Te-bentuk</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('transitif-intransitif',this)">Transitif-intransitif</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('tujuan',this)">Tujuan</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('usaha',this)">Usaha</button>
+        <button class="cat-chip quiz-cat-chip" onclick="quizSelCat('waktu',this)">Waktu</button>
+      </div>
+    </div>
+
+    <button class="quiz-start-btn" onclick="startQuiz()">
+      <span>Mulai Latihan</span>
+    </button>
+  </div>
+
+  <!-- ACTIVE QUIZ (Flip Card) -->
+  <div id="quizActive" style="display:none">
+    <div class="quiz-topbar">
+      <div class="quiz-progress">
+        <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="quizProgressFill"></div></div>
+        <span class="quiz-progress-txt" id="quizProgressTxt">0 / 0</span>
+      </div>
+      <button id="flipEndBtn" class="quiz-end-btn" onclick="confirmEndQuiz()" title="Akhiri quiz">✕ Akhiri</button>
+    </div>
+    <div class="quiz-score" id="quizScoreTxt">✅ 0 &nbsp; 😅 0 &nbsp; ❌ 0</div>
+
+    <div class="quiz-card-wrap" id="quizCardWrap" onclick="flipQuizCard()">
+      <div class="swipe-hint-overlay" id="swipeOverlay"></div>
+      <div class="quiz-flip-inner">
+        <div class="quiz-face front">
+          <div class="quiz-face-label">Grammar</div>
+          <div class="qgrammar" id="qGrammar"></div>
+          <div class="qreading" id="qReading"></div>
+          <div class="qmeaning" id="qMeaning"></div>
+          <div class="quiz-tap-hint">👆 Tap kartu untuk lihat jawaban</div>
+          <div class="quiz-swipe-hint" id="quizSwipeHint" style="display:none">← Hafal &nbsp;·&nbsp; ↓ Ragu &nbsp;·&nbsp; → Lupa</div>
+        </div>
+        <div class="quiz-face back">
+          <div class="quiz-face-label">Penjelasan</div>
+          <div class="qdesc" id="qDesc"></div>
+          <div class="qexamples" id="qExamples"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="assess-btns" id="assessBtns">
+      <button class="assess-btn know"   onclick="assess('know')">✅<span>Hafal</span></button>
+      <button class="assess-btn unsure" onclick="assess('unsure')">😅<span>Ragu</span></button>
+      <button class="assess-btn forgot" onclick="assess('forgot')">❌<span>Lupa</span></button>
+    </div>
+  </div>
+
+  <!-- MODAL KONFIRMASI AKHIRI -->
+  <div class="modal-overlay" id="endQuizModal">
+    <div class="confirm-modal">
+      <div class="confirm-icon">⚠️</div>
+      <div class="confirm-title">Akhiri Quiz?</div>
+      <div class="confirm-sub">Kamu sudah menjawab <strong id="confirmDone">0</strong> dari <strong id="confirmTotal">0</strong> kartu.<br>Progress yang sudah direkam tetap tersimpan.</div>
+      <div class="confirm-btns">
+        <button class="confirm-btn-cancel" onclick="cancelEndQuiz()">Lanjutkan</button>
+        <button class="confirm-btn-ok"    onclick="doEndQuiz()">Ya, Akhiri</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FILL-IN ACTIVE QUIZ -->
+  <div id="fillInActive" style="display:none">
+    <div class="quiz-topbar">
+      <div class="quiz-progress">
+        <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="fillProgressFill"></div></div>
+        <span class="quiz-progress-txt" id="fillProgressTxt">0 / 0</span>
+      </div>
+      <button id="fillEndBtn" class="quiz-end-btn" onclick="endFillQuiz()" title="Akhiri">✕ Akhiri</button>
+    </div>
+    <div class="quiz-score" id="fillScoreTxt">✅ 0 &nbsp; ❌ 0</div>
+    <div class="fill-card" id="fillCard">
+      <div class="fill-level-badge" id="fillLevelBadge">N3</div>
+      <div class="fill-sentence" id="fillSentence"></div>
+      <div class="fill-grammar-hint" id="fillGrammarHint"></div>
+      <div class="fill-choices" id="fillChoices"></div>
+      <div class="fill-feedback" id="fillFeedback" style="display:none">
+        <div class="fill-feedback-verdict" id="fillVerdict"></div>
+        <div class="fill-explanation" id="fillExplanation"></div>
+        <button class="fill-next-btn" onclick="fillNext()">Lanjut →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SUSUN KALIMAT (Rearrange / ★ placement) -->
+  <div id="rearrangeActive" style="display:none">
+    <div class="quiz-topbar">
+      <div class="quiz-progress">
+        <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="reaProgressFill"></div></div>
+        <span class="quiz-progress-txt" id="reaProgressTxt">0 / 0</span>
+      </div>
+      <button id="reaEndBtn" class="quiz-end-btn" onclick="endRearrangeQuiz()" title="Akhiri">✕ Akhiri</button>
+    </div>
+    <div class="quiz-score" id="reaScoreTxt">✅ 0 &nbsp; ❌ 0</div>
+    <div class="fill-card" id="reaCard">
+      <div class="fill-level-badge" id="reaLevelBadge">N3</div>
+      <div class="rea-sentence" id="reaSentence"></div>
+      <div class="rea-parts" id="reaParts"></div>
+      <div class="fill-feedback" id="reaFeedback" style="display:none">
+        <div class="fill-feedback-verdict" id="reaVerdict"></div>
+        <div class="rea-correct-order" id="reaCorrectOrder"></div>
+        <div class="fill-explanation" id="reaExplanation"></div>
+        <button class="fill-next-btn rea-next-btn" onclick="reaNext()">Lanjut →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ CONJUGATION ACTIVE QUIZ ══ -->
+  <div id="conjugationActive" style="display:none">
+    <div class="quiz-topbar">
+      <div class="quiz-progress">
+        <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="conjProgressFill"></div></div>
+        <span class="quiz-progress-txt" id="conjProgressTxt">0 / 0</span>
+      </div>
+      <button class="quiz-end-btn" onclick="endConjugationQuiz()">✕ Akhiri</button>
+    </div>
+    <div class="quiz-score" id="conjScoreTxt">✅ 0 &nbsp; ❌ 0</div>
+    <div class="fill-card" id="conjCard">
+      <div class="fill-level-badge" id="conjLevelBadge">N3</div>
+      <div class="conj-instruction" id="conjInstruction"></div>
+      <div class="conj-base" id="conjBase"></div>
+      <div class="fill-grammar-hint" id="conjGrammarHint"></div>
+      <div class="fill-choices" id="conjChoices"></div>
+      <div class="fill-feedback" id="conjFeedback" style="display:none">
+        <div class="fill-feedback-verdict" id="conjVerdict"></div>
+        <div class="fill-explanation" id="conjExplanation"></div>
+        <button class="fill-next-btn" onclick="conjNext()">Lanjut →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ TRANSLATION ACTIVE QUIZ ══ -->
+  <div id="translationActive" style="display:none">
+    <div class="quiz-topbar">
+      <div class="quiz-progress">
+        <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="transProgressFill"></div></div>
+        <span class="quiz-progress-txt" id="transProgressTxt">0 / 0</span>
+      </div>
+      <button class="quiz-end-btn" onclick="endTranslationQuiz()">✕ Akhiri</button>
+    </div>
+    <div class="quiz-score" id="transScoreTxt">✅ 0 &nbsp; ❌ 0</div>
+    <div class="fill-card" id="transCard">
+      <div class="fill-level-badge" id="transLevelBadge">N3</div>
+      <div class="trans-dir-row">
+        <span class="trans-dir-badge" id="transDirBadge">🇮🇩 → 🇯🇵</span>
+        <span class="trans-dir-label" id="transDirectionLabel">Terjemahkan ke Bahasa Jepang</span>
+      </div>
+      <div class="trans-prompt" id="transPrompt"></div>
+      <div class="fill-grammar-hint" id="transGrammarHint"></div>
+      <div class="fill-choices" id="transChoices"></div>
+      <div class="fill-feedback" id="transFeedback" style="display:none">
+        <div class="fill-feedback-verdict" id="transVerdict"></div>
+        <div class="trans-correct-answer" id="transCorrectAnswer" style="display:none"></div>
+        <div class="fill-explanation" id="transExplanation"></div>
+        <button class="fill-next-btn" onclick="transNext()">Lanjut →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ ERROR FINDING ACTIVE QUIZ ══ -->
+  <div id="errorFindActive" style="display:none">
+    <div class="quiz-topbar">
+      <div class="quiz-progress">
+        <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="efProgressFill"></div></div>
+        <span class="quiz-progress-txt" id="efProgressTxt">0 / 0</span>
+      </div>
+      <button class="quiz-end-btn" onclick="endErrorFindQuiz()">✕ Akhiri</button>
+    </div>
+    <div class="quiz-score" id="efScoreTxt">✅ 0 &nbsp; ❌ 0</div>
+    <div class="fill-card" id="efCard">
+      <div class="fill-level-badge" id="efLevelBadge">N3</div>
+      <div class="ef-instruction">🔍 Pilih kalimat yang mengandung kesalahan grammar:</div>
+      <div class="fill-grammar-hint" id="efGrammarHint"></div>
+      <div class="ef-choices" id="efChoices"></div>
+      <div class="fill-feedback" id="efFeedback" style="display:none">
+        <div class="fill-feedback-verdict" id="efVerdict"></div>
+        <div class="ef-correction" id="efCorrection" style="display:none"></div>
+        <div class="fill-explanation" id="efExplanation"></div>
+        <button class="fill-next-btn" onclick="efNext()">Lanjut →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ MULTIPLE CHOICE ACTIVE QUIZ ══ -->
+  <div id="multiChoiceActive" style="display:none">
+    <div class="quiz-topbar">
+      <div class="quiz-progress">
+        <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="mcProgressFill"></div></div>
+        <span class="quiz-progress-txt" id="mcProgressTxt">0 / 0</span>
+      </div>
+      <button class="quiz-end-btn" onclick="endMultiChoiceQuiz()">✕ Akhiri</button>
+    </div>
+    <div class="quiz-score" id="mcScoreTxt">✅ 0 &nbsp; ❌ 0</div>
+    <div class="fill-card" id="mcCard">
+      <div class="fill-level-badge" id="mcLevelBadge">N3</div>
+      <div class="mc-context" id="mcContext"></div>
+      <div class="fill-grammar-hint" id="mcGrammarHint"></div>
+      <div class="fill-choices" id="mcChoices"></div>
+      <div class="fill-feedback" id="mcFeedback" style="display:none">
+        <div class="fill-feedback-verdict" id="mcVerdict"></div>
+        <div class="mc-why-correct" id="mcWhyCorrect" style="display:none"></div>
+        <div class="fill-explanation" id="mcExplanation"></div>
+        <button class="fill-next-btn" onclick="mcNext()">Lanjut →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ VOCAB QUIZ ACTIVE ══ -->
+  <div id="vocabQuizActive" style="display:none">
+    <div class="quiz-topbar">
+      <div class="quiz-progress">
+        <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="vqProgressFill"></div></div>
+        <span class="quiz-progress-txt" id="vqProgressTxt">0 / 0</span>
+      </div>
+      <button class="quiz-end-btn" onclick="vqEndQuiz()">✕ Akhiri</button>
+    </div>
+    <div class="quiz-score" id="vqScoreTxt">✅ 0 &nbsp; ❌ 0</div>
+
+    <!-- shared level badge -->
+    <div style="margin:0 0 0.5rem">
+      <span class="fill-level-badge" id="vqLevelBadge" style="display:inline-block">N5</span>
+    </div>
+
+    <!-- FLASHCARD PANEL -->
+    <div id="vqFlashPanel" style="display:none">
+      <div class="vq-flash-card" id="vqFlashCard" onclick="vqFlipCard()">
+        <div id="vqFlashFront" class="vq-face vq-front">
+          <div class="vq-word" id="vqFlashWord"></div>
+          <div class="vq-reading" id="vqFlashReading"></div>
+          <div class="vq-pos-tag" id="vqFlashPos"></div>
+          <div class="vq-flip-hint" id="vqFlashHint">Ketuk untuk lihat arti →</div>
+        </div>
+        <div id="vqFlashBack" class="vq-face vq-back" style="display:none">
+          <div class="vq-meaning-big" id="vqFlashMeaning"></div>
+          <div class="vq-ex" id="vqFlashEx"></div>
+          <div class="vq-ex-id" id="vqFlashExId"></div>
+        </div>
+      </div>
+      <div class="vq-assess-row" id="vqAssessBtns" style="display:none">
+        <button class="vq-assess-btn vq-btn-forgot" onclick="vqAssess('forgot')">❌ Belum</button>
+        <button class="vq-assess-btn vq-btn-unsure" onclick="vqAssess('unsure')">😅 Hampir</button>
+        <button class="vq-assess-btn vq-btn-know"   onclick="vqAssess('know')">✅ Hafal</button>
+      </div>
+    </div>
+
+    <!-- MULTICHOICE PANEL -->
+    <div id="vqMcPanel" style="display:none">
+      <div class="fill-card" id="vqCard">
+        <div class="vq-mc-word" id="vqMcWord"></div>
+        <div class="fill-grammar-hint" id="vqMcQuestion"></div>
+        <div class="fill-choices" id="vqMcChoices"></div>
+        <div class="fill-feedback" id="vqMcFeedback" style="display:none"></div>
+      </div>
+    </div>
+
+    <!-- FILL WORD PANEL -->
+    <div id="vqFillPanel" style="display:none">
+      <div class="fill-card" id="vqFillCard">
+        <div class="fill-sentence" id="vqFillSentence"></div>
+        <div class="fill-grammar-hint" id="vqFillMeaning"></div>
+        <div class="fill-choices" id="vqFillChoices"></div>
+        <div class="fill-feedback" id="vqFillFeedback" style="display:none"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ MIXED QUIZ ACTIVE ══ -->
+  <div id="mixedQuizActive" style="display:none">
+    <div class="quiz-topbar">
+      <div class="quiz-progress">
+        <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="mxProgressFill"></div></div>
+        <span class="quiz-progress-txt" id="mxProgressTxt">0 / 0</span>
+      </div>
+      <button class="quiz-end-btn" onclick="mxEndQuiz()">✕ Akhiri</button>
+    </div>
+    <div class="quiz-score" id="mxScoreTxt">✅ 0 &nbsp; ❌ 0</div>
+
+    <div style="margin:0 0 0.5rem;display:flex;align-items:center;gap:0.5rem">
+      <span class="fill-level-badge" id="mxLevelBadge" style="display:inline-block">N5</span>
+      <span class="mx-source-badge" id="mxSourceBadge">📚 Kosakata</span>
+    </div>
+
+    <!-- GRAMMAR FLASHCARD PANEL -->
+    <div id="mxFlashPanel" style="display:none">
+      <div class="vq-flash-card" id="mxFlashCard" onclick="mxFlipCard()">
+        <div id="mxFlashFront" class="vq-face vq-front">
+          <div class="vq-word" id="mxFlashGrammar"></div>
+          <div class="vq-reading" id="mxFlashReading"></div>
+          <div class="vq-flip-hint" id="mxFlashHint">Ketuk untuk lihat arti →</div>
+        </div>
+        <div id="mxFlashBack" class="vq-face vq-back" style="display:none">
+          <div class="vq-meaning-big" id="mxFlashMeaning"></div>
+          <div class="vq-ex" id="mxFlashDesc"></div>
+        </div>
+      </div>
+      <div class="vq-assess-row" id="mxAssessBtns" style="display:none">
+        <button class="vq-assess-btn vq-btn-forgot" onclick="mxAssess('forgot')">❌ Belum</button>
+        <button class="vq-assess-btn vq-btn-unsure" onclick="mxAssess('unsure')">😅 Hampir</button>
+        <button class="vq-assess-btn vq-btn-know"   onclick="mxAssess('know')">✅ Hafal</button>
+      </div>
+    </div>
+
+    <!-- VOCAB MULTICHOICE PANEL -->
+    <div id="mxMcPanel" style="display:none">
+      <div class="fill-card">
+        <div class="vq-mc-word" id="mxMcWord"></div>
+        <div class="fill-grammar-hint" id="mxMcQuestion"></div>
+        <div class="fill-choices" id="mxMcChoices"></div>
+        <div class="fill-feedback" id="mxMcFeedback" style="display:none"></div>
+      </div>
+    </div>
+
+    <!-- EMPTY STATE -->
+    <div id="mxEmptyMsg" class="fill-coming-soon" style="display:none">
+      <div class="cs-icon">🔀</div>
+      <h3>Data belum cukup</h3>
+      <p>Mixed quiz butuh data grammar dan kosakata.<br>
+      Coba pilih level <strong>N5</strong> atau <strong>Semua Level</strong>.</p>
+    </div>
+  </div>
+
+  <!-- HASIL -->
+  <div id="quizResult" style="display:none" class="quiz-result">
+    <canvas id="confettiCanvas" style="position:fixed;inset:0;pointer-events:none;z-index:999;width:100%;height:100%"></canvas>
+    <div class="result-ring-wrap">
+      <svg class="result-ring" viewBox="0 0 120 120">
+        <circle class="ring-bg" cx="60" cy="60" r="52"/>
+        <circle class="ring-fill" id="ringFill" cx="60" cy="60" r="52" style="stroke-dashoffset:327"/>
+      </svg>
+      <div class="result-ring-inner">
+        <div class="result-pct" id="resultPct">0%</div>
+        <div class="result-pct-label">skor</div>
+      </div>
+    </div>
+    <div class="result-title" id="resultTitle">Luar Biasa!</div>
+    <div class="result-sub" id="resultSubtitle"></div>
+    <div class="result-stats">
+      <div class="rs-item know">
+        <div class="rs-num" id="rKnow">0</div>
+        <div class="rs-label">✅ Hafal</div>
+      </div>
+      <div class="rs-item unsure">
+        <div class="rs-num" id="rUnsure">0</div>
+        <div class="rs-label">😅 Ragu</div>
+      </div>
+      <div class="rs-item forgot">
+        <div class="rs-num" id="rForgot">0</div>
+        <div class="rs-label">❌ Lupa</div>
+      </div>
+    </div>
+    <div class="result-srs-hint" id="resultSrsHint" style="display:none">
+      <span class="srs-hint-icon">🧠</span>
+      <span id="resultSrsText"></span>
+    </div>
+    <button class="retry-btn" id="retryMissedBtn" onclick="retryMissed()" style="display:none">
+      🔄 Ulangi yang Salah (<span id="missedCount">0</span>)
+    </button>
+    <button class="back-to-menu-btn" onclick="restartQuiz()">Kembali ke Menu Quiz</button>
+  </div>
+
+</div><!-- end quizPage -->
+
+  <!-- TYPETR ACTIVE -->
+  <div id="typeTrActive" style="display:none" class="quiz-active">
+    <div class="quiz-header">
+      <button class="quiz-back-btn" onclick="ttrBackToSetup()">←</button>
+      <div class="quiz-progress-wrap">
+        <div class="quiz-progress-bar"><div id="ttrProgressBar" style="width:0%"></div></div>
+        <span id="ttrProgressTxt" class="quiz-progress-txt">0 / 10</span>
+      </div>
+      <span id="ttrScoreTxt" class="quiz-score-txt">✅ 0 &nbsp; ❌ 0</span>
+    </div>
+
+    <div class="ttr-card">
+      <div id="ttrGrammarHint" class="ttr-hint" style="display:none"></div>
+      <div id="ttrLabel" class="ttr-label">Terjemahkan ke Bahasa Indonesia:</div>
+      <div id="ttrPrompt" class="ttr-prompt"></div>
+      <textarea id="ttrInput" class="ttr-input" rows="3" placeholder="Ketik terjemahan..."></textarea>
+      <button class="fill-submit-btn" onclick="ttrSubmit()">Cek Jawaban</button>
+    </div>
+
+    <div id="ttrFeedback" class="fill-feedback" style="display:none">
+      <div id="ttrVerdict" class="fill-verdict"></div>
+      <div id="ttrExplanation" class="fill-explanation"></div>
+      <button id="ttrNextBtn" class="fill-next-btn" onclick="ttrNext()">Lanjut →</button>
+    </div>
+  </div>
+
+  <!-- TYPETR RESULT -->
+  <div id="typeTrResult" style="display:none" class="quiz-result">
+    <div id="ttrResultEmoji" class="result-emoji">🎉</div>
+    <div class="result-score-big" id="ttrResultScore">0 / 10</div>
+    <div class="result-pct" id="ttrResultPct">0%</div>
+    <button class="quiz-start-btn" onclick="ttrRestart()">
+      <span>Ulangi</span>
+    </button>
+    <button class="quiz-back-btn" style="margin-top:.5rem" onclick="ttrBackToSetup()">← Pilih Mode</button>
+  </div>
+
+<!-- DETAIL MODAL -->
+<div id="detailModal" class="detail-modal">
+  <div class="detail-modal-inner"></div>
+</div>
+
+<!-- STREAK BROKEN MODAL -->
+<div class="modal-overlay" id="streakBrokenModal">
+  <div class="confirm-modal streak-broken-modal">
+    <div class="streak-broken-fire" id="streakBrokenFire">🔥</div>
+    <div class="confirm-title">Streak Putus...</div>
+    <div class="streak-broken-sub">Tapi hari ini kamu udah kembali! Streak baru dimulai 💪</div>
+    <div class="streak-tip-box" id="streakTipText"></div>
+    <button id="streakOkBtn" class="quiz-start-btn" style="margin-top:1rem" onclick="closeStreakBroken()">Oke, Semangat Lagi!</button>
+  </div>
+</div>
+
+<!-- DATA (urutan penting!) -->
+<script src="./data/n3-w1.js"></script>
+<script src="./data/n3-w2.js"></script>
+<script src="./data/n3-w3.js"></script>
+<script src="./data/n3-w4.js"></script>
+<script src="./data/n3-w5.js"></script>
+<script src="./data/n3-w6.js"></script>
+<script src="./data/n4-w1.js"></script>
+<script src="./data/n4-w2.js"></script>
+<script src="./data/n4-w3.js"></script>
+<script src="./data/n4-w4.js"></script>
+<script src="./data/n4-w5.js"></script>
+<script src="./data/n4-w6.js"></script>
+<script src="./data/dummy.js"></script>
+<script src="./data/bank-soal.js"></script>
+<script src="./data/bank-soal-n4.js"></script>
+<script src="./data/bank-soal-quiz4.js"></script>
+<!-- ═══════════════════════════════════════════════════════
+     VOCAB DB — load order: N5 → N4 → N3 → N2 → N1 → index
+     Convention: vocab-{level}.js (unified per RESTRUKTURISASI-B v14.9.0)
+     Active = uncommented. Inactive = commented + reason.
+     ═══════════════════════════════════════════════════════ -->
+
+<!-- N5 — 711 entries, aktif v14.9.0 -->
+<script src="./data/vocab-n5.js"></script>
+
+<!-- N4 — 692 entries, aktif v14.9.0 -->
+<script src="./data/vocab-n4.js"></script>
+
+<!-- N3 — aktifkan setelah entries cukup (>50) -->
+<!-- <script src="./data/vocab-n3.js"></script> -->
+
+<!-- N2 — aktifkan setelah entries cukup -->
+<!-- <script src="./data/vocab-n2.js"></script> -->
+
+<!-- N1 — aktifkan setelah entries cukup -->
+<!-- <script src="./data/vocab-n1.js"></script> -->
+
+<!-- ═══════════════════════════════════════════════════════
+     GRAMMAR DB — load order: N5 → N4 → N3 → N2 → N1
+     Format baru per RESTRUKTURISASI-B. Belum ada engine.
+     Aktifkan setelah grammar-query engine siap.
+     ═══════════════════════════════════════════════════════ -->
+
+<!-- <script src="./data/grammar-n5.js"></script> --> <!-- 80 entries — tunggu engine -->
+<!-- <script src="./data/grammar-n4.js"></script> --> <!-- 90 entries — tunggu engine -->
+<!-- <script src="./data/grammar-n3.js"></script> --> <!-- 103 entries — tunggu engine -->
+<!-- <script src="./data/grammar-n2.js"></script> --> <!-- placeholder -->
+<!-- <script src="./data/grammar-n1.js"></script> --> <!-- placeholder -->
+
+<!-- ═══════════════════════════════════════════════════════
+     BOOK INDEX — referensi chapter→vocab_ids (bukan entries)
+     Load SETELAH semua vocab-nX-*.js, SEBELUM vocab-index.js
+     ═══════════════════════════════════════════════════════ -->
+<script src="./data/book-minna-1.js"></script>
+<script src="./data/book-minna-2.js"></script>
+<script src="./data/book-irodori-a1.js"></script>
+<script src="./data/book-irodori-a2-1.js"></script>
+<script src="./data/book-irodori-a2-2.js"></script>
+  <script src="./data/sources.js"></script>
+
+<script src="./data/vocab-index.js"></script>
+<script src="./data/index.js"></script>
+
+<!-- JS: core (load first, in order) -->
+<script src="./js/core/version.js"></script>
+<script src="./js/error-boundary.js"></script><!-- TASK-INT-1: posisi ke-2, tangkap error dari semua file berikutnya -->
+<script src="./js/core/state.js"></script>
+<script src="./js/core/router.js"></script>
+<script src="./js/core/theme.js"></script>
+<script src="./js/core/install.js"></script>
+<script src="./js/core/grammar-query.js"></script>
+<!-- JS: features -->
+<script src="./js/srs.js"></script>
+<script src="./js/streak.js"></script>
+<script src="./js/swipe.js"></script>
+<script src="./js/browse.js"></script>
+<script src="./js/quiz.js"></script>
+<script src="./js/quiz-feedback.js"></script>
+<script src="./js/fillin.js"></script>
+<script src="./js/conjugation.js"></script>
+<script src="./js/translation.js"></script>
+<script src="./js/errorfind.js"></script>
+<script src="./js/multichoice.js"></script>
+<script src="./js/lang/lang-core.js"></script>
+<script src="./js/conjugation-engine.js"></script>
+<script src="./js/quiz-typetr.js"></script>
+<script src="./js/detail.js"></script>
+<!-- JS: orchestrator — always last -->
+<script src="./js/quiz-generator.js"></script>
+<script src="./js/quiz-vocab.js"></script>
+<script src="./js/quiz-mixed.js"></script>
+<script src="./js/daily-word.js"></script>
+<script src="./js/browse-vocab.js"></script>
+<script src="./js/vocab-detail.js"></script>
+<script src="./js/global-search.js"></script>
+<script src="./js/app.js"></script>
+
+<!-- ══ VOCAB DETAIL MODAL ══ -->
+<div id="vocabDetailModal" class="vd-modal">
+  <div class="vd-modal-inner">
+    <button class="vd-close-btn" onclick="closeVocabDetail()" aria-label="Tutup">✕</button>
+    <div class="vd-body"></div>
+  </div>
+</div>
+
+<!-- ══ GLOBAL SEARCH OVERLAY ══ -->
+<div id="globalSearchOverlay" class="gs-overlay">
+  <div class="gs-box">
+    <div class="gs-input-row">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+      <input id="gsInput" type="search" class="gs-input"
+        placeholder="Cari grammar, kosakata, arti..."
+        oninput="gsInput(this.value)"
+        autocomplete="off" autocorrect="off" spellcheck="false">
+      <button class="gs-close-btn" onclick="gsClose()">✕</button>
+    </div>
+    <div id="gsResults" class="gs-results">
+      <div class="gs-empty">Ketik kata, grammar, atau arti...</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

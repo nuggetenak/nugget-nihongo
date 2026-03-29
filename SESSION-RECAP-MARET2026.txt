@@ -1,0 +1,93 @@
+SESSION RECAP — AGENT 6 QA + AGENT 1 CRISPY
+Tanggal  : 20 Maret 2026
+Versi    : Nugget Nihongo v14.17.1 (governance)
+Dokumen  : SESSION-RECAP-MARET2026.txt
+           Berisi: GOV-015, GOV-016 (terkini — 2 GOV versions)
+           Konten lama (GOV-010–GOV-014): lihat SESSION-RECAP-ARCHIVE.txt
+
+⚠️ STALE WARNING: Selalu verifikasi dengan QUICK-CONTEXT atau WARMSTART ZIP jika tersedia.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+A. STATUS BUG (open)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+OPEN: INC-011 (grammar-n1/n2 parse errors — low priority), INC-012 (vocab-n4 conj_type),
+      INC-013 (57 broken see_also refs), INC-014 (201 invalid grammarIds bank-soal),
+      INC-015 (10 undefined CSS vars), INC-016 (MONITORING)
+RESOLVED: INC-007–010 (config.js fixes v14.15.2)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+B. VERSI AKTIF
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+v14.17.1 | utils: 55 scripts | spicy: 19 scripts
+(post-SPICY-5 merge: utils akan ~100 scripts)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+C. GOVERNANCE — 2 GOV VERSIONS TERKINI
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+GOV-015 (Maret 2026) — Document Archive System:
+  · docs/governance/ + docs/operational/ + subfolders dibuat
+  · Protocol archive per merge aktif sekarang
+  · Catch-up: 6 docs diarchive; pre-GOV-015 operational = MISSING
+  · Status: ✅ SELESAI
+
+GOV-016 (Maret 2026) — Project Intelligence Architecture:
+  · VISION.md — North Star constellation (6 Stars), Agent Constitution
+    (10 principles), Guided Non-Delegatable decisions, Long-Term Milestones
+  · PROJECT-INTELLIGENCE-ARCHITECTURE.md — 14-layer intelligence system,
+    full blueprint untuk semua agents
+  · DECISION-MATRIX-CONFIG.yaml — semua weights, thresholds, scoring config
+  · IDEA-PLAN — full implementation roadmap (Phase 0–6, 6+ task groups)
+  · North Star: 6 Stars (Accessibility, Efficacy, Completeness, Inclusivity,
+    Sustainability, Trust) dengan hierarchy defined
+  · Non-Delegatable: 3 areas (Pedagogical Direction, Core Values, Release
+    Readiness) — "Guided Non-Delegatable" model
+  · DAILY-BRIEF.md: triggered by merge (update) + session open (display)
+  · Kudos: Nabil-FlexingQwonthol — Decision Matrix insight
+  · Status: ✅ APPROVED Nugget-san — pending Crispy merge
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+D. FILE BARU / DIUPDATE (GOV-016)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  docs/governance/VISION.md                              — BARU
+  docs/governance/PROJECT-INTELLIGENCE-ARCHITECTURE.md   — BARU
+  docs/governance/DECISION-MATRIX-CONFIG.yaml            — BARU
+  docs/governance/proposals/IDEA-PLAN-PROJECT-INTELLIGENCE-ARCHITECTURE.md — BARU
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+E. TIM | F. STATUS TASK
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🍗 Nugget | 🥐 A1 Crispy | 💧 A2 Juicy | 🍯 A3 Saucy | 🌾 A4 Batter
+✨ A5 Golden | 🦷 A6 Crunchy | 🌶️ A7 Spicy | 🫧 A8 Fluffy | 📊 A9 Savory
+
+GOV-015: ✅ | GOV-016: ✅ (approved, pending merge)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+G. NEXT STEPS — UNTUK CRISPY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Merge FOR-INTEGRATOR_GOV-016.zip (dokumen governance baru)
+   → docs/governance/VISION.md
+   → docs/governance/PROJECT-INTELLIGENCE-ARCHITECTURE.md
+   → docs/governance/DECISION-MATRIX-CONFIG.yaml
+   → docs/governance/proposals/IDEA-PLAN-PROJECT-INTELLIGENCE-ARCHITECTURE.md
+
+2. Update _MAP.md:
+   Tambah tasks baru (status 🔒 sampai Phase 0 complete):
+   TASK-INTEL-P0A, TASK-INTEL-P0B, TASK-INTEL-P0C, TASK-INTEL-P0D
+   TASK-INTEL-P1A–P1C, TASK-INTEL-P2A–P2B (🔒)
+   TASK-INTEL-P3A–P3B, TASK-INTEL-P4A–P4B (🔒)
+   TASK-INTEL-P5A–P5B, TASK-INTEL-P6A–P6B (🔒)
+
+3. Merge SPICY-5 batch ZIPs (6 FOR-INTEGRATOR ZIPs siap):
+   BUCKET-J → 5A → 5C → 5D → 5E → 5B (urutan ini)
+   Setelah batch merged: milestone counter kemungkinan 5/5
+   → Tier 1 audit triggered → schedule ke Crunchy
+
+4. Setelah TASK-SPICY-5A merged:
+   TASK-GOV-MANDATORY-TAHAP2 unlock (🔒 → 🔴)
+   TASK-INTEL-P0A, P0B, P0C, P0D unlock (🔒 → 🔴)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+H. PENDING DECISIONS (tidak ada)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Semua keputusan sesi ini sudah resolved oleh Nugget-san.

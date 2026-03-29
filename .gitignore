@@ -1,0 +1,21 @@
+# Internal — not for deployment
+agent-prompts/
+docs/
+tools/
+*.env
+.env.*
+config/local*.json
+config/*.local.json
+
+# Node (jika ada di masa depan)
+node_modules/
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary
+*.tmp
+*.bak
+/tmp/

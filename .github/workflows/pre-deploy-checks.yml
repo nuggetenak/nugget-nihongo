@@ -1,0 +1,38 @@
+name: Pre-Deploy Checks
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+permissions:
+  contents: read
+
+jobs:
+  pre-deploy-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run secrets scan
+        run: node tools/scripts/spicy/scan-secrets.js
+        # scan-secrets.js menggunakan process.cwd() sebagai root — CI-compatible
+
+      - name: Run version consistency check
+        run: node tools/scripts/utils/check-version-consistency.js
+        # Membaca version.js dan sw.js dari cwd — CI-compatible
+
+      - name: Run ID uniqueness check
+        run: node tools/scripts/utils/check-global-id-uniqueness.js
+        # Membaca data/*.js dari cwd — CI-compatible
+
+      - name: Run asset reference check
+        run: node tools/scripts/utils/validate-index-html-assets.js
+        # Membaca index.html dan sw.js dari cwd — CI-compatible
