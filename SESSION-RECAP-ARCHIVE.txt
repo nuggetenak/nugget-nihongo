@@ -82,3 +82,15 @@ GOV-013 (Maret 2026) — Token Efficiency + Hygiene: ✅ SELESAI
   · SESSION-RECAP aktif hanya 2 GOV versions terkini
   · docs/ renames + archive init
   · Sub-tasks A/B/C: semua ✅ merged (v14.15.0)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ARCHIVED FROM SESSION-RECAP-MARET2026.txt — 23 Maret 2026
+(trimmed per GOV-013 rule: >2 GOV entries → archive older one)
+Content: GOV-015
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+GOV-015 (Maret 2026) — Document Archive System:
+  · docs/governance/ + docs/operational/ + subfolders dibuat
+  · Protocol archive per merge aktif sekarang
+  · Catch-up: 6 docs diarchive; pre-GOV-015 operational = MISSING
+  · Status: ✅ SELESAI

@@ -1,3 +1,117 @@
+# MERGE SUMMARY — 24 Maret 2026
+Versi    : v14.26.0 → v14.27.0
+Tanggal  : 24 Maret 2026
+Merged by: Agent 1 — Crispy 🥐
+
+## Tasks Merged
+| Task | Tipe | Keterangan |
+|------|------|------------|
+| TASK-FLUFFY-1 | Fluffy flow merge (Curriculum docs) | Ecosystem Fit Clearance by Crunchy |
+
+## Files Changed
+| File | Perubahan |
+|------|-----------|
+| `docs/curriculum/NUGGET-NIHONGO-TAXONOMY-MASTER-v2.md` | BARU — curriculum architecture reference |
+| `docs/curriculum/conjugation_engine_consolidated_v1.json` | BARU — conjugation engine data v1 |
+| `docs/curriculum/CURRICULUM-PROPOSAL-TASK-FLUFFY-1-v2.md` | BARU — approved curriculum proposal |
+| `docs/operational/proposal-reviews/ECOSYSTEM-FIT-CLEARANCE-TASK-FLUFFY-1.md` | BARU — Crunchy clearance archived |
+| `_MAP.md` | TASK-FLUFFY-1 ✅, 4 implementation tasks seeded, INC018-FIX + GOV-017-D2 status updated |
+| `MASTER-DIRECTIVE-LOG.md` | 5 entries baru (Fluffy directives + Crunchy advisory notes) |
+| `js/core/version.js` | v14.26.0 → v14.27.0 |
+| `sw.js` | CACHE nihongo-v14.26.0 → nihongo-v14.27.0 |
+
+## Merge Type
+Fluffy flow merge — tidak menggunakan FOR-INTEGRATOR ZIP standard.
+Approval: ECOSYSTEM-FIT-CLEARANCE-TASK-FLUFFY-1.md dari Agent 6 Crunchy (Fluffy flow: Crunchy sebagai ecosystem fit checker per MASTER-FLOW section 2e).
+
+## run-merge-checklist.js Result
+FAIL (3/15) — semua failures adalah flow mismatch, bukan actual merge issues:
+- Item 1 (QA-VERDICT): Fluffy flow menggunakan ECOSYSTEM-FIT-CLEARANCE, bukan QA-VERDICT. Manual verified ✅
+- Item 2 (root folder for-integrator-crunchy/): Fluffy flow ZIP structure berbeda. N/A.
+- Item 3 (version match): False positive — script tidak membaca post-edit sw.js. Actual: version.js = v14.27.0, sw.js CACHE = nihongo-v14.27.0 ✅ match.
+Manual verification dilakukan — merge proceed per GOV-017 infrastructure exception.
+Flag ke Spicy: run-merge-checklist.js perlu handle Fluffy flow (ECOSYSTEM-FIT-CLEARANCE) sebagai alternative approval path.
+
+
+- docs/curriculum/ folder dibuat untuk pertama kali di sesi ini
+- Tiga advisory notes dari Crunchy di-capture di MASTER-DIRECTIVE-LOG:
+  NOTE-1: ID format authoritative = 4-digit (bukan 5-digit di teks CP-3.1/5.3)
+  NOTE-2: Grammar ID prefix canonical = `gn` (bukan `gp` dari get-next-id.js) → get-next-id.js perlu fix
+  NOTE-3: `_curriculum-map.md` tidak exist — perlu dibuat, pending Fluffy follow-up
+- Implementation tasks (TASK-SPICY-8/VOC-6/GRM-7/BOOK-3) seeded di _MAP.md, Task Briefs pending further discussion Fluffy + Nugget-san
+- Task Briefs TASK-INC018-FIX + TASK-GOV-017-D2 dispatched ke CP(1) Crunchy 24 Maret 2026
+
+---
+
+# MERGE SUMMARY — 23 Maret 2026
+Versi    : v14.25.2 → v14.26.0
+Tanggal  : 23 Maret 2026
+Merged by: Agent 1 — Crispy 🥐
+
+Task     : TASK-GOV-017-D1 — Crispy prompt updates + _MAP.md hygiene (self-task)
+QA by    : Agent 6 — Crunchy 🦷 ✅ APPROVED
+Bump     : minor (governance update scope besar — 2 agent prompts + living doc baru)
+Files    : AGENT-1-INTEGRATOR v11→v12, AGENT-COMMON v13→v14, _MAP.md (HYG-002/003/006/017), MASTER-DIRECTIVE-LOG seeded
+Pending  : ⚠️ AGENT-COMMON-v14.md wajib diupload ke PK SEMUA agent (A1–A9)
+           ⚠️ AGENT-1-INTEGRATOR-v12.txt wajib diupload ke PK Agent 1
+Script   : ⚠️ run-merge-checklist.js check-version-consistency false-fail (script bug, bukan merge issue) — version.js + sw.js ✅ match v14.26.0. Flag ke Spicy.
+
+---
+
+# MERGE SUMMARY — 23 Maret 2026
+Versi    : v14.25.1 → v14.25.2
+Tanggal  : 23 Maret 2026
+Merged by: Agent 1 — Crispy 🥐
+
+Task     : TASK-GOV-017-C — Crunchy packaging update (self-task)
+QA by    : Agent 6 — Crunchy 🦷 ✅ APPROVED
+Bump     : patch (governance scope kecil — 2 prompt files + 1 DB fix)
+Files    : AGENT-6-QA-v12 → v13, AGENT-COMMON-CRUNCHY-ADDENDUM-v4 → v5, DECISION-DB (HYG-011/022)
+Pending  : ⚠️ AGENT-6-QA-v13.txt + AGENT-COMMON-CRUNCHY-ADDENDUM-v5.md perlu diupload ke PK Agent 6
+Script   : ⚠️ run-merge-checklist.js check-version-consistency false-fail — script membaca v14.25.0 dari MERGE-SUMMARY history bukan versi aktif. version.js + sw.js ✅ match v14.25.2. Flag ke Spicy.
+
+---
+
+# MERGE SUMMARY — 23 Maret 2026
+Versi    : v14.25.0 → v14.25.1
+Tanggal  : 23 Maret 2026
+Merged by: Agent 1 — Crispy 🥐
+
+Task     : TASK-INC019-FIX-B — INC-019 fix 3 malformed jp: entries (Batter)
+QA by    : Agent 6 — Crunchy 🦷 ✅ APPROVED
+Bump     : patch (koreksi data — 3 karakter di grammar-n4.js)
+Findings : INC-019 RESOLVED — gn4-0048, gn4-0053, gn4-0090 fixed (missing opening quote)
+Spicy    : Tidak tersedia untuk task ini (Spicy scan counter: 3/3 → periodic scan due)
+Pending  : ⚠️ Governance task needed — tambahkan grammar-n*.js ke scope Batter di AGENT-COMMON
+
+---
+
+# MERGE SUMMARY — 23 Maret 2026
+Versi    : v14.23.2 → v14.23.3
+Tanggal  : 23 Maret 2026
+Merged by: Agent 1 — Crispy 🥐
+
+Task     : TASK-INC019-FIX-A — INC-019 investigasi (Spicy, investigate only)
+QA by    : Agent 6 — Crunchy 🦷 ✅ APPROVED
+Bump     : patch (investigasi only, tidak ada perubahan code/data)
+Findings : 3 entries bermasalah di grammar-n4.js (bukan 2) — gn4-0048/0053/0090
+           Missing opening quote `'` di field jp: examples[1]
+Next     : TASK-INC019-FIX-B dispatched ke Batter — fix 3 entries
+
+---
+
+# MERGE SUMMARY — 23 Maret 2026
+Versi    : v14.23.1 → v14.23.2
+Tanggal  : 23 Maret 2026
+Merged by: Agent 1 — Crispy 🥐
+
+Task     : TASK-INC017-FIX — Load order fix (conjugation-engine.js sebelum quiz.js)
+QA by    : Agent 6 — Crunchy 🦷 ✅ APPROVED
+Bump     : patch
+INC-017  : RESOLVED
+
+---
+
 # MERGE SUMMARY
 Versi    : v14.18.7 → v14.18.8
 Tanggal  : 21 Maret 2026
@@ -697,3 +811,209 @@ Semua scripts di pre-deploy-checks.yml verified CI-compatible (process.cwd()).
 ## Catatan
 - SECRETS-POLICY.md out of scope Fase A — akan di-scope di Fase B
 - Nugget-san: jalankan `bash tools/scripts/install-hooks.sh` dari root project untuk aktifkan pre-commit hook
+
+## Merge — 23 Maret 2026 (v14.23.0 → v14.23.1)
+
+Task     : TASK-SPICY-F-002 — AUTO-TRIGGER fix: 5 senior agent prompts (A1/A6/A7/A8/A9)
+QA by    : Agent 6 — Crunchy 🦷
+Versi    : v14.23.0 → v14.23.1 (patch)
+
+Files merged:
+- agent-prompts/AGENT-1-INTEGRATOR-v11.txt — AUTO-TRIGGER lines added
+- agent-prompts/AGENT-6-QA-v12.txt — AUTO-TRIGGER lines added
+- agent-prompts/AGENT-7-SPICY-v4.txt — AUTO-TRIGGER lines added
+- agent-prompts/AGENT-8-FLUFFY-v2.txt — AUTO-TRIGGER lines added
+- agent-prompts/AGENT-9-SAVORY-v3.txt — AUTO-TRIGGER lines added
+
+Milestone: governance patch — tidak dihitung ke app minor counter.
+TOOLS zip: tidak perlu diperbarui (perubahan di agent-prompts/, bukan tools/scripts/).
+
+## Merge — 23 Maret 2026 (v14.23.1 — no bump, governance-only)
+
+Task     : TASK-GOV-017 — Governance Hygiene + Reform Proposal
+QA by    : Agent 6 — Crunchy 🦷
+Versi    : no bump (governance-only per Crunchy recommendation)
+
+Files merged:
+- docs/governance/DOCUMENT-TAXONOMY-v5.md — BARU
+- docs/governance/GOV-017-FINAL.md — BARU
+- MASTER-DIRECTIVE-LOG.md — BARU (root, living doc)
+- docs/VIOLATION-DB.md — Fix Effective GOV-001–006 → ✅ TERBUKTI, GOV-007 tetap PENDING
+
+_MAP.md updates:
+- Header updated → v14.23.1, 23 Maret 2026
+- Domain table: A7/A8/A9 ditambahkan
+- Workflow section: Fase 6b (step 11–13) ditambahkan
+- DISPATCH QUEUE: TASK-GOV-017 ✅ + 5 sub-tasks seeded (A, B, C, D1, D2)
+- TASK-SPICY-F-002: ✅ 23 Maret 2026 (dikonfirmasi dari merge sebelumnya sesi ini)
+- Spicy Scan Counter: 2/3
+
+Tasks baru open: TASK-GOV-017-A, B, C, D1 (🔴 OPEN) | D2 (🔒 dep: A+B)
+Pertanyaan pending ke Nugget-san: status aktual TASK-GRM-6?
+TOOLS zip: tidak perlu diperbarui (tidak ada perubahan di tools/scripts/).
+
+## Hygiene Merge — 23 Maret 2026 (v14.23.1 — no bump, hygiene-only)
+
+Task     : Comprehensive Hygiene Audit (Crispy self-task)
+QA by    : N/A — Crispy scope only (_MAP.md, docs/, SESSION-RECAP)
+
+Changes:
+- _MAP.md: removed TASK-8/UI-10 stale 🔴 blocks, fixed duplicate TASK LIST header,
+  removed orphan INTEGRATOR TASKS section, moved TASK-QA-INIT-3 to new ── QA TASKS ── section,
+  seeded TASK-INC017/018/019-FIX + TASK-SPICY-PROP-008, fixed 3 stale strings
+- docs/INCONSISTENCY-DB.md: INC-004 RESOLVED, INC-005 EXPIRED,
+  INC-013/014/015 body statuses corrected
+- SESSION-RECAP-MARET2026.txt: fully rewritten — GOV-016+017 (terkini), v14.23.1,
+  accurate bug status, GOV-015 archived
+- SESSION-RECAP-ARCHIVE.txt: GOV-015 appended
+- docs/governance/proposals/SPICY-PROP-008.md: status → APPROVED
+- docs/operational/patch-notes/: PATCH-NOTES-SPICY-PROP-006.md moved from root
+- MASTER-DIRECTIVE-LOG.md: GRM-6 + SPICY-PROP-008 entries added
+
+Pending (needs discussion):
+- ST5: VISION.md dual copies (root vs docs/governance/) — 2 versi berbeda konten
+- UF6: RESTRUKTURISASI-B-BATTER-BANKSOAL ghost task
+- UF8: Violation Log Agent 4 "Pending revisi" — Crunchy domain
+
+## Hygiene Merge B — 23 Maret 2026 (v14.23.1 — no bump)
+
+Task     : TASK-HYGIENE-C001 verdict execution + CRUNCHY-COMPREHENSIVE-AUDIT-v14.23.1
+Verdict  : Agent 6 — Crunchy 🦷
+
+Changes:
+- docs/archive/VISION-root-pre-GOV016.md — root VISION.md diarchive (Item 1)
+- docs/governance/VISION.md — Status DRAFT → APPROVED (Item 1)
+- ROADMAP.md — refs ke "VISION.md" → "docs/governance/VISION.md" (Item 1)
+- _MAP.md Violation Log Agent 4 — ⚠️ Pending revisi → 🔒 Abandoned + closed (Item 3)
+- _MAP.md DISPATCH QUEUE — RESTRUKTURISASI-B-BATTER-BANKSOAL dihapus (Item 2)
+- _MAP.md Catatan Historis — note RESTRUKTURISASI-B-BATTER removal (Item 2)
+- _MAP.md DISPATCH QUEUE — TASK-N3 + TASK-VOC-5 🟡 → 🟢 READY (F-1)
+- _MAP.md DISPATCH QUEUE — TASK-QA-INIT-3 entry ditambah ke table (F-2)
+- _MAP.md DISPATCH QUEUE — TASK-HYGIENE-C001 → ✅ (F-6)
+- docs/operational/correspondence/ — CRUNCHY-NOTIFICATION-CLEANUP-001.md dipindah dari archive (F-3)
+- docs/archive/ — GOV-011-SPICY-COMPLETE-v3.docx dipindah dari governance/proposals/ (F-5)
+- docs/operational/correspondence/ — CRUNCHY-HYGIENE-C001-VERDICT.md + CRUNCHY-COMPREHENSIVE-AUDIT archived
+
+Pending (F-4 + F-7): TASK-INC017-FIX dispatch + GOV-017 sub-task briefs
+
+---
+
+# MERGE SUMMARY — 23 Maret 2026
+Versi    : v14.23.3 → v14.24.0
+Tanggal  : 23 Maret 2026
+Merged by: Agent 1 — Crispy 🥐
+
+Task     : TASK-SPICY-PROP-008 — ZIP Robustness (run-cp1-checklist.js fix)
+QA by    : Agent 6 — Crunchy 🦷 ✅ APPROVED
+Bump     : minor (script fix + improved parsing logic)
+Files    : tools/scripts/utils/run-cp1-checklist.js
+Changes  : last-token path detection, Format B task ID/agent parsing fallback,
+           Format B section header detection
+Note     : resolve-project-root.js + project-health.js sudah resolved via TASK-SPICY-7
+
+---
+
+# MERGE SUMMARY — 23 Maret 2026
+Versi    : v14.24.0 → v14.25.0
+Tanggal  : 23 Maret 2026
+Merged by: Agent 1 — Crispy 🥐
+
+Tasks (batch merge GOV-017-A + GOV-017-B):
+
+TASK-GOV-017-B — New Scripts + 11 Folders
+QA by    : Agent 6 — Crunchy 🦷 ✅ APPROVED
+Files    : tools/scripts/utils/scan-unarchived-docs.js (BARU)
+           tools/scripts/utils/snapshot-dbs.js (BARU)
+           docs/ — 11 folder baru dengan .gitkeep
+           docs/RUNBOOK-SCAN-AND-SNAPSHOT.md
+
+TASK-GOV-017-A — run-merge-checklist Extended + generate-for-integrator-readme
+QA by    : Agent 6 — Crunchy 🦷 ✅ APPROVED
+Files    : tools/scripts/utils/run-merge-checklist.js (9→15 checks, hard exit, fix hints)
+           tools/scripts/utils/generate-for-integrator-readme.js (BARU)
+           docs/RUNBOOK-RUN-MERGE-CHECKLIST.md
+
+Bump     : minor (2 scripts baru, 11 folder baru, script extended)
+TOOLS zip: perlu diperbarui untuk A1 Crispy, A6 Crunchy (run-merge-checklist.js updated)
+
+---
+
+# MERGE SUMMARY — 28 Maret 2026
+Versi    : v14.27.0 → v14.27.1
+Tanggal  : 28 Maret 2026
+Merged by: Agent 1 — Crispy 🥐
+
+## Tasks Merged
+| Task | Agent | Keterangan |
+|------|-------|------------|
+| TASK-GOV-018-A | Spicy (A7) | Termux scripts: 6 .sh + TERMUX-README.md → tools/scripts/utils/termux/ |
+
+## Files Changed
+| File | Perubahan |
+|------|-----------| 
+| `tools/scripts/utils/termux/init_workspace.sh` | BARU |
+| `tools/scripts/utils/termux/pull_script.sh` | BARU |
+| `tools/scripts/utils/termux/push_script.sh` | BARU |
+| `tools/scripts/utils/termux/merge_script.sh` | BARU |
+| `tools/scripts/utils/termux/conflict_check.sh` | BARU |
+| `tools/scripts/utils/termux/rollback_script.sh` | BARU |
+| `tools/scripts/utils/termux/TERMUX-README.md` | BARU |
+| `js/core/version.js` | v14.27.0 → v14.27.1 |
+| `sw.js` | cache nihongo-v14.27.1 |
+| `_MAP.md` | TASK-GOV-018-A ✅ |
+| `docs/INCONSISTENCY-DB.md` | INC-NEW-1 seeded |
+| `docs/RATE-LIMIT-DB.md` | RL-021 seeded |
+
+## INC
+INC-NEW-1: merge_script.sh INC-DB path salah (docs/governance/ → docs/research/). Non-blocking. Fix scope: GOV-018-C atau task terpisah.
+
+## RateLimit
+RL-021 seeded — 12/12 steps, 0 friction, 0 checkpoint, clean.
+
+## Spicy
+Scan mode: not declared — default: full. Counter: 3/3 (periodic overdue).
+
+## Notes
+INC-NEW-2 (token validation minor) tidak di-seed ke INC-DB — non-blocking, noted in QA-VERDICT.
+
+---
+
+# MERGE SUMMARY — 28 Maret 2026 (2)
+Versi    : v14.27.1 → v14.27.2
+Tanggal  : 28 Maret 2026
+Merged by: Agent 1 — Crispy 🥐
+
+## Tasks Merged
+| Task | Agent | Keterangan |
+|------|-------|------------|
+| GOV-018-C-TRIM | Crunchy (A6) → Crispy (A1) | PK Trim: 9 AGENT-CORE files, 29% reduction, OUTPUT DISCIPLINE rule |
+
+## Files Changed
+| File | Perubahan |
+|------|-----------|
+| `pk-nugget-nihongo/AGENT-CORE.md` | Trimmed (A6) |
+| `pk-nugget-nihongo/AGENT-CORE-A1.md` | Trimmed — removed agent-performance-db scope |
+| `pk-nugget-nihongo/AGENT-CORE-A2.md` | Trimmed — removed session modes prose |
+| `pk-nugget-nihongo/AGENT-CORE-A3.md` | Trimmed |
+| `pk-nugget-nihongo/AGENT-CORE-A4.md` | Trimmed |
+| `pk-nugget-nihongo/AGENT-CORE-A5.md` | Trimmed |
+| `pk-nugget-nihongo/AGENT-CORE-A7.md` | Trimmed |
+| `pk-nugget-nihongo/AGENT-CORE-A8.md` | Trimmed |
+| `pk-nugget-nihongo/AGENT-CORE-A9.md` | Trimmed — research-summary + agent-performance-db removed |
+| `js/core/version.js` | v14.27.1 → v14.27.2 |
+| `sw.js` | cache nihongo-v14.27.2 |
+| `_MAP.md` | GOV-018-C-TRIM ✅ seeded |
+
+## INC
+none
+
+## RateLimit
+none — Crispy direct merge (governance, no agent patch cycle)
+
+## Spicy
+Scan mode: not declared — default: full. Counter: 3/3 (periodic overdue).
+
+## Notes
+Standalone PK trim — no dep on GOV-018-A/B. Approved by Nugget-san 2026-03-27.
+852 → 605 lines total across 9 files. Est. ~1,500–2,000 token saving per agent per session.
+SESSION-RECAP: PK trim merged v14.27.2 — 29% reduction, OUTPUT DISCIPLINE rule added.

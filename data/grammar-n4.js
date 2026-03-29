@@ -1053,7 +1053,7 @@ window.grammarN4 = [
     nuance     : 'Dalam pertanyaan んですか = meminta penjelasan/konfirmasi yang lebih mendalam dari ですか biasa.',
     examples   : [
       { jp: '今日は来られない<b>んです</b>。用事があって。', id: 'Hari ini saya tidak bisa datang. Ada keperluan.' },
-      { jp: どうした<b>んですか</b>。顔色が悪いですよ。', id: 'Ada apa? Mukamu pucat.' },
+      { jp: 'どうした<b>んですか</b>。顔色が悪いですよ。', id: 'Ada apa? Mukamu pucat.' },
     ],
     see_also_grammar : [],
     see_also_vocab   : [],
@@ -1166,7 +1166,7 @@ window.grammarN4 = [
     nuance     : 'Dibedakan oleh koneksi: 様態 dari V-ます語幹/Adj語幹; 伝聞 dari V/Adj plain form.',
     examples   : [
       { jp: '空が暗い。雨が降り<b>そうです</b>。', id: 'Langitnya gelap. Sepertinya mau hujan.' },
-      { jp: あのケーキはおいし<b>そうですね</b>。', id: 'Kue itu kelihatannya enak ya.' },
+      { jp: 'あのケーキはおいし<b>そうですね</b>。', id: 'Kue itu kelihatannya enak ya.' },
     ],
     see_also_grammar : ['gn4-0054'],
     see_also_vocab   : [],
@@ -1987,7 +1987,7 @@ window.grammarN4 = [
     nuance     : 'Berbeda dari ことにする (keputusan sesaat): ことにしている = kebiasaan yang sudah mapan.',
     examples   : [
       { jp: '毎朝6時に起きる<b>ことにしています</b>。', id: 'Saya sudah membiasakan diri bangun jam 6 setiap pagi.' },
-      { jp: お酒は飲まない<b>ことにしている</b>。', id: 'Saya sudah membiasakan diri untuk tidak minum alkohol.' },
+      { jp: 'お酒は飲まない<b>ことにしている</b>。', id: 'Saya sudah membiasakan diri untuk tidak minum alkohol.' },
     ],
     see_also_grammar : [],
     see_also_vocab   : [],

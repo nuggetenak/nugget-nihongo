@@ -133,7 +133,7 @@ Yang akan dikerjakan:
 
 ## Catatan untuk Agent
 
-- **Baca VISION.md dulu** sebelum baca ini — semua yang ada di sini serve visi di sana
+- **Baca docs/governance/VISION.md dulu** sebelum baca ini — semua yang ada di sini serve visi di sana
 - **Jangan lompat fase** — setiap fase punya prasyarat dari fase sebelumnya
 - **Kalau ragu prioritas** — fase yang lebih awal selalu lebih prioritas
 - **Fase 5 adalah pengecualian** — elemen polish yang tidak bergantung fitur baru boleh dikerjakan kapanpun
@@ -142,7 +142,7 @@ Yang akan dikerjakan:
 
 ## Catatan untuk Developer (nugget-san)
 
-Kalau kamu bingung "ini project mau ke mana?" — baca VISION.md.
+Kalau kamu bingung "ini project mau ke mana?" — baca docs/governance/VISION.md.
 Kalau kamu bingung "ini harus dikerjain sekarang atau nanti?" — baca dokumen ini.
 Kalau kamu bingung "ini task siapa?" — baca _MAP.md.
 
