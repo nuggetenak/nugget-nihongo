@@ -51,8 +51,8 @@ window.vocabN5 = [
   conj_type: 'godan',
   examples: [{"jp": "ドアが開きました。", "id": "Pintunya terbuka.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['v-n5-0003'],
-  see_also: ['v-n5-0004'],
+  antonyms: ['vg-n5-0003'],
+  see_also: ['vg-n5-0004'],
   added_v: 'v15-migrated'
 },
 
@@ -76,7 +76,7 @@ window.vocabN5 = [
   examples: [{"jp": "窓を開けてください。", "id": "Tolong buka jendelanya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['v-n5-0002'],
+  see_also: ['vg-n5-0002'],
   added_v: 'v15-migrated'
 },
 
@@ -219,7 +219,7 @@ window.vocabN5 = [
   conj_type: 'godan',
   examples: [{"jp": "学校に行きます。", "id": "Saya pergi ke sekolah.", "level": "n5", "tags": ["sekolah"]}],
   synonyms: [],
-  antonyms: ['v-n5-0010'],
+  antonyms: ['vg-n5-0010'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -243,7 +243,7 @@ window.vocabN5 = [
   conj_type: 'kuru',
   examples: [{"jp": "友達が来ました。", "id": "Teman datang.", "level": "n5", "tags": ["hubungan"]}],
   synonyms: [],
-  antonyms: ['v-n5-0009'],
+  antonyms: ['vg-n5-0009'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -387,7 +387,7 @@ window.vocabN5 = [
   conj_type: 'godan',
   examples: [{"jp": "電気を消してください。", "id": "Tolong matikan lampunya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['v-n5-0017'],
+  antonyms: ['vg-n5-0017'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -411,7 +411,7 @@ window.vocabN5 = [
   conj_type: 'ichidan',
   examples: [{"jp": "エアコンをつけてください。", "id": "Tolong nyalakan AC.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['v-n5-0016'],
+  antonyms: ['vg-n5-0016'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -507,7 +507,7 @@ window.vocabN5 = [
   conj_type: 'godan',
   examples: [{"jp": "椅子に座ってください。", "id": "Silakan duduk di kursi.", "level": "n5", "tags": ["sopan-santun"]}],
   synonyms: [],
-  antonyms: ['v-n5-0022'],
+  antonyms: ['vg-n5-0022'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -531,7 +531,7 @@ window.vocabN5 = [
   conj_type: 'godan',
   examples: [{"jp": "立ってください。", "id": "Silakan berdiri.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['v-n5-0021'],
+  antonyms: ['vg-n5-0021'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -556,7 +556,7 @@ window.vocabN5 = [
   examples: [{"jp": "朝ご飯を食べました。", "id": "Saya makan sarapan.", "level": "n5", "tags": ["makanan"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['v-n5-0024'],
+  see_also: ['vg-n5-0024'],
   added_v: 'v15-migrated'
 },
 
@@ -580,7 +580,7 @@ window.vocabN5 = [
   examples: [{"jp": "水を飲んでください。", "id": "Tolong minum air.", "level": "n5", "tags": ["makanan", "kesehatan"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['v-n5-0023'],
+  see_also: ['vg-n5-0023'],
   added_v: 'v15-migrated'
 },
 
@@ -675,7 +675,7 @@ window.vocabN5 = [
   conj_type: 'ichidan',
   examples: [{"jp": "学校を出ました。", "id": "Saya keluar dari sekolah.", "level": "n5", "tags": ["sekolah"]}],
   synonyms: [],
-  antonyms: ['v-n5-0029'],
+  antonyms: ['vg-n5-0029'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -699,7 +699,7 @@ window.vocabN5 = [
   conj_type: 'godan',
   examples: [{"jp": "部屋に入りました。", "id": "Saya masuk ke kamar.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['v-n5-0028'],
+  antonyms: ['vg-n5-0028'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -843,7 +843,7 @@ window.vocabN5 = [
   conj_type: 'ichidan',
   examples: [{"jp": "毎朝６時に起きます。", "id": "Setiap pagi saya bangun jam 6.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['v-n5-0036'],
+  antonyms: ['vg-n5-0036'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -867,7 +867,7 @@ window.vocabN5 = [
   conj_type: 'ichidan',
   examples: [{"jp": "１１時に寝ます。", "id": "Saya tidur jam 11.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['v-n5-0035'],
+  antonyms: ['vg-n5-0035'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -915,7 +915,7 @@ window.vocabN5 = [
   conj_type: 'godan',
   examples: [{"jp": "この店は本を売っています。", "id": "Toko ini menjual buku.", "level": "n5", "tags": ["belanja"]}],
   synonyms: [],
-  antonyms: ['v-n5-0037'],
+  antonyms: ['vg-n5-0037'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -939,7 +939,7 @@ window.vocabN5 = [
   conj_type: 'godan',
   examples: [{"jp": "傘を貸してください。", "id": "Tolong pinjamkan payung.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['v-n5-0040'],
+  antonyms: ['vg-n5-0040'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -963,7 +963,7 @@ window.vocabN5 = [
   conj_type: 'ichidan',
   examples: [{"jp": "図書館で本を借りました。", "id": "Saya meminjam buku di perpustakaan.", "level": "n5", "tags": ["sekolah"]}],
   synonyms: [],
-  antonyms: ['v-n5-0039'],
+  antonyms: ['vg-n5-0039'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -1060,7 +1060,7 @@ window.vocabN5 = [
   examples: [{"jp": "次の駅で降ります。", "id": "Saya turun di stasiun berikutnya.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['v-n5-0045'],
+  see_also: ['vg-n5-0045'],
   added_v: 'v15-migrated'
 },
 
@@ -1083,7 +1083,7 @@ window.vocabN5 = [
   conj_type: 'godan',
   examples: [{"jp": "バスに乗って行きます。", "id": "Saya pergi naik bus.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
-  antonyms: ['v-n5-0044'],
+  antonyms: ['vg-n5-0044'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -1131,7 +1131,7 @@ window.vocabN5 = [
   conj_type: 'godan',
   examples: [{"jp": "映画が始まりました。", "id": "Filmnya mulai.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['v-n5-0046'],
+  antonyms: ['vg-n5-0046'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -1204,7 +1204,7 @@ window.vocabN5 = [
   examples: [{"jp": "プレゼントをもらいました。", "id": "Saya menerima hadiah.", "level": "n5", "tags": ["hubungan"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['v-n5-0051', 'v-n5-0052'],
+  see_also: ['vg-n5-0051', 'vg-n5-0052'],
   added_v: 'v15-migrated'
 },
 
@@ -1228,7 +1228,7 @@ window.vocabN5 = [
   examples: [{"jp": "友達にプレゼントをあげました。", "id": "Saya memberi hadiah ke teman.", "level": "n5", "tags": ["hubungan"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['v-n5-0052', 'v-n5-0050'],
+  see_also: ['vg-n5-0052', 'vg-n5-0050'],
   added_v: 'v15-migrated'
 },
 
@@ -1252,7 +1252,7 @@ window.vocabN5 = [
   examples: [{"jp": "友達が本をくれました。", "id": "Teman memberiku buku.", "level": "n5", "tags": ["hubungan"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['v-n5-0051', 'v-n5-0050'],
+  see_also: ['vg-n5-0051', 'vg-n5-0050'],
   added_v: 'v15-migrated'
 },
 
@@ -1276,7 +1276,7 @@ window.vocabN5 = [
   examples: [{"jp": "猫が二匹います。", "id": "Ada dua ekor kucing.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['v-n5-0054'],
+  see_also: ['vg-n5-0054'],
   added_v: 'v15-migrated'
 },
 
@@ -1300,7 +1300,7 @@ window.vocabN5 = [
   examples: [{"jp": "机の上に本があります。", "id": "Ada buku di atas meja.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['v-n5-0053'],
+  see_also: ['vg-n5-0053'],
   added_v: 'v15-migrated'
 },
 
@@ -1371,7 +1371,7 @@ window.vocabN5 = [
   conj_type: 'adj-i',
   examples: [{"jp": "大きい犬がいます。", "id": "Ada anjing besar.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['v-n5-0058'],
+  antonyms: ['vg-n5-0058'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -1395,7 +1395,7 @@ window.vocabN5 = [
   conj_type: 'adj-i',
   examples: [{"jp": "小さい猫がかわいいです。", "id": "Kucing kecil itu lucu.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['v-n5-0057'],
+  antonyms: ['vg-n5-0057'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -1419,7 +1419,7 @@ window.vocabN5 = [
   conj_type: 'adj-i',
   examples: [{"jp": "いい天気ですね。", "id": "Cuacanya bagus ya.", "level": "n5", "tags": ["alam"]}],
   synonyms: [],
-  antonyms: ['v-n5-0060'],
+  antonyms: ['vg-n5-0060'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -1443,7 +1443,7 @@ window.vocabN5 = [
   conj_type: 'adj-i',
   examples: [{"jp": "天気が悪いです。", "id": "Cuacanya buruk.", "level": "n5", "tags": ["alam"]}],
   synonyms: [],
-  antonyms: ['v-n5-0059'],
+  antonyms: ['vg-n5-0059'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -1467,7 +1467,7 @@ window.vocabN5 = [
   conj_type: 'adj-i',
   examples: [{"jp": "この店は高いです。", "id": "Toko ini mahal.", "level": "n5", "tags": ["belanja"]}],
   synonyms: [],
-  antonyms: ['v-n5-0062'],
+  antonyms: ['vg-n5-0062'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -1491,7 +1491,7 @@ window.vocabN5 = [
   conj_type: 'adj-i',
   examples: [{"jp": "スーパーの野菜は安いです。", "id": "Sayuran di supermarket murah.", "level": "n5", "tags": ["belanja", "makanan"]}],
   synonyms: [],
-  antonyms: ['v-n5-0061'],
+  antonyms: ['vg-n5-0061'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -1515,7 +1515,7 @@ window.vocabN5 = [
   conj_type: 'adj-i',
   examples: [{"jp": "今日はとても暑いですね。", "id": "Hari ini sangat panas ya.", "level": "n5", "tags": ["alam"]}],
   synonyms: [],
-  antonyms: ['v-n5-0064'],
+  antonyms: ['vg-n5-0064'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -1539,7 +1539,7 @@ window.vocabN5 = [
   conj_type: 'adj-i',
   examples: [{"jp": "冬は寒いです。", "id": "Musim dingin itu dingin.", "level": "n5", "tags": ["alam"]}],
   synonyms: [],
-  antonyms: ['v-n5-0063'],
+  antonyms: ['vg-n5-0063'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -1563,7 +1563,7 @@ window.vocabN5 = [
   conj_type: 'adj-i',
   examples: [{"jp": "新しい車を買いました。", "id": "Saya membeli mobil baru.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['v-n5-0066'],
+  antonyms: ['vg-n5-0066'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -1587,7 +1587,7 @@ window.vocabN5 = [
   conj_type: 'adj-i',
   examples: [{"jp": "古い建物が好きです。", "id": "Saya suka bangunan tua.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['v-n5-0065'],
+  antonyms: ['vg-n5-0065'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -1611,7 +1611,7 @@ window.vocabN5 = [
   conj_type: 'adj-i',
   examples: [{"jp": "この映画は面白いです。", "id": "Film ini menarik.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['v-n5-0068'],
+  antonyms: ['vg-n5-0068'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -1635,7 +1635,7 @@ window.vocabN5 = [
   conj_type: 'adj-i',
   examples: [{"jp": "この本はつまらないです。", "id": "Buku ini membosankan.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['v-n5-0067'],
+  antonyms: ['vg-n5-0067'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -1683,7 +1683,7 @@ window.vocabN5 = [
   conj_type: 'adj-i',
   examples: [{"jp": "日本語は難しいです。", "id": "Bahasa Jepang itu sulit.", "level": "n5", "tags": ["sekolah"]}],
   synonyms: [],
-  antonyms: ['v-n5-0071'],
+  antonyms: ['vg-n5-0071'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -1707,7 +1707,7 @@ window.vocabN5 = [
   conj_type: 'adj-i',
   examples: [{"jp": "この問題は易しいです。", "id": "Soal ini mudah.", "level": "n5", "tags": ["sekolah"]}],
   synonyms: [],
-  antonyms: ['v-n5-0070'],
+  antonyms: ['vg-n5-0070'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -1779,7 +1779,7 @@ window.vocabN5 = [
   conj_type: 'adj-i',
   examples: [{"jp": "この川は長いです。", "id": "Sungai ini panjang.", "level": "n5", "tags": ["alam"]}],
   synonyms: [],
-  antonyms: ['v-n5-0075'],
+  antonyms: ['vg-n5-0075'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -1803,7 +1803,7 @@ window.vocabN5 = [
   conj_type: 'adj-i',
   examples: [{"jp": "この映画は短いです。", "id": "Film ini singkat.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['v-n5-0074'],
+  antonyms: ['vg-n5-0074'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -1827,7 +1827,7 @@ window.vocabN5 = [
   conj_type: 'adj-na',
   examples: [{"jp": "音楽が好きです。", "id": "Saya suka musik.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['v-n5-0077'],
+  antonyms: ['vg-n5-0077'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -1851,7 +1851,7 @@ window.vocabN5 = [
   conj_type: 'adj-na',
   examples: [{"jp": "虫が嫌いです。", "id": "Saya tidak suka serangga.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['v-n5-0076'],
+  antonyms: ['vg-n5-0076'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -1875,7 +1875,7 @@ window.vocabN5 = [
   conj_type: 'adj-na',
   examples: [{"jp": "田中さんは料理が上手ですね。", "id": "Tanaka-san pandai masak ya.", "level": "n5", "tags": ["makanan", "sopan-santun"]}],
   synonyms: [],
-  antonyms: ['v-n5-0079'],
+  antonyms: ['vg-n5-0079'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -1899,7 +1899,7 @@ window.vocabN5 = [
   conj_type: 'adj-na',
   examples: [{"jp": "歌が下手です。", "id": "Saya tidak pandai bernyanyi.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['v-n5-0078'],
+  antonyms: ['vg-n5-0078'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -1947,7 +1947,7 @@ window.vocabN5 = [
   conj_type: 'adj-na',
   examples: [{"jp": "この図書館は静かです。", "id": "Perpustakaan ini tenang.", "level": "n5", "tags": ["sekolah"]}],
   synonyms: [],
-  antonyms: ['v-n5-0082'],
+  antonyms: ['vg-n5-0082'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -1971,7 +1971,7 @@ window.vocabN5 = [
   conj_type: 'adj-na',
   examples: [{"jp": "渋谷はにぎやかです。", "id": "Shibuya itu ramai.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
-  antonyms: ['v-n5-0081'],
+  antonyms: ['vg-n5-0081'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -2284,7 +2284,7 @@ window.vocabN5 = [
   examples: [{"jp": "今日は何曜日ですか。", "id": "Hari ini hari apa?", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['v-n5-0096', 'v-n5-0097'],
+  see_also: ['vg-n5-0096', 'vg-n5-0097'],
   added_v: 'v15-migrated'
 },
 
@@ -2307,8 +2307,8 @@ window.vocabN5 = [
   conj_type: null,
   examples: [{"jp": "明日また来ます。", "id": "Saya akan datang lagi besok.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['v-n5-0097'],
-  see_also: ['v-n5-0095'],
+  antonyms: ['vg-n5-0097'],
+  see_also: ['vg-n5-0095'],
   added_v: 'v15-migrated'
 },
 
@@ -2331,8 +2331,8 @@ window.vocabN5 = [
   conj_type: null,
   examples: [{"jp": "昨日は何をしましたか。", "id": "Kemarin kamu ngapain?", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['v-n5-0096'],
-  see_also: ['v-n5-0095'],
+  antonyms: ['vg-n5-0096'],
+  see_also: ['vg-n5-0095'],
   added_v: 'v15-migrated'
 },
 
@@ -2499,7 +2499,7 @@ window.vocabN5 = [
   conj_type: null,
   examples: [{"jp": "朝ご飯を食べましたか。", "id": "Apakah kamu sudah sarapan?", "level": "n5", "tags": ["makanan"]}],
   synonyms: [],
-  antonyms: ['v-n5-0105'],
+  antonyms: ['vg-n5-0105'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -2523,7 +2523,7 @@ window.vocabN5 = [
   conj_type: null,
   examples: [{"jp": "夜、何をしますか。", "id": "Malam hari, kamu ngapain?", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['v-n5-0104'],
+  antonyms: ['vg-n5-0104'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -2715,7 +2715,7 @@ window.vocabN5 = [
   conj_type: null,
   examples: [{"jp": "たくさん食べました。", "id": "Saya makan banyak.", "level": "n5", "tags": ["makanan"]}],
   synonyms: [],
-  antonyms: ['v-n5-0114'],
+  antonyms: ['vg-n5-0114'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -2739,7 +2739,7 @@ window.vocabN5 = [
   conj_type: null,
   examples: [{"jp": "日本語が少し話せます。", "id": "Saya bisa berbicara sedikit bahasa Jepang.", "level": "n5", "tags": ["sekolah"]}],
   synonyms: [],
-  antonyms: ['v-n5-0113'],
+  antonyms: ['vg-n5-0113'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -2787,7 +2787,7 @@ window.vocabN5 = [
   conj_type: null,
   examples: [{"jp": "まだ食べていません。", "id": "Saya belum makan.", "level": "n5", "tags": ["makanan"]}],
   synonyms: [],
-  antonyms: ['v-n5-0115'],
+  antonyms: ['vg-n5-0115'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -2884,7 +2884,7 @@ window.vocabN5 = [
   examples: [{"jp": "時々映画を見ます。", "id": "Saya kadang-kadang menonton film.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['v-n5-0119'],
+  see_also: ['vg-n5-0119'],
   added_v: 'v15-migrated'
 },
 
@@ -3412,7 +3412,7 @@ window.vocabN5 = [
   examples: [{"jp": "駅まで歩きます。", "id": "Saya berjalan sampai stasiun.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['v-n5-0141'],
+  see_also: ['vg-n5-0141'],
   added_v: 'v15-migrated'
 },
 
@@ -3483,7 +3483,7 @@ window.vocabN5 = [
   conj_type: 'adj-i',
   examples: [{"jp": "白い猫がいます。", "id": "Ada kucing putih.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['v-n5-0146'],
+  antonyms: ['vg-n5-0146'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -3507,7 +3507,7 @@ window.vocabN5 = [
   conj_type: 'adj-i',
   examples: [{"jp": "黒いかばんを買いました。", "id": "Saya membeli tas hitam.", "level": "n5", "tags": ["belanja"]}],
   synonyms: [],
-  antonyms: ['v-n5-0145'],
+  antonyms: ['vg-n5-0145'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -3579,7 +3579,7 @@ window.vocabN5 = [
   conj_type: null,
   examples: [{"jp": "右に曲がってください。", "id": "Tolong belok kanan.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
-  antonyms: ['v-n5-0150'],
+  antonyms: ['vg-n5-0150'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -3603,7 +3603,7 @@ window.vocabN5 = [
   conj_type: null,
   examples: [{"jp": "左の建物が学校です。", "id": "Bangunan di kiri adalah sekolah.", "level": "n5", "tags": ["perjalanan", "sekolah"]}],
   synonyms: [],
-  antonyms: ['v-n5-0149'],
+  antonyms: ['vg-n5-0149'],
   see_also: [],
   added_v: 'v15-migrated'
 },
@@ -3676,7 +3676,7 @@ window.vocabN5 = [
   examples: [{"jp": "バスで駅まで行きます。", "id": "Saya pergi ke stasiun naik bus.", "level": "n5", "tags": ["perjalanan"]}, {"jp": "バスが来ました。", "id": "Busnya sudah datang.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['v-n5-0157'],
+  see_also: ['vg-n5-0157'],
   added_v: 'v15-migrated'
 },
 
@@ -3772,7 +3772,7 @@ window.vocabN5 = [
   examples: [{"jp": "タクシーで空港まで行きました。", "id": "Saya pergi ke bandara naik taksi.", "level": "n5", "tags": ["perjalanan"]}, {"jp": "タクシーを呼んでください。", "id": "Tolong panggilkan taksi.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['v-n5-0153'],
+  see_also: ['vg-n5-0153'],
   added_v: 'v15-migrated'
 },
 
@@ -3796,7 +3796,7 @@ window.vocabN5 = [
   examples: [{"jp": "うちには猫が一匹います。", "id": "Di rumah kami ada satu ekor kucing.", "level": "n5", "tags": ["kehidupan-sehari"]}, {"jp": "あの猫は白くてかわいいです。", "id": "Kucing itu putih dan lucu.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['v-n5-0159'],
+  see_also: ['vg-n5-0159'],
   added_v: 'v15-migrated'
 },
 
@@ -3820,7 +3820,7 @@ window.vocabN5 = [
   examples: [{"jp": "犬を飼っていますか。", "id": "Apakah kamu punya anjing?", "level": "n5", "tags": ["kehidupan-sehari"]}, {"jp": "大きい犬が公園にいます。", "id": "Ada anjing besar di taman.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['v-n5-0158'],
+  see_also: ['vg-n5-0158'],
   added_v: 'v15-migrated'
 },
 
@@ -3868,7 +3868,7 @@ window.vocabN5 = [
   examples: [{"jp": "熱があります。", "id": "Saya demam.", "level": "n5", "tags": ["kesehatan"]}, {"jp": "今日は熱が３８度あります。", "id": "Hari ini demam 38 derajat.", "level": "n5", "tags": ["kesehatan"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['v-n5-0160'],
+  see_also: ['vg-n5-0160'],
   added_v: 'v15-migrated'
 },
 
@@ -3892,7 +3892,7 @@ window.vocabN5 = [
   examples: [{"jp": "風邪をひいてしまいました。", "id": "Saya kena flu.", "level": "n5", "tags": ["kesehatan"]}, {"jp": "風邪の時は休んでください。", "id": "Kalau flu, istirahatlah.", "level": "n5", "tags": ["kesehatan"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['v-n5-0161'],
+  see_also: ['vg-n5-0161'],
   added_v: 'v15-migrated'
 },
 
@@ -3916,7 +3916,7 @@ window.vocabN5 = [
   examples: [{"jp": "毎週土曜日に部屋を掃除します。", "id": "Setiap Sabtu saya membersihkan kamar.", "level": "n5", "tags": ["kehidupan-sehari"]}, {"jp": "掃除してから出かけます。", "id": "Saya akan keluar setelah beres-beres.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['v-n5-0164'],
+  see_also: ['vg-n5-0164'],
   added_v: 'v15-migrated'
 },
 
@@ -3940,7 +3940,7 @@ window.vocabN5 = [
   examples: [{"jp": "洗濯機で洗濯します。", "id": "Saya mencuci dengan mesin cuci.", "level": "n5", "tags": ["kehidupan-sehari"]}, {"jp": "今日は洗濯しましたか。", "id": "Hari ini sudah cuci baju?", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['v-n5-0163'],
+  see_also: ['vg-n5-0163'],
   added_v: 'v15-migrated'
 },
 
@@ -3988,7 +3988,7 @@ window.vocabN5 = [
   examples: [{"jp": "この答えは違います。", "id": "Jawaban ini salah.", "level": "n5", "tags": ["sekolah"]}, {"jp": "二つの意見が違います。", "id": "Kedua pendapat itu berbeda.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['v-n5-0167'],
+  see_also: ['vg-n5-0167'],
   added_v: 'v15-migrated'
 },
 
@@ -4012,7 +4012,7 @@ window.vocabN5 = [
   examples: [{"jp": "私たちは同じ学校に通っています。", "id": "Kami bersekolah di sekolah yang sama.", "level": "n5", "tags": ["sekolah"]}, {"jp": "二人は同じ意見です。", "id": "Keduanya berpendapat sama.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['v-n5-0166'],
+  see_also: ['vg-n5-0166'],
   added_v: 'v15-migrated'
 },
 

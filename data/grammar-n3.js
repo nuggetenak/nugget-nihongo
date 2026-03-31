@@ -2227,4 +2227,593 @@ window.grammarN3 = [
     notes      : null,
   },
 
+,
+
+  {
+      "id": "gn3-0105",
+      "level": "n3",
+      "pattern": "〜ば〜ほど",
+      "reading": "~ba ~hodo",
+      "meaning": "semakin ... semakin ...",
+      "cat": "kondisional",
+      "connection": "V-ば形 + V辞書形 + ほど",
+      "desc": "<b>〜ば〜ほど</b> menyatakan bahwa semakin banyak sesuatu dilakukan, semakin kuat efeknya. Bentuk: Verb-ば + verb yang sama 辞書形 + ほど.",
+      "nuance": "Menekankan proporsi — perubahan progresif. Sering digunakan untuk menggambarkan pengalaman mendalam.",
+      "examples": [
+          {
+              "jp": "考え<b>れば</b>考える<b>ほど</b>わからなくなる。",
+              "id": "Semakin dipikirkan, semakin tidak paham.",
+              "level": "n3",
+              "tags": [
+                  "kondisional"
+              ]
+          },
+          {
+              "jp": "練習す<b>れば</b>する<b>ほど</b>上手になる。",
+              "id": "Semakin berlatih, semakin mahir.",
+              "level": "n3",
+              "tags": [
+                  "kondisional"
+              ]
+          }
+      ],
+      "see_also_grammar": [
+          "gn3-0025",
+          "gn3-0026"
+      ],
+      "see_also_vocab": [],
+      "register": null,
+      "exceptions": null,
+      "notes": null
+  },
+
+  {
+      "id": "gn3-0106",
+      "level": "n3",
+      "pattern": "〜ばよかった",
+      "reading": "~ba yokatta",
+      "meaning": "seharusnya ... (penyesalan)",
+      "cat": "kondisional",
+      "connection": "V-ば形 + よかった",
+      "desc": "<b>〜ばよかった</b> menyatakan penyesalan bahwa sesuatu tidak dilakukan. Harfiah: 'Kalau saja melakukan..., akan baik.'",
+      "nuance": "Ekspresi penyesalan yang kuat. Sering dipakai untuk self-reflection.",
+      "examples": [
+          {
+              "jp": "もっと勉強す<b>ればよかった</b>。",
+              "id": "Seharusnya belajar lebih giat.",
+              "level": "n3",
+              "tags": [
+                  "penyesalan"
+              ]
+          },
+          {
+              "jp": "傘を持ってく<b>ればよかった</b>。",
+              "id": "Seharusnya bawa payung.",
+              "level": "n3",
+              "tags": [
+                  "penyesalan"
+              ]
+          }
+      ],
+      "see_also_grammar": [
+          "gn3-0025"
+      ],
+      "see_also_vocab": [],
+      "register": null,
+      "exceptions": null,
+      "notes": null
+  },
+
+  {
+      "id": "gn3-0107",
+      "level": "n3",
+      "pattern": "〜さえ〜ば",
+      "reading": "~sae ~ba",
+      "meaning": "asalkan ... saja",
+      "cat": "kondisional",
+      "connection": "N + さえ + V-ば形 / V-ます形 + さえすれば",
+      "desc": "<b>〜さえ〜ば</b> menyatakan bahwa satu kondisi saja sudah cukup untuk hasil yang diinginkan.",
+      "nuance": "Menekankan syarat minimum — 'cukup ini saja'. Nuansa: hal lain tidak penting.",
+      "examples": [
+          {
+              "jp": "薬を飲み<b>さえすれば</b>治る。",
+              "id": "Asalkan minum obat saja, akan sembuh.",
+              "level": "n3",
+              "tags": [
+                  "kondisional"
+              ]
+          },
+          {
+              "jp": "お金<b>さえあれば</b>幸せだと思っていた。",
+              "id": "Dulu berpikir asalkan punya uang saja sudah bahagia.",
+              "level": "n3",
+              "tags": [
+                  "kondisional"
+              ]
+          }
+      ],
+      "see_also_grammar": [
+          "gn3-0025"
+      ],
+      "see_also_vocab": [],
+      "register": null,
+      "exceptions": null,
+      "notes": null
+  },
+
+  {
+      "id": "gn3-0108",
+      "level": "n3",
+      "pattern": "〜ないで",
+      "reading": "~naide",
+      "meaning": "tanpa melakukan ...",
+      "cat": "penyangkalan",
+      "connection": "V-ない形 + で",
+      "desc": "<b>〜ないで</b> memiliki dua fungsi: (1) tanpa melakukan sesuatu, atau (2) permintaan untuk tidak melakukan (〜ないでください).",
+      "nuance": "Berbeda dari 〜なくて yang lebih menekankan alasan/sebab. 〜ないで menekankan keadaan bersamaan.",
+      "examples": [
+          {
+              "jp": "朝ごはんを食べ<b>ないで</b>学校に行った。",
+              "id": "Pergi ke sekolah tanpa sarapan.",
+              "level": "n3",
+              "tags": [
+                  "penyangkalan"
+              ]
+          },
+          {
+              "jp": "心配し<b>ないで</b>ください。",
+              "id": "Jangan khawatir.",
+              "level": "n3",
+              "tags": [
+                  "permintaan"
+              ]
+          }
+      ],
+      "see_also_grammar": [
+          "gn3-0018"
+      ],
+      "see_also_vocab": [],
+      "register": null,
+      "exceptions": null,
+      "notes": null
+  },
+
+  {
+      "id": "gn3-0109",
+      "level": "n3",
+      "pattern": "〜わけがない",
+      "reading": "~wake ga nai",
+      "meaning": "tidak mungkin ...",
+      "cat": "penyangkalan",
+      "connection": "V普通形 / Adj普通形 / N + な + わけがない",
+      "desc": "<b>〜わけがない</b> menyatakan bahwa sesuatu secara logis tidak mungkin terjadi. Penolakan kuat berdasarkan alasan.",
+      "nuance": "Lebih kuat dari 〜はずがない. Pembicara yakin 100% bahwa hal tersebut mustahil.",
+      "examples": [
+          {
+              "jp": "そんなことがある<b>わけがない</b>。",
+              "id": "Tidak mungkin hal seperti itu ada.",
+              "level": "n3",
+              "tags": [
+                  "penyangkalan"
+              ]
+          },
+          {
+              "jp": "彼が嘘をつく<b>わけがない</b>。",
+              "id": "Tidak mungkin dia berbohong.",
+              "level": "n3",
+              "tags": [
+                  "penyangkalan"
+              ]
+          }
+      ],
+      "see_also_grammar": [
+          "gn3-0048",
+          "gn3-0110"
+      ],
+      "see_also_vocab": [],
+      "register": null,
+      "exceptions": null,
+      "notes": null
+  },
+
+  {
+      "id": "gn3-0110",
+      "level": "n3",
+      "pattern": "〜わけではない",
+      "reading": "~wake dewa nai",
+      "meaning": "bukan berarti ...",
+      "cat": "penyangkalan",
+      "connection": "V普通形 / Adj普通形 / N + な + わけではない",
+      "desc": "<b>〜わけではない</b> menyatakan partial negation — bukan sepenuhnya begitu. Mengoreksi asumsi.",
+      "nuance": "Negasi parsial. Mengakui sebagian tapi menolak generalisasi. Sangat berguna untuk nuansa.",
+      "examples": [
+          {
+              "jp": "嫌いな<b>わけではない</b>けど、あまり食べない。",
+              "id": "Bukan berarti tidak suka, tapi jarang makan.",
+              "level": "n3",
+              "tags": [
+                  "penyangkalan"
+              ]
+          },
+          {
+              "jp": "お金がない<b>わけではない</b>。",
+              "id": "Bukan berarti tidak punya uang.",
+              "level": "n3",
+              "tags": [
+                  "penyangkalan"
+              ]
+          }
+      ],
+      "see_also_grammar": [
+          "gn3-0109"
+      ],
+      "see_also_vocab": [],
+      "register": null,
+      "exceptions": null,
+      "notes": null
+  },
+
+  {
+      "id": "gn3-0111",
+      "level": "n3",
+      "pattern": "〜ずに",
+      "reading": "~zu ni",
+      "meaning": "tanpa melakukan ... (formal)",
+      "cat": "penyangkalan",
+      "connection": "V-ない形 (remove ない, add ず) + に / する→せずに",
+      "desc": "<b>〜ずに</b> adalah bentuk formal/tulisan dari 〜ないで. Menyatakan melakukan sesuatu tanpa melakukan hal lain.",
+      "nuance": "Lebih formal dari 〜ないで. Sering muncul di tulisan dan pidato. する menjadi せず.",
+      "examples": [
+          {
+              "jp": "辞書を使わ<b>ずに</b>読んだ。",
+              "id": "Membaca tanpa menggunakan kamus.",
+              "level": "n3",
+              "tags": [
+                  "penyangkalan"
+              ]
+          },
+          {
+              "jp": "何も言わ<b>ずに</b>帰った。",
+              "id": "Pulang tanpa berkata apa-apa.",
+              "level": "n3",
+              "tags": [
+                  "penyangkalan"
+              ]
+          }
+      ],
+      "see_also_grammar": [
+          "gn3-0108"
+      ],
+      "see_also_vocab": [],
+      "register": "written",
+      "exceptions": "する → せず",
+      "notes": null
+  },
+
+  {
+      "id": "gn3-0112",
+      "level": "n3",
+      "pattern": "〜ざるを得ない",
+      "reading": "~zaru wo enai",
+      "meaning": "terpaksa harus ...",
+      "cat": "keharusan",
+      "connection": "V-ない形 (remove ない, add ざるを得ない) / する→せざるを得ない",
+      "desc": "<b>〜ざるを得ない</b> menyatakan bahwa seseorang terpaksa melakukan sesuatu meskipun tidak ingin.",
+      "nuance": "Sangat formal. Menekankan keterpaksaan. する menjadi せざるを得ない.",
+      "examples": [
+          {
+              "jp": "締め切りがあるので、残業<b>せざるを得ない</b>。",
+              "id": "Karena ada deadline, terpaksa harus lembur.",
+              "level": "n3",
+              "tags": [
+                  "keharusan"
+              ]
+          },
+          {
+              "jp": "事実を認め<b>ざるを得ない</b>。",
+              "id": "Terpaksa harus mengakui kenyataan.",
+              "level": "n3",
+              "tags": [
+                  "keharusan"
+              ]
+          }
+      ],
+      "see_also_grammar": [],
+      "see_also_vocab": [],
+      "register": "formal",
+      "exceptions": "する → せざるを得ない",
+      "notes": null
+  },
+
+  {
+      "id": "gn3-0113",
+      "level": "n3",
+      "pattern": "〜たとたんに",
+      "reading": "~ta totan ni",
+      "meaning": "begitu ... langsung ...",
+      "cat": "temporal",
+      "connection": "V-た形 + とたんに",
+      "desc": "<b>〜たとたんに</b> menyatakan bahwa tepat setelah aksi pertama selesai, aksi kedua langsung terjadi secara tidak terduga.",
+      "nuance": "Aksi kedua harus tidak disengaja/tak terduga. Tidak bisa dipakai untuk tindakan yang direncanakan.",
+      "examples": [
+          {
+              "jp": "ドアを開けた<b>とたんに</b>猫が飛び出した。",
+              "id": "Begitu pintu dibuka, kucing langsung melompat keluar.",
+              "level": "n3",
+              "tags": [
+                  "temporal"
+              ]
+          },
+          {
+              "jp": "薬を飲んだ<b>とたんに</b>眠くなった。",
+              "id": "Begitu minum obat, langsung mengantuk.",
+              "level": "n3",
+              "tags": [
+                  "temporal"
+              ]
+          }
+      ],
+      "see_also_grammar": [],
+      "see_also_vocab": [],
+      "register": null,
+      "exceptions": "Hasil harus tidak disengaja",
+      "notes": null
+  },
+
+  {
+      "id": "gn3-0114",
+      "level": "n3",
+      "pattern": "〜たびに",
+      "reading": "~tabi ni",
+      "meaning": "setiap kali ...",
+      "cat": "frekuensi",
+      "connection": "V辞書形 / N + の + たびに",
+      "desc": "<b>〜たびに</b> menyatakan bahwa setiap kali suatu kejadian terjadi, hal lain selalu ikut terjadi.",
+      "nuance": "Menekankan pola berulang yang konsisten. Nuansa: hal tersebut selalu tanpa kecuali.",
+      "examples": [
+          {
+              "jp": "日本に行く<b>たびに</b>新しい発見がある。",
+              "id": "Setiap kali ke Jepang, selalu ada penemuan baru.",
+              "level": "n3",
+              "tags": [
+                  "frekuensi"
+              ]
+          },
+          {
+              "jp": "会う<b>たびに</b>きれいになっている。",
+              "id": "Setiap kali bertemu, semakin cantik.",
+              "level": "n3",
+              "tags": [
+                  "frekuensi"
+              ]
+          }
+      ],
+      "see_also_grammar": [],
+      "see_also_vocab": [],
+      "register": null,
+      "exceptions": null,
+      "notes": null
+  },
+
+  {
+      "id": "gn3-0115",
+      "level": "n3",
+      "pattern": "〜ことにする",
+      "reading": "~koto ni suru",
+      "meaning": "memutuskan untuk ...",
+      "cat": "keputusan",
+      "connection": "V辞書形 / V-ない形 + ことにする",
+      "desc": "<b>〜ことにする</b> menyatakan keputusan aktif yang dibuat oleh pembicara. Pembicara secara sadar memilih.",
+      "nuance": "Berbeda dari 〜ことになる (keputusan dari luar). ことにする = keputusan pribadi.",
+      "examples": [
+          {
+              "jp": "来月から運動する<b>ことにした</b>。",
+              "id": "Memutuskan untuk berolahraga mulai bulan depan.",
+              "level": "n3",
+              "tags": [
+                  "keputusan"
+              ]
+          },
+          {
+              "jp": "甘いものを食べない<b>ことにする</b>。",
+              "id": "Memutuskan untuk tidak makan makanan manis.",
+              "level": "n3",
+              "tags": [
+                  "keputusan"
+              ]
+          }
+      ],
+      "see_also_grammar": [
+          "gn3-0116"
+      ],
+      "see_also_vocab": [],
+      "register": null,
+      "exceptions": null,
+      "notes": null
+  },
+
+  {
+      "id": "gn3-0116",
+      "level": "n3",
+      "pattern": "〜ことになる",
+      "reading": "~koto ni naru",
+      "meaning": "diputuskan bahwa ... / jadi ...",
+      "cat": "keputusan",
+      "connection": "V辞書形 / V-ない形 + ことになる",
+      "desc": "<b>〜ことになる</b> menyatakan keputusan yang berasal dari luar (organisasi, keadaan), bukan keputusan pribadi.",
+      "nuance": "Berbeda dari 〜ことにする (keputusan pribadi). ことになる = hasil dari proses eksternal.",
+      "examples": [
+          {
+              "jp": "来月から東京に転勤する<b>ことになった</b>。",
+              "id": "Jadi pindah kerja ke Tokyo mulai bulan depan.",
+              "level": "n3",
+              "tags": [
+                  "keputusan"
+              ]
+          },
+          {
+              "jp": "会議は中止する<b>ことになった</b>。",
+              "id": "Rapat diputuskan untuk dibatalkan.",
+              "level": "n3",
+              "tags": [
+                  "keputusan"
+              ]
+          }
+      ],
+      "see_also_grammar": [
+          "gn3-0115"
+      ],
+      "see_also_vocab": [],
+      "register": null,
+      "exceptions": null,
+      "notes": null
+  },
+
+  {
+      "id": "gn3-0117",
+      "level": "n3",
+      "pattern": "〜ことがある",
+      "reading": "~koto ga aru",
+      "meaning": "kadang-kadang ... / pernah ...",
+      "cat": "frekuensi",
+      "connection": "V辞書形 + ことがある (kadang) / V-た形 + ことがある (pernah)",
+      "desc": "<b>〜ことがある</b> memiliki dua fungsi tergantung bentuk verb. V辞書形: kadang-kadang terjadi. V-た形: pernah mengalami.",
+      "nuance": "Jangan campurkan dua fungsi ini. た形 = pengalaman hidup. 辞書形 = kebiasaan kadang-kadang.",
+      "examples": [
+          {
+              "jp": "日本に行った<b>ことがある</b>。",
+              "id": "Pernah ke Jepang.",
+              "level": "n3",
+              "tags": [
+                  "frekuensi"
+              ]
+          },
+          {
+              "jp": "朝ごはんを食べない<b>ことがある</b>。",
+              "id": "Kadang-kadang tidak sarapan.",
+              "level": "n3",
+              "tags": [
+                  "frekuensi"
+              ]
+          }
+      ],
+      "see_also_grammar": [],
+      "see_also_vocab": [],
+      "register": null,
+      "exceptions": null,
+      "notes": null
+  },
+
+  {
+      "id": "gn3-0118",
+      "level": "n3",
+      "pattern": "〜ようにする",
+      "reading": "~you ni suru",
+      "meaning": "berusaha agar ...",
+      "cat": "niat",
+      "connection": "V辞書形 / V-ない形 + ようにする",
+      "desc": "<b>〜ようにする</b> menyatakan usaha/kebiasaan untuk mencapai sesuatu. Pembicara berusaha secara sadar.",
+      "nuance": "Berbeda dari ことにする (keputusan satu kali). ようにする = usaha berkelanjutan.",
+      "examples": [
+          {
+              "jp": "毎日野菜を食べる<b>ようにしている</b>。",
+              "id": "Berusaha makan sayur setiap hari.",
+              "level": "n3",
+              "tags": [
+                  "niat"
+              ]
+          },
+          {
+              "jp": "遅刻しない<b>ようにする</b>。",
+              "id": "Berusaha agar tidak terlambat.",
+              "level": "n3",
+              "tags": [
+                  "niat"
+              ]
+          }
+      ],
+      "see_also_grammar": [
+          "gn3-0119",
+          "gn3-0115"
+      ],
+      "see_also_vocab": [],
+      "register": null,
+      "exceptions": null,
+      "notes": null
+  },
+
+  {
+      "id": "gn3-0119",
+      "level": "n3",
+      "pattern": "〜ようになる",
+      "reading": "~you ni naru",
+      "meaning": "menjadi bisa ... / jadi ...",
+      "cat": "perubahan",
+      "connection": "V辞書形 / V-ない形 + ようになる",
+      "desc": "<b>〜ようになる</b> menyatakan perubahan kemampuan atau kebiasaan secara gradual.",
+      "nuance": "Perubahan bertahap, bukan tiba-tiba. Sering dipakai untuk kemampuan baru yang berkembang.",
+      "examples": [
+          {
+              "jp": "日本語が話せる<b>ようになった</b>。",
+              "id": "Jadi bisa bicara bahasa Jepang.",
+              "level": "n3",
+              "tags": [
+                  "perubahan"
+              ]
+          },
+          {
+              "jp": "朝早く起きられる<b>ようになった</b>。",
+              "id": "Jadi bisa bangun pagi.",
+              "level": "n3",
+              "tags": [
+                  "perubahan"
+              ]
+          }
+      ],
+      "see_also_grammar": [
+          "gn3-0118"
+      ],
+      "see_also_vocab": [],
+      "register": null,
+      "exceptions": null,
+      "notes": "cat 'perubahan' belum terdaftar di taxonomy L1 — menggunakan closest match"
+  },
+
+  {
+      "id": "gn3-0120",
+      "level": "n3",
+      "pattern": "〜ように",
+      "reading": "~you ni",
+      "meaning": "supaya ... / agar ...",
+      "cat": "tujuan",
+      "connection": "V辞書形 / V-ない形 + ように",
+      "desc": "<b>〜ように</b> menyatakan tujuan, terutama untuk verb non-volitional atau kemampuan. Berbeda dari 〜ために yang dipakai untuk verb volitional.",
+      "nuance": "Gunakan ように untuk: potential verbs (聞こえるように), negative (忘れないように), intransitive. Gunakan ために untuk: volitional verbs.",
+      "examples": [
+          {
+              "jp": "忘れない<b>ように</b>メモした。",
+              "id": "Mencatat supaya tidak lupa.",
+              "level": "n3",
+              "tags": [
+                  "tujuan"
+              ]
+          },
+          {
+              "jp": "みんなに聞こえる<b>ように</b>大きな声で話した。",
+              "id": "Berbicara dengan suara keras supaya semua orang bisa dengar.",
+              "level": "n3",
+              "tags": [
+                  "tujuan"
+              ]
+          }
+      ],
+      "see_also_grammar": [
+          "gn3-0053"
+      ],
+      "see_also_vocab": [],
+      "register": null,
+      "exceptions": null,
+      "notes": null
+  }
+
 ];

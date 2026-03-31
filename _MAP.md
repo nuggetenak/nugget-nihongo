@@ -1,6 +1,6 @@
 # Nugget Nihongo — Project Map
 > Read this first every session. Single source of truth for project structure.
-> Last updated: v14.27.2 — 26 tasks seeded. Full mechanization document complete. 35 Termux possibilities locked. All gap fixes approved. 28 Maret 2026. (GOV-DISPATCH-FORMAT, INFRA-1/2, TOOL-MANIFEST, VALIDATOR-ROUTING, AGENTS-DIR, GH-ACTIONS, DOCS-TECH, PIPELINE x8, TESTS-SCAFFOLD, TERMUX-BOT, TERMUX-TUI). 28 Maret 2026
+> Last updated: v14.27.7 — 26 tasks seeded. Full mechanization document complete. 35 Termux possibilities locked. All gap fixes approved. 28 Maret 2026. (GOV-DISPATCH-FORMAT, INFRA-1/2, TOOL-MANIFEST, VALIDATOR-ROUTING, AGENTS-DIR, GH-ACTIONS, DOCS-TECH, PIPELINE x8, TESTS-SCAFFOLD, TERMUX-BOT, TERMUX-TUI). 28 Maret 2026
 > Perubahan dari versi sebelumnya: v14.23.1 — GOV-017 merged (Taxonomy v5, MASTER-DIRECTIVE-LOG, VIOLATION-DB updates, 5 sub-tasks), TASK-SPICY-F-002 (AUTO-TRIGGER 5 agents), GRM-6 confirmed ✅, hygiene fixes.
 
 ---
@@ -59,15 +59,15 @@ data/bank-soal-quiz4.js Quiz bank: extra mode 4
 
 ── VOCAB ENTRIES (naming: vocab-{level}.js — unified per RESTRUKTURISASI-B v14.9.0) ────────
 data/vocab-n5.js        N5 · unified (711 entries) · window.vocabN5   ✅ Active (RESTRUKTURISASI-B v14.9.0)
-data/vocab-n4.js        N4 · unified (692 entries) · window.vocabN4   ✅ Active (RESTRUKTURISASI-B v14.9.0)
-data/vocab-n3.js        N3 · placeholder           · window.vocabN3   🔒 Inactive — tunggu data
+data/vocab-n4.js        N4 · unified (720 entries) · window.vocabN4   ✅ Active (RESTRUKTURISASI-B v14.9.0)
+data/vocab-n3.js        N3 · 70 entries            · window.vocabN3   ✅ Active (v14.27.7)
 data/vocab-n2.js        N2 · placeholder           · window.vocabN2   🔒 Inactive — tunggu data
 data/vocab-n1.js        N1 · placeholder           · window.vocabN1   🔒 Inactive — tunggu data
 
 ── GRAMMAR DB (format baru, belum aktif) ────────────────────────────────────
 data/grammar-n5.js      N5 · 248 entries · window.grammarN5  🔒 Inactive — tunggu engine (RESTRUKTURISASI-D)
 data/grammar-n4.js      N4 · 272 entries · window.grammarN4  🔒 Inactive — tunggu engine
-data/grammar-n3.js      N3 · 313 entries · window.grammarN3  🔒 Inactive — tunggu engine
+data/grammar-n3.js      N3 · 313+16 entries (120 global tier 1) · window.grammarN3  🔒 Inactive — tunggu engine
 data/grammar-n2.js      N2 · placeholder · window.grammarN2  🔒 Inactive — tunggu data + engine
 data/grammar-n1.js      N1 · placeholder · window.grammarN1  🔒 Inactive — tunggu data + engine
 
@@ -119,13 +119,13 @@ core/version.js   → error-boundary.js ← KEDUA ✅
 |---|---|---|
 | **Agent 1 — Integrator** | Koordinasi, merge, versioning | index.html, sw.js, manifest.json, js/core/version.js, data/vocab-index.js, data/index.js, agent-prompts/*, _MAP.md |
 | **Agent 2 — Vocab** | Data kosakata | data/vocab-n5.js, vocab-n4.js, vocab-n3.js, vocab-n2.js, vocab-n1.js, data/_schema-vocab.md |
-| **Agent 3 — Book** | Book index & docs | data/book-*.js, data/sources.js, docs/ |
+| **Agent 3 — Book** | Book index & docs | data/book-*.js, data/sources.js |
 | **Agent 4 — Grammar** | Grammar cards & bank soal | data/n3-w*.js, n4-w*.js, bank-soal*.js, data/_schema.md, data/grammar-n*.js |
-| **Agent 5 — UI** | JavaScript, CSS, HTML UI | js/*.js, css/style.css, index.html (UI only) |
-| **Agent 6 — QA** | Verifikasi & audit | _MAP.md (status only), data/qa-tests.js, docs/audit/, docs/DECISION-DB.md |
+| **Agent 5 — UI** | JavaScript, CSS, HTML UI | js/*.js (non-core), js/core/ (state/router/theme/install), js/lang/, css/style.css, index.html (UI only) |
+| **Agent 6 — QA** | Verifikasi & audit | _MAP.md (status only), data/qa-tests.js, docs/DECISION-DB.md, docs/ERROR-PATTERN-DB.md, docs/QA-EFFECTIVENESS-DB.md |
 | **Agent 7 — Spicy** | Tooling & scripts | tools/scripts/spicy/, tools/scripts/utils/ |
 | **Agent 8 — Fluffy** | Kurikulum | docs/curriculum/ |
-| **Agent 9 — Savory** | Analytics & insights | docs/analytics/, RESEARCH-SUMMARY.md (draft) |
+| **Agent 9 — Savory** | Analytics & insights | docs/RESEARCH-SUMMARY.md (draft only) |
 
 ### Workflow Patch (wajib tanpa pengecualian) — GOV-008
 
@@ -145,7 +145,7 @@ core/version.js   → error-boundary.js ← KEDUA ✅
 [13] Nugget-san → Crunchy     : carry SPICY-SCAN ZIP untuk acknowledge findings
 
 Revision: maks 1x per patch. Round ke-2 gagal = otomatis REJECT.
-Source of truth lengkap: MASTER-FLOW-NUGGET-NIHONGO-v5.md
+Source of truth lengkap: AGENT-CORE modules (master-flow.md, zip-formats.md). Legacy MASTER-FLOW-NUGGET-NIHONGO-v5.md superseded by GOV-018-C.
 ```
 
 ### Aturan _MAP.md
@@ -219,7 +219,7 @@ TASK-UI-12 (Agent 5) harus selesai dan icon PNG tersedia
 - Level pills N1/N2/N5 pakai `disabled` attribute — jangan hapus
 - Welcome banner dismiss: localStorage key `wb-dismissed`
 - `vbPillPos('verb-u')` matches ALL verb subtypes untuk UX simpel
-- Vocab DB aktif: vocab-n5.js (711) + vocab-n4.js (692) = **1.403 entries** (RESTRUKTURISASI-B v14.9.0)
+- Vocab DB aktif: vocab-n5.js (711) + vocab-n4.js (692) + vocab-n3.js (70) = **1.473 entries** (RESTRUKTURISASI-B v14.9.0 + subsequent patches)
 - Vocab naming convention: `vocab-{level}.js` (unified format — berlaku sejak RESTRUKTURISASI-B v14.9.0)
 - `data/qa-tests.js` TIDAK di ASSETS sw.js — intentional, dev-only tool (DEC-009).
   Crispy bisa run di browser sebelum merge sebagai referential integrity check. Jangan tambahkan ke ASSETS.
@@ -252,12 +252,12 @@ TASK-UI-12 (Agent 5) harus selesai dan icon PNG tersedia
 - Assign: Agent 2
 
 
-#### TASK-N3 🟡 LINKED — Integrasi Vocab N3
+#### TASK-N3 ✅ 1 Apr 2026 — Integrasi Vocab N3
 - File: vocab-n3.js (placeholder, window.vocabN3 = [] — RESTRUKTURISASI-B v14.9.0)
 - Prasyarat: TASK-VOC-1 selesai ✅
 - Status: RESTRUKTURISASI-B selesai — vocab-n3.js tersedia sebagai placeholder
-  Tugas: isi vocab-n3.js sampai >50 entries, lalu aktifkan di vocab-index.js + index.html
-- Assign: Agent 2
+  Tugas: ✅ 70 entries filled, activated in vocab-index.js + index.html v14.27.7
+- Assign: Agent 1 (direct fill, Opus 4.6)
 
 ---
 
@@ -366,8 +366,8 @@ Lihat docs/VIOLATION-DB.md untuk Fix Effective status dan detail setiap entry.
 
 | Metrik | Status |
 |--------|--------|
-| Merge sejak last Spicy periodic | 3/3 |
-| Last Spicy periodic | SPICY-SCAN_ONDEMAND-2026-03-22 — acknowledged by Crunchy (22 Maret 2026) |
+| Merge sejak last Spicy periodic | 4/3 |
+| Last Spicy periodic | SPICY-SCAN_PERIODIC-2026-03-30 — acknowledged by Crispy (30 Maret 2026) |
 
 ---
 
@@ -384,121 +384,65 @@ Lihat docs/VIOLATION-DB.md untuk Fix Effective status dan detail setiap entry.
 ---
 
 ## DISPATCH QUEUE
-> Diupdate setiap merge oleh Agent 1 Crispy. Last updated: v14.27.0, 26 Maret 2026.
+> Diupdate: 31 Maret 2026 (full cleanup by Crunchy — all ✅ items moved to _MAP-ARCHIVE.md)
+> Hanya task OPEN / IN PROGRESS / BLOCKED yang ditampilkan.
 
-| Task ID | Agent | Dep. Status | Bisa mulai? | Unlocks | Catatan |
-|---------|-------|-------------|-------------|---------|---------|
-| RESTRUKTURISASI-B | Juicy+Batter+Crispy | ✅ DONE | — | — | Merged v14.9.0 |
-| RESTRUKTURISASI-C | Saucy+Batter+Crispy | 🟢 READY | Bisa mulai | — | Book files lens; wajib pecah per buku |
-| RESTRUKTURISASI-D | Golden+Crispy | 🔒 BLOCKED | Tunggu B+C | — | UI+engine update; selfTest 0 failures wajib |
-| TASK-BUTTON-FIX | Golden | ✅ DONE | — | — | Merged v14.8.2 |
-| TASK-N3 | Juicy | 🟢 READY | vocab-n3.js placeholder tersedia. Isi >50 entries. | — | Was BLOCKED tunggu RESTRUKTURISASI-B |
-| TASK-VOC-5 | Juicy | 🟢 READY | vocab-n4.js migrasi selesai. Lanjutkan examples[] + nuance. | — | Was PAUSED tunggu RESTRUKTURISASI-B |
-| TASK-UI-10 | Golden | ✅ 22 Maret 2026 — verified by Agent 6 | — | — | Bug fix SRS quality mapping. Merged v14.22.2 |
-| TASK-8 | Juicy | ✅ 22 Maret 2026 — verified by Agent 6 | — | — | Dokumentasi investigasi noun-suru. Referensi vocab-n5-soumatome.js (RETIRED) dihapus. |
-| TASK-SPICY-1 | Spicy (A7) | ✅ DONE | — | — | Merged v14.14.0 |
-| TASK-SPICY-2 | Spicy (A7) | ✅ DONE | — | — | Merged v14.15.0 |
-| TASK-SPICY-3 | Spicy (A7) | ✅ DONE | — | TASK-SPICY-4A–4D, TASK-SPICY-5 (Bucket E) | Merged v14.15.1. 12 deliverables: 9 scripts + parse-docx.py + 2 updates. |
-| TASK-CONFIG-FIX | Spicy (A7) | ✅ DONE | — | TASK-SPICY-4A–4D | Merged v14.15.2. Fix A–D (INC-007–010 RESOLVED). scope expand: +validate-grammar-schema.js +schema-validate.js (approved Nugget-san). |
-| TASK-INC012-FIX | Juicy (A2) | ✅ 21 Mar 2026 — verified by Agent 6 | — | — | Fix 533 entri vocab-n4.js non-verb conj_type 'godan' (INC-012). Tier S. |
-| TASK-BATTER-CATS-REVIEW | Batter (A4) | ✅ 22 Maret 2026 — verified by Agent 6 | — | — | Hapus duplicate 'kontras' dari config.js. Merged v14.22.3. TASK-QA-INIT-3 bisa di-dispatch. |
-| TASK-QA-INIT-3 | Crunchy (A6) | 🟢 READY | TASK-GRM-6 ✅ | TASK-UI-4 | Verifikasi daftar cat final sebelum approve TASK-UI-4 dispatch. Tier S. |
-| TASK-GRM-6 | Batter (A4) | ✅ 23 Maret 2026 — confirmed by Nugget-san | — | TASK-UI-4 UNLOCKED | Daftar cat final selesai. Dikonfirmasi Nugget-san 23 Maret 2026. Tidak ada patch ZIP — status update saja. |
-| TASK-INC017-FIX | Golden (A5) | ✅ 23 Mar 2026 — verified by Agent 6 | — | — | INC-017: load order violation — conjugation-engine.js load setelah quiz.js di index.html. HIGH priority. Tier S. |
-| TASK-INC018-FIX | Batter (A4) | 🔍 Task Brief di CP(1) Crunchy | Task Brief dispatched 24 Maret 2026 | — | INC-018: bs-n4-w4d7-13 duplicate choices in bank-soal.js (BSL-006). Tier S. |
-| TASK-INC019-FIX-A | Spicy (A7) | ✅ 23 Mar 2026 — verified by Agent 6 | — | TASK-INC019-FIX-B | INC-019: Investigasi selesai. 3 entries bermasalah ditemukan (bukan 2) — missing opening quote. INVESTIGATION-REPORT.md tersedia. |
-| TASK-INC019-FIX-B | Batter (A4) | ✅ 2026-03-23 — verified by Agent 6 | — | — | INC-019: Fix 3 malformed jp: entries di grammar-n4.js. RESOLVED. |
-| TASK-SPICY-PROP-008 | Spicy (A7) | ✅ 23 Mar 2026 — verified by Agent 6 | — | — | ZIP Robustness: run-cp1-checklist.js fix (nested path detection + Format B parsing). resolve-project-root.js dan project-health.js sudah resolved via TASK-SPICY-7. Merged v14.24.0. |
-| TASK-INC013-FIX | Juicy (A2) | ✅ 21 Mar 2026 — verified by Agent 6 | — | — | Fix 106 broken see_also refs di vocab-n4.js (INC-013). Count diupdate 57→106 per SPICY-SCAN post-v14.18.5. Tier S. |
-| TASK-INC014-FIX | Batter (A4) | ✅ 22 Maret 2026 — verified by Agent 6 | — | — | INC-014: FALSE POSITIVE — validator bug (validate-bank-soal-coverage.js). Tidak ada perubahan data. |
-| TASK-INC015-FIX | Golden (A5) | ✅ 22 Maret 2026 — verified by Agent 6 | — | — | INC-015: FALSE POSITIVE — validator bug (validate-css-variables.js). Tidak ada perubahan CSS. |
-| TASK-SPICY-4A | Spicy (A7) | ✅ DONE | — | — | Merged v14.16.0. get-pos-list, get-field-template, check-xref-bidirectional, count-entries-by-level, get-vocab-completeness. |
-| TASK-SPICY-4B | Spicy (A7) | ✅ DONE | — | — | Merged v14.16.0. get-cat-list, get-week-summary, get-bank-soal-stats, validate-bank-soal-coverage, check-grammar-duplicates. |
-| TASK-SPICY-4C | Spicy (A7) | ✅ DONE | — | — | Merged v14.16.0. get-book-stats, get-unit-summary, validate-book-completeness, scaffold-book-chapter, validate-sources-counts. |
-| TASK-SPICY-4D | Spicy (A7) | ✅ DONE | — | — | Merged v14.16.0. get-css-variable-list, get-js-function-index, get-component-map, validate-css-variables, get-dead-css-classes, get-quiz-api-map. |
-| TASK-SPICY-5A | Spicy (A7) | ✅ DONE | — | — | Merged v14.18.0. 17 scripts: Bucket F (Crunchy) + Bucket J/new (session tools). ✅ 20 Maret 2026 — verified by Agent 6 |
-| TASK-SPICY-5B | Spicy (A7) | ✅ DONE | — | — | Merged v14.18.1. 6 scripts: Bucket E (Crispy). ✅ 20 Maret 2026 — verified by Agent 6 |
-| TASK-SPICY-5C | Spicy (A7) | ✅ DONE | — | — | Merged v14.18.2. 10 scripts: Bucket I (governance/meta) + Bucket K (audit). ✅ 20 Maret 2026 — verified by Agent 6 |
-| TASK-SPICY-5D | Spicy (A7) | ✅ DONE | — | — | Merged v14.18.3. 5 scripts: Bucket G (Spicy self) + Bucket H (cross-file). ✅ 20 Maret 2026 — verified by Agent 6 |
-| TASK-SPICY-5E | Spicy (A7) | ✅ DONE | — | — | Merged v14.18.4. prepare-deployment.js. ✅ 20 Maret 2026 — verified by Agent 6 |
-| TASK-SPICY-BUCKET-J | Spicy (A7) | ✅ DONE | — | — | Merged v14.17.2. 8 scripts testing/self-diagnostic infrastructure. ✅ 20 Maret 2026 — verified by Agent 6 |
-| TASK-SPICY-6-C1 | Spicy (A7) | ✅ 21 Mar 2026 — verified by Agent 6 | — | — | Bugfixes Kritikal — path + schema + orientation. Tier S. |
-| TASK-SPICY-6-C2 | Spicy (A7) | ✅ 21 Mar 2026 — verified by Agent 6 | — | — | Validator Fixes — grammar/book/bank/conjugation. Tier M. |
-| TASK-SPICY-6-C3a | Spicy (A7) | ✅ 21 Mar 2026 — verified by Agent 6 | — | — | New Scripts — scan-ids.js + scan-secrets.js + run-full-scan.js. Tier M. |
-| TASK-SPICY-6-C3b | Spicy (A7) | ✅ 21 Mar 2026 — verified by Agent 6 | — | — | New Scripts — detect-stale + validate-cross-schema + validate-inc-db-sync. Tier M. |
-| TASK-SPICY-6-C4 | Spicy (A7) | 🔒 BLOCKED | template spec pending | — | PDF Generator — hold sampai SPICY-PDF-TEMPLATE-SPEC.md + pdfkit eval. |
-| TASK-SPICY-7 | Spicy (A7) | ✅ 22 Maret 2026 — verified by Agent 6 | — | — | project-health.js + resolve-project-root.js (BARU) + run-cp1-checklist.js. Merged v14.21.1. |
-| TASK-SPICY-DIAG | Spicy (A7) | ✅ 22 Maret 2026 — verified by Agent 6 | — | — | 6 script fixes + scan-deprecated-fields.js (BARU) + CRUNCHY-DISPATCH-DIAG-001.md. Merged v14.22.0. |
-| TASK-GOV-MANDATORY-TAHAP1 | Crunchy (A6) | ✅ DONE | — | — | Merged v14.17.1. AGENT-COMMON v11, 2 addendum v2, 9 prompts updated. |
-| TASK-GOV-MANDATORY-TAHAP2 | Crunchy (A6) | ✅ 21 Mar 2026 — verified by Agent 6 | — | — | Update sequence commands + Crunchy SESSION MENU (get-db-summary). Tier 🟡 M. |
-| TASK-GOV-MANDATORY-TAHAP3 | Crunchy (A6) | ✅ 21 Mar 2026 — verified by Agent 6 | — | — | Implementasi TOOLS distribution penuh, generate-tools-zip, agent-tools-config. Tier 🟢 S. |
-| TASK-ARCHIVE-INIT | Crispy (A1) | ✅ DONE | — | — | GOV-015. Merged v14.17.1. Folder structure, archive init, Step 5–6 selesai. |
-| TASK-INC020-FIX | Spicy (A7) | ✅ 22 Maret 2026 — verified by Agent 6 | — | — | Fix INC-020 (SWA-001): tambah grammar-n3/4/5 + vocab stubs ke sw.js ASSETS list. Merged v14.22.4. |
-| TASK-GAP5-FASE-A | Spicy (A7) | ✅ 22 Maret 2026 — verified by Agent 6 | — | — | GAP 5 Fase A (SPICY-PROP-007): .gitignore + deploy.yml hardening + pre-deploy-checks.yml + install-hooks.sh. Independent. |
-| TASK-SPICY-F-002 | Spicy (A7) | ✅ 23 Maret 2026 — verified by Agent 6 | — | — | AUTO-TRIGGER fix: tambah ⚡ AUTO-TRIGGER line di 5 senior agent prompts (A1/A6/A7/A8/A9). Tier S. |
-| TASK-SAVORY-PREP | Savory (A9) | 🔴 OPEN | Task Brief pending | — | Compile semua DB existing ready untuk Savory. Tambah SCRIPT-METRICS-DB. |
-| TASK-HYGIENE-C001 | Crunchy (A6) | ✅ 23 Maret 2026 — verified by Crunchy | — | — | Governance hygiene decisions resolved: ST5 (VISION.md archived), UF6 (ghost task removed), UF8 (Violation Log closed). |
-| TASK-FLUFFY-1 | Fluffy (A8) | ✅ 24 Maret 2026 — Ecosystem Fit Clearance by Agent 6 Crunchy | — | TASK-GOLDEN-DAFPUS, TASK-SPICY-8, TASK-VOC-6, TASK-GRM-7, TASK-BOOK-3 | Curriculum audit + Architecture Proposal. docs/curriculum/ seeded: TAXONOMY-MASTER-v2, conjugation_engine_v1, CURRICULUM-PROPOSAL-v2. |
-| TASK-GOLDEN-DAFPUS | Golden (A5) | 🔴 OPEN | Task Brief pending — dep TASK-FLUFFY-1 ✅ | — | Unified Daftar Pustaka UI |
-| TASK-SPICY-8 | Spicy (A7) | 🔴 OPEN | Task Brief pending — dep TASK-FLUFFY-1 ✅ | TASK-VOC-6, TASK-GRM-7 | 5 validation scripts baru dari CP-8: validate-confusion-pairs, validate-provenance, validate-grammar-ids-xref, validate-id-format, validate-jlpt-values |
-| TASK-VOC-6 | Juicy (A2) | 🔴 OPEN | Task Brief pending — dep TASK-SPICY-8 | — | Schema update vocab: provenance, confusion_pairs, jlpt:'beyond'. ID format: vg-{level}-{4digit} (4-digit). |
-| TASK-GRM-7 | Batter (A4) | 🔴 OPEN | Task Brief pending — dep TASK-SPICY-8 | TASK-BOOK-3 | Schema update grammar: provenance, confusion_pairs, register:'literary', jlpt:'beyond' + 16 new N3 entries. ID canonical: gn{level}-{4digit}. |
-| TASK-BOOK-3 | Saucy (A3) | 🔴 OPEN | Task Brief pending — dep TASK-GRM-7 | — | Tambah grammar_ids field di semua book-*.js entries |
-| GOV-016 | Crunchy (A6) | ✅ DONE | — | — | Merged v14.18.5. VISION.md + PIA.md + DECISION-MATRIX-CONFIG.yaml + IDEA-PLAN. ✅ 20 Maret 2026 — verified by Agent 6 |
-| TASK-INTEL-P0A | Crunchy+Crispy | ✅ 21 Maret 2026 — verified by Agent 6 | — | — | Archive enforcement + FOR-INTEGRATOR packaging update |
-| TASK-INTEL-P0B | Spicy (A7) | ✅ 22 Maret 2026 — verified by Agent 6 | — | — | extract-archive-metadata.js + METADATA-HEADER-STANDARD.md. Merged v14.22.1. TASK-INTEL-P0C di-unlock. |
-| TASK-INTEL-P0C | Crunchy+Crispy | 🔴 OPEN | — | TASK-INTEL-P0B ✅ | AGENT-PERFORMANCE-DB seed dari data existing |
-| TASK-INTEL-P0D | Savory+Spicy | 🔒 | TASK-INTEL-P0C | — | generate-daily-brief.js + DAILY-BRIEF.md operational |
-| TASK-INTEL-P1A | Savory+Spicy | 🔒 | TASK-INTEL-P0D | — | Scoring Engine core |
-| TASK-INTEL-P1B | Savory+Crispy | 🔒 | TASK-INTEL-P1A | — | Alert system |
-| TASK-INTEL-P1C | Savory | 🔒 | TASK-INTEL-P1B | — | DECISION-SNAPSHOT per merge |
-| TASK-INTEL-P2A | Savory+Spicy | 🔒 | TASK-INTEL-P1C | — | Knowledge Graph |
-| TASK-INTEL-P2B | Savory+Crispy | 🔒 | TASK-INTEL-P2A | — | Dependency Intelligence |
-| TASK-INTEL-P3A | Savory | 🔒 | TASK-INTEL-P2B | — | Temporal Intelligence |
-| TASK-INTEL-P3B | Crunchy+Savory | 🔒 | TASK-INTEL-P3A | — | Governance Intelligence |
-| TASK-INTEL-P4A | Savory+Crispy | 🔒 | TASK-INTEL-P3B | — | Agent Collaboration Intelligence |
-| TASK-INTEL-P4B | Savory+Fluffy | 🔒 | TASK-INTEL-P4A | — | Content Intelligence |
-| TASK-INTEL-P5A | Savory+Crispy | 🔒 | TASK-INTEL-P4B | — | Risk Simulation |
-| TASK-INTEL-P5B | Savory+Crunchy | 🔒 | TASK-INTEL-P5A | — | Learning Loop |
-| TASK-INTEL-P6A | Crunchy+NS | 🔒 | TASK-INTEL-P5B | — | Meta-Governance + Succession |
-| TASK-INTEL-P6B | Savory | 🔒 | app launched | — | External Intelligence |
-| TASK-GOV-017 | Crunchy (A6) | ✅ 23 Maret 2026 — verified by Agent 6 | — | — | Governance Hygiene + Reform Proposal (GOV-017). Taxonomy v5, MASTER-DIRECTIVE-LOG, VIOLATION-DB updates. |
-| TASK-GOV-017-A | Spicy (A7) | ✅ 23 Mar 2026 — verified by Agent 6 | — | — | Extend run-merge-checklist.js (15 checks, hard exit, fix hints) + generate-for-integrator-readme.js baru. Merged v14.25.0 (batch dengan GOV-017-B). |
-| TASK-GOV-017-B | Spicy (A7) | ✅ 23 Mar 2026 — verified by Agent 6 | — | — | scan-unarchived-docs.js + snapshot-dbs.js + 11 new folders. Merged v14.25.0 (batch dengan GOV-017-A). |
-| TASK-GOV-017-C | Crunchy (A6) | ✅ 2026-03-23 — verified by Agent 6 | — | — | Update Crunchy packaging: DISPATCH-CLEARANCE ke archive. AGENT-6-QA v13, ADDENDUM v5, DECISION-DB HYG-011/022 fixed. |
-| TASK-GOV-017-D1 | Crispy (A1) | ✅ 2026-03-23 — verified by Agent 6 | — | — | AGENT-1-INTEGRATOR v12 + AGENT-COMMON v14 + _MAP.md hygiene (HYG-002/003/006/017). MASTER-DIRECTIVE-LOG seeded. |
-| TASK-GOV-017-D2 | Crispy (A1) | ❌ CANCELLED | 26 Maret 2026 | — | Backfill + stray cleanup — scope absorbed ke GOV-018-C (rewrite AGENT-CORE). File lama akan di-replace total. |
-| GOV-018 | Crispy (A1) + Spicy (A7) | 🟡 IN PROGRESS | 26 Maret 2026 | — | GitHub-Native Workflow Migration. Ganti full project ZIP (~40MB+) dengan claude_patch/ kecil via Termux scripts. IDEA-PLAN: IDEA-PLAN-GOV-018-GITHUB-WORKFLOW.md (Crunchy). Sub-tasks: A→B→C+D. |
-| TASK-GOV-018-A | Spicy (A7) | ✅ 28 Maret 2026 | — | — | Generate Termux scripts: pull_script.sh, push_script.sh, merge_script.sh, conflict_check.sh, rollback_script.sh, init_workspace.sh + TERMUX-README.md. Output: tools/scripts/utils/termux/ |
-| TASK-GOV-018-B | Spicy (A7) | 🔴 OPEN — Task Brief di CP(1) Crunchy (paralel dengan A) | — | — | Rewire semua tools/scripts paths ke new src/ structure. Backward compat wajib. Partial patch mode untuk run-cp2-mechanical-checks.js + zip-intake-check.js. |
-| TASK-GOV-018-C-TRIM | Crispy (A1) | ✅ 28 Maret 2026 | — | — | PK Trim: 9 AGENT-CORE files trimmed (29% reduction, 852→605 lines). OUTPUT DISCIPLINE rule added. Standalone — no dep on A/B. |
-| TASK-GOV-018-C | Crispy (A1) | 🔒 BLOCKED — dep: TASK-GOV-018-A + B ✅ | TASK-GOV-018-A, TASK-GOV-018-B | — | Update agent prompts → AGENT-CORE format (replaces AGENT-COMMON, MASTER-FLOW, all AGENT-[N] files). Absorbs scope TASK-GOV-017-D2. |
-| TASK-GOV-018-D | Crispy (A1) | 🔒 BLOCKED — dep: TASK-GOV-018-B ✅ | TASK-GOV-018-B | — | Repo cleanup: hapus root-level legacy folders (js/, css/, data/, fonts/) + legacy files. HIGH RISK — selfTest() wajib pass sebelum delete. |
+### ACTIVE — Content Progress Path
+| Task ID | Agent | Status | Catatan |
+|---------|-------|--------|---------|
+| TASK-VOC-5 | Juicy | 🟡 PARTIAL | examples[] + nuance: N5 213 missing, N4 614 missing. INC-027 xrefs FIXED. |
+| TASK-N3 | Crispy | ✅ 1 Apr 2026 | 70 entries filled + activated. Verified. |
+| TASK-SPICY-8 | Spicy | ✅ 1 Apr 2026 | 5 validation scripts merged. Verified by Agent 6 Crunchy. |
+| TASK-VOC-6 | Juicy | 🔴 dep: SPICY-8 | Schema update vocab: provenance, confusion_pairs |
+| TASK-GRM-7 | Batter | 🔴 dep: SPICY-8 | Schema update grammar + 16 new N3. ID canonical: gn (DEC-014) |
+| TASK-BOOK-3 | Saucy | 🔴 dep: GRM-7 | grammar_ids field di book-*.js |
+| TASK-INC018-FIX | — | ✅ 1 Apr 2026 | Data verified clean. No duplicate choices found in current files. |
+| TASK-QA-INIT-3 | Crunchy | 🟢 READY | Verify cat list → unlocks TASK-UI-4 |
+| TASK-GOLDEN-DAFPUS | Golden | 🔴 OPEN | Unified Daftar Pustaka UI |
+| TASK-UI-PWA-UPDATE-NOTIFY | Golden | 🔴 OPEN | SW cache update banner. P2. |
+| RESTRUKTURISASI-C | Saucy+Batter+Crispy | 🟢 READY | Book files lens |
+| RESTRUKTURISASI-D | Golden+Crispy | 🔒 dep: B+C | UI+engine update |
+| TASK-SCHEMA-SOURCES | Juicy | 🟡 LOW | Backfill `sources` field. Low priority. |
 
+### ACTIVE — Infrastructure / Governance
+| Task ID | Agent | Status | Catatan |
+|---------|-------|--------|---------|
+| GOV-018 | Crispy+Spicy | 🟡 IN PROGRESS | GitHub-Native Workflow Migration. Sub-tasks A✅ B✅ C✅ D pending. |
+| TASK-GOV-018-D | Crispy | 🔓 dep satisfied | Repo restructure → src/+public/. HIGH RISK. CP(1) pending minor fix. |
+| TASK-GOV-DISPATCH-FORMAT | Crispy | 🔴 OPEN | Define DISPATCH/PUSH ZIP formats. Tier S. |
+| TASK-GOV-DECISION-13 | Crispy+Crunchy | 🔴 OPEN | Crispy deputy authority. Low urgency. |
+| TASK-AGENTS-DIR | Crispy | 🔴 OPEN | Rename agent-prompts/ → agents/. Tier S. |
+| TASK-DOCS-TECH | Crispy | 🔴 OPEN | ARCHITECTURE.md, DEPLOYMENT.md, CHANGELOG. Tier S. |
 
-| TASK-DEPLOY-FIX | Crispy (A1) | 🔴 OPEN — URGENT | — | — | SECURITY: pk-nugget-nihongo/ currently PUBLIC on GitHub Pages. Fix deploy.yml exclusions: add agents/, pk-nugget-nihongo/, AGENT-COMMON-*.md, MASTER-DIRECTIVE-LOG.md, logs/, state/, tests/, CHANGELOG.md. Include Crispy notification to Crunchy. Tier S. |
-| TASK-GOV-DECISION-13 | Crispy (A1) + Crunchy input | 🔴 OPEN | — | — | Formal GOV treatment for DECISION-13: Crispy as Crunchy deputy for certain approvals when Crunchy unavailable. Tier S. Low urgency. |
-| TASK-UI-PWA-UPDATE-NOTIFY | Golden (A5) | 🔴 OPEN | — | — | Add in-app banner when new sw.js cache version detected: "📱 New content available! Tap to refresh." Tier S. P2. |
-| TASK-UI-JLPT-VALIDATOR | Batter (A4) | 🔴 OPEN | — | TASK-PIPELINE-VOCAB, TASK-PIPELINE-GRAMMAR | Create data/schemas/jlpt-reference.json — standard JLPT N1-N5 word/grammar lists for cross-reference validation. Tier S. P2. |
-| TASK-GOV-DISPATCH-FORMAT | Crispy (A1) | 🔴 OPEN | — | TASK-TERMUX-BOT | Define DISPATCH ZIP + PUSH ZIP formats. Update zip-formats.md, naming-convention.md, AGENT-CORE-A1.md. Tier S. |
-| TASK-INFRA-1 | Spicy (A7) | 🔴 OPEN | — | — | Add package.json (no "type:module"), .editorconfig, jsconfig.json, .env.example. Tier S. |
-| TASK-INFRA-2 | Spicy (A7) | 🟢 READY | GOV-018-A ✅ | TASK-TERMUX-BOT | logs/ structure, state/ folder, enhance 5 termux scripts (conventional commits, diff preview, SHA256 dedup, rate limit check, log output). Fix INC-NEW-1 (merge_script.sh wrong INC-DB path). Tier M. |
-| TASK-TOOL-MANIFEST | Spicy (A7) | 🔴 OPEN | — | TASK-TERMUX-BOT, all PIPELINE tasks | Create tools/config/agent-tool-manifest.json — maps A1–A9 to pipeline tools for auto-inject. Tier S. |
-| TASK-VALIDATOR-ROUTING | Spicy (A7) | 🔴 OPEN | — | TASK-TERMUX-BOT | Create tools/config/validator-routes.json — file pattern → validator script mapping. Update push_script.sh to read it. Tier S. |
-| TASK-AGENTS-DIR | Crispy (A1) | 🔴 OPEN | — | — | Rename agent-prompts/ → agents/prompts/. Create agents/common/, agents/registry/AGENT-REGISTRY.md, agents/archive/. Move AGENT-COMMON-*.md from root. Create docs/agents/ + docs/database/ sub-folders. Tier S. |
-| TASK-GH-ACTIONS | Spicy (A7) | 🔴 OPEN | — | — | Add validate-data.yml, test.yml (stub), Lighthouse CI workflow, staging branch deploy workflow. Add ISSUE_TEMPLATE/data_correction.md. Deploy preview comments on feature branches. Tier S. |
-| TASK-DOCS-TECH | Crispy (A1) | 🔴 OPEN | — | — | Create docs/technical/ARCHITECTURE.md (5 design principles + app overview), DATA-SCHEMA.md, DEPLOYMENT.md. Add CHANGELOG.md + LICENSE to root. Tier S. |
-| TASK-PIPELINE-ZIP | Spicy (A7) | 🔴 OPEN | TASK-TOOL-MANIFEST ✅ | All pipeline tasks, TASK-TERMUX-BOT | pipeline-zip.py — shared ZIP ops: package-patch, package-brief, package-integrator, intake-check, extract, inject. Python. Tier M. |
-| TASK-PIPELINE-SESSION | Spicy (A7) | 🔴 OPEN | TASK-TOOL-MANIFEST ✅ | All pipeline tasks | pipeline-session.py — shared session ops: proof-gen, warmstart, patch-notes, rate-limit-partial. Python. Tier M. |
-| TASK-PIPELINE-GOV | Spicy (A7) | 🔴 OPEN | TASK-TOOL-MANIFEST ✅ | — | pipeline-governance.py — Crispy domain: health, orientation, merge-check, map-summary, version. Python. Tier M. |
-| TASK-PIPELINE-QA | Spicy (A7) | 🔴 OPEN | TASK-TOOL-MANIFEST ✅ | — | pipeline-qa.py — Crunchy domain: cp1, cp2, intake, verdict, inc-check. Python. Tier M. |
-| TASK-PIPELINE-VOCAB | Spicy (A7) | 🔴 OPEN | TASK-TOOL-MANIFEST ✅ | — | pipeline-vocab.py — Juicy domain: validate, scaffold, audit, completeness, next-id, duplicate, n-level balance. Python. Tier M. |
-| TASK-PIPELINE-GRAMMAR | Spicy (A7) | 🔴 OPEN | TASK-TOOL-MANIFEST ✅ | — | pipeline-grammar.py — Batter domain: validate, scaffold, audit, cat-check, pos-check, duplicate. Python. Tier M. |
-| TASK-PIPELINE-BOOK | Spicy (A7) | 🔴 OPEN | TASK-TOOL-MANIFEST ✅ | — | pipeline-book.py — Saucy domain: validate, scaffold, chapter-check, completeness. Python. Tier M. |
-| TASK-PIPELINE-SPICY | Spicy (A7) | 🔴 OPEN | TASK-TOOL-MANIFEST ✅ | — | pipeline-spicy.py — Spicy domain: full-scan, targeted-scan, schema-validate, xref-check. Python. Tier M. |
-| TASK-TESTS-SCAFFOLD | Spicy (A7) | 🔴 OPEN | — | — | Scaffold tests/: unit/ stubs, data/validate-vocab.js + validate-grammar.js (real), fixtures/. Node test runner. Tier M. |
-| TASK-TERMUX-BOT | Spicy (A7) | 🔒 BLOCKED | TASK-INFRA-2 ✅ + TASK-GOV-DISPATCH-FORMAT ✅ + TASK-PIPELINE-ZIP ✅ | TASK-TERMUX-TUI | Full Nugget-Bot Python engine. 15 components + all 35 mechanization possibilities. See MASTER-MECHANIZATION-DOCUMENT.md for full scope. ~3,000+ lines Python. Tier L — multi-session. |
-| TASK-TERMUX-TUI | Spicy (A7) | 🔒 BLOCKED | TASK-TERMUX-BOT ✅ | — | Full interactive TUI. Python rich + prompt_toolkit. 10 screens, context-sensitive help, plain Indonesian UI, disaster recovery (8 scenarios). Spec: docs/governance/proposals/TUI-DESIGN-DOCUMENT.md. Tier M. |
+### ACTIVE — Tooling Pipeline (all Spicy)
+| Task ID | Status | Catatan |
+|---------|--------|---------|
+| TASK-TOOL-MANIFEST | 🔴 OPEN | agent-tool-manifest.json. Unlocks all PIPELINE tasks. |
+| TASK-VALIDATOR-ROUTING | 🔴 dep: TOOL-MANIFEST | validator-routes.json |
+| TASK-PIPELINE-ZIP | 🔴 dep: TOOL-MANIFEST | pipeline-zip.py. Tier M. |
+| TASK-PIPELINE-SESSION | 🔴 dep: TOOL-MANIFEST | pipeline-session.py. Tier M. |
+| TASK-PIPELINE-GOV | 🔴 dep: TOOL-MANIFEST | pipeline-governance.py. Tier M. |
+| TASK-PIPELINE-QA | 🔴 dep: TOOL-MANIFEST | pipeline-qa.py. Tier M. |
+| TASK-PIPELINE-VOCAB | 🔴 dep: TOOL-MANIFEST | pipeline-vocab.py. Tier M. |
+| TASK-PIPELINE-GRAMMAR | 🔴 dep: TOOL-MANIFEST | pipeline-grammar.py. Tier M. |
+| TASK-PIPELINE-BOOK | 🔴 dep: TOOL-MANIFEST | pipeline-book.py. Tier M. |
+| TASK-PIPELINE-SPICY | 🔴 dep: TOOL-MANIFEST | pipeline-spicy.py. Tier M. |
+| TASK-TESTS-SCAFFOLD | 🔴 OPEN | tests/ directory + node test runner. Tier M. |
+| TASK-GH-ACTIONS | 🔴 OPEN | CI workflows. Tier S. |
+| TASK-UI-JLPT-VALIDATOR | 🔴 OPEN | jlpt-reference.json. P2. |
+| TASK-SPICY-6-C4 | 🔒 BLOCKED | PDF Generator — spec pending |
+
+### BLOCKED — Termux Bot (deep dependency chain)
+| Task ID | Status | Catatan |
+|---------|--------|---------|
+| TASK-TERMUX-BOT | 🔒 dep: INFRA-2✅ + DISPATCH-FORMAT + PIPELINE-ZIP | Full Python engine. Tier L. |
+| TASK-TERMUX-TUI | 🔒 dep: TERMUX-BOT | Interactive TUI. Tier M. |
+
+### BLOCKED — Intelligence Pipeline (long-term, post-launch)
+| Task ID | Status | Catatan |
+|---------|--------|---------|
+| TASK-SAVORY-PREP | 🔴 OPEN | Compile DBs for Savory |
+| TASK-INTEL-P0C → P6B | 🔒 CHAIN | 14 tasks, sequential. P0C is next (AGENT-PERFORMANCE-DB seed). |
 
 ---
 

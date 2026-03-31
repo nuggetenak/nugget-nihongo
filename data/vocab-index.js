@@ -26,7 +26,7 @@
 window.vocabDB = [
   ...(window.vocabN5 || []),  // N5 unified — 711 entries (RESTRUKTURISASI-B v14.9.0)
   ...(window.vocabN4 || []),  // N4 unified — 692 entries (RESTRUKTURISASI-B v14.9.0)
-  // ...(window.vocabN3 || []),  // N3 — tunggu data (placeholder)
+  ...(window.vocabN3 || []),  // N3 — ACTIVATED v14.27.7 (70 entries)
   // ...(window.vocabN2 || []),  // N2 — tunggu data (placeholder)
   // ...(window.vocabN1 || []),  // N1 — tunggu data (placeholder)
 ];
