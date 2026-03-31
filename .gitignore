@@ -1,5 +1,5 @@
 # Internal — not for deployment
-agent-prompts/
+agents/
 docs/
 tools/
 *.env
