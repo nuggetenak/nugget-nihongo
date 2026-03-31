@@ -38,7 +38,29 @@ window.triggerInstall = async function() {
 
 function registerSW() {
   if (!('serviceWorker' in navigator)) return;
-  navigator.serviceWorker.register('./sw.js').catch(() => {});
+  navigator.serviceWorker.register('./sw.js').then(reg => {
+    // Check for updates periodically
+    reg.addEventListener('updatefound', () => {
+      const newWorker = reg.installing;
+      if (!newWorker) return;
+      newWorker.addEventListener('statechange', () => {
+        if (newWorker.state === 'activated' && navigator.serviceWorker.controller) {
+          showUpdateBanner();
+        }
+      });
+    });
+  }).catch(() => {});
+}
+
+function showUpdateBanner() {
+  // Don't show if already visible
+  if (document.getElementById('updateBanner')) return;
+  const banner = document.createElement('div');
+  banner.id = 'updateBanner';
+  banner.innerHTML = '<span>Versi baru tersedia!</span><button onclick="location.reload()">Refresh</button><button onclick="this.parentElement.remove()" style="background:none;color:inherit;border:none;font-size:1.2em;cursor:pointer">&times;</button>';
+  banner.style.cssText = 'position:fixed;bottom:0;left:0;right:0;background:#2563eb;color:#fff;padding:12px 16px;display:flex;align-items:center;gap:12px;z-index:9999;font-size:14px;box-shadow:0 -2px 8px rgba(0,0,0,.15)';
+  banner.querySelector('button').style.cssText = 'background:#fff;color:#2563eb;border:none;padding:6px 16px;border-radius:6px;font-weight:600;cursor:pointer';
+  document.body.appendChild(banner);
 }
 
 // ── Offline badge ──

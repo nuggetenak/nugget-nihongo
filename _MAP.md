@@ -1,6 +1,6 @@
 # Nugget Nihongo — Project Map
 > Read this first every session. Single source of truth for project structure.
-> Last updated: v14.27.7 — 26 tasks seeded. Full mechanization document complete. 35 Termux possibilities locked. All gap fixes approved. 28 Maret 2026. (GOV-DISPATCH-FORMAT, INFRA-1/2, TOOL-MANIFEST, VALIDATOR-ROUTING, AGENTS-DIR, GH-ACTIONS, DOCS-TECH, PIPELINE x8, TESTS-SCAFFOLD, TERMUX-BOT, TERMUX-TUI). 28 Maret 2026
+> Last updated: v14.28.0 — 26 tasks seeded. Full mechanization document complete. 35 Termux possibilities locked. All gap fixes approved. 28 Maret 2026. (GOV-DISPATCH-FORMAT, INFRA-1/2, TOOL-MANIFEST, VALIDATOR-ROUTING, AGENTS-DIR, GH-ACTIONS, DOCS-TECH, PIPELINE x8, TESTS-SCAFFOLD, TERMUX-BOT, TERMUX-TUI). 28 Maret 2026
 > Perubahan dari versi sebelumnya: v14.23.1 — GOV-017 merged (Taxonomy v5, MASTER-DIRECTIVE-LOG, VIOLATION-DB updates, 5 sub-tasks), TASK-SPICY-F-002 (AUTO-TRIGGER 5 agents), GRM-6 confirmed ✅, hygiene fixes.
 
 ---
@@ -60,7 +60,7 @@ data/bank-soal-quiz4.js Quiz bank: extra mode 4
 ── VOCAB ENTRIES (naming: vocab-{level}.js — unified per RESTRUKTURISASI-B v14.9.0) ────────
 data/vocab-n5.js        N5 · unified (711 entries) · window.vocabN5   ✅ Active (RESTRUKTURISASI-B v14.9.0)
 data/vocab-n4.js        N4 · unified (720 entries) · window.vocabN4   ✅ Active (RESTRUKTURISASI-B v14.9.0)
-data/vocab-n3.js        N3 · 70 entries            · window.vocabN3   ✅ Active (v14.27.7)
+data/vocab-n3.js        N3 · 70 entries            · window.vocabN3   ✅ Active (v14.28.0)
 data/vocab-n2.js        N2 · placeholder           · window.vocabN2   🔒 Inactive — tunggu data
 data/vocab-n1.js        N1 · placeholder           · window.vocabN1   🔒 Inactive — tunggu data
 
@@ -256,7 +256,7 @@ TASK-UI-12 (Agent 5) harus selesai dan icon PNG tersedia
 - File: vocab-n3.js (placeholder, window.vocabN3 = [] — RESTRUKTURISASI-B v14.9.0)
 - Prasyarat: TASK-VOC-1 selesai ✅
 - Status: RESTRUKTURISASI-B selesai — vocab-n3.js tersedia sebagai placeholder
-  Tugas: ✅ 70 entries filled, activated in vocab-index.js + index.html v14.27.7
+  Tugas: ✅ 70 entries filled, activated in vocab-index.js + index.html v14.28.0
 - Assign: Agent 1 (direct fill, Opus 4.6)
 
 ---
@@ -397,9 +397,9 @@ Lihat docs/VIOLATION-DB.md untuk Fix Effective status dan detail setiap entry.
 | TASK-GRM-7 | Batter | 🔴 dep: SPICY-8 | Schema update grammar + 16 new N3. ID canonical: gn (DEC-014) |
 | TASK-BOOK-3 | Saucy | 🔴 dep: GRM-7 | grammar_ids field di book-*.js |
 | TASK-INC018-FIX | — | ✅ 1 Apr 2026 | Data verified clean. No duplicate choices found in current files. |
-| TASK-QA-INIT-3 | Crunchy | 🟢 READY | Verify cat list → unlocks TASK-UI-4 |
+| TASK-QA-INIT-3 | — | ✅ 1 Apr 2026 | Cat list verified during audit. TASK-UI-4 unlocked. |
 | TASK-GOLDEN-DAFPUS | Golden | 🔴 OPEN | Unified Daftar Pustaka UI |
-| TASK-UI-PWA-UPDATE-NOTIFY | Golden | 🔴 OPEN | SW cache update banner. P2. |
+| TASK-UI-PWA-UPDATE-NOTIFY | Crispy | ✅ 1 Apr 2026 | SW update banner in install.js. |
 | RESTRUKTURISASI-C | Saucy+Batter+Crispy | 🟢 READY | Book files lens |
 | RESTRUKTURISASI-D | Golden+Crispy | 🔒 dep: B+C | UI+engine update |
 | TASK-SCHEMA-SOURCES | Juicy | 🟡 LOW | Backfill `sources` field. Low priority. |
@@ -409,40 +409,40 @@ Lihat docs/VIOLATION-DB.md untuk Fix Effective status dan detail setiap entry.
 |---------|-------|--------|---------|
 | GOV-018 | Crispy+Spicy | 🟡 IN PROGRESS | GitHub-Native Workflow Migration. Sub-tasks A✅ B✅ C✅ D pending. |
 | TASK-GOV-018-D | Crispy | 🔓 dep satisfied | Repo restructure → src/+public/. HIGH RISK. CP(1) pending minor fix. |
-| TASK-GOV-DISPATCH-FORMAT | Crispy | 🔴 OPEN | Define DISPATCH/PUSH ZIP formats. Tier S. |
-| TASK-GOV-DECISION-13 | Crispy+Crunchy | 🔴 OPEN | Crispy deputy authority. Low urgency. |
-| TASK-AGENTS-DIR | Crispy | 🔴 OPEN | Rename agent-prompts/ → agents/. Tier S. |
-| TASK-DOCS-TECH | Crispy | 🔴 OPEN | ARCHITECTURE.md, DEPLOYMENT.md, CHANGELOG. Tier S. |
+| TASK-GOV-DISPATCH-FORMAT | — | 🔒 RETIRED | Moot — governance simplified, direct repo access. |
+| TASK-GOV-DECISION-13 | — | 🔒 RETIRED | Moot — governance simplified. |
+| TASK-AGENTS-DIR | Crispy | ✅ 1 Apr 2026 | Renamed. |
+| TASK-DOCS-TECH | Crispy | ✅ 1 Apr 2026 | ARCHITECTURE.md + CHANGELOG.md created. |
 
 ### ACTIVE — Tooling Pipeline (all Spicy)
 | Task ID | Status | Catatan |
 |---------|--------|---------|
-| TASK-TOOL-MANIFEST | 🔴 OPEN | agent-tool-manifest.json. Unlocks all PIPELINE tasks. |
-| TASK-VALIDATOR-ROUTING | 🔴 dep: TOOL-MANIFEST | validator-routes.json |
-| TASK-PIPELINE-ZIP | 🔴 dep: TOOL-MANIFEST | pipeline-zip.py. Tier M. |
-| TASK-PIPELINE-SESSION | 🔴 dep: TOOL-MANIFEST | pipeline-session.py. Tier M. |
-| TASK-PIPELINE-GOV | 🔴 dep: TOOL-MANIFEST | pipeline-governance.py. Tier M. |
-| TASK-PIPELINE-QA | 🔴 dep: TOOL-MANIFEST | pipeline-qa.py. Tier M. |
-| TASK-PIPELINE-VOCAB | 🔴 dep: TOOL-MANIFEST | pipeline-vocab.py. Tier M. |
-| TASK-PIPELINE-GRAMMAR | 🔴 dep: TOOL-MANIFEST | pipeline-grammar.py. Tier M. |
-| TASK-PIPELINE-BOOK | 🔴 dep: TOOL-MANIFEST | pipeline-book.py. Tier M. |
-| TASK-PIPELINE-SPICY | 🔴 dep: TOOL-MANIFEST | pipeline-spicy.py. Tier M. |
-| TASK-TESTS-SCAFFOLD | 🔴 OPEN | tests/ directory + node test runner. Tier M. |
-| TASK-GH-ACTIONS | 🔴 OPEN | CI workflows. Tier S. |
+| TASK-TOOL-MANIFEST | 🔒 RETIRED | Moot — agent ZIP pipeline no longer needed with direct repo access. |
+| TASK-VALIDATOR-ROUTING | 🔒 RETIRED | Moot — pipeline retired. |
+| TASK-PIPELINE-ZIP | 🔒 RETIRED | Moot. |
+| TASK-PIPELINE-SESSION | 🔒 RETIRED | Moot. |
+| TASK-PIPELINE-GOV | 🔒 RETIRED | Moot. |
+| TASK-PIPELINE-QA | 🔒 RETIRED | Moot. |
+| TASK-PIPELINE-VOCAB | 🔒 RETIRED | Moot. |
+| TASK-PIPELINE-GRAMMAR | 🔒 RETIRED | Moot. |
+| TASK-PIPELINE-BOOK | 🔒 RETIRED | Moot. |
+| TASK-PIPELINE-SPICY | 🔒 RETIRED | Moot. |
+| TASK-TESTS-SCAFFOLD | ✅ 1 Apr 2026 | tests/run.js created. 10437 assertions pass. |
+| TASK-GH-ACTIONS | ✅ 1 Apr 2026 | .github/workflows/validate.yml created. |
 | TASK-UI-JLPT-VALIDATOR | 🔴 OPEN | jlpt-reference.json. P2. |
 | TASK-SPICY-6-C4 | 🔒 BLOCKED | PDF Generator — spec pending |
 
 ### BLOCKED — Termux Bot (deep dependency chain)
 | Task ID | Status | Catatan |
 |---------|--------|---------|
-| TASK-TERMUX-BOT | 🔒 dep: INFRA-2✅ + DISPATCH-FORMAT + PIPELINE-ZIP | Full Python engine. Tier L. |
-| TASK-TERMUX-TUI | 🔒 dep: TERMUX-BOT | Interactive TUI. Tier M. |
+| TASK-TERMUX-BOT | 🔒 RETIRED | Moot — direct repo access from Claude replaces Termux courier. |
+| TASK-TERMUX-TUI | 🔒 RETIRED | Moot — Termux bot retired. |
 
 ### BLOCKED — Intelligence Pipeline (long-term, post-launch)
 | Task ID | Status | Catatan |
 |---------|--------|---------|
-| TASK-SAVORY-PREP | 🔴 OPEN | Compile DBs for Savory |
-| TASK-INTEL-P0C → P6B | 🔒 CHAIN | 14 tasks, sequential. P0C is next (AGENT-PERFORMANCE-DB seed). |
+| TASK-SAVORY-PREP | 🔒 SHELVED | Post-launch. Not enough data yet. |
+| TASK-INTEL-P0C → P6B | 🔒 SHELVED | Post-launch. 14 sequential tasks shelved. |
 
 ---
 
