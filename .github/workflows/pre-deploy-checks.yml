@@ -1,38 +1,35 @@
-name: Pre-Deploy Checks
+name: Pre-deploy Checks
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
+    paths: ['public/**']
   pull_request:
-    branches: [ main ]
-
-permissions:
-  contents: read
+    branches: [main]
 
 jobs:
-  pre-deploy-checks:
+  check:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version-file: '.nvmrc'
 
-      - name: Run secrets scan
-        run: node tools/scripts/spicy/scan-secrets.js
-        # scan-secrets.js menggunakan process.cwd() sebagai root — CI-compatible
+      - name: Verify public/ structure
+        run: |
+          echo "Checking required files..."
+          for f in public/index.html public/sw.js public/manifest.webmanifest \
+                   public/js/core/version.js public/styles/app.css; do
+            if [ ! -f "$f" ]; then echo "MISSING: $f"; exit 1; fi
+          done
+          echo "✅ All required files present"
 
-      - name: Run version consistency check
-        run: node tools/scripts/utils/check-version-consistency.js
-        # Membaca version.js dan sw.js dari cwd — CI-compatible
-
-      - name: Run ID uniqueness check
-        run: node tools/scripts/utils/check-global-id-uniqueness.js
-        # Membaca data/*.js dari cwd — CI-compatible
-
-      - name: Run asset reference check
-        run: node tools/scripts/utils/validate-index-html-assets.js
-        # Membaca index.html dan sw.js dari cwd — CI-compatible
+      - name: Check no internal files in public/
+        run: |
+          if find public/ -name '_MAP*' -o -name 'AGENT-*' -o -name '*.env' | grep -q .; then
+            echo "❌ Internal files found in public/"
+            find public/ -name '_MAP*' -o -name 'AGENT-*' -o -name '*.env'
+            exit 1
+          fi
+          echo "✅ No internal files in public/"

@@ -1,98 +1,81 @@
-# 📚 Nugget — Nihongo · 日本語文法
+# Nugget Nihongo 🍙
 
-> Referensi & Quiz Tata Bahasa Jepang JLPT N1–N5  
-> Progressive Web App · Offline · SRS · Streak · by Nugget
+> Referensi & Quiz Tata Bahasa Jepang JLPT — Gratis, Offline, Tanpa Akun
 
----
+[![Deploy](https://github.com/nugget-nihongo/nugget-nihongo/actions/workflows/deploy.yml/badge.svg)](https://github.com/nugget-nihongo/nugget-nihongo/actions/workflows/deploy.yml)
+[![Validate](https://github.com/nugget-nihongo/nugget-nihongo/actions/workflows/validate.yml/badge.svg)](https://github.com/nugget-nihongo/nugget-nihongo/actions/workflows/validate.yml)
 
-## 🌐 Live Demo
+## What is this?
 
-**→ https://nuggetenak.github.io/nugget-nihongo**
+A Progressive Web App for learning Japanese, built for JLPT N5–N1 preparation.
+Works completely offline after first load. No account needed. No ads. Free forever.
 
----
+**Live**: [nugget-nihongo.github.io/nugget-nihongo](https://nugget-nihongo.github.io/nugget-nihongo/)
 
-## ✨ Fitur
+## Features
 
-| Fitur | Status |
-|---|---|
-| 📚 Browse grammar cards (N3 W1–W6, N4 W1–W4) | ✅ |
-| 🎯 Quiz Flip Card + self-assess | ✅ |
-| ✏️ Quiz Fill-in (kalimat berlubang) | ✅ |
-| 🔀 Quiz Susun Kalimat (rearrange — JLPT 問題2) | ✅ |
-| 🔤 Quiz Conjugation (ubah bentuk kata kerja) | ✅ |
-| 🔄 Quiz Translation (JP ↔ Indonesia) | ✅ |
-| 🔍 Quiz Error Finding (cari kalimat salah) | ✅ |
-| 🎯 Quiz Multiple Choice (pilih grammar tepat) | ✅ |
-| ⚡ Quick Review (SRS due today) | ✅ |
-| 🧠 SRS SM-2 (Anki algorithm) | ✅ |
-| 📊 Progress Panel (Mature/Young/Learning) | ✅ |
-| 🔥 Day Streak + broken animation | ✅ |
-| ☀️🌙 Light / Dark mode | ✅ |
-| 📱 PWA — installable + offline | ✅ |
-| N1, N2, N5 content | 🚧 |
+- 📚 **1,500+ vocabulary entries** across JLPT N5, N4, N3
+- 📝 **800+ grammar points** with examples and explanations
+- 🎯 **7 quiz modes** — flashcard, fill-in, rearrange, conjugation, translation, error-find, multiple choice
+- 🔄 **SRS (Spaced Repetition)** — SM-2 algorithm for optimized review
+- 📖 **Book index** — learn by textbook chapter (Minna no Nihongo, Irodori)
+- 🌐 **Bilingual** — Indonesian interface with Japanese content
+- 📱 **PWA** — install on any device, works offline
+- 🌙 **Dark mode** — easy on the eyes
 
----
+## Quick Start
 
-## 📊 Status Konten
+```bash
+# Clone
+git clone https://github.com/nugget-nihongo/nugget-nihongo.git
+cd nugget-nihongo
 
-| Level | Week | Grammar | Fill In | Rearrange | Conj | Trans | ErrFind | MultiChoice |
-|-------|------|---------|---------|-----------|------|-------|---------|-------------|
-| N3 | W1 | ✅ 18 | ✅ 20 | ✅ 5 | ✅ 5 | ✅ 5 | ✅ 5 | ✅ 5 |
-| N3 | W2 | ✅ 22 | ✅ 15 | ✅ 5 | ✅ 5 | ✅ 5 | ✅ 5 | ✅ 5 |
-| N3 | W3–W6 | ✅ 92 | 🚧 | 🚧 | 🚧 | 🚧 | 🚧 | 🚧 |
-| N4 | W1–W4 | ✅ 78 | ✅ 60 | ✅ 20 | ✅ 20 | ✅ 20 | ✅ 20 | ✅ 20 |
-| N4 | W5–W6 | ✅ 24 | 🚧 | 🚧 | 🚧 | 🚧 | 🚧 | 🚧 |
-| N1, N2, N5 | — | 🚧 dummy | 🚧 | 🚧 | 🚧 | 🚧 | 🚧 | 🚧 |
+# Serve locally
+npx http-server public -p 3000 -c-1
 
-**Total grammar: 234 pola** (N3: 132 · N4: 102)*  
-**Total bank soal: ~364 soal**
-
-\* grammar pattern di workbook (n\*-w\*.js)
-
----
-
-## 📁 Struktur Project
-
-```
-nugget-nihongo/
-├── index.html
-├── manifest.json
-├── sw.js
-├── css/style.css
-├── js/
-│   ├── app.js, browse.js, quiz.js, srs.js, swipe.js, streak.js
-│   ├── fillin.js, conjugation.js, translation.js
-│   ├── errorfind.js, multichoice.js
-│   ├── quiz-generator.js, quiz-vocab.js, quiz-mixed.js
-│   ├── quiz-feedback.js, quiz-typetr.js
-│   ├── browse-vocab.js, vocab-detail.js, global-search.js
-│   ├── daily-word.js, detail.js, conjugation-engine.js
-│   ├── error-boundary.js
-│   ├── lang/lang-core.js
-│   └── core/ (version.js, state.js, router.js, theme.js, install.js, grammar-query.js)
-├── data/
-│   ├── grammar-n3.js          (132 pola N3 — ⚠️ belum aktif, tunggu engine RESTRUKTURISASI-D)
-│   ├── grammar-n4.js          (102 pola N4 — ⚠️ belum aktif, tunggu engine RESTRUKTURISASI-D)
-│   ├── vocab-n5.js            (711 entries, aktif)
-│   ├── vocab-n4.js            (692 entries, aktif)
-│   ├── bank-soal.js, bank-soal-n4.js
-│   ├── bank-soal-quiz4.js     (120 soal)
-│   └── dummy.js, vocab-index.js, index.js
-├── docs/
-│   ├── [Research DBs]         INCONSISTENCY-DB, RATE-LIMIT-DB, VIOLATION-DB, dll
-│   ├── governance/            Governance scope documents + proposals aktif
-│   │   ├── archive/           Versi lama governance docs
-│   │   └── proposals/         Proposal documents
-│   └── operational/           Dokumen operasional per task (diarchive setiap merge)
-│       ├── qa-verdicts/
-│       ├── dispatch-clearances/
-│       ├── patch-notes/
-│       └── session-proofs/
-└── tools/scripts/
-    ├── spicy/                 Post-merge scan scripts (Agent 7)
-    └── utils/                 Work utilities semua agent (55+ scripts)
+# Run tests
+node tests/run.js
 ```
 
----
+Open `http://localhost:3000` in your browser.
 
-*Dibuat dengan ❤️ untuk belajar bahasa Jepang — がんばろう！*
+## Project Structure
+
+```
+public/          → Deploy root (what users see)
+  js/            → Application JavaScript
+  data/          → Vocab, grammar, quiz data
+  styles/        → CSS
+  fonts/         → Subsetted web fonts
+tests/           → Test runner
+tools/           → Development scripts (133 total)
+docs/            → Documentation & governance
+```
+
+See [ARCHITECTURE.md](ARCHITECTURE.md) for detailed structure.
+
+## Tech Stack
+
+- Vanilla JavaScript (ES2020) — no framework, no build step
+- Service Worker for offline caching
+- GitHub Actions for CI/CD
+- GitHub Pages for hosting
+
+## Data
+
+| Level | Vocab | Grammar (Global) | Grammar (Cards) |
+|-------|-------|-------------------|-----------------|
+| N5 | 789 | 248 | 132 |
+| N4 | 720 | 272 | 132 |
+| N3 | 110 | 329 | — |
+| N2 | — | — | — |
+| N1 | — | — | — |
+
+## Contributing
+
+This project is managed through a multi-agent AI governance system.
+See [ROADMAP.md](ROADMAP.md) for the development plan.
+
+## License
+
+[MIT](LICENSE) — Nugget Nihongo, 2026

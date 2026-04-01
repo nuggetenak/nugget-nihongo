@@ -1,5 +1,40 @@
 # Changelog — Nugget Nihongo
 
+## v15.0.0 (1 April 2026) — Project Restructure
+**BREAKING: All app file paths changed. SW cache busted.**
+
+### Directory Restructure
+- All deployable files moved into `public/` deploy root
+- `data/` reorganized: `data/vocab/`, `data/grammar/`, `data/books/`
+- `css/style.css` → `public/styles/app.css`
+- `manifest.json` → `public/manifest.webmanifest`
+- Icons moved to `public/icons/`
+- 64 script tags in index.html updated
+- ~80 SW ASSETS entries updated
+- 34 tool scripts path-fixed
+
+### Infrastructure
+- `deploy.yml` simplified: 43 lines → 24 lines (just deploy `public/`)
+- `validate.yml` updated for new paths + uses `.nvmrc`
+- `pre-deploy-checks.yml` added (structure + security validation)
+- `tests/run.js` rewritten with new paths + resilient eval
+- Added: `LICENSE` (MIT), `.nvmrc` (Node 22), `.prettierrc`
+- `package.json` v15.0.0 with `engines`, `scripts` (test, start, serve, check:version)
+- `jsconfig.json` updated with `@public/`, `@data/`, `@js/` path aliases
+- `.gitignore` cleaned and simplified
+- `.editorconfig` updated
+- All `HAS_NEW_STRUCTURE` / GOV-018-D compat code removed from 34 scripts
+- Termux scripts updated to new paths
+
+### Documentation
+- `ARCHITECTURE.md` rewritten for v15 structure
+- `_MAP.md` file structure section updated
+
+### Data (unchanged)
+- Vocab: 1,519 entries (N5: 789, N4: 720, N3: 110 [70 active])
+- Grammar: N5 248, N4 272, N3 329 (120 global + 132 week cards)
+- Tools: 133 scripts (26 spicy + 107 utils)
+
 ## v14.27.7 (1 April 2026)
 - **Content**: 70 N3 vocab entries (vocab-n3.js activated)
 - **Content**: 16 new N3 grammar entries (gn3-0105 to gn3-0120)

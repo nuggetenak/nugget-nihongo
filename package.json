@@ -1,19 +1,25 @@
 {
   "name": "nugget-nihongo",
-  "version": "14.27.3",
-  "description": "Offline-first PWA for learning Japanese (JLPT N5-N3)",
-  "main": "index.html",
-  "license": "ISC",
-  "author": "Nugget Nihongo Team",
+  "version": "15.0.0",
+  "description": "Offline-first PWA for learning Japanese — JLPT N5 to N1",
+  "private": true,
+  "license": "MIT",
+  "author": "Nugget Nihongo <nugget.nihongo@gmail.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/nugget-nihongo/nugget-nihongo.git"
   },
-  "keywords": [
-    "jlpt",
-    "japanese",
-    "language-learning",
-    "pwa",
-    "offline"
-  ]
+  "homepage": "https://nugget-nihongo.github.io/nugget-nihongo/",
+  "keywords": ["jlpt", "japanese", "language-learning", "pwa", "offline-first", "vanilla-js"],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node tests/run.js",
+    "validate": "node tests/run.js",
+    "start": "npx http-server public -p 3000 -c-1",
+    "serve": "npx http-server public -p 3000 -c-1 --push-state",
+    "lint:data": "node -e \"require('./tests/run.js')\"",
+    "check:version": "node -e \"const fs=require('fs');const v=fs.readFileSync('public/js/core/version.js','utf8').match(/APP_VERSION\\s*=\\s*'(v[\\d.]+)'/)[1];const s=fs.readFileSync('public/sw.js','utf8').match(/nihongo-(v[\\d.]+)/)[1];console.log(v===s?'✅ '+v:'❌ MISMATCH '+v+' vs '+s);if(v!==s)process.exit(1)\""
+  }
 }

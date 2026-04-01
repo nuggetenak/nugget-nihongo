@@ -1,15 +1,18 @@
-# EditorConfig helps maintain consistent coding styles across different editors and IDEs
-# https://editorconfig.org
-
 root = true
 
 [*]
 indent_style = space
 indent_size = 2
-charset = utf-8
 end_of_line = lf
-insert_final_newline = true
+charset = utf-8
 trim_trailing_whitespace = true
+insert_final_newline = true
 
 [*.md]
 trim_trailing_whitespace = false
+
+[*.{js,json}]
+indent_size = 2
+
+[Makefile]
+indent_style = tab

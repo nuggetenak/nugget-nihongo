@@ -2,26 +2,16 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
   contents: read
   pages: write
   id-token: write
-  # Explicit deny semua yang tidak dibutuhkan
-  actions: none
-  checks: none
-  discussions: none
-  issues: none
-  packages: none
-  pull-requests: none
-  repository-projects: none
-  security-events: none
-  statuses: none
 
 concurrency:
-  group: "pages"
+  group: pages
   cancel-in-progress: false
 
 jobs:
@@ -37,33 +27,10 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
-      - name: Prepare public files (exclude internal)
-        run: |
-          mkdir -p /tmp/deploy
-          rsync -a \
-            --exclude='agent-prompts/' \
-            --exclude='docs/' \
-            --exclude='tools/' \
-            --exclude='data/vocab-n4.js' \
-            --exclude='_MAP.md' \
-            --exclude='_MAP-ARCHIVE.md' \
-            --exclude='AGENT-COMMON.md' \
-            --exclude='AGENT-RATE-LIMIT-LOG.md' \
-            --exclude='MASTER-FLOW-*.md' \
-            --exclude='MERGE-SUMMARY.md' \
-            --exclude='CRUNCHY-NOTIFICATION-*.md' \
-            --exclude='.github/' \
-            --exclude='SESSION-RECAP-*.txt' \
-            --exclude='INTEGRATOR-BRIEFING.md' \
-            --exclude='VISION.md' \
-            --exclude='ROADMAP.md' \
-            --exclude='AGENT-PROMPTS.md' \
-            . /tmp/deploy/
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '/tmp/deploy'
+          path: public
 
       - name: Deploy to GitHub Pages
         id: deployment

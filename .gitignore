@@ -1,21 +1,33 @@
-# Internal — not for deployment
+# ── Internal (not deployed) ──────────────────────────
 agents/
 docs/
 tools/
+logs/
+state/
+
+# ── Project management ───────────────────────────────
+_MAP.md
+_MAP-ARCHIVE.md
+SESSION-RECAP*.txt
+
+# ── Environment ──────────────────────────────────────
 *.env
 .env.*
 config/local*.json
 config/*.local.json
 
-# Node (jika ada di masa depan)
+# ── Dependencies ─────────────────────────────────────
 node_modules/
 npm-debug.log*
+yarn-error.log
 
-# OS
+# ── OS files ─────────────────────────────────────────
 .DS_Store
-Thumbs.db
+Thumbbs.db
+*.swp
+*~
 
-# Temporary
+# ── Temporary ────────────────────────────────────────
 *.tmp
 *.bak
 /tmp/

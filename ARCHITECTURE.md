@@ -1,66 +1,119 @@
 # Nugget Nihongo — Architecture
 
 ## Overview
-Vanilla JavaScript PWA for Japanese language learning. Offline-first, no build step, no framework.
+Vanilla JavaScript PWA for Japanese language learning (JLPT N5–N1).
+Offline-first, zero build step, no framework, no bundler.
 
 ## Stack
-- **Frontend**: Vanilla JS + CSS (single `style.css`)
+- **Runtime**: Vanilla JS (ES2020) — no React, no Vue, no build tools
+- **Styling**: Single CSS file with section index (§1–§19)
 - **Data**: JS files exporting to `window.*` globals
-- **Offline**: Service Worker (`sw.js`) with static asset caching
-- **Fonts**: DM Sans (Latin) + BIZ UDGothic (JP), both subsetted
+- **Offline**: Service Worker with static asset caching
+- **Fonts**: DM Sans (Latin, variable) + BIZ UDGothic (JP, subsetted)
+- **CI/CD**: GitHub Actions → GitHub Pages
+- **Testing**: Custom Node.js test runner (no framework)
 
 ## Directory Structure
 ```
-├── index.html           # Entry point, script load order
-├── sw.js                # Service worker, CACHE version
-├── manifest.json        # PWA manifest
-├── js/
-│   ├── core/            # version, state, router, theme, install, grammar-query
-│   ├── lang/            # lang-core.js (sentence generator)
-│   └── *.js             # Feature modules (quiz, browse, srs, etc.)
-├── data/
-│   ├── vocab-n*.js      # Vocab entries per JLPT level
-│   ├── grammar-n*.js    # Grammar entries per level (Tier 1 global)
-│   ├── book-*.js        # Book index (chapter → vocab/grammar IDs)
-│   ├── bank-soal*.js    # Quiz question banks
-│   ├── vocab-index.js   # Merges all vocab → window.vocabDB
-│   ├── index.js         # Merges grammar → window.grammarData
-│   ├── sources.js       # Book metadata & credits
-│   └── _schema*.md      # Schema documentation
-├── css/style.css        # All styles, section index §1-§19
-├── fonts/               # Subsetted woff2 files
-├── agents/              # Agent prompt files (gitignored)
-├── docs/                # Governance, operational, curriculum (gitignored)
-└── tools/               # Scripts and utilities (gitignored)
+nugget-nihongo/
+├── public/                          # DEPLOY ROOT — everything here = production
+│   ├── index.html                   # Entry point, script load order defined inline
+│   ├── sw.js                        # Service worker, CACHE version string
+│   ├── manifest.webmanifest         # PWA manifest
+│   ├── icons/                       # PWA icons (192, 512)
+│   ├── fonts/                       # Subsetted woff2 (DM Sans + BIZ UDGothic)
+│   ├── styles/
+│   │   └── app.css                  # All styles, section index §1–§19
+│   ├── js/
+│   │   ├── core/                    # version, state, router, theme, install, grammar-query
+│   │   ├── lang/                    # lang-core.js (sentence generator)
+│   │   ├── app.js                   # Thin orchestrator — DOMContentLoaded, always last
+│   │   └── *.js                     # Feature modules (quiz, browse, srs, conjugation…)
+│   └── data/
+│       ├── vocab/                   # Vocabulary entries per JLPT level + merger
+│       │   ├── vocab-n5.js … n1.js  # Per-level vocab (window.vocabN5 etc.)
+│       │   └── vocab-index.js       # Merges all → window.vocabDB
+│       ├── grammar/                 # Grammar cards, week cards, quiz banks
+│       │   ├── grammar-n5.js … n1.js # Tier 1 global grammar entries
+│       │   ├── n3-w1.js … n4-w6.js  # Week-based grammar cards
+│       │   ├── bank-soal*.js        # Quiz question banks
+│       │   └── index.js             # Merges grammar → window.grammarData
+│       ├── books/                   # Book index (chapter → ID mappings)
+│       │   ├── book-minna-*.js      # Minna no Nihongo I & II
+│       │   ├── book-irodori-*.js    # Irodori A1, A2-1, A2-2
+│       │   └── sources.js           # Book metadata & credits
+│       ├── qa-tests.js              # Dev-only referential integrity tests
+│       ├── _schema.md               # Grammar data schema
+│       └── _schema-vocab.md         # Vocab data schema
+│
+├── tests/
+│   └── run.js                       # Test runner — validates schemas, IDs, xrefs
+├── tools/
+│   ├── config/                      # dependency-graph.json
+│   ├── scripts/
+│   │   ├── utils/                   # 107 utility scripts (health, merge, version, etc.)
+│   │   └── spicy/                   # 26 validation & audit scripts
+│   └── subset-fonts.py              # Font subsetting tool
+├── docs/                            # Governance, operational, curriculum, research DBs
+├── agents/                          # Agent prompt files (9 agents)
+├── .github/workflows/               # CI: deploy, validate, pre-deploy-checks
+│
+├── _MAP.md                          # Task registry — single source of truth
+├── ARCHITECTURE.md                  # This file
+├── CHANGELOG.md                     # Version history
+├── README.md                        # Project overview
+├── ROADMAP.md                       # Phase-based roadmap
+├── package.json                     # Metadata, npm scripts
+├── jsconfig.json                    # Editor support (path aliases)
+├── .editorconfig                    # Code style
+├── .prettierrc                      # Formatting rules
+├── .nvmrc                           # Node version (22)
+├── .gitignore                       # Excludes agents/, docs/, tools/ from deploy
+└── LICENSE                          # MIT
 ```
 
+## Deployment Model
+`public/` is the deploy root. GitHub Actions uploads `public/` directly to GitHub Pages.
+No build step, no bundling, no transformation. What's in `public/` is what the user gets.
+
+Everything outside `public/` (agents, docs, tools, tests) is development-only and excluded
+from production via `.gitignore` and the deploy workflow.
+
 ## Data Architecture
-Two-tier system (Plan A, v14.8.1):
+Two-tier system (established v14.8.1):
 
-**Tier 1 — Global**: Standalone entries independent of any textbook.
-- Vocab: `vg-{level}-{4digit}` (e.g., `vg-n5-0001`)
-- Grammar: `gn{level}-{4digit}` (e.g., `gn3-0001`)
+**Tier 1 — Global entries**: Standalone, textbook-independent.
+- Vocab IDs: `vg-{level}-{4digit}` (e.g., `vg-n5-0001`)
+- Grammar IDs: `gn{level}-{4digit}` (e.g., `gn3-0001`)
 
-**Tier 2 — Book Lens**: Chapter-to-ID mappings referencing Tier 1 entries.
-- `book-*.js` files map chapters to vocab_ids and grammar_ids.
+**Tier 2 — Book lens**: Chapter-to-ID mappings referencing Tier 1 entries.
+- `book-*.js` files map chapters to `vocab_ids[]` and `grammar_ids[]`.
 
 ## Script Load Order
-Defined in `index.html`. Critical dependencies:
+Defined in `public/index.html`. Critical dependency chain:
 1. `core/version.js` → `error-boundary.js` (must be 2nd)
-2. Data files (all `data/*.js`)
-3. Feature modules in dependency order
-4. `app.js` always last
+2. All `data/**/*.js` files
+3. Feature modules in dependency order (srs → browse → quiz chain)
+4. `app.js` — always last
 
 ## Key Globals
 | Variable | Source | Type |
 |----------|--------|------|
-| `window.vocabDB` | vocab-index.js | VocabEntry[] |
-| `window.grammarData` | index.js | GrammarCard[] |
 | `window.APP_VERSION` | core/version.js | string |
+| `window.vocabDB` | data/vocab/vocab-index.js | VocabEntry[] |
+| `window.grammarData` | data/grammar/index.js | GrammarCard[] |
 | `window.progress` | core/state.js | object |
 | `window.srsData` | srs.js | object |
 
+## npm Scripts
+```bash
+npm test          # Run test suite (9500+ assertions)
+npm start         # Local dev server on :3000
+npm run serve     # Dev server with push-state routing
+npm run check:version  # Verify version.js ↔ sw.js sync
+```
+
 ## Schemas
-- Vocab: `data/_schema-vocab.md`
-- Grammar: `data/_schema.md`
+- Vocab: `public/data/_schema-vocab.md`
+- Grammar: `public/data/_schema.md`
 - Taxonomy: `docs/curriculum/NUGGET-NIHONGO-TAXONOMY-MASTER-v2.md`
