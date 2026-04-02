@@ -3,7 +3,7 @@
 //  Cache-first strategy for offline use
 // ══════════════════════════════════════
 
-const CACHE = 'nihongo-v15.3.0';
+const CACHE = 'nihongo-v15.4.0';
 const ASSETS = [
   // NOTE: data/qa-tests.js TIDAK di-cache — intentional, dev-only tool (DEC-009).
   //       Digunakan Crispy di browser sebelum merge sebagai referential integrity check.
