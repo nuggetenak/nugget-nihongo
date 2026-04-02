@@ -8,7 +8,7 @@
 window.vocabN3 = [
 
 {
-  "id": "vg-n3-0001",
+  "id": "vg-n3-00001",
   "word": "集める",
   "reading": "あつめる",
   "romaji": "atsumeru",
@@ -51,13 +51,13 @@ window.vocabN3 = [
   "synonyms": [],
   "antonyms": [],
   "see_also": [
-    "vg-n3-0002"
+    "vg-n3-00002"
   ],
   "added_v": "v14.27"
 },
 
 {
-  "id": "vg-n3-0002",
+  "id": "vg-n3-00002",
   "word": "集まる",
   "reading": "あつまる",
   "romaji": "atsumaru",
@@ -100,13 +100,13 @@ window.vocabN3 = [
   "synonyms": [],
   "antonyms": [],
   "see_also": [
-    "vg-n3-0001"
+    "vg-n3-00001"
   ],
   "added_v": "v14.27"
 },
 
 {
-  "id": "vg-n3-0003",
+  "id": "vg-n3-00003",
   "word": "届ける",
   "reading": "とどける",
   "romaji": "todokeru",
@@ -149,13 +149,13 @@ window.vocabN3 = [
   "synonyms": [],
   "antonyms": [],
   "see_also": [
-    "vg-n3-0004"
+    "vg-n3-00004"
   ],
   "added_v": "v14.27"
 },
 
 {
-  "id": "vg-n3-0004",
+  "id": "vg-n3-00004",
   "word": "届く",
   "reading": "とどく",
   "romaji": "todoku",
@@ -197,13 +197,13 @@ window.vocabN3 = [
   "synonyms": [],
   "antonyms": [],
   "see_also": [
-    "vg-n3-0003"
+    "vg-n3-00003"
   ],
   "added_v": "v14.27"
 },
 
 {
-  "id": "vg-n3-0005",
+  "id": "vg-n3-00005",
   "word": "慣れる",
   "reading": "なれる",
   "romaji": "nareru",
@@ -250,7 +250,7 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-0006",
+  "id": "vg-n3-00006",
   "word": "壊れる",
   "reading": "こわれる",
   "romaji": "kowareru",
@@ -291,16 +291,16 @@ window.vocabN3 = [
   ],
   "synonyms": [],
   "antonyms": [
-    "vg-n3-0008"
+    "vg-n3-00008"
   ],
   "see_also": [
-    "vg-n3-0007"
+    "vg-n3-00007"
   ],
   "added_v": "v14.27"
 },
 
 {
-  "id": "vg-n3-0007",
+  "id": "vg-n3-00007",
   "word": "壊す",
   "reading": "こわす",
   "romaji": "kowasu",
@@ -342,13 +342,13 @@ window.vocabN3 = [
   "synonyms": [],
   "antonyms": [],
   "see_also": [
-    "vg-n3-0006"
+    "vg-n3-00006"
   ],
   "added_v": "v14.27"
 },
 
 {
-  "id": "vg-n3-0008",
+  "id": "vg-n3-00008",
   "word": "直す",
   "reading": "なおす",
   "romaji": "naosu",
@@ -390,16 +390,16 @@ window.vocabN3 = [
   ],
   "synonyms": [],
   "antonyms": [
-    "vg-n3-0006"
+    "vg-n3-00006"
   ],
   "see_also": [
-    "vg-n3-0009"
+    "vg-n3-00009"
   ],
   "added_v": "v14.27"
 },
 
 {
-  "id": "vg-n3-0009",
+  "id": "vg-n3-00009",
   "word": "直る",
   "reading": "なおる",
   "romaji": "naoru",
@@ -442,13 +442,13 @@ window.vocabN3 = [
   "synonyms": [],
   "antonyms": [],
   "see_also": [
-    "vg-n3-0008"
+    "vg-n3-00008"
   ],
   "added_v": "v14.27"
 },
 
 {
-  "id": "vg-n3-0010",
+  "id": "vg-n3-00010",
   "word": "決める",
   "reading": "きめる",
   "romaji": "kimeru",
@@ -491,13 +491,13 @@ window.vocabN3 = [
   "synonyms": [],
   "antonyms": [],
   "see_also": [
-    "vg-n3-0011"
+    "vg-n3-00011"
   ],
   "added_v": "v14.27"
 },
 
 {
-  "id": "vg-n3-0011",
+  "id": "vg-n3-00011",
   "word": "決まる",
   "reading": "きまる",
   "romaji": "kimaru",
@@ -539,13 +539,13 @@ window.vocabN3 = [
   "synonyms": [],
   "antonyms": [],
   "see_also": [
-    "vg-n3-0010"
+    "vg-n3-00010"
   ],
   "added_v": "v14.27"
 },
 
 {
-  "id": "vg-n3-0012",
+  "id": "vg-n3-00012",
   "word": "伝える",
   "reading": "つたえる",
   "romaji": "tsutaeru",
@@ -588,13 +588,13 @@ window.vocabN3 = [
   "synonyms": [],
   "antonyms": [],
   "see_also": [
-    "vg-n3-0013"
+    "vg-n3-00013"
   ],
   "added_v": "v14.27"
 },
 
 {
-  "id": "vg-n3-0013",
+  "id": "vg-n3-00013",
   "word": "伝わる",
   "reading": "つたわる",
   "romaji": "tsutawaru",
@@ -636,13 +636,13 @@ window.vocabN3 = [
   "synonyms": [],
   "antonyms": [],
   "see_also": [
-    "vg-n3-0012"
+    "vg-n3-00012"
   ],
   "added_v": "v14.27"
 },
 
 {
-  "id": "vg-n3-0014",
+  "id": "vg-n3-00014",
   "word": "変わる",
   "reading": "かわる",
   "romaji": "kawaru",
@@ -684,13 +684,13 @@ window.vocabN3 = [
   "synonyms": [],
   "antonyms": [],
   "see_also": [
-    "vg-n3-0015"
+    "vg-n3-00015"
   ],
   "added_v": "v14.27"
 },
 
 {
-  "id": "vg-n3-0015",
+  "id": "vg-n3-00015",
   "word": "変える",
   "reading": "かえる",
   "romaji": "kaeru",
@@ -733,13 +733,13 @@ window.vocabN3 = [
   "synonyms": [],
   "antonyms": [],
   "see_also": [
-    "vg-n3-0014"
+    "vg-n3-00014"
   ],
   "added_v": "v14.27"
 },
 
 {
-  "id": "vg-n3-0016",
+  "id": "vg-n3-00016",
   "word": "育てる",
   "reading": "そだてる",
   "romaji": "sodateru",
@@ -782,13 +782,13 @@ window.vocabN3 = [
   "synonyms": [],
   "antonyms": [],
   "see_also": [
-    "vg-n3-0017"
+    "vg-n3-00017"
   ],
   "added_v": "v14.27"
 },
 
 {
-  "id": "vg-n3-0017",
+  "id": "vg-n3-00017",
   "word": "育つ",
   "reading": "そだつ",
   "romaji": "sodatsu",
@@ -831,13 +831,13 @@ window.vocabN3 = [
   "synonyms": [],
   "antonyms": [],
   "see_also": [
-    "vg-n3-0016"
+    "vg-n3-00016"
   ],
   "added_v": "v14.27"
 },
 
 {
-  "id": "vg-n3-0018",
+  "id": "vg-n3-00018",
   "word": "諦める",
   "reading": "あきらめる",
   "romaji": "akirameru",
@@ -879,14 +879,14 @@ window.vocabN3 = [
   ],
   "synonyms": [],
   "antonyms": [
-    "vg-n3-0019"
+    "vg-n3-00019"
   ],
   "see_also": [],
   "added_v": "v14.27"
 },
 
 {
-  "id": "vg-n3-0019",
+  "id": "vg-n3-00019",
   "word": "頑張る",
   "reading": "がんばる",
   "romaji": "ganbaru",
@@ -928,14 +928,14 @@ window.vocabN3 = [
   ],
   "synonyms": [],
   "antonyms": [
-    "vg-n3-0018"
+    "vg-n3-00018"
   ],
   "see_also": [],
   "added_v": "v14.27"
 },
 
 {
-  "id": "vg-n3-0020",
+  "id": "vg-n3-00020",
   "word": "迷う",
   "reading": "まよう",
   "romaji": "mayou",
@@ -982,7 +982,7 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-0021",
+  "id": "vg-n3-00021",
   "word": "片付ける",
   "reading": "かたづける",
   "romaji": "katazukeru",
@@ -1028,7 +1028,7 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-0022",
+  "id": "vg-n3-00022",
   "word": "守る",
   "reading": "まもる",
   "romaji": "mamoru",
@@ -1075,7 +1075,7 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-0023",
+  "id": "vg-n3-00023",
   "word": "逃げる",
   "reading": "にげる",
   "romaji": "nigeru",
@@ -1121,7 +1121,7 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-0024",
+  "id": "vg-n3-00024",
   "word": "比べる",
   "reading": "くらべる",
   "romaji": "kuraberu",
@@ -1131,7 +1131,7 @@ window.vocabN3 = [
   "pos": "verb-ru",
   "common": true,
   "related_grammar": [
-    "gn3-0069"
+    "gn3-00069"
   ],
   "formalitas": 2,
   "domain": [
@@ -1169,7 +1169,7 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-0025",
+  "id": "vg-n3-00025",
   "word": "似る",
   "reading": "にる",
   "romaji": "niru",
@@ -1216,7 +1216,7 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-0026",
+  "id": "vg-n3-00026",
   "word": "経験",
   "reading": "けいけん",
   "romaji": "keiken",
@@ -1263,7 +1263,7 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-0027",
+  "id": "vg-n3-00027",
   "word": "環境",
   "reading": "かんきょう",
   "romaji": "kankyou",
@@ -1310,7 +1310,7 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-0028",
+  "id": "vg-n3-00028",
   "word": "意見",
   "reading": "いけん",
   "romaji": "iken",
@@ -1357,7 +1357,7 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-0029",
+  "id": "vg-n3-00029",
   "word": "関係",
   "reading": "かんけい",
   "romaji": "kankei",
@@ -1404,7 +1404,7 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-0030",
+  "id": "vg-n3-00030",
   "word": "文化",
   "reading": "ぶんか",
   "romaji": "bunka",
@@ -1450,7 +1450,7 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-0031",
+  "id": "vg-n3-00031",
   "word": "技術",
   "reading": "ぎじゅつ",
   "romaji": "gijutsu",
@@ -1497,7 +1497,7 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-0032",
+  "id": "vg-n3-00032",
   "word": "社会",
   "reading": "しゃかい",
   "romaji": "shakai",
@@ -1542,7 +1542,7 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-0033",
+  "id": "vg-n3-00033",
   "word": "原因",
   "reading": "げんいん",
   "romaji": "genin",
@@ -1552,8 +1552,8 @@ window.vocabN3 = [
   "pos": "noun",
   "common": true,
   "related_grammar": [
-    "gn3-0001",
-    "gn3-0002"
+    "gn3-00001",
+    "gn3-00002"
   ],
   "formalitas": 3,
   "domain": [
@@ -1587,14 +1587,14 @@ window.vocabN3 = [
   ],
   "synonyms": [],
   "antonyms": [
-    "vg-n3-0034"
+    "vg-n3-00034"
   ],
   "see_also": [],
   "added_v": "v14.27"
 },
 
 {
-  "id": "vg-n3-0034",
+  "id": "vg-n3-00034",
   "word": "結果",
   "reading": "けっか",
   "romaji": "kekka",
@@ -1636,14 +1636,14 @@ window.vocabN3 = [
   ],
   "synonyms": [],
   "antonyms": [
-    "vg-n3-0033"
+    "vg-n3-00033"
   ],
   "see_also": [],
   "added_v": "v14.27"
 },
 
 {
-  "id": "vg-n3-0035",
+  "id": "vg-n3-00035",
   "word": "事実",
   "reading": "じじつ",
   "romaji": "jijitsu",
@@ -1689,7 +1689,7 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-0036",
+  "id": "vg-n3-00036",
   "word": "目的",
   "reading": "もくてき",
   "romaji": "mokuteki",
@@ -1699,7 +1699,7 @@ window.vocabN3 = [
   "pos": "noun",
   "common": true,
   "related_grammar": [
-    "gn3-0053"
+    "gn3-00053"
   ],
   "formalitas": 3,
   "domain": [
@@ -1738,7 +1738,7 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-0037",
+  "id": "vg-n3-00037",
   "word": "程度",
   "reading": "ていど",
   "romaji": "teido",
@@ -1784,7 +1784,7 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-0038",
+  "id": "vg-n3-00038",
   "word": "相手",
   "reading": "あいて",
   "romaji": "aite",
@@ -1830,7 +1830,7 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-0039",
+  "id": "vg-n3-00039",
   "word": "場合",
   "reading": "ばあい",
   "romaji": "baai",
@@ -1877,7 +1877,7 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-0040",
+  "id": "vg-n3-00040",
   "word": "状態",
   "reading": "じょうたい",
   "romaji": "joutai",
@@ -1924,7 +1924,7 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-0041",
+  "id": "vg-n3-00041",
   "word": "複雑",
   "reading": "ふくざつ",
   "romaji": "fukuzatsu",
@@ -1971,7 +1971,7 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-0042",
+  "id": "vg-n3-00042",
   "word": "正確",
   "reading": "せいかく",
   "romaji": "seikaku",
@@ -2018,7 +2018,7 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-0043",
+  "id": "vg-n3-00043",
   "word": "重要",
   "reading": "じゅうよう",
   "romaji": "juuyou",
@@ -2065,7 +2065,7 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-0044",
+  "id": "vg-n3-00044",
   "word": "厳しい",
   "reading": "きびしい",
   "romaji": "kibishii",
@@ -2107,14 +2107,14 @@ window.vocabN3 = [
   ],
   "synonyms": [],
   "antonyms": [
-    "vg-n3-0045"
+    "vg-n3-00045"
   ],
   "see_also": [],
   "added_v": "v14.27"
 },
 
 {
-  "id": "vg-n3-0045",
+  "id": "vg-n3-00045",
   "word": "優しい",
   "reading": "やさしい",
   "romaji": "yasashii",
@@ -2156,14 +2156,14 @@ window.vocabN3 = [
   ],
   "synonyms": [],
   "antonyms": [
-    "vg-n3-0044"
+    "vg-n3-00044"
   ],
   "see_also": [],
   "added_v": "v14.27"
 },
 
 {
-  "id": "vg-n3-0046",
+  "id": "vg-n3-00046",
   "word": "深い",
   "reading": "ふかい",
   "romaji": "fukai",
@@ -2209,7 +2209,7 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-0047",
+  "id": "vg-n3-00047",
   "word": "珍しい",
   "reading": "めずらしい",
   "romaji": "mezurashii",
@@ -2255,7 +2255,7 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-0048",
+  "id": "vg-n3-00048",
   "word": "恥ずかしい",
   "reading": "はずかしい",
   "romaji": "hazukashii",
@@ -2301,7 +2301,7 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-0049",
+  "id": "vg-n3-00049",
   "word": "急に",
   "reading": "きゅうに",
   "romaji": "kyuuni",
@@ -2341,7 +2341,7 @@ window.vocabN3 = [
     }
   ],
   "synonyms": [
-    "vg-n3-0050"
+    "vg-n3-00050"
   ],
   "antonyms": [],
   "see_also": [],
@@ -2349,7 +2349,7 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-0050",
+  "id": "vg-n3-00050",
   "word": "突然",
   "reading": "とつぜん",
   "romaji": "totsuzen",
@@ -2388,7 +2388,7 @@ window.vocabN3 = [
     }
   ],
   "synonyms": [
-    "vg-n3-0049"
+    "vg-n3-00049"
   ],
   "antonyms": [],
   "see_also": [],
@@ -2396,7 +2396,7 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-0051",
+  "id": "vg-n3-00051",
   "word": "必ず",
   "reading": "かならず",
   "romaji": "kanarazu",
@@ -2437,14 +2437,14 @@ window.vocabN3 = [
   ],
   "synonyms": [],
   "antonyms": [
-    "vg-n3-0052"
+    "vg-n3-00052"
   ],
   "see_also": [],
   "added_v": "v14.27"
 },
 
 {
-  "id": "vg-n3-0052",
+  "id": "vg-n3-00052",
   "word": "決して",
   "reading": "けっして",
   "romaji": "kesshite",
@@ -2484,14 +2484,14 @@ window.vocabN3 = [
   ],
   "synonyms": [],
   "antonyms": [
-    "vg-n3-0051"
+    "vg-n3-00051"
   ],
   "see_also": [],
   "added_v": "v14.27"
 },
 
 {
-  "id": "vg-n3-0053",
+  "id": "vg-n3-00053",
   "word": "参加",
   "reading": "さんか",
   "romaji": "sanka",
@@ -2538,7 +2538,7 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-0054",
+  "id": "vg-n3-00054",
   "word": "準備",
   "reading": "じゅんび",
   "romaji": "junbi",
@@ -2585,7 +2585,7 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-0055",
+  "id": "vg-n3-00055",
   "word": "影響",
   "reading": "えいきょう",
   "romaji": "eikyou",
@@ -2632,7 +2632,7 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-0056",
+  "id": "vg-n3-00056",
   "word": "成功",
   "reading": "せいこう",
   "romaji": "seikou",
@@ -2673,14 +2673,14 @@ window.vocabN3 = [
   ],
   "synonyms": [],
   "antonyms": [
-    "vg-n3-0057"
+    "vg-n3-00057"
   ],
   "see_also": [],
   "added_v": "v14.27"
 },
 
 {
-  "id": "vg-n3-0057",
+  "id": "vg-n3-00057",
   "word": "失敗",
   "reading": "しっぱい",
   "romaji": "shippai",
@@ -2722,14 +2722,14 @@ window.vocabN3 = [
   ],
   "synonyms": [],
   "antonyms": [
-    "vg-n3-0056"
+    "vg-n3-00056"
   ],
   "see_also": [],
   "added_v": "v14.27"
 },
 
 {
-  "id": "vg-n3-0058",
+  "id": "vg-n3-00058",
   "word": "連絡",
   "reading": "れんらく",
   "romaji": "renraku",
@@ -2776,7 +2776,7 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-0059",
+  "id": "vg-n3-00059",
   "word": "確認",
   "reading": "かくにん",
   "romaji": "kakunin",
@@ -2822,7 +2822,7 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-0060",
+  "id": "vg-n3-00060",
   "word": "説明",
   "reading": "せつめい",
   "romaji": "setsumei",
@@ -2869,7 +2869,7 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-0061",
+  "id": "vg-n3-00061",
   "word": "増える",
   "reading": "ふえる",
   "romaji": "fueru",
@@ -2911,16 +2911,16 @@ window.vocabN3 = [
   ],
   "synonyms": [],
   "antonyms": [
-    "vg-n3-0063"
+    "vg-n3-00063"
   ],
   "see_also": [
-    "vg-n3-0062"
+    "vg-n3-00062"
   ],
   "added_v": "v14.27"
 },
 
 {
-  "id": "vg-n3-0062",
+  "id": "vg-n3-00062",
   "word": "増やす",
   "reading": "ふやす",
   "romaji": "fuyasu",
@@ -2962,16 +2962,16 @@ window.vocabN3 = [
   ],
   "synonyms": [],
   "antonyms": [
-    "vg-n3-0064"
+    "vg-n3-00064"
   ],
   "see_also": [
-    "vg-n3-0061"
+    "vg-n3-00061"
   ],
   "added_v": "v14.27"
 },
 
 {
-  "id": "vg-n3-0063",
+  "id": "vg-n3-00063",
   "word": "減る",
   "reading": "へる",
   "romaji": "heru",
@@ -3012,16 +3012,16 @@ window.vocabN3 = [
   ],
   "synonyms": [],
   "antonyms": [
-    "vg-n3-0061"
+    "vg-n3-00061"
   ],
   "see_also": [
-    "vg-n3-0064"
+    "vg-n3-00064"
   ],
   "added_v": "v14.27"
 },
 
 {
-  "id": "vg-n3-0064",
+  "id": "vg-n3-00064",
   "word": "減らす",
   "reading": "へらす",
   "romaji": "herasu",
@@ -3063,16 +3063,16 @@ window.vocabN3 = [
   ],
   "synonyms": [],
   "antonyms": [
-    "vg-n3-0062"
+    "vg-n3-00062"
   ],
   "see_also": [
-    "vg-n3-0063"
+    "vg-n3-00063"
   ],
   "added_v": "v14.27"
 },
 
 {
-  "id": "vg-n3-0065",
+  "id": "vg-n3-00065",
   "word": "受ける",
   "reading": "うける",
   "romaji": "ukeru",
@@ -3119,7 +3119,7 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-0066",
+  "id": "vg-n3-00066",
   "word": "断る",
   "reading": "ことわる",
   "romaji": "kotowaru",
@@ -3166,7 +3166,7 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-0067",
+  "id": "vg-n3-00067",
   "word": "調べる",
   "reading": "しらべる",
   "romaji": "shiraberu",
@@ -3213,7 +3213,7 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-0068",
+  "id": "vg-n3-00068",
   "word": "続ける",
   "reading": "つづける",
   "romaji": "tsuzukeru",
@@ -3223,7 +3223,7 @@ window.vocabN3 = [
   "pos": "verb-ru",
   "common": true,
   "related_grammar": [
-    "gn3-0080"
+    "gn3-00080"
   ],
   "formalitas": 2,
   "domain": [
@@ -3257,13 +3257,13 @@ window.vocabN3 = [
   "synonyms": [],
   "antonyms": [],
   "see_also": [
-    "vg-n3-0069"
+    "vg-n3-00069"
   ],
   "added_v": "v14.27"
 },
 
 {
-  "id": "vg-n3-0069",
+  "id": "vg-n3-00069",
   "word": "続く",
   "reading": "つづく",
   "romaji": "tsuzuku",
@@ -3305,13 +3305,13 @@ window.vocabN3 = [
   "synonyms": [],
   "antonyms": [],
   "see_also": [
-    "vg-n3-0068"
+    "vg-n3-00068"
   ],
   "added_v": "v14.27"
 },
 
 {
-  "id": "vg-n3-0070",
+  "id": "vg-n3-00070",
   "word": "注意",
   "reading": "ちゅうい",
   "romaji": "chuui",

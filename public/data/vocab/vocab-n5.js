@@ -9,7 +9,7 @@
 window.vocabN5 = [
 
 {
-  id: 'vg-n5-0001',
+  id: 'vg-n5-00001',
   word: '会う',
   reading: 'あう',
   romaji: 'au',
@@ -20,7 +20,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['hubungan', 'kehidupan-sehari'],
+  domain: ['pertemanan', 'kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: ['teman', 'rekan'],
   nuance: 'Dipakai untuk pertemuan tatap muka.',
@@ -33,7 +33,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0002',
+  id: 'vg-n5-00002',
   word: '開く',
   reading: 'あく',
   romaji: 'aku',
@@ -51,13 +51,13 @@ window.vocabN5 = [
   conj_type: 'godan',
   examples: [{"jp": "ドアが開きました。", "id": "Pintunya terbuka.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0003'],
-  see_also: ['vg-n5-0004'],
+  antonyms: ['vg-n5-00003'],
+  see_also: ['vg-n5-00004'],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0003',
+  id: 'vg-n5-00003',
   word: '開ける',
   reading: 'あける',
   romaji: 'akeru',
@@ -76,12 +76,12 @@ window.vocabN5 = [
   examples: [{"jp": "窓を開けてください。", "id": "Tolong buka jendelanya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['vg-n5-0002'],
+  see_also: ['vg-n5-00002'],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0004',
+  id: 'vg-n5-00004',
   word: '浴びる',
   reading: 'あびる',
   romaji: 'abiru',
@@ -105,7 +105,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0005',
+  id: 'vg-n5-00005',
   word: '遊ぶ',
   reading: 'あそぶ',
   romaji: 'asobu',
@@ -129,7 +129,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0006',
+  id: 'vg-n5-00006',
   word: '洗う',
   reading: 'あらう',
   romaji: 'arau',
@@ -153,7 +153,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0007',
+  id: 'vg-n5-00007',
   word: '歩く',
   reading: 'あるく',
   romaji: 'aruku',
@@ -177,7 +177,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0008',
+  id: 'vg-n5-00008',
   word: '言う',
   reading: 'いう',
   romaji: 'iu',
@@ -201,7 +201,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0009',
+  id: 'vg-n5-00009',
   word: '行く',
   reading: 'いく',
   romaji: 'iku',
@@ -219,13 +219,13 @@ window.vocabN5 = [
   conj_type: 'godan',
   examples: [{"jp": "学校に行きます。", "id": "Saya pergi ke sekolah.", "level": "n5", "tags": ["sekolah"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0010'],
+  antonyms: ['vg-n5-00010'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0010',
+  id: 'vg-n5-00010',
   word: '来る',
   reading: 'くる',
   romaji: 'kuru',
@@ -243,13 +243,13 @@ window.vocabN5 = [
   conj_type: 'kuru',
   examples: [{"jp": "友達が来ました。", "id": "Teman datang.", "level": "n5", "tags": ["hubungan"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0009'],
+  antonyms: ['vg-n5-00009'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0011',
+  id: 'vg-n5-00011',
   word: '帰る',
   reading: 'かえる',
   romaji: 'kaeru',
@@ -273,7 +273,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0012',
+  id: 'vg-n5-00012',
   word: '書く',
   reading: 'かく',
   romaji: 'kaku',
@@ -284,7 +284,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kehidupan-sehari', 'kerja'],
+  domain: ['kehidupan-sehari', 'pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '図書館 = perpustakaan umum. Beda: 本屋 (honya) = toko buku.',
@@ -297,7 +297,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0013',
+  id: 'vg-n5-00013',
   word: '聞く',
   reading: 'きく',
   romaji: 'kiku',
@@ -321,7 +321,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0014',
+  id: 'vg-n5-00014',
   word: '切る',
   reading: 'きる',
   romaji: 'kiru',
@@ -332,7 +332,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan', 'kehidupan-sehari'],
+  domain: ['makanan-minuman', 'kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Godan meski berakhiran る.',
@@ -345,7 +345,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0015',
+  id: 'vg-n5-00015',
   word: '着る',
   reading: 'きる',
   romaji: 'kiru',
@@ -369,7 +369,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0016',
+  id: 'vg-n5-00016',
   word: '消す',
   reading: 'けす',
   romaji: 'kesu',
@@ -387,13 +387,13 @@ window.vocabN5 = [
   conj_type: 'godan',
   examples: [{"jp": "電気を消してください。", "id": "Tolong matikan lampunya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0017'],
+  antonyms: ['vg-n5-00017'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0017',
+  id: 'vg-n5-00017',
   word: 'つける',
   reading: 'つける',
   romaji: 'tsukeru',
@@ -411,13 +411,13 @@ window.vocabN5 = [
   conj_type: 'ichidan',
   examples: [{"jp": "エアコンをつけてください。", "id": "Tolong nyalakan AC.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0016'],
+  antonyms: ['vg-n5-00016'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0018',
+  id: 'vg-n5-00018',
   word: '知る',
   reading: 'しる',
   romaji: 'shiru',
@@ -441,7 +441,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0019',
+  id: 'vg-n5-00019',
   word: '住む',
   reading: 'すむ',
   romaji: 'sumu',
@@ -465,7 +465,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0020',
+  id: 'vg-n5-00020',
   word: 'する',
   reading: 'する',
   romaji: 'suru',
@@ -489,7 +489,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0021',
+  id: 'vg-n5-00021',
   word: '座る',
   reading: 'すわる',
   romaji: 'suwaru',
@@ -507,13 +507,13 @@ window.vocabN5 = [
   conj_type: 'godan',
   examples: [{"jp": "椅子に座ってください。", "id": "Silakan duduk di kursi.", "level": "n5", "tags": ["sopan-santun"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0022'],
+  antonyms: ['vg-n5-00022'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0022',
+  id: 'vg-n5-00022',
   word: '立つ',
   reading: 'たつ',
   romaji: 'tatsu',
@@ -531,13 +531,13 @@ window.vocabN5 = [
   conj_type: 'godan',
   examples: [{"jp": "立ってください。", "id": "Silakan berdiri.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0021'],
+  antonyms: ['vg-n5-00021'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0023',
+  id: 'vg-n5-00023',
   word: '食べる',
   reading: 'たべる',
   romaji: 'taberu',
@@ -548,7 +548,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan'],
+  domain: ['makanan-minuman'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Keigo: 召し上がる (sonkei), いただく (kenjo).',
@@ -556,12 +556,12 @@ window.vocabN5 = [
   examples: [{"jp": "朝ご飯を食べました。", "id": "Saya makan sarapan.", "level": "n5", "tags": ["makanan"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['vg-n5-0024'],
+  see_also: ['vg-n5-00024'],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0024',
+  id: 'vg-n5-00024',
   word: '飲む',
   reading: 'のむ',
   romaji: 'nomu',
@@ -572,7 +572,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan'],
+  domain: ['makanan-minuman'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Keigo: 召し上がる (sonkei), いただく (kenjo).',
@@ -580,12 +580,12 @@ window.vocabN5 = [
   examples: [{"jp": "水を飲んでください。", "id": "Tolong minum air.", "level": "n5", "tags": ["makanan", "kesehatan"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['vg-n5-0023'],
+  see_also: ['vg-n5-00023'],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0025',
+  id: 'vg-n5-00025',
   word: '使う',
   reading: 'つかう',
   romaji: 'tsukau',
@@ -609,7 +609,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0026',
+  id: 'vg-n5-00026',
   word: '作る',
   reading: 'つくる',
   romaji: 'tsukuru',
@@ -620,7 +620,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan', 'kehidupan-sehari'],
+  domain: ['makanan-minuman', 'kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: 'できる = bisa/mampu. 日本語ができる = bisa bahasa Jepang. Juga: selesai dibuat/terjadi.',
@@ -633,7 +633,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0027',
+  id: 'vg-n5-00027',
   word: '出かける',
   reading: 'でかける',
   romaji: 'dekakeru',
@@ -657,7 +657,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0028',
+  id: 'vg-n5-00028',
   word: '出る',
   reading: 'でる',
   romaji: 'deru',
@@ -675,13 +675,13 @@ window.vocabN5 = [
   conj_type: 'ichidan',
   examples: [{"jp": "学校を出ました。", "id": "Saya keluar dari sekolah.", "level": "n5", "tags": ["sekolah"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0029'],
+  antonyms: ['vg-n5-00029'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0029',
+  id: 'vg-n5-00029',
   word: '入る',
   reading: 'はいる',
   romaji: 'hairu',
@@ -699,13 +699,13 @@ window.vocabN5 = [
   conj_type: 'godan',
   examples: [{"jp": "部屋に入りました。", "id": "Saya masuk ke kamar.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0028'],
+  antonyms: ['vg-n5-00028'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0030',
+  id: 'vg-n5-00030',
   word: '働く',
   reading: 'はたらく',
   romaji: 'hataraku',
@@ -716,7 +716,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kerja'],
+  domain: ['pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'rekan'],
   nuance: '寝る = tidur/berbaring. 寝る時間 = jam tidur. Berbeda: 眠る (nemuru) = tertidur (intransitif).',
@@ -729,7 +729,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0031',
+  id: 'vg-n5-00031',
   word: '話す',
   reading: 'はなす',
   romaji: 'hanasu',
@@ -753,7 +753,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0032',
+  id: 'vg-n5-00032',
   word: '見る',
   reading: 'みる',
   romaji: 'miru',
@@ -777,7 +777,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0033',
+  id: 'vg-n5-00033',
   word: '読む',
   reading: 'よむ',
   romaji: 'yomu',
@@ -788,7 +788,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kehidupan-sehari', 'kerja'],
+  domain: ['kehidupan-sehari', 'pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '郵便局 = kantor pos. 郵便 = surat/pos. 郵便局でお金を送る = kirim uang di kantor pos.',
@@ -801,7 +801,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0034',
+  id: 'vg-n5-00034',
   word: '泳ぐ',
   reading: 'およぐ',
   romaji: 'oyogu',
@@ -825,7 +825,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0035',
+  id: 'vg-n5-00035',
   word: '起きる',
   reading: 'おきる',
   romaji: 'okiru',
@@ -843,13 +843,13 @@ window.vocabN5 = [
   conj_type: 'ichidan',
   examples: [{"jp": "毎朝６時に起きます。", "id": "Setiap pagi saya bangun jam 6.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0036'],
+  antonyms: ['vg-n5-00036'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0036',
+  id: 'vg-n5-00036',
   word: '寝る',
   reading: 'ねる',
   romaji: 'neru',
@@ -867,13 +867,13 @@ window.vocabN5 = [
   conj_type: 'ichidan',
   examples: [{"jp": "１１時に寝ます。", "id": "Saya tidur jam 11.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0035'],
+  antonyms: ['vg-n5-00035'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0037',
+  id: 'vg-n5-00037',
   word: '買う',
   reading: 'かう',
   romaji: 'kau',
@@ -897,7 +897,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0038',
+  id: 'vg-n5-00038',
   word: '売る',
   reading: 'うる',
   romaji: 'uru',
@@ -915,13 +915,13 @@ window.vocabN5 = [
   conj_type: 'godan',
   examples: [{"jp": "この店は本を売っています。", "id": "Toko ini menjual buku.", "level": "n5", "tags": ["belanja"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0037'],
+  antonyms: ['vg-n5-00037'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0039',
+  id: 'vg-n5-00039',
   word: '貸す',
   reading: 'かす',
   romaji: 'kasu',
@@ -939,13 +939,13 @@ window.vocabN5 = [
   conj_type: 'godan',
   examples: [{"jp": "傘を貸してください。", "id": "Tolong pinjamkan payung.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0040'],
+  antonyms: ['vg-n5-00040'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0040',
+  id: 'vg-n5-00040',
   word: '借りる',
   reading: 'かりる',
   romaji: 'kariru',
@@ -963,13 +963,13 @@ window.vocabN5 = [
   conj_type: 'ichidan',
   examples: [{"jp": "図書館で本を借りました。", "id": "Saya meminjam buku di perpustakaan.", "level": "n5", "tags": ["sekolah"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0039'],
+  antonyms: ['vg-n5-00039'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0041',
+  id: 'vg-n5-00041',
   word: '教える',
   reading: 'おしえる',
   romaji: 'oshieru',
@@ -980,7 +980,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah'],
+  domain: ['pendidikan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'murid'],
   nuance: 'もらう = menerima/mendapat (dari orang). Lawan: あげる (ageru) = memberi.',
@@ -993,7 +993,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0042',
+  id: 'vg-n5-00042',
   word: '覚える',
   reading: 'おぼえる',
   romaji: 'oboeru',
@@ -1004,7 +1004,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah'],
+  domain: ['pendidikan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: 'あげる = memberi (ke orang). Keigo: さしあげる (humble). Lawan: もらう.',
@@ -1017,7 +1017,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0043',
+  id: 'vg-n5-00043',
   word: '歌う',
   reading: 'うたう',
   romaji: 'utau',
@@ -1041,7 +1041,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0044',
+  id: 'vg-n5-00044',
   word: '降りる',
   reading: 'おりる',
   romaji: 'oriru',
@@ -1060,12 +1060,12 @@ window.vocabN5 = [
   examples: [{"jp": "次の駅で降ります。", "id": "Saya turun di stasiun berikutnya.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['vg-n5-0045'],
+  see_also: ['vg-n5-00045'],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0045',
+  id: 'vg-n5-00045',
   word: '乗る',
   reading: 'のる',
   romaji: 'noru',
@@ -1083,13 +1083,13 @@ window.vocabN5 = [
   conj_type: 'godan',
   examples: [{"jp": "バスに乗って行きます。", "id": "Saya pergi naik bus.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0044'],
+  antonyms: ['vg-n5-00044'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0046',
+  id: 'vg-n5-00046',
   word: '終わる',
   reading: 'おわる',
   romaji: 'owaru',
@@ -1113,7 +1113,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0047',
+  id: 'vg-n5-00047',
   word: '始まる',
   reading: 'はじまる',
   romaji: 'hajimaru',
@@ -1131,13 +1131,13 @@ window.vocabN5 = [
   conj_type: 'godan',
   examples: [{"jp": "映画が始まりました。", "id": "Filmnya mulai.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0046'],
+  antonyms: ['vg-n5-00046'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0048',
+  id: 'vg-n5-00048',
   word: '押す',
   reading: 'おす',
   romaji: 'osu',
@@ -1161,7 +1161,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0049',
+  id: 'vg-n5-00049',
   word: '送る',
   reading: 'おくる',
   romaji: 'okuru',
@@ -1185,7 +1185,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0050',
+  id: 'vg-n5-00050',
   word: 'もらう',
   reading: 'もらう',
   romaji: 'morau',
@@ -1204,12 +1204,12 @@ window.vocabN5 = [
   examples: [{"jp": "プレゼントをもらいました。", "id": "Saya menerima hadiah.", "level": "n5", "tags": ["hubungan"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['vg-n5-0051', 'vg-n5-0052'],
+  see_also: ['vg-n5-00051', 'vg-n5-00052'],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0051',
+  id: 'vg-n5-00051',
   word: 'あげる',
   reading: 'あげる',
   romaji: 'ageru',
@@ -1228,12 +1228,12 @@ window.vocabN5 = [
   examples: [{"jp": "友達にプレゼントをあげました。", "id": "Saya memberi hadiah ke teman.", "level": "n5", "tags": ["hubungan"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['vg-n5-0052', 'vg-n5-0050'],
+  see_also: ['vg-n5-00052', 'vg-n5-00050'],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0052',
+  id: 'vg-n5-00052',
   word: 'くれる',
   reading: 'くれる',
   romaji: 'kureru',
@@ -1252,12 +1252,12 @@ window.vocabN5 = [
   examples: [{"jp": "友達が本をくれました。", "id": "Teman memberiku buku.", "level": "n5", "tags": ["hubungan"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['vg-n5-0051', 'vg-n5-0050'],
+  see_also: ['vg-n5-00051', 'vg-n5-00050'],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0053',
+  id: 'vg-n5-00053',
   word: 'いる',
   reading: 'いる',
   romaji: 'iru',
@@ -1276,12 +1276,12 @@ window.vocabN5 = [
   examples: [{"jp": "猫が二匹います。", "id": "Ada dua ekor kucing.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['vg-n5-0054'],
+  see_also: ['vg-n5-00054'],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0054',
+  id: 'vg-n5-00054',
   word: 'ある',
   reading: 'ある',
   romaji: 'aru',
@@ -1300,12 +1300,12 @@ window.vocabN5 = [
   examples: [{"jp": "机の上に本があります。", "id": "Ada buku di atas meja.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['vg-n5-0053'],
+  see_also: ['vg-n5-00053'],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0055',
+  id: 'vg-n5-00055',
   word: '見せる',
   reading: 'みせる',
   romaji: 'miseru',
@@ -1329,7 +1329,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0056',
+  id: 'vg-n5-00056',
   word: '生まれる',
   reading: 'うまれる',
   romaji: 'umareru',
@@ -1353,7 +1353,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0057',
+  id: 'vg-n5-00057',
   word: '大きい',
   reading: 'おおきい',
   romaji: 'ookii',
@@ -1364,20 +1364,20 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kehidupan-sehari', 'alam'],
+  domain: ['kehidupan-sehari', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
   conj_type: 'adj-i',
   examples: [{"jp": "大きい犬がいます。", "id": "Ada anjing besar.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0058'],
+  antonyms: ['vg-n5-00058'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0058',
+  id: 'vg-n5-00058',
   word: '小さい',
   reading: 'ちいさい',
   romaji: 'chiisai',
@@ -1388,20 +1388,20 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kehidupan-sehari', 'alam'],
+  domain: ['kehidupan-sehari', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
   conj_type: 'adj-i',
   examples: [{"jp": "小さい猫がかわいいです。", "id": "Kucing kecil itu lucu.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0057'],
+  antonyms: ['vg-n5-00057'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0059',
+  id: 'vg-n5-00059',
   word: '良い',
   reading: 'いい・よい',
   romaji: 'ii / yoi',
@@ -1419,13 +1419,13 @@ window.vocabN5 = [
   conj_type: 'adj-i',
   examples: [{"jp": "いい天気ですね。", "id": "Cuacanya bagus ya.", "level": "n5", "tags": ["alam"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0060'],
+  antonyms: ['vg-n5-00060'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0060',
+  id: 'vg-n5-00060',
   word: '悪い',
   reading: 'わるい',
   romaji: 'warui',
@@ -1443,13 +1443,13 @@ window.vocabN5 = [
   conj_type: 'adj-i',
   examples: [{"jp": "天気が悪いです。", "id": "Cuacanya buruk.", "level": "n5", "tags": ["alam"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0059'],
+  antonyms: ['vg-n5-00059'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0061',
+  id: 'vg-n5-00061',
   word: '高い',
   reading: 'たかい',
   romaji: 'takai',
@@ -1467,13 +1467,13 @@ window.vocabN5 = [
   conj_type: 'adj-i',
   examples: [{"jp": "この店は高いです。", "id": "Toko ini mahal.", "level": "n5", "tags": ["belanja"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0062'],
+  antonyms: ['vg-n5-00062'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0062',
+  id: 'vg-n5-00062',
   word: '安い',
   reading: 'やすい',
   romaji: 'yasui',
@@ -1491,13 +1491,13 @@ window.vocabN5 = [
   conj_type: 'adj-i',
   examples: [{"jp": "スーパーの野菜は安いです。", "id": "Sayuran di supermarket murah.", "level": "n5", "tags": ["belanja", "makanan"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0061'],
+  antonyms: ['vg-n5-00061'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0063',
+  id: 'vg-n5-00063',
   word: '暑い',
   reading: 'あつい',
   romaji: 'atsui',
@@ -1508,20 +1508,20 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['alam'],
+  domain: ['alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Untuk suhu udara. 熱い untuk benda panas (お湯が熱い).',
   conj_type: 'adj-i',
   examples: [{"jp": "今日はとても暑いですね。", "id": "Hari ini sangat panas ya.", "level": "n5", "tags": ["alam"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0064'],
+  antonyms: ['vg-n5-00064'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0064',
+  id: 'vg-n5-00064',
   word: '寒い',
   reading: 'さむい',
   romaji: 'samui',
@@ -1532,20 +1532,20 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['alam'],
+  domain: ['alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Untuk suhu udara. 冷たい untuk benda dingin.',
   conj_type: 'adj-i',
   examples: [{"jp": "冬は寒いです。", "id": "Musim dingin itu dingin.", "level": "n5", "tags": ["alam"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0063'],
+  antonyms: ['vg-n5-00063'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0065',
+  id: 'vg-n5-00065',
   word: '新しい',
   reading: 'あたらしい',
   romaji: 'atarashii',
@@ -1563,13 +1563,13 @@ window.vocabN5 = [
   conj_type: 'adj-i',
   examples: [{"jp": "新しい車を買いました。", "id": "Saya membeli mobil baru.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0066'],
+  antonyms: ['vg-n5-00066'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0066',
+  id: 'vg-n5-00066',
   word: '古い',
   reading: 'ふるい',
   romaji: 'furui',
@@ -1587,13 +1587,13 @@ window.vocabN5 = [
   conj_type: 'adj-i',
   examples: [{"jp": "古い建物が好きです。", "id": "Saya suka bangunan tua.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0065'],
+  antonyms: ['vg-n5-00065'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0067',
+  id: 'vg-n5-00067',
   word: '面白い',
   reading: 'おもしろい',
   romaji: 'omoshiroi',
@@ -1611,13 +1611,13 @@ window.vocabN5 = [
   conj_type: 'adj-i',
   examples: [{"jp": "この映画は面白いです。", "id": "Film ini menarik.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0068'],
+  antonyms: ['vg-n5-00068'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0068',
+  id: 'vg-n5-00068',
   word: 'つまらない',
   reading: 'つまらない',
   romaji: 'tsumaranai',
@@ -1635,13 +1635,13 @@ window.vocabN5 = [
   conj_type: 'adj-i',
   examples: [{"jp": "この本はつまらないです。", "id": "Buku ini membosankan.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0067'],
+  antonyms: ['vg-n5-00067'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0069',
+  id: 'vg-n5-00069',
   word: '美味しい',
   reading: 'おいしい',
   romaji: 'oishii',
@@ -1652,7 +1652,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah', 'emosi'],
+  domain: ['pendidikan', 'emosi'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '難しい = sulit/susah. Lawan: やさしい/簡単な. 発音が難しい = pengucapannya sulit.',
@@ -1665,7 +1665,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0070',
+  id: 'vg-n5-00070',
   word: '難しい',
   reading: 'むずかしい',
   romaji: 'muzukashii',
@@ -1676,20 +1676,20 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah', 'emosi'],
+  domain: ['pendidikan', 'emosi'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '易しい/簡単な = mudah. HATI-HATI: 易しい (yaさしい) vs 優しい (やさしい = baik hati). Kanji beda!',
   conj_type: 'adj-i',
   examples: [{"jp": "日本語は難しいです。", "id": "Bahasa Jepang itu sulit.", "level": "n5", "tags": ["sekolah"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0071'],
+  antonyms: ['vg-n5-00071'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0071',
+  id: 'vg-n5-00071',
   word: '易しい',
   reading: 'やさしい',
   romaji: 'yasashii',
@@ -1700,20 +1700,20 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah'],
+  domain: ['pendidikan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Beda dengan 優しい (baik hati) — homofon tapi beda kanji.',
   conj_type: 'adj-i',
   examples: [{"jp": "この問題は易しいです。", "id": "Soal ini mudah.", "level": "n5", "tags": ["sekolah"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0070'],
+  antonyms: ['vg-n5-00070'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0072',
+  id: 'vg-n5-00072',
   word: '忙しい',
   reading: 'いそがしい',
   romaji: 'isogashii',
@@ -1737,7 +1737,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0073',
+  id: 'vg-n5-00073',
   word: '可愛い',
   reading: 'かわいい',
   romaji: 'kawaii',
@@ -1761,7 +1761,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0074',
+  id: 'vg-n5-00074',
   word: '長い',
   reading: 'ながい',
   romaji: 'nagai',
@@ -1779,13 +1779,13 @@ window.vocabN5 = [
   conj_type: 'adj-i',
   examples: [{"jp": "この川は長いです。", "id": "Sungai ini panjang.", "level": "n5", "tags": ["alam"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0075'],
+  antonyms: ['vg-n5-00075'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0075',
+  id: 'vg-n5-00075',
   word: '短い',
   reading: 'みじかい',
   romaji: 'mijikai',
@@ -1803,13 +1803,13 @@ window.vocabN5 = [
   conj_type: 'adj-i',
   examples: [{"jp": "この映画は短いです。", "id": "Film ini singkat.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0074'],
+  antonyms: ['vg-n5-00074'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0076',
+  id: 'vg-n5-00076',
   word: '好き',
   reading: 'すき',
   romaji: 'suki',
@@ -1827,13 +1827,13 @@ window.vocabN5 = [
   conj_type: 'adj-na',
   examples: [{"jp": "音楽が好きです。", "id": "Saya suka musik.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0077'],
+  antonyms: ['vg-n5-00077'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0077',
+  id: 'vg-n5-00077',
   word: '嫌い',
   reading: 'きらい',
   romaji: 'kirai',
@@ -1851,13 +1851,13 @@ window.vocabN5 = [
   conj_type: 'adj-na',
   examples: [{"jp": "虫が嫌いです。", "id": "Saya tidak suka serangga.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0076'],
+  antonyms: ['vg-n5-00076'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0078',
+  id: 'vg-n5-00078',
   word: '上手',
   reading: 'じょうず',
   romaji: 'jouzu',
@@ -1868,20 +1868,20 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah'],
+  domain: ['pendidikan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Jangan pakai untuk diri sendiri — terkesan sombong. Gunakan 得意 untuk diri sendiri.',
   conj_type: 'adj-na',
   examples: [{"jp": "田中さんは料理が上手ですね。", "id": "Tanaka-san pandai masak ya.", "level": "n5", "tags": ["makanan", "sopan-santun"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0079'],
+  antonyms: ['vg-n5-00079'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0079',
+  id: 'vg-n5-00079',
   word: '下手',
   reading: 'へた',
   romaji: 'heta',
@@ -1899,13 +1899,13 @@ window.vocabN5 = [
   conj_type: 'adj-na',
   examples: [{"jp": "歌が下手です。", "id": "Saya tidak pandai bernyanyi.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0078'],
+  antonyms: ['vg-n5-00078'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0080',
+  id: 'vg-n5-00080',
   word: 'きれい',
   reading: 'きれい',
   romaji: 'kirei',
@@ -1929,7 +1929,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0081',
+  id: 'vg-n5-00081',
   word: '静か',
   reading: 'しずか',
   romaji: 'shizuka',
@@ -1947,13 +1947,13 @@ window.vocabN5 = [
   conj_type: 'adj-na',
   examples: [{"jp": "この図書館は静かです。", "id": "Perpustakaan ini tenang.", "level": "n5", "tags": ["sekolah"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0082'],
+  antonyms: ['vg-n5-00082'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0082',
+  id: 'vg-n5-00082',
   word: '賑やか',
   reading: 'にぎやか',
   romaji: 'nigiyaka',
@@ -1971,13 +1971,13 @@ window.vocabN5 = [
   conj_type: 'adj-na',
   examples: [{"jp": "渋谷はにぎやかです。", "id": "Shibuya itu ramai.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0081'],
+  antonyms: ['vg-n5-00081'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0083',
+  id: 'vg-n5-00083',
   word: '大切',
   reading: 'たいせつ',
   romaji: 'taisetsu',
@@ -2001,11 +2001,11 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0084',
+  id: 'vg-n5-00084',
   word: '家',
   reading: 'いえ・うち',
   romaji: 'ie / uchi',
-  meaning_id: 'rumah',
+  meaning_id: 'kehidupan-sehari',
   meaning_en: 'house; home',
   jlpt: 'n5',
   pos: 'noun',
@@ -2025,18 +2025,18 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0085',
+  id: 'vg-n5-00085',
   word: '学校',
   reading: 'がっこう',
   romaji: 'gakkou',
-  meaning_id: 'sekolah',
+  meaning_id: 'pendidikan',
   meaning_en: 'school',
   jlpt: 'n5',
   pos: 'noun',
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah', 'kehidupan-sehari'],
+  domain: ['pendidikan', 'kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -2049,7 +2049,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0086',
+  id: 'vg-n5-00086',
   word: '会社',
   reading: 'かいしゃ',
   romaji: 'kaisha',
@@ -2060,7 +2060,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kerja'],
+  domain: ['pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '会社 = perusahaan. 会社員 = karyawan. 会社に行く = pergi kerja.',
@@ -2073,7 +2073,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0087',
+  id: 'vg-n5-00087',
   word: '電車',
   reading: 'でんしゃ',
   romaji: 'densha',
@@ -2084,7 +2084,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kehidupan-sehari', 'kerja'],
+  domain: ['kehidupan-sehari', 'pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '教室 = ruang kelas. 教室に入る = masuk ke kelas.',
@@ -2097,7 +2097,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0088',
+  id: 'vg-n5-00088',
   word: '駅',
   reading: 'えき',
   romaji: 'eki',
@@ -2121,7 +2121,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0089',
+  id: 'vg-n5-00089',
   word: '病院',
   reading: 'びょういん',
   romaji: 'byouin',
@@ -2145,11 +2145,11 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0090',
+  id: 'vg-n5-00090',
   word: '食べ物',
   reading: 'たべもの',
   romaji: 'tabemono',
-  meaning_id: 'makanan',
+  meaning_id: 'makanan-minuman',
   meaning_en: 'food',
   jlpt: 'n5',
   pos: 'noun',
@@ -2169,7 +2169,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0091',
+  id: 'vg-n5-00091',
   word: '飲み物',
   reading: 'のみもの',
   romaji: 'nomimono',
@@ -2193,7 +2193,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0092',
+  id: 'vg-n5-00092',
   word: '友達',
   reading: 'ともだち',
   romaji: 'tomodachi',
@@ -2217,7 +2217,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0093',
+  id: 'vg-n5-00093',
   word: '先生',
   reading: 'せんせい',
   romaji: 'sensei',
@@ -2228,7 +2228,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah', 'hubungan'],
+  domain: ['pendidikan', 'pertemanan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Untuk memanggil guru langsung: 先生！ (bukan nama). Juga dipakai untuk dokter, pengacara.',
@@ -2241,7 +2241,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0094',
+  id: 'vg-n5-00094',
   word: '時間',
   reading: 'じかん',
   romaji: 'jikan',
@@ -2265,7 +2265,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0095',
+  id: 'vg-n5-00095',
   word: '今日',
   reading: 'きょう',
   romaji: 'kyou',
@@ -2284,12 +2284,12 @@ window.vocabN5 = [
   examples: [{"jp": "今日は何曜日ですか。", "id": "Hari ini hari apa?", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['vg-n5-0096', 'vg-n5-0097'],
+  see_also: ['vg-n5-00096', 'vg-n5-00097'],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0096',
+  id: 'vg-n5-00096',
   word: '明日',
   reading: 'あした・あす',
   romaji: 'ashita / asu',
@@ -2307,13 +2307,13 @@ window.vocabN5 = [
   conj_type: null,
   examples: [{"jp": "明日また来ます。", "id": "Saya akan datang lagi besok.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0097'],
-  see_also: ['vg-n5-0095'],
+  antonyms: ['vg-n5-00097'],
+  see_also: ['vg-n5-00095'],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0097',
+  id: 'vg-n5-00097',
   word: '昨日',
   reading: 'きのう',
   romaji: 'kinou',
@@ -2331,13 +2331,13 @@ window.vocabN5 = [
   conj_type: null,
   examples: [{"jp": "昨日は何をしましたか。", "id": "Kemarin kamu ngapain?", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0096'],
-  see_also: ['vg-n5-0095'],
+  antonyms: ['vg-n5-00096'],
+  see_also: ['vg-n5-00095'],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0098',
+  id: 'vg-n5-00098',
   word: '天気',
   reading: 'てんき',
   romaji: 'tenki',
@@ -2361,7 +2361,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0099',
+  id: 'vg-n5-00099',
   word: 'お金',
   reading: 'おかね',
   romaji: 'okane',
@@ -2385,7 +2385,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0100',
+  id: 'vg-n5-00100',
   word: '言葉',
   reading: 'ことば',
   romaji: 'kotoba',
@@ -2409,7 +2409,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0101',
+  id: 'vg-n5-00101',
   word: '家族',
   reading: 'かぞく',
   romaji: 'kazoku',
@@ -2433,7 +2433,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0102',
+  id: 'vg-n5-00102',
   word: '父',
   reading: 'ちち',
   romaji: 'chichi',
@@ -2457,7 +2457,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0103',
+  id: 'vg-n5-00103',
   word: '母',
   reading: 'はは',
   romaji: 'haha',
@@ -2481,7 +2481,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0104',
+  id: 'vg-n5-00104',
   word: '朝',
   reading: 'あさ',
   romaji: 'asa',
@@ -2499,13 +2499,13 @@ window.vocabN5 = [
   conj_type: null,
   examples: [{"jp": "朝ご飯を食べましたか。", "id": "Apakah kamu sudah sarapan?", "level": "n5", "tags": ["makanan"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0105'],
+  antonyms: ['vg-n5-00105'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0105',
+  id: 'vg-n5-00105',
   word: '夜',
   reading: 'よる',
   romaji: 'yoru',
@@ -2523,13 +2523,13 @@ window.vocabN5 = [
   conj_type: null,
   examples: [{"jp": "夜、何をしますか。", "id": "Malam hari, kamu ngapain?", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0104'],
+  antonyms: ['vg-n5-00104'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0106',
+  id: 'vg-n5-00106',
   word: '週末',
   reading: 'しゅうまつ',
   romaji: 'shuumatsu',
@@ -2553,7 +2553,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0107',
+  id: 'vg-n5-00107',
   word: '来年',
   reading: 'らいねん',
   romaji: 'rainen',
@@ -2564,7 +2564,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah', 'kehidupan-sehari'],
+  domain: ['pendidikan', 'kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -2577,7 +2577,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0108',
+  id: 'vg-n5-00108',
   word: '本',
   reading: 'ほん',
   romaji: 'hon',
@@ -2588,7 +2588,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah', 'kehidupan-sehari'],
+  domain: ['pendidikan', 'kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '本 juga dibaca もと (asal-usul) dan ほん (buku). Konteks menentukan.',
@@ -2601,7 +2601,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0109',
+  id: 'vg-n5-00109',
   word: '車',
   reading: 'くるま',
   romaji: 'kuruma',
@@ -2625,7 +2625,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0110',
+  id: 'vg-n5-00110',
   word: '写真',
   reading: 'しゃしん',
   romaji: 'shashin',
@@ -2649,7 +2649,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0111',
+  id: 'vg-n5-00111',
   word: '電話',
   reading: 'でんわ',
   romaji: 'denwa',
@@ -2673,7 +2673,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0112',
+  id: 'vg-n5-00112',
   word: '手紙',
   reading: 'てがみ',
   romaji: 'tegami',
@@ -2697,7 +2697,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0113',
+  id: 'vg-n5-00113',
   word: 'たくさん',
   reading: 'たくさん',
   romaji: 'takusan',
@@ -2715,13 +2715,13 @@ window.vocabN5 = [
   conj_type: null,
   examples: [{"jp": "たくさん食べました。", "id": "Saya makan banyak.", "level": "n5", "tags": ["makanan"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0114'],
+  antonyms: ['vg-n5-00114'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0114',
+  id: 'vg-n5-00114',
   word: '少し',
   reading: 'すこし',
   romaji: 'sukoshi',
@@ -2739,13 +2739,13 @@ window.vocabN5 = [
   conj_type: null,
   examples: [{"jp": "日本語が少し話せます。", "id": "Saya bisa berbicara sedikit bahasa Jepang.", "level": "n5", "tags": ["sekolah"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0113'],
+  antonyms: ['vg-n5-00113'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0115',
+  id: 'vg-n5-00115',
   word: 'もう',
   reading: 'もう',
   romaji: 'mou',
@@ -2769,7 +2769,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0116',
+  id: 'vg-n5-00116',
   word: 'まだ',
   reading: 'まだ',
   romaji: 'mada',
@@ -2787,13 +2787,13 @@ window.vocabN5 = [
   conj_type: null,
   examples: [{"jp": "まだ食べていません。", "id": "Saya belum makan.", "level": "n5", "tags": ["makanan"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0115'],
+  antonyms: ['vg-n5-00115'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0117',
+  id: 'vg-n5-00117',
   word: '一緒に',
   reading: 'いっしょに',
   romaji: 'issho ni',
@@ -2817,7 +2817,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0118',
+  id: 'vg-n5-00118',
   word: 'ゆっくり',
   reading: 'ゆっくり',
   romaji: 'yukkuri',
@@ -2841,7 +2841,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0119',
+  id: 'vg-n5-00119',
   word: 'いつも',
   reading: 'いつも',
   romaji: 'itsumo',
@@ -2865,7 +2865,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0120',
+  id: 'vg-n5-00120',
   word: '時々',
   reading: 'ときどき',
   romaji: 'tokidoki',
@@ -2884,12 +2884,12 @@ window.vocabN5 = [
   examples: [{"jp": "時々映画を見ます。", "id": "Saya kadang-kadang menonton film.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['vg-n5-0119'],
+  see_also: ['vg-n5-00119'],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0121',
+  id: 'vg-n5-00121',
   word: '頭',
   reading: 'あたま',
   romaji: 'atama',
@@ -2913,7 +2913,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0122',
+  id: 'vg-n5-00122',
   word: '目',
   reading: 'め',
   romaji: 'me',
@@ -2937,7 +2937,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0123',
+  id: 'vg-n5-00123',
   word: '手',
   reading: 'て',
   romaji: 'te',
@@ -2961,7 +2961,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0124',
+  id: 'vg-n5-00124',
   word: 'すみません',
   reading: 'すみません',
   romaji: 'sumimasen',
@@ -2985,7 +2985,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0125',
+  id: 'vg-n5-00125',
   word: 'ありがとうございます',
   reading: 'ありがとうございます',
   romaji: 'arigatou gozaimasu',
@@ -3009,7 +3009,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0126',
+  id: 'vg-n5-00126',
   word: 'どうぞ',
   reading: 'どうぞ',
   romaji: 'douzo',
@@ -3033,7 +3033,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0127',
+  id: 'vg-n5-00127',
   word: '〜枚',
   reading: '〜まい',
   romaji: '~mai',
@@ -3057,7 +3057,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0128',
+  id: 'vg-n5-00128',
   word: '〜本',
   reading: '〜ほん',
   romaji: '~hon',
@@ -3081,7 +3081,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0129',
+  id: 'vg-n5-00129',
   word: '〜匹',
   reading: '〜ひき',
   romaji: '~hiki',
@@ -3105,7 +3105,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0130',
+  id: 'vg-n5-00130',
   word: '〜台',
   reading: '〜だい',
   romaji: '~dai',
@@ -3129,7 +3129,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0131',
+  id: 'vg-n5-00131',
   word: '山',
   reading: 'やま',
   romaji: 'yama',
@@ -3140,7 +3140,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['alam'],
+  domain: ['alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -3153,7 +3153,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0132',
+  id: 'vg-n5-00132',
   word: '川',
   reading: 'かわ',
   romaji: 'kawa',
@@ -3164,7 +3164,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kesehatan', 'alam'],
+  domain: ['kesehatan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '薬 = obat. 薬を飲む = minum obat. 薬局 (yakkyoku) = apotek.',
@@ -3177,7 +3177,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0133',
+  id: 'vg-n5-00133',
   word: '花',
   reading: 'はな',
   romaji: 'hana',
@@ -3188,7 +3188,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kesehatan', 'alam'],
+  domain: ['kesehatan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: 'みかん = jeruk mandarin (khas Jepang). Beda: オレンジ = jeruk biasa.',
@@ -3201,7 +3201,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0134',
+  id: 'vg-n5-00134',
   word: '雨',
   reading: 'あめ',
   romaji: 'ame',
@@ -3212,7 +3212,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kesehatan', 'alam'],
+  domain: ['kesehatan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '値段 = harga. 値段はいくらですか = Berapa harganya? 値段が高い/安い.',
@@ -3225,7 +3225,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0135',
+  id: 'vg-n5-00135',
   word: '雪',
   reading: 'ゆき',
   romaji: 'yuki',
@@ -3236,7 +3236,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['alam'],
+  domain: ['alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -3249,7 +3249,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0136',
+  id: 'vg-n5-00136',
   word: 'ご飯',
   reading: 'ごはん',
   romaji: 'gohan',
@@ -3260,7 +3260,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan'],
+  domain: ['makanan-minuman'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Bisa berarti nasi atau makan secara umum (朝ご飯=sarapan).',
@@ -3273,7 +3273,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0137',
+  id: 'vg-n5-00137',
   word: '水',
   reading: 'みず',
   romaji: 'mizu',
@@ -3284,7 +3284,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan'],
+  domain: ['makanan-minuman'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -3297,7 +3297,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0138',
+  id: 'vg-n5-00138',
   word: '肉',
   reading: 'にく',
   romaji: 'niku',
@@ -3308,7 +3308,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan'],
+  domain: ['makanan-minuman'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -3321,7 +3321,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0139',
+  id: 'vg-n5-00139',
   word: '魚',
   reading: 'さかな',
   romaji: 'sakana',
@@ -3332,7 +3332,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kesehatan', 'alam'],
+  domain: ['kesehatan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '体温 = suhu tubuh. 体温を測る = mengukur suhu tubuh. 平熱 (heinetsu) = suhu normal.',
@@ -3345,7 +3345,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0140',
+  id: 'vg-n5-00140',
   word: '野菜',
   reading: 'やさい',
   romaji: 'yasai',
@@ -3356,7 +3356,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan'],
+  domain: ['makanan-minuman'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -3369,7 +3369,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0141',
+  id: 'vg-n5-00141',
   word: '〜から',
   reading: '〜から',
   romaji: '~kara',
@@ -3393,7 +3393,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0142',
+  id: 'vg-n5-00142',
   word: '〜まで',
   reading: '〜まで',
   romaji: '~made',
@@ -3412,12 +3412,12 @@ window.vocabN5 = [
   examples: [{"jp": "駅まで歩きます。", "id": "Saya berjalan sampai stasiun.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['vg-n5-0141'],
+  see_also: ['vg-n5-00141'],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0143',
+  id: 'vg-n5-00143',
   word: 'でも',
   reading: 'でも',
   romaji: 'demo',
@@ -3441,7 +3441,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0144',
+  id: 'vg-n5-00144',
   word: 'そして',
   reading: 'そして',
   romaji: 'soshite',
@@ -3465,7 +3465,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0145',
+  id: 'vg-n5-00145',
   word: '白い',
   reading: 'しろい',
   romaji: 'shiroi',
@@ -3483,13 +3483,13 @@ window.vocabN5 = [
   conj_type: 'adj-i',
   examples: [{"jp": "白い猫がいます。", "id": "Ada kucing putih.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0146'],
+  antonyms: ['vg-n5-00146'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0146',
+  id: 'vg-n5-00146',
   word: '黒い',
   reading: 'くろい',
   romaji: 'kuroi',
@@ -3507,13 +3507,13 @@ window.vocabN5 = [
   conj_type: 'adj-i',
   examples: [{"jp": "黒いかばんを買いました。", "id": "Saya membeli tas hitam.", "level": "n5", "tags": ["belanja"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0145'],
+  antonyms: ['vg-n5-00145'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0147',
+  id: 'vg-n5-00147',
   word: '赤い',
   reading: 'あかい',
   romaji: 'akai',
@@ -3537,7 +3537,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0148',
+  id: 'vg-n5-00148',
   word: '青い',
   reading: 'あおい',
   romaji: 'aoi',
@@ -3561,7 +3561,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0149',
+  id: 'vg-n5-00149',
   word: '右',
   reading: 'みぎ',
   romaji: 'migi',
@@ -3579,13 +3579,13 @@ window.vocabN5 = [
   conj_type: null,
   examples: [{"jp": "右に曲がってください。", "id": "Tolong belok kanan.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0150'],
+  antonyms: ['vg-n5-00150'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0150',
+  id: 'vg-n5-00150',
   word: '左',
   reading: 'ひだり',
   romaji: 'hidari',
@@ -3603,13 +3603,13 @@ window.vocabN5 = [
   conj_type: null,
   examples: [{"jp": "左の建物が学校です。", "id": "Bangunan di kiri adalah sekolah.", "level": "n5", "tags": ["perjalanan", "sekolah"]}],
   synonyms: [],
-  antonyms: ['vg-n5-0149'],
+  antonyms: ['vg-n5-00149'],
   see_also: [],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0151',
+  id: 'vg-n5-00151',
   word: '楽しい',
   reading: 'たのしい',
   romaji: 'tanoshii',
@@ -3633,7 +3633,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0152',
+  id: 'vg-n5-00152',
   word: '仕事',
   reading: 'しごと',
   romaji: 'shigoto',
@@ -3644,7 +3644,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kerja'],
+  domain: ['pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Umum untuk pekerjaan sehari-hari. Lebih formal: 業務 (gyoumu). Juga bisa pakai +する: 仕事する.',
@@ -3657,7 +3657,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0153',
+  id: 'vg-n5-00153',
   word: 'バス',
   reading: 'バス',
   romaji: 'basu',
@@ -3676,12 +3676,12 @@ window.vocabN5 = [
   examples: [{"jp": "バスで駅まで行きます。", "id": "Saya pergi ke stasiun naik bus.", "level": "n5", "tags": ["perjalanan"]}, {"jp": "バスが来ました。", "id": "Busnya sudah datang.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['vg-n5-0157'],
+  see_also: ['vg-n5-00157'],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0154',
+  id: 'vg-n5-00154',
   word: '映画',
   reading: 'えいが',
   romaji: 'eiga',
@@ -3705,7 +3705,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0155',
+  id: 'vg-n5-00155',
   word: '勉強する',
   reading: 'べんきょうする',
   romaji: 'benkyou suru',
@@ -3716,7 +3716,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah'],
+  domain: ['pendidikan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '勉強 (noun) + する. Bisa dipisah: 日本語を勉強する atau digabung langsung: 勉強します.',
@@ -3729,7 +3729,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0156',
+  id: 'vg-n5-00156',
   word: '夢',
   reading: 'ゆめ',
   romaji: 'yume',
@@ -3740,7 +3740,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['emosi', 'motivasi'],
+  domain: ['emosi', 'emosi-positif'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Dua arti: mimpi saat tidur (夢を見る) dan impian/cita-cita (夢がある).',
@@ -3753,7 +3753,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0157',
+  id: 'vg-n5-00157',
   word: 'タクシー',
   reading: 'タクシー',
   romaji: 'takushii',
@@ -3772,12 +3772,12 @@ window.vocabN5 = [
   examples: [{"jp": "タクシーで空港まで行きました。", "id": "Saya pergi ke bandara naik taksi.", "level": "n5", "tags": ["perjalanan"]}, {"jp": "タクシーを呼んでください。", "id": "Tolong panggilkan taksi.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['vg-n5-0153'],
+  see_also: ['vg-n5-00153'],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0158',
+  id: 'vg-n5-00158',
   word: '猫',
   reading: 'ねこ',
   romaji: 'neko',
@@ -3796,12 +3796,12 @@ window.vocabN5 = [
   examples: [{"jp": "うちには猫が一匹います。", "id": "Di rumah kami ada satu ekor kucing.", "level": "n5", "tags": ["kehidupan-sehari"]}, {"jp": "あの猫は白くてかわいいです。", "id": "Kucing itu putih dan lucu.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['vg-n5-0159'],
+  see_also: ['vg-n5-00159'],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0159',
+  id: 'vg-n5-00159',
   word: '犬',
   reading: 'いぬ',
   romaji: 'inu',
@@ -3820,12 +3820,12 @@ window.vocabN5 = [
   examples: [{"jp": "犬を飼っていますか。", "id": "Apakah kamu punya anjing?", "level": "n5", "tags": ["kehidupan-sehari"]}, {"jp": "大きい犬が公園にいます。", "id": "Ada anjing besar di taman.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['vg-n5-0158'],
+  see_also: ['vg-n5-00158'],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0160',
+  id: 'vg-n5-00160',
   word: '体',
   reading: 'からだ',
   romaji: 'karada',
@@ -3849,7 +3849,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0161',
+  id: 'vg-n5-00161',
   word: '熱',
   reading: 'ねつ',
   romaji: 'netsu',
@@ -3868,12 +3868,12 @@ window.vocabN5 = [
   examples: [{"jp": "熱があります。", "id": "Saya demam.", "level": "n5", "tags": ["kesehatan"]}, {"jp": "今日は熱が３８度あります。", "id": "Hari ini demam 38 derajat.", "level": "n5", "tags": ["kesehatan"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['vg-n5-0160'],
+  see_also: ['vg-n5-00160'],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0162',
+  id: 'vg-n5-00162',
   word: '風邪',
   reading: 'かぜ',
   romaji: 'kaze',
@@ -3892,12 +3892,12 @@ window.vocabN5 = [
   examples: [{"jp": "風邪をひいてしまいました。", "id": "Saya kena flu.", "level": "n5", "tags": ["kesehatan"]}, {"jp": "風邪の時は休んでください。", "id": "Kalau flu, istirahatlah.", "level": "n5", "tags": ["kesehatan"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['vg-n5-0161'],
+  see_also: ['vg-n5-00161'],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0163',
+  id: 'vg-n5-00163',
   word: '掃除する',
   reading: 'そうじする',
   romaji: 'souji suru',
@@ -3916,12 +3916,12 @@ window.vocabN5 = [
   examples: [{"jp": "毎週土曜日に部屋を掃除します。", "id": "Setiap Sabtu saya membersihkan kamar.", "level": "n5", "tags": ["kehidupan-sehari"]}, {"jp": "掃除してから出かけます。", "id": "Saya akan keluar setelah beres-beres.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['vg-n5-0164'],
+  see_also: ['vg-n5-00164'],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0164',
+  id: 'vg-n5-00164',
   word: '洗濯する',
   reading: 'せんたくする',
   romaji: 'sentaku suru',
@@ -3940,12 +3940,12 @@ window.vocabN5 = [
   examples: [{"jp": "洗濯機で洗濯します。", "id": "Saya mencuci dengan mesin cuci.", "level": "n5", "tags": ["kehidupan-sehari"]}, {"jp": "今日は洗濯しましたか。", "id": "Hari ini sudah cuci baju?", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['vg-n5-0163'],
+  see_also: ['vg-n5-00163'],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0165',
+  id: 'vg-n5-00165',
   word: '手伝う',
   reading: 'てつだう',
   romaji: 'tetsudau',
@@ -3956,7 +3956,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kehidupan-sehari', 'hubungan'],
+  domain: ['kehidupan-sehari', 'pertemanan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Membantu dengan pekerjaan/tugas. Berbeda dengan 助ける (tasukeru) = menyelamatkan/menolong dari bahaya.',
@@ -3969,7 +3969,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0166',
+  id: 'vg-n5-00166',
   word: '違う',
   reading: 'ちがう',
   romaji: 'chigau',
@@ -3988,12 +3988,12 @@ window.vocabN5 = [
   examples: [{"jp": "この答えは違います。", "id": "Jawaban ini salah.", "level": "n5", "tags": ["sekolah"]}, {"jp": "二つの意見が違います。", "id": "Kedua pendapat itu berbeda.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['vg-n5-0167'],
+  see_also: ['vg-n5-00167'],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0167',
+  id: 'vg-n5-00167',
   word: '同じ',
   reading: 'おなじ',
   romaji: 'onaji',
@@ -4012,12 +4012,12 @@ window.vocabN5 = [
   examples: [{"jp": "私たちは同じ学校に通っています。", "id": "Kami bersekolah di sekolah yang sama.", "level": "n5", "tags": ["sekolah"]}, {"jp": "二人は同じ意見です。", "id": "Keduanya berpendapat sama.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
-  see_also: ['vg-n5-0166'],
+  see_also: ['vg-n5-00166'],
   added_v: 'v15-migrated'
 },
 
 {
-  id: 'vg-n5-0168',
+  id: 'vg-n5-00168',
   word: 'あける',
   reading: 'あける',
   romaji: 'akeru',
@@ -4041,7 +4041,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0169',
+  id: 'vg-n5-00169',
   word: 'あそぶ',
   reading: 'あそぶ',
   romaji: 'asobu',
@@ -4065,7 +4065,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0170',
+  id: 'vg-n5-00170',
   word: 'あびる',
   reading: 'あびる',
   romaji: 'abiru',
@@ -4089,7 +4089,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0171',
+  id: 'vg-n5-00171',
   word: 'あらう',
   reading: 'あらう',
   romaji: 'arau',
@@ -4113,7 +4113,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0172',
+  id: 'vg-n5-00172',
   word: 'いう',
   reading: 'いう',
   romaji: 'iu',
@@ -4137,7 +4137,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0173',
+  id: 'vg-n5-00173',
   word: 'いく',
   reading: 'いく',
   romaji: 'iku',
@@ -4161,7 +4161,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0174',
+  id: 'vg-n5-00174',
   word: 'うごく',
   reading: 'うごく',
   romaji: 'ugoku',
@@ -4185,7 +4185,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0175',
+  id: 'vg-n5-00175',
   word: 'うまれる',
   reading: 'うまれる',
   romaji: 'umareru',
@@ -4209,7 +4209,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0176',
+  id: 'vg-n5-00176',
   word: 'おきる',
   reading: 'おきる',
   romaji: 'okiru',
@@ -4233,7 +4233,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0177',
+  id: 'vg-n5-00177',
   word: 'おす',
   reading: 'おす',
   romaji: 'osu',
@@ -4257,7 +4257,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0178',
+  id: 'vg-n5-00178',
   word: 'おわる',
   reading: 'おわる',
   romaji: 'owaru',
@@ -4281,7 +4281,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0179',
+  id: 'vg-n5-00179',
   word: 'かえる',
   reading: 'かえる',
   romaji: 'kaeru',
@@ -4305,7 +4305,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0180',
+  id: 'vg-n5-00180',
   word: 'かかる',
   reading: 'かかる',
   romaji: 'kakaru',
@@ -4329,7 +4329,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0181',
+  id: 'vg-n5-00181',
   word: 'かく',
   reading: 'かく',
   romaji: 'kaku',
@@ -4340,7 +4340,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah'],
+  domain: ['pendidikan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -4353,7 +4353,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0182',
+  id: 'vg-n5-00182',
   word: 'かける',
   reading: 'かける',
   romaji: 'kakeru',
@@ -4377,7 +4377,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0183',
+  id: 'vg-n5-00183',
   word: 'かす',
   reading: 'かす',
   romaji: 'kasu',
@@ -4388,7 +4388,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['hubungan'],
+  domain: ['pertemanan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: '貸す = meminjamkan (ke orang). Lawan: 借りる = meminjam (dari orang).',
@@ -4401,7 +4401,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0184',
+  id: 'vg-n5-00184',
   word: 'かたづける',
   reading: 'かたづける',
   romaji: 'katazukeru',
@@ -4425,7 +4425,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0185',
+  id: 'vg-n5-00185',
   word: 'かぶる',
   reading: 'かぶる',
   romaji: 'kaburu',
@@ -4449,7 +4449,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0186',
+  id: 'vg-n5-00186',
   word: 'かりる',
   reading: 'かりる',
   romaji: 'kariru',
@@ -4473,7 +4473,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0187',
+  id: 'vg-n5-00187',
   word: 'きく',
   reading: 'きく',
   romaji: 'kiku',
@@ -4497,7 +4497,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0188',
+  id: 'vg-n5-00188',
   word: 'きる',
   reading: 'きる',
   romaji: 'kiru',
@@ -4521,7 +4521,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0189',
+  id: 'vg-n5-00189',
   word: 'くる',
   reading: 'くる',
   romaji: 'kuru',
@@ -4545,7 +4545,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0190',
+  id: 'vg-n5-00190',
   word: 'けす',
   reading: 'けす',
   romaji: 'kesu',
@@ -4569,7 +4569,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0191',
+  id: 'vg-n5-00191',
   word: 'こたえる',
   reading: 'こたえる',
   romaji: 'kotaeru',
@@ -4580,7 +4580,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah'],
+  domain: ['pendidikan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -4593,7 +4593,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0192',
+  id: 'vg-n5-00192',
   word: 'さわる',
   reading: 'さわる',
   romaji: 'sawaru',
@@ -4617,7 +4617,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0193',
+  id: 'vg-n5-00193',
   word: 'しぬ',
   reading: 'しぬ',
   romaji: 'shinu',
@@ -4641,7 +4641,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0194',
+  id: 'vg-n5-00194',
   word: 'しめる',
   reading: 'しめる',
   romaji: 'shimeru',
@@ -4665,7 +4665,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0195',
+  id: 'vg-n5-00195',
   word: 'しる',
   reading: 'しる',
   romaji: 'shiru',
@@ -4689,7 +4689,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0196',
+  id: 'vg-n5-00196',
   word: 'すむ',
   reading: 'すむ',
   romaji: 'sumu',
@@ -4713,7 +4713,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0197',
+  id: 'vg-n5-00197',
   word: 'たつ',
   reading: 'たつ',
   romaji: 'tatsu',
@@ -4737,7 +4737,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0198',
+  id: 'vg-n5-00198',
   word: 'たべる',
   reading: 'たべる',
   romaji: 'taberu',
@@ -4748,7 +4748,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan'],
+  domain: ['makanan-minuman'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: 'Keigo: 召し上がる (sonkei), いただく (kenjo).',
@@ -4761,7 +4761,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0199',
+  id: 'vg-n5-00199',
   word: 'つかう',
   reading: 'つかう',
   romaji: 'tsukau',
@@ -4785,7 +4785,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0200',
+  id: 'vg-n5-00200',
   word: 'つくる',
   reading: 'つくる',
   romaji: 'tsukuru',
@@ -4809,7 +4809,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0201',
+  id: 'vg-n5-00201',
   word: 'でかける',
   reading: 'でかける',
   romaji: 'dekakeru',
@@ -4833,7 +4833,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0202',
+  id: 'vg-n5-00202',
   word: 'でる',
   reading: 'でる',
   romaji: 'deru',
@@ -4857,7 +4857,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0203',
+  id: 'vg-n5-00203',
   word: 'とぶ',
   reading: 'とぶ',
   romaji: 'tobu',
@@ -4868,7 +4868,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['alam'],
+  domain: ['alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -4881,7 +4881,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0204',
+  id: 'vg-n5-00204',
   word: 'とまる',
   reading: 'とまる',
   romaji: 'tomaru',
@@ -4905,7 +4905,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0205',
+  id: 'vg-n5-00205',
   word: 'とる',
   reading: 'とる',
   romaji: 'toru',
@@ -4929,7 +4929,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0206',
+  id: 'vg-n5-00206',
   word: 'なく',
   reading: 'なく',
   romaji: 'naku',
@@ -4953,7 +4953,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0207',
+  id: 'vg-n5-00207',
   word: 'なくす',
   reading: 'なくす',
   romaji: 'nakusu',
@@ -4977,7 +4977,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0208',
+  id: 'vg-n5-00208',
   word: 'ならう',
   reading: 'ならう',
   romaji: 'narau',
@@ -4988,7 +4988,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah'],
+  domain: ['pendidikan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: '習う = belajar dari guru/orang lain. Berbeda: 勉強する = belajar mandiri.',
@@ -5001,7 +5001,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0209',
+  id: 'vg-n5-00209',
   word: 'なる',
   reading: 'なる',
   romaji: 'naru',
@@ -5025,7 +5025,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0210',
+  id: 'vg-n5-00210',
   word: 'ぬぐ',
   reading: 'ぬぐ',
   romaji: 'nugu',
@@ -5049,7 +5049,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0211',
+  id: 'vg-n5-00211',
   word: 'のむ',
   reading: 'のむ',
   romaji: 'nomu',
@@ -5060,7 +5060,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan'],
+  domain: ['makanan-minuman'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -5073,7 +5073,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0212',
+  id: 'vg-n5-00212',
   word: 'のる',
   reading: 'のる',
   romaji: 'noru',
@@ -5097,7 +5097,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0213',
+  id: 'vg-n5-00213',
   word: 'はいる',
   reading: 'はいる',
   romaji: 'hairu',
@@ -5121,7 +5121,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0214',
+  id: 'vg-n5-00214',
   word: 'はく',
   reading: 'はく',
   romaji: 'haku',
@@ -5145,7 +5145,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0215',
+  id: 'vg-n5-00215',
   word: 'はしる',
   reading: 'はしる',
   romaji: 'hashiru',
@@ -5169,7 +5169,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0216',
+  id: 'vg-n5-00216',
   word: 'はなす',
   reading: 'はなす',
   romaji: 'hanasu',
@@ -5193,7 +5193,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0217',
+  id: 'vg-n5-00217',
   word: 'はる',
   reading: 'はる',
   romaji: 'haru',
@@ -5217,7 +5217,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0218',
+  id: 'vg-n5-00218',
   word: 'ひく',
   reading: 'ひく',
   romaji: 'hiku',
@@ -5241,7 +5241,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0219',
+  id: 'vg-n5-00219',
   word: 'ふる',
   reading: 'ふる',
   romaji: 'furu',
@@ -5252,7 +5252,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['alam'],
+  domain: ['alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -5265,7 +5265,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0220',
+  id: 'vg-n5-00220',
   word: 'まがる',
   reading: 'まがる',
   romaji: 'magaru',
@@ -5289,7 +5289,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0221',
+  id: 'vg-n5-00221',
   word: 'まつ',
   reading: 'まつ',
   romaji: 'matsu',
@@ -5313,7 +5313,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0222',
+  id: 'vg-n5-00222',
   word: 'みせる',
   reading: 'みせる',
   romaji: 'miseru',
@@ -5337,7 +5337,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0223',
+  id: 'vg-n5-00223',
   word: 'むかえる',
   reading: 'むかえる',
   romaji: 'mukaeru',
@@ -5348,7 +5348,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['hubungan'],
+  domain: ['pertemanan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -5361,7 +5361,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0224',
+  id: 'vg-n5-00224',
   word: 'もつ',
   reading: 'もつ',
   romaji: 'motsu',
@@ -5385,7 +5385,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0225',
+  id: 'vg-n5-00225',
   word: 'やすむ',
   reading: 'やすむ',
   romaji: 'yasumu',
@@ -5409,7 +5409,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0226',
+  id: 'vg-n5-00226',
   word: 'よぶ',
   reading: 'よぶ',
   romaji: 'yobu',
@@ -5420,7 +5420,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['hubungan'],
+  domain: ['pertemanan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -5433,7 +5433,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0227',
+  id: 'vg-n5-00227',
   word: 'よむ',
   reading: 'よむ',
   romaji: 'yomu',
@@ -5444,7 +5444,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah'],
+  domain: ['pendidikan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -5457,7 +5457,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0228',
+  id: 'vg-n5-00228',
   word: 'わかる',
   reading: 'わかる',
   romaji: 'wakaru',
@@ -5468,7 +5468,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah'],
+  domain: ['pendidikan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: '日本語がわかります (pakai が, bukan を). Intransitif.',
@@ -5481,7 +5481,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0229',
+  id: 'vg-n5-00229',
   word: 'わたる',
   reading: 'わたる',
   romaji: 'wataru',
@@ -5505,7 +5505,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0230',
+  id: 'vg-n5-00230',
   word: 'おもう',
   reading: 'おもう',
   romaji: 'omou',
@@ -5529,7 +5529,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0231',
+  id: 'vg-n5-00231',
   word: 'できる',
   reading: 'できる',
   romaji: 'dekiru',
@@ -5553,7 +5553,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0232',
+  id: 'vg-n5-00232',
   word: 'あう',
   reading: 'あう',
   romaji: 'au',
@@ -5577,7 +5577,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0233',
+  id: 'vg-n5-00233',
   word: 'うる',
   reading: 'うる',
   romaji: 'uru',
@@ -5601,7 +5601,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0234',
+  id: 'vg-n5-00234',
   word: 'おくる',
   reading: 'おくる',
   romaji: 'okuru',
@@ -5625,7 +5625,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0235',
+  id: 'vg-n5-00235',
   word: 'あかい',
   reading: 'あかい',
   romaji: 'akai',
@@ -5649,7 +5649,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0236',
+  id: 'vg-n5-00236',
   word: 'あおい',
   reading: 'あおい',
   romaji: 'aoi',
@@ -5673,7 +5673,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0237',
+  id: 'vg-n5-00237',
   word: 'しろい',
   reading: 'しろい',
   romaji: 'shiroi',
@@ -5697,7 +5697,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0238',
+  id: 'vg-n5-00238',
   word: 'くろい',
   reading: 'くろい',
   romaji: 'kuroi',
@@ -5721,7 +5721,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0239',
+  id: 'vg-n5-00239',
   word: 'あたらしい',
   reading: 'あたらしい',
   romaji: 'atarashii',
@@ -5745,7 +5745,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0240',
+  id: 'vg-n5-00240',
   word: 'ふるい',
   reading: 'ふるい',
   romaji: 'furui',
@@ -5769,7 +5769,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0241',
+  id: 'vg-n5-00241',
   word: 'たかい',
   reading: 'たかい',
   romaji: 'takai',
@@ -5793,7 +5793,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0242',
+  id: 'vg-n5-00242',
   word: 'やすい',
   reading: 'やすい',
   romaji: 'yasui',
@@ -5817,7 +5817,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0243',
+  id: 'vg-n5-00243',
   word: 'ながい',
   reading: 'ながい',
   romaji: 'nagai',
@@ -5841,7 +5841,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0244',
+  id: 'vg-n5-00244',
   word: 'みじかい',
   reading: 'みじかい',
   romaji: 'mijikai',
@@ -5865,7 +5865,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0245',
+  id: 'vg-n5-00245',
   word: 'おおきい',
   reading: 'おおきい',
   romaji: 'ookii',
@@ -5889,7 +5889,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0246',
+  id: 'vg-n5-00246',
   word: 'ちいさい',
   reading: 'ちいさい',
   romaji: 'chiisai',
@@ -5913,7 +5913,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0247',
+  id: 'vg-n5-00247',
   word: 'あつい',
   reading: 'あつい',
   romaji: 'atsui',
@@ -5924,7 +5924,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan'],
+  domain: ['makanan-minuman'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: '熱い = panas saat disentuh/diminum. Beda: 暑い (atsui) = panas cuaca. Kanji beda!',
@@ -5937,7 +5937,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0248',
+  id: 'vg-n5-00248',
   word: 'さむい',
   reading: 'さむい',
   romaji: 'samui',
@@ -5948,7 +5948,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['alam'],
+  domain: ['alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: '寒い = dingin cuaca/suhu udara. Beda: 冷たい = dingin saat disentuh.',
@@ -5961,7 +5961,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0249',
+  id: 'vg-n5-00249',
   word: 'つめたい',
   reading: 'つめたい',
   romaji: 'tsumetai',
@@ -5972,7 +5972,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan'],
+  domain: ['makanan-minuman'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: '冷たい = dingin saat disentuh. Beda: 寒い = cuaca dingin.',
@@ -5985,7 +5985,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0250',
+  id: 'vg-n5-00250',
   word: 'あたたかい',
   reading: 'あたたかい',
   romaji: 'atatakai',
@@ -5996,7 +5996,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['alam'],
+  domain: ['alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -6009,7 +6009,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0251',
+  id: 'vg-n5-00251',
   word: 'すずしい',
   reading: 'すずしい',
   romaji: 'suzushii',
@@ -6020,7 +6020,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['alam'],
+  domain: ['alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -6033,7 +6033,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0252',
+  id: 'vg-n5-00252',
   word: 'たのしい',
   reading: 'たのしい',
   romaji: 'tanoshii',
@@ -6057,7 +6057,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0253',
+  id: 'vg-n5-00253',
   word: 'うれしい',
   reading: 'うれしい',
   romaji: 'ureshii',
@@ -6081,7 +6081,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0254',
+  id: 'vg-n5-00254',
   word: 'かわいい',
   reading: 'かわいい',
   romaji: 'kawaii',
@@ -6105,7 +6105,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0255',
+  id: 'vg-n5-00255',
   word: 'からい',
   reading: 'からい',
   romaji: 'karai',
@@ -6116,7 +6116,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan'],
+  domain: ['makanan-minuman'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: '辛い = pedas (料理が辛い) ATAU asin (塩辛い). Konteks menentukan.',
@@ -6129,7 +6129,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0256',
+  id: 'vg-n5-00256',
   word: 'あまい',
   reading: 'あまい',
   romaji: 'amai',
@@ -6140,7 +6140,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan'],
+  domain: ['makanan-minuman'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Lawan kata: からい (spicy/salty)',
@@ -6153,7 +6153,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0257',
+  id: 'vg-n5-00257',
   word: 'にがい',
   reading: 'にがい',
   romaji: 'nigai',
@@ -6164,7 +6164,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan'],
+  domain: ['makanan-minuman'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: 'にがい (苦い) = pahit. 苦手 (nigate) = tidak pandai/tidak suka — kata turunan penting.',
@@ -6177,7 +6177,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0258',
+  id: 'vg-n5-00258',
   word: 'いそがしい',
   reading: 'いそがしい',
   romaji: 'isogashii',
@@ -6188,7 +6188,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kerja'],
+  domain: ['pekerjaan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -6201,7 +6201,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0259',
+  id: 'vg-n5-00259',
   word: 'ひま',
   reading: 'ひま',
   romaji: 'hima',
@@ -6225,7 +6225,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0260',
+  id: 'vg-n5-00260',
   word: 'にぎやか',
   reading: 'にぎやか',
   romaji: 'nigiyaka',
@@ -6249,7 +6249,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0261',
+  id: 'vg-n5-00261',
   word: 'しずか',
   reading: 'しずか',
   romaji: 'shizuka',
@@ -6273,7 +6273,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0262',
+  id: 'vg-n5-00262',
   word: 'すき',
   reading: 'すき',
   romaji: 'suki',
@@ -6297,7 +6297,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0263',
+  id: 'vg-n5-00263',
   word: 'きらい',
   reading: 'きらい',
   romaji: 'kirai',
@@ -6321,7 +6321,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0264',
+  id: 'vg-n5-00264',
   word: 'じょうず',
   reading: 'じょうず',
   romaji: 'jouzu',
@@ -6332,7 +6332,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah'],
+  domain: ['pendidikan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: '上手 = pandai (bicara tentang orang lain). Untuk diri sendiri: 得意 (tokui). Lawan: 下手.',
@@ -6345,7 +6345,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0265',
+  id: 'vg-n5-00265',
   word: 'へた',
   reading: 'へた',
   romaji: 'heta',
@@ -6356,7 +6356,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah'],
+  domain: ['pendidikan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: '下手 = tidak pandai. Lawan: 上手。 苦手 (nigate) = kurang ahli/kurang suka.',
@@ -6369,7 +6369,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0266',
+  id: 'vg-n5-00266',
   word: 'げんき',
   reading: 'げんき',
   romaji: 'genki',
@@ -6393,7 +6393,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0267',
+  id: 'vg-n5-00267',
   word: 'たいせつ',
   reading: 'たいせつ',
   romaji: 'taisetsu',
@@ -6417,7 +6417,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0268',
+  id: 'vg-n5-00268',
   word: 'だいじょうぶ',
   reading: 'だいじょうぶ',
   romaji: 'daijoubu',
@@ -6441,7 +6441,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0269',
+  id: 'vg-n5-00269',
   word: 'むずかしい',
   reading: 'むずかしい',
   romaji: 'muzukashii',
@@ -6452,7 +6452,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah'],
+  domain: ['pendidikan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -6465,7 +6465,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0270',
+  id: 'vg-n5-00270',
   word: 'やさしい',
   reading: 'やさしい',
   romaji: 'yasashii',
@@ -6489,7 +6489,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0271',
+  id: 'vg-n5-00271',
   word: 'おもしろい',
   reading: 'おもしろい',
   romaji: 'omoshiroi',
@@ -6513,7 +6513,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0272',
+  id: 'vg-n5-00272',
   word: 'ひろい',
   reading: 'ひろい',
   romaji: 'hiroi',
@@ -6524,7 +6524,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['deskripsi'],
+  domain: ['kualitas'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: 'ひろい (広い) = luas/lebar. 広い部屋 = kamar luas. Juga: 広い心 = berjiwa besar.',
@@ -6537,7 +6537,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0273',
+  id: 'vg-n5-00273',
   word: 'せまい',
   reading: 'せまい',
   romaji: 'semai',
@@ -6548,7 +6548,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['deskripsi'],
+  domain: ['kualitas'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Lawan kata: ひろい (wide/large)',
@@ -6561,7 +6561,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0274',
+  id: 'vg-n5-00274',
   word: 'とおい',
   reading: 'とおい',
   romaji: 'tooi',
@@ -6585,7 +6585,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0275',
+  id: 'vg-n5-00275',
   word: 'ちかい',
   reading: 'ちかい',
   romaji: 'chikai',
@@ -6609,7 +6609,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0276',
+  id: 'vg-n5-00276',
   word: 'おおい',
   reading: 'おおい',
   romaji: 'ooi',
@@ -6633,7 +6633,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0277',
+  id: 'vg-n5-00277',
   word: 'すくない',
   reading: 'すくない',
   romaji: 'sukunai',
@@ -6657,7 +6657,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0278',
+  id: 'vg-n5-00278',
   word: 'わかい',
   reading: 'わかい',
   romaji: 'wakai',
@@ -6668,7 +6668,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['hubungan'],
+  domain: ['pertemanan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -6681,7 +6681,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0279',
+  id: 'vg-n5-00279',
   word: 'おそい',
   reading: 'おそい',
   romaji: 'osoi',
@@ -6705,7 +6705,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0280',
+  id: 'vg-n5-00280',
   word: 'はやい',
   reading: 'はやい',
   romaji: 'hayai',
@@ -6729,7 +6729,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0281',
+  id: 'vg-n5-00281',
   word: 'おもい',
   reading: 'おもい',
   romaji: 'omoi',
@@ -6753,7 +6753,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0282',
+  id: 'vg-n5-00282',
   word: 'かるい',
   reading: 'かるい',
   romaji: 'karui',
@@ -6777,7 +6777,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0283',
+  id: 'vg-n5-00283',
   word: 'つよい',
   reading: 'つよい',
   romaji: 'tsuyoi',
@@ -6801,7 +6801,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0284',
+  id: 'vg-n5-00284',
   word: 'よわい',
   reading: 'よわい',
   romaji: 'yowai',
@@ -6825,7 +6825,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0285',
+  id: 'vg-n5-00285',
   word: 'ゆうめい',
   reading: 'ゆうめい',
   romaji: 'yuumei',
@@ -6849,7 +6849,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0286',
+  id: 'vg-n5-00286',
   word: 'たいへん',
   reading: 'たいへん',
   romaji: 'taihen',
@@ -6873,7 +6873,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0287',
+  id: 'vg-n5-00287',
   word: 'あんぜん',
   reading: 'あんぜん',
   romaji: 'anzen',
@@ -6897,7 +6897,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0288',
+  id: 'vg-n5-00288',
   word: 'べんり',
   reading: 'べんり',
   romaji: 'benri',
@@ -6921,7 +6921,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0289',
+  id: 'vg-n5-00289',
   word: 'うち',
   reading: 'うち',
   romaji: 'uchi',
@@ -6945,7 +6945,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0290',
+  id: 'vg-n5-00290',
   word: 'へや',
   reading: 'へや',
   romaji: 'heya',
@@ -6969,7 +6969,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0291',
+  id: 'vg-n5-00291',
   word: 'ドア',
   reading: 'ドア',
   romaji: 'doa',
@@ -6993,7 +6993,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0292',
+  id: 'vg-n5-00292',
   word: 'まど',
   reading: 'まど',
   romaji: 'mado',
@@ -7017,7 +7017,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0293',
+  id: 'vg-n5-00293',
   word: 'つくえ',
   reading: 'つくえ',
   romaji: 'tsukue',
@@ -7028,7 +7028,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah'],
+  domain: ['pendidikan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: '机 = meja belajar/kerja. Berbeda: テーブル = meja makan.',
@@ -7041,7 +7041,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0294',
+  id: 'vg-n5-00294',
   word: 'いす',
   reading: 'いす',
   romaji: 'isu',
@@ -7065,7 +7065,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0295',
+  id: 'vg-n5-00295',
   word: 'かぎ',
   reading: 'かぎ',
   romaji: 'kagi',
@@ -7089,7 +7089,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0296',
+  id: 'vg-n5-00296',
   word: 'かさ',
   reading: 'かさ',
   romaji: 'kasa',
@@ -7100,7 +7100,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['alam'],
+  domain: ['alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -7113,7 +7113,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0297',
+  id: 'vg-n5-00297',
   word: 'さいふ',
   reading: 'さいふ',
   romaji: 'saifu',
@@ -7137,7 +7137,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0298',
+  id: 'vg-n5-00298',
   word: 'かばん',
   reading: 'かばん',
   romaji: 'kaban',
@@ -7161,7 +7161,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0299',
+  id: 'vg-n5-00299',
   word: 'くすり',
   reading: 'くすり',
   romaji: 'kusuri',
@@ -7185,7 +7185,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0300',
+  id: 'vg-n5-00300',
   word: 'びょうき',
   reading: 'びょうき',
   romaji: 'byouki',
@@ -7209,7 +7209,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0301',
+  id: 'vg-n5-00301',
   word: 'いたい',
   reading: 'いたい',
   romaji: 'itai',
@@ -7233,7 +7233,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0302',
+  id: 'vg-n5-00302',
   word: 'ねつ',
   reading: 'ねつ',
   romaji: 'netsu',
@@ -7257,7 +7257,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0303',
+  id: 'vg-n5-00303',
   word: 'かお',
   reading: 'かお',
   romaji: 'kao',
@@ -7281,7 +7281,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0304',
+  id: 'vg-n5-00304',
   word: 'め',
   reading: 'め',
   romaji: 'me',
@@ -7305,7 +7305,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0305',
+  id: 'vg-n5-00305',
   word: 'みみ',
   reading: 'みみ',
   romaji: 'mimi',
@@ -7329,7 +7329,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0306',
+  id: 'vg-n5-00306',
   word: 'はな',
   reading: 'はな',
   romaji: 'hana',
@@ -7353,7 +7353,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0307',
+  id: 'vg-n5-00307',
   word: 'くち',
   reading: 'くち',
   romaji: 'kuchi',
@@ -7377,7 +7377,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0308',
+  id: 'vg-n5-00308',
   word: 'あし',
   reading: 'あし',
   romaji: 'ashi',
@@ -7401,7 +7401,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0309',
+  id: 'vg-n5-00309',
   word: 'せなか',
   reading: 'せなか',
   romaji: 'senaka',
@@ -7425,7 +7425,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0310',
+  id: 'vg-n5-00310',
   word: 'ごはん',
   reading: 'ごはん',
   romaji: 'gohan',
@@ -7436,7 +7436,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan'],
+  domain: ['makanan-minuman'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: 'ご飯 = nasi (makanan) ATAU waktu makan. 朝ご飯 = sarapan.',
@@ -7449,7 +7449,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0311',
+  id: 'vg-n5-00311',
   word: 'パン',
   reading: 'パン',
   romaji: 'pan',
@@ -7460,7 +7460,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan'],
+  domain: ['makanan-minuman'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -7473,7 +7473,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0312',
+  id: 'vg-n5-00312',
   word: 'たまご',
   reading: 'たまご',
   romaji: 'tamago',
@@ -7484,7 +7484,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan'],
+  domain: ['makanan-minuman'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -7497,7 +7497,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0313',
+  id: 'vg-n5-00313',
   word: 'ぎゅうにゅう',
   reading: 'ぎゅうにゅう',
   romaji: 'gyuunyuu',
@@ -7508,7 +7508,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan'],
+  domain: ['makanan-minuman'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: '牛乳 = susu sapi. ミルク lebih kasual (dari bahasa Inggris).',
@@ -7521,7 +7521,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0314',
+  id: 'vg-n5-00314',
   word: 'おちゃ',
   reading: 'おちゃ',
   romaji: 'ocha',
@@ -7532,7 +7532,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan'],
+  domain: ['makanan-minuman'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: 'お茶 = teh Jepang (hijau). 紅茶 (koucha) = teh hitam. お茶しましょう = nongkrong minum teh.',
@@ -7545,7 +7545,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0315',
+  id: 'vg-n5-00315',
   word: 'みず',
   reading: 'みず',
   romaji: 'mizu',
@@ -7556,7 +7556,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan'],
+  domain: ['makanan-minuman'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -7569,7 +7569,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0316',
+  id: 'vg-n5-00316',
   word: 'りんご',
   reading: 'りんご',
   romaji: 'ringo',
@@ -7580,7 +7580,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan', 'perjalanan', 'alam'],
+  domain: ['makanan-minuman', 'perjalanan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '歌 = lagu / nyanyian. 歌う = bernyanyi. 歌手 (kashu) = penyanyi.',
@@ -7593,7 +7593,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0317',
+  id: 'vg-n5-00317',
   word: 'バナナ',
   reading: 'バナナ',
   romaji: 'banana',
@@ -7604,7 +7604,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan'],
+  domain: ['makanan-minuman'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -7617,7 +7617,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0318',
+  id: 'vg-n5-00318',
   word: 'さとう',
   reading: 'さとう',
   romaji: 'satou',
@@ -7628,7 +7628,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan'],
+  domain: ['makanan-minuman'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -7641,7 +7641,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0319',
+  id: 'vg-n5-00319',
   word: 'しお',
   reading: 'しお',
   romaji: 'shio',
@@ -7652,7 +7652,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan'],
+  domain: ['makanan-minuman'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -7665,7 +7665,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0320',
+  id: 'vg-n5-00320',
   word: 'さかな',
   reading: 'さかな',
   romaji: 'sakana',
@@ -7676,7 +7676,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan'],
+  domain: ['makanan-minuman'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -7689,7 +7689,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0321',
+  id: 'vg-n5-00321',
   word: 'にく',
   reading: 'にく',
   romaji: 'niku',
@@ -7700,7 +7700,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan'],
+  domain: ['makanan-minuman'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: '肉 saja = daging. 牛肉 = sapi, 豚肉 = babi, 鶏肉 = ayam.',
@@ -7713,7 +7713,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0322',
+  id: 'vg-n5-00322',
   word: 'やさい',
   reading: 'やさい',
   romaji: 'yasai',
@@ -7724,7 +7724,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan'],
+  domain: ['makanan-minuman'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -7737,7 +7737,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0323',
+  id: 'vg-n5-00323',
   word: 'くだもの',
   reading: 'くだもの',
   romaji: 'kudamono',
@@ -7748,7 +7748,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan', 'perjalanan', 'alam'],
+  domain: ['makanan-minuman', 'perjalanan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '音楽 = musik. 音楽を聞く = mendengarkan musik. 音楽家 = musisi.',
@@ -7761,7 +7761,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0324',
+  id: 'vg-n5-00324',
   word: 'ちかてつ',
   reading: 'ちかてつ',
   romaji: 'chikatetsu',
@@ -7785,7 +7785,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0325',
+  id: 'vg-n5-00325',
   word: 'しんかんせん',
   reading: 'しんかんせん',
   romaji: 'shinkansen',
@@ -7809,7 +7809,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0326',
+  id: 'vg-n5-00326',
   word: 'ひこうき',
   reading: 'ひこうき',
   romaji: 'hikouki',
@@ -7820,7 +7820,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan', 'perjalanan', 'alam'],
+  domain: ['makanan-minuman', 'perjalanan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '電話 = telepon. 電話する = menelepon. 電話番号 = nomor telepon.',
@@ -7833,7 +7833,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0327',
+  id: 'vg-n5-00327',
   word: 'くうこう',
   reading: 'くうこう',
   romaji: 'kuukou',
@@ -7857,7 +7857,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0328',
+  id: 'vg-n5-00328',
   word: 'みなと',
   reading: 'みなと',
   romaji: 'minato',
@@ -7881,7 +7881,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0329',
+  id: 'vg-n5-00329',
   word: 'どうろ',
   reading: 'どうろ',
   romaji: 'douro',
@@ -7905,7 +7905,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0330',
+  id: 'vg-n5-00330',
   word: 'こうさてん',
   reading: 'こうさてん',
   romaji: 'kousaten',
@@ -7929,7 +7929,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0331',
+  id: 'vg-n5-00331',
   word: 'しごと',
   reading: 'しごと',
   romaji: 'shigoto',
@@ -7940,7 +7940,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kerja'],
+  domain: ['pekerjaan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -7953,7 +7953,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0332',
+  id: 'vg-n5-00332',
   word: 'かいしゃ',
   reading: 'かいしゃ',
   romaji: 'kaisha',
@@ -7964,7 +7964,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kerja'],
+  domain: ['pekerjaan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -7977,7 +7977,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0333',
+  id: 'vg-n5-00333',
   word: 'かいぎ',
   reading: 'かいぎ',
   romaji: 'kaigi',
@@ -7988,7 +7988,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kerja'],
+  domain: ['pekerjaan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -8001,18 +8001,18 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0334',
+  id: 'vg-n5-00334',
   word: 'がっこう',
   reading: 'がっこう',
   romaji: 'gakkou',
-  meaning_id: 'sekolah',
+  meaning_id: 'pendidikan',
   meaning_en: 'school',
   jlpt: 'n5',
   pos: 'noun',
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah'],
+  domain: ['pendidikan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -8025,7 +8025,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0335',
+  id: 'vg-n5-00335',
   word: 'きょうしつ',
   reading: 'きょうしつ',
   romaji: 'kyoushitsu',
@@ -8036,7 +8036,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah'],
+  domain: ['pendidikan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -8049,7 +8049,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0336',
+  id: 'vg-n5-00336',
   word: 'じゅぎょう',
   reading: 'じゅぎょう',
   romaji: 'jugyou',
@@ -8060,7 +8060,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah'],
+  domain: ['pendidikan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -8073,7 +8073,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0337',
+  id: 'vg-n5-00337',
   word: 'しけん',
   reading: 'しけん',
   romaji: 'shiken',
@@ -8084,7 +8084,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah'],
+  domain: ['pendidikan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -8097,7 +8097,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0338',
+  id: 'vg-n5-00338',
   word: 'しゅくだい',
   reading: 'しゅくだい',
   romaji: 'shukudai',
@@ -8108,7 +8108,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah'],
+  domain: ['pendidikan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -8121,7 +8121,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0339',
+  id: 'vg-n5-00339',
   word: 'としょかん',
   reading: 'としょかん',
   romaji: 'toshokan',
@@ -8132,7 +8132,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah'],
+  domain: ['pendidikan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -8145,7 +8145,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0340',
+  id: 'vg-n5-00340',
   word: 'うみ',
   reading: 'うみ',
   romaji: 'umi',
@@ -8169,7 +8169,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0341',
+  id: 'vg-n5-00341',
   word: 'そら',
   reading: 'そら',
   romaji: 'sora',
@@ -8180,7 +8180,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['alam'],
+  domain: ['alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -8193,7 +8193,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0342',
+  id: 'vg-n5-00342',
   word: 'きせつ',
   reading: 'きせつ',
   romaji: 'kisetsu',
@@ -8204,7 +8204,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['alam'],
+  domain: ['alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -8217,7 +8217,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0343',
+  id: 'vg-n5-00343',
   word: 'なつ',
   reading: 'なつ',
   romaji: 'natsu',
@@ -8228,7 +8228,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['alam'],
+  domain: ['alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -8241,7 +8241,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0344',
+  id: 'vg-n5-00344',
   word: 'あき',
   reading: 'あき',
   romaji: 'aki',
@@ -8252,7 +8252,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['alam'],
+  domain: ['alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -8265,7 +8265,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0345',
+  id: 'vg-n5-00345',
   word: 'ふゆ',
   reading: 'ふゆ',
   romaji: 'fuyu',
@@ -8276,7 +8276,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['alam'],
+  domain: ['alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -8289,7 +8289,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0346',
+  id: 'vg-n5-00346',
   word: 'こうえん',
   reading: 'こうえん',
   romaji: 'kouen',
@@ -8313,7 +8313,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0347',
+  id: 'vg-n5-00347',
   word: 'かわ',
   reading: 'かわ',
   romaji: 'kawa',
@@ -8324,7 +8324,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['alam'],
+  domain: ['alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -8337,7 +8337,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0348',
+  id: 'vg-n5-00348',
   word: 'やま',
   reading: 'やま',
   romaji: 'yama',
@@ -8348,7 +8348,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['alam'],
+  domain: ['alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -8361,7 +8361,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0349',
+  id: 'vg-n5-00349',
   word: 'き',
   reading: 'き',
   romaji: 'ki',
@@ -8372,7 +8372,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['alam'],
+  domain: ['alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -8385,7 +8385,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0350',
+  id: 'vg-n5-00350',
   word: 'いぬ',
   reading: 'いぬ',
   romaji: 'inu',
@@ -8409,7 +8409,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0351',
+  id: 'vg-n5-00351',
   word: 'ねこ',
   reading: 'ねこ',
   romaji: 'neko',
@@ -8433,7 +8433,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0352',
+  id: 'vg-n5-00352',
   word: 'とり',
   reading: 'とり',
   romaji: 'tori',
@@ -8444,7 +8444,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['alam'],
+  domain: ['alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: '鳥 = burung (umum). 鶏 (にわとり) = ayam (hewan). 鶏肉 (とりにく) = daging ayam.',
@@ -8457,7 +8457,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0353',
+  id: 'vg-n5-00353',
   word: 'さくら',
   reading: 'さくら',
   romaji: 'sakura',
@@ -8468,7 +8468,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['alam'],
+  domain: ['alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -8481,7 +8481,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0354',
+  id: 'vg-n5-00354',
   word: 'そうじ',
   reading: 'そうじ',
   romaji: 'souji',
@@ -8505,7 +8505,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0355',
+  id: 'vg-n5-00355',
   word: 'せんたく',
   reading: 'せんたく',
   romaji: 'sentaku',
@@ -8529,7 +8529,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0356',
+  id: 'vg-n5-00356',
   word: 'りょうり',
   reading: 'りょうり',
   romaji: 'ryouri',
@@ -8540,7 +8540,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan'],
+  domain: ['makanan-minuman'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: '料理する = memasak. 料理 saja = masakan yang sudah dibuat.',
@@ -8553,7 +8553,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0357',
+  id: 'vg-n5-00357',
   word: 'かいもの',
   reading: 'かいもの',
   romaji: 'kaimono',
@@ -8577,7 +8577,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0358',
+  id: 'vg-n5-00358',
   word: 'さんぽ',
   reading: 'さんぽ',
   romaji: 'sanpo',
@@ -8601,7 +8601,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0359',
+  id: 'vg-n5-00359',
   word: 'りょこう',
   reading: 'りょこう',
   romaji: 'ryokou',
@@ -8625,7 +8625,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0360',
+  id: 'vg-n5-00360',
   word: 'しゃしん',
   reading: 'しゃしん',
   romaji: 'shashin',
@@ -8649,7 +8649,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0361',
+  id: 'vg-n5-00361',
   word: 'でんき',
   reading: 'でんき',
   romaji: 'denki',
@@ -8673,7 +8673,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0362',
+  id: 'vg-n5-00362',
   word: 'でんわ',
   reading: 'でんわ',
   romaji: 'denwa',
@@ -8697,7 +8697,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0363',
+  id: 'vg-n5-00363',
   word: 'てがみ',
   reading: 'てがみ',
   romaji: 'tegami',
@@ -8708,7 +8708,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['hubungan'],
+  domain: ['pertemanan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -8721,7 +8721,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0364',
+  id: 'vg-n5-00364',
   word: 'しんぶん',
   reading: 'しんぶん',
   romaji: 'shinbun',
@@ -8745,7 +8745,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0365',
+  id: 'vg-n5-00365',
   word: 'えいご',
   reading: 'えいご',
   romaji: 'eigo',
@@ -8756,7 +8756,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah'],
+  domain: ['pendidikan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -8769,7 +8769,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0366',
+  id: 'vg-n5-00366',
   word: 'にほんご',
   reading: 'にほんご',
   romaji: 'nihongo',
@@ -8780,7 +8780,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah'],
+  domain: ['pendidikan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -8793,7 +8793,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0367',
+  id: 'vg-n5-00367',
   word: 'ことば',
   reading: 'ことば',
   romaji: 'kotoba',
@@ -8804,7 +8804,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah'],
+  domain: ['pendidikan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -8817,7 +8817,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0368',
+  id: 'vg-n5-00368',
   word: 'なまえ',
   reading: 'なまえ',
   romaji: 'namae',
@@ -8828,7 +8828,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['hubungan'],
+  domain: ['pertemanan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: 'お名前 (formal). 名前 (neutral). お名前は何ですか = Siapa nama Anda?',
@@ -8841,7 +8841,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0369',
+  id: 'vg-n5-00369',
   word: 'ともだち',
   reading: 'ともだち',
   romaji: 'tomodachi',
@@ -8852,7 +8852,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['hubungan'],
+  domain: ['pertemanan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -8865,7 +8865,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0370',
+  id: 'vg-n5-00370',
   word: 'かぞく',
   reading: 'かぞく',
   romaji: 'kazoku',
@@ -8889,7 +8889,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0371',
+  id: 'vg-n5-00371',
   word: 'ちち',
   reading: 'ちち',
   romaji: 'chichi',
@@ -8913,7 +8913,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0372',
+  id: 'vg-n5-00372',
   word: 'はは',
   reading: 'はは',
   romaji: 'haha',
@@ -8937,7 +8937,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0373',
+  id: 'vg-n5-00373',
   word: 'あに',
   reading: 'あに',
   romaji: 'ani',
@@ -8961,7 +8961,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0374',
+  id: 'vg-n5-00374',
   word: 'あね',
   reading: 'あね',
   romaji: 'ane',
@@ -8985,7 +8985,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0375',
+  id: 'vg-n5-00375',
   word: 'おとうと',
   reading: 'おとうと',
   romaji: 'otouto',
@@ -9009,7 +9009,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0376',
+  id: 'vg-n5-00376',
   word: 'いもうと',
   reading: 'いもうと',
   romaji: 'imouto',
@@ -9033,7 +9033,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0377',
+  id: 'vg-n5-00377',
   word: 'せんせい',
   reading: 'せんせい',
   romaji: 'sensei',
@@ -9044,7 +9044,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah'],
+  domain: ['pendidikan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: '先生 = guru/dokter/pengacara. Dipakai sebagai panggilan langsung: 先生！',
@@ -9057,7 +9057,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0378',
+  id: 'vg-n5-00378',
   word: 'がくせい',
   reading: 'がくせい',
   romaji: 'gakusei',
@@ -9068,7 +9068,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah'],
+  domain: ['pendidikan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: '学生 = pelajar umum/mahasiswa. 生徒 (seito) = siswa SD-SMA.',
@@ -9081,7 +9081,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0379',
+  id: 'vg-n5-00379',
   word: 'コーヒー',
   reading: 'コーヒー',
   romaji: 'koohii',
@@ -9092,7 +9092,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan'],
+  domain: ['makanan-minuman'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -9105,7 +9105,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0380',
+  id: 'vg-n5-00380',
   word: 'ジュース',
   reading: 'ジュース',
   romaji: 'juusu',
@@ -9116,7 +9116,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan'],
+  domain: ['makanan-minuman'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -9129,7 +9129,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0381',
+  id: 'vg-n5-00381',
   word: 'ビール',
   reading: 'ビール',
   romaji: 'biiru',
@@ -9140,7 +9140,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan'],
+  domain: ['makanan-minuman'],
   register: 'kasual',
   lawan_bicara: [],
   nuance: null,
@@ -9153,7 +9153,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0382',
+  id: 'vg-n5-00382',
   word: 'ケーキ',
   reading: 'ケーキ',
   romaji: 'keeki',
@@ -9164,7 +9164,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan'],
+  domain: ['makanan-minuman'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -9177,7 +9177,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0383',
+  id: 'vg-n5-00383',
   word: 'アイスクリーム',
   reading: 'アイスクリーム',
   romaji: 'aisukuriimu',
@@ -9188,7 +9188,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan'],
+  domain: ['makanan-minuman'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -9201,7 +9201,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0384',
+  id: 'vg-n5-00384',
   word: 'レストラン',
   reading: 'レストラン',
   romaji: 'resutoran',
@@ -9212,7 +9212,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan', 'perjalanan'],
+  domain: ['makanan-minuman', 'perjalanan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -9225,7 +9225,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0385',
+  id: 'vg-n5-00385',
   word: 'スーパー',
   reading: 'スーパー',
   romaji: 'suupaa',
@@ -9249,7 +9249,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0386',
+  id: 'vg-n5-00386',
   word: 'コンビニ',
   reading: 'コンビニ',
   romaji: 'konbini',
@@ -9273,7 +9273,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0387',
+  id: 'vg-n5-00387',
   word: 'デパート',
   reading: 'デパート',
   romaji: 'depaato',
@@ -9297,7 +9297,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0388',
+  id: 'vg-n5-00388',
   word: 'ホテル',
   reading: 'ホテル',
   romaji: 'hoteru',
@@ -9321,7 +9321,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0389',
+  id: 'vg-n5-00389',
   word: 'アパート',
   reading: 'アパート',
   romaji: 'apaato',
@@ -9345,7 +9345,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0390',
+  id: 'vg-n5-00390',
   word: 'テレビ',
   reading: 'テレビ',
   romaji: 'テレビ',
@@ -9369,7 +9369,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0391',
+  id: 'vg-n5-00391',
   word: 'ラジオ',
   reading: 'ラジオ',
   romaji: 'rajio',
@@ -9393,7 +9393,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0392',
+  id: 'vg-n5-00392',
   word: 'カメラ',
   reading: 'カメラ',
   romaji: 'kamera',
@@ -9417,7 +9417,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0393',
+  id: 'vg-n5-00393',
   word: 'スマホ',
   reading: 'スマホ',
   romaji: 'sumaho',
@@ -9441,7 +9441,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0394',
+  id: 'vg-n5-00394',
   word: 'パソコン',
   reading: 'パソコン',
   romaji: 'pasokon',
@@ -9465,7 +9465,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0395',
+  id: 'vg-n5-00395',
   word: 'インターネット',
   reading: 'インターネット',
   romaji: 'intaanetto',
@@ -9489,7 +9489,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0396',
+  id: 'vg-n5-00396',
   word: 'メール',
   reading: 'メール',
   romaji: 'meeru',
@@ -9513,7 +9513,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0397',
+  id: 'vg-n5-00397',
   word: 'スポーツ',
   reading: 'スポーツ',
   romaji: 'スポ-ツ',
@@ -9537,7 +9537,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0398',
+  id: 'vg-n5-00398',
   word: 'サッカー',
   reading: 'サッカー',
   romaji: 'サッカ-',
@@ -9561,7 +9561,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0399',
+  id: 'vg-n5-00399',
   word: 'テニス',
   reading: 'テニス',
   romaji: 'テニス',
@@ -9585,7 +9585,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0400',
+  id: 'vg-n5-00400',
   word: 'プール',
   reading: 'プール',
   romaji: 'puuru',
@@ -9609,7 +9609,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0401',
+  id: 'vg-n5-00401',
   word: 'ミュージック',
   reading: 'ミュージック',
   romaji: 'myuujikku',
@@ -9633,7 +9633,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0402',
+  id: 'vg-n5-00402',
   word: 'ニュース',
   reading: 'ニュース',
   romaji: 'nyuusu',
@@ -9657,7 +9657,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0403',
+  id: 'vg-n5-00403',
   word: 'アルバム',
   reading: 'アルバム',
   romaji: 'arubamu',
@@ -9681,7 +9681,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0404',
+  id: 'vg-n5-00404',
   word: 'クラス',
   reading: 'クラス',
   romaji: 'kurasu',
@@ -9692,7 +9692,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah'],
+  domain: ['pendidikan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -9705,7 +9705,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0405',
+  id: 'vg-n5-00405',
   word: 'テスト',
   reading: 'テスト',
   romaji: 'tesuto',
@@ -9716,7 +9716,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah'],
+  domain: ['pendidikan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: 'テスト = tes/kuis. 試験 (しけん) = ujian yang lebih besar/formal.',
@@ -9729,7 +9729,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0406',
+  id: 'vg-n5-00406',
   word: 'ノート',
   reading: 'ノート',
   romaji: 'ノ-ト',
@@ -9753,7 +9753,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0407',
+  id: 'vg-n5-00407',
   word: 'ボールペン',
   reading: 'ボールペン',
   romaji: 'boorupen',
@@ -9764,7 +9764,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah'],
+  domain: ['pendidikan'],
   register: 'neutral',
   lawan_bicara: [],
   nuance: null,
@@ -9777,7 +9777,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0408',
+  id: 'vg-n5-00408',
   word: 'エレベーター',
   reading: 'エレベーター',
   romaji: 'erebeetaa',
@@ -9801,7 +9801,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0409',
+  id: 'vg-n5-00409',
   word: 'エアコン',
   reading: 'エアコン',
   romaji: 'エアコン',
@@ -9825,7 +9825,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0410',
+  id: 'vg-n5-00410',
   word: 'バッグ',
   reading: 'バッグ',
   romaji: 'baggu',
@@ -9849,7 +9849,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0411',
+  id: 'vg-n5-00411',
   word: 'シャワー',
   reading: 'シャワー',
   romaji: 'shawaa',
@@ -9873,7 +9873,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0412',
+  id: 'vg-n5-00412',
   word: '先月',
   reading: 'せんげつ',
   romaji: 'sengetsu',
@@ -9897,7 +9897,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0413',
+  id: 'vg-n5-00413',
   word: 'お先に失礼します',
   reading: 'おさきにしつれいします',
   romaji: 'osakinishitsureishimasu',
@@ -9908,7 +9908,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['hubungan', 'keigo'],
+  domain: ['pertemanan', 'keigo-vocabulary'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -9921,7 +9921,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0414',
+  id: 'vg-n5-00414',
   word: '生徒',
   reading: 'せいと',
   romaji: 'seito',
@@ -9932,7 +9932,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah', 'hubungan'],
+  domain: ['pendidikan', 'pertemanan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '生徒 = murid SD/SMP/SMA. Untuk mahasiswa pakai 学生.',
@@ -9945,7 +9945,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0415',
+  id: 'vg-n5-00415',
   word: '生活',
   reading: 'せいかつ',
   romaji: 'seikatsu',
@@ -9969,7 +9969,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0416',
+  id: 'vg-n5-00416',
   word: '誕生日',
   reading: 'たんじょうび',
   romaji: 'tanjoubi',
@@ -9980,7 +9980,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['hubungan', 'perayaan'],
+  domain: ['pertemanan', 'budaya'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -9993,7 +9993,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0417',
+  id: 'vg-n5-00417',
   word: '学生',
   reading: 'がくせい',
   romaji: 'gakusei',
@@ -10004,7 +10004,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah', 'hubungan'],
+  domain: ['pendidikan', 'pertemanan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '学生 = mahasiswa atau pelajar secara umum. Untuk SD-SMA lebih tepat 生徒.',
@@ -10017,7 +10017,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0418',
+  id: 'vg-n5-00418',
   word: '日本人',
   reading: 'にほんじん',
   romaji: 'nihonjin',
@@ -10028,7 +10028,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['perjalanan', 'hubungan'],
+  domain: ['perjalanan', 'pertemanan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '日本人 = orang berkebangsaan/etnis Jepang. Pola: [国名]+人.',
@@ -10041,7 +10041,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0419',
+  id: 'vg-n5-00419',
   word: '外国人',
   reading: 'がいこくじん',
   romaji: 'gaikokujin',
@@ -10052,7 +10052,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['perjalanan', 'hubungan'],
+  domain: ['perjalanan', 'pertemanan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '外国人 = orang asing (non-Jepang). Di Jepang sering disingkat 外人 (agak kasar).',
@@ -10065,7 +10065,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0420',
+  id: 'vg-n5-00420',
   word: '～人',
   reading: '～にん',
   romaji: '～nin',
@@ -10076,7 +10076,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['angka'],
+  domain: ['kuantitas'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -10089,7 +10089,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0421',
+  id: 'vg-n5-00421',
   word: '人',
   reading: 'ひと',
   romaji: 'hito',
@@ -10100,7 +10100,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['hubungan'],
+  domain: ['pertemanan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Kata paling dasar untuk "orang". Juga bisa dibaca ひと (hito) dalam komposisi.',
@@ -10113,7 +10113,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0422',
+  id: 'vg-n5-00422',
   word: '大人',
   reading: 'おとな',
   romaji: 'otona',
@@ -10124,7 +10124,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['hubungan'],
+  domain: ['pertemanan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -10137,7 +10137,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0423',
+  id: 'vg-n5-00423',
   word: '外国',
   reading: 'がいこく',
   romaji: 'gaikoku',
@@ -10161,7 +10161,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0424',
+  id: 'vg-n5-00424',
   word: '国',
   reading: 'くに',
   romaji: 'kuni',
@@ -10185,7 +10185,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0425',
+  id: 'vg-n5-00425',
   word: '男の人',
   reading: 'おとこのひと',
   romaji: 'otokonohito',
@@ -10196,7 +10196,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['hubungan'],
+  domain: ['pertemanan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -10209,7 +10209,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0426',
+  id: 'vg-n5-00426',
   word: '男の子',
   reading: 'おとこのこ',
   romaji: 'otokonoko',
@@ -10233,7 +10233,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0427',
+  id: 'vg-n5-00427',
   word: '女の人',
   reading: 'おんなのひと',
   romaji: 'onnanohito',
@@ -10244,7 +10244,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['hubungan'],
+  domain: ['pertemanan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -10257,7 +10257,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0428',
+  id: 'vg-n5-00428',
   word: '女の子',
   reading: 'おんなのこ',
   romaji: 'onnanoko',
@@ -10281,7 +10281,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0429',
+  id: 'vg-n5-00429',
   word: '彼女',
   reading: 'かのじょ',
   romaji: 'kanojo',
@@ -10292,7 +10292,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['hubungan'],
+  domain: ['pertemanan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -10305,7 +10305,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0430',
+  id: 'vg-n5-00430',
   word: '子ども',
   reading: 'こども',
   romaji: 'kodomo',
@@ -10329,7 +10329,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0431',
+  id: 'vg-n5-00431',
   word: '友だち',
   reading: 'ともだち',
   romaji: 'tomodachi',
@@ -10340,7 +10340,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['hubungan'],
+  domain: ['pertemanan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '友だち = teman (umum). Lebih kasual: 友 (tomo). Lebih formal: 友人 (yuujin).',
@@ -10353,7 +10353,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0432',
+  id: 'vg-n5-00432',
   word: 'お父さん',
   reading: 'おとうさん',
   romaji: 'otousan',
@@ -10377,7 +10377,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0433',
+  id: 'vg-n5-00433',
   word: 'お母さん',
   reading: 'おかあさん',
   romaji: 'okaasan',
@@ -10401,7 +10401,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0434',
+  id: 'vg-n5-00434',
   word: '有名な',
   reading: 'ゆうめいな',
   romaji: 'yuumeina',
@@ -10425,7 +10425,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0435',
+  id: 'vg-n5-00435',
   word: '名前',
   reading: 'なまえ',
   romaji: 'namae',
@@ -10436,7 +10436,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['hubungan'],
+  domain: ['pertemanan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: 'お名前 (formal, sopan). 名前 (neutral). Sering dipakai: お名前は何ですか。',
@@ -10449,7 +10449,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0436',
+  id: 'vg-n5-00436',
   word: '田中さん',
   reading: 'たなかさん',
   romaji: 'tanakasan',
@@ -10460,7 +10460,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['hubungan'],
+  domain: ['pertemanan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -10473,7 +10473,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0437',
+  id: 'vg-n5-00437',
   word: '山田さん',
   reading: 'やまださん',
   romaji: 'yamadasan',
@@ -10484,7 +10484,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['hubungan'],
+  domain: ['pertemanan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -10497,7 +10497,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0438',
+  id: 'vg-n5-00438',
   word: '富士山',
   reading: 'ふじさん',
   romaji: 'fujisan',
@@ -10508,7 +10508,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['alam', 'perjalanan'],
+  domain: ['alam-lingkungan', 'perjalanan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -10521,7 +10521,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0439',
+  id: 'vg-n5-00439',
   word: '日本語',
   reading: 'にほんご',
   romaji: 'nihongo',
@@ -10532,7 +10532,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah', 'perjalanan'],
+  domain: ['pendidikan', 'perjalanan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '日本語 = bahasa Jepang. Pola: [国名]+語 untuk bahasa.',
@@ -10545,7 +10545,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0440',
+  id: 'vg-n5-00440',
   word: '英語',
   reading: 'えいご',
   romaji: 'eigo',
@@ -10556,7 +10556,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah'],
+  domain: ['pendidikan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '英語 = bahasa Inggris. 英語ができますか = Bisa berbahasa Inggris?',
@@ -10569,7 +10569,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0441',
+  id: 'vg-n5-00441',
   word: '日本',
   reading: 'にほん',
   romaji: 'nihon',
@@ -10593,7 +10593,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0442',
+  id: 'vg-n5-00442',
   word: '～本',
   reading: '～ほん',
   romaji: '～hon',
@@ -10604,7 +10604,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['angka'],
+  domain: ['kuantitas'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -10617,7 +10617,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0443',
+  id: 'vg-n5-00443',
   word: '何時',
   reading: 'なんじ',
   romaji: 'nanji',
@@ -10641,7 +10641,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0444',
+  id: 'vg-n5-00444',
   word: '何時間',
   reading: 'なんじかん',
   romaji: 'nanjikan',
@@ -10665,7 +10665,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0445',
+  id: 'vg-n5-00445',
   word: '何',
   reading: 'なに',
   romaji: 'nani',
@@ -10689,7 +10689,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0446',
+  id: 'vg-n5-00446',
   word: '何語',
   reading: 'なにご',
   romaji: 'nanigo',
@@ -10700,7 +10700,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['bahasa'],
+  domain: ['bahasa-komunikasi'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -10713,7 +10713,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0447',
+  id: 'vg-n5-00447',
   word: '九時',
   reading: 'くじ',
   romaji: 'kuji',
@@ -10737,7 +10737,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0448',
+  id: 'vg-n5-00448',
   word: '四時間',
   reading: 'よじかん',
   romaji: 'yojikan',
@@ -10761,7 +10761,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0449',
+  id: 'vg-n5-00449',
   word: '時計',
   reading: 'とけい',
   romaji: 'tokei',
@@ -10785,7 +10785,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0450',
+  id: 'vg-n5-00450',
   word: '五分',
   reading: 'ごふん',
   romaji: 'gofun',
@@ -10809,7 +10809,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0451',
+  id: 'vg-n5-00451',
   word: '三十分',
   reading: 'さんじゅっぷん',
   romaji: 'sanjuttpun',
@@ -10833,7 +10833,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0452',
+  id: 'vg-n5-00452',
   word: '半分',
   reading: 'はんぶん',
   romaji: 'hanbun',
@@ -10857,7 +10857,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0453',
+  id: 'vg-n5-00453',
   word: '一週間',
   reading: 'いっしゅうかん',
   romaji: 'ittshuukan',
@@ -10881,7 +10881,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0454',
+  id: 'vg-n5-00454',
   word: 'AとBの間',
   reading: 'あいだ',
   romaji: 'aida',
@@ -10905,7 +10905,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0455',
+  id: 'vg-n5-00455',
   word: 'この間',
   reading: 'このあいだ',
   romaji: 'konoaida',
@@ -10929,7 +10929,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0456',
+  id: 'vg-n5-00456',
   word: '間に合う',
   reading: 'まにあう',
   romaji: 'maniau',
@@ -10953,7 +10953,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0457',
+  id: 'vg-n5-00457',
   word: '七時半',
   reading: 'しちじはん',
   romaji: 'shichijihan',
@@ -10977,7 +10977,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0458',
+  id: 'vg-n5-00458',
   word: '一時間半',
   reading: 'いちじかんはん',
   romaji: 'ichijikanhan',
@@ -11001,7 +11001,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0459',
+  id: 'vg-n5-00459',
   word: '午後',
   reading: 'ごご',
   romaji: 'gogo',
@@ -11025,7 +11025,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0460',
+  id: 'vg-n5-00460',
   word: '午前',
   reading: 'ごぜん',
   romaji: 'gozen',
@@ -11049,7 +11049,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0461',
+  id: 'vg-n5-00461',
   word: '前',
   reading: 'まえ',
   romaji: 'mae',
@@ -11073,7 +11073,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0462',
+  id: 'vg-n5-00462',
   word: '後で',
   reading: 'あとで',
   romaji: 'atode',
@@ -11097,7 +11097,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0463',
+  id: 'vg-n5-00463',
   word: '後ろ',
   reading: 'うしろ',
   romaji: 'ushiro',
@@ -11121,7 +11121,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0464',
+  id: 'vg-n5-00464',
   word: '今月',
   reading: 'こんげつ',
   romaji: 'kongetsu',
@@ -11145,7 +11145,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0465',
+  id: 'vg-n5-00465',
   word: '今週',
   reading: 'こんしゅう',
   romaji: 'konshuu',
@@ -11169,7 +11169,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0466',
+  id: 'vg-n5-00466',
   word: '今',
   reading: 'いま',
   romaji: 'ima',
@@ -11193,7 +11193,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0467',
+  id: 'vg-n5-00467',
   word: '今年',
   reading: 'ことし',
   romaji: 'kotoshi',
@@ -11217,7 +11217,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0468',
+  id: 'vg-n5-00468',
   word: '今朝',
   reading: 'けさ',
   romaji: 'kesa',
@@ -11241,7 +11241,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0469',
+  id: 'vg-n5-00469',
   word: '先週',
   reading: 'せんしゅう',
   romaji: 'senshuu',
@@ -11265,7 +11265,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0470',
+  id: 'vg-n5-00470',
   word: '来週',
   reading: 'らいしゅう',
   romaji: 'raishuu',
@@ -11289,7 +11289,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0471',
+  id: 'vg-n5-00471',
   word: '一年',
   reading: 'いちねん',
   romaji: 'ichinen',
@@ -11313,7 +11313,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0472',
+  id: 'vg-n5-00472',
   word: '去年',
   reading: 'きょねん',
   romaji: 'kyonen',
@@ -11337,7 +11337,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0473',
+  id: 'vg-n5-00473',
   word: '半年',
   reading: 'はんとし',
   romaji: 'hantoshi',
@@ -11361,7 +11361,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0474',
+  id: 'vg-n5-00474',
   word: '毎年',
   reading: 'まいとし',
   romaji: 'maitoshi',
@@ -11385,7 +11385,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0475',
+  id: 'vg-n5-00475',
   word: '毎日',
   reading: 'まいにち',
   romaji: 'mainichi',
@@ -11409,7 +11409,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0476',
+  id: 'vg-n5-00476',
   word: '毎月',
   reading: 'まいつき',
   romaji: 'maitsuki',
@@ -11433,7 +11433,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0477',
+  id: 'vg-n5-00477',
   word: '少ない',
   reading: 'すくない',
   romaji: 'sukunai',
@@ -11444,7 +11444,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['deskripsi'],
+  domain: ['kualitas'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '少ない (すくない) = sedikit (adj-i, untuk kuantitas). Berbeda: 少し (adv).',
@@ -11457,7 +11457,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0478',
+  id: 'vg-n5-00478',
   word: '多い',
   reading: 'おおい',
   romaji: 'ooi',
@@ -11468,7 +11468,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['deskripsi'],
+  domain: ['kualitas'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '多い (おおい) = banyak (adj-i). Berbeda dari たくさん (adv). 多い人 = banyak orang.',
@@ -11481,7 +11481,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0479',
+  id: 'vg-n5-00479',
   word: '小学校',
   reading: 'しょうがっこう',
   romaji: 'shougattkou',
@@ -11492,7 +11492,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah'],
+  domain: ['pendidikan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -11505,7 +11505,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0480',
+  id: 'vg-n5-00480',
   word: '大学',
   reading: 'だいがく',
   romaji: 'daigaku',
@@ -11516,7 +11516,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah'],
+  domain: ['pendidikan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -11529,7 +11529,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0481',
+  id: 'vg-n5-00481',
   word: '大変な',
   reading: 'たいへんな',
   romaji: 'taihenna',
@@ -11553,7 +11553,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0482',
+  id: 'vg-n5-00482',
   word: '大切な',
   reading: 'たいせつな',
   romaji: 'taisetsuna',
@@ -11564,7 +11564,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['emosi', 'motivasi'],
+  domain: ['emosi', 'emosi-positif'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '大切な = penting/berharga (bernilai emosional). Berbeda: 重要な = penting (objektif).',
@@ -11577,7 +11577,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0483',
+  id: 'vg-n5-00483',
   word: '安全な',
   reading: 'あんぜんな',
   romaji: 'anzenna',
@@ -11601,7 +11601,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0484',
+  id: 'vg-n5-00484',
   word: '安心する',
   reading: 'あんしんする',
   romaji: 'anshinsuru',
@@ -11625,7 +11625,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0485',
+  id: 'vg-n5-00485',
   word: '高校',
   reading: 'こうこう',
   romaji: 'koukou',
@@ -11636,7 +11636,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah'],
+  domain: ['pendidikan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -11649,7 +11649,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0486',
+  id: 'vg-n5-00486',
   word: '新聞',
   reading: 'しんぶん',
   romaji: 'shinbun',
@@ -11673,7 +11673,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0487',
+  id: 'vg-n5-00487',
   word: '早い',
   reading: 'はやい',
   romaji: 'hayai',
@@ -11697,7 +11697,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0488',
+  id: 'vg-n5-00488',
   word: '社長',
   reading: 'しゃちょう',
   romaji: 'shachou',
@@ -11708,7 +11708,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kerja'],
+  domain: ['pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '社長 = direktur/presiden perusahaan. Keigo untuk menyapa: 社長、〜。',
@@ -11721,7 +11721,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0489',
+  id: 'vg-n5-00489',
   word: '円',
   reading: 'えん',
   romaji: 'en',
@@ -11745,7 +11745,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0490',
+  id: 'vg-n5-00490',
   word: '校長',
   reading: 'こうちょう',
   romaji: 'kouchou',
@@ -11756,7 +11756,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah'],
+  domain: ['pendidikan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -11769,7 +11769,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0491',
+  id: 'vg-n5-00491',
   word: '社員',
   reading: 'しゃいん',
   romaji: 'shain',
@@ -11780,7 +11780,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kerja'],
+  domain: ['pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '社員 = karyawan tetap. Berbeda dengan アルバイト (part-time) dan 派遣社員.',
@@ -11793,7 +11793,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0492',
+  id: 'vg-n5-00492',
   word: '中学校',
   reading: 'ちゅうがっこう',
   romaji: 'chuugattkou',
@@ -11804,7 +11804,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['sekolah'],
+  domain: ['pendidikan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -11817,7 +11817,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0493',
+  id: 'vg-n5-00493',
   word: '一日中',
   reading: 'いちにちじゅう',
   romaji: 'ichinichijuu',
@@ -11841,7 +11841,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0494',
+  id: 'vg-n5-00494',
   word: '中',
   reading: 'なか',
   romaji: 'naka',
@@ -11865,7 +11865,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0495',
+  id: 'vg-n5-00495',
   word: '聞こえる',
   reading: 'きこえる',
   romaji: 'kikoeru',
@@ -11889,7 +11889,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0496',
+  id: 'vg-n5-00496',
   word: '口',
   reading: 'くち',
   romaji: 'kuchi',
@@ -11913,7 +11913,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0497',
+  id: 'vg-n5-00497',
   word: '出す',
   reading: 'だす',
   romaji: 'dasu',
@@ -11937,7 +11937,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0498',
+  id: 'vg-n5-00498',
   word: '入り口',
   reading: 'いりぐち',
   romaji: 'iriguchi',
@@ -11961,7 +11961,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0499',
+  id: 'vg-n5-00499',
   word: '入れる',
   reading: 'いれる',
   romaji: 'ireru',
@@ -11985,7 +11985,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0500',
+  id: 'vg-n5-00500',
   word: '東京',
   reading: 'とうきょう',
   romaji: 'toukyou',
@@ -12009,7 +12009,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0501',
+  id: 'vg-n5-00501',
   word: '東',
   reading: 'ひがし',
   romaji: 'higashi',
@@ -12033,7 +12033,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0502',
+  id: 'vg-n5-00502',
   word: '東口',
   reading: 'ひがしぐち',
   romaji: 'higashiguchi',
@@ -12057,7 +12057,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0503',
+  id: 'vg-n5-00503',
   word: '西洋',
   reading: 'せいよう',
   romaji: 'seiyou',
@@ -12081,7 +12081,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0504',
+  id: 'vg-n5-00504',
   word: '西',
   reading: 'にし',
   romaji: 'nishi',
@@ -12105,7 +12105,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0505',
+  id: 'vg-n5-00505',
   word: '西口',
   reading: 'にしぐち',
   romaji: 'nishiguchi',
@@ -12129,7 +12129,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0506',
+  id: 'vg-n5-00506',
   word: '南',
   reading: 'みなみ',
   romaji: 'minami',
@@ -12153,7 +12153,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0507',
+  id: 'vg-n5-00507',
   word: '南口',
   reading: 'みなみぐち',
   romaji: 'minamiguchi',
@@ -12177,7 +12177,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0508',
+  id: 'vg-n5-00508',
   word: '北海道',
   reading: 'ほっかいどう',
   romaji: 'hottkaidou',
@@ -12201,7 +12201,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0509',
+  id: 'vg-n5-00509',
   word: '北',
   reading: 'きた',
   romaji: 'kita',
@@ -12225,7 +12225,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0510',
+  id: 'vg-n5-00510',
   word: '北口',
   reading: 'きたぐち',
   romaji: 'kitaguchi',
@@ -12249,7 +12249,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0511',
+  id: 'vg-n5-00511',
   word: '上手な',
   reading: 'じょうずな',
   romaji: 'jouzuna',
@@ -12273,7 +12273,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0512',
+  id: 'vg-n5-00512',
   word: '上',
   reading: 'うえ',
   romaji: 'ue',
@@ -12297,7 +12297,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0513',
+  id: 'vg-n5-00513',
   word: '上着',
   reading: 'うわぎ',
   romaji: 'uwagi',
@@ -12321,7 +12321,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0514',
+  id: 'vg-n5-00514',
   word: '地下鉄',
   reading: 'ちかてつ',
   romaji: 'chikatetsu',
@@ -12345,7 +12345,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0515',
+  id: 'vg-n5-00515',
   word: '下',
   reading: 'した',
   romaji: 'shita',
@@ -12369,7 +12369,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0516',
+  id: 'vg-n5-00516',
   word: '下手な',
   reading: 'へたな',
   romaji: 'hetana',
@@ -12393,7 +12393,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0517',
+  id: 'vg-n5-00517',
   word: '外',
   reading: 'そと',
   romaji: 'soto',
@@ -12417,7 +12417,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0518',
+  id: 'vg-n5-00518',
   word: '休む',
   reading: 'やすむ',
   romaji: 'yasumu',
@@ -12428,7 +12428,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kehidupan-sehari', 'kerja'],
+  domain: ['kehidupan-sehari', 'pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -12441,7 +12441,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0519',
+  id: 'vg-n5-00519',
   word: '休み',
   reading: 'やすみ',
   romaji: 'yasumi',
@@ -12452,7 +12452,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kehidupan-sehari', 'kerja'],
+  domain: ['kehidupan-sehari', 'pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '休み = istirahat/libur/cuti. 夏休み = libur musim panas. お休みなさい = selamat tidur.',
@@ -12465,7 +12465,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0520',
+  id: 'vg-n5-00520',
   word: '昼休み',
   reading: 'ひるやすみ',
   romaji: 'hiruyasumi',
@@ -12476,7 +12476,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kehidupan-sehari', 'kerja'],
+  domain: ['kehidupan-sehari', 'pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -12489,7 +12489,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0521',
+  id: 'vg-n5-00521',
   word: '見学',
   reading: 'けんがく',
   romaji: 'kengaku',
@@ -12500,7 +12500,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kehidupan-sehari', 'kerja'],
+  domain: ['kehidupan-sehari', 'pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -12513,7 +12513,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0522',
+  id: 'vg-n5-00522',
   word: '見物',
   reading: 'けんぶつ',
   romaji: 'kenbutsu',
@@ -12524,7 +12524,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kehidupan-sehari', 'kerja'],
+  domain: ['kehidupan-sehari', 'pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -12537,7 +12537,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0523',
+  id: 'vg-n5-00523',
   word: '見える',
   reading: 'みえる',
   romaji: 'mieru',
@@ -12548,7 +12548,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kehidupan-sehari', 'kerja'],
+  domain: ['kehidupan-sehari', 'pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -12561,7 +12561,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0524',
+  id: 'vg-n5-00524',
   word: '銀行',
   reading: 'ぎんこう',
   romaji: 'ginkou',
@@ -12572,7 +12572,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kehidupan-sehari', 'kerja'],
+  domain: ['kehidupan-sehari', 'pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '銀行 = bank (tempat). Berbeda: お金 = uang. 銀行口座 = rekening bank.',
@@ -12585,7 +12585,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0525',
+  id: 'vg-n5-00525',
   word: '旅行',
   reading: 'りょこう',
   romaji: 'ryokou',
@@ -12596,7 +12596,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kehidupan-sehari', 'kerja'],
+  domain: ['kehidupan-sehari', 'pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -12609,7 +12609,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0526',
+  id: 'vg-n5-00526',
   word: '辞書',
   reading: 'じしょ',
   romaji: 'jisho',
@@ -12620,7 +12620,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kehidupan-sehari', 'kerja'],
+  domain: ['kehidupan-sehari', 'pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '辞書 = kamus. 辞書を引く = mencari di kamus (ungkapan khas).',
@@ -12633,7 +12633,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0527',
+  id: 'vg-n5-00527',
   word: '買いもの',
   reading: 'かいもの',
   romaji: 'kaimono',
@@ -12644,7 +12644,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kehidupan-sehari', 'kerja'],
+  domain: ['kehidupan-sehari', 'pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -12657,7 +12657,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0528',
+  id: 'vg-n5-00528',
   word: '来月',
   reading: 'らいげつ',
   romaji: 'raigetsu',
@@ -12668,7 +12668,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kehidupan-sehari', 'kerja'],
+  domain: ['kehidupan-sehari', 'pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -12681,7 +12681,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0529',
+  id: 'vg-n5-00529',
   word: '食事',
   reading: 'しょくじ',
   romaji: 'shokuji',
@@ -12692,7 +12692,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kehidupan-sehari', 'kerja'],
+  domain: ['kehidupan-sehari', 'pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: 'スーパー (スーパーマーケット) = supermarket.',
@@ -12705,7 +12705,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0530',
+  id: 'vg-n5-00530',
   word: '食堂',
   reading: 'しょくどう',
   romaji: 'shokudou',
@@ -12716,7 +12716,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kehidupan-sehari', 'kerja'],
+  domain: ['kehidupan-sehari', 'pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: 'デパート (デパートメントストア) = department store.',
@@ -12729,7 +12729,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0531',
+  id: 'vg-n5-00531',
   word: '食料品',
   reading: 'しょくりょうひん',
   romaji: 'shokuryouhin',
@@ -12740,7 +12740,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kehidupan-sehari', 'kerja'],
+  domain: ['kehidupan-sehari', 'pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -12753,18 +12753,18 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0532',
+  id: 'vg-n5-00532',
   word: '食べもの',
   reading: 'たべもの',
   romaji: 'tabemono',
-  meaning_id: 'makanan',
+  meaning_id: 'makanan-minuman',
   meaning_en: 'food',
   jlpt: 'n5',
   pos: 'noun',
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kehidupan-sehari', 'kerja'],
+  domain: ['kehidupan-sehari', 'pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -12777,7 +12777,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0533',
+  id: 'vg-n5-00533',
   word: '飲みもの',
   reading: 'のみもの',
   romaji: 'nomimono',
@@ -12788,7 +12788,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kehidupan-sehari', 'kerja'],
+  domain: ['kehidupan-sehari', 'pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -12801,7 +12801,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0534',
+  id: 'vg-n5-00534',
   word: '会話',
   reading: 'かいわ',
   romaji: 'kaiwa',
@@ -12812,7 +12812,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kehidupan-sehari', 'kerja'],
+  domain: ['kehidupan-sehari', 'pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -12825,7 +12825,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0535',
+  id: 'vg-n5-00535',
   word: '電気',
   reading: 'でんき',
   romaji: 'denki',
@@ -12836,7 +12836,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kehidupan-sehari', 'kerja'],
+  domain: ['kehidupan-sehari', 'pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '事務所 = kantor (ruangan/gedung kerja). Berbeda: 会社 = perusahaan (entitas).',
@@ -12849,7 +12849,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0536',
+  id: 'vg-n5-00536',
   word: '話',
   reading: 'はなし',
   romaji: 'hanashi',
@@ -12860,7 +12860,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kehidupan-sehari', 'kerja'],
+  domain: ['kehidupan-sehari', 'pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '食べもの = makanan (umum). Berbeda: 料理 (ryouri) = masakan yang dimasak.',
@@ -12873,7 +12873,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0537',
+  id: 'vg-n5-00537',
   word: '自動車',
   reading: 'じどうしゃ',
   romaji: 'jidousha',
@@ -12884,7 +12884,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kehidupan-sehari', 'kerja'],
+  domain: ['kehidupan-sehari', 'pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '飲みもの = minuman. 飲みもの何にする？= Mau minum apa?',
@@ -12897,7 +12897,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0538',
+  id: 'vg-n5-00538',
   word: '自転車',
   reading: 'じてんしゃ',
   romaji: 'jitensha',
@@ -12908,7 +12908,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kehidupan-sehari', 'kerja'],
+  domain: ['kehidupan-sehari', 'pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: 'くだもの (果物) = buah-buahan. 果物屋 (kudamonoya) = toko buah.',
@@ -12921,7 +12921,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0539',
+  id: 'vg-n5-00539',
   word: '花びん',
   reading: 'かびん',
   romaji: 'kabin',
@@ -12932,7 +12932,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kesehatan', 'alam'],
+  domain: ['kesehatan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: 'りんご = apel. Salah satu contoh paling klasik dalam soal JLPT.',
@@ -12945,7 +12945,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0540',
+  id: 'vg-n5-00540',
   word: '花見',
   reading: 'はなみ',
   romaji: 'hanami',
@@ -12956,7 +12956,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kesehatan', 'alam'],
+  domain: ['kesehatan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: 'バナナ = pisang. Dari bahasa Portugis/Inggris "banana".',
@@ -12969,7 +12969,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0541',
+  id: 'vg-n5-00541',
   word: '花火',
   reading: 'はなび',
   romaji: 'hanabi',
@@ -12980,7 +12980,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kesehatan', 'alam'],
+  domain: ['kesehatan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: 'にく (肉) = daging. 牛肉 (gyuuniku) = sapi, 豚肉 (butaniku) = babi, 鶏肉 (toriniku) = ayam.',
@@ -12993,7 +12993,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0542',
+  id: 'vg-n5-00542',
   word: '病気',
   reading: 'びょうき',
   romaji: 'byouki',
@@ -13004,7 +13004,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kesehatan', 'alam'],
+  domain: ['kesehatan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '料理 = masakan (yang sudah dimasak) / memasak. 料理する = memasak.',
@@ -13017,7 +13017,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0543',
+  id: 'vg-n5-00543',
   word: '元気',
   reading: 'げんき',
   romaji: 'genki',
@@ -13028,7 +13028,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kesehatan', 'alam'],
+  domain: ['kesehatan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: 'メニュー = menu restoran. Dari kata Perancis "menu".',
@@ -13041,7 +13041,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0544',
+  id: 'vg-n5-00544',
   word: '耳',
   reading: 'みみ',
   romaji: 'mimi',
@@ -13052,7 +13052,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kesehatan', 'alam'],
+  domain: ['kesehatan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -13065,7 +13065,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0545',
+  id: 'vg-n5-00545',
   word: 'お手洗い',
   reading: 'おてあらい',
   romaji: 'otearai',
@@ -13076,7 +13076,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kesehatan', 'alam'],
+  domain: ['kesehatan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: 'お手洗い = toilet (ekspresi halus). 近くにお手洗いがありますか = Apakah ada toilet di dekat sini?',
@@ -13089,7 +13089,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0546',
+  id: 'vg-n5-00546',
   word: '足',
   reading: 'あし',
   romaji: 'ashi',
@@ -13100,7 +13100,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kesehatan', 'alam'],
+  domain: ['kesehatan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -13113,7 +13113,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0547',
+  id: 'vg-n5-00547',
   word: '足りる',
   reading: 'たりる',
   romaji: 'tariru',
@@ -13124,7 +13124,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kesehatan', 'alam'],
+  domain: ['kesehatan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -13137,7 +13137,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0548',
+  id: 'vg-n5-00548',
   word: '足す',
   reading: 'たす',
   romaji: 'tasu',
@@ -13148,7 +13148,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kesehatan', 'alam'],
+  domain: ['kesehatan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '駐車場 = tempat parkir. 無料駐車場 = parkir gratis. 有料駐車場 = parkir berbayar.',
@@ -13161,7 +13161,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0549',
+  id: 'vg-n5-00549',
   word: '一つ目、二つ目...',
   reading: 'ひとつめ、ふたつめ',
   romaji: 'hitotsume、futatsume',
@@ -13172,7 +13172,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kesehatan', 'alam'],
+  domain: ['kesehatan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -13185,7 +13185,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0550',
+  id: 'vg-n5-00550',
   word: '力',
   reading: 'ちから',
   romaji: 'chikara',
@@ -13196,7 +13196,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kesehatan', 'alam'],
+  domain: ['kesehatan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -13209,7 +13209,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0551',
+  id: 'vg-n5-00551',
   word: '力持ち',
   reading: 'ちからもち',
   romaji: 'chikaramochi',
@@ -13220,7 +13220,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kesehatan', 'alam'],
+  domain: ['kesehatan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -13233,7 +13233,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0552',
+  id: 'vg-n5-00552',
   word: '牛肉',
   reading: 'ぎゅうにく',
   romaji: 'gyuuniku',
@@ -13244,7 +13244,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kesehatan', 'alam'],
+  domain: ['kesehatan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '医者 = dokter. お医者さん (lebih sopan). 医者に行く = pergi ke dokter.',
@@ -13257,7 +13257,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0553',
+  id: 'vg-n5-00553',
   word: '牛乳',
   reading: 'ぎゅうにゅう',
   romaji: 'gyuunyuu',
@@ -13268,7 +13268,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kesehatan', 'alam'],
+  domain: ['kesehatan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '看護師 = perawat (gender-neutral, modern). Dahulu: 看護婦 (perempuan) / 看護士 (laki-laki).',
@@ -13281,7 +13281,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0554',
+  id: 'vg-n5-00554',
   word: '牛',
   reading: 'うし',
   romaji: 'ushi',
@@ -13292,7 +13292,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kesehatan', 'alam'],
+  domain: ['kesehatan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -13305,7 +13305,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0555',
+  id: 'vg-n5-00555',
   word: '魚屋',
   reading: 'さかなや',
   romaji: 'sakanaya',
@@ -13316,7 +13316,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kesehatan', 'alam'],
+  domain: ['kesehatan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -13329,7 +13329,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0556',
+  id: 'vg-n5-00556',
   word: '喫茶店',
   reading: 'きっさてん',
   romaji: 'kittsaten',
@@ -13340,7 +13340,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kesehatan', 'alam'],
+  domain: ['kesehatan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '喫茶店 = kafe tradisional Jepang. Lebih tua/klasik dari カフェ (kafe modern).',
@@ -13353,7 +13353,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0557',
+  id: 'vg-n5-00557',
   word: '店',
   reading: 'みせ',
   romaji: 'mise',
@@ -13364,7 +13364,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kesehatan', 'alam'],
+  domain: ['kesehatan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '店 (みせ) = toko/warung. Lebih umum dari 店舗 (tentou = outlet resmi).',
@@ -13377,7 +13377,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0558',
+  id: 'vg-n5-00558',
   word: '道',
   reading: 'みち',
   romaji: 'michi',
@@ -13388,7 +13388,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kesehatan', 'alam'],
+  domain: ['kesehatan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: 'コンビニ = convenience store (7-Eleven, FamilyMart, dll). Fitur penting budaya Jepang.',
@@ -13401,7 +13401,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0559',
+  id: 'vg-n5-00559',
   word: '門',
   reading: 'もん',
   romaji: 'mon',
@@ -13412,7 +13412,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kesehatan', 'alam'],
+  domain: ['kesehatan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -13425,7 +13425,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0560',
+  id: 'vg-n5-00560',
   word: '専門',
   reading: 'せんもん',
   romaji: 'senmon',
@@ -13436,7 +13436,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kesehatan', 'alam'],
+  domain: ['kesehatan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -13449,7 +13449,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0561',
+  id: 'vg-n5-00561',
   word: '空気',
   reading: 'くうき',
   romaji: 'kuuki',
@@ -13460,7 +13460,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kesehatan', 'alam'],
+  domain: ['kesehatan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -13473,7 +13473,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0562',
+  id: 'vg-n5-00562',
   word: '空港',
   reading: 'くうこう',
   romaji: 'kuukou',
@@ -13484,7 +13484,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kesehatan', 'alam'],
+  domain: ['kesehatan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '電車 = kereta listrik (bukan shinkansen). 電車に乗る = naik kereta.',
@@ -13497,7 +13497,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0563',
+  id: 'vg-n5-00563',
   word: '空',
   reading: 'そら',
   romaji: 'sora',
@@ -13508,7 +13508,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kesehatan', 'alam'],
+  domain: ['kesehatan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -13521,7 +13521,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0564',
+  id: 'vg-n5-00564',
   word: '白',
   reading: 'しろ',
   romaji: 'shiro',
@@ -13532,7 +13532,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kesehatan', 'alam'],
+  domain: ['kesehatan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -13545,7 +13545,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0565',
+  id: 'vg-n5-00565',
   word: '一',
   reading: 'いち',
   romaji: 'ichi',
@@ -13556,7 +13556,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['angka'],
+  domain: ['kuantitas'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -13569,7 +13569,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0566',
+  id: 'vg-n5-00566',
   word: '二',
   reading: 'に',
   romaji: 'ni',
@@ -13580,7 +13580,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['angka'],
+  domain: ['kuantitas'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -13593,7 +13593,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0567',
+  id: 'vg-n5-00567',
   word: '三',
   reading: 'さん',
   romaji: 'san',
@@ -13604,7 +13604,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['angka'],
+  domain: ['kuantitas'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -13617,7 +13617,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0568',
+  id: 'vg-n5-00568',
   word: '四',
   reading: 'し/よん',
   romaji: 'shi/yon',
@@ -13628,7 +13628,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['angka'],
+  domain: ['kuantitas'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -13641,7 +13641,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0569',
+  id: 'vg-n5-00569',
   word: '五',
   reading: 'ご',
   romaji: 'go',
@@ -13652,7 +13652,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['angka'],
+  domain: ['kuantitas'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -13665,7 +13665,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0570',
+  id: 'vg-n5-00570',
   word: '六',
   reading: 'ろく',
   romaji: 'roku',
@@ -13676,7 +13676,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['angka'],
+  domain: ['kuantitas'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -13689,7 +13689,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0571',
+  id: 'vg-n5-00571',
   word: '七',
   reading: 'しち/なな',
   romaji: 'shichi/nana',
@@ -13700,7 +13700,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['angka'],
+  domain: ['kuantitas'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -13713,7 +13713,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0572',
+  id: 'vg-n5-00572',
   word: '八',
   reading: 'はち',
   romaji: 'hachi',
@@ -13724,7 +13724,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['angka'],
+  domain: ['kuantitas'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -13737,7 +13737,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0573',
+  id: 'vg-n5-00573',
   word: '九',
   reading: 'きゅう/く',
   romaji: 'kyuu/ku',
@@ -13748,7 +13748,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['angka'],
+  domain: ['kuantitas'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -13761,7 +13761,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0574',
+  id: 'vg-n5-00574',
   word: '十',
   reading: 'じゅう',
   romaji: 'juu',
@@ -13772,7 +13772,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['angka'],
+  domain: ['kuantitas'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -13785,7 +13785,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0575',
+  id: 'vg-n5-00575',
   word: '百',
   reading: 'ひゃく',
   romaji: 'hyaku',
@@ -13796,7 +13796,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['angka'],
+  domain: ['kuantitas'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -13809,7 +13809,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0576',
+  id: 'vg-n5-00576',
   word: '千',
   reading: 'せん',
   romaji: 'sen',
@@ -13820,7 +13820,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['angka'],
+  domain: ['kuantitas'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -13833,7 +13833,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0577',
+  id: 'vg-n5-00577',
   word: '万',
   reading: 'まん',
   romaji: 'man',
@@ -13844,7 +13844,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['angka'],
+  domain: ['kuantitas'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -13857,7 +13857,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0578',
+  id: 'vg-n5-00578',
   word: '一つ',
   reading: 'ひとつ',
   romaji: 'hitotsu',
@@ -13868,7 +13868,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['angka'],
+  domain: ['kuantitas'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -13881,7 +13881,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0579',
+  id: 'vg-n5-00579',
   word: '二つ',
   reading: 'ふたつ',
   romaji: 'futatsu',
@@ -13892,7 +13892,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['angka'],
+  domain: ['kuantitas'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -13905,7 +13905,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0580',
+  id: 'vg-n5-00580',
   word: '三つ',
   reading: 'みっつ',
   romaji: 'mitttsu',
@@ -13916,7 +13916,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['angka'],
+  domain: ['kuantitas'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -13929,7 +13929,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0581',
+  id: 'vg-n5-00581',
   word: '四つ',
   reading: 'よっつ',
   romaji: 'yotttsu',
@@ -13940,7 +13940,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['angka'],
+  domain: ['kuantitas'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -13953,7 +13953,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0582',
+  id: 'vg-n5-00582',
   word: '五つ',
   reading: 'いつつ',
   romaji: 'itsutsu',
@@ -13964,7 +13964,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['angka'],
+  domain: ['kuantitas'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -13977,7 +13977,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0583',
+  id: 'vg-n5-00583',
   word: '六つ',
   reading: 'むっつ',
   romaji: 'mutttsu',
@@ -13988,7 +13988,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['angka'],
+  domain: ['kuantitas'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -14001,7 +14001,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0584',
+  id: 'vg-n5-00584',
   word: '七つ',
   reading: 'ななつ',
   romaji: 'nanatsu',
@@ -14012,7 +14012,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['angka'],
+  domain: ['kuantitas'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -14025,7 +14025,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0585',
+  id: 'vg-n5-00585',
   word: '八つ',
   reading: 'やっつ',
   romaji: 'yatttsu',
@@ -14036,7 +14036,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['angka'],
+  domain: ['kuantitas'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -14049,7 +14049,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0586',
+  id: 'vg-n5-00586',
   word: '九つ',
   reading: 'ここのつ',
   romaji: 'kokonotsu',
@@ -14060,7 +14060,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['angka'],
+  domain: ['kuantitas'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -14073,7 +14073,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0587',
+  id: 'vg-n5-00587',
   word: '月曜日',
   reading: 'げつようび',
   romaji: 'getsuyoubi',
@@ -14097,7 +14097,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0588',
+  id: 'vg-n5-00588',
   word: '火曜日',
   reading: 'かようび',
   romaji: 'kayoubi',
@@ -14121,7 +14121,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0589',
+  id: 'vg-n5-00589',
   word: '水曜日',
   reading: 'すいようび',
   romaji: 'suiyoubi',
@@ -14145,7 +14145,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0590',
+  id: 'vg-n5-00590',
   word: '木曜日',
   reading: 'もくようび',
   romaji: 'mokuyoubi',
@@ -14169,7 +14169,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0591',
+  id: 'vg-n5-00591',
   word: '金曜日',
   reading: 'きんようび',
   romaji: 'kinyoubi',
@@ -14193,7 +14193,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0592',
+  id: 'vg-n5-00592',
   word: '土曜日',
   reading: 'どようび',
   romaji: 'doyoubi',
@@ -14217,7 +14217,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0593',
+  id: 'vg-n5-00593',
   word: '日曜日',
   reading: 'にちようび',
   romaji: 'nichiyoubi',
@@ -14241,7 +14241,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0594',
+  id: 'vg-n5-00594',
   word: '一月',
   reading: 'いちがつ',
   romaji: 'ichigatsu',
@@ -14265,7 +14265,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0595',
+  id: 'vg-n5-00595',
   word: '二月',
   reading: 'にがつ',
   romaji: 'nigatsu',
@@ -14289,7 +14289,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0596',
+  id: 'vg-n5-00596',
   word: '三月',
   reading: 'さんがつ',
   romaji: 'sangatsu',
@@ -14313,7 +14313,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0597',
+  id: 'vg-n5-00597',
   word: '四月',
   reading: 'しがつ',
   romaji: 'shigatsu',
@@ -14337,7 +14337,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0598',
+  id: 'vg-n5-00598',
   word: '五月',
   reading: 'ごがつ',
   romaji: 'gogatsu',
@@ -14361,7 +14361,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0599',
+  id: 'vg-n5-00599',
   word: '六月',
   reading: 'ろくがつ',
   romaji: 'rokugatsu',
@@ -14385,7 +14385,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0600',
+  id: 'vg-n5-00600',
   word: '七月',
   reading: 'しちがつ',
   romaji: 'shichigatsu',
@@ -14409,7 +14409,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0601',
+  id: 'vg-n5-00601',
   word: '八月',
   reading: 'はちがつ',
   romaji: 'hachigatsu',
@@ -14433,7 +14433,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0602',
+  id: 'vg-n5-00602',
   word: '九月',
   reading: 'くがつ',
   romaji: 'kugatsu',
@@ -14457,7 +14457,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0603',
+  id: 'vg-n5-00603',
   word: '十月',
   reading: 'じゅうがつ',
   romaji: 'juugatsu',
@@ -14481,7 +14481,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0604',
+  id: 'vg-n5-00604',
   word: '十一月',
   reading: 'じゅういちがつ',
   romaji: 'juuichigatsu',
@@ -14505,7 +14505,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0605',
+  id: 'vg-n5-00605',
   word: '十二月',
   reading: 'じゅうにがつ',
   romaji: 'juunigatsu',
@@ -14529,7 +14529,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0606',
+  id: 'vg-n5-00606',
   word: 'ひまな',
   reading: 'ひまな',
   romaji: 'himana',
@@ -14553,7 +14553,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0607',
+  id: 'vg-n5-00607',
   word: 'きらいな',
   reading: 'きらいな',
   romaji: 'kiraina',
@@ -14577,7 +14577,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0608',
+  id: 'vg-n5-00608',
   word: 'すきな',
   reading: 'すきな',
   romaji: 'sukina',
@@ -14601,7 +14601,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0609',
+  id: 'vg-n5-00609',
   word: 'つとめる',
   reading: 'つとめる',
   romaji: 'tsutomeru',
@@ -14612,7 +14612,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kehidupan-sehari', 'kerja'],
+  domain: ['kehidupan-sehari', 'pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '〜円 = suffix untuk harga/mata uang. 百円 = 100 yen.',
@@ -14625,7 +14625,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0610',
+  id: 'vg-n5-00610',
   word: 'はたらく',
   reading: 'はたらく',
   romaji: 'hataraku',
@@ -14636,7 +14636,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kehidupan-sehari', 'kerja'],
+  domain: ['kehidupan-sehari', 'pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '〜階 = suffix untuk lantai gedung. 何階 (nankai) = lantai berapa?',
@@ -14649,7 +14649,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0611',
+  id: 'vg-n5-00611',
   word: 'けっこんする',
   reading: 'けっこんする',
   romaji: 'kettkonsuru',
@@ -14660,7 +14660,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kehidupan-sehari', 'kerja'],
+  domain: ['kehidupan-sehari', 'pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '〜番 = nomor urut / giliran. 何番 (nanban) = nomor berapa? 1番 = nomor 1.',
@@ -14673,7 +14673,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0612',
+  id: 'vg-n5-00612',
   word: 'タバコをすう',
   reading: 'タバコをすう',
   romaji: 'タバコwosuu',
@@ -14684,7 +14684,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kehidupan-sehari', 'kerja'],
+  domain: ['kehidupan-sehari', 'pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -14697,7 +14697,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0613',
+  id: 'vg-n5-00613',
   word: 'ねる',
   reading: 'ねる',
   romaji: 'neru',
@@ -14708,7 +14708,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kehidupan-sehari', 'kerja'],
+  domain: ['kehidupan-sehari', 'pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -14721,7 +14721,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0614',
+  id: 'vg-n5-00614',
   word: 'おく',
   reading: 'おく',
   romaji: 'oku',
@@ -14732,7 +14732,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kehidupan-sehari', 'kerja'],
+  domain: ['kehidupan-sehari', 'pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -14745,7 +14745,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0615',
+  id: 'vg-n5-00615',
   word: 'シャワーをあびる',
   reading: 'シャワーをあびる',
   romaji: 'シャワ-woabiru',
@@ -14756,7 +14756,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kehidupan-sehari', 'kerja'],
+  domain: ['kehidupan-sehari', 'pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: 'シャワーをあびる: mandi shower. Pakai あびる (mandi kena air) bukan 入る.',
@@ -14769,7 +14769,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0616',
+  id: 'vg-n5-00616',
   word: 'あく',
   reading: 'あく',
   romaji: 'aku',
@@ -14780,7 +14780,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['rumah'],
+  domain: ['kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Lawan kata: しまる (close)',
@@ -14793,7 +14793,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0617',
+  id: 'vg-n5-00617',
   word: 'しまる',
   reading: 'しまる',
   romaji: 'shimaru',
@@ -14804,7 +14804,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['rumah'],
+  domain: ['kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: 'しまる (閉まる) = tertutup (intransitif). Beda: しめる = menutup (transitif).',
@@ -14817,7 +14817,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0618',
+  id: 'vg-n5-00618',
   word: 'いそぐ',
   reading: 'いそぐ',
   romaji: 'isogu',
@@ -14841,7 +14841,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0619',
+  id: 'vg-n5-00619',
   word: 'のどがかわく',
   reading: 'のどがかわく',
   romaji: 'nodogakawaku',
@@ -14852,7 +14852,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kesehatan', 'makanan'],
+  domain: ['kesehatan', 'makanan-minuman'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -14865,7 +14865,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0620',
+  id: 'vg-n5-00620',
   word: 'おなかがすく',
   reading: 'おなかがすく',
   romaji: 'onakagasuku',
@@ -14876,7 +14876,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kesehatan', 'makanan'],
+  domain: ['kesehatan', 'makanan-minuman'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -14889,7 +14889,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0621',
+  id: 'vg-n5-00621',
   word: 'たいてい',
   reading: 'たいてい',
   romaji: 'taitei',
@@ -14900,7 +14900,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['frekuensi'],
+  domain: ['waktu'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -14913,7 +14913,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0622',
+  id: 'vg-n5-00622',
   word: 'ときどき',
   reading: 'ときどき',
   romaji: 'tokidoki',
@@ -14924,7 +14924,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['frekuensi'],
+  domain: ['waktu'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -14937,7 +14937,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0623',
+  id: 'vg-n5-00623',
   word: 'あまり',
   reading: 'あまり',
   romaji: 'amari',
@@ -14948,7 +14948,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['frekuensi'],
+  domain: ['waktu'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -14961,7 +14961,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0624',
+  id: 'vg-n5-00624',
   word: 'ぜんぜん',
   reading: 'ぜんぜん',
   romaji: 'zenzen',
@@ -14972,7 +14972,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['frekuensi'],
+  domain: ['waktu'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -14985,7 +14985,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0625',
+  id: 'vg-n5-00625',
   word: 'よく',
   reading: 'よく',
   romaji: 'yoku',
@@ -14996,7 +14996,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['frekuensi'],
+  domain: ['waktu'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -15009,7 +15009,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0626',
+  id: 'vg-n5-00626',
   word: 'とても',
   reading: 'とても',
   romaji: 'totemo',
@@ -15020,7 +15020,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['deskripsi'],
+  domain: ['kualitas'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: 'とても = sangat (intensifier positif). Untuk negatif pakai あまり+ない.',
@@ -15033,7 +15033,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0627',
+  id: 'vg-n5-00627',
   word: 'だいたい',
   reading: 'だいたい',
   romaji: 'daitai',
@@ -15044,7 +15044,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['frekuensi'],
+  domain: ['waktu'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -15057,7 +15057,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0628',
+  id: 'vg-n5-00628',
   word: 'もっと',
   reading: 'もっと',
   romaji: 'mottto',
@@ -15068,7 +15068,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['deskripsi'],
+  domain: ['kualitas'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: 'もっと = lebih (komparatif). もっとゆっくり = lebih pelan. もっと食べる = makan lebih banyak.',
@@ -15081,7 +15081,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0629',
+  id: 'vg-n5-00629',
   word: 'もう～',
   reading: 'もう～',
   romaji: 'mou～',
@@ -15092,7 +15092,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['deskripsi'],
+  domain: ['kualitas'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -15105,7 +15105,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0630',
+  id: 'vg-n5-00630',
   word: 'ちょっと',
   reading: 'ちょっと',
   romaji: 'chottto',
@@ -15116,7 +15116,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['deskripsi'],
+  domain: ['kualitas'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -15129,7 +15129,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0631',
+  id: 'vg-n5-00631',
   word: 'そふ',
   reading: 'そふ',
   romaji: 'sofu',
@@ -15153,7 +15153,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0632',
+  id: 'vg-n5-00632',
   word: 'そぼ',
   reading: 'そぼ',
   romaji: 'sobo',
@@ -15177,7 +15177,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0633',
+  id: 'vg-n5-00633',
   word: 'りょうしん',
   reading: 'りょうしん',
   romaji: 'ryoushin',
@@ -15201,7 +15201,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0634',
+  id: 'vg-n5-00634',
   word: 'きょうだい',
   reading: 'きょうだい',
   romaji: 'kyoudai',
@@ -15225,7 +15225,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0635',
+  id: 'vg-n5-00635',
   word: 'おじ',
   reading: 'おじ',
   romaji: 'oji',
@@ -15249,7 +15249,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0636',
+  id: 'vg-n5-00636',
   word: 'おば',
   reading: 'おば',
   romaji: 'oba',
@@ -15273,7 +15273,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0637',
+  id: 'vg-n5-00637',
   word: 'むすこ',
   reading: 'むすこ',
   romaji: 'musuko',
@@ -15297,7 +15297,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0638',
+  id: 'vg-n5-00638',
   word: 'むすめ',
   reading: 'むすめ',
   romaji: 'musume',
@@ -15321,7 +15321,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0639',
+  id: 'vg-n5-00639',
   word: 'まご',
   reading: 'まご',
   romaji: 'mago',
@@ -15345,7 +15345,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0640',
+  id: 'vg-n5-00640',
   word: 'つま／かない',
   reading: 'つま/かない',
   romaji: 'tsuma/kanai',
@@ -15369,7 +15369,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0641',
+  id: 'vg-n5-00641',
   word: 'おっと／しゅじん',
   reading: 'おっと/しゅじん',
   romaji: 'ottto/shujin',
@@ -15393,7 +15393,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0642',
+  id: 'vg-n5-00642',
   word: 'おい',
   reading: 'おい',
   romaji: 'oi',
@@ -15417,7 +15417,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0643',
+  id: 'vg-n5-00643',
   word: 'めい',
   reading: 'めい',
   romaji: 'mei',
@@ -15441,7 +15441,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0644',
+  id: 'vg-n5-00644',
   word: 'いとこ',
   reading: 'いとこ',
   romaji: 'itoko',
@@ -15465,7 +15465,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0645',
+  id: 'vg-n5-00645',
   word: 'いろ',
   reading: 'いろ',
   romaji: 'iro',
@@ -15476,7 +15476,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['alam'],
+  domain: ['alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -15489,7 +15489,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0646',
+  id: 'vg-n5-00646',
   word: 'あか',
   reading: 'あか',
   romaji: 'aka',
@@ -15500,7 +15500,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['alam'],
+  domain: ['alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -15513,7 +15513,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0647',
+  id: 'vg-n5-00647',
   word: 'しろ',
   reading: 'しろ',
   romaji: 'shiro',
@@ -15524,7 +15524,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['alam'],
+  domain: ['alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -15537,7 +15537,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0648',
+  id: 'vg-n5-00648',
   word: 'あお',
   reading: 'あお',
   romaji: 'ao',
@@ -15548,7 +15548,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['alam'],
+  domain: ['alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -15561,7 +15561,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0649',
+  id: 'vg-n5-00649',
   word: 'きいろ',
   reading: 'きいろ',
   romaji: 'kiiro',
@@ -15572,7 +15572,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['alam'],
+  domain: ['alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -15585,7 +15585,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0650',
+  id: 'vg-n5-00650',
   word: 'くろ',
   reading: 'くろ',
   romaji: 'kuro',
@@ -15596,7 +15596,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['alam'],
+  domain: ['alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -15609,7 +15609,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0651',
+  id: 'vg-n5-00651',
   word: 'みどり',
   reading: 'みどり',
   romaji: 'midori',
@@ -15620,7 +15620,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['alam'],
+  domain: ['alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -15633,7 +15633,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0652',
+  id: 'vg-n5-00652',
   word: 'ちゃいろ',
   reading: 'ちゃいろ',
   romaji: 'chairo',
@@ -15644,7 +15644,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['alam'],
+  domain: ['alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -15657,7 +15657,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0653',
+  id: 'vg-n5-00653',
   word: 'ピンク',
   reading: 'ピンク',
   romaji: 'ピンク',
@@ -15668,7 +15668,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['alam'],
+  domain: ['alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -15681,7 +15681,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0654',
+  id: 'vg-n5-00654',
   word: 'ところ',
   reading: 'ところ',
   romaji: 'tokoro',
@@ -15705,7 +15705,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0655',
+  id: 'vg-n5-00655',
   word: 'どうぶつえん',
   reading: 'どうぶつえん',
   romaji: 'doubutsuen',
@@ -15729,7 +15729,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0656',
+  id: 'vg-n5-00656',
   word: 'ゆうえんち',
   reading: 'ゆうえんち',
   romaji: 'yuuenchi',
@@ -15753,7 +15753,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0657',
+  id: 'vg-n5-00657',
   word: 'やきゅう',
   reading: 'やきゅう',
   romaji: 'yakyuu',
@@ -15777,7 +15777,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0658',
+  id: 'vg-n5-00658',
   word: 'バスケットボール',
   reading: 'バスケットボール',
   romaji: 'バスケットボ-ル',
@@ -15801,7 +15801,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0659',
+  id: 'vg-n5-00659',
   word: 'すいえい',
   reading: 'すいえい',
   romaji: 'suiei',
@@ -15825,7 +15825,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0660',
+  id: 'vg-n5-00660',
   word: 'おんがく',
   reading: 'おんがく',
   romaji: 'ongaku',
@@ -15849,7 +15849,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0661',
+  id: 'vg-n5-00661',
   word: 'クラシック',
   reading: 'クラシック',
   romaji: 'クラシック',
@@ -15873,7 +15873,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0662',
+  id: 'vg-n5-00662',
   word: 'ジャズ',
   reading: 'ジャズ',
   romaji: 'ジャズ',
@@ -15897,7 +15897,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0663',
+  id: 'vg-n5-00663',
   word: 'ロック',
   reading: 'ロック',
   romaji: 'ロック',
@@ -15921,7 +15921,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0664',
+  id: 'vg-n5-00664',
   word: 'ポップス',
   reading: 'ポップス',
   romaji: 'ポップス',
@@ -15945,7 +15945,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0665',
+  id: 'vg-n5-00665',
   word: 'みかん',
   reading: 'みかん',
   romaji: 'mikan',
@@ -15956,7 +15956,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan', 'perjalanan', 'alam'],
+  domain: ['makanan-minuman', 'perjalanan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -15969,7 +15969,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0666',
+  id: 'vg-n5-00666',
   word: 'いちご',
   reading: 'いちご',
   romaji: 'ichigo',
@@ -15980,7 +15980,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan', 'perjalanan', 'alam'],
+  domain: ['makanan-minuman', 'perjalanan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -15993,7 +15993,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0667',
+  id: 'vg-n5-00667',
   word: 'ぶどう',
   reading: 'ぶどう',
   romaji: 'budou',
@@ -16004,7 +16004,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan', 'perjalanan', 'alam'],
+  domain: ['makanan-minuman', 'perjalanan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -16017,7 +16017,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0668',
+  id: 'vg-n5-00668',
   word: 'のりもの',
   reading: 'のりもの',
   romaji: 'norimono',
@@ -16028,7 +16028,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan', 'perjalanan', 'alam'],
+  domain: ['makanan-minuman', 'perjalanan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -16041,7 +16041,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0669',
+  id: 'vg-n5-00669',
   word: 'オートバイ',
   reading: 'オートバイ',
   romaji: 'オ-トバイ',
@@ -16052,7 +16052,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan', 'perjalanan', 'alam'],
+  domain: ['makanan-minuman', 'perjalanan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -16065,7 +16065,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0670',
+  id: 'vg-n5-00670',
   word: 'ふね',
   reading: 'ふね',
   romaji: 'fune',
@@ -16076,7 +16076,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan', 'perjalanan', 'alam'],
+  domain: ['makanan-minuman', 'perjalanan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '手紙 = surat (fisik). Berbeda: メール = email. 手紙を書く = menulis surat.',
@@ -16089,7 +16089,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0671',
+  id: 'vg-n5-00671',
   word: 'てんき',
   reading: 'てんき',
   romaji: 'tenki',
@@ -16100,7 +16100,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan', 'perjalanan', 'alam'],
+  domain: ['makanan-minuman', 'perjalanan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -16113,7 +16113,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0672',
+  id: 'vg-n5-00672',
   word: 'はれ',
   reading: 'はれ',
   romaji: 'hare',
@@ -16124,7 +16124,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan', 'perjalanan', 'alam'],
+  domain: ['makanan-minuman', 'perjalanan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '写真 = foto. 写真を撮る = mengambil foto. 写真家 = fotografer.',
@@ -16137,7 +16137,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0673',
+  id: 'vg-n5-00673',
   word: 'くもり',
   reading: 'くもり',
   romaji: 'kumori',
@@ -16148,7 +16148,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan', 'perjalanan', 'alam'],
+  domain: ['makanan-minuman', 'perjalanan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: '新幹線 = shinkansen (kereta cepat). Simbol teknologi Jepang.',
@@ -16161,7 +16161,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0674',
+  id: 'vg-n5-00674',
   word: 'ゆき',
   reading: 'ゆき',
   romaji: 'yuki',
@@ -16172,7 +16172,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan', 'perjalanan', 'alam'],
+  domain: ['makanan-minuman', 'perjalanan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -16185,7 +16185,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0675',
+  id: 'vg-n5-00675',
   word: 'たいふう',
   reading: 'たいふう',
   romaji: 'taifuu',
@@ -16196,7 +16196,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan', 'perjalanan', 'alam'],
+  domain: ['makanan-minuman', 'perjalanan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -16209,7 +16209,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0676',
+  id: 'vg-n5-00676',
   word: 'しょっき',
   reading: 'しょっき',
   romaji: 'shottki',
@@ -16220,7 +16220,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan', 'perjalanan', 'alam'],
+  domain: ['makanan-minuman', 'perjalanan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -16233,7 +16233,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0677',
+  id: 'vg-n5-00677',
   word: 'ちゃわん',
   reading: 'ちゃわん',
   romaji: 'chawan',
@@ -16244,7 +16244,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan', 'perjalanan', 'alam'],
+  domain: ['makanan-minuman', 'perjalanan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -16257,7 +16257,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0678',
+  id: 'vg-n5-00678',
   word: 'さら',
   reading: 'さら',
   romaji: 'sara',
@@ -16268,7 +16268,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan', 'perjalanan', 'alam'],
+  domain: ['makanan-minuman', 'perjalanan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -16281,7 +16281,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0679',
+  id: 'vg-n5-00679',
   word: 'はし',
   reading: 'はし',
   romaji: 'hashi',
@@ -16292,7 +16292,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan', 'perjalanan', 'alam'],
+  domain: ['makanan-minuman', 'perjalanan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -16305,7 +16305,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0680',
+  id: 'vg-n5-00680',
   word: 'カップ',
   reading: 'カップ',
   romaji: 'カップ',
@@ -16316,7 +16316,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan', 'perjalanan', 'alam'],
+  domain: ['makanan-minuman', 'perjalanan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -16329,7 +16329,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0681',
+  id: 'vg-n5-00681',
   word: 'コップ',
   reading: 'コップ',
   romaji: 'コップ',
@@ -16340,7 +16340,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['makanan', 'perjalanan', 'alam'],
+  domain: ['makanan-minuman', 'perjalanan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -16353,7 +16353,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0682',
+  id: 'vg-n5-00682',
   word: 'ベッド',
   reading: 'ベッド',
   romaji: 'ベッド',
@@ -16377,7 +16377,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0683',
+  id: 'vg-n5-00683',
   word: '本だな',
   reading: 'ほんだな',
   romaji: 'hondana',
@@ -16401,7 +16401,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0684',
+  id: 'vg-n5-00684',
   word: 'れいぞうこ',
   reading: 'れいぞうこ',
   romaji: 'reizouko',
@@ -16425,7 +16425,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0685',
+  id: 'vg-n5-00685',
   word: 'でんレンジ',
   reading: 'でんしレンジ',
   romaji: 'denshiレンジ',
@@ -16449,7 +16449,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0686',
+  id: 'vg-n5-00686',
   word: 'リモコン',
   reading: 'リモコン',
   romaji: 'リモコン',
@@ -16473,7 +16473,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0687',
+  id: 'vg-n5-00687',
   word: 'あたま',
   reading: 'あたま',
   romaji: 'atama',
@@ -16497,7 +16497,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0688',
+  id: 'vg-n5-00688',
   word: 'くび',
   reading: 'くび',
   romaji: 'kubi',
@@ -16521,7 +16521,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0689',
+  id: 'vg-n5-00689',
   word: 'からだ',
   reading: 'からだ',
   romaji: 'karada',
@@ -16545,7 +16545,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0690',
+  id: 'vg-n5-00690',
   word: 'て（手）',
   reading: 'て',
   romaji: 'te',
@@ -16569,7 +16569,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0691',
+  id: 'vg-n5-00691',
   word: 'あし（足）',
   reading: 'あし',
   romaji: 'ashi',
@@ -16593,7 +16593,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0692',
+  id: 'vg-n5-00692',
   word: 'め（目）',
   reading: 'め',
   romaji: 'me',
@@ -16617,7 +16617,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0693',
+  id: 'vg-n5-00693',
   word: 'みみ（耳）',
   reading: 'みみ',
   romaji: 'mimi',
@@ -16641,7 +16641,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0694',
+  id: 'vg-n5-00694',
   word: 'は',
   reading: 'は',
   romaji: 'ha',
@@ -16665,7 +16665,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0695',
+  id: 'vg-n5-00695',
   word: 'くち（口）',
   reading: 'くち',
   romaji: 'kuchi',
@@ -16689,7 +16689,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0696',
+  id: 'vg-n5-00696',
   word: 'ネクタイをする',
   reading: 'ネクタイをする',
   romaji: 'ネクタイwosuru',
@@ -16700,7 +16700,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['kehidupan-sehari', 'kerja'],
+  domain: ['kehidupan-sehari', 'pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: 'する dipakai untuk aksesori: ネクタイ・ベルト・めがねをする。',
@@ -16713,7 +16713,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0697',
+  id: 'vg-n5-00697',
   word: 'とけいをする',
   reading: 'とけいをする',
   romaji: 'tokeiwosuru',
@@ -16724,7 +16724,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['pakaian'],
+  domain: ['kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -16737,7 +16737,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0698',
+  id: 'vg-n5-00698',
   word: 'シャツをきる',
   reading: 'シャツをきる',
   romaji: 'シャツwokiru',
@@ -16748,7 +16748,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['pakaian'],
+  domain: ['kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: 'きる dipakai untuk pakaian atas (kemeja, jaket, mantel).',
@@ -16761,7 +16761,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0699',
+  id: 'vg-n5-00699',
   word: 'ベルトをする',
   reading: 'ベルトをする',
   romaji: 'ベルトwosuru',
@@ -16772,7 +16772,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['pakaian'],
+  domain: ['kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -16785,7 +16785,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0700',
+  id: 'vg-n5-00700',
   word: 'ポケット',
   reading: 'ポケット',
   romaji: 'ポケット',
@@ -16796,7 +16796,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['pakaian'],
+  domain: ['kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -16809,7 +16809,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0701',
+  id: 'vg-n5-00701',
   word: 'ズボンをはく',
   reading: 'ズボンをはく',
   romaji: 'ズボンwohaku',
@@ -16820,7 +16820,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['pakaian'],
+  domain: ['kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: 'はく dipakai untuk pakaian bawah (celana, rok) dan alas kaki.',
@@ -16833,7 +16833,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0702',
+  id: 'vg-n5-00702',
   word: 'ぼうしをかぶる',
   reading: 'ぼうしをかぶる',
   romaji: 'boushiwokaburu',
@@ -16844,7 +16844,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['pakaian'],
+  domain: ['kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: 'かぶる dipakai khusus untuk topi dan helm.',
@@ -16857,7 +16857,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0703',
+  id: 'vg-n5-00703',
   word: 'めがねをかける',
   reading: 'めがねをかける',
   romaji: 'meganewokakeru',
@@ -16868,7 +16868,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['pakaian'],
+  domain: ['kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: 'かける dipakai untuk kacamata. Berbeda nuansa: かける = menggantungkan di wajah.',
@@ -16881,7 +16881,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0704',
+  id: 'vg-n5-00704',
   word: 'スカーフをする',
   reading: 'スカーフをする',
   romaji: 'スカ-フwosuru',
@@ -16892,7 +16892,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['pakaian'],
+  domain: ['kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -16905,7 +16905,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0705',
+  id: 'vg-n5-00705',
   word: 'セーターをきる',
   reading: 'セーターをきる',
   romaji: 'セ-タ-wokiru',
@@ -16916,7 +16916,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['pakaian'],
+  domain: ['kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -16929,7 +16929,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0706',
+  id: 'vg-n5-00706',
   word: 'くつしたをはく',
   reading: 'くつしたをはく',
   romaji: 'kutsushitawohaku',
@@ -16940,7 +16940,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['pakaian'],
+  domain: ['kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -16953,7 +16953,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0707',
+  id: 'vg-n5-00707',
   word: 'くつをはく',
   reading: 'くつをはく',
   romaji: 'kutsuwohaku',
@@ -16964,7 +16964,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['pakaian'],
+  domain: ['kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -16977,7 +16977,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0708',
+  id: 'vg-n5-00708',
   word: '～つ',
   reading: '～つ',
   romaji: '～tsu',
@@ -16988,7 +16988,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['angka'],
+  domain: ['kuantitas'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -17001,7 +17001,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0709',
+  id: 'vg-n5-00709',
   word: '～枚',
   reading: '～まい',
   romaji: '～mai',
@@ -17012,7 +17012,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['angka'],
+  domain: ['kuantitas'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -17025,7 +17025,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0710',
+  id: 'vg-n5-00710',
   word: '～台',
   reading: '～だい',
   romaji: '～dai',
@@ -17036,7 +17036,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['angka'],
+  domain: ['kuantitas'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
@@ -17049,7 +17049,7 @@ window.vocabN5 = [
 },
 
 {
-  id: 'vg-n5-0711',
+  id: 'vg-n5-00711',
   word: '～冊',
   reading: '～さつ',
   romaji: '～satsu',
@@ -17060,7 +17060,7 @@ window.vocabN5 = [
   common: true,
   related_grammar: [],
   formalitas: 2,
-  domain: ['angka'],
+  domain: ['kuantitas'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
   nuance: null,

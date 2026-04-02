@@ -1030,80 +1030,61 @@
 </div>
 
 <!-- DATA (urutan penting!) -->
-<script src="./data/grammar/n3-w1.js"></script>
-<script src="./data/grammar/n3-w2.js"></script>
-<script src="./data/grammar/n3-w3.js"></script>
-<script src="./data/grammar/n3-w4.js"></script>
-<script src="./data/grammar/n3-w5.js"></script>
-<script src="./data/grammar/n3-w6.js"></script>
-<script src="./data/grammar/n4-w1.js"></script>
-<script src="./data/grammar/n4-w2.js"></script>
-<script src="./data/grammar/n4-w3.js"></script>
-<script src="./data/grammar/n4-w4.js"></script>
-<script src="./data/grammar/n4-w5.js"></script>
-<script src="./data/grammar/n4-w6.js"></script>
-<script src="./data/grammar/dummy.js"></script>
-<script src="./data/grammar/bank-soal.js"></script>
-<script src="./data/grammar/bank-soal-n4.js"></script>
-<script src="./data/grammar/bank-soal-quiz4.js"></script>
 <!-- ═══════════════════════════════════════════════════════
-     VOCAB DB — load order: N5 → N4 → N3 → N2 → N1 → index
-     Convention: vocab-{level}.js (unified per RESTRUKTURISASI-B v14.9.0)
-     Active = uncommented. Inactive = commented + reason.
+     ARCHITECTURE v3 — Data Loading Order
+     1. Vocab Global (N5→N1)
+     2. Grammar Global (N5→N1)
+     3. Book Vocab Lenses
+     4. Book Grammar Lenses
+     5. Sources + Indexes
      ═══════════════════════════════════════════════════════ -->
 
-<!-- N5 — 711 entries, aktif v14.9.0 -->
+<!-- ── VOCAB GLOBAL ──────────────────────────────────── -->
 <script src="./data/vocab/vocab-n5.js"></script>
-
-<!-- N4 — 692 entries, aktif v14.9.0 -->
 <script src="./data/vocab/vocab-n4.js"></script>
-
-<!-- N3 — aktifkan setelah entries cukup (>50) -->
-<script src="./data/vocab/vocab-n3.js"></script> <!-- ACTIVATED v14.27.7 -->
-
-<!-- N2 — aktifkan setelah entries cukup -->
+<script src="./data/vocab/vocab-n3.js"></script>
 <!-- <script src="./data/vocab/vocab-n2.js"></script> -->
-
-<!-- N1 — aktifkan setelah entries cukup -->
 <!-- <script src="./data/vocab/vocab-n1.js"></script> -->
 
-<!-- ═══════════════════════════════════════════════════════
-     GRAMMAR DB — load order: N5 → N4 → N3 → N2 → N1
-     Format baru per RESTRUKTURISASI-B. Belum ada engine.
-     Aktifkan setelah grammar-query engine siap.
-     ═══════════════════════════════════════════════════════ -->
+<!-- ── GRAMMAR GLOBAL ────────────────────────────────── -->
+<script src="./data/grammar/grammar-n5.js"></script>
+<script src="./data/grammar/grammar-n4.js"></script>
+<script src="./data/grammar/grammar-n3.js"></script>
+<!-- <script src="./data/grammar/grammar-n2.js"></script> -->
+<!-- <script src="./data/grammar/grammar-n1.js"></script> -->
 
-<!-- <script src="./data/grammar/grammar-n5.js"></script> --> <!-- 80 entries — tunggu engine -->
-<!-- <script src="./data/grammar/grammar-n4.js"></script> --> <!-- 90 entries — tunggu engine -->
-<!-- <script src="./data/grammar/grammar-n3.js"></script> --> <!-- 103 entries — tunggu engine -->
-<!-- <script src="./data/grammar/grammar-n2.js"></script> --> <!-- placeholder -->
-<!-- <script src="./data/grammar/grammar-n1.js"></script> --> <!-- placeholder -->
-
-<!-- ═══════════════════════════════════════════════════════
-     BOOK INDEX — referensi chapter→vocab_ids (bukan entries)
-     Load SETELAH semua vocab-nX-*.js, SEBELUM vocab-index.js
-     ═══════════════════════════════════════════════════════ -->
-<script src="./data/books/book-minna-1.js"></script>
-<script src="./data/books/book-minna-2.js"></script>
+<!-- ── BOOK VOCAB LENSES ─────────────────────────────── -->
 <script src="./data/books/book-irodori-a1.js"></script>
 <script src="./data/books/book-irodori-a2-1.js"></script>
 <script src="./data/books/book-irodori-a2-2.js"></script>
-  <script src="./data/books/sources.js"></script>
+<script src="./data/books/book-minna-1.js"></script>
+<script src="./data/books/book-minna-2.js"></script>
 
+<!-- ── BOOK GRAMMAR LENSES ───────────────────────────── -->
+<script src="./data/books/soumatome/grammar-lens-sm-n3.js"></script>
+<script src="./data/books/soumatome/grammar-lens-sm-n4.js"></script>
+
+<!-- ── SOURCES + INDEXES ─────────────────────────────── -->
+<script src="./data/books/sources.js"></script>
 <script src="./data/vocab/vocab-index.js"></script>
-<script src="./data/grammar/index.js"></script>
+<script src="./data/grammar/grammar-index.js"></script>
+<script src="./data/tracks/tracks.js"></script>
 
 <!-- JS: core (load first, in order) -->
 <script src="./js/core/version.js"></script>
-<script src="./js/error-boundary.js"></script><!-- TASK-INT-1: posisi ke-2, tangkap error dari semua file berikutnya -->
+<script src="./js/error-boundary.js"></script>
 <script src="./js/core/state.js"></script>
 <script src="./js/core/router.js"></script>
 <script src="./js/core/theme.js"></script>
 <script src="./js/core/install.js"></script>
-<script src="./js/core/grammar-query.js"></script>
+
+<!-- JS: FSRS engine (replaces srs.js) -->
+<script src="https://cdn.jsdelivr.net/npm/ts-fsrs@latest/dist/index.umd.js"></script>
+<script src="./js/fsrs-engine.js"></script>
+<script src="./js/gamification.js"></script>
+<script src="./js/backup-restore.js"></script>
+
 <!-- JS: features -->
-<script src="./js/srs.js"></script>
-<script src="./js/streak.js"></script>
 <script src="./js/swipe.js"></script>
 <script src="./js/browse.js"></script>
 <script src="./js/conjugation-engine.js"></script>
@@ -1119,6 +1100,7 @@
 <script src="./js/detail.js"></script>
 <!-- JS: orchestrator — always last -->
 <script src="./js/quiz-generator.js"></script>
+<script src="./js/quiz-engine-v2.js"></script>
 <script src="./js/quiz-vocab.js"></script>
 <script src="./js/quiz-mixed.js"></script>
 <script src="./js/daily-word.js"></script>

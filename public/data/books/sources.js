@@ -6,6 +6,9 @@
 
 window.nuggetSources = {
 
+  // Architecture v3: book display order in UI
+  display_order: ['irodori', 'soumatome', 'minna'],
+
   books: [
     {
       id          : 'irodori',

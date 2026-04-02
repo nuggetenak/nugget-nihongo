@@ -115,7 +115,7 @@ function _makeGrammarFlashcard(c) {
   return {
     type: 'flashcard_grammar',
     id: c.id,
-    front: c.grammar,
+    front: c.pattern || c.grammar,
     front_sub: c.reading,
     back: c.meaning,
     desc: c.desc,
@@ -169,9 +169,9 @@ function _makeMultichoiceGrammar(c, allPool) {
   return {
     type: 'multichoice_grammar',
     id: c.id,
-    prompt: c.grammar,
+    prompt: c.pattern || c.grammar,
     prompt_sub: c.reading,
-    question: `Apa arti dari pola "${c.grammar}"?`,
+    question: `Apa arti dari pola "${c.pattern || c.grammar}"?`,
     choices,
     answer: c.meaning,
     level: c.level,
@@ -216,7 +216,7 @@ function _makeFillWord(v) {
 function _makeFillGrammar(c) {
   const ex = c.examples[0];
   // Cari pola grammar dalam kalimat (remove 〜 markers)
-  const patternCore = c.grammar.replace(/[〜～＋\s]/g, '');
+  const patternCore = (c.pattern || c.grammar || '').replace(/[〜～＋\s]/g, '');
   let jp = ex.jp;
 
   // Coba extract dari bold tags
@@ -234,7 +234,7 @@ function _makeFillGrammar(c) {
     context_id: ex.id,
     answer: blankTarget || patternCore,
     meaning: c.meaning,
-    grammar: c.grammar,
+    grammar: c.pattern || c.grammar,
     level: c.level,
     source: 'grammar',
     entry: c,

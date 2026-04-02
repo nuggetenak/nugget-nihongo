@@ -7,35 +7,25 @@ let activeLevel = 'all', activeWeek = null, activeCat = 'all';
 let searchText = '', sortBy = 'level', bookmarkMode = false;
 
 const catLabel = {
-  'adverbia':'Adverbia', 'aspek':'Aspek', 'aspek-kerja':'Aspek-kerja',
-  'batas-waktu':'Batas-waktu', 'bersamaan':'Bersamaan', 'cara':'Cara',
-  'definisi':'Definisi', 'demonstrativa':'Demonstrativa', 'derajat':'Derajat',
-  'dugaan':'Dugaan', 'ekspektasi':'Ekspektasi', 'ekspresi':'Ekspresi',
-  'enumerasi':'Enumerasi', 'formal':'Formal', 'frekuensi':'Frekuensi',
-  'hampir':'Hampir', 'harapan':'Harapan', 'inferensi':'Inferensi',
-  'izin':'Izin', 'kabar':'Kabar', 'kasual':'Kasual',
-  'kata-benda-kualitas':'Kata-benda-kualitas', 'kausatif':'Kausatif',
-  'kausatif-pasif':'Kausatif-pasif', 'keadaan':'Keadaan',
-  'keadaan-hasil':'Keadaan-hasil', 'kebiasaan':'Kebiasaan',
-  'keharusan':'Keharusan', 'kehendak':'Kehendak', 'keinginan':'Keinginan',
-  'kemudahan':'Kemudahan', 'kemungkinan':'Kemungkinan', 'kenangan':'Kenangan',
-  'keputusan':'Keputusan', 'kesempatan':'Kesempatan', 'kewajiban':'Kewajiban',
-  'kondisional':'Kondisional', 'konfirmasi':'Konfirmasi', 'konjungsi':'Konjungsi',
-  'konsesi':'Konsesi', 'kontras':'Kontras', 'kutipan':'Kutipan',
-  'larangan':'Larangan', 'logika':'Logika', 'materi':'Materi',
-  'memberi-menerima':'Memberi-menerima', 'niat':'Niat', 'nominalisasi':'Nominalisasi',
-  'partikel':'Partikel', 'partikel-akhir':'Partikel-akhir', 'pasif':'Pasif',
-  'pembatasan':'Pembatasan', 'penekanan':'Penekanan', 'penemuan':'Penemuan',
-  'pengalaman':'Pengalaman', 'penggantian':'Penggantian', 'pengulangan':'Pengulangan',
-  'penjelasan':'Penjelasan', 'penyangkalan':'Penyangkalan', 'penyesalan':'Penyesalan',
-  'peran':'Peran', 'perbandingan':'Perbandingan', 'perintah':'Perintah',
-  'peristiwa':'Peristiwa', 'permintaan':'Permintaan', 'permintaan-sopan':'Permintaan-sopan',
-  'persepsi':'Persepsi', 'persiapan':'Persiapan', 'perspektif':'Perspektif',
-  'perubahan':'Perubahan', 'perumpamaan':'Perumpamaan', 'potensi':'Potensi',
-  'referensi':'Referensi', 'rentang':'Rentang', 'saran':'Saran',
-  'sebab':'Sebab', 'sebab-akibat':'Sebab-akibat', 'te-bentuk':'Te-bentuk',
-  'transitif-intransitif':'Transitif-intransitif', 'tujuan':'Tujuan',
-  'usaha':'Usaha', 'waktu':'Waktu'
+  // Architecture v3 — Taxonomy v2 L1 canonical cat labels
+  'copula':'Kopula', 'existence':'Eksistensi', 'predicate-adjective':'Predikat Adjektif',
+  'te-form-use':'Bentuk Te', 'negative':'Negatif', 'past-tense':'Bentuk Lampau',
+  'progressive-state':'Progresif/Keadaan', 'potential':'Potensial',
+  'passive':'Pasif', 'causative':'Kausatif', 'volitional-intention':'Volisional/Niat',
+  'permission-prohibition':'Izin/Larangan', 'obligation-necessity':'Keharusan',
+  'desire-want':'Keinginan', 'conjecture-possibility':'Dugaan/Kemungkinan',
+  'hearsay-report':'Kabar/Laporan',
+  'conditional-to':'Kondisional (と)', 'conditional-ba':'Kondisional (ば)',
+  'conditional-tara':'Kondisional (たら)', 'conditional-nara':'Kondisional (なら)',
+  'reason-cause':'Sebab/Akibat', 'contrast-concession':'Kontras/Konsesi',
+  'purpose':'Tujuan', 'sequential-temporal':'Urutan/Waktu', 'listing-addition':'Daftar/Tambahan',
+  'limitation-only':'Pembatasan', 'extent-degree':'Tingkat/Derajat', 'comparison':'Perbandingan',
+  'nominalization':'Nominalisasi', 'quotation-thought':'Kutipan/Pikiran',
+  'relative-clause':'Klausa Relatif',
+  'completion-regret':'Penyelesaian/Penyesalan', 'inception-continuation':'Awal/Kelanjutan',
+  'directional-aspect':'Aspek Arah',
+  'sonkeigo-pattern':'Sonkeigo', 'kenjougo-pattern':'Kenjougo', 'teineigo-pattern':'Teineigo',
+  'sentence-final-modality':'Modalitas Akhir', 'sentence-final-request':'Permintaan/Perintah',
 };
 const levelOrder = ['n1','n2','n3','n4','n5'];
 const progressEmoji = { know:'✅', unsure:'😅', forgot:'❌' };
@@ -262,22 +252,25 @@ function render() {
 
   // Group & render
   if (activeLevel !== 'all') {
-    const weeks = [...new Set(filtered.map(d => d.week))].sort((a,b) => a-b);
-    weeks.forEach(wk => {
-      const items = filtered.filter(d => d.week === wk);
-      if (!items.length) return;
-      const meta = window.levelMeta[activeLevel];
-      const wkInfo = meta && meta.weeks && meta.weeks.find(w => w.w === wk);
-      const theme = wkInfo ? ` · ${wkInfo.theme}` : '';
+    // Architecture v3: global grammar has no week field — group by cat
+    const hasWeeks = filtered.some(d => d.week);
+    if (hasWeeks) {
+      // Legacy week-based grouping (book lens view)
+      const weeks = [...new Set(filtered.map(d => d.week))].sort((a,b) => a-b);
+      weeks.forEach(wk => {
+        const items = filtered.filter(d => d.week === wk);
+        if (!items.length) return;
+        const meta = window.levelMeta[activeLevel];
+        const wkInfo = meta && meta.weeks && meta.weeks.find(w => w.w === wk);
+        const theme = wkInfo ? ` · ${wkInfo.theme}` : '';
 
-      // Week header
-      const wkSec = document.createElement('div');
-      wkSec.className = 'section week-section';
-      wkSec.innerHTML = `
-        <div class="section-header ${activeLevel}">
-          <div class="section-title">${activeLevel.toUpperCase()} 第${wk}週${theme}</div>
-          <div class="section-count">${items.length}</div>
-        </div>`;
+        const wkSec = document.createElement('div');
+        wkSec.className = 'section week-section';
+        wkSec.innerHTML = `
+          <div class="section-header ${activeLevel}">
+            <div class="section-title">${activeLevel.toUpperCase()} 第${wk}週${theme}</div>
+            <div class="section-count">${items.length}</div>
+          </div>`;
       main.appendChild(wkSec);
 
       // Sub-group by day
@@ -297,6 +290,16 @@ function render() {
         renderSection(main, activeLevel, items, `${days[0] ? days[0]+'日目' : ''}`, items.length, true);
       }
     });
+    } else {
+      // Architecture v3: cat-based grouping for global grammar data
+      filtered.sort((a,b) => (a.cat || '').localeCompare(b.cat || ''));
+      const cats = [...new Set(filtered.map(d => d.cat))].sort();
+      cats.forEach(cat => {
+        const items = filtered.filter(d => d.cat === cat);
+        if (!items.length) return;
+        renderSection(main, activeLevel, items, catLabel[cat] || cat, items.length);
+      });
+    }
   } else if (sortBy === 'cat') {
     const cats = [...new Set(filtered.map(d => d.cat))].sort();
     cats.forEach(cat => {
