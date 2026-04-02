@@ -11,8 +11,8 @@
   'use strict';
 
   // ── CONFIG (replace these) ───────────────────────────
-  var SUPABASE_URL  = 'https://YOUR_PROJECT.supabase.co';
-  var SUPABASE_ANON_KEY = 'YOUR_ANON_KEY_HERE';
+  var SUPABASE_URL  = 'https://oxeuwkpgrtojjzhcboqz.supabase.co';
+  var SUPABASE_ANON_KEY = 'YOUR_ANON_KEY_HERE'; // TODO: paste anon key from Supabase Dashboard > Settings > API
 
   // ── INIT ─────────────────────────────────────────────
   if (typeof window.supabase === 'undefined') {
