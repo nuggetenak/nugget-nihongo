@@ -30,16 +30,18 @@
 - 4 N3 + 4 N4 entries have `global_grammar_id: null` (need global DB population)
 - Migration script: `tools/migrate-soumatome-lens.py`
 
-### Vocab Book Lenses — STRUCTURE DONE, DATA EMPTY ⚠️
-- `books/irodori/vocab-lens-ir-a1.js` — shell only, 0 actual vocab refs
-- `books/irodori/vocab-lens-ir-a2-1.js` — shell only
-- `books/irodori/vocab-lens-ir-a2-2.js` — shell only
-- `books/minna/vocab-lens-mn-1.js` — shell only
-- `books/minna/vocab-lens-mn-2.js` — shell only
+### Vocab Book Lenses — REMOVED (were just duplicates of old files) ⚠️
+- The v15.3.0 "lens" files were identical copies of old book-*.js files, not actual Architecture v3 lenses
+- Removed in v15.3.2 to avoid confusion
+- Proper vocab lenses need: word→new ID mapping (old IDs like `v-n5-s0001` → new `vg-n5-00001`)
+- Old book files (`book-irodori-a1.js` etc.) still loaded in index.html and working
 
-### Study Tracks — STRUCTURE DONE, ITEMS EMPTY ⚠️
-- `tracks/tracks.js`: Track definitions created (Freeway, JLPT N5-N1, per-book)
-- All `items: []` arrays are TODO — no content curated yet
+### Study Tracks — FUNCTIONAL ✅ (v15.3.2)
+- `tracks/tracks.js`: Rewritten with runtime population
+- JLPT tracks (N5-N1): auto-populated from grammarDB + vocabDB at runtime via `dynamic: true`
+- Soumatome N3/N4 tracks: auto-populated from lens files via `dynamic_lens: true`
+- Freeway track: 21 hand-curated survival grammar patterns (all IDs verified)
+- Irodori/Minna book tracks: still empty (needs vocab lens migration first)
 
 ### New JS Modules — DONE ✅
 - `fsrs-engine.js` — FSRS spaced repetition (loads ts-fsrs from CDN)
@@ -80,15 +82,17 @@ The following files were removed (not loaded in index.html, data migrated to len
 - Old w-files removed from repo
 
 **Phase 4 — Vocab Book Lens Population**
-- Irodori and Minna lens files are empty shells
-- Need to map vocab from global DB to book chapters/units
-- Old `book-irodori-*.js` and `book-minna-*.js` have unit→vocab mappings to migrate
+**Phase 4 — Vocab Book Lens Migration — BLOCKED ⚠️**
+- Old book files use old IDs (`v-n5-s0001`, `v-n5-0092`) that don't exist in new vocab DB
+- Need to build word→new_id mapping table first (match by kanji/reading)
+- Then create proper Architecture v3 vocab lens files
+- Old `book-irodori-*.js` and `book-minna-*.js` still work as-is in the meantime
 
-**Phase 5 — Track Curation**
-- All `items: []` in tracks.js need to be populated
-- Freeway track: survival-first ordering of N5 grammar + vocab
-- JLPT tracks: ordered by level
-- Book tracks: follow book chapter order
+**Phase 5 — Track Curation — MOSTLY DONE ✅ (v15.3.2)**
+- JLPT tracks: auto-populated at runtime ✅
+- Soumatome N3/N4 tracks: auto-populated from lens ✅
+- Freeway: 21 curated grammar patterns ✅
+- Irodori/Minna book tracks: blocked on Phase 4
 
 **Phase 6 — UI Integration**
 - Browse pages need to use grammar-index.js query API
@@ -98,7 +102,6 @@ The following files were removed (not loaded in index.html, data migrated to len
 
 **Phase 7 — Validation & Cleanup**
 - Spicy validation scripts for 5-digit IDs, `cat` values, lens integrity
-- Remove orphan files
 - SW cache update
 
 ---
@@ -110,12 +113,13 @@ cd nugget-nihongo
 cat RESUME-v15.3.0.md    # this file
 ```
 
-**Recommended next action:** Phase 4 (populate vocab book lenses from old book-*.js files). Same pattern as Phase 3 — the data exists in the old files, just needs migration into the new lens format. After that, Phase 5 (track curation) and Phase 6 (UI) can proceed.
+**Recommended next action:** Phase 4 — build a word/reading mapping from old vocab IDs to new 5-digit IDs, then create proper vocab lens files for Irodori and Minna. Alternatively, skip to Phase 6 (UI) since JLPT tracks and Soumatome tracks are already functional.
 
 ---
 
 ## VERSION STATE
-- GitHub: `main` branch, v15.3.1
-- v15.3.0 commit: `b815745` (Architecture v3 + FSRS + Quiz Engine v2 + Gamification)
-- v15.3.1 commit: Soumatome lens migration + orphan cleanup (18 files removed, 2 modified)
-- `version.js` = v15.3.1, `sw.js` reads from `window.APP_VERSION`
+- GitHub: `main` branch, v15.3.2
+- v15.3.0: Architecture v3 + FSRS + Quiz Engine v2 + Gamification
+- v15.3.1: Soumatome lens migration + orphan cleanup (18 files removed)
+- v15.3.2: Tracks runtime population + Freeway curation + duplicate lens cleanup
+- `version.js` = v15.3.2, `sw.js` reads from `window.APP_VERSION`

@@ -1,5 +1,12 @@
 # Changelog — Nugget Nihongo
 
+## v15.3.2 (2 April 2026) — Study Tracks + Cleanup
+- **Tracks**: Runtime auto-population for JLPT tracks (N5-N1) from global DB
+- **Tracks**: Runtime auto-population for Soumatome N3/N4 tracks from lens files
+- **Tracks**: Freeway track curated with 21 survival grammar patterns (hand-verified)
+- **Cleanup**: Removed 5 duplicate vocab lens files (were identical copies of old book files)
+- **Docs**: RESUME updated with accurate phase status
+
 ## v15.3.1 (2 April 2026) — Soumatome Lens Migration + Cleanup
 - **Migration**: Soumatome N3 grammar lens — 132/132 entries populated (desc, examples, connection from old w-files)
 - **Migration**: Soumatome N4 grammar lens — 102/102 entries populated
