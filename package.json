@@ -10,7 +10,14 @@
     "url": "https://github.com/nugget-nihongo/nugget-nihongo.git"
   },
   "homepage": "https://nugget-nihongo.github.io/nugget-nihongo/",
-  "keywords": ["jlpt", "japanese", "language-learning", "pwa", "offline-first", "vanilla-js"],
+  "keywords": [
+    "jlpt",
+    "japanese",
+    "language-learning",
+    "pwa",
+    "offline-first",
+    "vanilla-js"
+  ],
   "engines": {
     "node": ">=22"
   },
