@@ -32,3 +32,5 @@ Thumbbs.db
 *.bak
 /tmp/
 pk-nugget-nihongo/
+
+/generated/prisma
