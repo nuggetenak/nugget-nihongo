@@ -1,5 +1,12 @@
 # Changelog — Nugget Nihongo
 
+## v15.4.0 (2 April 2026) — JMdict Pipeline + Supabase + Claude Code Handoff
+- **Pipeline**: `tools/jmdict-pipeline.py` — downloads JMdict XML, transforms to Nugget Nihongo format
+- **Supabase**: `supabase/schema.sql` — 7 tables with RLS (profiles, srs_cards, course_progress, achievements, review_history, error_reports, user_settings)
+- **Supabase**: `public/js/supabase-client.js` — client integration (auth, SRS sync, progress, error reports)
+- **Docs**: `CLAUDE.md` — Claude Code handoff note with full project context and task list
+- **Docs**: `PROJECT-STATUS-v15.3.2.md` — comprehensive project inventory
+
 ## v15.3.2 (2 April 2026) — Study Tracks + Cleanup
 - **Tracks**: Runtime auto-population for JLPT tracks (N5-N1) from global DB
 - **Tracks**: Runtime auto-population for Soumatome N3/N4 tracks from lens files
