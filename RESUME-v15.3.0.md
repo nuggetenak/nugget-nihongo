@@ -24,11 +24,11 @@
 - `grammar-index.js`: Merges all grammar-n*.js into `window.grammarDB` + query API
 - Backwards-compat: `window.grammarData`, `window.levelMeta` preserved
 
-### Soumatome Grammar Lenses — STRUCTURE DONE, DATA SPARSE ⚠️
-- `grammar-lens-sm-n3.js`: 132 lens entries (128 matched to global, 4 unmatched)
-- `grammar-lens-sm-n4.js`: exists, structure created
-- Both have `week`, `day`, `seq` structure but `desc`, `examples`, `raw` fields are EMPTY
-- Lens entries point to global IDs via `global_grammar_id`
+### Soumatome Grammar Lenses — FULLY POPULATED ✅ (migrated v15.3.1)
+- `grammar-lens-sm-n3.js`: 132/132 entries migrated (desc, examples, connection from old w-files)
+- `grammar-lens-sm-n4.js`: 102/102 entries migrated
+- 4 N3 + 4 N4 entries have `global_grammar_id: null` (need global DB population)
+- Migration script: `tools/migrate-soumatome-lens.py`
 
 ### Vocab Book Lenses — STRUCTURE DONE, DATA EMPTY ⚠️
 - `books/irodori/vocab-lens-ir-a1.js` — shell only, 0 actual vocab refs
@@ -60,24 +60,24 @@
 - It existed only in the Claude session's filesystem — now lost
 - Will need to be recreated from Architecture v3 spec
 
-### Cleanup — Orphan Files Still on Disk
-These files are NO LONGER loaded in index.html but still exist on disk:
-- `public/data/grammar/n3-w1.js` through `n3-w6.js` (old Soumatome weekly format)
-- `public/data/grammar/n4-w1.js` through `n4-w6.js` (old Soumatome weekly format)
-- `public/data/books/book-irodori-a1.js` through `book-irodori-a2-2.js` (old format)
-- `public/data/books/book-minna-1.js`, `book-minna-2.js` (old format)
-- `public/data/grammar/bank-soal.js`, `bank-soal-n4.js`, `bank-soal-quiz4.js` (old quiz banks)
+### Cleanup — Orphan Files ✅ REMOVED (v15.3.1)
+The following files were removed (not loaded in index.html, data migrated to lenses):
+- `public/data/grammar/n3-w1.js` through `n3-w6.js` → migrated into grammar-lens-sm-n3.js
+- `public/data/grammar/n4-w1.js` through `n4-w6.js` → migrated into grammar-lens-sm-n4.js
+- `public/data/grammar/bank-soal.js`, `bank-soal-n4.js`, `bank-soal-quiz4.js` (old quiz banks, will rebuild)
 - `public/data/grammar/dummy.js`, `index.js` (replaced by grammar-index.js)
 - `public/data/qa-tests.js`
 
-**Action needed:** These should be archived or deleted. The old `book-irodori-*.js` and `book-minna-*.js` files are ALSO still loaded via index.html (the old format alongside the new lens format). The old format loads the unit-index structure; the new lens files are the Architecture v3 format. Decision needed: keep old or migrate data into new lenses and remove.
+**Still on disk and STILL LOADED in index.html (DO NOT remove yet):**
+- `public/data/books/book-irodori-a1.js` through `book-irodori-a2-2.js` (old unit-index format)
+- `public/data/books/book-minna-1.js`, `book-minna-2.js` (old unit-index format)
+- These contain unit→vocab mappings the app still uses. Remove AFTER vocab lenses are populated and UI updated.
 
 ### Remaining Architecture v3 Phases
 
-**Phase 3 — Soumatome Lens Population**
-- Grammar lenses have structure but `desc`, `examples`, `raw` are empty
-- Need to pull content from old w-files (n3-w1→w6, n4-w1→w6) into the lens entries
-- The old w-files have the actual Soumatome content — it's a migration, not creation
+**Phase 3 — Soumatome Lens Population — DONE ✅ (v15.3.1)**
+- All 132 N3 + 102 N4 entries migrated with desc, examples, connection
+- Old w-files removed from repo
 
 **Phase 4 — Vocab Book Lens Population**
 - Irodori and Minna lens files are empty shells
@@ -110,11 +110,12 @@ cd nugget-nihongo
 cat RESUME-v15.3.0.md    # this file
 ```
 
-**Recommended next action:** Phase 3 (migrate Soumatome content from old w-files into lens format). The old w-files have all the data — it's a scripted migration, not content creation. This unblocks Phase 4 and makes the book lens system actually functional.
+**Recommended next action:** Phase 4 (populate vocab book lenses from old book-*.js files). Same pattern as Phase 3 — the data exists in the old files, just needs migration into the new lens format. After that, Phase 5 (track curation) and Phase 6 (UI) can proceed.
 
 ---
 
 ## VERSION STATE
-- GitHub: `main` branch, commit `b815745`, v15.3.0
-- 27 files changed in last commit (+11,258 / -3,540 lines)
-- `version.js` = v15.3.0, `sw.js` reads from `window.APP_VERSION`
+- GitHub: `main` branch, v15.3.1
+- v15.3.0 commit: `b815745` (Architecture v3 + FSRS + Quiz Engine v2 + Gamification)
+- v15.3.1 commit: Soumatome lens migration + orphan cleanup (18 files removed, 2 modified)
+- `version.js` = v15.3.1, `sw.js` reads from `window.APP_VERSION`

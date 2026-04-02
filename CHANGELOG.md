@@ -1,5 +1,23 @@
 # Changelog — Nugget Nihongo
 
+## v15.3.1 (2 April 2026) — Soumatome Lens Migration + Cleanup
+- **Migration**: Soumatome N3 grammar lens — 132/132 entries populated (desc, examples, connection from old w-files)
+- **Migration**: Soumatome N4 grammar lens — 102/102 entries populated
+- **Cleanup**: Removed 18 orphan files (old w-files, bank-soal, dummy.js, index.js, qa-tests.js)
+- **Tool**: `tools/migrate-soumatome-lens.py` migration script added
+- **Docs**: RESUME-v15.3.0.md added for session continuity
+
+## v15.3.0 (2 April 2026) — Architecture v3 + FSRS + Quiz Engine v2 + Gamification
+- **Architecture**: Data Architecture v3 — one global DB, book lenses, study tracks
+- **Migration**: All IDs migrated to 5-digit format (grammar + vocab)
+- **New**: grammar-index.js (merged grammar query API)
+- **New**: Soumatome grammar lens structures (N3 + N4)
+- **New**: Vocab book lens shells (Irodori A1/A2-1/A2-2, Minna 1/2)
+- **New**: tracks.js study track definitions
+- **New**: fsrs-engine.js, quiz-engine-v2.js, gamification.js, backup-restore.js
+- **New**: `_taxonomy.md` (Taxonomy Master document)
+- **Updated**: `_schema.md` rewritten for Architecture v3
+
 ## v15.0.0 (1 April 2026) — Project Restructure
 **BREAKING: All app file paths changed. SW cache busted.**
 
