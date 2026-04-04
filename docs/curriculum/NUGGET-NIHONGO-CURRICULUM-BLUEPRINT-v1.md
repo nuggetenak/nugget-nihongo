@@ -241,7 +241,7 @@ Promotion is a suggestion, not a lock. The learner can always access content fro
 
 | Metric | Value | Assessment |
 |---|---|---|
-| Total unique citations | ~878–886 (after dedup estimates) | Strong |
+| Total unique citations | 736 (verified, deduplicated) | Strong |
 | Sections complete | 21 of 21 | Complete |
 | RED flags (blocking) | 6 | Must resolve before methodology page |
 | YELLOW flags (cite with caution) | 10 | Verify before publication |
@@ -260,7 +260,7 @@ Promotion is a suggestion, not a lock. The learner can always access content fro
 | ER-10/OT-25-30 | Webb (2007) duplicate across §4 and §12.5 | **KEEP OT-25 as canonical.** Cross-ref from §4. |
 | AL-07/ID-xx | Bandura (1997) duplicate across §17 and §13 | **KEEP §13 ID cluster entry as canonical.** All Bandura (1997) references in §17 point to the §13 entry. |
 
-**Post-resolution citation count estimate: ~878.**
+**Post-resolution citation count: 736 verified unique works.**
 
 ## 3.3 — YELLOW Flag Dispositions
 
@@ -539,16 +539,16 @@ Drawn from Agent 2's Section C caveats, these are the exact wordings to use on t
 
 # APPENDIX B — BIBLIOGRAPHY STATUS
 
-**Compiled entries:** 813 (MASTER-BIBLIOGRAPHY-v3.md) ✅ COMPLETE
-- 731 full APA entries
-- 82 partial (author-year only — inline prose references)
+**Compiled entries:** 736 (MASTER-BIBLIOGRAPHY-FINAL.md) ✅ COMPLETE — ZERO STUBS
+- 736 full APA 7th Edition entries
+- 325 with DOIs (44%), ~120 books with ISBNs
+- 56 DOI verifications still pending on journal articles
+- 73 cross-section duplicates identified and removed (from 808 pre-dedup)
+- 0 stubs remaining
 
-**Extraction sources:** All 21 corpus section files, compass artifact, 7 returned agent bibliographies, §8/§5/§CA prose extraction.
-**Known duplicates resolved:** 6 (3 RED consolidated, 3 cross-section deduped)
-**DOI unverified:** ~35 entries tagged [DOI UNVERIFIED]
-**Remaining stubs:** 82 entries are author-year only (inline prose citations without formal APA blocks in the source files). These can be filled via DOI lookup in a future session.
+**Extraction sources:** All 21 corpus section files, compass artifact, 7 returned agent bibliographies, §8/§5/§CA prose extraction, §8-v3 full recovery (was truncated in corpus v14).
 
-**Note on count discrepancy:** The corpus README estimated ~890 citations. The verified unique count is 813. The difference is cross-section duplicates (~30) and author-year references that resolve to works already counted under different cluster IDs (~45).
+**Note on count discrepancy:** The corpus README estimated ~890 citations. After deduplication, the verified unique count is 736. The difference: 73 cross-section duplicates (same work cited in multiple sections with different cluster IDs), ~45 author-year references resolving to already-counted works, and ~35 overcounted inline references.
 
 ---
 
