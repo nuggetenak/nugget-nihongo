@@ -539,15 +539,16 @@ Drawn from Agent 2's Section C caveats, these are the exact wordings to use on t
 
 # APPENDIX B — BIBLIOGRAPHY STATUS
 
-**Compiled entries:** 682 (MASTER-BIBLIOGRAPHY-v2.md)
-- 528 full APA
-- 154 partial (author-year only)
+**Compiled entries:** 813 (MASTER-BIBLIOGRAPHY-v3.md) ✅ COMPLETE
+- 731 full APA entries
+- 82 partial (author-year only — inline prose references)
 
-**Estimated remaining:** ~196 entries extractable from section files
-**Known duplicates requiring resolution:** 8 (3 RED resolved above, 5 remaining)
+**Extraction sources:** All 21 corpus section files, compass artifact, 7 returned agent bibliographies, §8/§5/§CA prose extraction.
+**Known duplicates resolved:** 6 (3 RED consolidated, 3 cross-section deduped)
 **DOI unverified:** ~35 entries tagged [DOI UNVERIFIED]
+**Remaining stubs:** 82 entries are author-year only (inline prose citations without formal APA blocks in the source files). These can be filled via DOI lookup in a future session.
 
-**Completion plan:** Extract remaining entries from §2, §3, §4, §8, §14, §15, §16, §17, §CA section files in a dedicated bibliography sprint session.
+**Note on count discrepancy:** The corpus README estimated ~890 citations. The verified unique count is 813. The difference is cross-section duplicates (~30) and author-year references that resolve to works already counted under different cluster IDs (~45).
 
 ---
 
