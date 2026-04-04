@@ -1,8 +1,8 @@
 # NUGGET NIHONGO — MASTER BIBLIOGRAPHY v3
 **Date:** 4 April 2026 | **Compiled by:** A1 Crispy 🥐
-**Total entries:** 813
+**Total entries:** 820
 **Full APA entries:** 731
-**Partial (author-year only):** 82
+**Partial (author-year only):** 89
 **Format:** APA 7th Edition
 **Source:** Extracted from 21 corpus sections (v14) + compass artifact + 7 returned agent bibliographies
 
@@ -1816,4 +1816,19 @@ Walker (2009). [FULL APA NEEDED] [INLINE]
 Widdowson (1983). [FULL APA NEEDED] [INLINE]
 
 Yashima (2002). [FULL APA NEEDED] [INLINE]
+
+
+### §8-v3 RECOVERY (was truncated in corpus v14)
+
+Annie (2022). [FULL APA NEEDED — recovered from §8-v3 full version] [§8-v3-RECOVERY]
+
+Counter (2024). [FULL APA NEEDED — recovered from §8-v3 full version] [§8-v3-RECOVERY]
+
+Gelfand (1998). [FULL APA NEEDED — recovered from §8-v3 full version] [§8-v3-RECOVERY]
+
+Cunningham (2011). [FULL APA NEEDED — recovered from §8-v3 full version] [§8-v3-RECOVERY]
+
+Haber (1960). [FULL APA NEEDED — recovered from §8-v3 full version] [§8-v3-RECOVERY]
+
+Nezarat (2012). [FULL APA NEEDED — recovered from §8-v3 full version] [§8-v3-RECOVERY]
 
