@@ -3,7 +3,7 @@
 //  Cache-first strategy for offline use
 // ══════════════════════════════════════
 
-const CACHE = 'nihongo-v15.3.0';
+const CACHE = 'nihongo-v15.5.0';
 const ASSETS = [
   // NOTE: data/qa-tests.js TIDAK di-cache — intentional, dev-only tool (DEC-009).
   //       Digunakan Crispy di browser sebelum merge sebagai referential integrity check.
@@ -20,11 +20,14 @@ const ASSETS = [
   './js/core/router.js',
   './js/core/theme.js',
   './js/core/install.js',
-  './js/core/grammar-query.js',  // legacy — kept for compat
+  './js/core/grammar-query.js',
   './js/fsrs-engine.js',
+  './js/srs.js',
   './js/gamification.js',
   './js/backup-restore.js',
   './js/streak.js',
+  './js/ai-tutor.js',
+  './js/analytics.js',
   './js/swipe.js',
   './js/quiz-generator.js',
   './js/quiz-engine-v2.js',

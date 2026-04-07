@@ -99,7 +99,7 @@ raw: 'N(waktu)／Vる形＋までに', desc: 'Menyatakan <strong>batas waktu (de
 raw: 'V1た形＋り、V2た形＋り＋する', desc: 'Digunakan untuk <strong>menyebut beberapa contoh aktivitas</strong> dari sejumlah kegiatan yang dilakukan, tanpa menyebutkan semuanya. Atau menyatakan tindakan yang berulang-ulang.', examples: [{jp: '夏休みは旅行し<b>たり</b>テニスをし<b>たり</b>していました。', id: 'Di liburan musim panas saya melakukan hal-hal seperti berwisata dan bermain tenis.'}, {jp: '休みの日はDVDを見<b>たり</b>本を読ん<b>だり</b>しています。', id: 'Di hari libur saya menonton DVD atau membaca buku.'}, {jp: 'このごろ、暑かっ<b>たり</b>寒かっ<b>たり</b>しています。', id: 'Akhir-akhir ini cuaca silih berganti panas dan dingin.'}],
     },
     {
-      id: 'sm-n4-011', global_grammar_id: null, // ⚠️ NO MATCH
+      id: 'sm-n4-011', global_grammar_id: null, orphan: true, orphan_note: 'Pattern is Soumatome-specific; no equivalent in JLPT global grammar DB', // ⚠️ NO MATCH
       week: 1, day: 3, seq: 11,
       pattern: '〜し、〜し',
       meaning: '...dan..., dan lagi... (menyebut beberapa alasan atau kondisi)',
@@ -341,7 +341,7 @@ raw: 'V〜た形＋ほうがいい／V〜ない形＋ほうがいい', desc: 'Me
 raw: '普通形＋と言う／と思う', desc: '<strong>と言う</strong> menyatakan isi ucapan seseorang (kutipan). <strong>と思う</strong> menyatakan pendapat atau dugaan pembicara.', examples: [{jp: '天気予報で、明日は寒い<b>と言っていました</b>。', id: 'Di ramalan cuaca, katanya besok akan dingin.'}, {jp: '田中さんはもう帰った<b>と思います</b>。', id: 'Saya kira Tanaka-san sudah pulang.'}, {jp: '試験に受かった<b>と思います</b>。', id: 'Saya kira (saya) lulus ujian.'}],
     },
     {
-      id: 'sm-n4-041', global_grammar_id: null, // ⚠️ NO MATCH
+      id: 'sm-n4-041', global_grammar_id: null, orphan: true, orphan_note: 'Pattern is Soumatome-specific; no equivalent in JLPT global grammar DB', // ⚠️ NO MATCH
       week: 2, day: 6, seq: 41,
       pattern: '命令形／禁止形',
       meaning: 'Bentuk perintah (lakukan!) / Bentuk larangan (jangan!)',
@@ -359,7 +359,7 @@ raw: 'V命令形（する→しろ、来る→来い）／V辞書形＋な', des
 raw: '普通形＋かどうか', desc: 'Menyatakan <strong>ketidakpastian apakah sesuatu benar atau tidak</strong>. Digunakan sebagai klausa tertanam dalam kalimat yang lebih panjang.', examples: [{jp: 'その話が本当<b>かどうか</b>、調べたほうがいいですよ。', id: 'Sebaiknya cek dulu apakah cerita itu benar atau tidak.'}, {jp: '明日、テストがある<b>かどうか</b>、リンさんに聞いてみましょう。', id: 'Mari tanya ke Lin apakah besok ada ujian atau tidak.'}, {jp: '新しい学校で、友だちができる<b>かどうか</b>、心配です。', id: 'Saya khawatir apakah bisa punya teman di sekolah baru atau tidak.'}],
     },
     {
-      id: 'sm-n4-043', global_grammar_id: null, // ⚠️ NO MATCH
+      id: 'sm-n4-043', global_grammar_id: null, orphan: true, orphan_note: 'Pattern is Soumatome-specific; no equivalent in JLPT global grammar DB', // ⚠️ NO MATCH
       week: 3, day: 1, seq: 43,
       pattern: '疑問詞〜か',
       meaning: '...apa/siapa/kapan/di mana/mengapa/bagaimana (pertanyaan tak langsung)',
@@ -641,7 +641,7 @@ raw: 'V普通形／い形／な形な／N＋んです／のです', desc: 'Digun
 raw: 'V普通形／い形／な形だ＋なあ', desc: 'Partikel akhir yang menyatakan <strong>perasaan, kekaguman, atau keinginan</strong> pembicara. Sering digunakan dalam monolog atau bicara sendiri.', examples: [{jp: '試験、むずかしかった<b>なあ</b>。', id: 'Ujiannya susah ya (gumam sendiri).'}, {jp: 'トムさんのおねえさん、きれいだ<b>なあ</b>。', id: 'Kakak perempuan Tom cantik ya (kekaguman).'}, {jp: '早く夏休みになれば<b>いいなあ</b>。', id: 'Cepat-cepat liburan musim panas ya (harapan).'}],
     },
     {
-      id: 'sm-n4-078', global_grammar_id: null, // ⚠️ NO MATCH
+      id: 'sm-n4-078', global_grammar_id: null, orphan: true, orphan_note: 'Pattern is Soumatome-specific; no equivalent in JLPT global grammar DB', // ⚠️ NO MATCH
       week: 4, day: 6, seq: 78,
       pattern: '〜ね／〜よ',
       meaning: '〜ね: ya kan / betul kan (konfirmasi) | 〜よ: loh / nih (penekanan/peringatan)',

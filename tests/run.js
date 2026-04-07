@@ -24,28 +24,20 @@ function loadData(file) {
 }
 
 console.log('Loading data files...');
+// ── Vocab DB (Architecture v3) ──
 loadData('data/vocab/vocab-n5.js');
 loadData('data/vocab/vocab-n4.js');
 loadData('data/vocab/vocab-n3.js');
-loadData('data/grammar/grammar-n3.js');
-loadData('data/grammar/grammar-n4.js');
+loadData('data/vocab/vocab-n2.js');
+loadData('data/vocab/vocab-n1.js');
+// ── Grammar DB (Architecture v3) ──
 loadData('data/grammar/grammar-n5.js');
-loadData('data/grammar/n3-w1.js');
-loadData('data/grammar/n3-w2.js');
-loadData('data/grammar/n3-w3.js');
-loadData('data/grammar/n3-w4.js');
-loadData('data/grammar/n3-w5.js');
-loadData('data/grammar/n3-w6.js');
-loadData('data/grammar/n4-w1.js');
-loadData('data/grammar/n4-w2.js');
-loadData('data/grammar/n4-w3.js');
-loadData('data/grammar/n4-w4.js');
-loadData('data/grammar/n4-w5.js');
-loadData('data/grammar/n4-w6.js');
-loadData('data/grammar/dummy.js');
-loadData('data/grammar/bank-soal.js');
-loadData('data/grammar/bank-soal-n4.js');
-loadData('data/grammar/bank-soal-quiz4.js');
+loadData('data/grammar/grammar-n4.js');
+loadData('data/grammar/grammar-n3.js');
+loadData('data/grammar/grammar-n2.js');
+loadData('data/grammar/grammar-n1.js');
+loadData('data/grammar/grammar-index.js');
+// ── Books ──
 loadData('data/books/book-minna-1.js');
 loadData('data/books/book-minna-2.js');
 loadData('data/books/book-irodori-a1.js');
@@ -53,6 +45,11 @@ loadData('data/books/book-irodori-a2-1.js');
 loadData('data/books/book-irodori-a2-2.js');
 loadData('data/books/sources.js');
 loadData('data/vocab/vocab-index.js');
+// Legacy files (skipped if not found — not an error):
+loadData('data/grammar/n3-w1.js');
+loadData('data/grammar/n3-w2.js');
+loadData('data/grammar/n4-w1.js');
+loadData('data/grammar/dummy.js');
 loadData('data/grammar/index.js');
 
 console.log('Data loaded. Running tests...\n');
@@ -118,9 +115,17 @@ gn3.forEach((e, i) => {
   assert(e.cat, `grammarN3[${i}] ${e.id}: missing cat`);
 });
 
-console.log('── Grammar week cards ──');
-const grammarData = global.grammarData || [];
-assert(grammarData.length > 0, 'grammarData should have entries from week cards');
+console.log('── Grammar DB merge ──');
+// grammarDB is set by grammar-index.js; grammarData is the compat alias
+const grammarData = global.grammarDB || global.grammarData || [
+  ...(global.grammarN5 || []),
+  ...(global.grammarN4 || []),
+  ...(global.grammarN3 || []),
+  ...(global.grammarN2 || []),
+  ...(global.grammarN1 || []),
+];
+assert(grammarData.length > 0, 'grammarDB should have entries (N5+N4+N3 at minimum)');
+assert(grammarData.length >= 300, `grammarDB count: ${grammarData.length} (expected ≥300)`);
 grammarData.forEach((e, i) => {
   assert(e.id, `grammarData[${i}]: missing id`);
 });

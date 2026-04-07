@@ -6,8 +6,10 @@
 //  Load order (index.html):
 //    core/version.js → core/state.js → core/router.js
 //    → core/theme.js → core/install.js
-//    → srs.js → streak.js → swipe.js
-//    → browse.js → quiz.js → feature files...
+//    → fsrs-engine.js → srs.js → streak.js
+//    → gamification.js → backup-restore.js
+//    → ai-tutor.js → analytics.js
+//    → swipe.js → browse.js → quiz.js → feature files...
 //    → app.js  ← this file, always last
 // ══════════════════════════════════════
 
@@ -21,10 +23,14 @@ document.addEventListener('DOMContentLoaded', () => {
   loadTheme();          // core/theme.js
 
   // Build vocab + grammar indexes (O(1) lookup)
-  if (window.buildVocabIndex) window.buildVocabIndex();
+  if (window.buildVocabIndex)   window.buildVocabIndex();
   if (window.buildGrammarIndex) window.buildGrammarIndex();
 
   if (window.browseInit) window.browseInit(); // browse.js
+
+  // AI Tutor + Analytics init
+  if (window.initAITutor)   window.initAITutor();
+  if (window.initAnalytics) window.initAnalytics();
 
   // Daily word di welcome banner
   if (window.initDailyWord) window.initDailyWord();
@@ -35,3 +41,32 @@ document.addEventListener('DOMContentLoaded', () => {
     if (wb) wb.style.display = 'none';
   }
 });
+
+// ── Tab switch router ───────────────────────────────────────────
+// Extend switchTab to call page-specific hooks
+const _origSwitchTab = window.switchTab;
+window.switchTab = function (tab, btn) {
+  if (_origSwitchTab) _origSwitchTab(tab, btn);
+
+  // Show all pages, then show active
+  ['browsePage', 'quizPage', 'senseiPage', 'statsPage'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.classList.remove('active');
+  });
+
+  const pageMap = {
+    browse : 'browsePage',
+    quiz   : 'quizPage',
+    sensei : 'senseiPage',
+    stats  : 'statsPage',
+  };
+  const targetId = pageMap[tab];
+  if (targetId) {
+    const el = document.getElementById(targetId);
+    if (el) el.classList.add('active');
+  }
+
+  // Tab-specific hooks
+  if (tab === 'sensei' && window._aiTutorOnTabShow)    window._aiTutorOnTabShow();
+  if (tab === 'stats'  && window._analyticsOnTabShow)  window._analyticsOnTabShow();
+};

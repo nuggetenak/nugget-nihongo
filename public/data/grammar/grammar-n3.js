@@ -2227,8 +2227,6 @@ window.grammarN3 = [
     notes      : null,
   },
 
-,
-
   {
       "id": "gn3-00105",
       "level": "n3",

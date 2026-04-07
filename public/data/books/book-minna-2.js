@@ -1,3 +1,9 @@
+// ⚠️  LEGACY: vocab IDs in this file use old format (v-n5-s#### / v-n5-####).
+// These do NOT match current vocabDB (vg-n5-00001 format).
+// Lookups against vocabDB will silently return undefined.
+// Pending: ID reconciliation via mapping script (see CLAUDE.md §7).
+// Do NOT restructure this file until the vocab ID migration is complete.
+
 // ══════════════════════════════════════════════════════
 //  book-minna-2.js — Minna no Nihongo II · Chapter Index
 //  Source: Minna no Nihongo Shokyuu II (3A Corporation)
