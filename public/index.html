@@ -1070,6 +1070,9 @@
 <script src="./data/grammar/grammar-index.js"></script>
 <script src="./data/tracks/tracks.js"></script>
 
+<!-- JS: local-state FIRST (IndexedDB layer — must precede fsrs-engine) -->
+<script src="./js/local-state.js"></script>
+
 <!-- JS: core (load first, in order) -->
 <script src="./js/core/version.js"></script>
 <script src="./js/error-boundary.js"></script>
@@ -1083,6 +1086,13 @@
 <script src="./js/fsrs-engine.js"></script>
 <script src="./js/gamification.js"></script>
 <script src="./js/backup-restore.js"></script>
+
+<!-- JS: AI layer (Phase 1–2: dna-summarizer needs fsrs+gamification; ai-proxy needs supabase-client) -->
+<script src="./js/dna-summarizer.js"></script>
+<script src="./js/supabase-client.js"></script>
+<script src="./js/ai-proxy.js"></script>
+<script src="./js/ai-tutor.js"></script>
+<script src="./js/sync-hook.js"></script>
 
 <!-- JS: features -->
 <script src="./js/swipe.js"></script>

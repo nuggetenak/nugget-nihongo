@@ -287,6 +287,21 @@ function reviewCard(cardId, rating) {
 
   window.srsData[cardId] = entry;
   saveCards();
+
+  // ── local-state.js hook: persist to IndexedDB + queue Supabase sync ──
+  // localState is loaded before this file; guard in case it isn't ready yet.
+  if (window.localState && window.localState.isAvailable) {
+    window.localState.saveCard(cardId, entry);
+    window.localState.queueSync({
+      type:      'review',
+      id:        cardId,
+      item_type: entry.source === 'vocab' ? 'vocab' : 'grammar',
+      item_id:   cardId,
+      data:      entry.card,
+      timestamp: Date.now(),
+    });
+  }
+
   return entry;
 }
 

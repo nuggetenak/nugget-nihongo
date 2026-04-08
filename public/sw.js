@@ -3,7 +3,7 @@
 //  Cache-first strategy for offline use
 // ══════════════════════════════════════
 
-const CACHE = 'nihongo-v15.3.0';
+const CACHE = 'nihongo-v15.4.0';
 const ASSETS = [
   // NOTE: data/qa-tests.js TIDAK di-cache — intentional, dev-only tool (DEC-009).
   //       Digunakan Crispy di browser sebelum merge sebagai referential integrity check.
@@ -74,6 +74,17 @@ const ASSETS = [
   './data/books/soumatome/grammar-lens-sm-n4.js',
   './data/books/sources.js',
   './data/tracks/tracks.js',
+
+  // ── AI Layer + Local State ────────────────────────────
+  './js/local-state.js',
+  './js/dna-summarizer.js',
+  './js/ai-proxy.js',
+  './js/ai-tutor.js',
+  './js/sync-hook.js',
+
+  // ── Static fallback drills (offline AI substitute) ────
+  './data/fallback/grammar-drills.json',
+  './data/fallback/vocab-drills.json',
 ];
 
 self.addEventListener('install', e => {
