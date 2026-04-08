@@ -104,11 +104,11 @@ async function aiSend() {
     _removeTyping(typingId);
 
     if (res.status === 429) {
-      _showBotError('Batas harian tercapai (15 pertanyaan). Coba lagi besok! ☀️');
+      _showBotRetry('Kamu sudah pakai 15 pertanyaan gratis hari ini. Besok bisa tanya lagi ya! ☀️');
       _setQuota(DAILY_LIMIT);
     } else if (!res.ok) {
       const err = await res.json().catch(() => ({}));
-      _showBotError(err.message || 'AI sedang tidak tersedia. Coba lagi sebentar.');
+      _showBotRetry(err.message || 'Hmm, Sensei lagi sibuk sebentar. Coba kirim lagi ya!');
     } else {
       const data = await res.json();
       const reply = data.reply || '(Tidak ada balasan)';
@@ -129,7 +129,7 @@ async function aiSend() {
     }
   } catch (e) {
     _removeTyping(typingId);
-    _showBotError('Tidak bisa terhubung ke AI. Periksa koneksi internet kamu.');
+    _showBotRetry('Hmm, koneksi ke Sensei terputus. Coba kirim lagi ya!');
     console.error('[ai-tutor]', e);
   } finally {
     aiPending = false;
@@ -187,6 +187,14 @@ function _buildContext() {
     if (window.srsDueToday) {
       const due = srsDueToday();
       ctx.recentWeak = due.slice(0, 5).map(c => c.pattern || c.word || c.id);
+    }
+  } catch {}
+
+  // Inject learning_dna (adaptive mistake memory) for AI context
+  try {
+    const raw = localStorage.getItem('nn_fsrs_cards');
+    if (raw && window._buildLearningDNA) {
+      ctx.learning_dna = window._buildLearningDNA();
     }
   } catch {}
 
@@ -283,6 +291,21 @@ function _showBotError(msg) {
   const div = document.createElement('div');
   div.className = 'ai-msg ai-msg--error';
   div.innerHTML = `<div class="ai-msg-bubble ai-msg-bubble--error">⚠️ ${_escHtml(msg)}</div>`;
+  container.appendChild(div);
+  container.scrollTop = container.scrollHeight;
+}
+
+function _showBotRetry(msg) {
+  const container = document.getElementById('aiChatMessages');
+  if (!container) return;
+
+  const div = document.createElement('div');
+  div.className = 'ai-msg ai-msg--bot';
+  const bubble = document.createElement('div');
+  bubble.className = 'ai-msg-bubble';
+  bubble.innerHTML = _escHtml(msg) +
+    ' <a href="#" class="ai-retry-link" onclick="aiSend(); return false;">Coba lagi →</a>';
+  div.appendChild(bubble);
   container.appendChild(div);
   container.scrollTop = container.scrollHeight;
 }

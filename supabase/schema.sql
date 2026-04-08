@@ -204,3 +204,10 @@ CREATE TRIGGER course_updated_at BEFORE UPDATE ON public.course_progress
   FOR EACH ROW EXECUTE FUNCTION public.update_updated_at();
 CREATE TRIGGER settings_updated_at BEFORE UPDATE ON public.user_settings
   FOR EACH ROW EXECUTE FUNCTION public.update_updated_at();
+
+-- ── learning_dna — adaptive mistake memory (v15.6.0) ──────────────
+-- Tracks per-user mistake patterns for AI context injection.
+-- Blueprint basis: Gap 4 (Adaptive Learning beyond SRS), Study 2 (§8.11.2)
+ALTER TABLE public.profiles
+  ADD COLUMN IF NOT EXISTS learning_dna JSONB
+  DEFAULT '{"mistakes":[],"error_cats":{},"reviewed_at":null}'::jsonb;

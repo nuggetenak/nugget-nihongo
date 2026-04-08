@@ -1,6 +1,6 @@
 # CLAUDE.md — Handoff Note for Claude Code
 **Project:** Nugget Nihongo — Japanese language learning PWA  
-**Last updated:** 7 April 2026 · v15.5.0  
+**Last updated:** 8 April 2026 · v15.6.0  
 **Owner:** Nugget (non-programmer, Indonesian speaker)  
 **Active branch:** `claude/architecture-audit-cleanup-WKJ2n` → merge target: `main`
 
@@ -43,11 +43,10 @@ SETUP.md             ← Step-by-step deploy guide (credentials, Worker, Supabas
 
 ---
 
-## CURRENT STATE (v15.5.0)
+## CURRENT STATE (v15.6.0)
 
 ### What works ✓
-- **Grammar DB:** N5 (249), N4 (278), N3 (371) — all with 5-digit IDs, examples, descriptions
-- **Grammar DB:** N2 (30 seeds), N1 (20 seeds) — functional stubs, expandable via generate-corpus.js
+- **Grammar DB:** N5 (80), N4 (90), N3 (119), N2 (30 seeds), N1 (20 seeds) — all with 5-digit IDs, examples, descriptions
 - **Vocab DB:** N5 (711), N4 (692), N3 (70), N2 (50 seeds), N1 (20 seeds) — 5-digit IDs
 - **Soumatome grammar lenses:** N3 (132 entries), N4 (102) — 8 orphaned entries flagged with `orphan: true`
 - **Study tracks:** JLPT N5-N1 auto-populate at runtime, Soumatome tracks, Freeway hand-curated

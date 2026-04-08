@@ -33,11 +33,9 @@ nugget-nihongo/
 │       ├── vocab/                   # Vocabulary entries per JLPT level + merger
 │       │   ├── vocab-n5.js … n1.js  # Per-level vocab (window.vocabN5 etc.)
 │       │   └── vocab-index.js       # Merges all → window.vocabDB
-│       ├── grammar/                 # Grammar cards, week cards, quiz banks
-│       │   ├── grammar-n5.js … n1.js # Tier 1 global grammar entries
-│       │   ├── n3-w1.js … n4-w6.js  # Week-based grammar cards
-│       │   ├── bank-soal*.js        # Quiz question banks
-│       │   └── index.js             # Merges grammar → window.grammarData
+│       ├── grammar/                 # Grammar entries per JLPT level + merger
+│       │   ├── grammar-n5.js … n1.js # Global grammar entries (5-digit IDs)
+│       │   └── grammar-index.js     # Merges all → window.grammarDB + query API
 │       ├── books/                   # Book index (chapter → ID mappings)
 │       │   ├── book-minna-*.js      # Minna no Nihongo I & II
 │       │   ├── book-irodori-*.js    # Irodori A1, A2-1, A2-2
@@ -83,8 +81,8 @@ from production via `.gitignore` and the deploy workflow.
 Two-tier system (established v14.8.1):
 
 **Tier 1 — Global entries**: Standalone, textbook-independent.
-- Vocab IDs: `vg-{level}-{4digit}` (e.g., `vg-n5-0001`)
-- Grammar IDs: `gn{level}-{4digit}` (e.g., `gn3-0001`)
+- Vocab IDs: `vg-{level}-{5digit}` (e.g., `vg-n5-00001`)
+- Grammar IDs: `gn{level}-{5digit}` (e.g., `gn3-00001`)
 
 **Tier 2 — Book lens**: Chapter-to-ID mappings referencing Tier 1 entries.
 - `book-*.js` files map chapters to `vocab_ids[]` and `grammar_ids[]`.
@@ -101,9 +99,10 @@ Defined in `public/index.html`. Critical dependency chain:
 |----------|--------|------|
 | `window.APP_VERSION` | core/version.js | string |
 | `window.vocabDB` | data/vocab/vocab-index.js | VocabEntry[] |
-| `window.grammarData` | data/grammar/index.js | GrammarCard[] |
+| `window.grammarDB` | data/grammar/grammar-index.js | GrammarCard[] |
+| `window.grammarData` | (compat alias for grammarDB) | GrammarCard[] |
 | `window.progress` | core/state.js | object |
-| `window.srsData` | srs.js | object |
+| `window.srsData` | fsrs-engine.js | object |
 
 ## npm Scripts
 ```bash
@@ -116,4 +115,4 @@ npm run check:version  # Verify version.js ↔ sw.js sync
 ## Schemas
 - Vocab: `public/data/_schema-vocab.md`
 - Grammar: `public/data/_schema.md`
-- Taxonomy: `docs/curriculum/NUGGET-NIHONGO-TAXONOMY-MASTER-v2.md`
+- Taxonomy: `public/data/_taxonomy.md`

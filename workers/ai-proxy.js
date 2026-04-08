@@ -1,7 +1,7 @@
-// ══════════════════════════════════════════════════════════════════
-//  Nugget Nihongo — AI Proxy Worker
-//  Cloudflare Worker: routes AI requests to Gemini/Groq with
-//  per-user rate limiting, key security, and fallback logic.
+// ══════════════════���═══════════════════════════════════════════════
+//  Nugget Nihongo — AI Proxy Worker v2 (Smart Router)
+//  Cloudflare Worker: speed-tiered AI routing with research-grounded
+//  persona, learning_dna context injection, and per-user rate limiting.
 //
 //  Deploy: cd workers && npx wrangler deploy
 //
@@ -11,7 +11,9 @@
 //
 //  Required KV namespace (wrangler kv:namespace create "RATE_LIMITS"):
 //    RATE_LIMITS      — stores daily request counts per user
-// ══════════════════════════════════════════════════════════════════
+//
+//  Architecture v15.6.0 — 8 April 2026
+// ═════��═══════════════════════════════════════════════════════════���
 
 const ALLOWED_ORIGINS = [
   'https://nuggetenak.github.io',
@@ -19,35 +21,58 @@ const ALLOWED_ORIGINS = [
   'http://127.0.0.1:3000',
 ];
 
-const DAILY_LIMIT = 15; // free AI requests per user per day
+const DAILY_LIMIT = 15;
 
-// ── Gemini 2.0 Flash endpoint ──────────────────────────────────────
+// ── Model endpoints ─��────────────────────────────────────────────
 const GEMINI_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent';
-
-// ── Groq endpoint (fallback) ───────────────────────────────────────
 const GROQ_URL = 'https://api.groq.com/openai/v1/chat/completions';
-const GROQ_MODEL = 'gemma2-9b-it'; // Free on Groq; fast and multilingual
 
-// ── Sensei system prompt ───────────────────────────────────────────
-const SYSTEM_PROMPT = `Kamu adalah Sensei Nugget, guru bahasa Jepang yang ramah dan ahli untuk pelajar Indonesia.
+// Speed-tiered models
+const GROQ_MODEL_FAST = 'llama-3.1-8b-instant';  // Quick tasks: fastest inference
+const GROQ_MODEL_DEEP = 'gemma2-9b-it';           // Complex fallback: better reasoning
 
-Gaya mengajarmu:
-- Komunikasi dalam Bahasa Indonesia (bisa campur Jepang untuk contoh)
-- Selalu beri contoh kalimat konkret ketika menjelaskan grammar/kosakata
-- Bandingkan dengan Bahasa Indonesia untuk memperjelas (contrastive analysis)
-- Gunakan romaji di sebelah hiragana/katakana untuk pelajar pemula
-- Jawaban ringkas dan to-the-point, tapi lengkap
-- Kalau ada perbedaan nuansa (に vs で, は vs が), jelaskan kapan pakai masing-masing
-- Beri tips hafalan kalau relevan
+// ── Research-grounded persona ────────────────────────────────────
+// Based on: malu/face-concern research (Markus & Kitayama 1991),
+// Hofstede IDV=14 for Indonesia, L1 contrastive analysis (59 citations §5),
+// Processability Theory grammar sequencing (Pienemann 1998)
+const SYSTEM_PROMPT = `Kamu adalah teman belajar bahasa Jepang yang hangat, sabar, dan ahli — bernama Sensei Nugget.
+Kamu mengajar pelajar Indonesia yang sedang belajar JLPT N5 sampai N1.
+
+Prinsip komunikasimu (WAJIB dipatuhi):
+1. Selalu gunakan Bahasa Indonesia sebagai bahasa utama, campur Jepang untuk contoh.
+2. Untuk setiap grammar point: berikan struktur dulu, lalu 2 contoh konkret dengan romaji.
+3. Gunakan perbandingan Indonesia-Jepang (contrastive analysis): jelaskan bedanya dengan cara berpikir Bahasa Indonesia.
+4. Ketika pelajar salah, PUJI usahanya dulu sebelum mengoreksi — jangan pernah membuat mereka malu.
+5. Jawaban ringkas (maksimum 4 paragraf) — jangan membanjiri pemula.
+6. Untuk N3+, bahas nuansa pasangan yang sering membingungkan (に vs で, は vs が, そうだ伝聞 vs そうだ様態).
+7. Sesuaikan nada: santai untuk ngobrol, terstruktur untuk penjelasan grammar, semangat untuk feedback kuis.
+8. Beri motivasi kecil di akhir jawaban — "Semangat!", "Kamu sudah di jalan yang benar!", dll.
 
 Format jawaban:
-- Gunakan **bold** untuk istilah penting
-- Gunakan blok kode atau indentasi untuk contoh kalimat
-- Maksimum 4-5 paragraf kecuali diminta lebih detail
+- **Bold** untuk istilah penting
+- Blok kode atau indentasi untuk contoh kalimat
+- Romaji di sebelah kana untuk level N5-N4`;
 
-Kamu mengajar level JLPT N5 sampai N1. Target pelajar: orang Indonesia yang ingin lulus JLPT.`;
+// ── Task classification ──────────────────────────────────────────
+// Determines whether a request needs fast feedback or deep explanation
+const QUICK_KEYWORDS = /\b(tes|quiz|hint|contoh|artinya|translate|arti|terjemah|singkat|cepat)\b/i;
+const COMPLEX_KEYWORDS = /\b(jelaskan|perbedaan|kenapa|bagaimana|bandingkan|kontrastif|grammar|nuansa|kapan pakai|apa bedanya)\b/i;
 
-// ── CORS helper ────────────────────────────────────────────────────
+function classifyTask(messages) {
+  if (!messages || messages.length === 0) return 'complex';
+  const lastMsg = messages[messages.length - 1];
+  if (!lastMsg || !lastMsg.content) return 'complex';
+  const text = lastMsg.content;
+
+  // Short messages are quick tasks
+  if (text.length < 80 && !COMPLEX_KEYWORDS.test(text)) return 'quick';
+  // Keyword-based classification
+  if (COMPLEX_KEYWORDS.test(text)) return 'complex';
+  if (QUICK_KEYWORDS.test(text)) return 'quick';
+  return 'complex';
+}
+
+// ── CORS helper ────────────────────────────────────��─────────────
 function corsHeaders(origin) {
   const allowed = ALLOWED_ORIGINS.includes(origin) ? origin : ALLOWED_ORIGINS[0];
   return {
@@ -58,11 +83,11 @@ function corsHeaders(origin) {
   };
 }
 
-// ── Rate limiter ───────────────────────────────────────────────────
+// ── Rate limiter ───────────��──────────────────────────���──────────
 async function checkRateLimit(env, userId) {
-  if (!env.RATE_LIMITS) return { allowed: true, remaining: DAILY_LIMIT }; // KV not set up yet
+  if (!env.RATE_LIMITS) return { allowed: true, remaining: DAILY_LIMIT };
 
-  const today = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
+  const today = new Date().toISOString().slice(0, 10);
   const key = `${userId}:${today}`;
   const raw = await env.RATE_LIMITS.get(key);
   const count = raw ? parseInt(raw) : 0;
@@ -71,11 +96,11 @@ async function checkRateLimit(env, userId) {
     return { allowed: false, remaining: 0 };
   }
 
-  await env.RATE_LIMITS.put(key, String(count + 1), { expirationTtl: 90000 }); // 25h TTL
+  await env.RATE_LIMITS.put(key, String(count + 1), { expirationTtl: 90000 });
   return { allowed: true, remaining: DAILY_LIMIT - count - 1 };
 }
 
-// ── Call Gemini ────────────────────────────────────────────────────
+// ── Call Gemini ─────────��────────────────────────────────────────
 async function callGemini(apiKey, messages, systemCtx) {
   const contents = messages.map(m => ({
     role: m.role === 'assistant' ? 'model' : 'user',
@@ -118,15 +143,15 @@ async function callGemini(apiKey, messages, systemCtx) {
   };
 }
 
-// ── Call Groq (fallback) ───────────────────────────────────────────
-async function callGroq(apiKey, messages, systemCtx) {
+// ── Call Groq ────────��───────────────────────────────────���───────
+async function callGroq(apiKey, messages, systemCtx, model) {
   const systemMessage = {
     role: 'system',
     content: SYSTEM_PROMPT + (systemCtx ? '\n\n' + systemCtx : ''),
   };
 
   const body = {
-    model: GROQ_MODEL,
+    model: model || GROQ_MODEL_FAST,
     messages: [systemMessage, ...messages],
     temperature: 0.7,
     max_tokens: 1024,
@@ -153,12 +178,12 @@ async function callGroq(apiKey, messages, systemCtx) {
 
   return {
     reply: text,
-    model_used: GROQ_MODEL,
+    model_used: model || GROQ_MODEL_FAST,
     tokens_used: data?.usage?.total_tokens || 0,
   };
 }
 
-// ── Build context string from user state ──────────────────────────
+// ── Build context string from user state ─────────────────────────
 function buildContext(ctx) {
   if (!ctx) return '';
   const parts = [];
@@ -166,16 +191,26 @@ function buildContext(ctx) {
   if (ctx.currentCard) parts.push(`Kartu yang sedang dipelajari: "${ctx.currentCard}".`);
   if (ctx.recentWeak?.length) parts.push(`Pola yang sering salah: ${ctx.recentWeak.join(', ')}.`);
   if (ctx.mode === 'quiz') parts.push('Mode: tantang pelajar dengan soal relevan ke level mereka.');
+  if (ctx.mode === 'explain') parts.push('Mode: jelaskan dengan detail dan contoh.');
+
+  // learning_dna injection — top 5 recurring mistakes as hidden context
+  if (ctx.learning_dna && ctx.learning_dna.mistakes && ctx.learning_dna.mistakes.length) {
+    var top5 = ctx.learning_dna.mistakes
+      .sort(function (a, b) { return (b.count || 0) - (a.count || 0); })
+      .slice(0, 5)
+      .map(function (m) { return (m.pattern || m.item_id) + ' (salah ' + m.count + 'x)'; });
+    parts.push('Kesalahan berulang pelajar ini: ' + top5.join(', ') + '. Bantu mereka dengan pola-pola ini.');
+  }
+
   return parts.join(' ');
 }
 
-// ── Main handler ───────────────────────────────────────────────────
+// ── Main handler ──────���──────────────────────────────────────────
 export default {
   async fetch(request, env) {
     const origin = request.headers.get('Origin') || '';
     const cors = corsHeaders(origin);
 
-    // Preflight
     if (request.method === 'OPTIONS') {
       return new Response(null, { status: 204, headers: cors });
     }
@@ -184,13 +219,11 @@ export default {
       return new Response('Method not allowed', { status: 405, headers: cors });
     }
 
-    // Only allow /chat
     const url = new URL(request.url);
     if (url.pathname !== '/chat') {
       return new Response('Not found', { status: 404, headers: cors });
     }
 
-    // Parse body
     let body;
     try {
       body = await request.json();
@@ -215,7 +248,7 @@ export default {
     if (!allowed) {
       return new Response(JSON.stringify({
         error: 'daily_limit_reached',
-        message: 'Kamu sudah mencapai batas 15 pertanyaan gratis hari ini. Coba lagi besok!',
+        message: 'Kamu sudah mencapai batas 15 pertanyaan gratis hari ini. Coba lagi besok ya! 💪',
         remaining: 0,
       }), {
         status: 429,
@@ -224,33 +257,54 @@ export default {
     }
 
     const systemCtx = buildContext(context);
+    const taskType = classifyTask(messages);
 
-    // Try Gemini first, fall back to Groq
+    // Speed-tiered routing
     let result;
     let lastError;
 
-    if (env.GEMINI_API_KEY) {
-      try {
-        result = await callGemini(env.GEMINI_API_KEY, messages, systemCtx);
-      } catch (e) {
-        lastError = e.message;
-        console.error('Gemini failed:', e.message);
+    if (taskType === 'quick') {
+      // Quick tasks: Groq (fast) first → Gemini fallback
+      if (env.GROQ_API_KEY) {
+        try {
+          result = await callGroq(env.GROQ_API_KEY, messages, systemCtx, GROQ_MODEL_FAST);
+        } catch (e) {
+          lastError = e.message;
+          console.error('Groq (quick) failed:', e.message);
+        }
       }
-    }
-
-    if (!result && env.GROQ_API_KEY) {
-      try {
-        result = await callGroq(env.GROQ_API_KEY, messages, systemCtx);
-      } catch (e) {
-        lastError = e.message;
-        console.error('Groq failed:', e.message);
+      if (!result && env.GEMINI_API_KEY) {
+        try {
+          result = await callGemini(env.GEMINI_API_KEY, messages, systemCtx);
+        } catch (e) {
+          lastError = e.message;
+          console.error('Gemini (quick fallback) failed:', e.message);
+        }
+      }
+    } else {
+      // Complex tasks: Gemini first → Groq (deep) fallback
+      if (env.GEMINI_API_KEY) {
+        try {
+          result = await callGemini(env.GEMINI_API_KEY, messages, systemCtx);
+        } catch (e) {
+          lastError = e.message;
+          console.error('Gemini (complex) failed:', e.message);
+        }
+      }
+      if (!result && env.GROQ_API_KEY) {
+        try {
+          result = await callGroq(env.GROQ_API_KEY, messages, systemCtx, GROQ_MODEL_DEEP);
+        } catch (e) {
+          lastError = e.message;
+          console.error('Groq (complex fallback) failed:', e.message);
+        }
       }
     }
 
     if (!result) {
       return new Response(JSON.stringify({
         error: 'ai_unavailable',
-        message: 'AI sedang tidak tersedia. Silakan coba beberapa saat lagi.',
+        message: 'AI sedang istirahat sebentar. Coba lagi ya! 🙏',
         detail: lastError,
       }), {
         status: 503,
@@ -260,6 +314,7 @@ export default {
 
     return new Response(JSON.stringify({
       ...result,
+      task_type: taskType,
       remaining,
     }), {
       status: 200,

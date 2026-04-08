@@ -123,6 +123,19 @@
     update: function (data) {
       return sb.from('profiles').update(data).eq('id', (sb.auth.getUser()).data?.user?.id);
     },
+    getLearningDNA: async function () {
+      var user = (await sb.auth.getUser()).data?.user;
+      if (!user) return null;
+      var resp = await sb.from('profiles').select('learning_dna').eq('id', user.id).single();
+      return resp.data?.learning_dna || { mistakes: [], error_cats: {} };
+    },
+    updateLearningDNA: async function (dna) {
+      var user = (await sb.auth.getUser()).data?.user;
+      if (!user) return;
+      await sb.from('profiles')
+        .update({ learning_dna: dna, updated_at: new Date().toISOString() })
+        .eq('id', user.id);
+    },
   };
 
   // ── PROGRESS ─────────────────────────────────────────
@@ -217,6 +230,16 @@
         const cards = JSON.parse(raw);
         await sbSRS.bulkSync(cards);
 
+        // Also sync learning_dna (mistake patterns for AI context)
+        try {
+          var dna = _buildLearningDNA();
+          if (dna.mistakes.length > 0) {
+            await sbProfile.updateLearningDNA(dna);
+          }
+        } catch (dnaErr) {
+          console.warn('[supabase] learning_dna sync skipped:', dnaErr.message);
+        }
+
         if (icon) icon.textContent = '☁️';
       } catch (e) {
         console.warn('[supabase] Sync failed:', e.message);
@@ -229,8 +252,91 @@
   // Set up auth state listener
   sbAuth.onAuthChange(_onAuthStateChange);
 
+  // ── Build learning_dna from local FSRS data ──────────
+  // Extracts cards with lapses > 0, sorted by lapse count.
+  // Blueprint basis: Gap 4 (Adaptive beyond SRS)
+  function _buildLearningDNA() {
+    var raw = localStorage.getItem('nn_fsrs_cards');
+    if (!raw) return { mistakes: [], error_cats: {}, reviewed_at: null };
+    var cards;
+    try { cards = JSON.parse(raw); } catch (e) { return { mistakes: [], error_cats: {} }; }
+    var errorCats = {};
+    var mistakes = Object.entries(cards)
+      .filter(function (kv) { return kv[1].card && kv[1].card.lapses > 0; })
+      .map(function (kv) {
+        var id = kv[0], v = kv[1];
+        // Try to find the grammar/vocab entry for pattern name
+        var pattern = id;
+        if (window.grammarDB) {
+          var g = window.grammarDB.find(function (e) { return e && e.id === id; });
+          if (g) { pattern = g.pattern || g.grammar || id; if (g.cat) errorCats[g.cat] = (errorCats[g.cat] || 0) + v.card.lapses; }
+        }
+        if (window.vocabDB && pattern === id) {
+          var voc = window.vocabDB.find(function (e) { return e && e.id === id; });
+          if (voc) pattern = voc.word || id;
+        }
+        return { item_id: id, pattern: pattern, count: v.card.lapses, last_wrong: v.card.last_review };
+      })
+      .sort(function (a, b) { return b.count - a.count; })
+      .slice(0, 20);
+    return { mistakes: mistakes, error_cats: errorCats, reviewed_at: new Date().toISOString() };
+  }
+
+  // ── Full localStorage → Supabase migration ──────────
+  // Triggered once on first sign-in. Idempotent.
+  // Blueprint basis: Phase 4 (Cloud sync)
+  async function _migrateAllToSupabase() {
+    var user = (await sb.auth.getUser()).data?.user;
+    if (!user) return;
+    if (localStorage.getItem('nn_migrated_v1') === 'true') return;
+
+    try {
+      // 1. FSRS cards (already works via syncProgress)
+      _syncProgress();
+
+      // 2. Achievements → achievements table
+      var achievements = [];
+      try { achievements = JSON.parse(localStorage.getItem('nn_achievements') || '[]'); } catch (e) {}
+      for (var i = 0; i < achievements.length; i++) {
+        await sb.from('achievements').upsert(
+          { user_id: user.id, achievement: achievements[i], earned_at: new Date().toISOString() },
+          { onConflict: 'user_id,achievement', ignoreDuplicates: true }
+        );
+      }
+
+      // 3. XP + streak → profiles table
+      var xpData = {}, streakData = {};
+      try { xpData = JSON.parse(localStorage.getItem('nn_xp') || '{"xp":0}'); } catch (e) {}
+      try { streakData = JSON.parse(localStorage.getItem('nn_streak') || '{"count":0}'); } catch (e) {}
+      await sbProfile.update({
+        xp: xpData.xp || 0,
+        streak_days: streakData.count || 0,
+        streak_last: streakData.lastDate || null,
+      });
+
+      // 4. learning_dna → profiles.learning_dna
+      await sbProfile.updateLearningDNA(_buildLearningDNA());
+
+      // 5. Course progress → course_progress table
+      var cp = {};
+      try { cp = JSON.parse(localStorage.getItem('nn_course_progress') || '{}'); } catch (e) {}
+      for (var trackId in cp) {
+        if (cp.hasOwnProperty(trackId)) {
+          var prog = cp[trackId];
+          await sbProgress.upsert(trackId, prog.currentIndex || 0, prog.completed || false);
+        }
+      }
+
+      localStorage.setItem('nn_migrated_v1', 'true');
+      console.log('[supabase] Full migration complete');
+    } catch (e) {
+      console.warn('[supabase] Migration incomplete:', e.message);
+    }
+  }
+
   // ── Expose globally ───────────────────────────────────
   window.syncProgress = _syncProgress;
+  window.migrateAllToSupabase = _migrateAllToSupabase;
 
 })();
 
