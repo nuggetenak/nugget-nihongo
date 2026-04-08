@@ -1,7 +1,8 @@
 -- ══════════════════════════════════════════════════════
 --  Nugget Nihongo — Supabase Schema
---  Version: v1.0 (2 April 2026)
+--  Version: v1.1 (8 April 2026)
 --  Run this in Supabase SQL Editor (Dashboard > SQL Editor > New Query)
+--  Safe to re-run: all statements are idempotent.
 --
 --  Tables: profiles, srs_cards, course_progress, achievements,
 --          review_history, error_reports, user_settings
@@ -23,15 +24,23 @@ CREATE TABLE IF NOT EXISTS public.profiles (
   updated_at    TIMESTAMPTZ DEFAULT NOW()
 );
 
--- learning_dna GIN index for fast queries on weak items / profile data
+-- Add learning_dna if table pre-existed without it (safe no-op if already present)
+ALTER TABLE public.profiles ADD COLUMN IF NOT EXISTS learning_dna JSONB DEFAULT '{}';
+
+-- Indexes (IF NOT EXISTS makes these safe to re-run)
 CREATE INDEX IF NOT EXISTS idx_profiles_learning_dna ON public.profiles USING GIN (learning_dna);
 
 ALTER TABLE public.profiles ENABLE ROW LEVEL SECURITY;
 
+DROP POLICY IF EXISTS "profiles_select_own" ON public.profiles;
 CREATE POLICY "profiles_select_own" ON public.profiles
   FOR SELECT USING (auth.uid() = id);
+
+DROP POLICY IF EXISTS "profiles_insert_own" ON public.profiles;
 CREATE POLICY "profiles_insert_own" ON public.profiles
   FOR INSERT WITH CHECK (auth.uid() = id);
+
+DROP POLICY IF EXISTS "profiles_update_own" ON public.profiles;
 CREATE POLICY "profiles_update_own" ON public.profiles
   FOR UPDATE USING (auth.uid() = id);
 
@@ -57,17 +66,24 @@ CREATE TABLE IF NOT EXISTS public.srs_cards (
   UNIQUE(user_id, item_type, item_id)
 );
 
-CREATE INDEX idx_srs_user_due ON public.srs_cards(user_id, due);
-CREATE INDEX idx_srs_user_state ON public.srs_cards(user_id, state);
+CREATE INDEX IF NOT EXISTS idx_srs_user_due   ON public.srs_cards(user_id, due);
+CREATE INDEX IF NOT EXISTS idx_srs_user_state ON public.srs_cards(user_id, state);
 
 ALTER TABLE public.srs_cards ENABLE ROW LEVEL SECURITY;
 
+DROP POLICY IF EXISTS "srs_select_own" ON public.srs_cards;
 CREATE POLICY "srs_select_own" ON public.srs_cards
   FOR SELECT USING (auth.uid() = user_id);
+
+DROP POLICY IF EXISTS "srs_insert_own" ON public.srs_cards;
 CREATE POLICY "srs_insert_own" ON public.srs_cards
   FOR INSERT WITH CHECK (auth.uid() = user_id);
+
+DROP POLICY IF EXISTS "srs_update_own" ON public.srs_cards;
 CREATE POLICY "srs_update_own" ON public.srs_cards
   FOR UPDATE USING (auth.uid() = user_id);
+
+DROP POLICY IF EXISTS "srs_delete_own" ON public.srs_cards;
 CREATE POLICY "srs_delete_own" ON public.srs_cards
   FOR DELETE USING (auth.uid() = user_id);
 
@@ -86,10 +102,15 @@ CREATE TABLE IF NOT EXISTS public.course_progress (
 
 ALTER TABLE public.course_progress ENABLE ROW LEVEL SECURITY;
 
+DROP POLICY IF EXISTS "course_select_own" ON public.course_progress;
 CREATE POLICY "course_select_own" ON public.course_progress
   FOR SELECT USING (auth.uid() = user_id);
+
+DROP POLICY IF EXISTS "course_insert_own" ON public.course_progress;
 CREATE POLICY "course_insert_own" ON public.course_progress
   FOR INSERT WITH CHECK (auth.uid() = user_id);
+
+DROP POLICY IF EXISTS "course_update_own" ON public.course_progress;
 CREATE POLICY "course_update_own" ON public.course_progress
   FOR UPDATE USING (auth.uid() = user_id);
 
@@ -104,8 +125,11 @@ CREATE TABLE IF NOT EXISTS public.achievements (
 
 ALTER TABLE public.achievements ENABLE ROW LEVEL SECURITY;
 
+DROP POLICY IF EXISTS "ach_select_own" ON public.achievements;
 CREATE POLICY "ach_select_own" ON public.achievements
   FOR SELECT USING (auth.uid() = user_id);
+
+DROP POLICY IF EXISTS "ach_insert_own" ON public.achievements;
 CREATE POLICY "ach_insert_own" ON public.achievements
   FOR INSERT WITH CHECK (auth.uid() = user_id);
 
@@ -121,12 +145,15 @@ CREATE TABLE IF NOT EXISTS public.review_history (
   reviewed_at   TIMESTAMPTZ DEFAULT NOW()
 );
 
-CREATE INDEX idx_review_user_time ON public.review_history(user_id, reviewed_at DESC);
+CREATE INDEX IF NOT EXISTS idx_review_user_time ON public.review_history(user_id, reviewed_at DESC);
 
 ALTER TABLE public.review_history ENABLE ROW LEVEL SECURITY;
 
+DROP POLICY IF EXISTS "review_select_own" ON public.review_history;
 CREATE POLICY "review_select_own" ON public.review_history
   FOR SELECT USING (auth.uid() = user_id);
+
+DROP POLICY IF EXISTS "review_insert_own" ON public.review_history;
 CREATE POLICY "review_insert_own" ON public.review_history
   FOR INSERT WITH CHECK (auth.uid() = user_id);
 
@@ -145,8 +172,11 @@ CREATE TABLE IF NOT EXISTS public.error_reports (
 
 ALTER TABLE public.error_reports ENABLE ROW LEVEL SECURITY;
 
+DROP POLICY IF EXISTS "error_insert_any" ON public.error_reports;
 CREATE POLICY "error_insert_any" ON public.error_reports
   FOR INSERT WITH CHECK (true);  -- anyone can report
+
+DROP POLICY IF EXISTS "error_select_own" ON public.error_reports;
 CREATE POLICY "error_select_own" ON public.error_reports
   FOR SELECT USING (auth.uid() = user_id);
 
@@ -165,10 +195,15 @@ CREATE TABLE IF NOT EXISTS public.user_settings (
 
 ALTER TABLE public.user_settings ENABLE ROW LEVEL SECURITY;
 
+DROP POLICY IF EXISTS "settings_select_own" ON public.user_settings;
 CREATE POLICY "settings_select_own" ON public.user_settings
   FOR SELECT USING (auth.uid() = user_id);
+
+DROP POLICY IF EXISTS "settings_insert_own" ON public.user_settings;
 CREATE POLICY "settings_insert_own" ON public.user_settings
   FOR INSERT WITH CHECK (auth.uid() = user_id);
+
+DROP POLICY IF EXISTS "settings_update_own" ON public.user_settings;
 CREATE POLICY "settings_update_own" ON public.user_settings
   FOR UPDATE USING (auth.uid() = user_id);
 
@@ -200,11 +235,18 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
+DROP TRIGGER IF EXISTS profiles_updated_at ON public.profiles;
 CREATE TRIGGER profiles_updated_at BEFORE UPDATE ON public.profiles
   FOR EACH ROW EXECUTE FUNCTION public.update_updated_at();
+
+DROP TRIGGER IF EXISTS srs_updated_at ON public.srs_cards;
 CREATE TRIGGER srs_updated_at BEFORE UPDATE ON public.srs_cards
   FOR EACH ROW EXECUTE FUNCTION public.update_updated_at();
+
+DROP TRIGGER IF EXISTS course_updated_at ON public.course_progress;
 CREATE TRIGGER course_updated_at BEFORE UPDATE ON public.course_progress
   FOR EACH ROW EXECUTE FUNCTION public.update_updated_at();
+
+DROP TRIGGER IF EXISTS settings_updated_at ON public.user_settings;
 CREATE TRIGGER settings_updated_at BEFORE UPDATE ON public.user_settings
   FOR EACH ROW EXECUTE FUNCTION public.update_updated_at();
