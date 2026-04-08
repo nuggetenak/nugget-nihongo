@@ -164,6 +164,57 @@ bookFiles.forEach(bf => {
   // Book files use window.bookMinna1 etc — check if loaded
 });
 
+// ── Fallback JSON validation ──
+console.log('── Fallback drills ──');
+const grammarDrillsPath = path.join(ROOT, 'public/data/fallback/grammar-drills.json');
+const vocabDrillsPath   = path.join(ROOT, 'public/data/fallback/vocab-drills.json');
+
+if (!fs.existsSync(grammarDrillsPath)) {
+  fail++; console.error('  FAIL: grammar-drills.json not found at public/data/fallback/');
+} else {
+  let grammarDrills;
+  try {
+    grammarDrills = JSON.parse(fs.readFileSync(grammarDrillsPath, 'utf8'));
+  } catch (e) {
+    fail++; console.error('  FAIL: grammar-drills.json is invalid JSON:', e.message);
+  }
+  if (grammarDrills) {
+    assert(Array.isArray(grammarDrills.items), 'grammar-drills.json: items must be an array');
+    assert(grammarDrills.items.length >= 10, `grammar-drills.json: need ≥10 items (got ${grammarDrills.items.length})`);
+    grammarDrills.items.forEach(function (item, i) {
+      assert(item.id,             `grammar-drills[${i}]: missing id`);
+      assert(item.question,       `grammar-drills[${i}] ${item.id}: missing question`);
+      assert(item.answer,         `grammar-drills[${i}] ${item.id}: missing answer`);
+      assert(item.explanation_id, `grammar-drills[${i}] ${item.id}: missing explanation_id`);
+      assert(Array.isArray(item.options) && item.options.length >= 2,
+        `grammar-drills[${i}] ${item.id}: options must be array with ≥2 items`);
+    });
+  }
+}
+
+if (!fs.existsSync(vocabDrillsPath)) {
+  fail++; console.error('  FAIL: vocab-drills.json not found at public/data/fallback/');
+} else {
+  let vocabDrills;
+  try {
+    vocabDrills = JSON.parse(fs.readFileSync(vocabDrillsPath, 'utf8'));
+  } catch (e) {
+    fail++; console.error('  FAIL: vocab-drills.json is invalid JSON:', e.message);
+  }
+  if (vocabDrills) {
+    assert(Array.isArray(vocabDrills.items), 'vocab-drills.json: items must be an array');
+    assert(vocabDrills.items.length >= 10, `vocab-drills.json: need ≥10 items (got ${vocabDrills.items.length})`);
+    vocabDrills.items.forEach(function (item, i) {
+      assert(item.id,             `vocab-drills[${i}]: missing id`);
+      assert(item.question,       `vocab-drills[${i}] ${item.id}: missing question`);
+      assert(item.answer,         `vocab-drills[${i}] ${item.id}: missing answer`);
+      assert(item.explanation_id, `vocab-drills[${i}] ${item.id}: missing explanation_id`);
+      assert(Array.isArray(item.options) && item.options.length >= 2,
+        `vocab-drills[${i}] ${item.id}: options must be array with ≥2 items`);
+    });
+  }
+}
+
 // ── Summary ──
 console.log(`\n══════════════════════════════════`);
 console.log(`  PASS: ${pass}  |  FAIL: ${fail}  |  SKIP: ${skip}`);

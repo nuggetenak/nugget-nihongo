@@ -18,9 +18,13 @@ CREATE TABLE IF NOT EXISTS public.profiles (
   xp            INTEGER DEFAULT 0,
   streak_days   INTEGER DEFAULT 0,
   streak_last   DATE,
+  learning_dna  JSONB DEFAULT '{}',
   created_at    TIMESTAMPTZ DEFAULT NOW(),
   updated_at    TIMESTAMPTZ DEFAULT NOW()
 );
+
+-- learning_dna GIN index for fast queries on weak items / profile data
+CREATE INDEX IF NOT EXISTS idx_profiles_learning_dna ON public.profiles USING GIN (learning_dna);
 
 ALTER TABLE public.profiles ENABLE ROW LEVEL SECURITY;
 
