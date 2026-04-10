@@ -233,6 +233,30 @@ function reviewCard(cardId, rating) {
     }
   }
 
+  // Check custom FSRS hook (fsrs-math.js) before standard ts-fsrs
+  if (window._customFSRS) {
+    try {
+      var custom = window._customFSRS(entry.card, rating, now);
+      if (custom) {
+        entry.card.stability = custom.stability;
+        entry.card.difficulty = custom.difficulty;
+        entry.card.scheduled_days = custom.interval;
+        entry.card.due = new Date(now.getTime() + custom.interval * 86400000).toISOString();
+        entry.card.reps = (entry.card.reps || 0) + 1;
+        if (rating === 1) entry.card.lapses = (entry.card.lapses || 0) + 1;
+        entry.card.last_review = now.toISOString();
+        entry.card.elapsed_days = Math.max(0, Math.round((now - new Date(entry.card.last_review)) / 86400000));
+        window.srsData[cardId] = entry;
+        entry.history = (entry.history || []).slice(-19);
+        entry.history.push({ date: now.toISOString(), rating: rating });
+        saveCards();
+        return entry;
+      }
+    } catch (e) {
+      console.warn('[fsrs-engine] Custom FSRS hook error, falling through to ts-fsrs:', e);
+    }
+  }
+
   // Schedule next review via FSRS
   if (fsrsAvailable && fsrs) {
     try {

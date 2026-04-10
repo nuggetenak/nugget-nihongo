@@ -1,9 +1,12 @@
 // ══════════════════════════════════════
-//  streak.js — Daily streak tracking + broken modal
-//  Depends on: LS_STREAK (core/state.js)
+//  streak.js — Streak badge UI + broken streak modal
+//  Loaded AFTER gamification.js.
+//  Storage is owned by gamification.js (window.streakState / nn_streak key).
+//  This module is display-only + provides window.markStudyActivity alias.
 //
 //  Exports (window.*):
-//    closeStreakBroken()
+//    markStudyActivity()   fn   Record study activity (delegates to gamification.js)
+//    closeStreakBroken()   fn   Close the broken-streak modal
 // ══════════════════════════════════════
 
 const STREAK_TIPS = [
@@ -14,68 +17,38 @@ const STREAK_TIPS = [
   "Anki pun bilang: review hari ini lebih baik dari tidak sama sekali!",
 ];
 
+// loadStreak — reads from gamification.js window.streakState (already loaded)
 function loadStreak() {
-  let data = { count: 0, lastDate: null, broken: false };
-  try { data = JSON.parse(localStorage.getItem(LS_STREAK)) || data; } catch(e) {}
-
+  const data = window.streakState || { current: 0 };
   const badge = document.getElementById('streakBadge');
   const num   = document.getElementById('streakNum');
   if (badge && num) {
-    num.textContent = data.count;
+    num.textContent = data.current || 0;
     badge.style.display = 'flex';
-    if (data.count >= 7) badge.classList.add('streak-hot');
+    if ((data.current || 0) >= 7) badge.classList.add('streak-hot');
   }
-  return data.count;
 }
 
-// TASK-UI-7: dipanggil saat user benar-benar belajar (bukan saat load page)
-window.markStudyActivity = function() {
-  const today = new Date().toDateString();
-  // Cegah double-count hari yang sama
-  let activityDate = null;
-  try { activityDate = localStorage.getItem(LS_STREAK_ACTIVITY); } catch(e) {}
-  if (activityDate === today) return; // sudah dihitung hari ini
-  try { localStorage.setItem(LS_STREAK_ACTIVITY, today); } catch(e) {}
-
-  // Sekarang increment streak
-  let data = { count: 0, lastDate: null, broken: false };
-  try { data = JSON.parse(localStorage.getItem(LS_STREAK)) || data; } catch(e) {}
-
-  let showBroken = false;
-  const yesterday = new Date(Date.now() - 86400000).toDateString();
-  if (data.lastDate === yesterday) {
-    data.count++;
-    data.broken = false;
-  } else if (data.lastDate !== null && data.lastDate !== today) {
-    showBroken = data.count > 1;
-    data.count = 1;
-    data.broken = true;
-  } else if (data.lastDate === null) {
-    data.count = 1;
+// markStudyActivity — delegates to gamification.js streakRecordActivity
+window.markStudyActivity = function () {
+  if (window.streakRecordActivity) {
+    window.streakRecordActivity();
+    // Refresh badge after recording
+    loadStreak();
   }
-  data.lastDate = today;
-  try { localStorage.setItem(LS_STREAK, JSON.stringify(data)); } catch(e) {}
-
-  // Update badge
-  const badge = document.getElementById('streakBadge');
-  const num   = document.getElementById('streakNum');
-  if (badge && num) {
-    num.textContent = data.count;
-    if (data.count >= 7) badge.classList.add('streak-hot');
-  }
-  if (showBroken) setTimeout(showStreakBroken, 800);
 };
 
 function showStreakBroken() {
   const tip = STREAK_TIPS[Math.floor(Math.random() * STREAK_TIPS.length)];
   const modal = document.getElementById('streakBrokenModal');
   if (!modal) return;
-  document.getElementById('streakTipText').textContent = tip;
+  const tipEl = document.getElementById('streakTipText');
+  if (tipEl) tipEl.textContent = tip;
   modal.classList.add('show');
   const fire = document.getElementById('streakBrokenFire');
   if (fire) fire.classList.add('crack');
 }
 
-window.closeStreakBroken = function() {
+window.closeStreakBroken = function () {
   document.getElementById('streakBrokenModal')?.classList.remove('show');
 };

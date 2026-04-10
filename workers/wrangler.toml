@@ -1,0 +1,31 @@
+# ══════════════════════════════════════════════════════════════════
+#  Nugget Nihongo — Cloudflare Worker config
+#  Deploy: npx wrangler deploy
+#
+#  First-time setup:
+#    1. npx wrangler login
+#    2. npx wrangler kv:namespace create "RATE_LIMITS"
+#       → copy the id into [[kv_namespaces]] below
+#    3. npx wrangler secret put GEMINI_API_KEY
+#    4. npx wrangler secret put GROQ_API_KEY
+#    5. npx wrangler deploy
+# ══════════════════════════════════════════════════════════════════
+
+name            = "nugget-nihongo-ai"
+main            = "ai-proxy.js"
+compatibility_date = "2024-09-01"
+
+[vars]
+DAILY_LIMIT   = "15"
+# ALLOWED_ORIGIN is enforced in code (ALLOWED_ORIGINS array)
+
+# ── KV namespace for rate limiting ────────────────────────────────
+# After running: npx wrangler kv:namespace create "RATE_LIMITS"
+# Replace the id below with the output id
+[[kv_namespaces]]
+binding = "RATE_LIMITS"
+id      = "REPLACE_WITH_KV_NAMESPACE_ID"
+
+# ── Secrets (set via wrangler secret put, never commit here) ──────
+# GEMINI_API_KEY  — get from https://aistudio.google.com/app/apikey
+# GROQ_API_KEY    — get from https://console.groq.com/keys

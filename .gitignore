@@ -1,14 +1,10 @@
-# ── Internal (not deployed) ──────────────────────────
+# ── Not deployed (build/dev tools only) ─────────────
 agents/
-docs/
 tools/
 logs/
 state/
-
-# ── Project management ───────────────────────────────
-_MAP.md
-_MAP-ARCHIVE.md
-SESSION-RECAP*.txt
+# docs/ is intentionally tracked — project knowledge base
+# _MAP.md and session recaps are tracked — project governance
 
 # ── Environment ──────────────────────────────────────
 *.env
@@ -32,3 +28,9 @@ Thumbbs.db
 *.bak
 /tmp/
 pk-nugget-nihongo/
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example
