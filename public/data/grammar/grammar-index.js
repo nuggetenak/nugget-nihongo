@@ -26,7 +26,7 @@
   // Add 'grammar' getter to every entry that reads from 'pattern'
   for (var i = 0; i < window.grammarDB.length; i++) {
     var entry = window.grammarDB[i];
-    if (entry.pattern && !entry.grammar) {
+    if (entry && entry.pattern && !entry.grammar) {
       entry.grammar = entry.pattern;
     }
   }
@@ -37,6 +37,7 @@
   const byCat   = {};
 
   for (const g of window.grammarDB) {
+    if (!g) continue;
     byId[g.id] = g;
 
     if (!byLevel[g.level]) byLevel[g.level] = [];

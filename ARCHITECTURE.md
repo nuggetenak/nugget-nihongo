@@ -1,119 +1,214 @@
-# Nugget Nihongo — Architecture
+# Nugget Nihongo — Architecture (v15.6.0)
 
 ## Overview
-Vanilla JavaScript PWA for Japanese language learning (JLPT N5–N1).
-Offline-first, zero build step, no framework, no bundler.
+
+Hybrid vanilla JavaScript PWA for Japanese language learning (JLPT N5–N1), targeting Indonesian speakers.
+- **Not offline-first** — Supabase is the primary data store; IndexedDB + SW are the offline fallback
+- **No build step, no framework, no bundler** — pure HTML/CSS/JS loaded via `<script>` tags
+- **AI-enabled** — Cloudflare Worker proxies Groq (fast) + Gemini (complex) with rate limiting
+
+## Deployment Architecture
+
+```
+GitHub repo (nuggetenak/nugget-nihongo)
+│
+├── Cloudflare Pages (wrangler.jsonc)
+│   └── serves public/ as static assets
+│   └── npm run deploy  (wrangler pages deploy public)
+│
+├── Cloudflare Worker (workers/wrangler.toml)
+│   ├── workers/ai-proxy.js — tiered AI routing
+│   ├── Groq API (fast: llama-3.1-8b-instant)
+│   ├── Gemini API (complex: gemini-1.5-flash)
+│   └── KV namespace RATE_LIMITS — per-user rate limiting
+│
+├── Supabase (project: oxeuwkpgrtojjzhcboqz)
+│   ├── supabase/schema.sql — 7 tables + RLS + triggers
+│   ├── supabase/functions/ai-router/ — Edge Function (backup AI route)
+│   └── Supabase Auth — Google OAuth
+│
+└── GitHub Actions (.github/workflows/)
+    └── deploy.yml — Cloudflare Pages deployment
+```
 
 ## Stack
-- **Runtime**: Vanilla JS (ES2020) — no React, no Vue, no build tools
-- **Styling**: Single CSS file with section index (§1–§19)
-- **Data**: JS files exporting to `window.*` globals
-- **Offline**: Service Worker with static asset caching
-- **Fonts**: DM Sans (Latin, variable) + BIZ UDGothic (JP, subsetted)
-- **CI/CD**: GitHub Actions → GitHub Pages
-- **Testing**: Custom Node.js test runner (no framework)
+
+| Layer | Technology |
+|-------|-----------|
+| Runtime | Vanilla JS (ES2020+) — no React, Vue, or build tools |
+| Styling | Single CSS file (3144 lines, §1–§20) |
+| Data | JS files exporting to `window.*` globals |
+| Spaced Repetition | ts-fsrs CDN + custom Indonesian-learner calibration |
+| Offline | Service Worker (cache-first static / network-first API) + IndexedDB |
+| Backend | Supabase — auth, SRS sync, progress, `learning_dna` JSONB |
+| AI Proxy | Cloudflare Worker — tiered routing with KV rate limits |
+| Fonts | DM Sans (Latin) + BIZ UDGothic (JP, subsetted) |
+| Testing | Custom Node.js test runner (no framework) |
+| CI/CD | GitHub Actions → Cloudflare Pages |
 
 ## Directory Structure
+
 ```
 nugget-nihongo/
-├── public/                          # DEPLOY ROOT — everything here = production
-│   ├── index.html                   # Entry point, script load order defined inline
-│   ├── sw.js                        # Service worker, CACHE version string
+├── public/                          # DEPLOY ROOT — Cloudflare Pages serves this
+│   ├── index.html                   # SPA entry point, 4 tabs (Browse/Quiz/Sensei/Stats)
+│   ├── sw.js                        # Service worker (nihongo-v15.6.0)
 │   ├── manifest.webmanifest         # PWA manifest
 │   ├── icons/                       # PWA icons (192, 512)
 │   ├── fonts/                       # Subsetted woff2 (DM Sans + BIZ UDGothic)
 │   ├── styles/
-│   │   └── app.css                  # All styles, section index §1–§19
+│   │   └── app.css                  # All styles (3144 lines, §1–§20)
 │   ├── js/
-│   │   ├── core/                    # version, state, router, theme, install, grammar-query
+│   │   ├── core/                    # version.js, state.js, router.js, theme.js, install.js
 │   │   ├── lang/                    # lang-core.js (sentence generator)
+│   │   ├── local-state.js           # IndexedDB wrapper + Supabase sync queue
+│   │   ├── fsrs-math.js             # FSRS math utilities + Indonesian calibration
+│   │   ├── fsrs-engine.js           # FSRS scheduler (ts-fsrs) + IndexedDB sync hook
+│   │   ├── gamification.js          # Streak, XP, achievements (window.streakState)
+│   │   ├── streak.js                # Streak display (delegates to gamification.js)
+│   │   ├── analytics.js             # Stats dashboard (JLPT rings, SRS health, heatmap)
+│   │   ├── ai-tutor.js              # AI Sensei (3 modes, quota, DNA context)
+│   │   ├── supabase-client.js       # Auth, SRS sync, Learning DNA API
+│   │   ├── dna-summarizer.js        # Extracts learning patterns for AI context
+│   │   ├── ai-proxy.js              # Cloudflare Worker API client
+│   │   ├── sync-hook.js             # Supabase sync orchestration
 │   │   ├── app.js                   # Thin orchestrator — DOMContentLoaded, always last
-│   │   └── *.js                     # Feature modules (quiz, browse, srs, conjugation…)
+│   │   └── *.js                     # Feature modules: browse, quiz, conjugation…
 │   └── data/
-│       ├── vocab/                   # Vocabulary entries per JLPT level + merger
-│       │   ├── vocab-n5.js … n1.js  # Per-level vocab (window.vocabN5 etc.)
+│       ├── vocab/
+│       │   ├── vocab-n5.js (711)    # window.vocabN5
+│       │   ├── vocab-n4.js (692)    # window.vocabN4
+│       │   ├── vocab-n3.js (70)     # window.vocabN3
+│       │   ├── vocab-n2.js (50)     # window.vocabN2 — seed data
+│       │   ├── vocab-n1.js (20)     # window.vocabN1 — seed data
 │       │   └── vocab-index.js       # Merges all → window.vocabDB
-│       ├── grammar/                 # Grammar cards, week cards, quiz banks
-│       │   ├── grammar-n5.js … n1.js # Tier 1 global grammar entries
-│       │   ├── n3-w1.js … n4-w6.js  # Week-based grammar cards
-│       │   ├── bank-soal*.js        # Quiz question banks
-│       │   └── index.js             # Merges grammar → window.grammarData
-│       ├── books/                   # Book index (chapter → ID mappings)
-│       │   ├── book-minna-*.js      # Minna no Nihongo I & II
-│       │   ├── book-irodori-*.js    # Irodori A1, A2-1, A2-2
-│       │   └── sources.js           # Book metadata & credits
-│       ├── qa-tests.js              # Dev-only referential integrity tests
-│       ├── _schema.md               # Grammar data schema
-│       └── _schema-vocab.md         # Vocab data schema
+│       ├── grammar/
+│       │   ├── grammar-n5.js (80)   # window.grammarN5
+│       │   ├── grammar-n4.js (90)   # window.grammarN4
+│       │   ├── grammar-n3.js (103)  # window.grammarN3
+│       │   ├── grammar-n2.js (30)   # window.grammarN2 — seed data
+│       │   ├── grammar-n1.js        # window.grammarN1 — empty
+│       │   └── grammar-index.js     # Merges all → window.grammarDB + query API
+│       ├── books/
+│       │   ├── sources.js           # Book metadata registry
+│       │   ├── book-minna-1/2.js    # Minna no Nihongo chapter→ID lens
+│       │   ├── book-irodori-*.js    # Irodori chapter→ID lens
+│       │   └── soumatome/           # Soumatome grammar lenses (N3: 132, N4: 102)
+│       ├── tracks/
+│       │   └── tracks.js            # Track definitions (runtime-populated)
+│       └── fallback/
+│           ├── grammar-drills.json  # Offline AI fallback grammar drills
+│           └── vocab-drills.json    # Offline AI fallback vocab drills
 │
+├── workers/
+│   ├── ai-proxy.js                  # Cloudflare Worker — AI routing + rate limiting
+│   └── wrangler.toml                # Worker config (name: nugget-ai-proxy)
+│
+├── supabase/
+│   ├── schema.sql                   # Idempotent schema (DROP POLICY IF EXISTS, etc.)
+│   └── functions/
+│       └── ai-router/
+│           └── index.ts             # Edge Function — Groq+Gemini, Indonesian persona
+│
+├── wrangler.jsonc                   # Cloudflare Pages config
+├── package.json                     # npm scripts: test, deploy, preview
+├── .mcp.json                        # Supabase MCP server config
+├── docs/                            # Project documentation collection
 ├── tests/
-│   └── run.js                       # Test runner — validates schemas, IDs, xrefs
-├── tools/
-│   ├── config/                      # dependency-graph.json
-│   ├── scripts/
-│   │   ├── utils/                   # 107 utility scripts (health, merge, version, etc.)
-│   │   └── spicy/                   # 26 validation & audit scripts
-│   └── subset-fonts.py              # Font subsetting tool
-├── docs/                            # Governance, operational, curriculum, research DBs
-├── agents/                          # Agent prompt files (9 agents)
-├── .github/workflows/               # CI: deploy, validate, pre-deploy-checks
-│
-├── _MAP.md                          # Task registry — single source of truth
-├── ARCHITECTURE.md                  # This file
-├── CHANGELOG.md                     # Version history
-├── README.md                        # Project overview
-├── ROADMAP.md                       # Phase-based roadmap
-├── package.json                     # Metadata, npm scripts
-├── jsconfig.json                    # Editor support (path aliases)
-├── .editorconfig                    # Code style
-├── .prettierrc                      # Formatting rules
-├── .nvmrc                           # Node version (22)
-├── .gitignore                       # Excludes agents/, docs/, tools/ from deploy
-└── LICENSE                          # MIT
+│   └── run.js                       # Test runner (node tests/run.js)
+└── tools/                           # Build/migration scripts (gitignored)
 ```
 
-## Deployment Model
-`public/` is the deploy root. GitHub Actions uploads `public/` directly to GitHub Pages.
-No build step, no bundling, no transformation. What's in `public/` is what the user gets.
+## Data Architecture (v3)
 
-Everything outside `public/` (agents, docs, tools, tests) is development-only and excluded
-from production via `.gitignore` and the deploy workflow.
+### Three-tier system
 
-## Data Architecture
-Two-tier system (established v14.8.1):
+**Tier 1 — Global DB** (single source of truth)
+- `vocab-n5.js` … `vocab-n1.js` → merged by `vocab-index.js` → `window.vocabDB`
+- `grammar-n5.js` … `grammar-n1.js` → merged by `grammar-index.js` → `window.grammarDB`
+- `grammar-index.js` also provides: `window.getGrammar(id)`, `window.queryGrammar(filter)`, `window.sampleGrammar(filter, n)`
 
-**Tier 1 — Global entries**: Standalone, textbook-independent.
-- Vocab IDs: `vg-{level}-{4digit}` (e.g., `vg-n5-0001`)
-- Grammar IDs: `gn{level}-{4digit}` (e.g., `gn3-0001`)
+**Tier 2 — Book Lenses** (chapter→ID mappings)
+- Book files contain chapter arrays of `{ id: 'vg-n5-00001' }` references into Tier 1
+- No data duplication — lenses point into the global DB
 
-**Tier 2 — Book lens**: Chapter-to-ID mappings referencing Tier 1 entries.
-- `book-*.js` files map chapters to `vocab_ids[]` and `grammar_ids[]`.
+**Tier 3 — Study Tracks**
+- Runtime-populated arrays of IDs (from Tier 1 or Tier 2)
+- Auto-generated for JLPT levels, Soumatome chapters, or hand-curated (Freeway)
 
-## Script Load Order
-Defined in `public/index.html`. Critical dependency chain:
-1. `core/version.js` → `error-boundary.js` (must be 2nd)
-2. All `data/**/*.js` files
-3. Feature modules in dependency order (srs → browse → quiz chain)
-4. `app.js` — always last
+### ID Format
+- Vocab: `vg-{level}-{5digit}` → `vg-n5-00001`
+- Grammar: `gn{level}-{5digit}` → `gn5-00001`
 
 ## Key Globals
-| Variable | Source | Type |
-|----------|--------|------|
-| `window.APP_VERSION` | core/version.js | string |
-| `window.vocabDB` | data/vocab/vocab-index.js | VocabEntry[] |
-| `window.grammarData` | data/grammar/index.js | GrammarCard[] |
-| `window.progress` | core/state.js | object |
-| `window.srsData` | srs.js | object |
 
-## npm Scripts
-```bash
-npm test          # Run test suite (9500+ assertions)
-npm start         # Local dev server on :3000
-npm run serve     # Dev server with push-state routing
-npm run check:version  # Verify version.js ↔ sw.js sync
+| Global | Set by | Description |
+|--------|--------|-------------|
+| `window.APP_VERSION` | `core/version.js` | Single source of truth for version |
+| `window.vocabDB` | `vocab-index.js` | Merged vocab array (1473+ entries) |
+| `window.grammarDB` | `grammar-index.js` | Merged grammar array (273+ entries) |
+| `window.grammarData` | `grammar-index.js` | Alias for grammarDB (backwards compat) |
+| `window.grammarIdx` | `grammar-index.js` | Indexes: `{ byId, byLevel, byCat }` |
+| `window.streakState` | `gamification.js` | `{ current, longest, lastDate }` |
+| `window.sbClient` | `supabase-client.js` | Supabase JS client |
+| `window.localState` | `local-state.js` | IndexedDB wrapper + sync queue |
+
+## Script Load Order (index.html)
+
+```
+local-state.js           ← IndexedDB must be ready first
+core/version.js
+core/state.js
+core/router.js
+core/theme.js
+core/install.js
+[ts-fsrs CDN]
+fsrs-math.js
+fsrs-engine.js
+gamification.js
+streak.js                ← must load AFTER gamification.js
+backup-restore.js
+[Supabase CDN]
+supabase-client.js       ← must load AFTER Supabase CDN
+dna-summarizer.js
+ai-proxy.js
+ai-tutor.js
+sync-hook.js
+[feature modules: browse, quiz, conjugation, etc.]
+analytics.js
+app.js                   ← always last
 ```
 
-## Schemas
-- Vocab: `public/data/_schema-vocab.md`
-- Grammar: `public/data/_schema.md`
-- Taxonomy: `docs/curriculum/NUGGET-NIHONGO-TAXONOMY-MASTER-v2.md`
+## Service Worker Strategy
+
+`sw.js` uses a **hybrid cache strategy**:
+- **Cache-first** for all static assets (JS, CSS, HTML, fonts, data files)
+- **Network-first** for API endpoints: `supabase.co`, `workers.dev`, `googleapis.com`, `groq.com`
+
+Cache name: `nihongo-v15.6.0` (bump this on every deploy to force SW update)
+
+## AI Architecture
+
+```
+Client (browser)
+  └─ ai-tutor.js → ai-proxy.js (client) → Cloudflare Worker (workers/ai-proxy.js)
+                                              ├─ Simple queries → Groq (llama-3.1-8b-instant, fast)
+                                              └─ Complex queries → Gemini (gemini-1.5-flash)
+
+Supabase Edge Function (supabase/functions/ai-router/)
+  └─ Backup route (same dual-model logic, Indonesian tutor persona)
+```
+
+Learning DNA: `supabase-client.js` reads `window.localState.getDNA()` → injects mistake patterns into AI system prompt via `dna-summarizer.js`.
+
+## Offline Capability
+
+| Feature | Online | Offline |
+|---------|--------|---------|
+| Browse grammar/vocab | ✅ | ✅ (SW cache) |
+| Quiz / FSRS review | ✅ | ✅ (SW cache + IndexedDB) |
+| Conjugation | ✅ | ✅ (SW cache) |
+| AI Sensei | ✅ | ⚠️ Fallback drills only |
+| Stats dashboard | ✅ | ✅ (local IndexedDB) |
+| SRS sync | ✅ | ⏳ Queued in IndexedDB |
+| Auth | ✅ | ❌ Requires network |

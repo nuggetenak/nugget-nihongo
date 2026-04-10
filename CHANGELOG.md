@@ -1,5 +1,71 @@
 # Changelog — Nugget Nihongo
 
+## v15.6.0 (10 April 2026) — Enterprise Restructure + AI Infrastructure + Full Codebase Audit
+
+### Bug Fixes (Critical — app crashed on startup)
+- **BUG-001**: Removed `srsLoad()` call in `app.js` — `srs.js` was never loaded, caused ReferenceError that aborted entire DOMContentLoaded handler
+- **BUG-002**: Added `streak.js` to index.html load order; rewrote it to be display-only (delegates to `gamification.js`) — fixes `loadStreak()` ReferenceError
+- **BUG-003**: Activated Supabase CDN `<script>` tag in index.html — `window.supabase` was undefined, breaking all auth/sync/AI
+- **Fix**: Resolved `LS_STREAK` key conflict (`'bunpou_streak'` vs `'nn_streak'`) — streak.js now reads from `window.streakState` (gamification.js export)
+- **Fix**: Added null guards to `grammar-index.js` compat shim — prevented crash in Node.js test runner
+
+### New Features
+- **AI Sensei tab**: Full AI tutor (`ai-tutor.js` 364L) — 3 modes (explain/practice/test), quota bar, conversation history, Learning DNA context injection
+- **Stats tab**: Analytics dashboard (`analytics.js` 393L) — JLPT readiness rings, SRS health chart, review heatmap, weak-point tracker
+- **FSRS calibration**: `fsrs-math.js` (84L) — math utilities + `window.fsrsIndonesianPrior` hook for Indonesian-learner calibration
+- **Offline AI fallback**: `data/fallback/grammar-drills.json` + `vocab-drills.json` — 10+ drill items each, used when AI is unavailable
+
+### AI Infrastructure
+- **Cloudflare Worker** (`workers/ai-proxy.js`, 324L): tiered AI routing — Groq (llama-3.1-8b-instant, fast) + Gemini (gemini-1.5-flash, complex) with KV rate limiting per user
+- **Supabase Edge Function** (`supabase/functions/ai-router/index.ts`, 278L): backup AI route with Indonesian tutor persona
+- **Learning DNA**: `dna-summarizer.js` extracts mistake patterns; `supabase-client.js` injects into AI system prompt via Supabase `learning_dna` JSONB column
+
+### Supabase Upgrades
+- `supabase-client.js`: Added Learning DNA API, auth state listener, sync loop
+- `supabase/schema.sql`: Full idempotency (DROP POLICY IF EXISTS, CREATE INDEX IF NOT EXISTS, IF NOT EXISTS on all objects); `learning_dna JSONB DEFAULT '{}'` column on profiles
+- `fsrs-engine.js`: Added IndexedDB sync queue hook (saves to localState + queues Supabase sync)
+
+### Deployment
+- `wrangler.jsonc`: Cloudflare Pages config (serves `public/`, node_compat, observability)
+- `workers/wrangler.toml`: Cloudflare Worker config with KV namespace RATE_LIMITS
+- `package.json`: Added `deploy`/`preview` scripts + `wrangler@^4.81.0` devDependency; bumped version to 15.6.0; fixed repo URL to `nuggetenak/nugget-nihongo`
+
+### Service Worker (nihongo-v15.6.0)
+- Hybrid cache strategy: cache-first static, network-first for `supabase.co`, `workers.dev`, `googleapis.com`, `groq.com`
+- Added to cache: `streak.js`, `supabase-client.js`, `analytics.js`, `fsrs-math.js`, `local-state.js`, fallback drills
+- Removed from cache: `grammar-query.js` (legacy), empty N1/N2 placeholder stubs
+
+### Data
+- **Grammar N2**: 30 real seed entries (gn2-00001 → gn2-00030) — replaces empty stub
+- **Vocab N2**: 50 real seed entries (vg-n2-00001 → vg-n2-00050) — replaces empty stub
+- **Vocab N1**: 20 real seed entries (vg-n1-00001 → vg-n1-00020) — replaces empty stub
+
+### Dead Code Removal
+- Deleted `public/js/srs.js` — old SM-2 algorithm, fully superseded by `fsrs-engine.js` (FSRS)
+- Removed `grammar-query.js` from SW cache (superseded by `grammar-index.js`)
+
+### Test Suite
+- Removed 16 stale `loadData` calls (week cards n3-w1…n4-w6, dummy.js, bank-soal files, old grammar/index.js)
+- Added Architecture v3 tests: `grammarDB` count (≥273), `vocabDB` merged count (≥1400)
+- Added fallback drills validation (structure, item count, required fields)
+- Result: **10307 PASS, 0 FAIL** (was: 1 FAIL + 17 SKIPs)
+
+### Documentation
+- `ARCHITECTURE.md`: Complete rewrite for enterprise hybrid architecture
+- `CLAUDE.md`: Updated current state, tech stack, todo list for v15.6.0
+- `DESIGN_SYSTEM.md`: Component library documentation (new)
+- `SETUP.md`: Step-by-step install + Cloudflare Worker deployment guide (new)
+- `docs/`: Collected all project documents from all branches
+  - `docs/project/`: VISION, ROADMAP, _MAP, session recaps, directive logs, merge summary
+  - `docs/agent-system/`: AGENT-CORE, A1-A9 agents, common modules, reference guides
+  - `docs/supabase/`: 28 Postgres best practices reference guides
+
+### Tooling
+- `.mcp.json`: Supabase MCP server config (project ref oxeuwkpgrtojjzhcboqz)
+- `skills-lock.json`: Supabase Postgres best practices skill lock
+
+---
+
 ## v15.4.0 (2 April 2026) — JMdict Pipeline + Supabase + Claude Code Handoff
 - **Pipeline**: `tools/jmdict-pipeline.py` — downloads JMdict XML, transforms to Nugget Nihongo format
 - **Supabase**: `supabase/schema.sql` — 7 tables with RLS (profiles, srs_cards, course_progress, achievements, review_history, error_reports, user_settings)

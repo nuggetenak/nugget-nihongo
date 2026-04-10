@@ -3,14 +3,14 @@
 //  Merge semua level → window.vocabDB + window.vocabIdx
 //  Load SETELAH semua vocab-nX.js dan book-*.js
 //
-//  ACTIVE sources (arsitektur unified, RESTRUKTURISASI-B v14.9.0):
+//  ACTIVE sources (arsitektur unified v15.6.0):
 //    vocabN5  — vocab-n5.js  (711 entries)
 //    vocabN4  — vocab-n4.js  (692 entries)
+//    vocabN3  — vocab-n3.js  (70 entries)
 //
-//  PENDING (placeholder, belum aktif):
-//    vocabN3  — vocab-n3.js  (tunggu data)
-//    vocabN2  — vocab-n2.js  (tunggu data)
-//    vocabN1  — vocab-n1.js  (tunggu data)
+//  SEED DATA (partial, not production-complete):
+//    vocabN2  — vocab-n2.js  (50 seed entries)
+//    vocabN1  — vocab-n1.js  (20 seed entries)
 //
 //  BOOK INDEX sources (bukan entries — hanya referensi id):
 //    window.bookMinna1       — book-minna-1.js
