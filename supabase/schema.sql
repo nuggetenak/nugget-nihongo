@@ -250,3 +250,55 @@ CREATE TRIGGER course_updated_at BEFORE UPDATE ON public.course_progress
 DROP TRIGGER IF EXISTS settings_updated_at ON public.user_settings;
 CREATE TRIGGER settings_updated_at BEFORE UPDATE ON public.user_settings
   FOR EACH ROW EXECUTE FUNCTION public.update_updated_at();
+
+-- ── BOOK GRAMMAR ENTRIES ─────────────────────────────────
+-- Book-faithful grammar data (Soumatome, Irodori, Minna series)
+-- source_verified = false until checked against physical book
+CREATE TABLE IF NOT EXISTS public.book_grammar (
+  id              TEXT PRIMARY KEY,        -- e.g. 'sm-n5-001', 'ir-a1-001'
+  book            TEXT NOT NULL,           -- 'soumatome-n5', 'irodori-a1', etc.
+  level           TEXT,                    -- 'n5','n4','n3','n2','n1','a1','a2'
+  week            SMALLINT,                -- week number in book (Soumatome)
+  day             SMALLINT,                -- day within week
+  seq             SMALLINT,                -- sequence within day
+  unit            TEXT,                    -- unit/topic (Irodori/Minna)
+  pattern         TEXT NOT NULL,           -- '〜てから'
+  form            TEXT,                    -- 'V てから' (with conjugation info)
+  meaning_id      TEXT,                    -- Indonesian meaning (short)
+  meaning_en      TEXT,                    -- English meaning (short)
+  desc_id         TEXT,                    -- Indonesian full explanation
+  examples        JSONB   DEFAULT '[]',    -- [{jp:'...', id:'...'}]
+  quiz_items      JSONB   DEFAULT '[]',    -- exact quiz items from book
+  global_id       TEXT,                    -- cross-ref to grammar-n*.js global DB
+  source_verified BOOLEAN DEFAULT FALSE,   -- true = confirmed against physical book
+  created_at      TIMESTAMPTZ DEFAULT NOW(),
+  updated_at      TIMESTAMPTZ DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS idx_book_grammar_book  ON public.book_grammar(book);
+CREATE INDEX IF NOT EXISTS idx_book_grammar_level ON public.book_grammar(level);
+CREATE INDEX IF NOT EXISTS idx_book_grammar_week  ON public.book_grammar(book, week, day, seq);
+
+-- ── BOOK QUIZ ITEMS ──────────────────────────────────────
+-- Exact quiz/practice questions from each textbook
+CREATE TABLE IF NOT EXISTS public.book_quiz (
+  id              TEXT PRIMARY KEY,        -- e.g. 'sm-n3-q001'
+  book            TEXT NOT NULL,
+  grammar_id      TEXT REFERENCES public.book_grammar(id) ON DELETE SET NULL,
+  week            SMALLINT,
+  day             SMALLINT,
+  question        TEXT NOT NULL,
+  options         JSONB,                   -- [{text:'...', correct:true}]
+  answer          TEXT NOT NULL,
+  explanation_id  TEXT,                    -- Indonesian explanation
+  type            TEXT DEFAULT 'multiple_choice',
+  source_verified BOOLEAN DEFAULT FALSE,
+  created_at      TIMESTAMPTZ DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS idx_book_quiz_book       ON public.book_quiz(book);
+CREATE INDEX IF NOT EXISTS idx_book_quiz_grammar_id ON public.book_quiz(grammar_id);
+
+DROP TRIGGER IF EXISTS book_grammar_updated_at ON public.book_grammar;
+CREATE TRIGGER book_grammar_updated_at BEFORE UPDATE ON public.book_grammar
+  FOR EACH ROW EXECUTE FUNCTION public.update_updated_at();
