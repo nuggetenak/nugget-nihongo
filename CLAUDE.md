@@ -82,9 +82,61 @@ After running: entries need Indonesian translation + ID remapping from `jm-*` to
 Reconcile with existing N5 (711) and N4 (692) entries by word+reading match.
 
 #### 4. Indonesian Translation Pipeline
-N2/N1 vocab seed data needs `meaning_id` filled. N3 vocab (70 entries) needs bilingual examples.
+N2/N1 vocab seed data: already complete (filled in prior session). N3 vocab (70 entries): already has bilingual examples. ✅ DONE
 
-#### 5. UI Work (FE Agent domain — see corpus/v17-pass15 branch)
+#### 5. Irodori Grammar Lenses (HIGH — unlocks book track for SSW-relevant textbook)
+
+**Status as of 2026-04-11:**
+- `public/data/books/irodori/grammar-lens-ir-a1.js` ✅ COMPLETE — 61 entries, L3-L18, sourced from official PDF
+- `public/data/books/irodori/grammar-lens-ir-a2-1.js` ⚠️ STUB — 0 entries, lesson map only
+- `public/data/books/irodori/grammar-lens-ir-a2-2.js` ⚠️ STUB — 0 entries, lesson map only
+
+**§IRODORI — Instructions for next Claude Code agent:**
+
+1. **Source:** Official Irodori Grammar Notes PDF (CC BY 4.0, free)
+   - URL: `https://www.irodori.jpf.go.jp/assets/data/Grammar_all.pdf`
+   - Fetch with `web_fetch` — text extraction works fine
+   - Each grammar point in PDF is marked ➊➋➌ per lesson
+
+2. **Fill Elementary 1 (`grammar-lens-ir-a2-1.js`):**
+   - 18 lessons, target ~80-100 entries total
+   - Grammar IDs: `ir-a2-1-001` through `ir-a2-1-NNN`
+   - Window var: `window.grammarLensIrodoriA21`
+   - Link to `global_grammar_id` from `grammar-n5.js` + `grammar-n4.js`
+   - Key grammar expected: て-form rules, ている (progressive), たことがある, potential verbs, なければならない, てもいいですか, てあげる/くれる/もらう, 〜と思っています, ほうがいい, ために
+
+3. **Fill Elementary 2 (`grammar-lens-ir-a2-2.js`):**
+   - 18 lessons, target ~80-100 entries total
+   - Grammar IDs: `ir-a2-2-001` through `ir-a2-2-NNN`
+   - Window var: `window.grammarLensIrodoriA22`
+   - Link to `global_grammar_id` from `grammar-n4.js` + `grammar-n3.js`
+   - Key grammar expected: passive (られる), causative (させる), ば conditional, ～のに, ～ようにする, ～ために, keigo intro, relative clauses
+
+4. **Schema:** Follow exact same structure as `grammar-lens-ir-a1.js`:
+   ```js
+   {
+     id: 'ir-a2-1-001', global_grammar_id: 'gn5-00NNN', // or null
+     lesson: 1, seq: 1,
+     pattern: '〜ている',
+     raw: 'V-ている',
+     desc: '...(Bahasa Indonesia)...',
+     examples: [{ jp: '...', id: '...' }],
+   }
+   ```
+
+5. **After filling:** Update `book-irodori-a2-1.js` and `book-irodori-a2-2.js`
+   `grammar_ids` arrays to reference the new lens IDs (`ir-a2-1-001` etc.)
+
+6. **Verify:** Run `node tests/run.js` — should still be 10396 PASS, 0 FAIL
+
+7. **Push:** `git add -A && git commit -m "feat: fill Irodori A2-1 + A2-2 grammar lenses" && git push`
+
+**Also pending from prior session:**
+- Wire `grammar-lens-ir-a1.js` into `book-irodori-a1.js` `grammar_ids` arrays (currently `[]`)
+- Verify all `global_grammar_id` values in A1 lens against actual `grammar-n5.js` IDs
+  (Currently uses placeholder IDs `gn5-00001` etc. — need exact match check)
+
+#### 6. UI Work (FE Agent domain — see corpus/v17-pass15 branch)
 - Track selection page
 - Book browsing (Soumatome weekly view)
 - Methodology/About page + Daftar Pustaka (legally required if using JMdict)
@@ -115,4 +167,5 @@ If JMdict data is used, the app MUST display (e.g., on an About/Attribution page
 
 ---
 
-*Last edited: Claude Code (codebase audit) — 10 April 2026*
+*Last edited: Claude (web session — Irodori A1 grammar lens complete, A2-1/A2-2 stubs) — 11 April 2026*
+*Next session: Fill grammar-lens-ir-a2-1.js + grammar-lens-ir-a2-2.js per §IRODORI instructions above*
