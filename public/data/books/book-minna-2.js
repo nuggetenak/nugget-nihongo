@@ -1,504 +1,451 @@
 // ══════════════════════════════════════════════════════
-//  book-minna-2.js — Minna no Nihongo II · Chapter Index
-//  Source: Minna no Nihongo Shokyuu II (3A Corporation)
-//  Chapters: 26–50
-//  Status: FILLED by Agent 3 — vocab_ids dari vocabDB N5 + N4
-//
-//  ⚠ INI BUKAN VOCAB ENTRIES.
-//  grammar_ids dikosongkan — Grammar N5 belum ada di grammarData.
+//  book-minna-2.js — Nugget Nihongo Book Lens
+//  Plan C migration: all vocab_ids updated to vg-* format
+//  Migrated: 2026-04-11 · v15.6.1
 // ══════════════════════════════════════════════════════
 
 window.bookMinna2 = {
   meta: {
-    book      : 'minna-no-nihongo-2',
-    title     : 'Minna no Nihongo Shokyuu II',
-    publisher : '3A Corporation',
-    chapters  : 25,
-    jlpt_range: ['n5', 'n4'],
+      "book": "minna-no-nihongo-2",
+      "title": "Minna no Nihongo Shokyuu II",
+      "publisher": "3A Corporation",
+      "chapters": 25,
+      "jlpt_range": [
+          "n5",
+          "n4"
+      ]
   },
-  chapters: {
+  units: {
 
-    // Ch.26 — 普通形 (Bentuk biasa/plain form)
     26: {
-      topic      : '普通形 — Bentuk Biasa (Plain Form)',
+      topic      : "普通形 — Bentuk Biasa (Plain Form)",
       vocab_ids  : [
-        'v-n5-0023',  // 食べる — makan
-        'v-n5-0024',  // 飲む — minum
-        'v-n5-0009',  // 行く — pergi
-        'v-n5-0010',  // 来る — datang
-        'v-n5-0011',  // 帰る — pulang
-        'v-n5-0035',  // 起きる — bangun tidur
-        'v-n5-0036',  // 寝る — tidur
-        'v-n5-0032',  // 見る — melihat
-        'v-n5-0033',  // 読む — membaca
-        'v-n5-0012',  // 書く — menulis
-        'v-n5-0013',  // 聞く — mendengar
-        'v-n5-0020',  // する — melakukan
+        'vg-n5-00023', // 食べる — makan
+        'vg-n5-00024', // 飲む — minum
+        'vg-n5-00009', // 行く — pergi
+        'vg-n5-00010', // 来る — datang
+        'vg-n5-00011', // 帰る — pulang, kembali ke rumah
+        'vg-n5-00035', // 起きる — bangun (tidur); terjadi
+        'vg-n5-00036', // 寝る — tidur
+        'vg-n5-00032', // 見る — melihat; menonton
+        'vg-n5-00033', // 読む — membaca
+        'vg-n5-00012', // 書く — menulis
+        'vg-n5-00013', // 聞く — mendengar; bertanya
+        'vg-n5-00020', // する — melakukan
       ],
       grammar_ids: [],
     },
 
-    // Ch.27 — 〜と思います (Menyatakan pendapat)
     27: {
-      topic      : '〜と思います — Menyatakan Pendapat',
+      topic      : "〜と思います — Menyatakan Pendapat",
       vocab_ids  : [
-        'v-n4-0403',  // 意見 — pendapat
-        'v-n4-0402',  // 理由 — alasan
-        'v-n4-0131',  // 決める — memutuskan
-        'v-n4-0137',  // 変わる — berubah
-        'v-n5-0059',  // 良い — bagus, baik
-        'v-n5-0060',  // 悪い — buruk, jelek
-        'v-n5-0070',  // 難しい — sulit
-        'v-n5-0071',  // 易しい — mudah
-        'v-n4-0547',  // 大丈夫 — tidak apa-apa
-        'v-n4-0033',  // 心配 — khawatir, cemas
-        'v-n5-0143',  // でも — tapi; tetapi
-        'v-n5-0144',  // そして — dan kemudian; lalu
+        'vg-n4-00368', // 意見 — pendapat, opini
+        'vg-n4-00367', // 理由 — alasan
+        'vg-n4-00130', // 決める — memutuskan, menentukan
+        'vg-n4-00136', // 変わる — berubah
+        'vg-n5-00059', // 良い — bagus, baik
+        'vg-n5-00060', // 悪い — buruk, jelek
+        'vg-n5-00070', // 難しい — sulit
+        'vg-n5-00071', // 易しい — mudah, gampang
+        'vg-n4-00512', // 大丈夫 — tidak apa-apa; baik-baik saja
+        'vg-n4-00032', // 心配 — khawatir, cemas
+        'vg-n5-00143', // でも — tapi; tetapi
+        'vg-n5-00144', // そして — dan kemudian; lalu
       ],
       grammar_ids: [],
     },
 
-    // Ch.28 — 〜でしょう (Perkiraan cuaca dll)
     28: {
-      topic      : '〜でしょう — Perkiraan dan Ramalan',
+      topic      : "〜でしょう — Perkiraan dan Ramalan",
       vocab_ids  : [
-        'v-n5-0098',  // 天気 — cuaca
-        'v-n5-s0184', // 天気 (soumatome)
-        'v-n5-s0382', // 晴れ — cerah
-        'v-n5-s0383', // 曇り — mendung
-        'v-n5-s0211', // 雨 — hujan
-        'v-n5-0135',  // 雪 — salju
-        'v-n4-0039',  // 台風 — topan, badai
-        'v-n4-0038',  // 風 — angin
-        'v-n4-0559',  // 季節 — musim
-        'v-n5-0113',  // たくさん — banyak
-        'v-n5-0114',  // 少し — sedikit
-        'v-n5-s0313', // とても — sangat
+        'vg-n5-00098', // 天気 — cuaca
+        'vg-n5-00098', // 天気 — cuaca
+        'vg-n5-00672', // はれ — cerah
+        'vg-n5-00673', // くもり — mendung
+        'vg-n5-00134', // 雨 — hujan
+        'vg-n5-00135', // 雪 — salju
+        'vg-n4-00038', // 台風 — topan, taifun
+        'vg-n4-00037', // 風 — angin
+        'vg-n4-00524', // 季節 — musim
+        'vg-n5-00113', // たくさん — banyak
+        'vg-n5-00114', // 少し — sedikit
+        'vg-n5-00626', // とても — sangat
       ],
       grammar_ids: [],
     },
 
-    // Ch.29 — 〜ながら (Sambil melakukan sesuatu)
     29: {
-      topic      : '〜ながら — Sambil Melakukan',
+      topic      : "〜ながら — Sambil Melakukan",
       vocab_ids  : [
-        'v-n5-s0367', // 音楽 — musik
-        'v-n5-0032',  // 見る — melihat; menonton
-        'v-n5-0033',  // 読む — membaca
-        'v-n5-0024',  // 飲む — minum
-        'v-n5-0023',  // 食べる — makan
-        'v-n5-s0396', // テレビ — televisi
-        'v-n5-0043',  // 歌う — bernyanyi
-        'v-n5-0007',  // 歩く — berjalan
-        'v-n5-0119',  // いつも — selalu; biasanya
-        'v-n5-0120',  // 時々 — kadang-kadang
-        'v-n5-s0076', // 毎日 — setiap hari
-        'v-n5-0117',  // 一緒に — bersama
+        'vg-n5-00715', // 音楽 — musik
+        'vg-n5-00032', // 見る — melihat; menonton
+        'vg-n5-00033', // 読む — membaca
+        'vg-n5-00024', // 飲む — minum
+        'vg-n5-00023', // 食べる — makan
+        'vg-n5-00390', // テレビ — televisi
+        'vg-n5-00043', // 歌う — bernyanyi
+        'vg-n5-00007', // 歩く — berjalan
+        'vg-n5-00119', // いつも — selalu; biasanya
+        'vg-n5-00120', // 時々 — kadang-kadang
+        'vg-n5-00475', // 毎日 — setiap hari
+        'vg-n5-00117', // 一緒に — bersama
       ],
       grammar_ids: [],
     },
 
-    // Ch.30 — 〜てから (Setelah melakukan, urutan)
     30: {
-      topic      : '〜てから — Urutan Kegiatan',
+      topic      : "〜てから — Urutan Kegiatan",
       vocab_ids  : [
-        'v-n5-0046',  // 終わる — selesai
-        'v-n5-0047',  // 始まる — dimulai
-        'v-n5-0106',  // 始める — memulai
-        'v-n4-0106',  // 始める (N4)
-        'v-n5-s0057', // 前 — sebelum
-        'v-n5-s0060', // 後で — setelah itu
-        'v-n5-0035',  // 起きる — bangun tidur
-        'v-n5-0036',  // 寝る — tidur
-        'v-n5-0004',  // 浴びる — mandi shower
-        'v-n5-s0294', // シャワーをあびる — mandi shower
-        'v-n5-s0076', // 毎日 — setiap hari
+        'vg-n5-00046', // 終わる — selesai, berakhir
+        'vg-n5-00047', // 始まる — dimulai
+        'vg-n5-00106', // 週末 — akhir pekan
+        'vg-n4-00105', // 始める — memulai
+        'vg-n5-00461', // 前 — depan, sebelum
+        'vg-n5-00462', // 後で — nanti, setelah itu
+        'vg-n5-00035', // 起きる — bangun (tidur); terjadi
+        'vg-n5-00036', // 寝る — tidur
+        'vg-n5-00004', // 浴びる — mandi shower, terkena (sinar)
+        'vg-n5-00615', // シャワーをあびる — mandi shower
+        'vg-n5-00475', // 毎日 — setiap hari
       ],
       grammar_ids: [],
     },
 
-    // Ch.31 — 〜たことがあります (Pengalaman)
     31: {
-      topic      : '〜たことがあります — Pengalaman Pernah',
+      topic      : "〜たことがあります — Pengalaman Pernah",
       vocab_ids  : [
-        'v-n4-0400',  // 経験 — pengalaman
-        'v-n4-0392',  // 機会 — kesempatan
-        'v-n4-0388',  // 文化 — budaya
-        'v-n4-0390',  // 習慣 — kebiasaan
-        'v-n5-s0150', // 旅行 — perjalanan
-        'v-n5-s0036', // 日本 — Jepang
-        'v-n5-s0033', // 日本語 — bahasa Jepang
-        'v-n5-0045',  // 乗る — naik (kendaraan)
-        'v-n5-s0379', // 飛行機 — pesawat
-        'v-n5-s0380', // 船 — kapal
+        'vg-n4-00365', // 経験 — pengalaman
+        'vg-n4-00357', // 機会 — kesempatan, peluang
+        'vg-n4-00353', // 文化 — budaya
+        'vg-n4-00355', // 習慣 — kebiasaan, adat
+        'vg-n5-00525', // 旅行 — perjalanan, wisata
+        'vg-n5-00441', // 日本 — Jepang
+        'vg-n5-00439', // 日本語 — bahasa Jepang
+        'vg-n5-00045', // 乗る — naik (kendaraan)
+        'vg-n5-00713', // 飛行機 — pesawat
+        'vg-n5-00714', // 船 — kapal
       ],
       grammar_ids: [],
     },
 
-    // Ch.32 — 〜たり〜たり (Kegiatan bergantian)
     32: {
-      topic      : '〜たり〜たりします — Berbagai Kegiatan',
+      topic      : "〜たり〜たりします — Berbagai Kegiatan",
       vocab_ids  : [
-        'v-n5-0005',  // 遊ぶ — bermain
-        'v-n5-0043',  // 歌う — bernyanyi
-        'v-n5-0034',  // 泳ぐ — berenang
-        'v-n5-s0366', // サッカー — sepak bola
-        'v-n5-s0367', // 音楽 — musik
-        'v-n5-s0361', // スポーツ — olahraga
-        'v-n5-0026',  // 作る — membuat
-        'v-n5-0106',  // 週末 — akhir pekan
-        'v-n5-0119',  // いつも — selalu; biasanya
-        'v-n5-0120',  // 時々 — kadang-kadang
+        'vg-n5-00005', // 遊ぶ — bermain, bersenang-senang
+        'vg-n5-00043', // 歌う — bernyanyi
+        'vg-n5-00034', // 泳ぐ — berenang
+        'vg-n5-00398', // サッカー — sepak bola
+        'vg-n5-00715', // 音楽 — musik
+        'vg-n5-00397', // スポーツ — olahraga
+        'vg-n5-00026', // 作る — membuat
+        'vg-n5-00106', // 週末 — akhir pekan
+        'vg-n5-00119', // いつも — selalu; biasanya
+        'vg-n5-00120', // 時々 — kadang-kadang
       ],
       grammar_ids: [],
     },
 
-    // Ch.33 — 〜なります (Berubah menjadi)
     33: {
-      topic      : '〜なります — Menyatakan Perubahan',
+      topic      : "〜なります — Menyatakan Perubahan",
       vocab_ids  : [
-        'v-n4-0137',  // 変わる — berubah
-        'v-n4-0236',  // 増える — bertambah
-        'v-n4-0238',  // 減る — berkurang
-        'v-n5-0078',  // 上手 — pandai, mahir
-        'v-n5-0079',  // 下手 — tidak pandai
-        'v-n4-0537',  // 便利 — praktis
-        'v-n4-0538',  // 不便 — tidak praktis
-        'v-n5-0065',  // 新しい — baru
-        'v-n5-0061',  // 高い — tinggi; mahal
-        'v-n5-0062',  // 安い — murah
-        'v-n4-0559',  // 季節 — musim
-        'v-n5-s0093', // 新しい (soumatome)
+        'vg-n4-00136', // 変わる — berubah
+        'vg-n4-00234', // 増える — bertambah (intransitif)
+        'vg-n4-00236', // 減る — berkurang (intransitif)
+        'vg-n5-00078', // 上手 — pandai, mahir
+        'vg-n5-00079', // 下手 — tidak pandai, kurang mahir
+        'vg-n4-00502', // 便利 — praktis; mudah; berguna
+        'vg-n4-00503', // 不便 — tidak praktis; tidak nyaman
+        'vg-n5-00065', // 新しい — baru
+        'vg-n5-00061', // 高い — tinggi; mahal
+        'vg-n5-00062', // 安い — murah
+        'vg-n4-00524', // 季節 — musim
+        'vg-n5-00065', // 新しい — baru
       ],
       grammar_ids: [],
     },
 
-    // Ch.34 — 〜くて、〜で (Menghubungkan sifat)
     34: {
-      topic      : '〜くて・〜で — Menghubungkan Kata Sifat',
+      topic      : "〜くて・〜で — Menghubungkan Kata Sifat",
       vocab_ids  : [
-        'v-n5-0080',  // きれい — cantik; bersih
-        'v-n5-0081',  // 静か — tenang, hening
-        'v-n5-0082',  // 賑やか — ramai, meriah
-        'v-n5-0073',  // 可愛い — lucu, imut
-        'v-n5-0067',  // 面白い — menarik, lucu
-        'v-n5-0068',  // つまらない — membosankan
-        'v-n5-0069',  // 美味しい — enak, lezat
-        'v-n5-s0269', // おもしろい (soumatome)
-        'v-n5-s0275', // やさしい (soumatome)
-        'v-n4-0536',  // 親切 — ramah, baik hati
-        'v-n4-0527',  // 丁寧 — sopan, teliti
-        'v-n5-s0272', // 広い — luas, lebar
+        'vg-n5-00080', // きれい — cantik; bersih
+        'vg-n5-00081', // 静か — tenang, hening
+        'vg-n5-00082', // 賑やか — ramai, meriah
+        'vg-n5-00073', // 可愛い — lucu, imut
+        'vg-n5-00067', // 面白い — menarik, lucu
+        'vg-n5-00068', // つまらない — membosankan
+        'vg-n5-00069', // 美味しい — enak, lezat
+        'vg-n5-00271', // おもしろい — menarik, seru
+        'vg-n5-00270', // やさしい — baik hati; lembut
+        'vg-n4-00501', // 親切 — baik hati; ramah
+        'vg-n4-00492', // 丁寧 — sopan; teliti; seksama
+        'vg-n5-00716', // 広い — luas; lebar
       ],
       grammar_ids: [],
     },
 
-    // Ch.35 — 〜から (Alasan karena)
     35: {
-      topic      : '〜から — Menyatakan Alasan',
+      topic      : "〜から — Menyatakan Alasan",
       vocab_ids  : [
-        'v-n4-0402',  // 理由 — alasan
-        'v-n5-s0171', // 電車 — kereta listrik
-        'v-n4-0055',  // 乗り換える — berganti kendaraan
-        'v-n5-0045',  // 乗る — naik
-        'v-n5-0044',  // 降りる — turun
-        'v-n5-s0296', // かかる — membutuhkan (waktu/uang)
-        'v-n5-s0052', // 間に合う — tepat waktu
-        'v-n5-0141',  // 〜から — dari; karena
-        'v-n5-0072',  // 忙しい — sibuk
-        'v-n4-0030',  // 困る — kesulitan
-        'v-n4-0394',  // 問題 — masalah
-        'v-n4-0485',  // 説明する — menjelaskan
+        'vg-n4-00367', // 理由 — alasan
+        'vg-n5-00087', // 電車 — kereta listrik
+        'vg-n4-00054', // 乗り換える — transit, ganti kendaraan
+        'vg-n5-00045', // 乗る — naik (kendaraan)
+        'vg-n5-00044', // 降りる — turun (dari kendaraan)
+        'vg-n5-00180', // かかる — membutuhkan (waktu/biaya)
+        'vg-n5-00456', // 間に合う — tepat waktu
+        'vg-n5-00072', // 忙しい — sibuk
+        'vg-n4-00029', // 困る — kebingungan, kesulitan
+        'vg-n4-00359', // 問題 — masalah, soal
+        'vg-n4-00660', // 説明する — menjelaskan
       ],
       grammar_ids: [],
     },
 
-    // Ch.36 — 〜ので (Alasan sopan), 〜のに (Kontras)
     36: {
-      topic      : '〜ので・〜のに — Alasan dan Kontras',
+      topic      : "〜ので・〜のに — Alasan dan Kontras",
       vocab_ids  : [
-        'v-n4-0403',  // 意見 — pendapat
-        'v-n4-0394',  // 問題 — masalah
-        'v-n4-0393',  // 場合 — situasi, kasus
-        'v-n4-0030',  // 困る — kesulitan
-        'v-n4-0369',  // 悩む — bingung, galau
-        'v-n4-0371',  // 迷う — ragu-ragu
-        'v-n4-0547',  // 大丈夫 — tidak apa-apa
-        'v-n5-0072',  // 忙しい — sibuk
-        'v-n5-0059',  // 良い — bagus, baik
-        'v-n5-0143',  // でも — tapi; tetapi
-        'v-n4-0572',  // 相談 — konsultasi
+        'vg-n4-00368', // 意見 — pendapat, opini
+        'vg-n4-00359', // 問題 — masalah, soal
+        'vg-n4-00358', // 場合 — kasus, situasi, kondisi
+        'vg-n4-00029', // 困る — kebingungan, kesulitan
+        'vg-n4-00336', // 悩む — merasa dilema, khawatir
+        'vg-n4-00338', // 迷う — tersesat; bingung memilih
+        'vg-n4-00512', // 大丈夫 — tidak apa-apa; baik-baik saja
+        'vg-n5-00072', // 忙しい — sibuk
+        'vg-n5-00059', // 良い — bagus, baik
+        'vg-n5-00143', // でも — tapi; tetapi
+        'vg-n4-00537', // 相談 — konsultasi; diskusi
       ],
       grammar_ids: [],
     },
 
-    // Ch.37 — 〜てはいけません、〜なければなりません (Larangan & Kewajiban)
     37: {
-      topic      : '〜てはいけません・〜なければなりません — Larangan dan Kewajiban',
+      topic      : "〜てはいけません・〜なければなりません — Larangan dan Kewajiban",
       vocab_ids  : [
-        'v-n4-0482',  // 安全 — aman
-        'v-n4-0541',  // 必要 — diperlukan
-        'v-n5-0083',  // 大切 — penting
-        'v-n4-0397',  // 方法 — cara, metode
-        'v-n4-0166',  // 参加する — berpartisipasi
-        'v-n5-0025',  // 使う — menggunakan
-        'v-n5-0016',  // 消す — mematikan; menghapus
-        'v-n5-0017',  // つける — menyalakan
-        'v-n5-s0088', // 安心する — merasa lega
-        'v-n4-0033',  // 心配 — khawatir
-        'v-n5-0124',  // すみません — permisi; maaf
+        'vg-n4-00447', // 安全 — keselamatan; keamanan
+        'vg-n4-00506', // 必要 — perlu; diperlukan
+        'vg-n5-00083', // 大切 — penting, berharga
+        'vg-n4-00362', // 方法 — cara, metode
+        'vg-n4-00658', // 参加する — berpartisipasi, ikut serta
+        'vg-n5-00025', // 使う — menggunakan
+        'vg-n5-00016', // 消す — mematikan; menghapus
+        'vg-n5-00017', // つける — menyalakan; menempelkan
+        'vg-n5-00484', // 安心する — merasa lega
+        'vg-n4-00032', // 心配 — khawatir, cemas
+        'vg-n5-00124', // すみません — permisi; maaf
       ],
       grammar_ids: [],
     },
 
-    // Ch.38 — 〜そうです (Perkiraan dari penampilan)
     38: {
-      topic      : '〜そうです — Perkiraan dari Penampilan',
+      topic      : "〜そうです — Perkiraan dari Penampilan",
       vocab_ids  : [
-        'v-n5-0069',  // 美味しい — enak, lezat
-        'v-n5-0067',  // 面白い — menarik, lucu
-        'v-n5-0070',  // 難しい — sulit
-        'v-n5-0071',  // 易しい — mudah
-        'v-n5-0057',  // 大きい — besar
-        'v-n5-0058',  // 小さい — kecil
-        'v-n4-0521',  // 怖い — takut, menakutkan
-        'v-n4-0145',  // 悲しい — sedih
-        'v-n4-0143',  // 喜ぶ — bergembira
-        'v-n4-0367',  // 驚く — terkejut
-        'v-n5-0098',  // 天気 — cuaca
-        'v-n5-s0184', // 天気 (soumatome)
+        'vg-n5-00069', // 美味しい — enak, lezat
+        'vg-n5-00067', // 面白い — menarik, lucu
+        'vg-n5-00070', // 難しい — sulit
+        'vg-n5-00071', // 易しい — mudah, gampang
+        'vg-n5-00057', // 大きい — besar
+        'vg-n5-00058', // 小さい — kecil
+        'vg-n4-00486', // 怖い — menakutkan; seram
+        'vg-n4-00144', // 悲しい — sedih
+        'vg-n4-00142', // 喜ぶ — merasa senang, bergembira
+        'vg-n4-00335', // 驚く — terkejut, terkagum
+        'vg-n5-00098', // 天気 — cuaca
+        'vg-n5-00098', // 天気 — cuaca
       ],
       grammar_ids: [],
     },
 
-    // Ch.39 — 〜てあげる / もらう / くれる (Memberi & menerima tindakan lanjut)
     39: {
-      topic      : '〜てあげる・てもらう・てくれる — Tindakan Memberi dan Menerima',
+      topic      : "〜てあげる・てもらう・てくれる — Tindakan Memberi dan Menerima",
       vocab_ids  : [
-        'v-n5-0051',  // あげる — memberikan
-        'v-n5-0050',  // もらう — menerima
-        'v-n5-0052',  // くれる — memberikan (ke saya)
-        'v-n5-0041',  // 教える — mengajar; memberitahu
-        'v-n5-0039',  // 貸す — meminjamkan
-        'v-n5-0040',  // 借りる — meminjam
-        'v-n5-0055',  // 見せる — memperlihatkan
-        'v-n4-0117',  // 頼む — meminta, memohon
-        'v-n4-0536',  // 親切 — ramah, baik hati
-        'v-n4-0454',  // 謝る — meminta maaf
-        'v-n5-0125',  // ありがとうございます — terima kasih
-        'v-n5-s0088', // 安心する — merasa lega
+        'vg-n5-00051', // あげる — memberikan (ke orang lain)
+        'vg-n5-00050', // もらう — menerima (dari orang lain)
+        'vg-n5-00052', // くれる — memberikan (ke saya)
+        'vg-n5-00041', // 教える — mengajar; memberitahu
+        'vg-n5-00039', // 貸す — meminjamkan
+        'vg-n5-00040', // 借りる — meminjam
+        'vg-n5-00055', // 見せる — memperlihatkan
+        'vg-n4-00116', // 頼む — meminta tolong, memohon
+        'vg-n4-00501', // 親切 — baik hati; ramah
+        'vg-n4-00419', // 謝る — meminta maaf
+        'vg-n5-00125', // ありがとうございます — terima kasih
+        'vg-n5-00484', // 安心する — merasa lega
       ],
       grammar_ids: [],
     },
 
-    // Ch.40 — 〜すぎます (Terlalu...)
     40: {
-      topic      : '〜すぎます — Terlalu Berlebihan',
+      topic      : "〜すぎます — Terlalu Berlebihan",
       vocab_ids  : [
-        'v-n5-0030',  // 働く — bekerja
-        'v-n5-0061',  // 高い — tinggi; mahal
-        'v-n4-0072',  // 薬 — obat
-        'v-n5-s0186', // 病気 — sakit
-        'v-n5-s0187', // 元気 — sehat, bersemangat
-        'v-n4-0073',  // 薬局 — apotek
-        'v-n5-0089',  // 病院 — rumah sakit
-        'v-n5-0121',  // 頭 — kepala
+        'vg-n5-00030', // 働く — bekerja
+        'vg-n5-00061', // 高い — tinggi; mahal
+        'vg-n4-00071', // 薬 — obat
+        'vg-n5-00542', // 病気 — sakit, penyakit
+        'vg-n5-00543', // 元気 — sehat, bersemangat
+        'vg-n4-00072', // 薬局 — apotek
+        'vg-n5-00089', // 病院 — rumah sakit
+        'vg-n5-00121', // 頭 — kepala
       ],
       grammar_ids: [],
     },
 
-    // Ch.41 — 〜やすい、〜にくい (Mudah/sulit dilakukan)
     41: {
-      topic      : '〜やすい・〜にくい — Mudah atau Sulit Dilakukan',
+      topic      : "〜やすい・〜にくい — Mudah atau Sulit Dilakukan",
       vocab_ids  : [
-        'v-n5-0025',  // 使う — menggunakan
-        'v-n5-0031',  // 話す — berbicara
-        'v-n5-0012',  // 書く — menulis
-        'v-n5-0013',  // 聞く — mendengar
-        'v-n5-0042',  // 覚える — menghafal
-        'v-n5-s0152', // 辞書 — kamus
-        'v-n4-0537',  // 便利 — praktis
-        'v-n4-0397',  // 方法 — cara, metode
+        'vg-n5-00025', // 使う — menggunakan
+        'vg-n5-00031', // 話す — berbicara
+        'vg-n5-00012', // 書く — menulis
+        'vg-n5-00013', // 聞く — mendengar; bertanya
+        'vg-n5-00042', // 覚える — mengingat; menghafal
+        'vg-n5-00526', // 辞書 — kamus
+        'vg-n4-00502', // 便利 — praktis; mudah; berguna
+        'vg-n4-00362', // 方法 — cara, metode
       ],
       grammar_ids: [],
     },
 
-    // Ch.42 — 〜かもしれません (Mungkin saja)
     42: {
-      topic      : '〜かもしれません — Kemungkinan',
+      topic      : "〜かもしれません — Kemungkinan",
       vocab_ids  : [
-        'v-n4-0369',  // 悩む — bingung
-        'v-n4-0371',  // 迷う — ragu-ragu
-        'v-n5-s0382', // 晴れ — cerah
-        'v-n5-s0383', // 曇り — mendung
-        'v-n5-s0211', // 雨 — hujan
-        'v-n4-0290',  // ニュース — berita
-        'v-n4-0564',  // 事故 — kecelakaan
-        'v-n4-0560',  // 地震 — gempa bumi
+        'vg-n4-00336', // 悩む — merasa dilema, khawatir
+        'vg-n4-00338', // 迷う — tersesat; bingung memilih
+        'vg-n5-00672', // はれ — cerah
+        'vg-n5-00673', // くもり — mendung
+        'vg-n5-00134', // 雨 — hujan
+        'vg-n4-00288', // ニュース — berita
+        'vg-n4-00529', // 事故 — kecelakaan
+        'vg-n4-00525', // 地震 — gempa bumi
       ],
       grammar_ids: [],
     },
 
-    // Ch.43 — 〜ようです、〜みたいです (Sepertinya)
     43: {
-      topic      : '〜ようです・〜みたいです — Sepertinya',
+      topic      : "〜ようです・〜みたいです — Sepertinya",
       vocab_ids  : [
-        'v-n5-s0145', // 見える — bisa terlihat
-        'v-n5-s0108', // 聞こえる — bisa terdengar
-        'v-n4-0367',  // 驚く — terkejut
-        'v-n4-0145',  // 悲しい — sedih
-        'v-n4-0143',  // 喜ぶ — bergembira
-        'v-n4-0521',  // 怖い — takut
-        'v-n4-0522',  // 寂しい — sepi
-        'v-n4-0372',  // 恥ずかしい — malu
-        'v-n5-s0186', // 病気 — sakit
-        'v-n5-s0187', // 元気 — sehat
+        'vg-n5-00523', // 見える — bisa terlihat
+        'vg-n5-00495', // 聞こえる — bisa terdengar
+        'vg-n4-00335', // 驚く — terkejut, terkagum
+        'vg-n4-00144', // 悲しい — sedih
+        'vg-n4-00142', // 喜ぶ — merasa senang, bergembira
+        'vg-n4-00486', // 怖い — menakutkan; seram
+        'vg-n4-00487', // 寂しい — kesepian
+        'vg-n4-00339', // 恥ずかしい — malu
+        'vg-n5-00542', // 病気 — sakit, penyakit
+        'vg-n5-00543', // 元気 — sehat, bersemangat
       ],
       grammar_ids: [],
     },
 
-    // Ch.44 — 受け身 〜られます (Passive Voice)
     44: {
-      topic      : '〜られます — Bentuk Pasif',
+      topic      : "〜られます — Bentuk Pasif",
       vocab_ids  : [
-        'v-n4-0454',  // 謝る — meminta maaf
-        'v-n4-0117',  // 頼む — memohon
-        'v-n4-0572',  // 相談 — konsultasi
-        'v-n5-0041',  // 教える — mengajar
-        'v-n5-0008',  // 言う — berkata
-        'v-n4-0485',  // 説明する — menjelaskan
-        'v-n5-0049',  // 送る — mengirim
-        'v-n4-0169',  // 返事 — balasan
-        'v-n4-0114',  // 連絡 — kontak
-        'v-n4-0307',  // 連絡する — menghubungi
+        'vg-n4-00419', // 謝る — meminta maaf
+        'vg-n4-00116', // 頼む — meminta tolong, memohon
+        'vg-n4-00537', // 相談 — konsultasi; diskusi
+        'vg-n5-00041', // 教える — mengajar; memberitahu
+        'vg-n5-00008', // 言う — berkata, mengatakan
+        'vg-n4-00660', // 説明する — menjelaskan
+        'vg-n5-00049', // 送る — mengirim; mengantarkan
+        'vg-n4-00167', // 返事 — jawaban, balasan
+        'vg-n4-00113', // 連絡 — kontak, menghubungi
+        'vg-n4-00668', // 連絡する — menghubungi
       ],
       grammar_ids: [],
     },
 
-    // Ch.45 — 〜てあります (Keadaan yang dipersiapkan)
     45: {
-      topic      : '〜てあります — Keadaan yang Sudah Dipersiapkan',
+      topic      : "〜てあります — Keadaan yang Sudah Dipersiapkan",
       vocab_ids  : [
-        'v-n4-0313',  // 予約する — memesan
-        'v-n4-0502',  // 準備 — persiapan
-        'v-n4-0178',  // 予定 — rencana
-        'v-n5-0017',  // つける — menyalakan
-        'v-n5-0016',  // 消す — mematikan; menghapus
-        'v-n5-0002',  // 開く — terbuka
-        'v-n5-s0298', // しめる — menutup
-        'v-n5-s0299', // つける (soumatome)
-        'v-n5-s0300', // けす (soumatome)
-        'v-n5-0003',  // 開ける — membuka
-        'v-n5-s0397', // エアコン — AC
-        'v-n5-s0396', // テレビ — televisi
+        'vg-n4-00674', // 予約する — memesan, mereservasi
+        'vg-n4-00467', // 準備 — persiapan
+        'vg-n4-00176', // 予定 — rencana, jadwal
+        'vg-n5-00017', // つける — menyalakan; menempelkan
+        'vg-n5-00016', // 消す — mematikan; menghapus
+        'vg-n5-00002', // 開く — terbuka
+        'vg-n5-00194', // しめる — menutup
+        'vg-n5-00017', // つける — menyalakan; menempelkan
+        'vg-n5-00190', // けす — mematikan; menghapus
+        'vg-n5-00003', // 開ける — membuka
+        'vg-n5-00409', // エアコン — AC
+        'vg-n5-00390', // テレビ — televisi
       ],
       grammar_ids: [],
     },
 
-    // Ch.46 — 使役 〜させます (Menyuruh)
     46: {
-      topic      : '〜させます — Bentuk Kausatif (Menyuruh)',
+      topic      : "〜させます — Bentuk Kausatif (Menyuruh)",
       vocab_ids  : [
-        'v-n5-s0101', // 会社 — perusahaan
-        'v-n5-s0096', // 社長 — direktur
-        'v-n5-s0102', // 社員 — karyawan
-        'v-n5-s0001', // 先生 — guru
-        'v-n5-s0007', // 学生 — mahasiswa
-        'v-n4-0058',  // 会議 — rapat
-        'v-n4-0502',  // 準備 — persiapan
-        'v-n4-0169',  // 返事 — balasan
-        'v-n4-0307',  // 連絡する — menghubungi
-        'v-n4-0114',  // 連絡 — kontak
+        'vg-n5-00086', // 会社 — perusahaan
+        'vg-n5-00488', // 社長 — direktur, presiden perusahaan
+        'vg-n5-00491', // 社員 — karyawan
+        'vg-n5-00093', // 先生 — guru
+        'vg-n5-00417', // 学生 — mahasiswa
+        'vg-n4-00057', // 会議 — rapat, konferensi
+        'vg-n4-00467', // 準備 — persiapan
+        'vg-n4-00167', // 返事 — jawaban, balasan
+        'vg-n4-00668', // 連絡する — menghubungi
+        'vg-n4-00113', // 連絡 — kontak, menghubungi
       ],
       grammar_ids: [],
     },
 
-    // Ch.47 — 〜ておく / 〜てしまう (Persiapan & penyelesalan)
     47: {
-      topic      : '〜ておく・〜てしまう — Persiapan dan Penyesalan',
+      topic      : "〜ておく・〜てしまう — Persiapan dan Penyesalan",
       vocab_ids  : [
-        'v-n4-0313',  // 予約する — memesan
-        'v-n4-0181',  // 計画 — rencana
-        'v-n4-0178',  // 予定 — jadwal
-        'v-n4-0685',  // 失敗 — kegagalan
-        'v-n5-0046',  // 終わる — selesai
-        'v-n5-0049',  // 送る — mengirim
-        'v-n5-0037',  // 買う — membeli
+        'vg-n4-00674', // 予約する — memesan, mereservasi
+        'vg-n4-00179', // 計画 — rencana, proyek
+        'vg-n4-00176', // 予定 — rencana, jadwal
+        'vg-n4-00650', // 失敗 — kegagalan; kesalahan
+        'vg-n5-00046', // 終わる — selesai, berakhir
+        'vg-n5-00049', // 送る — mengirim; mengantarkan
+        'vg-n5-00037', // 買う — membeli
       ],
       grammar_ids: [],
     },
 
-    // Ch.48 — 敬語 (Bahasa sopan — keigo)
     48: {
-      topic      : '敬語 — Bahasa Hormat (Keigo)',
+      topic      : "敬語 — Bahasa Hormat (Keigo)",
       vocab_ids  : [
-        'v-n4-0527',  // 丁寧 — sopan, teliti
-        'v-n5-0031',  // 話す — berbicara
-        'v-n5-s0001', // 先生 — guru
-        'v-n5-s0096', // 社長 — direktur
-        'v-n5-s0101', // 会社 — perusahaan
-        'v-n5-0125',  // ありがとうございます — terima kasih
-        'v-n5-0124',  // すみません — permisi; maaf
-        'v-n5-0126',  // どうぞ — silakan
+        'vg-n4-00492', // 丁寧 — sopan; teliti; seksama
+        'vg-n5-00031', // 話す — berbicara
+        'vg-n5-00093', // 先生 — guru
+        'vg-n5-00488', // 社長 — direktur, presiden perusahaan
+        'vg-n5-00086', // 会社 — perusahaan
+        'vg-n5-00125', // ありがとうございます — terima kasih
+        'vg-n5-00124', // すみません — permisi; maaf
+        'vg-n5-00126', // どうぞ — silakan
       ],
       grammar_ids: [],
     },
 
-    // Ch.49 — 〜ようになります (Menjadi bisa, perubahan kemampuan)
     49: {
-      topic      : '〜ようになります — Perubahan Kemampuan atau Kebiasaan',
+      topic      : "〜ようになります — Perubahan Kemampuan atau Kebiasaan",
       vocab_ids  : [
-        'v-n4-0101',  // 練習 — latihan
-        'v-n4-0111',  // 続ける — melanjutkan
-        'v-n4-0106',  // 始める — memulai
-        'v-n4-0236',  // 増える — bertambah
-        'v-n5-0078',  // 上手 — pandai
-        'v-n5-0079',  // 下手 — tidak pandai
-        'v-n5-s0033', // 日本語 — bahasa Jepang
-        'v-n4-0400',  // 経験 — pengalaman
-        'v-n4-0390',  // 習慣 — kebiasaan
+        'vg-n4-00100', // 練習 — latihan, berlatih
+        'vg-n4-00110', // 続ける — melanjutkan
+        'vg-n4-00105', // 始める — memulai
+        'vg-n4-00234', // 増える — bertambah (intransitif)
+        'vg-n5-00078', // 上手 — pandai, mahir
+        'vg-n5-00079', // 下手 — tidak pandai, kurang mahir
+        'vg-n5-00439', // 日本語 — bahasa Jepang
+        'vg-n4-00365', // 経験 — pengalaman
+        'vg-n4-00355', // 習慣 — kebiasaan, adat
       ],
       grammar_ids: [],
     },
 
-    // Ch.50 — Review & 〜まま (Keadaan tetap)
     50: {
-      topic      : '〜まま — Keadaan Tetap Seperti Semula',
+      topic      : "〜まま — Keadaan Tetap Seperti Semula",
       vocab_ids  : [
-        'v-n5-0002',  // 開く — terbuka
-        'v-n5-s0298', // しめる — menutup
-        'v-n5-0115',  // もう — sudah; lagi
-        'v-n5-0116',  // まだ — masih; belum
-        'v-n4-0111',  // 続ける — melanjutkan
-        'v-n4-0392',  // 機会 — kesempatan
+        'vg-n5-00002', // 開く — terbuka
+        'vg-n5-00194', // しめる — menutup
+        'vg-n5-00115', // もう — sudah; lagi
+        'vg-n5-00116', // まだ — masih; belum
+        'vg-n4-00110', // 続ける — melanjutkan
+        'vg-n4-00357', // 機会 — kesempatan, peluang
       ],
       grammar_ids: [],
     },
-
   },
 };
-
-// ══════════════════════════════════════════════════════
-//  MISSING_VOCAB — Kata Minna II yang BELUM ada di vocabDB
-// ══════════════════════════════════════════════════════
-//
-//  Ch.26 : 普通形 — grammar concept (tidak perlu vocab entry)
-//  Ch.27 : 感想 (noun, N4)
-//  Ch.28 : 気温 (noun, N4), たぶん/きっと (adv, N5)
-//  Ch.29 : 〜ている間 — grammar pattern
-//  Ch.33 : 大変な → v-n5-s0084 ✅
-//  Ch.34 : 優しい (adj-i, N4/N5), 形容詞 (metalanguage)
-//  Ch.35 : 遅刻する (verb-suru, N4)
-//  Ch.37 : 守る (verb-u, N4), 法律 (noun, N4)
-//  Ch.38 : 見た目 (noun, N4), おいしそう/楽しそう → grammar forms
-//  Ch.39 : お世話 (noun, N4), 感謝 (noun-suru, N4)
-//  Ch.40 : 太る (verb-u, N4), 健康 (noun, N4)
-//  Ch.41 : 〜やすい/にくい — grammar pattern
-//  Ch.42 : 推測/確信 (noun, N4) — metalanguage
-//  Ch.46 : 命令 (noun-suru, N4), 上司/部下 (noun, N4)
-//  Ch.47 : 後悔 (noun-suru, N4)
-//  Ch.48 : 敬語/謙譲/尊敬 (noun, N4) — metalanguage
-//  Ch.49 : 〜ようになる — grammar pattern
-//  Ch.50 : 状態/継続 (noun, N4) — metalanguage
-//
-// ══════════════════════════════════════════════════════

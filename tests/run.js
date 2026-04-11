@@ -220,6 +220,45 @@ console.log('── Fallback drills ──');
   });
 });
 
+// ── Book lens cross-reference integrity (Plan C) ──
+console.log('── Book lens cross-reference ──');
+loadData('data/books/book-irodori-a1.js');
+loadData('data/books/book-irodori-a2-1.js');
+loadData('data/books/book-irodori-a2-2.js');
+loadData('data/books/book-minna-1.js');
+loadData('data/books/book-minna-2.js');
+
+const vocabIdSet = new Set([
+  ...(global.vocabN5 || []),
+  ...(global.vocabN4 || []),
+  ...(global.vocabN3 || []),
+  ...(global.vocabN2 || []),
+  ...(global.vocabN1 || []),
+].map(e => e.id));
+
+const bookLenses = [
+  { obj: global.bookIrodoriA1,  name: 'bookIrodoriA1' },
+  { obj: global.bookIrodoriA21, name: 'bookIrodoriA21' },
+  { obj: global.bookIrodoriA22, name: 'bookIrodoriA22' },
+  { obj: global.bookMinna1,     name: 'bookMinna1' },
+  { obj: global.bookMinna2,     name: 'bookMinna2' },
+];
+bookLenses.forEach(({ obj, name }) => {
+  if (!obj) { skip++; console.log(`  SKIP: ${name} not loaded`); return; }
+  const units = obj.units || obj.chapters || {};
+  let broken = 0;
+  Object.entries(units).forEach(([unitKey, unit]) => {
+    (unit.vocab_ids || []).forEach(id => {
+      if (!vocabIdSet.has(id)) {
+        broken++;
+        if (broken <= 3) console.error(`  FAIL: ${name} unit ${unitKey}: id '${id}' not in vocabDB`);
+      }
+    });
+  });
+  if (broken > 3) console.error(`  FAIL: ${name}: ${broken} broken refs total (showing first 3)`);
+  assert(broken === 0, `${name}: ${broken} vocab_ids not found in vocabDB`);
+});
+
 // ── Summary ──
 console.log(`\n══════════════════════════════════`);
 console.log(`  PASS: ${pass}  |  FAIL: ${fail}  |  SKIP: ${skip}`);
