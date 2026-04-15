@@ -26,38 +26,27 @@
 
 ---
 
-## Step 2 — Deploy Cloudflare Worker (10 min)
+## Step 2 — Deploy Cloudflare Worker (5 min)
 
 The Worker is the AI proxy. It hides your API keys and handles rate limiting.
 
+> **KV namespace sudah dibuat otomatis (16 April 2026).** `workers/wrangler.toml` sudah terkonfigurasi.
+> Kamu hanya perlu login, set secrets, dan deploy.
+
 ```bash
-# Install wrangler CLI
+# Install wrangler CLI (kalau belum)
 npm install -g wrangler
 
-# Login to Cloudflare (browser opens)
+# Login ke Cloudflare (browser terbuka)
 cd workers
 npx wrangler login
 
-# Create KV namespace for rate limiting
-npx wrangler kv:namespace create "RATE_LIMITS"
-# → Outputs: id = "abc123..."
-# Copy the id value
-```
-
-Edit `workers/wrangler.toml`:
-```toml
-[[kv_namespaces]]
-binding = "RATE_LIMITS"
-id      = "PASTE_YOUR_KV_ID_HERE"   # ← replace this line
-```
-
-```bash
-# Add secrets (paste when prompted)
+# Set API key secrets (paste ketika diminta)
 npx wrangler secret put GEMINI_API_KEY
-# Paste your Gemini key → Enter
+# → Paste Gemini key kamu → Enter
 
 npx wrangler secret put GROQ_API_KEY
-# Paste your Groq key → Enter
+# → Paste Groq key kamu → Enter
 
 # Deploy!
 npx wrangler deploy
