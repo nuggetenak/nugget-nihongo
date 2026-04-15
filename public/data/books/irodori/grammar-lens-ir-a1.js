@@ -41,7 +41,7 @@ window.grammarLensIrodoriA1 = {
       examples: [{ jp: '私はマルシアです。', id: 'Saya Márcia.' }],
     },
     {
-      id: 'ir-a1-003', global_grammar_id: null,
+      id: 'ir-a1-003', global_grammar_id: 'gn5-00085',
       lesson: 3, seq: 3,
       pattern: '【場所】から来ました',
       raw: '【place】から来ました',
@@ -50,7 +50,7 @@ window.grammarLensIrodoriA1 = {
       notes: 'Diajarkan sebagai frasa tetap di A1. Pola lebih dalam dibahas di Elementary 1.',
     },
     {
-      id: 'ir-a1-004', global_grammar_id: null,
+      id: 'ir-a1-004', global_grammar_id: 'gn5-00005',
       lesson: 3, seq: 4,
       pattern: 'N は？',
       raw: 'Nは？',
@@ -126,7 +126,7 @@ window.grammarLensIrodoriA1 = {
       examples: [{ jp: '肉と野菜が好きです。', id: 'Saya suka daging dan sayuran.' }, { jp: '魚は好きじゃないです。', id: 'Saya tidak suka ikan.' }],
     },
     {
-      id: 'ir-a1-013', global_grammar_id: null,
+      id: 'ir-a1-013', global_grammar_id: 'gn5-00086',
       lesson: 5, seq: 2,
       pattern: 'N は ちょっと…',
       raw: 'Nはちょっと…',
@@ -158,7 +158,7 @@ window.grammarLensIrodoriA1 = {
       examples: [{ jp: '朝ご飯は、あまり食べません。', id: 'Saya jarang makan sarapan.' }],
     },
     {
-      id: 'ir-a1-017', global_grammar_id: null,
+      id: 'ir-a1-017', global_grammar_id: 'gn5-00087',
       lesson: 5, seq: 6,
       pattern: 'いつも／よく V-ます ／ あまり V-ません',
       raw: 'いつも／よく V-ます ／ あまり V-ません',
@@ -176,7 +176,7 @@ window.grammarLensIrodoriA1 = {
       examples: [{ jp: 'ホットコーヒー、お願いします。', id: 'Kopi panas, tolong.' }, { jp: 'これ、ください。', id: 'Ini, tolong.' }],
     },
     {
-      id: 'ir-a1-019', global_grammar_id: null,
+      id: 'ir-a1-019', global_grammar_id: 'gn5-00064',
       lesson: 6, seq: 2,
       pattern: 'N にします',
       raw: 'Nにします',
@@ -184,7 +184,7 @@ window.grammarLensIrodoriA1 = {
       examples: [{ jp: '私は、うどんにします。', id: 'Saya ambil udon.' }],
     },
     {
-      id: 'ir-a1-020', global_grammar_id: null,
+      id: 'ir-a1-020', global_grammar_id: 'gn5-00088',
       lesson: 6, seq: 3,
       pattern: 'N、【number】お願いします / ください',
       raw: 'N、【数】お願いします／ください',
@@ -202,7 +202,7 @@ window.grammarLensIrodoriA1 = {
 
     // ── Lesson 7: 部屋が4つあります (Topic: 家と職場) ──────────────────────────
     {
-      id: 'ir-a1-022', global_grammar_id: null,
+      id: 'ir-a1-022', global_grammar_id: 'gn5-00001',
       lesson: 7, seq: 1,
       pattern: 'ここは【場所】です',
       raw: 'ここは【place】です',
@@ -245,7 +245,7 @@ window.grammarLensIrodoriA1 = {
       examples: [{ jp: '8時に起きます。', id: 'Saya bangun jam 8.' }],
     },
     {
-      id: 'ir-a1-027', global_grammar_id: null,
+      id: 'ir-a1-027', global_grammar_id: 'gn5-00020',
       lesson: 8, seq: 2,
       pattern: '【time】から【time】まで',
       raw: '【time】から【time】まで',
@@ -253,7 +253,7 @@ window.grammarLensIrodoriA1 = {
       examples: [{ jp: '9時から5時まで働きます。', id: 'Saya bekerja dari jam 9 sampai jam 5.' }],
     },
     {
-      id: 'ir-a1-028', global_grammar_id: null,
+      id: 'ir-a1-028', global_grammar_id: 'gn5-00089',
       lesson: 8, seq: 3,
       pattern: 'V-ます (習慣・事実)',
       raw: 'V-ます（習慣・事実）',
@@ -279,7 +279,7 @@ window.grammarLensIrodoriA1 = {
       examples: [{ jp: 'これ、いくらですか？', id: 'Ini berapa harganya?' }],
     },
     {
-      id: 'ir-a1-031', global_grammar_id: null,
+      id: 'ir-a1-031', global_grammar_id: 'gn5-00001',
       lesson: 9, seq: 3,
       pattern: 'N は【price】です',
       raw: 'Nは【price】です',
@@ -287,7 +287,7 @@ window.grammarLensIrodoriA1 = {
       examples: [{ jp: 'このりんごは200円です。', id: 'Apel ini 200 yen.' }],
     },
     {
-      id: 'ir-a1-032', global_grammar_id: null,
+      id: 'ir-a1-032', global_grammar_id: 'gn5-00090',
       lesson: 9, seq: 4,
       pattern: 'どれ / どの N',
       raw: 'どれ／どのN',
@@ -313,7 +313,7 @@ window.grammarLensIrodoriA1 = {
       examples: [{ jp: '銀行はコンビニの隣です。', id: 'Bank ada di sebelah konbini.' }],
     },
     {
-      id: 'ir-a1-035', global_grammar_id: null,
+      id: 'ir-a1-035', global_grammar_id: 'gn5-00030',
       lesson: 10, seq: 3,
       pattern: 'まっすぐ行って、【direction】に曲がってください',
       raw: 'まっすぐ行って、【direction】に曲がってください',
@@ -366,7 +366,7 @@ window.grammarLensIrodoriA1 = {
       examples: [{ jp: '日本語が少し話せます。', id: 'Saya bisa sedikit berbahasa Jepang.' }],
     },
     {
-      id: 'ir-a1-041', global_grammar_id: null,
+      id: 'ir-a1-041', global_grammar_id: 'gn5-00091',
       lesson: 12, seq: 2,
       pattern: 'N が わかります',
       raw: 'Nがわかります',
@@ -374,7 +374,7 @@ window.grammarLensIrodoriA1 = {
       examples: [{ jp: '日本語が少しわかります。', id: 'Saya sedikit mengerti bahasa Jepang.' }],
     },
     {
-      id: 'ir-a1-042', global_grammar_id: null,
+      id: 'ir-a1-042', global_grammar_id: 'gn5-00031',
       lesson: 12, seq: 3,
       pattern: 'N を V-てもいいですか？',
       raw: 'NをV-てもいいですか？',
@@ -418,7 +418,7 @@ window.grammarLensIrodoriA1 = {
       examples: [{ jp: '大きくて、きれいです。', id: 'Besar dan bersih.' }, { jp: '静かで、いいです。', id: 'Tenang dan bagus.' }],
     },
     {
-      id: 'ir-a1-047', global_grammar_id: null,
+      id: 'ir-a1-047', global_grammar_id: 'gn5-00092',
       lesson: 14, seq: 2,
       pattern: 'N で、〜',
       raw: 'Nで、～',
@@ -426,7 +426,7 @@ window.grammarLensIrodoriA1 = {
       examples: [{ jp: '駅から近くて、便利です。', id: 'Dekat stasiun dan nyaman.' }],
     },
     {
-      id: 'ir-a1-048', global_grammar_id: null,
+      id: 'ir-a1-048', global_grammar_id: 'gn5-00024',
       lesson: 14, seq: 3,
       pattern: 'イA の 反対 / ナA の 反対',
       raw: '（イ/ナ）形容詞の比較・反対',
@@ -437,7 +437,7 @@ window.grammarLensIrodoriA1 = {
 
     // ── Lesson 15: どんな人ですか (Topic: 人) ────────────────────────────────────
     {
-      id: 'ir-a1-049', global_grammar_id: null,
+      id: 'ir-a1-049', global_grammar_id: 'gn5-00093',
       lesson: 15, seq: 1,
       pattern: 'どんな N ですか？',
       raw: 'どんなNですか？',
@@ -453,7 +453,7 @@ window.grammarLensIrodoriA1 = {
       examples: [{ jp: '背が高くて、優しいです。', id: 'Tinggi dan baik hati.' }],
     },
     {
-      id: 'ir-a1-051', global_grammar_id: null,
+      id: 'ir-a1-051', global_grammar_id: 'gn5-00006',
       lesson: 15, seq: 3,
       pattern: 'N が 上手です / 得意です',
       raw: 'Nが上手です／得意です',
@@ -479,7 +479,7 @@ window.grammarLensIrodoriA1 = {
       examples: [{ jp: 'いっしょに行きましょう！', id: 'Ayo pergi bersama!' }, { jp: '手伝いましょうか？', id: 'Mau saya bantu?' }],
     },
     {
-      id: 'ir-a1-054', global_grammar_id: null,
+      id: 'ir-a1-054', global_grammar_id: 'gn5-00055',
       lesson: 16, seq: 3,
       pattern: 'V-た後で、〜',
       raw: 'V-た後で、～',
@@ -489,7 +489,7 @@ window.grammarLensIrodoriA1 = {
 
     // ── Lesson 17: 熱があります (Topic: 体の具合) ───────────────────────────────
     {
-      id: 'ir-a1-055', global_grammar_id: null,
+      id: 'ir-a1-055', global_grammar_id: 'gn5-00006',
       lesson: 17, seq: 1,
       pattern: '【体の部位】が【症状】',
       raw: '【体の部位】が【症状】です／V-ます',
@@ -505,7 +505,7 @@ window.grammarLensIrodoriA1 = {
       examples: [{ jp: '足をけがしています。', id: 'Kaki saya terluka.' }],
     },
     {
-      id: 'ir-a1-057', global_grammar_id: null,
+      id: 'ir-a1-057', global_grammar_id: 'gn5-00018',
       lesson: 17, seq: 3,
       pattern: 'どうしましたか？',
       raw: 'どうしましたか？',
@@ -523,7 +523,7 @@ window.grammarLensIrodoriA1 = {
       examples: [{ jp: '京都に行きました。', id: 'Saya pergi ke Kyoto.' }, { jp: 'どこにも行きませんでした。', id: 'Saya tidak pergi ke mana-mana.' }],
     },
     {
-      id: 'ir-a1-059', global_grammar_id: null,
+      id: 'ir-a1-059', global_grammar_id: 'gn5-00094',
       lesson: 18, seq: 2,
       pattern: 'V-て、V-て、〜ました（順番）',
       raw: 'V-て、V-て、〜ました',
@@ -531,7 +531,7 @@ window.grammarLensIrodoriA1 = {
       examples: [{ jp: '京都に行って、お寺を見て、おいしいものを食べました。', id: 'Saya pergi ke Kyoto, melihat kuil, dan makan makanan enak.' }],
     },
     {
-      id: 'ir-a1-060', global_grammar_id: null,
+      id: 'ir-a1-060', global_grammar_id: 'gn5-00018',
       lesson: 18, seq: 3,
       pattern: 'どうでしたか？',
       raw: 'どうでしたか？',
