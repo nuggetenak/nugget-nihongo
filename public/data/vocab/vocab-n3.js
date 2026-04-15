@@ -3357,4 +3357,1459 @@ window.vocabN3 = [
   "added_v": "v14.27"
 }
 
+,
+
+{
+  "id": "vg-n3-00071",
+  "word": "動く",
+  "reading": "うごく",
+  "romaji": "ugoku",
+  "meaning_id": "bergerak",
+  "meaning_en": "to move",
+  "jlpt": "n3",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari",
+    "perjalanan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan"
+  ],
+  "nuance": "Intransitif. Transitif pasangannya: 動かす. Digunakan untuk benda maupun orang/makhluk yang bergerak sendiri.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "電車がゆっくり動き始めた。",
+      "id": "Kereta mulai bergerak perlahan.",
+      "level": "n3",
+      "tags": [
+        "perjalanan"
+      ]
+    },
+    {
+      "jp": "この機械は電気で動く。",
+      "id": "Mesin ini bergerak dengan tenaga listrik.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [
+    "vg-n3-00072"
+  ],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00072",
+  "word": "動かす",
+  "reading": "うごかす",
+  "romaji": "ugokasu",
+  "meaning_id": "menggerakkan",
+  "meaning_en": "to move (something)",
+  "jlpt": "n3",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "pekerjaan",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan"
+  ],
+  "nuance": "Transitif dari 動く. Subjek secara aktif menggerakkan objek lain.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "重い机を壁際に動かした。",
+      "id": "Saya menggerakkan meja berat ke sudut dinding.",
+      "level": "n3",
+      "tags": [
+        "pekerjaan"
+      ]
+    },
+    {
+      "jp": "彼女は全身を動かして踊った。",
+      "id": "Dia menari sambil menggerakkan seluruh tubuhnya.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [
+    "vg-n3-00071"
+  ],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00073",
+  "word": "運ぶ",
+  "reading": "はこぶ",
+  "romaji": "hakobu",
+  "meaning_id": "membawa, mengangkut",
+  "meaning_en": "to carry, to transport",
+  "jlpt": "n3",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kerja",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan"
+  ],
+  "nuance": "Membawa benda dari satu tempat ke tempat lain. Lebih formal dan mencakup makna mengangkut dibandingkan 持っていく.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "荷物を二階まで運んでください。",
+      "id": "Tolong bawa barang-barang ini ke lantai dua.",
+      "level": "n3",
+      "tags": [
+        "kerja"
+      ]
+    },
+    {
+      "jp": "工場から製品を運ぶトラックが来た。",
+      "id": "Truk yang mengangkut produk dari pabrik sudah datang.",
+      "level": "n3",
+      "tags": [
+        "kerja"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00074",
+  "word": "渡る",
+  "reading": "わたる",
+  "romaji": "wataru",
+  "meaning_id": "menyeberang, melintas",
+  "meaning_en": "to cross (a road, bridge, river)",
+  "jlpt": "n3",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "perjalanan",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Intransitif. Transitif pasangannya: 渡す. Digunakan untuk menyeberangi jalan, jembatan, atau sungai.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "信号が青になったら、横断歩道を渡ってください。",
+      "id": "Saat lampu hijau, seberangilah di zebra cross.",
+      "level": "n3",
+      "tags": [
+        "perjalanan"
+      ]
+    },
+    {
+      "jp": "橋を渡るとすぐに公園がある。",
+      "id": "Setelah menyeberangi jembatan, langsung ada taman.",
+      "level": "n3",
+      "tags": [
+        "perjalanan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [
+    "vg-n3-00075"
+  ],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00075",
+  "word": "渡す",
+  "reading": "わたす",
+  "romaji": "watasu",
+  "meaning_id": "menyerahkan, memberikan",
+  "meaning_en": "to hand over, to pass (something to someone)",
+  "jlpt": "n3",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kerja",
+    "hubungan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan"
+  ],
+  "nuance": "Transitif. Menyerahkan sesuatu secara langsung dari tangan ke tangan. Lebih konkret dari あげる.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "書類を部長に渡した。",
+      "id": "Saya menyerahkan dokumen kepada manajer.",
+      "level": "n3",
+      "tags": [
+        "kerja"
+      ]
+    },
+    {
+      "jp": "子どもにプレゼントを渡すと、すぐに笑顔になった。",
+      "id": "Begitu memberikan hadiah kepada anak itu, dia langsung tersenyum.",
+      "level": "n3",
+      "tags": [
+        "hubungan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [
+    "vg-n3-00074"
+  ],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00076",
+  "word": "押す",
+  "reading": "おす",
+  "romaji": "osu",
+  "meaning_id": "mendorong, menekan",
+  "meaning_en": "to push, to press",
+  "jlpt": "n3",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari",
+    "pekerjaan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Transitif. Pasangan antonim aksi: 引く. Digunakan untuk menekan tombol, mendorong pintu, atau mendorong orang/benda.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "エレベーターのボタンを押してください。",
+      "id": "Tolong tekan tombol lift.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "ドアが重くて一人では押せなかった。",
+      "id": "Pintunya berat sehingga tidak bisa kudorong sendiri.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [
+    "vg-n3-00077"
+  ],
+  "see_also": [
+    "vg-n3-00077"
+  ],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00077",
+  "word": "引く",
+  "reading": "ひく",
+  "romaji": "hiku",
+  "meaning_id": "menarik",
+  "meaning_en": "to pull, to draw",
+  "jlpt": "n3",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari",
+    "pekerjaan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Transitif/intransitif. Pasangan antonim aksi: 押す. Juga bisa berarti membuka (引き出し), menggambar garis (線を引く), atau mencari di kamus (辞書を引く).",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "引き出しを強く引いて開けた。",
+      "id": "Saya menarik laci dengan kuat dan membukanya.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "知らない単語は辞書を引いて調べた。",
+      "id": "Saya mencari kata yang tidak diketahui di kamus.",
+      "level": "n3",
+      "tags": [
+        "sekolah"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [
+    "vg-n3-00076"
+  ],
+  "see_also": [
+    "vg-n3-00076"
+  ],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00078",
+  "word": "叩く",
+  "reading": "たたく",
+  "romaji": "tataku",
+  "meaning_id": "memukul, mengetuk",
+  "meaning_en": "to hit, to knock, to tap",
+  "jlpt": "n3",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Transitif. Mengetuk permukaan secara berulang dengan tangan atau benda. Intensitas bisa ringan (mengetuk pintu) hingga keras (memukul meja karena marah).",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "ドアを叩いて中の人を呼んだ。",
+      "id": "Saya mengetuk pintu untuk memanggil orang di dalam.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "彼は怒ってテーブルを叩いた。",
+      "id": "Dia marah dan memukul meja.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00079",
+  "word": "つかむ",
+  "reading": "つかむ",
+  "romaji": "tsukamu",
+  "meaning_id": "menggenggam, menangkap, meraih",
+  "meaning_en": "to grasp, to grab, to seize",
+  "jlpt": "n3",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari",
+    "motivasi"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Transitif. Memegang dengan erat menggunakan tangan. Juga digunakan secara kiasan untuk 'meraih kesempatan' (チャンスをつかむ).",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "転びそうになって、手すりをつかんだ。",
+      "id": "Hampir jatuh, saya langsung memegang pegangan tangan.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "このチャンスをつかまなければならない。",
+      "id": "Saya harus meraih kesempatan ini.",
+      "level": "n3",
+      "tags": [
+        "motivasi"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [
+    "vg-n3-00080"
+  ],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00080",
+  "word": "握る",
+  "reading": "にぎる",
+  "romaji": "nigiru",
+  "meaning_id": "menggenggam, meremas",
+  "meaning_en": "to grip, to grasp, to clench",
+  "jlpt": "n3",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari",
+    "olahraga"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Transitif. Lebih menekankan keadaan menggenggam erat dibandingkan つかむ yang menekankan aksi menangkap. Sering digunakan untuk memegang alat/benda secara fungsional.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "ラケットをしっかり握って打った。",
+      "id": "Saya memegang raket dengan erat dan memukulnya.",
+      "level": "n3",
+      "tags": [
+        "olahraga"
+      ]
+    },
+    {
+      "jp": "緊張して拳を握りしめた。",
+      "id": "Karena gugup, saya mengepalkan tangan.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [
+    "vg-n3-00079"
+  ],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00081",
+  "word": "落ちる",
+  "reading": "おちる",
+  "romaji": "ochiru",
+  "meaning_id": "jatuh, turun",
+  "meaning_en": "to fall, to drop",
+  "jlpt": "n3",
+  "pos": "verb-ru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Intransitif. Transitif pasangannya: 落とす. Digunakan untuk benda maupun orang yang jatuh sendiri.",
+  "conj_type": "ichidan",
+  "examples": [
+    {
+      "jp": "木から葉っぱが落ちた。",
+      "id": "Daun-daun jatuh dari pohon.",
+      "level": "n3",
+      "tags": [
+        "alam"
+      ]
+    },
+    {
+      "jp": "財布がカバンから落ちてしまった。",
+      "id": "Dompet tanpa sengaja jatuh dari tas.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [
+    "vg-n3-00082"
+  ],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00082",
+  "word": "落とす",
+  "reading": "おとす",
+  "romaji": "otosu",
+  "meaning_id": "menjatuhkan, melepas",
+  "meaning_en": "to drop (something), to let fall",
+  "jlpt": "n3",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Transitif dari 落ちる. Subjek secara sengaja atau tidak menjatuhkan objek.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "スマホを落として画面が割れてしまった。",
+      "id": "Saya menjatuhkan ponsel dan layarnya retak.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "うっかり鍵を落とした。",
+      "id": "Saya tidak sengaja menjatuhkan kunci.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [
+    "vg-n3-00081"
+  ],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00083",
+  "word": "拾う",
+  "reading": "ひろう",
+  "romaji": "hirou",
+  "meaning_id": "memungut, menemukan (di tanah)",
+  "meaning_en": "to pick up, to find and take",
+  "jlpt": "n3",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Transitif. Mengambil sesuatu yang jatuh atau ada di tanah. Sering berkonotasi menemukan secara tidak terduga.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "公園でゴミを拾うボランティア活動に参加した。",
+      "id": "Saya ikut kegiatan sukarela memungut sampah di taman.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "道に財布が落ちていたので拾って交番に届けた。",
+      "id": "Ada dompet di jalan, jadi saya pungut dan serahkan ke pos polisi.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [
+    "vg-n3-00082"
+  ],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00084",
+  "word": "並べる",
+  "reading": "ならべる",
+  "romaji": "naraberu",
+  "meaning_id": "menyusun, menjajarkan",
+  "meaning_en": "to line up (things), to arrange in a row",
+  "jlpt": "n3",
+  "pos": "verb-ru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari",
+    "kerja"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Transitif. Intransitif pasangannya: 並ぶ. Subjek menyusun/menjajarkan objek secara aktif.",
+  "conj_type": "ichidan",
+  "examples": [
+    {
+      "jp": "皿をテーブルの上に並べた。",
+      "id": "Saya menyusun piring-piring di atas meja.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "商品を棚にきれいに並べてください。",
+      "id": "Tolong susun barang-barang dengan rapi di rak.",
+      "level": "n3",
+      "tags": [
+        "kerja"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [
+    "vg-n3-00085"
+  ],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00085",
+  "word": "並ぶ",
+  "reading": "ならぶ",
+  "romaji": "narabu",
+  "meaning_id": "berbaris, berjajar, mengantri",
+  "meaning_en": "to line up, to stand in a row, to queue",
+  "jlpt": "n3",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari",
+    "perjalanan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Intransitif. Transitif pasangannya: 並べる. Orang atau benda dalam kondisi berjajar/berbaris.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "人気のラーメン店の前に長い列が並んでいた。",
+      "id": "Ada antrian panjang di depan restoran ramen yang terkenal.",
+      "level": "n3",
+      "tags": [
+        "makanan"
+      ]
+    },
+    {
+      "jp": "コンサートのチケットを買うために朝から並んだ。",
+      "id": "Saya mengantri dari pagi untuk membeli tiket konser.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [
+    "vg-n3-00084"
+  ],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00086",
+  "word": "包む",
+  "reading": "つつむ",
+  "romaji": "tsutsumu",
+  "meaning_id": "membungkus, melilit",
+  "meaning_en": "to wrap, to envelop",
+  "jlpt": "n3",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari",
+    "belanja"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Transitif. Menutup sesuatu dengan bahan lain dari semua sisi. Juga digunakan secara kiasan (謎に包まれた = diselimuti misteri).",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "プレゼントをきれいな紙で包んだ。",
+      "id": "Saya membungkus hadiah dengan kertas cantik.",
+      "level": "n3",
+      "tags": [
+        "belanja"
+      ]
+    },
+    {
+      "jp": "おにぎりを海苔で包んで食べた。",
+      "id": "Saya membungkus onigiri dengan nori lalu memakannya.",
+      "level": "n3",
+      "tags": [
+        "makanan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00087",
+  "word": "倒れる",
+  "reading": "たおれる",
+  "romaji": "taoreru",
+  "meaning_id": "roboh, terjatuh, pingsan",
+  "meaning_en": "to fall over, to collapse, to topple",
+  "jlpt": "n3",
+  "pos": "verb-ru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari",
+    "kesehatan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Intransitif. Transitif pasangannya: 倒す. Bisa digunakan untuk benda (roboh) maupun orang (jatuh pingsan karena sakit/kelelahan).",
+  "conj_type": "ichidan",
+  "examples": [
+    {
+      "jp": "台風で木が倒れて道をふさいだ。",
+      "id": "Pohon roboh karena topan dan menutup jalan.",
+      "level": "n3",
+      "tags": [
+        "alam"
+      ]
+    },
+    {
+      "jp": "過労で会社で倒れてしまった。",
+      "id": "Dia jatuh pingsan di kantor karena kelelahan.",
+      "level": "n3",
+      "tags": [
+        "kesehatan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [
+    "vg-n3-00088"
+  ],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00088",
+  "word": "倒す",
+  "reading": "たおす",
+  "romaji": "taosu",
+  "meaning_id": "merobohkan, mengalahkan",
+  "meaning_en": "to knock over, to topple, to defeat",
+  "jlpt": "n3",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari",
+    "olahraga"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Transitif dari 倒れる. Bisa bermakna merobohkan benda secara fisik maupun mengalahkan lawan dalam kompetisi.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "誤ってコップを倒してジュースをこぼした。",
+      "id": "Saya tidak sengaja menumpahkan gelas sehingga jus tumpah.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "強い相手を倒して決勝に進んだ。",
+      "id": "Mengalahkan lawan yang kuat dan maju ke final.",
+      "level": "n3",
+      "tags": [
+        "olahraga"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [
+    "vg-n3-00087"
+  ],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00089",
+  "word": "浮く",
+  "reading": "うく",
+  "romaji": "uku",
+  "meaning_id": "mengapung, melayang",
+  "meaning_en": "to float, to be buoyant",
+  "jlpt": "n3",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "alam",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Intransitif. Antonim: 沈む. Digunakan untuk benda yang mengapung di air atau melayang di udara. Juga bisa bermakna kiasan 'merasa tidak cocok/canggung'.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "木は水に浮くが、鉄は沈む。",
+      "id": "Kayu mengapung di air, tapi besi tenggelam.",
+      "level": "n3",
+      "tags": [
+        "alam"
+      ]
+    },
+    {
+      "jp": "空に白い雲が浮かんでいる。",
+      "id": "Awan putih mengapung di langit.",
+      "level": "n3",
+      "tags": [
+        "alam"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [
+    "vg-n3-00090"
+  ],
+  "see_also": [
+    "vg-n3-00090"
+  ],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00090",
+  "word": "沈む",
+  "reading": "しずむ",
+  "romaji": "shizumu",
+  "meaning_id": "tenggelam, terbenam",
+  "meaning_en": "to sink, to go down",
+  "jlpt": "n3",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "alam",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Intransitif. Antonim: 浮く. Digunakan untuk benda/kapal yang tenggelam di air, serta matahari yang terbenam. Juga bermakna kiasan untuk perasaan yang suram.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "夕日が海の向こうに沈んでいくのを見た。",
+      "id": "Saya menyaksikan matahari senja terbenam di balik laut.",
+      "level": "n3",
+      "tags": [
+        "alam"
+      ]
+    },
+    {
+      "jp": "重い石は水に沈む。",
+      "id": "Batu yang berat tenggelam di air.",
+      "level": "n3",
+      "tags": [
+        "alam"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [
+    "vg-n3-00089"
+  ],
+  "see_also": [
+    "vg-n3-00089"
+  ],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00091",
+  "word": "移す",
+  "reading": "うつす",
+  "romaji": "utsusu",
+  "meaning_id": "memindahkan (sesuatu)",
+  "meaning_en": "to move (something) to another place, to transfer",
+  "jlpt": "n3",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kerja",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Transitif. Intransitif pasangannya: 移る. Subjek secara aktif memindahkan objek atau kegiatan ke tempat/kondisi lain.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "ファイルを別のフォルダに移した。",
+      "id": "Saya memindahkan file ke folder yang berbeda.",
+      "level": "n3",
+      "tags": [
+        "kerja"
+      ]
+    },
+    {
+      "jp": "荷物を新しいオフィスに移す作業が大変だった。",
+      "id": "Pekerjaan memindahkan barang ke kantor baru sangat melelahkan.",
+      "level": "n3",
+      "tags": [
+        "kerja"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [
+    "vg-n3-00092",
+    "vg-n3-00093"
+  ],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00092",
+  "word": "移る",
+  "reading": "うつる",
+  "romaji": "utsuru",
+  "meaning_id": "berpindah, beralih",
+  "meaning_en": "to move (oneself) to another place, to shift",
+  "jlpt": "n3",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kerja",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Intransitif. Transitif pasangannya: 移す. Subjek berpindah ke tempat/kondisi/topik lain. Berbeda dari 引っ越す yang khusus pindah rumah/tempat tinggal.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "来月、別の部署に移ることになった。",
+      "id": "Bulan depan, saya akan berpindah ke divisi lain.",
+      "level": "n3",
+      "tags": [
+        "kerja"
+      ]
+    },
+    {
+      "jp": "話題がいつの間にか別の方向に移っていた。",
+      "id": "Topik pembicaraan tanpa sadar sudah beralih ke arah lain.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [
+    "vg-n3-00091",
+    "vg-n3-00093"
+  ],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00093",
+  "word": "引っ越す",
+  "reading": "ひっこす",
+  "romaji": "hikkosu",
+  "meaning_id": "pindah rumah, pindah tempat tinggal",
+  "meaning_en": "to move (house), to relocate",
+  "jlpt": "n3",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari",
+    "perjalanan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Intransitif. Khusus untuk perpindahan tempat tinggal. Lebih spesifik dari 移る. Nomina terkait: 引っ越し (kepindahan).",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "仕事の関係で来年東京に引っ越す予定です。",
+      "id": "Karena pekerjaan, saya berencana pindah ke Tokyo tahun depan.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "新しいアパートに引っ越したばかりでまだ片付いていない。",
+      "id": "Saya baru saja pindah ke apartemen baru dan belum beres-beres.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [
+    "vg-n3-00092"
+  ],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00094",
+  "word": "整える",
+  "reading": "ととのえる",
+  "romaji": "totonoeru",
+  "meaning_id": "merapikan, mempersiapkan, mengatur",
+  "meaning_en": "to arrange, to put in order, to prepare",
+  "jlpt": "n3",
+  "pos": "verb-ru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "kehidupan-sehari",
+    "kesehatan",
+    "kerja"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Transitif. Merapikan atau mempersiapkan sesuatu agar dalam kondisi baik/siap. Lebih formal dari 直す dan mencakup kondisi fisik tubuh (呼吸を整える).",
+  "conj_type": "ichidan",
+  "examples": [
+    {
+      "jp": "出かける前に髪を整えた。",
+      "id": "Saya merapikan rambut sebelum keluar.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "試合前に呼吸を整えてから走り始めた。",
+      "id": "Sebelum lomba, saya mengatur napas dulu baru mulai berlari.",
+      "level": "n3",
+      "tags": [
+        "olahraga"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00095",
+  "word": "曲げる",
+  "reading": "まげる",
+  "romaji": "mageru",
+  "meaning_id": "membengkokkan, menekuk",
+  "meaning_en": "to bend (something), to curve",
+  "jlpt": "n3",
+  "pos": "verb-ru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari",
+    "olahraga"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Transitif. Intransitif pasangannya: 曲がる. Subjek membengkokkan/menekuk objek secara aktif.",
+  "conj_type": "ichidan",
+  "examples": [
+    {
+      "jp": "準備体操でひざを曲げて伸ばした。",
+      "id": "Saat pemanasan, saya menekuk dan meluruskan lutut.",
+      "level": "n3",
+      "tags": [
+        "olahraga"
+      ]
+    },
+    {
+      "jp": "ペンチで針金を曲げた。",
+      "id": "Saya membengkokkan kawat dengan tang.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [
+    "vg-n3-00096"
+  ],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00096",
+  "word": "曲がる",
+  "reading": "まがる",
+  "romaji": "magaru",
+  "meaning_id": "berbelok, bengkok",
+  "meaning_en": "to turn, to bend, to curve",
+  "jlpt": "n3",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "perjalanan",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Intransitif. Transitif pasangannya: 曲げる. Digunakan untuk petunjuk arah (belok kanan/kiri) maupun benda yang dalam kondisi bengkok.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "次の角を右に曲がると、駅が見えます。",
+      "id": "Belok kanan di tikungan berikutnya, stasiun akan terlihat.",
+      "level": "n3",
+      "tags": [
+        "perjalanan"
+      ]
+    },
+    {
+      "jp": "長く使ったスプーンが少し曲がってしまった。",
+      "id": "Sendok yang lama dipakai sedikit bengkok.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [
+    "vg-n3-00095"
+  ],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00097",
+  "word": "転ぶ",
+  "reading": "ころぶ",
+  "romaji": "korobu",
+  "meaning_id": "terjatuh, tersandung",
+  "meaning_en": "to fall down, to trip and fall",
+  "jlpt": "n3",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari",
+    "kesehatan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Intransitif. Khusus untuk orang atau hewan yang terjatuh ke samping. Berbeda dari 落ちる yang lebih ke jatuh ke bawah dari ketinggian.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "濡れた道で転んで膝をすりむいた。",
+      "id": "Saya terjatuh di jalan yang basah dan lutut lecet.",
+      "level": "n3",
+      "tags": [
+        "kesehatan"
+      ]
+    },
+    {
+      "jp": "子どもが公園で転んで泣き出した。",
+      "id": "Anak itu terjatuh di taman dan mulai menangis.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [
+    "vg-n3-00098"
+  ],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00098",
+  "word": "転がる",
+  "reading": "ころがる",
+  "romaji": "korogaru",
+  "meaning_id": "berguling, menggelinding",
+  "meaning_en": "to roll, to tumble",
+  "jlpt": "n3",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari",
+    "alam"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Intransitif. Transitif pasangannya: 転がす. Benda bulat atau orang yang menggelinding/berguling dengan sendirinya.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "ボールが坂を転がっていった。",
+      "id": "Bola menggelinding menuruni lereng.",
+      "level": "n3",
+      "tags": [
+        "alam"
+      ]
+    },
+    {
+      "jp": "空き缶が風で道を転がっていた。",
+      "id": "Kaleng kosong menggelinding di jalan karena angin.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [
+    "vg-n3-00099"
+  ],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00099",
+  "word": "転がす",
+  "reading": "ころがす",
+  "romaji": "korogasu",
+  "meaning_id": "menggelindingkan, menggulingkan",
+  "meaning_en": "to roll (something), to cause to tumble",
+  "jlpt": "n3",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari",
+    "olahraga"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Transitif dari 転がる. Subjek secara aktif menggelindingkan/menggulingkan objek.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "犬と遊ぶためにボールを転がした。",
+      "id": "Saya menggelindingkan bola untuk bermain dengan anjing.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "重い樽を転がして倉庫に入れた。",
+      "id": "Saya menggelindingkan tong berat ke dalam gudang.",
+      "level": "n3",
+      "tags": [
+        "kerja"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [
+    "vg-n3-00098"
+  ],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00100",
+  "word": "持ち上げる",
+  "reading": "もちあげる",
+  "romaji": "mochiageru",
+  "meaning_id": "mengangkat, memilih",
+  "meaning_en": "to lift up, to raise",
+  "jlpt": "n3",
+  "pos": "verb-ru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari",
+    "kerja",
+    "olahraga"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Transitif. Mengangkat objek berat dari bawah ke atas menggunakan tangan. Berbeda dari 上げる yang lebih umum; 持ち上げる menekankan aksi mengangkat fisik secara penuh.",
+  "conj_type": "ichidan",
+  "examples": [
+    {
+      "jp": "重い箱を一人で持ち上げようとしたが、無理だった。",
+      "id": "Saya mencoba mengangkat kotak berat sendirian, tapi tidak bisa.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "赤ちゃんをそっと持ち上げてベッドに置いた。",
+      "id": "Saya mengangkat bayi dengan lembut dan meletakkannya di tempat tidur.",
+      "level": "n3",
+      "tags": [
+        "keluarga"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [
+    "vg-n3-00073"
+  ],
+  "added_v": "v15"
+}
+
 ];
