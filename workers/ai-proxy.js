@@ -29,8 +29,8 @@ const GEMINI_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemi
 const GROQ_URL = 'https://api.groq.com/openai/v1/chat/completions';
 
 // Speed-tiered models
-const GROQ_MODEL_FAST = 'llama-3.1-8b-instant';  // Quick tasks: fastest inference
-const GROQ_MODEL_DEEP = 'gemma2-9b-it';           // Complex fallback: better reasoning
+const GROQ_MODEL_FAST = 'llama-3.1-8b-instant';   // Quick tasks: fastest inference
+const GROQ_MODEL_DEEP = 'llama-3.3-70b-versatile'; // Complex fallback: better reasoning
 
 // ── Research-grounded persona ────────────────────────────────────
 // Based on: malu/face-concern research (Markus & Kitayama 1991),
