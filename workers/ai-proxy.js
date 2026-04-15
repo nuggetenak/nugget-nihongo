@@ -17,6 +17,7 @@
 
 const ALLOWED_ORIGINS = [
   'https://nuggetenak.github.io',
+  'https://nugget-nihongo.pages.dev',
   'http://localhost:3000',
   'http://127.0.0.1:3000',
 ];

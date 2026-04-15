@@ -24,7 +24,7 @@ DAILY_LIMIT   = "15"
 # Replace the id below with the output id
 [[kv_namespaces]]
 binding = "RATE_LIMITS"
-id      = "REPLACE_WITH_KV_NAMESPACE_ID"
+id      = "f7de1d5156a04308a529c7f30d7319d5"
 
 # ── Secrets (set via wrangler secret put, never commit here) ──────
 # GEMINI_API_KEY  — get from https://aistudio.google.com/app/apikey
