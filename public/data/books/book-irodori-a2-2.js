@@ -36,7 +36,7 @@ window.bookIrodoriA22 = {
         'vg-n4-00167', // 返事 — jawaban, balasan
         'vg-n4-00467', // 準備 — persiapan
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00071', 'gn4-00091', 'gn5-00029'],
     },
 
     2: {
@@ -56,7 +56,7 @@ window.bookIrodoriA22 = {
         'vg-n4-00362', // 方法 — cara, metode
         'vg-n4-00660', // 説明する — menjelaskan
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00026', 'gn5-00029', 'gn5-00076'],
     },
 
     3: {
@@ -76,7 +76,7 @@ window.bookIrodoriA22 = {
         'vg-n4-00357', // 機会 — kesempatan, peluang
         'vg-n5-00715', // 音楽 — musik
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00066', 'gn5-00019', 'gn5-00011'],
     },
 
     4: {
@@ -95,7 +95,7 @@ window.bookIrodoriA22 = {
         'vg-n5-00484', // 安心する — merasa lega
         'vg-n4-00512', // 大丈夫 — tidak apa-apa; baik-baik saja
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn4-00035', 'gn4-00027', 'gn5-00033', 'gn5-00067'],
     },
 
     5: {
@@ -115,7 +115,7 @@ window.bookIrodoriA22 = {
         'vg-n5-00143', // でも — tapi; tetapi
         'vg-n5-00144', // そして — dan kemudian; lalu
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn4-00031', 'gn4-00013', 'gn4-00038', 'gn5-00028'],
     },
 
     6: {
@@ -134,7 +134,7 @@ window.bookIrodoriA22 = {
         'vg-n5-00083', // 大切 — penting, berharga
         'vg-n4-00368', // 意見 — pendapat, opini
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn4-00074', 'gn5-00076', 'gn5-00015'],
     },
 
     7: {
@@ -154,7 +154,7 @@ window.bookIrodoriA22 = {
         'vg-n5-00111', // 電話 — telepon
         'vg-n4-00167', // 返事 — jawaban, balasan
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00047', 'gn4-00028', 'gn4-00031'],
     },
 
     8: {
@@ -173,7 +173,7 @@ window.bookIrodoriA22 = {
         'vg-n4-00029', // 困る — kebingungan, kesulitan
         'vg-n5-00484', // 安心する — merasa lega
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00082', 'gn5-00083', 'gn4-00050'],
     },
 
     9: {
@@ -193,7 +193,7 @@ window.bookIrodoriA22 = {
         'vg-n5-00484', // 安心する — merasa lega
         'vg-n4-00367', // 理由 — alasan
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn4-00048', 'gn5-00023', 'gn5-00022', 'gn4-00046', 'gn4-00024'],
     },
 
     10: {
@@ -213,7 +213,7 @@ window.bookIrodoriA22 = {
         'vg-n5-00542', // 病気 — sakit, penyakit
         'vg-n5-00543', // 元気 — sehat, bersemangat
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn4-00038', 'gn4-00027', 'gn4-00024', 'gn4-00028'],
     },
 
     11: {
@@ -233,7 +233,7 @@ window.bookIrodoriA22 = {
         'vg-n5-00131', // 山 — gunung
         'vg-n5-00110', // 写真 — foto
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn4-00025', 'gn5-00026', 'gn4-00028', 'gn5-00079'],
     },
 
     12: {
@@ -252,7 +252,7 @@ window.bookIrodoriA22 = {
         'vg-n4-00524', // 季節 — musim
         'vg-n5-00107', // 来年 — tahun depan
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn4-00092', 'gn4-00044', 'gn5-00058'],
     },
 
     13: {
@@ -272,7 +272,7 @@ window.bookIrodoriA22 = {
         'vg-n5-00125', // ありがとうございます — terima kasih
         'vg-n4-00419', // 謝る — meminta maaf
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn4-00028', 'gn4-00018', 'gn4-00081', 'gn4-00035', 'gn4-00037'],
     },
 
     14: {
@@ -291,7 +291,7 @@ window.bookIrodoriA22 = {
         'vg-n4-00512', // 大丈夫 — tidak apa-apa; baik-baik saja
         'vg-n4-00357', // 機会 — kesempatan, peluang
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00084', 'gn4-00042'],
     },
 
     15: {
@@ -311,7 +311,7 @@ window.bookIrodoriA22 = {
         'vg-n5-00030', // 働く — bekerja
         'vg-n4-00650', // 失敗 — kegagalan; kesalahan
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn4-00086', 'gn4-00051'],
     },
 
     16: {
@@ -330,7 +330,7 @@ window.bookIrodoriA22 = {
         'vg-n4-00524', // 季節 — musim
         'vg-n4-00357', // 機会 — kesempatan, peluang
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn4-00056', 'gn4-00041', 'gn4-00040', 'gn4-00037', 'gn4-00049'],
     },
 
     17: {
@@ -350,7 +350,7 @@ window.bookIrodoriA22 = {
         'vg-n5-00033', // 読む — membaca
         'vg-n5-00012', // 書く — menulis
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn4-00040'],
     },
 
     18: {
@@ -370,7 +370,7 @@ window.bookIrodoriA22 = {
         'vg-n5-00059', // 良い — bagus, baik
         'vg-n5-00144', // そして — dan kemudian; lalu
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn4-00075', 'gn4-00042', 'gn5-00037', 'gn5-00038', 'gn5-00039'],
     },
   },
 };

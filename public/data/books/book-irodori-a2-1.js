@@ -36,7 +36,7 @@ window.bookIrodoriA21 = {
         'vg-n5-00119', // いつも — selalu; biasanya
         'vg-n4-00658', // 参加する — berpartisipasi, ikut serta
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00001', 'gn5-00063', 'gn5-00010', 'gn5-00029'],
     },
 
     2: {
@@ -54,7 +54,7 @@ window.bookIrodoriA21 = {
         'vg-n5-00126', // どうぞ — silakan
         'vg-n5-00118', // ゆっくり — pelan-pelan; santai
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn4-00052', 'gn4-00051', 'gn5-00029'],
     },
 
     3: {
@@ -74,7 +74,7 @@ window.bookIrodoriA21 = {
         'vg-n5-00180', // かかる — membutuhkan (waktu/biaya)
         'vg-n5-00088', // 駅 — stasiun
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00065', 'gn4-00004'],
     },
 
     4: {
@@ -94,7 +94,7 @@ window.bookIrodoriA21 = {
         'vg-n5-00456', // 間に合う — tepat waktu
         'vg-n5-00088', // 駅 — stasiun
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00028', 'gn5-00029', 'gn5-00047'],
     },
 
     5: {
@@ -114,7 +114,7 @@ window.bookIrodoriA21 = {
         'vg-n5-00033', // 読む — membaca
         'vg-n5-00012', // 書く — menulis
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00050'],
     },
 
     6: {
@@ -133,7 +133,7 @@ window.bookIrodoriA21 = {
         'vg-n5-00116', // まだ — masih; belum
         'vg-n5-00115', // もう — sudah; lagi
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00040', 'gn5-00030', 'gn5-00002'],
     },
 
     7: {
@@ -151,7 +151,7 @@ window.bookIrodoriA21 = {
         'vg-n5-00143', // でも — tapi; tetapi
         'vg-n5-00144', // そして — dan kemudian; lalu
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00044', 'gn4-00025', 'gn5-00012'],
     },
 
     8: {
@@ -169,7 +169,7 @@ window.bookIrodoriA21 = {
         'vg-n5-00114', // 少し — sedikit
         'vg-n5-00113', // たくさん — banyak
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00051', 'gn5-00043', 'gn5-00054', 'gn5-00040'],
     },
 
     9: {
@@ -191,7 +191,7 @@ window.bookIrodoriA21 = {
         'vg-n4-00469', // 美術館 — museum seni
         'vg-n4-00475', // 動物園 — kebun binatang
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00012', 'gn5-00005', 'gn4-00034', 'gn5-00081'],
     },
 
     10: {
@@ -212,7 +212,7 @@ window.bookIrodoriA21 = {
         'vg-n5-00673', // くもり — mendung
         'vg-n4-00524', // 季節 — musim
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00036', 'gn5-00044', 'gn5-00056'],
     },
 
     11: {
@@ -232,7 +232,7 @@ window.bookIrodoriA21 = {
         'vg-n5-00062', // 安い — murah
         'vg-n5-00061', // 高い — tinggi; mahal
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00008', 'gn5-00058', 'gn5-00078', 'gn4-00003'],
     },
 
     12: {
@@ -249,7 +249,7 @@ window.bookIrodoriA21 = {
         'vg-n5-00453', // 一週間 — satu minggu
         'vg-n5-00471', // 一年 — satu tahun
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00026', 'gn5-00024', 'gn5-00036', 'gn4-00073'],
     },
 
     13: {
@@ -269,7 +269,7 @@ window.bookIrodoriA21 = {
         'vg-n4-00142', // 喜ぶ — merasa senang, bergembira
         'vg-n4-00419', // 謝る — meminta maaf
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn4-00048', 'gn4-00053', 'gn5-00056', 'gn5-00048'],
     },
 
     14: {
@@ -289,7 +289,7 @@ window.bookIrodoriA21 = {
         'vg-n4-00353', // 文化 — budaya
         'vg-n4-00355', // 習慣 — kebiasaan, adat
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00012', 'gn4-00061', 'gn4-00025', 'gn4-00023'],
     },
 
     15: {
@@ -309,7 +309,7 @@ window.bookIrodoriA21 = {
         'vg-n5-00484', // 安心する — merasa lega
         'vg-n5-00031', // 話す — berbicara
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn4-00048', 'gn5-00035', 'gn5-00017', 'gn5-00054', 'gn5-00056'],
     },
 
     16: {
@@ -329,7 +329,7 @@ window.bookIrodoriA21 = {
         'vg-n4-00367', // 理由 — alasan
         'vg-n4-00368', // 意見 — pendapat, opini
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn4-00038', 'gn4-00068', 'gn4-00046'],
     },
 
     17: {
@@ -349,7 +349,7 @@ window.bookIrodoriA21 = {
         'vg-n5-00072', // 忙しい — sibuk
         'vg-n5-00475', // 毎日 — setiap hari
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00017', 'gn5-00038', 'gn5-00039'],
     },
 
     18: {
@@ -369,7 +369,7 @@ window.bookIrodoriA21 = {
         'vg-n5-00106', // 週末 — akhir pekan
         'vg-n4-00365', // 経験 — pengalaman
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn4-00087', 'gn5-00037', 'gn4-00047'],
     },
   },
 };

@@ -1996,4 +1996,48 @@ window.grammarN4 = [
     notes      : null,
   },
 
+  {
+    id         : 'gn4-00091',
+    level      : 'n4',
+    pattern    : 'V-たばかりです',
+    reading    : 'V-ta bakari desu',
+    meaning    : 'baru saja V (baru selesai)',
+    cat        : 'completion-regret',
+    connection : 'V(plain past た-form) + ばかり',
+    desc       : '<b>V-たばかり</b> menyatakan bahwa suatu tindakan baru saja selesai dilakukan. Menekankan kesegaran/kebaruan dari tindakan tersebut.',
+    nuance     : 'Berbeda dari もうV-ました: ばかり menekankan "sangat baru saja", biasanya dalam hitungan menit/jam.',
+    examples   : [
+      { jp: '日本に来た<b>ばかり</b>なので、まだ慣れていません。', id: 'Saya baru saja tiba di Jepang jadi belum terbiasa.' },
+      { jp: 'ご飯を食べた<b>ばかり</b>です。', id: 'Saya baru saja makan.' },
+      { jp: '仕事を始めた<b>ばかり</b>で、覚えることがたくさんあります。', id: 'Baru saja mulai bekerja jadi banyak hal yang perlu diingat.' },
+    ],
+    see_also_grammar : ['gn5-00082'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : 'Pattern from Irodori 初級2 L1.',
+  },
+
+  {
+    id         : 'gn4-00092',
+    level      : 'n4',
+    pattern    : 'V-るまで、〜',
+    reading    : 'V-ru made',
+    meaning    : 'sampai V / hingga V',
+    cat        : 'sequential-temporal',
+    connection : 'V(dictionary form) + まで + clause',
+    desc       : '<b>V-るまで</b> menyatakan batas waktu akhir dari suatu tindakan atau keadaan. Artinya "sampai/hingga terjadi V".',
+    nuance     : 'Berbeda dari まで (partikel batas tempat/waktu polos). Di sini menekankan titik akhir dari proses.',
+    examples   : [
+      { jp: '電車が来る<b>まで</b>ここで待ってください。', id: 'Tolong tunggu di sini sampai kereta datang.' },
+      { jp: '試験が終わる<b>まで</b>帰れません。', id: 'Saya tidak bisa pulang sampai ujian selesai.' },
+      { jp: '準備ができる<b>まで</b>少し待ってください。', id: 'Tolong tunggu sebentar sampai persiapan selesai.' },
+    ],
+    see_also_grammar : ['gn5-00033', 'gn5-00054'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : 'Pattern from Irodori 初級2 L12.',
+  },
+
 ];
