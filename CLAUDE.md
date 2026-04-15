@@ -65,32 +65,37 @@ tools/               ← build/migration scripts (gitignored)
 
 ### What still needs doing (priority order)
 
-#### 1. Supabase Credentials (HIGH — unlocks auth + AI)
-Edit `public/js/supabase-client.js`: replace `YOUR_PROJECT` and `YOUR_ANON_KEY_HERE` with real values.
-Project ref: `oxeuwkpgrtojjzhcboqz` (see `.mcp.json`).
+See **MASTER-AUDIT.md** for full task specs and execution order. Summary:
 
-#### 2. Cloudflare Worker Secrets (HIGH — unlocks AI Sensei)
-```bash
-wrangler secret put GROQ_API_KEY --config workers/wrangler.toml
-wrangler secret put GEMINI_API_KEY --config workers/wrangler.toml
-```
-See `SETUP.md` for full deployment instructions.
+#### TASK 4 — Fill grammar_ids: Irodori A2-1 & A2-2 [P0]
+Files: `book-irodori-a2-1.js`, `book-irodori-a2-2.js`, `grammar-n5.js`, `grammar-n4.js`
+Read `SPEC-GRAMMAR-IRODORI-A2.md` first. Add 6 new global grammar entries + fill all grammar_ids arrays.
 
-#### 3. JMdict Pipeline (MEDIUM — unlocks massive vocab content)
-Script ready at `tools/jmdict-pipeline.py`. Outputs to `tools/jmdict-output/`.
-After running: entries need Indonesian translation + ID remapping from `jm-*` to `vg-*`.
-Reconcile with existing N5 (711) and N4 (692) entries by word+reading match.
+#### TASK 5 — Fill grammar lens content: Irodori A2-1 & A2-2 [P0]
+Files: `public/data/books/irodori/grammar-lens-ir-a2-1.js`, `grammar-lens-ir-a2-2.js`
+Currently stubs. Fill using SPEC-GRAMMAR-IRODORI-A2.md. Use grammar-lens-ir-a1.js as format reference.
 
-#### 4. Indonesian Translation Pipeline
-N2/N1 vocab seed data needs `meaning_id` filled. N3 vocab (70 entries) needs bilingual examples.
+#### TASK 6 — Verify Irodori A1 grammar lens links [P2]
+File: `public/data/books/irodori/grammar-lens-ir-a1.js`
+Verify all `global_grammar_id` values exist in grammar-n5.js. Patch nulls.
 
-#### 5. UI Work (FE Agent domain — see corpus/v17-pass15 branch)
-- Track selection page
-- Book browsing (Soumatome weekly view)
-- Methodology/About page + Daftar Pustaka (legally required if using JMdict)
+#### TASK 7 — Fill grammar_ids: Irodori A1 [P2]
+File: `public/data/books/book-irodori-a1.js`
+Extract grammar IDs from verified A1 lens → fill grammar_ids per unit.
 
-#### 6. Vocab ID Migration (low priority — old files still work)
-`book-irodori-a1.js` etc. use old IDs (`v-n5-s0001`). New DB uses `vg-n5-00001`.
+#### TASK 8 — N3 vocab expansion [P3]
+File: `public/data/vocab/vocab-n3.js`
+Grow from 70 → 300+ entries. 50 entries per sub-session.
+
+#### Infrastructure (human tasks — Nugget provides keys)
+- **Supabase credentials:** Edit `public/js/supabase-client.js`, replace `YOUR_PROJECT` / `YOUR_ANON_KEY_HERE`. Project ref: `oxeuwkpgrtojjzhcboqz`.
+- **Cloudflare Worker secrets:** `wrangler secret put GROQ_API_KEY` + `GEMINI_API_KEY` (see `SETUP.md`).
+
+#### Lower priority
+- JMdict pipeline: `tools/jmdict-pipeline.py` ready, needs Indonesian translation + ID remapping
+- N2/N1 seed data: `meaning_id` fields need filling
+- UI: track selection page, book browsing, Methodology/About page + Daftar Pustaka
+- Minna no Nihongo book lenses: empty, low priority unless Nugget has PDFs
 
 ---
 
@@ -115,4 +120,4 @@ If JMdict data is used, the app MUST display (e.g., on an About/Attribution page
 
 ---
 
-*Last edited: Claude Code (codebase audit) — 10 April 2026*
+*Last edited: Claude Code (TASK 3 audit) — 15 April 2026*
