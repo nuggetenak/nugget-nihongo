@@ -14,15 +14,14 @@ Claude Code **BOLEH**:
 - Git ops (branch delete, merge, cherry-pick, push)
 - Edit file JS/CSS/HTML yang sudah ada
 - Create/edit config files (wrangler.toml, wrangler.jsonc, CLAUDE.md, _MAP.md)
-- Run wrangler commands (deploy, secret put, kv:namespace create)
+- Run wrangler commands (deploy, secret put)
 - Run tests
 
 Claude Code **TIDAK BOLEH** (selalu timeout/gagal):
 - Generate vocab/grammar/lens entries baru dari scratch
 - Tulis konten Bahasa Indonesia/Jepang dalam jumlah besar
-- Scrape atau fetch data eksternal
 
-**Konten baru = selalu minta ke claude.ai, bukan Claude Code.**
+**Konten baru = selalu minta di claude.ai, bukan Claude Code.**
 
 ---
 
@@ -30,186 +29,74 @@ Claude Code **TIDAK BOLEH** (selalu timeout/gagal):
 
 | Task | Status | Priority |
 |------|--------|----------|
-| TASK-CC-1: Clean branches | ⏳ Pending | 🔥 Launch blocker |
-| TASK-CC-2: Fix level pill order | ⏳ Pending | 🔥 Launch blocker |
-| TASK-CC-3: Fix header branding | ⏳ Pending | 🔥 Launch blocker |
-| TASK-CC-4: Deploy AI Worker | ⏳ Pending | 🟠 AI feature |
+| TASK-CC-1: Clean branches | ✅ DONE (16 Apr) | — |
+| TASK-CC-2: Fix level pill order | ✅ DONE (16 Apr) | — |
+| TASK-CC-3: Fix header branding | ✅ DONE (16 Apr) | — |
+| TASK-CC-4: Deploy AI Worker | ⏳ Pending — butuh API keys | 🟠 AI feature |
 | TASK-CC-5: Category panel UX | ⏳ Pending | 🟡 Post-launch |
-| TASK-CC-6: Fix auth button visibility | ⏳ Pending | 🟡 Post-launch |
+| TASK-CC-6: Fix auth button visibility | ✅ DONE (16 Apr) | — |
 | TASK-CC-7: Update _MAP.md + CLAUDE.md | ⏳ Pending | 🟡 After infra done |
-
----
-
-## TASK-CC-1 — CLEAN BRANCHES 🔥
-**Estimated tokens:** Very Low  
-**Files touched:** Git only, no code files  
-**Do this first — no dependencies.**
-
-```bash
-git fetch origin
-
-# Delete dead branches
-git push origin --delete claude/read-audit-execute-task-zSXIw
-git push origin --delete claude/setup-supabase-mcp-IDFOp
-
-# Verify: only main + corpus/v17-pass15 should remain
-git branch -r
-```
-
-Expected output after:
-```
-origin/HEAD -> origin/main
-origin/corpus/v17-pass15
-origin/main
-```
-
-Run `node tests/run.js` → verify 0 failures.  
-Commit: nothing to commit (git ops only).
-
----
-
-## TASK-CC-2 — FIX LEVEL PILL ORDER 🔥
-**Estimated tokens:** Low  
-**Files touched:** `public/index.html` only  
-**Depends on:** Nothing
-
-Current (wrong) order in `index.html`:
-```html
-<button class="pill active-all" id="pill-all" ...>Semua</button>
-<button class="pill" id="pill-n3" ...>N3</button>
-<button class="pill" id="pill-n4" ...>N4</button>
-<button class="pill" id="pill-n1" ...>N1</button>
-<button class="pill" id="pill-n2" ...>N2</button>
-<button class="pill" id="pill-n5" ...>N5</button>
-<button class="pill" id="pill-bookmark" ...>⭐ Bookmark</button>
-```
-
-Target (correct) order — N5 to N1, beginner to advanced:
-```html
-<button class="pill active-all" id="pill-all" ...>Semua</button>
-<button class="pill" id="pill-n5" ...>N5</button>
-<button class="pill" id="pill-n4" ...>N4</button>
-<button class="pill" id="pill-n3" ...>N3</button>
-<button class="pill" id="pill-n2" ...>N2</button>
-<button class="pill" id="pill-n1" ...>N1</button>
-<button class="pill" id="pill-bookmark" ...>⭐ Bookmark</button>
-```
-
-**Jangan ubah apapun selain urutan.** Semua attribute, class, onclick tetap sama.
-
-Run `node tests/run.js` → 0 failures.  
-Commit: `"fix: level pill order N5→N1 (beginner to advanced)"`
-
----
-
-## TASK-CC-3 — FIX HEADER BRANDING 🔥
-**Estimated tokens:** Low  
-**Files touched:** `public/index.html` only  
-**Depends on:** Nothing (can run parallel with TASK-CC-2)
-
-Find this in `index.html` (inside `<header>`):
-```html
-<h1>日本語総まとめ</h1>
-<p>JLPT N1–N5 · Referensi & Quiz Tata Bahasa Jepang</p>
-```
-
-Replace with:
-```html
-<h1>Nugget <span lang="ja">日本語</span></h1>
-<p>Belajar JLPT N5–N1 · Grammar · Kosakata · Quiz</p>
-```
-
-Also update `<title>` tag near top of `<head>`:
-```html
-<!-- Change from: -->
-<title>Nugget — Nihongo · 日本語文法</title>
-<!-- Change to: -->
-<title>Nugget Nihongo · Belajar Bahasa Jepang JLPT</title>
-```
-
-Also update `manifest.webmanifest` — check `name` and `short_name` fields, make consistent.
-
-Run `node tests/run.js` → 0 failures.  
-Commit: `"fix: header branding Nugget Nihongo + title update"`
+| TASK-CC-8: Paste vocab N3 batch | ⏳ Pending | 🟡 When content ready |
 
 ---
 
 ## TASK-CC-4 — DEPLOY AI PROXY WORKER 🟠
 **Estimated tokens:** Low  
-**Files touched:** `workers/wrangler.toml`  
-**Depends on:** Nugget harus provide GROQ_API_KEY + GEMINI_API_KEY dulu
+**Files touched:** `workers/wrangler.toml` (already updated), `workers/ai-proxy.js`  
+**Depends on:** Nugget harus provide GROQ_API_KEY + GEMINI_API_KEY
 
-**Nugget must provide these keys before starting this task.**  
-Instruksi cara dapat keys ada di `SETUP.md § Step 1`.
+> **KV namespace sudah dibuat:** `f7de1d5156a04308a529c7f30d7319d5`
+> `workers/wrangler.toml` sudah terkonfigurasi dengan ID ini.
+> Kamu hanya perlu: login + set secrets + deploy.
 
-Steps:
+**Nugget must provide API keys before starting.**  
+Cara dapat keys: lihat `SETUP.md § Step 1`.
+
 ```bash
 cd workers
 
-# 1. Login (browser opens)
+# Login Cloudflare (browser terbuka)
 npx wrangler login
 
-# 2. Create KV namespace
-npx wrangler kv:namespace create "RATE_LIMITS"
-# Output: id = "abc123def456..."
-# Copy the id value
-```
-
-Edit `workers/wrangler.toml` — replace placeholder:
-```toml
-# Find:
-id = "REPLACE_WITH_KV_NAMESPACE_ID"
-# Replace with actual id from step 2:
-id = "abc123def456..."  # ← paste real id here
-```
-
-```bash
-# 3. Set secrets (paste when prompted)
+# Set secrets — paste key ketika diminta
 npx wrangler secret put GEMINI_API_KEY
-# → paste Gemini key
-
 npx wrangler secret put GROQ_API_KEY
-# → paste Groq key
 
-# 4. Deploy
+# Deploy!
 npx wrangler deploy
 # → Output: "Deployed to: https://nugget-nihongo-ai.YOUR_SUBDOMAIN.workers.dev"
 ```
 
+Setelah deploy, test:
 ```bash
-# 5. Test the worker
 curl -X POST https://nugget-nihongo-ai.YOUR_SUBDOMAIN.workers.dev/chat \
   -H "Content-Type: application/json" \
   -d '{"messages":[{"role":"user","content":"Jelaskan に vs で dalam 1 kalimat"}]}'
-# Should return JSON with "reply" field
+# Harus return JSON dengan field "reply"
 ```
 
-```bash
-# 6. Update ALLOWED_ORIGINS in workers/ai-proxy.js
-# Add your actual Pages URL if not already present:
-const ALLOWED_ORIGINS = [
-  'https://nuggetenak.github.io',
-  'https://nugget-nihongo.pages.dev',  // ← add if using CF Pages
-  'http://localhost:3000',
-  'http://127.0.0.1:3000',
-];
+Kalau test berhasil, update URL di `public/js/ai-tutor.js` jika subdomain berbeda dari `nugget-nihongo-ai.workers.dev`:
+```js
+// Cari:
+return 'https://nugget-nihongo-ai.workers.dev/chat';
+// Ganti jika perlu ke URL aktual dari output wrangler deploy
 ```
 
-Run `node tests/run.js` from repo root → 0 failures.  
-Commit: `"feat: AI worker KV wired + deploy ready"`
+Run `node tests/run.js` dari root repo → 0 FAIL.  
+Commit: `"feat: AI Worker deployed — wrangler.toml finalized"`
 
 ---
 
 ## TASK-CC-5 — CATEGORY PANEL UX FIX 🟡
 **Estimated tokens:** Medium  
 **Files touched:** `public/index.html`, `public/styles/app.css`  
-**Depends on:** Nothing (post-launch)
+**Depends on:** Nothing (post-launch, bisa dikerjakan kapan saja)
 
-**Problem:** 40+ kategori ditampilkan sekaligus di cat-panel. Overwhelming.
+**Problem:** 40+ kategori langsung tampil semua tanpa grouping. Mobile user harus scroll jauh.
 
-**Solution:** Group ke 8 super-kategori dengan expand on tap.
+**Target:** Accordion dengan 8 super-kategori. Default: collapsed.
 
-Super-kategori mapping (Claude Code harus implement ini):
+Super-kategori mapping yang harus di-implement:
 
 ```
 📝 Struktur Kalimat
@@ -218,10 +105,10 @@ Super-kategori mapping (Claude Code harus implement ini):
 ⏱ Waktu & Aspek
   → aspek, aspek-kerja, waktu, frekuensi, batas-waktu, bersamaan, kenangan
 
-🎯 Tujuan & Alasan  
+🎯 Tujuan & Alasan
   → tujuan, alasan, logika, sebab-akibat
 
-🌡 Modalitas (Bisa/Harus/Boleh)
+🌡 Modalitas
   → kemungkinan, keharusan, kewajiban, kausatif, kausatif-pasif, izin, larangan, keputusan
 
 💭 Ekspresi & Nuansa
@@ -235,57 +122,55 @@ Super-kategori mapping (Claude Code harus implement ini):
 
 📦 Kata & Bentuk
   → kata-benda-kualitas, adverbia, kondisional, pasif, keadaan, keadaan-hasil, kebiasaan, kesempatan
-
 ```
 
 Implementation:
-1. Ganti cat-panel dari flat list ke accordion/group structure
-2. Setiap group header = clickable, expand/collapse children
-3. Default: semua collapsed, hanya group headers terlihat
-4. Active cat chip tetap visible (expand parent group jika ada active chip)
-5. CSS: group header `font-weight: 600`, children indent 8px
+1. Bungkus cat-chips dengan group `<div class="cat-group">`
+2. Setiap group punya `<button class="cat-group-header">` yang toggle `.expanded`
+3. Children chips tersembunyi saat tidak `.expanded`
+4. CSS: group header `font-weight: 600; padding: 6px 0;`, children `padding-left: 8px`
+5. Kalau ada chip yang sedang active, parent group-nya otomatis `.expanded`
 
-Run `node tests/run.js` → 0 failures.  
-Commit: `"feat: category panel grouped into 8 super-categories"`
-
----
-
-## TASK-CC-6 — FIX AUTH BUTTON VISIBILITY 🟡
-**Estimated tokens:** Low  
-**Files touched:** `public/index.html`, `public/js/supabase-client.js`  
-**Depends on:** Nothing
-
-**Problem:** Auth button punya `style="display:none"` di HTML. JS reveal-nya.
-Kalau JS lambat, user ga tau ada tombol login.
-
-**Fix:**
-1. Remove `style="display:none"` dari `<button class="auth-header-btn">` di `index.html`
-2. Di `supabase-client.js`, pastikan JS tidak conflict — cari logic yang hide/show `authHeaderBtn`
-3. Default state: tombol visible dengan text "Masuk"
-4. JS update: kalau user sudah login, ganti jadi avatar/nama
-
-Run `node tests/run.js` → 0 failures.  
-Commit: `"fix: auth button visible by default, JS updates state"`
+Run `node tests/run.js` → 0 FAIL.  
+Commit: `"feat: category panel accordion — 8 super-categories"`
 
 ---
 
 ## TASK-CC-7 — UPDATE ORIENTATION DOCS 🟡
 **Estimated tokens:** Low  
 **Files touched:** `docs/project/_MAP.md`, `CLAUDE.md`  
-**Depends on:** Lakukan SETELAH semua infra tasks selesai
+**Depends on:** Lakukan setelah TASK-CC-4 selesai (supaya infra info akurat)
 
 Update `_MAP.md`:
-- Ubah data counts ke angka real (N5=725, N4=692, N3=100, N2=50, N1=20)
-- Ubah grammar counts ke angka real (N5=94, N4=92, N3=103)
-- Tandai grammar lenses Irodori sebagai ✅ Full
-- Update "What's next" section ke tasks yang masih pending
+- Data counts → N5=725, N4=692, N3=100, N2=50, N1=20 (grammar: N5=94, N4=92, N3=103)
+- Tandai grammar lenses Irodori A1/A2-1/A2-2 sebagai ✅ Full
+- Update infra section: Supabase ✅, AI Worker status terbaru
+- Update "What's next" ke task list MASTER-AUDIT.md yang aktif
 
 Update `CLAUDE.md`:
-- "What still needs doing" → sesuaikan dengan MASTER-AUDIT.md task list terbaru
-- Remove reference ke tasks yang sudah selesai (Tasks 1–7)
+- Section "What still needs doing" → sesuaikan dengan MASTER-AUDIT.md Tasks 12–17
+- Hapus referensi ke Tasks 1–11 yang sudah done
 
-Run `node tests/run.js` → 0 failures.  
-Commit: `"docs: sync _MAP.md + CLAUDE.md ke real state 16 April 2026"`
+Run `node tests/run.js` → 0 FAIL.  
+Commit: `"docs: sync _MAP.md + CLAUDE.md ke real state post-16-April-2026"`
+
+---
+
+## TASK-CC-8 — PASTE VOCAB N3 BATCH 🟡
+**Estimated tokens:** Low  
+**Files touched:** `public/data/vocab/vocab-n3.js`  
+**Depends on:** Content harus disiapkan dulu di claude.ai (bukan Claude Code yang generate)
+
+> Claude Code TIDAK generate konten. Task ini hanya: ambil konten yang sudah disiapkan claude.ai,
+> paste ke vocab-n3.js di posisi yang benar, run tests.
+
+Instruksi:
+1. Buka `public/data/vocab/vocab-n3.js`
+2. Cari baris terakhir sebelum `];` di akhir file
+3. Paste entry baru (vg-n3-00101 dst) setelah entry terakhir, sebelum `];`
+4. Pastikan ada koma setelah entry sebelumnya
+5. Run `node tests/run.js` — cek duplicate ID check PASS
+6. Commit: `"feat: vocab-n3 vg-n3-00101 to vg-n3-00150 — Batch B"`
 
 ---
 
@@ -293,26 +178,24 @@ Commit: `"docs: sync _MAP.md + CLAUDE.md ke real state 16 April 2026"`
 
 ```bash
 # 1. Test
-node tests/run.js
-# → Must be 0 FAIL
+node tests/run.js  # → must be 0 FAIL
 
-# 2. Commit di working branch
+# 2. Commit
 git add -A
 git commit -m "type: description"
 
-# 3. Push + PR ke main
+# 3. Push + merge ke main
 git push origin HEAD
-
-# 4. Merge ke main (via GitHub PR atau:)
-git checkout main
-git merge --no-ff your-branch
+# Buat PR di GitHub atau:
+git checkout main && git merge --no-ff your-branch
 git push origin main
 
-# 5. Delete working branch
-git push origin --delete your-branch-name
-git branch -d your-branch-name
+# 4. Delete working branch
+git push origin --delete your-claude-branch
+git branch -d your-claude-branch
 ```
 
 ---
 
-*Last updated: 16 April 2026 — claude.ai audit (Sonnet 4.6)*
+*Last updated: 16 April 2026 — claude.ai (Sonnet 4.6)*
+*Tests: 10,550 PASS | 0 FAIL*
