@@ -35,7 +35,7 @@ window.bookIrodoriA1 = {
         'vg-n5-00125', // ありがとうございます — terima kasih
         'vg-n5-00126', // どうぞ — silakan
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00001', 'gn5-00002', 'gn5-00085', 'gn5-00005', 'gn5-00003', 'gn5-00004'],
     },
 
     2: {
@@ -55,7 +55,7 @@ window.bookIrodoriA1 = {
         'vg-n5-00086', // 会社 — perusahaan
         'vg-n5-00100', // 言葉 — kata; bahasa
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00006', 'gn5-00007', 'gn5-00008', 'gn5-00009'],
     },
 
     3: {
@@ -73,7 +73,7 @@ window.bookIrodoriA1 = {
         'vg-n5-00037', // 買う — membeli
         'vg-n5-00126', // どうぞ — silakan
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00010', 'gn5-00086', 'gn5-00011', 'gn5-00012', 'gn5-00013', 'gn5-00087'],
     },
 
     4: {
@@ -93,7 +93,7 @@ window.bookIrodoriA1 = {
         'vg-n5-00722', // 枚 — satuan benda datar (kertas, piring)
         'vg-n5-00038', // 売る — menjual
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00014', 'gn5-00064', 'gn5-00088', 'gn5-00015'],
     },
 
     5: {
@@ -111,7 +111,7 @@ window.bookIrodoriA1 = {
         'vg-n5-00054', // ある — ada (benda mati)
         'vg-n5-00053', // いる — ada (makhluk hidup)
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00001', 'gn5-00016', 'gn5-00017', 'gn5-00018'],
     },
 
     6: {
@@ -130,7 +130,7 @@ window.bookIrodoriA1 = {
         'vg-n5-00712', // 公園 — taman
         'vg-n5-00558', // 道 — jalan
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00019', 'gn5-00020', 'gn5-00089'],
     },
 
     7: {
@@ -149,7 +149,7 @@ window.bookIrodoriA1 = {
         'vg-n5-00461', // 前 — depan, sebelum
         'vg-n5-00462', // 後で — nanti, setelah itu
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00020', 'gn5-00021', 'gn5-00001', 'gn5-00090'],
     },
 
     8: {
@@ -177,7 +177,7 @@ window.bookIrodoriA1 = {
         'vg-n5-00604', // 十一月 — November
         'vg-n5-00605', // 十二月 — Desember
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00022', 'gn5-00023', 'gn5-00030'],
     },
 
     9: {
@@ -195,7 +195,7 @@ window.bookIrodoriA1 = {
         'vg-n5-00562', // 空港 — bandara
         'vg-n5-00088', // 駅 — stasiun
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00024', 'gn5-00025', 'gn5-00026', 'gn5-00027'],
     },
 
     10: {
@@ -214,7 +214,7 @@ window.bookIrodoriA1 = {
         'vg-n5-00119', // いつも — selalu; biasanya
         'vg-n5-00120', // 時々 — kadang-kadang
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00028', 'gn5-00091', 'gn5-00031'],
     },
 
     11: {
@@ -236,7 +236,7 @@ window.bookIrodoriA1 = {
         'vg-n5-00090', // 食べ物 — makanan-minuman
         'vg-n5-00091', // 飲み物 — minuman
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00029', 'gn5-00030', 'gn5-00031'],
     },
 
     12: {
@@ -256,7 +256,7 @@ window.bookIrodoriA1 = {
         'vg-n5-00249', // つめたい — dingin (benda)
         'vg-n5-00247', // あつい — panas (benda)
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00032', 'gn5-00092', 'gn5-00024'],
     },
 
     13: {
@@ -276,7 +276,7 @@ window.bookIrodoriA1 = {
         'vg-n5-00059', // 良い — bagus, baik
         'vg-n5-00060', // 悪い — buruk, jelek
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00093', 'gn5-00033', 'gn5-00006'],
     },
 
     14: {
@@ -298,7 +298,7 @@ window.bookIrodoriA1 = {
         'vg-n5-00032', // 見る — melihat; menonton
         'vg-n5-00033', // 読む — membaca
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00034', 'gn5-00035', 'gn5-00055'],
     },
 
     15: {
@@ -317,7 +317,7 @@ window.bookIrodoriA1 = {
         'vg-n5-00092', // 友達 — teman
         'vg-n5-00117', // 一緒に — bersama
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00006', 'gn5-00036', 'gn5-00018'],
     },
 
     16: {
@@ -337,7 +337,7 @@ window.bookIrodoriA1 = {
         'vg-n5-00673', // くもり — mendung
         'vg-n5-00083', // 大切 — penting, berharga
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00037', 'gn5-00094', 'gn5-00018', 'gn5-00038'],
     },
 
     17: {
@@ -356,7 +356,7 @@ window.bookIrodoriA1 = {
         'vg-n5-00525', // 旅行 — perjalanan, wisata
         'vg-n5-00049', // 送る — mengirim; mengantarkan
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00006', 'gn5-00036', 'gn5-00018', 'gn5-00037', 'gn5-00094', 'gn5-00038'],
     },
 
     18: {
@@ -375,7 +375,7 @@ window.bookIrodoriA1 = {
         'vg-n5-00096', // 明日 — besok
         'vg-n5-00095', // 今日 — hari ini
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00006', 'gn5-00036', 'gn5-00018', 'gn5-00037', 'gn5-00094', 'gn5-00038'],
     },
   },
 };
