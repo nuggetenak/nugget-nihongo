@@ -7,7 +7,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="Nihongo">
-  <title>Nugget — Nihongo · 日本語文法</title>
+  <title>Nugget Nihongo · Belajar Bahasa Jepang JLPT</title>
   <link rel="manifest" href="./manifest.webmanifest">
   <!-- iOS PWA: apple-touch-icon (PNG fallback — SVG-as-data-URI not supported on iOS Safari) -->
   <link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAELElEQVR4nO3dTVKsMBRAYXzl1IEjR67Kbbgct+Gq3MgbUHZZbR8MhE7uTc437GqBhmOA4M/D0/PLIt3yr/cGKC7jEDIOIeMQMg4h4xAyDiHjEDIOIeMQMg4h4xAyDiHjEDIOIeMQMg4h4xAyDiHjEDIOIeMQMg4h4xAyDiHjEDIOIeMQMg4h4xAyDiHjEDIOIeMQeuy9AVG8fXxdvfL5/tplS+Jw5BAyDiHjEDIOIeMQMg4h4xAyDiHjEDIOIeMQMg4h4xAyDiHjEDIOIeMQMg4h4xAyDiHjWJZbP12sxTgWLsNiZo9ju4DJ+5g6jpJjP3Mf88ZRftSn7WPSOK6O95+/3DZnHzPGUVjG1esT9vHw9PzSZcUT7usaXX5xd8aRQ4WMQ8g4hIxDqNsFaTOF9yaFf7xl7z1waoOPHKcfy6nub0eO407f5fP0MWwcdx3/J+ljzDgaXBnM0MeAcTS7Zhy+j9HiaHw3MXYfQ8XR5T5z4D7GiaPjDMSofQwSR/e5qSH7GCGO7mXcXO8AfaSPI0gZN9eevY/ccZxVxolHcaQ+Ej94O6WMPw/eKYtN+nwu68jRpozC9/w2xviRMo5mZex9508D9JEvjsZlHHv/Knsfya456suoPEL1a0x0/ZFp5LhfGeWLOtBW3vEjTRztyyj/gcI/Je0jRxy9xozJ+0gQx53K+Hx/LVkUvW2GPqLHUVnG28cXlbFrOdTH3gOcq4/QcdSXcfP1Y/cLZ51iEvURN45QZWx/7ah9BI0jYBnbSxiyj4iTYDVlHM5i778rP6W/4PNjEUeOn/uoTRkHnDKEHP6kbUSMY/neU2HL2F7ygT4ClrGEjWMJX8b28g+PH6HEjaNczRxXvRNnyaLJHcdZc1z1zpolCyVxHL1OJeTEBzFBZI0jWhnba0/aR8o4YpaxvQ0Z+3jsvQH7RM7iYt2Y35u6vhJqU7dlGjlSlHExwBCSJo5cZayy95EjjoxlrFL3kSCOvnNc9fLOkoWOI84cV72Ms2Rx48h7KiHpTjFB4xivjFWuPiLGMWoZq0R9xJoEGzuLiyyzZIFGjknKuIg/hESJY7YyVsH7CBHHnGWsIvfRP47sc1z1ws6S9YxjpDmuegFnybrFMfOphEQ7xfSJwzJIqD46xGEZ2+L00XQSzCwKBZklazdyWMZe3YeQRnFYxjF9+2gUx80PaRklOu66Pg/ezGIXugS5t3bXHJcgLOOY9juw9a2sZdRovPeaxmEZ9Vruw/4P3hSWcQgZh5BxCBmHkHEIGYeQcQgZh5BxCBmHkHEIGYeQcQgZh5BxCBmHUMT/8aYgHDmEjEPIOISMQ8g4hIxDyDiEjEPIOISMQ8g4hIxDyDiEjEPIOISMQ8g4hIxDyDiEjEPIOISMQ8g4hIxDyDiEjEPIOISMQ8g4hIxDyDiEjEPIOIT+A/1KAQvCWgBiAAAAAElFTkSuQmCC">
@@ -62,8 +62,8 @@
   <div class="header-inner">
     <div class="header-top-row">
       <div>
-        <h1>日本語総まとめ</h1>
-        <p>JLPT N1–N5 · Referensi & Quiz Tata Bahasa Jepang</p>
+        <h1>Nugget <span lang="ja">日本語</span></h1>
+        <p>Belajar JLPT N5–N1 · Grammar · Kosakata · Quiz</p>
       </div>
       <div style="display:flex;align-items:center;gap:0.5rem">
         <button class="gs-trigger-btn" onclick="gsOpen()" title="Cari grammar & vocab (Ctrl+K)">
@@ -79,7 +79,7 @@
           <span class="streak-label">hari</span>
         </div>
         <!-- Auth button / user avatar -->
-        <button class="auth-header-btn" id="authHeaderBtn" onclick="showAuthModal()" title="Masuk / Daftar" style="display:none">
+        <button class="auth-header-btn" id="authHeaderBtn" onclick="showAuthModal()" title="Masuk / Daftar">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
           </svg>
@@ -155,11 +155,11 @@
     <!-- Row 1: Level pills -->
     <div class="level-pills">
       <button class="pill active-all" id="pill-all"      onclick="pillLevel('all',this)">Semua</button>
-      <button class="pill"            id="pill-n3"       onclick="pillLevel('n3',this)"><span class="pill-dot" style="background:var(--n3)"></span>N3</button>
-      <button class="pill"            id="pill-n4"       onclick="pillLevel('n4',this)"><span class="pill-dot" style="background:var(--n4)"></span>N4</button>
-      <button class="pill"            id="pill-n1"       onclick="pillLevel('n1',this)"><span class="pill-dot" style="background:var(--n1)"></span>N1</button>
-      <button class="pill"            id="pill-n2"       onclick="pillLevel('n2',this)"><span class="pill-dot" style="background:var(--n2)"></span>N2</button>
       <button class="pill"            id="pill-n5"       onclick="pillLevel('n5',this)"><span class="pill-dot" style="background:var(--n5)"></span>N5</button>
+      <button class="pill"            id="pill-n4"       onclick="pillLevel('n4',this)"><span class="pill-dot" style="background:var(--n4)"></span>N4</button>
+      <button class="pill"            id="pill-n3"       onclick="pillLevel('n3',this)"><span class="pill-dot" style="background:var(--n3)"></span>N3</button>
+      <button class="pill"            id="pill-n2"       onclick="pillLevel('n2',this)"><span class="pill-dot" style="background:var(--n2)"></span>N2</button>
+      <button class="pill"            id="pill-n1"       onclick="pillLevel('n1',this)"><span class="pill-dot" style="background:var(--n1)"></span>N1</button>
       <button class="pill"            id="pill-bookmark" onclick="pillBookmark(this)">⭐ Bookmark</button>
     </div>
 
