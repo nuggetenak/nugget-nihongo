@@ -1,0 +1,61 @@
+name: Deploy AI Proxy Worker
+
+on:
+  workflow_dispatch:   # manual trigger dari GitHub Actions tab
+  push:
+    branches: [main]
+    paths:
+      - 'workers/**'   # auto-deploy kalau ada perubahan di workers/
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: Deploy nugget-nihongo-ai Worker
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install Wrangler
+        run: npm install -g wrangler
+
+      - name: Set GROQ secret
+        working-directory: workers
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: echo "${{ secrets.GROQ_API_KEY }}" | wrangler secret put GROQ_API_KEY
+
+      - name: Set GEMINI secret
+        working-directory: workers
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: echo "${{ secrets.GEMINI_API_KEY }}" | wrangler secret put GEMINI_API_KEY
+
+      - name: Deploy Worker
+        working-directory: workers
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: wrangler deploy
+
+      - name: Smoke test
+        env:
+          WORKER_URL: https://nugget-nihongo-ai.workers.dev/chat
+        run: |
+          RESPONSE=$(curl -s -X POST "$WORKER_URL" \
+            -H "Content-Type: application/json" \
+            -H "Origin: https://nuggetenak.github.io" \
+            -d '{"messages":[{"role":"user","content":"tes"}]}')
+          echo "Response: $RESPONSE"
+          if echo "$RESPONSE" | grep -q '"reply"'; then
+            echo "✅ Worker responding correctly"
+          else
+            echo "⚠️ Unexpected response — check worker logs"
+          fi
