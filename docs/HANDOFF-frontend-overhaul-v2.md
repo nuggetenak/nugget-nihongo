@@ -8,7 +8,40 @@
 ---
 
 
-## Session update — 2026-04-16 (Agent: Claude Sonnet 4.6)
+## Session update — 2026-04-16 (Agent: Claude Sonnet 4.6, session 2)
+
+### Completed this session
+- **Phase 3 DONE**: Onboarding + Settings + About. Commit `1c8365b`. Tests 10700/0.
+
+**Files added/modified:**
+- `public/styles/onboarding.css` — onboarding overlay styles (246 lines)
+- `public/styles/settings.css` — Settings + About + ⋯ More bottom-sheet styles (389 lines)
+- `public/js/pages/onboarding.js` — 3-screen force-through logic; writes `nn_starting_level` + `nn_goals` to localStorage
+- `public/js/pages/settings.js` — all settings controls; `window.openMoreSheet` / `closeMoreSheet` / `showToast` exposed
+- `public/js/pages/about.js` — cite toggle + version display
+- `public/index.html` — onboarding overlay HTML, settings page HTML, about page HTML, ⋯ More bottom-sheet, nav restructure
+- `public/js/app.js` — `switchTab` extended for settings/about; three new page inits on DOMContentLoaded
+- `public/styles/app.css` — `.tab-btn--hidden` utility added
+
+**Nav change:** "Tema" tab removed from bottom nav. Replaced with "⋯ Lainnya" → opens bottom-sheet (Settings, About, Theme, Install, Login). `themeToggle` ID moved to the sheet's icon div — `theme.js` still works (references same ID to update icon text).
+
+**Key localStorage keys written by Phase 3:**
+- `nn_onboarded` = `'1'` → onboarding guard
+- `nn_starting_level` → `'beginner'|'kana'|'n5'|'n4plus'|'unknown'`
+- `nn_goals` → JSON array, e.g. `["ssw","jlpt"]`
+- `nn_theme`, `nn_fontsize`, `nn_furigana`, `nn_romaji`, `nn_card_target`, `nn_reduce_motion` → settings values
+
+### What's next (recommended order)
+1. **Phase 5** — Sensei persona v2: replace SYSTEM_PROMPT in `workers/ai-proxy.js` AND `supabase/functions/ai-router/index.ts` with §5.3 canonical prompt. Add CI test that diffs them (drift check). Wire `aiSetMode()` to send `ctx.mode` to Worker. Inject `nn_goals` from localStorage into every Sensei request payload.
+2. **Phase 4** — Markup refactor (rewrite each page using design system tokens)
+3. **Phase 5.5** — AI Content Engine (Generator → Critic → Validator pipeline) — dangerous, do last
+
+### What was NOT open-to-decide
+All decisions from handoff v2.0 still apply. No new decisions were made this session.
+
+---
+
+## Session update — 2026-04-16 (Agent: Claude Sonnet 4.6, session 1)
 
 ### Completed this session
 - **Phase 0 DONE**: B1 (quiz pills order), B7 (iOS safe-area), B6 (skeleton loading state). Tests 10700/0.
@@ -18,11 +51,6 @@
   - Irodori grammar lenses now loaded in index.html
   - `hubInit()` wired into app.js after `browseInit()`
   - Tests still 10700/0
-
-### What's next (recommended order)
-1. **Phase 2e** — Per-book progress bars are already rendered in the hub (via `getLensProgress()`). Looks good functionally. Next agent: verify on device, then proceed to Phase 3.
-2. **Phase 3** — Onboarding (3-screen force-through), Settings page, About page
-3. **Phase 5** — Sensei persona v2 (Worker system prompt replacement)
 
 ### What was NOT open-to-decide
 All Phase 0 and Phase 2 decisions match the locked v2.1 plan. No new decisions needed.
