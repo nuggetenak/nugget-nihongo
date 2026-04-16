@@ -14,6 +14,8 @@
   <!-- Fonts: self-hosted via /fonts/ (see css/style.css §1) -->
   <link rel="stylesheet" href="./styles/layout/shell.css">
   <link rel="stylesheet" href="./styles/app.css">
+  <link rel="stylesheet" href="./styles/onboarding.css">
+  <link rel="stylesheet" href="./styles/settings.css">
 </head>
 <body>
 
@@ -114,10 +116,13 @@
     <span class="tab-icon">📊</span>
     <span>Progres</span>
   </button>
-  <button class="tab-btn" id="themeToggle" onclick="toggleTheme()" title="Ganti tema">
-    <span class="tab-icon">🌙</span>
-    <span>Tema</span>
+  <button class="tab-btn" id="tabBtnMore" onclick="openMoreSheet()">
+    <span class="tab-icon">⋯</span>
+    <span>Lainnya</span>
   </button>
+  <!-- Settings + About: hidden from nav, accessible via ⋯ More -->
+  <button id="tabBtnSettings" class="tab-btn tab-btn--hidden" onclick="switchTab('settings',this)"></button>
+  <button id="tabBtnAbout"    class="tab-btn tab-btn--hidden" onclick="switchTab('about',this)"></button>
 </nav>
 
 <!-- ══════════════ BROWSE PAGE ══════════════ -->
@@ -1338,6 +1343,375 @@
   </div>
 </div>
 
+<!-- ══════════════════════════════════════════════════
+     PHASE 3 — Onboarding / Settings / About / More
+     ══════════════════════════════════════════════════ -->
+
+<!-- ONBOARDING OVERLAY (force-through, 3 screens) -->
+<div id="onboardingOverlay" class="ob-hidden">
+
+  <!-- progress dots -->
+  <div class="ob-dots">
+    <div class="ob-dot active"></div>
+    <div class="ob-dot"></div>
+    <div class="ob-dot"></div>
+  </div>
+
+  <!-- Screen 1 — Halo -->
+  <div class="ob-screen active" id="obScreen1">
+    <div class="ob-avatar">✨</div>
+    <div class="ob-title">Hai, aku Sensei Nugget.</div>
+    <div class="ob-sub">
+      Belajar bahasa Jepang sampai JLPT N1,<br>
+      gratis, tanpa iklan, jalan juga tanpa internet.
+    </div>
+    <button class="ob-btn-primary" id="obBtn1">Mulai →</button>
+  </div>
+
+  <!-- Screen 2 — Level check -->
+  <div class="ob-screen" id="obScreen2">
+    <div class="ob-title">Kira-kira sudah sampai mana?</div>
+    <div class="ob-sub" style="margin-bottom:1.5rem">Pilih yang paling cocok — bisa diubah nanti di Settings.</div>
+    <div class="ob-level-grid">
+      <div class="ob-level-card" data-level="beginner">
+        <span class="ob-lc-emoji">🌱</span>
+        <div class="ob-lc-title">Baru mulai</div>
+        <div class="ob-lc-sub">Hiragana & katakana belum hafal</div>
+        <span class="ob-lc-check">✓</span>
+      </div>
+      <div class="ob-level-card" data-level="kana">
+        <span class="ob-lc-emoji">📝</span>
+        <div class="ob-lc-title">Sudah bisa kana</div>
+        <div class="ob-lc-sub">Hiragana-katakana lancar</div>
+        <span class="ob-lc-check">✓</span>
+      </div>
+      <div class="ob-level-card" data-level="n5">
+        <span class="ob-lc-emoji">🎯</span>
+        <div class="ob-lc-title">Pernah JLPT N5</div>
+        <div class="ob-lc-sub">Atau setara level itu</div>
+        <span class="ob-lc-check">✓</span>
+      </div>
+      <div class="ob-level-card" data-level="n4plus">
+        <span class="ob-lc-emoji">🚀</span>
+        <div class="ob-lc-title">N4 ke atas</div>
+        <div class="ob-lc-sub">Sudah bisa baca kanji dasar</div>
+        <span class="ob-lc-check">✓</span>
+      </div>
+    </div>
+    <button class="ob-btn-primary" id="obBtn2">Lanjut →</button>
+    <button class="ob-btn-skip" id="obSkip2">Nggak yakin, cari tau sambil jalan</button>
+  </div>
+
+  <!-- Screen 3 — Goals -->
+  <div class="ob-screen" id="obScreen3">
+    <div class="ob-title">Tujuanmu apa?</div>
+    <div class="ob-goal-hint">Pilih sampai 3. Ini bantu Sensei nyesuain gaya belajar kamu.</div>
+    <div class="ob-goal-list">
+      <div class="ob-goal-item" data-goal="ssw">
+        <span class="ob-gi-emoji">🏭</span>
+        <span class="ob-gi-text">Kerja di Jepang (SSW / TKI)</span>
+      </div>
+      <div class="ob-goal-item" data-goal="jlpt">
+        <span class="ob-gi-emoji">📜</span>
+        <span class="ob-gi-text">Lulus JLPT (N5 → N1)</span>
+      </div>
+      <div class="ob-goal-item" data-goal="anime">
+        <span class="ob-gi-emoji">🎌</span>
+        <span class="ob-gi-text">Nonton anime / baca manga tanpa subtitle</span>
+      </div>
+      <div class="ob-goal-item" data-goal="travel">
+        <span class="ob-gi-emoji">✈️</span>
+        <span class="ob-gi-text">Jalan-jalan ke Jepang</span>
+      </div>
+      <div class="ob-goal-item" data-goal="casual">
+        <span class="ob-gi-emoji">😊</span>
+        <span class="ob-gi-text">Iseng aja, penasaran</span>
+      </div>
+    </div>
+    <button class="ob-btn-primary" id="obBtn3">Langsung mulai</button>
+  </div>
+
+</div>
+
+<!-- ⋯ MORE BOTTOM-SHEET -->
+<div id="moreSheetOverlay" onclick="if(event.target===this)closeMoreSheet()">
+  <div id="moreSheet">
+    <div class="ms-handle"></div>
+    <div class="ms-item" onclick="_moreNavTo('settings')">
+      <div class="ms-icon">⚙️</div>
+      <div>
+        <div class="ms-label">Pengaturan</div>
+        <div class="ms-sub">Tema, ukuran teks, notifikasi</div>
+      </div>
+    </div>
+    <div class="ms-item" onclick="_moreNavTo('about')">
+      <div class="ms-icon">❓</div>
+      <div>
+        <div class="ms-label">Tentang Aplikasi</div>
+        <div class="ms-sub">Metodologi, atribusi, versi</div>
+      </div>
+    </div>
+    <div class="ms-item" onclick="toggleTheme();closeMoreSheet()">
+      <div class="ms-icon" id="themeToggle">🌙</div>
+      <div>
+        <div class="ms-label">Ganti Tema</div>
+        <div class="ms-sub">Dark / Light</div>
+      </div>
+    </div>
+    <div class="ms-item" onclick="showInstallModal();closeMoreSheet()">
+      <div class="ms-icon">📲</div>
+      <div>
+        <div class="ms-label">Install Aplikasi</div>
+        <div class="ms-sub">Simpan ke home screen</div>
+      </div>
+    </div>
+    <div class="ms-item" onclick="document.getElementById('authModal').style.display='flex';closeMoreSheet()">
+      <div class="ms-icon">👤</div>
+      <div>
+        <div class="ms-label">Masuk / Daftar</div>
+        <div class="ms-sub">Sinkron progres ke cloud</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ SETTINGS PAGE ══════════════ -->
+<div id="settingsPage" class="page">
+
+  <div class="sp-section">
+    <div class="sp-section-title">Tampilan</div>
+    <div class="sp-list">
+      <div class="sp-row">
+        <span class="sp-row-icon">🎨</span>
+        <div class="sp-row-label"><div class="sp-row-title">Tema</div></div>
+        <div class="sp-row-ctrl">
+          <select id="spThemeSelect" class="sp-select">
+            <option value="dark">Gelap</option>
+            <option value="light">Terang</option>
+            <option value="system">Ikut sistem</option>
+          </select>
+        </div>
+      </div>
+      <div class="sp-row">
+        <span class="sp-row-icon">🔡</span>
+        <div class="sp-row-label"><div class="sp-row-title">Ukuran teks</div></div>
+        <div class="sp-row-ctrl">
+          <button class="sp-select" data-fontsize="small">S</button>
+          <button class="sp-select" data-fontsize="medium">M</button>
+          <button class="sp-select" data-fontsize="large">L</button>
+        </div>
+      </div>
+      <div class="sp-row">
+        <span class="sp-row-icon">🎞️</span>
+        <div class="sp-row-label">
+          <div class="sp-row-title">Kurangi animasi</div>
+          <div class="sp-row-sub">Untuk baterai / accessibility</div>
+        </div>
+        <div class="sp-row-ctrl">
+          <input type="checkbox" id="spReduceMotion" class="sp-toggle">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sp-section">
+    <div class="sp-section-title">Pembelajaran</div>
+    <div class="sp-list">
+      <div class="sp-row">
+        <span class="sp-row-icon">🃏</span>
+        <div class="sp-row-label">
+          <div class="sp-row-title">Target kartu harian</div>
+          <div class="sp-row-sub">Kartu SRS yang mau diselesaikan per hari</div>
+        </div>
+        <div class="sp-row-ctrl">
+          <select id="spCardTarget" class="sp-select">
+            <option value="5">5</option>
+            <option value="10" selected>10</option>
+            <option value="20">20</option>
+            <option value="50">50</option>
+          </select>
+        </div>
+      </div>
+      <div class="sp-row">
+        <span class="sp-row-icon">ふ</span>
+        <div class="sp-row-label">
+          <div class="sp-row-title">Tampilkan furigana</div>
+        </div>
+        <div class="sp-row-ctrl">
+          <select id="spFurigana" class="sp-select">
+            <option value="always">Selalu</option>
+            <option value="tap">Tap untuk lihat</option>
+            <option value="never">Sembunyikan</option>
+          </select>
+        </div>
+      </div>
+      <div class="sp-row">
+        <span class="sp-row-icon">Aa</span>
+        <div class="sp-row-label">
+          <div class="sp-row-title">Tampilkan romaji</div>
+        </div>
+        <div class="sp-row-ctrl">
+          <select id="spRomaji" class="sp-select">
+            <option value="n5n4">N5-N4 saja</option>
+            <option value="always">Selalu</option>
+            <option value="never">Jangan</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sp-section">
+    <div class="sp-section-title">AI Sensei</div>
+    <div class="sp-list">
+      <div class="sp-row sp-row--tap" id="spResetConvo">
+        <span class="sp-row-icon">🔄</span>
+        <div class="sp-row-label">
+          <div class="sp-row-title">Reset riwayat percakapan</div>
+          <div class="sp-row-sub">Mulai Sensei dari awal</div>
+        </div>
+        <span class="sp-chevron">›</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="sp-section">
+    <div class="sp-section-title">Data &amp; Privasi</div>
+    <div class="sp-list">
+      <div class="sp-row sp-row--tap" onclick="if(window.exportBackup)window.exportBackup()">
+        <span class="sp-row-icon">💾</span>
+        <div class="sp-row-label">
+          <div class="sp-row-title">Export backup</div>
+          <div class="sp-row-sub">Unduh semua progres sebagai file JSON</div>
+        </div>
+        <span class="sp-chevron">›</span>
+      </div>
+      <div class="sp-row sp-row--tap" onclick="document.getElementById('importFileInput')&&document.getElementById('importFileInput').click()">
+        <span class="sp-row-icon">📂</span>
+        <div class="sp-row-label">
+          <div class="sp-row-title">Import backup</div>
+          <div class="sp-row-sub">Pulihkan dari file JSON</div>
+        </div>
+        <span class="sp-chevron">›</span>
+      </div>
+      <div class="sp-row sp-row--tap sp-row--danger" id="spClearData">
+        <span class="sp-row-icon">🗑️</span>
+        <div class="sp-row-label">
+          <div class="sp-row-title">Hapus semua data lokal</div>
+          <div class="sp-row-sub">FSRS, bookmark, streak — semua hilang</div>
+        </div>
+        <span class="sp-chevron">›</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="sp-section">
+    <div class="sp-section-title">Tentang</div>
+    <div class="sp-list">
+      <div class="sp-row">
+        <span class="sp-row-icon">📦</span>
+        <div class="sp-row-label"><div class="sp-row-title">Versi aplikasi</div></div>
+        <div class="sp-row-ctrl">
+          <span class="sp-version-pill" id="spVersionPill">—</span>
+        </div>
+      </div>
+      <div class="sp-row sp-row--tap" onclick="_moreNavTo('about')">
+        <span class="sp-row-icon">❓</span>
+        <div class="sp-row-label"><div class="sp-row-title">Tentang &amp; Metodologi</div></div>
+        <span class="sp-chevron">›</span>
+      </div>
+      <div class="sp-row sp-row--tap" onclick="window.open('https://github.com/nuggetenak/nugget-nihongo','_blank')">
+        <span class="sp-row-icon">🐙</span>
+        <div class="sp-row-label"><div class="sp-row-title">GitHub</div></div>
+        <span class="sp-chevron">›</span>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /settingsPage -->
+
+<!-- ══════════════ ABOUT PAGE ══════════════ -->
+<div id="aboutPage" class="page">
+
+  <div class="ab-hero">
+    <div class="ab-logo" lang="ja">文</div>
+    <div class="ab-hero-title">Nugget Nihongo</div>
+    <div class="ab-hero-version" id="abVersion">—</div>
+  </div>
+
+  <div class="ab-section">
+    <div class="ab-section-title">Apa ini?</div>
+    <div class="ab-body">
+      <p>Nugget Nihongo adalah aplikasi belajar bahasa Jepang gratis untuk pelajar Indonesia — dari nol sampai JLPT N1. Offline-first, tanpa iklan, tanpa sistem nyinyir (nggak ada yang bilang kamu gagal).</p>
+    </div>
+  </div>
+
+  <div class="ab-section">
+    <div class="ab-section-title">Kenapa dibuat?</div>
+    <div class="ab-body">
+      <p>Dibuat oleh Nugget — orang Indonesia yang lagi persiapan kerja di Jepang lewat jalur SSW. Semua aplikasi belajar yang ada terasa terlalu gamified, terlalu mahal, atau nggak ngerti konteks pelajar Indonesia.</p>
+      <p>Jadi dibuat sendiri. Gratis, karena belajar bahasa nggak seharusnya mahal. Offline-first, karena koneksi internet di Indonesia nggak selalu stabil. Tanpa leaderboard, karena belajar bukan kompetisi.</p>
+    </div>
+  </div>
+
+  <div class="ab-section">
+    <div class="ab-section-title">Metodologi belajar</div>
+    <div class="ab-body">
+      <p>Sistem belajar didesain berdasarkan 736 referensi riset pendidikan bahasa. Lima pilar utama:</p>
+    </div>
+    <div class="ab-pillars">
+      <div class="ab-pillar">
+        <div class="ab-pillar-title">1. Spaced Repetition (FSRS)</div>
+        <div class="ab-pillar-sub">Kartu muncul tepat sebelum kamu lupa — bukan setiap hari flat.</div>
+      </div>
+      <div class="ab-pillar">
+        <div class="ab-pillar-title">2. Comprehensible Input</div>
+        <div class="ab-pillar-sub">Konteks kalimat nyata, bukan hafalan kosakata lepas.</div>
+      </div>
+      <div class="ab-pillar">
+        <div class="ab-pillar-title">3. Motivasi otonom (SDT)</div>
+        <div class="ab-pillar-sub">Kamu pilih tujuan sendiri — Sensei nyesuain, bukan memaksa.</div>
+      </div>
+      <div class="ab-pillar">
+        <div class="ab-pillar-title">4. Umpan balik informatif</div>
+        <div class="ab-pillar-sub">"Hampir benar — ini alasannya." Bukan "Salah!"</div>
+      </div>
+      <div class="ab-pillar">
+        <div class="ab-pillar-title">5. Privasi &amp; tanpa tekanan sosial</div>
+        <div class="ab-pillar-sub">Riset menunjukkan pelajar Indonesia lebih baik tanpa leaderboard publik (Hofstede IDV=14, Markus &amp; Kitayama 1991).</div>
+      </div>
+    </div>
+
+    <button class="ab-cite-toggle" id="abCiteToggle">Lihat semua referensi (736) ▼</button>
+    <div class="ab-cite-list" id="abCiteList">
+      Corpus riset lengkap (736 entri APA 7th) tersedia di branch <code>corpus/v17-pass15</code> pada repositori GitHub. Termasuk cluster: Mobile-Assisted Language Learning (MALL), Spaced Repetition Systems (SA), Gamification (GI), Self-Determination Theory (LS), dan 10 cluster lainnya.
+    </div>
+  </div>
+
+  <div class="ab-section">
+    <div class="ab-section-title">Atribusi &amp; Lisensi</div>
+    <div class="ab-attribution">
+      Aplikasi ini menggunakan file kamus <strong>JMdict</strong>, properti dari Electronic Dictionary Research and Development Group (EDRDG), digunakan sesuai ketentuan lisensi EDRDG.
+      <a href="https://www.edrdg.org/edrdg/licence.html" target="_blank" rel="noopener">edrdg.org/edrdg/licence.html</a>
+    </div>
+    <div class="ab-credits">
+      <span class="ab-credit-tag">DM Sans · SIL OFL</span>
+      <span class="ab-credit-tag">BIZ UDGothic · Morisawa OFL</span>
+      <span class="ab-credit-tag">ts-fsrs · MIT</span>
+      <span class="ab-credit-tag">Supabase · Apache 2.0</span>
+      <span class="ab-credit-tag">Cloudflare Workers</span>
+    </div>
+  </div>
+
+  <div class="ab-section">
+    <div class="ab-section-title">Lisensi</div>
+    <div class="ab-body">
+      <p>MIT License · <a href="https://github.com/nuggetenak/nugget-nihongo" target="_blank" rel="noopener" style="color:var(--accent)">GitHub</a></p>
+    </div>
+  </div>
+
+</div><!-- /aboutPage -->
+
 <!-- DATA (urutan penting!) -->
 <!-- ═══════════════════════════════════════════════════════
      ARCHITECTURE v3 — Data Loading Order
@@ -1435,6 +1809,10 @@
 <script src="./js/vocab-detail.js"></script>
 <script src="./js/global-search.js"></script>
 <script src="./js/analytics.js"></script>
+<!-- JS: Phase 3 — Onboarding / Settings / About -->
+<script src="./js/pages/onboarding.js"></script>
+<script src="./js/pages/settings.js"></script>
+<script src="./js/pages/about.js"></script>
 <script src="./js/app.js"></script>
 
 <!-- ══ VOCAB DETAIL MODAL ══ -->

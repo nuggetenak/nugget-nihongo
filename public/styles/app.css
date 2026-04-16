@@ -500,6 +500,7 @@ body.light .tab-nav {
 }
 .tab-btn.active { color: var(--text); }
 .tab-btn.active::after { opacity: 1; transform: scaleX(1); }
+.tab-btn--hidden { display: none !important; }
 .tab-icon { font-size: 1.2rem; line-height: 1; display: block; }
 @media (min-width: 768px) {
   .tab-nav {
