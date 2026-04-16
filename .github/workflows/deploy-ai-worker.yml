@@ -3,7 +3,7 @@ name: Deploy AI Proxy Worker
 on:
   workflow_dispatch:
   push:
-    branches: [main]
+    branches: [main]         # deploy worker hanya saat main berubah
     paths:
       - 'workers/**'
 
@@ -48,12 +48,12 @@ jobs:
         run: |
           RESPONSE=$(curl -s -X POST "$WORKER_URL" \
             -H "Content-Type: application/json" \
-            -H "Origin: https://nuggetenak.github.io" \
+            -H "Origin: https://nugget-nihongo.pages.dev" \
             -d '{"messages":[{"role":"user","content":"tes"}]}')
           echo "Response: $RESPONSE"
           if echo "$RESPONSE" | grep -q '"reply"'; then
-            echo "✅ Worker responding correctly"
+            echo "✅ Worker OK"
           else
-            echo "⚠️ Unexpected response — check ALLOWED_ORIGINS or worker logs"
+            echo "⚠️ Check worker logs"
             exit 0
           fi

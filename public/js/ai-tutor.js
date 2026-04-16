@@ -18,7 +18,7 @@ const AI_WORKER_URL = (() => {
   const stored = localStorage.getItem('nn_ai_worker_url');
   if (stored) return stored;
   // Default: same subdomain pattern as GitHub Pages org
-  return 'https://nugget-nihongo-ai.workers.dev/chat';
+  return 'https://nugget-nihongo-ai.nugrohopangestu85.workers.dev/chat';
 })();
 
 const AI_QUOTA_KEY   = 'nn_ai_quota';   // { date, used }

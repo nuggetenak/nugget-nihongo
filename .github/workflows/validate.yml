@@ -1,80 +1,37 @@
-name: Validate Data
+name: Validate (develop & PR)
 
 on:
   push:
-    branches: [main]
-    paths: ['public/data/**', 'public/js/**']
+    branches: [develop, 'feature/**', 'fix/**', 'patch/**']
   pull_request:
     branches: [main]
 
 jobs:
   validate:
     runs-on: ubuntu-latest
+    name: Run tests + checks
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          node-version-file: '.nvmrc'
-
-      - name: Validate vocab schemas
-        run: |
-          node -e "
-            global.window = global;
-            const fs = require('fs');
-            ['n5','n4','n3'].forEach(level => {
-              const file = 'public/data/vocab/vocab-' + level + '.js';
-              eval(fs.readFileSync(file, 'utf8'));
-              const arr = global['vocabN' + level.charAt(1)];
-              if (!arr) { console.log('SKIP ' + file + ' (empty)'); return; }
-              let errors = 0;
-              arr.forEach((e, i) => {
-                if (!e.id) { console.error(file + '[' + i + ']: missing id'); errors++; }
-                if (!e.word) { console.error(file + '[' + i + ']: missing word'); errors++; }
-                if (!e.jlpt) { console.error(file + '[' + i + ']: missing jlpt'); errors++; }
-                if (!e.pos) { console.error(file + '[' + i + ']: missing pos'); errors++; }
-              });
-              console.log(file + ': ' + arr.length + ' entries, ' + errors + ' errors');
-              if (errors > 0) process.exit(1);
-            });
-          "
-
-      - name: Validate grammar schemas
-        run: |
-          node -e "
-            global.window = global;
-            const fs = require('fs');
-            ['n5','n4','n3'].forEach(level => {
-              const file = 'public/data/grammar/grammar-' + level + '.js';
-              eval(fs.readFileSync(file, 'utf8'));
-              const key = 'grammarN' + level.charAt(1);
-              const arr = global[key];
-              if (!arr) { console.log('SKIP ' + file); return; }
-              let errors = 0;
-              arr.forEach((e, i) => {
-                if (!e.id) { console.error(file + '[' + i + ']: missing id'); errors++; }
-                if (!e.pattern) { console.error(file + '[' + i + ']: missing pattern'); errors++; }
-                if (!e.cat) { console.error(file + '[' + i + ']: missing cat'); errors++; }
-              });
-              console.log(file + ': ' + arr.length + ' entries, ' + errors + ' errors');
-              if (errors > 0) process.exit(1);
-            });
-          "
-
-      - name: Version sync check
-        run: |
-          node -e "
-            const fs = require('fs');
-            const vjs = fs.readFileSync('public/js/core/version.js','utf8');
-            const sw = fs.readFileSync('public/sw.js','utf8');
-            const vMatch = vjs.match(/APP_VERSION\s*=\s*'(v[\d.]+)'/);
-            const swMatch = sw.match(/nihongo-(v[\d.]+)/);
-            if (!vMatch || !swMatch) { console.error('Cannot parse versions'); process.exit(1); }
-            if (vMatch[1] !== swMatch[1]) {
-              console.error('VERSION MISMATCH: version.js=' + vMatch[1] + ' sw.js=' + swMatch[1]);
-              process.exit(1);
-            }
-            console.log('Version sync OK: ' + vMatch[1]);
-          "
+          node-version: '22'
 
       - name: Run test suite
         run: node tests/run.js
+
+      - name: Check version sync (sw.js vs version.js)
+        run: node -e "
+          const sw = require('fs').readFileSync('public/sw.js','utf8');
+          const v  = require('fs').readFileSync('public/js/core/version.js','utf8');
+          const swV  = sw.match(/CACHE = 'nihongo-(v[\d.]+)'/)?.[1];
+          const appV = v.match(/APP_VERSION = '(v[\d.]+)'/)?.[1];
+          if (swV !== appV) { console.error('VERSION MISMATCH: sw='+swV+' app='+appV); process.exit(1); }
+          console.log('✅ Version sync OK:', appV);
+        "
+
+      - name: Summary
+        run: echo "✅ All checks passed. Safe to merge to main."

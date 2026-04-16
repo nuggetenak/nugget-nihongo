@@ -63,14 +63,45 @@
 - **KV Namespace `RATE_LIMITS` BELUM DIBUAT** (0 namespaces exist) ❌
 - `workers/wrangler.toml` masih punya placeholder `REPLACE_WITH_KV_NAMESPACE_ID` ❌
 
-### Branches ⚠️ Belum Bersih
-- `claude/read-audit-execute-task-zSXIw` — harus dihapus
-- `claude/setup-supabase-mcp-IDFOp` — harus dihapus
-- `corpus/v17-pass15` — JANGAN DITOUCH, biarkan sebagai research reference
-- Goal: hanya `main` + `corpus/v17-pass15`
+### Branches ✅ Clean
+- `main` — production, source of truth. Push ke sini = langsung live
+- `develop` — branch kerja utama. Semua perubahan mulai dari sini
+- `corpus/v17-pass15` — research reference, JANGAN DITOUCH
+- Claude Code auto-creates `claude/...` branches → merge ke `develop` → merge ke `main`
 
 ### Tests
 - node tests/run.js → **10,550 PASS, 0 FAIL** ✅
+---
+
+## WORKFLOW — CARA KERJA SEHARI-HARI
+
+```
+DEVELOPMENT:
+  git checkout develop          ← selalu mulai dari sini
+  [buat perubahan]
+  node tests/run.js             ← pastikan 0 FAIL
+  git add -A && git commit
+  git push origin develop       ← trigger: validate.yml (tests run otomatis)
+
+DEPLOY KE PRODUCTION:
+  git checkout main
+  git merge develop
+  git push origin main          ← trigger: deploy.yml → Cloudflare Pages LIVE
+  git checkout develop          ← balik ke develop untuk kerja selanjutnya
+
+CLAUDE CODE SESSIONS:
+  Claude Code auto-creates claude/... branch dari develop
+  → kerja di claude/... branch
+  → merge ke develop
+  → kalau sudah tested: merge develop → main → live
+```
+
+**JANGAN pernah:**
+- Push langsung ke main tanpa test
+- Merge corpus/v17-pass15 ke branch manapun
+- Generate konten di Claude Code (timeout) — lakukan di claude.ai
+
+
 
 ---
 
