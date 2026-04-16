@@ -310,7 +310,7 @@ function render() {
   } else {
     const orderedLevels = sortOrder === 'desc' ? [...levelOrder].reverse() : levelOrder;
     orderedLevels.forEach(lv => {
-      const items = filtered.filter(d => d.level === lv);
+      const items = filtered.filter(d => d && d.level === lv);
       if (!items.length) return;
       const meta = window.levelMeta[lv];
       renderSection(main, lv, items, `${lv.toUpperCase()} · ${meta ? meta.name : ''}`, items.length);

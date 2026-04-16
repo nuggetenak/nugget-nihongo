@@ -230,7 +230,7 @@ window.studyTracks = {
   Object.values(tracks).forEach(function(trk) {
     if (!trk.dynamic || !trk.filter) return;
     var level = trk.filter.jlpt;
-    var grammar = grammarDB.filter(function(g) { return g.level === level; });
+    var grammar = grammarDB.filter(function(g) { return g && g.level === level; });
     var vocab = vocabDBs[level] || [];
     trk.items = grammar.map(function(g) { return {type:'grammar', id:g.id}; })
       .concat(vocab.map(function(v) { return {type:'vocab', id:v.id}; }));
