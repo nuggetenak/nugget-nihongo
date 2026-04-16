@@ -453,7 +453,7 @@ window.quizEngine = {
 
   // Stats
   stats: function () {
-    var gPool = (window.grammarDB || []).filter(function(g) { return g.cat !== 'dummy'; });
+    var gPool = (window.grammarDB || []).filter(function(g) { return g && g.cat !== 'dummy'; });
     var vPool = window.vocabDB || [];
     var withExamples = gPool.filter(function(g) { return g.examples && g.examples.length > 0; });
     var withConfusion = gPool.filter(function(g) { return g.confusion_pairs && g.confusion_pairs.length > 0; });
