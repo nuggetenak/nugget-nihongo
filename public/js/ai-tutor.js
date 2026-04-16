@@ -88,49 +88,72 @@ async function aiSend() {
   const ctx = _buildContext();
 
   try {
-    const res = await fetch(AI_WORKER_URL, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'X-User-ID': _getUserId(),
-      },
-      body: JSON.stringify({
-        messages: aiHistory.slice(-10), // last 10 turns
-        context: ctx,
-        userId: _getUserId(),
-      }),
-    });
+    // STEP 1: Check offline cache (L1 pre-baked + L2 IndexedDB)
+    const cache = window.offlineAI;
+    if (cache && cache.ready) {
+      const cached = await cache.getAnswer(text);
+      if (cached) {
+        _removeTyping(typingId);
+        const cacheNote = cached.offline ? '\n\n_📦 Jawaban dari cache — tersedia offline_' : '';
+        _appendMessage('bot', cached.reply + cacheNote);
+        aiHistory.push({ role: 'assistant', content: cached.reply });
+        _saveHistory();
+        if (aiHistory.length > 20) aiHistory = aiHistory.slice(-20);
+        return;
+      }
+    }
 
-    _removeTyping(typingId);
+    // STEP 2: Try API
+    let data = null;
+    let apiError = null;
 
-    if (res.status === 429) {
-      _showBotRetry('Kamu sudah pakai 15 pertanyaan gratis hari ini. Besok bisa tanya lagi ya! ☀️');
-      _setQuota(DAILY_LIMIT);
-    } else if (!res.ok) {
-      const err = await res.json().catch(() => ({}));
-      _showBotRetry(err.message || 'Hmm, Sensei lagi sibuk sebentar. Coba kirim lagi ya!');
+    if (navigator.onLine !== false) {
+      try {
+        const res = await fetch(AI_WORKER_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'X-User-ID': _getUserId() },
+          body: JSON.stringify({ messages: aiHistory.slice(-10), context: ctx, userId: _getUserId() }),
+        });
+        _removeTyping(typingId);
+        if (res.status === 429) {
+          _showBotRetry('Kamu sudah pakai batas pertanyaan hari ini. Besok bisa tanya lagi ya! ☀️');
+          _setQuota(DAILY_LIMIT);
+          return;
+        } else if (!res.ok) {
+          const err = await res.json().catch(() => ({}));
+          apiError = err.message || 'server error';
+        } else {
+          data = await res.json();
+        }
+      } catch (fetchErr) {
+        apiError = fetchErr.message;
+        _removeTyping(typingId);
+      }
     } else {
-      const data = await res.json();
-      const reply = data.reply || '(Tidak ada balasan)';
+      _removeTyping(typingId);
+      apiError = 'offline';
+    }
+
+    // STEP 3: API success — show and cache reply
+    if (data && data.reply) {
+      const reply = data.reply;
       _appendMessage('bot', reply);
       aiHistory.push({ role: 'assistant', content: reply });
       _saveHistory();
-
-      // Update quota
       _setQuota(quota.used + 1);
-
-      // Update remaining from header
-      if (typeof data.remaining === 'number') {
-        _renderQuotaFromRemaining(data.remaining);
-      }
-
-      // Trim history to last 20 turns (memory)
+      if (typeof data.remaining === 'number') _renderQuotaFromRemaining(data.remaining);
       if (aiHistory.length > 20) aiHistory = aiHistory.slice(-20);
+      if (cache && cache.ready && !data.from_cache) cache.saveAnswer(text, data).catch(() => {});
+      return;
     }
-  } catch (e) {
-    _removeTyping(typingId);
-    _showBotRetry('Hmm, koneksi ke Sensei terputus. Coba kirim lagi ya!');
-    console.error('[ai-tutor]', e);
+
+    // STEP 4: All failed — friendly offline message
+    if (apiError === 'offline' || !navigator.onLine) {
+      _showBotRetry('Kamu sedang offline. Coba tanya grammar umum — Sensei punya 200+ jawaban tersimpan!\n\nContoh: "に vs で", "は vs が", "te form", "masu form", "keigo" 💡');
+    } else {
+      _showBotRetry('Sensei lagi istirahat sebentar. Coba lagi ya! 🙏');
+    }
+    console.error('[ai-tutor] apiError:', apiError);
   } finally {
     aiPending = false;
     _setInputEnabled(true);

@@ -1004,7 +1004,7 @@
 
     <!-- Header -->
     <div class="ai-tutor-header">
-      <div class="ai-tutor-avatar">🤖</div>
+      <div class="ai-tutor-avatar">✨</div>
       <div>
         <div class="ai-tutor-name">Sensei Nugget</div>
         <div class="ai-tutor-tagline">Guru bahasa Jepang kamu — tanya apa saja!</div>
@@ -1139,6 +1139,36 @@
     <div class="stat-section">
       <div class="stat-section-title">Akurasi per Mode Quiz</div>
       <canvas id="quizAccuracyCanvas" class="quiz-accuracy-canvas"></canvas>
+    </div>
+
+
+    <!-- Backup & Sync -->
+    <div class="stat-section">
+      <div class="stat-section-title">Data & Backup</div>
+      <div class="backup-panel">
+        <div class="backup-row">
+          <div class="backup-info">
+            <div class="backup-info-title">💾 Backup Lokal</div>
+            <div class="backup-info-desc" id="backupAgeLabel">Download semua progress ke file .json</div>
+          </div>
+          <button class="backup-btn backup-btn--export" onclick="exportBackup()">
+            ⬇️ Export
+          </button>
+        </div>
+        <div class="backup-row">
+          <div class="backup-info">
+            <div class="backup-info-title">📂 Restore dari File</div>
+            <div class="backup-info-desc">Import file backup .json dari HP kamu</div>
+          </div>
+          <button class="backup-btn backup-btn--import" onclick="importBackup()">
+            ⬆️ Import
+          </button>
+        </div>
+        <div class="backup-note">
+          ☁️ Progress otomatis tersinkron ke cloud saat online & login.<br>
+          📱 Ganti HP? Login → progress langsung tersedia.
+        </div>
+      </div>
     </div>
 
   </div>
@@ -1301,6 +1331,7 @@
 <script src="./js/supabase-client.js"></script>
 <script src="./js/dna-summarizer.js"></script>
 <script src="./js/ai-proxy.js"></script>
+<script src="./js/offline-ai-cache.js"></script>
 <script src="./js/ai-tutor.js"></script>
 <script src="./js/sync-hook.js"></script>
 

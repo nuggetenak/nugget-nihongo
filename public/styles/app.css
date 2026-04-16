@@ -3142,3 +3142,60 @@ body.light {
   cursor: default;
   opacity: 0.7;
 }
+
+/* ── §21 Backup Panel ─────────────────────────────────────────── */
+.backup-panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+}
+.backup-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+}
+.backup-row:last-of-type { border-bottom: none; }
+.backup-info-title {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 2px;
+}
+.backup-info-desc {
+  font-size: var(--text-xs);
+  color: var(--muted);
+}
+.backup-btn {
+  flex-shrink: 0;
+  padding: 0.45rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-2);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  cursor: pointer;
+  min-height: 44px;
+  min-width: 90px;
+  transition: opacity 0.15s;
+}
+.backup-btn:active { opacity: 0.7; }
+.backup-btn--export {
+  background: var(--surface-2);
+  color: var(--text);
+}
+.backup-btn--import {
+  background: rgba(59,130,196,0.15);
+  color: var(--accent);
+  border-color: rgba(59,130,196,0.3);
+}
+.backup-note {
+  padding: 0.85rem 1.25rem;
+  font-size: var(--text-xs);
+  color: var(--muted);
+  line-height: 1.6;
+  background: var(--surface-2);
+  border-top: 1px solid var(--border);
+}
