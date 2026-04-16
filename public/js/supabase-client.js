@@ -31,7 +31,10 @@
       return sb.auth.signUp({
         email: email,
         password: password,
-        options: { data: { full_name: displayName || '' } }
+        options: {
+          data: { full_name: displayName || '' },
+          emailRedirectTo: 'https://nugget-nihongo.pages.dev',
+        }
       });
     },
 
@@ -42,7 +45,12 @@
 
     // Sign in with Google OAuth
     signInGoogle: function () {
-      return sb.auth.signInWithOAuth({ provider: 'google' });
+      return sb.auth.signInWithOAuth({
+        provider: 'google',
+        options: {
+          redirectTo: 'https://nugget-nihongo.pages.dev',
+        }
+      });
     },
 
     // Sign out
@@ -381,7 +389,7 @@ function authGoogleSignIn() {
     alert('Supabase belum dikonfigurasi. Lihat SETUP.md untuk panduan.');
     return;
   }
-  sbAuth.signInWithGoogle().catch(e => {
+  sbAuth.signInGoogle().catch(e => {
     const err = document.getElementById('authError');
     if (err) { err.textContent = e.message; err.style.display = 'block'; }
   });
