@@ -1,8 +1,27 @@
 # NUGGET NIHONGO — FRONTEND OVERHAUL PLAN
-**Version:** 1.0 · **Author:** Senior FE audit (Claude Opus 4.6 · claude.ai) · **Date:** 16 April 2026
-**Scope:** Total frontend makeover — UI, UX, responsive layout, missing flows, component skeleton, AI Sensei persona redesign
+**Version:** 2.0 · **Author:** Senior FE audit (Claude Opus 4.6 · claude.ai) · **Date:** 16 April 2026
+**Scope:** Total frontend makeover — UI, UX, responsive layout, missing flows, component skeleton, AI Sensei persona redesign, **unified Materi hub (JLPT + Book Series), Tanya-Sensei context injection, AI-powered quiz generation, multi-provider cascade with no user-facing daily limit**
 **Supersedes:** UI/UX issues section of `MASTER-AUDIT.md` (TASK 10, 11, 14)
 **Does NOT supersede:** `CLAUDE.md` (conventions), `DESIGN_SYSTEM.md` (research grounding), `blueprint/*` on `corpus/v17-pass15` (authoritative research)
+
+---
+
+## 0.5 · Revision log
+
+**v2.0 — 16 April 2026** — Post-decision revision after review by Nugget. Major additions:
+- §1.1 Information Architecture rewritten around **unified Materi hub** (JLPT door + Buku Series door) — see new §14 for full spec
+- §5 Sensei expanded with three new subsections:
+  - §5.7 Multi-provider cascade (unlimited user-facing usage)
+  - §5.8 Quiz-generation mode (new fourth mode beyond explain/quiz/chat)
+  - §5.9 "Tanya Sensei" context-injection pattern
+- New §14 **Materi Hub** — full IA + UX spec
+- New §15 **AI Content Generation Engine** — Generator + Critic + Validator architecture, hallucination guards, idle-time pre-generation, user feedback loop
+- New §16 **Multi-Provider AI Cascade** — provider chain, routing, rate-limit strategy, honest cost ceiling math
+- New §17 **Tanya Sensei context-injection pattern** — per-card button, payload shape, desktop vs mobile behavior
+- §10 Open Questions replaced with **Decisions applied** (Nugget's answers)
+- §9 Roadmap re-ordered (Materi hub moves into Phase 2 as it unblocks everything else; AI content engine is a new Phase 5.5)
+- §6 Component skeleton expanded (Materi hub widgets, Tanya-Sensei button, AI content panels, provider status widget)
+- §12 File inventory updated
 
 ---
 
@@ -33,21 +52,23 @@ What doesn't (this plan fixes):
 
 > **A research-grounded Japanese learning companion that looks like it was designed on purpose, works the same on a 360px phone and a 27" monitor, and has an AI Sensei that actually sounds like someone you'd want to learn from.**
 
-### This document is structured as 9 phases
+### This document is structured as 11 phases (v2)
 
 | # | Phase | Priority | Rough effort* | Primary owner |
 |---|---|---|---|---|
 | 0 | Preflight — fix existing known bugs | P0 | ½ day | Claude Code |
 | 1 | Design System v2 — tokens, type, spacing, motion, a11y | P0 | 2–3 days | Claude Code + claude.ai for tokens |
-| 2 | Responsive & Desktop layout | P0 | 3 days | Claude Code |
-| 3 | Missing screens & flows | P1 | 3–4 days | claude.ai content + Claude Code build |
-| 4 | Per-screen UI overhaul | P1 | 4–5 days | Claude Code |
-| 5 | AI Sensei persona v2 + Claude-style reply spec | P0 | 1 day plan + 1 day integration | claude.ai (persona) + Claude Code (wiring) |
+| 2 | Responsive shell + **Materi hub unification (§14)** | P0 | 4–5 days | Claude Code |
+| 3 | Missing screens & flows (onboarding, Settings, About) | P1 | 3–4 days | claude.ai content + Claude Code build |
+| 4 | Per-screen UI overhaul + **Tanya Sensei integration (§17)** | P1 | 3–4 days | Claude Code |
+| 5 | AI Sensei persona v2 | P0 | 1 day plan + 1 day integration | claude.ai (persona) + Claude Code (wiring) |
+| **5.5** | **AI Content Generation Engine (§15) — NEW** | P1 | 3–4 days | Claude Code + Nugget validation |
+| **5.75** | **Multi-Provider Cascade (§16) — NEW** | P1 | 2 days | Claude Code |
 | 6 | Component skeleton for future features | P2 | 2 days | Claude Code |
 | 7 | Performance & PWA polish | P2 | 1–2 days | Claude Code |
 | 8 | QA, launch checklist, attribution | P1 | ½ day | Nugget + Claude Code |
 
-\* *Effort assumes claude.ai for content generation + Claude Code for codegen. A solo human FE dev would take ~2–3× longer.*
+\* *Effort assumes claude.ai for content generation + Claude Code for codegen. A solo human FE dev would take ~2–3× longer. v2 total: ~24–30 days.*
 
 ---
 
@@ -62,28 +83,34 @@ Materi (Browse)   Latihan (Quiz)   Sensei (AI)   Progres (Stats)   Tema
 ```
 
 **Findings:**
-- "Materi" and "Latihan" are the right top-level anchors. Keep them.
-- "Sensei" should stay top-level but become **the entry point** for first-time users (see onboarding §3.1), not a peer destination discovered by accident.
+- "Materi" and "Latihan" are the right top-level anchors. Keep them, but — per Nugget's v2 decision — **Materi becomes a unified hub with two doorways: JLPT track + Buku Series track**, both landing on the same underlying Tier-1 global DB. Full spec in §14. This is not a rebuild; it's finally exposing the 3-tier data architecture that already exists in the codebase.
+- "Sensei" stays top-level AND gets a **"Tanya Sensei" button baked into every material card** for context-injected Q&A without leaving the browse flow. Full spec in §17.
 - "Progres" mixes gamification (streak, XP), SRS health, weak points, heatmap, and backup controls. That's four different user jobs in one scroll. Split:
   - **Progres** keeps JLPT readiness rings + streak + heatmap (learning narrative)
   - Backup/sync moves to **Settings** (a page that doesn't exist yet — §3.2)
   - Weak-points list becomes a **Card in Sensei + Progres** rather than a standalone block
 - "Tema" doesn't deserve a nav slot. It's a setting. Move into Settings; replace the nav slot with a **hamburger / `⋯` more menu** on mobile and a **sidebar link** on desktop.
 
-**Proposed IA:**
+**Proposed IA (v2):**
 
 ```
-┌──────────── TOP LEVEL ────────────┐
-│ Materi     → Grammar + Vocab browse │
-│ Latihan    → All quiz modes         │
-│ Sensei     → AI chat + weak-point lens │
-│ Progres    → JLPT rings + streak + heatmap │
-│ ⋯ More     → Settings, About, Backup, Install, Sign in │
-└────────────────────────────────────┘
+┌─────────────────── TOP LEVEL ───────────────────┐
+│ Materi     → HUB (JLPT door + Buku Series door) → §14 │
+│              ├─ JLPT:  N5 / N4 / N3 / N2 / N1         │
+│              └─ Buku:  Soumatome / Irodori / Minna    │
+│                        / Freeway / (future series)    │
+│                                                        │
+│ Latihan    → Quiz modes (pre-baked + AI-generated §15)│
+│ Sensei     → AI chat · weak-point lens · always-on    │
+│              right-column on desktop                   │
+│ Progres    → JLPT rings + streak + heatmap            │
+│ ⋯ More     → Settings · About · Backup · Install · Login │
+└────────────────────────────────────────────────────────┘
 
-On desktop (≥960px), "Sensei" collapses into a right-side drawer that's pinnable
-so users can keep it open while browsing/reviewing. This is a massive UX unlock
-(§2.3).
+On desktop (≥960px), "Sensei" collapses into a right-side drawer that's pinnable.
+Every material card has a "💬 Tanya" icon that injects the card as context into
+Sensei (§17). On desktop with pinned Sensei, this creates a two-pane study mode
+that is the single biggest UX unlock in this plan.
 ```
 
 ### 1.2 Visual system drift
@@ -682,14 +709,110 @@ Note what it doesn't do: no emoji, no "ganbatte," no disclaimer about AI.
 | `public/js/dna-summarizer.js` | Unchanged — already feeds `recent_weak` correctly. |
 | `FRONTEND-OVERHAUL-PLAN.md` (this file) | Keep §5 as the canonical persona doc. Worker/Edge Function prompts reference this section in a top-of-file comment. |
 
+### 5.7 Multi-provider cascade — why "no daily limit" is actually achievable
+
+Full spec lives in §16. Summary for Sensei-scoped readers:
+
+**Provider chain (in fallback order):**
+1. **Groq** — Llama 3.1 8B instant (fast queries), Llama 3.3 70B versatile (deep queries). Fastest, most generous free tier.
+2. **Gemini 2.0 Flash** — Google's free tier. Good quality, reasonable limits.
+3. **OpenRouter free models** — rotating pool of Llama 3.3 70B, DeepSeek V3, Qwen 2.5 72B, Gemma 3 27B, and new free models as they're added.
+4. **Cloudflare Workers AI** — free tier with Llama 3.3 running on CF edge (zero latency from the Worker itself).
+5. **KV cache** — previously-served answers keyed by normalized question.
+6. **Offline drills** — pre-baked fallback.
+
+**User-facing impact:**
+- Current quota bar ("15 pertanyaan gratis hari ini") **is removed** from the UI.
+- Replaced with a tiny status line: "Sensei siap — pakai banyak provider AI gratis."
+- If ALL providers are out (genuinely rare), UI says: "Semua provider lagi ramai. Coba beberapa menit lagi — nggak ada batas harian kok."
+
+**Honest ceiling:** With this stack and aggressive caching, we can realistically serve ~5,000–8,000 unique LLM calls per day across all users before any provider hits its ceiling. At 20 msgs/active-user/day that's ~250–400 DAU before degraded service. We'll hit that number post-launch with time to architect further (pay-tier OpenRouter on premium models, BYO-key option, etc.) — see §16.6 for full math.
+
+### 5.8 Quiz-generation mode — the fourth mode
+
+Replaces the current `quiz` mode (which was "Sensei asks you questions in chat") with a more powerful dual-purpose mode:
+
+**Mode A — `quiz-live`** (the old `quiz` — Sensei asks questions directly in chat turn-by-turn)
+**Mode B — `quiz-gen`** (new — Sensei generates a batch of questions that get fed into the main Quiz engine)
+
+From the user's POV, this shows up as a new option in the Latihan tab: **"Latihan AI"** (AI-generated practice). User picks:
+- Target: a specific grammar point OR a level OR "my weak points"
+- Count: 5 / 10 / 20 questions
+- Mode: multiple-choice / fill-in / rearrange / type-translation
+
+Sensei generates the batch. User sees them in the existing quiz UI (no visual difference from pre-baked quizzes). Scoring flows through the existing engine. Each question has a `source: 'ai-gen'` flag + an AI-gen lineage (which provider, which prompt version, timestamp) for quality tracking.
+
+**Why this matters:** the current grammar DB has ~400 entries across N5-N4-N3 and only a handful of hand-written quiz questions per entry. AI-gen multiplies practice variety infinitely *without* requiring Nugget to hand-write thousands of questions. Full architecture + hallucination guard in §15.
+
+**Per-mode addendum (added to §5.4 addenda):**
+
+```
+Mode: QUIZ-GEN. Generate a batch of {count} practice questions.
+Output format: strict JSON array, no commentary:
+[
+  {
+    "id": "aig-{timestamp}-{n}",
+    "type": "mcq" | "fill" | "rearrange" | "translate",
+    "target_id": "{grammar_id or vocab_id}",
+    "level": "{n5|n4|n3|n2|n1}",
+    "prompt": "...",
+    "choices": ["A", "B", "C", "D"],   // for mcq only
+    "answer": "...",
+    "explanation_id": "short Indonesian explanation, 1-2 sentences max",
+    "difficulty": "easy|medium|hard"
+  },
+  ...
+]
+
+Rules:
+- Target vocabulary must be at or below {level}. No N3 words in N4 questions.
+- Grammar in the prompt must be at or below {level} except for the TARGET pattern.
+- Distractors must be plausible (common confusion partners — see {confusion_pairs}).
+- Example sentences must be natural Japanese, not textbook-ese.
+- DO NOT include the answer inside the prompt (no spoilers).
+- DO NOT generate content that violates JLPT level conventions.
+- If you are uncertain about a nuance, set "difficulty": "hard" and flag via a comment field.
+
+The output JSON will be validated by a Critic call before serving to the user.
+Items that fail validation are discarded silently (Generator will be re-called for replacements).
+```
+
+### 5.9 "Tanya Sensei" context-injection pattern
+
+Full spec in §17. Core idea:
+
+Every material card — grammar card, vocab card, quiz result card — gets a small `💬 Tanya` icon button. Tapping it:
+
+1. Snapshots the card data as `ctx.card`
+2. Opens Sensei (desktop drawer / mobile full-screen sheet)
+3. Pre-fills input with `"Jelaskan {target}:"` and focuses the input
+4. User can edit prefill (or just send) — Sensei's reply gets the full card as context
+5. After explanation, a small `→ Latihan {target}` link appears that deep-links to a quiz filtered to that grammar
+
+**System prompt augmentation when `ctx.card` is present:**
+
+```
+[appended to system prompt]
+Pelajar lagi ngeliat kartu berikut dan nanya tentang itu:
+{card.content formatted as human-readable}
+
+Jawabanmu harus langsung ngerujuk ke kartu ini, pakai contoh yang ada di kartu
+kalau relevan, tapi BOLEH nambah contoh/konteks di luar kartu kalau membantu.
+Kalau pertanyaan pelajar di luar scope kartu, jawab pertanyaannya tapi catat
+"Ini agak di luar konteks kartu — mau aku balik ke {pattern}?"
+```
+
+This is the single feature that makes Nugget Nihongo feel distinctly AI-native vs. "a database app with a chatbot bolted on."
+
 ---
 
 ## 6 · Component skeleton for future features
 
 Based on what's planned in `CURRICULUM-BLUEPRINT-v1.md` + the Feature Expansion Proposal (v17 corpus), here's the shelf that the design system should be ready to hold:
 
-### 6.1 Already needed but not yet modularized
+### 6.1 Already needed but not yet modularized (v2 — expanded)
 
+**UI primitives:**
 - `<Card variant="grammar" level="n3" state="due">` — unify `.card`, `.vocab-card`, `.book-card` into one
 - `<Pill level="n3" selected>` — consolidate `.pill`, `.cat-chip`, `.qcat-tab`
 - `<Button variant="primary|secondary|ghost|danger" size="sm|md|lg">`
@@ -702,6 +825,30 @@ Based on what's planned in `CURRICULUM-BLUEPRINT-v1.md` + the Feature Expansion 
 - `<ChatBubble role="user|bot|system|error">`
 - `<ProgressRing value={0-1} level="n3">`
 - `<Tag>` (for POS, category, lens labels)
+
+**NEW IN V2 — Materi hub widgets (§14):**
+- `<MateriHub>` — two-door landing
+- `<JlptLevelGrid>` — 5-level picker with per-level progress rings
+- `<BukuSeriesGrid>` — series picker with covers + progress
+- `<BookChapterGrid>` — week/lesson grid for selected book
+- `<LensBreadcrumb card={...}>` — renders all lens memberships
+- `<PerBookProgressBar seriesId={...}>`
+
+**NEW IN V2 — Sensei integration widgets (§17):**
+- `<TanyaSenseiButton card={...}>` — the icon button on every card
+- `<SenseiDrawer pinned={bool}>` — desktop right-column container
+- `<SenseiSheet open={bool}>` — mobile/tablet sheet
+- `<ContextChip card={...}>` — "📌 Kartu: {target} ✕" above input
+- `<ExitLinks targetId={...}>` — post-reply CTAs
+
+**NEW IN V2 — AI content engine widgets (§15):**
+- `<AIContentFeedback itemId={...}>` — 👍/👎/✏️ control attached to AI-gen items
+- `<AIGeneratingSpinner>` — typing-dots with rotating "Sensei lagi bikin soal..." messages
+- `<AIQualityBadge verified={bool}>` — small icon showing Critic-passed
+
+**NEW IN V2 — Multi-provider status widget (§16):**
+- `<ProviderStatusPanel>` — Settings-only panel showing current provider, stats
+- `<AbuseCooldownNotice>` — friendly decelerator when user is firing >100/hour
 
 ### 6.2 Planned but not yet wired — design-skeleton first
 
@@ -865,28 +1012,34 @@ Add:
 
 ---
 
-## 9 · Phased execution roadmap
+## 9 · Phased execution roadmap (v2)
 
 **Phase 0 (0.5 day) — Clean the glass**
 Fix B1–B7 from §1.3. Ship to main. Cosmetic deltas only. No architectural changes. *Goal: the app stops looking unfinished in 30 min.*
 
 **Phase 1 (2–3 days) — Design System v2**
-`tokens.css` lands. Replace hardcoded values across `app.css` via find-replace script (generated once, audited by hand). Introduce `focus-visible` global + reduced-motion guard. Split `app.css` into the `styles/` tree from §2.5 (this is the most boring + most valuable part).
+`tokens.css` lands. Replace hardcoded values across `app.css` via find-replace script. Introduce `focus-visible` global + reduced-motion guard. Split `app.css` into the `styles/` tree from §2.5.
 
-**Phase 2 (3 days) — Responsive + desktop**
-Implement `.shell--desktop` with sidebar + content + optional Sensei column. Media-query ladder. Test at 320 / 480 / 768 / 1024 / 1440 / 1920. *Ship incrementally — Browse page first, then Quiz, then Sensei, then Stats.*
+**Phase 2 (4–5 days) — Responsive shell + Materi hub**
+Implement `.shell--desktop` with sidebar + content + Sensei column. Media-query ladder. Ship the unified **Materi hub** (§14) as the new landing for Browse — JLPT door + Buku Series door + cross-lens breadcrumbs on card detail. This phase is bigger in v2 because Materi hub replaces the flat filter model.
 
 **Phase 3 (3–4 days) — Missing flows**
-Onboarding (3 screens). Settings page. About/Methodology page. Attribution text. Error boundary polish. Skeleton/loading states across existing components.
+Onboarding (3 screens, force-through per decision #3). Settings page. About/Methodology page. Attribution text. Error boundary polish. Skeleton/loading states.
 
-**Phase 4 (4–5 days) — Per-screen polish**
-Rewrite each page's markup using the new component contracts. Browse gets a real two-pane desktop view. Quiz gets a focus-mode on desktop (full-screen). Sensei gets proper mode-tab behavior (not just UI). Stats gets the split (streak/xp stays, backup moves to Settings).
+**Phase 4 (3–4 days) — Per-screen polish + Tanya Sensei integration**
+Rewrite each page's markup using new component contracts. Quiz gets focus-mode on desktop. Stats split (streak/XP stays, backup to Settings). Add **Tanya Sensei button** (§17) to every card type. Wire context-injection payload + system prompt augmentation.
 
-**Phase 5 (1 day plan + 1 day integration) — AI Sensei v2**
-Replace both system prompts with §5.3. Wire `aiSetMode()` to actually change Worker behavior. Inject `goals` from onboarding into every request. Deploy the new Worker. Write 20 representative conversations as regression fixtures.
+**Phase 5 (1 day plan + 1 day integration) — AI Sensei persona v2**
+Replace both system prompts with §5.3. Wire `aiSetMode()` to actually change Worker behavior. Inject `goals` from onboarding into every request. Deploy the new Worker. 20 regression fixtures.
 
-**Phase 6 (2 days) — Component skeleton**
-Scaffold `public/js/components/ui/` and `public/js/components/domain/`. Refactor ONE page (recommend: Sensei) to use the new components as proof. Future features now have a place to live.
+**Phase 5.5 — AI Content Generation Engine (3–4 days) — NEW IN V2**
+Build Generator + Critic + Validator pipeline (§15.2). Deploy `/generate-quiz` + `/critique` Worker endpoints. Build `ai-content-engine.js` orchestrator. Implement idle-time pre-generation (§15.4). User feedback widget (§15.6). Run launch quality gates (§15.7) — 5 must-pass tests. **Do not ship AI-generated content to users until all 5 pass.**
+
+**Phase 5.75 — Multi-Provider Cascade (2 days) — NEW IN V2**
+Extend Worker with CF Workers AI as provider 4 (§16.2). Per-provider rate tracking in KV. Remove user-facing daily limit entirely from UI. Add `/health` endpoint. Settings panel with provider status (§16.5). Friendly abuse-only soft cap (§16.4).
+
+**Phase 6 (2 days) — Component skeleton for future**
+Scaffold `public/js/components/ui/` and `public/js/components/domain/`. Include new v2 components from §6 (Materi hub widgets, Tanya Sensei button, AI feedback widget, provider status widget). Refactor ONE page using new components as proof.
 
 **Phase 7 (1–2 days) — Perf + PWA polish**
 Font preload, script defer, icon sprite, inline critical CSS, light-mode pass, PWA manifest additions, SW stale-while-revalidate.
@@ -894,36 +1047,43 @@ Font preload, script defer, icon sprite, inline critical CSS, light-mode pass, P
 **Phase 8 (0.5 day) — QA + launch**
 Run §8.1 checklist against every screen. Fix whatever falls out. Ship.
 
-**Total: ~17–21 days of focused execution**, assuming 2–3 Claude Code sessions per day on the code side and claude.ai handling content/persona work async. Fits Sunday-MVP if you defer phases 6–7 to post-launch (§MASTER-AUDIT's "Sunday target" is realistic without them).
+**Total: ~24–30 days of focused execution** (v2 is ~7 days longer than v1 due to Materi hub + AI content engine + multi-provider cascade). The Sunday-MVP realistic subset: Phases 0, 1, 2 (partial — Materi hub MVP with JLPT door + breadcrumbs but not per-book progress yet), 3 (onboarding only), 5 (persona). Defer 4, 5.5, 5.75, 6, 7 to post-launch. That gets you a meaningfully-better app by Sunday without rushing the dangerous parts (AI content gen).
 
 ---
 
-## 10 · Open questions for Nugget (decide before Phase 2)
+## 10 · Decisions applied (v2)
 
-1. **Desktop first-launch: where does a laptop user land?**
-   - Option A: Same onboarding as mobile
-   - Option B: Desktop sees a marketing/landing page with a "buka app" CTA → then onboarding
-   - **Default if no input: Option A** (simpler, one codebase)
+Nugget's decisions on the v1 open questions, plus their implications:
 
-2. **Sensei column on desktop — default open or closed?**
-   - Open: discoverability is high, but the center content gets narrower
-   - Closed: more focused study, but users may never find Sensei
-   - **Default: closed on first visit, remembered thereafter**
+| # | Question | Decision | Implication |
+|---|---|---|---|
+| 1 | Desktop first-launch routing | **Option A — same onboarding as mobile**, Option B (marketing landing) **parked for later** | One codebase for onboarding, no separate landing needed. Desktop onboarding uses the same 3-screen flow with wider layout. |
+| 2 | Sensei column default state | **Open by default** on desktop | Discoverability > focus. Users find the killer feature immediately. Pin state still persists to `localStorage`; first-session default = open. |
+| 3 | Onboarding force-through | **Force** through all 3 screens | Gives FSRS solid calibration seed from day 1 and populates `nn_goals` for persona personalization. No "skip all" option, but each screen has gentle defaults ("Nggak yakin → pilih 'baru mulai'"). |
+| 4 | "kamu" vs "Anda" | **"kamu"** | Peer-senpai archetype confirmed. Personalization-principle research backs this (CT-14, d=0.79). |
+| 5 | English mode | **Later** — post-launch | Indonesian-first is the moat. Phase 6+ work. |
+| 6 | Kanji/JP font CI test | **Approved** | Add `lang="ja"` wrapper lint to `tests/run.js` in Phase 1. |
 
-3. **Onboarding — force through or fully skippable?**
-   - Force: better personalization data
-   - Skip: respects autonomy (principle §5.2.9)
-   - **Default: skippable at every step, but skipping Screen 2 (level) means FSRS starts with N5-default calibration**
+### Additional decisions applied in v2 (from Nugget's follow-up message)
 
-4. **Voice in Indonesian copy — "kamu" or "Anda"?**
-   - Current code uses "kamu" (casual, matches peer-senpai archetype)
-   - "Anda" would feel more app-store-formal
-   - **Recommendation: stay with "kamu"** — aligns with personalization-principle research
+| # | New decision | What changes |
+|---|---|---|
+| 7 | **Materi hub unification (JLPT + Book Series)** | Full rebuild of Materi IA — §14 full spec. Moves into Phase 2 execution (was Phase 3). |
+| 8 | **"Tanya Sensei" button on every material card** | §17 full spec. Wires `aiSetContext()` to a per-card button + opens Sensei with pre-filled input. |
+| 9 | **AI-powered quiz generation** | §15 full architecture. CRITICAL: Generator + Critic + Validator pipeline is non-negotiable to prevent teaching wrong Japanese. New `quiz-gen` mode in Sensei (§5.8) + new "Latihan AI" section in the Quiz page. |
+| 10 | **No user-facing daily limit** | Quota bar removed from UI. Multi-provider cascade (§16) replaces user-quota with per-provider rate limits. `DAILY_LIMIT` constant stays in Worker as per-user abuse prevention only (e.g., 100/hour) — never surfaced to user. |
+| 11 | **100% free AI stack** | §16 provider chain: Groq → Gemini → OpenRouter free models → Cloudflare Workers AI → KV cache → offline drills. No paid tier in the critical path. |
 
-5. **English mode — now or later?**
-   - Later. Indonesian-first is the moat. Add after Sunday launch is stable.
+### Things I'm pushing back on (Nugget should confirm)
 
-6. **Kanji font rendering for non-JP systems (Windows users without a JP font)** — BIZ UDGothic is shipped in `/fonts/`, so this is solved, but add an explicit `lang="ja"` test in CI.
+**P1 — Hallucination risk in AI-generated quizzes.** This is the single most important architectural decision in v2. LLMs reliably generate subtly-wrong Japanese (wrong particles, unnatural sentences, level-inappropriate vocabulary). If we serve these as "correct answers" and learners memorize via FSRS, we are actively teaching wrong Japanese — worse than no quiz.
+
+**My recommendation (§15 details):** Generator + Critic + Structural Validator pipeline. Two LLM calls per batch (generator + critic), plus a rules-based validator checking for things like "target vocab appears in the prompt" / "grammar pattern is actually present" / "distractor is a plausible confusion partner, not a random word." User feedback loop flags bad items. **I need Nugget to confirm this three-layer architecture is acceptable** — it costs ~2× the tokens of a naive "generate and serve" approach but is the only responsible way to do AI quiz gen for language learning.
+
+**P2 — "Unlimited" phrasing.** Free tiers have real ceilings. Suggested UI copy: *"Tanpa batas harian — Sensei nggak bakal bilang 'stop udah habis.' Kalau lagi ramai, jawabannya mungkin lebih pelan."* Honest, warm, sets expectations. **Request: approve this copy direction.**
+
+**P3 — Vocab DB is not replaced by AI.** Sensei *supplements* vocab with on-demand depth (examples, nuance, quiz questions) but the vocab DB stays as the spine because: (a) FSRS needs stable IDs, (b) offline browse needs pre-built cards, (c) book lenses reference IDs, (d) AI-gen needs a seed pool to sample targets from. **Request: confirm understanding — vocab DB continues to grow, AI adds a layer on top.**
+
 
 ---
 
@@ -948,7 +1108,7 @@ Full citation list lives in `corpus/bibliography/MASTER-BIBLIOGRAPHY-FINAL.md` o
 
 ---
 
-## 12 · Appendix B — File inventory after overhaul
+## 12 · Appendix B — File inventory after overhaul (v2)
 
 ```
 public/
@@ -971,10 +1131,16 @@ public/
 │   │   ├── skeleton.css             ← NEW
 │   │   ├── toast.css                ← NEW
 │   │   ├── chat-bubble.css          ← NEW
+│   │   ├── tanya-btn.css            ← NEW v2
+│   │   ├── sensei-drawer.css        ← NEW v2
+│   │   ├── ai-feedback.css          ← NEW v2
 │   │   └── progress-bar.css
 │   ├── pages/
+│   │   ├── materi-hub.css           ← NEW v2 — two-door landing
 │   │   ├── browse.css
+│   │   ├── buku-series.css          ← NEW v2 — per-book browsing
 │   │   ├── quiz.css
+│   │   ├── quiz-ai.css              ← NEW v2 — AI-generated quiz UI
 │   │   ├── sensei.css
 │   │   ├── stats.css
 │   │   ├── settings.css             ← NEW
@@ -985,31 +1151,650 @@ public/
 │   ├── core/ (unchanged)
 │   ├── components/                  ← NEW tree
 │   │   ├── ui/ (12 files)
-│   │   ├── domain/ (6 files)
+│   │   ├── domain/ (6+ files)
+│   │   ├── materi/                  ← NEW v2 subtree
+│   │   │   ├── hub.js
+│   │   │   ├── jlpt-grid.js
+│   │   │   ├── buku-grid.js
+│   │   │   ├── chapter-grid.js
+│   │   │   ├── lens-breadcrumb.js
+│   │   │   └── per-book-progress.js
+│   │   ├── sensei/                  ← NEW v2 subtree
+│   │   │   ├── tanya-button.js
+│   │   │   ├── drawer.js
+│   │   │   ├── sheet.js
+│   │   │   ├── context-chip.js
+│   │   │   └── exit-links.js
+│   │   ├── ai-content/              ← NEW v2 subtree
+│   │   │   ├── feedback-widget.js
+│   │   │   ├── generating-spinner.js
+│   │   │   └── quality-badge.js
 │   │   └── index.js
 │   ├── pages/                       ← NEW — page init modules
 │   │   ├── onboarding.js
 │   │   ├── settings.js
-│   │   └── about.js
+│   │   ├── about.js
+│   │   └── materi-hub.js            ← NEW v2
+│   ├── ai-content-engine.js         ← NEW v2 — G+C+V orchestrator
+│   ├── ai-feedback.js               ← NEW v2 — user feedback loop
 │   └── [existing feature modules, largely unchanged internally]
 └── [existing data/, fonts/, icons/, sw.js, manifest.webmanifest]
+
+workers/
+├── ai-proxy.js                      ← extended: provider 4 (CF Workers AI),
+│                                      provider rate tracking, /health endpoint,
+│                                      /generate-quiz, /critique routes
+├── ai-validator.js                  ← NEW v2 — structural validator (no LLM)
+└── wrangler.toml                    ← updated: CF Workers AI binding
+
+supabase/
+├── schema.sql                       ← extended: ai_feedback table
+└── functions/ai-router/index.ts     ← synced with Worker persona
 
 NEW top-level docs:
 ├── FRONTEND-OVERHAUL-PLAN.md        ← this file
 └── docs/
     ├── SENSEI-PERSONA-v2.md          ← copy of §5 for standalone reference
-    └── COMPONENT-CONTRACTS.md        ← detailed API for each component
+    ├── COMPONENT-CONTRACTS.md        ← detailed API for each component
+    ├── AI-CONTENT-GENERATION.md      ← NEW v2 — G+C+V architecture spec
+    ├── MULTI-PROVIDER-CASCADE.md     ← NEW v2 — provider chain + rate strategy
+    └── MATERI-HUB-IA.md              ← NEW v2 — hub routing + lens UX
 ```
 
 ---
 
-## 13 · Final word
+---
 
-The app already has the hard part right — research foundation, data model, learning engines. What it's missing is the layer where the user actually lives. Ship these 9 phases and Nugget Nihongo stops looking like a hobbyist repo with serious research and starts looking like **the Indonesian-Japanese learning product that should exist.**
+## 14 · Materi Hub — unified IA spec
 
-One opinion, stated as opinion: **the persona work in §5 is the single highest-leverage item in this whole plan.** Every competitor has grammar databases. Nobody has a tutor that talks like this, in Indonesian, with malu-awareness baked into its voice principles. That's the moat.
+### 14.1 The problem
 
-Semangat.
+The current "Materi" screen dumps users into a flat filter bar: pick a level pill, scroll grammar cards. That interface exposes **Tier 1** of the data architecture (Global DB) but hides the two other tiers that already exist in the codebase:
+
+- **Tier 2** — Book Lenses: `book-minna-1.js`, `book-minna-2.js`, `book-irodori-a1.js`, `book-irodori-a2-1.js`, `book-irodori-a2-2.js`, `soumatome/grammar-lens-sm-n3.js`, `soumatome/grammar-lens-sm-n4.js` — chapter→ID mappings that point into Tier 1
+- **Tier 3** — Study Tracks: runtime-populated arrays (JLPT auto, Soumatome chapters, Freeway hand-curated)
+
+The data says "there are multiple ways to approach this material." The UI says "scroll the level list." That's leaving a massive mental model on the floor.
+
+### 14.2 The two-door model
+
+```
+┌─────────────────── MATERI HUB ──────────────────┐
+│                                                    │
+│  Pilih jalan masukmu:                             │
+│                                                    │
+│  ┌─────────────── JLPT ────────────────┐          │
+│  │  🎯 Jalur JLPT                       │          │
+│  │  Belajar berdasarkan level ujian.    │          │
+│  │  [N5] [N4] [N3] [N2] [N1]            │          │
+│  └──────────────────────────────────────┘          │
+│                                                    │
+│  ┌─────────────── BUKU ────────────────┐          │
+│  │  📚 Jalur Buku                       │          │
+│  │  Ikutin urutan textbook populer.     │          │
+│  │  • Soumatome N4, N3                  │          │
+│  │  • Irodori A1, A2-1, A2-2            │          │
+│  │  • Minna no Nihongo 1, 2 (segera)    │          │
+│  │  • Freeway (hand-curated)            │          │
+│  └──────────────────────────────────────┘          │
+│                                                    │
+│  Lihat semua kartu (lintas jalur) ↓              │
+│                                                    │
+└───────────────────────────────────────────────────┘
+```
+
+**Key insight:** both doors open into the same card inventory. A single grammar point like `gn4-00017 (～ようになる)` lives in:
+- JLPT N4
+- Soumatome N4 week 3 day 2
+- Irodori A2-1 lesson 8
+- Minna no Nihongo Lesson 27 (when that lens ships)
+
+When a user lands on this card from any of those doors, the card displays breadcrumbs showing ALL its lens memberships so the user sees the connective tissue.
+
+### 14.3 Page structure at each level
+
+```
+/materi                        → hub landing (§14.2)
+/materi/jlpt                   → level picker (N5–N1 grid)
+/materi/jlpt/n4                → N4 card list (current "Browse" filtered to N4)
+/materi/jlpt/n4/gn4-00017      → card detail with all lens breadcrumbs
+
+/materi/buku                   → book series picker
+/materi/buku/soumatome-n4      → Soumatome N4 week-grid (W1-W8 × 7days)
+/materi/buku/soumatome-n4/w3d2 → chapter card list
+/materi/buku/irodori-a2-1      → Irodori A2-1 lesson list
+/materi/buku/irodori-a2-1/l8   → lesson card list
+
+/materi/semua                  → flat global browse (power user view, the current UX)
+/materi/semua?q=...&level=n3&cat=partikel   → deep-linkable filter state
+```
+
+Hash-routing for GitHub Pages; no server routing needed.
+
+### 14.4 Card shape — unified
+
+Every material card (grammar + vocab) uses a single component with this shape:
+
+```
+┌────────────────────────────────────────────────┐
+│ [level pill] [pattern/word]           ⭐  💬 Tanya│  ← level, target, bookmark, Tanya-Sensei
+├────────────────────────────────────────────────┤
+│ arti/definisi (Indonesian)                      │
+│                                                 │
+│ Contoh:                                         │
+│   例文 (Japanese with bold target)              │
+│   ↳ Indonesian gloss                            │
+│                                                 │
+│ [category pills] [additional examples chevron ▾]│
+├────────────────────────────────────────────────┤
+│ Ditampilkan di: JLPT N4 · Soumatome N4 W3D2   │  ← lens breadcrumbs
+│ · Irodori A2-1 L8                              │
+└────────────────────────────────────────────────┘
+```
+
+"💬 Tanya" is the §17 context-injection button.
+
+### 14.5 Book series currently available (code inventory)
+
+From `develop` branch as of v15.6.0:
+
+| Series | Levels / Books | Lens file | Status |
+|---|---|---|---|
+| **Soumatome (総まとめ)** | N4, N3 | `grammar-lens-sm-n4.js` (102), `grammar-lens-sm-n3.js` (132) | ✅ Complete |
+| **Irodori (いろどり)** | A1, A2-1, A2-2 | `grammar-lens-ir-a1.js` (61), `grammar-lens-ir-a2-1.js` (65), `grammar-lens-ir-a2-2.js` (62) | ✅ Complete |
+| **Minna no Nihongo** | 1, 2 | `book-minna-1.js`, `book-minna-2.js` | ❌ Empty — blocked on PDF access |
+| **Freeway** | hand-curated | inline in `tracks.js` | 🟡 Sparse |
+
+### 14.6 Per-book progress tracking
+
+Each book series gets its own progress bar derived from the user's FSRS state filtered to that lens's card IDs. A user studying Soumatome N4 sees:
+
+```
+Soumatome N4 — Week 3 Day 2 of 48
+████████░░░░░░░░░░░░░░░░░░░░░░  12 / 102 selesai (12%)
+[continue] [pilih hari lain]
+```
+
+The "continue" button deep-links to the next incomplete day (first day with unreviewed cards).
+
+### 14.7 Cross-lens view in card detail
+
+When a card is viewed from any entry point, the detail modal shows **all** its lens memberships as tappable breadcrumbs:
+
+```
+Kartu: gn4-00017 — ～ようになる
+
+Ditampilkan di:
+  🎯 JLPT N4 (kategori: perubahan)
+  📚 Soumatome N4 · Minggu 3 · Hari 2
+  📚 Irodori A2-1 · Pelajaran 8
+  📚 Minna no Nihongo · Bab 27        ← greyed out until lens ships
+```
+
+This turns the card detail into a navigational hub of its own — users discover the textbook context of any card they're studying.
+
+### 14.8 Components required (scaffolded in §6 skeleton)
+
+- `<MateriHub>` — landing page with two doors
+- `<JlptLevelGrid>` — the 5-level picker with per-level progress rings
+- `<BukuSeriesGrid>` — the series picker with cover thumbs + progress per series
+- `<BookChapterGrid>` — week/lesson grid for a selected book
+- `<CardList>` — the existing card list, parameterized by source (level / chapter / free filter)
+- `<CardDetail>` — card with breadcrumbs + Tanya-Sensei trigger
+- `<LensBreadcrumb>` — renders all lens memberships of a card
+- `<ProgressBar>` — per-book / per-level / per-chapter progress
+
+### 14.9 Migration plan (from current flat browse to hub)
+
+1. **Phase 2a** — build the new `/materi` hub as an additional entry (keep existing flat browse as `/materi/semua`)
+2. **Phase 2b** — wire book series router + week/lesson grids
+3. **Phase 2c** — add lens breadcrumbs to card detail
+4. **Phase 2d** — make new hub the default landing; add migration toast ("Tata letak baru! Browse yang lama tetap ada di 'Lihat semua →'")
+
+Zero data migration required. Zero changes to JS data files. All new UI layers on existing lenses.
 
 ---
-*End of plan. Questions / pushback / "aku nggak setuju di bagian X" — bring it on. Senior devs argue. Ship a sharper plan.*
+
+## 15 · AI Content Generation Engine
+
+### 15.1 The temptation and the risk
+
+It's tempting to say "Sensei is an AI, let him generate all quiz content from grammar/vocab data." And some of it will work great — example sentences, nuance explanations, conversation practice.
+
+**But quiz-as-learning-target has a unique failure mode.** When a learner gets a quiz question and sees its "correct answer," FSRS schedules that answer for reinforcement. If the LLM got it wrong, the learner is *memorizing wrong Japanese*. This is the worst possible educational outcome — strictly worse than no quiz at all, because confidence + wrongness = fossilization.
+
+Failure modes I've personally observed in frontier models generating Japanese:
+- **Particle errors:** `で` where `に` belongs (locative vs goal confusion that even the model can't keep straight)
+- **Transitivity errors:** `始める` where `始まる` belongs (transitive vs intransitive pair confusion)
+- **Naturalness failures:** grammatically correct but no native speaker would say it ("textbook-ese")
+- **Keigo mixing:** `尊敬語` + `謙譲語` in the same utterance (major grammatical sin)
+- **Level leakage:** N2 vocabulary in a "N5 practice" prompt
+- **Kanji reading errors:** rare readings asserted as common
+- **Pitch accent guesses:** models confidently assert pitch when they're actually just guessing
+
+Any one of these, if memorized, sticks for weeks to months.
+
+### 15.2 Architecture — Generator + Critic + Validator
+
+The answer is **three-stage pipeline**, not single-call generation.
+
+```
+User requests: "10 N4 multiple-choice quizzes on ～ために"
+  │
+  ├─ Stage 1: GENERATOR
+  │    LLM call (prompt: §5.8 addendum)
+  │    Output: 15 candidate questions (over-generate by 50%)
+  │
+  ├─ Stage 2: CRITIC
+  │    Separate LLM call — different provider if possible (cross-provider critic)
+  │    Prompt: "You are a strict Japanese language examiner.
+  │             Review each question below. For each, decide:
+  │             APPROVED / REJECTED / REVISE."
+  │    Checks:
+  │      - Grammatical correctness (native-speaker judgment)
+  │      - Level appropriateness (target + distractors within level)
+  │      - Target grammar actually tested (not smuggled in distractor)
+  │      - Distractors are plausible confusion partners
+  │      - Example sentences are natural, not stilted
+  │      - No keigo register mixing
+  │    Output: verdict per question + reason
+  │
+  ├─ Stage 3: STRUCTURAL VALIDATOR (deterministic, no LLM)
+  │    Rules-based checks:
+  │      - Target grammar pattern appears literally in prompt or answer
+  │      - All vocab in prompt ≤ user's level (check against vocab DB)
+  │      - Prompt doesn't contain the answer literally
+  │      - Distractors are pulled from a "confusion partners" list for this pattern
+  │      - Character encoding valid (no mojibake)
+  │      - JSON schema compliance
+  │    Output: pass/fail per question
+  │
+  ├─ Stage 4: ASSEMBLY
+  │    Questions that pass Stages 2+3 → served
+  │    Target count: 10. Available post-validation: usually 10-13.
+  │    If <10 pass: call Generator again with "harder" hint + reject reasons.
+  │
+  └─ Stage 5: SERVE + TRACK
+       Each served question carries metadata:
+         { source: 'ai-gen', generator_provider: 'groq', critic_provider: 'gemini',
+           generated_at: ISO, prompt_version: 'v1.2', lineage_id: '...' }
+       User feedback (👍/👎/✏️) writes to `nn_ai_feedback` in IndexedDB + syncs to Supabase.
+```
+
+**Cost:** ~2-3× the tokens of naive single-call generation. Worth it. Quality ceiling is 3-5× higher.
+
+### 15.3 Three content-gen use cases, three quality tiers
+
+| Use case | Stakes | Pipeline depth |
+|---|---|---|
+| **Quiz questions** | HIGH (memorized via FSRS) | Full G+C+V pipeline, user feedback loop |
+| **Example sentences** (on card detail) | MEDIUM (reference material) | Generator + structural validator, skip Critic |
+| **Nuance explanations** (chat) | LOW (conversational) | Generator only, leverage persona guardrails |
+| **Vocab practice prompts** | MEDIUM | Generator + structural validator, skip Critic |
+| **Reading passages** (future) | MEDIUM-HIGH | Full pipeline + native-speaker spot-review flag |
+
+Tier the spend: don't burn Critic tokens on casual chat, do burn them on anything that gets scheduled by FSRS.
+
+### 15.4 Idle-time pre-generation — how "unlimited" becomes real
+
+The core insight: most "unlimited" requests aren't unique. Users ask variations of the same question; users review the same cards repeatedly. Caching + pre-generation makes 80-90% of requests hit from IndexedDB with zero API call.
+
+**Scheduled pre-generation triggers:**
+- User opens app, has wifi, device has battery > 50% or is charging → fire a background job
+- User finishes a review session → pre-gen questions for tomorrow's due cards
+- User goes idle on a card > 30s → pre-gen explanation for that card (they're probably about to ask)
+- Night-time hour in user's timezone → bulk pre-gen for tomorrow's study session
+
+**What gets pre-generated:**
+- 3-5 example sentences per grammar card due tomorrow
+- 3-5 quiz questions per grammar card due tomorrow
+- Quick-explain for every card the user has bookmarked but never opened
+
+All stored in IndexedDB (`nn_ai_cache` object store) with expiry (7d for quiz, 30d for explanations, 90d for examples).
+
+**User-visible result:** when they ask "jelaskan ～ために" or tap a Tanya button on a cached card, response arrives in <100ms. When they ask something novel, it arrives in 1-4s with typing dots. Both feel fine. Free tier ceiling is largely bypassed.
+
+### 15.5 Fallback hierarchy (strict order)
+
+```
+Request: "explain ～ために"
+  ↓
+1. IndexedDB cache (L1, user's device)                    → hit: <100ms ✓
+  ↓ miss
+2. Cloudflare KV cache (L2, shared across users)          → hit: ~50-200ms ✓
+  ↓ miss
+3. Live AI call via provider cascade (§16)                → hit: 1-4s ✓
+  ↓ all providers down / rate limited
+4. Pre-baked offline drill (public/data/fallback/*.json)  → hit: instant, limited content
+  ↓ no match
+5. Graceful degradation message:
+     "Sensei lagi ramai. Coba 2 menit lagi ya, atau buka [grammar detail] buat
+      referensi langsung. Nggak ada batas harian — ini cuma hiccup sebentar."
+```
+
+### 15.6 User feedback loop — the long-term quality moat
+
+Every AI-generated item (quiz question, example sentence, chat reply) gets a small feedback control:
+
+```
+                                              👍  👎  ✏️
+```
+
+- **👍** (thumbs up) — logged as positive signal; no UI change
+- **👎** (thumbs down) — opens a quick form: "Ada yang aneh?"
+  - [ ] Grammar salah
+  - [ ] Kata di luar level
+  - [ ] Terjemahan tidak sesuai
+  - [ ] Terdengar tidak natural
+  - [ ] Lainnya: ___
+- **✏️** (edit) — shows the AI output + "Versi yang benar menurutmu:" textarea
+
+Flagged items are **immediately quarantined** (removed from `nn_ai_cache` + added to a blocklist). Flag data syncs to Supabase. Nugget reviews flagged queue weekly via a simple admin page (`/admin/flagged` — Supabase RLS gated).
+
+**This is the single biggest long-term quality moat in the app.** No competitor has a dataset of Indonesian-Japanese learners flagging specifically-wrong AI outputs. After 6 months this becomes either:
+- Training data for a fine-tune (if we want to go there)
+- A public-good dataset released under CC-BY (great for the brand)
+- A correction source for future prompts ("past mistakes to avoid")
+
+### 15.7 Launch quality gates
+
+Before AI quiz-gen ships to users:
+
+1. **Seed test** — Generate 100 questions across N5/N4/N3 levels. Nugget (or a volunteer native speaker) reviews manually. Target: ≥90% pass rate post-Critic. If <90%, tune prompts until ≥90%.
+2. **Contamination test** — Sample 50 generated questions across 4 providers. Check: does any answer appear verbatim in the prompt? Target: 0%.
+3. **Level-appropriateness test** — Automated: for each N4 question, check all vocab against vocab DB; flag any N3+ word in the prompt. Target: <5% leakage, must be reviewed.
+4. **Diversity test** — Generate 20 questions on the same target. Check: sentence templates shouldn't repeat. Target: ≥70% template-unique.
+5. **Critic agreement** — For 100 questions, run Critic twice (different temperature). Check: agreement ≥80% on APPROVE/REJECT.
+
+Gate: all five must pass before `quiz-gen` goes live for any user. Re-run weekly.
+
+### 15.8 Files touched for AI content gen
+
+| File | Role |
+|---|---|
+| `workers/ai-proxy.js` | Add `/generate-quiz` endpoint calling generator. Add `/critique` endpoint (can be same Worker, different route). Both use §16 provider cascade. |
+| `workers/ai-validator.js` | NEW — structural validator (§15.2 stage 3). Pure JS rules, no LLM. |
+| `public/js/ai-content-engine.js` | NEW — orchestrates G+C+V pipeline from client side. Handles caching, fallback. |
+| `public/js/quiz-generator.js` | EXISTS — extend to accept `source: 'ai-gen'` questions. |
+| `public/js/offline-ai-cache.js` | EXISTS — extend with pre-generation job scheduler. |
+| `public/js/ai-feedback.js` | NEW — 👍/👎/✏️ feedback widget + sync logic. |
+| `public/data/fallback/quiz-drills.json` | NEW — offline fallback quiz drills. |
+| `supabase/schema.sql` | Add table `ai_feedback (id, user_id, ai_item_id, verdict, reason, correction, created_at)`. |
+
+---
+
+## 16 · Multi-Provider AI Cascade
+
+### 16.1 Goals
+
+1. **No user-facing daily limit.** Users never see "quota exhausted."
+2. **100% free infrastructure** on the critical path. Paid options allowed only for premium features we haven't built yet.
+3. **Graceful degradation.** When one provider is down/throttled, others pick up invisibly.
+4. **Honest about ceilings.** We tell users the truth about performance at load, just not via a "quota bar."
+
+### 16.2 Provider chain
+
+In priority order (Worker calls top-down, fallback on error/rate-limit):
+
+| # | Provider | Models | Why | Free tier |
+|---|---|---|---|---|
+| 1 | **Groq** | `llama-3.1-8b-instant` (fast), `llama-3.3-70b-versatile` (deep) | Fastest TTFT (~200ms), generous free tier | ~14k req/day per key, ~500 RPM |
+| 2 | **Gemini** | `gemini-2.0-flash`, `gemini-2.0-flash-thinking-exp` | Google's generous free tier, good quality | ~1500 req/day |
+| 3 | **OpenRouter (free models only)** | `meta-llama/llama-3.3-70b-instruct:free`, `deepseek/deepseek-chat-v3-0324:free`, `qwen/qwen-2.5-72b-instruct:free`, `google/gemma-3-27b-it:free`, `deepseek/deepseek-r1:free` (when free), `nvidia/llama-3.1-nemotron-70b-instruct:free` (when available) | Dozens of free models, rotatable when one's limit hits | ~200 req/day per model × many models |
+| 4 | **Cloudflare Workers AI** | `@cf/meta/llama-3.3-70b-instruct-fp8-fast` | Runs natively on CF edge — zero latency from the Worker | Free tier: 10k neurons/day (~several hundred calls) |
+| 5 | **KV cache** | — | Previously-answered queries | Unlimited read |
+| 6 | **Offline drills** | — | Pre-baked content | Unlimited |
+
+### 16.3 Routing intelligence
+
+Not all queries go to the same tier. Simple rules:
+
+```
+Classify query:
+  - Short (< 20 words), simple ("apa itu X?") → Groq 8B (speed)
+  - Long or grammar-explain → Groq 70B or Gemini (quality)
+  - Quiz-gen (needs JSON discipline) → Gemini or OpenRouter Llama 3.3 70B
+  - Chat/conversational → any provider, prefer cheapest-tier
+  - Critic (§15.2 stage 2) → CROSS-PROVIDER from generator
+    (if generator was Groq, critic should be Gemini or OpenRouter — diversity improves catch rate)
+```
+
+### 16.4 Rate-limit strategy — per-provider, not per-user
+
+Currently: `DAILY_LIMIT = 15` / user / day. **Remove from user-facing UI.**
+
+Replace with:
+
+**Per-provider counters in CF KV:**
+```
+rl:provider:groq:2026-04-16   → 8734   (rpd cap: 14000)
+rl:provider:gemini:2026-04-16 → 890    (rpd cap: 1500)
+rl:provider:or-llama-3.3:2026-04-16 → 180  (rpd cap: 200)
+...
+```
+
+When `provider_count >= provider_cap * 0.9`, circuit-break that provider for 30 min (soft) or rest of day (hard). Next request routes to the next provider in the chain.
+
+**Per-user soft caps (abuse only, not study limit):**
+```
+abuse:user:<user_id>:<hour>  → 40  (cap: 100 per hour)
+```
+
+At 100 msgs/hour, user gets: "Whoa, pertanyaan cepet banget. Tunggu 2 menit ya biar sistem napas." — not a hard block; a friendly decelerator. Drops to 10/min for 5 minutes. This only triggers on actual abuse patterns (a bot or a fire-hose user).
+
+### 16.5 UI changes
+
+**Remove:**
+```html
+<div class="ai-quota-bar" id="aiQuotaBar">
+  <span id="aiQuotaText">10 pertanyaan gratis hari ini</span>
+  <div class="ai-quota-track">...</div>
+</div>
+```
+
+**Replace with:**
+```html
+<div class="ai-status-strip">
+  <span class="ai-status-text">Sensei siap — tanpa batas harian.</span>
+  <!-- nerd-mode only, in Settings: which provider served the last request -->
+</div>
+```
+
+In Settings → AI Sensei section, add (collapsed by default):
+```
+Provider yang aktif: Groq (Llama 3.1 8B)
+Jawaban terakhir dari: Groq · 2 detik · 142 token
+[Lihat statistik detail]
+```
+
+### 16.6 Honest ceiling math
+
+Let's math this out so we set expectations right.
+
+**Assumptions:**
+- Average user session: 5 min
+- Average AI calls per session (uncached): ~4
+- Cache hit rate at steady state: ~70% (repeat questions + pre-generation)
+- So net uncached calls per session: ~1.2
+- Active sessions/day/user: ~3 (morning, break, evening)
+- Net uncached calls per user per day: ~3.6
+
+**Free tier total calls/day (summed across all providers):**
+- Groq: ~14,000
+- Gemini: ~1,500
+- OpenRouter free models × 10 rotating: ~2,000
+- CF Workers AI: ~500
+- **Total: ~18,000 calls/day**
+
+**DAU ceiling before degradation:** 18,000 / 3.6 ≈ **5,000 DAU.**
+
+That's plenty of headroom for launch. When we hit 2,000+ DAU consistently, we have runway to:
+- Add more OpenRouter free models as they're released
+- Offer a "BYO key" option for power users
+- Add a paid tier for premium features (not Sensei-gated — maybe early access to new book series)
+
+**Users will NEVER hit a personal cap unless they're abusing (>100/hour).**
+
+### 16.7 Provider health monitoring
+
+Worker endpoint `/health` returns (not auth-gated, safe to expose):
+
+```json
+{
+  "providers": [
+    { "name": "groq",         "status": "ok",          "used_today": 8734, "cap": 14000 },
+    { "name": "gemini",       "status": "ok",          "used_today": 890,  "cap": 1500 },
+    { "name": "openrouter",   "status": "degraded",    "active_models": 7, "total": 10 },
+    { "name": "cf-workers",   "status": "ok",          "used_today": 120,  "cap": 500 }
+  ],
+  "cache_hit_rate_24h": 0.71,
+  "total_served_today": 4820
+}
+```
+
+Settings page has a tiny link "Sensei health →" that opens this as a human-readable page. Transparency = trust.
+
+### 16.8 Files touched for multi-provider cascade
+
+| File | Change |
+|---|---|
+| `workers/ai-proxy.js` | Already has scaffolding (Groq + Gemini + OpenRouter). Extend: add CF Workers AI as provider 4. Add per-provider rate tracking. Add `/health` endpoint. Remove user-facing daily limit (keep abuse-only soft cap). |
+| `workers/wrangler.toml` | Bind CF Workers AI. Secrets: `GROQ_API_KEY`, `GEMINI_API_KEY`, `OPENROUTER_API_KEY`. |
+| `public/js/ai-proxy.js` (client) | Remove quota-bar rendering. Surface "which provider" as hidden data for Settings display. |
+| `public/js/ai-tutor.js` | Remove `_renderQuota()`, `_getQuota()`, `_setQuota()`. Replace with simple "ready" status. |
+| `public/styles/pages/sensei.css` | Remove `.ai-quota-bar` styles. |
+| `public/js/pages/settings.js` | Add "AI Sensei provider status" section with collapsible details. |
+
+---
+
+## 17 · Tanya Sensei — context-injection pattern
+
+### 17.1 Core interaction
+
+Every material card (grammar, vocab, example sentence detail, quiz result) has a discrete `💬 Tanya` icon button in the card header. Tap/click triggers:
+
+```
+1. Snapshot card data → ctx.card
+2. Open Sensei surface:
+     - Desktop (Sensei pinned): input focused in right column
+     - Desktop (Sensei unpinned): expand column with animation, focus input
+     - Tablet: slide-in drawer from right
+     - Mobile: slide-up sheet (80% height, card still visible at bottom)
+3. Pre-fill input with: "Jelaskan {pattern}:" (grammar) or "Jelaskan kata {word}:" (vocab)
+4. Cursor positioned at end (user can append "...beda sama ～のに" or whatever)
+5. Hint chip above input: "📌 Kartu: {target}" with ✕ to clear context
+6. On send: request includes full ctx.card payload
+```
+
+### 17.2 Context payload to Worker
+
+```json
+{
+  "mode": "explain",
+  "messages": [{ "role": "user", "content": "Jelaskan ～ために: beda sama ～ように?" }],
+  "context": {
+    "level": "n4",
+    "goals": ["jlpt", "ssw"],
+    "trigger": "tanya_sensei_btn",
+    "card": {
+      "id": "gn4-00017",
+      "type": "grammar",
+      "level": "n4",
+      "pattern": "～ために",
+      "meaning_id": "supaya / untuk (dengan tujuan yang dapat dikontrol)",
+      "structure": "[plain form verb] + ために",
+      "examples": [
+        {
+          "ja": "日本に行くために、お金をためている。",
+          "id": "Aku nabung supaya bisa pergi ke Jepang."
+        }
+      ],
+      "categories": ["tujuan"],
+      "lenses": [
+        { "book": "soumatome-n4", "location": "W3D2" },
+        { "book": "irodori-a2-1", "location": "L8" }
+      ]
+    },
+    "recent_weak": ["gn4-00042 (のに)", "gn4-00029 (ので)"]
+  }
+}
+```
+
+### 17.3 System prompt augmentation
+
+When `ctx.card` is present, append to system prompt (see §5.3 base):
+
+```
+[CONTEXT CARD]
+Pelajar sekarang lagi ngeliat kartu ini dan ngetrigger tombol "Tanya":
+
+ID kartu: {ctx.card.id}
+Level: {ctx.card.level}
+Target: {ctx.card.pattern or ctx.card.word}
+Arti ID: {ctx.card.meaning_id}
+Struktur: {ctx.card.structure}
+Contoh di kartu:
+  - {ctx.card.examples[0].ja} → {ctx.card.examples[0].id}
+
+Aturan khusus saat ada context card:
+1. Jawabanmu harus langsung ngerujuk ke target kartu, bukan beralih topik.
+2. Kalau contoh di kartu relevan sama pertanyaan, referensi balik ke contoh itu.
+3. Tetap boleh nambah contoh/konteks baru kalau membantu — tapi jangan ganti topik.
+4. Kalau pertanyaan pelajar di luar scope kartu:
+     - Jawab pertanyaannya dulu (satu paragraf)
+     - Kasih bridge: "Ngomong-ngomong, balik ke {target} — [link balik ke konteks]"
+5. Di akhir jawaban, kalau topiknya tuntas, tawarin:
+     "Mau latihan {target} sekarang? →"
+     (ini akan jadi link ke quiz yang difilter ke target ini)
+```
+
+### 17.4 Exit affordances (end of Sensei reply)
+
+After Sensei answers, two small ghost buttons appear at the bottom of the reply:
+
+```
+[→ Latihan ～ために]  [Kembali ke kartu]
+```
+
+- `→ Latihan ～ために` — deep-links to Latihan tab with quiz filter pre-set to `target_id: gn4-00017`
+- `Kembali ke kartu` — on mobile/tablet, dismisses the Sensei sheet; on desktop-pinned, just scrolls chat and re-focuses the card
+
+### 17.5 Per-surface behavior
+
+| Surface | Desktop pinned Sensei | Desktop unpinned | Tablet | Mobile |
+|---|---|---|---|---|
+| Grammar card | Focus input, prefill | Expand column, focus | Slide drawer, focus | Slide-up sheet (80% h) |
+| Vocab card | Same | Same | Same | Same |
+| Quiz result | Same | Same | Same | Sheet (60% h — quiz state preserved above) |
+| Example detail | Same | Same | Same | Sheet (60% h) |
+
+### 17.6 Keyboard shortcut
+
+Press `?` anywhere with a card focused → equivalent to clicking Tanya. Power-user affordance.
+
+### 17.7 Components required
+
+- `<TanyaSenseiButton card={...} />` — the icon button itself
+- `<SenseiDrawer pinned={bool} onPin={...} />` — desktop right-column container
+- `<SenseiSheet open={bool} onDismiss={...} />` — mobile/tablet full-screen sheet
+- `<ContextChip card={...} onClear={...} />` — "📌 Kartu: {target} ✕" above input
+- `<ExitLinks targetId={...} onDismiss={...} />` — post-reply CTAs
+
+---
+
+## 18 · Final word (v2)
+
+The app already has the hard part right — research foundation, data model, learning engines. What it's missing is the layer where the user actually lives. Ship these phases and Nugget Nihongo stops looking like a hobbyist repo with serious research and starts looking like **the Indonesian-Japanese learning product that should exist.**
+
+Three opinions, stated as opinions:
+
+**1. The persona work in §5 is still the single highest-leverage item.** Every competitor has grammar databases. Nobody has a tutor that talks like this — in Indonesian, with malu-awareness baked into its voice principles, calibrated rather than certain, pushing back when the learner is wrong. That's the moat that can't be copied with money.
+
+**2. The Materi hub + Tanya Sensei combo (§14 + §17) is the UX moment.** Turning "browse cards → read → leave" into "browse cards → one tap → converse with a knowledgeable senpai → continue studying" changes what this app *is*, not just how it looks. This is the feature that makes a learner tell their friend about it.
+
+**3. The AI content engine (§15) is where this gets dangerous if we're lazy.** I want Nugget to sign off explicitly on the Generator + Critic + Validator pipeline before we ship a single AI-generated quiz question. It would be embarrassing — and educationally harmful — to launch something that subtly teaches wrong Japanese to thousands of Indonesian learners. The three-layer architecture costs more tokens. It's worth every one.
+
+Semangat. Ship it clean.
+
+---
+*End of plan v2. Bring pushback. Senior devs argue. Ship a sharper plan.*
