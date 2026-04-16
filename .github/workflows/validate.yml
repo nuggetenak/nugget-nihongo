@@ -24,14 +24,19 @@ jobs:
         run: node tests/run.js
 
       - name: Check version sync (sw.js vs version.js)
-        run: node -e "
-          const sw = require('fs').readFileSync('public/sw.js','utf8');
-          const v  = require('fs').readFileSync('public/js/core/version.js','utf8');
-          const swV  = sw.match(/CACHE = 'nihongo-(v[\d.]+)'/)?.[1];
-          const appV = v.match(/APP_VERSION = '(v[\d.]+)'/)?.[1];
-          if (swV !== appV) { console.error('VERSION MISMATCH: sw='+swV+' app='+appV); process.exit(1); }
-          console.log('✅ Version sync OK:', appV);
-        "
+        run: |
+          node -e "
+            const fs = require('fs');
+            const sw = fs.readFileSync('public/sw.js', 'utf8');
+            const v  = fs.readFileSync('public/js/core/version.js', 'utf8');
+            const swV  = sw.match(/CACHE = 'nihongo-(v[\d.]+)'/)?.[1];
+            const appV = v.match(/APP_VERSION = '(v[\d.]+)'/)?.[1];
+            if (swV !== appV) {
+              console.error('VERSION MISMATCH: sw=' + swV + ' app=' + appV);
+              process.exit(1);
+            }
+            console.log('Version sync OK: ' + appV);
+          "
 
       - name: Summary
-        run: echo "✅ All checks passed. Safe to merge to main."
+        run: echo "All checks passed. Safe to merge to main."
