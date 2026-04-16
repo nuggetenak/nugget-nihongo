@@ -3293,3 +3293,60 @@ body.light {
   border-radius: 0 0 8px 8px;
 }
 .cat-group-body.open { display: flex; }
+
+/* ══════════════════════════════════════════════════════════════════
+   §23 Skeleton / Loading States (B6)
+   shimmer animation for grammar cards before data renders
+══════════════════════════════════════════════════════════════════ */
+@keyframes sk-shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.sk-shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--surface-2) 25%,
+    var(--surface-3) 50%,
+    var(--surface-2) 75%
+  );
+  background-size: 200% 100%;
+  animation: sk-shimmer 1.6s ease-in-out infinite;
+  border-radius: 6px;
+}
+
+.sk-section { margin-bottom: 1.5rem; }
+
+.sk-section-hdr {
+  height: 0.9rem;
+  width: 140px;
+  margin-bottom: 0.85rem;
+}
+
+.sk-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 0.85rem;
+}
+@media (max-width: 520px) { .sk-grid { grid-template-columns: 1fr; } }
+
+.sk-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  min-height: 130px;
+}
+
+.sk-line {
+  height: 0.8rem;
+  border-radius: 5px;
+}
+.sk-line--sm   { width: 32%; }
+.sk-line--md   { width: 56%; }
+.sk-line--lg   { width: 78%; }
+.sk-line--full { width: 100%; }
+.sk-line--tag  { height: 1.4rem; width: 48px; border-radius: 20px; }
