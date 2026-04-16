@@ -999,7 +999,7 @@ Add:
 
 ### 8.3 Launch checklist (Nugget + Claude Code tag team)
 
-- [ ] Phase 0 cosmetic bugs fixed (B1–B7)
+- [x] Phase 0 cosmetic bugs fixed (B1–B7) — done 2026-04-16
 - [ ] Design System v2 tokens file in place
 - [ ] Responsive shell lives at all breakpoints
 - [ ] Onboarding flow ships
