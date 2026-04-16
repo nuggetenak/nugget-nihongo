@@ -8,6 +8,11 @@
 
 ## 0.5 · Revision log
 
+**v2.1 — 16 April 2026 (end of session)** — All v2 pushback items resolved by Nugget. Additions:
+- §10 pushback block replaced with "RESOLVED" confirmations
+- **§15.9 AI-to-DB promotion pipeline** — new subsection. Nugget's suggestion: high-quality AI-generated content (Critic-approved + ≥85% 👍 ratio + 30d stability) gets human-reviewed and promoted into permanent DB. Quiz bank, nuance notes, confusion pairs become proprietary content assets that grow monthly at near-zero cost. Full lineage tracking, admin UI spec, safety brakes (never auto-promote).
+- Handoff doc created: `docs/HANDOFF-frontend-overhaul-v2.md` for the next Claude agent session
+
 **v2.0 — 16 April 2026** — Post-decision revision after review by Nugget. Major additions:
 - §1.1 Information Architecture rewritten around **unified Materi hub** (JLPT door + Buku Series door) — see new §14 for full spec
 - §5 Sensei expanded with three new subsections:
@@ -1074,15 +1079,13 @@ Nugget's decisions on the v1 open questions, plus their implications:
 | 10 | **No user-facing daily limit** | Quota bar removed from UI. Multi-provider cascade (§16) replaces user-quota with per-provider rate limits. `DAILY_LIMIT` constant stays in Worker as per-user abuse prevention only (e.g., 100/hour) — never surfaced to user. |
 | 11 | **100% free AI stack** | §16 provider chain: Groq → Gemini → OpenRouter free models → Cloudflare Workers AI → KV cache → offline drills. No paid tier in the critical path. |
 
-### Things I'm pushing back on (Nugget should confirm)
+### Pushback items — RESOLVED (confirmed by Nugget, 16 April 2026)
 
-**P1 — Hallucination risk in AI-generated quizzes.** This is the single most important architectural decision in v2. LLMs reliably generate subtly-wrong Japanese (wrong particles, unnatural sentences, level-inappropriate vocabulary). If we serve these as "correct answers" and learners memorize via FSRS, we are actively teaching wrong Japanese — worse than no quiz.
+**P1 — Generator + Critic + Validator pipeline ✅ APPROVED.** Three-stage pipeline is go. Nugget added: *"if the content is high quality it could be saved and updated into our own database."* This is a critical addition — see **§15.9 AI-to-DB promotion pipeline** below.
 
-**My recommendation (§15 details):** Generator + Critic + Structural Validator pipeline. Two LLM calls per batch (generator + critic), plus a rules-based validator checking for things like "target vocab appears in the prompt" / "grammar pattern is actually present" / "distractor is a plausible confusion partner, not a random word." User feedback loop flags bad items. **I need Nugget to confirm this three-layer architecture is acceptable** — it costs ~2× the tokens of a naive "generate and serve" approach but is the only responsible way to do AI quiz gen for language learning.
+**P2 — "Tanpa batas harian" UI copy ✅ APPROVED.** Use: *"Tanpa batas harian — Sensei nggak bakal bilang 'stop udah habis.' Kalau lagi ramai, jawabannya mungkin lebih pelan."*
 
-**P2 — "Unlimited" phrasing.** Free tiers have real ceilings. Suggested UI copy: *"Tanpa batas harian — Sensei nggak bakal bilang 'stop udah habis.' Kalau lagi ramai, jawabannya mungkin lebih pelan."* Honest, warm, sets expectations. **Request: approve this copy direction.**
-
-**P3 — Vocab DB is not replaced by AI.** Sensei *supplements* vocab with on-demand depth (examples, nuance, quiz questions) but the vocab DB stays as the spine because: (a) FSRS needs stable IDs, (b) offline browse needs pre-built cards, (c) book lenses reference IDs, (d) AI-gen needs a seed pool to sample targets from. **Request: confirm understanding — vocab DB continues to grow, AI adds a layer on top.**
+**P3 — Vocab DB remains spine ✅ CONFIRMED.** DB continues to grow per MASTER-AUDIT TASK 15 (N3 vocab 100 → 300+). AI supplements, does not replace.
 
 
 ---
@@ -1520,6 +1523,79 @@ Gate: all five must pass before `quiz-gen` goes live for any user. Re-run weekly
 | `public/js/ai-feedback.js` | NEW — 👍/👎/✏️ feedback widget + sync logic. |
 | `public/data/fallback/quiz-drills.json` | NEW — offline fallback quiz drills. |
 | `supabase/schema.sql` | Add table `ai_feedback (id, user_id, ai_item_id, verdict, reason, correction, created_at)`. |
+
+---
+
+### 15.9 AI-to-DB promotion pipeline (added per Nugget's 16 Apr decision)
+
+**Core idea:** High-quality AI-generated content shouldn't stay ephemeral. If the Critic approves an item AND users consistently rate it 👍 AND it survives a final human spot-check, it gets **promoted into the permanent DB** — effectively using users as a distributed quality filter to grow the content corpus over time.
+
+**Promotion criteria (all must be true):**
+
+1. **Critic verdict:** `APPROVED` (not `REVISE`, not `REJECTED`)
+2. **Structural validator:** `PASS` all rules
+3. **User signal:** ≥10 serves AND (👍 count / total feedback) ≥ 0.85
+4. **Stability:** ≥30 days in the field without a 👎 or ✏️ flag
+5. **Human review:** Nugget (or designated reviewer) clicks "Promote" in admin panel
+
+**Promotion destinations:**
+
+| AI item type | Promoted to |
+|---|---|
+| Quiz question | `public/data/quiz-bank/n{level}.js` (NEW — a community-quality quiz bank that ships with the app) |
+| Example sentence | appended to the target card in `vocab-n{level}.js` or `grammar-n{level}.js` as an additional example |
+| Nuance explanation | `public/data/nuance-notes/{pattern_id}.md` (NEW — rendered in card detail modal) |
+| Confusion pair | `public/data/confusion-pairs.js` (NEW — feeds Sensei's "mau liat pasangan mirip?" suggestions) |
+
+**Lineage tracking (required for promoted items):**
+
+Every promoted item keeps metadata:
+```js
+{
+  id: 'qb-n4-00142',
+  promoted_from: 'aig-1760123456-3',
+  original_provider: 'groq:llama-3.3-70b',
+  critic_provider: 'gemini:2.0-flash',
+  serves_before_promotion: 47,
+  thumbs_up: 43,
+  thumbs_down: 0,
+  edits_submitted: 0,
+  promoted_at: '2026-05-18T09:12:00Z',
+  promoted_by: 'nugget',
+  provenance: 'ai-gen-promoted-v1'
+}
+```
+
+This metadata lives in the data file itself (append-only, per existing convention) so the provenance is auditable forever. If a model turns out to have systemic errors, we can retroactively pull all items sourced from it.
+
+**Admin panel for promotion (`/admin/promote`):**
+
+Supabase RLS gated. Nugget sees a queue of promotion candidates sorted by serve count × 👍 ratio. Each entry shows:
+- Full item (rendered as it would appear to user)
+- Performance stats (serves, 👍/👎 ratio, days in field)
+- Original lineage (which provider, which prompt version)
+- Actions: **[Promote] [Edit & Promote] [Reject & Blocklist]**
+
+Promote → writes item to the corresponding `data/` file + commits + pushes. (For launch, "commits + pushes" means Nugget runs `git commit` manually; post-launch we can build a CF Worker with GitHub App auth to automate.)
+
+**Strategic value:**
+
+Over 6-12 months of real usage, this turns the AI layer into a **content-growth engine** that costs near-zero and produces data that competitors can't buy. The quiz bank, nuance notes, and confusion pairs become proprietary assets that make the app genuinely better every month without Nugget writing each entry by hand.
+
+**Safety brake:** Never auto-promote. Human review is always the final gate. The system collects signal, ranks candidates, pre-fills the review UI — but the "promote" button requires a human click. This is the difference between "AI-augmented content growth" and "model collapse via self-training on its own outputs."
+
+**Files touched for promotion pipeline:**
+
+| File | Role |
+|---|---|
+| `supabase/schema.sql` | Add table `ai_promotion_queue` with serve/feedback aggregates |
+| `public/js/ai-feedback.js` | Feedback signals already write to Supabase — extend schema with promotion-relevant fields |
+| `workers/admin-api.js` | NEW — Cloudflare Worker for admin actions (promote/reject/blocklist), GitHub App auth for commits |
+| `public/admin/promote.html` | NEW — the admin UI (not linked from main nav; URL-only access) |
+| `public/data/quiz-bank/` | NEW directory — promoted quiz questions |
+| `public/data/nuance-notes/` | NEW directory — promoted nuance explanations |
+| `public/data/confusion-pairs.js` | NEW — promoted confusion pair metadata |
+| `tests/run.js` | Add: every promoted item has valid lineage metadata; no forbidden provenance values |
 
 ---
 
