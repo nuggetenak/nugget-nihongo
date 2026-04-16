@@ -1276,10 +1276,10 @@ The following conflicts between sections are flagged for Agent 2 resolution:
 
 ### Decision: Cards targeting pragmatic competence (keigo patterns, speech act formulae, conditions of use) are a distinct category from both vocabulary cards and grammar cards; conditions of use must appear on every pragmatic card
 
-- **Evidence:** SC-15 (Kasper & Rose 2002 pragmatic development lags grammatical), SC-16 (Bardovi-Harlig 2001 explicit instruction necessary), SC-19 (Thomas 1983 sociopragmatic/pragmalinguistic failure)
+- **Evidence:** SC-08 (Kasper & Rose 2002 pragmatic development lags grammatical), SC-16 (Bardovi-Harlig 2001 explicit instruction necessary), SC-19 (Thomas 1983 sociopragmatic/pragmalinguistic failure)
 - **Section:** §14.4–§14.5
 - **Priority:** HIGH
-- **Notes:** Kasper & Rose (SC-15) establish three robust generalizations about L2 pragmatic development: (1) it consistently lags behind grammatical development; (2) it is instruction-sensitive (immersion alone insufficient); (3) L1 pragmatic transfer persists even at advanced proficiency. Thomas (SC-19) establishes that sociopragmatic failure (wrong pragmatic choice for context) and pragmalinguistic failure (wrong form for intended speech act) require distinct pedagogical interventions. A pragmatic card must teach not only what to say but when, for whom, and under what social conditions. The conditions-of-use specification on every pragmatic card is the implementation of Kasper's (SC-17) finding that pragmatic transfer persists independent of grammatical accuracy: knowing the form does not automatically produce the knowledge of when to use it.
+- **Notes:** Kasper & Rose (SC-08) establish three robust generalizations about L2 pragmatic development: (1) it consistently lags behind grammatical development; (2) it is instruction-sensitive (immersion alone insufficient); (3) L1 pragmatic transfer persists even at advanced proficiency. Thomas (SC-19) establishes that sociopragmatic failure (wrong pragmatic choice for context) and pragmalinguistic failure (wrong form for intended speech act) require distinct pedagogical interventions. A pragmatic card must teach not only what to say but when, for whom, and under what social conditions. The conditions-of-use specification on every pragmatic card is the implementation of Kasper's (SC-17) finding that pragmatic transfer persists independent of grammatical accuracy: knowing the form does not automatically produce the knowledge of when to use it.
 
 ---
 
@@ -1287,10 +1287,10 @@ The following conflicts between sections are flagged for Agent 2 resolution:
 
 ### Decision: Keigo vocabulary is a first-tier content category in the nursing care (介護) sub-deck — not supplementary material — comprising approximately 50–80 high-frequency register-marked patterns beyond standard JLPT N4 honorifics
 
-- **Evidence:** VS-22 (Cook 2008 keigo as continuous indexical system), VS-24 (Ogawa 2012 EPA monitoring — systematic mismatch between examination keigo and authentic 介護 register demands)
+- **Evidence:** SC-05 (Cook 2008 keigo as continuous indexical system), VS-24 (Ogawa 2012 EPA monitoring — systematic mismatch between examination keigo and authentic 介護 register demands)
 - **Section:** §14.3, §15.5, §17.6
 - **Priority:** HIGH
-- **Notes:** Ogawa (VS-24) documents the systematic gap between examination-level keigo and the register competence required in authentic 介護 workplaces — EPA care workers who knew the forms failed to deploy them appropriately under real-time cognitive load and institutional pressure. Cook (VS-22) establishes that workplace keigo is not a rule system but a continuous indexical practice encoding institutional position in real-time. The 介護 deck must include: shift-report formulae, polite request structures for physical assistance contexts, title-based address forms for 利用者 (care recipients), and key boundary expressions for medical communication. Cross-reference: the double ego-threat architecture for SSW phonology (§17.6) — sounding foreign to Japanese interlocutors AND sounding strange to Indonesian self-monitors — applies equally to keigo register selection under workplace pressure.
+- **Notes:** Ogawa (VS-24) documents the systematic gap between examination-level keigo and the register competence required in authentic 介護 workplaces — EPA care workers who knew the forms failed to deploy them appropriately under real-time cognitive load and institutional pressure. Cook (SC-05) establishes that workplace keigo is not a rule system but a continuous indexical practice encoding institutional position in real-time. The 介護 deck must include: shift-report formulae, polite request structures for physical assistance contexts, title-based address forms for 利用者 (care recipients), and key boundary expressions for medical communication. Cross-reference: the double ego-threat architecture for SSW phonology (§17.6) — sounding foreign to Japanese interlocutors AND sounding strange to Indonesian self-monitors — applies equally to keigo register selection under workplace pressure.
 
 ---
 

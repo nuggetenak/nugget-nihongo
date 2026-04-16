@@ -1368,7 +1368,7 @@ The three sections form a complete theoretical architecture for the treatment of
 
 **§5.6 (EA + Interlanguage Theory)** answers: *What do errors mean, and how should the platform respond?* → Error is evidence (EA-01–EA-02), produced by a systematic interlanguage (EA-03–EA-06), classifiable by source type (EA-07–EA-09), prone to stabilization for specific features (EA-10–EA-13), and addressable through explicit, salient corrective feedback (EA-14–EA-20). Indonesian-specific patterns (EA-21–EA-22) validate the above in the target learner population.
 
-**§12 (Output Theory + Noticing)** answers: *What cognitive mechanisms drive acquisition from the error event forward?* → Production failure primes noticing (OT-01–OT-05); noticing requires conscious attention (OT-06–OT-11); explicit instruction accelerates acquisition of complex features (OT-12–OT-17); declarative knowledge proceduralized through practice (OT-18–OT-24); production in context consolidates lexical acquisition (OT-25–OT-30).
+**§12 (Output Theory + Noticing)** answers: *What cognitive mechanisms drive acquisition from the error event forward?* → Production failure primes noticing (KR-09, OT-02–OT-05); noticing requires conscious attention (OT-06–OT-11); explicit instruction accelerates acquisition of complex features (OT-12–OT-17); declarative knowledge proceduralized through practice (OT-18–OT-24); production in context consolidates lexical acquisition (OT-25–OT-30).
 
 A learner who presses "Again" on a に/で particle card has:
 - Made a predictable transfer error (§5.5 [CA-09])

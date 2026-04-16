@@ -1,5 +1,5 @@
 # NUGGET NIHONGO — MASTER BIBLIOGRAPHY
-**Version:** FINAL (v6) | **Date:** 5 April 2026 | **Audited by:** Agent 2 Sonnet 4.6 (stub fill pass)
+**Version:** FINAL (v7) | **Date:** 17 April 2026 | **Audited by:** Crispy (Claude Opus 4.7) — Pass 16 consolidation
 **Compiled by:** A1 Crispy 🥐 — Project Director | **Stub fill:** Agent 2 (v16 half-1)
 **Format:** APA 7th Edition
 
@@ -12,13 +12,17 @@
 | Entries with DOI | ~336 (45%) |
 | Entries with ISBN (books) | ~122 |
 | DOI verification pending | 42 |
-| Stubs remaining | 2 (ER×2) + 13 SUPPLEMENT bare stubs (author+year only) + 1 conditional (CV-05) | *(AL-03, CM-20/21/22 filled Pass 13; SC×1 stub resolved RETIRED Pass 14; AL×1 stub AL-21 resolved RETIRED Pass 14; ER-20 filled Pass 14)* |
+| Stubs remaining | 2 (ER×2 — DUP candidates, see DUP-04/05) + 13 SUPPLEMENT bare stubs (author+year only) + 1 conditional (CV-05) | *(v7: DUP-01/02/03 resolved; VD-17 retired (verification failed); EA-22 formalized as gap marker)* |
 | Ghost entries deleted (v15 audit) | 3 (Cunningham 2011, Haber 1960, Nezarat 2012) |
 | Recovered entries added (v15 audit) | 3 (SM-09 App Annie, SM-10 StatCounter, CC-17 Triandis & Gelfand) |
 | GA stubs filled (v16 half-1) | 5 new entries: GA-16, GA-17, GA-22, GA-25, GA-30 |
 | LS stubs filled (v16 half-1) | 6 new entries: LS-03, LS-04, LS-06, LS-09, LS-10, LS-18 |
-| ⚠️ GA-09 flag | Duplicate of GA-19 (same Kanno 2007 paper) — Crispy decision pending |
-| ⚠️ LS-01/LS-06 flag | Same Vandergrift (2007) paper assigned two IDs — Crispy decision pending |
+| ✅ DUP-01 resolved | GA-09 retired; canonical = GA-19 (Kanno 2007) |
+| ✅ DUP-02 resolved | LS-06 retired; canonical = LS-01 (Vandergrift 2007) |
+| ✅ DUP-03 resolved (v7) | VS-22 retired; canonical = SC-05 (Cook 2008). SC-05 now serves §14 and §15 citation needs. |
+| ✅ DUP-06 through DUP-11 executed (v7) | All in-text references updated in sections + blueprint |
+| ✅ VD-17 retired (v7) | Cai (2015) verification failed; §CA.4 narrative updated |
+| ✅ EA-22 formalized (v7) | Gap marker — elevated to Platform Research Agenda §PRA-3 |
 | Duplicates removed | 73 (from 808 pre-dedup) |
 | Sources extracted from | 21 corpus sections + compass artifact (44 citations) + 7 agent bibliographies |
 
@@ -650,7 +654,7 @@ Nassaji, H. (2016). Anniversary article: Interactional feedback in second langua
 
 Shirai, Y., & Kurono, A. (1998). The acquisition of tense-aspect marking in Japanese as a second language. *Language Learning*, *48*(2), 245–279. https://doi.org/10.1111/0023-8333.00043 > Section: §5.6.6. Progressive ている acquired significantly earlier and more reliably than resultant-state ている across L2 Japanese learners (mixed L1). Validates I-JAS Indonesian data (§5.5.29). Establishes ている resultant-state errors as dual-origin: developmental (universal L2 Japanese) + interlingual transfer (Indonesian *sudah* → perfect semantics, not resultant state). [EA-21]
 
-[GAP] > Section: §5.6.6. ⚑ FLAG §5.6-B (from CITATION-AUDIT-AGENT2-v10.md): EA-22 is currently a literature gap — no confirmed citation. Description: Indonesian L1 Japanese learner error study (English-language empirical study specifically analyzing error patterns of Indonesian L1 learners of Japanese). Agent 37B resolving. Recommended search pathway: (1) JALT Journal; (2) *Nihongo Kyōiku* — search インドネシア語母語話者; (3) I-JAS usage papers list (ninjal.ac.jp/database/i-jas/); (4) *The Language Teacher* (JALT). Omit from final bibliography pending verification. [EA-22]
+**[GAP MARKER — FORMALIZED 17 April 2026]** > Section: §5.6.6. Crispy decision: EA-22 formalized as a permanent literature gap marker. Description: English-language empirical study specifically analyzing Indonesian L1 transfer errors in Japanese (target paper type). Search pathways exhausted: JALT Journal, *Nihongo Kyōiku*, I-JAS usage papers (ninjal.ac.jp/database/i-jas/), *The Language Teacher* — no English-language empirical study matching this description located. This gap is now a **Platform Research Agenda item** (see PLATFORM-RESEARCH-AGENDA.md §PRA-3): Nugget Nihongo can contribute primary data on Indonesian L1 transfer in Japanese by instrumenting error collection in the app (consent-based, anonymized). §5.5.29 contains the available Indonesian L1 evidence synthesized from non-peer-reviewed grey literature. §5.6.6 narrative updated to acknowledge this as a research opportunity, not a citable finding. [EA-22]
 
 ### EE
 
@@ -763,6 +767,8 @@ Ellis, R. (2006). Current issues in the teaching of grammar: An SLA perspective.
 Long, M. H. (1991). Focus on form: A design feature in language teaching methodology. In K. de Bot, R. Ginsberg, & C. Kramsch (Eds.), *Foreign language research in cross-cultural perspective* (pp. 39–52). John Benjamins. [GA-17]
 
 DeKeyser, R. M. (1998). Beyond focus on form: Cognitive perspectives on learning and practicing second language grammar. In C. Doughty & J. Williams (Eds.), Focus on form in classroom second language acquisition (pp. 42–63). Cambridge University Press. ISBN: 978-0-521-62776-8. [GA-18]
+
+~~Kanno, K. (2007). Factors affecting the processing of Japanese relative clauses by L2 learners.~~ **[RETIRED — DUP-01 — canonical ID: GA-19]** *(Crispy decision 17 April 2026: GA-19 is canonical (full entry with DOI below); GA-09 retired. All §2 in-text references updated.)* [~~GA-09~~]
 
 Kanno, K. (2007). Factors affecting the processing of Japanese relative clauses by L2 learners. *Studies in Second Language Acquisition, 29*(2), 197-218. https://doi.org/10.1017/S0272263107070106 [GA-19]
 
@@ -1046,7 +1052,7 @@ Goh, C. C. M. (2000). A cognitive perspective on language learners' listening co
 
 Newton, J. (2009). Teaching ESL/EFL listening and speaking. In E. Hinkel (Ed.), *Handbook of research in second language teaching and learning* (Vol. 2, pp. 170-185). Routledge. [LS-05]
 
-Vandergrift, L. (2007). Recent developments in second and foreign language listening comprehension research. *Language Teaching*, 40(3), 191–210. https://doi.org/10.1017/S0261444807004338 [LS-06] *(⚠️ ID CONFLICT: same paper as LS-01 — Crispy decision needed: assign one canonical ID and update all section cross-references)*
+~~Vandergrift, L. (2007). Recent developments in second and foreign language listening comprehension research. *Language Teaching*, 40(3), 191–210. https://doi.org/10.1017/S0261444807004338~~ **[RETIRED — DUP-02 — canonical ID: LS-01]** *(Crispy decision 17 April 2026: LS-01 is canonical; LS-06 retired. All §3 in-text references updated.)* [~~LS-06~~]
 
 Elkhafaifi, H. (2005). Listening comprehension and anxiety in the Arabic language classroom. *Modern Language Journal, 89*(2), 206-220. https://doi.org/10.1111/j.1540-4781.2005.00275.x [LS-07]
 
@@ -1314,7 +1320,7 @@ Bachman, L. F. (1990). *Fundamental considerations in language testing.* Oxford 
 
 Bachman, L. F., & Palmer, A. S. (1996). *Language testing in practice: Designing and developing useful language tests.* Oxford University Press. ISBN: 978-0-19-437148-2. [SC-04]
 
-Cook, H. M. (2008). *Socializing identities through speech style: Learners of Japanese as a foreign language.* Multilingual Matters. ISBN: 978-1-84769-026-1. *(Cross-reference: registered as VS-22 in §15 citation register. SC-05 is the §14 primary citation record. Agent 37/38 title-verify flag carried forward from VS-22 open flag.)* [SC-05]
+Cook, H. M. (2008). *Socializing identities through speech style: Learners of Japanese as a foreign language.* Multilingual Matters. ISBN: 978-1-84769-026-1. *(Crispy decision 17 April 2026: SC-05 is canonical for DUP-03; VS-22 retired. All §15 in-text references updated from VS-22 → SC-05. Originally flagged as Agent 37/38 title-verify — title confirmed via ISBN.)* [SC-05]
 
 Pizziconi, B. (2011). Honorifics: Cultural scripts, professional standards or local achievements in Japanese? *Pragmatics, 21*(3), 383–413. https://doi.org/10.1075/prag.21.3.04piz [SC-06]
 
@@ -1484,7 +1490,7 @@ Kieffer, M. J., & Lesaux, N. K. (2008). The role of derivational morphology in t
 
 Mori, Y. (1998). Effects of first language and phonological accessibility on kanji recognition. *The Modern Language Journal, 82*(1), 69–82. https://doi.org/10.1111/j.1540-4781.1998.tb02594.x [VD-16]
 
-Cai, M. (2015). The effects of learning kanji compounds through morphological analysis on vocabulary size. *Journal of the Japanese Language Teaching Association, 162*, 32–47. [VD-17]
+~~Cai, M. (2015). The effects of learning kanji compounds through morphological analysis on vocabulary size. *Journal of the Japanese Language Teaching Association, 162*, 32–47.~~ **[RETIRED — VERIFICATION FAILED]** *(Crispy decision 17 April 2026: Web searches on CiNii, J-STAGE, and general databases did not return this citation. JJLTA vol 162 does not appear in searchable indices for this author-title combination. The §CA.4 claim about kanji morphological analysis is preserved through existing corpus citations: Mori (2003) kanji context inference, Mori & Nagy (1999) L1 morphological knowledge transfer in kanji learning — both already canonical in the corpus. §CA.4 narrative updated to remove Cai (2015) claim; cross-referenced alternatives inserted.)* [~~VD-17~~]
 
 Wolter, B. (2001). Comparing the L1 and L2 mental lexicon: A depth of individual word knowledge model. *Studies in Second Language Acquisition, 23*(1), 41–69. https://doi.org/10.1017/S0272263101001024 [VD-18]
 
@@ -1533,6 +1539,8 @@ Norton, B. (2013). *Identity and Language Learning: Extending the Conversation* 
 Anderson, B. (1983). *Imagined Communities: Reflections on the Origin and Spread of Nationalism*. Verso. [Revised edition 2006; DOI unverified] [VS-20]
 
 Bourdieu, P. (1986). The forms of capital. In J. G. Richardson (Ed.), *Handbook of Theory and Research for the Sociology of Education* (pp. 241–258). Greenwood. [DOI unverified — Grey literature / book chapter] [VS-21]
+
+~~Cook, H. M. (2008). *Socializing identities through speech style: Learners of Japanese as a foreign language.* Multilingual Matters.~~ **[RETIRED — DUP-03 — canonical ID: SC-05]** *(§15 alias for Cook 2008. Crispy decision 17 April 2026: Cook 2008 is fundamentally sociolinguistics (SC cluster); VS-22 retired. SC-05 now serves both §14 and §15 citation needs.)* [~~VS-22~~]
 
 Niyekawa, A. M. (1991). *Minimum Essential Politeness: A Guide to the Japanese Honorific Language*. Kodansha International. [DOI unverified] [VS-23]
 

@@ -1,6 +1,6 @@
 # NUGGET NIHONGO — RESEARCH LIBRARY INDEX
-**Version:** v17 | **Date:** 5 April 2026
-**Maintained by:** Agent 2 (Sonnet 4.6)
+**Version:** v17-PASS16 | **Date:** 17 April 2026
+**Maintained by:** Crispy (Claude Opus 4.7) — Pass 16
 
 ---
 
@@ -17,7 +17,7 @@ nugget-nihongo/
 │   ├── source-of-truth/
 │   │   └── compass_artifact.md            ← 44 foundational citations (Crispy's original)
 │   │
-│   ├── sections/                          ← 16 clean, merged section files
+│   ├── sections/                          ← 16 clean, merged section files + synthesis/
 │   │   ├── SECTION1-EVIDENCE-BASED.md
 │   │   ├── SECTION2-GRAMMAR.md
 │   │   ├── SECTION3-LISTENING.md
@@ -34,15 +34,19 @@ nugget-nihongo/
 │   │   ├── SECTION16-CALL.md
 │   │   ├── SECTION17-ADULT.md
 │   │   ├── SECTION-CA-CURRICULUM.md
-│   │   └── PLATFORM-RESEARCH-AGENDA.md    ← standalone (§8.11 extracted by Agent 36)
+│   │   ├── PLATFORM-RESEARCH-AGENDA.md    ← standalone (§8.11 extracted by Agent 36)
+│   │   └── synthesis/                      ← ✅ NEW Pass 16 (Crispy Opus 4.7)
+│   │       ├── LEVEL-LADDER-SPEC-v1.md      ← F1: 5-level exit criteria ladder
+│   │       └── SECTION18-SYNTHESIS-v1.md    ← F2: unified pedagogical model
 │   │
 │   └── bibliography/
-│       ├── MASTER-BIBLIOGRAPHY-FINAL.md   ← 754 entries, v6 (7 added Pass 9)
+│       ├── MASTER-BIBLIOGRAPHY-FINAL.md   ← 747 entries, v7 (Pass 16: DUP-01/02/03 retired + VD-17 retired + EA-22 formalized)
 │       └── DOI-VERIFICATION-TRACKER.md    ← 42 entries pending verification
 │
 ├── blueprint/
 │   ├── DESIGN-DECISION-MASTER-v1.md      ← 123 citation-backed design decisions
-│   └── CURRICULUM-BLUEPRINT-v1.md        ← ✅ Added in v16 (was missing from v15)
+│   ├── CURRICULUM-BLUEPRINT-v1.md        ← ✅ Added in v16 (was missing from v15)
+│   └── METHODOLOGY-PAGE-NARRATIVE-v1.md  ← ✅ NEW Pass 16: F3 methodology page skeleton (Indonesian-dominant)
 │
 └── archive/                               ← ✅ FULLY POPULATED — 5 subfolders
     ├── README-ARCHIVE.md                  ← This folder's registry (read first)
@@ -57,7 +61,7 @@ nugget-nihongo/
     ├── gap-analysis/                      ← v1,v2,v3,v4,v6–v10 (v5 missing)
     ├── citation-audit/                    ← v3–v7,v9–v11 (v8 missing)
     ├── dispatch-briefs/                   ← Agent 7/9/11 briefs + Agent 2 Pass 11/12 prompts
-    ├── pass-logs/                         ← PASS11-LOG.md, PASS12-LOG.md, PASS13-LOG.md, PASS14-LOG.md, PASS15-LOG.md
+    ├── pass-logs/                         ← PASS11–PASS16 logs (PASS16-LOG.md = Crispy comprehensive consolidation, 17 April 2026)
     └── absorbed-dispatch/                 ← Agent 30/31/36 deliverables
 ```
 

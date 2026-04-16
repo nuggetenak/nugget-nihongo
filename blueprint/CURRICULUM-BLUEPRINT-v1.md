@@ -249,7 +249,7 @@ Promotion is a suggestion, not a lock. The learner can always access content fro
 | YELLOW flags (cite with caution) | 10 | Verify before publication |
 | DOI unverified rate | ~5.6% (~42 of ~754) | Within tolerance (<10%) |
 | False citation risk | 1 (VD-17 Cai 2015) | Likely delete |
-| Cross-section duplicates confirmed | 3 (SC-05/VS-22, ER-05/BC-08, ER-10/OT-25-30) | Consolidate to canonical IDs |
+| Cross-section duplicates confirmed | 3 (SC-05/SC-05, ER-05/BC-08, ER-10/OT-25-30) | Consolidate to canonical IDs |
 
 ## 3.2 — RED Flag Resolutions (My Decisions)
 
@@ -257,7 +257,7 @@ Promotion is a suggestion, not a lock. The learner can always access content fro
 |---|---|---|
 | VD-17 | Cai (2015) — no title, no DOI, may not exist | **DELETE.** Remove from §CA.10. Check logical continuity — if load-bearing, replace with a verified citation. |
 | EA-22 | Empty slot for Indonesian L1 Japanese learner error study | **DOCUMENT AS GAP.** Acknowledge in §5.6 that Indonesian-specific error analysis literature is thin. This is honest and a strength, not a weakness. |
-| SC-05/VS-22 | Cook (2008) duplicate across §14 and §15 | **KEEP SC-05 as canonical.** Add cross-reference note to VS-22. Reduce citation count by 1. |
+| SC-05/SC-05 | Cook (2008) duplicate across §14 and §15 | **KEEP SC-05 as canonical.** Add cross-reference note to VS-22. Reduce citation count by 1. |
 | ER-05/BC-08 | Hu & Nation (2000) duplicate across §4 and §1.12 | **KEEP BC-08 as canonical** (belongs in SRS boundary conditions). Cross-ref from §4. |
 | ER-10/OT-25-30 | Webb (2007) duplicate across §4 and §12.5 | **KEEP OT-25 as canonical.** Cross-ref from §4. |
 | AL-07/ID-xx | Bandura (1997) duplicate across §17 and §13 | **KEEP §13 ID cluster entry as canonical.** All Bandura (1997) references in §17 point to the §13 entry. |
@@ -273,7 +273,7 @@ Promotion is a suggestion, not a lock. The learner can always access content fro
 | CV-05 (Qi & Mitchell 2012) | Keep conditionally. If CV-05 falls, the SRE cultural validity section loses its empirical anchor but Study 3 (malu) still stands independently. |
 | PR-03 (Tamaoka 1991) | Pre-DOI Japanese publication. Cite with note. |
 | PR-02 (Wydell et al. 1993) | Keep; check for conflict with KS-09/OD-07. |
-| GA-08 (Mori 2002), GA-09 (Kanno 2007), LS-19 (Abdous et al. 2009) | Verify DOIs via web search in a future session. Not blocking. |
+| GA-08 (Mori 2002), GA-19 (Kanno 2007), LS-19 (Abdous et al. 2009) | Verify DOIs via web search in a future session. Not blocking. |
 | OD-03 (Seymour et al. 2003) | Two conflicting DOIs — pick the correct one. Editorial task. |
 
 ## 3.4 — Compass Artifact Integration

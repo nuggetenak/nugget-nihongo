@@ -16,7 +16,7 @@
 
 - **§5.5.28 backfill:** §5.5.28 in SECTION5-CONTRASTIVE-v4-ADDENDUM.md references PT without GA-XX anchors. Agent 31 should add `(GA-01)` after Pienemann (1998), `(GA-06)` after Kawaguchi (2005), `(GA-03)` after Meisel, Clahsen & Pienemann (1981), `(GA-07)` after Itomitsu (2009), and `(GA-12)` after Zhang (2010) in that section. These five entries are the primary cross-ref targets.
 - **§CA.3 cross-reference:** §2.3 cross-references §CA.3 (proficiency frameworks and CEFR scaffolding). No edits to §CA.3 are required; the reference is directional from §2.3 to §CA.3.
-- **Verification flags:** GA-08 (Mori 2002 particle sequencing) and GA-09 (Kanno 2007 particle processing) should be passed to Agent 37 for DOI/title verification before final publication. See flag table at end of document.
+- **Verification flags:** GA-08 (Mori 2002 particle sequencing) and GA-19 (Kanno 2007 particle processing) should be passed to Agent 37 for DOI/title verification before final publication. See flag table at end of document.
 
 ---
 
@@ -125,7 +125,7 @@ Japanese verbal morphology acquisition follows a sequence largely predictable fr
   - **Core contribution (as cited):** Mori's analysis of learner talk-in-interaction provides naturalistic production data showing the order in which particles emerge in learner output during communicative tasks — は/が before を, locative に before instrumental で. This production ordering corroborates PT stage predictions from a discourse-analytic rather than experimental methodology.
   - **Relevance to Nugget Nihongo:** Particle sequencing in the deck's N5–N4 grammar cards.
 
-- **[GA-09]** **Kanno, K. (2007).** Factors affecting the processing of Japanese relative clauses by L2 learners. *Studies in Second Language Acquisition, 29*(2), 197–218. https://doi.org/10.1017/S0272263107070106
+- **[GA-19]** **Kanno, K. (2007).** Factors affecting the processing of Japanese relative clauses by L2 learners. *Studies in Second Language Acquisition, 29*(2), 197–218. https://doi.org/10.1017/S0272263107070106
   - **⚠ VERIFICATION FLAG (Agent 37):** The brief specifies "Kanno 2007" for particle acquisition sequence. The Kanno (2007) paper identified here is a well-documented SSLA paper on relative clause processing, not particle sequencing. If the intended Kanno (2007) is a different paper addressing particles, Agent 37 should locate and substitute. The relative clause paper is cited here under the assumption that the brief grouped particle and relative clause sequencing under a single author-year entry.
   - **Core contribution:** Kanno's relative clause processing study demonstrates that object relative clauses (ORC: 猫が追いかけた犬 — "the dog that the cat chased") are significantly harder to process than subject relative clauses (SRC: 猫を追いかけた犬 — "the dog that chased the cat") for L2 Japanese learners, even at advanced proficiency levels. This asymmetry holds cross-linguistically and is consistent with PT Stage 5 placement of relative clauses.
   - **Relevance to Nugget Nihongo:** Relative clauses are Stage 5 (N3 deck); subject relative clauses should precede object relative clauses in card introduction order. ORC constructions should be marked as advanced-within-stage.
@@ -236,7 +236,7 @@ The Teachability Hypothesis translates into four operational principles for Nugg
 | GA-06 | Kawaguchi (2005) chapter in Pienemann Ed. | §2.2 | ✅ |
 | GA-07 | Itomitsu (2009) Griffith WP 2(2) | §2.2 | ✅ (working paper — secondary) |
 | GA-08 | Mori (2002) Applied Linguistics 23(3) | §2.2 | ⚠ VERIFY — may be wrong paper |
-| GA-09 | Kanno (2007) SSLA 29(2) — relative clauses | §2.2 | ⚠ VERIFY — may be wrong paper |
+| GA-19 | Kanno (2007) SSLA 29(2) — relative clauses | §2.2 | ⚠ VERIFY — may be wrong paper |
 | GA-10 | Shirai & Andersen (1995) Language 71(4) | §2.2 | ✅ |
 | GA-11 | Sugaya & Shirai (2007) SSLA 29(1) | §2.2 | ✅ |
 | GA-12 | Zhang (2010) SLR 26(3) | §2.2 | ✅ |

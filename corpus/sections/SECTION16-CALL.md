@@ -160,7 +160,7 @@ The comparative evidence on dedicated SRS tools (Anki, Memrise) versus gamified 
 
 > **Cross-reference note (applies throughout §16.4–§16.6):**  
 > Spacing and testing-effect evidence → §1 SR/TE cluster (TE-01, TE-02) — do NOT re-cite here.  
-> Output practice and noticing evidence → §12 OT cluster (OT-01–OT-32) — do NOT re-cite here.  
+> Output practice and noticing evidence → §12 OT cluster (KR-09, OT-02–OT-32) — do NOT re-cite here.  
 > Gamification and habit-loop evidence → §10 GI/HB cluster — do NOT re-cite here.  
 > Multimedia cognitive load / seductive details → §9 CL/CT cluster — do NOT re-cite here.
 
@@ -300,7 +300,7 @@ The convergence across systematic reviews, meta-analyses, and MALL-specific desi
 
 | Design Variable | Empirically Supported Direction | Key Evidence Source(s) | Cross-References | Recommended Implementation in Nugget Nihongo |
 |---|---|---|---|---|
-| **Output vs. input-only** | Output demand > passive input exposure | CM-21 (Golonka et al. 2014) | → §12 OT-01 (Swain 1985 Output Hypothesis); OT-06 (Schmidt 1990 Noticing) | Every card requires active recall attempt before answer reveal. No passive "show and tell" card mode. |
+| **Output vs. input-only** | Output demand > passive input exposure | CM-21 (Golonka et al. 2014) | → §12 KR-09 (Swain 1985 Output Hypothesis); OT-06 (Schmidt 1990 Noticing) | Every card requires active recall attempt before answer reveal. No passive "show and tell" card mode. |
 | **Spaced vs. massed practice** | Distributed spacing > massed sessions | CM-15 (Settles & Meeder 2016) | → §1 TE-01 (Cepeda et al. 2006); TE-02 (Roediger & Karpicke 2006) | Anki SM-2 algorithm. Daily review queue enforces spacing. No "cram mode" as primary learning path. |
 | **Explicit vs. implicit feedback** | Explicit corrective feedback > recasts | CM-22 (Li 2010); CM-21 (Golonka et al. 2014) | → §12 OT-06 (Schmidt Noticing); OT-12 (Long Focus on Form) | Immediate answer display post-recall. Card backs include explicit correct form + explanation field where relevant. |
 | **Self-pacing vs. fixed pace** | Self-paced adaptive > fixed-pace mandatory | CM-23 (Stockwell & Hubbard 2013); CM-24 (Beatty 2010) | → §8 MV-01/MV-02 (Deci & Ryan SDT — autonomy need) | Anki's learner-controlled queue. Daily new-card cap configurable by learner. No mandatory session length. |

@@ -1,6 +1,6 @@
 # NUGGET NIHONGO — PROJECT CONTEXT
 **Auto-loaded by Claude Code on every session**
-**Last updated:** 6 April 2026 | **By:** Agent 2 (Pass 15 DOI verification + housekeeping)
+**Last updated:** 17 April 2026 | **By:** Crispy (Claude Opus 4.7) — Pass 16 comprehensive consolidation
 
 ---
 
@@ -18,14 +18,14 @@ Target learner: Indonesian adult, SSW/Tokutei Ginou context, mobile-first.
 |---|---|
 | Curriculum & pedagogy | `blueprint/DESIGN-DECISION-MASTER-v1.md` (123 decisions) |
 | Curriculum blueprint | `blueprint/CURRICULUM-BLUEPRINT-v1.md` (authoritative — added v16) |
-| Bibliography | `corpus/bibliography/MASTER-BIBLIOGRAPHY-FINAL.md` (747 entries, v6) |
+| Bibliography | `corpus/bibliography/MASTER-BIBLIOGRAPHY-FINAL.md` (747 entries, v7) |
 | Section index | `INDEX.md` |
 | Compass artifact | `corpus/source-of-truth/compass_artifact.md` (44 foundational citations) |
 | Platform Research Agenda | `corpus/sections/PLATFORM-RESEARCH-AGENDA.md` |
 | Superseded files registry | `archive/README-ARCHIVE.md` (full registry — 5 subfolders, 38+ files) |
-| Pass execution logs | `archive/pass-logs/` (PASS11-LOG.md, PASS12-LOG.md) |
+| Pass execution logs | `archive/pass-logs/` (PASS11–PASS16 logs) — latest: **PASS16-LOG.md** (Crispy comprehensive consolidation) |
 | Audit index (Passes 1–10) | `archive/AUDIT-INDEX-v17-PASSES1-10-FINAL.md` (moved from root — 136 findings) |
-| ⭐ F1/F2/F3 synthesis inputs | `archive/HANDOFF-AGENT2-v14.md` (Crispy: read before synthesis sessions) |
+| ⭐ F1/F2/F3 synthesis inputs | `archive/HANDOFF-AGENT2-v14.md` (Crispy: read before synthesis sessions) — synthesis F1/F2/F3 COMPLETE Pass 16 |
 
 ---
 
@@ -56,29 +56,28 @@ All 16 merged, clean section files are in `corpus/sections/`:
 
 ---
 
-## ⚠️ DUPLICATE FLAG POLICY (v17)
+## ✅ DUPLICATE RESOLUTION STATUS (v17-PASS16)
 
-**Agent 2 does NOT touch the bibliography or section files for duplicate entries.**
-All confirmed duplicates are flagged-only and left for Crispy to decide.
+**Pass 16 (17 April 2026, Crispy): All 9 confirmed DUP pairs executed.** Mechanical ID replacements applied across section files and blueprint documents. Bibliography updated to v7 with retirement markers.
 
-**11 confirmed pairs (DUP-01 through DUP-11). DUP-04/DUP-05 remain candidates pending Agent 38.**
+**Final canonical assignments:**
 
 | DUP ID | Pair | Paper | Status | Action |
 |---|---|---|---|---|
-| DUP-01 | GA-09 = GA-19 | Kanno (2007) SSLA 29(2) | 🔴 PENDING CRISPY DECISION | Retire one ID; update §2 in-text refs |
-| DUP-02 | LS-01 = LS-06 | Vandergrift (2007) Language Teaching 40(3) | 🔴 PENDING CRISPY DECISION | Retire one ID; update §3 in-text refs |
-| DUP-03 | SC-05 = VS-22 | Cook H.M. (2008) *Socializing identities through speech style.* Multilingual Matters. | 🔴 PENDING CRISPY / Agent 38A | Retire one ID; update §14/§15 refs |
+| DUP-01 | GA-09 = GA-19 | Kanno (2007) SSLA 29(2) | ✅ RESOLVED (Pass 16) | Canonical = GA-19; GA-09 retired; 4 §2 refs updated |
+| DUP-02 | LS-01 = LS-06 | Vandergrift (2007) Language Teaching 40(3) | ✅ RESOLVED (Pass 16) | Canonical = LS-01; LS-06 retired; §3 refs updated |
+| DUP-03 | SC-05 = VS-22 | Cook H.M. (2008) *Socializing identities through speech style.* Multilingual Matters. | ✅ RESOLVED (Pass 16) | Canonical = SC-05; VS-22 retired; §14/§15 refs updated |
 | DUP-04 | ER-05 vs BC-08 | Hu & Nation (2000) | **Candidate** — Agent 38 pending | Hold pending Agent 38 verdict |
 | DUP-05 | ER-10 vs OT-25–30 | Webb (2007) | **Candidate** — Agent 38 pending | Hold pending Agent 38 verdict |
-| DUP-06 | CP-64 = EA-03 | Selinker (1972) *Interlanguage* | Confirmed | Retire CP-64; canonical = EA-03 |
-| DUP-07 | CP-09 = ER-20 | Chikamatsu (1996) SSLA 18(4) | Confirmed | Retire CP-09; canonical = ER-20 |
-| DUP-08 | SC-10 = SC-23 = CP-07 | Blum-Kulka, House & Kasper (1989) | **Confirmed triple** | Retire SC-10; delete SC-23; canonical = CP-07 |
-| DUP-09 | SC-09 = CP-57 | Ohta (2001) *SLA Processes in the Classroom* | Confirmed | Retire SC-09; canonical = CP-57 |
-| DUP-10 | SC-15 = SC-08 | Kasper & Rose (2002) *Pragmatic Development* | Confirmed | Retire SC-15; canonical = SC-08 |
-| DUP-11 | OT-01 = KR-09 | Swain (1985) *Communicative Competence* | Confirmed | Retire OT-01; canonical = KR-09 |
+| DUP-06 | CP-64 = EA-03 | Selinker (1972) *Interlanguage* | ✅ RESOLVED (Pass 16) | Bibliography retired; 0 section refs needed update |
+| DUP-07 | CP-09 = ER-20 | Chikamatsu (1996) SSLA 18(4) | ✅ RESOLVED (Pass 16) | Bibliography retired; 0 section refs needed update |
+| DUP-08 | SC-10 = SC-23 = CP-07 | Blum-Kulka, House & Kasper (1989) | ✅ RESOLVED (Pass 16) | Triple-ID collapsed to CP-07 |
+| DUP-09 | SC-09 = CP-57 | Ohta (2001) *SLA Processes in the Classroom* | ✅ RESOLVED (Pass 16) | Canonical = CP-57 |
+| DUP-10 | SC-15 = SC-08 | Kasper & Rose (2002) *Pragmatic Development* | ✅ RESOLVED (Pass 16) | Canonical = SC-08 |
+| DUP-11 | OT-01 = KR-09 | Swain (1985) *Communicative Competence* | ✅ RESOLVED (Pass 16) | Canonical = KR-09; 8 refs across sections updated |
 
-See README-CRISPY.md DUPLICATE FLAG TABLE for full options and downstream impact.
-After Crispy decides → Agent 2 Session C executes mechanical ID replacements.
+See PASS16-LOG.md for full resolution details including rationale and files modified.
+**DUP-04 and DUP-05 remain candidates pending Agent 38 verdict** (not escalated to confirmed status in Pass 16).
 
 ---
 
@@ -93,7 +92,7 @@ Push setelah task selesai. Tidak perlu konfirmasi untuk push.
 
 ---
 
-## Status Saat Ini (v17 — 5 April 2026)
+## Status Saat Ini (v17-PASS16 — 17 April 2026)
 
 | Item | Status |
 |---|---|
@@ -108,34 +107,25 @@ Push setelah task selesai. Tidak perlu konfirmasi untuk push.
 | Section 8 | Merged: v2 + EXPANDED-v3 FULL (§8.1–§8.11 + malu citations) — 1,595 lines |
 | Section 9 | Agent29 §9.10.7 already in v1 — confirmed clean |
 | DOI tracker | `corpus/bibliography/DOI-VERIFICATION-TRACKER.md` |
-| Open synthesis tasks | Level Ladder Spec (F1) + §18 Synthesis (F2) + Methodology Narrative (F3) — for Crispy |
+| ✅ Synthesis tasks complete | All three (F1/F2/F3) shipped Pass 16 — see rows above for paths |
 | Workstream D (QA) | Agents 37A–C, 38A–C — verdicts pending |
 
 ---
 
-## Open Items for Crispy (Non-delegable)
+## Open Items Remaining After Pass 16
+
+**Pass 16 cleared all 9 confirmed DUPs + VD-17 + EA-22.** The following remain:
 
 | Item | Urgency |
 |---|---|
-| 🔴 DUP-01: GA-09 = GA-19 (Kanno 2007) — decide which ID to keep | 🔴 HIGH |
-| 🔴 DUP-02: LS-01 = LS-06 (Vandergrift 2007) — decide which ID to keep | 🔴 HIGH |
-| 🔴 DUP-03: SC-05 = VS-22 (Cook 2008) — decide or await 38A | 🔴 HIGH |
-| 🔴 DUP-06: CP-64 = EA-03 (Selinker 1972) — confirmed; retire CP-64; canonical = EA-03 | 🔴 HIGH |
-| 🔴 DUP-07: CP-09 = ER-20 (Chikamatsu 1996) — confirmed; retire CP-09; canonical = ER-20 | 🔴 HIGH |
-| 🔴 DUP-08: SC-10 = SC-23 = CP-07 (Blum-Kulka 1989) — confirmed triple; retire SC-10, delete SC-23; canonical = CP-07 | 🔴 HIGH |
-| 🔴 DUP-09: SC-09 = CP-57 (Ohta 2001) — confirmed; retire SC-09; canonical = CP-57 | 🔴 HIGH |
-| 🔴 DUP-10: SC-15 = SC-08 (Kasper & Rose 2002) — confirmed; retire SC-15; canonical = SC-08 | 🔴 HIGH |
-| 🔴 DUP-11: OT-01 = KR-09 (Swain 1985) — confirmed; retire OT-01; canonical = KR-09 | 🔴 HIGH |
 | 🟡 DUP-04: ER-05 vs BC-08 (Hu & Nation 2000) — candidate; pending Agent 38 | 🟡 MEDIUM |
 | 🟡 DUP-05: ER-10 vs OT-25–30 (Webb 2007) — candidate; pending Agent 38 | 🟡 MEDIUM |
-| 🔴 VD-17 (Cai 2015) — delete if not on CiNii/J-STAGE | 🔴 HIGH |
-| 🔴 EA-22 — formalize as gap marker if no source found | 🔴 HIGH |
 | 🟡 CC-02 ID discrepancy (Markus & Kitayama vs Brown & Levinson) | 🟡 MEDIUM |
 | 🟡 GA-13 conflict (Di Biase & Kawaguchi vs Pienemann 1984) | 🟡 MEDIUM |
 | 🟡 Swain (1985) relocation §1.6 → §12 | 🟡 MEDIUM |
-| 🟡 Level Ladder Specification (F1) | 🟡 MEDIUM |
-| 🟡 §18 Synthesis Section (F2) | 🟡 MEDIUM |
-| 🟡 Methodology page narrative skeleton (F3) | 🟡 MEDIUM |
+| ✅ Level Ladder Specification (F1) | **DONE Pass 16** — `corpus/sections/synthesis/LEVEL-LADDER-SPEC-v1.md` |
+| ✅ §18 Synthesis Section (F2) | **DONE Pass 16** — `corpus/sections/synthesis/SECTION18-SYNTHESIS-v1.md` |
+| ✅ Methodology page narrative skeleton (F3) | **DONE Pass 16** — `blueprint/METHODOLOGY-PAGE-NARRATIVE-v1.md` |
 | 🟡 Fill remaining 7 stubs (AL×2, CM×2, ER×2, SC×1) — via Agent 2 Session C | 🟡 MEDIUM |
 
 ---
@@ -152,4 +142,4 @@ Push setelah task selesai. Tidak perlu konfirmasi untuk push.
 
 ---
 
-*CLAUDE.md updated by Agent 2 — 6 April 2026 — v17-PASS15 DOI verification*
+*CLAUDE.md updated by Crispy (Claude Opus 4.7) — 17 April 2026 — v17-PASS16 comprehensive consolidation*
