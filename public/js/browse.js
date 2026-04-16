@@ -206,7 +206,7 @@ function render() {
   if (!main) return;
   main.innerHTML = '';
 
-  const data = window.grammarData || [];
+  const data = (window.grammarData || []).filter(Boolean);
 
   let filtered = data.filter(d => {
     if (bookmarkMode) return window.bookmarks && window.bookmarks.has(d.id);
@@ -236,13 +236,13 @@ function render() {
     if (sortBy === 'level') {
       const dir = sortOrder === 'desc' ? -1 : 1;
       filtered.sort((a,b) =>
-        dir * (levelOrder.indexOf(a.level) - levelOrder.indexOf(b.level))
+        dir * (levelOrder.indexOf(a && a.level) - levelOrder.indexOf(b && b.level))
         || (a.week||0) - (b.week||0)
         || (a.day||0) - (b.day||0));
     } else if (sortBy === 'cat') {
       filtered.sort((a,b) =>
         a.cat.localeCompare(b.cat)
-        || levelOrder.indexOf(a.level) - levelOrder.indexOf(b.level)
+        || levelOrder.indexOf(a && a.level) - levelOrder.indexOf(b && b.level)
         || (a.week||0) - (b.week||0)
         || (a.day||0) - (b.day||0));
     }
@@ -347,7 +347,7 @@ function renderSection(container, lv, items, title, count, isSubDay = false) {
       onclick="toggleBookmark('${d.id}',this,event)">${isBookmarked ? '⭐' : '☆'}</button>`;
 
     const el = document.createElement('div');
-    el.className = `flip-wrap ${d.level}${d.cat === 'dummy' ? ' dummy' : ''}`;
+    el.className = `flip-wrap ${d.level || 'n5'}${d.cat === 'dummy' ? ' dummy' : ''}`;
     el.onclick = function() { this.classList.toggle('flipped'); };
     el.innerHTML = `
       ${bmBtn}
@@ -362,7 +362,7 @@ function renderSection(container, lv, items, title, count, isSubDay = false) {
           <div class="card-desc">${d.desc}</div>
           <div class="front-bottom">
             <div class="card-tags">
-              <span class="tag ${d.level}">${d.level.toUpperCase()}</span>
+              <span class="tag ${d.level || 'n5'}">${(d.level || 'n5').toUpperCase()}</span>
               ${dayBadge}
               <span class="tag">${catDisplay}</span>
             </div>
@@ -385,7 +385,7 @@ function renderSection(container, lv, items, title, count, isSubDay = false) {
 
 // ── Progress panel — SRS-powered ──
 function updateProgressPanel() {
-  const data     = window.grammarData || [];
+  const data     = (window.grammarData || []).filter(Boolean);
   const srs      = window.srsData     || {};
   const panel    = document.getElementById('progressPanel');
   if (!panel) return;

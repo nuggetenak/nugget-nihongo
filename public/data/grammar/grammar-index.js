@@ -16,7 +16,7 @@
     ...(window.grammarN3 || []),
     ...(window.grammarN2 || []),
     ...(window.grammarN1 || []),
-  ];
+  ].filter(Boolean);  // strip any null/undefined entries from data files
 
   // ── Backwards compat alias ───────────────────────────
   // browse.js, quiz.js, detail.js still reference window.grammarData
@@ -57,7 +57,7 @@
   };
 
   window.queryGrammar = function (filter) {
-    var results = window.grammarDB;
+    var results = window.grammarDB.filter(Boolean);  // defensive null guard
     if (filter.level) results = results.filter(function(g) { return g.level === filter.level; });
     if (filter.cat)   results = results.filter(function(g) { return g.cat === filter.cat; });
     if (filter.register) results = results.filter(function(g) { return g.register === filter.register; });

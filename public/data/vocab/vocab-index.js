@@ -29,7 +29,7 @@ window.vocabDB = [
   ...(window.vocabN3 || []),  // N3 — ACTIVATED v14.27.7 (70 entries)
   // ...(window.vocabN2 || []),  // N2 — tunggu data (placeholder)
   // ...(window.vocabN1 || []),  // N1 — tunggu data (placeholder)
-];
+].filter(Boolean);  // strip any null/undefined entries
 
 // ── Helpers ───────────────────────────────────────────
 function groupBy(arr, key) {
@@ -107,6 +107,7 @@ window.queryVocab = function (filter = {}) {
            : filter.pos    ? (idx.byPos[filter.pos] || [])
            : window.vocabDB;
 
+  pool = pool.filter(Boolean);  // defensive null guard
   if (filter.pos      && filter.jlpt) pool = pool.filter(v => v.pos === filter.pos);
   if (filter.domain   && filter.jlpt) pool = pool.filter(v => v.domain?.includes(filter.domain));
   if (filter.register) pool = pool.filter(v => v.register === filter.register);
