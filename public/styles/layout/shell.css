@@ -1,0 +1,68 @@
+/* ══════════════════════════════════════════════════════════════════
+   shell.css — Responsive app shell (Phase 2a)
+   Three breakpoints: mobile <768 · tablet 768–959 · desktop ≥960
+   All rules are ADDITIVE — zero change to existing mobile layout.
+══════════════════════════════════════════════════════════════════ */
+
+/* ── Tablet (768–959px): wider filter bar, 2-col card grid ──── */
+@media (min-width: 768px) {
+  body { font-size: 15px; }
+
+  .filter-bar {
+    padding: 0.75rem 1.25rem 0.5rem;
+  }
+
+  .cards {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  }
+
+  /* Materi hub: 2-col doors */
+  .hub-doors {
+    flex-direction: row;
+    gap: 1.25rem;
+  }
+  .hub-door { flex: 1; }
+}
+
+/* ── Desktop (≥960px): 3-column shell ───────────────────────── */
+@media (min-width: 960px) {
+  /* Header wider */
+  header.app-header {
+    padding: 0 2rem;
+  }
+
+  /* Nav becomes sidebar-ready (phase 6 full wiring) */
+  nav.tab-nav {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  /* Page content max-width */
+  .page {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-bottom: calc(60px + env(safe-area-inset-bottom, 0px) + 1rem);
+  }
+
+  /* Card grid: 3 columns */
+  .cards {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+
+  /* Hub: wider cards */
+  .hub-door {
+    min-height: 200px;
+  }
+
+  .hub-jlpt-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .buku-series-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .chapter-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+}

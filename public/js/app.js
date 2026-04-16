@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (window.buildGrammarIndex) window.buildGrammarIndex();
 
   if (window.browseInit) window.browseInit(); // browse.js
+  if (window.hubInit)   window.hubInit();    // materi-hub.js (Phase 2)
 
   // AI Tutor + Analytics init
   if (window.initAITutor)   window.initAITutor();
