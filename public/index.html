@@ -181,92 +181,140 @@
     <button class="cat-chip" id="sortDescBtn" onclick="setSortOrder('desc',this)">N5 → N1</button>
   </div>
 
-  <!-- Kategori panel -->
+  <!-- Kategori panel — Accordion 8 super-groups -->
   <div class="cat-panel" id="catPanel">
-      <button class="cat-chip active-all-cat" id="cat-all" onclick="setCat('all',this)">Semua</button>
-      <button class="cat-chip" onclick="setCat('adverbia',this)">Adverbia</button>
-      <button class="cat-chip" onclick="setCat('aspek',this)">Aspek</button>
-      <button class="cat-chip" onclick="setCat('aspek-kerja',this)">Aspek-kerja</button>
-      <button class="cat-chip" onclick="setCat('batas-waktu',this)">Batas-waktu</button>
-      <button class="cat-chip" onclick="setCat('bersamaan',this)">Bersamaan</button>
-      <button class="cat-chip" onclick="setCat('cara',this)">Cara</button>
-      <button class="cat-chip" onclick="setCat('definisi',this)">Definisi</button>
-      <button class="cat-chip" onclick="setCat('demonstrativa',this)">Demonstrativa</button>
-      <button class="cat-chip" onclick="setCat('derajat',this)">Derajat</button>
-      <button class="cat-chip" onclick="setCat('dugaan',this)">Dugaan</button>
-      <button class="cat-chip" onclick="setCat('ekspektasi',this)">Ekspektasi</button>
-      <button class="cat-chip" onclick="setCat('ekspresi',this)">Ekspresi</button>
-      <button class="cat-chip" onclick="setCat('enumerasi',this)">Enumerasi</button>
-      <button class="cat-chip" onclick="setCat('formal',this)">Formal</button>
-      <button class="cat-chip" onclick="setCat('frekuensi',this)">Frekuensi</button>
-      <button class="cat-chip" onclick="setCat('hampir',this)">Hampir</button>
-      <button class="cat-chip" onclick="setCat('harapan',this)">Harapan</button>
-      <button class="cat-chip" onclick="setCat('inferensi',this)">Inferensi</button>
-      <button class="cat-chip" onclick="setCat('izin',this)">Izin</button>
-      <button class="cat-chip" onclick="setCat('kabar',this)">Kabar</button>
-      <button class="cat-chip" onclick="setCat('kasual',this)">Kasual</button>
-      <button class="cat-chip" onclick="setCat('kata-benda-kualitas',this)">Kata-benda-kualitas</button>
-      <button class="cat-chip" onclick="setCat('kausatif',this)">Kausatif</button>
-      <button class="cat-chip" onclick="setCat('kausatif-pasif',this)">Kausatif-pasif</button>
-      <button class="cat-chip" onclick="setCat('keadaan',this)">Keadaan</button>
-      <button class="cat-chip" onclick="setCat('keadaan-hasil',this)">Keadaan-hasil</button>
-      <button class="cat-chip" onclick="setCat('kebiasaan',this)">Kebiasaan</button>
-      <button class="cat-chip" onclick="setCat('keharusan',this)">Keharusan</button>
-      <button class="cat-chip" onclick="setCat('kehendak',this)">Kehendak</button>
-      <button class="cat-chip" onclick="setCat('keinginan',this)">Keinginan</button>
-      <button class="cat-chip" onclick="setCat('kemudahan',this)">Kemudahan</button>
-      <button class="cat-chip" onclick="setCat('kemungkinan',this)">Kemungkinan</button>
-      <button class="cat-chip" onclick="setCat('kenangan',this)">Kenangan</button>
-      <button class="cat-chip" onclick="setCat('keputusan',this)">Keputusan</button>
-      <button class="cat-chip" onclick="setCat('kesempatan',this)">Kesempatan</button>
-      <button class="cat-chip" onclick="setCat('kewajiban',this)">Kewajiban</button>
-      <button class="cat-chip" onclick="setCat('kondisional',this)">Kondisional</button>
-      <button class="cat-chip" onclick="setCat('konfirmasi',this)">Konfirmasi</button>
-      <button class="cat-chip" onclick="setCat('konjungsi',this)">Konjungsi</button>
-      <button class="cat-chip" onclick="setCat('konsesi',this)">Konsesi</button>
-      <button class="cat-chip" onclick="setCat('kontras',this)">Kontras</button>
-      <button class="cat-chip" onclick="setCat('kutipan',this)">Kutipan</button>
-      <button class="cat-chip" onclick="setCat('larangan',this)">Larangan</button>
-      <button class="cat-chip" onclick="setCat('logika',this)">Logika</button>
-      <button class="cat-chip" onclick="setCat('materi',this)">Materi</button>
-      <button class="cat-chip" onclick="setCat('memberi-menerima',this)">Memberi-menerima</button>
-      <button class="cat-chip" onclick="setCat('niat',this)">Niat</button>
-      <button class="cat-chip" onclick="setCat('nominalisasi',this)">Nominalisasi</button>
-      <button class="cat-chip" onclick="setCat('partikel',this)">Partikel</button>
-      <button class="cat-chip" onclick="setCat('partikel-akhir',this)">Partikel-akhir</button>
-      <button class="cat-chip" onclick="setCat('pasif',this)">Pasif</button>
-      <button class="cat-chip" onclick="setCat('pembatasan',this)">Pembatasan</button>
-      <button class="cat-chip" onclick="setCat('penekanan',this)">Penekanan</button>
-      <button class="cat-chip" onclick="setCat('penemuan',this)">Penemuan</button>
-      <button class="cat-chip" onclick="setCat('pengalaman',this)">Pengalaman</button>
-      <button class="cat-chip" onclick="setCat('penggantian',this)">Penggantian</button>
-      <button class="cat-chip" onclick="setCat('pengulangan',this)">Pengulangan</button>
-      <button class="cat-chip" onclick="setCat('penjelasan',this)">Penjelasan</button>
-      <button class="cat-chip" onclick="setCat('penyangkalan',this)">Penyangkalan</button>
-      <button class="cat-chip" onclick="setCat('penyesalan',this)">Penyesalan</button>
-      <button class="cat-chip" onclick="setCat('peran',this)">Peran</button>
-      <button class="cat-chip" onclick="setCat('perbandingan',this)">Perbandingan</button>
-      <button class="cat-chip" onclick="setCat('perintah',this)">Perintah</button>
-      <button class="cat-chip" onclick="setCat('peristiwa',this)">Peristiwa</button>
-      <button class="cat-chip" onclick="setCat('permintaan',this)">Permintaan</button>
-      <button class="cat-chip" onclick="setCat('permintaan-sopan',this)">Permintaan-sopan</button>
-      <button class="cat-chip" onclick="setCat('persepsi',this)">Persepsi</button>
-      <button class="cat-chip" onclick="setCat('persiapan',this)">Persiapan</button>
-      <button class="cat-chip" onclick="setCat('perspektif',this)">Perspektif</button>
-      <button class="cat-chip" onclick="setCat('perubahan',this)">Perubahan</button>
-      <button class="cat-chip" onclick="setCat('perumpamaan',this)">Perumpamaan</button>
-      <button class="cat-chip" onclick="setCat('potensi',this)">Potensi</button>
-      <button class="cat-chip" onclick="setCat('referensi',this)">Referensi</button>
-      <button class="cat-chip" onclick="setCat('rentang',this)">Rentang</button>
-      <button class="cat-chip" onclick="setCat('saran',this)">Saran</button>
-      <button class="cat-chip" onclick="setCat('sebab',this)">Sebab</button>
-      <button class="cat-chip" onclick="setCat('sebab-akibat',this)">Sebab-akibat</button>
-      <button class="cat-chip" onclick="setCat('te-bentuk',this)">Te-bentuk</button>
-      <button class="cat-chip" onclick="setCat('transitif-intransitif',this)">Transitif-intransitif</button>
-      <button class="cat-chip" onclick="setCat('tujuan',this)">Tujuan</button>
-      <button class="cat-chip" onclick="setCat('usaha',this)">Usaha</button>
-      <button class="cat-chip" onclick="setCat('waktu',this)">Waktu</button>
+    <button class="cat-chip active-all-cat" id="cat-all" onclick="setCat('all',this)">✦ Semua</button>
+
+    <div class="cat-group">
+      <button class="cat-group-hdr" onclick="toggleCatGroup(this)">📝 Struktur Kalimat <span class="cg-arrow">▸</span></button>
+      <div class="cat-group-body">
+        <button class="cat-chip" onclick="setCat('partikel',this)">Partikel</button>
+        <button class="cat-chip" onclick="setCat('partikel-akhir',this)">Partikel-akhir</button>
+        <button class="cat-chip" onclick="setCat('konjungsi',this)">Konjungsi</button>
+        <button class="cat-chip" onclick="setCat('definisi',this)">Definisi</button>
+        <button class="cat-chip" onclick="setCat('demonstrativa',this)">Demonstrativa</button>
+        <button class="cat-chip" onclick="setCat('nominalisasi',this)">Nominalisasi</button>
+        <button class="cat-chip" onclick="setCat('enumerasi',this)">Enumerasi</button>
+        <button class="cat-chip" onclick="setCat('kata-benda-kualitas',this)">Kata-benda</button>
+        <button class="cat-chip" onclick="setCat('adverbia',this)">Adverbia</button>
+        <button class="cat-chip" onclick="setCat('te-bentuk',this)">Te-bentuk</button>
+      </div>
     </div>
+
+    <div class="cat-group">
+      <button class="cat-group-hdr" onclick="toggleCatGroup(this)">⏱ Waktu & Aspek <span class="cg-arrow">▸</span></button>
+      <div class="cat-group-body">
+        <button class="cat-chip" onclick="setCat('waktu',this)">Waktu</button>
+        <button class="cat-chip" onclick="setCat('aspek',this)">Aspek</button>
+        <button class="cat-chip" onclick="setCat('aspek-kerja',this)">Aspek-kerja</button>
+        <button class="cat-chip" onclick="setCat('frekuensi',this)">Frekuensi</button>
+        <button class="cat-chip" onclick="setCat('batas-waktu',this)">Batas-waktu</button>
+        <button class="cat-chip" onclick="setCat('bersamaan',this)">Bersamaan</button>
+        <button class="cat-chip" onclick="setCat('kenangan',this)">Kenangan</button>
+        <button class="cat-chip" onclick="setCat('pengalaman',this)">Pengalaman</button>
+        <button class="cat-chip" onclick="setCat('pengulangan',this)">Pengulangan</button>
+        <button class="cat-chip" onclick="setCat('peristiwa',this)">Peristiwa</button>
+        <button class="cat-chip" onclick="setCat('kebiasaan',this)">Kebiasaan</button>
+        <button class="cat-chip" onclick="setCat('rentang',this)">Rentang</button>
+      </div>
+    </div>
+
+    <div class="cat-group">
+      <button class="cat-group-hdr" onclick="toggleCatGroup(this)">🌡 Boleh / Harus / Bisa <span class="cg-arrow">▸</span></button>
+      <div class="cat-group-body">
+        <button class="cat-chip" onclick="setCat('kemungkinan',this)">Kemungkinan</button>
+        <button class="cat-chip" onclick="setCat('keharusan',this)">Keharusan</button>
+        <button class="cat-chip" onclick="setCat('kewajiban',this)">Kewajiban</button>
+        <button class="cat-chip" onclick="setCat('izin',this)">Izin</button>
+        <button class="cat-chip" onclick="setCat('larangan',this)">Larangan</button>
+        <button class="cat-chip" onclick="setCat('potensi',this)">Potensi</button>
+        <button class="cat-chip" onclick="setCat('kemudahan',this)">Kemudahan</button>
+        <button class="cat-chip" onclick="setCat('kausatif',this)">Kausatif</button>
+        <button class="cat-chip" onclick="setCat('kausatif-pasif',this)">Kausatif-pasif</button>
+        <button class="cat-chip" onclick="setCat('pasif',this)">Pasif</button>
+        <button class="cat-chip" onclick="setCat('transitif-intransitif',this)">Transitif-Intrans.</button>
+      </div>
+    </div>
+
+    <div class="cat-group">
+      <button class="cat-group-hdr" onclick="toggleCatGroup(this)">🎯 Tujuan & Sebab <span class="cg-arrow">▸</span></button>
+      <div class="cat-group-body">
+        <button class="cat-chip" onclick="setCat('tujuan',this)">Tujuan</button>
+        <button class="cat-chip" onclick="setCat('sebab',this)">Sebab</button>
+        <button class="cat-chip" onclick="setCat('sebab-akibat',this)">Sebab-akibat</button>
+        <button class="cat-chip" onclick="setCat('logika',this)">Logika</button>
+        <button class="cat-chip" onclick="setCat('kondisional',this)">Kondisional</button>
+        <button class="cat-chip" onclick="setCat('niat',this)">Niat</button>
+        <button class="cat-chip" onclick="setCat('usaha',this)">Usaha</button>
+        <button class="cat-chip" onclick="setCat('persiapan',this)">Persiapan</button>
+        <button class="cat-chip" onclick="setCat('keputusan',this)">Keputusan</button>
+      </div>
+    </div>
+
+    <div class="cat-group">
+      <button class="cat-group-hdr" onclick="toggleCatGroup(this)">💭 Ekspresi & Nuansa <span class="cg-arrow">▸</span></button>
+      <div class="cat-group-body">
+        <button class="cat-chip" onclick="setCat('ekspresi',this)">Ekspresi</button>
+        <button class="cat-chip" onclick="setCat('harapan',this)">Harapan</button>
+        <button class="cat-chip" onclick="setCat('keinginan',this)">Keinginan</button>
+        <button class="cat-chip" onclick="setCat('kehendak',this)">Kehendak</button>
+        <button class="cat-chip" onclick="setCat('dugaan',this)">Dugaan</button>
+        <button class="cat-chip" onclick="setCat('inferensi',this)">Inferensi</button>
+        <button class="cat-chip" onclick="setCat('ekspektasi',this)">Ekspektasi</button>
+        <button class="cat-chip" onclick="setCat('persepsi',this)">Persepsi</button>
+        <button class="cat-chip" onclick="setCat('perumpamaan',this)">Perumpamaan</button>
+        <button class="cat-chip" onclick="setCat('penyesalan',this)">Penyesalan</button>
+        <button class="cat-chip" onclick="setCat('penemuan',this)">Penemuan</button>
+        <button class="cat-chip" onclick="setCat('kabar',this)">Kabar</button>
+        <button class="cat-chip" onclick="setCat('hampir',this)">Hampir</button>
+      </div>
+    </div>
+
+    <div class="cat-group">
+      <button class="cat-group-hdr" onclick="toggleCatGroup(this)">🔄 Kontras & Perbandingan <span class="cg-arrow">▸</span></button>
+      <div class="cat-group-body">
+        <button class="cat-chip" onclick="setCat('kontras',this)">Kontras</button>
+        <button class="cat-chip" onclick="setCat('konsesi',this)">Konsesi</button>
+        <button class="cat-chip" onclick="setCat('perbandingan',this)">Perbandingan</button>
+        <button class="cat-chip" onclick="setCat('cara',this)">Cara</button>
+        <button class="cat-chip" onclick="setCat('derajat',this)">Derajat</button>
+        <button class="cat-chip" onclick="setCat('pembatasan',this)">Pembatasan</button>
+        <button class="cat-chip" onclick="setCat('penekanan',this)">Penekanan</button>
+        <button class="cat-chip" onclick="setCat('penggantian',this)">Penggantian</button>
+        <button class="cat-chip" onclick="setCat('penyangkalan',this)">Penyangkalan</button>
+        <button class="cat-chip" onclick="setCat('referensi',this)">Referensi</button>
+      </div>
+    </div>
+
+    <div class="cat-group">
+      <button class="cat-group-hdr" onclick="toggleCatGroup(this)">💬 Interaksi & Register <span class="cg-arrow">▸</span></button>
+      <div class="cat-group-body">
+        <button class="cat-chip" onclick="setCat('formal',this)">Formal</button>
+        <button class="cat-chip" onclick="setCat('kasual',this)">Kasual</button>
+        <button class="cat-chip" onclick="setCat('permintaan',this)">Permintaan</button>
+        <button class="cat-chip" onclick="setCat('permintaan-sopan',this)">Permintaan-sopan</button>
+        <button class="cat-chip" onclick="setCat('perintah',this)">Perintah</button>
+        <button class="cat-chip" onclick="setCat('saran',this)">Saran</button>
+        <button class="cat-chip" onclick="setCat('konfirmasi',this)">Konfirmasi</button>
+        <button class="cat-chip" onclick="setCat('kutipan',this)">Kutipan</button>
+        <button class="cat-chip" onclick="setCat('penjelasan',this)">Penjelasan</button>
+        <button class="cat-chip" onclick="setCat('kesempatan',this)">Kesempatan</button>
+      </div>
+    </div>
+
+    <div class="cat-group">
+      <button class="cat-group-hdr" onclick="toggleCatGroup(this)">🤝 Aksi & Peran <span class="cg-arrow">▸</span></button>
+      <div class="cat-group-body">
+        <button class="cat-chip" onclick="setCat('memberi-menerima',this)">Memberi-menerima</button>
+        <button class="cat-chip" onclick="setCat('keadaan',this)">Keadaan</button>
+        <button class="cat-chip" onclick="setCat('keadaan-hasil',this)">Keadaan-hasil</button>
+        <button class="cat-chip" onclick="setCat('perubahan',this)">Perubahan</button>
+        <button class="cat-chip" onclick="setCat('peran',this)">Peran</button>
+        <button class="cat-chip" onclick="setCat('perspektif',this)">Perspektif</button>
+        <button class="cat-chip" onclick="setCat('materi',this)">Materi</button>
+      </div>
+    </div>
+  </div>
 
     <!-- Search -->
     <div class="search-row">

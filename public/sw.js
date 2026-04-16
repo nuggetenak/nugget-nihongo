@@ -4,7 +4,7 @@
 //  network-first for API calls (Supabase / Cloudflare Workers).
 // ══════════════════════════════════════
 
-const CACHE = 'nihongo-v15.6.0';
+const CACHE = 'nihongo-v15.7.0';
 const ASSETS = [
   './',
   './index.html',
@@ -30,6 +30,7 @@ const ASSETS = [
   './js/gamification.js',
   './js/streak.js',
   './js/backup-restore.js',
+  './js/offline-ai-cache.js',
 
   // ── Supabase + AI layer ───────────────────────────────
   './js/supabase-client.js',
@@ -84,6 +85,9 @@ const ASSETS = [
   './data/books/book-irodori-a2-2.js',
   './data/books/book-minna-1.js',
   './data/books/book-minna-2.js',
+  './data/books/irodori/grammar-lens-ir-a1.js',
+  './data/books/irodori/grammar-lens-ir-a2-1.js',
+  './data/books/irodori/grammar-lens-ir-a2-2.js',
   './data/books/soumatome/grammar-lens-sm-n3.js',
   './data/books/soumatome/grammar-lens-sm-n4.js',
   './data/books/sources.js',

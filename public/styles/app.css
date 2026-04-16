@@ -3199,3 +3199,40 @@ body.light {
   background: var(--surface-2);
   border-top: 1px solid var(--border);
 }
+
+/* ── §22 Category Accordion ───────────────────────────────────── */
+.cat-group { margin-top: 4px; }
+
+.cat-group-hdr {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 10px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--text);
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.15s;
+  min-height: 44px;
+}
+.cat-group-hdr:active { background: var(--surface-3); }
+.cat-group-hdr.open { border-radius: 8px 8px 0 0; border-bottom-color: transparent; }
+.cg-arrow { font-size: 10px; color: var(--muted); transition: transform 0.2s; }
+.cat-group-hdr.open .cg-arrow { transform: rotate(90deg); }
+
+.cat-group-body {
+  display: none;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 8px 10px 10px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+}
+.cat-group-body.open { display: flex; }

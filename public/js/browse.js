@@ -477,3 +477,11 @@ window.setSort = setSort;
 window.setCat = setCat;
 window.filterSearch = filterSearch;
 
+
+// ── Category accordion toggle ─────────────────────────────────────
+window.toggleCatGroup = function (hdr) {
+  var body = hdr.nextElementSibling;
+  var isOpen = hdr.classList.contains('open');
+  hdr.classList.toggle('open', !isOpen);
+  body.classList.toggle('open', !isOpen);
+};
