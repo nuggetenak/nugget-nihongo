@@ -43,7 +43,7 @@ window.generateVocabQuiz = function (opts = {}) {
     case 'flashcard':             return sample.map(_makeFlashcard);
     case 'multichoice_meaning':   return sample.map(v => _makeMultichoiceMeaning(v, allPool));
     case 'multichoice_reading':   return sample.map(v => _makeMultichoiceReading(v, allPool));
-    case 'fill_word':             return sample.filter(v => v.examples.length > 0).map(_makeFillWord);
+    case 'fill_word':             return sample.filter(v => v.examples && v.examples.length > 0).map(_makeFillWord).filter(Boolean);
     case 'conjugation_vocab':     return sample.filter(v => v.conj_type).map(v => _makeConjugationVocab(v));
     default:                      return sample.map(_makeFlashcard);
   }
@@ -184,6 +184,7 @@ function _makeMultichoiceGrammar(c, allPool) {
 
 function _makeFillWord(v) {
   // Pakai contoh kalimat pertama, blank-kan kata targetnya
+  if (!v.examples || !v.examples[0]) return null;
   const ex = v.examples[0];
   const jp = ex.jp;
 
@@ -214,6 +215,7 @@ function _makeFillWord(v) {
 }
 
 function _makeFillGrammar(c) {
+  if (!c.examples || !c.examples[0]) return null;
   const ex = c.examples[0];
   // Cari pola grammar dalam kalimat (remove 〜 markers)
   const patternCore = (c.pattern || c.grammar || '').replace(/[〜～＋\s]/g, '');

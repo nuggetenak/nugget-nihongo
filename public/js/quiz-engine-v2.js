@@ -208,7 +208,7 @@ function generateRearrange(grammarCard) {
     parts[parts.length - 2] += parts[parts.length - 1];
     parts.pop();
   }
-  while (parts.length < 4 && parts[0].length > 3) {
+  while (parts.length < 4 && parts.length > 0 && parts[0].length > 3) {
     var first = parts[0];
     var mid = Math.floor(first.length / 2);
     parts.splice(0, 1, first.substring(0, mid), first.substring(mid));

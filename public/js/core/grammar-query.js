@@ -108,7 +108,7 @@ window.grammarForVocab = function (vocabId) {
 /** Vocab entries related to a grammar card (via related_grammar field) */
 window.vocabForGrammar = function (grammarId) {
   if (!window.vocabDB) return [];
-  return window.vocabDB.filter(v => (v.related_grammar || []).includes(grammarId));
+  return window.vocabDB.filter(v => v && (v.related_grammar || []).includes(grammarId));
 };
 
 /** All available levels with real content */

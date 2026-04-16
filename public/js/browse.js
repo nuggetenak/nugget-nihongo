@@ -215,10 +215,10 @@ function render() {
     const mc = activeCat === 'all' || d.cat === activeCat;
     const q  = searchText.toLowerCase();
     const ms = !q
-      || d.grammar.toLowerCase().includes(q)
-      || d.meaning.toLowerCase().includes(q)
-      || d.reading.toLowerCase().includes(q)
-      || d.desc.toLowerCase().includes(q)
+      || (d.grammar && d.grammar.toLowerCase().includes(q))
+      || (d.meaning && d.meaning.toLowerCase().includes(q))
+      || (d.reading && d.reading.toLowerCase().includes(q))
+      || (d.desc && d.desc.toLowerCase().includes(q))
       || (d.nuance && d.nuance.toLowerCase().includes(q));
     return ml && mw && mc && ms;
   });
@@ -305,7 +305,7 @@ function render() {
     cats.forEach(cat => {
       const items = filtered.filter(d => d.cat === cat);
       if (!items.length) return;
-      renderSection(main, items[0].level, items, catLabel[cat] || cat, items.length);
+      renderSection(main, items[0].level || 'n5', items, catLabel[cat] || cat, items.length);
     });
   } else {
     const orderedLevels = sortOrder === 'desc' ? [...levelOrder].reverse() : levelOrder;
