@@ -7,6 +7,27 @@
 
 ---
 
+
+## Session update — 2026-04-16 (Agent: Claude Sonnet 4.6)
+
+### Completed this session
+- **Phase 0 DONE**: B1 (quiz pills order), B7 (iOS safe-area), B6 (skeleton loading state). Tests 10700/0.
+- **Phase 2 DONE**: Materi Hub shipped.
+  - `public/styles/layout/shell.css` — responsive 3-breakpoint shell
+  - `public/js/pages/materi-hub.js` — two-door hub, JLPT/Buku doors, chapter grids, cross-lens breadcrumbs
+  - Irodori grammar lenses now loaded in index.html
+  - `hubInit()` wired into app.js after `browseInit()`
+  - Tests still 10700/0
+
+### What's next (recommended order)
+1. **Phase 2e** — Per-book progress bars are already rendered in the hub (via `getLensProgress()`). Looks good functionally. Next agent: verify on device, then proceed to Phase 3.
+2. **Phase 3** — Onboarding (3-screen force-through), Settings page, About page
+3. **Phase 5** — Sensei persona v2 (Worker system prompt replacement)
+
+### What was NOT open-to-decide
+All Phase 0 and Phase 2 decisions match the locked v2.1 plan. No new decisions needed.
+
+---
 ## READ THIS FIRST (in order)
 
 1. **This file** — know the state and the rules before touching anything

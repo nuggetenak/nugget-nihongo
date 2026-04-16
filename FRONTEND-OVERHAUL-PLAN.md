@@ -1001,7 +1001,7 @@ Add:
 
 - [x] Phase 0 cosmetic bugs fixed (B1–B7) — done 2026-04-16
 - [ ] Design System v2 tokens file in place
-- [ ] Responsive shell lives at all breakpoints
+- [x] Responsive shell lives at all breakpoints — done 2026-04-16
 - [ ] Onboarding flow ships
 - [ ] Settings + About + Attribution pages ship
 - [ ] Sensei persona v2 live on Worker
