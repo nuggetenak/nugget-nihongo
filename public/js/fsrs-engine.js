@@ -413,6 +413,7 @@ window.srsDueToday = function () {
   }
 
   return allCards.filter(function (d) {
+    if (!d || !d.id) return false; // guard against null/undefined entries
     var entry = window.srsData[d.id];
     if (!entry) return false; // only show cards user has seen
     var due = new Date(entry.card.due);
