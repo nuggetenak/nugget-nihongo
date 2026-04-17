@@ -259,6 +259,59 @@ bookLenses.forEach(({ obj, name }) => {
   assert(broken === 0, `${name}: ${broken} vocab_ids not found in vocabDB`);
 });
 
+// ── Sensei persona drift check (Phase 5 §5.6) ──
+// Worker SYSTEM_PROMPT and Edge Function MASTER_SYSTEM_PROMPT must stay
+// byte-identical. If they drift, Sensei's voice becomes inconsistent across
+// providers. Also checks the shared canonical .txt is in sync.
+console.log('\n── Sensei persona drift ──');
+(function checkPersonaDrift() {
+  const workerPath = path.join(ROOT, 'workers/ai-proxy.js');
+  const edgePath   = path.join(ROOT, 'supabase/functions/ai-router/index.ts');
+  const sharedPath = path.join(ROOT, 'shared/sensei-persona-v2.txt');
+
+  function extractBacktickString(src, marker) {
+    const idx = src.indexOf(marker);
+    if (idx === -1) return null;
+    const start = src.indexOf('`', idx);
+    if (start === -1) return null;
+    const end = src.indexOf('`', start + 1);
+    if (end === -1) return null;
+    return src.slice(start + 1, end);
+  }
+
+  let workerPrompt = null, edgePrompt = null, sharedPrompt = null;
+  try { workerPrompt = extractBacktickString(fs.readFileSync(workerPath, 'utf8'), 'const SYSTEM_PROMPT ='); } catch {}
+  try { edgePrompt   = extractBacktickString(fs.readFileSync(edgePath,   'utf8'), 'const MASTER_SYSTEM_PROMPT ='); } catch {}
+  try { sharedPrompt = fs.readFileSync(sharedPath, 'utf8'); } catch {}
+
+  assert(workerPrompt && workerPrompt.length > 500, 'workers/ai-proxy.js: SYSTEM_PROMPT not found or too short');
+  assert(edgePrompt && edgePrompt.length > 500, 'supabase/functions/ai-router/index.ts: MASTER_SYSTEM_PROMPT not found or too short');
+
+  if (workerPrompt && edgePrompt) {
+    if (workerPrompt !== edgePrompt) {
+      // Find first differing byte for helpful output
+      let firstDiff = -1;
+      for (let i = 0; i < Math.max(workerPrompt.length, edgePrompt.length); i++) {
+        if (workerPrompt[i] !== edgePrompt[i]) { firstDiff = i; break; }
+      }
+      console.error(`  FAIL: Sensei persona drift — Worker vs Edge Function differ (worker=${workerPrompt.length}b, edge=${edgePrompt.length}b, first diff at byte ${firstDiff})`);
+      if (firstDiff >= 0) {
+        const ctx = (s) => JSON.stringify(s.slice(Math.max(0, firstDiff - 20), firstDiff + 20));
+        console.error(`        worker: ${ctx(workerPrompt)}`);
+        console.error(`        edge:   ${ctx(edgePrompt)}`);
+      }
+    }
+    assert(workerPrompt === edgePrompt, 'Sensei persona: Worker SYSTEM_PROMPT must equal Edge Function MASTER_SYSTEM_PROMPT byte-for-byte (see FRONTEND-OVERHAUL-PLAN.md §5.3/§5.6)');
+  }
+
+  // Shared canonical file should match too (trailing newline tolerated — .txt files usually have one)
+  if (sharedPrompt && workerPrompt) {
+    const normalizedShared = sharedPrompt.replace(/\n$/, '');
+    const normalizedWorker = workerPrompt.replace(/\n$/, '');
+    assert(normalizedShared === normalizedWorker, 'shared/sensei-persona-v2.txt must match Worker SYSTEM_PROMPT (minus trailing newline)');
+  }
+})();
+
 // ── Summary ──
 console.log(`\n══════════════════════════════════`);
 console.log(`  PASS: ${pass}  |  FAIL: ${fail}  |  SKIP: ${skip}`);
