@@ -104,7 +104,7 @@
   function showPanel(id) {
     PANELS.forEach(function(p) {
       var el = document.getElementById(p);
-      if (el) el.style.display = (p === id) ? '' : 'none';
+      if (el) el.style.display = (p === id) ? 'block' : 'none';
     });
     // Show/hide the regular browse UI
     var inBrowse = (id === null);
@@ -230,7 +230,7 @@
 
     PANELS.forEach(function(p) {
       var el = document.getElementById(p);
-      if (el) el.style.display = (p === 'materiHubPanel') ? '' : 'none';
+      if (el) el.style.display = (p === 'materiHubPanel') ? 'block' : 'none';
     });
     hideBrowseChrome();
   }
@@ -272,7 +272,7 @@
 
     PANELS.forEach(function(p) {
       var el = document.getElementById(p);
-      if (el) el.style.display = (p === 'jlptDoorPanel') ? '' : 'none';
+      if (el) el.style.display = (p === 'jlptDoorPanel') ? 'block' : 'none';
     });
     hideBrowseChrome();
   };
@@ -313,7 +313,7 @@
 
     PANELS.forEach(function(p) {
       var el = document.getElementById(p);
-      if (el) el.style.display = (p === 'bukuDoorPanel') ? '' : 'none';
+      if (el) el.style.display = (p === 'bukuDoorPanel') ? 'block' : 'none';
     });
     hideBrowseChrome();
   };
@@ -401,7 +401,7 @@
 
     PANELS.forEach(function(p) {
       var el = document.getElementById(p);
-      if (el) el.style.display = (p === 'bukuChaptersPanel') ? '' : 'none';
+      if (el) el.style.display = (p === 'bukuChaptersPanel') ? 'block' : 'none';
     });
     hideBrowseChrome();
   };

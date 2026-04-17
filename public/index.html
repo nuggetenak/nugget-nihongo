@@ -65,7 +65,7 @@
   <div class="header-inner">
     <div class="header-top-row">
       <div>
-        <h1>Nugget <span lang="ja">日本語</span></h1>
+        <h1>Nugget Nihongo</h1>
         <p>Belajar JLPT N5–N1 · Grammar · Kosakata · Quiz</p>
       </div>
       <div style="display:flex;align-items:center;gap:0.5rem">
@@ -1187,7 +1187,13 @@
 
     <!-- Row 2: JLPT Readiness rings -->
     <div class="stat-section">
-      <div class="stat-section-title">Penguasaan JLPT</div>
+      <div class="stat-section-title">Penguasaan JLPT
+        <div class="jlpt-toggle" id="jlptToggle">
+          <button class="jlpt-toggle-btn active" onclick="setJlptView('full',this)">Full</button>
+          <button class="jlpt-toggle-btn" onclick="setJlptView('grammar',this)">Grammar</button>
+          <button class="jlpt-toggle-btn" onclick="setJlptView('vocab',this)">Vocab</button>
+        </div>
+      </div>
       <div class="stats-row stats-row--5" id="jlptRingsRow">
         <!-- rendered by analytics.js -->
       </div>

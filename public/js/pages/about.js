@@ -27,7 +27,7 @@
 
   function _setVersion() {
     var el = document.getElementById('abVersion');
-    if (el && window.APP_VERSION) el.textContent = 'v' + window.APP_VERSION;
+    if (el && window.APP_VERSION) el.textContent = window.APP_VERSION;
   }
 
 })();

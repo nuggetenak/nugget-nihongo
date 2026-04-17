@@ -195,7 +195,7 @@
 
     // Version
     var vEl = document.getElementById('spVersionPill');
-    if (vEl && window.APP_VERSION) vEl.textContent = 'v' + window.APP_VERSION;
+    if (vEl && window.APP_VERSION) vEl.textContent = window.APP_VERSION;
   }
 
   // ── Toast util (shared) ───────────────────────────

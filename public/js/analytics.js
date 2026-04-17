@@ -8,17 +8,17 @@
 
 // ── Colors ─────────────────────────────────────────────────────────
 const LEVEL_COLORS = {
-  n5: '#22c55e',
-  n4: '#3b82f6',
+  n5: '#4ADE80',
+  n4: '#FB923C',
   n3: '#f59e0b',
-  n2: '#8b5cf6',
+  n2: '#C084FC',
   n1: '#ef4444',
 };
 
 const SRS_COLORS = {
   new      : '#64748b',
-  learning : '#3b82f6',
-  review   : '#22c55e',
+  learning : '#FB923C',
+  review   : '#4ADE80',
   relearning: '#f59e0b',
 };
 
@@ -63,6 +63,15 @@ function _renderSummaryCards() {
 }
 
 // ── 2. JLPT Readiness rings ──────────────────────────────────────────
+let _jlptView = 'full'; // 'full' | 'grammar' | 'vocab'
+
+window.setJlptView = function(view, btn) {
+  _jlptView = view;
+  document.querySelectorAll('.jlpt-toggle-btn').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  _renderJLPTRings();
+};
+
 function _renderJLPTRings() {
   const container = document.getElementById('jlptRingsRow');
   if (!container) return;
@@ -70,33 +79,48 @@ function _renderJLPTRings() {
   const levels = ['n5', 'n4', 'n3', 'n2', 'n1'];
   const progress = window.progress || {};
 
-  // Count total and mastered per level from progress keys
-  const stats = {};
-  levels.forEach(l => { stats[l] = { total: 0, known: 0 }; });
+  const grammarStats = {}, vocabStats = {};
+  levels.forEach(l => {
+    grammarStats[l] = { total: 0, known: 0 };
+    vocabStats[l]   = { total: 0, known: 0 };
+  });
 
   // Grammar entries
   (window.grammarData || window.grammarDB || []).forEach(c => {
     const l = c.level?.toLowerCase();
-    if (stats[l]) {
-      stats[l].total++;
-      if (progress[c.id] === 'know') stats[l].known++;
+    if (grammarStats[l]) {
+      grammarStats[l].total++;
+      if (progress[c.id] === 'know') grammarStats[l].known++;
     }
   });
 
   // Vocab entries
   (window.vocabDB || []).forEach(v => {
     const l = v.jlpt?.toLowerCase();
-    if (stats[l]) {
-      stats[l].total++;
-      if (progress[v.id] === 'know') stats[l].known++;
+    if (vocabStats[l]) {
+      vocabStats[l].total++;
+      if (progress[v.id] === 'know') vocabStats[l].known++;
     }
   });
 
+  const LEVEL_COLORS_NEW = {
+    n5: 'var(--n5)', n4: 'var(--n4)', n3: 'var(--n3)', n2: 'var(--n2)', n1: 'var(--n1)',
+  };
+
   container.innerHTML = '';
   levels.forEach(l => {
-    const s   = stats[l];
+    const g = grammarStats[l], v = vocabStats[l];
+    let s;
+    if (_jlptView === 'grammar')     s = g;
+    else if (_jlptView === 'vocab')  s = v;
+    else s = { total: g.total + v.total, known: g.known + v.known };
+
     const pct = s.total > 0 ? Math.round((s.known / s.total) * 100) : 0;
-    const col = LEVEL_COLORS[l] || '#64748b';
+    const col = LEVEL_COLORS_NEW[l] || '#64748b';
+
+    const subLabel = _jlptView === 'full'
+      ? `G:${g.known}/${g.total} · V:${v.known}/${v.total}`
+      : `${s.known}/${s.total}`;
 
     const card = document.createElement('div');
     card.className = 'jlpt-ring-card';
@@ -113,7 +137,7 @@ function _renderJLPTRings() {
         <div class="jlpt-ring-pct">${pct}%</div>
       </div>
       <div class="jlpt-ring-label" style="color:${col}">${l.toUpperCase()}</div>
-      <div class="jlpt-ring-sub">${s.known}/${s.total}</div>
+      <div class="jlpt-ring-sub">${subLabel}</div>
     `;
     container.appendChild(card);
   });
@@ -354,7 +378,7 @@ function _renderQuizAccuracy() {
     // Filled bar
     if (d.total > 0) {
       const fillW = Math.max(0, (d.pct / 100) * CHART_W);
-      const color = d.pct >= 80 ? '#22c55e' : d.pct >= 60 ? '#f59e0b' : '#ef4444';
+      const color = d.pct >= 80 ? '#4ADE80' : d.pct >= 60 ? '#f59e0b' : '#ef4444';
       ctx.fillStyle = color;
       ctx.beginPath();
       ctx.roundRect(LABEL_W + PADDING, y, fillW, BAR_H, 4);
