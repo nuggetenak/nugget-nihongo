@@ -193,8 +193,8 @@ Lens (Soumatome): sm-n3-{3digit}          e.g. sm-n3-001
 | vocab-n2.js | 130 | ⚠️ Partial (target 6,000) |
 | vocab-n1.js | 60 | 🌱 Seed (target 10,000) |
 | grammar-n5.js | 94 | ✅ Full |
-| grammar-n4.js | 92 | ✅ Full |
-| grammar-n3.js | 103 | ✅ Full |
+| grammar-n4.js | **92** | ✅ Full |
+| grammar-n3.js | **119** | ✅ Full |
 | grammar-n2.js | 90 | ⚠️ Partial (target 200) |
 | grammar-n1.js | 60 | ⚠️ Partial (target 250) |
 | grammar-lens-ir-a1.js | 61 | ✅ Full |
