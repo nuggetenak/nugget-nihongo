@@ -1,6 +1,6 @@
 # Nugget Nihongo — Project Map
 > Read this first every session. Single source of truth for project structure.
-> Last updated: v15.6.0 — 15 April 2026 (rewritten by TASK 3 audit)
+> Last updated: v15.7.0 — 18 April 2026 (TASK-CC-7 + content population batch A)
 > **Selalu baca MASTER-AUDIT.md di root repo untuk task list terbaru.**
 
 ---
@@ -54,16 +54,16 @@ All loaded via `<script>` in index.html. No bundler. Load order matters.
 
 ### Data (loaded first, before JS modules)
 ```
-data/vocab/vocab-n5.js          window.vocabN5           ✅ 711 entries
+data/vocab/vocab-n5.js          window.vocabN5           ✅ 725 entries
 data/vocab/vocab-n4.js          window.vocabN4           ✅ 692 entries
-data/vocab/vocab-n3.js          window.vocabN3           ⚠️ 70 entries (target 3,750)
-data/vocab/vocab-n2.js          window.vocabN2           🌱 50 entries (seed)
-data/vocab/vocab-n1.js          window.vocabN1           🌱 20 entries (seed)
-data/grammar/grammar-n5.js      window.grammarN5         ✅ 80 entries
-data/grammar/grammar-n4.js      window.grammarN4         ✅ 90 entries
+data/vocab/vocab-n3.js          window.vocabN3           ⚠️ 285 entries (target 3,750)
+data/vocab/vocab-n2.js          window.vocabN2           ⚠️ 130 entries (target 6,000)
+data/vocab/vocab-n1.js          window.vocabN1           🌱 60 entries (target 10,000)
+data/grammar/grammar-n5.js      window.grammarN5         ✅ 94 entries
+data/grammar/grammar-n4.js      window.grammarN4         ✅ 92 entries
 data/grammar/grammar-n3.js      window.grammarN3         ✅ 103 entries
-data/grammar/grammar-n2.js      window.grammarN2         🌱 30 entries (seed)
-data/grammar/grammar-n1.js      window.grammarN1         🌱 8 entries (seed)
+data/grammar/grammar-n2.js      window.grammarN2         ⚠️ 90 entries (target 200)
+data/grammar/grammar-n1.js      window.grammarN1         ⚠️ 60 entries (target 250)
 data/books/book-irodori-a1.js   window.bookIrodoriA1     ⚠️ vocab_ids ✅ grammar_ids ❌
 data/books/book-irodori-a2-1.js window.bookIrodoriA21    ⚠️ vocab_ids ✅ grammar_ids ❌
 data/books/book-irodori-a2-2.js window.bookIrodoriA22    ⚠️ vocab_ids ✅ grammar_ids ❌
@@ -73,11 +73,11 @@ data/books/soumatome/
   grammar-lens-sm-n3.js         window.grammarLensSoumatomeN3  ✅ 132 entries
   grammar-lens-sm-n4.js         window.grammarLensSoumatomeN4  ✅ 102 entries
 data/books/irodori/
-  grammar-lens-ir-a1.js         window.grammarLensIrodoriA1    ✅ 61 entries (verify pending)
-  grammar-lens-ir-a2-1.js       window.grammarLensIrodoriA21   ❌ stub
-  grammar-lens-ir-a2-2.js       window.grammarLensIrodoriA22   ❌ stub
+  grammar-lens-ir-a1.js         window.grammarLensIrodoriA1    ✅ 61 entries
+  grammar-lens-ir-a2-1.js       window.grammarLensIrodoriA21   ✅ 65 entries
+  grammar-lens-ir-a2-2.js       window.grammarLensIrodoriA22   ✅ 62 entries
 data/books/sources.js           window.nuggetSources     ✅ book metadata + credits
-data/vocab/vocab-index.js       window.vocabDB           ✅ merged N5+N4 = 1,403 active
+data/vocab/vocab-index.js       window.vocabDB           ✅ merged N5+N4 = 1,417 active
 data/grammar/grammar-index.js   window.grammarDB         ✅ merged all levels, query API
 data/tracks/tracks.js           window.studyTracks       ✅ JLPT + Soumatome + Freeway
 data/_schema.md                 Data architecture v3 — canonical ID formats & schemas
@@ -140,13 +140,15 @@ js/app.js                 Thin orchestrator — ALWAYS LAST
 
 | Variable | Defined in | Notes |
 |---|---|---|
-| `window.vocabDB` | vocab/vocab-index.js | VocabEntry[] — N5+N4 active (1,403) |
+| `window.vocabDB` | vocab/vocab-index.js | VocabEntry[] — N5+N4 active (1,417) |
 | `window.grammarDB` | grammar/grammar-index.js | GrammarEntry[] — all levels merged |
 | `window.grammarData` | grammar/grammar-index.js | backwards compat alias |
 | `window.grammarN5..N1` | grammar/grammar-n*.js | individual level arrays |
 | `window.vocabN5..N1` | vocab/vocab-n*.js | individual level arrays |
 | `window.bookIrodoriA1` | books/book-irodori-a1.js | vocab+grammar index per unit |
 | `window.grammarLensIrodoriA1` | books/irodori/grammar-lens-ir-a1.js | 61 lesson entries |
+| `window.grammarLensIrodoriA21` | books/irodori/grammar-lens-ir-a2-1.js | 65 entries |
+| `window.grammarLensIrodoriA22` | books/irodori/grammar-lens-ir-a2-2.js | 62 entries |
 | `window.grammarLensSoumatomeN3` | books/soumatome/grammar-lens-sm-n3.js | 132 entries |
 | `window.grammarLensSoumatomeN4` | books/soumatome/grammar-lens-sm-n4.js | 102 entries |
 | `window.studyTracks` | tracks/tracks.js | Study track definitions |
@@ -162,11 +164,11 @@ js/app.js                 Thin orchestrator — ALWAYS LAST
 - `error-boundary.js` loads 2nd after version.js
 - `quiz-mixed.js` loads AFTER quiz-vocab.js
 - `vocab-index.js` only activates N5+N4 by default — enable N3+ when data is sufficient
-- `grammar-index.js` merges all levels; N2/N1 are seed-only (30/8 entries)
+- `grammar-index.js` merges all levels
 - `sw.js` cache name = `nihongo-v15.6.0` — must match version.js on every release
-- Book lens files in `data/books/irodori/` are NOT yet loaded in index.html (stubs only)
-- `book-irodori-*.js` vocab_ids use new `vg-n5-*` format; grammar_ids still empty
-- Supabase credentials are placeholders — see MASTER-AUDIT.md P2-B
+- Book lens files in `data/books/irodori/` are loaded in index.html
+- `book-irodori-*.js` vocab_ids use `vg-n5-*` format; grammar_ids still empty (TASK 4)
+- Supabase credentials are live — see MASTER-AUDIT.md for status
 
 ---
 
@@ -181,21 +183,42 @@ Lens (Soumatome): sm-n3-{3digit}          e.g. sm-n3-001
 
 ---
 
+## Data Counts — Real State (18 April 2026)
+
+| File | Entries | Status |
+|---|---|---|
+| vocab-n5.js | 725 | ✅ Full |
+| vocab-n4.js | 692 | ✅ Full |
+| vocab-n3.js | 285 | ⚠️ Partial (target 3,750) |
+| vocab-n2.js | 130 | ⚠️ Partial (target 6,000) |
+| vocab-n1.js | 60 | 🌱 Seed (target 10,000) |
+| grammar-n5.js | 94 | ✅ Full |
+| grammar-n4.js | 92 | ✅ Full |
+| grammar-n3.js | 103 | ✅ Full |
+| grammar-n2.js | 90 | ⚠️ Partial (target 200) |
+| grammar-n1.js | 60 | ⚠️ Partial (target 250) |
+| grammar-lens-ir-a1.js | 61 | ✅ Full |
+| grammar-lens-ir-a2-1.js | 65 | ✅ Full |
+| grammar-lens-ir-a2-2.js | 62 | ✅ Full |
+| grammar-lens-sm-n3.js | 132 | ✅ Full |
+| grammar-lens-sm-n4.js | 102 | ✅ Full |
+
+---
+
 ## Task List — Current Priorities
 
 See **MASTER-AUDIT.md** for full task specs. Summary:
 
 | Task | Description | Status |
 |---|---|---|
-| TASK 1 | Cherry-pick Irodori grammar lenses + branch cleanup | ✅ Done |
-| TASK 2 | Remove duplicate Soumatome grammar files | ✅ Done |
-| TASK 3 | Update _MAP.md + CLAUDE.md | ✅ Done (this file) |
-| TASK 4 | Fill grammar_ids in Irodori A2-1 & A2-2 book lenses | ⬜ Next |
-| TASK 5 | Fill grammar lens content: Irodori A2-1 & A2-2 | ⬜ Depends on TASK 4 |
-| TASK 6 | Verify A1 grammar lens global_grammar_id links | ⬜ Depends on TASK 1 |
-| TASK 7 | Fill grammar_ids in Irodori A1 book lens | ⬜ Depends on TASK 6 |
-| TASK 8 | N3 vocab expansion (70 → 300+ entries) | ⬜ Independent |
+| TASK 1–11 | Branch cleanup, UI fixes, branding | ✅ Done |
+| TASK 12 | Deploy AI Proxy Worker | ⏳ Blocked — needs GROQ_API_KEY + GEMINI_API_KEY |
+| TASK 13 | Setup Google OAuth | ⏳ Human task — Supabase Dashboard |
+| TASK 14 | Category panel accordion UX | ⬜ Post-launch |
+| TASK 15 | N3 vocab expansion batch B (→ 300+) | ⬜ Next content batch |
+| TASK 16 | N2/N1 grammar enrichment | ⬜ Next content batch |
+| TASK 17 | Minna no Nihongo lenses | 🔒 Blocked — needs PDF |
 
 ---
 
-*Last updated: 15 April 2026 — TASK 3 audit session*
+*Last updated: 18 April 2026 — Crunchy 🧂 (post content-population batch A: +375 entries)*
