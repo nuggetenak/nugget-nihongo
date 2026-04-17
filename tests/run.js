@@ -368,6 +368,89 @@ console.log('\n── AI Validator ──');
   assert(b.rejected[0].failures.length > 0, 'validator: rejected items carry failure reasons');
 })();
 
+// ── AI Content Engine (Phase 5.5a §15.2 orchestration) ──
+console.log('\n── AI Content Engine ──');
+(function testAIContentEngine() {
+  // The content engine runs in the browser — attaches to window.AIContentEngine.
+  // In Node test env we require() it; it detects `module.exports`.
+  const CE = require(path.join(ROOT, 'public/js/ai-content-engine.js'));
+  if (!CE || !CE._pipeline) { assert(false, 'ai-content-engine.js: not loaded'); return; }
+  // AIValidator must also be loaded for validateAndIntersect to work.
+  // require() returns it directly (same CJS shape).
+  global.AIValidator = require(path.join(ROOT, 'public/js/ai-validator.js'));
+
+  const { validateAndIntersect, attachLineage } = CE._pipeline;
+
+  // Feature flag: OFF by default in Node env (no localStorage) — assert false
+  assert(CE.isEnabled() === false, 'content-engine: disabled by default');
+
+  // ── validateAndIntersect ──
+  const good = {
+    id: 'aig-1-1', type: 'mcq', level: 'n4',
+    prompt: '日本に行く___、お金をためている。', answer: 'ために',
+    choices: ['ために', 'ように', 'ので', 'から'],
+  };
+  const bad = {
+    id: 'aig-1-2', type: 'mcq', level: 'n4',
+    prompt: '水を飲む', answer: 'から',
+    choices: ['から', 'ので', 'のに', 'ように'],
+  }; // no target
+  const critRejected = {
+    id: 'aig-1-3', type: 'mcq', level: 'n4',
+    prompt: '映画を見る___、チケットを買った。', answer: 'ために',
+    choices: ['ために', 'ように', 'ので', 'から'],
+  };
+
+  const verdicts = [
+    { id: 'aig-1-1', verdict: 'APPROVED', reasons: [], severity: 'low' },
+    { id: 'aig-1-2', verdict: 'APPROVED', reasons: [], severity: 'low' }, // critic says OK but validator rejects
+    { id: 'aig-1-3', verdict: 'REJECTED', reasons: ['kalimat tidak natural'], severity: 'medium' },
+  ];
+
+  const ctx = { target: 'ために', level: 'n4' };
+  const r = validateAndIntersect([good, bad, critRejected], verdicts, ctx);
+
+  assert(r.passing.length === 1, `intersect: 1 passing (got ${r.passing.length})`);
+  assert(r.passing[0].q.id === 'aig-1-1', 'intersect: correct question passed');
+  assert(r.passing[0].critic_verdict === 'APPROVED', 'intersect: critic verdict preserved');
+  assert(r.rejected.length === 2, `intersect: 2 rejected (got ${r.rejected.length})`);
+
+  // aig-1-2 should be rejected by validator (missing target)
+  const bad12 = r.rejected.find(x => x.q.id === 'aig-1-2');
+  assert(bad12 && bad12.reasons.some(r => r.includes('validator')), 'intersect: validator reason recorded');
+
+  // aig-1-3 should be rejected by critic
+  const bad13 = r.rejected.find(x => x.q.id === 'aig-1-3');
+  assert(bad13 && bad13.reasons.some(r => r.includes('critic')), 'intersect: critic reason recorded');
+
+  // REVISE verdict counts as approved (with lower confidence — used when options run low)
+  const reviseCase = validateAndIntersect([good],
+    [{ id: 'aig-1-1', verdict: 'REVISE', reasons: ['could be more natural'], severity: 'low' }],
+    ctx
+  );
+  assert(reviseCase.passing.length === 1, 'intersect: REVISE verdict is kept (not hard-reject)');
+
+  // ── attachLineage ──
+  const genMeta = {
+    generator_provider: 'groq', generator_model: 'llama-3.3-70b',
+    generated_at: '2026-04-17T09:00:00Z',
+  };
+  const critMeta = {
+    critic_provider: 'gemini', critic_model: 'gemini-2.0-flash',
+    critiqued_at: '2026-04-17T09:00:05Z', cross_provider: true,
+  };
+  const withLineage = attachLineage(good, 'APPROVED', genMeta, critMeta, 0);
+  assert(withLineage.source === 'ai-gen', 'lineage: source=ai-gen');
+  assert(withLineage.lineage.generator_provider === 'groq', 'lineage: generator_provider');
+  assert(withLineage.lineage.critic_provider === 'gemini', 'lineage: critic_provider');
+  assert(withLineage.lineage.cross_provider === true, 'lineage: cross_provider flag');
+  assert(withLineage.lineage.validator_pass === true, 'lineage: validator_pass');
+  assert(withLineage.lineage.prompt_version === 'v1.0', 'lineage: prompt_version');
+  assert(withLineage.lineage.retry_round === 0, 'lineage: retry_round');
+  // Original question fields preserved
+  assert(withLineage.id === good.id && withLineage.answer === good.answer, 'lineage: original fields preserved');
+})();
+
 // ── Sensei persona drift check (Phase 5 §5.6) ──
 // Worker SYSTEM_PROMPT and Edge Function MASTER_SYSTEM_PROMPT must stay
 // byte-identical. If they drift, Sensei's voice becomes inconsistent across
