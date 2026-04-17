@@ -1,5 +1,5 @@
 # NUGGET NIHONGO — MASTER AUDIT
-**Updated:** 16 April 2026 · Deep repo scan + live infra check  
+**Updated:** 18 April 2026 · Post content-population batch A  
 **Owner:** Nugget  
 **Scope:** Claude (claude.ai) = strategic oversight, content generation, audit  
 **Scope:** Claude Code = code ops only → lihat **CLAUDE-CODE-TASKS.md**
@@ -18,23 +18,24 @@
 | TASK 5 | Fill grammar lens ir-a2-1.js (65 entries) + ir-a2-2.js (62 entries) |
 | TASK 6 | Verify + patch Irodori A1 grammar lens global_grammar_id links |
 | TASK 7 | Fill grammar_ids for Irodori A1 |
+| Content Batch A | vocab-n3 (+135), vocab-n2 (+80), vocab-n1 (+40), grammar-n2 (+60), grammar-n1 (+60) — 375 entries via 10-agent pipeline (18 Apr) |
 
 ---
 
-## DATA COUNTS — REAL (16 April 2026)
+## DATA COUNTS — REAL (18 April 2026)
 
 | File | Count | Status |
 |---|---|---|
 | grammar-n5.js | **94** entries | ✅ Full (naik dari 80, tasks 4+6 tambah 14) |
 | grammar-n4.js | **92** entries | ✅ Full (naik dari 90, task 4 tambah 2) |
-| grammar-n3.js | 103 entries | ✅ Full |
-| grammar-n2.js | 30 entries | 🌱 Seed |
-| grammar-n1.js | 8 entries | 🌱 Seed |
+| grammar-n3.js | **119** entries | ✅ Full |
+| grammar-n2.js | **90** entries | ⚠️ Partial (target 200) |
+| grammar-n1.js | **60** entries | ⚠️ Partial (target 250) |
 | vocab-n5.js | 725 entries | ✅ Full |
 | vocab-n4.js | 692 entries | ✅ Full |
-| vocab-n3.js | **100** entries | ⚠️ Partial (target min 300, ideal 3750) |
-| vocab-n2.js | 50 entries | 🌱 Seed |
-| vocab-n1.js | 20 entries | 🌱 Seed |
+| vocab-n3.js | **285** entries | ⚠️ Partial (target min 300, ideal 3750) |
+| vocab-n2.js | **130** entries | ⚠️ Partial (target 6000) |
+| vocab-n1.js | **60** entries | 🌱 Seed (target 10000) |
 | grammar-lens-ir-a1.js | 61 entries | ✅ Full |
 | grammar-lens-ir-a2-1.js | **65** entries | ✅ Full |
 | grammar-lens-ir-a2-2.js | **62** entries | ✅ Full |
@@ -172,13 +173,13 @@ Lihat `CLAUDE-CODE-TASKS.md § TASK-CC-4`.
 ### 🟡 TASK 14 — Category Panel UX Fix `[Claude Code]`
 Grouping 40+ kategori jadi super-kategori. Lihat `CLAUDE-CODE-TASKS.md § TASK-CC-5`.
 
-### 🟡 TASK 15 — N3 Vocab Expansion Batch B `[Claude — di claude.ai, BUKAN Claude Code]`
-Lanjut dari vg-n3-00101 → vg-n3-00150.
+### 🟡 TASK 15 — N3 Vocab Expansion Batch C `[Claude — di claude.ai, BUKAN Claude Code]`
+Lanjut dari vg-n3-00286 → vg-n3-00335.
 Content generation TIDAK BISA di Claude Code (timeout). Lakukan di claude.ai.
 
-### 🟡 TASK 16 — N2/N1 Grammar Enrichment `[Claude — di claude.ai]`
-N2 (30 entries) + N1 (8 entries) belum punya `desc` Bahasa Indonesia + `meaning_id`.
-Generate di claude.ai, paste ke file.
+### 🟡 TASK 16 — N2/N1 Vocab + Grammar Expansion `[Claude — di claude.ai]`
+N2 vocab (130 entries) + N1 vocab (60 entries) — lanjutkan ekspansi.
+N2 grammar (90 entries) + N1 grammar (60 entries) — lengkapi coverage hingga target.
 
 ### ⬜ TASK 17 — Minna no Nihongo Lenses `[BLOCKED]`
 `book-minna-1.js` + `book-minna-2.js` kosong.
