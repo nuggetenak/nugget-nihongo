@@ -12,7 +12,10 @@
   <!-- iOS PWA: apple-touch-icon (PNG fallback — SVG-as-data-URI not supported on iOS Safari) -->
   <link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAELElEQVR4nO3dTVKsMBRAYXzl1IEjR67Kbbgct+Gq3MgbUHZZbR8MhE7uTc437GqBhmOA4M/D0/PLIt3yr/cGKC7jEDIOIeMQMg4h4xAyDiHjEDIOIeMQMg4h4xAyDiHjEDIOIeMQMg4h4xAyDiHjEDIOIeMQMg4h4xAyDiHjEDIOIeMQMg4h4xAyDiHjEDIOIeMQeuy9AVG8fXxdvfL5/tplS+Jw5BAyDiHjEDIOIeMQMg4h4xAyDiHjEDIOIeMQMg4h4xAyDiHjEDIOIeMQMg4h4xAyDiHjWJZbP12sxTgWLsNiZo9ju4DJ+5g6jpJjP3Mf88ZRftSn7WPSOK6O95+/3DZnHzPGUVjG1esT9vHw9PzSZcUT7usaXX5xd8aRQ4WMQ8g4hIxDqNsFaTOF9yaFf7xl7z1waoOPHKcfy6nub0eO407f5fP0MWwcdx3/J+ljzDgaXBnM0MeAcTS7Zhy+j9HiaHw3MXYfQ8XR5T5z4D7GiaPjDMSofQwSR/e5qSH7GCGO7mXcXO8AfaSPI0gZN9eevY/ccZxVxolHcaQ+Ej94O6WMPw/eKYtN+nwu68jRpozC9/w2xviRMo5mZex9508D9JEvjsZlHHv/Knsfya456suoPEL1a0x0/ZFp5LhfGeWLOtBW3vEjTRztyyj/gcI/Je0jRxy9xozJ+0gQx53K+Hx/LVkUvW2GPqLHUVnG28cXlbFrOdTH3gOcq4/QcdSXcfP1Y/cLZ51iEvURN45QZWx/7ah9BI0jYBnbSxiyj4iTYDVlHM5i778rP6W/4PNjEUeOn/uoTRkHnDKEHP6kbUSMY/neU2HL2F7ygT4ClrGEjWMJX8b28g+PH6HEjaNczRxXvRNnyaLJHcdZc1z1zpolCyVxHL1OJeTEBzFBZI0jWhnba0/aR8o4YpaxvQ0Z+3jsvQH7RM7iYt2Y35u6vhJqU7dlGjlSlHExwBCSJo5cZayy95EjjoxlrFL3kSCOvnNc9fLOkoWOI84cV72Ms2Rx48h7KiHpTjFB4xivjFWuPiLGMWoZq0R9xJoEGzuLiyyzZIFGjknKuIg/hESJY7YyVsH7CBHHnGWsIvfRP47sc1z1ws6S9YxjpDmuegFnybrFMfOphEQ7xfSJwzJIqD46xGEZ2+L00XQSzCwKBZklazdyWMZe3YeQRnFYxjF9+2gUx80PaRklOu66Pg/ezGIXugS5t3bXHJcgLOOY9juw9a2sZdRovPeaxmEZ9Vruw/4P3hSWcQgZh5BxCBmHkHEIGYeQcQgZh5BxCBmHkHEIGYeQcQgZh5BxCBmHUMT/8aYgHDmEjEPIOISMQ8g4hIxDyDiEjEPIOISMQ8g4hIxDyDiEjEPIOISMQ8g4hIxDyDiEjEPIOISMQ8g4hIxDyDiEjEPIOISMQ8g4hIxDyDiEjEPIOIT+A/1KAQvCWgBiAAAAAElFTkSuQmCC">
   <!-- Fonts: self-hosted via /fonts/ (see css/style.css §1) -->
+  <link rel="stylesheet" href="./styles/layout/shell.css">
   <link rel="stylesheet" href="./styles/app.css">
+  <link rel="stylesheet" href="./styles/onboarding.css">
+  <link rel="stylesheet" href="./styles/settings.css">
 </head>
 <body>
 
@@ -113,10 +116,13 @@
     <span class="tab-icon">📊</span>
     <span>Progres</span>
   </button>
-  <button class="tab-btn" id="themeToggle" onclick="toggleTheme()" title="Ganti tema">
-    <span class="tab-icon">🌙</span>
-    <span>Tema</span>
+  <button class="tab-btn" id="tabBtnMore" onclick="openMoreSheet()">
+    <span class="tab-icon">⋯</span>
+    <span>Lainnya</span>
   </button>
+  <!-- Settings + About: hidden from nav, accessible via ⋯ More -->
+  <button id="tabBtnSettings" class="tab-btn tab-btn--hidden" onclick="switchTab('settings',this)"></button>
+  <button id="tabBtnAbout"    class="tab-btn tab-btn--hidden" onclick="switchTab('about',this)"></button>
 </nav>
 
 <!-- ══════════════ BROWSE PAGE ══════════════ -->
@@ -138,8 +144,19 @@
             aria-label="Tutup">✕</button>
   </div>
 
+
+  <!-- ══ MATERI HUB PANELS (Phase 2) ════════════════════════ -->
+  <!-- Hub landing: two-door entry. Default view for Browse tab. -->
+  <div id="materiHubPanel" class="materi-panel"></div>
+  <!-- JLPT door: level picker N5→N1 -->
+  <div id="jlptDoorPanel" class="materi-panel" style="display:none"></div>
+  <!-- Buku door: book series picker -->
+  <div id="bukuDoorPanel" class="materi-panel" style="display:none"></div>
+  <!-- Book chapters/lessons grid -->
+  <div id="bukuChaptersPanel" class="materi-panel" style="display:none"></div>
+
   <!-- BROWSE SUB-TABS -->
-  <div class="browse-subtabs">
+  <div class="browse-subtabs" id="browseSubtabs">
     <button class="browse-subtab active" id="bstGrammar" onclick="switchBrowseTab('grammar',this)">
       📖 Grammar
     </button>
@@ -149,7 +166,7 @@
   </div>
 
   <!-- FILTER BAR -->
-  <div class="filter-bar">
+  <div class="filter-bar" id="filterBar">
 
     <!-- Row 1: Level pills -->
     <div class="level-pills">
@@ -389,7 +406,20 @@
     </div>
 
   <div class="stats">Menampilkan <strong id="statCount">0</strong> pola grammar</div>
-  <div class="cards-wrap" id="main"></div>
+  <div class="cards-wrap" id="main">
+    <!-- Static skeleton — replaced by render() on DOMContentLoaded -->
+    <div class="sk-section" aria-hidden="true">
+      <div class="sk-section-hdr sk-shimmer"></div>
+      <div class="sk-grid">
+        <div class="sk-card"><div class="sk-line sk-line--md sk-shimmer"></div><div class="sk-line sk-line--lg sk-shimmer"></div><div class="sk-line sk-line--sm sk-shimmer"></div></div>
+        <div class="sk-card"><div class="sk-line sk-line--lg sk-shimmer"></div><div class="sk-line sk-line--md sk-shimmer"></div><div class="sk-line sk-line--sm sk-shimmer"></div></div>
+        <div class="sk-card"><div class="sk-line sk-line--sm sk-shimmer"></div><div class="sk-line sk-line--lg sk-shimmer"></div><div class="sk-line sk-line--md sk-shimmer"></div></div>
+        <div class="sk-card"><div class="sk-line sk-line--md sk-shimmer"></div><div class="sk-line sk-line--sm sk-shimmer"></div><div class="sk-line sk-line--lg sk-shimmer"></div></div>
+        <div class="sk-card"><div class="sk-line sk-line--lg sk-shimmer"></div><div class="sk-line sk-line--sm sk-shimmer"></div><div class="sk-line sk-line--md sk-shimmer"></div></div>
+        <div class="sk-card"><div class="sk-line sk-line--sm sk-shimmer"></div><div class="sk-line sk-line--md sk-shimmer"></div><div class="sk-line sk-line--lg sk-shimmer"></div></div>
+      </div>
+    </div>
+  </div>
   <!-- ══ VOCAB BROWSE PANEL ══ -->
   <div id="vocabBrowsePanel" style="display:none">
     <div id="vbBookPanel"></div>
@@ -496,6 +526,16 @@
           <span class="mode-desc">Pilih satu dari empat jawaban yang tersedia</span>
         </div>
       </button>
+      <!-- Latihan AI — hidden by default, shown only when nn_feature_ai_quiz_gen=1.
+           Visibility toggled by app.js initAIQuizButton(). §15.5b flag gate. -->
+      <button class="mode-btn mode-btn--ai" id="modeAIQuiz" style="display:none"
+              onclick="setQuizMode('ai_quiz',this)">
+        <span class="mode-icon">✨</span>
+        <div class="mode-text">
+          <span class="mode-label">Latihan AI <span class="mode-badge">Eksperimen</span></span>
+          <span class="mode-desc">Soal dibuat AI khusus buat titik lemahmu. Bantuin kami test!</span>
+        </div>
+      </button>
     </div>
 
     <div class="quiz-mode-group" id="qcat-challenge">
@@ -587,11 +627,11 @@
       <span class="quiz-option-label">Level</span>
       <div class="level-pills" style="margin-top:0.35rem">
         <button class="pill quiz-level-pill active-all" onclick="quizPillLevel('all',this)">Semua</button>
-        <button class="pill quiz-level-pill" onclick="quizPillLevel('n1',this)"><span class="pill-dot" style="background:var(--n1)"></span>N1</button>
-        <button class="pill quiz-level-pill" onclick="quizPillLevel('n2',this)"><span class="pill-dot" style="background:var(--n2)"></span>N2</button>
-        <button class="pill quiz-level-pill" onclick="quizPillLevel('n3',this)"><span class="pill-dot" style="background:var(--n3)"></span>N3</button>
-        <button class="pill quiz-level-pill" onclick="quizPillLevel('n4',this)"><span class="pill-dot" style="background:var(--n4)"></span>N4</button>
         <button class="pill quiz-level-pill" onclick="quizPillLevel('n5',this)"><span class="pill-dot" style="background:var(--n5)"></span>N5</button>
+        <button class="pill quiz-level-pill" onclick="quizPillLevel('n4',this)"><span class="pill-dot" style="background:var(--n4)"></span>N4</button>
+        <button class="pill quiz-level-pill" onclick="quizPillLevel('n3',this)"><span class="pill-dot" style="background:var(--n3)"></span>N3</button>
+        <button class="pill quiz-level-pill" onclick="quizPillLevel('n2',this)"><span class="pill-dot" style="background:var(--n2)"></span>N2</button>
+        <button class="pill quiz-level-pill" onclick="quizPillLevel('n1',this)"><span class="pill-dot" style="background:var(--n1)"></span>N1</button>
       </div>
     </div>
 
@@ -1313,6 +1353,375 @@
   </div>
 </div>
 
+<!-- ══════════════════════════════════════════════════
+     PHASE 3 — Onboarding / Settings / About / More
+     ══════════════════════════════════════════════════ -->
+
+<!-- ONBOARDING OVERLAY (force-through, 3 screens) -->
+<div id="onboardingOverlay" class="ob-hidden">
+
+  <!-- progress dots -->
+  <div class="ob-dots">
+    <div class="ob-dot active"></div>
+    <div class="ob-dot"></div>
+    <div class="ob-dot"></div>
+  </div>
+
+  <!-- Screen 1 — Halo -->
+  <div class="ob-screen active" id="obScreen1">
+    <div class="ob-avatar">✨</div>
+    <div class="ob-title">Hai, aku Sensei Nugget.</div>
+    <div class="ob-sub">
+      Belajar bahasa Jepang sampai JLPT N1,<br>
+      gratis, tanpa iklan, jalan juga tanpa internet.
+    </div>
+    <button class="ob-btn-primary" id="obBtn1">Mulai →</button>
+  </div>
+
+  <!-- Screen 2 — Level check -->
+  <div class="ob-screen" id="obScreen2">
+    <div class="ob-title">Kira-kira sudah sampai mana?</div>
+    <div class="ob-sub" style="margin-bottom:1.5rem">Pilih yang paling cocok — bisa diubah nanti di Settings.</div>
+    <div class="ob-level-grid">
+      <div class="ob-level-card" data-level="beginner">
+        <span class="ob-lc-emoji">🌱</span>
+        <div class="ob-lc-title">Baru mulai</div>
+        <div class="ob-lc-sub">Hiragana & katakana belum hafal</div>
+        <span class="ob-lc-check">✓</span>
+      </div>
+      <div class="ob-level-card" data-level="kana">
+        <span class="ob-lc-emoji">📝</span>
+        <div class="ob-lc-title">Sudah bisa kana</div>
+        <div class="ob-lc-sub">Hiragana-katakana lancar</div>
+        <span class="ob-lc-check">✓</span>
+      </div>
+      <div class="ob-level-card" data-level="n5">
+        <span class="ob-lc-emoji">🎯</span>
+        <div class="ob-lc-title">Pernah JLPT N5</div>
+        <div class="ob-lc-sub">Atau setara level itu</div>
+        <span class="ob-lc-check">✓</span>
+      </div>
+      <div class="ob-level-card" data-level="n4plus">
+        <span class="ob-lc-emoji">🚀</span>
+        <div class="ob-lc-title">N4 ke atas</div>
+        <div class="ob-lc-sub">Sudah bisa baca kanji dasar</div>
+        <span class="ob-lc-check">✓</span>
+      </div>
+    </div>
+    <button class="ob-btn-primary" id="obBtn2">Lanjut →</button>
+    <button class="ob-btn-skip" id="obSkip2">Nggak yakin, cari tau sambil jalan</button>
+  </div>
+
+  <!-- Screen 3 — Goals -->
+  <div class="ob-screen" id="obScreen3">
+    <div class="ob-title">Tujuanmu apa?</div>
+    <div class="ob-goal-hint">Pilih sampai 3. Ini bantu Sensei nyesuain gaya belajar kamu.</div>
+    <div class="ob-goal-list">
+      <div class="ob-goal-item" data-goal="ssw">
+        <span class="ob-gi-emoji">🏭</span>
+        <span class="ob-gi-text">Kerja di Jepang (SSW / TKI)</span>
+      </div>
+      <div class="ob-goal-item" data-goal="jlpt">
+        <span class="ob-gi-emoji">📜</span>
+        <span class="ob-gi-text">Lulus JLPT (N5 → N1)</span>
+      </div>
+      <div class="ob-goal-item" data-goal="anime">
+        <span class="ob-gi-emoji">🎌</span>
+        <span class="ob-gi-text">Nonton anime / baca manga tanpa subtitle</span>
+      </div>
+      <div class="ob-goal-item" data-goal="travel">
+        <span class="ob-gi-emoji">✈️</span>
+        <span class="ob-gi-text">Jalan-jalan ke Jepang</span>
+      </div>
+      <div class="ob-goal-item" data-goal="casual">
+        <span class="ob-gi-emoji">😊</span>
+        <span class="ob-gi-text">Iseng aja, penasaran</span>
+      </div>
+    </div>
+    <button class="ob-btn-primary" id="obBtn3">Langsung mulai</button>
+  </div>
+
+</div>
+
+<!-- ⋯ MORE BOTTOM-SHEET -->
+<div id="moreSheetOverlay" onclick="if(event.target===this)closeMoreSheet()">
+  <div id="moreSheet">
+    <div class="ms-handle"></div>
+    <div class="ms-item" onclick="_moreNavTo('settings')">
+      <div class="ms-icon">⚙️</div>
+      <div>
+        <div class="ms-label">Pengaturan</div>
+        <div class="ms-sub">Tema, ukuran teks, notifikasi</div>
+      </div>
+    </div>
+    <div class="ms-item" onclick="_moreNavTo('about')">
+      <div class="ms-icon">❓</div>
+      <div>
+        <div class="ms-label">Tentang Aplikasi</div>
+        <div class="ms-sub">Metodologi, atribusi, versi</div>
+      </div>
+    </div>
+    <div class="ms-item" onclick="toggleTheme();closeMoreSheet()">
+      <div class="ms-icon" id="themeToggle">🌙</div>
+      <div>
+        <div class="ms-label">Ganti Tema</div>
+        <div class="ms-sub">Dark / Light</div>
+      </div>
+    </div>
+    <div class="ms-item" onclick="showInstallModal();closeMoreSheet()">
+      <div class="ms-icon">📲</div>
+      <div>
+        <div class="ms-label">Install Aplikasi</div>
+        <div class="ms-sub">Simpan ke home screen</div>
+      </div>
+    </div>
+    <div class="ms-item" onclick="document.getElementById('authModal').style.display='flex';closeMoreSheet()">
+      <div class="ms-icon">👤</div>
+      <div>
+        <div class="ms-label">Masuk / Daftar</div>
+        <div class="ms-sub">Sinkron progres ke cloud</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ SETTINGS PAGE ══════════════ -->
+<div id="settingsPage" class="page">
+
+  <div class="sp-section">
+    <div class="sp-section-title">Tampilan</div>
+    <div class="sp-list">
+      <div class="sp-row">
+        <span class="sp-row-icon">🎨</span>
+        <div class="sp-row-label"><div class="sp-row-title">Tema</div></div>
+        <div class="sp-row-ctrl">
+          <select id="spThemeSelect" class="sp-select">
+            <option value="dark">Gelap</option>
+            <option value="light">Terang</option>
+            <option value="system">Ikut sistem</option>
+          </select>
+        </div>
+      </div>
+      <div class="sp-row">
+        <span class="sp-row-icon">🔡</span>
+        <div class="sp-row-label"><div class="sp-row-title">Ukuran teks</div></div>
+        <div class="sp-row-ctrl">
+          <button class="sp-select" data-fontsize="small">S</button>
+          <button class="sp-select" data-fontsize="medium">M</button>
+          <button class="sp-select" data-fontsize="large">L</button>
+        </div>
+      </div>
+      <div class="sp-row">
+        <span class="sp-row-icon">🎞️</span>
+        <div class="sp-row-label">
+          <div class="sp-row-title">Kurangi animasi</div>
+          <div class="sp-row-sub">Untuk baterai / accessibility</div>
+        </div>
+        <div class="sp-row-ctrl">
+          <input type="checkbox" id="spReduceMotion" class="sp-toggle">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sp-section">
+    <div class="sp-section-title">Pembelajaran</div>
+    <div class="sp-list">
+      <div class="sp-row">
+        <span class="sp-row-icon">🃏</span>
+        <div class="sp-row-label">
+          <div class="sp-row-title">Target kartu harian</div>
+          <div class="sp-row-sub">Kartu SRS yang mau diselesaikan per hari</div>
+        </div>
+        <div class="sp-row-ctrl">
+          <select id="spCardTarget" class="sp-select">
+            <option value="5">5</option>
+            <option value="10" selected>10</option>
+            <option value="20">20</option>
+            <option value="50">50</option>
+          </select>
+        </div>
+      </div>
+      <div class="sp-row">
+        <span class="sp-row-icon">ふ</span>
+        <div class="sp-row-label">
+          <div class="sp-row-title">Tampilkan furigana</div>
+        </div>
+        <div class="sp-row-ctrl">
+          <select id="spFurigana" class="sp-select">
+            <option value="always">Selalu</option>
+            <option value="tap">Tap untuk lihat</option>
+            <option value="never">Sembunyikan</option>
+          </select>
+        </div>
+      </div>
+      <div class="sp-row">
+        <span class="sp-row-icon">Aa</span>
+        <div class="sp-row-label">
+          <div class="sp-row-title">Tampilkan romaji</div>
+        </div>
+        <div class="sp-row-ctrl">
+          <select id="spRomaji" class="sp-select">
+            <option value="n5n4">N5-N4 saja</option>
+            <option value="always">Selalu</option>
+            <option value="never">Jangan</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sp-section">
+    <div class="sp-section-title">AI Sensei</div>
+    <div class="sp-list">
+      <div class="sp-row sp-row--tap" id="spResetConvo">
+        <span class="sp-row-icon">🔄</span>
+        <div class="sp-row-label">
+          <div class="sp-row-title">Reset riwayat percakapan</div>
+          <div class="sp-row-sub">Mulai Sensei dari awal</div>
+        </div>
+        <span class="sp-chevron">›</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="sp-section">
+    <div class="sp-section-title">Data &amp; Privasi</div>
+    <div class="sp-list">
+      <div class="sp-row sp-row--tap" onclick="if(window.exportBackup)window.exportBackup()">
+        <span class="sp-row-icon">💾</span>
+        <div class="sp-row-label">
+          <div class="sp-row-title">Export backup</div>
+          <div class="sp-row-sub">Unduh semua progres sebagai file JSON</div>
+        </div>
+        <span class="sp-chevron">›</span>
+      </div>
+      <div class="sp-row sp-row--tap" onclick="document.getElementById('importFileInput')&&document.getElementById('importFileInput').click()">
+        <span class="sp-row-icon">📂</span>
+        <div class="sp-row-label">
+          <div class="sp-row-title">Import backup</div>
+          <div class="sp-row-sub">Pulihkan dari file JSON</div>
+        </div>
+        <span class="sp-chevron">›</span>
+      </div>
+      <div class="sp-row sp-row--tap sp-row--danger" id="spClearData">
+        <span class="sp-row-icon">🗑️</span>
+        <div class="sp-row-label">
+          <div class="sp-row-title">Hapus semua data lokal</div>
+          <div class="sp-row-sub">FSRS, bookmark, streak — semua hilang</div>
+        </div>
+        <span class="sp-chevron">›</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="sp-section">
+    <div class="sp-section-title">Tentang</div>
+    <div class="sp-list">
+      <div class="sp-row">
+        <span class="sp-row-icon">📦</span>
+        <div class="sp-row-label"><div class="sp-row-title">Versi aplikasi</div></div>
+        <div class="sp-row-ctrl">
+          <span class="sp-version-pill" id="spVersionPill">—</span>
+        </div>
+      </div>
+      <div class="sp-row sp-row--tap" onclick="_moreNavTo('about')">
+        <span class="sp-row-icon">❓</span>
+        <div class="sp-row-label"><div class="sp-row-title">Tentang &amp; Metodologi</div></div>
+        <span class="sp-chevron">›</span>
+      </div>
+      <div class="sp-row sp-row--tap" onclick="window.open('https://github.com/nuggetenak/nugget-nihongo','_blank')">
+        <span class="sp-row-icon">🐙</span>
+        <div class="sp-row-label"><div class="sp-row-title">GitHub</div></div>
+        <span class="sp-chevron">›</span>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /settingsPage -->
+
+<!-- ══════════════ ABOUT PAGE ══════════════ -->
+<div id="aboutPage" class="page">
+
+  <div class="ab-hero">
+    <div class="ab-logo" lang="ja">文</div>
+    <div class="ab-hero-title">Nugget Nihongo</div>
+    <div class="ab-hero-version" id="abVersion">—</div>
+  </div>
+
+  <div class="ab-section">
+    <div class="ab-section-title">Apa ini?</div>
+    <div class="ab-body">
+      <p>Nugget Nihongo adalah aplikasi belajar bahasa Jepang gratis untuk pelajar Indonesia — dari nol sampai JLPT N1. Offline-first, tanpa iklan, tanpa sistem nyinyir (nggak ada yang bilang kamu gagal).</p>
+    </div>
+  </div>
+
+  <div class="ab-section">
+    <div class="ab-section-title">Kenapa dibuat?</div>
+    <div class="ab-body">
+      <p>Dibuat oleh Nugget — orang Indonesia yang lagi persiapan kerja di Jepang lewat jalur SSW. Semua aplikasi belajar yang ada terasa terlalu gamified, terlalu mahal, atau nggak ngerti konteks pelajar Indonesia.</p>
+      <p>Jadi dibuat sendiri. Gratis, karena belajar bahasa nggak seharusnya mahal. Offline-first, karena koneksi internet di Indonesia nggak selalu stabil. Tanpa leaderboard, karena belajar bukan kompetisi.</p>
+    </div>
+  </div>
+
+  <div class="ab-section">
+    <div class="ab-section-title">Metodologi belajar</div>
+    <div class="ab-body">
+      <p>Sistem belajar didesain berdasarkan 736 referensi riset pendidikan bahasa. Lima pilar utama:</p>
+    </div>
+    <div class="ab-pillars">
+      <div class="ab-pillar">
+        <div class="ab-pillar-title">1. Spaced Repetition (FSRS)</div>
+        <div class="ab-pillar-sub">Kartu muncul tepat sebelum kamu lupa — bukan setiap hari flat.</div>
+      </div>
+      <div class="ab-pillar">
+        <div class="ab-pillar-title">2. Comprehensible Input</div>
+        <div class="ab-pillar-sub">Konteks kalimat nyata, bukan hafalan kosakata lepas.</div>
+      </div>
+      <div class="ab-pillar">
+        <div class="ab-pillar-title">3. Motivasi otonom (SDT)</div>
+        <div class="ab-pillar-sub">Kamu pilih tujuan sendiri — Sensei nyesuain, bukan memaksa.</div>
+      </div>
+      <div class="ab-pillar">
+        <div class="ab-pillar-title">4. Umpan balik informatif</div>
+        <div class="ab-pillar-sub">"Hampir benar — ini alasannya." Bukan "Salah!"</div>
+      </div>
+      <div class="ab-pillar">
+        <div class="ab-pillar-title">5. Privasi &amp; tanpa tekanan sosial</div>
+        <div class="ab-pillar-sub">Riset menunjukkan pelajar Indonesia lebih baik tanpa leaderboard publik (Hofstede IDV=14, Markus &amp; Kitayama 1991).</div>
+      </div>
+    </div>
+
+    <button class="ab-cite-toggle" id="abCiteToggle">Lihat semua referensi (736) ▼</button>
+    <div class="ab-cite-list" id="abCiteList">
+      Corpus riset lengkap (736 entri APA 7th) tersedia di branch <code>corpus/v17-pass15</code> pada repositori GitHub. Termasuk cluster: Mobile-Assisted Language Learning (MALL), Spaced Repetition Systems (SA), Gamification (GI), Self-Determination Theory (LS), dan 10 cluster lainnya.
+    </div>
+  </div>
+
+  <div class="ab-section">
+    <div class="ab-section-title">Atribusi &amp; Lisensi</div>
+    <div class="ab-attribution">
+      Aplikasi ini menggunakan file kamus <strong>JMdict</strong>, properti dari Electronic Dictionary Research and Development Group (EDRDG), digunakan sesuai ketentuan lisensi EDRDG.
+      <a href="https://www.edrdg.org/edrdg/licence.html" target="_blank" rel="noopener">edrdg.org/edrdg/licence.html</a>
+    </div>
+    <div class="ab-credits">
+      <span class="ab-credit-tag">DM Sans · SIL OFL</span>
+      <span class="ab-credit-tag">BIZ UDGothic · Morisawa OFL</span>
+      <span class="ab-credit-tag">ts-fsrs · MIT</span>
+      <span class="ab-credit-tag">Supabase · Apache 2.0</span>
+      <span class="ab-credit-tag">Cloudflare Workers</span>
+    </div>
+  </div>
+
+  <div class="ab-section">
+    <div class="ab-section-title">Lisensi</div>
+    <div class="ab-body">
+      <p>MIT License · <a href="https://github.com/nuggetenak/nugget-nihongo" target="_blank" rel="noopener" style="color:var(--accent)">GitHub</a></p>
+    </div>
+  </div>
+
+</div><!-- /aboutPage -->
+
 <!-- DATA (urutan penting!) -->
 <!-- ═══════════════════════════════════════════════════════
      ARCHITECTURE v3 — Data Loading Order
@@ -1347,6 +1756,9 @@
 <!-- ── BOOK GRAMMAR LENSES ───────────────────────────── -->
 <script src="./data/books/soumatome/grammar-lens-sm-n3.js"></script>
 <script src="./data/books/soumatome/grammar-lens-sm-n4.js"></script>
+<script src="./data/books/irodori/grammar-lens-ir-a1.js"></script>
+<script src="./data/books/irodori/grammar-lens-ir-a2-1.js"></script>
+<script src="./data/books/irodori/grammar-lens-ir-a2-2.js"></script>
 
 <!-- ── SOURCES + INDEXES ─────────────────────────────── -->
 <script src="./data/books/sources.js"></script>
@@ -1379,6 +1791,12 @@
 <script src="./js/dna-summarizer.js"></script>
 <script src="./js/ai-proxy.js"></script>
 <script src="./js/offline-ai-cache.js"></script>
+<!-- AI Content Engine (Phase 5.5b) — feature-flagged. Nothing runs unless
+     localStorage.nn_feature_ai_quiz_gen === '1'. Load order: validator
+     must precede content-engine (content-engine calls AIValidator). -->
+<script src="./js/ai-validator.js"></script>
+<script src="./js/ai-feedback.js"></script>
+<script src="./js/ai-content-engine.js"></script>
 <script src="./js/ai-tutor.js"></script>
 <script src="./js/sync-hook.js"></script>
 
@@ -1396,16 +1814,23 @@
 <script src="./js/lang/lang-core.js"></script>
 <script src="./js/quiz-typetr.js"></script>
 <script src="./js/detail.js"></script>
+<script src="./js/pages/materi-hub.js"></script>
 <!-- JS: orchestrator — always last -->
 <script src="./js/quiz-generator.js"></script>
 <script src="./js/quiz-engine-v2.js"></script>
 <script src="./js/quiz-vocab.js"></script>
 <script src="./js/quiz-mixed.js"></script>
+<!-- AI quiz mode (Phase 5.5b) — chains setQuizMode/startQuiz. After quiz-mixed (last chain). -->
+<script src="./js/ai-quiz-mode.js"></script>
 <script src="./js/daily-word.js"></script>
 <script src="./js/browse-vocab.js"></script>
 <script src="./js/vocab-detail.js"></script>
 <script src="./js/global-search.js"></script>
 <script src="./js/analytics.js"></script>
+<!-- JS: Phase 3 — Onboarding / Settings / About -->
+<script src="./js/pages/onboarding.js"></script>
+<script src="./js/pages/settings.js"></script>
+<script src="./js/pages/about.js"></script>
 <script src="./js/app.js"></script>
 
 <!-- ══ VOCAB DETAIL MODAL ══ -->

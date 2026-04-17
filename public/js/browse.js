@@ -201,6 +201,27 @@ function setCat(cat, btn) {
 function filterSearch(val) { searchText = val; render(); }
 
 // ── Render ──
+// ── Skeleton helper ──────────────────────────────────────────────
+function showSkeleton(container, count) {
+  count = count || 6;
+  var html = '<div class="sk-section">'
+    + '<div class="sk-section-hdr sk-shimmer"></div>'
+    + '<div class="sk-grid">';
+  for (var i = 0; i < count; i++) {
+    html += '<div class="sk-card">'
+      + '<div class="sk-line sk-line--md sk-shimmer"></div>'
+      + '<div class="sk-line sk-line--lg sk-shimmer"></div>'
+      + '<div class="sk-line sk-line--sm sk-shimmer"></div>'
+      + '<div style="display:flex;gap:6px;margin-top:auto;padding-top:0.5rem">'
+      + '<div class="sk-line sk-line--tag sk-shimmer"></div>'
+      + '<div class="sk-line sk-line--tag sk-shimmer"></div>'
+      + '</div>'
+      + '</div>';
+  }
+  html += '</div></div>';
+  container.innerHTML = html;
+}
+
 function render() {
   const main = document.getElementById('main');
   if (!main) return;

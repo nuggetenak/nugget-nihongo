@@ -294,6 +294,7 @@ body {
   background: var(--surface);
   color: var(--text);
   padding: 0.6rem 1.25rem;
+  padding-bottom: max(0.6rem, env(safe-area-inset-bottom, 0px));
   display: flex; align-items: center;
   justify-content: space-between; gap: 0.75rem;
   font-size: var(--text-xs);
@@ -499,6 +500,7 @@ body.light .tab-nav {
 }
 .tab-btn.active { color: var(--text); }
 .tab-btn.active::after { opacity: 1; transform: scaleX(1); }
+.tab-btn--hidden { display: none !important; }
 .tab-icon { font-size: 1.2rem; line-height: 1; display: block; }
 @media (min-width: 768px) {
   .tab-nav {
@@ -1300,6 +1302,16 @@ body.light .tab-nav {
   font-family: 'DM Sans', sans-serif; letter-spacing: 0.03em;
 }
 .mode-btn.active .mode-label { color: var(--accent); }
+/* AI quiz mode button (Phase 5.5b — only visible when feature flag on) */
+.mode-btn--ai { border-style: dashed; }
+.mode-btn--ai .mode-icon { filter: hue-rotate(200deg); }
+.mode-badge {
+  display: inline-block; font-size: 0.5rem; font-weight: 700;
+  background: var(--accent); color: #fff;
+  padding: 1px 5px; border-radius: 8px;
+  vertical-align: middle; margin-left: 4px; letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
 
 /* ══════════════════════════════════════
    FILL-IN QUIZ CARD
@@ -3292,3 +3304,279 @@ body.light {
   border-radius: 0 0 8px 8px;
 }
 .cat-group-body.open { display: flex; }
+
+/* ══════════════════════════════════════════════════════════════════
+   §23 Skeleton / Loading States (B6)
+   shimmer animation for grammar cards before data renders
+══════════════════════════════════════════════════════════════════ */
+@keyframes sk-shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.sk-shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--surface-2) 25%,
+    var(--surface-3) 50%,
+    var(--surface-2) 75%
+  );
+  background-size: 200% 100%;
+  animation: sk-shimmer 1.6s ease-in-out infinite;
+  border-radius: 6px;
+}
+
+.sk-section { margin-bottom: 1.5rem; }
+
+.sk-section-hdr {
+  height: 0.9rem;
+  width: 140px;
+  margin-bottom: 0.85rem;
+}
+
+.sk-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 0.85rem;
+}
+@media (max-width: 520px) { .sk-grid { grid-template-columns: 1fr; } }
+
+.sk-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  min-height: 130px;
+}
+
+.sk-line {
+  height: 0.8rem;
+  border-radius: 5px;
+}
+.sk-line--sm   { width: 32%; }
+.sk-line--md   { width: 56%; }
+.sk-line--lg   { width: 78%; }
+.sk-line--full { width: 100%; }
+.sk-line--tag  { height: 1.4rem; width: 48px; border-radius: 20px; }
+
+/* ══════════════════════════════════════════════════════════════════
+   §24 Materi Hub (Phase 2)
+══════════════════════════════════════════════════════════════════ */
+
+/* ── Hub wrapper ──────────────────────────────────────────────── */
+.materi-panel { display: none; }
+
+.hub-wrap {
+  padding: 1.25rem 1rem 5rem;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.hub-intro { margin-bottom: 1.5rem; text-align: center; }
+.hub-title  { font-size: var(--text-lg); font-weight: 700; margin-bottom: 0.3rem; }
+.hub-subtitle { font-size: var(--text-sm); color: var(--muted); }
+
+/* ── Two doors ────────────────────────────────────────────────── */
+.hub-doors {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.hub-door {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 1.25rem;
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  cursor: pointer;
+  transition: border-color 0.15s, transform 0.1s;
+  text-align: left;
+  width: 100%;
+  font-family: 'DM Sans', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+.hub-door:active { transform: scale(0.98); }
+.hub-door--jlpt:hover, .hub-door--jlpt:focus-visible { border-color: var(--accent); }
+.hub-door--buku:hover, .hub-door--buku:focus-visible { border-color: var(--n3); }
+
+.hub-door-emoji { font-size: 2rem; line-height: 1; }
+.hub-door-title { font-size: var(--text-base); font-weight: 700; color: var(--text); }
+.hub-door-desc  { font-size: var(--text-sm); color: var(--muted); }
+
+.hub-door-pills { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.25rem; }
+.hub-level-pip  {
+  font-size: 11px; font-weight: 700; padding: 2px 8px;
+  border-radius: 20px; color: white;
+  background: var(--muted);
+}
+.hub-level-pip.n5 { background: var(--n5); }
+.hub-level-pip.n4 { background: var(--n4); }
+.hub-level-pip.n3 { background: var(--n3); }
+.hub-level-pip.n2 { background: var(--n2); }
+.hub-level-pip.n1 { background: var(--n1); }
+
+.hub-door-books { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.25rem; }
+.hub-book-chip  {
+  font-size: 11px; padding: 2px 8px;
+  border-radius: 20px; background: var(--surface-2);
+  color: var(--muted); border: 1px solid var(--border);
+}
+
+/* ── Flat browse CTA ──────────────────────────────────────────── */
+.hub-see-all {
+  width: 100%; padding: 0.85rem;
+  background: transparent; border: 1px dashed var(--border-2);
+  border-radius: 12px; color: var(--muted);
+  font-size: var(--text-sm); font-family: 'DM Sans', sans-serif;
+  cursor: pointer; transition: color 0.15s, border-color 0.15s;
+}
+.hub-see-all:hover { color: var(--text); border-color: var(--accent); }
+
+/* ── Back bar ─────────────────────────────────────────────────── */
+.hub-back-row {
+  display: flex; align-items: center; gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+.hub-back-btn {
+  background: var(--surface-2); border: 1px solid var(--border);
+  border-radius: 8px; padding: 0.4rem 0.85rem;
+  font-size: var(--text-sm); font-family: 'DM Sans', sans-serif;
+  color: var(--text); cursor: pointer; white-space: nowrap;
+  -webkit-tap-highlight-color: transparent;
+}
+.hub-back-btn:active { opacity: 0.7; }
+.hub-panel-title { font-size: var(--text-base); font-weight: 700; }
+
+/* ── Chapter-back bar (inside flat browse) ────────────────────── */
+.hub-chapter-back-bar {
+  padding: 0.5rem 1rem 0;
+  display: none;
+}
+
+/* ── JLPT level grid ──────────────────────────────────────────── */
+.hub-jlpt-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 0.85rem;
+}
+
+.hub-level-card {
+  display: flex; flex-direction: column; align-items: center; gap: 0.35rem;
+  padding: 1.1rem 0.75rem;
+  background: var(--surface); border: 2px solid var(--border);
+  border-radius: 14px; cursor: pointer; transition: border-color 0.15s, transform 0.1s;
+  font-family: 'DM Sans', sans-serif; text-align: center;
+  -webkit-tap-highlight-color: transparent;
+}
+.hub-level-card:active { transform: scale(0.96); }
+.hub-level-card.n5 { border-color: var(--n5); }
+.hub-level-card.n4 { border-color: var(--n4); }
+.hub-level-card.n3 { border-color: var(--n3); }
+.hub-level-card.n2 { border-color: var(--n2); }
+.hub-level-card.n1 { border-color: var(--n1); }
+.hub-level-card:hover { opacity: 0.85; }
+
+.hub-level-label { font-size: 1.3rem; font-weight: 800; }
+.hub-level-name  { font-size: 11px; color: var(--muted); }
+.hub-level-count { font-size: var(--text-xs); color: var(--text); }
+
+/* ── Progress bar (used in hub cards) ────────────────────────── */
+.hub-progress-wrap {
+  width: 100%; height: 5px;
+  background: var(--border); border-radius: 3px; overflow: hidden;
+  margin-top: 0.4rem;
+}
+.hub-progress-bar {
+  height: 100%; background: var(--accent); border-radius: 3px;
+  transition: width 0.3s ease;
+}
+.hub-progress-label {
+  font-size: 10px; color: var(--muted); margin-top: 2px;
+  text-align: center;
+}
+
+/* ── Buku series grid ─────────────────────────────────────────── */
+.buku-series-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
+  gap: 0.85rem;
+}
+
+.hub-series-card {
+  display: flex; flex-direction: column; gap: 0.3rem;
+  padding: 1rem; background: var(--surface);
+  border: 2px solid var(--border); border-radius: 14px;
+  cursor: pointer; transition: border-color 0.15s, transform 0.1s;
+  font-family: 'DM Sans', sans-serif; text-align: left;
+  -webkit-tap-highlight-color: transparent;
+}
+.hub-series-card:not(.hub-series-card--soon):active { transform: scale(0.97); }
+.hub-series-card.n5 { border-color: var(--n5); }
+.hub-series-card.n4 { border-color: var(--n4); }
+.hub-series-card.n3 { border-color: var(--n3); }
+.hub-series-card--soon { opacity: 0.5; cursor: default; }
+
+.hub-series-emoji { font-size: 1.6rem; line-height: 1; margin-bottom: 0.2rem; }
+.hub-series-title { font-size: var(--text-sm); font-weight: 700; color: var(--text); }
+.hub-series-sub   { font-size: 11px; color: var(--muted); }
+.hub-series-count { font-size: 11px; color: var(--text); margin-top: 0.25rem; }
+.hub-series-soon  {
+  font-size: 10px; font-weight: 700; color: var(--muted);
+  background: var(--surface-2); border-radius: 20px;
+  padding: 2px 8px; margin-top: 0.25rem; display: inline-block;
+}
+
+/* ── Chapter/lesson grid ──────────────────────────────────────── */
+.chapter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  gap: 0.65rem;
+}
+
+.chapter-card {
+  display: flex; flex-direction: column; align-items: center; gap: 0.25rem;
+  padding: 0.75rem 0.5rem;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 10px; cursor: pointer;
+  transition: border-color 0.15s, transform 0.1s;
+  font-family: 'DM Sans', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+.chapter-card:active  { transform: scale(0.95); }
+.chapter-card--done   { border-color: var(--accent); background: var(--surface-2); }
+.chapter-label { font-size: var(--text-sm); font-weight: 700; }
+.chapter-count { font-size: 10px; color: var(--muted); }
+.chapter-pip-wrap {
+  width: 100%; height: 3px;
+  background: var(--border); border-radius: 2px; overflow: hidden; margin-top: 2px;
+}
+.chapter-pip {
+  height: 100%; background: var(--accent); border-radius: 2px;
+}
+
+/* ── Detail modal: lens breadcrumbs (§14.7) ───────────────────── */
+.detail-lens-breadcrumbs {
+  margin-top: 1.25rem; padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+.detail-lens-label {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.05em; color: var(--muted); margin-bottom: 0.6rem;
+}
+.detail-lens-item {
+  display: flex; align-items: center; gap: 0.4rem;
+  padding: 0.4rem 0.65rem; margin-bottom: 0.35rem;
+  background: var(--surface-2); border-radius: 8px;
+  font-size: var(--text-sm);
+}
+.detail-lens-emoji  { flex-shrink: 0; }
+.detail-lens-title  { font-weight: 600; color: var(--text); }
+.detail-lens-loc    { color: var(--muted); font-size: var(--text-xs); }

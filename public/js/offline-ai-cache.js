@@ -436,7 +436,165 @@ window.offlineAI = {
   saveQuiz: function (key, quiz) {
     return txPut(STORE_QUIZZES, { id: key, quiz: quiz, ts: Date.now() });
   },
+
+  // Remove a specific quiz from cache (called by ai-feedback on quarantine)
+  removeQuiz: function (key) {
+    return new Promise(function (resolve) {
+      if (!_db) { resolve(); return; }
+      try {
+        var tx = _db.transaction([STORE_QUIZZES], 'readwrite');
+        tx.objectStore(STORE_QUIZZES).delete(key);
+        tx.oncomplete = resolve;
+        tx.onerror = resolve; // non-critical, don't reject
+      } catch { resolve(); }
+    });
+  },
+
+  // Load fallback quiz drills (served when all AI providers are down, §15.5 item 4)
+  // Returns array of questions from /data/fallback/quiz-drills.json, filtered by level.
+  getFallbackDrills: function (level) {
+    return fetch('./data/fallback/quiz-drills.json')
+      .then(function (r) { return r.ok ? r.json() : []; })
+      .then(function (all) {
+        if (!level) return all;
+        var lvl = String(level).toLowerCase();
+        return all.filter(function (q) { return !q.level || q.level === lvl; });
+      })
+      .catch(function () { return []; });
+  },
 };
+
+// ── Pre-generation scheduler (Phase 5.5b §15.4) ──────────────────
+// Fires background AI quiz generation when conditions are met:
+//   1. App opens + wifi + battery>50% (or charging)
+//   2. Session ends (after review)
+//   3. User idles on a card for >30s
+//   4. Night-time hour in user's timezone (~22:00-06:00)
+// Generated quizzes are saved to the quiz cache store (L3).
+// This runs ONLY if nn_feature_ai_quiz_gen === '1'.
+(function initPreGenScheduler() {
+  var PREGEN_FLAG  = 'nn_feature_ai_quiz_gen';
+  var PREGEN_LAST  = 'nn_pregen_last_run'; // ISO date — cap to once per hour per trigger
+  var PREGEN_COOLDOWN_MS = 60 * 60 * 1000; // 1 hour
+
+  function _featureOn() {
+    try { return localStorage.getItem(PREGEN_FLAG) === '1'; } catch { return false; }
+  }
+
+  function _cooledDown() {
+    try {
+      var last = localStorage.getItem(PREGEN_LAST);
+      if (!last) return true;
+      return Date.now() - new Date(last).getTime() > PREGEN_COOLDOWN_MS;
+    } catch { return true; }
+  }
+
+  function _markRun() {
+    try { localStorage.setItem(PREGEN_LAST, new Date().toISOString()); } catch {}
+  }
+
+  // Best-effort battery check — returns true if we should NOT run (low battery)
+  function _batteryLow() {
+    if (!navigator.getBattery) return false; // API absent — assume OK
+    return navigator.getBattery().then(function (b) {
+      return !b.charging && b.level < 0.5;
+    }).catch(function () { return false; });
+  }
+
+  // Infer the level the user is currently most active on
+  function _inferActiveLevel() {
+    try {
+      var prog = window.progress || {};
+      var counts = { n5: 0, n4: 0, n3: 0, n2: 0, n1: 0 };
+      Object.keys(prog).forEach(function (id) {
+        var m = id.match(/-(n\d)-/);
+        if (m && counts[m[1]] !== undefined) counts[m[1]]++;
+      });
+      var best = Object.entries(counts).sort(function (a, b) { return b[1] - a[1]; })[0];
+      return (best && best[1] > 0) ? best[0] : 'n5';
+    } catch { return 'n5'; }
+  }
+
+  // Gather grammar IDs due tomorrow (or recently due) as pre-gen targets
+  function _getDueTargets(level) {
+    try {
+      if (!window.srsDueToday) return [];
+      var due = window.srsDueToday();
+      return due
+        .filter(function (c) { return !c.id || c.id.indexOf('-' + level + '-') >= 0; })
+        .slice(0, 5)
+        .map(function (c) { return { target: c.pattern || c.word || c.id, target_id: c.id, level: level }; });
+    } catch { return []; }
+  }
+
+  // Fire one pre-gen job — quietly generates and caches quiz questions
+  function _firePreGen(reason) {
+    if (!_featureOn() || !_cooledDown()) return;
+    if (!window.AIContentEngine || !window.AIContentEngine.isEnabled()) return;
+    if (!window.offlineAI || !window.offlineAI.ready) return;
+
+    var level = _inferActiveLevel();
+    var targets = _getDueTargets(level);
+    if (!targets.length) return;
+
+    _markRun();
+    console.log('[offline-ai-cache] pre-gen triggered (' + reason + ') level=' + level + ' targets=' + targets.length);
+
+    targets.forEach(function (t) {
+      var cacheKey = 'pregen:' + level + ':' + (t.target_id || t.target).slice(0, 40);
+      window.offlineAI.getQuiz(cacheKey).then(function (cached) {
+        if (cached) return; // already have it
+        return window.AIContentEngine.generateQuiz({
+          target:    t.target,
+          target_id: t.target_id,
+          level:     level,
+          count:     5,
+          type:      'mcq',
+        }).then(function (result) {
+          if (result && result.questions && result.questions.length) {
+            window.offlineAI.saveQuiz(cacheKey, result.questions);
+            console.log('[offline-ai-cache] pre-gen cached', cacheKey, result.questions.length + ' questions');
+          }
+        });
+      }).catch(function (e) {
+        console.warn('[offline-ai-cache] pre-gen failed for', cacheKey, e.message);
+      });
+    });
+  }
+
+  // Trigger 1: app-open
+  window.addEventListener('load', function () {
+    Promise.resolve(_batteryLow()).then(function (low) {
+      if (!low && navigator.onLine !== false) _firePreGen('app-open');
+    });
+  });
+
+  // Trigger 2: visibility-change (user returns to tab after being away)
+  document.addEventListener('visibilitychange', function () {
+    if (!document.hidden) {
+      Promise.resolve(_batteryLow()).then(function (low) {
+        if (!low && navigator.onLine !== false) _firePreGen('tab-focus');
+      });
+    }
+  });
+
+  // Trigger 3: night-time check (run once if local hour is 22:00-06:00)
+  (function nightCheck() {
+    var h = new Date().getHours();
+    if (h >= 22 || h < 6) {
+      setTimeout(function () {
+        _firePreGen('night-time');
+      }, 5000); // 5s delay so other inits finish first
+    }
+  })();
+
+  // Trigger 4: idle-on-card — exposed for quiz-generator.js to call
+  // when user spends >30s on a card detail.
+  window._preGenOnCardIdle = function (target, target_id, level) {
+    if (!_featureOn() || !_cooledDown()) return;
+    _firePreGen('card-idle:' + (target_id || target));
+  };
+})();
 
 // Auto-init
 window.offlineAI.init();

@@ -205,6 +205,17 @@ function _buildContext() {
   const ctx = { ...(aiContext || {}) };
   ctx.mode = aiMode;
 
+  // Inject learner goals from onboarding (Phase 5 §5.3 — system prompt uses
+  // {goals} to prioritize relevant examples). Set during Phase 3 onboarding;
+  // empty array if user skipped or on pre-Phase-3 installs.
+  try {
+    const rawGoals = localStorage.getItem('nn_goals');
+    if (rawGoals) {
+      const goals = JSON.parse(rawGoals);
+      if (Array.isArray(goals) && goals.length) ctx.goals = goals;
+    }
+  } catch {}
+
   // Add weak cards from FSRS
   try {
     if (window.srsDueToday) {

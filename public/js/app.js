@@ -9,6 +9,7 @@
 //    → fsrs-engine.js → gamification.js → streak.js
 //    → backup-restore.js → ai-tutor.js → analytics.js
 //    → swipe.js → browse.js → quiz.js → feature files...
+//    → pages/onboarding.js → pages/settings.js → pages/about.js
 //    → app.js  ← this file, always last
 // ══════════════════════════════════════
 
@@ -26,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (window.buildGrammarIndex) window.buildGrammarIndex();
 
   if (window.browseInit) window.browseInit(); // browse.js
+  if (window.hubInit)   window.hubInit();    // materi-hub.js (Phase 2)
 
   // AI Tutor + Analytics init
   if (window.initAITutor)   window.initAITutor();
@@ -39,6 +41,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const wb = document.getElementById('welcomeBanner');
     if (wb) wb.style.display = 'none';
   }
+
+  // Phase 3 — Onboarding / Settings / About
+  if (window.initOnboarding)    window.initOnboarding();    // pages/onboarding.js
+  if (window.initSettingsPage)  window.initSettingsPage();  // pages/settings.js
+  if (window.initAboutPage)     window.initAboutPage();     // pages/about.js
 });
 
 // ── Tab switch router ───────────────────────────────────────────
@@ -47,17 +54,19 @@ const _origSwitchTab = window.switchTab;
 window.switchTab = function (tab, btn) {
   if (_origSwitchTab) _origSwitchTab(tab, btn);
 
-  const pages = ['browsePage', 'quizPage', 'senseiPage', 'statsPage'];
+  const pages = ['browsePage', 'quizPage', 'senseiPage', 'statsPage', 'settingsPage', 'aboutPage'];
   pages.forEach(id => {
     const el = document.getElementById(id);
     if (el) el.classList.remove('active');
   });
 
   const pageMap = {
-    browse : 'browsePage',
-    quiz   : 'quizPage',
-    sensei : 'senseiPage',
-    stats  : 'statsPage',
+    browse   : 'browsePage',
+    quiz     : 'quizPage',
+    sensei   : 'senseiPage',
+    stats    : 'statsPage',
+    settings : 'settingsPage',
+    about    : 'aboutPage',
   };
   const targetId = pageMap[tab];
   if (targetId) {
@@ -66,6 +75,8 @@ window.switchTab = function (tab, btn) {
   }
 
   // Tab-specific hooks
-  if (tab === 'sensei' && window._aiTutorOnTabShow)   window._aiTutorOnTabShow();
-  if (tab === 'stats'  && window._analyticsOnTabShow) window._analyticsOnTabShow();
+  if (tab === 'sensei'   && window._aiTutorOnTabShow)   window._aiTutorOnTabShow();
+  if (tab === 'stats'    && window._analyticsOnTabShow) window._analyticsOnTabShow();
+  if (tab === 'settings' && window.initSettingsPage)    window.initSettingsPage();
 };
+
