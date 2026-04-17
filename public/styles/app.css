@@ -3490,22 +3490,31 @@ body.light {
 .hub-chapter-back-bar {
   padding: 0.5rem 1rem 0;
   display: none;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.hub-chapter-back-label {
+  font-size: var(--text-sm);
+  color: var(--muted);
+  font-weight: 600;
 }
 
 /* ── JLPT level grid ──────────────────────────────────────────── */
 .hub-jlpt-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-  gap: 0.85rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(140px, 42vw), 1fr));
+  gap: 0.75rem;
 }
 
 .hub-level-card {
   display: flex; flex-direction: column; align-items: center; gap: 0.35rem;
-  padding: 1.1rem 0.75rem;
+  padding: clamp(0.8rem, 3vw, 1.2rem) 0.75rem;
   background: var(--surface); border: 2px solid var(--border);
   border-radius: 14px; cursor: pointer; transition: border-color 0.15s, transform 0.1s;
   font-family: 'DM Sans', sans-serif; text-align: center;
   -webkit-tap-highlight-color: transparent;
+  width: 100%;
 }
 .hub-level-card:active { transform: scale(0.96); }
 .hub-level-card.n5 { border-color: var(--n5); }
@@ -3515,7 +3524,7 @@ body.light {
 .hub-level-card.n1 { border-color: var(--n1); }
 .hub-level-card:hover { opacity: 0.85; }
 
-.hub-level-label { font-size: 1.3rem; font-weight: 800; }
+.hub-level-label { font-size: clamp(1.1rem, 4vw, 1.4rem); font-weight: 800; }
 .hub-level-name  { font-size: 11px; color: var(--muted); }
 .hub-level-count { font-size: var(--text-xs); color: var(--text); }
 
@@ -3534,11 +3543,17 @@ body.light {
   text-align: center;
 }
 
-/* ── Buku series grid ─────────────────────────────────────────── */
+/* ── Buku series group (per publisher) ────────────────────────── */
+.buku-series-group { margin-bottom: 1.25rem; }
+.buku-series-group-label {
+  font-size: 0.7rem; font-weight: 700; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--muted);
+  margin-bottom: 0.5rem; padding-left: 2px;
+}
 .buku-series-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
-  gap: 0.85rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(150px, 42vw), 1fr));
+  gap: 0.75rem;
 }
 
 .hub-series-card {

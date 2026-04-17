@@ -283,35 +283,50 @@
     if (!panel) return;
     currentView = 'buku';
 
+    var SERIES_GROUPS = [
+      { label: '📘 Sou Matome', ids: ['soumatome-n4', 'soumatome-n3'] },
+      { label: '🌸 Irodori',    ids: ['irodori-a1', 'irodori-a2-1', 'irodori-a2-2'] },
+      { label: '📓 Minna no Nihongo', ids: ['minna-1', 'minna-2'] },
+    ];
+
+    function renderSeriesCard(s) {
+      if (!s.available) {
+        return '<div class="hub-series-card hub-series-card--soon">'
+          + '<div class="hub-series-emoji">' + s.emoji + '</div>'
+          + '<div class="hub-series-title">' + s.title + '</div>'
+          + '<div class="hub-series-sub">' + s.subtitle + '</div>'
+          + '<div class="hub-series-soon">Segera</div>'
+          + '</div>';
+      }
+      var prog = getLensProgress(s.lensVar);
+      return '<button class="hub-series-card ' + s.level + '" onclick="window.showBukuChapters(\'' + s.id + '\')">'
+        + '<div class="hub-series-emoji">' + s.emoji + '</div>'
+        + '<div class="hub-series-title">' + s.title + '</div>'
+        + '<div class="hub-series-sub">' + s.subtitle + '</div>'
+        + '<div class="hub-series-count">' + prog.total + ' pola grammar</div>'
+        + progressBar(prog.done, prog.total)
+        + '</button>';
+    }
+
     panel.innerHTML =
       '<div class="hub-wrap">'
       + '<div class="hub-back-row">'
       + '<button class="hub-back-btn" onclick="window.showMateriHub()">← Kembali</button>'
       + '<div class="hub-panel-title">📚 Jalur Buku</div>'
       + '</div>'
-      + '<div class="buku-series-grid">'
-      + SERIES.map(function(s) {
-          if (!s.available) {
-            return '<div class="hub-series-card hub-series-card--soon">'
-              + '<div class="hub-series-emoji">' + s.emoji + '</div>'
-              + '<div class="hub-series-title">' + s.title + '</div>'
-              + '<div class="hub-series-sub">' + s.subtitle + '</div>'
-              + '<div class="hub-series-soon">Segera</div>'
-              + '</div>';
-          }
-          var prog = getLensProgress(s.lensVar);
-          return '<button class="hub-series-card ' + s.level + '" onclick="window.showBukuChapters(\'' + s.id + '\')">'
-            + '<div class="hub-series-emoji">' + s.emoji + '</div>'
-            + '<div class="hub-series-title">' + s.title + '</div>'
-            + '<div class="hub-series-sub">' + s.subtitle + '</div>'
-            + '<div class="hub-series-count">' + prog.total + ' pola grammar</div>'
-            + progressBar(prog.done, prog.total)
-            + '</button>';
+      + SERIES_GROUPS.map(function(group) {
+          var items = group.ids.map(function(id) {
+            return SERIES.find(function(s) { return s.id === id; });
+          }).filter(Boolean);
+          return '<div class="buku-series-group">'
+            + '<div class="buku-series-group-label">' + group.label + '</div>'
+            + '<div class="buku-series-grid">'
+            + items.map(renderSeriesCard).join('')
+            + '</div></div>';
         }).join('')
-      + '</div>'
       + '</div>';
 
-    PANELS.forEach(function(p) {
+        PANELS.forEach(function(p) {
       var el = document.getElementById(p);
       if (el) el.style.display = (p === 'bukuDoorPanel') ? 'block' : 'none';
     });
@@ -416,6 +431,19 @@
     // Reset to "all" level
     var pillAll = document.getElementById('pill-all');
     if (window.pillLevel && pillAll) window.pillLevel('all', pillAll);
+    // Add back bar → Hub
+    var backBar = document.getElementById('hubChapterBackBar');
+    if (!backBar) {
+      backBar = document.createElement('div');
+      backBar.id = 'hubChapterBackBar';
+      backBar.className = 'hub-chapter-back-bar';
+      var wrap = document.getElementById('main');
+      if (wrap && wrap.parentNode) wrap.parentNode.insertBefore(backBar, wrap);
+    }
+    backBar.innerHTML = '<button class="hub-back-btn" onclick="window.showMateriHub()">← Pilih Jalur</button>'
+      + '<span class="hub-chapter-back-label">Semua Grammar</span>';
+    backBar.style.display = '';
+    window._hubPrevView = null;
   };
 
   // ── Browse filtered to a JLPT level ─────────────────────────
@@ -429,6 +457,19 @@
     if (window.pillLevel && pill) {
       window.pillLevel(level, pill);
     }
+    // Add back bar → Jalur JLPT
+    var backBar = document.getElementById('hubChapterBackBar');
+    if (!backBar) {
+      backBar = document.createElement('div');
+      backBar.id = 'hubChapterBackBar';
+      backBar.className = 'hub-chapter-back-bar';
+      var wrap = document.getElementById('main');
+      if (wrap && wrap.parentNode) wrap.parentNode.insertBefore(backBar, wrap);
+    }
+    var levelNames = { n5:'N5 · Dasar', n4:'N4 · Dasar Menengah', n3:'N3 · Menengah', n2:'N2 · Mahir', n1:'N1 · Mahir Tinggi' };
+    backBar.innerHTML = '<button class="hub-back-btn" onclick="window.showJlptDoor()">← Jalur JLPT</button>'
+      + '<span class="hub-chapter-back-label">' + (levelNames[level] || level.toUpperCase()) + '</span>';
+    backBar.style.display = '';
     // Store where we came from so back works
     window._hubPrevView = 'jlpt';
   };
