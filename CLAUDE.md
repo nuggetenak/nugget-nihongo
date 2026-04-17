@@ -28,7 +28,7 @@ public/              ← deploy root (Cloudflare Pages serves this)
     [+ 25 other feature modules]
   data/              ← content database as JS files
     vocab/           ← vocab-n5 (725) · n4 (692) · n3 (285) · n2 (130) · n1 (60)
-    grammar/         ← grammar-n5 (94) · n4 (92) · n3 (103) · n2 (90) · n1 (60) + grammar-index.js
+    grammar/         ← grammar-n5 (94) · n4 (92) · n3 (119) · n2 (90) · n1 (60) + grammar-index.js
     books/           ← book index files + Soumatome grammar lenses (N3: 132, N4: 102)
                         + Irodori grammar lenses (A1: 61, A2-1: 65, A2-2: 62)
     tracks/          ← study track definitions (runtime-populated)
@@ -51,7 +51,7 @@ tools/               ← build/migration scripts (gitignored)
 ## CURRENT STATE (v15.7.0)
 
 ### What works
-- Grammar DB: N5 (94), N4 (92), N3 (103) — full coverage, 5-digit IDs, examples, descriptions
+- Grammar DB: N5 (94), N4 (92), N3 (119) — full coverage, 5-digit IDs, examples, descriptions
 - Grammar DB: N2 (90), N1 (60) — partial, good working coverage for common patterns
 - Vocab DB: N5 (725), N4 (692), N3 (285) — 5-digit IDs, bilingual examples
 - Vocab DB: N2 (130), N1 (60) — partial seed, usable for basic coverage
