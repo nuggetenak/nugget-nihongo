@@ -1,5 +1,29 @@
 # Changelog — Nugget Nihongo
 
+## v15.7.0 (18 April 2026)
+- Content Population Batch A: +375 entries via 10-agent pipeline
+  - vocab-n3: 150→285 entries (+135: movement verbs, adjectives, society nouns)
+  - vocab-n2: 50→130 entries (+80: formal verbs, abstract nouns)
+  - vocab-n1: 20→60 entries (+40: advanced abstract nouns)
+  - grammar-n2: 30→90 entries (+60: connective patterns, modality)
+  - grammar-n1: 0→60 entries (+60: core N1 & keigo patterns — file was empty placeholder)
+- QA fixes: 9 confusion_pairs bidirectionality issues resolved before push
+- Docs audit: stale counts fixed across MASTER-AUDIT, ARCHITECTURE, CLAUDE, _MAP, CLAUDE-CODE-TASKS, README
+- README: fixed wrong GitHub org URL (nugget-nihongo → nuggetenak), live URL, vocab/grammar counts, SRS algo label
+
+## v15.6.1 (16–17 April 2026)
+- TASK-CC-1: Deleted stale claude/frontend-overhaul branch
+- TASK-CC-2: Fixed level pill order in index.html (N5→N4→N3→N2→N1)
+- TASK-CC-3: Fixed header branding (日本語総まとめ → Nugget Nihongo)
+- TASK-CC-6: Fixed auth button visibility (display:none → JS-controlled)
+- Tasks 4 (TASK 4–7 from 15 Apr audit): grammar_ids filled for Irodori A1/A2-1/A2-2
+- Tasks 5: grammar lens content filled for Irodori A2-1 (65 entries) and A2-2 (62 entries)
+- grammar-n5: 80→94 entries (14 added via Tasks 4+6)
+- grammar-n4: 90→92 entries (2 added via Task 4)
+- vocab-n3: 70→100→150 entries (seed batches A+B)
+- Supabase: 7 tables deployed, RLS enabled, CDN uncommented in index.html
+- Cloudflare Pages: deployed and serving live
+
 ## v15.6.0 (10 April 2026) — Enterprise Restructure + AI Infrastructure + Full Codebase Audit
 
 ### Bug Fixes (Critical — app crashed on startup)
