@@ -259,6 +259,115 @@ bookLenses.forEach(({ obj, name }) => {
   assert(broken === 0, `${name}: ${broken} vocab_ids not found in vocabDB`);
 });
 
+// ── AI Validator rules (Phase 5.5a §15.2 stage 3) ──
+console.log('\n── AI Validator ──');
+(function testAIValidator() {
+  // Load the module (supports both CJS export and window global)
+  const V = require(path.join(ROOT, 'public/js/ai-validator.js'));
+  if (!V || typeof V.validateQuizQuestion !== 'function') {
+    assert(false, 'ai-validator.js: validateQuizQuestion not exported');
+    return;
+  }
+
+  // Build a small vocab level index for tests (N5: 食べる, N4: 始める, N3: 実施)
+  const vocabLevelIndex = V.buildVocabLevelIndex({
+    n5: [{ kanji: '食べる' }, { kanji: '水' }],
+    n4: [{ kanji: '始める' }, { kanji: '準備' }],
+    n3: [{ kanji: '実施' }],
+  });
+  assert(vocabLevelIndex.get('食べる') === 'n5', 'validator: index n5 entry');
+  assert(vocabLevelIndex.get('実施') === 'n3', 'validator: index n3 entry');
+
+  // ── R1 schema ──
+  const okMCQ = {
+    id: 'aig-001', type: 'mcq', level: 'n4',
+    prompt: '日本に行く___、お金をためている。',
+    answer: 'ために',
+    choices: ['ために', 'ように', 'ので', 'から'],
+  };
+  assert(V.validateQuizQuestion(okMCQ, { target: 'ために', level: 'n4' }).pass,
+    'validator: well-formed MCQ passes');
+
+  const missingField = { id: 'x', type: 'mcq', level: 'n4', prompt: '...', choices: ['a', 'b'] };
+  let r = V.validateQuizQuestion(missingField);
+  assert(!r.pass && r.failures.some(f => f.includes('answer')), 'validator: missing answer field fails R1');
+
+  const badType = { ...okMCQ, type: 'essay' };
+  r = V.validateQuizQuestion(badType, { target: 'ために', level: 'n4' });
+  assert(!r.pass && r.failures.some(f => f.includes('R1')), 'validator: invalid type fails R1');
+
+  // ── R2 target present ──
+  const targetMissing = { ...okMCQ, prompt: '水を飲む', answer: 'ので', choices: ['ので', 'から', 'のに', 'ように'] };
+  r = V.validateQuizQuestion(targetMissing, { target: 'ために', level: 'n4' });
+  assert(!r.pass && r.failures.some(f => f.includes('R2')), 'validator: missing target pattern fails R2');
+
+  // R2 satisfied when target is in answer (common for MCQ)
+  const targetInAnswer = { ...okMCQ, prompt: '水を飲む___、コップを買った。', answer: 'ために' };
+  r = V.validateQuizQuestion(targetInAnswer, { target: 'ために', level: 'n4' });
+  assert(r.pass, 'validator: target-in-answer counts for R2');
+
+  // ── R3 no spoiler ──
+  const spoilered = { ...okMCQ, prompt: '答えはために です。なに？', answer: 'ために' };
+  r = V.validateQuizQuestion(spoilered, { target: 'ために', level: 'n4' });
+  assert(!r.pass && r.failures.some(f => f.includes('R3')), 'validator: answer verbatim in prompt fails R3');
+
+  // Short answers (particle-like) skip R3 to avoid false positives
+  const shortAnswerOK = { id: 'x', type: 'mcq', level: 'n5',
+    prompt: '私は学校___行く', answer: 'に',
+    choices: ['に', 'で', 'を', 'が'] };
+  r = V.validateQuizQuestion(shortAnswerOK, { level: 'n5' });
+  assert(r.pass, 'validator: short particle answer not flagged as spoiler');
+
+  // ── R4 level leak ──
+  const levelLeak = {
+    id: 'x', type: 'mcq', level: 'n5',
+    prompt: '実施する___、水を飲む。',
+    answer: 'ために',
+    choices: ['ために', 'ように', 'ので', 'から'],
+  };
+  r = V.validateQuizQuestion(levelLeak, { target: 'ために', level: 'n5', vocabLevelIndex });
+  assert(!r.pass && r.failures.some(f => f.includes('R4')), 'validator: N3 vocab in N5 prompt fails R4');
+
+  // Same prompt at N3 level — should pass R4
+  const sameAtN3 = { ...levelLeak, level: 'n3' };
+  r = V.validateQuizQuestion(sameAtN3, { target: 'ために', level: 'n3', vocabLevelIndex });
+  const hasR4 = r.failures.some(f => f.includes('R4'));
+  assert(!hasR4, 'validator: N3 vocab OK at N3 level (no R4)');
+
+  // ── R5 mojibake ──
+  assert(V.checkMojibake('normal text') === false, 'validator: plain text is not mojibake');
+  assert(V.checkMojibake('日本語') === false, 'validator: Japanese is not mojibake');
+  assert(V.checkMojibake('bad\uFFFDchar') === true, 'validator: U+FFFD is mojibake');
+
+  const mojibaked = { ...okMCQ, prompt: 'bad\uFFFDtext' };
+  r = V.validateQuizQuestion(mojibaked, { target: 'ために', level: 'n4' });
+  assert(!r.pass && r.failures.some(f => f.includes('R5')), 'validator: mojibake in prompt fails R5');
+
+  // ── R6 distractor quality ──
+  const dupChoices = { ...okMCQ, choices: ['ために', 'ために', 'ので', 'から'] };
+  r = V.validateQuizQuestion(dupChoices, { target: 'ために', level: 'n4' });
+  assert(!r.pass && r.failures.some(f => f.includes('R6')), 'validator: duplicate choices fails R6');
+
+  const substrDistractor = {
+    ...okMCQ, answer: 'ために',
+    choices: ['ために', 'ため', 'ので', 'から'],
+  };
+  r = V.validateQuizQuestion(substrDistractor, { target: 'ために', level: 'n4' });
+  assert(!r.pass && r.failures.some(f => f.includes('R6')), 'validator: substring distractor fails R6');
+
+  // ── R7 answer in choices ──
+  const answerMissing = { ...okMCQ, answer: 'のに', choices: ['ために', 'ように', 'ので', 'から'] };
+  r = V.validateQuizQuestion(answerMissing, { target: 'ために', level: 'n4' });
+  assert(!r.pass && r.failures.some(f => f.includes('R7')), 'validator: answer not in choices fails R7');
+
+  // ── Batch validator ──
+  const batch = [okMCQ, targetMissing, spoilered];
+  const b = V.validateQuizBatch(batch, { target: 'ために', level: 'n4' });
+  assert(b.passing.length === 1, `validator: batch passing count == 1 (got ${b.passing.length})`);
+  assert(b.rejected.length === 2, `validator: batch rejected count == 2 (got ${b.rejected.length})`);
+  assert(b.rejected[0].failures.length > 0, 'validator: rejected items carry failure reasons');
+})();
+
 // ── Sensei persona drift check (Phase 5 §5.6) ──
 // Worker SYSTEM_PROMPT and Edge Function MASTER_SYSTEM_PROMPT must stay
 // byte-identical. If they drift, Sensei's voice becomes inconsistent across
