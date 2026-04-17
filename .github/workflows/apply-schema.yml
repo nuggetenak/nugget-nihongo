@@ -12,61 +12,70 @@ jobs:
         with:
           ref: claude/frontend-overhaul
 
-      - name: Install psql + dnsutils
-        run: sudo apt-get install -y postgresql-client dnsutils
+      - name: Install psql
+        run: sudo apt-get install -y postgresql-client
 
       - name: Extract Phase 5.5 SQL
         run: |
           python3 - << 'PYEOF'
           with open('supabase/schema.sql') as f:
               content = f.read()
-          start = content.find('-- ── AI FEEDBACK (Phase 5.5b')
+          start = content.find('-- \u2500\u2500 AI FEEDBACK (Phase 5.5b')
           if start == -1:
-              raise RuntimeError("Phase 5.5 markers not found")
+              raise RuntimeError("Phase 5.5 marker not found in schema.sql")
           sql = content[start:].strip()
           print(f"Extracted {len(sql)} chars")
           with open('/tmp/phase55.sql', 'w') as f:
               f.write(sql)
           PYEOF
 
-      - name: Resolve Supabase IPv4 + apply schema
+      - name: Apply schema via Session Pooler (IPv4)
         env:
           PGPASSWORD: ${{ secrets.SUPABASE_DB_PASSWORD }}
         run: |
-          # Force IPv4: resolve the hostname to IPv4 address
-          DB_HOST="db.oxeuwkpgrtojjzhcboqz.supabase.co"
-          IPV4=$(dig +short -4 A "$DB_HOST" | head -1)
-          echo "Resolved $DB_HOST → $IPV4"
+          # Session pooler (port 5432) supports DDL and resolves to IPv4
+          # User format: postgres.{project_ref}
+          POOLER="aws-0-ap-southeast-1.pooler.supabase.com"
+          PROJECT="oxeuwkpgrtojjzhcboqz"
+          PGUSER="postgres.${PROJECT}"
+
+          echo "Resolving pooler IPv4..."
+          IPV4=$(python3 -c "
+          import socket
+          results = socket.getaddrinfo('$POOLER', 5432, socket.AF_INET)
+          print(results[0][4][0])
+          " 2>/dev/null || echo "")
+          echo "Pooler IPv4: $IPV4"
 
           if [ -z "$IPV4" ]; then
-            echo "IPv4 resolution failed, trying session pooler..."
-            IPV4=$(dig +short -4 A "aws-0-ap-southeast-1.pooler.supabase.com" | head -1)
-            PGUSER="postgres.oxeuwkpgrtojjzhcboqz"
-            echo "Pooler IPv4: $IPV4"
+            echo "Using hostname directly (may use IPv6)"
+            CONN="host=$POOLER port=5432 dbname=postgres user=$PGUSER sslmode=require"
           else
-            PGUSER="postgres"
+            CONN="host=$IPV4 port=5432 dbname=postgres user=$PGUSER sslmode=require"
           fi
 
-          if [ -z "$IPV4" ]; then
-            echo "ERROR: could not resolve any IPv4 address"
-            exit 1
-          fi
+          echo "Applying schema..."
+          psql "$CONN" -f /tmp/phase55.sql 2>&1
+          EXIT=$?
+          echo "psql exit code: $EXIT"
+          exit $EXIT
 
-          echo "Connecting via $IPV4 as $PGUSER..."
-          PGCONNECT="host=$IPV4 port=5432 dbname=postgres user=$PGUSER sslmode=require"
-
-          psql "$PGCONNECT" -f /tmp/phase55.sql --echo-errors 2>&1
-          echo "psql exit: $?"
-
-      - name: Verify tables
+      - name: Verify tables exist
         env:
           PGPASSWORD: ${{ secrets.SUPABASE_DB_PASSWORD }}
         run: |
-          DB_HOST="db.oxeuwkpgrtojjzhcboqz.supabase.co"
-          IPV4=$(dig +short -4 A "$DB_HOST" | head -1)
-          [ -z "$IPV4" ] && IPV4=$(dig +short -4 A "aws-0-ap-southeast-1.pooler.supabase.com" | head -1)
-          PGUSER=$( [ "$IPV4" = "$(dig +short -4 A "$DB_HOST" | head -1)" ] && echo "postgres" || echo "postgres.oxeuwkpgrtojjzhcboqz" )
+          POOLER="aws-0-ap-southeast-1.pooler.supabase.com"
+          PROJECT="oxeuwkpgrtojjzhcboqz"
+          PGUSER="postgres.${PROJECT}"
+          IPV4=$(python3 -c "
+          import socket
+          try:
+              r = socket.getaddrinfo('$POOLER', 5432, socket.AF_INET)
+              print(r[0][4][0])
+          except: print('')
+          " 2>/dev/null || echo "")
+          HOST=${IPV4:-$POOLER}
+          CONN="host=$HOST port=5432 dbname=postgres user=$PGUSER sslmode=require"
 
-          echo "Checking created tables..."
-          psql "host=$IPV4 port=5432 dbname=postgres user=postgres sslmode=require" \
-            -c "SELECT tablename FROM pg_tables WHERE schemaname='public' AND tablename LIKE 'ai_%' ORDER BY tablename;" 2>&1
+          echo "Tables created:"
+          psql "$CONN" -c "SELECT tablename FROM pg_tables WHERE schemaname='public' AND tablename LIKE 'ai_%' ORDER BY tablename;" 2>&1
