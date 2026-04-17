@@ -10,113 +10,101 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: claude/frontend-overhaul
-
-      - name: Install psycopg2
-        run: pip install psycopg2-binary
-
-      - name: Check tables + apply missing
+      - run: pip install psycopg2-binary
+      - name: Apply schema
         env:
           SUPABASE_DB_PASSWORD: ${{ secrets.SUPABASE_DB_PASSWORD }}
-          GH_PAT: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python3 << 'PYEOF'
-          import os, socket, psycopg2, re, json, urllib.request, sys
+          import os, socket, psycopg2, re, sys, time
 
-          pw  = os.environ['SUPABASE_DB_PASSWORD']
-          pat = os.environ['GH_PAT']
+          pw = os.environ['SUPABASE_DB_PASSWORD']
           project = 'oxeuwkpgrtojjzhcboqz'
+          pooler  = 'aws-0-ap-southeast-1.pooler.supabase.com'
+          user    = f'postgres.{project}'
 
-          # Connect via session pooler (worked last run)
-          host = 'aws-0-ap-southeast-1.pooler.supabase.com'
-          user = f'postgres.{project}'
-          conn = None
+          # Build candidate list: try both direct IP (IPv4) and hostname
+          candidates = []
           for port in [5432, 6543]:
+              # Resolve to IPv4 first
               try:
-                  conn = psycopg2.connect(host=host, port=port, dbname='postgres',
-                    user=user, password=pw, connect_timeout=20, sslmode='require')
-                  print(f'Connected via port {port}')
+                  infos = socket.getaddrinfo(pooler, port, socket.AF_INET)
+                  for info in infos:
+                      ip = info[4][0]
+                      candidates.append({'host': ip, 'port': port, 'user': user,
+                                         'label': f'{pooler}({ip}):{port}'})
+              except Exception as e:
+                  print(f'DNS {pooler}:{port} → {e}')
+              # Also try by hostname
+              candidates.append({'host': pooler, 'port': port, 'user': user,
+                                 'label': f'{pooler}:{port}'})
+          # Direct db fallback
+          candidates.append({'host': f'db.{project}.supabase.co', 'port': 5432,
+                             'user': 'postgres', 'label': 'direct'})
+
+          conn = None
+          for c in candidates:
+              try:
+                  print(f'Trying {c["label"]} ...')
+                  conn = psycopg2.connect(
+                      host=c['host'], port=c['port'], dbname='postgres',
+                      user=c['user'], password=pw,
+                      connect_timeout=15, sslmode='require')
+                  print(f'  OK — server {conn.server_version}')
                   break
               except Exception as e:
-                  print(f'Port {port} failed: {e}')
+                  print(f'  FAIL: {e}')
+                  time.sleep(0.5)
 
           if not conn:
-              # direct fallback
-              try:
-                  conn = psycopg2.connect(host=f'db.{project}.supabase.co',
-                    port=5432, dbname='postgres', user='postgres',
-                    password=pw, connect_timeout=20, sslmode='require')
-                  print('Connected via direct')
-              except Exception as e:
-                  print(f'All connections failed: {e}')
-                  sys.exit(1)
+              print('ALL CONNECTIONS FAILED')
+              sys.exit(1)
 
           conn.autocommit = True
           cur = conn.cursor()
 
-          # Check existing tables
+          # What tables exist?
           cur.execute("SELECT tablename FROM pg_tables WHERE schemaname='public' AND tablename LIKE 'ai_%' ORDER BY tablename")
           existing = {r[0] for r in cur.fetchall()}
-          print('Existing ai_ tables:', sorted(existing))
+          print('Existing:', sorted(existing))
 
           REQUIRED = {'ai_feedback', 'ai_quiz_cache', 'ai_promotion_queue'}
-          missing = REQUIRED - existing
-          print('Missing:', missing or 'none — all good!')
+          missing  = REQUIRED - existing
+          if not missing:
+              print('All required tables already exist — nothing to do.')
+              conn.close(); sys.exit(0)
 
-          if missing:
-              print('Applying full Phase 5.5 schema...')
-              with open('supabase/schema.sql') as f:
-                  content = f.read()
-              idx = content.find('AI FEEDBACK (Phase 5.5b')
-              start = content.rfind('--', 0, idx)
-              sql = content[start:].strip()
+          print('Missing:', missing, '— applying schema...')
+          with open('supabase/schema.sql') as f:
+              content = f.read()
+          idx   = content.find('AI FEEDBACK (Phase 5.5b')
+          start = content.rfind('--', 0, idx)
+          sql   = content[start:].strip()
+          print(f'SQL: {len(sql)} chars')
 
-              ok = skip = err = 0
-              for stmt in re.split(r';\s*\n', sql):
-                  s = stmt.strip()
-                  if not s or s.startswith('--'): continue
-                  try:
-                      cur.execute(s)
-                      ok += 1
-                  except psycopg2.Error as e:
-                      if 'already exists' in str(e) or type(e).__name__ in ('DuplicateTable','DuplicateObject','UniqueViolation'):
-                          skip += 1
-                      else:
-                          print(f'ERR: {e} | {s[:80]}')
-                          err += 1
+          ok = skip = err = 0
+          for stmt in re.split(r';\s*\n', sql):
+              s = stmt.strip()
+              if not s or s.startswith('--'): continue
+              try:
+                  cur.execute(s)
+                  ok += 1
+              except psycopg2.Error as e:
+                  code = getattr(e, 'pgcode', '')
+                  if code in ('42P07','42710','23505') or 'already exists' in str(e):
+                      skip += 1
+                  else:
+                      print(f'  ERR {code}: {str(e)[:120]} | {s[:60]}')
+                      err += 1
 
-              # Re-check
-              cur.execute("SELECT tablename FROM pg_tables WHERE schemaname='public' AND tablename LIKE 'ai_%' ORDER BY tablename")
-              existing = {r[0] for r in cur.fetchall()}
-              print(f'After apply — Tables: {sorted(existing)} | ok={ok} skip={skip} err={err}')
-              missing_after = REQUIRED - existing
-              if missing_after:
-                  print('STILL MISSING:', missing_after)
-                  sys.exit(1)
-
-          # Write result to GitHub gist
-          result = {
-              'tables': sorted(existing),
-              'required_present': list(REQUIRED - (REQUIRED - existing)),
-              'status': 'ok' if REQUIRED <= existing else 'partial'
-          }
-          gist_data = json.dumps({
-              'description': 'Supabase Phase 5.5 schema check result',
-              'public': False,
-              'files': {'result.json': {'content': json.dumps(result, indent=2)}}
-          }).encode()
-          req = urllib.request.Request(
-              'https://api.github.com/gists',
-              data=gist_data,
-              headers={'Authorization': f'Bearer {pat}', 'Content-Type': 'application/json',
-                       'Accept': 'application/vnd.github+json'}
-          )
-          try:
-              with urllib.request.urlopen(req) as resp:
-                  gist = json.loads(resp.read())
-                  print(f'Result gist: {gist["id"]}')
-          except Exception as e:
-              print(f'Gist failed (non-fatal): {e}')
-
+          cur.execute("SELECT tablename FROM pg_tables WHERE schemaname='public' AND tablename LIKE 'ai_%' ORDER BY tablename")
+          final = {r[0] for r in cur.fetchall()}
+          print(f'After: {sorted(final)} | ok={ok} skip={skip} err={err}')
           conn.close()
-          print('ALL DONE')
+
+          still_missing = REQUIRED - final
+          if still_missing:
+              print('STILL MISSING:', still_missing)
+              sys.exit(1)
+          print('SUCCESS — all tables created.')
           PYEOF
