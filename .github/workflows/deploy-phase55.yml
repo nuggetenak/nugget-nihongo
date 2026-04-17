@@ -44,11 +44,16 @@ jobs:
         run: echo "${{ secrets.GEMINI_API_KEY }}" | wrangler secret put GEMINI_API_KEY --config workers/wrangler.toml
 
       - name: Set OPENROUTER secret
-        if: ${{ secrets.OPENROUTER_API_KEY != '' }}
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        run: echo "${{ secrets.OPENROUTER_API_KEY }}" | wrangler secret put OPENROUTER_API_KEY --config workers/wrangler.toml
+        run: |
+          KEY="${{ secrets.OPENROUTER_API_KEY }}"
+          if [ -n "$KEY" ]; then
+            echo "$KEY" | wrangler secret put OPENROUTER_API_KEY --config workers/wrangler.toml
+          else
+            echo "OPENROUTER_API_KEY not set — skipping"
+          fi
         continue-on-error: true
 
       - name: Deploy AI Proxy Worker
