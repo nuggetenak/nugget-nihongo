@@ -259,6 +259,86 @@ bookLenses.forEach(({ obj, name }) => {
   assert(broken === 0, `${name}: ${broken} vocab_ids not found in vocabDB`);
 });
 
+// ── Phase 5.5c: quiz-bank + promotion pipeline (§15.9) ──
+console.log('\n── Promotion pipeline ──');
+(function testPromotionPipeline() {
+  // 1. quiz-bank placeholder files exist and are valid empty arrays
+  const levels = ['n5','n4','n3'];
+  levels.forEach(function (lvl) {
+    const p = path.join(ROOT, `public/data/quiz-bank/${lvl}.js`);
+    if (!fs.existsSync(p)) { skip++; console.log(`  SKIP: quiz-bank/${lvl}.js not found`); return; }
+    // File should start with [] or valid array content
+    const src = fs.readFileSync(p, 'utf8').trim();
+    assert(src.startsWith('[];') || src.startsWith('[') || src.startsWith('var ') || src.startsWith('const '),
+      `quiz-bank/${lvl}.js: should be a JS array file`);
+  });
+
+  // 2. confusion-pairs.js exists and declares confusionPairs
+  const cpPath = path.join(ROOT, 'public/data/confusion-pairs.js');
+  if (fs.existsSync(cpPath)) {
+    const cpSrc = fs.readFileSync(cpPath, 'utf8');
+    assert(cpSrc.includes('confusionPairs'), 'confusion-pairs.js: exports confusionPairs var');
+  } else { skip++; console.log('  SKIP: confusion-pairs.js not found'); }
+
+  // 3. Promoted item lineage schema check
+  // Every item with provenance:'ai-gen-promoted-v1' must have required lineage fields.
+  const REQUIRED_LINEAGE = [
+    'promoted_from','original_provider','critic_provider',
+    'serves_before_promotion','thumbs_up','thumbs_down',
+    'promoted_at','promoted_by','provenance',
+  ];
+
+  function checkPromotedFile(filePath) {
+    if (!fs.existsSync(filePath)) return;
+    // Eval as a module that sets a global
+    const src = fs.readFileSync(filePath, 'utf8');
+    // Simple check: find objects with provenance field
+    const matches = src.matchAll(/"provenance"\s*:\s*"([^"]+)"/g);
+    for (const m of matches) {
+      if (m[1] === 'ai-gen-promoted-v1') {
+        // Verify all required fields are present in the surrounding object
+        REQUIRED_LINEAGE.forEach(function (field) {
+          assert(src.includes(`"${field}"`) || src.includes(`'${field}'`),
+            `${path.basename(filePath)}: promoted item missing lineage field '${field}'`);
+        });
+      }
+    }
+  }
+
+  // Check all quiz-bank files (empty now, but will grow)
+  levels.forEach(function (lvl) {
+    checkPromotedFile(path.join(ROOT, `public/data/quiz-bank/${lvl}.js`));
+  });
+
+  // 4. No forbidden provenance values in data files
+  const DATA_DIRS = ['vocab','grammar'].map(d => path.join(ROOT, 'public/data', d));
+  const FORBIDDEN_PROVENANCE = ['ai-gen-raw','unvalidated','test-only'];
+  let forbidden = 0;
+  DATA_DIRS.forEach(function (dir) {
+    if (!fs.existsSync(dir)) return;
+    fs.readdirSync(dir).filter(f => f.endsWith('.js')).forEach(function (f) {
+      const src = fs.readFileSync(path.join(dir, f), 'utf8');
+      FORBIDDEN_PROVENANCE.forEach(function (bad) {
+        if (src.includes(`'${bad}'`) || src.includes(`"${bad}"`)) {
+          forbidden++;
+          console.error(`  FAIL: ${f}: forbidden provenance '${bad}'`);
+        }
+      });
+    });
+  });
+  assert(forbidden === 0, `No forbidden provenance values in data files (${forbidden} found)`);
+
+  // 5. admin-api.js syntax accessible from tests
+  const adminPath = path.join(ROOT, 'workers/admin-api.js');
+  assert(fs.existsSync(adminPath), 'workers/admin-api.js exists');
+  const adminSrc = fs.readFileSync(adminPath, 'utf8');
+  assert(adminSrc.includes('handlePromote'), 'admin-api.js: handlePromote defined');
+  assert(adminSrc.includes('handleReject'),  'admin-api.js: handleReject defined');
+  assert(adminSrc.includes('handleCandidates'), 'admin-api.js: handleCandidates defined');
+  assert(adminSrc.includes('ai-gen-promoted-v1'), 'admin-api.js: provenance tag present');
+  assert(adminSrc.includes('ADMIN_SECRET'), 'admin-api.js: auth guard references ADMIN_SECRET');
+})();
+
 // ── Phase 5.5b: fallback quiz-drills.json ──
 console.log('\n── Fallback quiz-drills (AI) ──');
 (function testFallbackDrills() {

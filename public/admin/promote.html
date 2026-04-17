@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nugget Nihongo — Admin: Promotion Queue</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #0f172a; --surface: #1e293b; --surface2: #263248;
+    --border: #334155; --text: #e2e8f0; --muted: #94a3b8;
+    --accent: #3b82f6; --green: #22c55e; --red: #ef4444;
+    --yellow: #eab308; --radius: 10px;
+  }
+  body { background: var(--bg); color: var(--text); font-family: system-ui, sans-serif;
+    font-size: 14px; min-height: 100vh; }
+  /* ── Layout ── */
+  #app { max-width: 900px; margin: 0 auto; padding: 1.5rem 1rem; }
+  header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;
+    padding-bottom: 1rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.1rem; font-weight: 700; }
+  header .badge { font-size: 10px; background: var(--red); color: #fff;
+    padding: 2px 8px; border-radius: 99px; font-weight: 700; }
+  /* ── Auth gate ── */
+  #authGate { display: flex; flex-direction: column; align-items: center;
+    justify-content: center; min-height: 60vh; gap: 1rem; }
+  #authGate input { background: var(--surface); border: 1px solid var(--border);
+    color: var(--text); border-radius: var(--radius); padding: .5rem .75rem;
+    font-size: 14px; width: 280px; }
+  /* ── Stats bar ── */
+  #statsBar { display: flex; gap: .75rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+  .stat-chip { background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: .4rem .9rem; font-size: 12px; }
+  .stat-chip .n { font-size: 1.2rem; font-weight: 700; display: block; }
+  .stat-chip.candidate .n { color: var(--yellow); }
+  .stat-chip.promoted  .n { color: var(--green); }
+  .stat-chip.rejected  .n { color: var(--red); }
+  /* ── Filters ── */
+  #filters { display: flex; gap: .5rem; margin-bottom: 1rem; flex-wrap: wrap; }
+  .filter-btn { background: var(--surface); border: 1px solid var(--border);
+    color: var(--muted); border-radius: 99px; padding: .3rem .9rem;
+    cursor: pointer; font-size: 12px; transition: all .15s; }
+  .filter-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+  /* ── Candidate cards ── */
+  #queue { display: flex; flex-direction: column; gap: 1rem; }
+  .card { background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius); overflow: hidden; }
+  .card.promoted  { border-color: var(--green); opacity: .7; }
+  .card.rejected  { border-color: var(--red); opacity: .5; }
+  .card-header { display: flex; align-items: center; gap: .75rem;
+    padding: .75rem 1rem; border-bottom: 1px solid var(--border);
+    background: var(--surface2); }
+  .card-id { font-size: 11px; color: var(--muted); font-family: monospace; }
+  .card-level { font-size: 11px; font-weight: 700; background: var(--accent);
+    color: #fff; padding: 1px 7px; border-radius: 99px; }
+  .card-type  { font-size: 11px; color: var(--muted); }
+  .card-status { margin-left: auto; font-size: 11px; font-weight: 700;
+    padding: 2px 8px; border-radius: 99px; }
+  .card-status.candidate { background: rgba(234,179,8,.2); color: var(--yellow); }
+  .card-status.promoted  { background: rgba(34,197,94,.2); color: var(--green); }
+  .card-status.rejected  { background: rgba(239,68,68,.2); color: var(--red); }
+  .card-status.pending   { background: rgba(148,163,184,.15); color: var(--muted); }
+  .card-body { padding: 1rem; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 600px) { .card-body { grid-template-columns: 1fr; } }
+  /* ── Question preview ── */
+  .q-preview { grid-column: 1/-1; }
+  .q-prompt { font-size: .9rem; line-height: 1.6; margin-bottom: .5rem; }
+  .q-choices { display: flex; flex-direction: column; gap: .25rem; }
+  .q-choice { font-size: .85rem; padding: .25rem .5rem; border-radius: 6px;
+    background: var(--surface2); border: 1px solid var(--border); }
+  .q-choice.correct { border-color: var(--green); color: var(--green); }
+  .q-explanation { margin-top: .5rem; font-size: .8rem; color: var(--muted);
+    background: var(--surface2); border-radius: 6px; padding: .4rem .6rem; }
+  /* ── Stats ── */
+  .q-stats { display: flex; gap: .75rem; flex-wrap: wrap; align-items: center; }
+  .stat { font-size: 12px; }
+  .stat .val { font-weight: 700; }
+  .ratio-bar { height: 4px; border-radius: 99px; background: var(--border);
+    width: 80px; overflow: hidden; margin-top: 2px; }
+  .ratio-fill { height: 100%; background: var(--green); }
+  /* ── Lineage ── */
+  .q-lineage { font-size: 11px; color: var(--muted); line-height: 1.7; }
+  .q-lineage span { color: var(--text); font-family: monospace; }
+  /* ── Edit area ── */
+  .edit-section { grid-column: 1/-1; }
+  .edit-section label { font-size: 11px; color: var(--muted);
+    display: block; margin-bottom: .25rem; }
+  .edit-section input, .edit-section textarea {
+    width: 100%; background: var(--surface2); border: 1px solid var(--border);
+    color: var(--text); border-radius: 6px; padding: .4rem .6rem;
+    font-size: 13px; font-family: inherit; }
+  .edit-section textarea { resize: vertical; min-height: 60px; }
+  /* ── Actions ── */
+  .card-actions { display: flex; gap: .5rem; padding: .75rem 1rem;
+    border-top: 1px solid var(--border); background: var(--surface2); flex-wrap: wrap; }
+  .btn { border: none; border-radius: 8px; padding: .45rem 1rem;
+    font-size: 13px; font-weight: 600; cursor: pointer; transition: opacity .15s; }
+  .btn:disabled { opacity: .4; cursor: default; }
+  .btn-promote  { background: var(--green); color: #fff; }
+  .btn-reject   { background: var(--red); color: #fff; }
+  .btn-edit     { background: var(--surface); color: var(--text);
+    border: 1px solid var(--border); }
+  /* ── Toast ── */
+  #toast { position: fixed; bottom: 1.5rem; left: 50%; transform: translateX(-50%);
+    background: #1a1a1a; color: #fff; padding: .5rem 1.25rem; border-radius: 99px;
+    font-size: 13px; opacity: 0; transition: opacity .3s; pointer-events: none;
+    z-index: 999; }
+  #toast.show { opacity: 1; }
+  /* ── Empty ── */
+  .empty { text-align: center; padding: 3rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<div id="app">
+  <header>
+    <h1>🗂 Promotion Queue</h1>
+    <span class="badge">ADMIN</span>
+    <button class="btn btn-edit" style="margin-left:auto;font-size:11px" onclick="logout()">Logout</button>
+  </header>
+
+  <!-- Auth gate -->
+  <div id="authGate" style="display:none">
+    <h2 style="font-size:1rem">Admin Login</h2>
+    <input type="password" id="secretInput" placeholder="Admin secret" onkeydown="if(event.key==='Enter')login()">
+    <button class="btn btn-promote" onclick="login()">Login</button>
+    <p id="authError" style="color:var(--red);font-size:12px;display:none">Wrong secret</p>
+  </div>
+
+  <!-- Main UI (shown after auth) -->
+  <div id="mainUI" style="display:none">
+    <div id="statsBar"></div>
+    <div id="filters">
+      <button class="filter-btn active" onclick="setFilter('candidate',this)">Candidates</button>
+      <button class="filter-btn" onclick="setFilter('pending',this)">Pending</button>
+      <button class="filter-btn" onclick="setFilter('promoted',this)">Promoted</button>
+      <button class="filter-btn" onclick="setFilter('rejected',this)">Rejected</button>
+    </div>
+    <div id="queue"><div class="empty">Loading…</div></div>
+  </div>
+</div>
+
+<div id="toast"></div>
+
+<script>
+// ── Config ──────────────────────────────────────────────────────
+// Set these in DevTools or via URL hash: #admin=URL&secret=XXX
+// (secret stored in sessionStorage, never in localStorage)
+const CONFIG_KEY = 'nn_admin_cfg';
+
+function getCfg() {
+  try { return JSON.parse(sessionStorage.getItem(CONFIG_KEY) || 'null'); } catch { return null; }
+}
+function setCfg(cfg) {
+  try { sessionStorage.setItem(CONFIG_KEY, JSON.stringify(cfg)); } catch {}
+}
+
+// Parse #admin=URL&secret=TOKEN from hash (one-time setup)
+function parseHashConfig() {
+  const h = location.hash.slice(1);
+  if (!h) return;
+  const p = new URLSearchParams(h);
+  if (p.get('admin') && p.get('secret')) {
+    setCfg({ adminUrl: p.get('admin'), secret: p.get('secret') });
+    location.hash = '';
+  }
+}
+
+// ── Auth ────────────────────────────────────────────────────────
+let cfg = null;
+
+function init() {
+  parseHashConfig();
+  cfg = getCfg();
+  if (cfg && cfg.adminUrl && cfg.secret) {
+    showMain();
+  } else {
+    document.getElementById('authGate').style.display = 'flex';
+  }
+}
+
+function login() {
+  const secret = document.getElementById('secretInput').value.trim();
+  // Admin URL: default to same origin + /admin path (for local dev)
+  // or use URL param if set via hash
+  const adminUrl = (new URLSearchParams(location.search)).get('admin')
+    || location.origin;
+  if (!secret) return;
+  // Quick probe: try GET /admin/stats
+  fetch(adminUrl + '/admin/stats', { headers: { Authorization: 'Bearer ' + secret } })
+    .then(r => {
+      if (r.ok) {
+        setCfg({ adminUrl, secret });
+        cfg = getCfg();
+        document.getElementById('authError').style.display = 'none';
+        document.getElementById('authGate').style.display = 'none';
+        showMain();
+      } else {
+        document.getElementById('authError').style.display = 'block';
+      }
+    })
+    .catch(() => { document.getElementById('authError').style.display = 'block'; });
+}
+
+function logout() {
+  sessionStorage.removeItem(CONFIG_KEY);
+  location.reload();
+}
+
+// ── API calls ───────────────────────────────────────────────────
+function apiGet(path) {
+  return fetch(cfg.adminUrl + path, { headers: { Authorization: 'Bearer ' + cfg.secret } })
+    .then(r => r.ok ? r.json() : r.json().then(e => { throw new Error(e.error); }));
+}
+function apiPost(path, body) {
+  return fetch(cfg.adminUrl + path, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + cfg.secret },
+    body: JSON.stringify(body),
+  }).then(r => r.json());
+}
+
+// ── Main UI ─────────────────────────────────────────────────────
+let currentFilter = 'candidate';
+
+function showMain() {
+  document.getElementById('mainUI').style.display = 'block';
+  loadStats();
+  loadQueue(currentFilter);
+}
+
+function setFilter(status, btn) {
+  currentFilter = status;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  loadQueue(status);
+}
+
+function loadStats() {
+  apiGet('/admin/stats').then(data => {
+    const s = data.stats || {};
+    document.getElementById('statsBar').innerHTML = [
+      ['candidate','Candidates', s.candidate || 0],
+      ['pending','Pending', s.pending || 0],
+      ['promoted','Promoted', s.promoted || 0],
+      ['rejected','Rejected', s.rejected || 0],
+    ].map(([cls, label, n]) =>
+      `<div class="stat-chip ${cls}"><span class="n">${n}</span>${label}</div>`
+    ).join('');
+  }).catch(() => {});
+}
+
+function loadQueue(status) {
+  document.getElementById('queue').innerHTML = '<div class="empty">Loading…</div>';
+  apiGet(`/admin/candidates?status=${status}&limit=50`).then(data => {
+    const items = data.candidates || [];
+    if (!items.length) {
+      document.getElementById('queue').innerHTML = '<div class="empty">No items with status: ' + status + '</div>';
+      return;
+    }
+    document.getElementById('queue').innerHTML = '';
+    items.forEach(item => {
+      document.getElementById('queue').appendChild(buildCard(item));
+    });
+  }).catch(e => {
+    document.getElementById('queue').innerHTML = '<div class="empty" style="color:var(--red)">' + e.message + '</div>';
+  });
+}
+
+// ── Card renderer ────────────────────────────────────────────────
+function buildCard(item) {
+  const c = item.content || {};
+  const level  = c.level || '?';
+  const status = item.status;
+  const ratio  = item.approval_ratio || 0;
+  const daysOld = Math.round((Date.now() - new Date(item.first_seen_at)) / 86400000);
+
+  const card = document.createElement('div');
+  card.className = 'card ' + status;
+  card.dataset.itemId = item.ai_item_id;
+
+  const choices = (c.choices || []).map(ch =>
+    `<div class="q-choice${ch === c.answer ? ' correct' : ''}">${esc(ch)}</div>`
+  ).join('');
+
+  card.innerHTML = `
+  <div class="card-header">
+    <span class="card-level">${level.toUpperCase()}</span>
+    <span class="card-type">${item.item_type}</span>
+    <span class="card-id">${item.ai_item_id}</span>
+    <span class="card-status ${status}">${status}</span>
+  </div>
+  <div class="card-body">
+    <div class="q-preview">
+      <div class="q-prompt">${esc(c.prompt || '(no prompt)')}</div>
+      <div class="q-choices">${choices}</div>
+      ${c.explanation_id ? `<div class="q-explanation">${esc(c.explanation_id)}</div>` : ''}
+    </div>
+
+    <div>
+      <div class="q-stats">
+        <div class="stat">👍 <span class="val">${item.thumbs_up}</span></div>
+        <div class="stat">👎 <span class="val">${item.thumbs_down}</span></div>
+        <div class="stat">✏️ <span class="val">${item.edits_submitted}</span></div>
+        <div class="stat">📊 <span class="val">${item.serve_count}</span> serves</div>
+        <div class="stat">📅 <span class="val">${daysOld}d</span></div>
+      </div>
+      <div class="ratio-bar"><div class="ratio-fill" style="width:${Math.round(ratio*100)}%"></div></div>
+      <div style="font-size:11px;color:var(--muted);margin-top:3px">${Math.round(ratio*100)}% approval</div>
+    </div>
+
+    <div class="q-lineage">
+      <div>Generator: <span>${item.generator_provider}:${item.generator_model || '?'}</span></div>
+      <div>Critic: <span>${item.critic_provider || '?'}</span> (${item.critic_verdict || '?'})</div>
+      <div>Prompt: <span>${item.prompt_version || '?'}</span></div>
+      ${item.promoted_at ? `<div>Promoted: <span>${new Date(item.promoted_at).toLocaleDateString()}</span> by <span>${item.promoted_by}</span></div>` : ''}
+    </div>
+
+    ${status !== 'promoted' && status !== 'rejected' ? `
+    <div class="edit-section">
+      <label>Edit prompt before promoting (optional):</label>
+      <textarea id="edit-prompt-${item.ai_item_id}" rows="2">${esc(c.prompt || '')}</textarea>
+      <label style="margin-top:.4rem">Edit answer (optional):</label>
+      <input type="text" id="edit-answer-${item.ai_item_id}" value="${esc(c.answer || '')}">
+    </div>
+    ` : ''}
+  </div>
+  <div class="card-actions">
+    ${status !== 'promoted' && status !== 'rejected' ? `
+      <button class="btn btn-promote" onclick="promote('${item.ai_item_id}')">Promote</button>
+      <button class="btn btn-reject"  onclick="reject('${item.ai_item_id}')">Reject & Blocklist</button>
+    ` : ''}
+    ${status === 'promoted' && item.promoted_payload ? `
+      <code style="font-size:10px;color:var(--muted)">target: ${item.promotion_target || '?'}</code>
+    ` : ''}
+    ${status === 'rejected' ? `<span style="color:var(--red);font-size:12px">Blocklisted</span>` : ''}
+  </div>`;
+
+  return card;
+}
+
+// ── Actions ──────────────────────────────────────────────────────
+function promote(id) {
+  const overridePrompt = document.getElementById('edit-prompt-' + id)?.value?.trim();
+  const overrideAnswer = document.getElementById('edit-answer-' + id)?.value?.trim();
+  const override = {};
+  if (overridePrompt) override.prompt = overridePrompt;
+  if (overrideAnswer) override.answer = overrideAnswer;
+
+  apiPost('/admin/promote', { ai_item_id: id, promoted_by: 'nugget', override })
+    .then(r => {
+      if (r.ok) {
+        toast('✅ Promoted! ' + (r.github_pr ? 'PR: ' + r.github_pr : 'Add to data file manually.'));
+        if (r.manual_step) {
+          // Show the JSON payload in a copyable way
+          const payload = JSON.stringify(r.promoted_payload, null, 2);
+          const out = document.createElement('details');
+          out.innerHTML = `<summary style="cursor:pointer;font-size:12px;color:var(--yellow)">📋 Copy this to ${r.target_file}</summary>
+            <pre style="font-size:10px;overflow:auto;background:var(--surface2);padding:.5rem;border-radius:6px;margin-top:.4rem">${esc(payload)}</pre>`;
+          const card = document.querySelector(`[data-item-id="${id}"]`);
+          if (card) card.appendChild(out);
+        }
+        loadStats();
+        setTimeout(() => { const card = document.querySelector(`[data-item-id="${id}"]`); if (card) card.className = 'card promoted'; }, 300);
+      } else {
+        toast('❌ Error: ' + (r.error || 'unknown'));
+      }
+    })
+    .catch(e => toast('❌ ' + e.message));
+}
+
+function reject(id) {
+  if (!confirm('Reject + blocklist this item? This will quarantine it for all users.')) return;
+  apiPost('/admin/reject', { ai_item_id: id, reason: 'admin manual review' })
+    .then(r => {
+      if (r.ok) {
+        toast('🚫 Rejected + blocklisted');
+        loadStats();
+        setTimeout(() => { const card = document.querySelector(`[data-item-id="${id}"]`); if (card) card.className = 'card rejected'; }, 300);
+      } else {
+        toast('❌ ' + (r.error || 'unknown'));
+      }
+    })
+    .catch(e => toast('❌ ' + e.message));
+}
+
+// ── Utilities ────────────────────────────────────────────────────
+function esc(s) {
+  return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;')
+    .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+let _toastTimer;
+function toast(msg) {
+  const el = document.getElementById('toast');
+  el.textContent = msg;
+  el.classList.add('show');
+  clearTimeout(_toastTimer);
+  _toastTimer = setTimeout(() => el.classList.remove('show'), 3500);
+}
+
+init();
+</script>
+</body>
+</html>

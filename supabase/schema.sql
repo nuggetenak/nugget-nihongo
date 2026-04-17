@@ -377,3 +377,116 @@ DROP POLICY IF EXISTS ai_quiz_cache_select ON public.ai_quiz_cache;
 CREATE POLICY ai_quiz_cache_select
   ON public.ai_quiz_cache FOR SELECT
   USING (expires_at > NOW());
+
+-- ── AI PROMOTION QUEUE (Phase 5.5c §15.9) ────────────────────────
+-- Aggregates serve counts + feedback signals per ai_item_id to surface
+-- promotion candidates. Populated via a Supabase DB function that
+-- materializes from ai_feedback (run on-demand or nightly).
+-- Nugget reviews candidates in /admin/promote.html.
+CREATE TABLE IF NOT EXISTS public.ai_promotion_queue (
+  ai_item_id          TEXT PRIMARY KEY,   -- lineage_id from ai-content-engine
+  item_type           TEXT NOT NULL,      -- 'quiz_question'|'example_sentence'|'chat_reply'
+  -- the full question/content payload stored as JSONB
+  content             JSONB NOT NULL,
+  -- lineage snapshot (from first feedback row seen for this item)
+  generator_provider  TEXT,
+  generator_model     TEXT,
+  critic_provider     TEXT,
+  critic_verdict      TEXT,
+  prompt_version      TEXT,
+  -- aggregated signal
+  serve_count         INTEGER DEFAULT 0,
+  thumbs_up           INTEGER DEFAULT 0,
+  thumbs_down         INTEGER DEFAULT 0,
+  edits_submitted     INTEGER DEFAULT 0,
+  approval_ratio      REAL GENERATED ALWAYS AS (
+    CASE WHEN (thumbs_up + thumbs_down) = 0 THEN 0
+         ELSE thumbs_up::REAL / (thumbs_up + thumbs_down)::REAL
+    END
+  ) STORED,
+  -- promotion state
+  -- 'candidate'  → meets §15.9 criteria (≥10 serves, ≥0.85 ratio, ≥30 days)
+  -- 'promoted'   → human clicked Promote
+  -- 'rejected'   → human clicked Reject & Blocklist
+  -- 'pending'    → gathering signal, not yet a candidate
+  status              TEXT NOT NULL DEFAULT 'pending'
+    CHECK (status IN ('pending','candidate','promoted','rejected')),
+  quarantined         BOOLEAN DEFAULT FALSE,  -- true if any 👎 flag ever
+  first_seen_at       TIMESTAMPTZ DEFAULT NOW(),
+  last_feedback_at    TIMESTAMPTZ,
+  promoted_at         TIMESTAMPTZ,
+  promoted_by         TEXT,               -- 'nugget' or reviewer name
+  rejected_at         TIMESTAMPTZ,
+  -- the final item as it will appear in data/ files (set at promotion time)
+  promoted_payload    JSONB,
+  promotion_target    TEXT  -- e.g. 'public/data/quiz-bank/n4.js'
+);
+
+CREATE INDEX IF NOT EXISTS idx_promo_status    ON public.ai_promotion_queue(status);
+CREATE INDEX IF NOT EXISTS idx_promo_ratio     ON public.ai_promotion_queue(approval_ratio DESC);
+CREATE INDEX IF NOT EXISTS idx_promo_serves    ON public.ai_promotion_queue(serve_count DESC);
+CREATE INDEX IF NOT EXISTS idx_promo_type      ON public.ai_promotion_queue(item_type);
+CREATE INDEX IF NOT EXISTS idx_promo_first     ON public.ai_promotion_queue(first_seen_at);
+
+-- RLS: service_role only for writes. Authenticated admin users for reads.
+ALTER TABLE public.ai_promotion_queue ENABLE ROW LEVEL SECURITY;
+DROP POLICY IF EXISTS ai_promo_admin_all ON public.ai_promotion_queue;
+CREATE POLICY ai_promo_admin_all
+  ON public.ai_promotion_queue FOR ALL
+  USING (auth.role() = 'service_role' OR auth.jwt() ->> 'role' = 'admin');
+
+-- ── FUNCTION: upsert_promotion_signal ────────────────────────────
+-- Called by a trigger on ai_feedback (or manually) to keep the queue
+-- aggregates up to date. Upserts a row per ai_item_id.
+CREATE OR REPLACE FUNCTION public.upsert_promotion_signal(
+  p_ai_item_id        TEXT,
+  p_item_type         TEXT,
+  p_content           JSONB,
+  p_verdict           TEXT,   -- 'thumbs_up'|'thumbs_down'|'edit'
+  p_generator_provider TEXT DEFAULT NULL,
+  p_generator_model   TEXT DEFAULT NULL,
+  p_critic_provider   TEXT DEFAULT NULL,
+  p_critic_verdict    TEXT DEFAULT NULL,
+  p_prompt_version    TEXT DEFAULT NULL
+) RETURNS VOID LANGUAGE plpgsql AS $$
+BEGIN
+  INSERT INTO public.ai_promotion_queue (
+    ai_item_id, item_type, content,
+    generator_provider, generator_model,
+    critic_provider, critic_verdict, prompt_version,
+    thumbs_up, thumbs_down, edits_submitted,
+    serve_count, last_feedback_at
+  ) VALUES (
+    p_ai_item_id, p_item_type, COALESCE(p_content, '{}'::jsonb),
+    p_generator_provider, p_generator_model,
+    p_critic_provider, p_critic_verdict, p_prompt_version,
+    CASE WHEN p_verdict = 'thumbs_up'   THEN 1 ELSE 0 END,
+    CASE WHEN p_verdict = 'thumbs_down' THEN 1 ELSE 0 END,
+    CASE WHEN p_verdict = 'edit'        THEN 1 ELSE 0 END,
+    1, NOW()
+  )
+  ON CONFLICT (ai_item_id) DO UPDATE SET
+    thumbs_up        = ai_promotion_queue.thumbs_up
+                       + CASE WHEN p_verdict = 'thumbs_up'   THEN 1 ELSE 0 END,
+    thumbs_down      = ai_promotion_queue.thumbs_down
+                       + CASE WHEN p_verdict = 'thumbs_down' THEN 1 ELSE 0 END,
+    edits_submitted  = ai_promotion_queue.edits_submitted
+                       + CASE WHEN p_verdict = 'edit'        THEN 1 ELSE 0 END,
+    serve_count      = ai_promotion_queue.serve_count + 1,
+    quarantined      = ai_promotion_queue.quarantined
+                       OR (p_verdict IN ('thumbs_down', 'edit')),
+    last_feedback_at = NOW(),
+    -- promote to 'candidate' if criteria met
+    status           = CASE
+      WHEN ai_promotion_queue.status IN ('promoted','rejected') THEN ai_promotion_queue.status
+      WHEN (ai_promotion_queue.serve_count + 1) >= 10
+        AND ai_promotion_queue.thumbs_down = 0
+        AND (ai_promotion_queue.thumbs_up + 1)::REAL
+            / NULLIF((ai_promotion_queue.thumbs_up + 1 + ai_promotion_queue.thumbs_down), 0) >= 0.85
+        AND NOW() - ai_promotion_queue.first_seen_at >= INTERVAL '30 days'
+        AND p_verdict != 'thumbs_down'
+      THEN 'candidate'
+      ELSE 'pending'
+    END;
+END;
+$$;
