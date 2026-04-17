@@ -1302,6 +1302,16 @@ body.light .tab-nav {
   font-family: 'DM Sans', sans-serif; letter-spacing: 0.03em;
 }
 .mode-btn.active .mode-label { color: var(--accent); }
+/* AI quiz mode button (Phase 5.5b — only visible when feature flag on) */
+.mode-btn--ai { border-style: dashed; }
+.mode-btn--ai .mode-icon { filter: hue-rotate(200deg); }
+.mode-badge {
+  display: inline-block; font-size: 0.5rem; font-weight: 700;
+  background: var(--accent); color: #fff;
+  padding: 1px 5px; border-radius: 8px;
+  vertical-align: middle; margin-left: 4px; letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
 
 /* ══════════════════════════════════════
    FILL-IN QUIZ CARD

@@ -302,3 +302,78 @@ CREATE INDEX IF NOT EXISTS idx_book_quiz_grammar_id ON public.book_quiz(grammar_
 DROP TRIGGER IF EXISTS book_grammar_updated_at ON public.book_grammar;
 CREATE TRIGGER book_grammar_updated_at BEFORE UPDATE ON public.book_grammar
   FOR EACH ROW EXECUTE FUNCTION public.update_updated_at();
+
+-- ── AI FEEDBACK (Phase 5.5b §15.6) ──────────────────────────────
+-- Stores user feedback on AI-generated content (quiz questions, examples,
+-- chat replies). Flagged items are immediately quarantined client-side;
+-- this table is the long-term quality audit trail.
+-- Anonymous users write via their nn_user_id (random uuid from localStorage).
+CREATE TABLE IF NOT EXISTS public.ai_feedback (
+  id              UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+  user_id         TEXT NOT NULL,            -- nn_user_id from localStorage (may be anon)
+  ai_item_id      TEXT NOT NULL,            -- lineage_id from item.lineage.lineage_id
+  item_type       TEXT NOT NULL,            -- 'quiz_question' | 'example_sentence' | 'chat_reply'
+  verdict         TEXT NOT NULL CHECK (verdict IN ('thumbs_up','thumbs_down','edit')),
+  -- reason codes (for thumbs_down) — array of strings
+  -- e.g. ['grammar_wrong','out_of_level','unnatural']
+  reason_codes    TEXT[]        DEFAULT '{}',
+  reason_other    TEXT,                     -- free text for "Lainnya"
+  correction      TEXT,                     -- user's corrected version (for edit verdict)
+  -- lineage snapshot — enough to trace back to provider + model
+  generator_provider   TEXT,
+  generator_model      TEXT,
+  critic_provider      TEXT,
+  critic_verdict       TEXT,
+  prompt_version       TEXT,
+  -- quarantine flag: set client-side immediately, confirmed here on sync
+  quarantined     BOOLEAN       DEFAULT FALSE,
+  created_at      TIMESTAMPTZ   DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS idx_ai_feedback_item_id   ON public.ai_feedback(ai_item_id);
+CREATE INDEX IF NOT EXISTS idx_ai_feedback_user_id   ON public.ai_feedback(user_id);
+CREATE INDEX IF NOT EXISTS idx_ai_feedback_verdict   ON public.ai_feedback(verdict);
+CREATE INDEX IF NOT EXISTS idx_ai_feedback_created   ON public.ai_feedback(created_at DESC);
+
+-- RLS: anyone can INSERT (anonymous users included via anon key).
+-- Only service_role can SELECT all rows (for admin review).
+-- Users can SELECT their own rows.
+ALTER TABLE public.ai_feedback ENABLE ROW LEVEL SECURITY;
+DROP POLICY IF EXISTS ai_feedback_insert  ON public.ai_feedback;
+DROP POLICY IF EXISTS ai_feedback_own_select ON public.ai_feedback;
+CREATE POLICY ai_feedback_insert
+  ON public.ai_feedback FOR INSERT
+  WITH CHECK (true);   -- allow all inserts (anon + authed)
+CREATE POLICY ai_feedback_own_select
+  ON public.ai_feedback FOR SELECT
+  USING (user_id = current_setting('request.jwt.claims', true)::json->>'sub'
+      OR user_id = current_setting('request.headers', true)::json->>'x-user-id');
+
+-- ── AI QUIZ CACHE (Phase 5.5b §15.4) ───────────────────────────
+-- Shared server-side cache for generated quiz batches.
+-- Key: target_id + level + type + prompt_version (normalized).
+-- Avoids re-generating the same batch for every user.
+-- TTL enforced by expires_at; stale rows cleaned by a weekly cron.
+CREATE TABLE IF NOT EXISTS public.ai_quiz_cache (
+  cache_key       TEXT PRIMARY KEY,        -- sha256 of (target_id|level|type|prompt_version)
+  target_id       TEXT NOT NULL,
+  level           TEXT NOT NULL,
+  quiz_type       TEXT NOT NULL,
+  questions       JSONB NOT NULL,          -- array of validated quiz questions with lineage
+  question_count  SMALLINT NOT NULL,
+  prompt_version  TEXT NOT NULL,
+  generator_provider TEXT,
+  critic_provider TEXT,
+  created_at      TIMESTAMPTZ DEFAULT NOW(),
+  expires_at      TIMESTAMPTZ NOT NULL     -- quiz cache: 7 days per §15.4
+);
+
+CREATE INDEX IF NOT EXISTS idx_ai_quiz_cache_target ON public.ai_quiz_cache(target_id, level);
+CREATE INDEX IF NOT EXISTS idx_ai_quiz_cache_expiry ON public.ai_quiz_cache(expires_at);
+
+-- RLS: public read (cache is shared), service_role write only
+ALTER TABLE public.ai_quiz_cache ENABLE ROW LEVEL SECURITY;
+DROP POLICY IF EXISTS ai_quiz_cache_select ON public.ai_quiz_cache;
+CREATE POLICY ai_quiz_cache_select
+  ON public.ai_quiz_cache FOR SELECT
+  USING (expires_at > NOW());

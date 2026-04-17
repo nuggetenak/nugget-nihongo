@@ -526,6 +526,16 @@
           <span class="mode-desc">Pilih satu dari empat jawaban yang tersedia</span>
         </div>
       </button>
+      <!-- Latihan AI — hidden by default, shown only when nn_feature_ai_quiz_gen=1.
+           Visibility toggled by app.js initAIQuizButton(). §15.5b flag gate. -->
+      <button class="mode-btn mode-btn--ai" id="modeAIQuiz" style="display:none"
+              onclick="setQuizMode('ai_quiz',this)">
+        <span class="mode-icon">✨</span>
+        <div class="mode-text">
+          <span class="mode-label">Latihan AI <span class="mode-badge">Eksperimen</span></span>
+          <span class="mode-desc">Soal dibuat AI khusus buat titik lemahmu. Bantuin kami test!</span>
+        </div>
+      </button>
     </div>
 
     <div class="quiz-mode-group" id="qcat-challenge">
@@ -1781,6 +1791,12 @@
 <script src="./js/dna-summarizer.js"></script>
 <script src="./js/ai-proxy.js"></script>
 <script src="./js/offline-ai-cache.js"></script>
+<!-- AI Content Engine (Phase 5.5b) — feature-flagged. Nothing runs unless
+     localStorage.nn_feature_ai_quiz_gen === '1'. Load order: validator
+     must precede content-engine (content-engine calls AIValidator). -->
+<script src="./js/ai-validator.js"></script>
+<script src="./js/ai-feedback.js"></script>
+<script src="./js/ai-content-engine.js"></script>
 <script src="./js/ai-tutor.js"></script>
 <script src="./js/sync-hook.js"></script>
 
@@ -1804,6 +1820,8 @@
 <script src="./js/quiz-engine-v2.js"></script>
 <script src="./js/quiz-vocab.js"></script>
 <script src="./js/quiz-mixed.js"></script>
+<!-- AI quiz mode (Phase 5.5b) — chains setQuizMode/startQuiz. After quiz-mixed (last chain). -->
+<script src="./js/ai-quiz-mode.js"></script>
 <script src="./js/daily-word.js"></script>
 <script src="./js/browse-vocab.js"></script>
 <script src="./js/vocab-detail.js"></script>

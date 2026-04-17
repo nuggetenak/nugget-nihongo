@@ -259,6 +259,85 @@ bookLenses.forEach(({ obj, name }) => {
   assert(broken === 0, `${name}: ${broken} vocab_ids not found in vocabDB`);
 });
 
+// ── Phase 5.5b: fallback quiz-drills.json ──
+console.log('\n── Fallback quiz-drills (AI) ──');
+(function testFallbackDrills() {
+  const drillsPath = path.join(ROOT, 'public/data/fallback/quiz-drills.json');
+  if (!fs.existsSync(drillsPath)) { skip++; console.log('  SKIP: quiz-drills.json not found'); return; }
+
+  let drills;
+  try { drills = JSON.parse(fs.readFileSync(drillsPath, 'utf8')); }
+  catch (e) { assert(false, 'quiz-drills.json: invalid JSON — ' + e.message); return; }
+
+  assert(Array.isArray(drills) && drills.length >= 6, 'fallback drills: at least 6 entries');
+
+  const V = require(path.join(ROOT, 'public/js/ai-validator.js'));
+  const ids = new Set();
+  let allPass = true;
+  drills.forEach(function (q) {
+    // ID uniqueness
+    assert(!ids.has(q.id), 'fallback drills: duplicate id ' + q.id);
+    ids.add(q.id);
+
+    // Each drill must pass the structural validator
+    const result = V.validateQuizQuestion(q, { level: q.level });
+    if (!result.pass) {
+      allPass = false;
+      console.error('  FAIL: fallback drill ' + q.id + ': ' + result.failures.join(', '));
+    }
+    // source flag
+    assert(q.source === 'fallback', 'fallback drills: source=fallback on ' + q.id);
+    // explanation present
+    assert(typeof q.explanation_id === 'string' && q.explanation_id.length > 5,
+      'fallback drills: explanation_id present on ' + q.id);
+  });
+  assert(allPass, 'fallback drills: all entries pass structural validator');
+  assert(drills.some(q => q.level === 'n5'), 'fallback drills: has N5 entries');
+  assert(drills.some(q => q.level === 'n4'), 'fallback drills: has N4 entries');
+})();
+
+// ── Phase 5.5b: ai-feedback quarantine logic ──
+console.log('\n── AI Feedback widget ──');
+(function testAIFeedback() {
+  // The feedback module needs localStorage which doesn't exist in Node.
+  // Test just the exported _store helpers by mocking localStorage.
+  const mockStorage = {};
+  global.localStorage = {
+    getItem:  function (k) { return mockStorage[k] !== undefined ? mockStorage[k] : null; },
+    setItem:  function (k, v) { mockStorage[k] = v; },
+    removeItem: function (k) { delete mockStorage[k]; },
+  };
+
+  const FB = require(path.join(ROOT, 'public/js/ai-feedback.js'));
+  if (!FB || !FB._store) { assert(false, 'ai-feedback.js: not exported'); return; }
+
+  const { _addToQuarantine, _loadQuarantine } = FB._store;
+
+  // Quarantine is empty by default
+  const q0 = _loadQuarantine();
+  assert(q0 instanceof Set && q0.size === 0, 'feedback: quarantine empty by default');
+
+  // Add to quarantine
+  _addToQuarantine('aig-test-001');
+  const q1 = _loadQuarantine();
+  assert(q1.has('aig-test-001'), 'feedback: quarantine add works');
+  assert(FB.isQuarantined('aig-test-001'), 'feedback: isQuarantined returns true after add');
+  assert(!FB.isQuarantined('aig-test-999'), 'feedback: isQuarantined returns false for other ids');
+
+  // Multiple items
+  _addToQuarantine('aig-test-002');
+  _addToQuarantine('aig-test-001'); // dedup — Set
+  const q2 = _loadQuarantine();
+  assert(q2.size === 2, 'feedback: quarantine deduplicates (' + q2.size + ')');
+
+  // REASON_LABELS exported
+  assert(FB._store.REASON_LABELS['grammar_wrong'], 'feedback: REASON_LABELS exported');
+  assert(Object.keys(FB._store.REASON_LABELS).length >= 5, 'feedback: at least 5 reason codes');
+
+  // Clean up mock
+  delete global.localStorage;
+})();
+
 // ── AI Validator rules (Phase 5.5a §15.2 stage 3) ──
 console.log('\n── AI Validator ──');
 (function testAIValidator() {
