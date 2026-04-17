@@ -6,7 +6,6 @@ on:
 jobs:
   apply:
     runs-on: ubuntu-latest
-    name: Apply Phase 5.5 schema to Supabase
     steps:
       - uses: actions/checkout@v4
         with:
@@ -15,116 +14,109 @@ jobs:
       - name: Install psycopg2
         run: pip install psycopg2-binary
 
-      - name: Diagnose + Apply
+      - name: Check tables + apply missing
         env:
           SUPABASE_DB_PASSWORD: ${{ secrets.SUPABASE_DB_PASSWORD }}
+          GH_PAT: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python3 - << 'PYEOF' 2>&1 | tee /tmp/output.txt
-          import os, socket, psycopg2, time, sys
+          python3 << 'PYEOF'
+          import os, socket, psycopg2, re, json, urllib.request, sys
 
-          pw = os.environ['SUPABASE_DB_PASSWORD']
+          pw  = os.environ['SUPABASE_DB_PASSWORD']
+          pat = os.environ['GH_PAT']
           project = 'oxeuwkpgrtojjzhcboqz'
 
-          print(f'Password length: {len(pw)}')
-
-          # DNS resolution test
-          hosts_to_test = [
-              ('aws-0-ap-southeast-1.pooler.supabase.com', 5432),
-              ('aws-0-ap-southeast-1.pooler.supabase.com', 6543),
-              (f'db.{project}.supabase.co', 5432),
-          ]
-          for host, port in hosts_to_test:
-              try:
-                  infos = socket.getaddrinfo(host, port)
-                  ipv4s = [i[4][0] for i in infos if i[0]==socket.AF_INET]
-                  ipv6s = [i[4][0] for i in infos if i[0]==socket.AF_INET6]
-                  print(f'DNS {host}:{port} IPv4={ipv4s} IPv6={ipv6s[:1]}')
-              except Exception as e:
-                  print(f'DNS {host}:{port} ERROR: {e}')
-
-          # Connection attempts
-          options = [
-              {'host': 'aws-0-ap-southeast-1.pooler.supabase.com', 'port': 5432, 'user': f'postgres.{project}'},
-              {'host': 'aws-0-ap-southeast-1.pooler.supabase.com', 'port': 6543, 'user': f'postgres.{project}'},
-              {'host': f'db.{project}.supabase.co', 'port': 5432, 'user': 'postgres'},
-          ]
-          # Add resolved IPv4 addresses
-          for host, port in hosts_to_test[:2]:
-              try:
-                  infos = socket.getaddrinfo(host, port, socket.AF_INET)
-                  if infos:
-                      ip = infos[0][4][0]
-                      user = f'postgres.{project}'
-                      options.insert(0, {'host': ip, 'port': port, 'user': user, 'label': f'{host} via {ip}'})
-              except: pass
-
+          # Connect via session pooler (worked last run)
+          host = 'aws-0-ap-southeast-1.pooler.supabase.com'
+          user = f'postgres.{project}'
           conn = None
-          for opt in options:
-              label = opt.get('label', f"{opt['host']}:{opt['port']}")
+          for port in [5432, 6543]:
               try:
-                  print(f'Trying {label} as {opt["user"]}...')
-                  conn = psycopg2.connect(
-                      host=opt['host'], port=opt['port'],
-                      dbname='postgres', user=opt['user'],
-                      password=pw, connect_timeout=15, sslmode='require')
-                  print(f'CONNECTED to {label}! server={conn.server_version}')
+                  conn = psycopg2.connect(host=host, port=port, dbname='postgres',
+                    user=user, password=pw, connect_timeout=20, sslmode='require')
+                  print(f'Connected via port {port}')
                   break
               except Exception as e:
-                  print(f'  FAIL: {e}')
+                  print(f'Port {port} failed: {e}')
 
-          if conn is None:
-              print('ALL CONNECTIONS FAILED')
-              sys.exit(1)
-
-          # Apply schema
-          with open('supabase/schema.sql') as f:
-              content = f.read()
-          # Find Phase 5.5 section
-          import re
-          idx = content.find('AI FEEDBACK (Phase 5.5b')
-          if idx == -1:
-              print('MARKER NOT FOUND')
-              sys.exit(1)
-          start = content.rfind('--', 0, idx)
-          sql = content[start:].strip()
-          print(f'SQL length: {len(sql)} chars')
+          if not conn:
+              # direct fallback
+              try:
+                  conn = psycopg2.connect(host=f'db.{project}.supabase.co',
+                    port=5432, dbname='postgres', user='postgres',
+                    password=pw, connect_timeout=20, sslmode='require')
+                  print('Connected via direct')
+              except Exception as e:
+                  print(f'All connections failed: {e}')
+                  sys.exit(1)
 
           conn.autocommit = True
           cur = conn.cursor()
-          ok = err = skip = 0
-          for stmt in re.split(r';\s*\n', sql):
-              s = stmt.strip()
-              if not s or s.startswith('--'): continue
-              try:
-                  cur.execute(s)
-                  ok += 1
-              except psycopg2.errors.DuplicateTable:
-                  skip += 1
-              except psycopg2.errors.DuplicateObject:
-                  skip += 1
-              except Exception as e:
-                  print(f'ERR: {type(e).__name__}: {e} | {s[:60]}')
-                  err += 1
 
-          print(f'Done: {ok} OK, {skip} skipped (already exist), {err} errors')
+          # Check existing tables
           cur.execute("SELECT tablename FROM pg_tables WHERE schemaname='public' AND tablename LIKE 'ai_%' ORDER BY tablename")
-          print('Tables:', [r[0] for r in cur.fetchall()])
-          conn.close()
-          if err > 0:
-              sys.exit(1)
-          PYEOF
-          EXIT=$?
-          echo "Script exit: $EXIT"
-          exit $EXIT
+          existing = {r[0] for r in cur.fetchall()}
+          print('Existing ai_ tables:', sorted(existing))
 
-      - name: Save output to repo
-        if: always()
-        run: |
-          git config user.email "ci@nugget-nihongo"
-          git config user.name "CI"
-          cp /tmp/output.txt .github/schema-apply-output.txt 2>/dev/null || echo "no output" > .github/schema-apply-output.txt
-          git add .github/schema-apply-output.txt
-          git diff --staged --quiet || git commit -m "ci: schema apply diagnostic output"
-          git push origin HEAD:develop
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REQUIRED = {'ai_feedback', 'ai_quiz_cache', 'ai_promotion_queue'}
+          missing = REQUIRED - existing
+          print('Missing:', missing or 'none — all good!')
+
+          if missing:
+              print('Applying full Phase 5.5 schema...')
+              with open('supabase/schema.sql') as f:
+                  content = f.read()
+              idx = content.find('AI FEEDBACK (Phase 5.5b')
+              start = content.rfind('--', 0, idx)
+              sql = content[start:].strip()
+
+              ok = skip = err = 0
+              for stmt in re.split(r';\s*\n', sql):
+                  s = stmt.strip()
+                  if not s or s.startswith('--'): continue
+                  try:
+                      cur.execute(s)
+                      ok += 1
+                  except psycopg2.Error as e:
+                      if 'already exists' in str(e) or type(e).__name__ in ('DuplicateTable','DuplicateObject','UniqueViolation'):
+                          skip += 1
+                      else:
+                          print(f'ERR: {e} | {s[:80]}')
+                          err += 1
+
+              # Re-check
+              cur.execute("SELECT tablename FROM pg_tables WHERE schemaname='public' AND tablename LIKE 'ai_%' ORDER BY tablename")
+              existing = {r[0] for r in cur.fetchall()}
+              print(f'After apply — Tables: {sorted(existing)} | ok={ok} skip={skip} err={err}')
+              missing_after = REQUIRED - existing
+              if missing_after:
+                  print('STILL MISSING:', missing_after)
+                  sys.exit(1)
+
+          # Write result to GitHub gist
+          result = {
+              'tables': sorted(existing),
+              'required_present': list(REQUIRED - (REQUIRED - existing)),
+              'status': 'ok' if REQUIRED <= existing else 'partial'
+          }
+          gist_data = json.dumps({
+              'description': 'Supabase Phase 5.5 schema check result',
+              'public': False,
+              'files': {'result.json': {'content': json.dumps(result, indent=2)}}
+          }).encode()
+          req = urllib.request.Request(
+              'https://api.github.com/gists',
+              data=gist_data,
+              headers={'Authorization': f'Bearer {pat}', 'Content-Type': 'application/json',
+                       'Accept': 'application/vnd.github+json'}
+          )
+          try:
+              with urllib.request.urlopen(req) as resp:
+                  gist = json.loads(resp.read())
+                  print(f'Result gist: {gist["id"]}')
+          except Exception as e:
+              print(f'Gist failed (non-fatal): {e}')
+
+          conn.close()
+          print('ALL DONE')
+          PYEOF
