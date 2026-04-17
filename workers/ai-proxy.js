@@ -135,6 +135,70 @@ function buildSystemPrompt(mode) {
   return SYSTEM_PROMPT + '\n\n' + addendum;
 }
 
+// ── Quiz-gen + Critic system prompts (Phase 5.5a §15.2, §5.8) ────
+// These are STANDALONE task prompts, not persona addenda — the output
+// is strict JSON consumed by the pipeline, not user-facing chat.
+const QUIZ_GEN_SYSTEM_PROMPT = `Kamu adalah generator soal latihan JLPT untuk pelajar Indonesia.
+Output kamu HARUS strict JSON array — tidak ada komentar, tidak ada markdown, tidak ada teks pembuka/penutup.
+
+Setiap soal punya shape:
+{
+  "id": "aig-{timestamp}-{n}",
+  "type": "mcq" | "fill" | "rearrange" | "translate",
+  "target_id": "{target identifier — grammar pattern atau vocab id}",
+  "level": "n5" | "n4" | "n3" | "n2" | "n1",
+  "prompt": "soal dalam Bahasa Indonesia + Jepang (sesuai kebutuhan)",
+  "choices": ["A", "B", "C", "D"],  // untuk mcq only, 4 choices
+  "answer": "jawaban yang benar — untuk mcq harus persis sama dengan salah satu choices",
+  "explanation_id": "penjelasan SINGKAT Bahasa Indonesia, 1-2 kalimat max",
+  "difficulty": "easy" | "medium" | "hard"
+}
+
+ATURAN WAJIB:
+- Kosakata di dalam prompt HARUS ≤ level target. Jangan pakai kata N3 di soal N4.
+  Kecuali target pattern itu sendiri — target boleh muncul di soal sebagai focus-of-testing.
+- Jawaban JANGAN pernah bocor verbatim di prompt (kecuali untuk partikel 1-2 huruf
+  yang memang bisa jadi hint yang adil).
+- Untuk mcq: 4 choices total (1 benar + 3 distractor). Distractor harus confusion
+  partner yang masuk akal (pola mirip, partikel mirip, bentuk mirip), bukan random.
+- Distractor TIDAK boleh jadi substring dari jawaban ("ため" sebagai distractor untuk
+  jawaban "ために" itu bad design — pelajar bingung batas).
+- Bahasa Jepang harus natural, bukan textbook-ese. Kalau ragu, pilih pola yang lebih
+  umum dipakai native speaker sehari-hari.
+- Keigo: jangan campur 尊敬語 + 謙譲語 dalam satu ucapan.
+- Kalau kamu RAGU soal nuansa, set "difficulty": "hard" dan tambah field "uncertainty"
+  berisi 1 kalimat menjelaskan apa yang kamu ragu.
+
+OVER-GENERATE BY 50%: kalau diminta 10 soal, buat 15 (pipeline bakal filter yang lolos Critic+Validator).
+
+Output hanya JSON array valid, nothing else.`;
+
+const CRITIC_SYSTEM_PROMPT = `Kamu adalah examiner bahasa Jepang yang ketat. Tugas kamu review batch soal latihan JLPT yang dibuat AI lain.
+
+Untuk SETIAP soal, keluarkan verdict JSON:
+{
+  "id": "{id soal}",
+  "verdict": "APPROVED" | "REVISE" | "REJECTED",
+  "reasons": ["alasan singkat per issue, Bahasa Indonesia"],
+  "severity": "low" | "medium" | "high"
+}
+
+Cek yang harus kamu lakukan per soal:
+1. Gramatika benar menurut native speaker Jepang (bukan sekadar "tidak salah secara textbook")
+2. Level appropriate: target + distractor semuanya di level soal atau lebih rendah
+3. Target grammar yang diklaim memang yang diuji (bukan disusupkan ke distractor)
+4. Distractor plausible confusion partner (bukan random, bukan substring jawaban)
+5. Kalimat contoh natural, bukan stilted/textbook-ese
+6. Keigo konsisten (tidak campur sonkeigo + kenjougo)
+7. Jawaban tidak bocor verbatim di prompt
+
+Rules:
+- APPROVED: semua cek lolos, siap dilayani ke pelajar
+- REVISE: minor issue (misalnya kalimat bisa lebih natural), masih bisa dipakai kalau opsi lain menipis
+- REJECTED: ada kesalahan gramatika / level leak / jawaban bocor / keigo mix / distractor buruk
+
+Output: strict JSON array dari verdict objects. Tidak ada komentar, tidak ada markdown.`;
+
 // ── Helpers ──────────────────────────────────────────────────────
 function corsHeaders(origin) {
   const allowed = ALLOWED_ORIGINS.includes(origin) ? origin : ALLOWED_ORIGINS[0];
@@ -222,6 +286,136 @@ async function setCached(env, key, value, ttl) {
   try {
     await env.RATE_LIMITS.put(key, JSON.stringify(value), { expirationTtl: ttl });
   } catch { /* silent fail */ }
+}
+
+// ── Raw provider helpers (Phase 5.5a) ────────────────────────────
+// These accept an EXPLICIT system prompt (not the persona-based one)
+// and return the raw text + provider identity. Used by /generate-quiz
+// and /critique which need cross-provider control.
+//
+// Contract: each helper throws on failure. Caller decides fallback.
+async function rawGroq(apiKey, systemPrompt, userPrompt, opts = {}) {
+  const model = opts.model || GROQ_MODEL_DEEP; // use 70B for quiz-gen/critique
+  const res = await fetch(GROQ_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${apiKey}` },
+    body: JSON.stringify({
+      model,
+      messages: [
+        { role: 'system', content: systemPrompt },
+        { role: 'user', content: userPrompt },
+      ],
+      temperature: opts.temperature ?? 0.6,
+      max_tokens: opts.max_tokens ?? 2048,
+      top_p: 0.9,
+    }),
+  });
+  if (!res.ok) throw new Error(`Groq ${res.status}: ${await res.text()}`);
+  const data = await res.json();
+  const text = data?.choices?.[0]?.message?.content;
+  if (!text) throw new Error('Groq empty');
+  return { text, provider: 'groq', model, tokens_used: data?.usage?.total_tokens || 0 };
+}
+
+async function rawGemini(apiKey, systemPrompt, userPrompt, opts = {}) {
+  const res = await fetch(`${GEMINI_URL}?key=${apiKey}`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      contents: [{ role: 'user', parts: [{ text: userPrompt }] }],
+      systemInstruction: { parts: [{ text: systemPrompt }] },
+      generationConfig: {
+        temperature: opts.temperature ?? 0.6,
+        maxOutputTokens: opts.max_tokens ?? 2048,
+        topP: 0.9,
+        responseMimeType: 'application/json', // hint: we want JSON
+      },
+      safetySettings: [
+        { category: 'HARM_CATEGORY_HARASSMENT', threshold: 'BLOCK_ONLY_HIGH' },
+        { category: 'HARM_CATEGORY_HATE_SPEECH', threshold: 'BLOCK_ONLY_HIGH' },
+      ],
+    }),
+  });
+  if (!res.ok) throw new Error(`Gemini ${res.status}: ${await res.text()}`);
+  const data = await res.json();
+  const text = data?.candidates?.[0]?.content?.parts?.[0]?.text;
+  if (!text) throw new Error('Gemini empty');
+  return { text, provider: 'gemini', model: 'gemini-2.0-flash', tokens_used: data?.usageMetadata?.totalTokenCount || 0 };
+}
+
+async function rawOpenRouter(apiKey, systemPrompt, userPrompt, opts = {}, modelIndex = 0) {
+  const model = OR_MODELS[modelIndex];
+  if (!model) throw new Error('OpenRouter: no more models to try');
+  const res = await fetch(OR_URL, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${apiKey}`,
+      'HTTP-Referer': 'https://nuggetenak.github.io/nugget-nihongo',
+      'X-Title': 'Nugget Nihongo',
+    },
+    body: JSON.stringify({
+      model,
+      messages: [
+        { role: 'system', content: systemPrompt },
+        { role: 'user', content: userPrompt },
+      ],
+      temperature: opts.temperature ?? 0.6,
+      max_tokens: opts.max_tokens ?? 2048,
+    }),
+  });
+  if (!res.ok) {
+    if ((res.status === 429 || res.status === 503 || res.status === 402) && OR_MODELS[modelIndex + 1]) {
+      return rawOpenRouter(apiKey, systemPrompt, userPrompt, opts, modelIndex + 1);
+    }
+    throw new Error(`OpenRouter ${res.status}: ${await res.text()}`);
+  }
+  const data = await res.json();
+  const text = data?.choices?.[0]?.message?.content;
+  if (!text) throw new Error('OpenRouter empty');
+  return { text, provider: 'openrouter', model, tokens_used: data?.usage?.total_tokens || 0 };
+}
+
+// Try providers in order; return first success + which provider served.
+// `excludeProvider` is used by the Critic to guarantee cross-provider review.
+async function callWithCascade(env, systemPrompt, userPrompt, opts = {}) {
+  const exclude = opts.excludeProvider || null;
+  const errors = [];
+  const tryOrder = [
+    { name: 'groq', ok: !!env.GROQ_API_KEY, fn: () => rawGroq(env.GROQ_API_KEY, systemPrompt, userPrompt, opts) },
+    { name: 'gemini', ok: !!env.GEMINI_API_KEY, fn: () => rawGemini(env.GEMINI_API_KEY, systemPrompt, userPrompt, opts) },
+    { name: 'openrouter', ok: !!env.OPENROUTER_API_KEY, fn: () => rawOpenRouter(env.OPENROUTER_API_KEY, systemPrompt, userPrompt, opts) },
+  ];
+  for (const p of tryOrder) {
+    if (!p.ok) continue;
+    if (exclude && p.name === exclude) continue;
+    try {
+      return await p.fn();
+    } catch (e) {
+      errors.push(`${p.name}: ${e.message}`);
+    }
+  }
+  throw new Error(`All providers failed: ${errors.join(' | ')}`);
+}
+
+// Extract JSON array from model output. Models sometimes wrap in ```json ... ```
+// or add a preamble. Be forgiving.
+function extractJSONArray(text) {
+  if (!text) return null;
+  // Strip code fences
+  const fenced = text.match(/```(?:json)?\s*([\s\S]*?)```/);
+  const body = fenced ? fenced[1] : text;
+  // Find first [ and last ]
+  const start = body.indexOf('[');
+  const end = body.lastIndexOf(']');
+  if (start === -1 || end === -1 || end < start) return null;
+  const slice = body.slice(start, end + 1);
+  try {
+    const parsed = JSON.parse(slice);
+    return Array.isArray(parsed) ? parsed : null;
+  } catch {
+    return null;
+  }
 }
 
 // ── Provider: Groq ────────────────────────────────────────────────
@@ -347,6 +541,182 @@ async function getAIResponse(env, messages, systemCtx, queryType, mode) {
   throw new Error(`All providers failed: ${errors.join(' | ')}`);
 }
 
+// ── Route handler: /chat (the original persona-based conversational endpoint) ──
+async function handleChat(request, env, cors) {
+  let body;
+  try { body = await request.json(); }
+  catch { return new Response(JSON.stringify({ error: 'Invalid JSON' }), { status: 400, headers: { ...cors, 'Content-Type': 'application/json' } }); }
+
+  const { messages, context, userId } = body;
+  if (!messages?.length) {
+    return new Response(JSON.stringify({ error: 'messages required' }), { status: 400, headers: { ...cors, 'Content-Type': 'application/json' } });
+  }
+
+  // Rate limiting (uses IP as fallback if no userId)
+  const uid = userId || request.headers.get('CF-Connecting-IP') || 'anon';
+  const { allowed, remaining } = await checkRateLimit(env, uid);
+  if (!allowed) {
+    return new Response(JSON.stringify({
+      error: 'daily_limit_reached',
+      message: `Kamu sudah mencapai batas ${DAILY_LIMIT} pertanyaan gratis hari ini. Coba lagi besok ya! 💪`,
+      remaining: 0,
+    }), { status: 429, headers: { ...cors, 'Content-Type': 'application/json', 'X-RateLimit-Remaining': '0' } });
+  }
+
+  const systemCtx = buildContext(context);
+  const queryType = classifyQuery(messages);
+  const mode = (context?.mode && ['explain', 'quiz', 'chat'].includes(context.mode)) ? context.mode : 'explain';
+
+  try {
+    const result = await getAIResponse(env, messages, systemCtx, queryType, mode);
+    return new Response(JSON.stringify({ ...result, query_type: queryType, mode, remaining }), {
+      status: 200,
+      headers: { ...cors, 'Content-Type': 'application/json', 'X-RateLimit-Remaining': String(remaining) },
+    });
+  } catch (e) {
+    console.error('All AI providers failed:', e.message);
+    return new Response(JSON.stringify({
+      error: 'ai_unavailable',
+      message: 'AI sedang istirahat sebentar. Coba lagi ya! 🙏',
+      detail: e.message,
+    }), { status: 503, headers: { ...cors, 'Content-Type': 'application/json' } });
+  }
+}
+
+// ── Route handler: /generate-quiz (Phase 5.5a — §15.2 Stage 1) ──
+async function handleGenerateQuiz(request, env, cors) {
+  let body;
+  try { body = await request.json(); }
+  catch { return new Response(JSON.stringify({ error: 'Invalid JSON' }), { status: 400, headers: { ...cors, 'Content-Type': 'application/json' } }); }
+
+  const target = typeof body.target === 'string' ? body.target.slice(0, 200) : '';
+  const target_id = typeof body.target_id === 'string' ? body.target_id.slice(0, 100) : '';
+  const level = ['n5','n4','n3','n2','n1'].includes(body.level) ? body.level : 'n4';
+  const count = Math.min(Math.max(parseInt(body.count) || 10, 1), 20);
+  const qType = ['mcq','fill','rearrange','translate'].includes(body.type) ? body.type : 'mcq';
+  const confusionPairs = Array.isArray(body.confusion_pairs) ? body.confusion_pairs.slice(0, 10) : [];
+
+  if (!target && !target_id) {
+    return new Response(JSON.stringify({ error: 'target or target_id required' }), {
+      status: 400, headers: { ...cors, 'Content-Type': 'application/json' },
+    });
+  }
+
+  // Rate limiting: quiz-gen counts 2 against the daily budget (batch is expensive)
+  const userId = body.userId || request.headers.get('CF-Connecting-IP') || 'anon';
+  const { allowed } = await checkRateLimit(env, userId);
+  if (!allowed) {
+    return new Response(JSON.stringify({ error: 'daily_limit_reached' }), {
+      status: 429, headers: { ...cors, 'Content-Type': 'application/json' },
+    });
+  }
+
+  // Over-generate by 50% per plan (pipeline will filter)
+  const overCount = Math.ceil(count * 1.5);
+  const ts = Date.now();
+  const userPrompt = [
+    `Generate ${overCount} soal latihan JLPT ${level.toUpperCase()} untuk target: "${target || target_id}".`,
+    `target_id: ${target_id || target}`,
+    `type: ${qType}`,
+    `level: ${level}`,
+    `id prefix: aig-${ts}-`,
+    confusionPairs.length ? `confusion_pairs (buat distractor dari sini kalau cocok): ${confusionPairs.join(', ')}` : '',
+    '',
+    'Output: strict JSON array sesuai schema di system prompt. TIDAK ADA teks lain.',
+  ].filter(Boolean).join('\n');
+
+  try {
+    const result = await callWithCascade(env, QUIZ_GEN_SYSTEM_PROMPT, userPrompt, {
+      temperature: 0.75, // slightly higher for diversity
+      max_tokens: Math.min(3500, 200 * overCount),
+    });
+    const questions = extractJSONArray(result.text);
+    if (!questions) {
+      return new Response(JSON.stringify({
+        error: 'parse_failed',
+        raw: result.text.slice(0, 500),
+        provider: result.provider,
+      }), { status: 502, headers: { ...cors, 'Content-Type': 'application/json' } });
+    }
+    return new Response(JSON.stringify({
+      questions,
+      meta: {
+        generator_provider: result.provider,
+        generator_model: result.model,
+        generated_at: new Date().toISOString(),
+        prompt_version: 'v1.0',
+        target, target_id, level, type: qType,
+        requested_count: count,
+        over_count: overCount,
+      },
+    }), { status: 200, headers: { ...cors, 'Content-Type': 'application/json' } });
+  } catch (e) {
+    console.error('/generate-quiz failed:', e.message);
+    return new Response(JSON.stringify({ error: 'ai_unavailable', detail: e.message }), {
+      status: 503, headers: { ...cors, 'Content-Type': 'application/json' },
+    });
+  }
+}
+
+// ── Route handler: /critique (Phase 5.5a — §15.2 Stage 2) ──
+// Cross-provider critic: if caller tells us who generated, we skip that provider.
+async function handleCritique(request, env, cors) {
+  let body;
+  try { body = await request.json(); }
+  catch { return new Response(JSON.stringify({ error: 'Invalid JSON' }), { status: 400, headers: { ...cors, 'Content-Type': 'application/json' } }); }
+
+  const questions = Array.isArray(body.questions) ? body.questions.slice(0, 20) : null;
+  const target = typeof body.target === 'string' ? body.target.slice(0, 200) : '';
+  const level = ['n5','n4','n3','n2','n1'].includes(body.level) ? body.level : 'n4';
+  const generatorProvider = typeof body.generator_provider === 'string' ? body.generator_provider : null;
+
+  if (!questions || !questions.length) {
+    return new Response(JSON.stringify({ error: 'questions[] required' }), {
+      status: 400, headers: { ...cors, 'Content-Type': 'application/json' },
+    });
+  }
+
+  const userPrompt = [
+    `Review batch soal JLPT ${level.toUpperCase()} berikut.`,
+    target ? `Target yang diuji: "${target}"` : '',
+    '',
+    'Soal-soal (JSON):',
+    JSON.stringify(questions, null, 2),
+    '',
+    'Output: strict JSON array dari verdict objects (id, verdict, reasons, severity). Tidak ada teks lain.',
+  ].filter(Boolean).join('\n');
+
+  try {
+    const result = await callWithCascade(env, CRITIC_SYSTEM_PROMPT, userPrompt, {
+      temperature: 0.3, // low for consistency
+      max_tokens: 3000,
+      excludeProvider: generatorProvider, // cross-provider guarantee
+    });
+    const verdicts = extractJSONArray(result.text);
+    if (!verdicts) {
+      return new Response(JSON.stringify({
+        error: 'parse_failed',
+        raw: result.text.slice(0, 500),
+        provider: result.provider,
+      }), { status: 502, headers: { ...cors, 'Content-Type': 'application/json' } });
+    }
+    return new Response(JSON.stringify({
+      verdicts,
+      meta: {
+        critic_provider: result.provider,
+        critic_model: result.model,
+        critiqued_at: new Date().toISOString(),
+        cross_provider: generatorProvider && generatorProvider !== result.provider,
+      },
+    }), { status: 200, headers: { ...cors, 'Content-Type': 'application/json' } });
+  } catch (e) {
+    console.error('/critique failed:', e.message);
+    return new Response(JSON.stringify({ error: 'ai_unavailable', detail: e.message }), {
+      status: 503, headers: { ...cors, 'Content-Type': 'application/json' },
+    });
+  }
+}
+
 // ── Main handler ──────────────────────────────────────────────────
 export default {
   async fetch(request, env) {
@@ -357,45 +727,11 @@ export default {
     if (request.method !== 'POST') return new Response('Method not allowed', { status: 405, headers: cors });
 
     const url = new URL(request.url);
-    if (url.pathname !== '/chat') return new Response('Not found', { status: 404, headers: cors });
-
-    let body;
-    try { body = await request.json(); }
-    catch { return new Response(JSON.stringify({ error: 'Invalid JSON' }), { status: 400, headers: { ...cors, 'Content-Type': 'application/json' } }); }
-
-    const { messages, context, userId } = body;
-    if (!messages?.length) {
-      return new Response(JSON.stringify({ error: 'messages required' }), { status: 400, headers: { ...cors, 'Content-Type': 'application/json' } });
-    }
-
-    // Rate limiting (uses IP as fallback if no userId)
-    const uid = userId || request.headers.get('CF-Connecting-IP') || 'anon';
-    const { allowed, remaining } = await checkRateLimit(env, uid);
-    if (!allowed) {
-      return new Response(JSON.stringify({
-        error: 'daily_limit_reached',
-        message: `Kamu sudah mencapai batas ${DAILY_LIMIT} pertanyaan gratis hari ini. Coba lagi besok ya! 💪`,
-        remaining: 0,
-      }), { status: 429, headers: { ...cors, 'Content-Type': 'application/json', 'X-RateLimit-Remaining': '0' } });
-    }
-
-    const systemCtx = buildContext(context);
-    const queryType = classifyQuery(messages);
-    const mode = (context?.mode && ['explain', 'quiz', 'chat'].includes(context.mode)) ? context.mode : 'explain';
-
-    try {
-      const result = await getAIResponse(env, messages, systemCtx, queryType, mode);
-      return new Response(JSON.stringify({ ...result, query_type: queryType, mode, remaining }), {
-        status: 200,
-        headers: { ...cors, 'Content-Type': 'application/json', 'X-RateLimit-Remaining': String(remaining) },
-      });
-    } catch (e) {
-      console.error('All AI providers failed:', e.message);
-      return new Response(JSON.stringify({
-        error: 'ai_unavailable',
-        message: 'AI sedang istirahat sebentar. Coba lagi ya! 🙏',
-        detail: e.message,
-      }), { status: 503, headers: { ...cors, 'Content-Type': 'application/json' } });
+    switch (url.pathname) {
+      case '/chat':          return handleChat(request, env, cors);
+      case '/generate-quiz': return handleGenerateQuiz(request, env, cors);
+      case '/critique':      return handleCritique(request, env, cors);
+      default:               return new Response('Not found', { status: 404, headers: cors });
     }
   },
 };
