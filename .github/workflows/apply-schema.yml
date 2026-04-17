@@ -12,39 +12,61 @@ jobs:
         with:
           ref: claude/frontend-overhaul
 
-      - name: Install psql
-        run: sudo apt-get install -y postgresql-client
+      - name: Install psql + dnsutils
+        run: sudo apt-get install -y postgresql-client dnsutils
 
       - name: Extract Phase 5.5 SQL
         run: |
           python3 - << 'PYEOF'
           with open('supabase/schema.sql') as f:
               content = f.read()
-          # Find first Phase 5.5 marker
           start = content.find('-- ── AI FEEDBACK (Phase 5.5b')
           if start == -1:
-              raise RuntimeError("Phase 5.5 markers not found in schema.sql")
+              raise RuntimeError("Phase 5.5 markers not found")
           sql = content[start:].strip()
-          print(f"Extracted {len(sql)} chars of Phase 5.5 SQL")
+          print(f"Extracted {len(sql)} chars")
           with open('/tmp/phase55.sql', 'w') as f:
               f.write(sql)
           PYEOF
 
-      - name: Apply schema
+      - name: Resolve Supabase IPv4 + apply schema
         env:
           PGPASSWORD: ${{ secrets.SUPABASE_DB_PASSWORD }}
         run: |
-          echo "Applying Phase 5.5 schema..."
-          psql \
-            "host=db.oxeuwkpgrtojjzhcboqz.supabase.co port=5432 dbname=postgres user=postgres sslmode=require" \
-            -f /tmp/phase55.sql \
-            --echo-errors 2>&1 | tail -30
-          echo "Exit code: $?"
+          # Force IPv4: resolve the hostname to IPv4 address
+          DB_HOST="db.oxeuwkpgrtojjzhcboqz.supabase.co"
+          IPV4=$(dig +short -4 A "$DB_HOST" | head -1)
+          echo "Resolved $DB_HOST → $IPV4"
 
-      - name: Verify tables created
+          if [ -z "$IPV4" ]; then
+            echo "IPv4 resolution failed, trying session pooler..."
+            IPV4=$(dig +short -4 A "aws-0-ap-southeast-1.pooler.supabase.com" | head -1)
+            PGUSER="postgres.oxeuwkpgrtojjzhcboqz"
+            echo "Pooler IPv4: $IPV4"
+          else
+            PGUSER="postgres"
+          fi
+
+          if [ -z "$IPV4" ]; then
+            echo "ERROR: could not resolve any IPv4 address"
+            exit 1
+          fi
+
+          echo "Connecting via $IPV4 as $PGUSER..."
+          PGCONNECT="host=$IPV4 port=5432 dbname=postgres user=$PGUSER sslmode=require"
+
+          psql "$PGCONNECT" -f /tmp/phase55.sql --echo-errors 2>&1
+          echo "psql exit: $?"
+
+      - name: Verify tables
         env:
           PGPASSWORD: ${{ secrets.SUPABASE_DB_PASSWORD }}
         run: |
-          psql \
-            "host=db.oxeuwkpgrtojjzhcboqz.supabase.co port=5432 dbname=postgres user=postgres sslmode=require" \
-            -c "\dt public.ai_*" 2>&1
+          DB_HOST="db.oxeuwkpgrtojjzhcboqz.supabase.co"
+          IPV4=$(dig +short -4 A "$DB_HOST" | head -1)
+          [ -z "$IPV4" ] && IPV4=$(dig +short -4 A "aws-0-ap-southeast-1.pooler.supabase.com" | head -1)
+          PGUSER=$( [ "$IPV4" = "$(dig +short -4 A "$DB_HOST" | head -1)" ] && echo "postgres" || echo "postgres.oxeuwkpgrtojjzhcboqz" )
+
+          echo "Checking created tables..."
+          psql "host=$IPV4 port=5432 dbname=postgres user=postgres sslmode=require" \
+            -c "SELECT tablename FROM pg_tables WHERE schemaname='public' AND tablename LIKE 'ai_%' ORDER BY tablename;" 2>&1
