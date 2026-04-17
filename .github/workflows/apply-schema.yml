@@ -1,0 +1,50 @@
+name: Apply Supabase Schema (Phase 5.5)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    name: Apply Phase 5.5 schema to Supabase
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: claude/frontend-overhaul
+
+      - name: Install psql
+        run: sudo apt-get install -y postgresql-client
+
+      - name: Extract Phase 5.5 SQL
+        run: |
+          python3 - << 'PYEOF'
+          with open('supabase/schema.sql') as f:
+              content = f.read()
+          # Find first Phase 5.5 marker
+          start = content.find('-- ── AI FEEDBACK (Phase 5.5b')
+          if start == -1:
+              raise RuntimeError("Phase 5.5 markers not found in schema.sql")
+          sql = content[start:].strip()
+          print(f"Extracted {len(sql)} chars of Phase 5.5 SQL")
+          with open('/tmp/phase55.sql', 'w') as f:
+              f.write(sql)
+          PYEOF
+
+      - name: Apply schema
+        env:
+          PGPASSWORD: ${{ secrets.SUPABASE_DB_PASSWORD }}
+        run: |
+          echo "Applying Phase 5.5 schema..."
+          psql \
+            "host=db.oxeuwkpgrtojjzhcboqz.supabase.co port=5432 dbname=postgres user=postgres sslmode=require" \
+            -f /tmp/phase55.sql \
+            --echo-errors 2>&1 | tail -30
+          echo "Exit code: $?"
+
+      - name: Verify tables created
+        env:
+          PGPASSWORD: ${{ secrets.SUPABASE_DB_PASSWORD }}
+        run: |
+          psql \
+            "host=db.oxeuwkpgrtojjzhcboqz.supabase.co port=5432 dbname=postgres user=postgres sslmode=require" \
+            -c "\dt public.ai_*" 2>&1
