@@ -1,0 +1,15 @@
+# ══════════════════════════════════════════════════════════════════
+#  Nugget Nihongo — Admin API Worker config
+#  Deploy: npx wrangler deploy --config workers/wrangler.admin.toml
+#
+#  Secrets needed (wrangler secret put --config workers/wrangler.admin.toml):
+#    ADMIN_SECRET        — any strong random string
+#    SUPABASE_URL        — https://oxeuwkpgrtojjzhcboqz.supabase.co
+#    SUPABASE_SERVICE_KEY — service_role key (NOT anon)
+#    GITHUB_TOKEN        — (optional) PAT with repo:write
+#    GITHUB_REPO         — (optional) nuggetenak/nugget-nihongo
+# ══════════════════════════════════════════════════════════════════
+
+name            = "nugget-nihongo-admin"
+main            = "admin-api.js"
+compatibility_date = "2024-09-01"

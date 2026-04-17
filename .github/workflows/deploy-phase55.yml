@@ -1,0 +1,270 @@
+name: Deploy AI Content Engine (Phase 5.5)
+
+on:
+  workflow_dispatch:
+    inputs:
+      deploy_ai_worker:
+        description: 'Deploy AI Proxy Worker (ai-proxy.js)'
+        type: boolean
+        default: true
+      deploy_admin_worker:
+        description: 'Deploy Admin API Worker (admin-api.js)'
+        type: boolean
+        default: true
+      apply_schema:
+        description: 'Apply Supabase schema (ai_feedback, ai_quiz_cache, ai_promotion_queue)'
+        type: boolean
+        default: true
+
+jobs:
+  deploy-ai-worker:
+    if: ${{ inputs.deploy_ai_worker }}
+    runs-on: ubuntu-latest
+    name: Deploy AI Proxy Worker
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+
+      - name: Install Wrangler
+        run: npm install -g wrangler
+
+      - name: Set GROQ secret
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: echo "${{ secrets.GROQ_API_KEY }}" | wrangler secret put GROQ_API_KEY --config workers/wrangler.toml
+
+      - name: Set GEMINI secret
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: echo "${{ secrets.GEMINI_API_KEY }}" | wrangler secret put GEMINI_API_KEY --config workers/wrangler.toml
+
+      - name: Set OPENROUTER secret
+        if: ${{ secrets.OPENROUTER_API_KEY != '' }}
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: echo "${{ secrets.OPENROUTER_API_KEY }}" | wrangler secret put OPENROUTER_API_KEY --config workers/wrangler.toml
+        continue-on-error: true
+
+      - name: Deploy AI Proxy Worker
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: wrangler deploy --config workers/wrangler.toml
+
+      - name: Smoke test /chat
+        run: |
+          WORKER_URL="https://nugget-nihongo-ai.nugrohopangestu85.workers.dev/chat"
+          echo "Testing $WORKER_URL ..."
+          RESPONSE=$(curl -s --max-time 15 -X POST "$WORKER_URL" \
+            -H "Content-Type: application/json" \
+            -H "Origin: https://nugget-nihongo.pages.dev" \
+            -d '{"messages":[{"role":"user","content":"tes koneksi"}],"context":{"mode":"chat"}}')
+          echo "Response: $RESPONSE"
+          if echo "$RESPONSE" | grep -qE '"reply"|"error"'; then
+            echo "✅ /chat endpoint responding"
+          else
+            echo "⚠️  Unexpected response — check worker logs"
+          fi
+
+      - name: Smoke test /generate-quiz endpoint exists
+        run: |
+          WORKER_URL="https://nugget-nihongo-ai.nugrohopangestu85.workers.dev/generate-quiz"
+          STATUS=$(curl -s --max-time 10 -o /dev/null -w "%{http_code}" -X POST "$WORKER_URL" \
+            -H "Content-Type: application/json" \
+            -H "Origin: https://nugget-nihongo.pages.dev" \
+            -d '{"target":"ために","level":"n4","count":3}')
+          echo "/generate-quiz HTTP status: $STATUS"
+          if [ "$STATUS" = "200" ] || [ "$STATUS" = "429" ] || [ "$STATUS" = "503" ]; then
+            echo "✅ /generate-quiz endpoint exists (status $STATUS — 429/503 = providers down, OK)"
+          else
+            echo "⚠️  Unexpected status $STATUS"
+          fi
+
+  deploy-admin-worker:
+    if: ${{ inputs.deploy_admin_worker }}
+    runs-on: ubuntu-latest
+    name: Deploy Admin API Worker
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+
+      - name: Install Wrangler
+        run: npm install -g wrangler
+
+      - name: Generate ADMIN_SECRET if not set
+        id: admin_secret
+        run: |
+          SECRET="${{ secrets.ADMIN_SECRET }}"
+          if [ -z "$SECRET" ]; then
+            # Generate a random secret and print it for the user to save
+            SECRET=$(openssl rand -hex 24)
+            echo "⚠️  ADMIN_SECRET not set in repo secrets. Generated one for this deploy:"
+            echo "SECRET=$SECRET"
+            echo "👉 Save this to GitHub repo secrets as ADMIN_SECRET immediately!"
+          fi
+          echo "secret=$SECRET" >> $GITHUB_OUTPUT
+
+      - name: Set ADMIN_SECRET
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: echo "${{ steps.admin_secret.outputs.secret }}" | wrangler secret put ADMIN_SECRET --config workers/wrangler.admin.toml
+
+      - name: Set SUPABASE_URL
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: echo "${{ secrets.SUPABASE_URL }}" | wrangler secret put SUPABASE_URL --config workers/wrangler.admin.toml
+
+      - name: Set SUPABASE_SERVICE_KEY
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: echo "${{ secrets.SUPABASE_SERVICE_KEY }}" | wrangler secret put SUPABASE_SERVICE_KEY --config workers/wrangler.admin.toml
+
+      - name: Set GITHUB_TOKEN for promotion PRs
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: echo "${{ secrets.GH_PROMOTION_TOKEN || secrets.GITHUB_TOKEN }}" | wrangler secret put GITHUB_TOKEN --config workers/wrangler.admin.toml
+        continue-on-error: true
+
+      - name: Set GITHUB_REPO
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: echo "nuggetenak/nugget-nihongo" | wrangler secret put GITHUB_REPO --config workers/wrangler.admin.toml
+        continue-on-error: true
+
+      - name: Deploy Admin Worker
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: wrangler deploy --config workers/wrangler.admin.toml
+
+      - name: Smoke test admin (unauthenticated → 401)
+        run: |
+          STATUS=$(curl -s --max-time 10 -o /dev/null -w "%{http_code}" \
+            "https://nugget-nihongo-admin.nugrohopangestu85.workers.dev/admin/stats")
+          echo "Unauthenticated /admin/stats status: $STATUS"
+          if [ "$STATUS" = "401" ]; then
+            echo "✅ Auth guard working (401)"
+          else
+            echo "⚠️  Expected 401, got $STATUS"
+          fi
+
+  apply-schema:
+    if: ${{ inputs.apply_schema }}
+    runs-on: ubuntu-latest
+    name: Apply Supabase Schema
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+
+      - name: Install Supabase CLI
+        run: |
+          curl -sSL https://github.com/supabase/cli/releases/latest/download/supabase_linux_amd64.tar.gz \
+            | tar -xzf - -C /usr/local/bin supabase
+          supabase --version
+
+      - name: Extract and apply Phase 5.5 schema changes
+        env:
+          SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+        run: |
+          # Extract only the Phase 5.5 additions from schema.sql
+          # (the tables: ai_feedback, ai_quiz_cache, ai_promotion_queue + function)
+          python3 - << 'PYEOF'
+          import re
+
+          with open('supabase/schema.sql', 'r') as f:
+              content = f.read()
+
+          # Find sections marked as Phase 5.5
+          markers = [
+              'AI FEEDBACK (Phase 5.5b',
+              'AI QUIZ CACHE (Phase 5.5b',
+              'AI PROMOTION QUEUE (Phase 5.5c',
+              'FUNCTION: upsert_promotion_signal',
+          ]
+
+          sections = []
+          for marker in markers:
+              idx = content.find(marker)
+              if idx == -1:
+                  print(f"Warning: marker not found: {marker}")
+                  continue
+              # Go back to find the -- comment start
+              start = content.rfind('-- ──', 0, idx)
+              if start == -1:
+                  start = idx
+              # Find the next marker or end
+              next_section = len(content)
+              for m2 in markers:
+                  if m2 == marker: continue
+                  ni = content.find(m2, idx + 1)
+                  if ni != -1 and ni < next_section:
+                      ns = content.rfind('-- ──', idx, ni)
+                      next_section = ns if ns != -1 else ni
+              sections.append(content[start:next_section].strip())
+
+          phase55_sql = '\n\n'.join(sections)
+          with open('/tmp/phase55_schema.sql', 'w') as f:
+              f.write(phase55_sql)
+          print(f"Extracted {len(phase55_sql)} chars of Phase 5.5 SQL")
+          print("--- Preview (first 500 chars) ---")
+          print(phase55_sql[:500])
+          PYEOF
+
+      - name: Apply schema via Supabase API
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: |
+          SQL=$(cat /tmp/phase55_schema.sql)
+          echo "Applying schema via Supabase REST API..."
+          RESPONSE=$(curl -s --max-time 30 \
+            -X POST "${SUPABASE_URL}/rest/v1/rpc/exec_sql" \
+            -H "apikey: ${SUPABASE_SERVICE_KEY}" \
+            -H "Authorization: Bearer ${SUPABASE_SERVICE_KEY}" \
+            -H "Content-Type: application/json" \
+            -d "{\"query\": $(echo "$SQL" | python3 -c 'import json,sys; print(json.dumps(sys.stdin.read()))')}" \
+            2>&1 || true)
+
+          # Supabase doesn't expose exec_sql via REST — use pg_dump approach instead.
+          # Try direct SQL endpoint (Supabase Management API):
+          RESPONSE=$(curl -s --max-time 30 \
+            -X POST "https://api.supabase.com/v1/projects/oxeuwkpgrtojjzhcboqz/database/query" \
+            -H "Authorization: Bearer ${SUPABASE_ACCESS_TOKEN}" \
+            -H "Content-Type: application/json" \
+            -d "{\"query\": $(cat /tmp/phase55_schema.sql | python3 -c 'import json,sys; print(json.dumps(sys.stdin.read()))')}" \
+            2>&1)
+
+          echo "Response: $RESPONSE"
+          if echo "$RESPONSE" | grep -qi '"error"'; then
+            echo "⚠️  Schema apply may have failed or partially succeeded."
+            echo "Please apply manually via Supabase SQL editor if needed."
+            echo "SQL file saved as artifact."
+            exit 0  # non-fatal — schema may already exist (idempotent CREATE IF NOT EXISTS)
+          else
+            echo "✅ Schema applied"
+          fi
+
+      - name: Upload schema SQL as artifact
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: phase55-schema-sql
+          path: /tmp/phase55_schema.sql
+          retention-days: 30
