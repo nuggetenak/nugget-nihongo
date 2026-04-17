@@ -1,8 +1,6 @@
 name: Apply Supabase Schema (Phase 5.5)
-
 on:
   workflow_dispatch:
-
 jobs:
   apply:
     runs-on: ubuntu-latest
@@ -10,84 +8,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: claude/frontend-overhaul
-
-      - name: Apply schema via Management API
+      - name: Apply schema
         env:
           SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
-        run: |
-          python3 << 'PYEOF'
-          import json, re, time, sys
-          import urllib.request, urllib.error
-
-          TOKEN = __import__('os').environ['SUPABASE_ACCESS_TOKEN']
-          API   = "https://api.supabase.com/v1/projects/oxeuwkpgrtojjzhcboqz/database/query"
-
-          def run(query, label=''):
-              data = json.dumps({"query": query}).encode()
-              req  = urllib.request.Request(API, data=data, headers={
-                  "Authorization": f"Bearer {TOKEN}",
-                  "Content-Type":  "application/json",
-              })
-              try:
-                  with urllib.request.urlopen(req, timeout=30) as r:
-                      return json.loads(r.read()), None
-              except urllib.error.HTTPError as e:
-                  return None, f"HTTP {e.code}: {e.read().decode()[:200]}"
-              except Exception as e:
-                  return None, str(e)
-
-          # Check existing tables
-          result, err = run("SELECT tablename FROM pg_tables WHERE schemaname='public' AND tablename LIKE 'ai_%' ORDER BY tablename")
-          if err:
-              print(f"Check failed: {err}"); sys.exit(1)
-          existing = {r['tablename'] for r in result}
-          print(f"Existing ai_ tables: {sorted(existing)}")
-
-          REQUIRED = {'ai_feedback', 'ai_quiz_cache', 'ai_promotion_queue'}
-          if REQUIRED <= existing:
-              print("All tables already exist — done."); sys.exit(0)
-
-          # Read full schema
-          with open('supabase/schema.sql') as f:
-              content = f.read()
-          idx   = content.find('AI FEEDBACK (Phase 5.5b')
-          start = content.rfind('--', 0, idx)
-          sql   = content[start:].strip()
-          print(f"SQL: {len(sql)} chars")
-
-          # Strip comments to reduce WAF trigger risk
-          sql_clean = re.sub(r'--[^\n]*', '', sql)
-          sql_clean = re.sub(r'\n{3,}', '\n\n', sql_clean).strip()
-
-          # Split into statements
-          statements = [s.strip() for s in re.split(r';\s*\n', sql_clean) if s.strip() and len(s.strip()) > 5]
-          print(f"Statements to run: {len(statements)}")
-
-          ok = skip = err_count = 0
-          for i, stmt in enumerate(statements):
-              time.sleep(0.4)  # Rate limit: max ~2.5 req/s
-              preview = stmt[:60].replace('\n',' ')
-              result, error = run(stmt)
-              if error:
-                  if any(x in error for x in ['already exists','42P07','42710','42P16']):
-                      print(f"  SKIP [{i+1}/{len(statements)}]: {preview}")
-                      skip += 1
-                  else:
-                      print(f"  ERR  [{i+1}/{len(statements)}]: {error[:100]} | {preview}")
-                      err_count += 1
-              else:
-                  print(f"  OK   [{i+1}/{len(statements)}]: {preview}")
-                  ok += 1
-
-          print(f"\nResult: {ok} OK, {skip} skipped, {err_count} errors")
-
-          # Final check
-          result, _ = run("SELECT tablename FROM pg_tables WHERE schemaname='public' AND tablename LIKE 'ai_%' ORDER BY tablename")
-          final = {r['tablename'] for r in (result or [])}
-          print(f"Tables now: {sorted(final)}")
-          missing = REQUIRED - final
-          if missing:
-              print(f"STILL MISSING: {missing}")
-              sys.exit(1)
-          print("SUCCESS — all 3 tables created!")
-          PYEOF
+        run: python3 .github/apply_schema.py
