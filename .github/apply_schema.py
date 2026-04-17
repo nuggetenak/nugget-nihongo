@@ -1,14 +1,56 @@
-import json, re, time, sys, os
+import json, re, time, sys, os, base64
 import urllib.request, urllib.error
 
-TOKEN = os.environ.get('SUPABASE_ACCESS_TOKEN', '')
-API   = "https://api.supabase.com/v1/projects/oxeuwkpgrtojjzhcboqz/database/query"
+TOKEN    = os.environ.get('SUPABASE_ACCESS_TOKEN', '')
+GH_TOKEN = os.environ.get('GITHUB_TOKEN', '')
+REPO     = "nuggetenak/nugget-nihongo"
+API      = "https://api.supabase.com/v1/projects/oxeuwkpgrtojjzhcboqz/database/query"
+
+log = []
+def p(msg):
+    print(msg)
+    log.append(msg)
+
+def write_result_to_repo(content_str):
+    """Write result file to repo via GitHub API so it can be read externally."""
+    if not GH_TOKEN:
+        p("No GITHUB_TOKEN, skipping result write")
+        return
+    encoded = base64.b64encode(content_str.encode()).decode()
+    # Get current SHA if file exists
+    try:
+        req = urllib.request.Request(
+            f"https://api.github.com/repos/{REPO}/contents/.github/schema_result.txt",
+            headers={"Authorization": f"Bearer {GH_TOKEN}", "Accept": "application/vnd.github+json"})
+        with urllib.request.urlopen(req, timeout=10) as r:
+            existing = json.loads(r.read())
+            sha = existing.get('sha', '')
+    except:
+        sha = ''
+    body = {"message": "ci: schema apply result", "content": encoded, "branch": "develop"}
+    if sha:
+        body["sha"] = sha
+    req = urllib.request.Request(
+        f"https://api.github.com/repos/{REPO}/contents/.github/schema_result.txt",
+        data=json.dumps(body).encode(),
+        headers={"Authorization": f"Bearer {GH_TOKEN}", "Content-Type": "application/json",
+                 "Accept": "application/vnd.github+json"},
+        method='PUT')
+    try:
+        with urllib.request.urlopen(req, timeout=15) as r:
+            p(f"Result written to repo: HTTP {r.status}")
+    except Exception as e:
+        p(f"Result write failed: {e}")
+
+p(f"Python {sys.version}")
+p(f"TOKEN set: {'yes' if TOKEN else 'NO — EMPTY'}")
+p(f"GITHUB_TOKEN set: {'yes' if GH_TOKEN else 'no'}")
 
 if not TOKEN:
-    print("ERROR: SUPABASE_ACCESS_TOKEN not set")
+    msg = "FATAL: SUPABASE_ACCESS_TOKEN is empty"
+    p(msg)
+    write_result_to_repo('\n'.join(log))
     sys.exit(1)
-
-print(f"Token prefix: {TOKEN[:12]}...")
 
 def run(query):
     data = json.dumps({"query": query}).encode()
@@ -28,66 +70,58 @@ def run(query):
 # Check existing tables
 result, err = run("SELECT tablename FROM pg_tables WHERE schemaname='public' AND tablename LIKE 'ai_%' ORDER BY tablename")
 if err:
-    print(f"Initial check failed: {err}")
+    p(f"Initial check FAILED: {err}")
+    write_result_to_repo('\n'.join(log))
     sys.exit(1)
 
 existing = {r['tablename'] for r in result}
-print(f"Existing ai_ tables: {sorted(existing)}")
+p(f"Existing ai_ tables: {sorted(existing)}")
 
 REQUIRED = {'ai_feedback', 'ai_quiz_cache', 'ai_promotion_queue'}
 if REQUIRED <= existing:
-    print("All tables already exist — done.")
+    p("All tables exist — done!")
+    write_result_to_repo('\n'.join(log))
     sys.exit(0)
 
-# Read schema
+p(f"Missing: {REQUIRED - existing} — applying schema...")
+
 with open('supabase/schema.sql') as f:
     content = f.read()
-
 idx   = content.find('AI FEEDBACK (Phase 5.5b')
 start = content.rfind('--', 0, idx)
 sql   = content[start:].strip()
-print(f"SQL extracted: {len(sql)} chars")
-
-# Strip comments to reduce WAF triggers
 sql_clean = re.sub(r'--[^\n]*', '', sql)
 sql_clean = re.sub(r'\n{3,}', '\n\n', sql_clean).strip()
-
-# Split into individual statements
-statements = []
-for s in re.split(r';\s*\n', sql_clean):
-    s = s.strip()
-    if s and len(s) > 5:
-        statements.append(s)
-
-print(f"Statements to execute: {len(statements)}")
+statements = [s.strip() for s in re.split(r';\s*\n', sql_clean) if s.strip() and len(s.strip()) > 5]
+p(f"Statements: {len(statements)}")
 
 ok = skip = err_count = 0
 for i, stmt in enumerate(statements):
-    time.sleep(0.5)  # 2 req/s max
+    time.sleep(0.5)
     preview = stmt[:65].replace('\n', ' ')
     result, error = run(stmt)
     if error:
-        if any(x in error for x in ['already exists', '42P07', '42710', '42P16', 'duplicate']):
-            print(f"SKIP [{i+1}]: {preview}")
+        if any(x in error for x in ['already exists','42P07','42710','duplicate']):
+            p(f"SKIP [{i+1}]: {preview}")
             skip += 1
         else:
-            print(f"ERR  [{i+1}]: {error[:120]}")
-            print(f"     stmt: {preview}")
+            p(f"ERR  [{i+1}]: {error[:120]}")
             err_count += 1
     else:
-        print(f"OK   [{i+1}]: {preview}")
+        p(f"OK   [{i+1}]: {preview}")
         ok += 1
 
-print(f"\nSummary: {ok} OK, {skip} skipped, {err_count} errors")
+p(f"Done: {ok} OK, {skip} skip, {err_count} err")
 
-# Final verification
 result, _ = run("SELECT tablename FROM pg_tables WHERE schemaname='public' AND tablename LIKE 'ai_%' ORDER BY tablename")
 final = {r['tablename'] for r in (result or [])}
-print(f"Final tables: {sorted(final)}")
+p(f"Final tables: {sorted(final)}")
 
 missing = REQUIRED - final
 if missing:
-    print(f"STILL MISSING: {missing}")
+    p(f"STILL MISSING: {missing}")
+    write_result_to_repo('\n'.join(log))
     sys.exit(1)
 
-print("SUCCESS — all tables created!")
+p("SUCCESS — all tables created!")
+write_result_to_repo('\n'.join(log))
