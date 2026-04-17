@@ -3,10 +3,56 @@
 **From:** Claude Opus 4.6 · claude.ai session · 16 April 2026
 **Owner:** Nugget (`@nuggetenak`)
 **Branch:** `claude/frontend-overhaul`
-**Status:** Plan approved by Nugget. Ready to execute. Nothing coded yet.
+**Status:** Phase 0 + 2 + 3 + 5 complete. Phase 4 or 5.5 next.
 
 ---
 
+
+## Session update — 2026-04-17 (Agent: Claude Opus 4.7, session 3)
+
+### Completed this session
+- **Phase 5 DONE**: Sensei persona v2 — canonical prompt shipped. 3 atomic commits. Tests 10704/0.
+
+**Files added/modified:**
+- `shared/sensei-persona-v2.txt` (new) — canonical §5.3 prompt (2633 bytes), single source of truth for drift check
+- `shared/sensei-mode-addenda.js` (new) — reference copy of per-mode addenda (explain/quiz/chat)
+- `workers/ai-proxy.js` — `SYSTEM_PROMPT` swapped to §5.3; added `MODE_ADDENDA` + `buildSystemPrompt(mode)`; threaded `mode` through `callGroq`/`callGemini`/`callOpenRouter`/`getAIResponse`; cache key now mode-scoped (no cross-mode pollution); `buildContext` injects `ctx.goals` via `GOAL_LABELS` map (ssw/jlpt/anime/travel/casual — matches onboarding data-goal codes); main handler extracts/validates `ctx.mode` (default `explain`) and echoes it back in response
+- `supabase/functions/ai-router/index.ts` — `MASTER_SYSTEM_PROMPT` swapped to §5.3 (byte-identical to Worker, 2633 bytes); TS version of `MODE_ADDENDA` + `buildSystemPrompt`; `callGemini` now takes explicit `systemPrompt` param and filters `role:'system'` before sending to Gemini API (correct channel is `systemInstruction`); main handler parses `mode`/`goals`/`level` from body and builds mode-scoped prompt with learner context inline
+- `public/js/ai-tutor.js` — `_buildContext()` reads `localStorage.getItem('nn_goals')` and attaches as `ctx.goals`; pre-Phase-3 users unaffected (empty array → no goals line added)
+- `tests/run.js` — new `── Sensei persona drift ──` section with 4 assertions: Worker prompt present & substantial, Edge Function prompt present & substantial, byte-identical diff (with first-diff-byte diagnostic), shared .txt matches Worker. Negative-tested.
+
+**Commits (3 atomic):**
+- `781c884` — `feat(sensei): persona v2 canonical prompt — Worker + Edge Function`
+- `9223e8c` — `feat(sensei): inject learner goals from onboarding into AI context`
+- `ea62fef` — `test(ci): persona drift check — Worker vs Edge Function byte-identical`
+
+**Behavior changes users will notice:**
+- Warmer but less saccharine voice (no "Ganbatte! 💪", no "Pertanyaan bagus!")
+- Answers lead with the answer, context follows (principle 1 of §5.2)
+- Corrections are direct: swap → why → next step (no praise-sandwich)
+- Mode actually changes behavior now (addenda, not just hint text)
+- Goals from onboarding prioritize example selection
+
+**Known caveats for next agent:**
+- Worker deploy: Nugget needs to run `wrangler deploy` in `workers/` dir for the new persona to hit production. Cloudflare Pages auto-deploys `public/` but NOT workers. Remind him.
+- Edge Function deploy: `supabase functions deploy ai-router`. Same story — needs manual deploy.
+- Cache note: since `cacheKey()` now includes mode, existing KV cache entries are effectively invalidated (different hash). This is intentional — old entries were generated with the v1 generic persona and should not be served anymore.
+- Gemini mode filter: `callGemini` in the Edge Function now drops any `role:'system'` messages from the `contents` array before sending, because `systemInstruction` is the correct channel. Previously it was silently double-injecting (system message in messages[] + systemInstruction). This is a bonus fix.
+
+### What's next (recommended order)
+1. **Phase 5.5 — AI Content Engine** (Generator → Critic → Validator pipeline, §15). This is the dangerous/high-impact one Nugget explicitly approved. Do it next if he has energy for careful work. Five quality gates in §15.7 must all pass before shipping. User feedback widget §15.6 is required (non-optional).
+2. **Phase 4 — Markup refactor** (rewrite each page using design system tokens from Phase 1). Lower-risk but tedious.
+3. **Phase 5.75 — Tanya Sensei** (§17): 💬 Tanya buttons on every material card → opens Sensei drawer with card snapshot as `ctx.card`. Persona v2 is now ready for this since mode+context plumbing works.
+4. **Phase 1 — Design system tokens** (`public/styles/tokens.css`) if not done — this was the plan's Phase 1 but got reordered. Check with Nugget.
+
+### What was NOT open-to-decide
+All decisions from handoff v2.0 and v2.1 still apply. No new decisions were made this session.
+
+### Small followups (non-blocking)
+- `DAILY_LIMIT` in Worker is still set to 20 and rate-limiting still runs. Per §5.7 + §16, the "no daily limit" UX change should remove the quota bar from the UI and replace with status strip. That's a separate UI phase (§16), not Phase 5. Don't do it as part of Phase 5.
+- Worker response now includes `mode` field. Frontend doesn't currently use it but could for analytics/debugging.
+
+---
 
 ## Session update — 2026-04-16 (Agent: Claude Sonnet 4.6, session 2)
 
