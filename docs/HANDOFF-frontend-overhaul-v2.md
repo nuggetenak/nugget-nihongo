@@ -3,10 +3,62 @@
 **From:** Claude Opus 4.6 · claude.ai session · 16 April 2026
 **Owner:** Nugget (`@nuggetenak`)
 **Branch:** `claude/frontend-overhaul`
-**Status:** Phase 0 + 2 + 3 + 5 + 5.5a complete. Phase 5.5b next.
+**Status:** Phase 0 + 2 + 3 + 5 + 5.5a + 5.5b complete. Run §15.7 quality gates next, then Phase 5.5c.
 
 ---
 
+
+## Session update — 2026-04-17 (Agent: Claude Opus 4.7, session 5)
+
+### Completed this session
+**Phase 5.5b DONE** — feedback widget + Latihan AI UI + fallback drills + pre-gen scheduler. 1 atomic commit. Tests 10741 → 10788 (+47).
+
+**Files added/modified:**
+- `public/js/ai-feedback.js` (new) — 👍/👎/✏️ widget. Quarantines on 👎 (localStorage blocklist + IDB eviction). Reason picker: grammar_wrong / out_of_level / unnatural / wrong_answer / not_relevant / other. Edit picker: correction textarea. Syncs to Supabase `ai_feedback` table (fire-and-forget). Anonymous users supported. CSS injected dynamically.
+- `public/js/ai-quiz-mode.js` (new) — Intercepts `setQuizMode('ai_quiz')` + `startQuiz()` via chain-override (same pattern as quiz-mixed.js). Loads AIContentEngine, renders MCQ cards + feedback widgets. Falls back to `getFallbackDrills()` if AI fails. Reveals `#modeAIQuiz` button on DOMContentLoaded if flag on.
+- `public/data/fallback/quiz-drills.json` (new) — 12 offline fallback drills (6×N5, 6×N4). All pass structural validator.
+- `public/js/offline-ai-cache.js` — added `removeQuiz(key)` (quarantine eviction), `getFallbackDrills(level)`, pre-gen scheduler (4 triggers: app-open, tab-focus, night-time, card-idle).
+- `supabase/schema.sql` — `ai_feedback` table (RLS: INSERT=all, SELECT=own rows), `ai_quiz_cache` table (shared server-side cache, public read, expires 7d).
+- `public/index.html` — `<script>` tags for 4 new files, `#modeAIQuiz` button in `#qcat-latihan` (hidden by default).
+- `public/styles/app.css` — `.mode-btn--ai`, `.mode-badge` styles.
+
+**Commit:** `4277b58`
+
+**Feature still fully OFF for all users.** Nothing is visible without:
+```js
+localStorage.setItem('nn_feature_ai_quiz_gen', '1'); location.reload();
+```
+
+### ⚠️ Manual deploy required BEFORE enabling flag
+```bash
+# 1. Deploy Worker (new /generate-quiz + /critique endpoints)
+cd workers && wrangler deploy
+
+# 2. Apply Supabase schema (run in Supabase SQL editor or):
+supabase db push   # if using CLI + linked project
+```
+
+### What's next — §15.7 Quality Gates (YOU need to do this)
+
+This is the human-in-the-loop gate before the flag ships to users.
+
+1. Enable flag locally: `localStorage.setItem('nn_feature_ai_quiz_gen', '1')`
+2. Open app → Latihan → Latihan AI
+3. Generate questions at N4 (your main level)
+4. Review manually: does each question feel correct? Are distractors plausible? Does the Japanese sound natural?
+5. Target: ≥90% of questions pass your review
+6. If <90%: tell next Claude agent which patterns fail → tune prompts in `QUIZ_GEN_SYSTEM_PROMPT` in `workers/ai-proxy.js`
+7. If ≥90%: proceed to Phase 5.5c OR flip flag for yourself only first to gather real feedback data for a week before flipping for all users
+
+**You don't need to review 100 questions in one sitting.** Even 20-30 gives a clear signal. The §15.7 "100 questions" target is for the formal pre-launch gate; an informal 20-question spot-check now will tell you if prompt tuning is needed.
+
+### After quality gates: Phase 5.5c (promotion pipeline)
+- `supabase/schema.sql` — `ai_promotion_queue` table
+- `workers/admin-api.js` (new) — Cloudflare Worker for promote/reject/blocklist actions
+- `public/admin/promote.html` (new) — admin UI (URL-only access, not in main nav)
+- Tests — lineage metadata validation on promoted items
+
+---
 
 ## Session update — 2026-04-17 (Agent: Claude Opus 4.7, session 4)
 
