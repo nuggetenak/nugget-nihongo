@@ -237,7 +237,7 @@ async function handleCandidates(request, env, cors) {
   try {
     const rows = await sbGet(env, 'ai_promotion_queue', {
       status:   `eq.${status}`,
-      order:    'approval_ratio.desc,serve_count.desc',
+      order:    'thumbs_up.desc,serve_count.desc',
       limit:    String(limit),
       select:   '*',
     });

@@ -399,11 +399,7 @@ CREATE TABLE IF NOT EXISTS public.ai_promotion_queue (
   thumbs_up           INTEGER DEFAULT 0,
   thumbs_down         INTEGER DEFAULT 0,
   edits_submitted     INTEGER DEFAULT 0,
-  approval_ratio      REAL GENERATED ALWAYS AS (
-    CASE WHEN (thumbs_up + thumbs_down) = 0 THEN 0
-         ELSE thumbs_up::REAL / (thumbs_up + thumbs_down)::REAL
-    END
-  ) STORED,
+  -- approval_ratio computed in queries: thumbs_up::REAL / NULLIF(thumbs_up+thumbs_down,0)
   -- promotion state
   -- 'candidate'  → meets §15.9 criteria (≥10 serves, ≥0.85 ratio, ≥30 days)
   -- 'promoted'   → human clicked Promote
@@ -422,8 +418,7 @@ CREATE TABLE IF NOT EXISTS public.ai_promotion_queue (
   promotion_target    TEXT  -- e.g. 'public/data/quiz-bank/n4.js'
 );
 
-CREATE INDEX IF NOT EXISTS idx_promo_status    ON public.ai_promotion_queue(status);
-CREATE INDEX IF NOT EXISTS idx_promo_ratio     ON public.ai_promotion_queue(approval_ratio DESC);
+CREATE INDEX IF NOT EXISTS idx_promo_status ON public.ai_promotion_queue(status);
 CREATE INDEX IF NOT EXISTS idx_promo_serves    ON public.ai_promotion_queue(serve_count DESC);
 CREATE INDEX IF NOT EXISTS idx_promo_type      ON public.ai_promotion_queue(item_type);
 CREATE INDEX IF NOT EXISTS idx_promo_first     ON public.ai_promotion_queue(first_seen_at);
@@ -476,8 +471,7 @@ BEGIN
     quarantined      = ai_promotion_queue.quarantined
                        OR (p_verdict IN ('thumbs_down', 'edit')),
     last_feedback_at = NOW(),
-    -- promote to 'candidate' if criteria met
-    status           = CASE
+    status = CASE
       WHEN ai_promotion_queue.status IN ('promoted','rejected') THEN ai_promotion_queue.status
       WHEN (ai_promotion_queue.serve_count + 1) >= 10
         AND ai_promotion_queue.thumbs_down = 0
