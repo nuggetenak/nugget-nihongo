@@ -3,10 +3,75 @@
 **From:** Claude Opus 4.6 · claude.ai session · 16 April 2026
 **Owner:** Nugget (`@nuggetenak`)
 **Branch:** `claude/frontend-overhaul`
-**Status:** Phase 0 + 2 + 3 + 5 complete. Phase 4 or 5.5 next.
+**Status:** Phase 0 + 2 + 3 + 5 + 5.5a complete. Phase 5.5b next.
 
 ---
 
+
+## Session update — 2026-04-17 (Agent: Claude Opus 4.7, session 4)
+
+### Completed this session
+- **Phase 5.5a DONE**: AI Content Engine foundation — Generator + Critic + Validator pipeline, feature-flagged OFF. 3 atomic commits. Tests 10725 → 10741 (+16 validator/engine assertions on top of the +21 from validator commit).
+
+**Files added/modified:**
+- `public/js/ai-validator.js` (new, 267 lines) — Stage 3 structural validator. All 7 rules (R1 schema, R2 target-present, R3 no-spoiler, R4 level-leak, R5 mojibake, R6 distractor-quality, R7 answer-in-choices). Pure JS, no LLM. Also exports `buildVocabLevelIndex()` which consumes the `window.vocabN5..vocabN1` globals.
+- `workers/ai-proxy.js` (+375 lines) — added 2 new routes:
+  * `POST /generate-quiz` — Stage 1, over-generates by 50% per §15.2
+  * `POST /critique` — Stage 2, cross-provider (excludes generator from cascade)
+  * New standalone system prompts: `QUIZ_GEN_SYSTEM_PROMPT`, `CRITIC_SYSTEM_PROMPT`
+  * New helpers: `rawGroq`/`rawGemini`/`rawOpenRouter` (explicit systemPrompt, returns provider identity), `callWithCascade` (with `excludeProvider` option), `extractJSONArray` (tolerant of markdown fences)
+  * Main `fetch()` refactored to switch on `url.pathname`: `/chat` / `/generate-quiz` / `/critique`
+  * `/chat` behavior untouched — persona-drift test still passes
+- `public/js/ai-content-engine.js` (new, 270 lines) — client-side orchestrator. Feature-flagged via `localStorage.nn_feature_ai_quiz_gen`. 3-round retry with rejection-reason hints. Soft-fails if critic 503s (treats all as APPROVED, validator alone decides). Every served question gets full §15.9 lineage metadata.
+- `tests/run.js` (+160 lines) — 21 validator tests + 16 content-engine tests. All passing.
+
+**Commits (3 atomic):**
+- `f3043f7` — `feat(ai-content): structural validator + 21 tests (§15.2 stage 3)`
+- `b137de1` — `feat(ai-content): Worker /generate-quiz + /critique endpoints (§15.2 stages 1-2)`
+- `de61e4c` — `feat(ai-content): client-side G+C+V orchestrator (flag off) + 16 tests`
+
+**Architectural deviation from plan (important to understand):**
+Plan §15.8 listed `workers/ai-validator.js`. I moved the structural validator to `public/js/ai-validator.js` because R4 (level-leak check) needs the vocab DB, which is client-side (~100KB across vocab-n5..vocab-n1.js). Shipping that into every Worker request would be wasteful. The Worker got the LLM-based `/critique` endpoint instead (which is the LLM-heavy half of the pipeline — Worker is the right place for that). Net effect: same pipeline, better-chosen deployment boundary.
+
+**Nothing user-visible changed.** The content engine:
+1. Is flagged off by default (`localStorage.nn_feature_ai_quiz_gen !== '1'`)
+2. Is not yet loaded via `<script>` tag in `index.html`
+3. Is not yet called from any UI code
+
+All three gates must be opened for users to see AI-generated quizzes. By design — the 5 §15.7 quality gates include a human native-speaker review of 100 questions that hasn't happened yet.
+
+**Deploy requirements (manual, not automated):**
+- `wrangler deploy` from `workers/` — new endpoints won't exist in production until this runs
+- No Edge Function changes this phase
+- No schema changes this phase
+- No `sw.js` cache-key bump needed (no `public/` runtime behavior changed for users)
+
+### What's next (Phase 5.5b — recommended order)
+
+Next unit of work, per plan §15:
+
+1. **`supabase/schema.sql`** — add `ai_feedback` table (user_id, ai_item_id, verdict, reason, correction, lineage_json, created_at)
+2. **`public/js/ai-feedback.js`** (new) — 👍/👎/✏️ widget. Flagged items are immediately quarantined (removed from `nn_ai_cache` + added to local blocklist) AND sync to Supabase.
+3. **`public/data/fallback/quiz-drills.json`** (new) — offline fallback. §15.5 item 4.
+4. **Extend `public/js/offline-ai-cache.js`** — pre-gen scheduler (§15.4). Triggers: app-open + wifi + battery>50%, session-end, idle-on-card >30s, night-time bulk.
+5. **UI wiring** — add `<script>` tags in `index.html`, add `Latihan AI` button in Latihan tab behind same feature flag. Copy: "Eksperimen — AI generate soal. Buka kalau lu mau bantuin kami test." Default: hidden unless `localStorage.nn_feature_ai_quiz_gen === '1'`.
+
+After 5.5b: **Run §15.7 quality gates** (manual, human-in-loop). Only then can the flag ship to all users.
+
+After gates pass: **Phase 5.5c** — promotion pipeline (§15.9) with admin panel, `ai_promotion_queue` table, lineage-validation tests.
+
+### What NOT to touch
+Everything from previous handoff entries still applies. Notably:
+- `corpus/v17-pass15` branch — READ ONLY
+- Persona prompt in `workers/ai-proxy.js` SYSTEM_PROMPT and `supabase/functions/ai-router/index.ts` MASTER_SYSTEM_PROMPT are byte-locked by drift test
+- `public/data/vocab/*.js` and `public/data/grammar/*.js` are append-only
+
+### Open questions for Nugget
+- When wrangler-deploying the Worker, there's no staging env configured. Deploy goes straight to production. New endpoints are POST-only behind 404 for GET, and the main `/chat` route is unchanged, so this is safe — but worth flagging.
+- Feature flag mechanism for 5.5b: pure localStorage? Or promote to a Supabase-backed user setting? Plan doesn't specify. Defaulting to localStorage for now; trivial to promote later.
+- Should the 5.5b feedback widget write to Supabase even for anonymous (not-logged-in) users via anon ID? Plan §15.6 implies yes ("syncs to Supabase"); worth confirming — RLS policy matters.
+
+---
 
 ## Session update — 2026-04-17 (Agent: Claude Opus 4.7, session 3)
 
