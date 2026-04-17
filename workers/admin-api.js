@@ -122,7 +122,7 @@ async function openPromotionPR(env, item, promotedPayload, targetFile) {
 
   try {
     // 1. Get current file SHA + content
-    const fileRes = await fetch(`${api}/contents/${targetFile}?ref=claude/frontend-overhaul`, { headers: ghHeaders });
+    const fileRes = await fetch(`${api}/contents/${targetFile}?ref=develop`, { headers: ghHeaders });
     if (!fileRes.ok) throw new Error(`GitHub GET file: ${fileRes.status}`);
     const fileData = await fileRes.json();
     const currentContent = atob(fileData.content.replace(/\n/g, ''));
@@ -137,7 +137,7 @@ async function openPromotionPR(env, item, promotedPayload, targetFile) {
     const branchName = `promote/ai-${item.ai_item_id.slice(-8)}-${ts}`;
 
     // Get base SHA
-    const baseRes = await fetch(`${api}/git/ref/heads/claude%2Ffrontend-overhaul`, { headers: ghHeaders });
+    const baseRes = await fetch(`${api}/git/ref/heads/develop`, { headers: ghHeaders });
     if (!baseRes.ok) throw new Error(`GitHub get ref: ${baseRes.status}`);
     const baseSHA = (await baseRes.json()).object.sha;
 
@@ -166,7 +166,7 @@ async function openPromotionPR(env, item, promotedPayload, targetFile) {
       body: JSON.stringify({
         title: `Promote AI item: ${item.ai_item_id}`,
         head: branchName,
-        base: 'claude/frontend-overhaul',
+        base: 'develop',
         body: [
           `## AI Content Promotion`,
           `**Item ID:** ${item.ai_item_id}`,
