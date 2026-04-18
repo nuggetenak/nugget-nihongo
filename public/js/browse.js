@@ -253,6 +253,7 @@ function render() {
   const main = document.getElementById('main');
   if (!main) return;
   main.innerHTML = '';
+  _currentRevealedEl = null; // reset accordion — DOM rebuilt, old refs invalid
 
   const data = (window.grammarData || []).filter(Boolean);
 

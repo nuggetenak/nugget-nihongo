@@ -84,6 +84,8 @@
 
     // Upsert a card after review
     upsertCard: function (card) {
+      // ⚠️ BACKEND BUG: sb.auth.getUser() is async — user_id always undefined here.
+      // Fix: make this function async and use: var u = await sb.auth.getUser(); u.data?.user?.id
       return sb.from('srs_cards').upsert({
         user_id:        (sb.auth.getUser()).data?.user?.id,
         item_type:      card.item_type,
@@ -113,6 +115,9 @@
 
     // Bulk sync: push all local SRS state to cloud
     bulkSync: function (cards) {
+      // ⚠️ BACKEND BUG 1: sb.auth.getUser() async called sync — userId always undefined.
+      // ⚠️ BACKEND BUG 2: caller passes nn_fsrs_cards as plain object {id: entry}, not array.
+      // Fix: async fn + Object.entries(cards).map(([id, entry]) => ({ user_id, item_type: entry.source, item_id: id, ...entry.card }))
       var userId = (sb.auth.getUser()).data?.user?.id;
       if (!userId) return Promise.reject('Not logged in');
       var rows = cards.map(function (c) {
