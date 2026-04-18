@@ -427,12 +427,10 @@ function renderSection(container, lv, items, title, count, isSubDay = false) {
           </span>
           <div class="peel-actions">
             <button class="peel-bm-btn${isBookmarked ? ' bookmarked' : ''}"
-              onclick="event.stopPropagation(); toggleBookmark('${d.id}',this,event)"
               aria-label="Bookmark">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="${isBookmarked ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
             </button>
             <button class="peel-detail-btn"
-              onclick="event.stopPropagation(); openDetail('${d.id}')"
               aria-label="Detail">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg>
             </button>
@@ -443,13 +441,11 @@ function renderSection(container, lv, items, title, count, isSubDay = false) {
         <div class="peel-bottom-row">
           <span class="peel-meta">${dayBadge ? d.day + '日目 · ' : ''}${catDisplay}</span>
           <button class="peel-peek-btn peel-hint--peek"
-            onclick="event.stopPropagation();"
             aria-label="Peek">
             <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
             Peek
           </button>
           <button class="peel-peek-btn peel-hint--close" style="display:none"
-            onclick="event.stopPropagation();"
             aria-label="Tutup">
             <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
             Tutup
@@ -458,13 +454,14 @@ function renderSection(container, lv, items, title, count, isSubDay = false) {
       </div>`;
 
     // ── Peel interaction ─────────────────────────────────────────
-    const front     = el.querySelector('.peel-front');
-    const peekBtn   = el.querySelector('.peel-hint--peek');
-    const closeBtn  = el.querySelector('.peel-hint--close');
+    const front      = el.querySelector('.peel-front');
+    const peekBtn    = el.querySelector('.peel-hint--peek');
+    const closeBtn   = el.querySelector('.peel-hint--close');
+    const detailBtn  = el.querySelector('.peel-detail-btn');
+    const bmBtn      = el.querySelector('.peel-bm-btn');
     let revealed = false;
 
     function setRevealed(r) {
-      // Accordion: close previous card before opening this one
       if (r && _currentRevealedEl && _currentRevealedEl !== el) {
         const prev = _currentRevealedEl;
         const prevClose = prev.querySelector('.peel-hint--close');
@@ -481,22 +478,82 @@ function renderSection(container, lv, items, title, count, isSubDay = false) {
       _currentRevealedEl = r ? el : (_currentRevealedEl === el ? null : _currentRevealedEl);
     }
 
-    // Peek btn tap = permanent reveal/hide
-    peekBtn.addEventListener('click',  function() { setRevealed(true);  });
-    closeBtn.addEventListener('click', function() { setRevealed(false); });
+    // ── Detail btn — use addEventListener not onclick attr ──────
+    if (detailBtn) {
+      detailBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        if (window.openDetail) window.openDetail(d.id);
+      });
+      // Prevent touchstart from bubbling and triggering peek
+      detailBtn.addEventListener('touchstart', function(e) { e.stopPropagation(); }, { passive: true });
+    }
 
-    // Hold on peekBtn ONLY = temporary peek (scroll-safe, rest of card untouched)
+    // ── Bookmark btn — use addEventListener not onclick attr ────
+    if (bmBtn) {
+      bmBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        if (window.toggleBookmark) window.toggleBookmark(d.id, bmBtn, e);
+      });
+      bmBtn.addEventListener('touchstart', function(e) { e.stopPropagation(); }, { passive: true });
+    }
+
+    // ── Peek btn: tap = permanent reveal, hold = temporary peek ─
+    // Strategy: touchstart starts a hold timer. If touchend fires
+    // within HOLD_MS → it was a tap → setRevealed(true).
+    // If timer fires first → it's a hold → add peeking class.
+    // On touchend after hold → remove peeking (no reveal).
+    const HOLD_MS = 180;
+    let holdTimer = null;
+    let isHolding = false;
+
     peekBtn.addEventListener('touchstart', function(e) {
       e.stopPropagation();
-      if (!revealed) el.classList.add('peeking');
+      if (revealed) return;
+      isHolding = false;
+      holdTimer = setTimeout(function() {
+        isHolding = true;
+        el.classList.add('peeking');
+      }, HOLD_MS);
     }, { passive: true });
-    peekBtn.addEventListener('touchend',    function() { el.classList.remove('peeking'); });
-    peekBtn.addEventListener('touchcancel', function() { el.classList.remove('peeking'); });
 
-    // Desktop: hold on peekBtn only
-    peekBtn.addEventListener('mousedown',  function(e) { e.stopPropagation(); if (!revealed) el.classList.add('peeking'); });
+    peekBtn.addEventListener('touchend', function(e) {
+      e.stopPropagation();
+      clearTimeout(holdTimer);
+      if (isHolding) {
+        // Was a hold — just close peek
+        el.classList.remove('peeking');
+        isHolding = false;
+      } else {
+        // Was a tap — reveal permanently
+        if (!revealed) setRevealed(true);
+      }
+    });
+
+    peekBtn.addEventListener('touchcancel', function() {
+      clearTimeout(holdTimer);
+      isHolding = false;
+      el.classList.remove('peeking');
+    });
+
+    // Tutup btn
+    closeBtn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      setRevealed(false);
+    });
+    closeBtn.addEventListener('touchstart', function(e) { e.stopPropagation(); }, { passive: true });
+
+    // Desktop: hold on peekBtn = peek, click = reveal
+    peekBtn.addEventListener('mousedown', function(e) {
+      e.stopPropagation();
+      if (!revealed) el.classList.add('peeking');
+    });
     peekBtn.addEventListener('mouseup',    function() { el.classList.remove('peeking'); });
     peekBtn.addEventListener('mouseleave', function() { el.classList.remove('peeking'); });
+    peekBtn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      el.classList.remove('peeking');
+      if (!revealed) setRevealed(true);
+    });
 
     grid.appendChild(el);
   });

@@ -1,0 +1,42 @@
+<!-- ── Kebun Mastery section — paste into statsPage before weakPointsSection ── -->
+<!-- Wire-up: call window.initKebunMastery() from _analyticsOnTabShow -->
+
+<div class="stat-section" id="kebunMasterySection">
+  <div class="stat-section-title">
+    Kebun Mastery 🌱
+    <button class="kebun-legend-btn" onclick="window.kebunToggleLegend()" aria-label="Legenda">?</button>
+  </div>
+
+  <!-- Legend (hidden by default) -->
+  <div class="kebun-legend" id="kebunLegend">
+    <span class="kebun-leg-item"><svg viewBox="0 0 24 24" width="16" height="16"><circle cx="12" cy="16" r="4" fill="var(--surface-3)" stroke="var(--border-2)" stroke-width="1.5"/></svg> Belum dipelajari</span>
+    <span class="kebun-leg-item"><svg viewBox="0 0 24 24" width="16" height="16"><line x1="12" y1="20" x2="12" y2="10" stroke="var(--accent)" stroke-width="1.5"/><ellipse cx="12" cy="9" rx="3" ry="4" fill="var(--accent)" opacity="0.7"/></svg> Sedang dipelajari</span>
+    <span class="kebun-leg-item"><svg viewBox="0 0 24 24" width="16" height="16"><circle cx="12" cy="7" r="5" fill="var(--n4)" opacity="0.85"/></svg> Mulai hafal</span>
+    <span class="kebun-leg-item"><svg viewBox="0 0 24 24" width="16" height="16"><circle cx="12" cy="8" r="6" fill="var(--n2)" opacity="0.9"/></svg> Sudah hafal</span>
+    <span class="kebun-leg-item"><svg viewBox="0 0 24 24" width="16" height="16"><ellipse cx="10" cy="10" rx="4" ry="5" fill="var(--n4)" opacity="0.5" transform="rotate(-20 10 10)"/></svg> Perlu diulang</span>
+  </div>
+
+  <!-- Source toggle: Grammar / Vocab -->
+  <div class="kebun-source-row">
+    <button class="kebun-source-btn active" onclick="window.kebunSetSource('grammar', this)">Tata Bahasa</button>
+    <button class="kebun-source-btn" onclick="window.kebunSetSource('vocab', this)">Kosakata</button>
+  </div>
+
+  <!-- Level pills -->
+  <div class="kebun-level-pills">
+    <button class="kebun-level-btn active" onclick="window.kebunSetLevel('all', this)">Semua</button>
+    <button class="kebun-level-btn" onclick="window.kebunSetLevel('n5', this)">N5</button>
+    <button class="kebun-level-btn" onclick="window.kebunSetLevel('n4', this)">N4</button>
+    <button class="kebun-level-btn" onclick="window.kebunSetLevel('n3', this)">N3</button>
+    <button class="kebun-level-btn" onclick="window.kebunSetLevel('n2', this)">N2</button>
+    <button class="kebun-level-btn" onclick="window.kebunSetLevel('n1', this)">N1</button>
+  </div>
+
+  <!-- Stats bar -->
+  <div class="kebun-stats-bar" id="kebunStatsBar"></div>
+
+  <!-- Grid -->
+  <div class="kebun-grid" id="kebunGrid">
+    <div class="kebun-empty">🌱 Mulai belajar untuk mengisi kebunmu!</div>
+  </div>
+</div>

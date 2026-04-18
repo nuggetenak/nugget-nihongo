@@ -3740,6 +3740,37 @@ body.light {
 .hub-chapter-back-label {
   font-size: var(--text-sm);
   color: var(--muted);
+
+/* ── Book chapter pill strip ─────────────────────────────────── */
+.book-chapter-pills {
+  display: flex;
+  gap: 6px;
+  padding: 6px 16px 8px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.book-chapter-pills::-webkit-scrollbar { display: none; }
+.book-chapter-pill {
+  flex-shrink: 0;
+  font-size: 11px; font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 100px;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--muted);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+  white-space: nowrap;
+}
+.book-chapter-pill.active {
+  background: var(--accent);
+  color: #000;
+  border-color: var(--accent);
+  font-weight: 700;
+}
+.book-chapter-pill:active { opacity: 0.75; }
   font-weight: 600;
 }
 
@@ -4794,5 +4825,15 @@ html[data-furigana="auto"]   .n1 rt { display: none; }
   font-size: 12px; font-weight: 700; font-family: var(--font-mono);
   flex-shrink: 0;
 }
+.perlu-quiz-btn {
+  width: 100%; display: flex; align-items: center; justify-content: center;
+  gap: 8px; padding: 11px 16px; margin-bottom: 10px;
+  background: var(--accent); color: #000; border: none;
+  border-radius: 12px; cursor: pointer; font-family: inherit;
+  font-size: 13px; font-weight: 700;
+  -webkit-tap-highlight-color: transparent;
+  transition: opacity 0.15s;
+}
+.perlu-quiz-btn:active { opacity: 0.8; }
 /* Stats page bottom spacing fix */
 #statsPage .stat-section:last-child { padding-bottom: 32px; }
