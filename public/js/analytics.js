@@ -296,23 +296,22 @@ function _renderWeakPoints() {
     const card = grammarMap.get(id);
     if (!card) return;
 
-    const label  = card.pattern || card.word || id;
-    const sub    = card.meaning || card.meaning_id || '';
-    const level  = card.level || card.jlpt || '';
+    const label  = card.grammar || card.pattern || card.word || id;
+    const level  = (card.level || card.jlpt || 'n5').toLowerCase();
     const rEntry = lowR.find(x => x.id === id);
-    const rVal   = rEntry ? Math.round(rEntry.r * 100) + '%' : null;
+    const acc    = rEntry ? Math.round(rEntry.r * 100) : null;
+    const accColor = acc !== null ? (acc < 50 ? 'var(--n4)' : acc < 70 ? 'var(--n3)' : 'var(--muted)') : 'var(--muted)';
 
-    const div = document.createElement('div');
-    div.className = 'weak-point-item';
-    div.innerHTML = `
-      <div class="weak-point-pattern">${_escHtml(label)}</div>
-      <div class="weak-point-meta">
-        ${level ? `<span class="pill-mini pill-mini--${level.toLowerCase()}">${level.toUpperCase()}</span>` : ''}
-        ${sub ? `<span class="weak-point-meaning">${_escHtml(sub.slice(0, 40))}</span>` : ''}
-        ${rVal ? `<span class="weak-point-r">R: ${rVal}</span>` : ''}
-      </div>
+    const btn = document.createElement('button');
+    btn.className = 'perlu-item';
+    btn.onclick = () => { if (window.openDetail) window.openDetail(id); };
+    btn.innerHTML = `
+      <span class="perlu-dot" style="background:var(--${level})"></span>
+      <span class="perlu-pattern jp">${_escHtml(label)}</span>
+      ${acc !== null ? `<span class="perlu-acc" style="color:${accColor}">${acc}%</span>` : ''}
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--muted)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
     `;
-    container.appendChild(div);
+    container.appendChild(btn);
   });
 }
 
@@ -415,3 +414,61 @@ function _escHtml(str) {
 window._analyticsOnTabShow = function () {
   initAnalytics();
 };
+
+// ── Weak points — "Perlu Perhatian" section ────────────────────────────────
+function _renderWeakPoints() {
+  var section = document.getElementById('weakPointsSection');
+  var list    = document.getElementById('weakPointsList');
+  if (!section || !list) return;
+
+  var grammar = window.grammarData || [];
+  var srs     = window.srsData    || {};
+  var LVL_COL = { n5:'var(--n5)', n4:'var(--n4)', n3:'var(--n3)', n2:'var(--n2)', n1:'var(--n1)' };
+
+  // Find cards with low accuracy (answered, but < 70% correct)
+  // Proxy: cards with reps > 0 but short interval (≤ 7 days = still struggling)
+  var weak = [];
+  Object.keys(srs).forEach(function(id) {
+    var c = srs[id];
+    if (!c || !c.reps || c.reps < 1) return;
+    if (c.interval > 14) return; // already doing well
+    var entry = grammar.find(function(g) { return g && g.id === id; });
+    if (!entry) return;
+    // Estimate accuracy from ease factor: lower ease = more mistakes
+    var ease = c.ease_factor || 2.5;
+    var acc = Math.round(Math.min(100, Math.max(0, (ease - 1.3) / 1.7 * 100)));
+    weak.push({ id: id, entry: entry, acc: acc, interval: c.interval || 0 });
+  });
+
+  if (!weak.length) { section.style.display = 'none'; return; }
+
+  // Sort by accuracy ascending (worst first), take top 5
+  weak.sort(function(a, b) { return a.acc - b.acc; });
+  weak = weak.slice(0, 5);
+
+  section.style.display = 'block';
+  list.innerHTML = weak.map(function(w) {
+    var col = LVL_COL[w.entry.level] || 'var(--muted)';
+    var accColor = w.acc < 50 ? 'var(--accent-red)' : w.acc < 70 ? 'var(--n4)' : 'var(--muted)';
+    return '<div class="weak-point-row" onclick="openDetail(\'' + w.id + '\')">'
+      + '<span class="weak-dot" style="background:' + col + '"></span>'
+      + '<div class="weak-body">'
+      + '<div class="weak-grammar">' + w.entry.grammar + '</div>'
+      + '<div class="weak-meaning">' + w.entry.meaning + '</div>'
+      + '</div>'
+      + '<div class="weak-acc" style="color:' + accColor + '">' + w.acc + '%</div>'
+      + '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--muted-2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>'
+      + '</div>';
+  }).join('');
+}
+
+// Patch into the main analytics render
+var _origRender = window.renderAnalytics || function(){};
+window.renderAnalytics = function() {
+  _origRender();
+  _renderWeakPoints();
+};
+// Also call directly if analytics already ran
+if (document.getElementById('weakPointsList')) {
+  _renderWeakPoints();
+}
