@@ -292,7 +292,25 @@ function _renderWeakPoints() {
     return;
   }
 
-  container.innerHTML = '';
+  // ── "Latihan sekarang" button for entire weak set ─────────────
+  const launchBtn = document.createElement('button');
+  launchBtn.className = 'perlu-quiz-btn';
+  launchBtn.innerHTML = `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg> Latihan sekarang`;
+  launchBtn.onclick = () => {
+    // Build deck from topIds — grammar only (vocab routed to openVocabDetail)
+    const deck = topIds
+      .map(id => grammarMap.get(id))
+      .filter(c => c && c.grammar); // grammar cards only
+    if (!deck.length) return;
+    // Switch to quiz tab and start
+    const quizTab = document.querySelector('[aria-label="Latihan"]');
+    if (quizTab) quizTab.click();
+    setTimeout(() => {
+      if (window.startQuiz) window.startQuiz(deck);
+    }, 120);
+  };
+  container.insertBefore(launchBtn, container.firstChild);
+
   topIds.forEach(id => {
     const card = grammarMap.get(id);
     if (!card) return;
@@ -305,7 +323,14 @@ function _renderWeakPoints() {
 
     const btn = document.createElement('button');
     btn.className = 'perlu-item';
-    btn.onclick = () => { if (window.openDetail) window.openDetail(id); };
+    btn.onclick = () => {
+      // Tap individual card → openDetail (grammar) or openVocabDetail (vocab)
+      if (id.startsWith('vg-')) {
+        if (window.openVocabDetail) window.openVocabDetail(id);
+      } else {
+        if (window.openDetail) window.openDetail(id);
+      }
+    };
     btn.innerHTML = `
       <span class="perlu-dot" style="background:var(--${level})"></span>
       <span class="perlu-pattern jp">${_escHtml(label)}</span>

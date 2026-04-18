@@ -142,6 +142,18 @@
       var el = document.getElementById(id);
       if (el) el.style.display = '';
     });
+    // Restore N-level pills (may have been hidden by book chapter view)
+    var filterBar = document.getElementById('filterBar');
+    if (filterBar) {
+      var levelPillsEl = filterBar.querySelector('.level-pills');
+      if (levelPillsEl) levelPillsEl.style.display = '';
+    }
+    var weekStripEl = document.getElementById('weekStrip');
+    if (weekStripEl) weekStripEl.style.display = '';
+    // Remove book chapter pills if present
+    var bookPills = document.getElementById('bookChapterPills');
+    if (bookPills) bookPills.remove();
+
     var m = document.getElementById('main');
     if (m) m.style.display = '';
     var stats = document.querySelector('.stats');
@@ -630,8 +642,64 @@
       + '</button>';
     backBar.style.display = 'flex';
 
-    window._hubPrevView = 'chapters';
-    window._hubPrevSeries = seriesId;
+    // ── Chapter pills strip (replace N-level pills with week/lesson pills) ──
+    var filterBar = document.getElementById('filterBar');
+    if (filterBar) {
+      // Hide N-level pills row, inject chapter pills
+      var levelPillsEl = filterBar.querySelector('.level-pills');
+      var weekStripEl  = document.getElementById('weekStrip');
+      if (levelPillsEl) levelPillsEl.style.display = 'none';
+      if (weekStripEl)  weekStripEl.style.display  = 'none';
+
+      // Build chapter pill strip for this series
+      var existingStrip = document.getElementById('bookChapterPills');
+      if (existingStrip) existingStrip.remove();
+
+      var strip = document.createElement('div');
+      strip.id = 'bookChapterPills';
+      strip.className = 'book-chapter-pills';
+
+      // Get all unique chapters from this lens
+      var chapters = [];
+      var seen = {};
+      lens.entries.forEach(function(e) {
+        var key, label, wk, dy, ls;
+        if (series.structure === 'week') {
+          key   = 'w' + e.week + 'd' + (e.day || 0);
+          label = 'M' + e.week + (e.day ? '·H' + e.day : '');
+          wk = e.week; dy = e.day || null; ls = null;
+        } else {
+          key   = 'l' + e.lesson;
+          label = 'L' + e.lesson;
+          wk = null; dy = null; ls = e.lesson;
+        }
+        if (key && !seen[key]) {
+          seen[key] = true;
+          chapters.push({ key: key, label: label, week: wk, day: dy, lesson: ls });
+        }
+      });
+
+      // Current active chapter key
+      var activeKey = week !== null
+        ? ('w' + week + 'd' + (day || 0))
+        : ('l' + lesson);
+
+      chapters.forEach(function(ch) {
+        var btn = document.createElement('button');
+        btn.className = 'book-chapter-pill' + (ch.key === activeKey ? ' active' : '');
+        btn.textContent = ch.label;
+        btn.onclick = function() {
+          window.browseByLensChapter(seriesId, ch.week, ch.day, ch.lesson);
+        };
+        strip.appendChild(btn);
+      });
+
+      // Insert before main content
+      var mainEl = document.getElementById('main');
+      if (mainEl && mainEl.parentNode) {
+        mainEl.parentNode.insertBefore(strip, mainEl);
+      }
+    }
     // Save last activity context
     var chLabel = week !== null
       ? (series.structure === 'week' ? 'Minggu ' + week + (day ? ' · Hari ' + day : '') : 'Pelajaran ' + week)
