@@ -3088,34 +3088,49 @@ body.light {
 .jlpt-ring-card {
   text-align: center;
   padding: 0.5rem 0.25rem;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 .jlpt-ring-wrap {
   position: relative;
-  width: 52px;
-  height: 52px;
-  margin: 0 auto 0.35rem;
+  width: 68px; height: 68px;
+  margin: 0 auto 0.5rem;
 }
 .jlpt-ring-svg {
-  width: 52px; height: 52px;
+  width: 68px; height: 68px;
   transform: rotate(-90deg);
 }
+/* Glow layer behind the fill */
+.jlpt-ring-glow {
+  transition: stroke-dasharray 0.6s cubic-bezier(0.2,0.7,0.2,1);
+  filter: blur(4px);
+  opacity: 0.25;
+}
+.jlpt-ring-fill {
+  transition: stroke-dasharray 0.6s cubic-bezier(0.2,0.7,0.2,1);
+  stroke-linecap: round;
+}
 .jlpt-ring-pct {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.65rem;
-  font-weight: 700;
-  color: var(--text);
+  position: absolute; inset: 0;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 1px;
+}
+.jlpt-ring-level {
+  font-size: 0.80rem; font-weight: 800;
+  line-height: 1; letter-spacing: -0.01em;
+}
+.jlpt-ring-num {
+  font-size: 0.62rem; font-weight: 600;
+  color: var(--text-bright, var(--text));
+  font-family: var(--font-mono, ui-monospace, monospace);
 }
 .jlpt-ring-label {
-  font-size: 0.75rem;
-  font-weight: 700;
+  font-size: 0.72rem; font-weight: 700;
+  color: var(--text);
 }
 .jlpt-ring-sub {
-  font-size: 0.65rem;
-  color: var(--muted);
+  font-size: 0.62rem; color: var(--muted);
 }
 
 .srs-health-grid { display: flex; flex-direction: column; gap: 0.5rem; }
@@ -3497,7 +3512,7 @@ body.light {
 .hub-doors {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 12px;
   margin-bottom: 1.25rem;
 }
 
@@ -3506,41 +3521,59 @@ body.light {
   flex-direction: column;
   align-items: flex-start;
   gap: 0.5rem;
-  padding: 1.25rem;
-  background: var(--surface);
-  border: 2px solid var(--border);
-  border-radius: 16px;
+  padding: 18px;
+  background: linear-gradient(160deg, var(--surface-2), var(--surface));
+  border: 1px solid var(--border-2);
+  border-radius: var(--radius-lg);
   cursor: pointer;
-  transition: border-color 0.15s, transform 0.1s;
+  transition: transform 0.15s, box-shadow 0.2s;
   text-align: left;
   width: 100%;
-  font-family: 'DM Sans', sans-serif;
+  min-height: 130px;
+  font-family: var(--font-ui);
   -webkit-tap-highlight-color: transparent;
+  position: relative; overflow: hidden;
 }
-.hub-door:active { transform: scale(0.98); }
-.hub-door--jlpt:hover, .hub-door--jlpt:focus-visible { border-color: var(--accent); }
-.hub-door--buku:hover, .hub-door--buku:focus-visible { border-color: var(--n3); }
+/* Glyph backdrop — ported from Claude Design DoorCard */
+.hub-door::after {
+  content: attr(data-glyph);
+  position: absolute; right: -10px; top: -20px;
+  font-size: 180px; font-family: var(--font-jp-display);
+  font-weight: 700; color: var(--accent); opacity: 0.07;
+  line-height: 1; pointer-events: none; letter-spacing: -0.05em;
+}
+.hub-door:active  { transform: scale(0.98); }
+.hub-door:hover   { box-shadow: var(--shadow-card); border-color: var(--border-strong); }
 
-.hub-door-emoji { font-size: 2rem; line-height: 1; }
-.hub-door-title { font-size: var(--text-base); font-weight: 700; color: var(--text); }
-.hub-door-desc  { font-size: var(--text-sm); color: var(--muted); }
+.hub-door-badge {
+  font-size: 0.60rem; font-weight: 700;
+  letter-spacing: 0.14em; color: var(--accent-hot);
+  text-transform: uppercase;
+}
+.hub-door-emoji { display: none; } /* replaced by CSS glyph */
+.hub-door-title {
+  font-size: 1.2rem; font-weight: 800;
+  color: var(--text-bright, var(--text));
+  letter-spacing: -0.01em; line-height: 1.2;
+}
+.hub-door-desc  { font-size: 0.80rem; color: var(--muted); max-width: 260px; }
 
 .hub-door-pills { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.25rem; }
 .hub-level-pip  {
   font-size: 11px; font-weight: 700; padding: 2px 8px;
-  border-radius: 20px; color: white;
+  border-radius: 20px; color: #1a0f00;
   background: var(--muted);
 }
 .hub-level-pip.n5 { background: var(--n5); }
 .hub-level-pip.n4 { background: var(--n4); }
 .hub-level-pip.n3 { background: var(--n3); }
 .hub-level-pip.n2 { background: var(--n2); }
-.hub-level-pip.n1 { background: var(--n1); }
+.hub-level-pip.n1 { background: var(--n1); color: #1a0f00; }
 
 .hub-door-books { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.25rem; }
 .hub-book-chip  {
-  font-size: 11px; padding: 2px 8px;
-  border-radius: 20px; background: var(--surface-2);
+  font-size: 11px; padding: 2px 10px;
+  border-radius: 20px; background: var(--surface-3);
   color: var(--muted); border: 1px solid var(--border);
 }
 
