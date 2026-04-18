@@ -1205,6 +1205,7 @@ body.light .tab-nav {
   display: flex; align-items: center; justify-content: center;
   transition: color 0.15s, background 0.15s;
   font-family: inherit;
+  touch-action: manipulation; /* no 300ms delay, no scroll interpretation */
 }
 .peel-bm-btn.bookmarked { color: var(--gold); background: rgba(251,191,36,0.12); border-color: rgba(251,191,36,0.3); }
 .peel-bm-btn:active { transform: scale(0.9); }
@@ -1218,6 +1219,8 @@ body.light .tab-nav {
   white-space: nowrap; flex-shrink: 0;
   font-family: inherit; transition: all 0.15s;
   -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  user-select: none; -webkit-user-select: none;
 }
 .peel-peek-btn:active { background: var(--surface-4); }
 
@@ -4409,6 +4412,7 @@ html[data-furigana="auto"]   .n1 rt { display: none; }
   border-radius: 8px; cursor: pointer;
   color: var(--muted); padding: 4px 6px; display: flex;
   flex-shrink: 0; transition: color 0.15s, background 0.15s;
+  touch-action: manipulation;
 }
 .peel-detail-btn:hover, .peel-detail-btn:active { color: var(--text-bright); background: var(--surface-4); }
 

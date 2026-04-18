@@ -478,83 +478,64 @@ function renderSection(container, lv, items, title, count, isSubDay = false) {
       _currentRevealedEl = r ? el : (_currentRevealedEl === el ? null : _currentRevealedEl);
     }
 
-    // ── Detail btn — use addEventListener not onclick attr ──────
+    // ── All buttons: click only. touch-action:manipulation (CSS) handles delay.
     if (detailBtn) {
       detailBtn.addEventListener('click', function(e) {
         e.stopPropagation();
         if (window.openDetail) window.openDetail(d.id);
       });
-      // Prevent touchstart from bubbling and triggering peek
-      detailBtn.addEventListener('touchstart', function(e) { e.stopPropagation(); }, { passive: true });
     }
 
-    // ── Bookmark btn — use addEventListener not onclick attr ────
     if (bmBtn) {
       bmBtn.addEventListener('click', function(e) {
         e.stopPropagation();
         if (window.toggleBookmark) window.toggleBookmark(d.id, bmBtn, e);
       });
-      bmBtn.addEventListener('touchstart', function(e) { e.stopPropagation(); }, { passive: true });
     }
 
-    // ── Peek btn: tap = permanent reveal, hold = temporary peek ─
-    // Strategy: touchstart starts a hold timer. If touchend fires
-    // within HOLD_MS → it was a tap → setRevealed(true).
-    // If timer fires first → it's a hold → add peeking class.
-    // On touchend after hold → remove peeking (no reveal).
-    const HOLD_MS = 180;
-    let holdTimer = null;
-    let isHolding = false;
-
-    peekBtn.addEventListener('touchstart', function(e) {
-      e.stopPropagation();
-      if (revealed) return;
-      isHolding = false;
-      holdTimer = setTimeout(function() {
-        isHolding = true;
-        el.classList.add('peeking');
-      }, HOLD_MS);
-    }, { passive: true });
-
-    peekBtn.addEventListener('touchend', function(e) {
-      e.stopPropagation();
-      clearTimeout(holdTimer);
-      if (isHolding) {
-        // Was a hold — just close peek
-        el.classList.remove('peeking');
-        isHolding = false;
-      } else {
-        // Was a tap — reveal permanently
-        if (!revealed) setRevealed(true);
-      }
-    });
-
-    peekBtn.addEventListener('touchcancel', function() {
-      clearTimeout(holdTimer);
-      isHolding = false;
-      el.classList.remove('peeking');
-    });
-
-    // Tutup btn
     closeBtn.addEventListener('click', function(e) {
       e.stopPropagation();
       setRevealed(false);
     });
-    closeBtn.addEventListener('touchstart', function(e) { e.stopPropagation(); }, { passive: true });
 
-    // Desktop: hold on peekBtn = peek, click = reveal
-    peekBtn.addEventListener('mousedown', function(e) {
+    // ── Peek btn: pointerdown/up = hold detection, click = tap reveal
+    // Pointer events work for both touch and mouse, never block scroll.
+    // holdCompleted flag: set when hold fires, cleared in click to skip reveal.
+    const HOLD_MS = 280;
+    let holdTimer = null, holdCompleted = false;
+
+    peekBtn.addEventListener('pointerdown', function(e) {
       e.stopPropagation();
-      if (!revealed) el.classList.add('peeking');
+      if (revealed) return;
+      holdCompleted = false;
+      holdTimer = setTimeout(function() {
+        holdCompleted = true;
+        el.classList.add('peeking');
+      }, HOLD_MS);
     });
-    peekBtn.addEventListener('mouseup',    function() { el.classList.remove('peeking'); });
-    peekBtn.addEventListener('mouseleave', function() { el.classList.remove('peeking'); });
+
+    peekBtn.addEventListener('pointerup', function(e) {
+      e.stopPropagation();
+      clearTimeout(holdTimer);
+      el.classList.remove('peeking');
+    });
+
+    peekBtn.addEventListener('pointercancel', function() {
+      clearTimeout(holdTimer);
+      holdCompleted = false;
+      el.classList.remove('peeking');
+    });
+
+    peekBtn.addEventListener('pointerleave', function() {
+      clearTimeout(holdTimer);
+      el.classList.remove('peeking');
+    });
+
     peekBtn.addEventListener('click', function(e) {
       e.stopPropagation();
-      el.classList.remove('peeking');
+      if (holdCompleted) { holdCompleted = false; return; }
       if (!revealed) setRevealed(true);
     });
-
     grid.appendChild(el);
   });
   container.appendChild(sec);
