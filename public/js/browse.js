@@ -203,6 +203,7 @@ const SUPER_CAT_MAP = {
   'derajat-ekspresi':  ['expression','adverb','extent-degree','penekanan','rentang','pembatasan'],
 };
 let activeSuperCat = null;
+let _currentRevealedEl = null; // accordion: only one card open at a time
 
 function setSuperCat(superKey, btn) {
   activeSuperCat = superKey;
@@ -410,10 +411,10 @@ function renderSection(container, lv, items, title, count, isSubDay = false) {
     el.innerHTML = `
       <!-- Back layer: meaning revealed from below -->
       <div class="peel-back">
-        <div class="peel-back-label">ARTI</div>
-        <div class="peel-back-meaning">${d.meaning}</div>
         <div class="peel-back-examples">${exHTML}</div>
         ${nuanceHTML}
+        <div class="peel-back-label">ARTI</div>
+        <div class="peel-back-meaning">${d.meaning}</div>
       </div>
       <!-- Front ticket: lifts on hold, locks on Peek btn -->
       <div class="peel-front">
@@ -462,39 +463,39 @@ function renderSection(container, lv, items, title, count, isSubDay = false) {
     let revealed = false;
 
     function setRevealed(r) {
+      // Accordion: close previous card before opening this one
+      if (r && _currentRevealedEl && _currentRevealedEl !== el) {
+        const prev = _currentRevealedEl;
+        const prevClose = prev.querySelector('.peel-hint--close');
+        const prevPeek  = prev.querySelector('.peel-hint--peek');
+        prev.classList.remove('revealed', 'peeking');
+        if (prevClose) prevClose.style.display = 'none';
+        if (prevPeek)  prevPeek.style.display  = 'inline-flex';
+      }
       revealed = r;
       el.classList.toggle('revealed', r);
       el.classList.remove('peeking');
       peekBtn.style.display  = r ? 'none'        : 'inline-flex';
       closeBtn.style.display = r ? 'inline-flex' : 'none';
+      _currentRevealedEl = r ? el : (_currentRevealedEl === el ? null : _currentRevealedEl);
     }
 
-    // Peek btn: tap = permanent toggle
+    // Peek btn tap = permanent reveal/hide
     peekBtn.addEventListener('click',  function() { setRevealed(true);  });
     closeBtn.addEventListener('click', function() { setRevealed(false); });
 
-    // Card body hold = temporary peek (scroll-safe)
-    let _touchStartY = 0, _touchScrolled = false;
-    front.addEventListener('touchstart', function(e) {
-      if (revealed) return; // already locked open, ignore hold
-      _touchStartY   = e.touches[0].clientY;
-      _touchScrolled = false;
-      el.classList.add('peeking');
+    // Hold on peekBtn ONLY = temporary peek (scroll-safe, rest of card untouched)
+    peekBtn.addEventListener('touchstart', function(e) {
+      e.stopPropagation();
+      if (!revealed) el.classList.add('peeking');
     }, { passive: true });
-    front.addEventListener('touchmove', function(e) {
-      if (Math.abs(e.touches[0].clientY - _touchStartY) > 8) {
-        _touchScrolled = true;
-        el.classList.remove('peeking');
-      }
-    }, { passive: true });
-    front.addEventListener('touchend', function() {
-      el.classList.remove('peeking');
-    });
+    peekBtn.addEventListener('touchend',    function() { el.classList.remove('peeking'); });
+    peekBtn.addEventListener('touchcancel', function() { el.classList.remove('peeking'); });
 
-    // Desktop: hold = peek
-    front.addEventListener('mousedown',  function() { if (!revealed) el.classList.add('peeking'); });
-    front.addEventListener('mouseup',    function() { el.classList.remove('peeking'); });
-    front.addEventListener('mouseleave', function() { el.classList.remove('peeking'); });
+    // Desktop: hold on peekBtn only
+    peekBtn.addEventListener('mousedown',  function(e) { e.stopPropagation(); if (!revealed) el.classList.add('peeking'); });
+    peekBtn.addEventListener('mouseup',    function() { el.classList.remove('peeking'); });
+    peekBtn.addEventListener('mouseleave', function() { el.classList.remove('peeking'); });
 
     grid.appendChild(el);
   });

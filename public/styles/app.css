@@ -4317,13 +4317,13 @@ html[data-furigana="auto"]   .n1 rt { display: none; }
 }
 .peel-back-label {
   font-size: 10px; color: var(--accent-hot);
-  font-weight: 700; letter-spacing: 0.1em; margin-bottom: 4px;
+  font-weight: 700; letter-spacing: 0.1em; margin-bottom: 3px; margin-top: 10px;
 }
 .peel-back-meaning {
   font-size: 15px; font-weight: 600; color: var(--text-bright); line-height: 1.35;
 }
 .peel-back-examples {
-  margin-top: 6px; display: flex; flex-direction: column; gap: 4px; overflow: hidden;
+  margin-top: 0; display: flex; flex-direction: column; gap: 4px; overflow: hidden;
 }
 .peel-back-examples .card-example { opacity: 0.75; }
 .peel-nuance {
