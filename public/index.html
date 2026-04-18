@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#0D1117">
+  <meta name="theme-color" content="#0D0B08">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="Nihongo">
@@ -11,7 +11,10 @@
   <link rel="manifest" href="./manifest.webmanifest">
   <!-- iOS PWA: apple-touch-icon (PNG fallback — SVG-as-data-URI not supported on iOS Safari) -->
   <link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAELElEQVR4nO3dTVKsMBRAYXzl1IEjR67Kbbgct+Gq3MgbUHZZbR8MhE7uTc437GqBhmOA4M/D0/PLIt3yr/cGKC7jEDIOIeMQMg4h4xAyDiHjEDIOIeMQMg4h4xAyDiHjEDIOIeMQMg4h4xAyDiHjEDIOIeMQMg4h4xAyDiHjEDIOIeMQMg4h4xAyDiHjEDIOIeMQeuy9AVG8fXxdvfL5/tplS+Jw5BAyDiHjEDIOIeMQMg4h4xAyDiHjEDIOIeMQMg4h4xAyDiHjEDIOIeMQMg4h4xAyDiHjWJZbP12sxTgWLsNiZo9ju4DJ+5g6jpJjP3Mf88ZRftSn7WPSOK6O95+/3DZnHzPGUVjG1esT9vHw9PzSZcUT7usaXX5xd8aRQ4WMQ8g4hIxDqNsFaTOF9yaFf7xl7z1waoOPHKcfy6nub0eO407f5fP0MWwcdx3/J+ljzDgaXBnM0MeAcTS7Zhy+j9HiaHw3MXYfQ8XR5T5z4D7GiaPjDMSofQwSR/e5qSH7GCGO7mXcXO8AfaSPI0gZN9eevY/ccZxVxolHcaQ+Ej94O6WMPw/eKYtN+nwu68jRpozC9/w2xviRMo5mZex9508D9JEvjsZlHHv/Knsfya456suoPEL1a0x0/ZFp5LhfGeWLOtBW3vEjTRztyyj/gcI/Je0jRxy9xozJ+0gQx53K+Hx/LVkUvW2GPqLHUVnG28cXlbFrOdTH3gOcq4/QcdSXcfP1Y/cLZ51iEvURN45QZWx/7ah9BI0jYBnbSxiyj4iTYDVlHM5i778rP6W/4PNjEUeOn/uoTRkHnDKEHP6kbUSMY/neU2HL2F7ygT4ClrGEjWMJX8b28g+PH6HEjaNczRxXvRNnyaLJHcdZc1z1zpolCyVxHL1OJeTEBzFBZI0jWhnba0/aR8o4YpaxvQ0Z+3jsvQH7RM7iYt2Y35u6vhJqU7dlGjlSlHExwBCSJo5cZayy95EjjoxlrFL3kSCOvnNc9fLOkoWOI84cV72Ms2Rx48h7KiHpTjFB4xivjFWuPiLGMWoZq0R9xJoEGzuLiyyzZIFGjknKuIg/hESJY7YyVsH7CBHHnGWsIvfRP47sc1z1ws6S9YxjpDmuegFnybrFMfOphEQ7xfSJwzJIqD46xGEZ2+L00XQSzCwKBZklazdyWMZe3YeQRnFYxjF9+2gUx80PaRklOu66Pg/ezGIXugS5t3bXHJcgLOOY9juw9a2sZdRovPeaxmEZ9Vruw/4P3hSWcQgZh5BxCBmHkHEIGYeQcQgZh5BxCBmHkHEIGYeQcQgZh5BxCBmHUMT/8aYgHDmEjEPIOISMQ8g4hIxDyDiEjEPIOISMQ8g4hIxDyDiEjEPIOISMQ8g4hIxDyDiEjEPIOISMQ8g4hIxDyDiEjEPIOISMQ8g4hIxDyDiEjEPIOIT+A/1KAQvCWgBiAAAAAElFTkSuQmCC">
-  <!-- Fonts: self-hosted via /fonts/ (see css/style.css §1) -->
+  <!-- Fonts: self-hosted woff2 (DM Sans + BIZ UDGothic) + Google Fonts (Shippori Mincho display + JetBrains Mono) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/layout/shell.css">
   <link rel="stylesheet" href="./styles/app.css">
   <link rel="stylesheet" href="./styles/onboarding.css">
@@ -60,67 +63,70 @@
   </div>
 </div>
 
-<!-- HEADER -->
+<!-- HEADER — minimal TopBar (Claude Design) -->
 <header>
   <div class="header-inner">
-    <div class="header-top-row">
-      <div>
-        <h1>Nugget Nihongo</h1>
-        <p>Belajar JLPT N5–N1 · Grammar · Kosakata · Quiz</p>
+    <div class="header-logo" aria-hidden="true">N</div>
+    <div class="header-title-wrap">
+      <h1>Nugget Nihongo</h1>
+      <p>Grammar · Kosakata · JLPT N5–N1</p>
+    </div>
+    <div class="header-actions">
+      <button class="gs-trigger-btn icon-btn" onclick="gsOpen()" title="Cari (Ctrl+K)" aria-label="Cari grammar dan kosakata">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+      </button>
+      <div class="streak-badge" id="streakBadge" style="display:none">
+        <span class="streak-fire">🔥</span>
+        <span class="streak-num" id="streakNum">0</span>
+        <span class="streak-label">hari</span>
       </div>
-      <div style="display:flex;align-items:center;gap:0.5rem">
-        <button class="gs-trigger-btn" onclick="gsOpen()" title="Cari grammar & vocab (Ctrl+K)">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
-          </svg>
-          <span>Cari</span>
-          <kbd>⌘K</kbd>
-        </button>
-        <div class="streak-badge" id="streakBadge" style="display:none">
-          <span class="streak-fire">🔥</span>
-          <span class="streak-num" id="streakNum">0</span>
-          <span class="streak-label">hari</span>
-        </div>
-        <!-- Auth button / user avatar -->
-        <button class="auth-header-btn" id="authHeaderBtn" onclick="showAuthModal()" title="Masuk / Daftar">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
-          </svg>
-          <span id="authHeaderLabel">Masuk</span>
-        </button>
-        <!-- Sync cloud indicator (shown when logged in) -->
-        <div class="sync-indicator" id="syncIndicator" style="display:none" title="Status sinkronisasi">
-          <span id="syncIcon">☁️</span>
-        </div>
+      <button class="auth-header-btn icon-btn" id="authHeaderBtn" onclick="showAuthModal()" title="Masuk / Daftar">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+        </svg>
+        <span id="authHeaderLabel">Masuk</span>
+      </button>
+      <div class="sync-indicator" id="syncIndicator" style="display:none" title="Status sinkronisasi">
+        <span id="syncIcon">☁️</span>
       </div>
     </div>
   </div>
-  <div class="header-rule"></div>
 </header>
 
-<!-- TAB NAV -->
+<!-- TAB NAV — SVG icons (Claude Design) -->
 <nav class="tab-nav">
-  <button id="tabBtnBrowse" class="tab-btn active" onclick="switchTab('browse',this)">
-    <span class="tab-icon">📖</span>
-    <span>Materi</span>
+  <button id="tabBtnBrowse" class="tab-btn active" onclick="switchTab('browse',this)" aria-label="Materi">
+    <svg class="tab-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+    </svg>
+    <span class="tab-label">Materi</span>
   </button>
-  <button class="tab-btn" onclick="switchTab('quiz',this)">
-    <span class="tab-icon">✏️</span>
-    <span>Latihan</span>
+  <button class="tab-btn" onclick="switchTab('quiz',this)" aria-label="Latihan">
+    <svg class="tab-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+    </svg>
+    <span class="tab-label">Latihan</span>
   </button>
-  <button class="tab-btn" id="tabBtnSensei" onclick="switchTab('sensei',this)">
-    <span class="tab-icon">✨</span>
-    <span>Sensei</span>
+  <button class="tab-btn" id="tabBtnSensei" onclick="switchTab('sensei',this)" aria-label="Sensei">
+    <svg class="tab-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+    </svg>
+    <span class="tab-label">Sensei</span>
   </button>
-  <button class="tab-btn" id="tabBtnStats" onclick="switchTab('stats',this)">
-    <span class="tab-icon">📊</span>
-    <span>Progres</span>
+  <button class="tab-btn" id="tabBtnStats" onclick="switchTab('stats',this)" aria-label="Progres">
+    <svg class="tab-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>
+    </svg>
+    <span class="tab-label">Progres</span>
   </button>
-  <button class="tab-btn" id="tabBtnMore" onclick="openMoreSheet()">
-    <span class="tab-icon">⋯</span>
-    <span>Lainnya</span>
+  <button class="tab-btn" id="tabBtnMore" onclick="openMoreSheet()" aria-label="Lainnya">
+    <svg class="tab-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/>
+    </svg>
+    <span class="tab-label">Lainnya</span>
   </button>
-  <!-- Settings + About: hidden from nav, accessible via ⋯ More -->
   <button id="tabBtnSettings" class="tab-btn tab-btn--hidden" onclick="switchTab('settings',this)"></button>
   <button id="tabBtnAbout"    class="tab-btn tab-btn--hidden" onclick="switchTab('about',this)"></button>
 </nav>
@@ -1452,41 +1458,72 @@
 <!-- ⋯ MORE BOTTOM-SHEET -->
 <div id="moreSheetOverlay" onclick="if(event.target===this)closeMoreSheet()">
   <div id="moreSheet">
-    <div class="ms-handle"></div>
-    <div class="ms-item" onclick="_moreNavTo('settings')">
-      <div class="ms-icon">⚙️</div>
-      <div>
-        <div class="ms-label">Pengaturan</div>
-        <div class="ms-sub">Tema, ukuran teks, notifikasi</div>
+    <div class="ms-handle-wrap"><div class="ms-handle"></div></div>
+
+    <!-- User / Auth row -->
+    <div class="ms-user-row" id="moreSheetUserRow">
+      <div class="ms-avatar" id="moreSheetAvatar">N</div>
+      <div class="ms-user-info">
+        <div class="ms-user-name" id="moreSheetUserName">Tamu</div>
+        <div class="ms-user-sub" id="moreSheetUserSub">Masuk untuk sync progres ke cloud</div>
       </div>
+      <button class="ms-login-btn" onclick="document.getElementById('authModal').style.display='flex';closeMoreSheet()">
+        Masuk
+      </button>
+    </div>
+
+    <!-- Theme selector — 3-way -->
+    <div class="ms-theme-label">Tema</div>
+    <div class="ms-theme-seg" id="moreThemeSeg">
+      <button class="ms-theme-btn" data-theme="dark" onclick="setThemeFromSheet('dark')">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        Gelap
+      </button>
+      <button class="ms-theme-btn" data-theme="light" onclick="setThemeFromSheet('light')">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        Terang
+      </button>
+      <button class="ms-theme-btn" data-theme="system" onclick="setThemeFromSheet('system')">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        Sistem
+      </button>
+    </div>
+
+    <!-- Nav items -->
+    <div class="ms-divider"></div>
+    <div class="ms-item" onclick="_moreNavTo('settings')">
+      <div class="ms-icon-wrap">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>
+      </div>
+      <div class="ms-item-text">
+        <div class="ms-label">Pengaturan</div>
+        <div class="ms-sub">Furigana, kecepatan SRS, notifikasi</div>
+      </div>
+      <svg class="ms-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
     </div>
     <div class="ms-item" onclick="_moreNavTo('about')">
-      <div class="ms-icon">❓</div>
-      <div>
+      <div class="ms-icon-wrap">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      </div>
+      <div class="ms-item-text">
         <div class="ms-label">Tentang Aplikasi</div>
         <div class="ms-sub">Metodologi, atribusi, versi</div>
       </div>
-    </div>
-    <div class="ms-item" onclick="toggleTheme();closeMoreSheet()">
-      <div class="ms-icon" id="themeToggle">🌙</div>
-      <div>
-        <div class="ms-label">Ganti Tema</div>
-        <div class="ms-sub">Dark / Light</div>
-      </div>
+      <svg class="ms-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
     </div>
     <div class="ms-item" onclick="showInstallModal();closeMoreSheet()">
-      <div class="ms-icon">📲</div>
-      <div>
+      <div class="ms-icon-wrap">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </div>
+      <div class="ms-item-text">
         <div class="ms-label">Install Aplikasi</div>
-        <div class="ms-sub">Simpan ke home screen</div>
+        <div class="ms-sub">Simpan ke home screen, works offline</div>
       </div>
+      <svg class="ms-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
     </div>
-    <div class="ms-item" onclick="document.getElementById('authModal').style.display='flex';closeMoreSheet()">
-      <div class="ms-icon">👤</div>
-      <div>
-        <div class="ms-label">Masuk / Daftar</div>
-        <div class="ms-sub">Sinkron progres ke cloud</div>
-      </div>
+    <div class="ms-divider"></div>
+    <div class="ms-app-info">
+      <span id="abVersion">v15.7.0</span> · Nugget Nihongo · Gratis selamanya
     </div>
   </div>
 </div>
@@ -1838,8 +1875,8 @@
 <script src="./js/pages/settings.js"></script>
 <script src="./js/pages/about.js"></script>
 <script src="./js/app.js"></script>
+<script src="./js/tweaks.js"></script>
 
-<!-- ══ VOCAB DETAIL MODAL ══ -->
 <div id="vocabDetailModal" class="vd-modal">
   <div class="vd-modal-inner">
     <button class="vd-close-btn" onclick="closeVocabDetail()" aria-label="Tutup">✕</button>
