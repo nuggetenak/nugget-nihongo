@@ -4735,3 +4735,74 @@ html[data-furigana="auto"]   .n1 rt { display: none; }
   font-size: 13px; font-weight: 700; font-family: var(--font-mono);
   flex-shrink: 0;
 }
+
+/* ══════════════════════════════════════
+   §28 HUB LAYOUT v2 (ss7 clean hero)
+══════════════════════════════════════ */
+
+/* Clean hero — no card, just text */
+.hub2-hero-plain {
+  padding: 4px 0 6px;
+}
+.hub2-hero-plain .hub2-hero-label {
+  font-size: 11px; font-weight: 700; letter-spacing: 0.14em;
+  color: var(--accent-hot); text-transform: uppercase; margin-bottom: 6px;
+  display: block;
+}
+.hub2-hero-heading {
+  font-size: 24px; font-weight: 800; color: var(--text-bright);
+  margin: 0 0 6px; letter-spacing: -0.02em; line-height: 1.15;
+}
+.hub2-hero-body {
+  font-size: 13px; color: var(--muted); margin: 0; line-height: 1.5;
+}
+
+/* Full-width single-column doors */
+.hub2-door--full {
+  grid-column: 1 / -1 !important;
+}
+.hub2-door-eyebrow {
+  font-size: 10px; letter-spacing: 0.14em; font-weight: 700;
+  color: var(--accent-hot); text-transform: uppercase; margin-bottom: 4px;
+}
+
+/* "Lihat semua kartu" compact dashed row */
+.hub2-see-all-row {
+  width: 100%; display: flex; align-items: center; gap: 12px;
+  padding: 14px 16px;
+  background: var(--surface); border: 1px dashed var(--border-2);
+  border-radius: 16px; cursor: pointer; font-family: inherit;
+  color: var(--text); text-align: left;
+  -webkit-tap-highlight-color: transparent;
+  transition: background 0.15s;
+}
+.hub2-see-all-row:active { background: var(--surface-2); }
+.hub2-see-all-title { font-size: 13px; font-weight: 600; color: var(--text); display: block; }
+.hub2-see-all-sub   { font-size: 11px; color: var(--muted); margin-top: 1px; display: block; }
+
+/* ══════════════════════════════════════
+   §29 PERLU PERHATIAN (ss9 style)
+══════════════════════════════════════ */
+
+.perlu-item {
+  width: 100%; display: flex; align-items: center; gap: 10px;
+  padding: 12px 14px;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 12px; cursor: pointer; font-family: inherit;
+  color: var(--text); text-align: left; margin-bottom: 6px;
+  transition: background 0.15s;
+  -webkit-tap-highlight-color: transparent;
+}
+.perlu-item:active { background: var(--surface-2); }
+.perlu-dot {
+  width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;
+}
+.perlu-pattern {
+  flex: 1; font-size: 15px; font-family: var(--font-jp); color: var(--text-bright);
+}
+.perlu-acc {
+  font-size: 12px; font-weight: 700; font-family: var(--font-mono);
+  flex-shrink: 0;
+}
+/* Stats page bottom spacing fix */
+#statsPage .stat-section:last-child { padding-bottom: 32px; }
