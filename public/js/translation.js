@@ -183,6 +183,7 @@ function showTranslationResult() {
   quizDeck = transDeck;
   quizIdx  = transDeck.length;
   missedDeck = [];
+  if (window.recordQuizStat) window.recordQuizStat('translation', transCorrect, transDeck.length);
   showResult();
 
   // Override subtitle

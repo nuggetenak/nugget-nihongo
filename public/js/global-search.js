@@ -1,7 +1,7 @@
 // ══════════════════════════════════════════════════════
 //  js/global-search.js — Nugget Nihongo
 //  Global Search: cari grammar + vocab sekaligus
-//  Load SETELAH vocab-index.js dan grammar-query.js
+//  Load SETELAH vocab-index.js dan grammar-index.js
 // ══════════════════════════════════════════════════════
 
 (function () {

@@ -66,7 +66,7 @@
         var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
         document.body.classList.toggle('light', !prefersDark);
       }
-      localStorage.setItem('nn_theme', v);
+      localStorage.setItem('bunpou-theme', v);
       _syncThemeIcon(v);
     });
   }
@@ -165,7 +165,7 @@
   // ── Reflect current values on page open ──────────
   function _reflectCurrentValues() {
     // Theme
-    var theme = localStorage.getItem('nn_theme') || 'dark';
+    var theme = localStorage.getItem('bunpou-theme') || 'dark';
     var sel = document.getElementById('spThemeSelect');
     if (sel) sel.value = theme;
 
@@ -196,6 +196,8 @@
     // Version
     var vEl = document.getElementById('spVersionPill');
     if (vEl && window.APP_VERSION) vEl.textContent = window.APP_VERSION;
+    var msVer = document.getElementById('msVersionLabel');
+    if (msVer && window.APP_VERSION) msVer.textContent = window.APP_VERSION + ' · dibuat dengan 🍵';
   }
 
   // ── Toast util (shared) ───────────────────────────
@@ -234,7 +236,7 @@ window.setThemeFromSheet = function (v) {
     var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
     document.body.classList.toggle('light', !prefersDark);
   }
-  localStorage.setItem('nn_theme', v);
+  localStorage.setItem('bunpou-theme', v);
   _syncSheetThemeBtns(v);
 };
 
@@ -250,7 +252,7 @@ function _syncSheetThemeBtns(v) {
 var _origOpen = window.openMoreSheet;
 window.openMoreSheet = function () {
   if (_origOpen) _origOpen();
-  var cur = localStorage.getItem('nn_theme') || 'dark';
+  var cur = localStorage.getItem('bunpou-theme') || 'dark';
   _syncSheetThemeBtns(cur);
   // Update user row if logged in
   var profile = window._currentProfile;

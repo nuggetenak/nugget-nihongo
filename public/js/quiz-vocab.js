@@ -343,6 +343,7 @@ function _showResult() {
 
   // Reuse quizResult panel with custom content
   const resultEl = document.getElementById('quizResult');
+  if (window.recordQuizStat) window.recordQuizStat('vocab_mc', vqCorrect, vqDeck.length);
   if (resultEl) {
     resultEl.style.display = '';
 

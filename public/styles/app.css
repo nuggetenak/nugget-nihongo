@@ -120,6 +120,7 @@
   --text-sm:   0.78rem;
   --text-base: 0.875rem;
   --text-md:   0.95rem;
+  --text-lg:   1.1rem;
 
   /* Status */
   --accent-green : #4ADE80;
@@ -1193,17 +1194,6 @@ body.light .tab-nav {
   font-size: 0.9rem; line-height: 1; z-index: 2; pointer-events: none;
   filter: drop-shadow(0 1px 3px rgba(0,0,0,0.5));
 }
-/* peel card overrides — bookmark is inline, not absolute */
-.peel-wrap .bookmark-btn {
-  position: static;
-  width: auto; height: auto;
-  background: transparent;
-  box-shadow: none; backdrop-filter: none;
-  border-radius: 8px;
-  padding: 4px 5px;
-  font-size: 13px;
-}
-
 /* ── peel-actions: ☆ + ⋯ side by side in top row ─────────── */
 .peel-actions {
   display: flex; align-items: center; gap: 4px; flex-shrink: 0;

@@ -184,6 +184,7 @@ function showConjugationResult() {
   quizDeck = conjDeck;
   quizIdx  = conjDeck.length;
   missedDeck = [];
+  if (window.recordQuizStat) window.recordQuizStat('conjugation', conjCorrect, conjDeck.length);
   showResult();
 
   // Override subtitle agar relevan

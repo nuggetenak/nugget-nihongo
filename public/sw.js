@@ -4,7 +4,7 @@
 //  network-first for API calls (Supabase / Cloudflare Workers).
 // ══════════════════════════════════════
 
-const CACHE = 'nihongo-v15.11.1';
+const CACHE = 'nihongo-v15.11.6';
 const ASSETS = [
   './',
   './index.html',
@@ -65,6 +65,19 @@ const ASSETS = [
   './js/lang/lang-core.js',
   './js/app.js',
 
+  // ── Pages ─────────────────────────────────────────────
+  './js/pages/materi-hub.js',
+  './js/pages/onboarding.js',
+  './js/pages/settings.js',
+  './js/pages/about.js',
+  './js/tweaks.js',
+
+  // ── AI feature layer (non-critical offline, but cache for perf) ──
+  './js/ai-validator.js',
+  './js/ai-feedback.js',
+  './js/ai-content-engine.js',
+  './js/ai-quiz-mode.js',
+
   // ── Grammar DB (Architecture v3) ─────────────────────
   './data/grammar/grammar-n5.js',
   './data/grammar/grammar-n4.js',
@@ -96,6 +109,7 @@ const ASSETS = [
   // ── Offline AI fallback drills ────────────────────────
   './data/fallback/grammar-drills.json',
   './data/fallback/vocab-drills.json',
+  './data/fallback/quiz-drills.json',
 ];
 
 // Network-first origins — never cache Supabase / Worker API calls

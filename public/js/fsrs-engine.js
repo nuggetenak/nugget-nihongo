@@ -395,20 +395,20 @@ window.srsDueToday = function () {
 
   // Collect from grammarDB
   if (window.grammarDB) {
-    for (var i = 0; i < window.grammarDB.length; i++) {
-      allCards.push(window.grammarDB[i]);
+    for (var gi = 0; gi < window.grammarDB.length; gi++) {
+      allCards.push(window.grammarDB[gi]);
     }
   }
   // Fallback to old grammarData
   if (!allCards.length && window.grammarData) {
-    for (var i = 0; i < window.grammarData.length; i++) {
-      if (window.grammarData[i].cat !== 'dummy') allCards.push(window.grammarData[i]);
+    for (var di = 0; di < window.grammarData.length; di++) {
+      if (window.grammarData[di].cat !== 'dummy') allCards.push(window.grammarData[di]);
     }
   }
   // Collect from vocabDB
   if (window.vocabDB) {
-    for (var i = 0; i < window.vocabDB.length; i++) {
-      allCards.push(window.vocabDB[i]);
+    for (var vi = 0; vi < window.vocabDB.length; vi++) {
+      allCards.push(window.vocabDB[vi]);
     }
   }
 

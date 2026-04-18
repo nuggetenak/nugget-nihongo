@@ -1,7 +1,7 @@
 // ══════════════════════════════════════════════════════
 //  js/quiz-generator.js — Nugget Nihongo
 //  Generates quiz questions dynamically from vocabDB + grammarData
-//  Load SETELAH vocab-index.js, grammar-query.js, conjugation-engine.js
+//  Load SETELAH vocab-index.js, grammar-index.js, conjugation-engine.js
 // ══════════════════════════════════════════════════════
 
 (function () {
