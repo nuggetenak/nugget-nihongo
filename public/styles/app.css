@@ -768,29 +768,51 @@ body.light .tab-nav {
 
 /* Kategori chips panel */
 .cat-panel {
-  display: none; flex-wrap: wrap; gap: 0.35rem;
-  padding: 0.6rem 1rem 0.7rem;
-  background: var(--surface-2);
+  display: none; flex-wrap: nowrap; gap: 8px;
+  padding: 10px 16px 12px;
+  overflow-x: auto; scrollbar-width: none;
   border-bottom: 1px solid var(--border);
-  margin: 0 -1rem;
   animation: slideDown 0.15s ease;
 }
+.cat-panel::-webkit-scrollbar { display: none; }
 .cat-panel.show { display: flex; }
 @keyframes slideDown {
   from { opacity: 0; transform: translateY(-6px); }
   to   { opacity: 1; transform: translateY(0); }
 }
+
+/* Super-category chips — 8 consolidated grammar groups */
+.supercat-chip {
+  display: inline-flex; align-items: center; gap: 6px;
+  border: 1px solid var(--border-2); border-radius: 100px;
+  padding: 8px 14px; font-size: 13px; font-weight: 600;
+  font-family: var(--font-ui); white-space: nowrap;
+  background: var(--surface); color: var(--muted);
+  cursor: pointer; transition: all 0.18s;
+  -webkit-tap-highlight-color: transparent;
+}
+.supercat-chip.active {
+  background: var(--surface-3);
+  border-color: var(--border-strong);
+  color: var(--text-bright); font-weight: 700;
+}
+.supercat-chip.active-all-cat {
+  background: var(--grad); color: #1a0f00;
+  border-color: transparent; font-weight: 700;
+}
+
+/* Keep old cat-chip for backward compat */
 .cat-chip {
   display: inline-flex; align-items: center;
-  border: 1px solid var(--border-2); border-radius: 20px;
-  padding: 0.32rem 0.8rem; font-size: var(--text-sm); font-weight: 600;
-  font-family: var(--font-ui);
+  border: 1px solid var(--border-2); border-radius: 100px;
+  padding: 6px 12px; font-size: 12px; font-weight: 600;
+  font-family: var(--font-ui); white-space: nowrap;
   background: transparent; color: var(--muted);
   cursor: pointer; transition: all 0.18s;
-  -webkit-tap-highlight-color: transparent; min-height: 34px;
+  -webkit-tap-highlight-color: transparent;
 }
-.cat-chip.active { background: var(--n3-dim); color: var(--n3); border-color: var(--n3-border); }
-.cat-chip.active-all-cat { background: var(--grad); color: white; border-color: transparent; }
+.cat-chip.active { background: var(--surface-3); color: var(--text-bright); border-color: var(--border-strong); }
+.cat-chip.active-all-cat { background: var(--grad); color: #1a0f00; border-color: transparent; }
 
 /* Search row */
 .search-row {
@@ -3101,7 +3123,21 @@ body.light {
   margin-bottom: 1.25rem;
 }
 .stats-row--2 { grid-template-columns: 1fr 1fr; }
-.stats-row--5 { grid-template-columns: repeat(5, 1fr); }
+/* rings row: scrollable flex, min card width so rings don't squish */
+.stats-row--5 {
+  display: flex !important;
+  overflow-x: auto;
+  gap: 8px;
+  scrollbar-width: none;
+  padding-bottom: 4px;
+  scroll-snap-type: x mandatory;
+}
+.stats-row--5::-webkit-scrollbar { display: none; }
+.stats-row--5 .jlpt-ring-card {
+  flex: 0 0 calc(20% - 7px);
+  min-width: 72px;
+  scroll-snap-align: start;
+}
 
 .stat-card {
   background: var(--surface);
@@ -3973,7 +4009,18 @@ html[data-furigana="auto"]   .n1 rt { display: none; }
   font-size: 13px; color: var(--muted); margin-top: 6px; max-width: 280px;
 }
 /* Door cards */
-.hub2-doors { display: grid; gap: 12px; }
+.hub2-doors { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.hub2-door--jelajah {
+  grid-column: 1 / -1; /* full width */
+  min-height: 100px !important;
+  background: linear-gradient(135deg, var(--surface-2) 0%, color-mix(in oklab, var(--accent) 8%, var(--surface)) 100%) !important;
+  border-color: var(--border-strong) !important;
+}
+.hub2-door--jelajah .hub2-door-glyph {
+  color: var(--accent) !important;
+  opacity: 0.12 !important;
+  font-size: 140px !important;
+}
 .hub2-door {
   width: 100%; text-align: left; cursor: pointer;
   padding: 18px; min-height: 140px;

@@ -191,9 +191,35 @@ function setSortOrder(order, btn) {
 }
 
 // ── Kategori chips ──
+// Super-category mapping — English cat values from grammar data
+const SUPER_CAT_MAP = {
+  'bentuk-kata':       ['te-form-use','verb-form','passive','causative','directional-aspect','relative-clause'],
+  'waktu-aspek':       ['sequential-temporal','progressive-state','inception-continuation','past-tense','waktu','kebiasaan','bersamaan'],
+  'modal-ekspresi':    ['conditional-tara','conditional-ba','conditional-nara','kondisional','obligation-necessity','keharusan','permission-prohibition','conjecture-possibility','kemungkinan','dugaan','potential'],
+  'hubungan-kalimat':  ['reason-cause','contrast-concession','kontras','konsesi','comparison','perbandingan','listing-addition','enumerasi','negative','logika','limitation-only','pembatasan'],
+  'komunikasi-sosial': ['sentence-final-request','sentence-final-modality','teineigo-pattern','quotation-thought','hearsay-report'],
+  'perasaan-niat':     ['desire-want','volitional-intention','completion-regret','purpose','perasaan','keputusan','cara'],
+  'partikel-struktur': ['particle','nominalization','copula','predicate-adjective','existence','interrogative','referensi'],
+  'derajat-ekspresi':  ['expression','adverb','extent-degree','penekanan','rentang','pembatasan'],
+};
+let activeSuperCat = null;
+
+function setSuperCat(superKey, btn) {
+  activeSuperCat = superKey;
+  activeCat = 'all'; // use super-cat expansion instead
+  document.querySelectorAll('.supercat-chip, .cat-chip').forEach(b => {
+    b.className = b.classList.contains('supercat-chip') ? 'supercat-chip' : 'cat-chip';
+  });
+  btn.classList.add('active');
+  render();
+}
+
 function setCat(cat, btn) {
   activeCat = cat;
-  document.querySelectorAll('.cat-chip').forEach(b => b.className = 'cat-chip');
+  activeSuperCat = null;
+  document.querySelectorAll('.supercat-chip, .cat-chip').forEach(b => {
+    b.className = b.classList.contains('supercat-chip') ? 'supercat-chip' : 'cat-chip';
+  });
   btn.classList.add(cat === 'all' ? 'active-all-cat' : 'active');
   render();
 }
@@ -237,7 +263,9 @@ function render() {
     if (bookmarkMode) return window.bookmarks && window.bookmarks.has(d.id);
     const ml = activeLevel === 'all' || d.level === activeLevel;
     const mw = activeWeek === null || d.week === activeWeek;
-    const mc = activeCat === 'all' || d.cat === activeCat;
+    const mc = activeCat === 'all'
+      ? (activeSuperCat ? (SUPER_CAT_MAP[activeSuperCat] || []).includes(d.cat) : true)
+      : d.cat === activeCat;
     const q  = searchText.toLowerCase();
     const ms = !q
       || (d.grammar && d.grammar.toLowerCase().includes(q))
@@ -572,6 +600,7 @@ window.buildWeekStrip = buildWeekStrip;
 window.selectWeek = selectWeek;
 window.setSort = setSort;
 window.setCat = setCat;
+window.setSuperCat = setSuperCat;
 window.filterSearch = filterSearch;
 
 

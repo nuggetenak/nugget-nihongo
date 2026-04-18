@@ -130,6 +130,11 @@
       var el = document.getElementById(id);
       if (el) el.style.display = 'none';
     });
+    // Also hide the stats count + back bar
+    var stats = document.querySelector('.stats');
+    if (stats) stats.style.display = 'none';
+    var backBar = document.getElementById('hubChapterBackBar');
+    if (backBar) backBar.style.display = 'none';
   }
 
   function showBrowseChrome() {
@@ -139,7 +144,8 @@
     });
     var m = document.getElementById('main');
     if (m) m.style.display = '';
-    // Let browse.js and its own state manage the rest
+    var stats = document.querySelector('.stats');
+    if (stats) stats.style.display = '';
     if (window.browseInit) window.browseInit();
   }
 
@@ -246,14 +252,12 @@
 
       + '</div>'  // .hub2-doors
 
-      // Flat browse shortcut
-      + '<button class="hub2-see-all" onclick="window.showFlatBrowse()">'
-      + '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 10 6-10 6L2 8l10-6z"/><path d="m2 14 10 6 10-6"/></svg>'
-      + '<div class="hub2-see-all-text">'
-      + '<div class="hub2-see-all-title">Lihat semua kartu</div>'
-      + '<div class="hub2-see-all-sub">' + totalGrammar + ' grammar · ' + totalVocab + ' kosakata</div>'
-      + '</div>'
-      + '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--muted)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>'
+      // Third door — 語 Jelajah Bebas (full browse)
+      + '<button class="hub2-door hub2-door--jelajah" onclick="window.showFlatBrowse()">'
+      + '<div class="hub2-door-glyph">語</div>'
+      + '<div class="hub2-door-badge">' + totalGrammar + ' GRAMMAR · ' + totalVocab + ' KOSAKATA</div>'
+      + '<div class="hub2-door-title">Jelajah Bebas</div>'
+      + '<div class="hub2-door-desc">Semua kartu lintas level dan buku — cari & filter sesukamu</div>'
       + '</button>'
 
       // Continue card — last reviewed grammar entry
