@@ -1,5 +1,27 @@
 # Changelog — Nugget Nihongo
 
+## v15.8.0 (18 April 2026)
+- **Claude Design UI/UX overhaul** — full visual port from Claude Artifacts prototype
+  - Header: glassmorphism sticky TopBar with "N" logo, replaces gradient header
+  - Nav: 72px height, SVG icons (book/pencil/star/bar/dots), amber pill indicator
+  - Light mode: warm amber palette (was cold blue/grey — now brand-consistent)
+  - Body: 3-layer radial ambient glow (warm coffee tones)
+  - CSS tokens: 15+ new vars — `--bg-deep`, `--surface-4`, `--accent-hot`, `--ember`,
+    `--text-bright`, `--muted-2`, `--border-strong`, `--shadow-card`, `--radius-lg/xl`,
+    `--font-jp-display`, `--font-mono`, `--density-pad`
+  - Hub doors: DoorCard style — gradient bg, JP glyph backdrop (日/本), badge labels
+  - JLPT rings: 68px living rings with glow layer + animated dasharray
+  - Lainnya sheet: user row, 3-way theme toggle, SVG nav items, app info
+  - Tweaks panel (new): long-press "N" logo 800ms → accent switcher
+    (amber/sakura/matcha/indigo), density, furigana toggle; all prefs persisted to localStorage
+  - Onboarding: Claude Design style — progress pills, glyph display, option cards
+  - Fonts: Shippori Mincho (display JP) + JetBrains Mono added
+  - SRS progress bars + legend dots: use token vars (accent-green/cool/gold)
+  - All font-family strings → CSS vars (--font-ui, --font-jp, --font-mono)
+- New file: `public/js/tweaks.js`
+- Backup branch: `backup/pre-claude-design-20260418`
+- Tests: 12494 PASS, 0 FAIL (zero regression)
+
 ## v15.7.0 (18 April 2026)
 - Content Population Batch A: +375 entries via 10-agent pipeline
   - vocab-n3: 150→285 entries (+135: movement verbs, adjectives, society nouns)
