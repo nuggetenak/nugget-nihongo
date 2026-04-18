@@ -1,6 +1,6 @@
 # CLAUDE.md — Handoff Note for Claude Code
 **Project:** Nugget Nihongo — Japanese language learning PWA  
-**Last updated:** 18 April 2026 · v15.7.0  
+**Last updated:** 18 April 2026 · v15.8.0  
 **Owner:** Nugget (non-programmer, Indonesian speaker)
 
 ---
@@ -15,10 +15,11 @@ A vanilla JS **hybrid** PWA for learning Japanese, targeting Indonesian speakers
 ```
 public/              ← deploy root (Cloudflare Pages serves this)
   index.html         ← single-page app, 4 tabs: Browse / Quiz / Sensei / Stats
-  styles/app.css     ← all styles (3144 lines)
+  styles/app.css     ← all styles (3842 lines)
   sw.js              ← service worker (nihongo-v15.6.0, hybrid cache strategy)
   js/                ← JS modules (no bundler, loaded via script tags)
     core/            ← version.js, state.js, router.js, theme.js, install.js
+    tweaks.js        ← accent switcher, density, furigana panel (long-press N logo)
     local-state.js   ← IndexedDB wrapper + Supabase sync queue
     fsrs-math.js     ← FSRS calibration for Indonesian learners
     fsrs-engine.js   ← FSRS scheduler (ts-fsrs CDN) + IndexedDB sync hook
