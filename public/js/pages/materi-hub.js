@@ -179,54 +179,88 @@
     if (!panel) return;
     currentView = 'hub';
 
-    // Grammar counts per level
     var data = window.grammarData || [];
-    var counts = {};
-    ['n5','n4','n3','n2','n1'].forEach(function(lv) {
-      counts[lv] = data.filter(function(d) { return d && d.level === lv; }).length;
-    });
     var totalGrammar = data.length;
+    var totalVocab = ['vocabN5','vocabN4','vocabN3','vocabN2','vocabN1'].reduce(function(sum, key) {
+      return sum + ((window[key] || []).length);
+    }, 0);
+
+    // Level progress bars
+    var levelRows = ['N5','N4','N3','N2','N1'].map(function(lvl) {
+      var lv = lvl.toLowerCase();
+      var prog = getLevelProgress(lv);
+      var pct = prog.total ? Math.round(prog.done / prog.total * 100) : 0;
+      return '<div class="hub2-level-row">'
+        + '<span class="hub2-level-pill ' + lv + '">'
+        + '<span class="hub2-level-dot"></span>' + lvl
+        + '</span>'
+        + '<div class="hub2-level-bar-wrap">'
+        + '<div class="hub2-level-bar ' + lv + '" style="width:' + pct + '%"></div>'
+        + '</div>'
+        + '<span class="hub2-level-count">' + prog.done + '/' + prog.total + '</span>'
+        + '</div>';
+    }).join('');
+
+    // Book chips for door card
+    var bookChips = ['Irodori', 'Sou Matome', 'Minna no Nihongo'].map(function(b) {
+      return '<span class="hub2-book-chip">' + b + '</span>';
+    }).join('');
+
+    // Level pills for JLPT door
+    var levelPills = ['N5','N4','N3','N2','N1'].map(function(lvl) {
+      var lv = lvl.toLowerCase();
+      return '<span class="hub2-door-pill ' + lv + '">'
+        + '<span class="hub2-door-pill-dot"></span>' + lvl
+        + '</span>';
+    }).join('');
 
     panel.innerHTML =
-      '<div class="hub-wrap">'
-      + '<div class="hub-intro">'
-      + '<div class="hub-title">Mau belajar dari mana?</div>'
-      + '<div class="hub-subtitle">Dua jalur masuk ke ' + totalGrammar + ' pola grammar yang sama.</div>'
-      + '</div>'
-      + '<div class="hub-doors">'
+      '<div class="hub2-wrap">'
 
-      // JLPT door
-      + '<button class="hub-door hub-door--jlpt" data-glyph="日" onclick="window.showJlptDoor()">'
-      + '<div class="hub-door-badge">5 LEVEL</div>'
-      + '<div class="hub-door-title">Jalur JLPT</div>'
-      + '<div class="hub-door-desc">Belajar urut level ujian — N5 sampai N1.</div>'
-      + '<div class="hub-door-pills">'
-      + ['n5','n4','n3','n2','n1'].map(function(lv) {
-          return '<span class="hub-level-pip ' + lv + '">' + lv.toUpperCase() + '</span>';
-        }).join('')
+      // Hero greeting card
+      + '<div class="hub2-hero">'
+      + '<div class="hub2-hero-glyph">学</div>'
+      + '<div class="hub2-hero-label">Selamat datang kembali</div>'
+      + '<div class="hub2-hero-title">Mau lewat mana hari ini?</div>'
+      + '<div class="hub2-hero-sub">Pilih jalur yang paling cocok buat mood belajar kamu sekarang.</div>'
       + '</div>'
+
+      // Two door cards
+      + '<div class="hub2-doors">'
+
+      + '<button class="hub2-door" onclick="window.showJlptDoor()">'
+      + '<div class="hub2-door-glyph">日</div>'
+      + '<div class="hub2-door-badge">5 LEVEL</div>'
+      + '<div class="hub2-door-title">Jalur JLPT</div>'
+      + '<div class="hub2-door-desc">Belajar urut level ujian — N5 sampai N1</div>'
+      + '<div class="hub2-door-pills">' + levelPills + '</div>'
       + '</button>'
 
-      // Buku door
-      + '<button class="hub-door hub-door--buku" data-glyph="本" onclick="window.showBukuDoor()">'
-      + '<div class="hub-door-badge">3 SERI</div>'
-      + '<div class="hub-door-title">Jalur Buku</div>'
-      + '<div class="hub-door-desc">Ikuti kurikulum textbook favoritmu.</div>'
-      + '<div class="hub-door-books">'
-      + SERIES.filter(function(s) { return s.available; }).map(function(s) {
-          return '<span class="hub-book-chip">' + s.emoji + ' ' + s.title + '</span>';
-        }).join('')
-      + '</div>'
+      + '<button class="hub2-door" onclick="window.showBukuDoor()">'
+      + '<div class="hub2-door-glyph">本</div>'
+      + '<div class="hub2-door-badge">3 SERI</div>'
+      + '<div class="hub2-door-title">Jalur Buku</div>'
+      + '<div class="hub2-door-desc">Ikuti kurikulum buku favoritmu!</div>'
+      + '<div class="hub2-door-books">' + bookChips + '</div>'
       + '</button>'
 
-      + '</div>'  // .hub-doors
+      + '</div>'  // .hub2-doors
 
       // Flat browse shortcut
-      + '<button class="hub-see-all" onclick="window.showFlatBrowse()">'
-      + '✦ Lihat semua kartu (lintas jalur)'
+      + '<button class="hub2-see-all" onclick="window.showFlatBrowse()">'
+      + '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 10 6-10 6L2 8l10-6z"/><path d="m2 14 10 6 10-6"/></svg>'
+      + '<div class="hub2-see-all-text">'
+      + '<div class="hub2-see-all-title">Lihat semua kartu</div>'
+      + '<div class="hub2-see-all-sub">' + totalGrammar + ' grammar · ' + totalVocab + ' kosakata</div>'
+      + '</div>'
+      + '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--muted)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>'
       + '</button>'
 
-      + '</div>';  // .hub-wrap
+      // Level progress rail
+      + '<div class="hub2-section-label">Progres level</div>'
+      + '<div class="hub2-levels">' + levelRows + '</div>'
+
+      + '</div>';  // .hub2-wrap
 
     PANELS.forEach(function(p) {
       var el = document.getElementById(p);
