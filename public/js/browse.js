@@ -415,7 +415,7 @@ function renderSection(container, lv, items, title, count, isSubDay = false) {
         <div class="peel-back-examples">${exHTML}</div>
         ${nuanceHTML}
       </div>
-      <!-- Front ticket: lifts on peek/reveal -->
+      <!-- Front ticket: lifts on hold, locks on Peek btn -->
       <div class="peel-front">
         <div class="peel-top-row">
           <span class="peel-level-pill ${lv}">${lv.toUpperCase()}</span>
@@ -423,55 +423,63 @@ function renderSection(container, lv, items, title, count, isSubDay = false) {
           <span class="peel-status ${statusClass}">
             <span class="peel-status-dot"></span>${statusLabel}
           </span>
-          <button class="peel-detail-btn"
-            onclick="event.stopPropagation(); openDetail('${d.id}')"
-            aria-label="Detail">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg>
-          </button>
+          <div class="peel-actions">
+            <button class="peel-bm-btn${isBookmarked ? ' bookmarked' : ''}"
+              onclick="event.stopPropagation(); toggleBookmark('${d.id}',this,event)"
+              aria-label="Bookmark">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="${isBookmarked ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </button>
+            <button class="peel-detail-btn"
+              onclick="event.stopPropagation(); openDetail('${d.id}')"
+              aria-label="Detail">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg>
+            </button>
+          </div>
         </div>
         <div class="peel-grammar">${d.grammar}</div>
         <div class="peel-reading">${d.reading}</div>
         <div class="peel-bottom-row">
           <span class="peel-meta">${dayBadge ? d.day + '日目 · ' : ''}${catDisplay}</span>
-          <span class="peel-hint peel-hint--peek">
+          <button class="peel-peek-btn peel-hint--peek"
+            onclick="event.stopPropagation();"
+            aria-label="Peek">
             <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
             Peek
-          </span>
-          <span class="peel-hint peel-hint--close" style="display:none">
+          </button>
+          <button class="peel-peek-btn peel-hint--close" style="display:none"
+            onclick="event.stopPropagation();"
+            aria-label="Tutup">
             <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
             Tutup
-          </span>
-          <button class="bookmark-btn${isBookmarked ? ' bookmarked' : ''}"
-            onclick="event.stopPropagation(); toggleBookmark('${d.id}',this,event)">${isBookmarked ? '⭐' : '☆'}</button>
+          </button>
         </div>
       </div>`;
 
-    // Peel interaction
-    const front = el.querySelector('.peel-front');
-    const hintPeek  = el.querySelector('.peel-hint--peek');
-    const hintClose = el.querySelector('.peel-hint--close');
+    // ── Peel interaction ─────────────────────────────────────────
+    const front     = el.querySelector('.peel-front');
+    const peekBtn   = el.querySelector('.peel-hint--peek');
+    const closeBtn  = el.querySelector('.peel-hint--close');
     let revealed = false;
 
     function setRevealed(r) {
       revealed = r;
       el.classList.toggle('revealed', r);
-      hintPeek.style.display  = r ? 'none'        : 'inline-flex';
-      hintClose.style.display = r ? 'inline-flex' : 'none';
+      el.classList.remove('peeking');
+      peekBtn.style.display  = r ? 'none'        : 'inline-flex';
+      closeBtn.style.display = r ? 'inline-flex' : 'none';
     }
 
-    front.addEventListener('click', function() { setRevealed(!revealed); });
+    // Peek btn: tap = permanent toggle
+    peekBtn.addEventListener('click',  function() { setRevealed(true);  });
+    closeBtn.addEventListener('click', function() { setRevealed(false); });
 
-    // Desktop hover-peek
-    front.addEventListener('mousedown',  function() { if (!revealed) el.classList.add('peeking'); });
-    front.addEventListener('mouseup',    function() { el.classList.remove('peeking'); });
-    front.addEventListener('mouseleave', function() { el.classList.remove('peeking'); });
-
-    // Mobile: detect scroll vs tap — cancel peek if finger moves >8px
+    // Card body hold = temporary peek (scroll-safe)
     let _touchStartY = 0, _touchScrolled = false;
     front.addEventListener('touchstart', function(e) {
-      _touchStartY = e.touches[0].clientY;
+      if (revealed) return; // already locked open, ignore hold
+      _touchStartY   = e.touches[0].clientY;
       _touchScrolled = false;
-      if (!revealed) el.classList.add('peeking');
+      el.classList.add('peeking');
     }, { passive: true });
     front.addEventListener('touchmove', function(e) {
       if (Math.abs(e.touches[0].clientY - _touchStartY) > 8) {
@@ -481,20 +489,12 @@ function renderSection(container, lv, items, title, count, isSubDay = false) {
     }, { passive: true });
     front.addEventListener('touchend', function() {
       el.classList.remove('peeking');
-      // If scrolled, block the click toggle that follows
-      if (_touchScrolled) {
-        _touchScrolled = false;
-        front._blockNextClick = true;
-        setTimeout(function() { front._blockNextClick = false; }, 100);
-      }
     });
 
-    // Override click to check scroll block
-    front.removeEventListener('click', arguments[0]);
-    front.addEventListener('click', function() {
-      if (front._blockNextClick) return;
-      setRevealed(!revealed);
-    });
+    // Desktop: hold = peek
+    front.addEventListener('mousedown',  function() { if (!revealed) el.classList.add('peeking'); });
+    front.addEventListener('mouseup',    function() { el.classList.remove('peeking'); });
+    front.addEventListener('mouseleave', function() { el.classList.remove('peeking'); });
 
     grid.appendChild(el);
   });
