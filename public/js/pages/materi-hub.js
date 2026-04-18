@@ -256,6 +256,9 @@
       + '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--muted)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>'
       + '</button>'
 
+      // Continue card — last reviewed grammar entry
+      + buildContinueCard()
+
       // Level progress rail
       + '<div class="hub2-section-label">Progres level</div>'
       + '<div class="hub2-levels">' + levelRows + '</div>'
@@ -627,6 +630,49 @@
       var body = modal.querySelector('.detail-body');
       if (body) body.insertAdjacentHTML('beforeend', html);
     };
+  }
+
+  // ── Continue card — last reviewed grammar entry ───────────────
+  function buildContinueCard() {
+    var grammar = window.grammarData || [];
+    var srs     = window.srsData    || {};
+
+    // Find most recently reviewed card
+    var best = null, bestTime = 0;
+    Object.keys(srs).forEach(function(id) {
+      var c = srs[id];
+      if (!c || !c.last_review) return;
+      var t = new Date(c.last_review).getTime();
+      if (t > bestTime) { bestTime = t; best = id; }
+    });
+    if (!best) return '';
+
+    var entry = grammar.find(function(g) { return g && g.id === best; });
+    if (!entry) return '';
+
+    var lv = entry.level || 'n5';
+    var bookLabel = '';
+    if (entry.book && entry.book !== '—') {
+      bookLabel = entry.book + (entry.day ? ' · Hari ' + entry.day : '');
+    } else {
+      bookLabel = lv.toUpperCase() + ' · ' + (entry.cat || '');
+    }
+
+    var interval = srs[best] ? (srs[best].interval || 0) : 0;
+    var pct = Math.min(interval / 180, 1);
+
+    return '<div class="hub2-continue-label"><span>Lanjutkan</span></div>'
+      + '<button class="hub2-continue-card ' + lv + '" onclick="window.openDetail(\'' + best + '\')">'
+      + '<div class="hub2-cc-icon ' + lv + '">語</div>'
+      + '<div class="hub2-cc-body">'
+      + '<div class="hub2-cc-source">' + bookLabel.toUpperCase() + '</div>'
+      + '<div class="hub2-cc-pattern">' + entry.grammar + '</div>'
+      + '<div class="hub2-cc-meaning">' + entry.meaning + '</div>'
+      + '<div class="hub2-cc-bar-wrap">'
+      + '<div class="hub2-cc-bar ' + lv + '" style="width:' + Math.round(pct * 100) + '%"></div>'
+      + '</div></div>'
+      + '<svg class="hub2-cc-fwd" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--muted)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>'
+      + '</button>';
   }
 
   // ── Public API ───────────────────────────────────────────────

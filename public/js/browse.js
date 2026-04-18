@@ -229,6 +229,10 @@ function render() {
 
   const data = (window.grammarData || []).filter(Boolean);
 
+  // Update grammar count badge
+  const gBadge = document.getElementById('bstGrammarCount');
+  if (gBadge) gBadge.textContent = data.length;
+
   let filtered = data.filter(d => {
     if (bookmarkMode) return window.bookmarks && window.bookmarks.has(d.id);
     const ml = activeLevel === 'all' || d.level === activeLevel;
@@ -351,54 +355,89 @@ function renderSection(container, lv, items, title, count, isSubDay = false) {
   const grid = sec.querySelector('.cards');
 
   items.forEach(d => {
-    const exBack = d.examples.map(e =>
+    const exHTML = d.examples.map(e =>
       `<div class="card-example">
          <div class="jp">${e.jp}</div>
          <div class="id">${e.id}</div>
        </div>`).join('');
     const nuanceHTML = d.nuance
-      ? `<div class="card-nuance"><span class="nuance-label">💡</span>${d.nuance}</div>` : '';
+      ? `<div class="peel-nuance"><span class="nuance-label">💡</span>${d.nuance}</div>` : '';
     const dayBadge = d.day ? `<span class="tag day-tag">${d.day}日目</span>` : '';
     const catDisplay = catLabel[d.cat] || d.cat;
+    const lv = d.level || 'n5';
 
-    const prog = window.progress && window.progress[d.id];
-    const progBadge = prog ? `<div class="card-progress-badge">${progressEmoji[prog]}</div>` : '';
+    // SRS status dot
+    const srs = window.srsData && window.srsData[d.id];
+    let statusLabel = 'Baru', statusClass = 'new';
+    if (srs) {
+      if (srs.interval >= 21)     { statusLabel = 'Lancar';  statusClass = 'mature'; }
+      else if (srs.interval >= 7) { statusLabel = 'Ingat';   statusClass = 'young'; }
+      else                        { statusLabel = 'Belajar'; statusClass = 'learning'; }
+    }
+
     const isBookmarked = window.bookmarks && window.bookmarks.has(d.id);
-    const bmBtn = `<button class="bookmark-btn${isBookmarked ? ' bookmarked' : ''}"
-      onclick="toggleBookmark('${d.id}',this,event)">${isBookmarked ? '⭐' : '☆'}</button>`;
 
     const el = document.createElement('div');
-    el.className = `flip-wrap ${d.level || 'n5'}${d.cat === 'dummy' ? ' dummy' : ''}`;
-    el.onclick = function() { this.classList.toggle('flipped'); };
+    el.className = `peel-wrap ${lv}${d.cat === 'dummy' ? ' dummy' : ''}`;
     el.innerHTML = `
-      ${bmBtn}
-      <div class="flip-inner">
-        <div class="face front">
-          ${progBadge}
-          <div class="card-level-dot"></div>
-          <div class="card-grammar">${d.grammar}</div>
-          <div class="card-reading">${d.reading}</div>
-          <div class="card-meaning">${d.meaning}</div>
-          <div class="card-connection">${d.connection}</div>
-          <div class="card-desc">${d.desc}</div>
-          <div class="front-bottom">
-            <div class="card-tags">
-              <span class="tag ${d.level || 'n5'}">${(d.level || 'n5').toUpperCase()}</span>
-              ${dayBadge}
-              <span class="tag">${catDisplay}</span>
-            </div>
-            <span class="flip-hint">contoh →</span>
-          </div>
-          <button class="card-expand-btn"
-                  onclick="event.stopPropagation(); openDetail('${d.id}')"
-                  aria-label="Detail">⤢</button>
+      <!-- Back layer: meaning revealed from below -->
+      <div class="peel-back">
+        <div class="peel-back-label">ARTI</div>
+        <div class="peel-back-meaning">${d.meaning}</div>
+        <div class="peel-back-examples">${exHTML}</div>
+        ${nuanceHTML}
+      </div>
+      <!-- Front ticket: lifts on peek/reveal -->
+      <div class="peel-front">
+        <div class="peel-top-row">
+          <span class="peel-level-pill ${lv}">${lv.toUpperCase()}</span>
+          <div style="flex:1"></div>
+          <span class="peel-status ${statusClass}">
+            <span class="peel-status-dot"></span>${statusLabel}
+          </span>
+          <button class="peel-detail-btn"
+            onclick="event.stopPropagation(); openDetail('${d.id}')"
+            aria-label="Detail">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg>
+          </button>
         </div>
-        <div class="face back">
-          <div class="back-label">Contoh Kalimat</div>
-          <div class="card-examples">${exBack}</div>
-          ${nuanceHTML}
+        <div class="peel-grammar">${d.grammar}</div>
+        <div class="peel-reading">${d.reading}</div>
+        <div class="peel-bottom-row">
+          <span class="peel-meta">${dayBadge ? d.day + '日目 · ' : ''}${catDisplay}</span>
+          <span class="peel-hint peel-hint--peek">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            Peek
+          </span>
+          <span class="peel-hint peel-hint--close" style="display:none">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+            Tutup
+          </span>
+          <button class="bookmark-btn${isBookmarked ? ' bookmarked' : ''}"
+            onclick="event.stopPropagation(); toggleBookmark('${d.id}',this,event)">${isBookmarked ? '⭐' : '☆'}</button>
         </div>
       </div>`;
+
+    // Peel interaction
+    const front = el.querySelector('.peel-front');
+    const hintPeek  = el.querySelector('.peel-hint--peek');
+    const hintClose = el.querySelector('.peel-hint--close');
+    let revealed = false;
+
+    function setRevealed(r) {
+      revealed = r;
+      el.classList.toggle('revealed', r);
+      hintPeek.style.display  = r ? 'none'         : 'inline-flex';
+      hintClose.style.display = r ? 'inline-flex'  : 'none';
+    }
+
+    front.addEventListener('click', function() { setRevealed(!revealed); });
+    front.addEventListener('mousedown',   function() { if (!revealed) el.classList.add('peeking'); });
+    front.addEventListener('mouseup',     function() { el.classList.remove('peeking'); });
+    front.addEventListener('mouseleave',  function() { el.classList.remove('peeking'); });
+    front.addEventListener('touchstart',  function() { if (!revealed) el.classList.add('peeking'); }, { passive: true });
+    front.addEventListener('touchend',    function() { el.classList.remove('peeking'); });
+
     grid.appendChild(el);
   });
   container.appendChild(sec);
@@ -434,6 +473,13 @@ function updateProgressPanel() {
   if (dueBanner && dueCountEl) {
     dueCountEl.textContent = dueAll.length;
     dueBanner.style.display = dueAll.length > 0 ? 'flex' : 'none';
+  }
+  // Also update Latihan hero due count
+  const heroCount = document.getElementById('latihanHeroDueCount');
+  if (heroCount) {
+    heroCount.textContent = dueAll.length > 0
+      ? dueAll.length + ' kartu nunggu'
+      : 'Semua beres! 🎉';
   }
 
   // Per level bars — Mature / Young / Learning / (unseen = empty space)
