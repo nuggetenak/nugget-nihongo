@@ -427,16 +427,46 @@ function renderSection(container, lv, items, title, count, isSubDay = false) {
     function setRevealed(r) {
       revealed = r;
       el.classList.toggle('revealed', r);
-      hintPeek.style.display  = r ? 'none'         : 'inline-flex';
-      hintClose.style.display = r ? 'inline-flex'  : 'none';
+      hintPeek.style.display  = r ? 'none'        : 'inline-flex';
+      hintClose.style.display = r ? 'inline-flex' : 'none';
     }
 
     front.addEventListener('click', function() { setRevealed(!revealed); });
-    front.addEventListener('mousedown',   function() { if (!revealed) el.classList.add('peeking'); });
-    front.addEventListener('mouseup',     function() { el.classList.remove('peeking'); });
-    front.addEventListener('mouseleave',  function() { el.classList.remove('peeking'); });
-    front.addEventListener('touchstart',  function() { if (!revealed) el.classList.add('peeking'); }, { passive: true });
-    front.addEventListener('touchend',    function() { el.classList.remove('peeking'); });
+
+    // Desktop hover-peek
+    front.addEventListener('mousedown',  function() { if (!revealed) el.classList.add('peeking'); });
+    front.addEventListener('mouseup',    function() { el.classList.remove('peeking'); });
+    front.addEventListener('mouseleave', function() { el.classList.remove('peeking'); });
+
+    // Mobile: detect scroll vs tap — cancel peek if finger moves >8px
+    let _touchStartY = 0, _touchScrolled = false;
+    front.addEventListener('touchstart', function(e) {
+      _touchStartY = e.touches[0].clientY;
+      _touchScrolled = false;
+      if (!revealed) el.classList.add('peeking');
+    }, { passive: true });
+    front.addEventListener('touchmove', function(e) {
+      if (Math.abs(e.touches[0].clientY - _touchStartY) > 8) {
+        _touchScrolled = true;
+        el.classList.remove('peeking');
+      }
+    }, { passive: true });
+    front.addEventListener('touchend', function() {
+      el.classList.remove('peeking');
+      // If scrolled, block the click toggle that follows
+      if (_touchScrolled) {
+        _touchScrolled = false;
+        front._blockNextClick = true;
+        setTimeout(function() { front._blockNextClick = false; }, 100);
+      }
+    });
+
+    // Override click to check scroll block
+    front.removeEventListener('click', arguments[0]);
+    front.addEventListener('click', function() {
+      if (front._blockNextClick) return;
+      setRevealed(!revealed);
+    });
 
     grid.appendChild(el);
   });
