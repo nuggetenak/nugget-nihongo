@@ -4,7 +4,7 @@
 //  network-first for API calls (Supabase / Cloudflare Workers).
 // ══════════════════════════════════════
 
-const CACHE = 'nihongo-v15.11.5';
+const CACHE = 'nihongo-v15.11.6';
 const ASSETS = [
   './',
   './index.html',
@@ -109,6 +109,7 @@ const ASSETS = [
   // ── Offline AI fallback drills ────────────────────────
   './data/fallback/grammar-drills.json',
   './data/fallback/vocab-drills.json',
+  './data/fallback/quiz-drills.json',
 ];
 
 // Network-first origins — never cache Supabase / Worker API calls

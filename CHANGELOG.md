@@ -1,5 +1,45 @@
 # Changelog — Nugget Nihongo
 
+## v15.11.1–15.11.5 (18 April 2026) — Comprehensive Audit & Hygiene Pass
+
+**Crunchy QA — exhaustive audit across all frontend JS, CSS, SW, HTML**
+
+### 🔴 Critical Fixes
+- **Peel card interaction** (v15.11.1): peek content invisible (ARTI+meaning hidden), multi-card stays open simultaneously, whole-card touch triggers peek — now accordion + peek-button-only touch area
+- **toggleBookmark SVG destroyed** (v15.11.2): `textContent` override wiped SVG star icon on peel cards — now detects SVG and toggles `fill` attribute instead
+- **Streak modal never shown** (v15.11.2): `showStreakBroken()` defined but never called — exported to `window`, wired into `gamification.js` break path
+- **Duplicate `_renderWeakPoints`** (v15.11.3): SM-2 version shadowed FSRS version — dead SM-2 function + stale patch block removed
+- **Streak stat always 0** (v15.11.3): `streakData.count` → `streakData.current` (field mismatch vs gamification.js schema)
+- **Quiz result "NaN hari lagi"** (v15.11.4): `srsData[id].due` (undefined) vs `srsData[id].card.due` (ISO string) — fixed with Date parse
+- **Theme crash on light mode** (v15.11.5): `loadTheme()` called `.textContent` on null `#themeToggle` (removed from HTML) — null-guarded; also auto-migrates legacy `nn_theme` key
+- **Progress bars always empty** (v15.11.5): `updateProgressPanel` used SM-2 fields (`reps`, `interval`, `due` as int) on FSRS nested structure — fixed to `card.reps`, `card.scheduled_days`, `card.due` ISO parse
+
+### 🟡 Data & Feature Fixes
+- **`nn_quiz_stats` never written** (v15.11.4): all 9 quiz modes now write via `window.recordQuizStat()` — accuracy chart in Progress tab now populates
+- **10 backup keys missing** (v15.11.4): `nn_heatmap`, `nn_quiz_stats`, `nn_accent`, `nn_density`, `nn_furigana`, `nn_romaji`, `nn_fontsize`, `nn_reduce_motion`, `nn_last_activity`, `nn_migrated_v1` added to `USER_DATA_KEYS`
+- **Theme key split** (v15.11.4): `settings.js` wrote `nn_theme`, everything else reads `bunpou-theme` — all 4 occurrences fixed
+- **`openDetail` vocab-blind** (v15.11.4): vocab card IDs (`vg-*`) silently failed — now routes to `openVocabDetail()`
+- **`d.connection`/`d.desc` = "undefined"** (v15.11.4): guarded before template interpolation
+- **`--text-lg` CSS var undefined** (v15.11.4): added `1.1rem` to type scale
+- **`_buildLearningDNA` not exported** (v15.11.5): Sensei DNA context was always skipped — exported from Supabase IIFE
+- **`quiz-drills.json` not SW-cached** (v15.11.5): offline fallback would 404; added to ASSETS
+
+### 🧹 Housekeeping
+- **SW cache gap** (v15.11.2): `materi-hub.js`, `onboarding.js`, `settings.js`, `about.js`, `tweaks.js`, 4 AI files — all added to offline ASSETS
+- **Dead CSS** (v15.11.2): `.peel-wrap .bookmark-btn` removed (replaced by `.peel-bm-btn`)
+- **`var i` triple redeclaration** (v15.11.2): renamed `gi`/`di`/`vi` in `srsDueToday()`
+- **`_currentRevealedEl` stale ref** (v15.11.3): reset to null at top of `render()`
+- **`var chLabel` duplicate** (v15.11.2): renamed first to `chLabelShort`
+- **Stale comment refs** (v15.11.2): `grammar-query.js` → `grammar-index.js` in 2 files
+- **`msVersionLabel` hardcoded** (v15.11.4): now reads `window.APP_VERSION`
+- **`grammar-query.js` deleted** (v15.11.5): orphaned file, fully superseded by `grammar-index.js`
+- **`loadStreak()` scope** (v15.11.2): confirmed working — `streak.js` is non-IIFE, `app.js` call valid
+
+### ⚪ Backend Flagged (not fixed in frontend)
+- `sb.auth.getUser()` called synchronously in 6 places → `user_id` always `undefined` → all Supabase writes fail RLS
+- `bulkSync()` receives `{id: entry}` object, calls `.map()` → `TypeError`
+- `sbClient.supabaseKey` not exposed by Supabase v2 → `_SUPABASE_ANON_KEY` always `''`
+
 ## v15.8.0 (18 April 2026)
 - **Claude Design UI/UX overhaul** — full visual port from Claude Artifacts prototype
   - Header: glassmorphism sticky TopBar with "N" logo, replaces gradient header
