@@ -1192,7 +1192,10 @@ body.light .tab-nav {
 /* ══════════════════════════════════════
    QUIZ — SETUP
 ══════════════════════════════════════ */
-.quiz-setup { padding: 1.25rem 1rem; }
+.quiz-setup {
+  padding: 0 16px 120px;
+  overflow-y: auto;
+}
 .quiz-setup h2 {
   font-family: var(--font-jp);
   font-size: 1.15rem; font-weight: 700; margin-bottom: 1.25rem;
@@ -1388,33 +1391,13 @@ body.light .tab-nav {
 /* ══════════════════════════════════════
    QUIZ MODE TOGGLE
 ══════════════════════════════════════ */
+/* ══════════════════════════════════════
+   Quiz mode toggle (legacy — see §qcat below for active styles)
+══════════════════════════════════════ */
 .quiz-mode-toggle {
   display: grid; grid-template-columns: 1fr 1fr;
   gap: 0.5rem; margin-bottom: 1rem;
 }
-.mode-btn {
-  display: flex; flex-direction: column; align-items: flex-start;
-  gap: 0.1rem; padding: 0.75rem 0.9rem;
-  border-radius: 12px; border: 1.5px solid var(--border-2);
-  background: var(--surface-2); cursor: pointer;
-  text-align: left; transition: all 0.15s;
-  -webkit-tap-highlight-color: transparent;
-}
-.mode-btn.active {
-  border-color: var(--accent);
-  background: rgba(245,158,11,0.12);
-  box-shadow: 0 0 0 1px var(--accent);
-}
-.mode-icon { font-size: 1.2rem; line-height: 1; }
-.mode-label {
-  font-size: var(--text-sm); font-weight: 700; color: var(--text);
-  font-family: var(--font-ui);
-}
-.mode-desc {
-  font-size: 0.62rem; color: var(--muted);
-  font-family: var(--font-ui); letter-spacing: 0.03em;
-}
-.mode-btn.active .mode-label { color: var(--accent); }
 /* AI quiz mode button (Phase 5.5b — only visible when feature flag on) */
 .mode-btn--ai { border-style: dashed; }
 .mode-btn--ai .mode-icon { filter: hue-rotate(200deg); }
@@ -2114,6 +2097,73 @@ body.light {
   opacity: 0.45;
   pointer-events: none;
 }
+
+/* ── Quiz category tab row ──────────────────────────────────── */
+.quiz-category-tabs {
+  display: flex; gap: 6px;
+  overflow-x: auto; padding-bottom: 12px; margin-bottom: 4px;
+  scrollbar-width: none;
+}
+.quiz-category-tabs::-webkit-scrollbar { display: none; }
+
+.qcat-tab {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 8px 14px;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 100px; cursor: pointer; white-space: nowrap;
+  font-family: inherit; font-size: 13px; font-weight: 500;
+  color: var(--muted); transition: all 0.18s;
+  -webkit-tap-highlight-color: transparent;
+}
+.qcat-tab.active {
+  background: var(--surface-3);
+  border-color: var(--border-strong);
+  color: var(--text-bright); font-weight: 700;
+}
+.qcat-icon { font-size: 15px; line-height: 1; }
+.qcat-label { font-size: 13px; }
+
+/* ── Mode group (one visible at a time) ─────────────────────── */
+.quiz-mode-group { display: none; flex-direction: column; gap: 8px; }
+.quiz-mode-group.active { display: flex; }
+
+.qcat-desc {
+  font-size: 12px; color: var(--muted);
+  padding: 4px 0 6px; line-height: 1.45;
+}
+
+/* ── Mode button — row layout (Claude Design style) ────────── */
+.mode-btn {
+  display: flex; align-items: center; gap: 14px;
+  padding: 14px 16px;
+  border-radius: 14px; border: 1px solid var(--border-2);
+  background: var(--surface); cursor: pointer;
+  text-align: left; transition: all 0.15s;
+  font-family: inherit; width: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+.mode-btn:active { transform: scale(0.99); }
+.mode-btn.active {
+  border-color: var(--accent);
+  background: color-mix(in oklab, var(--accent) 10%, var(--surface));
+  box-shadow: 0 0 0 1px var(--accent);
+}
+.mode-icon {
+  font-size: 22px; line-height: 1; flex-shrink: 0;
+  width: 40px; height: 40px; border-radius: 12px;
+  background: var(--surface-2); border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+}
+.mode-text { flex: 1; min-width: 0; }
+.mode-label {
+  font-size: 14px; font-weight: 700; color: var(--text-bright);
+  font-family: var(--font-ui); display: block;
+}
+.mode-desc {
+  font-size: 11px; color: var(--muted);
+  font-family: var(--font-ui); margin-top: 2px; display: block;
+}
+.mode-btn.active .mode-label { color: var(--accent); }
 
 /* ══════════════════════════════════════
    §19g — Browse Vocab Tab (v14)
@@ -3626,12 +3676,12 @@ body.light {
 
 /* ── Chapter-back bar (inside flat browse) ────────────────────── */
 .hub-chapter-back-bar {
-  padding: 0.5rem 1rem 0;
+  padding: 8px 16px 4px;
   display: none;
-  display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 10px;
 }
+/* shown/hidden via backBar.style.display = 'flex' / 'none' in JS */
 .hub-chapter-back-label {
   font-size: var(--text-sm);
   color: var(--muted);
@@ -4258,11 +4308,12 @@ html[data-furigana="auto"]   .n1 rt { display: none; }
 .peel-status.mature   { color: var(--n2); }
 
 .peel-detail-btn {
-  background: transparent; border: 0; cursor: pointer;
-  color: var(--muted); padding: 3px; display: flex;
-  border-radius: 6px; flex-shrink: 0;
+  background: var(--surface-3); border: 1px solid var(--border);
+  border-radius: 8px; cursor: pointer;
+  color: var(--muted); padding: 4px 6px; display: flex;
+  flex-shrink: 0; transition: color 0.15s, background 0.15s;
 }
-.peel-detail-btn:hover { color: var(--text); }
+.peel-detail-btn:hover, .peel-detail-btn:active { color: var(--text-bright); background: var(--surface-4); }
 
 /* Pattern + reading */
 .peel-grammar {

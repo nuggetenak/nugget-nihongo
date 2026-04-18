@@ -479,7 +479,7 @@
     }
     backBar.innerHTML = '<button class="hub-back-btn" onclick="window.showMateriHub()">← Pilih Jalur</button>'
       + '<span class="hub-chapter-back-label">Semua Grammar</span>';
-    backBar.style.display = '';
+    backBar.style.display = 'flex';
     window._hubPrevView = null;
   };
 
@@ -506,7 +506,7 @@
     var levelNames = { n5:'N5 · Dasar', n4:'N4 · Dasar Menengah', n3:'N3 · Menengah', n2:'N2 · Mahir', n1:'N1 · Mahir Tinggi' };
     backBar.innerHTML = '<button class="hub-back-btn" onclick="window.showJlptDoor()">← Jalur JLPT</button>'
       + '<span class="hub-chapter-back-label">' + (levelNames[level] || level.toUpperCase()) + '</span>';
-    backBar.style.display = '';
+    backBar.style.display = 'flex';
     // Store where we came from so back works
     window._hubPrevView = 'jlpt';
   };
@@ -556,7 +556,7 @@
     backBar.innerHTML = '<button class="hub-back-btn" onclick="window.showBukuChapters(\'' + seriesId + '\')">'
       + '← ' + series.emoji + ' ' + series.title + ' / ' + chLabel
       + '</button>';
-    backBar.style.display = '';
+    backBar.style.display = 'flex';
 
     window._hubPrevView = 'chapters';
     window._hubPrevSeries = seriesId;
