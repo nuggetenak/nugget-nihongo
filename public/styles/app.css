@@ -351,7 +351,7 @@ body.light {
   background: var(--grad);
   color: white; border: none; border-radius: 6px;
   padding: 0.4rem 1rem; font-size: var(--text-xs); font-weight: 700;
-  cursor: pointer; font-family: 'DM Sans', sans-serif;
+  cursor: pointer; font-family: var(--font-ui);
   white-space: nowrap; flex-shrink: 0;
   -webkit-tap-highlight-color: transparent;
 }
@@ -382,13 +382,13 @@ body.light {
   align-items: flex-start; margin-bottom: 1.25rem;
 }
 .modal-title {
-  font-family: 'BIZ UDGothic', sans-serif;
+  font-family: var(--font-jp);
   font-size: 1.05rem; font-weight: 700; line-height: 1.3;
   color: var(--text);
 }
 .modal-title span {
   display: block; font-size: var(--text-sm); color: var(--muted);
-  font-family: 'DM Sans', sans-serif; font-weight: 400; margin-top: 0.2rem;
+  font-family: var(--font-ui); font-weight: 400; margin-top: 0.2rem;
 }
 .modal-close {
   background: var(--surface-2); border: 1px solid var(--border);
@@ -402,7 +402,7 @@ body.light {
   flex: 1; padding: 0.55rem; border: 1px solid var(--border-2);
   border-radius: 8px; background: var(--surface-2); font-size: var(--text-sm);
   font-weight: 700; cursor: pointer; color: var(--muted);
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-ui);
   -webkit-tap-highlight-color: transparent; transition: all 0.12s;
 }
 .os-tab.active { background: var(--grad); color: white; border-color: transparent; }
@@ -412,19 +412,19 @@ body.light {
 .step-num {
   width: 28px; height: 28px; border-radius: 50%;
   background: var(--grad); color: white;
-  font-family: 'DM Sans', sans-serif; font-size: var(--text-xs); font-weight: 700;
+  font-family: var(--font-ui); font-size: var(--text-xs); font-weight: 700;
   display: flex; align-items: center; justify-content: center; flex-shrink: 0;
 }
 .step-text { font-size: var(--text-sm); line-height: 1.6; color: var(--text); padding-top: 0.2rem; }
 .step-text b { color: var(--accent); }
 .step-text code {
   background: var(--surface-2); border-radius: 4px;
-  padding: 0.1rem 0.45rem; font-family: 'DM Sans', sans-serif; font-size: var(--text-xs);
+  padding: 0.1rem 0.45rem; font-family: var(--font-ui); font-size: var(--text-xs);
   color: var(--text);
 }
 .install-divider {
   text-align: center; font-size: var(--text-xs); color: var(--muted);
-  font-family: 'DM Sans', sans-serif; letter-spacing: 0.1em;
+  font-family: var(--font-ui); letter-spacing: 0.1em;
   position: relative; margin: 0.25rem 0;
 }
 .install-divider::before, .install-divider::after {
@@ -436,7 +436,7 @@ body.light {
 .direct-install-btn {
   width: 100%; padding: 0.85rem; background: var(--grad); color: white;
   border: none; border-radius: 8px; font-size: var(--text-base); font-weight: 700;
-  cursor: pointer; font-family: 'DM Sans', sans-serif;
+  cursor: pointer; font-family: var(--font-ui);
   -webkit-tap-highlight-color: transparent; transition: opacity 0.15s;
 }
 .direct-install-btn:active { opacity: 0.8; }
@@ -452,7 +452,7 @@ body.light {
 #offlineBadge {
   display: none; background: var(--n4); color: white;
   text-align: center; font-size: var(--text-xs);
-  padding: 0.45rem; font-family: 'DM Sans', sans-serif;
+  padding: 0.45rem; font-family: var(--font-ui);
 }
 #offlineBadge.show { display: block; }
 
@@ -626,7 +626,7 @@ body.light .tab-nav {
 
 /* Row label */
 .filter-row-label {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.58rem; font-weight: 700; letter-spacing: 0.12em;
   text-transform: uppercase; color: var(--muted);
   margin-bottom: 0.4rem; display: block;
@@ -645,7 +645,7 @@ body.light .tab-nav {
   border: 1px solid var(--border-2); border-radius: 20px;
   padding: 0.38rem 0.85rem;
   font-size: var(--text-sm); font-weight: 600;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-ui);
   background: transparent; color: var(--muted);
   cursor: pointer; transition: all 0.18s;
   -webkit-tap-highlight-color: transparent;
@@ -694,7 +694,7 @@ body.light .tab-nav {
 .week-pill.coming { opacity: 0.35; cursor: not-allowed; }
 .week-pill.coming .week-theme { font-style: italic; }
 .week-num-badge {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.6rem; font-weight: 700;
   background: var(--surface-3); color: var(--muted);
   padding: 0 0.5rem;
@@ -703,7 +703,7 @@ body.light .tab-nav {
   transition: background 0.18s, color 0.18s;
 }
 .week-theme {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.73rem; color: var(--muted);
   padding: 0 0.65rem;
   display: flex; align-items: center; white-space: nowrap;
@@ -720,7 +720,7 @@ body.light .tab-nav {
 .sort-filter-row::-webkit-scrollbar { display: none; }
 
 .sort-label-inline {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.58rem; font-weight: 700; letter-spacing: 0.08em;
   text-transform: uppercase; color: var(--muted);
   white-space: nowrap; flex-shrink: 0; margin-right: 0.15rem;
@@ -729,7 +729,7 @@ body.light .tab-nav {
   flex-shrink: 0; display: inline-flex; align-items: center; gap: 0.2rem;
   border: 1px solid var(--border-2); border-radius: 20px;
   padding: 0.28rem 0.7rem; font-size: 0.7rem; font-weight: 700;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-ui);
   background: transparent; color: var(--muted);
   cursor: pointer; transition: all 0.18s;
   -webkit-tap-highlight-color: transparent; white-space: nowrap; min-height: 44px;
@@ -756,7 +756,7 @@ body.light .tab-nav {
   display: inline-flex; align-items: center;
   border: 1px solid var(--border-2); border-radius: 20px;
   padding: 0.32rem 0.8rem; font-size: var(--text-sm); font-weight: 600;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-ui);
   background: transparent; color: var(--muted);
   cursor: pointer; transition: all 0.18s;
   -webkit-tap-highlight-color: transparent; min-height: 34px;
@@ -779,7 +779,7 @@ body.light .tab-nav {
 .search-row input {
   width: 100%; border: 1px solid var(--border-2); border-radius: 20px;
   padding: 0.5rem 1rem 0.5rem 2.25rem;
-  font-size: var(--text-base); font-family: 'DM Sans', sans-serif;
+  font-size: var(--text-base); font-family: var(--font-ui);
   background: var(--surface-2); color: var(--text);
   outline: none; -webkit-appearance: none; transition: border-color 0.18s;
   box-sizing: border-box; min-height: 42px;
@@ -807,12 +807,12 @@ body.light .tab-nav {
   background: var(--surface-2);
 }
 .progress-panel-title {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.6rem; font-weight: 700; letter-spacing: 0.1em;
   text-transform: uppercase; color: var(--muted);
 }
 .progress-panel-total {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.6rem; color: var(--muted);
 }
 .progress-level-row {
@@ -822,7 +822,7 @@ body.light .tab-nav {
 }
 .progress-level-row:last-child { border-bottom: none; }
 .progress-lv-badge {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.62rem; font-weight: 700;
   width: 26px; text-align: center; flex-shrink: 0;
 }
@@ -835,9 +835,9 @@ body.light .tab-nav {
   flex: 1; height: 6px; background: var(--surface-3);
   border-radius: 99px; overflow: hidden; display: flex;
 }
-.plv-mature   { background: #34D399; height: 100%; transition: width 0.6s ease; }
-.plv-young    { background: #60A5FA; height: 100%; transition: width 0.6s ease; }
-.plv-learning { background: #FBBF24; height: 100%; transition: width 0.6s ease; }
+.plv-mature   { background: var(--accent-green); height: 100%; transition: width 0.6s ease; }
+.plv-young    { background: var(--accent-cool);  height: 100%; transition: width 0.6s ease; }
+.plv-learning { background: var(--gold);          height: 100%; transition: width 0.6s ease; }
 
 /* Progress legend */
 .progress-legend {
@@ -847,15 +847,15 @@ body.light .tab-nav {
 }
 .leg-item {
   display: flex; align-items: center; gap: 0.3rem;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.58rem; color: var(--muted); letter-spacing: 0.04em;
 }
 .leg-dot {
   width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0;
 }
-.leg-dot.mature   { background: #34D399; }
-.leg-dot.young    { background: #60A5FA; }
-.leg-dot.learning { background: #FBBF24; }
+.leg-dot.mature   { background: var(--accent-green); }
+.leg-dot.young    { background: var(--accent-cool); }
+.leg-dot.learning { background: var(--gold); }
 .leg-dot.unseen   { background: var(--surface-3); border: 1px solid var(--border-2); }
 
 /* Due today banner inside progress panel */
@@ -872,7 +872,7 @@ body.light .tab-nav {
   background: var(--n3-dim); color: var(--n3);
   border: 1px solid var(--n3-border); border-radius: 20px;
   padding: 0.3rem 0.75rem; font-size: var(--text-xs);
-  font-weight: 700; font-family: 'DM Sans', sans-serif;
+  font-weight: 700; font-family: var(--font-ui);
   cursor: pointer; white-space: nowrap;
   -webkit-tap-highlight-color: transparent;
   transition: all 0.15s;
@@ -896,19 +896,19 @@ body.light .tab-nav {
 .qr-left { display: flex; align-items: center; gap: 0.75rem; }
 .qr-icon { font-size: 1.6rem; line-height: 1; }
 .qr-title {
-  font-family: 'BIZ UDGothic', sans-serif;
+  font-family: var(--font-jp);
   font-size: 1rem; font-weight: 700; color: white; line-height: 1.2;
 }
 .qr-sub {
   font-size: var(--text-xs); color: rgba(255,255,255,0.75);
-  font-family: 'DM Sans', sans-serif; margin-top: 0.1rem;
+  font-family: var(--font-ui); margin-top: 0.1rem;
 }
 .qr-btn {
   background: rgba(255,255,255,0.18);
   border: 1.5px solid rgba(255,255,255,0.35);
   color: white; border-radius: 10px;
   padding: 0.6rem 1rem; font-size: var(--text-sm); font-weight: 700;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-ui);
   cursor: pointer; white-space: nowrap;
   -webkit-tap-highlight-color: transparent;
   transition: background 0.15s;
@@ -921,14 +921,14 @@ body.light .tab-nav {
   display: flex; align-items: center; gap: 0.6rem;
   margin: 0.75rem 0 1rem;
   color: var(--muted); font-size: var(--text-xs);
-  font-family: 'DM Sans', sans-serif; letter-spacing: 0.08em;
+  font-family: var(--font-ui); letter-spacing: 0.08em;
 }
 .quiz-section-divider::before, .quiz-section-divider::after {
   content: ''; flex: 1; height: 1px; background: var(--border-2);
 }
 
 .progress-lv-count {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.6rem; color: var(--muted);
   white-space: nowrap; flex-shrink: 0;
 }
@@ -941,7 +941,7 @@ body.light .tab-nav {
   font-size: var(--text-xs); color: var(--muted);
   border-bottom: 1px solid var(--border);
   background: var(--surface);
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-ui);
 }
 .stats strong { color: var(--n3); }
 
@@ -961,9 +961,9 @@ body.light .tab-nav {
 .section-header.n3 { color: var(--n3); }
 .section-header.n4 { color: var(--n4); }
 .section-header.n5 { color: var(--n5); }
-.section-title { font-family: 'BIZ UDGothic', sans-serif; font-size: var(--text-md); font-weight: 700; }
+.section-title { font-family: var(--font-jp); font-size: var(--text-md); font-weight: 700; }
 .section-count {
-  font-family: 'DM Sans', sans-serif; font-size: 0.6rem; font-weight: 700;
+  font-family: var(--font-ui); font-size: 0.6rem; font-weight: 700;
   background: currentColor; color: var(--bg) !important;
   border-radius: 999px; padding: 0.1rem 0.55rem;
 }
@@ -1010,13 +1010,13 @@ body.light .tab-nav {
 
 /* Front face */
 .card-grammar {
-  font-family: 'BIZ UDGothic', sans-serif;
+  font-family: var(--font-jp);
   font-size: 1.35rem; font-weight: 700; line-height: 1.3;
   margin-bottom: 0.15rem; padding-right: 1.4rem;
   color: var(--text);
 }
 .card-reading {
-  font-family: 'DM Sans', sans-serif; font-size: 0.68rem;
+  font-family: var(--font-ui); font-size: 0.68rem;
   color: var(--muted); font-style: italic; margin-bottom: 0.5rem;
 }
 .card-meaning {
@@ -1024,7 +1024,7 @@ body.light .tab-nav {
   margin-bottom: 0.5rem; color: var(--text);
 }
 .card-connection {
-  font-family: 'DM Sans', sans-serif; font-size: 0.65rem;
+  font-family: var(--font-ui); font-size: 0.65rem;
   font-weight: 700;
   border-radius: 5px; padding: 0.26rem 0.6rem;
   margin-bottom: 0.5rem; display: inline-block; line-height: 1.4;
@@ -1050,7 +1050,7 @@ body.light .tab-nav {
   font-size: 0.6rem; font-weight: 700; letter-spacing: 0.05em;
   text-transform: uppercase;
   border-radius: 4px; padding: 0.1rem 0.45rem;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-ui);
   display: inline-flex; align-items: center;
   height: 1.6rem; line-height: 1; border: 1px solid;
 }
@@ -1061,7 +1061,7 @@ body.light .tab-nav {
 .tag.n5 { background: var(--n5-dim); color: var(--n5); border-color: var(--n5-border); }
 .flip-hint {
   font-size: 0.62rem; color: var(--muted);
-  font-family: 'DM Sans', sans-serif; opacity: 0.45;
+  font-family: var(--font-ui); opacity: 0.45;
   white-space: nowrap;
 }
 
@@ -1080,7 +1080,7 @@ body.light .tab-nav {
 .back-label {
   font-size: 0.6rem; font-weight: 700; letter-spacing: 0.1em;
   text-transform: uppercase; color: var(--muted);
-  font-family: 'DM Sans', sans-serif; flex-shrink: 0;
+  font-family: var(--font-ui); flex-shrink: 0;
   margin-bottom: 0.1rem;
 }
 .card-examples { display: flex; flex-direction: column; gap: 0.4rem; }
@@ -1166,13 +1166,13 @@ body.light .tab-nav {
 ══════════════════════════════════════ */
 .quiz-setup { padding: 1.25rem 1rem; }
 .quiz-setup h2 {
-  font-family: 'BIZ UDGothic', sans-serif;
+  font-family: var(--font-jp);
   font-size: 1.15rem; font-weight: 700; margin-bottom: 1.25rem;
   color: var(--text);
 }
 .quiz-option-group { margin-bottom: 1.1rem; }
 .quiz-option-label {
-  display: block; font-family: 'DM Sans', sans-serif;
+  display: block; font-family: var(--font-ui);
   font-size: 0.58rem; font-weight: 700; letter-spacing: 0.1em;
   text-transform: uppercase; color: var(--muted); margin-bottom: 0.5rem;
 }
@@ -1182,7 +1182,7 @@ body.light .tab-nav {
   background: var(--grad); color: white;
   font-size: var(--text-md); font-weight: 700; cursor: pointer;
   -webkit-tap-highlight-color: transparent; transition: opacity 0.15s;
-  font-family: 'BIZ UDGothic', sans-serif; letter-spacing: 0.02em;
+  font-family: var(--font-jp); letter-spacing: 0.02em;
   box-shadow: 0 4px 20px rgba(245,158,11,0.25), 0 0 0 0 rgba(245,158,11,0.15);
   border-radius: 14px;
 }
@@ -1207,14 +1207,14 @@ body.light .tab-nav {
   border-radius: 99px; transition: width 0.3s;
 }
 .quiz-progress-txt {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.62rem; color: var(--muted); white-space: nowrap;
 }
 .quiz-end-btn {
   flex-shrink: 0;
   border: 1px solid var(--border-2); border-radius: 20px;
   padding: 0.35rem 0.8rem; font-size: 0.68rem; font-weight: 700;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-ui);
   background: transparent; color: var(--muted);
   cursor: pointer; transition: all 0.15s;
   -webkit-tap-highlight-color: transparent; min-height: 34px;
@@ -1223,7 +1223,7 @@ body.light .tab-nav {
 
 .quiz-score {
   text-align: center; font-size: var(--text-sm); color: var(--muted);
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-ui);
   margin-bottom: 0.75rem; letter-spacing: 0.05em;
 }
 
@@ -1253,7 +1253,7 @@ body.light .tab-nav {
   width: 3px; border-radius: 12px 0 0 12px;
 }
 .quiz-face-label {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.6rem; font-weight: 700; letter-spacing: 0.1em;
   text-transform: uppercase; color: var(--muted);
   flex-shrink: 0; margin-bottom: 0.75rem;
@@ -1267,12 +1267,12 @@ body.light .tab-nav {
   position: absolute; top: 1rem; left: 1.25rem; margin-bottom: 0;
 }
 .qgrammar {
-  font-family: 'BIZ UDGothic', sans-serif;
+  font-family: var(--font-jp);
   font-size: clamp(1.7rem, 7vw, 2.3rem);
   font-weight: 700; line-height: 1.3; color: var(--text);
 }
 .qreading {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.78rem; color: var(--muted); font-style: italic;
 }
 .qmeaning {
@@ -1282,7 +1282,7 @@ body.light .tab-nav {
 }
 .quiz-tap-hint {
   font-size: 0.62rem; color: var(--muted);
-  font-family: 'DM Sans', sans-serif; opacity: 0.4;
+  font-family: var(--font-ui); opacity: 0.4;
   margin-top: 0.75rem;
 }
 
@@ -1343,7 +1343,7 @@ body.light .tab-nav {
 .assess-btn {
   padding: 0.85rem 0.5rem; border: 1px solid;
   border-radius: 12px; font-size: var(--text-sm); font-weight: 700; cursor: pointer;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-ui);
   -webkit-tap-highlight-color: transparent; transition: all 0.12s;
   display: flex; flex-direction: column; align-items: center; gap: 0.3rem;
   min-height: 70px; justify-content: center;
@@ -1380,11 +1380,11 @@ body.light .tab-nav {
 .mode-icon { font-size: 1.2rem; line-height: 1; }
 .mode-label {
   font-size: var(--text-sm); font-weight: 700; color: var(--text);
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-ui);
 }
 .mode-desc {
   font-size: 0.62rem; color: var(--muted);
-  font-family: 'DM Sans', sans-serif; letter-spacing: 0.03em;
+  font-family: var(--font-ui); letter-spacing: 0.03em;
 }
 .mode-btn.active .mode-label { color: var(--accent); }
 /* AI quiz mode button (Phase 5.5b — only visible when feature flag on) */
@@ -1417,7 +1417,7 @@ body.light .tab-nav {
 }
 .fill-level-badge {
   display: inline-block;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.65rem; font-weight: 700;
   padding: 0.15rem 0.55rem; border-radius: 20px;
   margin-bottom: 0.85rem;
@@ -1426,7 +1426,7 @@ body.light .tab-nav {
   letter-spacing: 0.08em;
 }
 .fill-sentence {
-  font-family: 'BIZ UDGothic', sans-serif;
+  font-family: var(--font-jp);
   font-size: 1.2rem; line-height: 1.9;
   color: var(--text); margin-bottom: 0.5rem;
   word-break: break-all;
@@ -1444,7 +1444,7 @@ body.light .tab-nav {
 
 .fill-grammar-hint {
   font-size: var(--text-xs); color: var(--muted);
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-ui);
   margin-bottom: 1rem; letter-spacing: 0.03em;
 }
 
@@ -1457,7 +1457,7 @@ body.light .tab-nav {
   padding: 0.75rem 0.6rem;
   border-radius: 10px; border: 1.5px solid var(--border-2);
   background: var(--surface-2); cursor: pointer;
-  font-family: 'BIZ UDGothic', sans-serif;
+  font-family: var(--font-jp);
   font-size: 1rem; color: var(--text);
   transition: all 0.12s; text-align: center;
   -webkit-tap-highlight-color: transparent;
@@ -1493,7 +1493,7 @@ body.light .tab-nav {
   border-radius: 10px; border: none;
   background: var(--grad); color: white;
   font-size: var(--text-sm); font-weight: 700;
-  cursor: pointer; font-family: 'DM Sans', sans-serif;
+  cursor: pointer; font-family: var(--font-ui);
   -webkit-tap-highlight-color: transparent;
   transition: opacity 0.15s;
 }
@@ -1546,18 +1546,18 @@ body.light .tab-nav {
   position: relative; z-index: 1; text-align: center;
 }
 .result-pct {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-ui);
   font-size: 1.8rem; font-weight: 700; color: var(--text);
   line-height: 1;
 }
 .result-pct-label {
   font-size: 0.62rem; color: var(--muted);
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-ui);
   letter-spacing: 0.08em; text-transform: uppercase;
 }
 
 .result-title {
-  font-family: 'BIZ UDGothic', sans-serif;
+  font-family: var(--font-jp);
   font-size: 1.4rem; font-weight: 700; color: var(--text);
   margin-bottom: 0.4rem;
   animation: fadeUp 0.4s 0.3s both;
@@ -1586,7 +1586,7 @@ body.light .tab-nav {
 .rs-item.unsure { background: rgba(251,191,36,0.08);  border-color: rgba(251,191,36,0.25); }
 .rs-item.forgot { background: rgba(248,113,113,0.08); border-color: rgba(248,113,113,0.25); }
 .rs-num {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-ui);
   font-size: 1.75rem; font-weight: 700; line-height: 1;
   transition: all 0.3s;
 }
@@ -1608,7 +1608,7 @@ body.light .tab-nav {
 .srs-hint-icon { font-size: 1rem; flex-shrink: 0; }
 
 .result-total {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.68rem; color: var(--muted); margin-bottom: 1.5rem;
 }
 .retry-btn {
@@ -1616,7 +1616,7 @@ body.light .tab-nav {
   padding: 0.9rem; border-radius: 10px; border: none;
   background: var(--grad); color: white;
   font-size: var(--text-base); font-weight: 700; cursor: pointer;
-  margin-bottom: 0.6rem; font-family: 'BIZ UDGothic', sans-serif;
+  margin-bottom: 0.6rem; font-family: var(--font-jp);
   -webkit-tap-highlight-color: transparent; transition: opacity 0.15s;
   box-shadow: 0 4px 16px rgba(245,158,11,0.25);
   animation: fadeUp 0.4s 0.7s both;
@@ -1690,7 +1690,7 @@ body.light .tab-nav {
    REARRANGE QUIZ
 ══════════════════════════════════════ */
 .rea-sentence {
-  font-size: var(--text-md); font-family: 'BIZ UDGothic', sans-serif;
+  font-size: var(--text-md); font-family: var(--font-jp);
   line-height: 1.9; color: var(--text);
   margin-bottom: 1rem;
 }
@@ -1707,7 +1707,7 @@ body.light .tab-nav {
 }
 .rea-hint {
   font-size: var(--text-sm); color: var(--muted);
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-ui);
   margin-bottom: 0.75rem;
 }
 .rea-parts {
@@ -1718,7 +1718,7 @@ body.light .tab-nav {
   padding: 0.65rem 0.75rem;
   border-radius: 10px; border: 1.5px solid var(--border-2);
   background: var(--surface-2); cursor: pointer;
-  font-size: var(--text-sm); font-family: 'BIZ UDGothic', sans-serif;
+  font-size: var(--text-sm); font-family: var(--font-jp);
   color: var(--text); text-align: left;
   transition: all 0.15s;
   -webkit-tap-highlight-color: transparent;
@@ -1727,11 +1727,11 @@ body.light .tab-nav {
 .rea-part-btn.correct { border-color: var(--n3); background: rgba(16,185,129,0.12); color: var(--n3); }
 .rea-part-btn.wrong   { border-color: var(--n4); background: rgba(248,113,113,0.12); color: var(--n4); }
 .rea-part-btn:disabled { cursor: default; }
-.rea-order-label { font-size: 0.65rem; color: var(--muted); font-family: 'DM Sans', sans-serif; text-transform: uppercase; }
+.rea-order-label { font-size: 0.65rem; color: var(--muted); font-family: var(--font-ui); text-transform: uppercase; }
 .rea-correct-order {
   font-size: var(--text-sm); color: var(--text);
   margin: 0.4rem 0 0.6rem;
-  font-family: 'BIZ UDGothic', sans-serif;
+  font-family: var(--font-jp);
   line-height: 1.6;
 }
 /* ══════════════════════════════════════════════════════════════
@@ -1779,7 +1779,7 @@ body.light {
   border-radius: 20px;
   padding: 0.22rem 0.7rem;
   background: transparent;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.62rem;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -1821,7 +1821,7 @@ body.light {
 /* Grammar pattern tag — label utama */
 .qfb-grammar-tag {
   display: inline-block;
-  font-family: 'BIZ UDGothic', sans-serif;
+  font-family: var(--font-jp);
   font-size: 0.78rem;
   font-weight: 700;
   background: var(--surface-3, var(--surface-2));
@@ -1836,7 +1836,7 @@ body.light {
 /* Hasil konjugasi — label sekunder */
 .qfb-result-tag {
   display: inline-block;
-  font-family: 'BIZ UDGothic', sans-serif;
+  font-family: var(--font-jp);
   font-size: 0.78rem;
   font-weight: 700;
   background: transparent;
@@ -1891,7 +1891,7 @@ body.light {
   border-left: 3px solid var(--accent);
 }
 .qfb-sentence-label {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.58rem;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -1905,7 +1905,7 @@ body.light {
   gap: 0.45rem;
 }
 .qfb-sentence-jp {
-  font-family: 'BIZ UDGothic', sans-serif;
+  font-family: var(--font-jp);
   font-size: 1.05rem;
   line-height: 1.9;
   color: var(--text);
@@ -3076,7 +3076,7 @@ body.light {
   background: transparent;
   color: var(--muted);
   cursor: pointer;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-ui);
   text-transform: uppercase;
   transition: all 0.15s;
 }
@@ -3582,7 +3582,7 @@ body.light {
   width: 100%; padding: 0.85rem;
   background: transparent; border: 1px dashed var(--border-2);
   border-radius: 12px; color: var(--muted);
-  font-size: var(--text-sm); font-family: 'DM Sans', sans-serif;
+  font-size: var(--text-sm); font-family: var(--font-ui);
   cursor: pointer; transition: color 0.15s, border-color 0.15s;
 }
 .hub-see-all:hover { color: var(--text); border-color: var(--accent); }
@@ -3595,7 +3595,7 @@ body.light {
 .hub-back-btn {
   background: var(--surface-2); border: 1px solid var(--border);
   border-radius: 8px; padding: 0.4rem 0.85rem;
-  font-size: var(--text-sm); font-family: 'DM Sans', sans-serif;
+  font-size: var(--text-sm); font-family: var(--font-ui);
   color: var(--text); cursor: pointer; white-space: nowrap;
   -webkit-tap-highlight-color: transparent;
 }
@@ -3628,7 +3628,7 @@ body.light {
   padding: clamp(0.8rem, 3vw, 1.2rem) 0.75rem;
   background: var(--surface); border: 2px solid var(--border);
   border-radius: 14px; cursor: pointer; transition: border-color 0.15s, transform 0.1s;
-  font-family: 'DM Sans', sans-serif; text-align: center;
+  font-family: var(--font-ui); text-align: center;
   -webkit-tap-highlight-color: transparent;
   width: 100%;
 }
@@ -3677,7 +3677,7 @@ body.light {
   padding: 1rem; background: var(--surface);
   border: 2px solid var(--border); border-radius: 14px;
   cursor: pointer; transition: border-color 0.15s, transform 0.1s;
-  font-family: 'DM Sans', sans-serif; text-align: left;
+  font-family: var(--font-ui); text-align: left;
   -webkit-tap-highlight-color: transparent;
 }
 .hub-series-card:not(.hub-series-card--soon):active { transform: scale(0.97); }
@@ -3709,7 +3709,7 @@ body.light {
   background: var(--surface); border: 1px solid var(--border);
   border-radius: 10px; cursor: pointer;
   transition: border-color 0.15s, transform 0.1s;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-ui);
   -webkit-tap-highlight-color: transparent;
 }
 .chapter-card:active  { transform: scale(0.95); }
