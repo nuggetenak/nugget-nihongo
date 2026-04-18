@@ -236,6 +236,7 @@ function _showPanel(id) {
 // ── Result screen ─────────────────────────────────────
 function _showResult() {
   _hideAll();
+  if (window.recordQuizStat) window.recordQuizStat('mixed', mxCorrect, mxDeck.length);
   const total = mxDeck.length;
   const pct   = total ? Math.round(mxCorrect / total * 100) : 0;
 

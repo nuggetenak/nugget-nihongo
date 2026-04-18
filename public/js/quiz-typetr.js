@@ -204,6 +204,7 @@ function showTtrResult() {
   document.getElementById('ttrResultPct').textContent     = `${pct}%`;
   document.getElementById('ttrResultEmoji').textContent   = emoji;
   document.getElementById('typeTrResult').style.display  = 'block';
+  if (window.recordQuizStat) window.recordQuizStat('typetr', correct, total);
 }
 
 window.ttrRestart = function() {

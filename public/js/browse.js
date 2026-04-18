@@ -514,7 +514,7 @@ function updateProgressPanel() {
   const realData = data.filter(d => d.cat !== 'dummy');
 
   // Count anything that's been touched
-  const seen = realData.filter(d => srs[d.id] && srs[d.id].reps > 0);
+  const seen = realData.filter(d => srs[d.id] && srs[d.id].card && srs[d.id].card.reps > 0);
   if (!seen.length) { panel.classList.remove('show'); updateQuickReviewCard(); return; }
   panel.classList.add('show');
 
@@ -524,9 +524,11 @@ function updateProgressPanel() {
     `${totalSeen} / ${totalAll} dipelajari`;
 
   // Due today banner
+  const nowMs = Date.now();
   const dueAll = realData.filter(d => {
     const c = srs[d.id];
-    return !c || c.due <= today;
+    if (!c || !c.card) return true; // unseen = treat as due
+    return new Date(c.card.due).getTime() <= nowMs;
   });
   const dueBanner = document.getElementById('progressDueBanner');
   const dueCountEl = document.getElementById('dueCount');
@@ -551,10 +553,10 @@ function updateProgressPanel() {
     let mature = 0, young = 0, learning = 0;
     lvData.forEach(d => {
       const c = srs[d.id];
-      if (!c || c.reps === 0) return; // unseen
-      if (c.interval >= 21)      mature++;
-      else if (c.interval >= 7)  young++;
-      else                       learning++;
+      if (!c || !c.card || c.card.reps === 0) return; // unseen
+      if (c.card.scheduled_days >= 21)      mature++;
+      else if (c.card.scheduled_days >= 7)  young++;
+      else                                  learning++;
     });
     const done = mature + young + learning;
 

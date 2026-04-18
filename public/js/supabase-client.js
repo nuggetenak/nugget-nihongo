@@ -350,6 +350,7 @@
   // ── Expose globally ───────────────────────────────────
   window.syncProgress = _syncProgress;
   window.migrateAllToSupabase = _migrateAllToSupabase;
+  window._buildLearningDNA = _buildLearningDNA; // used by ai-tutor.js for Sensei context
 
 })();
 
