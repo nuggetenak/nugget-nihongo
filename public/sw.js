@@ -4,7 +4,7 @@
 //  network-first for API calls (Supabase / Cloudflare Workers).
 // ══════════════════════════════════════
 
-const CACHE = 'nihongo-v15.12.1';
+const CACHE = 'nihongo-v15.12.2';
 const ASSETS = [
   './',
   './index.html',
