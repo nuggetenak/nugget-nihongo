@@ -1,0 +1,109 @@
+/* ══════════════════════════════════════════════════════════════
+   §30 Kebun Mastery — SRS Card Garden Visualization
+   Append to app.css after §29
+   ══════════════════════════════════════════════════════════════ */
+
+/* ── Legend ──────────────────────────────────────────────────── */
+.kebun-legend-btn {
+  margin-left: auto; font-size: 11px; font-weight: 700;
+  width: 20px; height: 20px; border-radius: 50%;
+  border: 1px solid var(--border-2); background: var(--surface-3);
+  color: var(--muted); cursor: pointer; line-height: 1;
+}
+.kebun-legend {
+  display: none; flex-wrap: wrap; gap: 8px;
+  padding: 10px 14px; margin-bottom: 8px;
+  background: var(--surface-2); border-radius: 10px;
+  border: 1px solid var(--border);
+}
+.kebun-legend.open { display: flex; }
+.kebun-leg-item {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 11px; color: var(--muted);
+}
+
+/* ── Source toggle ───────────────────────────────────────────── */
+.kebun-source-row {
+  display: flex; gap: 6px; margin-bottom: 10px;
+}
+.kebun-source-btn {
+  flex: 1; padding: 7px 0; border-radius: 8px;
+  border: 1px solid var(--border); background: var(--surface-2);
+  color: var(--muted); font-size: 12px; font-weight: 600;
+  cursor: pointer; font-family: inherit;
+  transition: background 0.15s, color 0.15s;
+}
+.kebun-source-btn.active {
+  background: var(--surface-4); color: var(--text-bright);
+  border-color: var(--border-2);
+}
+
+/* ── Level pills ─────────────────────────────────────────────── */
+.kebun-level-pills {
+  display: flex; gap: 6px; margin-bottom: 10px;
+  overflow-x: auto; scrollbar-width: none;
+}
+.kebun-level-pills::-webkit-scrollbar { display: none; }
+.kebun-level-btn {
+  flex-shrink: 0; padding: 4px 12px;
+  border-radius: 100px; border: 1px solid var(--border);
+  background: var(--surface-2); color: var(--muted);
+  font-size: 11px; font-weight: 700; cursor: pointer;
+  font-family: inherit; transition: background 0.15s, color 0.15s;
+}
+.kebun-level-btn.active {
+  background: var(--accent); color: #000; border-color: var(--accent);
+}
+
+/* ── Stats bar ───────────────────────────────────────────────── */
+.kebun-stats-bar {
+  display: flex; gap: 10px; align-items: center;
+  font-size: 12px; padding: 8px 2px; margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+.kebun-stat { display: flex; align-items: baseline; gap: 2px; }
+.kebun-stat-val { font-size: 15px; font-weight: 700; font-family: var(--font-mono); }
+.kebun-stat-lbl { color: var(--muted); }
+.kebun-stat-sep { color: var(--muted-2); font-size: 10px; }
+
+/* ── Grid ────────────────────────────────────────────────────── */
+.kebun-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(52px, 1fr));
+  gap: 6px;
+  padding-bottom: 8px;
+}
+
+/* ── Cell ────────────────────────────────────────────────────── */
+.kebun-cell {
+  display: flex; flex-direction: column; align-items: center;
+  gap: 3px; padding: 8px 4px 6px;
+  border-radius: 10px; border: 1px solid var(--border);
+  background: var(--surface-2); cursor: pointer;
+  font-family: inherit;
+  transition: background 0.15s, transform 0.1s;
+  -webkit-tap-highlight-color: transparent;
+}
+.kebun-cell:active { transform: scale(0.92); background: var(--surface-3); }
+
+/* State-based cell backgrounds */
+.kebun-cell--unseen   { opacity: 0.55; }
+.kebun-cell--learning { border-color: rgba(245,158,11,0.25); }
+.kebun-cell--young    { border-color: rgba(251,146,60,0.25); }
+.kebun-cell--mature   { border-color: rgba(74,222,128,0.25); background: rgba(74,222,128,0.04); }
+.kebun-cell--lapsing  { border-color: rgba(251,191,36,0.25); background: rgba(251,191,36,0.03); }
+
+.kebun-plant { width: 28px; height: 28px; flex-shrink: 0; }
+.kebun-cell-label {
+  font-size: 9px; font-family: var(--font-jp);
+  text-align: center; line-height: 1.2;
+  max-width: 48px; overflow: hidden; text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ── Empty state ─────────────────────────────────────────────── */
+.kebun-empty {
+  grid-column: 1 / -1; text-align: center;
+  padding: 32px 16px; color: var(--muted);
+  font-size: var(--text-sm);
+}
