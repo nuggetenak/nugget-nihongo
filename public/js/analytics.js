@@ -292,24 +292,28 @@ function _renderWeakPoints() {
     return;
   }
 
-  // ── "Latihan sekarang" button for entire weak set ─────────────
+  // Clear before (re)building — initAnalytics() can be called multiple times
+  container.innerHTML = '';
+
+  // Count grammar cards eligible for quiz (vocab excluded from deck)
+  const grammarDeck = topIds
+    .map(id => grammarMap.get(id))
+    .filter(c => c && (c.grammar || c.pattern));
+  const deckCount = grammarDeck.length;
+
+  // ── Single "Latihan" button with specific count ───────────────
   const launchBtn = document.createElement('button');
   launchBtn.className = 'perlu-quiz-btn';
-  launchBtn.innerHTML = `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg> Latihan sekarang`;
+  launchBtn.innerHTML =
+    `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>` +
+    ` Latihan ${deckCount} pola lemah`;
   launchBtn.onclick = () => {
-    // Build deck from topIds — grammar only (vocab routed to openVocabDetail)
-    const deck = topIds
-      .map(id => grammarMap.get(id))
-      .filter(c => c && c.grammar); // grammar cards only
-    if (!deck.length) return;
-    // Switch to quiz tab and start
+    if (!grammarDeck.length) return;
     const quizTab = document.querySelector('[aria-label="Latihan"]');
     if (quizTab) quizTab.click();
-    setTimeout(() => {
-      if (window.startQuiz) window.startQuiz(deck);
-    }, 120);
+    setTimeout(() => { if (window.startQuiz) window.startQuiz(grammarDeck); }, 120);
   };
-  container.insertBefore(launchBtn, container.firstChild);
+  container.appendChild(launchBtn);
 
   topIds.forEach(id => {
     const card = grammarMap.get(id);
@@ -319,7 +323,10 @@ function _renderWeakPoints() {
     const level  = (card.level || card.jlpt || 'n5').toLowerCase();
     const rEntry = lowR.find(x => x.id === id);
     const acc    = rEntry ? Math.round(rEntry.r * 100) : null;
-    const accColor = acc !== null ? (acc < 50 ? 'var(--n4)' : acc < 70 ? 'var(--n3)' : 'var(--muted)') : 'var(--muted)';
+    const accColor = acc !== null ? (acc < 50 ? 'var(--n1)' : acc < 70 ? 'var(--n4)' : 'var(--muted)') : 'var(--muted)';
+    const accLabel = acc !== null
+      ? (acc < 40 ? 'Hampir lupa' : acc < 60 ? 'Mulai pudar' : acc < 80 ? 'Perlu review' : '')
+      : 'Belum diulas';
 
     const btn = document.createElement('button');
     btn.className = 'perlu-item';
@@ -333,7 +340,10 @@ function _renderWeakPoints() {
     };
     btn.innerHTML = `
       <span class="perlu-dot" style="background:var(--${level})"></span>
-      <span class="perlu-pattern jp">${_escHtml(label)}</span>
+      <span class="perlu-body">
+        <span class="perlu-pattern jp">${_escHtml(label)}</span>
+        ${accLabel ? `<span class="perlu-state" style="color:${accColor}">${accLabel}</span>` : ''}
+      </span>
       ${acc !== null ? `<span class="perlu-acc" style="color:${accColor}">${acc}%</span>` : ''}
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--muted)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
     `;
