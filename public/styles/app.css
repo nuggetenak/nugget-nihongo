@@ -490,33 +490,38 @@ header::before {
   pointer-events: none; line-height: 1; z-index: 0;
 }
 .header-inner {
-  padding: 0.65rem 1rem;
+  padding: 14px 16px 12px;
   position: relative; z-index: 1;
-  display: flex; align-items: center; justify-content: space-between; gap: 0.75rem;
+  display: flex; align-items: center; gap: 12px;
 }
-/* Logo avatar — "N" circle */
+/* Logo avatar — "N" square */
 .header-logo {
-  width: 38px; height: 38px; border-radius: 12px;
+  width: 44px; height: 44px; border-radius: 14px;
   background: var(--grad);
   display: flex; align-items: center; justify-content: center;
-  font-weight: 800; color: #1a0f00; font-size: 1.1rem;
+  font-weight: 800; color: #1a0f00; font-size: 1.25rem;
   box-shadow: var(--shadow-glow);
   flex-shrink: 0;
 }
 .header-title-wrap { flex: 1; min-width: 0; }
 .header-title-wrap h1 {
   font-family: var(--font-ui);
-  font-size: 0.95rem; font-weight: 700;
+  font-size: 1.05rem; font-weight: 800;
   color: var(--text-bright, var(--text));
-  line-height: 1.2; margin: 0;
-  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  line-height: 1.2; margin: 0; letter-spacing: -0.01em;
 }
 .header-title-wrap p {
-  font-size: 0.62rem; color: var(--muted);
-  margin: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  font-size: 0.7rem; color: var(--muted);
+  margin: 0; margin-top: 1px;
 }
 .header-actions {
-  display: flex; align-items: center; gap: 0.4rem; flex-shrink: 0;
+  display: flex; align-items: center; gap: 6px; flex-shrink: 0;
+}
+/* Search button — rounded square like Claude Design */
+.gs-trigger-btn.icon-btn {
+  width: 38px; height: 38px; border-radius: 12px;
+  background: var(--surface-2); border: 1px solid var(--border-2);
+  display: flex; align-items: center; justify-content: center;
 }
 /* Keep old classes working */
 .header-top-row { display: flex; align-items: center; gap: 0.75rem; flex: 1; }
@@ -4539,4 +4544,194 @@ html[data-furigana="auto"]   .n1 rt { display: none; }
   font-size: 11px; font-weight: 700; letter-spacing: 0.1em;
   text-transform: uppercase; color: var(--muted);
   padding: 18px 0 8px;
+}
+
+/* ══════════════════════════════════════
+   §26 BUKU ACCORDION (Jalur Buku redesign)
+══════════════════════════════════════ */
+
+.buku-accordion-wrap {
+  padding: 0 16px 100px;
+  display: flex; flex-direction: column;
+}
+.buku-back-row {
+  display: flex; align-items: center; gap: 10px;
+  padding: 12px 0 4px;
+}
+.buku-back-btn {
+  background: var(--surface-2); border: 1px solid var(--border);
+  border-radius: 10px; padding: 6px 10px;
+  font-size: 12px; font-weight: 600; color: var(--muted);
+  cursor: pointer; font-family: inherit;
+  display: flex; align-items: center; gap: 6px;
+}
+.buku-back-label { font-size: 13px; color: var(--muted); }
+.buku-eyebrow {
+  font-size: 11px; font-weight: 700; letter-spacing: 0.14em;
+  color: var(--accent-hot); text-transform: uppercase;
+  margin-top: 14px; margin-bottom: 4px;
+}
+.buku-title {
+  font-size: 22px; font-weight: 800; color: var(--text-bright);
+  margin: 0 0 6px; letter-spacing: -0.02em;
+}
+.buku-sub { font-size: 13px; color: var(--muted); margin: 0 0 18px; }
+
+/* Series accordion card */
+.buku-series-accordion {
+  border: 1px solid var(--border-2); border-radius: 16px;
+  background: var(--surface); margin-bottom: 10px;
+  overflow: hidden; transition: border-color 0.2s;
+}
+.buku-series-accordion.open { border-color: var(--border-strong); }
+
+.buku-series-hdr {
+  width: 100%; display: flex; align-items: center; gap: 12px;
+  padding: 14px 16px; background: transparent; border: 0;
+  cursor: pointer; font-family: inherit; text-align: left;
+  color: var(--text); -webkit-tap-highlight-color: transparent;
+}
+.buku-series-icon {
+  width: 48px; height: 48px; border-radius: 14px;
+  background: var(--surface-2); border: 1px solid var(--border-2);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.buku-series-info { flex: 1; min-width: 0; }
+.buku-series-name-row {
+  display: flex; align-items: center; gap: 8px; margin-bottom: 2px;
+}
+.buku-series-name { font-size: 15px; font-weight: 700; color: var(--text-bright); }
+.buku-series-badge {
+  font-size: 9px; font-weight: 700; letter-spacing: 0.06em;
+  padding: 2px 7px; border-radius: 100px;
+  background: var(--surface-3); color: var(--muted);
+}
+.buku-series-sub { font-size: 11px; color: var(--muted); }
+.buku-series-prog-wrap {
+  height: 3px; border-radius: 100px; background: var(--surface-3);
+  margin: 7px 0 4px; overflow: hidden;
+}
+.buku-series-prog-bar {
+  height: 100%; border-radius: 100px; background: var(--accent);
+  transition: width 0.6s cubic-bezier(0.34,1.56,0.64,1);
+}
+.buku-series-count { font-size: 10px; color: var(--muted); font-family: var(--font-mono); text-align: right; }
+.buku-series-chevron {
+  color: var(--muted); flex-shrink: 0;
+  transition: transform 0.2s;
+}
+.buku-series-accordion.open .buku-series-chevron { transform: rotate(180deg); }
+
+/* Volumes list (expanded) */
+.buku-volumes-list {
+  border-top: 1px solid var(--border);
+  background: var(--surface-2);
+  padding: 6px 10px 8px;
+  display: flex; flex-direction: column; gap: 4px;
+  animation: float-in 0.18s ease;
+}
+.buku-volume-row {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 12px; border-radius: 12px;
+  background: var(--surface); border: 1px solid var(--border-2);
+  cursor: pointer; font-family: inherit; color: var(--text);
+  text-align: left; -webkit-tap-highlight-color: transparent;
+  transition: background 0.15s;
+}
+.buku-volume-row:active { background: var(--surface-3); }
+.buku-volume-row--soon { cursor: default; opacity: 0.5; background: transparent !important; }
+.buku-vol-dot {
+  width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;
+}
+.buku-vol-dot.n5 { background: var(--n5); }
+.buku-vol-dot.n4 { background: var(--n4); }
+.buku-vol-dot.n3 { background: var(--n3); }
+.buku-vol-dot.n2 { background: var(--n2); }
+.buku-vol-dot.n1 { background: var(--n1); }
+.buku-vol-body { flex: 1; min-width: 0; }
+.buku-vol-label { font-size: 13px; font-weight: 700; color: var(--text-bright); display: block; }
+.buku-vol-bar-wrap {
+  height: 3px; border-radius: 100px; background: var(--surface-3);
+  margin-top: 5px; overflow: hidden;
+}
+.buku-vol-bar {
+  height: 100%; border-radius: 100px;
+}
+.buku-vol-bar.n5 { background: var(--n5); }
+.buku-vol-bar.n4 { background: var(--n4); }
+.buku-vol-bar.n3 { background: var(--n3); }
+.buku-vol-bar.n2 { background: var(--n2); }
+.buku-vol-bar.n1 { background: var(--n1); }
+.buku-vol-count {
+  font-size: 11px; color: var(--muted); font-family: var(--font-mono);
+  flex-shrink: 0;
+}
+.buku-vol-soon {
+  font-size: 9px; font-weight: 700; letter-spacing: 0.06em;
+  padding: 2px 6px; border-radius: 100px;
+  background: var(--surface-3); color: var(--muted);
+}
+
+/* ══════════════════════════════════════
+   §27 MS-ICON-WRAP AMBER (Lainnya icons)
+══════════════════════════════════════ */
+.ms-icon-wrap--amber {
+  background: color-mix(in oklab, var(--accent) 15%, var(--surface-2));
+  border-color: color-mix(in oklab, var(--accent) 28%, transparent);
+  color: var(--accent-hot);
+}
+
+/* ══════════════════════════════════════
+   §28 HUB HERO TEXT (Claude Design ss7)
+   Replaces boxed hub2-hero card
+══════════════════════════════════════ */
+.hub2-hero-text {
+  padding: 4px 0 18px;
+}
+.hub2-hero-eyebrow {
+  font-size: 11px; font-weight: 700; letter-spacing: 0.14em;
+  color: var(--accent-hot); text-transform: uppercase; margin-bottom: 6px;
+}
+.hub2-hero-h2 {
+  font-size: 22px; font-weight: 800; color: var(--text-bright);
+  margin: 0 0 8px; letter-spacing: -0.02em; line-height: 1.15;
+}
+.hub2-hero-p {
+  font-size: 13px; color: var(--muted); margin: 0; line-height: 1.5; max-width: 300px;
+}
+
+/* Hub wrap — ensure bottom padding for last item not touching nav */
+.hub2-wrap {
+  padding: 0 16px 120px;
+  display: flex; flex-direction: column;
+}
+
+/* ══════════════════════════════════════
+   §29 WEAK POINTS (Perlu Perhatian)
+══════════════════════════════════════ */
+.weak-point-row {
+  display: flex; align-items: center; gap: 10px;
+  padding: 12px 14px; cursor: pointer;
+  border-bottom: 1px solid var(--border);
+  transition: background 0.15s;
+  -webkit-tap-highlight-color: transparent;
+}
+.weak-point-row:last-child { border-bottom: none; }
+.weak-point-row:active { background: var(--surface-2); }
+.weak-dot {
+  width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;
+}
+.weak-body { flex: 1; min-width: 0; }
+.weak-grammar {
+  font-size: 15px; font-weight: 700; color: var(--text-bright);
+  font-family: var(--font-jp);
+}
+.weak-meaning {
+  font-size: 11px; color: var(--muted); margin-top: 2px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.weak-acc {
+  font-size: 13px; font-weight: 700; font-family: var(--font-mono);
+  flex-shrink: 0;
 }

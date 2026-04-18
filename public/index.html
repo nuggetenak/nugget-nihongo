@@ -1088,6 +1088,12 @@
       </div>
     </div>
 
+    <!-- Perlu Perhatian — weak grammar points from SRS data -->
+    <div class="stat-section" id="weakPointsSection" style="display:none">
+      <div class="stat-section-title">PERLU PERHATIAN</div>
+      <div id="weakPointsList"></div>
+    </div>
+
   </div>
 
 </div><!-- end statsPage -->
@@ -1307,35 +1313,75 @@
       </button>
     </div>
 
-    <!-- Nav items -->
+    <!-- Nav items — Claude Design style (ss8) -->
     <div class="ms-divider"></div>
     <div class="ms-item" onclick="_moreNavTo('settings')">
-      <div class="ms-icon-wrap">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>
+      <div class="ms-icon-wrap ms-icon-wrap--amber">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
       </div>
       <div class="ms-item-text">
         <div class="ms-label">Pengaturan</div>
-        <div class="ms-sub">Furigana, kecepatan SRS, notifikasi</div>
+        <div class="ms-sub">Font, furigana, romaji</div>
       </div>
       <svg class="ms-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
     </div>
-    <div class="ms-item" onclick="_moreNavTo('about')">
-      <div class="ms-icon-wrap">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+    <div class="ms-item" onclick="closeMoreSheet()">
+      <div class="ms-icon-wrap ms-icon-wrap--amber">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg>
       </div>
       <div class="ms-item-text">
-        <div class="ms-label">Tentang Aplikasi</div>
-        <div class="ms-sub">Metodologi, atribusi, versi</div>
+        <div class="ms-label">Kartu disimpan</div>
+        <div class="ms-sub" id="msSavedCount">—</div>
+      </div>
+      <svg class="ms-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+    <div class="ms-item" onclick="closeMoreSheet()">
+      <div class="ms-icon-wrap ms-icon-wrap--amber">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7v6a9 9 0 0 0 18 0V7"/><polyline points="3 7 12 3 21 7"/></svg>
+      </div>
+      <div class="ms-item-text">
+        <div class="ms-label">Riwayat review</div>
+        <div class="ms-sub">Review terakhir kamu</div>
       </div>
       <svg class="ms-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
     </div>
     <div class="ms-item" onclick="showInstallModal();closeMoreSheet()">
-      <div class="ms-icon-wrap">
+      <div class="ms-icon-wrap ms-icon-wrap--amber">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
       </div>
       <div class="ms-item-text">
-        <div class="ms-label">Install Aplikasi</div>
-        <div class="ms-sub">Simpan ke home screen, works offline</div>
+        <div class="ms-label">Install aplikasi</div>
+        <div class="ms-sub">Tambah ke home screen</div>
+      </div>
+      <svg class="ms-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+    <div class="ms-item" onclick="closeMoreSheet()">
+      <div class="ms-icon-wrap ms-icon-wrap--amber">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>
+      </div>
+      <div class="ms-item-text">
+        <div class="ms-label">Eksperimen</div>
+        <div class="ms-sub">AI Quiz (beta)</div>
+      </div>
+      <svg class="ms-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+    <div class="ms-item" onclick="closeMoreSheet()">
+      <div class="ms-icon-wrap ms-icon-wrap--amber">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+      </div>
+      <div class="ms-item-text">
+        <div class="ms-label">Lihat onboarding</div>
+        <div class="ms-sub">Tur ulang fitur</div>
+      </div>
+      <svg class="ms-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+    <div class="ms-item" onclick="_moreNavTo('about')">
+      <div class="ms-icon-wrap ms-icon-wrap--amber">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      </div>
+      <div class="ms-item-text">
+        <div class="ms-label">Tentang Nugget</div>
+        <div class="ms-sub" id="msVersionLabel">v2026.04 · dibuat dengan 🍵</div>
       </div>
       <svg class="ms-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
     </div>

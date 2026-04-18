@@ -223,44 +223,40 @@
     panel.innerHTML =
       '<div class="hub2-wrap">'
 
-      // Hero greeting card
-      + '<div class="hub2-hero">'
-      + '<div class="hub2-hero-glyph">学</div>'
-      + '<div class="hub2-hero-label">Selamat datang kembali</div>'
-      + '<div class="hub2-hero-title">Mau lewat mana hari ini?</div>'
-      + '<div class="hub2-hero-sub">Pilih jalur yang paling cocok buat mood belajar kamu sekarang.</div>'
+      // Clean hero — no card box, just text (ss7)
+      + '<div class="hub2-hero-plain">'
+      + '<div class="hub2-hero-label">SELAMAT DATANG KEMBALI</div>'
+      + '<h2 class="hub2-hero-heading">Mau lewat mana hari ini?</h2>'
+      + '<p class="hub2-hero-body">Pilih jalur yang paling cocok buat mood belajar kamu sekarang.</p>'
       + '</div>'
 
-      // Two door cards
-      + '<div class="hub2-doors">'
-
-      + '<button class="hub2-door" onclick="window.showJlptDoor()">'
+      // Jalur JLPT — full-width door
+      + '<button class="hub2-door hub2-door--full" onclick="window.showJlptDoor()">'
       + '<div class="hub2-door-glyph">日</div>'
-      + '<div class="hub2-door-badge">5 LEVEL</div>'
+      + '<div class="hub2-door-eyebrow">5 LEVEL</div>'
       + '<div class="hub2-door-title">Jalur JLPT</div>'
       + '<div class="hub2-door-desc">Belajar urut level ujian — N5 sampai N1</div>'
       + '<div class="hub2-door-pills">' + levelPills + '</div>'
       + '</button>'
 
-      + '<button class="hub2-door" onclick="window.showBukuDoor()">'
+      // Jalur Buku — full-width door
+      + '<button class="hub2-door hub2-door--full" onclick="window.showBukuDoor()">'
       + '<div class="hub2-door-glyph">本</div>'
-      + '<div class="hub2-door-badge">3 SERI</div>'
+      + '<div class="hub2-door-eyebrow">3 SERI</div>'
       + '<div class="hub2-door-title">Jalur Buku</div>'
       + '<div class="hub2-door-desc">Ikuti kurikulum buku favoritmu!</div>'
       + '<div class="hub2-door-books">' + bookChips + '</div>'
       + '</button>'
 
-      + '</div>'  // .hub2-doors
-
-      // Third door — 語 Jelajah Bebas (full browse)
-      + '<button class="hub2-door hub2-door--jelajah" onclick="window.showFlatBrowse()">'
-      + '<div class="hub2-door-glyph">語</div>'
-      + '<div class="hub2-door-badge">' + totalGrammar + ' GRAMMAR · ' + totalVocab + ' KOSAKATA</div>'
-      + '<div class="hub2-door-title">Jelajah Bebas</div>'
-      + '<div class="hub2-door-desc">Semua kartu lintas level dan buku — cari & filter sesukamu</div>'
+      // "Lihat semua kartu" — compact dashed row
+      + '<button class="hub2-see-all-row" onclick="window.showFlatBrowse()">'
+      + '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 10 6-10 6L2 8l10-6z"/><path d="m2 14 10 6 10-6"/></svg>'
+      + '<div style="flex:1"><div class="hub2-see-all-title">Lihat semua kartu</div>'
+      + '<div class="hub2-see-all-sub">' + totalGrammar + ' grammar · ' + totalVocab + ' kosakata</div></div>'
+      + '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--muted)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>'
       + '</button>'
 
-      // Continue card — last reviewed grammar entry
+      // Continue card — context-aware navigation
       + buildContinueCard()
 
       // Level progress rail
@@ -324,54 +320,124 @@
     if (!panel) return;
     currentView = 'buku';
 
-    var SERIES_GROUPS = [
-      { label: '📘 Sou Matome', ids: ['soumatome-n4', 'soumatome-n3'] },
-      { label: '🌸 Irodori',    ids: ['irodori-a1', 'irodori-a2-1', 'irodori-a2-2'] },
-      { label: '📓 Minna no Nihongo', ids: ['minna-1', 'minna-2'] },
+    // Series group definitions with accordion config
+    var ACCORDION_GROUPS = [
+      {
+        id: 'soumatome',
+        glyph: '総', glyphStyle: 'font-family:var(--font-jp-display)',
+        name: 'Sou Matome', badge: '5 VOLUME',
+        sub: 'Struktur JLPT, seri merah ikonik',
+        volumes: [
+          { id: 'soumatome-n5', label: 'N5', levelKey: 'n5', available: false },
+          { id: 'soumatome-n4', label: 'N4', levelKey: 'n4', available: true },
+          { id: 'soumatome-n3', label: 'N3', levelKey: 'n3', available: true },
+          { id: 'soumatome-n2', label: 'N2', levelKey: 'n2', available: false },
+          { id: 'soumatome-n1', label: 'N1', levelKey: 'n1', available: false },
+        ]
+      },
+      {
+        id: 'irodori',
+        glyph: '彩', glyphStyle: 'font-family:var(--font-jp-display)',
+        name: 'Irodori', badge: '3 VOLUME',
+        sub: 'Bahasa Jepang untuk hidup sehari-hari',
+        volumes: [
+          { id: 'irodori-a1',   label: 'Starter A1', levelKey: 'n5', available: true },
+          { id: 'irodori-a2-1', label: 'A2-1',       levelKey: 'n5', available: true },
+          { id: 'irodori-a2-2', label: 'A2-2',       levelKey: 'n4', available: true },
+        ]
+      },
+      {
+        id: 'minna',
+        glyph: '皆', glyphStyle: 'font-family:var(--font-jp-display)',
+        name: 'Minna no Nihongo', badge: '2 VOLUME',
+        sub: 'Kurikulum klasik, populer di Indonesia',
+        volumes: [
+          { id: 'minna-1', label: 'Volume I',  levelKey: 'n5', available: false },
+          { id: 'minna-2', label: 'Volume II', levelKey: 'n4', available: false },
+        ]
+      }
     ];
 
-    function renderSeriesCard(s) {
-      if (!s.available) {
-        return '<div class="hub-series-card hub-series-card--soon">'
-          + '<div class="hub-series-emoji">' + s.emoji + '</div>'
-          + '<div class="hub-series-title">' + s.title + '</div>'
-          + '<div class="hub-series-sub">' + s.subtitle + '</div>'
-          + '<div class="hub-series-soon">Segera</div>'
-          + '</div>';
-      }
-      var prog = getLensProgress(s.lensVar);
-      return '<button class="hub-series-card ' + s.level + '" onclick="window.showBukuChapters(\'' + s.id + '\')">'
-        + '<div class="hub-series-emoji">' + s.emoji + '</div>'
-        + '<div class="hub-series-title">' + s.title + '</div>'
-        + '<div class="hub-series-sub">' + s.subtitle + '</div>'
-        + '<div class="hub-series-count">' + prog.total + ' pola grammar</div>'
-        + progressBar(prog.done, prog.total)
-        + '</button>';
+    // Track open accordion (one at a time)
+    var openGroup = null;
+
+    function getTotalProg(volumes) {
+      var total = 0, done = 0;
+      volumes.forEach(function(v) {
+        var s = SERIES.find(function(s) { return s.id === v.id; });
+        if (s && s.lensVar) {
+          var p = getLensProgress(s.lensVar);
+          total += p.total; done += p.done;
+        }
+      });
+      return { total: total, done: done };
     }
 
-    panel.innerHTML =
-      '<div class="hub-wrap">'
-      + '<div class="hub-back-row">'
-      + '<button class="hub-back-btn" onclick="window.showMateriHub()">← Kembali</button>'
-      + '<div class="hub-panel-title">📚 Jalur Buku</div>'
-      + '</div>'
-      + SERIES_GROUPS.map(function(group) {
-          var items = group.ids.map(function(id) {
-            return SERIES.find(function(s) { return s.id === id; });
-          }).filter(Boolean);
-          return '<div class="buku-series-group">'
-            + '<div class="buku-series-group-label">' + group.label + '</div>'
-            + '<div class="buku-series-grid">'
-            + items.map(renderSeriesCard).join('')
-            + '</div></div>';
-        }).join('')
-      + '</div>';
+    function renderAccordion() {
+      panel.innerHTML =
+        '<div class="buku-accordion-wrap">'
+        + '<div class="buku-back-row">'
+        + '<button class="buku-back-btn" onclick="window.showMateriHub()">← Materi</button>'
+        + '<span class="buku-back-label">Jalur Buku</span>'
+        + '</div>'
+        + '<div class="buku-eyebrow">3 SERI · 10 VOLUME</div>'
+        + '<h2 class="buku-title">Pilih seri bukumu</h2>'
+        + '<p class="buku-sub">Setiap seri punya volume bertahap. Tap untuk lihat isinya.</p>'
+        + ACCORDION_GROUPS.map(function(g) {
+            var prog = getTotalProg(g.volumes);
+            var isOpen = openGroup === g.id;
+            return '<div class="buku-series-accordion' + (isOpen ? ' open' : '') + '" id="buku-acc-' + g.id + '">'
+              + '<button class="buku-series-hdr" data-gid="' + g.id + '" onclick="window.toggleBukuAcc(this.dataset.gid)">'
+              + '<div class="buku-series-icon"><span style="' + g.glyphStyle + ';font-size:22px;color:var(--accent)">' + g.glyph + '</span></div>'
+              + '<div class="buku-series-info">'
+              + '<div class="buku-series-name-row"><span class="buku-series-name">' + g.name + '</span><span class="buku-series-badge">' + g.badge + '</span></div>'
+              + '<div class="buku-series-sub">' + g.sub + '</div>'
+              + '<div class="buku-series-prog-wrap"><div class="buku-series-prog-bar" style="width:' + (prog.total ? Math.round(prog.done/prog.total*100) : 0) + '%"></div></div>'
+              + '<div class="buku-series-count">' + prog.done + '/' + prog.total + '</div>'
+              + '</div>'
+              + '<svg class="buku-series-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>'
+              + '</button>'
+              + (isOpen ? '<div class="buku-volumes-list">'
+                  + g.volumes.map(function(v) {
+                      if (!v.available) {
+                        return '<div class="buku-volume-row buku-volume-row--soon">'
+                          + '<span class="buku-vol-dot ' + v.levelKey + '"></span>'
+                          + '<span class="buku-vol-label">' + v.label + '</span>'
+                          + '<span class="buku-vol-soon">SEGERA</span>'
+                          + '<span>—</span>'
+                          + '</div>';
+                      }
+                      var s = SERIES.find(function(s) { return s.id === v.id; });
+                      var p = s ? getLensProgress(s.lensVar) : { done: 0, total: 0 };
+                      var pct = p.total ? Math.round(p.done/p.total*100) : 0;
+                      return '<button class="buku-volume-row" data-vid="' + v.id + '" onclick="window.showBukuChapters(this.dataset.vid)">'
+                        + '<span class="buku-vol-dot ' + v.levelKey + '"></span>'
+                        + '<div class="buku-vol-body">'
+                        + '<span class="buku-vol-label">' + v.label + '</span>'
+                        + '<div class="buku-vol-bar-wrap"><div class="buku-vol-bar ' + v.levelKey + '" style="width:' + pct + '%"></div></div>'
+                        + '</div>'
+                        + '<span class="buku-vol-count">' + p.done + '/' + p.total + '</span>'
+                        + '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--muted)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>'
+                        + '</button>';
+                    }).join('')
+                  + '</div>' : '')
+              + '</div>';
+          }).join('')
+        + '</div>';
 
-        PANELS.forEach(function(p) {
-      var el = document.getElementById(p);
-      if (el) el.style.display = (p === 'bukuDoorPanel') ? 'block' : 'none';
-    });
-    hideBrowseChrome();
+      PANELS.forEach(function(p) {
+        var el = document.getElementById(p);
+        if (el) el.style.display = (p === 'bukuDoorPanel') ? 'block' : 'none';
+      });
+      hideBrowseChrome();
+    }
+
+    window.toggleBukuAcc = function(groupId) {
+      openGroup = (openGroup === groupId) ? null : groupId;
+      renderAccordion();
+    };
+
+    renderAccordion();
   };
 
   // ── Book chapter/lesson grid ─────────────────────────────────
@@ -513,6 +579,8 @@
     backBar.style.display = 'flex';
     // Store where we came from so back works
     window._hubPrevView = 'jlpt';
+    // Save last activity context
+    try { localStorage.setItem('nn_last_activity', JSON.stringify({ type: 'jlpt', level: level })); } catch(e) {}
   };
 
   // ── Browse filtered to a specific book chapter/lesson ────────
@@ -564,6 +632,14 @@
 
     window._hubPrevView = 'chapters';
     window._hubPrevSeries = seriesId;
+    // Save last activity context
+    var chLabel = week !== null
+      ? (series.structure === 'week' ? 'Minggu ' + week + (day ? ' · Hari ' + day : '') : 'Pelajaran ' + week)
+      : ('Pelajaran ' + lesson);
+    try { localStorage.setItem('nn_last_activity', JSON.stringify({
+      type: 'book', seriesId: seriesId, seriesTitle: series.title, seriesEmoji: series.emoji,
+      week: week, day: day, lesson: lesson, chLabel: chLabel
+    })); } catch(e) {}
   };
 
   // ── Cross-lens breadcrumbs (§14.7) ──────────────────────────
@@ -638,10 +714,12 @@
 
   // ── Continue card — last reviewed grammar entry ───────────────
   function buildContinueCard() {
+    // Read last-activity context
+    var ctx = null;
+    try { ctx = JSON.parse(localStorage.getItem('nn_last_activity') || 'null'); } catch(e) {}
+
     var grammar = window.grammarData || [];
     var srs     = window.srsData    || {};
-
-    // Find most recently reviewed card
     var best = null, bestTime = 0;
     Object.keys(srs).forEach(function(id) {
       var c = srs[id];
@@ -649,29 +727,39 @@
       var t = new Date(c.last_review).getTime();
       if (t > bestTime) { bestTime = t; best = id; }
     });
-    if (!best) return '';
 
-    var entry = grammar.find(function(g) { return g && g.id === best; });
-    if (!entry) return '';
+    if (!ctx && !best) return '';
 
-    var lv = entry.level || 'n5';
-    var bookLabel = '';
-    if (entry.book && entry.book !== '—') {
-      bookLabel = entry.book + (entry.day ? ' · Hari ' + entry.day : '');
-    } else {
-      bookLabel = lv.toUpperCase() + ' · ' + (entry.cat || '');
+    var entry = best ? grammar.find(function(g) { return g && g.id === best; }) : null;
+    var lv = (entry && entry.level) || 'n4';
+
+    // Context label + onclick
+    var contextLabel = '';
+    var navFn = '';
+    if (ctx && ctx.type === 'book') {
+      var em = ctx.seriesEmoji || '';
+      contextLabel = em + ' ' + ctx.seriesTitle + (ctx.chLabel ? ' · ' + ctx.chLabel : '');
+      navFn = "window.showBukuChapters('" + ctx.seriesId + "')";
+    } else if (ctx && ctx.type === 'jlpt') {
+      contextLabel = 'Jalur JLPT · ' + ctx.level.toUpperCase();
+      navFn = "window.browseByLevel('" + ctx.level + "')";
+    } else if (best) {
+      contextLabel = lv.toUpperCase() + (entry && entry.cat ? ' · ' + entry.cat : '');
+      navFn = "window.openDetail('" + best + "')";
     }
 
     var interval = srs[best] ? (srs[best].interval || 0) : 0;
     var pct = Math.min(interval / 180, 1);
+    var pat = entry ? entry.grammar : '—';
+    var mea = entry ? entry.meaning : '';
 
     return '<div class="hub2-continue-label"><span>Lanjutkan</span></div>'
-      + '<button class="hub2-continue-card ' + lv + '" onclick="window.openDetail(\'' + best + '\')">'
+      + '<button class="hub2-continue-card ' + lv + '" onclick="' + navFn + '">'
       + '<div class="hub2-cc-icon ' + lv + '">語</div>'
       + '<div class="hub2-cc-body">'
-      + '<div class="hub2-cc-source">' + bookLabel.toUpperCase() + '</div>'
-      + '<div class="hub2-cc-pattern">' + entry.grammar + '</div>'
-      + '<div class="hub2-cc-meaning">' + entry.meaning + '</div>'
+      + '<div class="hub2-cc-source">' + contextLabel.toUpperCase() + '</div>'
+      + '<div class="hub2-cc-pattern">' + pat + '</div>'
+      + '<div class="hub2-cc-meaning">' + mea + '</div>'
       + '<div class="hub2-cc-bar-wrap">'
       + '<div class="hub2-cc-bar ' + lv + '" style="width:' + Math.round(pct * 100) + '%"></div>'
       + '</div></div>'
