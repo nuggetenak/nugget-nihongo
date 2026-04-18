@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (window.initOnboarding)    window.initOnboarding();    // pages/onboarding.js
   if (window.initSettingsPage)  window.initSettingsPage();  // pages/settings.js
   if (window.initAboutPage)     window.initAboutPage();     // pages/about.js
+  if (window.initTweaks)        window.initTweaks();        // tweaks.js
 });
 
 // ── Tab switch router ───────────────────────────────────────────

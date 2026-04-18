@@ -196,10 +196,10 @@
       + '<div class="hub-doors">'
 
       // JLPT door
-      + '<button class="hub-door hub-door--jlpt" onclick="window.showJlptDoor()">'
-      + '<div class="hub-door-emoji">🎯</div>'
+      + '<button class="hub-door hub-door--jlpt" data-glyph="日" onclick="window.showJlptDoor()">'
+      + '<div class="hub-door-badge">5 LEVEL</div>'
       + '<div class="hub-door-title">Jalur JLPT</div>'
-      + '<div class="hub-door-desc">Belajar berdasarkan level ujian. N5 sampai N1.</div>'
+      + '<div class="hub-door-desc">Belajar urut level ujian — N5 sampai N1.</div>'
       + '<div class="hub-door-pills">'
       + ['n5','n4','n3','n2','n1'].map(function(lv) {
           return '<span class="hub-level-pip ' + lv + '">' + lv.toUpperCase() + '</span>';
@@ -208,10 +208,10 @@
       + '</button>'
 
       // Buku door
-      + '<button class="hub-door hub-door--buku" onclick="window.showBukuDoor()">'
-      + '<div class="hub-door-emoji">📚</div>'
+      + '<button class="hub-door hub-door--buku" data-glyph="本" onclick="window.showBukuDoor()">'
+      + '<div class="hub-door-badge">3 SERI</div>'
       + '<div class="hub-door-title">Jalur Buku</div>'
-      + '<div class="hub-door-desc">Ikutin urutan textbook populer.</div>'
+      + '<div class="hub-door-desc">Ikuti kurikulum textbook favoritmu.</div>'
       + '<div class="hub-door-books">'
       + SERIES.filter(function(s) { return s.available; }).map(function(s) {
           return '<span class="hub-book-chip">' + s.emoji + ' ' + s.title + '</span>';

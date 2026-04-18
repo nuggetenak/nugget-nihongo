@@ -2,23 +2,23 @@
 
 > Referensi & Quiz Tata Bahasa Jepang JLPT — Gratis, Offline, Tanpa Akun
 
-[![Deploy](https://github.com/nugget-nihongo/nugget-nihongo/actions/workflows/deploy.yml/badge.svg)](https://github.com/nugget-nihongo/nugget-nihongo/actions/workflows/deploy.yml)
-[![Validate](https://github.com/nugget-nihongo/nugget-nihongo/actions/workflows/validate.yml/badge.svg)](https://github.com/nugget-nihongo/nugget-nihongo/actions/workflows/validate.yml)
+[![Deploy](https://github.com/nuggetenak/nugget-nihongo/actions/workflows/deploy.yml/badge.svg)](https://github.com/nuggetenak/nugget-nihongo/actions/workflows/deploy.yml)
+[![Validate](https://github.com/nuggetenak/nugget-nihongo/actions/workflows/validate.yml/badge.svg)](https://github.com/nuggetenak/nugget-nihongo/actions/workflows/validate.yml)
 
 ## What is this?
 
 A Progressive Web App for learning Japanese, built for JLPT N5–N1 preparation.
 Works completely offline after first load. No account needed. No ads. Free forever.
 
-**Live**: [nugget-nihongo.github.io/nugget-nihongo](https://nugget-nihongo.github.io/nugget-nihongo/)
+**Live**: [nuggetenak.github.io/nugget-nihongo](https://nuggetenak.github.io/nugget-nihongo/)
 
 ## Features
 
-- 📚 **1,500+ vocabulary entries** across JLPT N5, N4, N3
-- 📝 **800+ grammar points** with examples and explanations
+- 📚 **1,800+ vocabulary entries** across JLPT N5–N1
+- 📝 **450+ grammar points** with examples and explanations
 - 🎯 **7 quiz modes** — flashcard, fill-in, rearrange, conjugation, translation, error-find, multiple choice
-- 🔄 **SRS (Spaced Repetition)** — SM-2 algorithm for optimized review
-- 📖 **Book index** — learn by textbook chapter (Minna no Nihongo, Irodori)
+- 🔄 **SRS (Spaced Repetition)** — FSRS algorithm for optimized review
+- 📖 **Book index** — learn by textbook chapter (Irodori, Sou Matome)
 - 🌐 **Bilingual** — Indonesian interface with Japanese content
 - 📱 **PWA** — install on any device, works offline
 - 🌙 **Dark mode** — easy on the eyes
@@ -27,7 +27,7 @@ Works completely offline after first load. No account needed. No ads. Free forev
 
 ```bash
 # Clone
-git clone https://github.com/nugget-nihongo/nugget-nihongo.git
+git clone https://github.com/nuggetenak/nugget-nihongo.git
 cd nugget-nihongo
 
 # Serve locally

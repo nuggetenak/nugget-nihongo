@@ -76,18 +76,18 @@ nugget-nihongo/
 │   │   └── *.js                     # Feature modules: browse, quiz, conjugation…
 │   └── data/
 │       ├── vocab/
-│       │   ├── vocab-n5.js (711)    # window.vocabN5
+│       │   ├── vocab-n5.js (725)    # window.vocabN5
 │       │   ├── vocab-n4.js (692)    # window.vocabN4
-│       │   ├── vocab-n3.js (70)     # window.vocabN3
-│       │   ├── vocab-n2.js (50)     # window.vocabN2 — seed data
-│       │   ├── vocab-n1.js (20)     # window.vocabN1 — seed data
+│       │   ├── vocab-n3.js (285)     # window.vocabN3
+│       │   ├── vocab-n2.js (130)     # window.vocabN2
+│       │   ├── vocab-n1.js (60)     # window.vocabN1 — seed data
 │       │   └── vocab-index.js       # Merges all → window.vocabDB
 │       ├── grammar/
-│       │   ├── grammar-n5.js (80)   # window.grammarN5
-│       │   ├── grammar-n4.js (90)   # window.grammarN4
-│       │   ├── grammar-n3.js (103)  # window.grammarN3
-│       │   ├── grammar-n2.js (30)   # window.grammarN2 — seed data
-│       │   ├── grammar-n1.js        # window.grammarN1 — empty
+│       │   ├── grammar-n5.js (94)   # window.grammarN5
+│       │   ├── grammar-n4.js (92)   # window.grammarN4
+│       │   ├── grammar-n3.js (119)  # window.grammarN3
+│       │   ├── grammar-n2.js (90)   # window.grammarN2 — seed data
+│       │   ├── grammar-n1.js (60)   # window.grammarN1
 │       │   └── grammar-index.js     # Merges all → window.grammarDB + query API
 │       ├── books/
 │       │   ├── sources.js           # Book metadata registry

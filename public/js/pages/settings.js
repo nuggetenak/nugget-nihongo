@@ -225,3 +225,39 @@
   window.showToast = function (msg) { _showToast(msg); };
 
 })();
+
+// ── Lainnya sheet — 3-way theme + active state sync ──────────────
+window.setThemeFromSheet = function (v) {
+  if (v === 'dark')   { document.body.classList.remove('light'); }
+  if (v === 'light')  { document.body.classList.add('light'); }
+  if (v === 'system') {
+    var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.body.classList.toggle('light', !prefersDark);
+  }
+  localStorage.setItem('nn_theme', v);
+  _syncSheetThemeBtns(v);
+};
+
+function _syncSheetThemeBtns(v) {
+  var btns = document.querySelectorAll('#moreThemeSeg .ms-theme-btn');
+  btns.forEach(function (btn) {
+    btn.classList.toggle('active', btn.dataset.theme === v ||
+      (v === 'system' && btn.dataset.theme === 'system'));
+  });
+}
+
+// Sync sheet theme buttons on open
+var _origOpen = window.openMoreSheet;
+window.openMoreSheet = function () {
+  if (_origOpen) _origOpen();
+  var cur = localStorage.getItem('nn_theme') || 'dark';
+  _syncSheetThemeBtns(cur);
+  // Update user row if logged in
+  var profile = window._currentProfile;
+  if (profile) {
+    var nameEl = document.getElementById('moreSheetUserName');
+    var subEl  = document.getElementById('moreSheetUserSub');
+    if (nameEl) nameEl.textContent = profile.display_name || profile.email || 'Pengguna';
+    if (subEl)  subEl.textContent  = 'Tersinkron ke cloud ☁️';
+  }
+};

@@ -35,8 +35,8 @@ Claude Code **TIDAK BOLEH** (selalu timeout/gagal):
 | TASK-CC-4: Deploy AI Worker | ⏳ Pending — butuh API keys | 🟠 AI feature |
 | TASK-CC-5: Category panel UX | ⏳ Pending | 🟡 Post-launch |
 | TASK-CC-6: Fix auth button visibility | ✅ DONE (16 Apr) | — |
-| TASK-CC-7: Update _MAP.md + CLAUDE.md | ⏳ Pending | 🟡 After infra done |
-| TASK-CC-8: Paste vocab N3 batch | ⏳ Pending | 🟡 When content ready |
+| TASK-CC-7: Update _MAP.md + CLAUDE.md | ✅ DONE (18 Apr) | — |
+| TASK-CC-8: Content population batch A | ✅ DONE (18 Apr) | — |
 
 ---
 
@@ -142,7 +142,7 @@ Commit: `"feat: category panel accordion — 8 super-categories"`
 **Depends on:** Lakukan setelah TASK-CC-4 selesai (supaya infra info akurat)
 
 Update `_MAP.md`:
-- Data counts → N5=725, N4=692, N3=100, N2=50, N1=20 (grammar: N5=94, N4=92, N3=103)
+- Data counts → N5=725, N4=692, N3=285, N2=130, N1=60 (grammar: N5=94, N4=92, N3=119, N2=90, N1=60)
 - Tandai grammar lenses Irodori A1/A2-1/A2-2 sebagai ✅ Full
 - Update infra section: Supabase ✅, AI Worker status terbaru
 - Update "What's next" ke task list MASTER-AUDIT.md yang aktif
@@ -156,21 +156,16 @@ Commit: `"docs: sync _MAP.md + CLAUDE.md ke real state post-16-April-2026"`
 
 ---
 
-## TASK-CC-8 — PASTE VOCAB N3 BATCH 🟡
-**Estimated tokens:** Low  
-**Files touched:** `public/data/vocab/vocab-n3.js`  
-**Depends on:** Content harus disiapkan dulu di claude.ai (bukan Claude Code yang generate)
+## TASK-CC-8 — CONTENT POPULATION BATCH A ✅ DONE (18 Apr)
 
-> Claude Code TIDAK generate konten. Task ini hanya: ambil konten yang sudah disiapkan claude.ai,
-> paste ke vocab-n3.js di posisi yang benar, run tests.
+Batch A selesai via 10-agent pipeline (courier delivery to Crunchy → QA → direct push):
+- vocab-n3: +135 entries (vg-n3-00151→00285, total 285)
+- vocab-n2: +80 entries (vg-n2-00051→00130, total 130)
+- vocab-n1: +40 entries (vg-n1-00021→00060, total 60)
+- grammar-n2: +60 entries (gn2-00031→00090, total 90)
+- grammar-n1: +60 entries (gn1-00001→00060, total 60)
 
-Instruksi:
-1. Buka `public/data/vocab/vocab-n3.js`
-2. Cari baris terakhir sebelum `];` di akhir file
-3. Paste entry baru (vg-n3-00101 dst) setelah entry terakhir, sebelum `];`
-4. Pastikan ada koma setelah entry sebelumnya
-5. Run `node tests/run.js` — cek duplicate ID check PASS
-6. Commit: `"feat: vocab-n3 vg-n3-00101 to vg-n3-00150 — Batch B"`
+**Next content batch (Batch B):** mulai dari vg-n3-00286 dst. Siapkan via claude.ai lagi.
 
 ---
 
@@ -197,5 +192,5 @@ git branch -d your-claude-branch
 
 ---
 
-*Last updated: 16 April 2026 — claude.ai (Sonnet 4.6)*
+*Last updated: 18 April 2026 — Crunchy 🧂 (post content-population batch A)*
 *Tests: 10,550 PASS | 0 FAIL*
