@@ -27,6 +27,16 @@ const USER_DATA_KEYS = [
   'nn_bookmarks',
   'nn_course_progress',
   'nn_daily_challenge',
+  'nn_heatmap',          // study activity heatmap (52 weeks)
+  'nn_quiz_stats',       // quiz accuracy per mode
+  'nn_accent',           // tweaks: accent color
+  'nn_density',          // tweaks: card density
+  'nn_furigana',         // furigana display pref
+  'nn_romaji',           // romaji display pref
+  'nn_fontsize',         // font size pref
+  'nn_reduce_motion',    // reduce motion pref
+  'nn_last_activity',    // ContinueCard context
+  'nn_migrated_v1',      // Supabase migration flag
   // Legacy keys (preserved for safety)
   'bunpou_progress',
   'bunpou_bookmarks',

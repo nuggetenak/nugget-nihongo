@@ -180,6 +180,7 @@ function showErrorFindResult() {
   quizDeck = efDeck;
   quizIdx  = efDeck.length;
   missedDeck = [];
+  if (window.recordQuizStat) window.recordQuizStat('errorfind', efCorrect, efDeck.length);
   showResult();
 
   const subEl = document.getElementById('resultSubtitle');

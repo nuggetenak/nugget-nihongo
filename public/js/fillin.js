@@ -183,6 +183,7 @@ function showFillResult() {
   quizIdx  = played;
   missedDeck = [];
   if (window.markStudyActivity) window.markStudyActivity(); // TASK-UI-7
+  if (window.recordQuizStat) window.recordQuizStat('fill', fillCorrect, played);
   showResult();
 }
 
@@ -374,6 +375,7 @@ function showRearrangeResult() {
   quizIdx  = played;
   missedDeck = [];
   if (window.markStudyActivity) window.markStudyActivity(); // TASK-UI-7
+  if (window.recordQuizStat) window.recordQuizStat('rearrange', reaCorrect, reaDeck.length);
   showResult();
 
   // Override subtitle setelah showResult() set-nya

@@ -170,6 +170,7 @@ function showMultiChoiceResult() {
   quizDeck = mcDeck;
   quizIdx  = mcDeck.length;
   missedDeck = [];
+  if (window.recordQuizStat) window.recordQuizStat('multi_choice', mcCorrect, mcDeck.length);
   showResult();
 
   const subEl = document.getElementById('resultSubtitle');

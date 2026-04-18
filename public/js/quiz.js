@@ -229,10 +229,14 @@ function showResult() {
       // Find next due
       const srs = window.srsData || {};
       const today = Math.floor(Date.now() / 86400000);
-      const dues = Object.values(srs).filter(c => c.due > today).map(c => c.due);
+      const dues = Object.values(srs)
+        .filter(c => c.card && c.card.due)
+        .map(c => new Date(c.card.due).getTime())
+        .filter(t => t > Date.now());
       if (dues.length) {
-        const nextDays = Math.min(...dues) - today;
-        srsText.textContent = `Kartu berikutnya jatuh tempo ${nextDays === 1 ? 'besok' : `${nextDays} hari lagi`}. Tetap semangat!`;
+        const nextMs   = Math.min(...dues);
+        const nextDays = Math.ceil((nextMs - Date.now()) / 86400000);
+        srsText.textContent = `Kartu berikutnya jatuh tempo ${nextDays <= 1 ? 'besok' : `${nextDays} hari lagi`}. Tetap semangat!`;
         srsHint.style.display = 'flex';
       } else {
         srsHint.style.display = 'none';
@@ -246,6 +250,7 @@ function showResult() {
   // Update progress
   if (window.updateProgressPanel) window.updateProgressPanel();
   if (window.updateQuickReviewCard) window.updateQuickReviewCard();
+  if (window.recordQuizStat) window.recordQuizStat('flip', qKnow, played);
 }
 
 // ── Count-up animation ──

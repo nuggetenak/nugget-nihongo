@@ -446,6 +446,19 @@ if (_origSrsReviewFSRS) {
   };
 }
 
+// ── Quiz stat recorder (feeds analytics.js _renderQuizAccuracy) ──────
+// mode: 'flip'|'fill'|'multi_choice'|'conjugation'|'translation'|'vocab_mc'|'mixed'
+// correct: number of correct answers, total: number of questions answered
+window.recordQuizStat = function (mode, correct, total) {
+  if (!mode || total < 1) return;
+  var stats = {};
+  try { stats = JSON.parse(localStorage.getItem('nn_quiz_stats') || '{}'); } catch (e) {}
+  if (!stats[mode]) stats[mode] = { correct: 0, total: 0 };
+  stats[mode].correct += correct;
+  stats[mode].total   += total;
+  try { localStorage.setItem('nn_quiz_stats', JSON.stringify(stats)); } catch (e) {}
+};
+
 // ── INITIALIZE ─────────────────────────────────────────
 loadXP();
 loadAchievements();

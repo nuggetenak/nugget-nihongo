@@ -9,7 +9,12 @@
   // ── Open modal ──────────────────────────────────────────────
   window.openDetail = function (cardId) {
     const data = window.grammarData || [];
-    const d    = data.find(x => x.id === cardId);
+    let d = data.find(x => x.id === cardId);
+    // Fallback: try vocab (openVocabDetail handles its own modal)
+    if (!d && cardId && cardId.startsWith('vg-')) {
+      if (window.openVocabDetail) window.openVocabDetail(cardId);
+      return;
+    }
     if (!d) return;
 
     const modal = document.getElementById('detailModal');
@@ -17,11 +22,13 @@
 
     const lv = d.level;
 
-    // Connection badge
-    const connHTML = `<div class="detail-connection ${lv}">${d.connection}</div>`;
+    // Connection badge — guard undefined
+    const connHTML = d.connection
+      ? `<div class="detail-connection ${lv}">${d.connection}</div>` : '';
 
-    // Deskripsi penuh
-    const descHTML = `<div class="detail-desc">${d.desc}</div>`;
+    // Deskripsi penuh — guard undefined
+    const descHTML = d.desc
+      ? `<div class="detail-desc">${d.desc}</div>` : '';
 
     // Contoh kalimat dengan tombol breakdown
     const examplesHTML = (d.examples || []).map((e, i) => {
