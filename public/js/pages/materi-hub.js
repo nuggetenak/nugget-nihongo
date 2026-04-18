@@ -624,9 +624,9 @@
       var wrap = document.getElementById('main');
       if (wrap && wrap.parentNode) wrap.parentNode.insertBefore(backBar, wrap);
     }
-    var chLabel = week !== null ? ('W' + week + 'D' + day) : ('L' + lesson);
+    var chLabelShort = week !== null ? ('W' + week + 'D' + day) : ('L' + lesson);
     backBar.innerHTML = '<button class="hub-back-btn" onclick="window.showBukuChapters(\'' + seriesId + '\')">'
-      + '← ' + series.emoji + ' ' + series.title + ' / ' + chLabel
+      + '← ' + series.emoji + ' ' + series.title + ' / ' + chLabelShort
       + '</button>';
     backBar.style.display = 'flex';
 

@@ -42,12 +42,17 @@ window.toggleBookmark = function(id, btn, e) {
   e.stopPropagation();
   if (window.bookmarks.has(id)) {
     window.bookmarks.delete(id);
-    btn.textContent = '☆';
     btn.classList.remove('bookmarked');
+    // SVG button (peel card): toggle fill attribute; text button (detail): set emoji
+    const svg = btn.querySelector('svg');
+    if (svg) { svg.setAttribute('fill', 'none'); }
+    else { btn.textContent = '☆'; }
   } else {
     window.bookmarks.add(id);
-    btn.textContent = '⭐';
     btn.classList.add('bookmarked');
+    const svg = btn.querySelector('svg');
+    if (svg) { svg.setAttribute('fill', 'currentColor'); }
+    else { btn.textContent = '⭐'; }
   }
   try { localStorage.setItem(LS_BOOKMARKS, JSON.stringify([...window.bookmarks])); } catch(e) {}
   updateBookmarkPill();

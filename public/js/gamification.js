@@ -280,8 +280,11 @@ window.streakRecordActivity = function () {
       streakData.current = 1; // restart
       console.log('[gamification] Comeback! Break was', daysMissed, 'days');
     } else {
-      // Streak broken
+      // Streak broken — show modal (streak.js exports window.showStreakBroken)
       streakData.current = 1;
+      setTimeout(function() {
+        if (window.showStreakBroken) window.showStreakBroken();
+      }, 500);
     }
   } else {
     // First ever activity

@@ -38,7 +38,7 @@ window.markStudyActivity = function () {
   }
 };
 
-function showStreakBroken() {
+window.showStreakBroken = function() {
   const tip = STREAK_TIPS[Math.floor(Math.random() * STREAK_TIPS.length)];
   const modal = document.getElementById('streakBrokenModal');
   if (!modal) return;
@@ -47,7 +47,9 @@ function showStreakBroken() {
   modal.classList.add('show');
   const fire = document.getElementById('streakBrokenFire');
   if (fire) fire.classList.add('crack');
-}
+};
+
+function showStreakBroken() { window.showStreakBroken(); }
 
 window.closeStreakBroken = function () {
   document.getElementById('streakBrokenModal')?.classList.remove('show');
