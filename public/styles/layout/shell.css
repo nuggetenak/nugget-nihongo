@@ -41,7 +41,7 @@
   .page {
     max-width: 960px;
     margin: 0 auto;
-    padding-bottom: calc(60px + env(safe-area-inset-bottom, 0px) + 1rem);
+    padding-bottom: calc(var(--nav-h) + env(safe-area-inset-bottom, 0px) + 1rem);
   }
 
   /* Card grid: 3 columns */

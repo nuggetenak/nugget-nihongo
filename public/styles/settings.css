@@ -162,77 +162,143 @@
 
 /* ══ ⋯ MORE BOTTOM-SHEET ══════════════════════ */
 
+/* ══ HEADER — icon action buttons ══════════ */
+.icon-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 36px; height: 36px; border-radius: 10px;
+  background: var(--surface-2); border: 1px solid var(--border);
+  color: var(--muted); cursor: pointer;
+  transition: border-color 0.18s, color 0.18s, background 0.18s;
+  -webkit-tap-highlight-color: transparent;
+}
+.icon-btn:hover { border-color: var(--border-2); color: var(--accent-hot); }
+.icon-btn:active { background: var(--surface-3); transform: scale(0.94); }
+
+/* ══ LAINNYA BOTTOM SHEET (Claude Design) ══ */
 #moreSheetOverlay {
   position: fixed;
   inset: 0;
   z-index: 800;
-  background: rgba(0,0,0,0.5);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  background: rgba(7,5,3,0.72);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   display: none;
   align-items: flex-end;
 }
-
-#moreSheetOverlay.open {
-  display: flex;
-}
+#moreSheetOverlay.open { display: flex; }
 
 #moreSheet {
   width: 100%;
   background: var(--surface);
-  border-radius: 20px 20px 0 0;
-  padding: 0.5rem 0 max(1rem, env(safe-area-inset-bottom));
-  box-shadow: var(--shadow-xl);
+  border: 1px solid var(--border-2); border-bottom: none;
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+  padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
+  box-shadow: 0 -12px 60px rgba(0,0,0,0.55);
   animation: sheet-up 0.28s cubic-bezier(0.34,1.56,0.64,1);
+  max-height: 82vh; overflow-y: auto;
 }
 
 @keyframes sheet-up {
-  from { transform: translateY(100%); }
+  from { transform: translateY(110%); }
   to   { transform: translateY(0); }
 }
 
+.ms-handle-wrap {
+  display: flex; justify-content: center; padding: 0.6rem 0 0.25rem;
+}
 .ms-handle {
-  width: 36px;
-  height: 4px;
-  border-radius: 2px;
+  width: 44px; height: 5px; border-radius: 100px;
   background: var(--border-2);
-  margin: 0.5rem auto 1rem;
 }
 
+/* User row */
+.ms-user-row {
+  display: flex; align-items: center; gap: 0.75rem;
+  padding: 0.9rem 1.25rem 1rem;
+}
+.ms-avatar {
+  width: 46px; height: 46px; border-radius: 14px;
+  background: var(--grad);
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 800; font-size: 1.1rem; color: #1a0f00;
+  flex-shrink: 0; box-shadow: var(--shadow-glow);
+}
+.ms-user-info { flex: 1; min-width: 0; }
+.ms-user-name { font-size: 0.95rem; font-weight: 700; color: var(--text-bright, var(--text)); }
+.ms-user-sub  { font-size: 0.68rem; color: var(--muted); margin-top: 1px; }
+.ms-login-btn {
+  padding: 0.55rem 1rem; border-radius: 100px;
+  background: var(--grad); color: #1a0f00;
+  border: none; font-weight: 700; font-size: 0.8rem; cursor: pointer;
+  white-space: nowrap; box-shadow: var(--shadow-glow);
+  transition: opacity 0.15s;
+}
+.ms-login-btn:active { opacity: 0.85; }
+
+/* Theme selector */
+.ms-theme-label {
+  font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--muted);
+  padding: 0 1.25rem 0.4rem;
+}
+.ms-theme-seg {
+  display: grid; grid-template-columns: repeat(3,1fr); gap: 4px;
+  margin: 0 1.25rem 0.25rem;
+  padding: 4px; background: var(--surface-2); border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.ms-theme-btn {
+  display: flex; flex-direction: column; align-items: center; gap: 5px;
+  padding: 0.65rem 0.5rem; border-radius: 10px; cursor: pointer;
+  background: transparent; border: none;
+  color: var(--muted); font-size: 0.72rem; font-weight: 600;
+  font-family: var(--font-ui); transition: all 0.18s;
+}
+.ms-theme-btn.active {
+  background: var(--surface-3);
+  color: var(--accent-hot);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Divider */
+.ms-divider {
+  height: 1px; background: var(--border);
+  margin: 0.75rem 0;
+}
+
+/* Nav items */
 .ms-item {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 0.9rem 1.5rem;
-  cursor: pointer;
-  transition: background 0.15s;
+  display: flex; align-items: center; gap: 0.85rem;
+  padding: 0.85rem 1.25rem;
+  cursor: pointer; transition: background 0.15s;
+  -webkit-tap-highlight-color: transparent;
 }
+.ms-item:hover  { background: var(--surface-2); }
+.ms-item:active { background: var(--surface-3); }
 
-.ms-item:hover   { background: var(--surface-2); }
-.ms-item:active  { background: var(--surface-3); }
-
-.ms-icon {
-  width: 38px;
-  height: 38px;
-  border-radius: 10px;
+.ms-icon-wrap {
+  width: 40px; height: 40px; border-radius: 12px;
+  background: var(--surface-2); border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--accent); flex-shrink: 0;
+}
+/* Keep old .ms-icon for backward compat */
+.ms-icon { width: 38px; height: 38px; border-radius: 10px;
   background: var(--surface-2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.15rem;
-  flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.15rem; flex-shrink: 0; }
+
+.ms-item-text { flex: 1; min-width: 0; }
+.ms-label { font-size: 0.9rem; font-weight: 600; color: var(--text); }
+.ms-sub   { font-size: 0.68rem; color: var(--muted); margin-top: 2px; }
+.ms-chevron { color: var(--muted-2, var(--muted)); flex-shrink: 0; }
+
+.ms-app-info {
+  text-align: center; font-size: 0.65rem; color: var(--muted-2, var(--muted));
+  padding: 0.25rem 1rem 0.5rem;
 }
 
-.ms-label {
-  font-size: var(--text-md);
-  font-weight: 500;
-  color: var(--text);
-}
 
-.ms-sub {
-  font-size: var(--text-xs);
-  color: var(--muted);
-}
 
 /* ══ ABOUT PAGE ══════════════════════════════ */
 
