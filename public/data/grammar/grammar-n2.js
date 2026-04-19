@@ -2300,7 +2300,7 @@ window.grammarN2 = [
     { jp: '会議の費用は会社が負担する<b>ということになっている</b>。', id: 'Sudah menjadi ketentuan bahwa biaya rapat ditanggung perusahaan.' }
   ],
   see_also_grammar: ['gn2-00128'], see_also_vocab: [],
-  confusion_pairs: ['gn2-00128'],
+  confusion_pairs: ['gn2-00128', 'gn2-00151', 'gn2-00152'],
   register: null, exceptions: null, notes: null,
   provenance: 'jlpt-corpus', added_v: 'v15'
 },
@@ -2321,5 +2321,2419 @@ window.grammarN2 = [
   confusion_pairs: ['gn2-00127'],
   register: null, exceptions: null, notes: null,
   provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00131', level: 'n2', pattern: '〜を契機に',
+  reading: '〜wo keiki ni',
+  meaning: 'menjadikan ... sebagai titik balik / kesempatan untuk berubah',
+  cat: 'inception-continuation',
+  connection: 'N + を契機に / V-plain + のを契機に',
+  desc: '<b>〜を契機に</b> menyatakan bahwa suatu peristiwa menjadi pemicu atau titik balik yang mendorong perubahan besar atau tindakan baru. Biasanya digunakan untuk momen penting dalam hidup atau organisasi.',
+  nuance: 'Lebih formal dan bermakna lebih besar dibandingkan をきっかけに — を契機に digunakan untuk peristiwa bersejarah, perubahan karier, atau titik balik hidup yang signifikan. をきっかけに lebih umum dan bisa digunakan untuk hal sehari-hari.',
+  examples: [
+    { jp: '転職<b>を契機に</b>、生活スタイルを一新した。', id: 'Menjadikan pergantian kerja sebagai titik balik, ia merombak total gaya hidupnya.' },
+    { jp: '震災<b>を契機に</b>、地域の防災意識が高まった。', id: 'Bencana gempa menjadi titik balik meningkatnya kesadaran mitigasi bencana di masyarakat.' },
+    { jp: '留学<b>を契機に</b>、将来は国際的な仕事をしたいと思うようになった。', id: 'Pengalaman belajar di luar negeri menjadi kesempatan baginya untuk mulai bercita-cita berkarier di bidang internasional.' }
+  ],
+  see_also_grammar: [],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00132', level: 'n2', pattern: '〜に先立って',
+  reading: '〜ni sakidatte',
+  meaning: 'sebelum ..., sebagai langkah pendahuluan sebelum ...',
+  cat: 'sequential-temporal',
+  connection: 'N + に先立って / V-dictionary + に先立って',
+  desc: '<b>〜に先立って</b> menyatakan bahwa suatu tindakan dilakukan terlebih dahulu sebagai persiapan atau langkah awal sebelum peristiwa utama. Digunakan dalam konteks formal seperti upacara, proyek, atau pengumuman resmi.',
+  nuance: 'Berbeda dari まえに (sebelum, netral) — に先立って bersifat formal dan menyiratkan bahwa tindakan tersebut merupakan bagian dari prosedur atau persiapan yang disengaja. Tidak cocok untuk percakapan sehari-hari biasa.',
+  examples: [
+    { jp: '式典<b>に先立って</b>、主催者から挨拶がありました。', id: 'Sebelum upacara dimulai, ada sambutan dari penyelenggara.' },
+    { jp: '工事<b>に先立って</b>、住民への説明会が開かれた。', id: 'Sebagai langkah pendahuluan sebelum konstruksi, diadakan sesi penjelasan bagi warga.' }
+  ],
+  see_also_grammar: [],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: 'formal', exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00133', level: 'n2', pattern: '〜に際して',
+  reading: '〜ni saishite',
+  meaning: 'saat ..., dalam rangka ..., pada kesempatan ...',
+  cat: 'sequential-temporal',
+  connection: 'N + に際して / V-dictionary + に際して',
+  desc: '<b>〜に際して</b> menandai momen penting atau situasi khusus sebagai konteks untuk suatu tindakan. Digunakan saat memperkenalkan hal yang dilakukan atau diperhatikan pada suatu peristiwa penting.',
+  nuance: 'Mirip dengan にあたって, namun に際して lebih menekankan pada saat terjadinya peristiwa itu sendiri (in the occasion of), sedangkan にあたって lebih menekankan pada persiapan menghadapi sesuatu yang akan datang. Keduanya formal.',
+  examples: [
+    { jp: '入社<b>に際して</b>、いくつかの書類を提出してください。', id: 'Dalam rangka masuk kerja, harap serahkan beberapa dokumen berikut.' },
+    { jp: '試験<b>に際して</b>、携帯電話の電源をお切りください。', id: 'Saat ujian berlangsung, mohon matikan telepon genggam Anda.' }
+  ],
+  see_also_grammar: [],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: 'formal', exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00134', level: 'n2', pattern: '〜を踏まえて',
+  reading: '〜wo fumaete',
+  meaning: 'berdasarkan ..., dengan mempertimbangkan ..., berpijak pada ...',
+  cat: 'reason-cause',
+  connection: 'N + を踏まえて / V-plain + のを踏まえて',
+  desc: '<b>〜を踏まえて</b> menyatakan bahwa suatu keputusan atau tindakan diambil dengan sepenuhnya mempertimbangkan dan berpijak pada fakta, situasi, atau pengalaman tertentu. Menekankan proses penghayatan mendalam sebelum bertindak.',
+  nuance: 'Berbeda dari に基づいて (berlandaskan aturan/data secara ketat) — を踏まえて lebih menyiratkan "menghayati dan mempertimbangkan secara menyeluruh" sebelum mengambil langkah. Sering digunakan untuk diskusi kebijakan, evaluasi, atau pengembangan.',
+  examples: [
+    { jp: 'アンケートの結果<b>を踏まえて</b>、サービスを改善します。', id: 'Berdasarkan hasil kuesioner, kami akan memperbaiki layanan.' },
+    { jp: 'これまでの経験<b>を踏まえて</b>、新しい計画を立てた。', id: 'Dengan mempertimbangkan pengalaman selama ini, kami menyusun rencana baru.' }
+  ],
+  see_also_grammar: [],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00136'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00135', level: 'n2', pattern: '〜に照らして',
+  reading: '〜ni terashite',
+  meaning: 'bila dibandingkan/diukur dengan standar ..., berdasarkan tolok ukur ...',
+  cat: 'comparison',
+  connection: 'N + に照らして / N + に照らすと',
+  desc: '<b>〜に照らして</b> menyatakan bahwa sesuatu dinilai, diverifikasi, atau dipertimbangkan dengan mengacu pada standar, hukum, aturan, atau preseden tertentu. Seperti "menerangi dengan cahaya X untuk memeriksa Y".',
+  nuance: 'Berbeda dari に基づいて yang menyatakan "berlandaskan" secara umum — に照らして secara spesifik menyiratkan perbandingan terhadap norma atau standar yang sudah ada (hukum, aturan, pengalaman lalu). Digunakan dalam konteks hukum, evaluasi akademik, atau penilaian formal.',
+  examples: [
+    { jp: '法律<b>に照らして</b>、この行為は問題ないと判断された。', id: 'Bila diukur dengan standar hukum, tindakan ini dinilai tidak bermasalah.' },
+    { jp: '過去の事例<b>に照らして</b>考えると、このプロジェクトは成功する可能性が高い。', id: 'Bila dibandingkan dengan kasus-kasus terdahulu, proyek ini cukup berpeluang berhasil.' }
+  ],
+  see_also_grammar: ['gn2-00136'],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00136'],
+  register: 'formal', exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00136', level: 'n2', pattern: '〜に基づいて',
+  reading: '〜ni motozuite',
+  meaning: 'berdasarkan ..., berlandaskan ..., mengacu pada ...',
+  cat: 'reason-cause',
+  connection: 'N + に基づいて / N + に基づく + N',
+  desc: '<b>〜に基づいて</b> menyatakan bahwa suatu tindakan, keputusan, atau pernyataan didasarkan secara langsung pada data, aturan, hukum, atau fakta tertentu. Menekankan landasan yang kuat dan konkret.',
+  nuance: 'Dibandingkan を踏まえて (mempertimbangkan secara menyeluruh) dan に照らして (mengukur terhadap standar), に基づいて paling netral dan langsung — berarti "berpijak pada" tanpa nuansa evaluatif tambahan. Bisa digunakan dalam konteks formal maupun semi-formal.',
+  examples: [
+    { jp: '契約書<b>に基づいて</b>、支払いを行います。', id: 'Pembayaran dilakukan berdasarkan isi kontrak.' },
+    { jp: '科学的なデータ<b>に基づいた</b>結論が必要だ。', id: 'Diperlukan kesimpulan yang berlandaskan data ilmiah.' }
+  ],
+  see_also_grammar: ['gn2-00134', 'gn2-00135', 'gn2-00137'],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00134', 'gn2-00135', 'gn2-00137'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00137', level: 'n2', pattern: '〜に即して',
+  reading: '〜ni sokushite',
+  meaning: 'sesuai dengan ..., mengikuti secara dekat ..., berpedoman pada kenyataan ...',
+  cat: 'reason-cause',
+  connection: 'N + に即して / N + に即した + N',
+  desc: '<b>〜に即して</b> menyatakan bahwa sesuatu dilakukan dengan mengikuti atau menyesuaikan diri secara ketat terhadap realitas, kebutuhan nyata, atau situasi yang ada. Menekankan kesesuaian dengan kondisi aktual.',
+  nuance: 'Berbeda dari に基づいて (berlandaskan aturan/data) — に即して lebih menekankan kesesuaian dengan situasi atau kenyataan yang konkret dan dinamis, bukan hanya mengacu pada dokumen atau prinsip abstrak. Sering digunakan dalam konteks pendidikan atau pembuatan kebijakan.',
+  examples: [
+    { jp: '現場の状況<b>に即して</b>、柔軟に対応することが求められる。', id: 'Diperlukan respons yang fleksibel sesuai dengan kondisi nyata di lapangan.' },
+    { jp: '実態<b>に即した</b>教育改革が必要だ。', id: 'Reformasi pendidikan yang sesuai dengan kondisi nyata sangat dibutuhkan.' }
+  ],
+  see_also_grammar: ['gn2-00136'],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00136'],
+  register: 'formal', exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00138', level: 'n2', pattern: '〜を通じて',
+  reading: '〜wo tsuujite',
+  meaning: 'melalui ..., lewat ..., sepanjang ...',
+  cat: 'expression',
+  connection: 'N + を通じて / N + を通して',
+  desc: '<b>〜を通じて</b> memiliki dua makna utama: (1) melalui suatu perantara atau media, dan (2) sepanjang suatu periode waktu. Bentuk を通して lebih umum digunakan untuk makna perantara/media.',
+  nuance: 'を通じて dan を通して sering dapat saling menggantikan, namun を通じて cenderung lebih formal dan lebih sering digunakan untuk makna "sepanjang waktu" (一年を通じて), sedangkan を通して lebih umum untuk makna "melalui perantara". Berbeda dari によって yang menyatakan cara/sebab.',
+  examples: [
+    { jp: 'SNS<b>を通じて</b>、世界中の人とつながることができる。', id: 'Melalui media sosial, kita bisa terhubung dengan orang-orang di seluruh dunia.' },
+    { jp: '一年<b>を通じて</b>、この地域は温暖な気候が続く。', id: 'Sepanjang tahun, daerah ini memiliki iklim yang hangat.' }
+  ],
+  see_also_grammar: [],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00139', level: 'n2', pattern: '〜によれば / 〜によると',
+  reading: '〜ni yoreba / 〜ni yoru to',
+  meaning: 'menurut ..., berdasarkan informasi dari ...',
+  cat: 'hearsay-report',
+  connection: 'N + によれば / N + によると',
+  desc: '<b>〜によれば</b> dan <b>〜によると</b> digunakan untuk mengutip sumber informasi — berita, laporan, ucapan seseorang, dsb. Biasanya diikuti oleh pernyataan atau klaim yang berasal dari sumber tersebut.',
+  nuance: 'Keduanya hampir identik dalam makna. によれば sedikit lebih formal dan lebih sering muncul dalam tulisan, sementara によると lebih umum dalam percakapan lisan. Keduanya berbeda dari に基づいて yang menyatakan bahwa sesuatu berlandaskan fakta/aturan secara aktif.',
+  examples: [
+    { jp: '天気予報<b>によると</b>、明日は雨が降るそうだ。', id: 'Menurut prakiraan cuaca, besok katanya akan hujan.' },
+    { jp: '報告書<b>によれば</b>、今年の売上は前年比で増加した。', id: 'Menurut laporan tersebut, penjualan tahun ini meningkat dibandingkan tahun lalu.' }
+  ],
+  see_also_grammar: [],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00140', level: 'n2', pattern: '〜を中心に',
+  reading: '〜wo chuushin ni',
+  meaning: 'berpusat pada ..., dengan ... sebagai inti / fokus utama',
+  cat: 'expression',
+  connection: 'N + を中心に / N + を中心として',
+  desc: '<b>〜を中心に</b> menyatakan bahwa sesuatu berfokus pada, berkisar pada, atau tersusun di sekitar suatu hal atau orang tertentu sebagai inti. Digunakan untuk distribusi, aktivitas, maupun organisasi.',
+  nuance: 'を中心として lebih formal dibandingkan を中心に. Keduanya dapat digunakan untuk lokasi fisik (駅を中心に = berpusat di stasiun), orang (彼を中心に = dengan dia sebagai tokoh utama), atau topik (この問題を中心に = berpusat pada masalah ini).',
+  examples: [
+    { jp: '駅<b>を中心に</b>、新しいショッピングモールが建設される。', id: 'Pusat perbelanjaan baru akan dibangun dengan berpusat di sekitar stasiun.' },
+    { jp: '若者<b>を中心に</b>、このアプリが人気を集めている。', id: 'Aplikasi ini tengah populer dengan kalangan anak muda sebagai penggunanya yang utama.' }
+  ],
+  see_also_grammar: [],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00141', level: 'n2', pattern: '〜をめぐって',
+  reading: '〜wo megutte',
+  meaning: 'seputar ..., berkenaan dengan (isu yang diperdebatkan) ...',
+  cat: 'expression',
+  connection: 'N + をめぐって / N + をめぐる + N',
+  desc: '<b>〜をめぐって</b> menyatakan bahwa berbagai pihak berdiskusi, berkonflik, atau beradu pendapat seputar suatu isu atau topik tertentu. Menyiratkan adanya kontroversi, perdebatan, atau kompetisi.',
+  nuance: 'Berbeda dari について (tentang, netral) — をめぐって secara implisit menyiratkan adanya perselisihan, kompetisi, atau isu yang diperdebatkan. Tidak tepat digunakan untuk percakapan biasa yang tidak mengandung konflik.',
+  examples: [
+    { jp: '領土問題<b>をめぐって</b>、両国間の交渉が続いている。', id: 'Negosiasi antara kedua negara terus berlangsung seputar masalah wilayah.' },
+    { jp: '遺産<b>をめぐる</b>争いが家族を分裂させた。', id: 'Pertikaian seputar warisan memecah belah keluarga tersebut.' }
+  ],
+  see_also_grammar: [],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00142', level: 'n2', pattern: '〜にかかわらず',
+  reading: '〜ni kakawarazu',
+  meaning: 'terlepas dari ..., tidak peduli ..., tanpa memandang ...',
+  cat: 'contrast-concession',
+  connection: 'N + にかかわらず / V-plain + かどうかにかかわらず / A-い + かどうかにかかわらず',
+  desc: '<b>〜にかかわらず</b> menyatakan bahwa suatu hal berlaku atau terjadi tanpa dipengaruhi oleh kondisi atau faktor yang disebutkan. Dapat digunakan dengan kata tanya, kondisi ganda (あるなし), maupun klausa.',
+  nuance: 'Lebih luas dan fleksibel dibandingkan を問わず yang biasanya mengikuti pasangan kata benda (男女を問わず, 年齢を問わず). にかかわらず bisa mengikuti klausa penuh dengan かどうか, dan lebih menekankan "tanpa terpengaruh oleh" faktor tersebut.',
+  examples: [
+    { jp: '天候<b>にかかわらず</b>、試合は予定通り行われます。', id: 'Terlepas dari cuaca, pertandingan akan tetap berlangsung sesuai jadwal.' },
+    { jp: '経験があるかどうか<b>にかかわらず</b>、応募できます。', id: 'Siapa pun boleh melamar, tidak peduli ada pengalaman atau tidak.' }
+  ],
+  see_also_grammar: [],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00143'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00143', level: 'n2', pattern: '〜を問わず',
+  reading: '〜wo towazu',
+  meaning: 'tanpa memandang ..., tanpa terkecuali ..., apapun ...-nya',
+  cat: 'contrast-concession',
+  connection: 'N + を問わず / N・N + を問わず',
+  desc: '<b>〜を問わず</b> menyatakan bahwa sesuatu berlaku tanpa pengecualian, terlepas dari kategori yang disebutkan. Biasanya digunakan dengan kata benda yang berpasangan atau yang mewakili suatu kategori.',
+  nuance: 'Berbeda dari にかかわらず yang lebih fleksibel — を問わず umumnya digunakan dengan kategori berpasangan (男女を問わず, 昼夜を問わず) atau kata yang mewakili kategori luas (経験を問わず, 国籍を問わず). Lebih formulaik dan sering muncul di pengumuman resmi.',
+  examples: [
+    { jp: '男女<b>を問わず</b>、誰でも参加できます。', id: 'Siapa pun boleh berpartisipasi, tanpa memandang jenis kelamin.' },
+    { jp: '昼夜<b>を問わず</b>、患者のために働いた。', id: 'Ia bekerja untuk para pasien tanpa memandang siang atau malam.' }
+  ],
+  see_also_grammar: [],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00142'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00144', level: 'n2', pattern: '〜たびに',
+  reading: '〜tabi ni',
+  meaning: 'setiap kali ..., tiap kali ... (terjadi)',
+  cat: 'sequential-temporal',
+  connection: 'V-dictionary + たびに / N + のたびに',
+  desc: '<b>〜たびに</b> menyatakan bahwa setiap kali suatu peristiwa atau tindakan terjadi, konsekuensi atau reaksi tertentu selalu mengikutinya. Menekankan pola berulang yang terpicu oleh suatu aksi.',
+  nuance: 'Berbeda dari ごとに yang menyatakan interval waktu atau jumlah yang teratur — たびに tidak harus teratur waktunya, melainkan terpicu oleh terjadinya suatu peristiwa. Sering menyiratkan emosi atau reaksi yang konsisten.',
+  examples: [
+    { jp: '故郷に帰る<b>たびに</b>、昔のことを思い出す。', id: 'Setiap kali pulang ke kampung halaman, ia selalu teringat masa lalu.' },
+    { jp: '試験<b>のたびに</b>、緊張してしまう。', id: 'Setiap kali ada ujian, ia selalu gugup.' }
+  ],
+  see_also_grammar: ['gn2-00145'],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00145'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00145', level: 'n2', pattern: '〜ごとに',
+  reading: '〜goto ni',
+  meaning: 'setiap ..., per ..., dengan interval teratur ...',
+  cat: 'sequential-temporal',
+  connection: 'N(waktu/jumlah) + ごとに / V-dictionary + ごとに',
+  desc: '<b>〜ごとに</b> menyatakan interval waktu atau satuan yang teratur, atau bahwa setiap unit/individu memiliki kondisi yang berbeda. Digunakan untuk keteraturan atau distribusi.',
+  nuance: 'Berbeda dari たびに (terpicu oleh peristiwa) — ごとに menyatakan keteraturan interval (3日ごとに = setiap 3 hari) atau distribusi per unit (人ごとに = setiap orang berbeda). Juga berbeda dari おきに (interval dengan jeda), ごとに mencakup seluruh unit.',
+  examples: [
+    { jp: '薬は6時間<b>ごとに</b>飲んでください。', id: 'Minumlah obat ini setiap 6 jam sekali.' },
+    { jp: '人<b>ごとに</b>、価値観が異なる。', id: 'Setiap orang memiliki nilai-nilai hidup yang berbeda-beda.' }
+  ],
+  see_also_grammar: ['gn2-00144'],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00144'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00146', level: 'n2', pattern: '〜につけ',
+  reading: '〜ni tsuke',
+  meaning: 'setiap kali ..., entah ... maupun ... (selalu menimbulkan perasaan tertentu)',
+  cat: 'sequential-temporal',
+  connection: 'V-dictionary + につけ / い-Adj(stem) + につけ / 〜につけ〜につけ',
+  desc: '<b>〜につけ</b> menyatakan bahwa setiap kali suatu situasi terjadi, selalu timbul perasaan atau reaksi tertentu. Sering digunakan dalam pola berpasangan (いいにつけ悪いにつけ) untuk menyatakan "bagaimanapun kondisinya".',
+  nuance: 'Berbeda dari たびに yang netral — につけ hampir selalu menyiratkan respons emosional (kerinduan, kekhawatiran, kekaguman). Pola ganda いいにつけ悪いにつけ berarti "baik maupun buruk, selalu...". Umumnya digunakan dalam tulisan atau gaya yang agak literer.',
+  examples: [
+    { jp: '故郷の写真を見る<b>につけ</b>、両親のことが恋しくなる。', id: 'Setiap kali melihat foto kampung halaman, ia selalu rindu pada orang tuanya.' },
+    { jp: 'いいに<b>つけ</b>悪いに<b>つけ</b>、彼女のことが気になる。', id: 'Entah dalam kondisi baik maupun buruk, ia selalu memikirkan perempuan itu.' }
+  ],
+  see_also_grammar: ['gn2-00144'],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: null, exceptions: null,
+  notes: 'Bentuk ganda 〜につけ〜につけ = entah...maupun... (kedua kondisi menghasilkan hasil yang sama).',
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00147', level: 'n2', pattern: '〜に過ぎない',
+  reading: '〜ni suginai',
+  meaning: 'hanyalah ..., tidak lebih dari ..., sekadar ...',
+  cat: 'extent-degree',
+  connection: 'N + に過ぎない / V-plain + に過ぎない',
+  desc: '<b>〜に過ぎない</b> menyatakan bahwa sesuatu tidak lebih dari apa yang disebutkan — meminimalkan atau meremehkan suatu hal. Memberikan kesan bahwa hal tersebut tidak sepenting yang dibayangkan.',
+  nuance: 'Berbeda dari だけ/しか (hanya, netral secara jumlah) — に過ぎない mengandung nuansa merendahkan atau menyatakan keterbatasan secara evaluatif. "Ini hanyalah... jangan terlalu berharap/dilebihkan." Umumnya digunakan dalam bahasa tulis atau formal.',
+  examples: [
+    { jp: 'これはあくまでも私の意見<b>に過ぎない</b>。', id: 'Ini tidak lebih dari sekadar pendapat pribadi saya.' },
+    { jp: '彼の成功は運<b>に過ぎない</b>と言う人もいる。', id: 'Ada yang mengatakan keberhasilannya hanyalah keberuntungan semata.' }
+  ],
+  see_also_grammar: [],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00148'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00148', level: 'n2', pattern: '〜に他ならない',
+  reading: '〜ni hoka naranai',
+  meaning: 'tidak lain adalah ..., memang itulah ..., sesungguhnya adalah ...',
+  cat: 'expression',
+  connection: 'N + に他ならない / V-plain + からに他ならない',
+  desc: '<b>〜に他ならない</b> menyatakan secara tegas bahwa sesuatu adalah persis hal yang disebutkan — tidak ada penjelasan atau identitas lain. Digunakan untuk menegaskan suatu identitas, alasan, atau esensi.',
+  nuance: 'Berlawanan nuansa dengan に過ぎない (hanyalah, merendahkan) — に他ならない bersifat afirmatif dan penuh keyakinan: "tidak ada yang lain, inilah tepatnya". Sering muncul dalam argumen, tulisan opini, atau ucapan yang penuh penekanan.',
+  examples: [
+    { jp: '彼が成功したのは、努力の結果<b>に他ならない</b>。', id: 'Keberhasilannya tidak lain adalah buah dari kerja kerasnya.' },
+    { jp: 'これこそ本物のもてなし<b>に他ならない</b>。', id: 'Inilah yang sesungguhnya disebut keramahan yang tulus.' }
+  ],
+  see_also_grammar: [],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00147'],
+  register: 'formal', exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00149', level: 'n2', pattern: '〜に違いない',
+  reading: '〜ni chigai nai',
+  meaning: 'pasti ..., tidak diragukan lagi ..., tentu saja ...',
+  cat: 'conjecture-possibility',
+  connection: 'V-plain / い-Adj-plain / な-Adj + に違いない / N + に違いない',
+  desc: '<b>〜に違いない</b> menyatakan keyakinan kuat dari penutur bahwa sesuatu pasti benar, berdasarkan bukti atau intuisi yang kuat. Tidak ada keraguan di benak penutur.',
+  nuance: 'Lebih kuat dari はずだ (seharusnya, berdasarkan logika) — に違いない mengungkapkan keyakinan personal yang hampir tidak tergoyahkan. はずだ lebih obyektif dan logis; に違いない lebih subyektif dan emosional. Keduanya berbeda dari だろう yang lebih umum.',
+  examples: [
+    { jp: 'あの電気は消えていない。まだ誰かいる<b>に違いない</b>。', id: 'Lampunya masih menyala. Pasti masih ada seseorang di dalam.' },
+    { jp: '彼女がそんなことをするはずがない。何か理由がある<b>に違いない</b>。', id: 'Tidak mungkin dia melakukan hal itu. Pasti ada alasan tertentu.' }
+  ],
+  see_also_grammar: [],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00150', level: 'n2', pattern: '〜というものだ',
+  reading: '〜to iu mono da',
+  meaning: 'itulah yang namanya ..., begitulah seharusnya ..., hakikatnya memang ...',
+  cat: 'expression',
+  connection: 'Clause + というものだ',
+  desc: '<b>〜というものだ</b> digunakan untuk menyatakan penilaian atau definisi tentang apa yang seharusnya atau apa yang hakikatnya benar — biasanya bernada evaluatif, bijaksana, atau menegaskan suatu kebenaran umum.',
+  nuance: 'Berbeda dari というものではない (yang menyangkal cara yang salah) — というものだ bersifat afirmatif, menegaskan "inilah yang disebut X yang sebenarnya" atau "begitulah seharusnya". Sering bernada agak menggurui atau filosofis.',
+  examples: [
+    { jp: '困っている人を助けるのが、本当の友情<b>というものだ</b>。', id: 'Menolong orang yang kesulitan, itulah yang namanya persahabatan sejati.' },
+    { jp: '失敗を恐れずに挑戦するのが、若さ<b>というものだ</b>。', id: 'Berani mencoba tanpa takut gagal — itulah hakikat dari masa muda.' }
+  ],
+  see_also_grammar: [],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00151', level: 'n2', pattern: '〜ということになる',
+  reading: '〜to iu koto ni naru',
+  meaning: 'artinya ..., berarti ..., kesimpulannya adalah ...',
+  cat: 'expression',
+  connection: 'Clause + ということになる',
+  desc: '<b>〜ということになる</b> digunakan untuk menarik kesimpulan atau konsekuensi logis dari premis yang telah disebutkan. Menyatakan bahwa jika kondisi A benar, maka secara logis hal B mengikutinya.',
+  nuance: 'Berbeda dari ということになっている (gn2-00129, konvensi/aturan yang berlaku) — ということになる menekankan proses berpikir logis dan penarikan kesimpulan. "Jika begitu... maka artinya...". Sering digunakan dalam argumen, diskusi, atau penjelasan.',
+  examples: [
+    { jp: '彼が来ないなら、会議は中止だ<b>ということになる</b>。', id: 'Kalau dia tidak datang, artinya rapat akan dibatalkan.' },
+    { jp: 'このデータが正しければ、計画は見直しが必要だ<b>ということになる</b>。', id: 'Jika data ini benar, berarti rencana perlu ditinjau ulang.' }
+  ],
+  see_also_grammar: ['gn2-00129'],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00129'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00152', level: 'n2', pattern: '〜ということになっている',
+  reading: '〜to iu koto ni natte iru',
+  meaning: 'sudah diputuskan/berlaku ketentuan bahwa ..., secara tidak tertulis sudah ...',
+  cat: 'obligation-necessity',
+  connection: 'Clause + ということになっている',
+  desc: '<b>〜ということになっている</b> menyatakan bahwa sesuatu telah menjadi aturan, konvensi, atau norma yang berlaku dalam suatu kelompok atau masyarakat — baik tertulis maupun tidak tertulis.',
+  nuance: 'Berbeda dari ことになっている (aturan/rencana resmi yang tertulis atau dijadwalkan) — ということになっている sering menyiratkan norma implisit atau konvensi sosial yang sudah dipahami bersama tanpa perlu ditulis. Lihat juga gn2-00129 untuk pembahasan serupa.',
+  examples: [
+    { jp: 'この会社では、上司より先に帰ってはいけない<b>ということになっている</b>。', id: 'Di perusahaan ini sudah menjadi norma bahwa karyawan tidak boleh pulang sebelum atasan.' },
+    { jp: '入社した社員は最初の一年は現場研修をする<b>ということになっている</b>。', id: 'Sudah menjadi ketentuan bahwa karyawan baru menjalani pelatihan lapangan selama satu tahun pertama.' }
+  ],
+  see_also_grammar: ['gn2-00129', 'gn2-00151'],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00129'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00153', level: 'n2', pattern: '〜とは限らない',
+  reading: '〜to wa kagiranai',
+  meaning: 'tidak selalu ..., belum tentu ..., tidak bisa dipastikan ...',
+  cat: 'conjecture-possibility',
+  connection: 'V-plain / い-Adj-plain / な-Adj + とは限らない / N + とは限らない',
+  desc: '<b>〜とは限らない</b> menyatakan bahwa suatu generalisasi atau asumsi tidak selalu berlaku — ada pengecualian atau kemungkinan yang berbeda. Digunakan untuk menyangkal kepastian atau pukul rata.',
+  nuance: 'Berbeda dari わけではない (bukan berarti dalam kasus tertentu) — とは限らない menekankan "tidak selalu terjadi secara umum" dan lebih bersifat logis/kritis. Lihat juga gn2-00130. Sering dipadukan dengan かならずしも untuk penekanan.',
+  examples: [
+    { jp: '一生懸命勉強すれば合格できる<b>とは限らない</b>。', id: 'Belum tentu belajar keras selalu menjamin kelulusan.' },
+    { jp: '外国語が話せる<b>とは限らない</b>から、通訳を用意した方がいい。', id: 'Belum tentu mereka bisa berbahasa asing, jadi lebih baik siapkan penerjemah.' }
+  ],
+  see_also_grammar: ['gn2-00130', 'gn2-00154'],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00154'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00154', level: 'n2', pattern: '〜わけではない',
+  reading: '〜wake de wa nai',
+  meaning: 'bukan berarti ..., tidak persis begitu ..., bukan karena ...',
+  cat: 'contrast-concession',
+  connection: 'V-plain + わけではない / い-Adj-plain + わけではない / N + というわけではない',
+  desc: '<b>〜わけではない</b> digunakan untuk membantah atau mengklarifikasi kesimpulan yang salah — menyatakan bahwa situasinya tidak persis seperti yang diasumsikan orang lain, meski ada kesan seolah demikian.',
+  nuance: 'Berbeda dari とは限らない (tidak selalu terjadi secara umum) — わけではない lebih spesifik pada kasus saat ini dan digunakan untuk mengklarifikasi asumsi yang berkembang dari situasi yang ada. Sering disertai penjelasan alternatif.',
+  examples: [
+    { jp: '嫌いな<b>わけではない</b>けど、今は気分じゃない。', id: 'Bukan berarti aku tidak suka, hanya saja sekarang tidak mood.' },
+    { jp: '彼が悪い<b>わけではない</b>。ただ状況が難しかっただけだ。', id: 'Bukan berarti dia yang salah. Situasinya saja yang memang sulit.' }
+  ],
+  see_also_grammar: ['gn2-00153'],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00153', 'gn2-00155'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00155', level: 'n2', pattern: '〜わけにはいかない',
+  reading: '〜wake ni wa ikanai',
+  meaning: 'tidak bisa begitu saja ..., tidak mungkin tidak ..., tidak ada alasan untuk tidak ...',
+  cat: 'obligation-necessity',
+  connection: 'V-dictionary + わけにはいかない / V-ない + わけにはいかない',
+  desc: '<b>〜わけにはいかない</b> menyatakan bahwa sesuatu tidak dapat dilakukan karena alasan moral, sosial, atau situasional yang kuat — meski ada keinginan untuk melakukannya. Bentuk negatif (ないわけにはいかない) menyatakan ketidakmampuan untuk tidak melakukan sesuatu.',
+  nuance: 'Berbeda dari てはいけない (larangan eksternal) — わけにはいかない adalah hambatan internal berdasarkan norma, tanggung jawab, atau rasa tidak pantas. "Secara logis atau sosial, aku tidak bisa melakukan ini." Bentuk ganda ないわけにはいかない = "tidak ada pilihan selain melakukan".',
+  examples: [
+    { jp: '大事な会議があるから、休む<b>わけにはいかない</b>。', id: 'Ada rapat penting, jadi tidak bisa begitu saja absen.' },
+    { jp: '頼まれた以上、断る<b>わけにはいかない</b>。', id: 'Karena sudah dimintai tolong, tidak mungkin menolaknya.' }
+  ],
+  see_also_grammar: [],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00160', 'gn2-00154'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00156', level: 'n2', pattern: '〜ないものでもない',
+  reading: '〜nai mono demo nai',
+  meaning: 'bukan tidak mungkin ..., bisa saja ..., tidak mustahil ...',
+  cat: 'conjecture-possibility',
+  connection: 'V-ない + ものでもない',
+  desc: '<b>〜ないものでもない</b> adalah ungkapan negatif ganda yang menyatakan kemungkinan dengan nada ragu-ragu atau hati-hati — "tidak bisa dikatakan tidak mungkin". Menyiratkan kesediaan atau kemungkinan yang kecil namun ada.',
+  nuance: 'Lebih ragu-ragu dibandingkan かもしれない (mungkin) atau できる (bisa) — ないものでもない menyiratkan keengganan atau kondisional. "Bukannya tidak bisa... kalau dipaksa/kondisi tepat." Digunakan saat berbicara secara hati-hati atau berdiplomasi.',
+  examples: [
+    { jp: '条件次第では、協力でき<b>ないものでもない</b>。', id: 'Tergantung kondisinya, bukan tidak mungkin saya bisa membantu.' },
+    { jp: '彼の言い分にも、一理あら<b>ないものでもない</b>。', id: 'Bukan berarti argumennya sama sekali tidak ada benarnya.' }
+  ],
+  see_also_grammar: ['gn2-00157'],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00157', level: 'n2', pattern: '〜かねない',
+  reading: '〜kanenai',
+  meaning: 'bisa saja (hal buruk) terjadi, ada kemungkinan (negatif) ...',
+  cat: 'conjecture-possibility',
+  connection: 'V-stem + かねない',
+  desc: '<b>〜かねない</b> menyatakan bahwa ada kemungkinan nyata bahwa hal yang tidak diinginkan atau berbahaya bisa terjadi. Selalu menyiratkan konsekuensi negatif yang perlu diwaspadai.',
+  nuance: 'Berlawanan dengan かねる (tidak bisa/sulit melakukan) meski berasal dari akar yang sama — かねない = "bisa saja terjadi (hal buruk)", bukan "tidak bisa melakukan". Selalu konteks negatif. Berbeda dari かもしれない yang netral.',
+  examples: [
+    { jp: '無理をすると、体を壊し<b>かねない</b>。', id: 'Kalau memaksakan diri, bisa-bisa merusak kesehatan.' },
+    { jp: 'そんな発言は誤解を招き<b>かねない</b>から、気をつけてください。', id: 'Pernyataan seperti itu bisa menimbulkan kesalahpahaman, jadi hati-hati.' }
+  ],
+  see_also_grammar: ['gn2-00158'],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00158'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00158', level: 'n2', pattern: '〜かねる',
+  reading: '〜kaneru',
+  meaning: 'sulit untuk ..., tidak bisa (dengan halus) ..., tidak sanggup ...',
+  cat: 'negative',
+  connection: 'V-stem + かねる',
+  desc: '<b>〜かねる</b> digunakan untuk menolak atau menyatakan ketidaksanggupan secara sopan dan tidak langsung. Menyiratkan bahwa ada hambatan psikologis, emosional, atau moral yang membuat pembicara tidak bisa melakukan sesuatu.',
+  nuance: 'Berbeda dari かねない (kemungkinan hal buruk) — かねる adalah penolakan halus dari sudut pandang penutur. Sering digunakan dalam konteks bisnis atau formal untuk menolak permintaan tanpa terkesan kasar. Contoh: 承りかねます (tidak dapat kami terima dengan hormat).',
+  examples: [
+    { jp: 'そのご要望にはお応えし<b>かねます</b>。', id: 'Dengan hormat, kami tidak dapat memenuhi permintaan tersebut.' },
+    { jp: 'あの映画は内容が残酷すぎて、見<b>かねる</b>。', id: 'Film itu terlalu kejam isinya, rasanya tidak sanggup menontonnya.' }
+  ],
+  see_also_grammar: ['gn2-00157'],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00157'],
+  register: 'formal', exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00159', level: 'n2', pattern: '〜得る / 〜得ない',
+  reading: '〜uri / 〜enai (atau: 〜eru / 〜enai)',
+  meaning: '〜得る: bisa terjadi, ada kemungkinan | 〜得ない: tidak mungkin terjadi, mustahil',
+  cat: 'potential',
+  connection: 'V-stem + 得る (うる/える) / V-stem + 得ない (えない)',
+  desc: '<b>〜得る</b> menyatakan kemungkinan bahwa sesuatu bisa terjadi atau bisa dilakukan dalam prinsipnya. Bentuk negatifnya <b>〜得ない</b> menyatakan kemustahilan yang mendasar. Sering digunakan dalam konteks formal dan akademik.',
+  nuance: 'Berbeda dari できる (bisa secara kemampuan fisik/praktis) — 得る menyatakan kemungkinan logis atau teoritis, bukan kemampuan konkret. 得る dibaca うる dalam bentuk formal/tertulis dan える dalam percakapan. 得ない selalu dibaca えない.',
+  examples: [
+    { jp: 'そのような事態は十分に起こり<b>得る</b>。', id: 'Situasi seperti itu sangat mungkin terjadi.' },
+    { jp: '一人の人間があらゆることを知ることは<b>あり得ない</b>。', id: 'Tidak mungkin seorang manusia mengetahui segalanya.' }
+  ],
+  see_also_grammar: ['gn2-00160'],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: null, exceptions: null,
+  notes: '得る dibaca うる (formal/tulisan) atau える (bicara). 得ない selalu えない.',
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00160', level: 'n2', pattern: '〜ざるを得ない',
+  reading: '〜zaru wo enai',
+  meaning: 'terpaksa ..., tidak punya pilihan selain ..., mau tidak mau ...',
+  cat: 'obligation-necessity',
+  connection: 'V-ない-stem + ざるを得ない (kecuali する → せざるを得ない)',
+  desc: '<b>〜ざるを得ない</b> menyatakan keterpaksaan yang tidak terelakkan — pembicara tidak ingin melakukan sesuatu, namun situasi memaksanya untuk melakukannya. Menekankan ketiadaan pilihan.',
+  nuance: 'Lebih kuat rasa terpaksanya dibandingkan しなければならない (harus melakukan) — ざるを得ない secara tegas menyiratkan "kalau bisa tidak mau, tapi tidak ada pilihan lain". Kata する menjadi せ (bukan しざる) — pengecualian penting yang sering salah.',
+  examples: [
+    { jp: '電車が止まって、歩か<b>ざるを得なかった</b>。', id: 'Karena kereta berhenti, terpaksa harus jalan kaki.' },
+    { jp: '証拠が出た以上、認め<b>ざるを得ない</b>。', id: 'Setelah bukti muncul, tidak ada pilihan selain mengakuinya.' },
+    { jp: 'コスト削減のため、プロジェクトを縮小<b>せざるを得ない</b>。', id: 'Demi penghematan biaya, terpaksa harus memperkecil skala proyek.' }
+  ],
+  see_also_grammar: ['gn2-00155'],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00155'],
+  register: null, exceptions: null,
+  notes: 'Pengecualian: する → せざるを得ない (bukan しざるを得ない).',
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00161', level: 'n2', pattern: '〜ものの',
+  reading: '〜mono no',
+  meaning: 'meskipun ..., walaupun ... (tapi kenyataannya berbeda dari harapan)',
+  cat: 'contrast-concession',
+  connection: 'V-plain + ものの / い-Adj-plain + ものの / な-Adj + な + ものの / N + である + ものの',
+  desc: '<b>〜ものの</b> menyatakan kontras antara kondisi yang terpenuhi (klausa pertama) dan kenyataan atau hasil yang tidak sesuai ekspektasi (klausa kedua). Menyiratkan rasa kecewa atau ketidaksesuaian.',
+  nuance: 'Berbeda dari けれど/が (kontras umum, netral) — ものの secara khas menekankan bahwa meski kondisi A tampak terpenuhi, hasilnya mengecewakan atau tidak sebagaimana yang seharusnya. Umumnya digunakan dalam bahasa tulis atau formal.',
+  examples: [
+    { jp: '頑張った<b>ものの</b>、試験に合格できなかった。', id: 'Meskipun sudah berusaha keras, tetap saja tidak bisa lulus ujian.' },
+    { jp: '謝った<b>ものの</b>、彼女はなかなか許してくれなかった。', id: 'Walaupun sudah minta maaf, dia tidak kunjung memaafkanku.' },
+    { jp: '計画は立てた<b>ものの</b>、実行する時間がない。', id: 'Meskipun rencana sudah dibuat, tidak ada waktu untuk melaksanakannya.' }
+  ],
+  see_also_grammar: [],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00162', 'gn2-00163'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00162', level: 'n2', pattern: '〜ながらも',
+  reading: '〜nagara mo',
+  meaning: 'walaupun ..., sambil tetap dalam kondisi ...',
+  cat: 'contrast-concession',
+  connection: 'V-stem + ながらも / い-Adj-plain + ながらも / な-Adj + ながらも / N + ながらも',
+  desc: '<b>〜ながらも</b> menyatakan bahwa dua kondisi yang tampak bertentangan terjadi secara bersamaan. Kondisi pertama tetap ada, namun kondisi kedua yang berbeda atau mengejutkan juga berlaku.',
+  nuance: 'Berbeda dari ものの (ekspektasi yang meleset) — ながらも lebih menekankan koeksistensi dua kondisi yang kontras secara simultan. "Dalam kondisi A sekalipun, tetap terjadi B." Bisa mengungkap semangat, ketabahan, atau ironi.',
+  examples: [
+    { jp: '貧しい<b>ながらも</b>、家族は幸せに暮らしていた。', id: 'Walaupun hidup dalam kemiskinan, keluarga itu tetap hidup bahagia.' },
+    { jp: '不安を感じ<b>ながらも</b>、彼は壇上に上がった。', id: 'Sambil tetap merasakan kecemasan, ia tetap naik ke atas panggung.' }
+  ],
+  see_also_grammar: ['gn2-00161'],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00161'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00163', level: 'n2', pattern: '〜とはいえ',
+  reading: '〜to wa ie',
+  meaning: 'meskipun begitu, walaupun memang demikian',
+  cat: 'contrast-concession',
+  connection: 'Clause + とはいえ / N + とはいえ',
+  desc: '<b>〜とはいえ</b> mengakui kebenaran kondisi pertama, namun kemudian menambahkan reservasi, pengecualian, atau kenyataan yang berbeda. Artinya "meski kita akui hal itu benar, namun..."',
+  nuance: 'Mirip dengan とはいうものの namun lebih ringkas dan umum digunakan. Berbeda dari ものの (menekankan ketidaksesuaian hasil) — とはいえ lebih netral dan digunakan untuk menambahkan nuansa atau batasan terhadap pernyataan yang sebelumnya diakui.',
+  examples: [
+    { jp: '春だ<b>とはいえ</b>、まだ肌寒い日が続く。', id: 'Meskipun memang sudah musim semi, hari-hari yang agak dingin masih berlanjut.' },
+    { jp: '失敗した<b>とはいえ</b>、努力したことは評価されるべきだ。', id: 'Walaupun memang gagal, usaha yang sudah dilakukan sepatutnya tetap diapresiasi.' }
+  ],
+  see_also_grammar: ['gn2-00189'],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00189', 'gn2-00161'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00164', level: 'n2', pattern: '〜にしては',
+  reading: '〜ni shite wa',
+  meaning: 'untuk ukuran ..., mengingat kondisinya sebagai ...',
+  cat: 'contrast-concession',
+  connection: 'V-plain + にしては / N + にしては',
+  desc: '<b>〜にしては</b> menyatakan bahwa hasil atau kondisi yang ada berbeda dari apa yang seharusnya diharapkan berdasarkan standar atau latar belakang yang disebutkan. Bisa bernada positif maupun negatif.',
+  nuance: 'Berbeda dari わりに (proporsi tidak sesuai secara umum) — にしては secara spesifik mengacu pada standar yang diharapkan dari kelompok atau kondisi tertentu. "Untuk seseorang dengan latar belakang X, hasilnya Y cukup mengejutkan."',
+  examples: [
+    { jp: '初めて作った料理<b>にしては</b>、とてもおいしい。', id: 'Untuk ukuran masakan yang dibuat pertama kali, ini sangat enak.' },
+    { jp: '10年勉強した<b>にしては</b>、日本語があまり上手ではない。', id: 'Mengingat sudah belajar 10 tahun, kemampuan bahasa Jepangnya tidak terlalu bagus.' }
+  ],
+  see_also_grammar: ['gn2-00165'],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00165'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00165', level: 'n2', pattern: '〜わりに',
+  reading: '〜wari ni',
+  meaning: 'padahal seharusnya ..., tidak sebanding dengan ..., tidak sesuai dengan ...',
+  cat: 'contrast-concession',
+  connection: 'V-plain + わりに / い-Adj-plain + わりに / な-Adj + な + わりに / N + の + わりに',
+  desc: '<b>〜わりに</b> menyatakan bahwa hasil atau kondisi tidak proporsional atau tidak sebanding dengan apa yang disebutkan. Mengungkapkan ketidaksesuaian antara kondisi dan hasilnya.',
+  nuance: 'Berbeda dari にしては (standar kelompok/latar belakang tertentu) — わりに lebih menekankan "dibandingkan dengan tingkatan/jumlah X, hasilnya Y tidak sebanding". Sering digunakan untuk penilaian nilai atau kualitas.',
+  examples: [
+    { jp: '値段が高い<b>わりに</b>、品質がよくない。', id: 'Padahal harganya mahal, tapi kualitasnya tidak bagus.' },
+    { jp: '忙しい<b>わりに</b>、彼はいつも元気そうだ。', id: 'Padahal selalu sibuk, dia terlihat selalu bersemangat.' }
+  ],
+  see_also_grammar: ['gn2-00164'],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00164'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00166', level: 'n2', pattern: '〜だけあって',
+  reading: '〜dake atte',
+  meaning: 'memang pantas karena ..., wajar saja karena ..., sebanding dengan ...',
+  cat: 'reason-cause',
+  connection: 'V-plain + だけあって / い-Adj-plain + だけあって / な-Adj + な + だけあって / N + だけあって',
+  desc: '<b>〜だけあって</b> menyatakan bahwa hasil atau kualitas yang ada memang sepadan dan wajar mengingat latar belakang, kemampuan, atau kondisi yang disebutkan. Menekankan kesesuaian antara penyebab dan hasil — selalu bernada positif.',
+  nuance: 'Berbeda dari だけに (bisa positif atau negatif, menekankan dampak emosional) — だけあって selalu afirmatif dan digunakan untuk memuji atau mengakui bahwa sesuatu memang layak mendapat hasilnya. "Memang pantas karena memang benar-benar X."',
+  examples: [
+    { jp: 'プロ<b>だけあって</b>、仕上がりが全然違う。', id: 'Memang pantas karena seorang profesional — hasilnya jauh berbeda.' },
+    { jp: '長年修行した<b>だけあって</b>、その料理人の腕は本物だ。', id: 'Wajar saja mengingat sudah berlatih bertahun-tahun — keahlian juru masak itu memang nyata.' }
+  ],
+  see_also_grammar: ['gn2-00167'],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00167'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00167', level: 'n2', pattern: '〜だけに',
+  reading: '〜dake ni',
+  meaning: 'justru karena ..., tepat karena itulah ...',
+  cat: 'reason-cause',
+  connection: 'V-plain + だけに / い-Adj-plain + だけに / な-Adj + な + だけに / N + だけに',
+  desc: '<b>〜だけに</b> menyatakan bahwa justru karena kondisi yang disebutkan, dampak atau perasaan yang muncul terasa lebih kuat atau lebih bermakna. Menekankan hubungan sebab-akibat yang intens, bisa positif maupun negatif.',
+  nuance: 'Berbeda dari だけあって (selalu afirmatif, memuji) — だけに lebih menekankan dampak emosional yang diperkuat oleh alasan tersebut. "Justru karena X itulah, Y terasa semakin kuat/dalam." Sering digunakan untuk mengungkapkan rasa kecewa, terharu, atau ironi.',
+  examples: [
+    { jp: '期待していた<b>だけに</b>、失敗したときのショックが大きかった。', id: 'Justru karena sudah berharap besar, kekecewaan saat gagal pun terasa sangat dalam.' },
+    { jp: '親友<b>だけに</b>、裏切られたときのダメージは計り知れない。', id: 'Justru karena dia sahabat karib, luka karena pengkhianatannya tidak terkira.' }
+  ],
+  see_also_grammar: ['gn2-00166'],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00166', 'gn2-00168'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00168', level: 'n2', pattern: '〜からこそ',
+  reading: '〜kara koso',
+  meaning: 'justru karena itulah ..., memang karena ... (dan bukan alasan lain)',
+  cat: 'reason-cause',
+  connection: 'V-plain + からこそ / い-Adj-plain + からこそ / な-Adj + だからこそ / N + だからこそ',
+  desc: '<b>〜からこそ</b> menegaskan bahwa faktor yang disebutkan adalah alasan yang sesungguhnya dan paling mendasar — bukan alasan lain. Menambahkan penekanan eksklusif pada sebab yang disebutkan.',
+  nuance: 'Berbeda dari から (karena, umum dan netral) — からこそ menambahkan tekanan kuat: "justru faktor inilah, dan bukan yang lain, yang menjadi alasan sebenarnya". Sering digunakan dalam argumen persuasif, pembelaan diri, atau pernyataan emosional.',
+  examples: [
+    { jp: '大変だ<b>からこそ</b>、乗り越えたときに達成感が生まれる。', id: 'Justru karena sulitnya itulah, rasa pencapaian muncul saat berhasil melewatinya.' },
+    { jp: '心配している<b>からこそ</b>、厳しいことを言うのだ。', id: 'Justru karena aku khawatir, aku mengatakannya dengan keras.' }
+  ],
+  see_also_grammar: ['gn2-00167'],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00167'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00169', level: 'n2', pattern: '〜からといって',
+  reading: '〜kara to itte',
+  meaning: 'hanya karena ... bukan berarti ..., meskipun ... tidak berarti boleh ...',
+  cat: 'contrast-concession',
+  connection: 'V-plain + からといって / い-Adj-plain + からといって / N + だからといって',
+  desc: '<b>〜からといって</b> digunakan untuk menyanggah justifikasi atau alasan yang dianggap berlebihan. Menyatakan bahwa meski alasan pertama ada, alasan itu tidak cukup untuk membenarkan tindakan atau kesimpulan berikutnya.',
+  nuance: 'Berbeda dari からには (karena sudah, maka ada kewajiban) — からといって justru berfungsi sebaliknya: menolak anggapan bahwa alasan A secara otomatis membenarkan B. Biasanya diikuti kalimat negatif atau larangan.',
+  examples: [
+    { jp: '忙しい<b>からといって</b>、礼儀を忘れていいわけではない。', id: 'Hanya karena sibuk bukan berarti boleh melupakan sopan santun.' },
+    { jp: '失敗した<b>からといって</b>、すべてを諦める必要はない。', id: 'Hanya karena gagal tidak berarti harus menyerah pada segalanya.' }
+  ],
+  see_also_grammar: ['gn2-00170'],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00170'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00170', level: 'n2', pattern: '〜からには',
+  reading: '〜kara ni wa',
+  meaning: 'karena sudah ..., maka harus ...; karena memang begitu, sudah selayaknya ...',
+  cat: 'obligation-necessity',
+  connection: 'V-plain + からには / N + である + からには',
+  desc: '<b>〜からには</b> menyatakan bahwa karena suatu kondisi atau situasi sudah terjadi atau benar, maka ada tanggung jawab, kewajiban, atau konsekuensi logis yang harus diikuti. Menekankan komitmen atau konsekuensi yang tidak terelakkan.',
+  nuance: 'Lebih spoken dibandingkan 上は dan 以上は yang lebih formal/tertulis. Semua tiga pola berbagi makna dasar, namun からには paling sering digunakan dalam percakapan sehari-hari dan tulisan semi-formal.',
+  examples: [
+    { jp: '約束した<b>からには</b>、必ず守らなければならない。', id: 'Karena sudah berjanji, harus ditepati tanpa kecuali.' },
+    { jp: '参加する<b>からには</b>、全力で頑張ります。', id: 'Karena sudah memutuskan ikut, saya akan berusaha sepenuh hati.' }
+  ],
+  see_also_grammar: ['gn2-00171', 'gn2-00172'],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00171', 'gn2-00172', 'gn2-00169'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00171', level: 'n2', pattern: '〜上は',
+  reading: '〜ue wa',
+  meaning: 'karena sudah ..., maka harus ... (formal, mengungkapkan tekad)',
+  cat: 'obligation-necessity',
+  connection: 'V-plain + 上は',
+  desc: '<b>〜上は</b> menyatakan bahwa karena situasi atau keputusan sudah final, ada kewajiban atau tekad yang mengikutinya. Lebih formal dan kaku dibandingkan からには, sering muncul dalam pidato, tulisan resmi, atau ungkapan tekad yang sungguh-sungguh.',
+  nuance: 'Dari tiga pola serupa (からには / 以上は / 上は), 上は paling formal dan paling jarang dalam percakapan. Berbagi makna inti dengan keduanya — mengungkapkan konsekuensi yang logis dan wajib dari kondisi yang sudah terjadi.',
+  examples: [
+    { jp: '引き受けた<b>上は</b>、最後まで責任を持ってやり遂げる。', id: 'Karena sudah menerimanya, saya akan menyelesaikannya dengan penuh tanggung jawab sampai akhir.' },
+    { jp: '社会人となった<b>上は</b>、自覚を持って行動しなければならない。', id: 'Karena sudah menjadi anggota masyarakat dewasa, harus bertindak dengan penuh kesadaran.' }
+  ],
+  see_also_grammar: ['gn2-00170', 'gn2-00172'],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00170', 'gn2-00172'],
+  register: 'formal', exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00172', level: 'n2', pattern: '〜以上は',
+  reading: '〜ijou wa',
+  meaning: 'karena sudah ..., maka harus ...; selama masih dalam kondisi ...',
+  cat: 'obligation-necessity',
+  connection: 'V-plain + 以上は / N + である + 以上は',
+  desc: '<b>〜以上は</b> memiliki dua nuansa: (1) karena situasi sudah demikian, ada kewajiban yang mengikutinya; (2) selama kondisi tertentu masih berlaku, hal lain harus terpenuhi. Lebih formal dari からには namun lebih umum dari 上は.',
+  nuance: 'Dari tiga pola (からには / 以上は / 上は): 以上は adalah posisi tengah — lebih formal dari からには, namun tidak sekaku 上は. Juga bisa menyatakan kondisi berkelanjutan "selama masih X", sedangkan からには dan 上は lebih terfokus pada momen keputusan.',
+  examples: [
+    { jp: 'プロである<b>以上は</b>、常に最善を尽くすべきだ。', id: 'Selama masih seorang profesional, sudah seharusnya selalu memberikan yang terbaik.' },
+    { jp: '決めた<b>以上は</b>、後悔しないようにしよう。', id: 'Karena sudah memutuskan, jangan sampai menyesal nantinya.' }
+  ],
+  see_also_grammar: ['gn2-00170', 'gn2-00171'],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00170', 'gn2-00171'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00173', level: 'n2', pattern: '〜べきだ',
+  reading: '〜beki da',
+  meaning: 'seharusnya ..., sudah selayaknya ..., wajib secara moral ...',
+  cat: 'obligation-necessity',
+  connection: 'V-dictionary + べきだ (kecuali: する → すべきだ atau するべきだ)',
+  desc: '<b>〜べきだ</b> menyatakan kewajiban atau keharusan berdasarkan penilaian moral, norma sosial, atau nalar penutur. Mengungkapkan bahwa sesuatu sudah selayaknya dilakukan menurut standar yang berlaku.',
+  nuance: 'Berbeda dari なければならない (keharusan eksternal/aturan) — べきだ adalah penilaian normatif penutur: "menurut saya/norma ini, seharusnya demikian". Lebih bernada menggurui atau memberi saran kuat. する menjadi すべき atau するべき (keduanya diterima).',
+  examples: [
+    { jp: '間違えたなら、素直に謝る<b>べきだ</b>。', id: 'Kalau memang salah, seharusnya minta maaf dengan tulus.' },
+    { jp: '健康のために、もっと野菜を食べる<b>べきだ</b>。', id: 'Demi kesehatan, seharusnya makan lebih banyak sayuran.' }
+  ],
+  see_also_grammar: ['gn2-00174'],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00174'],
+  register: null, exceptions: null,
+  notes: 'する → すべきだ atau するべきだ (keduanya diterima; すべきだ lebih formal).',
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00174', level: 'n2', pattern: '〜べきではない',
+  reading: '〜beki de wa nai',
+  meaning: 'seharusnya tidak ..., tidak sepantasnya ..., tidak layak secara moral ...',
+  cat: 'obligation-necessity',
+  connection: 'V-dictionary + べきではない (kecuali: する → すべきではない)',
+  desc: '<b>〜べきではない</b> adalah bentuk negatif dari べきだ — menyatakan bahwa suatu tindakan tidak seharusnya dilakukan berdasarkan penilaian moral atau norma sosial penutur.',
+  nuance: 'Berbeda dari てはいけない (larangan yang berasal dari aturan atau instruksi eksternal) — べきではない adalah penilaian normatif internal penutur. "Menurut saya atau menurut norma yang berlaku, ini tidak selayaknya dilakukan." Bernada lebih serius dan formal.',
+  examples: [
+    { jp: '人の秘密をむやみに話す<b>べきではない</b>。', id: 'Seharusnya tidak sembarangan membocorkan rahasia orang lain.' },
+    { jp: '感情的になって判断する<b>べきではない</b>。', id: 'Tidak sepantasnya mengambil keputusan dalam keadaan emosi.' }
+  ],
+  see_also_grammar: ['gn2-00173'],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00173', 'gn2-00176'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00175', level: 'n2', pattern: '〜ものだ',
+  reading: '〜mono da',
+  meaning: 'memang begitulah ... (kebenaran umum) / dulu sering ... (kenangan) / sungguh ingin ... (keinginan kuat)',
+  cat: 'expression',
+  connection: 'V-plain + ものだ / い-Adj-plain + ものだ / V-た + ものだ (kenangan) / V-たい + ものだ (keinginan)',
+  desc: '<b>〜ものだ</b> memiliki tiga penggunaan utama: (1) menyatakan kebenaran umum atau norma (子供は元気なものだ); (2) mengungkapkan kenangan masa lalu dengan nostalgia (よく遊んだものだ); (3) mengungkapkan keinginan atau harapan yang kuat (〜たいものだ).',
+  nuance: 'Berbeda dari というものだ (menegaskan esensi/hakikat sesuatu) — ものだ lebih beragam penggunaannya. Konteks menentukan makna: bentuk た untuk kenangan, bentuk たい untuk keinginan, dan bentuk present untuk norma. Perhatikan konteksnya dengan cermat.',
+  examples: [
+    { jp: '人生というのは、思い通りにいかない<b>ものだ</b>。', id: 'Memang begitulah hidup — tidak selalu berjalan sesuai keinginan.' },
+    { jp: '子どものころ、よくこの公園で遊んだ<b>ものだ</b>。', id: 'Waktu kecil dulu, sering sekali bermain di taman ini.' }
+  ],
+  see_also_grammar: ['gn2-00176'],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00176'],
+  register: null, exceptions: null,
+  notes: 'Tiga fungsi: (1) norma umum (plain+ものだ), (2) kenangan (た+ものだ), (3) keinginan (たい+ものだ).',
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00176', level: 'n2', pattern: '〜ものではない',
+  reading: '〜mono de wa nai',
+  meaning: 'seharusnya tidak ..., tidak sepantasnya dilakukan ..., orang yang baik tidak akan ...',
+  cat: 'obligation-necessity',
+  connection: 'V-dictionary + ものではない',
+  desc: '<b>〜ものではない</b> menyatakan bahwa suatu tindakan tidak pantas atau tidak sepantasnya dilakukan berdasarkan norma sosial atau kebiasaan umum. Bernada menggurui atau mengingatkan.',
+  nuance: 'Berbeda dari べきではない (penilaian moral penutur) — ものではない lebih menekankan norma sosial yang sudah berlaku umum: "orang yang tahu sopan santun tidak akan melakukan ini". Sering digunakan oleh orang yang lebih tua untuk menasihati.',
+  examples: [
+    { jp: '人の悪口を言う<b>ものではない</b>。', id: 'Tidak sepantasnya mengumpat orang lain.' },
+    { jp: '食べ物を粗末にする<b>ものではない</b>。', id: 'Tidak seharusnya menyia-nyiakan makanan.' }
+  ],
+  see_also_grammar: ['gn2-00173', 'gn2-00175'],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00174', 'gn2-00175'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00177', level: 'n2', pattern: '〜てたまらない',
+  reading: '〜te tamaranai',
+  meaning: 'tidak tahan ..., sangat ... (perasaan/sensasi yang tidak bisa ditahan)',
+  cat: 'extent-degree',
+  connection: 'V-て + たまらない / い-Adj-くて + たまらない / な-Adj-で + たまらない',
+  desc: '<b>〜てたまらない</b> mengungkapkan perasaan, keinginan, atau sensasi fisik yang sangat kuat hingga tidak bisa ditahan. Selalu mengacu pada kondisi involunter — sesuatu yang dirasakan, bukan dipilih.',
+  nuance: 'Lebih spoken dan intens dibandingkan てならない — てたまらない bisa digunakan untuk perasaan emosional (寂しくてたまらない) maupun sensasi fisik (お腹が空いてたまらない). てならない lebih formal dan terbatas pada perasaan mendalam, tidak untuk sensasi fisik.',
+  examples: [
+    { jp: '試験前で、緊張し<b>てたまらない</b>。', id: 'Menjelang ujian, rasanya tidak tahan gugupnya.' },
+    { jp: '彼女に会いたく<b>てたまらない</b>。', id: 'Tidak tahan rasanya ingin bertemu dengannya.' },
+    { jp: '辛いものを食べて、口が痛く<b>てたまらない</b>。', id: 'Setelah makan yang pedas, mulutnya terasa sakit tidak tertahankan.' }
+  ],
+  see_also_grammar: ['gn2-00178'],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00178'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00178', level: 'n2', pattern: '〜てならない',
+  reading: '〜te naranai',
+  meaning: 'sangat ... tanpa bisa ditahan (perasaan mendalam, formal)',
+  cat: 'extent-degree',
+  connection: 'V-て + ならない / い-Adj-くて + ならない',
+  desc: '<b>〜てならない</b> mengungkapkan perasaan yang sangat mendalam dan tidak bisa dikendalikan — seperti kerinduan, kekhawatiran, rasa haru, atau kesedihan yang muncul secara alami. Lebih formal dan literer dari てたまらない.',
+  nuance: 'Berbeda dari てたまらない (bisa untuk sensasi fisik dan lebih spoken) — てならない terbatas pada perasaan emosional atau psikologis yang mendalam, dan tidak bisa digunakan untuk sensasi fisik seperti lapar atau sakit. Umumnya muncul dalam tulisan, sastra, atau bahasa formal.',
+  examples: [
+    { jp: '故郷のことが懐かしく<b>てならない</b>。', id: 'Rasa rindu pada kampung halaman sungguh tidak terbendung.' },
+    { jp: '彼の将来が心配で<b>てならない</b>。', id: 'Kekhawatiran akan masa depannya sungguh tidak bisa kubendung.' }
+  ],
+  see_also_grammar: ['gn2-00177'],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00177'],
+  register: 'formal', exceptions: null,
+  notes: 'Tidak bisa digunakan untuk sensasi fisik (lapar, sakit, dll) — hanya untuk perasaan emosional/psikologis.',
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00179', level: 'n2', pattern: '〜ずにはいられない',
+  reading: '〜zu ni wa irarenai',
+  meaning: 'tidak bisa tidak ..., tidak sanggup menahan diri untuk tidak ...',
+  cat: 'obligation-necessity',
+  connection: 'V-ない-stem + ずにはいられない (kecuali: する → せずにはいられない)',
+  desc: '<b>〜ずにはいられない</b> menyatakan bahwa penutur tidak bisa menahan dorongan internal untuk melakukan sesuatu — suatu tindakan yang terjadi karena tidak sanggup menahannya, bukan karena pilihan sadar.',
+  nuance: 'Berbeda dari ざるを得ない (terpaksa karena tekanan atau situasi eksternal) — ずにはいられない menekankan dorongan atau perasaan dari dalam diri sendiri yang tidak bisa dilawan. "Tidak bisa menahan diri untuk tidak melakukan X."',
+  examples: [
+    { jp: 'あの映画を見たら、泣か<b>ずにはいられない</b>。', id: 'Kalau menonton film itu, tidak mungkin bisa menahan tangis.' },
+    { jp: '不正を見たら、指摘せ<b>ずにはいられない</b>性格だ。', id: 'Ia memang berkepribadian tidak sanggup diam saat melihat ketidakadilan.' }
+  ],
+  see_also_grammar: ['gn2-00180'],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00180'],
+  register: null, exceptions: null,
+  notes: 'する → せずにはいられない. Dorongan bersifat internal/psikologis, berbeda dari を余儀なくされる yang bersifat eksternal.',
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00180', level: 'n2', pattern: '〜を余儀なくされる',
+  reading: '〜wo yogi naku sareru',
+  meaning: 'terpaksa ..., dipaksa oleh keadaan untuk ...',
+  cat: 'obligation-necessity',
+  connection: 'N + を余儀なくされる / V-plain + ことを余儀なくされる',
+  desc: '<b>〜を余儀なくされる</b> menyatakan bahwa seseorang dipaksa oleh situasi, kondisi, atau pihak lain untuk melakukan sesuatu yang tidak diinginkan. Menekankan keterpaksaan yang datang dari luar diri pelaku.',
+  nuance: 'Berbeda dari ずにはいられない (dorongan internal yang tak terbendung) dan ざるを得ない (terpaksa dari perspektif penutur aktif) — を余儀なくされる lebih pasif dan formal. Sering muncul dalam berita atau laporan: "X dipaksa untuk melakukan Y oleh keadaan Z."',
+  examples: [
+    { jp: '台風の影響で、イベントは中止<b>を余儀なくされた</b>。', id: 'Akibat topan, acara tersebut terpaksa harus dibatalkan.' },
+    { jp: '業績不振により、会社は大規模なリストラ<b>を余儀なくされた</b>。', id: 'Akibat kinerja yang buruk, perusahaan dipaksa keadaan untuk melakukan PHK besar-besaran.' }
+  ],
+  see_also_grammar: ['gn2-00179'],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00179'],
+  register: 'formal', exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00181', level: 'n2', pattern: '〜はおろか',
+  reading: '〜wa oroka',
+  meaning: 'apalagi ..., jangankan ..., bahkan ... pun tidak',
+  cat: 'listing-addition',
+  connection: 'N + はおろか',
+  desc: '<b>〜はおろか</b> menyatakan bahwa bahkan hal yang lebih mudah atau lebih dasar pun tidak bisa dilakukan atau tidak terjadi, apalagi hal yang lebih sulit. Menekankan keparahan atau ekstremnya suatu kondisi.',
+  nuance: 'Berbeda dari はもとより (A sudah pasti, B juga) — はおろか biasanya digunakan dalam konteks negatif atau mengejutkan. "Jangankan X yang sulit, bahkan Y yang mudah pun tidak bisa." Sering mempertegas keadaan yang sangat buruk atau mengejutkan.',
+  examples: [
+    { jp: '食費<b>はおろか</b>、家賃も払えない状況だ。', id: 'Jangankan biaya makan, bahkan uang sewa pun tidak bisa dibayar.' },
+    { jp: '漢字<b>はおろか</b>、ひらがなも読めない。', id: 'Jangankan kanji, bahkan hiragana pun tidak bisa dibaca.' }
+  ],
+  see_also_grammar: ['gn2-00182'],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00182'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00182', level: 'n2', pattern: '〜はもとより',
+  reading: '〜wa moto yori',
+  meaning: 'sudah pasti ..., belum lagi ..., A sudah jelas, apalagi B',
+  cat: 'listing-addition',
+  connection: 'N + はもとより',
+  desc: '<b>〜はもとより</b> menyatakan bahwa hal pertama (A) sudah jelas dan tidak perlu dipertanyakan, ditambah lagi dengan hal lain (B) yang juga berlaku. Menekankan bahwa A adalah titik awal yang sudah pasti, dan B menambah cakupannya.',
+  nuance: 'Berbeda dari はおろか (konteks negatif, jangankan A bahkan B pun tidak) — はもとより umumnya netral atau positif: "A sudah pasti, dan B juga". Lebih formal dari だけでなく. Sering muncul dalam tulisan resmi atau deskripsi produk/jasa.',
+  examples: [
+    { jp: '日本語<b>はもとより</b>、英語や中国語も話せる。', id: 'Bahasa Jepang sudah pasti, belum lagi ia juga bisa berbicara bahasa Inggris dan Mandarin.' },
+    { jp: '国内<b>はもとより</b>、海外でも高い評価を受けている。', id: 'Di dalam negeri sudah pasti, di luar negeri pun mendapat pengakuan tinggi.' }
+  ],
+  see_also_grammar: ['gn2-00181', 'gn2-00184'],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00181'],
+  register: 'formal', exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00183', level: 'n2', pattern: '〜にとどまらず',
+  reading: '〜ni todomarazu',
+  meaning: 'tidak hanya ..., melampaui batas ..., tidak terbatas pada ...',
+  cat: 'listing-addition',
+  connection: 'N + にとどまらず / V-plain + にとどまらず',
+  desc: '<b>〜にとどまらず</b> menyatakan bahwa dampak, pengaruh, atau cakupan sesuatu tidak berhenti pada hal yang disebutkan, melainkan meluas lebih jauh. Menekankan jangkauan yang melebihi batas yang diharapkan.',
+  nuance: 'Berbeda dari のみならず (bukan hanya, formal dan netral) — にとどまらず lebih menekankan aspek penyebaran atau perluasan yang dinamis: sesuatu yang awalnya ada di A, kini sudah melampaui A. Sering digunakan untuk tren, pengaruh, atau bencana yang meluas.',
+  examples: [
+    { jp: 'その影響は国内<b>にとどまらず</b>、海外にも広がっている。', id: 'Dampaknya tidak terbatas di dalam negeri saja, sudah meluas hingga ke luar negeri.' },
+    { jp: '問題は個人レベル<b>にとどまらず</b>、社会全体に関わっている。', id: 'Masalah ini tidak hanya pada level individu, melainkan menyangkut seluruh masyarakat.' }
+  ],
+  see_also_grammar: ['gn2-00184'],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00184'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00184', level: 'n2', pattern: '〜のみならず',
+  reading: '〜nomi narazu',
+  meaning: 'bukan hanya ..., tapi juga ..., tidak hanya ... melainkan juga ...',
+  cat: 'listing-addition',
+  connection: 'N + のみならず / V-plain + のみならず / い-Adj-plain + のみならず',
+  desc: '<b>〜のみならず</b> menyatakan penambahan — tidak hanya hal pertama yang berlaku, tetapi juga hal kedua. Setara dengan だけでなく namun jauh lebih formal dan sering digunakan dalam tulisan akademik atau resmi.',
+  nuance: 'Secara makna identik dengan だけでなく (tidak hanya ... tapi juga) — perbedaannya murni pada register. のみならず sangat formal dan cocok untuk tulisan, sedangkan だけでなく lebih umum dan bisa digunakan di mana saja. Berbeda dari にとどまらず yang menekankan penyebaran.',
+  examples: [
+    { jp: '彼女は美しい<b>のみならず</b>、非常に聡明でもある。', id: 'Bukan hanya cantik, ia juga sangat cerdas.' },
+    { jp: 'この薬は痛みを和らげる<b>のみならず</b>、炎症も抑える効果がある。', id: 'Obat ini bukan hanya meredakan nyeri, tetapi juga memiliki efek menekan peradangan.' }
+  ],
+  see_also_grammar: ['gn2-00182', 'gn2-00183'],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00183'],
+  register: 'formal', exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00185', level: 'n2', pattern: '〜ことか',
+  reading: '〜koto ka',
+  meaning: 'betapa ..., sungguh ... (ekspresi perasaan yang sangat kuat)',
+  cat: 'sentence-final-modality',
+  connection: 'どんなに / どれほど / 何度 + V-plain + ことか',
+  desc: '<b>〜ことか</b> digunakan bersama kata tanya (どんなに, どれほど, 何度) untuk mengungkapkan betapa besar, banyak, atau dalamnya suatu perasaan atau pengalaman. Merupakan ungkapan emosional yang kuat, sering bernada haru atau menyesal.',
+  nuance: 'Selalu membutuhkan kata tanya di depannya — tidak bisa berdiri sendiri. Berbeda dari なんて (eksklamasi biasa) — ことか lebih formal dan literer, sering muncul dalam tulisan, pidato, atau ungkapan perasaan yang dalam. Jarang dalam percakapan kasual.',
+  examples: [
+    { jp: 'あなたに会いたいと、どれほど思った<b>ことか</b>。', id: 'Betapa seringnya aku memikirkan betapa inginnya bertemu denganmu.' },
+    { jp: '何度失敗した<b>ことか</b>、それでも諦めなかった。', id: 'Betapa banyak kali ia gagal, namun tetap tidak menyerah.' }
+  ],
+  see_also_grammar: [],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: null, exceptions: null,
+  notes: 'Wajib didahului kata tanya: どれほど、どんなに、何度 dll. Tidak bisa berdiri sendiri.',
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00186', level: 'n2', pattern: '〜ことのないよう',
+  reading: '〜koto no nai you',
+  meaning: 'agar tidak terjadi ..., untuk mencegah agar ... tidak terjadi',
+  cat: 'purpose',
+  connection: 'V-dictionary + ことのないよう / V-ない + ことのないよう',
+  desc: '<b>〜ことのないよう</b> digunakan untuk menyatakan tujuan pencegahan — melakukan sesuatu agar suatu kejadian yang tidak diinginkan tidak terjadi. Lebih formal dibandingkan ないように.',
+  nuance: 'Berbeda dari ないように (jangan sampai, lebih umum dan spoken) — ことのないよう lebih formal dan sering muncul dalam instruksi tertulis, pengumuman resmi, atau peringatan. Menekankan pencegahan kejadian yang dianggap serius.',
+  examples: [
+    { jp: '同じ過ちを繰り返す<b>ことのないよう</b>、しっかり反省してください。', id: 'Mohon introspeksi dengan sungguh-sungguh agar kesalahan yang sama tidak terulang.' },
+    { jp: '情報が漏れる<b>ことのないよう</b>、管理を徹底してください。', id: 'Mohon perketat pengelolaan agar informasi tidak bocor.' }
+  ],
+  see_also_grammar: [],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: 'formal', exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00187', level: 'n2', pattern: '〜ようでは',
+  reading: '〜you de wa',
+  meaning: 'kalau sampai ..., kalau kondisinya seperti itu ...',
+  cat: 'conditional-tara',
+  connection: 'V-plain + ようでは / い-Adj-plain + ようでは / N + の + ようでは',
+  desc: '<b>〜ようでは</b> menyatakan kondisi hipotetis yang tidak diinginkan sebagai dasar untuk penilaian negatif atau peringatan. Mengungkapkan bahwa jika kondisi demikian memang terjadi, maka hasilnya akan bermasalah.',
+  nuance: 'Sering diikuti oleh kalimat berisi penilaian negatif, peringatan, atau konsekuensi buruk. Berbeda dari たら/なら (kondisional umum) — ようでは mengandung nuansa evaluatif: "kalau sampai kondisi seburuk itu terjadi, ada sesuatu yang serius." Sering digunakan oleh atasan atau orang yang lebih tua.',
+  examples: [
+    { jp: 'こんな簡単な問題も解けない<b>ようでは</b>、試験は無理だ。', id: 'Kalau soal semudah ini saja tidak bisa diselesaikan, ujiannya tidak akan berhasil.' },
+    { jp: '部下の名前も覚えていない<b>ようでは</b>、リーダーとして失格だ。', id: 'Kalau sampai nama bawahannya sendiri tidak hafal, itu tidak layak sebagai pemimpin.' }
+  ],
+  see_also_grammar: ['gn2-00188'],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00188'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00188', level: 'n2', pattern: '〜ようでは困る',
+  reading: '〜you de wa komaru',
+  meaning: 'tidak baik kalau sampai ..., tidak bisa dibiarkan kalau ...',
+  cat: 'conditional-tara',
+  connection: 'V-plain + ようでは困る / い-Adj-plain + ようでは困る',
+  desc: '<b>〜ようでは困る</b> adalah pola spesifik dari ようでは yang diikuti 困る — menyatakan bahwa suatu kondisi atau perilaku yang disebutkan tidak bisa diterima atau bermasalah. Sering digunakan untuk menyampaikan ketidakpuasan atau peringatan kepada orang yang dinilai.',
+  nuance: 'Pada dasarnya adalah ようでは + ekspresi konsekuensi negatif 困る. Digunakan dalam konteks evaluasi atau teguran — lebih spesifik dan langsung dari ようでは + kalimat umum. Sering terdengar dalam percakapan atasan ke bawahan atau guru ke murid.',
+  examples: [
+    { jp: '毎回遅刻する<b>ようでは困る</b>。', id: 'Tidak bisa dibiarkan kalau setiap kali selalu datang terlambat.' },
+    { jp: '指示を一度しか言わないのに聞いていない<b>ようでは困る</b>。', id: 'Tidak baik kalau instruksi yang hanya disampaikan sekali saja tidak diperhatikan.' }
+  ],
+  see_also_grammar: ['gn2-00187'],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00187'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00189', level: 'n2', pattern: '〜とはいうものの',
+  reading: '〜to wa iu mono no',
+  meaning: 'meskipun ada yang mengatakan ..., walau memang begitu dikatakan ...',
+  cat: 'contrast-concession',
+  connection: 'Clause + とはいうものの / N + とはいうものの',
+  desc: '<b>〜とはいうものの</b> mengakui suatu pernyataan, pandangan umum, atau fakta yang dikenal, namun kemudian menambahkan reservasi, kenyataan lain, atau kondisi yang membuatnya tidak sepenuhnya berlaku.',
+  nuance: 'Lebih panjang dan formal dibandingkan とはいえ, dan lebih menekankan pengakuan terhadap pandangan atau pernyataan orang lain sebelum menambahkan reservasi. "Memang benar demikian dikatakan, namun kenyataannya..." Sering digunakan dalam esai atau diskusi formal.',
+  examples: [
+    { jp: '春だ<b>とはいうものの</b>、今年はまだ雪が降っている。', id: 'Meskipun dikatakan sudah musim semi, tahun ini salju masih turun.' },
+    { jp: '体に悪い<b>とはいうものの</b>、やめられない人も多い。', id: 'Meski dikatakan buruk bagi kesehatan, tetap banyak orang yang tidak bisa berhenti.' }
+  ],
+  see_also_grammar: ['gn2-00163'],
+  see_also_vocab: [],
+  confusion_pairs: ['gn2-00163'],
+  register: 'formal', exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00190', level: 'n2', pattern: '〜ものがある',
+  reading: '〜mono ga aru',
+  meaning: 'ada sesuatu yang ..., memiliki kualitas yang ..., terasa ada sesuatu yang ...',
+  cat: 'expression',
+  connection: 'V-plain + ものがある / い-Adj-plain + ものがある',
+  desc: '<b>〜ものがある</b> mengungkapkan bahwa penutur merasakan adanya kualitas, kedalaman, atau daya tarik tertentu yang sulit didefinisikan secara tepat — namun nyata dan berkesan. Digunakan saat ingin mengakui sesuatu yang bernilai atau berkesan tanpa kata-kata yang tepat.',
+  nuance: 'Berbeda dari だ/である (pernyataan faktual) — ものがある menambahkan nuansa subjektif dan evaluatif: "ada sesuatu (yang bermakna/dalam) dalam hal ini". Sering digunakan untuk memuji karya seni, kemampuan seseorang, atau pengalaman yang mengesankan. Tidak digunakan untuk pernyataan negatif.',
+  examples: [
+    { jp: '彼の演技には、胸を打つ<b>ものがある</b>。', id: 'Dalam aktingnya, ada sesuatu yang benar-benar menyentuh hati.' },
+    { jp: 'あの映画の映像美には、見る者を引き込む<b>ものがある</b>。', id: 'Dalam keindahan visual film itu, ada sesuatu yang menarik penonton masuk ke dalamnya.' }
+  ],
+  see_also_grammar: [],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00191',
+  level: 'n2',
+  pattern: '〜に先がけて',
+  reading: '~ni sakigakete',
+  meaning: 'mendahului ..., sebelum orang lain ...',
+  cat: 'sequential-temporal',
+  connection: 'N + に先がけて',
+  desc: '<b>〜に先がけて</b> menyatakan bahwa seseorang atau suatu pihak melakukan sesuatu lebih awal dari orang lain atau sebelum suatu peristiwa terjadi, seringkali dengan nuansa menjadi yang pertama atau memelopori. Digunakan untuk menggambarkan tindakan yang bersifat inisiatif atau pionir.',
+  nuance: 'Berbeda dengan 〜に先立って yang lebih netral ("sebelum melakukan X"), 〜に先がけて mengandung nuansa menjadi pelopor atau yang terdepan — ada unsur kebanggaan atau inisiatif. 〜に先立って lebih cocok untuk prosedur atau formalitas, sedangkan 〜に先がけて menekankan keunggulan posisi.',
+  examples: [
+    { jp: '他社<b>に先がけて</b>、新製品を市場に投入した。', id: 'Mendahului perusahaan lain, mereka meluncurkan produk baru ke pasar.' },
+    { jp: '世界<b>に先がけて</b>、日本がその技術を開発した。', id: 'Mendahului dunia, Jepang mengembangkan teknologi tersebut.' },
+    { jp: '開会式<b>に先がけて</b>、リハーサルが行われた。', id: 'Mendahului upacara pembukaan, diadakan gladi resik.' },
+  ],
+  see_also_grammar: [],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: 'formal',
+  exceptions: null,
+  notes: null,
+  provenance: 'jlpt-corpus',
+  added_v: 'v15',
+},
+{
+  id: 'gn2-00192',
+  level: 'n2',
+  pattern: '〜をきっかけに',
+  reading: '~wo kikkake ni',
+  meaning: 'berawal dari ..., dipicu oleh ...',
+  cat: 'reason-cause',
+  connection: 'N + をきっかけに(して) / V-plain + ことをきっかけに',
+  desc: '<b>〜をきっかけに</b> menyatakan bahwa suatu peristiwa atau hal tertentu menjadi titik awal atau pemicu terjadinya perubahan atau tindakan. Pola ini menekankan momen atau kejadian yang menyulut perubahan besar, bukan sekadar penyebab biasa.',
+  nuance: 'Berbeda dengan 〜が原因で (penyebab negatif) atau 〜がもとで (berdasarkan pada), 〜をきっかけに menekankan peristiwa pencetus yang menjadi titik balik. Sering digunakan untuk perubahan positif atau netral dalam hidup seseorang. Bentuk 〜をきっかけとして lebih formal.',
+  examples: [
+    { jp: '留学<b>をきっかけに</b>、外国語に興味を持った。', id: 'Berawal dari pengalaman studi di luar negeri, saya menjadi tertarik pada bahasa asing.' },
+    { jp: '友人との出会い<b>をきっかけに</b>、人生が変わった。', id: 'Dipicu oleh pertemuan dengan seorang teman, hidupnya berubah.' },
+    { jp: '震災<b>をきっかけに</b>、防災意識が高まった。', id: 'Berawal dari bencana gempa, kesadaran akan kesiapsiagaan bencana meningkat.' },
+  ],
+  see_also_grammar: ['gn2-00212'],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: null,
+  exceptions: null,
+  notes: null,
+  provenance: 'jlpt-corpus',
+  added_v: 'v15',
+},
+{
+  id: 'gn2-00193',
+  level: 'n2',
+  pattern: '〜とともに',
+  reading: '~to tomo ni',
+  meaning: 'bersamaan dengan ..., seiring ...',
+  cat: 'sequential-temporal',
+  connection: 'N + とともに / V-plain + とともに',
+  desc: '<b>〜とともに</b> memiliki dua fungsi: (1) "bersama dengan" — menyatakan bahwa dua hal atau pihak terlibat secara bersamaan; (2) "seiring dengan" — menyatakan perubahan yang terjadi secara paralel. Dalam makna kedua, digunakan untuk menggambarkan dua hal yang berkembang atau berubah secara sejajar.',
+  nuance: 'Dibandingkan 〜にともなって, 〜とともに lebih luas penggunaannya dan bisa berarti "bersama" (dengan orang) atau "seiring" (dengan perubahan). 〜にともなって (gn2-00194) lebih khusus untuk perubahan yang satu mengikuti yang lain secara kausal, sering dalam konteks formal atau peraturan.',
+  examples: [
+    { jp: '年齢を重ねる<b>とともに</b>、視野が広がった。', id: 'Seiring bertambahnya usia, wawasan pun semakin luas.' },
+    { jp: '彼女は仲間<b>とともに</b>、プロジェクトを成功させた。', id: 'Dia berhasil menyelesaikan proyek bersama timnya.' },
+    { jp: '社会が変化する<b>とともに</b>、価値観も変わってきた。', id: 'Seiring perubahan masyarakat, nilai-nilai pun ikut berubah.' },
+  ],
+  see_also_grammar: ['gn2-00194', 'gn2-00211'],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: null,
+  exceptions: null,
+  notes: null,
+  provenance: 'jlpt-corpus',
+  added_v: 'v15',
+},
+{
+  id: 'gn2-00194',
+  level: 'n2',
+  pattern: '〜にともなって',
+  reading: '~ni tomonatte',
+  meaning: 'seiring dengan ..., bersamaan dengan (perubahan)',
+  cat: 'sequential-temporal',
+  connection: 'N + にともなって / V-plain + にともなって / にともなう + N',
+  desc: '<b>〜にともなって</b> menyatakan bahwa suatu perubahan atau peristiwa membawa serta perubahan lain secara bersamaan — perubahan yang satu memicu atau disertai perubahan yang lain. Pola ini lebih formal dibandingkan 〜とともに dan sering digunakan dalam teks berita, laporan, atau akademis.',
+  nuance: 'Berbeda dengan 〜とともに yang bisa berarti "bersama (orang)" atau "seiring", 〜にともなって selalu mengacu pada perubahan yang menyertai perubahan lain — ada nuansa kausal atau dampak. Tidak digunakan untuk kebersamaan fisik dengan orang. Bentuk 〜に伴い (gn2-00211) adalah versi tulisan yang lebih formal.',
+  examples: [
+    { jp: '少子化<b>にともなって</b>、学校の数が減った。', id: 'Seiring dengan penurunan angka kelahiran, jumlah sekolah pun berkurang.' },
+    { jp: '経済成長<b>にともなって</b>、生活水準が向上した。', id: 'Seiring pertumbuhan ekonomi, standar hidup pun meningkat.' },
+    { jp: '技術の進化<b>にともなう</b>変化に対応する。', id: 'Merespons perubahan yang menyertai evolusi teknologi.' },
+  ],
+  see_also_grammar: ['gn2-00193', 'gn2-00211'],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: 'formal',
+  exceptions: null,
+  notes: '書き言葉では〜に伴い (gn2-00211) を使うことが多い',
+  provenance: 'jlpt-corpus',
+  added_v: 'v15',
+},
+{
+  id: 'gn2-00195',
+  level: 'n2',
+  pattern: '〜に応じて',
+  reading: '~ni oujite',
+  meaning: 'sesuai dengan ..., bergantung pada ...',
+  cat: 'expression',
+  connection: 'N + に応じて / に応じた + N',
+  desc: '<b>〜に応じて</b> menyatakan bahwa suatu tindakan, keputusan, atau kondisi disesuaikan atau direspons berdasarkan situasi, kebutuhan, atau permintaan tertentu. Mengandung makna fleksibilitas — bahwa sesuatu bervariasi atau beradaptasi sesuai kondisi yang ada.',
+  nuance: 'Berbeda dengan 〜に従って (mengikuti aturan/instruksi secara patuh), 〜に応じて lebih menekankan respons atau adaptasi terhadap kondisi yang beragam. Berbeda juga dengan 〜によって (tergantung pada, sering untuk perbedaan pasif), 〜に応じて mengandung unsur respons aktif.',
+  examples: [
+    { jp: '能力<b>に応じて</b>、仕事を割り当てる。', id: 'Pekerjaan dibagi sesuai dengan kemampuan masing-masing.' },
+    { jp: '要望<b>に応じて</b>、プランを変更できます。', id: 'Rencana dapat diubah sesuai dengan permintaan Anda.' },
+    { jp: '状況<b>に応じた</b>対応が必要だ。', id: 'Diperlukan respons yang sesuai dengan situasi.' },
+  ],
+  see_also_grammar: ['gn2-00196'],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: null,
+  exceptions: null,
+  notes: null,
+  provenance: 'jlpt-corpus',
+  added_v: 'v15',
+},
+{
+  id: 'gn2-00196',
+  level: 'n2',
+  pattern: '〜に沿って',
+  reading: '~ni sotte',
+  meaning: 'mengikuti ..., sepanjang ..., sesuai dengan ...',
+  cat: 'expression',
+  connection: 'N + に沿って / に沿った + N',
+  desc: '<b>〜に沿って</b> memiliki dua makna: (1) secara fisik, bergerak atau membentang sepanjang sesuatu (jalan, sungai, pantai); (2) secara abstrak, bertindak sesuai dengan pedoman, kebijakan, rencana, atau keinginan tertentu. Keduanya mengandung makna "mengikuti jalur" sesuatu.',
+  nuance: 'Dibandingkan 〜に従って yang menekankan kepatuhan terhadap instruksi atau aturan (ada otoritas yang dipatuhi), 〜に沿って lebih menekankan keselarasan dengan arah atau garis panduan tanpa harus ada perintah formal. Cocok digunakan ketika mengikuti suatu rencana, visi, atau permintaan seseorang.',
+  examples: [
+    { jp: '川<b>に沿って</b>、散歩した。', id: 'Saya berjalan-jalan mengikuti tepian sungai.' },
+    { jp: '計画<b>に沿って</b>、プロジェクトを進める。', id: 'Proyek dilaksanakan sesuai dengan rencana yang ada.' },
+    { jp: '顧客のニーズ<b>に沿った</b>サービスを提供する。', id: 'Memberikan layanan yang sesuai dengan kebutuhan pelanggan.' },
+  ],
+  see_also_grammar: ['gn2-00195'],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: null,
+  exceptions: null,
+  notes: null,
+  provenance: 'jlpt-corpus',
+  added_v: 'v15',
+},
+{
+  id: 'gn2-00197',
+  level: 'n2',
+  pattern: '〜を前提に',
+  reading: '~wo zentei ni',
+  meaning: 'dengan asumsi ..., dengan syarat (yang sudah diterima) ...',
+  cat: 'expression',
+  connection: 'N + を前提に(して) / V-plain + ことを前提に',
+  desc: '<b>〜を前提に</b> menyatakan bahwa suatu tindakan atau keputusan diambil dengan menganggap sesuatu sebagai hal yang sudah pasti, sudah disepakati, atau sudah diterima sebagai dasar. Berbeda dari syarat yang masih bersifat kondisional, "前提" (zentei) adalah asumsi dasar yang tidak dipertanyakan lagi.',
+  nuance: 'Berbeda dengan 〜を条件に (gn2-00198) yang menyatakan syarat yang harus dipenuhi, 〜を前提に menyatakan asumsi yang sudah dianggap berlaku. Contoh: "結婚を前提に付き合う" (berpacaran dengan asumsi akan menikah) vs "結婚を条件に付き合う" (berpacaran dengan syarat harus menikah — lebih keras).',
+  examples: [
+    { jp: '結婚<b>を前提に</b>、お付き合いしたい。', id: 'Saya ingin menjalin hubungan dengan asumsi (menuju) pernikahan.' },
+    { jp: '採用<b>を前提に</b>、研修を行う。', id: 'Pelatihan dilaksanakan dengan asumsi akan ada penerimaan kerja.' },
+    { jp: '長期使用<b>を前提に</b>した設計になっている。', id: 'Dirancang dengan asumsi penggunaan jangka panjang.' },
+  ],
+  see_also_grammar: ['gn2-00198'],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: null,
+  exceptions: null,
+  notes: null,
+  provenance: 'jlpt-corpus',
+  added_v: 'v15',
+},
+{
+  id: 'gn2-00198',
+  level: 'n2',
+  pattern: '〜を条件に',
+  reading: '~wo jouken ni',
+  meaning: 'dengan syarat ..., asalkan ...',
+  cat: 'conditional-tara',
+  connection: 'N + を条件に(して) / V-plain + ことを条件に',
+  desc: '<b>〜を条件に</b> menyatakan bahwa suatu tindakan atau persetujuan baru akan berlaku jika syarat tertentu terpenuhi. Syarat ini bersifat aktif dan harus benar-benar dipenuhi — berbeda dari asumsi yang sudah diterima. Pola ini sering muncul dalam konteks negosiasi, perjanjian, atau izin.',
+  nuance: 'Berbeda dengan 〜を前提に (gn2-00197) yang menyatakan asumsi yang sudah dianggap ada, 〜を条件に menyatakan syarat yang harus dipenuhi terlebih dahulu agar sesuatu bisa terjadi. Nuansanya lebih tegas dan kondisional — ada tawar-menawar atau kesepakatan yang sedang dibentuk.',
+  examples: [
+    { jp: '毎日練習すること<b>を条件に</b>、チームへの入部を許可した。', id: 'Dengan syarat berlatih setiap hari, dia diizinkan masuk tim.' },
+    { jp: '秘密を守ること<b>を条件に</b>、話してあげた。', id: 'Asalkan merahasiakannya, saya ceritakan kepadanya.' },
+    { jp: '給料の引き上げ<b>を条件に</b>、残業に応じた。', id: 'Dengan syarat kenaikan gaji, dia menyetujui lembur.' },
+  ],
+  see_also_grammar: ['gn2-00197'],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: null,
+  exceptions: null,
+  notes: null,
+  provenance: 'jlpt-corpus',
+  added_v: 'v15',
+},
+{
+  id: 'gn2-00199',
+  level: 'n2',
+  pattern: '〜を除いて',
+  reading: '~wo nozoite',
+  meaning: 'kecuali ..., tidak termasuk ...',
+  cat: 'particle',
+  connection: 'N + を除いて / を除く + N / を除いては',
+  desc: '<b>〜を除いて</b> menyatakan pengecualian — bahwa sesuatu tidak termasuk dalam cakupan pernyataan yang dibuat. Digunakan untuk mengecualikan satu atau beberapa hal dari suatu kelompok atau kondisi umum. Bentuk 〜を除く digunakan sebelum kata benda sebagai modifier.',
+  nuance: 'Berbeda dengan 〜以外は yang juga bermakna "selain dari", 〜を除いて lebih formal dan eksplisit dalam menyatakan pengecualian. 〜以外は lebih umum dalam percakapan sehari-hari. Dalam konteks hukum atau tulisan resmi, 〜を除き adalah bentuk yang paling sering digunakan.',
+  examples: [
+    { jp: '緊急時<b>を除いて</b>、携帯電話の使用は禁止です。', id: 'Kecuali dalam keadaan darurat, penggunaan ponsel dilarang.' },
+    { jp: '彼<b>を除いて</b>、全員が賛成した。', id: 'Kecuali dia, semua orang setuju.' },
+    { jp: '週末<b>を除く</b>日は開館しています。', id: 'Buka pada hari-hari selain akhir pekan.' },
+  ],
+  see_also_grammar: ['gn2-00200'],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: null,
+  exceptions: null,
+  notes: '書き言葉・法律文では〜を除き が使われる',
+  provenance: 'jlpt-corpus',
+  added_v: 'v15',
+},
+{
+  id: 'gn2-00200',
+  level: 'n2',
+  pattern: '〜をはじめ',
+  reading: '~wo hajime',
+  meaning: 'dimulai dari ..., termasuk ... (dan lainnya)',
+  cat: 'listing-addition',
+  connection: 'N + をはじめ(として) / をはじめとする + N',
+  desc: '<b>〜をはじめ</b> menyatakan bahwa suatu hal disebut sebagai contoh pertama atau paling representatif dari sebuah kelompok yang lebih besar. Pola ini membuka daftar dengan menyebutkan yang paling menonjol, lalu mengisyaratkan bahwa masih ada banyak lagi. Bentuk 〜をはじめとする digunakan sebelum kata benda.',
+  nuance: 'Berbeda dengan 〜など yang sekadar mendaftar contoh secara kasual, 〜をはじめ memilih satu hal sebagai representasi yang paling penting atau menonjol dari keseluruhan kelompok. Berbeda juga dengan 〜をはじめとして yang lebih formal. Penggunaan 〜をはじめ terasa lebih tegas dan resmi dari sekadar 〜や〜など.',
+  examples: [
+    { jp: '東京<b>をはじめ</b>、各地で祭りが開催された。', id: 'Di berbagai daerah, termasuk Tokyo, festival diadakan.' },
+    { jp: '社長<b>をはじめ</b>、社員全員が参加した。', id: 'Mulai dari direktur hingga seluruh karyawan ikut berpartisipasi.' },
+    { jp: '日本語<b>をはじめとする</b>アジアの言語を研究している。', id: 'Saya meneliti bahasa-bahasa Asia, termasuk bahasa Jepang.' },
+  ],
+  see_also_grammar: ['gn2-00199'],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: null,
+  exceptions: null,
+  notes: null,
+  provenance: 'jlpt-corpus',
+  added_v: 'v15',
+},
+{
+  id: 'gn2-00201',
+  level: 'n2',
+  pattern: '〜ならではの',
+  reading: '~nara dewa no',
+  meaning: 'khas ..., hanya bisa ada di/dari ...',
+  cat: 'expression',
+  connection: 'N + ならではの + N / N + ならでは',
+  desc: '<b>〜ならではの</b> menyatakan bahwa sesuatu hanya bisa ditemukan, terjadi, atau dirasakan berkat keunikan tertentu dari subjek yang disebutkan. Pola ini menekankan keistimewaan atau ciri khas eksklusif yang tidak dimiliki oleh hal lain. Selalu diikuti kata benda, atau berdiri sendiri sebagai 〜ならでは di akhir klausa.',
+  nuance: 'Berbeda dengan 〜だけの atau 〜しかない yang sekadar menyatakan kuantitas terbatas, 〜ならではの mengandung nuansa positif dan penghargaan terhadap keunikan tersebut. Sering digunakan dalam konteks promosi pariwisata, kuliner, budaya, atau keahlian seseorang yang istimewa.',
+  examples: [
+    { jp: 'これは京都<b>ならではの</b>景色だ。', id: 'Ini adalah pemandangan yang hanya bisa ada di Kyoto.' },
+    { jp: '職人<b>ならではの</b>技が光る作品だ。', id: 'Ini adalah karya yang memancarkan keahlian khas seorang pengrajin terampil.' },
+    { jp: '手作り<b>ならでは</b>の温かみがある。', id: 'Ada kehangatan yang khas dari buatan tangan.' },
+  ],
+  see_also_grammar: [],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: null,
+  exceptions: null,
+  notes: 'ほぼ常に肯定的ニュアンス。否定表現には使わない。',
+  provenance: 'jlpt-corpus',
+  added_v: 'v15',
+},
+{
+  id: 'gn2-00202',
+  level: 'n2',
+  pattern: '〜にほかならない',
+  reading: '~ni hoka naranai',
+  meaning: 'tidak lain adalah ..., memang ...',
+  cat: 'expression',
+  connection: 'N + にほかならない / V-plain + ことにほかならない',
+  desc: '<b>〜にほかならない</b> menyatakan bahwa sesuatu adalah persis dan tidak lain dari apa yang disebutkan — menegaskan identitas atau penyebab dengan sangat tegas. Secara harfiah berarti "tidak ada yang lain selain ini". Pola ini memberikan penekanan yang kuat dan bersifat definitif.',
+  nuance: 'Berbeda dengan 〜に違いない (pasti, berdasarkan dugaan kuat) yang mengandung unsur inferensi dari pihak luar, 〜にほかならない menyatakan fakta yang sudah pasti dari sudut pandang pembicara — sering digunakan untuk menarik kesimpulan logis. Lebih tegas dan formal dari sekadar 〜だ atau 〜です.',
+  examples: [
+    { jp: 'この成功は、チーム全員の努力<b>にほかならない</b>。', id: 'Keberhasilan ini tidak lain adalah hasil kerja keras seluruh tim.' },
+    { jp: '彼の行為は裏切り<b>にほかならない</b>。', id: 'Tindakannya tidak lain adalah pengkhianatan.' },
+    { jp: '失敗は成功への第一歩<b>にほかならない</b>。', id: 'Kegagalan tidak lain adalah langkah pertama menuju keberhasilan.' },
+  ],
+  see_also_grammar: [],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: 'formal',
+  exceptions: null,
+  notes: null,
+  provenance: 'jlpt-corpus',
+  added_v: 'v15',
+},
+{
+  id: 'gn2-00203',
+  level: 'n2',
+  pattern: '〜ものとする',
+  reading: '~mono to suru',
+  meaning: 'dianggap sebagai ..., diperlakukan seperti ... (hukum/peraturan)',
+  cat: 'expression',
+  connection: 'V-plain / N + ものとする',
+  desc: '<b>〜ものとする</b> adalah ungkapan formal yang digunakan dalam dokumen hukum, peraturan, kontrak, atau aturan resmi untuk menetapkan suatu hal sebagai ketentuan yang berlaku. Maknanya setara dengan "ditetapkan bahwa" atau "diperlakukan sebagai". Pola ini hampir tidak digunakan dalam percakapan sehari-hari.',
+  nuance: 'Berbeda dengan 〜とする yang lebih umum dan bisa digunakan dalam berbagai konteks (termasuk asumsi sementara), 〜ものとする secara khusus digunakan dalam regulasi dan dokumen resmi untuk menetapkan aturan yang mengikat. Jika Anda tidak menulis peraturan, gunakan 〜とする atau 〜にする.',
+  examples: [
+    { jp: '本規定に反した場合は、契約を無効<b>ものとする</b>。', id: 'Jika melanggar ketentuan ini, kontrak dianggap batal.' },
+    { jp: '申請書の提出をもって、同意した<b>ものとする</b>。', id: 'Dengan menyerahkan formulir pendaftaran, dianggap telah menyetujui.' },
+    { jp: '未成年者は保護者の同意を得た<b>ものとする</b>。', id: 'Bagi yang di bawah umur, dianggap telah mendapat persetujuan wali.' },
+  ],
+  see_also_grammar: ['gn2-00204'],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: 'formal',
+  exceptions: null,
+  notes: '法律・契約書・規則文書専用。日常会話では使わない。',
+  provenance: 'jlpt-corpus',
+  added_v: 'v15',
+},
+{
+  id: 'gn2-00204',
+  level: 'n2',
+  pattern: '〜とされている',
+  reading: '~to sarete iru',
+  meaning: 'dikatakan bahwa ..., dianggap sebagai ...',
+  cat: 'quotation-thought',
+  connection: 'V-plain / Adj-plain / N + とされている',
+  desc: '<b>〜とされている</b> menyatakan bahwa suatu pandangan, penilaian, atau anggapan telah menjadi konsensus umum atau diterima secara luas oleh masyarakat, komunitas ilmiah, atau otoritas tertentu. Berbeda dari hearsay biasa, pola ini mengindikasikan pandangan yang sudah mapan.',
+  nuance: 'Dibandingkan 〜と言われている (dikatakan orang, bersifat lebih informal dan bisa berupa rumor), 〜とされている mengindikasikan bahwa anggapan tersebut sudah lebih resmi, misalnya hasil penelitian atau konsensus akademis. 〜と考えられる (gn2-00206) lebih menekankan inferensi logis dari pembicara sendiri.',
+  examples: [
+    { jp: '睡眠は健康に重要<b>とされている</b>。', id: 'Tidur dianggap penting bagi kesehatan.' },
+    { jp: 'この遺跡は江戸時代のもの<b>とされている</b>。', id: 'Situs ini dianggap berasal dari periode Edo.' },
+    { jp: '彼は業界の第一人者<b>とされている</b>。', id: 'Dia dianggap sebagai yang terdepan di industri ini.' },
+  ],
+  see_also_grammar: ['gn2-00205', 'gn2-00206'],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: null,
+  exceptions: null,
+  notes: null,
+  provenance: 'jlpt-corpus',
+  added_v: 'v15',
+},
+{
+  id: 'gn2-00205',
+  level: 'n2',
+  pattern: '〜と見られている',
+  reading: '~to mirarete iru',
+  meaning: 'dipandang sebagai ..., diperkirakan ...',
+  cat: 'quotation-thought',
+  connection: 'V-plain / N + と見られている',
+  desc: '<b>〜と見られている</b> menyatakan bahwa suatu situasi, penyebab, atau hasil dinilai atau diperkirakan demikian oleh pihak luar — terutama para ahli, pengamat, atau media. Pola ini sering muncul dalam berita dan laporan untuk menyampaikan analisis atau perkiraan tanpa menjamin kebenarannya secara pasti.',
+  nuance: 'Berbeda dengan 〜とされている (sudah mapan sebagai anggapan umum), 〜と見られている lebih bersifat analisis atau perkiraan yang sedang berkembang — belum tentu sudah menjadi konsensus. Sering digunakan untuk penilaian situasi politik, ekonomi, atau investigasi yang masih berlangsung.',
+  examples: [
+    { jp: '今回の事故は人為的なミスが原因<b>と見られている</b>。', id: 'Kecelakaan kali ini diperkirakan disebabkan oleh kesalahan manusia.' },
+    { jp: '景気は来年回復する<b>と見られている</b>。', id: 'Perekonomian diperkirakan akan pulih tahun depan.' },
+    { jp: '彼が次期リーダー候補<b>と見られている</b>。', id: 'Dia dipandang sebagai kandidat pemimpin berikutnya.' },
+  ],
+  see_also_grammar: ['gn2-00204', 'gn2-00206'],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: 'formal',
+  exceptions: null,
+  notes: 'ニュース・報道での分析や推測の表現として頻出。',
+  provenance: 'jlpt-corpus',
+  added_v: 'v15',
+},
+{
+  id: 'gn2-00206',
+  level: 'n2',
+  pattern: '〜と考えられる',
+  reading: '~to kangaerareru',
+  meaning: 'dapat dipikirkan bahwa ..., tampaknya ...',
+  cat: 'conjecture-possibility',
+  connection: 'V-plain / Adj-plain / N + と考えられる',
+  desc: '<b>〜と考えられる</b> menyatakan bahwa berdasarkan informasi atau penalaran yang ada, suatu kesimpulan atau penilaian tampaknya masuk akal atau dapat disimpulkan. Pola ini mencerminkan inferensi logis dari pembicara, sering digunakan dalam teks akademis atau laporan ilmiah.',
+  nuance: 'Berbeda dengan 〜とされている (konsensus eksternal yang sudah mapan) dan 〜と見られている (perkiraan dari pengamat/media), 〜と考えられる menekankan proses penalaran pembicara sendiri. Dalam tulisan akademis, ini adalah cara standar untuk menyampaikan kesimpulan tanpa terlalu menegaskan kepastian.',
+  examples: [
+    { jp: 'この現象は気候変動が原因<b>と考えられる</b>。', id: 'Fenomena ini dapat dipikirkan disebabkan oleh perubahan iklim.' },
+    { jp: '患者の症状から、ウイルス感染<b>と考えられる</b>。', id: 'Berdasarkan gejala pasien, tampaknya terjadi infeksi virus.' },
+    { jp: '需要の増加が価格上昇につながった<b>と考えられる</b>。', id: 'Dapat disimpulkan bahwa peningkatan permintaan menyebabkan kenaikan harga.' },
+  ],
+  see_also_grammar: ['gn2-00204', 'gn2-00205'],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: 'formal',
+  exceptions: null,
+  notes: '学術論文・報告書での推論表現として最も一般的。',
+  provenance: 'jlpt-corpus',
+  added_v: 'v15',
+},
+{
+  id: 'gn2-00207',
+  level: 'n2',
+  pattern: '〜ことが多い',
+  reading: '~koto ga ooi',
+  meaning: 'seringkali ..., banyak yang ...',
+  cat: 'expression',
+  connection: 'V-plain + ことが多い / V-plain + ことが多くある',
+  desc: '<b>〜ことが多い</b> menyatakan bahwa suatu tindakan atau situasi terjadi dengan frekuensi yang tinggi — sering terjadi atau merupakan hal yang umum. Pola ini digunakan untuk menggeneralisasi kebiasaan, kecenderungan, atau pola yang berulang.',
+  nuance: 'Berbeda dari 〜がちだ yang mengandung nuansa negatif atau tidak diinginkan, 〜ことが多い bersifat netral dan sekadar menyatakan frekuensi. Berbeda juga dari 〜よく yang lebih kasual dan biasanya digunakan sebagai adverbia. 〜ことが多い lebih formal dan cocok untuk tulisan deskriptif atau analitis.',
+  examples: [
+    { jp: '日本では、夕食は家族で食べる<b>ことが多い</b>。', id: 'Di Jepang, makan malam seringkali dilakukan bersama keluarga.' },
+    { jp: '初心者はこの部分で間違える<b>ことが多い</b>。', id: 'Para pemula sering melakukan kesalahan di bagian ini.' },
+    { jp: '会議は長引く<b>ことが多い</b>。', id: 'Rapat seringkali berlangsung lama.' },
+  ],
+  see_also_grammar: ['gn2-00208'],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: null,
+  exceptions: null,
+  notes: null,
+  provenance: 'jlpt-corpus',
+  added_v: 'v15',
+},
+{
+  id: 'gn2-00208',
+  level: 'n2',
+  pattern: '〜ことはない',
+  reading: '~koto wa nai',
+  meaning: 'tidak perlu ..., tidak ada alasan untuk ...',
+  cat: 'negative',
+  connection: 'V-plain (辞書形) + ことはない',
+  desc: '<b>〜ことはない</b> menyatakan bahwa tidak ada kebutuhan atau alasan untuk melakukan sesuatu — digunakan untuk menenangkan orang atau melarang dengan cara yang halus. Seringkali digunakan untuk mengatakan bahwa kekhawatiran atau tindakan seseorang tidak diperlukan.',
+  nuance: 'Berbeda dengan 〜なくていい (tidak harus) yang lebih kasual dan netral, 〜ことはない mengandung nuansa yang lebih persuasif atau menenangkan — seperti merespons kekhawatiran seseorang dengan "tidak perlu begitu". Juga berbeda dengan 〜てはいけない (dilarang) — 〜ことはない tidak melarang, hanya menyatakan ketidakperluan.',
+  examples: [
+    { jp: 'そんなに心配する<b>ことはない</b>よ。', id: 'Tidak perlu khawatir sebegitu itu.' },
+    { jp: '一度の失敗で諦める<b>ことはない</b>。', id: 'Tidak ada alasan untuk menyerah hanya karena satu kali gagal.' },
+    { jp: '謝る<b>ことはない</b>。あなたは悪くない。', id: 'Tidak perlu minta maaf. Kamu tidak salah.' },
+  ],
+  see_also_grammar: ['gn2-00207'],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: null,
+  exceptions: null,
+  notes: null,
+  provenance: 'jlpt-corpus',
+  added_v: 'v15',
+},
+{
+  id: 'gn2-00209',
+  level: 'n2',
+  pattern: '〜に当たって',
+  reading: '~ni atatte',
+  meaning: 'pada saat ..., dalam rangka ...',
+  cat: 'sequential-temporal',
+  connection: 'V-plain (辞書形) / N + に当たって',
+  desc: '<b>〜に当たって</b> menyatakan bahwa suatu tindakan atau pertimbangan khusus dilakukan pada momen penting atau krusial — saat melakukan sesuatu yang signifikan. Pola ini menekankan bahwa momen tersebut adalah kesempatan atau situasi yang layak mendapat perhatian khusus.',
+  nuance: 'Berbeda dengan 〜とき yang sekadar menyatakan waktu, 〜に当たって menekankan bahwa situasinya adalah momen penting yang menuntut tindakan atau perhatian tertentu. Lebih formal dari 〜にあたり (gn2-00210), yang merupakan versi tulisan murni. Keduanya tidak cocok untuk tindakan berulang sehari-hari.',
+  examples: [
+    { jp: '新しい仕事を始める<b>に当たって</b>、心構えを改めた。', id: 'Dalam rangka memulai pekerjaan baru, saya memperbarui tekad hati.' },
+    { jp: '卒業<b>に当たって</b>、先生に感謝の言葉を伝えた。', id: 'Pada saat kelulusan, saya menyampaikan kata-kata terima kasih kepada guru.' },
+    { jp: '式典開催<b>に当たって</b>、準備を万全にする。', id: 'Dalam rangka penyelenggaraan upacara, persiapan dilakukan secara matang.' },
+  ],
+  see_also_grammar: ['gn2-00210'],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: 'formal',
+  exceptions: null,
+  notes: '繰り返し行う日常的な行動には使わない。特別・重要な場面に使う。',
+  provenance: 'jlpt-corpus',
+  added_v: 'v15',
+},
+{
+  id: 'gn2-00210',
+  level: 'n2',
+  pattern: '〜にあたり',
+  reading: '~ni atari',
+  meaning: 'pada saat ..., dalam rangka ... (formal/tulisan)',
+  cat: 'sequential-temporal',
+  connection: 'V-plain (辞書形) / N + にあたり',
+  desc: '<b>〜にあたり</b> adalah bentuk tulisan formal dari 〜に当たって (gn2-00209). Maknanya identik — digunakan untuk menyatakan bahwa sesuatu dilakukan pada momen penting atau dalam rangka suatu peristiwa signifikan. Bentuk ini sangat umum ditemukan dalam pidato, sambutan, pengumuman resmi, dan dokumen tertulis.',
+  nuance: 'Secara makna, 〜にあたり dan 〜に当たって dapat dipertukarkan. Perbedaannya murni pada register: 〜にあたり adalah bentuk 書き言葉 (bahasa tulis) yang sangat formal, sementara 〜に当たって sedikit lebih fleksibel dan bisa digunakan dalam pidato lisan. Keduanya tidak digunakan untuk kejadian sehari-hari yang biasa.',
+  examples: [
+    { jp: '新年度の開始<b>にあたり</b>、ご挨拶申し上げます。', id: 'Dalam rangka dimulainya tahun ajaran baru, perkenankan saya menyampaikan sambutan.' },
+    { jp: '事業の拡大<b>にあたり</b>、新たな人材を募集します。', id: 'Dalam rangka perluasan usaha, kami membuka rekrutmen tenaga kerja baru.' },
+    { jp: '本書の出版<b>にあたり</b>、多くの方にご協力いただきました。', id: 'Dalam rangka penerbitan buku ini, kami mendapat dukungan dari banyak pihak.' },
+  ],
+  see_also_grammar: ['gn2-00209'],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: 'formal',
+  exceptions: null,
+  notes: '書き言葉専用。スピーチや公式文書で多用される。',
+  provenance: 'jlpt-corpus',
+  added_v: 'v15',
+},
+{
+  id: 'gn2-00211',
+  level: 'n2',
+  pattern: '〜に伴い',
+  reading: '~ni tomonai',
+  meaning: 'seiring dengan ... (formal/tulisan)',
+  cat: 'sequential-temporal',
+  connection: 'N + に伴い / V-plain + に伴い / に伴う + N',
+  desc: '<b>〜に伴い</b> adalah bentuk tulisan formal dari 〜にともなって (gn2-00194). Menyatakan bahwa suatu perubahan atau kejadian membawa serta perubahan atau dampak lain secara bersamaan. Sangat umum dalam berita, laporan, pengumuman resmi, dan surat menyurat bisnis.',
+  nuance: 'Secara makna identik dengan 〜にともなって, namun 〜に伴い adalah bentuk yang lebih singkat dan lebih kaku — dikhususkan untuk bahasa tulis formal. Dalam percakapan atau teks semiformal, 〜にともなって lebih alami. Bentuk 〜に伴う digunakan sebelum kata benda sebagai modifier.',
+  examples: [
+    { jp: 'システム更新<b>に伴い</b>、一時的にサービスを停止します。', id: 'Seiring pembaruan sistem, layanan akan dihentikan sementara.' },
+    { jp: '人口増加<b>に伴い</b>、インフラ整備が急がれる。', id: 'Seiring pertumbuhan penduduk, pembangunan infrastruktur semakin mendesak.' },
+    { jp: '工事<b>に伴う</b>騒音にご注意ください。', id: 'Harap berhati-hati terhadap kebisingan yang menyertai proses konstruksi.' },
+  ],
+  see_also_grammar: ['gn2-00194', 'gn2-00193'],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: 'formal',
+  exceptions: null,
+  notes: '書き言葉専用。〜にともなって の硬い文語形。',
+  provenance: 'jlpt-corpus',
+  added_v: 'v15',
+},
+{
+  id: 'gn2-00212',
+  level: 'n2',
+  pattern: '〜を受けて',
+  reading: '~wo ukete',
+  meaning: 'sebagai respons terhadap ..., setelah menerima ...',
+  cat: 'reason-cause',
+  connection: 'N + を受けて',
+  desc: '<b>〜を受けて</b> menyatakan bahwa suatu tindakan atau keputusan diambil sebagai respons langsung terhadap suatu peristiwa, keputusan, laporan, atau kritik yang telah terjadi sebelumnya. Mengandung makna bahwa tindakan tersebut adalah reaksi yang dipicu oleh sesuatu yang sudah diterima.',
+  nuance: 'Berbeda dengan 〜をきっかけに (gn2-00192) yang menekankan pemicu yang memulai perubahan jangka panjang, 〜を受けて menekankan respons langsung dan konkret terhadap suatu peristiwa spesifik. Lebih formal dan sering digunakan dalam konteks organisasi, kebijakan, atau berita.',
+  examples: [
+    { jp: '市民からの苦情<b>を受けて</b>、市は対策を講じた。', id: 'Sebagai respons terhadap keluhan warga, kota mengambil tindakan.' },
+    { jp: '調査結果<b>を受けて</b>、新たな規制が設けられた。', id: 'Setelah menerima hasil investigasi, peraturan baru ditetapkan.' },
+    { jp: '社長の指示<b>を受けて</b>、プロジェクトを再開した。', id: 'Merespons instruksi direktur, proyek dilanjutkan kembali.' },
+  ],
+  see_also_grammar: ['gn2-00192'],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: 'formal',
+  exceptions: null,
+  notes: null,
+  provenance: 'jlpt-corpus',
+  added_v: 'v15',
+},
+{
+  id: 'gn2-00213',
+  level: 'n2',
+  pattern: '〜を経て',
+  reading: '~wo hete',
+  meaning: 'setelah melalui ..., melewati proses ...',
+  cat: 'sequential-temporal',
+  connection: 'N + を経て / V-plain + 過程を経て',
+  desc: '<b>〜を経て</b> menyatakan bahwa suatu hasil dicapai setelah melalui suatu proses, tahapan, atau pengalaman tertentu. Mengandung nuansa bahwa proses tersebut memerlukan waktu, usaha, atau perjalanan yang berarti sebelum mencapai tujuan akhir.',
+  nuance: 'Berbeda dengan 〜の末に (gn2-00219) yang menekankan "akhirnya setelah perjuangan panjang" dengan nuansa kelegaan atau resolusi, 〜を経て lebih menekankan bahwa sesuatu dilewati sebagai proses atau tahapan — tanpa harus menyiratkan kesulitan. Lebih netral dan formal.',
+  examples: [
+    { jp: '長い交渉<b>を経て</b>、契約が成立した。', id: 'Setelah melalui negosiasi panjang, kontrak berhasil disepakati.' },
+    { jp: '試験と面接<b>を経て</b>、採用された。', id: 'Setelah melewati ujian dan wawancara, dia diterima bekerja.' },
+    { jp: '数年の研究<b>を経て</b>、新薬が開発された。', id: 'Setelah melalui beberapa tahun penelitian, obat baru berhasil dikembangkan.' },
+  ],
+  see_also_grammar: ['gn2-00219'],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: 'formal',
+  exceptions: null,
+  notes: null,
+  provenance: 'jlpt-corpus',
+  added_v: 'v15',
+},
+{
+  id: 'gn2-00214',
+  level: 'n2',
+  pattern: '〜を通じて / 〜を通して',
+  reading: '~wo tsuujite / ~wo tooshite',
+  meaning: 'melalui ..., lewat ...',
+  cat: 'particle',
+  connection: 'N + を通じて / を通して',
+  desc: '<b>〜を通じて / 〜を通して</b> menyatakan bahwa sesuatu terjadi, dicapai, atau disampaikan melalui suatu media, perantara, atau jangka waktu. Keduanya sering dapat dipertukarkan, namun dengan perbedaan nuansa kecil. Juga bisa berarti "sepanjang" dalam konteks waktu.',
+  nuance: '〜を通じて lebih sering digunakan ketika ada perantara (orang, organisasi, media komunikasi). 〜を通して lebih sering digunakan untuk medium atau proses pengalaman langsung, dan untuk makna temporal "sepanjang" (例: 一年を通して). Dalam banyak kasus keduanya dapat dipertukarkan.',
+  examples: [
+    { jp: '友人<b>を通じて</b>、仕事の紹介を受けた。', id: 'Melalui seorang teman, saya mendapat referensi pekerjaan.' },
+    { jp: '経験<b>を通して</b>、多くのことを学んだ。', id: 'Melalui pengalaman, saya belajar banyak hal.' },
+    { jp: '一年<b>を通じて</b>、安定した気候が続く。', id: 'Sepanjang tahun, iklimnya tetap stabil.' },
+  ],
+  see_also_grammar: ['gn2-00215'],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: 'formal',
+  exceptions: null,
+  notes: '〜を通じて は仲介者あり、〜を通して は媒体・経験・期間に多い。',
+  provenance: 'jlpt-corpus',
+  added_v: 'v15',
+},
+{
+  id: 'gn2-00215',
+  level: 'n2',
+  pattern: '〜に向けて',
+  reading: '~ni mukete',
+  meaning: 'menuju ..., dengan tujuan ...',
+  cat: 'purpose',
+  connection: 'N + に向けて',
+  desc: '<b>〜に向けて</b> menyatakan arah tindakan — baik secara fisik (mengarah ke suatu tempat) maupun secara abstrak (dengan tujuan mencapai sesuatu). Dalam makna abstrak, mengandung nuansa usaha atau persiapan yang diarahkan menuju suatu sasaran di masa depan.',
+  nuance: 'Berbeda dengan 〜のために yang menyatakan tujuan atau manfaat, 〜に向けて lebih menekankan arah atau orientasi tindakan menuju suatu sasaran. 〜に向けた (gn2-00216) adalah bentuk yang digunakan sebagai modifier sebelum kata benda — perbedaannya hanya gramatikal, bukan makna.',
+  examples: [
+    { jp: '試合<b>に向けて</b>、毎日練習している。', id: 'Menuju pertandingan, saya berlatih setiap hari.' },
+    { jp: '目標の実現<b>に向けて</b>、努力を続ける。', id: 'Menuju terwujudnya tujuan, saya terus berupaya.' },
+    { jp: 'カメラ<b>に向けて</b>、微笑んだ。', id: 'Dia tersenyum ke arah kamera.' },
+  ],
+  see_also_grammar: ['gn2-00216'],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: null,
+  exceptions: null,
+  notes: null,
+  provenance: 'jlpt-corpus',
+  added_v: 'v15',
+},
+{
+  id: 'gn2-00216',
+  level: 'n2',
+  pattern: '〜に向けた',
+  reading: '~ni muketa',
+  meaning: 'yang ditujukan untuk ..., yang diarahkan ke ...',
+  cat: 'purpose',
+  connection: 'N + に向けた + N',
+  desc: '<b>〜に向けた</b> adalah bentuk adnominal (prenominal modifier) dari 〜に向けて, yang digunakan untuk menerangkan kata benda. Maknanya identik — menyatakan bahwa sesuatu ditujukan atau diarahkan menuju sasaran tertentu. Contoh: "試合に向けた練習" (latihan menuju pertandingan).',
+  nuance: 'Perbedaan dengan 〜に向けて (gn2-00215) murni gramatikal: 〜に向けて digunakan sebagai adverbia (menerangkan verba), sedangkan 〜に向けた digunakan sebagai adjektiva (menerangkan nomina). Keduanya tidak berbeda makna. Pilihan yang tepat bergantung pada fungsi dalam kalimat.',
+  examples: [
+    { jp: '五輪<b>に向けた</b>選手強化プログラムが始まった。', id: 'Program penguatan atlet yang ditujukan menuju Olimpiade telah dimulai.' },
+    { jp: '高齢者<b>に向けた</b>サービスが充実している。', id: 'Layanan yang ditujukan bagi lansia sudah lengkap.' },
+    { jp: '環境改善<b>に向けた</b>取り組みを続ける。', id: 'Kami terus melanjutkan upaya yang diarahkan untuk perbaikan lingkungan.' },
+  ],
+  see_also_grammar: ['gn2-00215'],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: 'formal',
+  exceptions: null,
+  notes: '〜に向けて の連体形。名詞修飾に使う。',
+  provenance: 'jlpt-corpus',
+  added_v: 'v15',
+},
+{
+  id: 'gn2-00217',
+  level: 'n2',
+  pattern: '〜の下で / 〜のもとで',
+  reading: '~no moto de',
+  meaning: 'di bawah ..., di bawah pengaruh/arahan ...',
+  cat: 'expression',
+  connection: 'N + の下で / のもとで / のもとに',
+  desc: '<b>〜の下で / 〜のもとで</b> menyatakan bahwa suatu tindakan atau kondisi berlangsung di bawah kepemimpinan, pengawasan, kondisi, atau pengaruh tertentu. Bisa berarti di bawah otoritas seseorang, di bawah kondisi tertentu (hukum, aturan), atau dalam suasana tertentu.',
+  nuance: 'Berbeda dengan 〜によって (karena/oleh), 〜の下で menekankan lingkungan atau kondisi yang melingkupi — bukan penyebabnya. Bentuk 〜のもとに (menggunakan に) lebih formal dan sering digunakan dalam konteks hukum atau deklarasi, sedangkan 〜のもとで lebih umum.',
+  examples: [
+    { jp: '先生の指導<b>のもとで</b>、研究を進めた。', id: 'Di bawah bimbingan dosen, penelitian dilanjutkan.' },
+    { jp: '民主主義<b>の下で</b>、国民の権利が保障される。', id: 'Di bawah demokrasi, hak-hak warga negara dijamin.' },
+    { jp: '厳しい条件<b>のもとで</b>、訓練が行われた。', id: 'Latihan dilaksanakan di bawah kondisi yang berat.' },
+  ],
+  see_also_grammar: [],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: null,
+  exceptions: null,
+  notes: '〜のもとに は法令文や宣言文でよく使われる硬い形。',
+  provenance: 'jlpt-corpus',
+  added_v: 'v15',
+},
+{
+  id: 'gn2-00218',
+  level: 'n2',
+  pattern: '〜の結果',
+  reading: '~no kekka',
+  meaning: 'sebagai hasil dari ..., akibat ...',
+  cat: 'reason-cause',
+  connection: 'N + の結果 / V-た + 結果',
+  desc: '<b>〜の結果</b> menyatakan bahwa suatu kondisi atau peristiwa adalah hasil langsung dari tindakan atau proses yang disebutkan sebelumnya. Pola ini menekankan hubungan sebab-akibat yang jelas dan konkret, baik untuk hasil positif maupun negatif.',
+  nuance: 'Berbeda dengan 〜の末に (gn2-00219) yang selalu mengandung nuansa proses panjang yang berat atau melelahkan sebelum mencapai hasil, 〜の結果 lebih netral dan dapat digunakan untuk hasil dari proses singkat maupun panjang. 〜の結果 juga lebih formal dan tidak mengandung nuansa emosional.',
+  examples: [
+    { jp: '努力の<b>結果</b>、試験に合格した。', id: 'Sebagai hasil dari kerja keras, dia lulus ujian.' },
+    { jp: '調査<b>の結果</b>、問題の原因が判明した。', id: 'Sebagai hasil investigasi, penyebab masalah terungkap.' },
+    { jp: '長年の研究<b>の結果</b>として、新しい発見があった。', id: 'Sebagai hasil penelitian bertahun-tahun, ditemukan penemuan baru.' },
+  ],
+  see_also_grammar: ['gn2-00219', 'gn2-00213'],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: null,
+  exceptions: null,
+  notes: null,
+  provenance: 'jlpt-corpus',
+  added_v: 'v15',
+},
+{
+  id: 'gn2-00219',
+  level: 'n2',
+  pattern: '〜の末に',
+  reading: '~no sue ni',
+  meaning: 'setelah panjang ..., pada akhirnya setelah ...',
+  cat: 'sequential-temporal',
+  connection: 'N (proses/usaha) + の末に / V-た + 末に',
+  desc: '<b>〜の末に</b> menyatakan bahwa setelah melalui proses yang panjang, melelahkan, atau penuh perjuangan, akhirnya tercapai suatu hasil. Pola ini secara khas digunakan dengan kata benda yang menggambarkan proses panjang seperti "苦労" (kerja keras), "努力" (usaha), "悩み" (kekhawatiran), atau "話し合い" (diskusi).',
+  nuance: 'Berbeda dengan 〜の結果 (gn2-00218) yang netral dan hanya menyatakan hubungan sebab-akibat, 〜の末に selalu mengandung nuansa bahwa proses sebelumnya berat, panjang, atau penuh pertimbangan — dan ada rasa kelegaan atau kebermaknaan saat hasilnya tercapai. Tidak digunakan untuk proses singkat.',
+  examples: [
+    { jp: '長い話し合い<b>の末に</b>、結論に達した。', id: 'Setelah diskusi panjang, akhirnya tercapai kesimpulan.' },
+    { jp: '苦労<b>の末に</b>、夢を実現した。', id: 'Setelah panjang berjuang, impiannya akhirnya terwujud.' },
+    { jp: '悩んだ<b>末に</b>、転職を決めた。', id: 'Setelah lama mempertimbangkan, dia memutuskan untuk pindah kerja.' },
+  ],
+  see_also_grammar: ['gn2-00218', 'gn2-00213'],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: null,
+  exceptions: null,
+  notes: '長期的・苦労を伴うプロセスにのみ使う。短い過程には不自然。',
+  provenance: 'jlpt-corpus',
+  added_v: 'v15',
+},
+{
+  id: 'gn2-00220',
+  level: 'n2',
+  pattern: '〜次第で',
+  reading: '~shidai de',
+  meaning: 'tergantung pada ..., bergantung pada ...',
+  cat: 'conditional-tara',
+  connection: 'N + 次第で / 次第だ / 次第では',
+  desc: '<b>〜次第で</b> menyatakan bahwa hasil atau kondisi sepenuhnya bergantung pada hal yang disebutkan. Mengandung makna bahwa faktor tersebut adalah penentu yang krusial — jika berbeda, hasilnya pun akan berbeda. Bentuk 〜次第では menambahkan nuansa "tergantung pada situasinya, bisa jadi...".',
+  nuance: 'Berbeda dengan 〜によって (tergantung — lebih umum dan deskriptif), 〜次第で mengandung nuansa bahwa pembicara menekankan betapa pentingnya faktor penentu tersebut — sering bermakna "semuanya tergantung pada". Berbeda juga dengan 〜しだいだ yang menyatakan "tergantung, bukan wewenang saya". Perhatikan konteks untuk membedakan keduanya.',
+  examples: [
+    { jp: '努力<b>次第で</b>、結果は変わる。', id: 'Hasilnya akan berubah tergantung pada usaha yang dilakukan.' },
+    { jp: 'やり方<b>次第で</b>、うまくいくこともある。', id: 'Tergantung caranya, bisa saja berhasil.' },
+    { jp: '状況<b>次第では</b>、計画を変更する可能性もある。', id: 'Tergantung situasi, ada kemungkinan rencana akan diubah.' },
+  ],
+  see_also_grammar: ['gn2-00195'],
+  see_also_vocab: [],
+  confusion_pairs: [],
+  register: null,
+  exceptions: null,
+  notes: '〜次第では = 「場合によっては」のニュアンスが加わる。',
+  provenance: 'jlpt-corpus',
+  added_v: 'v15',
+},
+
+{
+  id: 'gn2-00221', level: 'n2', pattern: '〜ようでは',
+  reading: '〜you de wa',
+  meaning: 'kalau sampai (keadaannya) seperti itu / kalau begini terus maka ...',
+  cat: 'contrast-concession',
+  connection: 'V-dict / V-ている + ようでは',
+  desc: '<b>〜ようでは</b> digunakan untuk menyatakan bahwa jika keadaan atau perilaku seseorang seperti yang disebutkan, maka hasilnya akan buruk atau mengkhawatirkan. Mengandung nada kritik atau peringatan dari pembicara.',
+  nuance: 'Berbeda dari ようだ yang hanya mendeskripsikan keadaan — di sini ようでは menekankan kekhawatiran atas kondisi yang ada. Klausa setelahnya biasanya berisi penilaian negatif seperti だめだ, 困る, atau 無理だ. Sering digunakan kepada orang yang lebih muda atau setara, bukan kepada atasan.',
+  examples: [
+    { jp: 'そんなことも知らない<b>ようでは</b>、試験に合格できないよ。', id: 'Kalau sampai hal seperti itu pun tidak tahu, kamu tidak akan bisa lulus ujian.' },
+    { jp: 'ちょっとしたことで諦める<b>ようでは</b>、一人前にはなれない。', id: 'Kalau hanya karena hal sepele saja sudah menyerah, kamu tidak akan bisa jadi orang yang mandiri.' },
+  ],
+  see_also_grammar: ['gn2-00225'], see_also_vocab: [],
+  confusion_pairs: [],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00222', level: 'n2', pattern: '〜とあれば',
+  reading: '〜to areba',
+  meaning: 'kalau memang ... / jika situasinya demikian maka (rela melakukan)',
+  cat: 'conditional-tara',
+  connection: 'N / phrase + とあれば',
+  desc: '<b>〜とあれば</b> menyatakan bahwa jika kondisi atau alasan yang disebutkan terpenuhi, maka pembicara bersedia atau merasa harus melakukan sesuatu. Mengandung nuansa kerelaan atau dorongan kuat karena situasinya.',
+  nuance: 'Berbeda dari とあっては (gn2-00223) — とあれば lebih menekankan kerelaan/kesediaan sebagai respons terhadap kondisi tertentu. Sering digunakan dalam makna "demi ... saya siap melakukan apa saja." Berbeda dari なら yang lebih netral — とあれば mengimplikasikan kondisi yang luar biasa atau bermakna penting.',
+  examples: [
+    { jp: '子供のためと<b>あれば</b>、どんな苦労も厭わない。', id: 'Kalau memang demi anak, tidak ada kesulitan yang tidak rela aku tanggung.' },
+    { jp: '彼女の頼みと<b>あれば</b>、断れない。', id: 'Kalau memang itu permintaannya, aku tidak bisa menolak.' },
+  ],
+  see_also_grammar: ['gn2-00223', 'gn2-00224'], see_also_vocab: [],
+  confusion_pairs: ['gn2-00223'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00223', level: 'n2', pattern: '〜とあっては',
+  reading: '〜to atte wa',
+  meaning: 'karena situasinya ... / mengingat kenyataan ini maka ...',
+  cat: 'reason-cause',
+  connection: 'N / clause + とあっては',
+  desc: '<b>〜とあっては</b> menyatakan bahwa mengingat situasi atau kenyataan yang disebutkan, ada konsekuensi atau tindakan yang tidak bisa dihindari. Menekankan bahwa situasi tersebut memaksa seseorang untuk bertindak.',
+  nuance: 'Berbeda dari とあれば (gn2-00222) yang lebih menekankan kerelaan — とあっては lebih menekankan "terpaksa" atau "tidak bisa tidak" karena situasinya sudah seperti itu. Klausa setelahnya sering berisi ekspresi ketidakberdayaan atau keharusan seperti 〜ざるを得ない atau 〜しなければならない.',
+  examples: [
+    { jp: '上司の命令と<b>あっては</b>、従わざるを得ない。', id: 'Karena ini perintah atasan, tidak ada pilihan selain mengikutinya.' },
+    { jp: '緊急事態と<b>あっては</b>、すぐに対応しなければならない。', id: 'Mengingat ini adalah keadaan darurat, harus segera ditangani.' },
+  ],
+  see_also_grammar: ['gn2-00222', 'gn2-00224'], see_also_vocab: [],
+  confusion_pairs: ['gn2-00222'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00224', level: 'n2', pattern: '〜とあって',
+  reading: '〜to atte',
+  meaning: 'karena ... / dikarenakan ... (sehingga efek/reaksi terlihat nyata)',
+  cat: 'reason-cause',
+  connection: 'N / clause + とあって',
+  desc: '<b>〜とあって</b> menyatakan alasan atau latar belakang dari suatu situasi yang hasilnya terlihat nyata. Sering digunakan dalam laporan atau narasi untuk mendeskripsikan mengapa sesuatu terjadi seperti itu.',
+  nuance: 'Berbeda dari から/ので yang netral — とあって mengandung nuansa bahwa kondisi yang disebutkan adalah luar biasa atau penting, sehingga efeknya pun karenanya terlihat jelas. Tidak bisa dipakai untuk keinginan atau perintah. Sering muncul dalam berita, laporan, atau narasi tertulis.',
+  examples: [
+    { jp: '連休<b>とあって</b>、観光地はどこも大混雑だった。', id: 'Karena ini hari libur panjang, tempat wisata di mana-mana penuh sesak.' },
+    { jp: '人気アイドルの来日<b>とあって</b>、ファンが空港に殺到した。', id: 'Dikarenakan kedatangan idola populer ke Jepang, para penggemar berbondong-bondong ke bandara.' },
+  ],
+  see_also_grammar: ['gn2-00222', 'gn2-00223'], see_also_vocab: [],
+  confusion_pairs: [],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00225', level: 'n2', pattern: '〜たところで',
+  reading: '〜ta tokoro de',
+  meaning: 'meskipun melakukan ... / percuma saja melakukan ...',
+  cat: 'contrast-concession',
+  connection: 'V-ta + ところで',
+  desc: '<b>〜たところで</b> menyatakan bahwa meskipun melakukan tindakan yang disebutkan, hasilnya tidak akan berubah atau tidak ada gunanya. Mengandung makna pesimistis atau resignasi.',
+  nuance: 'Berbeda dari ても yang lebih netral — たところで menekankan bahwa usaha tersebut sia-sia atau hasilnya sudah jelas tidak memuaskan. Klausa setelahnya sering berisi negasi atau ekspresi nihilisme seperti 無駄だ, 意味がない, どうにもならない. Berbeda dari ようでは (gn2-00221) yang menilai kondisi — たところで menilai tindakan.',
+  examples: [
+    { jp: '今さら謝っ<b>たところで</b>、許してもらえないだろう。', id: 'Meskipun minta maaf sekarang pun, kemungkinan besar tidak akan dimaafkan.' },
+    { jp: '急いで行っ<b>たところで</b>、もう間に合わない。', id: 'Percuma saja terburu-buru pergi sekarang, sudah tidak akan tepat waktu.' },
+  ],
+  see_also_grammar: ['gn2-00221', 'gn2-00226'], see_also_vocab: [],
+  confusion_pairs: ['gn2-00226'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00226', level: 'n2', pattern: '〜にしても',
+  reading: '〜ni shite mo',
+  meaning: 'meskipun ... / sekalipun ... / bahkan kalau ...',
+  cat: 'contrast-concession',
+  connection: 'V-plain / Adj-plain / N + にしても',
+  desc: '<b>〜にしても</b> menyatakan konsesi — "meskipun begitu, tetap saja...". Digunakan untuk menyampaikan bahwa bahkan dalam kondisi yang disebutkan, kesimpulan atau penilaian tertentu tetap berlaku.',
+  nuance: 'Mirip dengan としても namun にしても lebih sering digunakan dalam situasi konkret atau nyata, bukan hipotetis. Bisa bermakna "terlepas apakah A atau B" saat diulang (にしても〜にしても). Berbeda dari にしては yang berarti "untuk ukuran ..." — nuansanya sama sekali berbeda.',
+  examples: [
+    { jp: '忙しい<b>にしても</b>、連絡ぐらいはするべきだ。', id: 'Meskipun sibuk, minimal harus memberi kabar.' },
+    { jp: 'ミスをした<b>にしても</b>、あの言い方はひどすぎる。', id: 'Sekalipun sudah membuat kesalahan, cara bicara itu terlalu keterlaluan.' },
+  ],
+  see_also_grammar: ['gn2-00227', 'gn2-00225'], see_also_vocab: [],
+  confusion_pairs: ['gn2-00227', 'gn2-00225'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00227', level: 'n2', pattern: '〜にしろ〜にしろ',
+  reading: '〜ni shiro〜ni shiro',
+  meaning: 'baik ... maupun ... / entah ... atau ...',
+  cat: 'listing-addition',
+  connection: 'V-plain / N + にしろ〜にしろ',
+  desc: '<b>〜にしろ〜にしろ</b> menyatakan bahwa terlepas dari pilihan atau kondisi mana yang berlaku (A atau B), kesimpulan yang sama tetap berlaku. Digunakan untuk menyatakan inklusivitas dari dua kemungkinan.',
+  nuance: 'Hampir sama dengan にせよ〜にせよ yang lebih formal. にしろ〜にしろ lebih sering digunakan dalam percakapan sehari-hari. Berbeda dari 〜であれ〜であれ (gn2-00228) yang lebih formal dan tertulis, serta lebih terbatas pada nomina.',
+  examples: [
+    { jp: '賛成する<b>にしろ</b>反対する<b>にしろ</b>、まず意見を言うべきだ。', id: 'Entah setuju atau tidak, yang penting harus menyampaikan pendapat terlebih dahulu.' },
+    { jp: '行く<b>にしろ</b>行かない<b>にしろ</b>、早めに決めてください。', id: 'Baik pergi maupun tidak, mohon segera buat keputusan.' },
+  ],
+  see_also_grammar: ['gn2-00228', 'gn2-00226'], see_also_vocab: [],
+  confusion_pairs: ['gn2-00228', 'gn2-00226'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00228', level: 'n2', pattern: '〜であれ〜であれ',
+  reading: '〜de are〜de are',
+  meaning: 'baik ... maupun ... (formal) / apapun pilihannya ...',
+  cat: 'listing-addition',
+  connection: 'N + であれ〜N + であれ',
+  desc: '<b>〜であれ〜であれ</b> menyatakan bahwa apapun pilihannya dari dua kemungkinan yang disebutkan, kesimpulan yang sama berlaku. Merupakan ekspresi yang lebih formal dibandingkan にしろ〜にしろ.',
+  nuance: 'Lebih formal dari にしろ〜にしろ (gn2-00227) — であれ〜であれ umumnya muncul dalam tulisan formal, pidato, atau dokumen resmi. Digunakan terutama dengan nomina. Berbeda dari であれ standalone yang bermakna "meskipun/sekalipun" dan berfungsi sebagai konsesi.',
+  examples: [
+    { jp: '男<b>であれ</b>女<b>であれ</b>、この規則はすべての人に適用される。', id: 'Baik laki-laki maupun perempuan, aturan ini berlaku untuk semua orang.' },
+    { jp: '賛成<b>であれ</b>反対<b>であれ</b>、理由を明確にして意見を述べてください。', id: 'Baik setuju maupun tidak, silakan sampaikan pendapat dengan alasan yang jelas.' },
+  ],
+  see_also_grammar: ['gn2-00227', 'gn2-00229'], see_also_vocab: [],
+  confusion_pairs: ['gn2-00227'],
+  register: 'formal', exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00229', level: 'n2', pattern: '〜であろうと',
+  reading: '〜de arou to',
+  meaning: 'meskipun ... / sekalipun ... / tidak peduli apakah ...',
+  cat: 'contrast-concession',
+  connection: 'N / V-volitional form + であろうと',
+  desc: '<b>〜であろうと</b> menyatakan bahwa terlepas dari kondisi atau keadaan yang disebutkan, hasil atau tindakan tetap sama. Merupakan ungkapan formal yang menekankan tidak ada pengecualian.',
+  nuance: 'Lebih formal dari でも (meskipun). Sering muncul dalam konteks argumentasi atau pernyataan prinsip. Bisa dikombinasikan menjadi 〜であろうと〜であろうと untuk dua alternatif, mirip dengan であれ〜であれ (gn2-00228). Berbeda dari であれ〜であれ yang lebih terbatas pada dua pilihan eksplisit.',
+  examples: [
+    { jp: '相手が誰<b>であろうと</b>、礼儀は守らなければならない。', id: 'Meskipun lawannya siapa saja, sopan santun harus tetap dijaga.' },
+    { jp: 'どんな困難<b>であろうと</b>、諦めずに立ち向かう。', id: 'Sekalipun kesulitannya seperti apa, aku akan menghadapinya tanpa menyerah.' },
+  ],
+  see_also_grammar: ['gn2-00228', 'gn2-00230'], see_also_vocab: [],
+  confusion_pairs: ['gn2-00230'],
+  register: 'formal', exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00230', level: 'n2', pattern: '〜ようが〜まいが',
+  reading: '〜you ga〜mai ga',
+  meaning: 'mau ... atau tidak, tetap saja ... / entah ... atau tidak ...',
+  cat: 'contrast-concession',
+  connection: 'V-dict + ようが + V-dict + まいが',
+  desc: '<b>〜ようが〜まいが</b> menyatakan bahwa terlepas dari apakah seseorang melakukan sesuatu atau tidak, hasilnya tetap sama. Menggabungkan ようが (meskipun melakukan) dan まいが (meskipun tidak melakukan) untuk menekankan totalitas ketidakpedulian.',
+  nuance: 'Merupakan kombinasi dari ようと dan まいと (versi lebih formal). Digunakan untuk menekankan "tidak ada pengaruhnya apapun yang dilakukan atau tidak." Berbeda dari ようと〜まいと yang sedikit lebih formal namun bermakna sama. Verb yang digunakan biasanya sama di kedua bagian.',
+  examples: [
+    { jp: 'あなたが信じ<b>ようが</b>信じ<b>まいが</b>、これは事実だ。', id: 'Mau kamu percaya atau tidak, ini adalah kenyataan.' },
+    { jp: '雨が降り<b>ようが</b>降る<b>まいが</b>、試合は決行される。', id: 'Entah hujan turun atau tidak, pertandingan tetap akan dilangsungkan.' },
+  ],
+  see_also_grammar: ['gn2-00229', 'gn2-00231'], see_also_vocab: [],
+  confusion_pairs: ['gn2-00229'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00231', level: 'n2', pattern: '〜まい',
+  reading: '〜mai',
+  meaning: 'tidak akan ... / tidak berniat ... (negatif volitional)',
+  cat: 'volitional-intention',
+  connection: 'V-dict (Gr.1&2) + まい / V-masu-stem (Gr.2, opsional) + まい',
+  desc: '<b>〜まい</b> adalah bentuk negatif dari volitional — menyatakan tekad atau niat untuk tidak melakukan sesuatu, atau perkiraan bahwa sesuatu tidak akan terjadi. Merupakan ekspresi formal atau bernuansa sastra.',
+  nuance: 'Berbeda dari ないだろう yang hanya merupakan perkiraan — まい mengandung nuansa tekad atau kesadaran kuat dari pembicara. Untuk kata kerja ichidan (Gr.2), bisa pakai bentuk dict + まい atau masu-stem + まい (食べるまい atau 食べまい). Untuk する bisa jadi すまい atau しまい. Jarang dipakai dalam percakapan biasa — lebih sering dalam tulisan atau pidato.',
+  examples: [
+    { jp: 'あんな失敗は二度とする<b>まい</b>と心に誓った。', id: 'Aku berjanji dalam hati untuk tidak mengulangi kesalahan seperti itu lagi.' },
+    { jp: '彼はもう来る<b>まい</b>と思っていた。', id: 'Dia pikir dia tidak akan datang lagi.' },
+  ],
+  see_also_grammar: ['gn2-00230', 'gn2-00232'], see_also_vocab: [],
+  confusion_pairs: [],
+  register: 'formal', exceptions: 'する → すまい / しまい; くる → くるまい / こまい', notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00232', level: 'n2', pattern: '〜ではあるまいか',
+  reading: '〜de wa aru mai ka',
+  meaning: 'mungkinkah ... / bukankah ...? (perkiraan retorik yang halus)',
+  cat: 'conjecture-possibility',
+  connection: 'N / V-plain / Adj-plain + ではあるまいか',
+  desc: '<b>〜ではあるまいか</b> digunakan untuk menyampaikan pendapat atau dugaan dengan cara yang halus dan tidak langsung, seperti bertanya kepada diri sendiri. Mengandung nuansa retorik — pembicara sebenarnya sudah cukup yakin dengan pendapatnya.',
+  nuance: 'Lebih formal dan tidak langsung dibandingkan だろう atau のではないか. Penggunaan まいか (negatif dari volitional) menciptakan nuansa "bukankah ini..., bisa jadi begini..." yang lebih reflektif dan intelektual. Sering muncul dalam esai, karya sastra, atau wacana analitis.',
+  examples: [
+    { jp: '問題の根本は、コミュニケーション不足<b>ではあるまいか</b>。', id: 'Mungkinkah akar masalahnya adalah kurangnya komunikasi?' },
+    { jp: '彼の行動の裏には深い後悔があるの<b>ではあるまいか</b>。', id: 'Bukankah di balik tindakannya itu ada penyesalan yang mendalam?' },
+  ],
+  see_also_grammar: ['gn2-00231', 'gn2-00233'], see_also_vocab: [],
+  confusion_pairs: [],
+  register: 'formal', exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00233', level: 'n2', pattern: '〜とは',
+  reading: '〜to wa',
+  meaning: 'sungguh ... / ternyata ... / siapa sangka ... (ekspresi kejutan/emosi)',
+  cat: 'expression',
+  connection: 'clause / N + とは',
+  desc: '<b>〜とは</b> digunakan untuk mengekspresikan rasa terkejut, kagum, atau kecewa terhadap sesuatu yang tidak terduga. Kalimat sering berakhir di とは saja (tanpa predikat lengkap), dengan emosi tersirat.',
+  nuance: 'Berbeda dari とは dalam konteks definitif (Xとは Yのことだ — "X adalah Y") — di sini とは berdiri sendiri sebagai ekspresi emosi. Nuansanya bisa positif (kagum) maupun negatif (kecewa, marah). Sering digunakan dalam bahasa tulis atau pidato. Fungsinya mirip dengan まさか atau なんと dalam hal mengekspresikan kejutan.',
+  examples: [
+    { jp: 'まさかあの人が優勝する<b>とは</b>、驚いた。', id: 'Sungguh mengejutkan, siapa sangka orang itu yang menang.' },
+    { jp: '10年ぶりに再会できる<b>とは</b>、夢にも思わなかった。', id: 'Ternyata bisa bertemu kembali setelah 10 tahun, tidak pernah terbayangkan sekalipun.' },
+  ],
+  see_also_grammar: ['gn2-00234'], see_also_vocab: [],
+  confusion_pairs: [],
+  register: null, exceptions: null, notes: 'Jangan bingung dengan とは dalam fungsi definitif: Xとは Yのことだ.',
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00234', level: 'n2', pattern: '〜ものか',
+  reading: '〜mono ka',
+  meaning: 'tidak mungkin ... / pasti tidak ... (penolakan kuat dan emosional)',
+  cat: 'sentence-final-modality',
+  connection: 'V-dict / Adj-plain + ものか',
+  desc: '<b>〜ものか</b> menyatakan penolakan, bantahan kuat, atau ketidakmungkinan sesuatu dengan nuansa emosional. Merupakan pernyataan tegas bahwa pembicara tidak akan melakukan atau tidak percaya sesuatu terjadi.',
+  nuance: 'Lebih emosional dan kuat dari ないだろう. Bentuk kasual もんか sering dipakai dalam percakapan. Versi lebih halus: ものですか. Berbeda dari わけがない yang lebih logis dan analitis — ものか lebih bersifat emosional dan berbasis tekad atau kemarahan.',
+  examples: [
+    { jp: 'あんな人に負ける<b>ものか</b>！', id: 'Tidak mungkin aku kalah dari orang seperti itu!' },
+    { jp: 'そんな辛い思いを、もう一度する<b>ものか</b>。', id: 'Sudah pasti aku tidak akan mengalami penderitaan seperti itu lagi.' },
+  ],
+  see_also_grammar: ['gn2-00233', 'gn2-00235'], see_also_vocab: [],
+  confusion_pairs: [],
+  register: null, exceptions: null, notes: 'Bentuk kasual: もんか. Bentuk halus (feminim): ものですか.',
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00235', level: 'n2', pattern: '〜ものを',
+  reading: '〜mono wo',
+  meaning: 'padahal bisa saja ... / seandainya saja ... (penyesalan atau keluhan)',
+  cat: 'completion-regret',
+  connection: 'V-plain / Adj-plain + ものを',
+  desc: '<b>〜ものを</b> menyatakan penyesalan atau keluhan bahwa sesuatu yang seharusnya bisa terjadi justru tidak terjadi, atau seseorang tidak melakukan hal yang seharusnya. Mengandung nada menyesal atau menyalahkan.',
+  nuance: 'Berbeda dari のに (gn2-00238) yang lebih netral — ものを mengandung nada keluhan atau menyalahkan yang lebih kuat. Sering digunakan untuk mengkritik keputusan seseorang secara tidak langsung. Klausa setelahnya sering dihilangkan (elipsis), menyiratkan "tapi nyatanya tidak begitu."',
+  examples: [
+    { jp: '素直に謝れば許してもらえた<b>ものを</b>、強情を張るから…。', id: 'Kalau saja mau minta maaf dengan tulus, pasti sudah dimaafkan, tapi karena keras kepala...' },
+    { jp: '早めに病院に行けばよかった<b>ものを</b>。', id: 'Seandainya saja pergi ke dokter lebih awal, pasti sudah lebih baik.' },
+  ],
+  see_also_grammar: ['gn2-00236', 'gn2-00238'], see_also_vocab: [],
+  confusion_pairs: ['gn2-00236', 'gn2-00238'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00236', level: 'n2', pattern: '〜だろうに',
+  reading: '〜darou ni',
+  meaning: 'padahal pasti ... / seandainya ... tentu ... (penyesalan kontrafaktual)',
+  cat: 'completion-regret',
+  connection: 'V-plain / Adj-plain / N + だろうに',
+  desc: '<b>〜だろうに</b> menyatakan penyesalan atau simpati dengan membayangkan kondisi yang seharusnya bisa terjadi tetapi tidak. Pembicara menyiratkan "padahal sudah jelas hasilnya bisa baik, tapi nyatanya tidak begitu."',
+  nuance: 'Berbeda dari ものを (gn2-00235) yang cenderung menyalahkan seseorang — だろうに lebih banyak mengandung simpati atau penyesalan yang reflektif. Berbeda dari のに (gn2-00238) yang lebih umum dan kasual — だろうに lebih formal dan mengandung elemen perkiraan (だろう).',
+  examples: [
+    { jp: '少し休めば楽になる<b>だろうに</b>、無理をして倒れてしまった。', id: 'Padahal kalau sedikit saja istirahat pasti merasa lebih baik, tapi malah memaksakan diri sampai jatuh sakit.' },
+    { jp: '言えば助けてもらえた<b>だろうに</b>、なぜ一人で抱え込んだのか。', id: 'Kalau bilang saja pasti sudah dibantu, mengapa menanggungnya sendiri?' },
+  ],
+  see_also_grammar: ['gn2-00235', 'gn2-00238'], see_also_vocab: [],
+  confusion_pairs: ['gn2-00235'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00237', level: 'n2', pattern: '〜くせに',
+  reading: '〜kuse ni',
+  meaning: 'padahal ... / meski sebenarnya ... (kecewa atau kritis terhadap seseorang)',
+  cat: 'contrast-concession',
+  connection: 'V-plain / Adj-plain / N + の + くせに',
+  desc: '<b>〜くせに</b> menyatakan kontras antara kenyataan dan perilaku seseorang, dengan nada kecewa, kritis, atau menyalahkan. Digunakan ketika pembicara merasa seseorang tidak konsisten dengan kondisi atau kemampuannya.',
+  nuance: 'Berbeda dari のに (gn2-00238) yang lebih netral — くせに selalu mengandung nuansa kritik atau ketidakpuasan yang ditujukan kepada orang tertentu. Tidak sopan digunakan kepada orang yang lebih tua atau atasan. Subyek biasanya orang lain, bukan diri sendiri.',
+  examples: [
+    { jp: '知らない<b>くせに</b>、知ったかぶりをするな。', id: 'Padahal tidak tahu apa-apa, jangan sok tahu.' },
+    { jp: '自分もできない<b>くせに</b>、人のことをとやかく言うな。', id: 'Kamu sendiri juga tidak bisa, tapi malah mengkritik orang lain.' },
+  ],
+  see_also_grammar: ['gn2-00238'], see_also_vocab: [],
+  confusion_pairs: ['gn2-00238'],
+  register: null, exceptions: null, notes: 'Tidak sopan — hindari penggunaan kepada orang yang lebih tua atau atasan.',
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00238', level: 'n2', pattern: '〜のに',
+  reading: '〜no ni',
+  meaning: 'padahal ... / tapi ... (harapan vs kenyataan yang mengecewakan)',
+  cat: 'contrast-concession',
+  connection: 'V-plain / Adj-plain / N + な + のに',
+  desc: '<b>〜のに</b> menyatakan kontras antara harapan atau logika dengan kenyataan yang mengecewakan. Digunakan ketika pembicara merasa sesuatu tidak berjalan seperti yang seharusnya.',
+  nuance: 'Berbeda dari が dan けど yang netral — のに selalu mengandung unsur kekecewaan atau kejutan negatif. Berbeda dari くせに (gn2-00237) yang lebih kasar dan kritis — のに lebih umum dan bisa digunakan dalam berbagai situasi. Catatan: のに juga bermakna "untuk/demi" (purpose) ketika diikuti V-dict — fungsi yang sama sekali berbeda.',
+  examples: [
+    { jp: 'せっかく来た<b>のに</b>、彼女はいなかった。', id: 'Padahal sudah jauh-jauh datang, tapi ternyata dia tidak ada.' },
+    { jp: 'こんなに頑張っている<b>のに</b>、なぜ評価してもらえないんだろう。', id: 'Padahal sudah berusaha sekeras ini, tapi mengapa tidak diapresiasi.' },
+  ],
+  see_also_grammar: ['gn2-00237', 'gn2-00235'], see_also_vocab: [],
+  confusion_pairs: ['gn2-00237', 'gn2-00235'],
+  register: null, exceptions: null, notes: 'Jangan bingung dengan のに bermakna "untuk/demi" (purpose): 〜するのに必要だ.',
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00239', level: 'n2', pattern: '〜ないもの(だろう)か',
+  reading: '〜nai mono (darou) ka',
+  meaning: 'tidak bisakah ... / mungkinkah tidak ada cara untuk ...? (harapan/keinginan)',
+  cat: 'sentence-final-request',
+  connection: 'V-nai + もの(だろう)か',
+  desc: '<b>〜ないものだろうか</b> mengekspresikan keinginan atau harapan agar sesuatu bisa terwujud, dengan nada bertanya kepada diri sendiri atau lingkungan. Menyiratkan bahwa situasinya sulit tetapi pembicara berharap ada jalan keluar.',
+  nuance: 'Berbeda dari てほしい yang langsung meminta kepada seseorang — ないものだろうか lebih bersifat reflektif, merupakan harapan umum bukan permintaan langsung. Sering muncul dalam monolog atau tulisan. Bisa muncul sebagai ないものか (lebih kasual) atau ないものでしょうか (lebih sopan).',
+  examples: [
+    { jp: 'もっと効率的な方法は<b>ないものだろうか</b>。', id: 'Tidak bisakah ada cara yang lebih efisien dari ini?' },
+    { jp: 'この問題を平和的に解決でき<b>ないものか</b>と思う。', id: 'Aku berharap masalah ini bisa diselesaikan secara damai.' },
+  ],
+  see_also_grammar: ['gn2-00232'], see_also_vocab: [],
+  confusion_pairs: [],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00240', level: 'n2', pattern: '〜いかん',
+  reading: '〜ikan',
+  meaning: 'tergantung bagaimana / bergantung pada ... (formal)',
+  cat: 'conditional-tara',
+  connection: 'N + いかん',
+  desc: '<b>〜いかん</b> menyatakan bahwa sesuatu bergantung pada kondisi atau cara yang disebutkan. Merupakan ekspresi formal yang sering muncul dalam konteks administratif, hukum, atau tulisan resmi.',
+  nuance: 'Setara dengan 〜次第 (しだい) dalam makna, namun いかん jauh lebih formal. Kata ini berasal dari 如何 yang berarti "bagaimana." Berbeda dari いかんによっては (gn2-00241) yang menekankan variasi kemungkinan — いかん lebih umum menyatakan ketergantungan tersebut.',
+  examples: [
+    { jp: '今後の対応<b>いかん</b>では、契約を解除することになる。', id: 'Tergantung bagaimana penanganan ke depannya, bisa saja kontrak dibatalkan.' },
+    { jp: '結果<b>いかん</b>によって、次の対策を検討する。', id: 'Tergantung pada hasilnya, kami akan mempertimbangkan langkah selanjutnya.' },
+  ],
+  see_also_grammar: ['gn2-00241', 'gn2-00242', 'gn2-00243', 'gn2-00244'], see_also_vocab: [],
+  confusion_pairs: ['gn2-00241', 'gn2-00244'],
+  register: 'formal', exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00241', level: 'n2', pattern: '〜いかんによっては',
+  reading: '〜ikan ni yotte wa',
+  meaning: 'tergantung bagaimana ... / bergantung pada kondisi/hasil ...',
+  cat: 'conditional-tara',
+  connection: 'N + いかんによっては',
+  desc: '<b>〜いかんによっては</b> menyatakan bahwa bergantung pada kondisi atau hasilnya, konsekuensi tertentu mungkin terjadi. Menekankan bahwa ada kemungkinan perubahan atau variasi berdasarkan kondisi yang disebutkan.',
+  nuance: 'Lebih spesifik dari いかん (gn2-00240) karena mengisyaratkan adanya kemungkinan tertentu yang bergantung pada kondisi. Sering digunakan dalam konteks ancaman halus, peringatan, atau pengambilan keputusan kondisional. Berbeda dari いかんにかかわらず (gn2-00242) yang justru menyatakan "tidak bergantung pada."',
+  examples: [
+    { jp: '検査の結果<b>いかんによっては</b>、入院が必要になるかもしれない。', id: 'Tergantung hasil pemeriksaan, mungkin diperlukan rawat inap.' },
+    { jp: '今後の態度<b>いかんによっては</b>、処分を検討することになる。', id: 'Bergantung pada sikap ke depannya, akan dipertimbangkan sanksi.' },
+  ],
+  see_also_grammar: ['gn2-00240', 'gn2-00242', 'gn2-00243'], see_also_vocab: [],
+  confusion_pairs: ['gn2-00240', 'gn2-00242', 'gn2-00243'],
+  register: 'formal', exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00242', level: 'n2', pattern: '〜いかんにかかわらず',
+  reading: '〜ikan ni kakawarazu',
+  meaning: 'terlepas dari ... / tidak peduli bagaimanapun ... (formal)',
+  cat: 'contrast-concession',
+  connection: 'N + いかんにかかわらず',
+  desc: '<b>〜いかんにかかわらず</b> menyatakan bahwa apapun kondisi atau hasilnya, sesuatu tetap berlaku. Merupakan ungkapan formal yang berarti "tidak bergantung pada" atau "terlepas dari."',
+  nuance: 'Kebalikan dari いかんによっては (gn2-00241) — di sini kondisi tidak berpengaruh pada hasilnya. Mirip dengan にかかわらず yang lebih umum, namun kombinasi dengan いかん menambah keformalan. Sering muncul dalam dokumen resmi, peraturan, atau pengumuman resmi.',
+  examples: [
+    { jp: '理由<b>いかんにかかわらず</b>、無断欠席は認められない。', id: 'Terlepas dari alasan apapun, ketidakhadiran tanpa izin tidak dapat dibenarkan.' },
+    { jp: '結果<b>いかんにかかわらず</b>、参加したことに意義がある。', id: 'Terlepas dari hasilnya, ada makna tersendiri dalam keikutsertaan ini.' },
+  ],
+  see_also_grammar: ['gn2-00240', 'gn2-00241'], see_also_vocab: [],
+  confusion_pairs: ['gn2-00241'],
+  register: 'formal', exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00243', level: 'n2', pattern: '〜いかんで',
+  reading: '〜ikan de',
+  meaning: 'tergantung pada ... / ditentukan oleh ... (formal/tertulis)',
+  cat: 'conditional-tara',
+  connection: 'N + いかんで',
+  desc: '<b>〜いかんで</b> menyatakan bahwa sesuatu ditentukan atau dipengaruhi oleh kondisi yang disebutkan. Digunakan dalam konteks formal untuk menyatakan ketergantungan langsung pada suatu faktor.',
+  nuance: 'Secara fungsi mirip dengan いかんによっては (gn2-00241), namun いかんで lebih menekankan hubungan kausal langsung — "X-lah yang menentukan Y." Sedikit lebih langsung dibanding いかんによっては yang lebih menekankan kemungkinan. Keduanya formal, namun いかんで sering dipakai dalam pernyataan singkat.',
+  examples: [
+    { jp: 'この交渉の成否は、あなたの判断<b>いかんで</b>決まる。', id: 'Berhasil atau tidaknya negosiasi ini ditentukan oleh keputusanmu.' },
+    { jp: '今後の努力<b>いかんで</b>、昇進の可能性もある。', id: 'Tergantung pada usahamu ke depan, ada kemungkinan promosi jabatan.' },
+  ],
+  see_also_grammar: ['gn2-00240', 'gn2-00241', 'gn2-00244'], see_also_vocab: [],
+  confusion_pairs: ['gn2-00241'],
+  register: 'formal', exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00244', level: 'n2', pattern: '〜如何',
+  reading: '〜ikan (penulisan kanji resmi dari いかん)',
+  meaning: 'tergantung pada ... (sangat formal/tertulis)',
+  cat: 'conditional-tara',
+  connection: 'N + 如何',
+  desc: '<b>〜如何</b> adalah penulisan kanji dari いかん — digunakan dalam dokumen sangat formal seperti peraturan perusahaan, surat resmi, dan pengumuman pemerintah. Maknanya identik dengan いかんで dan いかんによっては, namun levelnya lebih tinggi.',
+  nuance: '如何 dan いかん secara makna sama, namun 如何 hampir eksklusif muncul dalam tulisan resmi seperti hukum, peraturan, atau dokumen bisnis formal. Dalam percakapan, bentuk ini tidak pernah digunakan. Perhatian: 如何 juga bisa dibaca いかが (pertanyaan "bagaimana?") dalam konteks yang berbeda — beda pembacaan, beda makna.',
+  examples: [
+    { jp: '応募の合否は書類審査の結果<b>如何</b>による。', id: 'Diterima atau tidaknya lamaran bergantung pada hasil seleksi dokumen.' },
+    { jp: '今後の対応<b>如何</b>では、法的措置も辞さない。', id: 'Tergantung penanganan ke depan, tindakan hukum pun tidak akan dihindari.' },
+  ],
+  see_also_grammar: ['gn2-00240', 'gn2-00243'], see_also_vocab: [],
+  confusion_pairs: ['gn2-00240'],
+  register: 'formal', exceptions: null, notes: '如何 juga dapat dibaca いかが (bagaimana?) dalam konteks lain — berbeda makna.',
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00245', level: 'n2', pattern: '〜きらいがある',
+  reading: '〜kirai ga aru',
+  meaning: 'ada kecenderungan ... / cenderung ... (biasanya negatif)',
+  cat: 'expression',
+  connection: 'V-dict / N + の + きらいがある',
+  desc: '<b>〜きらいがある</b> menyatakan bahwa seseorang atau sesuatu memiliki kecenderungan tertentu yang biasanya dianggap kurang baik. きらい di sini bukan berarti "tidak suka" melainkan bermakna "kecenderungan" yang berasal dari kosakata kuno.',
+  nuance: 'Berbeda dari がちだ (gn2-00246) yang lebih konkret dan kasual — きらいがある lebih bersifat evaluatif dan digunakan dalam konteks analitis atau formal. Sering dipakai untuk menilai karakter, kebiasaan, atau sifat suatu kelompok/institusi. Nuansanya lebih "penilaian kritis dari luar."',
+  examples: [
+    { jp: '彼は物事を大げさに考える<b>きらいがある</b>。', id: 'Dia cenderung melebih-lebihkan segala sesuatu.' },
+    { jp: '日本の会議は長引く<b>きらいがある</b>と指摘されている。', id: 'Rapat-rapat di Jepang sering disorot karena cenderung berlarut-larut.' },
+  ],
+  see_also_grammar: ['gn2-00246'], see_also_vocab: [],
+  confusion_pairs: ['gn2-00246'],
+  register: null, exceptions: null, notes: 'きらい di sini bukan "tidak suka" — berasal dari kosakata kuno yang bermakna "kecenderungan."',
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00246', level: 'n2', pattern: '〜がちだ',
+  reading: '〜gachi da',
+  meaning: 'cenderung ... / sering ... (biasanya hal negatif)',
+  cat: 'predicate-adjective',
+  connection: 'V-masu-stem / N + がちだ',
+  desc: '<b>〜がちだ</b> menyatakan kecenderungan untuk sering melakukan atau mengalami sesuatu, biasanya hal yang kurang diinginkan. Dapat digunakan sebagai predikat (がちだ) maupun sebagai modifier sebelum nomina (がちな).',
+  nuance: 'Berbeda dari きらいがある (gn2-00245) yang lebih evaluatif dan formal — がちだ lebih deskriptif dan umum. Biasanya digunakan untuk hal-hal negatif atau yang dianggap tidak ideal. Berbeda dari っぽい (gn2-00247) yang tentang kesan/tampilan daripada kecenderungan perilaku berulang.',
+  examples: [
+    { jp: '冬は運動不足になり<b>がちだ</b>。', id: 'Di musim dingin orang cenderung kurang bergerak.' },
+    { jp: '一人暮らしをすると、食生活が偏り<b>がちだ</b>。', id: 'Saat tinggal sendiri, pola makan cenderung jadi tidak seimbang.' },
+  ],
+  see_also_grammar: ['gn2-00245', 'gn2-00248'], see_also_vocab: [],
+  confusion_pairs: ['gn2-00245', 'gn2-00248'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00247', level: 'n2', pattern: '〜っぽい',
+  reading: '〜ppoi',
+  meaning: 'terasa seperti ... / agak ... / -ish (berkesan seperti)',
+  cat: 'predicate-adjective',
+  connection: 'V-masu-stem / N / Adj-stem + っぽい',
+  desc: '<b>〜っぽい</b> menyatakan bahwa sesuatu memberikan kesan atau terasa seperti yang disebutkan, meski belum tentu demikian. Bersifat informal dan sering digunakan dalam percakapan sehari-hari.',
+  nuance: 'Berbeda dari らしい yang menyatakan "memang seperti seharusnya" — っぽい lebih menyatakan "terasa/tampak seperti, tapi mungkin tidak benar." Biasanya berkonotasi sedikit negatif atau merendahkan (contoh: 子供っぽい = kekanak-kanakan). Berbeda dari がちだ (gn2-00246) yang tentang kecenderungan perilaku berulang, っぽい lebih tentang kesan tampilan atau sifat.',
+  examples: [
+    { jp: 'この映画、ちょっと古<b>っぽい</b>ね。', id: 'Film ini agak terasa jadul ya.' },
+    { jp: '彼女の話し方、子供<b>っぽい</b>と思わない？', id: 'Menurutmu cara ngomong dia kekanak-kanakan tidak?' },
+  ],
+  see_also_grammar: ['gn2-00248', 'gn2-00246'], see_also_vocab: [],
+  confusion_pairs: ['gn2-00248'],
+  register: null, exceptions: null, notes: 'Ekspresi informal — hindari dalam tulisan atau situasi formal.',
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00248', level: 'n2', pattern: '〜気味だ',
+  reading: '〜gimi da',
+  meaning: 'agak ... / sedikit ... (kondisi sedikit mengarah ke hal negatif)',
+  cat: 'predicate-adjective',
+  connection: 'V-masu-stem / N + 気味だ',
+  desc: '<b>〜気味だ</b> menyatakan bahwa seseorang atau sesuatu berada dalam kondisi yang sedikit mengarah ke hal negatif. Mengandung nuansa bahwa kondisi tersebut belum serius namun mulai terasa.',
+  nuance: 'Berbeda dari がちだ (gn2-00246) yang menyatakan kecenderungan berulang — 気味だ lebih menyatakan kondisi sesaat yang sedang dialami. Biasanya digunakan untuk kondisi fisik atau mental. Berbeda dari っぽい (gn2-00247) yang tentang kesan dari luar — 気味だ adalah kondisi yang dialami sendiri.',
+  examples: [
+    { jp: '最近、疲れ<b>気味だ</b>から、早めに帰ることにした。', id: 'Akhir-akhir ini agak kelelahan, jadi memutuskan untuk pulang lebih awal.' },
+    { jp: '風邪<b>気味だ</b>から、今日は無理をしないようにする。', id: 'Agak sedikit flu, jadi hari ini tidak mau memaksakan diri.' },
+  ],
+  see_also_grammar: ['gn2-00249', 'gn2-00246'], see_also_vocab: [],
+  confusion_pairs: ['gn2-00249', 'gn2-00246', 'gn2-00247'],
+  register: null, exceptions: null, notes: null,
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00249', level: 'n2', pattern: '〜ぎみ',
+  reading: '〜gimi',
+  meaning: 'sedikit ... / agak ... (penulisan hiragana dari 気味, lebih kasual)',
+  cat: 'predicate-adjective',
+  connection: 'V-masu-stem / N + ぎみ',
+  desc: '<b>〜ぎみ</b> adalah varian penulisan hiragana dari 〜気味だ (gn2-00248). Memiliki makna yang sama — menyatakan kondisi sedikit mengarah ke hal negatif. Sering dipakai saat digunakan sebagai modifier sebelum nomina atau dalam teks informal.',
+  nuance: 'Secara gramatikal dan semantik identik dengan 気味だ — perbedaannya hanya pada ortografi. Penulisan hiragana ぎみ lebih sering muncul dalam pesan teks, chat, atau penulisan kasual. Dalam tulisan formal atau dokumen resmi, lebih diutamakan 気味. Sebagai modifier: 疲れぎみの体 (tubuh yang agak kelelahan).',
+  examples: [
+    { jp: '今日はちょっと体調が悪<b>ぎみ</b>で…。', id: 'Hari ini kondisi badan agak kurang baik...' },
+    { jp: '最近、遅刻<b>ぎみ</b>だから気をつけないと。', id: 'Belakangan ini agak sering terlambat, harus lebih hati-hati.' },
+  ],
+  see_also_grammar: ['gn2-00248'], see_also_vocab: [],
+  confusion_pairs: ['gn2-00248'],
+  register: null, exceptions: null, notes: 'Identik dengan 気味だ — perbedaan hanya pada penulisan (kanji vs hiragana).',
+  provenance: 'jlpt-corpus', added_v: 'v15'
+},
+
+{
+  id: 'gn2-00250', level: 'n2', pattern: '〜向きだ / 〜向け',
+  reading: '〜muki da / 〜muke',
+  meaning: 'cocok untuk ... / ditujukan untuk ... / sesuai bagi ...',
+  cat: 'predicate-adjective',
+  connection: 'N + 向きだ / N + 向け + (N)',
+  desc: '<b>〜向きだ</b> menyatakan bahwa sesuatu cocok atau sesuai untuk kondisi/orang tertentu secara alami berdasarkan karakteristiknya. <b>〜向け</b> menyatakan bahwa sesuatu sengaja dibuat atau dirancang untuk kelompok atau tujuan tertentu.',
+  nuance: '向きだ vs 向け: 向きだ (cocok secara alami/karakteristik) vs 向け (sengaja dibuat/dirancang untuk). Contoh: この仕事は彼向きだ (pekerjaan ini secara karakter cocok untuknya) vs 子供向けの本 (buku yang memang dibuat untuk anak-anak). Perhatian: 向き juga bermakna "menghadap ke arah tertentu" (東向き = menghadap timur) — beda konteks, beda makna.',
+  examples: [
+    { jp: 'この映画は子供<b>向け</b>に作られている。', id: 'Film ini dibuat dan ditujukan untuk anak-anak.' },
+    { jp: '細かい作業が好きな人<b>向きだ</b>と思います。', id: 'Menurutku ini cocok untuk orang yang suka pekerjaan yang membutuhkan ketelitian.' },
+  ],
+  see_also_grammar: ['gn2-00245', 'gn2-00246'], see_also_vocab: [],
+  confusion_pairs: [],
+  register: null, exceptions: null, notes: '向き juga bermakna "arah menghadap" (東向き = menghadap timur) dalam konteks berbeda.',
+  provenance: 'jlpt-corpus', added_v: 'v15'
 }
+
 ];
