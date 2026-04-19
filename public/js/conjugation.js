@@ -47,17 +47,25 @@ function startConjugationQuiz() {
   activeEl.style.display = 'block';
 
   if (!pool.length) {
-    document.getElementById('conjCard').innerHTML = `
-      <div class="fill-coming-soon">
-        <div class="cs-icon">🔤</div>
-        <h3>Soal belum tersedia</h3>
-        <p>Bank soal Conjugation untuk level/minggu ini sedang disiapkan.<br>
-        Sementara coba <strong>N3 atau N4</strong> yang sudah tersedia!</p>
-      </div>`;
-    document.getElementById('conjProgressTxt').textContent = '0 / 0';
-    document.getElementById('conjProgressFill').style.width = '0%';
-    document.getElementById('conjScoreTxt').innerHTML = '—';
-    return;
+    // Fallback: generate from all grammar without level restriction
+    var _fb = window.quizEngine
+      ? window.quizEngine.generate({ quizType: 'mixed', level: null, n: 20, source: 'grammar', mode: 'mixed' })
+      : [];
+    if (_fb.length) {
+      pool = _fb;
+    } else {
+      document.getElementById('conjCard').innerHTML = `
+        <div class="fill-coming-soon">
+          <div class="cs-icon">🔤</div>
+          <h3>Belum ada soal Konjugasi</h3>
+          <p>Mulai belajar kartu grammar dulu agar soal tersedia.<br>
+          <button class="cs-action-btn" onclick="window.switchTab('browse',document.querySelector('[aria-label=Materi]'))">Ke Browse →</button></p>
+        </div>`;
+      document.getElementById('conjProgressTxt').textContent = '0 / 0';
+      document.getElementById('conjProgressFill').style.width = '0%';
+      document.getElementById('conjScoreTxt').innerHTML = '—';
+      return;
+    }
   }
 
   conjDeck = [...pool].sort(() => Math.random() - 0.5);

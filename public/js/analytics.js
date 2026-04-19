@@ -449,4 +449,5 @@ function _escHtml(str) {
 // ── Tab visibility hook ──────────────────────────────────────────
 window._analyticsOnTabShow = function () {
   initAnalytics();
+  if (window.initKebunMastery) window.initKebunMastery();
 };

@@ -1,125 +1,247 @@
-# CLAUDE.md — Handoff Note for Claude Code
+# CLAUDE.md — Handoff Note for Claude Agents
 **Project:** Nugget Nihongo — Japanese language learning PWA  
-**Last updated:** 18 April 2026 · v15.8.0  
-**Owner:** Nugget (non-programmer, Indonesian speaker)
+**Last updated:** 19 April 2026 · v15.12.3  
+**Owner:** Nugget (non-programmer, Indonesian speaker, product owner + content expert)
 
 ---
 
 ## WHAT IS THIS PROJECT
 
-A vanilla JS **hybrid** PWA for learning Japanese, targeting Indonesian speakers. No framework (React/Vue/etc.) — pure HTML/CSS/JS with script tags. Primary storage is Supabase; IndexedDB is the offline fallback. Service worker provides offline capability for core study features.
+A vanilla JS **hybrid** PWA for learning Japanese, targeting Indonesian speakers. No framework (React/Vue/etc.) — pure HTML/CSS/JS with script tags. Primary storage is localStorage + IndexedDB; Supabase is the cloud sync layer. Service worker provides offline capability for all study features.
 
-**Tech stack:** HTML + vanilla JS + CSS · Service Worker · FSRS (ts-fsrs CDN) · Supabase (auth, SRS sync, progress) · Cloudflare Pages (hosting) · Cloudflare Workers (AI proxy)
+**Live:** https://nugget-nihongo.pages.dev  
+**Repo:** https://github.com/nuggetenak/nugget-nihongo  
+**Branch strategy:** `develop` → `main` (Cloudflare Pages auto-deploys from main, ~60s)
 
-**Repo structure:**
-```
-public/              ← deploy root (Cloudflare Pages serves this)
-  index.html         ← single-page app, 4 tabs: Browse / Quiz / Sensei / Stats
-  styles/app.css     ← all styles (3842 lines)
-  sw.js              ← service worker (nihongo-v15.6.0, hybrid cache strategy)
-  js/                ← JS modules (no bundler, loaded via script tags)
-    core/            ← version.js, state.js, router.js, theme.js, install.js
-    tweaks.js        ← accent switcher, density, furigana panel (long-press N logo)
-    local-state.js   ← IndexedDB wrapper + Supabase sync queue
-    fsrs-math.js     ← FSRS calibration for Indonesian learners
-    fsrs-engine.js   ← FSRS scheduler (ts-fsrs CDN) + IndexedDB sync hook
-    analytics.js     ← Stats dashboard (JLPT rings, SRS health, heatmap)
-    ai-tutor.js      ← AI Sensei UI (3 modes: explain/practice/test)
-    supabase-client.js ← Auth, SRS sync, Learning DNA API
-    [+ 25 other feature modules]
-  data/              ← content database as JS files
-    vocab/           ← vocab-n5 (725) · n4 (692) · n3 (285) · n2 (130) · n1 (60)
-    grammar/         ← grammar-n5 (94) · n4 (92) · n3 (119) · n2 (90) · n1 (60) + grammar-index.js
-    books/           ← book index files + Soumatome grammar lenses (N3: 132, N4: 102)
-                        + Irodori grammar lenses (A1: 61, A2-1: 65, A2-2: 62)
-    tracks/          ← study track definitions (runtime-populated)
-    fallback/        ← grammar-drills.json + vocab-drills.json (offline AI fallback)
-  icons/             ← PWA icons
-  manifest.webmanifest
-workers/             ← Cloudflare Worker source
-  ai-proxy.js        ← tiered AI routing (Groq fast / Gemini complex) + KV rate limits
-  wrangler.toml      ← Worker config (KV namespace: RATE_LIMITS)
-supabase/
-  schema.sql         ← 7 tables + RLS + triggers + learning_dna JSONB (idempotent)
-  functions/
-    ai-router/       ← Edge Function: Groq+Gemini routing, Indonesian tutor persona
-wrangler.jsonc       ← Cloudflare Pages config (serves public/)
-docs/                ← collected project documentation (project/, agent-system/, supabase/)
-tests/               ← test runner (node tests/run.js → 10,550 PASS, 0 FAIL)
-tools/               ← build/migration scripts (gitignored)
-```
+**Tech stack:**
+- HTML + Vanilla JS (ES2020+) + CSS (single file, 5046 lines)
+- Service Worker (cache-first static, network-first API)
+- FSRS via ts-fsrs CDN (spaced repetition)
+- Supabase (auth, cloud SRS sync, progress)
+- Cloudflare Pages (hosting) + Cloudflare Workers (AI proxy)
+- Fonts: DM Sans (Latin) + BIZ UDGothic (Japanese)
 
-## CURRENT STATE (v15.7.0)
+---
+
+## CURRENT STATE (v15.12.3)
 
 ### What works
-- Grammar DB: N5 (94), N4 (92), N3 (119) — full coverage, 5-digit IDs, examples, descriptions
-- Grammar DB: N2 (90), N1 (60) — partial, good working coverage for common patterns
-- Vocab DB: N5 (725), N4 (692), N3 (285) — 5-digit IDs, bilingual examples
-- Vocab DB: N2 (130), N1 (60) — partial seed, usable for basic coverage
-- Soumatome grammar lenses: N3 (132 entries), N4 (102) — fully populated
-- Irodori grammar lenses: A1 (61), A2-1 (65), A2-2 (62) — fully populated
-- Study tracks: JLPT N5-N1 auto-populate at runtime, Soumatome tracks from lens, Freeway hand-curated
-- Engines: conjugation, FSRS (ts-fsrs), quiz engine v2, gamification, backup/restore
-- AI Sensei tab: 3 modes (explain/practice/test), quota bar, conversation history, Learning DNA context
-- Stats tab: JLPT readiness rings, SRS health chart, review heatmap, weak-point tracker
-- Auth UI: Supabase Google OAuth (wiring in supabase-client.js, awaiting credentials)
-- Offline AI fallback drills: grammar-drills.json + vocab-drills.json
-- PWA: installable, offline-capable via service worker (cache-first static, network-first API)
-- App startup: no ReferenceErrors — all critical bugs fixed
+- **Grammar DB:** N5 (94), N4 (92), N3 (103), N2 (80 est), N1 (60 est) entries
+- **Vocab DB:** N5 (725), N4 (692), N3 (405), N2 (140), N1 (70) entries
+- **Grammar lenses:** Soumatome N3 (132), N4 (102); Irodori A1 (61), A2-1 (65), A2-2 (62)
+- **Browse tab:** Peel cards with accordion reveal, hold=peek, tap=reveal; ⋯ detail modal; ☆ bookmark; filter/search/super-cats
+- **Detail modal:** Bottom-sheet modal with full grammar info, examples, breakdown toggle (CSS §31)
+- **Hub navigation:** JLPT door, Buku (book) door, 語 Jelajah Bebas door; book accordion; chapter pills when in book view
+- **FSRS engine:** Full SRS with ts-fsrs, migration from SM-2 complete. Data shape: `srsData[id].card.{due(ISO), reps, scheduled_days, stability, lapses, state}`
+- **9 quiz modes:** Flip, Fill-in, Rearrange, Konjugasi, Terjemahan, Cari Kesalahan, Pilihan Ganda, Vocab (Flash/MC/Fill), Mixed
+- **Gamification:** XP, streaks, achievements, heatmap — all wired
+- **Analytics tab:** JLPT rings, SRS health bars, 52-week heatmap, Perlu Perhatian (→ launches quiz), quiz accuracy chart
+- **Sensei (AI Tutor):** 3 modes (Jelaskan/Tantang/Ngobrol), quota bar, conversation history, DNA context
+- **Backup/restore:** Export JSON, import JSON, all user keys covered
+- **PWA:** Installable, full offline via SW cache
+- **URL hash routing:** Refresh stays on current tab (#browse, #quiz, #stats, etc.)
+- **Kebun Mastery:** DRAFT at `public/js/kebun-mastery.js` — not yet wired
 
 ### What still needs doing (priority order)
 
-See **MASTER-AUDIT.md** for full task specs and execution order. Current active tasks are TASK 12–17. Tasks 1–11 are complete.
+#### IMMEDIATE — Wire Kebun Mastery
+Draft complete at `public/js/kebun-mastery.js`. Wire-up checklist:
+```
+[ ] Add <script src="./js/kebun-mastery.js"></script> to index.html (after detail.js)
+[ ] Add './js/kebun-mastery.js' to SW ASSETS in sw.js
+[ ] Paste docs/kebun-mastery/kebun-snippet.html into #statsPage (before #weakPointsSection)
+[ ] Append docs/kebun-mastery/kebun-styles.css to app.css
+[ ] Call window.initKebunMastery() from _analyticsOnTabShow in analytics.js
+```
 
-#### TASK 12 — Deploy AI Proxy Worker [BLOCKED]
-Needs `GROQ_API_KEY` + `GEMINI_API_KEY` from Nugget first.
-See `SETUP.md` and `CLAUDE-CODE-TASKS.md § TASK-CC-4`.
+#### FRONTEND — Quiz empty states
+7 quiz modes show `<div class="fill-coming-soon">` (blank screen) when no questions found.
+Files: `fillin.js` (×2), `conjugation.js`, `translation.js`, `errorfind.js`, `multichoice.js`, `quiz-vocab.js`
+Fix: proper empty state UI with helpful message + action button.
 
-#### TASK 13 — Setup Google OAuth [Human task]
-Supabase Dashboard → Authentication → Providers → Google → Enable.
-Redirect URL: `https://oxeuwkpgrtojjzhcboqz.supabase.co/auth/v1/callback`
+#### BACKEND — Supabase sync broken (3 critical bugs)
+All marked with `// ⚠️ BACKEND BUG` in `supabase-client.js`:
 
-#### TASK 14 — Category panel accordion UX [Post-launch]
-Group 40+ categories into 8 super-categories, collapsed by default.
-See `CLAUDE-CODE-TASKS.md § TASK-CC-5`.
+1. **`sb.auth.getUser()` called synchronously** in 6 places — returns Promise, not resolved.
+   Result: `user_id` always `undefined` → all Supabase writes silently fail RLS.
+   Fix: make those functions `async`, add `await sb.auth.getUser()`.
 
-#### TASK 15 — N3 vocab expansion [Next content batch]
-File: `public/data/vocab/vocab-n3.js`
-Currently 285 entries. Continue from `vg-n3-00286`. Target: 300+ minimum, 3,750 ideal.
+2. **`bulkSync()` receives object, calls `.map()`** → TypeError.
+   `nn_fsrs_cards` is `{id: entry}`, not array.
+   Fix: `Object.entries(cards).map(([id, entry]) => ({ user_id, item_id: id, ...entry.card }))`.
 
-#### TASK 16 — N2/N1 grammar & vocab enrichment [Next content batch]
-N2 grammar (90 entries) and N1 grammar (60 entries) cover common patterns but not complete.
-N2 vocab (130 entries) and N1 vocab (60 entries) are partial — expand when bandwidth allows.
+3. **`sbClient.supabaseKey` doesn't exist in Supabase v2** — always `''`.
+   Fix: export constants directly from the IIFE.
 
-#### TASK 17 — Minna no Nihongo lenses [BLOCKED]
-`book-minna-1.js` + `book-minna-2.js` empty. Needs PDF.
-
-#### Infrastructure (human tasks — Nugget provides)
-- **Cloudflare Worker secrets:** `wrangler secret put GROQ_API_KEY` + `GEMINI_API_KEY` (see `SETUP.md`).
-- **Google OAuth credentials:** Google Cloud Console → new OAuth client → paste into Supabase.
-
-#### Lower priority
-- JMdict pipeline: `tools/jmdict-pipeline.py` ready, needs Indonesian translation + ID remapping
-- Irodori A1 book lens: `grammar_ids` arrays still empty (TASK 4/6/7 from old audit — still pending)
-- UI: track selection page, book browsing, Methodology/About page + Daftar Pustaka
+#### INFRASTRUCTURE (human tasks — Nugget must do)
+- **Cloudflare Worker:** `cd workers && npx wrangler secret put GROQ_API_KEY` + `GEMINI_API_KEY` → `npx wrangler deploy`. See `SETUP.md §2`.
+- **Google OAuth:** Supabase Dashboard → Authentication → Providers → Google. See `SETUP.md §3`.
+- **Minna no Nihongo lenses:** `book-minna-1.js` + `book-minna-2.js` empty. Blocked — needs PDF.
 
 ---
 
 ## IMPORTANT CONVENTIONS
 
-- **IDs:** Vocab = `vg-{level}-{5digit}` (e.g., `vg-n5-00001`). Grammar = `gn{level}-{5digit}` (e.g., `gn5-00001`).
-- **No bundler.** All JS loaded via `<script>` tags in index.html. Load order matters.
-- **Hybrid (not offline-first).** Supabase is primary. IndexedDB + SW = fallback. AI requires network.
-- **Indonesian is primary UI language.** Code comments mix Indonesian and English.
-- **`version.js`** is the single source of truth for version. Must match `nihongo-{version}` in `sw.js`.
-- **`_schema.md`** in `public/data/` is the canonical data architecture doc.
-- **`tools/` is gitignored.** Scripts there are for local use only.
-- **`corpus/v17-pass15`** branch is reserved for research reference — do NOT touch.
-- **Content generation** belongs in claude.ai chat, NOT Claude Code (Claude Code times out on large generation tasks).
+### IDs (LOCKED — do not change format)
+```
+Grammar: gn{level}-{5digit}     e.g. gn5-00001
+Vocab:   vg-{level}-{5digit}    e.g. vg-n5-00001
+```
 
-## ATTRIBUTION REQUIREMENTS
+### FSRS data structure (CRITICAL — wrong access = silent bugs)
+```js
+// srsData[id] shape:
+{
+  card: {
+    due: '2026-04-25T00:00:00.000Z',  // ISO string — NOT integer
+    stability: 12.5,
+    difficulty: 4.2,
+    elapsed_days: 3,
+    scheduled_days: 12,               // NOT .interval
+    reps: 5,
+    lapses: 1,
+    state: 2,   // 0=New 1=Learning 2=Review 3=Relearning
+    last_review: '2026-04-13T00:00:00.000Z',
+  },
+  history: [{ date: '...', rating: 3 }, ...],
+  source: 'grammar' | 'vocab',
+}
+```
 
-If JMdict data is used, the app MUST display (e.g., on an About/Attribution page):
+### Mobile event handling (CRITICAL — wrong approach = page freeze)
+```js
+// ❌ NEVER: inline onclick= in generated HTML, touchstart/touchend listeners
+// ✅ ALWAYS: addEventListener('click') for buttons
+//            pointerdown/pointerup for hold detection
+//            touch-action: manipulation in CSS for all interactive elements
+```
+
+### Version bump (REQUIRED on every user-facing commit)
+```
+public/js/core/version.js  →  window.APP_VERSION = 'vX.X.X'
+public/sw.js               →  const CACHE = 'nihongo-vX.X.X'
+```
+
+### SW ASSETS
+Every new JS file → add to `ASSETS` array in `public/sw.js`.
+
+### Grammar `cat` values
+34 canonical English values (Taxonomy v2 B.1). Listed in `public/data/_schema.md §3.2`.  
+Old Bahasa Indonesia labels (`sebab-akibat`, `pasif`, etc.) are **retired**.
+
+### Content generation
+Generate grammar/vocab entries in **claude.ai chat**, NOT in Claude Code (timeout).
+
+### No bundler
+All JS loaded via `<script>` in `index.html`. Load order matters. 63 script tags.
+
+---
+
+## REPO STRUCTURE
+
+```
+public/                    ← Cloudflare Pages deploy root
+  index.html               ← SPA, 5 tabs, 1700+ lines
+  sw.js                    ← Service Worker (nihongo-v15.12.3)
+  styles/app.css           ← All styles (5046 lines, §1–§31)
+  js/
+    core/                  ← version.js, state.js, router.js, theme.js, install.js
+    pages/                 ← materi-hub.js, settings.js, onboarding.js, about.js
+    fsrs-engine.js         ← FSRS SRS engine (ts-fsrs CDN)
+    gamification.js        ← XP, streak, achievements, heatmap
+    browse.js              ← Peel cards, filter, super-cats, accordion
+    analytics.js           ← Progress tab rendering
+    detail.js              ← Grammar detail bottom-sheet modal
+    vocab-detail.js        ← Vocab detail modal
+    quiz.js + quiz-*.js    ← 9 quiz modes
+    ai-tutor.js            ← Sensei Nugget chat
+    supabase-client.js     ← Auth + SRS sync (has ⚠️ BACKEND BUG markers)
+    kebun-mastery.js       ← DRAFT — not wired yet
+    app.js                 ← DOMContentLoaded orchestrator — ALWAYS LAST
+  data/
+    grammar/grammar-n*.js  ← Grammar DB (5-digit IDs, 34 canonical cat values)
+    vocab/vocab-n*.js      ← Vocab DB
+    books/                 ← Book lens files (Irodori, Soumatome, Minna)
+    fallback/              ← Offline AI drills JSON
+workers/
+  ai-proxy.js              ← Cloudflare Worker (Groq + Gemini + OpenRouter fallback)
+supabase/
+  schema.sql               ← 7 tables + RLS + triggers (idempotent, run once)
+docs/
+  AGENT_HANDOFF_NUGGET_NIHONGO.md  ← Full handoff for new agents
+  TECHNICAL_LEAD_CHARTER.md        ← Senior dev operating principles
+  project/VISION.md                ← Product vision (read when uncertain about priorities)
+  project/ROADMAP.md               ← 6-phase roadmap
+  project/_MAP.md                  ← Task registry
+  kebun-mastery/                   ← Kebun Mastery wire-up files
+  supabase/references/             ← 30+ Postgres best practices docs
+CLAUDE.md                ← THIS FILE — always start here
+ARCHITECTURE.md          ← Full architecture overview
+SETUP.md                 ← Deployment guide (Cloudflare Worker + Supabase)
+CHANGELOG.md             ← Version history
+MASTER-AUDIT.md          ← Historical task list (pre-v15.9)
+public/data/_schema.md   ← Canonical data architecture v3 — AUTHORITATIVE
+```
+
+---
+
+## WORKFLOW
+
+```bash
+# Development
+git checkout develop
+# make changes
+node tests/run.js        # must be 0 FAIL before push
+git add -A && git commit -m "feat/fix: description vX.X.X"
+git push origin develop
+
+# Deploy to production
+git checkout main && git merge develop --no-ff -m "release: vX.X.X"
+git push origin main     # Cloudflare Pages deploys automatically (~60s)
+git checkout develop
+
+# Verify live
+curl -s https://nugget-nihongo.pages.dev/js/core/version.js
+```
+
+**NEVER:**
+- Push directly to main without tests
+- Merge `corpus/v17-pass15` into any branch
+- Generate content in Claude Code (timeout — use claude.ai chat)
+
+---
+
+## TESTING
+
+```bash
+node tests/run.js
+# Target: 10,550+ PASS, 0 FAIL
+```
+Covers: data schema, ID format, cat values, version consistency, persona drift, conjugation.
+
+---
+
+## KEY localStorage KEYS
+
+```
+nn_fsrs_cards        — srsData (FSRS card state)
+nn_streak            — { current, longest, freezes, comebacks, lastDate }
+nn_xp                — { xp: number, history: [] }
+nn_achievements      — array of earned badge IDs
+nn_heatmap           — { 'YYYY-MM-DD': { reviews, xp } }
+nn_quiz_stats        — { flip: { correct, total }, fill: {...}, ... }
+bunpou_progress      — { [cardId]: 'know'|'unsure'|'forgot' }
+bunpou-theme         — 'dark' | 'light'  (NOT nn_theme — that was a bug, now fixed)
+nn_accent            — 'amber' | 'sakura' | 'matcha' | 'indigo'
+nn_last_activity     — { type: 'book'|'jlpt', ... } for ContinueCard
+nn_ai_quota          — { date, used }  (daily Sensei limit)
+```
+
+---
+
+## ATTRIBUTION (LEGAL REQUIREMENT)
+
+If JMdict data is used, the About/Attribution page MUST display:
 > This application uses the JMdict dictionary file, the property of the
 > Electronic Dictionary Research and Development Group (EDRDG), and is
 > used in conformance with the EDRDG's licence provisions.
@@ -127,4 +249,4 @@ If JMdict data is used, the app MUST display (e.g., on an About/Attribution page
 
 ---
 
-*Last edited: Crunchy 🧂 (post content-population batch A) — 18 April 2026*
+*Last edited: Crunchy 🧂 (QA + dev session) — 19 April 2026 · v15.12.3*

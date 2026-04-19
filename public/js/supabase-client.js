@@ -83,11 +83,12 @@
     },
 
     // Upsert a card after review
-    upsertCard: function (card) {
-      // ⚠️ BACKEND BUG: sb.auth.getUser() is async — user_id always undefined here.
-      // Fix: make this function async and use: var u = await sb.auth.getUser(); u.data?.user?.id
+    upsertCard: async function (card) {
+      var u = await sb.auth.getUser();
+      var userId = u.data?.user?.id;
+      if (!userId) return Promise.reject('Not authenticated');
       return sb.from('srs_cards').upsert({
-        user_id:        (sb.auth.getUser()).data?.user?.id,
+        user_id:        userId,
         item_type:      card.item_type,
         item_id:        card.item_id,
         stability:      card.stability,
@@ -103,9 +104,12 @@
     },
 
     // Log a review (immutable history)
-    logReview: function (itemType, itemId, rating, responseMs) {
+    logReview: async function (itemType, itemId, rating, responseMs) {
+      var u = await sb.auth.getUser();
+      var userId = u.data?.user?.id;
+      if (!userId) return;
       return sb.from('review_history').insert({
-        user_id:     (sb.auth.getUser()).data?.user?.id,
+        user_id:     userId,
         item_type:   itemType,
         item_id:     itemId,
         rating:      rating,
@@ -114,16 +118,31 @@
     },
 
     // Bulk sync: push all local SRS state to cloud
-    bulkSync: function (cards) {
-      // ⚠️ BACKEND BUG 1: sb.auth.getUser() async called sync — userId always undefined.
-      // ⚠️ BACKEND BUG 2: caller passes nn_fsrs_cards as plain object {id: entry}, not array.
-      // Fix: async fn + Object.entries(cards).map(([id, entry]) => ({ user_id, item_type: entry.source, item_id: id, ...entry.card }))
-      var userId = (sb.auth.getUser()).data?.user?.id;
-      if (!userId) return Promise.reject('Not logged in');
-      var rows = cards.map(function (c) {
-        c.user_id = userId;
-        return c;
+    // cards = { [id]: { card: FSRSCard, history: [], source: 'grammar'|'vocab' } }
+    bulkSync: async function (cards) {
+      var u = await sb.auth.getUser();
+      var userId = u.data?.user?.id;
+      if (!userId) return Promise.reject('Not authenticated');
+      if (!cards || typeof cards !== 'object') return Promise.reject('Invalid cards data');
+      var rows = Object.entries(cards).map(function (kv) {
+        var id = kv[0], entry = kv[1];
+        var card = entry.card || {};
+        return {
+          user_id:        userId,
+          item_type:      entry.source || (id.startsWith('vg-') ? 'vocab' : 'grammar'),
+          item_id:        id,
+          stability:      card.stability      || 0,
+          difficulty:     card.difficulty     || 0,
+          elapsed_days:   card.elapsed_days   || 0,
+          scheduled_days: card.scheduled_days || 0,
+          reps:           card.reps           || 0,
+          lapses:         card.lapses         || 0,
+          state:          card.state          || 0,
+          due:            card.due            || new Date().toISOString(),
+          last_review:    card.last_review    || new Date().toISOString(),
+        };
       });
+      if (!rows.length) return;
       return sb.from('srs_cards').upsert(rows, { onConflict: 'user_id,item_type,item_id' });
     },
   };
@@ -133,8 +152,11 @@
     get: function () {
       return sb.from('profiles').select('*').single();
     },
-    update: function (data) {
-      return sb.from('profiles').update(data).eq('id', (sb.auth.getUser()).data?.user?.id);
+    update: async function (data) {
+      var u = await sb.auth.getUser();
+      var userId = u.data?.user?.id;
+      if (!userId) return;
+      return sb.from('profiles').update(data).eq('id', userId);
     },
     getLearningDNA: async function () {
       var user = (await sb.auth.getUser()).data?.user;
@@ -156,9 +178,12 @@
     getAll: function () {
       return sb.from('course_progress').select('*');
     },
-    upsert: function (trackId, currentIndex, completed) {
+    upsert: async function (trackId, currentIndex, completed) {
+      var u = await sb.auth.getUser();
+      var userId = u.data?.user?.id;
+      if (!userId) return;
       return sb.from('course_progress').upsert({
-        user_id:       (sb.auth.getUser()).data?.user?.id,
+        user_id:       userId,
         track_id:      trackId,
         current_index: currentIndex,
         completed:     completed || false,
@@ -168,9 +193,11 @@
 
   // ── ERROR REPORTS ────────────────────────────────────
   window.sbErrors = {
-    report: function (itemType, itemId, field, description) {
+    report: async function (itemType, itemId, field, description) {
+      var u = await sb.auth.getUser();
+      var userId = u.data?.user?.id || null;
       return sb.from('error_reports').insert({
-        user_id:     (sb.auth.getUser()).data?.user?.id || null,
+        user_id:     userId,
         item_type:   itemType,
         item_id:     itemId,
         field:       field,
@@ -351,6 +378,9 @@
   window.syncProgress = _syncProgress;
   window.migrateAllToSupabase = _migrateAllToSupabase;
   window._buildLearningDNA = _buildLearningDNA; // used by ai-tutor.js for Sensei context
+  // Bug 3 fix: export constants for ai-proxy.js (sbClient.supabaseKey doesn't exist in Supabase v2)
+  window._SUPABASE_URL      = SUPABASE_URL;
+  window._SUPABASE_ANON_KEY = SUPABASE_ANON_KEY;
 
 })();
 

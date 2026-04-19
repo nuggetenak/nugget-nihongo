@@ -4,7 +4,7 @@
 //  network-first for API calls (Supabase / Cloudflare Workers).
 // ══════════════════════════════════════
 
-const CACHE = 'nihongo-v15.12.3';
+const CACHE = 'nihongo-v15.12.6';
 const ASSETS = [
   './',
   './index.html',
@@ -61,6 +61,7 @@ const ASSETS = [
   './js/errorfind.js',
   './js/multichoice.js',
   './js/detail.js',
+  './js/kebun-mastery.js',
   './js/daily-word.js',
   './js/lang/lang-core.js',
   './js/app.js',

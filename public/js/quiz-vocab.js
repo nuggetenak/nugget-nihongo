@@ -118,12 +118,18 @@ function startVocabQuiz(mode) {
 
 // ── Empty state ─────────────────────────────────────────
 function _showEmpty(container) {
+  // Try fallback: N5 vocab (always available)
+  var fallback = (window.vocabDB || []).filter(function(v) { return v && v.jlpt === 'n5'; });
+  if (fallback.length && window.generateVocabQuiz) {
+    vqDeck = window.generateVocabQuiz({ type: 'flash', jlpt: 'n5', n: 20 });
+    if (vqDeck.length) { _renderQuestion(); return; }
+  }
   document.getElementById('vqCard').innerHTML = `
     <div class="fill-coming-soon">
       <div class="cs-icon">📚</div>
-      <h3>Data belum tersedia</h3>
-      <p>Vocab untuk level ini sedang disiapkan.<br>
-      Coba pilih <strong>N5</strong> atau <strong>Semua Level</strong>.</p>
+      <h3>Belum ada data vocab</h3>
+      <p>Coba pilih <strong>N5</strong> atau <strong>Semua Level</strong> — vocab N5 sudah lengkap.<br>
+      <button class="cs-action-btn" onclick="window.vbPillLevel('n5', this)">Pilih N5 →</button></p>
     </div>`;
   document.getElementById('vqProgressTxt').textContent = '0 / 0';
   document.getElementById('vqProgressFill').style.width = '0%';

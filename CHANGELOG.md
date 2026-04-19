@@ -1,5 +1,29 @@
 # Changelog — Nugget Nihongo
 
+## v15.12.4–15.12.6 (19 April 2026)
+
+### v15.12.6 — Supabase backend fully functional
+- **3 critical Supabase bugs fixed** — all cloud writes now actually work
+  - `sb.auth.getUser()` was called synchronously in 6 places → `user_id` always `undefined` → RLS blocked all writes. All 6 functions now `async` with `await`
+  - `bulkSync()` called `.map()` on a plain object → `TypeError`. Fixed: `Object.entries(cards).map(...)` to convert FSRS nested structure to flat rows
+  - `sbClient.supabaseKey` doesn't exist in Supabase v2 → exported `window._SUPABASE_URL` and `window._SUPABASE_ANON_KEY` from IIFE
+
+### v15.12.5 — Quiz empty states fixed
+- All 7 `fill-coming-soon` blank screens replaced with smart fallback:
+  1. First: try to generate questions from `quizEngine` without level filter
+  2. Only if truly empty: show proper empty state with amber action button linking to Browse tab
+- `cs-action-btn` CSS added (amber pill button)
+- Files: `fillin.js` (×2), `conjugation.js`, `translation.js`, `errorfind.js`, `multichoice.js`, `quiz-vocab.js`
+
+### v15.12.4 — Kebun Mastery live + CLAUDE.md updated
+- **Kebun Mastery wired** — SRS card garden visualization now live in Progress tab
+  - Grid of SVG plants: 🌱 unseen / 🌿 learning / 🌻 young / 🌳 mature / 🥀 lapsing
+  - Filter by Grammar/Vocab + N-level pills
+  - Stats bar: seen / mature / due / total
+  - Tap any plant → opens detail modal
+- **CLAUDE.md fully rewritten** (was stale at v15.8.0, now v15.12.4)
+  - Accurate entry counts, file inventory, FSRS data structure docs, backend bug pointers
+
 ## v15.11.1–15.11.5 (18 April 2026) — Comprehensive Audit & Hygiene Pass
 
 **Crunchy QA — exhaustive audit across all frontend JS, CSS, SW, HTML**
