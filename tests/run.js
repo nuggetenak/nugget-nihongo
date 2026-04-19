@@ -76,20 +76,35 @@ vn4.forEach((e, i) => {
 // ── Vocab N3 ──
 console.log('── Vocab N3 ──');
 const vn3 = global.vocabN3 || [];
-assert(vn3.length > 0, 'vocabN3 should have entries (70 expected)');
+assert(vn3.length > 0,   'vocabN3 should have entries');
+assert(vn3.length >= 400, `vocabN3 count: ${vn3.length} (expected ≥400)`);
 vn3.forEach((e, i) => {
-  assert(e.id,   `vocabN3[${i}]: missing id`);
-  assert(e.word, `vocabN3[${i}] ${e.id}: missing word`);
+  assert(e.id,          `vocabN3[${i}]: missing id`);
+  assert(e.word,        `vocabN3[${i}] ${e.id}: missing word`);
+  assert(e.jlpt,        `vocabN3[${i}] ${e.id}: missing jlpt`);
+  assert(e.pos,         `vocabN3[${i}] ${e.id}: missing pos`);
+  assert(e.meaning_id,  `vocabN3[${i}] ${e.id}: missing meaning_id`);
   if (e.id) assert(e.id.startsWith('vg-n3-'), `vocabN3[${i}]: id ${e.id} wrong prefix`);
+  if (e.examples !== undefined) {
+    assert(Array.isArray(e.examples), `vocabN3[${i}] ${e.id}: examples must be array`);
+    if (e.examples.length > 0) {
+      assert(e.examples[0].jp,  `vocabN3[${i}] ${e.id}: examples[0] missing jp`);
+      assert(e.examples[0].id,  `vocabN3[${i}] ${e.id}: examples[0] missing id`);
+    }
+  }
 });
 
 // ── Vocab N2 (seed data) ──
-console.log('── Vocab N2 (seed) ──');
+console.log('── Vocab N2 ──');
 const vn2 = global.vocabN2 || [];
 if (vn2.length > 0) {
+  assert(vn2.length >= 100, `vocabN2 count: ${vn2.length} (expected ≥100)`);
   vn2.forEach((e, i) => {
-    assert(e.id,   `vocabN2[${i}]: missing id`);
-    assert(e.word, `vocabN2[${i}] ${e.id}: missing word`);
+    assert(e.id,         `vocabN2[${i}]: missing id`);
+    assert(e.word,       `vocabN2[${i}] ${e.id}: missing word`);
+    assert(e.jlpt,       `vocabN2[${i}] ${e.id}: missing jlpt`);
+    assert(e.pos,        `vocabN2[${i}] ${e.id}: missing pos`);
+    assert(e.meaning_id, `vocabN2[${i}] ${e.id}: missing meaning_id`);
     if (e.id) assert(e.id.startsWith('vg-n2-'), `vocabN2[${i}]: id ${e.id} wrong prefix`);
   });
 } else {
@@ -98,18 +113,35 @@ if (vn2.length > 0) {
 }
 
 // ── Vocab N1 (seed data) ──
-console.log('── Vocab N1 (seed) ──');
+console.log('── Vocab N1 ──');
 const vn1 = global.vocabN1 || [];
 if (vn1.length > 0) {
+  assert(vn1.length >= 50, `vocabN1 count: ${vn1.length} (expected ≥50)`);
   vn1.forEach((e, i) => {
-    assert(e.id,   `vocabN1[${i}]: missing id`);
-    assert(e.word, `vocabN1[${i}] ${e.id}: missing word`);
+    assert(e.id,         `vocabN1[${i}]: missing id`);
+    assert(e.word,       `vocabN1[${i}] ${e.id}: missing word`);
+    assert(e.jlpt,       `vocabN1[${i}] ${e.id}: missing jlpt`);
+    assert(e.pos,        `vocabN1[${i}] ${e.id}: missing pos`);
+    assert(e.meaning_id, `vocabN1[${i}] ${e.id}: missing meaning_id`);
     if (e.id) assert(e.id.startsWith('vg-n1-'), `vocabN1[${i}]: id ${e.id} wrong prefix`);
   });
 } else {
   skip++;
   console.log('  SKIP: vocabN1 empty (seed data not yet populated)');
 }
+
+// ── Canonical grammar cat values (Taxonomy v2 B.1) ──
+const VALID_CATS = new Set([
+  'adverb','causative','comparison','completion-regret','conditional-tara',
+  'conjecture-possibility','contrast-concession','copula','desire-want',
+  'existence','expression','extent-degree','hearsay-report',
+  'inception-continuation','interrogative','listing-addition','negative',
+  'nominalization','obligation-necessity','particle','passive','past-tense',
+  'permission-prohibition','potential','predicate-adjective','progressive-state',
+  'purpose','quotation-thought','reason-cause','sentence-final-modality',
+  'sentence-final-request','sequential-temporal','te-form-use','teineigo-pattern',
+  'verb-form','volitional-intention',
+]);
 
 // ── Grammar N5 ──
 console.log('── Grammar N5 ──');
@@ -120,6 +152,7 @@ gn5.forEach((e, i) => {
   assert(e.pattern, `grammarN5[${i}] ${e.id}: missing pattern`);
   assert(e.cat,     `grammarN5[${i}] ${e.id}: missing cat`);
   if (e.id) assert(e.id.startsWith('gn5-'), `grammarN5[${i}]: id ${e.id} wrong prefix`);
+  if (e.cat) assert(VALID_CATS.has(e.cat), `grammarN5[${i}] ${e.id}: invalid cat '${e.cat}'`);
 });
 
 // ── Grammar N4 ──
@@ -131,6 +164,7 @@ gn4.forEach((e, i) => {
   assert(e.pattern, `grammarN4[${i}] ${e.id}: missing pattern`);
   assert(e.cat,     `grammarN4[${i}] ${e.id}: missing cat`);
   if (e.id) assert(e.id.startsWith('gn4-'), `grammarN4[${i}]: id ${e.id} wrong prefix`);
+  if (e.cat) assert(VALID_CATS.has(e.cat), `grammarN4[${i}] ${e.id}: invalid cat '${e.cat}'`);
 });
 
 // ── Grammar N3 ──
@@ -142,32 +176,51 @@ gn3.forEach((e, i) => {
   assert(e.pattern, `grammarN3[${i}] ${e.id}: missing pattern`);
   assert(e.cat,     `grammarN3[${i}] ${e.id}: missing cat`);
   if (e.id) assert(e.id.startsWith('gn3-'), `grammarN3[${i}]: id ${e.id} wrong prefix`);
+  if (e.cat) assert(VALID_CATS.has(e.cat), `grammarN3[${i}] ${e.id}: invalid cat '${e.cat}'`);
 });
 
-// ── Grammar N2 (seed data) ──
-console.log('── Grammar N2 (seed) ──');
+// ── Grammar N2 ──
+console.log('── Grammar N2 ──');
 const gn2 = global.grammarN2 || [];
 if (gn2.length > 0) {
+  assert(gn2.length >= 90, `grammarN2 count: ${gn2.length} (expected ≥90)`);
   gn2.forEach((e, i) => {
     assert(e.id,      `grammarN2[${i}]: missing id`);
     assert(e.pattern, `grammarN2[${i}] ${e.id}: missing pattern`);
     if (e.id) assert(e.id.startsWith('gn2-'), `grammarN2[${i}]: id ${e.id} wrong prefix`);
+    if (e.cat) assert(VALID_CATS.has(e.cat), `grammarN2[${i}] ${e.id}: invalid cat '${e.cat}'`);
   });
 } else {
   skip++;
   console.log('  SKIP: grammarN2 empty (seed data not yet populated)');
 }
 
+// ── Grammar N1 ──
+console.log('── Grammar N1 ──');
+const gn1 = global.grammarN1 || [];
+if (gn1.length > 0) {
+  assert(gn1.length >= 50, `grammarN1 count: ${gn1.length} (expected ≥50)`);
+  gn1.forEach((e, i) => {
+    assert(e.id,      `grammarN1[${i}]: missing id`);
+    assert(e.pattern, `grammarN1[${i}] ${e.id}: missing pattern`);
+    if (e.id) assert(e.id.startsWith('gn1-'), `grammarN1[${i}]: id ${e.id} wrong prefix`);
+    if (e.cat) assert(VALID_CATS.has(e.cat), `grammarN1[${i}] ${e.id}: invalid cat '${e.cat}'`);
+  });
+} else {
+  skip++;
+  console.log('  SKIP: grammarN1 empty (seed data not yet populated)');
+}
+
 // ── Grammar DB (Architecture v3) ──
 console.log('── Grammar DB v3 ──');
 const grammarDB = global.grammarDB || global.grammarData || [];
 assert(grammarDB.length > 0, 'grammarDB (window.grammarDB) should have entries after grammar-index.js');
-assert(grammarDB.length >= 273, `grammarDB count: ${grammarDB.length} (expected ≥273 for N5+N4+N3)`);
+assert(grammarDB.length >= 349, `grammarDB count: ${grammarDB.length} (expected ≥349 for N5+N4+N3+N2+N1)`);
 
 // ── VocabDB merge ──
 console.log('── VocabDB merge ──');
 const vocabDB = global.vocabDB || [];
-assert(vocabDB.length >= 1400, `vocabDB merged count: ${vocabDB.length} (expected ≥1400 for N5+N4+N3)`);
+assert(vocabDB.length >= 1600, `vocabDB merged count: ${vocabDB.length} (expected ≥1600 for N5+N4+N3)`);
 
 // ── Version sync ──
 console.log('── Version sync ──');
@@ -193,9 +246,13 @@ function checkDuplicates(arr, label) {
 checkDuplicates(vn5, 'vocabN5');
 checkDuplicates(vn4, 'vocabN4');
 checkDuplicates(vn3, 'vocabN3');
+checkDuplicates(vn2, 'vocabN2');
+checkDuplicates(vn1, 'vocabN1');
 checkDuplicates(gn5, 'grammarN5');
 checkDuplicates(gn4, 'grammarN4');
 checkDuplicates(gn3, 'grammarN3');
+checkDuplicates(gn2, 'grammarN2');
+checkDuplicates(gn1, 'grammarN1');
 
 // ── Fallback drills ──
 console.log('── Fallback drills ──');
@@ -236,6 +293,14 @@ const vocabIdSet = new Set([
   ...(global.vocabN1 || []),
 ].map(e => e.id));
 
+const grammarIdSet = new Set([
+  ...(global.grammarN5 || []),
+  ...(global.grammarN4 || []),
+  ...(global.grammarN3 || []),
+  ...(global.grammarN2 || []),
+  ...(global.grammarN1 || []),
+].filter(e => e && e.id).map(e => e.id));
+
 const bookLenses = [
   { obj: global.bookIrodoriA1,  name: 'bookIrodoriA1' },
   { obj: global.bookIrodoriA21, name: 'bookIrodoriA21' },
@@ -246,17 +311,25 @@ const bookLenses = [
 bookLenses.forEach(({ obj, name }) => {
   if (!obj) { skip++; console.log(`  SKIP: ${name} not loaded`); return; }
   const units = obj.units || obj.chapters || {};
-  let broken = 0;
+  let brokenVocab = 0, brokenGrammar = 0;
   Object.entries(units).forEach(([unitKey, unit]) => {
     (unit.vocab_ids || []).forEach(id => {
       if (!vocabIdSet.has(id)) {
-        broken++;
-        if (broken <= 3) console.error(`  FAIL: ${name} unit ${unitKey}: id '${id}' not in vocabDB`);
+        brokenVocab++;
+        if (brokenVocab <= 3) console.error(`  FAIL: ${name} unit ${unitKey}: vocab_id '${id}' not in vocabDB`);
+      }
+    });
+    (unit.grammar_ids || []).forEach(id => {
+      if (!grammarIdSet.has(id)) {
+        brokenGrammar++;
+        if (brokenGrammar <= 3) console.error(`  FAIL: ${name} unit ${unitKey}: grammar_id '${id}' not in grammarDB`);
       }
     });
   });
-  if (broken > 3) console.error(`  FAIL: ${name}: ${broken} broken refs total (showing first 3)`);
-  assert(broken === 0, `${name}: ${broken} vocab_ids not found in vocabDB`);
+  if (brokenVocab > 3)   console.error(`  FAIL: ${name}: ${brokenVocab} broken vocab_ids total (showing first 3)`);
+  if (brokenGrammar > 3) console.error(`  FAIL: ${name}: ${brokenGrammar} broken grammar_ids total (showing first 3)`);
+  assert(brokenVocab === 0,   `${name}: ${brokenVocab} vocab_ids not found in vocabDB`);
+  assert(brokenGrammar === 0, `${name}: ${brokenGrammar} grammar_ids not found in grammarDB`);
 });
 
 // ── Phase 5.5c: quiz-bank + promotion pipeline (§15.9) ──

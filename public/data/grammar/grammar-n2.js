@@ -10,7 +10,7 @@ window.grammarN2 = [
   {
     id: 'gn2-00001', level: 'n2', pattern: '〜に反して', reading: '〜ni hanshite',
     meaning: 'bertentangan dengan ... / melawan ...',
-    cat: 'kontras',
+    cat: 'contrast-concession',
     connection: 'N + に反して',
     desc: '<b>〜に反して</b> menyatakan bahwa sesuatu terjadi berlawanan dari harapan, aturan, atau kehendak yang disebutkan.',
     examples: [
@@ -23,7 +23,7 @@ window.grammarN2 = [
   {
     id: 'gn2-00002', level: 'n2', pattern: '〜に加えて', reading: '〜ni kuwaete',
     meaning: 'selain ... / ditambah dengan ...',
-    cat: 'enumerasi',
+    cat: 'listing-addition',
     connection: 'N + に加えて',
     desc: '<b>〜に加えて</b> digunakan untuk menambahkan informasi atau kondisi di atas yang sudah ada.',
     examples: [
@@ -36,7 +36,7 @@ window.grammarN2 = [
   {
     id: 'gn2-00003', level: 'n2', pattern: '〜に際して', reading: '〜ni saishite',
     meaning: 'pada saat ... / ketika (momen penting) ...',
-    cat: 'waktu',
+    cat: 'sequential-temporal',
     connection: 'V-dict / N + に際して',
     desc: '<b>〜に際して</b> digunakan untuk momen penting atau formal seperti upacara, awal kegiatan, atau situasi khusus.',
     examples: [
@@ -49,7 +49,7 @@ window.grammarN2 = [
   {
     id: 'gn2-00004', level: 'n2', pattern: '〜にあたって', reading: '〜ni atatte',
     meaning: 'pada saat ... / dalam rangka ...',
-    cat: 'waktu',
+    cat: 'sequential-temporal',
     connection: 'V-dict / N + にあたって',
     desc: '<b>〜にあたって</b> hampir sama dengan に際して tetapi lebih menekankan persiapan atau tindakan menjelang suatu momen.',
     examples: [
@@ -62,7 +62,7 @@ window.grammarN2 = [
   {
     id: 'gn2-00005', level: 'n2', pattern: '〜に伴って', reading: '〜ni tomonatte',
     meaning: 'seiring dengan ... / bersamaan dengan ...',
-    cat: 'bersamaan',
+    cat: 'sequential-temporal',
     connection: 'V-dict / N + に伴って',
     desc: '<b>〜に伴って</b> menyatakan bahwa dua perubahan terjadi secara bersamaan dan saling berkaitan.',
     examples: [
@@ -76,7 +76,7 @@ window.grammarN2 = [
   {
     id: 'gn2-00006', level: 'n2', pattern: '〜上で', reading: '〜ue de',
     meaning: 'setelah ... / dalam hal ... / dari segi ...',
-    cat: 'kondisional',
+    cat: 'conditional-tara',
     connection: 'V-た / N + の + 上で',
     desc: '<b>〜上で</b> memiliki dua makna: (1) setelah melakukan sesuatu sebagai syarat; (2) dari segi / dalam konteks.',
     examples: [
@@ -89,7 +89,7 @@ window.grammarN2 = [
   {
     id: 'gn2-00007', level: 'n2', pattern: '〜かねない', reading: '〜kanenai',
     meaning: 'bisa jadi ... (hal negatif) / ada kemungkinan ...',
-    cat: 'kemungkinan',
+    cat: 'conjecture-possibility',
     connection: 'V-stem + かねない',
     desc: '<b>〜かねない</b> mengungkapkan kemungkinan terjadinya sesuatu yang negatif atau tidak diinginkan.',
     examples: [
@@ -102,7 +102,7 @@ window.grammarN2 = [
   {
     id: 'gn2-00008', level: 'n2', pattern: '〜かねる', reading: '〜kaneru',
     meaning: 'tidak bisa (melakukan) ... / sulit untuk ...',
-    cat: 'kemungkinan',
+    cat: 'conjecture-possibility',
     connection: 'V-stem + かねる',
     desc: '<b>〜かねる</b> menyatakan bahwa secara psikologis atau moral pembicara tidak dapat atau sulit untuk melakukan sesuatu.',
     examples: [
@@ -115,7 +115,7 @@ window.grammarN2 = [
   {
     id: 'gn2-00009', level: 'n2', pattern: '〜を通じて / 〜を通して', reading: '〜wo tsuujite / tooshite',
     meaning: 'melalui ... / sepanjang ...',
-    cat: 'cara',
+    cat: 'verb-form',
     connection: 'N + を通じて / を通して',
     desc: '<b>〜を通じて</b> berarti "melalui suatu media/perantara" atau "sepanjang suatu periode". <b>を通して</b> lebih menekankan proses.',
     examples: [
@@ -128,7 +128,7 @@ window.grammarN2 = [
   {
     id: 'gn2-00010', level: 'n2', pattern: '〜にわたって', reading: '〜ni watatte',
     meaning: 'meliputi ... / selama ... / di seluruh ...',
-    cat: 'rentang',
+    cat: 'extent-degree',
     connection: 'N（periode/wilayah）+ にわたって',
     desc: '<b>〜にわたって</b> menyatakan rentang waktu atau wilayah yang luas.',
     examples: [
@@ -141,7 +141,7 @@ window.grammarN2 = [
   {
     id: 'gn2-00011', level: 'n2', pattern: '〜に基づいて', reading: '〜ni motozuite',
     meaning: 'berdasarkan ... / berlandaskan ...',
-    cat: 'referensi',
+    cat: 'quotation-thought',
     connection: 'N + に基づいて',
     desc: '<b>〜に基づいて</b> menyatakan dasar atau landasan dari suatu tindakan atau keputusan.',
     examples: [
@@ -155,7 +155,7 @@ window.grammarN2 = [
   {
     id: 'gn2-00012', level: 'n2', pattern: '〜はもちろん', reading: '〜wa mochiron',
     meaning: 'sudah tentu ... / tidak hanya ... bahkan ...',
-    cat: 'enumerasi',
+    cat: 'listing-addition',
     connection: 'N + はもちろん',
     desc: '<b>〜はもちろん</b> menyatakan bahwa hal yang disebutkan pertama sudah jelas, dan hal kedua pun juga berlaku.',
     examples: [
@@ -168,7 +168,7 @@ window.grammarN2 = [
   {
     id: 'gn2-00013', level: 'n2', pattern: '〜ばかりか', reading: '〜bakari ka',
     meaning: 'tidak hanya ... bahkan ...',
-    cat: 'penekanan',
+    cat: 'sentence-final-modality',
     connection: 'V/Adj plain / N + ばかりか',
     desc: '<b>〜ばかりか</b> menambahkan informasi yang mengejutkan atau melebihi ekspektasi dari apa yang disebutkan.',
     examples: [
@@ -181,7 +181,7 @@ window.grammarN2 = [
   {
     id: 'gn2-00014', level: 'n2', pattern: '〜どころか', reading: '〜dokoro ka',
     meaning: 'jangankan ... bahkan ... / bukannya ... malah ...',
-    cat: 'kontras',
+    cat: 'contrast-concession',
     connection: 'V/Adj plain / N + どころか',
     desc: '<b>〜どころか</b> menyatakan bahwa kenyataannya jauh berbeda (biasanya lebih ekstrem) dari yang diharapkan atau disebutkan.',
     examples: [
@@ -194,7 +194,7 @@ window.grammarN2 = [
   {
     id: 'gn2-00015', level: 'n2', pattern: '〜ものの', reading: '〜mono no',
     meaning: 'meskipun ... / walau ...',
-    cat: 'konsesi',
+    cat: 'contrast-concession',
     connection: 'V/Adj plain / N + である + ものの',
     desc: '<b>〜ものの</b> menyatakan konsesi: meskipun kondisi pertama terpenuhi, hasilnya tidak sesuai harapan.',
     examples: [
@@ -208,7 +208,7 @@ window.grammarN2 = [
   {
     id: 'gn2-00016', level: 'n2', pattern: '〜わけだ', reading: '〜wake da',
     meaning: 'pantas saja ... / memang ... / artinya ...',
-    cat: 'logika',
+    cat: 'reason-cause',
     connection: 'V/Adj plain / N + の + わけだ',
     desc: '<b>〜わけだ</b> digunakan ketika pembicara memahami alasan atau kesimpulan dari suatu situasi.',
     examples: [
@@ -221,7 +221,7 @@ window.grammarN2 = [
   {
     id: 'gn2-00017', level: 'n2', pattern: '〜わけにはいかない', reading: '〜wake ni wa ikanai',
     meaning: 'tidak mungkin (bisa) ... / tidak boleh ...',
-    cat: 'keharusan',
+    cat: 'obligation-necessity',
     connection: 'V-dict / V-ない + わけにはいかない',
     desc: '<b>〜わけにはいかない</b> menyatakan bahwa secara sosial, moral, atau situasional seseorang tidak bisa melakukan sesuatu.',
     examples: [
@@ -234,7 +234,7 @@ window.grammarN2 = [
   {
     id: 'gn2-00018', level: 'n2', pattern: '〜に違いない', reading: '〜ni chigai nai',
     meaning: 'pasti ... / tidak salah lagi ...',
-    cat: 'dugaan',
+    cat: 'conjecture-possibility',
     connection: 'V/Adj plain / N + に違いない',
     desc: '<b>〜に違いない</b> menyatakan keyakinan kuat pembicara bahwa sesuatu pasti benar.',
     examples: [
@@ -247,7 +247,7 @@ window.grammarN2 = [
   {
     id: 'gn2-00019', level: 'n2', pattern: '〜次第', reading: '〜shidai',
     meaning: '(1) segera setelah ... (2) tergantung pada ...',
-    cat: 'kondisional',
+    cat: 'conditional-tara',
     connection: 'V-stem / N + 次第',
     desc: '<b>〜次第</b> bermakna ganda: (1) segera setelah tindakan selesai; (2) bergantung pada kondisi yang disebutkan.',
     examples: [
@@ -260,7 +260,7 @@ window.grammarN2 = [
   {
     id: 'gn2-00020', level: 'n2', pattern: '〜てならない', reading: '〜te naranai',
     meaning: 'sangat ... / tidak tahan merasa ...',
-    cat: 'perasaan',
+    cat: 'sentence-final-modality',
     connection: 'V-te / い-Adj-くて / な-Adj-で + ならない',
     desc: '<b>〜てならない</b> mengungkapkan perasaan yang sangat kuat dan alami (tidak bisa ditahan) dari dalam diri.',
     examples: [
@@ -274,7 +274,7 @@ window.grammarN2 = [
   {
     id: 'gn2-00021', level: 'n2', pattern: '〜ことにする', reading: '〜koto ni suru',
     meaning: 'memutuskan untuk ... / sengaja ...',
-    cat: 'keputusan',
+    cat: 'volitional-intention',
     connection: 'V-dict / V-ない + ことにする',
     desc: '<b>〜ことにする</b> menyatakan keputusan atau pilihan sadar dari pembicara.',
     examples: [
@@ -287,7 +287,7 @@ window.grammarN2 = [
   {
     id: 'gn2-00022', level: 'n2', pattern: '〜ことになっている', reading: '〜koto ni natte iru',
     meaning: 'sudah ditetapkan bahwa ... / seharusnya ...',
-    cat: 'keharusan',
+    cat: 'obligation-necessity',
     connection: 'V-dict / V-ない + ことになっている',
     desc: '<b>〜ことになっている</b> menyatakan aturan, ketentuan, atau jadwal yang sudah ditetapkan dari luar.',
     examples: [
@@ -300,7 +300,7 @@ window.grammarN2 = [
   {
     id: 'gn2-00023', level: 'n2', pattern: '〜ものだ', reading: '〜mono da',
     meaning: '(1) memang seharusnya ... (2) dulu sering ...',
-    cat: 'kebiasaan',
+    cat: 'progressive-state',
     connection: 'V-dict / V-ない + ものだ',
     desc: '<b>〜ものだ</b>: (1) mengungkapkan kebenaran umum atau norma; (2) mengenang kebiasaan di masa lalu.',
     examples: [
@@ -313,7 +313,7 @@ window.grammarN2 = [
   {
     id: 'gn2-00024', level: 'n2', pattern: '〜といえば', reading: '〜to ieba',
     meaning: 'berbicara tentang ... / kalau bicara soal ...',
-    cat: 'referensi',
+    cat: 'quotation-thought',
     connection: 'N + といえば',
     desc: '<b>〜といえば</b> digunakan untuk memperkenalkan topik atau merespons sesuatu yang baru saja disebutkan.',
     examples: [
@@ -326,7 +326,7 @@ window.grammarN2 = [
   {
     id: 'gn2-00025', level: 'n2', pattern: '〜をはじめ', reading: '〜wo hajime',
     meaning: 'mulai dari ... / terutama ... dan lainnya',
-    cat: 'enumerasi',
+    cat: 'listing-addition',
     connection: 'N + をはじめ（として）',
     desc: '<b>〜をはじめ</b> memperkenalkan contoh utama/terpenting sebelum menyebutkan yang lain.',
     examples: [
@@ -339,7 +339,7 @@ window.grammarN2 = [
   {
     id: 'gn2-00026', level: 'n2', pattern: '〜に応じて', reading: '〜ni oujite',
     meaning: 'sesuai dengan ... / sesuai keadaan ...',
-    cat: 'perbandingan',
+    cat: 'comparison',
     connection: 'N + に応じて',
     desc: '<b>〜に応じて</b> menyatakan bahwa sesuatu berubah atau disesuaikan mengikuti kondisi yang disebutkan.',
     examples: [
@@ -352,7 +352,7 @@ window.grammarN2 = [
   {
     id: 'gn2-00027', level: 'n2', pattern: '〜をもとに', reading: '〜wo moto ni',
     meaning: 'berdasarkan ... / mengacu pada ...',
-    cat: 'referensi',
+    cat: 'quotation-thought',
     connection: 'N + をもとに（して）',
     desc: '<b>〜をもとに</b> menyatakan sumber atau bahan dasar dari suatu tindakan atau karya.',
     examples: [
@@ -365,7 +365,7 @@ window.grammarN2 = [
   {
     id: 'gn2-00028', level: 'n2', pattern: '〜だけでなく', reading: '〜dake de naku',
     meaning: 'tidak hanya ... tetapi juga ...',
-    cat: 'enumerasi',
+    cat: 'listing-addition',
     connection: 'V/Adj plain / N + だけでなく',
     desc: '<b>〜だけでなく</b> menambahkan informasi tambahan; mirip ばかりでなく dan のみならず.',
     examples: [
@@ -378,7 +378,7 @@ window.grammarN2 = [
   {
     id: 'gn2-00029', level: 'n2', pattern: '〜ざるを得ない', reading: '〜zaru wo enai',
     meaning: 'terpaksa ... / tidak bisa tidak ...',
-    cat: 'keharusan',
+    cat: 'obligation-necessity',
     connection: 'V-ない-stem + ざるを得ない（例外: する→せざるを得ない）',
     desc: '<b>〜ざるを得ない</b> menyatakan bahwa pembicara terpaksa melakukan sesuatu karena tidak ada pilihan lain.',
     examples: [
@@ -391,7 +391,7 @@ window.grammarN2 = [
   {
     id: 'gn2-00030', level: 'n2', pattern: '〜にすぎない', reading: '〜ni suginai',
     meaning: 'hanya ... saja / tidak lebih dari ...',
-    cat: 'pembatasan',
+    cat: 'extent-degree',
     connection: 'V-dict / N + にすぎない',
     desc: '<b>〜にすぎない</b> menyatakan bahwa sesuatu tidak lebih dari apa yang disebutkan; meremehkan atau merendah.',
     examples: [
@@ -494,7 +494,7 @@ window.grammarN2 = [
 {
   id: 'gn2-00036', level: 'n2', pattern: '〜どころではない', reading: '〜doko ro de wa nai',
   meaning: 'bukan waktunya untuk ... / tidak sempat ...',
-  cat: 'limitation-only',
+  cat: 'extent-degree',
   connection: 'V-dict / N + どころではない',
   desc: '<b>〜どころではない</b> menyatakan bahwa situasi saat ini terlalu genting atau sibuk sehingga hal yang disebutkan sama sekali tidak memungkinkan untuk dilakukan.',
   nuance: 'Berbeda dari どころか yang membandingkan dua hal. どころではない menekankan ketidakmungkinan akibat kondisi yang mendesak. Terasa lebih kuat dari それどころじゃない (percakapan kasual).',
@@ -512,7 +512,7 @@ window.grammarN2 = [
 {
   id: 'gn2-00037', level: 'n2', pattern: '〜に過ぎない', reading: '〜ni sugi nai',
   meaning: 'hanya / tidak lebih dari ...',
-  cat: 'limitation-only',
+  cat: 'extent-degree',
   connection: 'V-plain / N / Adj-plain + に過ぎない',
   desc: '<b>〜に過ぎない</b> menyatakan bahwa sesuatu tidak melebihi batas tertentu — "hanya sebatas itu" dan tidak lebih.',
   nuance: 'Mengandung nada meremehkan atau mengecilkan sesuatu. Berbeda dari だけ yang netral, に過ぎない terasa lebih kritis atau merendahkan nilai sesuatu.',
@@ -548,7 +548,7 @@ window.grammarN2 = [
 {
   id: 'gn2-00039', level: 'n2', pattern: '〜において / 〜における', reading: '〜ni oite / 〜ni okeru',
   meaning: 'di dalam ... / dalam hal ... / pada ... (formal)',
-  cat: 'relative-clause',
+  cat: 'nominalization',
   connection: 'N + において / N + における + N',
   desc: '<b>〜において</b> adalah partikel majemuk formal yang menunjukkan tempat, waktu, atau ranah terjadinya sesuatu. Bentuk <b>〜における</b> digunakan sebelum nomina (atributif).',
   nuance: 'Pengganti formal dari で atau の中で. Hampir tidak dipakai dalam percakapan sehari-hari. Sering muncul dalam dokumen resmi, berita, dan akademik.',
@@ -656,7 +656,7 @@ window.grammarN2 = [
 {
   id: 'gn2-00045', level: 'n2', pattern: '〜をめぐって / 〜をめぐる', reading: '〜wo megutte / 〜wo meguru',
   meaning: 'seputar ... / mengenai ... / terkait isu ...',
-  cat: 'relative-clause',
+  cat: 'nominalization',
   connection: 'N (isu/topik) + をめぐって / をめぐる + N',
   desc: '<b>〜をめぐって</b> menandai topik yang menjadi pusat diskusi, perdebatan, atau konflik. <b>〜をめぐる</b> adalah bentuk atributif yang diikuti nomina.',
   nuance: 'Berbeda dari について (yang netral dan umum), をめぐって menyiratkan adanya perselisihan, kontroversi, atau diskusi aktif di sekitar topik tersebut.',
@@ -692,7 +692,7 @@ window.grammarN2 = [
 {
   id: 'gn2-00047', level: 'n2', pattern: '〜さえ〜ば', reading: '〜sae 〜ba',
   meaning: 'asalkan ... / kalau saja ... (satu syarat cukup)',
-  cat: 'conditional-ba',
+  cat: 'conditional-tara',
   connection: 'N + さえ + V-ba / Adj-kereba / N + でさえあれば',
   desc: '<b>〜さえ〜ば</b> menyatakan bahwa jika satu syarat kunci terpenuhi, maka segalanya akan baik-baik saja. Satu kondisi itu sudah cukup untuk menghasilkan hasil yang diharapkan.',
   nuance: 'Menekankan bahwa syarat yang disebutkan adalah satu-satunya yang diperlukan. Berbeda dari さえ〜ても yang mengungkapkan kondisi ekstrem tetapi hasilnya tetap berlawanan.',
@@ -800,7 +800,7 @@ window.grammarN2 = [
 {
   id: 'gn2-00053', level: 'n2', pattern: '〜に関して / 〜に関する', reading: '〜ni kanshite / 〜ni kansuru',
   meaning: 'mengenai ... / terkait dengan ... / berkenaan dengan ...',
-  cat: 'relative-clause',
+  cat: 'nominalization',
   connection: 'N + に関して / に関する + N',
   desc: '<b>〜に関して</b> menandai topik atau bidang yang dibicarakan. <b>〜に関する</b> adalah bentuk atributif (sebelum nomina). Digunakan dalam konteks formal.',
   nuance: 'Lebih formal dari について. に関して cocok untuk dokumen, surat resmi, dan presentasi. Dalam percakapan sehari-hari, についてのほうが自然.',
@@ -818,7 +818,7 @@ window.grammarN2 = [
 {
   id: 'gn2-00054', level: 'n2', pattern: '〜次第で', reading: '〜shidai de',
   meaning: 'tergantung pada ... (hasilnya bisa berbeda)',
-  cat: 'conditional-nara',
+  cat: 'conditional-tara',
   connection: 'N + 次第で / 次第では',
   desc: '<b>〜次第で</b> menyatakan bahwa hasil atau kondisi akhir sepenuhnya ditentukan oleh faktor yang disebutkan. Faktor itu menjadi penentu utama.',
   nuance: 'Menekankan variabilitas hasil bergantung pada satu faktor. Berbeda dari 次第だ (kesimpulan/penjelasan keadaan) — 次第で selalu diikuti kondisi atau akibat yang berubah-ubah.',
@@ -1340,7 +1340,7 @@ window.grammarN2 = [
 {
   id: 'gn2-00083', level: 'n2', pattern: '〜限り', reading: '〜kagiri',
   meaning: 'selama ... / sejauh ... / sampai batas ...',
-  cat: 'limitation-only',
+  cat: 'extent-degree',
   connection: 'V-dict / V-nai / N + の + 限り',
   desc: '<b>〜限り</b> memiliki dua fungsi utama: (1) menyatakan batas kondisi atau waktu — "selama kondisi ini berlangsung"; (2) menyatakan batas pengetahuan atau kemampuan pembicara — "sejauh yang saya tahu/bisa".',
   nuance: 'Lebih luas dari 限りでは. Bisa digunakan untuk batas temporal (命ある限り) maupun batas pengetahuan (知る限り). 限りでは lebih spesifik untuk konteks pengetahuan pembicara.',
@@ -1358,7 +1358,7 @@ window.grammarN2 = [
 {
   id: 'gn2-00084', level: 'n2', pattern: '〜限りでは', reading: '〜kagiri de wa',
   meaning: 'sejauh yang saya ketahui ... / berdasarkan yang saya amati ...',
-  cat: 'limitation-only',
+  cat: 'extent-degree',
   connection: 'V-dict / N + の + 限りでは',
   desc: '<b>〜限りでは</b> menyatakan bahwa informasi yang disampaikan terbatas pada apa yang diamati atau diketahui oleh pembicara — "sejauh yang saya lihat / ketahui".',
   nuance: 'Lebih spesifik dari 限り. Hampir selalu digunakan untuk membatasi ruang lingkup pengetahuan pembicara, bukan kondisi temporal. Sering diikuti dengan ekspresi ketidakpastian seperti ようだ atau らしい.',
@@ -1448,7 +1448,7 @@ window.grammarN2 = [
 {
   id: 'gn2-00089', level: 'n2', pattern: '〜とあれば', reading: '〜to areba',
   meaning: 'kalau memang ... — rela melakukan apapun / demi ...',
-  cat: 'conditional-nara',
+  cat: 'conditional-tara',
   connection: 'V-plain / N + とあれば',
   desc: '<b>〜とあれば</b> menyatakan bahwa jika suatu kondisi tertentu terpenuhi, pembicara rela atau bersedia melakukan apa saja. Biasanya mengungkapkan kesediaan atau pengorbanan yang kuat.',
   nuance: 'Lebih kuat dari なら. Menyiratkan "apapun akan saya lakukan demi ...". Sering digunakan untuk mengungkapkan kesetiaan, dedikasi, atau pengorbanan tanpa syarat.',
@@ -1466,7 +1466,7 @@ window.grammarN2 = [
 {
   id: 'gn2-00090', level: 'n2', pattern: '〜とあっては', reading: '〜to atte wa',
   meaning: 'dalam kondisi seperti ini ... / mengingat keadaan yang ...',
-  cat: 'conditional-nara',
+  cat: 'conditional-tara',
   connection: 'V-plain / N + とあっては',
   desc: '<b>〜とあっては</b> menyatakan bahwa mengingat kondisi atau situasi tertentu yang sudah ada, suatu konsekuensi logis tidak bisa dihindari.',
   nuance: 'Berbeda dari とあれば (kesediaan aktif dari dalam diri). とあっては menekankan tekanan dari situasi yang sudah ada — "menghadapi kenyataan ini, tidak ada pilihan lain selain ...".',
@@ -1560,7 +1560,7 @@ window.grammarN2 = [
   pattern: '〜に限らず',
   reading: '〜ni kagirazu',
   meaning: 'tidak terbatas pada ... saja / tidak hanya ...',
-  cat: 'limitation-only',
+  cat: 'extent-degree',
   connection: 'N + に限らず',
   desc: '<b>〜に限らず</b> menyatakan bahwa sesuatu tidak terbatas hanya pada X, melainkan berlaku lebih luas atau mencakup Y juga.',
   nuance: 'Menekankan perluasan cakupan — "jangan salah anggap ini hanya soal X". Sering berpasangan dengan 〜も atau 〜でも. Bisa digunakan dalam konteks formal maupun sehari-hari.',
@@ -1680,7 +1680,7 @@ window.grammarN2 = [
   pattern: '〜いかんによって',
   reading: '〜ikan ni yotte',
   meaning: 'tergantung pada ... / bergantung bagaimana ...',
-  cat: 'conditional-nara',
+  cat: 'conditional-tara',
   connection: 'N + いかんによって / いかんによっては',
   desc: '<b>〜いかんによって</b> menyatakan bahwa hasil atau tindakan bergantung pada kondisi atau variabel tertentu yang disebutkan.',
   nuance: 'Kebalikan nuansa dari いかんにかかわらず: di sini kondisi MENENTUKAN hasil. Formal. いかんによっては (dengan は) menambahkan nuansa "ada kemungkinan tertentu bergantung pada kondisi".',
@@ -1801,7 +1801,7 @@ window.grammarN2 = [
   pattern: '〜に応じて',
   reading: '〜ni ojite',
   meaning: 'sesuai dengan ... / menyesuaikan dengan ... / bergantung pada ...',
-  cat: 'conditional-nara',
+  cat: 'conditional-tara',
   connection: 'N + に応じて / に応じた (+ N)',
   desc: '<b>〜に応じて</b> menyatakan bahwa sesuatu berubah atau disesuaikan mengikuti kondisi, permintaan, atau situasi yang disebutkan.',
   nuance: 'Menekankan fleksibilitas atau penyesuaian: hasilnya bervariasi tergantung X. Sangat umum dalam konteks bisnis, regulasi, dan pendidikan. Bedakan dengan に基づいて (berdasarkan) — に応じて lebih menekankan dinamika penyesuaian.',
@@ -1825,7 +1825,7 @@ window.grammarN2 = [
   pattern: '〜に応じた',
   reading: '〜ni ojita',
   meaning: 'yang disesuaikan dengan ... / yang sesuai dengan ...',
-  cat: 'conditional-nara',
+  cat: 'conditional-tara',
   connection: 'N + に応じた + N (bentuk atributif)',
   desc: '<b>〜に応じた</b> adalah bentuk atributif (prenominal) dari に応じて, digunakan langsung sebelum nomina untuk menyatakan "N yang disesuaikan dengan X".',
   nuance: 'Secara semantis sama dengan に応じて, tapi posisinya adalah modifier nomina. Sangat umum dalam konteks kebijakan, pendidikan, dan layanan. Pelajar sering lupa bahwa bentuk atributif memakai た, bukan て.',
