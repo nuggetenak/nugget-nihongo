@@ -33,7 +33,7 @@ window.bookMinna2 = {
         'vg-n5-00013', // 聞く — mendengar; bertanya
         'vg-n5-00020', // する — melakukan
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00027', 'gn5-00028', 'gn4-00048'],
     },
 
     27: {
@@ -52,7 +52,7 @@ window.bookMinna2 = {
         'vg-n5-00143', // でも — tapi; tetapi
         'vg-n5-00144', // そして — dan kemudian; lalu
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn4-00047', 'gn5-00072'],
     },
 
     28: {
@@ -71,7 +71,7 @@ window.bookMinna2 = {
         'vg-n5-00114', // 少し — sedikit
         'vg-n5-00626', // とても — sangat
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00045', 'gn4-00023'],
     },
 
     29: {
@@ -90,7 +90,7 @@ window.bookMinna2 = {
         'vg-n5-00475', // 毎日 — setiap hari
         'vg-n5-00117', // 一緒に — bersama
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn4-00087', 'gn4-00053', 'gn4-00085'],
     },
 
     30: {
@@ -108,7 +108,7 @@ window.bookMinna2 = {
         'vg-n5-00615', // シャワーをあびる — mandi shower
         'vg-n5-00475', // 毎日 — setiap hari
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn4-00046'],
     },
 
     31: {
@@ -125,7 +125,7 @@ window.bookMinna2 = {
         'vg-n5-00713', // 飛行機 — pesawat
         'vg-n5-00714', // 船 — kapal
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00050'],
     },
 
     32: {
@@ -142,7 +142,7 @@ window.bookMinna2 = {
         'vg-n5-00119', // いつも — selalu; biasanya
         'vg-n5-00120', // 時々 — kadang-kadang
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00051', 'gn4-00089'],
     },
 
     33: {
@@ -161,7 +161,7 @@ window.bookMinna2 = {
         'vg-n4-00524', // 季節 — musim
         'vg-n5-00065', // 新しい — baru
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00072', 'gn4-00047'],
     },
 
     34: {
@@ -180,7 +180,7 @@ window.bookMinna2 = {
         'vg-n4-00492', // 丁寧 — sopan; teliti; seksama
         'vg-n5-00716', // 広い — luas; lebar
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00080', 'gn4-00065'],
     },
 
     35: {
@@ -198,7 +198,7 @@ window.bookMinna2 = {
         'vg-n4-00359', // 問題 — masalah, soal
         'vg-n4-00660', // 説明する — menjelaskan
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn4-00034'],
     },
 
     36: {
@@ -216,7 +216,7 @@ window.bookMinna2 = {
         'vg-n5-00143', // でも — tapi; tetapi
         'vg-n4-00537', // 相談 — konsultasi; diskusi
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn4-00028'],
     },
 
     37: {
@@ -234,7 +234,7 @@ window.bookMinna2 = {
         'vg-n4-00032', // 心配 — khawatir, cemas
         'vg-n5-00124', // すみません — permisi; maaf
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn4-00032', 'gn4-00033'],
     },
 
     38: {
@@ -253,7 +253,7 @@ window.bookMinna2 = {
         'vg-n5-00098', // 天気 — cuaca
         'vg-n5-00098', // 天気 — cuaca
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn4-00029'],
     },
 
     39: {
@@ -272,7 +272,7 @@ window.bookMinna2 = {
         'vg-n5-00125', // ありがとうございます — terima kasih
         'vg-n5-00484', // 安心する — merasa lega
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn4-00030'],
     },
 
     40: {
@@ -287,7 +287,7 @@ window.bookMinna2 = {
         'vg-n5-00089', // 病院 — rumah sakit
         'vg-n5-00121', // 頭 — kepala
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn4-00040'],
     },
 
     41: {
@@ -302,7 +302,7 @@ window.bookMinna2 = {
         'vg-n4-00502', // 便利 — praktis; mudah; berguna
         'vg-n4-00362', // 方法 — cara, metode
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn4-00041'],
     },
 
     42: {
@@ -317,7 +317,7 @@ window.bookMinna2 = {
         'vg-n4-00529', // 事故 — kecelakaan
         'vg-n4-00525', // 地震 — gempa bumi
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn4-00063'],
     },
 
     43: {
@@ -334,7 +334,7 @@ window.bookMinna2 = {
         'vg-n5-00542', // 病気 — sakit, penyakit
         'vg-n5-00543', // 元気 — sehat, bersemangat
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00048'],
     },
 
     44: {
@@ -351,7 +351,7 @@ window.bookMinna2 = {
         'vg-n4-00113', // 連絡 — kontak, menghubungi
         'vg-n4-00668', // 連絡する — menghubungi
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn4-00035'],
     },
 
     45: {
@@ -370,7 +370,7 @@ window.bookMinna2 = {
         'vg-n5-00409', // エアコン — AC
         'vg-n5-00390', // テレビ — televisi
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn4-00031'],
     },
 
     46: {
@@ -387,7 +387,7 @@ window.bookMinna2 = {
         'vg-n4-00668', // 連絡する — menghubungi
         'vg-n4-00113', // 連絡 — kontak, menghubungi
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn4-00034', 'gn4-00025', 'gn4-00026'],
     },
 
     47: {
@@ -401,7 +401,7 @@ window.bookMinna2 = {
         'vg-n5-00049', // 送る — mengirim; mengantarkan
         'vg-n5-00037', // 買う — membeli
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn4-00083', 'gn4-00084', 'gn4-00055'],
     },
 
     48: {
@@ -416,7 +416,7 @@ window.bookMinna2 = {
         'vg-n5-00124', // すみません — permisi; maaf
         'vg-n5-00126', // どうぞ — silakan
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn4-00068', 'gn4-00044', 'gn4-00045'],
     },
 
     49: {
@@ -432,7 +432,7 @@ window.bookMinna2 = {
         'vg-n4-00365', // 経験 — pengalaman
         'vg-n4-00355', // 習慣 — kebiasaan, adat
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn4-00056', 'gn4-00058', 'gn4-00076'],
     },
 
     50: {
@@ -445,7 +445,7 @@ window.bookMinna2 = {
         'vg-n4-00110', // 続ける — melanjutkan
         'vg-n4-00357', // 機会 — kesempatan, peluang
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn4-00009', 'gn4-00072'],
     },
   },
 };

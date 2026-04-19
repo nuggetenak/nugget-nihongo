@@ -34,7 +34,7 @@ window.bookMinna1 = {
         'vg-n5-00488', // 社長 — direktur, presiden perusahaan
         'vg-n5-00491', // 社員 — karyawan
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00001', 'gn5-00002', 'gn5-00018', 'gn5-00016', 'gn5-00017', 'gn5-00005'],
     },
 
     2: {
@@ -53,7 +53,7 @@ window.bookMinna1 = {
         'vg-n5-00037', // 買う — membeli
         'vg-n5-00126', // どうぞ — silakan
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00017', 'gn5-00016', 'gn5-00018'],
     },
 
     3: {
@@ -72,7 +72,7 @@ window.bookMinna1 = {
         'vg-n5-00512', // 上 — atas
         'vg-n5-00515', // 下 — bawah
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00009', 'gn5-00011', 'gn5-00062'],
     },
 
     4: {
@@ -89,7 +89,7 @@ window.bookMinna1 = {
         'vg-n5-00457', // 七時半 — setengah delapan / jam 7:30
         'vg-n5-00519', // 休み — hari libur, istirahat
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00010', 'gn5-00020'],
     },
 
     5: {
@@ -108,7 +108,7 @@ window.bookMinna1 = {
         'vg-n5-00096', // 明日 — besok
         'vg-n5-00097', // 昨日 — kemarin
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00013', 'gn5-00012', 'gn5-00015', 'gn5-00027'],
     },
 
     6: {
@@ -128,7 +128,7 @@ window.bookMinna1 = {
         'vg-n5-00475', // 毎日 — setiap hari
         'vg-n5-00119', // いつも — selalu; biasanya
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00007', 'gn5-00011', 'gn5-00089', 'gn5-00087', 'gn5-00016'],
     },
 
     7: {
@@ -148,7 +148,7 @@ window.bookMinna1 = {
         'vg-n5-00039', // 貸す — meminjamkan
         'vg-n5-00040', // 借りる — meminjam
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00037', 'gn5-00038', 'gn5-00039'],
     },
 
     8: {
@@ -167,7 +167,7 @@ window.bookMinna1 = {
         'vg-n5-00043', // 歌う — bernyanyi
         'vg-n5-00034', // 泳ぐ — berenang
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00043', 'gn5-00042', 'gn5-00044'],
     },
 
     9: {
@@ -189,7 +189,7 @@ window.bookMinna1 = {
         'vg-n5-00461', // 前 — depan, sebelum
         'vg-n5-00517', // 外 — luar
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00061', 'gn5-00062', 'gn5-00009'],
     },
 
     10: {
@@ -208,7 +208,7 @@ window.bookMinna1 = {
         'vg-n5-00033', // 読む — membaca
         'vg-n5-00032', // 見る — melihat; menonton
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00006', 'gn5-00091', 'gn5-00087', 'gn5-00093'],
     },
 
     11: {
@@ -228,7 +228,7 @@ window.bookMinna1 = {
         'vg-n5-00716', // 広い — luas; lebar
         'vg-n5-00717', // 狭い — sempit; kecil
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00024', 'gn5-00025', 'gn5-00057', 'gn5-00093'],
     },
 
     12: {
@@ -245,7 +245,7 @@ window.bookMinna1 = {
         'vg-n5-00033', // 読む — membaca
         'vg-n5-00037', // 買う — membeli
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00082', 'gn5-00083'],
     },
 
     13: {
@@ -263,7 +263,7 @@ window.bookMinna1 = {
         'vg-n5-00008', // 言う — berkata, mengatakan
         'vg-n5-00008', // 言う — berkata, mengatakan
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00030', 'gn5-00031', 'gn5-00032'],
     },
 
     14: {
@@ -284,7 +284,7 @@ window.bookMinna1 = {
         'vg-n5-00071', // 易しい — mudah, gampang
         'vg-n5-00059', // 良い — bagus, baik
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00057', 'gn5-00058', 'gn5-00060', 'gn5-00021'],
     },
 
     15: {
@@ -304,7 +304,7 @@ window.bookMinna1 = {
         'vg-n4-00503', // 不便 — tidak praktis; tidak nyaman
         'vg-n4-00501', // 親切 — baik hati; ramah
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00026', 'gn5-00084', 'gn5-00040'],
     },
 
     16: {
@@ -319,7 +319,7 @@ window.bookMinna1 = {
         'vg-n4-00475', // 動物園 — kebun binatang
         'vg-n5-00107', // 来年 — tahun depan
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00040', 'gn5-00041'],
     },
 
     17: {
@@ -337,7 +337,7 @@ window.bookMinna1 = {
         'vg-n5-00086', // 会社 — perusahaan
         'vg-n5-00019', // 住む — tinggal, menetap
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00029', 'gn5-00089'],
     },
 
     18: {
@@ -354,7 +354,7 @@ window.bookMinna1 = {
         'vg-n5-00105', // 夜 — malam
         'vg-n5-00475', // 毎日 — setiap hari
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00054', 'gn5-00033', 'gn5-00055'],
     },
 
     19: {
@@ -371,7 +371,7 @@ window.bookMinna1 = {
         'vg-n5-00001', // 会う — bertemu
         'vg-n5-00125', // ありがとうございます — terima kasih
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00037', 'gn5-00038', 'gn5-00039'],
     },
 
     20: {
@@ -385,7 +385,7 @@ window.bookMinna1 = {
         'vg-n5-00119', // いつも — selalu; biasanya
         'vg-n5-00120', // 時々 — kadang-kadang
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00036'],
     },
 
     21: {
@@ -399,7 +399,7 @@ window.bookMinna1 = {
         'vg-n5-00025', // 使う — menggunakan
         'vg-n4-00282', // キャンセル — pembatalan, membatalkan
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn4-00017'],
     },
 
     22: {
@@ -412,7 +412,7 @@ window.bookMinna1 = {
         'vg-n5-00124', // すみません — permisi; maaf
         'vg-n5-00484', // 安心する — merasa lega
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00038', 'gn4-00033', 'gn4-00034'],
     },
 
     23: {
@@ -430,7 +430,7 @@ window.bookMinna1 = {
         'vg-n4-00032', // 心配 — khawatir, cemas
         'vg-n4-00512', // 大丈夫 — tidak apa-apa; baik-baik saja
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00080'],
     },
 
     24: {
@@ -449,7 +449,7 @@ window.bookMinna1 = {
         'vg-n4-00071', // 薬 — obat
         'vg-n5-00121', // 頭 — kepala
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn4-00018', 'gn4-00019'],
     },
 
     25: {
@@ -468,7 +468,7 @@ window.bookMinna1 = {
         'vg-n5-00144', // そして — dan kemudian; lalu
         'vg-n4-00368', // 意見 — pendapat, opini
       ],
-      grammar_ids: [],
+      grammar_ids: ['gn5-00047', 'gn5-00049', 'gn5-00048'],
     },
   },
 };
