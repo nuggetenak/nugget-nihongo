@@ -29,6 +29,19 @@ document.addEventListener('DOMContentLoaded', () => {
   if (window.browseInit) window.browseInit(); // browse.js
   if (window.hubInit)   window.hubInit();    // materi-hub.js (Phase 2)
 
+  // Sync level pill active state from nn_starting_level (set during onboarding)
+  const _startLevel = localStorage.getItem('nn_starting_level');
+  if (_startLevel && _startLevel !== 'all') {
+    document.querySelectorAll('.level-pills .pill').forEach(b => {
+      const txt = b.textContent.trim().toLowerCase();
+      const isMatch = (b.id === 'pill-' + _startLevel) ||
+                      (txt === _startLevel.toUpperCase()) ||
+                      (b.getAttribute('onclick') || '').includes("'" + _startLevel + "'");
+      b.classList.remove('active-all','active-n1','active-n2','active-n3','active-n4','active-n5');
+      if (isMatch) b.classList.add('active-' + _startLevel);
+    });
+  }
+
   // AI Tutor + Analytics init
   if (window.initAITutor)   window.initAITutor();
   if (window.initAnalytics) window.initAnalytics();

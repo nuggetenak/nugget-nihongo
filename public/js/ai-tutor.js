@@ -390,6 +390,14 @@ function _escHtml(str) {
   return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
 
+// ── Reset conversation history ────────────────────────────────────
+window.resetAITutorHistory = function () {
+  aiHistory = [];
+  sessionStorage.removeItem(AI_HISTORY_KEY);
+  const feed = document.getElementById('aiFeed');
+  if (feed) feed.innerHTML = '';
+};
+
 // ── Tab switch hook (called by app.js switchTab) ──────────────────
 window._aiTutorOnTabShow = function () {
   _renderQuota();

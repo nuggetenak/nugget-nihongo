@@ -2,7 +2,7 @@
 //  Fix: pill UI, week filter, akhiri quiz + modal konfirmasi
 // ══════════════════════════════════════
 
-let quizLevel = 'all', quizWeek = null, quizCat = 'all';
+let quizLevel = localStorage.getItem('nn_starting_level') || 'all', quizWeek = null, quizCat = 'all';
 // Expose ke window agar bisa dibaca quiz-vocab.js dan file lain
 Object.defineProperty(window, 'quizLevel', { get: () => quizLevel, set: v => { quizLevel = v; } });
 Object.defineProperty(window, 'quizWeek',  { get: () => quizWeek,  set: v => { quizWeek  = v; } });
