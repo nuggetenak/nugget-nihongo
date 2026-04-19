@@ -149,11 +149,11 @@
     btn.addEventListener('click', function () {
       if (!confirm('Hapus SEMUA data lokal? FSRS progress, bookmark, streak — semua hilang. Ini tidak bisa dibatalkan.')) return;
       if (!confirm('Yakin? Data tidak bisa dikembalikan.')) return;
-      // Clear every nn_ key
+      // Clear all app keys (nn_* and bunpou_* prefixes)
       var keysToRemove = [];
       for (var i = 0; i < localStorage.length; i++) {
         var k = localStorage.key(i);
-        if (k && k.startsWith('nn_')) keysToRemove.push(k);
+        if (k && (k.startsWith('nn_') || k.startsWith('bunpou'))) keysToRemove.push(k);
       }
       keysToRemove.forEach(function (k) { localStorage.removeItem(k); });
       // Also clear IDB via localState if available

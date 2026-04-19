@@ -3,7 +3,9 @@
 // ══════════════════════════════════════
 
 // ── State ──
-let activeLevel = 'all', activeWeek = null, activeCat = 'all';
+// Pre-select starting level from onboarding if available
+let activeLevel = localStorage.getItem('nn_starting_level') || 'all';
+let activeWeek = null, activeCat = 'all';
 let searchText = '', sortBy = 'level', bookmarkMode = false;
 
 const catLabel = {
