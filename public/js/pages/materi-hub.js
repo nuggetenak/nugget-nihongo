@@ -71,10 +71,9 @@
       publisher: 'Three A Network',
       level    : 'n5',
       structure: 'lesson',
-      lensVar  : null,
+      lensVar  : 'bookMinna1',
       emoji    : '📓',
-      available: false,
-      comingSoon: true,
+      available: true,
     },
     {
       id       : 'minna-2',
@@ -83,10 +82,9 @@
       publisher: 'Three A Network',
       level    : 'n4',
       structure: 'lesson',
-      lensVar  : null,
+      lensVar  : 'bookMinna2',
       emoji    : '📔',
-      available: false,
-      comingSoon: true,
+      available: true,
     },
   ];
 
@@ -364,8 +362,8 @@
         name: 'Minna no Nihongo', badge: '2 VOLUME',
         sub: 'Kurikulum klasik, populer di Indonesia',
         volumes: [
-          { id: 'minna-1', label: 'Volume I',  levelKey: 'n5', available: false },
-          { id: 'minna-2', label: 'Volume II', levelKey: 'n4', available: false },
+          { id: 'minna-1', label: 'Volume I',  levelKey: 'n5', available: true },
+          { id: 'minna-2', label: 'Volume II', levelKey: 'n4', available: true },
         ]
       }
     ];
