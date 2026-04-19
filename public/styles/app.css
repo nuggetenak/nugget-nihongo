@@ -1565,6 +1565,17 @@ body.light .tab-nav {
   margin-bottom: 0.4rem;
 }
 .fill-coming-soon p { font-size: var(--text-sm); line-height: 1.6; }
+.cs-action-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  margin-top: 12px; padding: 8px 18px;
+  background: var(--accent); color: #000;
+  border: none; border-radius: 100px;
+  font-size: var(--text-sm); font-weight: 700;
+  cursor: pointer; font-family: inherit;
+  touch-action: manipulation;
+  transition: opacity 0.15s;
+}
+.cs-action-btn:active { opacity: 0.75; }
 
 #quizResult {
   display: none; padding: 2rem 1rem 2rem;

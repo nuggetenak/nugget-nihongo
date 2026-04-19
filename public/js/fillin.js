@@ -61,13 +61,20 @@ function startFillQuiz() {
   document.getElementById('fillInActive').style.display = 'block';
 
   if (!pool.length) {
-    // Coming soon state
+    // Fallback: try without level/week filter
+    const fallbackPool = (window.getFillInBank || window.getBankSoal || (() => []))({ level: null, n: 20 });
+    if (fallbackPool.length) {
+      fillDeck = fallbackPool.sort(() => Math.random() - 0.5);
+      fillIdx = 0; fillCorrect = 0; fillWrong = 0;
+      showFillQuestion();
+      return;
+    }
     document.getElementById('fillCard').innerHTML = `
       <div class="fill-coming-soon">
         <div class="cs-icon">🚧</div>
-        <h3>Soal belum tersedia</h3>
-        <p>Bank soal untuk level/minggu ini sedang disiapkan.<br>
-        Sementara coba <strong>N3 Week 1</strong> yang sudah ada 5 soal!</p>
+        <h3>Belum ada soal</h3>
+        <p>Mulai belajar kartu grammar dulu, baru soal Fill-In akan tersedia.<br>
+        <button class="cs-action-btn" onclick="window.switchTab('browse', document.querySelector('[aria-label=Materi]'))">Ke Browse →</button></p>
       </div>`;
     document.getElementById('fillProgressTxt').textContent = '0 / 0';
     document.getElementById('fillProgressFill').style.width = '0%';
@@ -224,17 +231,24 @@ function startRearrangeQuiz() {
   document.getElementById('rearrangeActive').style.display = 'block';
 
   if (!pool.length) {
-    document.getElementById('reaCard').innerHTML = `
-      <div class="fill-coming-soon">
-        <div class="cs-icon">🔀</div>
-        <h3>Soal belum tersedia</h3>
-        <p>Bank soal <em>Susun Kalimat</em> untuk level/minggu ini sedang disiapkan.<br>
-        Coba <strong>N3 Week 1</strong> — sudah ada 5 soal dari D7!</p>
-      </div>`;
-    document.getElementById('reaProgressTxt').textContent = '0 / 0';
-    document.getElementById('reaProgressFill').style.width = '0%';
-    document.getElementById('reaScoreTxt').innerHTML = '—';
-    return;
+    var _fb = window.quizEngine
+      ? window.quizEngine.generate({ quizType: 'rearrange', level: null, n: 20, source: 'grammar', mode: 'mixed' })
+      : [];
+    if (_fb.length) {
+      pool = _fb;
+    } else {
+      document.getElementById('reaCard').innerHTML = `
+        <div class="fill-coming-soon">
+          <div class="cs-icon">🔀</div>
+          <h3>Belum ada soal Susun Kalimat</h3>
+          <p>Mulai belajar kartu grammar dulu agar soal tersedia.<br>
+          <button class="cs-action-btn" onclick="window.switchTab('browse',document.querySelector('[aria-label=Materi]'))">Ke Browse →</button></p>
+        </div>`;
+      document.getElementById('reaProgressTxt').textContent = '0 / 0';
+      document.getElementById('reaProgressFill').style.width = '0%';
+      document.getElementById('reaScoreTxt').innerHTML = '—';
+      return;
+    }
   }
 
   reaDeck = pool.sort(() => Math.random() - 0.5);
