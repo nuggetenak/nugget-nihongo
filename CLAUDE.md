@@ -1,6 +1,6 @@
 # CLAUDE.md — Handoff Note for Claude Agents
 **Project:** Nugget Nihongo — Japanese language learning PWA  
-**Last updated:** 19 April 2026 · v15.12.3  
+**Last updated:** 19 April 2026 · v15.13.0  
 **Owner:** Nugget (non-programmer, Indonesian speaker, product owner + content expert)
 
 ---
@@ -23,12 +23,12 @@ A vanilla JS **hybrid** PWA for learning Japanese, targeting Indonesian speakers
 
 ---
 
-## CURRENT STATE (v15.12.3)
+## CURRENT STATE (v15.13.0)
 
 ### What works
-- **Grammar DB:** N5 (94), N4 (92), N3 (103), N2 (80 est), N1 (60 est) entries
-- **Vocab DB:** N5 (725), N4 (692), N3 (405), N2 (140), N1 (70) entries
-- **Grammar lenses:** Soumatome N3 (132), N4 (102); Irodori A1 (61), A2-1 (65), A2-2 (62); Minna 1 (25 lessons), Minna 2 (25 lessons)
+- **Grammar DB:** N5 (94), N4 (92), N3 (46+), N2 (250), N1 (140) entries
+- **Vocab DB:** N5 (725), N4 (692), N3 (615), N2 (260), N1 (130) entries
+- **Grammar lenses:** Soumatome N3 (132), N4 (102); Irodori A1 (61), A2-1 (65), A2-2 (62) — all with grammar_ids; Minna 1 & 2 (25 lessons each)
 - **Browse tab:** Peel cards with accordion reveal, hold=peek, tap=reveal; ⋯ detail modal; ☆ bookmark; filter/search/super-cats
 - **Detail modal:** Bottom-sheet modal with full grammar info, examples, breakdown toggle (CSS §31)
 - **Hub navigation:** JLPT door, Buku (book) door, 語 Jelajah Bebas door; book accordion; chapter pills when in book view
@@ -142,7 +142,7 @@ All JS loaded via `<script>` in `index.html`. Load order matters. 63 script tags
 ```
 public/                    ← Cloudflare Pages deploy root
   index.html               ← SPA, 5 tabs, 1700+ lines
-  sw.js                    ← Service Worker (nihongo-v15.12.3)
+  sw.js                    ← Service Worker (nihongo-v15.13.0)
   styles/app.css           ← All styles (5046 lines, §1–§31)
   js/
     core/                  ← version.js, state.js, router.js, theme.js, install.js
@@ -259,4 +259,4 @@ If JMdict data is used, the About/Attribution page MUST display:
 
 ---
 
-*Last edited: Crunchy 🧂 (QA + dev session) — 19 April 2026 · v15.12.3*
+*Last edited: Crunchy 🧂 (QA + dev session) — 19 April 2026 · v15.13.0*
