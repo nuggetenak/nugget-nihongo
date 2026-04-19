@@ -490,7 +490,7 @@ window.grammarN1 = [
   desc: '<b>〜ならではの</b> adalah varian atributif (pengubah nomina) dari 〜ならでは, yang menyatakan keistimewaan eksklusif suatu entitas. Selalu diikuti nomina yang dijelaskannya.',
   nuance: 'Secara fungsi berbeda dari 〜ならでは: 〜ならではの selalu mendahului nomina (ならではの味、ならではの経験), sedangkan 〜ならでは bisa berdiri sendiri atau diikuti で + predikat. Keduanya bermakna sama namun berbeda posisi.',
   examples: [
-    { jp: '日本<b>ならではの</b>おもてなし文化に感動した。', id: 'Aku terkesan dengan budaya おもてなし yang khas Jepang.' },
+    { jp: '日本<b>ならではの</b>おもてなし文化に感動した。', id: 'Aku terkesan dengan budaya penyambutan tulus yang khas Jepang.' },
     { jp: 'このシェフ<b>ならではの</b>料理が楽しめる。', id: 'Kamu bisa menikmati masakan yang khas hanya dari chef ini.' },
     { jp: '子供時代<b>ならではの</b>無邪気な笑顔が忘れられない。', id: 'Senyum polos yang hanya ada di masa kanak-kanak tidak bisa terlupakan.' }
   ],

@@ -36,7 +36,7 @@ window.vocabN3 = [
       "id": "Saya mengumpulkan perangko sebagai hobi.",
       "level": "n3",
       "tags": [
-        "hobi"
+        "hiburan"
       ]
     },
     {
@@ -384,7 +384,7 @@ window.vocabN3 = [
       "id": "Tolong koreksi kesalahan di karangan ini.",
       "level": "n3",
       "tags": [
-        "sekolah"
+        "pendidikan"
       ]
     }
   ],
@@ -775,7 +775,7 @@ window.vocabN3 = [
       "id": "Saya suka menanam bunga.",
       "level": "n3",
       "tags": [
-        "hobi"
+        "hiburan"
       ]
     }
   ],
@@ -914,7 +914,7 @@ window.vocabN3 = [
       "id": "Sedang berusaha keras untuk ujian.",
       "level": "n3",
       "tags": [
-        "sekolah"
+        "pendidikan"
       ]
     },
     {
@@ -1205,7 +1205,7 @@ window.vocabN3 = [
       "id": "Dua kanji ini mirip.",
       "level": "n3",
       "tags": [
-        "sekolah"
+        "pendidikan"
       ]
     }
   ],
@@ -1486,7 +1486,7 @@ window.vocabN3 = [
       "id": "Ingin mengasah keterampilan memasak.",
       "level": "n3",
       "tags": [
-        "hobi"
+        "hiburan"
       ]
     }
   ],
@@ -1622,7 +1622,7 @@ window.vocabN3 = [
       "id": "Melihat hasil ujian, jadi kecewa.",
       "level": "n3",
       "tags": [
-        "sekolah"
+        "pendidikan"
       ]
     },
     {
@@ -1765,7 +1765,7 @@ window.vocabN3 = [
       "id": "Bisa bahasa Jepang sampai tingkat tertentu.",
       "level": "n3",
       "tags": [
-        "sekolah"
+        "pendidikan"
       ]
     },
     {
@@ -2093,7 +2093,7 @@ window.vocabN3 = [
       "id": "Gurunya keras, tapi baik.",
       "level": "n3",
       "tags": [
-        "sekolah"
+        "pendidikan"
       ]
     },
     {
@@ -2716,7 +2716,7 @@ window.vocabN3 = [
       "id": "Gagal di ujian.",
       "level": "n3",
       "tags": [
-        "sekolah"
+        "pendidikan"
       ]
     }
   ],
@@ -2858,7 +2858,7 @@ window.vocabN3 = [
       "id": "Penjelasan guru mudah dipahami.",
       "level": "n3",
       "tags": [
-        "sekolah"
+        "pendidikan"
       ]
     }
   ],
@@ -2948,7 +2948,7 @@ window.vocabN3 = [
       "id": "Ingin menambah kosakata.",
       "level": "n3",
       "tags": [
-        "sekolah"
+        "pendidikan"
       ]
     },
     {
@@ -3100,7 +3100,7 @@ window.vocabN3 = [
       "id": "Bulan depan mengikuti ujian bahasa Jepang.",
       "level": "n3",
       "tags": [
-        "sekolah"
+        "pendidikan"
       ]
     },
     {
@@ -3194,7 +3194,7 @@ window.vocabN3 = [
       "id": "Mencari arti di kamus.",
       "level": "n3",
       "tags": [
-        "sekolah"
+        "pendidikan"
       ]
     },
     {
@@ -3242,7 +3242,7 @@ window.vocabN3 = [
       "id": "Setiap hari terus berlatih.",
       "level": "n3",
       "tags": [
-        "hobi"
+        "hiburan"
       ]
     },
     {
@@ -3347,7 +3347,7 @@ window.vocabN3 = [
       "id": "Diperingatkan oleh guru.",
       "level": "n3",
       "tags": [
-        "sekolah"
+        "pendidikan"
       ]
     }
   ],
@@ -3486,7 +3486,7 @@ window.vocabN3 = [
       "id": "Tolong bawa barang-barang ini ke lantai dua.",
       "level": "n3",
       "tags": [
-        "kerja"
+        "pekerjaan"
       ]
     },
     {
@@ -3494,7 +3494,7 @@ window.vocabN3 = [
       "id": "Truk yang mengangkut produk dari pabrik sudah datang.",
       "level": "n3",
       "tags": [
-        "kerja"
+        "pekerjaan"
       ]
     }
   ],
@@ -3581,7 +3581,7 @@ window.vocabN3 = [
       "id": "Saya menyerahkan dokumen kepada manajer.",
       "level": "n3",
       "tags": [
-        "kerja"
+        "pekerjaan"
       ]
     },
     {
@@ -3687,7 +3687,7 @@ window.vocabN3 = [
       "id": "Saya mencari kata yang tidak diketahui di kamus.",
       "level": "n3",
       "tags": [
-        "sekolah"
+        "pendidikan"
       ]
     }
   ],
@@ -3872,7 +3872,7 @@ window.vocabN3 = [
       "id": "Daun-daun jatuh dari pohon.",
       "level": "n3",
       "tags": [
-        "alam"
+        "alam-lingkungan"
       ]
     },
     {
@@ -4022,7 +4022,7 @@ window.vocabN3 = [
       "id": "Tolong susun barang-barang dengan rapi di rak.",
       "level": "n3",
       "tags": [
-        "kerja"
+        "pekerjaan"
       ]
     }
   ],
@@ -4062,7 +4062,7 @@ window.vocabN3 = [
       "id": "Ada antrian panjang di depan restoran ramen yang terkenal.",
       "level": "n3",
       "tags": [
-        "makanan"
+        "makanan-minuman"
       ]
     },
     {
@@ -4119,7 +4119,7 @@ window.vocabN3 = [
       "id": "Saya membungkus onigiri dengan nori lalu memakannya.",
       "level": "n3",
       "tags": [
-        "makanan"
+        "makanan-minuman"
       ]
     }
   ],
@@ -4157,7 +4157,7 @@ window.vocabN3 = [
       "id": "Pohon roboh karena topan dan menutup jalan.",
       "level": "n3",
       "tags": [
-        "alam"
+        "alam-lingkungan"
       ]
     },
     {
@@ -4254,7 +4254,7 @@ window.vocabN3 = [
       "id": "Kayu mengapung di air, tapi besi tenggelam.",
       "level": "n3",
       "tags": [
-        "alam"
+        "alam-lingkungan"
       ]
     },
     {
@@ -4262,7 +4262,7 @@ window.vocabN3 = [
       "id": "Awan putih mengapung di langit.",
       "level": "n3",
       "tags": [
-        "alam"
+        "alam-lingkungan"
       ]
     }
   ],
@@ -4304,7 +4304,7 @@ window.vocabN3 = [
       "id": "Saya menyaksikan matahari senja terbenam di balik laut.",
       "level": "n3",
       "tags": [
-        "alam"
+        "alam-lingkungan"
       ]
     },
     {
@@ -4312,7 +4312,7 @@ window.vocabN3 = [
       "id": "Batu yang berat tenggelam di air.",
       "level": "n3",
       "tags": [
-        "alam"
+        "alam-lingkungan"
       ]
     }
   ],
@@ -4355,7 +4355,7 @@ window.vocabN3 = [
       "id": "Saya memindahkan file ke folder yang berbeda.",
       "level": "n3",
       "tags": [
-        "kerja"
+        "pekerjaan"
       ]
     },
     {
@@ -4363,7 +4363,7 @@ window.vocabN3 = [
       "id": "Pekerjaan memindahkan barang ke kantor baru sangat melelahkan.",
       "level": "n3",
       "tags": [
-        "kerja"
+        "pekerjaan"
       ]
     }
   ],
@@ -4404,7 +4404,7 @@ window.vocabN3 = [
       "id": "Bulan depan, saya akan berpindah ke divisi lain.",
       "level": "n3",
       "tags": [
-        "kerja"
+        "pekerjaan"
       ]
     },
     {
@@ -4694,7 +4694,7 @@ window.vocabN3 = [
       "id": "Bola menggelinding menuruni lereng.",
       "level": "n3",
       "tags": [
-        "alam"
+        "alam-lingkungan"
       ]
     },
     {
@@ -4751,7 +4751,7 @@ window.vocabN3 = [
       "id": "Saya menggelindingkan tong berat ke dalam gudang.",
       "level": "n3",
       "tags": [
-        "kerja"
+        "pekerjaan"
       ]
     }
   ],
@@ -4830,7 +4830,7 @@ window.vocabN3 = [
   ],
   "register": "neutral",
   "nuance": "Merasa tertekan karena masalah belum terpecahkan.",
-  "conj_type": "godan-mu",
+  "conj_type": "godan",
   "examples": [
     {
       "jp": "進路について<b>悩んで</b>いる。",
@@ -4845,7 +4845,7 @@ window.vocabN3 = [
       "id": "Setelah lama galau, akhirnya memutuskan menolak.",
       "level": "n3",
       "tags": [
-        "komunikasi"
+        "bahasa-komunikasi"
       ]
     }
   ],
@@ -4871,7 +4871,7 @@ window.vocabN3 = [
   ],
   "register": "neutral",
   "nuance": "Reaksi kaget terhadap sesuatu yang tidak terduga.",
-  "conj_type": "godan-ku",
+  "conj_type": "godan",
   "examples": [
     {
       "jp": "その知らせを聞いて<b>驚いた</b>。",
@@ -4886,7 +4886,7 @@ window.vocabN3 = [
       "id": "Aku terkejut oleh bakatnya.",
       "level": "n3",
       "tags": [
-        "apresiasi"
+        "emosi-positif"
       ]
     }
   ],
@@ -4912,14 +4912,14 @@ window.vocabN3 = [
   ],
   "register": "neutral",
   "nuance": null,
-  "conj_type": "godan-bu",
+  "conj_type": "godan",
   "examples": [
     {
       "jp": "プレゼントをもらって<b>喜んだ</b>。",
       "id": "Dia gembira mendapat hadiah.",
       "level": "n3",
       "tags": [
-        "perasaan"
+        "emosi"
       ]
     },
     {
@@ -4953,7 +4953,7 @@ window.vocabN3 = [
   ],
   "register": "neutral",
   "nuance": null,
-  "conj_type": "godan-mu",
+  "conj_type": "godan",
   "examples": [
     {
       "jp": "友達の死を<b>悲しんだ</b>。",
@@ -4987,14 +4987,14 @@ window.vocabN3 = [
   ],
   "register": "neutral",
   "nuance": "怒る = marah sendiri. 怒られる = dimarahi (pasif). Jangan keliru dengan 起こる (terjadi).",
-  "conj_type": "godan-ru",
+  "conj_type": "godan",
   "examples": [
     {
       "jp": "遅刻して先生に<b>怒られた</b>。",
       "id": "Dimarahi guru karena terlambat.",
       "level": "n3",
       "tags": [
-        "sekolah"
+        "pendidikan"
       ]
     },
     {
@@ -5030,7 +5030,7 @@ window.vocabN3 = [
   ],
   "register": "neutral",
   "nuance": "Intransitif — sesuatu terjadi sendiri. Beda dengan 起こす (menyebabkan).",
-  "conj_type": "godan-ru",
+  "conj_type": "godan",
   "examples": [
     {
       "jp": "事故が<b>起こった</b>。",
@@ -5045,7 +5045,7 @@ window.vocabN3 = [
       "id": "Mengapa masalah seperti ini terjadi?",
       "level": "n3",
       "tags": [
-        "sosial"
+        "hubungan-konsep"
       ]
     }
   ],
@@ -5088,7 +5088,7 @@ window.vocabN3 = [
       "id": "Lelah setelah terus berjalan tiga jam.",
       "level": "n3",
       "tags": [
-        "fisik"
+        "kesehatan"
       ]
     }
   ],
@@ -5114,14 +5114,14 @@ window.vocabN3 = [
   ],
   "register": "neutral",
   "nuance": "Intransitif. Transitif-nya 止める (menghentikan sesuatu).",
-  "conj_type": "godan-ru",
+  "conj_type": "godan",
   "examples": [
     {
       "jp": "電車が急に<b>止まった</b>。",
       "id": "Kereta tiba-tiba berhenti.",
       "level": "n3",
       "tags": [
-        "transportasi"
+        "perjalanan"
       ]
     },
     {
@@ -5129,7 +5129,7 @@ window.vocabN3 = [
       "id": "Jam sedang tidak jalan.",
       "level": "n3",
       "tags": [
-        "benda"
+        "kehidupan-sehari"
       ]
     }
   ],
@@ -5196,14 +5196,14 @@ window.vocabN3 = [
   ],
   "register": "neutral",
   "nuance": "Intransitif. Transitif-nya 減らす.",
-  "conj_type": "godan-ru",
+  "conj_type": "godan",
   "examples": [
     {
       "jp": "残業が<b>減って</b>生活が楽になった。",
       "id": "Kehidupan lebih ringan karena lembur berkurang.",
       "level": "n3",
       "tags": [
-        "kerja"
+        "pekerjaan"
       ]
     },
     {
@@ -5211,7 +5211,7 @@ window.vocabN3 = [
       "id": "Tabungan berkurang.",
       "level": "n3",
       "tags": [
-        "keuangan"
+        "ekonomi-keuangan"
       ]
     }
   ],
@@ -5244,7 +5244,7 @@ window.vocabN3 = [
       "id": "Bunga ini langka di Jepang.",
       "level": "n3",
       "tags": [
-        "alam"
+        "alam-lingkungan"
       ]
     },
     {
@@ -5252,7 +5252,7 @@ window.vocabN3 = [
       "id": "Nama yang tidak biasa ya.",
       "level": "n3",
       "tags": [
-        "sosial"
+        "hubungan-konsep"
       ]
     }
   ],
@@ -5294,7 +5294,7 @@ window.vocabN3 = [
       "id": "Dikatakan musim dingin tahun ini akan berat.",
       "level": "n3",
       "tags": [
-        "cuaca"
+        "alam-lingkungan"
       ]
     }
   ],
@@ -5327,7 +5327,7 @@ window.vocabN3 = [
       "id": "Dia menjelaskan dengan teliti.",
       "level": "n3",
       "tags": [
-        "komunikasi"
+        "bahasa-komunikasi"
       ]
     },
     {
@@ -5335,7 +5335,7 @@ window.vocabN3 = [
       "id": "Berusaha memakai kata-kata yang sopan.",
       "level": "n3",
       "tags": [
-        "tata-krama"
+        "sopan-santun"
       ]
     }
   ],
@@ -5368,7 +5368,7 @@ window.vocabN3 = [
       "id": "Masalah ini rumit, tidak bisa langsung diselesaikan.",
       "level": "n3",
       "tags": [
-        "akademis"
+        "pendidikan"
       ]
     },
     {"jp": "二人の関係は<b>複雑</b>だ。", "id": "Hubungan keduanya rumit.", "level": "n3", "tags": ["karakter"]}
@@ -5402,7 +5402,7 @@ window.vocabN3 = [
       "id": "Kalau jujur, aku kurang suka.",
       "level": "n3",
       "tags": [
-        "komunikasi"
+        "bahasa-komunikasi"
       ]
     },
     {
@@ -5443,7 +5443,7 @@ window.vocabN3 = [
       "id": "Ingin berkontribusi pada masyarakat.",
       "level": "n3",
       "tags": [
-        "sosial"
+        "hubungan-konsep"
       ]
     },
     {"jp": "<b>社会</b>のルールを守ることが大切だ。", "id": "Penting untuk mematuhi aturan masyarakat.", "level": "n3", "tags": ["politik-masyarakat"]}
@@ -5485,7 +5485,7 @@ window.vocabN3 = [
       "id": "Penting memahami perbedaan budaya.",
       "level": "n3",
       "tags": [
-        "komunikasi"
+        "bahasa-komunikasi"
       ]
     }
   ],
@@ -5518,7 +5518,7 @@ window.vocabN3 = [
       "id": "Pertumbuhan ekonomi terus berlanjut.",
       "level": "n3",
       "tags": [
-        "ekonomi"
+        "ekonomi-keuangan"
       ]
     },
     {"jp": "円安が<b>経済</b>に影響を与えている。", "id": "Pelemahan yen berdampak pada perekonomian.", "level": "n3", "tags": ["ekonomi-keuangan"]}
@@ -5553,7 +5553,7 @@ window.vocabN3 = [
       "id": "Masalah lingkungan sangat serius.",
       "level": "n3",
       "tags": [
-        "alam"
+        "alam-lingkungan"
       ]
     },
     {
@@ -5561,7 +5561,7 @@ window.vocabN3 = [
       "id": "Ingin masuk perusahaan dengan lingkungan kerja yang baik.",
       "level": "n3",
       "tags": [
-        "kerja"
+        "pekerjaan"
       ]
     }
   ],
@@ -5594,7 +5594,7 @@ window.vocabN3 = [
       "id": "Mulai tertarik dengan politik.",
       "level": "n3",
       "tags": [
-        "sosial"
+        "hubungan-konsep"
       ]
     },
     {"jp": "<b>政治</b>家は国民のために働くべきだ。", "id": "Politisi seharusnya bekerja untuk rakyat.", "level": "n3", "tags": ["politik-masyarakat"]}
@@ -5628,7 +5628,7 @@ window.vocabN3 = [
       "id": "Saya mengumpulkan perangko.",
       "level": "n3",
       "tags": [
-        "hobi"
+        "hiburan"
       ]
     },
     {
@@ -5636,7 +5636,7 @@ window.vocabN3 = [
       "id": "Butuh waktu untuk mengumpulkan informasi.",
       "level": "n3",
       "tags": [
-        "kerja"
+        "pekerjaan"
       ]
     }
   ],
@@ -5664,14 +5664,14 @@ window.vocabN3 = [
   ],
   "register": "neutral",
   "nuance": "Intransitif. Transitif-nya 集める.",
-  "conj_type": "godan-ru",
+  "conj_type": "godan",
   "examples": [
     {
       "jp": "広場に人が<b>集まった</b>。",
       "id": "Orang-orang berkumpul di alun-alun.",
       "level": "n3",
       "tags": [
-        "sosial"
+        "hubungan-konsep"
       ]
     },
     {"jp": "週末に友達の家に<b>集まった</b>。", "id": "Kami berkumpul di rumah teman akhir pekan.", "level": "n3", "tags": ["pertemanan"]}
@@ -5707,7 +5707,7 @@ window.vocabN3 = [
       "id": "Susah menyampaikan perasaan dengan baik.",
       "level": "n3",
       "tags": [
-        "komunikasi"
+        "bahasa-komunikasi"
       ]
     },
     {
@@ -5748,7 +5748,7 @@ window.vocabN3 = [
       "id": "Dibandingkan tahun lalu, sudah jauh lebih baik.",
       "level": "n3",
       "tags": [
-        "progres"
+        "pikiran-opini"
       ]
     },
     {"jp": "二つの商品を<b>比べて</b>みた。", "id": "Saya mencoba membandingkan dua produk itu.", "level": "n3", "tags": ["keputusan"]}
@@ -5775,7 +5775,7 @@ window.vocabN3 = [
   ],
   "register": "neutral",
   "nuance": null,
-  "conj_type": "godan-bu",
+  "conj_type": "godan",
   "examples": [
     {
       "jp": "どれを<b>選べ</b>ばいいか迷った。",
@@ -5816,14 +5816,14 @@ window.vocabN3 = [
   ],
   "register": "neutral",
   "nuance": "Penting dalam budaya Jepang — menolak sambil tetap sopan.",
-  "conj_type": "godan-ru",
+  "conj_type": "godan",
   "examples": [
     {
       "jp": "誘いを<b>断る</b>のは気まずかった。",
       "id": "Menolak ajakan itu terasa canggung.",
       "level": "n3",
       "tags": [
-        "sosial"
+        "hubungan-konsep"
       ]
     },
     {
@@ -5864,7 +5864,7 @@ window.vocabN3 = [
       "id": "Konfirmasi dulu jadwal, baru balas.",
       "level": "n3",
       "tags": [
-        "kerja"
+        "pekerjaan"
       ]
     },
     {
@@ -5872,7 +5872,7 @@ window.vocabN3 = [
       "id": "Sudah cek emailnya?",
       "level": "n3",
       "tags": [
-        "komunikasi"
+        "bahasa-komunikasi"
       ]
     }
   ],
@@ -5905,7 +5905,7 @@ window.vocabN3 = [
       "id": "Persiapan ujian dilakukan sungguh-sungguh.",
       "level": "n3",
       "tags": [
-        "belajar"
+        "pendidikan"
       ]
     },
     {
@@ -5946,7 +5946,7 @@ window.vocabN3 = [
       "id": "Meminjam buku dengan memanfaatkan perpustakaan.",
       "level": "n3",
       "tags": [
-        "belajar"
+        "pendidikan"
       ]
     },
     {
@@ -5995,7 +5995,7 @@ window.vocabN3 = [
       "id": "Silakan ikut serta.",
       "level": "n3",
       "tags": [
-        "undangan"
+        "sopan-santun"
       ]
     }
   ],
@@ -6064,7 +6064,7 @@ window.vocabN3 = [
       "id": "Sebagai hasil usaha keras, lulus.",
       "level": "n3",
       "tags": [
-        "belajar"
+        "pendidikan"
       ]
     },
     {
@@ -6072,7 +6072,7 @@ window.vocabN3 = [
       "id": "Hasil tes sudah keluar.",
       "level": "n3",
       "tags": [
-        "belajar"
+        "pendidikan"
       ]
     }
   ],
@@ -6107,7 +6107,7 @@ window.vocabN3 = [
       "id": "Tolong ajarkan arti kata ini.",
       "level": "n3",
       "tags": [
-        "belajar"
+        "pendidikan"
       ]
     },
     {
@@ -6216,7 +6216,7 @@ window.vocabN3 = [
       "id": "Memikirkan cara menyelesaikan masalah.",
       "level": "n3",
       "tags": [
-        "kerja"
+        "pekerjaan"
       ]
     },
     {"jp": "もっと効率的な<b>方法</b>があるはずだ。", "id": "Pasti ada cara yang lebih efisien.", "level": "n3", "tags": ["pikiran-opini"]}
@@ -6291,7 +6291,7 @@ window.vocabN3 = [
       "id": "Masalah lingkungan sangat serius.",
       "level": "n3",
       "tags": [
-        "sosial"
+        "hubungan-konsep"
       ]
     },
     {
@@ -6299,7 +6299,7 @@ window.vocabN3 = [
       "id": "Tolong selesaikan soal ini.",
       "level": "n3",
       "tags": [
-        "akademis"
+        "pendidikan"
       ]
     }
   ],
@@ -6373,7 +6373,7 @@ window.vocabN3 = [
       "id": "Presentasinya sukses.",
       "level": "n3",
       "tags": [
-        "kerja"
+        "pekerjaan"
       ]
     },
     {
@@ -6459,7 +6459,7 @@ window.vocabN3 = [
       "id": "PR sudah dikerjakan dengan bener?",
       "level": "n3",
       "tags": [
-        "sekolah"
+        "pendidikan"
       ]
     },
     {
@@ -6467,7 +6467,7 @@ window.vocabN3 = [
       "id": "Dengerin baik-baik ya.",
       "level": "n3",
       "tags": [
-        "komunikasi"
+        "bahasa-komunikasi"
       ]
     }
   ],
@@ -6541,7 +6541,7 @@ window.vocabN3 = [
         "ekspresi"
       ]
     },
-    {"jp": "忙しいほうが、<b>むしろ</b>充実感がある。", "id": "Justru saat sibuk, ada rasa kepuasan lebih.", "level": "n3", "tags": ["perasaan"]}
+    {"jp": "忙しいほうが、<b>むしろ</b>充実感がある。", "id": "Justru saat sibuk, ada rasa kepuasan lebih.", "level": "n3", "tags": ["emosi"]}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -6736,7 +6736,7 @@ window.vocabN3 = [
       "id": "Di antara masakan Jepang, ramen paling kusuka.",
       "level": "n3",
       "tags": [
-        "makanan"
+        "makanan-minuman"
       ]
     },
     {
@@ -6777,7 +6777,7 @@ window.vocabN3 = [
       "id": "Setidaknya belajar 1 jam per hari.",
       "level": "n3",
       "tags": [
-        "belajar"
+        "pendidikan"
       ]
     },
     {
@@ -9146,7 +9146,7 @@ window.vocabN3 = [
   "id": "vg-n3-00294",
   "word": "喜ばせる",
   "reading": "よろこばせる",
-  "romaji": "yorokobаseru",
+  "romaji": "yorokobaseru",
   "meaning_id": "membuat senang, menyenangkan hati orang lain",
   "meaning_en": "to please someone, to make someone happy",
   "jlpt": "n3",
@@ -14531,7 +14531,7 @@ window.vocabN3 = [
   "meaning_id": "cukup banyak, lumayan, terbilang",
   "meaning_en": "considerably, fairly, quite, rather",
   "jlpt": "n3",
-  "pos": "adverb-degree",
+  "pos": "adverb",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -14699,7 +14699,7 @@ window.vocabN3 = [
   "meaning_id": "semakin, makin, kian",
   "meaning_en": "more and more, increasingly, all the more",
   "jlpt": "n3",
-  "pos": "adverb-degree",
+  "pos": "adverb",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,

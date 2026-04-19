@@ -3,14 +3,12 @@
 //  Merge semua level → window.vocabDB + window.vocabIdx
 //  Load SETELAH semua vocab-nX.js dan book-*.js
 //
-//  ACTIVE sources (arsitektur unified v15.6.0):
-//    vocabN5  — vocab-n5.js  (711 entries)
+//  ACTIVE sources (v15.13.1):
+//    vocabN5  — vocab-n5.js  (725 entries)
 //    vocabN4  — vocab-n4.js  (692 entries)
-//    vocabN3  — vocab-n3.js  (70 entries)
-//
-//  SEED DATA (partial, not production-complete):
-//    vocabN2  — vocab-n2.js  (50 seed entries)
-//    vocabN1  — vocab-n1.js  (20 seed entries)
+//    vocabN3  — vocab-n3.js  (615 entries)
+//    vocabN2  — vocab-n2.js  (260 entries)
+//    vocabN1  — vocab-n1.js  (130 entries)
 //
 //  BOOK INDEX sources (bukan entries — hanya referensi id):
 //    window.bookMinna1       — book-minna-1.js
@@ -24,11 +22,11 @@
 
 // ── Merge semua level ──────────────────────────────────
 window.vocabDB = [
-  ...(window.vocabN5 || []),  // N5 unified — 711 entries (RESTRUKTURISASI-B v14.9.0)
-  ...(window.vocabN4 || []),  // N4 unified — 692 entries (RESTRUKTURISASI-B v14.9.0)
-  ...(window.vocabN3 || []),  // N3 — ACTIVATED v14.27.7 (70 entries)
-  // ...(window.vocabN2 || []),  // N2 — tunggu data (placeholder)
-  // ...(window.vocabN1 || []),  // N1 — tunggu data (placeholder)
+  ...(window.vocabN5 || []),  // N5 — 725 entries
+  ...(window.vocabN4 || []),  // N4 — 692 entries
+  ...(window.vocabN3 || []),  // N3 — 615 entries
+  ...(window.vocabN2 || []),  // N2 — 260 entries
+  ...(window.vocabN1 || []),  // N1 — 130 entries
 ].filter(Boolean);  // strip any null/undefined entries
 
 // ── Helpers ───────────────────────────────────────────

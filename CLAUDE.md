@@ -44,39 +44,28 @@ A vanilla JS **hybrid** PWA for learning Japanese, targeting Indonesian speakers
 
 ### What still needs doing (priority order)
 
-#### IMMEDIATE — Wire Kebun Mastery
-Draft complete at `public/js/kebun-mastery.js`. Wire-up checklist:
-```
-[ ] Add <script src="./js/kebun-mastery.js"></script> to index.html (after detail.js)
-[ ] Add './js/kebun-mastery.js' to SW ASSETS in sw.js
-[ ] Paste docs/kebun-mastery/kebun-snippet.html into #statsPage (before #weakPointsSection)
-[ ] Append docs/kebun-mastery/kebun-styles.css to app.css
-[ ] Call window.initKebunMastery() from _analyticsOnTabShow in analytics.js
-```
+#### ✅ Already fixed (v15.12.x–v15.13.x)
+- Kebun Mastery garden — live v15.12.4
+- Quiz empty states (7 modes) — fixed v15.12.5
+- Supabase 3 critical bugs — fixed v15.12.6
+- Settings bindings (clearData, resetConvo) — fixed v15.12.7
+- Minna no Nihongo 1 & 2 lens — live v15.12.8
+- Onboarding level pre-selection — fixed v15.12.7
+- vocabDB now includes N2 + N1 — v15.13.2
 
-#### FRONTEND — Quiz empty states
-7 quiz modes show `<div class="fill-coming-soon">` (blank screen) when no questions found.
-Files: `fillin.js` (×2), `conjugation.js`, `translation.js`, `errorfind.js`, `multichoice.js`, `quiz-vocab.js`
-Fix: proper empty state UI with helpful message + action button.
+#### CONTENT — Ongoing population (agent batches)
+- vocab N3: 615/3,750 entries
+- vocab N2: 260/6,000 entries
+- vocab N1: 130/10,000 entries
+- grammar N3: 46/180 entries
+- grammar N2: 250 entries ✅ (target met, can expand)
+- grammar N1: 140/250 entries
 
-#### BACKEND — Supabase sync broken (3 critical bugs)
-All marked with `// ⚠️ BACKEND BUG` in `supabase-client.js`:
-
-1. **`sb.auth.getUser()` called synchronously** in 6 places — returns Promise, not resolved.
-   Result: `user_id` always `undefined` → all Supabase writes silently fail RLS.
-   Fix: make those functions `async`, add `await sb.auth.getUser()`.
-
-2. **`bulkSync()` receives object, calls `.map()`** → TypeError.
-   `nn_fsrs_cards` is `{id: entry}`, not array.
-   Fix: `Object.entries(cards).map(([id, entry]) => ({ user_id, item_id: id, ...entry.card }))`.
-
-3. **`sbClient.supabaseKey` doesn't exist in Supabase v2** — always `''`.
-   Fix: export constants directly from the IIFE.
-
-#### INFRASTRUCTURE (human tasks — Nugget must do)
-- **Cloudflare Worker:** `cd workers && npx wrangler secret put GROQ_API_KEY` + `GEMINI_API_KEY` → `npx wrangler deploy`. See `SETUP.md §2`.
-- **Google OAuth:** Supabase Dashboard → Authentication → Providers → Google. See `SETUP.md §3`.
-- **Minna no Nihongo lenses:** ✅ Live — 25 lessons each, grammar_ids mapped, chapter pill navigation working.
+#### INFRASTRUCTURE (manual — Nugget must do)
+- **Supabase Auth URL:** Dashboard → Auth → URL Config → Site URL = `https://nugget-nihongo.pages.dev`
+- **Cloudflare Worker:** `cd workers && npx wrangler secret put GROQ_API_KEY` + deploy. See `SETUP.md §2`.
+- **Google OAuth:** Supabase Dashboard → Auth → Providers → Google. See `SETUP.md §3`.
+- **GitHub PAT:** Rotate `ghp_tnQKox...` — appeared in chat multiple times.
 
 ---
 
@@ -155,7 +144,7 @@ public/                    ← Cloudflare Pages deploy root
     vocab-detail.js        ← Vocab detail modal
     quiz.js + quiz-*.js    ← 9 quiz modes
     ai-tutor.js            ← Sensei Nugget chat
-    supabase-client.js     ← Auth + SRS sync (has ⚠️ BACKEND BUG markers)
+    supabase-client.js     ← Auth + SRS sync (3 critical bugs fixed v15.12.6)
     kebun-mastery.js       ← DRAFT — not wired yet
     app.js                 ← DOMContentLoaded orchestrator — ALWAYS LAST
   data/

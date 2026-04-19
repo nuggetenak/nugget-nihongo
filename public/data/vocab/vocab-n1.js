@@ -3068,7 +3068,7 @@ window.vocabN1 = [
   "word": "試行錯誤",
   "reading": "しこうさくご",
   "romaji": "shikou sakugo",
-  "meaning_id": "trial and error, mencoba berulang kali sambil belajar dari setiap kegagalan",
+  "meaning_id": "coba-coba sambil belajar dari kesalahan",
   "meaning_en": "trial and error",
   "jlpt": "n1",
   "pos": "noun-suru",
