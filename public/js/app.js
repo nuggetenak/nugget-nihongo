@@ -47,6 +47,9 @@ document.addEventListener('DOMContentLoaded', () => {
   if (window.initSettingsPage)  window.initSettingsPage();  // pages/settings.js
   if (window.initAboutPage)     window.initAboutPage();     // pages/about.js
   if (window.initTweaks)        window.initTweaks();        // tweaks.js
+
+  // Restore tab from URL hash (stay on page after refresh)
+  if (window.restoreTabFromHash) window.restoreTabFromHash();
 });
 
 // ── Tab switch router ───────────────────────────────────────────
