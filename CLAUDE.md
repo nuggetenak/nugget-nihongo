@@ -28,7 +28,7 @@ A vanilla JS **hybrid** PWA for learning Japanese, targeting Indonesian speakers
 ### What works
 - **Grammar DB:** N5 (94), N4 (92), N3 (103), N2 (80 est), N1 (60 est) entries
 - **Vocab DB:** N5 (725), N4 (692), N3 (405), N2 (140), N1 (70) entries
-- **Grammar lenses:** Soumatome N3 (132), N4 (102); Irodori A1 (61), A2-1 (65), A2-2 (62)
+- **Grammar lenses:** Soumatome N3 (132), N4 (102); Irodori A1 (61), A2-1 (65), A2-2 (62); Minna 1 (25 lessons), Minna 2 (25 lessons)
 - **Browse tab:** Peel cards with accordion reveal, hold=peek, tap=reveal; ⋯ detail modal; ☆ bookmark; filter/search/super-cats
 - **Detail modal:** Bottom-sheet modal with full grammar info, examples, breakdown toggle (CSS §31)
 - **Hub navigation:** JLPT door, Buku (book) door, 語 Jelajah Bebas door; book accordion; chapter pills when in book view
@@ -76,7 +76,7 @@ All marked with `// ⚠️ BACKEND BUG` in `supabase-client.js`:
 #### INFRASTRUCTURE (human tasks — Nugget must do)
 - **Cloudflare Worker:** `cd workers && npx wrangler secret put GROQ_API_KEY` + `GEMINI_API_KEY` → `npx wrangler deploy`. See `SETUP.md §2`.
 - **Google OAuth:** Supabase Dashboard → Authentication → Providers → Google. See `SETUP.md §3`.
-- **Minna no Nihongo lenses:** `book-minna-1.js` + `book-minna-2.js` empty. Blocked — needs PDF.
+- **Minna no Nihongo lenses:** ✅ Live — 25 lessons each, grammar_ids mapped, chapter pill navigation working.
 
 ---
 
@@ -214,10 +214,20 @@ curl -s https://nugget-nihongo.pages.dev/js/core/version.js
 ## TESTING
 
 ```bash
+# Structural validator — run before every commit (must be 0 FAIL)
 node tests/run.js
-# Target: 10,550+ PASS, 0 FAIL
+
+# Content quality checker — run before merging new content
+node tests/quality.js                  # full report
+node tests/quality.js --new-only       # only v15 entries (CI uses this)
+node tests/quality.js --errors-only    # hide warnings
+node tests/quality.js --level n3       # single JLPT level
+node tests/quality.js --fix            # auto-correct scriptable issues in-place
+node tests/quality.js --json           # machine-readable output
+# Target: run.js 0 FAIL | quality.js 0 CRIT/ERROR (--new-only)
 ```
-Covers: data schema, ID format, cat values, version consistency, persona drift, conjugation.
+
+Both run automatically on every push to `develop` via GitHub Actions (`.github/workflows/validate.yml`).
 
 ---
 

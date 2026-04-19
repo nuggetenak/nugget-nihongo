@@ -23,6 +23,11 @@ jobs:
       - name: Run test suite
         run: node tests/run.js
 
+      - name: Run quality checker (new entries only)
+        run: node tests/quality.js --new-only --errors-only
+        # Checks CRIT + ERROR on v15 entries. Exits 1 if any blockers found.
+        # Run locally with --legacy or --level n3 for deeper investigation.
+
       - name: Check version sync (sw.js vs version.js)
         run: |
           node -e "
