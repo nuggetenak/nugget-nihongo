@@ -220,7 +220,7 @@ assert(grammarDB.length >= 349, `grammarDB count: ${grammarDB.length} (expected 
 // ── VocabDB merge ──
 console.log('── VocabDB merge ──');
 const vocabDB = global.vocabDB || [];
-assert(vocabDB.length >= 1600, `vocabDB merged count: ${vocabDB.length} (expected ≥1600 for N5+N4+N3)`);
+assert(vocabDB.length >= 2400, `vocabDB merged count: ${vocabDB.length} (expected ≥2400 for N5+N4+N3+N2+N1)`);
 
 // ── Version sync ──
 console.log('── Version sync ──');

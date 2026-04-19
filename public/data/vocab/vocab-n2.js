@@ -757,9 +757,9 @@ window.vocabN2 = [
   "nuance": "Dipakai untuk menyebut kejadian atau gejala yang dapat diamati, sering dalam konteks ilmiah atau analitis; berbeda dari 出来事 yang lebih berarti 'peristiwa konkret'.",
   "conj_type": null,
   "examples": [
-    {"jp":"この現象はまだ科学的に解明されていない。","id":"Fenomena ini belum dijelaskan secara ilmiah.","level":"n2","tags":["ilmu-pengetahuan"]},
-    {"jp":"少子化は深刻な社会現象だ。","id":"Penurunan angka kelahiran adalah fenomena sosial yang serius.","level":"n2","tags":["politik-masyarakat"]},
-    {"jp":"自然現象を観察することで多くを学べる。","id":"Banyak hal yang bisa dipelajari dengan mengamati fenomena alam.","level":"n2","tags":["alam-lingkungan"]}
+    {"jp":"この現象はまだ科学的に解明されていない。","id":"Fenomena ini belum dijelaskan secara ilmiah.","level":"n2","tags": ["ilmu-pengetahuan"]},
+    {"jp":"少子化は深刻な社会現象だ。","id":"Penurunan angka kelahiran adalah fenomena sosial yang serius.","level":"n2","tags": ["politik-masyarakat"]},
+    {"jp":"自然現象を観察することで多くを学べる。","id":"Banyak hal yang bisa dipelajari dengan mengamati fenomena alam.","level":"n2","tags": ["alam-lingkungan"]}
   ],
   "synonyms":[], "antonyms":[], "see_also":[], "provenance":"jlpt-corpus", "added_v":"v15"
 },
@@ -774,9 +774,9 @@ window.vocabN2 = [
   "nuance": "Merujuk pada pola atau arah yang cenderung terjadi berulang; dipakai dengan 〜がある atau 〜にある untuk menyatakan 'ada kecenderungan' dalam laporan dan esai.",
   "conj_type": null,
   "examples": [
-    {"jp":"最近、若者の読書離れが進む傾向がある。","id":"Belakangan ini, ada kecenderungan anak muda makin jauh dari kebiasaan membaca.","level":"n2","tags":["pendidikan"]},
-    {"jp":"価格が下がる傾向にある。","id":"Harga cenderung mengalami penurunan.","level":"n2","tags":["ekonomi-keuangan"]},
-    {"jp":"このデータは増加傾向を示している。","id":"Data ini menunjukkan tren peningkatan.","level":"n2","tags":["ilmu-pengetahuan"]}
+    {"jp":"最近、若者の読書離れが進む傾向がある。","id":"Belakangan ini, ada kecenderungan anak muda makin jauh dari kebiasaan membaca.","level":"n2","tags": ["pendidikan"]},
+    {"jp":"価格が下がる傾向にある。","id":"Harga cenderung mengalami penurunan.","level":"n2","tags": ["ekonomi-keuangan"]},
+    {"jp":"このデータは増加傾向を示している。","id":"Data ini menunjukkan tren peningkatan.","level":"n2","tags": ["ilmu-pengetahuan"]}
   ],
   "synonyms":[], "antonyms":[], "see_also":[], "provenance":"jlpt-corpus", "added_v":"v15"
 },
@@ -791,9 +791,9 @@ window.vocabN2 = [
   "nuance": "Berbeda dari 問題 (masalah umum) — 課題 menekankan sesuatu yang perlu ditangani secara aktif, baik berupa tugas akademis maupun isu kebijakan.",
   "conj_type": null,
   "examples": [
-    {"jp":"環境問題は現代社会の重要な課題だ。","id":"Masalah lingkungan adalah isu penting masyarakat modern.","level":"n2","tags":["alam-lingkungan"]},
-    {"jp":"先生から課題が出された。","id":"Guru memberikan tugas kepada kami.","level":"n2","tags":["pendidikan"]},
-    {"jp":"この会社の課題はコスト削減だ。","id":"Tantangan perusahaan ini adalah pengurangan biaya.","level":"n2","tags":["bisnis"]}
+    {"jp":"環境問題は現代社会の重要な課題だ。","id":"Masalah lingkungan adalah isu penting masyarakat modern.","level":"n2","tags": ["alam-lingkungan"]},
+    {"jp":"先生から課題が出された。","id":"Guru memberikan tugas kepada kami.","level":"n2","tags": ["pendidikan"]},
+    {"jp":"この会社の課題はコスト削減だ。","id":"Tantangan perusahaan ini adalah pengurangan biaya.","level":"n2","tags": ["bisnis"]}
   ],
   "synonyms":[], "antonyms":[], "see_also":[], "provenance":"jlpt-corpus", "added_v":"v15"
 },
@@ -808,9 +808,9 @@ window.vocabN2 = [
   "nuance": "Menekankan 'cara/alat yang digunakan untuk mencapai tujuan'; frasa 手段を選ばない berarti 'tidak peduli cara apapun yang ditempuh' dan punya konotasi negatif.",
   "conj_type": null,
   "examples": [
-    {"jp":"目的のためには手段を選ばないつもりだ。","id":"Dia bertekad tidak memilih cara apapun demi tujuannya.","level":"n2","tags":["keputusan"]},
-    {"jp":"交渉が唯一の平和的手段だ。","id":"Negosiasi adalah satu-satunya cara damai.","level":"n2","tags":["hukum-aturan"]},
-    {"jp":"連絡手段としてメールを使った。","id":"Kami menggunakan email sebagai sarana komunikasi.","level":"n2","tags":["bisnis"]}
+    {"jp":"目的のためには手段を選ばないつもりだ。","id":"Dia bertekad tidak memilih cara apapun demi tujuannya.","level":"n2","tags": ["keputusan"]},
+    {"jp":"交渉が唯一の平和的手段だ。","id":"Negosiasi adalah satu-satunya cara damai.","level":"n2","tags": ["hukum-aturan"]},
+    {"jp":"連絡手段としてメールを使った。","id":"Kami menggunakan email sebagai sarana komunikasi.","level":"n2","tags": ["bisnis"]}
   ],
   "synonyms":[], "antonyms":[], "see_also":[], "provenance":"jlpt-corpus", "added_v":"v15"
 },
@@ -825,9 +825,9 @@ window.vocabN2 = [
   "nuance": "Dipakai dalam konteks resmi dan teknis untuk tolak ukur penilaian atau standar yang ditetapkan; 基準を満たす berarti 'memenuhi standar'.",
   "conj_type": null,
   "examples": [
-    {"jp":"この製品は安全基準を満たしている。","id":"Produk ini memenuhi standar keselamatan.","level":"n2","tags":["hukum-aturan"]},
-    {"jp":"採用の基準は何ですか。","id":"Apa kriteria untuk penerimaan karyawan?","level":"n2","tags":["bisnis"]},
-    {"jp":"評価基準が不明確だと公平性が失われる。","id":"Jika kriteria penilaian tidak jelas, keadilan bisa hilang.","level":"n2","tags":["pendidikan"]}
+    {"jp":"この製品は安全基準を満たしている。","id":"Produk ini memenuhi standar keselamatan.","level":"n2","tags": ["hukum-aturan"]},
+    {"jp":"採用の基準は何ですか。","id":"Apa kriteria untuk penerimaan karyawan?","level":"n2","tags": ["bisnis"]},
+    {"jp":"評価基準が不明確だと公平性が失われる。","id":"Jika kriteria penilaian tidak jelas, keadilan bisa hilang.","level":"n2","tags": ["pendidikan"]}
   ],
   "synonyms":[], "antonyms":[], "see_also":[], "provenance":"jlpt-corpus", "added_v":"v15"
 },
@@ -842,9 +842,9 @@ window.vocabN2 = [
   "nuance": "Bisa merujuk pada syarat yang harus dipenuhi (条件を満たす) maupun kondisi/keadaan lingkungan (気象条件); lebih luas cakupannya daripada 基準.",
   "conj_type": null,
   "examples": [
-    {"jp":"この仕事に応募する条件は大卒以上だ。","id":"Syarat untuk melamar pekerjaan ini adalah minimal lulusan universitas.","level":"n2","tags":["pekerjaan"]},
-    {"jp":"悪天候の条件のもとで試合が行われた。","id":"Pertandingan berlangsung dalam kondisi cuaca buruk.","level":"n2","tags":["olahraga"]},
-    {"jp":"契約条件を確認してから署名してください。","id":"Periksa syarat kontrak sebelum menandatangani.","level":"n2","tags":["hukum-aturan"]}
+    {"jp":"この仕事に応募する条件は大卒以上だ。","id":"Syarat untuk melamar pekerjaan ini adalah minimal lulusan universitas.","level":"n2","tags": ["pekerjaan"]},
+    {"jp":"悪天候の条件のもとで試合が行われた。","id":"Pertandingan berlangsung dalam kondisi cuaca buruk.","level":"n2","tags": ["olahraga"]},
+    {"jp":"契約条件を確認してから署名してください。","id":"Periksa syarat kontrak sebelum menandatangani.","level":"n2","tags": ["hukum-aturan"]}
   ],
   "synonyms":[], "antonyms":[], "see_also":[], "provenance":"jlpt-corpus", "added_v":"v15"
 },
@@ -859,9 +859,9 @@ window.vocabN2 = [
   "nuance": "Dapat berarti latar fisik (latar belakang foto/lukisan) maupun latar konteks/riwayat di balik suatu peristiwa; sering muncul dalam analisis dan penulisan akademis.",
   "conj_type": null,
   "examples": [
-    {"jp":"この問題の背景を理解することが重要だ。","id":"Penting untuk memahami latar belakang masalah ini.","level":"n2","tags":["ilmu-pengetahuan"]},
-    {"jp":"彼の行動には複雑な背景がある。","id":"Di balik tindakannya terdapat latar belakang yang rumit.","level":"n2","tags":["pikiran-opini"]},
-    {"jp":"白い背景に赤い花が映えている。","id":"Bunga merah tampak menonjol di atas latar belakang putih.","level":"n2","tags":["seni-budaya"]}
+    {"jp":"この問題の背景を理解することが重要だ。","id":"Penting untuk memahami latar belakang masalah ini.","level":"n2","tags": ["ilmu-pengetahuan"]},
+    {"jp":"彼の行動には複雑な背景がある。","id":"Di balik tindakannya terdapat latar belakang yang rumit.","level":"n2","tags": ["pikiran-opini"]},
+    {"jp":"白い背景に赤い花が映えている。","id":"Bunga merah tampak menonjol di atas latar belakang putih.","level":"n2","tags": ["seni-budaya"]}
   ],
   "synonyms":[], "antonyms":[], "see_also":[], "provenance":"jlpt-corpus", "added_v":"v15"
 },
@@ -876,9 +876,9 @@ window.vocabN2 = [
   "nuance": "Menekankan adanya bukti atau alasan yang kuat yang mendasari suatu klaim; 根拠がない berarti 'tidak berdasar / tidak berdasarkan fakta', sering dipakai dalam debat dan penulisan ilmiah.",
   "conj_type": null,
   "examples": [
-    {"jp":"その主張には根拠がない。","id":"Klaim tersebut tidak memiliki dasar yang kuat.","level":"n2","tags":["bahasa-komunikasi"]},
-    {"jp":"発言の根拠を示してください。","id":"Tolong tunjukkan dasar/bukti dari pernyataan Anda.","level":"n2","tags":["hukum-aturan"]},
-    {"jp":"科学的な根拠に基づいて判断すべきだ。","id":"Penilaian harus didasarkan pada bukti ilmiah.","level":"n2","tags":["ilmu-pengetahuan"]}
+    {"jp":"その主張には根拠がない。","id":"Klaim tersebut tidak memiliki dasar yang kuat.","level":"n2","tags": ["bahasa-komunikasi"]},
+    {"jp":"発言の根拠を示してください。","id":"Tolong tunjukkan dasar/bukti dari pernyataan Anda.","level":"n2","tags": ["hukum-aturan"]},
+    {"jp":"科学的な根拠に基づいて判断すべきだ。","id":"Penilaian harus didasarkan pada bukti ilmiah.","level":"n2","tags": ["ilmu-pengetahuan"]}
   ],
   "synonyms":[], "antonyms":[], "see_also":[], "provenance":"jlpt-corpus", "added_v":"v15"
 },
@@ -893,9 +893,9 @@ window.vocabN2 = [
   "nuance": "Lebih formal dari 見方 atau 立場; 〜の観点から は frasa khas esai akademis yang berarti 'dari sudut pandang ~'; cocok untuk argumen tertulis.",
   "conj_type": null,
   "examples": [
-    {"jp":"経済的観点からこの政策を分析する。","id":"Kami menganalisis kebijakan ini dari sudut pandang ekonomi.","level":"n2","tags":["ekonomi-keuangan"]},
-    {"jp":"環境の観点から見ると、この計画は問題がある。","id":"Dilihat dari sudut pandang lingkungan, rencana ini bermasalah.","level":"n2","tags":["alam-lingkungan"]},
-    {"jp":"異なる観点からの意見を集めた。","id":"Kami mengumpulkan pendapat dari berbagai sudut pandang.","level":"n2","tags":["bahasa-komunikasi"]}
+    {"jp":"経済的観点からこの政策を分析する。","id":"Kami menganalisis kebijakan ini dari sudut pandang ekonomi.","level":"n2","tags": ["ekonomi-keuangan"]},
+    {"jp":"環境の観点から見ると、この計画は問題がある。","id":"Dilihat dari sudut pandang lingkungan, rencana ini bermasalah.","level":"n2","tags": ["alam-lingkungan"]},
+    {"jp":"異なる観点からの意見を集めた。","id":"Kami mengumpulkan pendapat dari berbagai sudut pandang.","level":"n2","tags": ["bahasa-komunikasi"]}
   ],
   "synonyms":[], "antonyms":[], "see_also":[], "provenance":"jlpt-corpus", "added_v":"v15"
 },
@@ -910,9 +910,9 @@ window.vocabN2 = [
   "nuance": "Merujuk pada arah atau kebijakan yang telah diputuskan dan ditetapkan oleh suatu pihak (perusahaan, pemerintah, dsb.); 方針を決める = 'menetapkan kebijakan/arah'.",
   "conj_type": null,
   "examples": [
-    {"jp":"会社の経営方針が変わった。","id":"Kebijakan manajemen perusahaan telah berubah.","level":"n2","tags":["bisnis"]},
-    {"jp":"政府の教育方針に賛否両論がある。","id":"Kebijakan pendidikan pemerintah menuai pro dan kontra.","level":"n2","tags":["politik-masyarakat"]},
-    {"jp":"新しい方針に沿って業務を進めた。","id":"Pekerjaan dilakukan sesuai dengan kebijakan baru.","level":"n2","tags":["pekerjaan"]}
+    {"jp":"会社の経営方針が変わった。","id":"Kebijakan manajemen perusahaan telah berubah.","level":"n2","tags": ["bisnis"]},
+    {"jp":"政府の教育方針に賛否両論がある。","id":"Kebijakan pendidikan pemerintah menuai pro dan kontra.","level":"n2","tags": ["politik-masyarakat"]},
+    {"jp":"新しい方針に沿って業務を進めた。","id":"Pekerjaan dilakukan sesuai dengan kebijakan baru.","level":"n2","tags": ["pekerjaan"]}
   ],
   "synonyms":[], "antonyms":[], "see_also":[], "provenance":"jlpt-corpus", "added_v":"v15"
 },
@@ -927,9 +927,9 @@ window.vocabN2 = [
   "nuance": "Menunjukkan urutan bertahap dalam suatu proses; 〜の段階で berarti 'pada tahap ~'; berbeda dari ステップ yang lebih kasual/kosa kata serapan.",
   "conj_type": null,
   "examples": [
-    {"jp":"この計画は三つの段階に分かれている。","id":"Rencana ini dibagi menjadi tiga tahap.","level":"n2","tags":["bisnis"]},
-    {"jp":"現段階ではまだ結論が出ていない。","id":"Pada tahap ini, belum ada kesimpulan.","level":"n2","tags":["ilmu-pengetahuan"]},
-    {"jp":"準備段階で問題が発生した。","id":"Masalah muncul pada tahap persiapan.","level":"n2","tags":["pekerjaan"]}
+    {"jp":"この計画は三つの段階に分かれている。","id":"Rencana ini dibagi menjadi tiga tahap.","level":"n2","tags": ["bisnis"]},
+    {"jp":"現段階ではまだ結論が出ていない。","id":"Pada tahap ini, belum ada kesimpulan.","level":"n2","tags": ["ilmu-pengetahuan"]},
+    {"jp":"準備段階で問題が発生した。","id":"Masalah muncul pada tahap persiapan.","level":"n2","tags": ["pekerjaan"]}
   ],
   "synonyms":[], "antonyms":[], "see_also":[], "provenance":"jlpt-corpus", "added_v":"v15"
 },
@@ -944,9 +944,9 @@ window.vocabN2 = [
   "nuance": "Menekankan jalur/rangkaian yang dilalui menuju hasil akhir; 〜の過程で = 'dalam proses ~'; berbeda dari 結果 (hasil akhir) — 過程 fokus pada perjalanannya.",
   "conj_type": null,
   "examples": [
-    {"jp":"成長の過程で多くの失敗を経験した。","id":"Dalam proses tumbuh, banyak kegagalan yang dialami.","level":"n2","tags":["pendidikan"]},
-    {"jp":"製品開発の過程を記録した。","id":"Proses pengembangan produk telah didokumentasikan.","level":"n2","tags":["bisnis"]},
-    {"jp":"思考の過程を説明してください。","id":"Tolong jelaskan proses pemikirannya.","level":"n2","tags":["ilmu-pengetahuan"]}
+    {"jp":"成長の過程で多くの失敗を経験した。","id":"Dalam proses tumbuh, banyak kegagalan yang dialami.","level":"n2","tags": ["pendidikan"]},
+    {"jp":"製品開発の過程を記録した。","id":"Proses pengembangan produk telah didokumentasikan.","level":"n2","tags": ["bisnis"]},
+    {"jp":"思考の過程を説明してください。","id":"Tolong jelaskan proses pemikirannya.","level":"n2","tags": ["ilmu-pengetahuan"]}
   ],
   "synonyms":[], "antonyms":[], "see_also":[], "provenance":"jlpt-corpus", "added_v":"v15"
 },
@@ -961,9 +961,9 @@ window.vocabN2 = [
   "nuance": "Dipakai untuk menceritakan urutan kejadian dari awal hingga saat ini, terutama dalam laporan formal atau permintaan penjelasan; 経緯を説明する = 'menjelaskan kronologinya'.",
   "conj_type": null,
   "examples": [
-    {"jp":"事故の経緯を詳しく説明してください。","id":"Tolong jelaskan kronologi kejadian kecelakaan secara rinci.","level":"n2","tags":["hukum-aturan"]},
-    {"jp":"この決定に至った経緯を報告した。","id":"Kami melaporkan kronologi bagaimana keputusan ini diambil.","level":"n2","tags":["bisnis"]},
-    {"jp":"二人の出会いの経緯が興味深い。","id":"Kronologi pertemuan mereka berdua sangat menarik.","level":"n2","tags":["bahasa-komunikasi"]}
+    {"jp":"事故の経緯を詳しく説明してください。","id":"Tolong jelaskan kronologi kejadian kecelakaan secara rinci.","level":"n2","tags": ["hukum-aturan"]},
+    {"jp":"この決定に至った経緯を報告した。","id":"Kami melaporkan kronologi bagaimana keputusan ini diambil.","level":"n2","tags": ["bisnis"]},
+    {"jp":"二人の出会いの経緯が興味深い。","id":"Kronologi pertemuan mereka berdua sangat menarik.","level":"n2","tags": ["bahasa-komunikasi"]}
   ],
   "synonyms":[], "antonyms":[], "see_also":[], "provenance":"jlpt-corpus", "added_v":"v15"
 },
@@ -978,9 +978,9 @@ window.vocabN2 = [
   "nuance": "Secara harfiah berarti 'bisa melihat ke depan'; dalam konteks abstrak dipakai untuk perkiraan atau prospek ke depan; 見通しが暗い = 'prospek suram'.",
   "conj_type": null,
   "examples": [
-    {"jp":"景気回復の見通しは明るい。","id":"Prospek pemulihan ekonomi terlihat cerah.","level":"n2","tags":["ekonomi-keuangan"]},
-    {"jp":"工事完了の見通しはまだ立っていない。","id":"Perkiraan penyelesaian proyek konstruksi belum bisa dipastikan.","level":"n2","tags":["bisnis"]},
-    {"jp":"将来の見通しが不透明だ。","id":"Prospek ke depan masih tidak jelas.","level":"n2","tags":["pikiran-opini"]}
+    {"jp":"景気回復の見通しは明るい。","id":"Prospek pemulihan ekonomi terlihat cerah.","level":"n2","tags": ["ekonomi-keuangan"]},
+    {"jp":"工事完了の見通しはまだ立っていない。","id":"Perkiraan penyelesaian proyek konstruksi belum bisa dipastikan.","level":"n2","tags": ["bisnis"]},
+    {"jp":"将来の見通しが不透明だ。","id":"Prospek ke depan masih tidak jelas.","level":"n2","tags": ["pikiran-opini"]}
   ],
   "synonyms":[], "antonyms":[], "see_also":[], "provenance":"jlpt-corpus", "added_v":"v15"
 },
@@ -995,9 +995,9 @@ window.vocabN2 = [
   "nuance": "Lebih subjektif dari 見通し — 見込み menekankan harapan atau dugaan seseorang terhadap suatu kemungkinan; 見込みがある = 'ada harapan/potensi'; 見込みがない = 'tidak ada harapan'.",
   "conj_type": null,
   "examples": [
-    {"jp":"彼には将来性の見込みがある。","id":"Dia memiliki potensi untuk masa depan.","level":"n2","tags":["pendidikan"]},
-    {"jp":"回復の見込みはほとんどない。","id":"Kemungkinan untuk pulih hampir tidak ada.","level":"n2","tags":["kesehatan"]},
-    {"jp":"売上増加の見込みで投資を決めた。","id":"Keputusan investasi diambil berdasarkan perkiraan kenaikan penjualan.","level":"n2","tags":["ekonomi-keuangan"]}
+    {"jp":"彼には将来性の見込みがある。","id":"Dia memiliki potensi untuk masa depan.","level":"n2","tags": ["pendidikan"]},
+    {"jp":"回復の見込みはほとんどない。","id":"Kemungkinan untuk pulih hampir tidak ada.","level":"n2","tags": ["kesehatan"]},
+    {"jp":"売上増加の見込みで投資を決めた。","id":"Keputusan investasi diambil berdasarkan perkiraan kenaikan penjualan.","level":"n2","tags": ["ekonomi-keuangan"]}
   ],
   "synonyms":[], "antonyms":[], "see_also":[], "provenance":"jlpt-corpus", "added_v":"v15"
 },
@@ -1012,9 +1012,9 @@ window.vocabN2 = [
   "nuance": "Istilah ekonomi berpasangan dengan 供給 (pasokan); 需要と供給 adalah frasa baku dalam pelajaran ekonomi; berbeda dari 要求 yang berarti 'permintaan/tuntutan personal'.",
   "conj_type": null,
   "examples": [
-    {"jp":"需要と供給のバランスが価格を決める。","id":"Keseimbangan antara permintaan dan pasokan menentukan harga.","level":"n2","tags":["ekonomi-keuangan"]},
-    {"jp":"エネルギーの需要が増えている。","id":"Permintaan energi terus meningkat.","level":"n2","tags":["alam-lingkungan"]},
-    {"jp":"観光需要の回復が経済を支えた。","id":"Pemulihan permintaan pariwisata menopang perekonomian.","level":"n2","tags":["bisnis"]}
+    {"jp":"需要と供給のバランスが価格を決める。","id":"Keseimbangan antara permintaan dan pasokan menentukan harga.","level":"n2","tags": ["ekonomi-keuangan"]},
+    {"jp":"エネルギーの需要が増えている。","id":"Permintaan energi terus meningkat.","level":"n2","tags": ["alam-lingkungan"]},
+    {"jp":"観光需要の回復が経済を支えた。","id":"Pemulihan permintaan pariwisata menopang perekonomian.","level":"n2","tags": ["bisnis"]}
   ],
   "synonyms":[], "antonyms":[], "see_also":[], "provenance":"jlpt-corpus", "added_v":"v15"
 },
@@ -1029,9 +1029,9 @@ window.vocabN2 = [
   "nuance": "Berpasangan dengan 需要; selain konteks ekonomi, dipakai pula untuk pasokan listrik, air, dll.; 供給が不足する = 'pasokan kurang'.",
   "conj_type": "suru",
   "examples": [
-    {"jp":"食料の供給が不足している地域がある。","id":"Ada daerah yang kekurangan pasokan pangan.","level":"n2","tags":["politik-masyarakat"]},
-    {"jp":"電力を安定的に供給することが課題だ。","id":"Memasok listrik secara stabil adalah tantangan tersendiri.","level":"n2","tags":["ilmu-pengetahuan"]},
-    {"jp":"需要に比べて供給が多すぎると価格が下がる。","id":"Jika pasokan terlalu banyak dibandingkan permintaan, harga akan turun.","level":"n2","tags":["ekonomi-keuangan"]}
+    {"jp":"食料の供給が不足している地域がある。","id":"Ada daerah yang kekurangan pasokan pangan.","level":"n2","tags": ["politik-masyarakat"]},
+    {"jp":"電力を安定的に供給することが課題だ。","id":"Memasok listrik secara stabil adalah tantangan tersendiri.","level":"n2","tags": ["ilmu-pengetahuan"]},
+    {"jp":"需要に比べて供給が多すぎると価格が下がる。","id":"Jika pasokan terlalu banyak dibandingkan permintaan, harga akan turun.","level":"n2","tags": ["ekonomi-keuangan"]}
   ],
   "synonyms":[], "antonyms":[], "see_also":[], "provenance":"jlpt-corpus", "added_v":"v15"
 },
@@ -1046,9 +1046,9 @@ window.vocabN2 = [
   "nuance": "Umumnya berkonotasi positif (efek yang diharapkan/bermanfaat); 効果がある = 'efektif/ada hasilnya'; berbeda dari 影響 yang netral dan bisa positif maupun negatif.",
   "conj_type": null,
   "examples": [
-    {"jp":"この薬は風邪に効果がある。","id":"Obat ini efektif untuk flu.","level":"n2","tags":["kesehatan"]},
-    {"jp":"広告の効果を測定した。","id":"Efektivitas iklan telah diukur.","level":"n2","tags":["bisnis"]},
-    {"jp":"運動には健康への効果が多い。","id":"Olahraga memiliki banyak manfaat bagi kesehatan.","level":"n2","tags":["kesehatan"]}
+    {"jp":"この薬は風邪に効果がある。","id":"Obat ini efektif untuk flu.","level":"n2","tags": ["kesehatan"]},
+    {"jp":"広告の効果を測定した。","id":"Efektivitas iklan telah diukur.","level":"n2","tags": ["bisnis"]},
+    {"jp":"運動には健康への効果が多い。","id":"Olahraga memiliki banyak manfaat bagi kesehatan.","level":"n2","tags": ["kesehatan"]}
   ],
   "synonyms":[], "antonyms":[], "see_also":[], "provenance":"jlpt-corpus", "added_v":"v15"
 },
@@ -1063,9 +1063,9 @@ window.vocabN2 = [
   "nuance": "Menekankan rasio antara hasil dan usaha yang dikeluarkan; 効率が良い/悪い = 'efisien/tidak efisien'; 効率的に = adverbia 'secara efisien'.",
   "conj_type": null,
   "examples": [
-    {"jp":"作業の効率を上げるために新しいシステムを導入した。","id":"Sistem baru diterapkan untuk meningkatkan efisiensi pekerjaan.","level":"n2","tags":["bisnis"]},
-    {"jp":"この方法は効率が悪い。","id":"Cara ini tidak efisien.","level":"n2","tags":["pekerjaan"]},
-    {"jp":"効率的な勉強法を探している。","id":"Saya sedang mencari cara belajar yang efisien.","level":"n2","tags":["pendidikan"]}
+    {"jp":"作業の効率を上げるために新しいシステムを導入した。","id":"Sistem baru diterapkan untuk meningkatkan efisiensi pekerjaan.","level":"n2","tags": ["bisnis"]},
+    {"jp":"この方法は効率が悪い。","id":"Cara ini tidak efisien.","level":"n2","tags": ["pekerjaan"]},
+    {"jp":"効率的な勉強法を探している。","id":"Saya sedang mencari cara belajar yang efisien.","level":"n2","tags": ["pendidikan"]}
   ],
   "synonyms":[], "antonyms":[], "see_also":[], "provenance":"jlpt-corpus", "added_v":"v15"
 },
@@ -1080,9 +1080,9 @@ window.vocabN2 = [
   "nuance": "Dipakai untuk beban fisik, mental, maupun finansial; 費用を負担する = 'menanggung biaya'; 負担が大きい = 'bebannya berat'.",
   "conj_type": "suru",
   "examples": [
-    {"jp":"医療費の負担が増えている。","id":"Beban biaya pengobatan semakin meningkat.","level":"n2","tags":["ekonomi-keuangan"]},
-    {"jp":"費用は会社が負担する。","id":"Biaya akan ditanggung oleh perusahaan.","level":"n2","tags":["bisnis"]},
-    {"jp":"精神的な負担を軽減するために相談した。","id":"Saya berkonsultasi untuk mengurangi beban mental.","level":"n2","tags":["kesehatan"]}
+    {"jp":"医療費の負担が増えている。","id":"Beban biaya pengobatan semakin meningkat.","level":"n2","tags": ["ekonomi-keuangan"]},
+    {"jp":"費用は会社が負担する。","id":"Biaya akan ditanggung oleh perusahaan.","level":"n2","tags": ["bisnis"]},
+    {"jp":"精神的な負担を軽減するために相談した。","id":"Saya berkonsultasi untuk mengurangi beban mental.","level":"n2","tags": ["kesehatan"]}
   ],
   "synonyms":[], "antonyms":[], "see_also":[], "provenance":"jlpt-corpus", "added_v":"v15"
 },
@@ -1097,9 +1097,9 @@ window.vocabN2 = [
   "nuance": "Frasa khas: 支障をきたす (menyebabkan gangguan) dan 支障がない (tidak ada hambatan/tidak masalah); bernuansa formal dan sering muncul di laporan atau dokumen resmi.",
   "conj_type": null,
   "examples": [
-    {"jp":"業務に支障をきたす行為は禁止されている。","id":"Tindakan yang mengganggu kelancaran kerja dilarang.","level":"n2","tags":["hukum-aturan"]},
-    {"jp":"体調が悪くても仕事に支障はない。","id":"Meskipun kondisi badan kurang baik, tidak ada hambatan dalam pekerjaan.","level":"n2","tags":["pekerjaan"]},
-    {"jp":"システム障害が業務に支障をきたした。","id":"Gangguan sistem menyebabkan hambatan dalam operasional.","level":"n2","tags":["bisnis"]}
+    {"jp":"業務に支障をきたす行為は禁止されている。","id":"Tindakan yang mengganggu kelancaran kerja dilarang.","level":"n2","tags": ["hukum-aturan"]},
+    {"jp":"体調が悪くても仕事に支障はない。","id":"Meskipun kondisi badan kurang baik, tidak ada hambatan dalam pekerjaan.","level":"n2","tags": ["pekerjaan"]},
+    {"jp":"システム障害が業務に支障をきたした。","id":"Gangguan sistem menyebabkan hambatan dalam operasional.","level":"n2","tags": ["bisnis"]}
   ],
   "synonyms":[], "antonyms":[], "see_also":[], "provenance":"jlpt-corpus", "added_v":"v15"
 },
@@ -1114,9 +1114,9 @@ window.vocabN2 = [
   "nuance": "Selalu mengacu pada kerugian yang diterima (bukan yang ditimbulkan); 被害者 = korban; berbeda dari 損害 yang lebih sering digunakan dalam konteks hukum/asuransi.",
   "conj_type": null,
   "examples": [
-    {"jp":"台風による被害は甚大だった。","id":"Kerusakan akibat topan sangat parah.","level":"n2","tags":["alam-lingkungan"]},
-    {"jp":"被害を最小限に抑える対策が必要だ。","id":"Diperlukan langkah untuk meminimalkan kerugian.","level":"n2","tags":["hukum-aturan"]},
-    {"jp":"詐欺の被害に遭った人が増えている。","id":"Jumlah orang yang menjadi korban penipuan semakin bertambah.","level":"n2","tags":["hukum-aturan"]}
+    {"jp":"台風による被害は甚大だった。","id":"Kerusakan akibat topan sangat parah.","level":"n2","tags": ["alam-lingkungan"]},
+    {"jp":"被害を最小限に抑える対策が必要だ。","id":"Diperlukan langkah untuk meminimalkan kerugian.","level":"n2","tags": ["hukum-aturan"]},
+    {"jp":"詐欺の被害に遭った人が増えている。","id":"Jumlah orang yang menjadi korban penipuan semakin bertambah.","level":"n2","tags": ["hukum-aturan"]}
   ],
   "synonyms":[], "antonyms":[], "see_also":[], "provenance":"jlpt-corpus", "added_v":"v15"
 },
@@ -1131,9 +1131,9 @@ window.vocabN2 = [
   "nuance": "Terutama dipakai untuk kerugian terukur secara finansial atau material; 損失を出す/被る = 'mengalami kerugian'; lebih formal dari 損 yang lebih kasual.",
   "conj_type": null,
   "examples": [
-    {"jp":"会社は大きな損失を出した。","id":"Perusahaan mengalami kerugian besar.","level":"n2","tags":["ekonomi-keuangan"]},
-    {"jp":"この失敗による損失は計り知れない。","id":"Kerugian akibat kegagalan ini tidak ternilai.","level":"n2","tags":["bisnis"]},
-    {"jp":"損失を最小化するために対策を講じた。","id":"Langkah-langkah diambil untuk meminimalkan kerugian.","level":"n2","tags":["hukum-aturan"]}
+    {"jp":"会社は大きな損失を出した。","id":"Perusahaan mengalami kerugian besar.","level":"n2","tags": ["ekonomi-keuangan"]},
+    {"jp":"この失敗による損失は計り知れない。","id":"Kerugian akibat kegagalan ini tidak ternilai.","level":"n2","tags": ["bisnis"]},
+    {"jp":"損失を最小化するために対策を講じた。","id":"Langkah-langkah diambil untuk meminimalkan kerugian.","level":"n2","tags": ["hukum-aturan"]}
   ],
   "synonyms":[], "antonyms":[], "see_also":[], "provenance":"jlpt-corpus", "added_v":"v15"
 },
@@ -1148,9 +1148,9 @@ window.vocabN2 = [
   "nuance": "Bisa dibaca りえき (keuntungan/manfaat umum dan finansial) atau りやく (manfaat/berkah, lebih religius/filosofis); dalam konteks bisnis selalu りえき.",
   "conj_type": null,
   "examples": [
-    {"jp":"今期は大きな利益を上げた。","id":"Kuartal ini kami berhasil meraih keuntungan besar.","level":"n2","tags":["ekonomi-keuangan"]},
-    {"jp":"国民の利益のために政策を立案する。","id":"Kebijakan disusun demi kepentingan rakyat.","level":"n2","tags":["politik-masyarakat"]},
-    {"jp":"利益を社会に還元する企業が増えている。","id":"Semakin banyak perusahaan yang mengembalikan keuntungan kepada masyarakat.","level":"n2","tags":["bisnis"]}
+    {"jp":"今期は大きな利益を上げた。","id":"Kuartal ini kami berhasil meraih keuntungan besar.","level":"n2","tags": ["ekonomi-keuangan"]},
+    {"jp":"国民の利益のために政策を立案する。","id":"Kebijakan disusun demi kepentingan rakyat.","level":"n2","tags": ["politik-masyarakat"]},
+    {"jp":"利益を社会に還元する企業が増えている。","id":"Semakin banyak perusahaan yang mengembalikan keuntungan kepada masyarakat.","level":"n2","tags": ["bisnis"]}
   ],
   "synonyms":[], "antonyms":[], "see_also":[], "provenance":"jlpt-corpus", "added_v":"v15"
 },
@@ -1165,9 +1165,9 @@ window.vocabN2 = [
   "nuance": "Menekankan hasil konkret yang diperoleh dari usaha; 成果を上げる = 'mencapai hasil/prestasi'; berbeda dari 結果 yang netral — 成果 selalu berkonotasi positif/pencapaian.",
   "conj_type": null,
   "examples": [
-    {"jp":"研究の成果が国際学会で発表された。","id":"Hasil penelitian dipresentasikan di konferensi internasional.","level":"n2","tags":["ilmu-pengetahuan"]},
-    {"jp":"努力の成果が出た。","id":"Hasil dari usaha keras telah terlihat.","level":"n2","tags":["pendidikan"]},
-    {"jp":"プロジェクトの成果を報告書にまとめた。","id":"Hasil proyek dirangkum dalam laporan.","level":"n2","tags":["bisnis"]}
+    {"jp":"研究の成果が国際学会で発表された。","id":"Hasil penelitian dipresentasikan di konferensi internasional.","level":"n2","tags": ["ilmu-pengetahuan"]},
+    {"jp":"努力の成果が出た。","id":"Hasil dari usaha keras telah terlihat.","level":"n2","tags": ["pendidikan"]},
+    {"jp":"プロジェクトの成果を報告書にまとめた。","id":"Hasil proyek dirangkum dalam laporan.","level":"n2","tags": ["bisnis"]}
   ],
   "synonyms":[], "antonyms":[], "see_also":[], "provenance":"jlpt-corpus", "added_v":"v15"
 },
@@ -1182,9 +1182,9 @@ window.vocabN2 = [
   "nuance": "Menekankan kondisi sesungguhnya yang berbeda dari citra atau teori; 実態を把握する = 'memahami kondisi yang sebenarnya'; sering muncul dalam survei, laporan investigasi.",
   "conj_type": null,
   "examples": [
-    {"jp":"労働環境の実態を調査した。","id":"Kondisi nyata lingkungan kerja telah diselidiki.","level":"n2","tags":["hukum-aturan"]},
-    {"jp":"実態に即した政策が必要だ。","id":"Diperlukan kebijakan yang sesuai dengan kenyataan di lapangan.","level":"n2","tags":["politik-masyarakat"]},
-    {"jp":"貧困の実態を知るために現地を訪問した。","id":"Kami mengunjungi lokasi untuk mengetahui kondisi nyata kemiskinan.","level":"n2","tags":["politik-masyarakat"]}
+    {"jp":"労働環境の実態を調査した。","id":"Kondisi nyata lingkungan kerja telah diselidiki.","level":"n2","tags": ["hukum-aturan"]},
+    {"jp":"実態に即した政策が必要だ。","id":"Diperlukan kebijakan yang sesuai dengan kenyataan di lapangan.","level":"n2","tags": ["politik-masyarakat"]},
+    {"jp":"貧困の実態を知るために現地を訪問した。","id":"Kami mengunjungi lokasi untuk mengetahui kondisi nyata kemiskinan.","level":"n2","tags": ["politik-masyarakat"]}
   ],
   "synonyms":[], "antonyms":[], "see_also":[], "provenance":"jlpt-corpus", "added_v":"v15"
 },
@@ -1199,9 +1199,9 @@ window.vocabN2 = [
   "nuance": "Merujuk pada hasil/prestasi yang sudah terbukti di masa lalu; sering muncul dalam CV atau laporan bisnis; 実績を積む = 'mengumpulkan rekam jejak'; berbeda dari 成果 yang mengacu pada hasil satu proyek.",
   "conj_type": null,
   "examples": [
-    {"jp":"豊富な実績を持つ企業に依頼した。","id":"Kami meminta bantuan perusahaan yang memiliki rekam jejak yang luas.","level":"n2","tags":["bisnis"]},
-    {"jp":"販売実績が目標を超えた。","id":"Realisasi penjualan melampaui target.","level":"n2","tags":["bisnis"]},
-    {"jp":"研究実績が評価され、採用が決まった。","id":"Rekam jejak penelitian dinilai baik sehingga penerimaan diputuskan.","level":"n2","tags":["pekerjaan"]}
+    {"jp":"豊富な実績を持つ企業に依頼した。","id":"Kami meminta bantuan perusahaan yang memiliki rekam jejak yang luas.","level":"n2","tags": ["bisnis"]},
+    {"jp":"販売実績が目標を超えた。","id":"Realisasi penjualan melampaui target.","level":"n2","tags": ["bisnis"]},
+    {"jp":"研究実績が評価され、採用が決まった。","id":"Rekam jejak penelitian dinilai baik sehingga penerimaan diputuskan.","level":"n2","tags": ["pekerjaan"]}
   ],
   "synonyms":[], "antonyms":[], "see_also":[], "provenance":"jlpt-corpus", "added_v":"v15"
 },
@@ -1216,9 +1216,9 @@ window.vocabN2 = [
   "nuance": "Lebih spesifik dan terukur daripada 目的; 目標を設定する = 'menetapkan target'; 目的 adalah tujuan akhir yang lebih luas, sedangkan 目標 adalah sasaran konkret menuju tujuan itu.",
   "conj_type": null,
   "examples": [
-    {"jp":"今年の目標は日本語能力試験に合格することだ。","id":"Targetku tahun ini adalah lulus ujian kemampuan bahasa Jepang.","level":"n2","tags":["pendidikan"]},
-    {"jp":"月ごとの目標を設定して進捗を確認する。","id":"Target bulanan ditetapkan dan kemajuannya dipantau.","level":"n2","tags":["bisnis"]},
-    {"jp":"目標に向かって努力し続けた。","id":"Dia terus berusaha menuju targetnya.","level":"n2","tags":["karakter"]}
+    {"jp":"今年の目標は日本語能力試験に合格することだ。","id":"Targetku tahun ini adalah lulus ujian kemampuan bahasa Jepang.","level":"n2","tags": ["pendidikan"]},
+    {"jp":"月ごとの目標を設定して進捗を確認する。","id":"Target bulanan ditetapkan dan kemajuannya dipantau.","level":"n2","tags": ["bisnis"]},
+    {"jp":"目標に向かって努力し続けた。","id":"Dia terus berusaha menuju targetnya.","level":"n2","tags": ["karakter"]}
   ],
   "synonyms":[], "antonyms":[], "see_also":[], "provenance":"jlpt-corpus", "added_v":"v15"
 },
@@ -1233,9 +1233,9 @@ window.vocabN2 = [
   "nuance": "Merujuk pada usaha kreatif untuk menemukan cara yang lebih baik atau efisien; 工夫する = 'berusaha dengan kreativitas'; punya nuansa positif dan apresiasi terhadap kecerdasan praktis.",
   "conj_type": "suru",
   "examples": [
-    {"jp":"料理に一工夫加えると美味しくなる。","id":"Makanan menjadi lebih lezat jika ditambahkan sedikit inovasi.","level":"n2","tags":["makanan-minuman"]},
-    {"jp":"限られた予算でも工夫次第でうまくいく。","id":"Meskipun anggaran terbatas, dengan kreativitas yang tepat semuanya bisa berjalan baik.","level":"n2","tags":["bisnis"]},
-    {"jp":"授業を工夫して生徒の興味を引いた。","id":"Pengajaran diubah secara kreatif untuk menarik minat siswa.","level":"n2","tags":["pendidikan"]}
+    {"jp":"料理に一工夫加えると美味しくなる。","id":"Makanan menjadi lebih lezat jika ditambahkan sedikit inovasi.","level":"n2","tags": ["makanan-minuman"]},
+    {"jp":"限られた予算でも工夫次第でうまくいく。","id":"Meskipun anggaran terbatas, dengan kreativitas yang tepat semuanya bisa berjalan baik.","level":"n2","tags": ["bisnis"]},
+    {"jp":"授業を工夫して生徒の興味を引いた。","id":"Pengajaran diubah secara kreatif untuk menarik minat siswa.","level":"n2","tags": ["pendidikan"]}
   ],
   "synonyms":[], "antonyms":[], "see_also":[], "provenance":"jlpt-corpus", "added_v":"v15"
 },
@@ -1250,9 +1250,9 @@ window.vocabN2 = [
   "nuance": "Bisa berarti konsentrasi pikiran (集中する = fokus) maupun pemusatan secara fisik (一箇所に集中する = terpusat di satu tempat); 集中力 = 'kemampuan berkonsentrasi'.",
   "conj_type": "suru",
   "examples": [
-    {"jp":"試験前は集中して勉強した。","id":"Sebelum ujian, saya belajar dengan penuh konsentrasi.","level":"n2","tags":["pendidikan"]},
-    {"jp":"権力が一人に集中するのは危険だ。","id":"Berbahaya jika kekuasaan terpusat pada satu orang.","level":"n2","tags":["politik-masyarakat"]},
-    {"jp":"集中力が続かないときは休憩が必要だ。","id":"Ketika konsentrasi tidak bisa bertahan, istirahat diperlukan.","level":"n2","tags":["kesehatan"]}
+    {"jp":"試験前は集中して勉強した。","id":"Sebelum ujian, saya belajar dengan penuh konsentrasi.","level":"n2","tags": ["pendidikan"]},
+    {"jp":"権力が一人に集中するのは危険だ。","id":"Berbahaya jika kekuasaan terpusat pada satu orang.","level":"n2","tags": ["politik-masyarakat"]},
+    {"jp":"集中力が続かないときは休憩が必要だ。","id":"Ketika konsentrasi tidak bisa bertahan, istirahat diperlukan.","level":"n2","tags": ["kesehatan"]}
   ],
   "synonyms":[], "antonyms":[], "see_also":[], "provenance":"jlpt-corpus", "added_v":"v15"
 },
@@ -1267,9 +1267,9 @@ window.vocabN2 = [
   "nuance": "優先する = 'mendahulukan/memprioritaskan'; frasa 優先順位 = 'urutan prioritas' sangat umum di lingkungan kerja; 優先的に = 'secara prioritas'.",
   "conj_type": "suru",
   "examples": [
-    {"jp":"安全を最優先に考えてください。","id":"Tolong utamakan keselamatan di atas segalanya.","level":"n2","tags":["hukum-aturan"]},
-    {"jp":"優先順位をつけてタスクをこなした。","id":"Tugas dikerjakan dengan mengurutkan prioritas.","level":"n2","tags":["pekerjaan"]},
-    {"jp":"緊急のことを優先して対応した。","id":"Kami menangani hal-hal mendesak dengan mendahulukan prioritas.","level":"n2","tags":["bisnis"]}
+    {"jp":"安全を最優先に考えてください。","id":"Tolong utamakan keselamatan di atas segalanya.","level":"n2","tags": ["hukum-aturan"]},
+    {"jp":"優先順位をつけてタスクをこなした。","id":"Tugas dikerjakan dengan mengurutkan prioritas.","level":"n2","tags": ["pekerjaan"]},
+    {"jp":"緊急のことを優先して対応した。","id":"Kami menangani hal-hal mendesak dengan mendahulukan prioritas.","level":"n2","tags": ["bisnis"]}
   ],
   "synonyms":[], "antonyms":[], "see_also":[], "provenance":"jlpt-corpus", "added_v":"v15"
 },
@@ -1284,9 +1284,9 @@ window.vocabN2 = [
   "nuance": "Bisa bernuansa positif (negosiasi dewasa) maupun negatif tergantung konteks; 妥協点を見つける = 'menemukan titik kompromi'; 妥協しない = 'tidak mau berkompromi/teguh pendirian'.",
   "conj_type": "suru",
   "examples": [
-    {"jp":"双方が妥協して合意に達した。","id":"Kedua pihak berkompromi dan mencapai kesepakatan.","level":"n2","tags":["bisnis"]},
-    {"jp":"品質に関しては妥協できない。","id":"Kami tidak bisa berkompromi dalam hal kualitas.","level":"n2","tags":["bisnis"]},
-    {"jp":"交渉では妥協点を探すことが重要だ。","id":"Dalam negosiasi, penting untuk mencari titik kompromi.","level":"n2","tags":["hukum-aturan"]}
+    {"jp":"双方が妥協して合意に達した。","id":"Kedua pihak berkompromi dan mencapai kesepakatan.","level":"n2","tags": ["bisnis"]},
+    {"jp":"品質に関しては妥協できない。","id":"Kami tidak bisa berkompromi dalam hal kualitas.","level":"n2","tags": ["bisnis"]},
+    {"jp":"交渉では妥協点を探すことが重要だ。","id":"Dalam negosiasi, penting untuk mencari titik kompromi.","level":"n2","tags": ["hukum-aturan"]}
   ],
   "synonyms":[], "antonyms":[], "see_also":[], "provenance":"jlpt-corpus", "added_v":"v15"
 },
@@ -1301,9 +1301,9 @@ window.vocabN2 = [
   "nuance": "Menekankan tindakan aktif mempertimbangkan perasaan atau situasi orang lain; 〜に配慮する = 'mempertimbangkan/berhati-hati terhadap ~'; lebih formal dan aktif daripada 気遣い.",
   "conj_type": "suru",
   "examples": [
-    {"jp":"高齢者への配慮が足りない設計だ。","id":"Desainnya kurang mempertimbangkan kebutuhan lansia.","level":"n2","tags":["sopan-santun"]},
-    {"jp":"環境への配慮から再生可能エネルギーを使う。","id":"Dari pertimbangan terhadap lingkungan, energi terbarukan digunakan.","level":"n2","tags":["alam-lingkungan"]},
-    {"jp":"相手の気持ちへの配慮が大切だ。","id":"Penting untuk mempertimbangkan perasaan lawan bicara.","level":"n2","tags":["emosi-sosial"]}
+    {"jp":"高齢者への配慮が足りない設計だ。","id":"Desainnya kurang mempertimbangkan kebutuhan lansia.","level":"n2","tags": ["sopan-santun"]},
+    {"jp":"環境への配慮から再生可能エネルギーを使う。","id":"Dari pertimbangan terhadap lingkungan, energi terbarukan digunakan.","level":"n2","tags": ["alam-lingkungan"]},
+    {"jp":"相手の気持ちへの配慮が大切だ。","id":"Penting untuk mempertimbangkan perasaan lawan bicara.","level":"n2","tags": ["emosi-sosial"]}
   ],
   "synonyms":[], "antonyms":[], "see_also":[], "provenance":"jlpt-corpus", "added_v":"v15"
 },
@@ -1318,9 +1318,9 @@ window.vocabN2 = [
   "nuance": "Punya nuansa positif — sisa ruang atau ketenangan yang membuat seseorang tidak tertekan; 余裕がある = 'ada kelonggaran/tenang'; 余裕がない = 'tidak ada ruang/tergesa-gesa/tertekan'.",
   "conj_type": null,
   "examples": [
-    {"jp":"時間に余裕があるなら手伝ってほしい。","id":"Kalau kamu punya waktu luang, tolong bantu aku.","level":"n2","tags":["kehidupan-sehari"]},
-    {"jp":"余裕を持って仕事に取り組むことが大切だ。","id":"Penting untuk mengerjakan tugas dengan ketenangan.","level":"n2","tags":["pekerjaan"]},
-    {"jp":"経済的な余裕ができたら旅行したい。","id":"Kalau sudah ada kelonggaran secara finansial, saya ingin traveling.","level":"n2","tags":["ekonomi-keuangan"]}
+    {"jp":"時間に余裕があるなら手伝ってほしい。","id":"Kalau kamu punya waktu luang, tolong bantu aku.","level":"n2","tags": ["kehidupan-sehari"]},
+    {"jp":"余裕を持って仕事に取り組むことが大切だ。","id":"Penting untuk mengerjakan tugas dengan ketenangan.","level":"n2","tags": ["pekerjaan"]},
+    {"jp":"経済的な余裕ができたら旅行したい。","id":"Kalau sudah ada kelonggaran secara finansial, saya ingin traveling.","level":"n2","tags": ["ekonomi-keuangan"]}
   ],
   "synonyms":[], "antonyms":[], "see_also":[], "provenance":"jlpt-corpus", "added_v":"v15"
 },
@@ -1335,9 +1335,9 @@ window.vocabN2 = [
   "nuance": "Menekankan batas yang tidak bisa dilampaui; 限界に達する/限界を超える = 'mencapai/melampaui batas'; punya nuansa dramatis dan sering muncul dalam konteks motivasi atau kelelahan.",
   "conj_type": null,
   "examples": [
-    {"jp":"もう限界だ。これ以上は無理だ。","id":"Sudah sampai batas. Tidak bisa lebih dari ini.","level":"n2","tags":["emosi"]},
-    {"jp":"人間の体には限界がある。","id":"Tubuh manusia memiliki batasnya sendiri.","level":"n2","tags":["kesehatan"]},
-    {"jp":"この技術には物理的な限界がある。","id":"Teknologi ini memiliki keterbatasan fisik.","level":"n2","tags":["ilmu-pengetahuan"]}
+    {"jp":"もう限界だ。これ以上は無理だ。","id":"Sudah sampai batas. Tidak bisa lebih dari ini.","level":"n2","tags": ["emosi"]},
+    {"jp":"人間の体には限界がある。","id":"Tubuh manusia memiliki batasnya sendiri.","level":"n2","tags": ["kesehatan"]},
+    {"jp":"この技術には物理的な限界がある。","id":"Teknologi ini memiliki keterbatasan fisik.","level":"n2","tags": ["ilmu-pengetahuan"]}
   ],
   "synonyms":[], "antonyms":[], "see_also":[], "provenance":"jlpt-corpus", "added_v":"v15"
 },
@@ -1352,9 +1352,9 @@ window.vocabN2 = [
   "nuance": "Selalu muncul sebagai respons terhadap masalah; 対策を講じる/取る = 'mengambil langkah penanggulangan'; lebih reaktif dari 計画 dan lebih umum dari 措置.",
   "conj_type": null,
   "examples": [
-    {"jp":"感染拡大を防ぐための対策が発表された。","id":"Langkah-langkah untuk mencegah penyebaran infeksi telah diumumkan.","level":"n2","tags":["kesehatan"]},
-    {"jp":"地震対策として建物を補強した。","id":"Bangunan diperkuat sebagai langkah antisipasi gempa.","level":"n2","tags":["alam-lingkungan"]},
-    {"jp":"犯罪対策のために監視カメラを増やした。","id":"Kamera pengawas ditambah sebagai langkah penanggulangan kejahatan.","level":"n2","tags":["hukum-aturan"]}
+    {"jp":"感染拡大を防ぐための対策が発表された。","id":"Langkah-langkah untuk mencegah penyebaran infeksi telah diumumkan.","level":"n2","tags": ["kesehatan"]},
+    {"jp":"地震対策として建物を補強した。","id":"Bangunan diperkuat sebagai langkah antisipasi gempa.","level":"n2","tags": ["alam-lingkungan"]},
+    {"jp":"犯罪対策のために監視カメラを増やした。","id":"Kamera pengawas ditambah sebagai langkah penanggulangan kejahatan.","level":"n2","tags": ["hukum-aturan"]}
   ],
   "synonyms":[], "antonyms":[], "see_also":[], "provenance":"jlpt-corpus", "added_v":"v15"
 },
@@ -1369,9 +1369,9 @@ window.vocabN2 = [
   "nuance": "Sangat formal — dipakai terutama dalam dokumen resmi, hukum, dan pernyataan pemerintah; 措置を取る = 'mengambil tindakan (resmi)'; lebih berat bobot formalnya daripada 対策.",
   "conj_type": null,
   "examples": [
-    {"jp":"政府は緊急措置を発動した。","id":"Pemerintah memberlakukan tindakan darurat.","level":"n2","tags":["politik-masyarakat"]},
-    {"jp":"適切な措置が取られなかった。","id":"Tindakan yang tepat tidak diambil.","level":"n2","tags":["hukum-aturan"]},
-    {"jp":"この違反に対して厳重な措置が必要だ。","id":"Diperlukan tindakan tegas terhadap pelanggaran ini.","level":"n2","tags":["hukum-aturan"]}
+    {"jp":"政府は緊急措置を発動した。","id":"Pemerintah memberlakukan tindakan darurat.","level":"n2","tags": ["politik-masyarakat"]},
+    {"jp":"適切な措置が取られなかった。","id":"Tindakan yang tepat tidak diambil.","level":"n2","tags": ["hukum-aturan"]},
+    {"jp":"この違反に対して厳重な措置が必要だ。","id":"Diperlukan tindakan tegas terhadap pelanggaran ini.","level":"n2","tags": ["hukum-aturan"]}
   ],
   "synonyms":[], "antonyms":[], "see_also":[], "provenance":"jlpt-corpus", "added_v":"v15"
 },
@@ -1386,9 +1386,9 @@ window.vocabN2 = [
   "nuance": "Merujuk pada struktur atau mekanisme internal yang membuat sesuatu berfungsi; 仕組みを理解する = 'memahami mekanismenya'; lebih konkret dan teknis dari システム yang lebih umum.",
   "conj_type": null,
   "examples": [
-    {"jp":"保険の仕組みを説明してもらった。","id":"Saya minta dijelaskan tentang mekanisme asuransi.","level":"n2","tags":["ekonomi-keuangan"]},
-    {"jp":"この機械の仕組みを理解するのは難しい。","id":"Sulit untuk memahami cara kerja mesin ini.","level":"n2","tags":["ilmu-pengetahuan"]},
-    {"jp":"税金の仕組みをわかりやすく説明してほしい。","id":"Tolong jelaskan mekanisme pajak dengan cara yang mudah dipahami.","level":"n2","tags":["hukum-aturan"]}
+    {"jp":"保険の仕組みを説明してもらった。","id":"Saya minta dijelaskan tentang mekanisme asuransi.","level":"n2","tags": ["ekonomi-keuangan"]},
+    {"jp":"この機械の仕組みを理解するのは難しい。","id":"Sulit untuk memahami cara kerja mesin ini.","level":"n2","tags": ["ilmu-pengetahuan"]},
+    {"jp":"税金の仕組みをわかりやすく説明してほしい。","id":"Tolong jelaskan mekanisme pajak dengan cara yang mudah dipahami.","level":"n2","tags": ["hukum-aturan"]}
   ],
   "synonyms":[], "antonyms":[], "see_also":[], "provenance":"jlpt-corpus", "added_v":"v15"
 },
@@ -1403,9 +1403,9 @@ window.vocabN2 = [
   "nuance": "Merupakan nomina dari kata kerja 取り組む (bergulat/menangani dengan serius); 取り組みを進める = 'memajukan upaya'; banyak dipakai dalam laporan kebijakan dan bisnis.",
   "conj_type": null,
   "examples": [
-    {"jp":"環境問題への取り組みを強化した。","id":"Upaya terhadap masalah lingkungan diperkuat.","level":"n2","tags":["alam-lingkungan"]},
-    {"jp":"各社の省エネへの取り組みを比較した。","id":"Upaya penghematan energi masing-masing perusahaan dibandingkan.","level":"n2","tags":["bisnis"]},
-    {"jp":"この取り組みは成果を上げている。","id":"Upaya ini sedang menunjukkan hasil yang baik.","level":"n2","tags":["pekerjaan"]}
+    {"jp":"環境問題への取り組みを強化した。","id":"Upaya terhadap masalah lingkungan diperkuat.","level":"n2","tags": ["alam-lingkungan"]},
+    {"jp":"各社の省エネへの取り組みを比較した。","id":"Upaya penghematan energi masing-masing perusahaan dibandingkan.","level":"n2","tags": ["bisnis"]},
+    {"jp":"この取り組みは成果を上げている。","id":"Upaya ini sedang menunjukkan hasil yang baik.","level":"n2","tags": ["pekerjaan"]}
   ],
   "synonyms":[], "antonyms":[], "see_also":[], "provenance":"jlpt-corpus", "added_v":"v15"
 },
@@ -1420,9 +1420,9 @@ window.vocabN2 = [
   "nuance": "Mengacu pada tindakan mendefinisikan atau menempatkan sesuatu dalam konteks yang lebih besar; 〜として位置づける = 'mendefinisikan sebagai ~'; khas dalam penulisan akademis dan perencanaan strategis.",
   "conj_type": "suru",
   "examples": [
-    {"jp":"この法律は人権保護の一環として位置づけられる。","id":"Undang-undang ini diposisikan sebagai bagian dari perlindungan hak asasi manusia.","level":"n2","tags":["hukum-aturan"]},
-    {"jp":"彼の役割を組織の中でどう位置づけるかが課題だ。","id":"Tantangannya adalah bagaimana memposisikan perannya dalam organisasi.","level":"n2","tags":["bisnis"]},
-    {"jp":"この研究の位置づけを明確にすることが重要だ。","id":"Penting untuk memperjelas posisi penelitian ini dalam konteks yang lebih luas.","level":"n2","tags":["ilmu-pengetahuan"]}
+    {"jp":"この法律は人権保護の一環として位置づけられる。","id":"Undang-undang ini diposisikan sebagai bagian dari perlindungan hak asasi manusia.","level":"n2","tags": ["hukum-aturan"]},
+    {"jp":"彼の役割を組織の中でどう位置づけるかが課題だ。","id":"Tantangannya adalah bagaimana memposisikan perannya dalam organisasi.","level":"n2","tags": ["bisnis"]},
+    {"jp":"この研究の位置づけを明確にすることが重要だ。","id":"Penting untuk memperjelas posisi penelitian ini dalam konteks yang lebih luas.","level":"n2","tags": ["ilmu-pengetahuan"]}
   ],
   "synonyms":[], "antonyms":[], "see_also":[], "provenance":"jlpt-corpus", "added_v":"v15"
 },
