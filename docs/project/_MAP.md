@@ -56,19 +56,19 @@ All loaded via `<script>` in index.html. No bundler. Load order matters.
 ```
 data/vocab/vocab-n5.js          window.vocabN5           ✅ 725 entries
 data/vocab/vocab-n4.js          window.vocabN4           ✅ 692 entries
-data/vocab/vocab-n3.js          window.vocabN3           ⚠️ 285 entries (target 3,750)
-data/vocab/vocab-n2.js          window.vocabN2           ⚠️ 130 entries (target 6,000)
-data/vocab/vocab-n1.js          window.vocabN1           🌱 60 entries (target 10,000)
+data/vocab/vocab-n3.js          window.vocabN3           ⚠️ 615 entries (target 3,750)
+data/vocab/vocab-n2.js          window.vocabN2           ⚠️ 260 entries (target 6,000)
+data/vocab/vocab-n1.js          window.vocabN1           ⚠️ 130 entries (target 10,000)
 data/grammar/grammar-n5.js      window.grammarN5         ✅ 94 entries
 data/grammar/grammar-n4.js      window.grammarN4         ✅ 92 entries
 data/grammar/grammar-n3.js      window.grammarN3         ✅ 103 entries
-data/grammar/grammar-n2.js      window.grammarN2         ⚠️ 90 entries (target 200)
-data/grammar/grammar-n1.js      window.grammarN1         ⚠️ 60 entries (target 250)
+data/grammar/grammar-n2.js      window.grammarN2         ⚠️ 250 entries (target 200)
+data/grammar/grammar-n1.js      window.grammarN1         ⚠️ 140 entries (target 250)
 data/books/book-irodori-a1.js   window.bookIrodoriA1     ⚠️ vocab_ids ✅ grammar_ids ❌
 data/books/book-irodori-a2-1.js window.bookIrodoriA21    ⚠️ vocab_ids ✅ grammar_ids ❌
 data/books/book-irodori-a2-2.js window.bookIrodoriA22    ⚠️ vocab_ids ✅ grammar_ids ❌
-data/books/book-minna-1.js      window.bookMinna1        ❌ all empty
-data/books/book-minna-2.js      window.bookMinna2        ❌ all empty
+data/books/book-minna-1.js      window.bookMinna1        ✅ 25 lessons, grammar_ids mapped
+data/books/book-minna-2.js      window.bookMinna2        ✅ 25 lessons, grammar_ids mapped
 data/books/soumatome/
   grammar-lens-sm-n3.js         window.grammarLensSoumatomeN3  ✅ 132 entries
   grammar-lens-sm-n4.js         window.grammarLensSoumatomeN4  ✅ 102 entries
@@ -189,14 +189,14 @@ Lens (Soumatome): sm-n3-{3digit}          e.g. sm-n3-001
 |---|---|---|
 | vocab-n5.js | 725 | ✅ Full |
 | vocab-n4.js | 692 | ✅ Full |
-| vocab-n3.js | 285 | ⚠️ Partial (target 3,750) |
-| vocab-n2.js | 130 | ⚠️ Partial (target 6,000) |
-| vocab-n1.js | 60 | 🌱 Seed (target 10,000) |
+| vocab-n3.js | 615 | ⚠️ Partial (target 3,750) |
+| vocab-n2.js | 260 | ⚠️ Partial (target 6,000) |
+| vocab-n1.js | 130 | ⚠️ Partial (target 10,000) |
 | grammar-n5.js | 94 | ✅ Full |
 | grammar-n4.js | **92** | ✅ Full |
 | grammar-n3.js | **119** | ✅ Full |
-| grammar-n2.js | 90 | ⚠️ Partial (target 200) |
-| grammar-n1.js | 60 | ⚠️ Partial (target 250) |
+| grammar-n2.js | 250 | ⚠️ Partial (target 200) |
+| grammar-n1.js | 140 | ⚠️ Partial (target 250) |
 | grammar-lens-ir-a1.js | 61 | ✅ Full |
 | grammar-lens-ir-a2-1.js | 65 | ✅ Full |
 | grammar-lens-ir-a2-2.js | 62 | ✅ Full |
