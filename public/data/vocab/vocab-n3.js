@@ -4970,7 +4970,8 @@ window.vocabN3 = [
       "tags": [
         "emosi"
       ]
-    }
+    },
+    {"jp": "ニュースを聞いて<b>悲しんだ</b>。", "id": "Saya bersedih mendengar berita itu.", "level": "n3", "tags": ["emosi"]}
   ],
   "synonyms": [],
   "antonyms": [
@@ -5080,9 +5081,7 @@ window.vocabN3 = [
   "jlpt": "n3",
   "pos": "verb-ru",
   "common": true,
-  "related_grammar": [
-    "〜続ける"
-  ],
+  "related_grammar": [],
   "formalitas": 2,
   "domain": [
     "aksi"
@@ -5254,7 +5253,7 @@ window.vocabN3 = [
   "meaning_id": "langka, jarang ada",
   "meaning_en": "rare, unusual",
   "jlpt": "n3",
-  "pos": "adjective-i",
+  "pos": "i-adj",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -5297,7 +5296,7 @@ window.vocabN3 = [
   "meaning_id": "ketat, keras, berat",
   "meaning_en": "strict, severe",
   "jlpt": "n3",
-  "pos": "adjective-i",
+  "pos": "i-adj",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -5343,7 +5342,7 @@ window.vocabN3 = [
   "meaning_id": "sopan, teliti",
   "meaning_en": "polite, careful",
   "jlpt": "n3",
-  "pos": "adjective-na",
+  "pos": "na-adj",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -5386,7 +5385,7 @@ window.vocabN3 = [
   "meaning_id": "rumit, kompleks",
   "meaning_en": "complicated",
   "jlpt": "n3",
-  "pos": "adjective-na",
+  "pos": "na-adj",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -5404,7 +5403,8 @@ window.vocabN3 = [
       "tags": [
         "akademis"
       ]
-    }
+    },
+    {"jp": "二人の関係は<b>複雑</b>だ。", "id": "Hubungan keduanya rumit.", "level": "n3", "tags": ["karakter"]}
   ],
   "synonyms": [],
   "antonyms": [
@@ -5421,7 +5421,7 @@ window.vocabN3 = [
   "meaning_id": "jujur",
   "meaning_en": "honest",
   "jlpt": "n3",
-  "pos": "adjective-na",
+  "pos": "na-adj",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -5480,7 +5480,8 @@ window.vocabN3 = [
       "tags": [
         "sosial"
       ]
-    }
+    },
+    {"jp": "<b>社会</b>のルールを守ることが大切だ。", "id": "Penting untuk mematuhi aturan masyarakat.", "level": "n3", "tags": ["politik-masyarakat"]}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -5554,7 +5555,8 @@ window.vocabN3 = [
       "tags": [
         "ekonomi"
       ]
-    }
+    },
+    {"jp": "円安が<b>経済</b>に影響を与えている。", "id": "Pelemahan yen berdampak pada perekonomian.", "level": "n3", "tags": ["ekonomi-keuangan"]}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -5629,7 +5631,8 @@ window.vocabN3 = [
       "tags": [
         "sosial"
       ]
-    }
+    },
+    {"jp": "<b>政治</b>家は国民のために働くべきだ。", "id": "Politisi seharusnya bekerja untuk rakyat.", "level": "n3", "tags": ["politik-masyarakat"]}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -5705,7 +5708,8 @@ window.vocabN3 = [
       "tags": [
         "sosial"
       ]
-    }
+    },
+    {"jp": "週末に友達の家に<b>集まった</b>。", "id": "Kami berkumpul di rumah teman akhir pekan.", "level": "n3", "tags": ["pertemanan"]}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -5767,9 +5771,7 @@ window.vocabN3 = [
   "jlpt": "n3",
   "pos": "verb-ru",
   "common": true,
-  "related_grammar": [
-    "〜に比べて"
-  ],
+  "related_grammar": [],
   "formalitas": 2,
   "domain": [
     "aksi"
@@ -5785,7 +5787,8 @@ window.vocabN3 = [
       "tags": [
         "progres"
       ]
-    }
+    },
+    {"jp": "二つの商品を<b>比べて</b>みた。", "id": "Saya mencoba membandingkan dua produk itu.", "level": "n3", "tags": ["keputusan"]}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -6081,7 +6084,8 @@ window.vocabN3 = [
       "tags": [
         "kejadian"
       ]
-    }
+    },
+    {"jp": "ストレスが体調不良の<b>原因</b>だった。", "id": "Stres adalah penyebab kondisi badan yang buruk.", "level": "n3", "tags": ["kesehatan"]}
   ],
   "synonyms": [
     "理由"
@@ -6104,9 +6108,7 @@ window.vocabN3 = [
   "jlpt": "n3",
   "pos": "noun",
   "common": true,
-  "related_grammar": [
-    "〜た結果"
-  ],
+  "related_grammar": [],
   "formalitas": 2,
   "domain": [
     "logika"
@@ -6194,9 +6196,7 @@ window.vocabN3 = [
   "jlpt": "n3",
   "pos": "noun",
   "common": true,
-  "related_grammar": [
-    "〜場合は"
-  ],
+  "related_grammar": [],
   "formalitas": 2,
   "domain": [
     "logika"
@@ -6212,7 +6212,8 @@ window.vocabN3 = [
       "tags": [
         "darurat"
       ]
-    }
+    },
+    {"jp": "遅れる<b>場合</b>は連絡してください。", "id": "Kalau terlambat, tolong hubungi saya.", "level": "n3", "tags": ["kehidupan-sehari"]}
   ],
   "synonyms": [
     "ケース"
@@ -6247,7 +6248,8 @@ window.vocabN3 = [
       "tags": [
         "motivasi"
       ]
-    }
+    },
+    {"jp": "海外で働く<b>機会</b>を得た。", "id": "Saya mendapat kesempatan untuk bekerja di luar negeri.", "level": "n3", "tags": ["pekerjaan"]}
   ],
   "synonyms": [
     "チャンス"
@@ -6282,7 +6284,8 @@ window.vocabN3 = [
       "tags": [
         "kerja"
       ]
-    }
+    },
+    {"jp": "もっと効率的な<b>方法</b>があるはずだ。", "id": "Pasti ada cara yang lebih efisien.", "level": "n3", "tags": ["pikiran-opini"]}
   ],
   "synonyms": [
     "やり方",
@@ -6302,9 +6305,7 @@ window.vocabN3 = [
   "jlpt": "n3",
   "pos": "noun",
   "common": true,
-  "related_grammar": [
-    "〜に関係なく"
-  ],
+  "related_grammar": [],
   "formalitas": 2,
   "domain": [
     "sosial"
@@ -6584,7 +6585,8 @@ window.vocabN3 = [
       "tags": [
         "kehidupan"
       ]
-    }
+    },
+    {"jp": "<b>きちんと</b>説明してください。", "id": "Tolong jelaskan dengan benar.", "level": "n3", "tags": ["bahasa-komunikasi"]}
   ],
   "synonyms": [
     "ちゃんと",
@@ -6622,7 +6624,8 @@ window.vocabN3 = [
       "tags": [
         "ekspresi"
       ]
-    }
+    },
+    {"jp": "忙しいほうが、<b>むしろ</b>充実感がある。", "id": "Justru saat sibuk, ada rasa kepuasan lebih.", "level": "n3", "tags": ["perasaan"]}
   ],
   "synonyms": [
     "かえって"
@@ -6723,9 +6726,7 @@ window.vocabN3 = [
   "jlpt": "n3",
   "pos": "adverb",
   "common": true,
-  "related_grammar": [
-    "せっかく〜のに"
-  ],
+  "related_grammar": [],
   "formalitas": 2,
   "domain": [
     "ekspresi"
@@ -6766,10 +6767,7 @@ window.vocabN3 = [
   "jlpt": "n3",
   "pos": "adverb",
   "common": true,
-  "related_grammar": [
-    "もし〜たら",
-    "もし〜ば"
-  ],
+  "related_grammar": [],
   "formalitas": 2,
   "domain": [
     "kondisional"
@@ -10077,7 +10075,7 @@ window.vocabN3 = [
   "word": "誘われる",
   "reading": "さそわれる",
   "romaji": "sasowareru",
-  "meaning_id": "diajak, diundang (bentuk pasif dari 誘う)",
+  "meaning_id": "diajak, diundang",
   "meaning_en": "to be invited, to be asked (passive of 誘う)",
   "jlpt": "n3",
   "pos": "verb-ru",
@@ -10105,7 +10103,7 @@ window.vocabN3 = [
   "word": "約束",
   "reading": "やくそく",
   "romaji": "yakusoku",
-  "meaning_id": "janji, perjanjian; berjanji (dengan する)",
+  "meaning_id": "janji, perjanjian; berjanji",
   "meaning_en": "promise, appointment; to promise (with する)",
   "jlpt": "n3",
   "pos": "noun-suru",
@@ -10331,7 +10329,7 @@ window.vocabN3 = [
   "word": "賛成",
   "reading": "さんせい",
   "romaji": "sansei",
-  "meaning_id": "setuju, persetujuan; menyetujui (dengan する)",
+  "meaning_id": "setuju, persetujuan; menyetujui",
   "meaning_en": "agreement, approval; to agree, to be in favor of (with する)",
   "jlpt": "n3",
   "pos": "noun-suru",
@@ -10359,7 +10357,7 @@ window.vocabN3 = [
   "word": "反対",
   "reading": "はんたい",
   "romaji": "hantai",
-  "meaning_id": "menentang, tidak setuju; kebalikan/berlawanan (dengan する)",
+  "meaning_id": "menentang, tidak setuju; kebalikan/berlawanan",
   "meaning_en": "opposition, objection; to oppose, to object (with する)",
   "jlpt": "n3",
   "pos": "noun-suru",
@@ -10387,7 +10385,7 @@ window.vocabN3 = [
   "word": "議論",
   "reading": "ぎろん",
   "romaji": "giron",
-  "meaning_id": "diskusi, perdebatan; berdiskusi/berdebat (dengan する)",
+  "meaning_id": "diskusi, perdebatan; berdiskusi/berdebat",
   "meaning_en": "discussion, debate, argument; to discuss, to debate (with する)",
   "jlpt": "n3",
   "pos": "noun-suru",
@@ -10472,7 +10470,7 @@ window.vocabN3 = [
   "word": "紹介",
   "reading": "しょうかい",
   "romaji": "shoukai",
-  "meaning_id": "perkenalan, rekomendasi; memperkenalkan (dengan する)",
+  "meaning_id": "perkenalan, rekomendasi; memperkenalkan",
   "meaning_en": "introduction, referral; to introduce, to recommend (with する)",
   "jlpt": "n3",
   "pos": "noun-suru",
@@ -10501,7 +10499,7 @@ window.vocabN3 = [
   "word": "招待",
   "reading": "しょうたい",
   "romaji": "shoutai",
-  "meaning_id": "undangan; mengundang secara resmi (dengan する)",
+  "meaning_id": "undangan; mengundang secara resmi",
   "meaning_en": "invitation; to invite formally (with する)",
   "jlpt": "n3",
   "pos": "noun-suru",
@@ -10529,7 +10527,7 @@ window.vocabN3 = [
   "word": "歓迎",
   "reading": "かんげい",
   "romaji": "kangei",
-  "meaning_id": "sambutan hangat, penerimaan; menyambut dengan hangat (dengan する)",
+  "meaning_id": "sambutan hangat, penerimaan; menyambut dengan hangat",
   "meaning_en": "welcome, warm reception; to welcome (with する)",
   "jlpt": "n3",
   "pos": "noun-suru",
@@ -10557,7 +10555,7 @@ window.vocabN3 = [
   "word": "感謝",
   "reading": "かんしゃ",
   "romaji": "kansha",
-  "meaning_id": "rasa terima kasih, rasa syukur; berterima kasih (dengan する)",
+  "meaning_id": "rasa terima kasih, rasa syukur; berterima kasih",
   "meaning_en": "gratitude, appreciation; to be grateful (with する)",
   "jlpt": "n3",
   "pos": "noun-suru",
@@ -10613,7 +10611,7 @@ window.vocabN3 = [
   "word": "連絡",
   "reading": "れんらく",
   "romaji": "renraku",
-  "meaning_id": "kontak, kabar; menghubungi, memberi kabar (dengan する)",
+  "meaning_id": "kontak, kabar; menghubungi, memberi kabar",
   "meaning_en": "contact, communication; to contact, to get in touch (with する)",
   "jlpt": "n3",
   "pos": "noun-suru",
@@ -10642,7 +10640,7 @@ window.vocabN3 = [
   "word": "報告",
   "reading": "ほうこく",
   "romaji": "houkoku",
-  "meaning_id": "laporan; melaporkan (dengan する)",
+  "meaning_id": "laporan; melaporkan",
   "meaning_en": "report, briefing; to report (with する)",
   "jlpt": "n3",
   "pos": "noun-suru",
@@ -11093,7 +11091,7 @@ window.vocabN3 = [
   "meaning_id": "setelah itu, kemudian, dan juga",
   "meaning_en": "after that, and then, besides",
   "jlpt": "n3",
-  "pos": "conj-temporal",
+  "pos": "conjunction",
   "common": true,
   "related_grammar": [],
   "formalitas": 1,
