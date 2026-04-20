@@ -26,11 +26,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'rekan'],
   nuance: 'Dipakai untuk pertemuan tatap muka.',
   conj_type: 'godan',
-  examples: [{"jp": "友達に会いました。", "id": "Saya bertemu teman.", "level": "n5", "tags": ["hubungan"]}, {"jp": "明日、先生に会います。", "id": "Besok saya akan bertemu guru.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "友達に会いました。", "id": "Saya bertemu teman.", "level": "n5", "tags": ["hubungan"]}, {"jp": "明日、先生に会います。", "id": "Besok saya akan bertemu guru.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -54,7 +55,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: ['vg-n5-00003'],
   see_also: ['vg-n5-00004'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -78,7 +80,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n5-00002'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -102,7 +105,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -126,7 +130,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -150,7 +155,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -174,7 +180,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -198,7 +205,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -218,11 +226,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Te-form irregular: いって (bukan いいて).',
   conj_type: 'godan',
-  examples: [{"jp": "学校に行きます。", "id": "Saya pergi ke sekolah.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "学校に行きます。", "id": "Saya pergi ke sekolah.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: ['vg-n5-00010'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -246,7 +255,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: ['vg-n5-00009'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -270,7 +280,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -290,11 +301,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '図書館 = perpustakaan umum. Beda: 本屋 (honya) = toko buku.',
   conj_type: 'godan',
-  examples: [{"jp": "図書館で本を借りることができます。", "id": "Di perpustakaan bisa meminjam buku.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "図書館で本を借りることができます。", "id": "Di perpustakaan bisa meminjam buku.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -318,7 +330,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -338,11 +351,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Godan meski berakhiran る.',
   conj_type: 'godan',
-  examples: [{"jp": "野菜を切ります。", "id": "Saya memotong sayuran.", "level": "n5", "tags": ["makanan"]}],
+  examples: [{"jp": "野菜を切ります。", "id": "Saya memotong sayuran.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -366,7 +380,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -390,7 +405,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: ['vg-n5-00017'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -414,7 +430,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: ['vg-n5-00016'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -438,7 +455,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -462,7 +480,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -486,7 +505,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -510,7 +530,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: ['vg-n5-00022'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -534,7 +555,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: ['vg-n5-00021'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -554,11 +576,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Keigo: 召し上がる (sonkei), いただく (kenjo).',
   conj_type: 'ichidan',
-  examples: [{"jp": "朝ご飯を食べました。", "id": "Saya makan sarapan.", "level": "n5", "tags": ["makanan"]}],
+  examples: [{"jp": "朝ご飯を食べました。", "id": "Saya makan sarapan.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n5-00024'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -578,11 +601,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Keigo: 召し上がる (sonkei), いただく (kenjo).',
   conj_type: 'godan',
-  examples: [{"jp": "水を飲んでください。", "id": "Tolong minum air.", "level": "n5", "tags": ["makanan", "kesehatan"]}],
+  examples: [{"jp": "水を飲んでください。", "id": "Tolong minum air.", "level": "n5", "tags": ["makanan-minuman", "kesehatan"]}],
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n5-00023'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -602,11 +626,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'わかる = mengerti/paham (intransitif). Tidak ada objek-を; pakai が: 日本語がわかります.',
   conj_type: 'godan',
-  examples: [{"jp": "日本語を使って話してください。", "id": "Tolong bicara menggunakan bahasa Jepang.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "日本語を使って話してください。", "id": "Tolong bicara menggunakan bahasa Jepang.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -626,11 +651,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'できる = bisa/mampu. 日本語ができる = bisa bahasa Jepang. Juga: selesai dibuat/terjadi.',
   conj_type: 'godan',
-  examples: [{"jp": "ケーキを作りました。", "id": "Saya membuat kue.", "level": "n5", "tags": ["makanan"]}],
+  examples: [{"jp": "ケーキを作りました。", "id": "Saya membuat kue.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -654,7 +680,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -674,11 +701,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '〜を出る: keluar dari tempat. 〜に出る: muncul di acara.',
   conj_type: 'ichidan',
-  examples: [{"jp": "学校を出ました。", "id": "Saya keluar dari sekolah.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "学校を出ました。", "id": "Saya keluar dari sekolah.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: ['vg-n5-00029'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -702,7 +730,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: ['vg-n5-00028'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -722,11 +751,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'rekan'],
   nuance: '寝る = tidur/berbaring. 寝る時間 = jam tidur. Berbeda: 眠る (nemuru) = tertidur (intransitif).',
   conj_type: 'godan',
-  examples: [{"jp": "会社で働いています。", "id": "Saya bekerja di perusahaan.", "level": "n5", "tags": ["kerja"]}],
+  examples: [{"jp": "会社で働いています。", "id": "Saya bekerja di perusahaan.", "level": "n5", "tags": ["pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -746,11 +776,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'はたらく (働く) = bekerja (aktif). Berbeda: 仕事する (aktivitas kerja).',
   conj_type: 'godan',
-  examples: [{"jp": "日本語で話しましょう。", "id": "Ayo bicara dalam bahasa Jepang.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "日本語で話しましょう。", "id": "Ayo bicara dalam bahasa Jepang.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -774,7 +805,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -798,7 +830,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -822,7 +855,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -846,7 +880,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: ['vg-n5-00036'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -870,7 +905,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: ['vg-n5-00035'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -890,11 +926,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Nai-form: 買わない (う→わ).',
   conj_type: 'godan',
-  examples: [{"jp": "スーパーで野菜を買いました。", "id": "Saya membeli sayuran di supermarket.", "level": "n5", "tags": ["belanja", "makanan"]}],
+  examples: [{"jp": "スーパーで野菜を買いました。", "id": "Saya membeli sayuran di supermarket.", "level": "n5", "tags": ["belanja", "makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -918,7 +955,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: ['vg-n5-00037'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -942,7 +980,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: ['vg-n5-00040'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -962,11 +1001,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman'],
   nuance: 'Lawan: 貸す (meminjamkan).',
   conj_type: 'ichidan',
-  examples: [{"jp": "図書館で本を借りました。", "id": "Saya meminjam buku di perpustakaan.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "図書館で本を借りました。", "id": "Saya meminjam buku di perpustakaan.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: ['vg-n5-00039'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -986,11 +1026,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'murid'],
   nuance: 'もらう = menerima/mendapat (dari orang). Lawan: あげる (ageru) = memberi.',
   conj_type: 'ichidan',
-  examples: [{"jp": "日本語を教えています。", "id": "Saya mengajar bahasa Jepang.", "level": "n5", "tags": ["sekolah", "kerja"]}],
+  examples: [{"jp": "日本語を教えています。", "id": "Saya mengajar bahasa Jepang.", "level": "n5", "tags": ["pendidikan", "pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1010,11 +1051,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'あげる = memberi (ke orang). Keigo: さしあげる (humble). Lawan: もらう.',
   conj_type: 'ichidan',
-  examples: [{"jp": "単語を覚えました。", "id": "Saya menghafal kosakata.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "単語を覚えました。", "id": "Saya menghafal kosakata.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1038,7 +1080,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1062,7 +1105,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n5-00045'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1086,7 +1130,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: ['vg-n5-00044'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1106,11 +1151,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Intransitif. Transitif: 終える (jarang).',
   conj_type: 'godan',
-  examples: [{"jp": "授業が終わりました。", "id": "Pelajaran sudah selesai.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "授業が終わりました。", "id": "Pelajaran sudah selesai.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1134,7 +1180,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: ['vg-n5-00046'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1158,7 +1205,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1178,11 +1226,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
   conj_type: 'godan',
-  examples: [{"jp": "メールを送りました。", "id": "Saya mengirim email.", "level": "n5", "tags": ["kerja"]}],
+  examples: [{"jp": "メールを送りました。", "id": "Saya mengirim email.", "level": "n5", "tags": ["pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1206,7 +1255,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n5-00051', 'vg-n5-00052'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1230,7 +1280,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n5-00052', 'vg-n5-00050'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1254,7 +1305,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n5-00051', 'vg-n5-00050'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1278,7 +1330,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n5-00054'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1302,7 +1355,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n5-00053'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1326,7 +1380,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1350,7 +1405,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1374,7 +1430,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: ['vg-n5-00058'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1398,7 +1455,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: ['vg-n5-00057'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1418,11 +1476,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Konjugasi pakai よ sebagai stem: よくない, よかった. いい hanya untuk bentuk kamus.',
   conj_type: 'adj-i',
-  examples: [{"jp": "いい天気ですね。", "id": "Cuacanya bagus ya.", "level": "n5", "tags": ["alam"]}],
+  examples: [{"jp": "いい天気ですね。", "id": "Cuacanya bagus ya.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: ['vg-n5-00060'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1442,11 +1501,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Juga dipakai untuk meminta maaf: 悪かった！',
   conj_type: 'adj-i',
-  examples: [{"jp": "天気が悪いです。", "id": "Cuacanya buruk.", "level": "n5", "tags": ["alam"]}],
+  examples: [{"jp": "天気が悪いです。", "id": "Cuacanya buruk.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: ['vg-n5-00059'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1470,7 +1530,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: ['vg-n5-00062'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1490,11 +1551,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '古い = tua/lama/usang. 古い建物 = bangunan tua. Untuk orang pakai 年を取った.',
   conj_type: 'adj-i',
-  examples: [{"jp": "スーパーの野菜は安いです。", "id": "Sayuran di supermarket murah.", "level": "n5", "tags": ["belanja", "makanan"]}],
+  examples: [{"jp": "スーパーの野菜は安いです。", "id": "Sayuran di supermarket murah.", "level": "n5", "tags": ["belanja", "makanan-minuman"]}],
   synonyms: [],
   antonyms: ['vg-n5-00061'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1514,11 +1576,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Untuk suhu udara. 熱い untuk benda panas (お湯が熱い).',
   conj_type: 'adj-i',
-  examples: [{"jp": "今日はとても暑いですね。", "id": "Hari ini sangat panas ya.", "level": "n5", "tags": ["alam"]}],
+  examples: [{"jp": "今日はとても暑いですね。", "id": "Hari ini sangat panas ya.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: ['vg-n5-00064'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1538,11 +1601,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Untuk suhu udara. 冷たい untuk benda dingin.',
   conj_type: 'adj-i',
-  examples: [{"jp": "冬は寒いです。", "id": "Musim dingin itu dingin.", "level": "n5", "tags": ["alam"]}],
+  examples: [{"jp": "冬は寒いです。", "id": "Musim dingin itu dingin.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: ['vg-n5-00063'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1566,7 +1630,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: ['vg-n5-00066'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1590,7 +1655,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: ['vg-n5-00065'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1614,7 +1680,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: ['vg-n5-00068'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1638,7 +1705,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: ['vg-n5-00067'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1658,11 +1726,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '難しい = sulit/susah. Lawan: やさしい/簡単な. 発音が難しい = pengucapannya sulit.',
   conj_type: 'adj-i',
-  examples: [{"jp": "このラーメンはおいしいです。", "id": "Ramen ini enak.", "level": "n5", "tags": ["makanan"]}],
+  examples: [{"jp": "このラーメンはおいしいです。", "id": "Ramen ini enak.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1682,11 +1751,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '易しい/簡単な = mudah. HATI-HATI: 易しい (yaさしい) vs 優しい (やさしい = baik hati). Kanji beda!',
   conj_type: 'adj-i',
-  examples: [{"jp": "日本語は難しいです。", "id": "Bahasa Jepang itu sulit.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "日本語は難しいです。", "id": "Bahasa Jepang itu sulit.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: ['vg-n5-00071'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1706,11 +1776,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Beda dengan 優しい (baik hati) — homofon tapi beda kanji.',
   conj_type: 'adj-i',
-  examples: [{"jp": "この問題は易しいです。", "id": "Soal ini mudah.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "この問題は易しいです。", "id": "Soal ini mudah.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: ['vg-n5-00070'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1730,11 +1801,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'rekan'],
   nuance: '安い = murah. Lawan: 高い. 安くておいしい = murah dan enak (sering dipakai bersama).',
   conj_type: 'adj-i',
-  examples: [{"jp": "最近、とても忙しいです。", "id": "Belakangan ini saya sangat sibuk.", "level": "n5", "tags": ["kerja"]}],
+  examples: [{"jp": "最近、とても忙しいです。", "id": "Belakangan ini saya sangat sibuk.", "level": "n5", "tags": ["pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1758,7 +1830,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1778,11 +1851,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '短い = pendek (ukuran/waktu). Lawan: 長い. 時間が短い = waktunya singkat.',
   conj_type: 'adj-i',
-  examples: [{"jp": "この川は長いです。", "id": "Sungai ini panjang.", "level": "n5", "tags": ["alam"]}],
+  examples: [{"jp": "この川は長いです。", "id": "Sungai ini panjang.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: ['vg-n5-00075'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1806,7 +1880,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: ['vg-n5-00074'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1830,7 +1905,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: ['vg-n5-00077'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1854,7 +1930,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: ['vg-n5-00076'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1874,11 +1951,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Jangan pakai untuk diri sendiri — terkesan sombong. Gunakan 得意 untuk diri sendiri.',
   conj_type: 'adj-na',
-  examples: [{"jp": "田中さんは料理が上手ですね。", "id": "Tanaka-san pandai masak ya.", "level": "n5", "tags": ["makanan", "sopan-santun"]}],
+  examples: [{"jp": "田中さんは料理が上手ですね。", "id": "Tanaka-san pandai masak ya.", "level": "n5", "tags": ["makanan-minuman", "sopan-santun"]}],
   synonyms: [],
   antonyms: ['vg-n5-00079'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1902,7 +1980,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: ['vg-n5-00078'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1922,11 +2001,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Dua arti: cantik/indah dan bersih. Perhatikan konteks.',
   conj_type: 'adj-na',
-  examples: [{"jp": "この花はきれいですね。", "id": "Bunga ini cantik ya.", "level": "n5", "tags": ["alam"]}],
+  examples: [{"jp": "この花はきれいですね。", "id": "Bunga ini cantik ya.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1946,11 +2026,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
   conj_type: 'adj-na',
-  examples: [{"jp": "この図書館は静かです。", "id": "Perpustakaan ini tenang.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "この図書館は静かです。", "id": "Perpustakaan ini tenang.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: ['vg-n5-00082'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1974,7 +2055,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: ['vg-n5-00081'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1998,7 +2080,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2022,7 +2105,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2042,11 +2126,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "学校は９時に始まります。", "id": "Sekolah mulai jam 9.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "学校は９時に始まります。", "id": "Sekolah mulai jam 9.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2066,11 +2151,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '会社 = perusahaan. 会社員 = karyawan. 会社に行く = pergi kerja.',
   conj_type: null,
-  examples: [{"jp": "父は大きい会社で働いています。", "id": "Ayah bekerja di perusahaan besar.", "level": "n5", "tags": ["kerja", "keluarga"]}],
+  examples: [{"jp": "父は大きい会社で働いています。", "id": "Ayah bekerja di perusahaan besar.", "level": "n5", "tags": ["pekerjaan", "keluarga"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2090,11 +2176,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '教室 = ruang kelas. 教室に入る = masuk ke kelas.',
   conj_type: null,
-  examples: [{"jp": "教室に先生がいます。", "id": "Di ruang kelas ada guru.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "教室に先生がいます。", "id": "Di ruang kelas ada guru.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2118,7 +2205,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2142,7 +2230,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2162,11 +2251,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "好きな食べ物は何ですか。", "id": "Makanan apa yang kamu suka?", "level": "n5", "tags": ["makanan"]}],
+  examples: [{"jp": "好きな食べ物は何ですか。", "id": "Makanan apa yang kamu suka?", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2186,11 +2276,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "飲み物は何がいいですか。", "id": "Minuman apa yang kamu mau?", "level": "n5", "tags": ["makanan"]}],
+  examples: [{"jp": "飲み物は何がいいですか。", "id": "Minuman apa yang kamu mau?", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2214,7 +2305,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2234,11 +2326,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Untuk memanggil guru langsung: 先生！ (bukan nama). Juga dipakai untuk dokter, pengacara.',
   conj_type: null,
-  examples: [{"jp": "田中先生はやさしいです。", "id": "Guru Tanaka baik hati.", "level": "n5", "tags": ["sekolah"]}, {"jp": "先生、質問があります。", "id": "Pak/Bu Guru, saya ada pertanyaan.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "田中先生はやさしいです。", "id": "Guru Tanaka baik hati.", "level": "n5", "tags": ["pendidikan"]}, {"jp": "先生、質問があります。", "id": "Pak/Bu Guru, saya ada pertanyaan.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2262,7 +2355,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2286,7 +2380,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n5-00096', 'vg-n5-00097'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2310,7 +2405,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: ['vg-n5-00097'],
   see_also: ['vg-n5-00095'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2334,7 +2430,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: ['vg-n5-00096'],
   see_also: ['vg-n5-00095'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2354,11 +2451,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '天気がいい/わるい adalah kolokasi paling umum.',
   conj_type: null,
-  examples: [{"jp": "今日は天気がいいです。", "id": "Hari ini cuacanya bagus.", "level": "n5", "tags": ["alam"]}],
+  examples: [{"jp": "今日は天気がいいです。", "id": "Hari ini cuacanya bagus.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2382,7 +2480,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2402,11 +2501,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "難しい言葉を覚えました。", "id": "Saya menghafal kata-kata sulit.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "難しい言葉を覚えました。", "id": "Saya menghafal kata-kata sulit.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2430,7 +2530,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2450,11 +2551,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'rekan'],
   nuance: 'Untuk bicara tentang ayah sendiri. お父さん untuk ayah orang lain.',
   conj_type: null,
-  examples: [{"jp": "父は会社員です。", "id": "Ayah saya pegawai kantor.", "level": "n5", "tags": ["keluarga", "kerja"]}],
+  examples: [{"jp": "父は会社員です。", "id": "Ayah saya pegawai kantor.", "level": "n5", "tags": ["keluarga", "pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2474,11 +2576,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'rekan'],
   nuance: 'Untuk bicara tentang ibu sendiri. お母さん untuk ibu orang lain.',
   conj_type: null,
-  examples: [{"jp": "母は料理が上手です。", "id": "Ibu saya pandai masak.", "level": "n5", "tags": ["keluarga", "makanan"]}],
+  examples: [{"jp": "母は料理が上手です。", "id": "Ibu saya pandai masak.", "level": "n5", "tags": ["keluarga", "makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2498,11 +2601,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '弟 (おとうと) = adik laki-laki saya. Bicara tentang adik orang lain: 弟さん.',
   conj_type: null,
-  examples: [{"jp": "朝ご飯を食べましたか。", "id": "Apakah kamu sudah sarapan?", "level": "n5", "tags": ["makanan"]}],
+  examples: [{"jp": "朝ご飯を食べましたか。", "id": "Apakah kamu sudah sarapan?", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: ['vg-n5-00105'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2526,7 +2630,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: ['vg-n5-00104'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2550,7 +2655,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2574,7 +2680,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2594,11 +2701,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '本 juga dibaca もと (asal-usul) dan ほん (buku). Konteks menentukan.',
   conj_type: null,
-  examples: [{"jp": "図書館で本を借りました。", "id": "Saya meminjam buku di perpustakaan.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "図書館で本を借りました。", "id": "Saya meminjam buku di perpustakaan.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2622,7 +2730,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2646,7 +2755,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2670,7 +2780,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2694,7 +2805,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2714,11 +2826,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "たくさん食べました。", "id": "Saya makan banyak.", "level": "n5", "tags": ["makanan"]}],
+  examples: [{"jp": "たくさん食べました。", "id": "Saya makan banyak.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: ['vg-n5-00114'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2738,11 +2851,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'ちょっと lebih kasual dan serbaguna.',
   conj_type: null,
-  examples: [{"jp": "日本語が少し話せます。", "id": "Saya bisa berbicara sedikit bahasa Jepang.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "日本語が少し話せます。", "id": "Saya bisa berbicara sedikit bahasa Jepang.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: ['vg-n5-00113'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2762,11 +2876,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Dengan positif = sudah (もう食べた). Dengan negatif = tidak lagi (もう食べない).',
   conj_type: null,
-  examples: [{"jp": "もう食べましたか。", "id": "Sudah makan?", "level": "n5", "tags": ["makanan"]}],
+  examples: [{"jp": "もう食べましたか。", "id": "Sudah makan?", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2786,11 +2901,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'まだ〜ている = masih. まだ〜ていない = belum.',
   conj_type: null,
-  examples: [{"jp": "まだ食べていません。", "id": "Saya belum makan.", "level": "n5", "tags": ["makanan"]}],
+  examples: [{"jp": "まだ食べていません。", "id": "Saya belum makan.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: ['vg-n5-00115'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2814,7 +2930,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2834,11 +2951,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "ゆっくり話してください。", "id": "Tolong bicara pelan-pelan.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "ゆっくり話してください。", "id": "Tolong bicara pelan-pelan.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2862,7 +2980,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2886,7 +3005,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n5-00119'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2910,7 +3030,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2934,7 +3055,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2958,7 +3080,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2982,7 +3105,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3006,7 +3130,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3030,7 +3155,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3054,7 +3180,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3074,11 +3201,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Botol, pensil, pohon, jalan. Perhatikan: 1=いっぽん, 3=さんぼん, 6=ろっぽん.',
   conj_type: null,
-  examples: [{"jp": "ペンを２本ください。", "id": "Tolong berikan 2 pulpen.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "ペンを２本ください。", "id": "Tolong berikan 2 pulpen.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3102,7 +3230,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3126,7 +3255,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3146,11 +3276,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "富士山は高いです。", "id": "Gunung Fuji itu tinggi.", "level": "n5", "tags": ["alam"]}],
+  examples: [{"jp": "富士山は高いです。", "id": "Gunung Fuji itu tinggi.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3174,7 +3305,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3194,11 +3326,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'みかん = jeruk mandarin (khas Jepang). Beda: オレンジ = jeruk biasa.',
   conj_type: null,
-  examples: [{"jp": "冬はみかんをよく食べます。", "id": "Di musim dingin saya sering makan jeruk mandarin.", "level": "n5", "tags": ["makanan", "alam"]}],
+  examples: [{"jp": "冬はみかんをよく食べます。", "id": "Di musim dingin saya sering makan jeruk mandarin.", "level": "n5", "tags": ["makanan-minuman", "alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3222,7 +3355,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3242,11 +3376,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "北海道は雪が多いです。", "id": "Di Hokkaido banyak salju.", "level": "n5", "tags": ["alam"]}],
+  examples: [{"jp": "北海道は雪が多いです。", "id": "Di Hokkaido banyak salju.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3266,11 +3401,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Bisa berarti nasi atau makan secara umum (朝ご飯=sarapan).',
   conj_type: null,
-  examples: [{"jp": "ご飯を食べましょう。", "id": "Ayo makan.", "level": "n5", "tags": ["makanan"]}],
+  examples: [{"jp": "ご飯を食べましょう。", "id": "Ayo makan.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3290,11 +3426,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "水を一杯ください。", "id": "Tolong berikan segelas air.", "level": "n5", "tags": ["makanan", "belanja"]}],
+  examples: [{"jp": "水を一杯ください。", "id": "Tolong berikan segelas air.", "level": "n5", "tags": ["makanan-minuman", "belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3314,11 +3451,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "肉が好きです。", "id": "Saya suka daging.", "level": "n5", "tags": ["makanan"]}],
+  examples: [{"jp": "肉が好きです。", "id": "Saya suka daging.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3342,7 +3480,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3362,11 +3501,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "野菜をたくさん食べてください。", "id": "Tolong makan banyak sayuran.", "level": "n5", "tags": ["makanan", "kesehatan"]}],
+  examples: [{"jp": "野菜をたくさん食べてください。", "id": "Tolong makan banyak sayuran.", "level": "n5", "tags": ["makanan-minuman", "kesehatan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3390,7 +3530,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3414,7 +3555,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n5-00141'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3438,7 +3580,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3462,7 +3605,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3486,7 +3630,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: ['vg-n5-00146'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3510,7 +3655,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: ['vg-n5-00145'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3530,11 +3676,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
   conj_type: 'adj-i',
-  examples: [{"jp": "赤いりんごがおいしいです。", "id": "Apel merah itu enak.", "level": "n5", "tags": ["makanan"]}],
+  examples: [{"jp": "赤いりんごがおいしいです。", "id": "Apel merah itu enak.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3554,11 +3701,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Bahasa Jepang klasik: 青 mencakup biru dan hijau untuk alam (青信号=lampu hijau).',
   conj_type: 'adj-i',
-  examples: [{"jp": "青い空がきれいです。", "id": "Langit biru itu indah.", "level": "n5", "tags": ["alam"]}],
+  examples: [{"jp": "青い空がきれいです。", "id": "Langit biru itu indah.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3582,7 +3730,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: ['vg-n5-00150'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3602,11 +3751,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "左の建物が学校です。", "id": "Bangunan di kiri adalah sekolah.", "level": "n5", "tags": ["perjalanan", "sekolah"]}],
+  examples: [{"jp": "左の建物が学校です。", "id": "Bangunan di kiri adalah sekolah.", "level": "n5", "tags": ["perjalanan", "pendidikan"]}],
   synonyms: [],
   antonyms: ['vg-n5-00149'],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3626,11 +3776,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Menggambarkan perasaan senang yang aktif. Berbeda dengan 嬉しい (ureshii) yang lebih pasif/situasional.',
   conj_type: 'adj-i',
-  examples: [{"jp": "パーティーはとても楽しかったです。", "id": "Pestanya sangat menyenangkan.", "level": "n5", "tags": ["emosi", "kehidupan-sehari"]}, {"jp": "日本語の勉強は楽しいです。", "id": "Belajar bahasa Jepang itu menyenangkan.", "level": "n5", "tags": ["sekolah", "emosi"]}],
+  examples: [{"jp": "パーティーはとても楽しかったです。", "id": "Pestanya sangat menyenangkan.", "level": "n5", "tags": ["emosi", "kehidupan-sehari"]}, {"jp": "日本語の勉強は楽しいです。", "id": "Belajar bahasa Jepang itu menyenangkan.", "level": "n5", "tags": ["pendidikan", "emosi"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3650,11 +3801,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Umum untuk pekerjaan sehari-hari. Lebih formal: 業務 (gyoumu). Juga bisa pakai +する: 仕事する.',
   conj_type: 'suru',
-  examples: [{"jp": "仕事は何時に終わりますか。", "id": "Kerja selesai jam berapa?", "level": "n5", "tags": ["kerja"]}, {"jp": "毎日仕事をしています。", "id": "Saya bekerja setiap hari.", "level": "n5", "tags": ["kerja"]}],
+  examples: [{"jp": "仕事は何時に終わりますか。", "id": "Kerja selesai jam berapa?", "level": "n5", "tags": ["pekerjaan"]}, {"jp": "毎日仕事をしています。", "id": "Saya bekerja setiap hari.", "level": "n5", "tags": ["pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3662,7 +3814,7 @@ window.vocabN5 = [
   word: 'バス',
   reading: 'バス',
   romaji: 'basu',
-  meaning_id: 'bus',
+  meaning_id: 'bus (transportasi)',
   meaning_en: 'bus',
   jlpt: 'n5',
   pos: 'noun',
@@ -3678,7 +3830,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n5-00157'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3702,7 +3855,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3722,11 +3876,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '勉強 (noun) + する. Bisa dipisah: 日本語を勉強する atau digabung langsung: 勉強します.',
   conj_type: 'suru',
-  examples: [{"jp": "毎日日本語を勉強しています。", "id": "Saya belajar bahasa Jepang setiap hari.", "level": "n5", "tags": ["sekolah"]}, {"jp": "試験のために勉強しました。", "id": "Saya belajar untuk ujian.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "毎日日本語を勉強しています。", "id": "Saya belajar bahasa Jepang setiap hari.", "level": "n5", "tags": ["pendidikan"]}, {"jp": "試験のために勉強しました。", "id": "Saya belajar untuk ujian.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3750,7 +3905,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3774,7 +3930,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n5-00153'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3798,7 +3955,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n5-00159'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3822,7 +3980,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n5-00158'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3846,7 +4005,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3870,7 +4030,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n5-00160'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3894,7 +4055,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n5-00161'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3918,7 +4080,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n5-00164'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3942,7 +4105,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n5-00163'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3966,7 +4130,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3986,11 +4151,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Dua nuansa: berbeda (これは違う = ini berbeda) dan salah/tidak tepat (違います = itu salah). Lawan: 同じ.',
   conj_type: 'godan',
-  examples: [{"jp": "この答えは違います。", "id": "Jawaban ini salah.", "level": "n5", "tags": ["sekolah"]}, {"jp": "二つの意見が違います。", "id": "Kedua pendapat itu berbeda.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [{"jp": "この答えは違います。", "id": "Jawaban ini salah.", "level": "n5", "tags": ["pendidikan"]}, {"jp": "二つの意見が違います。", "id": "Kedua pendapat itu berbeda.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n5-00167'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4010,11 +4176,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Unik: adj-na tapi tidak pakai な saat atributif (同じ学校, bukan 同じな学校).',
   conj_type: 'adj-na',
-  examples: [{"jp": "私たちは同じ学校に通っています。", "id": "Kami bersekolah di sekolah yang sama.", "level": "n5", "tags": ["sekolah"]}, {"jp": "二人は同じ意見です。", "id": "Keduanya berpendapat sama.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [{"jp": "私たちは同じ学校に通っています。", "id": "Kami bersekolah di sekolah yang sama.", "level": "n5", "tags": ["pendidikan"]}, {"jp": "二人は同じ意見です。", "id": "Keduanya berpendapat sama.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n5-00166'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4038,7 +4205,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4062,7 +4230,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4086,7 +4255,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4110,7 +4280,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4134,7 +4305,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4154,11 +4326,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: 'Keigo: いらっしゃる (sonkei). Berbeda dari 来る: 行く = menjauh dari pembicara.',
   conj_type: 'godan',
-  examples: [{"jp": "学校に行きます。", "id": "Saya pergi ke sekolah.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "学校に行きます。", "id": "Saya pergi ke sekolah.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4182,7 +4355,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4206,7 +4380,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4230,7 +4405,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4254,7 +4430,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4278,7 +4455,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4302,7 +4480,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4326,7 +4505,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4346,11 +4526,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: 'godan',
-  examples: [{"jp": "名前を書いてください。", "id": "Tolong tulis namanya.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "名前を書いてください。", "id": "Tolong tulis namanya.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4374,7 +4555,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4398,7 +4580,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4422,7 +4605,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4446,7 +4630,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4466,11 +4651,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: '借りる = meminjam (dari orang). Lawan: 貸す.',
   conj_type: 'ichidan',
-  examples: [{"jp": "図書館で本を借りました。", "id": "Saya meminjam buku di perpustakaan.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "図書館で本を借りました。", "id": "Saya meminjam buku di perpustakaan.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4490,11 +4676,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: '聞く = mendengarkan (musik, dll) ATAU bertanya. 聞こえる = terdengar (involuntar).',
   conj_type: 'godan',
-  examples: [{"jp": "音楽を聞きながら勉強します。", "id": "Saya belajar sambil mendengarkan musik.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "音楽を聞きながら勉強します。", "id": "Saya belajar sambil mendengarkan musik.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4518,7 +4705,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4542,7 +4730,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4566,7 +4755,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4586,11 +4776,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: 'ichidan',
-  examples: [{"jp": "質問に答えてください。", "id": "Tolong jawab pertanyaannya.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "質問に答えてください。", "id": "Tolong jawab pertanyaannya.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4614,7 +4805,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4634,11 +4826,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: '死ぬ = satu-satunya verb-u dengan ending ぬ. 亡くなる lebih halus untuk orang.',
   conj_type: 'godan',
-  examples: [{"jp": "その木は枯れて死にました。", "id": "Pohon itu layu dan mati.", "level": "n5", "tags": ["alam"]}],
+  examples: [{"jp": "その木は枯れて死にました。", "id": "Pohon itu layu dan mati.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4662,7 +4855,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4686,7 +4880,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4710,7 +4905,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4734,7 +4930,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4754,11 +4951,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: 'Keigo: 召し上がる (sonkei), いただく (kenjo).',
   conj_type: 'ichidan',
-  examples: [{"jp": "何を食べますか。", "id": "Mau makan apa?", "level": "n5", "tags": ["makanan"]}],
+  examples: [{"jp": "何を食べますか。", "id": "Mau makan apa?", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4782,7 +4980,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4802,11 +5001,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: 'godan',
-  examples: [{"jp": "料理を作ります。", "id": "Saya membuat masakan.", "level": "n5", "tags": ["makanan"]}],
+  examples: [{"jp": "料理を作ります。", "id": "Saya membuat masakan.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4830,7 +5030,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4854,7 +5055,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4874,11 +5076,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: 'godan',
-  examples: [{"jp": "鳥が空を飛んでいます。", "id": "Burung terbang di langit.", "level": "n5", "tags": ["alam"]}],
+  examples: [{"jp": "鳥が空を飛んでいます。", "id": "Burung terbang di langit.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4902,7 +5105,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4926,7 +5130,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4950,7 +5155,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4974,7 +5180,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4994,11 +5201,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: '習う = belajar dari guru/orang lain. Berbeda: 勉強する = belajar mandiri.',
   conj_type: 'godan',
-  examples: [{"jp": "先生に日本語を習っています。", "id": "Saya belajar bahasa Jepang dari guru.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "先生に日本語を習っています。", "id": "Saya belajar bahasa Jepang dari guru.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5018,11 +5226,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: '〜になる (noun/adj-na), 〜くなる (adj-i). 医者になる = menjadi dokter.',
   conj_type: 'godan',
-  examples: [{"jp": "将来、医者になりたいです。", "id": "Di masa depan, saya ingin menjadi dokter.", "level": "n5", "tags": ["kerja"]}],
+  examples: [{"jp": "将来、医者になりたいです。", "id": "Di masa depan, saya ingin menjadi dokter.", "level": "n5", "tags": ["pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5046,7 +5255,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5070,7 +5280,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5090,11 +5301,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: '電車に乗る = naik kereta. Lawan: 降りる (oriru).',
   conj_type: 'godan',
-  examples: [{"jp": "バスに乗って学校に行きます。", "id": "Saya naik bus pergi ke sekolah.", "level": "n5", "tags": ["perjalanan", "sekolah"]}],
+  examples: [{"jp": "バスに乗って学校に行きます。", "id": "Saya naik bus pergi ke sekolah.", "level": "n5", "tags": ["perjalanan", "pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5118,7 +5330,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5142,7 +5355,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5166,7 +5380,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5190,7 +5405,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5214,7 +5430,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5238,7 +5455,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5258,11 +5476,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: 'godan',
-  examples: [{"jp": "雨が降っています。", "id": "Hujan turun.", "level": "n5", "tags": ["alam"]}],
+  examples: [{"jp": "雨が降っています。", "id": "Hujan turun.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5286,7 +5505,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5310,7 +5530,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5334,7 +5555,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5358,7 +5580,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5382,7 +5605,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5402,11 +5626,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: 'godan',
-  examples: [{"jp": "今日は体の調子が悪くて会社を休みました。", "id": "Hari ini badan tidak enak jadi tidak masuk kerja.", "level": "n5", "tags": ["kesehatan", "kerja"]}],
+  examples: [{"jp": "今日は体の調子が悪くて会社を休みました。", "id": "Hari ini badan tidak enak jadi tidak masuk kerja.", "level": "n5", "tags": ["kesehatan", "pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5430,7 +5655,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5454,7 +5680,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5474,11 +5701,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: '日本語がわかります (pakai が, bukan を). Intransitif.',
   conj_type: 'godan',
-  examples: [{"jp": "説明がわかりましたか。", "id": "Apakah penjelasannya dimengerti?", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "説明がわかりましたか。", "id": "Apakah penjelasannya dimengerti?", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5502,7 +5730,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5526,7 +5755,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5546,11 +5776,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: '日本語ができます = bisa bahasa Jepang. Juga: できました = sudah selesai.',
   conj_type: 'ichidan',
-  examples: [{"jp": "日本語を少し話すことができます。", "id": "Saya bisa berbicara sedikit bahasa Jepang.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "日本語を少し話すことができます。", "id": "Saya bisa berbicara sedikit bahasa Jepang.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5574,7 +5805,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5594,11 +5826,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: 'godan',
-  examples: [{"jp": "ここでは新鮮な野菜を売っています。", "id": "Di sini menjual sayuran segar.", "level": "n5", "tags": ["belanja", "makanan"]}],
+  examples: [{"jp": "ここでは新鮮な野菜を売っています。", "id": "Di sini menjual sayuran segar.", "level": "n5", "tags": ["belanja", "makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5622,7 +5855,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5642,11 +5876,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: 'adj-i',
-  examples: [{"jp": "赤いバラが好きです。", "id": "Saya suka bunga mawar merah.", "level": "n5", "tags": ["alam"]}],
+  examples: [{"jp": "赤いバラが好きです。", "id": "Saya suka bunga mawar merah.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5666,11 +5901,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: '青い = biru (langit, laut). Di lampu lalu lintas, "hijau" disebut 青 di Jepang.',
   conj_type: 'adj-i',
-  examples: [{"jp": "空が青いですね。", "id": "Langitnya biru ya.", "level": "n5", "tags": ["alam"]}],
+  examples: [{"jp": "空が青いですね。", "id": "Langitnya biru ya.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5694,7 +5930,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5718,7 +5955,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5742,7 +5980,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5766,7 +6005,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5786,11 +6026,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: '高い = mahal (uang) ATAU tinggi (fisik). Konteks menentukan.',
   conj_type: 'adj-i',
-  examples: [{"jp": "このレストランは高いですが、おいしいです。", "id": "Restoran ini mahal tapi enak.", "level": "n5", "tags": ["makanan", "belanja"]}],
+  examples: [{"jp": "このレストランは高いですが、おいしいです。", "id": "Restoran ini mahal tapi enak.", "level": "n5", "tags": ["makanan-minuman", "belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5814,7 +6055,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5838,7 +6080,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5862,7 +6105,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5886,7 +6130,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5910,7 +6155,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5930,11 +6176,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: '熱い = panas saat disentuh/diminum. Beda: 暑い (atsui) = panas cuaca. Kanji beda!',
   conj_type: 'adj-i',
-  examples: [{"jp": "スープが熱いので気をつけてください。", "id": "Supnya panas, hati-hati ya.", "level": "n5", "tags": ["makanan"]}],
+  examples: [{"jp": "スープが熱いので気をつけてください。", "id": "Supnya panas, hati-hati ya.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5954,11 +6201,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: '寒い = dingin cuaca/suhu udara. Beda: 冷たい = dingin saat disentuh.',
   conj_type: 'adj-i',
-  examples: [{"jp": "今日はとても寒いですね。", "id": "Hari ini sangat dingin ya.", "level": "n5", "tags": ["alam"]}],
+  examples: [{"jp": "今日はとても寒いですね。", "id": "Hari ini sangat dingin ya.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5978,11 +6226,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: '冷たい = dingin saat disentuh. Beda: 寒い = cuaca dingin.',
   conj_type: 'adj-i',
-  examples: [{"jp": "冷たい水をください。", "id": "Tolong berikan air dingin.", "level": "n5", "tags": ["makanan"]}],
+  examples: [{"jp": "冷たい水をください。", "id": "Tolong berikan air dingin.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6002,11 +6251,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: 'adj-i',
-  examples: [{"jp": "春は暖かくて気持ちいいですね。", "id": "Musim semi itu hangat dan enak ya.", "level": "n5", "tags": ["alam"]}],
+  examples: [{"jp": "春は暖かくて気持ちいいですね。", "id": "Musim semi itu hangat dan enak ya.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6026,11 +6276,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: 'adj-i',
-  examples: [{"jp": "秋は涼しくて好きです。", "id": "Saya suka musim gugur karena sejuk.", "level": "n5", "tags": ["alam"]}],
+  examples: [{"jp": "秋は涼しくて好きです。", "id": "Saya suka musim gugur karena sejuk.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6050,11 +6301,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: 'adj-i',
-  examples: [{"jp": "日本語の授業はとても楽しいです。", "id": "Pelajaran bahasa Jepang sangat menyenangkan.", "level": "n5", "tags": ["sekolah", "emosi"]}],
+  examples: [{"jp": "日本語の授業はとても楽しいです。", "id": "Pelajaran bahasa Jepang sangat menyenangkan.", "level": "n5", "tags": ["pendidikan", "emosi"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6074,11 +6326,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: '嬉しい = senang atas sesuatu yang diterima. 楽しい = saat melakukan sesuatu yang menyenangkan.',
   conj_type: 'adj-i',
-  examples: [{"jp": "合格して、とても嬉しいです。", "id": "Saya sangat senang bisa lulus.", "level": "n5", "tags": ["emosi", "sekolah"]}],
+  examples: [{"jp": "合格して、とても嬉しいです。", "id": "Saya sangat senang bisa lulus.", "level": "n5", "tags": ["emosi", "pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6102,7 +6355,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6122,11 +6376,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: '辛い = pedas (料理が辛い) ATAU asin (塩辛い). Konteks menentukan.',
   conj_type: 'adj-i',
-  examples: [{"jp": "この料理は辛いですか。", "id": "Apakah masakan ini pedas?", "level": "n5", "tags": ["makanan"]}],
+  examples: [{"jp": "この料理は辛いですか。", "id": "Apakah masakan ini pedas?", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6146,11 +6401,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Lawan kata: からい (spicy/salty)',
   conj_type: 'adj-i',
-  examples: [{"jp": "このケーキはとても甘いです。", "id": "Kue ini sangat manis.", "level": "n5", "tags": ["makanan"]}],
+  examples: [{"jp": "このケーキはとても甘いです。", "id": "Kue ini sangat manis.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6170,11 +6426,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'にがい (苦い) = pahit. 苦手 (nigate) = tidak pandai/tidak suka — kata turunan penting.',
   conj_type: 'adj-i',
-  examples: [{"jp": "コーヒーは苦いですが、好きです。", "id": "Kopi itu pahit tapi saya suka.", "level": "n5", "tags": ["makanan"]}],
+  examples: [{"jp": "コーヒーは苦いですが、好きです。", "id": "Kopi itu pahit tapi saya suka.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6194,11 +6451,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: 'adj-i',
-  examples: [{"jp": "今週はとても忙しいです。", "id": "Minggu ini saya sangat sibuk.", "level": "n5", "tags": ["kerja"]}],
+  examples: [{"jp": "今週はとても忙しいです。", "id": "Minggu ini saya sangat sibuk.", "level": "n5", "tags": ["pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6222,7 +6480,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6246,7 +6505,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6266,11 +6526,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: 'adj-na',
-  examples: [{"jp": "図書館は静かです。", "id": "Perpustakaan itu tenang.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "図書館は静かです。", "id": "Perpustakaan itu tenang.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6290,11 +6551,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: '〜が好きです = saya suka ~. Derajat: 大好き > 好き。',
   conj_type: 'adj-na',
-  examples: [{"jp": "日本語が好きです。", "id": "Saya suka bahasa Jepang.", "level": "n5", "tags": ["emosi", "sekolah"]}],
+  examples: [{"jp": "日本語が好きです。", "id": "Saya suka bahasa Jepang.", "level": "n5", "tags": ["emosi", "pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6314,11 +6576,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: '嫌い = tidak suka. 大嫌い = sangat benci. Lawan: 好き.',
   conj_type: 'adj-na',
-  examples: [{"jp": "野菜が嫌いな子どもが多いです。", "id": "Banyak anak yang tidak suka sayuran.", "level": "n5", "tags": ["makanan", "keluarga"]}],
+  examples: [{"jp": "野菜が嫌いな子どもが多いです。", "id": "Banyak anak yang tidak suka sayuran.", "level": "n5", "tags": ["makanan-minuman", "keluarga"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6338,11 +6601,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: '上手 = pandai (bicara tentang orang lain). Untuk diri sendiri: 得意 (tokui). Lawan: 下手.',
   conj_type: 'adj-na',
-  examples: [{"jp": "彼女はピアノが上手ですね。", "id": "Dia pandai bermain piano ya.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "彼女はピアノが上手ですね。", "id": "Dia pandai bermain piano ya.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6362,11 +6626,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: '下手 = tidak pandai. Lawan: 上手。 苦手 (nigate) = kurang ahli/kurang suka.',
   conj_type: 'adj-na',
-  examples: [{"jp": "私は料理が下手です。", "id": "Saya tidak pandai memasak.", "level": "n5", "tags": ["makanan"]}],
+  examples: [{"jp": "私は料理が下手です。", "id": "Saya tidak pandai memasak.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6390,7 +6655,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6414,7 +6680,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6438,7 +6705,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6458,11 +6726,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: 'adj-i',
-  examples: [{"jp": "この問題はとても難しいです。", "id": "Soal ini sangat sulit.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "この問題はとても難しいです。", "id": "Soal ini sangat sulit.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6486,7 +6755,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6510,7 +6780,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6530,11 +6801,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'ひろい (広い) = luas/lebar. 広い部屋 = kamar luas. Juga: 広い心 = berjiwa besar.',
   conj_type: 'adj-i',
-  examples: [{"jp": "この公園はとても広いです。", "id": "Taman ini sangat luas.", "level": "n5", "tags": ["alam", "perjalanan"]}],
+  examples: [{"jp": "この公園はとても広いです。", "id": "Taman ini sangat luas.", "level": "n5", "tags": ["alam-lingkungan", "perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6558,7 +6830,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6582,7 +6855,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6602,11 +6876,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'ちかい (近い) = dekat. 近くに = di dekat sini. Lawan: 遠い.',
   conj_type: 'adj-i',
-  examples: [{"jp": "学校はここから近いです。", "id": "Sekolah dekat dari sini.", "level": "n5", "tags": ["perjalanan", "sekolah"]}],
+  examples: [{"jp": "学校はここから近いです。", "id": "Sekolah dekat dari sini.", "level": "n5", "tags": ["perjalanan", "pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6630,7 +6905,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6650,11 +6926,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: '少ない (adj) = sedikit (kuantitas). Berbeda: 少し (adv).',
   conj_type: 'adj-i',
-  examples: [{"jp": "今日はお客さんが少ないです。", "id": "Hari ini pelanggannya sedikit.", "level": "n5", "tags": ["belanja", "kerja"]}],
+  examples: [{"jp": "今日はお客さんが少ないです。", "id": "Hari ini pelanggannya sedikit.", "level": "n5", "tags": ["belanja", "pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6678,7 +6955,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6702,7 +6980,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6726,7 +7005,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6750,7 +7030,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6774,7 +7055,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6794,11 +7076,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: 'adj-i',
-  examples: [{"jp": "風が強いですね。", "id": "Anginnya kencang ya.", "level": "n5", "tags": ["alam"]}],
+  examples: [{"jp": "風が強いですね。", "id": "Anginnya kencang ya.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6822,7 +7105,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6842,11 +7126,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: 'adj-na',
-  examples: [{"jp": "富士山は有名な山です。", "id": "Gunung Fuji adalah gunung yang terkenal.", "level": "n5", "tags": ["perjalanan", "alam"]}],
+  examples: [{"jp": "富士山は有名な山です。", "id": "Gunung Fuji adalah gunung yang terkenal.", "level": "n5", "tags": ["perjalanan", "alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6866,11 +7151,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: '大変 = susah (adj-na) ATAU sangat (adv). 大変でしたね = pasti susah ya.',
   conj_type: 'adj-na',
-  examples: [{"jp": "仕事がとても大変です。", "id": "Pekerjaannya sangat berat.", "level": "n5", "tags": ["kerja", "emosi"]}],
+  examples: [{"jp": "仕事がとても大変です。", "id": "Pekerjaannya sangat berat.", "level": "n5", "tags": ["pekerjaan", "emosi"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6894,7 +7180,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6918,7 +7205,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6942,7 +7230,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6966,7 +7255,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6990,7 +7280,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7014,7 +7305,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7034,11 +7326,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: '机 = meja belajar/kerja. Berbeda: テーブル = meja makan.',
   conj_type: null,
-  examples: [{"jp": "机の上に本があります。", "id": "Di atas meja ada buku.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "机の上に本があります。", "id": "Di atas meja ada buku.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7062,7 +7355,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7086,7 +7380,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7106,11 +7401,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "雨なので傘を持っていきます。", "id": "Karena hujan, saya bawa payung.", "level": "n5", "tags": ["alam"]}],
+  examples: [{"jp": "雨なので傘を持っていきます。", "id": "Karena hujan, saya bawa payung.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7134,7 +7430,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7158,7 +7455,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7182,7 +7480,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7202,11 +7501,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "病気で学校を休みました。", "id": "Saya tidak masuk sekolah karena sakit.", "level": "n5", "tags": ["kesehatan", "sekolah"]}],
+  examples: [{"jp": "病気で学校を休みました。", "id": "Saya tidak masuk sekolah karena sakit.", "level": "n5", "tags": ["kesehatan", "pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7230,7 +7530,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7254,7 +7555,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7278,7 +7580,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7302,7 +7605,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7326,7 +7630,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7350,7 +7655,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7374,7 +7680,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7398,7 +7705,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7422,7 +7730,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7442,11 +7751,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: 'ご飯 = nasi (makanan) ATAU waktu makan. 朝ご飯 = sarapan.',
   conj_type: null,
-  examples: [{"jp": "ご飯を食べましょう。", "id": "Mari makan.", "level": "n5", "tags": ["makanan"]}],
+  examples: [{"jp": "ご飯を食べましょう。", "id": "Mari makan.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7466,11 +7776,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "朝はパンを食べます。", "id": "Di pagi hari saya makan roti.", "level": "n5", "tags": ["makanan"]}],
+  examples: [{"jp": "朝はパンを食べます。", "id": "Di pagi hari saya makan roti.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7490,11 +7801,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "卵を三個買いました。", "id": "Saya membeli tiga butir telur.", "level": "n5", "tags": ["makanan", "belanja"]}],
+  examples: [{"jp": "卵を三個買いました。", "id": "Saya membeli tiga butir telur.", "level": "n5", "tags": ["makanan-minuman", "belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7514,11 +7826,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: '牛乳 = susu sapi. ミルク lebih kasual (dari bahasa Inggris).',
   conj_type: null,
-  examples: [{"jp": "毎朝牛乳を飲みます。", "id": "Setiap pagi saya minum susu.", "level": "n5", "tags": ["makanan"]}],
+  examples: [{"jp": "毎朝牛乳を飲みます。", "id": "Setiap pagi saya minum susu.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7538,11 +7851,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: 'お茶 = teh Jepang (hijau). 紅茶 (koucha) = teh hitam. お茶しましょう = nongkrong minum teh.',
   conj_type: null,
-  examples: [{"jp": "お茶を一杯いかがですか。", "id": "Mau minum teh?", "level": "n5", "tags": ["makanan", "sopan-santun"]}],
+  examples: [{"jp": "お茶を一杯いかがですか。", "id": "Mau minum teh?", "level": "n5", "tags": ["makanan-minuman", "sopan-santun"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7562,11 +7876,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "水をください。", "id": "Tolong berikan air.", "level": "n5", "tags": ["makanan"]}],
+  examples: [{"jp": "水をください。", "id": "Tolong berikan air.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7590,7 +7905,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7610,11 +7926,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "バナナは安くておいしいです。", "id": "Pisang itu murah dan enak.", "level": "n5", "tags": ["makanan", "belanja"]}],
+  examples: [{"jp": "バナナは安くておいしいです。", "id": "Pisang itu murah dan enak.", "level": "n5", "tags": ["makanan-minuman", "belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7634,11 +7951,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "コーヒーに砂糖を入れますか。", "id": "Apakah kamu masukkan gula ke kopi?", "level": "n5", "tags": ["makanan"]}],
+  examples: [{"jp": "コーヒーに砂糖を入れますか。", "id": "Apakah kamu masukkan gula ke kopi?", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7658,11 +7976,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "塩を少し入れてください。", "id": "Tolong masukkan sedikit garam.", "level": "n5", "tags": ["makanan"]}],
+  examples: [{"jp": "塩を少し入れてください。", "id": "Tolong masukkan sedikit garam.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7682,11 +8001,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "魚を焼きました。", "id": "Saya memanggang ikan.", "level": "n5", "tags": ["makanan"]}],
+  examples: [{"jp": "魚を焼きました。", "id": "Saya memanggang ikan.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7706,11 +8026,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: '肉 saja = daging. 牛肉 = sapi, 豚肉 = babi, 鶏肉 = ayam.',
   conj_type: null,
-  examples: [{"jp": "肉と野菜を炒めました。", "id": "Saya menumis daging dan sayuran.", "level": "n5", "tags": ["makanan"]}],
+  examples: [{"jp": "肉と野菜を炒めました。", "id": "Saya menumis daging dan sayuran.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7730,11 +8051,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "野菜をたくさん食べてください。", "id": "Tolong banyak makan sayuran.", "level": "n5", "tags": ["makanan", "kesehatan"]}],
+  examples: [{"jp": "野菜をたくさん食べてください。", "id": "Tolong banyak makan sayuran.", "level": "n5", "tags": ["makanan-minuman", "kesehatan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7754,11 +8076,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '音楽 = musik. 音楽を聞く = mendengarkan musik. 音楽家 = musisi.',
   conj_type: null,
-  examples: [{"jp": "音楽を聞きながら勉強します。", "id": "Saya belajar sambil mendengarkan musik.", "level": "n5", "tags": ["kehidupan-sehari", "sekolah"]}],
+  examples: [{"jp": "音楽を聞きながら勉強します。", "id": "Saya belajar sambil mendengarkan musik.", "level": "n5", "tags": ["kehidupan-sehari", "pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7782,7 +8105,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7806,7 +8130,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7830,7 +8155,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7854,7 +8180,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7878,7 +8205,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7902,7 +8230,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7926,7 +8255,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7946,11 +8276,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "仕事が終わったら連絡してください。", "id": "Tolong hubungi saya kalau sudah selesai kerja.", "level": "n5", "tags": ["kerja", "hubungan"]}],
+  examples: [{"jp": "仕事が終わったら連絡してください。", "id": "Tolong hubungi saya kalau sudah selesai kerja.", "level": "n5", "tags": ["pekerjaan", "hubungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7970,11 +8301,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "どんな会社で働いていますか。", "id": "Kamu bekerja di perusahaan apa?", "level": "n5", "tags": ["kerja"]}],
+  examples: [{"jp": "どんな会社で働いていますか。", "id": "Kamu bekerja di perusahaan apa?", "level": "n5", "tags": ["pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7994,11 +8326,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "今から会議があります。", "id": "Sekarang ada rapat.", "level": "n5", "tags": ["kerja"]}],
+  examples: [{"jp": "今から会議があります。", "id": "Sekarang ada rapat.", "level": "n5", "tags": ["pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8018,11 +8351,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "学校は何時に始まりますか。", "id": "Sekolah mulai jam berapa?", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "学校は何時に始まりますか。", "id": "Sekolah mulai jam berapa?", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8042,11 +8376,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "教室に入ってください。", "id": "Tolong masuk ke kelas.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "教室に入ってください。", "id": "Tolong masuk ke kelas.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8066,11 +8401,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "授業は何時間ありますか。", "id": "Ada berapa jam pelajaran?", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "授業は何時間ありますか。", "id": "Ada berapa jam pelajaran?", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8090,11 +8426,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "明日試験があります。", "id": "Besok ada ujian.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "明日試験があります。", "id": "Besok ada ujian.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8114,11 +8451,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "宿題を忘れました。", "id": "Saya lupa PR.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "宿題を忘れました。", "id": "Saya lupa PR.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8138,11 +8476,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "図書館で本を借ります。", "id": "Saya meminjam buku di perpustakaan.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "図書館で本を借ります。", "id": "Saya meminjam buku di perpustakaan.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8166,7 +8505,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8186,11 +8526,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "空が青くてきれいですね。", "id": "Langitnya biru dan indah ya.", "level": "n5", "tags": ["alam"]}],
+  examples: [{"jp": "空が青くてきれいですね。", "id": "Langitnya biru dan indah ya.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8210,11 +8551,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "好きな季節はいつですか。", "id": "Musim favorit kamu apa?", "level": "n5", "tags": ["alam"]}],
+  examples: [{"jp": "好きな季節はいつですか。", "id": "Musim favorit kamu apa?", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8234,11 +8576,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "夏は暑くて好きじゃないです。", "id": "Saya tidak suka musim panas karena panas.", "level": "n5", "tags": ["alam"]}],
+  examples: [{"jp": "夏は暑くて好きじゃないです。", "id": "Saya tidak suka musim panas karena panas.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8258,11 +8601,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "秋は涼しくてきれいです。", "id": "Musim gugur itu sejuk dan indah.", "level": "n5", "tags": ["alam"]}],
+  examples: [{"jp": "秋は涼しくてきれいです。", "id": "Musim gugur itu sejuk dan indah.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8282,11 +8626,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "冬はスキーが楽しいです。", "id": "Di musim dingin ski sangat menyenangkan.", "level": "n5", "tags": ["alam", "olahraga"]}],
+  examples: [{"jp": "冬はスキーが楽しいです。", "id": "Di musim dingin ski sangat menyenangkan.", "level": "n5", "tags": ["alam-lingkungan", "olahraga"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8306,11 +8651,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'みどり (緑) = hijau. 緑のもの = benda/hal yang hijau. Alam, tanaman.',
   conj_type: null,
-  examples: [{"jp": "公園には緑がたくさんあります。", "id": "Di taman banyak sekali warna hijau/tanaman.", "level": "n5", "tags": ["alam"]}],
+  examples: [{"jp": "公園には緑がたくさんあります。", "id": "Di taman banyak sekali warna hijau/tanaman.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8330,11 +8676,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "川のそばを歩きました。", "id": "Saya berjalan di pinggir sungai.", "level": "n5", "tags": ["alam"]}],
+  examples: [{"jp": "川のそばを歩きました。", "id": "Saya berjalan di pinggir sungai.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8354,11 +8701,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "富士山は日本一高い山です。", "id": "Gunung Fuji adalah gunung tertinggi di Jepang.", "level": "n5", "tags": ["alam", "perjalanan"]}],
+  examples: [{"jp": "富士山は日本一高い山です。", "id": "Gunung Fuji adalah gunung tertinggi di Jepang.", "level": "n5", "tags": ["alam-lingkungan", "perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8378,11 +8726,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "公園に大きな木があります。", "id": "Di taman ada pohon besar.", "level": "n5", "tags": ["alam"]}],
+  examples: [{"jp": "公園に大きな木があります。", "id": "Di taman ada pohon besar.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8406,7 +8755,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8430,7 +8780,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8450,11 +8801,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: '鳥 = burung (umum). 鶏 (にわとり) = ayam (hewan). 鶏肉 (とりにく) = daging ayam.',
   conj_type: null,
-  examples: [{"jp": "鳥が歌っています。", "id": "Burung berkicau.", "level": "n5", "tags": ["alam"]}],
+  examples: [{"jp": "鳥が歌っています。", "id": "Burung berkicau.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8474,11 +8826,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "桜がきれいな季節です。", "id": "Ini adalah musim sakura yang indah.", "level": "n5", "tags": ["alam", "perjalanan"]}],
+  examples: [{"jp": "桜がきれいな季節です。", "id": "Ini adalah musim sakura yang indah.", "level": "n5", "tags": ["alam-lingkungan", "perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8502,7 +8855,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8526,7 +8880,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8546,11 +8901,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: '料理する = memasak. 料理 saja = masakan yang sudah dibuat.',
   conj_type: 'suru',
-  examples: [{"jp": "日本料理を作るのが好きです。", "id": "Saya suka membuat masakan Jepang.", "level": "n5", "tags": ["makanan"]}],
+  examples: [{"jp": "日本料理を作るのが好きです。", "id": "Saya suka membuat masakan Jepang.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8574,7 +8930,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8598,7 +8955,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8622,7 +8980,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8646,7 +9005,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8670,7 +9030,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8694,7 +9055,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8718,7 +9080,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8742,7 +9105,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8762,11 +9126,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "英語を勉強しています。", "id": "Saya sedang belajar bahasa Inggris.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "英語を勉強しています。", "id": "Saya sedang belajar bahasa Inggris.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8786,11 +9151,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "日本語は難しいですが、面白いです。", "id": "Bahasa Jepang sulit tapi menarik.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "日本語は難しいですが、面白いです。", "id": "Bahasa Jepang sulit tapi menarik.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8810,11 +9176,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "この言葉の意味がわかりません。", "id": "Saya tidak mengerti arti kata ini.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "この言葉の意味がわかりません。", "id": "Saya tidak mengerti arti kata ini.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8838,7 +9205,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8862,7 +9230,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8886,7 +9255,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8906,11 +9276,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: '父 (humble, untuk ayah sendiri). お父さん = panggilan/bicara tentang ayah orang lain.',
   conj_type: null,
-  examples: [{"jp": "父は会社員です。", "id": "Ayah saya karyawan.", "level": "n5", "tags": ["keluarga", "kerja"]}],
+  examples: [{"jp": "父は会社員です。", "id": "Ayah saya karyawan.", "level": "n5", "tags": ["keluarga", "pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8934,7 +9305,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8954,11 +9326,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: '兄 (humble). お兄さん = kakak laki-laki orang lain.',
   conj_type: null,
-  examples: [{"jp": "兄は大学生です。", "id": "Kakak laki-laki saya mahasiswa.", "level": "n5", "tags": ["keluarga", "sekolah"]}],
+  examples: [{"jp": "兄は大学生です。", "id": "Kakak laki-laki saya mahasiswa.", "level": "n5", "tags": ["keluarga", "pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8978,11 +9351,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: '姉 (humble). お姉さん = kakak perempuan orang lain.',
   conj_type: null,
-  examples: [{"jp": "姉は看護師として働いています。", "id": "Kakak perempuan saya bekerja sebagai perawat.", "level": "n5", "tags": ["keluarga", "kerja"]}],
+  examples: [{"jp": "姉は看護師として働いています。", "id": "Kakak perempuan saya bekerja sebagai perawat.", "level": "n5", "tags": ["keluarga", "pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9002,11 +9376,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "弟は中学生です。", "id": "Adik laki-laki saya siswa SMP.", "level": "n5", "tags": ["keluarga", "sekolah"]}],
+  examples: [{"jp": "弟は中学生です。", "id": "Adik laki-laki saya siswa SMP.", "level": "n5", "tags": ["keluarga", "pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9026,11 +9401,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "妹はまだ小学生です。", "id": "Adik perempuan saya masih siswa SD.", "level": "n5", "tags": ["keluarga", "sekolah"]}],
+  examples: [{"jp": "妹はまだ小学生です。", "id": "Adik perempuan saya masih siswa SD.", "level": "n5", "tags": ["keluarga", "pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9050,11 +9426,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: '先生 = guru/dokter/pengacara. Dipakai sebagai panggilan langsung: 先生！',
   conj_type: null,
-  examples: [{"jp": "田中先生はとても優しいです。", "id": "Guru Tanaka sangat baik hati.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "田中先生はとても優しいです。", "id": "Guru Tanaka sangat baik hati.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9074,11 +9451,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: '学生 = pelajar umum/mahasiswa. 生徒 (seito) = siswa SD-SMA.',
   conj_type: null,
-  examples: [{"jp": "私は日本語学科の学生です。", "id": "Saya mahasiswa jurusan bahasa Jepang.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "私は日本語学科の学生です。", "id": "Saya mahasiswa jurusan bahasa Jepang.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9098,11 +9476,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "コーヒーを一杯飲みました。", "id": "Saya minum secangkir kopi.", "level": "n5", "tags": ["makanan"]}],
+  examples: [{"jp": "コーヒーを一杯飲みました。", "id": "Saya minum secangkir kopi.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9122,11 +9501,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "オレンジジュースをください。", "id": "Tolong berikan jus jeruk.", "level": "n5", "tags": ["makanan"]}],
+  examples: [{"jp": "オレンジジュースをください。", "id": "Tolong berikan jus jeruk.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9146,11 +9526,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "冷たいビールが飲みたいです。", "id": "Saya ingin minum bir dingin.", "level": "n5", "tags": ["makanan"]}],
+  examples: [{"jp": "冷たいビールが飲みたいです。", "id": "Saya ingin minum bir dingin.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9170,11 +9551,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "誕生日ケーキを買いました。", "id": "Saya membeli kue ulang tahun.", "level": "n5", "tags": ["makanan", "hubungan"]}],
+  examples: [{"jp": "誕生日ケーキを買いました。", "id": "Saya membeli kue ulang tahun.", "level": "n5", "tags": ["makanan-minuman", "hubungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9194,11 +9576,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "暑いのでアイスクリームを食べました。", "id": "Karena panas, saya makan es krim.", "level": "n5", "tags": ["makanan"]}],
+  examples: [{"jp": "暑いのでアイスクリームを食べました。", "id": "Karena panas, saya makan es krim.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9218,11 +9601,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "レストランで夕食を食べます。", "id": "Saya makan malam di restoran.", "level": "n5", "tags": ["makanan", "perjalanan"]}],
+  examples: [{"jp": "レストランで夕食を食べます。", "id": "Saya makan malam di restoran.", "level": "n5", "tags": ["makanan-minuman", "perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9230,7 +9614,7 @@ window.vocabN5 = [
   word: 'スーパー',
   reading: 'スーパー',
   romaji: 'suupaa',
-  meaning_id: 'supermarket',
+  meaning_id: 'supermarket, swalayan',
   meaning_en: 'supermarket',
   jlpt: 'n5',
   pos: 'noun',
@@ -9242,11 +9626,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "スーパーで野菜を買いました。", "id": "Saya membeli sayuran di supermarket.", "level": "n5", "tags": ["belanja", "makanan"]}],
+  examples: [{"jp": "スーパーで野菜を買いました。", "id": "Saya membeli sayuran di supermarket.", "level": "n5", "tags": ["belanja", "makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9266,11 +9651,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "コンビニで弁当を買います。", "id": "Saya beli bento di konbini.", "level": "n5", "tags": ["makanan", "belanja"]}],
+  examples: [{"jp": "コンビニで弁当を買います。", "id": "Saya beli bento di konbini.", "level": "n5", "tags": ["makanan-minuman", "belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9294,7 +9680,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9302,7 +9689,7 @@ window.vocabN5 = [
   word: 'ホテル',
   reading: 'ホテル',
   romaji: 'hoteru',
-  meaning_id: 'hotel',
+  meaning_id: 'hotel, penginapan',
   meaning_en: 'hotel',
   jlpt: 'n5',
   pos: 'noun',
@@ -9318,7 +9705,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9342,7 +9730,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9362,11 +9751,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '季節 = musim (konsep/kategori). Berbeda: 春/夏/秋/冬 = nama-nama musim.',
   conj_type: null,
-  examples: [{"jp": "一番好きな季節は秋です。", "id": "Musim favorit saya adalah musim gugur.", "level": "n5", "tags": ["alam"]}],
+  examples: [{"jp": "一番好きな季節は秋です。", "id": "Musim favorit saya adalah musim gugur.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9374,7 +9764,7 @@ window.vocabN5 = [
   word: 'ラジオ',
   reading: 'ラジオ',
   romaji: 'rajio',
-  meaning_id: 'radio',
+  meaning_id: 'radio (perangkat penerima siaran)',
   meaning_en: 'radio',
   jlpt: 'n5',
   pos: 'noun',
@@ -9390,7 +9780,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9414,7 +9805,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9438,7 +9830,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9458,11 +9851,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: 'パソコン = singkatan dari パーソナルコンピューター.',
   conj_type: null,
-  examples: [{"jp": "パソコンでメールを送りました。", "id": "Saya mengirim email menggunakan komputer.", "level": "n5", "tags": ["teknologi", "kerja"]}],
+  examples: [{"jp": "パソコンでメールを送りました。", "id": "Saya mengirim email menggunakan komputer.", "level": "n5", "tags": ["teknologi", "pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9470,7 +9864,7 @@ window.vocabN5 = [
   word: 'インターネット',
   reading: 'インターネット',
   romaji: 'intaanetto',
-  meaning_id: 'internet',
+  meaning_id: 'internet, jaringan',
   meaning_en: 'internet',
   jlpt: 'n5',
   pos: 'noun',
@@ -9486,7 +9880,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9506,11 +9901,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: 'suru',
-  examples: [{"jp": "後でメールします。", "id": "Nanti saya email.", "level": "n5", "tags": ["teknologi", "kerja"]}],
+  examples: [{"jp": "後でメールします。", "id": "Nanti saya email.", "level": "n5", "tags": ["teknologi", "pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9530,11 +9926,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'ピンク = pink/merah muda. Dari bahasa Inggris.',
   conj_type: null,
-  examples: [{"jp": "桜の花はピンクです。", "id": "Bunga sakura berwarna pink.", "level": "n5", "tags": ["alam", "perjalanan"]}],
+  examples: [{"jp": "桜の花はピンクです。", "id": "Bunga sakura berwarna pink.", "level": "n5", "tags": ["alam-lingkungan", "perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9558,7 +9955,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9582,7 +9980,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9606,7 +10005,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9630,7 +10030,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9654,7 +10055,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9678,7 +10080,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9698,11 +10101,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "私のクラスは三十人います。", "id": "Di kelas saya ada tiga puluh orang.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "私のクラスは三十人います。", "id": "Di kelas saya ada tiga puluh orang.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9722,11 +10126,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: 'テスト = tes/kuis. 試験 (しけん) = ujian yang lebih besar/formal.',
   conj_type: 'suru',
-  examples: [{"jp": "明日テストがあります。", "id": "Besok ada tes.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "明日テストがあります。", "id": "Besok ada tes.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9746,11 +10151,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'ノート = buku catatan/notebook (benda fisik). Juga: ノートパソコン = laptop.',
   conj_type: null,
-  examples: [{"jp": "ノートに書いてください。", "id": "Tolong tulis di buku catatan.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "ノートに書いてください。", "id": "Tolong tulis di buku catatan.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9770,11 +10176,12 @@ window.vocabN5 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "ボールペンを貸してください。", "id": "Tolong pinjamkan bolpoinnya.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "ボールペンを貸してください。", "id": "Tolong pinjamkan bolpoinnya.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9798,7 +10205,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9818,11 +10226,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '天気 = cuaca. 天気がいい/悪い = cuaca bagus/buruk. 天気予報 = ramalan cuaca.',
   conj_type: null,
-  examples: [{"jp": "今日は天気がいいですね。", "id": "Hari ini cuacanya bagus ya.", "level": "n5", "tags": ["alam"]}],
+  examples: [{"jp": "今日は天気がいいですね。", "id": "Hari ini cuacanya bagus ya.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9846,7 +10255,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9870,7 +10280,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9894,7 +10305,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9918,7 +10330,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9938,11 +10351,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '生徒 = murid SD/SMP/SMA. Untuk mahasiswa pakai 学生.',
   conj_type: null,
-  examples: [{"jp": "この学校には生徒が五百人います。", "id": "Di sekolah ini ada 500 murid.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "この学校には生徒が五百人います。", "id": "Di sekolah ini ada 500 murid.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9966,7 +10380,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9990,7 +10405,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10010,11 +10426,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '学生 = mahasiswa atau pelajar secara umum. Untuk SD-SMA lebih tepat 生徒.',
   conj_type: null,
-  examples: [{"jp": "私は大学の学生です。", "id": "Saya mahasiswa universitas.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "私は大学の学生です。", "id": "Saya mahasiswa universitas.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10038,7 +10455,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10062,7 +10480,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10086,7 +10505,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10110,7 +10530,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10134,7 +10555,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10158,7 +10580,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10182,7 +10605,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10206,7 +10630,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10230,7 +10655,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10254,7 +10680,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10278,7 +10705,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10302,7 +10730,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10326,7 +10755,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10350,7 +10780,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10374,7 +10805,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10398,7 +10830,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10422,7 +10855,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10446,7 +10880,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10470,7 +10905,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10494,7 +10930,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10518,7 +10955,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10538,11 +10976,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '日本語 = bahasa Jepang. Pola: [国名]+語 untuk bahasa.',
   conj_type: null,
-  examples: [{"jp": "日本語を勉強しています。", "id": "Saya sedang belajar bahasa Jepang.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "日本語を勉強しています。", "id": "Saya sedang belajar bahasa Jepang.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10562,11 +11001,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '英語 = bahasa Inggris. 英語ができますか = Bisa berbahasa Inggris?',
   conj_type: null,
-  examples: [{"jp": "英語は少しわかります。", "id": "Saya sedikit mengerti bahasa Inggris.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "英語は少しわかります。", "id": "Saya sedikit mengerti bahasa Inggris.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10590,7 +11030,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10614,7 +11055,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10638,7 +11080,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10662,7 +11105,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10686,7 +11130,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10710,7 +11155,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10734,7 +11180,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10758,7 +11205,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10782,7 +11230,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10806,7 +11255,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10830,7 +11280,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10854,7 +11305,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10878,7 +11330,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10902,7 +11355,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10926,7 +11380,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10950,7 +11405,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10974,7 +11430,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10998,7 +11455,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11018,11 +11476,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '午後 = PM (setelah jam 12 siang). Lawan: 午前. Formal: 午後3時.',
   conj_type: null,
-  examples: [{"jp": "午後から雨が降るそうです。", "id": "Katanya sore nanti akan hujan.", "level": "n5", "tags": ["alam"]}],
+  examples: [{"jp": "午後から雨が降るそうです。", "id": "Katanya sore nanti akan hujan.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11042,11 +11501,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '午前 = AM (sebelum jam 12 siang). 午前中に = di pagi hari / sebelum siang.',
   conj_type: null,
-  examples: [{"jp": "午前中に宿題を終わらせました。", "id": "Saya menyelesaikan PR sebelum siang.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "午前中に宿題を終わらせました。", "id": "Saya menyelesaikan PR sebelum siang.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11070,7 +11530,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11094,7 +11555,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11118,7 +11580,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11142,7 +11605,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11166,7 +11630,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11190,7 +11655,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11214,7 +11680,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11238,7 +11705,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11262,7 +11730,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11286,7 +11755,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11310,7 +11780,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11334,7 +11805,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11358,7 +11830,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11378,11 +11851,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '毎年 = setiap tahun. Pola: 毎+時間. 毎日/毎週/毎月/毎年.',
   conj_type: null,
-  examples: [{"jp": "毎年、夏に海へ行きます。", "id": "Setiap tahun saya pergi ke pantai di musim panas.", "level": "n5", "tags": ["alam", "perjalanan"]}],
+  examples: [{"jp": "毎年、夏に海へ行きます。", "id": "Setiap tahun saya pergi ke pantai di musim panas.", "level": "n5", "tags": ["alam-lingkungan", "perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11402,11 +11876,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '毎日 = setiap hari. Paling sering dipakai dari seri 毎〜.',
   conj_type: null,
-  examples: [{"jp": "毎日日本語を練習しています。", "id": "Saya berlatih bahasa Jepang setiap hari.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "毎日日本語を練習しています。", "id": "Saya berlatih bahasa Jepang setiap hari.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11430,7 +11905,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11450,11 +11926,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '少ない (すくない) = sedikit (adj-i, untuk kuantitas). Berbeda: 少し (adv).',
   conj_type: 'adj-i',
-  examples: [{"jp": "今日はお客さんが少ないです。", "id": "Hari ini pelanggannya sedikit.", "level": "n5", "tags": ["kerja", "belanja"]}],
+  examples: [{"jp": "今日はお客さんが少ないです。", "id": "Hari ini pelanggannya sedikit.", "level": "n5", "tags": ["pekerjaan", "belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11478,7 +11955,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11502,7 +11980,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11526,7 +12005,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11546,11 +12026,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '大変な = susah/berat (sebagai adj-na). Juga bisa sebagai adv: 大変です！= Gawat!',
   conj_type: 'adj-na',
-  examples: [{"jp": "仕事が大変です。", "id": "Pekerjaannya berat.", "level": "n5", "tags": ["kerja", "emosi"]}, {"jp": "大変でしたね。", "id": "Susah banget ya.", "level": "n5", "tags": ["emosi"]}],
+  examples: [{"jp": "仕事が大変です。", "id": "Pekerjaannya berat.", "level": "n5", "tags": ["pekerjaan", "emosi"]}, {"jp": "大変でしたね。", "id": "Susah banget ya.", "level": "n5", "tags": ["emosi"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11574,7 +12055,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11598,7 +12080,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11622,7 +12105,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11646,7 +12130,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11670,7 +12155,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11694,7 +12180,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11714,11 +12201,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '社長 = direktur/presiden perusahaan. Keigo untuk menyapa: 社長、〜。',
   conj_type: null,
-  examples: [{"jp": "社長は今会議中です。", "id": "Direktur sedang rapat sekarang.", "level": "n5", "tags": ["kerja"]}],
+  examples: [{"jp": "社長は今会議中です。", "id": "Direktur sedang rapat sekarang.", "level": "n5", "tags": ["pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11742,7 +12230,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11766,7 +12255,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11786,11 +12276,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '社員 = karyawan tetap. Berbeda dengan アルバイト (part-time) dan 派遣社員.',
   conj_type: null,
-  examples: [{"jp": "あの会社の社員は三百人います。", "id": "Karyawan perusahaan itu ada 300 orang.", "level": "n5", "tags": ["kerja"]}],
+  examples: [{"jp": "あの会社の社員は三百人います。", "id": "Karyawan perusahaan itu ada 300 orang.", "level": "n5", "tags": ["pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11814,7 +12305,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11838,7 +12330,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11862,7 +12355,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11886,7 +12380,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11910,7 +12405,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11934,7 +12430,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11958,7 +12455,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11982,7 +12480,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11990,7 +12489,7 @@ window.vocabN5 = [
   word: '東京',
   reading: 'とうきょう',
   romaji: 'toukyou',
-  meaning_id: 'Tokyo',
+  meaning_id: 'Tokyo (ibu kota Jepang)',
   meaning_en: 'Tokyo',
   jlpt: 'n5',
   pos: 'noun',
@@ -12006,7 +12505,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12030,7 +12530,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12054,7 +12555,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12078,7 +12580,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12102,7 +12605,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12126,7 +12630,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12150,7 +12655,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12174,7 +12680,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12182,7 +12689,7 @@ window.vocabN5 = [
   word: '北海道',
   reading: 'ほっかいどう',
   romaji: 'hottkaidou',
-  meaning_id: 'Hokkaido',
+  meaning_id: 'Hokkaido (pulau utara Jepang)',
   meaning_en: 'Hokkaido',
   jlpt: 'n5',
   pos: 'noun',
@@ -12198,7 +12705,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12222,7 +12730,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12246,7 +12755,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12270,7 +12780,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12294,7 +12805,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12318,7 +12830,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12342,7 +12855,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12366,7 +12880,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12390,7 +12905,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12414,7 +12930,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12438,7 +12955,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12462,7 +12980,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12486,7 +13005,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12510,7 +13030,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12534,7 +13055,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12558,7 +13080,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12566,7 +13089,7 @@ window.vocabN5 = [
   word: '銀行',
   reading: 'ぎんこう',
   romaji: 'ginkou',
-  meaning_id: 'bank',
+  meaning_id: 'bank, lembaga keuangan',
   meaning_en: 'bank',
   jlpt: 'n5',
   pos: 'noun',
@@ -12582,7 +13105,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12606,7 +13130,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12626,11 +13151,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '辞書 = kamus. 辞書を引く = mencari di kamus (ungkapan khas).',
   conj_type: null,
-  examples: [{"jp": "わからない言葉は辞書で調べてください。", "id": "Kata yang tidak dimengerti, tolong cari di kamus.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "わからない言葉は辞書で調べてください。", "id": "Kata yang tidak dimengerti, tolong cari di kamus.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12654,7 +13180,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12678,7 +13205,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12698,11 +13226,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'スーパー (スーパーマーケット) = supermarket.',
   conj_type: null,
-  examples: [{"jp": "スーパーで野菜を買いました。", "id": "Saya beli sayuran di supermarket.", "level": "n5", "tags": ["belanja", "makanan"]}],
+  examples: [{"jp": "スーパーで野菜を買いました。", "id": "Saya beli sayuran di supermarket.", "level": "n5", "tags": ["belanja", "makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12726,7 +13255,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12750,7 +13280,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12774,7 +13305,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12798,7 +13330,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12822,7 +13355,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12842,11 +13376,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '事務所 = kantor (ruangan/gedung kerja). Berbeda: 会社 = perusahaan (entitas).',
   conj_type: null,
-  examples: [{"jp": "事務所は三階にあります。", "id": "Kantornya ada di lantai tiga.", "level": "n5", "tags": ["kerja"]}],
+  examples: [{"jp": "事務所は三階にあります。", "id": "Kantornya ada di lantai tiga.", "level": "n5", "tags": ["pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12866,11 +13401,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '食べもの = makanan (umum). Berbeda: 料理 (ryouri) = masakan yang dimasak.',
   conj_type: null,
-  examples: [{"jp": "好きな食べものは何ですか。", "id": "Makanan favorit kamu apa?", "level": "n5", "tags": ["makanan"]}],
+  examples: [{"jp": "好きな食べものは何ですか。", "id": "Makanan favorit kamu apa?", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12890,11 +13426,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '飲みもの = minuman. 飲みもの何にする？= Mau minum apa?',
   conj_type: null,
-  examples: [{"jp": "飲みものはコーヒーにします。", "id": "Untuk minumannya saya pilih kopi.", "level": "n5", "tags": ["makanan"]}],
+  examples: [{"jp": "飲みものはコーヒーにします。", "id": "Untuk minumannya saya pilih kopi.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12914,11 +13451,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'くだもの (果物) = buah-buahan. 果物屋 (kudamonoya) = toko buah.',
   conj_type: null,
-  examples: [{"jp": "毎日くだものを食べています。", "id": "Saya makan buah setiap hari.", "level": "n5", "tags": ["makanan", "kesehatan"]}],
+  examples: [{"jp": "毎日くだものを食べています。", "id": "Saya makan buah setiap hari.", "level": "n5", "tags": ["makanan-minuman", "kesehatan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12938,11 +13476,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'りんご = apel. Salah satu contoh paling klasik dalam soal JLPT.',
   conj_type: null,
-  examples: [{"jp": "一日一個りんごを食べると健康にいいです。", "id": "Makan satu apel sehari itu bagus untuk kesehatan.", "level": "n5", "tags": ["makanan", "kesehatan"]}],
+  examples: [{"jp": "一日一個りんごを食べると健康にいいです。", "id": "Makan satu apel sehari itu bagus untuk kesehatan.", "level": "n5", "tags": ["makanan-minuman", "kesehatan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12962,11 +13501,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'バナナ = pisang. Dari bahasa Portugis/Inggris "banana".',
   conj_type: null,
-  examples: [{"jp": "バナナは安くておいしいです。", "id": "Pisang itu murah dan enak.", "level": "n5", "tags": ["makanan", "belanja"]}],
+  examples: [{"jp": "バナナは安くておいしいです。", "id": "Pisang itu murah dan enak.", "level": "n5", "tags": ["makanan-minuman", "belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12986,11 +13526,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'にく (肉) = daging. 牛肉 (gyuuniku) = sapi, 豚肉 (butaniku) = babi, 鶏肉 (toriniku) = ayam.',
   conj_type: null,
-  examples: [{"jp": "このレストランの肉料理はおいしいです。", "id": "Masakan daging di restoran ini enak.", "level": "n5", "tags": ["makanan"]}],
+  examples: [{"jp": "このレストランの肉料理はおいしいです。", "id": "Masakan daging di restoran ini enak.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13010,11 +13551,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '料理 = masakan (yang sudah dimasak) / memasak. 料理する = memasak.',
   conj_type: null,
-  examples: [{"jp": "日本料理が好きです。", "id": "Saya suka masakan Jepang.", "level": "n5", "tags": ["makanan"]}],
+  examples: [{"jp": "日本料理が好きです。", "id": "Saya suka masakan Jepang.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13034,11 +13576,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'メニュー = menu restoran. Dari kata Perancis "menu".',
   conj_type: null,
-  examples: [{"jp": "メニューを見せてください。", "id": "Tolong tunjukkan menunya.", "level": "n5", "tags": ["makanan", "perjalanan"]}],
+  examples: [{"jp": "メニューを見せてください。", "id": "Tolong tunjukkan menunya.", "level": "n5", "tags": ["makanan-minuman", "perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13062,7 +13605,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13086,7 +13630,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13110,7 +13655,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13134,7 +13680,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13158,7 +13705,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13182,7 +13730,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13206,7 +13755,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13230,7 +13780,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13254,7 +13805,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13274,11 +13826,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '看護師 = perawat (gender-neutral, modern). Dahulu: 看護婦 (perempuan) / 看護士 (laki-laki).',
   conj_type: null,
-  examples: [{"jp": "姉は看護師として病院で働いています。", "id": "Kakak perempuan saya bekerja sebagai perawat di rumah sakit.", "level": "n5", "tags": ["kesehatan", "kerja"]}],
+  examples: [{"jp": "姉は看護師として病院で働いています。", "id": "Kakak perempuan saya bekerja sebagai perawat di rumah sakit.", "level": "n5", "tags": ["kesehatan", "pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13302,7 +13855,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13326,7 +13880,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13346,11 +13901,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '喫茶店 = kafe tradisional Jepang. Lebih tua/klasik dari カフェ (kafe modern).',
   conj_type: null,
-  examples: [{"jp": "駅の近くの喫茶店でコーヒーを飲みました。", "id": "Saya minum kopi di kafe dekat stasiun.", "level": "n5", "tags": ["makanan", "perjalanan"]}],
+  examples: [{"jp": "駅の近くの喫茶店でコーヒーを飲みました。", "id": "Saya minum kopi di kafe dekat stasiun.", "level": "n5", "tags": ["makanan-minuman", "perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13374,7 +13930,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13394,11 +13951,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'コンビニ = convenience store (7-Eleven, FamilyMart, dll). Fitur penting budaya Jepang.',
   conj_type: null,
-  examples: [{"jp": "コンビニで弁当を買います。", "id": "Saya beli bento di konbini.", "level": "n5", "tags": ["makanan", "belanja"]}],
+  examples: [{"jp": "コンビニで弁当を買います。", "id": "Saya beli bento di konbini.", "level": "n5", "tags": ["makanan-minuman", "belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13422,7 +13980,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13446,7 +14005,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13470,7 +14030,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13490,11 +14051,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '電車 = kereta listrik (bukan shinkansen). 電車に乗る = naik kereta.',
   conj_type: null,
-  examples: [{"jp": "毎日電車で通学しています。", "id": "Saya naik kereta setiap hari untuk sekolah.", "level": "n5", "tags": ["perjalanan", "sekolah"]}],
+  examples: [{"jp": "毎日電車で通学しています。", "id": "Saya naik kereta setiap hari untuk sekolah.", "level": "n5", "tags": ["perjalanan", "pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13518,7 +14080,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13542,7 +14105,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13566,7 +14130,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13590,7 +14155,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13614,7 +14180,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13638,7 +14205,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13662,7 +14230,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13686,7 +14255,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13710,7 +14280,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13734,7 +14305,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13758,7 +14330,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13782,7 +14355,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13806,7 +14380,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13830,7 +14405,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13854,7 +14430,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13878,7 +14455,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13902,7 +14480,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13926,7 +14505,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13950,7 +14530,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13974,7 +14555,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13998,7 +14580,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14022,7 +14605,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14046,7 +14630,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14070,7 +14655,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14090,11 +14676,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "月曜日から金曜日まで仕事があります。", "id": "Senin sampai Jumat ada kerja.", "level": "n5", "tags": ["kerja"]}],
+  examples: [{"jp": "月曜日から金曜日まで仕事があります。", "id": "Senin sampai Jumat ada kerja.", "level": "n5", "tags": ["pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14118,7 +14705,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14142,7 +14730,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14166,7 +14755,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14190,7 +14780,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14210,11 +14801,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "土曜日は学校がありません。", "id": "Hari Sabtu tidak ada sekolah.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "土曜日は学校がありません。", "id": "Hari Sabtu tidak ada sekolah.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14238,7 +14830,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14258,11 +14851,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "一月は冬です。", "id": "Januari adalah musim dingin.", "level": "n5", "tags": ["alam"]}],
+  examples: [{"jp": "一月は冬です。", "id": "Januari adalah musim dingin.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14286,7 +14880,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14310,7 +14905,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14318,7 +14914,7 @@ window.vocabN5 = [
   word: '四月',
   reading: 'しがつ',
   romaji: 'shigatsu',
-  meaning_id: 'April',
+  meaning_id: 'April (bulan keempat)',
   meaning_en: 'April',
   jlpt: 'n5',
   pos: 'noun',
@@ -14330,11 +14926,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "四月から新学期が始まります。", "id": "Tahun ajaran baru dimulai dari bulan April.", "level": "n5", "tags": ["sekolah"]}],
+  examples: [{"jp": "四月から新学期が始まります。", "id": "Tahun ajaran baru dimulai dari bulan April.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14358,7 +14955,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14382,7 +14980,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14406,7 +15005,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14430,7 +15030,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14438,7 +15039,7 @@ window.vocabN5 = [
   word: '九月',
   reading: 'くがつ',
   romaji: 'kugatsu',
-  meaning_id: 'September',
+  meaning_id: 'September (bulan kesembilan)',
   meaning_en: 'September',
   jlpt: 'n5',
   pos: 'noun',
@@ -14454,7 +15055,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14478,7 +15080,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14486,7 +15089,7 @@ window.vocabN5 = [
   word: '十一月',
   reading: 'じゅういちがつ',
   romaji: 'juuichigatsu',
-  meaning_id: 'November',
+  meaning_id: 'November (bulan kesebelas)',
   meaning_en: 'November',
   jlpt: 'n5',
   pos: 'noun',
@@ -14502,7 +15105,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14526,7 +15130,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14550,7 +15155,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14574,7 +15180,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14594,11 +15201,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'すきな (好きな) = suka. Derajat: 大好き > 好き > まあまあ好き. Lawan: 嫌い.',
   conj_type: 'adj-na',
-  examples: [{"jp": "日本語が好きです。", "id": "Saya suka bahasa Jepang.", "level": "n5", "tags": ["emosi", "sekolah"]}],
+  examples: [{"jp": "日本語が好きです。", "id": "Saya suka bahasa Jepang.", "level": "n5", "tags": ["emosi", "pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14622,7 +15230,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14646,7 +15255,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14670,7 +15280,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14694,7 +15305,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14718,7 +15330,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14742,7 +15355,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14766,7 +15380,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14790,7 +15405,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14814,7 +15430,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14838,7 +15455,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14862,7 +15480,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14886,7 +15505,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14910,7 +15530,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14934,7 +15555,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14958,7 +15580,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14982,7 +15605,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15006,7 +15630,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15026,11 +15651,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'とても = sangat (intensifier positif). Untuk negatif pakai あまり+ない.',
   conj_type: null,
-  examples: [{"jp": "この料理はとてもおいしいです。", "id": "Masakan ini sangat enak.", "level": "n5", "tags": ["makanan"]}],
+  examples: [{"jp": "この料理はとてもおいしいです。", "id": "Masakan ini sangat enak.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15054,7 +15680,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15078,7 +15705,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15102,7 +15730,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15126,7 +15755,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15150,7 +15780,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15174,7 +15805,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15198,7 +15830,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15222,7 +15855,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15246,7 +15880,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15270,7 +15905,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15294,7 +15930,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15318,7 +15955,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15342,7 +15980,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15366,7 +16005,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15390,7 +16030,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15414,7 +16055,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15438,7 +16080,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15462,7 +16105,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15486,7 +16130,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15510,7 +16155,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15534,7 +16180,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15558,7 +16205,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15582,7 +16230,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15606,7 +16255,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15630,7 +16280,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15654,7 +16305,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15678,7 +16330,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15702,7 +16355,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15726,7 +16380,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15746,11 +16401,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'むらさき (紫) = ungu/violet.',
   conj_type: null,
-  examples: [{"jp": "紫の花がきれいです。", "id": "Bunga ungu itu indah.", "level": "n5", "tags": ["alam"]}],
+  examples: [{"jp": "紫の花がきれいです。", "id": "Bunga ungu itu indah.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15774,7 +16430,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15798,7 +16455,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15822,7 +16480,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15846,7 +16505,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15870,7 +16530,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15878,7 +16539,7 @@ window.vocabN5 = [
   word: 'ジャズ',
   reading: 'ジャズ',
   romaji: 'ジャズ',
-  meaning_id: 'jazz',
+  meaning_id: 'jazz (genre musik)',
   meaning_en: 'jazz',
   jlpt: 'n5',
   pos: 'noun',
@@ -15894,7 +16555,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15918,7 +16580,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15942,7 +16605,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15966,7 +16630,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15990,7 +16655,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16014,7 +16680,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16038,7 +16705,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16062,7 +16730,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16086,7 +16755,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16110,7 +16780,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16134,7 +16805,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16158,7 +16830,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16182,7 +16855,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16206,7 +16880,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16230,7 +16905,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16254,7 +16930,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16278,7 +16955,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16302,7 +16980,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16326,7 +17005,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16350,7 +17030,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16374,7 +17055,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16398,7 +17080,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16422,7 +17105,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16446,7 +17130,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16470,7 +17155,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16494,7 +17180,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16518,7 +17205,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16542,7 +17230,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16566,7 +17255,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16590,7 +17280,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16614,7 +17305,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16638,7 +17330,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16662,7 +17355,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16686,7 +17380,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16706,11 +17401,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'する dipakai untuk aksesori: ネクタイ・ベルト・めがねをする。',
   conj_type: null,
-  examples: [{"jp": "ネクタイをしています。", "id": "Dia sedang memakai dasi.", "level": "n5", "tags": ["kerja"]}],
+  examples: [{"jp": "ネクタイをしています。", "id": "Dia sedang memakai dasi.", "level": "n5", "tags": ["pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16734,7 +17430,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16758,7 +17455,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16782,7 +17480,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16806,7 +17505,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16830,7 +17530,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16854,7 +17555,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16878,7 +17580,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16902,7 +17605,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16926,7 +17630,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16950,7 +17655,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16974,7 +17680,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16998,7 +17705,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -17022,7 +17730,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -17046,7 +17755,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -17070,7 +17780,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 // ── Plan C additions — words in book lenses not yet in DB ──────────────
@@ -17096,7 +17807,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15.6.1-plan-c'
+  added_v: 'v15.6.1-plan-c',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -17120,7 +17832,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15.6.1-plan-c'
+  added_v: 'v15.6.1-plan-c',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -17144,7 +17857,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15.6.1-plan-c'
+  added_v: 'v15.6.1-plan-c',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -17164,11 +17878,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "音楽を聴くのが好きです。", "id": "Saya suka mendengarkan musik.", "level": "n5", "tags": ["hobi"]}],
+  examples: [{"jp": "音楽を聴くのが好きです。", "id": "Saya suka mendengarkan musik.", "level": "n5", "tags": ["hiburan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15.6.1-plan-c'
+  added_v: 'v15.6.1-plan-c',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -17192,7 +17907,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: ['vg-n5-00717'],
   see_also: [],
-  added_v: 'v15.6.1-plan-c'
+  added_v: 'v15.6.1-plan-c',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -17216,7 +17932,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: ['vg-n5-00716'],
   see_also: [],
-  added_v: 'v15.6.1-plan-c'
+  added_v: 'v15.6.1-plan-c',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -17240,7 +17957,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: ['vg-n5-00719'],
   see_also: [],
-  added_v: 'v15.6.1-plan-c'
+  added_v: 'v15.6.1-plan-c',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -17264,7 +17982,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: ['vg-n5-00718'],
   see_also: [],
-  added_v: 'v15.6.1-plan-c'
+  added_v: 'v15.6.1-plan-c',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -17288,7 +18007,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15.6.1-plan-c'
+  added_v: 'v15.6.1-plan-c',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -17312,7 +18032,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15.6.1-plan-c'
+  added_v: 'v15.6.1-plan-c',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -17336,7 +18057,8 @@ window.vocabN5 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15.6.1-plan-c'
+  added_v: 'v15.6.1-plan-c',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -17356,11 +18078,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Sebagai kata sifat: situasi yang berat/susah. Sebagai adverb: sangat/amat.',
   conj_type: null,
-  examples: [{"jp": "大変でしたね。", "id": "Berat ya keadaannya.", "level": "n5", "tags": ["ekspresi"]}, {"jp": "大変おいしいです。", "id": "Ini sangat enak.", "level": "n5", "tags": ["ekspresi"]}],
+  examples: [{"jp": "大変でしたね。", "id": "Berat ya keadaannya.", "level": "n5", "tags": ["emosi"]}, {"jp": "大変おいしいです。", "id": "Ini sangat enak.", "level": "n5", "tags": ["emosi"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15.6.1-plan-c'
+  added_v: 'v15.6.1-plan-c',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -17380,11 +18103,12 @@ window.vocabN5 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
   conj_type: null,
-  examples: [{"jp": "あの歌手はとても有名です。", "id": "Penyanyi itu sangat terkenal.", "level": "n5", "tags": ["deskripsi"]}],
+  examples: [{"jp": "あの歌手はとても有名です。", "id": "Penyanyi itu sangat terkenal.", "level": "n5", "tags": ["bahasa-komunikasi"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15.6.1-plan-c'
+  added_v: 'v15.6.1-plan-c',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -17408,7 +18132,8 @@ window.vocabN5 = [
   synonyms: ['vg-n5-00030'],
   antonyms: [],
   see_also: [],
-  added_v: 'v15.6.1-plan-c'
+  added_v: 'v15.6.1-plan-c',
+  provenance: 'jlpt-corpus'
 }
 
 ];

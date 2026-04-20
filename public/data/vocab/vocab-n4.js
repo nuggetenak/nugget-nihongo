@@ -29,7 +29,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -53,7 +54,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -77,7 +79,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -101,7 +104,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -125,7 +129,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -149,7 +154,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n4-00318'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -173,7 +179,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -197,7 +204,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -221,7 +229,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -245,7 +254,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -269,7 +279,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -293,7 +304,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -317,7 +329,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -341,7 +354,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -365,7 +379,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n4-00320'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -389,7 +404,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -413,7 +429,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -437,7 +454,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -461,7 +479,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -485,7 +504,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n4-00306'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -509,7 +529,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -533,7 +554,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -557,7 +579,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -581,7 +604,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -605,7 +629,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -629,7 +654,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -653,7 +679,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -677,7 +704,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -701,7 +729,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -725,7 +754,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -749,7 +779,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -773,7 +804,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n4-00314'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -797,7 +829,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -821,7 +854,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -845,7 +879,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -869,7 +904,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -889,11 +925,12 @@ window.vocabN4 = [
   lawan_bicara: [],
   nuance: '風 (かぜ) = angin. 風が強い = angin kencang. HATI-HATI: 風邪 (かぜ) = flu — beda kanji!',
   conj_type: null,
-  examples: [{"jp": "今日は風が強いです。", "id": "Hari ini anginnya kencang.", "level": "n4", "tags": ["alam"]}, {"jp": "さわやかな風が吹いています。", "id": "Angin segar berhembus.", "level": "n4", "tags": ["alam"]}],
+  examples: [{"jp": "今日は風が強いです。", "id": "Hari ini anginnya kencang.", "level": "n4", "tags": ["alam-lingkungan"]}, {"jp": "さわやかな風が吹いています。", "id": "Angin segar berhembus.", "level": "n4", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -913,11 +950,12 @@ window.vocabN4 = [
   lawan_bicara: [],
   nuance: '台風 = topan/taifun. 台風が来る. Fenomena alam khas Jepang musim panas-gugur.',
   conj_type: null,
-  examples: [{"jp": "台風のため、学校が休みになりました。", "id": "Karena topan, sekolah diliburkan.", "level": "n4", "tags": ["alam", "sekolah"]}, {"jp": "台風が接近しています。気をつけてください。", "id": "Topan sedang mendekat. Harap berhati-hati.", "level": "n4", "tags": ["alam"]}],
+  examples: [{"jp": "台風のため、学校が休みになりました。", "id": "Karena topan, sekolah diliburkan.", "level": "n4", "tags": ["alam-lingkungan", "pendidikan"]}, {"jp": "台風が接近しています。気をつけてください。", "id": "Topan sedang mendekat. Harap berhati-hati.", "level": "n4", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -941,7 +979,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -965,7 +1004,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -989,7 +1029,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1009,11 +1050,12 @@ window.vocabN4 = [
   lawan_bicara: [],
   nuance: '海 (うみ) = laut/pantai. 海に行く = pergi ke pantai. Lawan: 山 (やま).',
   conj_type: null,
-  examples: [{"jp": "夏は海で泳ぎたいです。", "id": "Di musim panas saya ingin berenang di laut.", "level": "n4", "tags": ["alam", "olahraga"]}, {"jp": "海がきれいな場所へ旅行しました。", "id": "Saya berwisata ke tempat yang lautnya indah.", "level": "n4", "tags": ["perjalanan", "alam"]}],
+  examples: [{"jp": "夏は海で泳ぎたいです。", "id": "Di musim panas saya ingin berenang di laut.", "level": "n4", "tags": ["alam-lingkungan", "olahraga"]}, {"jp": "海がきれいな場所へ旅行しました。", "id": "Saya berwisata ke tempat yang lautnya indah.", "level": "n4", "tags": ["perjalanan", "alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1037,7 +1079,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1061,7 +1104,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1085,7 +1129,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1109,7 +1154,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1133,7 +1179,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1157,7 +1204,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1181,7 +1229,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1205,7 +1254,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1229,7 +1279,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1253,7 +1304,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1277,7 +1329,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1301,7 +1354,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1325,7 +1379,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1349,7 +1404,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1369,11 +1425,12 @@ window.vocabN4 = [
   lawan_bicara: [],
   nuance: '会議 = rapat resmi. 会議がある = ada rapat. 会議室 = ruang rapat.',
   conj_type: null,
-  examples: [{"jp": "午後から大切な会議があります。", "id": "Ada rapat penting mulai sore.", "level": "n4", "tags": ["kerja"]}, {"jp": "会議は何時に始まりますか。", "id": "Rapat mulai jam berapa?", "level": "n4", "tags": ["kerja"]}],
+  examples: [{"jp": "午後から大切な会議があります。", "id": "Ada rapat penting mulai sore.", "level": "n4", "tags": ["pekerjaan"]}, {"jp": "会議は何時に始まりますか。", "id": "Rapat mulai jam berapa?", "level": "n4", "tags": ["pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1397,7 +1454,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1421,7 +1479,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1445,7 +1504,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1469,7 +1529,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1493,7 +1554,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1517,7 +1579,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1537,11 +1600,12 @@ window.vocabN4 = [
   lawan_bicara: [],
   nuance: '調べる = mencari tahu/menyelidiki. 辞書で調べる = cari di kamus. スマホで調べる = googling.',
   conj_type: 'ichidan',
-  examples: [{"jp": "わからないことはインターネットで調べます。", "id": "Hal yang tidak dimengerti saya cari di internet.", "level": "n4", "tags": ["teknologi", "sekolah"]}],
+  examples: [{"jp": "わからないことはインターネットで調べます。", "id": "Hal yang tidak dimengerti saya cari di internet.", "level": "n4", "tags": ["teknologi", "pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1565,7 +1629,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1589,7 +1654,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1613,7 +1679,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1637,7 +1704,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1661,7 +1729,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1685,7 +1754,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1709,7 +1779,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1733,7 +1804,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1757,7 +1829,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1781,7 +1854,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1805,7 +1879,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1829,7 +1904,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1853,7 +1929,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1877,7 +1954,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1901,7 +1979,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1925,7 +2004,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1949,7 +2029,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1973,7 +2054,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -1997,7 +2079,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2021,7 +2104,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2045,7 +2129,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2069,7 +2154,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2093,7 +2179,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2117,7 +2204,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2141,7 +2229,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2165,7 +2254,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2189,7 +2279,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2213,7 +2304,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2237,7 +2329,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2261,7 +2354,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2285,7 +2379,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2309,7 +2404,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2333,7 +2429,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2357,7 +2454,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2381,7 +2479,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2401,11 +2500,12 @@ window.vocabN4 = [
   lawan_bicara: [],
   nuance: '練習する = berlatih (berulang dan disengaja). 練習あるのみ = hanya dengan latihan.',
   conj_type: 'suru',
-  examples: [{"jp": "毎日一時間ピアノを練習しています。", "id": "Saya berlatih piano satu jam setiap hari.", "level": "n4", "tags": ["olahraga", "sekolah"]}, {"jp": "もっと練習すれば上手になります。", "id": "Kalau berlatih lebih banyak pasti menjadi pandai.", "level": "n4", "tags": ["motivasi"]}],
+  examples: [{"jp": "毎日一時間ピアノを練習しています。", "id": "Saya berlatih piano satu jam setiap hari.", "level": "n4", "tags": ["olahraga", "pendidikan"]}, {"jp": "もっと練習すれば上手になります。", "id": "Kalau berlatih lebih banyak pasti menjadi pandai.", "level": "n4", "tags": ["motivasi"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2429,7 +2529,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2453,7 +2554,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2477,7 +2579,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2501,7 +2604,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2521,11 +2625,12 @@ window.vocabN4 = [
   lawan_bicara: [],
   nuance: '始める (はじめる) = memulai (transitif, ada objek). Lawan: 終える. Intransitif: 始まる.',
   conj_type: 'ichidan',
-  examples: [{"jp": "さあ、仕事を始めましょう。", "id": "Ayo, mari kita mulai bekerja.", "level": "n4", "tags": ["kerja"]}],
+  examples: [{"jp": "さあ、仕事を始めましょう。", "id": "Ayo, mari kita mulai bekerja.", "level": "n4", "tags": ["pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2549,7 +2654,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2573,7 +2679,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2597,7 +2704,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2621,7 +2729,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2641,11 +2750,12 @@ window.vocabN4 = [
   lawan_bicara: [],
   nuance: '続ける = melanjutkan/meneruskan. Lawan: やめる. 続けて頑張る = terus berusaha.',
   conj_type: 'ichidan',
-  examples: [{"jp": "諦めないで練習を続けてください。", "id": "Jangan menyerah, teruskan latihan.", "level": "n4", "tags": ["motivasi"]}, {"jp": "日本語の勉強を続けています。", "id": "Saya terus belajar bahasa Jepang.", "level": "n4", "tags": ["sekolah", "motivasi"]}],
+  examples: [{"jp": "諦めないで練習を続けてください。", "id": "Jangan menyerah, teruskan latihan.", "level": "n4", "tags": ["motivasi"]}, {"jp": "日本語の勉強を続けています。", "id": "Saya terus belajar bahasa Jepang.", "level": "n4", "tags": ["pendidikan", "motivasi"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2669,7 +2779,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2693,7 +2804,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2717,7 +2829,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n4-00307'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2741,7 +2854,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2765,7 +2879,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2789,7 +2904,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2813,7 +2929,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2837,7 +2954,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2861,7 +2979,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2885,7 +3004,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2909,7 +3029,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2929,11 +3050,12 @@ window.vocabN4 = [
   lawan_bicara: [],
   nuance: '図書館 = perpustakaan. 本を借りる. 図書館は静かなので勉強しやすい。',
   conj_type: null,
-  examples: [{"jp": "図書館で日本語の本を借りました。", "id": "Saya meminjam buku bahasa Jepang di perpustakaan.", "level": "n4", "tags": ["sekolah"]}],
+  examples: [{"jp": "図書館で日本語の本を借りました。", "id": "Saya meminjam buku bahasa Jepang di perpustakaan.", "level": "n4", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2957,7 +3079,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -2981,7 +3104,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3005,7 +3129,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3029,7 +3154,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3053,7 +3179,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3077,7 +3204,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3101,7 +3229,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3125,7 +3254,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3149,7 +3279,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3173,7 +3304,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3197,7 +3329,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3221,7 +3354,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3245,7 +3379,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3265,11 +3400,12 @@ window.vocabN4 = [
   lawan_bicara: [],
   nuance: '変わる = berubah (intransitif). Transitif: 変える. 変わった人 = orang yang unik/aneh.',
   conj_type: 'godan',
-  examples: [{"jp": "季節が変わりました。", "id": "Musimnya sudah berganti.", "level": "n4", "tags": ["alam"]}, {"jp": "彼の態度が変わりましたね。", "id": "Sikapnya berubah ya.", "level": "n4", "tags": ["hubungan"]}],
+  examples: [{"jp": "季節が変わりました。", "id": "Musimnya sudah berganti.", "level": "n4", "tags": ["alam-lingkungan"]}, {"jp": "彼の態度が変わりましたね。", "id": "Sikapnya berubah ya.", "level": "n4", "tags": ["hubungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3293,7 +3429,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3317,7 +3454,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3341,7 +3479,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3365,7 +3504,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3389,7 +3529,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3409,11 +3550,12 @@ window.vocabN4 = [
   lawan_bicara: [],
   nuance: '喜ぶ = merasa gembira (atas sesuatu). 喜んで！= Dengan senang hati!',
   conj_type: 'godan',
-  examples: [{"jp": "合格して喜びました。", "id": "Saya gembira lulus.", "level": "n4", "tags": ["emosi", "sekolah"]}],
+  examples: [{"jp": "合格して喜びました。", "id": "Saya gembira lulus.", "level": "n4", "tags": ["emosi", "pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3437,7 +3579,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3461,7 +3604,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3485,7 +3629,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3509,7 +3654,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3533,7 +3679,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3557,7 +3704,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3581,7 +3729,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3605,7 +3754,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3629,7 +3779,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3653,7 +3804,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3677,7 +3829,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3701,7 +3854,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3725,7 +3879,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3749,7 +3904,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3773,7 +3929,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3797,7 +3954,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3821,7 +3979,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3845,7 +4004,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3869,7 +4029,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3893,7 +4054,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3917,7 +4079,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3941,7 +4104,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3965,7 +4129,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -3985,11 +4150,12 @@ window.vocabN4 = [
   lawan_bicara: [],
   nuance: '返す = mengembalikan (barang/uang). 借りたものを返す。Jangan keliru: 返事する = membalas.',
   conj_type: 'godan',
-  examples: [{"jp": "借りた本を図書館に返しました。", "id": "Saya mengembalikan buku pinjaman ke perpustakaan.", "level": "n4", "tags": ["sekolah"]}],
+  examples: [{"jp": "借りた本を図書館に返しました。", "id": "Saya mengembalikan buku pinjaman ke perpustakaan.", "level": "n4", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4009,11 +4175,12 @@ window.vocabN4 = [
   lawan_bicara: [],
   nuance: '返事 = jawaban/balasan. 返事する = membalas. メールの返事 = balasan email.',
   conj_type: null,
-  examples: [{"jp": "メールの返事をまだしていません。", "id": "Saya belum membalas emailnya.", "level": "n4", "tags": ["teknologi", "kerja"]}],
+  examples: [{"jp": "メールの返事をまだしていません。", "id": "Saya belum membalas emailnya.", "level": "n4", "tags": ["teknologi", "pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4037,7 +4204,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4061,7 +4229,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4085,7 +4254,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4109,7 +4279,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4133,7 +4304,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4157,7 +4329,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4181,7 +4354,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4205,7 +4379,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4229,7 +4404,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4253,7 +4429,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n4-00313'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4277,7 +4454,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4301,7 +4479,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4325,7 +4504,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4349,7 +4529,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4373,7 +4554,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4397,7 +4579,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4421,7 +4604,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4445,7 +4629,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4469,7 +4654,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4493,7 +4679,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4517,7 +4704,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4541,7 +4729,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4565,7 +4754,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4589,7 +4779,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4613,7 +4804,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4637,7 +4829,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4661,7 +4854,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4685,7 +4879,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4709,7 +4904,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4733,7 +4929,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4757,7 +4954,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4781,7 +4979,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4805,7 +5004,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4829,7 +5029,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4853,7 +5054,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4877,7 +5079,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4901,7 +5104,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4925,7 +5129,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4949,7 +5154,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4973,7 +5179,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -4997,7 +5204,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5021,7 +5229,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5045,7 +5254,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5069,7 +5279,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5093,7 +5304,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5117,7 +5329,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5141,7 +5354,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5165,7 +5379,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5189,7 +5404,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5213,7 +5429,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5237,7 +5454,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5261,7 +5479,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5285,7 +5504,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5309,7 +5529,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5333,7 +5554,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5357,7 +5579,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5381,7 +5604,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5389,7 +5613,7 @@ window.vocabN4 = [
   word: '差し上げる',
   reading: 'さしあげる',
   romaji: 'sashiageru',
-  meaning_id: 'memberikan (bentuk rendah hati dari あげる)',
+  meaning_id: 'memberikan',
   meaning_en: 'to give (humble form of あげる)',
   jlpt: 'n4',
   pos: 'verb-ru',
@@ -5405,7 +5629,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5413,7 +5638,7 @@ window.vocabN4 = [
   word: 'いただく',
   reading: 'いただく',
   romaji: 'itadaku',
-  meaning_id: 'menerima (bentuk rendah hati dari もらう)',
+  meaning_id: 'menerima',
   meaning_en: 'to receive (humble form of もらう)',
   jlpt: 'n4',
   pos: 'verb-u',
@@ -5429,7 +5654,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5437,7 +5663,7 @@ window.vocabN4 = [
   word: 'くださる',
   reading: 'くださる',
   romaji: 'kudasaru',
-  meaning_id: 'memberi (bentuk hormat dari くれる)',
+  meaning_id: 'memberi',
   meaning_en: 'to give (honorific form of くれる)',
   jlpt: 'n4',
   pos: 'verb-u',
@@ -5453,7 +5679,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5477,7 +5704,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5501,7 +5729,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5525,7 +5754,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5549,7 +5779,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5573,7 +5804,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5597,7 +5829,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5617,11 +5850,12 @@ window.vocabN4 = [
   lawan_bicara: [],
   nuance: '増える = bertambah (intransitif). Transitif: 増やす. Lawan: 減る.',
   conj_type: 'ichidan',
-  examples: [{"jp": "日本語を勉強する人が増えています。", "id": "Orang yang belajar bahasa Jepang semakin bertambah.", "level": "n4", "tags": ["sekolah"]}],
+  examples: [{"jp": "日本語を勉強する人が増えています。", "id": "Orang yang belajar bahasa Jepang semakin bertambah.", "level": "n4", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5645,7 +5879,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5669,7 +5904,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5693,7 +5929,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5717,7 +5954,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5741,7 +5979,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5765,7 +6004,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5789,7 +6029,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5813,7 +6054,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5837,7 +6079,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5861,7 +6104,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5885,7 +6129,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5909,7 +6154,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5933,7 +6179,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5957,7 +6204,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -5981,7 +6229,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6005,7 +6254,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6029,7 +6279,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6053,7 +6304,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6077,7 +6329,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6101,7 +6354,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6125,7 +6379,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6149,7 +6404,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6173,7 +6429,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6197,7 +6454,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6221,7 +6479,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6245,7 +6504,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6269,7 +6529,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6293,7 +6554,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6317,7 +6579,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6341,7 +6604,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6365,7 +6629,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6389,7 +6654,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6413,7 +6679,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6437,7 +6704,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6461,7 +6729,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6485,7 +6754,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6509,7 +6779,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6533,7 +6804,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6557,7 +6829,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6581,7 +6854,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6605,7 +6879,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6629,7 +6904,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6653,7 +6929,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6673,11 +6950,12 @@ window.vocabN4 = [
   lawan_bicara: [],
   nuance: 'アルバイト = kerja paruh waktu. Dari bahasa Jerman. Biasa disingkat バイト.',
   conj_type: null,
-  examples: [{"jp": "週に三回コンビニでアルバイトをしています。", "id": "Saya kerja paruh waktu di konbini tiga kali seminggu.", "level": "n4", "tags": ["kerja"]}],
+  examples: [{"jp": "週に三回コンビニでアルバイトをしています。", "id": "Saya kerja paruh waktu di konbini tiga kali seminggu.", "level": "n4", "tags": ["pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6701,7 +6979,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6725,7 +7004,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6749,7 +7029,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6773,7 +7054,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6797,7 +7079,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6821,7 +7104,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6845,7 +7129,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6869,7 +7154,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6893,7 +7179,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6917,7 +7204,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6941,7 +7229,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6965,7 +7254,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -6989,7 +7279,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7013,7 +7304,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7037,7 +7329,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7061,7 +7354,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7085,7 +7379,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7109,7 +7404,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7133,7 +7429,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7157,7 +7454,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7181,7 +7479,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7205,7 +7504,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7229,7 +7529,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7253,7 +7554,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7277,7 +7579,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7301,7 +7604,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7325,7 +7629,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7349,7 +7654,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7373,7 +7679,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7397,7 +7704,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7421,7 +7729,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7445,7 +7754,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7469,7 +7779,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7493,7 +7804,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7517,7 +7829,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7541,7 +7854,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7565,7 +7879,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7589,7 +7904,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7613,7 +7929,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7637,7 +7954,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7661,7 +7979,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7685,7 +8004,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7709,7 +8029,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7733,7 +8054,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7757,7 +8079,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7781,7 +8104,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7805,7 +8129,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7829,7 +8154,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7853,7 +8179,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7877,7 +8204,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7901,7 +8229,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7925,7 +8254,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7949,7 +8279,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7973,7 +8304,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -7997,7 +8329,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8021,7 +8354,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8045,7 +8379,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8069,7 +8404,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8093,7 +8429,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8117,7 +8454,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8137,11 +8475,12 @@ window.vocabN4 = [
   lawan_bicara: [],
   nuance: '恥ずかしい = malu (perasaan, adj-i). 恥ずかしがり屋 = pemalu.',
   conj_type: 'adj-i',
-  examples: [{"jp": "みんなの前で発表するのは恥ずかしいです。", "id": "Presentasi di depan semua orang itu memalukan.", "level": "n4", "tags": ["emosi", "sekolah"]}],
+  examples: [{"jp": "みんなの前で発表するのは恥ずかしいです。", "id": "Presentasi di depan semua orang itu memalukan.", "level": "n4", "tags": ["emosi", "pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8165,7 +8504,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8189,7 +8529,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8213,7 +8554,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8237,7 +8579,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8261,7 +8604,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8285,7 +8629,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8309,7 +8654,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8333,7 +8679,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8357,7 +8704,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8381,7 +8729,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8405,7 +8754,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8429,7 +8779,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8453,7 +8804,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8477,7 +8829,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8501,7 +8854,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8525,7 +8879,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8549,7 +8904,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8569,11 +8925,12 @@ window.vocabN4 = [
   lawan_bicara: [],
   nuance: '機会 = kesempatan/peluang. 機会があれば = kalau ada kesempatan. チャンス lebih kasual.',
   conj_type: null,
-  examples: [{"jp": "日本語を使う機会がもっと欲しいです。", "id": "Saya ingin lebih banyak kesempatan menggunakan bahasa Jepang.", "level": "n4", "tags": ["sekolah"]}],
+  examples: [{"jp": "日本語を使う機会がもっと欲しいです。", "id": "Saya ingin lebih banyak kesempatan menggunakan bahasa Jepang.", "level": "n4", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8597,7 +8954,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8617,11 +8975,12 @@ window.vocabN4 = [
   lawan_bicara: [],
   nuance: '問題 = masalah (perlu diselesaikan) ATAU soal (ujian). 問題ない = tidak ada masalah.',
   conj_type: null,
-  examples: [{"jp": "何か問題がありますか。", "id": "Apakah ada masalah?", "level": "n4", "tags": ["kerja"]}, {"jp": "この問題を解いてください。", "id": "Tolong selesaikan soal ini.", "level": "n4", "tags": ["sekolah"]}],
+  examples: [{"jp": "何か問題がありますか。", "id": "Apakah ada masalah?", "level": "n4", "tags": ["pekerjaan"]}, {"jp": "この問題を解いてください。", "id": "Tolong selesaikan soal ini.", "level": "n4", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8645,7 +9004,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8669,7 +9029,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8689,11 +9050,12 @@ window.vocabN4 = [
   lawan_bicara: [],
   nuance: '方法 = cara/metode. やり方 lebih kasual. 方法を考える = memikirkan cara.',
   conj_type: null,
-  examples: [{"jp": "もっと効果的な方法を探しています。", "id": "Saya mencari metode yang lebih efektif.", "level": "n4", "tags": ["kerja"]}],
+  examples: [{"jp": "もっと効果的な方法を探しています。", "id": "Saya mencari metode yang lebih efektif.", "level": "n4", "tags": ["pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8717,7 +9079,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8741,7 +9104,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8765,7 +9129,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8789,7 +9154,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8809,11 +9175,12 @@ window.vocabN4 = [
   lawan_bicara: [],
   nuance: '理由 = alasan (logis). 理由を説明する. 訳 (wake) lebih kasual.',
   conj_type: null,
-  examples: [{"jp": "遅刻した理由を教えてください。", "id": "Tolong beritahu alasan terlambatnya.", "level": "n4", "tags": ["kerja", "sekolah"]}],
+  examples: [{"jp": "遅刻した理由を教えてください。", "id": "Tolong beritahu alasan terlambatnya.", "level": "n4", "tags": ["pekerjaan", "pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8833,11 +9200,12 @@ window.vocabN4 = [
   lawan_bicara: [],
   nuance: '意見 = pendapat/opini. 意見を言う = menyampaikan pendapat. 意見が合う = pendapat cocok.',
   conj_type: null,
-  examples: [{"jp": "この件についてご意見をお聞かせください。", "id": "Tolong sampaikan pendapat Anda mengenai hal ini.", "level": "n4", "tags": ["kerja", "formal"]}],
+  examples: [{"jp": "この件についてご意見をお聞かせください。", "id": "Tolong sampaikan pendapat Anda mengenai hal ini.", "level": "n4", "tags": ["pekerjaan", "pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8861,7 +9229,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8885,7 +9254,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8909,7 +9279,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8933,7 +9304,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8957,7 +9329,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -8981,7 +9354,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9005,7 +9379,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9029,7 +9404,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9053,7 +9429,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9077,7 +9454,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9101,7 +9479,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9125,7 +9504,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9149,7 +9529,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9173,7 +9554,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9197,7 +9579,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9221,7 +9604,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9245,7 +9629,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9269,7 +9654,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9293,7 +9679,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9317,7 +9704,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9341,7 +9729,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9365,7 +9754,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9389,7 +9779,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9413,7 +9804,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9437,7 +9829,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9461,7 +9854,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9469,7 +9863,7 @@ window.vocabN4 = [
   word: 'いらっしゃる',
   reading: 'いらっしゃる',
   romaji: 'irassharu',
-  meaning_id: 'ada (bentuk hormat dari います/あります)',
+  meaning_id: 'ada',
   meaning_en: 'to be (honorific of います/あります)',
   jlpt: 'n4',
   pos: 'verb-u',
@@ -9485,7 +9879,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9493,7 +9888,7 @@ window.vocabN4 = [
   word: 'おっしゃる',
   reading: 'おっしゃる',
   romaji: 'ossharu',
-  meaning_id: 'berkata (bentuk hormat dari 言います)',
+  meaning_id: 'berkata',
   meaning_en: 'to say (honorific of 言います)',
   jlpt: 'n4',
   pos: 'verb-u',
@@ -9509,7 +9904,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9517,7 +9913,7 @@ window.vocabN4 = [
   word: 'なさる',
   reading: 'なさる',
   romaji: 'nasaru',
-  meaning_id: 'melakukan (bentuk hormat dari します)',
+  meaning_id: 'melakukan',
   meaning_en: 'to do (honorific of します)',
   jlpt: 'n4',
   pos: 'verb-u',
@@ -9533,7 +9929,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9557,7 +9954,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9581,7 +9979,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9589,7 +9988,7 @@ window.vocabN4 = [
   word: 'まいる',
   reading: 'まいる',
   romaji: 'mairu',
-  meaning_id: 'pergi/datang (bentuk rendah hati dari 行く/来る)',
+  meaning_id: 'pergi/datang',
   meaning_en: 'to go/come (humble of 行く/来る)',
   jlpt: 'n4',
   pos: 'verb-u',
@@ -9605,7 +10004,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9613,7 +10013,7 @@ window.vocabN4 = [
   word: 'おる',
   reading: 'おる',
   romaji: 'oru',
-  meaning_id: 'ada (bentuk rendah hati dari いる)',
+  meaning_id: 'ada',
   meaning_en: 'to be (humble of いる)',
   jlpt: 'n4',
   pos: 'verb-u',
@@ -9629,7 +10029,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9637,7 +10038,7 @@ window.vocabN4 = [
   word: '申す',
   reading: 'もうす',
   romaji: 'mousu',
-  meaning_id: 'berkata (bentuk rendah hati dari 言う)',
+  meaning_id: 'berkata',
   meaning_en: 'to say (humble of 言う)',
   jlpt: 'n4',
   pos: 'verb-u',
@@ -9653,7 +10054,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9661,7 +10063,7 @@ window.vocabN4 = [
   word: 'ございます',
   reading: 'ございます',
   romaji: 'gozaimasu',
-  meaning_id: 'ada (bentuk sopan dari あります)',
+  meaning_id: 'ada',
   meaning_en: 'to be/exist (polite form of あります)',
   jlpt: 'n4',
   pos: 'verb-u',
@@ -9677,7 +10079,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9701,7 +10104,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9709,7 +10113,7 @@ window.vocabN4 = [
   word: 'お〜になる',
   reading: 'お〜になる',
   romaji: 'oninaru',
-  meaning_id: 'pola kata kerja hormat (お + bentuk dasar + になる)',
+  meaning_id: 'pola kata kerja hormat',
   meaning_en: 'honorific verb pattern (お + Vstem + になる)',
   jlpt: 'n4',
   pos: 'noun',
@@ -9725,7 +10129,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9749,7 +10154,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9773,7 +10179,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9797,7 +10204,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9821,7 +10229,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9845,7 +10254,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9869,7 +10279,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9893,7 +10304,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9917,7 +10329,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9941,7 +10354,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9965,7 +10379,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -9989,7 +10404,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10013,7 +10429,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10037,7 +10454,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10061,7 +10479,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10085,7 +10504,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10109,7 +10529,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10133,7 +10554,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10157,7 +10579,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10181,7 +10604,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10205,7 +10629,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10229,7 +10654,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10253,7 +10679,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10277,7 +10704,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10301,7 +10729,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10325,7 +10754,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10349,7 +10779,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10373,7 +10804,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10397,7 +10829,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10421,7 +10854,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10445,7 +10879,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10469,7 +10904,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10493,7 +10929,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10517,7 +10954,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10541,7 +10979,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10565,7 +11004,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10589,7 +11029,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10609,11 +11050,12 @@ window.vocabN4 = [
   lawan_bicara: [],
   nuance: '通る = melewati (tempat) / lulus (ujian). 道を通る = melewati jalan.',
   conj_type: 'godan',
-  examples: [{"jp": "この道を通って駅まで行けます。", "id": "Lewat jalan ini bisa sampai ke stasiun.", "level": "n4", "tags": ["perjalanan"]}, {"jp": "試験に通りました！", "id": "Saya lulus ujian!", "level": "n4", "tags": ["sekolah", "emosi"]}],
+  examples: [{"jp": "この道を通って駅まで行けます。", "id": "Lewat jalan ini bisa sampai ke stasiun.", "level": "n4", "tags": ["perjalanan"]}, {"jp": "試験に通りました！", "id": "Saya lulus ujian!", "level": "n4", "tags": ["pendidikan", "emosi"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10637,7 +11079,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10661,7 +11104,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10685,7 +11129,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10709,7 +11154,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10733,7 +11179,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10757,7 +11204,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10781,7 +11229,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10801,11 +11250,12 @@ window.vocabN4 = [
   lawan_bicara: [],
   nuance: '説明する = menjelaskan. 説明書 = buku petunjuk. わかりやすく説明する = jelaskan dengan jelas.',
   conj_type: 'suru',
-  examples: [{"jp": "使い方を説明してもらえますか。", "id": "Bisakah kamu menjelaskan cara penggunaannya?", "level": "n4", "tags": ["kerja", "sekolah"]}],
+  examples: [{"jp": "使い方を説明してもらえますか。", "id": "Bisakah kamu menjelaskan cara penggunaannya?", "level": "n4", "tags": ["pekerjaan", "pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n4-00299'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10829,7 +11279,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10853,7 +11304,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10877,7 +11329,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10901,7 +11354,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10925,7 +11379,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10949,7 +11404,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10973,7 +11429,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -10997,7 +11454,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11021,7 +11479,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11045,7 +11504,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11069,7 +11529,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11093,7 +11554,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11117,7 +11579,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n4-00305'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11141,7 +11604,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n4-00308'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11165,7 +11629,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n4-00309'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11189,7 +11654,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11209,11 +11675,12 @@ window.vocabN4 = [
   lawan_bicara: [],
   nuance: '準備する = mempersiapkan/bersiap. 準備ができた = sudah siap.',
   conj_type: 'suru',
-  examples: [{"jp": "試験の準備はできていますか。", "id": "Apakah persiapan ujian sudah selesai?", "level": "n4", "tags": ["sekolah"]}],
+  examples: [{"jp": "試験の準備はできていますか。", "id": "Apakah persiapan ujian sudah selesai?", "level": "n4", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n4-00304'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11237,7 +11704,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11261,7 +11729,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11285,7 +11754,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11309,7 +11779,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11333,7 +11804,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11357,7 +11829,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11381,7 +11854,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11405,7 +11879,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11429,7 +11904,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11453,7 +11929,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11477,7 +11954,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11501,7 +11979,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11525,7 +12004,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11549,7 +12029,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11573,7 +12054,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11597,7 +12079,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11621,7 +12104,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11645,7 +12129,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11669,7 +12154,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11693,7 +12179,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11717,7 +12204,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11741,7 +12229,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11765,7 +12254,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11789,7 +12279,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11813,7 +12304,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11837,7 +12329,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11861,7 +12354,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11885,7 +12379,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11909,7 +12404,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11933,7 +12429,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11957,7 +12454,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -11981,7 +12479,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12005,7 +12504,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12029,7 +12529,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12053,7 +12554,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12077,7 +12579,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12101,7 +12604,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12125,7 +12629,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12149,7 +12654,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12173,7 +12679,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12197,7 +12704,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12221,7 +12729,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12245,7 +12754,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12269,7 +12779,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12293,7 +12804,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12317,7 +12829,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12341,7 +12854,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12365,7 +12879,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12389,7 +12904,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12413,7 +12929,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12437,7 +12954,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12461,7 +12979,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12485,7 +13004,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12509,7 +13029,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12533,7 +13054,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12557,7 +13079,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12577,11 +13100,12 @@ window.vocabN4 = [
   lawan_bicara: [],
   nuance: '季節 = musim. Jepang: 春夏秋冬. 季節の変わり目 = pergantian musim.',
   conj_type: null,
-  examples: [{"jp": "日本には四つの季節があります。", "id": "Di Jepang ada empat musim.", "level": "n4", "tags": ["alam"]}],
+  examples: [{"jp": "日本には四つの季節があります。", "id": "Di Jepang ada empat musim.", "level": "n4", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12601,11 +13125,12 @@ window.vocabN4 = [
   lawan_bicara: [],
   nuance: '地震 = gempa bumi. 地震が起きる. 震度 (shindo) = skala kekuatan gempa Jepang.',
   conj_type: null,
-  examples: [{"jp": "昨夜大きな地震がありました。", "id": "Semalam ada gempa besar.", "level": "n4", "tags": ["alam"]}, {"jp": "日本では地震が多いです。", "id": "Di Jepang gempa bumi sering terjadi.", "level": "n4", "tags": ["alam"]}],
+  examples: [{"jp": "昨夜大きな地震がありました。", "id": "Semalam ada gempa besar.", "level": "n4", "tags": ["alam-lingkungan"]}, {"jp": "日本では地震が多いです。", "id": "Di Jepang gempa bumi sering terjadi.", "level": "n4", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12629,7 +13154,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12653,7 +13179,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12677,7 +13204,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12701,7 +13229,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12725,7 +13254,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12749,7 +13279,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12773,7 +13304,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12797,7 +13329,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12821,7 +13354,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12845,7 +13379,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12869,7 +13404,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12889,11 +13425,12 @@ window.vocabN4 = [
   lawan_bicara: [],
   nuance: '相談する = berkonsultasi/mendiskusikan masalah. 相談に乗る = bersedia menolong.',
   conj_type: null,
-  examples: [{"jp": "困ったことがあれば、相談してください。", "id": "Kalau ada kesulitan, silakan konsultasi.", "level": "n4", "tags": ["hubungan", "kerja"]}],
+  examples: [{"jp": "困ったことがあれば、相談してください。", "id": "Kalau ada kesulitan, silakan konsultasi.", "level": "n4", "tags": ["hubungan", "pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12917,7 +13454,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n4-00325'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12941,7 +13479,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12965,7 +13504,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -12989,7 +13529,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13013,7 +13554,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13021,7 +13563,7 @@ window.vocabN4 = [
   word: 'アジア',
   reading: 'アジア',
   romaji: 'アジア',
-  meaning_id: 'Asia',
+  meaning_id: 'Asia (benua)',
   meaning_en: 'Asia',
   jlpt: 'n4',
   pos: 'noun',
@@ -13037,7 +13579,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13061,7 +13604,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13085,7 +13629,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13109,7 +13654,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13133,7 +13679,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13157,7 +13704,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13181,7 +13729,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13205,7 +13754,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13229,7 +13779,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13253,7 +13804,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13277,7 +13829,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13285,7 +13838,7 @@ window.vocabN4 = [
   word: 'ステーキ',
   reading: 'ステーキ',
   romaji: 'ステーキ',
-  meaning_id: 'steak',
+  meaning_id: 'steak, daging panggang',
   meaning_en: 'steak',
   jlpt: 'n4',
   pos: 'noun',
@@ -13301,7 +13854,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13309,7 +13863,7 @@ window.vocabN4 = [
   word: 'ステレオ',
   reading: 'ステレオ',
   romaji: 'ステレオ',
-  meaning_id: 'stereo',
+  meaning_id: 'stereo (sistem audio)',
   meaning_en: 'stereo',
   jlpt: 'n4',
   pos: 'noun',
@@ -13325,7 +13879,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13333,7 +13888,7 @@ window.vocabN4 = [
   word: 'サラダ',
   reading: 'サラダ',
   romaji: 'サラダ',
-  meaning_id: 'salad',
+  meaning_id: 'salad, sayuran segar',
   meaning_en: 'salad',
   jlpt: 'n4',
   pos: 'noun',
@@ -13349,7 +13904,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13373,7 +13929,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13397,7 +13954,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13421,7 +13979,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13445,7 +14004,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13469,7 +14029,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13493,7 +14054,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13517,7 +14079,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13541,7 +14104,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13565,7 +14129,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13589,7 +14154,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13613,7 +14179,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13637,7 +14204,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13661,7 +14229,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13685,7 +14254,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13709,7 +14279,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13733,7 +14304,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13757,7 +14329,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13781,7 +14354,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13805,7 +14379,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13829,7 +14404,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13853,7 +14429,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13877,7 +14454,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13901,7 +14479,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13925,7 +14504,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13949,7 +14529,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13973,7 +14554,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -13997,7 +14579,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14021,7 +14604,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14045,7 +14629,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14069,7 +14654,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14093,7 +14679,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14117,7 +14704,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14141,7 +14729,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14165,7 +14754,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14189,7 +14779,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14213,7 +14804,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14237,7 +14829,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14261,7 +14854,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14285,7 +14879,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14309,7 +14904,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14333,7 +14929,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14357,7 +14954,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14381,7 +14979,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14405,7 +15004,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14429,7 +15029,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14453,7 +15054,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14477,7 +15079,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14501,7 +15104,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14525,7 +15129,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14549,7 +15154,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14573,7 +15179,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14597,7 +15204,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14621,7 +15229,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14645,7 +15254,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14669,7 +15279,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14693,7 +15304,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14717,7 +15329,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14741,7 +15354,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14765,7 +15379,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14789,7 +15404,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14813,7 +15429,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14837,7 +15454,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14861,7 +15479,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14885,7 +15504,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14909,7 +15529,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14933,7 +15554,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14957,7 +15579,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -14981,7 +15604,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15005,7 +15629,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15029,7 +15654,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15053,7 +15679,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15077,7 +15704,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15101,7 +15729,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15125,7 +15754,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15149,7 +15779,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15173,7 +15804,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15197,7 +15829,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15221,7 +15854,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15245,7 +15879,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15269,7 +15904,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15293,7 +15929,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15301,7 +15938,7 @@ window.vocabN4 = [
   word: '柔道',
   reading: 'じゅうどう',
   romaji: 'juudou',
-  meaning_id: 'judo',
+  meaning_id: 'judo (bela diri Jepang)',
   meaning_en: 'judo',
   jlpt: 'n4',
   pos: 'noun',
@@ -15317,7 +15954,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15341,7 +15979,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15365,7 +16004,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15389,7 +16029,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15413,7 +16054,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15437,7 +16079,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15461,7 +16104,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15485,7 +16129,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15509,7 +16154,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15533,7 +16179,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15557,7 +16204,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15581,7 +16229,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15605,7 +16254,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n4-00315'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15625,11 +16275,12 @@ window.vocabN4 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Konotasi positif — usaha yang konsisten. 努力する = bekerja keras/berusaha dengan sungguh-sungguh.',
   conj_type: 'suru',
-  examples: [{"jp": "努力すれば夢が叶います。", "id": "Kalau berusaha, mimpi bisa terwujud.", "level": "n4", "tags": ["motivasi"]}, {"jp": "毎日の努力が大切です。", "id": "Usaha setiap hari itu penting.", "level": "n4", "tags": ["motivasi", "kerja"]}],
+  examples: [{"jp": "努力すれば夢が叶います。", "id": "Kalau berusaha, mimpi bisa terwujud.", "level": "n4", "tags": ["motivasi"]}, {"jp": "毎日の努力が大切です。", "id": "Usaha setiap hari itu penting.", "level": "n4", "tags": ["motivasi", "pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n4-00652'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15649,11 +16300,12 @@ window.vocabN4 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Lebih konkret/terukur dari 目的 (mokuteki = tujuan umum). 目標を立てる = menetapkan target.',
   conj_type: null,
-  examples: [{"jp": "今年の目標はN3に合格することです。", "id": "Target tahun ini adalah lulus N3.", "level": "n4", "tags": ["motivasi", "sekolah"]}, {"jp": "目標に向かって頑張ります。", "id": "Saya akan berusaha menuju target.", "level": "n4", "tags": ["motivasi"]}],
+  examples: [{"jp": "今年の目標はN3に合格することです。", "id": "Target tahun ini adalah lulus N3.", "level": "n4", "tags": ["motivasi", "pendidikan"]}, {"jp": "目標に向かって頑張ります。", "id": "Saya akan berusaha menuju target.", "level": "n4", "tags": ["motivasi"]}],
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n4-00651'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15673,11 +16325,12 @@ window.vocabN4 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Spesifik untuk suhu udara/atmosfer. Berbeda dengan 体温 (taion) = suhu tubuh.',
   conj_type: null,
-  examples: [{"jp": "今日の気温は３０度です。", "id": "Suhu udara hari ini 30 derajat.", "level": "n4", "tags": ["alam"]}, {"jp": "気温が下がってきました。", "id": "Suhu udara sudah mulai turun.", "level": "n4", "tags": ["alam"]}],
+  examples: [{"jp": "今日の気温は３０度です。", "id": "Suhu udara hari ini 30 derajat.", "level": "n4", "tags": ["alam-lingkungan"]}, {"jp": "気温が下がってきました。", "id": "Suhu udara sudah mulai turun.", "level": "n4", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15697,11 +16350,12 @@ window.vocabN4 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '〜と比べる / 〜に比べて = dibandingkan dengan... Pasangan: 比較する (hikaku suru) lebih formal.',
   conj_type: 'ichidan',
-  examples: [{"jp": "去年と比べて、日本語が上手になりました。", "id": "Dibandingkan tahun lalu, bahasa Jepang saya semakin bagus.", "level": "n4", "tags": ["sekolah"]}, {"jp": "二つの値段を比べてみてください。", "id": "Coba bandingkan dua harga itu.", "level": "n4", "tags": ["belanja"]}],
+  examples: [{"jp": "去年と比べて、日本語が上手になりました。", "id": "Dibandingkan tahun lalu, bahasa Jepang saya semakin bagus.", "level": "n4", "tags": ["pendidikan"]}, {"jp": "二つの値段を比べてみてください。", "id": "Coba bandingkan dua harga itu.", "level": "n4", "tags": ["belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15725,7 +16379,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15749,7 +16404,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15773,7 +16429,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15797,7 +16454,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15821,7 +16479,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15845,7 +16504,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n4-00485'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15869,7 +16529,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15893,7 +16554,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15917,7 +16579,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15941,7 +16604,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15965,7 +16629,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n4-00502'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -15989,7 +16654,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n4-00498'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16013,7 +16679,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n4-00021'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16037,7 +16704,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n4-00114'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16061,7 +16729,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n4-00499'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16085,7 +16754,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n4-00500'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16109,7 +16779,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16133,7 +16804,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16157,7 +16829,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16177,11 +16850,12 @@ window.vocabN4 = [
   lawan_bicara: [],
   nuance: '予約する = memesan/mereservasi (hotel, restoran, tiket). 予約なし = tanpa reservasi.',
   conj_type: 'suru',
-  examples: [{"jp": "レストランを予約しました。", "id": "Saya sudah memesan restoran.", "level": "n4", "tags": ["makanan", "perjalanan"]}],
+  examples: [{"jp": "レストランを予約しました。", "id": "Saya sudah memesan restoran.", "level": "n4", "tags": ["makanan-minuman", "perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n4-00179'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16205,7 +16879,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n4-00033'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16229,7 +16904,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n4-00685'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16253,7 +16929,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16277,7 +16954,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16301,7 +16979,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n4-00006'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16325,7 +17004,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16349,7 +17029,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n4-00016'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16373,7 +17054,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16397,7 +17079,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16421,7 +17104,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16445,7 +17129,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16469,7 +17154,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n4-00573'],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16493,7 +17179,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16517,7 +17204,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16541,7 +17229,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16565,7 +17254,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16589,7 +17279,8 @@ window.vocabN4 = [
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 },
 
 {
@@ -16609,11 +17300,12 @@ window.vocabN4 = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Spesifik untuk terlambat dari waktu yang ditetapkan. 遅刻しないように = agar tidak terlambat.',
   conj_type: 'suru',
-  examples: [{"jp": "電車が遅れて遅刻してしまいました。", "id": "Kereta terlambat jadi saya pun terlambat.", "level": "n4", "tags": ["kerja", "perjalanan"]}, {"jp": "遅刻しないでください。", "id": "Jangan terlambat.", "level": "n4", "tags": ["kerja", "sekolah"]}],
+  examples: [{"jp": "電車が遅れて遅刻してしまいました。", "id": "Kereta terlambat jadi saya pun terlambat.", "level": "n4", "tags": ["pekerjaan", "perjalanan"]}, {"jp": "遅刻しないでください。", "id": "Jangan terlambat.", "level": "n4", "tags": ["pekerjaan", "pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
-  added_v: 'v15-migrated'
+  added_v: 'v15-migrated',
+  provenance: 'jlpt-corpus'
 }
 
 ];
