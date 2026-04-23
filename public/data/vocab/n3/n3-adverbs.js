@@ -51,7 +51,26 @@ window.vocabN3_Adverbs = [
   ],
   "antonyms": [],
   "see_also": [],
-  "added_v": "v14.27"
+  "added_v": "v14.27",
+  "jmdict_seq": "2269050",
+  "frequency": 1000,
+  "meanings": [
+    {
+      "en": "swiftly; rapidly; quickly; immediately; hastily; hurriedly",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "suddenly; abruptly; unexpectedly",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "sharply (of a slope, bend, etc.); steeply",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
@@ -98,7 +117,9 @@ window.vocabN3_Adverbs = [
   ],
   "antonyms": [],
   "see_also": [],
-  "added_v": "v14.27"
+  "added_v": "v14.27",
+  "jmdict_seq": "1457040",
+  "frequency": 3500
 },
 
 {
@@ -146,7 +167,9 @@ window.vocabN3_Adverbs = [
     "vg-n3-00052"
   ],
   "see_also": [],
-  "added_v": "v14.27"
+  "added_v": "v14.27",
+  "jmdict_seq": "1487400",
+  "frequency": 1500
 },
 
 {
@@ -193,7 +216,9 @@ window.vocabN3_Adverbs = [
     "vg-n3-00051"
   ],
   "see_also": [],
-  "added_v": "v14.27"
+  "added_v": "v14.27",
+  "jmdict_seq": "1254130",
+  "frequency": 1500
 },
 
 {
@@ -237,7 +262,42 @@ window.vocabN3_Adverbs = [
   "see_also": [
     "vg-n3-00143"
   ],
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1007720",
+  "frequency": 1000,
+  "meanings": [
+    {
+      "en": "diligently; seriously; earnestly; reliably; steadily; legitimately",
+      "misc": [
+        "onomatopoeic or mimetic word"
+      ],
+      "field": []
+    },
+    {
+      "en": "perfectly; properly; exactly; orderly; punctually; regularly; safely; in good condition",
+      "misc": [
+        "onomatopoeic or mimetic word"
+      ],
+      "field": []
+    },
+    {
+      "en": "sufficiently; satisfactorily",
+      "misc": [
+        "onomatopoeic or mimetic word"
+      ],
+      "field": []
+    },
+    {
+      "en": "quickly",
+      "misc": [
+        "onomatopoeic or mimetic word"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "onomatopoeic or mimetic word"
+  ]
 },
 
 {
@@ -267,14 +327,42 @@ window.vocabN3_Adverbs = [
         "kehidupan"
       ]
     },
-    {"jp": "<b>きちんと</b>説明してください。", "id": "Tolong jelaskan dengan benar.", "level": "n3", "tags": ["bahasa-komunikasi"]}
+    {
+      "jp": "<b>きちんと</b>説明してください。",
+      "id": "Tolong jelaskan dengan benar.",
+      "level": "n3",
+      "tags": [
+        "bahasa-komunikasi"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [
     "vg-n3-00142"
   ],
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1003400",
+  "frequency": 1000,
+  "meanings": [
+    {
+      "en": "properly; accurately; exactly; precisely; regularly",
+      "misc": [
+        "onomatopoeic or mimetic word"
+      ],
+      "field": []
+    },
+    {
+      "en": "neatly; tidily; orderly",
+      "misc": [
+        "onomatopoeic or mimetic word"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "onomatopoeic or mimetic word"
+  ]
 },
 
 {
@@ -304,12 +392,36 @@ window.vocabN3_Adverbs = [
         "ekspresi"
       ]
     },
-    {"jp": "忙しいほうが、<b>むしろ</b>充実感がある。", "id": "Justru saat sibuk, ada rasa kepuasan lebih.", "level": "n3", "tags": ["emosi"]}
+    {
+      "jp": "忙しいほうが、<b>むしろ</b>充実感がある。",
+      "id": "Justru saat sibuk, ada rasa kepuasan lebih.",
+      "level": "n3",
+      "tags": [
+        "emosi"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1604870",
+  "frequency": 1000,
+  "forms": [
+    {
+      "word": "寧ろ",
+      "info": []
+    },
+    {
+      "word": "寧",
+      "info": [
+        "okurigana tidak biasa"
+      ]
+    }
+  ],
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
 },
 
 {
@@ -351,7 +463,20 @@ window.vocabN3_Adverbs = [
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1205770",
+  "forms": [
+    {
+      "word": "確かに",
+      "info": []
+    },
+    {
+      "word": "慥かに",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    }
+  ]
 },
 
 {
@@ -393,7 +518,74 @@ window.vocabN3_Adverbs = [
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1599420",
+  "frequency": 1000,
+  "forms": [
+    {
+      "word": "中々",
+      "info": []
+    },
+    {
+      "word": "中中",
+      "info": []
+    },
+    {
+      "word": "仲々",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "仲仲",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "却々",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "却却",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "very; considerably; easily; readily; fairly; quite; highly; rather",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "by no means; not readily",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "middle; half-way point",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "excellent; wonderful; very good",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
 },
 
 {
@@ -435,7 +627,25 @@ window.vocabN3_Adverbs = [
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1306490",
+  "meanings": [
+    {
+      "en": "assassin",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "candidate fielded by a political party to oust an incumbent of the same party",
+      "misc": [
+        "abbreviation"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "abbreviation"
+  ]
 },
 
 {
@@ -477,7 +687,12 @@ window.vocabN3_Adverbs = [
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1012500",
+  "frequency": 1000,
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
 },
 
 {
@@ -519,7 +734,9 @@ window.vocabN3_Adverbs = [
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1454670",
+  "frequency": 500
 },
 
 {
@@ -561,7 +778,25 @@ window.vocabN3_Adverbs = [
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1595610",
+  "frequency": 1000,
+  "forms": [
+    {
+      "word": "少なくとも",
+      "info": []
+    },
+    {
+      "word": "少くとも",
+      "info": [
+        "okurigana tidak biasa"
+      ]
+    },
+    {
+      "word": "尠くとも",
+      "info": []
+    }
+  ]
 },
 
 {
@@ -576,21 +811,90 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["waktu", "kehidupan-sehari"],
+  "domain": [
+    "waktu",
+    "kehidupan-sehari"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Menekankan bahwa suatu pengalaman atau kejadian terjadi untuk kali pertama, selalu mengandung nuansa sesuatu yang baru dialami. Pola 初めての＋N = (pengalaman/hal) pertama kali. Jangan tertukar dengan 初め (awal/permulaan) yang tidak berfungsi sebagai adverb.",
   "conj_type": null,
   "examples": [
-    {"jp": "日本に来たのは初めてです。", "id": "Ini pertama kali saya datang ke Jepang.", "level": "n3", "tags": ["perjalanan"]},
-    {"jp": "初めて会ったときから好きだった。", "id": "Sejak pertama kali bertemu aku sudah suka.", "level": "n3", "tags": ["percintaan"]},
-    {"jp": "初めての一人暮らしは不安だった。", "id": "Tinggal sendiri untuk pertama kali terasa mencemaskan.", "level": "n3", "tags": ["kehidupan-sehari", "emosi"]}
+    {
+      "jp": "日本に来たのは初めてです。",
+      "id": "Ini pertama kali saya datang ke Jepang.",
+      "level": "n3",
+      "tags": [
+        "perjalanan"
+      ]
+    },
+    {
+      "jp": "初めて会ったときから好きだった。",
+      "id": "Sejak pertama kali bertemu aku sudah suka.",
+      "level": "n3",
+      "tags": [
+        "percintaan"
+      ]
+    },
+    {
+      "jp": "初めての一人暮らしは不安だった。",
+      "id": "Tinggal sendiri untuk pertama kali terasa mencemaskan.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari",
+        "emosi"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n3-00347"],
+  "see_also": [
+    "vg-n3-00347"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1342550",
+  "frequency": 1000,
+  "forms": [
+    {
+      "word": "初めて",
+      "info": []
+    },
+    {
+      "word": "始めて",
+      "info": []
+    },
+    {
+      "word": "甫めて",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "for the first time",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "only after ... is it ...; only when ... do you ...; not until ... do you ...",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "first time; (one's) first",
+      "misc": [
+        "percakapan kasual"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "percakapan kasual"
+  ]
 },
 
 {
@@ -605,21 +909,61 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["waktu"],
+  "domain": [
+    "waktu"
+  ],
   "register": "written",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Lebih formal dan literary dibanding また atau もう一度. Sering dipakai dalam tulisan, berita, atau situasi resmi untuk menekankan pengulangan kejadian. Mengandung nuansa khidmat atau dramatis.",
   "conj_type": null,
   "examples": [
-    {"jp": "彼は再び立ち上がった。", "id": "Dia bangkit kembali.", "level": "n3", "tags": ["emosi-positif", "karakter"]},
-    {"jp": "再び同じ過ちを繰り返してはならない。", "id": "Kita tidak boleh mengulangi kesalahan yang sama lagi.", "level": "n3", "tags": ["pikiran-opini"]},
-    {"jp": "再び日本を訪れることができた。", "id": "Aku bisa mengunjungi Jepang sekali lagi.", "level": "n3", "tags": ["perjalanan"]}
+    {
+      "jp": "彼は再び立ち上がった。",
+      "id": "Dia bangkit kembali.",
+      "level": "n3",
+      "tags": [
+        "emosi-positif",
+        "karakter"
+      ]
+    },
+    {
+      "jp": "再び同じ過ちを繰り返してはならない。",
+      "id": "Kita tidak boleh mengulangi kesalahan yang sama lagi.",
+      "level": "n3",
+      "tags": [
+        "pikiran-opini"
+      ]
+    },
+    {
+      "jp": "再び日本を訪れることができた。",
+      "id": "Aku bisa mengunjungi Jepang sekali lagi.",
+      "level": "n3",
+      "tags": [
+        "perjalanan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n3-00352"],
+  "see_also": [
+    "vg-n3-00352"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1292300",
+  "frequency": 1000,
+  "forms": [
+    {
+      "word": "再び",
+      "info": []
+    },
+    {
+      "word": "二度",
+      "info": []
+    }
+  ]
 },
 
 {
@@ -634,21 +978,78 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["waktu", "sopan-santun"],
+  "domain": [
+    "waktu",
+    "sopan-santun"
+  ],
   "register": "formal",
-  "lawan_bicara": ["atasan", "umum"],
+  "lawan_bicara": [
+    "atasan",
+    "umum"
+  ],
   "nuance": "Mengandung nuansa melakukan sesuatu kembali dengan lebih serius dan penuh kesadaran, setelah refleksi atau formalitas. Sering dipakai dalam permintaan maaf resmi, perkenalan ulang, atau saat menjadwalkan ulang sesuatu. Berbeda dari 再び yang hanya berarti pengulangan biasa.",
   "conj_type": null,
   "examples": [
-    {"jp": "改めてお礼を申し上げます。", "id": "Izinkan saya menyampaikan terima kasih sekali lagi secara resmi.", "level": "n3", "tags": ["sopan-santun", "keigo-vocabulary"]},
-    {"jp": "改めて連絡します。", "id": "Saya akan menghubungi lagi nanti.", "level": "n3", "tags": ["bisnis", "bahasa-komunikasi"]},
-    {"jp": "改めて考えると、やはりそれが正しかった。", "id": "Setelah dipikir ulang, memang itu yang benar.", "level": "n3", "tags": ["pikiran-opini"]}
+    {
+      "jp": "改めてお礼を申し上げます。",
+      "id": "Izinkan saya menyampaikan terima kasih sekali lagi secara resmi.",
+      "level": "n3",
+      "tags": [
+        "sopan-santun",
+        "keigo-vocabulary"
+      ]
+    },
+    {
+      "jp": "改めて連絡します。",
+      "id": "Saya akan menghubungi lagi nanti.",
+      "level": "n3",
+      "tags": [
+        "bisnis",
+        "bahasa-komunikasi"
+      ]
+    },
+    {
+      "jp": "改めて考えると、やはりそれが正しかった。",
+      "id": "Setelah dipikir ulang, memang itu yang benar.",
+      "level": "n3",
+      "tags": [
+        "pikiran-opini"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n3-00351"],
+  "see_also": [
+    "vg-n3-00351"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1200740",
+  "frequency": 12500,
+  "forms": [
+    {
+      "word": "改めて",
+      "info": []
+    },
+    {
+      "word": "新ためて",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "another time; again; over again; once again; anew",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "formally; especially; intentionally; deliberately",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
@@ -663,21 +1064,60 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["waktu", "emosi"],
+  "domain": [
+    "waktu",
+    "emosi"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Menekankan bahwa perubahan atau kejadian berlangsung tanpa kita sadari, sering mengandung nuansa kekagetan atau nostalgia ringan. Berbeda dari 知らないうちに yang lebih netral — いつの間にか lebih ekspresif dan emosional.",
   "conj_type": null,
   "examples": [
-    {"jp": "いつの間にか、子供が大きくなっていた。", "id": "Tanpa terasa, anak-anak sudah tumbuh besar.", "level": "n3", "tags": ["keluarga", "emosi"]},
-    {"jp": "いつの間にか夜が明けていた。", "id": "Tidak terasa hari sudah berganti pagi.", "level": "n3", "tags": ["kehidupan-sehari"]},
-    {"jp": "いつの間にかみんな帰っていた。", "id": "Tanpa kusadari semua orang sudah pulang.", "level": "n3", "tags": ["kehidupan-sehari"]}
+    {
+      "jp": "いつの間にか、子供が大きくなっていた。",
+      "id": "Tanpa terasa, anak-anak sudah tumbuh besar.",
+      "level": "n3",
+      "tags": [
+        "keluarga",
+        "emosi"
+      ]
+    },
+    {
+      "jp": "いつの間にか夜が明けていた。",
+      "id": "Tidak terasa hari sudah berganti pagi.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "いつの間にかみんな帰っていた。",
+      "id": "Tanpa kusadari semua orang sudah pulang.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1188850",
+  "frequency": 1000,
+  "forms": [
+    {
+      "word": "いつの間にか",
+      "info": []
+    },
+    {
+      "word": "何時の間にか",
+      "info": []
+    }
+  ]
 },
 
 {
@@ -692,21 +1132,98 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["waktu"],
+  "domain": [
+    "waktu"
+  ],
   "register": "written",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Menunjukkan bahwa sesuatu akan terjadi dalam waktu tidak terlalu lama, dengan nuansa natural dan tenang. Lebih literary dibanding もうすぐ. Sering muncul dalam narasi, sastra, atau tulisan formal untuk menggambarkan perkembangan yang mengalir secara alami.",
   "conj_type": null,
   "examples": [
-    {"jp": "やがて春が来るだろう。", "id": "Tidak lama lagi musim semi pasti akan datang.", "level": "n3", "tags": ["alam-lingkungan"]},
-    {"jp": "努力を続ければ、やがて結果が出る。", "id": "Jika terus berusaha, lambat laun hasilnya akan terlihat.", "level": "n3", "tags": ["karakter", "pikiran-opini"]},
-    {"jp": "やがて彼は姿を消した。", "id": "Akhirnya dia pun menghilang.", "level": "n3", "tags": ["sastra"]}
+    {
+      "jp": "やがて春が来るだろう。",
+      "id": "Tidak lama lagi musim semi pasti akan datang.",
+      "level": "n3",
+      "tags": [
+        "alam-lingkungan"
+      ]
+    },
+    {
+      "jp": "努力を続ければ、やがて結果が出る。",
+      "id": "Jika terus berusaha, lambat laun hasilnya akan terlihat.",
+      "level": "n3",
+      "tags": [
+        "karakter",
+        "pikiran-opini"
+      ]
+    },
+    {
+      "jp": "やがて彼は姿を消した。",
+      "id": "Akhirnya dia pun menghilang.",
+      "level": "n3",
+      "tags": [
+        "sastra"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n3-00355", "vg-n3-00356"],
+  "see_also": [
+    "vg-n3-00355",
+    "vg-n3-00356"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1012730",
+  "frequency": 1000,
+  "forms": [
+    {
+      "word": "軈て",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "頓て",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "漸て",
+      "info": [
+        "word containing out-dated kanji or kanji usage"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "before long; soon; shortly",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "almost; nearly",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "finally; in the end; eventually",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
 },
 
 {
@@ -721,21 +1238,55 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["waktu", "emosi"],
+  "domain": [
+    "waktu",
+    "emosi"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Menekankan bahwa sesuatu akhirnya terjadi setelah proses atau penantian yang panjang, dan bisa bermakna positif maupun negatif. Berbeda dari ついに — とうとう sering dipakai untuk hasil yang sudah lama ditakutkan atau diantisipasi tanpa kepastian arah.",
   "conj_type": null,
   "examples": [
-    {"jp": "とうとう彼は来なかった。", "id": "Pada akhirnya dia tidak datang juga.", "level": "n3", "tags": ["emosi-negatif"]},
-    {"jp": "長い治療の末、とうとう病気が治った。", "id": "Setelah pengobatan panjang, penyakitnya akhirnya sembuh juga.", "level": "n3", "tags": ["kesehatan"]},
-    {"jp": "とうとう我慢できなくなった。", "id": "Akhirnya aku tidak bisa menahan diri lagi.", "level": "n3", "tags": ["emosi"]}
+    {
+      "jp": "とうとう彼は来なかった。",
+      "id": "Pada akhirnya dia tidak datang juga.",
+      "level": "n3",
+      "tags": [
+        "emosi-negatif"
+      ]
+    },
+    {
+      "jp": "長い治療の末、とうとう病気が治った。",
+      "id": "Setelah pengobatan panjang, penyakitnya akhirnya sembuh juga.",
+      "level": "n3",
+      "tags": [
+        "kesehatan"
+      ]
+    },
+    {
+      "jp": "とうとう我慢できなくなった。",
+      "id": "Akhirnya aku tidak bisa menahan diri lagi.",
+      "level": "n3",
+      "tags": [
+        "emosi"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n3-00356", "vg-n3-00354"],
+  "see_also": [
+    "vg-n3-00356",
+    "vg-n3-00354"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1449890",
+  "frequency": 1000,
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
 },
 
 {
@@ -750,21 +1301,91 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["waktu", "emosi-positif"],
+  "domain": [
+    "waktu",
+    "emosi-positif"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Menekankan momen pencapaian setelah perjuangan atau usaha panjang, sering mengandung nuansa positif dan dramatis. Berbeda dari とうとう — ついに lebih sering dipakai untuk pencapaian positif yang disambut dengan kebanggaan atau kelegaan.",
   "conj_type": null,
   "examples": [
-    {"jp": "ついに夢の家を買うことができた。", "id": "Akhirnya aku berhasil membeli rumah impian.", "level": "n3", "tags": ["emosi-positif", "kehidupan-sehari"]},
-    {"jp": "三年間の努力で、ついに合格した。", "id": "Setelah tiga tahun berjuang, akhirnya lulus.", "level": "n3", "tags": ["pendidikan", "emosi-positif"]},
-    {"jp": "ついにその日が来た。", "id": "Akhirnya hari itu pun tiba.", "level": "n3", "tags": ["emosi"]}
+    {
+      "jp": "ついに夢の家を買うことができた。",
+      "id": "Akhirnya aku berhasil membeli rumah impian.",
+      "level": "n3",
+      "tags": [
+        "emosi-positif",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "三年間の努力で、ついに合格した。",
+      "id": "Setelah tiga tahun berjuang, akhirnya lulus.",
+      "level": "n3",
+      "tags": [
+        "pendidikan",
+        "emosi-positif"
+      ]
+    },
+    {
+      "jp": "ついにその日が来た。",
+      "id": "Akhirnya hari itu pun tiba.",
+      "level": "n3",
+      "tags": [
+        "emosi"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n3-00355", "vg-n3-00354"],
+  "see_also": [
+    "vg-n3-00355",
+    "vg-n3-00354"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1372630",
+  "frequency": 1000,
+  "forms": [
+    {
+      "word": "遂に",
+      "info": []
+    },
+    {
+      "word": "終に",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "竟に",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "finally; in the end; at last",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "in the end; after all; never (happened)",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
 },
 
 {
@@ -779,21 +1400,85 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["waktu", "bahasa-komunikasi"],
+  "domain": [
+    "waktu",
+    "bahasa-komunikasi"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Dipakai untuk memulai urutan langkah atau penjelasan. Dalam konteks percakapan, juga bisa berarti 'paling tidak' atau 'setidaknya'. Sangat umum dipakai dalam instruksi, resep, dan presentasi.",
   "conj_type": null,
   "examples": [
-    {"jp": "まず手を洗ってください。", "id": "Pertama-tama, tolong cuci tangan.", "level": "n3", "tags": ["kesehatan", "kehidupan-sehari"]},
-    {"jp": "まず自己紹介から始めましょう。", "id": "Mari kita mulai dari perkenalan diri terlebih dahulu.", "level": "n3", "tags": ["bahasa-komunikasi"]},
-    {"jp": "まずは試してみることが大事だ。", "id": "Setidaknya mencoba dulu itu yang penting.", "level": "n3", "tags": ["pikiran-opini"]}
+    {
+      "jp": "まず手を洗ってください。",
+      "id": "Pertama-tama, tolong cuci tangan.",
+      "level": "n3",
+      "tags": [
+        "kesehatan",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "まず自己紹介から始めましょう。",
+      "id": "Mari kita mulai dari perkenalan diri terlebih dahulu.",
+      "level": "n3",
+      "tags": [
+        "bahasa-komunikasi"
+      ]
+    },
+    {
+      "jp": "まずは試してみることが大事だ。",
+      "id": "Setidaknya mencoba dulu itu yang penting.",
+      "level": "n3",
+      "tags": [
+        "pikiran-opini"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n3-00358"],
+  "see_also": [
+    "vg-n3-00358"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1387240",
+  "frequency": 1000,
+  "meanings": [
+    {
+      "en": "first (of all); firstly; to begin with; before anything else",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "probably; most likely; almost certainly; virtually",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "more or less (satisfactory); on the whole; reasonably",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "anyway; at any rate; for now (at least); for the time being",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
 },
 
 {
@@ -808,21 +1493,52 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["waktu", "bahasa-komunikasi"],
+  "domain": [
+    "waktu",
+    "bahasa-komunikasi"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Dipakai untuk menunjukkan langkah berikutnya dalam urutan. Lebih formal dan terstruktur dibanding それから. Umum dipakai dalam instruksi tertulis, presentasi, dan laporan untuk memberi urutan yang jelas.",
   "conj_type": null,
   "examples": [
-    {"jp": "まず玉ねぎを切り、次に炒めます。", "id": "Pertama potong bawang, selanjutnya tumis.", "level": "n3", "tags": ["makanan-minuman"]},
-    {"jp": "次に、グラフを見てください。", "id": "Selanjutnya, tolong lihat grafiknya.", "level": "n3", "tags": ["bisnis", "pendidikan"]},
-    {"jp": "次に何をすればいいですか。", "id": "Selanjutnya apa yang harus saya lakukan?", "level": "n3", "tags": ["kehidupan-sehari"]}
+    {
+      "jp": "まず玉ねぎを切り、次に炒めます。",
+      "id": "Pertama potong bawang, selanjutnya tumis.",
+      "level": "n3",
+      "tags": [
+        "makanan-minuman"
+      ]
+    },
+    {
+      "jp": "次に、グラフを見てください。",
+      "id": "Selanjutnya, tolong lihat grafiknya.",
+      "level": "n3",
+      "tags": [
+        "bisnis",
+        "pendidikan"
+      ]
+    },
+    {
+      "jp": "次に何をすればいいですか。",
+      "id": "Selanjutnya apa yang harus saya lakukan?",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n3-00357", "vg-n3-00359"],
+  "see_also": [
+    "vg-n3-00357",
+    "vg-n3-00359"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "2600340"
 },
 
 {
@@ -837,21 +1553,53 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 1,
-  "domain": ["waktu", "bahasa-komunikasi"],
+  "domain": [
+    "waktu",
+    "bahasa-komunikasi"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["teman", "umum"],
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
   "nuance": "Menghubungkan dua kejadian berurutan atau menambahkan informasi dalam percakapan. Lebih kasual dibanding その後 dan 次に. Dalam percakapan sehari-hari juga bisa berarti 'selain itu' saat membuat daftar.",
   "conj_type": null,
   "examples": [
-    {"jp": "ご飯を食べて、それから宿題をした。", "id": "Makan dulu, setelah itu mengerjakan PR.", "level": "n3", "tags": ["kehidupan-sehari"]},
-    {"jp": "それから、何か変わったことはありましたか。", "id": "Setelah itu, adakah hal yang berubah?", "level": "n3", "tags": ["bahasa-komunikasi"]},
-    {"jp": "牛乳と、それからパンを買ってきて。", "id": "Tolong belikan susu, dan juga roti.", "level": "n3", "tags": ["belanja"]}
+    {
+      "jp": "ご飯を食べて、それから宿題をした。",
+      "id": "Makan dulu, setelah itu mengerjakan PR.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "それから、何か変わったことはありましたか。",
+      "id": "Setelah itu, adakah hal yang berubah?",
+      "level": "n3",
+      "tags": [
+        "bahasa-komunikasi"
+      ]
+    },
+    {
+      "jp": "牛乳と、それからパンを買ってきて。",
+      "id": "Tolong belikan susu, dan juga roti.",
+      "level": "n3",
+      "tags": [
+        "belanja"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n3-00360", "vg-n3-00358"],
+  "see_also": [
+    "vg-n3-00360",
+    "vg-n3-00358"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1006980",
+  "frequency": 1000
 },
 
 {
@@ -866,21 +1614,76 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["waktu", "emosi"],
+  "domain": [
+    "waktu",
+    "emosi"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Mengandung nuansa 'sudah terlambat' atau 'percuma dilakukan sekarang karena semuanya sudah terjadi'. Sering mengungkapkan keheranan, penyesalan, atau sinisme. Pola 今さら〜ても遅い/仕方ない sangat umum.",
   "conj_type": null,
   "examples": [
-    {"jp": "今さら謝っても遅い。", "id": "Percuma minta maaf sekarang, sudah terlambat.", "level": "n3", "tags": ["emosi-negatif", "hubungan-konsep"]},
-    {"jp": "今さらそんなこと言われても困る。", "id": "Aku bingung kalau sekarang baru dibilang hal seperti itu.", "level": "n3", "tags": ["emosi", "bahasa-komunikasi"]},
-    {"jp": "今さら心配しても仕方がない。", "id": "Percuma khawatir sekarang, tidak ada gunanya.", "level": "n3", "tags": ["emosi", "pikiran-opini"]}
+    {
+      "jp": "今さら謝っても遅い。",
+      "id": "Percuma minta maaf sekarang, sudah terlambat.",
+      "level": "n3",
+      "tags": [
+        "emosi-negatif",
+        "hubungan-konsep"
+      ]
+    },
+    {
+      "jp": "今さらそんなこと言われても困る。",
+      "id": "Aku bingung kalau sekarang baru dibilang hal seperti itu.",
+      "level": "n3",
+      "tags": [
+        "emosi",
+        "bahasa-komunikasi"
+      ]
+    },
+    {
+      "jp": "今さら心配しても仕方がない。",
+      "id": "Percuma khawatir sekarang, tidak ada gunanya.",
+      "level": "n3",
+      "tags": [
+        "emosi",
+        "pikiran-opini"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n3-00362"],
+  "see_also": [
+    "vg-n3-00362"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1289150",
+  "frequency": 1000,
+  "forms": [
+    {
+      "word": "今更",
+      "info": []
+    },
+    {
+      "word": "今さら",
+      "info": []
+    }
+  ],
+  "meanings": [
+    {
+      "en": "now (when it is already much too late); at this stage",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "afresh; anew; again",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
@@ -895,21 +1698,64 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["waktu", "sopan-santun"],
+  "domain": [
+    "waktu",
+    "sopan-santun"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Menekankan frekuensi yang tinggi dengan nuansa 'sudah terlalu sering' atau 'berulang kali'. Lebih intens dari よく dan しばしば. Sering dipakai dalam permintaan maaf formal (たびたびすみません = maaf sudah berulang kali mengganggu), sehingga terasa lebih sopan dari sekadar よく.",
   "conj_type": null,
   "examples": [
-    {"jp": "たびたびご連絡いただきありがとうございます。", "id": "Terima kasih sudah berulang kali menghubungi kami.", "level": "n3", "tags": ["bisnis", "sopan-santun"]},
-    {"jp": "彼はたびたび約束を破る。", "id": "Dia berkali-kali melanggar janji.", "level": "n3", "tags": ["karakter", "emosi-negatif"]},
-    {"jp": "たびたびお邪魔してすみません。", "id": "Maaf sudah berulang kali merepotkan.", "level": "n3", "tags": ["sopan-santun"]}
+    {
+      "jp": "たびたびご連絡いただきありがとうございます。",
+      "id": "Terima kasih sudah berulang kali menghubungi kami.",
+      "level": "n3",
+      "tags": [
+        "bisnis",
+        "sopan-santun"
+      ]
+    },
+    {
+      "jp": "彼はたびたび約束を破る。",
+      "id": "Dia berkali-kali melanggar janji.",
+      "level": "n3",
+      "tags": [
+        "karakter",
+        "emosi-negatif"
+      ]
+    },
+    {
+      "jp": "たびたびお邪魔してすみません。",
+      "id": "Maaf sudah berulang kali merepotkan.",
+      "level": "n3",
+      "tags": [
+        "sopan-santun"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1597160",
+  "frequency": 11500,
+  "forms": [
+    {
+      "word": "度々",
+      "info": []
+    },
+    {
+      "word": "度度",
+      "info": []
+    }
+  ],
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
 },
 
 {
@@ -924,20 +1770,77 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["kehidupan-sehari", "waktu"],
+  "domain": [
+    "kehidupan-sehari",
+    "waktu"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "相変わらず digunakan untuk menyatakan bahwa seseorang atau sesuatu tetap sama seperti sebelumnya. Sering terdengar saat bertemu orang lama: 相変わらずだね = kamu tidak berubah ya. Mengandung nuansa nostalgia atau penerimaan yang hangat. Berbeda dari いつものように (itsumono you ni — seperti biasanya) yang lebih netral dan deskriptif.",
   "conj_type": null,
   "examples": [
-    {"jp": "<b>相変わらず</b>忙しいですか？", "id": "Apakah kamu masih sibuk seperti biasa?", "level": "n3", "tags": ["kehidupan-sehari", "pertemanan"]},
-    {"jp": "彼女は<b>相変わらず</b>明るくて元気だ。", "id": "Dia tetap ceria dan penuh semangat seperti dulu.", "level": "n3", "tags": ["karakter", "pertemanan"]}
+    {
+      "jp": "<b>相変わらず</b>忙しいですか？",
+      "id": "Apakah kamu masih sibuk seperti biasa?",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari",
+        "pertemanan"
+      ]
+    },
+    {
+      "jp": "彼女は<b>相変わらず</b>明るくて元気だ。",
+      "id": "Dia tetap ceria dan penuh semangat seperti dulu.",
+      "level": "n3",
+      "tags": [
+        "karakter",
+        "pertemanan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1401310",
+  "frequency": 3500,
+  "forms": [
+    {
+      "word": "相変わらず",
+      "info": []
+    },
+    {
+      "word": "相変らず",
+      "info": []
+    },
+    {
+      "word": "あい変わらず",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "あい変らず",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "相かわらず",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "相不変",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ]
 },
 
 {
@@ -952,20 +1855,47 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 1,
-  "domain": ["kehidupan-sehari", "waktu"],
+  "domain": [
+    "kehidupan-sehari",
+    "waktu"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "ぎりぎり menggambarkan situasi di mana seseorang nyaris tidak berhasil atau tepat berada di batas kemampuan maupun waktu. ぎりぎり合格 = lulus dengan nilai pas-pasan. Lebih ekspresif dan kasual dari かろうじて (karouijte — dengan susah payah) yang lebih formal. Sering terasa dramatis karena menyiratkan hampir gagal.",
   "conj_type": null,
   "examples": [
-    {"jp": "電車に<b>ぎりぎり</b>間に合った。", "id": "Nyaris sempat naik kereta tadi.", "level": "n3", "tags": ["kehidupan-sehari", "perjalanan"]},
-    {"jp": "試験は<b>ぎりぎり</b>合格だった。", "id": "Ujiannya lulus dengan nilai yang pas-pasan.", "level": "n3", "tags": ["pendidikan", "emosi"]}
+    {
+      "jp": "電車に<b>ぎりぎり</b>間に合った。",
+      "id": "Nyaris sempat naik kereta tadi.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari",
+        "perjalanan"
+      ]
+    },
+    {
+      "jp": "試験は<b>ぎりぎり</b>合格だった。",
+      "id": "Ujiannya lulus dengan nilai yang pas-pasan.",
+      "level": "n3",
+      "tags": [
+        "pendidikan",
+        "emosi"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1003660",
+  "frequency": 1000,
+  "misc_jm": [
+    "biasanya kana saja",
+    "onomatopoeic or mimetic word"
+  ]
 },
 
 {
@@ -980,20 +1910,72 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["kuantitas", "kualitas"],
+  "domain": [
+    "kuantitas",
+    "kualitas"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "かなり menunjukkan derajat yang melebihi ekspektasi biasa, tetapi belum mencapai tingkat ekstrem. Lebih kuat dari まあまあ (maa maa — lumayan biasa saja) dan 少し (sukoshi — sedikit), namun lebih lemah dari とても atau 非常に (hijou ni — sangat). Digunakan baik dalam konteks positif maupun negatif.",
   "conj_type": null,
   "examples": [
-    {"jp": "その映画は<b>かなり</b>面白かった。", "id": "Film itu cukup menarik.", "level": "n3", "tags": ["hiburan", "kehidupan-sehari"]},
-    {"jp": "今日は<b>かなり</b>疲れたので、早く寝ます。", "id": "Hari ini saya cukup lelah, jadi akan tidur lebih awal.", "level": "n3", "tags": ["kehidupan-sehari", "kesehatan"]}
+    {
+      "jp": "その映画は<b>かなり</b>面白かった。",
+      "id": "Film itu cukup menarik.",
+      "level": "n3",
+      "tags": [
+        "hiburan",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "今日は<b>かなり</b>疲れたので、早く寝ます。",
+      "id": "Hari ini saya cukup lelah, jadi akan tidur lebih awal.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari",
+        "kesehatan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1590560",
+  "frequency": 1000,
+  "forms": [
+    {
+      "word": "可也",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "可成り",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "可なり",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "可成",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
 },
 
 {
@@ -1008,20 +1990,43 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["umum", "pikiran-opini"],
+  "domain": [
+    "umum",
+    "pikiran-opini"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "特に menekankan sesuatu sebagai yang paling menonjol di antara yang lain. Dalam kalimat negatif, 特に～ない berarti 'tidak ada yang istimewa/khusus'. Berbeda dari 特別に (tokubetsuni — secara khusus/istimewa) yang lebih formal dan menyiratkan perlakuan sengaja diberikan secara eksklusif.",
   "conj_type": null,
   "examples": [
-    {"jp": "<b>特に</b>好きな食べ物はすしです。", "id": "Makanan yang paling saya sukai adalah sushi.", "level": "n3", "tags": ["makanan-minuman", "kehidupan-sehari"]},
-    {"jp": "今日は<b>特に</b>何もなかった。", "id": "Hari ini tidak ada yang istimewa.", "level": "n3", "tags": ["kehidupan-sehari", "umum"]}
+    {
+      "jp": "<b>特に</b>好きな食べ物はすしです。",
+      "id": "Makanan yang paling saya sukai adalah sushi.",
+      "level": "n3",
+      "tags": [
+        "makanan-minuman",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "今日は<b>特に</b>何もなかった。",
+      "id": "Hari ini tidak ada yang istimewa.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari",
+        "umum"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1454670",
+  "frequency": 500
 },
 
 {
@@ -1036,20 +2041,43 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["pikiran-opini", "umum"],
+  "domain": [
+    "pikiran-opini",
+    "umum"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "必ずしも WAJIB diikuti bentuk negatif: 必ずしも～ない = tidak selalu/belum tentu. Tidak dapat digunakan dalam kalimat positif. Digunakan untuk menyangkal generalisasi atau asumsi mutlak. Berbeda dari いつも～ない (tidak selalu) yang lebih kasual — 必ずしも lebih logis dan sering muncul dalam argumen atau diskusi.",
   "conj_type": null,
   "examples": [
-    {"jp": "高いものが<b>必ずしも</b>いいとは限らない。", "id": "Yang mahal belum tentu selalu yang terbaik.", "level": "n3", "tags": ["pikiran-opini", "belanja"]},
-    {"jp": "努力が<b>必ずしも</b>成功につながるわけではない。", "id": "Kerja keras tidak selalu berujung pada kesuksesan.", "level": "n3", "tags": ["pikiran-opini", "sebab-akibat"]}
+    {
+      "jp": "高いものが<b>必ずしも</b>いいとは限らない。",
+      "id": "Yang mahal belum tentu selalu yang terbaik.",
+      "level": "n3",
+      "tags": [
+        "pikiran-opini",
+        "belanja"
+      ]
+    },
+    {
+      "jp": "努力が<b>必ずしも</b>成功につながるわけではない。",
+      "id": "Kerja keras tidak selalu berujung pada kesuksesan.",
+      "level": "n3",
+      "tags": [
+        "pikiran-opini",
+        "sebab-akibat"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1487410",
+  "frequency": 2500
 },
 
 {
@@ -1064,20 +2092,43 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["kehidupan-sehari", "waktu"],
+  "domain": [
+    "kehidupan-sehari",
+    "waktu"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "さっそく menggambarkan tindakan yang dilakukan langsung setelah memutuskan atau menerima informasi, dengan nuansa antusias dan proaktif. Berbeda dari すぐ (sugu — segera) yang lebih netral — さっそく mengandung nuansa 'langsung bertindak tanpa menunggu lebih lama lagi' dan sering bernuansa positif, penuh semangat.",
   "conj_type": null,
   "examples": [
-    {"jp": "<b>さっそく</b>試してみます。", "id": "Saya akan langsung mencobanya.", "level": "n3", "tags": ["kehidupan-sehari", "karakter"]},
-    {"jp": "<b>さっそく</b>ですが、本題に入りましょう。", "id": "Langsung saja, mari masuk ke inti pembicaraan.", "level": "n3", "tags": ["bisnis", "bahasa-komunikasi"]}
+    {
+      "jp": "<b>さっそく</b>試してみます。",
+      "id": "Saya akan langsung mencobanya.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari",
+        "karakter"
+      ]
+    },
+    {
+      "jp": "<b>さっそく</b>ですが、本題に入りましょう。",
+      "id": "Langsung saja, mari masuk ke inti pembicaraan.",
+      "level": "n3",
+      "tags": [
+        "bisnis",
+        "bahasa-komunikasi"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1400300",
+  "frequency": 18000
 },
 
 {
@@ -1092,20 +2143,76 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["kehidupan-sehari", "sopan-santun"],
+  "domain": [
+    "kehidupan-sehari",
+    "sopan-santun"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "わざわざ menggambarkan seseorang yang melakukan sesuatu meskipun memerlukan usaha ekstra atau sebenarnya tidak perlu. Sering digunakan dalam ucapan terima kasih: わざわざありがとうございます = terima kasih sudah repot-repot. Berbeda dari あえて (aete — sengaja dengan keberanian) yang menekankan niat menghadapi tantangan — わざわざ lebih tentang usaha yang dianggap melebihi yang diperlukan demi orang lain.",
   "conj_type": null,
   "examples": [
-    {"jp": "<b>わざわざ</b>来てくれてありがとう。", "id": "Terima kasih sudah repot-repot datang kemari.", "level": "n3", "tags": ["sopan-santun", "pertemanan"]},
-    {"jp": "<b>わざわざ</b>そこまでしなくてもいいのに。", "id": "Kamu tidak perlu repot-repot sejauh itu.", "level": "n3", "tags": ["kehidupan-sehari", "sopan-santun"]}
+    {
+      "jp": "<b>わざわざ</b>来てくれてありがとう。",
+      "id": "Terima kasih sudah repot-repot datang kemari.",
+      "level": "n3",
+      "tags": [
+        "sopan-santun",
+        "pertemanan"
+      ]
+    },
+    {
+      "jp": "<b>わざわざ</b>そこまでしなくてもいいのに。",
+      "id": "Kamu tidak perlu repot-repot sejauh itu.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari",
+        "sopan-santun"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1606710",
+  "frequency": 1000,
+  "forms": [
+    {
+      "word": "態々",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "態態",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "expressly; especially; specially; taking the trouble (to do); going to the trouble of (doing); going out of one's way (to do)",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "intentionally; deliberately; on purpose",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
 },
 
 {
@@ -1120,20 +2227,83 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["keputusan", "karakter"],
+  "domain": [
+    "keputusan",
+    "karakter"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "あえて digunakan saat seseorang secara sadar melakukan sesuatu yang menantang, tidak biasa, atau berisiko mendapat reaksi negatif — dengan penuh keberanian dan kesadaran. Berbeda dari わざわざ (wazawaza — repot-repot untuk orang lain) yang menekankan usaha berlebih — あえて lebih menekankan keberanian atau kesengajaan dalam menghadapi hambatan atau konvensi.",
   "conj_type": null,
   "examples": [
-    {"jp": "<b>あえて</b>難しい道を選んだ。", "id": "Saya dengan sengaja memilih jalan yang sulit.", "level": "n3", "tags": ["keputusan", "karakter"]},
-    {"jp": "<b>あえて</b>反対意見を言うことも、時には必要だ。", "id": "Terkadang perlu untuk dengan berani menyampaikan pendapat yang berlawanan.", "level": "n3", "tags": ["bahasa-komunikasi", "keputusan"]}
+    {
+      "jp": "<b>あえて</b>難しい道を選んだ。",
+      "id": "Saya dengan sengaja memilih jalan yang sulit.",
+      "level": "n3",
+      "tags": [
+        "keputusan",
+        "karakter"
+      ]
+    },
+    {
+      "jp": "<b>あえて</b>反対意見を言うことも、時には必要だ。",
+      "id": "Terkadang perlu untuk dengan berani menyampaikan pendapat yang berlawanan.",
+      "level": "n3",
+      "tags": [
+        "bahasa-komunikasi",
+        "keputusan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1212850",
+  "frequency": 1000,
+  "forms": [
+    {
+      "word": "敢えて",
+      "info": []
+    },
+    {
+      "word": "敢て",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "purposely (of something needless, unexpected or seemingly counterproductive, etc.); daringly (doing something); deliberately; intentionally",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "not necessarily; not particularly; not especially",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "definitely not",
+      "misc": [
+        "biasanya kana saja",
+        "arkais"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "arkais",
+    "biasanya kana saja"
+  ]
 },
 
 {
@@ -1148,20 +2318,80 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["perubahan", "waktu"],
+  "domain": [
+    "perubahan",
+    "waktu"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "ますます menggambarkan perubahan yang terus meningkat dalam satu arah, baik positif maupun negatif. Berbeda dari だんだん (dandan — lambat laun/bertahap) yang lebih menekankan proses perlahan — ますます lebih menekankan akselerasi atau intensifikasi yang dirasakan, seolah perubahan makin cepat atau makin terasa.",
   "conj_type": null,
   "examples": [
-    {"jp": "彼女の歌は<b>ますます</b>上手になっている。", "id": "Nyanyiannya semakin hari semakin bagus.", "level": "n3", "tags": ["perubahan", "hiburan"]},
-    {"jp": "景気が<b>ますます</b>悪くなっている。", "id": "Kondisi ekonomi semakin memburuk.", "level": "n3", "tags": ["perubahan", "ekonomi-keuangan"]}
+    {
+      "jp": "彼女の歌は<b>ますます</b>上手になっている。",
+      "id": "Nyanyiannya semakin hari semakin bagus.",
+      "level": "n3",
+      "tags": [
+        "perubahan",
+        "hiburan"
+      ]
+    },
+    {
+      "jp": "景気が<b>ますます</b>悪くなっている。",
+      "id": "Kondisi ekonomi semakin memburuk.",
+      "level": "n3",
+      "tags": [
+        "perubahan",
+        "ekonomi-keuangan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1603950",
+  "frequency": 1000,
+  "forms": [
+    {
+      "word": "益々",
+      "info": []
+    },
+    {
+      "word": "益",
+      "info": []
+    },
+    {
+      "word": "増々",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "増す増す",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "益益",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "増増",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
 },
 
 {
@@ -1176,20 +2406,43 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["perubahan", "waktu"],
+  "domain": [
+    "perubahan",
+    "waktu"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "次第に menggambarkan perubahan yang terjadi secara bertahap dan tenang seiring waktu. Berbeda dari だんだん (dandan) yang memiliki makna serupa tetapi lebih kasual dan percakapan sehari-hari — 次第に lebih formal dan sering digunakan dalam tulisan, narasi, atau deskripsi proses. Berbeda dari ますます yang menekankan akselerasi — 次第に lebih tentang proses yang pelan dan gradual.",
   "conj_type": null,
   "examples": [
-    {"jp": "<b>次第に</b>空が明るくなってきた。", "id": "Langit perlahan-lahan mulai menjadi terang.", "level": "n3", "tags": ["alam-lingkungan", "waktu"]},
-    {"jp": "練習を続けた結果、<b>次第に</b>上達してきた。", "id": "Berkat terus berlatih, kemampuan saya perlahan-lahan meningkat.", "level": "n3", "tags": ["perubahan", "pendidikan"]}
+    {
+      "jp": "<b>次第に</b>空が明るくなってきた。",
+      "id": "Langit perlahan-lahan mulai menjadi terang.",
+      "level": "n3",
+      "tags": [
+        "alam-lingkungan",
+        "waktu"
+      ]
+    },
+    {
+      "jp": "練習を続けた結果、<b>次第に</b>上達してきた。",
+      "id": "Berkat terus berlatih, kemampuan saya perlahan-lahan meningkat.",
+      "level": "n3",
+      "tags": [
+        "perubahan",
+        "pendidikan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1316690",
+  "frequency": 3000
 },
 
 {
@@ -1204,20 +2457,43 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["waktu", "kehidupan-sehari"],
+  "domain": [
+    "waktu",
+    "kehidupan-sehari"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "めったに WAJIB diikuti bentuk negatif: めったに～ない = jarang sekali. Tidak dapat berdiri sendiri dalam kalimat positif. Berbeda dari たまに (tama ni — kadang-kadang) yang digunakan dalam kalimat positif — めったに lebih kuat dalam menyatakan frekuensi yang sangat rendah, hampir tidak pernah terjadi.",
   "conj_type": null,
   "examples": [
-    {"jp": "彼はめったに怒らない。", "id": "Dia jarang sekali marah.", "level": "n3", "tags": ["karakter", "kehidupan-sehari"]},
-    {"jp": "父は忙しくて、<b>めったに</b>家にいない。", "id": "Ayah sibuk sehingga jarang sekali ada di rumah.", "level": "n3", "tags": ["keluarga", "kehidupan-sehari"]}
+    {
+      "jp": "彼はめったに怒らない。",
+      "id": "Dia jarang sekali marah.",
+      "level": "n3",
+      "tags": [
+        "karakter",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "父は忙しくて、<b>めったに</b>家にいない。",
+      "id": "Ayah sibuk sehingga jarang sekali ada di rumah.",
+      "level": "n3",
+      "tags": [
+        "keluarga",
+        "kehidupan-sehari"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1612000",
+  "frequency": 1000
 },
 
 {
@@ -1232,20 +2508,59 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["kehidupan-sehari", "emosi"],
+  "domain": [
+    "kehidupan-sehari",
+    "emosi"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "せっかく mengandung nuansa 'sayang kalau disia-siakan' setelah usaha atau kesempatan yang langka. Sering diikuti のに (keluhan: sudah susah payah tapi...) atau から/ので (ajakan: karena sudah begini, manfaatkan sekalian). Berbeda dari わざわざ yang lebih netral tentang usaha — せっかく mengandung nuansa emosional yang lebih kuat: ada nilai atau usaha yang terancam terbuang.",
   "conj_type": null,
   "examples": [
-    {"jp": "<b>せっかく</b>作ったのに、誰も食べてくれなかった。", "id": "Sudah susah payah memasak, tapi tidak ada yang mau makan.", "level": "n3", "tags": ["emosi-negatif", "kehidupan-sehari"]},
-    {"jp": "<b>せっかく</b>日本に来たんだから、京都にも行こう。", "id": "Karena sudah jauh-jauh ke Jepang, ayo pergi ke Kyoto juga.", "level": "n3", "tags": ["perjalanan", "budaya"]}
+    {
+      "jp": "<b>せっかく</b>作ったのに、誰も食べてくれなかった。",
+      "id": "Sudah susah payah memasak, tapi tidak ada yang mau makan.",
+      "level": "n3",
+      "tags": [
+        "emosi-negatif",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "<b>せっかく</b>日本に来たんだから、京都にも行こう。",
+      "id": "Karena sudah jauh-jauh ke Jepang, ayo pergi ke Kyoto juga.",
+      "level": "n3",
+      "tags": [
+        "perjalanan",
+        "budaya"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1306490",
+  "meanings": [
+    {
+      "en": "assassin",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "candidate fielded by a political party to oust an incumbent of the same party",
+      "misc": [
+        "abbreviation"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "abbreviation"
+  ]
 },
 
 {
@@ -1260,20 +2575,55 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 1,
-  "domain": ["emosi-negatif", "pikiran-opini"],
+  "domain": [
+    "emosi-negatif",
+    "pikiran-opini"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "どうせ mengandung nuansa pasrah atau pesimis — 'toh hasilnya akan sama saja' atau 'sia-sia berusaha'. Bisa juga berarti 'kalau memang begitu, sekalian saja...': どうせなら = kalau memang begitu, lebih baik sekalian. Berbeda dari いずれにせよ (izure ni seyo — bagaimanapun juga) yang lebih netral dan formal — どうせ lebih emosional dan bernuansa menyerah atau realistis pesimis.",
   "conj_type": null,
   "examples": [
-    {"jp": "<b>どうせ</b>失敗するから、やめておこう。", "id": "Toh pasti akan gagal, lebih baik berhenti saja.", "level": "n3", "tags": ["emosi-negatif", "keputusan"]},
-    {"jp": "<b>どうせ</b>なら、もっと大きいものを買えばよかった。", "id": "Kalau memang begitu, seharusnya beli yang lebih besar sekalian.", "level": "n3", "tags": ["kehidupan-sehari", "pikiran-opini"]}
+    {
+      "jp": "<b>どうせ</b>失敗するから、やめておこう。",
+      "id": "Toh pasti akan gagal, lebih baik berhenti saja.",
+      "level": "n3",
+      "tags": [
+        "emosi-negatif",
+        "keputusan"
+      ]
+    },
+    {
+      "jp": "<b>どうせ</b>なら、もっと大きいものを買えばよかった。",
+      "id": "Kalau memang begitu, seharusnya beli yang lebih besar sekalian.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari",
+        "pikiran-opini"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1008950",
+  "frequency": 1000,
+  "meanings": [
+    {
+      "en": "in any case; regardless; either way; after all; no matter what; anyway",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "since it makes no difference anyway (you might as well ...); since it won't change the outcome; if you are doing it regardless",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
@@ -1288,20 +2638,110 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["bahasa-komunikasi", "pikiran-opini"],
+  "domain": [
+    "bahasa-komunikasi",
+    "pikiran-opini"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Digunakan untuk menyimpulkan atau menjelaskan ulang dengan kata-kata yang lebih sederhana. Lebih kasual dan lisan dibanding すなわち — dalam percakapan sehari-hari, つまり jauh lebih lazim. Sering muncul ketika pembicara ingin memastikan pendengar memahami poin utama.",
   "conj_type": null,
   "examples": [
-    {"jp": "彼は毎日練習している。<b>つまり</b>、本気でプロを目指しているんだ。", "id": "Dia berlatih setiap hari. Artinya, dia benar-benar ingin menjadi profesional.", "level": "n3", "tags": ["pikiran-opini", "bahasa-komunikasi"]},
-    {"jp": "今日は財布を忘れた。<b>つまり</b>、お金が一円もないってことだ。", "id": "Hari ini aku lupa bawa dompet. Dengan kata lain, aku tidak punya uang sama sekali.", "level": "n3", "tags": ["kehidupan-sehari", "bahasa-komunikasi"]}
+    {
+      "jp": "彼は毎日練習している。<b>つまり</b>、本気でプロを目指しているんだ。",
+      "id": "Dia berlatih setiap hari. Artinya, dia benar-benar ingin menjadi profesional.",
+      "level": "n3",
+      "tags": [
+        "pikiran-opini",
+        "bahasa-komunikasi"
+      ]
+    },
+    {
+      "jp": "今日は財布を忘れた。<b>つまり</b>、お金が一円もないってことだ。",
+      "id": "Hari ini aku lupa bawa dompet. Dengan kata lain, aku tidak punya uang sama sekali.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari",
+        "bahasa-komunikasi"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1610430",
+  "frequency": 15500,
+  "forms": [
+    {
+      "word": "詰まり",
+      "info": []
+    },
+    {
+      "word": "詰り",
+      "info": []
+    }
+  ],
+  "meanings": [
+    {
+      "en": "that is to say; that is; in other words; I mean; that (this, it) means",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "in short; in brief; to sum up; ultimately; in the end; in the long run; when all is said and done; what it all comes down to; when you get right down to it; basically",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "clogging; obstruction; stuffing; (degree of) blockage",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "shrinkage",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "end; conclusion",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "dead end; corner",
+      "misc": [
+        "biasanya kana saja",
+        "arkais"
+      ],
+      "field": []
+    },
+    {
+      "en": "distress; being at the end of one's rope",
+      "misc": [
+        "biasanya kana saja",
+        "arkais"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "arkais",
+    "biasanya kana saja"
+  ]
 },
 
 {
@@ -1316,20 +2756,99 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["bahasa-komunikasi", "pikiran-opini"],
+  "domain": [
+    "bahasa-komunikasi",
+    "pikiran-opini"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Padanan formal/tulisan dari つまり. Sering muncul dalam teks akademik, hukum, atau berita — jarang digunakan dalam percakapan santai. Selain menyimpulkan, すなわち juga bisa memperkenalkan istilah atau definisi teknis (mis. 'Ini disebut X, yakni すなわち Y').",
   "conj_type": null,
   "examples": [
-    {"jp": "この条約は両国の合意に基づく。<b>すなわち</b>、どちらの国も同意した上で締結されたのだ。", "id": "Perjanjian ini didasarkan pada kesepakatan kedua negara. Yakni, perjanjian ini disepakati oleh kedua pihak.", "level": "n3", "tags": ["hukum-aturan", "politik-masyarakat"]},
-    {"jp": "彼女は本校の創設者の孫、<b>すなわち</b>田中家の最後の子孫だ。", "id": "Dia adalah cucu pendiri sekolah ini, yaitu keturunan terakhir keluarga Tanaka.", "level": "n3", "tags": ["pendidikan", "bahasa-komunikasi"]}
+    {
+      "jp": "この条約は両国の合意に基づく。<b>すなわち</b>、どちらの国も同意した上で締結されたのだ。",
+      "id": "Perjanjian ini didasarkan pada kesepakatan kedua negara. Yakni, perjanjian ini disepakati oleh kedua pihak.",
+      "level": "n3",
+      "tags": [
+        "hukum-aturan",
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "彼女は本校の創設者の孫、<b>すなわち</b>田中家の最後の子孫だ。",
+      "id": "Dia adalah cucu pendiri sekolah ini, yaitu keturunan terakhir keluarga Tanaka.",
+      "level": "n3",
+      "tags": [
+        "pendidikan",
+        "bahasa-komunikasi"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1404100",
+  "frequency": 21500,
+  "forms": [
+    {
+      "word": "即ち",
+      "info": []
+    },
+    {
+      "word": "則ち",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "乃ち",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "輒ち",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "便ち",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "that is (to say); namely; i.e.",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "precisely; exactly; just; nothing but; neither more nor less",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "(and) then",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
 },
 
 {
@@ -1344,20 +2863,43 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["bahasa-komunikasi", "pendidikan"],
+  "domain": [
+    "bahasa-komunikasi",
+    "pendidikan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Digunakan untuk memberikan contoh konkret dari pernyataan umum sebelumnya. Berbeda dari つまり (yang menyimpulkan) atau すなわち (yang mendefinisikan) — たとえば selalu memperkenalkan contoh ilustratif. Bisa ditulis 例えば dengan kanji.",
   "conj_type": null,
   "examples": [
-    {"jp": "日本の伝統文化はたくさんある。<b>たとえば</b>、茶道や生け花などが有名だ。", "id": "Ada banyak budaya tradisional Jepang. Misalnya, upacara minum teh dan merangkai bunga sangat terkenal.", "level": "n3", "tags": ["budaya", "bahasa-komunikasi"]},
-    {"jp": "健康のためにできることはいろいろある。<b>たとえば</b>、毎日散歩することや野菜を多く食べることだ。", "id": "Ada berbagai hal yang bisa dilakukan untuk kesehatan. Contohnya, berjalan kaki setiap hari dan makan banyak sayuran.", "level": "n3", "tags": ["kesehatan", "kehidupan-sehari"]}
+    {
+      "jp": "日本の伝統文化はたくさんある。<b>たとえば</b>、茶道や生け花などが有名だ。",
+      "id": "Ada banyak budaya tradisional Jepang. Misalnya, upacara minum teh dan merangkai bunga sangat terkenal.",
+      "level": "n3",
+      "tags": [
+        "budaya",
+        "bahasa-komunikasi"
+      ]
+    },
+    {
+      "jp": "健康のためにできることはいろいろある。<b>たとえば</b>、毎日散歩することや野菜を多く食べることだ。",
+      "id": "Ada berbagai hal yang bisa dilakukan untuk kesehatan. Contohnya, berjalan kaki setiap hari dan makan banyak sayuran.",
+      "level": "n3",
+      "tags": [
+        "kesehatan",
+        "kehidupan-sehari"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1556370",
+  "frequency": 1000
 },
 
 {
@@ -1372,20 +2914,59 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["bahasa-komunikasi", "pikiran-opini"],
+  "domain": [
+    "bahasa-komunikasi",
+    "pikiran-opini"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berdiri sendiri sebagai konjungsi antar kalimat untuk memperkenalkan sudut pandang yang kontras atau situasi yang berlangsung bersamaan. Berbeda dari 一方で yang melekat di tengah kalimat — 一方 (sendiri) lebih sering memulai kalimat baru dalam teks berita atau esai formal.",
   "conj_type": null,
   "examples": [
-    {"jp": "都市部では人口が増えている。<b>一方</b>、農村部では過疎化が進んでいる。", "id": "Di daerah perkotaan, populasi meningkat. Sebaliknya, di pedesaan depopulasi terus berlanjut.", "level": "n3", "tags": ["politik-masyarakat", "pikiran-opini"]},
-    {"jp": "兄は理系が得意だ。<b>一方</b>、妹は文系に向いている。", "id": "Kakak laki-laki pandai di bidang sains. Di satu sisi, adik perempuan lebih cocok di bidang humaniora.", "level": "n3", "tags": ["pendidikan", "keluarga"]}
+    {
+      "jp": "都市部では人口が増えている。<b>一方</b>、農村部では過疎化が進んでいる。",
+      "id": "Di daerah perkotaan, populasi meningkat. Sebaliknya, di pedesaan depopulasi terus berlanjut.",
+      "level": "n3",
+      "tags": [
+        "politik-masyarakat",
+        "pikiran-opini"
+      ]
+    },
+    {
+      "jp": "兄は理系が得意だ。<b>一方</b>、妹は文系に向いている。",
+      "id": "Kakak laki-laki pandai di bidang sains. Di satu sisi, adik perempuan lebih cocok di bidang humaniora.",
+      "level": "n3",
+      "tags": [
+        "pendidikan",
+        "keluarga"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "2258660",
+  "meanings": [
+    {
+      "en": "one person",
+      "misc": [
+        "honorific or respectful (sonkeigo) language"
+      ],
+      "field": []
+    },
+    {
+      "en": "ordinary; common",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "honorific or respectful (sonkeigo) language"
+  ]
 },
 
 {
@@ -1400,20 +2981,46 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["bahasa-komunikasi", "sebab-akibat"],
+  "domain": [
+    "bahasa-komunikasi",
+    "sebab-akibat"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Menarik kesimpulan logis dari premis yang sudah disebutkan — lebih menekankan penalaran deduktif daripada の結果 yang menyatakan fakta hasil. Formal dan sering digunakan dalam tulisan akademik atau pidato resmi. Dalam percakapan biasa, diganti dengan だから atau そのため.",
   "conj_type": null,
   "examples": [
-    {"jp": "このデータは信頼性が低い。<b>したがって</b>、この研究結果は参考程度にとどめるべきだ。", "id": "Data ini memiliki tingkat keandalan yang rendah. Oleh karena itu, hasil penelitian ini seharusnya hanya dijadikan referensi.", "level": "n3", "tags": ["ilmu-pengetahuan", "sebab-akibat"]},
-    {"jp": "規則違反が確認された。<b>したがって</b>、該当者には処分が下された。", "id": "Pelanggaran aturan telah dikonfirmasi. Dengan demikian, sanksi dijatuhkan kepada yang bersangkutan.", "level": "n3", "tags": ["hukum-aturan", "pekerjaan"]}
+    {
+      "jp": "このデータは信頼性が低い。<b>したがって</b>、この研究結果は参考程度にとどめるべきだ。",
+      "id": "Data ini memiliki tingkat keandalan yang rendah. Oleh karena itu, hasil penelitian ini seharusnya hanya dijadikan referensi.",
+      "level": "n3",
+      "tags": [
+        "ilmu-pengetahuan",
+        "sebab-akibat"
+      ]
+    },
+    {
+      "jp": "規則違反が確認された。<b>したがって</b>、該当者には処分が下された。",
+      "id": "Pelanggaran aturan telah dikonfirmasi. Dengan demikian, sanksi dijatuhkan kepada yang bersangkutan.",
+      "level": "n3",
+      "tags": [
+        "hukum-aturan",
+        "pekerjaan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1335230",
+  "frequency": 7000,
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
 },
 
 {
@@ -1428,20 +3035,55 @@ window.vocabN3_Adverbs = [
   "common": false,
   "related_grammar": [],
   "formalitas": 5,
-  "domain": ["bahasa-komunikasi", "sebab-akibat"],
+  "domain": [
+    "bahasa-komunikasi",
+    "sebab-akibat"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Lebih formal dan bernuansa sastra dibanding したがって — jarang dipakai dalam percakapan atau tulisan informal. Sering dijumpai dalam filsafat, puisi, atau teks klasik. Juga bisa ditulis それ故 atau それゆえに. Dalam konteks modern, したがって atau そのため lebih umum.",
   "conj_type": null,
   "examples": [
-    {"jp": "我思う、<b>それゆえ</b>我あり。", "id": "Aku berpikir, maka dari itu aku ada. (Cogito ergo sum)", "level": "n3", "tags": ["ilmu-pengetahuan", "klasik"]},
-    {"jp": "彼は幼い頃から貧しかった。<b>それゆえ</b>、努力の大切さを誰よりも知っていた。", "id": "Sejak kecil dia hidup dalam kemiskinan. Oleh karena itu, dia lebih dari siapapun memahami pentingnya kerja keras.", "level": "n3", "tags": ["karakter", "sebab-akibat"]}
+    {
+      "jp": "我思う、<b>それゆえ</b>我あり。",
+      "id": "Aku berpikir, maka dari itu aku ada. (Cogito ergo sum)",
+      "level": "n3",
+      "tags": [
+        "ilmu-pengetahuan",
+        "klasik"
+      ]
+    },
+    {
+      "jp": "彼は幼い頃から貧しかった。<b>それゆえ</b>、努力の大切さを誰よりも知っていた。",
+      "id": "Sejak kecil dia hidup dalam kemiskinan. Oleh karena itu, dia lebih dari siapapun memahami pentingnya kerja keras.",
+      "level": "n3",
+      "tags": [
+        "karakter",
+        "sebab-akibat"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1406080",
+  "forms": [
+    {
+      "word": "それ故",
+      "info": []
+    },
+    {
+      "word": "其れ故",
+      "info": []
+    }
+  ],
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
 },
 
 {
@@ -1456,20 +3098,46 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["bahasa-komunikasi", "sebab-akibat"],
+  "domain": [
+    "bahasa-komunikasi",
+    "sebab-akibat"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Unik karena urutan logikanya terbalik dari bahasa Indonesia — pernyataan dulu, baru なぜなら menjelaskan alasannya. Biasanya diakhiri dengan ～から atau ～からだ. Lebih formal dari だって tapi lebih kasual dari したがって. Memberikan penekanan retoris yang kuat pada penjelasan.",
   "conj_type": null,
   "examples": [
-    {"jp": "私はその映画を見ない。<b>なぜなら</b>、ホラーが苦手だからだ。", "id": "Aku tidak akan menonton film itu. Karena aku tidak suka film horor.", "level": "n3", "tags": ["hiburan", "bahasa-komunikasi"]},
-    {"jp": "この計画は成功する。<b>なぜなら</b>、チーム全員が本気で取り組んでいるからだ。", "id": "Rencana ini akan berhasil. Sebab seluruh anggota tim bekerja dengan sepenuh hati.", "level": "n3", "tags": ["pekerjaan", "sebab-akibat"]}
+    {
+      "jp": "私はその映画を見ない。<b>なぜなら</b>、ホラーが苦手だからだ。",
+      "id": "Aku tidak akan menonton film itu. Karena aku tidak suka film horor.",
+      "level": "n3",
+      "tags": [
+        "hiburan",
+        "bahasa-komunikasi"
+      ]
+    },
+    {
+      "jp": "この計画は成功する。<b>なぜなら</b>、チーム全員が本気で取り組んでいるからだ。",
+      "id": "Rencana ini akan berhasil. Sebab seluruh anggota tim bekerja dengan sepenuh hati.",
+      "level": "n3",
+      "tags": [
+        "pekerjaan",
+        "sebab-akibat"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1009410",
+  "frequency": 1000,
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
 },
 
 {
@@ -1484,20 +3152,46 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["bahasa-komunikasi", "pikiran-opini"],
+  "domain": [
+    "bahasa-komunikasi",
+    "pikiran-opini"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari しかし atau でも — ところが secara khusus menyiratkan bahwa hasil atau keadaan selanjutnya adalah kejutan atau kebalikan dari yang diharapkan. Pembicara biasanya sudah memiliki ekspektasi tertentu, lalu ところが membalikkannya. Tidak bisa dipakai untuk kontras netral biasa.",
   "conj_type": null,
   "examples": [
-    {"jp": "試験は簡単だと思っていた。<b>ところが</b>、実際にはとても難しかった。", "id": "Aku pikir ujiannya mudah. Namun ternyata, itu sangat sulit.", "level": "n3", "tags": ["pendidikan", "emosi"]},
-    {"jp": "傘を持って出かけた。<b>ところが</b>、一日中晴れていた。", "id": "Aku keluar membawa payung. Akan tetapi, cuaca cerah sepanjang hari.", "level": "n3", "tags": ["kehidupan-sehari", "emosi"]}
+    {
+      "jp": "試験は簡単だと思っていた。<b>ところが</b>、実際にはとても難しかった。",
+      "id": "Aku pikir ujiannya mudah. Namun ternyata, itu sangat sulit.",
+      "level": "n3",
+      "tags": [
+        "pendidikan",
+        "emosi"
+      ]
+    },
+    {
+      "jp": "傘を持って出かけた。<b>ところが</b>、一日中晴れていた。",
+      "id": "Aku keluar membawa payung. Akan tetapi, cuaca cerah sepanjang hari.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari",
+        "emosi"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1008570",
+  "frequency": 1000,
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
 },
 
 {
@@ -1512,20 +3206,42 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["bahasa-komunikasi", "pikiran-opini"],
+  "domain": [
+    "bahasa-komunikasi",
+    "pikiran-opini"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Menambahkan poin baru yang sifatnya sejajar atau bahkan lebih berat dari poin sebelumnya. Berbeda dari さらに yang bisa memperkuat/mengintensifikasi — 加えて lebih bersifat 'menambahkan item baru' ke dalam daftar argumen. Lebih formal dari それに dan cocok untuk laporan atau pidato.",
   "conj_type": null,
   "examples": [
-    {"jp": "この地域は交通の便が良い。<b>加えて</b>、スーパーや病院も近くにある。", "id": "Kawasan ini aksesibel secara transportasi. Ditambah lagi, supermarket dan rumah sakit juga dekat.", "level": "n3", "tags": ["kehidupan-sehari", "perjalanan"]},
-    {"jp": "彼女は英語が話せる。<b>加えて</b>、中国語とスペイン語も堪能だ。", "id": "Dia bisa berbicara bahasa Inggris. Selain itu, dia juga fasih berbahasa Mandarin dan Spanyol.", "level": "n3", "tags": ["pendidikan", "bahasa-komunikasi"]}
+    {
+      "jp": "この地域は交通の便が良い。<b>加えて</b>、スーパーや病院も近くにある。",
+      "id": "Kawasan ini aksesibel secara transportasi. Ditambah lagi, supermarket dan rumah sakit juga dekat.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari",
+        "perjalanan"
+      ]
+    },
+    {
+      "jp": "彼女は英語が話せる。<b>加えて</b>、中国語とスペイン語も堪能だ。",
+      "id": "Dia bisa berbicara bahasa Inggris. Selain itu, dia juga fasih berbahasa Mandarin dan Spanyol.",
+      "level": "n3",
+      "tags": [
+        "pendidikan",
+        "bahasa-komunikasi"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "2527270"
 },
 
 {
@@ -1540,20 +3256,46 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["bahasa-komunikasi", "pikiran-opini"],
+  "domain": [
+    "bahasa-komunikasi",
+    "pikiran-opini"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Bisa berfungsi ganda: menambahkan informasi baru (= 加えて) sekaligus mengintensifikasi (= 'semakin/bahkan lebih'). さらに 悪化する = 'semakin memburuk'. 加えて tidak bisa menggantikan fungsi intensifikasi ini. Serba guna dan cocok untuk tulisan maupun percakapan formal.",
   "conj_type": null,
   "examples": [
-    {"jp": "気温が下がった。<b>さらに</b>、雪まで降り始めた。", "id": "Suhu turun. Bahkan, salju pun mulai turun.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]},
-    {"jp": "練習を続けることで、技術は<b>さらに</b>向上するだろう。", "id": "Dengan terus berlatih, kemampuanmu akan semakin meningkat.", "level": "n3", "tags": ["pendidikan", "karakter"]}
+    {
+      "jp": "気温が下がった。<b>さらに</b>、雪まで降り始めた。",
+      "id": "Suhu turun. Bahkan, salju pun mulai turun.",
+      "level": "n3",
+      "tags": [
+        "alam-lingkungan",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "練習を続けることで、技術は<b>さらに</b>向上するだろう。",
+      "id": "Dengan terus berlatih, kemampuanmu akan semakin meningkat.",
+      "level": "n3",
+      "tags": [
+        "pendidikan",
+        "karakter"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1279310",
+  "frequency": 9000,
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
 },
 
 {
@@ -1568,20 +3310,58 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["pikiran-opini", "bahasa-komunikasi"],
+  "domain": [
+    "pikiran-opini",
+    "bahasa-komunikasi"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Menyatakan bahwa pilihan atau deskripsi yang lebih tepat adalah kebalikan atau alternatif dari yang disebutkan. Berbeda dari いっそ yang menyarankan tindakan radikal — むしろ lebih sering digunakan untuk koreksi persepsi atau preferensi halus ('justru ini yang lebih akurat/baik').",
   "conj_type": null,
   "examples": [
-    {"jp": "彼は頭が悪いのではなく、<b>むしろ</b>努力が足りないのだ。", "id": "Bukan karena dia tidak pintar — justru karena usahanya kurang.", "level": "n3", "tags": ["pikiran-opini", "karakter"]},
-    {"jp": "暑い日は冷たい飲み物より、<b>むしろ</b>温かいお茶の方が体にいいらしい。", "id": "Di hari yang panas, katanya minuman hangat seperti teh justru lebih baik untuk tubuh daripada minuman dingin.", "level": "n3", "tags": ["kesehatan", "makanan-minuman"]}
+    {
+      "jp": "彼は頭が悪いのではなく、<b>むしろ</b>努力が足りないのだ。",
+      "id": "Bukan karena dia tidak pintar — justru karena usahanya kurang.",
+      "level": "n3",
+      "tags": [
+        "pikiran-opini",
+        "karakter"
+      ]
+    },
+    {
+      "jp": "暑い日は冷たい飲み物より、<b>むしろ</b>温かいお茶の方が体にいいらしい。",
+      "id": "Di hari yang panas, katanya minuman hangat seperti teh justru lebih baik untuk tubuh daripada minuman dingin.",
+      "level": "n3",
+      "tags": [
+        "kesehatan",
+        "makanan-minuman"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1604870",
+  "frequency": 1000,
+  "forms": [
+    {
+      "word": "寧ろ",
+      "info": []
+    },
+    {
+      "word": "寧",
+      "info": [
+        "okurigana tidak biasa"
+      ]
+    }
+  ],
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
 },
 
 {
@@ -1596,20 +3376,98 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["pikiran-opini", "emosi"],
+  "domain": [
+    "pikiran-opini",
+    "emosi"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Menyatakan bahwa hasil atau keadaan sesuai dengan ekspektasi atau prediksi awal. Versi kasualnya adalah やっぱり — keduanya memiliki makna sama tapi やはり lebih sopan dan digunakan dalam tulisan atau percakapan formal. Juga bisa berarti 'tetap saja' ketika seseorang kembali ke pilihan semula.",
   "conj_type": null,
   "examples": [
-    {"jp": "彼が優勝すると思っていたが、<b>やはり</b>その通りになった。", "id": "Aku pikir dia akan menang, dan memang benar demikianlah yang terjadi.", "level": "n3", "tags": ["olahraga", "emosi"]},
-    {"jp": "いろいろ試したけど、<b>やはり</b>ご飯は日本米が一番おいしい。", "id": "Sudah mencoba berbagai macam, tapi memang nasi dari beras Jepang tetap yang paling enak.", "level": "n3", "tags": ["makanan-minuman", "pikiran-opini"]}
+    {
+      "jp": "彼が優勝すると思っていたが、<b>やはり</b>その通りになった。",
+      "id": "Aku pikir dia akan menang, dan memang benar demikianlah yang terjadi.",
+      "level": "n3",
+      "tags": [
+        "olahraga",
+        "emosi"
+      ]
+    },
+    {
+      "jp": "いろいろ試したけど、<b>やはり</b>ご飯は日本米が一番おいしい。",
+      "id": "Sudah mencoba berbagai macam, tapi memang nasi dari beras Jepang tetap yang paling enak.",
+      "level": "n3",
+      "tags": [
+        "makanan-minuman",
+        "pikiran-opini"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "2772770",
+  "frequency": 1000,
+  "forms": [
+    {
+      "word": "矢張り",
+      "info": [
+        "ateji (phonetic) reading",
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "矢張",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "as expected; sure enough; just as one thought",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "after all (is said and done); in the end; as one would expect; in any case",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "too; also; as well; likewise; (not) either",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "still; as before",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "all the same; even so; still; nonetheless",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
 },
 
 {
@@ -1624,20 +3482,80 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 1,
-  "domain": ["pikiran-opini", "bahasa-komunikasi"],
+  "domain": [
+    "pikiran-opini",
+    "bahasa-komunikasi"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Mengungkapkan kesan atau dugaan yang tidak sepenuhnya yakin — ada rasa ketidakpastian atau kebingungan ringan. Berbeda dari なぜか yang fokus pada ketidaktahuan alasan, どうも lebih menyiratkan 'ada sesuatu yang terasa kurang tepat meski sulit dijelaskan'. Juga bisa berarti 'terima kasih' atau salam informal.",
   "conj_type": null,
   "examples": [
-    {"jp": "あの店は<b>どうも</b>好きになれない。理由はよくわからないけど。", "id": "Entah kenapa aku tidak bisa menyukai toko itu. Tidak tahu pasti alasannya.", "level": "n3", "tags": ["emosi", "kehidupan-sehari"]},
-    {"jp": "今日は<b>どうも</b>調子が悪い気がする。", "id": "Entah kenapa, hari ini rasanya badanku tidak fit.", "level": "n3", "tags": ["kesehatan", "emosi"]}
+    {
+      "jp": "あの店は<b>どうも</b>好きになれない。理由はよくわからないけど。",
+      "id": "Entah kenapa aku tidak bisa menyukai toko itu. Tidak tahu pasti alasannya.",
+      "level": "n3",
+      "tags": [
+        "emosi",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "今日は<b>どうも</b>調子が悪い気がする。",
+      "id": "Entah kenapa, hari ini rasanya badanku tidak fit.",
+      "level": "n3",
+      "tags": [
+        "kesehatan",
+        "emosi"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1009000",
+  "frequency": 1000,
+  "meanings": [
+    {
+      "en": "thank you; thanks",
+      "misc": [
+        "abbreviation"
+      ],
+      "field": []
+    },
+    {
+      "en": "much (thanks); very (sorry); quite (regret)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "quite; really; mostly",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "somehow",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "in spite of oneself; try as one might; no matter how hard one may try (to, not to)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "greetings; hello; goodbye",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "abbreviation"
+  ]
 },
 
 {
@@ -1652,20 +3570,56 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["bahasa-komunikasi", "pikiran-opini"],
+  "domain": [
+    "bahasa-komunikasi",
+    "pikiran-opini"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Digunakan sebelum analogi atau perumpamaan — pembicara menyadari bahwa ekspresi yang dipilih adalah metaforis, bukan harfiah. Berbeda dari たとえば (yang memperkenalkan contoh konkret) — いわば memperkenalkan kiasan atau cara pandang figuratif. Sering muncul dalam tulisan dan ceramah.",
   "conj_type": null,
   "examples": [
-    {"jp": "彼はチームの<b>いわば</b>精神的支柱だ。", "id": "Dia adalah, boleh dibilang, pilar semangat tim.", "level": "n3", "tags": ["pekerjaan", "karakter"]},
-    {"jp": "この経験は<b>いわば</b>人生の授業料だった。", "id": "Pengalaman ini ibarat biaya pendidikan kehidupan.", "level": "n3", "tags": ["pikiran-opini", "kehidupan-sehari"]}
+    {
+      "jp": "彼はチームの<b>いわば</b>精神的支柱だ。",
+      "id": "Dia adalah, boleh dibilang, pilar semangat tim.",
+      "level": "n3",
+      "tags": [
+        "pekerjaan",
+        "karakter"
+      ]
+    },
+    {
+      "jp": "この経験は<b>いわば</b>人生の授業料だった。",
+      "id": "Pengalaman ini ibarat biaya pendidikan kehidupan.",
+      "level": "n3",
+      "tags": [
+        "pikiran-opini",
+        "kehidupan-sehari"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1264380",
+  "frequency": 500,
+  "forms": [
+    {
+      "word": "言わば",
+      "info": []
+    },
+    {
+      "word": "謂わば",
+      "info": []
+    }
+  ],
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
 },
 
 {
@@ -1680,20 +3634,85 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 1,
-  "domain": ["emosi", "bahasa-komunikasi"],
+  "domain": [
+    "emosi",
+    "bahasa-komunikasi"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Mengungkapkan ketidakpercayaan atau kekagetan — pembicara tidak pernah mengira hal tersebut bisa terjadi. Sering digunakan sendiri sebagai seruan (まさか！) atau diikuti klausa negatif (まさか〜とは思わなかった). Berbeda dari いっそ atau むしろ yang menyatakan preferensi — まさか murni ekspresi emosional.",
   "conj_type": null,
   "examples": [
-    {"jp": "<b>まさか</b>、彼が会社を辞めるとは思わなかった。", "id": "Tidak mungkin, aku tidak pernah menyangka dia akan keluar dari perusahaan.", "level": "n3", "tags": ["emosi", "pekerjaan"]},
-    {"jp": "「彼女と結婚するよ」「<b>まさか</b>！」", "id": "\"Aku akan menikahi dia.\" \"Masa iya!\"", "level": "n3", "tags": ["emosi", "percintaan"]}
+    {
+      "jp": "<b>まさか</b>、彼が会社を辞めるとは思わなかった。",
+      "id": "Tidak mungkin, aku tidak pernah menyangka dia akan keluar dari perusahaan.",
+      "level": "n3",
+      "tags": [
+        "emosi",
+        "pekerjaan"
+      ]
+    },
+    {
+      "jp": "「彼女と結婚するよ」「<b>まさか</b>！」",
+      "id": "\"Aku akan menikahi dia.\" \"Masa iya!\"",
+      "level": "n3",
+      "tags": [
+        "emosi",
+        "percintaan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1363540",
+  "frequency": 1000,
+  "meanings": [
+    {
+      "en": "by no means; never!; well, I never!; you don't say!; no way!",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "certainly (not); surely (not); hardly (expected)",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "something unexpected; emergency",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "indeed; really; truly; unexpectedly",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "(the) present; (the) here and now; situation at hand",
+      "misc": [
+        "biasanya kana saja",
+        "arkais"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "arkais",
+    "biasanya kana saja"
+  ]
 },
 
 {
@@ -1708,20 +3727,55 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["pikiran-opini", "keputusan"],
+  "domain": [
+    "pikiran-opini",
+    "keputusan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Mengungkapkan dorongan untuk memilih tindakan yang lebih ekstrem atau tegas daripada opsi tanggung — 'kalau sudah begini, mending sekalian saja'. Berbeda dari むしろ (yang mengoreksi persepsi) — いっそ menyarankan tindakan radikal atau keputusan menyeluruh. Sering mengandung nada frustrasi atau tekad.",
   "conj_type": null,
   "examples": [
-    {"jp": "直らないなら、<b>いっそ</b>全部作り直した方がいい。", "id": "Kalau tidak bisa diperbaiki, sekalian saja buat ulang semuanya.", "level": "n3", "tags": ["keputusan", "pekerjaan"]},
-    {"jp": "こんなに遅れるなら、<b>いっそ</b>休んでしまおうか。", "id": "Kalau sudah terlambat seperti ini, sekalian saja tidak masuk deh.", "level": "n3", "tags": ["keputusan", "kehidupan-sehari"]}
+    {
+      "jp": "直らないなら、<b>いっそ</b>全部作り直した方がいい。",
+      "id": "Kalau tidak bisa diperbaiki, sekalian saja buat ulang semuanya.",
+      "level": "n3",
+      "tags": [
+        "keputusan",
+        "pekerjaan"
+      ]
+    },
+    {
+      "jp": "こんなに遅れるなら、<b>いっそ</b>休んでしまおうか。",
+      "id": "Kalau sudah terlambat seperti ini, sekalian saja tidak masuk deh.",
+      "level": "n3",
+      "tags": [
+        "keputusan",
+        "kehidupan-sehari"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "2613280",
+  "frequency": 1000,
+  "meanings": [
+    {
+      "en": "rather; sooner; preferably; might as well; just",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "on the contrary; if anything",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
@@ -1736,20 +3790,56 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 1,
-  "domain": ["emosi-negatif", "pikiran-opini"],
+  "domain": [
+    "emosi-negatif",
+    "pikiran-opini"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["teman", "umum"],
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
   "nuance": "Mengandung nada pesimis atau pasrah — pembicara merasa hasil akhirnya sudah bisa ditebak (buruk) atau bahwa usaha tidak akan mengubah apapun. Berbeda dari いっそ (yang mendorong tindakan radikal) — どうせ lebih ke sikap menyerah. Jika dipakai dengan positif (どうせならもっとよいものを), maknanya berubah jadi 'kalau memang harus, lebih baik yang terbaik'.",
   "conj_type": null,
   "examples": [
-    {"jp": "<b>どうせ</b>失敗するんだから、やらない方がいい。", "id": "Toh pasti gagal juga, lebih baik tidak usah dilakukan.", "level": "n3", "tags": ["emosi-negatif", "keputusan"]},
-    {"jp": "<b>どうせ</b>やるなら、最高のものを作ろう。", "id": "Kalau bagaimanapun harus dilakukan, lebih baik buat yang terbaik.", "level": "n3", "tags": ["keputusan", "karakter"]}
+    {
+      "jp": "<b>どうせ</b>失敗するんだから、やらない方がいい。",
+      "id": "Toh pasti gagal juga, lebih baik tidak usah dilakukan.",
+      "level": "n3",
+      "tags": [
+        "emosi-negatif",
+        "keputusan"
+      ]
+    },
+    {
+      "jp": "<b>どうせ</b>やるなら、最高のものを作ろう。",
+      "id": "Kalau bagaimanapun harus dilakukan, lebih baik buat yang terbaik.",
+      "level": "n3",
+      "tags": [
+        "keputusan",
+        "karakter"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1008950",
+  "frequency": 1000,
+  "meanings": [
+    {
+      "en": "in any case; regardless; either way; after all; no matter what; anyway",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "since it makes no difference anyway (you might as well ...); since it won't change the outcome; if you are doing it regardless",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
@@ -1764,20 +3854,59 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["emosi", "keputusan"],
+  "domain": [
+    "emosi",
+    "keputusan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Mengandung makna bahwa ada usaha atau kesempatan berharga yang telah diberikan — biasanya disertai rasa sayang kalau terbuang sia-sia. Berbeda dari わざわざ (yang menekankan tindakan repot-repot) — せっかく lebih menekankan nilai atau kelangkaan kesempatan itu. Sering muncul dalam kalimat negasi (せっかく〜のに = sayang sekali padahal...).",
   "conj_type": null,
   "examples": [
-    {"jp": "<b>せっかく</b>日本まで来たのだから、富士山は見ておきたい。", "id": "Sayang kalau sudah jauh-jauh ke Jepang tapi tidak melihat Gunung Fuji.", "level": "n3", "tags": ["perjalanan", "emosi"]},
-    {"jp": "<b>せっかく</b>料理を作ったのに、誰も食べてくれなかった。", "id": "Sudah susah payah memasak, tapi tidak ada yang mau makan.", "level": "n3", "tags": ["makanan-minuman", "emosi-negatif"]}
+    {
+      "jp": "<b>せっかく</b>日本まで来たのだから、富士山は見ておきたい。",
+      "id": "Sayang kalau sudah jauh-jauh ke Jepang tapi tidak melihat Gunung Fuji.",
+      "level": "n3",
+      "tags": [
+        "perjalanan",
+        "emosi"
+      ]
+    },
+    {
+      "jp": "<b>せっかく</b>料理を作ったのに、誰も食べてくれなかった。",
+      "id": "Sudah susah payah memasak, tapi tidak ada yang mau makan.",
+      "level": "n3",
+      "tags": [
+        "makanan-minuman",
+        "emosi-negatif"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1306490",
+  "meanings": [
+    {
+      "en": "assassin",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "candidate fielded by a political party to oust an incumbent of the same party",
+      "misc": [
+        "abbreviation"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "abbreviation"
+  ]
 },
 
 {
@@ -1792,20 +3921,83 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["karakter", "keputusan"],
+  "domain": [
+    "karakter",
+    "keputusan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Menekankan bahwa tindakan dilakukan secara sadar dan sengaja, meski ada risiko, oposisi, atau konvensi yang menghalangi — 'berani melakukan sesuatu yang tidak biasa'. Berbeda dari わざわざ (yang menekankan usaha ekstra) — あえて lebih menekankan keberanian atau keputusan yang melawan arus.",
   "conj_type": null,
   "examples": [
-    {"jp": "皆が反対しているのに、彼は<b>あえて</b>その計画を実行した。", "id": "Meski semua menentang, dia dengan berani tetap melaksanakan rencana itu.", "level": "n3", "tags": ["karakter", "keputusan"]},
-    {"jp": "便利な道があるのに、<b>あえて</b>険しい山道を選んだ。", "id": "Ada jalan yang mudah, tapi dia sengaja memilih jalur pegunungan yang terjal.", "level": "n3", "tags": ["perjalanan", "karakter"]}
+    {
+      "jp": "皆が反対しているのに、彼は<b>あえて</b>その計画を実行した。",
+      "id": "Meski semua menentang, dia dengan berani tetap melaksanakan rencana itu.",
+      "level": "n3",
+      "tags": [
+        "karakter",
+        "keputusan"
+      ]
+    },
+    {
+      "jp": "便利な道があるのに、<b>あえて</b>険しい山道を選んだ。",
+      "id": "Ada jalan yang mudah, tapi dia sengaja memilih jalur pegunungan yang terjal.",
+      "level": "n3",
+      "tags": [
+        "perjalanan",
+        "karakter"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1212850",
+  "frequency": 1000,
+  "forms": [
+    {
+      "word": "敢えて",
+      "info": []
+    },
+    {
+      "word": "敢て",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "purposely (of something needless, unexpected or seemingly counterproductive, etc.); daringly (doing something); deliberately; intentionally",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "not necessarily; not particularly; not especially",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "definitely not",
+      "misc": [
+        "biasanya kana saja",
+        "arkais"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "arkais",
+    "biasanya kana saja"
+  ]
 },
 
 {
@@ -1820,20 +4012,76 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["kehidupan-sehari", "sopan-santun"],
+  "domain": [
+    "kehidupan-sehari",
+    "sopan-santun"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Menekankan bahwa seseorang telah melakukan upaya ekstra atau tindakan tidak diperlukan — bisa mengandung rasa terima kasih (わざわざ来てくれてありがとう) atau sindiran halus (わざわざそんなことしなくていい). Berbeda dari あえて yang menekankan keberanian — わざわざ lebih pada kerepotan atau tindakan yang melebihi kebutuhan.",
   "conj_type": null,
   "examples": [
-    {"jp": "<b>わざわざ</b>遠くから来てくれてありがとうございます。", "id": "Terima kasih sudah repot-repot datang dari jauh.", "level": "n3", "tags": ["sopan-santun", "pertemanan"]},
-    {"jp": "メールで済むのに、<b>わざわざ</b>電話をかけてくるのは迷惑だ。", "id": "Padahal bisa dengan email, repot-repot telepon begini malah mengganggu.", "level": "n3", "tags": ["pekerjaan", "bahasa-komunikasi"]}
+    {
+      "jp": "<b>わざわざ</b>遠くから来てくれてありがとうございます。",
+      "id": "Terima kasih sudah repot-repot datang dari jauh.",
+      "level": "n3",
+      "tags": [
+        "sopan-santun",
+        "pertemanan"
+      ]
+    },
+    {
+      "jp": "メールで済むのに、<b>わざわざ</b>電話をかけてくるのは迷惑だ。",
+      "id": "Padahal bisa dengan email, repot-repot telepon begini malah mengganggu.",
+      "level": "n3",
+      "tags": [
+        "pekerjaan",
+        "bahasa-komunikasi"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1606710",
+  "frequency": 1000,
+  "forms": [
+    {
+      "word": "態々",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "態態",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "expressly; especially; specially; taking the trouble (to do); going to the trouble of (doing); going out of one's way (to do)",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "intentionally; deliberately; on purpose",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
 },
 
 {
@@ -1848,20 +4096,43 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["emosi", "keputusan"],
+  "domain": [
+    "emosi",
+    "keputusan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Mengungkapkan harapan minimal atau permintaan terkecil — pembicara sudah menerima bahwa idealnya tidak tercapai, lalu meminta syarat minimum. Berbeda dari少なくとも (yang bersifat faktual/kuantitatif) — せめて mengandung nuansa emosional, sering terasa seperti permohonan atau harapan terakhir.",
   "conj_type": null,
   "examples": [
-    {"jp": "全部はできなくても、<b>せめて</b>挨拶だけはしてほしい。", "id": "Walaupun tidak bisa semuanya, setidaknya tolong ucapkan salam.", "level": "n3", "tags": ["sopan-santun", "emosi"]},
-    {"jp": "お金はないけど、<b>せめて</b>健康でいたい。", "id": "Tidak punya uang, tapi paling tidak aku ingin tetap sehat.", "level": "n3", "tags": ["kesehatan", "emosi"]}
+    {
+      "jp": "全部はできなくても、<b>せめて</b>挨拶だけはしてほしい。",
+      "id": "Walaupun tidak bisa semuanya, setidaknya tolong ucapkan salam.",
+      "level": "n3",
+      "tags": [
+        "sopan-santun",
+        "emosi"
+      ]
+    },
+    {
+      "jp": "お金はないけど、<b>せめて</b>健康でいたい。",
+      "id": "Tidak punya uang, tapi paling tidak aku ingin tetap sehat.",
+      "level": "n3",
+      "tags": [
+        "kesehatan",
+        "emosi"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1006570",
+  "frequency": 1000
 },
 
 {
@@ -1876,20 +4147,83 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["pikiran-opini", "karakter"],
+  "domain": [
+    "pikiran-opini",
+    "karakter"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Selalu berpasangan dengan 〜ても atau 〜でも — tidak digunakan sendiri. Menekankan bahwa kondisi apapun tidak mengubah hasil. Berbeda dari もし (kondisional netral) — たとえ menyiratkan kontras yang kuat dan tekad, sering digunakan dalam ungkapan dramatis atau janji.",
   "conj_type": null,
   "examples": [
-    {"jp": "<b>たとえ</b>失敗しても、挑戦することに意味がある。", "id": "Seandainya pun gagal, ada makna dalam mencoba.", "level": "n3", "tags": ["karakter", "pikiran-opini"]},
-    {"jp": "<b>たとえ</b>どんなに忙しくても、家族の時間は大切にする。", "id": "Walaupun sesibuk apapun, aku akan tetap menjaga waktu bersama keluarga.", "level": "n3", "tags": ["keluarga", "karakter"]}
+    {
+      "jp": "<b>たとえ</b>失敗しても、挑戦することに意味がある。",
+      "id": "Seandainya pun gagal, ada makna dalam mencoba.",
+      "level": "n3",
+      "tags": [
+        "karakter",
+        "pikiran-opini"
+      ]
+    },
+    {
+      "jp": "<b>たとえ</b>どんなに忙しくても、家族の時間は大切にする。",
+      "id": "Walaupun sesibuk apapun, aku akan tetap menjaga waktu bersama keluarga.",
+      "level": "n3",
+      "tags": [
+        "keluarga",
+        "karakter"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1597120",
+  "frequency": 14000,
+  "forms": [
+    {
+      "word": "例え",
+      "info": []
+    },
+    {
+      "word": "喩え",
+      "info": []
+    },
+    {
+      "word": "譬え",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "喩",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "譬",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "example",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "simile; metaphor; allegory; fable; parable",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
@@ -1904,20 +4238,46 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["pikiran-opini", "keputusan"],
+  "domain": [
+    "pikiran-opini",
+    "keputusan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Menandai kondisi hipotetis yang masih mungkin terjadi — membuka klausa kondisional (〜たら/〜なら/〜ば). Berbeda dari 仮に (yang lebih bersifat counterfactual/andaikan) dan たとえ (yang menekankan ketidakpedulian terhadap kondisi apapun) — もし adalah bentuk kondisional paling umum dan netral.",
   "conj_type": null,
   "examples": [
-    {"jp": "<b>もし</b>雨が降ったら、試合は中止になる。", "id": "Kalau hujan, pertandingan akan dibatalkan.", "level": "n3", "tags": ["olahraga", "kehidupan-sehari"]},
-    {"jp": "<b>もし</b>よかったら、一緒に食事でもどうですか。", "id": "Kalau berkenan, bagaimana kalau makan bersama?", "level": "n3", "tags": ["sopan-santun", "pertemanan"]}
+    {
+      "jp": "<b>もし</b>雨が降ったら、試合は中止になる。",
+      "id": "Kalau hujan, pertandingan akan dibatalkan.",
+      "level": "n3",
+      "tags": [
+        "olahraga",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "<b>もし</b>よかったら、一緒に食事でもどうですか。",
+      "id": "Kalau berkenan, bagaimana kalau makan bersama?",
+      "level": "n3",
+      "tags": [
+        "sopan-santun",
+        "pertemanan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1012500",
+  "frequency": 1000,
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
 },
 
 {
@@ -1932,20 +4292,55 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["pikiran-opini", "ilmu-pengetahuan"],
+  "domain": [
+    "pikiran-opini",
+    "ilmu-pengetahuan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Lebih eksplisit bersifat hipotetis atau counterfactual dibanding もし — sering dipakai dalam argumen, debat, atau diskusi ilmiah ketika pembicara mengajukan skenario yang mungkin tidak nyata. Sering diikuti 〜としても (bahkan jika seandainya). もし lebih umum dan kasual; 仮に lebih terstruktur dan analitis.",
   "conj_type": null,
   "examples": [
-    {"jp": "<b>仮に</b>宝くじが当たったとしても、仕事は辞めないだろう。", "id": "Misalkan menang lotere sekalipun, aku mungkin tidak akan berhenti kerja.", "level": "n3", "tags": ["keputusan", "pikiran-opini"]},
-    {"jp": "<b>仮に</b>この計画が失敗したとしても、学べることは多いはずだ。", "id": "Andaikan rencana ini gagal sekalipun, seharusnya ada banyak yang bisa dipelajari.", "level": "n3", "tags": ["ilmu-pengetahuan", "keputusan"]}
+    {
+      "jp": "<b>仮に</b>宝くじが当たったとしても、仕事は辞めないだろう。",
+      "id": "Misalkan menang lotere sekalipun, aku mungkin tidak akan berhenti kerja.",
+      "level": "n3",
+      "tags": [
+        "keputusan",
+        "pikiran-opini"
+      ]
+    },
+    {
+      "jp": "<b>仮に</b>この計画が失敗したとしても、学べることは多いはずだ。",
+      "id": "Andaikan rencana ini gagal sekalipun, seharusnya ada banyak yang bisa dipelajari.",
+      "level": "n3",
+      "tags": [
+        "ilmu-pengetahuan",
+        "keputusan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1187300",
+  "frequency": 2500,
+  "meanings": [
+    {
+      "en": "supposing; even if; granting that; for argument's sake",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "temporarily; provisionally; for the time being",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
@@ -1960,20 +4355,46 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["pikiran-opini", "bahasa-komunikasi"],
+  "domain": [
+    "pikiran-opini",
+    "bahasa-komunikasi"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Menyatakan dugaan dengan tingkat kepercayaan yang cukup tinggi — lebih formal dan lebih confident dari たぶん. Sering muncul dalam tulisan, berita, atau percakapan setengah formal. たぶん lebih kasual dan sehari-hari, sedangkan おそらく terkesan lebih bijaksana atau analitis. Biasanya diikuti 〜だろう atau 〜と思われる.",
   "conj_type": null,
   "examples": [
-    {"jp": "<b>おそらく</b>、彼は明日も来ないだろう。", "id": "Kemungkinan besar, dia tidak akan datang lagi besok.", "level": "n3", "tags": ["pikiran-opini", "kehidupan-sehari"]},
-    {"jp": "この天気では、<b>おそらく</b>試合は延期になると思われる。", "id": "Dengan cuaca seperti ini, pertandingan kemungkinan besar akan ditunda.", "level": "n3", "tags": ["olahraga", "alam-lingkungan"]}
+    {
+      "jp": "<b>おそらく</b>、彼は明日も来ないだろう。",
+      "id": "Kemungkinan besar, dia tidak akan datang lagi besok.",
+      "level": "n3",
+      "tags": [
+        "pikiran-opini",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "この天気では、<b>おそらく</b>試合は延期になると思われる。",
+      "id": "Dengan cuaca seperti ini, pertandingan kemungkinan besar akan ditunda.",
+      "level": "n3",
+      "tags": [
+        "olahraga",
+        "alam-lingkungan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1236650",
+  "frequency": 7500,
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
 },
 
 {
@@ -2016,20 +4437,41 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["kehidupan-sehari"],
+  "domain": [
+    "kehidupan-sehari"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Menekankan penggabungan beberapa hal menjadi satu tindakan atau satu paket — efisiensi dengan menghindari pengulangan. Berbeda dari いっぺんに yang juga berarti 'sekaligus' tapi menekankan kebersamaan waktu; まとめて lebih menekankan penggabungan atau pengumpulan menjadi satu unit sebelum dikerjakan.",
   "conj_type": null,
   "examples": [
-    {"jp": "洗い物は<b>まとめて</b>やった方が水を節約できる。", "id": "Mencuci piring sekaligus lebih hemat air.", "level": "n3", "tags": ["kehidupan-sehari", "alam-lingkungan"]},
-    {"jp": "質問は<b>まとめて</b>最後にどうぞ。", "id": "Silakan ajukan pertanyaan sekaligus di akhir.", "level": "n3", "tags": ["kehidupan-sehari", "bahasa-komunikasi"]}
+    {
+      "jp": "洗い物は<b>まとめて</b>やった方が水を節約できる。",
+      "id": "Mencuci piring sekaligus lebih hemat air.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari",
+        "alam-lingkungan"
+      ]
+    },
+    {
+      "jp": "質問は<b>まとめて</b>最後にどうぞ。",
+      "id": "Silakan ajukan pertanyaan sekaligus di akhir.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari",
+        "bahasa-komunikasi"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "2750270"
 },
 
 {
@@ -2072,20 +4514,46 @@ window.vocabN3_Adverbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["kehidupan-sehari", "bisnis"],
+  "domain": [
+    "kehidupan-sehari",
+    "bisnis"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Menekankan tindakan yang dilakukan sebelum waktunya tiba — persiapan dan antisipasi. Lebih formal dari 前もって yang bermakna serupa; あらかじめ sering muncul dalam instruksi tertulis, pengumuman resmi, atau bahasa bisnis. Keduanya bisa saling menggantikan, tapi あらかじめ terasa lebih institusional.",
   "conj_type": null,
   "examples": [
-    {"jp": "<b>あらかじめ</b>予約しておかないと、席が取れない。", "id": "Kalau tidak memesan jauh-jauh hari, tempat duduknya tidak bisa didapat.", "level": "n3", "tags": ["kehidupan-sehari", "perjalanan"]},
-    {"jp": "<b>あらかじめ</b>内容を確認してからご参加ください。", "id": "Tolong periksa materinya terlebih dahulu sebelum ikut serta.", "level": "n3", "tags": ["bisnis", "kehidupan-sehari"]}
+    {
+      "jp": "<b>あらかじめ</b>予約しておかないと、席が取れない。",
+      "id": "Kalau tidak memesan jauh-jauh hari, tempat duduknya tidak bisa didapat.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari",
+        "perjalanan"
+      ]
+    },
+    {
+      "jp": "<b>あらかじめ</b>内容を確認してからご参加ください。",
+      "id": "Tolong periksa materinya terlebih dahulu sebelum ikut serta.",
+      "level": "n3",
+      "tags": [
+        "bisnis",
+        "kehidupan-sehari"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1542860",
+  "frequency": 1000,
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
 }
 
 ];

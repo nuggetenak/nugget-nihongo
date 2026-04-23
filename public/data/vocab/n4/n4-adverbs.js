@@ -28,7 +28,9 @@ window.vocabN4_Adverbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1431110',
+  frequency: 1000,
 },
 
 {
@@ -53,7 +55,9 @@ window.vocabN4_Adverbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2015610',
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -78,7 +82,10 @@ window.vocabN4_Adverbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1414830',
+  frequency: 13000,
+  meanings: [{"en": "lengthy (of a book, etc.); voluminous", "misc": [], "field": []}, {"en": "most (e.g. most part); greater; fairly; a good deal; much", "misc": [], "field": []}],
 },
 
 {
@@ -103,7 +110,10 @@ window.vocabN4_Adverbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1306490',
+  meanings: [{"en": "assassin", "misc": [], "field": []}, {"en": "candidate fielded by a political party to oust an incumbent of the same party", "misc": ["abbreviation"], "field": []}],
+  misc_jm: ["abbreviation"],
 },
 
 {
@@ -128,7 +138,13 @@ window.vocabN4_Adverbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1304420',
+  frequency: 1000,
+  forms: [{"word": "暫く", "info": []}, {"word": "暫らく", "info": ["okurigana tidak biasa"]}, {"word": "姑く", "info": ["kanji jarang dipakai"]}, {"word": "須臾", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "for a moment; for a minute", "misc": ["biasanya kana saja"], "field": []}, {"en": "for a while; for some time", "misc": ["biasanya kana saja"], "field": []}, {"en": "for the time being; for now", "misc": ["biasanya kana saja"], "field": []}, {"en": "it's been a long time; long time no see", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
+  conjugations: {"dict": "しばらく", "masu": "しばらくします", "te": "しばらくして", "ta": "しばらくした", "nai": "しばらくしない", "potential": "しばらくできる", "passive": "しばらくされる", "causative": "しばらくさせる", "volitional": "しばらくしよう", "cond_ba": "しばらくすれば", "cond_tara": "しばらくしたら"},
 },
 
 {
@@ -153,7 +169,11 @@ window.vocabN4_Adverbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1013310',
+  frequency: 1000,
+  misc_jm: ["onomatopoeic or mimetic word"],
+  conjugations: {"dict": "わくわく", "masu": "わくわくします", "te": "わくわくして", "ta": "わくわくした", "nai": "わくわくしない", "potential": "わくわくできる", "passive": "わくわくされる", "causative": "わくわくさせる", "volitional": "わくわくしよう", "cond_ba": "わくわくすれば", "cond_tara": "わくわくしたら"},
 },
 
 {
@@ -178,7 +198,11 @@ window.vocabN4_Adverbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1414470',
+  frequency: 6500,
+  meanings: [{"en": "generally; on the whole; mostly; almost; nearly; approximately; roughly; about", "misc": ["biasanya kana saja"], "field": []}, {"en": "general; rough", "misc": ["biasanya kana saja"], "field": []}, {"en": "outline; main points; gist; substance; essence", "misc": ["biasanya kana saja"], "field": []}, {"en": "in the first place; first and foremost; from the start; to begin with", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -203,7 +227,8 @@ window.vocabN4_Adverbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2845086',
 },
 
 {
@@ -228,7 +253,10 @@ window.vocabN4_Adverbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1449890',
+  frequency: 1000,
+  misc_jm: ["biasanya kana saja"],
 }
 
 ];

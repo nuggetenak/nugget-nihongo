@@ -31,7 +31,13 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1198180',
+  frequency: 17000,
+  forms: [{"word": "会う", "info": []}, {"word": "逢う", "info": []}, {"word": "遭う", "info": []}, {"word": "遇う", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "to meet; to encounter; to see", "misc": [], "field": []}, {"en": "to have an accident; to have a bad experience", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
+  conjugations: {"dict": "あう", "masu": "あいます", "te": "あって", "ta": "あった", "nai": "あわない", "potential": "あえる", "passive": "あわれる", "causative": "あわせる", "volitional": "あおう", "cond_ba": "あえば", "cond_tara": "あったら"},
 },
 
 {
@@ -56,7 +62,12 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00003'],
   see_also: ['vg-n5-00004'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1586270',
+  frequency: 1000,
+  forms: [{"word": "開く", "info": []}, {"word": "空く", "info": []}, {"word": "明く", "info": []}],
+  meanings: [{"en": "to open (e.g. doors)", "misc": [], "field": []}, {"en": "to open (e.g. business, etc.)", "misc": [], "field": []}, {"en": "to be empty", "misc": [], "field": []}, {"en": "to be vacant; to be available; to be free", "misc": [], "field": []}, {"en": "to be open (e.g. neckline, etc.)", "misc": [], "field": []}, {"en": "to have been opened (of one's eyes, mouth, etc.)", "misc": [], "field": []}, {"en": "to come to an end", "misc": [], "field": []}, {"en": "to open (one's eyes, mouth, etc.)", "misc": [], "field": []}, {"en": "to have a hole; to form a gap; to have an interval (between events)", "misc": [], "field": []}],
+  conjugations: {"dict": "あく", "masu": "あきます", "te": "あいて", "ta": "あいた", "nai": "あかない", "potential": "あける", "passive": "あかれる", "causative": "あかせる", "volitional": "あこう", "cond_ba": "あけば", "cond_tara": "あいたら"},
 },
 
 {
@@ -81,7 +92,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: ['vg-n5-00002'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2413170',
+  forms: [{"word": "開ける", "info": []}, {"word": "肌蹴る", "info": ["word containing irregular kanji usage"]}],
+  meanings: [{"en": "to open (e.g. one's robe); to bare (e.g. one's chest); to expose", "misc": ["biasanya kana saja"], "field": []}, {"en": "to open up (of clothing); to be exposed", "misc": ["biasanya kana saja"], "field": []}, {"en": "to open wide (one's legs, eyes, mouth, etc.); to stretch", "misc": ["archaic", "biasanya kana saja"], "field": []}],
+  misc_jm: ["arkais", "biasanya kana saja"],
+  conjugations: {"dict": "あける", "masu": "あけます", "te": "あけて", "ta": "あけた", "nai": "あけない", "potential": "あけられる", "passive": "あけられる", "causative": "あけさせる", "volitional": "あけよう", "cond_ba": "あければ", "cond_tara": "あけたら"},
 },
 
 {
@@ -106,7 +122,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1547450',
+  frequency: 4500,
+  meanings: [{"en": "to dash over oneself (e.g. water); to take (e.g. shower); to bask in (e.g. the sun); to bathe in; to be flooded with (e.g. light); to be covered in", "misc": [], "field": []}, {"en": "to suffer (e.g. an attack); to draw (e.g. criticism, attention, praise); to have heaped upon; to be showered with", "misc": [], "field": []}],
+  conjugations: {"dict": "あびる", "masu": "あびます", "te": "あびて", "ta": "あびた", "nai": "あびない", "potential": "あびられる", "passive": "あびられる", "causative": "あびさせる", "volitional": "あびよう", "cond_ba": "あびれば", "cond_tara": "あびたら"},
 },
 
 {
@@ -131,7 +151,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2476100',
+  forms: [{"word": "荒ぶ", "info": []}, {"word": "進ぶ", "info": []}, {"word": "遊ぶ", "info": []}],
+  meanings: [{"en": "to grow wild; to run to waste; to become degenerate", "misc": [], "field": []}, {"en": "to become rough (of art, craft, etc.); to lose refinement; to deteriorate (of skill)", "misc": [], "field": []}, {"en": "to intensify (of wind, rain, etc.); to become more severe", "misc": [], "field": []}, {"en": "to do as one pleases; to amuse oneself; to play around", "misc": ["archaic"], "field": []}],
+  misc_jm: ["arkais"],
+  conjugations: {"dict": "あそぶ", "masu": "あそびます", "te": "あそんで", "ta": "あそんだ", "nai": "あそばない", "potential": "あそべる", "passive": "あそばれる", "causative": "あそばせる", "volitional": "あそぼう", "cond_ba": "あそべば", "cond_tara": "あそんだら"},
 },
 
 {
@@ -156,7 +181,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1390930',
+  frequency: 11500,
+  meanings: [{"en": "to wash; to cleanse; to rinse", "misc": [], "field": []}, {"en": "to inquire into; to investigate", "misc": [], "field": []}, {"en": "to purify (one's heart)", "misc": [], "field": []}, {"en": "to lave (e.g. shore); to wash over (e.g. deck); to sweep", "misc": [], "field": []}],
+  conjugations: {"dict": "あらう", "masu": "あらいます", "te": "あらって", "ta": "あらった", "nai": "あらわない", "potential": "あらえる", "passive": "あらわれる", "causative": "あらわせる", "volitional": "あらおう", "cond_ba": "あらえば", "cond_tara": "あらったら"},
 },
 
 {
@@ -181,7 +210,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1514320',
+  frequency: 1000,
+  forms: [{"word": "歩く", "info": []}, {"word": "步く", "info": ["search-only kanji form"]}],
+  conjugations: {"dict": "あるく", "masu": "あるきます", "te": "あるいて", "ta": "あるいた", "nai": "あるかない", "potential": "あるける", "passive": "あるかれる", "causative": "あるかせる", "volitional": "あるこう", "cond_ba": "あるけば", "cond_tara": "あるいたら"},
 },
 
 {
@@ -206,7 +239,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1587040',
+  frequency: 500,
+  forms: [{"word": "言う", "info": []}, {"word": "云う", "info": ["kanji jarang dipakai"]}, {"word": "謂う", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "to say; to utter; to declare", "misc": [], "field": []}, {"en": "to name; to call", "misc": [], "field": []}, {"en": "to go (e.g. \"the alarm went ping\"); to make a noise", "misc": [], "field": []}],
+  conjugations: {"dict": "いう", "masu": "いいます", "te": "いって", "ta": "いった", "nai": "いわない", "potential": "いえる", "passive": "いわれる", "causative": "いわせる", "volitional": "いおう", "cond_ba": "いえば", "cond_tara": "いったら"},
 },
 
 {
@@ -231,7 +269,13 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00010'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1578850',
+  frequency: 1000,
+  forms: [{"word": "行く", "info": []}, {"word": "往く", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "to go; to move (towards); to head (towards); to leave (for)", "misc": [], "field": []}, {"en": "to move through; to travel across; to walk along (e.g. a road)", "misc": [], "field": []}, {"en": "to go (well, badly, etc.); to proceed; to turn out; to get along", "misc": [], "field": []}, {"en": "to do (in a particular way); to go (with; a choice); to try", "misc": [], "field": []}, {"en": "to pass (of time, seasons, etc.); to go by", "misc": [], "field": []}, {"en": "to stream; to flow", "misc": [], "field": []}, {"en": "to die; to pass away", "misc": [], "field": []}, {"en": "to reach (a stage, extent, age, etc.); to get to; to go (so far as ...)", "misc": [], "field": []}, {"en": "to reach (of information, instructions, wind, etc.); to arrive", "misc": [], "field": []}, {"en": "to continue ...; to go on ...; to (progress) steadily; to gradually ...; to progressively ...", "misc": ["biasanya kana saja"], "field": []}, {"en": "to have an orgasm; to come; to cum", "misc": ["biasanya kana saja", "percakapan kasual"], "field": []}, {"en": "to trip; to get high; to have a drug-induced hallucination", "misc": ["biasanya kana saja", "slang"], "field": []}],
+  misc_jm: ["biasanya kana saja", "kasual", "slang"],
+  conjugations: {"dict": "いく", "masu": "いきます", "te": "いいて", "ta": "いいた", "nai": "いかない", "potential": "いける", "passive": "いかれる", "causative": "いかせる", "volitional": "いこう", "cond_ba": "いけば", "cond_tara": "いいたら"},
 },
 
 {
@@ -256,7 +300,11 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00009'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1591270',
+  forms: [{"word": "来る", "info": []}, {"word": "来たる", "info": []}],
+  meanings: [{"en": "next (e.g. \"next April\"); forthcoming; coming", "misc": [], "field": []}, {"en": "to come; to arrive; to be due to", "misc": [], "field": []}],
+  conjugations: {"dict": "くる", "masu": "きます", "te": "きて", "ta": "きた", "nai": "こない", "potential": "こられる", "passive": "こられる", "causative": "こさせる", "volitional": "こよう", "cond_ba": "くれば", "cond_tara": "きたら"},
 },
 
 {
@@ -281,7 +329,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1221270',
+  frequency: 18500,
+  forms: [{"word": "帰る", "info": []}, {"word": "還る", "info": []}, {"word": "歸る", "info": ["search-only kanji form"]}, {"word": "復る", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to return; to come home; to go home; to go back", "misc": [], "field": []}, {"en": "to leave (of a guest, customer, etc.)", "misc": [], "field": []}, {"en": "to get home; to get to home plate", "misc": [], "field": ["baseball"]}],
+  conjugations: {"dict": "かえる", "masu": "かえります", "te": "かえって", "ta": "かえった", "nai": "かえらない", "potential": "かえれる", "passive": "かえられる", "causative": "かえらせる", "volitional": "かえろう", "cond_ba": "かえれば", "cond_tara": "かえったら"},
 },
 
 {
@@ -306,7 +359,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1343950',
+  frequency: 1000,
+  meanings: [{"en": "to write; to compose; to pen", "misc": [], "field": []}, {"en": "to draw; to paint", "misc": [], "field": []}],
+  conjugations: {"dict": "かく", "masu": "かきます", "te": "かいて", "ta": "かいた", "nai": "かかない", "potential": "かける", "passive": "かかれる", "causative": "かかせる", "volitional": "かこう", "cond_ba": "かけば", "cond_tara": "かいたら"},
 },
 
 {
@@ -331,7 +388,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1591110',
+  frequency: 1000,
+  forms: [{"word": "聞く", "info": []}, {"word": "聴く", "info": []}],
+  meanings: [{"en": "to hear", "misc": [], "field": []}, {"en": "to listen (e.g. to music)", "misc": [], "field": []}, {"en": "to ask; to enquire; to query", "misc": [], "field": []}, {"en": "to hear about; to hear of; to learn of", "misc": [], "field": []}, {"en": "to follow (advice, order, etc.); to obey; to listen to; to comply with", "misc": [], "field": []}, {"en": "to hear (e.g. a plea); to grant (a request); to accept (e.g. an argument); to give consideration to", "misc": [], "field": []}, {"en": "to smell (esp. incense); to sample (a fragrance)", "misc": [], "field": []}, {"en": "to taste (alcohol); to try", "misc": [], "field": []}],
+  conjugations: {"dict": "きく", "masu": "ききます", "te": "きいて", "ta": "きいた", "nai": "きかない", "potential": "きける", "passive": "きかれる", "causative": "きかせる", "volitional": "きこう", "cond_ba": "きけば", "cond_tara": "きいたら"},
 },
 
 {
@@ -356,7 +418,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1384830',
+  frequency: 5500,
+  meanings: [{"en": "to cut; to cut through; to perform (surgery)", "misc": [], "field": []}, {"en": "to sever (connections, ties)", "misc": [], "field": []}, {"en": "to turn off (e.g. the light)", "misc": [], "field": []}, {"en": "to terminate (e.g. a conversation); to hang up (the phone); to disconnect", "misc": [], "field": []}, {"en": "to punch (a ticket); to tear off (a stub)", "misc": [], "field": []}, {"en": "to open (something sealed)", "misc": [], "field": []}, {"en": "to start", "misc": [], "field": []}, {"en": "to set (a limit); to do (something) in less or within a certain time; to issue (cheques, vouchers, etc.)", "misc": [], "field": []}, {"en": "to reduce; to decrease; to discount", "misc": [], "field": []}, {"en": "to shake off (water, etc.); to let drip-dry; to let drain", "misc": [], "field": []}, {"en": "to cross; to traverse", "misc": [], "field": []}, {"en": "to criticize sharply", "misc": [], "field": []}, {"en": "to act decisively; to do (something noticeable); to go first; to make (certain facial expressions, in kabuki)", "misc": [], "field": []}, {"en": "to turn (vehicle, steering wheel, etc.)", "misc": [], "field": []}, {"en": "to curl (a ball); to bend; to cut", "misc": [], "field": []}, {"en": "to shuffle (cards)", "misc": [], "field": []}, {"en": "to discard a tile", "misc": [], "field": ["mahjong"]}, {"en": "to dismiss; to sack; to let go; to expel; to excommunicate", "misc": [], "field": []}, {"en": "to dig (a groove); to cut (a stencil, on a mimeograph)", "misc": [], "field": []}, {"en": "to trump", "misc": [], "field": []}, {"en": "to cut (the connection between two groups)", "misc": [], "field": ["go (game)"]}, {"en": "to start a fire (with wood-wood friction or by striking a metal against stone)", "misc": [], "field": []}, {"en": "to draw (a shape) in the air (with a sword, etc.)", "misc": [], "field": []}, {"en": "to do completely; to finish doing", "misc": [], "field": []}, {"en": "to be completely ...; to be totally ...; to be terribly ...", "misc": [], "field": []}, {"en": "to do clearly; to do decisively; to do firmly", "misc": [], "field": []}],
+  conjugations: {"dict": "きる", "masu": "きります", "te": "きって", "ta": "きった", "nai": "きらない", "potential": "きれる", "passive": "きられる", "causative": "きらせる", "volitional": "きろう", "cond_ba": "きれば", "cond_tara": "きったら"},
 },
 
 {
@@ -381,7 +447,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1423000',
+  frequency: 6500,
+  forms: [{"word": "着る", "info": []}, {"word": "著る", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "to wear (from the shoulders down); to put on", "misc": [], "field": []}, {"en": "to take (the blame, responsibility); to bear", "misc": [], "field": []}],
+  conjugations: {"dict": "きる", "masu": "きます", "te": "きて", "ta": "きた", "nai": "きない", "potential": "きられる", "passive": "きられる", "causative": "きさせる", "volitional": "きよう", "cond_ba": "きれば", "cond_tara": "きたら"},
 },
 
 {
@@ -406,7 +477,12 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00017'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1350110',
+  frequency: 13500,
+  meanings: [{"en": "to erase; to rub out; to rub off; to cross out; to delete", "misc": [], "field": []}, {"en": "to turn off (a light, TV, heater, etc.); to switch off", "misc": [], "field": []}, {"en": "to extinguish (a fire, candle, etc.); to put out", "misc": [], "field": []}, {"en": "to remove (a smell, pain, etc.); to eliminate; to get rid of; to relieve (pain, anxiety, etc.); to neutralize (poison)", "misc": [], "field": []}, {"en": "to drown out (a sound); to deaden; to absorb; to muffle", "misc": [], "field": []}, {"en": "to kill; to murder; to bump off; to rub out", "misc": ["percakapan kasual"], "field": []}],
+  misc_jm: ["kasual"],
+  conjugations: {"dict": "けす", "masu": "けします", "te": "けして", "ta": "けした", "nai": "けさない", "potential": "けせる", "passive": "けされる", "causative": "けさせる", "volitional": "けそう", "cond_ba": "けせば", "cond_tara": "けしたら"},
 },
 
 {
@@ -431,7 +507,11 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00016'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1331540',
+  forms: [{"word": "就ける", "info": []}, {"word": "即ける", "info": []}],
+  meanings: [{"en": "to install (a king, emperor, etc.)", "misc": [], "field": []}, {"en": "to appoint (to a post); to promote", "misc": [], "field": []}, {"en": "to assign (to study under)", "misc": [], "field": []}],
+  conjugations: {"dict": "つける", "masu": "つけます", "te": "つけて", "ta": "つけた", "nai": "つけない", "potential": "つけられる", "passive": "つけられる", "causative": "つけさせる", "volitional": "つけよう", "cond_ba": "つければ", "cond_tara": "つけたら"},
 },
 
 {
@@ -456,7 +536,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1420470',
+  frequency: 1000,
+  forms: [{"word": "知る", "info": []}, {"word": "識る", "info": []}],
+  meanings: [{"en": "to know; to be aware (of); to be conscious (of); to learn (of); to find out; to discover", "misc": [], "field": []}, {"en": "to sense; to feel; to notice; to realize", "misc": [], "field": []}, {"en": "to understand; to comprehend; to grasp; to appreciate", "misc": [], "field": []}, {"en": "to remember; to be familiar with; to be acquainted with", "misc": [], "field": []}, {"en": "to experience; to go through; to know (e.g. hardship)", "misc": [], "field": []}, {"en": "to get acquainted with (a person); to get to know", "misc": [], "field": []}, {"en": "to have to do with; to be concerned with; to be one's concern; to be one's responsibility", "misc": [], "field": []}],
+  conjugations: {"dict": "しる", "masu": "しります", "te": "しって", "ta": "しった", "nai": "しらない", "potential": "しれる", "passive": "しられる", "causative": "しらせる", "volitional": "しろう", "cond_ba": "しれば", "cond_tara": "しったら"},
 },
 
 {
@@ -481,7 +566,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1334040',
+  frequency: 23500,
+  conjugations: {"dict": "すむ", "masu": "すみます", "te": "すんで", "ta": "すんだ", "nai": "すまない", "potential": "すめる", "passive": "すまれる", "causative": "すませる", "volitional": "すもう", "cond_ba": "すめば", "cond_tara": "すんだら"},
 },
 
 {
@@ -506,7 +594,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1157170',
+  frequency: 1000,
+  meanings: [{"en": "to do; to carry out; to perform", "misc": ["biasanya kana saja"], "field": []}, {"en": "to cause to become; to make (into); to turn (into)", "misc": ["biasanya kana saja"], "field": []}, {"en": "to serve as; to act as; to work as", "misc": ["biasanya kana saja"], "field": []}, {"en": "to wear (clothes, a facial expression, etc.)", "misc": ["biasanya kana saja"], "field": []}, {"en": "to judge as being; to view as being; to think of as; to treat as; to use as", "misc": ["biasanya kana saja"], "field": []}, {"en": "to decide on; to choose", "misc": ["biasanya kana saja"], "field": []}, {"en": "to be sensed (of a smell, noise, etc.)", "misc": ["biasanya kana saja"], "field": []}, {"en": "to be (in a state, condition, etc.)", "misc": ["biasanya kana saja"], "field": []}, {"en": "to be worth; to cost", "misc": ["biasanya kana saja"], "field": []}, {"en": "to pass (of time); to elapse", "misc": ["biasanya kana saja"], "field": []}, {"en": "to place, or raise, person A to a post or status B", "misc": ["biasanya kana saja"], "field": []}, {"en": "to transform A to B; to make A into B; to exchange A for B", "misc": ["biasanya kana saja"], "field": []}, {"en": "to make use of A for B; to view A as B; to handle A as if it were B", "misc": ["biasanya kana saja"], "field": []}, {"en": "to feel A about B", "misc": ["biasanya kana saja"], "field": []}, {"en": "verbalizing suffix (applies to nouns noted in this dictionary with the part of speech \"vs\")", "misc": ["biasanya kana saja"], "field": []}, {"en": "creates a humble verb (after a noun prefixed with \"o\" or \"go\")", "misc": ["biasanya kana saja"], "field": []}, {"en": "to be just about to; to be just starting to; to try to; to attempt to", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
+  conjugations: {"dict": "する", "masu": "します", "te": "して", "ta": "した", "nai": "しない", "potential": "できる", "passive": "される", "causative": "させる", "volitional": "しよう", "cond_ba": "すれば", "cond_tara": "したら"},
 },
 
 {
@@ -531,7 +624,12 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00022'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1291800',
+  frequency: 12500,
+  forms: [{"word": "座る", "info": []}, {"word": "坐る", "info": ["kanji jarang dipakai"]}, {"word": "座わる", "info": ["search-only kanji form"]}, {"word": "坐わる", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to sit (down); to have a seat; to be seated; to kneel (on the floor)", "misc": [], "field": []}, {"en": "to assume (a position); to take on (a duty); to occupy (a post)", "misc": [], "field": []}],
+  conjugations: {"dict": "すわる", "masu": "すわります", "te": "すわって", "ta": "すわった", "nai": "すわらない", "potential": "すわれる", "passive": "すわられる", "causative": "すわらせる", "volitional": "すわろう", "cond_ba": "すわれば", "cond_tara": "すわったら"},
 },
 
 {
@@ -556,7 +654,12 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00021'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1597040',
+  frequency: 10500,
+  meanings: [{"en": "to stand (up); to rise; to get to one's feet; to stand on end (e.g. of hairs); to stick up", "misc": [], "field": []}, {"en": "to stand (in a position; of a person, tree, building, etc.); to be situated (in, on)", "misc": [], "field": []}, {"en": "to be (in difficulties, the lead, etc.); to put oneself (in a position or situation); to take up (a position, post, etc.); to position oneself", "misc": [], "field": []}, {"en": "to leave (to do something)", "misc": [], "field": []}, {"en": "to depart (on a journey, trip, etc.); to leave; to set off; to start", "misc": [], "field": []}, {"en": "to get stuck (into; of an arrow, thorn etc.); to pierce", "misc": [], "field": []}, {"en": "to develop (of a haze, waves, etc.); to form (of steam, bubbles, etc.); to appear (of a rainbow, clouds, etc.); to rise (of smoke, waves, etc.); to begin to blow (of a wind, breeze, etc.)", "misc": [], "field": []}, {"en": "to spread (of a rumour, reputation, etc.); to be become widely known", "misc": [], "field": []}, {"en": "to stand (for election); to run", "misc": [], "field": []}, {"en": "to take action; to act; to rise (up); to rouse oneself", "misc": [], "field": []}, {"en": "to have an erection; to become erect (e.g. of nipples)", "misc": ["percakapan kasual"], "field": []}, {"en": "to be established (of a policy, plan, objective, etc.); to be formed", "misc": [], "field": []}, {"en": "to be valid (of an argument, logic, etc.); to hold up; to hold water; to stand up (e.g. of evidence); to be logical; to be reasonable", "misc": [], "field": []}, {"en": "to be sustained (of a living, business, etc.); to be maintained; to survive; to be preserved (of one's reputation, honour, etc.); to be saved", "misc": [], "field": []}, {"en": "to start (of a season); to begin", "misc": [], "field": []}, {"en": "to be held (of a market)", "misc": [], "field": []}, {"en": "to shut (of a door, shoji, etc.); to be shut; to be closed", "misc": [], "field": []}, {"en": "to be (the result of a division)", "misc": [], "field": []}],
+  misc_jm: ["kasual"],
+  conjugations: {"dict": "たつ", "masu": "たちます", "te": "たって", "ta": "たった", "nai": "たたない", "potential": "たてる", "passive": "たたれる", "causative": "たたせる", "volitional": "たとう", "cond_ba": "たてば", "cond_tara": "たったら"},
 },
 
 {
@@ -581,7 +684,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: ['vg-n5-00024'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1358280',
+  frequency: 12500,
+  forms: [{"word": "食べる", "info": []}, {"word": "喰べる", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to eat", "misc": [], "field": []}, {"en": "to live on (e.g. a salary); to live off; to subsist on", "misc": [], "field": []}],
+  conjugations: {"dict": "たべる", "masu": "たべます", "te": "たべて", "ta": "たべた", "nai": "たべない", "potential": "たべられる", "passive": "たべられる", "causative": "たべさせる", "volitional": "たべよう", "cond_ba": "たべれば", "cond_tara": "たべたら"},
 },
 
 {
@@ -606,7 +714,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: ['vg-n5-00023'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1169870',
+  frequency: 20000,
+  forms: [{"word": "飲む", "info": []}, {"word": "呑む", "info": []}, {"word": "飮む", "info": ["search-only kanji form"]}, {"word": "吞む", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to drink; to swallow; to take (medicine)", "misc": [], "field": []}, {"en": "to smoke (tobacco)", "misc": [], "field": []}, {"en": "to swallow up; to engulf", "misc": [], "field": []}, {"en": "to suppress (one's anger, bitter feelings, etc.); to keep down; to hold back; to swallow (one's tears); to catch (one's breath)", "misc": [], "field": []}, {"en": "to accept (a demand, conditions, etc.); to agree to", "misc": [], "field": []}, {"en": "to make light of (someone); to think nothing of; to overwhelm; to overawe", "misc": [], "field": []}, {"en": "to carry (a concealed dagger, etc.); to conceal (up one's sleeve, etc.)", "misc": [], "field": []}],
+  conjugations: {"dict": "のむ", "masu": "のみます", "te": "のんで", "ta": "のんだ", "nai": "のまない", "potential": "のめる", "passive": "のまれる", "causative": "のませる", "volitional": "のもう", "cond_ba": "のめば", "cond_tara": "のんだら"},
 },
 
 {
@@ -631,7 +744,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1305990',
+  frequency: 1000,
+  forms: [{"word": "使う", "info": []}, {"word": "遣う", "info": []}],
+  meanings: [{"en": "to use (a tool, method, etc.); to make use of; to put to use", "misc": [], "field": []}, {"en": "to use (a person, animal, puppet, etc.); to employ; to handle; to manage; to manipulate", "misc": [], "field": []}, {"en": "to use (time, money, etc.); to spend; to consume", "misc": [], "field": []}, {"en": "to use (language); to speak", "misc": [], "field": []}],
+  conjugations: {"dict": "つかう", "masu": "つかいます", "te": "つかって", "ta": "つかった", "nai": "つかわない", "potential": "つかえる", "passive": "つかわれる", "causative": "つかわせる", "volitional": "つかおう", "cond_ba": "つかえば", "cond_tara": "つかったら"},
 },
 
 {
@@ -656,7 +774,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1597890',
+  frequency: 2000,
+  forms: [{"word": "作る", "info": []}, {"word": "造る", "info": []}, {"word": "創る", "info": []}],
+  meanings: [{"en": "to make; to produce; to manufacture; to build; to construct", "misc": [], "field": []}, {"en": "to prepare (food); to brew (alcohol)", "misc": [], "field": []}, {"en": "to raise; to grow; to cultivate; to train", "misc": [], "field": []}, {"en": "to till", "misc": [], "field": []}, {"en": "to draw up (a document); to make out; to prepare; to write", "misc": [], "field": []}, {"en": "to create (an artistic work, etc.); to compose", "misc": [], "field": []}, {"en": "to coin (a phrase); to organize; to organise; to establish; to found", "misc": [], "field": []}, {"en": "to have (a child)", "misc": [], "field": []}, {"en": "to make up (one's face, etc.)", "misc": [], "field": []}, {"en": "to fabricate (an excuse, etc.)", "misc": [], "field": []}, {"en": "to give a (false) appearance; to feign (a smile, etc.); to put on a show of emotion", "misc": [], "field": []}, {"en": "to form (a line, etc.)", "misc": [], "field": []}, {"en": "to set (a record)", "misc": [], "field": []}, {"en": "to commit (a sin, etc.)", "misc": [], "field": []}],
+  conjugations: {"dict": "つくる", "masu": "つくります", "te": "つくって", "ta": "つくった", "nai": "つくらない", "potential": "つくれる", "passive": "つくられる", "causative": "つくらせる", "volitional": "つくろう", "cond_ba": "つくれば", "cond_tara": "つくったら"},
 },
 
 {
@@ -681,7 +804,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1598550',
+  frequency: 14000,
+  forms: [{"word": "出かける", "info": []}, {"word": "出掛ける", "info": []}],
+  meanings: [{"en": "to go out (e.g. on an excursion or outing); to leave; to depart; to start; to set out", "misc": [], "field": []}, {"en": "to be about to leave; to be just going out", "misc": [], "field": []}],
+  conjugations: {"dict": "でかける", "masu": "でかけます", "te": "でかけて", "ta": "でかけた", "nai": "でかけない", "potential": "でかけられる", "passive": "でかけられる", "causative": "でかけさせる", "volitional": "でかけよう", "cond_ba": "でかければ", "cond_tara": "でかけたら"},
 },
 
 {
@@ -706,7 +834,12 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00029'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1338240',
+  frequency: 6000,
+  meanings: [{"en": "to leave; to exit; to go out; to come out; to get out", "misc": [], "field": []}, {"en": "to leave (on a journey); to depart; to start out; to set out", "misc": [], "field": []}, {"en": "to move forward", "misc": [], "field": []}, {"en": "to come to; to get to; to lead to; to reach", "misc": [], "field": []}, {"en": "to appear; to come out; to emerge; to surface; to come forth; to turn up; to be found; to be detected; to be discovered; to be exposed; to show; to be exhibited; to be on display", "misc": [], "field": []}, {"en": "to appear (in print); to be published; to be announced; to be issued; to be listed; to come out", "misc": [], "field": []}, {"en": "to attend; to participate; to take part; to enter (an event); to play in; to perform", "misc": [], "field": []}, {"en": "to be stated; to be expressed; to come up; to be brought up; to be raised", "misc": [], "field": []}, {"en": "to sell", "misc": [], "field": []}, {"en": "to exceed; to go over", "misc": [], "field": []}, {"en": "to stick out; to protrude", "misc": [], "field": []}, {"en": "to break out; to occur; to start; to originate", "misc": [], "field": []}, {"en": "to be produced", "misc": [], "field": []}, {"en": "to come from; to be derived from", "misc": [], "field": []}, {"en": "to be given; to get; to receive; to be offered; to be provided; to be presented; to be submitted; to be handed in; to be turned in; to be paid", "misc": [], "field": []}, {"en": "to answer (phone, door, etc.); to get", "misc": [], "field": []}, {"en": "to assume (an attitude); to act; to behave", "misc": [], "field": []}, {"en": "to pick up (speed, etc.); to gain", "misc": [], "field": []}, {"en": "to flow (e.g. tears); to run; to bleed", "misc": [], "field": []}, {"en": "to graduate", "misc": [], "field": []}, {"en": "to ejaculate; to cum", "misc": ["vulgar expression or word"], "field": []}],
+  misc_jm: ["vulgar expression or word"],
+  conjugations: {"dict": "でる", "masu": "でます", "te": "でて", "ta": "でた", "nai": "でない", "potential": "でられる", "passive": "でられる", "causative": "でさせる", "volitional": "でよう", "cond_ba": "でれば", "cond_tara": "でたら"},
 },
 
 {
@@ -731,7 +864,12 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00028'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1465590',
+  frequency: 12500,
+  forms: [{"word": "入る", "info": []}, {"word": "這入る", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "to enter; to come in; to go in; to get in; to arrive", "misc": [], "field": []}, {"en": "to join (a club, company, etc.); to enter (a university, the army, etc.); to enroll (in); to go into (e.g. politics); to get into", "misc": [], "field": []}, {"en": "to be contained (in); to be included (in); to be inside (e.g. a box); to come under (a heading); to belong (in a category)", "misc": [], "field": []}, {"en": "to (be able to) fit (in a container, building, etc.); to be (able to be) held; to be (able to be) accommodated", "misc": [], "field": []}, {"en": "to be introduced; to be brought in; to be installed", "misc": [], "field": []}, {"en": "to be received; to be obtained", "misc": [], "field": []}, {"en": "to be scored (of points); to be won (of votes)", "misc": [], "field": []}, {"en": "to turn on; to start functioning; to start working", "misc": [], "field": []}, {"en": "to enter (a month, season, etc.); to reach (e.g. a climax); to get to (e.g. the main topic); to enter into (e.g. negotiations); to start (doing); to begin", "misc": [], "field": []}, {"en": "to form (of a crack, fissure, etc.); to develop", "misc": [], "field": []}, {"en": "to be put in (of effort, spirit, feeling, etc.); to be applied (e.g. of strength)", "misc": [], "field": []}, {"en": "to be ready (of tea, coffee, etc.); to be made", "misc": [], "field": []}, {"en": "to enter the body (of alcohol); to become drunk", "misc": [], "field": []}],
+  conjugations: {"dict": "はいる", "masu": "はいります", "te": "はいって", "ta": "はいった", "nai": "はいらない", "potential": "はいれる", "passive": "はいられる", "causative": "はいらせる", "volitional": "はいろう", "cond_ba": "はいれば", "cond_tara": "はいったら"},
 },
 
 {
@@ -756,7 +894,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1451150',
+  frequency: 1000,
+  meanings: [{"en": "to work; to labor; to labour", "misc": [], "field": []}, {"en": "to function; to operate; to be effective; to work (i.e. ... works); to come into play", "misc": [], "field": []}, {"en": "to commit (e.g. a crime); to perpetrate; to do; to act; to practise; to practice", "misc": [], "field": []}, {"en": "to be conjugated", "misc": [], "field": ["linguistics"]}],
+  conjugations: {"dict": "はたらく", "masu": "はたらきます", "te": "はたらいて", "ta": "はたらいた", "nai": "はたらかない", "potential": "はたらける", "passive": "はたらかれる", "causative": "はたらかせる", "volitional": "はたらこう", "cond_ba": "はたらけば", "cond_tara": "はたらいたら"},
 },
 
 {
@@ -781,7 +923,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1562350',
+  frequency: 10500,
+  forms: [{"word": "話す", "info": []}, {"word": "咄す", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "to talk; to speak; to converse; to chat", "misc": [], "field": []}, {"en": "to tell; to explain; to narrate; to mention; to describe; to discuss", "misc": [], "field": []}, {"en": "to speak (a language)", "misc": [], "field": []}],
+  conjugations: {"dict": "はなす", "masu": "はなします", "te": "はなして", "ta": "はなした", "nai": "はなさない", "potential": "はなせる", "passive": "はなされる", "causative": "はなさせる", "volitional": "はなそう", "cond_ba": "はなせば", "cond_tara": "はなしたら"},
 },
 
 {
@@ -806,7 +953,13 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1259290',
+  frequency: 7000,
+  forms: [{"word": "見る", "info": []}, {"word": "観る", "info": []}, {"word": "視る", "info": []}, {"word": "覧る", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to see; to look; to watch; to view; to observe", "misc": [], "field": []}, {"en": "to examine; to look over; to assess; to check; to judge", "misc": [], "field": []}, {"en": "to look after; to attend to; to take care of; to keep an eye on", "misc": [], "field": []}, {"en": "to experience; to meet with (misfortune, success, etc.)", "misc": [], "field": []}, {"en": "to try ...; to have a go at ...; to give ... a try", "misc": ["biasanya kana saja"], "field": []}, {"en": "to see (that) ...; to find (that) ...", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
+  conjugations: {"dict": "みる", "masu": "みます", "te": "みて", "ta": "みた", "nai": "みない", "potential": "みられる", "passive": "みられる", "causative": "みさせる", "volitional": "みよう", "cond_ba": "みれば", "cond_tara": "みたら"},
 },
 
 {
@@ -831,7 +984,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1456360',
+  frequency: 6000,
+  forms: [{"word": "読む", "info": []}, {"word": "讀む", "info": ["search-only kanji form"]}, {"word": "訓む", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to read", "misc": [], "field": []}, {"en": "to recite (e.g. a sutra); to chant", "misc": [], "field": []}, {"en": "to predict; to guess; to forecast; to read (someone's thoughts); to see (e.g. into someone's heart); to divine", "misc": [], "field": []}, {"en": "to pronounce; to read (e.g. a kanji)", "misc": [], "field": []}, {"en": "to decipher; to read (a meter, graph, music, etc.); to tell (the time)", "misc": [], "field": []}, {"en": "to count; to estimate", "misc": [], "field": []}, {"en": "to read (a kanji) with its native Japanese reading", "misc": [], "field": []}],
+  conjugations: {"dict": "よむ", "masu": "よみます", "te": "よんで", "ta": "よんだ", "nai": "よまない", "potential": "よめる", "passive": "よまれる", "causative": "よませる", "volitional": "よもう", "cond_ba": "よめば", "cond_tara": "よんだら"},
 },
 
 {
@@ -856,7 +1014,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1174340',
+  frequency: 10000,
+  forms: [{"word": "泳ぐ", "info": []}, {"word": "游ぐ", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "to swim", "misc": [], "field": []}, {"en": "to struggle through (a crowd)", "misc": [], "field": []}, {"en": "to make one's way through the world; to get along (in life)", "misc": [], "field": []}, {"en": "to totter; to lose one's balance", "misc": [], "field": []}],
+  conjugations: {"dict": "およぐ", "masu": "およぎます", "te": "およいで", "ta": "およいだ", "nai": "およがない", "potential": "およげる", "passive": "およがれる", "causative": "およがせる", "volitional": "およごう", "cond_ba": "およげば", "cond_tara": "およいだら"},
 },
 
 {
@@ -881,7 +1044,11 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00036'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1223640',
+  frequency: 15500,
+  meanings: [{"en": "to get up; to rise; to blaze up (fire)", "misc": [], "field": []}, {"en": "to wake up; to be awake; to stay awake", "misc": [], "field": []}, {"en": "to occur (usu. of unfavourable incidents); to happen; to take place", "misc": [], "field": []}],
+  conjugations: {"dict": "おきる", "masu": "おきます", "te": "おきて", "ta": "おきた", "nai": "おきない", "potential": "おきられる", "passive": "おきられる", "causative": "おきさせる", "volitional": "おきよう", "cond_ba": "おきれば", "cond_tara": "おきたら"},
 },
 
 {
@@ -906,7 +1073,12 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00035'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1360010',
+  frequency: 7500,
+  forms: [{"word": "寝る", "info": []}, {"word": "寐る", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "to sleep (lying down)", "misc": [], "field": []}, {"en": "to go to bed; to lie in bed", "misc": [], "field": []}, {"en": "to lie down", "misc": [], "field": []}, {"en": "to sleep (with someone, i.e. have intercourse)", "misc": [], "field": []}, {"en": "to lie flat (e.g. of hair)", "misc": [], "field": []}, {"en": "to lie idle (of funds, stock, etc.)", "misc": [], "field": []}, {"en": "to ferment (of soy sauce, miso, etc.)", "misc": [], "field": []}],
+  conjugations: {"dict": "ねる", "masu": "ねます", "te": "ねて", "ta": "ねた", "nai": "ねない", "potential": "ねられる", "passive": "ねられる", "causative": "ねさせる", "volitional": "ねよう", "cond_ba": "ねれば", "cond_tara": "ねたら"},
 },
 
 {
@@ -931,7 +1103,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1473740',
+  frequency: 5000,
+  meanings: [{"en": "to buy; to purchase", "misc": [], "field": []}, {"en": "to value (highly); to think highly of; to have a high opinion of; to appreciate; to recognize", "misc": [], "field": []}, {"en": "to incur (someone's anger, displeasure, etc.); to elicit (e.g. sneers); to invite (e.g. scorn); to evoke; to arouse; to win (someone's favour)", "misc": [], "field": []}, {"en": "to accept; to take on; to take up", "misc": [], "field": []}, {"en": "to pay for (a prostitute, geisha, etc.)", "misc": [], "field": []}],
+  conjugations: {"dict": "かう", "masu": "かいます", "te": "かって", "ta": "かった", "nai": "かわない", "potential": "かえる", "passive": "かわれる", "causative": "かわせる", "volitional": "かおう", "cond_ba": "かえば", "cond_tara": "かったら"},
 },
 
 {
@@ -956,7 +1132,11 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00037'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1473950',
+  frequency: 4000,
+  meanings: [{"en": "to sell", "misc": [], "field": []}, {"en": "to betray; to sell out (one's friend, country, etc.)", "misc": [], "field": []}, {"en": "to make (oneself) known; to establish (a reputation) for oneself", "misc": [], "field": []}, {"en": "to pick (a fight, quarrel, etc.); to provoke; to force on someone", "misc": [], "field": []}],
+  conjugations: {"dict": "うる", "masu": "うります", "te": "うって", "ta": "うった", "nai": "うらない", "potential": "うれる", "passive": "うられる", "causative": "うらせる", "volitional": "うろう", "cond_ba": "うれば", "cond_tara": "うったら"},
 },
 
 {
@@ -981,7 +1161,13 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00040'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1411160',
+  frequency: 15500,
+  forms: [{"word": "貸す", "info": []}, {"word": "藉す", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "to lend; to loan", "misc": [], "field": []}, {"en": "to rent out; to hire out", "misc": [], "field": []}, {"en": "to hand (over); to give", "misc": ["percakapan kasual"], "field": []}],
+  misc_jm: ["kasual"],
+  conjugations: {"dict": "かす", "masu": "かします", "te": "かして", "ta": "かした", "nai": "かさない", "potential": "かせる", "passive": "かされる", "causative": "かさせる", "volitional": "かそう", "cond_ba": "かせば", "cond_tara": "かしたら"},
 },
 
 {
@@ -1006,7 +1192,12 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00039'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1323560',
+  frequency: 6500,
+  forms: [{"word": "借りる", "info": []}, {"word": "貸りる", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to borrow", "misc": [], "field": []}, {"en": "to rent; to hire", "misc": [], "field": []}, {"en": "to make use of (another's help, wisdom, etc.); to obtain; to receive", "misc": [], "field": []}, {"en": "to use (for another purpose); to put to a different use", "misc": [], "field": []}],
+  conjugations: {"dict": "かりる", "masu": "かります", "te": "かりて", "ta": "かりた", "nai": "かりない", "potential": "かりられる", "passive": "かりられる", "causative": "かりさせる", "volitional": "かりよう", "cond_ba": "かりれば", "cond_tara": "かりたら"},
 },
 
 {
@@ -1031,7 +1222,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1236900',
+  frequency: 19000,
+  forms: [{"word": "教える", "info": []}, {"word": "訓える", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to teach; to instruct", "misc": [], "field": []}, {"en": "to tell; to inform; to show", "misc": [], "field": []}, {"en": "to preach", "misc": [], "field": []}],
+  conjugations: {"dict": "おしえる", "masu": "おしえます", "te": "おしえて", "ta": "おしえた", "nai": "おしえない", "potential": "おしえられる", "passive": "おしえられる", "causative": "おしえさせる", "volitional": "おしえよう", "cond_ba": "おしえれば", "cond_tara": "おしえたら"},
 },
 
 {
@@ -1056,7 +1252,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1206050',
+  frequency: 13000,
+  forms: [{"word": "覚える", "info": []}, {"word": "憶える", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "to memorize; to memorise; to commit to memory; to learn by heart; to bear in mind; to remember", "misc": [], "field": []}, {"en": "to learn; to pick up; to acquire", "misc": [], "field": []}, {"en": "to feel", "misc": [], "field": []}, {"en": "to think; to regard", "misc": [], "field": []}],
+  conjugations: {"dict": "おぼえる", "masu": "おぼえます", "te": "おぼえて", "ta": "おぼえた", "nai": "おぼえない", "potential": "おぼえられる", "passive": "おぼえられる", "causative": "おぼえさせる", "volitional": "おぼえよう", "cond_ba": "おぼえれば", "cond_tara": "おぼえたら"},
 },
 
 {
@@ -1081,7 +1282,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1588120',
+  frequency: 7500,
+  forms: [{"word": "歌う", "info": []}, {"word": "唄う", "info": []}, {"word": "詠う", "info": []}, {"word": "唱う", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "to sing", "misc": [], "field": []}, {"en": "to sing of (love, beauty, etc.) in a poem; to express in the form of a poem; to recite (a poem)", "misc": [], "field": []}],
+  conjugations: {"dict": "うたう", "masu": "うたいます", "te": "うたって", "ta": "うたった", "nai": "うたわない", "potential": "うたえる", "passive": "うたわれる", "causative": "うたわせる", "volitional": "うたおう", "cond_ba": "うたえば", "cond_tara": "うたったら"},
 },
 
 {
@@ -1106,7 +1312,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: ['vg-n5-00045'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1589500',
+  frequency: 5000,
+  forms: [{"word": "降りる", "info": []}, {"word": "下りる", "info": []}],
+  meanings: [{"en": "to descend (e.g. a mountain); to go down; to come down", "misc": [], "field": []}, {"en": "to alight (e.g. from bus); to get off; to disembark; to dismount", "misc": [], "field": []}, {"en": "to step down; to retire; to give up; to quit; to fold", "misc": [], "field": []}, {"en": "to be granted; to be issued; to be given", "misc": [], "field": []}, {"en": "to form (of frost, dew, mist, etc.)", "misc": [], "field": []}, {"en": "to be passed (from the body; e.g. of a roundworm)", "misc": [], "field": []}],
+  conjugations: {"dict": "おりる", "masu": "おります", "te": "おりて", "ta": "おりた", "nai": "おりない", "potential": "おりられる", "passive": "おりられる", "causative": "おりさせる", "volitional": "おりよう", "cond_ba": "おりれば", "cond_tara": "おりたら"},
 },
 
 {
@@ -1131,7 +1342,12 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00044'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1355120',
+  frequency: 10500,
+  forms: [{"word": "乗る", "info": []}, {"word": "乘る", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to get on (train, plane, bus, ship, etc.); to get in; to board; to take; to embark", "misc": [], "field": []}, {"en": "to get on (e.g. a footstool); to step on; to jump on; to sit on; to mount", "misc": [], "field": []}, {"en": "to reach; to go over; to pass", "misc": [], "field": []}, {"en": "to follow; to stay (on track); to go with (the times, etc.)", "misc": [], "field": []}, {"en": "to take part; to participate; to join", "misc": [], "field": []}, {"en": "to get into the swing (and sing, dance, etc.)", "misc": [], "field": []}, {"en": "to be deceived; to be taken in", "misc": [], "field": []}, {"en": "to be carried; to be spread; to be scattered", "misc": [], "field": []}, {"en": "to stick; to attach; to take; to go on", "misc": [], "field": []}],
+  conjugations: {"dict": "のる", "masu": "のります", "te": "のって", "ta": "のった", "nai": "のらない", "potential": "のれる", "passive": "のられる", "causative": "のらせる", "volitional": "のろう", "cond_ba": "のれば", "cond_tara": "のったら"},
 },
 
 {
@@ -1156,7 +1372,13 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1589600',
+  frequency: 5500,
+  forms: [{"word": "終わる", "info": []}, {"word": "終る", "info": []}, {"word": "了る", "info": ["kanji jarang dipakai"]}, {"word": "卒る", "info": ["kanji jarang dipakai"]}, {"word": "畢る", "info": ["kanji jarang dipakai"]}, {"word": "竟る", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "to end; to come to an end; to finish; to close; to be over", "misc": [], "field": []}, {"en": "to finish; to complete; to conclude", "misc": [], "field": []}, {"en": "to finish doing", "misc": [], "field": []}, {"en": "to be past its (one's) prime", "misc": ["percakapan kasual"], "field": []}, {"en": "to be awful; to be terrible; to suck; to be hopeless", "misc": ["percakapan kasual"], "field": []}],
+  misc_jm: ["kasual"],
+  conjugations: {"dict": "おわる", "masu": "おわります", "te": "おわって", "ta": "おわった", "nai": "おわらない", "potential": "おわれる", "passive": "おわられる", "causative": "おわらせる", "volitional": "おわろう", "cond_ba": "おわれば", "cond_tara": "おわったら"},
 },
 
 {
@@ -1181,7 +1403,11 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00046'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1307500',
+  frequency: 14000,
+  meanings: [{"en": "to begin; to start; to commence", "misc": [], "field": []}, {"en": "to happen (again); to begin (anew)", "misc": [], "field": []}, {"en": "to date (from); to originate (in)", "misc": [], "field": []}],
+  conjugations: {"dict": "はじまる", "masu": "はじまります", "te": "はじまって", "ta": "はじまった", "nai": "はじまらない", "potential": "はじまれる", "passive": "はじまられる", "causative": "はじまらせる", "volitional": "はじまろう", "cond_ba": "はじまれば", "cond_tara": "はじまったら"},
 },
 
 {
@@ -1206,7 +1432,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1180470',
+  frequency: 4000,
+  forms: [{"word": "押す", "info": []}, {"word": "圧す", "info": ["search-only kanji form"]}, {"word": "捺す", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to push; to thrust; to shove", "misc": [], "field": []}, {"en": "to press (down); to push (e.g. a button); to exert pressure on", "misc": [], "field": []}, {"en": "to stamp (e.g. one's name); to affix (a seal)", "misc": [], "field": []}, {"en": "to affix (e.g. gold leaf)", "misc": [], "field": []}, {"en": "to push (someone for something); to press; to put pressure on (someone)", "misc": [], "field": []}, {"en": "to overwhelm; to overpower; to put (someone) under pressure; to be superior to", "misc": [], "field": []}, {"en": "to push ahead (with a policy, plan, etc.); to proceed; to stick to", "misc": [], "field": []}, {"en": "to do ... in spite of ...; to defy; to brave; to push aside", "misc": [], "field": []}, {"en": "to make sure", "misc": [], "field": []}, {"en": "to fall behind schedule", "misc": [], "field": []}, {"en": "to push; to extend one's stones forward by pushing against opponent's stones", "misc": [], "field": ["go (game)"]}],
+  conjugations: {"dict": "おす", "masu": "おします", "te": "おして", "ta": "おした", "nai": "おさない", "potential": "おせる", "passive": "おされる", "causative": "おさせる", "volitional": "おそう", "cond_ba": "おせば", "cond_tara": "おしたら"},
 },
 
 {
@@ -1231,7 +1462,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1402730',
+  frequency: 3000,
+  meanings: [{"en": "to send; to dispatch; to forward; to transmit; to ship; to remit", "misc": [], "field": []}, {"en": "to see (someone) off; to escort; to accompany; to take", "misc": [], "field": []}, {"en": "to bid farewell to (the departed); to say goodbye to; to bury", "misc": [], "field": []}, {"en": "to spend (time); to pass; to lead (a life); to live", "misc": [], "field": []}, {"en": "to pass (on, along); to advance (a runner)", "misc": [], "field": []}, {"en": "to affix (okurigana)", "misc": [], "field": []}],
+  conjugations: {"dict": "おくる", "masu": "おくります", "te": "おくって", "ta": "おくった", "nai": "おくらない", "potential": "おくれる", "passive": "おくられる", "causative": "おくらせる", "volitional": "おくろう", "cond_ba": "おくれば", "cond_tara": "おくったら"},
 },
 
 {
@@ -1256,7 +1491,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: ['vg-n5-00051', 'vg-n5-00052'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1535910',
+  frequency: 21000,
+  meanings: [{"en": "to receive; to take; to accept", "misc": ["biasanya kana saja"], "field": []}, {"en": "to get someone to do something", "misc": ["biasanya kana saja"], "field": []}, {"en": "to have in one's pocket (a fight, match)", "misc": ["biasanya kana saja"], "field": []}, {"en": "to contract (a disease); to catch; to be affected", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
+  conjugations: {"dict": "もらう", "masu": "もらいます", "te": "もらって", "ta": "もらった", "nai": "もらわない", "potential": "もらえる", "passive": "もらわれる", "causative": "もらわせる", "volitional": "もらおう", "cond_ba": "もらえば", "cond_tara": "もらったら"},
 },
 
 {
@@ -1281,7 +1521,13 @@ window.vocabN5 = [
   antonyms: [],
   see_also: ['vg-n5-00052', 'vg-n5-00050'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1352320',
+  frequency: 21000,
+  forms: [{"word": "上げる", "info": []}, {"word": "騰げる", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to raise; to elevate", "misc": [], "field": []}, {"en": "to move something (to a higher place); to put onto (e.g. a shelf)", "misc": [], "field": []}, {"en": "to increase (price, quality, status, etc.); to raise (a wage)", "misc": [], "field": []}, {"en": "to show someone (into a room); to let in (e.g. a guest)", "misc": [], "field": []}, {"en": "to give", "misc": ["polite (teineigo) language", "biasanya kana saja"], "field": []}, {"en": "to enrol (one's child in school); to enroll; to send (one's child; e.g. to college)", "misc": [], "field": []}, {"en": "to develop (talent, skill, etc.); to improve", "misc": [], "field": []}, {"en": "to earn (something desirable); to achieve (e.g. a good result); to obtain", "misc": [], "field": []}, {"en": "to promote (someone)", "misc": [], "field": []}, {"en": "to complete; to finish", "misc": [], "field": []}, {"en": "to make (a loud sound); to raise (one's voice)", "misc": [], "field": []}, {"en": "to raise (one's gaze); to lift up (one's face); to look up", "misc": [], "field": []}, {"en": "to do up (one's hair)", "misc": [], "field": []}, {"en": "to offer up (incense, a prayer, etc.) to the gods (or Buddha, etc.)", "misc": [], "field": []}, {"en": "to praise; to commend; to flatter", "misc": [], "field": []}, {"en": "to make do (with less expenses than expected); to cover expenses (with a given amount); to set costs", "misc": [], "field": []}, {"en": "to finish (one's studies); to complete (a lesson); to pass (e.g. a class)", "misc": [], "field": []}, {"en": "to upload (e.g. an image); to publish (on the internet); to post", "misc": [], "field": []}, {"en": "to raise someone's spirits; to cheer someone up; to enhance a mood", "misc": ["percakapan kasual"], "field": []}, {"en": "(of the tide) to come in; to rise", "misc": [], "field": []}, {"en": "to increase (of market price); to rise (of stock prices)", "misc": [], "field": ["finance"]}, {"en": "to vomit; to throw up", "misc": [], "field": []}, {"en": "to do for (the sake of someone else)", "misc": ["biasanya kana saja", "polite (teineigo) language"], "field": []}, {"en": "to complete ...", "misc": [], "field": []}, {"en": "to humbly do ...", "misc": ["humble (kenjougo) language"], "field": []}],
+  misc_jm: ["biasanya kana saja", "humble (kenjougo) language", "kasual", "polite (teineigo) language"],
+  conjugations: {"dict": "あげる", "masu": "あげます", "te": "あげて", "ta": "あげた", "nai": "あげない", "potential": "あげられる", "passive": "あげられる", "causative": "あげさせる", "volitional": "あげよう", "cond_ba": "あげれば", "cond_tara": "あげたら"},
 },
 
 {
@@ -1306,7 +1552,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: ['vg-n5-00051', 'vg-n5-00050'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1269130',
+  frequency: 1000,
+  meanings: [{"en": "to give; to let (one) have", "misc": ["biasanya kana saja"], "field": []}, {"en": "to give", "misc": ["biasanya kana saja"], "field": []}, {"en": "to do for one; to take the trouble to do", "misc": ["biasanya kana saja"], "field": []}, {"en": "to do to someone's disadvantage", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
+  conjugations: {"dict": "くれる", "masu": "くれます", "te": "くれて", "ta": "くれた", "nai": "くれない", "potential": "くれられる", "passive": "くれられる", "causative": "くれさせる", "volitional": "くれよう", "cond_ba": "くれれば", "cond_tara": "くれたら"},
 },
 
 {
@@ -1331,7 +1582,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: ['vg-n5-00054'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1322180',
+  frequency: 13000,
+  conjugations: {"dict": "いる", "masu": "います", "te": "いて", "ta": "いた", "nai": "いない", "potential": "いられる", "passive": "いられる", "causative": "いさせる", "volitional": "いよう", "cond_ba": "いれば", "cond_tara": "いたら"},
 },
 
 {
@@ -1356,7 +1610,13 @@ window.vocabN5 = [
   antonyms: [],
   see_also: ['vg-n5-00053'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1296400',
+  frequency: 2500,
+  forms: [{"word": "有る", "info": []}, {"word": "在る", "info": []}],
+  meanings: [{"en": "to be; to exist; to live", "misc": ["biasanya kana saja"], "field": []}, {"en": "to have", "misc": ["biasanya kana saja"], "field": []}, {"en": "to be located", "misc": ["biasanya kana saja"], "field": []}, {"en": "to be equipped with", "misc": ["biasanya kana saja"], "field": []}, {"en": "to happen; to come about", "misc": ["biasanya kana saja"], "field": []}, {"en": "to exist (in a completed state); to be (something unchanged in its current state)", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
+  conjugations: {"dict": "ある", "masu": "あります", "te": "あって", "ta": "あった", "nai": "あらない", "potential": "あれる", "passive": "あられる", "causative": "あらせる", "volitional": "あろう", "cond_ba": "あれば", "cond_tara": "あったら"},
 },
 
 {
@@ -1381,7 +1641,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1259210',
+  frequency: 17500,
+  forms: [{"word": "見せる", "info": []}, {"word": "観せる", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to show; to display", "misc": [], "field": []}, {"en": "to make (something or someone) look ...; to present an appearance of ...", "misc": [], "field": []}, {"en": "to make (something) worth watching; to be entertaining", "misc": [], "field": []}, {"en": "to have (something) looked at (by a specialist); to have (an antique, etc.) appraised", "misc": [], "field": []}, {"en": "to have (an injury, person, etc.) looked at (by a doctor); to take (someone) to a doctor", "misc": [], "field": []}, {"en": "to make a show of (doing); to do in a conspicuous manner; to do in view of others", "misc": [], "field": []}, {"en": "to resolve to do; to do at any cost; to show others that one will ...", "misc": [], "field": []}],
+  conjugations: {"dict": "みせる", "masu": "みせます", "te": "みせて", "ta": "みせた", "nai": "みせない", "potential": "みせられる", "passive": "みせられる", "causative": "みせさせる", "volitional": "みせよう", "cond_ba": "みせれば", "cond_tara": "みせたら"},
 },
 
 {
@@ -1406,7 +1671,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1378690',
+  frequency: 1000,
+  forms: [{"word": "生まれる", "info": []}, {"word": "産まれる", "info": []}, {"word": "生れる", "info": ["search-only kanji form"]}, {"word": "産れる", "info": ["search-only kanji form"]}],
+  conjugations: {"dict": "うまれる", "masu": "うまれます", "te": "うまれて", "ta": "うまれた", "nai": "うまれない", "potential": "うまれられる", "passive": "うまれられる", "causative": "うまれさせる", "volitional": "うまれよう", "cond_ba": "うまれれば", "cond_tara": "うまれたら"},
 },
 
 {
@@ -1431,7 +1700,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1443840',
+  frequency: 500,
+  meanings: [{"en": "telephone call; phone call", "misc": [], "field": []}, {"en": "telephone (device); phone", "misc": ["abbreviation"], "field": []}],
+  misc_jm: ["abbreviation"],
+  conjugations: {"dict": "でんわ", "masu": "でんわします", "te": "でんわして", "ta": "でんわした", "nai": "でんわしない", "potential": "でんわできる", "passive": "でんわされる", "causative": "でんわさせる", "volitional": "でんわしよう", "cond_ba": "でんわすれば", "cond_tara": "でんわしたら"},
 },
 
 {
@@ -1456,7 +1730,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1304970',
+  frequency: 500,
+  meanings: [{"en": "work; job; labor; labour; business; task; assignment; occupation; employment", "misc": [], "field": []}, {"en": "work", "misc": [], "field": ["physics"]}],
+  conjugations: {"dict": "しごと", "masu": "しごとします", "te": "しごとして", "ta": "しごとした", "nai": "しごとしない", "potential": "しごとできる", "passive": "しごとされる", "causative": "しごとさせる", "volitional": "しごとしよう", "cond_ba": "しごとすれば", "cond_tara": "しごとしたら"},
 },
 
 {
@@ -1481,7 +1759,8 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "べんきょうする", "masu": "べんきょうします", "te": "べんきょうして", "ta": "べんきょうした", "nai": "べんきょうしない", "potential": "べんきょうできる", "passive": "べんきょうされる", "causative": "べんきょうさせる", "volitional": "べんきょうしよう", "cond_ba": "べんきょうすれば", "cond_tara": "べんきょうしたら"},
 },
 
 {
@@ -1506,7 +1785,8 @@ window.vocabN5 = [
   antonyms: [],
   see_also: ['vg-n5-00164'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "そうじする", "masu": "そうじします", "te": "そうじして", "ta": "そうじした", "nai": "そうじしない", "potential": "そうじできる", "passive": "そうじされる", "causative": "そうじさせる", "volitional": "そうじしよう", "cond_ba": "そうじすれば", "cond_tara": "そうじしたら"},
 },
 
 {
@@ -1531,7 +1811,8 @@ window.vocabN5 = [
   antonyms: [],
   see_also: ['vg-n5-00163'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "せんたくする", "masu": "せんたくします", "te": "せんたくして", "ta": "せんたくした", "nai": "せんたくしない", "potential": "せんたくできる", "passive": "せんたくされる", "causative": "せんたくさせる", "volitional": "せんたくしよう", "cond_ba": "せんたくすれば", "cond_tara": "せんたくしたら"},
 },
 
 {
@@ -1556,7 +1837,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1328190',
+  frequency: 23000,
+  forms: [{"word": "手伝う", "info": []}, {"word": "手つだう", "info": []}],
+  meanings: [{"en": "to help; to assist; to aid", "misc": [], "field": []}, {"en": "to contribute to; to be a factor in", "misc": [], "field": []}],
+  conjugations: {"dict": "てつだう", "masu": "てつだいます", "te": "てつだって", "ta": "てつだった", "nai": "てつだわない", "potential": "てつだえる", "passive": "てつだわれる", "causative": "てつだわせる", "volitional": "てつだおう", "cond_ba": "てつだえば", "cond_tara": "てつだったら"},
 },
 
 {
@@ -1581,7 +1867,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: ['vg-n5-00167'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2109290',
+  meanings: [{"en": "to differ; to be different", "misc": [], "field": []}, {"en": "to run counter to", "misc": [], "field": []}, {"en": "to change (into something out of the ordinary)", "misc": [], "field": []}],
+  conjugations: {"dict": "ちがう", "masu": "ちがいます", "te": "ちがって", "ta": "ちがった", "nai": "ちがわない", "potential": "ちがえる", "passive": "ちがわれる", "causative": "ちがわせる", "volitional": "ちがおう", "cond_ba": "ちがえば", "cond_tara": "ちがったら"},
 },
 
 {
@@ -1606,7 +1895,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1202450',
+  frequency: 1000,
+  forms: [{"word": "開ける", "info": []}, {"word": "空ける", "info": []}, {"word": "明ける", "info": []}],
+  meanings: [{"en": "to open (a door, etc.); to unwrap (e.g. parcel, package); to unlock", "misc": [], "field": []}, {"en": "to open (for business, etc.)", "misc": [], "field": []}, {"en": "to empty; to remove; to make space; to make room", "misc": [], "field": []}, {"en": "to move out; to clear out", "misc": [], "field": []}, {"en": "to be away from (e.g. one's house); to leave (temporarily)", "misc": [], "field": []}, {"en": "to dawn; to grow light", "misc": [], "field": []}, {"en": "to end (of a period, season)", "misc": [], "field": []}, {"en": "to begin (of the New Year)", "misc": [], "field": []}, {"en": "to leave (one's schedule) open; to make time (for)", "misc": [], "field": []}, {"en": "to make (a hole); to open up (a hole)", "misc": [], "field": []}],
+  conjugations: {"dict": "あける", "masu": "あけます", "te": "あけて", "ta": "あけた", "nai": "あけない", "potential": "あけられる", "passive": "あけられる", "causative": "あけさせる", "volitional": "あけよう", "cond_ba": "あければ", "cond_tara": "あけたら"},
 },
 
 {
@@ -1631,7 +1925,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1542160',
+  frequency: 12500,
+  meanings: [{"en": "to play (games, sports); to enjoy oneself; to have a good time", "misc": [], "field": []}, {"en": "to mess about (with alcohol, gambling, philandery, etc.)", "misc": [], "field": []}, {"en": "to be idle; to do nothing; to be unused", "misc": [], "field": []}, {"en": "to meet up (with friends); to hang out", "misc": [], "field": []}, {"en": "to give oneself up (to gambling, drinking, etc.)", "misc": [], "field": []}, {"en": "to go to (for pleasure or for study)", "misc": [], "field": []}, {"en": "to tease (someone); to play (with)", "misc": [], "field": []}, {"en": "to intentionally throw a ball to lower the batter's concentration", "misc": [], "field": ["baseball"]}],
+  conjugations: {"dict": "あそぶ", "masu": "あそびます", "te": "あそんで", "ta": "あそんだ", "nai": "あそばない", "potential": "あそべる", "passive": "あそばれる", "causative": "あそばせる", "volitional": "あそぼう", "cond_ba": "あそべば", "cond_tara": "あそんだら"},
 },
 
 {
@@ -1656,7 +1954,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1547450',
+  frequency: 4500,
+  meanings: [{"en": "to dash over oneself (e.g. water); to take (e.g. shower); to bask in (e.g. the sun); to bathe in; to be flooded with (e.g. light); to be covered in", "misc": [], "field": []}, {"en": "to suffer (e.g. an attack); to draw (e.g. criticism, attention, praise); to have heaped upon; to be showered with", "misc": [], "field": []}],
+  conjugations: {"dict": "あびる", "masu": "あびます", "te": "あびて", "ta": "あびた", "nai": "あびない", "potential": "あびられる", "passive": "あびられる", "causative": "あびさせる", "volitional": "あびよう", "cond_ba": "あびれば", "cond_tara": "あびたら"},
 },
 
 {
@@ -1681,7 +1983,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1390930',
+  frequency: 11500,
+  meanings: [{"en": "to wash; to cleanse; to rinse", "misc": [], "field": []}, {"en": "to inquire into; to investigate", "misc": [], "field": []}, {"en": "to purify (one's heart)", "misc": [], "field": []}, {"en": "to lave (e.g. shore); to wash over (e.g. deck); to sweep", "misc": [], "field": []}],
+  conjugations: {"dict": "あらう", "masu": "あらいます", "te": "あらって", "ta": "あらった", "nai": "あらわない", "potential": "あらえる", "passive": "あらわれる", "causative": "あらわせる", "volitional": "あらおう", "cond_ba": "あらえば", "cond_tara": "あらったら"},
 },
 
 {
@@ -1706,7 +2012,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1254600',
+  frequency: 1000,
+  meanings: [{"en": "to do up (hair); to dress; to arrange", "misc": [], "field": []}, {"en": "to tie; to bind; to fasten; to make (a fence)", "misc": [], "field": []}],
+  conjugations: {"dict": "いう", "masu": "いいます", "te": "いって", "ta": "いった", "nai": "いわない", "potential": "いえる", "passive": "いわれる", "causative": "いわせる", "volitional": "いおう", "cond_ba": "いえば", "cond_tara": "いったら"},
 },
 
 {
@@ -1731,7 +2041,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1157500',
+  conjugations: {"dict": "いく", "masu": "いきます", "te": "いいて", "ta": "いいた", "nai": "いかない", "potential": "いける", "passive": "いかれる", "causative": "いかせる", "volitional": "いこう", "cond_ba": "いけば", "cond_tara": "いいたら"},
 },
 
 {
@@ -1756,7 +2068,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1451210',
+  frequency: 1000,
+  meanings: [{"en": "to move; to stir; to shift; to shake; to swing", "misc": [], "field": []}, {"en": "to operate; to run; to go; to work", "misc": [], "field": []}, {"en": "to make a move; to take action; to act; to go into action", "misc": [], "field": []}, {"en": "to be touched; to be influenced", "misc": [], "field": []}, {"en": "to change; to vary; to fluctuate; to waver", "misc": [], "field": []}, {"en": "to be transferred", "misc": [], "field": []}],
+  conjugations: {"dict": "うごく", "masu": "うごきます", "te": "うごいて", "ta": "うごいた", "nai": "うごかない", "potential": "うごける", "passive": "うごかれる", "causative": "うごかせる", "volitional": "うごこう", "cond_ba": "うごけば", "cond_tara": "うごいたら"},
 },
 
 {
@@ -1781,7 +2097,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1378690',
+  frequency: 1000,
+  forms: [{"word": "生まれる", "info": []}, {"word": "産まれる", "info": []}, {"word": "生れる", "info": ["search-only kanji form"]}, {"word": "産れる", "info": ["search-only kanji form"]}],
+  conjugations: {"dict": "うまれる", "masu": "うまれます", "te": "うまれて", "ta": "うまれた", "nai": "うまれない", "potential": "うまれられる", "passive": "うまれられる", "causative": "うまれさせる", "volitional": "うまれよう", "cond_ba": "うまれれば", "cond_tara": "うまれたら"},
 },
 
 {
@@ -1806,7 +2126,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1223640',
+  frequency: 15500,
+  meanings: [{"en": "to get up; to rise; to blaze up (fire)", "misc": [], "field": []}, {"en": "to wake up; to be awake; to stay awake", "misc": [], "field": []}, {"en": "to occur (usu. of unfavourable incidents); to happen; to take place", "misc": [], "field": []}],
+  conjugations: {"dict": "おきる", "masu": "おきます", "te": "おきて", "ta": "おきた", "nai": "おきない", "potential": "おきられる", "passive": "おきられる", "causative": "おきさせる", "volitional": "おきよう", "cond_ba": "おきれば", "cond_tara": "おきたら"},
 },
 
 {
@@ -1831,7 +2155,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1180470',
+  frequency: 4000,
+  forms: [{"word": "押す", "info": []}, {"word": "圧す", "info": ["search-only kanji form"]}, {"word": "捺す", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to push; to thrust; to shove", "misc": [], "field": []}, {"en": "to press (down); to push (e.g. a button); to exert pressure on", "misc": [], "field": []}, {"en": "to stamp (e.g. one's name); to affix (a seal)", "misc": [], "field": []}, {"en": "to affix (e.g. gold leaf)", "misc": [], "field": []}, {"en": "to push (someone for something); to press; to put pressure on (someone)", "misc": [], "field": []}, {"en": "to overwhelm; to overpower; to put (someone) under pressure; to be superior to", "misc": [], "field": []}, {"en": "to push ahead (with a policy, plan, etc.); to proceed; to stick to", "misc": [], "field": []}, {"en": "to do ... in spite of ...; to defy; to brave; to push aside", "misc": [], "field": []}, {"en": "to make sure", "misc": [], "field": []}, {"en": "to fall behind schedule", "misc": [], "field": []}, {"en": "to push; to extend one's stones forward by pushing against opponent's stones", "misc": [], "field": ["go (game)"]}],
+  conjugations: {"dict": "おす", "masu": "おします", "te": "おして", "ta": "おした", "nai": "おさない", "potential": "おせる", "passive": "おされる", "causative": "おさせる", "volitional": "おそう", "cond_ba": "おせば", "cond_tara": "おしたら"},
 },
 
 {
@@ -1856,7 +2185,13 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1589600',
+  frequency: 5500,
+  forms: [{"word": "終わる", "info": []}, {"word": "終る", "info": []}, {"word": "了る", "info": ["kanji jarang dipakai"]}, {"word": "卒る", "info": ["kanji jarang dipakai"]}, {"word": "畢る", "info": ["kanji jarang dipakai"]}, {"word": "竟る", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "to end; to come to an end; to finish; to close; to be over", "misc": [], "field": []}, {"en": "to finish; to complete; to conclude", "misc": [], "field": []}, {"en": "to finish doing", "misc": [], "field": []}, {"en": "to be past its (one's) prime", "misc": ["percakapan kasual"], "field": []}, {"en": "to be awful; to be terrible; to suck; to be hopeless", "misc": ["percakapan kasual"], "field": []}],
+  misc_jm: ["kasual"],
+  conjugations: {"dict": "おわる", "masu": "おわります", "te": "おわって", "ta": "おわった", "nai": "おわらない", "potential": "おわれる", "passive": "おわられる", "causative": "おわらせる", "volitional": "おわろう", "cond_ba": "おわれば", "cond_tara": "おわったら"},
 },
 
 {
@@ -1881,7 +2216,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1221270',
+  frequency: 18500,
+  forms: [{"word": "帰る", "info": []}, {"word": "還る", "info": []}, {"word": "歸る", "info": ["search-only kanji form"]}, {"word": "復る", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to return; to come home; to go home; to go back", "misc": [], "field": []}, {"en": "to leave (of a guest, customer, etc.)", "misc": [], "field": []}, {"en": "to get home; to get to home plate", "misc": [], "field": ["baseball"]}],
+  conjugations: {"dict": "かえる", "masu": "かえります", "te": "かえって", "ta": "かえった", "nai": "かえらない", "potential": "かえれる", "passive": "かえられる", "causative": "かえらせる", "volitional": "かえろう", "cond_ba": "かえれば", "cond_tara": "かえったら"},
 },
 
 {
@@ -1906,7 +2246,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1193110',
+  conjugations: {"dict": "かかる", "masu": "かかります", "te": "かかって", "ta": "かかった", "nai": "かからない", "potential": "かかれる", "passive": "かかられる", "causative": "かからせる", "volitional": "かかろう", "cond_ba": "かかれば", "cond_tara": "かかったら"},
 },
 
 {
@@ -1931,7 +2273,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1189710',
+  conjugations: {"dict": "かく", "masu": "かきます", "te": "かいて", "ta": "かいた", "nai": "かかない", "potential": "かける", "passive": "かかれる", "causative": "かかせる", "volitional": "かこう", "cond_ba": "かけば", "cond_tara": "かいたら"},
 },
 
 {
@@ -1956,7 +2300,13 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1207610',
+  frequency: 10000,
+  forms: [{"word": "掛ける", "info": []}, {"word": "懸ける", "info": []}],
+  meanings: [{"en": "to hang up (e.g. a coat, a picture on the wall); to let hang; to suspend (from); to hoist (e.g. sail); to raise (e.g. flag)", "misc": ["biasanya kana saja"], "field": []}, {"en": "to put on (e.g. a blanket); to put on top of; to cover; to lay; to spread", "misc": ["biasanya kana saja"], "field": []}, {"en": "to put on (glasses, etc.); to wear (a necklace, etc.)", "misc": ["biasanya kana saja"], "field": []}, {"en": "to make (a call)", "misc": ["biasanya kana saja"], "field": []}, {"en": "to spend (time, money); to expend; to use", "misc": ["biasanya kana saja"], "field": []}, {"en": "to pour (liquid) onto; to sprinkle (powder or spices) onto; to splash; to throw (e.g. water) onto", "misc": ["biasanya kana saja"], "field": []}, {"en": "to turn on (an engine, radio, etc.); to set (a dial, alarm clock, etc.); to put on (a DVD, song, etc.); to use (a device, implement, etc.)", "misc": ["biasanya kana saja"], "field": []}, {"en": "to cause (someone inconvenience, trouble, etc.); to burden (someone); to impose", "misc": ["biasanya kana saja"], "field": []}, {"en": "to multiply (arithmetic operation)", "misc": ["biasanya kana saja"], "field": ["mathematics"]}, {"en": "to secure (e.g. lock)", "misc": ["biasanya kana saja"], "field": []}, {"en": "to take a seat; to sit; to rest (something on something else); to support (something on something else)", "misc": ["biasanya kana saja"], "field": []}, {"en": "to bind", "misc": ["biasanya kana saja"], "field": []}, {"en": "to wager; to bet; to risk; to stake; to gamble", "misc": ["biasanya kana saja"], "field": []}, {"en": "to put an effect (spell, anaesthetic, etc.) on", "misc": ["biasanya kana saja"], "field": []}, {"en": "to hold (a play, festival, etc.)", "misc": ["biasanya kana saja"], "field": []}, {"en": "to hold an emotion for (pity, hope, etc.)", "misc": ["biasanya kana saja"], "field": []}, {"en": "to argue (in court); to deliberate (in a meeting); to present (e.g. idea to a conference, etc.)", "misc": ["biasanya kana saja"], "field": []}, {"en": "to increase further", "misc": ["biasanya kana saja"], "field": []}, {"en": "to catch (in a trap, etc.)", "misc": ["biasanya kana saja"], "field": []}, {"en": "to set atop", "misc": ["biasanya kana saja"], "field": []}, {"en": "to erect (a makeshift building)", "misc": ["biasanya kana saja"], "field": []}, {"en": "to apply (insurance)", "misc": ["biasanya kana saja"], "field": []}, {"en": "to pun (on a word); to use (a word) as a pivot word; to play on words", "misc": ["biasanya kana saja"], "field": []}, {"en": "to be partway doing ...; to begin (but not complete) ...; to be about to ...", "misc": ["biasanya kana saja"], "field": []}, {"en": "to address (someone); to direct (something, to someone); to do (something, to someone)", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
+  conjugations: {"dict": "かける", "masu": "かけます", "te": "かけて", "ta": "かけた", "nai": "かけない", "potential": "かけられる", "passive": "かけられる", "causative": "かけさせる", "volitional": "かけよう", "cond_ba": "かければ", "cond_tara": "かけたら"},
 },
 
 {
@@ -1981,7 +2331,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1195720',
+  frequency: 14000,
+  conjugations: {"dict": "かす", "masu": "かします", "te": "かして", "ta": "かした", "nai": "かさない", "potential": "かせる", "passive": "かされる", "causative": "かさせる", "volitional": "かそう", "cond_ba": "かせば", "cond_tara": "かしたら"},
 },
 
 {
@@ -2006,7 +2359,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1511790',
+  frequency: 18500,
+  forms: [{"word": "片付ける", "info": []}, {"word": "片づける", "info": []}, {"word": "嫁ける", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to put in order; to tidy up; to clean up; to put away; to clear away", "misc": [], "field": []}, {"en": "to settle (a matter); to solve; to deal with; to dispose of", "misc": [], "field": []}, {"en": "to finish; to get through; to complete; to get (something) done", "misc": [], "field": []}, {"en": "to marry off (one's daughter)", "misc": [], "field": []}, {"en": "to do away with (someone); to bump off; to kill; to eliminate", "misc": [], "field": []}],
+  conjugations: {"dict": "かたづける", "masu": "かたづけます", "te": "かたづけて", "ta": "かたづけた", "nai": "かたづけない", "potential": "かたづけられる", "passive": "かたづけられる", "causative": "かたづけさせる", "volitional": "かたづけよう", "cond_ba": "かたづければ", "cond_tara": "かたづけたら"},
 },
 
 {
@@ -2031,7 +2389,13 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1484330',
+  frequency: 23000,
+  forms: [{"word": "被る", "info": []}, {"word": "冠る", "info": []}],
+  meanings: [{"en": "to put on (one's head); to wear; to have on; to pull over (one's head); to crown (oneself)", "misc": ["biasanya kana saja"], "field": []}, {"en": "to be covered with (dust, snow, etc.); to pour (water, etc.) on oneself; to dash on oneself; to ship water", "misc": ["biasanya kana saja"], "field": []}, {"en": "to bear (e.g. someone's debts, faults, etc.); to take (blame); to assume (responsibility); to shoulder (burden)", "misc": ["biasanya kana saja"], "field": []}, {"en": "to overlap (e.g. sound or color)", "misc": [], "field": []}, {"en": "to be similar; to be redundant", "misc": [], "field": []}, {"en": "to be fogged (due to overexposure, etc.)", "misc": [], "field": []}, {"en": "to close; to come to an end", "misc": [], "field": []}, {"en": "to get a full house; to sell out", "misc": [], "field": []}, {"en": "to blunder; to bungle; to fail", "misc": ["archaic"], "field": []}, {"en": "to be deceived", "misc": ["archaic"], "field": []}],
+  misc_jm: ["arkais", "biasanya kana saja"],
+  conjugations: {"dict": "かぶる", "masu": "かぶります", "te": "かぶって", "ta": "かぶった", "nai": "かぶらない", "potential": "かぶれる", "passive": "かぶられる", "causative": "かぶらせる", "volitional": "かぶろう", "cond_ba": "かぶれば", "cond_tara": "かぶったら"},
 },
 
 {
@@ -2056,7 +2420,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1323560',
+  frequency: 6500,
+  forms: [{"word": "借りる", "info": []}, {"word": "貸りる", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to borrow", "misc": [], "field": []}, {"en": "to rent; to hire", "misc": [], "field": []}, {"en": "to make use of (another's help, wisdom, etc.); to obtain; to receive", "misc": [], "field": []}, {"en": "to use (for another purpose); to put to a different use", "misc": [], "field": []}],
+  conjugations: {"dict": "かりる", "masu": "かります", "te": "かりて", "ta": "かりた", "nai": "かりない", "potential": "かりられる", "passive": "かりられる", "causative": "かりさせる", "volitional": "かりよう", "cond_ba": "かりれば", "cond_tara": "かりたら"},
 },
 
 {
@@ -2081,7 +2450,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1226210',
+  frequency: 4500,
+  conjugations: {"dict": "きく", "masu": "ききます", "te": "きいて", "ta": "きいた", "nai": "きかない", "potential": "きける", "passive": "きかれる", "causative": "きかせる", "volitional": "きこう", "cond_ba": "きけば", "cond_tara": "きいたら"},
 },
 
 {
@@ -2106,7 +2478,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1304400',
+  frequency: 22000,
+  conjugations: {"dict": "きる", "masu": "きます", "te": "きて", "ta": "きた", "nai": "きない", "potential": "きられる", "passive": "きられる", "causative": "きさせる", "volitional": "きよう", "cond_ba": "きれば", "cond_tara": "きたら"},
 },
 
 {
@@ -2131,7 +2506,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1247040',
+  frequency: 19000,
+  meanings: [{"en": "to reel; to wind; to spin (thread)", "misc": [], "field": []}, {"en": "to turn (pages); to flip through (a book); to leaf through (a book); to consult (a dictionary); to refer to (an encyclopedia)", "misc": [], "field": []}, {"en": "to count (e.g. the days)", "misc": [], "field": []}, {"en": "to open one-by-one; to close one-by-one (e.g. shutters)", "misc": [], "field": []}],
+  conjugations: {"dict": "くる", "masu": "きます", "te": "きて", "ta": "きた", "nai": "こない", "potential": "こられる", "passive": "こられる", "causative": "こさせる", "volitional": "こよう", "cond_ba": "くれば", "cond_tara": "きたら"},
 },
 
 {
@@ -2156,7 +2535,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1350110',
+  frequency: 13500,
+  meanings: [{"en": "to erase; to rub out; to rub off; to cross out; to delete", "misc": [], "field": []}, {"en": "to turn off (a light, TV, heater, etc.); to switch off", "misc": [], "field": []}, {"en": "to extinguish (a fire, candle, etc.); to put out", "misc": [], "field": []}, {"en": "to remove (a smell, pain, etc.); to eliminate; to get rid of; to relieve (pain, anxiety, etc.); to neutralize (poison)", "misc": [], "field": []}, {"en": "to drown out (a sound); to deaden; to absorb; to muffle", "misc": [], "field": []}, {"en": "to kill; to murder; to bump off; to rub out", "misc": ["percakapan kasual"], "field": []}],
+  misc_jm: ["kasual"],
+  conjugations: {"dict": "けす", "masu": "けします", "te": "けして", "ta": "けした", "nai": "けさない", "potential": "けせる", "passive": "けされる", "causative": "けさせる", "volitional": "けそう", "cond_ba": "けせば", "cond_tara": "けしたら"},
 },
 
 {
@@ -2181,7 +2565,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1179810',
+  frequency: 3500,
+  forms: [{"word": "応える", "info": []}, {"word": "報える", "info": ["search-only kanji form"]}, {"word": "徹える", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to respond; to answer; to meet (e.g. demands, expectations)", "misc": [], "field": []}, {"en": "to affect; to take a toll; to strike home; to have an effect on; to be hard on someone (e.g. heat, cold, work, illness, etc.); to be a strain", "misc": [], "field": []}],
+  conjugations: {"dict": "こたえる", "masu": "こたえます", "te": "こたえて", "ta": "こたえた", "nai": "こたえない", "potential": "こたえられる", "passive": "こたえられる", "causative": "こたえさせる", "volitional": "こたえよう", "cond_ba": "こたえれば", "cond_tara": "こたえたら"},
 },
 
 {
@@ -2206,7 +2595,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1352050',
+  frequency: 1000,
+  conjugations: {"dict": "さわる", "masu": "さわります", "te": "さわって", "ta": "さわった", "nai": "さわらない", "potential": "さわれる", "passive": "さわられる", "causative": "さわらせる", "volitional": "さわろう", "cond_ba": "さわれば", "cond_tara": "さわったら"},
 },
 
 {
@@ -2231,7 +2623,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1310730',
+  frequency: 23000,
+  meanings: [{"en": "to die; to pass away", "misc": [], "field": []}, {"en": "to lose spirit; to lose vigor; to look dead", "misc": [], "field": []}, {"en": "to cease; to stop", "misc": [], "field": []}],
+  conjugations: {"dict": "しぬ", "masu": "しにます", "te": "しんで", "ta": "しんだ", "nai": "しなない", "potential": "しねる", "passive": "しなれる", "causative": "しなせる", "volitional": "しのう", "cond_ba": "しねば", "cond_tara": "しんだら"},
 },
 
 {
@@ -2256,7 +2652,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1280820',
+  frequency: 15500,
+  conjugations: {"dict": "しめる", "masu": "しめます", "te": "しめて", "ta": "しめた", "nai": "しめない", "potential": "しめられる", "passive": "しめられる", "causative": "しめさせる", "volitional": "しめよう", "cond_ba": "しめれば", "cond_tara": "しめたら"},
 },
 
 {
@@ -2281,7 +2680,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1335520',
+  frequency: 5500,
+  forms: [{"word": "汁", "info": []}, {"word": "液", "info": []}],
+  meanings: [{"en": "juice; sap", "misc": [], "field": []}, {"en": "soup; broth", "misc": [], "field": []}, {"en": "(dipping) sauce", "misc": [], "field": []}],
+  conjugations: {"dict": "しる", "masu": "しります", "te": "しって", "ta": "しった", "nai": "しらない", "potential": "しれる", "passive": "しられる", "causative": "しらせる", "volitional": "しろう", "cond_ba": "しれば", "cond_tara": "しったら"},
 },
 
 {
@@ -2306,7 +2710,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1295070',
+  frequency: 19000,
+  forms: [{"word": "済む", "info": []}, {"word": "濟む", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to finish; to end; to be completed; to be resolved", "misc": [], "field": []}, {"en": "to have a result less severe than expected", "misc": [], "field": []}, {"en": "to feel at ease", "misc": [], "field": []}, {"en": "to feel unease or guilt for troubling someone; to be sorry", "misc": [], "field": []}],
+  conjugations: {"dict": "すむ", "masu": "すみます", "te": "すんで", "ta": "すんだ", "nai": "すまない", "potential": "すめる", "passive": "すまれる", "causative": "すませる", "volitional": "すもう", "cond_ba": "すめば", "cond_tara": "すんだら"},
 },
 
 {
@@ -2331,7 +2740,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1223700',
+  conjugations: {"dict": "たつ", "masu": "たちます", "te": "たって", "ta": "たった", "nai": "たたない", "potential": "たてる", "passive": "たたれる", "causative": "たたせる", "volitional": "たとう", "cond_ba": "たてば", "cond_tara": "たったら"},
 },
 
 {
@@ -2356,7 +2767,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1358280',
+  frequency: 12500,
+  forms: [{"word": "食べる", "info": []}, {"word": "喰べる", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to eat", "misc": [], "field": []}, {"en": "to live on (e.g. a salary); to live off; to subsist on", "misc": [], "field": []}],
+  conjugations: {"dict": "たべる", "masu": "たべます", "te": "たべて", "ta": "たべた", "nai": "たべない", "potential": "たべられる", "passive": "たべられる", "causative": "たべさせる", "volitional": "たべよう", "cond_ba": "たべれば", "cond_tara": "たべたら"},
 },
 
 {
@@ -2381,7 +2797,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1305990',
+  frequency: 1000,
+  forms: [{"word": "使う", "info": []}, {"word": "遣う", "info": []}],
+  meanings: [{"en": "to use (a tool, method, etc.); to make use of; to put to use", "misc": [], "field": []}, {"en": "to use (a person, animal, puppet, etc.); to employ; to handle; to manage; to manipulate", "misc": [], "field": []}, {"en": "to use (time, money, etc.); to spend; to consume", "misc": [], "field": []}, {"en": "to use (language); to speak", "misc": [], "field": []}],
+  conjugations: {"dict": "つかう", "masu": "つかいます", "te": "つかって", "ta": "つかった", "nai": "つかわない", "potential": "つかえる", "passive": "つかわれる", "causative": "つかわせる", "volitional": "つかおう", "cond_ba": "つかえば", "cond_tara": "つかったら"},
 },
 
 {
@@ -2406,7 +2827,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1597890',
+  frequency: 2000,
+  forms: [{"word": "作る", "info": []}, {"word": "造る", "info": []}, {"word": "創る", "info": []}],
+  meanings: [{"en": "to make; to produce; to manufacture; to build; to construct", "misc": [], "field": []}, {"en": "to prepare (food); to brew (alcohol)", "misc": [], "field": []}, {"en": "to raise; to grow; to cultivate; to train", "misc": [], "field": []}, {"en": "to till", "misc": [], "field": []}, {"en": "to draw up (a document); to make out; to prepare; to write", "misc": [], "field": []}, {"en": "to create (an artistic work, etc.); to compose", "misc": [], "field": []}, {"en": "to coin (a phrase); to organize; to organise; to establish; to found", "misc": [], "field": []}, {"en": "to have (a child)", "misc": [], "field": []}, {"en": "to make up (one's face, etc.)", "misc": [], "field": []}, {"en": "to fabricate (an excuse, etc.)", "misc": [], "field": []}, {"en": "to give a (false) appearance; to feign (a smile, etc.); to put on a show of emotion", "misc": [], "field": []}, {"en": "to form (a line, etc.)", "misc": [], "field": []}, {"en": "to set (a record)", "misc": [], "field": []}, {"en": "to commit (a sin, etc.)", "misc": [], "field": []}],
+  conjugations: {"dict": "つくる", "masu": "つくります", "te": "つくって", "ta": "つくった", "nai": "つくらない", "potential": "つくれる", "passive": "つくられる", "causative": "つくらせる", "volitional": "つくろう", "cond_ba": "つくれば", "cond_tara": "つくったら"},
 },
 
 {
@@ -2431,7 +2857,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1598550',
+  frequency: 14000,
+  forms: [{"word": "出かける", "info": []}, {"word": "出掛ける", "info": []}],
+  meanings: [{"en": "to go out (e.g. on an excursion or outing); to leave; to depart; to start; to set out", "misc": [], "field": []}, {"en": "to be about to leave; to be just going out", "misc": [], "field": []}],
+  conjugations: {"dict": "でかける", "masu": "でかけます", "te": "でかけて", "ta": "でかけた", "nai": "でかけない", "potential": "でかけられる", "passive": "でかけられる", "causative": "でかけさせる", "volitional": "でかけよう", "cond_ba": "でかければ", "cond_tara": "でかけたら"},
 },
 
 {
@@ -2456,7 +2887,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1338240',
+  frequency: 6000,
+  meanings: [{"en": "to leave; to exit; to go out; to come out; to get out", "misc": [], "field": []}, {"en": "to leave (on a journey); to depart; to start out; to set out", "misc": [], "field": []}, {"en": "to move forward", "misc": [], "field": []}, {"en": "to come to; to get to; to lead to; to reach", "misc": [], "field": []}, {"en": "to appear; to come out; to emerge; to surface; to come forth; to turn up; to be found; to be detected; to be discovered; to be exposed; to show; to be exhibited; to be on display", "misc": [], "field": []}, {"en": "to appear (in print); to be published; to be announced; to be issued; to be listed; to come out", "misc": [], "field": []}, {"en": "to attend; to participate; to take part; to enter (an event); to play in; to perform", "misc": [], "field": []}, {"en": "to be stated; to be expressed; to come up; to be brought up; to be raised", "misc": [], "field": []}, {"en": "to sell", "misc": [], "field": []}, {"en": "to exceed; to go over", "misc": [], "field": []}, {"en": "to stick out; to protrude", "misc": [], "field": []}, {"en": "to break out; to occur; to start; to originate", "misc": [], "field": []}, {"en": "to be produced", "misc": [], "field": []}, {"en": "to come from; to be derived from", "misc": [], "field": []}, {"en": "to be given; to get; to receive; to be offered; to be provided; to be presented; to be submitted; to be handed in; to be turned in; to be paid", "misc": [], "field": []}, {"en": "to answer (phone, door, etc.); to get", "misc": [], "field": []}, {"en": "to assume (an attitude); to act; to behave", "misc": [], "field": []}, {"en": "to pick up (speed, etc.); to gain", "misc": [], "field": []}, {"en": "to flow (e.g. tears); to run; to bleed", "misc": [], "field": []}, {"en": "to graduate", "misc": [], "field": []}, {"en": "to ejaculate; to cum", "misc": ["vulgar expression or word"], "field": []}],
+  misc_jm: ["vulgar expression or word"],
+  conjugations: {"dict": "でる", "masu": "でます", "te": "でて", "ta": "でた", "nai": "でない", "potential": "でられる", "passive": "でられる", "causative": "でさせる", "volitional": "でよう", "cond_ba": "でれば", "cond_tara": "でたら"},
 },
 
 {
@@ -2481,7 +2917,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1429700',
+  frequency: 10500,
+  forms: [{"word": "飛ぶ", "info": []}, {"word": "跳ぶ", "info": []}, {"word": "翔ぶ", "info": ["word containing out-dated kanji or kanji usage"]}],
+  meanings: [{"en": "to fly; to soar", "misc": [], "field": []}, {"en": "to jump; to leap; to spring; to bound; to hop", "misc": [], "field": []}, {"en": "to spatter; to scatter; to splash; to fly (e.g. of sparks)", "misc": [], "field": []}, {"en": "to hurry; to rush", "misc": [], "field": []}, {"en": "to flee; to run off; to escape", "misc": [], "field": []}, {"en": "to disappear; to vanish; to fade; to thin out", "misc": [], "field": []}, {"en": "to break off; to come off; to fall off; to blow (of a fuse)", "misc": [], "field": []}, {"en": "to be sent out (of an order); to fly (of false rumours, catcalls, etc.)", "misc": [], "field": []}, {"en": "to come flying (of a punch, kick, etc.)", "misc": [], "field": []}, {"en": "to be missing (of a page, stitch, etc.); to skip; to jump (e.g. of a conversation)", "misc": [], "field": []}],
+  conjugations: {"dict": "とぶ", "masu": "とびます", "te": "とんで", "ta": "とんだ", "nai": "とばない", "potential": "とべる", "passive": "とばれる", "causative": "とばせる", "volitional": "とぼう", "cond_ba": "とべば", "cond_tara": "とんだら"},
 },
 
 {
@@ -2506,7 +2947,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1310620',
+  frequency: 6500,
+  forms: [{"word": "止まる", "info": []}, {"word": "留まる", "info": []}, {"word": "停まる", "info": []}, {"word": "駐まる", "info": []}, {"word": "止る", "info": []}, {"word": "留る", "info": []}],
+  meanings: [{"en": "to stop (moving); to come to a stop", "misc": [], "field": []}, {"en": "to stop (doing, working, being supplied); to come to a halt; to cease; to be stopped; to be suspended", "misc": [], "field": []}, {"en": "to alight; to perch on", "misc": [], "field": []}],
+  conjugations: {"dict": "とまる", "masu": "とまります", "te": "とまって", "ta": "とまった", "nai": "とまらない", "potential": "とまれる", "passive": "とまられる", "causative": "とまらせる", "volitional": "とまろう", "cond_ba": "とまれば", "cond_tara": "とまったら"},
 },
 
 {
@@ -2531,7 +2977,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1298790',
+  frequency: 11000,
+  forms: [{"word": "撮る", "info": []}, {"word": "録る", "info": []}],
+  meanings: [{"en": "to take (a photograph)", "misc": [], "field": []}, {"en": "to record (audio or video); to film; to shoot", "misc": [], "field": []}],
+  conjugations: {"dict": "とる", "masu": "とります", "te": "とって", "ta": "とった", "nai": "とらない", "potential": "とれる", "passive": "とられる", "causative": "とらせる", "volitional": "とろう", "cond_ba": "とれば", "cond_tara": "とったら"},
 },
 
 {
@@ -2556,7 +3007,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1229840',
+  frequency: 1000,
+  meanings: [{"en": "to cry; to shed tears; to weep; to sob", "misc": [], "field": []}, {"en": "to suffer (from); to be troubled (by); to face hardship", "misc": [], "field": []}, {"en": "to accept (an unreasonable request, loss, etc.); to do reluctantly; to make sacrifices", "misc": [], "field": []}, {"en": "to be not worth the name; to suffer (of a reputation); to be spoiled; to be put to shame", "misc": [], "field": []}, {"en": "to lament; to bemoan; to bewail", "misc": [], "field": []}],
+  conjugations: {"dict": "なく", "masu": "なきます", "te": "ないて", "ta": "ないた", "nai": "なかない", "potential": "なける", "passive": "なかれる", "causative": "なかせる", "volitional": "なこう", "cond_ba": "なけば", "cond_tara": "ないたら"},
 },
 
 {
@@ -2581,7 +3036,13 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1529530',
+  frequency: 1000,
+  forms: [{"word": "無くす", "info": []}, {"word": "失くす", "info": ["word containing irregular kanji usage"]}],
+  meanings: [{"en": "to lose (something)", "misc": ["biasanya kana saja"], "field": []}, {"en": "to get rid of; to eliminate; to remove; to eradicate; to abolish", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
+  conjugations: {"dict": "なくす", "masu": "なくします", "te": "なくして", "ta": "なくした", "nai": "なくさない", "potential": "なくせる", "passive": "なくされる", "causative": "なくさせる", "volitional": "なくそう", "cond_ba": "なくせば", "cond_tara": "なくしたら"},
 },
 
 {
@@ -2606,7 +3067,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1333070',
+  frequency: 21000,
+  conjugations: {"dict": "ならう", "masu": "ならいます", "te": "ならって", "ta": "ならった", "nai": "ならわない", "potential": "ならえる", "passive": "ならわれる", "causative": "ならわせる", "volitional": "ならおう", "cond_ba": "ならえば", "cond_tara": "ならったら"},
 },
 
 {
@@ -2631,7 +3095,13 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1375610',
+  frequency: 17000,
+  forms: [{"word": "成る", "info": []}, {"word": "為る", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "to become; to get; to grow; to turn; to reach; to attain", "misc": ["biasanya kana saja"], "field": []}, {"en": "to result in; to turn out; to end up; to prove (to be)", "misc": ["biasanya kana saja"], "field": []}, {"en": "to consist of; to be composed of; to be made up of", "misc": ["biasanya kana saja"], "field": []}, {"en": "to be completed; to be realized; to succeed; to be attained; to be accomplished", "misc": ["biasanya kana saja"], "field": []}, {"en": "to change (into); to turn (into); to transform", "misc": ["biasanya kana saja"], "field": []}, {"en": "to come (to do); to begin (to do); to grow (to do)", "misc": ["biasanya kana saja"], "field": []}, {"en": "to come to; to amount to; to add up to; to make", "misc": ["biasanya kana saja"], "field": []}, {"en": "to play (the part of); to act as", "misc": ["biasanya kana saja"], "field": []}, {"en": "to be used for; to be useful for; to serve as", "misc": ["biasanya kana saja"], "field": []}, {"en": "to be promoted", "misc": [], "field": ["shogi"]}, {"en": "to do ...", "misc": ["honorific or respectful (sonkeigo) language", "biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja", "honorific or respectful (sonkeigo) language"],
+  conjugations: {"dict": "なる", "masu": "なります", "te": "なって", "ta": "なった", "nai": "ならない", "potential": "なれる", "passive": "なられる", "causative": "ならせる", "volitional": "なろう", "cond_ba": "なれば", "cond_tara": "なったら"},
 },
 
 {
@@ -2656,7 +3126,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1416400',
+  frequency: 22000,
+  conjugations: {"dict": "ぬぐ", "masu": "ぬぎます", "te": "ぬいで", "ta": "ぬいだ", "nai": "ぬがない", "potential": "ぬげる", "passive": "ぬがれる", "causative": "ぬがせる", "volitional": "ぬごう", "cond_ba": "ぬげば", "cond_tara": "ぬいだら"},
 },
 
 {
@@ -2681,7 +3154,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1169870',
+  frequency: 20000,
+  forms: [{"word": "飲む", "info": []}, {"word": "呑む", "info": []}, {"word": "飮む", "info": ["search-only kanji form"]}, {"word": "吞む", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to drink; to swallow; to take (medicine)", "misc": [], "field": []}, {"en": "to smoke (tobacco)", "misc": [], "field": []}, {"en": "to swallow up; to engulf", "misc": [], "field": []}, {"en": "to suppress (one's anger, bitter feelings, etc.); to keep down; to hold back; to swallow (one's tears); to catch (one's breath)", "misc": [], "field": []}, {"en": "to accept (a demand, conditions, etc.); to agree to", "misc": [], "field": []}, {"en": "to make light of (someone); to think nothing of; to overwhelm; to overawe", "misc": [], "field": []}, {"en": "to carry (a concealed dagger, etc.); to conceal (up one's sleeve, etc.)", "misc": [], "field": []}],
+  conjugations: {"dict": "のむ", "masu": "のみます", "te": "のんで", "ta": "のんだ", "nai": "のまない", "potential": "のめる", "passive": "のまれる", "causative": "のませる", "volitional": "のもう", "cond_ba": "のめば", "cond_tara": "のんだら"},
 },
 
 {
@@ -2706,7 +3184,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1355120',
+  frequency: 10500,
+  forms: [{"word": "乗る", "info": []}, {"word": "乘る", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to get on (train, plane, bus, ship, etc.); to get in; to board; to take; to embark", "misc": [], "field": []}, {"en": "to get on (e.g. a footstool); to step on; to jump on; to sit on; to mount", "misc": [], "field": []}, {"en": "to reach; to go over; to pass", "misc": [], "field": []}, {"en": "to follow; to stay (on track); to go with (the times, etc.)", "misc": [], "field": []}, {"en": "to take part; to participate; to join", "misc": [], "field": []}, {"en": "to get into the swing (and sing, dance, etc.)", "misc": [], "field": []}, {"en": "to be deceived; to be taken in", "misc": [], "field": []}, {"en": "to be carried; to be spread; to be scattered", "misc": [], "field": []}, {"en": "to stick; to attach; to take; to go on", "misc": [], "field": []}],
+  conjugations: {"dict": "のる", "masu": "のります", "te": "のって", "ta": "のった", "nai": "のらない", "potential": "のれる", "passive": "のられる", "causative": "のらせる", "volitional": "のろう", "cond_ba": "のれば", "cond_tara": "のったら"},
 },
 
 {
@@ -2731,7 +3214,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1465590',
+  frequency: 12500,
+  forms: [{"word": "入る", "info": []}, {"word": "這入る", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "to enter; to come in; to go in; to get in; to arrive", "misc": [], "field": []}, {"en": "to join (a club, company, etc.); to enter (a university, the army, etc.); to enroll (in); to go into (e.g. politics); to get into", "misc": [], "field": []}, {"en": "to be contained (in); to be included (in); to be inside (e.g. a box); to come under (a heading); to belong (in a category)", "misc": [], "field": []}, {"en": "to (be able to) fit (in a container, building, etc.); to be (able to be) held; to be (able to be) accommodated", "misc": [], "field": []}, {"en": "to be introduced; to be brought in; to be installed", "misc": [], "field": []}, {"en": "to be received; to be obtained", "misc": [], "field": []}, {"en": "to be scored (of points); to be won (of votes)", "misc": [], "field": []}, {"en": "to turn on; to start functioning; to start working", "misc": [], "field": []}, {"en": "to enter (a month, season, etc.); to reach (e.g. a climax); to get to (e.g. the main topic); to enter into (e.g. negotiations); to start (doing); to begin", "misc": [], "field": []}, {"en": "to form (of a crack, fissure, etc.); to develop", "misc": [], "field": []}, {"en": "to be put in (of effort, spirit, feeling, etc.); to be applied (e.g. of strength)", "misc": [], "field": []}, {"en": "to be ready (of tea, coffee, etc.); to be made", "misc": [], "field": []}, {"en": "to enter the body (of alcohol); to become drunk", "misc": [], "field": []}],
+  conjugations: {"dict": "はいる", "masu": "はいります", "te": "はいって", "ta": "はいった", "nai": "はいらない", "potential": "はいれる", "passive": "はいられる", "causative": "はいらせる", "volitional": "はいろう", "cond_ba": "はいれば", "cond_tara": "はいったら"},
 },
 
 {
@@ -2756,7 +3244,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1399760',
+  frequency: 1000,
+  meanings: [{"en": "to sweep; to brush; to clean", "misc": [], "field": []}, {"en": "to gather silkworms", "misc": [], "field": []}],
+  conjugations: {"dict": "はく", "masu": "はきます", "te": "はいて", "ta": "はいた", "nai": "はかない", "potential": "はける", "passive": "はかれる", "causative": "はかせる", "volitional": "はこう", "cond_ba": "はけば", "cond_tara": "はいたら"},
 },
 
 {
@@ -2781,7 +3273,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1402540',
+  frequency: 5000,
+  forms: [{"word": "走る", "info": []}, {"word": "奔る", "info": ["kanji jarang dipakai"]}, {"word": "疾る", "info": ["kanji jarang dipakai"]}, {"word": "趨る", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "to run", "misc": [], "field": []}, {"en": "to run (of a vehicle); to drive; to travel; to move; to sail", "misc": [], "field": []}, {"en": "to rush (to); to dash; to race", "misc": [], "field": []}, {"en": "to retreat; to flee; to defect (to)", "misc": [], "field": []}, {"en": "to run away; to abscond; to elope", "misc": [], "field": []}, {"en": "to flash (of lightning); to streak; to shoot (through; e.g. of pain); to run (through); to flare; to flit (e.g. across one's face); to spread quickly (of news, shock, etc.)", "misc": [], "field": []}, {"en": "to go (e.g. bad, to extremes); to become; to turn; to take to (e.g. crime); to get carried away by (e.g. one's emotions); to get involved in; to get wrapped up in", "misc": [], "field": []}, {"en": "to run (through; of a road, street, etc.); to extend (e.g. of a mountain range); to stretch; to lie", "misc": [], "field": []}],
+  conjugations: {"dict": "はしる", "masu": "はしります", "te": "はしって", "ta": "はしった", "nai": "はしらない", "potential": "はしれる", "passive": "はしられる", "causative": "はしらせる", "volitional": "はしろう", "cond_ba": "はしれば", "cond_tara": "はしったら"},
 },
 
 {
@@ -2806,7 +3303,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1516460',
+  frequency: 22500,
+  meanings: [{"en": "to release; to let go; to free; to set free; to let loose; to turn loose", "misc": [], "field": []}, {"en": "to add (pieces of eggplant, potato, etc.) to water, broth, etc.", "misc": [], "field": []}],
+  conjugations: {"dict": "はなす", "masu": "はなします", "te": "はなして", "ta": "はなした", "nai": "はなさない", "potential": "はなせる", "passive": "はなされる", "causative": "はなさせる", "volitional": "はなそう", "cond_ba": "はなせば", "cond_tara": "はなしたら"},
 },
 
 {
@@ -2831,7 +3332,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1341000',
+  frequency: 500,
+  meanings: [{"en": "spring; springtime", "misc": [], "field": []}, {"en": "New Year", "misc": [], "field": []}, {"en": "prime (of life); height (of one's prosperity); heyday", "misc": [], "field": []}, {"en": "adolescence; puberty", "misc": [], "field": []}, {"en": "sexuality; sexual desire", "misc": [], "field": []}],
+  conjugations: {"dict": "はる", "masu": "はります", "te": "はって", "ta": "はった", "nai": "はらない", "potential": "はれる", "passive": "はられる", "causative": "はらせる", "volitional": "はろう", "cond_ba": "はれば", "cond_tara": "はったら"},
 },
 
 {
@@ -2856,7 +3361,13 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1169250',
+  frequency: 1000,
+  forms: [{"word": "引く", "info": []}, {"word": "曳く", "info": []}, {"word": "牽く", "info": []}],
+  meanings: [{"en": "to pull; to tug; to lead (e.g. a horse)", "misc": [], "field": []}, {"en": "to draw (attention, sympathy, etc.); to attract (e.g. interest)", "misc": [], "field": []}, {"en": "to draw back (e.g. one's hand); to draw in (one's chin, stomach, etc.); to pull in", "misc": [], "field": []}, {"en": "to draw (a card, mahjong tile, etc.)", "misc": [], "field": []}, {"en": "to draw (a line, plan, etc.)", "misc": [], "field": []}, {"en": "to catch (a cold)", "misc": [], "field": []}, {"en": "to play (a stringed or keyboard instrument)", "misc": [], "field": []}, {"en": "to look up (in a dictionary, phone book, etc.); to consult; to check", "misc": [], "field": []}, {"en": "to haul; to pull (vehicles)", "misc": [], "field": []}, {"en": "to subtract; to deduct", "misc": [], "field": []}, {"en": "to recede; to ebb; to fade", "misc": [], "field": []}, {"en": "to be descend from; to inherit (a characteristic)", "misc": [], "field": []}, {"en": "to quote; to cite; to raise (as evidence)", "misc": [], "field": []}, {"en": "to lay on (electricity, gas, etc.); to install (e.g. a telephone); to supply (e.g. water)", "misc": [], "field": []}, {"en": "to hold (e.g. a note)", "misc": [], "field": []}, {"en": "to apply (e.g. lipstick); to oil (e.g. a pan); to wax (e.g. a floor)", "misc": [], "field": []}, {"en": "to move back; to draw back; to recede; to fall back; to retreat", "misc": [], "field": []}, {"en": "to lessen; to subside; to ebb; to go down (e.g. of swelling)", "misc": [], "field": []}, {"en": "to resign; to retire; to quit", "misc": [], "field": []}, {"en": "to be put off (by someone's words or behaviour); to be turned off; to recoil (in disgust, etc.); to cringe", "misc": ["percakapan kasual"], "field": []}],
+  misc_jm: ["kasual"],
+  conjugations: {"dict": "ひく", "masu": "ひきます", "te": "ひいて", "ta": "ひいた", "nai": "ひかない", "potential": "ひける", "passive": "ひかれる", "causative": "ひかせる", "volitional": "ひこう", "cond_ba": "ひけば", "cond_tara": "ひいたら"},
 },
 
 {
@@ -2881,7 +3392,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1265060',
+  forms: [{"word": "古", "info": []}, {"word": "故", "info": ["kanji jarang dipakai"]}, {"word": "旧", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "used item; secondhand item", "misc": [], "field": []}, {"en": "old; used; previous", "misc": [], "field": []}],
+  conjugations: {"dict": "ふる", "masu": "ふります", "te": "ふって", "ta": "ふった", "nai": "ふらない", "potential": "ふれる", "passive": "ふられる", "causative": "ふらせる", "volitional": "ふろう", "cond_ba": "ふれば", "cond_tara": "ふったら"},
 },
 
 {
@@ -2906,7 +3421,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1239730',
+  frequency: 14000,
+  forms: [{"word": "曲がる", "info": []}, {"word": "曲る", "info": []}],
+  meanings: [{"en": "to bend; to curve; to warp; to wind; to twist", "misc": [], "field": []}, {"en": "to turn", "misc": [], "field": []}, {"en": "to be awry; to be askew; to be crooked", "misc": [], "field": []}],
+  conjugations: {"dict": "まがる", "masu": "まがります", "te": "まがって", "ta": "まがった", "nai": "まがらない", "potential": "まがれる", "passive": "まがられる", "causative": "まがらせる", "volitional": "まがろう", "cond_ba": "まがれば", "cond_tara": "まがったら"},
 },
 
 {
@@ -2931,7 +3451,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1349860',
+  frequency: 2000,
+  meanings: [{"en": "pine tree (Pinus spp.)", "misc": [], "field": []}, {"en": "highest (of a three-tier ranking system)", "misc": [], "field": []}],
+  conjugations: {"dict": "まつ", "masu": "まちます", "te": "まって", "ta": "まった", "nai": "またない", "potential": "まてる", "passive": "またれる", "causative": "またせる", "volitional": "まとう", "cond_ba": "まてば", "cond_tara": "まったら"},
 },
 
 {
@@ -2956,7 +3480,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1259210',
+  frequency: 17500,
+  forms: [{"word": "見せる", "info": []}, {"word": "観せる", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to show; to display", "misc": [], "field": []}, {"en": "to make (something or someone) look ...; to present an appearance of ...", "misc": [], "field": []}, {"en": "to make (something) worth watching; to be entertaining", "misc": [], "field": []}, {"en": "to have (something) looked at (by a specialist); to have (an antique, etc.) appraised", "misc": [], "field": []}, {"en": "to have (an injury, person, etc.) looked at (by a doctor); to take (someone) to a doctor", "misc": [], "field": []}, {"en": "to make a show of (doing); to do in a conspicuous manner; to do in view of others", "misc": [], "field": []}, {"en": "to resolve to do; to do at any cost; to show others that one will ...", "misc": [], "field": []}],
+  conjugations: {"dict": "みせる", "masu": "みせます", "te": "みせて", "ta": "みせた", "nai": "みせない", "potential": "みせられる", "passive": "みせられる", "causative": "みせさせる", "volitional": "みせよう", "cond_ba": "みせれば", "cond_tara": "みせたら"},
 },
 
 {
@@ -2981,7 +3510,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1253190',
+  frequency: 12000,
+  forms: [{"word": "迎える", "info": []}, {"word": "邀える", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "to go out to meet; to receive; to welcome; to greet; to salute; to hail", "misc": [], "field": []}, {"en": "to call for; to summon; to invite", "misc": [], "field": []}, {"en": "to accept (e.g. as a member of a group or family); to take (e.g. a wife)", "misc": [], "field": []}, {"en": "to reach (a certain time, a point in one's life, etc.); to enter (a new phase, new era, etc.); to approach (e.g. death)", "misc": [], "field": []}],
+  conjugations: {"dict": "むかえる", "masu": "むかえます", "te": "むかえて", "ta": "むかえた", "nai": "むかえない", "potential": "むかえられる", "passive": "むかえられる", "causative": "むかえさせる", "volitional": "むかえよう", "cond_ba": "むかえれば", "cond_tara": "むかえたら"},
 },
 
 {
@@ -3006,7 +3540,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1315720',
+  frequency: 4000,
+  meanings: [{"en": "to hold (in one's hand); to take; to carry", "misc": [], "field": []}, {"en": "to possess; to have; to own", "misc": [], "field": []}, {"en": "to maintain; to keep", "misc": [], "field": []}, {"en": "to last; to be durable; to keep; to survive", "misc": [], "field": []}, {"en": "to take charge of; to be in charge of", "misc": [], "field": []}, {"en": "to hold (meeting, etc.); to have (opportunity, etc.)", "misc": [], "field": []}, {"en": "to have \"it\"; to have that special something; to be blessed with good luck", "misc": ["percakapan kasual"], "field": []}],
+  misc_jm: ["kasual"],
+  conjugations: {"dict": "もつ", "masu": "もちます", "te": "もって", "ta": "もった", "nai": "もたない", "potential": "もてる", "passive": "もたれる", "causative": "もたせる", "volitional": "もとう", "cond_ba": "もてば", "cond_tara": "もったら"},
 },
 
 {
@@ -3031,7 +3570,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1227560',
+  frequency: 10000,
+  meanings: [{"en": "to be absent; to take a day off", "misc": [], "field": []}, {"en": "to rest; to have a break", "misc": [], "field": []}, {"en": "to go to bed; to (lie down to) sleep; to turn in; to retire", "misc": [], "field": []}, {"en": "to stop doing some ongoing activity for a time; to suspend business", "misc": [], "field": []}],
+  conjugations: {"dict": "やすむ", "masu": "やすみます", "te": "やすんで", "ta": "やすんだ", "nai": "やすまない", "potential": "やすめる", "passive": "やすまれる", "causative": "やすませる", "volitional": "やすもう", "cond_ba": "やすめば", "cond_tara": "やすんだら"},
 },
 
 {
@@ -3056,7 +3599,13 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1266440',
+  frequency: 1000,
+  forms: [{"word": "呼ぶ", "info": []}, {"word": "喚ぶ", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "to call out (to); to call; to invoke", "misc": [], "field": []}, {"en": "to summon (a doctor, etc.)", "misc": [], "field": []}, {"en": "to invite", "misc": [], "field": []}, {"en": "to designate; to name; to brand", "misc": [], "field": []}, {"en": "to garner (support, etc.); to gather", "misc": [], "field": []}, {"en": "to take as one's wife", "misc": ["archaic"], "field": []}],
+  misc_jm: ["arkais"],
+  conjugations: {"dict": "よぶ", "masu": "よびます", "te": "よんで", "ta": "よんだ", "nai": "よばない", "potential": "よべる", "passive": "よばれる", "causative": "よばせる", "volitional": "よぼう", "cond_ba": "よべば", "cond_tara": "よんだら"},
 },
 
 {
@@ -3081,7 +3630,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1174820',
+  frequency: 17500,
+  meanings: [{"en": "to compose (a Japanese poem); to write; to use as the theme of a poem", "misc": [], "field": []}, {"en": "to recite (e.g. a poem); to chant; to intone", "misc": [], "field": []}],
+  conjugations: {"dict": "よむ", "masu": "よみます", "te": "よんで", "ta": "よんだ", "nai": "よまない", "potential": "よめる", "passive": "よまれる", "causative": "よませる", "volitional": "よもう", "cond_ba": "よめば", "cond_tara": "よんだら"},
 },
 
 {
@@ -3106,7 +3659,13 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1606560',
+  frequency: 19500,
+  forms: [{"word": "分かる", "info": []}, {"word": "解る", "info": []}, {"word": "判る", "info": []}, {"word": "分る", "info": []}, {"word": "理解る", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to understand; to comprehend; to grasp; to see; to get; to follow", "misc": ["biasanya kana saja"], "field": []}, {"en": "to become clear; to be known; to be discovered; to be realized (realised); to be found out; to make sense", "misc": ["biasanya kana saja"], "field": []}, {"en": "I know!; I think so too!", "misc": [], "field": []}],
+  misc_jm: ["biasanya kana saja"],
+  conjugations: {"dict": "わかる", "masu": "わかります", "te": "わかって", "ta": "わかった", "nai": "わからない", "potential": "わかれる", "passive": "わかられる", "causative": "わからせる", "volitional": "わかろう", "cond_ba": "わかれば", "cond_tara": "わかったら"},
 },
 
 {
@@ -3131,7 +3690,13 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1444680',
+  frequency: 20500,
+  forms: [{"word": "渡る", "info": []}, {"word": "亘る", "info": ["search-only kanji form"]}, {"word": "渉る", "info": ["search-only kanji form"]}, {"word": "亙る", "info": ["search-only kanji form"]}, {"word": "弥る", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to cross over; to go across", "misc": [], "field": []}, {"en": "to extend; to cover; to range; to span", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
+  conjugations: {"dict": "わたる", "masu": "わたります", "te": "わたって", "ta": "わたった", "nai": "わたらない", "potential": "わたれる", "passive": "わたられる", "causative": "わたらせる", "volitional": "わたろう", "cond_ba": "わたれば", "cond_tara": "わたったら"},
 },
 
 {
@@ -3156,7 +3721,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1589350',
+  frequency: 1000,
+  forms: [{"word": "思う", "info": []}, {"word": "想う", "info": []}, {"word": "憶う", "info": ["kanji jarang dipakai"]}, {"word": "念う", "info": ["kanji jarang dipakai"]}, {"word": "懐う", "info": ["search-only kanji form"]}, {"word": "惟う", "info": ["search-only kanji form"]}, {"word": "意う", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to think; to consider; to believe; to reckon", "misc": [], "field": []}, {"en": "to think (of doing); to plan (to do)", "misc": [], "field": []}, {"en": "to judge; to assess; to regard", "misc": [], "field": []}, {"en": "to imagine; to suppose; to dream", "misc": [], "field": []}, {"en": "to expect; to look forward to", "misc": [], "field": []}, {"en": "to feel; to be (in a state of mind); to desire; to want", "misc": [], "field": []}, {"en": "to care (deeply) for; to yearn for; to worry about; to love", "misc": [], "field": []}, {"en": "to recall; to remember", "misc": [], "field": []}],
+  conjugations: {"dict": "おもう", "masu": "おもいます", "te": "おもって", "ta": "おもった", "nai": "おもわない", "potential": "おもえる", "passive": "おもわれる", "causative": "おもわせる", "volitional": "おもおう", "cond_ba": "おもえば", "cond_tara": "おもったら"},
 },
 
 {
@@ -3181,7 +3751,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1339500',
+  conjugations: {"dict": "できる", "masu": "できます", "te": "できて", "ta": "できた", "nai": "できない", "potential": "できられる", "passive": "できられる", "causative": "できさせる", "volitional": "できよう", "cond_ba": "できれば", "cond_tara": "できたら"},
 },
 
 {
@@ -3206,7 +3778,13 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1198180',
+  frequency: 17000,
+  forms: [{"word": "会う", "info": []}, {"word": "逢う", "info": []}, {"word": "遭う", "info": []}, {"word": "遇う", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "to meet; to encounter; to see", "misc": [], "field": []}, {"en": "to have an accident; to have a bad experience", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
+  conjugations: {"dict": "あう", "masu": "あいます", "te": "あって", "ta": "あった", "nai": "あわない", "potential": "あえる", "passive": "あわれる", "causative": "あわせる", "volitional": "あおう", "cond_ba": "あえば", "cond_tara": "あったら"},
 },
 
 {
@@ -3231,7 +3809,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1454500',
+  frequency: 12500,
+  meanings: [{"en": "to be able to ...; can ...", "misc": [], "field": []}, {"en": "to get; to acquire; to obtain; to procure; to earn; to win; to gain; to secure; to attain", "misc": ["formal or literary term"], "field": []}],
+  misc_jm: ["formal or literary term"],
+  conjugations: {"dict": "うる", "masu": "うります", "te": "うって", "ta": "うった", "nai": "うらない", "potential": "うれる", "passive": "うられる", "causative": "うらせる", "volitional": "うろう", "cond_ba": "うれば", "cond_tara": "うったら"},
 },
 
 {
@@ -3256,7 +3839,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1402730',
+  frequency: 3000,
+  meanings: [{"en": "to send; to dispatch; to forward; to transmit; to ship; to remit", "misc": [], "field": []}, {"en": "to see (someone) off; to escort; to accompany; to take", "misc": [], "field": []}, {"en": "to bid farewell to (the departed); to say goodbye to; to bury", "misc": [], "field": []}, {"en": "to spend (time); to pass; to lead (a life); to live", "misc": [], "field": []}, {"en": "to pass (on, along); to advance (a runner)", "misc": [], "field": []}, {"en": "to affix (okurigana)", "misc": [], "field": []}],
+  conjugations: {"dict": "おくる", "masu": "おくります", "te": "おくって", "ta": "おくった", "nai": "おくらない", "potential": "おくれる", "passive": "おくられる", "causative": "おくらせる", "volitional": "おくろう", "cond_ba": "おくれば", "cond_tara": "おくったら"},
 },
 
 {
@@ -3281,7 +3868,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1380040',
+  frequency: 12500,
+  meanings: [{"en": "concentration; diligence; devotion", "misc": [], "field": []}, {"en": "asceticism; zeal in one's quest for enlightenment", "misc": [], "field": ["Buddhism"]}, {"en": "adherence to a vegetarian diet", "misc": [], "field": []}],
+  conjugations: {"dict": "そうじ", "masu": "そうじします", "te": "そうじして", "ta": "そうじした", "nai": "そうじしない", "potential": "そうじできる", "passive": "そうじされる", "causative": "そうじさせる", "volitional": "そうじしよう", "cond_ba": "そうじすれば", "cond_tara": "そうじしたら"},
 },
 
 {
@@ -3306,7 +3897,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1390980',
+  frequency: 4500,
+  forms: [{"word": "洗濯", "info": []}, {"word": "洗たく", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "washing; laundry", "misc": [], "field": []}, {"en": "relaxation; rejuvenation; melting away (of worries, fatigue, etc.)", "misc": [], "field": []}],
+  conjugations: {"dict": "せんたく", "masu": "せんたくします", "te": "せんたくして", "ta": "せんたくした", "nai": "せんたくしない", "potential": "せんたくできる", "passive": "せんたくされる", "causative": "せんたくさせる", "volitional": "せんたくしよう", "cond_ba": "せんたくすれば", "cond_tara": "せんたくしたら"},
 },
 
 {
@@ -3331,7 +3927,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1554310',
+  frequency: 1000,
+  meanings: [{"en": "cooking; cookery; cuisine; food; dish", "misc": [], "field": []}, {"en": "dealing with (skillfully); handling (well); managing", "misc": [], "field": []}],
+  conjugations: {"dict": "りょうり", "masu": "りょうりします", "te": "りょうりして", "ta": "りょうりした", "nai": "りょうりしない", "potential": "りょうりできる", "passive": "りょうりされる", "causative": "りょうりさせる", "volitional": "りょうりしよう", "cond_ba": "りょうりすれば", "cond_tara": "りょうりしたら"},
 },
 
 {
@@ -3356,7 +3956,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1589730',
+  frequency: 3000,
+  forms: [{"word": "買い物", "info": []}, {"word": "買物", "info": []}, {"word": "買いもの", "info": ["search-only kanji form"]}, {"word": "買いもん", "info": ["search-only kanji form"]}],
+  conjugations: {"dict": "かいもの", "masu": "かいものします", "te": "かいものして", "ta": "かいものした", "nai": "かいものしない", "potential": "かいものできる", "passive": "かいものされる", "causative": "かいものさせる", "volitional": "かいものしよう", "cond_ba": "かいものすれば", "cond_tara": "かいものしたら"},
 },
 
 {
@@ -3381,7 +3985,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1303620',
+  frequency: 5000,
+  forms: [{"word": "散歩", "info": []}, {"word": "散步", "info": ["search-only kanji form"]}],
+  conjugations: {"dict": "さんぽ", "masu": "さんぽします", "te": "さんぽして", "ta": "さんぽした", "nai": "さんぽしない", "potential": "さんぽできる", "passive": "さんぽされる", "causative": "さんぽさせる", "volitional": "さんぽしよう", "cond_ba": "さんぽすれば", "cond_tara": "さんぽしたら"},
 },
 
 {
@@ -3406,7 +4014,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1553170',
+  frequency: 1000,
+  conjugations: {"dict": "りょこう", "masu": "りょこうします", "te": "りょこうして", "ta": "りょこうした", "nai": "りょこうしない", "potential": "りょこうできる", "passive": "りょこうされる", "causative": "りょこうさせる", "volitional": "りょこうしよう", "cond_ba": "りょこうすれば", "cond_tara": "りょこうしたら"},
 },
 
 {
@@ -3431,7 +4042,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1443840',
+  frequency: 500,
+  meanings: [{"en": "telephone call; phone call", "misc": [], "field": []}, {"en": "telephone (device); phone", "misc": ["abbreviation"], "field": []}],
+  misc_jm: ["abbreviation"],
+  conjugations: {"dict": "でんわ", "masu": "でんわします", "te": "でんわして", "ta": "でんわした", "nai": "でんわしない", "potential": "でんわできる", "passive": "でんわされる", "causative": "でんわさせる", "volitional": "でんわしよう", "cond_ba": "でんわすれば", "cond_tara": "でんわしたら"},
 },
 
 {
@@ -3456,7 +4072,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1132620',
+  meanings: [{"en": "email", "misc": ["abbreviation"], "field": []}, {"en": "mail; post", "misc": [], "field": []}, {"en": "message (in an instant messaging application); instant message; IM; (SMS) text", "misc": ["percakapan kasual"], "field": []}],
+  misc_jm: ["abbreviation", "kasual"],
+  conjugations: {"dict": "メール", "masu": "メールします", "te": "メールして", "ta": "メールした", "nai": "メールしない", "potential": "メールできる", "passive": "メールされる", "causative": "メールさせる", "volitional": "メールしよう", "cond_ba": "メールすれば", "cond_tara": "メールしたら"},
 },
 
 {
@@ -3481,7 +4101,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1079760',
+  frequency: 1000,
+  meanings: [{"en": "test (of ability, knowledge, etc.); exam; examination; quiz", "misc": [], "field": []}, {"en": "test (of performance, quality, etc.); trial", "misc": [], "field": []}, {"en": "rehearsal", "misc": [], "field": []}],
+  conjugations: {"dict": "テスト", "masu": "テストします", "te": "テストして", "ta": "テストした", "nai": "テストしない", "potential": "テストできる", "passive": "テストされる", "causative": "テストさせる", "volitional": "テストしよう", "cond_ba": "テストすれば", "cond_tara": "テストしたら"},
 },
 
 {
@@ -3506,7 +4130,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1378860',
+  frequency: 500,
+  meanings: [{"en": "life; living", "misc": [], "field": []}, {"en": "livelihood; (one's) living", "misc": [], "field": []}],
+  conjugations: {"dict": "せいかつ", "masu": "せいかつします", "te": "せいかつして", "ta": "せいかつした", "nai": "せいかつしない", "potential": "せいかつできる", "passive": "せいかつされる", "causative": "せいかつさせる", "volitional": "せいかつしよう", "cond_ba": "せいかつすれば", "cond_tara": "せいかつしたら"},
 },
 
 {
@@ -3531,7 +4159,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1215260',
+  frequency: 10000,
+  forms: [{"word": "間に合う", "info": []}, {"word": "間にあう", "info": []}],
+  meanings: [{"en": "to be in time (for)", "misc": [], "field": []}, {"en": "to serve (suit, meet) the purpose; to be good enough; to be enough; to manage; to make do", "misc": [], "field": []}],
+  conjugations: {"dict": "まにあう", "masu": "まにあいます", "te": "まにあって", "ta": "まにあった", "nai": "まにあわない", "potential": "まにあえる", "passive": "まにあわれる", "causative": "まにあわせる", "volitional": "まにあおう", "cond_ba": "まにあえば", "cond_tara": "まにあったら"},
 },
 
 {
@@ -3556,7 +4189,8 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "あんしんする", "masu": "あんしんします", "te": "あんしんして", "ta": "あんしんした", "nai": "あんしんしない", "potential": "あんしんできる", "passive": "あんしんされる", "causative": "あんしんさせる", "volitional": "あんしんしよう", "cond_ba": "あんしんすれば", "cond_tara": "あんしんしたら"},
 },
 
 {
@@ -3581,7 +4215,13 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1591150',
+  frequency: 12500,
+  forms: [{"word": "聞こえる", "info": []}, {"word": "聞える", "info": []}, {"word": "聴こえる", "info": ["word containing irregular kanji usage"]}, {"word": "聴える", "info": ["word containing irregular kanji usage"]}],
+  meanings: [{"en": "to be heard; to be audible; to reach one's ears", "misc": [], "field": []}, {"en": "to sound (like); to come across (as)", "misc": [], "field": []}, {"en": "to be well known; to be famous", "misc": [], "field": []}, {"en": "to accept (someone's words); to agree; to understand", "misc": ["dated term"], "field": []}],
+  misc_jm: ["dated term"],
+  conjugations: {"dict": "きこえる", "masu": "きこえます", "te": "きこえて", "ta": "きこえた", "nai": "きこえない", "potential": "きこえられる", "passive": "きこえられる", "causative": "きこえさせる", "volitional": "きこえよう", "cond_ba": "きこえれば", "cond_tara": "きこえたら"},
 },
 
 {
@@ -3606,7 +4246,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1338180',
+  frequency: 1500,
+  meanings: [{"en": "to take out; to get out", "misc": [], "field": []}, {"en": "to put out; to reveal; to show", "misc": [], "field": []}, {"en": "to submit (e.g. thesis); to turn in", "misc": [], "field": []}, {"en": "to publish; to make public", "misc": [], "field": []}, {"en": "to send (e.g. letter)", "misc": [], "field": []}, {"en": "to produce (a sound); to start (fire)", "misc": [], "field": []}, {"en": "to serve (food)", "misc": [], "field": []}, {"en": "... out (e.g. to jump out, to carry out)", "misc": [], "field": []}, {"en": "to begin ...; to start to ...; to burst into ...", "misc": [], "field": []}],
+  conjugations: {"dict": "だす", "masu": "だします", "te": "だして", "ta": "だした", "nai": "ださない", "potential": "だせる", "passive": "だされる", "causative": "ださせる", "volitional": "だそう", "cond_ba": "だせば", "cond_tara": "だしたら"},
 },
 
 {
@@ -3631,7 +4275,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1465610',
+  frequency: 1000,
+  forms: [{"word": "入れる", "info": []}, {"word": "容れる", "info": ["kanji jarang dipakai"]}, {"word": "函れる", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "to put in; to let in; to take in; to bring in; to insert; to install (e.g. software); to set (a jewel, etc.); to ink in (e.g. tattoo)", "misc": [], "field": []}, {"en": "to admit; to accept; to employ; to hire", "misc": [], "field": []}, {"en": "to accept; to comply; to grant; to adopt (a policy, etc.); to take (advice, etc.); to listen to; to pay attention to", "misc": [], "field": []}, {"en": "to include", "misc": [], "field": []}, {"en": "to pay (one's rent, etc.)", "misc": [], "field": []}, {"en": "to cast (a vote)", "misc": [], "field": []}, {"en": "to make (tea, coffee, etc.)", "misc": [], "field": []}, {"en": "to turn on (a switch, etc.)", "misc": [], "field": []}, {"en": "to send (a fax); to call", "misc": [], "field": []}],
+  conjugations: {"dict": "いれる", "masu": "いれます", "te": "いれて", "ta": "いれた", "nai": "いれない", "potential": "いれられる", "passive": "いれられる", "causative": "いれさせる", "volitional": "いれよう", "cond_ba": "いれれば", "cond_tara": "いれたら"},
 },
 
 {
@@ -3656,7 +4305,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1227560',
+  frequency: 10000,
+  meanings: [{"en": "to be absent; to take a day off", "misc": [], "field": []}, {"en": "to rest; to have a break", "misc": [], "field": []}, {"en": "to go to bed; to (lie down to) sleep; to turn in; to retire", "misc": [], "field": []}, {"en": "to stop doing some ongoing activity for a time; to suspend business", "misc": [], "field": []}],
+  conjugations: {"dict": "やすむ", "masu": "やすみます", "te": "やすんで", "ta": "やすんだ", "nai": "やすまない", "potential": "やすめる", "passive": "やすまれる", "causative": "やすませる", "volitional": "やすもう", "cond_ba": "やすめば", "cond_tara": "やすんだら"},
 },
 
 {
@@ -3681,7 +4334,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1259440',
+  frequency: 4000,
+  meanings: [{"en": "inspection; study by observation; field trip; tour; review", "misc": [], "field": []}, {"en": "sitting out (e.g. PE class)", "misc": [], "field": []}],
+  conjugations: {"dict": "けんがく", "masu": "けんがくします", "te": "けんがくして", "ta": "けんがくした", "nai": "けんがくしない", "potential": "けんがくできる", "passive": "けんがくされる", "causative": "けんがくさせる", "volitional": "けんがくしよう", "cond_ba": "けんがくすれば", "cond_tara": "けんがくしたら"},
 },
 
 {
@@ -3706,7 +4363,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1715690',
+  forms: [{"word": "見物", "info": []}, {"word": "見もの", "info": []}],
+  conjugations: {"dict": "けんぶつ", "masu": "けんぶつします", "te": "けんぶつして", "ta": "けんぶつした", "nai": "けんぶつしない", "potential": "けんぶつできる", "passive": "けんぶつされる", "causative": "けんぶつさせる", "volitional": "けんぶつしよう", "cond_ba": "けんぶつすれば", "cond_tara": "けんぶつしたら"},
 },
 
 {
@@ -3731,7 +4391,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2056520',
+  forms: [{"word": "見える", "info": []}, {"word": "謁える", "info": ["word containing irregular kanji usage"]}],
+  meanings: [{"en": "to have an audience; to meet; to see", "misc": ["humble (kenjougo) language"], "field": []}, {"en": "to face (an enemy); to confront", "misc": [], "field": []}, {"en": "to serve (esp. as one's wife)", "misc": [], "field": []}],
+  misc_jm: ["humble (kenjougo) language"],
+  conjugations: {"dict": "みえる", "masu": "みえます", "te": "みえて", "ta": "みえた", "nai": "みえない", "potential": "みえられる", "passive": "みえられる", "causative": "みえさせる", "volitional": "みえよう", "cond_ba": "みえれば", "cond_tara": "みえたら"},
 },
 
 {
@@ -3756,7 +4421,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1553170',
+  frequency: 1000,
+  conjugations: {"dict": "りょこう", "masu": "りょこうします", "te": "りょこうして", "ta": "りょこうした", "nai": "りょこうしない", "potential": "りょこうできる", "passive": "りょこうされる", "causative": "りょこうさせる", "volitional": "りょこうしよう", "cond_ba": "りょこうすれば", "cond_tara": "りょこうしたら"},
 },
 
 {
@@ -3781,7 +4449,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1404740',
+  frequency: 20500,
+  meanings: [{"en": "to be sufficient; to be enough", "misc": [], "field": []}, {"en": "to be worth doing; to be worthy of; to deserve", "misc": [], "field": []}, {"en": "to do (the job); to serve; to answer", "misc": [], "field": []}],
+  conjugations: {"dict": "たりる", "masu": "たります", "te": "たりて", "ta": "たりた", "nai": "たりない", "potential": "たりられる", "passive": "たりられる", "causative": "たりさせる", "volitional": "たりよう", "cond_ba": "たりれば", "cond_tara": "たりたら"},
 },
 
 {
@@ -3806,7 +4478,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1404700',
+  frequency: 20000,
+  meanings: [{"en": "to add (numbers)", "misc": [], "field": []}, {"en": "to add (something); to top up (with something)", "misc": [], "field": []}, {"en": "to take care of (e.g. one's business)", "misc": [], "field": []}],
+  conjugations: {"dict": "たす", "masu": "たします", "te": "たして", "ta": "たした", "nai": "たさない", "potential": "たせる", "passive": "たされる", "causative": "たさせる", "volitional": "たそう", "cond_ba": "たせば", "cond_tara": "たしたら"},
 },
 
 {
@@ -3831,7 +4507,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1240820',
+  frequency: 3000,
+  forms: [{"word": "努める", "info": []}, {"word": "勉める", "info": ["kanji jarang dipakai"]}, {"word": "力める", "info": ["kanji jarang dipakai"]}],
+  conjugations: {"dict": "つとめる", "masu": "つとめます", "te": "つとめて", "ta": "つとめた", "nai": "つとめない", "potential": "つとめられる", "passive": "つとめられる", "causative": "つとめさせる", "volitional": "つとめよう", "cond_ba": "つとめれば", "cond_tara": "つとめたら"},
 },
 
 {
@@ -3856,7 +4536,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1451150',
+  frequency: 1000,
+  meanings: [{"en": "to work; to labor; to labour", "misc": [], "field": []}, {"en": "to function; to operate; to be effective; to work (i.e. ... works); to come into play", "misc": [], "field": []}, {"en": "to commit (e.g. a crime); to perpetrate; to do; to act; to practise; to practice", "misc": [], "field": []}, {"en": "to be conjugated", "misc": [], "field": ["linguistics"]}],
+  conjugations: {"dict": "はたらく", "masu": "はたらきます", "te": "はたらいて", "ta": "はたらいた", "nai": "はたらかない", "potential": "はたらける", "passive": "はたらかれる", "causative": "はたらかせる", "volitional": "はたらこう", "cond_ba": "はたらけば", "cond_tara": "はたらいたら"},
 },
 
 {
@@ -3881,7 +4565,8 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "けっこんする", "masu": "けっこんします", "te": "けっこんして", "ta": "けっこんした", "nai": "けっこんしない", "potential": "けっこんできる", "passive": "けっこんされる", "causative": "けっこんさせる", "volitional": "けっこんしよう", "cond_ba": "けっこんすれば", "cond_tara": "けっこんしたら"},
 },
 
 {
@@ -3906,7 +4591,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1891810',
+  forms: [{"word": "タバコを吸う", "info": []}, {"word": "煙草を吸う", "info": []}, {"word": "たばこを吸う", "info": []}, {"word": "煙草をすう", "info": ["search-only kanji form"]}],
+  conjugations: {"dict": "タバコをすう", "masu": "タバコをすいます", "te": "タバコをすって", "ta": "タバコをすった", "nai": "タバコをすわない", "potential": "タバコをすえる", "passive": "タバコをすわれる", "causative": "タバコをすわせる", "volitional": "タバコをすおう", "cond_ba": "タバコをすえば", "cond_tara": "タバコをすったら"},
 },
 
 {
@@ -3931,7 +4619,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1360010',
+  frequency: 7500,
+  forms: [{"word": "寝る", "info": []}, {"word": "寐る", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "to sleep (lying down)", "misc": [], "field": []}, {"en": "to go to bed; to lie in bed", "misc": [], "field": []}, {"en": "to lie down", "misc": [], "field": []}, {"en": "to sleep (with someone, i.e. have intercourse)", "misc": [], "field": []}, {"en": "to lie flat (e.g. of hair)", "misc": [], "field": []}, {"en": "to lie idle (of funds, stock, etc.)", "misc": [], "field": []}, {"en": "to ferment (of soy sauce, miso, etc.)", "misc": [], "field": []}],
+  conjugations: {"dict": "ねる", "masu": "ねます", "te": "ねて", "ta": "ねた", "nai": "ねない", "potential": "ねられる", "passive": "ねられる", "causative": "ねさせる", "volitional": "ねよう", "cond_ba": "ねれば", "cond_tara": "ねたら"},
 },
 
 {
@@ -3956,7 +4649,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1179320',
+  frequency: 3500,
+  forms: [{"word": "奥", "info": []}, {"word": "奧", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "inner part; interior; back (of a drawer, one's throat, etc.); depths (e.g. of a forest); recesses (e.g. of a cave); heart; end (of a road, garden, etc.)", "misc": [], "field": []}, {"en": "living quarters (at the back of a house); inner room", "misc": [], "field": []}, {"en": "recesses (of one's mind); bottom (of one's heart); behind (someone's words); mysteries (of an art)", "misc": [], "field": []}],
+  conjugations: {"dict": "おく", "masu": "おきます", "te": "おいて", "ta": "おいた", "nai": "おかない", "potential": "おける", "passive": "おかれる", "causative": "おかせる", "volitional": "おこう", "cond_ba": "おけば", "cond_tara": "おいたら"},
 },
 
 {
@@ -3981,7 +4679,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1151230',
+  frequency: 2500,
+  forms: [{"word": "悪", "info": []}, {"word": "惡", "info": ["word containing out-dated kanji or kanji usage"]}],
+  meanings: [{"en": "evil; wickedness", "misc": [], "field": []}, {"en": "(role of) the villain (in theatre, etc.); the bad guy", "misc": [], "field": []}],
+  conjugations: {"dict": "あく", "masu": "あきます", "te": "あいて", "ta": "あいた", "nai": "あかない", "potential": "あける", "passive": "あかれる", "causative": "あかせる", "volitional": "あこう", "cond_ba": "あけば", "cond_tara": "あいたら"},
 },
 
 {
@@ -4006,7 +4709,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1280810',
+  conjugations: {"dict": "しまる", "masu": "しまります", "te": "しまって", "ta": "しまった", "nai": "しまらない", "potential": "しまれる", "passive": "しまられる", "causative": "しまらせる", "volitional": "しまろう", "cond_ba": "しまれば", "cond_tara": "しまったら"},
 },
 
 {
@@ -4031,7 +4736,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1228650',
+  frequency: 11000,
+  conjugations: {"dict": "いそぐ", "masu": "いそぎます", "te": "いそいで", "ta": "いそいだ", "nai": "いそがない", "potential": "いそげる", "passive": "いそがれる", "causative": "いそがせる", "volitional": "いそごう", "cond_ba": "いそげば", "cond_tara": "いそいだら"},
 },
 
 {
@@ -4056,7 +4764,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1277350',
+  forms: [{"word": "喉が渇く", "info": []}, {"word": "のどが渇く", "info": []}, {"word": "喉が乾く", "info": []}, {"word": "のどが乾く", "info": ["search-only kanji form"]}, {"word": "喉がかわく", "info": ["search-only kanji form"]}, {"word": "ノドが渇く", "info": ["search-only kanji form"]}, {"word": "ノドが乾く", "info": ["search-only kanji form"]}],
+  conjugations: {"dict": "のどがかわく", "masu": "のどがかわきます", "te": "のどがかわいて", "ta": "のどがかわいた", "nai": "のどがかわかない", "potential": "のどがかわける", "passive": "のどがかわかれる", "causative": "のどがかわかせる", "volitional": "のどがかわこう", "cond_ba": "のどがかわけば", "cond_tara": "のどがかわいたら"},
 },
 
 {
@@ -4081,7 +4792,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2021520',
+  forms: [{"word": "お腹が空く", "info": []}, {"word": "お腹がすく", "info": []}, {"word": "お腹すく", "info": ["search-only kanji form"]}, {"word": "お腹空く", "info": ["search-only kanji form"]}, {"word": "おなかが空く", "info": ["search-only kanji form"]}, {"word": "おなか空く", "info": ["search-only kanji form"]}],
+  conjugations: {"dict": "おなかがすく", "masu": "おなかがすきます", "te": "おなかがすいて", "ta": "おなかがすいた", "nai": "おなかがすかない", "potential": "おなかがすける", "passive": "おなかがすかれる", "causative": "おなかがすかせる", "volitional": "おなかがすこう", "cond_ba": "おなかがすけば", "cond_tara": "おなかがすいたら"},
 },
 
 {
@@ -4106,7 +4820,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15.6.1-plan-c',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1240825',
+  frequency: 3000,
+  forms: [{"word": "勤める", "info": []}, {"word": "務める", "info": []}],
+  meanings: [{"en": "to work (for); to be employed (at); to serve (in)", "misc": [], "field": []}, {"en": "to serve (as); to act (as); to fill (the position of); to play the role (of)", "misc": [], "field": []}, {"en": "to conduct a religious service", "misc": [], "field": []}],
+  conjugations: {"dict": "つとめる", "masu": "つとめます", "te": "つとめて", "ta": "つとめた", "nai": "つとめない", "potential": "つとめられる", "passive": "つとめられる", "causative": "つとめさせる", "volitional": "つとめよう", "cond_ba": "つとめれば", "cond_tara": "つとめたら"},
 },
 
   // ── ADJECTIVES (107) ────────────────────────────────────────
@@ -4133,7 +4852,11 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00058'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1588880',
+  frequency: 3500,
+  forms: [{"word": "大きい", "info": []}, {"word": "巨きい", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "big; large; great", "misc": [], "field": []}, {"en": "loud", "misc": [], "field": []}, {"en": "extensive; spacious", "misc": [], "field": []}, {"en": "important; decisive; valuable", "misc": [], "field": []}, {"en": "older; grown-up", "misc": [], "field": []}],
 },
 
 {
@@ -4158,7 +4881,10 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00057'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1347750',
+  frequency: 12000,
+  meanings: [{"en": "small; little; tiny", "misc": [], "field": []}, {"en": "slight; below average (in degree, amount, etc.); minor; small", "misc": [], "field": []}, {"en": "low (e.g. sound); soft (e.g. voice)", "misc": [], "field": []}, {"en": "unimportant; petty; insignificant; trifling; trivial", "misc": [], "field": []}, {"en": "young; juvenile", "misc": [], "field": []}],
 },
 
 {
@@ -4183,7 +4909,11 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00060'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1605820',
+  frequency: 4000,
+  forms: [{"word": "良い", "info": []}, {"word": "好い", "info": []}, {"word": "善い", "info": []}, {"word": "佳い", "info": ["kanji jarang dipakai"]}, {"word": "吉い", "info": ["kanji jarang dipakai"]}, {"word": "宜い", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "good; excellent; fine; nice; pleasant; agreeable", "misc": [], "field": []}, {"en": "sufficient; enough; ready; prepared", "misc": [], "field": []}, {"en": "profitable (deal, business offer, etc.); beneficial", "misc": [], "field": []}, {"en": "OK; all right; fine; no problem", "misc": [], "field": []}, {"en": "easy to ...", "misc": [], "field": []}],
 },
 
 {
@@ -4208,7 +4938,11 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00059'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2772730',
+  frequency: 14000,
+  forms: [{"word": "難い", "info": ["kanji jarang dipakai"]}, {"word": "悪い", "info": ["search-only kanji form"]}],
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -4233,7 +4967,11 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00062'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1283190',
+  frequency: 4000,
+  forms: [{"word": "高い", "info": []}, {"word": "高価い", "info": ["search-only kanji form"]}, {"word": "高ーい", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "high; tall", "misc": [], "field": []}, {"en": "expensive; high-priced", "misc": [], "field": []}, {"en": "high (level); above average (in degree, quality, etc.)", "misc": [], "field": []}, {"en": "loud", "misc": [], "field": []}, {"en": "high-pitched; shrill", "misc": [], "field": []}],
 },
 
 {
@@ -4258,7 +4996,11 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00061'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1153670',
+  frequency: 23500,
+  forms: [{"word": "安い", "info": []}, {"word": "廉い", "info": []}],
+  meanings: [{"en": "cheap; inexpensive", "misc": [], "field": []}, {"en": "calm; peaceful; quiet", "misc": [], "field": []}],
 },
 
 {
@@ -4283,7 +5025,10 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00064'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1343460',
+  frequency: 17000,
+  meanings: [{"en": "hot; warm; sultry; heated", "misc": [], "field": []}, {"en": "passionate; impassioned; burning (desire, etc.)", "misc": [], "field": []}, {"en": "on everybody's mind; on the radar; du jour; interested (gaze, etc.)", "misc": [], "field": []}],
 },
 
 {
@@ -4308,7 +5053,10 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00063'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1210360',
+  frequency: 20000,
+  meanings: [{"en": "cold (e.g. weather)", "misc": [], "field": []}, {"en": "uninteresting (esp. joke); lame; dull; weak; corny", "misc": [], "field": []}],
 },
 
 {
@@ -4333,7 +5081,10 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00066'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1361490',
+  frequency: 4000,
+  forms: [{"word": "新しい", "info": []}, {"word": "新らしい", "info": ["search-only kanji form"]}],
 },
 
 {
@@ -4358,7 +5109,11 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00065'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1265070',
+  frequency: 8000,
+  forms: [{"word": "古い", "info": []}, {"word": "旧い", "info": ["kanji jarang dipakai"]}, {"word": "故い", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "old; aged; ancient; antiquated; antique; timeworn", "misc": [], "field": []}, {"en": "long; since long ago; time-honored", "misc": [], "field": []}, {"en": "of the distant past; long-ago", "misc": [], "field": []}, {"en": "stale; threadbare; hackneyed; corny", "misc": [], "field": []}, {"en": "old-fashioned; outmoded; out-of-date", "misc": [], "field": []}],
 },
 
 {
@@ -4383,7 +5138,10 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00068'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1533580',
+  frequency: 9500,
+  meanings: [{"en": "interesting; fascinating; intriguing; enthralling", "misc": [], "field": []}, {"en": "amusing; funny; comical", "misc": [], "field": []}, {"en": "enjoyable; fun; entertaining; pleasant; agreeable", "misc": [], "field": []}, {"en": "good; satisfactory; favourable; desirable; encouraging", "misc": [], "field": []}],
 },
 
 {
@@ -4408,7 +5166,12 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00067'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1008190',
+  frequency: 1000,
+  forms: [{"word": "詰らない", "info": []}, {"word": "詰まらない", "info": []}],
+  meanings: [{"en": "dull; uninteresting; boring; tedious", "misc": ["biasanya kana saja"], "field": []}, {"en": "insignificant; unimportant; trifling; trivial; worthless", "misc": ["biasanya kana saja"], "field": []}, {"en": "absurd; foolish; silly; stupid", "misc": ["biasanya kana saja"], "field": []}, {"en": "useless; pointless; disappointing", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -4433,7 +5196,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1486650',
+  frequency: 1000,
+  forms: [{"word": "美味しい", "info": []}, {"word": "旨味しい", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "good(-tasting); nice; delicious; tasty", "misc": ["biasanya kana saja"], "field": []}, {"en": "attractive (offer, opportunity, etc.); appealing; convenient; favorable; desirable; profitable", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -4458,7 +5226,12 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00071'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1460850',
+  frequency: 3500,
+  forms: [{"word": "難しい", "info": []}, {"word": "六借しい", "info": ["search-only kanji form"]}, {"word": "六ヶ敷い", "info": ["search-only kanji form"]}, {"word": "六かしい", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "difficult; hard; troublesome; complicated; serious (disease, problem, etc.)", "misc": [], "field": []}, {"en": "impossible; unfeasible", "misc": ["euphemistic"], "field": []}, {"en": "fussy; particular; fastidious; hard to please; displeased", "misc": [], "field": []}, {"en": "gloomy; glum; sullen; serious (look)", "misc": [], "field": []}, {"en": "dirty; unclean; filthy; detestable", "misc": ["archaic"], "field": []}, {"en": "unpleasant; uncomfortable; creepy; spooky", "misc": ["archaic"], "field": []}],
+  misc_jm: ["arkais", "euphemistic"],
 },
 
 {
@@ -4483,7 +5256,10 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00070'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1157000',
+  frequency: 19500,
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -4508,7 +5284,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2835296',
+  meanings: [{"en": "busy; hectic; frantic", "misc": ["biasanya kana saja"], "field": []}, {"en": "restless; hurried; fidgety", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -4533,7 +5312,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2863274',
+  meanings: [{"en": "cute; adorable; charming; lovely; pretty", "misc": ["biasanya kana saja", "dated term"], "field": []}, {"en": "dear; precious; darling; pet", "misc": ["biasanya kana saja", "dated term"], "field": []}, {"en": "innocent; childlike; childish; lovable", "misc": ["biasanya kana saja", "dated term"], "field": []}, {"en": "dainty; little; tiny", "misc": ["biasanya kana saja", "dated term"], "field": []}],
+  misc_jm: ["biasanya kana saja", "dated term"],
 },
 
 {
@@ -4558,7 +5340,11 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00075'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1429750',
+  frequency: 7500,
+  forms: [{"word": "長い", "info": []}, {"word": "永い", "info": []}],
+  meanings: [{"en": "long (distance, length)", "misc": [], "field": []}, {"en": "long (time); protracted; prolonged", "misc": [], "field": []}],
 },
 
 {
@@ -4583,7 +5369,11 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00074'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1418620',
+  frequency: 12500,
+  forms: [{"word": "短い", "info": []}, {"word": "短かい", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "short", "misc": [], "field": []}, {"en": "brief", "misc": [], "field": []}],
 },
 
 {
@@ -4608,7 +5398,9 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00077'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2146440',
+  meanings: [{"en": "love of; affection for; enthusiast for; lover of; fan; -phile", "misc": [], "field": []}, {"en": "being attractive to; being liked by", "misc": [], "field": []}],
 },
 
 {
@@ -4633,7 +5425,8 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00076'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2796330',
 },
 
 {
@@ -4658,7 +5451,9 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00079'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1580400',
+  meanings: [{"en": "upper part", "misc": [], "field": []}, {"en": "upper stream; upper course of a river", "misc": [], "field": []}, {"en": "right side of the stage (audience's or camera's POV); stage left (actor's POV)", "misc": [], "field": []}, {"en": "skillful (in comparisons); dexterity", "misc": [], "field": []}, {"en": "over-arm grip on opponent's belt", "misc": [], "field": ["sumo"]}],
 },
 
 {
@@ -4683,7 +5478,10 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00078'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1185200',
+  frequency: 7500,
+  meanings: [{"en": "unskillful; poor; awkward", "misc": [], "field": []}, {"en": "imprudent; untactful", "misc": [], "field": []}],
 },
 
 {
@@ -4708,7 +5506,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1591900',
+  frequency: 1000,
+  forms: [{"word": "綺麗", "info": []}, {"word": "奇麗", "info": []}, {"word": "暉麗", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "pretty; lovely; beautiful; fair", "misc": [], "field": []}, {"en": "clean; clear; pure; tidy; neat", "misc": ["biasanya kana saja"], "field": []}, {"en": "completely; entirely", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -4733,7 +5536,11 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00082'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1381820',
+  frequency: 2500,
+  forms: [{"word": "静か", "info": []}, {"word": "閑か", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "quiet; silent", "misc": [], "field": []}, {"en": "slow; unhurried", "misc": [], "field": []}, {"en": "calm; peaceful", "misc": [], "field": []}],
 },
 
 {
@@ -4758,7 +5565,10 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00081'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1463480',
+  frequency: 1000,
+  meanings: [{"en": "bustling; busy; crowded; lively; prosperous; thriving", "misc": [], "field": []}, {"en": "lively (party, voices, etc.); loud; noisy; merry; cheerful", "misc": [], "field": []}],
 },
 
 {
@@ -4783,7 +5593,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1643470',
+  forms: [{"word": "大切り", "info": []}, {"word": "大切", "info": ["okurigana tidak biasa"]}],
 },
 
 {
@@ -4808,7 +5620,11 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00146'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1474910',
+  frequency: 8000,
+  meanings: [{"en": "white", "misc": [], "field": []}, {"en": "blank (e.g. paper); uncolored; unmarked; spotless; immaculate", "misc": [], "field": []}, {"en": "innocent; not guilty; pure", "misc": [], "field": []}, {"en": "bright; vivid", "misc": ["archaic"], "field": []}, {"en": "inexperienced; naive; unrefined", "misc": ["archaic"], "field": []}],
+  misc_jm: ["arkais"],
 },
 
 {
@@ -4833,7 +5649,10 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00145'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1287420',
+  frequency: 9000,
+  meanings: [{"en": "black", "misc": [], "field": []}, {"en": "dark; blackish; sun-tanned (skin)", "misc": [], "field": []}, {"en": "suspicious; criminal; illicit", "misc": [], "field": []}, {"en": "darkened and dirty; sooty; covered in dirt", "misc": [], "field": []}, {"en": "evil; wicked; black-hearted", "misc": [], "field": []}, {"en": "inauspicious; ill-boding; unlucky", "misc": [], "field": []}],
 },
 
 {
@@ -4858,7 +5677,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1383240',
+  frequency: 7500,
+  forms: [{"word": "赤い", "info": []}, {"word": "紅い", "info": []}, {"word": "朱い", "info": ["kanji jarang dipakai"]}, {"word": "緋い", "info": ["search-only kanji form"]}, {"word": "赭い", "info": ["search-only kanji form"]}, {"word": "丹い", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "red; crimson; scarlet; vermilion", "misc": [], "field": []}, {"en": "Red; communist", "misc": ["percakapan kasual"], "field": []}],
+  misc_jm: ["kasual"],
 },
 
 {
@@ -4883,7 +5707,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1381390',
+  frequency: 12500,
+  forms: [{"word": "青い", "info": []}, {"word": "蒼い", "info": []}, {"word": "碧い", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "blue; azure", "misc": [], "field": []}, {"en": "green", "misc": [], "field": []}, {"en": "pale (facial color); gray; grey", "misc": [], "field": []}, {"en": "unripe; inexperienced", "misc": [], "field": []}],
 },
 
 {
@@ -4908,7 +5736,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1207240',
+  frequency: 8000,
+  forms: [{"word": "楽しい", "info": []}, {"word": "愉しい", "info": ["kanji jarang dipakai"]}, {"word": "樂しい", "info": ["search-only kanji form"]}, {"word": "娯しい", "info": ["search-only kanji form"]}],
 },
 
 {
@@ -4933,7 +5764,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: ['vg-n5-00166'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1451750',
+  frequency: 16500,
+  meanings: [{"en": "same; identical; equal; alike; equivalent", "misc": [], "field": []}, {"en": "anyway; in any case; if one must ...; if one has to ...; as long as ...", "misc": [], "field": []}],
 },
 
 {
@@ -4958,7 +5792,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1383240',
+  frequency: 7500,
+  forms: [{"word": "赤い", "info": []}, {"word": "紅い", "info": []}, {"word": "朱い", "info": ["kanji jarang dipakai"]}, {"word": "緋い", "info": ["search-only kanji form"]}, {"word": "赭い", "info": ["search-only kanji form"]}, {"word": "丹い", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "red; crimson; scarlet; vermilion", "misc": [], "field": []}, {"en": "Red; communist", "misc": ["percakapan kasual"], "field": []}],
+  misc_jm: ["kasual"],
 },
 
 {
@@ -4983,7 +5822,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1151180',
+  meanings: [{"en": "mallow (any plant of family Malvaceae)", "misc": ["biasanya kana saja"], "field": []}, {"en": "Asarum caulescens (species of wild ginger)", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -5008,7 +5850,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1474910',
+  frequency: 8000,
+  meanings: [{"en": "white", "misc": [], "field": []}, {"en": "blank (e.g. paper); uncolored; unmarked; spotless; immaculate", "misc": [], "field": []}, {"en": "innocent; not guilty; pure", "misc": [], "field": []}, {"en": "bright; vivid", "misc": ["archaic"], "field": []}, {"en": "inexperienced; naive; unrefined", "misc": ["archaic"], "field": []}],
+  misc_jm: ["arkais"],
 },
 
 {
@@ -5033,7 +5879,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1287420',
+  frequency: 9000,
+  meanings: [{"en": "black", "misc": [], "field": []}, {"en": "dark; blackish; sun-tanned (skin)", "misc": [], "field": []}, {"en": "suspicious; criminal; illicit", "misc": [], "field": []}, {"en": "darkened and dirty; sooty; covered in dirt", "misc": [], "field": []}, {"en": "evil; wicked; black-hearted", "misc": [], "field": []}, {"en": "inauspicious; ill-boding; unlucky", "misc": [], "field": []}],
 },
 
 {
@@ -5058,7 +5907,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1361490',
+  frequency: 4000,
+  forms: [{"word": "新しい", "info": []}, {"word": "新らしい", "info": ["search-only kanji form"]}],
 },
 
 {
@@ -5083,7 +5935,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1265070',
+  frequency: 8000,
+  forms: [{"word": "古い", "info": []}, {"word": "旧い", "info": ["kanji jarang dipakai"]}, {"word": "故い", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "old; aged; ancient; antiquated; antique; timeworn", "misc": [], "field": []}, {"en": "long; since long ago; time-honored", "misc": [], "field": []}, {"en": "of the distant past; long-ago", "misc": [], "field": []}, {"en": "stale; threadbare; hackneyed; corny", "misc": [], "field": []}, {"en": "old-fashioned; outmoded; out-of-date", "misc": [], "field": []}],
 },
 
 {
@@ -5108,7 +5964,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1283190',
+  frequency: 4000,
+  forms: [{"word": "高い", "info": []}, {"word": "高価い", "info": ["search-only kanji form"]}, {"word": "高ーい", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "high; tall", "misc": [], "field": []}, {"en": "expensive; high-priced", "misc": [], "field": []}, {"en": "high (level); above average (in degree, quality, etc.)", "misc": [], "field": []}, {"en": "loud", "misc": [], "field": []}, {"en": "high-pitched; shrill", "misc": [], "field": []}],
 },
 
 {
@@ -5133,7 +5993,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1153670',
+  frequency: 23500,
+  forms: [{"word": "安い", "info": []}, {"word": "廉い", "info": []}],
+  meanings: [{"en": "cheap; inexpensive", "misc": [], "field": []}, {"en": "calm; peaceful; quiet", "misc": [], "field": []}],
 },
 
 {
@@ -5158,7 +6022,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1429750',
+  frequency: 7500,
+  forms: [{"word": "長い", "info": []}, {"word": "永い", "info": []}],
+  meanings: [{"en": "long (distance, length)", "misc": [], "field": []}, {"en": "long (time); protracted; prolonged", "misc": [], "field": []}],
 },
 
 {
@@ -5183,7 +6051,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1418620',
+  frequency: 12500,
+  forms: [{"word": "短い", "info": []}, {"word": "短かい", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "short", "misc": [], "field": []}, {"en": "brief", "misc": [], "field": []}],
 },
 
 {
@@ -5208,7 +6080,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1588880',
+  frequency: 3500,
+  forms: [{"word": "大きい", "info": []}, {"word": "巨きい", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "big; large; great", "misc": [], "field": []}, {"en": "loud", "misc": [], "field": []}, {"en": "extensive; spacious", "misc": [], "field": []}, {"en": "important; decisive; valuable", "misc": [], "field": []}, {"en": "older; grown-up", "misc": [], "field": []}],
 },
 
 {
@@ -5233,7 +6109,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1347750',
+  frequency: 12000,
+  meanings: [{"en": "small; little; tiny", "misc": [], "field": []}, {"en": "slight; below average (in degree, amount, etc.); minor; small", "misc": [], "field": []}, {"en": "low (e.g. sound); soft (e.g. voice)", "misc": [], "field": []}, {"en": "unimportant; petty; insignificant; trifling; trivial", "misc": [], "field": []}, {"en": "young; juvenile", "misc": [], "field": []}],
 },
 
 {
@@ -5258,7 +6137,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1275320',
+  frequency: 14500,
+  forms: [{"word": "厚い", "info": []}, {"word": "篤い", "info": []}],
+  meanings: [{"en": "thick; deep; heavy", "misc": [], "field": []}, {"en": "kind; cordial; hospitable; warm; faithful", "misc": [], "field": []}, {"en": "serious (of an illness)", "misc": [], "field": []}, {"en": "abundant", "misc": [], "field": []}],
 },
 
 {
@@ -5283,7 +6166,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1210360',
+  frequency: 20000,
+  meanings: [{"en": "cold (e.g. weather)", "misc": [], "field": []}, {"en": "uninteresting (esp. joke); lame; dull; weak; corny", "misc": [], "field": []}],
 },
 
 {
@@ -5308,7 +6194,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1556730',
+  frequency: 14000,
+  meanings: [{"en": "cold (to the touch); chilly; icy; freezing", "misc": [], "field": []}, {"en": "(emotionally) cold; coldhearted; unfeeling; indifferent; unfriendly; distant", "misc": [], "field": []}],
 },
 
 {
@@ -5333,7 +6222,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1586420',
+  frequency: 10500,
+  forms: [{"word": "暖かい", "info": []}, {"word": "温かい", "info": []}, {"word": "暖い", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "warm; mild; (pleasantly) hot", "misc": [], "field": []}, {"en": "considerate; kind; genial", "misc": [], "field": []}, {"en": "warm (of a colour); mellow", "misc": [], "field": []}, {"en": "having enough money", "misc": [], "field": []}],
 },
 
 {
@@ -5358,7 +6251,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1554370',
+  frequency: 15000,
+  forms: [{"word": "涼しい", "info": []}, {"word": "凉しい", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "cool; refreshing", "misc": [], "field": []}, {"en": "clear (e.g. eyes); bright", "misc": [], "field": []}, {"en": "clear; distinct", "misc": [], "field": []}, {"en": "composed (facial expression); unruffled; unconcerned", "misc": [], "field": []}, {"en": "pure; upright; innocent", "misc": ["archaic"], "field": []}],
+  misc_jm: ["arkais"],
 },
 
 {
@@ -5383,7 +6281,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1207240',
+  frequency: 8000,
+  forms: [{"word": "楽しい", "info": []}, {"word": "愉しい", "info": ["kanji jarang dipakai"]}, {"word": "樂しい", "info": ["search-only kanji form"]}, {"word": "娯しい", "info": ["search-only kanji form"]}],
 },
 
 {
@@ -5408,7 +6309,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1219510',
+  frequency: 1000,
+  forms: [{"word": "嬉しい", "info": []}, {"word": "欣しい", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "happy; glad; pleased; delighted; overjoyed", "misc": [], "field": []}, {"en": "joyful; delightful; gratifying; pleasant", "misc": [], "field": []}],
 },
 
 {
@@ -5433,7 +6338,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1577200',
+  frequency: 16000,
+  meanings: [{"en": "cute; adorable; charming; lovely; pretty", "misc": ["biasanya kana saja"], "field": []}, {"en": "dear; precious; darling; pet", "misc": ["biasanya kana saja"], "field": []}, {"en": "innocent; childlike; childish; lovable", "misc": ["biasanya kana saja"], "field": []}, {"en": "dainty; little; tiny", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -5458,7 +6367,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1365850',
+  frequency: 12000,
+  meanings: [{"en": "spicy; hot", "misc": [], "field": []}, {"en": "salty", "misc": [], "field": []}, {"en": "harsh (criticism); severe (punishment); strict", "misc": [], "field": []}, {"en": "painful; bitter; difficult; tough", "misc": [], "field": []}],
 },
 
 {
@@ -5483,7 +6395,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1213400',
+  frequency: 9500,
+  meanings: [{"en": "sweet-tasting; sweet; sugary; sugared", "misc": [], "field": []}, {"en": "fragrant (smelling); sweet (music)", "misc": [], "field": []}, {"en": "lightly salted; light in salt; not spicy", "misc": [], "field": []}, {"en": "naive; overly optimistic; soft on; generous; indulgent; easy-going; lenient", "misc": [], "field": []}, {"en": "half-hearted; not finished properly", "misc": [], "field": []}, {"en": "insufficient; not satisfactory; inadequate; loose", "misc": [], "field": []}, {"en": "mild", "misc": [], "field": []}, {"en": "tempting; enticing; luring", "misc": [], "field": []}],
 },
 
 {
@@ -5508,7 +6423,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1244310',
+  frequency: 5500,
 },
 
 {
@@ -5533,7 +6450,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1519290',
+  frequency: 9000,
+  forms: [{"word": "忙しい", "info": []}, {"word": "忙がしい", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "busy; occupied; hectic", "misc": [], "field": []}, {"en": "restless; hurried; fidgety", "misc": [], "field": []}],
 },
 
 {
@@ -5558,7 +6479,8 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1571650',
 },
 
 {
@@ -5583,7 +6505,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1463480',
+  frequency: 1000,
+  meanings: [{"en": "bustling; busy; crowded; lively; prosperous; thriving", "misc": [], "field": []}, {"en": "lively (party, voices, etc.); loud; noisy; merry; cheerful", "misc": [], "field": []}],
 },
 
 {
@@ -5608,7 +6533,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1381820',
+  frequency: 2500,
+  forms: [{"word": "静か", "info": []}, {"word": "閑か", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "quiet; silent", "misc": [], "field": []}, {"en": "slow; unhurried", "misc": [], "field": []}, {"en": "calm; peaceful", "misc": [], "field": []}],
 },
 
 {
@@ -5633,7 +6562,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1253780',
+  frequency: 21500,
+  forms: [{"word": "隙", "info": []}, {"word": "透き", "info": []}],
+  meanings: [{"en": "gap; opening; room; space", "misc": [], "field": []}, {"en": "break; interval; spare moment; spare time", "misc": [], "field": []}, {"en": "unguarded moment; carelessness; weak spot; chink in one's armor; flaw; fault", "misc": [], "field": []}, {"en": "chance; opportunity", "misc": [], "field": []}],
 },
 
 {
@@ -5658,7 +6591,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1221210',
+  frequency: 5500,
+  misc_jm: ["abbreviation"],
 },
 
 {
@@ -5683,7 +6619,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1353320',
+  frequency: 6000,
+  meanings: [{"en": "skillful; skilled; proficient; good (at); adept; clever", "misc": [], "field": []}, {"en": "flattery", "misc": [], "field": []}],
 },
 
 {
@@ -5708,7 +6647,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1011310',
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -5733,7 +6674,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1260720',
+  frequency: 3000,
+  forms: [{"word": "元気", "info": []}, {"word": "元氣", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "lively; full of spirit; energetic; vigorous; vital; spirited", "misc": [], "field": []}, {"en": "healthy; well; fit; in good health", "misc": [], "field": []}],
 },
 
 {
@@ -5758,7 +6703,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1414340',
+  frequency: 1000,
+  meanings: [{"en": "important; significant; serious; crucial", "misc": [], "field": []}, {"en": "precious; valuable; dear; cherished; beloved", "misc": [], "field": []}, {"en": "careful", "misc": [], "field": []}],
 },
 
 {
@@ -5783,7 +6731,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1414150',
+  frequency: 3000,
+  meanings: [{"en": "safe; secure; sound; problem-free; without fear; all right; alright; OK; okay", "misc": [], "field": []}, {"en": "certainly; surely; undoubtedly", "misc": [], "field": []}, {"en": "no thanks; I'm good; that's alright", "misc": ["percakapan kasual"], "field": []}, {"en": "great man; fine figure of a man", "misc": ["archaic"], "field": []}],
+  misc_jm: ["arkais", "kasual"],
 },
 
 {
@@ -5808,7 +6760,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1460850',
+  frequency: 3500,
+  forms: [{"word": "難しい", "info": []}, {"word": "六借しい", "info": ["search-only kanji form"]}, {"word": "六ヶ敷い", "info": ["search-only kanji form"]}, {"word": "六かしい", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "difficult; hard; troublesome; complicated; serious (disease, problem, etc.)", "misc": [], "field": []}, {"en": "impossible; unfeasible", "misc": ["euphemistic"], "field": []}, {"en": "fussy; particular; fastidious; hard to please; displeased", "misc": [], "field": []}, {"en": "gloomy; glum; sullen; serious (look)", "misc": [], "field": []}, {"en": "dirty; unclean; filthy; detestable", "misc": ["archaic"], "field": []}, {"en": "unpleasant; uncomfortable; creepy; spooky", "misc": ["archaic"], "field": []}],
+  misc_jm: ["arkais", "euphemistic"],
 },
 
 {
@@ -5833,7 +6790,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1157000',
+  frequency: 19500,
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -5858,7 +6818,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1533580',
+  frequency: 9500,
+  meanings: [{"en": "interesting; fascinating; intriguing; enthralling", "misc": [], "field": []}, {"en": "amusing; funny; comical", "misc": [], "field": []}, {"en": "enjoyable; fun; entertaining; pleasant; agreeable", "misc": [], "field": []}, {"en": "good; satisfactory; favourable; desirable; encouraging", "misc": [], "field": []}],
 },
 
 {
@@ -5883,7 +6846,8 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1211900',
 },
 
 {
@@ -5908,7 +6872,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1237680',
+  frequency: 23500,
+  meanings: [{"en": "narrow; confined; small; cramped", "misc": [], "field": []}, {"en": "limited; narrow-minded; confining", "misc": [], "field": []}],
 },
 
 {
@@ -5933,7 +6900,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1177800',
+  frequency: 17000,
+  meanings: [{"en": "far; distant; far away; a long way off; in the distance", "misc": [], "field": []}, {"en": "distant (past); remote (in time); remote; far-removed (in time)", "misc": [], "field": []}, {"en": "distant (relationship or kinship); having little to do (with someone)", "misc": [], "field": []}, {"en": "far (from something else in quality, degree, etc.); not similar; way off", "misc": [], "field": []}, {"en": "hard (of hearing)", "misc": [], "field": []}, {"en": "nearsighted", "misc": [], "field": []}],
 },
 
 {
@@ -5958,7 +6928,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1242130',
+  frequency: 10000,
+  meanings: [{"en": "near; close; short (distance)", "misc": [], "field": []}, {"en": "close (in time); soon", "misc": [], "field": []}, {"en": "close (relationship); friendly; intimate", "misc": [], "field": []}, {"en": "closely related", "misc": [], "field": []}, {"en": "similar; almost the same; close to; nearly", "misc": [], "field": []}],
 },
 
 {
@@ -5983,7 +6956,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1407460',
+  frequency: 22000,
+  meanings: [{"en": "many; numerous; a lot", "misc": [], "field": []}, {"en": "large amount of; large quantity of; a lot; much", "misc": [], "field": []}, {"en": "frequent; common", "misc": [], "field": []}],
 },
 
 {
@@ -6008,7 +6984,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1348910',
+  frequency: 8000,
+  forms: [{"word": "少ない", "info": []}, {"word": "尠い", "info": ["kanji jarang dipakai"]}, {"word": "寡い", "info": ["kanji jarang dipakai"]}, {"word": "少い", "info": ["search-only kanji form"]}, {"word": "尠ない", "info": ["search-only kanji form"]}, {"word": "寡ない", "info": ["search-only kanji form"]}],
 },
 
 {
@@ -6033,7 +7012,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1324300',
+  frequency: 15000,
+  meanings: [{"en": "young; youthful", "misc": [], "field": []}, {"en": "immature; green", "misc": [], "field": []}, {"en": "low (number); small", "misc": [], "field": []}],
 },
 
 {
@@ -6058,7 +7040,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1421970',
+  frequency: 9000,
+  forms: [{"word": "遅い", "info": []}, {"word": "鈍い", "info": ["search-only kanji form"]}, {"word": "晩い", "info": ["search-only kanji form"]}, {"word": "遲い", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "slow", "misc": [], "field": []}, {"en": "late", "misc": [], "field": []}, {"en": "too late", "misc": [], "field": []}],
 },
 
 {
@@ -6083,7 +7069,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1404975',
+  frequency: 15500,
+  forms: [{"word": "早い", "info": []}, {"word": "速い", "info": []}, {"word": "疾い", "info": ["kanji jarang dipakai"]}, {"word": "捷い", "info": ["kanji jarang dipakai"]}, {"word": "迅い", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "fast; quick; rapid; swift; speedy; brisk; prompt", "misc": [], "field": []}, {"en": "early; soon; earlier than usual", "misc": [], "field": []}, {"en": "premature; too soon; too early", "misc": [], "field": []}, {"en": "easy; simple; quick; fast", "misc": [], "field": []}, {"en": "as soon as ...; the moment ...; the instant ...", "misc": [], "field": []}],
 },
 
 {
@@ -6108,7 +7098,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1335750',
+  frequency: 12500,
+  meanings: [{"en": "heavy; weighty", "misc": [], "field": []}, {"en": "heavy (feeling); depressed; gloomy; blue; uneasy", "misc": [], "field": []}, {"en": "slow; sluggish; lumbering; ponderous; clumsy", "misc": [], "field": []}, {"en": "important (position, responsibility, etc.); serious; grave", "misc": [], "field": []}, {"en": "serious (punishment, illness, etc.); severe; critical", "misc": [], "field": []}, {"en": "solid; established; dignified; sensible", "misc": [], "field": []}],
 },
 
 {
@@ -6133,7 +7126,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1252560',
+  frequency: 17000,
+  meanings: [{"en": "light (i.e. not heavy); feeling light (i.e. offering little resistance, moving easily)", "misc": [], "field": []}, {"en": "light (i.e. of foot); effortless; nimble; agile", "misc": [], "field": []}, {"en": "non-serious; minor; unimportant; trivial", "misc": [], "field": []}, {"en": "slight; small; gentle; soft; easy; lighthearted (e.g. joke)", "misc": [], "field": []}, {"en": "easy; simple", "misc": [], "field": []}, {"en": "indiscriminate", "misc": [], "field": []}],
 },
 
 {
@@ -6158,7 +7154,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1236070',
+  frequency: 9000,
+  forms: [{"word": "強い", "info": []}, {"word": "勁い", "info": ["search-only kanji form"]}, {"word": "剛い", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "strong; potent; competent; domineering; tough", "misc": [], "field": []}, {"en": "strong; brawny; powerful; healthy; rugged", "misc": [], "field": []}, {"en": "good (at); skilled; knowledgeable", "misc": [], "field": []}, {"en": "being able to handle; know how to deal (with); durable (against); resistant (to); resilient", "misc": [], "field": []}, {"en": "firm; rigid; solid", "misc": [], "field": []}, {"en": "intense; strong; fierce; high", "misc": [], "field": []}, {"en": "dependable; trustworthy", "misc": [], "field": []}],
 },
 
 {
@@ -6183,7 +7183,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1324520',
+  frequency: 12000,
 },
 
 {
@@ -6208,7 +7210,8 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1539910',
 },
 
 {
@@ -6233,7 +7236,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1415000',
+  frequency: 1000,
+  forms: [{"word": "大変", "info": []}, {"word": "大へん", "info": []}],
+  meanings: [{"en": "very; greatly; terribly; awfully", "misc": [], "field": []}, {"en": "immense; enormous; great", "misc": [], "field": []}, {"en": "serious; grave; dreadful; terrible", "misc": [], "field": []}, {"en": "difficult; hard; challenging", "misc": [], "field": []}, {"en": "major incident; disaster", "misc": ["archaic"], "field": []}],
+  misc_jm: ["arkais"],
 },
 
 {
@@ -6258,7 +7266,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1153930',
+  frequency: 500,
 },
 
 {
@@ -6283,7 +7293,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1512610',
+  frequency: 3000,
 },
 
 {
@@ -6308,7 +7320,8 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1157920',
 },
 
 {
@@ -6358,7 +7371,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1348910',
+  frequency: 8000,
+  forms: [{"word": "少ない", "info": []}, {"word": "尠い", "info": ["kanji jarang dipakai"]}, {"word": "寡い", "info": ["kanji jarang dipakai"]}, {"word": "少い", "info": ["search-only kanji form"]}, {"word": "尠ない", "info": ["search-only kanji form"]}, {"word": "寡ない", "info": ["search-only kanji form"]}],
 },
 
 {
@@ -6383,7 +7399,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1407460',
+  frequency: 22000,
+  meanings: [{"en": "many; numerous; a lot", "misc": [], "field": []}, {"en": "large amount of; large quantity of; a lot; much", "misc": [], "field": []}, {"en": "frequent; common", "misc": [], "field": []}],
 },
 
 {
@@ -6483,7 +7502,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1404975',
+  frequency: 15500,
+  forms: [{"word": "早い", "info": []}, {"word": "速い", "info": []}, {"word": "疾い", "info": ["kanji jarang dipakai"]}, {"word": "捷い", "info": ["kanji jarang dipakai"]}, {"word": "迅い", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "fast; quick; rapid; swift; speedy; brisk; prompt", "misc": [], "field": []}, {"en": "early; soon; earlier than usual", "misc": [], "field": []}, {"en": "premature; too soon; too early", "misc": [], "field": []}, {"en": "easy; simple; quick; fast", "misc": [], "field": []}, {"en": "as soon as ...; the moment ...; the instant ...", "misc": [], "field": []}],
 },
 
 {
@@ -6633,7 +7656,10 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00717'],
   see_also: [],
   added_v: 'v15.6.1-plan-c',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1278410',
+  frequency: 2000,
+  forms: [{"word": "広い", "info": []}, {"word": "廣い", "info": ["search-only kanji form"]}, {"word": "宏い", "info": ["search-only kanji form"]}, {"word": "弘い", "info": ["search-only kanji form"]}],
 },
 
 {
@@ -6658,7 +7684,10 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00716'],
   see_also: [],
   added_v: 'v15.6.1-plan-c',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1237680',
+  frequency: 23500,
+  meanings: [{"en": "narrow; confined; small; cramped", "misc": [], "field": []}, {"en": "limited; narrow-minded; confining", "misc": [], "field": []}],
 },
 
 {
@@ -6683,7 +7712,10 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00719'],
   see_also: [],
   added_v: 'v15.6.1-plan-c',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1177800',
+  frequency: 17000,
+  meanings: [{"en": "far; distant; far away; a long way off; in the distance", "misc": [], "field": []}, {"en": "distant (past); remote (in time); remote; far-removed (in time)", "misc": [], "field": []}, {"en": "distant (relationship or kinship); having little to do (with someone)", "misc": [], "field": []}, {"en": "far (from something else in quality, degree, etc.); not similar; way off", "misc": [], "field": []}, {"en": "hard (of hearing)", "misc": [], "field": []}, {"en": "nearsighted", "misc": [], "field": []}],
 },
 
 {
@@ -6708,7 +7740,10 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00718'],
   see_also: [],
   added_v: 'v15.6.1-plan-c',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1242130',
+  frequency: 10000,
+  meanings: [{"en": "near; close; short (distance)", "misc": [], "field": []}, {"en": "close (in time); soon", "misc": [], "field": []}, {"en": "close (relationship); friendly; intimate", "misc": [], "field": []}, {"en": "closely related", "misc": [], "field": []}, {"en": "similar; almost the same; close to; nearly", "misc": [], "field": []}],
 },
 
 {
@@ -6733,7 +7768,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15.6.1-plan-c',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2858986',
+  forms: [{"word": "暇", "info": []}, {"word": "遑", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "(spare) time; free time; leisure", "misc": ["biasanya kana saja"], "field": []}, {"en": "time off; leave; vacation; holiday", "misc": ["biasanya kana saja"], "field": []}, {"en": "resignation; dismissal; divorce", "misc": ["biasanya kana saja", "dated term"], "field": []}, {"en": "leaving; taking one's leave; farewell", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja", "dated term"],
 },
 
 {
@@ -6758,7 +7797,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15.6.1-plan-c',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1415000',
+  frequency: 1000,
+  forms: [{"word": "大変", "info": []}, {"word": "大へん", "info": []}],
+  meanings: [{"en": "very; greatly; terribly; awfully", "misc": [], "field": []}, {"en": "immense; enormous; great", "misc": [], "field": []}, {"en": "serious; grave; dreadful; terrible", "misc": [], "field": []}, {"en": "difficult; hard; challenging", "misc": [], "field": []}, {"en": "major incident; disaster", "misc": ["archaic"], "field": []}],
+  misc_jm: ["arkais"],
 },
 
 {
@@ -6783,7 +7827,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15.6.1-plan-c',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1541620',
+  frequency: 1500,
 },
 
   // ── ADVERBS (20) ────────────────────────────────────────
@@ -6810,7 +7856,11 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00114'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1415870',
+  frequency: 21500,
+  meanings: [{"en": "a lot; lots; plenty; many; a large number; much; a great deal; a good deal", "misc": ["biasanya kana saja"], "field": []}, {"en": "enough; sufficient", "misc": ["biasanya kana saja"], "field": []}, {"en": "enough; too many; too much", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -6835,7 +7885,11 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00113'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1348870',
+  frequency: 500,
+  forms: [{"word": "少し", "info": []}, {"word": "寡し", "info": ["kanji jarang dipakai"]}, {"word": "些し", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "a little; a bit; a small amount; a few; some; slightly; somewhat", "misc": [], "field": []}, {"en": "a little while; a short time; a moment; a minute", "misc": [], "field": []}, {"en": "a little way; a short distance", "misc": [], "field": []}],
 },
 
 {
@@ -6860,7 +7914,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1012480',
+  frequency: 1000,
+  meanings: [{"en": "already; yet; by now; now; (not) any more; (not) any longer", "misc": [], "field": []}, {"en": "soon; shortly; before long; presently", "misc": [], "field": []}, {"en": "further; more; again; another; the other", "misc": [], "field": []}, {"en": "jeez; geez; gee; boy; come on; damn; seriously", "misc": [], "field": []}],
 },
 
 {
@@ -6885,7 +7942,11 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00115'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1527110',
+  frequency: 1000,
+  meanings: [{"en": "still; as yet; only", "misc": ["biasanya kana saja"], "field": []}, {"en": "(not) yet", "misc": ["biasanya kana saja"], "field": []}, {"en": "more; (more) still", "misc": ["biasanya kana saja"], "field": []}, {"en": "at least; comparatively; relatively", "misc": ["biasanya kana saja"], "field": []}, {"en": "unfinished; incomplete; not yet done", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -6910,7 +7971,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1163420',
+  frequency: 1000,
+  meanings: [{"en": "together (with)", "misc": [], "field": []}, {"en": "at the same time", "misc": [], "field": []}, {"en": "in one lump; in the same category", "misc": [], "field": []}],
 },
 
 {
@@ -6935,7 +7999,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1013050',
+  frequency: 1000,
+  meanings: [{"en": "slowly; unhurriedly; without haste; leisurely; at one's leisure", "misc": ["onomatopoeic or mimetic word"], "field": []}, {"en": "easily (e.g. in time); well; sufficiently; amply; with time to spare", "misc": ["onomatopoeic or mimetic word"], "field": []}, {"en": "well (e.g. sleep); comfortably", "misc": ["onomatopoeic or mimetic word"], "field": []}],
+  misc_jm: ["onomatopoeic or mimetic word"],
+  conjugations: {"dict": "ゆっくり", "masu": "ゆっくりします", "te": "ゆっくりして", "ta": "ゆっくりした", "nai": "ゆっくりしない", "potential": "ゆっくりできる", "passive": "ゆっくりされる", "causative": "ゆっくりさせる", "volitional": "ゆっくりしよう", "cond_ba": "ゆっくりすれば", "cond_tara": "ゆっくりしたら"},
 },
 
 {
@@ -6960,7 +8029,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1188890',
+  frequency: 1000,
+  meanings: [{"en": "always; all the time; at all times", "misc": ["biasanya kana saja"], "field": []}, {"en": "never", "misc": ["biasanya kana saja"], "field": []}, {"en": "usual; regular; habitual; customary", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -6985,7 +8058,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: ['vg-n5-00119'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1598680',
+  frequency: 3500,
+  forms: [{"word": "時々", "info": []}, {"word": "時時", "info": []}, {"word": "時どき", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "sometimes; occasionally; at times; from time to time; now and then; once in a while; at intervals", "misc": [], "field": []}, {"en": "seasonal; of the season; appropriate (for the season or occasion)", "misc": [], "field": []}],
 },
 
 {
@@ -7010,7 +8087,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1008460',
+  frequency: 1000,
+  meanings: [{"en": "but; however; though; nevertheless; still; yet; even so; also; as well", "misc": [], "field": []}, {"en": "even", "misc": [], "field": []}, {"en": "however; no matter how; even if; even though", "misc": [], "field": []}, {"en": "... or something", "misc": [], "field": []}, {"en": "either ... or ...; neither ... nor ...", "misc": [], "field": []}, {"en": "pseudo-; quack; in-name-only", "misc": [], "field": []}, {"en": "for lack of anything better to do", "misc": [], "field": []}],
 },
 
 {
@@ -7035,7 +8115,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1006730',
+  frequency: 1000,
+  forms: [{"word": "而して", "info": ["kanji jarang dipakai"]}, {"word": "然して", "info": ["kanji jarang dipakai"]}],
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -7060,7 +8144,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1414580',
+  frequency: 12000,
+  forms: [{"word": "大抵", "info": []}, {"word": "大てい", "info": []}],
+  meanings: [{"en": "mostly; ordinarily; usually; generally", "misc": ["biasanya kana saja"], "field": []}, {"en": "probably", "misc": [], "field": []}, {"en": "most; almost all", "misc": [], "field": []}, {"en": "ordinary", "misc": [], "field": []}, {"en": "proper; appropriate; moderate", "misc": [], "field": []}],
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -7085,7 +8174,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1598680',
+  frequency: 3500,
+  forms: [{"word": "時々", "info": []}, {"word": "時時", "info": []}, {"word": "時どき", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "sometimes; occasionally; at times; from time to time; now and then; once in a while; at intervals", "misc": [], "field": []}, {"en": "seasonal; of the season; appropriate (for the season or occasion)", "misc": [], "field": []}],
 },
 
 {
@@ -7110,7 +8203,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1584930',
+  frequency: 7500,
+  forms: [{"word": "余り", "info": []}, {"word": "餘り", "info": ["word containing out-dated kanji or kanji usage"]}, {"word": "剰り", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "remainder; remnant; rest; balance; surplus; remains (of a meal); leftovers", "misc": ["biasanya kana saja"], "field": []}, {"en": "(not) very; (not) much", "misc": ["biasanya kana saja"], "field": []}, {"en": "too much; excessively; overly", "misc": ["biasanya kana saja"], "field": []}, {"en": "extreme; great; severe; tremendous; terrible", "misc": [], "field": []}, {"en": "not very good; so-so; mediocre", "misc": ["percakapan kasual"], "field": []}, {"en": "more than; over", "misc": [], "field": []}],
+  misc_jm: ["biasanya kana saja", "kasual"],
 },
 
 {
@@ -7135,7 +8233,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1395620',
+  frequency: 8000,
+  forms: [{"word": "全然", "info": []}, {"word": "全っ然", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "(not) at all; (not) in the slightest", "misc": [], "field": []}, {"en": "wholly; entirely; completely; totally", "misc": [], "field": []}, {"en": "extremely; very", "misc": ["percakapan kasual"], "field": []}],
+  misc_jm: ["kasual"],
 },
 
 {
@@ -7160,7 +8263,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1547320',
+  frequency: 5500,
+  forms: [{"word": "欲", "info": []}, {"word": "慾", "info": ["kanji jarang dipakai"]}],
 },
 
 {
@@ -7185,7 +8291,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1008630',
+  frequency: 1000,
+  meanings: [{"en": "very; awfully; exceedingly", "misc": ["biasanya kana saja"], "field": []}, {"en": "(not) at all; by no means; simply (cannot)", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -7210,7 +8320,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1414470',
+  frequency: 6500,
+  meanings: [{"en": "generally; on the whole; mostly; almost; nearly; approximately; roughly; about", "misc": ["biasanya kana saja"], "field": []}, {"en": "general; rough", "misc": ["biasanya kana saja"], "field": []}, {"en": "outline; main points; gist; substance; essence", "misc": ["biasanya kana saja"], "field": []}, {"en": "in the first place; first and foremost; from the start; to begin with", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -7235,7 +8349,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1012620',
+  frequency: 1000,
 },
 
 {
@@ -7285,7 +8401,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1163940',
+  frequency: 1000,
+  forms: [{"word": "一寸", "info": ["kanji jarang dipakai"]}, {"word": "鳥渡", "info": ["ateji (phonetic) reading", "kanji jarang dipakai"]}],
+  meanings: [{"en": "a little; a bit; slightly", "misc": ["biasanya kana saja"], "field": []}, {"en": "just a minute; for a moment; briefly", "misc": ["biasanya kana saja"], "field": []}, {"en": "somewhat; rather; fairly; pretty; quite", "misc": ["biasanya kana saja"], "field": []}, {"en": "(not) easily; (not) readily", "misc": ["biasanya kana saja"], "field": []}, {"en": "hey!; come on; excuse me", "misc": ["biasanya kana saja"], "field": []}, {"en": "thanks, but no; not feasible; not possible", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
 },
 
   // ── NOUNS (416) ────────────────────────────────────────
@@ -7312,7 +8433,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2858378',
+  misc_jm: ["biasanya kana saja", "kasual"],
 },
 
 {
@@ -7337,7 +8460,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1206730',
+  frequency: 500,
+  forms: [{"word": "学校", "info": []}, {"word": "學校", "info": ["search-only kanji form"]}],
 },
 
 {
@@ -7362,7 +8488,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1198550',
+  frequency: 500,
+  forms: [{"word": "会社", "info": []}, {"word": "會社", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "company; corporation; firm", "misc": [], "field": []}, {"en": "one's workplace", "misc": [], "field": []}],
 },
 
 {
@@ -7387,7 +8517,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1443530',
+  frequency: 2000,
 },
 
 {
@@ -7412,7 +8544,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1175140',
+  frequency: 2500,
+  forms: [{"word": "駅", "info": []}, {"word": "驛", "info": ["word containing out-dated kanji or kanji usage"]}],
+  meanings: [{"en": "railway station; train station", "misc": [], "field": []}, {"en": "staging post on a highway (in pre-modern Japan)", "misc": ["historical term"], "field": []}, {"en": "counter for railway stations and bus stations", "misc": [], "field": []}],
+  misc_jm: ["historical term"],
 },
 
 {
@@ -7437,7 +8574,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1490220',
+  frequency: 500,
 },
 
 {
@@ -7462,7 +8601,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1358340',
+  frequency: 4000,
+  forms: [{"word": "食べ物", "info": []}, {"word": "食べもの", "info": ["search-only kanji form"]}],
 },
 
 {
@@ -7487,7 +8629,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1600430',
+  frequency: 10000,
+  forms: [{"word": "飲み物", "info": []}, {"word": "飲物", "info": []}, {"word": "飲みもの", "info": ["search-only kanji form"]}],
 },
 
 {
@@ -7512,7 +8657,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1540170',
+  frequency: 2500,
+  forms: [{"word": "友達", "info": []}, {"word": "友だち", "info": []}],
 },
 
 {
@@ -7537,7 +8685,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2841735',
+  meanings: [{"en": "teacher; instructor; master", "misc": ["archaic"], "field": []}, {"en": "previous existence", "misc": ["archaic"], "field": ["Buddhism"]}],
+  misc_jm: ["arkais"],
 },
 
 {
@@ -7562,7 +8713,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1315920',
+  frequency: 500,
+  meanings: [{"en": "time", "misc": [], "field": []}, {"en": "hour", "misc": [], "field": []}, {"en": "period; class; lesson", "misc": [], "field": []}],
 },
 
 {
@@ -7587,7 +8741,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: ['vg-n5-00096', 'vg-n5-00097'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1579110',
+  frequency: 1000,
+  meanings: [{"en": "today; this day", "misc": [], "field": []}, {"en": "these days; recently; nowadays", "misc": [], "field": []}],
 },
 
 {
@@ -7612,7 +8769,10 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00097'],
   see_also: ['vg-n5-00095'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1584660',
+  frequency: 2500,
+  meanings: [{"en": "tomorrow", "misc": [], "field": []}, {"en": "near future", "misc": [], "field": []}],
 },
 
 {
@@ -7637,7 +8797,9 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00096'],
   see_also: ['vg-n5-00095'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1579260',
+  frequency: 5000,
 },
 
 {
@@ -7662,7 +8824,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1438690',
+  frequency: 3000,
+  meanings: [{"en": "weather", "misc": [], "field": []}, {"en": "fair weather; fine weather", "misc": [], "field": []}],
 },
 
 {
@@ -7687,7 +8852,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1001820',
+  frequency: 2000,
+  forms: [{"word": "お金", "info": []}, {"word": "御金", "info": []}],
+  misc_jm: ["polite (teineigo) language"],
 },
 
 {
@@ -7712,7 +8881,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1264540',
+  frequency: 500,
+  forms: [{"word": "言葉", "info": []}, {"word": "詞", "info": ["kanji jarang dipakai"]}, {"word": "辞", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "language; dialect", "misc": [], "field": []}, {"en": "word; phrase; expression; term", "misc": [], "field": []}, {"en": "speech; (manner of) speaking; (use of) language", "misc": [], "field": []}, {"en": "words; remark; statement; comment", "misc": [], "field": []}, {"en": "learning to speak; language acquisition", "misc": [], "field": []}],
 },
 
 {
@@ -7737,7 +8910,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1192150',
+  frequency: 500,
 },
 
 {
@@ -7762,7 +8937,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1497610',
+  frequency: 500,
+  misc_jm: ["humble (kenjougo) language"],
 },
 
 {
@@ -7787,7 +8965,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2869058',
+  misc_jm: ["arkais"],
 },
 
 {
@@ -7812,7 +8992,9 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00105'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2857350',
+  misc_jm: ["poetical term"],
 },
 
 {
@@ -7837,7 +9019,8 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00104'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2827999',
 },
 
 {
@@ -7862,7 +9045,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1333520',
+  frequency: 3000,
 },
 
 {
@@ -7887,7 +9072,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1548220',
+  frequency: 500,
+  forms: [{"word": "来年", "info": []}, {"word": "來年", "info": ["search-only kanji form"]}],
 },
 
 {
@@ -7912,7 +9100,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1522150',
+  frequency: 1000,
+  meanings: [{"en": "book; volume; script", "misc": [], "field": []}, {"en": "this; present; current; ... in question; ... at issue", "misc": [], "field": []}, {"en": "main; head; principal", "misc": [], "field": []}, {"en": "real; genuine; regular; proper", "misc": [], "field": []}, {"en": "counter for long, cylindrical things; counter for films, TV shows, etc.; counter for goals, home runs, etc.; counter for telephone calls", "misc": [], "field": []}],
 },
 
 {
@@ -7937,7 +9128,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2773260',
+  meanings: [{"en": "car; vehicle; van; truck; wagon; lorry", "misc": [], "field": []}, {"en": "(train) car; carriage", "misc": [], "field": []}],
 },
 
 {
@@ -7962,7 +9155,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1321900',
+  frequency: 500,
+  forms: [{"word": "写真", "info": []}, {"word": "寫眞", "info": ["search-only kanji form"]}, {"word": "寫真", "info": ["search-only kanji form"]}, {"word": "冩眞", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "photograph; photo; picture; photography", "misc": [], "field": []}, {"en": "moving picture; movie", "misc": ["obsolete term", "abbreviation"], "field": []}],
+  misc_jm: ["abbreviation", "obsolete term"],
 },
 
 {
@@ -7987,7 +9185,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1327720',
+  frequency: 1500,
 },
 
 {
@@ -8012,7 +9212,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2856440',
+  misc_jm: ["abbreviation"],
 },
 
 {
@@ -8037,7 +9239,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2021500',
+  meanings: [{"en": "order", "misc": [], "field": ["biology"]}, {"en": "item (of a budget revision, etc.)", "misc": [], "field": []}, {"en": "counter for played stones; counter for surrounded points", "misc": [], "field": ["go (game)"]}],
 },
 
 {
@@ -8062,7 +9266,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1327190',
+  frequency: 500,
+  meanings: [{"en": "hand; arm", "misc": [], "field": []}, {"en": "forepaw; foreleg", "misc": ["percakapan kasual"], "field": []}, {"en": "handle", "misc": [], "field": []}, {"en": "hand; worker; help", "misc": [], "field": []}, {"en": "trouble; care; effort", "misc": [], "field": []}, {"en": "means; way; trick; move; technique; workmanship", "misc": [], "field": []}, {"en": "hand; handwriting", "misc": [], "field": []}, {"en": "kind; type; sort", "misc": [], "field": []}, {"en": "one's hands; one's possession", "misc": [], "field": []}, {"en": "ability to cope", "misc": [], "field": []}, {"en": "hand (of cards)", "misc": [], "field": []}, {"en": "direction", "misc": [], "field": []}, {"en": "move (in go, shogi, etc.)", "misc": [], "field": []}],
+  misc_jm: ["kasual"],
 },
 
 {
@@ -8187,7 +9395,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2647220',
+  forms: [{"word": "山", "info": []}, {"word": "牟礼", "info": []}],
+  misc_jm: ["arkais"],
 },
 
 {
@@ -8212,7 +9423,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1390020',
+  frequency: 5000,
+  forms: [{"word": "川", "info": []}, {"word": "河", "info": []}],
+  meanings: [{"en": "river; stream", "misc": [], "field": []}, {"en": "River; the ... river", "misc": [], "field": []}],
 },
 
 {
@@ -8237,7 +9452,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1194500',
+  frequency: 500,
+  forms: [{"word": "花", "info": []}, {"word": "華", "info": []}],
+  meanings: [{"en": "flower; blossom; bloom; petal", "misc": [], "field": []}, {"en": "cherry blossom", "misc": [], "field": []}, {"en": "beauty", "misc": [], "field": []}, {"en": "blooming (esp. of cherry blossoms)", "misc": [], "field": []}, {"en": "ikebana", "misc": [], "field": []}, {"en": "hanafuda", "misc": ["abbreviation"], "field": ["hanafuda"]}, {"en": "(the) best", "misc": [], "field": []}, {"en": "glorious; lovely", "misc": [], "field": []}],
+  misc_jm: ["abbreviation"],
 },
 
 {
@@ -8262,7 +9482,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1171900',
+  frequency: 1000,
+  meanings: [{"en": "rain", "misc": [], "field": []}, {"en": "rainy day; rainy weather", "misc": [], "field": []}, {"en": "the November suit (in hanafuda)", "misc": [], "field": []}],
 },
 
 {
@@ -8287,7 +9510,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1386500',
+  frequency: 1500,
 },
 
 {
@@ -8312,7 +9537,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1270590',
+  frequency: 23500,
+  forms: [{"word": "ご飯", "info": []}, {"word": "御飯", "info": []}],
+  meanings: [{"en": "cooked rice", "misc": [], "field": []}, {"en": "meal", "misc": [], "field": []}],
 },
 
 {
@@ -8337,7 +9566,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2153780',
+  meanings: [{"en": "Wednesday", "misc": ["abbreviation"], "field": []}, {"en": "shaved ice (served with flavored syrup)", "misc": [], "field": []}, {"en": "water (fifth of the five elements)", "misc": [], "field": []}],
+  misc_jm: ["abbreviation"],
 },
 
 {
@@ -8362,7 +9594,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2849347',
+  forms: [{"word": "肉", "info": []}, {"word": "宍", "info": []}],
 },
 
 {
@@ -8387,7 +9621,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1578010',
+  frequency: 1500,
 },
 
 {
@@ -8412,7 +9648,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1537370',
+  frequency: 1500,
+  meanings: [{"en": "vegetable", "misc": [], "field": []}, {"en": "marijuana; cannabis", "misc": ["slang"], "field": []}],
+  misc_jm: ["slang"],
 },
 
 {
@@ -8437,7 +9677,10 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00150'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1171010',
+  frequency: 500,
+  meanings: [{"en": "right; right-hand side", "misc": [], "field": []}, {"en": "right hand", "misc": [], "field": []}, {"en": "the above (in a piece of vertical writing); above-mentioned", "misc": [], "field": []}, {"en": "the right (wing); rightist", "misc": [], "field": []}, {"en": "the better (of two)", "misc": [], "field": []}],
 },
 
 {
@@ -8462,7 +9705,8 @@ window.vocabN5 = [
   antonyms: ['vg-n5-00149'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2261470',
 },
 
 {
@@ -8487,7 +9731,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: ['vg-n5-00157'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1098390',
+  frequency: 1000,
+  meanings: [{"en": "bus", "misc": [], "field": []}, {"en": "bus", "misc": [], "field": ["computing"]}],
 },
 
 {
@@ -8512,7 +9759,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1173720',
+  frequency: 500,
+  forms: [{"word": "映画", "info": []}, {"word": "映畫", "info": ["search-only kanji form"]}, {"word": "映畵", "info": ["search-only kanji form"]}],
 },
 
 {
@@ -8537,7 +9787,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1529410',
+  frequency: 1000,
+  forms: [{"word": "夢", "info": []}, {"word": "夣", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "dream", "misc": [], "field": []}, {"en": "dream; hope; wish; aspiration; ambition", "misc": [], "field": []}, {"en": "unrealistic aspiration; daydream; pipe dream", "misc": [], "field": []}, {"en": "delusion; illusion", "misc": [], "field": []}, {"en": "fleeting thing; something short-lived", "misc": [], "field": []}],
 },
 
 {
@@ -8562,7 +9816,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: ['vg-n5-00153'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1076190',
+  frequency: 1000,
 },
 
 {
@@ -8587,7 +9843,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: ['vg-n5-00159'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2698030',
+  misc_jm: ["arkais"],
 },
 
 {
@@ -8612,7 +9870,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: ['vg-n5-00158'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1258330',
+  frequency: 1500,
+  forms: [{"word": "犬", "info": []}, {"word": "狗", "info": []}],
+  meanings: [{"en": "dog (Canis (lupus) familiaris); canine", "misc": [], "field": []}, {"en": "squealer; rat; snitch; informer; informant; spy", "misc": ["derogatory", "biasanya kana saja"], "field": []}, {"en": "loser; asshole", "misc": ["derogatory"], "field": []}, {"en": "counterfeit; inferior; useless; wasteful", "misc": [], "field": []}],
+  misc_jm: ["biasanya kana saja", "derogatory"],
 },
 
 {
@@ -8637,7 +9900,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1409160',
+  forms: [{"word": "体", "info": []}, {"word": "態", "info": []}],
 },
 
 {
@@ -8662,7 +9927,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: ['vg-n5-00160'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2843495',
+  misc_jm: ["arkais"],
 },
 
 {
@@ -8687,7 +9954,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: ['vg-n5-00161'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1583720',
+  frequency: 4500,
 },
 
 {
@@ -8712,7 +9981,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1191740',
+  frequency: 1000,
+  meanings: [{"en": "one's house; one's home; one's family; one's household", "misc": ["biasanya kana saja"], "field": []}, {"en": "house", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -8737,7 +10010,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1499320',
+  frequency: 1000,
+  meanings: [{"en": "room; chamber", "misc": [], "field": []}, {"en": "apartment; flat; pad", "misc": [], "field": []}, {"en": "stable", "misc": ["abbreviation"], "field": ["sumo"]}],
+  misc_jm: ["abbreviation"],
 },
 
 {
@@ -8762,7 +10039,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1087820',
+  frequency: 1000,
 },
 
 {
@@ -8787,7 +10066,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1401400',
+  frequency: 2000,
+  forms: [{"word": "窓", "info": []}, {"word": "窗", "info": ["kanji jarang dipakai"]}, {"word": "牖", "info": ["kanji jarang dipakai"]}, {"word": "牕", "info": ["kanji jarang dipakai"]}],
 },
 
 {
@@ -8812,7 +10094,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1220210',
+  frequency: 3500,
+  forms: [{"word": "机", "info": []}, {"word": "案", "info": ["word containing out-dated kanji or kanji usage"]}],
 },
 
 {
@@ -8837,7 +10122,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1157070',
+  frequency: 11000,
+  forms: [{"word": "椅子", "info": []}, {"word": "倚子", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "chair; seat; stool; bench", "misc": [], "field": []}, {"en": "post; position; seat; office", "misc": [], "field": []}],
 },
 
 {
@@ -8862,7 +10151,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1260490',
+  frequency: 9000,
+  forms: [{"word": "鍵", "info": []}, {"word": "鑰", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "key", "misc": [], "field": []}, {"en": "lock", "misc": [], "field": []}, {"en": "key (to a problem, success, etc.); clue", "misc": [], "field": []}],
 },
 
 {
@@ -8887,7 +10180,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1207670',
+  frequency: 12000,
+  meanings: [{"en": "conical hat (East-Asian style); coolie hat", "misc": [], "field": []}, {"en": "something shaped like a conical hat or an umbrella; shade (of a lamp); mushroom cap; pileus", "misc": [], "field": []}],
 },
 
 {
@@ -8912,7 +10208,8 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1294870',
 },
 
 {
@@ -8937,7 +10234,8 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1186150',
 },
 
 {
@@ -8962,7 +10260,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1538160',
+  frequency: 2000,
+  meanings: [{"en": "medicine; pharmaceuticals; (legal) drugs; pill; ointment; salve", "misc": [], "field": []}, {"en": "efficacious chemical (gunpowder, pesticide, etc.)", "misc": [], "field": []}, {"en": "(pottery) glaze", "misc": [], "field": []}, {"en": "(illegal) drug; narcotic", "misc": [], "field": []}, {"en": "small bribe", "misc": [], "field": []}],
 },
 
 {
@@ -8987,7 +10288,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1490230',
+  frequency: 1000,
+  forms: [{"word": "病気", "info": []}, {"word": "病氣", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "illness (usu. excluding minor ailments, e.g. common cold); disease; sickness", "misc": [], "field": []}, {"en": "bad habit; bad behaviour; weakness; failing", "misc": [], "field": []}, {"en": "crazy; insane; disturbed; sick in the head", "misc": ["percakapan kasual"], "field": []}],
+  misc_jm: ["kasual"],
 },
 
 {
@@ -9012,7 +10318,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1467710',
+  frequency: 2500,
+  meanings: [{"en": "heat", "misc": [], "field": []}, {"en": "fever; temperature", "misc": [], "field": []}, {"en": "zeal; passion; enthusiasm; mania; craze; rage", "misc": [], "field": []}],
 },
 
 {
@@ -9037,7 +10346,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1217730',
+  frequency: 500,
+  forms: [{"word": "顔", "info": []}, {"word": "貌", "info": ["kanji jarang dipakai"]}, {"word": "顏", "info": ["word containing out-dated kanji or kanji usage"]}],
+  meanings: [{"en": "face; visage; looks; (facial) features", "misc": [], "field": []}, {"en": "look; (facial) expression; countenance", "misc": [], "field": []}, {"en": "honor (honour); face; dignity", "misc": [], "field": []}, {"en": "influence; notoriety; trust; pull; clout", "misc": [], "field": []}, {"en": "representative; (the) face (of something); trademark; example", "misc": [], "field": []}, {"en": "members; attendees; lineup; participants; everyone involved", "misc": [], "field": []}, {"en": "makeup; cosmetics", "misc": [], "field": []}],
 },
 
 {
@@ -9062,7 +10375,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1197710',
+  frequency: 4000,
+  meanings: [{"en": "sprout; shoot; bud", "misc": [], "field": []}, {"en": "germinal disk (in an egg)", "misc": [], "field": []}],
 },
 
 {
@@ -9087,7 +10403,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1317170',
+  frequency: 1500,
+  meanings: [{"en": "ear", "misc": [], "field": []}, {"en": "hearing", "misc": [], "field": []}, {"en": "ear (for music, etc.)", "misc": [], "field": []}, {"en": "edge; crust; heel (of bread or cheese); selvedge (of woven fabric); selvage", "misc": [], "field": []}, {"en": "ear (of a pot, jug, etc.); handle", "misc": [], "field": []}],
 },
 
 {
@@ -9112,7 +10431,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1194500',
+  frequency: 500,
+  forms: [{"word": "花", "info": []}, {"word": "華", "info": []}],
+  meanings: [{"en": "flower; blossom; bloom; petal", "misc": [], "field": []}, {"en": "cherry blossom", "misc": [], "field": []}, {"en": "beauty", "misc": [], "field": []}, {"en": "blooming (esp. of cherry blossoms)", "misc": [], "field": []}, {"en": "ikebana", "misc": [], "field": []}, {"en": "hanafuda", "misc": ["abbreviation"], "field": ["hanafuda"]}, {"en": "(the) best", "misc": [], "field": []}, {"en": "glorious; lovely", "misc": [], "field": []}],
+  misc_jm: ["abbreviation"],
 },
 
 {
@@ -9137,7 +10461,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1275640',
+  frequency: 1000,
+  meanings: [{"en": "mouth", "misc": [], "field": []}, {"en": "opening; hole; gap; orifice", "misc": [], "field": []}, {"en": "mouth (of a bottle); spout; nozzle; mouthpiece", "misc": [], "field": []}, {"en": "gate; door; entrance; exit", "misc": [], "field": []}, {"en": "speaking; speech; talk (i.e. gossip)", "misc": [], "field": []}, {"en": "taste; palate", "misc": [], "field": []}, {"en": "mouth (to feed)", "misc": [], "field": []}, {"en": "opening (i.e. vacancy); available position", "misc": [], "field": []}, {"en": "invitation; summons", "misc": [], "field": []}, {"en": "kind; sort; type", "misc": [], "field": []}, {"en": "opening (i.e. beginning)", "misc": [], "field": []}, {"en": "counter for mouthfuls, shares (of money) and stove burners", "misc": [], "field": []}, {"en": "counter for swords, blades, etc.", "misc": [], "field": []}],
 },
 
 {
@@ -9162,7 +10489,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1151290',
+  misc_jm: ["arkais"],
 },
 
 {
@@ -9187,7 +10516,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1472800',
+  frequency: 3500,
+  forms: [{"word": "背中", "info": []}, {"word": "背なか", "info": ["search-only kanji form"]}],
 },
 
 {
@@ -9212,7 +10544,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1270590',
+  frequency: 23500,
+  forms: [{"word": "ご飯", "info": []}, {"word": "御飯", "info": []}],
+  meanings: [{"en": "cooked rice", "misc": [], "field": []}, {"en": "meal", "misc": [], "field": []}],
 },
 
 {
@@ -9237,7 +10573,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1103090',
+  frequency: 1000,
+  meanings: [{"en": "bread; (sweet) pastry", "misc": [], "field": []}, {"en": "staff of life; one's bread", "misc": [], "field": []}],
 },
 
 {
@@ -9262,7 +10601,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1549140',
+  frequency: 2500,
+  forms: [{"word": "卵", "info": []}, {"word": "玉子", "info": []}],
+  meanings: [{"en": "eggs; egg; spawn; roe", "misc": [], "field": []}, {"en": "(hen's) egg", "misc": [], "field": []}, {"en": "a ... in the making; future (lawyer, doctor, etc.); budding ...", "misc": [], "field": []}, {"en": "beginning; origin; infancy", "misc": [], "field": []}],
 },
 
 {
@@ -9287,7 +10630,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1231590',
+  frequency: 4000,
 },
 
 {
@@ -9312,7 +10657,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1002430',
+  frequency: 3000,
+  forms: [{"word": "お茶", "info": []}, {"word": "御茶", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "tea (esp. green or barley)", "misc": ["polite (teineigo) language"], "field": []}, {"en": "tea break; teatime", "misc": [], "field": []}, {"en": "tea ceremony", "misc": [], "field": []}],
+  misc_jm: ["polite (teineigo) language"],
 },
 
 {
@@ -9337,7 +10687,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1371260',
+  frequency: 500,
+  meanings: [{"en": "water (esp. cool or cold)", "misc": [], "field": []}, {"en": "fluid (esp. in an animal tissue); liquid", "misc": [], "field": []}, {"en": "flood; floodwaters", "misc": [], "field": []}, {"en": "water offered to wrestlers just prior to a bout", "misc": [], "field": ["sumo"]}, {"en": "break granted to wrestlers engaged in a prolonged bout", "misc": [], "field": ["sumo"]}],
 },
 
 {
@@ -9362,7 +10715,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1555480',
+  frequency: 19000,
+  meanings: [{"en": "apple (fruit)", "misc": ["biasanya kana saja"], "field": []}, {"en": "apple tree (Malus pumila)", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -9387,7 +10744,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1099420',
+  frequency: 1000,
 },
 
 {
@@ -9412,7 +10771,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1291010',
+  frequency: 20000,
+  meanings: [{"en": "drinker; person who is fond of alcohol", "misc": [], "field": []}, {"en": "left-wing party", "misc": [], "field": []}],
 },
 
 {
@@ -9437,7 +10799,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1428620',
+  frequency: 3500,
+  forms: [{"word": "潮", "info": []}, {"word": "汐", "info": []}],
+  meanings: [{"en": "tide; current", "misc": [], "field": []}, {"en": "sea water", "misc": [], "field": []}, {"en": "opportunity; chance", "misc": [], "field": []}],
 },
 
 {
@@ -9462,7 +10828,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1297170',
+  frequency: 23500,
+  forms: [{"word": "肴", "info": []}, {"word": "酒菜", "info": []}],
+  meanings: [{"en": "appetizer or snack served with drinks", "misc": [], "field": []}, {"en": "performance to liven up a bar; conversation to liven up a party", "misc": [], "field": []}],
 },
 
 {
@@ -9487,7 +10857,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1463520',
+  frequency: 2500,
+  meanings: [{"en": "flesh", "misc": [], "field": []}, {"en": "meat", "misc": [], "field": []}, {"en": "flesh (of a fruit); pulp", "misc": [], "field": []}, {"en": "the physical body (as opposed to the spirit); flesh", "misc": [], "field": []}, {"en": "thickness", "misc": [], "field": []}, {"en": "content; substance; flesh", "misc": [], "field": []}, {"en": "ink pad", "misc": [], "field": []}],
 },
 
 {
@@ -9512,7 +10885,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1537370',
+  frequency: 1500,
+  meanings: [{"en": "vegetable", "misc": [], "field": []}, {"en": "marijuana; cannabis", "misc": ["slang"], "field": []}],
+  misc_jm: ["slang"],
 },
 
 {
@@ -9537,7 +10914,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1193060',
+  frequency: 4500,
+  forms: [{"word": "果物", "info": []}, {"word": "菓物", "info": ["kanji jarang dipakai"]}],
 },
 
 {
@@ -9562,7 +10942,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1420900',
+  frequency: 2500,
+  misc_jm: ["abbreviation"],
 },
 
 {
@@ -9587,7 +10970,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1361590',
+  frequency: 1500,
 },
 
 {
@@ -9612,7 +10997,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1485470',
+  frequency: 2500,
 },
 
 {
@@ -9637,7 +11024,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1245570',
+  frequency: 500,
 },
 
 {
@@ -9662,7 +11051,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1279990',
+  frequency: 2000,
+  forms: [{"word": "港", "info": []}, {"word": "湊", "info": ["kanji jarang dipakai"]}],
 },
 
 {
@@ -9687,7 +11079,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1454290',
+  frequency: 1000,
 },
 
 {
@@ -9712,7 +11106,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1592970',
+  frequency: 5500,
+  forms: [{"word": "交差点", "info": []}, {"word": "交叉点", "info": ["kanji jarang dipakai"]}],
 },
 
 {
@@ -9737,7 +11134,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1304970',
+  frequency: 500,
+  meanings: [{"en": "work; job; labor; labour; business; task; assignment; occupation; employment", "misc": [], "field": []}, {"en": "work", "misc": [], "field": ["physics"]}],
 },
 
 {
@@ -9762,7 +11162,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1198550',
+  frequency: 500,
+  forms: [{"word": "会社", "info": []}, {"word": "會社", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "company; corporation; firm", "misc": [], "field": []}, {"en": "one's workplace", "misc": [], "field": []}],
 },
 
 {
@@ -9787,7 +11191,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1198360',
+  frequency: 500,
 },
 
 {
@@ -9812,7 +11218,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1206730',
+  frequency: 500,
+  forms: [{"word": "学校", "info": []}, {"word": "學校", "info": ["search-only kanji form"]}],
 },
 
 {
@@ -9837,7 +11246,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1237150',
+  frequency: 1500,
+  meanings: [{"en": "classroom; lecture room", "misc": [], "field": []}, {"en": "department (in a university)", "misc": [], "field": []}, {"en": "class; lessons; course", "misc": [], "field": []}, {"en": "school (for a particular discipline); teaching establishment", "misc": [], "field": []}],
 },
 
 {
@@ -9862,7 +11274,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1330290',
+  frequency: 1500,
 },
 
 {
@@ -9887,7 +11301,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1311180',
+  frequency: 12000,
 },
 
 {
@@ -9912,7 +11328,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1337270',
+  frequency: 6500,
+  meanings: [{"en": "homework; assignment", "misc": [], "field": []}, {"en": "pending issue; unresolved problem; open question", "misc": [], "field": []}],
 },
 
 {
@@ -9937,7 +11356,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1370420',
+  frequency: 2500,
 },
 
 {
@@ -9962,7 +11383,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1201190',
+  frequency: 1000,
 },
 
 {
@@ -9987,7 +11410,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1245290',
+  frequency: 1000,
+  forms: [{"word": "空", "info": []}, {"word": "虚", "info": ["word containing out-dated kanji or kanji usage"]}],
+  meanings: [{"en": "sky; the air; the heavens", "misc": [], "field": []}, {"en": "weather", "misc": [], "field": []}, {"en": "far-off place; distant place", "misc": [], "field": []}, {"en": "state of mind; feeling", "misc": [], "field": []}, {"en": "(from) memory; (by) heart", "misc": [], "field": []}, {"en": "falsehood; lie", "misc": [], "field": []}, {"en": "somehow; vaguely", "misc": [], "field": []}, {"en": "fake", "misc": [], "field": []}],
 },
 
 {
@@ -10012,7 +11439,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1220440',
+  frequency: 14500,
 },
 
 {
@@ -10037,7 +11466,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1191320',
+  frequency: 500,
 },
 
 {
@@ -10062,7 +11493,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1332650',
+  frequency: 500,
 },
 
 {
@@ -10087,7 +11520,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1446070',
+  frequency: 1500,
 },
 
 {
@@ -10112,7 +11547,8 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1181790',
 },
 
 {
@@ -10137,7 +11573,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1189930',
+  misc_jm: ["formal or literary term"],
 },
 
 {
@@ -10162,7 +11600,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1302680',
+  frequency: 1000,
+  meanings: [{"en": "mountain; hill", "misc": [], "field": []}, {"en": "mine", "misc": [], "field": []}, {"en": "(mountain) forest", "misc": [], "field": []}, {"en": "heap; pile; stack; mountain", "misc": [], "field": []}, {"en": "protruding or high part of an object; crown (of a hat); thread (of a screw); tread (of a tire)", "misc": [], "field": []}, {"en": "climax; peak; critical point", "misc": [], "field": []}, {"en": "guess; speculation; gamble", "misc": [], "field": []}, {"en": "(criminal) case; crime", "misc": ["slang", "biasanya kana saja"], "field": []}, {"en": "mountain climbing; mountaineering", "misc": [], "field": []}, {"en": "festival float (esp. one mounted with a decorative halberd)", "misc": [], "field": []}, {"en": "deck (from which players draw cards); draw pile; stock", "misc": [], "field": ["card games"]}, {"en": "wall; wall tile", "misc": [], "field": ["mahjong"]}, {"en": "wild", "misc": [], "field": []}],
+  misc_jm: ["biasanya kana saja", "slang"],
 },
 
 {
@@ -10187,7 +11629,8 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1181760',
 },
 
 {
@@ -10212,7 +11655,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1258330',
+  frequency: 1500,
+  forms: [{"word": "犬", "info": []}, {"word": "狗", "info": []}],
+  meanings: [{"en": "dog (Canis (lupus) familiaris); canine", "misc": [], "field": []}, {"en": "squealer; rat; snitch; informer; informant; spy", "misc": ["derogatory", "biasanya kana saja"], "field": []}, {"en": "loser; asshole", "misc": ["derogatory"], "field": []}, {"en": "counterfeit; inferior; useless; wasteful", "misc": [], "field": []}],
+  misc_jm: ["biasanya kana saja", "derogatory"],
 },
 
 {
@@ -10237,7 +11685,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1467640',
+  frequency: 3500,
+  meanings: [{"en": "cat (esp. the domestic cat, Felis catus); feline", "misc": [], "field": []}, {"en": "shamisen", "misc": [], "field": []}, {"en": "geisha", "misc": [], "field": []}, {"en": "wheelbarrow", "misc": ["abbreviation"], "field": []}, {"en": "clay bed-warmer", "misc": ["abbreviation"], "field": []}, {"en": "bottom (submissive partner of a homosexual relationship)", "misc": ["biasanya kana saja", "slang"], "field": []}],
+  misc_jm: ["abbreviation", "biasanya kana saja", "slang"],
 },
 
 {
@@ -10262,7 +11714,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1252990',
+  frequency: 7000,
+  forms: [{"word": "鶏", "info": []}, {"word": "鷄", "info": ["search-only kanji form"]}, {"word": "雞", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "chicken (Gallus gallus domesticus); domestic chicken", "misc": [], "field": []}, {"en": "chicken meat", "misc": [], "field": []}],
 },
 
 {
@@ -10287,7 +11743,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1593710',
+  frequency: 2000,
+  forms: [{"word": "桜", "info": []}, {"word": "櫻", "info": ["search-only kanji form"]}, {"word": "偽客", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "cherry tree; cherry blossom; sakura", "misc": [], "field": []}, {"en": "light pink", "misc": ["abbreviation"], "field": []}, {"en": "fake buyer; paid audience; shill; seat filler", "misc": ["biasanya kana saja"], "field": []}, {"en": "hired applauder", "misc": ["biasanya kana saja"], "field": []}, {"en": "horse meat", "misc": [], "field": []}],
+  misc_jm: ["abbreviation", "biasanya kana saja"],
 },
 
 {
@@ -10312,7 +11773,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1321900',
+  frequency: 500,
+  forms: [{"word": "写真", "info": []}, {"word": "寫眞", "info": ["search-only kanji form"]}, {"word": "寫真", "info": ["search-only kanji form"]}, {"word": "冩眞", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "photograph; photo; picture; photography", "misc": [], "field": []}, {"en": "moving picture; movie", "misc": ["obsolete term", "abbreviation"], "field": []}],
+  misc_jm: ["abbreviation", "obsolete term"],
 },
 
 {
@@ -10337,7 +11803,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1441930',
+  frequency: 20500,
 },
 
 {
@@ -10362,7 +11830,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1327720',
+  frequency: 1500,
 },
 
 {
@@ -10387,7 +11857,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1362360',
+  frequency: 500,
 },
 
 {
@@ -10412,7 +11884,8 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1174370',
 },
 
 {
@@ -10437,7 +11910,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1464530',
+  frequency: 1000,
 },
 
 {
@@ -10462,7 +11937,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1264540',
+  frequency: 500,
+  forms: [{"word": "言葉", "info": []}, {"word": "詞", "info": ["kanji jarang dipakai"]}, {"word": "辞", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "language; dialect", "misc": [], "field": []}, {"en": "word; phrase; expression; term", "misc": [], "field": []}, {"en": "speech; (manner of) speaking; (use of) language", "misc": [], "field": []}, {"en": "words; remark; statement; comment", "misc": [], "field": []}, {"en": "learning to speak; language acquisition", "misc": [], "field": []}],
 },
 
 {
@@ -10487,7 +11966,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1531710',
+  frequency: 1000,
+  forms: [{"word": "名前", "info": []}, {"word": "名まえ", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "name", "misc": [], "field": []}, {"en": "given name; first name", "misc": [], "field": []}],
 },
 
 {
@@ -10512,7 +11995,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1540170',
+  frequency: 2500,
+  forms: [{"word": "友達", "info": []}, {"word": "友だち", "info": []}],
 },
 
 {
@@ -10537,7 +12023,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1192150',
+  frequency: 500,
 },
 
 {
@@ -10562,7 +12050,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1464980',
+  frequency: 4500,
+  meanings: [{"en": "milk", "misc": [], "field": []}, {"en": "breast", "misc": [], "field": []}, {"en": "loop", "misc": [], "field": []}, {"en": "decorative bump (on a hanging bell)", "misc": [], "field": []}],
 },
 
 {
@@ -10587,7 +12078,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1225880',
+  frequency: 8500,
+  meanings: [{"en": "mother-in-law", "misc": [], "field": []}, {"en": "foster mother", "misc": [], "field": []}, {"en": "step mother", "misc": [], "field": []}],
 },
 
 {
@@ -10612,7 +12106,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1225790',
+  frequency: 12500,
+  meanings: [{"en": "brother-in-law (spouse's older brother or older sister's husband)", "misc": [], "field": []}, {"en": "older stepbrother", "misc": [], "field": []}],
 },
 
 {
@@ -10637,7 +12134,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1225800',
+  frequency: 16000,
+  meanings: [{"en": "sister-in-law (spouse's older sister or older brother's wife)", "misc": [], "field": []}, {"en": "older stepsister; older adopted sister; non-blood-related older sister", "misc": [], "field": []}],
 },
 
 {
@@ -10662,7 +12162,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1225850',
+  frequency: 12500,
+  meanings: [{"en": "brother-in-law (spouse's younger brother or younger sister's husband)", "misc": [], "field": []}, {"en": "younger stepbrother", "misc": ["rare term"], "field": []}],
+  misc_jm: ["rare term"],
 },
 
 {
@@ -10687,7 +12191,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1225890',
+  frequency: 17500,
+  meanings: [{"en": "sister-in-law (spouse's younger sister or younger brother's wife)", "misc": [], "field": []}, {"en": "younger stepsister; younger adopted sister; non-blood-related younger sister", "misc": [], "field": []}],
 },
 
 {
@@ -10712,7 +12219,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1387980',
+  frequency: 3000,
 },
 
 {
@@ -10737,7 +12246,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1206900',
+  frequency: 500,
+  forms: [{"word": "学生", "info": []}, {"word": "學生", "info": ["search-only kanji form"]}],
 },
 
 {
@@ -10762,7 +12274,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1049180',
+  frequency: 1000,
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -10787,7 +12302,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1065950',
+  frequency: 1000,
+  meanings: [{"en": "juice", "misc": [], "field": []}, {"en": "soft drink (usu. fruit-based); sweetened drink", "misc": [], "field": []}],
 },
 
 {
@@ -10812,7 +12330,8 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1104550',
 },
 
 {
@@ -10837,7 +12356,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1047860',
+  frequency: 1000,
 },
 
 {
@@ -10862,7 +12383,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1013980',
+  frequency: 1000,
 },
 
 {
@@ -10887,7 +12410,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1145310',
+  frequency: 1000,
 },
 
 {
@@ -10912,7 +12437,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1066710',
+  frequency: 1000,
+  meanings: [{"en": "supermarket", "misc": ["abbreviation"], "field": []}, {"en": "subtitles; telop", "misc": ["abbreviation"], "field": []}, {"en": "superheterodyne", "misc": ["abbreviation"], "field": []}, {"en": "super", "misc": [], "field": []}],
+  misc_jm: ["abbreviation"],
 },
 
 {
@@ -10937,7 +12466,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1053280',
+  misc_jm: ["abbreviation"],
 },
 
 {
@@ -10962,7 +12493,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1083590',
+  frequency: 1000,
+  meanings: [{"en": "department store", "misc": ["abbreviation"], "field": []}, {"en": "department", "misc": ["abbreviation"], "field": []}],
+  misc_jm: ["abbreviation"],
 },
 
 {
@@ -10987,7 +12522,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1122650',
+  frequency: 1000,
 },
 
 {
@@ -11012,7 +12549,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1017760',
+  frequency: 1000,
+  meanings: [{"en": "apartment building; apartment block; apartment house", "misc": ["abbreviation"], "field": []}, {"en": "apartment", "misc": ["abbreviation"], "field": []}],
+  misc_jm: ["abbreviation"],
 },
 
 {
@@ -11037,7 +12578,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1080510',
+  frequency: 1000,
+  meanings: [{"en": "television; TV", "misc": ["abbreviation"], "field": []}, {"en": "TV program; TV programme; TV broadcast", "misc": [], "field": []}],
+  misc_jm: ["abbreviation"],
 },
 
 {
@@ -11062,7 +12607,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1138860',
+  frequency: 1000,
 },
 
 {
@@ -11087,7 +12634,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1038350',
+  frequency: 1000,
 },
 
 {
@@ -11112,7 +12661,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2641300',
+  frequency: 1000,
+  misc_jm: ["abbreviation"],
 },
 
 {
@@ -11137,7 +12689,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1101570',
+  frequency: 1000,
+  misc_jm: ["abbreviation"],
 },
 
 {
@@ -11162,7 +12717,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1022880',
+  frequency: 1000,
 },
 
 {
@@ -11187,7 +12744,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1073210',
+  frequency: 1000,
 },
 
 {
@@ -11212,7 +12771,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1056700',
+  frequency: 1000,
 },
 
 {
@@ -11237,7 +12798,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1080000',
+  frequency: 1000,
 },
 
 {
@@ -11262,7 +12825,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1115150',
+  frequency: 1000,
+  meanings: [{"en": "(swimming) pool", "misc": [], "field": []}, {"en": "pool (cue sport)", "misc": [], "field": []}, {"en": "pooling (money, resources, etc.)", "misc": [], "field": []}, {"en": "pool (price ring)", "misc": [], "field": ["economics"]}],
 },
 
 {
@@ -11287,7 +12853,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1131680',
+  frequency: 1000,
 },
 
 {
@@ -11312,7 +12880,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1091500',
+  frequency: 1000,
 },
 
 {
@@ -11337,7 +12907,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1019450',
+  frequency: 1000,
 },
 
 {
@@ -11362,7 +12934,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1044070',
+  frequency: 1000,
 },
 
 {
@@ -11387,7 +12961,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1093450',
+  frequency: 1000,
+  meanings: [{"en": "notebook; copy-book; exercise book", "misc": ["abbreviation"], "field": []}, {"en": "note; noting down", "misc": [], "field": []}, {"en": "(musical) note", "misc": [], "field": []}, {"en": "laptop (computer); notebook (computer)", "misc": ["abbreviation"], "field": []}],
+  misc_jm: ["abbreviation"],
 },
 
 {
@@ -11412,7 +12990,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1123590',
+  frequency: 1000,
 },
 
 {
@@ -11437,7 +13017,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1030630',
+  frequency: 1000,
+  meanings: [{"en": "elevator; lift", "misc": [], "field": []}, {"en": "elevator", "misc": [], "field": ["aviation"]}],
 },
 
 {
@@ -11462,7 +13045,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1027180',
+  frequency: 1000,
+  misc_jm: ["abbreviation"],
 },
 
 {
@@ -11487,7 +13073,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1099100',
+  frequency: 1000,
 },
 
 {
@@ -11512,7 +13100,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1061820',
+  frequency: 1000,
 },
 
 {
@@ -11537,7 +13127,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1387500',
+  frequency: 1000,
 },
 
 {
@@ -11562,7 +13154,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1379380',
+  frequency: 1000,
 },
 
 {
@@ -11587,7 +13181,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1419110',
+  frequency: 1000,
 },
 
 {
@@ -11612,7 +13208,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2586260',
+  meanings: [{"en": "Heian-period student of government administration", "misc": ["archaic"], "field": []}, {"en": "Buddhist scholar; researcher at a Buddhist temple; person studying Buddhism", "misc": ["archaic"], "field": []}, {"en": "learning; scholarship", "misc": ["archaic"], "field": []}],
+  misc_jm: ["arkais"],
 },
 
 {
@@ -11637,7 +13236,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1464700',
+  frequency: 500,
+  forms: [{"word": "日本人", "info": []}, {"word": "ニッポン人", "info": ["search-only kanji form"]}],
 },
 
 {
@@ -11662,7 +13264,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1203650',
+  frequency: 500,
 },
 
 {
@@ -11712,7 +13316,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2149890',
+  frequency: 1000,
 },
 
 {
@@ -11737,7 +13343,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2866562',
+  misc_jm: ["legend"],
 },
 
 {
@@ -11762,7 +13370,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1203620',
+  frequency: 500,
 },
 
 {
@@ -11787,7 +13397,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1592250',
+  frequency: 500,
+  forms: [{"word": "国", "info": []}, {"word": "邦", "info": []}, {"word": "國", "info": ["word containing out-dated kanji or kanji usage"]}],
+  meanings: [{"en": "country; state", "misc": [], "field": []}, {"en": "region", "misc": [], "field": []}, {"en": "national government; central government", "misc": [], "field": []}, {"en": "home (i.e. hometown, home country)", "misc": [], "field": []}, {"en": "province (of Japan)", "misc": ["historical term"], "field": []}, {"en": "land; earth", "misc": ["archaic"], "field": []}],
+  misc_jm: ["arkais", "historical term"],
 },
 
 {
@@ -11812,7 +13427,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1420020',
+  frequency: 1000,
 },
 
 {
@@ -11837,7 +13454,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2742850',
+  forms: [{"word": "男", "info": []}, {"word": "男の子", "info": []}],
+  misc_jm: ["arkais"],
 },
 
 {
@@ -11862,7 +13482,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1344980',
+  frequency: 1000,
 },
 
 {
@@ -11887,7 +13509,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2742860',
+  misc_jm: ["arkais"],
 },
 
 {
@@ -11912,7 +13536,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1483150',
+  frequency: 1000,
+  meanings: [{"en": "she; her", "misc": [], "field": []}, {"en": "girlfriend", "misc": [], "field": []}],
 },
 
 {
@@ -11937,7 +13564,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1307850',
+  frequency: 500,
+  forms: [{"word": "子供", "info": []}, {"word": "子ども", "info": []}, {"word": "小供", "info": ["search-only kanji form"]}, {"word": "子共", "info": ["search-only kanji form"]}],
 },
 
 {
@@ -11962,7 +13592,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1540170',
+  frequency: 2500,
+  forms: [{"word": "友達", "info": []}, {"word": "友だち", "info": []}],
 },
 
 {
@@ -11987,7 +13620,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1002590',
+  frequency: 3500,
+  forms: [{"word": "お父さん", "info": []}, {"word": "御父さん", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "father; dad; papa; pa; pop; daddy; dada", "misc": ["honorific or respectful (sonkeigo) language"], "field": []}, {"en": "husband", "misc": ["honorific or respectful (sonkeigo) language"], "field": []}, {"en": "you (of an elderly person older than the speaker); he; him", "misc": ["familiar language"], "field": []}],
+  misc_jm: ["familiar language", "honorific or respectful (sonkeigo) language"],
 },
 
 {
@@ -12012,7 +13650,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1002650',
+  frequency: 2500,
+  forms: [{"word": "お母さん", "info": []}, {"word": "御母さん", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "mother; mom; mum; ma", "misc": ["honorific or respectful (sonkeigo) language"], "field": []}, {"en": "wife", "misc": ["honorific or respectful (sonkeigo) language"], "field": []}, {"en": "you (of an elderly person older than the speaker); she; her", "misc": ["familiar language"], "field": []}],
+  misc_jm: ["familiar language", "honorific or respectful (sonkeigo) language"],
 },
 
 {
@@ -12037,7 +13680,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1531710',
+  frequency: 1000,
+  forms: [{"word": "名前", "info": []}, {"word": "名まえ", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "name", "misc": [], "field": []}, {"en": "given name; first name", "misc": [], "field": []}],
 },
 
 {
@@ -12112,7 +13759,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1496800',
+  frequency: 4500,
+  forms: [{"word": "富士山", "info": []}, {"word": "不二山", "info": ["kanji jarang dipakai"]}, {"word": "不尽山", "info": ["kanji jarang dipakai"]}],
 },
 
 {
@@ -12137,7 +13787,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1464530',
+  frequency: 1000,
 },
 
 {
@@ -12162,7 +13814,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1174420',
+  frequency: 1000,
 },
 
 {
@@ -12187,7 +13841,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1582710',
+  frequency: 12500,
 },
 
 {
@@ -12237,7 +13893,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2844601',
+  forms: [{"word": "何時", "info": []}, {"word": "何どき", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "when; at what moment", "misc": [], "field": []}, {"en": "what time", "misc": ["dated term"], "field": []}],
+  misc_jm: ["dated term"],
 },
 
 {
@@ -12262,7 +13922,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1188950',
+  frequency: 1000,
 },
 
 {
@@ -12287,7 +13949,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2846738',
+  frequency: 1000,
+  meanings: [{"en": "what", "misc": [], "field": []}, {"en": "how many", "misc": [], "field": []}, {"en": "many; a lot of", "misc": [], "field": []}, {"en": "several; a few; some", "misc": [], "field": []}],
 },
 
 {
@@ -12312,7 +13977,8 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2578750',
 },
 
 {
@@ -12337,7 +14003,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2845349',
+  forms: [{"word": "９時", "info": []}, {"word": "九時", "info": []}],
 },
 
 {
@@ -12387,7 +14055,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1316140',
+  frequency: 3500,
+  forms: [{"word": "時計", "info": ["ateji (phonetic) reading"]}, {"word": "土圭", "info": ["kanji jarang dipakai"]}, {"word": "自鳴鐘", "info": ["search-only kanji form"]}],
 },
 
 {
@@ -12412,7 +14083,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2039350',
+  forms: [{"word": "５分", "info": []}, {"word": "五分", "info": []}],
 },
 
 {
@@ -12437,7 +14110,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2859157',
+  forms: [{"word": "３０分", "info": []}, {"word": "三十分", "info": []}],
 },
 
 {
@@ -12462,7 +14137,8 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1479900',
 },
 
 {
@@ -12487,7 +14163,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1163270',
+  frequency: 2500,
+  forms: [{"word": "一週間", "info": []}, {"word": "１週間", "info": []}],
 },
 
 {
@@ -12512,7 +14191,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1215230',
+  frequency: 2500,
+  meanings: [{"en": "space (between); gap; interval; distance; stretch", "misc": [], "field": []}, {"en": "period of time (during, while); duration; interval", "misc": [], "field": []}, {"en": "between (two parties or things)", "misc": [], "field": []}, {"en": "among (a group)", "misc": [], "field": []}, {"en": "relations (between); relationship", "misc": [], "field": []}, {"en": "midpoint; average; halfway; middle ground", "misc": [], "field": []}, {"en": "due to; because of", "misc": ["archaic"], "field": []}],
+  misc_jm: ["arkais"],
 },
 
 {
@@ -12537,7 +14220,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1004690',
+  frequency: 1000,
+  forms: [{"word": "この間", "info": []}, {"word": "此の間", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "the other day; lately; recently; during this period", "misc": [], "field": []}, {"en": "meanwhile; in the meantime", "misc": [], "field": []}],
 },
 
 {
@@ -12612,7 +14299,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1268990',
+  frequency: 500,
+  forms: [{"word": "午後", "info": []}, {"word": "午后", "info": ["kanji jarang dipakai"]}],
 },
 
 {
@@ -12637,7 +14327,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1269060',
+  frequency: 500,
 },
 
 {
@@ -12662,7 +14354,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1392580',
+  frequency: 1000,
+  meanings: [{"en": "in front (of); before (e.g. a building)", "misc": [], "field": []}, {"en": "before; earlier; previously; prior; ago; (minutes) to (the hour)", "misc": [], "field": []}, {"en": "(the) front; frontal part; fore; head (e.g. of a line)", "misc": [], "field": []}, {"en": "forward; ahead", "misc": [], "field": []}, {"en": "(in the) presence (of); in front (of someone)", "misc": [], "field": []}, {"en": "previous (e.g. page); prior (e.g. engagement); first (e.g. half); former (e.g. example)", "misc": [], "field": []}, {"en": "portion; helping", "misc": [], "field": []}, {"en": "front (of one's body or clothing); breast (of a coat, kimono, etc.)", "misc": [], "field": []}, {"en": "privates; private parts", "misc": [], "field": []}, {"en": "criminal record; previous conviction; (a) prior", "misc": ["percakapan kasual"], "field": []}],
+  misc_jm: ["kasual"],
 },
 
 {
@@ -12687,7 +14383,8 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1269350',
 },
 
 {
@@ -12712,7 +14409,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1269410',
+  frequency: 3000,
+  forms: [{"word": "後ろ", "info": []}, {"word": "後", "info": ["okurigana tidak biasa"]}],
 },
 
 {
@@ -12737,7 +14437,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1289100',
+  frequency: 500,
 },
 
 {
@@ -12762,7 +14464,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1289220',
+  frequency: 2500,
 },
 
 {
@@ -12787,7 +14491,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1288860',
+  meanings: [{"en": "the current ...; this", "misc": [], "field": []}, {"en": "today's ...", "misc": [], "field": []}],
 },
 
 {
@@ -12812,7 +14518,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1579130',
+  frequency: 500,
 },
 
 {
@@ -12837,7 +14545,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1579100',
+  frequency: 9500,
 },
 
 {
@@ -12862,7 +14572,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1387870',
+  frequency: 2500,
 },
 
 {
@@ -12887,7 +14599,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1548010',
+  frequency: 3000,
 },
 
 {
@@ -12912,7 +14626,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1576280',
+  frequency: 1000,
+  forms: [{"word": "一年", "info": []}, {"word": "１年", "info": []}],
 },
 
 {
@@ -12937,7 +14654,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1231690',
+  frequency: 5000,
 },
 
 {
@@ -12962,7 +14681,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1583190',
+  frequency: 2000,
 },
 
 {
@@ -12987,7 +14708,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1584360',
+  frequency: 1500,
 },
 
 {
@@ -13012,7 +14735,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1524720',
+  frequency: 500,
 },
 
 {
@@ -13037,7 +14762,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1584350',
+  frequency: 2500,
 },
 
 {
@@ -13062,7 +14789,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1347870',
+  frequency: 1500,
 },
 
 {
@@ -13087,7 +14816,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1413240',
+  frequency: 500,
+  forms: [{"word": "大学", "info": []}, {"word": "大學", "info": ["word containing out-dated kanji or kanji usage"]}],
+  meanings: [{"en": "university; college", "misc": [], "field": []}, {"en": "former imperial university of Japan (established under the ritsuryō system for the training of government administrators)", "misc": ["historical term", "abbreviation"], "field": []}, {"en": "the Great Learning (one of the Four Books)", "misc": [], "field": []}],
+  misc_jm: ["abbreviation", "historical term"],
 },
 
 {
@@ -13112,7 +14846,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1283500',
+  frequency: 500,
+  misc_jm: ["abbreviation"],
 },
 
 {
@@ -13137,7 +14874,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1362360',
+  frequency: 500,
 },
 
 {
@@ -13162,7 +14901,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1322920',
+  frequency: 500,
 },
 
 {
@@ -13187,7 +14928,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1216250',
+  frequency: 1000,
+  forms: [{"word": "丸", "info": []}, {"word": "円", "info": []}],
+  meanings: [{"en": "circle", "misc": [], "field": []}, {"en": "entirety; whole; full; complete", "misc": [], "field": []}, {"en": "money; dough; moola", "misc": ["slang"], "field": []}, {"en": "enclosure inside a castle's walls", "misc": [], "field": []}, {"en": "soft-shelled turtle", "misc": [], "field": []}, {"en": "suffix for ship names; suffix for names of people (esp. infants); suffix for names of swords, armour, musical instruments, etc.; suffix for names of dogs, horses, etc.", "misc": [], "field": []}],
+  misc_jm: ["slang"],
 },
 
 {
@@ -13212,7 +14958,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1279590',
+  frequency: 1500,
 },
 
 {
@@ -13237,7 +14985,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1322670',
+  frequency: 1000,
+  meanings: [{"en": "company employee", "misc": [], "field": []}, {"en": "member of a corporation; company stockholder (esp. in legal contexts)", "misc": [], "field": []}],
 },
 
 {
@@ -13262,7 +15013,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1423650',
+  frequency: 2000,
 },
 
 {
@@ -13287,7 +15040,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1165500',
+  frequency: 1000,
+  forms: [{"word": "一日中", "info": []}, {"word": "１日中", "info": []}, {"word": "一日じゅう", "info": ["search-only kanji form"]}, {"word": "１日じゅう", "info": ["search-only kanji form"]}, {"word": "一日ぢゅう", "info": ["search-only kanji form"]}],
 },
 
 {
@@ -13312,7 +15068,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2754230',
+  meanings: [{"en": "red dragon tile", "misc": ["abbreviation"], "field": ["mahjong"]}, {"en": "winning hand with a pung (or kong) of red dragon tiles", "misc": [], "field": ["mahjong"]}],
+  misc_jm: ["abbreviation"],
 },
 
 {
@@ -13337,7 +15096,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2271620',
+  meanings: [{"en": "mouth; speech", "misc": [], "field": ["Buddhism"]}, {"en": "counter for people or implements", "misc": [], "field": []}],
 },
 
 {
@@ -13362,7 +15123,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1582820',
+  frequency: 2500,
+  forms: [{"word": "入り口", "info": []}, {"word": "入口", "info": []}, {"word": "這入口", "info": ["kanji jarang dipakai"]}],
 },
 
 {
@@ -13387,7 +15151,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1447690',
+  frequency: 500,
+  forms: [{"word": "東京", "info": []}, {"word": "東亰", "info": ["kanji jarang dipakai"]}],
 },
 
 {
@@ -13412,7 +15179,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2869019',
+  meanings: [{"en": "eastern; east", "misc": [], "field": []}, {"en": "Tokyo", "misc": ["abbreviation"], "field": []}],
+  misc_jm: ["abbreviation"],
 },
 
 {
@@ -13437,7 +15207,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1447790',
+  frequency: 9000,
 },
 
 {
@@ -13462,7 +15234,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1381100',
+  frequency: 4000,
 },
 
 {
@@ -13487,7 +15261,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2833069',
+  meanings: [{"en": "west wind tile", "misc": [], "field": ["mahjong"]}, {"en": "winning hand with a pung (or kong) of west wind tiles", "misc": [], "field": ["mahjong"]}],
 },
 
 {
@@ -13512,7 +15288,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1380950',
+  frequency: 6000,
 },
 
 {
@@ -13537,7 +15315,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2869020',
+  meanings: [{"en": "southern; south", "misc": [], "field": []}, {"en": "nanban; dish prepared using chili peppers and Welsh onions", "misc": [], "field": ["food, cooking"]}],
 },
 
 {
@@ -13562,7 +15342,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1460280',
+  frequency: 10500,
 },
 
 {
@@ -13587,7 +15369,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1520810',
+  frequency: 500,
 },
 
 {
@@ -13612,7 +15396,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2833070',
+  meanings: [{"en": "north wind tile", "misc": [], "field": ["mahjong"]}, {"en": "winning hand with a pung (or kong) of north wind tiles", "misc": [], "field": ["mahjong"]}],
 },
 
 {
@@ -13637,7 +15423,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1520970',
+  frequency: 11500,
 },
 
 {
@@ -13662,7 +15450,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1352170',
+  frequency: 1000,
+  meanings: [{"en": "from the standpoint of; from the viewpoint of; with respect to; in terms of; as a matter of; in view of; so far as ... is concerned", "misc": [], "field": []}, {"en": "on; above; on top of; aboard (a ship or vehicle)", "misc": [], "field": []}, {"en": "the best; top; first class; first grade", "misc": [], "field": []}, {"en": "first volume (of a two or three-volume set); first book", "misc": [], "field": []}, {"en": "with my compliments", "misc": [], "field": []}],
 },
 
 {
@@ -13687,7 +15478,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1580340',
+  frequency: 8500,
+  forms: [{"word": "上着", "info": []}, {"word": "上衣", "info": []}, {"word": "表着", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "coat; jacket; outerwear", "misc": [], "field": []}, {"en": "top; upper-body garment", "misc": [], "field": []}],
 },
 
 {
@@ -13712,7 +15507,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1420900',
+  frequency: 2500,
+  misc_jm: ["abbreviation"],
 },
 
 {
@@ -13737,7 +15535,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2867124',
+  forms: [{"word": "下ル", "info": []}, {"word": "下", "info": []}],
 },
 
 {
@@ -13762,7 +15562,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2227930',
+  frequency: 1000,
 },
 
 {
@@ -13787,7 +15589,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1227500',
+  frequency: 2500,
+  meanings: [{"en": "rest; recess; respite", "misc": [], "field": []}, {"en": "vacation; holiday; absence; suspension", "misc": [], "field": []}, {"en": "dormancy (of a silkworm prior to moulting)", "misc": [], "field": []}],
 },
 
 {
@@ -13812,7 +15617,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1426290',
+  frequency: 9000,
 },
 
 {
@@ -13837,7 +15644,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1243490',
+  frequency: 500,
 },
 
 {
@@ -13862,7 +15671,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1318970',
+  frequency: 5000,
+  forms: [{"word": "辞書", "info": []}, {"word": "辭書", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "dictionary; lexicon", "misc": [], "field": []}, {"en": "letter of resignation", "misc": ["archaic"], "field": []}],
+  misc_jm: ["arkais"],
 },
 
 {
@@ -13887,7 +15701,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1589730',
+  frequency: 3000,
+  forms: [{"word": "買い物", "info": []}, {"word": "買物", "info": []}, {"word": "買いもの", "info": ["search-only kanji form"]}, {"word": "買いもん", "info": ["search-only kanji form"]}],
 },
 
 {
@@ -13912,7 +15729,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1547900',
+  frequency: 1500,
+  forms: [{"word": "来月", "info": []}, {"word": "來月", "info": ["search-only kanji form"]}],
 },
 
 {
@@ -13937,7 +15757,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1358490',
+  frequency: 1500,
+  meanings: [{"en": "meal (e.g. lunch, dinner)", "misc": [], "field": []}, {"en": "diet", "misc": [], "field": []}],
 },
 
 {
@@ -13962,7 +15785,8 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2253570',
 },
 
 {
@@ -13987,7 +15811,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1358680',
+  frequency: 4500,
 },
 
 {
@@ -14012,7 +15838,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1358340',
+  frequency: 4000,
+  forms: [{"word": "食べ物", "info": []}, {"word": "食べもの", "info": ["search-only kanji form"]}],
 },
 
 {
@@ -14037,7 +15866,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1600430',
+  frequency: 10000,
+  forms: [{"word": "飲み物", "info": []}, {"word": "飲物", "info": []}, {"word": "飲みもの", "info": ["search-only kanji form"]}],
 },
 
 {
@@ -14062,7 +15894,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1198880',
+  frequency: 2000,
 },
 
 {
@@ -14087,7 +15921,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1443000',
+  frequency: 1000,
+  forms: [{"word": "電気", "info": []}, {"word": "電氣", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "electricity", "misc": [], "field": []}, {"en": "(electric) light", "misc": [], "field": []}],
 },
 
 {
@@ -14112,7 +15950,8 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2100460',
 },
 
 {
@@ -14137,7 +15976,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1318400',
+  frequency: 500,
 },
 
 {
@@ -14162,7 +16003,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1318290',
+  frequency: 2000,
 },
 
 {
@@ -14187,7 +16030,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1194870',
+  frequency: 13500,
+  forms: [{"word": "花瓶", "info": []}, {"word": "花びん", "info": ["search-only kanji form"]}],
 },
 
 {
@@ -14212,7 +16058,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1194660',
+  frequency: 6000,
 },
 
 {
@@ -14237,7 +16085,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1194580',
+  frequency: 5000,
+  forms: [{"word": "花火", "info": []}, {"word": "煙火", "info": ["kanji jarang dipakai"]}],
 },
 
 {
@@ -14262,7 +16113,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2839802',
+  misc_jm: ["arkais"],
 },
 
 {
@@ -14287,7 +16140,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1260720',
+  frequency: 3000,
+  forms: [{"word": "元気", "info": []}, {"word": "元氣", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "lively; full of spirit; energetic; vigorous; vital; spirited", "misc": [], "field": []}, {"en": "healthy; well; fit; in good health", "misc": [], "field": []}],
 },
 
 {
@@ -14312,7 +16169,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1317170',
+  frequency: 1500,
+  meanings: [{"en": "ear", "misc": [], "field": []}, {"en": "hearing", "misc": [], "field": []}, {"en": "ear (for music, etc.)", "misc": [], "field": []}, {"en": "edge; crust; heel (of bread or cheese); selvedge (of woven fabric); selvage", "misc": [], "field": []}, {"en": "ear (of a pot, jug, etc.); handle", "misc": [], "field": []}],
 },
 
 {
@@ -14337,7 +16197,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1002100',
+  frequency: 1000,
+  forms: [{"word": "お手洗い", "info": []}, {"word": "御手洗", "info": []}, {"word": "御手洗い", "info": ["search-only kanji form"]}],
 },
 
 {
@@ -14362,7 +16225,8 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2412230',
 },
 
 {
@@ -14412,7 +16276,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1554840',
+  frequency: 1000,
 },
 
 {
@@ -14437,7 +16303,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1555020',
+  frequency: 15000,
+  forms: [{"word": "力持ち", "info": []}, {"word": "力もち", "info": ["search-only kanji form"]}],
 },
 
 {
@@ -14462,7 +16331,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1231580',
+  frequency: 4000,
 },
 
 {
@@ -14487,7 +16358,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1231590',
+  frequency: 4000,
 },
 
 {
@@ -14512,7 +16385,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2085820',
+  forms: [{"word": "妓夫", "info": []}, {"word": "牛", "info": ["ateji (phonetic) reading", "kanji jarang dipakai"]}],
 },
 
 {
@@ -14537,7 +16412,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1233100',
+  frequency: 12500,
 },
 
 {
@@ -14562,7 +16439,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1226440',
+  frequency: 5000,
+  meanings: [{"en": "coffee shop; tearoom; coffee lounge; coffeehouse; cafe", "misc": [], "field": []}, {"en": "kissaten; traditional type of coffee shop with a retro atmosphere", "misc": [], "field": []}],
 },
 
 {
@@ -14587,7 +16467,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2409230',
+  meanings: [{"en": "merchant's home", "misc": [], "field": []}, {"en": "rented home", "misc": [], "field": []}, {"en": "store; shop", "misc": ["abbreviation"], "field": []}],
+  misc_jm: ["abbreviation"],
 },
 
 {
@@ -14612,7 +16495,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2268290',
+  forms: [{"word": "路", "info": []}, {"word": "道", "info": []}],
+  meanings: [{"en": "way; road", "misc": ["archaic"], "field": []}, {"en": "way to ...; road to ...", "misc": ["archaic"], "field": []}],
+  misc_jm: ["arkais"],
 },
 
 {
@@ -14637,7 +16524,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2868800',
+  meanings: [{"en": "gate; door", "misc": [], "field": []}, {"en": "house; family", "misc": [], "field": []}],
 },
 
 {
@@ -14662,7 +16551,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1389880',
+  frequency: 1000,
+  forms: [{"word": "専門", "info": []}, {"word": "專門", "info": ["search-only kanji form"]}, {"word": "専問", "info": ["search-only kanji form"]}, {"word": "專問", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "speciality; specialty; special subject of study; area of expertise; (one's) field; (one's) major", "misc": [], "field": []}, {"en": "sole interest; single focus; concentrating exclusively on; doing exclusively; sticking to", "misc": [], "field": []}],
 },
 
 {
@@ -14687,7 +16580,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1245470',
+  frequency: 1500,
+  meanings: [{"en": "air; atmosphere", "misc": [], "field": []}, {"en": "mood; situation", "misc": [], "field": []}, {"en": "someone with no presence; someone who doesn't stand out at all", "misc": ["percakapan kasual", "idiomatic expression"], "field": []}],
+  misc_jm: ["idiomatic expression", "kasual"],
 },
 
 {
@@ -14712,7 +16609,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1245570',
+  frequency: 500,
 },
 
 {
@@ -14737,7 +16636,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2074820',
+  meanings: [{"en": "empty air; sky", "misc": [], "field": []}, {"en": "shunyata (the lack of an immutable intrinsic nature within any phenomenon); emptiness", "misc": [], "field": ["Buddhism"]}, {"en": "air force", "misc": ["abbreviation"], "field": []}, {"en": "fruitlessness; meaninglessness", "misc": [], "field": []}, {"en": "void (one of the five elements)", "misc": [], "field": []}, {"en": "empty (e.g. set)", "misc": [], "field": ["mathematics"]}],
+  misc_jm: ["abbreviation"],
 },
 
 {
@@ -14762,7 +16664,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2751420',
+  meanings: [{"en": "white", "misc": [], "field": []}, {"en": "striped mullet fry (Mugil cephalus)", "misc": [], "field": []}, {"en": "(spoken) line (in a play, film, etc.); one's lines", "misc": [], "field": []}, {"en": "white dragon tile", "misc": [], "field": ["mahjong"]}, {"en": "winning hand with a pung (or kong) of white dragon tiles", "misc": [], "field": ["mahjong"]}, {"en": "Belgium", "misc": ["abbreviation", "rare term"], "field": []}, {"en": "white person; Caucasian", "misc": ["abbreviation", "archaic"], "field": []}],
+  misc_jm: ["abbreviation", "arkais", "rare term"],
 },
 
 {
@@ -14787,7 +16692,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2843147',
+  meanings: [{"en": "one", "misc": [], "field": []}, {"en": "same (mind, path, etc.)", "misc": [], "field": []}],
 },
 
 {
@@ -14812,7 +16719,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2858788',
+  forms: [{"word": "二", "info": []}, {"word": "両", "info": []}],
 },
 
 {
@@ -14837,7 +16746,8 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2747950',
 },
 
 {
@@ -14862,7 +16772,8 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2747960',
 },
 
 {
@@ -14887,7 +16798,8 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2747970',
 },
 
 {
@@ -14912,7 +16824,8 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2747980',
 },
 
 {
@@ -14937,7 +16850,8 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2747990',
 },
 
 {
@@ -14962,7 +16876,8 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2748000',
 },
 
 {
@@ -14987,7 +16902,8 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2748010',
 },
 
 {
@@ -15012,7 +16928,8 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2748020',
 },
 
 {
@@ -15037,7 +16954,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2850990',
+  meanings: [{"en": "hundred; 100", "misc": ["poetical term"], "field": []}, {"en": "(a great) many", "misc": ["poetical term"], "field": []}],
+  misc_jm: ["poetical term"],
 },
 
 {
@@ -15062,7 +16982,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1388740',
+  frequency: 500,
+  forms: [{"word": "千", "info": []}, {"word": "阡", "info": []}, {"word": "仟", "info": []}],
 },
 
 {
@@ -15087,7 +17010,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1584460',
+  frequency: 1000,
+  forms: [{"word": "万", "info": []}, {"word": "萬", "info": ["word containing out-dated kanji or kanji usage"]}],
+  meanings: [{"en": "10,000; ten thousand", "misc": [], "field": []}, {"en": "myriad", "misc": [], "field": []}, {"en": "everything; all", "misc": [], "field": []}, {"en": "various", "misc": ["archaic"], "field": []}],
+  misc_jm: ["arkais"],
 },
 
 {
@@ -15112,7 +17040,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1160820',
+  frequency: 500,
+  forms: [{"word": "一つ", "info": []}, {"word": "１つ", "info": []}, {"word": "一", "info": ["okurigana tidak biasa"]}],
+  meanings: [{"en": "one", "misc": [], "field": []}, {"en": "for one thing", "misc": [], "field": []}, {"en": "only", "misc": [], "field": []}, {"en": "(not) even", "misc": [], "field": []}, {"en": "just (e.g. \"just try it\")", "misc": [], "field": []}, {"en": "some kind of; one type of", "misc": [], "field": []}],
 },
 
 {
@@ -15137,7 +17069,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1461160',
+  frequency: 1000,
+  forms: [{"word": "二つ", "info": []}, {"word": "２つ", "info": []}, {"word": "双つ", "info": ["search-only kanji form"]}],
 },
 
 {
@@ -15162,7 +17097,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1299740',
+  frequency: 1500,
+  forms: [{"word": "三つ", "info": []}, {"word": "３つ", "info": []}],
+  meanings: [{"en": "three", "misc": [], "field": []}, {"en": "three years of age", "misc": [], "field": []}],
 },
 
 {
@@ -15187,7 +17126,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1307040',
+  frequency: 3000,
+  forms: [{"word": "四つ", "info": []}, {"word": "４つ", "info": []}],
+  meanings: [{"en": "four; 4", "misc": [], "field": []}, {"en": "four years of age", "misc": [], "field": []}, {"en": "ten o'clock (in the old time system)", "misc": [], "field": []}, {"en": "burakumin", "misc": ["derogatory"], "field": []}, {"en": "cross grips", "misc": ["abbreviation"], "field": ["sumo"]}],
+  misc_jm: ["abbreviation", "derogatory"],
 },
 
 {
@@ -15212,7 +17156,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1268070',
+  frequency: 4500,
+  forms: [{"word": "五つ", "info": []}, {"word": "５つ", "info": []}, {"word": "伍つ", "info": ["word containing out-dated kanji or kanji usage"]}],
+  meanings: [{"en": "five", "misc": [], "field": []}, {"en": "five years of age", "misc": [], "field": []}, {"en": "eight o'clock (old time system)", "misc": [], "field": []}],
 },
 
 {
@@ -15237,7 +17185,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1585315',
+  frequency: 1000,
+  forms: [{"word": "六つ", "info": []}, {"word": "６つ", "info": []}],
+  meanings: [{"en": "six", "misc": [], "field": []}, {"en": "six years of age", "misc": [], "field": []}, {"en": "six o'clock (old time system)", "misc": [], "field": []}],
 },
 
 {
@@ -15262,7 +17214,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1319220',
+  frequency: 6500,
+  forms: [{"word": "七つ", "info": []}, {"word": "７つ", "info": []}],
+  meanings: [{"en": "seven", "misc": [], "field": []}, {"en": "seven years of age", "misc": [], "field": []}, {"en": "four o'clock (old time system)", "misc": [], "field": []}],
 },
 
 {
@@ -15287,7 +17243,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1583095',
+  frequency: 1000,
+  forms: [{"word": "八つ", "info": []}, {"word": "８つ", "info": []}],
+  meanings: [{"en": "eight", "misc": [], "field": []}, {"en": "eight years of age", "misc": [], "field": []}, {"en": "two o'clock (old time system)", "misc": [], "field": []}],
 },
 
 {
@@ -15312,7 +17272,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1243600',
+  frequency: 10500,
+  forms: [{"word": "九つ", "info": []}, {"word": "９つ", "info": []}],
+  meanings: [{"en": "nine", "misc": [], "field": []}, {"en": "nine years of age", "misc": [], "field": []}, {"en": "twelve o'clock (old time system)", "misc": [], "field": []}],
 },
 
 {
@@ -15337,7 +17301,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1255890',
+  frequency: 1000,
 },
 
 {
@@ -15362,7 +17328,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1194290',
+  frequency: 8500,
 },
 
 {
@@ -15387,7 +17355,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1372190',
+  frequency: 1000,
 },
 
 {
@@ -15412,7 +17382,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1534890',
+  frequency: 1000,
 },
 
 {
@@ -15437,7 +17409,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1243320',
+  frequency: 1000,
 },
 
 {
@@ -15462,7 +17436,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1445590',
+  frequency: 1000,
 },
 
 {
@@ -15487,7 +17463,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1464900',
+  frequency: 1000,
 },
 
 {
@@ -15512,7 +17490,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1162130',
+  frequency: 1000,
+  forms: [{"word": "一月", "info": []}, {"word": "ひと月", "info": []}],
 },
 
 {
@@ -15537,7 +17518,8 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1461570',
 },
 
 {
@@ -15562,7 +17544,8 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1300260',
 },
 
 {
@@ -15587,7 +17570,8 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2739070',
 },
 
 {
@@ -15612,7 +17596,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1299600',
+  forms: [{"word": "五月", "info": []}, {"word": "皐月", "info": []}, {"word": "早月", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "fifth month of the lunar calendar", "misc": ["obsolete term"], "field": []}, {"en": "satsuki azalea (Rhododendron indicum)", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja", "obsolete term"],
 },
 
 {
@@ -15637,7 +17625,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1561330',
+  frequency: 500,
+  forms: [{"word": "６月", "info": []}, {"word": "六月", "info": []}],
+  meanings: [{"en": "June", "misc": [], "field": []}, {"en": "sixth month of the lunar calendar", "misc": [], "field": []}],
 },
 
 {
@@ -15662,7 +17654,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1319280',
+  frequency: 500,
+  forms: [{"word": "７月", "info": []}, {"word": "七月", "info": []}],
+  meanings: [{"en": "July", "misc": [], "field": []}, {"en": "seventh month of the lunar calendar", "misc": [], "field": []}],
 },
 
 {
@@ -15687,7 +17683,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1476730',
+  frequency: 500,
+  forms: [{"word": "８月", "info": []}, {"word": "八月", "info": []}],
+  meanings: [{"en": "August", "misc": [], "field": []}, {"en": "eighth month of the lunar calendar", "misc": [], "field": []}],
 },
 
 {
@@ -15712,7 +17712,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1243660',
+  frequency: 500,
+  forms: [{"word": "９月", "info": []}, {"word": "九月", "info": []}],
+  meanings: [{"en": "September", "misc": [], "field": []}, {"en": "ninth month of the lunar calendar", "misc": [], "field": []}],
 },
 
 {
@@ -15737,7 +17741,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1334570',
+  frequency: 500,
+  forms: [{"word": "１０月", "info": []}, {"word": "十月", "info": []}, {"word": "一〇月", "info": []}],
+  meanings: [{"en": "October", "misc": [], "field": []}, {"en": "tenth month of the lunar calendar", "misc": [], "field": []}],
 },
 
 {
@@ -15762,7 +17770,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1334480',
+  frequency: 500,
+  forms: [{"word": "１１月", "info": []}, {"word": "十一月", "info": []}, {"word": "一一月", "info": []}],
+  meanings: [{"en": "November", "misc": [], "field": []}, {"en": "eleventh month of the lunar calendar", "misc": [], "field": []}],
 },
 
 {
@@ -15787,7 +17799,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1334910',
+  frequency: 500,
+  forms: [{"word": "１２月", "info": []}, {"word": "十二月", "info": []}, {"word": "一二月", "info": []}],
+  meanings: [{"en": "December", "misc": [], "field": []}, {"en": "twelfth month of the lunar calendar", "misc": [], "field": []}],
 },
 
 {
@@ -15812,7 +17828,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1396840',
+  frequency: 4500,
+  meanings: [{"en": "grandfather", "misc": [], "field": []}, {"en": "old man", "misc": [], "field": []}, {"en": "kyogen mask used for the role of an old man", "misc": [], "field": []}],
 },
 
 {
@@ -15837,7 +17856,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1396860',
+  frequency: 5000,
 },
 
 {
@@ -15862,7 +17883,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1554590',
+  frequency: 7000,
 },
 
 {
@@ -15887,7 +17910,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1236450',
+  frequency: 8000,
 },
 
 {
@@ -15912,7 +17937,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1396840',
+  frequency: 4500,
+  meanings: [{"en": "grandfather", "misc": [], "field": []}, {"en": "old man", "misc": [], "field": []}, {"en": "kyogen mask used for the role of an old man", "misc": [], "field": []}],
 },
 
 {
@@ -15937,7 +17965,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1396860',
+  frequency: 5000,
 },
 
 {
@@ -15962,7 +17992,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1404390',
+  frequency: 1500,
+  forms: [{"word": "息子", "info": []}, {"word": "息", "info": []}],
+  meanings: [{"en": "son", "misc": [], "field": []}, {"en": "penis", "misc": ["percakapan kasual"], "field": []}],
+  misc_jm: ["kasual"],
 },
 
 {
@@ -15987,7 +18022,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1531190',
+  frequency: 1000,
+  meanings: [{"en": "daughter", "misc": [], "field": []}, {"en": "girl (i.e. a young, unmarried woman)", "misc": [], "field": []}],
 },
 
 {
@@ -16012,7 +18050,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1406230',
+  frequency: 2500,
 },
 
 {
@@ -16087,7 +18127,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1001200',
+  frequency: 1000,
+  meanings: [{"en": "hey!; say!; I say!; come on!; look!; oi!", "misc": ["familiar language", "male term or language"], "field": []}, {"en": "I; me", "misc": [], "field": []}],
+  misc_jm: ["familiar language", "male term or language"],
 },
 
 {
@@ -16112,7 +18156,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1532940',
+  frequency: 19500,
 },
 
 {
@@ -16137,7 +18183,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1335280',
+  frequency: 23500,
 },
 
 {
@@ -16162,7 +18210,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1357600',
+  frequency: 1000,
+  meanings: [{"en": "colour; color; hue; tint; tinge; shade", "misc": [], "field": []}, {"en": "complexion; skin colour; skin color", "misc": [], "field": []}, {"en": "look (on one's face); expression", "misc": [], "field": []}, {"en": "appearance; air; feeling", "misc": [], "field": []}, {"en": "personality; character", "misc": [], "field": []}, {"en": "tone (of one's voice, etc.); tune; sound; ring", "misc": [], "field": []}, {"en": "love; lust; sensuality; love affair", "misc": [], "field": []}, {"en": "lover; paramour", "misc": [], "field": []}, {"en": "beauty; sexiness; physical appeal", "misc": [], "field": []}, {"en": "kind; type; variety", "misc": [], "field": []}],
 },
 
 {
@@ -16187,7 +18238,8 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1149680',
 },
 
 {
@@ -16212,7 +18264,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1355710',
+  frequency: 5000,
 },
 
 {
@@ -16237,7 +18291,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1381380',
+  frequency: 1500,
+  forms: [{"word": "青", "info": []}, {"word": "蒼", "info": []}, {"word": "碧", "info": []}],
+  meanings: [{"en": "blue; azure", "misc": [], "field": []}, {"en": "green", "misc": [], "field": []}, {"en": "green light (traffic)", "misc": ["abbreviation"], "field": []}, {"en": "black (horse coat color)", "misc": [], "field": []}, {"en": "blue 5-point card", "misc": ["abbreviation"], "field": ["hanafuda"]}, {"en": "immature; unripe; young", "misc": [], "field": []}],
+  misc_jm: ["abbreviation"],
 },
 
 {
@@ -16262,7 +18321,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1576760',
+  frequency: 5500,
 },
 
 {
@@ -16287,7 +18348,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1250980',
+  frequency: 19000,
+  forms: [{"word": "畦", "info": []}, {"word": "畔", "info": []}],
+  meanings: [{"en": "ridge of earth between rice fields", "misc": ["biasanya kana saja"], "field": []}, {"en": "ridge between grooves in threshold or lintel", "misc": ["biasanya kana saja"], "field": []}, {"en": "footpath between rice fields; causeway", "misc": ["abbreviation"], "field": []}],
+  misc_jm: ["abbreviation", "biasanya kana saja"],
 },
 
 {
@@ -16312,7 +18378,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1555300',
+  frequency: 1500,
+  forms: [{"word": "緑", "info": []}, {"word": "翠", "info": ["kanji jarang dipakai"]}, {"word": "綠", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "green", "misc": [], "field": []}, {"en": "greenery; verdure", "misc": [], "field": []}],
 },
 
 {
@@ -16337,7 +18407,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1422720',
+  frequency: 7500,
+  forms: [{"word": "茶色", "info": []}, {"word": "ちゃ色", "info": ["search-only kanji form"]}, {"word": "茶いろ", "info": ["search-only kanji form"]}],
 },
 
 {
@@ -16362,7 +18435,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1107140',
+  frequency: 1000,
+  meanings: [{"en": "pink", "misc": [], "field": []}, {"en": "erotic; blue; pornographic", "misc": [], "field": []}],
 },
 
 {
@@ -16387,7 +18463,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1343100',
+  frequency: 1000,
+  forms: [{"word": "所", "info": []}, {"word": "処", "info": []}, {"word": "處", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "place; spot; scene; site", "misc": [], "field": []}, {"en": "address", "misc": ["biasanya kana saja"], "field": []}, {"en": "district; area; locality", "misc": ["biasanya kana saja"], "field": []}, {"en": "one's house", "misc": ["biasanya kana saja"], "field": []}, {"en": "point; aspect; side; facet", "misc": ["biasanya kana saja"], "field": []}, {"en": "passage (in text); part", "misc": ["biasanya kana saja"], "field": []}, {"en": "space; room", "misc": ["biasanya kana saja"], "field": []}, {"en": "thing; matter", "misc": ["biasanya kana saja"], "field": []}, {"en": "whereupon; as a result", "misc": ["biasanya kana saja"], "field": []}, {"en": "about to; on the verge of", "misc": ["biasanya kana saja"], "field": []}, {"en": "was just doing; was in the process of doing; have just done; just finished doing", "misc": ["biasanya kana saja"], "field": []}, {"en": "approximately; around; about", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -16412,7 +18493,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1451490',
+  frequency: 3500,
 },
 
 {
@@ -16437,7 +18520,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1542170',
+  frequency: 7500,
 },
 
 {
@@ -16462,7 +18547,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1537300',
+  frequency: 500,
 },
 
 {
@@ -16487,7 +18574,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1098440',
+  frequency: 1000,
 },
 
 {
@@ -16512,7 +18601,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1371320',
+  frequency: 3500,
 },
 
 {
@@ -16537,7 +18628,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1183720',
+  frequency: 500,
+  forms: [{"word": "音楽", "info": []}, {"word": "音樂", "info": ["search-only kanji form"]}],
 },
 
 {
@@ -16562,7 +18656,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1044020',
+  frequency: 1000,
+  meanings: [{"en": "classical music", "misc": ["abbreviation"], "field": []}, {"en": "classic; classical", "misc": [], "field": []}, {"en": "classic (work); the classics", "misc": [], "field": []}],
+  misc_jm: ["abbreviation"],
 },
 
 {
@@ -16587,7 +18685,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1065290',
+  frequency: 1000,
 },
 
 {
@@ -16612,7 +18712,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1147600',
+  frequency: 1000,
+  meanings: [{"en": "lock", "misc": [], "field": []}, {"en": "lock (in rugby); lock forward", "misc": [], "field": ["sports"]}],
 },
 
 {
@@ -16637,7 +18740,8 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1125380',
 },
 
 {
@@ -16662,7 +18766,8 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1527270',
 },
 
 {
@@ -16687,7 +18792,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1161690',
+  frequency: 8000,
 },
 
 {
@@ -16712,7 +18819,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1498880',
+  frequency: 5500,
 },
 
 {
@@ -16737,7 +18846,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1600530',
+  frequency: 9500,
+  forms: [{"word": "乗り物", "info": []}, {"word": "乗物", "info": []}, {"word": "乗りもの", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "vehicle; conveyance; (means of) transport", "misc": [], "field": []}, {"en": "ride (at a fair, amusement park, etc.); attraction", "misc": [], "field": []}],
 },
 
 {
@@ -16762,7 +18875,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1032030',
+  frequency: 1000,
 },
 
 {
@@ -16787,7 +18902,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1602800',
+  frequency: 2000,
+  forms: [{"word": "船", "info": []}, {"word": "舟", "info": []}, {"word": "槽", "info": []}],
+  meanings: [{"en": "ship; boat; watercraft; vessel; seaplane", "misc": [], "field": []}, {"en": "tank; tub; vat; trough", "misc": [], "field": []}, {"en": "counter for boat-shaped containers (e.g. of sashimi)", "misc": [], "field": []}],
 },
 
 {
@@ -16812,7 +18931,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1438680',
+  meanings: [{"en": "secret of nature; profound secret", "misc": [], "field": []}, {"en": "disposition; character; nature", "misc": [], "field": []}, {"en": "emperor's health; emperor's well-being", "misc": [], "field": []}],
 },
 
 {
@@ -16837,7 +18958,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1376460',
+  frequency: 7500,
+  forms: [{"word": "晴れ", "info": []}, {"word": "晴", "info": []}, {"word": "霽れ", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "clear weather; fine weather", "misc": [], "field": []}, {"en": "formal; ceremonial; public", "misc": [], "field": []}, {"en": "cleared of suspicion", "misc": [], "field": []}],
 },
 
 {
@@ -16862,7 +18987,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1592340',
+  frequency: 10000,
+  forms: [{"word": "曇り", "info": []}, {"word": "曇", "info": []}],
+  meanings: [{"en": "cloudiness; cloudy weather", "misc": [], "field": []}, {"en": "fog (on a mirror, glasses, etc.); cloud (e.g. in marble); blur; mist; shadow; dimness", "misc": [], "field": []}, {"en": "gloom; dejection", "misc": [], "field": []}],
 },
 
 {
@@ -16887,7 +19016,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1386500',
+  frequency: 1500,
 },
 
 {
@@ -16912,7 +19043,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1596780',
+  frequency: 2000,
+  forms: [{"word": "台風", "info": []}, {"word": "颱風", "info": ["kanji jarang dipakai"]}],
 },
 
 {
@@ -16937,7 +19071,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1357430',
+  frequency: 12500,
+  forms: [{"word": "織機", "info": []}, {"word": "織り機", "info": []}],
 },
 
 {
@@ -16962,7 +19099,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1597530',
+  frequency: 10500,
+  forms: [{"word": "茶碗", "info": []}, {"word": "茶わん", "info": []}],
 },
 
 {
@@ -16987,7 +19127,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1299680',
+  frequency: 5000,
+  forms: [{"word": "皿", "info": []}, {"word": "盤", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "plate; dish; platter; disc", "misc": [], "field": []}, {"en": "serving; helping; course", "misc": [], "field": []}, {"en": "kanji radical 108 (at the bottom)", "misc": [], "field": []}],
 },
 
 {
@@ -17012,7 +19156,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1237410',
+  frequency: 2500,
 },
 
 {
@@ -17037,7 +19183,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1037670',
+  frequency: 1000,
 },
 
 {
@@ -17062,7 +19210,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1050390',
+  frequency: 1000,
+  forms: [{"word": "洋杯", "info": ["kanji jarang dipakai"]}, {"word": "洋盃", "info": ["kanji jarang dipakai"]}, {"word": "骨杯", "info": ["ateji (phonetic) reading", "kanji jarang dipakai"]}],
+  meanings: [{"en": "glass (drinking vessel); tumbler", "misc": ["biasanya kana saja"], "field": []}, {"en": "cups (suit)", "misc": ["biasanya kana saja"], "field": ["card games"]}],
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -17087,7 +19240,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1119650',
+  frequency: 1000,
 },
 
 {
@@ -17112,7 +19267,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1522980',
+  frequency: 13500,
 },
 
 {
@@ -17137,7 +19294,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1557110',
+  frequency: 4000,
+  forms: [{"word": "冷蔵庫", "info": []}, {"word": "冷ぞう庫", "info": ["search-only kanji form"]}],
 },
 
 {
@@ -17162,7 +19322,8 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1443380',
 },
 
 {
@@ -17187,7 +19348,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1143120',
+  frequency: 1000,
+  misc_jm: ["abbreviation"],
 },
 
 {
@@ -17212,7 +19376,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1582310',
+  frequency: 1000,
+  meanings: [{"en": "head", "misc": [], "field": []}, {"en": "hair (on one's head)", "misc": [], "field": []}, {"en": "mind; brains; intellect", "misc": [], "field": []}, {"en": "leader; chief; boss; captain", "misc": [], "field": []}, {"en": "top; tip", "misc": [], "field": []}, {"en": "beginning; start", "misc": [], "field": []}, {"en": "head; person", "misc": [], "field": []}, {"en": "down payment; deposit", "misc": ["abbreviation"], "field": []}, {"en": "top structural component of a kanji", "misc": [], "field": []}, {"en": "pair", "misc": ["percakapan kasual"], "field": ["mahjong"]}],
+  misc_jm: ["abbreviation", "kasual"],
 },
 
 {
@@ -17237,7 +19405,12 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1592270',
+  frequency: 1500,
+  forms: [{"word": "首", "info": []}, {"word": "頸", "info": ["kanji jarang dipakai"]}, {"word": "頚", "info": ["kanji jarang dipakai"]}, {"word": "馘", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "neck", "misc": [], "field": []}, {"en": "head", "misc": [], "field": []}, {"en": "dismissal (from a job); firing; sacking", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -17262,7 +19435,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1409140',
+  frequency: 1000,
+  forms: [{"word": "体", "info": []}, {"word": "身体", "info": []}, {"word": "躯", "info": ["kanji jarang dipakai"]}, {"word": "躰", "info": ["kanji jarang dipakai"]}, {"word": "體", "info": ["search-only kanji form"]}, {"word": "軀", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "body", "misc": [], "field": []}, {"en": "torso; trunk", "misc": [], "field": []}, {"en": "build; physique; frame; figure", "misc": [], "field": []}, {"en": "health; constitution", "misc": [], "field": []}],
 },
 
 {
@@ -17287,7 +19464,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1327190',
+  frequency: 500,
+  meanings: [{"en": "hand; arm", "misc": [], "field": []}, {"en": "forepaw; foreleg", "misc": ["percakapan kasual"], "field": []}, {"en": "handle", "misc": [], "field": []}, {"en": "hand; worker; help", "misc": [], "field": []}, {"en": "trouble; care; effort", "misc": [], "field": []}, {"en": "means; way; trick; move; technique; workmanship", "misc": [], "field": []}, {"en": "hand; handwriting", "misc": [], "field": []}, {"en": "kind; type; sort", "misc": [], "field": []}, {"en": "one's hands; one's possession", "misc": [], "field": []}, {"en": "ability to cope", "misc": [], "field": []}, {"en": "hand (of cards)", "misc": [], "field": []}, {"en": "direction", "misc": [], "field": []}, {"en": "move (in go, shogi, etc.)", "misc": [], "field": []}],
+  misc_jm: ["kasual"],
 },
 
 {
@@ -17312,7 +19493,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1151290',
+  misc_jm: ["arkais"],
 },
 
 {
@@ -17337,7 +19520,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1197710',
+  frequency: 4000,
+  meanings: [{"en": "sprout; shoot; bud", "misc": [], "field": []}, {"en": "germinal disk (in an egg)", "misc": [], "field": []}],
 },
 
 {
@@ -17362,7 +19548,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1317170',
+  frequency: 1500,
+  meanings: [{"en": "ear", "misc": [], "field": []}, {"en": "hearing", "misc": [], "field": []}, {"en": "ear (for music, etc.)", "misc": [], "field": []}, {"en": "edge; crust; heel (of bread or cheese); selvedge (of woven fabric); selvage", "misc": [], "field": []}, {"en": "ear (of a pot, jug, etc.); handle", "misc": [], "field": []}],
 },
 
 {
@@ -17387,7 +19576,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1171680',
+  frequency: 9000,
+  forms: [{"word": "羽", "info": []}, {"word": "羽根", "info": []}],
+  meanings: [{"en": "feather; plume; down", "misc": [], "field": []}, {"en": "wing", "misc": [], "field": []}, {"en": "blade (of a fan, propeller, etc.)", "misc": [], "field": []}, {"en": "shuttlecock (in badminton)", "misc": [], "field": []}, {"en": "shuttlecock (in hanetsuki)", "misc": [], "field": []}, {"en": "arrow feathers", "misc": [], "field": []}],
 },
 
 {
@@ -17412,7 +19605,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1275640',
+  frequency: 1000,
+  meanings: [{"en": "mouth", "misc": [], "field": []}, {"en": "opening; hole; gap; orifice", "misc": [], "field": []}, {"en": "mouth (of a bottle); spout; nozzle; mouthpiece", "misc": [], "field": []}, {"en": "gate; door; entrance; exit", "misc": [], "field": []}, {"en": "speaking; speech; talk (i.e. gossip)", "misc": [], "field": []}, {"en": "taste; palate", "misc": [], "field": []}, {"en": "mouth (to feed)", "misc": [], "field": []}, {"en": "opening (i.e. vacancy); available position", "misc": [], "field": []}, {"en": "invitation; summons", "misc": [], "field": []}, {"en": "kind; sort; type", "misc": [], "field": []}, {"en": "opening (i.e. beginning)", "misc": [], "field": []}, {"en": "counter for mouthfuls, shares (of money) and stove burners", "misc": [], "field": []}, {"en": "counter for swords, blades, etc.", "misc": [], "field": []}],
 },
 
 {
@@ -17437,7 +19633,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1124970',
+  frequency: 1000,
 },
 
 {
@@ -17562,7 +19760,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15.6.1-plan-c',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1273270',
+  frequency: 1000,
+  forms: [{"word": "公園", "info": []}, {"word": "公苑", "info": ["search-only kanji form"]}],
 },
 
 {
@@ -17587,7 +19788,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15.6.1-plan-c',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1485470',
+  frequency: 2500,
 },
 
 {
@@ -17612,7 +19815,8 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15.6.1-plan-c',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2855971',
 },
 
 {
@@ -17637,7 +19841,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15.6.1-plan-c',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1183720',
+  frequency: 500,
+  forms: [{"word": "音楽", "info": []}, {"word": "音樂", "info": ["search-only kanji form"]}],
 },
 
 {
@@ -17662,7 +19869,9 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15.6.1-plan-c',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1542170',
+  frequency: 7500,
 },
 
 {
@@ -17687,7 +19896,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15.6.1-plan-c',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2509520',
+  forms: [{"word": "片", "info": ["ateji (phonetic) reading", "kanji jarang dipakai"]}, {"word": "枚", "info": ["ateji (phonetic) reading", "kanji jarang dipakai"]}],
+  misc_jm: ["biasanya kana saja"],
 },
 
   // ── EXPRESSIONS (18) ────────────────────────────────────────
@@ -17714,7 +19926,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1295060',
+  frequency: 1000,
+  meanings: [{"en": "excuse me; pardon me; I'm sorry; I beg your pardon", "misc": ["biasanya kana saja", "polite (teineigo) language"], "field": []}, {"en": "thank you; you shouldn't have; it's too much", "misc": ["biasanya kana saja", "polite (teineigo) language"], "field": []}],
+  misc_jm: ["biasanya kana saja", "polite (teineigo) language"],
 },
 
 {
@@ -17739,7 +19955,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1541040',
+  frequency: 1000,
+  forms: [{"word": "有難うございます", "info": []}, {"word": "有り難うございます", "info": []}, {"word": "有難う御座います", "info": []}, {"word": "ありがとう御座います", "info": []}, {"word": "有り難う御座います", "info": []}],
+  misc_jm: ["biasanya kana saja", "polite (teineigo) language"],
 },
 
 {
@@ -17764,7 +19984,11 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1189130',
+  frequency: 1000,
+  meanings: [{"en": "please; kindly; pray; I beg (of you)", "misc": [], "field": []}, {"en": "by all means; certainly; of course; (go) ahead; (feel) free (to); (you are) welcome (to); please (help yourself to)", "misc": [], "field": []}, {"en": "here you are", "misc": [], "field": []}, {"en": "to give", "misc": ["children's language"], "field": []}],
+  misc_jm: ["children's language"],
 },
 
 {
@@ -17839,7 +20063,8 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2196920',
 },
 
 {
@@ -17864,7 +20089,8 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2836288',
 },
 
 {
@@ -18039,7 +20265,10 @@ window.vocabN5 = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1911810',
+  forms: [{"word": "眼鏡をかける", "info": []}, {"word": "眼鏡を掛ける", "info": []}, {"word": "メガネを掛ける", "info": []}, {"word": "めがねを掛ける", "info": []}],
+  misc_jm: ["biasanya kana saja"],
 },
 
 {

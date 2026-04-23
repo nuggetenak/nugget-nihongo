@@ -18,21 +18,58 @@ window.vocabN2_Adjectives = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["bahasa-komunikasi", "bisnis", "kualitas"],
+  "domain": [
+    "bahasa-komunikasi",
+    "bisnis",
+    "kualitas"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan", "atasan"],
+  "lawan_bicara": [
+    "rekan",
+    "atasan"
+  ],
   "nuance": "Menekankan kesesuaian yang bersifat objektif dan terukur — pilihan yang 'tepat sasaran' berdasarkan standar atau konteks tertentu. Lebih formal dari ふさわしい.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "適切な対応が求められる。", "id": "Diperlukan respons yang tepat.", "level": "n2", "tags": ["bisnis"]},
-    {"jp": "彼女は適切な言葉を選んで説明した。", "id": "Dia memilih kata-kata yang tepat untuk menjelaskan.", "level": "n2", "tags": ["bahasa-komunikasi"]},
-    {"jp": "この状況には適切な判断が必要だ。", "id": "Situasi ini membutuhkan penilaian yang tepat.", "level": "n2", "tags": ["kualitas"]}
+    {
+      "jp": "適切な対応が求められる。",
+      "id": "Diperlukan respons yang tepat.",
+      "level": "n2",
+      "tags": [
+        "bisnis"
+      ]
+    },
+    {
+      "jp": "彼女は適切な言葉を選んで説明した。",
+      "id": "Dia memilih kata-kata yang tepat untuk menjelaskan.",
+      "level": "n2",
+      "tags": [
+        "bahasa-komunikasi"
+      ]
+    },
+    {
+      "jp": "この状況には適切な判断が必要だ。",
+      "id": "Situasi ini membutuhkan penilaian yang tepat.",
+      "level": "n2",
+      "tags": [
+        "kualitas"
+      ]
+    }
   ],
-  "synonyms": ["vg-n2-00133", "vg-n2-00136"],
-  "antonyms": ["vg-n2-00132"],
-  "see_also": ["vg-n2-00135"],
+  "synonyms": [
+    "vg-n2-00133",
+    "vg-n2-00136"
+  ],
+  "antonyms": [
+    "vg-n2-00132"
+  ],
+  "see_also": [
+    "vg-n2-00135"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1437430",
+  "frequency": 2000
 },
 
 {
@@ -47,20 +84,47 @@ window.vocabN2_Adjectives = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["bahasa-komunikasi", "hukum-aturan", "kualitas"],
+  "domain": [
+    "bahasa-komunikasi",
+    "hukum-aturan",
+    "kualitas"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan", "atasan"],
+  "lawan_bicara": [
+    "rekan",
+    "atasan"
+  ],
   "nuance": "Menyatakan bahwa sesuatu melanggar standar, aturan, atau ekspektasi sosial. Sering dipakai dalam konteks kritik resmi, berita, atau laporan — nadanya lebih keras dari 良くない.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "不適切な発言が問題となった。", "id": "Ucapan yang tidak pantas menjadi masalah.", "level": "n2", "tags": ["bahasa-komunikasi"]},
-    {"jp": "その行動は職場において不適切だと判断された。", "id": "Tindakan tersebut dinilai tidak sesuai di tempat kerja.", "level": "n2", "tags": ["hukum-aturan"]}
+    {
+      "jp": "不適切な発言が問題となった。",
+      "id": "Ucapan yang tidak pantas menjadi masalah.",
+      "level": "n2",
+      "tags": [
+        "bahasa-komunikasi"
+      ]
+    },
+    {
+      "jp": "その行動は職場において不適切だと判断された。",
+      "id": "Tindakan tersebut dinilai tidak sesuai di tempat kerja.",
+      "level": "n2",
+      "tags": [
+        "hukum-aturan"
+      ]
+    }
   ],
-  "synonyms": ["vg-n2-00134"],
-  "antonyms": ["vg-n2-00131"],
+  "synonyms": [
+    "vg-n2-00134"
+  ],
+  "antonyms": [
+    "vg-n2-00131"
+  ],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1493960",
+  "frequency": 1000
 },
 
 {
@@ -75,20 +139,59 @@ window.vocabN2_Adjectives = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["kehidupan-sehari", "bahasa-komunikasi", "kualitas"],
+  "domain": [
+    "kehidupan-sehari",
+    "bahasa-komunikasi",
+    "kualitas"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["teman", "rekan"],
+  "lawan_bicara": [
+    "teman",
+    "rekan"
+  ],
   "nuance": "Kata ini memiliki dua makna yang berlawanan tergantung konteks: dalam konteks formal berarti 'sesuai/cocok', namun dalam percakapan sehari-hari sering berarti 'asal-asalan' atau 'tidak serius'. Hati-hati memakainya di situasi formal.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "適当な時間に連絡してください。", "id": "Tolong hubungi di waktu yang sesuai.", "level": "n2", "tags": ["kehidupan-sehari"]},
-    {"jp": "彼の仕事は適当すぎると上司に怒られた。", "id": "Dia dimarahi atasan karena pekerjaannya terlalu asal-asalan.", "level": "n2", "tags": ["pekerjaan"]}
+    {
+      "jp": "適当な時間に連絡してください。",
+      "id": "Tolong hubungi di waktu yang sesuai.",
+      "level": "n2",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "彼の仕事は適当すぎると上司に怒られた。",
+      "id": "Dia dimarahi atasan karena pekerjaannya terlalu asal-asalan.",
+      "level": "n2",
+      "tags": [
+        "pekerjaan"
+      ]
+    }
   ],
-  "synonyms": ["vg-n2-00131"],
-  "antonyms": ["vg-n2-00134"],
+  "synonyms": [
+    "vg-n2-00131"
+  ],
+  "antonyms": [
+    "vg-n2-00134"
+  ],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1437450",
+  "frequency": 3000,
+  "meanings": [
+    {
+      "en": "suitable; proper; appropriate; adequate; fit; fair",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "perfunctory; half-minded; sloppy; lazy; careless; noncommittal; unreliable; irresponsible; haphazard",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
@@ -103,20 +206,47 @@ window.vocabN2_Adjectives = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["hukum-aturan", "bisnis", "kualitas"],
+  "domain": [
+    "hukum-aturan",
+    "bisnis",
+    "kualitas"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan", "atasan"],
+  "lawan_bicara": [
+    "rekan",
+    "atasan"
+  ],
   "nuance": "Menekankan ketidakcocokan dari sisi kelayakan atau standar moral/sosial. Sedikit lebih formal dari 不適切 dan sering muncul dalam konteks hukum, regulasi, atau laporan resmi.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "このルールは現状に不適当だと指摘された。", "id": "Aturan ini ditunjukkan tidak sesuai dengan kondisi saat ini.", "level": "n2", "tags": ["hukum-aturan"]},
-    {"jp": "その候補者はその職に不適当だと判断された。", "id": "Kandidat tersebut dinilai tidak layak untuk posisi itu.", "level": "n2", "tags": ["bisnis"]}
+    {
+      "jp": "このルールは現状に不適当だと指摘された。",
+      "id": "Aturan ini ditunjukkan tidak sesuai dengan kondisi saat ini.",
+      "level": "n2",
+      "tags": [
+        "hukum-aturan"
+      ]
+    },
+    {
+      "jp": "その候補者はその職に不適当だと判断された。",
+      "id": "Kandidat tersebut dinilai tidak layak untuk posisi itu.",
+      "level": "n2",
+      "tags": [
+        "bisnis"
+      ]
+    }
   ],
-  "synonyms": ["vg-n2-00132"],
-  "antonyms": ["vg-n2-00133"],
+  "synonyms": [
+    "vg-n2-00132"
+  ],
+  "antonyms": [
+    "vg-n2-00133"
+  ],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1493970",
+  "frequency": 11000
 },
 
 {
@@ -131,20 +261,46 @@ window.vocabN2_Adjectives = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["bisnis", "ekonomi-keuangan", "hukum-aturan"],
+  "domain": [
+    "bisnis",
+    "ekonomi-keuangan",
+    "hukum-aturan"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan", "atasan"],
+  "lawan_bicara": [
+    "rekan",
+    "atasan"
+  ],
   "nuance": "Menekankan kesesuaian dari sisi besaran, tingkat, atau jumlah — bukan sekadar 'tepat' secara umum. Banyak dipakai dalam konteks harga, prosedur, atau penilaian resmi.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "適正価格で販売する必要がある。", "id": "Perlu menjual dengan harga yang wajar.", "level": "n2", "tags": ["ekonomi-keuangan"]},
-    {"jp": "適正な手続きを踏んで申請してください。", "id": "Mohon ajukan permohonan melalui prosedur yang tepat.", "level": "n2", "tags": ["hukum-aturan"]}
+    {
+      "jp": "適正価格で販売する必要がある。",
+      "id": "Perlu menjual dengan harga yang wajar.",
+      "level": "n2",
+      "tags": [
+        "ekonomi-keuangan"
+      ]
+    },
+    {
+      "jp": "適正な手続きを踏んで申請してください。",
+      "id": "Mohon ajukan permohonan melalui prosedur yang tepat.",
+      "level": "n2",
+      "tags": [
+        "hukum-aturan"
+      ]
+    }
   ],
-  "synonyms": ["vg-n2-00131", "vg-n2-00136"],
+  "synonyms": [
+    "vg-n2-00131",
+    "vg-n2-00136"
+  ],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1437420",
+  "frequency": 2500
 },
 
 {
@@ -159,21 +315,56 @@ window.vocabN2_Adjectives = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["pikiran-opini", "bisnis", "ilmu-pengetahuan"],
+  "domain": [
+    "pikiran-opini",
+    "bisnis",
+    "ilmu-pengetahuan"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan", "atasan"],
+  "lawan_bicara": [
+    "rekan",
+    "atasan"
+  ],
   "nuance": "Menyatakan bahwa sesuatu dapat diterima secara logis atau rasional. Lebih menekankan aspek pembenaran intelektual daripada sekadar 'cocok'. Umum dalam diskusi akademis, debat, dan pengambilan keputusan.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "その結論は妥当だと思います。", "id": "Saya rasa kesimpulan itu masuk akal.", "level": "n2", "tags": ["pikiran-opini"]},
-    {"jp": "妥当な理由があれば認められる。", "id": "Akan diizinkan jika ada alasan yang dapat dibenarkan.", "level": "n2", "tags": ["hukum-aturan"]},
-    {"jp": "この分析は妥当性が高い。", "id": "Analisis ini memiliki validitas yang tinggi.", "level": "n2", "tags": ["ilmu-pengetahuan"]}
+    {
+      "jp": "その結論は妥当だと思います。",
+      "id": "Saya rasa kesimpulan itu masuk akal.",
+      "level": "n2",
+      "tags": [
+        "pikiran-opini"
+      ]
+    },
+    {
+      "jp": "妥当な理由があれば認められる。",
+      "id": "Akan diizinkan jika ada alasan yang dapat dibenarkan.",
+      "level": "n2",
+      "tags": [
+        "hukum-aturan"
+      ]
+    },
+    {
+      "jp": "この分析は妥当性が高い。",
+      "id": "Analisis ini memiliki validitas yang tinggi.",
+      "level": "n2",
+      "tags": [
+        "ilmu-pengetahuan"
+      ]
+    }
   ],
-  "synonyms": ["vg-n2-00131", "vg-n2-00135"],
-  "antonyms": ["vg-n2-00137"],
+  "synonyms": [
+    "vg-n2-00131",
+    "vg-n2-00135"
+  ],
+  "antonyms": [
+    "vg-n2-00137"
+  ],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1408540",
+  "frequency": 20000
 },
 
 {
@@ -188,20 +379,45 @@ window.vocabN2_Adjectives = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["hukum-aturan", "politik-masyarakat", "bisnis"],
+  "domain": [
+    "hukum-aturan",
+    "politik-masyarakat",
+    "bisnis"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan", "atasan"],
+  "lawan_bicara": [
+    "rekan",
+    "atasan"
+  ],
   "nuance": "Menyatakan pelanggaran terhadap keadilan, aturan, atau norma. Sering dipakai dalam konteks hukum dan sindikasi — 不当解雇 (pemecatan tidak adil), 不当利得 (keuntungan tidak sah).",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "不当な扱いを受けたと訴えた。", "id": "Dia mengadu mendapat perlakuan yang tidak adil.", "level": "n2", "tags": ["hukum-aturan"]},
-    {"jp": "不当解雇は法律で禁止されている。", "id": "Pemecatan tidak adil dilarang oleh undang-undang.", "level": "n2", "tags": ["politik-masyarakat"]}
+    {
+      "jp": "不当な扱いを受けたと訴えた。",
+      "id": "Dia mengadu mendapat perlakuan yang tidak adil.",
+      "level": "n2",
+      "tags": [
+        "hukum-aturan"
+      ]
+    },
+    {
+      "jp": "不当解雇は法律で禁止されている。",
+      "id": "Pemecatan tidak adil dilarang oleh undang-undang.",
+      "level": "n2",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    }
   ],
   "synonyms": [],
-  "antonyms": ["vg-n2-00136"],
+  "antonyms": [
+    "vg-n2-00136"
+  ],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1494120",
+  "frequency": 2500
 },
 
 {
@@ -216,20 +432,44 @@ window.vocabN2_Adjectives = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["kesehatan", "kehidupan-sehari", "kualitas"],
+  "domain": [
+    "kesehatan",
+    "kehidupan-sehari",
+    "kualitas"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Menekankan kadar yang 'tidak kurang, tidak lebih' — keseimbangan yang sehat atau ideal. Sering muncul dalam anjuran kesehatan dan gaya hidup: 適度な運動、適度な休息.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "適度な運動は健康に良い。", "id": "Olahraga yang moderat baik untuk kesehatan.", "level": "n2", "tags": ["kesehatan"]},
-    {"jp": "何事も適度が大切だ。", "id": "Dalam segala hal, ukuran yang tepat itu penting.", "level": "n2", "tags": ["kehidupan-sehari"]}
+    {
+      "jp": "適度な運動は健康に良い。",
+      "id": "Olahraga yang moderat baik untuk kesehatan.",
+      "level": "n2",
+      "tags": [
+        "kesehatan"
+      ]
+    },
+    {
+      "jp": "何事も適度が大切だ。",
+      "id": "Dalam segala hal, ukuran yang tepat itu penting.",
+      "level": "n2",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
   ],
   "synonyms": [],
-  "antonyms": ["vg-n2-00139"],
+  "antonyms": [
+    "vg-n2-00139"
+  ],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1437440",
+  "frequency": 9500
 },
 
 {
@@ -244,20 +484,45 @@ window.vocabN2_Adjectives = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["kesehatan", "pikiran-opini", "kualitas"],
+  "domain": [
+    "kesehatan",
+    "pikiran-opini",
+    "kualitas"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan", "umum"],
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
   "nuance": "Menyatakan kadar yang melampaui batas wajar hingga berpotensi merugikan. Berbeda dari ただ多い (banyak saja) — 過度 mengandung konotasi negatif bahwa kelebihannya menimbulkan masalah.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "過度なストレスは体に悪い。", "id": "Stres yang berlebihan berbahaya bagi tubuh.", "level": "n2", "tags": ["kesehatan"]},
-    {"jp": "過度な期待は禁物だ。", "id": "Harapan yang berlebihan harus dihindari.", "level": "n2", "tags": ["pikiran-opini"]}
+    {
+      "jp": "過度なストレスは体に悪い。",
+      "id": "Stres yang berlebihan berbahaya bagi tubuh.",
+      "level": "n2",
+      "tags": [
+        "kesehatan"
+      ]
+    },
+    {
+      "jp": "過度な期待は禁物だ。",
+      "id": "Harapan yang berlebihan harus dihindari.",
+      "level": "n2",
+      "tags": [
+        "pikiran-opini"
+      ]
+    }
   ],
   "synonyms": [],
-  "antonyms": ["vg-n2-00138"],
+  "antonyms": [
+    "vg-n2-00138"
+  ],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1196310",
+  "frequency": 5500
 },
 
 {
@@ -272,21 +537,52 @@ window.vocabN2_Adjectives = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["pikiran-opini", "politik-masyarakat", "kesehatan"],
+  "domain": [
+    "pikiran-opini",
+    "politik-masyarakat",
+    "kesehatan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Menggambarkan situasi yang parah dan membutuhkan perhatian serius. Berbeda dari ひどい yang lebih emosional — 深刻 bersifat analitis dan sering muncul dalam berita, laporan, dan diskusi kebijakan.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "問題は深刻な状況になっている。", "id": "Masalah ini telah menjadi situasi yang serius.", "level": "n2", "tags": ["pikiran-opini"]},
-    {"jp": "少子化は深刻な社会問題だ。", "id": "Penurunan angka kelahiran adalah masalah sosial yang gawat.", "level": "n2", "tags": ["politik-masyarakat"]},
-    {"jp": "深刻な顔で話し合いに臨んだ。", "id": "Dia menghadiri diskusi dengan ekspresi serius.", "level": "n2", "tags": ["bahasa-komunikasi"]}
+    {
+      "jp": "問題は深刻な状況になっている。",
+      "id": "Masalah ini telah menjadi situasi yang serius.",
+      "level": "n2",
+      "tags": [
+        "pikiran-opini"
+      ]
+    },
+    {
+      "jp": "少子化は深刻な社会問題だ。",
+      "id": "Penurunan angka kelahiran adalah masalah sosial yang gawat.",
+      "level": "n2",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "深刻な顔で話し合いに臨んだ。",
+      "id": "Dia menghadiri diskusi dengan ekspresi serius.",
+      "level": "n2",
+      "tags": [
+        "bahasa-komunikasi"
+      ]
+    }
   ],
-  "synonyms": ["vg-n2-00141"],
+  "synonyms": [
+    "vg-n2-00141"
+  ],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1362730",
+  "frequency": 1000
 },
 
 {
@@ -301,20 +597,45 @@ window.vocabN2_Adjectives = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["hukum-aturan", "politik-masyarakat", "bisnis"],
+  "domain": [
+    "hukum-aturan",
+    "politik-masyarakat",
+    "bisnis"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan", "atasan"],
+  "lawan_bicara": [
+    "rekan",
+    "atasan"
+  ],
   "nuance": "Menekankan besarnya dampak atau signifikansi sesuatu — sering berkaitan dengan konsekuensi besar seperti 重大な過失 (kelalaian besar) atau 重大な決断 (keputusan penting). Lebih formal dari 大事.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "これは重大な問題として取り上げられた。", "id": "Ini diangkat sebagai masalah yang sangat serius.", "level": "n2", "tags": ["politik-masyarakat"]},
-    {"jp": "重大な過失があったことが判明した。", "id": "Terbukti ada kelalaian besar.", "level": "n2", "tags": ["hukum-aturan"]}
+    {
+      "jp": "これは重大な問題として取り上げられた。",
+      "id": "Ini diangkat sebagai masalah yang sangat serius.",
+      "level": "n2",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "重大な過失があったことが判明した。",
+      "id": "Terbukti ada kelalaian besar.",
+      "level": "n2",
+      "tags": [
+        "hukum-aturan"
+      ]
+    }
   ],
-  "synonyms": ["vg-n2-00140"],
+  "synonyms": [
+    "vg-n2-00140"
+  ],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1336500",
+  "frequency": 1500
 },
 
 {
@@ -329,21 +650,52 @@ window.vocabN2_Adjectives = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["kesehatan", "hukum-aturan", "bisnis"],
+  "domain": [
+    "kesehatan",
+    "hukum-aturan",
+    "bisnis"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Menyatakan situasi yang memerlukan tindakan segera karena tidak ada waktu untuk menunda. Sering muncul dalam istilah resmi: 緊急事態 (keadaan darurat), 緊急連絡 (kontak mendesak). Lebih kuat dari 急ぎ.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "緊急の連絡が入ったのですぐに戻ります。", "id": "Ada kontak mendesak masuk jadi saya segera kembali.", "level": "n2", "tags": ["kehidupan-sehari"]},
-    {"jp": "緊急事態が宣言された。", "id": "Keadaan darurat dideklarasikan.", "level": "n2", "tags": ["hukum-aturan"]},
-    {"jp": "緊急手術が必要だと診断された。", "id": "Didiagnosis memerlukan operasi segera.", "level": "n2", "tags": ["kesehatan"]}
+    {
+      "jp": "緊急の連絡が入ったのですぐに戻ります。",
+      "id": "Ada kontak mendesak masuk jadi saya segera kembali.",
+      "level": "n2",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "緊急事態が宣言された。",
+      "id": "Keadaan darurat dideklarasikan.",
+      "level": "n2",
+      "tags": [
+        "hukum-aturan"
+      ]
+    },
+    {
+      "jp": "緊急手術が必要だと診断された。",
+      "id": "Didiagnosis memerlukan operasi segera.",
+      "level": "n2",
+      "tags": [
+        "kesehatan"
+      ]
+    }
   ],
-  "synonyms": ["vg-n2-00143"],
+  "synonyms": [
+    "vg-n2-00143"
+  ],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1241850",
+  "frequency": 1000
 },
 
 {
@@ -358,20 +710,45 @@ window.vocabN2_Adjectives = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["politik-masyarakat", "emosi", "bahasa-komunikasi"],
+  "domain": [
+    "politik-masyarakat",
+    "emosi",
+    "bahasa-komunikasi"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan", "umum"],
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
   "nuance": "Menggambarkan suasana yang penuh ketegangan dan hampir mencapai titik kritis. Berbeda dari 緊急 yang fokus pada urgensi tindakan — 緊迫 lebih menggambarkan atmosfer atau kondisi yang menegang.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "両国の関係は緊迫した状況にある。", "id": "Hubungan kedua negara berada dalam situasi yang genting.", "level": "n2", "tags": ["politik-masyarakat"]},
-    {"jp": "試合は緊迫した展開となった。", "id": "Pertandingan berlangsung dalam perkembangan yang menegangkan.", "level": "n2", "tags": ["olahraga"]}
+    {
+      "jp": "両国の関係は緊迫した状況にある。",
+      "id": "Hubungan kedua negara berada dalam situasi yang genting.",
+      "level": "n2",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "試合は緊迫した展開となった。",
+      "id": "Pertandingan berlangsung dalam perkembangan yang menegangkan.",
+      "level": "n2",
+      "tags": [
+        "olahraga"
+      ]
+    }
   ],
-  "synonyms": ["vg-n2-00142"],
+  "synonyms": [
+    "vg-n2-00142"
+  ],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1241890",
+  "frequency": 6000
 },
 
 {
@@ -386,21 +763,84 @@ window.vocabN2_Adjectives = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["bahasa-komunikasi", "pikiran-opini", "karakter"],
+  "domain": [
+    "bahasa-komunikasi",
+    "pikiran-opini",
+    "karakter"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Dalam budaya Jepang, 曖昧 tidak selalu negatif — bersikap tidak langsung terkadang dianggap halus secara sosial. Namun dalam konteks akademis dan bisnis, 曖昧な表現 (ekspresi yang kabur) dianggap kurang baik.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "曖昧な返事では困ります。", "id": "Jawaban yang tidak jelas itu menyusahkan.", "level": "n2", "tags": ["bahasa-komunikasi"]},
-    {"jp": "彼の態度は曖昧で本心がわからない。", "id": "Sikapnya ambigu sehingga tidak bisa tahu pikiran aslinya.", "level": "n2", "tags": ["karakter"]},
-    {"jp": "曖昧な表現を避けて明確に書くように。", "id": "Hindari ekspresi yang kabur dan tulislah dengan jelas.", "level": "n2", "tags": ["bahasa-komunikasi"]}
+    {
+      "jp": "曖昧な返事では困ります。",
+      "id": "Jawaban yang tidak jelas itu menyusahkan.",
+      "level": "n2",
+      "tags": [
+        "bahasa-komunikasi"
+      ]
+    },
+    {
+      "jp": "彼の態度は曖昧で本心がわからない。",
+      "id": "Sikapnya ambigu sehingga tidak bisa tahu pikiran aslinya.",
+      "level": "n2",
+      "tags": [
+        "karakter"
+      ]
+    },
+    {
+      "jp": "曖昧な表現を避けて明確に書くように。",
+      "id": "Hindari ekspresi yang kabur dan tulislah dengan jelas.",
+      "level": "n2",
+      "tags": [
+        "bahasa-komunikasi"
+      ]
+    }
   ],
   "synonyms": [],
-  "antonyms": ["vg-n2-00145", "vg-n2-00146", "vg-n2-00147"],
+  "antonyms": [
+    "vg-n2-00145",
+    "vg-n2-00146",
+    "vg-n2-00147"
+  ],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1567920",
+  "frequency": 17500,
+  "forms": [
+    {
+      "word": "曖昧",
+      "info": []
+    },
+    {
+      "word": "あい昧",
+      "info": []
+    }
+  ],
+  "meanings": [
+    {
+      "en": "vague; ambiguous; unclear",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "shady; disreputable",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "fuzzy",
+      "misc": [],
+      "field": [
+        "mathematics",
+        "computing"
+      ]
+    }
+  ]
 },
 
 {
@@ -415,20 +855,48 @@ window.vocabN2_Adjectives = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["bahasa-komunikasi", "bisnis", "ilmu-pengetahuan"],
+  "domain": [
+    "bahasa-komunikasi",
+    "bisnis",
+    "ilmu-pengetahuan"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan", "atasan"],
+  "lawan_bicara": [
+    "rekan",
+    "atasan"
+  ],
   "nuance": "Menekankan ketegasan dan tidak adanya ruang untuk salah tafsir. Sering dipakai dalam konteks instruksi, peraturan, dan tujuan: 明確な目標 (tujuan yang jelas). Lebih formal dari はっきり.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "明確な目標を設定することが重要だ。", "id": "Menetapkan tujuan yang jelas itu penting.", "level": "n2", "tags": ["bisnis"]},
-    {"jp": "規則を明確にしておく必要がある。", "id": "Perlu memperjelas aturannya.", "level": "n2", "tags": ["hukum-aturan"]}
+    {
+      "jp": "明確な目標を設定することが重要だ。",
+      "id": "Menetapkan tujuan yang jelas itu penting.",
+      "level": "n2",
+      "tags": [
+        "bisnis"
+      ]
+    },
+    {
+      "jp": "規則を明確にしておく必要がある。",
+      "id": "Perlu memperjelas aturannya.",
+      "level": "n2",
+      "tags": [
+        "hukum-aturan"
+      ]
+    }
   ],
-  "synonyms": ["vg-n2-00146", "vg-n2-00147"],
-  "antonyms": ["vg-n2-00144"],
+  "synonyms": [
+    "vg-n2-00146",
+    "vg-n2-00147"
+  ],
+  "antonyms": [
+    "vg-n2-00144"
+  ],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1532410",
+  "frequency": 1000
 },
 
 {
@@ -443,20 +911,73 @@ window.vocabN2_Adjectives = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["bahasa-komunikasi", "hukum-aturan", "pikiran-opini"],
+  "domain": [
+    "bahasa-komunikasi",
+    "hukum-aturan",
+    "pikiran-opini"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan", "atasan"],
+  "lawan_bicara": [
+    "rekan",
+    "atasan"
+  ],
   "nuance": "Menyatakan sesuatu yang begitu jelas sehingga tidak perlu diragukan lagi — berbeda dari 明確 yang menekankan ketegasan definisi, 明白 lebih menekankan pada kejelasan yang sudah terbukti dengan sendirinya.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "彼の責任は明白だ。", "id": "Tanggung jawabnya sudah sangat jelas.", "level": "n2", "tags": ["hukum-aturan"]},
-    {"jp": "その事実は明白に証明されている。", "id": "Fakta itu sudah terbukti dengan terang-terangan.", "level": "n2", "tags": ["ilmu-pengetahuan"]}
+    {
+      "jp": "彼の責任は明白だ。",
+      "id": "Tanggung jawabnya sudah sangat jelas.",
+      "level": "n2",
+      "tags": [
+        "hukum-aturan"
+      ]
+    },
+    {
+      "jp": "その事実は明白に証明されている。",
+      "id": "Fakta itu sudah terbukti dengan terang-terangan.",
+      "level": "n2",
+      "tags": [
+        "ilmu-pengetahuan"
+      ]
+    }
   ],
-  "synonyms": ["vg-n2-00145", "vg-n2-00147"],
-  "antonyms": ["vg-n2-00144"],
+  "synonyms": [
+    "vg-n2-00145",
+    "vg-n2-00147"
+  ],
+  "antonyms": [
+    "vg-n2-00144"
+  ],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1000225",
+  "forms": [
+    {
+      "word": "明白",
+      "info": [
+        "ateji (phonetic) reading",
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "偸閑",
+      "info": [
+        "ateji (phonetic) reading",
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "白地",
+      "info": [
+        "ateji (phonetic) reading",
+        "kanji jarang dipakai"
+      ]
+    }
+  ],
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
 },
 
 {
@@ -471,21 +992,67 @@ window.vocabN2_Adjectives = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["pikiran-opini", "bahasa-komunikasi", "ilmu-pengetahuan"],
+  "domain": [
+    "pikiran-opini",
+    "bahasa-komunikasi",
+    "ilmu-pengetahuan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Menyatakan bahwa fakta atau kondisi dapat dilihat dengan jelas. Sering dipakai dalam bentuk 明らかに (secara jelas/ternyata) sebagai adverbia. Lebih umum dan sedikit kurang formal dibanding 明白.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "その原因は明らかだ。", "id": "Penyebabnya sudah jelas.", "level": "n2", "tags": ["pikiran-opini"]},
-    {"jp": "調査の結果、問題は明らかになった。", "id": "Setelah penyelidikan, masalahnya menjadi terang.", "level": "n2", "tags": ["ilmu-pengetahuan"]},
-    {"jp": "明らかに間違った情報が広まっている。", "id": "Informasi yang jelas salah telah tersebar.", "level": "n2", "tags": ["bahasa-komunikasi"]}
+    {
+      "jp": "その原因は明らかだ。",
+      "id": "Penyebabnya sudah jelas.",
+      "level": "n2",
+      "tags": [
+        "pikiran-opini"
+      ]
+    },
+    {
+      "jp": "調査の結果、問題は明らかになった。",
+      "id": "Setelah penyelidikan, masalahnya menjadi terang.",
+      "level": "n2",
+      "tags": [
+        "ilmu-pengetahuan"
+      ]
+    },
+    {
+      "jp": "明らかに間違った情報が広まっている。",
+      "id": "Informasi yang jelas salah telah tersebar.",
+      "level": "n2",
+      "tags": [
+        "bahasa-komunikasi"
+      ]
+    }
   ],
-  "synonyms": ["vg-n2-00145", "vg-n2-00146"],
-  "antonyms": ["vg-n2-00144"],
+  "synonyms": [
+    "vg-n2-00145",
+    "vg-n2-00146"
+  ],
+  "antonyms": [
+    "vg-n2-00144"
+  ],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1532310",
+  "frequency": 500,
+  "meanings": [
+    {
+      "en": "clear; obvious; evident; plain; definite",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "bright; light",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
@@ -500,20 +1067,61 @@ window.vocabN2_Adjectives = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["pikiran-opini", "pekerjaan", "kehidupan-sehari"],
+  "domain": [
+    "pikiran-opini",
+    "pekerjaan",
+    "kehidupan-sehari"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Lebih formal dari 難しい dan sering muncul dalam teks tertulis. Sebagai kata benda 困難 berarti 'kesulitan/hambatan'. Nuansa mencerminkan situasi yang menuntut usaha keras atau sulit dipecahkan.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "この課題の解決は困難を極めている。", "id": "Penyelesaian tugas ini sangat sulit.", "level": "n2", "tags": ["pekerjaan"]},
-    {"jp": "困難な状況にも諦めずに取り組んだ。", "id": "Dia tetap berupaya meski dalam situasi yang sulit.", "level": "n2", "tags": ["karakter"]}
+    {
+      "jp": "この課題の解決は困難を極めている。",
+      "id": "Penyelesaian tugas ini sangat sulit.",
+      "level": "n2",
+      "tags": [
+        "pekerjaan"
+      ]
+    },
+    {
+      "jp": "困難な状況にも諦めずに取り組んだ。",
+      "id": "Dia tetap berupaya meski dalam situasi yang sulit.",
+      "level": "n2",
+      "tags": [
+        "karakter"
+      ]
+    }
   ],
   "synonyms": [],
-  "antonyms": ["vg-n2-00149"],
+  "antonyms": [
+    "vg-n2-00149"
+  ],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1289620",
+  "frequency": 2000,
+  "meanings": [
+    {
+      "en": "difficulty; hardship; trouble; distress",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "infeasibility; inability (to carry out)",
+      "misc": [
+        "euphemistic"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "euphemistic"
+  ]
 },
 
 {
@@ -528,20 +1136,45 @@ window.vocabN2_Adjectives = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["pikiran-opini", "ilmu-pengetahuan", "bisnis"],
+  "domain": [
+    "pikiran-opini",
+    "ilmu-pengetahuan",
+    "bisnis"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan", "atasan"],
+  "lawan_bicara": [
+    "rekan",
+    "atasan"
+  ],
   "nuance": "Jauh lebih formal dari 簡単. Sering dipakai dalam tulisan akademis, teks hukum, dan laporan. Bentuk negatif 容易ではない (tidak mudah) sangat umum untuk mengungkapkan bahwa sesuatu lebih sulit dari yang terlihat.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "これを解決するのは容易ではない。", "id": "Menyelesaikan ini tidaklah mudah.", "level": "n2", "tags": ["pikiran-opini"]},
-    {"jp": "容易に推測できる結果だった。", "id": "Itu adalah hasil yang mudah ditebak.", "level": "n2", "tags": ["ilmu-pengetahuan"]}
+    {
+      "jp": "これを解決するのは容易ではない。",
+      "id": "Menyelesaikan ini tidaklah mudah.",
+      "level": "n2",
+      "tags": [
+        "pikiran-opini"
+      ]
+    },
+    {
+      "jp": "容易に推測できる結果だった。",
+      "id": "Itu adalah hasil yang mudah ditebak.",
+      "level": "n2",
+      "tags": [
+        "ilmu-pengetahuan"
+      ]
+    }
   ],
   "synonyms": [],
-  "antonyms": ["vg-n2-00148"],
+  "antonyms": [
+    "vg-n2-00148"
+  ],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1545350",
+  "frequency": 2500
 },
 
 {
@@ -556,20 +1189,44 @@ window.vocabN2_Adjectives = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["pikiran-opini", "bisnis", "ilmu-pengetahuan"],
+  "domain": [
+    "pikiran-opini",
+    "bisnis",
+    "ilmu-pengetahuan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Sebagai na-adj melekat pada kata benda: 可能な限り (sebisa mungkin), 可能な方法 (cara yang bisa dilakukan). Berbeda dari できる yang langsung pada tindakan — 可能 lebih abstrak dan formal.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "可能な限り早く対応します。", "id": "Akan kami tanggapi secepat mungkin.", "level": "n2", "tags": ["bisnis"]},
-    {"jp": "これは技術的に可能だと思います。", "id": "Saya pikir ini mungkin secara teknis.", "level": "n2", "tags": ["ilmu-pengetahuan"]}
+    {
+      "jp": "可能な限り早く対応します。",
+      "id": "Akan kami tanggapi secepat mungkin.",
+      "level": "n2",
+      "tags": [
+        "bisnis"
+      ]
+    },
+    {
+      "jp": "これは技術的に可能だと思います。",
+      "id": "Saya pikir ini mungkin secara teknis.",
+      "level": "n2",
+      "tags": [
+        "ilmu-pengetahuan"
+      ]
+    }
   ],
   "synonyms": [],
-  "antonyms": ["vg-n2-00151"],
+  "antonyms": [
+    "vg-n2-00151"
+  ],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1191060",
+  "frequency": 500
 },
 
 {
@@ -584,20 +1241,44 @@ window.vocabN2_Adjectives = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["pikiran-opini", "ilmu-pengetahuan", "bisnis"],
+  "domain": [
+    "pikiran-opini",
+    "ilmu-pengetahuan",
+    "bisnis"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Menyatakan sesuatu yang mustahil secara teknis, fisik, atau logis. Lebih kuat dari できない — 不可能 mengklaim ketidakmungkinan secara absolut, sehingga hati-hati memakainya karena terdengar tegas.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "それは物理的に不可能だ。", "id": "Itu mustahil secara fisika.", "level": "n2", "tags": ["ilmu-pengetahuan"]},
-    {"jp": "今の状況では不可能に近い。", "id": "Dalam situasi sekarang, hampir mustahil.", "level": "n2", "tags": ["pikiran-opini"]}
+    {
+      "jp": "それは物理的に不可能だ。",
+      "id": "Itu mustahil secara fisika.",
+      "level": "n2",
+      "tags": [
+        "ilmu-pengetahuan"
+      ]
+    },
+    {
+      "jp": "今の状況では不可能に近い。",
+      "id": "Dalam situasi sekarang, hampir mustahil.",
+      "level": "n2",
+      "tags": [
+        "pikiran-opini"
+      ]
+    }
   ],
   "synonyms": [],
-  "antonyms": ["vg-n2-00150"],
+  "antonyms": [
+    "vg-n2-00150"
+  ],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1491520",
+  "frequency": 3500
 },
 
 {
@@ -612,20 +1293,57 @@ window.vocabN2_Adjectives = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["pikiran-opini", "ilmu-pengetahuan", "hubungan-konsep"],
+  "domain": [
+    "pikiran-opini",
+    "ilmu-pengetahuan",
+    "hubungan-konsep"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan", "atasan"],
+  "lawan_bicara": [
+    "rekan",
+    "atasan"
+  ],
   "nuance": "Menyatakan bahwa sesuatu terjadi karena alasan kausal yang logis — bukan kebetulan. 必然的に (secara niscaya) sangat umum dalam argumen filosofis dan akademis. Lawan kata langsung: 偶然.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "その結果は必然だったと言える。", "id": "Bisa dikatakan hasil itu sudah tak terelakkan.", "level": "n2", "tags": ["pikiran-opini"]},
-    {"jp": "努力すれば必然的に成果が出る。", "id": "Jika berusaha, hasilnya pasti akan muncul.", "level": "n2", "tags": ["hubungan-konsep"]}
+    {
+      "jp": "その結果は必然だったと言える。",
+      "id": "Bisa dikatakan hasil itu sudah tak terelakkan.",
+      "level": "n2",
+      "tags": [
+        "pikiran-opini"
+      ]
+    },
+    {
+      "jp": "努力すれば必然的に成果が出る。",
+      "id": "Jika berusaha, hasilnya pasti akan muncul.",
+      "level": "n2",
+      "tags": [
+        "hubungan-konsep"
+      ]
+    }
   ],
   "synonyms": [],
-  "antonyms": ["vg-n2-00153"],
+  "antonyms": [
+    "vg-n2-00153"
+  ],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1487570",
+  "frequency": 9500,
+  "meanings": [
+    {
+      "en": "inevitable; necessary; certain; sure",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "inevitability; necessity",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
@@ -640,20 +1358,75 @@ window.vocabN2_Adjectives = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["kehidupan-sehari", "hubungan-konsep", "emosi"],
+  "domain": [
+    "kehidupan-sehari",
+    "hubungan-konsep",
+    "emosi"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Bisa berfungsi sebagai na-adj (偶然な出会い), kata benda, atau adverbia (偶然会った). Sebagai adverbia sangat umum dalam percakapan. Berbeda dari たまたま yang lebih kasual — 偶然 lebih netral dan bisa dipakai di semua konteks.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "偶然、駅で昔の友人に会った。", "id": "Secara kebetulan, saya bertemu teman lama di stasiun.", "level": "n2", "tags": ["kehidupan-sehari"]},
-    {"jp": "それは偶然の一致に過ぎない。", "id": "Itu tidak lebih dari kebetulan belaka.", "level": "n2", "tags": ["hubungan-konsep"]}
+    {
+      "jp": "偶然、駅で昔の友人に会った。",
+      "id": "Secara kebetulan, saya bertemu teman lama di stasiun.",
+      "level": "n2",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "それは偶然の一致に過ぎない。",
+      "id": "Itu tidak lebih dari kebetulan belaka.",
+      "level": "n2",
+      "tags": [
+        "hubungan-konsep"
+      ]
+    }
   ],
   "synonyms": [],
-  "antonyms": ["vg-n2-00152"],
+  "antonyms": [
+    "vg-n2-00152"
+  ],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1246270",
+  "frequency": 7000,
+  "forms": [
+    {
+      "word": "偶然",
+      "info": []
+    },
+    {
+      "word": "遇然",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "coincidence; chance; accident; fortuity",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "by chance; unexpectedly; accidentally",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "contingency",
+      "misc": [],
+      "field": [
+        "philosophy"
+      ]
+    }
+  ]
 },
 
 {
@@ -668,20 +1441,69 @@ window.vocabN2_Adjectives = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["pikiran-opini", "kehidupan-sehari", "hubungan-konsep"],
+  "domain": [
+    "pikiran-opini",
+    "kehidupan-sehari",
+    "hubungan-konsep"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Menyatakan bahwa sesuatu sudah seharusnya terjadi secara logis atau normatif. Sering muncul sebagai adverbia (当然のこと). Hati-hati: 当然だ terdengar bisa agak meremehkan jika digunakan terhadap usaha seseorang.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "努力した分、報われるのは当然だ。", "id": "Wajar mendapat balasan sesuai usaha yang telah dilakukan.", "level": "n2", "tags": ["pikiran-opini"]},
-    {"jp": "ルールを守るのは当然のことだ。", "id": "Mematuhi aturan adalah hal yang sudah seharusnya.", "level": "n2", "tags": ["hukum-aturan"]}
+    {
+      "jp": "努力した分、報われるのは当然だ。",
+      "id": "Wajar mendapat balasan sesuai usaha yang telah dilakukan.",
+      "level": "n2",
+      "tags": [
+        "pikiran-opini"
+      ]
+    },
+    {
+      "jp": "ルールを守るのは当然のことだ。",
+      "id": "Mematuhi aturan adalah hal yang sudah seharusnya.",
+      "level": "n2",
+      "tags": [
+        "hukum-aturan"
+      ]
+    }
   ],
-  "synonyms": ["vg-n2-00155"],
+  "synonyms": [
+    "vg-n2-00155"
+  ],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1449190",
+  "frequency": 1500,
+  "forms": [
+    {
+      "word": "当然",
+      "info": []
+    },
+    {
+      "word": "当前",
+      "info": [
+        "ateji (phonetic) reading",
+        "kanji jarang dipakai"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "natural; right; proper; just; reasonable; appropriate; deserved",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "naturally; as a matter of course; rightly; deservedly; justly; of course",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
@@ -696,20 +1518,85 @@ window.vocabN2_Adjectives = [
   "common": true,
   "related_grammar": [],
   "formalitas": 1,
-  "domain": ["kehidupan-sehari", "pikiran-opini", "karakter"],
+  "domain": [
+    "kehidupan-sehari",
+    "pikiran-opini",
+    "karakter"
+  ],
   "register": "casual",
-  "lawan_bicara": ["teman", "keluarga"],
+  "lawan_bicara": [
+    "teman",
+    "keluarga"
+  ],
   "nuance": "Lebih kasual dari 当然 dan sering dipakai dalam percakapan sehari-hari. 当たり前のことを言う berarti 'mengucapkan hal yang sudah jelas'. Waspada: sering mengesankan nada yang agak meremehkan atau menanggap sesuatu sebagai 'sudah seharusnya'.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "そんなこと、当たり前じゃないか。", "id": "Hal seperti itu kan sudah semestinya.", "level": "n2", "tags": ["kehidupan-sehari"]},
-    {"jp": "当たり前のことに感謝することが大切だ。", "id": "Penting untuk bersyukur atas hal-hal yang sudah lazim.", "level": "n2", "tags": ["karakter"]}
+    {
+      "jp": "そんなこと、当たり前じゃないか。",
+      "id": "Hal seperti itu kan sudah semestinya.",
+      "level": "n2",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "当たり前のことに感謝することが大切だ。",
+      "id": "Penting untuk bersyukur atas hal-hal yang sudah lazim.",
+      "level": "n2",
+      "tags": [
+        "karakter"
+      ]
+    }
   ],
-  "synonyms": ["vg-n2-00154"],
+  "synonyms": [
+    "vg-n2-00154"
+  ],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1448800",
+  "frequency": 3000,
+  "forms": [
+    {
+      "word": "当たり前",
+      "info": []
+    },
+    {
+      "word": "当り前",
+      "info": []
+    },
+    {
+      "word": "あたり前",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "当りまえ",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "当たりめー",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "natural; reasonable; obvious",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "usual; common; ordinary; commonplace; the norm",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
@@ -724,20 +1611,44 @@ window.vocabN2_Adjectives = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["kesehatan", "ilmu-pengetahuan", "kualitas"],
+  "domain": [
+    "kesehatan",
+    "ilmu-pengetahuan",
+    "kualitas"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Menyatakan kondisi yang menyimpang dari standar normal. Dipakai secara teknis (異常気象, cuaca ekstrem/tidak normal) maupun sehari-hari. Tidak harus bermakna negatif — bisa netral dalam konteks ilmiah (nilai yang tidak biasa).",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "検査で異常が見つかった。", "id": "Ditemukan kelainan dalam pemeriksaan.", "level": "n2", "tags": ["kesehatan"]},
-    {"jp": "今年の気温は異常に高い。", "id": "Suhu tahun ini abnormal tinggi.", "level": "n2", "tags": ["alam-lingkungan"]}
+    {
+      "jp": "検査で異常が見つかった。",
+      "id": "Ditemukan kelainan dalam pemeriksaan.",
+      "level": "n2",
+      "tags": [
+        "kesehatan"
+      ]
+    },
+    {
+      "jp": "今年の気温は異常に高い。",
+      "id": "Suhu tahun ini abnormal tinggi.",
+      "level": "n2",
+      "tags": [
+        "alam-lingkungan"
+      ]
+    }
   ],
   "synonyms": [],
-  "antonyms": ["vg-n2-00157"],
+  "antonyms": [
+    "vg-n2-00157"
+  ],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1157760",
+  "frequency": 2500
 },
 
 {
@@ -752,20 +1663,44 @@ window.vocabN2_Adjectives = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["kesehatan", "ilmu-pengetahuan", "kualitas"],
+  "domain": [
+    "kesehatan",
+    "ilmu-pengetahuan",
+    "kualitas"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Menyatakan kondisi yang sesuai dengan standar atau fungsi yang diharapkan. Sering dipakai dalam konteks medis dan teknis: 正常に動作する (berfungsi dengan normal). Lebih teknis dari 普通.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "検査の結果は正常だった。", "id": "Hasil pemeriksaan normal.", "level": "n2", "tags": ["kesehatan"]},
-    {"jp": "システムは正常に稼働している。", "id": "Sistem berjalan dengan normal.", "level": "n2", "tags": ["teknologi"]}
+    {
+      "jp": "検査の結果は正常だった。",
+      "id": "Hasil pemeriksaan normal.",
+      "level": "n2",
+      "tags": [
+        "kesehatan"
+      ]
+    },
+    {
+      "jp": "システムは正常に稼働している。",
+      "id": "Sistem berjalan dengan normal.",
+      "level": "n2",
+      "tags": [
+        "teknologi"
+      ]
+    }
   ],
   "synonyms": [],
-  "antonyms": ["vg-n2-00156"],
+  "antonyms": [
+    "vg-n2-00156"
+  ],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1377390",
+  "frequency": 1000
 },
 
 {
@@ -780,20 +1715,44 @@ window.vocabN2_Adjectives = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["bahasa-komunikasi", "bisnis", "ilmu-pengetahuan"],
+  "domain": [
+    "bahasa-komunikasi",
+    "bisnis",
+    "ilmu-pengetahuan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Akhiran 〜的 membentuk na-adj dari kata benda. 具体的に言うと (konkretnya) sangat umum dipakai untuk memperjelas penjelasan. Sering muncul berpasangan dengan 抽象的 dalam diskusi akademis.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "具体的な例を挙げて説明してください。", "id": "Tolong jelaskan dengan memberikan contoh yang konkret.", "level": "n2", "tags": ["bahasa-komunikasi"]},
-    {"jp": "具体的な数字を示してほしい。", "id": "Saya ingin ditunjukkan angka yang spesifik.", "level": "n2", "tags": ["bisnis"]}
+    {
+      "jp": "具体的な例を挙げて説明してください。",
+      "id": "Tolong jelaskan dengan memberikan contoh yang konkret.",
+      "level": "n2",
+      "tags": [
+        "bahasa-komunikasi"
+      ]
+    },
+    {
+      "jp": "具体的な数字を示してほしい。",
+      "id": "Saya ingin ditunjukkan angka yang spesifik.",
+      "level": "n2",
+      "tags": [
+        "bisnis"
+      ]
+    }
   ],
   "synonyms": [],
-  "antonyms": ["vg-n2-00159"],
+  "antonyms": [
+    "vg-n2-00159"
+  ],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1245050",
+  "frequency": 500
 },
 
 {
@@ -808,20 +1767,44 @@ window.vocabN2_Adjectives = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["ilmu-pengetahuan", "bahasa-komunikasi", "pikiran-opini"],
+  "domain": [
+    "ilmu-pengetahuan",
+    "bahasa-komunikasi",
+    "pikiran-opini"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan"],
+  "lawan_bicara": [
+    "rekan"
+  ],
   "nuance": "Sering dipakai untuk mengkritik atau menggambarkan penjelasan yang kurang jelas dan tidak membumi. 抽象的すぎてわかりにくい (terlalu abstrak dan susah dipahami) adalah ungkapan yang umum dalam diskusi akademis.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "説明が抽象的すぎてよく理解できなかった。", "id": "Penjelasannya terlalu abstrak sehingga sulit dipahami.", "level": "n2", "tags": ["bahasa-komunikasi"]},
-    {"jp": "哲学の議論は抽象的になりやすい。", "id": "Diskusi filsafat cenderung menjadi abstrak.", "level": "n2", "tags": ["ilmu-pengetahuan"]}
+    {
+      "jp": "説明が抽象的すぎてよく理解できなかった。",
+      "id": "Penjelasannya terlalu abstrak sehingga sulit dipahami.",
+      "level": "n2",
+      "tags": [
+        "bahasa-komunikasi"
+      ]
+    },
+    {
+      "jp": "哲学の議論は抽象的になりやすい。",
+      "id": "Diskusi filsafat cenderung menjadi abstrak.",
+      "level": "n2",
+      "tags": [
+        "ilmu-pengetahuan"
+      ]
+    }
   ],
   "synonyms": [],
-  "antonyms": ["vg-n2-00158"],
+  "antonyms": [
+    "vg-n2-00158"
+  ],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1426200",
+  "frequency": 7500
 },
 
 {
@@ -836,21 +1819,50 @@ window.vocabN2_Adjectives = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["karakter", "bisnis", "keputusan"],
+  "domain": [
+    "karakter",
+    "bisnis",
+    "keputusan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Menyiratkan sikap bijaksana yang mempertimbangkan risiko sebelum bertindak — bukan sekadar lambat atau penakut. Dalam budaya profesional Jepang, 慎重に検討する (mempertimbangkan dengan hati-hati) mencerminkan sikap dewasa dan bertanggung jawab.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "慎重に検討した結果、計画を変更することにした。", "id": "Setelah mempertimbangkan dengan hati-hati, diputuskan untuk mengubah rencana.", "level": "n2", "tags": ["keputusan"]},
-    {"jp": "重大な決断には慎重さが必要だ。", "id": "Kehati-hatian diperlukan dalam keputusan yang besar.", "level": "n2", "tags": ["bisnis"]},
-    {"jp": "彼女は何事にも慎重な性格だ。", "id": "Dia memiliki karakter yang hati-hati dalam segala hal.", "level": "n2", "tags": ["karakter"]}
+    {
+      "jp": "慎重に検討した結果、計画を変更することにした。",
+      "id": "Setelah mempertimbangkan dengan hati-hati, diputuskan untuk mengubah rencana.",
+      "level": "n2",
+      "tags": [
+        "keputusan"
+      ]
+    },
+    {
+      "jp": "重大な決断には慎重さが必要だ。",
+      "id": "Kehati-hatian diperlukan dalam keputusan yang besar.",
+      "level": "n2",
+      "tags": [
+        "bisnis"
+      ]
+    },
+    {
+      "jp": "彼女は何事にも慎重な性格だ。",
+      "id": "Dia memiliki karakter yang hati-hati dalam segala hal.",
+      "level": "n2",
+      "tags": [
+        "karakter"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1361110",
+  "frequency": 2500
 },
 
 {
@@ -865,21 +1877,50 @@ window.vocabN2_Adjectives = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["politik-masyarakat", "hukum-aturan"],
+  "domain": [
+    "politik-masyarakat",
+    "hukum-aturan"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Menyatakan kondisi di mana semua pihak diperlakukan sama tanpa diskriminasi. Dipakai sebagai な形容詞 (平等な社会) maupun kata benda (平等を求める). Lawannya adalah 不平等 (fubyoudou).",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "すべての人が平等に扱われる社会を目指している。", "id": "Kami bertujuan menciptakan masyarakat di mana semua orang diperlakukan setara.", "level": "n2", "tags": ["politik-masyarakat"]},
-    {"jp": "男女平等は現代社会の重要な課題だ。", "id": "Kesetaraan gender adalah isu penting dalam masyarakat modern.", "level": "n2", "tags": ["politik-masyarakat"]},
-    {"jp": "機会の平等を保証するための法律が必要だ。", "id": "Diperlukan undang-undang untuk menjamin kesetaraan kesempatan.", "level": "n2", "tags": ["hukum-aturan", "politik-masyarakat"]}
+    {
+      "jp": "すべての人が平等に扱われる社会を目指している。",
+      "id": "Kami bertujuan menciptakan masyarakat di mana semua orang diperlakukan setara.",
+      "level": "n2",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "男女平等は現代社会の重要な課題だ。",
+      "id": "Kesetaraan gender adalah isu penting dalam masyarakat modern.",
+      "level": "n2",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "機会の平等を保証するための法律が必要だ。",
+      "id": "Diperlukan undang-undang untuk menjamin kesetaraan kesempatan.",
+      "level": "n2",
+      "tags": [
+        "hukum-aturan",
+        "politik-masyarakat"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1507670",
+  "frequency": 3500
 }
 
 ];
