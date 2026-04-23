@@ -1,18 +1,15 @@
-// grammar-n4.js — Grammar JLPT N4 Global (Tier 1)
-// window.grammarN4
-// Dibuat oleh: Agent 4 — Batter 🌾
-// Task: RESTRUKTURISASI-B-BATTER-N4 (Plan B)
-// Versi schema: Arsitektur Dua Tier (Plan A, v14.8.1)
-// Catatan: cat values menggunakan label inferensi — verifikasi vs GRM-6 final list diperlukan.
-//          Referensi pattern dari n4-w1.js–n4-w6.js (bukan copy isi).
+// ══════════════════════════════════════════════════════════════
+//  grammar-n4.js — Nugget Nihongo · JLPT N4 Grammar
+//  AUTO-GENERATED — DO NOT EDIT DIRECTLY
+//  Edit: public/data/grammar/n4/*.js  then run: node scripts/merge-grammar.js
+//  Entries: 92 | Generated: 2026-04-23
+// ══════════════════════════════════════════════════════════════
 
 window.grammarN4 = [
 
-  // ─────────────────────────────────────────────────────────────────────────
-  // PARTIKEL N4-LEVEL (gn4-00001 – gn4-00010)
-  // ─────────────────────────────────────────────────────────────────────────
+  // ── TENSE-ASPECT (29) ───────────────────────────────────
 
-  {
+{
     id         : 'gn4-00001',
     level      : 'n4',
     pattern    : '〜に (frekuensi)',
@@ -33,7 +30,7 @@ window.grammarN4 = [
     notes      : null,
   },
 
-  {
+{
     id         : 'gn4-00002',
     level      : 'n4',
     pattern    : '〜ずつ',
@@ -54,7 +51,7 @@ window.grammarN4 = [
     notes      : null,
   },
 
-  {
+{
     id         : 'gn4-00003',
     level      : 'n4',
     pattern    : '〜でも (bahkan)',
@@ -75,7 +72,7 @@ window.grammarN4 = [
     notes      : null,
   },
 
-  {
+{
     id         : 'gn4-00004',
     level      : 'n4',
     pattern    : '〜とか〜とか',
@@ -96,7 +93,7 @@ window.grammarN4 = [
     notes      : null,
   },
 
-  {
+{
     id         : 'gn4-00005',
     level      : 'n4',
     pattern    : '〜ごとに',
@@ -117,7 +114,7 @@ window.grammarN4 = [
     notes      : null,
   },
 
-  {
+{
     id         : 'gn4-00006',
     level      : 'n4',
     pattern    : '〜について',
@@ -138,7 +135,7 @@ window.grammarN4 = [
     notes      : null,
   },
 
-  {
+{
     id         : 'gn4-00007',
     level      : 'n4',
     pattern    : '〜によって / 〜による',
@@ -159,7 +156,7 @@ window.grammarN4 = [
     notes      : null,
   },
 
-  {
+{
     id         : 'gn4-00008',
     level      : 'n4',
     pattern    : '〜に対して',
@@ -180,7 +177,7 @@ window.grammarN4 = [
     notes      : null,
   },
 
-  {
+{
     id         : 'gn4-00009',
     level      : 'n4',
     pattern    : '〜として',
@@ -201,7 +198,7 @@ window.grammarN4 = [
     notes      : null,
   },
 
-  {
+{
     id         : 'gn4-00010',
     level      : 'n4',
     pattern    : '〜ばかり',
@@ -222,11 +219,7 @@ window.grammarN4 = [
     notes      : null,
   },
 
-  // ─────────────────────────────────────────────────────────────────────────
-  // WAKTU / TEMPORAL (gn4-00011 – gn4-00016)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  {
+{
     id         : 'gn4-00011',
     level      : 'n4',
     pattern    : '〜までに',
@@ -247,7 +240,7 @@ window.grammarN4 = [
     notes      : null,
   },
 
-  {
+{
     id         : 'gn4-00012',
     level      : 'n4',
     pattern    : '〜間に (あいだに)',
@@ -268,7 +261,7 @@ window.grammarN4 = [
     notes      : null,
   },
 
-  {
+{
     id         : 'gn4-00013',
     level      : 'n4',
     pattern    : 'Vるところ',
@@ -289,7 +282,7 @@ window.grammarN4 = [
     notes      : null,
   },
 
-  {
+{
     id         : 'gn4-00014',
     level      : 'n4',
     pattern    : 'Vているところ',
@@ -310,7 +303,7 @@ window.grammarN4 = [
     notes      : null,
   },
 
-  {
+{
     id         : 'gn4-00015',
     level      : 'n4',
     pattern    : 'Vたところ',
@@ -331,32 +324,7 @@ window.grammarN4 = [
     notes      : null,
   },
 
-  {
-    id         : 'gn4-00016',
-    level      : 'n4',
-    pattern    : '〜場合は / 〜場合に (ばあい)',
-    reading    : '〜baai wa / ni',
-    meaning    : 'dalam hal ... / jika terjadi ...',
-    cat        : 'conditional-tara',
-    connection : 'N + の + 場合は / Vる/Vた + 場合は',
-    desc       : '<b>〜場合は</b> digunakan untuk menyatakan kondisi yang lebih hipotetis atau formal: "dalam hal ini", "jika kasusnya demikian".',
-    nuance     : 'Lebih formal dari たら atau と. Sering dalam aturan, panduan, atau situasi resmi.',
-    examples   : [
-      { jp: '緊急の<b>場合は</b>、このボタンを押してください。', id: 'Dalam keadaan darurat, tekan tombol ini.' },
-      { jp: '遅刻する<b>場合は</b>、必ず連絡してください。', id: 'Jika terlambat, pastikan untuk memberi kabar.' },
-    ],
-    see_also_grammar : [],
-    see_also_vocab   : [],
-    register   : 'formal',
-    exceptions : null,
-    notes      : null,
-  },
-
-  // ─────────────────────────────────────────────────────────────────────────
-  // ASPEK VERBA (gn4-00017 – gn4-00022)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  {
+{
     id         : 'gn4-00017',
     level      : 'n4',
     pattern    : 'Vておく',
@@ -377,7 +345,7 @@ window.grammarN4 = [
     notes      : 'Kasual: 〜とく / 〜といて.',
   },
 
-  {
+{
     id         : 'gn4-00018',
     level      : 'n4',
     pattern    : 'V(他動詞)てある',
@@ -398,7 +366,7 @@ window.grammarN4 = [
     notes      : null,
   },
 
-  {
+{
     id         : 'gn4-00019',
     level      : 'n4',
     pattern    : 'V(自動詞)ている (keadaan hasil)',
@@ -419,7 +387,7 @@ window.grammarN4 = [
     notes      : null,
   },
 
-  {
+{
     id         : 'gn4-00020',
     level      : 'n4',
     pattern    : 'Vたまま',
@@ -440,7 +408,7 @@ window.grammarN4 = [
     notes      : null,
   },
 
-  {
+{
     id         : 'gn4-00021',
     level      : 'n4',
     pattern    : 'V始める (はじめる)',
@@ -461,7 +429,7 @@ window.grammarN4 = [
     notes      : null,
   },
 
-  {
+{
     id         : 'gn4-00022',
     level      : 'n4',
     pattern    : 'V出す (だす)',
@@ -482,386 +450,7 @@ window.grammarN4 = [
     notes      : null,
   },
 
-  // ─────────────────────────────────────────────────────────────────────────
-  // KEWAJIBAN / IZIN / LARANGAN (gn4-00023 – gn4-00027)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  {
-    id         : 'gn4-00023',
-    level      : 'n4',
-    pattern    : '〜なければならない (dan variasinya)',
-    reading    : '〜nakereba naranai',
-    meaning    : 'harus ... / wajib ...',
-    cat        : 'obligation-necessity',
-    connection : 'Vない → Vなければ + ならない/いけない',
-    desc       : '<b>〜なければならない</b> menyatakan kewajiban kuat. Variasi: <b>〜なくてはいけない</b> (lebih umum di percakapan), <b>〜なきゃ／なくちゃ</b> (sangat kasual).',
-    nuance     : 'なければならない ≥ なくてはいけない (formalitas). Keduanya menyatakan kewajiban objektif.',
-    examples   : [
-      { jp: '明日は早く起きなければ<b>なりません</b>。', id: 'Besok saya harus bangun pagi.' },
-      { jp: '今週は残業しなく<b>てはいけない</b>。', id: 'Minggu ini harus lembur.' },
-    ],
-    see_also_grammar : ['gn4-00024'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : 'Kasual: なきゃ (なければ), なくちゃ (なくては). Sering di ujung kalimat: 行かなきゃ。',
-  },
-
-  {
-    id         : 'gn4-00024',
-    level      : 'n4',
-    pattern    : '〜なきゃ / 〜なくちゃ (kasual)',
-    reading    : '〜nakya / nakucha',
-    meaning    : 'harus ... (kasual)',
-    cat        : 'obligation-necessity',
-    connection : 'Vない → Vなきゃ / Vなくちゃ',
-    desc       : '<b>〜なきゃ</b> dan <b>〜なくちゃ</b> adalah bentuk kasual dari 〜なければならない dan 〜なくてはいけない. Sering diucapkan tanpa bagian akhir.',
-    nuance     : null,
-    examples   : [
-      { jp: 'もう行か<b>なきゃ</b>。', id: 'Harus pergi sekarang.' },
-      { jp: '宿題やら<b>なくちゃ</b>いけない。', id: 'Harus kerjakan PR.' },
-    ],
-    see_also_grammar : ['gn4-00023'],
-    see_also_vocab   : [],
-    register   : 'spoken',
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn4-00025',
-    level      : 'n4',
-    pattern    : '〜てもいい',
-    reading    : '〜te mo ii',
-    meaning    : 'boleh ... / tidak masalah jika ...',
-    cat        : 'permission-prohibition',
-    connection : 'Vて + もいい(です/ですか)',
-    desc       : '<b>〜てもいい</b> menyatakan izin. Bentuk tanya 〜てもいいですか digunakan untuk meminta izin. Jawaban: はい、〜てもいいです / いいえ、〜てはいけません.',
-    nuance     : null,
-    examples   : [
-      { jp: 'ここに座って<b>もいいですか</b>。', id: 'Boleh saya duduk di sini?' },
-      { jp: '早く帰って<b>もいいです</b>よ。', id: 'Boleh pulang lebih awal.' },
-    ],
-    see_also_grammar : ['gn4-00026', 'gn4-00027'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn4-00026',
-    level      : 'n4',
-    pattern    : '〜なくてもいい',
-    reading    : '〜nakute mo ii',
-    meaning    : 'tidak perlu ... / boleh tidak ...',
-    cat        : 'permission-prohibition',
-    connection : 'Vない → Vなく + てもいい',
-    desc       : '<b>〜なくてもいい</b> menyatakan tidak ada kewajiban untuk melakukan sesuatu.',
-    nuance     : null,
-    examples   : [
-      { jp: 'その本はすぐに返さ<b>なくてもいいです</b>。', id: 'Buku itu tidak harus dikembalikan segera.' },
-      { jp: '明日は来<b>なくてもいいですよ</b>。', id: 'Besok tidak perlu datang.' },
-    ],
-    see_also_grammar : ['gn4-00025', 'gn4-00027'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn4-00027',
-    level      : 'n4',
-    pattern    : '〜てはいけない',
-    reading    : '〜te wa ikenai',
-    meaning    : 'tidak boleh ... / dilarang ...',
-    cat        : 'permission-prohibition',
-    connection : 'Vて + はいけません / はいけない',
-    desc       : '<b>〜てはいけない</b> menyatakan larangan. Bentuk sopan: 〜てはいけません.',
-    nuance     : null,
-    examples   : [
-      { jp: 'テストのとき、辞書を使っ<b>てはいけません</b>。', id: 'Saat ujian, tidak boleh menggunakan kamus.' },
-      { jp: '嘘をつい<b>てはいけない</b>よ。', id: 'Tidak boleh berbohong.' },
-    ],
-    see_also_grammar : ['gn4-00025', 'gn4-00026'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  // ─────────────────────────────────────────────────────────────────────────
-  // BENTUK PASIF / KAUSATIF (gn4-00028 – gn4-00031)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  {
-    id         : 'gn4-00028',
-    level      : 'n4',
-    pattern    : 'Vられる (pasif)',
-    reading    : 'V-rareru',
-    meaning    : 'di- / dilakukan kepada ...',
-    cat        : 'passive',
-    connection : 'V-ない-form → replace ない dengan れる/られる',
-    desc       : '<b>Vられる</b> adalah bentuk pasif: menyatakan bahwa subjek menerima tindakan. Dibentuk: V1 (godan) → Vない → れる; V2 (ichidan) → Vない → られる.',
-    nuance     : 'Pasif kerugian (迷惑の受身): menyatakan bahwa pembicara terganggu/dirugikan oleh tindakan orang lain.',
-    examples   : [
-      { jp: '財布を盗ま<b>れました</b>。', id: 'Dompet saya dicuri.' },
-      { jp: '先生にほめ<b>られました</b>。', id: 'Saya dipuji oleh guru.' },
-      { jp: '雨に降ら<b>れて</b>、困りました。', id: 'Diguyur hujan, saya kewalahan.' },
-    ],
-    see_also_grammar : ['gn4-00029'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : 'する → される, くる → こられる',
-    notes      : null,
-  },
-
-  {
-    id         : 'gn4-00029',
-    level      : 'n4',
-    pattern    : 'Vさせる (kausatif)',
-    reading    : 'V-saseru',
-    meaning    : 'menyuruh ... / membiarkan ...',
-    cat        : 'causative',
-    connection : 'V-ない-form → replace ない dengan せる/させる',
-    desc       : '<b>Vさせる</b> adalah bentuk kausatif: menyatakan bahwa subjek menyuruh atau membiarkan orang lain melakukan sesuatu.',
-    nuance     : 'Konteks menentukan makna: menyuruh (paksa/otoritas) vs membiarkan (izin).',
-    examples   : [
-      { jp: '母は子どもに野菜を食べさせ<b>ます</b>。', id: 'Ibu menyuruh anaknya makan sayur.' },
-      { jp: '彼女に好きな仕事を選ば<b>せました</b>。', id: 'Saya membiarkan dia memilih pekerjaan yang disukai.' },
-    ],
-    see_also_grammar : ['gn4-00028', 'gn4-00030'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : 'する → させる, くる → こさせる',
-    notes      : null,
-  },
-
-  {
-    id         : 'gn4-00030',
-    level      : 'n4',
-    pattern    : 'Vさせられる (kausatif-pasif)',
-    reading    : 'V-saserareru',
-    meaning    : 'terpaksa/dipaksa melakukan ...',
-    cat        : 'causative',
-    connection : 'Vさせる → Vさせられる',
-    desc       : '<b>Vさせられる</b> menggabungkan kausatif dan pasif: subjek dipaksa melakukan sesuatu oleh orang lain, sering dengan nuansa tidak suka.',
-    nuance     : 'Hampir selalu menyiratkan keterpaksaan atau ketidaknyamanan.',
-    examples   : [
-      { jp: '残業をさせられ<b>ました</b>。', id: 'Saya dipaksa lembur.' },
-      { jp: '子どもの頃、嫌いな野菜を食べさせられ<b>ました</b>。', id: 'Waktu kecil, saya dipaksa makan sayur yang tidak saya suka.' },
-    ],
-    see_also_grammar : ['gn4-00028', 'gn4-00029'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : 'する → させられる',
-    notes      : 'Godan verb kasual: 書かせられる → 書かされる.',
-  },
-
-  {
-    id         : 'gn4-00031',
-    level      : 'n4',
-    pattern    : '動詞可能形 (bentuk potensial)',
-    reading    : 'doushi kanouukei',
-    meaning    : 'bisa ... / mampu ...',
-    cat        : 'potential',
-    connection : 'V1 (godan): Vない → えない/える; V2 (ichidan): V → られる/れる (kasual)',
-    desc       : '<b>Bentuk potensial</b> menyatakan kemampuan atau kemungkinan. Objek berubah dari を menjadi が (bisa juga を).',
-    nuance     : 'Kasual: ichidan 〜られる sering diperpendek menjadi 〜れる (ら抜き言葉): 食べれる.',
-    examples   : [
-      { jp: '私は日本語が話せ<b>ます</b>。', id: 'Saya bisa berbicara bahasa Jepang.' },
-      { jp: 'この仕事は一人で<b>できます</b>か。', id: 'Bisakah pekerjaan ini dilakukan sendiri?' },
-    ],
-    see_also_grammar : [],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : 'する → できる, くる → こられる/これる',
-    notes      : null,
-  },
-
-  // ─────────────────────────────────────────────────────────────────────────
-  // BENEFAKTIF (gn4-00032 – gn4-00034)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  {
-    id         : 'gn4-00032',
-    level      : 'n4',
-    pattern    : 'Vてあげる / くれる / もらう',
-    reading    : 'V-te ageru / kureru / morau',
-    meaning    : 'melakukan untuk / menerima layanan',
-    cat        : 'sentence-final-request',
-    connection : 'Vて + あげる (pemberi) / くれる (ke saya) / もらう (menerima)',
-    desc       : 'Tiga verba benefaktif dengan TE-form: <b>てあげる</b> = melakukan untuk orang lain; <b>てくれる</b> = seseorang melakukan untuk saya; <b>てもらう</b> = menerima tindakan dari seseorang.',
-    nuance     : null,
-    examples   : [
-      { jp: '友だちに傘を貸して<b>あげました</b>。', id: 'Saya meminjamkan payung kepada teman.' },
-      { jp: '母が弁当を作って<b>くれました</b>。', id: 'Ibu membuatkan bento untuk saya.' },
-      { jp: '先生に漢字を教えて<b>もらいました</b>。', id: 'Saya diajari kanji oleh guru.' },
-    ],
-    see_also_grammar : ['gn4-00033'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn4-00033',
-    level      : 'n4',
-    pattern    : 'Vてほしい / もらいたい',
-    reading    : 'V-te hoshii / moraitai',
-    meaning    : 'ingin seseorang melakukan ... / meminta ...',
-    cat        : 'sentence-final-request',
-    connection : 'N (orang) + に + Vて + ほしい / もらいたい',
-    desc       : '<b>〜てほしい</b> menyatakan keinginan si pembicara agar orang lain melakukan sesuatu: "mau agar kamu...".',
-    nuance     : null,
-    examples   : [
-      { jp: 'もっと静かにして<b>ほしい</b>です。', id: 'Saya ingin dia lebih tenang.' },
-      { jp: '一緒に来て<b>もらいたい</b>です。', id: 'Saya ingin dia ikut bersama.' },
-    ],
-    see_also_grammar : ['gn4-00032'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn4-00034',
-    level      : 'n4',
-    pattern    : 'Vてくれませんか / もらえませんか / くださいませんか',
-    reading    : 'V-te kuremasen ka / moraemasen ka / kudasaimasen ka',
-    meaning    : 'bisakah kamu ... ? / maukah kamu ... ?',
-    cat        : 'sentence-final-request',
-    connection : 'Vて + くれませんか / もらえませんか / くださいませんか',
-    desc       : 'Tiga bentuk permintaan sopan yang lebih lembut dari てください. Urutan formalitas: くれませんか < もらえませんか < くださいませんか.',
-    nuance     : null,
-    examples   : [
-      { jp: '手伝って<b>くれませんか</b>。', id: 'Bisakah kamu membantu saya?' },
-      { jp: 'もう少し大きな声で話して<b>もらえませんか</b>。', id: 'Bisakah kamu berbicara dengan suara sedikit lebih keras?' },
-    ],
-    see_also_grammar : ['gn4-00032'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  // ─────────────────────────────────────────────────────────────────────────
-  // KONDISIONAL (gn4-00035 – gn4-00039)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  {
-    id         : 'gn4-00035',
-    level      : 'n4',
-    pattern    : '〜なら',
-    reading    : '〜nara',
-    meaning    : 'kalau memang ... / jika kasusnya ...',
-    cat        : 'conditional-tara',
-    connection : 'V/Adj plain / N + なら',
-    desc       : '<b>〜なら</b> digunakan ketika kondisinya berdasarkan asumsi, informasi yang diterima dari pendengar, atau situasi yang sudah diketahui. Tidak untuk kejadian yang sudah pasti terjadi.',
-    nuance     : 'Berbeda dari たら/と/ば: なら sering merespons apa yang baru dikatakan lawan bicara.',
-    examples   : [
-      { jp: '東京へ行く<b>なら</b>、ここに寄ってみてください。', id: 'Kalau memang pergi ke Tokyo, coba mampir ke sini.' },
-      { jp: '本当に困っている<b>なら</b>、助けますよ。', id: 'Kalau memang benar-benar kesulitan, saya bantu.' },
-    ],
-    see_also_grammar : [],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn4-00036',
-    level      : 'n4',
-    pattern    : '〜さえ〜ば',
-    reading    : '〜sae〜ba',
-    meaning    : 'asalkan ... / asal saja ...',
-    cat        : 'conditional-tara',
-    connection : 'N + さえ + Adj-ければ / Vさえ + すれば',
-    desc       : '<b>〜さえ〜ば</b> menyatakan satu-satunya kondisi yang perlu dipenuhi untuk suatu hasil: "asal...", "asalkan...".',
-    nuance     : null,
-    examples   : [
-      { jp: 'お金さえあれば、何でも買えます。', id: 'Asalkan ada uang, bisa beli apa saja.' },
-      { jp: '健康でさえあれば、それで十分です。', id: 'Asalkan sehat, itu sudah cukup.' },
-    ],
-    see_also_grammar : [],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn4-00037',
-    level      : 'n4',
-    pattern    : '〜ても / 〜でも (konsesi)',
-    reading    : '〜te mo / de mo',
-    meaning    : 'meskipun ... / walaupun ...',
-    cat        : 'contrast-concession',
-    connection : 'Vて + も / Adj-くて + も / N + でも',
-    desc       : '<b>〜ても</b> menyatakan konsesi: meskipun kondisi tertentu berlaku, akibat yang diharapkan tidak terjadi.',
-    nuance     : null,
-    examples   : [
-      { jp: '雨が降っ<b>ても</b>、試合は続けます。', id: 'Meskipun hujan, pertandingan dilanjutkan.' },
-      { jp: '忙し<b>くても</b>、健康に気をつけてください。', id: 'Walaupun sibuk, jaga kesehatan ya.' },
-    ],
-    see_also_grammar : [],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn4-00038',
-    level      : 'n4',
-    pattern    : '〜といい / 〜たらいい / 〜ばいい',
-    reading    : '〜to ii / tara ii / ba ii',
-    meaning    : 'sebaiknya ... / alangkah baiknya ...',
-    cat        : 'sentence-final-request',
-    connection : 'Vる/Vた/Vば + といい/たらいい/ばいい',
-    desc       : 'Tiga pola yang semua berarti "sebaiknya" atau "alangkah baiknya". Juga digunakan untuk menyatakan harapan (といいですね = semoga ya).',
-    nuance     : 'といいですね = harapan/doa; たらいい/ばいい = saran lebih kuat.',
-    examples   : [
-      { jp: '早く良くなる<b>といいですね</b>。', id: 'Semoga cepat sembuh ya.' },
-      { jp: '先生に相談し<b>たらいいですよ</b>。', id: 'Sebaiknya konsultasi ke guru.' },
-    ],
-    see_also_grammar : ['gn4-00039'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn4-00039',
-    level      : 'n4',
-    pattern    : '〜たらどうですか / 〜いかがですか',
-    reading    : '〜tara dou desu ka / ikaga desu ka',
-    meaning    : 'bagaimana kalau ... ? / kenapa tidak ...?',
-    cat        : 'sentence-final-request',
-    connection : 'Vた + らどうですか',
-    desc       : '<b>〜たらどうですか</b> digunakan untuk memberikan saran dengan cara bertanya. Lebih sopan dengan いかがですか.',
-    nuance     : null,
-    examples   : [
-      { jp: '医者に行っ<b>たらどうですか</b>。', id: 'Bagaimana kalau pergi ke dokter?' },
-      { jp: '少し休ん<b>だらいかがですか</b>。', id: 'Bagaimana kalau istirahat sebentar?' },
-    ],
-    see_also_grammar : ['gn4-00038'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  // ─────────────────────────────────────────────────────────────────────────
-  // PERUBAHAN / TUJUAN (gn4-00040 – gn4-00043)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  {
+{
     id         : 'gn4-00040',
     level      : 'n4',
     pattern    : 'Vようになる',
@@ -882,49 +471,7 @@ window.grammarN4 = [
     notes      : null,
   },
 
-  {
-    id         : 'gn4-00041',
-    level      : 'n4',
-    pattern    : 'Vようにする',
-    reading    : 'V-you ni suru',
-    meaning    : 'berusaha agar ... / mengupayakan ...',
-    cat        : 'volitional-intention',
-    connection : 'Vる/Vない + ようにする',
-    desc       : '<b>〜ようにする</b> menyatakan upaya sadar atau kebiasaan yang sengaja dibentuk: "berusaha untuk", "mengusahakan".',
-    nuance     : null,
-    examples   : [
-      { jp: '毎日運動する<b>ようにしています</b>。', id: 'Saya berusaha berolahraga setiap hari.' },
-      { jp: '夜更かしをしない<b>ようにしてください</b>。', id: 'Tolong berusaha untuk tidak begadang.' },
-    ],
-    see_also_grammar : ['gn4-00040'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn4-00042',
-    level      : 'n4',
-    pattern    : 'Nのために / Vるために',
-    reading    : 'N no tame ni / V-ru tame ni',
-    meaning    : 'untuk ... / demi ...',
-    cat        : 'purpose',
-    connection : 'N + のために / Vる + ために',
-    desc       : '<b>〜ために</b> menyatakan tujuan atau manfaat: "untuk", "demi". Digunakan dengan verba volitional (yang bisa dikontrol).',
-    nuance     : 'Berbeda dari 〜ように: ために = tujuan sadar; ように = cara agar kondisi tercapai.',
-    examples   : [
-      { jp: '日本語を学ぶ<b>ために</b>、毎日練習しています。', id: 'Untuk belajar bahasa Jepang, saya berlatih setiap hari.' },
-      { jp: '家族の<b>ために</b>、一生懸命働きます。', id: 'Saya bekerja keras demi keluarga.' },
-    ],
-    see_also_grammar : [],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
+{
     id         : 'gn4-00043',
     level      : 'n4',
     pattern    : '〜くする / 〜にする',
@@ -945,459 +492,7 @@ window.grammarN4 = [
     notes      : null,
   },
 
-  // ─────────────────────────────────────────────────────────────────────────
-  // KEMUDAHAN / KESULITAN (gn4-00044 – gn4-00045)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  {
-    id         : 'gn4-00044',
-    level      : 'n4',
-    pattern    : 'Vやすい',
-    reading    : 'V-yasui',
-    meaning    : 'mudah untuk ... / gampang ...',
-    cat        : 'extent-degree',
-    connection : 'V-ます語幹 + やすい',
-    desc       : '<b>〜やすい</b> menyatakan bahwa suatu tindakan mudah dilakukan atau bahwa sesuatu cenderung terjadi. Berperilaku seperti adjektif-i.',
-    nuance     : null,
-    examples   : [
-      { jp: 'この辞書は使い<b>やすい</b>です。', id: 'Kamus ini mudah digunakan.' },
-      { jp: '彼女の説明は分かり<b>やすかった</b>。', id: 'Penjelasannya mudah dipahami.' },
-    ],
-    see_also_grammar : ['gn4-00045'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn4-00045',
-    level      : 'n4',
-    pattern    : 'Vにくい',
-    reading    : 'V-nikui',
-    meaning    : 'sulit untuk ... / susah ...',
-    cat        : 'extent-degree',
-    connection : 'V-ます語幹 + にくい',
-    desc       : '<b>〜にくい</b> menyatakan bahwa suatu tindakan sulit dilakukan.',
-    nuance     : null,
-    examples   : [
-      { jp: 'この漢字は書き<b>にくい</b>です。', id: 'Kanji ini sulit ditulis.' },
-      { jp: '狭くて住み<b>にくい</b>アパートです。', id: 'Ini apartemen yang sempit dan susah untuk ditinggali.' },
-    ],
-    see_also_grammar : ['gn4-00044'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  // ─────────────────────────────────────────────────────────────────────────
-  // ENUMERASI / CONTOH (gn4-00046)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  {
-    id         : 'gn4-00046',
-    level      : 'n4',
-    pattern    : '〜たり〜たりする',
-    reading    : '〜tari〜tari suru',
-    meaning    : 'melakukan hal-hal seperti ... dan ...',
-    cat        : 'listing-addition',
-    connection : 'Vた → Vたり + (Vたり) + する',
-    desc       : '<b>〜たり〜たりする</b> digunakan untuk menyebutkan beberapa tindakan atau keadaan sebagai contoh yang tidak exhaustive. Menunjukkan aktivitas bergantian atau berbagai contoh.',
-    nuance     : null,
-    examples   : [
-      { jp: '休みの日はDVDを見<b>たり</b>本を読ん<b>だり</b>しています。', id: 'Di hari libur saya menonton DVD atau membaca buku.' },
-      { jp: '最近、寒かっ<b>たり</b>暑かっ<b>たり</b>していますね。', id: 'Akhir-akhir ini silih berganti dingin dan panas ya.' },
-    ],
-    see_also_grammar : [],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  // ─────────────────────────────────────────────────────────────────────────
-  // KUTIPAN / PENJELASAN (gn4-00047 – gn4-00050)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  {
-    id         : 'gn4-00047',
-    level      : 'n4',
-    pattern    : '〜と思う / 〜と言う',
-    reading    : '〜to omou / to iu',
-    meaning    : 'berpikir bahwa ... / berkata bahwa ...',
-    cat        : 'quotation-thought',
-    connection : 'V/Adj plain / N + と + 思う / 言う',
-    desc       : '<b>〜と思う</b>: berpikir, berpendapat, atau menduga. <b>〜と言う</b>: berkata, menyebut. Kutipan sebelum と dalam bentuk plain.',
-    nuance     : null,
-    examples   : [
-      { jp: '明日は雨が降る<b>と思います</b>。', id: 'Saya pikir besok akan hujan.' },
-      { jp: '彼は「来られない」<b>と言いました</b>。', id: 'Dia berkata "tidak bisa datang".' },
-    ],
-    see_also_grammar : [],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn4-00048',
-    level      : 'n4',
-    pattern    : '〜んです / 〜のです',
-    reading    : '〜n desu / no desu',
-    meaning    : '... (itu) ... (penjelasan/alasan)',
-    cat        : 'sentence-final-modality',
-    connection : 'V/Adj plain + んです / のです',
-    desc       : '<b>〜んです / 〜のです</b> digunakan untuk memberikan penjelasan, latar belakang, atau alasan dari suatu situasi. Menciptakan nuansa "sebenarnya...", "yang terjadi adalah...".',
-    nuance     : 'Dalam pertanyaan んですか = meminta penjelasan/konfirmasi yang lebih mendalam dari ですか biasa.',
-    examples   : [
-      { jp: '今日は来られない<b>んです</b>。用事があって。', id: 'Hari ini saya tidak bisa datang. Ada keperluan.' },
-      { jp: 'どうした<b>んですか</b>。顔色が悪いですよ。', id: 'Ada apa? Mukamu pucat.' },
-    ],
-    see_also_grammar : [],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : 'Na-adj/N + な + んです. Plain adj (い-adj/V) + んです langsung.',
-  },
-
-  {
-    id         : 'gn4-00049',
-    level      : 'n4',
-    pattern    : '〜かどうか',
-    reading    : '〜ka dou ka',
-    meaning    : 'apakah ... atau tidak',
-    cat        : 'quotation-thought',
-    connection : 'V/Adj plain / N + かどうか',
-    desc       : '<b>〜かどうか</b> digunakan untuk menyematkan pertanyaan ya/tidak ke dalam kalimat, sering dengan verba seperti 知る, 分かる, 確認する.',
-    nuance     : null,
-    examples   : [
-      { jp: '彼が来る<b>かどうか</b>分かりません。', id: 'Saya tidak tahu apakah dia akan datang atau tidak.' },
-      { jp: '合格した<b>かどうか</b>まだ確認していません。', id: 'Belum mengkonfirmasi apakah lulus atau tidak.' },
-    ],
-    see_also_grammar : ['gn4-00050'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn4-00050',
-    level      : 'n4',
-    pattern    : '疑問詞〜か (kata tanya embedded)',
-    reading    : 'gimonshi〜ka',
-    meaning    : 'di mana/kapan/siapa/apa (embedded question)',
-    cat        : 'quotation-thought',
-    connection : '疑問詞 (いつ/どこ/だれ/なに/どう/なぜ等) + V/Adj plain + か',
-    desc       : 'Kata tanya (いつ, どこ, だれ, なに, どう, なぜ, いくら, dll.) yang disematkan ke dalam kalimat. Diikuti verba seperti 知る, 分かる, 教える, 聞く.',
-    nuance     : null,
-    examples   : [
-      { jp: 'どこに行く<b>か</b>まだ決めていません。', id: 'Saya belum memutuskan mau ke mana.' },
-      { jp: '何時に始まる<b>か</b>知っていますか。', id: 'Apakah kamu tahu jam berapa mulainya?' },
-    ],
-    see_also_grammar : ['gn4-00049'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  // ─────────────────────────────────────────────────────────────────────────
-  // NOMINALISASI (gn4-00051 – gn4-00052)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  {
-    id         : 'gn4-00051',
-    level      : 'n4',
-    pattern    : '〜の (nominalisasi)',
-    reading    : '〜no',
-    meaning    : 'hal ... / tindakan ... (nominalisasi)',
-    cat        : 'nominalization',
-    connection : 'V/Adj plain + の + は/が/を',
-    desc       : '<b>〜の</b> mengubah verba atau frasa menjadi nomina. Lebih informal dari こと. Sering digunakan untuk kegiatan konkret yang dapat dirasakan.',
-    nuance     : 'の lebih cocok untuk pengalaman langsung (見る, 聞く, 感じる); こと lebih abstrak/umum.',
-    examples   : [
-      { jp: '歌う<b>の</b>が好きです。', id: 'Saya suka bernyanyi.' },
-      { jp: '彼が走っている<b>の</b>を見ました。', id: 'Saya melihat dia sedang berlari.' },
-    ],
-    see_also_grammar : ['gn4-00052'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn4-00052',
-    level      : 'n4',
-    pattern    : '〜こと (nominalisasi)',
-    reading    : '〜koto',
-    meaning    : 'hal ... / fakta bahwa ... (nominalisasi)',
-    cat        : 'nominalization',
-    connection : 'V/Adj plain + こと + は/が/を/etc.',
-    desc       : '<b>〜こと</b> mengubah verba atau frasa menjadi nomina abstrak. Digunakan dalam ekspresi formal dan aturan.',
-    nuance     : null,
-    examples   : [
-      { jp: '毎日練習する<b>こと</b>が大切です。', id: 'Berlatih setiap hari adalah hal yang penting.' },
-      { jp: '彼女が結婚する<b>こと</b>を知りました。', id: 'Saya tahu bahwa dia akan menikah.' },
-    ],
-    see_also_grammar : ['gn4-00051'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  // ─────────────────────────────────────────────────────────────────────────
-  // PERKIRAAN / PENAMPILAN (gn4-00053 – gn4-00055)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  {
-    id         : 'gn4-00053',
-    level      : 'n4',
-    pattern    : '〜そうだ (様態 — penampilan)',
-    reading    : '〜sou da (youtai)',
-    meaning    : 'kelihatannya ... / sepertinya ... (dari penglihatan)',
-    cat        : 'conjecture-possibility',
-    connection : 'V-ます語幹 / Adj-i語幹 / Adj-na + そうだ',
-    desc       : '<b>〜そうだ (様態)</b> berdasarkan penglihatan atau kesan langsung. Berbeda dari 〜そうだ (伝聞) yang berarti "katanya".',
-    nuance     : 'Dibedakan oleh koneksi: 様態 dari V-ます語幹/Adj語幹; 伝聞 dari V/Adj plain form.',
-    examples   : [
-      { jp: '空が暗い。雨が降り<b>そうです</b>。', id: 'Langitnya gelap. Sepertinya mau hujan.' },
-      { jp: 'あのケーキはおいし<b>そうですね</b>。', id: 'Kue itu kelihatannya enak ya.' },
-    ],
-    see_also_grammar : ['gn4-00054'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : 'いい → よさそう; ない → なさそう',
-    notes      : null,
-  },
-
-  {
-    id         : 'gn4-00054',
-    level      : 'n4',
-    pattern    : '〜ようだ / 〜みたいだ',
-    reading    : '〜you da / mitai da',
-    meaning    : 'tampaknya ... / sepertinya ... (kesimpulan dari bukti)',
-    cat        : 'conjecture-possibility',
-    connection : 'V/Adj plain / N + ようだ / みたいだ',
-    desc       : '<b>〜ようだ</b> menyatakan kesimpulan yang ditarik dari bukti atau pengamatan. <b>〜みたいだ</b> adalah versi yang lebih kasual.',
-    nuance     : 'ようだ: sedikit lebih formal, juga berarti "seperti" (metafora). みたいだ: kasual.',
-    examples   : [
-      { jp: '彼は風邪を引いた<b>ようです</b>。', id: 'Sepertinya dia masuk angin.' },
-      { jp: '彼女は疲れている<b>みたいです</b>。', id: 'Sepertinya dia lelah.' },
-    ],
-    see_also_grammar : ['gn4-00053'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : 'N + のようだ (formal) vs N + みたいだ (kasual). Adj-na + なようだ vs みたいだ.',
-  },
-
-  {
-    id         : 'gn4-00055',
-    level      : 'n4',
-    pattern    : '〜でしょう / 〜だろう',
-    reading    : '〜deshou / darou',
-    meaning    : 'mungkin ... / sepertinya ... (perkiraan)',
-    cat        : 'conjecture-possibility',
-    connection : 'V/Adj plain / N + でしょう (polite) / だろう (plain)',
-    desc       : '<b>〜でしょう</b> menyatakan perkiraan atau kemungkinan dengan tingkat kepercayaan sedang. <b>だろう</b> adalah bentuk plain-nya.',
-    nuance     : null,
-    examples   : [
-      { jp: '明日は雨が降る<b>でしょう</b>。', id: 'Besok mungkin hujan.' },
-      { jp: '彼もきっと来る<b>だろう</b>。', id: 'Dia juga pasti datang.' },
-    ],
-    see_also_grammar : [],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  // ─────────────────────────────────────────────────────────────────────────
-  // PERINTAH / LARANGAN (gn4-00056 – gn4-00057)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  {
-    id         : 'gn4-00056',
-    level      : 'n4',
-    pattern    : '命令形 (bentuk perintah)',
-    reading    : 'meireikei',
-    meaning    : 'lakukan! (perintah)',
-    cat        : 'sentence-final-request',
-    connection : 'V1 (godan): Vう-row (e.g. 書く→書け); V2 (ichidan): Vる→Vろ',
-    desc       : '<b>命令形</b> adalah bentuk perintah langsung dan kuat. Terdengar kasar jika digunakan kepada orang yang sederajat atau lebih tua; wajar dalam tanda, instruksi tertulis, atau dari atasan ke bawahan.',
-    nuance     : 'Gunakan dengan hati-hati. なさい lebih sopan untuk konteks sehari-hari.',
-    examples   : [
-      { jp: 'ここに座れ！', id: 'Duduk di sini!' },
-      { jp: '早く起き<b>ろ</b>！', id: 'Bangun cepat!' },
-    ],
-    see_also_grammar : ['gn4-00057', 'gn4-00058'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : 'する → しろ/せよ, くる → こい',
-    notes      : null,
-  },
-
-  {
-    id         : 'gn4-00057',
-    level      : 'n4',
-    pattern    : '禁止形 (bentuk larangan)',
-    reading    : 'kinshikei',
-    meaning    : 'jangan! / dilarang!',
-    cat        : 'permission-prohibition',
-    connection : 'Vる (dictionary form) + な',
-    desc       : '<b>Vるな</b> adalah bentuk larangan langsung dan kuat. Terdengar kasar; lebih umum dalam tanda larangan atau dari atasan.',
-    nuance     : null,
-    examples   : [
-      { jp: '入る<b>な</b>！', id: 'Jangan masuk!' },
-      { jp: 'ここに車を止める<b>な</b>。', id: 'Jangan parkir mobil di sini.' },
-    ],
-    see_also_grammar : ['gn4-00056'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn4-00058',
-    level      : 'n4',
-    pattern    : '〜なさい',
-    reading    : '〜nasai',
-    meaning    : 'lakukan! (perintah sopan/otoritatif)',
-    cat        : 'sentence-final-request',
-    connection : 'V-ます語幹 + なさい',
-    desc       : '<b>〜なさい</b> digunakan untuk memberikan instruksi atau perintah dengan nuansa lebih sopan dari 命令形, tapi tetap menunjukkan otoritas. Umum dari orang tua ke anak, atau guru ke murid.',
-    nuance     : null,
-    examples   : [
-      { jp: '早く宿題をし<b>なさい</b>。', id: 'Cepat kerjakan PR.' },
-      { jp: 'もっとゆっくり食べ<b>なさい</b>。', id: 'Makan lebih pelan.' },
-    ],
-    see_also_grammar : ['gn4-00056'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  // ─────────────────────────────────────────────────────────────────────────
-  // KONJUNGSI (gn4-00059 – gn4-00063)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  {
-    id         : 'gn4-00059',
-    level      : 'n4',
-    pattern    : '〜のに (kontras/kekecewaan)',
-    reading    : '〜noni',
-    meaning    : 'padahal ... / meskipun ...',
-    cat        : 'listing-addition',
-    connection : 'V/Adj plain / N + なのに + 文',
-    desc       : '<b>〜のに</b> sebagai konjungsi menyatakan kontras yang mengandung kekecewaan, protes, atau keheranan. "Padahal sudah..., tapi masih...".',
-    nuance     : 'Berbeda dari 〜ても yang lebih netral: のに selalu mengandung emosi (kecewa/protes).',
-    examples   : [
-      { jp: 'あんなに練習した<b>のに</b>、試合に負けました。', id: 'Padahal sudah berlatih keras, tapi kalah dalam pertandingan.' },
-      { jp: '今日は休み<b>なのに</b>、仕事の電話が来た。', id: 'Padahal hari ini libur, tapi ada telepon kerja.' },
-    ],
-    see_also_grammar : [],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn4-00060',
-    level      : 'n4',
-    pattern    : 'ところが',
-    reading    : 'tokoro ga',
-    meaning    : 'namun / akan tetapi (kontras tidak terduga)',
-    cat        : 'listing-addition',
-    connection : '文1。ところが、文2。',
-    desc       : '<b>ところが</b> digunakan di awal kalimat untuk menyatakan hasil yang berlawanan dari yang diharapkan: "namun ternyata", "tapi sebaliknya".',
-    nuance     : 'Berbeda dari でも/しかし: ところが menekankan kejutan atau ketidaksesuaian ekspektasi.',
-    examples   : [
-      { jp: '試験は簡単だと思っていた。<b>ところが</b>、とても難しかった。', id: 'Saya pikir ujiannya mudah. Tapi ternyata sangat sulit.' },
-      { jp: '急いで駅に行った。<b>ところが</b>、電車はもう出ていた。', id: 'Buru-buru pergi ke stasiun. Tapi ternyata kereta sudah berangkat.' },
-    ],
-    see_also_grammar : ['gn4-00061'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn4-00061',
-    level      : 'n4',
-    pattern    : 'それで / だから',
-    reading    : 'sore de / dakara',
-    meaning    : 'oleh karena itu / makanya / jadi',
-    cat        : 'listing-addition',
-    connection : '文1。それで/だから、文2。',
-    desc       : '<b>それで</b>: menghubungkan sebab-akibat secara netral ("karena itu"). <b>だから</b>: lebih tegas, bisa dengan nada menekankan atau sedikit frustrasi.',
-    nuance     : null,
-    examples   : [
-      { jp: '昨日は体調が悪かった。<b>それで</b>、学校を休みました。', id: 'Kemarin kondisi badan saya tidak baik. Karena itu, tidak masuk sekolah.' },
-      { jp: '今日は試験がある。<b>だから</b>、緊張しています。', id: 'Hari ini ada ujian. Makanya saya gugup.' },
-    ],
-    see_also_grammar : ['gn4-00062'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn4-00062',
-    level      : 'n4',
-    pattern    : 'それに / そのうえ',
-    reading    : 'sore ni / sono ue',
-    meaning    : 'selain itu / lagi pula / ditambah lagi',
-    cat        : 'listing-addition',
-    connection : '文1。それに/そのうえ、文2。',
-    desc       : '<b>それに</b> dan <b>そのうえ</b> menambahkan informasi atau alasan tambahan: "selain itu", "ditambah lagi". そのうえ sedikit lebih formal.',
-    nuance     : null,
-    examples   : [
-      { jp: 'あの店は安い。<b>それに</b>、美味しい。', id: 'Toko itu murah. Selain itu, enak juga.' },
-      { jp: '彼は頭がいい。<b>そのうえ</b>、スポーツも得意だ。', id: 'Dia pintar. Ditambah lagi, jago olahraga juga.' },
-    ],
-    see_also_grammar : ['gn4-00061'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn4-00063',
-    level      : 'n4',
-    pattern    : '〜て/〜で (sebab/alasan)',
-    reading    : '〜te / de',
-    meaning    : 'karena ... / akibat ... (sebab-alasan via te-form)',
-    cat        : 'reason-cause',
-    connection : 'Vて / Adj-くて / N + で',
-    desc       : '<b>〜て/〜で</b> bisa menyatakan sebab-akibat: klausa pertama menjelaskan penyebab, klausa kedua adalah akibatnya. Sering dengan ekspresi perasaan.',
-    nuance     : null,
-    examples   : [
-      { jp: '風邪を引い<b>て</b>、学校を休みました。', id: 'Karena masuk angin, saya tidak masuk sekolah.' },
-      { jp: 'お金がなく<b>て</b>、買えない。', id: 'Karena tidak punya uang, tidak bisa beli.' },
-    ],
-    see_also_grammar : [],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  // ─────────────────────────────────────────────────────────────────────────
-  // PENYESALAN / EVALUASI (gn4-00064 – gn4-00065)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  {
+{
     id         : 'gn4-00064',
     level      : 'n4',
     pattern    : '〜てすみません / 〜てごめんなさい',
@@ -1418,195 +513,7 @@ window.grammarN4 = [
     notes      : null,
   },
 
-  {
-    id         : 'gn4-00065',
-    level      : 'n4',
-    pattern    : '〜てよかった',
-    reading    : '〜te yokatta',
-    meaning    : 'syukurlah sudah ... / senang karena ...',
-    cat        : 'sentence-final-modality',
-    connection : 'Vて + よかった',
-    desc       : '<b>〜てよかった</b> menyatakan rasa lega atau syukur atas suatu tindakan yang sudah dilakukan.',
-    nuance     : null,
-    examples   : [
-      { jp: '傘を持ってき<b>てよかった</b>。', id: 'Syukurlah sudah membawa payung.' },
-      { jp: '早めに予約し<b>てよかったです</b>。', id: 'Syukurlah sudah memesan lebih awal.' },
-    ],
-    see_also_grammar : ['gn4-00064'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  // ─────────────────────────────────────────────────────────────────────────
-  // PERSEPSI (gn4-00066 – gn4-00067)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  {
-    id         : 'gn4-00066',
-    level      : 'n4',
-    pattern    : '聞こえる / 見える',
-    reading    : 'kikoeru / mieru',
-    meaning    : 'terdengar / terlihat (persepsi alami)',
-    cat        : 'conjecture-possibility',
-    connection : 'N + が + 聞こえる (terdengar) / 見える (terlihat)',
-    desc       : '<b>聞こえる</b>: sesuatu terdengar secara alami (bukan mendengarkan dengan sengaja). <b>見える</b>: sesuatu terlihat secara alami (bukan melihat dengan sengaja).',
-    nuance     : 'Berbeda dari 聞く/見る yang menyiratkan tindakan aktif.',
-    examples   : [
-      { jp: '外から音楽が<b>聞こえます</b>。', id: 'Dari luar terdengar musik.' },
-      { jp: '窓から富士山が<b>見えます</b>。', id: 'Gunung Fuji terlihat dari jendela.' },
-    ],
-    see_also_grammar : [],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  // ─────────────────────────────────────────────────────────────────────────
-  // MATERI / BAHAN (gn4-00067)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  {
-    id         : 'gn4-00067',
-    level      : 'n4',
-    pattern    : '〜から作る / 〜でできている',
-    reading    : '〜kara tsukuru / de dekite iru',
-    meaning    : 'dibuat dari ... / terbuat dari ...',
-    cat        : 'quotation-thought',
-    connection : 'N (bahan) + から作る / N + でできている',
-    desc       : '<b>〜から作る</b>: bahan asli tidak tampak pada produk akhir (fermentasi, dll). <b>〜でできている</b>: bahan masih bisa diidentifikasi pada produk akhir.',
-    nuance     : 'Pembeda: ワインはぶどうから作る (anggur tidak tampak di wine); このテーブルは木でできている (kayu masih terlihat di meja).',
-    examples   : [
-      { jp: 'ワインはぶどう<b>から作られます</b>。', id: 'Wine dibuat dari anggur.' },
-      { jp: 'このカバンは革<b>でできています</b>。', id: 'Tas ini terbuat dari kulit.' },
-    ],
-    see_also_grammar : [],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  // ─────────────────────────────────────────────────────────────────────────
-  // ADJEKTIF N4-LEVEL (gn4-00068 – gn4-00070)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  {
-    id         : 'gn4-00068',
-    level      : 'n4',
-    pattern    : '〜すぎる',
-    reading    : '〜sugiru',
-    meaning    : 'terlalu ...',
-    cat        : 'extent-degree',
-    connection : 'V-ます語幹 / Adj-i語幹 / Adj-na + すぎる',
-    desc       : '<b>〜すぎる</b> menyatakan bahwa sesuatu melebihi batas yang diinginkan atau wajar: "terlalu".',
-    nuance     : null,
-    examples   : [
-      { jp: 'このカレーは辛<b>すぎます</b>。', id: 'Kari ini terlalu pedas.' },
-      { jp: '昨日飲み<b>すぎた</b>。', id: 'Kemarin terlalu banyak minum.' },
-    ],
-    see_also_grammar : [],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : 'いい → よすぎる',
-    notes      : null,
-  },
-
-  {
-    id         : 'gn4-00069',
-    level      : 'n4',
-    pattern    : '〜がる / 〜がっている',
-    reading    : '〜garu / gatte iru',
-    meaning    : 'tampak merasa ... / menunjukkan tanda-tanda ...',
-    cat        : 'sentence-final-modality',
-    connection : 'Adj-i語幹 + がる / Adj-i語幹 + がっている',
-    desc       : '<b>〜がる</b> digunakan untuk mengekspresikan perasaan atau keinginan orang ketiga (tidak bisa langsung tahu perasaan orang lain). Berperilaku seperti verba.',
-    nuance     : null,
-    examples   : [
-      { jp: '子どもはプレゼントを欲し<b>がっています</b>。', id: 'Anak itu sepertinya menginginkan hadiah.' },
-      { jp: '彼はその話を怖<b>がっていた</b>。', id: 'Dia tampak ketakutan dengan cerita itu.' },
-    ],
-    see_also_grammar : [],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn4-00070',
-    level      : 'n4',
-    pattern    : '形容詞 + さ',
-    reading    : 'keiyoushi + sa',
-    meaning    : 'tingkat ... / derajat ... (nominalisasi adjektif)',
-    cat        : 'nominalization',
-    connection : 'Adj-i語幹 + さ / Adj-na + さ',
-    desc       : '<b>〜さ</b> mengubah adjektif menjadi nomina yang menyatakan tingkat atau derajat kualitas tersebut.',
-    nuance     : null,
-    examples   : [
-      { jp: 'この山の高<b>さ</b>は3000メートルです。', id: 'Ketinggian gunung ini adalah 3000 meter.' },
-      { jp: '彼の優し<b>さ</b>に感動しました。', id: 'Saya terkesan dengan kebaikannya.' },
-    ],
-    see_also_grammar : [],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  // ─────────────────────────────────────────────────────────────────────────
-  // DEMONSTRATIF (gn4-00071 – gn4-00072)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  {
-    id         : 'gn4-00071',
-    level      : 'n4',
-    pattern    : 'こんな / そんな / あんな / どんな + N',
-    reading    : 'konna / sonna / anna / donna + N',
-    meaning    : 'seperti ini / seperti itu / seperti apa (modifikasi nominal)',
-    cat        : 'sentence-final-modality',
-    connection : 'こんな/そんな/あんな/どんな + N',
-    desc       : 'Seri demonstrativa yang memodifikasi nomina: <b>こんな</b> (seperti ini), <b>そんな</b> (seperti itu — dekat lawan bicara), <b>あんな</b> (seperti itu — jauh), <b>どんな</b> (seperti apa).',
-    nuance     : null,
-    examples   : [
-      { jp: '<b>こんな</b>問題は難しいですね。', id: 'Soal seperti ini memang susah ya.' },
-      { jp: '<b>どんな</b>音楽が好きですか。', id: 'Kamu suka musik seperti apa?' },
-    ],
-    see_also_grammar : ['gn4-00072'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn4-00072',
-    level      : 'n4',
-    pattern    : 'こう / そう / ああ / どう + V',
-    reading    : 'kou / sou / aa / dou + V',
-    meaning    : 'dengan cara ini / seperti itu / bagaimana (cara/metode)',
-    cat        : 'sentence-final-modality',
-    connection : 'こう/そう/ああ/どう + V',
-    desc       : 'Seri adverbia demonstratif yang memodifikasi verba: <b>こう</b> (dengan cara ini), <b>そう</b> (dengan cara itu), <b>ああ</b> (dengan cara itu — jauh), <b>どう</b> (dengan cara apa).',
-    nuance     : null,
-    examples   : [
-      { jp: '<b>こう</b>すればいいですよ。', id: 'Lakukan seperti ini saja.' },
-      { jp: 'この問題は<b>どう</b>解きますか。', id: 'Bagaimana cara mengerjakan soal ini?' },
-    ],
-    see_also_grammar : ['gn4-00071'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  // ─────────────────────────────────────────────────────────────────────────
-  // TRANSITIF / INTRANSITIF (gn4-00073)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  {
+{
     id         : 'gn4-00073',
     level      : 'n4',
     pattern    : '他動詞 / 自動詞 (transitif / intransitif)',
@@ -1627,271 +534,7 @@ window.grammarN4 = [
     notes      : 'Pasangan umum: 開ける(他)/開く(自), 閉める(他)/閉まる(自), 入れる(他)/入る(自), 出す(他)/出る(自), 起こす(他)/起きる(自), 消す(他)/消える(自).',
   },
 
-  // ─────────────────────────────────────────────────────────────────────────
-  // NIAT / VOLITIF N4-LEVEL (gn4-00074 – gn4-00076)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  {
-    id         : 'gn4-00074',
-    level      : 'n4',
-    pattern    : 'Vつもり',
-    reading    : 'V-tsumori',
-    meaning    : 'berencana untuk ... / bermaksud ...',
-    cat        : 'volitional-intention',
-    connection : 'Vる / Vない + つもりです',
-    desc       : '<b>〜つもり</b> menyatakan niat atau rencana yang sudah cukup pasti. Lebih kuat dari 〜たい (keinginan).',
-    nuance     : 'Vた + つもり: berpura-pura sudah melakukan, atau merasa sudah melakukan.',
-    examples   : [
-      { jp: '来年日本語の試験を受ける<b>つもりです</b>。', id: 'Saya berencana mengikuti ujian bahasa Jepang tahun depan.' },
-      { jp: 'そんなことを言った<b>つもりはありません</b>。', id: 'Saya tidak bermaksud mengatakan hal itu.' },
-    ],
-    see_also_grammar : [],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn4-00075',
-    level      : 'n4',
-    pattern    : 'Vようと思う',
-    reading    : 'V-you to omou',
-    meaning    : 'berencana / berniat (dengan berpikir)',
-    cat        : 'volitional-intention',
-    connection : 'Vよう (volitional plain) + と思う',
-    desc       : '<b>〜ようと思う</b> menyatakan niat atau rencana yang muncul dari pikiran si pembicara. Sedikit kurang pasti dari つもり.',
-    nuance     : null,
-    examples   : [
-      { jp: '来月から運動し<b>ようと思っています</b>。', id: 'Saya berniat berolahraga mulai bulan depan.' },
-      { jp: '明日早く起き<b>ようと思います</b>。', id: 'Saya berencana bangun pagi besok.' },
-    ],
-    see_also_grammar : ['gn4-00074', 'gn4-00076'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn4-00076',
-    level      : 'n4',
-    pattern    : 'Vよう (volitional plain)',
-    reading    : 'V-you',
-    meaning    : 'ayo ... / mari ... (kasual)',
-    cat        : 'volitional-intention',
-    connection : 'V1 (godan) → Vお-row; V2 (ichidan) → Vよう',
-    desc       : '<b>Vよう</b> adalah bentuk volitional dalam gaya biasa, setara dengan 〜ましょう dalam gaya sopan. Digunakan dalam percakapan kasual untuk mengajak.',
-    nuance     : null,
-    examples   : [
-      { jp: 'もう行こ<b>う</b>。', id: 'Ayo pergi sekarang.' },
-      { jp: '一緒に食べ<b>よう</b>！', id: 'Ayo makan bersama!' },
-    ],
-    see_also_grammar : ['gn4-00075'],
-    see_also_vocab   : [],
-    register   : 'spoken',
-    exceptions : 'する → しよう, くる → こよう',
-    notes      : null,
-  },
-
-  // ─────────────────────────────────────────────────────────────────────────
-  // PARTIKEL AKHIR / EKSPRESI (gn4-00077 – gn4-00082)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  {
-    id         : 'gn4-00077',
-    level      : 'n4',
-    pattern    : '〜じゃないか / ではないか',
-    reading    : '〜ja nai ka / dewa nai ka',
-    meaning    : 'bukankah ... ? / ternyata ... !',
-    cat        : 'sentence-final-modality',
-    connection : 'V/Adj plain + じゃないか / ではないか',
-    desc       : '<b>〜じゃないか</b> digunakan untuk: (1) menyampaikan pendapat dengan tekanan, atau (2) keterkejutan saat menemukan sesuatu yang tidak disangka.',
-    nuance     : 'ではないか lebih formal dari じゃないか.',
-    examples   : [
-      { jp: 'もう少し考えれば分かる<b>じゃないか</b>。', id: 'Bukankah kalau dipikir lebih jauh pasti tahu?' },
-      { jp: 'あれ、田中さん<b>じゃないか</b>！', id: 'Eh, bukankah itu Tanaka-san!' },
-    ],
-    see_also_grammar : [],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn4-00078',
-    level      : 'n4',
-    pattern    : '〜かな / 〜かしら',
-    reading    : '〜kana / kashira',
-    meaning    : 'ya ... / acapkali (monolog keraguan)',
-    cat        : 'sentence-final-modality',
-    connection : 'V/Adj plain / N + かな (netral/pria) / かしら (feminin)',
-    desc       : '<b>〜かな</b> digunakan untuk bergumam sendiri dalam keraguan atau harapan: "ya...", "entah ya". <b>〜かしら</b> adalah variannya yang lebih feminin.',
-    nuance     : null,
-    examples   : [
-      { jp: '彼は来る<b>かな</b>。', id: 'Dia datang ya... (bergumam)' },
-      { jp: '明日は晴れる<b>かしら</b>。', id: 'Besok cerah ya kira-kira...' },
-    ],
-    see_also_grammar : ['gn4-00079'],
-    see_also_vocab   : [],
-    register   : 'spoken',
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn4-00079',
-    level      : 'n4',
-    pattern    : '〜なあ',
-    reading    : '〜naa',
-    meaning    : 'sungguh ... ya / ah ... (ekspresi kagum/keinginan)',
-    cat        : 'sentence-final-modality',
-    connection : 'V/Adj plain / N + なあ',
-    desc       : '<b>〜なあ</b> digunakan sebagai ekspresi emosi dalam monolog: kekaguman, keinginan, atau nostalgia.',
-    nuance     : null,
-    examples   : [
-      { jp: '日本語が上手くなりたい<b>なあ</b>。', id: 'Ingin sekali jadi pandai bahasa Jepang...' },
-      { jp: 'いい天気だ<b>なあ</b>。', id: 'Cuacanya bagus sungguh ya.' },
-    ],
-    see_also_grammar : ['gn4-00078'],
-    see_also_vocab   : [],
-    register   : 'spoken',
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn4-00080',
-    level      : 'n4',
-    pattern    : '〜かい / 〜かね',
-    reading    : '〜kai / kane',
-    meaning    : '... kah? (partikel tanya kasual/pria)',
-    cat        : 'sentence-final-modality',
-    connection : 'V/Adj plain / N + かい (ya/tidak) / かね (retorik/konfirmasi)',
-    desc       : '<b>〜かい</b>: partikel tanya kasual, terutama digunakan pria tua kepada yang lebih muda. <b>〜かね</b>: meminta konfirmasi atau bertanya retoris.',
-    nuance     : null,
-    examples   : [
-      { jp: '大丈夫<b>かい</b>？', id: 'Baik-baik saja?' },
-      { jp: 'そんなことがあるんだろう<b>かね</b>。', id: 'Memangnya ada hal seperti itu ya?' },
-    ],
-    see_also_grammar : ['gn4-00078'],
-    see_also_vocab   : [],
-    register   : 'spoken',
-    exceptions : null,
-    notes      : 'Lebih sering diucapkan oleh pria dengan usia lebih tua. Jarang dipakai generasi muda.',
-  },
-
-  // ─────────────────────────────────────────────────────────────────────────
-  // TAMBAHAN PENTING (gn4-00081 – gn4-00090)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  {
-    id         : 'gn4-00081',
-    level      : 'n4',
-    pattern    : '〜だけでなく〜も',
-    reading    : '〜dake de naku〜mo',
-    meaning    : 'bukan hanya ... tapi juga ...',
-    cat        : 'listing-addition',
-    connection : 'N/Vる + だけでなく + N/V + も',
-    desc       : '<b>〜だけでなく〜も</b> menyatakan bahwa tidak hanya satu hal, tapi hal lain juga termasuk.',
-    nuance     : null,
-    examples   : [
-      { jp: '彼は英語<b>だけでなく</b>フランス語<b>も</b>話せます。', id: 'Dia bukan hanya bisa bahasa Inggris, tapi juga Prancis.' },
-      { jp: 'この店は安い<b>だけでなく</b>、おいしい<b>も</b>です。', id: 'Toko ini bukan hanya murah, tapi juga enak.' },
-    ],
-    see_also_grammar : [],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn4-00082',
-    level      : 'n4',
-    pattern    : '〜ようだ (metafora)',
-    reading    : '〜you da',
-    meaning    : 'seperti ... (metafora/persamaan)',
-    cat        : 'conjecture-possibility',
-    connection : 'N + の + ようだ / N + のように + V',
-    desc       : '<b>〜のようだ</b> digunakan sebagai persamaan/metafora: "seperti", "bagaikan". <b>〜のように</b> sebagai adverbia: "seperti halnya".',
-    nuance     : null,
-    examples   : [
-      { jp: '彼は魚<b>のように</b>泳ぎます。', id: 'Dia berenang seperti ikan.' },
-      { jp: '夢<b>のような</b>出来事でした。', id: 'Itu adalah kejadian yang seperti mimpi.' },
-    ],
-    see_also_grammar : ['gn4-00054'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn4-00083',
-    level      : 'n4',
-    pattern    : '〜はずだ',
-    reading    : '〜hazu da',
-    meaning    : 'seharusnya ... / mestinya ...',
-    cat        : 'conjecture-possibility',
-    connection : 'V/Adj plain / N + の + はずだ',
-    desc       : '<b>〜はずだ</b> menyatakan ekspektasi logis berdasarkan informasi atau pengetahuan: "seharusnya", "semestinya".',
-    nuance     : 'Berbeda dari でしょう: はずだ berdasarkan fakta/logika konkret; でしょう berdasarkan perkiraan umum.',
-    examples   : [
-      { jp: '彼はもう着いている<b>はずです</b>。', id: 'Seharusnya dia sudah sampai.' },
-      { jp: '今日は休みの<b>はずでしたが</b>、会社に来ました。', id: 'Seharusnya hari ini libur, tapi saya ke kantor.' },
-    ],
-    see_also_grammar : ['gn4-00084'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn4-00084',
-    level      : 'n4',
-    pattern    : '〜はずがない',
-    reading    : '〜hazu ga nai',
-    meaning    : 'tidak mungkin ... / mustahil ...',
-    cat        : 'conjecture-possibility',
-    connection : 'V/Adj plain / N + の + はずがない',
-    desc       : '<b>〜はずがない</b> menyatakan bahwa sesuatu tidak mungkin terjadi berdasarkan logika atau pengetahuan si pembicara.',
-    nuance     : null,
-    examples   : [
-      { jp: 'あんなに練習したのに、失敗する<b>はずがない</b>。', id: 'Padahal sudah latihan sebanyak itu, tidak mungkin gagal.' },
-      { jp: '彼がそんなことを言う<b>はずがありません</b>。', id: 'Tidak mungkin dia mengatakan hal seperti itu.' },
-    ],
-    see_also_grammar : ['gn4-00083'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn4-00085',
-    level      : 'n4',
-    pattern    : '〜らしい',
-    reading    : '〜rashii',
-    meaning    : 'katanya ... / tampaknya ... (hearsay/inferensi)',
-    cat        : 'conjecture-possibility',
-    connection : 'V/Adj plain / N + らしい',
-    desc       : '<b>〜らしい</b> memiliki dua penggunaan: (1) hearsay — berdasarkan informasi yang didengar dari orang lain; (2) menunjukkan ciri khas yang sesuai: "khas", "benar-benar seperti...".',
-    nuance     : 'Makna (2): 男らしい = jantan, khas pria (sesuai karakter yang diharapkan).',
-    examples   : [
-      { jp: '明日は台風が来る<b>らしい</b>です。', id: 'Katanya besok akan ada topan.' },
-      { jp: '彼はとても男<b>らしい</b>人です。', id: 'Dia orang yang sangat jantan.' },
-    ],
-    see_also_grammar : ['gn4-00053', 'gn4-00054'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
+{
     id         : 'gn4-00086',
     level      : 'n4',
     pattern    : '〜まま',
@@ -1912,49 +555,7 @@ window.grammarN4 = [
     notes      : null,
   },
 
-  {
-    id         : 'gn4-00087',
-    level      : 'n4',
-    pattern    : '〜そうだ (伝聞 — hearsay)',
-    reading    : '〜sou da (denbun)',
-    meaning    : 'katanya ... / konon ... (laporan tidak langsung)',
-    cat        : 'conjecture-possibility',
-    connection : 'V/Adj plain (bukan 語幹) + そうだ',
-    desc       : '<b>〜そうだ (伝聞)</b> melaporkan informasi yang didengar dari sumber lain: "katanya", "menurut kabar". Dibentuk dari plain form (bukan 語幹).',
-    nuance     : 'Dibedakan dari 〜そうだ (様態) oleh bentuk koneksinya: 伝聞 dari V plain form.',
-    examples   : [
-      { jp: '天気予報によると、明日は晴れる<b>そうです</b>。', id: 'Menurut ramalan cuaca, katanya besok cerah.' },
-      { jp: '田中さんは来月結婚する<b>そうです</b>よ。', id: 'Katanya Tanaka-san menikah bulan depan.' },
-    ],
-    see_also_grammar : ['gn4-00053'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : 'Cara bedakan: おいしそう (様態, dari おいし語幹) vs おいしいそうだ (伝聞, dari おいしい plain).',
-  },
-
-  {
-    id         : 'gn4-00088',
-    level      : 'n4',
-    pattern    : '〜ために (sebab — bukan tujuan)',
-    reading    : '〜tame ni (sebab)',
-    meaning    : 'karena ... / disebabkan oleh ...',
-    cat        : 'reason-cause',
-    connection : 'V-た / N + の + ために',
-    desc       : '<b>〜ために</b> juga bisa menyatakan sebab, bukan hanya tujuan. Ketika digunakan dengan V lampau atau keadaan, berarti "karena" atau "akibat".',
-    nuance     : 'Sebab: diikuti kejadian negatif atau netral (akibat). Tujuan: diikuti tindakan yang disengaja.',
-    examples   : [
-      { jp: '台風の<b>ために</b>、電車が止まりました。', id: 'Karena topan, kereta berhenti.' },
-      { jp: '病気の<b>ために</b>、試験を受けられませんでした。', id: 'Karena sakit, tidak bisa mengikuti ujian.' },
-    ],
-    see_also_grammar : ['gn4-00042'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
+{
     id         : 'gn4-00089',
     level      : 'n4',
     pattern    : '〜ことがある (kadang-kadang)',
@@ -1975,28 +576,7 @@ window.grammarN4 = [
     notes      : null,
   },
 
-  {
-    id         : 'gn4-00090',
-    level      : 'n4',
-    pattern    : '〜ことにしている',
-    reading    : '〜koto ni shite iru',
-    meaning    : 'sudah menjadi kebiasaan untuk ...',
-    cat        : 'volitional-intention',
-    connection : 'Vる / Vない + ことにしている',
-    desc       : '<b>〜ことにしている</b> menyatakan suatu keputusan yang sudah dijadikan kebiasaan: "saya selalu biasa melakukan...".',
-    nuance     : 'Berbeda dari ことにする (keputusan sesaat): ことにしている = kebiasaan yang sudah mapan.',
-    examples   : [
-      { jp: '毎朝6時に起きる<b>ことにしています</b>。', id: 'Saya sudah membiasakan diri bangun jam 6 setiap pagi.' },
-      { jp: 'お酒は飲まない<b>ことにしている</b>。', id: 'Saya sudah membiasakan diri untuk tidak minum alkohol.' },
-    ],
-    see_also_grammar : [],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
+{
     id         : 'gn4-00091',
     level      : 'n4',
     pattern    : 'V-たばかりです',
@@ -2018,7 +598,7 @@ window.grammarN4 = [
     notes      : 'Pattern from Irodori 初級2 L1.',
   },
 
-  {
+{
     id         : 'gn4-00092',
     level      : 'n4',
     pattern    : 'V-るまで、〜',
@@ -2039,5 +619,1342 @@ window.grammarN4 = [
     exceptions : null,
     notes      : 'Pattern from Irodori 初級2 L12.',
   },
+
+  // ── VERB-FORMS (9) ───────────────────────────────────
+
+{
+    id         : 'gn4-00028',
+    level      : 'n4',
+    pattern    : 'Vられる (pasif)',
+    reading    : 'V-rareru',
+    meaning    : 'di- / dilakukan kepada ...',
+    cat        : 'passive',
+    connection : 'V-ない-form → replace ない dengan れる/られる',
+    desc       : '<b>Vられる</b> adalah bentuk pasif: menyatakan bahwa subjek menerima tindakan. Dibentuk: V1 (godan) → Vない → れる; V2 (ichidan) → Vない → られる.',
+    nuance     : 'Pasif kerugian (迷惑の受身): menyatakan bahwa pembicara terganggu/dirugikan oleh tindakan orang lain.',
+    examples   : [
+      { jp: '財布を盗ま<b>れました</b>。', id: 'Dompet saya dicuri.' },
+      { jp: '先生にほめ<b>られました</b>。', id: 'Saya dipuji oleh guru.' },
+      { jp: '雨に降ら<b>れて</b>、困りました。', id: 'Diguyur hujan, saya kewalahan.' },
+    ],
+    see_also_grammar : ['gn4-00029'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : 'する → される, くる → こられる',
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00029',
+    level      : 'n4',
+    pattern    : 'Vさせる (kausatif)',
+    reading    : 'V-saseru',
+    meaning    : 'menyuruh ... / membiarkan ...',
+    cat        : 'causative',
+    connection : 'V-ない-form → replace ない dengan せる/させる',
+    desc       : '<b>Vさせる</b> adalah bentuk kausatif: menyatakan bahwa subjek menyuruh atau membiarkan orang lain melakukan sesuatu.',
+    nuance     : 'Konteks menentukan makna: menyuruh (paksa/otoritas) vs membiarkan (izin).',
+    examples   : [
+      { jp: '母は子どもに野菜を食べさせ<b>ます</b>。', id: 'Ibu menyuruh anaknya makan sayur.' },
+      { jp: '彼女に好きな仕事を選ば<b>せました</b>。', id: 'Saya membiarkan dia memilih pekerjaan yang disukai.' },
+    ],
+    see_also_grammar : ['gn4-00028', 'gn4-00030'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : 'する → させる, くる → こさせる',
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00030',
+    level      : 'n4',
+    pattern    : 'Vさせられる (kausatif-pasif)',
+    reading    : 'V-saserareru',
+    meaning    : 'terpaksa/dipaksa melakukan ...',
+    cat        : 'causative',
+    connection : 'Vさせる → Vさせられる',
+    desc       : '<b>Vさせられる</b> menggabungkan kausatif dan pasif: subjek dipaksa melakukan sesuatu oleh orang lain, sering dengan nuansa tidak suka.',
+    nuance     : 'Hampir selalu menyiratkan keterpaksaan atau ketidaknyamanan.',
+    examples   : [
+      { jp: '残業をさせられ<b>ました</b>。', id: 'Saya dipaksa lembur.' },
+      { jp: '子どもの頃、嫌いな野菜を食べさせられ<b>ました</b>。', id: 'Waktu kecil, saya dipaksa makan sayur yang tidak saya suka.' },
+    ],
+    see_also_grammar : ['gn4-00028', 'gn4-00029'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : 'する → させられる',
+    notes      : 'Godan verb kasual: 書かせられる → 書かされる.',
+  },
+
+{
+    id         : 'gn4-00031',
+    level      : 'n4',
+    pattern    : '動詞可能形 (bentuk potensial)',
+    reading    : 'doushi kanouukei',
+    meaning    : 'bisa ... / mampu ...',
+    cat        : 'potential',
+    connection : 'V1 (godan): Vない → えない/える; V2 (ichidan): V → られる/れる (kasual)',
+    desc       : '<b>Bentuk potensial</b> menyatakan kemampuan atau kemungkinan. Objek berubah dari を menjadi が (bisa juga を).',
+    nuance     : 'Kasual: ichidan 〜られる sering diperpendek menjadi 〜れる (ら抜き言葉): 食べれる.',
+    examples   : [
+      { jp: '私は日本語が話せ<b>ます</b>。', id: 'Saya bisa berbicara bahasa Jepang.' },
+      { jp: 'この仕事は一人で<b>できます</b>か。', id: 'Bisakah pekerjaan ini dilakukan sendiri?' },
+    ],
+    see_also_grammar : [],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : 'する → できる, くる → こられる/これる',
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00041',
+    level      : 'n4',
+    pattern    : 'Vようにする',
+    reading    : 'V-you ni suru',
+    meaning    : 'berusaha agar ... / mengupayakan ...',
+    cat        : 'volitional-intention',
+    connection : 'Vる/Vない + ようにする',
+    desc       : '<b>〜ようにする</b> menyatakan upaya sadar atau kebiasaan yang sengaja dibentuk: "berusaha untuk", "mengusahakan".',
+    nuance     : null,
+    examples   : [
+      { jp: '毎日運動する<b>ようにしています</b>。', id: 'Saya berusaha berolahraga setiap hari.' },
+      { jp: '夜更かしをしない<b>ようにしてください</b>。', id: 'Tolong berusaha untuk tidak begadang.' },
+    ],
+    see_also_grammar : ['gn4-00040'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00074',
+    level      : 'n4',
+    pattern    : 'Vつもり',
+    reading    : 'V-tsumori',
+    meaning    : 'berencana untuk ... / bermaksud ...',
+    cat        : 'volitional-intention',
+    connection : 'Vる / Vない + つもりです',
+    desc       : '<b>〜つもり</b> menyatakan niat atau rencana yang sudah cukup pasti. Lebih kuat dari 〜たい (keinginan).',
+    nuance     : 'Vた + つもり: berpura-pura sudah melakukan, atau merasa sudah melakukan.',
+    examples   : [
+      { jp: '来年日本語の試験を受ける<b>つもりです</b>。', id: 'Saya berencana mengikuti ujian bahasa Jepang tahun depan.' },
+      { jp: 'そんなことを言った<b>つもりはありません</b>。', id: 'Saya tidak bermaksud mengatakan hal itu.' },
+    ],
+    see_also_grammar : [],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00075',
+    level      : 'n4',
+    pattern    : 'Vようと思う',
+    reading    : 'V-you to omou',
+    meaning    : 'berencana / berniat (dengan berpikir)',
+    cat        : 'volitional-intention',
+    connection : 'Vよう (volitional plain) + と思う',
+    desc       : '<b>〜ようと思う</b> menyatakan niat atau rencana yang muncul dari pikiran si pembicara. Sedikit kurang pasti dari つもり.',
+    nuance     : null,
+    examples   : [
+      { jp: '来月から運動し<b>ようと思っています</b>。', id: 'Saya berniat berolahraga mulai bulan depan.' },
+      { jp: '明日早く起き<b>ようと思います</b>。', id: 'Saya berencana bangun pagi besok.' },
+    ],
+    see_also_grammar : ['gn4-00074', 'gn4-00076'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00076',
+    level      : 'n4',
+    pattern    : 'Vよう (volitional plain)',
+    reading    : 'V-you',
+    meaning    : 'ayo ... / mari ... (kasual)',
+    cat        : 'volitional-intention',
+    connection : 'V1 (godan) → Vお-row; V2 (ichidan) → Vよう',
+    desc       : '<b>Vよう</b> adalah bentuk volitional dalam gaya biasa, setara dengan 〜ましょう dalam gaya sopan. Digunakan dalam percakapan kasual untuk mengajak.',
+    nuance     : null,
+    examples   : [
+      { jp: 'もう行こ<b>う</b>。', id: 'Ayo pergi sekarang.' },
+      { jp: '一緒に食べ<b>よう</b>！', id: 'Ayo makan bersama!' },
+    ],
+    see_also_grammar : ['gn4-00075'],
+    see_also_vocab   : [],
+    register   : 'spoken',
+    exceptions : 'する → しよう, くる → こよう',
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00090',
+    level      : 'n4',
+    pattern    : '〜ことにしている',
+    reading    : '〜koto ni shite iru',
+    meaning    : 'sudah menjadi kebiasaan untuk ...',
+    cat        : 'volitional-intention',
+    connection : 'Vる / Vない + ことにしている',
+    desc       : '<b>〜ことにしている</b> menyatakan suatu keputusan yang sudah dijadikan kebiasaan: "saya selalu biasa melakukan...".',
+    nuance     : 'Berbeda dari ことにする (keputusan sesaat): ことにしている = kebiasaan yang sudah mapan.',
+    examples   : [
+      { jp: '毎朝6時に起きる<b>ことにしています</b>。', id: 'Saya sudah membiasakan diri bangun jam 6 setiap pagi.' },
+      { jp: 'お酒は飲まない<b>ことにしている</b>。', id: 'Saya sudah membiasakan diri untuk tidak minum alkohol.' },
+    ],
+    see_also_grammar : [],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+  // ── CONDITIONALS (3) ───────────────────────────────────
+
+{
+    id         : 'gn4-00016',
+    level      : 'n4',
+    pattern    : '〜場合は / 〜場合に (ばあい)',
+    reading    : '〜baai wa / ni',
+    meaning    : 'dalam hal ... / jika terjadi ...',
+    cat        : 'conditional-tara',
+    connection : 'N + の + 場合は / Vる/Vた + 場合は',
+    desc       : '<b>〜場合は</b> digunakan untuk menyatakan kondisi yang lebih hipotetis atau formal: "dalam hal ini", "jika kasusnya demikian".',
+    nuance     : 'Lebih formal dari たら atau と. Sering dalam aturan, panduan, atau situasi resmi.',
+    examples   : [
+      { jp: '緊急の<b>場合は</b>、このボタンを押してください。', id: 'Dalam keadaan darurat, tekan tombol ini.' },
+      { jp: '遅刻する<b>場合は</b>、必ず連絡してください。', id: 'Jika terlambat, pastikan untuk memberi kabar.' },
+    ],
+    see_also_grammar : [],
+    see_also_vocab   : [],
+    register   : 'formal',
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00035',
+    level      : 'n4',
+    pattern    : '〜なら',
+    reading    : '〜nara',
+    meaning    : 'kalau memang ... / jika kasusnya ...',
+    cat        : 'conditional-tara',
+    connection : 'V/Adj plain / N + なら',
+    desc       : '<b>〜なら</b> digunakan ketika kondisinya berdasarkan asumsi, informasi yang diterima dari pendengar, atau situasi yang sudah diketahui. Tidak untuk kejadian yang sudah pasti terjadi.',
+    nuance     : 'Berbeda dari たら/と/ば: なら sering merespons apa yang baru dikatakan lawan bicara.',
+    examples   : [
+      { jp: '東京へ行く<b>なら</b>、ここに寄ってみてください。', id: 'Kalau memang pergi ke Tokyo, coba mampir ke sini.' },
+      { jp: '本当に困っている<b>なら</b>、助けますよ。', id: 'Kalau memang benar-benar kesulitan, saya bantu.' },
+    ],
+    see_also_grammar : [],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00036',
+    level      : 'n4',
+    pattern    : '〜さえ〜ば',
+    reading    : '〜sae〜ba',
+    meaning    : 'asalkan ... / asal saja ...',
+    cat        : 'conditional-tara',
+    connection : 'N + さえ + Adj-ければ / Vさえ + すれば',
+    desc       : '<b>〜さえ〜ば</b> menyatakan satu-satunya kondisi yang perlu dipenuhi untuk suatu hasil: "asal...", "asalkan...".',
+    nuance     : null,
+    examples   : [
+      { jp: 'お金さえあれば、何でも買えます。', id: 'Asalkan ada uang, bisa beli apa saja.' },
+      { jp: '健康でさえあれば、それで十分です。', id: 'Asalkan sehat, itu sudah cukup.' },
+    ],
+    see_also_grammar : [],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+  // ── MODALITY (31) ───────────────────────────────────
+
+{
+    id         : 'gn4-00023',
+    level      : 'n4',
+    pattern    : '〜なければならない (dan variasinya)',
+    reading    : '〜nakereba naranai',
+    meaning    : 'harus ... / wajib ...',
+    cat        : 'obligation-necessity',
+    connection : 'Vない → Vなければ + ならない/いけない',
+    desc       : '<b>〜なければならない</b> menyatakan kewajiban kuat. Variasi: <b>〜なくてはいけない</b> (lebih umum di percakapan), <b>〜なきゃ／なくちゃ</b> (sangat kasual).',
+    nuance     : 'なければならない ≥ なくてはいけない (formalitas). Keduanya menyatakan kewajiban objektif.',
+    examples   : [
+      { jp: '明日は早く起きなければ<b>なりません</b>。', id: 'Besok saya harus bangun pagi.' },
+      { jp: '今週は残業しなく<b>てはいけない</b>。', id: 'Minggu ini harus lembur.' },
+    ],
+    see_also_grammar : ['gn4-00024'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : 'Kasual: なきゃ (なければ), なくちゃ (なくては). Sering di ujung kalimat: 行かなきゃ。',
+  },
+
+{
+    id         : 'gn4-00024',
+    level      : 'n4',
+    pattern    : '〜なきゃ / 〜なくちゃ (kasual)',
+    reading    : '〜nakya / nakucha',
+    meaning    : 'harus ... (kasual)',
+    cat        : 'obligation-necessity',
+    connection : 'Vない → Vなきゃ / Vなくちゃ',
+    desc       : '<b>〜なきゃ</b> dan <b>〜なくちゃ</b> adalah bentuk kasual dari 〜なければならない dan 〜なくてはいけない. Sering diucapkan tanpa bagian akhir.',
+    nuance     : null,
+    examples   : [
+      { jp: 'もう行か<b>なきゃ</b>。', id: 'Harus pergi sekarang.' },
+      { jp: '宿題やら<b>なくちゃ</b>いけない。', id: 'Harus kerjakan PR.' },
+    ],
+    see_also_grammar : ['gn4-00023'],
+    see_also_vocab   : [],
+    register   : 'spoken',
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00025',
+    level      : 'n4',
+    pattern    : '〜てもいい',
+    reading    : '〜te mo ii',
+    meaning    : 'boleh ... / tidak masalah jika ...',
+    cat        : 'permission-prohibition',
+    connection : 'Vて + もいい(です/ですか)',
+    desc       : '<b>〜てもいい</b> menyatakan izin. Bentuk tanya 〜てもいいですか digunakan untuk meminta izin. Jawaban: はい、〜てもいいです / いいえ、〜てはいけません.',
+    nuance     : null,
+    examples   : [
+      { jp: 'ここに座って<b>もいいですか</b>。', id: 'Boleh saya duduk di sini?' },
+      { jp: '早く帰って<b>もいいです</b>よ。', id: 'Boleh pulang lebih awal.' },
+    ],
+    see_also_grammar : ['gn4-00026', 'gn4-00027'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00026',
+    level      : 'n4',
+    pattern    : '〜なくてもいい',
+    reading    : '〜nakute mo ii',
+    meaning    : 'tidak perlu ... / boleh tidak ...',
+    cat        : 'permission-prohibition',
+    connection : 'Vない → Vなく + てもいい',
+    desc       : '<b>〜なくてもいい</b> menyatakan tidak ada kewajiban untuk melakukan sesuatu.',
+    nuance     : null,
+    examples   : [
+      { jp: 'その本はすぐに返さ<b>なくてもいいです</b>。', id: 'Buku itu tidak harus dikembalikan segera.' },
+      { jp: '明日は来<b>なくてもいいですよ</b>。', id: 'Besok tidak perlu datang.' },
+    ],
+    see_also_grammar : ['gn4-00025', 'gn4-00027'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00027',
+    level      : 'n4',
+    pattern    : '〜てはいけない',
+    reading    : '〜te wa ikenai',
+    meaning    : 'tidak boleh ... / dilarang ...',
+    cat        : 'permission-prohibition',
+    connection : 'Vて + はいけません / はいけない',
+    desc       : '<b>〜てはいけない</b> menyatakan larangan. Bentuk sopan: 〜てはいけません.',
+    nuance     : null,
+    examples   : [
+      { jp: 'テストのとき、辞書を使っ<b>てはいけません</b>。', id: 'Saat ujian, tidak boleh menggunakan kamus.' },
+      { jp: '嘘をつい<b>てはいけない</b>よ。', id: 'Tidak boleh berbohong.' },
+    ],
+    see_also_grammar : ['gn4-00025', 'gn4-00026'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00032',
+    level      : 'n4',
+    pattern    : 'Vてあげる / くれる / もらう',
+    reading    : 'V-te ageru / kureru / morau',
+    meaning    : 'melakukan untuk / menerima layanan',
+    cat        : 'sentence-final-request',
+    connection : 'Vて + あげる (pemberi) / くれる (ke saya) / もらう (menerima)',
+    desc       : 'Tiga verba benefaktif dengan TE-form: <b>てあげる</b> = melakukan untuk orang lain; <b>てくれる</b> = seseorang melakukan untuk saya; <b>てもらう</b> = menerima tindakan dari seseorang.',
+    nuance     : null,
+    examples   : [
+      { jp: '友だちに傘を貸して<b>あげました</b>。', id: 'Saya meminjamkan payung kepada teman.' },
+      { jp: '母が弁当を作って<b>くれました</b>。', id: 'Ibu membuatkan bento untuk saya.' },
+      { jp: '先生に漢字を教えて<b>もらいました</b>。', id: 'Saya diajari kanji oleh guru.' },
+    ],
+    see_also_grammar : ['gn4-00033'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00033',
+    level      : 'n4',
+    pattern    : 'Vてほしい / もらいたい',
+    reading    : 'V-te hoshii / moraitai',
+    meaning    : 'ingin seseorang melakukan ... / meminta ...',
+    cat        : 'sentence-final-request',
+    connection : 'N (orang) + に + Vて + ほしい / もらいたい',
+    desc       : '<b>〜てほしい</b> menyatakan keinginan si pembicara agar orang lain melakukan sesuatu: "mau agar kamu...".',
+    nuance     : null,
+    examples   : [
+      { jp: 'もっと静かにして<b>ほしい</b>です。', id: 'Saya ingin dia lebih tenang.' },
+      { jp: '一緒に来て<b>もらいたい</b>です。', id: 'Saya ingin dia ikut bersama.' },
+    ],
+    see_also_grammar : ['gn4-00032'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00034',
+    level      : 'n4',
+    pattern    : 'Vてくれませんか / もらえませんか / くださいませんか',
+    reading    : 'V-te kuremasen ka / moraemasen ka / kudasaimasen ka',
+    meaning    : 'bisakah kamu ... ? / maukah kamu ... ?',
+    cat        : 'sentence-final-request',
+    connection : 'Vて + くれませんか / もらえませんか / くださいませんか',
+    desc       : 'Tiga bentuk permintaan sopan yang lebih lembut dari てください. Urutan formalitas: くれませんか < もらえませんか < くださいませんか.',
+    nuance     : null,
+    examples   : [
+      { jp: '手伝って<b>くれませんか</b>。', id: 'Bisakah kamu membantu saya?' },
+      { jp: 'もう少し大きな声で話して<b>もらえませんか</b>。', id: 'Bisakah kamu berbicara dengan suara sedikit lebih keras?' },
+    ],
+    see_also_grammar : ['gn4-00032'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00038',
+    level      : 'n4',
+    pattern    : '〜といい / 〜たらいい / 〜ばいい',
+    reading    : '〜to ii / tara ii / ba ii',
+    meaning    : 'sebaiknya ... / alangkah baiknya ...',
+    cat        : 'sentence-final-request',
+    connection : 'Vる/Vた/Vば + といい/たらいい/ばいい',
+    desc       : 'Tiga pola yang semua berarti "sebaiknya" atau "alangkah baiknya". Juga digunakan untuk menyatakan harapan (といいですね = semoga ya).',
+    nuance     : 'といいですね = harapan/doa; たらいい/ばいい = saran lebih kuat.',
+    examples   : [
+      { jp: '早く良くなる<b>といいですね</b>。', id: 'Semoga cepat sembuh ya.' },
+      { jp: '先生に相談し<b>たらいいですよ</b>。', id: 'Sebaiknya konsultasi ke guru.' },
+    ],
+    see_also_grammar : ['gn4-00039'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00039',
+    level      : 'n4',
+    pattern    : '〜たらどうですか / 〜いかがですか',
+    reading    : '〜tara dou desu ka / ikaga desu ka',
+    meaning    : 'bagaimana kalau ... ? / kenapa tidak ...?',
+    cat        : 'sentence-final-request',
+    connection : 'Vた + らどうですか',
+    desc       : '<b>〜たらどうですか</b> digunakan untuk memberikan saran dengan cara bertanya. Lebih sopan dengan いかがですか.',
+    nuance     : null,
+    examples   : [
+      { jp: '医者に行っ<b>たらどうですか</b>。', id: 'Bagaimana kalau pergi ke dokter?' },
+      { jp: '少し休ん<b>だらいかがですか</b>。', id: 'Bagaimana kalau istirahat sebentar?' },
+    ],
+    see_also_grammar : ['gn4-00038'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00048',
+    level      : 'n4',
+    pattern    : '〜んです / 〜のです',
+    reading    : '〜n desu / no desu',
+    meaning    : '... (itu) ... (penjelasan/alasan)',
+    cat        : 'sentence-final-modality',
+    connection : 'V/Adj plain + んです / のです',
+    desc       : '<b>〜んです / 〜のです</b> digunakan untuk memberikan penjelasan, latar belakang, atau alasan dari suatu situasi. Menciptakan nuansa "sebenarnya...", "yang terjadi adalah...".',
+    nuance     : 'Dalam pertanyaan んですか = meminta penjelasan/konfirmasi yang lebih mendalam dari ですか biasa.',
+    examples   : [
+      { jp: '今日は来られない<b>んです</b>。用事があって。', id: 'Hari ini saya tidak bisa datang. Ada keperluan.' },
+      { jp: 'どうした<b>んですか</b>。顔色が悪いですよ。', id: 'Ada apa? Mukamu pucat.' },
+    ],
+    see_also_grammar : [],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : 'Na-adj/N + な + んです. Plain adj (い-adj/V) + んです langsung.',
+  },
+
+{
+    id         : 'gn4-00053',
+    level      : 'n4',
+    pattern    : '〜そうだ (様態 — penampilan)',
+    reading    : '〜sou da (youtai)',
+    meaning    : 'kelihatannya ... / sepertinya ... (dari penglihatan)',
+    cat        : 'conjecture-possibility',
+    connection : 'V-ます語幹 / Adj-i語幹 / Adj-na + そうだ',
+    desc       : '<b>〜そうだ (様態)</b> berdasarkan penglihatan atau kesan langsung. Berbeda dari 〜そうだ (伝聞) yang berarti "katanya".',
+    nuance     : 'Dibedakan oleh koneksi: 様態 dari V-ます語幹/Adj語幹; 伝聞 dari V/Adj plain form.',
+    examples   : [
+      { jp: '空が暗い。雨が降り<b>そうです</b>。', id: 'Langitnya gelap. Sepertinya mau hujan.' },
+      { jp: 'あのケーキはおいし<b>そうですね</b>。', id: 'Kue itu kelihatannya enak ya.' },
+    ],
+    see_also_grammar : ['gn4-00054'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : 'いい → よさそう; ない → なさそう',
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00054',
+    level      : 'n4',
+    pattern    : '〜ようだ / 〜みたいだ',
+    reading    : '〜you da / mitai da',
+    meaning    : 'tampaknya ... / sepertinya ... (kesimpulan dari bukti)',
+    cat        : 'conjecture-possibility',
+    connection : 'V/Adj plain / N + ようだ / みたいだ',
+    desc       : '<b>〜ようだ</b> menyatakan kesimpulan yang ditarik dari bukti atau pengamatan. <b>〜みたいだ</b> adalah versi yang lebih kasual.',
+    nuance     : 'ようだ: sedikit lebih formal, juga berarti "seperti" (metafora). みたいだ: kasual.',
+    examples   : [
+      { jp: '彼は風邪を引いた<b>ようです</b>。', id: 'Sepertinya dia masuk angin.' },
+      { jp: '彼女は疲れている<b>みたいです</b>。', id: 'Sepertinya dia lelah.' },
+    ],
+    see_also_grammar : ['gn4-00053'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : 'N + のようだ (formal) vs N + みたいだ (kasual). Adj-na + なようだ vs みたいだ.',
+  },
+
+{
+    id         : 'gn4-00055',
+    level      : 'n4',
+    pattern    : '〜でしょう / 〜だろう',
+    reading    : '〜deshou / darou',
+    meaning    : 'mungkin ... / sepertinya ... (perkiraan)',
+    cat        : 'conjecture-possibility',
+    connection : 'V/Adj plain / N + でしょう (polite) / だろう (plain)',
+    desc       : '<b>〜でしょう</b> menyatakan perkiraan atau kemungkinan dengan tingkat kepercayaan sedang. <b>だろう</b> adalah bentuk plain-nya.',
+    nuance     : null,
+    examples   : [
+      { jp: '明日は雨が降る<b>でしょう</b>。', id: 'Besok mungkin hujan.' },
+      { jp: '彼もきっと来る<b>だろう</b>。', id: 'Dia juga pasti datang.' },
+    ],
+    see_also_grammar : [],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00056',
+    level      : 'n4',
+    pattern    : '命令形 (bentuk perintah)',
+    reading    : 'meireikei',
+    meaning    : 'lakukan! (perintah)',
+    cat        : 'sentence-final-request',
+    connection : 'V1 (godan): Vう-row (e.g. 書く→書け); V2 (ichidan): Vる→Vろ',
+    desc       : '<b>命令形</b> adalah bentuk perintah langsung dan kuat. Terdengar kasar jika digunakan kepada orang yang sederajat atau lebih tua; wajar dalam tanda, instruksi tertulis, atau dari atasan ke bawahan.',
+    nuance     : 'Gunakan dengan hati-hati. なさい lebih sopan untuk konteks sehari-hari.',
+    examples   : [
+      { jp: 'ここに座れ！', id: 'Duduk di sini!' },
+      { jp: '早く起き<b>ろ</b>！', id: 'Bangun cepat!' },
+    ],
+    see_also_grammar : ['gn4-00057', 'gn4-00058'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : 'する → しろ/せよ, くる → こい',
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00057',
+    level      : 'n4',
+    pattern    : '禁止形 (bentuk larangan)',
+    reading    : 'kinshikei',
+    meaning    : 'jangan! / dilarang!',
+    cat        : 'permission-prohibition',
+    connection : 'Vる (dictionary form) + な',
+    desc       : '<b>Vるな</b> adalah bentuk larangan langsung dan kuat. Terdengar kasar; lebih umum dalam tanda larangan atau dari atasan.',
+    nuance     : null,
+    examples   : [
+      { jp: '入る<b>な</b>！', id: 'Jangan masuk!' },
+      { jp: 'ここに車を止める<b>な</b>。', id: 'Jangan parkir mobil di sini.' },
+    ],
+    see_also_grammar : ['gn4-00056'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00058',
+    level      : 'n4',
+    pattern    : '〜なさい',
+    reading    : '〜nasai',
+    meaning    : 'lakukan! (perintah sopan/otoritatif)',
+    cat        : 'sentence-final-request',
+    connection : 'V-ます語幹 + なさい',
+    desc       : '<b>〜なさい</b> digunakan untuk memberikan instruksi atau perintah dengan nuansa lebih sopan dari 命令形, tapi tetap menunjukkan otoritas. Umum dari orang tua ke anak, atau guru ke murid.',
+    nuance     : null,
+    examples   : [
+      { jp: '早く宿題をし<b>なさい</b>。', id: 'Cepat kerjakan PR.' },
+      { jp: 'もっとゆっくり食べ<b>なさい</b>。', id: 'Makan lebih pelan.' },
+    ],
+    see_also_grammar : ['gn4-00056'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00065',
+    level      : 'n4',
+    pattern    : '〜てよかった',
+    reading    : '〜te yokatta',
+    meaning    : 'syukurlah sudah ... / senang karena ...',
+    cat        : 'sentence-final-modality',
+    connection : 'Vて + よかった',
+    desc       : '<b>〜てよかった</b> menyatakan rasa lega atau syukur atas suatu tindakan yang sudah dilakukan.',
+    nuance     : null,
+    examples   : [
+      { jp: '傘を持ってき<b>てよかった</b>。', id: 'Syukurlah sudah membawa payung.' },
+      { jp: '早めに予約し<b>てよかったです</b>。', id: 'Syukurlah sudah memesan lebih awal.' },
+    ],
+    see_also_grammar : ['gn4-00064'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00066',
+    level      : 'n4',
+    pattern    : '聞こえる / 見える',
+    reading    : 'kikoeru / mieru',
+    meaning    : 'terdengar / terlihat (persepsi alami)',
+    cat        : 'conjecture-possibility',
+    connection : 'N + が + 聞こえる (terdengar) / 見える (terlihat)',
+    desc       : '<b>聞こえる</b>: sesuatu terdengar secara alami (bukan mendengarkan dengan sengaja). <b>見える</b>: sesuatu terlihat secara alami (bukan melihat dengan sengaja).',
+    nuance     : 'Berbeda dari 聞く/見る yang menyiratkan tindakan aktif.',
+    examples   : [
+      { jp: '外から音楽が<b>聞こえます</b>。', id: 'Dari luar terdengar musik.' },
+      { jp: '窓から富士山が<b>見えます</b>。', id: 'Gunung Fuji terlihat dari jendela.' },
+    ],
+    see_also_grammar : [],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00069',
+    level      : 'n4',
+    pattern    : '〜がる / 〜がっている',
+    reading    : '〜garu / gatte iru',
+    meaning    : 'tampak merasa ... / menunjukkan tanda-tanda ...',
+    cat        : 'sentence-final-modality',
+    connection : 'Adj-i語幹 + がる / Adj-i語幹 + がっている',
+    desc       : '<b>〜がる</b> digunakan untuk mengekspresikan perasaan atau keinginan orang ketiga (tidak bisa langsung tahu perasaan orang lain). Berperilaku seperti verba.',
+    nuance     : null,
+    examples   : [
+      { jp: '子どもはプレゼントを欲し<b>がっています</b>。', id: 'Anak itu sepertinya menginginkan hadiah.' },
+      { jp: '彼はその話を怖<b>がっていた</b>。', id: 'Dia tampak ketakutan dengan cerita itu.' },
+    ],
+    see_also_grammar : [],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00071',
+    level      : 'n4',
+    pattern    : 'こんな / そんな / あんな / どんな + N',
+    reading    : 'konna / sonna / anna / donna + N',
+    meaning    : 'seperti ini / seperti itu / seperti apa (modifikasi nominal)',
+    cat        : 'sentence-final-modality',
+    connection : 'こんな/そんな/あんな/どんな + N',
+    desc       : 'Seri demonstrativa yang memodifikasi nomina: <b>こんな</b> (seperti ini), <b>そんな</b> (seperti itu — dekat lawan bicara), <b>あんな</b> (seperti itu — jauh), <b>どんな</b> (seperti apa).',
+    nuance     : null,
+    examples   : [
+      { jp: '<b>こんな</b>問題は難しいですね。', id: 'Soal seperti ini memang susah ya.' },
+      { jp: '<b>どんな</b>音楽が好きですか。', id: 'Kamu suka musik seperti apa?' },
+    ],
+    see_also_grammar : ['gn4-00072'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00072',
+    level      : 'n4',
+    pattern    : 'こう / そう / ああ / どう + V',
+    reading    : 'kou / sou / aa / dou + V',
+    meaning    : 'dengan cara ini / seperti itu / bagaimana (cara/metode)',
+    cat        : 'sentence-final-modality',
+    connection : 'こう/そう/ああ/どう + V',
+    desc       : 'Seri adverbia demonstratif yang memodifikasi verba: <b>こう</b> (dengan cara ini), <b>そう</b> (dengan cara itu), <b>ああ</b> (dengan cara itu — jauh), <b>どう</b> (dengan cara apa).',
+    nuance     : null,
+    examples   : [
+      { jp: '<b>こう</b>すればいいですよ。', id: 'Lakukan seperti ini saja.' },
+      { jp: 'この問題は<b>どう</b>解きますか。', id: 'Bagaimana cara mengerjakan soal ini?' },
+    ],
+    see_also_grammar : ['gn4-00071'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00077',
+    level      : 'n4',
+    pattern    : '〜じゃないか / ではないか',
+    reading    : '〜ja nai ka / dewa nai ka',
+    meaning    : 'bukankah ... ? / ternyata ... !',
+    cat        : 'sentence-final-modality',
+    connection : 'V/Adj plain + じゃないか / ではないか',
+    desc       : '<b>〜じゃないか</b> digunakan untuk: (1) menyampaikan pendapat dengan tekanan, atau (2) keterkejutan saat menemukan sesuatu yang tidak disangka.',
+    nuance     : 'ではないか lebih formal dari じゃないか.',
+    examples   : [
+      { jp: 'もう少し考えれば分かる<b>じゃないか</b>。', id: 'Bukankah kalau dipikir lebih jauh pasti tahu?' },
+      { jp: 'あれ、田中さん<b>じゃないか</b>！', id: 'Eh, bukankah itu Tanaka-san!' },
+    ],
+    see_also_grammar : [],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00078',
+    level      : 'n4',
+    pattern    : '〜かな / 〜かしら',
+    reading    : '〜kana / kashira',
+    meaning    : 'ya ... / acapkali (monolog keraguan)',
+    cat        : 'sentence-final-modality',
+    connection : 'V/Adj plain / N + かな (netral/pria) / かしら (feminin)',
+    desc       : '<b>〜かな</b> digunakan untuk bergumam sendiri dalam keraguan atau harapan: "ya...", "entah ya". <b>〜かしら</b> adalah variannya yang lebih feminin.',
+    nuance     : null,
+    examples   : [
+      { jp: '彼は来る<b>かな</b>。', id: 'Dia datang ya... (bergumam)' },
+      { jp: '明日は晴れる<b>かしら</b>。', id: 'Besok cerah ya kira-kira...' },
+    ],
+    see_also_grammar : ['gn4-00079'],
+    see_also_vocab   : [],
+    register   : 'spoken',
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00079',
+    level      : 'n4',
+    pattern    : '〜なあ',
+    reading    : '〜naa',
+    meaning    : 'sungguh ... ya / ah ... (ekspresi kagum/keinginan)',
+    cat        : 'sentence-final-modality',
+    connection : 'V/Adj plain / N + なあ',
+    desc       : '<b>〜なあ</b> digunakan sebagai ekspresi emosi dalam monolog: kekaguman, keinginan, atau nostalgia.',
+    nuance     : null,
+    examples   : [
+      { jp: '日本語が上手くなりたい<b>なあ</b>。', id: 'Ingin sekali jadi pandai bahasa Jepang...' },
+      { jp: 'いい天気だ<b>なあ</b>。', id: 'Cuacanya bagus sungguh ya.' },
+    ],
+    see_also_grammar : ['gn4-00078'],
+    see_also_vocab   : [],
+    register   : 'spoken',
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00080',
+    level      : 'n4',
+    pattern    : '〜かい / 〜かね',
+    reading    : '〜kai / kane',
+    meaning    : '... kah? (partikel tanya kasual/pria)',
+    cat        : 'sentence-final-modality',
+    connection : 'V/Adj plain / N + かい (ya/tidak) / かね (retorik/konfirmasi)',
+    desc       : '<b>〜かい</b>: partikel tanya kasual, terutama digunakan pria tua kepada yang lebih muda. <b>〜かね</b>: meminta konfirmasi atau bertanya retoris.',
+    nuance     : null,
+    examples   : [
+      { jp: '大丈夫<b>かい</b>？', id: 'Baik-baik saja?' },
+      { jp: 'そんなことがあるんだろう<b>かね</b>。', id: 'Memangnya ada hal seperti itu ya?' },
+    ],
+    see_also_grammar : ['gn4-00078'],
+    see_also_vocab   : [],
+    register   : 'spoken',
+    exceptions : null,
+    notes      : 'Lebih sering diucapkan oleh pria dengan usia lebih tua. Jarang dipakai generasi muda.',
+  },
+
+{
+    id         : 'gn4-00082',
+    level      : 'n4',
+    pattern    : '〜ようだ (metafora)',
+    reading    : '〜you da',
+    meaning    : 'seperti ... (metafora/persamaan)',
+    cat        : 'conjecture-possibility',
+    connection : 'N + の + ようだ / N + のように + V',
+    desc       : '<b>〜のようだ</b> digunakan sebagai persamaan/metafora: "seperti", "bagaikan". <b>〜のように</b> sebagai adverbia: "seperti halnya".',
+    nuance     : null,
+    examples   : [
+      { jp: '彼は魚<b>のように</b>泳ぎます。', id: 'Dia berenang seperti ikan.' },
+      { jp: '夢<b>のような</b>出来事でした。', id: 'Itu adalah kejadian yang seperti mimpi.' },
+    ],
+    see_also_grammar : ['gn4-00054'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00083',
+    level      : 'n4',
+    pattern    : '〜はずだ',
+    reading    : '〜hazu da',
+    meaning    : 'seharusnya ... / mestinya ...',
+    cat        : 'conjecture-possibility',
+    connection : 'V/Adj plain / N + の + はずだ',
+    desc       : '<b>〜はずだ</b> menyatakan ekspektasi logis berdasarkan informasi atau pengetahuan: "seharusnya", "semestinya".',
+    nuance     : 'Berbeda dari でしょう: はずだ berdasarkan fakta/logika konkret; でしょう berdasarkan perkiraan umum.',
+    examples   : [
+      { jp: '彼はもう着いている<b>はずです</b>。', id: 'Seharusnya dia sudah sampai.' },
+      { jp: '今日は休みの<b>はずでしたが</b>、会社に来ました。', id: 'Seharusnya hari ini libur, tapi saya ke kantor.' },
+    ],
+    see_also_grammar : ['gn4-00084'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00084',
+    level      : 'n4',
+    pattern    : '〜はずがない',
+    reading    : '〜hazu ga nai',
+    meaning    : 'tidak mungkin ... / mustahil ...',
+    cat        : 'conjecture-possibility',
+    connection : 'V/Adj plain / N + の + はずがない',
+    desc       : '<b>〜はずがない</b> menyatakan bahwa sesuatu tidak mungkin terjadi berdasarkan logika atau pengetahuan si pembicara.',
+    nuance     : null,
+    examples   : [
+      { jp: 'あんなに練習したのに、失敗する<b>はずがない</b>。', id: 'Padahal sudah latihan sebanyak itu, tidak mungkin gagal.' },
+      { jp: '彼がそんなことを言う<b>はずがありません</b>。', id: 'Tidak mungkin dia mengatakan hal seperti itu.' },
+    ],
+    see_also_grammar : ['gn4-00083'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00085',
+    level      : 'n4',
+    pattern    : '〜らしい',
+    reading    : '〜rashii',
+    meaning    : 'katanya ... / tampaknya ... (hearsay/inferensi)',
+    cat        : 'conjecture-possibility',
+    connection : 'V/Adj plain / N + らしい',
+    desc       : '<b>〜らしい</b> memiliki dua penggunaan: (1) hearsay — berdasarkan informasi yang didengar dari orang lain; (2) menunjukkan ciri khas yang sesuai: "khas", "benar-benar seperti...".',
+    nuance     : 'Makna (2): 男らしい = jantan, khas pria (sesuai karakter yang diharapkan).',
+    examples   : [
+      { jp: '明日は台風が来る<b>らしい</b>です。', id: 'Katanya besok akan ada topan.' },
+      { jp: '彼はとても男<b>らしい</b>人です。', id: 'Dia orang yang sangat jantan.' },
+    ],
+    see_also_grammar : ['gn4-00053', 'gn4-00054'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00087',
+    level      : 'n4',
+    pattern    : '〜そうだ (伝聞 — hearsay)',
+    reading    : '〜sou da (denbun)',
+    meaning    : 'katanya ... / konon ... (laporan tidak langsung)',
+    cat        : 'conjecture-possibility',
+    connection : 'V/Adj plain (bukan 語幹) + そうだ',
+    desc       : '<b>〜そうだ (伝聞)</b> melaporkan informasi yang didengar dari sumber lain: "katanya", "menurut kabar". Dibentuk dari plain form (bukan 語幹).',
+    nuance     : 'Dibedakan dari 〜そうだ (様態) oleh bentuk koneksinya: 伝聞 dari V plain form.',
+    examples   : [
+      { jp: '天気予報によると、明日は晴れる<b>そうです</b>。', id: 'Menurut ramalan cuaca, katanya besok cerah.' },
+      { jp: '田中さんは来月結婚する<b>そうです</b>よ。', id: 'Katanya Tanaka-san menikah bulan depan.' },
+    ],
+    see_also_grammar : ['gn4-00053'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : 'Cara bedakan: おいしそう (様態, dari おいし語幹) vs おいしいそうだ (伝聞, dari おいしい plain).',
+  },
+
+  // ── NEGATION-EXTENT (3) ───────────────────────────────────
+
+{
+    id         : 'gn4-00044',
+    level      : 'n4',
+    pattern    : 'Vやすい',
+    reading    : 'V-yasui',
+    meaning    : 'mudah untuk ... / gampang ...',
+    cat        : 'extent-degree',
+    connection : 'V-ます語幹 + やすい',
+    desc       : '<b>〜やすい</b> menyatakan bahwa suatu tindakan mudah dilakukan atau bahwa sesuatu cenderung terjadi. Berperilaku seperti adjektif-i.',
+    nuance     : null,
+    examples   : [
+      { jp: 'この辞書は使い<b>やすい</b>です。', id: 'Kamus ini mudah digunakan.' },
+      { jp: '彼女の説明は分かり<b>やすかった</b>。', id: 'Penjelasannya mudah dipahami.' },
+    ],
+    see_also_grammar : ['gn4-00045'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00045',
+    level      : 'n4',
+    pattern    : 'Vにくい',
+    reading    : 'V-nikui',
+    meaning    : 'sulit untuk ... / susah ...',
+    cat        : 'extent-degree',
+    connection : 'V-ます語幹 + にくい',
+    desc       : '<b>〜にくい</b> menyatakan bahwa suatu tindakan sulit dilakukan.',
+    nuance     : null,
+    examples   : [
+      { jp: 'この漢字は書き<b>にくい</b>です。', id: 'Kanji ini sulit ditulis.' },
+      { jp: '狭くて住み<b>にくい</b>アパートです。', id: 'Ini apartemen yang sempit dan susah untuk ditinggali.' },
+    ],
+    see_also_grammar : ['gn4-00044'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00068',
+    level      : 'n4',
+    pattern    : '〜すぎる',
+    reading    : '〜sugiru',
+    meaning    : 'terlalu ...',
+    cat        : 'extent-degree',
+    connection : 'V-ます語幹 / Adj-i語幹 / Adj-na + すぎる',
+    desc       : '<b>〜すぎる</b> menyatakan bahwa sesuatu melebihi batas yang diinginkan atau wajar: "terlalu".',
+    nuance     : null,
+    examples   : [
+      { jp: 'このカレーは辛<b>すぎます</b>。', id: 'Kari ini terlalu pedas.' },
+      { jp: '昨日飲み<b>すぎた</b>。', id: 'Kemarin terlalu banyak minum.' },
+    ],
+    see_also_grammar : [],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : 'いい → よすぎる',
+    notes      : null,
+  },
+
+  // ── CONNECTIVES (14) ───────────────────────────────────
+
+{
+    id         : 'gn4-00037',
+    level      : 'n4',
+    pattern    : '〜ても / 〜でも (konsesi)',
+    reading    : '〜te mo / de mo',
+    meaning    : 'meskipun ... / walaupun ...',
+    cat        : 'contrast-concession',
+    connection : 'Vて + も / Adj-くて + も / N + でも',
+    desc       : '<b>〜ても</b> menyatakan konsesi: meskipun kondisi tertentu berlaku, akibat yang diharapkan tidak terjadi.',
+    nuance     : null,
+    examples   : [
+      { jp: '雨が降っ<b>ても</b>、試合は続けます。', id: 'Meskipun hujan, pertandingan dilanjutkan.' },
+      { jp: '忙し<b>くても</b>、健康に気をつけてください。', id: 'Walaupun sibuk, jaga kesehatan ya.' },
+    ],
+    see_also_grammar : [],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00042',
+    level      : 'n4',
+    pattern    : 'Nのために / Vるために',
+    reading    : 'N no tame ni / V-ru tame ni',
+    meaning    : 'untuk ... / demi ...',
+    cat        : 'purpose',
+    connection : 'N + のために / Vる + ために',
+    desc       : '<b>〜ために</b> menyatakan tujuan atau manfaat: "untuk", "demi". Digunakan dengan verba volitional (yang bisa dikontrol).',
+    nuance     : 'Berbeda dari 〜ように: ために = tujuan sadar; ように = cara agar kondisi tercapai.',
+    examples   : [
+      { jp: '日本語を学ぶ<b>ために</b>、毎日練習しています。', id: 'Untuk belajar bahasa Jepang, saya berlatih setiap hari.' },
+      { jp: '家族の<b>ために</b>、一生懸命働きます。', id: 'Saya bekerja keras demi keluarga.' },
+    ],
+    see_also_grammar : [],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00046',
+    level      : 'n4',
+    pattern    : '〜たり〜たりする',
+    reading    : '〜tari〜tari suru',
+    meaning    : 'melakukan hal-hal seperti ... dan ...',
+    cat        : 'listing-addition',
+    connection : 'Vた → Vたり + (Vたり) + する',
+    desc       : '<b>〜たり〜たりする</b> digunakan untuk menyebutkan beberapa tindakan atau keadaan sebagai contoh yang tidak exhaustive. Menunjukkan aktivitas bergantian atau berbagai contoh.',
+    nuance     : null,
+    examples   : [
+      { jp: '休みの日はDVDを見<b>たり</b>本を読ん<b>だり</b>しています。', id: 'Di hari libur saya menonton DVD atau membaca buku.' },
+      { jp: '最近、寒かっ<b>たり</b>暑かっ<b>たり</b>していますね。', id: 'Akhir-akhir ini silih berganti dingin dan panas ya.' },
+    ],
+    see_also_grammar : [],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00047',
+    level      : 'n4',
+    pattern    : '〜と思う / 〜と言う',
+    reading    : '〜to omou / to iu',
+    meaning    : 'berpikir bahwa ... / berkata bahwa ...',
+    cat        : 'quotation-thought',
+    connection : 'V/Adj plain / N + と + 思う / 言う',
+    desc       : '<b>〜と思う</b>: berpikir, berpendapat, atau menduga. <b>〜と言う</b>: berkata, menyebut. Kutipan sebelum と dalam bentuk plain.',
+    nuance     : null,
+    examples   : [
+      { jp: '明日は雨が降る<b>と思います</b>。', id: 'Saya pikir besok akan hujan.' },
+      { jp: '彼は「来られない」<b>と言いました</b>。', id: 'Dia berkata "tidak bisa datang".' },
+    ],
+    see_also_grammar : [],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00049',
+    level      : 'n4',
+    pattern    : '〜かどうか',
+    reading    : '〜ka dou ka',
+    meaning    : 'apakah ... atau tidak',
+    cat        : 'quotation-thought',
+    connection : 'V/Adj plain / N + かどうか',
+    desc       : '<b>〜かどうか</b> digunakan untuk menyematkan pertanyaan ya/tidak ke dalam kalimat, sering dengan verba seperti 知る, 分かる, 確認する.',
+    nuance     : null,
+    examples   : [
+      { jp: '彼が来る<b>かどうか</b>分かりません。', id: 'Saya tidak tahu apakah dia akan datang atau tidak.' },
+      { jp: '合格した<b>かどうか</b>まだ確認していません。', id: 'Belum mengkonfirmasi apakah lulus atau tidak.' },
+    ],
+    see_also_grammar : ['gn4-00050'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00050',
+    level      : 'n4',
+    pattern    : '疑問詞〜か (kata tanya embedded)',
+    reading    : 'gimonshi〜ka',
+    meaning    : 'di mana/kapan/siapa/apa (embedded question)',
+    cat        : 'quotation-thought',
+    connection : '疑問詞 (いつ/どこ/だれ/なに/どう/なぜ等) + V/Adj plain + か',
+    desc       : 'Kata tanya (いつ, どこ, だれ, なに, どう, なぜ, いくら, dll.) yang disematkan ke dalam kalimat. Diikuti verba seperti 知る, 分かる, 教える, 聞く.',
+    nuance     : null,
+    examples   : [
+      { jp: 'どこに行く<b>か</b>まだ決めていません。', id: 'Saya belum memutuskan mau ke mana.' },
+      { jp: '何時に始まる<b>か</b>知っていますか。', id: 'Apakah kamu tahu jam berapa mulainya?' },
+    ],
+    see_also_grammar : ['gn4-00049'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00059',
+    level      : 'n4',
+    pattern    : '〜のに (kontras/kekecewaan)',
+    reading    : '〜noni',
+    meaning    : 'padahal ... / meskipun ...',
+    cat        : 'listing-addition',
+    connection : 'V/Adj plain / N + なのに + 文',
+    desc       : '<b>〜のに</b> sebagai konjungsi menyatakan kontras yang mengandung kekecewaan, protes, atau keheranan. "Padahal sudah..., tapi masih...".',
+    nuance     : 'Berbeda dari 〜ても yang lebih netral: のに selalu mengandung emosi (kecewa/protes).',
+    examples   : [
+      { jp: 'あんなに練習した<b>のに</b>、試合に負けました。', id: 'Padahal sudah berlatih keras, tapi kalah dalam pertandingan.' },
+      { jp: '今日は休み<b>なのに</b>、仕事の電話が来た。', id: 'Padahal hari ini libur, tapi ada telepon kerja.' },
+    ],
+    see_also_grammar : [],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00060',
+    level      : 'n4',
+    pattern    : 'ところが',
+    reading    : 'tokoro ga',
+    meaning    : 'namun / akan tetapi (kontras tidak terduga)',
+    cat        : 'listing-addition',
+    connection : '文1。ところが、文2。',
+    desc       : '<b>ところが</b> digunakan di awal kalimat untuk menyatakan hasil yang berlawanan dari yang diharapkan: "namun ternyata", "tapi sebaliknya".',
+    nuance     : 'Berbeda dari でも/しかし: ところが menekankan kejutan atau ketidaksesuaian ekspektasi.',
+    examples   : [
+      { jp: '試験は簡単だと思っていた。<b>ところが</b>、とても難しかった。', id: 'Saya pikir ujiannya mudah. Tapi ternyata sangat sulit.' },
+      { jp: '急いで駅に行った。<b>ところが</b>、電車はもう出ていた。', id: 'Buru-buru pergi ke stasiun. Tapi ternyata kereta sudah berangkat.' },
+    ],
+    see_also_grammar : ['gn4-00061'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00061',
+    level      : 'n4',
+    pattern    : 'それで / だから',
+    reading    : 'sore de / dakara',
+    meaning    : 'oleh karena itu / makanya / jadi',
+    cat        : 'listing-addition',
+    connection : '文1。それで/だから、文2。',
+    desc       : '<b>それで</b>: menghubungkan sebab-akibat secara netral ("karena itu"). <b>だから</b>: lebih tegas, bisa dengan nada menekankan atau sedikit frustrasi.',
+    nuance     : null,
+    examples   : [
+      { jp: '昨日は体調が悪かった。<b>それで</b>、学校を休みました。', id: 'Kemarin kondisi badan saya tidak baik. Karena itu, tidak masuk sekolah.' },
+      { jp: '今日は試験がある。<b>だから</b>、緊張しています。', id: 'Hari ini ada ujian. Makanya saya gugup.' },
+    ],
+    see_also_grammar : ['gn4-00062'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00062',
+    level      : 'n4',
+    pattern    : 'それに / そのうえ',
+    reading    : 'sore ni / sono ue',
+    meaning    : 'selain itu / lagi pula / ditambah lagi',
+    cat        : 'listing-addition',
+    connection : '文1。それに/そのうえ、文2。',
+    desc       : '<b>それに</b> dan <b>そのうえ</b> menambahkan informasi atau alasan tambahan: "selain itu", "ditambah lagi". そのうえ sedikit lebih formal.',
+    nuance     : null,
+    examples   : [
+      { jp: 'あの店は安い。<b>それに</b>、美味しい。', id: 'Toko itu murah. Selain itu, enak juga.' },
+      { jp: '彼は頭がいい。<b>そのうえ</b>、スポーツも得意だ。', id: 'Dia pintar. Ditambah lagi, jago olahraga juga.' },
+    ],
+    see_also_grammar : ['gn4-00061'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00063',
+    level      : 'n4',
+    pattern    : '〜て/〜で (sebab/alasan)',
+    reading    : '〜te / de',
+    meaning    : 'karena ... / akibat ... (sebab-alasan via te-form)',
+    cat        : 'reason-cause',
+    connection : 'Vて / Adj-くて / N + で',
+    desc       : '<b>〜て/〜で</b> bisa menyatakan sebab-akibat: klausa pertama menjelaskan penyebab, klausa kedua adalah akibatnya. Sering dengan ekspresi perasaan.',
+    nuance     : null,
+    examples   : [
+      { jp: '風邪を引い<b>て</b>、学校を休みました。', id: 'Karena masuk angin, saya tidak masuk sekolah.' },
+      { jp: 'お金がなく<b>て</b>、買えない。', id: 'Karena tidak punya uang, tidak bisa beli.' },
+    ],
+    see_also_grammar : [],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00067',
+    level      : 'n4',
+    pattern    : '〜から作る / 〜でできている',
+    reading    : '〜kara tsukuru / de dekite iru',
+    meaning    : 'dibuat dari ... / terbuat dari ...',
+    cat        : 'quotation-thought',
+    connection : 'N (bahan) + から作る / N + でできている',
+    desc       : '<b>〜から作る</b>: bahan asli tidak tampak pada produk akhir (fermentasi, dll). <b>〜でできている</b>: bahan masih bisa diidentifikasi pada produk akhir.',
+    nuance     : 'Pembeda: ワインはぶどうから作る (anggur tidak tampak di wine); このテーブルは木でできている (kayu masih terlihat di meja).',
+    examples   : [
+      { jp: 'ワインはぶどう<b>から作られます</b>。', id: 'Wine dibuat dari anggur.' },
+      { jp: 'このカバンは革<b>でできています</b>。', id: 'Tas ini terbuat dari kulit.' },
+    ],
+    see_also_grammar : [],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00081',
+    level      : 'n4',
+    pattern    : '〜だけでなく〜も',
+    reading    : '〜dake de naku〜mo',
+    meaning    : 'bukan hanya ... tapi juga ...',
+    cat        : 'listing-addition',
+    connection : 'N/Vる + だけでなく + N/V + も',
+    desc       : '<b>〜だけでなく〜も</b> menyatakan bahwa tidak hanya satu hal, tapi hal lain juga termasuk.',
+    nuance     : null,
+    examples   : [
+      { jp: '彼は英語<b>だけでなく</b>フランス語<b>も</b>話せます。', id: 'Dia bukan hanya bisa bahasa Inggris, tapi juga Prancis.' },
+      { jp: 'この店は安い<b>だけでなく</b>、おいしい<b>も</b>です。', id: 'Toko ini bukan hanya murah, tapi juga enak.' },
+    ],
+    see_also_grammar : [],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00088',
+    level      : 'n4',
+    pattern    : '〜ために (sebab — bukan tujuan)',
+    reading    : '〜tame ni (sebab)',
+    meaning    : 'karena ... / disebabkan oleh ...',
+    cat        : 'reason-cause',
+    connection : 'V-た / N + の + ために',
+    desc       : '<b>〜ために</b> juga bisa menyatakan sebab, bukan hanya tujuan. Ketika digunakan dengan V lampau atau keadaan, berarti "karena" atau "akibat".',
+    nuance     : 'Sebab: diikuti kejadian negatif atau netral (akibat). Tujuan: diikuti tindakan yang disengaja.',
+    examples   : [
+      { jp: '台風の<b>ために</b>、電車が止まりました。', id: 'Karena topan, kereta berhenti.' },
+      { jp: '病気の<b>ために</b>、試験を受けられませんでした。', id: 'Karena sakit, tidak bisa mengikuti ujian.' },
+    ],
+    see_also_grammar : ['gn4-00042'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+  // ── NOUNS-PREDICATES (3) ───────────────────────────────────
+
+{
+    id         : 'gn4-00051',
+    level      : 'n4',
+    pattern    : '〜の (nominalisasi)',
+    reading    : '〜no',
+    meaning    : 'hal ... / tindakan ... (nominalisasi)',
+    cat        : 'nominalization',
+    connection : 'V/Adj plain + の + は/が/を',
+    desc       : '<b>〜の</b> mengubah verba atau frasa menjadi nomina. Lebih informal dari こと. Sering digunakan untuk kegiatan konkret yang dapat dirasakan.',
+    nuance     : 'の lebih cocok untuk pengalaman langsung (見る, 聞く, 感じる); こと lebih abstrak/umum.',
+    examples   : [
+      { jp: '歌う<b>の</b>が好きです。', id: 'Saya suka bernyanyi.' },
+      { jp: '彼が走っている<b>の</b>を見ました。', id: 'Saya melihat dia sedang berlari.' },
+    ],
+    see_also_grammar : ['gn4-00052'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00052',
+    level      : 'n4',
+    pattern    : '〜こと (nominalisasi)',
+    reading    : '〜koto',
+    meaning    : 'hal ... / fakta bahwa ... (nominalisasi)',
+    cat        : 'nominalization',
+    connection : 'V/Adj plain + こと + は/が/を/etc.',
+    desc       : '<b>〜こと</b> mengubah verba atau frasa menjadi nomina abstrak. Digunakan dalam ekspresi formal dan aturan.',
+    nuance     : null,
+    examples   : [
+      { jp: '毎日練習する<b>こと</b>が大切です。', id: 'Berlatih setiap hari adalah hal yang penting.' },
+      { jp: '彼女が結婚する<b>こと</b>を知りました。', id: 'Saya tahu bahwa dia akan menikah.' },
+    ],
+    see_also_grammar : ['gn4-00051'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn4-00070',
+    level      : 'n4',
+    pattern    : '形容詞 + さ',
+    reading    : 'keiyoushi + sa',
+    meaning    : 'tingkat ... / derajat ... (nominalisasi adjektif)',
+    cat        : 'nominalization',
+    connection : 'Adj-i語幹 + さ / Adj-na + さ',
+    desc       : '<b>〜さ</b> mengubah adjektif menjadi nomina yang menyatakan tingkat atau derajat kualitas tersebut.',
+    nuance     : null,
+    examples   : [
+      { jp: 'この山の高<b>さ</b>は3000メートルです。', id: 'Ketinggian gunung ini adalah 3000 meter.' },
+      { jp: '彼の優し<b>さ</b>に感動しました。', id: 'Saya terkesan dengan kebaikannya.' },
+    ],
+    see_also_grammar : [],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  }
 
 ];

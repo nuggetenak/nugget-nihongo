@@ -1,107 +1,15 @@
-// grammar-n5.js — Grammar JLPT N5 Global (Tier 1)
-// window.grammarN5
-// Dibuat oleh: Agent 4 — Batter 🌾
-// Task: RESTRUKTURISASI-B-BATTER-N5 (Plan B)
-// Versi schema: Arsitektur Dua Tier (Plan A, v14.8.1)
-// Catatan: cat values menggunakan label inferensi — verifikasi vs GRM-6 final list diperlukan.
-//          Lihat PATCH-NOTES.md untuk detail.
+// ══════════════════════════════════════════════════════════════
+//  grammar-n5.js — Nugget Nihongo · JLPT N5 Grammar
+//  AUTO-GENERATED — DO NOT EDIT DIRECTLY
+//  Edit: public/data/grammar/n5/*.js  then run: node scripts/merge-grammar.js
+//  Entries: 94 | Generated: 2026-04-23
+// ══════════════════════════════════════════════════════════════
 
 window.grammarN5 = [
 
-  // ─────────────────────────────────────────────────────────────────────────
-  // KOPULA (gn5-00001 – gn5-00004)
-  // ─────────────────────────────────────────────────────────────────────────
+  // ── TENSE-ASPECT (33) ───────────────────────────────────
 
-  {
-    id         : 'gn5-00001',
-    level      : 'n5',
-    pattern    : '〜は〜です',
-    reading    : '〜wa〜desu',
-    meaning    : 'adalah (kopula afirmatif)',
-    cat        : 'copula',
-    connection : 'N + は + N/Adj + です',
-    desc       : '<b>〜は〜です</b> menyatakan bahwa suatu topik adalah sesuatu. Pola dasar kalimat nominal dalam bahasa Jepang.',
-    nuance     : null,
-    examples   : [
-      { jp: 'わたしは<b>がくせい</b>です。', id: 'Saya adalah pelajar.' },
-      { jp: 'これは<b>ほん</b>です。', id: 'Ini adalah buku.' },
-      { jp: 'やまださんは<b>にほんじん</b>です。', id: 'Yamada-san adalah orang Jepang.' },
-    ],
-    see_also_grammar : ['gn5-00002', 'gn5-00003'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn5-00002',
-    level      : 'n5',
-    pattern    : '〜は〜じゃありません',
-    reading    : '〜wa〜ja arimasen',
-    meaning    : 'bukan (kopula negatif)',
-    cat        : 'copula',
-    connection : 'N + は + N/Adj + じゃありません / ではありません',
-    desc       : '<b>じゃありません</b> adalah bentuk negatif dari です, digunakan untuk menyatakan bahwa topik bukan sesuatu. Bentuk formal: <b>ではありません</b>.',
-    nuance     : 'じゃありません lebih kasual dari ではありません, tapi keduanya polite.',
-    examples   : [
-      { jp: 'これは<b>ほん</b>じゃありません。', id: 'Ini bukan buku.' },
-      { jp: 'わたしは<b>せんせい</b>ではありません。', id: 'Saya bukan guru.' },
-    ],
-    see_also_grammar : ['gn5-00001', 'gn5-00004'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn5-00003',
-    level      : 'n5',
-    pattern    : '〜は〜でした',
-    reading    : '〜wa〜deshita',
-    meaning    : 'adalah (kopula lampau afirmatif)',
-    cat        : 'copula',
-    connection : 'N + は + N/Adj + でした',
-    desc       : '<b>でした</b> adalah bentuk lampau dari です, menyatakan bahwa sesuatu tadinya adalah sesuatu.',
-    nuance     : null,
-    examples   : [
-      { jp: 'きのうは<b>やすみ</b>でした。', id: 'Kemarin adalah hari libur.' },
-      { jp: 'むかし、ここは<b>はたけ</b>でした。', id: 'Dulu, di sini adalah ladang.' },
-    ],
-    see_also_grammar : ['gn5-00001', 'gn5-00004'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn5-00004',
-    level      : 'n5',
-    pattern    : '〜は〜じゃありませんでした',
-    reading    : '〜wa〜ja arimasen deshita',
-    meaning    : 'bukan (kopula lampau negatif)',
-    cat        : 'copula',
-    connection : 'N + は + N/Adj + じゃありませんでした / ではありませんでした',
-    desc       : 'Bentuk lampau negatif dari です, menyatakan bahwa sesuatu tadinya bukan sesuatu.',
-    nuance     : null,
-    examples   : [
-      { jp: 'あの人は<b>がくせい</b>じゃありませんでした。', id: 'Orang itu bukan pelajar (dulu).' },
-      { jp: 'むかし、ここは<b>こうえん</b>ではありませんでした。', id: 'Dulu, di sini bukan taman.' },
-    ],
-    see_also_grammar : ['gn5-00002', 'gn5-00003'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  // ─────────────────────────────────────────────────────────────────────────
-  // PARTIKEL (gn5-00005 – gn5-00022)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  {
+{
     id         : 'gn5-00005',
     level      : 'n5',
     pattern    : 'は (topik)',
@@ -122,7 +30,7 @@ window.grammarN5 = [
     notes      : 'Dibaca "wa" meskipun ditulis dengan hiragana は.',
   },
 
-  {
+{
     id         : 'gn5-00006',
     level      : 'n5',
     pattern    : 'が (subjek)',
@@ -144,7 +52,7 @@ window.grammarN5 = [
     notes      : null,
   },
 
-  {
+{
     id         : 'gn5-00007',
     level      : 'n5',
     pattern    : 'を (objek)',
@@ -166,7 +74,7 @@ window.grammarN5 = [
     notes      : 'Dibaca "o" meskipun ditulis dengan hiragana を.',
   },
 
-  {
+{
     id         : 'gn5-00008',
     level      : 'n5',
     pattern    : 'に (arah/tujuan)',
@@ -187,7 +95,7 @@ window.grammarN5 = [
     notes      : null,
   },
 
-  {
+{
     id         : 'gn5-00009',
     level      : 'n5',
     pattern    : 'に (keberadaan)',
@@ -208,7 +116,7 @@ window.grammarN5 = [
     notes      : null,
   },
 
-  {
+{
     id         : 'gn5-00010',
     level      : 'n5',
     pattern    : 'に (waktu)',
@@ -229,7 +137,7 @@ window.grammarN5 = [
     notes      : 'Kata seperti きょう、きのう、あした、まいにち tidak memakai に.',
   },
 
-  {
+{
     id         : 'gn5-00011',
     level      : 'n5',
     pattern    : 'で (lokasi tindakan)',
@@ -250,7 +158,7 @@ window.grammarN5 = [
     notes      : null,
   },
 
-  {
+{
     id         : 'gn5-00012',
     level      : 'n5',
     pattern    : 'で (cara/alat)',
@@ -272,7 +180,7 @@ window.grammarN5 = [
     notes      : null,
   },
 
-  {
+{
     id         : 'gn5-00013',
     level      : 'n5',
     pattern    : 'へ (arah)',
@@ -293,7 +201,7 @@ window.grammarN5 = [
     notes      : null,
   },
 
-  {
+{
     id         : 'gn5-00014',
     level      : 'n5',
     pattern    : 'と (dan)',
@@ -314,7 +222,7 @@ window.grammarN5 = [
     notes      : null,
   },
 
-  {
+{
     id         : 'gn5-00015',
     level      : 'n5',
     pattern    : 'と (bersama)',
@@ -335,7 +243,7 @@ window.grammarN5 = [
     notes      : null,
   },
 
-  {
+{
     id         : 'gn5-00016',
     level      : 'n5',
     pattern    : 'も (juga)',
@@ -356,7 +264,7 @@ window.grammarN5 = [
     notes      : null,
   },
 
-  {
+{
     id         : 'gn5-00017',
     level      : 'n5',
     pattern    : 'の (posesif/modifikasi)',
@@ -378,7 +286,7 @@ window.grammarN5 = [
     notes      : null,
   },
 
-  {
+{
     id         : 'gn5-00018',
     level      : 'n5',
     pattern    : 'か (tanya)',
@@ -399,7 +307,7 @@ window.grammarN5 = [
     notes      : null,
   },
 
-  {
+{
     id         : 'gn5-00019',
     level      : 'n5',
     pattern    : 'ね / よ / よね (kalimat akhir)',
@@ -421,7 +329,7 @@ window.grammarN5 = [
     notes      : null,
   },
 
-  {
+{
     id         : 'gn5-00020',
     level      : 'n5',
     pattern    : 'から / まで',
@@ -442,7 +350,7 @@ window.grammarN5 = [
     notes      : null,
   },
 
-  {
+{
     id         : 'gn5-00021',
     level      : 'n5',
     pattern    : 'より (perbandingan)',
@@ -463,7 +371,7 @@ window.grammarN5 = [
     notes      : null,
   },
 
-  {
+{
     id         : 'gn5-00022',
     level      : 'n5',
     pattern    : 'だけ (hanya)',
@@ -484,7 +392,7 @@ window.grammarN5 = [
     notes      : null,
   },
 
-  {
+{
     id         : 'gn5-00023',
     level      : 'n5',
     pattern    : 'しか〜ない',
@@ -505,99 +413,7 @@ window.grammarN5 = [
     notes      : null,
   },
 
-  // ─────────────────────────────────────────────────────────────────────────
-  // ADJEKTIF (gn5-00024 – gn5-00027)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  {
-    id         : 'gn5-00024',
-    level      : 'n5',
-    pattern    : 'い-adj + くない',
-    reading    : 'i-adj + kunai',
-    meaning    : 'adjektif-i negatif (tidak ...)',
-    cat        : 'predicate-adjective',
-    connection : 'Adj-い → Adj-<b>くない</b> (plain neg) / Adj-<b>くありません</b> (polite neg)',
-    desc       : 'Bentuk negatif adjektif-i: ganti akhiran い dengan <b>くない</b> (kasual) atau <b>くありません</b> (sopan).',
-    nuance     : null,
-    examples   : [
-      { jp: 'このりょうりは<b>おいしくない</b>です。', id: 'Masakan ini tidak enak.' },
-      { jp: 'きょうはあまり<b>さむくありません</b>。', id: 'Hari ini tidak terlalu dingin.' },
-    ],
-    see_also_grammar : ['gn5-00025'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : 'いい → よくない (bukan いくない)',
-    notes      : null,
-  },
-
-  {
-    id         : 'gn5-00025',
-    level      : 'n5',
-    pattern    : 'い-adj + かった',
-    reading    : 'i-adj + katta',
-    meaning    : 'adjektif-i lampau (tadinya ...)',
-    cat        : 'predicate-adjective',
-    connection : 'Adj-い → Adj-<b>かった</b> (plain past) / Adj-<b>かったです</b> (polite past)',
-    desc       : 'Bentuk lampau adjektif-i: ganti akhiran い dengan <b>かった</b>. Negatif lampau: <b>くなかった</b>.',
-    nuance     : null,
-    examples   : [
-      { jp: 'きのうはとても<b>さむかった</b>です。', id: 'Kemarin sangat dingin.' },
-      { jp: 'そのえいがは<b>たのしかった</b>！', id: 'Film itu menyenangkan!' },
-    ],
-    see_also_grammar : ['gn5-00024'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : 'いい → よかった',
-    notes      : null,
-  },
-
-  {
-    id         : 'gn5-00026',
-    level      : 'n5',
-    pattern    : 'な-adj + です / な-adj + な + N',
-    reading    : 'na-adj + desu / na-adj + na + N',
-    meaning    : 'adjektif-na (predikat & modifier)',
-    cat        : 'predicate-adjective',
-    connection : 'Adj-な + です (predikat) / Adj-な + な + N (modifikasi)',
-    desc       : 'Adjektif-na digunakan sebagai predikat langsung dengan です, atau sebagai modifier nomina dengan menambahkan な.',
-    nuance     : null,
-    examples   : [
-      { jp: 'ここはとても<b>しずか</b>です。', id: 'Di sini sangat tenang.' },
-      { jp: '<b>きれいな</b>はなですね。', id: 'Bunga yang cantik, ya.' },
-    ],
-    see_also_grammar : ['gn5-00001'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  // ─────────────────────────────────────────────────────────────────────────
-  // BENTUK VERBA DASAR (gn5-00027 – gn5-00029)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  {
-    id         : 'gn5-00027',
-    level      : 'n5',
-    pattern    : '〜ない (negatif plain)',
-    reading    : '〜nai',
-    meaning    : 'negatif bentuk biasa',
-    cat        : 'negative',
-    connection : 'V → Vない',
-    desc       : 'Bentuk negatif verba dalam gaya biasa (bukan sopan). Digunakan dalam percakapan kasual dan sebagai dasar banyak pola grammar lain.',
-    nuance     : null,
-    examples   : [
-      { jp: 'あまりテレビを<b>みない</b>。', id: 'Tidak terlalu sering nonton TV.' },
-      { jp: 'きょうは<b>いかない</b>つもりです。', id: 'Berencana tidak pergi hari ini.' },
-    ],
-    see_also_grammar : ['gn5-00028', 'gn5-00030', 'gn5-00040'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : 'する → しない, くる → こない',
-    notes      : null,
-  },
-
-  {
+{
     id         : 'gn5-00028',
     level      : 'n5',
     pattern    : '〜た (lampau plain)',
@@ -618,11 +434,7 @@ window.grammarN5 = [
     notes      : null,
   },
 
-  // ─────────────────────────────────────────────────────────────────────────
-  // POLA BENTUK-て (gn5-00029 – gn5-00042)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  {
+{
     id         : 'gn5-00029',
     level      : 'n5',
     pattern    : '〜ている',
@@ -644,70 +456,7 @@ window.grammarN5 = [
     notes      : 'Bentuk kasual: 〜てる (kontraksi dari 〜ている).',
   },
 
-  {
-    id         : 'gn5-00030',
-    level      : 'n5',
-    pattern    : '〜てください',
-    reading    : '〜te kudasai',
-    meaning    : 'tolong ... / silakan ...',
-    cat        : 'sentence-final-request',
-    connection : 'Vて + ください',
-    desc       : '<b>〜てください</b> digunakan untuk meminta atau menginstruksikan seseorang melakukan sesuatu secara sopan.',
-    nuance     : null,
-    examples   : [
-      { jp: 'ここに名前を<b>かいてください</b>。', id: 'Tolong tulis nama di sini.' },
-      { jp: 'すこし<b>まってください</b>。', id: 'Tolong tunggu sebentar.' },
-    ],
-    see_also_grammar : ['gn5-00039'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn5-00031',
-    level      : 'n5',
-    pattern    : '〜てもいい',
-    reading    : '〜te mo ii',
-    meaning    : 'boleh ... / tidak apa-apa',
-    cat        : 'permission-prohibition',
-    connection : 'Vて + もいいです / もいいですか',
-    desc       : '<b>〜てもいい</b> menyatakan izin melakukan sesuatu. Bentuk tanya <b>〜てもいいですか</b> digunakan untuk meminta izin.',
-    nuance     : null,
-    examples   : [
-      { jp: 'ここに<b>すわってもいいですか</b>。', id: 'Boleh duduk di sini?' },
-      { jp: 'あしたきて<b>もいいですよ</b>。', id: 'Boleh datang besok.' },
-    ],
-    see_also_grammar : ['gn5-00032'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn5-00032',
-    level      : 'n5',
-    pattern    : '〜てはいけない',
-    reading    : '〜te wa ikenai',
-    meaning    : 'tidak boleh ... / dilarang ...',
-    cat        : 'permission-prohibition',
-    connection : 'Vて + はいけません / はいけない',
-    desc       : '<b>〜てはいけない</b> menyatakan larangan: tidak boleh melakukan sesuatu. Bentuk sopan: <b>〜てはいけません</b>.',
-    nuance     : null,
-    examples   : [
-      { jp: 'ここでタバコをすっ<b>てはいけません</b>。', id: 'Dilarang merokok di sini.' },
-      { jp: 'うそをつい<b>てはいけない</b>よ。', id: 'Tidak boleh berbohong.' },
-    ],
-    see_also_grammar : ['gn5-00031', 'gn5-00042'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
+{
     id         : 'gn5-00033',
     level      : 'n5',
     pattern    : '〜てから',
@@ -728,7 +477,7 @@ window.grammarN5 = [
     notes      : null,
   },
 
-  {
+{
     id         : 'gn5-00034',
     level      : 'n5',
     pattern    : '〜ながら',
@@ -749,28 +498,7 @@ window.grammarN5 = [
     notes      : null,
   },
 
-  {
-    id         : 'gn5-00035',
-    level      : 'n5',
-    pattern    : '〜ないで',
-    reading    : '〜nai de',
-    meaning    : 'tanpa melakukan ... / jangan ...',
-    cat        : 'negative',
-    connection : 'Vない + で',
-    desc       : '<b>〜ないで</b> digunakan untuk: (1) melakukan sesuatu tanpa melakukan hal lain, atau (2) permintaan untuk tidak melakukan sesuatu (lebih lembut dari 〜てはいけない).',
-    nuance     : null,
-    examples   : [
-      { jp: 'なにも<b>たべないで</b>ねてしまった。', id: 'Tertidur tanpa makan apapun.' },
-      { jp: 'ここでおよが<b>ないで</b>ください。', id: 'Tolong jangan berenang di sini.' },
-    ],
-    see_also_grammar : ['gn5-00030', 'gn5-00032'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
+{
     id         : 'gn5-00036',
     level      : 'n5',
     pattern    : '〜てみる',
@@ -791,317 +519,7 @@ window.grammarN5 = [
     notes      : null,
   },
 
-  {
-    id         : 'gn5-00037',
-    level      : 'n5',
-    pattern    : '〜てあげる',
-    reading    : '〜te ageru',
-    meaning    : 'melakukan untuk (orang lain) — perspektif pemberi',
-    cat        : 'sentence-final-request',
-    connection : 'Vて + あげる',
-    desc       : '<b>〜てあげる</b> menyatakan melakukan sesuatu untuk keuntungan orang lain, dari perspektif si pelaku/pemberi.',
-    nuance     : 'Gunakan hati-hati agar tidak terdengar merendahkan penerima.',
-    examples   : [
-      { jp: 'ともだちに本をかし<b>てあげました</b>。', id: 'Meminjamkan buku kepada teman.' },
-      { jp: 'こどもにえを<b>かいてあげた</b>。', id: 'Menggambar gambar untuk anak itu.' },
-    ],
-    see_also_grammar : ['gn5-00038', 'gn5-00039'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn5-00038',
-    level      : 'n5',
-    pattern    : '〜てもらう',
-    reading    : '〜te morau',
-    meaning    : 'menerima layanan / meminta seseorang melakukan ...',
-    cat        : 'sentence-final-request',
-    connection : 'N (pelaku) + に + Vて + もらう',
-    desc       : '<b>〜てもらう</b> menyatakan bahwa subjek menerima keuntungan dari tindakan orang lain. Sering digunakan untuk mengungkapkan permohonan.',
-    nuance     : null,
-    examples   : [
-      { jp: 'せんせいに<b>おしえてもらいました</b>。', id: 'Diajari oleh guru (dan saya merasa beruntung).' },
-      { jp: 'ともだちにつれ<b>てもらった</b>。', id: 'Dibawa pergi oleh teman.' },
-    ],
-    see_also_grammar : ['gn5-00037', 'gn5-00039'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn5-00039',
-    level      : 'n5',
-    pattern    : '〜てくれる',
-    reading    : '〜te kureru',
-    meaning    : '(seseorang) melakukan untuk saya/kelompok kami',
-    cat        : 'sentence-final-request',
-    connection : 'N (pelaku) + が/は + Vて + くれる',
-    desc       : '<b>〜てくれる</b> menyatakan orang lain melakukan sesuatu untuk keuntungan si pembicara atau kelompoknya.',
-    nuance     : null,
-    examples   : [
-      { jp: 'ははがべんとうをつくっ<b>てくれた</b>。', id: 'Ibu membuatkan bento untuk saya.' },
-      { jp: 'おしえ<b>てくれて</b>ありがとう。', id: 'Terima kasih sudah mengajari.' },
-    ],
-    see_also_grammar : ['gn5-00037', 'gn5-00038'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  // ─────────────────────────────────────────────────────────────────────────
-  // KEINGINAN / VOLITIF (gn5-00040 – gn5-00044)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  {
-    id         : 'gn5-00040',
-    level      : 'n5',
-    pattern    : '〜たい',
-    reading    : '〜tai',
-    meaning    : 'ingin melakukan ...',
-    cat        : 'desire-want',
-    connection : 'V-ます語幹 + たい',
-    desc       : '<b>〜たい</b> menyatakan keinginan si pembicara untuk melakukan sesuatu. Berperilaku seperti adjektif-i.',
-    nuance     : 'Untuk menyatakan keinginan orang ketiga, gunakan 〜たがる.',
-    examples   : [
-      { jp: 'にほんへ<b>いきたい</b>です。', id: 'Ingin pergi ke Jepang.' },
-      { jp: 'なにを<b>たべたい</b>ですか。', id: 'Mau makan apa?' },
-    ],
-    see_also_grammar : ['gn5-00041'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn5-00041',
-    level      : 'n5',
-    pattern    : '〜たがる',
-    reading    : '〜tagaru',
-    meaning    : 'sepertinya ingin melakukan ... (orang ketiga)',
-    cat        : 'desire-want',
-    connection : 'V-ます語幹 + たがる',
-    desc       : '<b>〜たがる</b> digunakan untuk menyatakan keinginan orang ketiga, berdasarkan pengamatan perilaku atau sikapnya.',
-    nuance     : null,
-    examples   : [
-      { jp: 'こどもはおかし<b>をたべたがっています</b>。', id: 'Anak itu sepertinya ingin makan kue.' },
-      { jp: 'かれはもっとねむり<b>たがっている</b>。', id: 'Sepertinya dia ingin tidur lebih lama.' },
-    ],
-    see_also_grammar : ['gn5-00040'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn5-00042',
-    level      : 'n5',
-    pattern    : '〜ましょう',
-    reading    : '〜mashou',
-    meaning    : 'ayo ... / mari ...',
-    cat        : 'volitional-intention',
-    connection : 'V-ます語幹 + ましょう',
-    desc       : '<b>〜ましょう</b> mengajak pendengar melakukan sesuatu bersama ("ayo kita..."). Juga bisa menyatakan tekad pembicara sendiri.',
-    nuance     : null,
-    examples   : [
-      { jp: 'いっしょに<b>いきましょう</b>！', id: 'Ayo pergi bersama!' },
-      { jp: 'もっとべんきょう<b>しましょう</b>。', id: 'Ayo belajar lebih giat.' },
-    ],
-    see_also_grammar : ['gn5-00043', 'gn5-00044'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn5-00043',
-    level      : 'n5',
-    pattern    : '〜ませんか',
-    reading    : '〜masen ka',
-    meaning    : 'maukah kamu ...? / bagaimana kalau kita ...?',
-    cat        : 'volitional-intention',
-    connection : 'V-ます語幹 + ませんか',
-    desc       : '<b>〜ませんか</b> mengajak pendengar secara sopan, sambil memberikan pilihan untuk menolak. Lebih lembut dari 〜ましょう.',
-    nuance     : null,
-    examples   : [
-      { jp: 'いっしょにひるごはんを<b>たべませんか</b>。', id: 'Mau makan siang bersama?' },
-      { jp: 'えいがを<b>みませんか</b>。', id: 'Bagaimana kalau menonton film?' },
-    ],
-    see_also_grammar : ['gn5-00042', 'gn5-00044'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn5-00044',
-    level      : 'n5',
-    pattern    : '〜ましょうか',
-    reading    : '〜mashou ka',
-    meaning    : 'maukah saya ...? / apakah kita ...?',
-    cat        : 'volitional-intention',
-    connection : 'V-ます語幹 + ましょうか',
-    desc       : '<b>〜ましょうか</b> menawarkan bantuan atau mengusulkan tindakan bersama dalam bentuk pertanyaan yang sopan.',
-    nuance     : null,
-    examples   : [
-      { jp: 'にもつをもち<b>ましょうか</b>。', id: 'Mau saya bawakan barangnya?' },
-      { jp: 'どこへ<b>いきましょうか</b>。', id: 'Kita mau ke mana?' },
-    ],
-    see_also_grammar : ['gn5-00042', 'gn5-00043'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  // ─────────────────────────────────────────────────────────────────────────
-  // KEWAJIBAN / IZIN (gn5-00045 – gn5-00046)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  {
-    id         : 'gn5-00045',
-    level      : 'n5',
-    pattern    : '〜なければならない',
-    reading    : '〜nakereba naranai',
-    meaning    : 'harus ... / wajib ...',
-    cat        : 'obligation-necessity',
-    connection : 'Vない → Vなければ + ならない/なりません',
-    desc       : '<b>〜なければならない</b> menyatakan kewajiban atau keharusan. Variasi kasual: 〜なきゃいけない / 〜なきゃ.',
-    nuance     : null,
-    examples   : [
-      { jp: 'まいにちべんきょうし<b>なければなりません</b>。', id: 'Harus belajar setiap hari.' },
-      { jp: 'もうかえら<b>なきゃ</b>。', id: 'Harus pulang sekarang.' },
-    ],
-    see_also_grammar : ['gn5-00046'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : 'Variasi: 〜なくてはならない, 〜なくてはいけない. Kasual: 〜なきゃ.',
-  },
-
-  {
-    id         : 'gn5-00046',
-    level      : 'n5',
-    pattern    : '〜なくてもいい',
-    reading    : '〜nakute mo ii',
-    meaning    : 'tidak perlu ... / boleh tidak ...',
-    cat        : 'permission-prohibition',
-    connection : 'Vなく + てもいい',
-    desc       : '<b>〜なくてもいい</b> menyatakan bahwa tidak ada kewajiban untuk melakukan sesuatu.',
-    nuance     : null,
-    examples   : [
-      { jp: 'あしたはこ<b>なくてもいい</b>ですよ。', id: 'Besok boleh tidak datang.' },
-      { jp: 'ぜんぶたべ<b>なくてもいいです</b>。', id: 'Tidak perlu dimakan semua.' },
-    ],
-    see_also_grammar : ['gn5-00031', 'gn5-00045'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  // ─────────────────────────────────────────────────────────────────────────
-  // KONDISIONAL (gn5-00047 – gn5-00049)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  {
-    id         : 'gn5-00047',
-    level      : 'n5',
-    pattern    : '〜たら',
-    reading    : '〜tara',
-    meaning    : 'kalau / jika / setelah (kondisional)',
-    cat        : 'conditional-tara',
-    connection : 'Vた → Vたら / Adjかった → Adjかったら / N + だったら',
-    desc       : '<b>〜たら</b> menyatakan kondisi atau urutan: "kalau...", "jika...", "setelah...". Bisa untuk kondisi hipotetis maupun nyata.',
-    nuance     : 'Lebih fleksibel dari 〜と dan 〜ば. Paling sering digunakan di percakapan.',
-    examples   : [
-      { jp: 'うちに<b>かえったら</b>、でんわします。', id: 'Kalau sudah sampai rumah, saya akan menelepon.' },
-      { jp: 'やすかっ<b>たら</b>かいます。', id: 'Kalau murah, saya beli.' },
-    ],
-    see_also_grammar : ['gn5-00048', 'gn5-00049'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn5-00048',
-    level      : 'n5',
-    pattern    : '〜と (kondisional)',
-    reading    : '〜to',
-    meaning    : 'kalau / jika (kondisi alami/otomatis)',
-    cat        : 'conditional-tara',
-    connection : 'V plain / Adj plain + と',
-    desc       : '<b>〜と</b> menyatakan kondisi yang secara otomatis atau selalu menghasilkan akibat tertentu. Digunakan untuk fakta alami, petunjuk arah, atau kondisi yang pasti.',
-    nuance     : 'Tidak digunakan di kalimat yang melibatkan kemauan/permintaan di klausa hasil.',
-    examples   : [
-      { jp: 'みぎに<b>まがると</b>、こうえんがあります。', id: 'Kalau belok kanan, ada taman.' },
-      { jp: 'はるになる<b>と</b>、さくらがさきます。', id: 'Kalau musim semi tiba, bunga sakura mekar.' },
-    ],
-    see_also_grammar : ['gn5-00047', 'gn5-00049'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn5-00049',
-    level      : 'n5',
-    pattern    : '〜ば',
-    reading    : '〜ba',
-    meaning    : 'kalau / jika (kondisional hipotetis)',
-    cat        : 'conditional-tara',
-    connection : 'V → V-ba form (e.g. いく → いけば) / Adj → Adj-ければ',
-    desc       : '<b>〜ば</b> menyatakan kondisi hipotetis: "kalau...", "seandainya...". Sering digunakan dengan nuansa nasihat atau kondisi yang harus dipenuhi.',
-    nuance     : null,
-    examples   : [
-      { jp: 'はやくおき<b>れば</b>、おくれません。', id: 'Kalau bangun cepat, tidak akan terlambat.' },
-      { jp: 'やすけ<b>れば</b>かいたいです。', id: 'Kalau murah, ingin beli.' },
-    ],
-    see_also_grammar : ['gn5-00047', 'gn5-00048'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : 'いい → よければ',
-    notes      : null,
-  },
-
-  // ─────────────────────────────────────────────────────────────────────────
-  // KEMAMPUAN / PENGALAMAN / KEPUTUSAN (gn5-00050 – gn5-00053)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  {
-    id         : 'gn5-00050',
-    level      : 'n5',
-    pattern    : '〜ことができる',
-    reading    : '〜koto ga dekiru',
-    meaning    : 'bisa / mampu melakukan ...',
-    cat        : 'potential',
-    connection : 'Vる + ことができる',
-    desc       : '<b>〜ことができる</b> menyatakan kemampuan: bisa atau mampu melakukan sesuatu. Setara dengan potential form (〜られる/〜える) tapi lebih formal.',
-    nuance     : null,
-    examples   : [
-      { jp: 'かれはえいごをはなす<b>ことができます</b>。', id: 'Dia bisa berbicara bahasa Inggris.' },
-      { jp: 'にほんごをよむ<b>ことができますか</b>。', id: 'Bisa membaca bahasa Jepang?' },
-    ],
-    see_also_grammar : ['gn5-00051'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
+{
     id         : 'gn5-00051',
     level      : 'n5',
     pattern    : '〜ことがある',
@@ -1122,53 +540,7 @@ window.grammarN5 = [
     notes      : null,
   },
 
-  {
-    id         : 'gn5-00052',
-    level      : 'n5',
-    pattern    : '〜ことにする',
-    reading    : '〜koto ni suru',
-    meaning    : 'memutuskan untuk ...',
-    cat        : 'volitional-intention',
-    connection : 'Vる / Vない + ことにする',
-    desc       : '<b>〜ことにする</b> menyatakan keputusan yang dibuat oleh si pembicara atas kehendak sendiri.',
-    nuance     : null,
-    examples   : [
-      { jp: 'まいにちうんどうする<b>ことにしました</b>。', id: 'Memutuskan untuk berolahraga setiap hari.' },
-      { jp: 'おさけをのまない<b>ことにする</b>。', id: 'Memutuskan untuk tidak minum alkohol.' },
-    ],
-    see_also_grammar : ['gn5-00053'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn5-00053',
-    level      : 'n5',
-    pattern    : '〜ことになる',
-    reading    : '〜koto ni naru',
-    meaning    : 'sudah diputuskan / ternyata menjadi ...',
-    cat        : 'volitional-intention',
-    connection : 'Vる / Vない + ことになる',
-    desc       : '<b>〜ことになる</b> menyatakan suatu keputusan atau hasil yang bukan berasal dari kemauan sendiri, melainkan dari keadaan luar atau orang lain.',
-    nuance     : 'Kontras dengan ことにする: にする = keputusan sendiri, になる = terjadi karena faktor luar.',
-    examples   : [
-      { jp: 'らいねんとうきょうへいく<b>ことになりました</b>。', id: 'Sudah diputuskan (saya) akan ke Tokyo tahun depan.' },
-      { jp: 'かいぎがへやAでひらかれる<b>ことになった</b>。', id: 'Rapat akan diadakan di ruangan A.' },
-    ],
-    see_also_grammar : ['gn5-00052'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  // ─────────────────────────────────────────────────────────────────────────
-  // WAKTU / TEMPORAL (gn5-00054 – gn5-00056)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  {
+{
     id         : 'gn5-00054',
     level      : 'n5',
     pattern    : '〜前に',
@@ -1189,7 +561,7 @@ window.grammarN5 = [
     notes      : null,
   },
 
-  {
+{
     id         : 'gn5-00055',
     level      : 'n5',
     pattern    : '〜後で',
@@ -1210,7 +582,7 @@ window.grammarN5 = [
     notes      : null,
   },
 
-  {
+{
     id         : 'gn5-00056',
     level      : 'n5',
     pattern    : '〜とき',
@@ -1231,145 +603,7 @@ window.grammarN5 = [
     notes      : null,
   },
 
-  // ─────────────────────────────────────────────────────────────────────────
-  // PERBANDINGAN (gn5-00057 – gn5-00059)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  {
-    id         : 'gn5-00057',
-    level      : 'n5',
-    pattern    : 'AはBより〜',
-    reading    : 'A wa B yori〜',
-    meaning    : 'A lebih ... daripada B',
-    cat        : 'comparison',
-    connection : 'A + は + B + より + Adj/Adv',
-    desc       : 'Pola perbandingan dasar: A lebih [adjektif] daripada B. <b>より</b> menandai benda pembanding.',
-    nuance     : null,
-    examples   : [
-      { jp: 'でんしゃはバス<b>より</b>はやいです。', id: 'Kereta lebih cepat dari bus.' },
-      { jp: 'このかばんはあのかばん<b>より</b>やすいです。', id: 'Tas ini lebih murah dari tas itu.' },
-    ],
-    see_also_grammar : ['gn5-00058', 'gn5-00059'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn5-00058',
-    level      : 'n5',
-    pattern    : '〜の方が〜より',
-    reading    : '〜no hou ga〜yori',
-    meaning    : '... lebih ... dibandingkan ...',
-    cat        : 'comparison',
-    connection : 'A + の方が + B + より + Adj',
-    desc       : '<b>〜の方が</b> menegaskan pilihan yang lebih disukai atau sifat yang lebih menonjol. Sering digunakan dalam pernyataan preferensi.',
-    nuance     : null,
-    examples   : [
-      { jp: 'バスよりでんしゃ<b>のほうが</b>はやいです。', id: 'Kereta lebih cepat daripada bus.' },
-      { jp: 'なつよりふゆ<b>のほうが</b>すきです。', id: 'Lebih suka musim dingin daripada musim panas.' },
-    ],
-    see_also_grammar : ['gn5-00057', 'gn5-00060'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn5-00059',
-    level      : 'n5',
-    pattern    : 'AはBほど〜ない',
-    reading    : 'A wa B hodo〜nai',
-    meaning    : 'A tidak se... B',
-    cat        : 'comparison',
-    connection : 'A + は + B + ほど + Adj/Adv + ない',
-    desc       : '<b>〜ほど〜ない</b> menyatakan bahwa A tidak setara (dalam derajat tertentu) dengan B. Bentuk negatif perbandingan.',
-    nuance     : null,
-    examples   : [
-      { jp: 'きょうはきのう<b>ほど</b>さむく<b>ない</b>です。', id: 'Hari ini tidak sedingin kemarin.' },
-      { jp: 'このしけんはまえのしけん<b>ほど</b>むずかしく<b>なかった</b>。', id: 'Ujian ini tidak sesulit ujian yang lalu.' },
-    ],
-    see_also_grammar : ['gn5-00057', 'gn5-00058'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn5-00060',
-    level      : 'n5',
-    pattern    : '〜が一番',
-    reading    : '〜ga ichiban',
-    meaning    : '... paling ... / yang terbaik',
-    cat        : 'comparison',
-    connection : 'N + が + 一番 + Adj',
-    desc       : '<b>一番</b> berarti "nomor satu" atau "paling", digunakan untuk superlative dalam kelompok.',
-    nuance     : null,
-    examples   : [
-      { jp: 'くだものの中で、りんご<b>が一番</b>すきです。', id: 'Di antara buah-buahan, saya paling suka apel.' },
-      { jp: 'このクラスで彼女<b>が一番</b>じょうずです。', id: 'Di kelas ini, dia yang paling pandai.' },
-    ],
-    see_also_grammar : ['gn5-00057', 'gn5-00058'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  // ─────────────────────────────────────────────────────────────────────────
-  // KEBERADAAN (gn5-00061 – gn5-00062)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  {
-    id         : 'gn5-00061',
-    level      : 'n5',
-    pattern    : '〜があります / 〜がいます',
-    reading    : '〜ga arimasu / ga imasu',
-    meaning    : 'ada ... (ada sesuatu/seseorang)',
-    cat        : 'existence',
-    connection : 'N + があります (benda) / N + がいます (makhluk hidup)',
-    desc       : '<b>あります</b> untuk keberadaan benda mati. <b>います</b> untuk keberadaan makhluk hidup (orang, hewan). Keduanya berarti "ada".',
-    nuance     : null,
-    examples   : [
-      { jp: 'つくえのうえにほん<b>があります</b>。', id: 'Ada buku di atas meja.' },
-      { jp: 'そとにねこ<b>がいます</b>。', id: 'Ada kucing di luar.' },
-    ],
-    see_also_grammar : ['gn5-00062'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn5-00062',
-    level      : 'n5',
-    pattern    : '〜にあります / 〜にいます',
-    reading    : '〜ni arimasu / ni imasu',
-    meaning    : '... berada di ... (lokasi keberadaan)',
-    cat        : 'existence',
-    connection : 'N (subjek) + は + N (tempat) + に + あります/います',
-    desc       : 'Menyatakan lokasi di mana suatu benda atau makhluk hidup berada, dengan に sebagai partikel lokasi.',
-    nuance     : null,
-    examples   : [
-      { jp: 'ほんはつくえのうえ<b>にあります</b>。', id: 'Buku ada di atas meja.' },
-      { jp: 'こどもはこうえん<b>にいます</b>。', id: 'Anak-anak ada di taman.' },
-    ],
-    see_also_grammar : ['gn5-00061', 'gn5-00009'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  // ─────────────────────────────────────────────────────────────────────────
-  // PERUBAHAN (gn5-00063 – gn5-00064)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  {
+{
     id         : 'gn5-00063',
     level      : 'n5',
     pattern    : '〜になる',
@@ -1391,7 +625,7 @@ window.grammarN5 = [
     notes      : null,
   },
 
-  {
+{
     id         : 'gn5-00064',
     level      : 'n5',
     pattern    : '〜にする',
@@ -1412,342 +646,7 @@ window.grammarN5 = [
     notes      : null,
   },
 
-  // ─────────────────────────────────────────────────────────────────────────
-  // ALASAN (gn5-00065 – gn5-00066)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  {
-    id         : 'gn5-00065',
-    level      : 'n5',
-    pattern    : '〜から (alasan)',
-    reading    : '〜kara',
-    meaning    : 'karena ... (alasan)',
-    cat        : 'reason-cause',
-    connection : '文 (plain/polite) + から',
-    desc       : '<b>〜から</b> menghubungkan dua kalimat sebagai alasan dan akibat: "karena X, maka Y". Lebih tegas dan subjektif dari ので.',
-    nuance     : null,
-    examples   : [
-      { jp: 'あめが<b>ふっているから</b>、でかけません。', id: 'Karena sedang hujan, tidak keluar.' },
-      { jp: 'びょうきです<b>から</b>、がっこうをやすみます。', id: 'Karena sakit, tidak masuk sekolah.' },
-    ],
-    see_also_grammar : ['gn5-00066'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn5-00066',
-    level      : 'n5',
-    pattern    : '〜ので',
-    reading    : '〜node',
-    meaning    : 'karena ... (alasan sopan)',
-    cat        : 'reason-cause',
-    connection : 'V/Adj plain + ので / N/Adj-na + な + ので',
-    desc       : '<b>〜ので</b> menyatakan alasan dengan nuansa lebih objektif dan sopan dari から. Digunakan di konteks formal dan saat memberikan penjelasan kepada orang yang lebih tua/senior.',
-    nuance     : 'ので lebih halus dan tidak terkesan memaksakan pendapat.',
-    examples   : [
-      { jp: 'あしたしけんがある<b>ので</b>、はやくねます。', id: 'Karena besok ada ujian, tidur lebih awal.' },
-      { jp: 'いそがしい<b>ので</b>、てつだえません。', id: 'Karena sibuk, tidak bisa membantu.' },
-    ],
-    see_also_grammar : ['gn5-00065'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  // ─────────────────────────────────────────────────────────────────────────
-  // KONJUNGSI KONTRAS (gn5-00067 – gn5-00068)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  {
-    id         : 'gn5-00067',
-    level      : 'n5',
-    pattern    : '〜が (tapi)',
-    reading    : '〜ga',
-    meaning    : 'tapi / namun (kontras)',
-    cat        : 'listing-addition',
-    connection : '文1 + が + 文2',
-    desc       : '<b>〜が</b> sebagai konjungsi menghubungkan dua kalimat yang kontras atau bertentangan: "..., tapi...".',
-    nuance     : 'Bisa juga digunakan sebagai pengantar halus tanpa kontras yang kuat.',
-    examples   : [
-      { jp: 'にほんごはすきです<b>が</b>、むずかしいです。', id: 'Suka bahasa Jepang, tapi susah.' },
-      { jp: 'まいにちれんしゅうします<b>が</b>、まだじょうずじゃないです。', id: 'Latihan setiap hari, tapi belum mahir.' },
-    ],
-    see_also_grammar : ['gn5-00068'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn5-00068',
-    level      : 'n5',
-    pattern    : '〜けど / 〜けれど',
-    reading    : '〜kedo / keredomo',
-    meaning    : 'tapi / walaupun (kasual)',
-    cat        : 'listing-addition',
-    connection : '文1 + けど / けれど(も) + 文2',
-    desc       : '<b>〜けど</b> adalah bentuk lebih kasual dari が sebagai konjungsi kontras. <b>けれど</b> sedikit lebih formal. <b>けれども</b> paling formal.',
-    nuance     : null,
-    examples   : [
-      { jp: 'やってみた<b>けど</b>、できなかった。', id: 'Sudah dicoba, tapi tidak bisa.' },
-      { jp: 'たかい<b>けど</b>、かいます。', id: 'Mahal, tapi beli.' },
-    ],
-    see_also_grammar : ['gn5-00067'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  // ─────────────────────────────────────────────────────────────────────────
-  // KEMUNGKINAN / PENAMPILAN (gn5-00069 – gn5-00070)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  {
-    id         : 'gn5-00069',
-    level      : 'n5',
-    pattern    : '〜でしょう',
-    reading    : '〜deshou',
-    meaning    : 'mungkin ... / sepertinya ... (perkiraan)',
-    cat        : 'conjecture-possibility',
-    connection : 'V/Adj plain / N + でしょう',
-    desc       : '<b>〜でしょう</b> menyatakan perkiraan atau kemungkinan pembicara. Bentuk tanya <b>〜でしょうか</b> digunakan untuk pertanyaan yang lebih sopan dari ですか.',
-    nuance     : null,
-    examples   : [
-      { jp: 'あしたはあめ<b>でしょう</b>。', id: 'Besok mungkin hujan.' },
-      { jp: 'どこにいるん<b>でしょうか</b>。', id: 'Kira-kira ada di mana ya?' },
-    ],
-    see_also_grammar : ['gn5-00070'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn5-00070',
-    level      : 'n5',
-    pattern    : '〜そうです (様態)',
-    reading    : '〜sou desu',
-    meaning    : 'sepertinya ... / kelihatannya ... (dari penglihatan)',
-    cat        : 'conjecture-possibility',
-    connection : 'V-ます語幹 / Adj-i語幹 / Adj-na + そうです',
-    desc       : '<b>〜そうです</b> berdasarkan penglihatan langsung menyatakan kesan atau perkiraan. Berbeda dari 〜そうです (hearsay = "katanya").',
-    nuance     : 'Untuk bentuk hearsay: V/Adj plain + そうです ("katanya / konon").',
-    examples   : [
-      { jp: 'このりょうりはおいし<b>そうです</b>ね。', id: 'Masakan ini kelihatannya enak ya.' },
-      { jp: 'あめがふり<b>そうです</b>。', id: 'Sepertinya mau hujan.' },
-    ],
-    see_also_grammar : ['gn5-00069'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : 'いい → よさそう (bukan いそう); ない → なさそう',
-    notes      : null,
-  },
-
-  // ─────────────────────────────────────────────────────────────────────────
-  // KUTIPAN (gn5-00071 – gn5-00072)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  {
-    id         : 'gn5-00071',
-    level      : 'n5',
-    pattern    : '〜という',
-    reading    : '〜to iu',
-    meaning    : 'yang bernama ... / yang disebut ...',
-    cat        : 'quotation-thought',
-    connection : 'N1 + という + N2',
-    desc       : '<b>〜という</b> digunakan untuk memperkenalkan atau menjelaskan nama/sebutan sesuatu: "X yang bernama Y".',
-    nuance     : null,
-    examples   : [
-      { jp: '「さくら」<b>という</b>えいがをみましたか。', id: 'Sudah menonton film yang berjudul "Sakura"?' },
-      { jp: 'やまだ<b>という</b>ひとがきました。', id: 'Datang seseorang bernama Yamada.' },
-    ],
-    see_also_grammar : ['gn5-00072'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn5-00072',
-    level      : 'n5',
-    pattern    : '〜と言っています',
-    reading    : '〜to itte imasu',
-    meaning    : 'mengatakan bahwa ...',
-    cat        : 'quotation-thought',
-    connection : '「...」 + と + 言っています / 言いました',
-    desc       : '<b>〜と言っています</b> melaporkan perkataan orang lain secara tidak langsung. Kutipan sebelum と menggunakan bentuk plain.',
-    nuance     : null,
-    examples   : [
-      { jp: 'かれはあした<b>くると言っています</b>。', id: 'Dia bilang akan datang besok.' },
-      { jp: 'ははは「はやくかえって」<b>と言いました</b>。', id: 'Ibu bilang "pulang cepat".' },
-    ],
-    see_also_grammar : ['gn5-00071'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  // ─────────────────────────────────────────────────────────────────────────
-  // LAIN-LAIN (gn5-00073 – gn5-00070)
-  // ─────────────────────────────────────────────────────────────────────────
-
-  {
-    id         : 'gn5-00073',
-    level      : 'n5',
-    pattern    : '〜でいい',
-    reading    : '〜de ii',
-    meaning    : '... saja sudah cukup / tidak masalah dengan ...',
-    cat        : 'sentence-final-modality',
-    connection : 'N / Adj-na + でいい',
-    desc       : '<b>〜でいい</b> menyatakan penerimaan atau kerelaan terhadap pilihan tertentu yang mungkin bukan yang terbaik, tapi cukup memuaskan.',
-    nuance     : null,
-    examples   : [
-      { jp: 'みず<b>でいい</b>です。', id: 'Air saja sudah cukup.' },
-      { jp: 'これ<b>でいい</b>ですか？', id: 'Ini sudah cukup ya?' },
-    ],
-    see_also_grammar : ['gn5-00031'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn5-00074',
-    level      : 'n5',
-    pattern    : '〜か〜か',
-    reading    : '〜ka〜ka',
-    meaning    : 'apakah ... atau ...',
-    cat        : 'sentence-final-modality',
-    connection : 'A + か + B + か',
-    desc       : '<b>〜か〜か</b> menyatakan pilihan antara dua hal: "apakah A atau B". Sering digunakan dengan わかりません atau tanya tidak langsung.',
-    nuance     : null,
-    examples   : [
-      { jp: 'いく<b>か</b>いかない<b>か</b>まだわかりません。', id: 'Belum tahu apakah pergi atau tidak.' },
-      { jp: 'コーヒー<b>か</b>こうちゃ<b>か</b>、どちらがいいですか。', id: 'Kopi atau teh, yang mana lebih baik?' },
-    ],
-    see_also_grammar : [],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn5-00075',
-    level      : 'n5',
-    pattern    : '〜も〜も',
-    reading    : '〜mo〜mo',
-    meaning    : 'baik ... maupun ... / ... juga ... juga ...',
-    cat        : 'sentence-final-modality',
-    connection : 'N1 + も + N2 + も (afirmatif/negatif)',
-    desc       : '<b>〜も〜も</b> menyatakan bahwa dua hal berlaku sama: "baik A maupun B". Bisa afirmatif ("keduanya") atau negatif ("tidak satupun").',
-    nuance     : null,
-    examples   : [
-      { jp: 'すし<b>も</b>てんぷら<b>も</b>すきです。', id: 'Suka sushi maupun tempura.' },
-      { jp: 'えいご<b>も</b>フランスご<b>も</b>はなせます。', id: 'Bisa berbicara bahasa Inggris maupun Prancis.' },
-    ],
-    see_also_grammar : ['gn5-00016'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn5-00076',
-    level      : 'n5',
-    pattern    : '〜し',
-    reading    : '〜shi',
-    meaning    : 'dan juga ... (menghubungkan alasan)',
-    cat        : 'listing-addition',
-    connection : 'V/Adj plain / N (+ だ) + し',
-    desc       : '<b>〜し</b> menghubungkan beberapa alasan atau kondisi yang mendukung satu simpulan. Sering digunakan untuk memberikan alasan yang berlapis.',
-    nuance     : 'Berbeda dari から/ので: し tidak menunjuk satu alasan saja, melainkan beberapa faktor.',
-    examples   : [
-      { jp: 'やすい<b>し</b>、おいしい<b>し</b>、このみせがすきです。', id: 'Karena murah dan enak, suka toko ini.' },
-      { jp: 'あめ<b>だし</b>、つかれてる<b>し</b>、でかけたくない。', id: 'Hujan, capek, tidak mau keluar.' },
-    ],
-    see_also_grammar : ['gn5-00065', 'gn5-00066'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn5-00077',
-    level      : 'n5',
-    pattern    : 'Vる つもり',
-    reading    : 'Vru tsumori',
-    meaning    : 'berencana untuk ... / bermaksud ...',
-    cat        : 'volitional-intention',
-    connection : 'Vる / Vない + つもりです',
-    desc       : '<b>〜つもり</b> menyatakan niat atau rencana pembicara. Lebih pasti dari 〜たい (keinginan).',
-    nuance     : null,
-    examples   : [
-      { jp: 'らいねんにほんへいく<b>つもりです</b>。', id: 'Berencana pergi ke Jepang tahun depan.' },
-      { jp: 'もうやめる<b>つもりはない</b>です。', id: 'Tidak bermaksud berhenti.' },
-    ],
-    see_also_grammar : ['gn5-00040'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn5-00078',
-    level      : 'n5',
-    pattern    : 'Vる / Vない + ほうがいい',
-    reading    : '〜hou ga ii',
-    meaning    : 'lebih baik ... / sebaiknya ...',
-    cat        : 'sentence-final-request',
-    connection : 'Vる (negatif) / Vた (positif) + ほうがいい',
-    desc       : '<b>〜ほうがいい</b> digunakan untuk memberikan saran: "sebaiknya...". Untuk saran afirmatif biasanya pakai Vた form, untuk saran negatif pakai Vない form.',
-    nuance     : null,
-    examples   : [
-      { jp: 'はやくいった<b>ほうがいい</b>よ。', id: 'Sebaiknya pergi lebih cepat.' },
-      { jp: 'タバコはすわない<b>ほうがいい</b>です。', id: 'Sebaiknya tidak merokok.' },
-    ],
-    see_also_grammar : ['gn5-00057'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
-    id         : 'gn5-00079',
-    level      : 'n5',
-    pattern    : '〜かもしれない',
-    reading    : '〜kamo shirenai',
-    meaning    : 'mungkin ... / bisa jadi ...',
-    cat        : 'conjecture-possibility',
-    connection : 'V/Adj plain / N + かもしれない',
-    desc       : '<b>〜かもしれない</b> menyatakan kemungkinan yang tidak pasti. Lebih meragukan dari でしょう.',
-    nuance     : null,
-    examples   : [
-      { jp: 'かれはもうかえった<b>かもしれない</b>。', id: 'Mungkin dia sudah pulang.' },
-      { jp: 'あしたは雨<b>かもしれません</b>。', id: 'Besok mungkin hujan.' },
-    ],
-    see_also_grammar : ['gn5-00069'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
-  },
-
-  {
+{
     id         : 'gn5-00080',
     level      : 'n5',
     pattern    : '〜てしまう',
@@ -1768,29 +667,7 @@ window.grammarN5 = [
     notes      : null,
   },
 
-  {
-    id         : 'gn5-00081',
-    level      : 'n5',
-    pattern    : 'V-方',
-    reading    : 'V-kata',
-    meaning    : 'cara melakukan V',
-    cat        : 'nominalization',
-    connection : 'V(ます-stem) + 方',
-    desc       : '<b>V-方</b> menyatakan "cara melakukan sesuatu". Dibentuk dari bentuk ます (ます-stem) + 方. Contoh: 食べ方 = cara makan, 書き方 = cara menulis.',
-    nuance     : 'Digunakan untuk menanyakan atau menjelaskan metode/cara suatu tindakan.',
-    examples   : [
-      { jp: 'この漢字の<b>読み方</b>を教えてください。', id: 'Tolong ajari saya cara membaca kanji ini.' },
-      { jp: 'パスタの<b>作り方</b>を知っていますか？', id: 'Apakah kamu tahu cara membuat pasta?' },
-      { jp: 'ごみの<b>捨て方</b>がわかりません。', id: 'Saya tidak tahu cara membuang sampah.' },
-    ],
-    see_also_grammar : ['gn5-00050'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : 'Pattern from Irodori 初級1 L9.',
-  },
-
-  {
+{
     id         : 'gn5-00082',
     level      : 'n5',
     pattern    : 'もう V-ました',
@@ -1812,7 +689,7 @@ window.grammarN5 = [
     notes      : 'Pattern from Irodori 初級2 L8.',
   },
 
-  {
+{
     id         : 'gn5-00083',
     level      : 'n5',
     pattern    : 'まだ V-ます / まだ V-ていません',
@@ -1834,118 +711,156 @@ window.grammarN5 = [
     notes      : 'Pattern from Irodori 初級2 L8.',
   },
 
-  {
-    id         : 'gn5-00084',
+  // ── VERB-FORMS (10) ───────────────────────────────────
+
+{
+    id         : 'gn5-00042',
     level      : 'n5',
-    pattern    : 'な A- に',
-    reading    : 'na-A ni',
-    meaning    : 'dengan cara yang [na-adj] — bentuk adverbia',
-    cat        : 'predicate-adjective',
-    connection : 'な-adjective (stem) + に',
-    desc       : 'Mengubah <b>な-adjective</b> menjadi bentuk adverbia dengan menambahkan に. Digunakan untuk memodifikasi kata kerja.',
-    nuance     : 'Setara dengan "-ly" dalam bahasa Indonesia: 丁寧に = dengan sopan, 静かに = dengan tenang.',
+    pattern    : '〜ましょう',
+    reading    : '〜mashou',
+    meaning    : 'ayo ... / mari ...',
+    cat        : 'volitional-intention',
+    connection : 'V-ます語幹 + ましょう',
+    desc       : '<b>〜ましょう</b> mengajak pendengar melakukan sesuatu bersama ("ayo kita..."). Juga bisa menyatakan tekad pembicara sendiri.',
+    nuance     : null,
     examples   : [
-      { jp: '<b>丁寧に</b>書いてください。', id: 'Tolong tulis dengan rapi.' },
-      { jp: '<b>静かに</b>してください。', id: 'Tolong tenang.' },
-      { jp: '<b>親切に</b>教えてくれました。', id: 'Beliau mengajar dengan baik hati.' },
+      { jp: 'いっしょに<b>いきましょう</b>！', id: 'Ayo pergi bersama!' },
+      { jp: 'もっとべんきょう<b>しましょう</b>。', id: 'Ayo belajar lebih giat.' },
     ],
-    see_also_grammar : ['gn5-00026'],
+    see_also_grammar : ['gn5-00043', 'gn5-00044'],
     see_also_vocab   : [],
     register   : null,
     exceptions : null,
-    notes      : 'Pattern from Irodori 初級2 L14.',
+    notes      : null,
   },
 
-
-  {
-    id         : 'gn5-00085',
+{
+    id         : 'gn5-00043',
     level      : 'n5',
-    pattern    : 'から (asal/arah datang)',
-    reading    : 'kara (asal)',
-    meaning    : 'dari [tempat/orang] — menunjukkan asal atau titik keberangkatan',
-    cat        : 'particle',
-    connection : '【場所/人】から + V kedatangan (来ます、帰ります、dll.)',
-    desc       : 'Partikel <b>から</b> menunjukkan asal atau titik keberangkatan. Pada level ini diajarkan sebagai pola tetap <b>【場所】から来ました</b> untuk menyatakan asal negara/kota.',
-    nuance     : 'Berbeda dengan から di gn5-00020 (rentang waktu/tempat から〜まで). Di sini から berdiri sendiri untuk menunjukkan titik asal pergerakan.',
+    pattern    : '〜ませんか',
+    reading    : '〜masen ka',
+    meaning    : 'maukah kamu ...? / bagaimana kalau kita ...?',
+    cat        : 'volitional-intention',
+    connection : 'V-ます語幹 + ませんか',
+    desc       : '<b>〜ませんか</b> mengajak pendengar secara sopan, sambil memberikan pilihan untuk menolak. Lebih lembut dari 〜ましょう.',
+    nuance     : null,
     examples   : [
-      { jp: 'ブラジル<b>から</b>来ました。', id: 'Saya berasal dari Brasil.' },
-      { jp: 'インドネシア<b>から</b>来ました。', id: 'Saya dari Indonesia.' },
-      { jp: '大阪<b>から</b>来ました。', id: 'Saya datang dari Osaka.' },
+      { jp: 'いっしょにひるごはんを<b>たべませんか</b>。', id: 'Mau makan siang bersama?' },
+      { jp: 'えいがを<b>みませんか</b>。', id: 'Bagaimana kalau menonton film?' },
     ],
-    see_also_grammar : ['gn5-00020'],
+    see_also_grammar : ['gn5-00042', 'gn5-00044'],
     see_also_vocab   : [],
     register   : null,
     exceptions : null,
-    notes      : 'Pattern from Irodori 入門 L3. Diajarkan sebagai frasa tetap; ekspansi pola dibahas di level Elementary.',
+    notes      : null,
   },
 
-  {
-    id         : 'gn5-00086',
+{
+    id         : 'gn5-00044',
     level      : 'n5',
-    pattern    : 'N は ちょっと…',
-    reading    : 'N wa chotto...',
-    meaning    : '[N] agak... (penolakan tidak langsung / ekspresi keengganan)',
-    cat        : 'expression',
-    connection : 'N + は + ちょっと + … (kalimat digantung)',
-    desc       : 'Ekspresi sopan untuk menyatakan keengganan atau ketidaksukaan tanpa mengatakan "tidak" secara langsung. Kalimat sengaja tidak diselesaikan — lawan bicara memahami maknanya dari konteks.',
-    nuance     : 'ちょっと secara harfiah = sedikit, tapi dalam konteks ini menjadi eufemisme untuk penolakan. Sangat umum dan penting dalam komunikasi Jepang yang tidak langsung.',
+    pattern    : '〜ましょうか',
+    reading    : '〜mashou ka',
+    meaning    : 'maukah saya ...? / apakah kita ...?',
+    cat        : 'volitional-intention',
+    connection : 'V-ます語幹 + ましょうか',
+    desc       : '<b>〜ましょうか</b> menawarkan bantuan atau mengusulkan tindakan bersama dalam bentuk pertanyaan yang sopan.',
+    nuance     : null,
     examples   : [
-      { jp: 'わさびは、<b>ちょっと</b>…。', id: 'Wasabi... agak susah (tidak suka).' },
-      { jp: '月曜日は、<b>ちょっと</b>…。', id: 'Senin itu... agak susah.' },
-      { jp: 'それは<b>ちょっと</b>…。', id: 'Itu... agak...' },
+      { jp: 'にもつをもち<b>ましょうか</b>。', id: 'Mau saya bawakan barangnya?' },
+      { jp: 'どこへ<b>いきましょうか</b>。', id: 'Kita mau ke mana?' },
     ],
-    see_also_grammar : [],
-    see_also_vocab   : [],
-    register   : 'polite',
-    exceptions : null,
-    notes      : 'Pattern from Irodori 入門 L5. Ekspresi khas budaya Jepang: indirect refusal.',
-  },
-
-  {
-    id         : 'gn5-00087',
-    level      : 'n5',
-    pattern    : 'いつも / よく / あまり〜ない',
-    reading    : 'itsumo / yoku / amari〜nai',
-    meaning    : 'selalu / sering / jarang (adverbia frekuensi)',
-    cat        : 'adverb',
-    connection : 'Adverbia + V-ます / V-ません',
-    desc       : 'Adverbia yang menyatakan frekuensi kegiatan: <b>いつも</b> (selalu, setiap saat), <b>よく</b> (sering), <b>あまり</b> (jarang — harus dipakai dengan bentuk negatif).',
-    nuance     : 'あまり HARUS diikuti negatif (あまり〜ません/ない). Jika dipakai dengan positif artinya berbeda. たいてい (biasanya) dan ときどき (kadang-kadang) adalah adverbia frekuensi terkait.',
-    examples   : [
-      { jp: '<b>いつも</b>バスで行きます。', id: 'Saya selalu pergi naik bus.' },
-      { jp: '<b>よく</b>図書館で勉強します。', id: 'Saya sering belajar di perpustakaan.' },
-      { jp: 'お肉は<b>あまり</b>食べません。', id: 'Saya jarang makan daging.' },
-    ],
-    see_also_grammar : [],
+    see_also_grammar : ['gn5-00042', 'gn5-00043'],
     see_also_vocab   : [],
     register   : null,
-    exceptions : 'あまり hanya digunakan dengan bentuk negatif untuk menyatakan frekuensi rendah.',
-    notes      : 'Pattern from Irodori 入門 L5.',
-  },
-
-  {
-    id         : 'gn5-00088',
-    level      : 'n5',
-    pattern    : 'N、【数】お願いします / ください',
-    reading    : 'N, [number] onegaishimasu / kudasai',
-    meaning    : 'tolong [N] sebanyak [jumlah] (memesan atau meminta barang)',
-    cat        : 'expression',
-    connection : 'N + jumlah (hitotsu/futatsu/...) + お願いします atau ください',
-    desc       : 'Pola untuk memesan atau meminta barang dengan jumlah tertentu. Gunakan penghitung umum ひとつ・ふたつ・みっつ… untuk makanan/benda. Urutan: nama barang → jumlah → お願いします.',
-    nuance     : 'お願いします lebih sopan dari ください. Di restoran, toko, dll. Untuk barang tipis/panjang/kecil gunakan penghitung spesifik (本、枚、冊, dll.).',
-    examples   : [
-      { jp: 'コーヒー、<b>ひとつお願いします</b>。', id: 'Satu kopi, tolong.' },
-      { jp: '生ビール3つと、ウーロン茶1つ、<b>お願いします</b>。', id: 'Tiga bir draft dan satu oolong tea, tolong.' },
-      { jp: 'これ、<b>ふたつください</b>。', id: 'Ini, dua, tolong.' },
-    ],
-    see_also_grammar : ['gn5-00030'],
-    see_also_vocab   : [],
-    register   : 'polite',
     exceptions : null,
-    notes      : 'Pattern from Irodori 入門 L6.',
+    notes      : null,
   },
 
-  {
+{
+    id         : 'gn5-00050',
+    level      : 'n5',
+    pattern    : '〜ことができる',
+    reading    : '〜koto ga dekiru',
+    meaning    : 'bisa / mampu melakukan ...',
+    cat        : 'potential',
+    connection : 'Vる + ことができる',
+    desc       : '<b>〜ことができる</b> menyatakan kemampuan: bisa atau mampu melakukan sesuatu. Setara dengan potential form (〜られる/〜える) tapi lebih formal.',
+    nuance     : null,
+    examples   : [
+      { jp: 'かれはえいごをはなす<b>ことができます</b>。', id: 'Dia bisa berbicara bahasa Inggris.' },
+      { jp: 'にほんごをよむ<b>ことができますか</b>。', id: 'Bisa membaca bahasa Jepang?' },
+    ],
+    see_also_grammar : ['gn5-00051'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn5-00052',
+    level      : 'n5',
+    pattern    : '〜ことにする',
+    reading    : '〜koto ni suru',
+    meaning    : 'memutuskan untuk ...',
+    cat        : 'volitional-intention',
+    connection : 'Vる / Vない + ことにする',
+    desc       : '<b>〜ことにする</b> menyatakan keputusan yang dibuat oleh si pembicara atas kehendak sendiri.',
+    nuance     : null,
+    examples   : [
+      { jp: 'まいにちうんどうする<b>ことにしました</b>。', id: 'Memutuskan untuk berolahraga setiap hari.' },
+      { jp: 'おさけをのまない<b>ことにする</b>。', id: 'Memutuskan untuk tidak minum alkohol.' },
+    ],
+    see_also_grammar : ['gn5-00053'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn5-00053',
+    level      : 'n5',
+    pattern    : '〜ことになる',
+    reading    : '〜koto ni naru',
+    meaning    : 'sudah diputuskan / ternyata menjadi ...',
+    cat        : 'volitional-intention',
+    connection : 'Vる / Vない + ことになる',
+    desc       : '<b>〜ことになる</b> menyatakan suatu keputusan atau hasil yang bukan berasal dari kemauan sendiri, melainkan dari keadaan luar atau orang lain.',
+    nuance     : 'Kontras dengan ことにする: にする = keputusan sendiri, になる = terjadi karena faktor luar.',
+    examples   : [
+      { jp: 'らいねんとうきょうへいく<b>ことになりました</b>。', id: 'Sudah diputuskan (saya) akan ke Tokyo tahun depan.' },
+      { jp: 'かいぎがへやAでひらかれる<b>ことになった</b>。', id: 'Rapat akan diadakan di ruangan A.' },
+    ],
+    see_also_grammar : ['gn5-00052'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn5-00077',
+    level      : 'n5',
+    pattern    : 'Vる つもり',
+    reading    : 'Vru tsumori',
+    meaning    : 'berencana untuk ... / bermaksud ...',
+    cat        : 'volitional-intention',
+    connection : 'Vる / Vない + つもりです',
+    desc       : '<b>〜つもり</b> menyatakan niat atau rencana pembicara. Lebih pasti dari 〜たい (keinginan).',
+    nuance     : null,
+    examples   : [
+      { jp: 'らいねんにほんへいく<b>つもりです</b>。', id: 'Berencana pergi ke Jepang tahun depan.' },
+      { jp: 'もうやめる<b>つもりはない</b>です。', id: 'Tidak bermaksud berhenti.' },
+    ],
+    see_also_grammar : ['gn5-00040'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
     id         : 'gn5-00089',
     level      : 'n5',
     pattern    : 'V-ます (習慣・事実)',
@@ -1967,51 +882,7 @@ window.grammarN5 = [
     notes      : 'Pattern from Irodori 入門 L8. Nuansa kebiasaan vs rencana diajarkan eksplisit di Irodori.',
   },
 
-  {
-    id         : 'gn5-00090',
-    level      : 'n5',
-    pattern    : 'どれ / どの N',
-    reading    : 'dore / dono N',
-    meaning    : 'yang mana (memilih dari beberapa pilihan)',
-    cat        : 'interrogative',
-    connection : 'どれ (berdiri sendiri) / どの + N',
-    desc       : '<b>どれ</b> = "yang mana?" digunakan saat ada 3+ pilihan dan objeknya sudah diketahui. <b>どの+N</b> = "N yang mana?" Berbeda dengan どちら/どっち yang dipakai untuk 2 pilihan.',
-    nuance     : 'どれ berdiri sendiri; どの selalu diikuti nomina. Untuk 2 pilihan, gunakan どちら/どっち. Untuk menanyakan orang, gunakan どの方/どなた (formal).',
-    examples   : [
-      { jp: '<b>どれ</b>がいいですか？', id: 'Yang mana yang bagus?' },
-      { jp: '<b>どの</b>かばんですか？', id: 'Tas yang mana?' },
-      { jp: '<b>どれ</b>にしますか？', id: 'Mau pilih yang mana?' },
-    ],
-    see_also_grammar : ['gn5-00018'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : 'Pattern from Irodori 入門 L9.',
-  },
-
-  {
-    id         : 'gn5-00091',
-    level      : 'n5',
-    pattern    : 'N が わかります / できます',
-    reading    : 'N ga wakarimasu / dekimasu',
-    meaning    : 'mengerti N / bisa melakukan N',
-    cat        : 'expression',
-    connection : 'N + が + わかります atau できます',
-    desc       : 'Verba <b>わかります</b> (mengerti/paham) dan <b>できます</b> (bisa/mampu) digunakan dengan partikel <b>が</b>, bukan を. Partikel が menandai objek pemahaman/kemampuan.',
-    nuance     : 'Kesalahan umum: menggunakan を alih-alih が. わかります dan できます adalah verba potensial/stative yang membutuhkan が. できます juga bisa digunakan dengan ことができます (gn5-00050).',
-    examples   : [
-      { jp: '日本語が少し<b>わかります</b>。', id: 'Saya sedikit mengerti bahasa Jepang.' },
-      { jp: '料理が<b>できます</b>。', id: 'Saya bisa memasak.' },
-      { jp: '漢字があまり<b>わかりません</b>。', id: 'Saya kurang paham kanji.' },
-    ],
-    see_also_grammar : ['gn5-00006', 'gn5-00050'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : 'Pattern from Irodori 入門 L12.',
-  },
-
-  {
+{
     id         : 'gn5-00092',
     level      : 'n5',
     pattern    : 'な-adj / N + で (bentuk て)',
@@ -2033,29 +904,7 @@ window.grammarN5 = [
     notes      : 'Pattern from Irodori 入門 L14.',
   },
 
-  {
-    id         : 'gn5-00093',
-    level      : 'n5',
-    pattern    : 'どんな N',
-    reading    : 'donna N',
-    meaning    : 'N seperti apa / N yang bagaimana (menanyakan deskripsi)',
-    cat        : 'interrogative',
-    connection : 'どんな + N + ですか？',
-    desc       : '<b>どんな</b> digunakan untuk menanyakan deskripsi atau karakteristik sebuah nomina. Setara dengan "what kind of" atau "what is [N] like?" dalam bahasa Inggris. Jawaban biasanya berupa adjektif.',
-    nuance     : 'Berbeda dengan どの (memilih dari pilihan tertentu). どんな menanyakan sifat umum tanpa referensi pilihan spesifik.',
-    examples   : [
-      { jp: '<b>どんな</b>人ですか？', id: 'Orangnya seperti apa?' },
-      { jp: '<b>どんな</b>料理が好きですか？', id: 'Suka masakan seperti apa?' },
-      { jp: '<b>どんな</b>仕事をしていますか？', id: 'Kamu bekerja di bidang apa?' },
-    ],
-    see_also_grammar : ['gn5-00090'],
-    see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : 'Pattern from Irodori 入門 L15.',
-  },
-
-  {
+{
     id         : 'gn5-00094',
     level      : 'n5',
     pattern    : 'V-て、V-て、〜 (urutan kegiatan)',
@@ -2076,4 +925,1104 @@ window.grammarN5 = [
     exceptions : null,
     notes      : 'Pattern from Irodori 入門 L18.',
   },
+
+  // ── CONDITIONALS (3) ───────────────────────────────────
+
+{
+    id         : 'gn5-00047',
+    level      : 'n5',
+    pattern    : '〜たら',
+    reading    : '〜tara',
+    meaning    : 'kalau / jika / setelah (kondisional)',
+    cat        : 'conditional-tara',
+    connection : 'Vた → Vたら / Adjかった → Adjかったら / N + だったら',
+    desc       : '<b>〜たら</b> menyatakan kondisi atau urutan: "kalau...", "jika...", "setelah...". Bisa untuk kondisi hipotetis maupun nyata.',
+    nuance     : 'Lebih fleksibel dari 〜と dan 〜ば. Paling sering digunakan di percakapan.',
+    examples   : [
+      { jp: 'うちに<b>かえったら</b>、でんわします。', id: 'Kalau sudah sampai rumah, saya akan menelepon.' },
+      { jp: 'やすかっ<b>たら</b>かいます。', id: 'Kalau murah, saya beli.' },
+    ],
+    see_also_grammar : ['gn5-00048', 'gn5-00049'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn5-00048',
+    level      : 'n5',
+    pattern    : '〜と (kondisional)',
+    reading    : '〜to',
+    meaning    : 'kalau / jika (kondisi alami/otomatis)',
+    cat        : 'conditional-tara',
+    connection : 'V plain / Adj plain + と',
+    desc       : '<b>〜と</b> menyatakan kondisi yang secara otomatis atau selalu menghasilkan akibat tertentu. Digunakan untuk fakta alami, petunjuk arah, atau kondisi yang pasti.',
+    nuance     : 'Tidak digunakan di kalimat yang melibatkan kemauan/permintaan di klausa hasil.',
+    examples   : [
+      { jp: 'みぎに<b>まがると</b>、こうえんがあります。', id: 'Kalau belok kanan, ada taman.' },
+      { jp: 'はるになる<b>と</b>、さくらがさきます。', id: 'Kalau musim semi tiba, bunga sakura mekar.' },
+    ],
+    see_also_grammar : ['gn5-00047', 'gn5-00049'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn5-00049',
+    level      : 'n5',
+    pattern    : '〜ば',
+    reading    : '〜ba',
+    meaning    : 'kalau / jika (kondisional hipotetis)',
+    cat        : 'conditional-tara',
+    connection : 'V → V-ba form (e.g. いく → いけば) / Adj → Adj-ければ',
+    desc       : '<b>〜ば</b> menyatakan kondisi hipotetis: "kalau...", "seandainya...". Sering digunakan dengan nuansa nasihat atau kondisi yang harus dipenuhi.',
+    nuance     : null,
+    examples   : [
+      { jp: 'はやくおき<b>れば</b>、おくれません。', id: 'Kalau bangun cepat, tidak akan terlambat.' },
+      { jp: 'やすけ<b>れば</b>かいたいです。', id: 'Kalau murah, ingin beli.' },
+    ],
+    see_also_grammar : ['gn5-00047', 'gn5-00048'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : 'いい → よければ',
+    notes      : null,
+  },
+
+  // ── MODALITY (15) ───────────────────────────────────
+
+{
+    id         : 'gn5-00030',
+    level      : 'n5',
+    pattern    : '〜てください',
+    reading    : '〜te kudasai',
+    meaning    : 'tolong ... / silakan ...',
+    cat        : 'sentence-final-request',
+    connection : 'Vて + ください',
+    desc       : '<b>〜てください</b> digunakan untuk meminta atau menginstruksikan seseorang melakukan sesuatu secara sopan.',
+    nuance     : null,
+    examples   : [
+      { jp: 'ここに名前を<b>かいてください</b>。', id: 'Tolong tulis nama di sini.' },
+      { jp: 'すこし<b>まってください</b>。', id: 'Tolong tunggu sebentar.' },
+    ],
+    see_also_grammar : ['gn5-00039'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn5-00031',
+    level      : 'n5',
+    pattern    : '〜てもいい',
+    reading    : '〜te mo ii',
+    meaning    : 'boleh ... / tidak apa-apa',
+    cat        : 'permission-prohibition',
+    connection : 'Vて + もいいです / もいいですか',
+    desc       : '<b>〜てもいい</b> menyatakan izin melakukan sesuatu. Bentuk tanya <b>〜てもいいですか</b> digunakan untuk meminta izin.',
+    nuance     : null,
+    examples   : [
+      { jp: 'ここに<b>すわってもいいですか</b>。', id: 'Boleh duduk di sini?' },
+      { jp: 'あしたきて<b>もいいですよ</b>。', id: 'Boleh datang besok.' },
+    ],
+    see_also_grammar : ['gn5-00032'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn5-00032',
+    level      : 'n5',
+    pattern    : '〜てはいけない',
+    reading    : '〜te wa ikenai',
+    meaning    : 'tidak boleh ... / dilarang ...',
+    cat        : 'permission-prohibition',
+    connection : 'Vて + はいけません / はいけない',
+    desc       : '<b>〜てはいけない</b> menyatakan larangan: tidak boleh melakukan sesuatu. Bentuk sopan: <b>〜てはいけません</b>.',
+    nuance     : null,
+    examples   : [
+      { jp: 'ここでタバコをすっ<b>てはいけません</b>。', id: 'Dilarang merokok di sini.' },
+      { jp: 'うそをつい<b>てはいけない</b>よ。', id: 'Tidak boleh berbohong.' },
+    ],
+    see_also_grammar : ['gn5-00031', 'gn5-00042'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn5-00037',
+    level      : 'n5',
+    pattern    : '〜てあげる',
+    reading    : '〜te ageru',
+    meaning    : 'melakukan untuk (orang lain) — perspektif pemberi',
+    cat        : 'sentence-final-request',
+    connection : 'Vて + あげる',
+    desc       : '<b>〜てあげる</b> menyatakan melakukan sesuatu untuk keuntungan orang lain, dari perspektif si pelaku/pemberi.',
+    nuance     : 'Gunakan hati-hati agar tidak terdengar merendahkan penerima.',
+    examples   : [
+      { jp: 'ともだちに本をかし<b>てあげました</b>。', id: 'Meminjamkan buku kepada teman.' },
+      { jp: 'こどもにえを<b>かいてあげた</b>。', id: 'Menggambar gambar untuk anak itu.' },
+    ],
+    see_also_grammar : ['gn5-00038', 'gn5-00039'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn5-00038',
+    level      : 'n5',
+    pattern    : '〜てもらう',
+    reading    : '〜te morau',
+    meaning    : 'menerima layanan / meminta seseorang melakukan ...',
+    cat        : 'sentence-final-request',
+    connection : 'N (pelaku) + に + Vて + もらう',
+    desc       : '<b>〜てもらう</b> menyatakan bahwa subjek menerima keuntungan dari tindakan orang lain. Sering digunakan untuk mengungkapkan permohonan.',
+    nuance     : null,
+    examples   : [
+      { jp: 'せんせいに<b>おしえてもらいました</b>。', id: 'Diajari oleh guru (dan saya merasa beruntung).' },
+      { jp: 'ともだちにつれ<b>てもらった</b>。', id: 'Dibawa pergi oleh teman.' },
+    ],
+    see_also_grammar : ['gn5-00037', 'gn5-00039'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn5-00039',
+    level      : 'n5',
+    pattern    : '〜てくれる',
+    reading    : '〜te kureru',
+    meaning    : '(seseorang) melakukan untuk saya/kelompok kami',
+    cat        : 'sentence-final-request',
+    connection : 'N (pelaku) + が/は + Vて + くれる',
+    desc       : '<b>〜てくれる</b> menyatakan orang lain melakukan sesuatu untuk keuntungan si pembicara atau kelompoknya.',
+    nuance     : null,
+    examples   : [
+      { jp: 'ははがべんとうをつくっ<b>てくれた</b>。', id: 'Ibu membuatkan bento untuk saya.' },
+      { jp: 'おしえ<b>てくれて</b>ありがとう。', id: 'Terima kasih sudah mengajari.' },
+    ],
+    see_also_grammar : ['gn5-00037', 'gn5-00038'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn5-00045',
+    level      : 'n5',
+    pattern    : '〜なければならない',
+    reading    : '〜nakereba naranai',
+    meaning    : 'harus ... / wajib ...',
+    cat        : 'obligation-necessity',
+    connection : 'Vない → Vなければ + ならない/なりません',
+    desc       : '<b>〜なければならない</b> menyatakan kewajiban atau keharusan. Variasi kasual: 〜なきゃいけない / 〜なきゃ.',
+    nuance     : null,
+    examples   : [
+      { jp: 'まいにちべんきょうし<b>なければなりません</b>。', id: 'Harus belajar setiap hari.' },
+      { jp: 'もうかえら<b>なきゃ</b>。', id: 'Harus pulang sekarang.' },
+    ],
+    see_also_grammar : ['gn5-00046'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : 'Variasi: 〜なくてはならない, 〜なくてはいけない. Kasual: 〜なきゃ.',
+  },
+
+{
+    id         : 'gn5-00046',
+    level      : 'n5',
+    pattern    : '〜なくてもいい',
+    reading    : '〜nakute mo ii',
+    meaning    : 'tidak perlu ... / boleh tidak ...',
+    cat        : 'permission-prohibition',
+    connection : 'Vなく + てもいい',
+    desc       : '<b>〜なくてもいい</b> menyatakan bahwa tidak ada kewajiban untuk melakukan sesuatu.',
+    nuance     : null,
+    examples   : [
+      { jp: 'あしたはこ<b>なくてもいい</b>ですよ。', id: 'Besok boleh tidak datang.' },
+      { jp: 'ぜんぶたべ<b>なくてもいいです</b>。', id: 'Tidak perlu dimakan semua.' },
+    ],
+    see_also_grammar : ['gn5-00031', 'gn5-00045'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn5-00069',
+    level      : 'n5',
+    pattern    : '〜でしょう',
+    reading    : '〜deshou',
+    meaning    : 'mungkin ... / sepertinya ... (perkiraan)',
+    cat        : 'conjecture-possibility',
+    connection : 'V/Adj plain / N + でしょう',
+    desc       : '<b>〜でしょう</b> menyatakan perkiraan atau kemungkinan pembicara. Bentuk tanya <b>〜でしょうか</b> digunakan untuk pertanyaan yang lebih sopan dari ですか.',
+    nuance     : null,
+    examples   : [
+      { jp: 'あしたはあめ<b>でしょう</b>。', id: 'Besok mungkin hujan.' },
+      { jp: 'どこにいるん<b>でしょうか</b>。', id: 'Kira-kira ada di mana ya?' },
+    ],
+    see_also_grammar : ['gn5-00070'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn5-00070',
+    level      : 'n5',
+    pattern    : '〜そうです (様態)',
+    reading    : '〜sou desu',
+    meaning    : 'sepertinya ... / kelihatannya ... (dari penglihatan)',
+    cat        : 'conjecture-possibility',
+    connection : 'V-ます語幹 / Adj-i語幹 / Adj-na + そうです',
+    desc       : '<b>〜そうです</b> berdasarkan penglihatan langsung menyatakan kesan atau perkiraan. Berbeda dari 〜そうです (hearsay = "katanya").',
+    nuance     : 'Untuk bentuk hearsay: V/Adj plain + そうです ("katanya / konon").',
+    examples   : [
+      { jp: 'このりょうりはおいし<b>そうです</b>ね。', id: 'Masakan ini kelihatannya enak ya.' },
+      { jp: 'あめがふり<b>そうです</b>。', id: 'Sepertinya mau hujan.' },
+    ],
+    see_also_grammar : ['gn5-00069'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : 'いい → よさそう (bukan いそう); ない → なさそう',
+    notes      : null,
+  },
+
+{
+    id         : 'gn5-00073',
+    level      : 'n5',
+    pattern    : '〜でいい',
+    reading    : '〜de ii',
+    meaning    : '... saja sudah cukup / tidak masalah dengan ...',
+    cat        : 'sentence-final-modality',
+    connection : 'N / Adj-na + でいい',
+    desc       : '<b>〜でいい</b> menyatakan penerimaan atau kerelaan terhadap pilihan tertentu yang mungkin bukan yang terbaik, tapi cukup memuaskan.',
+    nuance     : null,
+    examples   : [
+      { jp: 'みず<b>でいい</b>です。', id: 'Air saja sudah cukup.' },
+      { jp: 'これ<b>でいい</b>ですか？', id: 'Ini sudah cukup ya?' },
+    ],
+    see_also_grammar : ['gn5-00031'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn5-00074',
+    level      : 'n5',
+    pattern    : '〜か〜か',
+    reading    : '〜ka〜ka',
+    meaning    : 'apakah ... atau ...',
+    cat        : 'sentence-final-modality',
+    connection : 'A + か + B + か',
+    desc       : '<b>〜か〜か</b> menyatakan pilihan antara dua hal: "apakah A atau B". Sering digunakan dengan わかりません atau tanya tidak langsung.',
+    nuance     : null,
+    examples   : [
+      { jp: 'いく<b>か</b>いかない<b>か</b>まだわかりません。', id: 'Belum tahu apakah pergi atau tidak.' },
+      { jp: 'コーヒー<b>か</b>こうちゃ<b>か</b>、どちらがいいですか。', id: 'Kopi atau teh, yang mana lebih baik?' },
+    ],
+    see_also_grammar : [],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn5-00075',
+    level      : 'n5',
+    pattern    : '〜も〜も',
+    reading    : '〜mo〜mo',
+    meaning    : 'baik ... maupun ... / ... juga ... juga ...',
+    cat        : 'sentence-final-modality',
+    connection : 'N1 + も + N2 + も (afirmatif/negatif)',
+    desc       : '<b>〜も〜も</b> menyatakan bahwa dua hal berlaku sama: "baik A maupun B". Bisa afirmatif ("keduanya") atau negatif ("tidak satupun").',
+    nuance     : null,
+    examples   : [
+      { jp: 'すし<b>も</b>てんぷら<b>も</b>すきです。', id: 'Suka sushi maupun tempura.' },
+      { jp: 'えいご<b>も</b>フランスご<b>も</b>はなせます。', id: 'Bisa berbicara bahasa Inggris maupun Prancis.' },
+    ],
+    see_also_grammar : ['gn5-00016'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn5-00078',
+    level      : 'n5',
+    pattern    : 'Vる / Vない + ほうがいい',
+    reading    : '〜hou ga ii',
+    meaning    : 'lebih baik ... / sebaiknya ...',
+    cat        : 'sentence-final-request',
+    connection : 'Vる (negatif) / Vた (positif) + ほうがいい',
+    desc       : '<b>〜ほうがいい</b> digunakan untuk memberikan saran: "sebaiknya...". Untuk saran afirmatif biasanya pakai Vた form, untuk saran negatif pakai Vない form.',
+    nuance     : null,
+    examples   : [
+      { jp: 'はやくいった<b>ほうがいい</b>よ。', id: 'Sebaiknya pergi lebih cepat.' },
+      { jp: 'タバコはすわない<b>ほうがいい</b>です。', id: 'Sebaiknya tidak merokok.' },
+    ],
+    see_also_grammar : ['gn5-00057'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn5-00079',
+    level      : 'n5',
+    pattern    : '〜かもしれない',
+    reading    : '〜kamo shirenai',
+    meaning    : 'mungkin ... / bisa jadi ...',
+    cat        : 'conjecture-possibility',
+    connection : 'V/Adj plain / N + かもしれない',
+    desc       : '<b>〜かもしれない</b> menyatakan kemungkinan yang tidak pasti. Lebih meragukan dari でしょう.',
+    nuance     : null,
+    examples   : [
+      { jp: 'かれはもうかえった<b>かもしれない</b>。', id: 'Mungkin dia sudah pulang.' },
+      { jp: 'あしたは雨<b>かもしれません</b>。', id: 'Besok mungkin hujan.' },
+    ],
+    see_also_grammar : ['gn5-00069'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+  // ── NEGATION-EXTENT (6) ───────────────────────────────────
+
+{
+    id         : 'gn5-00027',
+    level      : 'n5',
+    pattern    : '〜ない (negatif plain)',
+    reading    : '〜nai',
+    meaning    : 'negatif bentuk biasa',
+    cat        : 'negative',
+    connection : 'V → Vない',
+    desc       : 'Bentuk negatif verba dalam gaya biasa (bukan sopan). Digunakan dalam percakapan kasual dan sebagai dasar banyak pola grammar lain.',
+    nuance     : null,
+    examples   : [
+      { jp: 'あまりテレビを<b>みない</b>。', id: 'Tidak terlalu sering nonton TV.' },
+      { jp: 'きょうは<b>いかない</b>つもりです。', id: 'Berencana tidak pergi hari ini.' },
+    ],
+    see_also_grammar : ['gn5-00028', 'gn5-00030', 'gn5-00040'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : 'する → しない, くる → こない',
+    notes      : null,
+  },
+
+{
+    id         : 'gn5-00035',
+    level      : 'n5',
+    pattern    : '〜ないで',
+    reading    : '〜nai de',
+    meaning    : 'tanpa melakukan ... / jangan ...',
+    cat        : 'negative',
+    connection : 'Vない + で',
+    desc       : '<b>〜ないで</b> digunakan untuk: (1) melakukan sesuatu tanpa melakukan hal lain, atau (2) permintaan untuk tidak melakukan sesuatu (lebih lembut dari 〜てはいけない).',
+    nuance     : null,
+    examples   : [
+      { jp: 'なにも<b>たべないで</b>ねてしまった。', id: 'Tertidur tanpa makan apapun.' },
+      { jp: 'ここでおよが<b>ないで</b>ください。', id: 'Tolong jangan berenang di sini.' },
+    ],
+    see_also_grammar : ['gn5-00030', 'gn5-00032'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn5-00057',
+    level      : 'n5',
+    pattern    : 'AはBより〜',
+    reading    : 'A wa B yori〜',
+    meaning    : 'A lebih ... daripada B',
+    cat        : 'comparison',
+    connection : 'A + は + B + より + Adj/Adv',
+    desc       : 'Pola perbandingan dasar: A lebih [adjektif] daripada B. <b>より</b> menandai benda pembanding.',
+    nuance     : null,
+    examples   : [
+      { jp: 'でんしゃはバス<b>より</b>はやいです。', id: 'Kereta lebih cepat dari bus.' },
+      { jp: 'このかばんはあのかばん<b>より</b>やすいです。', id: 'Tas ini lebih murah dari tas itu.' },
+    ],
+    see_also_grammar : ['gn5-00058', 'gn5-00059'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn5-00058',
+    level      : 'n5',
+    pattern    : '〜の方が〜より',
+    reading    : '〜no hou ga〜yori',
+    meaning    : '... lebih ... dibandingkan ...',
+    cat        : 'comparison',
+    connection : 'A + の方が + B + より + Adj',
+    desc       : '<b>〜の方が</b> menegaskan pilihan yang lebih disukai atau sifat yang lebih menonjol. Sering digunakan dalam pernyataan preferensi.',
+    nuance     : null,
+    examples   : [
+      { jp: 'バスよりでんしゃ<b>のほうが</b>はやいです。', id: 'Kereta lebih cepat daripada bus.' },
+      { jp: 'なつよりふゆ<b>のほうが</b>すきです。', id: 'Lebih suka musim dingin daripada musim panas.' },
+    ],
+    see_also_grammar : ['gn5-00057', 'gn5-00060'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn5-00059',
+    level      : 'n5',
+    pattern    : 'AはBほど〜ない',
+    reading    : 'A wa B hodo〜nai',
+    meaning    : 'A tidak se... B',
+    cat        : 'comparison',
+    connection : 'A + は + B + ほど + Adj/Adv + ない',
+    desc       : '<b>〜ほど〜ない</b> menyatakan bahwa A tidak setara (dalam derajat tertentu) dengan B. Bentuk negatif perbandingan.',
+    nuance     : null,
+    examples   : [
+      { jp: 'きょうはきのう<b>ほど</b>さむく<b>ない</b>です。', id: 'Hari ini tidak sedingin kemarin.' },
+      { jp: 'このしけんはまえのしけん<b>ほど</b>むずかしく<b>なかった</b>。', id: 'Ujian ini tidak sesulit ujian yang lalu.' },
+    ],
+    see_also_grammar : ['gn5-00057', 'gn5-00058'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn5-00060',
+    level      : 'n5',
+    pattern    : '〜が一番',
+    reading    : '〜ga ichiban',
+    meaning    : '... paling ... / yang terbaik',
+    cat        : 'comparison',
+    connection : 'N + が + 一番 + Adj',
+    desc       : '<b>一番</b> berarti "nomor satu" atau "paling", digunakan untuk superlative dalam kelompok.',
+    nuance     : null,
+    examples   : [
+      { jp: 'くだものの中で、りんご<b>が一番</b>すきです。', id: 'Di antara buah-buahan, saya paling suka apel.' },
+      { jp: 'このクラスで彼女<b>が一番</b>じょうずです。', id: 'Di kelas ini, dia yang paling pandai.' },
+    ],
+    see_also_grammar : ['gn5-00057', 'gn5-00058'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+  // ── CONNECTIVES (7) ───────────────────────────────────
+
+{
+    id         : 'gn5-00065',
+    level      : 'n5',
+    pattern    : '〜から (alasan)',
+    reading    : '〜kara',
+    meaning    : 'karena ... (alasan)',
+    cat        : 'reason-cause',
+    connection : '文 (plain/polite) + から',
+    desc       : '<b>〜から</b> menghubungkan dua kalimat sebagai alasan dan akibat: "karena X, maka Y". Lebih tegas dan subjektif dari ので.',
+    nuance     : null,
+    examples   : [
+      { jp: 'あめが<b>ふっているから</b>、でかけません。', id: 'Karena sedang hujan, tidak keluar.' },
+      { jp: 'びょうきです<b>から</b>、がっこうをやすみます。', id: 'Karena sakit, tidak masuk sekolah.' },
+    ],
+    see_also_grammar : ['gn5-00066'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn5-00066',
+    level      : 'n5',
+    pattern    : '〜ので',
+    reading    : '〜node',
+    meaning    : 'karena ... (alasan sopan)',
+    cat        : 'reason-cause',
+    connection : 'V/Adj plain + ので / N/Adj-na + な + ので',
+    desc       : '<b>〜ので</b> menyatakan alasan dengan nuansa lebih objektif dan sopan dari から. Digunakan di konteks formal dan saat memberikan penjelasan kepada orang yang lebih tua/senior.',
+    nuance     : 'ので lebih halus dan tidak terkesan memaksakan pendapat.',
+    examples   : [
+      { jp: 'あしたしけんがある<b>ので</b>、はやくねます。', id: 'Karena besok ada ujian, tidur lebih awal.' },
+      { jp: 'いそがしい<b>ので</b>、てつだえません。', id: 'Karena sibuk, tidak bisa membantu.' },
+    ],
+    see_also_grammar : ['gn5-00065'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn5-00067',
+    level      : 'n5',
+    pattern    : '〜が (tapi)',
+    reading    : '〜ga',
+    meaning    : 'tapi / namun (kontras)',
+    cat        : 'listing-addition',
+    connection : '文1 + が + 文2',
+    desc       : '<b>〜が</b> sebagai konjungsi menghubungkan dua kalimat yang kontras atau bertentangan: "..., tapi...".',
+    nuance     : 'Bisa juga digunakan sebagai pengantar halus tanpa kontras yang kuat.',
+    examples   : [
+      { jp: 'にほんごはすきです<b>が</b>、むずかしいです。', id: 'Suka bahasa Jepang, tapi susah.' },
+      { jp: 'まいにちれんしゅうします<b>が</b>、まだじょうずじゃないです。', id: 'Latihan setiap hari, tapi belum mahir.' },
+    ],
+    see_also_grammar : ['gn5-00068'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn5-00068',
+    level      : 'n5',
+    pattern    : '〜けど / 〜けれど',
+    reading    : '〜kedo / keredomo',
+    meaning    : 'tapi / walaupun (kasual)',
+    cat        : 'listing-addition',
+    connection : '文1 + けど / けれど(も) + 文2',
+    desc       : '<b>〜けど</b> adalah bentuk lebih kasual dari が sebagai konjungsi kontras. <b>けれど</b> sedikit lebih formal. <b>けれども</b> paling formal.',
+    nuance     : null,
+    examples   : [
+      { jp: 'やってみた<b>けど</b>、できなかった。', id: 'Sudah dicoba, tapi tidak bisa.' },
+      { jp: 'たかい<b>けど</b>、かいます。', id: 'Mahal, tapi beli.' },
+    ],
+    see_also_grammar : ['gn5-00067'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn5-00071',
+    level      : 'n5',
+    pattern    : '〜という',
+    reading    : '〜to iu',
+    meaning    : 'yang bernama ... / yang disebut ...',
+    cat        : 'quotation-thought',
+    connection : 'N1 + という + N2',
+    desc       : '<b>〜という</b> digunakan untuk memperkenalkan atau menjelaskan nama/sebutan sesuatu: "X yang bernama Y".',
+    nuance     : null,
+    examples   : [
+      { jp: '「さくら」<b>という</b>えいがをみましたか。', id: 'Sudah menonton film yang berjudul "Sakura"?' },
+      { jp: 'やまだ<b>という</b>ひとがきました。', id: 'Datang seseorang bernama Yamada.' },
+    ],
+    see_also_grammar : ['gn5-00072'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn5-00072',
+    level      : 'n5',
+    pattern    : '〜と言っています',
+    reading    : '〜to itte imasu',
+    meaning    : 'mengatakan bahwa ...',
+    cat        : 'quotation-thought',
+    connection : '「...」 + と + 言っています / 言いました',
+    desc       : '<b>〜と言っています</b> melaporkan perkataan orang lain secara tidak langsung. Kutipan sebelum と menggunakan bentuk plain.',
+    nuance     : null,
+    examples   : [
+      { jp: 'かれはあした<b>くると言っています</b>。', id: 'Dia bilang akan datang besok.' },
+      { jp: 'ははは「はやくかえって」<b>と言いました</b>。', id: 'Ibu bilang "pulang cepat".' },
+    ],
+    see_also_grammar : ['gn5-00071'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn5-00076',
+    level      : 'n5',
+    pattern    : '〜し',
+    reading    : '〜shi',
+    meaning    : 'dan juga ... (menghubungkan alasan)',
+    cat        : 'listing-addition',
+    connection : 'V/Adj plain / N (+ だ) + し',
+    desc       : '<b>〜し</b> menghubungkan beberapa alasan atau kondisi yang mendukung satu simpulan. Sering digunakan untuk memberikan alasan yang berlapis.',
+    nuance     : 'Berbeda dari から/ので: し tidak menunjuk satu alasan saja, melainkan beberapa faktor.',
+    examples   : [
+      { jp: 'やすい<b>し</b>、おいしい<b>し</b>、このみせがすきです。', id: 'Karena murah dan enak, suka toko ini.' },
+      { jp: 'あめ<b>だし</b>、つかれてる<b>し</b>、でかけたくない。', id: 'Hujan, capek, tidak mau keluar.' },
+    ],
+    see_also_grammar : ['gn5-00065', 'gn5-00066'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+  // ── NOUNS-PREDICATES (11) ───────────────────────────────────
+
+{
+    id         : 'gn5-00001',
+    level      : 'n5',
+    pattern    : '〜は〜です',
+    reading    : '〜wa〜desu',
+    meaning    : 'adalah (kopula afirmatif)',
+    cat        : 'copula',
+    connection : 'N + は + N/Adj + です',
+    desc       : '<b>〜は〜です</b> menyatakan bahwa suatu topik adalah sesuatu. Pola dasar kalimat nominal dalam bahasa Jepang.',
+    nuance     : null,
+    examples   : [
+      { jp: 'わたしは<b>がくせい</b>です。', id: 'Saya adalah pelajar.' },
+      { jp: 'これは<b>ほん</b>です。', id: 'Ini adalah buku.' },
+      { jp: 'やまださんは<b>にほんじん</b>です。', id: 'Yamada-san adalah orang Jepang.' },
+    ],
+    see_also_grammar : ['gn5-00002', 'gn5-00003'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn5-00002',
+    level      : 'n5',
+    pattern    : '〜は〜じゃありません',
+    reading    : '〜wa〜ja arimasen',
+    meaning    : 'bukan (kopula negatif)',
+    cat        : 'copula',
+    connection : 'N + は + N/Adj + じゃありません / ではありません',
+    desc       : '<b>じゃありません</b> adalah bentuk negatif dari です, digunakan untuk menyatakan bahwa topik bukan sesuatu. Bentuk formal: <b>ではありません</b>.',
+    nuance     : 'じゃありません lebih kasual dari ではありません, tapi keduanya polite.',
+    examples   : [
+      { jp: 'これは<b>ほん</b>じゃありません。', id: 'Ini bukan buku.' },
+      { jp: 'わたしは<b>せんせい</b>ではありません。', id: 'Saya bukan guru.' },
+    ],
+    see_also_grammar : ['gn5-00001', 'gn5-00004'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn5-00003',
+    level      : 'n5',
+    pattern    : '〜は〜でした',
+    reading    : '〜wa〜deshita',
+    meaning    : 'adalah (kopula lampau afirmatif)',
+    cat        : 'copula',
+    connection : 'N + は + N/Adj + でした',
+    desc       : '<b>でした</b> adalah bentuk lampau dari です, menyatakan bahwa sesuatu tadinya adalah sesuatu.',
+    nuance     : null,
+    examples   : [
+      { jp: 'きのうは<b>やすみ</b>でした。', id: 'Kemarin adalah hari libur.' },
+      { jp: 'むかし、ここは<b>はたけ</b>でした。', id: 'Dulu, di sini adalah ladang.' },
+    ],
+    see_also_grammar : ['gn5-00001', 'gn5-00004'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn5-00004',
+    level      : 'n5',
+    pattern    : '〜は〜じゃありませんでした',
+    reading    : '〜wa〜ja arimasen deshita',
+    meaning    : 'bukan (kopula lampau negatif)',
+    cat        : 'copula',
+    connection : 'N + は + N/Adj + じゃありませんでした / ではありませんでした',
+    desc       : 'Bentuk lampau negatif dari です, menyatakan bahwa sesuatu tadinya bukan sesuatu.',
+    nuance     : null,
+    examples   : [
+      { jp: 'あの人は<b>がくせい</b>じゃありませんでした。', id: 'Orang itu bukan pelajar (dulu).' },
+      { jp: 'むかし、ここは<b>こうえん</b>ではありませんでした。', id: 'Dulu, di sini bukan taman.' },
+    ],
+    see_also_grammar : ['gn5-00002', 'gn5-00003'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn5-00024',
+    level      : 'n5',
+    pattern    : 'い-adj + くない',
+    reading    : 'i-adj + kunai',
+    meaning    : 'adjektif-i negatif (tidak ...)',
+    cat        : 'predicate-adjective',
+    connection : 'Adj-い → Adj-<b>くない</b> (plain neg) / Adj-<b>くありません</b> (polite neg)',
+    desc       : 'Bentuk negatif adjektif-i: ganti akhiran い dengan <b>くない</b> (kasual) atau <b>くありません</b> (sopan).',
+    nuance     : null,
+    examples   : [
+      { jp: 'このりょうりは<b>おいしくない</b>です。', id: 'Masakan ini tidak enak.' },
+      { jp: 'きょうはあまり<b>さむくありません</b>。', id: 'Hari ini tidak terlalu dingin.' },
+    ],
+    see_also_grammar : ['gn5-00025'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : 'いい → よくない (bukan いくない)',
+    notes      : null,
+  },
+
+{
+    id         : 'gn5-00025',
+    level      : 'n5',
+    pattern    : 'い-adj + かった',
+    reading    : 'i-adj + katta',
+    meaning    : 'adjektif-i lampau (tadinya ...)',
+    cat        : 'predicate-adjective',
+    connection : 'Adj-い → Adj-<b>かった</b> (plain past) / Adj-<b>かったです</b> (polite past)',
+    desc       : 'Bentuk lampau adjektif-i: ganti akhiran い dengan <b>かった</b>. Negatif lampau: <b>くなかった</b>.',
+    nuance     : null,
+    examples   : [
+      { jp: 'きのうはとても<b>さむかった</b>です。', id: 'Kemarin sangat dingin.' },
+      { jp: 'そのえいがは<b>たのしかった</b>！', id: 'Film itu menyenangkan!' },
+    ],
+    see_also_grammar : ['gn5-00024'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : 'いい → よかった',
+    notes      : null,
+  },
+
+{
+    id         : 'gn5-00026',
+    level      : 'n5',
+    pattern    : 'な-adj + です / な-adj + な + N',
+    reading    : 'na-adj + desu / na-adj + na + N',
+    meaning    : 'adjektif-na (predikat & modifier)',
+    cat        : 'predicate-adjective',
+    connection : 'Adj-な + です (predikat) / Adj-な + な + N (modifikasi)',
+    desc       : 'Adjektif-na digunakan sebagai predikat langsung dengan です, atau sebagai modifier nomina dengan menambahkan な.',
+    nuance     : null,
+    examples   : [
+      { jp: 'ここはとても<b>しずか</b>です。', id: 'Di sini sangat tenang.' },
+      { jp: '<b>きれいな</b>はなですね。', id: 'Bunga yang cantik, ya.' },
+    ],
+    see_also_grammar : ['gn5-00001'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn5-00061',
+    level      : 'n5',
+    pattern    : '〜があります / 〜がいます',
+    reading    : '〜ga arimasu / ga imasu',
+    meaning    : 'ada ... (ada sesuatu/seseorang)',
+    cat        : 'existence',
+    connection : 'N + があります (benda) / N + がいます (makhluk hidup)',
+    desc       : '<b>あります</b> untuk keberadaan benda mati. <b>います</b> untuk keberadaan makhluk hidup (orang, hewan). Keduanya berarti "ada".',
+    nuance     : null,
+    examples   : [
+      { jp: 'つくえのうえにほん<b>があります</b>。', id: 'Ada buku di atas meja.' },
+      { jp: 'そとにねこ<b>がいます</b>。', id: 'Ada kucing di luar.' },
+    ],
+    see_also_grammar : ['gn5-00062'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn5-00062',
+    level      : 'n5',
+    pattern    : '〜にあります / 〜にいます',
+    reading    : '〜ni arimasu / ni imasu',
+    meaning    : '... berada di ... (lokasi keberadaan)',
+    cat        : 'existence',
+    connection : 'N (subjek) + は + N (tempat) + に + あります/います',
+    desc       : 'Menyatakan lokasi di mana suatu benda atau makhluk hidup berada, dengan に sebagai partikel lokasi.',
+    nuance     : null,
+    examples   : [
+      { jp: 'ほんはつくえのうえ<b>にあります</b>。', id: 'Buku ada di atas meja.' },
+      { jp: 'こどもはこうえん<b>にいます</b>。', id: 'Anak-anak ada di taman.' },
+    ],
+    see_also_grammar : ['gn5-00061', 'gn5-00009'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn5-00081',
+    level      : 'n5',
+    pattern    : 'V-方',
+    reading    : 'V-kata',
+    meaning    : 'cara melakukan V',
+    cat        : 'nominalization',
+    connection : 'V(ます-stem) + 方',
+    desc       : '<b>V-方</b> menyatakan "cara melakukan sesuatu". Dibentuk dari bentuk ます (ます-stem) + 方. Contoh: 食べ方 = cara makan, 書き方 = cara menulis.',
+    nuance     : 'Digunakan untuk menanyakan atau menjelaskan metode/cara suatu tindakan.',
+    examples   : [
+      { jp: 'この漢字の<b>読み方</b>を教えてください。', id: 'Tolong ajari saya cara membaca kanji ini.' },
+      { jp: 'パスタの<b>作り方</b>を知っていますか？', id: 'Apakah kamu tahu cara membuat pasta?' },
+      { jp: 'ごみの<b>捨て方</b>がわかりません。', id: 'Saya tidak tahu cara membuang sampah.' },
+    ],
+    see_also_grammar : ['gn5-00050'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : 'Pattern from Irodori 初級1 L9.',
+  },
+
+{
+    id         : 'gn5-00084',
+    level      : 'n5',
+    pattern    : 'な A- に',
+    reading    : 'na-A ni',
+    meaning    : 'dengan cara yang [na-adj] — bentuk adverbia',
+    cat        : 'predicate-adjective',
+    connection : 'な-adjective (stem) + に',
+    desc       : 'Mengubah <b>な-adjective</b> menjadi bentuk adverbia dengan menambahkan に. Digunakan untuk memodifikasi kata kerja.',
+    nuance     : 'Setara dengan "-ly" dalam bahasa Indonesia: 丁寧に = dengan sopan, 静かに = dengan tenang.',
+    examples   : [
+      { jp: '<b>丁寧に</b>書いてください。', id: 'Tolong tulis dengan rapi.' },
+      { jp: '<b>静かに</b>してください。', id: 'Tolong tenang.' },
+      { jp: '<b>親切に</b>教えてくれました。', id: 'Beliau mengajar dengan baik hati.' },
+    ],
+    see_also_grammar : ['gn5-00026'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : 'Pattern from Irodori 初級2 L14.',
+  },
+
+  // ── DESIRE-SOCIAL (2) ───────────────────────────────────
+
+{
+    id         : 'gn5-00040',
+    level      : 'n5',
+    pattern    : '〜たい',
+    reading    : '〜tai',
+    meaning    : 'ingin melakukan ...',
+    cat        : 'desire-want',
+    connection : 'V-ます語幹 + たい',
+    desc       : '<b>〜たい</b> menyatakan keinginan si pembicara untuk melakukan sesuatu. Berperilaku seperti adjektif-i.',
+    nuance     : 'Untuk menyatakan keinginan orang ketiga, gunakan 〜たがる.',
+    examples   : [
+      { jp: 'にほんへ<b>いきたい</b>です。', id: 'Ingin pergi ke Jepang.' },
+      { jp: 'なにを<b>たべたい</b>ですか。', id: 'Mau makan apa?' },
+    ],
+    see_also_grammar : ['gn5-00041'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+{
+    id         : 'gn5-00041',
+    level      : 'n5',
+    pattern    : '〜たがる',
+    reading    : '〜tagaru',
+    meaning    : 'sepertinya ingin melakukan ... (orang ketiga)',
+    cat        : 'desire-want',
+    connection : 'V-ます語幹 + たがる',
+    desc       : '<b>〜たがる</b> digunakan untuk menyatakan keinginan orang ketiga, berdasarkan pengamatan perilaku atau sikapnya.',
+    nuance     : null,
+    examples   : [
+      { jp: 'こどもはおかし<b>をたべたがっています</b>。', id: 'Anak itu sepertinya ingin makan kue.' },
+      { jp: 'かれはもっとねむり<b>たがっている</b>。', id: 'Sepertinya dia ingin tidur lebih lama.' },
+    ],
+    see_also_grammar : ['gn5-00040'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : null,
+  },
+
+  // ── PARTICLES (1) ───────────────────────────────────
+
+{
+    id         : 'gn5-00085',
+    level      : 'n5',
+    pattern    : 'から (asal/arah datang)',
+    reading    : 'kara (asal)',
+    meaning    : 'dari [tempat/orang] — menunjukkan asal atau titik keberangkatan',
+    cat        : 'particle',
+    connection : '【場所/人】から + V kedatangan (来ます、帰ります、dll.)',
+    desc       : 'Partikel <b>から</b> menunjukkan asal atau titik keberangkatan. Pada level ini diajarkan sebagai pola tetap <b>【場所】から来ました</b> untuk menyatakan asal negara/kota.',
+    nuance     : 'Berbeda dengan から di gn5-00020 (rentang waktu/tempat から〜まで). Di sini から berdiri sendiri untuk menunjukkan titik asal pergerakan.',
+    examples   : [
+      { jp: 'ブラジル<b>から</b>来ました。', id: 'Saya berasal dari Brasil.' },
+      { jp: 'インドネシア<b>から</b>来ました。', id: 'Saya dari Indonesia.' },
+      { jp: '大阪<b>から</b>来ました。', id: 'Saya datang dari Osaka.' },
+    ],
+    see_also_grammar : ['gn5-00020'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : 'Pattern from Irodori 入門 L3. Diajarkan sebagai frasa tetap; ekspansi pola dibahas di level Elementary.',
+  },
+
+  // ── ADVERBS (1) ───────────────────────────────────
+
+{
+    id         : 'gn5-00087',
+    level      : 'n5',
+    pattern    : 'いつも / よく / あまり〜ない',
+    reading    : 'itsumo / yoku / amari〜nai',
+    meaning    : 'selalu / sering / jarang (adverbia frekuensi)',
+    cat        : 'adverb',
+    connection : 'Adverbia + V-ます / V-ません',
+    desc       : 'Adverbia yang menyatakan frekuensi kegiatan: <b>いつも</b> (selalu, setiap saat), <b>よく</b> (sering), <b>あまり</b> (jarang — harus dipakai dengan bentuk negatif).',
+    nuance     : 'あまり HARUS diikuti negatif (あまり〜ません/ない). Jika dipakai dengan positif artinya berbeda. たいてい (biasanya) dan ときどき (kadang-kadang) adalah adverbia frekuensi terkait.',
+    examples   : [
+      { jp: '<b>いつも</b>バスで行きます。', id: 'Saya selalu pergi naik bus.' },
+      { jp: '<b>よく</b>図書館で勉強します。', id: 'Saya sering belajar di perpustakaan.' },
+      { jp: 'お肉は<b>あまり</b>食べません。', id: 'Saya jarang makan daging.' },
+    ],
+    see_also_grammar : [],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : 'あまり hanya digunakan dengan bentuk negatif untuk menyatakan frekuensi rendah.',
+    notes      : 'Pattern from Irodori 入門 L5.',
+  },
+
+  // ── EXPRESSIONS (5) ───────────────────────────────────
+
+{
+    id         : 'gn5-00086',
+    level      : 'n5',
+    pattern    : 'N は ちょっと…',
+    reading    : 'N wa chotto...',
+    meaning    : '[N] agak... (penolakan tidak langsung / ekspresi keengganan)',
+    cat        : 'expression',
+    connection : 'N + は + ちょっと + … (kalimat digantung)',
+    desc       : 'Ekspresi sopan untuk menyatakan keengganan atau ketidaksukaan tanpa mengatakan "tidak" secara langsung. Kalimat sengaja tidak diselesaikan — lawan bicara memahami maknanya dari konteks.',
+    nuance     : 'ちょっと secara harfiah = sedikit, tapi dalam konteks ini menjadi eufemisme untuk penolakan. Sangat umum dan penting dalam komunikasi Jepang yang tidak langsung.',
+    examples   : [
+      { jp: 'わさびは、<b>ちょっと</b>…。', id: 'Wasabi... agak susah (tidak suka).' },
+      { jp: '月曜日は、<b>ちょっと</b>…。', id: 'Senin itu... agak susah.' },
+      { jp: 'それは<b>ちょっと</b>…。', id: 'Itu... agak...' },
+    ],
+    see_also_grammar : [],
+    see_also_vocab   : [],
+    register   : 'polite',
+    exceptions : null,
+    notes      : 'Pattern from Irodori 入門 L5. Ekspresi khas budaya Jepang: indirect refusal.',
+  },
+
+{
+    id         : 'gn5-00088',
+    level      : 'n5',
+    pattern    : 'N、【数】お願いします / ください',
+    reading    : 'N, [number] onegaishimasu / kudasai',
+    meaning    : 'tolong [N] sebanyak [jumlah] (memesan atau meminta barang)',
+    cat        : 'expression',
+    connection : 'N + jumlah (hitotsu/futatsu/...) + お願いします atau ください',
+    desc       : 'Pola untuk memesan atau meminta barang dengan jumlah tertentu. Gunakan penghitung umum ひとつ・ふたつ・みっつ… untuk makanan/benda. Urutan: nama barang → jumlah → お願いします.',
+    nuance     : 'お願いします lebih sopan dari ください. Di restoran, toko, dll. Untuk barang tipis/panjang/kecil gunakan penghitung spesifik (本、枚、冊, dll.).',
+    examples   : [
+      { jp: 'コーヒー、<b>ひとつお願いします</b>。', id: 'Satu kopi, tolong.' },
+      { jp: '生ビール3つと、ウーロン茶1つ、<b>お願いします</b>。', id: 'Tiga bir draft dan satu oolong tea, tolong.' },
+      { jp: 'これ、<b>ふたつください</b>。', id: 'Ini, dua, tolong.' },
+    ],
+    see_also_grammar : ['gn5-00030'],
+    see_also_vocab   : [],
+    register   : 'polite',
+    exceptions : null,
+    notes      : 'Pattern from Irodori 入門 L6.',
+  },
+
+{
+    id         : 'gn5-00090',
+    level      : 'n5',
+    pattern    : 'どれ / どの N',
+    reading    : 'dore / dono N',
+    meaning    : 'yang mana (memilih dari beberapa pilihan)',
+    cat        : 'interrogative',
+    connection : 'どれ (berdiri sendiri) / どの + N',
+    desc       : '<b>どれ</b> = "yang mana?" digunakan saat ada 3+ pilihan dan objeknya sudah diketahui. <b>どの+N</b> = "N yang mana?" Berbeda dengan どちら/どっち yang dipakai untuk 2 pilihan.',
+    nuance     : 'どれ berdiri sendiri; どの selalu diikuti nomina. Untuk 2 pilihan, gunakan どちら/どっち. Untuk menanyakan orang, gunakan どの方/どなた (formal).',
+    examples   : [
+      { jp: '<b>どれ</b>がいいですか？', id: 'Yang mana yang bagus?' },
+      { jp: '<b>どの</b>かばんですか？', id: 'Tas yang mana?' },
+      { jp: '<b>どれ</b>にしますか？', id: 'Mau pilih yang mana?' },
+    ],
+    see_also_grammar : ['gn5-00018'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : 'Pattern from Irodori 入門 L9.',
+  },
+
+{
+    id         : 'gn5-00091',
+    level      : 'n5',
+    pattern    : 'N が わかります / できます',
+    reading    : 'N ga wakarimasu / dekimasu',
+    meaning    : 'mengerti N / bisa melakukan N',
+    cat        : 'expression',
+    connection : 'N + が + わかります atau できます',
+    desc       : 'Verba <b>わかります</b> (mengerti/paham) dan <b>できます</b> (bisa/mampu) digunakan dengan partikel <b>が</b>, bukan を. Partikel が menandai objek pemahaman/kemampuan.',
+    nuance     : 'Kesalahan umum: menggunakan を alih-alih が. わかります dan できます adalah verba potensial/stative yang membutuhkan が. できます juga bisa digunakan dengan ことができます (gn5-00050).',
+    examples   : [
+      { jp: '日本語が少し<b>わかります</b>。', id: 'Saya sedikit mengerti bahasa Jepang.' },
+      { jp: '料理が<b>できます</b>。', id: 'Saya bisa memasak.' },
+      { jp: '漢字があまり<b>わかりません</b>。', id: 'Saya kurang paham kanji.' },
+    ],
+    see_also_grammar : ['gn5-00006', 'gn5-00050'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : 'Pattern from Irodori 入門 L12.',
+  },
+
+{
+    id         : 'gn5-00093',
+    level      : 'n5',
+    pattern    : 'どんな N',
+    reading    : 'donna N',
+    meaning    : 'N seperti apa / N yang bagaimana (menanyakan deskripsi)',
+    cat        : 'interrogative',
+    connection : 'どんな + N + ですか？',
+    desc       : '<b>どんな</b> digunakan untuk menanyakan deskripsi atau karakteristik sebuah nomina. Setara dengan "what kind of" atau "what is [N] like?" dalam bahasa Inggris. Jawaban biasanya berupa adjektif.',
+    nuance     : 'Berbeda dengan どの (memilih dari pilihan tertentu). どんな menanyakan sifat umum tanpa referensi pilihan spesifik.',
+    examples   : [
+      { jp: '<b>どんな</b>人ですか？', id: 'Orangnya seperti apa?' },
+      { jp: '<b>どんな</b>料理が好きですか？', id: 'Suka masakan seperti apa?' },
+      { jp: '<b>どんな</b>仕事をしていますか？', id: 'Kamu bekerja di bidang apa?' },
+    ],
+    see_also_grammar : ['gn5-00090'],
+    see_also_vocab   : [],
+    register   : null,
+    exceptions : null,
+    notes      : 'Pattern from Irodori 入門 L15.',
+  }
+
 ];

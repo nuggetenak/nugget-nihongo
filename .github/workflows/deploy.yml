@@ -22,6 +22,15 @@ jobs:
       - name: Install Wrangler
         run: npm install -g wrangler
 
+      - name: Merge vocab category files
+        run: node scripts/merge-vocab.js
+
+      - name: Merge grammar category files
+        run: node scripts/merge-grammar.js
+
+      - name: Validate merged output
+        run: node tests/run.js
+
       - name: Deploy to Cloudflare Pages
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
