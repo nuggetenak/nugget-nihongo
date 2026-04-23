@@ -1,11 +1,13 @@
-// ══════════════════════════════════════════════════════
-//  vocab-n3.js — Nugget Nihongo Global Vocab DB · JLPT N3
-//  Total: 70 entries · Schema: data/_schema-vocab.md
-//  Dibuat oleh: Agent 1 Crispy (Opus 4.6) — direct fill
-//  Versi: v14.27.7
-// ══════════════════════════════════════════════════════
+// ══════════════════════════════════════════════════════════════
+//  vocab-n3.js — Nugget Nihongo · JLPT N3
+//  AUTO-GENERATED — DO NOT EDIT DIRECTLY
+//  Edit: public/data/vocab/n3/*.js  then run: node scripts/merge-vocab.js
+//  Entries: 735 | Generated: 2026-04-23
+// ══════════════════════════════════════════════════════════════
 
 window.vocabN3 = [
+
+  // ── VERBS (374) ────────────────────────────────────────
 
 {
   "id": "vg-n3-00001",
@@ -1263,100 +1265,6 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-00027",
-  "word": "環境",
-  "reading": "かんきょう",
-  "romaji": "kankyou",
-  "meaning_id": "lingkungan",
-  "meaning_en": "environment",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "kehidupan-sehari",
-    "akademik"
-  ],
-  "register": "neutral",
-  "lawan_bicara": [
-    "rekan",
-    "umum"
-  ],
-  "nuance": "Bisa merujuk lingkungan alam atau lingkungan kerja/belajar.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "環境を守ることは大切だ。",
-      "id": "Melindungi lingkungan itu penting.",
-      "level": "n3",
-      "tags": [
-        "akademik"
-      ]
-    },
-    {
-      "jp": "新しい環境に慣れるまで時間がかかる。",
-      "id": "Butuh waktu untuk terbiasa dengan lingkungan baru.",
-      "level": "n3",
-      "tags": [
-        "kehidupan-sehari"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v14.27"
-},
-
-{
-  "id": "vg-n3-00028",
-  "word": "意見",
-  "reading": "いけん",
-  "romaji": "iken",
-  "meaning_id": "pendapat",
-  "meaning_en": "opinion",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "pekerjaan",
-    "hubungan"
-  ],
-  "register": "neutral",
-  "lawan_bicara": [
-    "rekan",
-    "umum"
-  ],
-  "nuance": "Pendapat yang diungkapkan secara eksplisit.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "あなたの意見を聞かせてください。",
-      "id": "Tolong beri tahu pendapat Anda.",
-      "level": "n3",
-      "tags": [
-        "pekerjaan"
-      ]
-    },
-    {
-      "jp": "意見が合わないこともある。",
-      "id": "Ada kalanya pendapat tidak cocok.",
-      "level": "n3",
-      "tags": [
-        "hubungan"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v14.27"
-},
-
-{
   "id": "vg-n3-00029",
   "word": "関係",
   "reading": "かんけい",
@@ -1399,1093 +1307,6 @@ window.vocabN3 = [
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": [],
-  "added_v": "v14.27"
-},
-
-{
-  "id": "vg-n3-00030",
-  "word": "文化",
-  "reading": "ぶんか",
-  "romaji": "bunka",
-  "meaning_id": "budaya",
-  "meaning_en": "culture",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "akademik",
-    "kehidupan-sehari"
-  ],
-  "register": "neutral",
-  "lawan_bicara": [
-    "umum"
-  ],
-  "nuance": "Budaya dalam arti luas — tradisi, adat istiadat, kebiasaan masyarakat.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "日本の文化に興味がある。",
-      "id": "Saya tertarik dengan budaya Jepang.",
-      "level": "n3",
-      "tags": [
-        "akademik"
-      ]
-    },
-    {
-      "jp": "食文化は国によって違う。",
-      "id": "Budaya makan berbeda-beda di setiap negara.",
-      "level": "n3",
-      "tags": [
-        "kehidupan-sehari"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v14.27"
-},
-
-{
-  "id": "vg-n3-00031",
-  "word": "技術",
-  "reading": "ぎじゅつ",
-  "romaji": "gijutsu",
-  "meaning_id": "teknologi, keterampilan",
-  "meaning_en": "technology, skill",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "pekerjaan",
-    "akademik"
-  ],
-  "register": "neutral",
-  "lawan_bicara": [
-    "rekan",
-    "umum"
-  ],
-  "nuance": "Bisa merujuk teknologi (IT技術) atau keterampilan tangan.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "最新の技術を使っている。",
-      "id": "Menggunakan teknologi terbaru.",
-      "level": "n3",
-      "tags": [
-        "pekerjaan"
-      ]
-    },
-    {
-      "jp": "料理の技術を磨きたい。",
-      "id": "Ingin mengasah keterampilan memasak.",
-      "level": "n3",
-      "tags": [
-        "hiburan"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v14.27"
-},
-
-{
-  "id": "vg-n3-00032",
-  "word": "社会",
-  "reading": "しゃかい",
-  "romaji": "shakai",
-  "meaning_id": "masyarakat",
-  "meaning_en": "society",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "akademik"
-  ],
-  "register": "neutral",
-  "lawan_bicara": [
-    "umum"
-  ],
-  "nuance": "Masyarakat secara umum atau mata pelajaran IPS (社会科).",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "社会のルールを守るべきだ。",
-      "id": "Kita harus mematuhi aturan masyarakat.",
-      "level": "n3",
-      "tags": [
-        "akademik"
-      ]
-    },
-    {
-      "jp": "社会人になって忙しくなった。",
-      "id": "Sejak jadi pekerja (anggota masyarakat), jadi sibuk.",
-      "level": "n3",
-      "tags": [
-        "pekerjaan"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v14.27"
-},
-
-{
-  "id": "vg-n3-00033",
-  "word": "原因",
-  "reading": "げんいん",
-  "romaji": "genin",
-  "meaning_id": "penyebab",
-  "meaning_en": "cause, reason",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [
-    "gn3-00001",
-    "gn3-00002"
-  ],
-  "formalitas": 3,
-  "domain": [
-    "akademik",
-    "kehidupan-sehari"
-  ],
-  "register": "neutral",
-  "lawan_bicara": [
-    "rekan",
-    "umum"
-  ],
-  "nuance": "Penyebab dalam konteks analitis — lebih formal dari 理由 (alasan).",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "事故の原因を調べている。",
-      "id": "Sedang menyelidiki penyebab kecelakaan.",
-      "level": "n3",
-      "tags": [
-        "akademik"
-      ]
-    },
-    {
-      "jp": "病気の原因はストレスだった。",
-      "id": "Penyebab penyakitnya adalah stres.",
-      "level": "n3",
-      "tags": [
-        "kesehatan"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [
-    "vg-n3-00034"
-  ],
-  "see_also": [],
-  "added_v": "v14.27"
-},
-
-{
-  "id": "vg-n3-00034",
-  "word": "結果",
-  "reading": "けっか",
-  "romaji": "kekka",
-  "meaning_id": "hasil",
-  "meaning_en": "result",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "akademik",
-    "pekerjaan"
-  ],
-  "register": "neutral",
-  "lawan_bicara": [
-    "rekan",
-    "umum"
-  ],
-  "nuance": "Hasil dari suatu proses atau tindakan.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "試験の結果を見てがっかりした。",
-      "id": "Melihat hasil ujian, jadi kecewa.",
-      "level": "n3",
-      "tags": [
-        "pendidikan"
-      ]
-    },
-    {
-      "jp": "努力した結果、成功した。",
-      "id": "Sebagai hasil kerja keras, berhasil.",
-      "level": "n3",
-      "tags": [
-        "pekerjaan"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [
-    "vg-n3-00033"
-  ],
-  "see_also": [],
-  "added_v": "v14.27"
-},
-
-{
-  "id": "vg-n3-00035",
-  "word": "事実",
-  "reading": "じじつ",
-  "romaji": "jijitsu",
-  "meaning_id": "fakta, kenyataan",
-  "meaning_en": "fact, truth",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "akademik"
-  ],
-  "register": "neutral",
-  "lawan_bicara": [
-    "rekan",
-    "umum"
-  ],
-  "nuance": "Fakta objektif — sesuatu yang benar-benar terjadi.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "事実を正直に話してください。",
-      "id": "Tolong ceritakan faktanya dengan jujur.",
-      "level": "n3",
-      "tags": [
-        "hubungan"
-      ]
-    },
-    {
-      "jp": "それは事実ではない。",
-      "id": "Itu bukan fakta.",
-      "level": "n3",
-      "tags": [
-        "akademik"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v14.27"
-},
-
-{
-  "id": "vg-n3-00036",
-  "word": "目的",
-  "reading": "もくてき",
-  "romaji": "mokuteki",
-  "meaning_id": "tujuan",
-  "meaning_en": "purpose, goal",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [
-    "gn3-00053"
-  ],
-  "formalitas": 3,
-  "domain": [
-    "pekerjaan",
-    "akademik"
-  ],
-  "register": "neutral",
-  "lawan_bicara": [
-    "rekan",
-    "umum"
-  ],
-  "nuance": "Tujuan yang spesifik — lebih formal dari 目標 (target).",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "旅行の目的は何ですか。",
-      "id": "Apa tujuan perjalanan Anda?",
-      "level": "n3",
-      "tags": [
-        "kehidupan-sehari"
-      ]
-    },
-    {
-      "jp": "目的を持って行動することが大切だ。",
-      "id": "Penting untuk bertindak dengan tujuan.",
-      "level": "n3",
-      "tags": [
-        "pekerjaan"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v14.27"
-},
-
-{
-  "id": "vg-n3-00037",
-  "word": "程度",
-  "reading": "ていど",
-  "romaji": "teido",
-  "meaning_id": "tingkat, derajat",
-  "meaning_en": "degree, extent",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "akademik"
-  ],
-  "register": "neutral",
-  "lawan_bicara": [
-    "rekan",
-    "umum"
-  ],
-  "nuance": "Tingkatan atau ukuran sesuatu. Juga dipakai sebagai sufiks: ある程度.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "ある程度の日本語ができる。",
-      "id": "Bisa bahasa Jepang sampai tingkat tertentu.",
-      "level": "n3",
-      "tags": [
-        "pendidikan"
-      ]
-    },
-    {
-      "jp": "被害の程度はまだわからない。",
-      "id": "Tingkat kerusakannya belum diketahui.",
-      "level": "n3",
-      "tags": [
-        "akademik"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v14.27"
-},
-
-{
-  "id": "vg-n3-00038",
-  "word": "相手",
-  "reading": "あいて",
-  "romaji": "aite",
-  "meaning_id": "lawan bicara, pasangan",
-  "meaning_en": "partner, opponent, the other person",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": [
-    "hubungan"
-  ],
-  "register": "neutral",
-  "lawan_bicara": [
-    "teman",
-    "rekan"
-  ],
-  "nuance": "Orang yang berhadapan dengan kita — bisa lawan, pasangan, atau mitra.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "相手の気持ちを考えよう。",
-      "id": "Mari pikirkan perasaan orang lain.",
-      "level": "n3",
-      "tags": [
-        "hubungan"
-      ]
-    },
-    {
-      "jp": "試合の相手は強かった。",
-      "id": "Lawan pertandingannya kuat.",
-      "level": "n3",
-      "tags": [
-        "kehidupan-sehari"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v14.27"
-},
-
-{
-  "id": "vg-n3-00039",
-  "word": "場合",
-  "reading": "ばあい",
-  "romaji": "baai",
-  "meaning_id": "keadaan, kasus",
-  "meaning_en": "case, situation",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "pekerjaan",
-    "akademik"
-  ],
-  "register": "neutral",
-  "lawan_bicara": [
-    "rekan",
-    "umum"
-  ],
-  "nuance": "Sering dipakai dalam pola 〜場合は (dalam hal/jika...).",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "雨の場合は中止します。",
-      "id": "Kalau hujan, akan dibatalkan.",
-      "level": "n3",
-      "tags": [
-        "kehidupan-sehari"
-      ]
-    },
-    {
-      "jp": "この場合、どうすればいいですか。",
-      "id": "Dalam kasus ini, sebaiknya bagaimana?",
-      "level": "n3",
-      "tags": [
-        "pekerjaan"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v14.27"
-},
-
-{
-  "id": "vg-n3-00040",
-  "word": "状態",
-  "reading": "じょうたい",
-  "romaji": "joutai",
-  "meaning_id": "kondisi, keadaan",
-  "meaning_en": "condition, state",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "kehidupan-sehari",
-    "kesehatan"
-  ],
-  "register": "neutral",
-  "lawan_bicara": [
-    "rekan",
-    "umum"
-  ],
-  "nuance": "Kondisi saat ini dari seseorang atau sesuatu.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "体の状態はどうですか。",
-      "id": "Bagaimana kondisi tubuhnya?",
-      "level": "n3",
-      "tags": [
-        "kesehatan"
-      ]
-    },
-    {
-      "jp": "道路の状態が悪い。",
-      "id": "Kondisi jalannya buruk.",
-      "level": "n3",
-      "tags": [
-        "kehidupan-sehari"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v14.27"
-},
-
-{
-  "id": "vg-n3-00041",
-  "word": "複雑",
-  "reading": "ふくざつ",
-  "romaji": "fukuzatsu",
-  "meaning_id": "rumit, kompleks",
-  "meaning_en": "complicated, complex",
-  "jlpt": "n3",
-  "pos": "na-adj",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "kehidupan-sehari",
-    "akademik"
-  ],
-  "register": "neutral",
-  "lawan_bicara": [
-    "rekan",
-    "umum"
-  ],
-  "nuance": "Na-adjektif. Lawan: 簡単 (sederhana).",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "この問題は複雑だ。",
-      "id": "Masalah ini rumit.",
-      "level": "n3",
-      "tags": [
-        "akademik"
-      ]
-    },
-    {
-      "jp": "人間関係は複雑になりやすい。",
-      "id": "Hubungan antar manusia mudah menjadi rumit.",
-      "level": "n3",
-      "tags": [
-        "hubungan"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v14.27"
-},
-
-{
-  "id": "vg-n3-00042",
-  "word": "正確",
-  "reading": "せいかく",
-  "romaji": "seikaku",
-  "meaning_id": "tepat, akurat",
-  "meaning_en": "accurate, precise",
-  "jlpt": "n3",
-  "pos": "na-adj",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "pekerjaan",
-    "akademik"
-  ],
-  "register": "neutral",
-  "lawan_bicara": [
-    "rekan",
-    "umum"
-  ],
-  "nuance": "Na-adjektif. Informasi atau tindakan yang tepat dan tanpa kesalahan.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "正確な情報を教えてください。",
-      "id": "Tolong beri informasi yang akurat.",
-      "level": "n3",
-      "tags": [
-        "pekerjaan"
-      ]
-    },
-    {
-      "jp": "この時計は正確だ。",
-      "id": "Jam ini akurat.",
-      "level": "n3",
-      "tags": [
-        "kehidupan-sehari"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v14.27"
-},
-
-{
-  "id": "vg-n3-00043",
-  "word": "重要",
-  "reading": "じゅうよう",
-  "romaji": "juuyou",
-  "meaning_id": "penting",
-  "meaning_en": "important",
-  "jlpt": "n3",
-  "pos": "na-adj",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "pekerjaan",
-    "akademik"
-  ],
-  "register": "neutral",
-  "lawan_bicara": [
-    "rekan",
-    "umum"
-  ],
-  "nuance": "Na-adjektif. Lebih formal dari 大切 dan 大事.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "これは重要な問題だ。",
-      "id": "Ini masalah penting.",
-      "level": "n3",
-      "tags": [
-        "pekerjaan"
-      ]
-    },
-    {
-      "jp": "健康は何より重要だ。",
-      "id": "Kesehatan lebih penting dari apa pun.",
-      "level": "n3",
-      "tags": [
-        "kesehatan"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v14.27"
-},
-
-{
-  "id": "vg-n3-00044",
-  "word": "厳しい",
-  "reading": "きびしい",
-  "romaji": "kibishii",
-  "meaning_id": "keras, ketat, berat",
-  "meaning_en": "strict, severe, harsh",
-  "jlpt": "n3",
-  "pos": "i-adj",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": [
-    "pekerjaan",
-    "kehidupan-sehari"
-  ],
-  "register": "neutral",
-  "lawan_bicara": [
-    "teman",
-    "rekan"
-  ],
-  "nuance": "Bisa menggambarkan orang (keras), aturan (ketat), atau situasi (berat).",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "先生は厳しいけど、優しい。",
-      "id": "Gurunya keras, tapi baik.",
-      "level": "n3",
-      "tags": [
-        "pendidikan"
-      ]
-    },
-    {
-      "jp": "今年の冬は厳しかった。",
-      "id": "Musim dingin tahun ini berat.",
-      "level": "n3",
-      "tags": [
-        "kehidupan-sehari"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [
-    "vg-n3-00045"
-  ],
-  "see_also": [],
-  "added_v": "v14.27"
-},
-
-{
-  "id": "vg-n3-00045",
-  "word": "優しい",
-  "reading": "やさしい",
-  "romaji": "yasashii",
-  "meaning_id": "baik hati, lembut",
-  "meaning_en": "kind, gentle",
-  "jlpt": "n3",
-  "pos": "i-adj",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": [
-    "hubungan",
-    "emosi"
-  ],
-  "register": "neutral",
-  "lawan_bicara": [
-    "teman",
-    "umum"
-  ],
-  "nuance": "Menggambarkan karakter yang ramah dan penuh perhatian.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "彼はみんなに優しい。",
-      "id": "Dia baik kepada semua orang.",
-      "level": "n3",
-      "tags": [
-        "hubungan"
-      ]
-    },
-    {
-      "jp": "優しい言葉をかけてくれた。",
-      "id": "Dia mengucapkan kata-kata yang lembut.",
-      "level": "n3",
-      "tags": [
-        "emosi"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [
-    "vg-n3-00044"
-  ],
-  "see_also": [],
-  "added_v": "v14.27"
-},
-
-{
-  "id": "vg-n3-00046",
-  "word": "深い",
-  "reading": "ふかい",
-  "romaji": "fukai",
-  "meaning_id": "dalam",
-  "meaning_en": "deep",
-  "jlpt": "n3",
-  "pos": "i-adj",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": [
-    "kehidupan-sehari"
-  ],
-  "register": "neutral",
-  "lawan_bicara": [
-    "teman",
-    "umum"
-  ],
-  "nuance": "Bisa literal (air dalam) atau figuratif (makna yang dalam, hubungan yang mendalam).",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "この川は深いから気をつけて。",
-      "id": "Sungai ini dalam, hati-hati.",
-      "level": "n3",
-      "tags": [
-        "kehidupan-sehari"
-      ]
-    },
-    {
-      "jp": "日本文化について深い知識がある。",
-      "id": "Punya pengetahuan mendalam tentang budaya Jepang.",
-      "level": "n3",
-      "tags": [
-        "akademik"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v14.27"
-},
-
-{
-  "id": "vg-n3-00047",
-  "word": "珍しい",
-  "reading": "めずらしい",
-  "romaji": "mezurashii",
-  "meaning_id": "langka, jarang",
-  "meaning_en": "rare, unusual",
-  "jlpt": "n3",
-  "pos": "i-adj",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": [
-    "kehidupan-sehari"
-  ],
-  "register": "neutral",
-  "lawan_bicara": [
-    "teman",
-    "umum"
-  ],
-  "nuance": "Sesuatu yang tidak umum dan karena itu menarik.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "珍しい魚を見つけた。",
-      "id": "Menemukan ikan langka.",
-      "level": "n3",
-      "tags": [
-        "kehidupan-sehari"
-      ]
-    },
-    {
-      "jp": "あの人が遅刻するのは珍しい。",
-      "id": "Jarang sekali orang itu terlambat.",
-      "level": "n3",
-      "tags": [
-        "kehidupan-sehari"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v14.27"
-},
-
-{
-  "id": "vg-n3-00048",
-  "word": "恥ずかしい",
-  "reading": "はずかしい",
-  "romaji": "hazukashii",
-  "meaning_id": "malu",
-  "meaning_en": "embarrassing, ashamed",
-  "jlpt": "n3",
-  "pos": "i-adj",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": [
-    "emosi"
-  ],
-  "register": "neutral",
-  "lawan_bicara": [
-    "teman",
-    "diri-sendiri"
-  ],
-  "nuance": "Perasaan malu — bisa karena melakukan kesalahan atau karena diperhatikan.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "みんなの前で歌うのは恥ずかしい。",
-      "id": "Malu bernyanyi di depan semua orang.",
-      "level": "n3",
-      "tags": [
-        "emosi"
-      ]
-    },
-    {
-      "jp": "恥ずかしくて何も言えなかった。",
-      "id": "Terlalu malu sehingga tidak bisa bilang apa-apa.",
-      "level": "n3",
-      "tags": [
-        "emosi"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v14.27"
-},
-
-{
-  "id": "vg-n3-00049",
-  "word": "急に",
-  "reading": "きゅうに",
-  "romaji": "kyuuni",
-  "meaning_id": "tiba-tiba",
-  "meaning_en": "suddenly",
-  "jlpt": "n3",
-  "pos": "adverb-manner",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": [
-    "kehidupan-sehari"
-  ],
-  "register": "neutral",
-  "lawan_bicara": [
-    "teman",
-    "umum"
-  ],
-  "nuance": "Perubahan mendadak tanpa peringatan. Mirip 突然 tapi lebih kasual.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "急に雨が降ってきた。",
-      "id": "Tiba-tiba hujan turun.",
-      "level": "n3",
-      "tags": [
-        "kehidupan-sehari"
-      ]
-    },
-    {
-      "jp": "急に予定が変わった。",
-      "id": "Jadwalnya tiba-tiba berubah.",
-      "level": "n3",
-      "tags": [
-        "kehidupan-sehari"
-      ]
-    }
-  ],
-  "synonyms": [
-    "vg-n3-00050"
-  ],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v14.27"
-},
-
-{
-  "id": "vg-n3-00050",
-  "word": "突然",
-  "reading": "とつぜん",
-  "romaji": "totsuzen",
-  "meaning_id": "tiba-tiba, mendadak",
-  "meaning_en": "suddenly, unexpectedly",
-  "jlpt": "n3",
-  "pos": "adverb-manner",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "kehidupan-sehari"
-  ],
-  "register": "neutral",
-  "lawan_bicara": [
-    "umum"
-  ],
-  "nuance": "Lebih formal dari 急に. Sering dipakai di awal kalimat.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "突然電話が鳴った。",
-      "id": "Telepon tiba-tiba berbunyi.",
-      "level": "n3",
-      "tags": [
-        "kehidupan-sehari"
-      ]
-    },
-    {
-      "jp": "突然の知らせに驚いた。",
-      "id": "Kaget dengan berita yang mendadak.",
-      "level": "n3",
-      "tags": [
-        "emosi"
-      ]
-    }
-  ],
-  "synonyms": [
-    "vg-n3-00049"
-  ],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v14.27"
-},
-
-{
-  "id": "vg-n3-00051",
-  "word": "必ず",
-  "reading": "かならず",
-  "romaji": "kanarazu",
-  "meaning_id": "pasti, selalu",
-  "meaning_en": "certainly, always, without fail",
-  "jlpt": "n3",
-  "pos": "adverb-frequency",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": [
-    "kehidupan-sehari"
-  ],
-  "register": "neutral",
-  "lawan_bicara": [
-    "teman",
-    "rekan"
-  ],
-  "nuance": "Menekankan kepastian bahwa sesuatu akan terjadi.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "約束は必ず守る。",
-      "id": "Janji pasti ditepati.",
-      "level": "n3",
-      "tags": [
-        "hubungan"
-      ]
-    },
-    {
-      "jp": "出かける前に必ず鍵を確認する。",
-      "id": "Sebelum keluar, selalu cek kunci.",
-      "level": "n3",
-      "tags": [
-        "kehidupan-sehari"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [
-    "vg-n3-00052"
-  ],
-  "see_also": [],
-  "added_v": "v14.27"
-},
-
-{
-  "id": "vg-n3-00052",
-  "word": "決して",
-  "reading": "けっして",
-  "romaji": "kesshite",
-  "meaning_id": "sama sekali tidak",
-  "meaning_en": "never, by no means",
-  "jlpt": "n3",
-  "pos": "adverb-frequency",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "kehidupan-sehari"
-  ],
-  "register": "neutral",
-  "lawan_bicara": [
-    "umum"
-  ],
-  "nuance": "SELALU dipakai dengan bentuk negatif. 決して〜ない.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "彼は決して嘘をつかない。",
-      "id": "Dia sama sekali tidak pernah berbohong.",
-      "level": "n3",
-      "tags": [
-        "hubungan"
-      ]
-    },
-    {
-      "jp": "この秘密は決して言わないでください。",
-      "id": "Tolong jangan pernah beritahu rahasia ini.",
-      "level": "n3",
-      "tags": [
-        "hubungan"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [
-    "vg-n3-00051"
-  ],
   "see_also": [],
   "added_v": "v14.27"
 },
@@ -3355,9 +2176,7 @@ window.vocabN3 = [
   "antonyms": [],
   "see_also": [],
   "added_v": "v14.27"
-}
-
-,
+},
 
 {
   "id": "vg-n3-00071",
@@ -4810,9 +3629,8 @@ window.vocabN3 = [
     "vg-n3-00073"
   ],
   "added_v": "v15"
-}
+},
 
-,
 {
   "id": "vg-n3-00101",
   "word": "悩む",
@@ -4854,6 +3672,7 @@ window.vocabN3 = [
   "see_also": [],
   "added_v": "v15"
 },
+
 {
   "id": "vg-n3-00102",
   "word": "驚く",
@@ -4895,6 +3714,7 @@ window.vocabN3 = [
   "see_also": [],
   "added_v": "v15"
 },
+
 {
   "id": "vg-n3-00103",
   "word": "喜ぶ",
@@ -4936,6 +3756,7 @@ window.vocabN3 = [
   "see_also": [],
   "added_v": "v15"
 },
+
 {
   "id": "vg-n3-00104",
   "word": "悲しむ",
@@ -4970,6 +3791,7 @@ window.vocabN3 = [
   "see_also": [],
   "added_v": "v15"
 },
+
 {
   "id": "vg-n3-00105",
   "word": "怒る",
@@ -5013,6 +3835,7 @@ window.vocabN3 = [
   ],
   "added_v": "v15"
 },
+
 {
   "id": "vg-n3-00106",
   "word": "起こる",
@@ -5056,6 +3879,7 @@ window.vocabN3 = [
   ],
   "added_v": "v15"
 },
+
 {
   "id": "vg-n3-00107",
   "word": "続ける",
@@ -5097,6 +3921,7 @@ window.vocabN3 = [
   "see_also": [],
   "added_v": "v15"
 },
+
 {
   "id": "vg-n3-00108",
   "word": "止まる",
@@ -5138,6 +3963,7 @@ window.vocabN3 = [
   "see_also": [],
   "added_v": "v15"
 },
+
 {
   "id": "vg-n3-00109",
   "word": "増える",
@@ -5179,6 +4005,7 @@ window.vocabN3 = [
   "see_also": [],
   "added_v": "v15"
 },
+
 {
   "id": "vg-n3-00110",
   "word": "減る",
@@ -5220,390 +4047,7 @@ window.vocabN3 = [
   "see_also": [],
   "added_v": "v15"
 },
-{
-  "id": "vg-n3-00111",
-  "word": "珍しい",
-  "reading": "めずらしい",
-  "romaji": "mezurashii",
-  "meaning_id": "langka, jarang ada",
-  "meaning_en": "rare, unusual",
-  "jlpt": "n3",
-  "pos": "i-adj",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": [
-    "deskripsi"
-  ],
-  "register": "neutral",
-  "nuance": null,
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "この花は日本では<b>珍しい</b>。",
-      "id": "Bunga ini langka di Jepang.",
-      "level": "n3",
-      "tags": [
-        "alam-lingkungan"
-      ]
-    },
-    {
-      "jp": "<b>珍しい</b>名前ですね。",
-      "id": "Nama yang tidak biasa ya.",
-      "level": "n3",
-      "tags": [
-        "hubungan-konsep"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00112",
-  "word": "厳しい",
-  "reading": "きびしい",
-  "romaji": "kibishii",
-  "meaning_id": "ketat, keras, berat",
-  "meaning_en": "strict, severe",
-  "jlpt": "n3",
-  "pos": "i-adj",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": [
-    "deskripsi",
-    "kepribadian"
-  ],
-  "register": "neutral",
-  "nuance": "Untuk orang (guru ketat) atau kondisi (cuaca berat).",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "父はしつけが<b>厳しかった</b>。",
-      "id": "Ayah keras soal disiplin.",
-      "level": "n3",
-      "tags": [
-        "keluarga"
-      ]
-    },
-    {
-      "jp": "今年の冬は<b>厳しい</b>と言われている。",
-      "id": "Dikatakan musim dingin tahun ini akan berat.",
-      "level": "n3",
-      "tags": [
-        "alam-lingkungan"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00113",
-  "word": "丁寧な",
-  "reading": "ていねいな",
-  "romaji": "teinei na",
-  "meaning_id": "sopan, teliti",
-  "meaning_en": "polite, careful",
-  "jlpt": "n3",
-  "pos": "na-adj",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "kepribadian"
-  ],
-  "register": "formal",
-  "nuance": "Untuk orang sopan atau pekerjaan yang dikerjakan teliti.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "彼女は<b>丁寧に</b>説明してくれた。",
-      "id": "Dia menjelaskan dengan teliti.",
-      "level": "n3",
-      "tags": [
-        "bahasa-komunikasi"
-      ]
-    },
-    {
-      "jp": "<b>丁寧な</b>言葉遣いを心がけています。",
-      "id": "Berusaha memakai kata-kata yang sopan.",
-      "level": "n3",
-      "tags": [
-        "sopan-santun"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00114",
-  "word": "複雑な",
-  "reading": "ふくざつな",
-  "romaji": "fukuzatsu na",
-  "meaning_id": "rumit, kompleks",
-  "meaning_en": "complicated",
-  "jlpt": "n3",
-  "pos": "na-adj",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": [
-    "deskripsi"
-  ],
-  "register": "neutral",
-  "nuance": null,
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "この問題は<b>複雑で</b>すぐには解けない。",
-      "id": "Masalah ini rumit, tidak bisa langsung diselesaikan.",
-      "level": "n3",
-      "tags": [
-        "pendidikan"
-      ]
-    },
-    {"jp": "二人の関係は<b>複雑</b>だ。", "id": "Hubungan keduanya rumit.", "level": "n3", "tags": ["karakter"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00115",
-  "word": "正直な",
-  "reading": "しょうじきな",
-  "romaji": "shoujiki na",
-  "meaning_id": "jujur",
-  "meaning_en": "honest",
-  "jlpt": "n3",
-  "pos": "na-adj",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": [
-    "kepribadian"
-  ],
-  "register": "neutral",
-  "nuance": "Juga sebagai adverb: 正直に言うと (kalau mau jujur...).",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "<b>正直に</b>言うと、あまり好きじゃない。",
-      "id": "Kalau jujur, aku kurang suka.",
-      "level": "n3",
-      "tags": [
-        "bahasa-komunikasi"
-      ]
-    },
-    {
-      "jp": "彼は<b>正直な</b>人だ。",
-      "id": "Dia orang yang jujur.",
-      "level": "n3",
-      "tags": [
-        "kepribadian"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00116",
-  "word": "社会",
-  "reading": "しゃかい",
-  "romaji": "shakai",
-  "meaning_id": "masyarakat, sosial",
-  "meaning_en": "society",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": [
-    "sosial"
-  ],
-  "register": "neutral",
-  "nuance": null,
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "<b>社会</b>に貢献したい。",
-      "id": "Ingin berkontribusi pada masyarakat.",
-      "level": "n3",
-      "tags": [
-        "hubungan-konsep"
-      ]
-    },
-    {"jp": "<b>社会</b>のルールを守ることが大切だ。", "id": "Penting untuk mematuhi aturan masyarakat.", "level": "n3", "tags": ["politik-masyarakat"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00117",
-  "word": "文化",
-  "reading": "ぶんか",
-  "romaji": "bunka",
-  "meaning_id": "budaya",
-  "meaning_en": "culture",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": [
-    "budaya"
-  ],
-  "register": "neutral",
-  "nuance": null,
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "日本の<b>文化</b>に興味がある。",
-      "id": "Tertarik dengan budaya Jepang.",
-      "level": "n3",
-      "tags": [
-        "budaya"
-      ]
-    },
-    {
-      "jp": "<b>文化</b>の違いを理解することが大切だ。",
-      "id": "Penting memahami perbedaan budaya.",
-      "level": "n3",
-      "tags": [
-        "bahasa-komunikasi"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00118",
-  "word": "経済",
-  "reading": "けいざい",
-  "romaji": "keizai",
-  "meaning_id": "ekonomi",
-  "meaning_en": "economy",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "ekonomi"
-  ],
-  "register": "formal",
-  "nuance": null,
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "<b>経済</b>成長が続いている。",
-      "id": "Pertumbuhan ekonomi terus berlanjut.",
-      "level": "n3",
-      "tags": [
-        "ekonomi-keuangan"
-      ]
-    },
-    {"jp": "円安が<b>経済</b>に影響を与えている。", "id": "Pelemahan yen berdampak pada perekonomian.", "level": "n3", "tags": ["ekonomi-keuangan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00119",
-  "word": "環境",
-  "reading": "かんきょう",
-  "romaji": "kankyou",
-  "meaning_id": "lingkungan",
-  "meaning_en": "environment",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": [
-    "alam",
-    "sosial"
-  ],
-  "register": "neutral",
-  "nuance": "Bisa berarti lingkungan alam atau lingkungan sekitar.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "<b>環境</b>問題は深刻だ。",
-      "id": "Masalah lingkungan sangat serius.",
-      "level": "n3",
-      "tags": [
-        "alam-lingkungan"
-      ]
-    },
-    {
-      "jp": "職場の<b>環境</b>がいい会社に入りたい。",
-      "id": "Ingin masuk perusahaan dengan lingkungan kerja yang baik.",
-      "level": "n3",
-      "tags": [
-        "pekerjaan"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00120",
-  "word": "政治",
-  "reading": "せいじ",
-  "romaji": "seiji",
-  "meaning_id": "politik",
-  "meaning_en": "politics",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "politik"
-  ],
-  "register": "formal",
-  "nuance": null,
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "<b>政治</b>に興味を持ち始めた。",
-      "id": "Mulai tertarik dengan politik.",
-      "level": "n3",
-      "tags": [
-        "hubungan-konsep"
-      ]
-    },
-    {"jp": "<b>政治</b>家は国民のために働くべきだ。", "id": "Politisi seharusnya bekerja untuk rakyat.", "level": "n3", "tags": ["politik-masyarakat"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v15"
-},
+
 {
   "id": "vg-n3-00121",
   "word": "集める",
@@ -5647,6 +4091,7 @@ window.vocabN3 = [
   ],
   "added_v": "v15"
 },
+
 {
   "id": "vg-n3-00122",
   "word": "集まる",
@@ -5683,6 +4128,7 @@ window.vocabN3 = [
   ],
   "added_v": "v15"
 },
+
 {
   "id": "vg-n3-00123",
   "word": "伝える",
@@ -5724,6 +4170,7 @@ window.vocabN3 = [
   "see_also": [],
   "added_v": "v15"
 },
+
 {
   "id": "vg-n3-00124",
   "word": "比べる",
@@ -5758,6 +4205,7 @@ window.vocabN3 = [
   "see_also": [],
   "added_v": "v15"
 },
+
 {
   "id": "vg-n3-00125",
   "word": "選ぶ",
@@ -5799,6 +4247,7 @@ window.vocabN3 = [
   "see_also": [],
   "added_v": "v15"
 },
+
 {
   "id": "vg-n3-00126",
   "word": "断る",
@@ -5840,6 +4289,7 @@ window.vocabN3 = [
   "see_also": [],
   "added_v": "v15"
 },
+
 {
   "id": "vg-n3-00127",
   "word": "確認する",
@@ -5881,6 +4331,7 @@ window.vocabN3 = [
   "see_also": [],
   "added_v": "v15"
 },
+
 {
   "id": "vg-n3-00128",
   "word": "準備する",
@@ -5922,6 +4373,7 @@ window.vocabN3 = [
   "see_also": [],
   "added_v": "v15"
 },
+
 {
   "id": "vg-n3-00129",
   "word": "利用する",
@@ -5963,6 +4415,7 @@ window.vocabN3 = [
   "see_also": [],
   "added_v": "v15"
 },
+
 {
   "id": "vg-n3-00130",
   "word": "参加する",
@@ -5996,796 +4449,6 @@ window.vocabN3 = [
       "level": "n3",
       "tags": [
         "sopan-santun"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00131",
-  "word": "原因",
-  "reading": "げんいん",
-  "romaji": "gen'in",
-  "meaning_id": "penyebab, sebab",
-  "meaning_en": "cause",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": [
-    "logika"
-  ],
-  "register": "neutral",
-  "nuance": "Pasangannya: 原因 (penyebab) dan 結果 (akibat).",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "事故の<b>原因</b>を調べている。",
-      "id": "Sedang menyelidiki penyebab kecelakaan.",
-      "level": "n3",
-      "tags": [
-        "kejadian"
-      ]
-    },
-    {"jp": "ストレスが体調不良の<b>原因</b>だった。", "id": "Stres adalah penyebab kondisi badan yang buruk.", "level": "n3", "tags": ["kesehatan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [
-    "vg-n3-00132"
-  ],
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00132",
-  "word": "結果",
-  "reading": "けっか",
-  "romaji": "kekka",
-  "meaning_id": "hasil, akibat",
-  "meaning_en": "result",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": [
-    "logika"
-  ],
-  "register": "neutral",
-  "nuance": null,
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "努力した<b>結果</b>、合格した。",
-      "id": "Sebagai hasil usaha keras, lulus.",
-      "level": "n3",
-      "tags": [
-        "pendidikan"
-      ]
-    },
-    {
-      "jp": "テストの<b>結果</b>が出た。",
-      "id": "Hasil tes sudah keluar.",
-      "level": "n3",
-      "tags": [
-        "pendidikan"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [
-    "vg-n3-00131"
-  ],
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00133",
-  "word": "意味",
-  "reading": "いみ",
-  "romaji": "imi",
-  "meaning_id": "arti, makna",
-  "meaning_en": "meaning",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": [
-    "komunikasi"
-  ],
-  "register": "neutral",
-  "nuance": null,
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "この言葉の<b>意味</b>を教えてください。",
-      "id": "Tolong ajarkan arti kata ini.",
-      "level": "n3",
-      "tags": [
-        "pendidikan"
-      ]
-    },
-    {
-      "jp": "生きる<b>意味</b>を考えた。",
-      "id": "Saya berpikir tentang makna hidup.",
-      "level": "n3",
-      "tags": [
-        "filosofi"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00134",
-  "word": "場合",
-  "reading": "ばあい",
-  "romaji": "baai",
-  "meaning_id": "dalam hal, kasus, situasi",
-  "meaning_en": "case, situation",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": [
-    "logika"
-  ],
-  "register": "neutral",
-  "nuance": "Sering dipakai dengan 〜場合は.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "緊急の<b>場合</b>は119に電話してください。",
-      "id": "Dalam keadaan darurat, hubungi 119.",
-      "level": "n3",
-      "tags": [
-        "darurat"
-      ]
-    },
-    {"jp": "遅れる<b>場合</b>は連絡してください。", "id": "Kalau terlambat, tolong hubungi saya.", "level": "n3", "tags": ["kehidupan-sehari"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00135",
-  "word": "機会",
-  "reading": "きかい",
-  "romaji": "kikai",
-  "meaning_id": "kesempatan",
-  "meaning_en": "opportunity",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": [
-    "kehidupan"
-  ],
-  "register": "neutral",
-  "nuance": "Lebih formal dari チャンス.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "いい<b>機会</b>なので、挑戦してみます。",
-      "id": "Karena ini kesempatan bagus, akan kucoba.",
-      "level": "n3",
-      "tags": [
-        "motivasi"
-      ]
-    },
-    {"jp": "海外で働く<b>機会</b>を得た。", "id": "Saya mendapat kesempatan untuk bekerja di luar negeri.", "level": "n3", "tags": ["pekerjaan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00136",
-  "word": "方法",
-  "reading": "ほうほう",
-  "romaji": "houhou",
-  "meaning_id": "cara, metode",
-  "meaning_en": "method",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": [
-    "logika"
-  ],
-  "register": "neutral",
-  "nuance": null,
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "問題を解決する<b>方法</b>を考えた。",
-      "id": "Memikirkan cara menyelesaikan masalah.",
-      "level": "n3",
-      "tags": [
-        "pekerjaan"
-      ]
-    },
-    {"jp": "もっと効率的な<b>方法</b>があるはずだ。", "id": "Pasti ada cara yang lebih efisien.", "level": "n3", "tags": ["pikiran-opini"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00137",
-  "word": "関係",
-  "reading": "かんけい",
-  "romaji": "kankei",
-  "meaning_id": "hubungan, kaitan",
-  "meaning_en": "relation",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": [
-    "sosial"
-  ],
-  "register": "neutral",
-  "nuance": null,
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "二人の<b>関係</b>はどうなっているの？",
-      "id": "Hubungan kalian berdua gimana sekarang?",
-      "level": "n3",
-      "tags": [
-        "hubungan"
-      ]
-    },
-    {
-      "jp": "この件とは<b>関係</b>ありません。",
-      "id": "Ini tidak ada kaitannya.",
-      "level": "n3",
-      "tags": [
-        "penjelasan"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00138",
-  "word": "問題",
-  "reading": "もんだい",
-  "romaji": "mondai",
-  "meaning_id": "masalah, soal",
-  "meaning_en": "problem, question",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": [
-    "logika"
-  ],
-  "register": "neutral",
-  "nuance": "Bisa berarti soal ujian atau masalah kehidupan.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "環境<b>問題</b>は深刻だ。",
-      "id": "Masalah lingkungan sangat serius.",
-      "level": "n3",
-      "tags": [
-        "hubungan-konsep"
-      ]
-    },
-    {
-      "jp": "この<b>問題</b>を解いてください。",
-      "id": "Tolong selesaikan soal ini.",
-      "level": "n3",
-      "tags": [
-        "pendidikan"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00139",
-  "word": "努力",
-  "reading": "どりょく",
-  "romaji": "doryoku",
-  "meaning_id": "usaha keras",
-  "meaning_en": "effort",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": [
-    "motivasi"
-  ],
-  "register": "neutral",
-  "nuance": null,
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "<b>努力</b>すれば必ず上手くなる。",
-      "id": "Kalau berusaha keras, pasti mahir.",
-      "level": "n3",
-      "tags": [
-        "motivasi"
-      ]
-    },
-    {
-      "jp": "彼女の<b>努力</b>は報われた。",
-      "id": "Usaha kerasnya membuahkan hasil.",
-      "level": "n3",
-      "tags": [
-        "keberhasilan"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00140",
-  "word": "成功",
-  "reading": "せいこう",
-  "romaji": "seikou",
-  "meaning_id": "sukses, berhasil",
-  "meaning_en": "success",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": [
-    "kehidupan"
-  ],
-  "register": "neutral",
-  "nuance": null,
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "プレゼンが<b>成功した</b>。",
-      "id": "Presentasinya sukses.",
-      "level": "n3",
-      "tags": [
-        "pekerjaan"
-      ]
-    },
-    {
-      "jp": "<b>成功</b>の秘訣は継続だ。",
-      "id": "Kunci sukses adalah konsistensi.",
-      "level": "n3",
-      "tags": [
-        "motivasi"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [
-    "vg-n3-00141"
-  ],
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00141",
-  "word": "失敗",
-  "reading": "しっぱい",
-  "romaji": "shippai",
-  "meaning_id": "gagal, kegagalan",
-  "meaning_en": "failure",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": [
-    "kehidupan"
-  ],
-  "register": "neutral",
-  "nuance": "Dalam budaya Jepang: 七転び八起き — jatuh 7 kali, bangkit 8 kali.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "<b>失敗</b>を恐れずに挑戦して。",
-      "id": "Coba saja tanpa takut gagal.",
-      "level": "n3",
-      "tags": [
-        "motivasi"
-      ]
-    },
-    {
-      "jp": "<b>失敗</b>から学ぶことが大切だ。",
-      "id": "Penting belajar dari kegagalan.",
-      "level": "n3",
-      "tags": [
-        "pembelajaran"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [
-    "vg-n3-00140"
-  ],
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00142",
-  "word": "ちゃんと",
-  "reading": "ちゃんと",
-  "romaji": "chanto",
-  "meaning_id": "dengan benar, sungguh-sungguh",
-  "meaning_en": "properly",
-  "jlpt": "n3",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 1,
-  "domain": [
-    "cara"
-  ],
-  "register": "casual",
-  "nuance": "Kasual. Menekankan sesuatu dilakukan dengan benar.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "<b>ちゃんと</b>宿題をやった？",
-      "id": "PR sudah dikerjakan dengan bener?",
-      "level": "n3",
-      "tags": [
-        "pendidikan"
-      ]
-    },
-    {
-      "jp": "<b>ちゃんと</b>聞いてね。",
-      "id": "Dengerin baik-baik ya.",
-      "level": "n3",
-      "tags": [
-        "bahasa-komunikasi"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [
-    "vg-n3-00143"
-  ],
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00143",
-  "word": "きちんと",
-  "reading": "きちんと",
-  "romaji": "kichinto",
-  "meaning_id": "rapi, tertib, dengan benar",
-  "meaning_en": "properly, neatly",
-  "jlpt": "n3",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": [
-    "cara"
-  ],
-  "register": "neutral",
-  "nuance": "Lebih formal dari ちゃんと. Menekankan kerapian.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "部屋を<b>きちんと</b>片付けた。",
-      "id": "Membereskan kamar dengan rapi.",
-      "level": "n3",
-      "tags": [
-        "kehidupan"
-      ]
-    },
-    {"jp": "<b>きちんと</b>説明してください。", "id": "Tolong jelaskan dengan benar.", "level": "n3", "tags": ["bahasa-komunikasi"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [
-    "vg-n3-00142"
-  ],
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00144",
-  "word": "むしろ",
-  "reading": "むしろ",
-  "romaji": "mushiro",
-  "meaning_id": "lebih tepat, justru",
-  "meaning_en": "rather, instead",
-  "jlpt": "n3",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": [
-    "kontras"
-  ],
-  "register": "neutral",
-  "nuance": "Mengkoreksi atau menyesuaikan pernyataan sebelumnya.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "怖いというより、<b>むしろ</b>面白かった。",
-      "id": "Daripada takut, justru lebih menarik.",
-      "level": "n3",
-      "tags": [
-        "ekspresi"
-      ]
-    },
-    {"jp": "忙しいほうが、<b>むしろ</b>充実感がある。", "id": "Justru saat sibuk, ada rasa kepuasan lebih.", "level": "n3", "tags": ["emosi"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00145",
-  "word": "確かに",
-  "reading": "たしかに",
-  "romaji": "tashika ni",
-  "meaning_id": "memang, benar, tentu",
-  "meaning_en": "certainly, indeed",
-  "jlpt": "n3",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": [
-    "konfirmasi"
-  ],
-  "register": "neutral",
-  "nuance": "Mengakui kebenaran sesuatu, sering diikuti 〜が atau 〜けど.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "<b>確かに</b>、それは難しいね。",
-      "id": "Memang, itu sulit ya.",
-      "level": "n3",
-      "tags": [
-        "percakapan"
-      ]
-    },
-    {
-      "jp": "<b>確かに</b>彼は頭がいいが、努力もしている。",
-      "id": "Memang dia pintar, tapi juga bekerja keras.",
-      "level": "n3",
-      "tags": [
-        "penilaian"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00146",
-  "word": "なかなか",
-  "reading": "なかなか",
-  "romaji": "nakanaka",
-  "meaning_id": "cukup (positif) / tidak mudah (negatif)",
-  "meaning_en": "quite; not easily",
-  "jlpt": "n3",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": [
-    "derajat"
-  ],
-  "register": "neutral",
-  "nuance": "2 makna: afirmatif=cukup bagus. Negatif=susah sekali.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "これは<b>なかなか</b>難しい。",
-      "id": "Ini lumayan susah juga.",
-      "level": "n3",
-      "tags": [
-        "penilaian"
-      ]
-    },
-    {
-      "jp": "彼女は<b>なかなか</b>来ない。",
-      "id": "Dia tidak kunjung datang.",
-      "level": "n3",
-      "tags": [
-        "menunggu"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00147",
-  "word": "せっかく",
-  "reading": "せっかく",
-  "romaji": "sekkaku",
-  "meaning_id": "dengan susah payah, khusus",
-  "meaning_en": "with great effort",
-  "jlpt": "n3",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": [
-    "ekspresi"
-  ],
-  "register": "neutral",
-  "nuance": "Mengungkapkan sayang/kecewa karena kesempatan khusus tidak termanfaatkan.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "<b>せっかく</b>作ったのに、誰も食べなかった。",
-      "id": "Padahal susah payah bikin, tidak ada yang makan.",
-      "level": "n3",
-      "tags": [
-        "penyesalan"
-      ]
-    },
-    {
-      "jp": "<b>せっかく</b>日本に来たから着物を着てみたい。",
-      "id": "Karena sudah khusus datang ke Jepang, ingin coba kimono.",
-      "level": "n3",
-      "tags": [
-        "perjalanan"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00148",
-  "word": "もし",
-  "reading": "もし",
-  "romaji": "moshi",
-  "meaning_id": "kalau, jika (hipotetis)",
-  "meaning_en": "if (hypothetical)",
-  "jlpt": "n3",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": [
-    "kondisional"
-  ],
-  "register": "neutral",
-  "nuance": "Penanda kondisional hipotetis. Selalu diikuti たら/ば/と/なら.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "<b>もし</b>時間があったら、一緒に行こう。",
-      "id": "Kalau ada waktu, ayo pergi bersama.",
-      "level": "n3",
-      "tags": [
-        "ajakan"
-      ]
-    },
-    {
-      "jp": "<b>もし</b>よければ、これを使ってください。",
-      "id": "Kalau tidak keberatan, silakan pakai ini.",
-      "level": "n3",
-      "tags": [
-        "tawaran"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00149",
-  "word": "特に",
-  "reading": "とくに",
-  "romaji": "toku ni",
-  "meaning_id": "terutama, khususnya",
-  "meaning_en": "especially",
-  "jlpt": "n3",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": [
-    "penekanan"
-  ],
-  "register": "neutral",
-  "nuance": null,
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "日本料理の中で、<b>特に</b>ラーメンが好きだ。",
-      "id": "Di antara masakan Jepang, ramen paling kusuka.",
-      "level": "n3",
-      "tags": [
-        "makanan-minuman"
-      ]
-    },
-    {
-      "jp": "<b>特に</b>問題はありません。",
-      "id": "Tidak ada masalah khusus.",
-      "level": "n3",
-      "tags": [
-        "konfirmasi"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00150",
-  "word": "少なくとも",
-  "reading": "すくなくとも",
-  "romaji": "sukunaku tomo",
-  "meaning_id": "setidaknya, paling tidak",
-  "meaning_en": "at least",
-  "jlpt": "n3",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": [
-    "pembatasan"
-  ],
-  "register": "neutral",
-  "nuance": null,
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "<b>少なくとも</b>1日1時間は勉強しよう。",
-      "id": "Setidaknya belajar 1 jam per hari.",
-      "level": "n3",
-      "tags": [
-        "pendidikan"
-      ]
-    },
-    {
-      "jp": "<b>少なくとも</b>10人は来ると思う。",
-      "id": "Saya pikir setidaknya 10 orang akan datang.",
-      "level": "n3",
-      "tags": [
-        "perkiraan"
       ]
     }
   ],
@@ -7561,681 +5224,6 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-00196", "word": "嬉しい", "reading": "うれしい", "romaji": "ureshii",
-  "meaning_id": "senang, gembira", "meaning_en": "happy, glad",
-  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["emosi", "emosi-positif"], "register": "neutral",
-  "lawan_bicara": ["teman", "umum"], "nuance": "Berbeda dari 楽しい (menyenangkan secara aktif) — 嬉しい adalah perasaan bahagia karena menerima sesuatu atau kejadian yang menggembirakan.",
-  "conj_type": "adj-i",
-  "examples": [
-    {"jp": "合格の知らせを聞いて、本当に嬉しかった。", "id": "Mendengar kabar kelulusan, aku benar-benar senang.", "level": "n3", "tags": ["emosi-positif"]},
-    {"jp": "プレゼントをもらって、子どもはとても嬉しそうだった。", "id": "Setelah diberi hadiah, anak itu terlihat sangat gembira.", "level": "n3", "tags": ["emosi-positif", "kehidupan-sehari"]},
-    {"jp": "久しぶりに会えて嬉しいです。", "id": "Senang bisa bertemu lagi setelah lama.", "level": "n3", "tags": ["pertemanan"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00197", "word": "悲しい", "reading": "かなしい", "romaji": "kanashii",
-  "meaning_id": "sedih", "meaning_en": "sad, sorrowful",
-  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["emosi", "emosi-negatif"], "register": "neutral",
-  "lawan_bicara": ["teman", "umum"], "nuance": "Menggambarkan kesedihan mendalam, sering karena kehilangan atau perpisahan. Bentuk kata benda: 悲しみ (kesedihan). Lebih dalam dari つまらない (membosankan/mengecewakan).",
-  "conj_type": "adj-i",
-  "examples": [
-    {"jp": "大切な人を失って、悲しくて涙が止まらなかった。", "id": "Kehilangan orang yang berharga, sedihnya sampai tidak bisa berhenti menangis.", "level": "n3", "tags": ["emosi-negatif"]},
-    {"jp": "その映画の結末はとても悲しかった。", "id": "Akhir dari film itu sangat menyedihkan.", "level": "n3", "tags": ["hiburan", "emosi-negatif"]},
-    {"jp": "友達が転校すると聞いて悲しくなった。", "id": "Mendengar bahwa teman pindah sekolah, aku jadi sedih.", "level": "n3", "tags": ["pertemanan"]}
-  ],
-  "synonyms": [], "antonyms": ["vg-n3-00196"], "see_also": ["vg-n3-00198"], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00198", "word": "寂しい", "reading": "さびしい", "romaji": "sabishii",
-  "meaning_id": "kesepian, merasa sepi", "meaning_en": "lonely, lonesome",
-  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["emosi", "emosi-negatif"], "register": "neutral",
-  "lawan_bicara": ["teman", "umum"], "nuance": "Bisa juga ditulis 淋しい. Fokus pada rasa sepi karena sendirian atau ditinggal, berbeda dari 悲しい yang lebih umum untuk kesedihan.",
-  "conj_type": "adj-i",
-  "examples": [
-    {"jp": "一人で暮らし始めてから、夜がとても寂しい。", "id": "Sejak mulai tinggal sendiri, malam hari terasa sangat sepi.", "level": "n3", "tags": ["kehidupan-sehari", "emosi-negatif"]},
-    {"jp": "友達がみんな帰ってしまい、寂しくなった。", "id": "Semua teman sudah pulang, jadi aku merasa kesepian.", "level": "n3", "tags": ["pertemanan"]},
-    {"jp": "彼女は「もっと話しかけてほしい」と寂しそうに言った。", "id": "Dia berkata dengan wajah sedih, 'Aku ingin kamu lebih sering mengajak bicara.'", "level": "n3", "tags": ["percintaan"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00197"], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00199", "word": "つらい", "reading": "つらい", "romaji": "tsurai",
-  "meaning_id": "menyakitkan, berat hati, sulit ditanggung", "meaning_en": "painful, hard, tough",
-  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["emosi", "emosi-negatif"], "register": "neutral",
-  "lawan_bicara": ["teman", "umum"], "nuance": "Dipakai untuk rasa sakit fisik maupun beban mental yang berat. Sering diucapkan untuk situasi yang melelahkan jiwa, seperti pekerjaan menekan atau hubungan yang menyiksa.",
-  "conj_type": "adj-i",
-  "examples": [
-    {"jp": "毎日残業が続いて、本当につらい。", "id": "Lembur setiap hari terus-terusan, sungguh berat.", "level": "n3", "tags": ["pekerjaan", "emosi-negatif"]},
-    {"jp": "親に怒られたとき、つらくて泣いてしまった。", "id": "Saat dimarahi orang tua, rasanya berat sampai aku menangis.", "level": "n3", "tags": ["keluarga", "emosi-negatif"]},
-    {"jp": "失恋はいつもつらいものだ。", "id": "Putus cinta selalu menyakitkan.", "level": "n3", "tags": ["percintaan"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00200", "word": "怖い", "reading": "こわい", "romaji": "kowai",
-  "meaning_id": "takut, menakutkan", "meaning_en": "scary, frightening, afraid",
-  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["emosi", "emosi-negatif"], "register": "neutral",
-  "lawan_bicara": ["teman", "umum"], "nuance": "Merupakan reaksi perasaan subjektif terhadap hal yang menakutkan. Berbeda dari 危ない (bahaya objektif) — 怖い adalah perasaan takut, 危ない adalah kondisi berbahaya.",
-  "conj_type": "adj-i",
-  "examples": [
-    {"jp": "暗い道を一人で歩くのが怖い。", "id": "Aku takut berjalan sendirian di jalan yang gelap.", "level": "n3", "tags": ["kehidupan-sehari", "emosi-negatif"]},
-    {"jp": "その映画は怖くて目を閉じてしまった。", "id": "Film itu sangat menakutkan sampai aku menutup mata.", "level": "n3", "tags": ["hiburan"]},
-    {"jp": "上司の怒鳴り声が怖くて、話しかけられなかった。", "id": "Aku takut dengan suara bentak atasan, sehingga tidak bisa menyapa.", "level": "n3", "tags": ["pekerjaan"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00208"], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00201", "word": "恥ずかしい", "reading": "はずかしい", "romaji": "hazukashii",
-  "meaning_id": "malu", "meaning_en": "embarrassing, ashamed, shy",
-  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["emosi", "emosi-sosial"], "register": "neutral",
-  "lawan_bicara": ["teman", "umum"], "nuance": "Mencakup rasa malu karena berbuat salah di depan umum maupun malu karena dipuji berlebihan. Berbeda dari 失礼 (bersikap tidak sopan) yang lebih berkaitan dengan norma sosial.",
-  "conj_type": "adj-i",
-  "examples": [
-    {"jp": "クラスの前で発表するのが恥ずかしかった。", "id": "Aku malu saat presentasi di depan kelas.", "level": "n3", "tags": ["pendidikan", "emosi-sosial"]},
-    {"jp": "転んで、みんなに笑われてとても恥ずかしかった。", "id": "Terjatuh dan ditertawakan semua orang, rasanya sangat memalukan.", "level": "n3", "tags": ["kehidupan-sehari"]},
-    {"jp": "褒められると恥ずかしくて、うまく返事ができない。", "id": "Kalau dipuji, aku jadi malu dan tidak bisa menjawab dengan baik.", "level": "n3", "tags": ["emosi-sosial"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00202", "word": "悔しい", "reading": "くやしい", "romaji": "kuyashii",
-  "meaning_id": "menyesal karena kalah atau gagal, frustrasi", "meaning_en": "frustrated, vexed, mortified",
-  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["emosi", "emosi-negatif"], "register": "neutral",
-  "lawan_bicara": ["teman", "umum"], "nuance": "Bukan sekadar 'menyesal' (後悔). 悔しい adalah frustrasi spesifik karena gagal, kalah, atau tidak berhasil meski sudah berusaha keras.",
-  "conj_type": "adj-i",
-  "examples": [
-    {"jp": "試合に負けて本当に悔しかった。", "id": "Sungguh menyakitkan kalah dalam pertandingan itu.", "level": "n3", "tags": ["olahraga", "emosi-negatif"]},
-    {"jp": "もう少しで合格できたのに、悔しい。", "id": "Hampir saja bisa lulus, tapi gagal — rasanya frustrasi sekali.", "level": "n3", "tags": ["pendidikan"]},
-    {"jp": "悔しい思いをしたから、次は絶対に頑張る。", "id": "Karena sudah merasakan frustrasi itu, kali ini aku pasti akan berusaha lebih keras.", "level": "n3", "tags": ["keputusan"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00203", "word": "羨ましい", "reading": "うらやましい", "romaji": "urayamashii",
-  "meaning_id": "iri, cemburu, ingin memiliki hal yang sama", "meaning_en": "envious, jealous, enviable",
-  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["emosi", "emosi-sosial"], "register": "neutral",
-  "lawan_bicara": ["teman", "umum"], "nuance": "Tidak selalu negatif — bisa bermakna kagum dan ingin memiliki hal yang sama. Berbeda dari 嫉妬 (shitto) yang lebih kuat dan lebih negatif, terutama dalam konteks romantis.",
-  "conj_type": "adj-i",
-  "examples": [
-    {"jp": "彼はいつも成績がよくて羨ましい。", "id": "Nilainya selalu bagus, aku iri padanya.", "level": "n3", "tags": ["pendidikan", "emosi-sosial"]},
-    {"jp": "海外旅行に行けるなんて、羨ましいな。", "id": "Bisa pergi ke luar negeri, sungguh bikin iri.", "level": "n3", "tags": ["perjalanan"]},
-    {"jp": "仲のいい兄弟を見て、一人っ子の私には羨ましかった。", "id": "Melihat saudara yang akrab, aku sebagai anak tunggal merasa iri.", "level": "n3", "tags": ["keluarga"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00204", "word": "懐かしい", "reading": "なつかしい", "romaji": "natsukashii",
-  "meaning_id": "nostalgia, merindukan masa lalu yang menyenangkan", "meaning_en": "nostalgic, dear (old memories)",
-  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["emosi", "emosi-positif"], "register": "neutral",
-  "lawan_bicara": ["teman", "keluarga", "umum"], "nuance": "Tidak ada padanan tepat dalam bahasa Indonesia. Perasaan hangat saat mengingat masa lalu yang menyenangkan. Tidak bisa dipakai untuk masa depan atau hal yang belum pernah dialami.",
-  "conj_type": "adj-i",
-  "examples": [
-    {"jp": "昔の写真を見て、懐かしくて涙が出た。", "id": "Melihat foto lama, rasa nostalgia membuat air mata menetes.", "level": "n3", "tags": ["emosi-positif"]},
-    {"jp": "この曲を聴くと、子どものころを思い出して懐かしい。", "id": "Mendengar lagu ini, aku teringat masa kecil dan terasa nostalgia.", "level": "n3", "tags": ["hiburan", "emosi"]},
-    {"jp": "久しぶりに地元に帰ったら、懐かしい景色がたくさんあった。", "id": "Ketika pulang ke kampung halaman setelah lama, banyak pemandangan yang membawa rasa nostalgia.", "level": "n3", "tags": ["perjalanan"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00205", "word": "眠い", "reading": "ねむい", "romaji": "nemui",
-  "meaning_id": "ngantuk, mengantuk", "meaning_en": "sleepy, drowsy",
-  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["kehidupan-sehari", "emosi"], "register": "neutral",
-  "lawan_bicara": ["teman", "umum"], "nuance": "Khusus untuk rasa kantuk (ingin tidur). Berbeda dari 疲れた (lelah). Bentuk kata benda: 眠気 (rasa kantuk). Versi formal: 眠気がある.",
-  "conj_type": "adj-i",
-  "examples": [
-    {"jp": "昨日あまり寝られなくて、今日は一日中眠い。", "id": "Kemarin hampir tidak tidur, jadi hari ini ngantuk sepanjang hari.", "level": "n3", "tags": ["kehidupan-sehari"]},
-    {"jp": "授業中に眠くなってしまった。", "id": "Aku jadi mengantuk saat pelajaran berlangsung.", "level": "n3", "tags": ["pendidikan"]},
-    {"jp": "食後はいつも少し眠くなる。", "id": "Setelah makan, aku selalu sedikit mengantuk.", "level": "n3", "tags": ["kehidupan-sehari"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00206", "word": "痛い", "reading": "いたい", "romaji": "itai",
-  "meaning_id": "sakit, nyeri", "meaning_en": "painful, hurting",
-  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["kesehatan", "kehidupan-sehari"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Khusus untuk rasa nyeri fisik. Berbeda dari 具合が悪い (tidak enak badan secara umum). Ungkapan 痛い！ sering diucapkan spontan saat kesakitan.",
-  "conj_type": "adj-i",
-  "examples": [
-    {"jp": "転んで膝が痛い。", "id": "Lutut sakit karena jatuh.", "level": "n3", "tags": ["kesehatan"]},
-    {"jp": "頭が痛くて、仕事に集中できなかった。", "id": "Kepala sakit sehingga tidak bisa berkonsentrasi bekerja.", "level": "n3", "tags": ["pekerjaan", "kesehatan"]},
-    {"jp": "注射は痛いけど、我慢した。", "id": "Suntikan itu sakit, tapi aku tahan.", "level": "n3", "tags": ["kesehatan"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00207", "word": "激しい", "reading": "はげしい", "romaji": "hageshii",
-  "meaning_id": "sengit, keras, intens, kuat", "meaning_en": "intense, fierce, violent, heavy",
-  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["kualitas", "emosi", "alam-lingkungan"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Menggambarkan intensitas tinggi — bisa untuk cuaca, perasaan, pertengkaran, dll. Berbeda dari 厳しい yang fokus pada keketatan aturan atau sikap seseorang.",
-  "conj_type": "adj-i",
-  "examples": [
-    {"jp": "昨夜は激しい雨が降った。", "id": "Tadi malam hujan sangat deras.", "level": "n3", "tags": ["alam-lingkungan"]},
-    {"jp": "二人の言い争いはかなり激しかった。", "id": "Perdebatan antara keduanya cukup sengit.", "level": "n3", "tags": ["emosi-negatif"]},
-    {"jp": "激しい運動の後はよく水を飲んでください。", "id": "Setelah olahraga berat, minumlah air yang cukup.", "level": "n3", "tags": ["olahraga", "kesehatan"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00211"], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00208", "word": "危ない", "reading": "あぶない", "romaji": "abunai",
-  "meaning_id": "berbahaya, awas", "meaning_en": "dangerous, risky, look out",
-  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["kehidupan-sehari", "kualitas"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Dipakai sebagai peringatan spontan ('Awas!') maupun deskripsi situasi berbahaya. Lebih kasual dari 危険 (kiken). Sering diucapkan orang tua kepada anak.",
-  "conj_type": "adj-i",
-  "examples": [
-    {"jp": "危ない！車が来るよ！", "id": "Awas! Ada mobil datang!", "level": "n3", "tags": ["kehidupan-sehari"]},
-    {"jp": "その橋は古くて危ないから、渡らないほうがいい。", "id": "Jembatan itu sudah tua dan berbahaya, sebaiknya jangan dilewati.", "level": "n3", "tags": ["perjalanan"]},
-    {"jp": "子どもだけで川で遊ぶのは危ない。", "id": "Bermain di sungai sendirian tanpa orang dewasa itu berbahaya untuk anak-anak.", "level": "n3", "tags": ["keluarga"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00209", "word": "おかしい", "reading": "おかしい", "romaji": "okashii",
-  "meaning_id": "aneh, tidak normal, lucu, mencurigakan", "meaning_en": "strange, funny, odd, suspicious",
-  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["emosi", "kualitas", "pikiran-opini"], "register": "neutral",
-  "lawan_bicara": ["teman", "umum"], "nuance": "Memiliki dua arti: (1) lucu/menggelikan, (2) aneh/tidak normal/mencurigakan. Konteks menentukan arti. Saat mengomentari perilaku seseorang, gunakan dengan hati-hati agar tidak menyinggung.",
-  "conj_type": "adj-i",
-  "examples": [
-    {"jp": "彼の話し方はちょっとおかしくて、みんなが笑った。", "id": "Cara bicaranya agak lucu sehingga semua orang tertawa.", "level": "n3", "tags": ["pertemanan", "emosi-positif"]},
-    {"jp": "この機械の音がおかしい。点検が必要かもしれない。", "id": "Suara mesin ini terdengar aneh. Mungkin perlu diperiksa.", "level": "n3", "tags": ["pekerjaan"]},
-    {"jp": "最近、彼の様子がおかしいと思って心配している。", "id": "Belakangan ini aku khawatir karena sikapnya tampak tidak seperti biasanya.", "level": "n3", "tags": ["pertemanan"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00226"], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00210", "word": "正しい", "reading": "ただしい", "romaji": "tadashii",
-  "meaning_id": "benar, tepat, sesuai", "meaning_en": "correct, right, proper",
-  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
-  "formalitas": 3, "domain": ["kualitas", "pikiran-opini", "hukum-aturan"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Berarti 'secara moral atau faktual benar.' Berbeda dari 合っている (cocok/tepat secara teknis). 正しい memiliki nuansa lebih formal dan mengandung penilaian etis.",
-  "conj_type": "adj-i",
-  "examples": [
-    {"jp": "彼の言っていることは正しいと思います。", "id": "Saya rasa apa yang dia katakan itu benar.", "level": "n3", "tags": ["pikiran-opini"]},
-    {"jp": "正しい手順で作業をしてください。", "id": "Tolong kerjakan sesuai prosedur yang benar.", "level": "n3", "tags": ["pekerjaan"]},
-    {"jp": "子どもに正しい言葉遣いを教えることは大切だ。", "id": "Mengajarkan penggunaan bahasa yang benar kepada anak adalah hal yang penting.", "level": "n3", "tags": ["pendidikan", "keluarga"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00211", "word": "厳しい", "reading": "きびしい", "romaji": "kibishii",
-  "meaning_id": "ketat, keras, berat, tegas", "meaning_en": "strict, severe, harsh",
-  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
-  "formalitas": 3, "domain": ["karakter", "kualitas", "pekerjaan"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Dipakai untuk orang (guru yang tegas), aturan, kondisi cuaca ekstrem, dll. Tidak selalu negatif — bisa bermakna positif seperti 'tegas demi kebaikan orang lain.'",
-  "conj_type": "adj-i",
-  "examples": [
-    {"jp": "その先生は厳しいけど、生徒から尊敬されている。", "id": "Guru itu tegas, tapi dihormati oleh para siswa.", "level": "n3", "tags": ["pendidikan", "karakter"]},
-    {"jp": "今年の冬は去年より厳しかった。", "id": "Musim dingin tahun ini lebih berat dari tahun lalu.", "level": "n3", "tags": ["alam-lingkungan"]},
-    {"jp": "この業界の競争は非常に厳しい。", "id": "Persaingan di industri ini sangat ketat.", "level": "n3", "tags": ["bisnis"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00207"], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00212", "word": "親切", "reading": "しんせつ", "romaji": "shinsetsu",
-  "meaning_id": "ramah, baik hati", "meaning_en": "kind, helpful, friendly",
-  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["karakter", "emosi-positif", "sopan-santun"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Lebih spesifik dari sekadar 'ramah' — mengacu pada tindakan membantu orang lain dengan tulus. Sering dipakai dalam ungkapan 親切にする (bersikap baik) atau ご親切に (dengan ramahnya — lebih formal).",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "道に迷ったとき、親切な人が助けてくれた。", "id": "Saat tersesat, ada orang baik hati yang menolongku.", "level": "n3", "tags": ["perjalanan", "emosi-positif"]},
-    {"jp": "彼女はいつもみんなに親切にしている。", "id": "Dia selalu bersikap baik kepada semua orang.", "level": "n3", "tags": ["karakter"]},
-    {"jp": "ご親切にありがとうございます。", "id": "Terima kasih atas kebaikan hati Anda.", "level": "n3", "tags": ["sopan-santun"]}
-  ],
-  "synonyms": [], "antonyms": ["vg-n3-00238"], "see_also": ["vg-n3-00213"], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00213", "word": "丁寧", "reading": "ていねい", "romaji": "teinei",
-  "meaning_id": "sopan, teliti, hati-hati", "meaning_en": "polite, careful, thorough",
-  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
-  "formalitas": 3, "domain": ["sopan-santun", "karakter", "bahasa-komunikasi"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Memiliki dua makna: (1) sopan dalam perilaku dan bahasa, (2) teliti/hati-hati dalam mengerjakan sesuatu. 丁寧な仕事 berarti pekerjaan yang dikerjakan dengan cermat dan teliti.",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "彼は言葉遣いがとても丁寧で、話しやすい。", "id": "Cara bicaranya sangat sopan sehingga mudah diajak bicara.", "level": "n3", "tags": ["bahasa-komunikasi", "karakter"]},
-    {"jp": "丁寧な文字で手紙を書いた。", "id": "Aku menulis surat dengan tulisan yang rapi dan teliti.", "level": "n3", "tags": ["bahasa-komunikasi"]},
-    {"jp": "お客様に丁寧に対応するよう指示された。", "id": "Aku diperintahkan untuk melayani pelanggan dengan sopan dan penuh perhatian.", "level": "n3", "tags": ["bisnis", "sopan-santun"]}
-  ],
-  "synonyms": [], "antonyms": ["vg-n3-00214"], "see_also": ["vg-n3-00212"], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00214", "word": "失礼", "reading": "しつれい", "romaji": "shitsurei",
-  "meaning_id": "tidak sopan, tidak hormat, permisi", "meaning_en": "rude, impolite, excuse me",
-  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
-  "formalitas": 3, "domain": ["sopan-santun", "karakter", "bahasa-komunikasi"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Memiliki dua fungsi: (1) sebagai kata sifat 失礼な人 (orang tidak sopan), (2) sebagai ungkapan sopan saat masuk/keluar ruangan atau memotong pembicaraan: 失礼します (permisi).",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "食事中にスマートフォンを見るのは失礼だ。", "id": "Melihat ponsel saat makan bersama adalah hal yang tidak sopan.", "level": "n3", "tags": ["sopan-santun"]},
-    {"jp": "失礼ですが、お名前をお伺いしてもよろしいですか。", "id": "Permisi, boleh saya tanya nama Anda?", "level": "n3", "tags": ["bahasa-komunikasi", "sopan-santun"]},
-    {"jp": "お先に失礼します。", "id": "Permisi, saya pamit lebih dulu.", "level": "n3", "tags": ["pekerjaan", "sopan-santun"]}
-  ],
-  "synonyms": [], "antonyms": ["vg-n3-00213"], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00215", "word": "冷たい", "reading": "つめたい", "romaji": "tsumetai",
-  "meaning_id": "dingin (suhu atau sikap)", "meaning_en": "cold (to touch), cold (attitude)",
-  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["emosi", "kehidupan-sehari", "karakter"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Memiliki dua makna: (1) dingin secara fisik seperti air, tangan, atau minuman; (2) bersikap dingin/tidak peduli terhadap orang lain. Berbeda dari 寒い yang hanya untuk cuaca atau udara dingin.",
-  "conj_type": "adj-i",
-  "examples": [
-    {"jp": "冷たい水を一気に飲んだら、頭が痛くなった。", "id": "Setelah minum air dingin sekaligus, kepalaku jadi sakit.", "level": "n3", "tags": ["kehidupan-sehari"]},
-    {"jp": "彼女は最近、私に冷たい態度をとっている。", "id": "Belakangan ini dia bersikap dingin padaku.", "level": "n3", "tags": ["percintaan", "emosi"]},
-    {"jp": "手が冷たいから、温かい飲み物が欲しい。", "id": "Tanganku dingin, jadi aku ingin minuman hangat.", "level": "n3", "tags": ["kehidupan-sehari"]}
-  ],
-  "synonyms": [], "antonyms": ["vg-n3-00216"], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00216", "word": "温かい", "reading": "あたたかい", "romaji": "atatakai",
-  "meaning_id": "hangat (suhu atau perasaan)", "meaning_en": "warm (temperature or emotion)",
-  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["kehidupan-sehari", "emosi-positif", "karakter"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Memiliki dua arti: (1) hangat secara fisik seperti makanan atau suhu ruangan; (2) hangat secara emosional seperti orang yang penuh kasih. Berbeda dari 暑い yang berarti 'panas tidak nyaman.'",
-  "conj_type": "adj-i",
-  "examples": [
-    {"jp": "温かいスープを飲んだら、体が楽になった。", "id": "Setelah minum sup hangat, badan terasa lebih baik.", "level": "n3", "tags": ["makanan-minuman", "kesehatan"]},
-    {"jp": "彼は温かい人で、困っている人をいつも助ける。", "id": "Dia orang yang hangat hatinya dan selalu membantu yang kesulitan.", "level": "n3", "tags": ["karakter", "emosi-positif"]},
-    {"jp": "温かい言葉をかけてもらって、救われた気がした。", "id": "Menerima kata-kata hangat, aku merasa seperti diselamatkan.", "level": "n3", "tags": ["emosi-positif"]}
-  ],
-  "synonyms": [], "antonyms": ["vg-n3-00215"], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00217", "word": "涼しい", "reading": "すずしい", "romaji": "suzushii",
-  "meaning_id": "sejuk, segar (udara)", "meaning_en": "cool, refreshing (of air or weather)",
-  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["alam-lingkungan", "kehidupan-sehari"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Khusus untuk udara atau angin yang menyegarkan dan nyaman. Berbeda dari 寒い (dingin yang tidak nyaman). Sering dipakai di musim gugur atau di ruangan ber-AC yang nyaman.",
-  "conj_type": "adj-i",
-  "examples": [
-    {"jp": "秋になって、朝晩が涼しくなった。", "id": "Musim gugur tiba, pagi dan malam hari mulai terasa sejuk.", "level": "n3", "tags": ["alam-lingkungan"]},
-    {"jp": "木陰で休んだら、涼しくて気持ちよかった。", "id": "Beristirahat di bawah pohon, terasa sejuk dan nyaman.", "level": "n3", "tags": ["kehidupan-sehari"]},
-    {"jp": "涼しい場所を探して川のそばに座った。", "id": "Aku mencari tempat yang sejuk dan duduk di tepi sungai.", "level": "n3", "tags": ["alam-lingkungan", "perjalanan"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00218", "word": "複雑", "reading": "ふくざつ", "romaji": "fukuzatsu",
-  "meaning_id": "kompleks, rumit, berlapis-lapis", "meaning_en": "complicated, complex",
-  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
-  "formalitas": 3, "domain": ["kualitas", "pikiran-opini", "emosi"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Bisa menggambarkan situasi, masalah, atau perasaan yang rumit berlapis-lapis. 複雑な気持ち (perasaan campur aduk) adalah ungkapan yang sangat umum dipakai orang Jepang.",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "この問題は複雑で、簡単には解決できない。", "id": "Masalah ini rumit dan tidak bisa diselesaikan dengan mudah.", "level": "n3", "tags": ["pikiran-opini"]},
-    {"jp": "複雑な気持ちで、彼の成功を見守った。", "id": "Dengan perasaan campur aduk, aku menyaksikan keberhasilannya.", "level": "n3", "tags": ["emosi"]},
-    {"jp": "この書類の手続きは複雑で時間がかかる。", "id": "Prosedur dokumen ini rumit dan memakan waktu.", "level": "n3", "tags": ["pekerjaan"]}
-  ],
-  "synonyms": [], "antonyms": ["vg-n3-00219"], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00219", "word": "単純", "reading": "たんじゅん", "romaji": "tanjun",
-  "meaning_id": "sederhana, polos, mudah dipahami", "meaning_en": "simple, straightforward, naive",
-  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["kualitas", "karakter", "pikiran-opini"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Tidak selalu bermakna positif. 単純な人 bisa berarti 'orang yang polos/mudah tertipu.' Berbeda dari シンプル (simple) yang biasanya lebih positif dan elegan.",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "このゲームのルールは単純で、すぐに覚えられる。", "id": "Aturan permainan ini sederhana dan cepat diingat.", "level": "n3", "tags": ["hiburan"]},
-    {"jp": "彼は単純な性格で、だまされやすい。", "id": "Dia berwatak polos sehingga mudah ditipu.", "level": "n3", "tags": ["karakter"]},
-    {"jp": "複雑に考えすぎず、単純に考えよう。", "id": "Jangan terlalu dipikirkan rumit, coba pikirkan secara sederhana.", "level": "n3", "tags": ["pikiran-opini"]}
-  ],
-  "synonyms": [], "antonyms": ["vg-n3-00218"], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00220", "word": "不便", "reading": "ふべん", "romaji": "fuben",
-  "meaning_id": "tidak praktis, tidak nyaman, kurang fasilitas", "meaning_en": "inconvenient, impractical",
-  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["kualitas", "kehidupan-sehari"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Kebalikan dari 便利 (benri/praktis). Mengacu pada ketidakpraktisan karena kondisi, fasilitas, atau lokasi — bukan karena orang.",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "田舎は自然が豊かだが、生活が不便なこともある。", "id": "Pedesaan kaya akan alam, namun kehidupannya terkadang kurang praktis.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]},
-    {"jp": "電車が少ない地域は移動が不便だ。", "id": "Di daerah yang kereta apinya jarang, mobilitas terasa tidak nyaman.", "level": "n3", "tags": ["perjalanan"]},
-    {"jp": "スマートフォンがないと、とても不便に感じる。", "id": "Tanpa ponsel pintar, aku merasa sangat tidak praktis.", "level": "n3", "tags": ["teknologi"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00221", "word": "正確", "reading": "せいかく", "romaji": "seikaku",
-  "meaning_id": "akurat, tepat, presisi", "meaning_en": "accurate, exact, precise",
-  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
-  "formalitas": 3, "domain": ["kualitas", "pikiran-opini", "pekerjaan"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Lebih kuat dari 正しい untuk konteks data, angka, waktu, dan informasi teknis. 正確な時間 (waktu yang tepat/akurat), 正確な情報 (informasi yang akurat).",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "このデータは正確ですか？", "id": "Apakah data ini akurat?", "level": "n3", "tags": ["pekerjaan"]},
-    {"jp": "正確な情報を伝えることが大切だ。", "id": "Menyampaikan informasi yang akurat adalah hal yang penting.", "level": "n3", "tags": ["bahasa-komunikasi"]},
-    {"jp": "彼女は時間に正確で、遅刻したことがない。", "id": "Dia sangat tepat waktu dan tidak pernah terlambat.", "level": "n3", "tags": ["karakter"]}
-  ],
-  "synonyms": [], "antonyms": ["vg-n3-00222"], "see_also": ["vg-n3-00210"], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00222", "word": "不正確", "reading": "ふせいかく", "romaji": "fuseikaku",
-  "meaning_id": "tidak akurat, tidak tepat", "meaning_en": "inaccurate, imprecise",
-  "jlpt": "n3", "pos": "na-adj", "common": false, "related_grammar": [],
-  "formalitas": 3, "domain": ["kualitas", "pikiran-opini"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Kebalikan langsung dari 正確. Dipakai dalam konteks akademis, berita, laporan resmi, atau penilaian teknis. Lebih formal dari ただしくない.",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "このレポートには不正確な情報が含まれている。", "id": "Laporan ini mengandung informasi yang tidak akurat.", "level": "n3", "tags": ["pekerjaan", "pikiran-opini"]},
-    {"jp": "不正確なデータを使うと、結果が信頼できなくなる。", "id": "Jika menggunakan data yang tidak akurat, hasilnya tidak bisa dipercaya.", "level": "n3", "tags": ["ilmu-pengetahuan"]},
-    {"jp": "その記事の内容は不正確だと指摘された。", "id": "Isi artikel itu dikritik sebagai tidak akurat.", "level": "n3", "tags": ["media"]}
-  ],
-  "synonyms": [], "antonyms": ["vg-n3-00221"], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00223", "word": "十分", "reading": "じゅうぶん", "romaji": "juubun",
-  "meaning_id": "cukup, memadai", "meaning_en": "enough, sufficient",
-  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["kuantitas", "kualitas"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Bisa dipakai sebagai kata sifat maupun adverbia (十分に = dengan cukup). Lebih formal dari まあまあ. 十分な準備 = persiapan yang memadai.",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "試験の前に十分な準備をした。", "id": "Aku mempersiapkan diri secara memadai sebelum ujian.", "level": "n3", "tags": ["pendidikan"]},
-    {"jp": "睡眠を十分に取ることは健康の基本だ。", "id": "Tidur yang cukup adalah dasar dari kesehatan.", "level": "n3", "tags": ["kesehatan"]},
-    {"jp": "この説明で十分ですか？", "id": "Apakah penjelasan ini sudah cukup?", "level": "n3", "tags": ["bahasa-komunikasi"]}
-  ],
-  "synonyms": [], "antonyms": ["vg-n3-00224"], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00224", "word": "不十分", "reading": "ふじゅうぶん", "romaji": "fujuubun",
-  "meaning_id": "tidak cukup, kurang memadai", "meaning_en": "insufficient, inadequate",
-  "jlpt": "n3", "pos": "na-adj", "common": false, "related_grammar": [],
-  "formalitas": 3, "domain": ["kuantitas", "kualitas"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Dipakai dalam konteks formal seperti laporan, evaluasi, atau penilaian. Berbeda dari 足りない yang lebih kasual dan konkret (misal: uang tidak cukup).",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "準備が不十分なまま発表してしまった。", "id": "Aku mempresentasikan sesuatu dalam kondisi persiapan yang kurang memadai.", "level": "n3", "tags": ["pekerjaan", "pendidikan"]},
-    {"jp": "その研究の証拠は不十分だと批判された。", "id": "Bukti penelitian itu dikritik sebagai tidak mencukupi.", "level": "n3", "tags": ["ilmu-pengetahuan"]},
-    {"jp": "不十分な説明では、相手に伝わらない。", "id": "Dengan penjelasan yang tidak memadai, pesan tidak akan tersampaikan.", "level": "n3", "tags": ["bahasa-komunikasi"]}
-  ],
-  "synonyms": [], "antonyms": ["vg-n3-00223"], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00225", "word": "特別", "reading": "とくべつ", "romaji": "tokubetsu",
-  "meaning_id": "istimewa, khusus", "meaning_en": "special, particular",
-  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["kualitas", "kehidupan-sehari"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Bisa berfungsi sebagai na-adj maupun adverbia (特別に = secara khusus). 特別な日 (hari istimewa), 特別扱い (perlakuan istimewa/khusus).",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "今日は特別な日なので、レストランを予約した。", "id": "Hari ini adalah hari istimewa, jadi aku memesan restoran.", "level": "n3", "tags": ["kehidupan-sehari", "percintaan"]},
-    {"jp": "彼女は私にとって特別な存在だ。", "id": "Baginya, dia adalah keberadaan yang istimewa bagiku.", "level": "n3", "tags": ["percintaan", "emosi"]},
-    {"jp": "今回は特別に参加を許可します。", "id": "Kali ini, secara khusus kamu diizinkan untuk ikut.", "level": "n3", "tags": ["hukum-aturan"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00226", "word": "珍しい", "reading": "めずらしい", "romaji": "mezurashii",
-  "meaning_id": "langka, jarang ditemui, tidak biasa", "meaning_en": "rare, unusual, uncommon",
-  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["kualitas", "kehidupan-sehari"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Dipakai untuk benda, kejadian, atau orang yang jarang ditemui. Sering diucapkan saat kagum melihat sesuatu tidak biasa. Tidak negatif — lebih bermakna 'menarik karena langka.'",
-  "conj_type": "adj-i",
-  "examples": [
-    {"jp": "こんな珍しい鳥は初めて見た。", "id": "Ini pertama kalinya aku melihat burung selangka ini.", "level": "n3", "tags": ["alam-lingkungan"]},
-    {"jp": "彼女が遅刻するなんて、珍しいことだ。", "id": "Sungguh tidak biasa kalau dia sampai terlambat.", "level": "n3", "tags": ["kehidupan-sehari"]},
-    {"jp": "珍しいコインを集めるのが趣味だ。", "id": "Mengoleksi koin langka adalah hobinya.", "level": "n3", "tags": ["hiburan"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00227"], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00227", "word": "不思議", "reading": "ふしぎ", "romaji": "fushigi",
-  "meaning_id": "aneh, misterius, ajaib, membuat penasaran", "meaning_en": "mysterious, strange, wonderful, puzzling",
-  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["kualitas", "pikiran-opini", "emosi"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Berbeda dari おかしい (aneh dalam arti ganjil/mencurigakan). 不思議 mengandung unsur keajaiban atau misteri yang membuat penasaran — tidak selalu negatif, bisa bermakna 'ajaib.'",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "なぜ空が青いのか、子どもには不思議に見えるだろう。", "id": "Mengapa langit berwarna biru — bagi anak-anak, itu pasti terlihat misterius.", "level": "n3", "tags": ["ilmu-pengetahuan"]},
-    {"jp": "不思議なことに、その日だけ雨が降らなかった。", "id": "Anehnya, hanya hari itu saja tidak turun hujan.", "level": "n3", "tags": ["alam-lingkungan"]},
-    {"jp": "この絵には不思議な魅力がある。", "id": "Lukisan ini memiliki daya tarik yang misterius.", "level": "n3", "tags": ["seni-budaya"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00209"], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00228", "word": "素晴らしい", "reading": "すばらしい", "romaji": "subarashii",
-  "meaning_id": "luar biasa, menakjubkan, hebat", "meaning_en": "wonderful, magnificent, superb",
-  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["emosi-positif", "kualitas", "pikiran-opini"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Ungkapan kekaguman yang tulus dan kuat. Lebih kuat dari いい (bagus). Sering dipakai untuk memuji penampilan, karya, atau prestasi seseorang secara sungguh-sungguh.",
-  "conj_type": "adj-i",
-  "examples": [
-    {"jp": "そのコンサートは素晴らしくて、感動した。", "id": "Konser itu luar biasa, aku sangat terharu.", "level": "n3", "tags": ["hiburan", "emosi-positif"]},
-    {"jp": "こんな素晴らしい景色は見たことがない。", "id": "Aku belum pernah melihat pemandangan seindah ini.", "level": "n3", "tags": ["perjalanan", "alam-lingkungan"]},
-    {"jp": "彼女の演奏は本当に素晴らしかった。", "id": "Permainan musiknya sungguh-sungguh menakjubkan.", "level": "n3", "tags": ["seni-budaya"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00229", "word": "大切", "reading": "たいせつ", "romaji": "taisetsu",
-  "meaning_id": "berharga, penting (secara emosional atau personal)", "meaning_en": "precious, important, dear",
-  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["emosi", "kualitas", "karakter"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Fokus pada nilai emosional atau personal. 大切な人 = orang yang dicintai/disayangi. Berbeda dari 重要 (juuyou) yang lebih formal dan objektif.",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "家族は私にとって一番大切な存在だ。", "id": "Keluarga adalah orang-orang yang paling berharga bagiku.", "level": "n3", "tags": ["keluarga", "emosi"]},
-    {"jp": "大切なものを失いたくないから、しっかり守る。", "id": "Karena tidak ingin kehilangan hal yang berharga, aku menjaganya dengan sungguh-sungguh.", "level": "n3", "tags": ["emosi", "keputusan"]},
-    {"jp": "時間は大切に使わなければならない。", "id": "Waktu harus digunakan dengan sebaik-baiknya.", "level": "n3", "tags": ["waktu"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00230"], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00230", "word": "大事", "reading": "だいじ", "romaji": "daiji",
-  "meaning_id": "penting, berharga, urusan besar", "meaning_en": "important, precious, serious matter",
-  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["kualitas", "emosi", "keputusan"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Hampir sama dengan 大切, tapi 大事 lebih luas — bisa berarti 'urusan serius/masalah besar' (大事になる = menjadi masalah besar). Keduanya sering bisa dipertukarkan dalam percakapan.",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "体が一番大事だから、無理をしないでください。", "id": "Kesehatan adalah yang paling penting, jadi jangan memaksakan diri.", "level": "n3", "tags": ["kesehatan", "kualitas"]},
-    {"jp": "小さなミスが大事になることもある。", "id": "Kesalahan kecil pun bisa berkembang menjadi masalah besar.", "level": "n3", "tags": ["pekerjaan", "keputusan"]},
-    {"jp": "大事な書類をなくさないように気をつけてください。", "id": "Harap berhati-hati agar tidak kehilangan dokumen penting itu.", "level": "n3", "tags": ["pekerjaan"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00229"], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00231", "word": "安心", "reading": "あんしん", "romaji": "anshin",
-  "meaning_id": "lega, tenang hati, merasa aman", "meaning_en": "relief, peace of mind, reassurance",
-  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["emosi", "emosi-positif"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Perasaan lega setelah sesuatu yang dikhawatirkan ternyata berjalan baik. 安心する (merasa lega), 安心させる (menenangkan seseorang). Kebalikan dari 心配.",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "無事に着いたと連絡が来て、安心した。", "id": "Mendapat kabar bahwa mereka tiba dengan selamat, aku merasa lega.", "level": "n3", "tags": ["emosi-positif", "keluarga"]},
-    {"jp": "医者に「問題ない」と言われて、やっと安心できた。", "id": "Setelah dokter bilang 'tidak ada masalah,' akhirnya aku bisa merasa tenang.", "level": "n3", "tags": ["kesehatan"]},
-    {"jp": "安心して任せられる人に仕事を頼んだ。", "id": "Aku meminta pekerjaan itu kepada orang yang bisa dipercaya dengan tenang.", "level": "n3", "tags": ["pekerjaan"]}
-  ],
-  "synonyms": [], "antonyms": ["vg-n3-00232"], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00232", "word": "心配", "reading": "しんぱい", "romaji": "shinpai",
-  "meaning_id": "khawatir, cemas", "meaning_en": "worried, anxious, concern",
-  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["emosi", "emosi-negatif"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Sangat umum dipakai. 心配する (merasa khawatir), 心配をかける (membuat orang lain khawatir). Biasanya ditujukan kepada orang yang disayangi.",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "子どもが夜遅くまで帰らなくて、心配した。", "id": "Anak tidak pulang sampai malam, aku jadi khawatir.", "level": "n3", "tags": ["keluarga", "emosi-negatif"]},
-    {"jp": "試験の結果が心配で、眠れなかった。", "id": "Aku cemas dengan hasil ujian sampai tidak bisa tidur.", "level": "n3", "tags": ["pendidikan"]},
-    {"jp": "ご心配なく、ちゃんと対応します。", "id": "Jangan khawatir, kami akan menanganinya dengan baik.", "level": "n3", "tags": ["bahasa-komunikasi"]}
-  ],
-  "synonyms": [], "antonyms": ["vg-n3-00231"], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00233", "word": "得意", "reading": "とくい", "romaji": "tokui",
-  "meaning_id": "mahir, jagoan, pandai dalam sesuatu", "meaning_en": "good at, skilled in, one's forte",
-  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["karakter", "emosi-positif", "pendidikan"], "register": "neutral",
-  "lawan_bicara": ["teman", "umum"], "nuance": "Berbeda dari 上手 (jouzu) yang merupakan penilaian dari luar. 得意 adalah pengakuan diri sendiri tentang kelebihan. 得意な科目 = mata pelajaran yang paling dikuasai.",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "数学が得意なので、計算は速い。", "id": "Karena aku jagoan matematika, hitunganku cepat.", "level": "n3", "tags": ["pendidikan"]},
-    {"jp": "料理が得意な友達がいつも夕食を作ってくれる。", "id": "Temanku yang jago masak selalu membuatkan makan malam.", "level": "n3", "tags": ["makanan-minuman", "pertemanan"]},
-    {"jp": "得意なことで人の役に立てるのが嬉しい。", "id": "Aku senang bisa membantu orang dengan keahlianku.", "level": "n3", "tags": ["emosi-positif", "karakter"]}
-  ],
-  "synonyms": [], "antonyms": ["vg-n3-00234"], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00234", "word": "苦手", "reading": "にがて", "romaji": "nigate",
-  "meaning_id": "tidak pandai, kurang nyaman dengan sesuatu atau seseorang", "meaning_en": "bad at, not good with, weak point",
-  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["karakter", "emosi", "pendidikan"], "register": "neutral",
-  "lawan_bicara": ["teman", "umum"], "nuance": "Lebih lembut dari 嫌い (benci). 苦手 berarti 'tidak jago' atau 'kurang nyaman dengan sesuatu/seseorang' tanpa konotasi benci. Sangat sering dipakai orang Jepang untuk menghindari konfrontasi langsung.",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "英語が苦手で、授業のたびに緊張する。", "id": "Aku kurang pandai bahasa Inggris, jadi selalu gugup setiap pelajaran.", "level": "n3", "tags": ["pendidikan", "emosi"]},
-    {"jp": "人前で話すのが苦手だ。", "id": "Aku kurang nyaman berbicara di depan orang banyak.", "level": "n3", "tags": ["emosi-sosial"]},
-    {"jp": "虫は少し苦手ですが、害はないとわかっています。", "id": "Aku agak tidak nyaman dengan serangga, tapi aku tahu mereka tidak berbahaya.", "level": "n3", "tags": ["alam-lingkungan"]}
-  ],
-  "synonyms": [], "antonyms": ["vg-n3-00233"], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00235", "word": "真剣", "reading": "しんけん", "romaji": "shinken",
-  "meaning_id": "serius, sungguh-sungguh, penuh komitmen", "meaning_en": "serious, earnest, in earnest",
-  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["karakter", "keputusan", "pekerjaan"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Berasal dari kata 'pedang tajam' (真剣). Menekankan kesungguhan total dan komitmen penuh — lebih kuat dari sekadar 真面目 (serius/rajin biasa).",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "彼は仕事に真剣に取り組んでいる。", "id": "Dia mengerjakan pekerjaannya dengan sungguh-sungguh.", "level": "n3", "tags": ["pekerjaan", "karakter"]},
-    {"jp": "冗談ではなく、真剣に言っているんだ。", "id": "Ini bukan bercanda, aku mengatakannya dengan serius.", "level": "n3", "tags": ["bahasa-komunikasi"]},
-    {"jp": "将来のことを真剣に考える時期が来た。", "id": "Saatnya untuk memikirkan masa depan dengan sungguh-sungguh.", "level": "n3", "tags": ["keputusan"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00236", "word": "素直", "reading": "すなお", "romaji": "sunao",
-  "meaning_id": "jujur, terbuka, penurut, tidak berkelit", "meaning_en": "honest, obedient, straightforward, gentle",
-  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["karakter", "emosi-positif", "sopan-santun"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Mengandung makna positif: menerima dengan tulus, tidak membantah tanpa alasan, dan bersikap terbuka. Berbeda dari 正直 yang fokus pada kejujuran dalam berkata-kata; 素直 lebih pada kejujuran sikap hati.",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "素直に謝れる人は信頼される。", "id": "Orang yang bisa meminta maaf dengan tulus akan dipercaya.", "level": "n3", "tags": ["karakter", "emosi-positif"]},
-    {"jp": "彼女は素直な性格で、怒っても長く引きずらない。", "id": "Dia berkarakter terbuka; meski marah, tidak pernah lama memendam.", "level": "n3", "tags": ["karakter"]},
-    {"jp": "素直にアドバイスを受け入れた。", "id": "Aku menerima saran itu dengan tulus dan terbuka.", "level": "n3", "tags": ["keputusan"]}
-  ],
-  "synonyms": [], "antonyms": ["vg-n3-00237"], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00237", "word": "頑固", "reading": "がんこ", "romaji": "ganko",
-  "meaning_id": "keras kepala, teguh pendirian", "meaning_en": "stubborn, obstinate, headstrong",
-  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["karakter", "emosi"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Bisa bermakna negatif (ngotot tidak mau berubah) atau positif (berpendirian teguh). Konteks menentukan. 頑固なおじいさん sering digambarkan dalam budaya Jepang sebagai sosok kuat namun sulit diajak berkompromi.",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "父は頑固で、一度決めたら絶対に曲げない。", "id": "Ayahku keras kepala; sekali memutuskan sesuatu, tidak pernah mau berubah.", "level": "n3", "tags": ["keluarga", "karakter"]},
-    {"jp": "彼の頑固さが時に仕事の邪魔になる。", "id": "Kekerasan kepalanya terkadang menjadi penghalang dalam pekerjaan.", "level": "n3", "tags": ["pekerjaan"]},
-    {"jp": "頑固に自分の意見を守り続けた結果、認められた。", "id": "Berkat mempertahankan pendapatnya dengan teguh, akhirnya dia diakui.", "level": "n3", "tags": ["keputusan", "karakter"]}
-  ],
-  "synonyms": [], "antonyms": ["vg-n3-00236"], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00238", "word": "意地悪", "reading": "いじわる", "romaji": "ijiwaru",
-  "meaning_id": "jahat, usil, sengaja menyakiti", "meaning_en": "mean, spiteful, unkind on purpose",
-  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["karakter", "emosi-negatif", "emosi-sosial"], "register": "neutral",
-  "lawan_bicara": ["teman", "umum"], "nuance": "Mengacu pada perilaku sengaja jahil atau menyakiti orang lain. Lebih spesifik dari 悪い (buruk secara umum). 意地悪な人 = orang yang suka usil atau jahat dengan sengaja.",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "意地悪な子がいつもからかってきて、嫌だった。", "id": "Ada anak yang usil yang selalu menggangguku, itu menyebalkan.", "level": "n3", "tags": ["emosi-negatif", "emosi-sosial"]},
-    {"jp": "意地悪な質問をして、困らせようとした。", "id": "Dia mengajukan pertanyaan yang nakal untuk membuatku bingung.", "level": "n3", "tags": ["karakter"]},
-    {"jp": "なぜそんな意地悪なことを言うの？", "id": "Mengapa kamu mengatakan hal yang menyakitkan seperti itu?", "level": "n3", "tags": ["emosi-negatif"]}
-  ],
-  "synonyms": [], "antonyms": ["vg-n3-00212"], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00239", "word": "おとなしい", "reading": "おとなしい", "romaji": "otonashii",
-  "meaning_id": "pendiam, kalem, penurut, tidak membuat masalah", "meaning_en": "quiet, gentle, obedient, docile",
-  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["karakter", "emosi"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Tidak selalu berarti pemalu. Bisa berarti kalem dan tidak membuat masalah. 大人しくしなさい = 'Tenang dan diam!' (diucapkan orang tua kepada anak yang ribut).",
-  "conj_type": "adj-i",
-  "examples": [
-    {"jp": "彼はおとなしい性格で、あまり自分から話しかけない。", "id": "Dia berkarakter pendiam dan jarang menyapa duluan.", "level": "n3", "tags": ["karakter"]},
-    {"jp": "この犬はとてもおとなしくて、子どもにも安全だ。", "id": "Anjing ini sangat kalem dan aman untuk anak-anak.", "level": "n3", "tags": ["kehidupan-sehari"]},
-    {"jp": "授業中はおとなしくしてください。", "id": "Tolong bersikap tenang selama pelajaran berlangsung.", "level": "n3", "tags": ["pendidikan"]}
-  ],
-  "synonyms": [], "antonyms": ["vg-n3-00240"], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00240", "word": "積極的", "reading": "せっきょくてき", "romaji": "sekkyokuteki",
-  "meaning_id": "aktif, proaktif, bersemangat mengambil inisiatif", "meaning_en": "positive, proactive, assertive, active",
-  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["karakter", "emosi-positif", "pekerjaan"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Menggambarkan sikap yang mengambil inisiatif tanpa menunggu disuruh. Kebalikan dari 消極的 (shokyokuteki = pasif/tidak aktif). Sangat bernilai positif dalam konteks kerja dan pergaulan di Jepang.",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "彼女は積極的に意見を述べるので、会議で目立つ。", "id": "Dia aktif menyampaikan pendapat sehingga menonjol dalam rapat.", "level": "n3", "tags": ["pekerjaan", "karakter"]},
-    {"jp": "積極的に新しいことに挑戦することが大切だ。", "id": "Penting untuk secara proaktif menantang hal-hal baru.", "level": "n3", "tags": ["keputusan", "karakter"]},
-    {"jp": "もっと積極的に友達を作る努力をしてみよう。", "id": "Mari coba lebih aktif berupaya untuk membuat teman.", "level": "n3", "tags": ["pertemanan", "emosi-positif"]}
-  ],
-  "synonyms": [], "antonyms": ["vg-n3-00239"], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
   "id": "vg-n3-00241", "word": "会議", "reading": "かいぎ", "romaji": "kaigi",
   "meaning_id": "rapat, pertemuan resmi", "meaning_en": "meeting, conference",
   "jlpt": "n3", "pos": "noun-suru", "common": true, "related_grammar": [],
@@ -8386,21 +5374,6 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-00251", "word": "意見", "reading": "いけん", "romaji": "iken",
-  "meaning_id": "pendapat, opini", "meaning_en": "opinion, view",
-  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["pikiran-opini", "bahasa-komunikasi", "pekerjaan"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Pikiran atau pandangan pribadi tentang suatu hal. Lebih netral dari 主張 yang memiliki nuansa 'bersikeras'. Sering dipakai dalam konteks formal: 意見を述べる (menyampaikan pendapat).",
-  "conj_type": null,
-  "examples": [
-    {"jp": "会議でみんな自由に意見を述べた。", "id": "Semua orang menyampaikan pendapat secara bebas dalam rapat.", "level": "n3", "tags": ["pekerjaan"]},
-    {"jp": "あなたの意見を聞かせてください。", "id": "Tolong ceritakan pendapat Anda.", "level": "n3", "tags": ["bahasa-komunikasi"]},
-    {"jp": "この問題については意見が分かれている。", "id": "Tentang masalah ini, pendapat terbagi.", "level": "n3", "tags": ["pikiran-opini"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00252"], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
   "id": "vg-n3-00252", "word": "主張", "reading": "しゅちょう", "romaji": "shuchou",
   "meaning_id": "argumen, klaim, pernyataan yang ditegaskan", "meaning_en": "assertion, claim, argument",
   "jlpt": "n3", "pos": "noun-suru", "common": true, "related_grammar": [],
@@ -8521,66 +5494,6 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-00260", "word": "責任", "reading": "せきにん", "romaji": "sekinin",
-  "meaning_id": "tanggung jawab", "meaning_en": "responsibility",
-  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 3, "domain": ["pekerjaan", "hukum-aturan", "karakter"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Kewajiban moral atau legal atas suatu tindakan atau peran. Pola umum: 責任を取る (mengambil tanggung jawab), 責任がある (bertanggung jawab atas), 責任を果たす (menunaikan tanggung jawab).",
-  "conj_type": null,
-  "examples": [
-    {"jp": "自分の行動には責任を持つべきだ。", "id": "Harus bertanggung jawab atas tindakan sendiri.", "level": "n3", "tags": ["karakter"]},
-    {"jp": "この失敗の責任は私にある。", "id": "Tanggung jawab atas kegagalan ini ada pada saya.", "level": "n3", "tags": ["pekerjaan"]},
-    {"jp": "リーダーとして、チーム全体の責任を負う。", "id": "Sebagai pemimpin, menanggung tanggung jawab seluruh tim.", "level": "n3", "tags": ["pekerjaan"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00261"], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00261", "word": "義務", "reading": "ぎむ", "romaji": "gimu",
-  "meaning_id": "kewajiban, tugas yang harus dilakukan", "meaning_en": "duty, obligation",
-  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 3, "domain": ["hukum-aturan", "politik-masyarakat", "pekerjaan"], "register": "formal",
-  "lawan_bicara": ["umum"], "nuance": "Sesuatu yang secara hukum atau moral harus dilakukan. Lebih kuat dari 責任 karena ada unsur paksaan (hukum/aturan). Lawannya adalah 権利 (hak). Sering muncul dalam konteks hukum dan kewarganegaraan.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "納税は国民の義務だ。", "id": "Membayar pajak adalah kewajiban warga negara.", "level": "n3", "tags": ["politik-masyarakat"]},
-    {"jp": "契約による義務を果たさなければならない。", "id": "Harus menunaikan kewajiban berdasarkan kontrak.", "level": "n3", "tags": ["hukum-aturan"]},
-    {"jp": "義務と権利はセットで考える必要がある。", "id": "Kewajiban dan hak perlu dipikirkan sebagai satu kesatuan.", "level": "n3", "tags": ["hukum-aturan"]}
-  ],
-  "synonyms": [], "antonyms": ["vg-n3-00262"], "see_also": ["vg-n3-00260"], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00262", "word": "権利", "reading": "けんり", "romaji": "kenri",
-  "meaning_id": "hak", "meaning_en": "right, entitlement",
-  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 3, "domain": ["hukum-aturan", "politik-masyarakat"], "register": "formal",
-  "lawan_bicara": ["umum"], "nuance": "Hak yang dimiliki seseorang secara hukum atau moral. Berlawanan dengan 義務 (kewajiban). Sering dipakai dalam konteks hak asasi: 人権 (hak asasi manusia), 権利を主張する (menuntut hak).",
-  "conj_type": null,
-  "examples": [
-    {"jp": "すべての人間には平等な権利がある。", "id": "Setiap manusia memiliki hak yang setara.", "level": "n3", "tags": ["hukum-aturan"]},
-    {"jp": "沈黙する権利があります。", "id": "Anda memiliki hak untuk diam.", "level": "n3", "tags": ["hukum-aturan"]},
-    {"jp": "労働者の権利を守ることが法律で定められている。", "id": "Perlindungan hak pekerja diatur dalam undang-undang.", "level": "n3", "tags": ["politik-masyarakat"]}
-  ],
-  "synonyms": [], "antonyms": ["vg-n3-00261"], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00263", "word": "規則", "reading": "きそく", "romaji": "kisoku",
-  "meaning_id": "aturan, peraturan", "meaning_en": "rule, regulation",
-  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 3, "domain": ["hukum-aturan", "pekerjaan", "pendidikan"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Aturan yang harus diikuti dalam suatu organisasi atau kelompok. Lebih spesifik dari 法律 (undang-undang). Sering muncul dalam konteks sekolah, perusahaan, atau organisasi: 規則を守る (menaati aturan) / 規則を破る (melanggar aturan).",
-  "conj_type": null,
-  "examples": [
-    {"jp": "学校の規則を破ると罰則がある。", "id": "Ada sanksi jika melanggar peraturan sekolah.", "level": "n3", "tags": ["pendidikan"]},
-    {"jp": "この会社では厳しい服装規則がある。", "id": "Di perusahaan ini ada aturan berpakaian yang ketat.", "level": "n3", "tags": ["pekerjaan"]},
-    {"jp": "規則に従って行動することが求められる。", "id": "Diharuskan bertindak sesuai aturan.", "level": "n3", "tags": ["hukum-aturan"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
   "id": "vg-n3-00264", "word": "組織", "reading": "そしき", "romaji": "soshiki",
   "meaning_id": "organisasi, lembaga", "meaning_en": "organization, institution",
   "jlpt": "n3", "pos": "noun-suru", "common": true, "related_grammar": [],
@@ -8596,66 +5509,6 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-00265", "word": "政府", "reading": "せいふ", "romaji": "seifu",
-  "meaning_id": "pemerintah", "meaning_en": "government",
-  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 3, "domain": ["politik-masyarakat"], "register": "formal",
-  "lawan_bicara": ["umum"], "nuance": "Mengacu pada pemerintah pusat suatu negara. Berbeda dari 政治 (politik sebagai bidang) dan 行政 (administrasi pemerintahan). Dalam berita sering muncul sebagai 政府は〜した (pemerintah melakukan...).",
-  "conj_type": null,
-  "examples": [
-    {"jp": "政府は新しい経済政策を発表した。", "id": "Pemerintah mengumumkan kebijakan ekonomi baru.", "level": "n3", "tags": ["politik-masyarakat"]},
-    {"jp": "市民は政府の対応に不満を持っている。", "id": "Warga tidak puas dengan respons pemerintah.", "level": "n3", "tags": ["politik-masyarakat"]},
-    {"jp": "政府と民間企業が協力してプロジェクトを進めた。", "id": "Pemerintah dan perusahaan swasta bekerja sama menjalankan proyek.", "level": "n3", "tags": ["ekonomi-keuangan"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00266", "word": "市場", "reading": "しじょう", "romaji": "shijou",
-  "meaning_id": "pasar (ekonomi), pasar bisnis", "meaning_en": "market (economic)",
-  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 3, "domain": ["ekonomi-keuangan", "bisnis"], "register": "formal",
-  "lawan_bicara": ["umum"], "nuance": "Mengacu pada pasar dalam konteks ekonomi/bisnis (bukan pasar fisik). Bacaan いちば adalah pasar fisik tempat berjualan. 市場 (しじょう) muncul dalam konteks saham, perdagangan, dan ekonomi makro.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "海外市場への参入を検討している。", "id": "Sedang mempertimbangkan untuk masuk pasar luar negeri.", "level": "n3", "tags": ["bisnis"]},
-    {"jp": "市場の動向を分析することが重要だ。", "id": "Penting untuk menganalisis tren pasar.", "level": "n3", "tags": ["ekonomi-keuangan"]},
-    {"jp": "競争が激しくなり、市場は縮小している。", "id": "Persaingan semakin ketat dan pasar semakin menyusut.", "level": "n3", "tags": ["ekonomi-keuangan"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00267", "word": "原因", "reading": "げんいん", "romaji": "genin",
-  "meaning_id": "penyebab, sebab", "meaning_en": "cause, reason (for a problem)",
-  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["sebab-akibat", "ilmu-pengetahuan", "kehidupan-sehari"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Faktor yang menyebabkan suatu kejadian atau masalah. Berbeda dari 理由 (alasan personal/logis) — 原因 lebih objektif dan sering dipakai dalam konteks masalah, penyakit, atau insiden. Pola umum: 〜が原因で (disebabkan oleh ~).",
-  "conj_type": null,
-  "examples": [
-    {"jp": "火事の原因はまだ調査中だ。", "id": "Penyebab kebakaran masih dalam penyelidikan.", "level": "n3", "tags": ["sebab-akibat"]},
-    {"jp": "病気の原因を突き止めるために検査をした。", "id": "Melakukan pemeriksaan untuk menemukan penyebab penyakit.", "level": "n3", "tags": ["kesehatan"]},
-    {"jp": "ストレスが原因で体調を崩した。", "id": "Jatuh sakit disebabkan oleh stres.", "level": "n3", "tags": ["kesehatan"]}
-  ],
-  "synonyms": [], "antonyms": ["vg-n3-00268"], "see_also": ["vg-n3-00271"], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00268", "word": "結果", "reading": "けっか", "romaji": "kekka",
-  "meaning_id": "hasil, akibat, konsekuensi", "meaning_en": "result, outcome, consequence",
-  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["sebab-akibat", "pendidikan", "pekerjaan"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Apa yang terjadi setelah suatu proses atau tindakan. Bisa positif maupun negatif. Beda dari 成果 (seika) yang khusus untuk hasil positif/prestasi. Pola umum: 〜の結果、〜になった (akibat ~, menjadi...).",
-  "conj_type": null,
-  "examples": [
-    {"jp": "試験の結果が明日発表される。", "id": "Hasil ujian akan diumumkan besok.", "level": "n3", "tags": ["pendidikan"]},
-    {"jp": "努力した結果、目標を達成できた。", "id": "Sebagai hasil dari kerja keras, berhasil mencapai tujuan.", "level": "n3", "tags": ["emosi-positif"]},
-    {"jp": "その決定が悪い結果をもたらした。", "id": "Keputusan itu mengakibatkan hasil yang buruk.", "level": "n3", "tags": ["sebab-akibat"]}
-  ],
-  "synonyms": [], "antonyms": ["vg-n3-00267"], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
   "id": "vg-n3-00269", "word": "影響", "reading": "えいきょう", "romaji": "eikyou",
   "meaning_id": "pengaruh, dampak", "meaning_en": "influence, effect, impact",
   "jlpt": "n3", "pos": "noun-suru", "common": true, "related_grammar": [],
@@ -8668,246 +5521,6 @@ window.vocabN3 = [
     {"jp": "経済的な影響を最小限に抑える必要がある。", "id": "Perlu meminimalkan dampak ekonomi.", "level": "n3", "tags": ["ekonomi-keuangan"]}
   ],
   "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00267", "vg-n3-00268"], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00270", "word": "場合", "reading": "ばあい", "romaji": "baai",
-  "meaning_id": "kasus, situasi, kondisi, kalau", "meaning_en": "case, situation, circumstances",
-  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["hubungan-konsep", "kehidupan-sehari"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Dipakai untuk menyebut kondisi atau situasi tertentu. Sering muncul dalam pola 〜の場合 (dalam hal/kasus ~) yang sangat produktif di bahasa Jepang formal maupun sehari-hari.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "緊急の場合は119番に電話してください。", "id": "Dalam keadaan darurat, hubungi 119.", "level": "n3", "tags": ["kesehatan"]},
-    {"jp": "雨の場合は屋内で開催します。", "id": "Jika hujan, akan diadakan di dalam ruangan.", "level": "n3", "tags": ["kehidupan-sehari"]},
-    {"jp": "その場合、どのように対応すればいいですか？", "id": "Dalam kasus itu, bagaimana sebaiknya merespons?", "level": "n3", "tags": ["bahasa-komunikasi"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00271", "word": "理由", "reading": "りゆう", "romaji": "riyuu",
-  "meaning_id": "alasan, sebab (yang disampaikan)", "meaning_en": "reason",
-  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["bahasa-komunikasi", "hubungan-konsep"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Alasan yang dikemukakan seseorang untuk menjelaskan tindakan atau keputusan. Lebih personal dan subjektif dari 原因. Pola: 理由を教える (menjelaskan alasan) / 理由がある (ada alasannya).",
-  "conj_type": null,
-  "examples": [
-    {"jp": "遅刻した理由を上司に説明した。", "id": "Menjelaskan alasan keterlambatan kepada atasan.", "level": "n3", "tags": ["pekerjaan"]},
-    {"jp": "何か理由があるに違いない。", "id": "Pasti ada alasannya.", "level": "n3", "tags": ["pikiran-opini"]},
-    {"jp": "理由なく欠席することは認められません。", "id": "Tidak diperbolehkan absen tanpa alasan.", "level": "n3", "tags": ["pendidikan"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00267"], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00272", "word": "目的", "reading": "もくてき", "romaji": "mokuteki",
-  "meaning_id": "tujuan, sasaran", "meaning_en": "purpose, goal, objective",
-  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["keputusan", "pekerjaan", "kehidupan-sehari"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Hal yang ingin dicapai. Lebih abstrak dari 目標 (もくひょう, target konkret yang bisa diukur). 目的 lebih menekankan 'untuk apa' melakukan sesuatu. Pola: 目的は〜だ / 目的を達成する.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "この旅の目的は文化交流だ。", "id": "Tujuan perjalanan ini adalah pertukaran budaya.", "level": "n3", "tags": ["perjalanan"]},
-    {"jp": "何のために勉強するのか、目的を明確にすべきだ。", "id": "Harus memperjelas tujuan belajar untuk apa.", "level": "n3", "tags": ["pendidikan"]},
-    {"jp": "組織の目的を全員が理解している。", "id": "Semua anggota memahami tujuan organisasi.", "level": "n3", "tags": ["bisnis"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00273", "word": "方法", "reading": "ほうほう", "romaji": "houhou",
-  "meaning_id": "cara, metode", "meaning_en": "method, way, means",
-  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["ilmu-pengetahuan", "pekerjaan", "kehidupan-sehari"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Prosedur atau cara untuk mencapai sesuatu. Lebih formal dari やり方 (cara/caranya, kasual) dan lebih umum dari 手順 (prosedur berurutan). Sering muncul dalam instruksi dan penjelasan teknis.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "問題を解決する方法を考えた。", "id": "Memikirkan cara untuk menyelesaikan masalah.", "level": "n3", "tags": ["keputusan"]},
-    {"jp": "効果的な勉強方法を教えてください。", "id": "Tolong ajarkan metode belajar yang efektif.", "level": "n3", "tags": ["pendidikan"]},
-    {"jp": "支払い方法はいくつかございます。", "id": "Ada beberapa metode pembayaran yang tersedia.", "level": "n3", "tags": ["bisnis"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00274", "word": "可能性", "reading": "かのうせい", "romaji": "kanousei",
-  "meaning_id": "kemungkinan, potensi, peluang", "meaning_en": "possibility, potential, likelihood",
-  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["hubungan-konsep", "pikiran-opini"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Kemungkinan bahwa sesuatu bisa terjadi. Berbeda dari 確率 (probabilitas statistik). Pola umum: 可能性がある (ada kemungkinan) / 可能性が高い (kemungkinan besar) / 可能性を探る (menjajaki kemungkinan).",
-  "conj_type": null,
-  "examples": [
-    {"jp": "明日雨が降る可能性が高い。", "id": "Kemungkinan besar besok akan hujan.", "level": "n3", "tags": ["alam-lingkungan"]},
-    {"jp": "この方法が成功する可能性はどのくらいですか？", "id": "Berapa besar kemungkinan cara ini berhasil?", "level": "n3", "tags": ["pikiran-opini"]},
-    {"jp": "彼には将来大きな可能性がある。", "id": "Dia memiliki potensi besar di masa depan.", "level": "n3", "tags": ["emosi-positif"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00275", "word": "必要性", "reading": "ひつようせい", "romaji": "hitsuyousei",
-  "meaning_id": "kebutuhan, keperluan, keniscayaan", "meaning_en": "necessity, need",
-  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 3, "domain": ["hubungan-konsep", "pekerjaan", "ilmu-pengetahuan"], "register": "formal",
-  "lawan_bicara": ["umum"], "nuance": "Kondisi bahwa sesuatu mutlak diperlukan. Lebih abstrak dari 必要 (perlu) karena akhiran 〜性 menambahkan nuansa konseptual/akademis. Sering muncul dalam argumen atau analisis: 〜の必要性を強調する (menekankan perlunya ~).",
-  "conj_type": null,
-  "examples": [
-    {"jp": "このルールを見直す必要性を感じている。", "id": "Merasa perlunya meninjau ulang aturan ini.", "level": "n3", "tags": ["hukum-aturan"]},
-    {"jp": "環境保護の必要性を訴えた。", "id": "Menyerukan perlunya perlindungan lingkungan.", "level": "n3", "tags": ["alam-lingkungan"]},
-    {"jp": "改革の必要性については誰もが認めている。", "id": "Semua orang mengakui perlunya reformasi.", "level": "n3", "tags": ["politik-masyarakat"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00276"], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00276", "word": "重要性", "reading": "じゅうようせい", "romaji": "juuyousei",
-  "meaning_id": "pentingnya sesuatu, signifikansi", "meaning_en": "importance, significance",
-  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 3, "domain": ["hubungan-konsep", "ilmu-pengetahuan", "pekerjaan"], "register": "formal",
-  "lawan_bicara": ["umum"], "nuance": "Mengungkapkan seberapa penting suatu hal. Sering dipakai dalam wacana formal dan akademik. Pola: 〜の重要性を理解する (memahami pentingnya ~) / 重要性を増している (semakin penting).",
-  "conj_type": null,
-  "examples": [
-    {"jp": "チームワークの重要性は言うまでもない。", "id": "Pentingnya kerja tim sudah tidak perlu dikatakan lagi.", "level": "n3", "tags": ["pekerjaan"]},
-    {"jp": "教育の重要性を社会全体が認識すべきだ。", "id": "Seluruh masyarakat harus menyadari pentingnya pendidikan.", "level": "n3", "tags": ["pendidikan"]},
-    {"jp": "データ管理の重要性がますます高まっている。", "id": "Pentingnya pengelolaan data semakin meningkat.", "level": "n3", "tags": ["teknologi"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00275"], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00277", "word": "安全", "reading": "あんぜん", "romaji": "anzen",
-  "meaning_id": "aman, keamanan", "meaning_en": "safety, security",
-  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["kehidupan-sehari", "pekerjaan", "hukum-aturan"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Dipakai sebagai na-adjektif (安全な場所) maupun noun (安全を確保する). Lawannya adalah 危険. Dalam konteks kerja Jepang, 安全 sangat penting: 安全第一 (keselamatan utama) adalah prinsip umum di tempat kerja.",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "この地域は夜でも比較的安全だ。", "id": "Daerah ini relatif aman bahkan di malam hari.", "level": "n3", "tags": ["kehidupan-sehari"]},
-    {"jp": "作業前に安全確認を行ってください。", "id": "Lakukan pemeriksaan keamanan sebelum bekerja.", "level": "n3", "tags": ["pekerjaan"]},
-    {"jp": "子どもたちの安全を守るのが親の責任だ。", "id": "Melindungi keselamatan anak-anak adalah tanggung jawab orang tua.", "level": "n3", "tags": ["keluarga"]}
-  ],
-  "synonyms": [], "antonyms": ["vg-n3-00278"], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00278", "word": "危険", "reading": "きけん", "romaji": "kiken",
-  "meaning_id": "bahaya, berbahaya", "meaning_en": "danger, dangerous",
-  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["kehidupan-sehari", "pekerjaan", "kesehatan"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Dipakai sebagai na-adjektif (危険な行為) maupun noun (危険を冒す). Lawannya adalah 安全. Beda dari 怖い (takut/menakutkan) yang bersifat subjektif — 危険 lebih objektif dan faktual.",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "この化学物質は非常に危険だ。", "id": "Zat kimia ini sangat berbahaya.", "level": "n3", "tags": ["ilmu-pengetahuan"]},
-    {"jp": "危険な運転は絶対にしてはいけない。", "id": "Sama sekali tidak boleh berkendara dengan berbahaya.", "level": "n3", "tags": ["kehidupan-sehari"]},
-    {"jp": "嵐の中に出かけるのは危険すぎる。", "id": "Keluar dalam badai terlalu berbahaya.", "level": "n3", "tags": ["alam-lingkungan"]}
-  ],
-  "synonyms": [], "antonyms": ["vg-n3-00277"], "see_also": ["vg-n3-00279"], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00279", "word": "事故", "reading": "じこ", "romaji": "jiko",
-  "meaning_id": "kecelakaan, insiden tak terduga", "meaning_en": "accident",
-  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["kehidupan-sehari", "hukum-aturan"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Kejadian buruk yang tidak disengaja. Berbeda dari 事件 (kejadian/kasus, sering disengaja atau kriminal). Pola: 事故が起きる (terjadi kecelakaan) / 事故に遭う (mengalami kecelakaan).",
-  "conj_type": null,
-  "examples": [
-    {"jp": "交差点で交通事故が起きた。", "id": "Terjadi kecelakaan lalu lintas di persimpangan.", "level": "n3", "tags": ["kehidupan-sehari"]},
-    {"jp": "事故に遭った場合は、すぐに警察に連絡すること。", "id": "Jika mengalami kecelakaan, segera hubungi polisi.", "level": "n3", "tags": ["hukum-aturan"]},
-    {"jp": "工場での事故を防ぐために定期的な訓練が行われた。", "id": "Pelatihan rutin dilakukan untuk mencegah kecelakaan di pabrik.", "level": "n3", "tags": ["pekerjaan"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00280"], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00280", "word": "事件", "reading": "じけん", "romaji": "jiken",
-  "meaning_id": "kejadian penting, kasus, insiden (sering kriminal)", "meaning_en": "incident, case, affair",
-  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["hukum-aturan", "media", "politik-masyarakat"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Kejadian yang signifikan, sering mengandung unsur kriminal atau kontroversial. Berbeda dari 事故 (kecelakaan tak disengaja). Sering muncul dalam berita: 〜事件が発生した (kasus ~ terjadi).",
-  "conj_type": null,
-  "examples": [
-    {"jp": "昨夜、近所で大きな事件があったらしい。", "id": "Kabarnya semalam terjadi kejadian besar di dekat sini.", "level": "n3", "tags": ["kehidupan-sehari"]},
-    {"jp": "その事件は社会に大きな衝撃を与えた。", "id": "Kasus itu memberikan guncangan besar pada masyarakat.", "level": "n3", "tags": ["media"]},
-    {"jp": "警察は事件の真相を調べている。", "id": "Polisi sedang menyelidiki kebenaran di balik kasus itu.", "level": "n3", "tags": ["hukum-aturan"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00279"], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00281", "word": "現状", "reading": "げんじょう", "romaji": "genjou",
-  "meaning_id": "kondisi/keadaan saat ini, status quo", "meaning_en": "current situation, present condition",
-  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 3, "domain": ["politik-masyarakat", "bisnis", "pekerjaan"], "register": "formal",
-  "lawan_bicara": ["umum"], "nuance": "Kondisi atau keadaan sebagaimana adanya sekarang. Sering dipakai dalam konteks analisis atau laporan. 現状維持 (mempertahankan status quo) adalah idiom yang sangat umum.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "まず現状を正確に把握することが大切だ。", "id": "Pertama-tama penting untuk memahami kondisi saat ini secara akurat.", "level": "n3", "tags": ["pekerjaan"]},
-    {"jp": "現状に満足せず、常に改善を目指している。", "id": "Tidak puas dengan kondisi saat ini, selalu berusaha melakukan perbaikan.", "level": "n3", "tags": ["karakter"]},
-    {"jp": "政策を見直す前に、まず現状分析が必要だ。", "id": "Sebelum meninjau ulang kebijakan, diperlukan analisis kondisi terkini.", "level": "n3", "tags": ["politik-masyarakat"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00282", "vg-n3-00283"], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00282", "word": "実情", "reading": "じつじょう", "romaji": "jitsujou",
-  "meaning_id": "kenyataan di lapangan, situasi nyata", "meaning_en": "actual situation, real state of affairs",
-  "jlpt": "n3", "pos": "noun", "common": false, "related_grammar": [],
-  "formalitas": 3, "domain": ["politik-masyarakat", "pekerjaan"], "register": "formal",
-  "lawan_bicara": ["atasan", "umum"], "nuance": "Kenyataan sesungguhnya yang terjadi — berbeda dari yang terlihat di permukaan atau yang dilaporkan secara resmi. Sering dipakai ketika ada kesenjangan antara laporan resmi dan kenyataan di lapangan. Lebih spesifik dari 現状.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "現場の実情を上層部に伝えることが難しい。", "id": "Sulit menyampaikan kenyataan di lapangan kepada manajemen atas.", "level": "n3", "tags": ["pekerjaan"]},
-    {"jp": "統計では見えない地方の実情がある。", "id": "Ada kenyataan daerah yang tidak terlihat dari statistik.", "level": "n3", "tags": ["politik-masyarakat"]},
-    {"jp": "実情を知らないまま判断するのは危険だ。", "id": "Berbahaya jika membuat keputusan tanpa mengetahui situasi sesungguhnya.", "level": "n3", "tags": ["keputusan"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00281", "vg-n3-00283"], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00283", "word": "状況", "reading": "じょうきょう", "romaji": "joukyou",
-  "meaning_id": "situasi, kondisi, keadaan (yang sedang berlangsung)", "meaning_en": "situation, circumstances, conditions",
-  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["kehidupan-sehari", "pekerjaan", "bahasa-komunikasi"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Kondisi yang sedang berlangsung atau berkembang. Lebih dinamis dari 現状 (yang menekankan 'saat ini' sebagai titik tetap). 状況 sering dipakai ketika situasi bisa berubah: 状況が変わった (situasi sudah berubah).",
-  "conj_type": null,
-  "examples": [
-    {"jp": "現在の状況を説明してもらえますか？", "id": "Bisakah Anda jelaskan situasi saat ini?", "level": "n3", "tags": ["bahasa-komunikasi"]},
-    {"jp": "状況に応じて柔軟に対応することが求められる。", "id": "Diperlukan kemampuan merespons secara fleksibel sesuai situasi.", "level": "n3", "tags": ["pekerjaan"]},
-    {"jp": "緊急の状況でも冷静に行動できた。", "id": "Bisa bertindak tenang bahkan dalam situasi darurat.", "level": "n3", "tags": ["karakter"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00281", "vg-n3-00282"], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00284", "word": "立場", "reading": "たちば", "romaji": "tachiba",
-  "meaning_id": "posisi, sudut pandang seseorang, kedudukan", "meaning_en": "position, standpoint, one's situation",
-  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["bahasa-komunikasi", "emosi-sosial", "pekerjaan"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Bukan hanya posisi fisik, tapi posisi sosial atau sudut pandang seseorang berdasarkan peran/kondisinya. Pola penting: 〜の立場から (dari sudut pandang ~) / 立場が違う (kedudukan/posisi berbeda). Sangat sering muncul dalam diskusi yang melibatkan perspektif berbeda.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "相手の立場に立って考えることが大切だ。", "id": "Penting untuk berpikir dari sudut pandang orang lain.", "level": "n3", "tags": ["emosi-sosial"]},
-    {"jp": "上司の立場からすると、理解できなくはない。", "id": "Dari sudut pandang atasan, bisa dimengerti juga.", "level": "n3", "tags": ["pekerjaan"]},
-    {"jp": "彼女の立場を考えると、軽率な発言はできない。", "id": "Dengan mempertimbangkan posisinya, tidak bisa bicara sembarangan.", "level": "n3", "tags": ["bahasa-komunikasi"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00251"], "provenance": "jlpt-corpus", "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00285", "word": "態度", "reading": "たいど", "romaji": "taido",
-  "meaning_id": "sikap, perilaku, cara bersikap", "meaning_en": "attitude, manner, behavior",
-  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["karakter", "emosi-sosial", "pekerjaan"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Cara seseorang berperilaku atau bersikap, terutama yang terlihat dari luar. Beda dari 性格 (kepribadian bawaan). 態度を改める (memperbaiki sikap) sangat umum dipakai di konteks kerja dan pendidikan. Bisa positif maupun negatif.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "彼の失礼な態度に驚いた。", "id": "Terkejut dengan sikapnya yang tidak sopan.", "level": "n3", "tags": ["emosi-sosial"]},
-    {"jp": "仕事に対する真剣な態度が評価された。", "id": "Sikap serius terhadap pekerjaan mendapat penilaian positif.", "level": "n3", "tags": ["pekerjaan"]},
-    {"jp": "お客様に対して常に丁寧な態度で接することが大切だ。", "id": "Penting untuk selalu bersikap sopan kepada pelanggan.", "level": "n3", "tags": ["bisnis"]}
-  ],
-  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00284"], "provenance": "jlpt-corpus", "added_v": "v15"
 },
 
 {
@@ -9866,34 +6479,6 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-00319",
-  "word": "知らせ",
-  "reading": "しらせ",
-  "romaji": "shirase",
-  "meaning_id": "pemberitahuan, kabar, berita",
-  "meaning_en": "notice, notification, news, tidings",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["bahasa-komunikasi", "kehidupan-sehari"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Bentuk kata benda dari 知らせる. Sering muncul dalam frasa 嬉しい知らせ (kabar gembira) atau 悲しい知らせ (kabar sedih). Terasa lebih personal dari お知らせ yang bersifat resmi/publik.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "嬉しい知らせが届いた。", "id": "Kabar gembira telah datang.", "level": "n3", "tags": ["emosi-positif"]},
-    {"jp": "合格の知らせを聞いて涙が出た。", "id": "Air mataku menetes saat mendengar kabar kelulusan itu.", "level": "n3", "tags": ["pendidikan", "emosi"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00318"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
   "id": "vg-n3-00320",
   "word": "頼む",
   "reading": "たのむ",
@@ -10142,34 +6727,6 @@ window.vocabN3 = [
   ],
   "synonyms": [],
   "antonyms": ["vg-n3-00327"],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00329",
-  "word": "相談に乗る",
-  "reading": "そうだんにのる",
-  "romaji": "soudan ni noru",
-  "meaning_id": "membantu berunding, mendengarkan curhatan, bersedia memberi saran",
-  "meaning_en": "to give advice, to help someone with their problem, to lend an ear",
-  "jlpt": "n3",
-  "pos": "expr-set",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["pertemanan", "emosi-sosial"],
-  "register": "neutral",
-  "lawan_bicara": ["teman", "umum"],
-  "nuance": "Idiom yang berarti bersedia aktif mendengarkan dan membantu seseorang yang punya masalah. Lebih dari sekadar 聞く — menyiratkan keterlibatan dan dukungan nyata. 相談を受ける memiliki nuansa yang lebih formal.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "いつでも相談に乗るから、気軽に話してね。", "id": "Kapan saja saya siap membantu, jadi bicaralah tanpa sungkan.", "level": "n3", "tags": ["pertemanan"]},
-    {"jp": "友達の就活の相談に乗った。", "id": "Saya membantu teman yang galau soal mencari kerja.", "level": "n3", "tags": ["pekerjaan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
   "added_v": "v15"
@@ -10487,34 +7044,6 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-00341",
-  "word": "お礼を言う",
-  "reading": "おれいをいう",
-  "romaji": "orei wo iu",
-  "meaning_id": "mengucapkan terima kasih, menyampaikan rasa syukur secara lisan",
-  "meaning_en": "to say thank you, to express gratitude (verbally)",
-  "jlpt": "n3",
-  "pos": "expr-set",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["sopan-santun", "kehidupan-sehari"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Menekankan tindakan verbal mengucapkan terima kasih. Berbeda dari 感謝する yang lebih bersifat internal/perasaan — お礼を言う adalah aksi lisannya. お礼 juga bisa berupa hadiah atau kunjungan sebagai wujud terima kasih.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "助けてもらったので、直接お礼を言いに行った。", "id": "Karena sudah dibantu, saya langsung pergi untuk mengucapkan terima kasih.", "level": "n3", "tags": ["sopan-santun"]},
-    {"jp": "お礼を言うのを忘れてしまった。", "id": "Saya lupa mengucapkan terima kasih.", "level": "n3", "tags": ["kehidupan-sehari"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00340"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
   "id": "vg-n3-00342",
   "word": "連絡",
   "reading": "れんらく",
@@ -10619,1690 +7148,6 @@ window.vocabN3 = [
   "examples": [
     {"jp": "駅の場所を通行人に尋ねた。", "id": "Saya bertanya kepada pejalan kaki tentang lokasi stasiun.", "level": "n3", "tags": ["perjalanan"]},
     {"jp": "詳しい事情を尋ねてもいいですか？", "id": "Boleh saya menanyakan situasinya lebih detail?", "level": "n3", "tags": ["bahasa-komunikasi"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00346",
-  "word": "最近",
-  "reading": "さいきん",
-  "romaji": "saikin",
-  "meaning_id": "belakangan ini, baru-baru ini",
-  "meaning_en": "recently, lately",
-  "jlpt": "n3",
-  "pos": "noun-temporal",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["waktu", "kehidupan-sehari"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Merujuk pada periode waktu dekat di masa lalu; bisa berfungsi sebagai subjek atau keterangan. Berbeda dari 先日 yang lebih spesifik dan formal.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "最近、忙しくて全然眠れない。", "id": "Belakangan ini saya sibuk sekali sampai tidak bisa tidur.", "level": "n3", "tags": ["kehidupan-sehari"]},
-    {"jp": "最近の若者はスマホばかり見ている。", "id": "Pemuda zaman sekarang selalu menatap ponsel.", "level": "n3", "tags": ["kehidupan-sehari", "pikiran-opini"]},
-    {"jp": "最近、日本語の勉強を始めました。", "id": "Baru-baru ini saya mulai belajar bahasa Jepang.", "level": "n3", "tags": ["pendidikan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00347",
-  "word": "最初",
-  "reading": "さいしょ",
-  "romaji": "saisho",
-  "meaning_id": "pertama, awal, pada mulanya",
-  "meaning_en": "first, beginning, at first",
-  "jlpt": "n3",
-  "pos": "noun-temporal",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["waktu"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Menunjukkan titik paling awal dalam urutan kejadian. Pola 最初に = pertama-tama (dalam instruksi). Berbeda dari 初め yang lebih umum dan 当初 yang lebih formal serta menekankan kondisi semula.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "最初は難しかったが、今は慣れた。", "id": "Awalnya sulit, tapi sekarang sudah terbiasa.", "level": "n3", "tags": ["kehidupan-sehari"]},
-    {"jp": "最初に自己紹介をしましょう。", "id": "Pertama-tama, mari kita perkenalkan diri.", "level": "n3", "tags": ["bahasa-komunikasi", "sopan-santun"]},
-    {"jp": "最初の印象はとても大切だ。", "id": "Kesan pertama sangat penting.", "level": "n3", "tags": ["pikiran-opini"]}
-  ],
-  "synonyms": [],
-  "antonyms": ["vg-n3-00348"],
-  "see_also": ["vg-n3-00365"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00348",
-  "word": "最後",
-  "reading": "さいご",
-  "romaji": "saigo",
-  "meaning_id": "terakhir, akhir, pada akhirnya",
-  "meaning_en": "last, final, at the end",
-  "jlpt": "n3",
-  "pos": "noun-temporal",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["waktu"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Menunjukkan titik paling akhir dari suatu rangkaian. 最後に = terakhir sekali / pada akhirnya. Juga bisa bermakna emosional seperti momen perpisahan terakhir yang dramatis.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "最後まで諦めないでください。", "id": "Jangan menyerah sampai akhir.", "level": "n3", "tags": ["emosi-positif"]},
-    {"jp": "最後の試合で勝つことができた。", "id": "Kami berhasil menang di pertandingan terakhir.", "level": "n3", "tags": ["olahraga"]},
-    {"jp": "最後に確認してから送ってください。", "id": "Tolong periksa sekali lagi sebelum mengirim.", "level": "n3", "tags": ["bisnis"]}
-  ],
-  "synonyms": [],
-  "antonyms": ["vg-n3-00347"],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00349",
-  "word": "途中",
-  "reading": "とちゅう",
-  "romaji": "tochuu",
-  "meaning_id": "di tengah jalan, belum selesai, di tengah-tengah",
-  "meaning_en": "on the way, in the middle of, partway through",
-  "jlpt": "n3",
-  "pos": "noun-temporal",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["waktu", "ruang-arah"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Menunjukkan proses yang belum selesai, baik secara waktu (di tengah mengerjakan sesuatu) maupun perjalanan (di tengah jalan). Pola 途中で = di tengah-tengah. Sering menyiratkan bahwa sesuatu terhenti sebelum selesai.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "途中で雨が降ってきた。", "id": "Di tengah jalan tiba-tiba hujan turun.", "level": "n3", "tags": ["alam-lingkungan"]},
-    {"jp": "仕事の途中で電話が来た。", "id": "Di tengah-tengah pekerjaan ada telepon masuk.", "level": "n3", "tags": ["pekerjaan"]},
-    {"jp": "映画の途中で寝てしまった。", "id": "Aku tertidur di tengah-tengah film.", "level": "n3", "tags": ["hiburan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00350",
-  "word": "初めて",
-  "reading": "はじめて",
-  "romaji": "hajimete",
-  "meaning_id": "untuk pertama kali, pertama kalinya",
-  "meaning_en": "for the first time",
-  "jlpt": "n3",
-  "pos": "adverb-frequency",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["waktu", "kehidupan-sehari"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Menekankan bahwa suatu pengalaman atau kejadian terjadi untuk kali pertama, selalu mengandung nuansa sesuatu yang baru dialami. Pola 初めての＋N = (pengalaman/hal) pertama kali. Jangan tertukar dengan 初め (awal/permulaan) yang tidak berfungsi sebagai adverb.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "日本に来たのは初めてです。", "id": "Ini pertama kali saya datang ke Jepang.", "level": "n3", "tags": ["perjalanan"]},
-    {"jp": "初めて会ったときから好きだった。", "id": "Sejak pertama kali bertemu aku sudah suka.", "level": "n3", "tags": ["percintaan"]},
-    {"jp": "初めての一人暮らしは不安だった。", "id": "Tinggal sendiri untuk pertama kali terasa mencemaskan.", "level": "n3", "tags": ["kehidupan-sehari", "emosi"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00347"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00351",
-  "word": "再び",
-  "reading": "ふたたび",
-  "romaji": "futatabi",
-  "meaning_id": "sekali lagi, kembali",
-  "meaning_en": "again, once more",
-  "jlpt": "n3",
-  "pos": "adverb-frequency",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["waktu"],
-  "register": "written",
-  "lawan_bicara": ["umum"],
-  "nuance": "Lebih formal dan literary dibanding また atau もう一度. Sering dipakai dalam tulisan, berita, atau situasi resmi untuk menekankan pengulangan kejadian. Mengandung nuansa khidmat atau dramatis.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "彼は再び立ち上がった。", "id": "Dia bangkit kembali.", "level": "n3", "tags": ["emosi-positif", "karakter"]},
-    {"jp": "再び同じ過ちを繰り返してはならない。", "id": "Kita tidak boleh mengulangi kesalahan yang sama lagi.", "level": "n3", "tags": ["pikiran-opini"]},
-    {"jp": "再び日本を訪れることができた。", "id": "Aku bisa mengunjungi Jepang sekali lagi.", "level": "n3", "tags": ["perjalanan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00352"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00352",
-  "word": "改めて",
-  "reading": "あらためて",
-  "romaji": "aratamete",
-  "meaning_id": "sekali lagi secara formal, dengan serius, setelah merefleksikan",
-  "meaning_en": "once again (formally), anew, upon reflection",
-  "jlpt": "n3",
-  "pos": "adverb-manner",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["waktu", "sopan-santun"],
-  "register": "formal",
-  "lawan_bicara": ["atasan", "umum"],
-  "nuance": "Mengandung nuansa melakukan sesuatu kembali dengan lebih serius dan penuh kesadaran, setelah refleksi atau formalitas. Sering dipakai dalam permintaan maaf resmi, perkenalan ulang, atau saat menjadwalkan ulang sesuatu. Berbeda dari 再び yang hanya berarti pengulangan biasa.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "改めてお礼を申し上げます。", "id": "Izinkan saya menyampaikan terima kasih sekali lagi secara resmi.", "level": "n3", "tags": ["sopan-santun", "keigo-vocabulary"]},
-    {"jp": "改めて連絡します。", "id": "Saya akan menghubungi lagi nanti.", "level": "n3", "tags": ["bisnis", "bahasa-komunikasi"]},
-    {"jp": "改めて考えると、やはりそれが正しかった。", "id": "Setelah dipikir ulang, memang itu yang benar.", "level": "n3", "tags": ["pikiran-opini"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00351"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00353",
-  "word": "いつの間にか",
-  "reading": "いつのまにか",
-  "romaji": "itsu no ma ni ka",
-  "meaning_id": "tanpa disadari, tiba-tiba sudah, tidak terasa",
-  "meaning_en": "before one knows it, unnoticed, without realizing",
-  "jlpt": "n3",
-  "pos": "adverb-sentence",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["waktu", "emosi"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Menekankan bahwa perubahan atau kejadian berlangsung tanpa kita sadari, sering mengandung nuansa kekagetan atau nostalgia ringan. Berbeda dari 知らないうちに yang lebih netral — いつの間にか lebih ekspresif dan emosional.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "いつの間にか、子供が大きくなっていた。", "id": "Tanpa terasa, anak-anak sudah tumbuh besar.", "level": "n3", "tags": ["keluarga", "emosi"]},
-    {"jp": "いつの間にか夜が明けていた。", "id": "Tidak terasa hari sudah berganti pagi.", "level": "n3", "tags": ["kehidupan-sehari"]},
-    {"jp": "いつの間にかみんな帰っていた。", "id": "Tanpa kusadari semua orang sudah pulang.", "level": "n3", "tags": ["kehidupan-sehari"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00354",
-  "word": "やがて",
-  "reading": "やがて",
-  "romaji": "yagate",
-  "meaning_id": "akhirnya, tidak lama lagi, lambat laun",
-  "meaning_en": "before long, eventually, in due course",
-  "jlpt": "n3",
-  "pos": "adverb-sentence",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["waktu"],
-  "register": "written",
-  "lawan_bicara": ["umum"],
-  "nuance": "Menunjukkan bahwa sesuatu akan terjadi dalam waktu tidak terlalu lama, dengan nuansa natural dan tenang. Lebih literary dibanding もうすぐ. Sering muncul dalam narasi, sastra, atau tulisan formal untuk menggambarkan perkembangan yang mengalir secara alami.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "やがて春が来るだろう。", "id": "Tidak lama lagi musim semi pasti akan datang.", "level": "n3", "tags": ["alam-lingkungan"]},
-    {"jp": "努力を続ければ、やがて結果が出る。", "id": "Jika terus berusaha, lambat laun hasilnya akan terlihat.", "level": "n3", "tags": ["karakter", "pikiran-opini"]},
-    {"jp": "やがて彼は姿を消した。", "id": "Akhirnya dia pun menghilang.", "level": "n3", "tags": ["sastra"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00355", "vg-n3-00356"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00355",
-  "word": "とうとう",
-  "reading": "とうとう",
-  "romaji": "toutou",
-  "meaning_id": "akhirnya juga, pada akhirnya (setelah menunggu lama)",
-  "meaning_en": "finally, at last, in the end (after a long wait)",
-  "jlpt": "n3",
-  "pos": "adverb-sentence",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["waktu", "emosi"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Menekankan bahwa sesuatu akhirnya terjadi setelah proses atau penantian yang panjang, dan bisa bermakna positif maupun negatif. Berbeda dari ついに — とうとう sering dipakai untuk hasil yang sudah lama ditakutkan atau diantisipasi tanpa kepastian arah.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "とうとう彼は来なかった。", "id": "Pada akhirnya dia tidak datang juga.", "level": "n3", "tags": ["emosi-negatif"]},
-    {"jp": "長い治療の末、とうとう病気が治った。", "id": "Setelah pengobatan panjang, penyakitnya akhirnya sembuh juga.", "level": "n3", "tags": ["kesehatan"]},
-    {"jp": "とうとう我慢できなくなった。", "id": "Akhirnya aku tidak bisa menahan diri lagi.", "level": "n3", "tags": ["emosi"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00356", "vg-n3-00354"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00356",
-  "word": "ついに",
-  "reading": "ついに",
-  "romaji": "tsui ni",
-  "meaning_id": "akhirnya, pada akhirnya (dengan penekanan pencapaian)",
-  "meaning_en": "finally, at last (emphasizing achievement after effort)",
-  "jlpt": "n3",
-  "pos": "adverb-sentence",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["waktu", "emosi-positif"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Menekankan momen pencapaian setelah perjuangan atau usaha panjang, sering mengandung nuansa positif dan dramatis. Berbeda dari とうとう — ついに lebih sering dipakai untuk pencapaian positif yang disambut dengan kebanggaan atau kelegaan.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "ついに夢の家を買うことができた。", "id": "Akhirnya aku berhasil membeli rumah impian.", "level": "n3", "tags": ["emosi-positif", "kehidupan-sehari"]},
-    {"jp": "三年間の努力で、ついに合格した。", "id": "Setelah tiga tahun berjuang, akhirnya lulus.", "level": "n3", "tags": ["pendidikan", "emosi-positif"]},
-    {"jp": "ついにその日が来た。", "id": "Akhirnya hari itu pun tiba.", "level": "n3", "tags": ["emosi"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00355", "vg-n3-00354"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00357",
-  "word": "まず",
-  "reading": "まず",
-  "romaji": "mazu",
-  "meaning_id": "pertama-tama, langkah pertama, setidaknya",
-  "meaning_en": "first of all, to begin with, for now",
-  "jlpt": "n3",
-  "pos": "adverb-conjunctive",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["waktu", "bahasa-komunikasi"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Dipakai untuk memulai urutan langkah atau penjelasan. Dalam konteks percakapan, juga bisa berarti 'paling tidak' atau 'setidaknya'. Sangat umum dipakai dalam instruksi, resep, dan presentasi.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "まず手を洗ってください。", "id": "Pertama-tama, tolong cuci tangan.", "level": "n3", "tags": ["kesehatan", "kehidupan-sehari"]},
-    {"jp": "まず自己紹介から始めましょう。", "id": "Mari kita mulai dari perkenalan diri terlebih dahulu.", "level": "n3", "tags": ["bahasa-komunikasi"]},
-    {"jp": "まずは試してみることが大事だ。", "id": "Setidaknya mencoba dulu itu yang penting.", "level": "n3", "tags": ["pikiran-opini"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00358"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00358",
-  "word": "次に",
-  "reading": "つぎに",
-  "romaji": "tsugi ni",
-  "meaning_id": "selanjutnya, berikutnya, kemudian",
-  "meaning_en": "next, then, secondly",
-  "jlpt": "n3",
-  "pos": "adverb-conjunctive",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["waktu", "bahasa-komunikasi"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Dipakai untuk menunjukkan langkah berikutnya dalam urutan. Lebih formal dan terstruktur dibanding それから. Umum dipakai dalam instruksi tertulis, presentasi, dan laporan untuk memberi urutan yang jelas.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "まず玉ねぎを切り、次に炒めます。", "id": "Pertama potong bawang, selanjutnya tumis.", "level": "n3", "tags": ["makanan-minuman"]},
-    {"jp": "次に、グラフを見てください。", "id": "Selanjutnya, tolong lihat grafiknya.", "level": "n3", "tags": ["bisnis", "pendidikan"]},
-    {"jp": "次に何をすればいいですか。", "id": "Selanjutnya apa yang harus saya lakukan?", "level": "n3", "tags": ["kehidupan-sehari"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00357", "vg-n3-00359"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00359",
-  "word": "それから",
-  "reading": "それから",
-  "romaji": "sore kara",
-  "meaning_id": "setelah itu, kemudian, dan juga",
-  "meaning_en": "after that, and then, besides",
-  "jlpt": "n3",
-  "pos": "conjunction",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 1,
-  "domain": ["waktu", "bahasa-komunikasi"],
-  "register": "neutral",
-  "lawan_bicara": ["teman", "umum"],
-  "nuance": "Menghubungkan dua kejadian berurutan atau menambahkan informasi dalam percakapan. Lebih kasual dibanding その後 dan 次に. Dalam percakapan sehari-hari juga bisa berarti 'selain itu' saat membuat daftar.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "ご飯を食べて、それから宿題をした。", "id": "Makan dulu, setelah itu mengerjakan PR.", "level": "n3", "tags": ["kehidupan-sehari"]},
-    {"jp": "それから、何か変わったことはありましたか。", "id": "Setelah itu, adakah hal yang berubah?", "level": "n3", "tags": ["bahasa-komunikasi"]},
-    {"jp": "牛乳と、それからパンを買ってきて。", "id": "Tolong belikan susu, dan juga roti.", "level": "n3", "tags": ["belanja"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00360", "vg-n3-00358"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00360",
-  "word": "その後",
-  "reading": "そのご／そのあと",
-  "romaji": "sono go / sono ato",
-  "meaning_id": "setelah itu, sesudahnya, sesudah kejadian itu",
-  "meaning_en": "after that, thereafter, subsequently",
-  "jlpt": "n3",
-  "pos": "noun-temporal",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["waktu"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Merujuk pada periode setelah suatu kejadian yang sudah disebutkan. Lebih formal dari それから dan lebih sering dipakai dalam narasi tulisan. Pengucapan そのご lebih formal, そのあと lebih kasual — keduanya umum.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "事故の後、その後の経緯を説明した。", "id": "Setelah kecelakaan, saya menjelaskan perkembangan sesudahnya.", "level": "n3", "tags": ["hukum-aturan"]},
-    {"jp": "その後、二人はどうなったんですか。", "id": "Setelah itu, bagaimana nasib mereka berdua?", "level": "n3", "tags": ["percintaan"]},
-    {"jp": "その後も練習を続けた。", "id": "Sesudah itu pun latihan terus dilanjutkan.", "level": "n3", "tags": ["olahraga"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00359", "vg-n3-00371"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00361",
-  "word": "それまで",
-  "reading": "それまで",
-  "romaji": "sore made",
-  "meaning_id": "sampai saat itu, hingga waktu itu",
-  "meaning_en": "until then, up to that point",
-  "jlpt": "n3",
-  "pos": "noun-temporal",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["waktu"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Merujuk pada periode sebelum titik waktu tertentu yang sudah disebutkan. Ketika dipakai di akhir kalimat (それまでだ), artinya bergeser menjadi 'sudah selesai di situ' atau 'tidak ada harapan lagi' — nuansa pesimis yang perlu diperhatikan.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "それまでは何も知らなかった。", "id": "Sampai saat itu aku tidak tahu apa pun.", "level": "n3", "tags": ["kehidupan-sehari"]},
-    {"jp": "失敗したらそれまでだ。", "id": "Kalau gagal, sudah selesai sudah tidak ada harapan.", "level": "n3", "tags": ["emosi-negatif", "pikiran-opini"]},
-    {"jp": "それまでの努力が実を結んだ。", "id": "Usaha yang dilakukan selama itu akhirnya membuahkan hasil.", "level": "n3", "tags": ["karakter"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00362"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00362",
-  "word": "これから",
-  "reading": "これから",
-  "romaji": "kore kara",
-  "meaning_id": "mulai sekarang, ke depannya, dari sini",
-  "meaning_en": "from now on, in the future, starting now",
-  "jlpt": "n3",
-  "pos": "noun-temporal",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["waktu", "kehidupan-sehari"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Merujuk pada masa depan yang dimulai dari sekarang, sering mengandung nuansa harapan, tekad, atau niat ke depan. Ekspresi これからよろしくお願いします sangat umum saat memulai hubungan baru, baik kerja maupun sosial.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "これからもっと頑張ります。", "id": "Mulai sekarang saya akan lebih berusaha keras.", "level": "n3", "tags": ["karakter", "emosi-positif"]},
-    {"jp": "これからよろしくお願いします。", "id": "Mohon bimbingannya mulai sekarang.", "level": "n3", "tags": ["sopan-santun", "pekerjaan"]},
-    {"jp": "これからどこへ行くの？", "id": "Mau pergi ke mana sekarang?", "level": "n3", "tags": ["kehidupan-sehari"]}
-  ],
-  "synonyms": [],
-  "antonyms": ["vg-n3-00361"],
-  "see_also": ["vg-n3-00364"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00363",
-  "word": "今さら",
-  "reading": "いまさら",
-  "romaji": "ima sara",
-  "meaning_id": "sekarang sudah terlambat, percuma sekarang",
-  "meaning_en": "at this late stage, it's too late now",
-  "jlpt": "n3",
-  "pos": "adverb-sentence",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["waktu", "emosi"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Mengandung nuansa 'sudah terlambat' atau 'percuma dilakukan sekarang karena semuanya sudah terjadi'. Sering mengungkapkan keheranan, penyesalan, atau sinisme. Pola 今さら〜ても遅い/仕方ない sangat umum.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "今さら謝っても遅い。", "id": "Percuma minta maaf sekarang, sudah terlambat.", "level": "n3", "tags": ["emosi-negatif", "hubungan-konsep"]},
-    {"jp": "今さらそんなこと言われても困る。", "id": "Aku bingung kalau sekarang baru dibilang hal seperti itu.", "level": "n3", "tags": ["emosi", "bahasa-komunikasi"]},
-    {"jp": "今さら心配しても仕方がない。", "id": "Percuma khawatir sekarang, tidak ada gunanya.", "level": "n3", "tags": ["emosi", "pikiran-opini"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00362"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00364",
-  "word": "今後",
-  "reading": "こんご",
-  "romaji": "kongo",
-  "meaning_id": "ke depan, mulai sekarang dan seterusnya",
-  "meaning_en": "henceforth, from now on, in the future",
-  "jlpt": "n3",
-  "pos": "noun-temporal",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["waktu", "bisnis"],
-  "register": "formal",
-  "lawan_bicara": ["atasan", "umum"],
-  "nuance": "Merujuk pada masa depan mulai sekarang dalam konteks formal atau profesional. Berbeda dari これから yang lebih kasual — 今後 lebih sering muncul dalam surat resmi, keputusan organisasi, atau pernyataan kebijakan.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "今後ともよろしくお願いいたします。", "id": "Mohon kerja samanya ke depan juga.", "level": "n3", "tags": ["bisnis", "sopan-santun"]},
-    {"jp": "今後の対応について話し合った。", "id": "Kami mendiskusikan langkah penanganan ke depannya.", "level": "n3", "tags": ["bisnis", "pekerjaan"]},
-    {"jp": "今後は気をつけます。", "id": "Ke depannya saya akan lebih berhati-hati.", "level": "n3", "tags": ["sopan-santun"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00362", "vg-n3-00370"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00365",
-  "word": "当初",
-  "reading": "とうしょ",
-  "romaji": "tousho",
-  "meaning_id": "pada awalnya, semula, di awal rencana",
-  "meaning_en": "initially, at first, originally",
-  "jlpt": "n3",
-  "pos": "noun-temporal",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["waktu"],
-  "register": "formal",
-  "lawan_bicara": ["umum"],
-  "nuance": "Merujuk pada kondisi, rencana, atau asumsi di awal sebelum terjadi perubahan. Sering dipakai dalam laporan dan tulisan formal untuk membandingkan situasi awal dengan situasi sekarang. Lebih formal dan terbatas maknanya dibanding 最初.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "当初の計画とは大きく変わった。", "id": "Berbeda jauh dari rencana semula.", "level": "n3", "tags": ["bisnis", "pekerjaan"]},
-    {"jp": "当初はうまくいかなかった。", "id": "Pada awalnya tidak berjalan lancar.", "level": "n3", "tags": ["kehidupan-sehari"]},
-    {"jp": "当初の予定より時間がかかった。", "id": "Membutuhkan waktu lebih lama dari jadwal semula.", "level": "n3", "tags": ["bisnis"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00347", "vg-n3-00366"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00366",
-  "word": "当時",
-  "reading": "とうじ",
-  "romaji": "touji",
-  "meaning_id": "pada waktu itu, dahulu kala, saat itu",
-  "meaning_en": "at that time, back then, in those days",
-  "jlpt": "n3",
-  "pos": "noun-temporal",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["waktu"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Merujuk pada periode waktu tertentu di masa lalu yang sedang dibahas dalam konteks, bukan masa lalu secara umum. Sering dipakai dalam cerita, laporan, atau wawancara. Berbeda dari 以前 yang lebih umum dan tidak spesifik pada konteks tertentu.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "当時はまだインターネットがなかった。", "id": "Pada waktu itu internet belum ada.", "level": "n3", "tags": ["teknologi"]},
-    {"jp": "当時の写真を見て懐かしくなった。", "id": "Melihat foto saat itu membuat aku rindu masa lalu.", "level": "n3", "tags": ["emosi"]},
-    {"jp": "当時の状況を詳しく話してください。", "id": "Tolong ceritakan kondisi saat itu secara rinci.", "level": "n3", "tags": ["bahasa-komunikasi"]}
-  ],
-  "synonyms": [],
-  "antonyms": ["vg-n3-00367"],
-  "see_also": ["vg-n3-00369", "vg-n3-00365"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00367",
-  "word": "現在",
-  "reading": "げんざい",
-  "romaji": "genzai",
-  "meaning_id": "saat ini, sekarang (formal), pada masa kini",
-  "meaning_en": "currently, at present, now (formal)",
-  "jlpt": "n3",
-  "pos": "noun-temporal",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 4,
-  "domain": ["waktu"],
-  "register": "formal",
-  "lawan_bicara": ["umum"],
-  "nuance": "Kata formal untuk 'sekarang', sering dipakai dalam dokumen resmi, formulir, laporan, dan pengumuman. Berbeda dari 今 yang kasual — 現在 hampir tidak pernah dipakai dalam percakapan biasa karena terdengar terlalu kaku.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "現在、工事中のため通行止めです。", "id": "Saat ini jalan ditutup karena sedang ada perbaikan.", "level": "n3", "tags": ["kehidupan-sehari"]},
-    {"jp": "現在の住所を記入してください。", "id": "Tolong isi alamat tempat tinggal saat ini.", "level": "n3", "tags": ["hukum-aturan"]},
-    {"jp": "現在、調査中です。", "id": "Saat ini masih dalam penyelidikan.", "level": "n3", "tags": ["hukum-aturan"]}
-  ],
-  "synonyms": [],
-  "antonyms": ["vg-n3-00366"],
-  "see_also": ["vg-n3-00368"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00368",
-  "word": "将来",
-  "reading": "しょうらい",
-  "romaji": "shourai",
-  "meaning_id": "masa depan, hari depan",
-  "meaning_en": "future, one's future, prospects",
-  "jlpt": "n3",
-  "pos": "noun-temporal",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["waktu", "pendidikan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Merujuk pada masa depan jangka panjang, terutama terkait impian, karier, atau nasib seseorang. Berbeda dari 未来 yang lebih luas dan filosofis, serta dari 今後 yang lebih formal dan pendek jangka waktunya. 将来の夢 = cita-cita masa depan.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "将来は医者になりたい。", "id": "Di masa depan aku ingin menjadi dokter.", "level": "n3", "tags": ["pendidikan", "pekerjaan"]},
-    {"jp": "子供の将来のために貯金している。", "id": "Menabung demi masa depan anak.", "level": "n3", "tags": ["keluarga", "ekonomi-keuangan"]},
-    {"jp": "将来のことを真剣に考え始めた。", "id": "Aku mulai berpikir serius tentang masa depan.", "level": "n3", "tags": ["pendidikan", "pikiran-opini"]}
-  ],
-  "synonyms": [],
-  "antonyms": ["vg-n3-00369"],
-  "see_also": ["vg-n3-00367", "vg-n3-00364"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00369",
-  "word": "以前",
-  "reading": "いぜん",
-  "romaji": "izen",
-  "meaning_id": "sebelumnya, dahulu, di masa lalu",
-  "meaning_en": "before, formerly, previously",
-  "jlpt": "n3",
-  "pos": "noun-temporal",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["waktu"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Merujuk pada waktu sebelum suatu titik, bisa masa lalu umum atau sebelum kejadian tertentu. 以前は = dulu/sebelumnya. Sebagai suffix (〜以前), berarti 'sebelum ...' atau bisa juga 'lebih dari sekadar ...' (それ以前の問題 = masalah yang lebih mendasar dari itu).",
-  "conj_type": null,
-  "examples": [
-    {"jp": "以前はここに公園があった。", "id": "Dulu ada taman di sini.", "level": "n3", "tags": ["kehidupan-sehari"]},
-    {"jp": "以前にもお会いしたことがありますよね。", "id": "Kita pernah bertemu sebelumnya, bukan?", "level": "n3", "tags": ["sopan-santun"]},
-    {"jp": "それ以前の問題だ。", "id": "Ini masalah yang lebih mendasar dari itu.", "level": "n3", "tags": ["pikiran-opini"]}
-  ],
-  "synonyms": [],
-  "antonyms": ["vg-n3-00370"],
-  "see_also": ["vg-n3-00366"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00370",
-  "word": "以後",
-  "reading": "いご",
-  "romaji": "igo",
-  "meaning_id": "setelah ini, mulai saat itu, dari waktu itu dan seterusnya",
-  "meaning_en": "after this, from now on, hereafter",
-  "jlpt": "n3",
-  "pos": "noun-temporal",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["waktu", "hukum-aturan"],
-  "register": "formal",
-  "lawan_bicara": ["umum"],
-  "nuance": "Merujuk pada waktu setelah suatu titik tertentu, sering dipakai dalam konteks aturan, keputusan, atau pernyataan resmi. 以後気をつけます = mulai sekarang saya akan berhati-hati (ungkapan formal dalam permintaan maaf). Lebih formal dari それ以降.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "以後、このルールに従ってください。", "id": "Mulai saat ini tolong ikuti aturan ini.", "level": "n3", "tags": ["hukum-aturan"]},
-    {"jp": "以後気をつけます。", "id": "Mulai sekarang saya akan lebih berhati-hati.", "level": "n3", "tags": ["sopan-santun"]},
-    {"jp": "2020年以後は状況が変わった。", "id": "Setelah tahun 2020 situasinya berubah.", "level": "n3", "tags": ["waktu"]}
-  ],
-  "synonyms": [],
-  "antonyms": ["vg-n3-00369"],
-  "see_also": ["vg-n3-00364"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00371",
-  "word": "直後",
-  "reading": "ちょくご",
-  "romaji": "chokugo",
-  "meaning_id": "tepat setelah itu, segera setelah, langsung sesudah",
-  "meaning_en": "immediately after, right after",
-  "jlpt": "n3",
-  "pos": "noun-temporal",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["waktu"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Menekankan kedekatan waktu yang sangat dekat setelah suatu kejadian — benar-benar tepat sesudahnya, tanpa jeda. Sering dipakai dalam laporan berita, kronologi, atau narasi. Berbeda dari その後 yang lebih umum dan tidak menekankan kesegeraan. Pasangan dari 直前.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "地震の直後、停電が起きた。", "id": "Tepat setelah gempa, listrik padam.", "level": "n3", "tags": ["alam-lingkungan"]},
-    {"jp": "試合直後に記者会見が行われた。", "id": "Konferensi pers diadakan tepat setelah pertandingan.", "level": "n3", "tags": ["olahraga", "media"]},
-    {"jp": "手術直後は安静にしてください。", "id": "Tepat setelah operasi mohon istirahat total.", "level": "n3", "tags": ["kesehatan"]}
-  ],
-  "synonyms": [],
-  "antonyms": ["vg-n3-00372"],
-  "see_also": ["vg-n3-00360"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00372",
-  "word": "直前",
-  "reading": "ちょくぜん",
-  "romaji": "chokuzen",
-  "meaning_id": "tepat sebelumnya, sesaat sebelum, langsung sebelum",
-  "meaning_en": "immediately before, right before, just prior to",
-  "jlpt": "n3",
-  "pos": "noun-temporal",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["waktu"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Menekankan kedekatan waktu yang sangat dekat sebelum suatu kejadian — benar-benar tepat sebelumnya, tanpa jeda. Sering dipakai untuk situasi mendesak atau menegangkan (試験直前 = tepat sebelum ujian, terasa menegangkan). Pasangan dari 直後.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "出発直前にパスポートを忘れたことに気づいた。", "id": "Tepat sebelum berangkat aku sadar lupa paspor.", "level": "n3", "tags": ["perjalanan", "emosi"]},
-    {"jp": "試験直前は緊張する。", "id": "Tepat sebelum ujian selalu deg-degan.", "level": "n3", "tags": ["pendidikan", "emosi"]},
-    {"jp": "イベントの直前に雨が降り始めた。", "id": "Tepat sebelum acara, hujan mulai turun.", "level": "n3", "tags": ["kehidupan-sehari", "alam-lingkungan"]}
-  ],
-  "synonyms": [],
-  "antonyms": ["vg-n3-00371"],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00373",
-  "word": "ある日",
-  "reading": "あるひ",
-  "romaji": "aru hi",
-  "meaning_id": "suatu hari, pada suatu hari",
-  "meaning_en": "one day, one time (in a story)",
-  "jlpt": "n3",
-  "pos": "noun-temporal",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["waktu", "sastra"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Ungkapan untuk memulai cerita atau menandai suatu kejadian di masa lalu yang tidak diketahui waktunya secara pasti. Setara dengan 'suatu hari' atau 'pada suatu hari' dalam bahasa Indonesia. Sering menjadi pembuka narasi atau dongeng.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "ある日、道で財布を拾った。", "id": "Suatu hari, aku menemukan dompet di jalan.", "level": "n3", "tags": ["kehidupan-sehari"]},
-    {"jp": "ある日突然、彼から連絡が来た。", "id": "Tiba-tiba suatu hari ada pesan masuk dari dia.", "level": "n3", "tags": ["percintaan", "bahasa-komunikasi"]},
-    {"jp": "ある日のこと、森の中で老人に会った。", "id": "Pada suatu hari di dalam hutan aku bertemu seorang kakek.", "level": "n3", "tags": ["sastra"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00374",
-  "word": "一日中",
-  "reading": "いちにちじゅう",
-  "romaji": "ichinichi juu",
-  "meaning_id": "sepanjang hari, seharian penuh",
-  "meaning_en": "all day long, throughout the day",
-  "jlpt": "n3",
-  "pos": "noun-temporal",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["waktu", "kehidupan-sehari"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Menekankan durasi penuh selama satu hari tanpa henti, bisa bermakna positif (menikmati seharian) maupun negatif (lelah seharian). Pola serupa: 一年中 (sepanjang tahun), 一週間中 (sepanjang minggu). Lebih kasual dari 終日 yang lebih formal dan tertulis.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "一日中ゲームをしていた。", "id": "Bermain game seharian penuh.", "level": "n3", "tags": ["hiburan"]},
-    {"jp": "雨が一日中降り続けた。", "id": "Hujan terus turun sepanjang hari.", "level": "n3", "tags": ["alam-lingkungan"]},
-    {"jp": "一日中立ちっぱなしで疲れた。", "id": "Lelah karena berdiri terus seharian.", "level": "n3", "tags": ["kesehatan", "pekerjaan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-{
-  "id": "vg-n3-00375",
-  "word": "たびたび",
-  "reading": "たびたび",
-  "romaji": "tabitabi",
-  "meaning_id": "berkali-kali, sering sekali, berulang kali",
-  "meaning_en": "repeatedly, frequently, time and again",
-  "jlpt": "n3",
-  "pos": "adverb-frequency",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["waktu", "sopan-santun"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Menekankan frekuensi yang tinggi dengan nuansa 'sudah terlalu sering' atau 'berulang kali'. Lebih intens dari よく dan しばしば. Sering dipakai dalam permintaan maaf formal (たびたびすみません = maaf sudah berulang kali mengganggu), sehingga terasa lebih sopan dari sekadar よく.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "たびたびご連絡いただきありがとうございます。", "id": "Terima kasih sudah berulang kali menghubungi kami.", "level": "n3", "tags": ["bisnis", "sopan-santun"]},
-    {"jp": "彼はたびたび約束を破る。", "id": "Dia berkali-kali melanggar janji.", "level": "n3", "tags": ["karakter", "emosi-negatif"]},
-    {"jp": "たびたびお邪魔してすみません。", "id": "Maaf sudah berulang kali merepotkan.", "level": "n3", "tags": ["sopan-santun"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00376",
-  "word": "気候",
-  "reading": "きこう",
-  "romaji": "kikou",
-  "meaning_id": "iklim",
-  "meaning_en": "climate",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["alam-lingkungan", "ilmu-pengetahuan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Berbeda dari 天気 yang merujuk cuaca harian — 気候 adalah pola cuaca jangka panjang suatu wilayah. 熱帯気候 = iklim tropis, relevan untuk pelajar Indonesia.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "日本の気候は四季がはっきりしている。", "id": "Iklim Jepang memiliki empat musim yang jelas.", "level": "n3", "tags": ["alam-lingkungan"]},
-    {"jp": "インドネシアは熱帯気候の国だ。", "id": "Indonesia adalah negara beriklim tropis.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]},
-    {"jp": "気候変動が世界中で問題になっている。", "id": "Perubahan iklim menjadi masalah di seluruh dunia.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00377",
-  "word": "季節",
-  "reading": "きせつ",
-  "romaji": "kisetsu",
-  "meaning_id": "musim",
-  "meaning_en": "season",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["alam-lingkungan", "waktu"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Jepang punya empat musim yang menjadi bagian penting budaya dan bahasa. 季節感 = nuansa/rasa musiman. Pelajar Indonesia perlu menguasai ini karena banyak ungkapan terkait musim.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "日本には四つの季節がある。", "id": "Di Jepang ada empat musim.", "level": "n3", "tags": ["alam-lingkungan", "budaya"]},
-    {"jp": "この季節は花粉が多い。", "id": "Musim ini banyak serbuk sari.", "level": "n3", "tags": ["alam-lingkungan", "kesehatan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00378",
-  "word": "気温",
-  "reading": "きおん",
-  "romaji": "kion",
-  "meaning_id": "suhu udara",
-  "meaning_en": "air temperature",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["alam-lingkungan", "ilmu-pengetahuan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Merujuk khusus pada suhu udara (bukan suhu badan = 体温). Sering muncul dalam prakiraan cuaca. 気温が下がる = suhu turun, 気温が上がる = suhu naik.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "今日の気温は35度を超えた。", "id": "Suhu udara hari ini melewati 35 derajat.", "level": "n3", "tags": ["alam-lingkungan"]},
-    {"jp": "朝と夜の気温差が大きい。", "id": "Perbedaan suhu pagi dan malam sangat besar.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00379",
-  "word": "湿度",
-  "reading": "しつど",
-  "romaji": "shitsudo",
-  "meaning_id": "kelembaban",
-  "meaning_en": "humidity",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["alam-lingkungan", "ilmu-pengetahuan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Sering disebut bersama 気温 dalam laporan cuaca Jepang. 湿度が高い = lembab, 湿度が低い = kering. Musim panas Jepang (梅雨 dan Agustus) terkenal dengan suhu dan kelembaban sangat tinggi.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "梅雨の時期は湿度がとても高い。", "id": "Saat musim hujan, kelembabannya sangat tinggi.", "level": "n3", "tags": ["alam-lingkungan"]},
-    {"jp": "湿度が低いと肌が乾燥する。", "id": "Kalau kelembaban rendah, kulit jadi kering.", "level": "n3", "tags": ["alam-lingkungan", "kesehatan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00380",
-  "word": "台風",
-  "reading": "たいふう",
-  "romaji": "taifuu",
-  "meaning_id": "topan, badai tropis",
-  "meaning_en": "typhoon",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["alam-lingkungan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Spesifik untuk siklon tropis di Pasifik Barat — setara 'typhoon' dalam bahasa Inggris. Berbeda dari 嵐 (badai umum). Jepang rutin menghadapi台風 musim gugur. Relevan bagi SSW yang bekerja saat musim台風.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "台風が近づいているので外出を控えてください。", "id": "Topan sedang mendekat, mohon hindari keluar rumah.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]},
-    {"jp": "台風の影響で電車が止まった。", "id": "Karena dampak topan, kereta berhenti beroperasi.", "level": "n3", "tags": ["alam-lingkungan", "perjalanan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00381",
-  "word": "地震",
-  "reading": "じしん",
-  "romaji": "jishin",
-  "meaning_id": "gempa bumi",
-  "meaning_en": "earthquake",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["alam-lingkungan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Jepang adalah salah satu negara paling aktif seismik di dunia. Sangat penting bagi SSW untuk hafal kata ini demi keselamatan. 地震速報 = peringatan dini gempa yang sering muncul di HP.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "昨夜、大きな地震があった。", "id": "Tadi malam ada gempa bumi yang besar.", "level": "n3", "tags": ["alam-lingkungan"]},
-    {"jp": "地震のときはまず机の下に隠れてください。", "id": "Saat gempa, pertama-tama bersembunyilah di bawah meja.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00382",
-  "word": "洪水",
-  "reading": "こうずい",
-  "romaji": "kouzui",
-  "meaning_id": "banjir",
-  "meaning_en": "flood",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["alam-lingkungan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "lawan_bicara": ["umum"],
-  "nuance": "Banjir skala besar, sering akibat hujan deras atau topan. Berbeda dari 浸水 (terendam air) yang lebih umum. Pelajar Indonesia familiar dengan konsep ini. Sering muncul di berita bencana.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "大雨で川が氾濫し、洪水が起きた。", "id": "Hujan deras menyebabkan sungai meluap dan terjadi banjir.", "level": "n3", "tags": ["alam-lingkungan"]},
-    {"jp": "洪水の被害を受けた地域に支援が届いた。", "id": "Bantuan tiba di daerah yang terdampak banjir.", "level": "n3", "tags": ["alam-lingkungan", "politik-masyarakat"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00383",
-  "word": "津波",
-  "reading": "つなみ",
-  "romaji": "tsunami",
-  "meaning_id": "tsunami, gelombang laut besar akibat gempa",
-  "meaning_en": "tsunami",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["alam-lingkungan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Kata asli Jepang yang sudah diserap ke bahasa dunia. Diakibatkan gempa bawah laut, letusan gunung api, atau longsor bawah laut. Berbeda dari gelombang biasa. 津波警報 = peringatan tsunami.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "地震の後、津波警報が出た。", "id": "Setelah gempa, peringatan tsunami dikeluarkan.", "level": "n3", "tags": ["alam-lingkungan"]},
-    {"jp": "2011年の津波は東北地方に大きな被害をもたらした。", "id": "Tsunami tahun 2011 menyebabkan kerusakan besar di wilayah Tohoku.", "level": "n3", "tags": ["alam-lingkungan", "budaya"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00384",
-  "word": "火山",
-  "reading": "かざん",
-  "romaji": "kazan",
-  "meaning_id": "gunung berapi",
-  "meaning_en": "volcano",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["alam-lingkungan", "ilmu-pengetahuan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Jepang memiliki banyak gunung berapi aktif. 活火山 = gunung berapi aktif, 休火山 = tidak aktif. Relevan bagi SSW dari Indonesia yang juga akrab dengan gunung berapi.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "富士山は火山だが、現在は活動していない。", "id": "Gunung Fuji adalah gunung berapi, tetapi saat ini tidak aktif.", "level": "n3", "tags": ["alam-lingkungan", "budaya"]},
-    {"jp": "火山の噴火で空が暗くなった。", "id": "Langit menjadi gelap akibat letusan gunung berapi.", "level": "n3", "tags": ["alam-lingkungan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00385",
-  "word": "砂漠",
-  "reading": "さばく",
-  "romaji": "sabaku",
-  "meaning_id": "gurun, padang pasir",
-  "meaning_en": "desert",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["alam-lingkungan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Wilayah kering dengan curah hujan sangat rendah. Jepang tidak memiliki gurun, jadi kata ini lebih sering muncul dalam konteks geografi dunia atau media. Berbeda dari 荒野 (tanah tandus).",
-  "conj_type": null,
-  "examples": [
-    {"jp": "砂漠では昼と夜の温度差が激しい。", "id": "Di gurun, perbedaan suhu siang dan malam sangat ekstrem.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]},
-    {"jp": "サハラ砂漠は世界最大の砂漠だ。", "id": "Gurun Sahara adalah gurun terbesar di dunia.", "level": "n3", "tags": ["alam-lingkungan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00386",
-  "word": "森林",
-  "reading": "しんりん",
-  "romaji": "shinrin",
-  "meaning_id": "hutan (secara luas/ilmiah)",
-  "meaning_en": "forest, woodland",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["alam-lingkungan", "ilmu-pengetahuan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Lebih formal dan teknis dari 森 (mori — hutan biasa). Sering dipakai dalam konteks kebijakan lingkungan. 森林破壊 = deforestasi, 森林浴 = mandi hutan (shinrin-yoku), tren kesehatan populer.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "熱帯雨林の森林破壊が深刻な問題になっている。", "id": "Deforestasi hutan hujan tropis menjadi masalah serius.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]},
-    {"jp": "森林浴はストレス解消に効果がある。", "id": "Mandi hutan efektif untuk menghilangkan stres.", "level": "n3", "tags": ["alam-lingkungan", "kesehatan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00387",
-  "word": "草原",
-  "reading": "そうげん",
-  "romaji": "sougen",
-  "meaning_id": "padang rumput, sabana",
-  "meaning_en": "grassland, meadow, savanna",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["alam-lingkungan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Dataran luas yang ditumbuhi rumput. Bisa dibaca くさはら (kusahara) dalam konteks sastra atau kasual. Bacaan そうげん lebih umum dan formal. Sering muncul dalam geografi dan novel.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "広大な草原に馬が走っていた。", "id": "Kuda berlari di padang rumput yang luas.", "level": "n3", "tags": ["alam-lingkungan"]},
-    {"jp": "草原では風が気持ちよく吹いている。", "id": "Angin berhembus segar di padang rumput.", "level": "n3", "tags": ["alam-lingkungan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00388",
-  "word": "平野",
-  "reading": "へいや",
-  "romaji": "heiya",
-  "meaning_id": "dataran, dataran rendah",
-  "meaning_en": "plain, flatland",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["alam-lingkungan", "ruang-arah"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Daratan luas dan datar, berbeda dari 台地 (dataran tinggi). Kantō 関東平野 adalah dataran terbesar Jepang dan pusat ekonominya. Sering muncul dalam teks geografi dan berita.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "関東平野は日本最大の平野だ。", "id": "Dataran Kantō adalah dataran terbesar di Jepang.", "level": "n3", "tags": ["alam-lingkungan"]},
-    {"jp": "平野には田んぼが広がっている。", "id": "Sawah terbentang luas di dataran.", "level": "n3", "tags": ["alam-lingkungan", "pekerjaan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00389",
-  "word": "山脈",
-  "reading": "さんみゃく",
-  "romaji": "sanmyaku",
-  "meaning_id": "pegunungan, barisan gunung",
-  "meaning_en": "mountain range",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["alam-lingkungan", "ruang-arah"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Rangkaian gunung yang memanjang — berbeda dari 山 (gunung tunggal). Jepang punya 日本アルプス (Pegunungan Alpen Jepang) yang melintasi Honshu. Sering muncul dalam teks geografi.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "日本アルプスはいくつかの山脈からなる。", "id": "Pegunungan Alpen Jepang terdiri dari beberapa barisan gunung.", "level": "n3", "tags": ["alam-lingkungan"]},
-    {"jp": "山脈が雨を遮るため、反対側は乾燥している。", "id": "Karena barisan gunung menghalangi hujan, sisi sebaliknya kering.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00390",
-  "word": "海岸",
-  "reading": "かいがん",
-  "romaji": "kaigan",
-  "meaning_id": "pantai, tepi laut, pesisir",
-  "meaning_en": "coast, seashore",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["alam-lingkungan", "perjalanan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Merujuk pada garis pantai atau kawasan pesisir sebagai istilah geografis. Berbeda dari 浜 (hama — pantai berpasir, lebih kasual) dan 砂浜 (pantai pasir). 海岸線 = garis pantai.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "海岸沿いのドライブは気持ちがいい。", "id": "Berkendara di sepanjang pantai sangat menyenangkan.", "level": "n3", "tags": ["perjalanan", "alam-lingkungan"]},
-    {"jp": "海岸にゴミが増えて問題になっている。", "id": "Sampah yang bertambah di tepi laut menjadi masalah.", "level": "n3", "tags": ["alam-lingkungan", "politik-masyarakat"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00391",
-  "word": "島",
-  "reading": "しま",
-  "romaji": "shima",
-  "meaning_id": "pulau",
-  "meaning_en": "island",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 1,
-  "domain": ["alam-lingkungan", "ruang-arah"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Dibaca しま untuk kata mandiri, とう dalam kata majemuk (島国 = negara kepulauan, 無人島 = pulau tak berpenghuni). Relevan bagi pelajar Indonesia yang berasal dari negara kepulauan seperti Jepang.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "日本は島国で、四つの大きな島からなる。", "id": "Jepang adalah negara kepulauan yang terdiri dari empat pulau besar.", "level": "n3", "tags": ["alam-lingkungan", "budaya"]},
-    {"jp": "小さな島に渡るにはフェリーに乗る必要がある。", "id": "Untuk menyeberang ke pulau kecil, perlu naik feri.", "level": "n3", "tags": ["alam-lingkungan", "perjalanan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00392",
-  "word": "川",
-  "reading": "かわ",
-  "romaji": "kawa",
-  "meaning_id": "sungai",
-  "meaning_en": "river",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 1,
-  "domain": ["alam-lingkungan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Dibaca かわ secara mandiri; dalam nama tempat sering berubah jadi がわ (多摩川 = Tamagawa) atau こう dalam konteks formal (河川 = kōsen, sungai secara umum). Sering muncul dalam nama wilayah dan tempat.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "子供たちが川で魚を釣っている。", "id": "Anak-anak sedang memancing ikan di sungai.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]},
-    {"jp": "台風の後、川の水量が増えた。", "id": "Setelah topan, debit air sungai bertambah.", "level": "n3", "tags": ["alam-lingkungan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00393",
-  "word": "湖",
-  "reading": "みずうみ",
-  "romaji": "mizuumi",
-  "meaning_id": "danau",
-  "meaning_en": "lake",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["alam-lingkungan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Perairan tawar yang dikelilingi daratan, lebih besar dari 池 (kolam). Dalam nama tempat sering memakai 湖 dibaca こ (琵琶湖 = Biwa-ko). Banyak danau indah di Jepang yang jadi tujuan wisata.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "琵琶湖は日本最大の湖だ。", "id": "Danau Biwa adalah danau terbesar di Jepang.", "level": "n3", "tags": ["alam-lingkungan"]},
-    {"jp": "湖の水面に山が映っていた。", "id": "Bayangan gunung terpantul di permukaan danau.", "level": "n3", "tags": ["alam-lingkungan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00394"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00394",
-  "word": "池",
-  "reading": "いけ",
-  "romaji": "ike",
-  "meaning_id": "kolam, telaga",
-  "meaning_en": "pond",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 1,
-  "domain": ["alam-lingkungan", "kehidupan-sehari"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Lebih kecil dari 湖 (danau). Sering ditemukan di taman tradisional Jepang sebagai elemen estetika. Kolam dengan ikan koi (鯉) adalah ciri khas taman Jepang. 池の鯉 = koi di kolam.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "公園の池に鴨が泳いでいる。", "id": "Bebek berenang di kolam taman.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]},
-    {"jp": "日本庭園には必ず池がある。", "id": "Di taman tradisional Jepang pasti ada kolam.", "level": "n3", "tags": ["alam-lingkungan", "budaya"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00393"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00395",
-  "word": "空気",
-  "reading": "くうき",
-  "romaji": "kuuki",
-  "meaning_id": "udara; suasana (figuratif)",
-  "meaning_en": "air; atmosphere (figurative)",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["alam-lingkungan", "bahasa-komunikasi"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Selain makna harfiah (udara), sangat penting dalam ekspresi 空気を読む = membaca suasana/situasi sosial. Ini konsep kunci budaya komunikasi Jepang — peka terhadap konteks tanpa perlu diucapkan.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "山の空気はとても澄んでいる。", "id": "Udara di pegunungan sangat segar dan bersih.", "level": "n3", "tags": ["alam-lingkungan"]},
-    {"jp": "空気を読めない人は職場で苦労する。", "id": "Orang yang tidak bisa membaca suasana akan kesulitan di tempat kerja.", "level": "n3", "tags": ["pekerjaan", "bahasa-komunikasi"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00396",
-  "word": "土",
-  "reading": "つち",
-  "romaji": "tsuchi",
-  "meaning_id": "tanah, lumpur, bumi",
-  "meaning_en": "soil, earth, ground",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 1,
-  "domain": ["alam-lingkungan", "kehidupan-sehari"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Merujuk pada tanah sebagai material (berbeda dari 地面 = permukaan tanah). 土に触れる = bersentuhan dengan tanah. Juga salah satu unsur dalam filosofi tradisional Jepang (五行 = lima unsur).",
-  "conj_type": null,
-  "examples": [
-    {"jp": "畑の土は柔らかくて黒い。", "id": "Tanah di ladang lembut dan berwarna hitam.", "level": "n3", "tags": ["alam-lingkungan", "pekerjaan"]},
-    {"jp": "子供が土で遊んでいる。", "id": "Anak-anak bermain dengan tanah.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00397",
-  "word": "石",
-  "reading": "いし",
-  "romaji": "ishi",
-  "meaning_id": "batu, batu kecil",
-  "meaning_en": "stone, rock (small)",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 1,
-  "domain": ["alam-lingkungan", "kehidupan-sehari"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Batu kecil hingga sedang. Berbeda dari 岩 (iwa — batu besar/tebing) dan 岩石 (batuan secara ilmiah). Juga muncul dalam peribahasa: 石の上にも三年 = ketekunan akan berhasil pada waktunya.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "道に石が落ちていて、つまずいた。", "id": "Ada batu di jalan dan aku tersandung.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]},
-    {"jp": "川原には丸い石がたくさんある。", "id": "Di tepian sungai banyak terdapat batu bulat.", "level": "n3", "tags": ["alam-lingkungan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00398",
-  "word": "砂",
-  "reading": "すな",
-  "romaji": "suna",
-  "meaning_id": "pasir",
-  "meaning_en": "sand",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 1,
-  "domain": ["alam-lingkungan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Partikel halus dari batuan. 砂浜 = pantai berpasir, 砂漠 = gurun (pasir). 砂時計 = jam pasir. Berbeda dari 土 (tanah). Tottori (鳥取) di Jepang punya padang pasir terkenal.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "砂浜を裸足で歩くと気持ちいい。", "id": "Berjalan di pantai berpasir dengan kaki telanjang rasanya menyenangkan.", "level": "n3", "tags": ["alam-lingkungan", "perjalanan"]},
-    {"jp": "砂が目に入って痛い。", "id": "Pasir masuk ke mata dan terasa sakit.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00385"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00399",
-  "word": "植物",
-  "reading": "しょくぶつ",
-  "romaji": "shokubutsu",
-  "meaning_id": "tumbuhan, tanaman",
-  "meaning_en": "plant, vegetation",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["alam-lingkungan", "ilmu-pengetahuan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Istilah umum untuk semua jenis tumbuhan dalam konteks ilmiah maupun sehari-hari. Berbeda dari 草 (rumput/tanaman herba) atau 木 (pohon). 植物園 = kebun botani.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "この植物は日光が少ない場所でも育つ。", "id": "Tumbuhan ini bisa tumbuh di tempat yang minim sinar matahari.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]},
-    {"jp": "熱帯雨林にはたくさんの珍しい植物がある。", "id": "Di hutan hujan tropis terdapat banyak tumbuhan langka.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]}
-  ],
-  "synonyms": [],
-  "antonyms": ["vg-n3-00400"],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00400",
-  "word": "動物",
-  "reading": "どうぶつ",
-  "romaji": "doubutsu",
-  "meaning_id": "hewan, binatang",
-  "meaning_en": "animal",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["alam-lingkungan", "ilmu-pengetahuan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Istilah umum untuk semua hewan. 動物園 = kebun binatang. Berbeda dari 生き物 (makhluk hidup, lebih umum) dan 獣 (binatang buas, nada negatif). 動物的 = bersifat hewani/naluriah.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "動物園にはたくさんの動物がいる。", "id": "Di kebun binatang terdapat banyak hewan.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]},
-    {"jp": "絶滅危惧種の動物を保護する取り組みが進んでいる。", "id": "Upaya melindungi hewan yang terancam punah terus berkembang.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]}
-  ],
-  "synonyms": [],
-  "antonyms": ["vg-n3-00399"],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00401",
-  "word": "虫",
-  "reading": "むし",
-  "romaji": "mushi",
-  "meaning_id": "serangga, hama, hewan kecil berbuku-buku",
-  "meaning_en": "insect, bug, worm",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 1,
-  "domain": ["alam-lingkungan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Cakupan luas — serangga, ulat, bahkan cacing kecil. 虫の声 (suara serangga malam) adalah citra puitis musim gugur Jepang. Idiom: 虫が好かない = tidak suka seseorang tanpa alasan jelas.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "夏になると虫の声がよく聞こえる。", "id": "Saat musim panas, suara serangga terdengar jelas.", "level": "n3", "tags": ["alam-lingkungan", "budaya"]},
-    {"jp": "虫が苦手な人は多い。", "id": "Banyak orang yang tidak suka serangga.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00402",
-  "word": "鳥",
-  "reading": "とり",
-  "romaji": "tori",
-  "meaning_id": "burung",
-  "meaning_en": "bird",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 1,
-  "domain": ["alam-lingkungan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Hati-hati: 鳥 (tori) = burung, tapi juga berarti 'ayam' dalam konteks makanan (鶏肉 = daging ayam). Bacaan が berlaku juga untuk unggas. Burung bangau (鶴) dan merak adalah simbol penting budaya Jepang.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "公園でいろいろな鳥の鳴き声が聞こえた。", "id": "Di taman terdengar berbagai suara kicauan burung.", "level": "n3", "tags": ["alam-lingkungan"]},
-    {"jp": "渡り鳥は季節によって移動する。", "id": "Burung migran berpindah sesuai musim.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00403",
-  "word": "魚",
-  "reading": "さかな",
-  "romaji": "sakana",
-  "meaning_id": "ikan",
-  "meaning_en": "fish",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 1,
-  "domain": ["alam-lingkungan", "makanan-minuman"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Bacaan さかな untuk penggunaan umum dan makanan. Bacaan うお (uo) muncul dalam kata majemuk atau konteks formal/sastra (魚介類 = hasil laut). Ikan sangat sentral dalam kuliner Jepang — sushi, sashimi, dan berbagai hidangan.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "日本人は魚をよく食べる。", "id": "Orang Jepang sering makan ikan.", "level": "n3", "tags": ["makanan-minuman", "budaya"]},
-    {"jp": "川で釣った魚を夕食に食べた。", "id": "Kami makan ikan yang ditangkap di sungai untuk makan malam.", "level": "n3", "tags": ["alam-lingkungan", "makanan-minuman"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00404",
-  "word": "自然",
-  "reading": "しぜん",
-  "romaji": "shizen",
-  "meaning_id": "alam; alami, natural",
-  "meaning_en": "nature; natural",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["alam-lingkungan", "ilmu-pengetahuan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Berfungsi ganda: kata benda (alam) dan な形容詞 (自然な = alami/natural). 自然に = secara alami. Konsep alam dan harmoni dengan alam (自然との調和) sangat penting dalam estetika dan filosofi Jepang.",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "日本には美しい自然がたくさん残っている。", "id": "Jepang masih memiliki banyak alam yang indah.", "level": "n3", "tags": ["alam-lingkungan", "budaya"]},
-    {"jp": "自然な笑顔が一番素敵だ。", "id": "Senyum yang natural adalah yang paling indah.", "level": "n3", "tags": ["emosi-positif", "kehidupan-sehari"]},
-    {"jp": "自然を守るために何ができるか考えよう。", "id": "Mari pikirkan apa yang bisa dilakukan untuk menjaga alam.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00405",
-  "word": "霧",
-  "reading": "きり",
-  "romaji": "kiri",
-  "meaning_id": "kabut",
-  "meaning_en": "fog, mist",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["alam-lingkungan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Kabut tebal yang mengurangi jarak pandang. Berbeda dari もや (moya — kabut tipis/haze). 霧が深い = kabut tebal. Sering muncul dalam puisi haiku dan sastra Jepang sebagai citra misterius atau musim gugur.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "朝、山に霧がかかっていた。", "id": "Pagi-pagi, gunung tertutup kabut.", "level": "n3", "tags": ["alam-lingkungan"]},
-    {"jp": "霧が深くて前がよく見えない。", "id": "Kabut tebal, tidak bisa melihat ke depan dengan jelas.", "level": "n3", "tags": ["alam-lingkungan", "perjalanan"]}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -13208,34 +8053,6 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-00438",
-  "word": "資料",
-  "reading": "しりょう",
-  "romaji": "shiryou",
-  "meaning_id": "materi, dokumen referensi, bahan acuan",
-  "meaning_en": "materials, reference documents, data",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["pekerjaan", "bisnis", "pendidikan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "資料 merujuk pada dokumen atau data yang digunakan sebagai bahan referensi atau pendukung, seperti handout rapat atau data penelitian. Berbeda dari 書類 (しょるい) yang merupakan dokumen resmi yang perlu diproses, ditandatangani, atau diarsipkan secara formal.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "会議の<b>資料</b>を印刷してください。", "id": "Tolong cetak materi rapatnya.", "level": "n3", "tags": ["pekerjaan", "bisnis"]},
-    {"jp": "この<b>資料</b>を参考にしてレポートをまとめた。", "id": "Aku merangkum laporan dengan mengacu pada materi ini.", "level": "n3", "tags": ["pendidikan", "pekerjaan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
   "id": "vg-n3-00439",
   "word": "報告",
   "reading": "ほうこく",
@@ -13255,34 +8072,6 @@ window.vocabN3 = [
   "examples": [
     {"jp": "プロジェクトの進捗を上司に<b>報告した</b>。", "id": "Aku melaporkan perkembangan proyek kepada atasan.", "level": "n3", "tags": ["pekerjaan", "bisnis"]},
     {"jp": "毎週月曜日に<b>報告書</b>を提出する。", "id": "Setiap Senin aku menyerahkan laporan.", "level": "n3", "tags": ["pekerjaan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00440",
-  "word": "企業",
-  "reading": "きぎょう",
-  "romaji": "kigyou",
-  "meaning_id": "perusahaan, korporasi (skala menengah hingga besar)",
-  "meaning_en": "company, enterprise, corporation",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 4,
-  "domain": ["bisnis", "ekonomi-keuangan", "pekerjaan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "企業 adalah istilah yang lebih formal dan akademis untuk menyebut perusahaan, sering dipakai di berita, laporan ekonomi, atau diskusi kebijakan. Berbeda dari 会社 (かいしゃ) yang lebih umum dan digunakan dalam percakapan sehari-hari untuk semua jenis dan ukuran perusahaan.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "大手<b>企業</b>への就職を目指している。", "id": "Aku bertujuan untuk bekerja di perusahaan besar.", "level": "n3", "tags": ["pekerjaan", "bisnis"]},
-    {"jp": "その<b>企業</b>は環境問題に積極的に取り組んでいる。", "id": "Perusahaan itu aktif menangani isu lingkungan.", "level": "n3", "tags": ["bisnis", "alam-lingkungan"]}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -13320,34 +8109,6 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-00442",
-  "word": "部署",
-  "reading": "ぶしょ",
-  "romaji": "busho",
-  "meaning_id": "departemen, divisi dalam perusahaan",
-  "meaning_en": "department, division, section (within a company)",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["pekerjaan", "bisnis"],
-  "register": "neutral",
-  "lawan_bicara": ["rekan-kerja", "atasan"],
-  "nuance": "部署 secara khusus merujuk pada unit atau bagian di dalam suatu perusahaan atau organisasi. Berbeda dari 部門 (ぶもん) yang bisa mengacu pada divisi besar atau bidang yang lebih luas (misalnya dalam industri atau pemerintahan), 部署 lebih spesifik pada unit kerja sehari-hari.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "来月から別の<b>部署</b>に異動することになった。", "id": "Mulai bulan depan aku akan dipindahkan ke departemen lain.", "level": "n3", "tags": ["pekerjaan"]},
-    {"jp": "どの<b>部署</b>に所属していますか？", "id": "Kamu termasuk dalam departemen apa?", "level": "n3", "tags": ["pekerjaan", "bisnis"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
   "id": "vg-n3-00443",
   "word": "担当",
   "reading": "たんとう",
@@ -13367,286 +8128,6 @@ window.vocabN3 = [
   "examples": [
     {"jp": "営業<b>担当</b>の田中さんに連絡してください。", "id": "Silakan hubungi Pak Tanaka yang bertanggung jawab di bagian penjualan.", "level": "n3", "tags": ["pekerjaan", "bisnis"]},
     {"jp": "このプロジェクトは私が<b>担当している</b>。", "id": "Proyek ini aku yang bertanggung jawab.", "level": "n3", "tags": ["pekerjaan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00444",
-  "word": "責任",
-  "reading": "せきにん",
-  "romaji": "sekinin",
-  "meaning_id": "tanggung jawab (moral, sosial, maupun profesional)",
-  "meaning_en": "responsibility, accountability",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["pekerjaan", "karakter", "hukum-aturan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "責任 adalah tanggung jawab yang muncul dari peran, jabatan, atau tindakan seseorang — mencakup dimensi moral dan sosial. Berbeda dari 義務 (ぎむ) yang merupakan kewajiban yang harus dipenuhi berdasarkan aturan atau hukum, 責任 lebih menyangkut akuntabilitas atas hasil dan keputusan.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "この失敗の<b>責任</b>は私にあります。", "id": "Tanggung jawab atas kegagalan ini ada pada saya.", "level": "n3", "tags": ["pekerjaan", "karakter"]},
-    {"jp": "親には子どもを育てる<b>責任</b>がある。", "id": "Orang tua memiliki tanggung jawab untuk membesarkan anak.", "level": "n3", "tags": ["keluarga", "karakter"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00445",
-  "word": "義務",
-  "reading": "ぎむ",
-  "romaji": "gimu",
-  "meaning_id": "kewajiban (berdasarkan hukum, aturan, atau norma)",
-  "meaning_en": "obligation, duty",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 4,
-  "domain": ["hukum-aturan", "pekerjaan", "politik-masyarakat"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "義務 merujuk pada kewajiban yang harus dipenuhi berdasarkan hukum, peraturan, atau norma sosial yang berlaku. Berbeda dari 責任 yang lebih pada akuntabilitas moral atas suatu peran, 義務 menekankan keharusan yang bersifat eksternal — melanggarnya bisa berdampak hukum atau sanksi.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "納税は国民の<b>義務</b>だ。", "id": "Membayar pajak adalah kewajiban warga negara.", "level": "n3", "tags": ["hukum-aturan", "politik-masyarakat"]},
-    {"jp": "契約上の<b>義務</b>を果たさなかった。", "id": "Dia tidak memenuhi kewajiban yang tertuang dalam kontrak.", "level": "n3", "tags": ["bisnis", "hukum-aturan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00446",
-  "word": "権利",
-  "reading": "けんり",
-  "romaji": "kenri",
-  "meaning_id": "hak (yang dimiliki seseorang secara hukum atau moral)",
-  "meaning_en": "right, entitlement",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 4,
-  "domain": ["hukum-aturan", "politik-masyarakat"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "権利 adalah hak yang dimiliki seseorang berdasarkan hukum atau norma — seperti hak memilih atau hak bekerja. Berbeda dari 権限 (けんげん) yang merujuk pada wewenang atau otoritas yang diberikan dalam konteks jabatan atau pekerjaan, 権利 lebih bersifat universal dan melekat pada individu.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "すべての人には教育を受ける<b>権利</b>がある。", "id": "Setiap orang berhak mendapatkan pendidikan.", "level": "n3", "tags": ["hukum-aturan", "politik-masyarakat"]},
-    {"jp": "従業員には有給休暇を取る<b>権利</b>がある。", "id": "Karyawan berhak mengambil cuti berbayar.", "level": "n3", "tags": ["pekerjaan", "hukum-aturan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00447",
-  "word": "規則",
-  "reading": "きそく",
-  "romaji": "kisoku",
-  "meaning_id": "peraturan, aturan (dalam kelompok atau organisasi)",
-  "meaning_en": "rules, regulations",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["hukum-aturan", "pekerjaan", "pendidikan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "規則 merujuk pada aturan yang berlaku di dalam suatu kelompok, sekolah, atau perusahaan tertentu — bukan hukum negara. Berbeda dari 法律 (ほうりつ) yang merupakan undang-undang yang berlaku secara nasional dengan konsekuensi hukum, dan lebih formal dari ルール yang lebih kasual.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "学校の<b>規則</b>を守らなければならない。", "id": "Kita harus mematuhi peraturan sekolah.", "level": "n3", "tags": ["pendidikan", "hukum-aturan"]},
-    {"jp": "会社の<b>規則</b>で私服での出勤は禁止されている。", "id": "Berdasarkan peraturan perusahaan, datang dengan pakaian kasual dilarang.", "level": "n3", "tags": ["pekerjaan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00448",
-  "word": "制度",
-  "reading": "せいど",
-  "romaji": "seido",
-  "meaning_id": "sistem, institusi (yang ditetapkan secara resmi)",
-  "meaning_en": "system, institution, established framework",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 4,
-  "domain": ["politik-masyarakat", "hukum-aturan", "pekerjaan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "制度 mengacu pada sistem atau kerangka yang ditetapkan secara formal oleh pemerintah atau institusi, seperti sistem pendidikan atau sistem jaminan sosial. Berbeda dari システム yang lebih umum (termasuk sistem teknis/teknologi), 制度 selalu menyiratkan dimensi sosial atau kelembagaan yang resmi.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "日本の医療<b>制度</b>は国民皆保険を採用している。", "id": "Sistem kesehatan Jepang menerapkan asuransi kesehatan universal.", "level": "n3", "tags": ["kesehatan", "politik-masyarakat"]},
-    {"jp": "この<b>制度</b>を改革する必要がある。", "id": "Sistem ini perlu direformasi.", "level": "n3", "tags": ["politik-masyarakat", "perubahan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00449",
-  "word": "政策",
-  "reading": "せいさく",
-  "romaji": "seisaku",
-  "meaning_id": "kebijakan (pemerintah atau institusi besar)",
-  "meaning_en": "policy",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 4,
-  "domain": ["politik-masyarakat", "bisnis", "ekonomi-keuangan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "政策 adalah kebijakan formal yang ditetapkan oleh pemerintah atau lembaga besar sebagai panduan tindakan. Berbeda dari 方針 (ほうしん) yang merupakan arah kebijakan internal perusahaan atau organisasi yang lebih fleksibel, 政策 memiliki cakupan dan dampak yang lebih luas serta lebih resmi.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "政府は新しい経済<b>政策</b>を発表した。", "id": "Pemerintah mengumumkan kebijakan ekonomi baru.", "level": "n3", "tags": ["politik-masyarakat", "ekonomi-keuangan"]},
-    {"jp": "環境<b>政策</b>の強化が求められている。", "id": "Penguatan kebijakan lingkungan hidup sangat diperlukan.", "level": "n3", "tags": ["politik-masyarakat", "alam-lingkungan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00450",
-  "word": "予算",
-  "reading": "よさん",
-  "romaji": "yosan",
-  "meaning_id": "anggaran, budget yang direncanakan",
-  "meaning_en": "budget, estimated expenditure",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["bisnis", "ekonomi-keuangan", "pekerjaan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "予算 adalah dana yang dialokasikan atau direncanakan untuk tujuan tertentu sebelum pengeluaran terjadi. Berbeda dari 費用 (ひよう) yang mengacu pada biaya yang sudah atau akan dikeluarkan secara aktual, 予算 selalu menyiratkan perencanaan ke depan dan batas yang ditetapkan.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "<b>予算</b>が足りないので、計画を変更しなければならない。", "id": "Karena anggarannya tidak cukup, kita harus mengubah rencana.", "level": "n3", "tags": ["bisnis", "ekonomi-keuangan"]},
-    {"jp": "今年度の<b>予算</b>を組む作業をしている。", "id": "Kami sedang menyusun anggaran untuk tahun fiskal ini.", "level": "n3", "tags": ["pekerjaan", "bisnis"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00451",
-  "word": "費用",
-  "reading": "ひよう",
-  "romaji": "hiyou",
-  "meaning_id": "biaya, pengeluaran (yang diperlukan untuk sesuatu)",
-  "meaning_en": "cost, expense",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["bisnis", "ekonomi-keuangan", "kehidupan-sehari"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "費用 adalah biaya yang diperlukan untuk melakukan sesuatu, baik sudah terjadi maupun diperkirakan. Berbeda dari 値段 (ねだん) yang adalah harga jual suatu produk atau barang, dan dari コスト yang lebih kasual/bisnis modern, 費用 lebih formal dan sering dipakai dalam dokumen atau laporan resmi.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "修理の<b>費用</b>はいくらかかりますか？", "id": "Berapa biaya perbaikannya?", "level": "n3", "tags": ["kehidupan-sehari", "bisnis"]},
-    {"jp": "交通<b>費用</b>は会社が負担します。", "id": "Biaya transportasi ditanggung oleh perusahaan.", "level": "n3", "tags": ["pekerjaan", "bisnis"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00452",
-  "word": "利益",
-  "reading": "りえき",
-  "romaji": "rieki",
-  "meaning_id": "keuntungan, profit; juga manfaat atau kebaikan",
-  "meaning_en": "profit, benefit, advantage",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["bisnis", "ekonomi-keuangan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "利益 mencakup dua makna: keuntungan finansial (profit) maupun manfaat atau kebaikan secara umum (kepentingan publik = 公共の利益). Berbeda dari 利潤 (りじゅん) yang lebih teknis dan hanya merujuk pada margin keuntungan bisnis, 利益 lebih luas dan sering dipakai dalam kedua konteks tersebut.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "今期は大きな<b>利益</b>を上げることができた。", "id": "Pada kuartal ini kami berhasil membukukan keuntungan besar.", "level": "n3", "tags": ["bisnis", "ekonomi-keuangan"]},
-    {"jp": "社会の<b>利益</b>のために働くことが大切だ。", "id": "Penting untuk bekerja demi kepentingan masyarakat.", "level": "n3", "tags": ["politik-masyarakat", "karakter"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00453",
-  "word": "損失",
-  "reading": "そんしつ",
-  "romaji": "sonshitsu",
-  "meaning_id": "kerugian (finansial atau material)",
-  "meaning_en": "loss, financial damage",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 4,
-  "domain": ["bisnis", "ekonomi-keuangan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "損失 merujuk pada kerugian yang terukur secara finansial atau material — sesuatu yang hilang atau berkurang nilainya. Berbeda dari 損害 (そんがい) yang lebih luas dan mencakup kerugian atau kerusakan akibat suatu peristiwa (termasuk non-finansial seperti reputasi), 損失 lebih spesifik pada nilai yang hilang.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "台風による<b>損失</b>は数十億円に上った。", "id": "Kerugian akibat topan mencapai puluhan miliar yen.", "level": "n3", "tags": ["ekonomi-keuangan", "alam-lingkungan"]},
-    {"jp": "投資に失敗して大きな<b>損失</b>を被った。", "id": "Investasinya gagal dan dia menanggung kerugian besar.", "level": "n3", "tags": ["bisnis", "ekonomi-keuangan"]}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -13824,34 +8305,6 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-00460",
-  "word": "目標",
-  "reading": "もくひょう",
-  "romaji": "mokuhyou",
-  "meaning_id": "target, sasaran yang ingin dicapai",
-  "meaning_en": "goal, target, objective",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["pekerjaan", "bisnis", "pendidikan", "karakter"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "目標 adalah sasaran yang spesifik dan terukur yang ingin dicapai dalam jangka tertentu. Berbeda dari 目的 (もくてき) yang mengacu pada tujuan yang lebih mendasar dan luas (alasan atau 'mengapa'), 目標 lebih konkret dan berorientasi pada hasil — seperti 'lulus ujian N2' vs 'bisa berbahasa Jepang'.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "今年の<b>目標</b>は体重を5キロ減らすことだ。", "id": "Targetku tahun ini adalah menurunkan berat badan 5 kg.", "level": "n3", "tags": ["kesehatan", "kehidupan-sehari"]},
-    {"jp": "チームの<b>目標</b>を全員で確認した。", "id": "Seluruh anggota tim menyepakati target bersama.", "level": "n3", "tags": ["pekerjaan", "bisnis"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
   "id": "vg-n3-00461",
   "word": "評価",
   "reading": "ひょうか",
@@ -13908,34 +8361,6 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-00463",
-  "word": "課題",
-  "reading": "かだい",
-  "romaji": "kadai",
-  "meaning_id": "tantangan, isu yang perlu diselesaikan; juga tugas yang diberikan",
-  "meaning_en": "challenge, issue to be addressed; assigned task",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["pekerjaan", "bisnis", "pendidikan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "課題 memiliki dua nuansa: (1) tantangan atau isu yang perlu diselesaikan, biasanya dalam konteks organisasi atau kebijakan; (2) tugas yang diberikan oleh guru atau atasan. Berbeda dari 問題 (もんだい) yang lebih negatif dan bisa berarti 'masalah' atau soal ujian, 課題 terasa lebih konstruktif dan berorientasi pada solusi.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "少子化はこの国の大きな<b>課題</b>だ。", "id": "Penurunan angka kelahiran adalah tantangan besar negara ini.", "level": "n3", "tags": ["politik-masyarakat"]},
-    {"jp": "夏休みの宿題の<b>課題</b>がたくさん出た。", "id": "Banyak tugas liburan musim panas yang diberikan.", "level": "n3", "tags": ["pendidikan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
   "id": "vg-n3-00464",
   "word": "解決",
   "reading": "かいけつ",
@@ -13955,874 +8380,6 @@ window.vocabN3 = [
   "examples": [
     {"jp": "二人で話し合って問題を<b>解決した</b>。", "id": "Kami berdua berdiskusi dan berhasil menyelesaikan masalahnya.", "level": "n3", "tags": ["kehidupan-sehari", "emosi-sosial"]},
     {"jp": "このトラブルの<b>解決</b>には時間がかかる。", "id": "Penyelesaian masalah ini membutuhkan waktu.", "level": "n3", "tags": ["pekerjaan", "bisnis"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00465",
-  "word": "対策",
-  "reading": "たいさく",
-  "romaji": "taisaku",
-  "meaning_id": "tindakan penanggulangan, langkah pencegahan atau penanganan",
-  "meaning_en": "countermeasure, measures taken to deal with something",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["pekerjaan", "bisnis", "politik-masyarakat"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "対策 adalah langkah konkret yang diambil untuk menghadapi, mencegah, atau mengurangi dampak suatu masalah. Berbeda dari 解決策 (かいけつさく) yang secara khusus berarti solusi untuk menuntaskan masalah, 対策 lebih luas — bisa berupa tindakan pencegahan sebelum masalah muncul, atau penanganan saat masalah sedang berlangsung.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "感染症への<b>対策</b>として、手洗いを徹底する。", "id": "Sebagai langkah pencegahan penyakit menular, cuci tangan dilakukan secara menyeluruh.", "level": "n3", "tags": ["kesehatan", "politik-masyarakat"]},
-    {"jp": "セキュリティ<b>対策</b>を強化する必要がある。", "id": "Perlu memperkuat langkah-langkah keamanan.", "level": "n3", "tags": ["bisnis", "teknologi"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00466",
-  "word": "穏やか",
-  "reading": "おだやか",
-  "romaji": "odayaka",
-  "meaning_id": "tenang, kalem, damai",
-  "meaning_en": "calm, gentle, peaceful",
-  "jlpt": "n3",
-  "pos": "na-adj",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["emosi", "karakter"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "穏やか menggambarkan sifat tenang dan lembut secara alami, baik untuk kepribadian maupun suasana. Berbeda dari 静か (shizuka — sunyi/hening) yang menekankan ketiadaan suara — 穏やか lebih tentang karakter yang damai dan tidak meledak-ledak.",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "彼女は<b>穏やか</b>な性格で、みんなに好かれている。", "id": "Dia memiliki kepribadian yang tenang dan disukai semua orang.", "level": "n3", "tags": ["karakter", "kehidupan-sehari"]},
-    {"jp": "今日は<b>穏やか</b>な天気で、散歩日和だ。", "id": "Cuaca hari ini damai dan cocok untuk jalan-jalan.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00467",
-  "word": "丁寧",
-  "reading": "ていねい",
-  "romaji": "teinei",
-  "meaning_id": "sopan, teliti, seksama",
-  "meaning_en": "polite, careful, thorough",
-  "jlpt": "n3",
-  "pos": "na-adj",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["sopan-santun", "bahasa-komunikasi"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "丁寧 mencakup dua makna: sopan dalam tutur kata/perilaku, dan teliti dalam mengerjakan sesuatu. 丁寧語 adalah ragam bahasa sopan dalam bahasa Jepang. Berbeda dari 礼儀正しい (reigitadashii) yang lebih menekankan etika formal — 丁寧 lebih umum dan mencakup kesungguhan dalam pekerjaan sehari-hari.",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "<b>丁寧</b>な言葉を使って話してください。", "id": "Silakan berbicara menggunakan kata-kata yang sopan.", "level": "n3", "tags": ["bahasa-komunikasi", "sopan-santun"]},
-    {"jp": "彼は仕事を<b>丁寧</b>にこなすので、上司に信頼されている。", "id": "Dia dipercaya oleh atasannya karena mengerjakan pekerjaan dengan teliti.", "level": "n3", "tags": ["pekerjaan", "karakter"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00468",
-  "word": "誠実",
-  "reading": "せいじつ",
-  "romaji": "seijitsu",
-  "meaning_id": "jujur, tulus, berdedikasi",
-  "meaning_en": "sincere, honest, dedicated",
-  "jlpt": "n3",
-  "pos": "na-adj",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["karakter", "pekerjaan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "誠実 menekankan kejujuran yang tulus dari hati, bukan sekadar tidak berbohong. Berbeda dari 正直 (shoujiki — jujur secara faktual) yang lebih tentang tidak berbohong — 誠実 lebih dalam, mencakup dedikasi, ketulusan hati, dan konsistensi antara kata dan perbuatan dalam hubungan maupun pekerjaan.",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "<b>誠実</b>な態度で相手に接することが信頼につながる。", "id": "Bersikap tulus terhadap orang lain akan membangun kepercayaan.", "level": "n3", "tags": ["karakter", "hubungan-konsep"]},
-    {"jp": "彼は<b>誠実</b>な人で、どんな約束も必ず守る。", "id": "Dia adalah orang yang tulus dan selalu menepati setiap janjinya.", "level": "n3", "tags": ["karakter", "kehidupan-sehari"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00469",
-  "word": "真剣",
-  "reading": "しんけん",
-  "romaji": "shinken",
-  "meaning_id": "serius, sungguh-sungguh",
-  "meaning_en": "serious, earnest, in earnest",
-  "jlpt": "n3",
-  "pos": "na-adj",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["karakter", "pikiran-opini"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "真剣 menggambarkan intensitas dan fokus penuh dalam menghadapi sesuatu pada momen tertentu. Berbeda dari 真面目 (majime — tekun/serius secara kepribadian) yang bersifat konsisten — 真剣 lebih tentang kesungguhan yang muncul saat menghadapi situasi penting, seperti 'benar-benar serius sekarang'.",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "<b>真剣</b>に考えた結果、転職することにした。", "id": "Setelah berpikir sungguh-sungguh, saya memutuskan untuk pindah kerja.", "level": "n3", "tags": ["keputusan", "pekerjaan"]},
-    {"jp": "試合に向けて<b>真剣</b>に練習している。", "id": "Saya berlatih dengan serius untuk mempersiapkan pertandingan.", "level": "n3", "tags": ["olahraga", "karakter"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00470",
-  "word": "冷静",
-  "reading": "れいせい",
-  "romaji": "reisei",
-  "meaning_id": "tenang, tidak panik, dingin kepala",
-  "meaning_en": "calm, composed, cool-headed",
-  "jlpt": "n3",
-  "pos": "na-adj",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["emosi", "karakter"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "冷静 berarti mampu mengendalikan emosi dan tidak terbawa panik, terutama dalam situasi menegangkan. Berbeda dari 穏やか (odayaka — damai secara alami) yang menggambarkan sifat bawaan — 冷静 lebih tentang kemampuan aktif untuk mempertahankan ketenangan saat ada tekanan atau krisis.",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "緊急の場合でも<b>冷静</b>に行動することが大切だ。", "id": "Penting untuk bertindak dengan tenang bahkan dalam situasi darurat.", "level": "n3", "tags": ["emosi", "keputusan"]},
-    {"jp": "彼女は怒っても<b>冷静</b>さを失わない。", "id": "Bahkan ketika marah, dia tidak kehilangan ketenangannya.", "level": "n3", "tags": ["emosi", "karakter"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00471",
-  "word": "慎重",
-  "reading": "しんちょう",
-  "romaji": "shinchou",
-  "meaning_id": "berhati-hati, cermat, penuh pertimbangan",
-  "meaning_en": "cautious, careful, prudent",
-  "jlpt": "n3",
-  "pos": "na-adj",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["karakter", "keputusan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "慎重 menekankan kehati-hatian dalam proses berpikir dan pengambilan keputusan agar tidak membuat kesalahan. Berbeda dari 丁寧 (teinei — teliti dalam pelaksanaan) yang lebih tentang cara mengerjakan sesuatu — 慎重 lebih tentang mempertimbangkan risiko sebelum bertindak atau memutuskan.",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "<b>慎重</b>に計画を立てることが成功につながる。", "id": "Merencanakan dengan hati-hati akan mengarah pada kesuksesan.", "level": "n3", "tags": ["keputusan", "pekerjaan"]},
-    {"jp": "彼は<b>慎重</b>な性格なので、すぐには決断しない。", "id": "Karena sifatnya yang berhati-hati, dia tidak langsung mengambil keputusan.", "level": "n3", "tags": ["karakter", "kehidupan-sehari"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00472",
-  "word": "積極的",
-  "reading": "せっきょくてき",
-  "romaji": "sekkyokuteki",
-  "meaning_id": "proaktif, aktif, bersemangat",
-  "meaning_en": "proactive, positive, assertive",
-  "jlpt": "n3",
-  "pos": "na-adj",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["karakter", "pekerjaan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "積極的 berarti aktif berinisiatif dan tidak menunggu disuruh. Lawan langsungnya adalah 消極的 (shoukyokuteki — pasif). Dalam konteks kerja atau pendidikan, 積極的に参加する = berpartisipasi secara aktif. Sering muncul dalam evaluasi kinerja di Jepang sebagai kualitas yang dipuji.",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "授業では<b>積極的</b>に手を挙げて質問しましょう。", "id": "Di kelas, mari angkat tangan dan bertanya secara aktif.", "level": "n3", "tags": ["pendidikan", "karakter"]},
-    {"jp": "彼女は新しいプロジェクトに<b>積極的</b>に取り組んでいる。", "id": "Dia terlibat secara proaktif dalam proyek baru ini.", "level": "n3", "tags": ["pekerjaan", "karakter"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00473",
-  "word": "消極的",
-  "reading": "しょうきょくてき",
-  "romaji": "shoukyokuteki",
-  "meaning_id": "pasif, tidak antusias, kurang berinisiatif",
-  "meaning_en": "passive, negative, unenthusiastic",
-  "jlpt": "n3",
-  "pos": "na-adj",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["karakter"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "消極的 berarti cenderung menghindari tindakan atau kurang berinisiatif. Lawan langsung dari 積極的. Tidak selalu bermakna negatif — dalam beberapa konteks menggambarkan sikap yang menghindari konflik atau tidak memaksakan kehendak. Namun dalam konteks pekerjaan atau pendidikan, biasanya bernuansa kurang baik.",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "彼は会議でいつも<b>消極的</b>な態度をとる。", "id": "Dia selalu bersikap pasif dalam rapat.", "level": "n3", "tags": ["pekerjaan", "karakter"]},
-    {"jp": "<b>消極的</b>な姿勢では、なかなか成長できないよ。", "id": "Dengan sikap yang pasif, kamu akan sulit berkembang.", "level": "n3", "tags": ["karakter", "pendidikan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00474",
-  "word": "柔軟",
-  "reading": "じゅうなん",
-  "romaji": "juunan",
-  "meaning_id": "fleksibel, lentur, adaptif",
-  "meaning_en": "flexible, supple, adaptable",
-  "jlpt": "n3",
-  "pos": "na-adj",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["karakter", "pikiran-opini"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "柔軟 bisa berarti fleksibel secara fisik (tubuh lentur) maupun secara pikiran (berpikiran terbuka dan adaptif). 柔軟な対応 = penanganan yang fleksibel. Berbeda dari 自由 (jiyuu — bebas) yang lebih tentang kebebasan tanpa batasan — 柔軟 menekankan kemampuan menyesuaikan diri sesuai kebutuhan.",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "<b>柔軟</b>な発想が新しいアイデアを生む。", "id": "Pemikiran yang fleksibel melahirkan ide-ide baru.", "level": "n3", "tags": ["pikiran-opini", "pekerjaan"]},
-    {"jp": "状況に応じて<b>柔軟</b>に対応することが求められる。", "id": "Kita dituntut untuk merespons secara fleksibel sesuai dengan situasi.", "level": "n3", "tags": ["pekerjaan", "karakter"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00475",
-  "word": "公平",
-  "reading": "こうへい",
-  "romaji": "kouhei",
-  "meaning_id": "adil, tidak memihak, fair",
-  "meaning_en": "fair, impartial, just",
-  "jlpt": "n3",
-  "pos": "na-adj",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["karakter", "hukum-aturan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "公平 berarti memberikan perlakuan yang tepat dan tidak memihak. Berbeda dari 平等 (byoudou — kesetaraan/sama rata) yang menekankan distribusi yang identik — 公平 lebih tentang keadilan yang disesuaikan dengan konteks, di mana perlakuan berbeda pun bisa 公平 jika sesuai kebutuhan masing-masing.",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "先生はすべての生徒を<b>公平</b>に扱う。", "id": "Guru memperlakukan semua murid secara adil.", "level": "n3", "tags": ["pendidikan", "hukum-aturan"]},
-    {"jp": "<b>公平</b>な判断を下すことが、リーダーに求められる。", "id": "Mengambil keputusan yang adil adalah tuntutan bagi seorang pemimpin.", "level": "n3", "tags": ["pekerjaan", "hukum-aturan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00476",
-  "word": "不公平",
-  "reading": "ふこうへい",
-  "romaji": "fukouhei",
-  "meaning_id": "tidak adil, berat sebelah",
-  "meaning_en": "unfair, unjust, biased",
-  "jlpt": "n3",
-  "pos": "na-adj",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["emosi-negatif", "hukum-aturan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "不公平 adalah antonim langsung dari 公平, menggambarkan perlakuan yang berat sebelah atau tidak merata. Berbeda dari 不平等 (fubyoudou — ketidaksetaraan sistemik) yang lebih sering digunakan dalam konteks sosial atau akademik — 不公平 lebih umum dalam percakapan sehari-hari untuk mengungkapkan rasa tidak adil dalam situasi konkret.",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "あの決定は<b>不公平</b>だと思う。", "id": "Saya rasa keputusan itu tidak adil.", "level": "n3", "tags": ["emosi-negatif", "pikiran-opini"]},
-    {"jp": "同じ仕事なのに給料が違うのは<b>不公平</b>だ。", "id": "Gaji yang berbeda untuk pekerjaan yang sama adalah tidak adil.", "level": "n3", "tags": ["pekerjaan", "hukum-aturan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00477",
-  "word": "独特",
-  "reading": "どくとく",
-  "romaji": "dokutoku",
-  "meaning_id": "unik, khas, berbeda dari yang lain",
-  "meaning_en": "unique, distinctive, peculiar",
-  "jlpt": "n3",
-  "pos": "na-adj",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["kualitas", "karakter"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "独特 menekankan keunikan yang membedakan dari yang lain, bisa bernilai positif maupun netral. Berbeda dari ユニーク (yuniiku) yang berasal dari bahasa Inggris dan bernuansa lebih positif/modern — 独特 lebih formal dan bisa juga menyiratkan 'aneh' atau 'tidak biasa' tanpa konotasi positif yang kuat.",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "彼女は<b>独特</b>のファッションセンスを持っている。", "id": "Dia memiliki selera fashion yang khas dan unik.", "level": "n3", "tags": ["karakter", "kehidupan-sehari"]},
-    {"jp": "この地域には<b>独特</b>の文化が根づいている。", "id": "Di daerah ini telah berakar budaya yang khas.", "level": "n3", "tags": ["budaya", "konsep-jepang"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00478",
-  "word": "一般的",
-  "reading": "いっぱんてき",
-  "romaji": "ippanteki",
-  "meaning_id": "umum, lazim, pada umumnya",
-  "meaning_en": "general, common, typical",
-  "jlpt": "n3",
-  "pos": "na-adj",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["umum", "pikiran-opini"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "一般的 berarti berlaku luas untuk banyak orang atau situasi, bersifat umum. Berbeda dari 普通 (futsuu — biasa/normal) yang lebih kasual dan sehari-hari — 一般的 lebih formal dan akademis, sering digunakan dalam penjelasan atau analisis. 一般的に言えば = secara umum.",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "<b>一般的</b>に、日本人は礼儀正しいと言われている。", "id": "Secara umum, orang Jepang dikenal sebagai orang yang sopan.", "level": "n3", "tags": ["budaya", "konsep-jepang"]},
-    {"jp": "それは<b>一般的</b>な考え方ではないと思う。", "id": "Saya rasa itu bukan cara berpikir yang umum.", "level": "n3", "tags": ["pikiran-opini", "umum"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00479",
-  "word": "具体的",
-  "reading": "ぐたいてき",
-  "romaji": "gutaiteki",
-  "meaning_id": "konkret, spesifik, disertai contoh nyata",
-  "meaning_en": "concrete, specific, tangible",
-  "jlpt": "n3",
-  "pos": "na-adj",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["bahasa-komunikasi", "pikiran-opini"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "具体的 berarti disertai contoh atau detail nyata, bukan abstrak atau samar-samar. Lawan katanya adalah 抽象的 (chuushouteki — abstrak). Sering muncul dalam permintaan klarifikasi: 具体的に教えてください = tolong jelaskan secara konkret. Kata kunci dalam dunia pendidikan dan presentasi bisnis di Jepang.",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "<b>具体的</b>な例を挙げて説明してください。", "id": "Tolong jelaskan dengan memberikan contoh yang konkret.", "level": "n3", "tags": ["bahasa-komunikasi", "pendidikan"]},
-    {"jp": "もっと<b>具体的</b>に話してくれますか？", "id": "Bisakah kamu berbicara lebih spesifik?", "level": "n3", "tags": ["bahasa-komunikasi", "kehidupan-sehari"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00480",
-  "word": "明確",
-  "reading": "めいかく",
-  "romaji": "meikaku",
-  "meaning_id": "jelas, tegas, pasti",
-  "meaning_en": "clear, definite, explicit",
-  "jlpt": "n3",
-  "pos": "na-adj",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["bahasa-komunikasi", "pikiran-opini"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "明確 menekankan kejelasan dan ketegasan, tanpa ruang untuk kesalahpahaman. Sering digunakan dalam konteks formal, bisnis, atau akademik. Berbeda dari 明らか (akiraka — jelas/terbukti) yang lebih tentang sesuatu yang sudah nyata terlihat — 明確 lebih tentang menyampaikan atau menetapkan sesuatu dengan tegas dan tidak ambigu.",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "<b>明確</b>な答えをもらえると助かります。", "id": "Saya akan terbantu jika mendapat jawaban yang jelas dan tegas.", "level": "n3", "tags": ["bahasa-komunikasi", "pekerjaan"]},
-    {"jp": "目標を<b>明確</b>にすることが成功への第一歩だ。", "id": "Memperjelas tujuan adalah langkah pertama menuju kesuksesan.", "level": "n3", "tags": ["pikiran-opini", "keputusan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00481",
-  "word": "曖昧",
-  "reading": "あいまい",
-  "romaji": "aimai",
-  "meaning_id": "ambigu, tidak jelas, mendua",
-  "meaning_en": "vague, ambiguous, unclear",
-  "jlpt": "n3",
-  "pos": "na-adj",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["bahasa-komunikasi", "karakter"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "曖昧 menggambarkan sesuatu yang tidak jelas atau bisa diartikan lebih dari satu cara. 曖昧な返事 = jawaban yang tidak tegas. Menariknya, dalam budaya Jepang, menjawab secara 曖昧 sering dianggap sopan karena menghindari penolakan langsung — namun bisa membingungkan bagi orang dari budaya yang lebih langsung.",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "<b>曖昧</b>な返事ばかりで、本当のことを言ってほしい。", "id": "Terus menjawab dengan tidak jelas, saya ingin kamu bicara yang sebenarnya.", "level": "n3", "tags": ["bahasa-komunikasi", "emosi"]},
-    {"jp": "彼の説明は<b>曖昧</b>で、よく理解できなかった。", "id": "Penjelasannya ambigu sehingga saya tidak benar-benar mengerti.", "level": "n3", "tags": ["bahasa-komunikasi", "pikiran-opini"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00482",
-  "word": "正式",
-  "reading": "せいしき",
-  "romaji": "seishiki",
-  "meaning_id": "resmi, formal, sah secara prosedur",
-  "meaning_en": "formal, official, proper",
-  "jlpt": "n3",
-  "pos": "na-adj",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 4,
-  "domain": ["sopan-santun", "hukum-aturan"],
-  "register": "formal",
-  "lawan_bicara": ["umum"],
-  "nuance": "正式 menekankan keresmiaan sesuai prosedur dan aturan yang berlaku. Berbeda dari 公式 (koushiki — resmi/official secara institusional, seperti situs resmi) — 正式 lebih tentang cara atau proses yang benar dan sah: 正式な手続き = prosedur resmi. Digunakan untuk dokumen, acara, atau cara penyampaian yang sesuai kaidah.",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "<b>正式</b>な契約書にサインしてください。", "id": "Silakan tanda tangani kontrak resmi ini.", "level": "n3", "tags": ["bisnis", "hukum-aturan"]},
-    {"jp": "<b>正式</b>な場ではスーツを着るのが礼儀だ。", "id": "Di acara resmi, mengenakan setelan jas adalah sopan santun.", "level": "n3", "tags": ["sopan-santun", "kehidupan-sehari"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00483",
-  "word": "相変わらず",
-  "reading": "あいかわらず",
-  "romaji": "aikawarazu",
-  "meaning_id": "seperti biasa, tidak berubah, sama saja seperti dulu",
-  "meaning_en": "as usual, same as ever, unchanged",
-  "jlpt": "n3",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["kehidupan-sehari", "waktu"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "相変わらず digunakan untuk menyatakan bahwa seseorang atau sesuatu tetap sama seperti sebelumnya. Sering terdengar saat bertemu orang lama: 相変わらずだね = kamu tidak berubah ya. Mengandung nuansa nostalgia atau penerimaan yang hangat. Berbeda dari いつものように (itsumono you ni — seperti biasanya) yang lebih netral dan deskriptif.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "<b>相変わらず</b>忙しいですか？", "id": "Apakah kamu masih sibuk seperti biasa?", "level": "n3", "tags": ["kehidupan-sehari", "pertemanan"]},
-    {"jp": "彼女は<b>相変わらず</b>明るくて元気だ。", "id": "Dia tetap ceria dan penuh semangat seperti dulu.", "level": "n3", "tags": ["karakter", "pertemanan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00484",
-  "word": "ぎりぎり",
-  "reading": "ぎりぎり",
-  "romaji": "girigiri",
-  "meaning_id": "mepet, nyaris, pas-pasan, di batas limit",
-  "meaning_en": "barely, just barely, at the last moment, at the limit",
-  "jlpt": "n3",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 1,
-  "domain": ["kehidupan-sehari", "waktu"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "ぎりぎり menggambarkan situasi di mana seseorang nyaris tidak berhasil atau tepat berada di batas kemampuan maupun waktu. ぎりぎり合格 = lulus dengan nilai pas-pasan. Lebih ekspresif dan kasual dari かろうじて (karouijte — dengan susah payah) yang lebih formal. Sering terasa dramatis karena menyiratkan hampir gagal.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "電車に<b>ぎりぎり</b>間に合った。", "id": "Nyaris sempat naik kereta tadi.", "level": "n3", "tags": ["kehidupan-sehari", "perjalanan"]},
-    {"jp": "試験は<b>ぎりぎり</b>合格だった。", "id": "Ujiannya lulus dengan nilai yang pas-pasan.", "level": "n3", "tags": ["pendidikan", "emosi"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00485",
-  "word": "かなり",
-  "reading": "かなり",
-  "romaji": "kanari",
-  "meaning_id": "cukup banyak, lumayan, terbilang",
-  "meaning_en": "considerably, fairly, quite, rather",
-  "jlpt": "n3",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["kuantitas", "kualitas"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "かなり menunjukkan derajat yang melebihi ekspektasi biasa, tetapi belum mencapai tingkat ekstrem. Lebih kuat dari まあまあ (maa maa — lumayan biasa saja) dan 少し (sukoshi — sedikit), namun lebih lemah dari とても atau 非常に (hijou ni — sangat). Digunakan baik dalam konteks positif maupun negatif.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "その映画は<b>かなり</b>面白かった。", "id": "Film itu cukup menarik.", "level": "n3", "tags": ["hiburan", "kehidupan-sehari"]},
-    {"jp": "今日は<b>かなり</b>疲れたので、早く寝ます。", "id": "Hari ini saya cukup lelah, jadi akan tidur lebih awal.", "level": "n3", "tags": ["kehidupan-sehari", "kesehatan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00486",
-  "word": "特に",
-  "reading": "とくに",
-  "romaji": "tokuni",
-  "meaning_id": "terutama, khususnya, secara khusus",
-  "meaning_en": "especially, particularly, in particular",
-  "jlpt": "n3",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["umum", "pikiran-opini"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "特に menekankan sesuatu sebagai yang paling menonjol di antara yang lain. Dalam kalimat negatif, 特に～ない berarti 'tidak ada yang istimewa/khusus'. Berbeda dari 特別に (tokubetsuni — secara khusus/istimewa) yang lebih formal dan menyiratkan perlakuan sengaja diberikan secara eksklusif.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "<b>特に</b>好きな食べ物はすしです。", "id": "Makanan yang paling saya sukai adalah sushi.", "level": "n3", "tags": ["makanan-minuman", "kehidupan-sehari"]},
-    {"jp": "今日は<b>特に</b>何もなかった。", "id": "Hari ini tidak ada yang istimewa.", "level": "n3", "tags": ["kehidupan-sehari", "umum"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00487",
-  "word": "必ずしも",
-  "reading": "かならずしも",
-  "romaji": "kanarazushimo",
-  "meaning_id": "tidak selalu, belum tentu (diikuti bentuk negatif)",
-  "meaning_en": "not necessarily, not always (used with negative)",
-  "jlpt": "n3",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["pikiran-opini", "umum"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "必ずしも WAJIB diikuti bentuk negatif: 必ずしも～ない = tidak selalu/belum tentu. Tidak dapat digunakan dalam kalimat positif. Digunakan untuk menyangkal generalisasi atau asumsi mutlak. Berbeda dari いつも～ない (tidak selalu) yang lebih kasual — 必ずしも lebih logis dan sering muncul dalam argumen atau diskusi.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "高いものが<b>必ずしも</b>いいとは限らない。", "id": "Yang mahal belum tentu selalu yang terbaik.", "level": "n3", "tags": ["pikiran-opini", "belanja"]},
-    {"jp": "努力が<b>必ずしも</b>成功につながるわけではない。", "id": "Kerja keras tidak selalu berujung pada kesuksesan.", "level": "n3", "tags": ["pikiran-opini", "sebab-akibat"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00488",
-  "word": "さっそく",
-  "reading": "さっそく",
-  "romaji": "sassoku",
-  "meaning_id": "segera, langsung, tanpa menunda",
-  "meaning_en": "immediately, right away, without delay",
-  "jlpt": "n3",
-  "pos": "adverb-manner",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["kehidupan-sehari", "waktu"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "さっそく menggambarkan tindakan yang dilakukan langsung setelah memutuskan atau menerima informasi, dengan nuansa antusias dan proaktif. Berbeda dari すぐ (sugu — segera) yang lebih netral — さっそく mengandung nuansa 'langsung bertindak tanpa menunggu lebih lama lagi' dan sering bernuansa positif, penuh semangat.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "<b>さっそく</b>試してみます。", "id": "Saya akan langsung mencobanya.", "level": "n3", "tags": ["kehidupan-sehari", "karakter"]},
-    {"jp": "<b>さっそく</b>ですが、本題に入りましょう。", "id": "Langsung saja, mari masuk ke inti pembicaraan.", "level": "n3", "tags": ["bisnis", "bahasa-komunikasi"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00489",
-  "word": "わざわざ",
-  "reading": "わざわざ",
-  "romaji": "wazawaza",
-  "meaning_id": "sengaja, repot-repot, jauh-jauh (untuk orang lain)",
-  "meaning_en": "going out of one's way, taking the trouble to",
-  "jlpt": "n3",
-  "pos": "adverb-manner",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["kehidupan-sehari", "sopan-santun"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "わざわざ menggambarkan seseorang yang melakukan sesuatu meskipun memerlukan usaha ekstra atau sebenarnya tidak perlu. Sering digunakan dalam ucapan terima kasih: わざわざありがとうございます = terima kasih sudah repot-repot. Berbeda dari あえて (aete — sengaja dengan keberanian) yang menekankan niat menghadapi tantangan — わざわざ lebih tentang usaha yang dianggap melebihi yang diperlukan demi orang lain.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "<b>わざわざ</b>来てくれてありがとう。", "id": "Terima kasih sudah repot-repot datang kemari.", "level": "n3", "tags": ["sopan-santun", "pertemanan"]},
-    {"jp": "<b>わざわざ</b>そこまでしなくてもいいのに。", "id": "Kamu tidak perlu repot-repot sejauh itu.", "level": "n3", "tags": ["kehidupan-sehari", "sopan-santun"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00490",
-  "word": "あえて",
-  "reading": "あえて",
-  "romaji": "aete",
-  "meaning_id": "sengaja, dengan berani, meski tahu risikonya",
-  "meaning_en": "daring to, deliberately, boldly despite knowing the risk",
-  "jlpt": "n3",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["keputusan", "karakter"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "あえて digunakan saat seseorang secara sadar melakukan sesuatu yang menantang, tidak biasa, atau berisiko mendapat reaksi negatif — dengan penuh keberanian dan kesadaran. Berbeda dari わざわざ (wazawaza — repot-repot untuk orang lain) yang menekankan usaha berlebih — あえて lebih menekankan keberanian atau kesengajaan dalam menghadapi hambatan atau konvensi.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "<b>あえて</b>難しい道を選んだ。", "id": "Saya dengan sengaja memilih jalan yang sulit.", "level": "n3", "tags": ["keputusan", "karakter"]},
-    {"jp": "<b>あえて</b>反対意見を言うことも、時には必要だ。", "id": "Terkadang perlu untuk dengan berani menyampaikan pendapat yang berlawanan.", "level": "n3", "tags": ["bahasa-komunikasi", "keputusan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00491",
-  "word": "ますます",
-  "reading": "ますます",
-  "romaji": "masumasu",
-  "meaning_id": "semakin, makin, kian",
-  "meaning_en": "more and more, increasingly, all the more",
-  "jlpt": "n3",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["perubahan", "waktu"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "ますます menggambarkan perubahan yang terus meningkat dalam satu arah, baik positif maupun negatif. Berbeda dari だんだん (dandan — lambat laun/bertahap) yang lebih menekankan proses perlahan — ますます lebih menekankan akselerasi atau intensifikasi yang dirasakan, seolah perubahan makin cepat atau makin terasa.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "彼女の歌は<b>ますます</b>上手になっている。", "id": "Nyanyiannya semakin hari semakin bagus.", "level": "n3", "tags": ["perubahan", "hiburan"]},
-    {"jp": "景気が<b>ますます</b>悪くなっている。", "id": "Kondisi ekonomi semakin memburuk.", "level": "n3", "tags": ["perubahan", "ekonomi-keuangan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00492",
-  "word": "次第に",
-  "reading": "しだいに",
-  "romaji": "shidaini",
-  "meaning_id": "berangsur-angsur, perlahan-lahan, lambat laun",
-  "meaning_en": "gradually, little by little, step by step",
-  "jlpt": "n3",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["perubahan", "waktu"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "次第に menggambarkan perubahan yang terjadi secara bertahap dan tenang seiring waktu. Berbeda dari だんだん (dandan) yang memiliki makna serupa tetapi lebih kasual dan percakapan sehari-hari — 次第に lebih formal dan sering digunakan dalam tulisan, narasi, atau deskripsi proses. Berbeda dari ますます yang menekankan akselerasi — 次第に lebih tentang proses yang pelan dan gradual.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "<b>次第に</b>空が明るくなってきた。", "id": "Langit perlahan-lahan mulai menjadi terang.", "level": "n3", "tags": ["alam-lingkungan", "waktu"]},
-    {"jp": "練習を続けた結果、<b>次第に</b>上達してきた。", "id": "Berkat terus berlatih, kemampuan saya perlahan-lahan meningkat.", "level": "n3", "tags": ["perubahan", "pendidikan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00493",
-  "word": "めったに",
-  "reading": "めったに",
-  "romaji": "mettani",
-  "meaning_id": "jarang sekali (diikuti bentuk negatif)",
-  "meaning_en": "rarely, seldom (used with negative verb)",
-  "jlpt": "n3",
-  "pos": "adverb-frequency",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["waktu", "kehidupan-sehari"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "めったに WAJIB diikuti bentuk negatif: めったに～ない = jarang sekali. Tidak dapat berdiri sendiri dalam kalimat positif. Berbeda dari たまに (tama ni — kadang-kadang) yang digunakan dalam kalimat positif — めったに lebih kuat dalam menyatakan frekuensi yang sangat rendah, hampir tidak pernah terjadi.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "彼はめったに怒らない。", "id": "Dia jarang sekali marah.", "level": "n3", "tags": ["karakter", "kehidupan-sehari"]},
-    {"jp": "父は忙しくて、<b>めったに</b>家にいない。", "id": "Ayah sibuk sehingga jarang sekali ada di rumah.", "level": "n3", "tags": ["keluarga", "kehidupan-sehari"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00494",
-  "word": "せっかく",
-  "reading": "せっかく",
-  "romaji": "sekkaku",
-  "meaning_id": "susah payah, sayang kalau tidak dimanfaatkan, dengan susah payah",
-  "meaning_en": "with much trouble, rare opportunity that shouldn't be wasted",
-  "jlpt": "n3",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["kehidupan-sehari", "emosi"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "せっかく mengandung nuansa 'sayang kalau disia-siakan' setelah usaha atau kesempatan yang langka. Sering diikuti のに (keluhan: sudah susah payah tapi...) atau から/ので (ajakan: karena sudah begini, manfaatkan sekalian). Berbeda dari わざわざ yang lebih netral tentang usaha — せっかく mengandung nuansa emosional yang lebih kuat: ada nilai atau usaha yang terancam terbuang.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "<b>せっかく</b>作ったのに、誰も食べてくれなかった。", "id": "Sudah susah payah memasak, tapi tidak ada yang mau makan.", "level": "n3", "tags": ["emosi-negatif", "kehidupan-sehari"]},
-    {"jp": "<b>せっかく</b>日本に来たんだから、京都にも行こう。", "id": "Karena sudah jauh-jauh ke Jepang, ayo pergi ke Kyoto juga.", "level": "n3", "tags": ["perjalanan", "budaya"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00495",
-  "word": "どうせ",
-  "reading": "どうせ",
-  "romaji": "douse",
-  "meaning_id": "toh, bagaimanapun juga, sia-sia saja",
-  "meaning_en": "anyway, in any case, might as well, no matter what",
-  "jlpt": "n3",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 1,
-  "domain": ["emosi-negatif", "pikiran-opini"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "どうせ mengandung nuansa pasrah atau pesimis — 'toh hasilnya akan sama saja' atau 'sia-sia berusaha'. Bisa juga berarti 'kalau memang begitu, sekalian saja...': どうせなら = kalau memang begitu, lebih baik sekalian. Berbeda dari いずれにせよ (izure ni seyo — bagaimanapun juga) yang lebih netral dan formal — どうせ lebih emosional dan bernuansa menyerah atau realistis pesimis.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "<b>どうせ</b>失敗するから、やめておこう。", "id": "Toh pasti akan gagal, lebih baik berhenti saja.", "level": "n3", "tags": ["emosi-negatif", "keputusan"]},
-    {"jp": "<b>どうせ</b>なら、もっと大きいものを買えばよかった。", "id": "Kalau memang begitu, seharusnya beli yang lebih besar sekalian.", "level": "n3", "tags": ["kehidupan-sehari", "pikiran-opini"]}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -15030,90 +8587,6 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-00503",
-  "word": "感情",
-  "reading": "かんじょう",
-  "romaji": "kanjou",
-  "meaning_id": "perasaan, emosi",
-  "meaning_en": "emotion, feeling, sentiment",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["emosi", "pikiran-opini", "ilmu-pengetahuan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "感情 adalah emosi secara umum — lebih abstrak dan psikologis dibanding 気持ち. 気持ち = perasaan yang dirasakan saat itu (lebih personal, spontan). 感情 = spektrum emosi (senang, sedih, marah, dll). 感情的になる = menjadi emosional/terbawa perasaan.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "彼は自分の<b>感情</b>をうまく表現できない。", "id": "Ia tidak bisa mengungkapkan emosinya dengan baik.", "level": "n3", "tags": ["emosi", "karakter"]},
-    {"jp": "<b>感情</b>的にならず、冷静に話し合おう。", "id": "Mari berdiskusi dengan tenang tanpa terbawa emosi.", "level": "n3", "tags": ["bahasa-komunikasi", "emosi"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00504"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00504",
-  "word": "感覚",
-  "reading": "かんかく",
-  "romaji": "kankaku",
-  "meaning_id": "indera, rasa (fisik/intuitif), sense",
-  "meaning_en": "sense, sensation, feeling (physical/intuitive)",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["emosi", "ilmu-pengetahuan", "pikiran-opini"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "感覚 merujuk pada persepsi sensoris (indera fisik: sentuhan, rasa, dll) atau intuisi/kepekaan. Berbeda dari 感情 yang merujuk pada emosi. 感覚がない = mati rasa (fisik). センス/感覚がある = punya selera/kepekaan. 距離感覚 = rasa jarak.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "寒さで手の<b>感覚</b>がなくなった。", "id": "Tangan saya mati rasa karena kedinginan.", "level": "n3", "tags": ["kesehatan", "kehidupan-sehari"]},
-    {"jp": "彼女は音楽の<b>感覚</b>に優れている。", "id": "Dia memiliki kepekaan musik yang luar biasa.", "level": "n3", "tags": ["seni-budaya", "karakter"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00503"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00505",
-  "word": "印象",
-  "reading": "いんしょう",
-  "romaji": "inshou",
-  "meaning_id": "kesan, impresi",
-  "meaning_en": "impression",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["pikiran-opini", "emosi-sosial", "bahasa-komunikasi"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "印象 adalah kesan yang terbentuk dari pengalaman langsung bertemu atau melihat sesuatu. Berbeda dari イメージ (image) yang lebih berupa gambaran mental atau citra umum yang belum tentu dari pengalaman langsung. 第一印象 = kesan pertama. 印象に残る = berkesan/membekas.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "彼の第一<b>印象</b>はとても良かった。", "id": "Kesan pertamanya sangat baik.", "level": "n3", "tags": ["emosi-sosial", "kehidupan-sehari"]},
-    {"jp": "その映画は強い<b>印象</b>を残した。", "id": "Film itu meninggalkan kesan yang kuat.", "level": "n3", "tags": ["hiburan", "emosi"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
   "id": "vg-n3-00506",
   "word": "記憶",
   "reading": "きおく",
@@ -15226,62 +8699,6 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-00510",
-  "word": "可能性",
-  "reading": "かのうせい",
-  "romaji": "kanousei",
-  "meaning_id": "kemungkinan, potensi, peluang",
-  "meaning_en": "possibility, potential, likelihood",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["pikiran-opini", "hubungan-konsep", "ilmu-pengetahuan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "可能性 merujuk pada derajat atau tingkat kemungkinan sesuatu bisa terjadi, atau potensi yang belum terwujud. Berbeda dari 可能 (かのう = adjektif na-: mungkin/bisa) yang sekedar menyatakan apakah sesuatu bisa dilakukan. 可能性が高い/低い = kemungkinannya tinggi/rendah.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "この薬が効く<b>可能性</b>は50%だと医師が言った。", "id": "Dokter mengatakan kemungkinan obat ini bekerja adalah 50%.", "level": "n3", "tags": ["kesehatan", "ilmu-pengetahuan"]},
-    {"jp": "彼女はまだ若いから、将来の<b>可能性</b>は無限大だ。", "id": "Dia masih muda, jadi potensinya di masa depan tidak terbatas.", "level": "n3", "tags": ["pendidikan", "karakter"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00511",
-  "word": "必要性",
-  "reading": "ひつようせい",
-  "romaji": "hitsuyousei",
-  "meaning_id": "kebutuhan, keperluan, urgensi",
-  "meaning_en": "necessity, need, importance",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["pikiran-opini", "hubungan-konsep"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "必要性 menekankan derajat atau urgensi dari suatu kebutuhan — sering dipakai dalam diskusi/argumen. Berbeda dari 必要 (な形容詞: perlu/butuh) yang lebih langsung menyatakan kebutuhan. 必要性を感じる = merasakan perlunya. 必要性がない = tidak ada keperluannya.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "英語を学ぶ<b>必要性</b>はますます高まっている。", "id": "Kebutuhan untuk belajar bahasa Inggris semakin meningkat.", "level": "n3", "tags": ["pendidikan", "bahasa-komunikasi"]},
-    {"jp": "改革の<b>必要性</b>について全員が認識している。", "id": "Semua orang menyadari perlunya reformasi.", "level": "n3", "tags": ["politik-masyarakat", "pikiran-opini"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
   "id": "vg-n3-00512",
   "word": "影響",
   "reading": "えいきょう",
@@ -15366,90 +8783,6 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-00515",
-  "word": "背景",
-  "reading": "はいけい",
-  "romaji": "haikei",
-  "meaning_id": "latar belakang, konteks",
-  "meaning_en": "background, backdrop, context",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["hubungan-konsep", "seni-budaya", "bahasa-komunikasi"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "背景 memiliki dua makna: (1) latar/backdrop secara visual (lukisan, foto), (2) latar belakang/konteks situasi atau seseorang. Berbeda dari 文脈 (ぶんみゃく) yang khusus merujuk pada konteks dalam teks/percakapan. 家庭背景 = latar belakang keluarga. 社会的背景 = latar belakang sosial.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "この問題を理解するには歴史的な<b>背景</b>を知る必要がある。", "id": "Untuk memahami masalah ini, perlu mengetahui latar belakang sejarahnya.", "level": "n3", "tags": ["hubungan-konsep", "pendidikan"]},
-    {"jp": "写真の<b>背景</b>に美しい山が写っている。", "id": "Di latar belakang foto terlihat pegunungan yang indah.", "level": "n3", "tags": ["alam-lingkungan", "seni-budaya"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00516",
-  "word": "立場",
-  "reading": "たちば",
-  "romaji": "tachiba",
-  "meaning_id": "posisi, kedudukan, sudut pandang (sosial/situasional)",
-  "meaning_en": "position, standpoint, circumstances",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["emosi-sosial", "pikiran-opini", "bisnis"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "立場 menekankan posisi/kedudukan seseorang dalam konteks sosial, peran, atau situasi tertentu — sering menyiratkan tanggung jawab yang menyertai posisi itu. Berbeda dari 観点 yang murni merujuk pada sudut pandang analitis. 立場上 = mengingat posisi/kedudukan saya. 相手の立場 = posisi/keadaan pihak lain.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "上司の<b>立場</b>から言えば、その判断は正しい。", "id": "Dari posisi sebagai atasan, penilaian itu sudah benar.", "level": "n3", "tags": ["pekerjaan", "bisnis"]},
-    {"jp": "相手の<b>立場</b>に立って考えることが大切だ。", "id": "Penting untuk berpikir dengan menempatkan diri pada posisi orang lain.", "level": "n3", "tags": ["emosi-sosial", "karakter"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00517"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00517",
-  "word": "観点",
-  "reading": "かんてん",
-  "romaji": "kanten",
-  "meaning_id": "sudut pandang, perspektif, titik pandang",
-  "meaning_en": "viewpoint, perspective, point of view",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["pikiran-opini", "ilmu-pengetahuan", "bahasa-komunikasi"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "観点 adalah kerangka analitis atau cara memandang suatu hal — lebih intelektual dan abstrak. Berbeda dari 立場 yang menekankan posisi sosial/situasional seseorang. ～の観点から = dari sudut pandang/perspektif ~. Sering dipakai dalam tulisan akademis dan diskusi.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "経済的な<b>観点</b>からこの政策を分析した。", "id": "Kebijakan ini dianalisis dari sudut pandang ekonomi.", "level": "n3", "tags": ["ekonomi-keuangan", "pikiran-opini"]},
-    {"jp": "異なる<b>観点</b>から問題を見ることが解決への鍵だ。", "id": "Melihat masalah dari sudut pandang yang berbeda adalah kunci pemecahannya.", "level": "n3", "tags": ["pikiran-opini", "ilmu-pengetahuan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00516"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
   "id": "vg-n3-00518",
   "word": "意図",
   "reading": "いと",
@@ -15473,202 +8806,6 @@ window.vocabN3 = [
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00519",
-  "word": "動機",
-  "reading": "どうき",
-  "romaji": "douki",
-  "meaning_id": "motivasi, dorongan, motif",
-  "meaning_en": "motive, motivation, incentive",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["pikiran-opini", "karakter", "hukum-aturan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "動機 adalah kekuatan/dorongan yang menggerakkan seseorang untuk bertindak — bisa internal (keinginan) atau eksternal (insentif). Berbeda dari 目的 yang merujuk pada tujuan/sasaran. Dalam konteks hukum, 動機 = motif kejahatan. 内発的動機 = motivasi intrinsik.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "日本語を勉強する<b>動機</b>は何ですか？", "id": "Apa motivasi Anda belajar bahasa Jepang?", "level": "n3", "tags": ["pendidikan", "bahasa-komunikasi"]},
-    {"jp": "犯行の<b>動機</b>はまだ明らかになっていない。", "id": "Motif kejahatan belum terungkap.", "level": "n3", "tags": ["hukum-aturan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00520",
-  "word": "原則",
-  "reading": "げんそく",
-  "romaji": "gensoku",
-  "meaning_id": "prinsip, asas, kaidah dasar",
-  "meaning_en": "principle, rule, fundamental",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["hukum-aturan", "pikiran-opini", "karakter"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "原則 adalah prinsip atau kaidah mendasar yang menjadi panduan — sifatnya lebih fleksibel dan normatif. Berbeda dari 規則 (きそく) yang merupakan aturan konkret yang harus dipatuhi. 原則として = pada prinsipnya/secara umum. 原則を守る = menjaga prinsip.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "会社の<b>原則</b>として、お客様を最優先にしています。", "id": "Sebagai prinsip perusahaan, kami mengutamakan pelanggan di atas segalanya.", "level": "n3", "tags": ["bisnis", "pekerjaan"]},
-    {"jp": "<b>原則</b>として、遅刻は認められていない。", "id": "Pada prinsipnya, keterlambatan tidak diizinkan.", "level": "n3", "tags": ["pendidikan", "hukum-aturan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00521",
-  "word": "価値観",
-  "reading": "かちかん",
-  "romaji": "kachikan",
-  "meaning_id": "nilai-nilai hidup, pandangan tentang nilai, sistem nilai",
-  "meaning_en": "values, sense of values, value system",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["karakter", "pikiran-opini", "budaya"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "価値観 adalah sistem nilai atau pandangan seseorang tentang apa yang penting/berharga dalam hidup — bersifat personal dan terbentuk dari budaya/pengalaman. Berbeda dari 価値 (かち) yang merujuk pada nilai/harga suatu hal spesifik. 価値観の違い = perbedaan nilai-nilai hidup.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "二人は<b>価値観</b>が合わないため別れた。", "id": "Keduanya berpisah karena nilai-nilai hidup mereka tidak cocok.", "level": "n3", "tags": ["percintaan", "karakter"]},
-    {"jp": "異なる文化の<b>価値観</b>を尊重することが大切だ。", "id": "Penting untuk menghormati nilai-nilai hidup dari budaya yang berbeda.", "level": "n3", "tags": ["budaya", "emosi-sosial"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00522",
-  "word": "限界",
-  "reading": "げんかい",
-  "romaji": "genkai",
-  "meaning_id": "batas, keterbatasan, titik akhir kemampuan",
-  "meaning_en": "limit, boundary, limitation",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["pikiran-opini", "hubungan-konsep", "karakter"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "限界 adalah batas alami atau inheren dari kemampuan, kapasitas, atau kondisi tertentu — sering berkonotasi pada batas yang tak bisa dilampaui. Berbeda dari 制限 (せいげん) yang merupakan pembatasan yang diterapkan dari luar. 限界を超える = melampaui batas. もう限界だ = sudah di batas kemampuan.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "人間の体にも<b>限界</b>があることを忘れないでほしい。", "id": "Tolong jangan lupa bahwa tubuh manusia juga memiliki keterbatasan.", "level": "n3", "tags": ["kesehatan", "karakter"]},
-    {"jp": "この仕事には私一人では<b>限界</b>がある。", "id": "Ada keterbatasan yang tidak bisa saya atasi sendiri dalam pekerjaan ini.", "level": "n3", "tags": ["pekerjaan", "hubungan-konsep"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00523",
-  "word": "能力",
-  "reading": "のうりょく",
-  "romaji": "nouryoku",
-  "meaning_id": "kemampuan, kapasitas, kompetensi",
-  "meaning_en": "ability, capacity, competence",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["karakter", "pendidikan", "pekerjaan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "能力 adalah kemampuan yang bisa diasah/dipelajari — mencakup keahlian teknis dan kapasitas umum. Berbeda dari 才能 (さいのう) yang merujuk pada bakat alami/bawaan. 能力がある/ない = mampu/tidak mampu. 能力を発揮する = menunjukkan kemampuan. 日本語能力試験 (JLPT) memakai kata ini.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "彼女はリーダーとしての<b>能力</b>に優れている。", "id": "Dia memiliki kemampuan kepemimpinan yang luar biasa.", "level": "n3", "tags": ["pekerjaan", "karakter"]},
-    {"jp": "自分の<b>能力</b>を信じて挑戦し続けることが大切だ。", "id": "Penting untuk terus menantang diri sambil percaya pada kemampuan sendiri.", "level": "n3", "tags": ["karakter", "pendidikan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00524",
-  "word": "成果",
-  "reading": "せいか",
-  "romaji": "seika",
-  "meaning_id": "hasil, capaian, buah kerja keras",
-  "meaning_en": "result, achievement, outcome (positive)",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["pekerjaan", "pendidikan", "sebab-akibat"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "成果 mengandung konotasi positif — hasil yang dicapai melalui usaha dan kerja keras. Berbeda dari 結果 (けっか) yang netral dan merujuk pada semua jenis hasil (baik/buruk). 成果を上げる = meraih/menunjukkan hasil. 研究成果 = hasil penelitian. Biasa dipakai dalam konteks profesional/akademis.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "一年間の努力の<b>成果</b>がやっと出てきた。", "id": "Hasil dari satu tahun kerja keras akhirnya mulai terlihat.", "level": "n3", "tags": ["pekerjaan", "karakter"]},
-    {"jp": "このプロジェクトで大きな<b>成果</b>を上げることができた。", "id": "Kami berhasil meraih hasil yang besar dalam proyek ini.", "level": "n3", "tags": ["bisnis", "pekerjaan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00525"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00525",
-  "word": "結論",
-  "reading": "けつろん",
-  "romaji": "ketsuron",
-  "meaning_id": "kesimpulan, konklusi",
-  "meaning_en": "conclusion, final judgment",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["pikiran-opini", "bahasa-komunikasi", "ilmu-pengetahuan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "結論 adalah kesimpulan logis yang dicapai melalui penalaran atau analisis — sering dipakai di akhir argumen, esai, atau penelitian. Berbeda dari 結果 (けっか) yang merujuk pada hasil faktual dari suatu proses/kejadian. 結論を出す = menarik kesimpulan. 結論として = sebagai kesimpulan.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "長い議論の末、ようやく<b>結論</b>が出た。", "id": "Setelah diskusi panjang, akhirnya kesimpulan pun diperoleh.", "level": "n3", "tags": ["pikiran-opini", "bahasa-komunikasi"]},
-    {"jp": "<b>結論</b>として、この方法が最も効果的だと言える。", "id": "Sebagai kesimpulan, dapat dikatakan bahwa metode ini paling efektif.", "level": "n3", "tags": ["ilmu-pengetahuan", "pendidikan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00524"],
   "provenance": "jlpt-corpus",
   "added_v": "v15"
 },
@@ -16513,484 +9650,6 @@ window.vocabN3 = [
   "added_v": "v15"
 },
 
-// ⚠️ FLAG: 自然 (vg-n3-00556) kemungkinan duplikat dengan vg-n3-00404 yang sudah ada di corpus. Mohon verifikasi oleh editor sebelum merge.
-
-{
-  "id": "vg-n3-00556",
-  "word": "自然",
-  "reading": "しぜん",
-  "romaji": "shizen",
-  "meaning_id": "alam, alam semesta; alami, natural",
-  "meaning_en": "nature; natural",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["alam-lingkungan", "ilmu-pengetahuan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Berfungsi sebagai kata benda (alam) dan な形容詞 (自然な = alami/natural). Berbeda dari 環境 (kankyō) yang mencakup lingkungan buatan manusia; 自然 merujuk khusus pada alam yang tidak disentuh manusia. 自然に = secara alami/dengan sendirinya.",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "日本には美しい<b>自然</b>がたくさん残っている。", "id": "Jepang masih memiliki banyak alam yang indah.", "level": "n3", "tags": ["alam-lingkungan", "budaya"]},
-    {"jp": "<b>自然</b>を守ることは私たちの責任だ。", "id": "Menjaga alam adalah tanggung jawab kita.", "level": "n3", "tags": ["alam-lingkungan", "politik-masyarakat"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00557"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00557",
-  "word": "環境",
-  "reading": "かんきょう",
-  "romaji": "kankyou",
-  "meaning_id": "lingkungan hidup, lingkungan sekitar",
-  "meaning_en": "environment, surroundings",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["alam-lingkungan", "politik-masyarakat"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Lebih luas dari 自然 — mencakup lingkungan alam maupun buatan manusia (lingkungan kerja, lingkungan sosial, lingkungan hidup). 環境問題 = masalah lingkungan. 環境省 = Kementerian Lingkungan Hidup Jepang. Kata ini sangat umum dalam konteks kebijakan publik dan berita.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "<b>環境</b>問題は世界中で深刻になっている。", "id": "Masalah lingkungan semakin serius di seluruh dunia.", "level": "n3", "tags": ["alam-lingkungan", "politik-masyarakat"]},
-    {"jp": "子どもは育つ<b>環境</b>に大きく影響される。", "id": "Anak-anak sangat dipengaruhi oleh lingkungan tempat mereka tumbuh.", "level": "n3", "tags": ["pendidikan", "keluarga"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00556", "vg-n3-00573"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00558",
-  "word": "生態系",
-  "reading": "せいたいけい",
-  "romaji": "seitaikei",
-  "meaning_id": "ekosistem",
-  "meaning_en": "ecosystem",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": false,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["alam-lingkungan", "ilmu-pengetahuan"],
-  "register": "formal",
-  "lawan_bicara": ["umum"],
-  "nuance": "Istilah ilmiah/akademis untuk ekosistem — jaringan makhluk hidup dan lingkungan fisiknya. Tidak punya kata lain yang sepadan; 生態系 adalah satu-satunya istilah untuk konsep ini dalam bahasa Jepang. Sering muncul dalam konteks berita lingkungan dan pelajaran IPA.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "海洋の<b>生態系</b>が汚染によって壊れつつある。", "id": "Ekosistem laut sedang mengalami kerusakan akibat polusi.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]},
-    {"jp": "外来種が<b>生態系</b>に影響を与えることがある。", "id": "Spesies invasif dapat memengaruhi ekosistem.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00578"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00559",
-  "word": "気候",
-  "reading": "きこう",
-  "romaji": "kikou",
-  "meaning_id": "iklim",
-  "meaning_en": "climate",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["alam-lingkungan", "ilmu-pengetahuan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Berbeda dari 天気 (tenki = cuaca harian yang berubah-ubah) — 気候 merujuk pada pola cuaca jangka panjang di suatu wilayah (iklim). 熱帯気候 = iklim tropis, 温帯気候 = iklim sedang. Pakai 気候 saat membahas karakteristik cuaca suatu daerah secara umum.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "日本は四季がはっきりした<b>気候</b>だ。", "id": "Jepang memiliki iklim dengan empat musim yang jelas.", "level": "n3", "tags": ["alam-lingkungan", "budaya"]},
-    {"jp": "<b>気候</b>変動は農業に大きな影響を与えている。", "id": "Perubahan iklim memberikan dampak besar pada pertanian.", "level": "n3", "tags": ["alam-lingkungan", "politik-masyarakat"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00560", "vg-n3-00575"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00560",
-  "word": "気温",
-  "reading": "きおん",
-  "romaji": "kion",
-  "meaning_id": "suhu udara, temperatur udara",
-  "meaning_en": "air temperature",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["alam-lingkungan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Khusus merujuk pada suhu udara di luar ruangan. Berbeda dari 温度 (ondo = suhu secara umum, termasuk suhu air, suhu badan, suhu ruangan) dan 体温 (taion = suhu tubuh). Selalu dipakai dalam laporan cuaca dan meteorologi.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "今日の<b>気温</b>は35度を超えた。", "id": "Suhu udara hari ini melampaui 35 derajat.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]},
-    {"jp": "夜になると<b>気温</b>が急に下がる。", "id": "Saat malam, suhu udara turun drastis.", "level": "n3", "tags": ["alam-lingkungan", "waktu"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00559", "vg-n3-00561"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00561",
-  "word": "湿度",
-  "reading": "しつど",
-  "romaji": "shitsudo",
-  "meaning_id": "kelembaban udara",
-  "meaning_en": "humidity",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["alam-lingkungan", "ilmu-pengetahuan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Kadar uap air di udara, dinyatakan dalam persen (%). 湿度が高い = kelembaban tinggi (lembab/pengap), 湿度が低い = kelembaban rendah (kering). Sering muncul bersama 気温 dalam ramalan cuaca. Musim panas Jepang terkenal dengan 気温も湿度も高い (panas dan lembab sekaligus).",
-  "conj_type": null,
-  "examples": [
-    {"jp": "梅雨の時期は<b>湿度</b>が高くて蒸し暑い。", "id": "Saat musim hujan, kelembaban tinggi dan udaranya pengap.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]},
-    {"jp": "<b>湿度</b>が低いと肌が乾燥しやすい。", "id": "Ketika kelembaban rendah, kulit mudah kering.", "level": "n3", "tags": ["kesehatan", "alam-lingkungan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00560"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00562",
-  "word": "台風",
-  "reading": "たいふう",
-  "romaji": "taifuu",
-  "meaning_id": "topan, badai siklon tropis",
-  "meaning_en": "typhoon",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["alam-lingkungan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Siklon tropis yang terbentuk di Samudra Pasifik Barat — setara dengan 'hurikan' (Atlantik) atau 'siklon' (Samudra Hindia). Jepang terdampak 台風 secara rutin setiap musim panas-gugur. Berbeda dari 嵐 (arashi = badai/angin kencang secara umum). Nomor台風 (misalnya 台風21号) dipakai untuk mengidentifikasi topan.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "<b>台風</b>が近づいているので、外出を控えてください。", "id": "Karena topan semakin mendekat, harap hindari bepergian keluar.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]},
-    {"jp": "<b>台風</b>の影響で電車が止まった。", "id": "Akibat topan, kereta berhenti beroperasi.", "level": "n3", "tags": ["alam-lingkungan", "perjalanan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00563", "vg-n3-00564"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00563",
-  "word": "地震",
-  "reading": "じしん",
-  "romaji": "jishin",
-  "meaning_id": "gempa bumi",
-  "meaning_en": "earthquake",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["alam-lingkungan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Jepang adalah salah satu negara paling aktif secara seismik di dunia, sehingga 地震 adalah kosakata yang sangat penting dalam kehidupan sehari-hari. Skala yang umum dipakai di Jepang adalah 震度 (shindo = intensitas) dan マグニチュード (magnitude). 大地震 (ōjishin) = gempa besar, 余震 (yoshin) = gempa susulan.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "昨夜、震度4の<b>地震</b>があった。", "id": "Semalam terjadi gempa bumi dengan intensitas 4.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]},
-    {"jp": "<b>地震</b>が起きたら、まず机の下に隠れてください。", "id": "Jika terjadi gempa, pertama-tama berlindunglah di bawah meja.", "level": "n3", "tags": ["alam-lingkungan", "hukum-aturan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00562", "vg-n3-00565"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00564",
-  "word": "洪水",
-  "reading": "こうずい",
-  "romaji": "kouzui",
-  "meaning_id": "banjir, banjir bandang",
-  "meaning_en": "flood",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["alam-lingkungan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Banjir skala besar akibat hujan lebat atau meluapnya sungai. Lebih serius dan berskala besar dari 浸水 (shinsui = terendam air, banjir genangan). 洪水 sering dipakai dalam berita bencana dan peringatan resmi. Juga dipakai secara kiasan: 情報の洪水 (banjir informasi = information overload).",
-  "conj_type": null,
-  "examples": [
-    {"jp": "大雨の影響で川が氾濫し、<b>洪水</b>が発生した。", "id": "Akibat hujan deras, sungai meluap dan terjadi banjir.", "level": "n3", "tags": ["alam-lingkungan", "politik-masyarakat"]},
-    {"jp": "<b>洪水</b>で多くの家が被害を受けた。", "id": "Banyak rumah yang mengalami kerusakan akibat banjir.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00562", "vg-n3-00572"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00565",
-  "word": "火山",
-  "reading": "かざん",
-  "romaji": "kazan",
-  "meaning_id": "gunung berapi, gunung api",
-  "meaning_en": "volcano",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["alam-lingkungan", "ilmu-pengetahuan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Gunung berapi dalam arti geologi. Jepang memiliki sekitar 110 gunung berapi aktif, termasuk Gunung Fuji (富士山). 活火山 (kakkuzan) = gunung berapi aktif, 休火山 (kyūkazan) = tidak aktif sementara, 死火山 (shikkazan) = gunung berapi mati. Berbeda dari 山 (yama) yang hanya berarti gunung biasa.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "日本には多くの<b>火山</b>があり、温泉も豊富だ。", "id": "Jepang memiliki banyak gunung berapi dan juga kaya akan sumber air panas.", "level": "n3", "tags": ["alam-lingkungan", "budaya"]},
-    {"jp": "<b>火山</b>が噴火して、周辺に避難指示が出た。", "id": "Gunung berapi meletus dan perintah evakuasi dikeluarkan untuk daerah sekitarnya.", "level": "n3", "tags": ["alam-lingkungan", "hukum-aturan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00563"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00566",
-  "word": "砂漠",
-  "reading": "さばく",
-  "romaji": "sabaku",
-  "meaning_id": "gurun pasir, gurun",
-  "meaning_en": "desert",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["alam-lingkungan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Wilayah kering dengan curah hujan sangat rendah, tidak harus berupa pasir — ada juga gurun berbatu (岩砂漠). Berbeda dari 荒野 (kōya = tanah gersang/tandus, padang terbuka). 砂漠化 (sabakuka) = desertifikasi/penggurunan, istilah penting dalam diskusi lingkungan hidup.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "サハラ<b>砂漠</b>は世界最大の熱帯砂漠だ。", "id": "Gurun Sahara adalah gurun panas terbesar di dunia.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]},
-    {"jp": "<b>砂漠</b>では昼と夜の気温差が大きい。", "id": "Di gurun, perbedaan suhu antara siang dan malam sangat besar.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00568"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00567",
-  "word": "森林",
-  "reading": "しんりん",
-  "romaji": "shinrin",
-  "meaning_id": "hutan (formal, tertulis)",
-  "meaning_en": "forest, woodland (formal)",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["alam-lingkungan", "ilmu-pengetahuan"],
-  "register": "formal",
-  "lawan_bicara": ["umum"],
-  "nuance": "Istilah resmi/formal untuk hutan, dipakai dalam dokumen pemerintah, laporan ilmiah, dan berita. Dalam percakapan sehari-hari, orang lebih sering memakai 森 (mori = hutan lebat) atau 林 (hayashi = hutan/semak kecil). 森林浴 (shinrinyoku = mandi hutan, forest bathing) adalah praktik populer di Jepang. 森林破壊 = deforestasi.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "<b>森林</b>の減少が地球温暖化を加速させている。", "id": "Berkurangnya hutan mempercepat pemanasan global.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]},
-    {"jp": "日本の国土の約67%が<b>森林</b>に覆われている。", "id": "Sekitar 67% wilayah daratan Jepang ditutupi hutan.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00558"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00568",
-  "word": "草原",
-  "reading": "そうげん",
-  "romaji": "sougen",
-  "meaning_id": "padang rumput, stepa, savana",
-  "meaning_en": "grassland, steppe, savanna",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": false,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["alam-lingkungan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Ada dua bacaan: そうげん (sōgen) untuk padang rumput luas/stepa dalam konteks geografi dan ilmu pengetahuan; くさはら (kusahara) untuk nuansa puitis/kasual, biasanya berarti ladang berumput kecil. Berbeda dari 野原 (nohara = ladang terbuka, padang luas) yang lebih kasual. Gunakan そうげん untuk konteks Afrika, Mongolia, atau diskusi geografi.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "モンゴルの<b>草原</b>には馬が自由に駆け回っている。", "id": "Kuda berlari bebas di padang rumput Mongolia.", "level": "n3", "tags": ["alam-lingkungan", "perjalanan"]},
-    {"jp": "アフリカの<b>草原</b>ではライオンやゾウが見られる。", "id": "Di savana Afrika, kita bisa melihat singa dan gajah.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00566", "vg-n3-00569"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00569",
-  "word": "平野",
-  "reading": "へいや",
-  "romaji": "heiya",
-  "meaning_id": "dataran rendah, lembah, dataran",
-  "meaning_en": "plain, flatland",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["alam-lingkungan", "ruang-arah"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Wilayah datar yang luas, biasanya subur dan cocok untuk pertanian. 関東平野 (Kantō Heiya) adalah dataran terbesar di Jepang. Berbeda dari 盆地 (bonchi = cekungan/basin yang dikelilingi pegunungan) dan 台地 (daichi = dataran tinggi/plateau). 平野 selalu mengacu pada dataran yang relatif rendah dan datar.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "関東<b>平野</b>には東京をはじめ多くの都市がある。", "id": "Di Dataran Kantō terdapat banyak kota termasuk Tokyo.", "level": "n3", "tags": ["alam-lingkungan", "ruang-arah"]},
-    {"jp": "<b>平野</b>部では農業が盛んに行われている。", "id": "Pertanian dilakukan secara aktif di daerah dataran.", "level": "n3", "tags": ["alam-lingkungan", "pekerjaan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00570"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00570",
-  "word": "山脈",
-  "reading": "さんみゃく",
-  "romaji": "sanmyaku",
-  "meaning_id": "pegunungan, rangkaian gunung",
-  "meaning_en": "mountain range",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": false,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["alam-lingkungan", "ruang-arah"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Rangkaian gunung yang berkesinambungan, bukan satu gunung tunggal. 山 (yama) = satu gunung; 山脈 = rangkaian gunung. Jepang memiliki 飛騨山脈 (Alpen Jepang Utara), 木曽山脈, dan 赤石山脈 — bersama disebut 日本アルプス. Sering dipakai dalam pelajaran geografi.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "日本アルプスは三つの<b>山脈</b>から成っている。", "id": "Alpen Jepang terdiri dari tiga rangkaian pegunungan.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]},
-    {"jp": "ヒマラヤ<b>山脈</b>には世界最高峰のエベレストがある。", "id": "Di Pegunungan Himalaya terdapat Gunung Everest, puncak tertinggi di dunia.", "level": "n3", "tags": ["alam-lingkungan", "perjalanan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00569"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00571",
-  "word": "海岸",
-  "reading": "かいがん",
-  "romaji": "kaigan",
-  "meaning_id": "pantai, pesisir",
-  "meaning_en": "coast, seashore",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["alam-lingkungan", "perjalanan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Pesisir pantai secara umum — area perbatasan antara daratan dan laut. Berbeda dari 浜 (hama = pantai berpasir, pantai untuk berenang, nuansa lebih santai) dan 砂浜 (sunahama = pantai berpasir). 海岸 lebih netral dan geografis. 海岸線 (kaigansen) = garis pantai.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "この<b>海岸</b>は夕日がとてもきれいだ。", "id": "Pantai ini sangat indah saat matahari terbenam.", "level": "n3", "tags": ["alam-lingkungan", "perjalanan"]},
-    {"jp": "<b>海岸</b>のゴミ拾い活動に参加した。", "id": "Aku ikut kegiatan memungut sampah di pantai.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00572"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00572",
-  "word": "河川",
-  "reading": "かせん",
-  "romaji": "kasen",
-  "meaning_id": "sungai (formal, tertulis)",
-  "meaning_en": "rivers and streams (formal)",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": false,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["alam-lingkungan", "hukum-aturan"],
-  "register": "formal",
-  "lawan_bicara": ["umum"],
-  "nuance": "Istilah formal untuk sungai, dipakai dalam undang-undang (河川法 = Undang-Undang Sungai), laporan resmi, dan dokumen pemerintah. Dalam percakapan sehari-hari, cukup pakai 川 (kawa). 河川 mencakup berbagai jenis aliran air (sungai besar maupun kecil). 河川敷 (kasenshiki) = bantaran sungai.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "<b>河川</b>の汚染を防ぐための法律が制定された。", "id": "Undang-undang untuk mencegah pencemaran sungai telah diberlakukan.", "level": "n3", "tags": ["alam-lingkungan", "hukum-aturan"]},
-    {"jp": "<b>河川</b>の氾濫により、住民が避難した。", "id": "Warga mengungsi akibat sungai meluap.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00564"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
 {
   "id": "vg-n3-00573",
   "word": "汚染",
@@ -17015,1238 +9674,6 @@ window.vocabN3 = [
   "synonyms": [],
   "antonyms": [],
   "see_also": ["vg-n3-00574", "vg-n3-00557"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00574",
-  "word": "排気ガス",
-  "reading": "はいきガス",
-  "romaji": "haiki gasu",
-  "meaning_id": "emisi gas buang, asap kendaraan, gas knalpot",
-  "meaning_en": "exhaust fumes, exhaust gas",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["alam-lingkungan", "teknologi"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Gas berbahaya yang dikeluarkan dari kendaraan bermotor atau mesin. 排気 = gas buang, ガス = gas (dari Belanda: gas). Berbeda dari 煙 (kemuri = asap) yang lebih umum. 排気ガス規制 = regulasi emisi. Topik ini sangat relevan dalam diskusi lingkungan dan kendaraan listrik (電気自動車) di Jepang.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "都市部では車の<b>排気ガス</b>による大気汚染が問題だ。", "id": "Di perkotaan, polusi udara akibat gas buang kendaraan menjadi masalah.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]},
-    {"jp": "電気自動車は<b>排気ガス</b>を出さないので環境に優しい。", "id": "Kendaraan listrik tidak menghasilkan gas buang sehingga ramah lingkungan.", "level": "n3", "tags": ["teknologi", "alam-lingkungan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00573", "vg-n3-00575"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00575",
-  "word": "温暖化",
-  "reading": "おんだんか",
-  "romaji": "ondanka",
-  "meaning_id": "pemanasan global",
-  "meaning_en": "global warming",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["alam-lingkungan", "politik-masyarakat"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Hampir selalu muncul dalam frasa 地球温暖化 (chikyū ondanka = pemanasan global). 温暖化 sendiri berarti 'penghangatan'. Istilah yang lebih luas adalah 気候変動 (kikou hendou = perubahan iklim) yang mencakup lebih dari sekadar kenaikan suhu. Dalam berita Jepang, kedua istilah ini sering dipakai bersamaan.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "地球<b>温暖化</b>が進むと、海面が上昇する可能性がある。", "id": "Jika pemanasan global terus berlanjut, permukaan laut berpotensi naik.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]},
-    {"jp": "<b>温暖化</b>対策として、再生可能エネルギーの普及が進んでいる。", "id": "Sebagai langkah mengatasi pemanasan global, penggunaan energi terbarukan semakin meluas.", "level": "n3", "tags": ["alam-lingkungan", "politik-masyarakat"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00559", "vg-n3-00576", "vg-n3-00577"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00576",
-  "word": "省エネ",
-  "reading": "しょうエネ",
-  "romaji": "shou ene",
-  "meaning_id": "hemat energi, efisiensi energi",
-  "meaning_en": "energy saving, energy efficiency",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 1,
-  "domain": ["alam-lingkungan", "kehidupan-sehari"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Singkatan dari 省エネルギー (shō enerugī). Sangat umum dalam percakapan sehari-hari dan iklan produk elektronik di Jepang. 省エネ家電 = peralatan rumah tangga hemat energi. Berbeda dari 節電 (setsuden = penghematan listrik, biasanya dalam konteks krisis/pemadaman). 省エネ lebih luas (hemat energi secara umum), 節電 lebih spesifik (hemat listrik).",
-  "conj_type": null,
-  "examples": [
-    {"jp": "新しい冷蔵庫は<b>省エネ</b>で電気代が安くなった。", "id": "Kulkas baru yang hemat energi membuat tagihan listrik jadi lebih murah.", "level": "n3", "tags": ["kehidupan-sehari", "ekonomi-keuangan"]},
-    {"jp": "<b>省エネ</b>のために、使わない部屋の電気は消しましょう。", "id": "Demi hemat energi, matikan lampu di ruangan yang tidak dipakai.", "level": "n3", "tags": ["kehidupan-sehari", "alam-lingkungan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00577", "vg-n3-00575"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00577",
-  "word": "再生可能",
-  "reading": "さいせいかのう",
-  "romaji": "saisei kanou",
-  "meaning_id": "terbarukan, dapat diperbarui",
-  "meaning_en": "renewable",
-  "jlpt": "n3",
-  "pos": "na-adj",
-  "common": false,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["alam-lingkungan", "ilmu-pengetahuan"],
-  "register": "formal",
-  "lawan_bicara": ["umum"],
-  "nuance": "Na-adjektiva yang hampir selalu muncul dalam frasa 再生可能エネルギー (saisei kanō enerugī = energi terbarukan): tenaga surya (太陽光), angin (風力), air (水力), dan sebagainya. Berbeda dari 再利用可能 (sairiyo kanō = dapat didaur ulang/dipakai ulang). 再生 = pemulihan/regenerasi, 可能 = memungkinkan/bisa.",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "<b>再生可能</b>エネルギーへの移行が世界的な課題だ。", "id": "Transisi ke energi terbarukan adalah tantangan global.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]},
-    {"jp": "太陽光発電は<b>再生可能</b>なエネルギー源の一つだ。", "id": "Pembangkit listrik tenaga surya adalah salah satu sumber energi terbarukan.", "level": "n3", "tags": ["alam-lingkungan", "teknologi"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00576", "vg-n3-00575"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00578",
-  "word": "生物",
-  "reading": "せいぶつ",
-  "romaji": "seibutsu",
-  "meaning_id": "organisme, makhluk hidup",
-  "meaning_en": "living thing, organism",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["ilmu-pengetahuan", "alam-lingkungan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Ada dua bacaan: せいぶつ (seibutsu) untuk istilah ilmiah/biologi (organisme); いきもの (ikimono) untuk percakapan sehari-hari yang lebih kasual (makhluk hidup, binatang). Pakai せいぶつ dalam konteks pelajaran sains, diskusi lingkungan, atau tulisan formal. 生物学 (seibutsugaku) = biologi.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "海には様々な<b>生物</b>が生息している。", "id": "Berbagai macam organisme hidup di lautan.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]},
-    {"jp": "<b>生物</b>の多様性を守ることが重要だ。", "id": "Menjaga keanekaragaman hayati adalah hal yang penting.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00579", "vg-n3-00580", "vg-n3-00581"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00579",
-  "word": "植物",
-  "reading": "しょくぶつ",
-  "romaji": "shokubutsu",
-  "meaning_id": "tumbuhan, tanaman",
-  "meaning_en": "plant, vegetation",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["alam-lingkungan", "ilmu-pengetahuan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Istilah ilmiah dan sehari-hari untuk semua jenis tumbuhan. Berbeda dari 草 (kusa = rumput/tanaman kecil) dan 木 (ki = pohon) yang lebih spesifik. 植物園 (shokubutsuen) = kebun botani. Pasangan alaminya adalah 動物 (dōbutsu = hewan). 植物性 (shokubutsusei) = nabati/berbasis tumbuhan.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "<b>植物</b>は光合成によって酸素を作り出す。", "id": "Tumbuhan menghasilkan oksigen melalui fotosintesis.", "level": "n3", "tags": ["ilmu-pengetahuan", "alam-lingkungan"]},
-    {"jp": "熱帯雨林には多様な<b>植物</b>が生えている。", "id": "Berbagai jenis tumbuhan tumbuh di hutan hujan tropis.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00578", "vg-n3-00580"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00580",
-  "word": "動物",
-  "reading": "どうぶつ",
-  "romaji": "doubutsu",
-  "meaning_id": "hewan, binatang",
-  "meaning_en": "animal",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 1,
-  "domain": ["alam-lingkungan", "ilmu-pengetahuan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Kata yang sangat umum untuk semua jenis hewan. 動物園 (dōbutsuen) = kebun binatang. Secara teknis, manusia juga termasuk 動物, namun dalam percakapan sehari-hari 動物 biasanya merujuk pada hewan bukan manusia. Berbeda dari 獣 (kemono = binatang buas/liar, nuansa negatif) dan 生き物/いきもの (ikimono = makhluk hidup, mencakup hewan dan tumbuhan).",
-  "conj_type": null,
-  "examples": [
-    {"jp": "子どもが<b>動物</b>園でライオンを見て喜んだ。", "id": "Anak itu senang melihat singa di kebun binatang.", "level": "n3", "tags": ["alam-lingkungan", "keluarga"]},
-    {"jp": "野生<b>動物</b>の保護が急務となっている。", "id": "Perlindungan hewan liar menjadi hal yang mendesak.", "level": "n3", "tags": ["alam-lingkungan", "politik-masyarakat"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00578", "vg-n3-00579"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00581",
-  "word": "微生物",
-  "reading": "びせいぶつ",
-  "romaji": "biseibutsu",
-  "meaning_id": "mikroorganisme, mikroba",
-  "meaning_en": "microorganism, microbe",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": false,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["ilmu-pengetahuan", "kesehatan"],
-  "register": "formal",
-  "lawan_bicara": ["umum"],
-  "nuance": "Organisme hidup yang tidak bisa dilihat dengan mata telanjang: bakteri (細菌), virus (ウイルス), jamur (菌類), dll. 微 = kecil/mikro, 生物 = makhluk hidup. Berbeda dari 細菌 (saikin = bakteri, lebih spesifik) dan ウイルス (uirusu = virus, kata serapan). 微生物 adalah istilah payung yang mencakup semuanya.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "土の中には無数の<b>微生物</b>が存在する。", "id": "Di dalam tanah terdapat tak terhitung banyaknya mikroorganisme.", "level": "n3", "tags": ["ilmu-pengetahuan", "alam-lingkungan"]},
-    {"jp": "<b>微生物</b>の中には人間に役立つものも多い。", "id": "Di antara mikroorganisme, banyak yang bermanfaat bagi manusia.", "level": "n3", "tags": ["ilmu-pengetahuan", "kesehatan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00578", "vg-n3-00583"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00582",
-  "word": "遺伝子",
-  "reading": "いでんし",
-  "romaji": "idenshi",
-  "meaning_id": "gen, materi genetik",
-  "meaning_en": "gene",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": false,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["ilmu-pengetahuan"],
-  "register": "formal",
-  "lawan_bicara": ["umum"],
-  "nuance": "Unit dasar pewarisan sifat yang tersimpan dalam DNA. 遺伝 (iden) = pewarisan genetik/keturunan, 子 (shi) = partikel/elemen kecil. Berbeda dari DNA (ディーエヌエー, dipakai langsung sebagai kata serapan) yang merujuk pada molekulnya. 遺伝子組み換え (idenshi kumikae) = rekayasa genetika. Topik ini sering muncul dalam berita sains dan diskusi etika.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "<b>遺伝子</b>の研究により、多くの病気の原因が解明された。", "id": "Berkat penelitian gen, penyebab banyak penyakit berhasil diungkap.", "level": "n3", "tags": ["ilmu-pengetahuan", "kesehatan"]},
-    {"jp": "<b>遺伝子</b>組み換え食品には賛否両論がある。", "id": "Ada pro dan kontra mengenai makanan hasil rekayasa genetika.", "level": "n3", "tags": ["ilmu-pengetahuan", "makanan-minuman"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00583"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00583",
-  "word": "細胞",
-  "reading": "さいぼう",
-  "romaji": "saibou",
-  "meaning_id": "sel (biologi), sel tubuh",
-  "meaning_en": "cell (biology)",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": false,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["ilmu-pengetahuan", "kesehatan"],
-  "register": "formal",
-  "lawan_bicara": ["umum"],
-  "nuance": "Unit dasar kehidupan dalam biologi. 細 = halus/kecil, 胞 = kantong/rongga. Berbeda dari 細菌 (saikin = bakteri) meski berbagi kanji 細. 細胞分裂 (saibou bunretsu) = pembelahan sel, 幹細胞 (kan saibō) = sel induk/stem cell. Dalam berita medis Jepang, istilah ini sering muncul terkait kanker (がん細胞) dan penelitian medis.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "人間の体は約37兆個の<b>細胞</b>でできている。", "id": "Tubuh manusia tersusun dari sekitar 37 triliun sel.", "level": "n3", "tags": ["ilmu-pengetahuan", "kesehatan"]},
-    {"jp": "<b>細胞</b>の中にはDNAが含まれている。", "id": "Di dalam sel terkandung DNA.", "level": "n3", "tags": ["ilmu-pengetahuan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00582", "vg-n3-00581"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00584",
-  "word": "化学",
-  "reading": "かがく",
-  "romaji": "kagaku",
-  "meaning_id": "kimia, ilmu kimia",
-  "meaning_en": "chemistry",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["ilmu-pengetahuan", "pendidikan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "⚠️ PERHATIAN HOMOFON: 化学 (かがく, kagaku = kimia) dan 科学 (かがく, kagaku = sains/ilmu pengetahuan) diucapkan persis sama! Dalam tulisan mudah dibedakan lewat kanji, tapi dalam percakapan lisan perlu konteks. 化学式 (kagakushiki) = rumus kimia, 化学反応 (kagaku hannō) = reaksi kimia. Pasangan alaminya adalah 物理 (butsuri = fisika).",
-  "conj_type": null,
-  "examples": [
-    {"jp": "高校では<b>化学</b>が得意だった。", "id": "Waktu SMA, aku pintar dalam pelajaran kimia.", "level": "n3", "tags": ["pendidikan", "ilmu-pengetahuan"]},
-    {"jp": "<b>化学</b>の実験で新しい物質が発見された。", "id": "Zat baru ditemukan dalam eksperimen kimia.", "level": "n3", "tags": ["ilmu-pengetahuan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00585"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00585",
-  "word": "物理",
-  "reading": "ぶつり",
-  "romaji": "butsuri",
-  "meaning_id": "fisika, ilmu fisika",
-  "meaning_en": "physics",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["ilmu-pengetahuan", "pendidikan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Bentuk pendek dari 物理学 (butsurigaku = fisika sebagai disiplin ilmu penuh). 物理 dipakai dalam konteks sekolah dan percakapan sehari-hari: 物理の授業 (pelajaran fisika), 物理が苦手 (tidak pandai fisika). 物理的 (butsuri-teki) = secara fisik/fisik (berbeda dari 精神的 = secara mental). Berbeda dari 化学 (kimia) yang mengkaji komposisi zat.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "<b>物理</b>の授業でニュートンの法則を習った。", "id": "Di pelajaran fisika, aku mempelajari hukum Newton.", "level": "n3", "tags": ["pendidikan", "ilmu-pengetahuan"]},
-    {"jp": "<b>物理</b>的に不可能なことを要求しないでください。", "id": "Tolong jangan meminta hal yang secara fisik tidak mungkin.", "level": "n3", "tags": ["kehidupan-sehari", "pekerjaan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": ["vg-n3-00584"],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00586",
-  "word": "つまり",
-  "reading": "つまり",
-  "romaji": "tsumari",
-  "meaning_id": "artinya, dengan kata lain, singkatnya",
-  "meaning_en": "in other words, that is to say, in short",
-  "jlpt": "n3",
-  "pos": "adverb-conjunctive",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["bahasa-komunikasi", "pikiran-opini"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Digunakan untuk menyimpulkan atau menjelaskan ulang dengan kata-kata yang lebih sederhana. Lebih kasual dan lisan dibanding すなわち — dalam percakapan sehari-hari, つまり jauh lebih lazim. Sering muncul ketika pembicara ingin memastikan pendengar memahami poin utama.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "彼は毎日練習している。<b>つまり</b>、本気でプロを目指しているんだ。", "id": "Dia berlatih setiap hari. Artinya, dia benar-benar ingin menjadi profesional.", "level": "n3", "tags": ["pikiran-opini", "bahasa-komunikasi"]},
-    {"jp": "今日は財布を忘れた。<b>つまり</b>、お金が一円もないってことだ。", "id": "Hari ini aku lupa bawa dompet. Dengan kata lain, aku tidak punya uang sama sekali.", "level": "n3", "tags": ["kehidupan-sehari", "bahasa-komunikasi"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00587",
-  "word": "すなわち",
-  "reading": "すなわち",
-  "romaji": "sunawachi",
-  "meaning_id": "yakni, yaitu, dengan kata lain (formal)",
-  "meaning_en": "namely, that is, i.e. (formal)",
-  "jlpt": "n3",
-  "pos": "adverb-conjunctive",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 4,
-  "domain": ["bahasa-komunikasi", "pikiran-opini"],
-  "register": "formal",
-  "lawan_bicara": ["umum"],
-  "nuance": "Padanan formal/tulisan dari つまり. Sering muncul dalam teks akademik, hukum, atau berita — jarang digunakan dalam percakapan santai. Selain menyimpulkan, すなわち juga bisa memperkenalkan istilah atau definisi teknis (mis. 'Ini disebut X, yakni すなわち Y').",
-  "conj_type": null,
-  "examples": [
-    {"jp": "この条約は両国の合意に基づく。<b>すなわち</b>、どちらの国も同意した上で締結されたのだ。", "id": "Perjanjian ini didasarkan pada kesepakatan kedua negara. Yakni, perjanjian ini disepakati oleh kedua pihak.", "level": "n3", "tags": ["hukum-aturan", "politik-masyarakat"]},
-    {"jp": "彼女は本校の創設者の孫、<b>すなわち</b>田中家の最後の子孫だ。", "id": "Dia adalah cucu pendiri sekolah ini, yaitu keturunan terakhir keluarga Tanaka.", "level": "n3", "tags": ["pendidikan", "bahasa-komunikasi"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00588",
-  "word": "たとえば",
-  "reading": "たとえば",
-  "romaji": "tatoeba",
-  "meaning_id": "misalnya, contohnya, seperti",
-  "meaning_en": "for example, for instance",
-  "jlpt": "n3",
-  "pos": "adverb-conjunctive",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["bahasa-komunikasi", "pendidikan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Digunakan untuk memberikan contoh konkret dari pernyataan umum sebelumnya. Berbeda dari つまり (yang menyimpulkan) atau すなわち (yang mendefinisikan) — たとえば selalu memperkenalkan contoh ilustratif. Bisa ditulis 例えば dengan kanji.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "日本の伝統文化はたくさんある。<b>たとえば</b>、茶道や生け花などが有名だ。", "id": "Ada banyak budaya tradisional Jepang. Misalnya, upacara minum teh dan merangkai bunga sangat terkenal.", "level": "n3", "tags": ["budaya", "bahasa-komunikasi"]},
-    {"jp": "健康のためにできることはいろいろある。<b>たとえば</b>、毎日散歩することや野菜を多く食べることだ。", "id": "Ada berbagai hal yang bisa dilakukan untuk kesehatan. Contohnya, berjalan kaki setiap hari dan makan banyak sayuran.", "level": "n3", "tags": ["kesehatan", "kehidupan-sehari"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00589",
-  "word": "一方",
-  "reading": "いっぽう",
-  "romaji": "ippou",
-  "meaning_id": "di satu sisi, sebaliknya, sementara itu",
-  "meaning_en": "on the other hand, meanwhile, while",
-  "jlpt": "n3",
-  "pos": "conjunction",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["bahasa-komunikasi", "pikiran-opini"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Berdiri sendiri sebagai konjungsi antar kalimat untuk memperkenalkan sudut pandang yang kontras atau situasi yang berlangsung bersamaan. Berbeda dari 一方で yang melekat di tengah kalimat — 一方 (sendiri) lebih sering memulai kalimat baru dalam teks berita atau esai formal.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "都市部では人口が増えている。<b>一方</b>、農村部では過疎化が進んでいる。", "id": "Di daerah perkotaan, populasi meningkat. Sebaliknya, di pedesaan depopulasi terus berlanjut.", "level": "n3", "tags": ["politik-masyarakat", "pikiran-opini"]},
-    {"jp": "兄は理系が得意だ。<b>一方</b>、妹は文系に向いている。", "id": "Kakak laki-laki pandai di bidang sains. Di satu sisi, adik perempuan lebih cocok di bidang humaniora.", "level": "n3", "tags": ["pendidikan", "keluarga"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00590",
-  "word": "一方で",
-  "reading": "いっぽうで",
-  "romaji": "ippou de",
-  "meaning_id": "sementara itu, di sisi lain, di samping itu",
-  "meaning_en": "while, on the other hand, at the same time",
-  "jlpt": "n3",
-  "pos": "expression",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["bahasa-komunikasi", "pikiran-opini"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Menekankan dua hal yang terjadi secara bersamaan atau dua aspek yang berbeda dari subjek yang sama. Berbeda dari 一方 (sendiri) yang lebih sering memulai kalimat baru — 一方で dapat melekat langsung pada frasa sebelumnya dalam satu kalimat, menyoroti kontras atau simultan.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "彼女は仕事を続ける<b>一方で</b>、子育てにも全力を注いでいる。", "id": "Dia terus bekerja, sementara di sisi lain juga mencurahkan sepenuh hati untuk membesarkan anak.", "level": "n3", "tags": ["pekerjaan", "keluarga"]},
-    {"jp": "SNSは人々をつなげる<b>一方で</b>、孤独を深めることもある。", "id": "Media sosial menghubungkan orang-orang, sementara di sisi lain juga bisa memperburuk rasa kesepian.", "level": "n3", "tags": ["teknologi", "emosi"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00591",
-  "word": "それに対して",
-  "reading": "それにたいして",
-  "romaji": "sore ni taishite",
-  "meaning_id": "sebagai perbandingan, berbeda dengan itu, di sisi lain",
-  "meaning_en": "in contrast to that, on the other hand, compared to that",
-  "jlpt": "n3",
-  "pos": "expression",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["bahasa-komunikasi", "pikiran-opini"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Menyoroti kontras yang lebih eksplisit dan langsung dibanding 一方 — secara harfiah 'terhadap itu'. Biasanya digunakan ketika dua hal sudah disebutkan sebelumnya dan pembicara ingin membandingkan keduanya secara tegas. Lebih terstruktur dari 一方 dan lebih to-the-point dari しかし.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "A社の製品は安いが品質が低い。<b>それに対して</b>、B社は高くても長持ちする。", "id": "Produk perusahaan A murah tapi kualitasnya rendah. Sebagai perbandingan, perusahaan B mahal tapi tahan lama.", "level": "n3", "tags": ["bisnis", "pikiran-opini"]},
-    {"jp": "春は花が咲いて明るい。<b>それに対して</b>、冬は枯れ木ばかりで寂しい感じがする。", "id": "Musim semi cerah dengan bunga bermekaran. Berbeda dengan itu, musim dingin terasa sepi dengan pohon-pohon gundul.", "level": "n3", "tags": ["alam-lingkungan", "emosi"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00592",
-  "word": "その結果",
-  "reading": "そのけっか",
-  "romaji": "sono kekka",
-  "meaning_id": "akibatnya, hasilnya, sebagai hasilnya",
-  "meaning_en": "as a result, consequently",
-  "jlpt": "n3",
-  "pos": "expression",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["bahasa-komunikasi", "sebab-akibat"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Menyatakan hasil/akibat dari tindakan atau kejadian yang disebutkan sebelumnya — fokus pada outcome nyata. Berbeda dari したがって yang menarik kesimpulan logis, その結果 menekankan apa yang benar-benar terjadi setelah suatu proses atau usaha. Cocok untuk laporan dan narasi.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "毎日一時間ずつ練習した。<b>その結果</b>、大会で優勝することができた。", "id": "Aku berlatih satu jam setiap hari. Hasilnya, aku berhasil memenangkan kompetisi.", "level": "n3", "tags": ["olahraga", "sebab-akibat"]},
-    {"jp": "工場からの排水が川に流れ込んだ。<b>その結果</b>、川の魚が大量に死んだ。", "id": "Limbah pabrik mengalir ke sungai. Akibatnya, ikan di sungai mati dalam jumlah besar.", "level": "n3", "tags": ["alam-lingkungan", "sebab-akibat"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00593",
-  "word": "したがって",
-  "reading": "したがって",
-  "romaji": "shitagatte",
-  "meaning_id": "oleh karena itu, maka, dengan demikian (formal)",
-  "meaning_en": "therefore, consequently, thus (formal)",
-  "jlpt": "n3",
-  "pos": "adverb-conjunctive",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 4,
-  "domain": ["bahasa-komunikasi", "sebab-akibat"],
-  "register": "formal",
-  "lawan_bicara": ["umum"],
-  "nuance": "Menarik kesimpulan logis dari premis yang sudah disebutkan — lebih menekankan penalaran deduktif daripada の結果 yang menyatakan fakta hasil. Formal dan sering digunakan dalam tulisan akademik atau pidato resmi. Dalam percakapan biasa, diganti dengan だから atau そのため.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "このデータは信頼性が低い。<b>したがって</b>、この研究結果は参考程度にとどめるべきだ。", "id": "Data ini memiliki tingkat keandalan yang rendah. Oleh karena itu, hasil penelitian ini seharusnya hanya dijadikan referensi.", "level": "n3", "tags": ["ilmu-pengetahuan", "sebab-akibat"]},
-    {"jp": "規則違反が確認された。<b>したがって</b>、該当者には処分が下された。", "id": "Pelanggaran aturan telah dikonfirmasi. Dengan demikian, sanksi dijatuhkan kepada yang bersangkutan.", "level": "n3", "tags": ["hukum-aturan", "pekerjaan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00594",
-  "word": "それゆえ",
-  "reading": "それゆえ",
-  "romaji": "soreyue",
-  "meaning_id": "oleh karena itu, maka dari itu (formal/tulisan)",
-  "meaning_en": "for that reason, therefore (formal/literary)",
-  "jlpt": "n3",
-  "pos": "adverb-conjunctive",
-  "common": false,
-  "related_grammar": [],
-  "formalitas": 5,
-  "domain": ["bahasa-komunikasi", "sebab-akibat"],
-  "register": "formal",
-  "lawan_bicara": ["umum"],
-  "nuance": "Lebih formal dan bernuansa sastra dibanding したがって — jarang dipakai dalam percakapan atau tulisan informal. Sering dijumpai dalam filsafat, puisi, atau teks klasik. Juga bisa ditulis それ故 atau それゆえに. Dalam konteks modern, したがって atau そのため lebih umum.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "我思う、<b>それゆえ</b>我あり。", "id": "Aku berpikir, maka dari itu aku ada. (Cogito ergo sum)", "level": "n3", "tags": ["ilmu-pengetahuan", "klasik"]},
-    {"jp": "彼は幼い頃から貧しかった。<b>それゆえ</b>、努力の大切さを誰よりも知っていた。", "id": "Sejak kecil dia hidup dalam kemiskinan. Oleh karena itu, dia lebih dari siapapun memahami pentingnya kerja keras.", "level": "n3", "tags": ["karakter", "sebab-akibat"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00595",
-  "word": "なぜなら",
-  "reading": "なぜなら",
-  "romaji": "nazenara",
-  "meaning_id": "karena, sebab (menjelaskan alasan setelah pernyataan)",
-  "meaning_en": "because, the reason is that",
-  "jlpt": "n3",
-  "pos": "conjunction",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["bahasa-komunikasi", "sebab-akibat"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Unik karena urutan logikanya terbalik dari bahasa Indonesia — pernyataan dulu, baru なぜなら menjelaskan alasannya. Biasanya diakhiri dengan ～から atau ～からだ. Lebih formal dari だって tapi lebih kasual dari したがって. Memberikan penekanan retoris yang kuat pada penjelasan.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "私はその映画を見ない。<b>なぜなら</b>、ホラーが苦手だからだ。", "id": "Aku tidak akan menonton film itu. Karena aku tidak suka film horor.", "level": "n3", "tags": ["hiburan", "bahasa-komunikasi"]},
-    {"jp": "この計画は成功する。<b>なぜなら</b>、チーム全員が本気で取り組んでいるからだ。", "id": "Rencana ini akan berhasil. Sebab seluruh anggota tim bekerja dengan sepenuh hati.", "level": "n3", "tags": ["pekerjaan", "sebab-akibat"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00596",
-  "word": "ところが",
-  "reading": "ところが",
-  "romaji": "tokoroga",
-  "meaning_id": "namun, akan tetapi (kontras tak terduga)",
-  "meaning_en": "however, but (unexpected contrast)",
-  "jlpt": "n3",
-  "pos": "conjunction",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["bahasa-komunikasi", "pikiran-opini"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Berbeda dari しかし atau でも — ところが secara khusus menyiratkan bahwa hasil atau keadaan selanjutnya adalah kejutan atau kebalikan dari yang diharapkan. Pembicara biasanya sudah memiliki ekspektasi tertentu, lalu ところが membalikkannya. Tidak bisa dipakai untuk kontras netral biasa.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "試験は簡単だと思っていた。<b>ところが</b>、実際にはとても難しかった。", "id": "Aku pikir ujiannya mudah. Namun ternyata, itu sangat sulit.", "level": "n3", "tags": ["pendidikan", "emosi"]},
-    {"jp": "傘を持って出かけた。<b>ところが</b>、一日中晴れていた。", "id": "Aku keluar membawa payung. Akan tetapi, cuaca cerah sepanjang hari.", "level": "n3", "tags": ["kehidupan-sehari", "emosi"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00597",
-  "word": "それにもかかわらず",
-  "reading": "それにもかかわらず",
-  "romaji": "sore ni mo kakawarazu",
-  "meaning_id": "meskipun demikian, terlepas dari itu, walaupun begitu",
-  "meaning_en": "nevertheless, despite that, in spite of that",
-  "jlpt": "n3",
-  "pos": "expression",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 4,
-  "domain": ["bahasa-komunikasi", "pikiran-opini"],
-  "register": "formal",
-  "lawan_bicara": ["umum"],
-  "nuance": "Lebih kuat dan formal dari でも atau しかし — menekankan bahwa sesuatu terjadi atau dilakukan 'terlepas dari' hambatan yang jelas. Sering dipakai dalam konteks yang serius seperti debat, esai, berita. Versi kasualnya adalah それでも. かかわらず berasal dari 関わる (terkait/terpengaruh) + ず (negasi).",
-  "conj_type": null,
-  "examples": [
-    {"jp": "医師に安静にするよう言われた。<b>それにもかかわらず</b>、彼は仕事に復帰した。", "id": "Dokter menyuruhnya beristirahat. Meskipun demikian, dia kembali bekerja.", "level": "n3", "tags": ["kesehatan", "pekerjaan"]},
-    {"jp": "多くの困難があった。<b>それにもかかわらず</b>、チームは目標を達成した。", "id": "Ada banyak kesulitan. Terlepas dari itu, tim berhasil mencapai tujuannya.", "level": "n3", "tags": ["pekerjaan", "karakter"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00598",
-  "word": "加えて",
-  "reading": "くわえて",
-  "romaji": "kuwaete",
-  "meaning_id": "ditambah lagi, selain itu, lebih dari itu",
-  "meaning_en": "in addition, furthermore, on top of that",
-  "jlpt": "n3",
-  "pos": "adverb-conjunctive",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["bahasa-komunikasi", "pikiran-opini"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Menambahkan poin baru yang sifatnya sejajar atau bahkan lebih berat dari poin sebelumnya. Berbeda dari さらに yang bisa memperkuat/mengintensifikasi — 加えて lebih bersifat 'menambahkan item baru' ke dalam daftar argumen. Lebih formal dari それに dan cocok untuk laporan atau pidato.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "この地域は交通の便が良い。<b>加えて</b>、スーパーや病院も近くにある。", "id": "Kawasan ini aksesibel secara transportasi. Ditambah lagi, supermarket dan rumah sakit juga dekat.", "level": "n3", "tags": ["kehidupan-sehari", "perjalanan"]},
-    {"jp": "彼女は英語が話せる。<b>加えて</b>、中国語とスペイン語も堪能だ。", "id": "Dia bisa berbicara bahasa Inggris. Selain itu, dia juga fasih berbahasa Mandarin dan Spanyol.", "level": "n3", "tags": ["pendidikan", "bahasa-komunikasi"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00599",
-  "word": "さらに",
-  "reading": "さらに",
-  "romaji": "sara ni",
-  "meaning_id": "lebih jauh lagi, bahkan, semakin, di samping itu",
-  "meaning_en": "furthermore, even more, additionally",
-  "jlpt": "n3",
-  "pos": "adverb-conjunctive",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["bahasa-komunikasi", "pikiran-opini"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Bisa berfungsi ganda: menambahkan informasi baru (= 加えて) sekaligus mengintensifikasi (= 'semakin/bahkan lebih'). さらに 悪化する = 'semakin memburuk'. 加えて tidak bisa menggantikan fungsi intensifikasi ini. Serba guna dan cocok untuk tulisan maupun percakapan formal.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "気温が下がった。<b>さらに</b>、雪まで降り始めた。", "id": "Suhu turun. Bahkan, salju pun mulai turun.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]},
-    {"jp": "練習を続けることで、技術は<b>さらに</b>向上するだろう。", "id": "Dengan terus berlatih, kemampuanmu akan semakin meningkat.", "level": "n3", "tags": ["pendidikan", "karakter"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00600",
-  "word": "むしろ",
-  "reading": "むしろ",
-  "romaji": "mushiro",
-  "meaning_id": "justru, malah, lebih baik, sebaliknya",
-  "meaning_en": "rather, instead, on the contrary",
-  "jlpt": "n3",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["pikiran-opini", "bahasa-komunikasi"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Menyatakan bahwa pilihan atau deskripsi yang lebih tepat adalah kebalikan atau alternatif dari yang disebutkan. Berbeda dari いっそ yang menyarankan tindakan radikal — むしろ lebih sering digunakan untuk koreksi persepsi atau preferensi halus ('justru ini yang lebih akurat/baik').",
-  "conj_type": null,
-  "examples": [
-    {"jp": "彼は頭が悪いのではなく、<b>むしろ</b>努力が足りないのだ。", "id": "Bukan karena dia tidak pintar — justru karena usahanya kurang.", "level": "n3", "tags": ["pikiran-opini", "karakter"]},
-    {"jp": "暑い日は冷たい飲み物より、<b>むしろ</b>温かいお茶の方が体にいいらしい。", "id": "Di hari yang panas, katanya minuman hangat seperti teh justru lebih baik untuk tubuh daripada minuman dingin.", "level": "n3", "tags": ["kesehatan", "makanan-minuman"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00601",
-  "word": "やはり",
-  "reading": "やはり",
-  "romaji": "yahari",
-  "meaning_id": "memang, seperti yang diperkirakan, tetap saja",
-  "meaning_en": "as expected, sure enough, after all, still",
-  "jlpt": "n3",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["pikiran-opini", "emosi"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Menyatakan bahwa hasil atau keadaan sesuai dengan ekspektasi atau prediksi awal. Versi kasualnya adalah やっぱり — keduanya memiliki makna sama tapi やはり lebih sopan dan digunakan dalam tulisan atau percakapan formal. Juga bisa berarti 'tetap saja' ketika seseorang kembali ke pilihan semula.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "彼が優勝すると思っていたが、<b>やはり</b>その通りになった。", "id": "Aku pikir dia akan menang, dan memang benar demikianlah yang terjadi.", "level": "n3", "tags": ["olahraga", "emosi"]},
-    {"jp": "いろいろ試したけど、<b>やはり</b>ご飯は日本米が一番おいしい。", "id": "Sudah mencoba berbagai macam, tapi memang nasi dari beras Jepang tetap yang paling enak.", "level": "n3", "tags": ["makanan-minuman", "pikiran-opini"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00602",
-  "word": "どうも",
-  "reading": "どうも",
-  "romaji": "doumo",
-  "meaning_id": "entah kenapa, sepertinya, tampaknya (tidak pasti)",
-  "meaning_en": "somehow, it seems, for some reason (vague)",
-  "jlpt": "n3",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 1,
-  "domain": ["pikiran-opini", "bahasa-komunikasi"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Mengungkapkan kesan atau dugaan yang tidak sepenuhnya yakin — ada rasa ketidakpastian atau kebingungan ringan. Berbeda dari なぜか yang fokus pada ketidaktahuan alasan, どうも lebih menyiratkan 'ada sesuatu yang terasa kurang tepat meski sulit dijelaskan'. Juga bisa berarti 'terima kasih' atau salam informal.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "あの店は<b>どうも</b>好きになれない。理由はよくわからないけど。", "id": "Entah kenapa aku tidak bisa menyukai toko itu. Tidak tahu pasti alasannya.", "level": "n3", "tags": ["emosi", "kehidupan-sehari"]},
-    {"jp": "今日は<b>どうも</b>調子が悪い気がする。", "id": "Entah kenapa, hari ini rasanya badanku tidak fit.", "level": "n3", "tags": ["kesehatan", "emosi"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00603",
-  "word": "なぜか",
-  "reading": "なぜか",
-  "romaji": "naze ka",
-  "meaning_id": "entah kenapa, tidak tahu kenapa, tanpa alasan yang jelas",
-  "meaning_en": "for some reason, somehow (unknown reason)",
-  "jlpt": "n3",
-  "pos": "expression",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["pikiran-opini", "emosi"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Berbeda dari どうも yang menyiratkan kesan samar — なぜか lebih tegas menyatakan bahwa pembicara tidak mengetahui atau tidak bisa menjelaskan alasannya. Bisa muncul di awal kalimat (なぜか悲しくなった) atau di tengah. Juga bisa dipakai retoris untuk efek naratif.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "<b>なぜか</b>、その曲を聴くと昔のことを思い出してしまう。", "id": "Entah kenapa, saat mendengar lagu itu aku selalu teringat masa lalu.", "level": "n3", "tags": ["emosi", "hiburan"]},
-    {"jp": "彼女に会うと<b>なぜか</b>緊張する。自分でもよくわからない。", "id": "Entah kenapa aku selalu gugup kalau bertemu dengannya. Aku sendiri pun tidak mengerti.", "level": "n3", "tags": ["emosi", "percintaan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00604",
-  "word": "いわば",
-  "reading": "いわば",
-  "romaji": "iwaba",
-  "meaning_id": "ibarat, boleh dibilang, seperti halnya",
-  "meaning_en": "so to speak, as it were, in a manner of speaking",
-  "jlpt": "n3",
-  "pos": "adverb-conjunctive",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["bahasa-komunikasi", "pikiran-opini"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Digunakan sebelum analogi atau perumpamaan — pembicara menyadari bahwa ekspresi yang dipilih adalah metaforis, bukan harfiah. Berbeda dari たとえば (yang memperkenalkan contoh konkret) — いわば memperkenalkan kiasan atau cara pandang figuratif. Sering muncul dalam tulisan dan ceramah.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "彼はチームの<b>いわば</b>精神的支柱だ。", "id": "Dia adalah, boleh dibilang, pilar semangat tim.", "level": "n3", "tags": ["pekerjaan", "karakter"]},
-    {"jp": "この経験は<b>いわば</b>人生の授業料だった。", "id": "Pengalaman ini ibarat biaya pendidikan kehidupan.", "level": "n3", "tags": ["pikiran-opini", "kehidupan-sehari"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00605",
-  "word": "まさか",
-  "reading": "まさか",
-  "romaji": "masaka",
-  "meaning_id": "masa iya, tidak mungkin, masak iya (ekspresi keterkejutan/ketidakpercayaan)",
-  "meaning_en": "no way, surely not, I can't believe it",
-  "jlpt": "n3",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 1,
-  "domain": ["emosi", "bahasa-komunikasi"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Mengungkapkan ketidakpercayaan atau kekagetan — pembicara tidak pernah mengira hal tersebut bisa terjadi. Sering digunakan sendiri sebagai seruan (まさか！) atau diikuti klausa negatif (まさか〜とは思わなかった). Berbeda dari いっそ atau むしろ yang menyatakan preferensi — まさか murni ekspresi emosional.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "<b>まさか</b>、彼が会社を辞めるとは思わなかった。", "id": "Tidak mungkin, aku tidak pernah menyangka dia akan keluar dari perusahaan.", "level": "n3", "tags": ["emosi", "pekerjaan"]},
-    {"jp": "「彼女と結婚するよ」「<b>まさか</b>！」", "id": "\"Aku akan menikahi dia.\" \"Masa iya!\"", "level": "n3", "tags": ["emosi", "percintaan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00606",
-  "word": "いっそ",
-  "reading": "いっそ",
-  "romaji": "isso",
-  "meaning_id": "sekalian saja, lebih baik sekalian, sekalian",
-  "meaning_en": "rather, might as well, may as well go all the way",
-  "jlpt": "n3",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["pikiran-opini", "keputusan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Mengungkapkan dorongan untuk memilih tindakan yang lebih ekstrem atau tegas daripada opsi tanggung — 'kalau sudah begini, mending sekalian saja'. Berbeda dari むしろ (yang mengoreksi persepsi) — いっそ menyarankan tindakan radikal atau keputusan menyeluruh. Sering mengandung nada frustrasi atau tekad.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "直らないなら、<b>いっそ</b>全部作り直した方がいい。", "id": "Kalau tidak bisa diperbaiki, sekalian saja buat ulang semuanya.", "level": "n3", "tags": ["keputusan", "pekerjaan"]},
-    {"jp": "こんなに遅れるなら、<b>いっそ</b>休んでしまおうか。", "id": "Kalau sudah terlambat seperti ini, sekalian saja tidak masuk deh.", "level": "n3", "tags": ["keputusan", "kehidupan-sehari"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00607",
-  "word": "どうせ",
-  "reading": "どうせ",
-  "romaji": "douse",
-  "meaning_id": "toh, bagaimanapun juga, sia-sia saja",
-  "meaning_en": "anyway, in the end, it's no use, after all",
-  "jlpt": "n3",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 1,
-  "domain": ["emosi-negatif", "pikiran-opini"],
-  "register": "neutral",
-  "lawan_bicara": ["teman", "umum"],
-  "nuance": "Mengandung nada pesimis atau pasrah — pembicara merasa hasil akhirnya sudah bisa ditebak (buruk) atau bahwa usaha tidak akan mengubah apapun. Berbeda dari いっそ (yang mendorong tindakan radikal) — どうせ lebih ke sikap menyerah. Jika dipakai dengan positif (どうせならもっとよいものを), maknanya berubah jadi 'kalau memang harus, lebih baik yang terbaik'.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "<b>どうせ</b>失敗するんだから、やらない方がいい。", "id": "Toh pasti gagal juga, lebih baik tidak usah dilakukan.", "level": "n3", "tags": ["emosi-negatif", "keputusan"]},
-    {"jp": "<b>どうせ</b>やるなら、最高のものを作ろう。", "id": "Kalau bagaimanapun harus dilakukan, lebih baik buat yang terbaik.", "level": "n3", "tags": ["keputusan", "karakter"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00608",
-  "word": "せっかく",
-  "reading": "せっかく",
-  "romaji": "sekkaku",
-  "meaning_id": "susah payah, sayang kalau tidak dimanfaatkan, dengan susah payah",
-  "meaning_en": "with much effort, it would be a waste if..., taking the trouble to",
-  "jlpt": "n3",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["emosi", "keputusan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Mengandung makna bahwa ada usaha atau kesempatan berharga yang telah diberikan — biasanya disertai rasa sayang kalau terbuang sia-sia. Berbeda dari わざわざ (yang menekankan tindakan repot-repot) — せっかく lebih menekankan nilai atau kelangkaan kesempatan itu. Sering muncul dalam kalimat negasi (せっかく〜のに = sayang sekali padahal...).",
-  "conj_type": null,
-  "examples": [
-    {"jp": "<b>せっかく</b>日本まで来たのだから、富士山は見ておきたい。", "id": "Sayang kalau sudah jauh-jauh ke Jepang tapi tidak melihat Gunung Fuji.", "level": "n3", "tags": ["perjalanan", "emosi"]},
-    {"jp": "<b>せっかく</b>料理を作ったのに、誰も食べてくれなかった。", "id": "Sudah susah payah memasak, tapi tidak ada yang mau makan.", "level": "n3", "tags": ["makanan-minuman", "emosi-negatif"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00609",
-  "word": "あえて",
-  "reading": "あえて",
-  "romaji": "aete",
-  "meaning_id": "sengaja, dengan berani, memilih untuk (walaupun ada risiko/halangan)",
-  "meaning_en": "deliberately, daringly, going out of one's way to (despite difficulty)",
-  "jlpt": "n3",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["karakter", "keputusan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Menekankan bahwa tindakan dilakukan secara sadar dan sengaja, meski ada risiko, oposisi, atau konvensi yang menghalangi — 'berani melakukan sesuatu yang tidak biasa'. Berbeda dari わざわざ (yang menekankan usaha ekstra) — あえて lebih menekankan keberanian atau keputusan yang melawan arus.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "皆が反対しているのに、彼は<b>あえて</b>その計画を実行した。", "id": "Meski semua menentang, dia dengan berani tetap melaksanakan rencana itu.", "level": "n3", "tags": ["karakter", "keputusan"]},
-    {"jp": "便利な道があるのに、<b>あえて</b>険しい山道を選んだ。", "id": "Ada jalan yang mudah, tapi dia sengaja memilih jalur pegunungan yang terjal.", "level": "n3", "tags": ["perjalanan", "karakter"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00610",
-  "word": "わざわざ",
-  "reading": "わざわざ",
-  "romaji": "wazawaza",
-  "meaning_id": "sengaja, repot-repot, susah payah datang/melakukan",
-  "meaning_en": "going out of one's way, taking the trouble to, deliberately",
-  "jlpt": "n3",
-  "pos": "adverb-manner",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["kehidupan-sehari", "sopan-santun"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Menekankan bahwa seseorang telah melakukan upaya ekstra atau tindakan tidak diperlukan — bisa mengandung rasa terima kasih (わざわざ来てくれてありがとう) atau sindiran halus (わざわざそんなことしなくていい). Berbeda dari あえて yang menekankan keberanian — わざわざ lebih pada kerepotan atau tindakan yang melebihi kebutuhan.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "<b>わざわざ</b>遠くから来てくれてありがとうございます。", "id": "Terima kasih sudah repot-repot datang dari jauh.", "level": "n3", "tags": ["sopan-santun", "pertemanan"]},
-    {"jp": "メールで済むのに、<b>わざわざ</b>電話をかけてくるのは迷惑だ。", "id": "Padahal bisa dengan email, repot-repot telepon begini malah mengganggu.", "level": "n3", "tags": ["pekerjaan", "bahasa-komunikasi"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00611",
-  "word": "せめて",
-  "reading": "せめて",
-  "romaji": "semete",
-  "meaning_id": "setidaknya, paling tidak, minimal",
-  "meaning_en": "at least, at the very least",
-  "jlpt": "n3",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["emosi", "keputusan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Mengungkapkan harapan minimal atau permintaan terkecil — pembicara sudah menerima bahwa idealnya tidak tercapai, lalu meminta syarat minimum. Berbeda dari少なくとも (yang bersifat faktual/kuantitatif) — せめて mengandung nuansa emosional, sering terasa seperti permohonan atau harapan terakhir.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "全部はできなくても、<b>せめて</b>挨拶だけはしてほしい。", "id": "Walaupun tidak bisa semuanya, setidaknya tolong ucapkan salam.", "level": "n3", "tags": ["sopan-santun", "emosi"]},
-    {"jp": "お金はないけど、<b>せめて</b>健康でいたい。", "id": "Tidak punya uang, tapi paling tidak aku ingin tetap sehat.", "level": "n3", "tags": ["kesehatan", "emosi"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00612",
-  "word": "たとえ",
-  "reading": "たとえ",
-  "romaji": "tatoe",
-  "meaning_id": "seandainya, meskipun, walaupun",
-  "meaning_en": "even if, no matter how much (used with ~ても/でも)",
-  "jlpt": "n3",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["pikiran-opini", "karakter"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Selalu berpasangan dengan 〜ても atau 〜でも — tidak digunakan sendiri. Menekankan bahwa kondisi apapun tidak mengubah hasil. Berbeda dari もし (kondisional netral) — たとえ menyiratkan kontras yang kuat dan tekad, sering digunakan dalam ungkapan dramatis atau janji.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "<b>たとえ</b>失敗しても、挑戦することに意味がある。", "id": "Seandainya pun gagal, ada makna dalam mencoba.", "level": "n3", "tags": ["karakter", "pikiran-opini"]},
-    {"jp": "<b>たとえ</b>どんなに忙しくても、家族の時間は大切にする。", "id": "Walaupun sesibuk apapun, aku akan tetap menjaga waktu bersama keluarga.", "level": "n3", "tags": ["keluarga", "karakter"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00613",
-  "word": "もし",
-  "reading": "もし",
-  "romaji": "moshi",
-  "meaning_id": "seandainya, kalau, jika (kondisional)",
-  "meaning_en": "if, in case, should",
-  "jlpt": "n3",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["pikiran-opini", "keputusan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Menandai kondisi hipotetis yang masih mungkin terjadi — membuka klausa kondisional (〜たら/〜なら/〜ば). Berbeda dari 仮に (yang lebih bersifat counterfactual/andaikan) dan たとえ (yang menekankan ketidakpedulian terhadap kondisi apapun) — もし adalah bentuk kondisional paling umum dan netral.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "<b>もし</b>雨が降ったら、試合は中止になる。", "id": "Kalau hujan, pertandingan akan dibatalkan.", "level": "n3", "tags": ["olahraga", "kehidupan-sehari"]},
-    {"jp": "<b>もし</b>よかったら、一緒に食事でもどうですか。", "id": "Kalau berkenan, bagaimana kalau makan bersama?", "level": "n3", "tags": ["sopan-santun", "pertemanan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00614",
-  "word": "仮に",
-  "reading": "かりに",
-  "romaji": "kari ni",
-  "meaning_id": "misalkan, andaikan, seumpama (hipotesis)",
-  "meaning_en": "suppose, hypothetically speaking, even if",
-  "jlpt": "n3",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["pikiran-opini", "ilmu-pengetahuan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Lebih eksplisit bersifat hipotetis atau counterfactual dibanding もし — sering dipakai dalam argumen, debat, atau diskusi ilmiah ketika pembicara mengajukan skenario yang mungkin tidak nyata. Sering diikuti 〜としても (bahkan jika seandainya). もし lebih umum dan kasual; 仮に lebih terstruktur dan analitis.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "<b>仮に</b>宝くじが当たったとしても、仕事は辞めないだろう。", "id": "Misalkan menang lotere sekalipun, aku mungkin tidak akan berhenti kerja.", "level": "n3", "tags": ["keputusan", "pikiran-opini"]},
-    {"jp": "<b>仮に</b>この計画が失敗したとしても、学べることは多いはずだ。", "id": "Andaikan rencana ini gagal sekalipun, seharusnya ada banyak yang bisa dipelajari.", "level": "n3", "tags": ["ilmu-pengetahuan", "keputusan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00615",
-  "word": "おそらく",
-  "reading": "おそらく",
-  "romaji": "osoraku",
-  "meaning_id": "kemungkinan besar, mungkin, barangkali (formal)",
-  "meaning_en": "probably, most likely, presumably",
-  "jlpt": "n3",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["pikiran-opini", "bahasa-komunikasi"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Menyatakan dugaan dengan tingkat kepercayaan yang cukup tinggi — lebih formal dan lebih confident dari たぶん. Sering muncul dalam tulisan, berita, atau percakapan setengah formal. たぶん lebih kasual dan sehari-hari, sedangkan おそらく terkesan lebih bijaksana atau analitis. Biasanya diikuti 〜だろう atau 〜と思われる.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "<b>おそらく</b>、彼は明日も来ないだろう。", "id": "Kemungkinan besar, dia tidak akan datang lagi besok.", "level": "n3", "tags": ["pikiran-opini", "kehidupan-sehari"]},
-    {"jp": "この天気では、<b>おそらく</b>試合は延期になると思われる。", "id": "Dengan cuaca seperti ini, pertandingan kemungkinan besar akan ditunda.", "level": "n3", "tags": ["olahraga", "alam-lingkungan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00616",
-  "word": "体調",
-  "reading": "たいちょう",
-  "romaji": "taichou",
-  "meaning_id": "kondisi fisik/kesehatan saat ini",
-  "meaning_en": "physical condition, state of health",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["kesehatan", "kehidupan-sehari"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Mengacu pada kondisi tubuh saat ini, bisa baik (体調がいい) maupun buruk (体調が悪い) — berbeda dari 健康 yang menggambarkan keadaan sehat secara ideal/jangka panjang. 体調 bersifat sementara dan fluktuatif, sering dipakai untuk menjelaskan absen atau performa yang menurun.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "最近、<b>体調</b>が悪くて仕事を休んでいます。", "id": "Belakangan ini kondisi fisikku buruk sehingga aku istirahat dari kerja.", "level": "n3", "tags": ["kesehatan", "pekerjaan"]},
-    {"jp": "試合の前は特に<b>体調</b>管理に気をつけています。", "id": "Terutama sebelum pertandingan, aku sangat memperhatikan kondisi fisikku.", "level": "n3", "tags": ["kesehatan", "olahraga"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00617",
-  "word": "症状",
-  "reading": "しょうじょう",
-  "romaji": "shoujou",
-  "meaning_id": "gejala (penyakit)",
-  "meaning_en": "symptom, sign (of illness)",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["kesehatan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Merujuk pada tanda-tanda klinis yang menunjukkan adanya suatu penyakit — lebih teknis dan medis dari 具合 (yang lebih kasual: 具合が悪い = tidak enak badan). 症状 dipakai saat mendeskripsikan penyakit secara spesifik ke dokter atau dalam laporan medis.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "発熱と咳が主な<b>症状</b>です。", "id": "Demam dan batuk adalah gejala utamanya.", "level": "n3", "tags": ["kesehatan"]},
-    {"jp": "<b>症状</b>が出てから三日以内に受診してください。", "id": "Silakan periksakan diri dalam tiga hari setelah gejala muncul.", "level": "n3", "tags": ["kesehatan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
   "provenance": "jlpt-corpus",
   "added_v": "v15"
 },
@@ -18476,90 +9903,6 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-00626",
-  "word": "アレルギー",
-  "reading": "アレルギー",
-  "romaji": "arerugi",
-  "meaning_id": "alergi",
-  "meaning_en": "allergy",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["kesehatan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Reaksi berlebihan sistem imun terhadap zat asing tertentu (alergen) — berbeda dari 不耐性 (intoleransi, yaitu ketidakmampuan mencerna zat tertentu tanpa melibatkan respons imun). Penting: 食物アレルギー (alergi makanan) tidak bisa diobati dengan mengabaikannya, sedangkan 不耐性 kadang bisa ditoleransi dalam jumlah kecil.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "私は花粉<b>アレルギー</b>があって、春はつらい。", "id": "Aku punya alergi serbuk sari, jadi musim semi itu menyiksa.", "level": "n3", "tags": ["kesehatan", "alam-lingkungan"]},
-    {"jp": "食物<b>アレルギー</b>がある場合は、必ず事前に知らせてください。", "id": "Jika punya alergi makanan, mohon beritahu kami terlebih dahulu.", "level": "n3", "tags": ["kesehatan", "makanan-minuman"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00627",
-  "word": "慢性",
-  "reading": "まんせい",
-  "romaji": "mansei",
-  "meaning_id": "kronis (kondisi penyakit jangka panjang)",
-  "meaning_en": "chronic (condition)",
-  "jlpt": "n3",
-  "pos": "na-adj",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["kesehatan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Menggambarkan kondisi penyakit yang berlangsung lama (umumnya lebih dari tiga bulan) dan cenderung menetap — antonim langsung adalah 急性 (akut, tiba-tiba dan intens). 慢性 menyiratkan penyakit yang harus dikelola jangka panjang, bukan disembuhkan dengan cepat (慢性疾患 = penyakit kronis).",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "<b>慢性</b>的な腰痛に長年悩んでいる。", "id": "Aku sudah lama menderita sakit punggang bawah yang kronis.", "level": "n3", "tags": ["kesehatan"]},
-    {"jp": "<b>慢性</b>疾患の患者には継続的なケアが必要だ。", "id": "Pasien penyakit kronis membutuhkan perawatan yang berkelanjutan.", "level": "n3", "tags": ["kesehatan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00628",
-  "word": "急性",
-  "reading": "きゅうせい",
-  "romaji": "kyuusei",
-  "meaning_id": "akut (kondisi penyakit yang datang tiba-tiba dan intens)",
-  "meaning_en": "acute (condition)",
-  "jlpt": "n3",
-  "pos": "na-adj",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["kesehatan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Menggambarkan kondisi penyakit yang datang tiba-tiba dengan intensitas tinggi — antonim langsung dari 慢性 (kronis). 急性 menyiratkan kebutuhan penanganan segera (急性心筋梗塞 = serangan jantung akut). Jangan disamakan dengan 緊急 (darurat) yang lebih mengacu pada urgensi situasi, bukan sifat klinis.",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "<b>急性</b>胃炎と診断され、点滴を受けた。", "id": "Didiagnosis radang lambung akut dan mendapat infus.", "level": "n3", "tags": ["kesehatan"]},
-    {"jp": "<b>急性</b>症状が出たら、すぐに救急車を呼んでください。", "id": "Jika gejala akut muncul, segera hubungi ambulans.", "level": "n3", "tags": ["kesehatan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
   "id": "vg-n3-00629",
   "word": "発症する",
   "reading": "はっしょうする",
@@ -18644,286 +9987,6 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-00632",
-  "word": "ストレス",
-  "reading": "ストレス",
-  "romaji": "sutoresu",
-  "meaning_id": "stres, tekanan mental/fisik",
-  "meaning_en": "stress",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 1,
-  "domain": ["kesehatan", "emosi-negatif"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Tekanan mental atau fisik akibat beban eksternal yang berlebihan — berbeda dari 不安 (kecemasan yang lebih difus tentang hal tak pasti) dan プレッシャー (tekanan spesifik dari ekspektasi orang lain). ストレス lebih luas dan bersumber dari mana saja; pengelolaan stres disebut ストレス管理 atau ストレス解消.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "仕事の<b>ストレス</b>で夜眠れない日が続いている。", "id": "Terus ada hari-hari di mana aku tidak bisa tidur malam karena stres kerja.", "level": "n3", "tags": ["kesehatan", "pekerjaan"]},
-    {"jp": "<b>ストレス</b>を解消するために、週末は山登りをしている。", "id": "Untuk menghilangkan stres, aku mendaki gunung setiap akhir pekan.", "level": "n3", "tags": ["kesehatan", "olahraga"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00633",
-  "word": "不安",
-  "reading": "ふあん",
-  "romaji": "fuan",
-  "meaning_id": "rasa cemas, kekhawatiran (tentang hal yang belum pasti)",
-  "meaning_en": "anxiety, uneasiness, worry",
-  "jlpt": "n3",
-  "pos": "na-adj",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["emosi-negatif", "kesehatan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Perasaan tidak tenang atau khawatir tentang hal yang masih belum pasti — berbeda dari 心配 (yang lebih konkret: khawatir tentang seseorang/sesuatu tertentu) dan 恐怖 (ketakutan terhadap sesuatu yang nyata dan mengancam). 不安 lebih difus dan abstrak, sering berkaitan dengan masa depan yang tidak jelas.",
-  "conj_type": "adj-na",
-  "examples": [
-    {"jp": "将来のことを考えると、<b>不安</b>を感じることがある。", "id": "Kalau memikirkan masa depan, kadang-kadang aku merasa cemas.", "level": "n3", "tags": ["emosi-negatif", "pikiran-opini"]},
-    {"jp": "手術前夜は<b>不安</b>で眠れなかった。", "id": "Malam sebelum operasi, aku tidak bisa tidur karena cemas.", "level": "n3", "tags": ["kesehatan", "emosi-negatif"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00634",
-  "word": "うつ",
-  "reading": "うつ",
-  "romaji": "utsu",
-  "meaning_id": "depresi (klinis maupun perasaan murung sehari-hari)",
-  "meaning_en": "depression",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["kesehatan", "emosi-negatif"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Bisa merujuk pada depresi klinis (うつ病) maupun sekadar perasaan murung/down dalam percakapan sehari-hari. 鬱 (kanji lengkap) lebih formal dan klinis; うつ (kana) lebih umum dipakai. Berbeda dari 落ち込む (merasa sedih/terpuruk secara situasional) — うつ menyiratkan kondisi yang lebih menetap dan mendalam.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "彼は<b>うつ</b>と診断されて、今カウンセリングを受けている。", "id": "Dia didiagnosis depresi dan sekarang menjalani konseling.", "level": "n3", "tags": ["kesehatan"]},
-    {"jp": "長期の残業が続いて、<b>うつ</b>っぽい気分になってきた。", "id": "Setelah lembur panjang terus-menerus, mulai muncul perasaan seperti depresi.", "level": "n3", "tags": ["kesehatan", "pekerjaan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00635",
-  "word": "燃え尽き症候群",
-  "reading": "もえつきしょうこうぐん",
-  "romaji": "moetsuki shoukougun",
-  "meaning_id": "burnout, sindrom kelelahan total akibat tekanan berlebihan",
-  "meaning_en": "burnout syndrome",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": false,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["kesehatan", "pekerjaan", "emosi-negatif"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Kondisi kelelahan fisik, mental, dan emosional akibat tekanan atau tanggung jawab berlebihan yang berlangsung lama — berbeda dari ストレス (yang adalah proses/penyebab) dan うつ (yang lebih berfokus pada gangguan suasana hati). 燃え尽き症候群 menekankan kondisi 'terbakar habis': tidak ada motivasi atau energi tersisa sama sekali.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "長年頑張りすぎた結果、<b>燃え尽き症候群</b>になってしまった。", "id": "Akibat terlalu keras bekerja bertahun-tahun, aku akhirnya terkena burnout.", "level": "n3", "tags": ["kesehatan", "pekerjaan"]},
-    {"jp": "医療従事者に<b>燃え尽き症候群</b>が増えていることが問題になっている。", "id": "Meningkatnya burnout di kalangan tenaga medis menjadi masalah yang serius.", "level": "n3", "tags": ["kesehatan", "pekerjaan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00636",
-  "word": "睡眠",
-  "reading": "すいみん",
-  "romaji": "suimin",
-  "meaning_id": "tidur (sebagai proses fisiologis atau kebutuhan)",
-  "meaning_en": "sleep",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["kesehatan", "kehidupan-sehari"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Merujuk pada tidur sebagai proses fisiologis atau kebutuhan dasar — lebih formal dan ilmiah dari 眠り (tidur sebagai pengalaman subjektif) dan 寝る (tindakan berbaring/tidur). 睡眠 sering muncul dalam konteks medis/kesehatan: 睡眠不足 (kurang tidur), 睡眠の質 (kualitas tidur), 睡眠障害 (gangguan tidur).",
-  "conj_type": null,
-  "examples": [
-    {"jp": "質の高い<b>睡眠</b>をとることが健康の基本だ。", "id": "Mendapatkan tidur berkualitas tinggi adalah dasar dari kesehatan.", "level": "n3", "tags": ["kesehatan"]},
-    {"jp": "<b>睡眠</b>不足が続くと、集中力が低下する。", "id": "Jika terus kekurangan tidur, kemampuan berkonsentrasi akan menurun.", "level": "n3", "tags": ["kesehatan", "pendidikan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00637",
-  "word": "不眠",
-  "reading": "ふみん",
-  "romaji": "fumin",
-  "meaning_id": "insomnia, tidak bisa tidur",
-  "meaning_en": "insomnia, sleeplessness",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["kesehatan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Ketidakmampuan tidur dengan cukup atau berkualitas, baik sebagai gejala (不眠症状) maupun kondisi klinis (不眠症) — berbeda dari 寝不足 (kurang tidur karena pilihan atau situasi eksternal, bukan karena tidak bisa tidur). 不眠 menekankan ketidakmampuan, bukan sekadar kekurangan jam tidur.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "ストレスで<b>不眠</b>が続き、医師に相談した。", "id": "Insomnia terus berlanjut karena stres, aku akhirnya berkonsultasi dengan dokter.", "level": "n3", "tags": ["kesehatan", "emosi-negatif"]},
-    {"jp": "<b>不眠</b>の改善には、薬だけでなく生活習慣の見直しも大切だ。", "id": "Untuk memperbaiki insomnia, perbaikan gaya hidup juga penting, bukan hanya obat.", "level": "n3", "tags": ["kesehatan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00638",
-  "word": "食欲",
-  "reading": "しょくよく",
-  "romaji": "shokuyoku",
-  "meaning_id": "nafsu makan, selera makan",
-  "meaning_en": "appetite",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["kesehatan", "makanan-minuman"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Keinginan atau selera psikologis/fisiologis terhadap makanan — berbeda dari 空腹 (rasa lapar sebagai sinyal fisiologis murni) dan 食事 (makan sebagai kegiatan). Dalam konteks kesehatan, 食欲がない (tidak nafsu makan) sering dijadikan indikator sakit atau gangguan psikologis.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "風邪をひいてから<b>食欲</b>がまったくない。", "id": "Sejak kena flu, sama sekali tidak ada nafsu makan.", "level": "n3", "tags": ["kesehatan"]},
-    {"jp": "秋は<b>食欲</b>の季節とも言われ、自然と食べたくなる。", "id": "Musim gugur juga disebut musim nafsu makan karena secara alami ingin makan lebih banyak.", "level": "n3", "tags": ["makanan-minuman", "budaya"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00639",
-  "word": "体重",
-  "reading": "たいじゅう",
-  "romaji": "taijuu",
-  "meaning_id": "berat badan",
-  "meaning_en": "body weight",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["kesehatan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Berat fisik tubuh yang dapat diukur dengan timbangan — berbeda dari 体型 (bentuk atau postur tubuh) dan 体格 (ukuran/kerangka tubuh secara keseluruhan). 体重 adalah angka konkret yang sering muncul dalam konteks diet, kesehatan, atau pemeriksaan medis.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "最近、<b>体重</b>が三キロ増えてしまった。", "id": "Belakangan ini berat badanku bertambah tiga kilogram.", "level": "n3", "tags": ["kesehatan", "kehidupan-sehari"]},
-    {"jp": "定期的な運動で<b>体重</b>を管理することが大切だ。", "id": "Penting untuk mengatur berat badan dengan olahraga yang rutin.", "level": "n3", "tags": ["kesehatan", "olahraga"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00640",
-  "word": "血圧",
-  "reading": "けつあつ",
-  "romaji": "ketsuatsu",
-  "meaning_id": "tekanan darah",
-  "meaning_en": "blood pressure",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["kesehatan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Tekanan yang diberikan darah pada dinding pembuluh darah saat dipompa oleh jantung — berbeda dari 脈拍 (denyut nadi/pulse). 血圧 diukur dengan 血圧計 (tensimeter). 高血圧 = hipertensi, 低血圧 = hipotensi. Sering muncul dalam konteks gaya hidup sehat dan penyakit tidak menular.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "毎朝、<b>血圧</b>を測る習慣をつけた。", "id": "Aku membiasakan diri mengukur tekanan darah setiap pagi.", "level": "n3", "tags": ["kesehatan", "kehidupan-sehari"]},
-    {"jp": "塩分を控えることで、<b>血圧</b>が下がる場合がある。", "id": "Dengan mengurangi asupan garam, tekanan darah bisa turun.", "level": "n3", "tags": ["kesehatan", "makanan-minuman"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00641",
-  "word": "免疫",
-  "reading": "めんえき",
-  "romaji": "men'eki",
-  "meaning_id": "imunitas, kekebalan tubuh",
-  "meaning_en": "immunity, immune system",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["kesehatan", "ilmu-pengetahuan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Kemampuan tubuh untuk melawan penyakit dan patogen — lebih luas dari 抗体 (antibodi, yang merupakan komponen spesifik dari sistem imun). 免疫力 (daya imun) sering dipakai dalam konteks kesehatan sehari-hari, sedangkan 免疫系 lebih teknis/ilmiah.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "睡眠不足は<b>免疫</b>力を低下させる。", "id": "Kurang tidur dapat menurunkan daya imun.", "level": "n3", "tags": ["kesehatan"]},
-    {"jp": "ワクチンを打つことで、そのウイルスへの<b>免疫</b>ができる。", "id": "Dengan divaksinasi, terbentuk kekebalan terhadap virus tersebut.", "level": "n3", "tags": ["kesehatan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
   "id": "vg-n3-00642",
   "word": "感染",
   "reading": "かんせん",
@@ -18943,90 +10006,6 @@ window.vocabN3 = [
   "examples": [
     {"jp": "手洗いをきちんとすれば、<b>感染</b>リスクを減らせる。", "id": "Dengan mencuci tangan dengan benar, risiko infeksi bisa dikurangi.", "level": "n3", "tags": ["kesehatan", "衛生"]},
     {"jp": "ウイルスに<b>感染</b>した可能性があるため、検査を受けた。", "id": "Karena ada kemungkinan terinfeksi virus, aku menjalani pemeriksaan.", "level": "n3", "tags": ["kesehatan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00643",
-  "word": "ウイルス",
-  "reading": "ウイルス",
-  "romaji": "uirusu",
-  "meaning_id": "virus, agen infeksi mikroskopis",
-  "meaning_en": "virus",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["kesehatan", "ilmu-pengetahuan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Agen infeksi berukuran sangat kecil yang hanya bisa berkembang biak di dalam sel hidup — berbeda dari 細菌 (bakteri, organisme bersel tunggal yang bisa hidup mandiri). Perbedaan penting dalam konteks pengobatan: infeksi ウイルス tidak diobati dengan antibiotik (antibiotik hanya efektif untuk infeksi 細菌).",
-  "conj_type": null,
-  "examples": [
-    {"jp": "この<b>ウイルス</b>は飛沫感染によって広がる。", "id": "Virus ini menyebar melalui penularan droplet.", "level": "n3", "tags": ["kesehatan"]},
-    {"jp": "<b>ウイルス</b>性の風邪には抗生物質は効かない。", "id": "Antibiotik tidak efektif untuk flu yang disebabkan oleh virus.", "level": "n3", "tags": ["kesehatan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00644",
-  "word": "細菌",
-  "reading": "さいきん",
-  "romaji": "saikin",
-  "meaning_id": "bakteri",
-  "meaning_en": "bacteria",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["kesehatan", "ilmu-pengetahuan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Mikroorganisme bersel tunggal yang dapat hidup dan berkembang biak secara mandiri — berbeda dari ウイルス (yang membutuhkan sel inang untuk berkembang biak). Infeksi 細菌 umumnya bisa diobati dengan antibiotik, berbeda dengan infeksi ウイルス. Tidak semua 細菌 berbahaya; ada yang menguntungkan (misalnya dalam fermentasi makanan atau flora usus).",
-  "conj_type": null,
-  "examples": [
-    {"jp": "食中毒の多くは<b>細菌</b>が原因だ。", "id": "Banyak kasus keracunan makanan disebabkan oleh bakteri.", "level": "n3", "tags": ["kesehatan", "makanan-minuman"]},
-    {"jp": "この薬は<b>細菌</b>の増殖を抑える効果がある。", "id": "Obat ini memiliki efek menghambat pertumbuhan bakteri.", "level": "n3", "tags": ["kesehatan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00645",
-  "word": "衛生",
-  "reading": "えいせい",
-  "romaji": "eisei",
-  "meaning_id": "kebersihan, higienitas (untuk mencegah penyakit)",
-  "meaning_en": "hygiene, sanitation",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["kesehatan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Standar dan praktik kebersihan yang bertujuan mencegah penyakit — lebih formal dan sistematis dari 清潔 (bersih secara fisik/estetis). 衛生 menekankan dimensi kesehatan dari kebersihan (衛生管理 = manajemen higiene, 食品衛生 = higiene pangan), sedangkan 清潔 lebih pada kondisi bebas kotoran yang terlihat.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "食品を扱う際には<b>衛生</b>管理が徹底的に行われている。", "id": "Dalam penanganan makanan, manajemen higiene dilakukan secara menyeluruh.", "level": "n3", "tags": ["kesehatan", "makanan-minuman"]},
-    {"jp": "手の<b>衛生</b>を保つことが感染予防の基本です。", "id": "Menjaga kebersihan tangan adalah dasar dari pencegahan infeksi.", "level": "n3", "tags": ["kesehatan"]}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -19456,174 +10435,6 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-00661",
-  "word": "情報",
-  "reading": "じょうほう",
-  "romaji": "jouhou",
-  "meaning_id": "informasi (konten yang diterima, belum tentu sudah dipahami)",
-  "meaning_en": "information, data, news",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["bahasa-komunikasi", "media"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Konten informatif yang diterima dari luar — bisa benar atau salah, baru atau lama, relevan atau tidak. Berbeda dari 知識 (yang sudah dipahami dan disimpan dalam pikiran sendiri), データ (angka/fakta mentah), dan 事実 (sesuatu yang terbukti nyata). 情報 bersifat lebih situasional dan temporal: 最新情報 (informasi terkini).",
-  "conj_type": null,
-  "examples": [
-    {"jp": "インターネットで多くの<b>情報</b>が手に入るようになった。", "id": "Banyak informasi kini bisa didapatkan melalui internet.", "level": "n3", "tags": ["teknologi", "bahasa-komunikasi"]},
-    {"jp": "古い<b>情報</b>をもとに判断するのは危険だ。", "id": "Membuat keputusan berdasarkan informasi lama adalah berbahaya.", "level": "n3", "tags": ["pikiran-opini", "keputusan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00662",
-  "word": "知識",
-  "reading": "ちしき",
-  "romaji": "chishiki",
-  "meaning_id": "pengetahuan (informasi yang sudah dipahami dan tersimpan dalam diri)",
-  "meaning_en": "knowledge",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["bahasa-komunikasi", "pendidikan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Informasi yang sudah diproses, dipahami, dan menjadi milik seseorang secara permanen — berbeda dari 情報 (yang adalah konten yang diterima, belum tentu dipahami) dan データ (angka mentah yang belum diinterpretasi). 知識 bersifat personal dan kognitif: 知識を身につける (menguasai pengetahuan).",
-  "conj_type": null,
-  "examples": [
-    {"jp": "豊富な<b>知識</b>があっても、実践できなければ意味がない。", "id": "Sekalipun punya pengetahuan yang luas, tidak ada artinya jika tidak bisa dipraktikkan.", "level": "n3", "tags": ["pendidikan", "pikiran-opini"]},
-    {"jp": "外国に行く前に、その国の文化的な<b>知識</b>を身につけておくとよい。", "id": "Sebaiknya pelajari pengetahuan budaya negara itu sebelum pergi ke sana.", "level": "n3", "tags": ["perjalanan", "budaya"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00663",
-  "word": "データ",
-  "reading": "データ",
-  "romaji": "deeta",
-  "meaning_id": "data (angka/fakta mentah yang belum diinterpretasi)",
-  "meaning_en": "data",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["bahasa-komunikasi", "ilmu-pengetahuan", "teknologi"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Kumpulan angka atau fakta mentah yang belum dianalisis atau diinterpretasi — lebih teknis dan kuantitatif dari 情報 (informasi yang sudah dikemas) dan 事実 (fakta yang sudah diverifikasi secara kualitatif). データ menjadi bermakna setelah dianalisis: データを分析する (menganalisis data), データに基づく (berbasis data).",
-  "conj_type": null,
-  "examples": [
-    {"jp": "このグラフは過去十年間の気温変化を<b>データ</b>で示している。", "id": "Grafik ini menampilkan perubahan suhu selama sepuluh tahun terakhir dengan data.", "level": "n3", "tags": ["ilmu-pengetahuan", "alam-lingkungan"]},
-    {"jp": "調査の<b>データ</b>を分析した結果、新たな傾向が見えてきた。", "id": "Setelah menganalisis data survei, tren baru mulai terlihat.", "level": "n3", "tags": ["ilmu-pengetahuan", "bisnis"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00664",
-  "word": "事実",
-  "reading": "じじつ",
-  "romaji": "jijitsu",
-  "meaning_id": "fakta (sesuatu yang benar-benar terjadi/ada, bisa diverifikasi)",
-  "meaning_en": "fact, truth, reality",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["bahasa-komunikasi", "pikiran-opini"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Sesuatu yang benar-benar terjadi atau ada di dunia nyata dan bisa diverifikasi secara objektif — lebih spesifik dan terverifikasi dari 情報 (yang bisa benar/salah). Berbeda dari 真実 (kebenaran yang lebih dalam/esensial, kadang tersembunyi). 事実 bersifat objektif dan konkret; 真実 bisa lebih filosofis atau subjektif.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "感情ではなく<b>事実</b>に基づいて判断することが重要だ。", "id": "Penting untuk membuat keputusan berdasarkan fakta, bukan emosi.", "level": "n3", "tags": ["pikiran-opini", "keputusan"]},
-    {"jp": "その報告書に書かれていることは<b>事実</b>と異なっている。", "id": "Apa yang tertulis dalam laporan itu berbeda dari fakta yang sebenarnya.", "level": "n3", "tags": ["bisnis", "pikiran-opini"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00665",
-  "word": "真実",
-  "reading": "しんじつ",
-  "romaji": "shinjitsu",
-  "meaning_id": "kebenaran (yang sesungguhnya, sering tersembunyi atau mendalam)",
-  "meaning_en": "truth, reality",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["bahasa-komunikasi", "pikiran-opini"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Kebenaran yang sesungguhnya — sering kali tersembunyi, mendalam, atau esensial. Berbeda dari 事実 (fakta konkret yang bisa diverifikasi secara langsung). 真実 sering dipakai dalam konteks emosional, moral, atau narasi: 真実を隠す (menyembunyikan kebenaran), 真実が明らかになる (kebenaran terungkap). Ada nuansa bahwa 真実 perlu digali, sementara 事実 bisa langsung dikonfirmasi.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "彼は長い間、その<b>真実</b>を誰にも話さなかった。", "id": "Dia tidak menceritakan kebenaran itu kepada siapa pun selama waktu yang lama.", "level": "n3", "tags": ["pikiran-opini", "bahasa-komunikasi"]},
-    {"jp": "時間が経てば、<b>真実</b>は必ず明らかになる。", "id": "Seiring berjalannya waktu, kebenaran pasti akan terungkap.", "level": "n3", "tags": ["pikiran-opini"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00666",
-  "word": "うわさ",
-  "reading": "うわさ",
-  "romaji": "uwasa",
-  "meaning_id": "gosip, desas-desus, kabar yang belum terkonfirmasi",
-  "meaning_en": "rumor, gossip",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 1,
-  "domain": ["bahasa-komunikasi", "kehidupan-sehari"],
-  "register": "neutral",
-  "lawan_bicara": ["teman"],
-  "nuance": "Informasi yang beredar dari mulut ke mulut tanpa verifikasi — kontennya belum tentu benar, berbeda dari 誤情報 (yang informasinya salah) dan 誤解 (yang merupakan masalah persepsi dalam benak seseorang). うわさ lebih menekankan proses penyebaran informal dan sosial; bisa benar atau salah, tapi sifatnya tidak resmi.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "あの二人が付き合っているという<b>うわさ</b>が広まっている。", "id": "Gosip bahwa kedua orang itu berpacaran sedang menyebar.", "level": "n3", "tags": ["kehidupan-sehari", "bahasa-komunikasi"]},
-    {"jp": "<b>うわさ</b>を信じる前に、まず本人に確認すべきだ。", "id": "Sebelum mempercayai desas-desus, sebaiknya konfirmasi langsung ke orangnya.", "level": "n3", "tags": ["bahasa-komunikasi", "pikiran-opini"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
   "id": "vg-n3-00667",
   "word": "誤解",
   "reading": "ごかい",
@@ -19643,34 +10454,6 @@ window.vocabN3 = [
   "examples": [
     {"jp": "言葉が足りなくて<b>誤解</b>を招いてしまった。", "id": "Kata-kataku yang kurang jelas menimbulkan kesalahpahaman.", "level": "n3", "tags": ["bahasa-komunikasi"]},
     {"jp": "その件については<b>誤解</b>があるようなので、説明させてください。", "id": "Tampaknya ada kesalahpahaman soal hal itu, jadi izinkan saya menjelaskan.", "level": "n3", "tags": ["bahasa-komunikasi", "sopan-santun"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00668",
-  "word": "誤情報",
-  "reading": "ごじょうほう",
-  "romaji": "gojouhou",
-  "meaning_id": "misinformasi (informasi yang salah secara faktual)",
-  "meaning_en": "misinformation, false information",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": false,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["bahasa-komunikasi", "media"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Informasi yang salah secara faktual — bisa disengaja (disinformasi) maupun tidak disengaja. Berbeda dari うわさ (yang lebih ke desas-desus yang belum terverifikasi) dan 誤解 (yang adalah masalah interpretasi di benak seseorang). 誤情報 menekankan bahwa konten faktualnya memang keliru, bukan sekadar belum dikonfirmasi.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "SNSで<b>誤情報</b>が拡散されるのは深刻な問題だ。", "id": "Penyebaran misinformasi di media sosial adalah masalah yang serius.", "level": "n3", "tags": ["media", "teknologi"]},
-    {"jp": "<b>誤情報</b>を見分けるためには、情報源を確認することが大切だ。", "id": "Untuk membedakan misinformasi, penting untuk memeriksa sumber informasi.", "level": "n3", "tags": ["bahasa-komunikasi", "media"]}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -19736,62 +10519,6 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-00671",
-  "word": "語彙",
-  "reading": "ごい",
-  "romaji": "goi",
-  "meaning_id": "kosakata, perbendaharaan kata",
-  "meaning_en": "vocabulary, lexicon",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["bahasa-komunikasi", "pendidikan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Keseluruhan kata yang dimiliki seseorang atau yang ada dalam suatu bahasa — berbeda dari 文法 (aturan struktur kalimat) dan 発音 (cara mengucapkan). 語彙力 (kemampuan kosakata) adalah ukuran seberapa banyak kata yang dikuasai. 語彙を増やす = memperluas kosakata; 語彙が豊かだ = kosakatanya kaya.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "本をたくさん読むことで<b>語彙</b>が豊かになる。", "id": "Dengan banyak membaca, kosakata menjadi semakin kaya.", "level": "n3", "tags": ["pendidikan", "bahasa-komunikasi"]},
-    {"jp": "JLPT N3には日常会話でよく使う<b>語彙</b>が多く含まれている。", "id": "JLPT N3 banyak mencakup kosakata yang sering digunakan dalam percakapan sehari-hari.", "level": "n3", "tags": ["pendidikan", "bahasa-komunikasi"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00672",
-  "word": "文法",
-  "reading": "ぶんぽう",
-  "romaji": "bunpou",
-  "meaning_id": "tata bahasa, grammar",
-  "meaning_en": "grammar",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["bahasa-komunikasi", "pendidikan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Aturan yang mengatur bagaimana kata-kata disusun menjadi kalimat yang benar secara struktural — berbeda dari 語彙 (kata-kata yang diketahui) dan 発音 (cara mengucapkan). Menguasai 文法 belum cukup untuk berbicara alami; diperlukan latihan dan paparan nyata untuk menggunakannya secara spontan.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "日本語の<b>文法</b>は最初は難しく感じるかもしれない。", "id": "Tata bahasa Jepang mungkin terasa sulit pada awalnya.", "level": "n3", "tags": ["bahasa-komunikasi", "pendidikan"]},
-    {"jp": "<b>文法</b>を理解していても、自然に使えるようになるには練習が必要だ。", "id": "Sekalipun memahami tata bahasa, latihan tetap diperlukan agar bisa menggunakannya secara alami.", "level": "n3", "tags": ["pendidikan", "bahasa-komunikasi"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
   "id": "vg-n3-00673",
   "word": "発音",
   "reading": "はつおん",
@@ -19811,62 +10538,6 @@ window.vocabN3 = [
   "examples": [
     {"jp": "日本語の<b>発音</b>は英語と比べてシンプルだと言われる。", "id": "Pengucapan bahasa Jepang dikatakan lebih sederhana dibandingkan bahasa Inggris.", "level": "n3", "tags": ["bahasa-komunikasi"]},
     {"jp": "正しい<b>発音</b>を身につけるには、声に出して繰り返し練習することが大切だ。", "id": "Untuk menguasai pengucapan yang benar, penting untuk berlatih dengan mengucapkannya berulang kali.", "level": "n3", "tags": ["pendidikan", "bahasa-komunikasi"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00674",
-  "word": "アクセント",
-  "reading": "アクセント",
-  "romaji": "akusento",
-  "meaning_id": "aksen, tekanan nada (pitch accent dalam bahasa Jepang)",
-  "meaning_en": "accent, pitch accent",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["bahasa-komunikasi"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Pola tekanan atau nada pada suku kata dalam sebuah kata — dalam bahasa Jepang ini adalah pitch accent (nada tinggi-rendah), bukan stress accent seperti di bahasa Indonesia atau Inggris. Penting karena アクセント yang berbeda bisa mengubah makna kata: 橋 (jembatan) vs 箸 (sumpit) memiliki pola nada berbeda. Juga berbeda per wilayah (方言).",
-  "conj_type": null,
-  "examples": [
-    {"jp": "日本語では<b>アクセント</b>によって意味が変わる単語がある。", "id": "Dalam bahasa Jepang, ada kata yang maknanya berubah tergantung pada aksennya.", "level": "n3", "tags": ["bahasa-komunikasi"]},
-    {"jp": "地域によって<b>アクセント</b>のパターンが大きく異なる。", "id": "Pola aksen berbeda-beda secara signifikan tergantung wilayah.", "level": "n3", "tags": ["bahasa-komunikasi", "budaya"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00675",
-  "word": "方言",
-  "reading": "ほうげん",
-  "romaji": "hougen",
-  "meaning_id": "dialek, bahasa daerah",
-  "meaning_en": "dialect, regional language",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["bahasa-komunikasi", "budaya"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Variasi bahasa yang digunakan di wilayah geografis tertentu — berbeda dari 標準語 (bahasa standar Jepang berbasis Tokyo) dalam hal kosakata, pengucapan, dan tata bahasa. Berbeda dari アクセント (yang hanya mengacu pada pola nada). Di Jepang, 方言 sangat kaya: 関西弁, 東北弁, 九州弁, dll., masing-masing dengan karakteristik yang sangat berbeda.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "関西<b>方言</b>は東京の標準語とかなり違う。", "id": "Dialek Kansai cukup berbeda dari bahasa standar Tokyo.", "level": "n3", "tags": ["bahasa-komunikasi", "budaya"]},
-    {"jp": "祖父母は今でも地元の<b>方言</b>で話す。", "id": "Kakek-nenek masih berbicara dengan dialek daerah asal mereka hingga kini.", "level": "n3", "tags": ["bahasa-komunikasi", "keluarga"]}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -19988,62 +10659,6 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-00680",
-  "word": "宿題",
-  "reading": "しゅくだい",
-  "romaji": "shukudai",
-  "meaning_id": "pekerjaan rumah, tugas yang dikerjakan di rumah",
-  "meaning_en": "homework",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["pendidikan", "kehidupan-sehari"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Secara harfiah berarti 'tugas rumah' — dipakai khusus untuk tugas yang diberikan guru untuk dikerjakan di luar jam sekolah. Berbeda dari 課題 yang lebih luas maknanya (bisa mencakup proyek, tantangan, atau persoalan yang perlu diselesaikan) dan tidak harus dikerjakan di rumah.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "<b>宿題</b>を忘れて先生に怒られた。", "id": "Aku dimarahi guru karena lupa mengerjakan PR.", "level": "n3", "tags": ["pendidikan", "kehidupan-sehari"]},
-    {"jp": "今日の<b>宿題</b>は漢字を10個書くことだ。", "id": "PR hari ini adalah menulis 10 kanji.", "level": "n3", "tags": ["pendidikan", "bahasa-komunikasi"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00681",
-  "word": "課題",
-  "reading": "かだい",
-  "romaji": "kadai",
-  "meaning_id": "tugas, kewajiban yang harus diselesaikan, permasalahan yang perlu ditangani",
-  "meaning_en": "assignment, task, challenge, issue to be addressed",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["pendidikan", "pekerjaan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Lebih luas dari 宿題 — bisa berarti tugas akademik, proyek, atau bahkan permasalahan serius yang harus diatasi (misalnya 社会的課題 = masalah sosial). Dipakai di konteks sekolah, bisnis, dan kebijakan publik. 宿題 hanya merujuk pada pekerjaan rumah sekolah biasa.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "今学期のレポート<b>課題</b>はまだ終わっていない。", "id": "Tugas laporan semester ini belum selesai.", "level": "n3", "tags": ["pendidikan"]},
-    {"jp": "環境問題は現代社会の大きな<b>課題</b>だ。", "id": "Masalah lingkungan adalah tantangan besar masyarakat modern.", "level": "n3", "tags": ["pendidikan", "alam-lingkungan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
   "id": "vg-n3-00682",
   "word": "試験",
   "reading": "しけん",
@@ -20091,34 +10706,6 @@ window.vocabN3 = [
   "examples": [
     {"jp": "明日、英語の<b>テスト</b>があるから勉強しなきゃ。", "id": "Besok ada ulangan bahasa Inggris, jadi harus belajar.", "level": "n3", "tags": ["pendidikan", "kehidupan-sehari"]},
     {"jp": "その<b>テスト</b>は10点満点で、私は8点だった。", "id": "Tes itu nilainya dari 10, dan aku mendapat 8.", "level": "n3", "tags": ["pendidikan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00684",
-  "word": "成績",
-  "reading": "せいせき",
-  "romaji": "seiseki",
-  "meaning_id": "nilai, prestasi akademik, hasil belajar",
-  "meaning_en": "grades, academic results, performance",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["pendidikan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Merujuk pada hasil atau rekam jejak prestasi seseorang — umumnya dalam konteks akademik (rapor, IPK) tapi bisa juga dipakai untuk hasil kerja. Berbeda dari 点数 (skor spesifik satu ujian); 成績 adalah gambaran performa keseluruhan dalam suatu periode.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "今学期の<b>成績</b>が上がって、両親に喜ばれた。", "id": "Nilai semester ini naik dan orang tuaku senang.", "level": "n3", "tags": ["pendidikan", "keluarga"]},
-    {"jp": "<b>成績</b>が悪くて、奨学金をもらえなかった。", "id": "Nilainya buruk sehingga tidak mendapat beasiswa.", "level": "n3", "tags": ["pendidikan"]}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -20231,90 +10818,6 @@ window.vocabN3 = [
   "examples": [
     {"jp": "来年、アメリカに<b>留学</b>する予定がある。", "id": "Tahun depan aku berencana belajar ke Amerika.", "level": "n3", "tags": ["pendidikan", "perjalanan"]},
     {"jp": "<b>留学</b>中に英語力がかなり上がった。", "id": "Kemampuan bahasa Inggrisku meningkat pesat selama belajar di luar negeri.", "level": "n3", "tags": ["pendidikan", "bahasa-komunikasi"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00689",
-  "word": "奨学金",
-  "reading": "しょうがくきん",
-  "romaji": "shougakukin",
-  "meaning_id": "beasiswa, dana bantuan pendidikan",
-  "meaning_en": "scholarship, student financial aid",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["pendidikan", "ekonomi-keuangan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Di Jepang 奨学金 mencakup baik hibah (tidak perlu dikembalikan) maupun pinjaman berbunga rendah yang harus dilunasi setelah lulus — berbeda dari makna beasiswa di banyak negara lain yang biasanya hibah murni. Penting untuk memahami perbedaan 給付型 (hibah) dan 貸与型 (pinjaman).",
-  "conj_type": null,
-  "examples": [
-    {"jp": "<b>奨学金</b>を申請して、大学の学費を払った。", "id": "Aku mendaftar beasiswa untuk membayar biaya kuliah.", "level": "n3", "tags": ["pendidikan", "ekonomi-keuangan"]},
-    {"jp": "<b>奨学金</b>のおかげで留学することができた。", "id": "Berkat beasiswa, aku bisa pergi belajar ke luar negeri.", "level": "n3", "tags": ["pendidikan", "perjalanan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00690",
-  "word": "教材",
-  "reading": "きょうざい",
-  "romaji": "kyouzai",
-  "meaning_id": "bahan ajar, materi pembelajaran",
-  "meaning_en": "teaching materials, learning resources",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["pendidikan"],
-  "register": "formal",
-  "lawan_bicara": ["umum"],
-  "nuance": "Merujuk pada segala materi yang digunakan dalam proses belajar-mengajar — buku teks, video, lembar kerja, dll. Berbeda dari 参考書 yang khusus buku referensi yang dipelajari sendiri oleh siswa; 教材 lebih luas dan bisa berarti materi yang disiapkan guru untuk pembelajaran terstruktur.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "この授業では、オンライン<b>教材</b>を使っている。", "id": "Pelajaran ini menggunakan bahan ajar online.", "level": "n3", "tags": ["pendidikan", "teknologi"]},
-    {"jp": "先生が自作の<b>教材</b>を配ってくれた。", "id": "Guru membagikan bahan ajar yang dibuatnya sendiri.", "level": "n3", "tags": ["pendidikan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00691",
-  "word": "参考書",
-  "reading": "さんこうしょ",
-  "romaji": "sankousho",
-  "meaning_id": "buku referensi, buku pelajaran tambahan",
-  "meaning_en": "reference book, study guide",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["pendidikan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Secara spesifik merujuk pada buku yang digunakan siswa secara mandiri untuk memperdalam pemahaman atau mempersiapkan ujian — bukan buku teks wajib dari sekolah. Berbeda dari 教材 yang mencakup semua materi ajar; 参考書 dipilih sendiri oleh siswa dan sifatnya suplemental.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "大学受験のために<b>参考書</b>を何冊も買った。", "id": "Aku membeli banyak buku referensi untuk ujian masuk universitas.", "level": "n3", "tags": ["pendidikan"]},
-    {"jp": "この<b>参考書</b>はわかりやすいと評判だ。", "id": "Buku referensi ini terkenal mudah dipahami.", "level": "n3", "tags": ["pendidikan"]}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -20492,34 +10995,6 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-00698",
-  "word": "効率",
-  "reading": "こうりつ",
-  "romaji": "kouritsu",
-  "meaning_id": "efisiensi, rasio hasil terhadap usaha yang dikeluarkan",
-  "meaning_en": "efficiency, productivity ratio",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["pendidikan", "pekerjaan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Menekankan perbandingan antara hasil yang diperoleh dengan sumber daya (waktu, energi) yang digunakan. Berbeda dari 効果 yang hanya mengukur apakah hasilnya ada/tidak; 効率 mempertanyakan seberapa hemat cara mencapainya. 効率がいい = cara yang efisien; 効果がある = cara yang manjur.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "<b>効率</b>よく勉強するために、時間割を作った。", "id": "Aku membuat jadwal belajar agar bisa belajar secara efisien.", "level": "n3", "tags": ["pendidikan", "waktu"]},
-    {"jp": "この方法は<b>効率</b>が悪いので、別のやり方を考えよう。", "id": "Cara ini tidak efisien, jadi mari pikirkan cara lain.", "level": "n3", "tags": ["pendidikan", "keputusan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
   "id": "vg-n3-00699",
   "word": "工夫する",
   "reading": "くふうする",
@@ -20548,62 +11023,6 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-00700",
-  "word": "向上心",
-  "reading": "こうじょうしん",
-  "romaji": "koujoushin",
-  "meaning_id": "semangat untuk terus berkembang, hasrat maju",
-  "meaning_en": "desire for self-improvement, ambition to grow",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["pendidikan", "karakter", "emosi-positif"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Merujuk pada dorongan dari dalam diri untuk terus memperbaiki kemampuan dan kualitas diri — selalu berkonotasi positif. Berbeda dari 野心 yang bisa berkonotasi negatif (ambisi berlebihan, haus kekuasaan); 向上心 diapresiasi di konteks belajar dan karier di Jepang.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "<b>向上心</b>がある人は、失敗しても諦めない。", "id": "Orang yang punya semangat berkembang tidak menyerah meski gagal.", "level": "n3", "tags": ["pendidikan", "karakter"]},
-    {"jp": "<b>向上心</b>を持って毎日少しずつ成長していきたい。", "id": "Aku ingin terus berkembang sedikit demi sedikit setiap hari dengan semangat yang tinggi.", "level": "n3", "tags": ["pendidikan", "emosi-positif"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00701",
-  "word": "好奇心",
-  "reading": "こうきしん",
-  "romaji": "koukishin",
-  "meaning_id": "rasa ingin tahu, dorongan untuk menjelajahi hal-hal baru",
-  "meaning_en": "curiosity, inquisitiveness",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": ["pendidikan", "karakter", "emosi-positif"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Merujuk pada dorongan alami untuk mengetahui dan mengeksplorasi hal-hal yang belum diketahui. Berbeda dari 興味 (minat terhadap sesuatu yang sudah dikenal); 好奇心 lebih aktif dan mengarah ke hal yang belum familiar, serta mengandung nuansa petualangan intelektual.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "子どもの<b>好奇心</b>を大切にすることが、学習意欲につながる。", "id": "Menghargai rasa ingin tahu anak berhubungan dengan motivasi belajar.", "level": "n3", "tags": ["pendidikan", "karakter"]},
-    {"jp": "<b>好奇心</b>旺盛な学生は、授業でよく質問する。", "id": "Siswa yang penuh rasa ingin tahu sering bertanya di kelas.", "level": "n3", "tags": ["pendidikan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
   "id": "vg-n3-00702",
   "word": "専攻",
   "reading": "せんこう",
@@ -20623,90 +11042,6 @@ window.vocabN3 = [
   "examples": [
     {"jp": "大学での<b>専攻</b>は経済学です。", "id": "Jurusanku di universitas adalah ekonomi.", "level": "n3", "tags": ["pendidikan"]},
     {"jp": "何を<b>専攻</b>しているんですか。", "id": "Kamu mengambil jurusan apa?", "level": "n3", "tags": ["pendidikan", "bahasa-komunikasi"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00703",
-  "word": "分野",
-  "reading": "ぶんや",
-  "romaji": "bun'ya",
-  "meaning_id": "bidang, ranah, area kajian atau kegiatan",
-  "meaning_en": "field, area, domain (of study or activity)",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["pendidikan", "ilmu-pengetahuan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Merujuk pada 'bidang' atau 'ranah' yang lebih luas dan kategoris — bisa dipakai untuk ilmu pengetahuan, seni, bisnis, dll. Berbeda dari 専門 yang merujuk pada keahlian spesifik seseorang; 分野 adalah label untuk kategori besarnya, bukan tingkat penguasaan individu.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "医療の<b>分野</b>では、技術の進歩が著しい。", "id": "Di bidang medis, kemajuan teknologi sangat pesat.", "level": "n3", "tags": ["pendidikan", "ilmu-pengetahuan"]},
-    {"jp": "どんな<b>分野</b>に興味がありますか。", "id": "Bidang apa yang kamu minati?", "level": "n3", "tags": ["pendidikan", "bahasa-komunikasi"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00704",
-  "word": "専門",
-  "reading": "せんもん",
-  "romaji": "senmon",
-  "meaning_id": "spesialisasi, keahlian yang sudah dimiliki",
-  "meaning_en": "specialty, area of expertise",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["pendidikan", "pekerjaan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Merujuk pada keahlian atau bidang yang sudah dikuasai seseorang — apa yang menjadi kekuatan utamanya. Berbeda dari 専攻 (jurusan yang sedang dipelajari) dan 分野 (kategori bidang yang luas); 専門 menyiratkan penguasaan yang sudah matang, sering dikaitkan dengan karier atau identitas profesional.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "彼の<b>専門</b>は人工知能だ。", "id": "Spesialisasinya adalah kecerdasan buatan.", "level": "n3", "tags": ["pendidikan", "teknologi"]},
-    {"jp": "<b>専門</b>的な知識がないと、この仕事は難しい。", "id": "Tanpa pengetahuan yang terspesialisasi, pekerjaan ini sulit.", "level": "n3", "tags": ["pendidikan", "pekerjaan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-{
-  "id": "vg-n3-00705",
-  "word": "知識",
-  "reading": "ちしき",
-  "romaji": "chishiki",
-  "meaning_id": "pengetahuan, ilmu yang sudah dipahami dan dimiliki",
-  "meaning_en": "knowledge, learning",
-  "jlpt": "n3",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["pendidikan", "ilmu-pengetahuan"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Merujuk pada informasi yang sudah diinternalisasi dan dipahami oleh seseorang — pengetahuan yang sudah menjadi milik. Berbeda dari 情報 yang hanya berarti 'informasi' atau 'data' yang belum tentu dipahami; 知識 menyiratkan pemahaman aktif, bukan sekadar data mentah.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "幅広い<b>知識</b>を持つことは、社会で役立つ。", "id": "Memiliki pengetahuan yang luas berguna di masyarakat.", "level": "n3", "tags": ["pendidikan", "kehidupan-sehari"]},
-    {"jp": "読書をすることで<b>知識</b>が増える。", "id": "Pengetahuan bertambah dengan membaca.", "level": "n3", "tags": ["pendidikan"]}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -21219,26 +11554,1874 @@ window.vocabN3 = [
   "added_v": "v15"
 },
 
+  // ── ADJECTIVES (82) ────────────────────────────────────────
+
 {
-  "id": "vg-n3-00724",
-  "word": "余裕",
-  "reading": "よゆう",
-  "romaji": "yoyuu",
-  "meaning_id": "kelonggaran (waktu/uang/mental), kondisi tidak terburu-buru atau tidak tertekan",
-  "meaning_en": "leeway, margin, composure; having room to spare",
+  "id": "vg-n3-00041",
+  "word": "複雑",
+  "reading": "ふくざつ",
+  "romaji": "fukuzatsu",
+  "meaning_id": "rumit, kompleks",
+  "meaning_en": "complicated, complex",
   "jlpt": "n3",
-  "pos": "noun",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "kehidupan-sehari",
+    "akademik"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Na-adjektif. Lawan: 簡単 (sederhana).",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この問題は複雑だ。",
+      "id": "Masalah ini rumit.",
+      "level": "n3",
+      "tags": [
+        "akademik"
+      ]
+    },
+    {
+      "jp": "人間関係は複雑になりやすい。",
+      "id": "Hubungan antar manusia mudah menjadi rumit.",
+      "level": "n3",
+      "tags": [
+        "hubungan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v14.27"
+},
+
+{
+  "id": "vg-n3-00042",
+  "word": "正確",
+  "reading": "せいかく",
+  "romaji": "seikaku",
+  "meaning_id": "tepat, akurat",
+  "meaning_en": "accurate, precise",
+  "jlpt": "n3",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "pekerjaan",
+    "akademik"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Na-adjektif. Informasi atau tindakan yang tepat dan tanpa kesalahan.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "正確な情報を教えてください。",
+      "id": "Tolong beri informasi yang akurat.",
+      "level": "n3",
+      "tags": [
+        "pekerjaan"
+      ]
+    },
+    {
+      "jp": "この時計は正確だ。",
+      "id": "Jam ini akurat.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v14.27"
+},
+
+{
+  "id": "vg-n3-00043",
+  "word": "重要",
+  "reading": "じゅうよう",
+  "romaji": "juuyou",
+  "meaning_id": "penting",
+  "meaning_en": "important",
+  "jlpt": "n3",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "pekerjaan",
+    "akademik"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Na-adjektif. Lebih formal dari 大切 dan 大事.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "これは重要な問題だ。",
+      "id": "Ini masalah penting.",
+      "level": "n3",
+      "tags": [
+        "pekerjaan"
+      ]
+    },
+    {
+      "jp": "健康は何より重要だ。",
+      "id": "Kesehatan lebih penting dari apa pun.",
+      "level": "n3",
+      "tags": [
+        "kesehatan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v14.27"
+},
+
+{
+  "id": "vg-n3-00044",
+  "word": "厳しい",
+  "reading": "きびしい",
+  "romaji": "kibishii",
+  "meaning_id": "keras, ketat, berat",
+  "meaning_en": "strict, severe, harsh",
+  "jlpt": "n3",
+  "pos": "i-adj",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["kehidupan-sehari", "waktu", "emosi"],
+  "domain": [
+    "pekerjaan",
+    "kehidupan-sehari"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Merujuk pada kondisi di mana ada 'ruang ekstra' — waktu, uang, atau kapasitas mental yang cukup sehingga tidak merasa tertekan. Bisa dipakai secara fisik (余裕がある = ada waktu sisa) maupun emosional (余裕を持つ = bersikap tenang). Lawannya adalah 余裕がない = tidak ada kelonggaran, terdesak.",
+  "lawan_bicara": [
+    "teman",
+    "rekan"
+  ],
+  "nuance": "Bisa menggambarkan orang (keras), aturan (ketat), atau situasi (berat).",
   "conj_type": null,
   "examples": [
-    {"jp": "今日は時間に<b>余裕</b>があるから、ゆっくりできる。", "id": "Hari ini ada kelonggaran waktu, jadi bisa santai.", "level": "n3", "tags": ["kehidupan-sehari", "waktu"]},
-    {"jp": "<b>余裕</b>を持って行動すれば、ミスが減る。", "id": "Kalau bertindak dengan tenang dan tidak terburu-buru, kesalahan akan berkurang.", "level": "n3", "tags": ["kehidupan-sehari", "emosi"]}
+    {
+      "jp": "先生は厳しいけど、優しい。",
+      "id": "Gurunya keras, tapi baik.",
+      "level": "n3",
+      "tags": [
+        "pendidikan"
+      ]
+    },
+    {
+      "jp": "今年の冬は厳しかった。",
+      "id": "Musim dingin tahun ini berat.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [
+    "vg-n3-00045"
+  ],
+  "see_also": [],
+  "added_v": "v14.27"
+},
+
+{
+  "id": "vg-n3-00045",
+  "word": "優しい",
+  "reading": "やさしい",
+  "romaji": "yasashii",
+  "meaning_id": "baik hati, lembut",
+  "meaning_en": "kind, gentle",
+  "jlpt": "n3",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "hubungan",
+    "emosi"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Menggambarkan karakter yang ramah dan penuh perhatian.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼はみんなに優しい。",
+      "id": "Dia baik kepada semua orang.",
+      "level": "n3",
+      "tags": [
+        "hubungan"
+      ]
+    },
+    {
+      "jp": "優しい言葉をかけてくれた。",
+      "id": "Dia mengucapkan kata-kata yang lembut.",
+      "level": "n3",
+      "tags": [
+        "emosi"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [
+    "vg-n3-00044"
+  ],
+  "see_also": [],
+  "added_v": "v14.27"
+},
+
+{
+  "id": "vg-n3-00046",
+  "word": "深い",
+  "reading": "ふかい",
+  "romaji": "fukai",
+  "meaning_id": "dalam",
+  "meaning_en": "deep",
+  "jlpt": "n3",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Bisa literal (air dalam) atau figuratif (makna yang dalam, hubungan yang mendalam).",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この川は深いから気をつけて。",
+      "id": "Sungai ini dalam, hati-hati.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "日本文化について深い知識がある。",
+      "id": "Punya pengetahuan mendalam tentang budaya Jepang.",
+      "level": "n3",
+      "tags": [
+        "akademik"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v14.27"
+},
+
+{
+  "id": "vg-n3-00047",
+  "word": "珍しい",
+  "reading": "めずらしい",
+  "romaji": "mezurashii",
+  "meaning_id": "langka, jarang",
+  "meaning_en": "rare, unusual",
+  "jlpt": "n3",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Sesuatu yang tidak umum dan karena itu menarik.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "珍しい魚を見つけた。",
+      "id": "Menemukan ikan langka.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "あの人が遅刻するのは珍しい。",
+      "id": "Jarang sekali orang itu terlambat.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v14.27"
+},
+
+{
+  "id": "vg-n3-00048",
+  "word": "恥ずかしい",
+  "reading": "はずかしい",
+  "romaji": "hazukashii",
+  "meaning_id": "malu",
+  "meaning_en": "embarrassing, ashamed",
+  "jlpt": "n3",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "emosi"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "diri-sendiri"
+  ],
+  "nuance": "Perasaan malu — bisa karena melakukan kesalahan atau karena diperhatikan.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "みんなの前で歌うのは恥ずかしい。",
+      "id": "Malu bernyanyi di depan semua orang.",
+      "level": "n3",
+      "tags": [
+        "emosi"
+      ]
+    },
+    {
+      "jp": "恥ずかしくて何も言えなかった。",
+      "id": "Terlalu malu sehingga tidak bisa bilang apa-apa.",
+      "level": "n3",
+      "tags": [
+        "emosi"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v14.27"
+},
+
+{
+  "id": "vg-n3-00111",
+  "word": "珍しい",
+  "reading": "めずらしい",
+  "romaji": "mezurashii",
+  "meaning_id": "langka, jarang ada",
+  "meaning_en": "rare, unusual",
+  "jlpt": "n3",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "deskripsi"
+  ],
+  "register": "neutral",
+  "nuance": null,
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この花は日本では<b>珍しい</b>。",
+      "id": "Bunga ini langka di Jepang.",
+      "level": "n3",
+      "tags": [
+        "alam-lingkungan"
+      ]
+    },
+    {
+      "jp": "<b>珍しい</b>名前ですね。",
+      "id": "Nama yang tidak biasa ya.",
+      "level": "n3",
+      "tags": [
+        "hubungan-konsep"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00112",
+  "word": "厳しい",
+  "reading": "きびしい",
+  "romaji": "kibishii",
+  "meaning_id": "ketat, keras, berat",
+  "meaning_en": "strict, severe",
+  "jlpt": "n3",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "deskripsi",
+    "kepribadian"
+  ],
+  "register": "neutral",
+  "nuance": "Untuk orang (guru ketat) atau kondisi (cuaca berat).",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "父はしつけが<b>厳しかった</b>。",
+      "id": "Ayah keras soal disiplin.",
+      "level": "n3",
+      "tags": [
+        "keluarga"
+      ]
+    },
+    {
+      "jp": "今年の冬は<b>厳しい</b>と言われている。",
+      "id": "Dikatakan musim dingin tahun ini akan berat.",
+      "level": "n3",
+      "tags": [
+        "alam-lingkungan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00113",
+  "word": "丁寧な",
+  "reading": "ていねいな",
+  "romaji": "teinei na",
+  "meaning_id": "sopan, teliti",
+  "meaning_en": "polite, careful",
+  "jlpt": "n3",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "kepribadian"
+  ],
+  "register": "formal",
+  "nuance": "Untuk orang sopan atau pekerjaan yang dikerjakan teliti.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼女は<b>丁寧に</b>説明してくれた。",
+      "id": "Dia menjelaskan dengan teliti.",
+      "level": "n3",
+      "tags": [
+        "bahasa-komunikasi"
+      ]
+    },
+    {
+      "jp": "<b>丁寧な</b>言葉遣いを心がけています。",
+      "id": "Berusaha memakai kata-kata yang sopan.",
+      "level": "n3",
+      "tags": [
+        "sopan-santun"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00114",
+  "word": "複雑な",
+  "reading": "ふくざつな",
+  "romaji": "fukuzatsu na",
+  "meaning_id": "rumit, kompleks",
+  "meaning_en": "complicated",
+  "jlpt": "n3",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "deskripsi"
+  ],
+  "register": "neutral",
+  "nuance": null,
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この問題は<b>複雑で</b>すぐには解けない。",
+      "id": "Masalah ini rumit, tidak bisa langsung diselesaikan.",
+      "level": "n3",
+      "tags": [
+        "pendidikan"
+      ]
+    },
+    {"jp": "二人の関係は<b>複雑</b>だ。", "id": "Hubungan keduanya rumit.", "level": "n3", "tags": ["karakter"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00115",
+  "word": "正直な",
+  "reading": "しょうじきな",
+  "romaji": "shoujiki na",
+  "meaning_id": "jujur",
+  "meaning_en": "honest",
+  "jlpt": "n3",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kepribadian"
+  ],
+  "register": "neutral",
+  "nuance": "Juga sebagai adverb: 正直に言うと (kalau mau jujur...).",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "<b>正直に</b>言うと、あまり好きじゃない。",
+      "id": "Kalau jujur, aku kurang suka.",
+      "level": "n3",
+      "tags": [
+        "bahasa-komunikasi"
+      ]
+    },
+    {
+      "jp": "彼は<b>正直な</b>人だ。",
+      "id": "Dia orang yang jujur.",
+      "level": "n3",
+      "tags": [
+        "kepribadian"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00196", "word": "嬉しい", "reading": "うれしい", "romaji": "ureshii",
+  "meaning_id": "senang, gembira", "meaning_en": "happy, glad",
+  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["emosi", "emosi-positif"], "register": "neutral",
+  "lawan_bicara": ["teman", "umum"], "nuance": "Berbeda dari 楽しい (menyenangkan secara aktif) — 嬉しい adalah perasaan bahagia karena menerima sesuatu atau kejadian yang menggembirakan.",
+  "conj_type": "adj-i",
+  "examples": [
+    {"jp": "合格の知らせを聞いて、本当に嬉しかった。", "id": "Mendengar kabar kelulusan, aku benar-benar senang.", "level": "n3", "tags": ["emosi-positif"]},
+    {"jp": "プレゼントをもらって、子どもはとても嬉しそうだった。", "id": "Setelah diberi hadiah, anak itu terlihat sangat gembira.", "level": "n3", "tags": ["emosi-positif", "kehidupan-sehari"]},
+    {"jp": "久しぶりに会えて嬉しいです。", "id": "Senang bisa bertemu lagi setelah lama.", "level": "n3", "tags": ["pertemanan"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00197", "word": "悲しい", "reading": "かなしい", "romaji": "kanashii",
+  "meaning_id": "sedih", "meaning_en": "sad, sorrowful",
+  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["emosi", "emosi-negatif"], "register": "neutral",
+  "lawan_bicara": ["teman", "umum"], "nuance": "Menggambarkan kesedihan mendalam, sering karena kehilangan atau perpisahan. Bentuk kata benda: 悲しみ (kesedihan). Lebih dalam dari つまらない (membosankan/mengecewakan).",
+  "conj_type": "adj-i",
+  "examples": [
+    {"jp": "大切な人を失って、悲しくて涙が止まらなかった。", "id": "Kehilangan orang yang berharga, sedihnya sampai tidak bisa berhenti menangis.", "level": "n3", "tags": ["emosi-negatif"]},
+    {"jp": "その映画の結末はとても悲しかった。", "id": "Akhir dari film itu sangat menyedihkan.", "level": "n3", "tags": ["hiburan", "emosi-negatif"]},
+    {"jp": "友達が転校すると聞いて悲しくなった。", "id": "Mendengar bahwa teman pindah sekolah, aku jadi sedih.", "level": "n3", "tags": ["pertemanan"]}
+  ],
+  "synonyms": [], "antonyms": ["vg-n3-00196"], "see_also": ["vg-n3-00198"], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00198", "word": "寂しい", "reading": "さびしい", "romaji": "sabishii",
+  "meaning_id": "kesepian, merasa sepi", "meaning_en": "lonely, lonesome",
+  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["emosi", "emosi-negatif"], "register": "neutral",
+  "lawan_bicara": ["teman", "umum"], "nuance": "Bisa juga ditulis 淋しい. Fokus pada rasa sepi karena sendirian atau ditinggal, berbeda dari 悲しい yang lebih umum untuk kesedihan.",
+  "conj_type": "adj-i",
+  "examples": [
+    {"jp": "一人で暮らし始めてから、夜がとても寂しい。", "id": "Sejak mulai tinggal sendiri, malam hari terasa sangat sepi.", "level": "n3", "tags": ["kehidupan-sehari", "emosi-negatif"]},
+    {"jp": "友達がみんな帰ってしまい、寂しくなった。", "id": "Semua teman sudah pulang, jadi aku merasa kesepian.", "level": "n3", "tags": ["pertemanan"]},
+    {"jp": "彼女は「もっと話しかけてほしい」と寂しそうに言った。", "id": "Dia berkata dengan wajah sedih, 'Aku ingin kamu lebih sering mengajak bicara.'", "level": "n3", "tags": ["percintaan"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00197"], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00199", "word": "つらい", "reading": "つらい", "romaji": "tsurai",
+  "meaning_id": "menyakitkan, berat hati, sulit ditanggung", "meaning_en": "painful, hard, tough",
+  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["emosi", "emosi-negatif"], "register": "neutral",
+  "lawan_bicara": ["teman", "umum"], "nuance": "Dipakai untuk rasa sakit fisik maupun beban mental yang berat. Sering diucapkan untuk situasi yang melelahkan jiwa, seperti pekerjaan menekan atau hubungan yang menyiksa.",
+  "conj_type": "adj-i",
+  "examples": [
+    {"jp": "毎日残業が続いて、本当につらい。", "id": "Lembur setiap hari terus-terusan, sungguh berat.", "level": "n3", "tags": ["pekerjaan", "emosi-negatif"]},
+    {"jp": "親に怒られたとき、つらくて泣いてしまった。", "id": "Saat dimarahi orang tua, rasanya berat sampai aku menangis.", "level": "n3", "tags": ["keluarga", "emosi-negatif"]},
+    {"jp": "失恋はいつもつらいものだ。", "id": "Putus cinta selalu menyakitkan.", "level": "n3", "tags": ["percintaan"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00200", "word": "怖い", "reading": "こわい", "romaji": "kowai",
+  "meaning_id": "takut, menakutkan", "meaning_en": "scary, frightening, afraid",
+  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["emosi", "emosi-negatif"], "register": "neutral",
+  "lawan_bicara": ["teman", "umum"], "nuance": "Merupakan reaksi perasaan subjektif terhadap hal yang menakutkan. Berbeda dari 危ない (bahaya objektif) — 怖い adalah perasaan takut, 危ない adalah kondisi berbahaya.",
+  "conj_type": "adj-i",
+  "examples": [
+    {"jp": "暗い道を一人で歩くのが怖い。", "id": "Aku takut berjalan sendirian di jalan yang gelap.", "level": "n3", "tags": ["kehidupan-sehari", "emosi-negatif"]},
+    {"jp": "その映画は怖くて目を閉じてしまった。", "id": "Film itu sangat menakutkan sampai aku menutup mata.", "level": "n3", "tags": ["hiburan"]},
+    {"jp": "上司の怒鳴り声が怖くて、話しかけられなかった。", "id": "Aku takut dengan suara bentak atasan, sehingga tidak bisa menyapa.", "level": "n3", "tags": ["pekerjaan"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00208"], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00201", "word": "恥ずかしい", "reading": "はずかしい", "romaji": "hazukashii",
+  "meaning_id": "malu", "meaning_en": "embarrassing, ashamed, shy",
+  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["emosi", "emosi-sosial"], "register": "neutral",
+  "lawan_bicara": ["teman", "umum"], "nuance": "Mencakup rasa malu karena berbuat salah di depan umum maupun malu karena dipuji berlebihan. Berbeda dari 失礼 (bersikap tidak sopan) yang lebih berkaitan dengan norma sosial.",
+  "conj_type": "adj-i",
+  "examples": [
+    {"jp": "クラスの前で発表するのが恥ずかしかった。", "id": "Aku malu saat presentasi di depan kelas.", "level": "n3", "tags": ["pendidikan", "emosi-sosial"]},
+    {"jp": "転んで、みんなに笑われてとても恥ずかしかった。", "id": "Terjatuh dan ditertawakan semua orang, rasanya sangat memalukan.", "level": "n3", "tags": ["kehidupan-sehari"]},
+    {"jp": "褒められると恥ずかしくて、うまく返事ができない。", "id": "Kalau dipuji, aku jadi malu dan tidak bisa menjawab dengan baik.", "level": "n3", "tags": ["emosi-sosial"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00202", "word": "悔しい", "reading": "くやしい", "romaji": "kuyashii",
+  "meaning_id": "menyesal karena kalah atau gagal, frustrasi", "meaning_en": "frustrated, vexed, mortified",
+  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["emosi", "emosi-negatif"], "register": "neutral",
+  "lawan_bicara": ["teman", "umum"], "nuance": "Bukan sekadar 'menyesal' (後悔). 悔しい adalah frustrasi spesifik karena gagal, kalah, atau tidak berhasil meski sudah berusaha keras.",
+  "conj_type": "adj-i",
+  "examples": [
+    {"jp": "試合に負けて本当に悔しかった。", "id": "Sungguh menyakitkan kalah dalam pertandingan itu.", "level": "n3", "tags": ["olahraga", "emosi-negatif"]},
+    {"jp": "もう少しで合格できたのに、悔しい。", "id": "Hampir saja bisa lulus, tapi gagal — rasanya frustrasi sekali.", "level": "n3", "tags": ["pendidikan"]},
+    {"jp": "悔しい思いをしたから、次は絶対に頑張る。", "id": "Karena sudah merasakan frustrasi itu, kali ini aku pasti akan berusaha lebih keras.", "level": "n3", "tags": ["keputusan"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00203", "word": "羨ましい", "reading": "うらやましい", "romaji": "urayamashii",
+  "meaning_id": "iri, cemburu, ingin memiliki hal yang sama", "meaning_en": "envious, jealous, enviable",
+  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["emosi", "emosi-sosial"], "register": "neutral",
+  "lawan_bicara": ["teman", "umum"], "nuance": "Tidak selalu negatif — bisa bermakna kagum dan ingin memiliki hal yang sama. Berbeda dari 嫉妬 (shitto) yang lebih kuat dan lebih negatif, terutama dalam konteks romantis.",
+  "conj_type": "adj-i",
+  "examples": [
+    {"jp": "彼はいつも成績がよくて羨ましい。", "id": "Nilainya selalu bagus, aku iri padanya.", "level": "n3", "tags": ["pendidikan", "emosi-sosial"]},
+    {"jp": "海外旅行に行けるなんて、羨ましいな。", "id": "Bisa pergi ke luar negeri, sungguh bikin iri.", "level": "n3", "tags": ["perjalanan"]},
+    {"jp": "仲のいい兄弟を見て、一人っ子の私には羨ましかった。", "id": "Melihat saudara yang akrab, aku sebagai anak tunggal merasa iri.", "level": "n3", "tags": ["keluarga"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00204", "word": "懐かしい", "reading": "なつかしい", "romaji": "natsukashii",
+  "meaning_id": "nostalgia, merindukan masa lalu yang menyenangkan", "meaning_en": "nostalgic, dear (old memories)",
+  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["emosi", "emosi-positif"], "register": "neutral",
+  "lawan_bicara": ["teman", "keluarga", "umum"], "nuance": "Tidak ada padanan tepat dalam bahasa Indonesia. Perasaan hangat saat mengingat masa lalu yang menyenangkan. Tidak bisa dipakai untuk masa depan atau hal yang belum pernah dialami.",
+  "conj_type": "adj-i",
+  "examples": [
+    {"jp": "昔の写真を見て、懐かしくて涙が出た。", "id": "Melihat foto lama, rasa nostalgia membuat air mata menetes.", "level": "n3", "tags": ["emosi-positif"]},
+    {"jp": "この曲を聴くと、子どものころを思い出して懐かしい。", "id": "Mendengar lagu ini, aku teringat masa kecil dan terasa nostalgia.", "level": "n3", "tags": ["hiburan", "emosi"]},
+    {"jp": "久しぶりに地元に帰ったら、懐かしい景色がたくさんあった。", "id": "Ketika pulang ke kampung halaman setelah lama, banyak pemandangan yang membawa rasa nostalgia.", "level": "n3", "tags": ["perjalanan"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00205", "word": "眠い", "reading": "ねむい", "romaji": "nemui",
+  "meaning_id": "ngantuk, mengantuk", "meaning_en": "sleepy, drowsy",
+  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["kehidupan-sehari", "emosi"], "register": "neutral",
+  "lawan_bicara": ["teman", "umum"], "nuance": "Khusus untuk rasa kantuk (ingin tidur). Berbeda dari 疲れた (lelah). Bentuk kata benda: 眠気 (rasa kantuk). Versi formal: 眠気がある.",
+  "conj_type": "adj-i",
+  "examples": [
+    {"jp": "昨日あまり寝られなくて、今日は一日中眠い。", "id": "Kemarin hampir tidak tidur, jadi hari ini ngantuk sepanjang hari.", "level": "n3", "tags": ["kehidupan-sehari"]},
+    {"jp": "授業中に眠くなってしまった。", "id": "Aku jadi mengantuk saat pelajaran berlangsung.", "level": "n3", "tags": ["pendidikan"]},
+    {"jp": "食後はいつも少し眠くなる。", "id": "Setelah makan, aku selalu sedikit mengantuk.", "level": "n3", "tags": ["kehidupan-sehari"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00206", "word": "痛い", "reading": "いたい", "romaji": "itai",
+  "meaning_id": "sakit, nyeri", "meaning_en": "painful, hurting",
+  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["kesehatan", "kehidupan-sehari"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Khusus untuk rasa nyeri fisik. Berbeda dari 具合が悪い (tidak enak badan secara umum). Ungkapan 痛い！ sering diucapkan spontan saat kesakitan.",
+  "conj_type": "adj-i",
+  "examples": [
+    {"jp": "転んで膝が痛い。", "id": "Lutut sakit karena jatuh.", "level": "n3", "tags": ["kesehatan"]},
+    {"jp": "頭が痛くて、仕事に集中できなかった。", "id": "Kepala sakit sehingga tidak bisa berkonsentrasi bekerja.", "level": "n3", "tags": ["pekerjaan", "kesehatan"]},
+    {"jp": "注射は痛いけど、我慢した。", "id": "Suntikan itu sakit, tapi aku tahan.", "level": "n3", "tags": ["kesehatan"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00207", "word": "激しい", "reading": "はげしい", "romaji": "hageshii",
+  "meaning_id": "sengit, keras, intens, kuat", "meaning_en": "intense, fierce, violent, heavy",
+  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["kualitas", "emosi", "alam-lingkungan"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Menggambarkan intensitas tinggi — bisa untuk cuaca, perasaan, pertengkaran, dll. Berbeda dari 厳しい yang fokus pada keketatan aturan atau sikap seseorang.",
+  "conj_type": "adj-i",
+  "examples": [
+    {"jp": "昨夜は激しい雨が降った。", "id": "Tadi malam hujan sangat deras.", "level": "n3", "tags": ["alam-lingkungan"]},
+    {"jp": "二人の言い争いはかなり激しかった。", "id": "Perdebatan antara keduanya cukup sengit.", "level": "n3", "tags": ["emosi-negatif"]},
+    {"jp": "激しい運動の後はよく水を飲んでください。", "id": "Setelah olahraga berat, minumlah air yang cukup.", "level": "n3", "tags": ["olahraga", "kesehatan"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00211"], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00208", "word": "危ない", "reading": "あぶない", "romaji": "abunai",
+  "meaning_id": "berbahaya, awas", "meaning_en": "dangerous, risky, look out",
+  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["kehidupan-sehari", "kualitas"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Dipakai sebagai peringatan spontan ('Awas!') maupun deskripsi situasi berbahaya. Lebih kasual dari 危険 (kiken). Sering diucapkan orang tua kepada anak.",
+  "conj_type": "adj-i",
+  "examples": [
+    {"jp": "危ない！車が来るよ！", "id": "Awas! Ada mobil datang!", "level": "n3", "tags": ["kehidupan-sehari"]},
+    {"jp": "その橋は古くて危ないから、渡らないほうがいい。", "id": "Jembatan itu sudah tua dan berbahaya, sebaiknya jangan dilewati.", "level": "n3", "tags": ["perjalanan"]},
+    {"jp": "子どもだけで川で遊ぶのは危ない。", "id": "Bermain di sungai sendirian tanpa orang dewasa itu berbahaya untuk anak-anak.", "level": "n3", "tags": ["keluarga"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00209", "word": "おかしい", "reading": "おかしい", "romaji": "okashii",
+  "meaning_id": "aneh, tidak normal, lucu, mencurigakan", "meaning_en": "strange, funny, odd, suspicious",
+  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["emosi", "kualitas", "pikiran-opini"], "register": "neutral",
+  "lawan_bicara": ["teman", "umum"], "nuance": "Memiliki dua arti: (1) lucu/menggelikan, (2) aneh/tidak normal/mencurigakan. Konteks menentukan arti. Saat mengomentari perilaku seseorang, gunakan dengan hati-hati agar tidak menyinggung.",
+  "conj_type": "adj-i",
+  "examples": [
+    {"jp": "彼の話し方はちょっとおかしくて、みんなが笑った。", "id": "Cara bicaranya agak lucu sehingga semua orang tertawa.", "level": "n3", "tags": ["pertemanan", "emosi-positif"]},
+    {"jp": "この機械の音がおかしい。点検が必要かもしれない。", "id": "Suara mesin ini terdengar aneh. Mungkin perlu diperiksa.", "level": "n3", "tags": ["pekerjaan"]},
+    {"jp": "最近、彼の様子がおかしいと思って心配している。", "id": "Belakangan ini aku khawatir karena sikapnya tampak tidak seperti biasanya.", "level": "n3", "tags": ["pertemanan"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00226"], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00210", "word": "正しい", "reading": "ただしい", "romaji": "tadashii",
+  "meaning_id": "benar, tepat, sesuai", "meaning_en": "correct, right, proper",
+  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
+  "formalitas": 3, "domain": ["kualitas", "pikiran-opini", "hukum-aturan"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Berarti 'secara moral atau faktual benar.' Berbeda dari 合っている (cocok/tepat secara teknis). 正しい memiliki nuansa lebih formal dan mengandung penilaian etis.",
+  "conj_type": "adj-i",
+  "examples": [
+    {"jp": "彼の言っていることは正しいと思います。", "id": "Saya rasa apa yang dia katakan itu benar.", "level": "n3", "tags": ["pikiran-opini"]},
+    {"jp": "正しい手順で作業をしてください。", "id": "Tolong kerjakan sesuai prosedur yang benar.", "level": "n3", "tags": ["pekerjaan"]},
+    {"jp": "子どもに正しい言葉遣いを教えることは大切だ。", "id": "Mengajarkan penggunaan bahasa yang benar kepada anak adalah hal yang penting.", "level": "n3", "tags": ["pendidikan", "keluarga"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00211", "word": "厳しい", "reading": "きびしい", "romaji": "kibishii",
+  "meaning_id": "ketat, keras, berat, tegas", "meaning_en": "strict, severe, harsh",
+  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
+  "formalitas": 3, "domain": ["karakter", "kualitas", "pekerjaan"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Dipakai untuk orang (guru yang tegas), aturan, kondisi cuaca ekstrem, dll. Tidak selalu negatif — bisa bermakna positif seperti 'tegas demi kebaikan orang lain.'",
+  "conj_type": "adj-i",
+  "examples": [
+    {"jp": "その先生は厳しいけど、生徒から尊敬されている。", "id": "Guru itu tegas, tapi dihormati oleh para siswa.", "level": "n3", "tags": ["pendidikan", "karakter"]},
+    {"jp": "今年の冬は去年より厳しかった。", "id": "Musim dingin tahun ini lebih berat dari tahun lalu.", "level": "n3", "tags": ["alam-lingkungan"]},
+    {"jp": "この業界の競争は非常に厳しい。", "id": "Persaingan di industri ini sangat ketat.", "level": "n3", "tags": ["bisnis"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00207"], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00212", "word": "親切", "reading": "しんせつ", "romaji": "shinsetsu",
+  "meaning_id": "ramah, baik hati", "meaning_en": "kind, helpful, friendly",
+  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["karakter", "emosi-positif", "sopan-santun"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Lebih spesifik dari sekadar 'ramah' — mengacu pada tindakan membantu orang lain dengan tulus. Sering dipakai dalam ungkapan 親切にする (bersikap baik) atau ご親切に (dengan ramahnya — lebih formal).",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "道に迷ったとき、親切な人が助けてくれた。", "id": "Saat tersesat, ada orang baik hati yang menolongku.", "level": "n3", "tags": ["perjalanan", "emosi-positif"]},
+    {"jp": "彼女はいつもみんなに親切にしている。", "id": "Dia selalu bersikap baik kepada semua orang.", "level": "n3", "tags": ["karakter"]},
+    {"jp": "ご親切にありがとうございます。", "id": "Terima kasih atas kebaikan hati Anda.", "level": "n3", "tags": ["sopan-santun"]}
+  ],
+  "synonyms": [], "antonyms": ["vg-n3-00238"], "see_also": ["vg-n3-00213"], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00213", "word": "丁寧", "reading": "ていねい", "romaji": "teinei",
+  "meaning_id": "sopan, teliti, hati-hati", "meaning_en": "polite, careful, thorough",
+  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
+  "formalitas": 3, "domain": ["sopan-santun", "karakter", "bahasa-komunikasi"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Memiliki dua makna: (1) sopan dalam perilaku dan bahasa, (2) teliti/hati-hati dalam mengerjakan sesuatu. 丁寧な仕事 berarti pekerjaan yang dikerjakan dengan cermat dan teliti.",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "彼は言葉遣いがとても丁寧で、話しやすい。", "id": "Cara bicaranya sangat sopan sehingga mudah diajak bicara.", "level": "n3", "tags": ["bahasa-komunikasi", "karakter"]},
+    {"jp": "丁寧な文字で手紙を書いた。", "id": "Aku menulis surat dengan tulisan yang rapi dan teliti.", "level": "n3", "tags": ["bahasa-komunikasi"]},
+    {"jp": "お客様に丁寧に対応するよう指示された。", "id": "Aku diperintahkan untuk melayani pelanggan dengan sopan dan penuh perhatian.", "level": "n3", "tags": ["bisnis", "sopan-santun"]}
+  ],
+  "synonyms": [], "antonyms": ["vg-n3-00214"], "see_also": ["vg-n3-00212"], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00214", "word": "失礼", "reading": "しつれい", "romaji": "shitsurei",
+  "meaning_id": "tidak sopan, tidak hormat, permisi", "meaning_en": "rude, impolite, excuse me",
+  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
+  "formalitas": 3, "domain": ["sopan-santun", "karakter", "bahasa-komunikasi"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Memiliki dua fungsi: (1) sebagai kata sifat 失礼な人 (orang tidak sopan), (2) sebagai ungkapan sopan saat masuk/keluar ruangan atau memotong pembicaraan: 失礼します (permisi).",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "食事中にスマートフォンを見るのは失礼だ。", "id": "Melihat ponsel saat makan bersama adalah hal yang tidak sopan.", "level": "n3", "tags": ["sopan-santun"]},
+    {"jp": "失礼ですが、お名前をお伺いしてもよろしいですか。", "id": "Permisi, boleh saya tanya nama Anda?", "level": "n3", "tags": ["bahasa-komunikasi", "sopan-santun"]},
+    {"jp": "お先に失礼します。", "id": "Permisi, saya pamit lebih dulu.", "level": "n3", "tags": ["pekerjaan", "sopan-santun"]}
+  ],
+  "synonyms": [], "antonyms": ["vg-n3-00213"], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00215", "word": "冷たい", "reading": "つめたい", "romaji": "tsumetai",
+  "meaning_id": "dingin (suhu atau sikap)", "meaning_en": "cold (to touch), cold (attitude)",
+  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["emosi", "kehidupan-sehari", "karakter"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Memiliki dua makna: (1) dingin secara fisik seperti air, tangan, atau minuman; (2) bersikap dingin/tidak peduli terhadap orang lain. Berbeda dari 寒い yang hanya untuk cuaca atau udara dingin.",
+  "conj_type": "adj-i",
+  "examples": [
+    {"jp": "冷たい水を一気に飲んだら、頭が痛くなった。", "id": "Setelah minum air dingin sekaligus, kepalaku jadi sakit.", "level": "n3", "tags": ["kehidupan-sehari"]},
+    {"jp": "彼女は最近、私に冷たい態度をとっている。", "id": "Belakangan ini dia bersikap dingin padaku.", "level": "n3", "tags": ["percintaan", "emosi"]},
+    {"jp": "手が冷たいから、温かい飲み物が欲しい。", "id": "Tanganku dingin, jadi aku ingin minuman hangat.", "level": "n3", "tags": ["kehidupan-sehari"]}
+  ],
+  "synonyms": [], "antonyms": ["vg-n3-00216"], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00216", "word": "温かい", "reading": "あたたかい", "romaji": "atatakai",
+  "meaning_id": "hangat (suhu atau perasaan)", "meaning_en": "warm (temperature or emotion)",
+  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["kehidupan-sehari", "emosi-positif", "karakter"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Memiliki dua arti: (1) hangat secara fisik seperti makanan atau suhu ruangan; (2) hangat secara emosional seperti orang yang penuh kasih. Berbeda dari 暑い yang berarti 'panas tidak nyaman.'",
+  "conj_type": "adj-i",
+  "examples": [
+    {"jp": "温かいスープを飲んだら、体が楽になった。", "id": "Setelah minum sup hangat, badan terasa lebih baik.", "level": "n3", "tags": ["makanan-minuman", "kesehatan"]},
+    {"jp": "彼は温かい人で、困っている人をいつも助ける。", "id": "Dia orang yang hangat hatinya dan selalu membantu yang kesulitan.", "level": "n3", "tags": ["karakter", "emosi-positif"]},
+    {"jp": "温かい言葉をかけてもらって、救われた気がした。", "id": "Menerima kata-kata hangat, aku merasa seperti diselamatkan.", "level": "n3", "tags": ["emosi-positif"]}
+  ],
+  "synonyms": [], "antonyms": ["vg-n3-00215"], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00217", "word": "涼しい", "reading": "すずしい", "romaji": "suzushii",
+  "meaning_id": "sejuk, segar (udara)", "meaning_en": "cool, refreshing (of air or weather)",
+  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["alam-lingkungan", "kehidupan-sehari"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Khusus untuk udara atau angin yang menyegarkan dan nyaman. Berbeda dari 寒い (dingin yang tidak nyaman). Sering dipakai di musim gugur atau di ruangan ber-AC yang nyaman.",
+  "conj_type": "adj-i",
+  "examples": [
+    {"jp": "秋になって、朝晩が涼しくなった。", "id": "Musim gugur tiba, pagi dan malam hari mulai terasa sejuk.", "level": "n3", "tags": ["alam-lingkungan"]},
+    {"jp": "木陰で休んだら、涼しくて気持ちよかった。", "id": "Beristirahat di bawah pohon, terasa sejuk dan nyaman.", "level": "n3", "tags": ["kehidupan-sehari"]},
+    {"jp": "涼しい場所を探して川のそばに座った。", "id": "Aku mencari tempat yang sejuk dan duduk di tepi sungai.", "level": "n3", "tags": ["alam-lingkungan", "perjalanan"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00218", "word": "複雑", "reading": "ふくざつ", "romaji": "fukuzatsu",
+  "meaning_id": "kompleks, rumit, berlapis-lapis", "meaning_en": "complicated, complex",
+  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
+  "formalitas": 3, "domain": ["kualitas", "pikiran-opini", "emosi"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Bisa menggambarkan situasi, masalah, atau perasaan yang rumit berlapis-lapis. 複雑な気持ち (perasaan campur aduk) adalah ungkapan yang sangat umum dipakai orang Jepang.",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "この問題は複雑で、簡単には解決できない。", "id": "Masalah ini rumit dan tidak bisa diselesaikan dengan mudah.", "level": "n3", "tags": ["pikiran-opini"]},
+    {"jp": "複雑な気持ちで、彼の成功を見守った。", "id": "Dengan perasaan campur aduk, aku menyaksikan keberhasilannya.", "level": "n3", "tags": ["emosi"]},
+    {"jp": "この書類の手続きは複雑で時間がかかる。", "id": "Prosedur dokumen ini rumit dan memakan waktu.", "level": "n3", "tags": ["pekerjaan"]}
+  ],
+  "synonyms": [], "antonyms": ["vg-n3-00219"], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00219", "word": "単純", "reading": "たんじゅん", "romaji": "tanjun",
+  "meaning_id": "sederhana, polos, mudah dipahami", "meaning_en": "simple, straightforward, naive",
+  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["kualitas", "karakter", "pikiran-opini"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Tidak selalu bermakna positif. 単純な人 bisa berarti 'orang yang polos/mudah tertipu.' Berbeda dari シンプル (simple) yang biasanya lebih positif dan elegan.",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "このゲームのルールは単純で、すぐに覚えられる。", "id": "Aturan permainan ini sederhana dan cepat diingat.", "level": "n3", "tags": ["hiburan"]},
+    {"jp": "彼は単純な性格で、だまされやすい。", "id": "Dia berwatak polos sehingga mudah ditipu.", "level": "n3", "tags": ["karakter"]},
+    {"jp": "複雑に考えすぎず、単純に考えよう。", "id": "Jangan terlalu dipikirkan rumit, coba pikirkan secara sederhana.", "level": "n3", "tags": ["pikiran-opini"]}
+  ],
+  "synonyms": [], "antonyms": ["vg-n3-00218"], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00220", "word": "不便", "reading": "ふべん", "romaji": "fuben",
+  "meaning_id": "tidak praktis, tidak nyaman, kurang fasilitas", "meaning_en": "inconvenient, impractical",
+  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["kualitas", "kehidupan-sehari"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Kebalikan dari 便利 (benri/praktis). Mengacu pada ketidakpraktisan karena kondisi, fasilitas, atau lokasi — bukan karena orang.",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "田舎は自然が豊かだが、生活が不便なこともある。", "id": "Pedesaan kaya akan alam, namun kehidupannya terkadang kurang praktis.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]},
+    {"jp": "電車が少ない地域は移動が不便だ。", "id": "Di daerah yang kereta apinya jarang, mobilitas terasa tidak nyaman.", "level": "n3", "tags": ["perjalanan"]},
+    {"jp": "スマートフォンがないと、とても不便に感じる。", "id": "Tanpa ponsel pintar, aku merasa sangat tidak praktis.", "level": "n3", "tags": ["teknologi"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00221", "word": "正確", "reading": "せいかく", "romaji": "seikaku",
+  "meaning_id": "akurat, tepat, presisi", "meaning_en": "accurate, exact, precise",
+  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
+  "formalitas": 3, "domain": ["kualitas", "pikiran-opini", "pekerjaan"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Lebih kuat dari 正しい untuk konteks data, angka, waktu, dan informasi teknis. 正確な時間 (waktu yang tepat/akurat), 正確な情報 (informasi yang akurat).",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "このデータは正確ですか？", "id": "Apakah data ini akurat?", "level": "n3", "tags": ["pekerjaan"]},
+    {"jp": "正確な情報を伝えることが大切だ。", "id": "Menyampaikan informasi yang akurat adalah hal yang penting.", "level": "n3", "tags": ["bahasa-komunikasi"]},
+    {"jp": "彼女は時間に正確で、遅刻したことがない。", "id": "Dia sangat tepat waktu dan tidak pernah terlambat.", "level": "n3", "tags": ["karakter"]}
+  ],
+  "synonyms": [], "antonyms": ["vg-n3-00222"], "see_also": ["vg-n3-00210"], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00222", "word": "不正確", "reading": "ふせいかく", "romaji": "fuseikaku",
+  "meaning_id": "tidak akurat, tidak tepat", "meaning_en": "inaccurate, imprecise",
+  "jlpt": "n3", "pos": "na-adj", "common": false, "related_grammar": [],
+  "formalitas": 3, "domain": ["kualitas", "pikiran-opini"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Kebalikan langsung dari 正確. Dipakai dalam konteks akademis, berita, laporan resmi, atau penilaian teknis. Lebih formal dari ただしくない.",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "このレポートには不正確な情報が含まれている。", "id": "Laporan ini mengandung informasi yang tidak akurat.", "level": "n3", "tags": ["pekerjaan", "pikiran-opini"]},
+    {"jp": "不正確なデータを使うと、結果が信頼できなくなる。", "id": "Jika menggunakan data yang tidak akurat, hasilnya tidak bisa dipercaya.", "level": "n3", "tags": ["ilmu-pengetahuan"]},
+    {"jp": "その記事の内容は不正確だと指摘された。", "id": "Isi artikel itu dikritik sebagai tidak akurat.", "level": "n3", "tags": ["media"]}
+  ],
+  "synonyms": [], "antonyms": ["vg-n3-00221"], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00223", "word": "十分", "reading": "じゅうぶん", "romaji": "juubun",
+  "meaning_id": "cukup, memadai", "meaning_en": "enough, sufficient",
+  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["kuantitas", "kualitas"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Bisa dipakai sebagai kata sifat maupun adverbia (十分に = dengan cukup). Lebih formal dari まあまあ. 十分な準備 = persiapan yang memadai.",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "試験の前に十分な準備をした。", "id": "Aku mempersiapkan diri secara memadai sebelum ujian.", "level": "n3", "tags": ["pendidikan"]},
+    {"jp": "睡眠を十分に取ることは健康の基本だ。", "id": "Tidur yang cukup adalah dasar dari kesehatan.", "level": "n3", "tags": ["kesehatan"]},
+    {"jp": "この説明で十分ですか？", "id": "Apakah penjelasan ini sudah cukup?", "level": "n3", "tags": ["bahasa-komunikasi"]}
+  ],
+  "synonyms": [], "antonyms": ["vg-n3-00224"], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00224", "word": "不十分", "reading": "ふじゅうぶん", "romaji": "fujuubun",
+  "meaning_id": "tidak cukup, kurang memadai", "meaning_en": "insufficient, inadequate",
+  "jlpt": "n3", "pos": "na-adj", "common": false, "related_grammar": [],
+  "formalitas": 3, "domain": ["kuantitas", "kualitas"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Dipakai dalam konteks formal seperti laporan, evaluasi, atau penilaian. Berbeda dari 足りない yang lebih kasual dan konkret (misal: uang tidak cukup).",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "準備が不十分なまま発表してしまった。", "id": "Aku mempresentasikan sesuatu dalam kondisi persiapan yang kurang memadai.", "level": "n3", "tags": ["pekerjaan", "pendidikan"]},
+    {"jp": "その研究の証拠は不十分だと批判された。", "id": "Bukti penelitian itu dikritik sebagai tidak mencukupi.", "level": "n3", "tags": ["ilmu-pengetahuan"]},
+    {"jp": "不十分な説明では、相手に伝わらない。", "id": "Dengan penjelasan yang tidak memadai, pesan tidak akan tersampaikan.", "level": "n3", "tags": ["bahasa-komunikasi"]}
+  ],
+  "synonyms": [], "antonyms": ["vg-n3-00223"], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00225", "word": "特別", "reading": "とくべつ", "romaji": "tokubetsu",
+  "meaning_id": "istimewa, khusus", "meaning_en": "special, particular",
+  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["kualitas", "kehidupan-sehari"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Bisa berfungsi sebagai na-adj maupun adverbia (特別に = secara khusus). 特別な日 (hari istimewa), 特別扱い (perlakuan istimewa/khusus).",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "今日は特別な日なので、レストランを予約した。", "id": "Hari ini adalah hari istimewa, jadi aku memesan restoran.", "level": "n3", "tags": ["kehidupan-sehari", "percintaan"]},
+    {"jp": "彼女は私にとって特別な存在だ。", "id": "Baginya, dia adalah keberadaan yang istimewa bagiku.", "level": "n3", "tags": ["percintaan", "emosi"]},
+    {"jp": "今回は特別に参加を許可します。", "id": "Kali ini, secara khusus kamu diizinkan untuk ikut.", "level": "n3", "tags": ["hukum-aturan"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00226", "word": "珍しい", "reading": "めずらしい", "romaji": "mezurashii",
+  "meaning_id": "langka, jarang ditemui, tidak biasa", "meaning_en": "rare, unusual, uncommon",
+  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["kualitas", "kehidupan-sehari"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Dipakai untuk benda, kejadian, atau orang yang jarang ditemui. Sering diucapkan saat kagum melihat sesuatu tidak biasa. Tidak negatif — lebih bermakna 'menarik karena langka.'",
+  "conj_type": "adj-i",
+  "examples": [
+    {"jp": "こんな珍しい鳥は初めて見た。", "id": "Ini pertama kalinya aku melihat burung selangka ini.", "level": "n3", "tags": ["alam-lingkungan"]},
+    {"jp": "彼女が遅刻するなんて、珍しいことだ。", "id": "Sungguh tidak biasa kalau dia sampai terlambat.", "level": "n3", "tags": ["kehidupan-sehari"]},
+    {"jp": "珍しいコインを集めるのが趣味だ。", "id": "Mengoleksi koin langka adalah hobinya.", "level": "n3", "tags": ["hiburan"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00227"], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00227", "word": "不思議", "reading": "ふしぎ", "romaji": "fushigi",
+  "meaning_id": "aneh, misterius, ajaib, membuat penasaran", "meaning_en": "mysterious, strange, wonderful, puzzling",
+  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["kualitas", "pikiran-opini", "emosi"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Berbeda dari おかしい (aneh dalam arti ganjil/mencurigakan). 不思議 mengandung unsur keajaiban atau misteri yang membuat penasaran — tidak selalu negatif, bisa bermakna 'ajaib.'",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "なぜ空が青いのか、子どもには不思議に見えるだろう。", "id": "Mengapa langit berwarna biru — bagi anak-anak, itu pasti terlihat misterius.", "level": "n3", "tags": ["ilmu-pengetahuan"]},
+    {"jp": "不思議なことに、その日だけ雨が降らなかった。", "id": "Anehnya, hanya hari itu saja tidak turun hujan.", "level": "n3", "tags": ["alam-lingkungan"]},
+    {"jp": "この絵には不思議な魅力がある。", "id": "Lukisan ini memiliki daya tarik yang misterius.", "level": "n3", "tags": ["seni-budaya"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00209"], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00228", "word": "素晴らしい", "reading": "すばらしい", "romaji": "subarashii",
+  "meaning_id": "luar biasa, menakjubkan, hebat", "meaning_en": "wonderful, magnificent, superb",
+  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["emosi-positif", "kualitas", "pikiran-opini"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Ungkapan kekaguman yang tulus dan kuat. Lebih kuat dari いい (bagus). Sering dipakai untuk memuji penampilan, karya, atau prestasi seseorang secara sungguh-sungguh.",
+  "conj_type": "adj-i",
+  "examples": [
+    {"jp": "そのコンサートは素晴らしくて、感動した。", "id": "Konser itu luar biasa, aku sangat terharu.", "level": "n3", "tags": ["hiburan", "emosi-positif"]},
+    {"jp": "こんな素晴らしい景色は見たことがない。", "id": "Aku belum pernah melihat pemandangan seindah ini.", "level": "n3", "tags": ["perjalanan", "alam-lingkungan"]},
+    {"jp": "彼女の演奏は本当に素晴らしかった。", "id": "Permainan musiknya sungguh-sungguh menakjubkan.", "level": "n3", "tags": ["seni-budaya"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00229", "word": "大切", "reading": "たいせつ", "romaji": "taisetsu",
+  "meaning_id": "berharga, penting (secara emosional atau personal)", "meaning_en": "precious, important, dear",
+  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["emosi", "kualitas", "karakter"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Fokus pada nilai emosional atau personal. 大切な人 = orang yang dicintai/disayangi. Berbeda dari 重要 (juuyou) yang lebih formal dan objektif.",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "家族は私にとって一番大切な存在だ。", "id": "Keluarga adalah orang-orang yang paling berharga bagiku.", "level": "n3", "tags": ["keluarga", "emosi"]},
+    {"jp": "大切なものを失いたくないから、しっかり守る。", "id": "Karena tidak ingin kehilangan hal yang berharga, aku menjaganya dengan sungguh-sungguh.", "level": "n3", "tags": ["emosi", "keputusan"]},
+    {"jp": "時間は大切に使わなければならない。", "id": "Waktu harus digunakan dengan sebaik-baiknya.", "level": "n3", "tags": ["waktu"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00230"], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00230", "word": "大事", "reading": "だいじ", "romaji": "daiji",
+  "meaning_id": "penting, berharga, urusan besar", "meaning_en": "important, precious, serious matter",
+  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["kualitas", "emosi", "keputusan"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Hampir sama dengan 大切, tapi 大事 lebih luas — bisa berarti 'urusan serius/masalah besar' (大事になる = menjadi masalah besar). Keduanya sering bisa dipertukarkan dalam percakapan.",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "体が一番大事だから、無理をしないでください。", "id": "Kesehatan adalah yang paling penting, jadi jangan memaksakan diri.", "level": "n3", "tags": ["kesehatan", "kualitas"]},
+    {"jp": "小さなミスが大事になることもある。", "id": "Kesalahan kecil pun bisa berkembang menjadi masalah besar.", "level": "n3", "tags": ["pekerjaan", "keputusan"]},
+    {"jp": "大事な書類をなくさないように気をつけてください。", "id": "Harap berhati-hati agar tidak kehilangan dokumen penting itu.", "level": "n3", "tags": ["pekerjaan"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00229"], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00231", "word": "安心", "reading": "あんしん", "romaji": "anshin",
+  "meaning_id": "lega, tenang hati, merasa aman", "meaning_en": "relief, peace of mind, reassurance",
+  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["emosi", "emosi-positif"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Perasaan lega setelah sesuatu yang dikhawatirkan ternyata berjalan baik. 安心する (merasa lega), 安心させる (menenangkan seseorang). Kebalikan dari 心配.",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "無事に着いたと連絡が来て、安心した。", "id": "Mendapat kabar bahwa mereka tiba dengan selamat, aku merasa lega.", "level": "n3", "tags": ["emosi-positif", "keluarga"]},
+    {"jp": "医者に「問題ない」と言われて、やっと安心できた。", "id": "Setelah dokter bilang 'tidak ada masalah,' akhirnya aku bisa merasa tenang.", "level": "n3", "tags": ["kesehatan"]},
+    {"jp": "安心して任せられる人に仕事を頼んだ。", "id": "Aku meminta pekerjaan itu kepada orang yang bisa dipercaya dengan tenang.", "level": "n3", "tags": ["pekerjaan"]}
+  ],
+  "synonyms": [], "antonyms": ["vg-n3-00232"], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00232", "word": "心配", "reading": "しんぱい", "romaji": "shinpai",
+  "meaning_id": "khawatir, cemas", "meaning_en": "worried, anxious, concern",
+  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["emosi", "emosi-negatif"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Sangat umum dipakai. 心配する (merasa khawatir), 心配をかける (membuat orang lain khawatir). Biasanya ditujukan kepada orang yang disayangi.",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "子どもが夜遅くまで帰らなくて、心配した。", "id": "Anak tidak pulang sampai malam, aku jadi khawatir.", "level": "n3", "tags": ["keluarga", "emosi-negatif"]},
+    {"jp": "試験の結果が心配で、眠れなかった。", "id": "Aku cemas dengan hasil ujian sampai tidak bisa tidur.", "level": "n3", "tags": ["pendidikan"]},
+    {"jp": "ご心配なく、ちゃんと対応します。", "id": "Jangan khawatir, kami akan menanganinya dengan baik.", "level": "n3", "tags": ["bahasa-komunikasi"]}
+  ],
+  "synonyms": [], "antonyms": ["vg-n3-00231"], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00233", "word": "得意", "reading": "とくい", "romaji": "tokui",
+  "meaning_id": "mahir, jagoan, pandai dalam sesuatu", "meaning_en": "good at, skilled in, one's forte",
+  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["karakter", "emosi-positif", "pendidikan"], "register": "neutral",
+  "lawan_bicara": ["teman", "umum"], "nuance": "Berbeda dari 上手 (jouzu) yang merupakan penilaian dari luar. 得意 adalah pengakuan diri sendiri tentang kelebihan. 得意な科目 = mata pelajaran yang paling dikuasai.",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "数学が得意なので、計算は速い。", "id": "Karena aku jagoan matematika, hitunganku cepat.", "level": "n3", "tags": ["pendidikan"]},
+    {"jp": "料理が得意な友達がいつも夕食を作ってくれる。", "id": "Temanku yang jago masak selalu membuatkan makan malam.", "level": "n3", "tags": ["makanan-minuman", "pertemanan"]},
+    {"jp": "得意なことで人の役に立てるのが嬉しい。", "id": "Aku senang bisa membantu orang dengan keahlianku.", "level": "n3", "tags": ["emosi-positif", "karakter"]}
+  ],
+  "synonyms": [], "antonyms": ["vg-n3-00234"], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00234", "word": "苦手", "reading": "にがて", "romaji": "nigate",
+  "meaning_id": "tidak pandai, kurang nyaman dengan sesuatu atau seseorang", "meaning_en": "bad at, not good with, weak point",
+  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["karakter", "emosi", "pendidikan"], "register": "neutral",
+  "lawan_bicara": ["teman", "umum"], "nuance": "Lebih lembut dari 嫌い (benci). 苦手 berarti 'tidak jago' atau 'kurang nyaman dengan sesuatu/seseorang' tanpa konotasi benci. Sangat sering dipakai orang Jepang untuk menghindari konfrontasi langsung.",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "英語が苦手で、授業のたびに緊張する。", "id": "Aku kurang pandai bahasa Inggris, jadi selalu gugup setiap pelajaran.", "level": "n3", "tags": ["pendidikan", "emosi"]},
+    {"jp": "人前で話すのが苦手だ。", "id": "Aku kurang nyaman berbicara di depan orang banyak.", "level": "n3", "tags": ["emosi-sosial"]},
+    {"jp": "虫は少し苦手ですが、害はないとわかっています。", "id": "Aku agak tidak nyaman dengan serangga, tapi aku tahu mereka tidak berbahaya.", "level": "n3", "tags": ["alam-lingkungan"]}
+  ],
+  "synonyms": [], "antonyms": ["vg-n3-00233"], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00235", "word": "真剣", "reading": "しんけん", "romaji": "shinken",
+  "meaning_id": "serius, sungguh-sungguh, penuh komitmen", "meaning_en": "serious, earnest, in earnest",
+  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["karakter", "keputusan", "pekerjaan"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Berasal dari kata 'pedang tajam' (真剣). Menekankan kesungguhan total dan komitmen penuh — lebih kuat dari sekadar 真面目 (serius/rajin biasa).",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "彼は仕事に真剣に取り組んでいる。", "id": "Dia mengerjakan pekerjaannya dengan sungguh-sungguh.", "level": "n3", "tags": ["pekerjaan", "karakter"]},
+    {"jp": "冗談ではなく、真剣に言っているんだ。", "id": "Ini bukan bercanda, aku mengatakannya dengan serius.", "level": "n3", "tags": ["bahasa-komunikasi"]},
+    {"jp": "将来のことを真剣に考える時期が来た。", "id": "Saatnya untuk memikirkan masa depan dengan sungguh-sungguh.", "level": "n3", "tags": ["keputusan"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00236", "word": "素直", "reading": "すなお", "romaji": "sunao",
+  "meaning_id": "jujur, terbuka, penurut, tidak berkelit", "meaning_en": "honest, obedient, straightforward, gentle",
+  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["karakter", "emosi-positif", "sopan-santun"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Mengandung makna positif: menerima dengan tulus, tidak membantah tanpa alasan, dan bersikap terbuka. Berbeda dari 正直 yang fokus pada kejujuran dalam berkata-kata; 素直 lebih pada kejujuran sikap hati.",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "素直に謝れる人は信頼される。", "id": "Orang yang bisa meminta maaf dengan tulus akan dipercaya.", "level": "n3", "tags": ["karakter", "emosi-positif"]},
+    {"jp": "彼女は素直な性格で、怒っても長く引きずらない。", "id": "Dia berkarakter terbuka; meski marah, tidak pernah lama memendam.", "level": "n3", "tags": ["karakter"]},
+    {"jp": "素直にアドバイスを受け入れた。", "id": "Aku menerima saran itu dengan tulus dan terbuka.", "level": "n3", "tags": ["keputusan"]}
+  ],
+  "synonyms": [], "antonyms": ["vg-n3-00237"], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00237", "word": "頑固", "reading": "がんこ", "romaji": "ganko",
+  "meaning_id": "keras kepala, teguh pendirian", "meaning_en": "stubborn, obstinate, headstrong",
+  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["karakter", "emosi"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Bisa bermakna negatif (ngotot tidak mau berubah) atau positif (berpendirian teguh). Konteks menentukan. 頑固なおじいさん sering digambarkan dalam budaya Jepang sebagai sosok kuat namun sulit diajak berkompromi.",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "父は頑固で、一度決めたら絶対に曲げない。", "id": "Ayahku keras kepala; sekali memutuskan sesuatu, tidak pernah mau berubah.", "level": "n3", "tags": ["keluarga", "karakter"]},
+    {"jp": "彼の頑固さが時に仕事の邪魔になる。", "id": "Kekerasan kepalanya terkadang menjadi penghalang dalam pekerjaan.", "level": "n3", "tags": ["pekerjaan"]},
+    {"jp": "頑固に自分の意見を守り続けた結果、認められた。", "id": "Berkat mempertahankan pendapatnya dengan teguh, akhirnya dia diakui.", "level": "n3", "tags": ["keputusan", "karakter"]}
+  ],
+  "synonyms": [], "antonyms": ["vg-n3-00236"], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00238", "word": "意地悪", "reading": "いじわる", "romaji": "ijiwaru",
+  "meaning_id": "jahat, usil, sengaja menyakiti", "meaning_en": "mean, spiteful, unkind on purpose",
+  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["karakter", "emosi-negatif", "emosi-sosial"], "register": "neutral",
+  "lawan_bicara": ["teman", "umum"], "nuance": "Mengacu pada perilaku sengaja jahil atau menyakiti orang lain. Lebih spesifik dari 悪い (buruk secara umum). 意地悪な人 = orang yang suka usil atau jahat dengan sengaja.",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "意地悪な子がいつもからかってきて、嫌だった。", "id": "Ada anak yang usil yang selalu menggangguku, itu menyebalkan.", "level": "n3", "tags": ["emosi-negatif", "emosi-sosial"]},
+    {"jp": "意地悪な質問をして、困らせようとした。", "id": "Dia mengajukan pertanyaan yang nakal untuk membuatku bingung.", "level": "n3", "tags": ["karakter"]},
+    {"jp": "なぜそんな意地悪なことを言うの？", "id": "Mengapa kamu mengatakan hal yang menyakitkan seperti itu?", "level": "n3", "tags": ["emosi-negatif"]}
+  ],
+  "synonyms": [], "antonyms": ["vg-n3-00212"], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00239", "word": "おとなしい", "reading": "おとなしい", "romaji": "otonashii",
+  "meaning_id": "pendiam, kalem, penurut, tidak membuat masalah", "meaning_en": "quiet, gentle, obedient, docile",
+  "jlpt": "n3", "pos": "i-adj", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["karakter", "emosi"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Tidak selalu berarti pemalu. Bisa berarti kalem dan tidak membuat masalah. 大人しくしなさい = 'Tenang dan diam!' (diucapkan orang tua kepada anak yang ribut).",
+  "conj_type": "adj-i",
+  "examples": [
+    {"jp": "彼はおとなしい性格で、あまり自分から話しかけない。", "id": "Dia berkarakter pendiam dan jarang menyapa duluan.", "level": "n3", "tags": ["karakter"]},
+    {"jp": "この犬はとてもおとなしくて、子どもにも安全だ。", "id": "Anjing ini sangat kalem dan aman untuk anak-anak.", "level": "n3", "tags": ["kehidupan-sehari"]},
+    {"jp": "授業中はおとなしくしてください。", "id": "Tolong bersikap tenang selama pelajaran berlangsung.", "level": "n3", "tags": ["pendidikan"]}
+  ],
+  "synonyms": [], "antonyms": ["vg-n3-00240"], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00240", "word": "積極的", "reading": "せっきょくてき", "romaji": "sekkyokuteki",
+  "meaning_id": "aktif, proaktif, bersemangat mengambil inisiatif", "meaning_en": "positive, proactive, assertive, active",
+  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["karakter", "emosi-positif", "pekerjaan"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Menggambarkan sikap yang mengambil inisiatif tanpa menunggu disuruh. Kebalikan dari 消極的 (shokyokuteki = pasif/tidak aktif). Sangat bernilai positif dalam konteks kerja dan pergaulan di Jepang.",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "彼女は積極的に意見を述べるので、会議で目立つ。", "id": "Dia aktif menyampaikan pendapat sehingga menonjol dalam rapat.", "level": "n3", "tags": ["pekerjaan", "karakter"]},
+    {"jp": "積極的に新しいことに挑戦することが大切だ。", "id": "Penting untuk secara proaktif menantang hal-hal baru.", "level": "n3", "tags": ["keputusan", "karakter"]},
+    {"jp": "もっと積極的に友達を作る努力をしてみよう。", "id": "Mari coba lebih aktif berupaya untuk membuat teman.", "level": "n3", "tags": ["pertemanan", "emosi-positif"]}
+  ],
+  "synonyms": [], "antonyms": ["vg-n3-00239"], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00277", "word": "安全", "reading": "あんぜん", "romaji": "anzen",
+  "meaning_id": "aman, keamanan", "meaning_en": "safety, security",
+  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["kehidupan-sehari", "pekerjaan", "hukum-aturan"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Dipakai sebagai na-adjektif (安全な場所) maupun noun (安全を確保する). Lawannya adalah 危険. Dalam konteks kerja Jepang, 安全 sangat penting: 安全第一 (keselamatan utama) adalah prinsip umum di tempat kerja.",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "この地域は夜でも比較的安全だ。", "id": "Daerah ini relatif aman bahkan di malam hari.", "level": "n3", "tags": ["kehidupan-sehari"]},
+    {"jp": "作業前に安全確認を行ってください。", "id": "Lakukan pemeriksaan keamanan sebelum bekerja.", "level": "n3", "tags": ["pekerjaan"]},
+    {"jp": "子どもたちの安全を守るのが親の責任だ。", "id": "Melindungi keselamatan anak-anak adalah tanggung jawab orang tua.", "level": "n3", "tags": ["keluarga"]}
+  ],
+  "synonyms": [], "antonyms": ["vg-n3-00278"], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00278", "word": "危険", "reading": "きけん", "romaji": "kiken",
+  "meaning_id": "bahaya, berbahaya", "meaning_en": "danger, dangerous",
+  "jlpt": "n3", "pos": "na-adj", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["kehidupan-sehari", "pekerjaan", "kesehatan"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Dipakai sebagai na-adjektif (危険な行為) maupun noun (危険を冒す). Lawannya adalah 安全. Beda dari 怖い (takut/menakutkan) yang bersifat subjektif — 危険 lebih objektif dan faktual.",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "この化学物質は非常に危険だ。", "id": "Zat kimia ini sangat berbahaya.", "level": "n3", "tags": ["ilmu-pengetahuan"]},
+    {"jp": "危険な運転は絶対にしてはいけない。", "id": "Sama sekali tidak boleh berkendara dengan berbahaya.", "level": "n3", "tags": ["kehidupan-sehari"]},
+    {"jp": "嵐の中に出かけるのは危険すぎる。", "id": "Keluar dalam badai terlalu berbahaya.", "level": "n3", "tags": ["alam-lingkungan"]}
+  ],
+  "synonyms": [], "antonyms": ["vg-n3-00277"], "see_also": ["vg-n3-00279"], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00466",
+  "word": "穏やか",
+  "reading": "おだやか",
+  "romaji": "odayaka",
+  "meaning_id": "tenang, kalem, damai",
+  "meaning_en": "calm, gentle, peaceful",
+  "jlpt": "n3",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["emosi", "karakter"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "穏やか menggambarkan sifat tenang dan lembut secara alami, baik untuk kepribadian maupun suasana. Berbeda dari 静か (shizuka — sunyi/hening) yang menekankan ketiadaan suara — 穏やか lebih tentang karakter yang damai dan tidak meledak-ledak.",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "彼女は<b>穏やか</b>な性格で、みんなに好かれている。", "id": "Dia memiliki kepribadian yang tenang dan disukai semua orang.", "level": "n3", "tags": ["karakter", "kehidupan-sehari"]},
+    {"jp": "今日は<b>穏やか</b>な天気で、散歩日和だ。", "id": "Cuaca hari ini damai dan cocok untuk jalan-jalan.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00467",
+  "word": "丁寧",
+  "reading": "ていねい",
+  "romaji": "teinei",
+  "meaning_id": "sopan, teliti, seksama",
+  "meaning_en": "polite, careful, thorough",
+  "jlpt": "n3",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["sopan-santun", "bahasa-komunikasi"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "丁寧 mencakup dua makna: sopan dalam tutur kata/perilaku, dan teliti dalam mengerjakan sesuatu. 丁寧語 adalah ragam bahasa sopan dalam bahasa Jepang. Berbeda dari 礼儀正しい (reigitadashii) yang lebih menekankan etika formal — 丁寧 lebih umum dan mencakup kesungguhan dalam pekerjaan sehari-hari.",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "<b>丁寧</b>な言葉を使って話してください。", "id": "Silakan berbicara menggunakan kata-kata yang sopan.", "level": "n3", "tags": ["bahasa-komunikasi", "sopan-santun"]},
+    {"jp": "彼は仕事を<b>丁寧</b>にこなすので、上司に信頼されている。", "id": "Dia dipercaya oleh atasannya karena mengerjakan pekerjaan dengan teliti.", "level": "n3", "tags": ["pekerjaan", "karakter"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00468",
+  "word": "誠実",
+  "reading": "せいじつ",
+  "romaji": "seijitsu",
+  "meaning_id": "jujur, tulus, berdedikasi",
+  "meaning_en": "sincere, honest, dedicated",
+  "jlpt": "n3",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["karakter", "pekerjaan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "誠実 menekankan kejujuran yang tulus dari hati, bukan sekadar tidak berbohong. Berbeda dari 正直 (shoujiki — jujur secara faktual) yang lebih tentang tidak berbohong — 誠実 lebih dalam, mencakup dedikasi, ketulusan hati, dan konsistensi antara kata dan perbuatan dalam hubungan maupun pekerjaan.",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "<b>誠実</b>な態度で相手に接することが信頼につながる。", "id": "Bersikap tulus terhadap orang lain akan membangun kepercayaan.", "level": "n3", "tags": ["karakter", "hubungan-konsep"]},
+    {"jp": "彼は<b>誠実</b>な人で、どんな約束も必ず守る。", "id": "Dia adalah orang yang tulus dan selalu menepati setiap janjinya.", "level": "n3", "tags": ["karakter", "kehidupan-sehari"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00469",
+  "word": "真剣",
+  "reading": "しんけん",
+  "romaji": "shinken",
+  "meaning_id": "serius, sungguh-sungguh",
+  "meaning_en": "serious, earnest, in earnest",
+  "jlpt": "n3",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["karakter", "pikiran-opini"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "真剣 menggambarkan intensitas dan fokus penuh dalam menghadapi sesuatu pada momen tertentu. Berbeda dari 真面目 (majime — tekun/serius secara kepribadian) yang bersifat konsisten — 真剣 lebih tentang kesungguhan yang muncul saat menghadapi situasi penting, seperti 'benar-benar serius sekarang'.",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "<b>真剣</b>に考えた結果、転職することにした。", "id": "Setelah berpikir sungguh-sungguh, saya memutuskan untuk pindah kerja.", "level": "n3", "tags": ["keputusan", "pekerjaan"]},
+    {"jp": "試合に向けて<b>真剣</b>に練習している。", "id": "Saya berlatih dengan serius untuk mempersiapkan pertandingan.", "level": "n3", "tags": ["olahraga", "karakter"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00470",
+  "word": "冷静",
+  "reading": "れいせい",
+  "romaji": "reisei",
+  "meaning_id": "tenang, tidak panik, dingin kepala",
+  "meaning_en": "calm, composed, cool-headed",
+  "jlpt": "n3",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["emosi", "karakter"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "冷静 berarti mampu mengendalikan emosi dan tidak terbawa panik, terutama dalam situasi menegangkan. Berbeda dari 穏やか (odayaka — damai secara alami) yang menggambarkan sifat bawaan — 冷静 lebih tentang kemampuan aktif untuk mempertahankan ketenangan saat ada tekanan atau krisis.",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "緊急の場合でも<b>冷静</b>に行動することが大切だ。", "id": "Penting untuk bertindak dengan tenang bahkan dalam situasi darurat.", "level": "n3", "tags": ["emosi", "keputusan"]},
+    {"jp": "彼女は怒っても<b>冷静</b>さを失わない。", "id": "Bahkan ketika marah, dia tidak kehilangan ketenangannya.", "level": "n3", "tags": ["emosi", "karakter"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00471",
+  "word": "慎重",
+  "reading": "しんちょう",
+  "romaji": "shinchou",
+  "meaning_id": "berhati-hati, cermat, penuh pertimbangan",
+  "meaning_en": "cautious, careful, prudent",
+  "jlpt": "n3",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["karakter", "keputusan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "慎重 menekankan kehati-hatian dalam proses berpikir dan pengambilan keputusan agar tidak membuat kesalahan. Berbeda dari 丁寧 (teinei — teliti dalam pelaksanaan) yang lebih tentang cara mengerjakan sesuatu — 慎重 lebih tentang mempertimbangkan risiko sebelum bertindak atau memutuskan.",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "<b>慎重</b>に計画を立てることが成功につながる。", "id": "Merencanakan dengan hati-hati akan mengarah pada kesuksesan.", "level": "n3", "tags": ["keputusan", "pekerjaan"]},
+    {"jp": "彼は<b>慎重</b>な性格なので、すぐには決断しない。", "id": "Karena sifatnya yang berhati-hati, dia tidak langsung mengambil keputusan.", "level": "n3", "tags": ["karakter", "kehidupan-sehari"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00472",
+  "word": "積極的",
+  "reading": "せっきょくてき",
+  "romaji": "sekkyokuteki",
+  "meaning_id": "proaktif, aktif, bersemangat",
+  "meaning_en": "proactive, positive, assertive",
+  "jlpt": "n3",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["karakter", "pekerjaan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "積極的 berarti aktif berinisiatif dan tidak menunggu disuruh. Lawan langsungnya adalah 消極的 (shoukyokuteki — pasif). Dalam konteks kerja atau pendidikan, 積極的に参加する = berpartisipasi secara aktif. Sering muncul dalam evaluasi kinerja di Jepang sebagai kualitas yang dipuji.",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "授業では<b>積極的</b>に手を挙げて質問しましょう。", "id": "Di kelas, mari angkat tangan dan bertanya secara aktif.", "level": "n3", "tags": ["pendidikan", "karakter"]},
+    {"jp": "彼女は新しいプロジェクトに<b>積極的</b>に取り組んでいる。", "id": "Dia terlibat secara proaktif dalam proyek baru ini.", "level": "n3", "tags": ["pekerjaan", "karakter"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00473",
+  "word": "消極的",
+  "reading": "しょうきょくてき",
+  "romaji": "shoukyokuteki",
+  "meaning_id": "pasif, tidak antusias, kurang berinisiatif",
+  "meaning_en": "passive, negative, unenthusiastic",
+  "jlpt": "n3",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["karakter"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "消極的 berarti cenderung menghindari tindakan atau kurang berinisiatif. Lawan langsung dari 積極的. Tidak selalu bermakna negatif — dalam beberapa konteks menggambarkan sikap yang menghindari konflik atau tidak memaksakan kehendak. Namun dalam konteks pekerjaan atau pendidikan, biasanya bernuansa kurang baik.",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "彼は会議でいつも<b>消極的</b>な態度をとる。", "id": "Dia selalu bersikap pasif dalam rapat.", "level": "n3", "tags": ["pekerjaan", "karakter"]},
+    {"jp": "<b>消極的</b>な姿勢では、なかなか成長できないよ。", "id": "Dengan sikap yang pasif, kamu akan sulit berkembang.", "level": "n3", "tags": ["karakter", "pendidikan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00474",
+  "word": "柔軟",
+  "reading": "じゅうなん",
+  "romaji": "juunan",
+  "meaning_id": "fleksibel, lentur, adaptif",
+  "meaning_en": "flexible, supple, adaptable",
+  "jlpt": "n3",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["karakter", "pikiran-opini"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "柔軟 bisa berarti fleksibel secara fisik (tubuh lentur) maupun secara pikiran (berpikiran terbuka dan adaptif). 柔軟な対応 = penanganan yang fleksibel. Berbeda dari 自由 (jiyuu — bebas) yang lebih tentang kebebasan tanpa batasan — 柔軟 menekankan kemampuan menyesuaikan diri sesuai kebutuhan.",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "<b>柔軟</b>な発想が新しいアイデアを生む。", "id": "Pemikiran yang fleksibel melahirkan ide-ide baru.", "level": "n3", "tags": ["pikiran-opini", "pekerjaan"]},
+    {"jp": "状況に応じて<b>柔軟</b>に対応することが求められる。", "id": "Kita dituntut untuk merespons secara fleksibel sesuai dengan situasi.", "level": "n3", "tags": ["pekerjaan", "karakter"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00475",
+  "word": "公平",
+  "reading": "こうへい",
+  "romaji": "kouhei",
+  "meaning_id": "adil, tidak memihak, fair",
+  "meaning_en": "fair, impartial, just",
+  "jlpt": "n3",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["karakter", "hukum-aturan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "公平 berarti memberikan perlakuan yang tepat dan tidak memihak. Berbeda dari 平等 (byoudou — kesetaraan/sama rata) yang menekankan distribusi yang identik — 公平 lebih tentang keadilan yang disesuaikan dengan konteks, di mana perlakuan berbeda pun bisa 公平 jika sesuai kebutuhan masing-masing.",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "先生はすべての生徒を<b>公平</b>に扱う。", "id": "Guru memperlakukan semua murid secara adil.", "level": "n3", "tags": ["pendidikan", "hukum-aturan"]},
+    {"jp": "<b>公平</b>な判断を下すことが、リーダーに求められる。", "id": "Mengambil keputusan yang adil adalah tuntutan bagi seorang pemimpin.", "level": "n3", "tags": ["pekerjaan", "hukum-aturan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00476",
+  "word": "不公平",
+  "reading": "ふこうへい",
+  "romaji": "fukouhei",
+  "meaning_id": "tidak adil, berat sebelah",
+  "meaning_en": "unfair, unjust, biased",
+  "jlpt": "n3",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["emosi-negatif", "hukum-aturan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "不公平 adalah antonim langsung dari 公平, menggambarkan perlakuan yang berat sebelah atau tidak merata. Berbeda dari 不平等 (fubyoudou — ketidaksetaraan sistemik) yang lebih sering digunakan dalam konteks sosial atau akademik — 不公平 lebih umum dalam percakapan sehari-hari untuk mengungkapkan rasa tidak adil dalam situasi konkret.",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "あの決定は<b>不公平</b>だと思う。", "id": "Saya rasa keputusan itu tidak adil.", "level": "n3", "tags": ["emosi-negatif", "pikiran-opini"]},
+    {"jp": "同じ仕事なのに給料が違うのは<b>不公平</b>だ。", "id": "Gaji yang berbeda untuk pekerjaan yang sama adalah tidak adil.", "level": "n3", "tags": ["pekerjaan", "hukum-aturan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00477",
+  "word": "独特",
+  "reading": "どくとく",
+  "romaji": "dokutoku",
+  "meaning_id": "unik, khas, berbeda dari yang lain",
+  "meaning_en": "unique, distinctive, peculiar",
+  "jlpt": "n3",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["kualitas", "karakter"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "独特 menekankan keunikan yang membedakan dari yang lain, bisa bernilai positif maupun netral. Berbeda dari ユニーク (yuniiku) yang berasal dari bahasa Inggris dan bernuansa lebih positif/modern — 独特 lebih formal dan bisa juga menyiratkan 'aneh' atau 'tidak biasa' tanpa konotasi positif yang kuat.",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "彼女は<b>独特</b>のファッションセンスを持っている。", "id": "Dia memiliki selera fashion yang khas dan unik.", "level": "n3", "tags": ["karakter", "kehidupan-sehari"]},
+    {"jp": "この地域には<b>独特</b>の文化が根づいている。", "id": "Di daerah ini telah berakar budaya yang khas.", "level": "n3", "tags": ["budaya", "konsep-jepang"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00478",
+  "word": "一般的",
+  "reading": "いっぱんてき",
+  "romaji": "ippanteki",
+  "meaning_id": "umum, lazim, pada umumnya",
+  "meaning_en": "general, common, typical",
+  "jlpt": "n3",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["umum", "pikiran-opini"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "一般的 berarti berlaku luas untuk banyak orang atau situasi, bersifat umum. Berbeda dari 普通 (futsuu — biasa/normal) yang lebih kasual dan sehari-hari — 一般的 lebih formal dan akademis, sering digunakan dalam penjelasan atau analisis. 一般的に言えば = secara umum.",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "<b>一般的</b>に、日本人は礼儀正しいと言われている。", "id": "Secara umum, orang Jepang dikenal sebagai orang yang sopan.", "level": "n3", "tags": ["budaya", "konsep-jepang"]},
+    {"jp": "それは<b>一般的</b>な考え方ではないと思う。", "id": "Saya rasa itu bukan cara berpikir yang umum.", "level": "n3", "tags": ["pikiran-opini", "umum"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00479",
+  "word": "具体的",
+  "reading": "ぐたいてき",
+  "romaji": "gutaiteki",
+  "meaning_id": "konkret, spesifik, disertai contoh nyata",
+  "meaning_en": "concrete, specific, tangible",
+  "jlpt": "n3",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["bahasa-komunikasi", "pikiran-opini"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "具体的 berarti disertai contoh atau detail nyata, bukan abstrak atau samar-samar. Lawan katanya adalah 抽象的 (chuushouteki — abstrak). Sering muncul dalam permintaan klarifikasi: 具体的に教えてください = tolong jelaskan secara konkret. Kata kunci dalam dunia pendidikan dan presentasi bisnis di Jepang.",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "<b>具体的</b>な例を挙げて説明してください。", "id": "Tolong jelaskan dengan memberikan contoh yang konkret.", "level": "n3", "tags": ["bahasa-komunikasi", "pendidikan"]},
+    {"jp": "もっと<b>具体的</b>に話してくれますか？", "id": "Bisakah kamu berbicara lebih spesifik?", "level": "n3", "tags": ["bahasa-komunikasi", "kehidupan-sehari"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00480",
+  "word": "明確",
+  "reading": "めいかく",
+  "romaji": "meikaku",
+  "meaning_id": "jelas, tegas, pasti",
+  "meaning_en": "clear, definite, explicit",
+  "jlpt": "n3",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["bahasa-komunikasi", "pikiran-opini"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "明確 menekankan kejelasan dan ketegasan, tanpa ruang untuk kesalahpahaman. Sering digunakan dalam konteks formal, bisnis, atau akademik. Berbeda dari 明らか (akiraka — jelas/terbukti) yang lebih tentang sesuatu yang sudah nyata terlihat — 明確 lebih tentang menyampaikan atau menetapkan sesuatu dengan tegas dan tidak ambigu.",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "<b>明確</b>な答えをもらえると助かります。", "id": "Saya akan terbantu jika mendapat jawaban yang jelas dan tegas.", "level": "n3", "tags": ["bahasa-komunikasi", "pekerjaan"]},
+    {"jp": "目標を<b>明確</b>にすることが成功への第一歩だ。", "id": "Memperjelas tujuan adalah langkah pertama menuju kesuksesan.", "level": "n3", "tags": ["pikiran-opini", "keputusan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00481",
+  "word": "曖昧",
+  "reading": "あいまい",
+  "romaji": "aimai",
+  "meaning_id": "ambigu, tidak jelas, mendua",
+  "meaning_en": "vague, ambiguous, unclear",
+  "jlpt": "n3",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["bahasa-komunikasi", "karakter"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "曖昧 menggambarkan sesuatu yang tidak jelas atau bisa diartikan lebih dari satu cara. 曖昧な返事 = jawaban yang tidak tegas. Menariknya, dalam budaya Jepang, menjawab secara 曖昧 sering dianggap sopan karena menghindari penolakan langsung — namun bisa membingungkan bagi orang dari budaya yang lebih langsung.",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "<b>曖昧</b>な返事ばかりで、本当のことを言ってほしい。", "id": "Terus menjawab dengan tidak jelas, saya ingin kamu bicara yang sebenarnya.", "level": "n3", "tags": ["bahasa-komunikasi", "emosi"]},
+    {"jp": "彼の説明は<b>曖昧</b>で、よく理解できなかった。", "id": "Penjelasannya ambigu sehingga saya tidak benar-benar mengerti.", "level": "n3", "tags": ["bahasa-komunikasi", "pikiran-opini"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00482",
+  "word": "正式",
+  "reading": "せいしき",
+  "romaji": "seishiki",
+  "meaning_id": "resmi, formal, sah secara prosedur",
+  "meaning_en": "formal, official, proper",
+  "jlpt": "n3",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": ["sopan-santun", "hukum-aturan"],
+  "register": "formal",
+  "lawan_bicara": ["umum"],
+  "nuance": "正式 menekankan keresmiaan sesuai prosedur dan aturan yang berlaku. Berbeda dari 公式 (koushiki — resmi/official secara institusional, seperti situs resmi) — 正式 lebih tentang cara atau proses yang benar dan sah: 正式な手続き = prosedur resmi. Digunakan untuk dokumen, acara, atau cara penyampaian yang sesuai kaidah.",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "<b>正式</b>な契約書にサインしてください。", "id": "Silakan tanda tangani kontrak resmi ini.", "level": "n3", "tags": ["bisnis", "hukum-aturan"]},
+    {"jp": "<b>正式</b>な場ではスーツを着るのが礼儀だ。", "id": "Di acara resmi, mengenakan setelan jas adalah sopan santun.", "level": "n3", "tags": ["sopan-santun", "kehidupan-sehari"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00577",
+  "word": "再生可能",
+  "reading": "さいせいかのう",
+  "romaji": "saisei kanou",
+  "meaning_id": "terbarukan, dapat diperbarui",
+  "meaning_en": "renewable",
+  "jlpt": "n3",
+  "pos": "na-adj",
+  "common": false,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["alam-lingkungan", "ilmu-pengetahuan"],
+  "register": "formal",
+  "lawan_bicara": ["umum"],
+  "nuance": "Na-adjektiva yang hampir selalu muncul dalam frasa 再生可能エネルギー (saisei kanō enerugī = energi terbarukan): tenaga surya (太陽光), angin (風力), air (水力), dan sebagainya. Berbeda dari 再利用可能 (sairiyo kanō = dapat didaur ulang/dipakai ulang). 再生 = pemulihan/regenerasi, 可能 = memungkinkan/bisa.",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "<b>再生可能</b>エネルギーへの移行が世界的な課題だ。", "id": "Transisi ke energi terbarukan adalah tantangan global.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]},
+    {"jp": "太陽光発電は<b>再生可能</b>なエネルギー源の一つだ。", "id": "Pembangkit listrik tenaga surya adalah salah satu sumber energi terbarukan.", "level": "n3", "tags": ["alam-lingkungan", "teknologi"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00576", "vg-n3-00575"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00627",
+  "word": "慢性",
+  "reading": "まんせい",
+  "romaji": "mansei",
+  "meaning_id": "kronis (kondisi penyakit jangka panjang)",
+  "meaning_en": "chronic (condition)",
+  "jlpt": "n3",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["kesehatan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Menggambarkan kondisi penyakit yang berlangsung lama (umumnya lebih dari tiga bulan) dan cenderung menetap — antonim langsung adalah 急性 (akut, tiba-tiba dan intens). 慢性 menyiratkan penyakit yang harus dikelola jangka panjang, bukan disembuhkan dengan cepat (慢性疾患 = penyakit kronis).",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "<b>慢性</b>的な腰痛に長年悩んでいる。", "id": "Aku sudah lama menderita sakit punggang bawah yang kronis.", "level": "n3", "tags": ["kesehatan"]},
+    {"jp": "<b>慢性</b>疾患の患者には継続的なケアが必要だ。", "id": "Pasien penyakit kronis membutuhkan perawatan yang berkelanjutan.", "level": "n3", "tags": ["kesehatan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00628",
+  "word": "急性",
+  "reading": "きゅうせい",
+  "romaji": "kyuusei",
+  "meaning_id": "akut (kondisi penyakit yang datang tiba-tiba dan intens)",
+  "meaning_en": "acute (condition)",
+  "jlpt": "n3",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["kesehatan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Menggambarkan kondisi penyakit yang datang tiba-tiba dengan intensitas tinggi — antonim langsung dari 慢性 (kronis). 急性 menyiratkan kebutuhan penanganan segera (急性心筋梗塞 = serangan jantung akut). Jangan disamakan dengan 緊急 (darurat) yang lebih mengacu pada urgensi situasi, bukan sifat klinis.",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "<b>急性</b>胃炎と診断され、点滴を受けた。", "id": "Didiagnosis radang lambung akut dan mendapat infus.", "level": "n3", "tags": ["kesehatan"]},
+    {"jp": "<b>急性</b>症状が出たら、すぐに救急車を呼んでください。", "id": "Jika gejala akut muncul, segera hubungi ambulans.", "level": "n3", "tags": ["kesehatan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00633",
+  "word": "不安",
+  "reading": "ふあん",
+  "romaji": "fuan",
+  "meaning_id": "rasa cemas, kekhawatiran (tentang hal yang belum pasti)",
+  "meaning_en": "anxiety, uneasiness, worry",
+  "jlpt": "n3",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["emosi-negatif", "kesehatan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Perasaan tidak tenang atau khawatir tentang hal yang masih belum pasti — berbeda dari 心配 (yang lebih konkret: khawatir tentang seseorang/sesuatu tertentu) dan 恐怖 (ketakutan terhadap sesuatu yang nyata dan mengancam). 不安 lebih difus dan abstrak, sering berkaitan dengan masa depan yang tidak jelas.",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "将来のことを考えると、<b>不安</b>を感じることがある。", "id": "Kalau memikirkan masa depan, kadang-kadang aku merasa cemas.", "level": "n3", "tags": ["emosi-negatif", "pikiran-opini"]},
+    {"jp": "手術前夜は<b>不安</b>で眠れなかった。", "id": "Malam sebelum operasi, aku tidak bisa tidur karena cemas.", "level": "n3", "tags": ["kesehatan", "emosi-negatif"]}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -21267,6 +13450,7820 @@ window.vocabN3 = [
   "examples": [
     {"jp": "同じ説明を何度もするのは<b>無駄</b>だ。", "id": "Menjelaskan hal yang sama berkali-kali adalah sia-sia.", "level": "n3", "tags": ["kehidupan-sehari", "pikiran-opini"]},
     {"jp": "<b>無駄な</b>出費を減らすために、家計簿をつけている。", "id": "Aku mencatat pengeluaran untuk mengurangi pemborosan.", "level": "n3", "tags": ["kehidupan-sehari", "ekonomi-keuangan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+  // ── ADVERBS (67) ────────────────────────────────────────
+
+{
+  "id": "vg-n3-00049",
+  "word": "急に",
+  "reading": "きゅうに",
+  "romaji": "kyuuni",
+  "meaning_id": "tiba-tiba",
+  "meaning_en": "suddenly",
+  "jlpt": "n3",
+  "pos": "adverb-manner",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Perubahan mendadak tanpa peringatan. Mirip 突然 tapi lebih kasual.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "急に雨が降ってきた。",
+      "id": "Tiba-tiba hujan turun.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "急に予定が変わった。",
+      "id": "Jadwalnya tiba-tiba berubah.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [
+    "vg-n3-00050"
+  ],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v14.27"
+},
+
+{
+  "id": "vg-n3-00050",
+  "word": "突然",
+  "reading": "とつぜん",
+  "romaji": "totsuzen",
+  "meaning_id": "tiba-tiba, mendadak",
+  "meaning_en": "suddenly, unexpectedly",
+  "jlpt": "n3",
+  "pos": "adverb-manner",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Lebih formal dari 急に. Sering dipakai di awal kalimat.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "突然電話が鳴った。",
+      "id": "Telepon tiba-tiba berbunyi.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "突然の知らせに驚いた。",
+      "id": "Kaget dengan berita yang mendadak.",
+      "level": "n3",
+      "tags": [
+        "emosi"
+      ]
+    }
+  ],
+  "synonyms": [
+    "vg-n3-00049"
+  ],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v14.27"
+},
+
+{
+  "id": "vg-n3-00051",
+  "word": "必ず",
+  "reading": "かならず",
+  "romaji": "kanarazu",
+  "meaning_id": "pasti, selalu",
+  "meaning_en": "certainly, always, without fail",
+  "jlpt": "n3",
+  "pos": "adverb-frequency",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan"
+  ],
+  "nuance": "Menekankan kepastian bahwa sesuatu akan terjadi.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "約束は必ず守る。",
+      "id": "Janji pasti ditepati.",
+      "level": "n3",
+      "tags": [
+        "hubungan"
+      ]
+    },
+    {
+      "jp": "出かける前に必ず鍵を確認する。",
+      "id": "Sebelum keluar, selalu cek kunci.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [
+    "vg-n3-00052"
+  ],
+  "see_also": [],
+  "added_v": "v14.27"
+},
+
+{
+  "id": "vg-n3-00052",
+  "word": "決して",
+  "reading": "けっして",
+  "romaji": "kesshite",
+  "meaning_id": "sama sekali tidak",
+  "meaning_en": "never, by no means",
+  "jlpt": "n3",
+  "pos": "adverb-frequency",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "SELALU dipakai dengan bentuk negatif. 決して〜ない.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は決して嘘をつかない。",
+      "id": "Dia sama sekali tidak pernah berbohong.",
+      "level": "n3",
+      "tags": [
+        "hubungan"
+      ]
+    },
+    {
+      "jp": "この秘密は決して言わないでください。",
+      "id": "Tolong jangan pernah beritahu rahasia ini.",
+      "level": "n3",
+      "tags": [
+        "hubungan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [
+    "vg-n3-00051"
+  ],
+  "see_also": [],
+  "added_v": "v14.27"
+},
+
+{
+  "id": "vg-n3-00142",
+  "word": "ちゃんと",
+  "reading": "ちゃんと",
+  "romaji": "chanto",
+  "meaning_id": "dengan benar, sungguh-sungguh",
+  "meaning_en": "properly",
+  "jlpt": "n3",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 1,
+  "domain": [
+    "cara"
+  ],
+  "register": "casual",
+  "nuance": "Kasual. Menekankan sesuatu dilakukan dengan benar.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "<b>ちゃんと</b>宿題をやった？",
+      "id": "PR sudah dikerjakan dengan bener?",
+      "level": "n3",
+      "tags": [
+        "pendidikan"
+      ]
+    },
+    {
+      "jp": "<b>ちゃんと</b>聞いてね。",
+      "id": "Dengerin baik-baik ya.",
+      "level": "n3",
+      "tags": [
+        "bahasa-komunikasi"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [
+    "vg-n3-00143"
+  ],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00143",
+  "word": "きちんと",
+  "reading": "きちんと",
+  "romaji": "kichinto",
+  "meaning_id": "rapi, tertib, dengan benar",
+  "meaning_en": "properly, neatly",
+  "jlpt": "n3",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "cara"
+  ],
+  "register": "neutral",
+  "nuance": "Lebih formal dari ちゃんと. Menekankan kerapian.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "部屋を<b>きちんと</b>片付けた。",
+      "id": "Membereskan kamar dengan rapi.",
+      "level": "n3",
+      "tags": [
+        "kehidupan"
+      ]
+    },
+    {"jp": "<b>きちんと</b>説明してください。", "id": "Tolong jelaskan dengan benar.", "level": "n3", "tags": ["bahasa-komunikasi"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [
+    "vg-n3-00142"
+  ],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00144",
+  "word": "むしろ",
+  "reading": "むしろ",
+  "romaji": "mushiro",
+  "meaning_id": "lebih tepat, justru",
+  "meaning_en": "rather, instead",
+  "jlpt": "n3",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kontras"
+  ],
+  "register": "neutral",
+  "nuance": "Mengkoreksi atau menyesuaikan pernyataan sebelumnya.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "怖いというより、<b>むしろ</b>面白かった。",
+      "id": "Daripada takut, justru lebih menarik.",
+      "level": "n3",
+      "tags": [
+        "ekspresi"
+      ]
+    },
+    {"jp": "忙しいほうが、<b>むしろ</b>充実感がある。", "id": "Justru saat sibuk, ada rasa kepuasan lebih.", "level": "n3", "tags": ["emosi"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00145",
+  "word": "確かに",
+  "reading": "たしかに",
+  "romaji": "tashika ni",
+  "meaning_id": "memang, benar, tentu",
+  "meaning_en": "certainly, indeed",
+  "jlpt": "n3",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "konfirmasi"
+  ],
+  "register": "neutral",
+  "nuance": "Mengakui kebenaran sesuatu, sering diikuti 〜が atau 〜けど.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "<b>確かに</b>、それは難しいね。",
+      "id": "Memang, itu sulit ya.",
+      "level": "n3",
+      "tags": [
+        "percakapan"
+      ]
+    },
+    {
+      "jp": "<b>確かに</b>彼は頭がいいが、努力もしている。",
+      "id": "Memang dia pintar, tapi juga bekerja keras.",
+      "level": "n3",
+      "tags": [
+        "penilaian"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00146",
+  "word": "なかなか",
+  "reading": "なかなか",
+  "romaji": "nakanaka",
+  "meaning_id": "cukup (positif) / tidak mudah (negatif)",
+  "meaning_en": "quite; not easily",
+  "jlpt": "n3",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "derajat"
+  ],
+  "register": "neutral",
+  "nuance": "2 makna: afirmatif=cukup bagus. Negatif=susah sekali.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "これは<b>なかなか</b>難しい。",
+      "id": "Ini lumayan susah juga.",
+      "level": "n3",
+      "tags": [
+        "penilaian"
+      ]
+    },
+    {
+      "jp": "彼女は<b>なかなか</b>来ない。",
+      "id": "Dia tidak kunjung datang.",
+      "level": "n3",
+      "tags": [
+        "menunggu"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00147",
+  "word": "せっかく",
+  "reading": "せっかく",
+  "romaji": "sekkaku",
+  "meaning_id": "dengan susah payah, khusus",
+  "meaning_en": "with great effort",
+  "jlpt": "n3",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "ekspresi"
+  ],
+  "register": "neutral",
+  "nuance": "Mengungkapkan sayang/kecewa karena kesempatan khusus tidak termanfaatkan.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "<b>せっかく</b>作ったのに、誰も食べなかった。",
+      "id": "Padahal susah payah bikin, tidak ada yang makan.",
+      "level": "n3",
+      "tags": [
+        "penyesalan"
+      ]
+    },
+    {
+      "jp": "<b>せっかく</b>日本に来たから着物を着てみたい。",
+      "id": "Karena sudah khusus datang ke Jepang, ingin coba kimono.",
+      "level": "n3",
+      "tags": [
+        "perjalanan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00148",
+  "word": "もし",
+  "reading": "もし",
+  "romaji": "moshi",
+  "meaning_id": "kalau, jika (hipotetis)",
+  "meaning_en": "if (hypothetical)",
+  "jlpt": "n3",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kondisional"
+  ],
+  "register": "neutral",
+  "nuance": "Penanda kondisional hipotetis. Selalu diikuti たら/ば/と/なら.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "<b>もし</b>時間があったら、一緒に行こう。",
+      "id": "Kalau ada waktu, ayo pergi bersama.",
+      "level": "n3",
+      "tags": [
+        "ajakan"
+      ]
+    },
+    {
+      "jp": "<b>もし</b>よければ、これを使ってください。",
+      "id": "Kalau tidak keberatan, silakan pakai ini.",
+      "level": "n3",
+      "tags": [
+        "tawaran"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00149",
+  "word": "特に",
+  "reading": "とくに",
+  "romaji": "toku ni",
+  "meaning_id": "terutama, khususnya",
+  "meaning_en": "especially",
+  "jlpt": "n3",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "penekanan"
+  ],
+  "register": "neutral",
+  "nuance": null,
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "日本料理の中で、<b>特に</b>ラーメンが好きだ。",
+      "id": "Di antara masakan Jepang, ramen paling kusuka.",
+      "level": "n3",
+      "tags": [
+        "makanan-minuman"
+      ]
+    },
+    {
+      "jp": "<b>特に</b>問題はありません。",
+      "id": "Tidak ada masalah khusus.",
+      "level": "n3",
+      "tags": [
+        "konfirmasi"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00150",
+  "word": "少なくとも",
+  "reading": "すくなくとも",
+  "romaji": "sukunaku tomo",
+  "meaning_id": "setidaknya, paling tidak",
+  "meaning_en": "at least",
+  "jlpt": "n3",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "pembatasan"
+  ],
+  "register": "neutral",
+  "nuance": null,
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "<b>少なくとも</b>1日1時間は勉強しよう。",
+      "id": "Setidaknya belajar 1 jam per hari.",
+      "level": "n3",
+      "tags": [
+        "pendidikan"
+      ]
+    },
+    {
+      "jp": "<b>少なくとも</b>10人は来ると思う。",
+      "id": "Saya pikir setidaknya 10 orang akan datang.",
+      "level": "n3",
+      "tags": [
+        "perkiraan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00350",
+  "word": "初めて",
+  "reading": "はじめて",
+  "romaji": "hajimete",
+  "meaning_id": "untuk pertama kali, pertama kalinya",
+  "meaning_en": "for the first time",
+  "jlpt": "n3",
+  "pos": "adverb-frequency",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["waktu", "kehidupan-sehari"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Menekankan bahwa suatu pengalaman atau kejadian terjadi untuk kali pertama, selalu mengandung nuansa sesuatu yang baru dialami. Pola 初めての＋N = (pengalaman/hal) pertama kali. Jangan tertukar dengan 初め (awal/permulaan) yang tidak berfungsi sebagai adverb.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "日本に来たのは初めてです。", "id": "Ini pertama kali saya datang ke Jepang.", "level": "n3", "tags": ["perjalanan"]},
+    {"jp": "初めて会ったときから好きだった。", "id": "Sejak pertama kali bertemu aku sudah suka.", "level": "n3", "tags": ["percintaan"]},
+    {"jp": "初めての一人暮らしは不安だった。", "id": "Tinggal sendiri untuk pertama kali terasa mencemaskan.", "level": "n3", "tags": ["kehidupan-sehari", "emosi"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00347"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00351",
+  "word": "再び",
+  "reading": "ふたたび",
+  "romaji": "futatabi",
+  "meaning_id": "sekali lagi, kembali",
+  "meaning_en": "again, once more",
+  "jlpt": "n3",
+  "pos": "adverb-frequency",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["waktu"],
+  "register": "written",
+  "lawan_bicara": ["umum"],
+  "nuance": "Lebih formal dan literary dibanding また atau もう一度. Sering dipakai dalam tulisan, berita, atau situasi resmi untuk menekankan pengulangan kejadian. Mengandung nuansa khidmat atau dramatis.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "彼は再び立ち上がった。", "id": "Dia bangkit kembali.", "level": "n3", "tags": ["emosi-positif", "karakter"]},
+    {"jp": "再び同じ過ちを繰り返してはならない。", "id": "Kita tidak boleh mengulangi kesalahan yang sama lagi.", "level": "n3", "tags": ["pikiran-opini"]},
+    {"jp": "再び日本を訪れることができた。", "id": "Aku bisa mengunjungi Jepang sekali lagi.", "level": "n3", "tags": ["perjalanan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00352"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00352",
+  "word": "改めて",
+  "reading": "あらためて",
+  "romaji": "aratamete",
+  "meaning_id": "sekali lagi secara formal, dengan serius, setelah merefleksikan",
+  "meaning_en": "once again (formally), anew, upon reflection",
+  "jlpt": "n3",
+  "pos": "adverb-manner",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["waktu", "sopan-santun"],
+  "register": "formal",
+  "lawan_bicara": ["atasan", "umum"],
+  "nuance": "Mengandung nuansa melakukan sesuatu kembali dengan lebih serius dan penuh kesadaran, setelah refleksi atau formalitas. Sering dipakai dalam permintaan maaf resmi, perkenalan ulang, atau saat menjadwalkan ulang sesuatu. Berbeda dari 再び yang hanya berarti pengulangan biasa.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "改めてお礼を申し上げます。", "id": "Izinkan saya menyampaikan terima kasih sekali lagi secara resmi.", "level": "n3", "tags": ["sopan-santun", "keigo-vocabulary"]},
+    {"jp": "改めて連絡します。", "id": "Saya akan menghubungi lagi nanti.", "level": "n3", "tags": ["bisnis", "bahasa-komunikasi"]},
+    {"jp": "改めて考えると、やはりそれが正しかった。", "id": "Setelah dipikir ulang, memang itu yang benar.", "level": "n3", "tags": ["pikiran-opini"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00351"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00353",
+  "word": "いつの間にか",
+  "reading": "いつのまにか",
+  "romaji": "itsu no ma ni ka",
+  "meaning_id": "tanpa disadari, tiba-tiba sudah, tidak terasa",
+  "meaning_en": "before one knows it, unnoticed, without realizing",
+  "jlpt": "n3",
+  "pos": "adverb-sentence",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["waktu", "emosi"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Menekankan bahwa perubahan atau kejadian berlangsung tanpa kita sadari, sering mengandung nuansa kekagetan atau nostalgia ringan. Berbeda dari 知らないうちに yang lebih netral — いつの間にか lebih ekspresif dan emosional.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "いつの間にか、子供が大きくなっていた。", "id": "Tanpa terasa, anak-anak sudah tumbuh besar.", "level": "n3", "tags": ["keluarga", "emosi"]},
+    {"jp": "いつの間にか夜が明けていた。", "id": "Tidak terasa hari sudah berganti pagi.", "level": "n3", "tags": ["kehidupan-sehari"]},
+    {"jp": "いつの間にかみんな帰っていた。", "id": "Tanpa kusadari semua orang sudah pulang.", "level": "n3", "tags": ["kehidupan-sehari"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00354",
+  "word": "やがて",
+  "reading": "やがて",
+  "romaji": "yagate",
+  "meaning_id": "akhirnya, tidak lama lagi, lambat laun",
+  "meaning_en": "before long, eventually, in due course",
+  "jlpt": "n3",
+  "pos": "adverb-sentence",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["waktu"],
+  "register": "written",
+  "lawan_bicara": ["umum"],
+  "nuance": "Menunjukkan bahwa sesuatu akan terjadi dalam waktu tidak terlalu lama, dengan nuansa natural dan tenang. Lebih literary dibanding もうすぐ. Sering muncul dalam narasi, sastra, atau tulisan formal untuk menggambarkan perkembangan yang mengalir secara alami.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "やがて春が来るだろう。", "id": "Tidak lama lagi musim semi pasti akan datang.", "level": "n3", "tags": ["alam-lingkungan"]},
+    {"jp": "努力を続ければ、やがて結果が出る。", "id": "Jika terus berusaha, lambat laun hasilnya akan terlihat.", "level": "n3", "tags": ["karakter", "pikiran-opini"]},
+    {"jp": "やがて彼は姿を消した。", "id": "Akhirnya dia pun menghilang.", "level": "n3", "tags": ["sastra"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00355", "vg-n3-00356"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00355",
+  "word": "とうとう",
+  "reading": "とうとう",
+  "romaji": "toutou",
+  "meaning_id": "akhirnya juga, pada akhirnya (setelah menunggu lama)",
+  "meaning_en": "finally, at last, in the end (after a long wait)",
+  "jlpt": "n3",
+  "pos": "adverb-sentence",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["waktu", "emosi"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Menekankan bahwa sesuatu akhirnya terjadi setelah proses atau penantian yang panjang, dan bisa bermakna positif maupun negatif. Berbeda dari ついに — とうとう sering dipakai untuk hasil yang sudah lama ditakutkan atau diantisipasi tanpa kepastian arah.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "とうとう彼は来なかった。", "id": "Pada akhirnya dia tidak datang juga.", "level": "n3", "tags": ["emosi-negatif"]},
+    {"jp": "長い治療の末、とうとう病気が治った。", "id": "Setelah pengobatan panjang, penyakitnya akhirnya sembuh juga.", "level": "n3", "tags": ["kesehatan"]},
+    {"jp": "とうとう我慢できなくなった。", "id": "Akhirnya aku tidak bisa menahan diri lagi.", "level": "n3", "tags": ["emosi"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00356", "vg-n3-00354"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00356",
+  "word": "ついに",
+  "reading": "ついに",
+  "romaji": "tsui ni",
+  "meaning_id": "akhirnya, pada akhirnya (dengan penekanan pencapaian)",
+  "meaning_en": "finally, at last (emphasizing achievement after effort)",
+  "jlpt": "n3",
+  "pos": "adverb-sentence",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["waktu", "emosi-positif"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Menekankan momen pencapaian setelah perjuangan atau usaha panjang, sering mengandung nuansa positif dan dramatis. Berbeda dari とうとう — ついに lebih sering dipakai untuk pencapaian positif yang disambut dengan kebanggaan atau kelegaan.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "ついに夢の家を買うことができた。", "id": "Akhirnya aku berhasil membeli rumah impian.", "level": "n3", "tags": ["emosi-positif", "kehidupan-sehari"]},
+    {"jp": "三年間の努力で、ついに合格した。", "id": "Setelah tiga tahun berjuang, akhirnya lulus.", "level": "n3", "tags": ["pendidikan", "emosi-positif"]},
+    {"jp": "ついにその日が来た。", "id": "Akhirnya hari itu pun tiba.", "level": "n3", "tags": ["emosi"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00355", "vg-n3-00354"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00357",
+  "word": "まず",
+  "reading": "まず",
+  "romaji": "mazu",
+  "meaning_id": "pertama-tama, langkah pertama, setidaknya",
+  "meaning_en": "first of all, to begin with, for now",
+  "jlpt": "n3",
+  "pos": "adverb-conjunctive",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["waktu", "bahasa-komunikasi"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Dipakai untuk memulai urutan langkah atau penjelasan. Dalam konteks percakapan, juga bisa berarti 'paling tidak' atau 'setidaknya'. Sangat umum dipakai dalam instruksi, resep, dan presentasi.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "まず手を洗ってください。", "id": "Pertama-tama, tolong cuci tangan.", "level": "n3", "tags": ["kesehatan", "kehidupan-sehari"]},
+    {"jp": "まず自己紹介から始めましょう。", "id": "Mari kita mulai dari perkenalan diri terlebih dahulu.", "level": "n3", "tags": ["bahasa-komunikasi"]},
+    {"jp": "まずは試してみることが大事だ。", "id": "Setidaknya mencoba dulu itu yang penting.", "level": "n3", "tags": ["pikiran-opini"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00358"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00358",
+  "word": "次に",
+  "reading": "つぎに",
+  "romaji": "tsugi ni",
+  "meaning_id": "selanjutnya, berikutnya, kemudian",
+  "meaning_en": "next, then, secondly",
+  "jlpt": "n3",
+  "pos": "adverb-conjunctive",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["waktu", "bahasa-komunikasi"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Dipakai untuk menunjukkan langkah berikutnya dalam urutan. Lebih formal dan terstruktur dibanding それから. Umum dipakai dalam instruksi tertulis, presentasi, dan laporan untuk memberi urutan yang jelas.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "まず玉ねぎを切り、次に炒めます。", "id": "Pertama potong bawang, selanjutnya tumis.", "level": "n3", "tags": ["makanan-minuman"]},
+    {"jp": "次に、グラフを見てください。", "id": "Selanjutnya, tolong lihat grafiknya.", "level": "n3", "tags": ["bisnis", "pendidikan"]},
+    {"jp": "次に何をすればいいですか。", "id": "Selanjutnya apa yang harus saya lakukan?", "level": "n3", "tags": ["kehidupan-sehari"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00357", "vg-n3-00359"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00359",
+  "word": "それから",
+  "reading": "それから",
+  "romaji": "sore kara",
+  "meaning_id": "setelah itu, kemudian, dan juga",
+  "meaning_en": "after that, and then, besides",
+  "jlpt": "n3",
+  "pos": "conjunction",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 1,
+  "domain": ["waktu", "bahasa-komunikasi"],
+  "register": "neutral",
+  "lawan_bicara": ["teman", "umum"],
+  "nuance": "Menghubungkan dua kejadian berurutan atau menambahkan informasi dalam percakapan. Lebih kasual dibanding その後 dan 次に. Dalam percakapan sehari-hari juga bisa berarti 'selain itu' saat membuat daftar.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "ご飯を食べて、それから宿題をした。", "id": "Makan dulu, setelah itu mengerjakan PR.", "level": "n3", "tags": ["kehidupan-sehari"]},
+    {"jp": "それから、何か変わったことはありましたか。", "id": "Setelah itu, adakah hal yang berubah?", "level": "n3", "tags": ["bahasa-komunikasi"]},
+    {"jp": "牛乳と、それからパンを買ってきて。", "id": "Tolong belikan susu, dan juga roti.", "level": "n3", "tags": ["belanja"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00360", "vg-n3-00358"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00363",
+  "word": "今さら",
+  "reading": "いまさら",
+  "romaji": "ima sara",
+  "meaning_id": "sekarang sudah terlambat, percuma sekarang",
+  "meaning_en": "at this late stage, it's too late now",
+  "jlpt": "n3",
+  "pos": "adverb-sentence",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["waktu", "emosi"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Mengandung nuansa 'sudah terlambat' atau 'percuma dilakukan sekarang karena semuanya sudah terjadi'. Sering mengungkapkan keheranan, penyesalan, atau sinisme. Pola 今さら〜ても遅い/仕方ない sangat umum.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "今さら謝っても遅い。", "id": "Percuma minta maaf sekarang, sudah terlambat.", "level": "n3", "tags": ["emosi-negatif", "hubungan-konsep"]},
+    {"jp": "今さらそんなこと言われても困る。", "id": "Aku bingung kalau sekarang baru dibilang hal seperti itu.", "level": "n3", "tags": ["emosi", "bahasa-komunikasi"]},
+    {"jp": "今さら心配しても仕方がない。", "id": "Percuma khawatir sekarang, tidak ada gunanya.", "level": "n3", "tags": ["emosi", "pikiran-opini"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00362"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00375",
+  "word": "たびたび",
+  "reading": "たびたび",
+  "romaji": "tabitabi",
+  "meaning_id": "berkali-kali, sering sekali, berulang kali",
+  "meaning_en": "repeatedly, frequently, time and again",
+  "jlpt": "n3",
+  "pos": "adverb-frequency",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["waktu", "sopan-santun"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Menekankan frekuensi yang tinggi dengan nuansa 'sudah terlalu sering' atau 'berulang kali'. Lebih intens dari よく dan しばしば. Sering dipakai dalam permintaan maaf formal (たびたびすみません = maaf sudah berulang kali mengganggu), sehingga terasa lebih sopan dari sekadar よく.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "たびたびご連絡いただきありがとうございます。", "id": "Terima kasih sudah berulang kali menghubungi kami.", "level": "n3", "tags": ["bisnis", "sopan-santun"]},
+    {"jp": "彼はたびたび約束を破る。", "id": "Dia berkali-kali melanggar janji.", "level": "n3", "tags": ["karakter", "emosi-negatif"]},
+    {"jp": "たびたびお邪魔してすみません。", "id": "Maaf sudah berulang kali merepotkan.", "level": "n3", "tags": ["sopan-santun"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00483",
+  "word": "相変わらず",
+  "reading": "あいかわらず",
+  "romaji": "aikawarazu",
+  "meaning_id": "seperti biasa, tidak berubah, sama saja seperti dulu",
+  "meaning_en": "as usual, same as ever, unchanged",
+  "jlpt": "n3",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["kehidupan-sehari", "waktu"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "相変わらず digunakan untuk menyatakan bahwa seseorang atau sesuatu tetap sama seperti sebelumnya. Sering terdengar saat bertemu orang lama: 相変わらずだね = kamu tidak berubah ya. Mengandung nuansa nostalgia atau penerimaan yang hangat. Berbeda dari いつものように (itsumono you ni — seperti biasanya) yang lebih netral dan deskriptif.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "<b>相変わらず</b>忙しいですか？", "id": "Apakah kamu masih sibuk seperti biasa?", "level": "n3", "tags": ["kehidupan-sehari", "pertemanan"]},
+    {"jp": "彼女は<b>相変わらず</b>明るくて元気だ。", "id": "Dia tetap ceria dan penuh semangat seperti dulu.", "level": "n3", "tags": ["karakter", "pertemanan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00484",
+  "word": "ぎりぎり",
+  "reading": "ぎりぎり",
+  "romaji": "girigiri",
+  "meaning_id": "mepet, nyaris, pas-pasan, di batas limit",
+  "meaning_en": "barely, just barely, at the last moment, at the limit",
+  "jlpt": "n3",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 1,
+  "domain": ["kehidupan-sehari", "waktu"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "ぎりぎり menggambarkan situasi di mana seseorang nyaris tidak berhasil atau tepat berada di batas kemampuan maupun waktu. ぎりぎり合格 = lulus dengan nilai pas-pasan. Lebih ekspresif dan kasual dari かろうじて (karouijte — dengan susah payah) yang lebih formal. Sering terasa dramatis karena menyiratkan hampir gagal.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "電車に<b>ぎりぎり</b>間に合った。", "id": "Nyaris sempat naik kereta tadi.", "level": "n3", "tags": ["kehidupan-sehari", "perjalanan"]},
+    {"jp": "試験は<b>ぎりぎり</b>合格だった。", "id": "Ujiannya lulus dengan nilai yang pas-pasan.", "level": "n3", "tags": ["pendidikan", "emosi"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00485",
+  "word": "かなり",
+  "reading": "かなり",
+  "romaji": "kanari",
+  "meaning_id": "cukup banyak, lumayan, terbilang",
+  "meaning_en": "considerably, fairly, quite, rather",
+  "jlpt": "n3",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["kuantitas", "kualitas"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "かなり menunjukkan derajat yang melebihi ekspektasi biasa, tetapi belum mencapai tingkat ekstrem. Lebih kuat dari まあまあ (maa maa — lumayan biasa saja) dan 少し (sukoshi — sedikit), namun lebih lemah dari とても atau 非常に (hijou ni — sangat). Digunakan baik dalam konteks positif maupun negatif.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "その映画は<b>かなり</b>面白かった。", "id": "Film itu cukup menarik.", "level": "n3", "tags": ["hiburan", "kehidupan-sehari"]},
+    {"jp": "今日は<b>かなり</b>疲れたので、早く寝ます。", "id": "Hari ini saya cukup lelah, jadi akan tidur lebih awal.", "level": "n3", "tags": ["kehidupan-sehari", "kesehatan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00486",
+  "word": "特に",
+  "reading": "とくに",
+  "romaji": "tokuni",
+  "meaning_id": "terutama, khususnya, secara khusus",
+  "meaning_en": "especially, particularly, in particular",
+  "jlpt": "n3",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["umum", "pikiran-opini"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "特に menekankan sesuatu sebagai yang paling menonjol di antara yang lain. Dalam kalimat negatif, 特に～ない berarti 'tidak ada yang istimewa/khusus'. Berbeda dari 特別に (tokubetsuni — secara khusus/istimewa) yang lebih formal dan menyiratkan perlakuan sengaja diberikan secara eksklusif.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "<b>特に</b>好きな食べ物はすしです。", "id": "Makanan yang paling saya sukai adalah sushi.", "level": "n3", "tags": ["makanan-minuman", "kehidupan-sehari"]},
+    {"jp": "今日は<b>特に</b>何もなかった。", "id": "Hari ini tidak ada yang istimewa.", "level": "n3", "tags": ["kehidupan-sehari", "umum"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00487",
+  "word": "必ずしも",
+  "reading": "かならずしも",
+  "romaji": "kanarazushimo",
+  "meaning_id": "tidak selalu, belum tentu (diikuti bentuk negatif)",
+  "meaning_en": "not necessarily, not always (used with negative)",
+  "jlpt": "n3",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["pikiran-opini", "umum"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "必ずしも WAJIB diikuti bentuk negatif: 必ずしも～ない = tidak selalu/belum tentu. Tidak dapat digunakan dalam kalimat positif. Digunakan untuk menyangkal generalisasi atau asumsi mutlak. Berbeda dari いつも～ない (tidak selalu) yang lebih kasual — 必ずしも lebih logis dan sering muncul dalam argumen atau diskusi.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "高いものが<b>必ずしも</b>いいとは限らない。", "id": "Yang mahal belum tentu selalu yang terbaik.", "level": "n3", "tags": ["pikiran-opini", "belanja"]},
+    {"jp": "努力が<b>必ずしも</b>成功につながるわけではない。", "id": "Kerja keras tidak selalu berujung pada kesuksesan.", "level": "n3", "tags": ["pikiran-opini", "sebab-akibat"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00488",
+  "word": "さっそく",
+  "reading": "さっそく",
+  "romaji": "sassoku",
+  "meaning_id": "segera, langsung, tanpa menunda",
+  "meaning_en": "immediately, right away, without delay",
+  "jlpt": "n3",
+  "pos": "adverb-manner",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["kehidupan-sehari", "waktu"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "さっそく menggambarkan tindakan yang dilakukan langsung setelah memutuskan atau menerima informasi, dengan nuansa antusias dan proaktif. Berbeda dari すぐ (sugu — segera) yang lebih netral — さっそく mengandung nuansa 'langsung bertindak tanpa menunggu lebih lama lagi' dan sering bernuansa positif, penuh semangat.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "<b>さっそく</b>試してみます。", "id": "Saya akan langsung mencobanya.", "level": "n3", "tags": ["kehidupan-sehari", "karakter"]},
+    {"jp": "<b>さっそく</b>ですが、本題に入りましょう。", "id": "Langsung saja, mari masuk ke inti pembicaraan.", "level": "n3", "tags": ["bisnis", "bahasa-komunikasi"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00489",
+  "word": "わざわざ",
+  "reading": "わざわざ",
+  "romaji": "wazawaza",
+  "meaning_id": "sengaja, repot-repot, jauh-jauh (untuk orang lain)",
+  "meaning_en": "going out of one's way, taking the trouble to",
+  "jlpt": "n3",
+  "pos": "adverb-manner",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["kehidupan-sehari", "sopan-santun"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "わざわざ menggambarkan seseorang yang melakukan sesuatu meskipun memerlukan usaha ekstra atau sebenarnya tidak perlu. Sering digunakan dalam ucapan terima kasih: わざわざありがとうございます = terima kasih sudah repot-repot. Berbeda dari あえて (aete — sengaja dengan keberanian) yang menekankan niat menghadapi tantangan — わざわざ lebih tentang usaha yang dianggap melebihi yang diperlukan demi orang lain.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "<b>わざわざ</b>来てくれてありがとう。", "id": "Terima kasih sudah repot-repot datang kemari.", "level": "n3", "tags": ["sopan-santun", "pertemanan"]},
+    {"jp": "<b>わざわざ</b>そこまでしなくてもいいのに。", "id": "Kamu tidak perlu repot-repot sejauh itu.", "level": "n3", "tags": ["kehidupan-sehari", "sopan-santun"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00490",
+  "word": "あえて",
+  "reading": "あえて",
+  "romaji": "aete",
+  "meaning_id": "sengaja, dengan berani, meski tahu risikonya",
+  "meaning_en": "daring to, deliberately, boldly despite knowing the risk",
+  "jlpt": "n3",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["keputusan", "karakter"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "あえて digunakan saat seseorang secara sadar melakukan sesuatu yang menantang, tidak biasa, atau berisiko mendapat reaksi negatif — dengan penuh keberanian dan kesadaran. Berbeda dari わざわざ (wazawaza — repot-repot untuk orang lain) yang menekankan usaha berlebih — あえて lebih menekankan keberanian atau kesengajaan dalam menghadapi hambatan atau konvensi.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "<b>あえて</b>難しい道を選んだ。", "id": "Saya dengan sengaja memilih jalan yang sulit.", "level": "n3", "tags": ["keputusan", "karakter"]},
+    {"jp": "<b>あえて</b>反対意見を言うことも、時には必要だ。", "id": "Terkadang perlu untuk dengan berani menyampaikan pendapat yang berlawanan.", "level": "n3", "tags": ["bahasa-komunikasi", "keputusan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00491",
+  "word": "ますます",
+  "reading": "ますます",
+  "romaji": "masumasu",
+  "meaning_id": "semakin, makin, kian",
+  "meaning_en": "more and more, increasingly, all the more",
+  "jlpt": "n3",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["perubahan", "waktu"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "ますます menggambarkan perubahan yang terus meningkat dalam satu arah, baik positif maupun negatif. Berbeda dari だんだん (dandan — lambat laun/bertahap) yang lebih menekankan proses perlahan — ますます lebih menekankan akselerasi atau intensifikasi yang dirasakan, seolah perubahan makin cepat atau makin terasa.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "彼女の歌は<b>ますます</b>上手になっている。", "id": "Nyanyiannya semakin hari semakin bagus.", "level": "n3", "tags": ["perubahan", "hiburan"]},
+    {"jp": "景気が<b>ますます</b>悪くなっている。", "id": "Kondisi ekonomi semakin memburuk.", "level": "n3", "tags": ["perubahan", "ekonomi-keuangan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00492",
+  "word": "次第に",
+  "reading": "しだいに",
+  "romaji": "shidaini",
+  "meaning_id": "berangsur-angsur, perlahan-lahan, lambat laun",
+  "meaning_en": "gradually, little by little, step by step",
+  "jlpt": "n3",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["perubahan", "waktu"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "次第に menggambarkan perubahan yang terjadi secara bertahap dan tenang seiring waktu. Berbeda dari だんだん (dandan) yang memiliki makna serupa tetapi lebih kasual dan percakapan sehari-hari — 次第に lebih formal dan sering digunakan dalam tulisan, narasi, atau deskripsi proses. Berbeda dari ますます yang menekankan akselerasi — 次第に lebih tentang proses yang pelan dan gradual.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "<b>次第に</b>空が明るくなってきた。", "id": "Langit perlahan-lahan mulai menjadi terang.", "level": "n3", "tags": ["alam-lingkungan", "waktu"]},
+    {"jp": "練習を続けた結果、<b>次第に</b>上達してきた。", "id": "Berkat terus berlatih, kemampuan saya perlahan-lahan meningkat.", "level": "n3", "tags": ["perubahan", "pendidikan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00493",
+  "word": "めったに",
+  "reading": "めったに",
+  "romaji": "mettani",
+  "meaning_id": "jarang sekali (diikuti bentuk negatif)",
+  "meaning_en": "rarely, seldom (used with negative verb)",
+  "jlpt": "n3",
+  "pos": "adverb-frequency",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["waktu", "kehidupan-sehari"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "めったに WAJIB diikuti bentuk negatif: めったに～ない = jarang sekali. Tidak dapat berdiri sendiri dalam kalimat positif. Berbeda dari たまに (tama ni — kadang-kadang) yang digunakan dalam kalimat positif — めったに lebih kuat dalam menyatakan frekuensi yang sangat rendah, hampir tidak pernah terjadi.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "彼はめったに怒らない。", "id": "Dia jarang sekali marah.", "level": "n3", "tags": ["karakter", "kehidupan-sehari"]},
+    {"jp": "父は忙しくて、<b>めったに</b>家にいない。", "id": "Ayah sibuk sehingga jarang sekali ada di rumah.", "level": "n3", "tags": ["keluarga", "kehidupan-sehari"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00494",
+  "word": "せっかく",
+  "reading": "せっかく",
+  "romaji": "sekkaku",
+  "meaning_id": "susah payah, sayang kalau tidak dimanfaatkan, dengan susah payah",
+  "meaning_en": "with much trouble, rare opportunity that shouldn't be wasted",
+  "jlpt": "n3",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["kehidupan-sehari", "emosi"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "せっかく mengandung nuansa 'sayang kalau disia-siakan' setelah usaha atau kesempatan yang langka. Sering diikuti のに (keluhan: sudah susah payah tapi...) atau から/ので (ajakan: karena sudah begini, manfaatkan sekalian). Berbeda dari わざわざ yang lebih netral tentang usaha — せっかく mengandung nuansa emosional yang lebih kuat: ada nilai atau usaha yang terancam terbuang.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "<b>せっかく</b>作ったのに、誰も食べてくれなかった。", "id": "Sudah susah payah memasak, tapi tidak ada yang mau makan.", "level": "n3", "tags": ["emosi-negatif", "kehidupan-sehari"]},
+    {"jp": "<b>せっかく</b>日本に来たんだから、京都にも行こう。", "id": "Karena sudah jauh-jauh ke Jepang, ayo pergi ke Kyoto juga.", "level": "n3", "tags": ["perjalanan", "budaya"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00495",
+  "word": "どうせ",
+  "reading": "どうせ",
+  "romaji": "douse",
+  "meaning_id": "toh, bagaimanapun juga, sia-sia saja",
+  "meaning_en": "anyway, in any case, might as well, no matter what",
+  "jlpt": "n3",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 1,
+  "domain": ["emosi-negatif", "pikiran-opini"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "どうせ mengandung nuansa pasrah atau pesimis — 'toh hasilnya akan sama saja' atau 'sia-sia berusaha'. Bisa juga berarti 'kalau memang begitu, sekalian saja...': どうせなら = kalau memang begitu, lebih baik sekalian. Berbeda dari いずれにせよ (izure ni seyo — bagaimanapun juga) yang lebih netral dan formal — どうせ lebih emosional dan bernuansa menyerah atau realistis pesimis.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "<b>どうせ</b>失敗するから、やめておこう。", "id": "Toh pasti akan gagal, lebih baik berhenti saja.", "level": "n3", "tags": ["emosi-negatif", "keputusan"]},
+    {"jp": "<b>どうせ</b>なら、もっと大きいものを買えばよかった。", "id": "Kalau memang begitu, seharusnya beli yang lebih besar sekalian.", "level": "n3", "tags": ["kehidupan-sehari", "pikiran-opini"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00586",
+  "word": "つまり",
+  "reading": "つまり",
+  "romaji": "tsumari",
+  "meaning_id": "artinya, dengan kata lain, singkatnya",
+  "meaning_en": "in other words, that is to say, in short",
+  "jlpt": "n3",
+  "pos": "adverb-conjunctive",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["bahasa-komunikasi", "pikiran-opini"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Digunakan untuk menyimpulkan atau menjelaskan ulang dengan kata-kata yang lebih sederhana. Lebih kasual dan lisan dibanding すなわち — dalam percakapan sehari-hari, つまり jauh lebih lazim. Sering muncul ketika pembicara ingin memastikan pendengar memahami poin utama.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "彼は毎日練習している。<b>つまり</b>、本気でプロを目指しているんだ。", "id": "Dia berlatih setiap hari. Artinya, dia benar-benar ingin menjadi profesional.", "level": "n3", "tags": ["pikiran-opini", "bahasa-komunikasi"]},
+    {"jp": "今日は財布を忘れた。<b>つまり</b>、お金が一円もないってことだ。", "id": "Hari ini aku lupa bawa dompet. Dengan kata lain, aku tidak punya uang sama sekali.", "level": "n3", "tags": ["kehidupan-sehari", "bahasa-komunikasi"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00587",
+  "word": "すなわち",
+  "reading": "すなわち",
+  "romaji": "sunawachi",
+  "meaning_id": "yakni, yaitu, dengan kata lain (formal)",
+  "meaning_en": "namely, that is, i.e. (formal)",
+  "jlpt": "n3",
+  "pos": "adverb-conjunctive",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": ["bahasa-komunikasi", "pikiran-opini"],
+  "register": "formal",
+  "lawan_bicara": ["umum"],
+  "nuance": "Padanan formal/tulisan dari つまり. Sering muncul dalam teks akademik, hukum, atau berita — jarang digunakan dalam percakapan santai. Selain menyimpulkan, すなわち juga bisa memperkenalkan istilah atau definisi teknis (mis. 'Ini disebut X, yakni すなわち Y').",
+  "conj_type": null,
+  "examples": [
+    {"jp": "この条約は両国の合意に基づく。<b>すなわち</b>、どちらの国も同意した上で締結されたのだ。", "id": "Perjanjian ini didasarkan pada kesepakatan kedua negara. Yakni, perjanjian ini disepakati oleh kedua pihak.", "level": "n3", "tags": ["hukum-aturan", "politik-masyarakat"]},
+    {"jp": "彼女は本校の創設者の孫、<b>すなわち</b>田中家の最後の子孫だ。", "id": "Dia adalah cucu pendiri sekolah ini, yaitu keturunan terakhir keluarga Tanaka.", "level": "n3", "tags": ["pendidikan", "bahasa-komunikasi"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00588",
+  "word": "たとえば",
+  "reading": "たとえば",
+  "romaji": "tatoeba",
+  "meaning_id": "misalnya, contohnya, seperti",
+  "meaning_en": "for example, for instance",
+  "jlpt": "n3",
+  "pos": "adverb-conjunctive",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["bahasa-komunikasi", "pendidikan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Digunakan untuk memberikan contoh konkret dari pernyataan umum sebelumnya. Berbeda dari つまり (yang menyimpulkan) atau すなわち (yang mendefinisikan) — たとえば selalu memperkenalkan contoh ilustratif. Bisa ditulis 例えば dengan kanji.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "日本の伝統文化はたくさんある。<b>たとえば</b>、茶道や生け花などが有名だ。", "id": "Ada banyak budaya tradisional Jepang. Misalnya, upacara minum teh dan merangkai bunga sangat terkenal.", "level": "n3", "tags": ["budaya", "bahasa-komunikasi"]},
+    {"jp": "健康のためにできることはいろいろある。<b>たとえば</b>、毎日散歩することや野菜を多く食べることだ。", "id": "Ada berbagai hal yang bisa dilakukan untuk kesehatan. Contohnya, berjalan kaki setiap hari dan makan banyak sayuran.", "level": "n3", "tags": ["kesehatan", "kehidupan-sehari"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00589",
+  "word": "一方",
+  "reading": "いっぽう",
+  "romaji": "ippou",
+  "meaning_id": "di satu sisi, sebaliknya, sementara itu",
+  "meaning_en": "on the other hand, meanwhile, while",
+  "jlpt": "n3",
+  "pos": "conjunction",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["bahasa-komunikasi", "pikiran-opini"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Berdiri sendiri sebagai konjungsi antar kalimat untuk memperkenalkan sudut pandang yang kontras atau situasi yang berlangsung bersamaan. Berbeda dari 一方で yang melekat di tengah kalimat — 一方 (sendiri) lebih sering memulai kalimat baru dalam teks berita atau esai formal.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "都市部では人口が増えている。<b>一方</b>、農村部では過疎化が進んでいる。", "id": "Di daerah perkotaan, populasi meningkat. Sebaliknya, di pedesaan depopulasi terus berlanjut.", "level": "n3", "tags": ["politik-masyarakat", "pikiran-opini"]},
+    {"jp": "兄は理系が得意だ。<b>一方</b>、妹は文系に向いている。", "id": "Kakak laki-laki pandai di bidang sains. Di satu sisi, adik perempuan lebih cocok di bidang humaniora.", "level": "n3", "tags": ["pendidikan", "keluarga"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00593",
+  "word": "したがって",
+  "reading": "したがって",
+  "romaji": "shitagatte",
+  "meaning_id": "oleh karena itu, maka, dengan demikian (formal)",
+  "meaning_en": "therefore, consequently, thus (formal)",
+  "jlpt": "n3",
+  "pos": "adverb-conjunctive",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": ["bahasa-komunikasi", "sebab-akibat"],
+  "register": "formal",
+  "lawan_bicara": ["umum"],
+  "nuance": "Menarik kesimpulan logis dari premis yang sudah disebutkan — lebih menekankan penalaran deduktif daripada の結果 yang menyatakan fakta hasil. Formal dan sering digunakan dalam tulisan akademik atau pidato resmi. Dalam percakapan biasa, diganti dengan だから atau そのため.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "このデータは信頼性が低い。<b>したがって</b>、この研究結果は参考程度にとどめるべきだ。", "id": "Data ini memiliki tingkat keandalan yang rendah. Oleh karena itu, hasil penelitian ini seharusnya hanya dijadikan referensi.", "level": "n3", "tags": ["ilmu-pengetahuan", "sebab-akibat"]},
+    {"jp": "規則違反が確認された。<b>したがって</b>、該当者には処分が下された。", "id": "Pelanggaran aturan telah dikonfirmasi. Dengan demikian, sanksi dijatuhkan kepada yang bersangkutan.", "level": "n3", "tags": ["hukum-aturan", "pekerjaan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00594",
+  "word": "それゆえ",
+  "reading": "それゆえ",
+  "romaji": "soreyue",
+  "meaning_id": "oleh karena itu, maka dari itu (formal/tulisan)",
+  "meaning_en": "for that reason, therefore (formal/literary)",
+  "jlpt": "n3",
+  "pos": "adverb-conjunctive",
+  "common": false,
+  "related_grammar": [],
+  "formalitas": 5,
+  "domain": ["bahasa-komunikasi", "sebab-akibat"],
+  "register": "formal",
+  "lawan_bicara": ["umum"],
+  "nuance": "Lebih formal dan bernuansa sastra dibanding したがって — jarang dipakai dalam percakapan atau tulisan informal. Sering dijumpai dalam filsafat, puisi, atau teks klasik. Juga bisa ditulis それ故 atau それゆえに. Dalam konteks modern, したがって atau そのため lebih umum.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "我思う、<b>それゆえ</b>我あり。", "id": "Aku berpikir, maka dari itu aku ada. (Cogito ergo sum)", "level": "n3", "tags": ["ilmu-pengetahuan", "klasik"]},
+    {"jp": "彼は幼い頃から貧しかった。<b>それゆえ</b>、努力の大切さを誰よりも知っていた。", "id": "Sejak kecil dia hidup dalam kemiskinan. Oleh karena itu, dia lebih dari siapapun memahami pentingnya kerja keras.", "level": "n3", "tags": ["karakter", "sebab-akibat"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00595",
+  "word": "なぜなら",
+  "reading": "なぜなら",
+  "romaji": "nazenara",
+  "meaning_id": "karena, sebab (menjelaskan alasan setelah pernyataan)",
+  "meaning_en": "because, the reason is that",
+  "jlpt": "n3",
+  "pos": "conjunction",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["bahasa-komunikasi", "sebab-akibat"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Unik karena urutan logikanya terbalik dari bahasa Indonesia — pernyataan dulu, baru なぜなら menjelaskan alasannya. Biasanya diakhiri dengan ～から atau ～からだ. Lebih formal dari だって tapi lebih kasual dari したがって. Memberikan penekanan retoris yang kuat pada penjelasan.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "私はその映画を見ない。<b>なぜなら</b>、ホラーが苦手だからだ。", "id": "Aku tidak akan menonton film itu. Karena aku tidak suka film horor.", "level": "n3", "tags": ["hiburan", "bahasa-komunikasi"]},
+    {"jp": "この計画は成功する。<b>なぜなら</b>、チーム全員が本気で取り組んでいるからだ。", "id": "Rencana ini akan berhasil. Sebab seluruh anggota tim bekerja dengan sepenuh hati.", "level": "n3", "tags": ["pekerjaan", "sebab-akibat"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00596",
+  "word": "ところが",
+  "reading": "ところが",
+  "romaji": "tokoroga",
+  "meaning_id": "namun, akan tetapi (kontras tak terduga)",
+  "meaning_en": "however, but (unexpected contrast)",
+  "jlpt": "n3",
+  "pos": "conjunction",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["bahasa-komunikasi", "pikiran-opini"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Berbeda dari しかし atau でも — ところが secara khusus menyiratkan bahwa hasil atau keadaan selanjutnya adalah kejutan atau kebalikan dari yang diharapkan. Pembicara biasanya sudah memiliki ekspektasi tertentu, lalu ところが membalikkannya. Tidak bisa dipakai untuk kontras netral biasa.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "試験は簡単だと思っていた。<b>ところが</b>、実際にはとても難しかった。", "id": "Aku pikir ujiannya mudah. Namun ternyata, itu sangat sulit.", "level": "n3", "tags": ["pendidikan", "emosi"]},
+    {"jp": "傘を持って出かけた。<b>ところが</b>、一日中晴れていた。", "id": "Aku keluar membawa payung. Akan tetapi, cuaca cerah sepanjang hari.", "level": "n3", "tags": ["kehidupan-sehari", "emosi"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00598",
+  "word": "加えて",
+  "reading": "くわえて",
+  "romaji": "kuwaete",
+  "meaning_id": "ditambah lagi, selain itu, lebih dari itu",
+  "meaning_en": "in addition, furthermore, on top of that",
+  "jlpt": "n3",
+  "pos": "adverb-conjunctive",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["bahasa-komunikasi", "pikiran-opini"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Menambahkan poin baru yang sifatnya sejajar atau bahkan lebih berat dari poin sebelumnya. Berbeda dari さらに yang bisa memperkuat/mengintensifikasi — 加えて lebih bersifat 'menambahkan item baru' ke dalam daftar argumen. Lebih formal dari それに dan cocok untuk laporan atau pidato.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "この地域は交通の便が良い。<b>加えて</b>、スーパーや病院も近くにある。", "id": "Kawasan ini aksesibel secara transportasi. Ditambah lagi, supermarket dan rumah sakit juga dekat.", "level": "n3", "tags": ["kehidupan-sehari", "perjalanan"]},
+    {"jp": "彼女は英語が話せる。<b>加えて</b>、中国語とスペイン語も堪能だ。", "id": "Dia bisa berbicara bahasa Inggris. Selain itu, dia juga fasih berbahasa Mandarin dan Spanyol.", "level": "n3", "tags": ["pendidikan", "bahasa-komunikasi"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00599",
+  "word": "さらに",
+  "reading": "さらに",
+  "romaji": "sara ni",
+  "meaning_id": "lebih jauh lagi, bahkan, semakin, di samping itu",
+  "meaning_en": "furthermore, even more, additionally",
+  "jlpt": "n3",
+  "pos": "adverb-conjunctive",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["bahasa-komunikasi", "pikiran-opini"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Bisa berfungsi ganda: menambahkan informasi baru (= 加えて) sekaligus mengintensifikasi (= 'semakin/bahkan lebih'). さらに 悪化する = 'semakin memburuk'. 加えて tidak bisa menggantikan fungsi intensifikasi ini. Serba guna dan cocok untuk tulisan maupun percakapan formal.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "気温が下がった。<b>さらに</b>、雪まで降り始めた。", "id": "Suhu turun. Bahkan, salju pun mulai turun.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]},
+    {"jp": "練習を続けることで、技術は<b>さらに</b>向上するだろう。", "id": "Dengan terus berlatih, kemampuanmu akan semakin meningkat.", "level": "n3", "tags": ["pendidikan", "karakter"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00600",
+  "word": "むしろ",
+  "reading": "むしろ",
+  "romaji": "mushiro",
+  "meaning_id": "justru, malah, lebih baik, sebaliknya",
+  "meaning_en": "rather, instead, on the contrary",
+  "jlpt": "n3",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["pikiran-opini", "bahasa-komunikasi"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Menyatakan bahwa pilihan atau deskripsi yang lebih tepat adalah kebalikan atau alternatif dari yang disebutkan. Berbeda dari いっそ yang menyarankan tindakan radikal — むしろ lebih sering digunakan untuk koreksi persepsi atau preferensi halus ('justru ini yang lebih akurat/baik').",
+  "conj_type": null,
+  "examples": [
+    {"jp": "彼は頭が悪いのではなく、<b>むしろ</b>努力が足りないのだ。", "id": "Bukan karena dia tidak pintar — justru karena usahanya kurang.", "level": "n3", "tags": ["pikiran-opini", "karakter"]},
+    {"jp": "暑い日は冷たい飲み物より、<b>むしろ</b>温かいお茶の方が体にいいらしい。", "id": "Di hari yang panas, katanya minuman hangat seperti teh justru lebih baik untuk tubuh daripada minuman dingin.", "level": "n3", "tags": ["kesehatan", "makanan-minuman"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00601",
+  "word": "やはり",
+  "reading": "やはり",
+  "romaji": "yahari",
+  "meaning_id": "memang, seperti yang diperkirakan, tetap saja",
+  "meaning_en": "as expected, sure enough, after all, still",
+  "jlpt": "n3",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["pikiran-opini", "emosi"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Menyatakan bahwa hasil atau keadaan sesuai dengan ekspektasi atau prediksi awal. Versi kasualnya adalah やっぱり — keduanya memiliki makna sama tapi やはり lebih sopan dan digunakan dalam tulisan atau percakapan formal. Juga bisa berarti 'tetap saja' ketika seseorang kembali ke pilihan semula.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "彼が優勝すると思っていたが、<b>やはり</b>その通りになった。", "id": "Aku pikir dia akan menang, dan memang benar demikianlah yang terjadi.", "level": "n3", "tags": ["olahraga", "emosi"]},
+    {"jp": "いろいろ試したけど、<b>やはり</b>ご飯は日本米が一番おいしい。", "id": "Sudah mencoba berbagai macam, tapi memang nasi dari beras Jepang tetap yang paling enak.", "level": "n3", "tags": ["makanan-minuman", "pikiran-opini"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00602",
+  "word": "どうも",
+  "reading": "どうも",
+  "romaji": "doumo",
+  "meaning_id": "entah kenapa, sepertinya, tampaknya (tidak pasti)",
+  "meaning_en": "somehow, it seems, for some reason (vague)",
+  "jlpt": "n3",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 1,
+  "domain": ["pikiran-opini", "bahasa-komunikasi"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Mengungkapkan kesan atau dugaan yang tidak sepenuhnya yakin — ada rasa ketidakpastian atau kebingungan ringan. Berbeda dari なぜか yang fokus pada ketidaktahuan alasan, どうも lebih menyiratkan 'ada sesuatu yang terasa kurang tepat meski sulit dijelaskan'. Juga bisa berarti 'terima kasih' atau salam informal.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "あの店は<b>どうも</b>好きになれない。理由はよくわからないけど。", "id": "Entah kenapa aku tidak bisa menyukai toko itu. Tidak tahu pasti alasannya.", "level": "n3", "tags": ["emosi", "kehidupan-sehari"]},
+    {"jp": "今日は<b>どうも</b>調子が悪い気がする。", "id": "Entah kenapa, hari ini rasanya badanku tidak fit.", "level": "n3", "tags": ["kesehatan", "emosi"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00604",
+  "word": "いわば",
+  "reading": "いわば",
+  "romaji": "iwaba",
+  "meaning_id": "ibarat, boleh dibilang, seperti halnya",
+  "meaning_en": "so to speak, as it were, in a manner of speaking",
+  "jlpt": "n3",
+  "pos": "adverb-conjunctive",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["bahasa-komunikasi", "pikiran-opini"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Digunakan sebelum analogi atau perumpamaan — pembicara menyadari bahwa ekspresi yang dipilih adalah metaforis, bukan harfiah. Berbeda dari たとえば (yang memperkenalkan contoh konkret) — いわば memperkenalkan kiasan atau cara pandang figuratif. Sering muncul dalam tulisan dan ceramah.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "彼はチームの<b>いわば</b>精神的支柱だ。", "id": "Dia adalah, boleh dibilang, pilar semangat tim.", "level": "n3", "tags": ["pekerjaan", "karakter"]},
+    {"jp": "この経験は<b>いわば</b>人生の授業料だった。", "id": "Pengalaman ini ibarat biaya pendidikan kehidupan.", "level": "n3", "tags": ["pikiran-opini", "kehidupan-sehari"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00605",
+  "word": "まさか",
+  "reading": "まさか",
+  "romaji": "masaka",
+  "meaning_id": "masa iya, tidak mungkin, masak iya (ekspresi keterkejutan/ketidakpercayaan)",
+  "meaning_en": "no way, surely not, I can't believe it",
+  "jlpt": "n3",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 1,
+  "domain": ["emosi", "bahasa-komunikasi"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Mengungkapkan ketidakpercayaan atau kekagetan — pembicara tidak pernah mengira hal tersebut bisa terjadi. Sering digunakan sendiri sebagai seruan (まさか！) atau diikuti klausa negatif (まさか〜とは思わなかった). Berbeda dari いっそ atau むしろ yang menyatakan preferensi — まさか murni ekspresi emosional.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "<b>まさか</b>、彼が会社を辞めるとは思わなかった。", "id": "Tidak mungkin, aku tidak pernah menyangka dia akan keluar dari perusahaan.", "level": "n3", "tags": ["emosi", "pekerjaan"]},
+    {"jp": "「彼女と結婚するよ」「<b>まさか</b>！」", "id": "\"Aku akan menikahi dia.\" \"Masa iya!\"", "level": "n3", "tags": ["emosi", "percintaan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00606",
+  "word": "いっそ",
+  "reading": "いっそ",
+  "romaji": "isso",
+  "meaning_id": "sekalian saja, lebih baik sekalian, sekalian",
+  "meaning_en": "rather, might as well, may as well go all the way",
+  "jlpt": "n3",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["pikiran-opini", "keputusan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Mengungkapkan dorongan untuk memilih tindakan yang lebih ekstrem atau tegas daripada opsi tanggung — 'kalau sudah begini, mending sekalian saja'. Berbeda dari むしろ (yang mengoreksi persepsi) — いっそ menyarankan tindakan radikal atau keputusan menyeluruh. Sering mengandung nada frustrasi atau tekad.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "直らないなら、<b>いっそ</b>全部作り直した方がいい。", "id": "Kalau tidak bisa diperbaiki, sekalian saja buat ulang semuanya.", "level": "n3", "tags": ["keputusan", "pekerjaan"]},
+    {"jp": "こんなに遅れるなら、<b>いっそ</b>休んでしまおうか。", "id": "Kalau sudah terlambat seperti ini, sekalian saja tidak masuk deh.", "level": "n3", "tags": ["keputusan", "kehidupan-sehari"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00607",
+  "word": "どうせ",
+  "reading": "どうせ",
+  "romaji": "douse",
+  "meaning_id": "toh, bagaimanapun juga, sia-sia saja",
+  "meaning_en": "anyway, in the end, it's no use, after all",
+  "jlpt": "n3",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 1,
+  "domain": ["emosi-negatif", "pikiran-opini"],
+  "register": "neutral",
+  "lawan_bicara": ["teman", "umum"],
+  "nuance": "Mengandung nada pesimis atau pasrah — pembicara merasa hasil akhirnya sudah bisa ditebak (buruk) atau bahwa usaha tidak akan mengubah apapun. Berbeda dari いっそ (yang mendorong tindakan radikal) — どうせ lebih ke sikap menyerah. Jika dipakai dengan positif (どうせならもっとよいものを), maknanya berubah jadi 'kalau memang harus, lebih baik yang terbaik'.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "<b>どうせ</b>失敗するんだから、やらない方がいい。", "id": "Toh pasti gagal juga, lebih baik tidak usah dilakukan.", "level": "n3", "tags": ["emosi-negatif", "keputusan"]},
+    {"jp": "<b>どうせ</b>やるなら、最高のものを作ろう。", "id": "Kalau bagaimanapun harus dilakukan, lebih baik buat yang terbaik.", "level": "n3", "tags": ["keputusan", "karakter"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00608",
+  "word": "せっかく",
+  "reading": "せっかく",
+  "romaji": "sekkaku",
+  "meaning_id": "susah payah, sayang kalau tidak dimanfaatkan, dengan susah payah",
+  "meaning_en": "with much effort, it would be a waste if..., taking the trouble to",
+  "jlpt": "n3",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["emosi", "keputusan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Mengandung makna bahwa ada usaha atau kesempatan berharga yang telah diberikan — biasanya disertai rasa sayang kalau terbuang sia-sia. Berbeda dari わざわざ (yang menekankan tindakan repot-repot) — せっかく lebih menekankan nilai atau kelangkaan kesempatan itu. Sering muncul dalam kalimat negasi (せっかく〜のに = sayang sekali padahal...).",
+  "conj_type": null,
+  "examples": [
+    {"jp": "<b>せっかく</b>日本まで来たのだから、富士山は見ておきたい。", "id": "Sayang kalau sudah jauh-jauh ke Jepang tapi tidak melihat Gunung Fuji.", "level": "n3", "tags": ["perjalanan", "emosi"]},
+    {"jp": "<b>せっかく</b>料理を作ったのに、誰も食べてくれなかった。", "id": "Sudah susah payah memasak, tapi tidak ada yang mau makan.", "level": "n3", "tags": ["makanan-minuman", "emosi-negatif"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00609",
+  "word": "あえて",
+  "reading": "あえて",
+  "romaji": "aete",
+  "meaning_id": "sengaja, dengan berani, memilih untuk (walaupun ada risiko/halangan)",
+  "meaning_en": "deliberately, daringly, going out of one's way to (despite difficulty)",
+  "jlpt": "n3",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["karakter", "keputusan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Menekankan bahwa tindakan dilakukan secara sadar dan sengaja, meski ada risiko, oposisi, atau konvensi yang menghalangi — 'berani melakukan sesuatu yang tidak biasa'. Berbeda dari わざわざ (yang menekankan usaha ekstra) — あえて lebih menekankan keberanian atau keputusan yang melawan arus.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "皆が反対しているのに、彼は<b>あえて</b>その計画を実行した。", "id": "Meski semua menentang, dia dengan berani tetap melaksanakan rencana itu.", "level": "n3", "tags": ["karakter", "keputusan"]},
+    {"jp": "便利な道があるのに、<b>あえて</b>険しい山道を選んだ。", "id": "Ada jalan yang mudah, tapi dia sengaja memilih jalur pegunungan yang terjal.", "level": "n3", "tags": ["perjalanan", "karakter"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00610",
+  "word": "わざわざ",
+  "reading": "わざわざ",
+  "romaji": "wazawaza",
+  "meaning_id": "sengaja, repot-repot, susah payah datang/melakukan",
+  "meaning_en": "going out of one's way, taking the trouble to, deliberately",
+  "jlpt": "n3",
+  "pos": "adverb-manner",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["kehidupan-sehari", "sopan-santun"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Menekankan bahwa seseorang telah melakukan upaya ekstra atau tindakan tidak diperlukan — bisa mengandung rasa terima kasih (わざわざ来てくれてありがとう) atau sindiran halus (わざわざそんなことしなくていい). Berbeda dari あえて yang menekankan keberanian — わざわざ lebih pada kerepotan atau tindakan yang melebihi kebutuhan.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "<b>わざわざ</b>遠くから来てくれてありがとうございます。", "id": "Terima kasih sudah repot-repot datang dari jauh.", "level": "n3", "tags": ["sopan-santun", "pertemanan"]},
+    {"jp": "メールで済むのに、<b>わざわざ</b>電話をかけてくるのは迷惑だ。", "id": "Padahal bisa dengan email, repot-repot telepon begini malah mengganggu.", "level": "n3", "tags": ["pekerjaan", "bahasa-komunikasi"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00611",
+  "word": "せめて",
+  "reading": "せめて",
+  "romaji": "semete",
+  "meaning_id": "setidaknya, paling tidak, minimal",
+  "meaning_en": "at least, at the very least",
+  "jlpt": "n3",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["emosi", "keputusan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Mengungkapkan harapan minimal atau permintaan terkecil — pembicara sudah menerima bahwa idealnya tidak tercapai, lalu meminta syarat minimum. Berbeda dari少なくとも (yang bersifat faktual/kuantitatif) — せめて mengandung nuansa emosional, sering terasa seperti permohonan atau harapan terakhir.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "全部はできなくても、<b>せめて</b>挨拶だけはしてほしい。", "id": "Walaupun tidak bisa semuanya, setidaknya tolong ucapkan salam.", "level": "n3", "tags": ["sopan-santun", "emosi"]},
+    {"jp": "お金はないけど、<b>せめて</b>健康でいたい。", "id": "Tidak punya uang, tapi paling tidak aku ingin tetap sehat.", "level": "n3", "tags": ["kesehatan", "emosi"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00612",
+  "word": "たとえ",
+  "reading": "たとえ",
+  "romaji": "tatoe",
+  "meaning_id": "seandainya, meskipun, walaupun",
+  "meaning_en": "even if, no matter how much (used with ~ても/でも)",
+  "jlpt": "n3",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["pikiran-opini", "karakter"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Selalu berpasangan dengan 〜ても atau 〜でも — tidak digunakan sendiri. Menekankan bahwa kondisi apapun tidak mengubah hasil. Berbeda dari もし (kondisional netral) — たとえ menyiratkan kontras yang kuat dan tekad, sering digunakan dalam ungkapan dramatis atau janji.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "<b>たとえ</b>失敗しても、挑戦することに意味がある。", "id": "Seandainya pun gagal, ada makna dalam mencoba.", "level": "n3", "tags": ["karakter", "pikiran-opini"]},
+    {"jp": "<b>たとえ</b>どんなに忙しくても、家族の時間は大切にする。", "id": "Walaupun sesibuk apapun, aku akan tetap menjaga waktu bersama keluarga.", "level": "n3", "tags": ["keluarga", "karakter"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00613",
+  "word": "もし",
+  "reading": "もし",
+  "romaji": "moshi",
+  "meaning_id": "seandainya, kalau, jika (kondisional)",
+  "meaning_en": "if, in case, should",
+  "jlpt": "n3",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["pikiran-opini", "keputusan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Menandai kondisi hipotetis yang masih mungkin terjadi — membuka klausa kondisional (〜たら/〜なら/〜ば). Berbeda dari 仮に (yang lebih bersifat counterfactual/andaikan) dan たとえ (yang menekankan ketidakpedulian terhadap kondisi apapun) — もし adalah bentuk kondisional paling umum dan netral.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "<b>もし</b>雨が降ったら、試合は中止になる。", "id": "Kalau hujan, pertandingan akan dibatalkan.", "level": "n3", "tags": ["olahraga", "kehidupan-sehari"]},
+    {"jp": "<b>もし</b>よかったら、一緒に食事でもどうですか。", "id": "Kalau berkenan, bagaimana kalau makan bersama?", "level": "n3", "tags": ["sopan-santun", "pertemanan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00614",
+  "word": "仮に",
+  "reading": "かりに",
+  "romaji": "kari ni",
+  "meaning_id": "misalkan, andaikan, seumpama (hipotesis)",
+  "meaning_en": "suppose, hypothetically speaking, even if",
+  "jlpt": "n3",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["pikiran-opini", "ilmu-pengetahuan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Lebih eksplisit bersifat hipotetis atau counterfactual dibanding もし — sering dipakai dalam argumen, debat, atau diskusi ilmiah ketika pembicara mengajukan skenario yang mungkin tidak nyata. Sering diikuti 〜としても (bahkan jika seandainya). もし lebih umum dan kasual; 仮に lebih terstruktur dan analitis.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "<b>仮に</b>宝くじが当たったとしても、仕事は辞めないだろう。", "id": "Misalkan menang lotere sekalipun, aku mungkin tidak akan berhenti kerja.", "level": "n3", "tags": ["keputusan", "pikiran-opini"]},
+    {"jp": "<b>仮に</b>この計画が失敗したとしても、学べることは多いはずだ。", "id": "Andaikan rencana ini gagal sekalipun, seharusnya ada banyak yang bisa dipelajari.", "level": "n3", "tags": ["ilmu-pengetahuan", "keputusan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00615",
+  "word": "おそらく",
+  "reading": "おそらく",
+  "romaji": "osoraku",
+  "meaning_id": "kemungkinan besar, mungkin, barangkali (formal)",
+  "meaning_en": "probably, most likely, presumably",
+  "jlpt": "n3",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["pikiran-opini", "bahasa-komunikasi"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Menyatakan dugaan dengan tingkat kepercayaan yang cukup tinggi — lebih formal dan lebih confident dari たぶん. Sering muncul dalam tulisan, berita, atau percakapan setengah formal. たぶん lebih kasual dan sehari-hari, sedangkan おそらく terkesan lebih bijaksana atau analitis. Biasanya diikuti 〜だろう atau 〜と思われる.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "<b>おそらく</b>、彼は明日も来ないだろう。", "id": "Kemungkinan besar, dia tidak akan datang lagi besok.", "level": "n3", "tags": ["pikiran-opini", "kehidupan-sehari"]},
+    {"jp": "この天気では、<b>おそらく</b>試合は延期になると思われる。", "id": "Dengan cuaca seperti ini, pertandingan kemungkinan besar akan ditunda.", "level": "n3", "tags": ["olahraga", "alam-lingkungan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00731",
+  "word": "効率よく",
+  "reading": "こうりつよく",
+  "romaji": "kouritsu yoku",
+  "meaning_id": "dengan efisien, secara efektif tanpa boros",
+  "meaning_en": "efficiently, productively",
+  "jlpt": "n3",
+  "pos": "adverb-manner",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["pekerjaan", "kehidupan-sehari"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Bentuk adverbia dari 効率 (efisiensi) — menerangkan cara melakukan sesuatu dengan rasio hasil/usaha yang baik. Berbeda dari ただ速く (sekadar cepat); 効率よく menyiratkan bahwa hasilnya juga berkualitas, bukan sekadar buru-buru. Pasangan alaminya: 効率よく仕事する、効率よく勉強する.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "<b>効率よく</b>家事をこなすために、順番を決めている。", "id": "Aku menentukan urutan pekerjaan rumah agar bisa menyelesaikannya dengan efisien.", "level": "n3", "tags": ["kehidupan-sehari"]},
+    {"jp": "<b>効率よく</b>仕事を終わらせて、早く帰りたい。", "id": "Aku ingin menyelesaikan pekerjaan dengan efisien agar bisa pulang lebih awal.", "level": "n3", "tags": ["pekerjaan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00732",
+  "word": "まとめて",
+  "reading": "まとめて",
+  "romaji": "matomete",
+  "meaning_id": "sekaligus, secara kolektif, dikumpulkan jadi satu",
+  "meaning_en": "all at once, in bulk, together",
+  "jlpt": "n3",
+  "pos": "adverb-manner",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["kehidupan-sehari"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Menekankan penggabungan beberapa hal menjadi satu tindakan atau satu paket — efisiensi dengan menghindari pengulangan. Berbeda dari いっぺんに yang juga berarti 'sekaligus' tapi menekankan kebersamaan waktu; まとめて lebih menekankan penggabungan atau pengumpulan menjadi satu unit sebelum dikerjakan.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "洗い物は<b>まとめて</b>やった方が水を節約できる。", "id": "Mencuci piring sekaligus lebih hemat air.", "level": "n3", "tags": ["kehidupan-sehari", "alam-lingkungan"]},
+    {"jp": "質問は<b>まとめて</b>最後にどうぞ。", "id": "Silakan ajukan pertanyaan sekaligus di akhir.", "level": "n3", "tags": ["kehidupan-sehari", "bahasa-komunikasi"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00733",
+  "word": "こまめに",
+  "reading": "こまめに",
+  "romaji": "komame ni",
+  "meaning_id": "rajin, sering-sering untuk hal-hal kecil, dengan tekun dan konsisten",
+  "meaning_en": "diligently, frequently (for small tasks), attentively",
+  "jlpt": "n3",
+  "pos": "adverb-manner",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["kehidupan-sehari", "karakter"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Menekankan kerajinan melakukan hal-hal kecil secara rutin dan konsisten — bukan sekaligus besar, tapi sedikit-sedikit namun terus. Berlawanan dengan まとめて; こまめに cocok untuk hal yang lebih baik dilakukan kecil-kecil dan sering (menabung, membersihkan, mencatat) agar tidak menumpuk.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "パソコンのデータは<b>こまめに</b>バックアップしておこう。", "id": "Mari rajin-rajin mencadangkan data komputer agar aman.", "level": "n3", "tags": ["kehidupan-sehari", "teknologi"]},
+    {"jp": "部屋を汚さないように、<b>こまめに</b>掃除している。", "id": "Aku rajin membersihkan agar kamar tidak menjadi kotor.", "level": "n3", "tags": ["kehidupan-sehari"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00734",
+  "word": "あらかじめ",
+  "reading": "あらかじめ",
+  "romaji": "arakajime",
+  "meaning_id": "sebelumnya, jauh-jauh hari, lebih dulu dari waktu yang diperlukan",
+  "meaning_en": "in advance, beforehand, ahead of time",
+  "jlpt": "n3",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["kehidupan-sehari", "bisnis"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Menekankan tindakan yang dilakukan sebelum waktunya tiba — persiapan dan antisipasi. Lebih formal dari 前もって yang bermakna serupa; あらかじめ sering muncul dalam instruksi tertulis, pengumuman resmi, atau bahasa bisnis. Keduanya bisa saling menggantikan, tapi あらかじめ terasa lebih institusional.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "<b>あらかじめ</b>予約しておかないと、席が取れない。", "id": "Kalau tidak memesan jauh-jauh hari, tempat duduknya tidak bisa didapat.", "level": "n3", "tags": ["kehidupan-sehari", "perjalanan"]},
+    {"jp": "<b>あらかじめ</b>内容を確認してからご参加ください。", "id": "Tolong periksa materinya terlebih dahulu sebelum ikut serta.", "level": "n3", "tags": ["bisnis", "kehidupan-sehari"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+  // ── NOUNS (204) ────────────────────────────────────────
+
+{
+  "id": "vg-n3-00027",
+  "word": "環境",
+  "reading": "かんきょう",
+  "romaji": "kankyou",
+  "meaning_id": "lingkungan",
+  "meaning_en": "environment",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "kehidupan-sehari",
+    "akademik"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Bisa merujuk lingkungan alam atau lingkungan kerja/belajar.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "環境を守ることは大切だ。",
+      "id": "Melindungi lingkungan itu penting.",
+      "level": "n3",
+      "tags": [
+        "akademik"
+      ]
+    },
+    {
+      "jp": "新しい環境に慣れるまで時間がかかる。",
+      "id": "Butuh waktu untuk terbiasa dengan lingkungan baru.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v14.27"
+},
+
+{
+  "id": "vg-n3-00028",
+  "word": "意見",
+  "reading": "いけん",
+  "romaji": "iken",
+  "meaning_id": "pendapat",
+  "meaning_en": "opinion",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "pekerjaan",
+    "hubungan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Pendapat yang diungkapkan secara eksplisit.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あなたの意見を聞かせてください。",
+      "id": "Tolong beri tahu pendapat Anda.",
+      "level": "n3",
+      "tags": [
+        "pekerjaan"
+      ]
+    },
+    {
+      "jp": "意見が合わないこともある。",
+      "id": "Ada kalanya pendapat tidak cocok.",
+      "level": "n3",
+      "tags": [
+        "hubungan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v14.27"
+},
+
+{
+  "id": "vg-n3-00030",
+  "word": "文化",
+  "reading": "ぶんか",
+  "romaji": "bunka",
+  "meaning_id": "budaya",
+  "meaning_en": "culture",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "akademik",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Budaya dalam arti luas — tradisi, adat istiadat, kebiasaan masyarakat.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "日本の文化に興味がある。",
+      "id": "Saya tertarik dengan budaya Jepang.",
+      "level": "n3",
+      "tags": [
+        "akademik"
+      ]
+    },
+    {
+      "jp": "食文化は国によって違う。",
+      "id": "Budaya makan berbeda-beda di setiap negara.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v14.27"
+},
+
+{
+  "id": "vg-n3-00031",
+  "word": "技術",
+  "reading": "ぎじゅつ",
+  "romaji": "gijutsu",
+  "meaning_id": "teknologi, keterampilan",
+  "meaning_en": "technology, skill",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "pekerjaan",
+    "akademik"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Bisa merujuk teknologi (IT技術) atau keterampilan tangan.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "最新の技術を使っている。",
+      "id": "Menggunakan teknologi terbaru.",
+      "level": "n3",
+      "tags": [
+        "pekerjaan"
+      ]
+    },
+    {
+      "jp": "料理の技術を磨きたい。",
+      "id": "Ingin mengasah keterampilan memasak.",
+      "level": "n3",
+      "tags": [
+        "hiburan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v14.27"
+},
+
+{
+  "id": "vg-n3-00032",
+  "word": "社会",
+  "reading": "しゃかい",
+  "romaji": "shakai",
+  "meaning_id": "masyarakat",
+  "meaning_en": "society",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "akademik"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Masyarakat secara umum atau mata pelajaran IPS (社会科).",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "社会のルールを守るべきだ。",
+      "id": "Kita harus mematuhi aturan masyarakat.",
+      "level": "n3",
+      "tags": [
+        "akademik"
+      ]
+    },
+    {
+      "jp": "社会人になって忙しくなった。",
+      "id": "Sejak jadi pekerja (anggota masyarakat), jadi sibuk.",
+      "level": "n3",
+      "tags": [
+        "pekerjaan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v14.27"
+},
+
+{
+  "id": "vg-n3-00033",
+  "word": "原因",
+  "reading": "げんいん",
+  "romaji": "genin",
+  "meaning_id": "penyebab",
+  "meaning_en": "cause, reason",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [
+    "gn3-00001",
+    "gn3-00002"
+  ],
+  "formalitas": 3,
+  "domain": [
+    "akademik",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Penyebab dalam konteks analitis — lebih formal dari 理由 (alasan).",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "事故の原因を調べている。",
+      "id": "Sedang menyelidiki penyebab kecelakaan.",
+      "level": "n3",
+      "tags": [
+        "akademik"
+      ]
+    },
+    {
+      "jp": "病気の原因はストレスだった。",
+      "id": "Penyebab penyakitnya adalah stres.",
+      "level": "n3",
+      "tags": [
+        "kesehatan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [
+    "vg-n3-00034"
+  ],
+  "see_also": [],
+  "added_v": "v14.27"
+},
+
+{
+  "id": "vg-n3-00034",
+  "word": "結果",
+  "reading": "けっか",
+  "romaji": "kekka",
+  "meaning_id": "hasil",
+  "meaning_en": "result",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "akademik",
+    "pekerjaan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Hasil dari suatu proses atau tindakan.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "試験の結果を見てがっかりした。",
+      "id": "Melihat hasil ujian, jadi kecewa.",
+      "level": "n3",
+      "tags": [
+        "pendidikan"
+      ]
+    },
+    {
+      "jp": "努力した結果、成功した。",
+      "id": "Sebagai hasil kerja keras, berhasil.",
+      "level": "n3",
+      "tags": [
+        "pekerjaan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [
+    "vg-n3-00033"
+  ],
+  "see_also": [],
+  "added_v": "v14.27"
+},
+
+{
+  "id": "vg-n3-00035",
+  "word": "事実",
+  "reading": "じじつ",
+  "romaji": "jijitsu",
+  "meaning_id": "fakta, kenyataan",
+  "meaning_en": "fact, truth",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "akademik"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Fakta objektif — sesuatu yang benar-benar terjadi.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "事実を正直に話してください。",
+      "id": "Tolong ceritakan faktanya dengan jujur.",
+      "level": "n3",
+      "tags": [
+        "hubungan"
+      ]
+    },
+    {
+      "jp": "それは事実ではない。",
+      "id": "Itu bukan fakta.",
+      "level": "n3",
+      "tags": [
+        "akademik"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v14.27"
+},
+
+{
+  "id": "vg-n3-00036",
+  "word": "目的",
+  "reading": "もくてき",
+  "romaji": "mokuteki",
+  "meaning_id": "tujuan",
+  "meaning_en": "purpose, goal",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [
+    "gn3-00053"
+  ],
+  "formalitas": 3,
+  "domain": [
+    "pekerjaan",
+    "akademik"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Tujuan yang spesifik — lebih formal dari 目標 (target).",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "旅行の目的は何ですか。",
+      "id": "Apa tujuan perjalanan Anda?",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "目的を持って行動することが大切だ。",
+      "id": "Penting untuk bertindak dengan tujuan.",
+      "level": "n3",
+      "tags": [
+        "pekerjaan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v14.27"
+},
+
+{
+  "id": "vg-n3-00037",
+  "word": "程度",
+  "reading": "ていど",
+  "romaji": "teido",
+  "meaning_id": "tingkat, derajat",
+  "meaning_en": "degree, extent",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "akademik"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Tingkatan atau ukuran sesuatu. Juga dipakai sebagai sufiks: ある程度.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ある程度の日本語ができる。",
+      "id": "Bisa bahasa Jepang sampai tingkat tertentu.",
+      "level": "n3",
+      "tags": [
+        "pendidikan"
+      ]
+    },
+    {
+      "jp": "被害の程度はまだわからない。",
+      "id": "Tingkat kerusakannya belum diketahui.",
+      "level": "n3",
+      "tags": [
+        "akademik"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v14.27"
+},
+
+{
+  "id": "vg-n3-00038",
+  "word": "相手",
+  "reading": "あいて",
+  "romaji": "aite",
+  "meaning_id": "lawan bicara, pasangan",
+  "meaning_en": "partner, opponent, the other person",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "hubungan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan"
+  ],
+  "nuance": "Orang yang berhadapan dengan kita — bisa lawan, pasangan, atau mitra.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "相手の気持ちを考えよう。",
+      "id": "Mari pikirkan perasaan orang lain.",
+      "level": "n3",
+      "tags": [
+        "hubungan"
+      ]
+    },
+    {
+      "jp": "試合の相手は強かった。",
+      "id": "Lawan pertandingannya kuat.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v14.27"
+},
+
+{
+  "id": "vg-n3-00039",
+  "word": "場合",
+  "reading": "ばあい",
+  "romaji": "baai",
+  "meaning_id": "keadaan, kasus",
+  "meaning_en": "case, situation",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "pekerjaan",
+    "akademik"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Sering dipakai dalam pola 〜場合は (dalam hal/jika...).",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "雨の場合は中止します。",
+      "id": "Kalau hujan, akan dibatalkan.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "この場合、どうすればいいですか。",
+      "id": "Dalam kasus ini, sebaiknya bagaimana?",
+      "level": "n3",
+      "tags": [
+        "pekerjaan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v14.27"
+},
+
+{
+  "id": "vg-n3-00040",
+  "word": "状態",
+  "reading": "じょうたい",
+  "romaji": "joutai",
+  "meaning_id": "kondisi, keadaan",
+  "meaning_en": "condition, state",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "kehidupan-sehari",
+    "kesehatan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kondisi saat ini dari seseorang atau sesuatu.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "体の状態はどうですか。",
+      "id": "Bagaimana kondisi tubuhnya?",
+      "level": "n3",
+      "tags": [
+        "kesehatan"
+      ]
+    },
+    {
+      "jp": "道路の状態が悪い。",
+      "id": "Kondisi jalannya buruk.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v14.27"
+},
+
+{
+  "id": "vg-n3-00116",
+  "word": "社会",
+  "reading": "しゃかい",
+  "romaji": "shakai",
+  "meaning_id": "masyarakat, sosial",
+  "meaning_en": "society",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "sosial"
+  ],
+  "register": "neutral",
+  "nuance": null,
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "<b>社会</b>に貢献したい。",
+      "id": "Ingin berkontribusi pada masyarakat.",
+      "level": "n3",
+      "tags": [
+        "hubungan-konsep"
+      ]
+    },
+    {"jp": "<b>社会</b>のルールを守ることが大切だ。", "id": "Penting untuk mematuhi aturan masyarakat.", "level": "n3", "tags": ["politik-masyarakat"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00117",
+  "word": "文化",
+  "reading": "ぶんか",
+  "romaji": "bunka",
+  "meaning_id": "budaya",
+  "meaning_en": "culture",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "budaya"
+  ],
+  "register": "neutral",
+  "nuance": null,
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "日本の<b>文化</b>に興味がある。",
+      "id": "Tertarik dengan budaya Jepang.",
+      "level": "n3",
+      "tags": [
+        "budaya"
+      ]
+    },
+    {
+      "jp": "<b>文化</b>の違いを理解することが大切だ。",
+      "id": "Penting memahami perbedaan budaya.",
+      "level": "n3",
+      "tags": [
+        "bahasa-komunikasi"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00118",
+  "word": "経済",
+  "reading": "けいざい",
+  "romaji": "keizai",
+  "meaning_id": "ekonomi",
+  "meaning_en": "economy",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "ekonomi"
+  ],
+  "register": "formal",
+  "nuance": null,
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "<b>経済</b>成長が続いている。",
+      "id": "Pertumbuhan ekonomi terus berlanjut.",
+      "level": "n3",
+      "tags": [
+        "ekonomi-keuangan"
+      ]
+    },
+    {"jp": "円安が<b>経済</b>に影響を与えている。", "id": "Pelemahan yen berdampak pada perekonomian.", "level": "n3", "tags": ["ekonomi-keuangan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00119",
+  "word": "環境",
+  "reading": "かんきょう",
+  "romaji": "kankyou",
+  "meaning_id": "lingkungan",
+  "meaning_en": "environment",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "alam",
+    "sosial"
+  ],
+  "register": "neutral",
+  "nuance": "Bisa berarti lingkungan alam atau lingkungan sekitar.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "<b>環境</b>問題は深刻だ。",
+      "id": "Masalah lingkungan sangat serius.",
+      "level": "n3",
+      "tags": [
+        "alam-lingkungan"
+      ]
+    },
+    {
+      "jp": "職場の<b>環境</b>がいい会社に入りたい。",
+      "id": "Ingin masuk perusahaan dengan lingkungan kerja yang baik.",
+      "level": "n3",
+      "tags": [
+        "pekerjaan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00120",
+  "word": "政治",
+  "reading": "せいじ",
+  "romaji": "seiji",
+  "meaning_id": "politik",
+  "meaning_en": "politics",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "politik"
+  ],
+  "register": "formal",
+  "nuance": null,
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "<b>政治</b>に興味を持ち始めた。",
+      "id": "Mulai tertarik dengan politik.",
+      "level": "n3",
+      "tags": [
+        "hubungan-konsep"
+      ]
+    },
+    {"jp": "<b>政治</b>家は国民のために働くべきだ。", "id": "Politisi seharusnya bekerja untuk rakyat.", "level": "n3", "tags": ["politik-masyarakat"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00131",
+  "word": "原因",
+  "reading": "げんいん",
+  "romaji": "gen'in",
+  "meaning_id": "penyebab, sebab",
+  "meaning_en": "cause",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "logika"
+  ],
+  "register": "neutral",
+  "nuance": "Pasangannya: 原因 (penyebab) dan 結果 (akibat).",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "事故の<b>原因</b>を調べている。",
+      "id": "Sedang menyelidiki penyebab kecelakaan.",
+      "level": "n3",
+      "tags": [
+        "kejadian"
+      ]
+    },
+    {"jp": "ストレスが体調不良の<b>原因</b>だった。", "id": "Stres adalah penyebab kondisi badan yang buruk.", "level": "n3", "tags": ["kesehatan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [
+    "vg-n3-00132"
+  ],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00132",
+  "word": "結果",
+  "reading": "けっか",
+  "romaji": "kekka",
+  "meaning_id": "hasil, akibat",
+  "meaning_en": "result",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "logika"
+  ],
+  "register": "neutral",
+  "nuance": null,
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "努力した<b>結果</b>、合格した。",
+      "id": "Sebagai hasil usaha keras, lulus.",
+      "level": "n3",
+      "tags": [
+        "pendidikan"
+      ]
+    },
+    {
+      "jp": "テストの<b>結果</b>が出た。",
+      "id": "Hasil tes sudah keluar.",
+      "level": "n3",
+      "tags": [
+        "pendidikan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [
+    "vg-n3-00131"
+  ],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00133",
+  "word": "意味",
+  "reading": "いみ",
+  "romaji": "imi",
+  "meaning_id": "arti, makna",
+  "meaning_en": "meaning",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "komunikasi"
+  ],
+  "register": "neutral",
+  "nuance": null,
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この言葉の<b>意味</b>を教えてください。",
+      "id": "Tolong ajarkan arti kata ini.",
+      "level": "n3",
+      "tags": [
+        "pendidikan"
+      ]
+    },
+    {
+      "jp": "生きる<b>意味</b>を考えた。",
+      "id": "Saya berpikir tentang makna hidup.",
+      "level": "n3",
+      "tags": [
+        "filosofi"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00134",
+  "word": "場合",
+  "reading": "ばあい",
+  "romaji": "baai",
+  "meaning_id": "dalam hal, kasus, situasi",
+  "meaning_en": "case, situation",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "logika"
+  ],
+  "register": "neutral",
+  "nuance": "Sering dipakai dengan 〜場合は.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "緊急の<b>場合</b>は119に電話してください。",
+      "id": "Dalam keadaan darurat, hubungi 119.",
+      "level": "n3",
+      "tags": [
+        "darurat"
+      ]
+    },
+    {"jp": "遅れる<b>場合</b>は連絡してください。", "id": "Kalau terlambat, tolong hubungi saya.", "level": "n3", "tags": ["kehidupan-sehari"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00135",
+  "word": "機会",
+  "reading": "きかい",
+  "romaji": "kikai",
+  "meaning_id": "kesempatan",
+  "meaning_en": "opportunity",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan"
+  ],
+  "register": "neutral",
+  "nuance": "Lebih formal dari チャンス.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "いい<b>機会</b>なので、挑戦してみます。",
+      "id": "Karena ini kesempatan bagus, akan kucoba.",
+      "level": "n3",
+      "tags": [
+        "motivasi"
+      ]
+    },
+    {"jp": "海外で働く<b>機会</b>を得た。", "id": "Saya mendapat kesempatan untuk bekerja di luar negeri.", "level": "n3", "tags": ["pekerjaan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00136",
+  "word": "方法",
+  "reading": "ほうほう",
+  "romaji": "houhou",
+  "meaning_id": "cara, metode",
+  "meaning_en": "method",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "logika"
+  ],
+  "register": "neutral",
+  "nuance": null,
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "問題を解決する<b>方法</b>を考えた。",
+      "id": "Memikirkan cara menyelesaikan masalah.",
+      "level": "n3",
+      "tags": [
+        "pekerjaan"
+      ]
+    },
+    {"jp": "もっと効率的な<b>方法</b>があるはずだ。", "id": "Pasti ada cara yang lebih efisien.", "level": "n3", "tags": ["pikiran-opini"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00137",
+  "word": "関係",
+  "reading": "かんけい",
+  "romaji": "kankei",
+  "meaning_id": "hubungan, kaitan",
+  "meaning_en": "relation",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "sosial"
+  ],
+  "register": "neutral",
+  "nuance": null,
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "二人の<b>関係</b>はどうなっているの？",
+      "id": "Hubungan kalian berdua gimana sekarang?",
+      "level": "n3",
+      "tags": [
+        "hubungan"
+      ]
+    },
+    {
+      "jp": "この件とは<b>関係</b>ありません。",
+      "id": "Ini tidak ada kaitannya.",
+      "level": "n3",
+      "tags": [
+        "penjelasan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00138",
+  "word": "問題",
+  "reading": "もんだい",
+  "romaji": "mondai",
+  "meaning_id": "masalah, soal",
+  "meaning_en": "problem, question",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "logika"
+  ],
+  "register": "neutral",
+  "nuance": "Bisa berarti soal ujian atau masalah kehidupan.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "環境<b>問題</b>は深刻だ。",
+      "id": "Masalah lingkungan sangat serius.",
+      "level": "n3",
+      "tags": [
+        "hubungan-konsep"
+      ]
+    },
+    {
+      "jp": "この<b>問題</b>を解いてください。",
+      "id": "Tolong selesaikan soal ini.",
+      "level": "n3",
+      "tags": [
+        "pendidikan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00139",
+  "word": "努力",
+  "reading": "どりょく",
+  "romaji": "doryoku",
+  "meaning_id": "usaha keras",
+  "meaning_en": "effort",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "motivasi"
+  ],
+  "register": "neutral",
+  "nuance": null,
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "<b>努力</b>すれば必ず上手くなる。",
+      "id": "Kalau berusaha keras, pasti mahir.",
+      "level": "n3",
+      "tags": [
+        "motivasi"
+      ]
+    },
+    {
+      "jp": "彼女の<b>努力</b>は報われた。",
+      "id": "Usaha kerasnya membuahkan hasil.",
+      "level": "n3",
+      "tags": [
+        "keberhasilan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00140",
+  "word": "成功",
+  "reading": "せいこう",
+  "romaji": "seikou",
+  "meaning_id": "sukses, berhasil",
+  "meaning_en": "success",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan"
+  ],
+  "register": "neutral",
+  "nuance": null,
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "プレゼンが<b>成功した</b>。",
+      "id": "Presentasinya sukses.",
+      "level": "n3",
+      "tags": [
+        "pekerjaan"
+      ]
+    },
+    {
+      "jp": "<b>成功</b>の秘訣は継続だ。",
+      "id": "Kunci sukses adalah konsistensi.",
+      "level": "n3",
+      "tags": [
+        "motivasi"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [
+    "vg-n3-00141"
+  ],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00141",
+  "word": "失敗",
+  "reading": "しっぱい",
+  "romaji": "shippai",
+  "meaning_id": "gagal, kegagalan",
+  "meaning_en": "failure",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan"
+  ],
+  "register": "neutral",
+  "nuance": "Dalam budaya Jepang: 七転び八起き — jatuh 7 kali, bangkit 8 kali.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "<b>失敗</b>を恐れずに挑戦して。",
+      "id": "Coba saja tanpa takut gagal.",
+      "level": "n3",
+      "tags": [
+        "motivasi"
+      ]
+    },
+    {
+      "jp": "<b>失敗</b>から学ぶことが大切だ。",
+      "id": "Penting belajar dari kegagalan.",
+      "level": "n3",
+      "tags": [
+        "pembelajaran"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [
+    "vg-n3-00140"
+  ],
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00251", "word": "意見", "reading": "いけん", "romaji": "iken",
+  "meaning_id": "pendapat, opini", "meaning_en": "opinion, view",
+  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["pikiran-opini", "bahasa-komunikasi", "pekerjaan"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Pikiran atau pandangan pribadi tentang suatu hal. Lebih netral dari 主張 yang memiliki nuansa 'bersikeras'. Sering dipakai dalam konteks formal: 意見を述べる (menyampaikan pendapat).",
+  "conj_type": null,
+  "examples": [
+    {"jp": "会議でみんな自由に意見を述べた。", "id": "Semua orang menyampaikan pendapat secara bebas dalam rapat.", "level": "n3", "tags": ["pekerjaan"]},
+    {"jp": "あなたの意見を聞かせてください。", "id": "Tolong ceritakan pendapat Anda.", "level": "n3", "tags": ["bahasa-komunikasi"]},
+    {"jp": "この問題については意見が分かれている。", "id": "Tentang masalah ini, pendapat terbagi.", "level": "n3", "tags": ["pikiran-opini"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00252"], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00260", "word": "責任", "reading": "せきにん", "romaji": "sekinin",
+  "meaning_id": "tanggung jawab", "meaning_en": "responsibility",
+  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
+  "formalitas": 3, "domain": ["pekerjaan", "hukum-aturan", "karakter"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Kewajiban moral atau legal atas suatu tindakan atau peran. Pola umum: 責任を取る (mengambil tanggung jawab), 責任がある (bertanggung jawab atas), 責任を果たす (menunaikan tanggung jawab).",
+  "conj_type": null,
+  "examples": [
+    {"jp": "自分の行動には責任を持つべきだ。", "id": "Harus bertanggung jawab atas tindakan sendiri.", "level": "n3", "tags": ["karakter"]},
+    {"jp": "この失敗の責任は私にある。", "id": "Tanggung jawab atas kegagalan ini ada pada saya.", "level": "n3", "tags": ["pekerjaan"]},
+    {"jp": "リーダーとして、チーム全体の責任を負う。", "id": "Sebagai pemimpin, menanggung tanggung jawab seluruh tim.", "level": "n3", "tags": ["pekerjaan"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00261"], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00261", "word": "義務", "reading": "ぎむ", "romaji": "gimu",
+  "meaning_id": "kewajiban, tugas yang harus dilakukan", "meaning_en": "duty, obligation",
+  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
+  "formalitas": 3, "domain": ["hukum-aturan", "politik-masyarakat", "pekerjaan"], "register": "formal",
+  "lawan_bicara": ["umum"], "nuance": "Sesuatu yang secara hukum atau moral harus dilakukan. Lebih kuat dari 責任 karena ada unsur paksaan (hukum/aturan). Lawannya adalah 権利 (hak). Sering muncul dalam konteks hukum dan kewarganegaraan.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "納税は国民の義務だ。", "id": "Membayar pajak adalah kewajiban warga negara.", "level": "n3", "tags": ["politik-masyarakat"]},
+    {"jp": "契約による義務を果たさなければならない。", "id": "Harus menunaikan kewajiban berdasarkan kontrak.", "level": "n3", "tags": ["hukum-aturan"]},
+    {"jp": "義務と権利はセットで考える必要がある。", "id": "Kewajiban dan hak perlu dipikirkan sebagai satu kesatuan.", "level": "n3", "tags": ["hukum-aturan"]}
+  ],
+  "synonyms": [], "antonyms": ["vg-n3-00262"], "see_also": ["vg-n3-00260"], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00262", "word": "権利", "reading": "けんり", "romaji": "kenri",
+  "meaning_id": "hak", "meaning_en": "right, entitlement",
+  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
+  "formalitas": 3, "domain": ["hukum-aturan", "politik-masyarakat"], "register": "formal",
+  "lawan_bicara": ["umum"], "nuance": "Hak yang dimiliki seseorang secara hukum atau moral. Berlawanan dengan 義務 (kewajiban). Sering dipakai dalam konteks hak asasi: 人権 (hak asasi manusia), 権利を主張する (menuntut hak).",
+  "conj_type": null,
+  "examples": [
+    {"jp": "すべての人間には平等な権利がある。", "id": "Setiap manusia memiliki hak yang setara.", "level": "n3", "tags": ["hukum-aturan"]},
+    {"jp": "沈黙する権利があります。", "id": "Anda memiliki hak untuk diam.", "level": "n3", "tags": ["hukum-aturan"]},
+    {"jp": "労働者の権利を守ることが法律で定められている。", "id": "Perlindungan hak pekerja diatur dalam undang-undang.", "level": "n3", "tags": ["politik-masyarakat"]}
+  ],
+  "synonyms": [], "antonyms": ["vg-n3-00261"], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00263", "word": "規則", "reading": "きそく", "romaji": "kisoku",
+  "meaning_id": "aturan, peraturan", "meaning_en": "rule, regulation",
+  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
+  "formalitas": 3, "domain": ["hukum-aturan", "pekerjaan", "pendidikan"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Aturan yang harus diikuti dalam suatu organisasi atau kelompok. Lebih spesifik dari 法律 (undang-undang). Sering muncul dalam konteks sekolah, perusahaan, atau organisasi: 規則を守る (menaati aturan) / 規則を破る (melanggar aturan).",
+  "conj_type": null,
+  "examples": [
+    {"jp": "学校の規則を破ると罰則がある。", "id": "Ada sanksi jika melanggar peraturan sekolah.", "level": "n3", "tags": ["pendidikan"]},
+    {"jp": "この会社では厳しい服装規則がある。", "id": "Di perusahaan ini ada aturan berpakaian yang ketat.", "level": "n3", "tags": ["pekerjaan"]},
+    {"jp": "規則に従って行動することが求められる。", "id": "Diharuskan bertindak sesuai aturan.", "level": "n3", "tags": ["hukum-aturan"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00265", "word": "政府", "reading": "せいふ", "romaji": "seifu",
+  "meaning_id": "pemerintah", "meaning_en": "government",
+  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
+  "formalitas": 3, "domain": ["politik-masyarakat"], "register": "formal",
+  "lawan_bicara": ["umum"], "nuance": "Mengacu pada pemerintah pusat suatu negara. Berbeda dari 政治 (politik sebagai bidang) dan 行政 (administrasi pemerintahan). Dalam berita sering muncul sebagai 政府は〜した (pemerintah melakukan...).",
+  "conj_type": null,
+  "examples": [
+    {"jp": "政府は新しい経済政策を発表した。", "id": "Pemerintah mengumumkan kebijakan ekonomi baru.", "level": "n3", "tags": ["politik-masyarakat"]},
+    {"jp": "市民は政府の対応に不満を持っている。", "id": "Warga tidak puas dengan respons pemerintah.", "level": "n3", "tags": ["politik-masyarakat"]},
+    {"jp": "政府と民間企業が協力してプロジェクトを進めた。", "id": "Pemerintah dan perusahaan swasta bekerja sama menjalankan proyek.", "level": "n3", "tags": ["ekonomi-keuangan"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00266", "word": "市場", "reading": "しじょう", "romaji": "shijou",
+  "meaning_id": "pasar (ekonomi), pasar bisnis", "meaning_en": "market (economic)",
+  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
+  "formalitas": 3, "domain": ["ekonomi-keuangan", "bisnis"], "register": "formal",
+  "lawan_bicara": ["umum"], "nuance": "Mengacu pada pasar dalam konteks ekonomi/bisnis (bukan pasar fisik). Bacaan いちば adalah pasar fisik tempat berjualan. 市場 (しじょう) muncul dalam konteks saham, perdagangan, dan ekonomi makro.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "海外市場への参入を検討している。", "id": "Sedang mempertimbangkan untuk masuk pasar luar negeri.", "level": "n3", "tags": ["bisnis"]},
+    {"jp": "市場の動向を分析することが重要だ。", "id": "Penting untuk menganalisis tren pasar.", "level": "n3", "tags": ["ekonomi-keuangan"]},
+    {"jp": "競争が激しくなり、市場は縮小している。", "id": "Persaingan semakin ketat dan pasar semakin menyusut.", "level": "n3", "tags": ["ekonomi-keuangan"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00267", "word": "原因", "reading": "げんいん", "romaji": "genin",
+  "meaning_id": "penyebab, sebab", "meaning_en": "cause, reason (for a problem)",
+  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["sebab-akibat", "ilmu-pengetahuan", "kehidupan-sehari"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Faktor yang menyebabkan suatu kejadian atau masalah. Berbeda dari 理由 (alasan personal/logis) — 原因 lebih objektif dan sering dipakai dalam konteks masalah, penyakit, atau insiden. Pola umum: 〜が原因で (disebabkan oleh ~).",
+  "conj_type": null,
+  "examples": [
+    {"jp": "火事の原因はまだ調査中だ。", "id": "Penyebab kebakaran masih dalam penyelidikan.", "level": "n3", "tags": ["sebab-akibat"]},
+    {"jp": "病気の原因を突き止めるために検査をした。", "id": "Melakukan pemeriksaan untuk menemukan penyebab penyakit.", "level": "n3", "tags": ["kesehatan"]},
+    {"jp": "ストレスが原因で体調を崩した。", "id": "Jatuh sakit disebabkan oleh stres.", "level": "n3", "tags": ["kesehatan"]}
+  ],
+  "synonyms": [], "antonyms": ["vg-n3-00268"], "see_also": ["vg-n3-00271"], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00268", "word": "結果", "reading": "けっか", "romaji": "kekka",
+  "meaning_id": "hasil, akibat, konsekuensi", "meaning_en": "result, outcome, consequence",
+  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["sebab-akibat", "pendidikan", "pekerjaan"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Apa yang terjadi setelah suatu proses atau tindakan. Bisa positif maupun negatif. Beda dari 成果 (seika) yang khusus untuk hasil positif/prestasi. Pola umum: 〜の結果、〜になった (akibat ~, menjadi...).",
+  "conj_type": null,
+  "examples": [
+    {"jp": "試験の結果が明日発表される。", "id": "Hasil ujian akan diumumkan besok.", "level": "n3", "tags": ["pendidikan"]},
+    {"jp": "努力した結果、目標を達成できた。", "id": "Sebagai hasil dari kerja keras, berhasil mencapai tujuan.", "level": "n3", "tags": ["emosi-positif"]},
+    {"jp": "その決定が悪い結果をもたらした。", "id": "Keputusan itu mengakibatkan hasil yang buruk.", "level": "n3", "tags": ["sebab-akibat"]}
+  ],
+  "synonyms": [], "antonyms": ["vg-n3-00267"], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00270", "word": "場合", "reading": "ばあい", "romaji": "baai",
+  "meaning_id": "kasus, situasi, kondisi, kalau", "meaning_en": "case, situation, circumstances",
+  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["hubungan-konsep", "kehidupan-sehari"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Dipakai untuk menyebut kondisi atau situasi tertentu. Sering muncul dalam pola 〜の場合 (dalam hal/kasus ~) yang sangat produktif di bahasa Jepang formal maupun sehari-hari.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "緊急の場合は119番に電話してください。", "id": "Dalam keadaan darurat, hubungi 119.", "level": "n3", "tags": ["kesehatan"]},
+    {"jp": "雨の場合は屋内で開催します。", "id": "Jika hujan, akan diadakan di dalam ruangan.", "level": "n3", "tags": ["kehidupan-sehari"]},
+    {"jp": "その場合、どのように対応すればいいですか？", "id": "Dalam kasus itu, bagaimana sebaiknya merespons?", "level": "n3", "tags": ["bahasa-komunikasi"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00271", "word": "理由", "reading": "りゆう", "romaji": "riyuu",
+  "meaning_id": "alasan, sebab (yang disampaikan)", "meaning_en": "reason",
+  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["bahasa-komunikasi", "hubungan-konsep"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Alasan yang dikemukakan seseorang untuk menjelaskan tindakan atau keputusan. Lebih personal dan subjektif dari 原因. Pola: 理由を教える (menjelaskan alasan) / 理由がある (ada alasannya).",
+  "conj_type": null,
+  "examples": [
+    {"jp": "遅刻した理由を上司に説明した。", "id": "Menjelaskan alasan keterlambatan kepada atasan.", "level": "n3", "tags": ["pekerjaan"]},
+    {"jp": "何か理由があるに違いない。", "id": "Pasti ada alasannya.", "level": "n3", "tags": ["pikiran-opini"]},
+    {"jp": "理由なく欠席することは認められません。", "id": "Tidak diperbolehkan absen tanpa alasan.", "level": "n3", "tags": ["pendidikan"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00267"], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00272", "word": "目的", "reading": "もくてき", "romaji": "mokuteki",
+  "meaning_id": "tujuan, sasaran", "meaning_en": "purpose, goal, objective",
+  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["keputusan", "pekerjaan", "kehidupan-sehari"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Hal yang ingin dicapai. Lebih abstrak dari 目標 (もくひょう, target konkret yang bisa diukur). 目的 lebih menekankan 'untuk apa' melakukan sesuatu. Pola: 目的は〜だ / 目的を達成する.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "この旅の目的は文化交流だ。", "id": "Tujuan perjalanan ini adalah pertukaran budaya.", "level": "n3", "tags": ["perjalanan"]},
+    {"jp": "何のために勉強するのか、目的を明確にすべきだ。", "id": "Harus memperjelas tujuan belajar untuk apa.", "level": "n3", "tags": ["pendidikan"]},
+    {"jp": "組織の目的を全員が理解している。", "id": "Semua anggota memahami tujuan organisasi.", "level": "n3", "tags": ["bisnis"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00273", "word": "方法", "reading": "ほうほう", "romaji": "houhou",
+  "meaning_id": "cara, metode", "meaning_en": "method, way, means",
+  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["ilmu-pengetahuan", "pekerjaan", "kehidupan-sehari"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Prosedur atau cara untuk mencapai sesuatu. Lebih formal dari やり方 (cara/caranya, kasual) dan lebih umum dari 手順 (prosedur berurutan). Sering muncul dalam instruksi dan penjelasan teknis.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "問題を解決する方法を考えた。", "id": "Memikirkan cara untuk menyelesaikan masalah.", "level": "n3", "tags": ["keputusan"]},
+    {"jp": "効果的な勉強方法を教えてください。", "id": "Tolong ajarkan metode belajar yang efektif.", "level": "n3", "tags": ["pendidikan"]},
+    {"jp": "支払い方法はいくつかございます。", "id": "Ada beberapa metode pembayaran yang tersedia.", "level": "n3", "tags": ["bisnis"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00274", "word": "可能性", "reading": "かのうせい", "romaji": "kanousei",
+  "meaning_id": "kemungkinan, potensi, peluang", "meaning_en": "possibility, potential, likelihood",
+  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["hubungan-konsep", "pikiran-opini"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Kemungkinan bahwa sesuatu bisa terjadi. Berbeda dari 確率 (probabilitas statistik). Pola umum: 可能性がある (ada kemungkinan) / 可能性が高い (kemungkinan besar) / 可能性を探る (menjajaki kemungkinan).",
+  "conj_type": null,
+  "examples": [
+    {"jp": "明日雨が降る可能性が高い。", "id": "Kemungkinan besar besok akan hujan.", "level": "n3", "tags": ["alam-lingkungan"]},
+    {"jp": "この方法が成功する可能性はどのくらいですか？", "id": "Berapa besar kemungkinan cara ini berhasil?", "level": "n3", "tags": ["pikiran-opini"]},
+    {"jp": "彼には将来大きな可能性がある。", "id": "Dia memiliki potensi besar di masa depan.", "level": "n3", "tags": ["emosi-positif"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00275", "word": "必要性", "reading": "ひつようせい", "romaji": "hitsuyousei",
+  "meaning_id": "kebutuhan, keperluan, keniscayaan", "meaning_en": "necessity, need",
+  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
+  "formalitas": 3, "domain": ["hubungan-konsep", "pekerjaan", "ilmu-pengetahuan"], "register": "formal",
+  "lawan_bicara": ["umum"], "nuance": "Kondisi bahwa sesuatu mutlak diperlukan. Lebih abstrak dari 必要 (perlu) karena akhiran 〜性 menambahkan nuansa konseptual/akademis. Sering muncul dalam argumen atau analisis: 〜の必要性を強調する (menekankan perlunya ~).",
+  "conj_type": null,
+  "examples": [
+    {"jp": "このルールを見直す必要性を感じている。", "id": "Merasa perlunya meninjau ulang aturan ini.", "level": "n3", "tags": ["hukum-aturan"]},
+    {"jp": "環境保護の必要性を訴えた。", "id": "Menyerukan perlunya perlindungan lingkungan.", "level": "n3", "tags": ["alam-lingkungan"]},
+    {"jp": "改革の必要性については誰もが認めている。", "id": "Semua orang mengakui perlunya reformasi.", "level": "n3", "tags": ["politik-masyarakat"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00276"], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00276", "word": "重要性", "reading": "じゅうようせい", "romaji": "juuyousei",
+  "meaning_id": "pentingnya sesuatu, signifikansi", "meaning_en": "importance, significance",
+  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
+  "formalitas": 3, "domain": ["hubungan-konsep", "ilmu-pengetahuan", "pekerjaan"], "register": "formal",
+  "lawan_bicara": ["umum"], "nuance": "Mengungkapkan seberapa penting suatu hal. Sering dipakai dalam wacana formal dan akademik. Pola: 〜の重要性を理解する (memahami pentingnya ~) / 重要性を増している (semakin penting).",
+  "conj_type": null,
+  "examples": [
+    {"jp": "チームワークの重要性は言うまでもない。", "id": "Pentingnya kerja tim sudah tidak perlu dikatakan lagi.", "level": "n3", "tags": ["pekerjaan"]},
+    {"jp": "教育の重要性を社会全体が認識すべきだ。", "id": "Seluruh masyarakat harus menyadari pentingnya pendidikan.", "level": "n3", "tags": ["pendidikan"]},
+    {"jp": "データ管理の重要性がますます高まっている。", "id": "Pentingnya pengelolaan data semakin meningkat.", "level": "n3", "tags": ["teknologi"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00275"], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00279", "word": "事故", "reading": "じこ", "romaji": "jiko",
+  "meaning_id": "kecelakaan, insiden tak terduga", "meaning_en": "accident",
+  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["kehidupan-sehari", "hukum-aturan"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Kejadian buruk yang tidak disengaja. Berbeda dari 事件 (kejadian/kasus, sering disengaja atau kriminal). Pola: 事故が起きる (terjadi kecelakaan) / 事故に遭う (mengalami kecelakaan).",
+  "conj_type": null,
+  "examples": [
+    {"jp": "交差点で交通事故が起きた。", "id": "Terjadi kecelakaan lalu lintas di persimpangan.", "level": "n3", "tags": ["kehidupan-sehari"]},
+    {"jp": "事故に遭った場合は、すぐに警察に連絡すること。", "id": "Jika mengalami kecelakaan, segera hubungi polisi.", "level": "n3", "tags": ["hukum-aturan"]},
+    {"jp": "工場での事故を防ぐために定期的な訓練が行われた。", "id": "Pelatihan rutin dilakukan untuk mencegah kecelakaan di pabrik.", "level": "n3", "tags": ["pekerjaan"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00280"], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00280", "word": "事件", "reading": "じけん", "romaji": "jiken",
+  "meaning_id": "kejadian penting, kasus, insiden (sering kriminal)", "meaning_en": "incident, case, affair",
+  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["hukum-aturan", "media", "politik-masyarakat"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Kejadian yang signifikan, sering mengandung unsur kriminal atau kontroversial. Berbeda dari 事故 (kecelakaan tak disengaja). Sering muncul dalam berita: 〜事件が発生した (kasus ~ terjadi).",
+  "conj_type": null,
+  "examples": [
+    {"jp": "昨夜、近所で大きな事件があったらしい。", "id": "Kabarnya semalam terjadi kejadian besar di dekat sini.", "level": "n3", "tags": ["kehidupan-sehari"]},
+    {"jp": "その事件は社会に大きな衝撃を与えた。", "id": "Kasus itu memberikan guncangan besar pada masyarakat.", "level": "n3", "tags": ["media"]},
+    {"jp": "警察は事件の真相を調べている。", "id": "Polisi sedang menyelidiki kebenaran di balik kasus itu.", "level": "n3", "tags": ["hukum-aturan"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00279"], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00281", "word": "現状", "reading": "げんじょう", "romaji": "genjou",
+  "meaning_id": "kondisi/keadaan saat ini, status quo", "meaning_en": "current situation, present condition",
+  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
+  "formalitas": 3, "domain": ["politik-masyarakat", "bisnis", "pekerjaan"], "register": "formal",
+  "lawan_bicara": ["umum"], "nuance": "Kondisi atau keadaan sebagaimana adanya sekarang. Sering dipakai dalam konteks analisis atau laporan. 現状維持 (mempertahankan status quo) adalah idiom yang sangat umum.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "まず現状を正確に把握することが大切だ。", "id": "Pertama-tama penting untuk memahami kondisi saat ini secara akurat.", "level": "n3", "tags": ["pekerjaan"]},
+    {"jp": "現状に満足せず、常に改善を目指している。", "id": "Tidak puas dengan kondisi saat ini, selalu berusaha melakukan perbaikan.", "level": "n3", "tags": ["karakter"]},
+    {"jp": "政策を見直す前に、まず現状分析が必要だ。", "id": "Sebelum meninjau ulang kebijakan, diperlukan analisis kondisi terkini.", "level": "n3", "tags": ["politik-masyarakat"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00282", "vg-n3-00283"], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00282", "word": "実情", "reading": "じつじょう", "romaji": "jitsujou",
+  "meaning_id": "kenyataan di lapangan, situasi nyata", "meaning_en": "actual situation, real state of affairs",
+  "jlpt": "n3", "pos": "noun", "common": false, "related_grammar": [],
+  "formalitas": 3, "domain": ["politik-masyarakat", "pekerjaan"], "register": "formal",
+  "lawan_bicara": ["atasan", "umum"], "nuance": "Kenyataan sesungguhnya yang terjadi — berbeda dari yang terlihat di permukaan atau yang dilaporkan secara resmi. Sering dipakai ketika ada kesenjangan antara laporan resmi dan kenyataan di lapangan. Lebih spesifik dari 現状.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "現場の実情を上層部に伝えることが難しい。", "id": "Sulit menyampaikan kenyataan di lapangan kepada manajemen atas.", "level": "n3", "tags": ["pekerjaan"]},
+    {"jp": "統計では見えない地方の実情がある。", "id": "Ada kenyataan daerah yang tidak terlihat dari statistik.", "level": "n3", "tags": ["politik-masyarakat"]},
+    {"jp": "実情を知らないまま判断するのは危険だ。", "id": "Berbahaya jika membuat keputusan tanpa mengetahui situasi sesungguhnya.", "level": "n3", "tags": ["keputusan"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00281", "vg-n3-00283"], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00283", "word": "状況", "reading": "じょうきょう", "romaji": "joukyou",
+  "meaning_id": "situasi, kondisi, keadaan (yang sedang berlangsung)", "meaning_en": "situation, circumstances, conditions",
+  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["kehidupan-sehari", "pekerjaan", "bahasa-komunikasi"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Kondisi yang sedang berlangsung atau berkembang. Lebih dinamis dari 現状 (yang menekankan 'saat ini' sebagai titik tetap). 状況 sering dipakai ketika situasi bisa berubah: 状況が変わった (situasi sudah berubah).",
+  "conj_type": null,
+  "examples": [
+    {"jp": "現在の状況を説明してもらえますか？", "id": "Bisakah Anda jelaskan situasi saat ini?", "level": "n3", "tags": ["bahasa-komunikasi"]},
+    {"jp": "状況に応じて柔軟に対応することが求められる。", "id": "Diperlukan kemampuan merespons secara fleksibel sesuai situasi.", "level": "n3", "tags": ["pekerjaan"]},
+    {"jp": "緊急の状況でも冷静に行動できた。", "id": "Bisa bertindak tenang bahkan dalam situasi darurat.", "level": "n3", "tags": ["karakter"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00281", "vg-n3-00282"], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00284", "word": "立場", "reading": "たちば", "romaji": "tachiba",
+  "meaning_id": "posisi, sudut pandang seseorang, kedudukan", "meaning_en": "position, standpoint, one's situation",
+  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["bahasa-komunikasi", "emosi-sosial", "pekerjaan"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Bukan hanya posisi fisik, tapi posisi sosial atau sudut pandang seseorang berdasarkan peran/kondisinya. Pola penting: 〜の立場から (dari sudut pandang ~) / 立場が違う (kedudukan/posisi berbeda). Sangat sering muncul dalam diskusi yang melibatkan perspektif berbeda.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "相手の立場に立って考えることが大切だ。", "id": "Penting untuk berpikir dari sudut pandang orang lain.", "level": "n3", "tags": ["emosi-sosial"]},
+    {"jp": "上司の立場からすると、理解できなくはない。", "id": "Dari sudut pandang atasan, bisa dimengerti juga.", "level": "n3", "tags": ["pekerjaan"]},
+    {"jp": "彼女の立場を考えると、軽率な発言はできない。", "id": "Dengan mempertimbangkan posisinya, tidak bisa bicara sembarangan.", "level": "n3", "tags": ["bahasa-komunikasi"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00251"], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00285", "word": "態度", "reading": "たいど", "romaji": "taido",
+  "meaning_id": "sikap, perilaku, cara bersikap", "meaning_en": "attitude, manner, behavior",
+  "jlpt": "n3", "pos": "noun", "common": true, "related_grammar": [],
+  "formalitas": 2, "domain": ["karakter", "emosi-sosial", "pekerjaan"], "register": "neutral",
+  "lawan_bicara": ["umum"], "nuance": "Cara seseorang berperilaku atau bersikap, terutama yang terlihat dari luar. Beda dari 性格 (kepribadian bawaan). 態度を改める (memperbaiki sikap) sangat umum dipakai di konteks kerja dan pendidikan. Bisa positif maupun negatif.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "彼の失礼な態度に驚いた。", "id": "Terkejut dengan sikapnya yang tidak sopan.", "level": "n3", "tags": ["emosi-sosial"]},
+    {"jp": "仕事に対する真剣な態度が評価された。", "id": "Sikap serius terhadap pekerjaan mendapat penilaian positif.", "level": "n3", "tags": ["pekerjaan"]},
+    {"jp": "お客様に対して常に丁寧な態度で接することが大切だ。", "id": "Penting untuk selalu bersikap sopan kepada pelanggan.", "level": "n3", "tags": ["bisnis"]}
+  ],
+  "synonyms": [], "antonyms": [], "see_also": ["vg-n3-00284"], "provenance": "jlpt-corpus", "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00319",
+  "word": "知らせ",
+  "reading": "しらせ",
+  "romaji": "shirase",
+  "meaning_id": "pemberitahuan, kabar, berita",
+  "meaning_en": "notice, notification, news, tidings",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["bahasa-komunikasi", "kehidupan-sehari"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Bentuk kata benda dari 知らせる. Sering muncul dalam frasa 嬉しい知らせ (kabar gembira) atau 悲しい知らせ (kabar sedih). Terasa lebih personal dari お知らせ yang bersifat resmi/publik.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "嬉しい知らせが届いた。", "id": "Kabar gembira telah datang.", "level": "n3", "tags": ["emosi-positif"]},
+    {"jp": "合格の知らせを聞いて涙が出た。", "id": "Air mataku menetes saat mendengar kabar kelulusan itu.", "level": "n3", "tags": ["pendidikan", "emosi"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00318"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00346",
+  "word": "最近",
+  "reading": "さいきん",
+  "romaji": "saikin",
+  "meaning_id": "belakangan ini, baru-baru ini",
+  "meaning_en": "recently, lately",
+  "jlpt": "n3",
+  "pos": "noun-temporal",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["waktu", "kehidupan-sehari"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Merujuk pada periode waktu dekat di masa lalu; bisa berfungsi sebagai subjek atau keterangan. Berbeda dari 先日 yang lebih spesifik dan formal.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "最近、忙しくて全然眠れない。", "id": "Belakangan ini saya sibuk sekali sampai tidak bisa tidur.", "level": "n3", "tags": ["kehidupan-sehari"]},
+    {"jp": "最近の若者はスマホばかり見ている。", "id": "Pemuda zaman sekarang selalu menatap ponsel.", "level": "n3", "tags": ["kehidupan-sehari", "pikiran-opini"]},
+    {"jp": "最近、日本語の勉強を始めました。", "id": "Baru-baru ini saya mulai belajar bahasa Jepang.", "level": "n3", "tags": ["pendidikan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00347",
+  "word": "最初",
+  "reading": "さいしょ",
+  "romaji": "saisho",
+  "meaning_id": "pertama, awal, pada mulanya",
+  "meaning_en": "first, beginning, at first",
+  "jlpt": "n3",
+  "pos": "noun-temporal",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["waktu"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Menunjukkan titik paling awal dalam urutan kejadian. Pola 最初に = pertama-tama (dalam instruksi). Berbeda dari 初め yang lebih umum dan 当初 yang lebih formal serta menekankan kondisi semula.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "最初は難しかったが、今は慣れた。", "id": "Awalnya sulit, tapi sekarang sudah terbiasa.", "level": "n3", "tags": ["kehidupan-sehari"]},
+    {"jp": "最初に自己紹介をしましょう。", "id": "Pertama-tama, mari kita perkenalkan diri.", "level": "n3", "tags": ["bahasa-komunikasi", "sopan-santun"]},
+    {"jp": "最初の印象はとても大切だ。", "id": "Kesan pertama sangat penting.", "level": "n3", "tags": ["pikiran-opini"]}
+  ],
+  "synonyms": [],
+  "antonyms": ["vg-n3-00348"],
+  "see_also": ["vg-n3-00365"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00348",
+  "word": "最後",
+  "reading": "さいご",
+  "romaji": "saigo",
+  "meaning_id": "terakhir, akhir, pada akhirnya",
+  "meaning_en": "last, final, at the end",
+  "jlpt": "n3",
+  "pos": "noun-temporal",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["waktu"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Menunjukkan titik paling akhir dari suatu rangkaian. 最後に = terakhir sekali / pada akhirnya. Juga bisa bermakna emosional seperti momen perpisahan terakhir yang dramatis.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "最後まで諦めないでください。", "id": "Jangan menyerah sampai akhir.", "level": "n3", "tags": ["emosi-positif"]},
+    {"jp": "最後の試合で勝つことができた。", "id": "Kami berhasil menang di pertandingan terakhir.", "level": "n3", "tags": ["olahraga"]},
+    {"jp": "最後に確認してから送ってください。", "id": "Tolong periksa sekali lagi sebelum mengirim.", "level": "n3", "tags": ["bisnis"]}
+  ],
+  "synonyms": [],
+  "antonyms": ["vg-n3-00347"],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00349",
+  "word": "途中",
+  "reading": "とちゅう",
+  "romaji": "tochuu",
+  "meaning_id": "di tengah jalan, belum selesai, di tengah-tengah",
+  "meaning_en": "on the way, in the middle of, partway through",
+  "jlpt": "n3",
+  "pos": "noun-temporal",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["waktu", "ruang-arah"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Menunjukkan proses yang belum selesai, baik secara waktu (di tengah mengerjakan sesuatu) maupun perjalanan (di tengah jalan). Pola 途中で = di tengah-tengah. Sering menyiratkan bahwa sesuatu terhenti sebelum selesai.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "途中で雨が降ってきた。", "id": "Di tengah jalan tiba-tiba hujan turun.", "level": "n3", "tags": ["alam-lingkungan"]},
+    {"jp": "仕事の途中で電話が来た。", "id": "Di tengah-tengah pekerjaan ada telepon masuk.", "level": "n3", "tags": ["pekerjaan"]},
+    {"jp": "映画の途中で寝てしまった。", "id": "Aku tertidur di tengah-tengah film.", "level": "n3", "tags": ["hiburan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00360",
+  "word": "その後",
+  "reading": "そのご／そのあと",
+  "romaji": "sono go / sono ato",
+  "meaning_id": "setelah itu, sesudahnya, sesudah kejadian itu",
+  "meaning_en": "after that, thereafter, subsequently",
+  "jlpt": "n3",
+  "pos": "noun-temporal",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["waktu"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Merujuk pada periode setelah suatu kejadian yang sudah disebutkan. Lebih formal dari それから dan lebih sering dipakai dalam narasi tulisan. Pengucapan そのご lebih formal, そのあと lebih kasual — keduanya umum.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "事故の後、その後の経緯を説明した。", "id": "Setelah kecelakaan, saya menjelaskan perkembangan sesudahnya.", "level": "n3", "tags": ["hukum-aturan"]},
+    {"jp": "その後、二人はどうなったんですか。", "id": "Setelah itu, bagaimana nasib mereka berdua?", "level": "n3", "tags": ["percintaan"]},
+    {"jp": "その後も練習を続けた。", "id": "Sesudah itu pun latihan terus dilanjutkan.", "level": "n3", "tags": ["olahraga"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00359", "vg-n3-00371"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00361",
+  "word": "それまで",
+  "reading": "それまで",
+  "romaji": "sore made",
+  "meaning_id": "sampai saat itu, hingga waktu itu",
+  "meaning_en": "until then, up to that point",
+  "jlpt": "n3",
+  "pos": "noun-temporal",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["waktu"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Merujuk pada periode sebelum titik waktu tertentu yang sudah disebutkan. Ketika dipakai di akhir kalimat (それまでだ), artinya bergeser menjadi 'sudah selesai di situ' atau 'tidak ada harapan lagi' — nuansa pesimis yang perlu diperhatikan.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "それまでは何も知らなかった。", "id": "Sampai saat itu aku tidak tahu apa pun.", "level": "n3", "tags": ["kehidupan-sehari"]},
+    {"jp": "失敗したらそれまでだ。", "id": "Kalau gagal, sudah selesai sudah tidak ada harapan.", "level": "n3", "tags": ["emosi-negatif", "pikiran-opini"]},
+    {"jp": "それまでの努力が実を結んだ。", "id": "Usaha yang dilakukan selama itu akhirnya membuahkan hasil.", "level": "n3", "tags": ["karakter"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00362"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00362",
+  "word": "これから",
+  "reading": "これから",
+  "romaji": "kore kara",
+  "meaning_id": "mulai sekarang, ke depannya, dari sini",
+  "meaning_en": "from now on, in the future, starting now",
+  "jlpt": "n3",
+  "pos": "noun-temporal",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["waktu", "kehidupan-sehari"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Merujuk pada masa depan yang dimulai dari sekarang, sering mengandung nuansa harapan, tekad, atau niat ke depan. Ekspresi これからよろしくお願いします sangat umum saat memulai hubungan baru, baik kerja maupun sosial.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "これからもっと頑張ります。", "id": "Mulai sekarang saya akan lebih berusaha keras.", "level": "n3", "tags": ["karakter", "emosi-positif"]},
+    {"jp": "これからよろしくお願いします。", "id": "Mohon bimbingannya mulai sekarang.", "level": "n3", "tags": ["sopan-santun", "pekerjaan"]},
+    {"jp": "これからどこへ行くの？", "id": "Mau pergi ke mana sekarang?", "level": "n3", "tags": ["kehidupan-sehari"]}
+  ],
+  "synonyms": [],
+  "antonyms": ["vg-n3-00361"],
+  "see_also": ["vg-n3-00364"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00364",
+  "word": "今後",
+  "reading": "こんご",
+  "romaji": "kongo",
+  "meaning_id": "ke depan, mulai sekarang dan seterusnya",
+  "meaning_en": "henceforth, from now on, in the future",
+  "jlpt": "n3",
+  "pos": "noun-temporal",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["waktu", "bisnis"],
+  "register": "formal",
+  "lawan_bicara": ["atasan", "umum"],
+  "nuance": "Merujuk pada masa depan mulai sekarang dalam konteks formal atau profesional. Berbeda dari これから yang lebih kasual — 今後 lebih sering muncul dalam surat resmi, keputusan organisasi, atau pernyataan kebijakan.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "今後ともよろしくお願いいたします。", "id": "Mohon kerja samanya ke depan juga.", "level": "n3", "tags": ["bisnis", "sopan-santun"]},
+    {"jp": "今後の対応について話し合った。", "id": "Kami mendiskusikan langkah penanganan ke depannya.", "level": "n3", "tags": ["bisnis", "pekerjaan"]},
+    {"jp": "今後は気をつけます。", "id": "Ke depannya saya akan lebih berhati-hati.", "level": "n3", "tags": ["sopan-santun"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00362", "vg-n3-00370"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00365",
+  "word": "当初",
+  "reading": "とうしょ",
+  "romaji": "tousho",
+  "meaning_id": "pada awalnya, semula, di awal rencana",
+  "meaning_en": "initially, at first, originally",
+  "jlpt": "n3",
+  "pos": "noun-temporal",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["waktu"],
+  "register": "formal",
+  "lawan_bicara": ["umum"],
+  "nuance": "Merujuk pada kondisi, rencana, atau asumsi di awal sebelum terjadi perubahan. Sering dipakai dalam laporan dan tulisan formal untuk membandingkan situasi awal dengan situasi sekarang. Lebih formal dan terbatas maknanya dibanding 最初.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "当初の計画とは大きく変わった。", "id": "Berbeda jauh dari rencana semula.", "level": "n3", "tags": ["bisnis", "pekerjaan"]},
+    {"jp": "当初はうまくいかなかった。", "id": "Pada awalnya tidak berjalan lancar.", "level": "n3", "tags": ["kehidupan-sehari"]},
+    {"jp": "当初の予定より時間がかかった。", "id": "Membutuhkan waktu lebih lama dari jadwal semula.", "level": "n3", "tags": ["bisnis"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00347", "vg-n3-00366"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00366",
+  "word": "当時",
+  "reading": "とうじ",
+  "romaji": "touji",
+  "meaning_id": "pada waktu itu, dahulu kala, saat itu",
+  "meaning_en": "at that time, back then, in those days",
+  "jlpt": "n3",
+  "pos": "noun-temporal",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["waktu"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Merujuk pada periode waktu tertentu di masa lalu yang sedang dibahas dalam konteks, bukan masa lalu secara umum. Sering dipakai dalam cerita, laporan, atau wawancara. Berbeda dari 以前 yang lebih umum dan tidak spesifik pada konteks tertentu.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "当時はまだインターネットがなかった。", "id": "Pada waktu itu internet belum ada.", "level": "n3", "tags": ["teknologi"]},
+    {"jp": "当時の写真を見て懐かしくなった。", "id": "Melihat foto saat itu membuat aku rindu masa lalu.", "level": "n3", "tags": ["emosi"]},
+    {"jp": "当時の状況を詳しく話してください。", "id": "Tolong ceritakan kondisi saat itu secara rinci.", "level": "n3", "tags": ["bahasa-komunikasi"]}
+  ],
+  "synonyms": [],
+  "antonyms": ["vg-n3-00367"],
+  "see_also": ["vg-n3-00369", "vg-n3-00365"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00367",
+  "word": "現在",
+  "reading": "げんざい",
+  "romaji": "genzai",
+  "meaning_id": "saat ini, sekarang (formal), pada masa kini",
+  "meaning_en": "currently, at present, now (formal)",
+  "jlpt": "n3",
+  "pos": "noun-temporal",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": ["waktu"],
+  "register": "formal",
+  "lawan_bicara": ["umum"],
+  "nuance": "Kata formal untuk 'sekarang', sering dipakai dalam dokumen resmi, formulir, laporan, dan pengumuman. Berbeda dari 今 yang kasual — 現在 hampir tidak pernah dipakai dalam percakapan biasa karena terdengar terlalu kaku.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "現在、工事中のため通行止めです。", "id": "Saat ini jalan ditutup karena sedang ada perbaikan.", "level": "n3", "tags": ["kehidupan-sehari"]},
+    {"jp": "現在の住所を記入してください。", "id": "Tolong isi alamat tempat tinggal saat ini.", "level": "n3", "tags": ["hukum-aturan"]},
+    {"jp": "現在、調査中です。", "id": "Saat ini masih dalam penyelidikan.", "level": "n3", "tags": ["hukum-aturan"]}
+  ],
+  "synonyms": [],
+  "antonyms": ["vg-n3-00366"],
+  "see_also": ["vg-n3-00368"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00368",
+  "word": "将来",
+  "reading": "しょうらい",
+  "romaji": "shourai",
+  "meaning_id": "masa depan, hari depan",
+  "meaning_en": "future, one's future, prospects",
+  "jlpt": "n3",
+  "pos": "noun-temporal",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["waktu", "pendidikan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Merujuk pada masa depan jangka panjang, terutama terkait impian, karier, atau nasib seseorang. Berbeda dari 未来 yang lebih luas dan filosofis, serta dari 今後 yang lebih formal dan pendek jangka waktunya. 将来の夢 = cita-cita masa depan.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "将来は医者になりたい。", "id": "Di masa depan aku ingin menjadi dokter.", "level": "n3", "tags": ["pendidikan", "pekerjaan"]},
+    {"jp": "子供の将来のために貯金している。", "id": "Menabung demi masa depan anak.", "level": "n3", "tags": ["keluarga", "ekonomi-keuangan"]},
+    {"jp": "将来のことを真剣に考え始めた。", "id": "Aku mulai berpikir serius tentang masa depan.", "level": "n3", "tags": ["pendidikan", "pikiran-opini"]}
+  ],
+  "synonyms": [],
+  "antonyms": ["vg-n3-00369"],
+  "see_also": ["vg-n3-00367", "vg-n3-00364"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00369",
+  "word": "以前",
+  "reading": "いぜん",
+  "romaji": "izen",
+  "meaning_id": "sebelumnya, dahulu, di masa lalu",
+  "meaning_en": "before, formerly, previously",
+  "jlpt": "n3",
+  "pos": "noun-temporal",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["waktu"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Merujuk pada waktu sebelum suatu titik, bisa masa lalu umum atau sebelum kejadian tertentu. 以前は = dulu/sebelumnya. Sebagai suffix (〜以前), berarti 'sebelum ...' atau bisa juga 'lebih dari sekadar ...' (それ以前の問題 = masalah yang lebih mendasar dari itu).",
+  "conj_type": null,
+  "examples": [
+    {"jp": "以前はここに公園があった。", "id": "Dulu ada taman di sini.", "level": "n3", "tags": ["kehidupan-sehari"]},
+    {"jp": "以前にもお会いしたことがありますよね。", "id": "Kita pernah bertemu sebelumnya, bukan?", "level": "n3", "tags": ["sopan-santun"]},
+    {"jp": "それ以前の問題だ。", "id": "Ini masalah yang lebih mendasar dari itu.", "level": "n3", "tags": ["pikiran-opini"]}
+  ],
+  "synonyms": [],
+  "antonyms": ["vg-n3-00370"],
+  "see_also": ["vg-n3-00366"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00370",
+  "word": "以後",
+  "reading": "いご",
+  "romaji": "igo",
+  "meaning_id": "setelah ini, mulai saat itu, dari waktu itu dan seterusnya",
+  "meaning_en": "after this, from now on, hereafter",
+  "jlpt": "n3",
+  "pos": "noun-temporal",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["waktu", "hukum-aturan"],
+  "register": "formal",
+  "lawan_bicara": ["umum"],
+  "nuance": "Merujuk pada waktu setelah suatu titik tertentu, sering dipakai dalam konteks aturan, keputusan, atau pernyataan resmi. 以後気をつけます = mulai sekarang saya akan berhati-hati (ungkapan formal dalam permintaan maaf). Lebih formal dari それ以降.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "以後、このルールに従ってください。", "id": "Mulai saat ini tolong ikuti aturan ini.", "level": "n3", "tags": ["hukum-aturan"]},
+    {"jp": "以後気をつけます。", "id": "Mulai sekarang saya akan lebih berhati-hati.", "level": "n3", "tags": ["sopan-santun"]},
+    {"jp": "2020年以後は状況が変わった。", "id": "Setelah tahun 2020 situasinya berubah.", "level": "n3", "tags": ["waktu"]}
+  ],
+  "synonyms": [],
+  "antonyms": ["vg-n3-00369"],
+  "see_also": ["vg-n3-00364"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00371",
+  "word": "直後",
+  "reading": "ちょくご",
+  "romaji": "chokugo",
+  "meaning_id": "tepat setelah itu, segera setelah, langsung sesudah",
+  "meaning_en": "immediately after, right after",
+  "jlpt": "n3",
+  "pos": "noun-temporal",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["waktu"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Menekankan kedekatan waktu yang sangat dekat setelah suatu kejadian — benar-benar tepat sesudahnya, tanpa jeda. Sering dipakai dalam laporan berita, kronologi, atau narasi. Berbeda dari その後 yang lebih umum dan tidak menekankan kesegeraan. Pasangan dari 直前.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "地震の直後、停電が起きた。", "id": "Tepat setelah gempa, listrik padam.", "level": "n3", "tags": ["alam-lingkungan"]},
+    {"jp": "試合直後に記者会見が行われた。", "id": "Konferensi pers diadakan tepat setelah pertandingan.", "level": "n3", "tags": ["olahraga", "media"]},
+    {"jp": "手術直後は安静にしてください。", "id": "Tepat setelah operasi mohon istirahat total.", "level": "n3", "tags": ["kesehatan"]}
+  ],
+  "synonyms": [],
+  "antonyms": ["vg-n3-00372"],
+  "see_also": ["vg-n3-00360"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00372",
+  "word": "直前",
+  "reading": "ちょくぜん",
+  "romaji": "chokuzen",
+  "meaning_id": "tepat sebelumnya, sesaat sebelum, langsung sebelum",
+  "meaning_en": "immediately before, right before, just prior to",
+  "jlpt": "n3",
+  "pos": "noun-temporal",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["waktu"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Menekankan kedekatan waktu yang sangat dekat sebelum suatu kejadian — benar-benar tepat sebelumnya, tanpa jeda. Sering dipakai untuk situasi mendesak atau menegangkan (試験直前 = tepat sebelum ujian, terasa menegangkan). Pasangan dari 直後.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "出発直前にパスポートを忘れたことに気づいた。", "id": "Tepat sebelum berangkat aku sadar lupa paspor.", "level": "n3", "tags": ["perjalanan", "emosi"]},
+    {"jp": "試験直前は緊張する。", "id": "Tepat sebelum ujian selalu deg-degan.", "level": "n3", "tags": ["pendidikan", "emosi"]},
+    {"jp": "イベントの直前に雨が降り始めた。", "id": "Tepat sebelum acara, hujan mulai turun.", "level": "n3", "tags": ["kehidupan-sehari", "alam-lingkungan"]}
+  ],
+  "synonyms": [],
+  "antonyms": ["vg-n3-00371"],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00373",
+  "word": "ある日",
+  "reading": "あるひ",
+  "romaji": "aru hi",
+  "meaning_id": "suatu hari, pada suatu hari",
+  "meaning_en": "one day, one time (in a story)",
+  "jlpt": "n3",
+  "pos": "noun-temporal",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["waktu", "sastra"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Ungkapan untuk memulai cerita atau menandai suatu kejadian di masa lalu yang tidak diketahui waktunya secara pasti. Setara dengan 'suatu hari' atau 'pada suatu hari' dalam bahasa Indonesia. Sering menjadi pembuka narasi atau dongeng.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "ある日、道で財布を拾った。", "id": "Suatu hari, aku menemukan dompet di jalan.", "level": "n3", "tags": ["kehidupan-sehari"]},
+    {"jp": "ある日突然、彼から連絡が来た。", "id": "Tiba-tiba suatu hari ada pesan masuk dari dia.", "level": "n3", "tags": ["percintaan", "bahasa-komunikasi"]},
+    {"jp": "ある日のこと、森の中で老人に会った。", "id": "Pada suatu hari di dalam hutan aku bertemu seorang kakek.", "level": "n3", "tags": ["sastra"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00374",
+  "word": "一日中",
+  "reading": "いちにちじゅう",
+  "romaji": "ichinichi juu",
+  "meaning_id": "sepanjang hari, seharian penuh",
+  "meaning_en": "all day long, throughout the day",
+  "jlpt": "n3",
+  "pos": "noun-temporal",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["waktu", "kehidupan-sehari"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Menekankan durasi penuh selama satu hari tanpa henti, bisa bermakna positif (menikmati seharian) maupun negatif (lelah seharian). Pola serupa: 一年中 (sepanjang tahun), 一週間中 (sepanjang minggu). Lebih kasual dari 終日 yang lebih formal dan tertulis.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "一日中ゲームをしていた。", "id": "Bermain game seharian penuh.", "level": "n3", "tags": ["hiburan"]},
+    {"jp": "雨が一日中降り続けた。", "id": "Hujan terus turun sepanjang hari.", "level": "n3", "tags": ["alam-lingkungan"]},
+    {"jp": "一日中立ちっぱなしで疲れた。", "id": "Lelah karena berdiri terus seharian.", "level": "n3", "tags": ["kesehatan", "pekerjaan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00376",
+  "word": "気候",
+  "reading": "きこう",
+  "romaji": "kikou",
+  "meaning_id": "iklim",
+  "meaning_en": "climate",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["alam-lingkungan", "ilmu-pengetahuan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Berbeda dari 天気 yang merujuk cuaca harian — 気候 adalah pola cuaca jangka panjang suatu wilayah. 熱帯気候 = iklim tropis, relevan untuk pelajar Indonesia.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "日本の気候は四季がはっきりしている。", "id": "Iklim Jepang memiliki empat musim yang jelas.", "level": "n3", "tags": ["alam-lingkungan"]},
+    {"jp": "インドネシアは熱帯気候の国だ。", "id": "Indonesia adalah negara beriklim tropis.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]},
+    {"jp": "気候変動が世界中で問題になっている。", "id": "Perubahan iklim menjadi masalah di seluruh dunia.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00377",
+  "word": "季節",
+  "reading": "きせつ",
+  "romaji": "kisetsu",
+  "meaning_id": "musim",
+  "meaning_en": "season",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["alam-lingkungan", "waktu"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Jepang punya empat musim yang menjadi bagian penting budaya dan bahasa. 季節感 = nuansa/rasa musiman. Pelajar Indonesia perlu menguasai ini karena banyak ungkapan terkait musim.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "日本には四つの季節がある。", "id": "Di Jepang ada empat musim.", "level": "n3", "tags": ["alam-lingkungan", "budaya"]},
+    {"jp": "この季節は花粉が多い。", "id": "Musim ini banyak serbuk sari.", "level": "n3", "tags": ["alam-lingkungan", "kesehatan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00378",
+  "word": "気温",
+  "reading": "きおん",
+  "romaji": "kion",
+  "meaning_id": "suhu udara",
+  "meaning_en": "air temperature",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["alam-lingkungan", "ilmu-pengetahuan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Merujuk khusus pada suhu udara (bukan suhu badan = 体温). Sering muncul dalam prakiraan cuaca. 気温が下がる = suhu turun, 気温が上がる = suhu naik.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "今日の気温は35度を超えた。", "id": "Suhu udara hari ini melewati 35 derajat.", "level": "n3", "tags": ["alam-lingkungan"]},
+    {"jp": "朝と夜の気温差が大きい。", "id": "Perbedaan suhu pagi dan malam sangat besar.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00379",
+  "word": "湿度",
+  "reading": "しつど",
+  "romaji": "shitsudo",
+  "meaning_id": "kelembaban",
+  "meaning_en": "humidity",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["alam-lingkungan", "ilmu-pengetahuan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Sering disebut bersama 気温 dalam laporan cuaca Jepang. 湿度が高い = lembab, 湿度が低い = kering. Musim panas Jepang (梅雨 dan Agustus) terkenal dengan suhu dan kelembaban sangat tinggi.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "梅雨の時期は湿度がとても高い。", "id": "Saat musim hujan, kelembabannya sangat tinggi.", "level": "n3", "tags": ["alam-lingkungan"]},
+    {"jp": "湿度が低いと肌が乾燥する。", "id": "Kalau kelembaban rendah, kulit jadi kering.", "level": "n3", "tags": ["alam-lingkungan", "kesehatan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00380",
+  "word": "台風",
+  "reading": "たいふう",
+  "romaji": "taifuu",
+  "meaning_id": "topan, badai tropis",
+  "meaning_en": "typhoon",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["alam-lingkungan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Spesifik untuk siklon tropis di Pasifik Barat — setara 'typhoon' dalam bahasa Inggris. Berbeda dari 嵐 (badai umum). Jepang rutin menghadapi台風 musim gugur. Relevan bagi SSW yang bekerja saat musim台風.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "台風が近づいているので外出を控えてください。", "id": "Topan sedang mendekat, mohon hindari keluar rumah.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]},
+    {"jp": "台風の影響で電車が止まった。", "id": "Karena dampak topan, kereta berhenti beroperasi.", "level": "n3", "tags": ["alam-lingkungan", "perjalanan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00381",
+  "word": "地震",
+  "reading": "じしん",
+  "romaji": "jishin",
+  "meaning_id": "gempa bumi",
+  "meaning_en": "earthquake",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["alam-lingkungan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Jepang adalah salah satu negara paling aktif seismik di dunia. Sangat penting bagi SSW untuk hafal kata ini demi keselamatan. 地震速報 = peringatan dini gempa yang sering muncul di HP.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "昨夜、大きな地震があった。", "id": "Tadi malam ada gempa bumi yang besar.", "level": "n3", "tags": ["alam-lingkungan"]},
+    {"jp": "地震のときはまず机の下に隠れてください。", "id": "Saat gempa, pertama-tama bersembunyilah di bawah meja.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00382",
+  "word": "洪水",
+  "reading": "こうずい",
+  "romaji": "kouzui",
+  "meaning_id": "banjir",
+  "meaning_en": "flood",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["alam-lingkungan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "lawan_bicara": ["umum"],
+  "nuance": "Banjir skala besar, sering akibat hujan deras atau topan. Berbeda dari 浸水 (terendam air) yang lebih umum. Pelajar Indonesia familiar dengan konsep ini. Sering muncul di berita bencana.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "大雨で川が氾濫し、洪水が起きた。", "id": "Hujan deras menyebabkan sungai meluap dan terjadi banjir.", "level": "n3", "tags": ["alam-lingkungan"]},
+    {"jp": "洪水の被害を受けた地域に支援が届いた。", "id": "Bantuan tiba di daerah yang terdampak banjir.", "level": "n3", "tags": ["alam-lingkungan", "politik-masyarakat"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00383",
+  "word": "津波",
+  "reading": "つなみ",
+  "romaji": "tsunami",
+  "meaning_id": "tsunami, gelombang laut besar akibat gempa",
+  "meaning_en": "tsunami",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["alam-lingkungan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Kata asli Jepang yang sudah diserap ke bahasa dunia. Diakibatkan gempa bawah laut, letusan gunung api, atau longsor bawah laut. Berbeda dari gelombang biasa. 津波警報 = peringatan tsunami.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "地震の後、津波警報が出た。", "id": "Setelah gempa, peringatan tsunami dikeluarkan.", "level": "n3", "tags": ["alam-lingkungan"]},
+    {"jp": "2011年の津波は東北地方に大きな被害をもたらした。", "id": "Tsunami tahun 2011 menyebabkan kerusakan besar di wilayah Tohoku.", "level": "n3", "tags": ["alam-lingkungan", "budaya"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00384",
+  "word": "火山",
+  "reading": "かざん",
+  "romaji": "kazan",
+  "meaning_id": "gunung berapi",
+  "meaning_en": "volcano",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["alam-lingkungan", "ilmu-pengetahuan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Jepang memiliki banyak gunung berapi aktif. 活火山 = gunung berapi aktif, 休火山 = tidak aktif. Relevan bagi SSW dari Indonesia yang juga akrab dengan gunung berapi.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "富士山は火山だが、現在は活動していない。", "id": "Gunung Fuji adalah gunung berapi, tetapi saat ini tidak aktif.", "level": "n3", "tags": ["alam-lingkungan", "budaya"]},
+    {"jp": "火山の噴火で空が暗くなった。", "id": "Langit menjadi gelap akibat letusan gunung berapi.", "level": "n3", "tags": ["alam-lingkungan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00385",
+  "word": "砂漠",
+  "reading": "さばく",
+  "romaji": "sabaku",
+  "meaning_id": "gurun, padang pasir",
+  "meaning_en": "desert",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["alam-lingkungan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Wilayah kering dengan curah hujan sangat rendah. Jepang tidak memiliki gurun, jadi kata ini lebih sering muncul dalam konteks geografi dunia atau media. Berbeda dari 荒野 (tanah tandus).",
+  "conj_type": null,
+  "examples": [
+    {"jp": "砂漠では昼と夜の温度差が激しい。", "id": "Di gurun, perbedaan suhu siang dan malam sangat ekstrem.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]},
+    {"jp": "サハラ砂漠は世界最大の砂漠だ。", "id": "Gurun Sahara adalah gurun terbesar di dunia.", "level": "n3", "tags": ["alam-lingkungan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00386",
+  "word": "森林",
+  "reading": "しんりん",
+  "romaji": "shinrin",
+  "meaning_id": "hutan (secara luas/ilmiah)",
+  "meaning_en": "forest, woodland",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["alam-lingkungan", "ilmu-pengetahuan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Lebih formal dan teknis dari 森 (mori — hutan biasa). Sering dipakai dalam konteks kebijakan lingkungan. 森林破壊 = deforestasi, 森林浴 = mandi hutan (shinrin-yoku), tren kesehatan populer.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "熱帯雨林の森林破壊が深刻な問題になっている。", "id": "Deforestasi hutan hujan tropis menjadi masalah serius.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]},
+    {"jp": "森林浴はストレス解消に効果がある。", "id": "Mandi hutan efektif untuk menghilangkan stres.", "level": "n3", "tags": ["alam-lingkungan", "kesehatan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00387",
+  "word": "草原",
+  "reading": "そうげん",
+  "romaji": "sougen",
+  "meaning_id": "padang rumput, sabana",
+  "meaning_en": "grassland, meadow, savanna",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["alam-lingkungan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Dataran luas yang ditumbuhi rumput. Bisa dibaca くさはら (kusahara) dalam konteks sastra atau kasual. Bacaan そうげん lebih umum dan formal. Sering muncul dalam geografi dan novel.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "広大な草原に馬が走っていた。", "id": "Kuda berlari di padang rumput yang luas.", "level": "n3", "tags": ["alam-lingkungan"]},
+    {"jp": "草原では風が気持ちよく吹いている。", "id": "Angin berhembus segar di padang rumput.", "level": "n3", "tags": ["alam-lingkungan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00388",
+  "word": "平野",
+  "reading": "へいや",
+  "romaji": "heiya",
+  "meaning_id": "dataran, dataran rendah",
+  "meaning_en": "plain, flatland",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["alam-lingkungan", "ruang-arah"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Daratan luas dan datar, berbeda dari 台地 (dataran tinggi). Kantō 関東平野 adalah dataran terbesar Jepang dan pusat ekonominya. Sering muncul dalam teks geografi dan berita.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "関東平野は日本最大の平野だ。", "id": "Dataran Kantō adalah dataran terbesar di Jepang.", "level": "n3", "tags": ["alam-lingkungan"]},
+    {"jp": "平野には田んぼが広がっている。", "id": "Sawah terbentang luas di dataran.", "level": "n3", "tags": ["alam-lingkungan", "pekerjaan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00389",
+  "word": "山脈",
+  "reading": "さんみゃく",
+  "romaji": "sanmyaku",
+  "meaning_id": "pegunungan, barisan gunung",
+  "meaning_en": "mountain range",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["alam-lingkungan", "ruang-arah"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Rangkaian gunung yang memanjang — berbeda dari 山 (gunung tunggal). Jepang punya 日本アルプス (Pegunungan Alpen Jepang) yang melintasi Honshu. Sering muncul dalam teks geografi.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "日本アルプスはいくつかの山脈からなる。", "id": "Pegunungan Alpen Jepang terdiri dari beberapa barisan gunung.", "level": "n3", "tags": ["alam-lingkungan"]},
+    {"jp": "山脈が雨を遮るため、反対側は乾燥している。", "id": "Karena barisan gunung menghalangi hujan, sisi sebaliknya kering.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00390",
+  "word": "海岸",
+  "reading": "かいがん",
+  "romaji": "kaigan",
+  "meaning_id": "pantai, tepi laut, pesisir",
+  "meaning_en": "coast, seashore",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["alam-lingkungan", "perjalanan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Merujuk pada garis pantai atau kawasan pesisir sebagai istilah geografis. Berbeda dari 浜 (hama — pantai berpasir, lebih kasual) dan 砂浜 (pantai pasir). 海岸線 = garis pantai.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "海岸沿いのドライブは気持ちがいい。", "id": "Berkendara di sepanjang pantai sangat menyenangkan.", "level": "n3", "tags": ["perjalanan", "alam-lingkungan"]},
+    {"jp": "海岸にゴミが増えて問題になっている。", "id": "Sampah yang bertambah di tepi laut menjadi masalah.", "level": "n3", "tags": ["alam-lingkungan", "politik-masyarakat"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00391",
+  "word": "島",
+  "reading": "しま",
+  "romaji": "shima",
+  "meaning_id": "pulau",
+  "meaning_en": "island",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 1,
+  "domain": ["alam-lingkungan", "ruang-arah"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Dibaca しま untuk kata mandiri, とう dalam kata majemuk (島国 = negara kepulauan, 無人島 = pulau tak berpenghuni). Relevan bagi pelajar Indonesia yang berasal dari negara kepulauan seperti Jepang.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "日本は島国で、四つの大きな島からなる。", "id": "Jepang adalah negara kepulauan yang terdiri dari empat pulau besar.", "level": "n3", "tags": ["alam-lingkungan", "budaya"]},
+    {"jp": "小さな島に渡るにはフェリーに乗る必要がある。", "id": "Untuk menyeberang ke pulau kecil, perlu naik feri.", "level": "n3", "tags": ["alam-lingkungan", "perjalanan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00392",
+  "word": "川",
+  "reading": "かわ",
+  "romaji": "kawa",
+  "meaning_id": "sungai",
+  "meaning_en": "river",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 1,
+  "domain": ["alam-lingkungan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Dibaca かわ secara mandiri; dalam nama tempat sering berubah jadi がわ (多摩川 = Tamagawa) atau こう dalam konteks formal (河川 = kōsen, sungai secara umum). Sering muncul dalam nama wilayah dan tempat.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "子供たちが川で魚を釣っている。", "id": "Anak-anak sedang memancing ikan di sungai.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]},
+    {"jp": "台風の後、川の水量が増えた。", "id": "Setelah topan, debit air sungai bertambah.", "level": "n3", "tags": ["alam-lingkungan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00393",
+  "word": "湖",
+  "reading": "みずうみ",
+  "romaji": "mizuumi",
+  "meaning_id": "danau",
+  "meaning_en": "lake",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["alam-lingkungan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Perairan tawar yang dikelilingi daratan, lebih besar dari 池 (kolam). Dalam nama tempat sering memakai 湖 dibaca こ (琵琶湖 = Biwa-ko). Banyak danau indah di Jepang yang jadi tujuan wisata.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "琵琶湖は日本最大の湖だ。", "id": "Danau Biwa adalah danau terbesar di Jepang.", "level": "n3", "tags": ["alam-lingkungan"]},
+    {"jp": "湖の水面に山が映っていた。", "id": "Bayangan gunung terpantul di permukaan danau.", "level": "n3", "tags": ["alam-lingkungan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00394"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00394",
+  "word": "池",
+  "reading": "いけ",
+  "romaji": "ike",
+  "meaning_id": "kolam, telaga",
+  "meaning_en": "pond",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 1,
+  "domain": ["alam-lingkungan", "kehidupan-sehari"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Lebih kecil dari 湖 (danau). Sering ditemukan di taman tradisional Jepang sebagai elemen estetika. Kolam dengan ikan koi (鯉) adalah ciri khas taman Jepang. 池の鯉 = koi di kolam.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "公園の池に鴨が泳いでいる。", "id": "Bebek berenang di kolam taman.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]},
+    {"jp": "日本庭園には必ず池がある。", "id": "Di taman tradisional Jepang pasti ada kolam.", "level": "n3", "tags": ["alam-lingkungan", "budaya"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00393"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00395",
+  "word": "空気",
+  "reading": "くうき",
+  "romaji": "kuuki",
+  "meaning_id": "udara; suasana (figuratif)",
+  "meaning_en": "air; atmosphere (figurative)",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["alam-lingkungan", "bahasa-komunikasi"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Selain makna harfiah (udara), sangat penting dalam ekspresi 空気を読む = membaca suasana/situasi sosial. Ini konsep kunci budaya komunikasi Jepang — peka terhadap konteks tanpa perlu diucapkan.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "山の空気はとても澄んでいる。", "id": "Udara di pegunungan sangat segar dan bersih.", "level": "n3", "tags": ["alam-lingkungan"]},
+    {"jp": "空気を読めない人は職場で苦労する。", "id": "Orang yang tidak bisa membaca suasana akan kesulitan di tempat kerja.", "level": "n3", "tags": ["pekerjaan", "bahasa-komunikasi"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00396",
+  "word": "土",
+  "reading": "つち",
+  "romaji": "tsuchi",
+  "meaning_id": "tanah, lumpur, bumi",
+  "meaning_en": "soil, earth, ground",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 1,
+  "domain": ["alam-lingkungan", "kehidupan-sehari"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Merujuk pada tanah sebagai material (berbeda dari 地面 = permukaan tanah). 土に触れる = bersentuhan dengan tanah. Juga salah satu unsur dalam filosofi tradisional Jepang (五行 = lima unsur).",
+  "conj_type": null,
+  "examples": [
+    {"jp": "畑の土は柔らかくて黒い。", "id": "Tanah di ladang lembut dan berwarna hitam.", "level": "n3", "tags": ["alam-lingkungan", "pekerjaan"]},
+    {"jp": "子供が土で遊んでいる。", "id": "Anak-anak bermain dengan tanah.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00397",
+  "word": "石",
+  "reading": "いし",
+  "romaji": "ishi",
+  "meaning_id": "batu, batu kecil",
+  "meaning_en": "stone, rock (small)",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 1,
+  "domain": ["alam-lingkungan", "kehidupan-sehari"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Batu kecil hingga sedang. Berbeda dari 岩 (iwa — batu besar/tebing) dan 岩石 (batuan secara ilmiah). Juga muncul dalam peribahasa: 石の上にも三年 = ketekunan akan berhasil pada waktunya.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "道に石が落ちていて、つまずいた。", "id": "Ada batu di jalan dan aku tersandung.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]},
+    {"jp": "川原には丸い石がたくさんある。", "id": "Di tepian sungai banyak terdapat batu bulat.", "level": "n3", "tags": ["alam-lingkungan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00398",
+  "word": "砂",
+  "reading": "すな",
+  "romaji": "suna",
+  "meaning_id": "pasir",
+  "meaning_en": "sand",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 1,
+  "domain": ["alam-lingkungan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Partikel halus dari batuan. 砂浜 = pantai berpasir, 砂漠 = gurun (pasir). 砂時計 = jam pasir. Berbeda dari 土 (tanah). Tottori (鳥取) di Jepang punya padang pasir terkenal.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "砂浜を裸足で歩くと気持ちいい。", "id": "Berjalan di pantai berpasir dengan kaki telanjang rasanya menyenangkan.", "level": "n3", "tags": ["alam-lingkungan", "perjalanan"]},
+    {"jp": "砂が目に入って痛い。", "id": "Pasir masuk ke mata dan terasa sakit.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00385"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00399",
+  "word": "植物",
+  "reading": "しょくぶつ",
+  "romaji": "shokubutsu",
+  "meaning_id": "tumbuhan, tanaman",
+  "meaning_en": "plant, vegetation",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["alam-lingkungan", "ilmu-pengetahuan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Istilah umum untuk semua jenis tumbuhan dalam konteks ilmiah maupun sehari-hari. Berbeda dari 草 (rumput/tanaman herba) atau 木 (pohon). 植物園 = kebun botani.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "この植物は日光が少ない場所でも育つ。", "id": "Tumbuhan ini bisa tumbuh di tempat yang minim sinar matahari.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]},
+    {"jp": "熱帯雨林にはたくさんの珍しい植物がある。", "id": "Di hutan hujan tropis terdapat banyak tumbuhan langka.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]}
+  ],
+  "synonyms": [],
+  "antonyms": ["vg-n3-00400"],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00400",
+  "word": "動物",
+  "reading": "どうぶつ",
+  "romaji": "doubutsu",
+  "meaning_id": "hewan, binatang",
+  "meaning_en": "animal",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["alam-lingkungan", "ilmu-pengetahuan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Istilah umum untuk semua hewan. 動物園 = kebun binatang. Berbeda dari 生き物 (makhluk hidup, lebih umum) dan 獣 (binatang buas, nada negatif). 動物的 = bersifat hewani/naluriah.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "動物園にはたくさんの動物がいる。", "id": "Di kebun binatang terdapat banyak hewan.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]},
+    {"jp": "絶滅危惧種の動物を保護する取り組みが進んでいる。", "id": "Upaya melindungi hewan yang terancam punah terus berkembang.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]}
+  ],
+  "synonyms": [],
+  "antonyms": ["vg-n3-00399"],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00401",
+  "word": "虫",
+  "reading": "むし",
+  "romaji": "mushi",
+  "meaning_id": "serangga, hama, hewan kecil berbuku-buku",
+  "meaning_en": "insect, bug, worm",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 1,
+  "domain": ["alam-lingkungan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Cakupan luas — serangga, ulat, bahkan cacing kecil. 虫の声 (suara serangga malam) adalah citra puitis musim gugur Jepang. Idiom: 虫が好かない = tidak suka seseorang tanpa alasan jelas.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "夏になると虫の声がよく聞こえる。", "id": "Saat musim panas, suara serangga terdengar jelas.", "level": "n3", "tags": ["alam-lingkungan", "budaya"]},
+    {"jp": "虫が苦手な人は多い。", "id": "Banyak orang yang tidak suka serangga.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00402",
+  "word": "鳥",
+  "reading": "とり",
+  "romaji": "tori",
+  "meaning_id": "burung",
+  "meaning_en": "bird",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 1,
+  "domain": ["alam-lingkungan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Hati-hati: 鳥 (tori) = burung, tapi juga berarti 'ayam' dalam konteks makanan (鶏肉 = daging ayam). Bacaan が berlaku juga untuk unggas. Burung bangau (鶴) dan merak adalah simbol penting budaya Jepang.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "公園でいろいろな鳥の鳴き声が聞こえた。", "id": "Di taman terdengar berbagai suara kicauan burung.", "level": "n3", "tags": ["alam-lingkungan"]},
+    {"jp": "渡り鳥は季節によって移動する。", "id": "Burung migran berpindah sesuai musim.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00403",
+  "word": "魚",
+  "reading": "さかな",
+  "romaji": "sakana",
+  "meaning_id": "ikan",
+  "meaning_en": "fish",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 1,
+  "domain": ["alam-lingkungan", "makanan-minuman"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Bacaan さかな untuk penggunaan umum dan makanan. Bacaan うお (uo) muncul dalam kata majemuk atau konteks formal/sastra (魚介類 = hasil laut). Ikan sangat sentral dalam kuliner Jepang — sushi, sashimi, dan berbagai hidangan.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "日本人は魚をよく食べる。", "id": "Orang Jepang sering makan ikan.", "level": "n3", "tags": ["makanan-minuman", "budaya"]},
+    {"jp": "川で釣った魚を夕食に食べた。", "id": "Kami makan ikan yang ditangkap di sungai untuk makan malam.", "level": "n3", "tags": ["alam-lingkungan", "makanan-minuman"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00404",
+  "word": "自然",
+  "reading": "しぜん",
+  "romaji": "shizen",
+  "meaning_id": "alam; alami, natural",
+  "meaning_en": "nature; natural",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["alam-lingkungan", "ilmu-pengetahuan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Berfungsi ganda: kata benda (alam) dan な形容詞 (自然な = alami/natural). 自然に = secara alami. Konsep alam dan harmoni dengan alam (自然との調和) sangat penting dalam estetika dan filosofi Jepang.",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "日本には美しい自然がたくさん残っている。", "id": "Jepang masih memiliki banyak alam yang indah.", "level": "n3", "tags": ["alam-lingkungan", "budaya"]},
+    {"jp": "自然な笑顔が一番素敵だ。", "id": "Senyum yang natural adalah yang paling indah.", "level": "n3", "tags": ["emosi-positif", "kehidupan-sehari"]},
+    {"jp": "自然を守るために何ができるか考えよう。", "id": "Mari pikirkan apa yang bisa dilakukan untuk menjaga alam.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00405",
+  "word": "霧",
+  "reading": "きり",
+  "romaji": "kiri",
+  "meaning_id": "kabut",
+  "meaning_en": "fog, mist",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["alam-lingkungan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Kabut tebal yang mengurangi jarak pandang. Berbeda dari もや (moya — kabut tipis/haze). 霧が深い = kabut tebal. Sering muncul dalam puisi haiku dan sastra Jepang sebagai citra misterius atau musim gugur.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "朝、山に霧がかかっていた。", "id": "Pagi-pagi, gunung tertutup kabut.", "level": "n3", "tags": ["alam-lingkungan"]},
+    {"jp": "霧が深くて前がよく見えない。", "id": "Kabut tebal, tidak bisa melihat ke depan dengan jelas.", "level": "n3", "tags": ["alam-lingkungan", "perjalanan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00438",
+  "word": "資料",
+  "reading": "しりょう",
+  "romaji": "shiryou",
+  "meaning_id": "materi, dokumen referensi, bahan acuan",
+  "meaning_en": "materials, reference documents, data",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["pekerjaan", "bisnis", "pendidikan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "資料 merujuk pada dokumen atau data yang digunakan sebagai bahan referensi atau pendukung, seperti handout rapat atau data penelitian. Berbeda dari 書類 (しょるい) yang merupakan dokumen resmi yang perlu diproses, ditandatangani, atau diarsipkan secara formal.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "会議の<b>資料</b>を印刷してください。", "id": "Tolong cetak materi rapatnya.", "level": "n3", "tags": ["pekerjaan", "bisnis"]},
+    {"jp": "この<b>資料</b>を参考にしてレポートをまとめた。", "id": "Aku merangkum laporan dengan mengacu pada materi ini.", "level": "n3", "tags": ["pendidikan", "pekerjaan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00440",
+  "word": "企業",
+  "reading": "きぎょう",
+  "romaji": "kigyou",
+  "meaning_id": "perusahaan, korporasi (skala menengah hingga besar)",
+  "meaning_en": "company, enterprise, corporation",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": ["bisnis", "ekonomi-keuangan", "pekerjaan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "企業 adalah istilah yang lebih formal dan akademis untuk menyebut perusahaan, sering dipakai di berita, laporan ekonomi, atau diskusi kebijakan. Berbeda dari 会社 (かいしゃ) yang lebih umum dan digunakan dalam percakapan sehari-hari untuk semua jenis dan ukuran perusahaan.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "大手<b>企業</b>への就職を目指している。", "id": "Aku bertujuan untuk bekerja di perusahaan besar.", "level": "n3", "tags": ["pekerjaan", "bisnis"]},
+    {"jp": "その<b>企業</b>は環境問題に積極的に取り組んでいる。", "id": "Perusahaan itu aktif menangani isu lingkungan.", "level": "n3", "tags": ["bisnis", "alam-lingkungan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00442",
+  "word": "部署",
+  "reading": "ぶしょ",
+  "romaji": "busho",
+  "meaning_id": "departemen, divisi dalam perusahaan",
+  "meaning_en": "department, division, section (within a company)",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["pekerjaan", "bisnis"],
+  "register": "neutral",
+  "lawan_bicara": ["rekan-kerja", "atasan"],
+  "nuance": "部署 secara khusus merujuk pada unit atau bagian di dalam suatu perusahaan atau organisasi. Berbeda dari 部門 (ぶもん) yang bisa mengacu pada divisi besar atau bidang yang lebih luas (misalnya dalam industri atau pemerintahan), 部署 lebih spesifik pada unit kerja sehari-hari.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "来月から別の<b>部署</b>に異動することになった。", "id": "Mulai bulan depan aku akan dipindahkan ke departemen lain.", "level": "n3", "tags": ["pekerjaan"]},
+    {"jp": "どの<b>部署</b>に所属していますか？", "id": "Kamu termasuk dalam departemen apa?", "level": "n3", "tags": ["pekerjaan", "bisnis"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00444",
+  "word": "責任",
+  "reading": "せきにん",
+  "romaji": "sekinin",
+  "meaning_id": "tanggung jawab (moral, sosial, maupun profesional)",
+  "meaning_en": "responsibility, accountability",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["pekerjaan", "karakter", "hukum-aturan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "責任 adalah tanggung jawab yang muncul dari peran, jabatan, atau tindakan seseorang — mencakup dimensi moral dan sosial. Berbeda dari 義務 (ぎむ) yang merupakan kewajiban yang harus dipenuhi berdasarkan aturan atau hukum, 責任 lebih menyangkut akuntabilitas atas hasil dan keputusan.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "この失敗の<b>責任</b>は私にあります。", "id": "Tanggung jawab atas kegagalan ini ada pada saya.", "level": "n3", "tags": ["pekerjaan", "karakter"]},
+    {"jp": "親には子どもを育てる<b>責任</b>がある。", "id": "Orang tua memiliki tanggung jawab untuk membesarkan anak.", "level": "n3", "tags": ["keluarga", "karakter"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00445",
+  "word": "義務",
+  "reading": "ぎむ",
+  "romaji": "gimu",
+  "meaning_id": "kewajiban (berdasarkan hukum, aturan, atau norma)",
+  "meaning_en": "obligation, duty",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": ["hukum-aturan", "pekerjaan", "politik-masyarakat"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "義務 merujuk pada kewajiban yang harus dipenuhi berdasarkan hukum, peraturan, atau norma sosial yang berlaku. Berbeda dari 責任 yang lebih pada akuntabilitas moral atas suatu peran, 義務 menekankan keharusan yang bersifat eksternal — melanggarnya bisa berdampak hukum atau sanksi.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "納税は国民の<b>義務</b>だ。", "id": "Membayar pajak adalah kewajiban warga negara.", "level": "n3", "tags": ["hukum-aturan", "politik-masyarakat"]},
+    {"jp": "契約上の<b>義務</b>を果たさなかった。", "id": "Dia tidak memenuhi kewajiban yang tertuang dalam kontrak.", "level": "n3", "tags": ["bisnis", "hukum-aturan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00446",
+  "word": "権利",
+  "reading": "けんり",
+  "romaji": "kenri",
+  "meaning_id": "hak (yang dimiliki seseorang secara hukum atau moral)",
+  "meaning_en": "right, entitlement",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": ["hukum-aturan", "politik-masyarakat"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "権利 adalah hak yang dimiliki seseorang berdasarkan hukum atau norma — seperti hak memilih atau hak bekerja. Berbeda dari 権限 (けんげん) yang merujuk pada wewenang atau otoritas yang diberikan dalam konteks jabatan atau pekerjaan, 権利 lebih bersifat universal dan melekat pada individu.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "すべての人には教育を受ける<b>権利</b>がある。", "id": "Setiap orang berhak mendapatkan pendidikan.", "level": "n3", "tags": ["hukum-aturan", "politik-masyarakat"]},
+    {"jp": "従業員には有給休暇を取る<b>権利</b>がある。", "id": "Karyawan berhak mengambil cuti berbayar.", "level": "n3", "tags": ["pekerjaan", "hukum-aturan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00447",
+  "word": "規則",
+  "reading": "きそく",
+  "romaji": "kisoku",
+  "meaning_id": "peraturan, aturan (dalam kelompok atau organisasi)",
+  "meaning_en": "rules, regulations",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["hukum-aturan", "pekerjaan", "pendidikan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "規則 merujuk pada aturan yang berlaku di dalam suatu kelompok, sekolah, atau perusahaan tertentu — bukan hukum negara. Berbeda dari 法律 (ほうりつ) yang merupakan undang-undang yang berlaku secara nasional dengan konsekuensi hukum, dan lebih formal dari ルール yang lebih kasual.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "学校の<b>規則</b>を守らなければならない。", "id": "Kita harus mematuhi peraturan sekolah.", "level": "n3", "tags": ["pendidikan", "hukum-aturan"]},
+    {"jp": "会社の<b>規則</b>で私服での出勤は禁止されている。", "id": "Berdasarkan peraturan perusahaan, datang dengan pakaian kasual dilarang.", "level": "n3", "tags": ["pekerjaan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00448",
+  "word": "制度",
+  "reading": "せいど",
+  "romaji": "seido",
+  "meaning_id": "sistem, institusi (yang ditetapkan secara resmi)",
+  "meaning_en": "system, institution, established framework",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": ["politik-masyarakat", "hukum-aturan", "pekerjaan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "制度 mengacu pada sistem atau kerangka yang ditetapkan secara formal oleh pemerintah atau institusi, seperti sistem pendidikan atau sistem jaminan sosial. Berbeda dari システム yang lebih umum (termasuk sistem teknis/teknologi), 制度 selalu menyiratkan dimensi sosial atau kelembagaan yang resmi.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "日本の医療<b>制度</b>は国民皆保険を採用している。", "id": "Sistem kesehatan Jepang menerapkan asuransi kesehatan universal.", "level": "n3", "tags": ["kesehatan", "politik-masyarakat"]},
+    {"jp": "この<b>制度</b>を改革する必要がある。", "id": "Sistem ini perlu direformasi.", "level": "n3", "tags": ["politik-masyarakat", "perubahan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00449",
+  "word": "政策",
+  "reading": "せいさく",
+  "romaji": "seisaku",
+  "meaning_id": "kebijakan (pemerintah atau institusi besar)",
+  "meaning_en": "policy",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": ["politik-masyarakat", "bisnis", "ekonomi-keuangan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "政策 adalah kebijakan formal yang ditetapkan oleh pemerintah atau lembaga besar sebagai panduan tindakan. Berbeda dari 方針 (ほうしん) yang merupakan arah kebijakan internal perusahaan atau organisasi yang lebih fleksibel, 政策 memiliki cakupan dan dampak yang lebih luas serta lebih resmi.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "政府は新しい経済<b>政策</b>を発表した。", "id": "Pemerintah mengumumkan kebijakan ekonomi baru.", "level": "n3", "tags": ["politik-masyarakat", "ekonomi-keuangan"]},
+    {"jp": "環境<b>政策</b>の強化が求められている。", "id": "Penguatan kebijakan lingkungan hidup sangat diperlukan.", "level": "n3", "tags": ["politik-masyarakat", "alam-lingkungan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00450",
+  "word": "予算",
+  "reading": "よさん",
+  "romaji": "yosan",
+  "meaning_id": "anggaran, budget yang direncanakan",
+  "meaning_en": "budget, estimated expenditure",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["bisnis", "ekonomi-keuangan", "pekerjaan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "予算 adalah dana yang dialokasikan atau direncanakan untuk tujuan tertentu sebelum pengeluaran terjadi. Berbeda dari 費用 (ひよう) yang mengacu pada biaya yang sudah atau akan dikeluarkan secara aktual, 予算 selalu menyiratkan perencanaan ke depan dan batas yang ditetapkan.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "<b>予算</b>が足りないので、計画を変更しなければならない。", "id": "Karena anggarannya tidak cukup, kita harus mengubah rencana.", "level": "n3", "tags": ["bisnis", "ekonomi-keuangan"]},
+    {"jp": "今年度の<b>予算</b>を組む作業をしている。", "id": "Kami sedang menyusun anggaran untuk tahun fiskal ini.", "level": "n3", "tags": ["pekerjaan", "bisnis"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00451",
+  "word": "費用",
+  "reading": "ひよう",
+  "romaji": "hiyou",
+  "meaning_id": "biaya, pengeluaran (yang diperlukan untuk sesuatu)",
+  "meaning_en": "cost, expense",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["bisnis", "ekonomi-keuangan", "kehidupan-sehari"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "費用 adalah biaya yang diperlukan untuk melakukan sesuatu, baik sudah terjadi maupun diperkirakan. Berbeda dari 値段 (ねだん) yang adalah harga jual suatu produk atau barang, dan dari コスト yang lebih kasual/bisnis modern, 費用 lebih formal dan sering dipakai dalam dokumen atau laporan resmi.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "修理の<b>費用</b>はいくらかかりますか？", "id": "Berapa biaya perbaikannya?", "level": "n3", "tags": ["kehidupan-sehari", "bisnis"]},
+    {"jp": "交通<b>費用</b>は会社が負担します。", "id": "Biaya transportasi ditanggung oleh perusahaan.", "level": "n3", "tags": ["pekerjaan", "bisnis"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00452",
+  "word": "利益",
+  "reading": "りえき",
+  "romaji": "rieki",
+  "meaning_id": "keuntungan, profit; juga manfaat atau kebaikan",
+  "meaning_en": "profit, benefit, advantage",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["bisnis", "ekonomi-keuangan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "利益 mencakup dua makna: keuntungan finansial (profit) maupun manfaat atau kebaikan secara umum (kepentingan publik = 公共の利益). Berbeda dari 利潤 (りじゅん) yang lebih teknis dan hanya merujuk pada margin keuntungan bisnis, 利益 lebih luas dan sering dipakai dalam kedua konteks tersebut.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "今期は大きな<b>利益</b>を上げることができた。", "id": "Pada kuartal ini kami berhasil membukukan keuntungan besar.", "level": "n3", "tags": ["bisnis", "ekonomi-keuangan"]},
+    {"jp": "社会の<b>利益</b>のために働くことが大切だ。", "id": "Penting untuk bekerja demi kepentingan masyarakat.", "level": "n3", "tags": ["politik-masyarakat", "karakter"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00453",
+  "word": "損失",
+  "reading": "そんしつ",
+  "romaji": "sonshitsu",
+  "meaning_id": "kerugian (finansial atau material)",
+  "meaning_en": "loss, financial damage",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": ["bisnis", "ekonomi-keuangan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "損失 merujuk pada kerugian yang terukur secara finansial atau material — sesuatu yang hilang atau berkurang nilainya. Berbeda dari 損害 (そんがい) yang lebih luas dan mencakup kerugian atau kerusakan akibat suatu peristiwa (termasuk non-finansial seperti reputasi), 損失 lebih spesifik pada nilai yang hilang.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "台風による<b>損失</b>は数十億円に上った。", "id": "Kerugian akibat topan mencapai puluhan miliar yen.", "level": "n3", "tags": ["ekonomi-keuangan", "alam-lingkungan"]},
+    {"jp": "投資に失敗して大きな<b>損失</b>を被った。", "id": "Investasinya gagal dan dia menanggung kerugian besar.", "level": "n3", "tags": ["bisnis", "ekonomi-keuangan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00460",
+  "word": "目標",
+  "reading": "もくひょう",
+  "romaji": "mokuhyou",
+  "meaning_id": "target, sasaran yang ingin dicapai",
+  "meaning_en": "goal, target, objective",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["pekerjaan", "bisnis", "pendidikan", "karakter"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "目標 adalah sasaran yang spesifik dan terukur yang ingin dicapai dalam jangka tertentu. Berbeda dari 目的 (もくてき) yang mengacu pada tujuan yang lebih mendasar dan luas (alasan atau 'mengapa'), 目標 lebih konkret dan berorientasi pada hasil — seperti 'lulus ujian N2' vs 'bisa berbahasa Jepang'.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "今年の<b>目標</b>は体重を5キロ減らすことだ。", "id": "Targetku tahun ini adalah menurunkan berat badan 5 kg.", "level": "n3", "tags": ["kesehatan", "kehidupan-sehari"]},
+    {"jp": "チームの<b>目標</b>を全員で確認した。", "id": "Seluruh anggota tim menyepakati target bersama.", "level": "n3", "tags": ["pekerjaan", "bisnis"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00463",
+  "word": "課題",
+  "reading": "かだい",
+  "romaji": "kadai",
+  "meaning_id": "tantangan, isu yang perlu diselesaikan; juga tugas yang diberikan",
+  "meaning_en": "challenge, issue to be addressed; assigned task",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["pekerjaan", "bisnis", "pendidikan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "課題 memiliki dua nuansa: (1) tantangan atau isu yang perlu diselesaikan, biasanya dalam konteks organisasi atau kebijakan; (2) tugas yang diberikan oleh guru atau atasan. Berbeda dari 問題 (もんだい) yang lebih negatif dan bisa berarti 'masalah' atau soal ujian, 課題 terasa lebih konstruktif dan berorientasi pada solusi.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "少子化はこの国の大きな<b>課題</b>だ。", "id": "Penurunan angka kelahiran adalah tantangan besar negara ini.", "level": "n3", "tags": ["politik-masyarakat"]},
+    {"jp": "夏休みの宿題の<b>課題</b>がたくさん出た。", "id": "Banyak tugas liburan musim panas yang diberikan.", "level": "n3", "tags": ["pendidikan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00465",
+  "word": "対策",
+  "reading": "たいさく",
+  "romaji": "taisaku",
+  "meaning_id": "tindakan penanggulangan, langkah pencegahan atau penanganan",
+  "meaning_en": "countermeasure, measures taken to deal with something",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["pekerjaan", "bisnis", "politik-masyarakat"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "対策 adalah langkah konkret yang diambil untuk menghadapi, mencegah, atau mengurangi dampak suatu masalah. Berbeda dari 解決策 (かいけつさく) yang secara khusus berarti solusi untuk menuntaskan masalah, 対策 lebih luas — bisa berupa tindakan pencegahan sebelum masalah muncul, atau penanganan saat masalah sedang berlangsung.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "感染症への<b>対策</b>として、手洗いを徹底する。", "id": "Sebagai langkah pencegahan penyakit menular, cuci tangan dilakukan secara menyeluruh.", "level": "n3", "tags": ["kesehatan", "politik-masyarakat"]},
+    {"jp": "セキュリティ<b>対策</b>を強化する必要がある。", "id": "Perlu memperkuat langkah-langkah keamanan.", "level": "n3", "tags": ["bisnis", "teknologi"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00503",
+  "word": "感情",
+  "reading": "かんじょう",
+  "romaji": "kanjou",
+  "meaning_id": "perasaan, emosi",
+  "meaning_en": "emotion, feeling, sentiment",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["emosi", "pikiran-opini", "ilmu-pengetahuan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "感情 adalah emosi secara umum — lebih abstrak dan psikologis dibanding 気持ち. 気持ち = perasaan yang dirasakan saat itu (lebih personal, spontan). 感情 = spektrum emosi (senang, sedih, marah, dll). 感情的になる = menjadi emosional/terbawa perasaan.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "彼は自分の<b>感情</b>をうまく表現できない。", "id": "Ia tidak bisa mengungkapkan emosinya dengan baik.", "level": "n3", "tags": ["emosi", "karakter"]},
+    {"jp": "<b>感情</b>的にならず、冷静に話し合おう。", "id": "Mari berdiskusi dengan tenang tanpa terbawa emosi.", "level": "n3", "tags": ["bahasa-komunikasi", "emosi"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00504"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00504",
+  "word": "感覚",
+  "reading": "かんかく",
+  "romaji": "kankaku",
+  "meaning_id": "indera, rasa (fisik/intuitif), sense",
+  "meaning_en": "sense, sensation, feeling (physical/intuitive)",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["emosi", "ilmu-pengetahuan", "pikiran-opini"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "感覚 merujuk pada persepsi sensoris (indera fisik: sentuhan, rasa, dll) atau intuisi/kepekaan. Berbeda dari 感情 yang merujuk pada emosi. 感覚がない = mati rasa (fisik). センス/感覚がある = punya selera/kepekaan. 距離感覚 = rasa jarak.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "寒さで手の<b>感覚</b>がなくなった。", "id": "Tangan saya mati rasa karena kedinginan.", "level": "n3", "tags": ["kesehatan", "kehidupan-sehari"]},
+    {"jp": "彼女は音楽の<b>感覚</b>に優れている。", "id": "Dia memiliki kepekaan musik yang luar biasa.", "level": "n3", "tags": ["seni-budaya", "karakter"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00503"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00505",
+  "word": "印象",
+  "reading": "いんしょう",
+  "romaji": "inshou",
+  "meaning_id": "kesan, impresi",
+  "meaning_en": "impression",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["pikiran-opini", "emosi-sosial", "bahasa-komunikasi"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "印象 adalah kesan yang terbentuk dari pengalaman langsung bertemu atau melihat sesuatu. Berbeda dari イメージ (image) yang lebih berupa gambaran mental atau citra umum yang belum tentu dari pengalaman langsung. 第一印象 = kesan pertama. 印象に残る = berkesan/membekas.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "彼の第一<b>印象</b>はとても良かった。", "id": "Kesan pertamanya sangat baik.", "level": "n3", "tags": ["emosi-sosial", "kehidupan-sehari"]},
+    {"jp": "その映画は強い<b>印象</b>を残した。", "id": "Film itu meninggalkan kesan yang kuat.", "level": "n3", "tags": ["hiburan", "emosi"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00510",
+  "word": "可能性",
+  "reading": "かのうせい",
+  "romaji": "kanousei",
+  "meaning_id": "kemungkinan, potensi, peluang",
+  "meaning_en": "possibility, potential, likelihood",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["pikiran-opini", "hubungan-konsep", "ilmu-pengetahuan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "可能性 merujuk pada derajat atau tingkat kemungkinan sesuatu bisa terjadi, atau potensi yang belum terwujud. Berbeda dari 可能 (かのう = adjektif na-: mungkin/bisa) yang sekedar menyatakan apakah sesuatu bisa dilakukan. 可能性が高い/低い = kemungkinannya tinggi/rendah.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "この薬が効く<b>可能性</b>は50%だと医師が言った。", "id": "Dokter mengatakan kemungkinan obat ini bekerja adalah 50%.", "level": "n3", "tags": ["kesehatan", "ilmu-pengetahuan"]},
+    {"jp": "彼女はまだ若いから、将来の<b>可能性</b>は無限大だ。", "id": "Dia masih muda, jadi potensinya di masa depan tidak terbatas.", "level": "n3", "tags": ["pendidikan", "karakter"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00511",
+  "word": "必要性",
+  "reading": "ひつようせい",
+  "romaji": "hitsuyousei",
+  "meaning_id": "kebutuhan, keperluan, urgensi",
+  "meaning_en": "necessity, need, importance",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["pikiran-opini", "hubungan-konsep"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "必要性 menekankan derajat atau urgensi dari suatu kebutuhan — sering dipakai dalam diskusi/argumen. Berbeda dari 必要 (な形容詞: perlu/butuh) yang lebih langsung menyatakan kebutuhan. 必要性を感じる = merasakan perlunya. 必要性がない = tidak ada keperluannya.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "英語を学ぶ<b>必要性</b>はますます高まっている。", "id": "Kebutuhan untuk belajar bahasa Inggris semakin meningkat.", "level": "n3", "tags": ["pendidikan", "bahasa-komunikasi"]},
+    {"jp": "改革の<b>必要性</b>について全員が認識している。", "id": "Semua orang menyadari perlunya reformasi.", "level": "n3", "tags": ["politik-masyarakat", "pikiran-opini"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00515",
+  "word": "背景",
+  "reading": "はいけい",
+  "romaji": "haikei",
+  "meaning_id": "latar belakang, konteks",
+  "meaning_en": "background, backdrop, context",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["hubungan-konsep", "seni-budaya", "bahasa-komunikasi"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "背景 memiliki dua makna: (1) latar/backdrop secara visual (lukisan, foto), (2) latar belakang/konteks situasi atau seseorang. Berbeda dari 文脈 (ぶんみゃく) yang khusus merujuk pada konteks dalam teks/percakapan. 家庭背景 = latar belakang keluarga. 社会的背景 = latar belakang sosial.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "この問題を理解するには歴史的な<b>背景</b>を知る必要がある。", "id": "Untuk memahami masalah ini, perlu mengetahui latar belakang sejarahnya.", "level": "n3", "tags": ["hubungan-konsep", "pendidikan"]},
+    {"jp": "写真の<b>背景</b>に美しい山が写っている。", "id": "Di latar belakang foto terlihat pegunungan yang indah.", "level": "n3", "tags": ["alam-lingkungan", "seni-budaya"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00516",
+  "word": "立場",
+  "reading": "たちば",
+  "romaji": "tachiba",
+  "meaning_id": "posisi, kedudukan, sudut pandang (sosial/situasional)",
+  "meaning_en": "position, standpoint, circumstances",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["emosi-sosial", "pikiran-opini", "bisnis"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "立場 menekankan posisi/kedudukan seseorang dalam konteks sosial, peran, atau situasi tertentu — sering menyiratkan tanggung jawab yang menyertai posisi itu. Berbeda dari 観点 yang murni merujuk pada sudut pandang analitis. 立場上 = mengingat posisi/kedudukan saya. 相手の立場 = posisi/keadaan pihak lain.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "上司の<b>立場</b>から言えば、その判断は正しい。", "id": "Dari posisi sebagai atasan, penilaian itu sudah benar.", "level": "n3", "tags": ["pekerjaan", "bisnis"]},
+    {"jp": "相手の<b>立場</b>に立って考えることが大切だ。", "id": "Penting untuk berpikir dengan menempatkan diri pada posisi orang lain.", "level": "n3", "tags": ["emosi-sosial", "karakter"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00517"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00517",
+  "word": "観点",
+  "reading": "かんてん",
+  "romaji": "kanten",
+  "meaning_id": "sudut pandang, perspektif, titik pandang",
+  "meaning_en": "viewpoint, perspective, point of view",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["pikiran-opini", "ilmu-pengetahuan", "bahasa-komunikasi"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "観点 adalah kerangka analitis atau cara memandang suatu hal — lebih intelektual dan abstrak. Berbeda dari 立場 yang menekankan posisi sosial/situasional seseorang. ～の観点から = dari sudut pandang/perspektif ~. Sering dipakai dalam tulisan akademis dan diskusi.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "経済的な<b>観点</b>からこの政策を分析した。", "id": "Kebijakan ini dianalisis dari sudut pandang ekonomi.", "level": "n3", "tags": ["ekonomi-keuangan", "pikiran-opini"]},
+    {"jp": "異なる<b>観点</b>から問題を見ることが解決への鍵だ。", "id": "Melihat masalah dari sudut pandang yang berbeda adalah kunci pemecahannya.", "level": "n3", "tags": ["pikiran-opini", "ilmu-pengetahuan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00516"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00519",
+  "word": "動機",
+  "reading": "どうき",
+  "romaji": "douki",
+  "meaning_id": "motivasi, dorongan, motif",
+  "meaning_en": "motive, motivation, incentive",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["pikiran-opini", "karakter", "hukum-aturan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "動機 adalah kekuatan/dorongan yang menggerakkan seseorang untuk bertindak — bisa internal (keinginan) atau eksternal (insentif). Berbeda dari 目的 yang merujuk pada tujuan/sasaran. Dalam konteks hukum, 動機 = motif kejahatan. 内発的動機 = motivasi intrinsik.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "日本語を勉強する<b>動機</b>は何ですか？", "id": "Apa motivasi Anda belajar bahasa Jepang?", "level": "n3", "tags": ["pendidikan", "bahasa-komunikasi"]},
+    {"jp": "犯行の<b>動機</b>はまだ明らかになっていない。", "id": "Motif kejahatan belum terungkap.", "level": "n3", "tags": ["hukum-aturan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00520",
+  "word": "原則",
+  "reading": "げんそく",
+  "romaji": "gensoku",
+  "meaning_id": "prinsip, asas, kaidah dasar",
+  "meaning_en": "principle, rule, fundamental",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["hukum-aturan", "pikiran-opini", "karakter"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "原則 adalah prinsip atau kaidah mendasar yang menjadi panduan — sifatnya lebih fleksibel dan normatif. Berbeda dari 規則 (きそく) yang merupakan aturan konkret yang harus dipatuhi. 原則として = pada prinsipnya/secara umum. 原則を守る = menjaga prinsip.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "会社の<b>原則</b>として、お客様を最優先にしています。", "id": "Sebagai prinsip perusahaan, kami mengutamakan pelanggan di atas segalanya.", "level": "n3", "tags": ["bisnis", "pekerjaan"]},
+    {"jp": "<b>原則</b>として、遅刻は認められていない。", "id": "Pada prinsipnya, keterlambatan tidak diizinkan.", "level": "n3", "tags": ["pendidikan", "hukum-aturan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00521",
+  "word": "価値観",
+  "reading": "かちかん",
+  "romaji": "kachikan",
+  "meaning_id": "nilai-nilai hidup, pandangan tentang nilai, sistem nilai",
+  "meaning_en": "values, sense of values, value system",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["karakter", "pikiran-opini", "budaya"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "価値観 adalah sistem nilai atau pandangan seseorang tentang apa yang penting/berharga dalam hidup — bersifat personal dan terbentuk dari budaya/pengalaman. Berbeda dari 価値 (かち) yang merujuk pada nilai/harga suatu hal spesifik. 価値観の違い = perbedaan nilai-nilai hidup.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "二人は<b>価値観</b>が合わないため別れた。", "id": "Keduanya berpisah karena nilai-nilai hidup mereka tidak cocok.", "level": "n3", "tags": ["percintaan", "karakter"]},
+    {"jp": "異なる文化の<b>価値観</b>を尊重することが大切だ。", "id": "Penting untuk menghormati nilai-nilai hidup dari budaya yang berbeda.", "level": "n3", "tags": ["budaya", "emosi-sosial"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00522",
+  "word": "限界",
+  "reading": "げんかい",
+  "romaji": "genkai",
+  "meaning_id": "batas, keterbatasan, titik akhir kemampuan",
+  "meaning_en": "limit, boundary, limitation",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["pikiran-opini", "hubungan-konsep", "karakter"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "限界 adalah batas alami atau inheren dari kemampuan, kapasitas, atau kondisi tertentu — sering berkonotasi pada batas yang tak bisa dilampaui. Berbeda dari 制限 (せいげん) yang merupakan pembatasan yang diterapkan dari luar. 限界を超える = melampaui batas. もう限界だ = sudah di batas kemampuan.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "人間の体にも<b>限界</b>があることを忘れないでほしい。", "id": "Tolong jangan lupa bahwa tubuh manusia juga memiliki keterbatasan.", "level": "n3", "tags": ["kesehatan", "karakter"]},
+    {"jp": "この仕事には私一人では<b>限界</b>がある。", "id": "Ada keterbatasan yang tidak bisa saya atasi sendiri dalam pekerjaan ini.", "level": "n3", "tags": ["pekerjaan", "hubungan-konsep"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00523",
+  "word": "能力",
+  "reading": "のうりょく",
+  "romaji": "nouryoku",
+  "meaning_id": "kemampuan, kapasitas, kompetensi",
+  "meaning_en": "ability, capacity, competence",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["karakter", "pendidikan", "pekerjaan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "能力 adalah kemampuan yang bisa diasah/dipelajari — mencakup keahlian teknis dan kapasitas umum. Berbeda dari 才能 (さいのう) yang merujuk pada bakat alami/bawaan. 能力がある/ない = mampu/tidak mampu. 能力を発揮する = menunjukkan kemampuan. 日本語能力試験 (JLPT) memakai kata ini.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "彼女はリーダーとしての<b>能力</b>に優れている。", "id": "Dia memiliki kemampuan kepemimpinan yang luar biasa.", "level": "n3", "tags": ["pekerjaan", "karakter"]},
+    {"jp": "自分の<b>能力</b>を信じて挑戦し続けることが大切だ。", "id": "Penting untuk terus menantang diri sambil percaya pada kemampuan sendiri.", "level": "n3", "tags": ["karakter", "pendidikan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00524",
+  "word": "成果",
+  "reading": "せいか",
+  "romaji": "seika",
+  "meaning_id": "hasil, capaian, buah kerja keras",
+  "meaning_en": "result, achievement, outcome (positive)",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["pekerjaan", "pendidikan", "sebab-akibat"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "成果 mengandung konotasi positif — hasil yang dicapai melalui usaha dan kerja keras. Berbeda dari 結果 (けっか) yang netral dan merujuk pada semua jenis hasil (baik/buruk). 成果を上げる = meraih/menunjukkan hasil. 研究成果 = hasil penelitian. Biasa dipakai dalam konteks profesional/akademis.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "一年間の努力の<b>成果</b>がやっと出てきた。", "id": "Hasil dari satu tahun kerja keras akhirnya mulai terlihat.", "level": "n3", "tags": ["pekerjaan", "karakter"]},
+    {"jp": "このプロジェクトで大きな<b>成果</b>を上げることができた。", "id": "Kami berhasil meraih hasil yang besar dalam proyek ini.", "level": "n3", "tags": ["bisnis", "pekerjaan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00525"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00525",
+  "word": "結論",
+  "reading": "けつろん",
+  "romaji": "ketsuron",
+  "meaning_id": "kesimpulan, konklusi",
+  "meaning_en": "conclusion, final judgment",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["pikiran-opini", "bahasa-komunikasi", "ilmu-pengetahuan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "結論 adalah kesimpulan logis yang dicapai melalui penalaran atau analisis — sering dipakai di akhir argumen, esai, atau penelitian. Berbeda dari 結果 (けっか) yang merujuk pada hasil faktual dari suatu proses/kejadian. 結論を出す = menarik kesimpulan. 結論として = sebagai kesimpulan.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "長い議論の末、ようやく<b>結論</b>が出た。", "id": "Setelah diskusi panjang, akhirnya kesimpulan pun diperoleh.", "level": "n3", "tags": ["pikiran-opini", "bahasa-komunikasi"]},
+    {"jp": "<b>結論</b>として、この方法が最も効果的だと言える。", "id": "Sebagai kesimpulan, dapat dikatakan bahwa metode ini paling efektif.", "level": "n3", "tags": ["ilmu-pengetahuan", "pendidikan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00524"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00556",
+  "word": "自然",
+  "reading": "しぜん",
+  "romaji": "shizen",
+  "meaning_id": "alam, alam semesta; alami, natural",
+  "meaning_en": "nature; natural",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["alam-lingkungan", "ilmu-pengetahuan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Berfungsi sebagai kata benda (alam) dan な形容詞 (自然な = alami/natural). Berbeda dari 環境 (kankyō) yang mencakup lingkungan buatan manusia; 自然 merujuk khusus pada alam yang tidak disentuh manusia. 自然に = secara alami/dengan sendirinya.",
+  "conj_type": "adj-na",
+  "examples": [
+    {"jp": "日本には美しい<b>自然</b>がたくさん残っている。", "id": "Jepang masih memiliki banyak alam yang indah.", "level": "n3", "tags": ["alam-lingkungan", "budaya"]},
+    {"jp": "<b>自然</b>を守ることは私たちの責任だ。", "id": "Menjaga alam adalah tanggung jawab kita.", "level": "n3", "tags": ["alam-lingkungan", "politik-masyarakat"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00557"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00557",
+  "word": "環境",
+  "reading": "かんきょう",
+  "romaji": "kankyou",
+  "meaning_id": "lingkungan hidup, lingkungan sekitar",
+  "meaning_en": "environment, surroundings",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["alam-lingkungan", "politik-masyarakat"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Lebih luas dari 自然 — mencakup lingkungan alam maupun buatan manusia (lingkungan kerja, lingkungan sosial, lingkungan hidup). 環境問題 = masalah lingkungan. 環境省 = Kementerian Lingkungan Hidup Jepang. Kata ini sangat umum dalam konteks kebijakan publik dan berita.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "<b>環境</b>問題は世界中で深刻になっている。", "id": "Masalah lingkungan semakin serius di seluruh dunia.", "level": "n3", "tags": ["alam-lingkungan", "politik-masyarakat"]},
+    {"jp": "子どもは育つ<b>環境</b>に大きく影響される。", "id": "Anak-anak sangat dipengaruhi oleh lingkungan tempat mereka tumbuh.", "level": "n3", "tags": ["pendidikan", "keluarga"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00556", "vg-n3-00573"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00558",
+  "word": "生態系",
+  "reading": "せいたいけい",
+  "romaji": "seitaikei",
+  "meaning_id": "ekosistem",
+  "meaning_en": "ecosystem",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": false,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["alam-lingkungan", "ilmu-pengetahuan"],
+  "register": "formal",
+  "lawan_bicara": ["umum"],
+  "nuance": "Istilah ilmiah/akademis untuk ekosistem — jaringan makhluk hidup dan lingkungan fisiknya. Tidak punya kata lain yang sepadan; 生態系 adalah satu-satunya istilah untuk konsep ini dalam bahasa Jepang. Sering muncul dalam konteks berita lingkungan dan pelajaran IPA.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "海洋の<b>生態系</b>が汚染によって壊れつつある。", "id": "Ekosistem laut sedang mengalami kerusakan akibat polusi.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]},
+    {"jp": "外来種が<b>生態系</b>に影響を与えることがある。", "id": "Spesies invasif dapat memengaruhi ekosistem.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00578"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00559",
+  "word": "気候",
+  "reading": "きこう",
+  "romaji": "kikou",
+  "meaning_id": "iklim",
+  "meaning_en": "climate",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["alam-lingkungan", "ilmu-pengetahuan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Berbeda dari 天気 (tenki = cuaca harian yang berubah-ubah) — 気候 merujuk pada pola cuaca jangka panjang di suatu wilayah (iklim). 熱帯気候 = iklim tropis, 温帯気候 = iklim sedang. Pakai 気候 saat membahas karakteristik cuaca suatu daerah secara umum.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "日本は四季がはっきりした<b>気候</b>だ。", "id": "Jepang memiliki iklim dengan empat musim yang jelas.", "level": "n3", "tags": ["alam-lingkungan", "budaya"]},
+    {"jp": "<b>気候</b>変動は農業に大きな影響を与えている。", "id": "Perubahan iklim memberikan dampak besar pada pertanian.", "level": "n3", "tags": ["alam-lingkungan", "politik-masyarakat"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00560", "vg-n3-00575"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00560",
+  "word": "気温",
+  "reading": "きおん",
+  "romaji": "kion",
+  "meaning_id": "suhu udara, temperatur udara",
+  "meaning_en": "air temperature",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["alam-lingkungan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Khusus merujuk pada suhu udara di luar ruangan. Berbeda dari 温度 (ondo = suhu secara umum, termasuk suhu air, suhu badan, suhu ruangan) dan 体温 (taion = suhu tubuh). Selalu dipakai dalam laporan cuaca dan meteorologi.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "今日の<b>気温</b>は35度を超えた。", "id": "Suhu udara hari ini melampaui 35 derajat.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]},
+    {"jp": "夜になると<b>気温</b>が急に下がる。", "id": "Saat malam, suhu udara turun drastis.", "level": "n3", "tags": ["alam-lingkungan", "waktu"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00559", "vg-n3-00561"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00561",
+  "word": "湿度",
+  "reading": "しつど",
+  "romaji": "shitsudo",
+  "meaning_id": "kelembaban udara",
+  "meaning_en": "humidity",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["alam-lingkungan", "ilmu-pengetahuan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Kadar uap air di udara, dinyatakan dalam persen (%). 湿度が高い = kelembaban tinggi (lembab/pengap), 湿度が低い = kelembaban rendah (kering). Sering muncul bersama 気温 dalam ramalan cuaca. Musim panas Jepang terkenal dengan 気温も湿度も高い (panas dan lembab sekaligus).",
+  "conj_type": null,
+  "examples": [
+    {"jp": "梅雨の時期は<b>湿度</b>が高くて蒸し暑い。", "id": "Saat musim hujan, kelembaban tinggi dan udaranya pengap.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]},
+    {"jp": "<b>湿度</b>が低いと肌が乾燥しやすい。", "id": "Ketika kelembaban rendah, kulit mudah kering.", "level": "n3", "tags": ["kesehatan", "alam-lingkungan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00560"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00562",
+  "word": "台風",
+  "reading": "たいふう",
+  "romaji": "taifuu",
+  "meaning_id": "topan, badai siklon tropis",
+  "meaning_en": "typhoon",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["alam-lingkungan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Siklon tropis yang terbentuk di Samudra Pasifik Barat — setara dengan 'hurikan' (Atlantik) atau 'siklon' (Samudra Hindia). Jepang terdampak 台風 secara rutin setiap musim panas-gugur. Berbeda dari 嵐 (arashi = badai/angin kencang secara umum). Nomor台風 (misalnya 台風21号) dipakai untuk mengidentifikasi topan.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "<b>台風</b>が近づいているので、外出を控えてください。", "id": "Karena topan semakin mendekat, harap hindari bepergian keluar.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]},
+    {"jp": "<b>台風</b>の影響で電車が止まった。", "id": "Akibat topan, kereta berhenti beroperasi.", "level": "n3", "tags": ["alam-lingkungan", "perjalanan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00563", "vg-n3-00564"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00563",
+  "word": "地震",
+  "reading": "じしん",
+  "romaji": "jishin",
+  "meaning_id": "gempa bumi",
+  "meaning_en": "earthquake",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["alam-lingkungan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Jepang adalah salah satu negara paling aktif secara seismik di dunia, sehingga 地震 adalah kosakata yang sangat penting dalam kehidupan sehari-hari. Skala yang umum dipakai di Jepang adalah 震度 (shindo = intensitas) dan マグニチュード (magnitude). 大地震 (ōjishin) = gempa besar, 余震 (yoshin) = gempa susulan.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "昨夜、震度4の<b>地震</b>があった。", "id": "Semalam terjadi gempa bumi dengan intensitas 4.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]},
+    {"jp": "<b>地震</b>が起きたら、まず机の下に隠れてください。", "id": "Jika terjadi gempa, pertama-tama berlindunglah di bawah meja.", "level": "n3", "tags": ["alam-lingkungan", "hukum-aturan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00562", "vg-n3-00565"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00564",
+  "word": "洪水",
+  "reading": "こうずい",
+  "romaji": "kouzui",
+  "meaning_id": "banjir, banjir bandang",
+  "meaning_en": "flood",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["alam-lingkungan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Banjir skala besar akibat hujan lebat atau meluapnya sungai. Lebih serius dan berskala besar dari 浸水 (shinsui = terendam air, banjir genangan). 洪水 sering dipakai dalam berita bencana dan peringatan resmi. Juga dipakai secara kiasan: 情報の洪水 (banjir informasi = information overload).",
+  "conj_type": null,
+  "examples": [
+    {"jp": "大雨の影響で川が氾濫し、<b>洪水</b>が発生した。", "id": "Akibat hujan deras, sungai meluap dan terjadi banjir.", "level": "n3", "tags": ["alam-lingkungan", "politik-masyarakat"]},
+    {"jp": "<b>洪水</b>で多くの家が被害を受けた。", "id": "Banyak rumah yang mengalami kerusakan akibat banjir.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00562", "vg-n3-00572"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00565",
+  "word": "火山",
+  "reading": "かざん",
+  "romaji": "kazan",
+  "meaning_id": "gunung berapi, gunung api",
+  "meaning_en": "volcano",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["alam-lingkungan", "ilmu-pengetahuan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Gunung berapi dalam arti geologi. Jepang memiliki sekitar 110 gunung berapi aktif, termasuk Gunung Fuji (富士山). 活火山 (kakkuzan) = gunung berapi aktif, 休火山 (kyūkazan) = tidak aktif sementara, 死火山 (shikkazan) = gunung berapi mati. Berbeda dari 山 (yama) yang hanya berarti gunung biasa.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "日本には多くの<b>火山</b>があり、温泉も豊富だ。", "id": "Jepang memiliki banyak gunung berapi dan juga kaya akan sumber air panas.", "level": "n3", "tags": ["alam-lingkungan", "budaya"]},
+    {"jp": "<b>火山</b>が噴火して、周辺に避難指示が出た。", "id": "Gunung berapi meletus dan perintah evakuasi dikeluarkan untuk daerah sekitarnya.", "level": "n3", "tags": ["alam-lingkungan", "hukum-aturan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00563"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00566",
+  "word": "砂漠",
+  "reading": "さばく",
+  "romaji": "sabaku",
+  "meaning_id": "gurun pasir, gurun",
+  "meaning_en": "desert",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["alam-lingkungan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Wilayah kering dengan curah hujan sangat rendah, tidak harus berupa pasir — ada juga gurun berbatu (岩砂漠). Berbeda dari 荒野 (kōya = tanah gersang/tandus, padang terbuka). 砂漠化 (sabakuka) = desertifikasi/penggurunan, istilah penting dalam diskusi lingkungan hidup.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "サハラ<b>砂漠</b>は世界最大の熱帯砂漠だ。", "id": "Gurun Sahara adalah gurun panas terbesar di dunia.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]},
+    {"jp": "<b>砂漠</b>では昼と夜の気温差が大きい。", "id": "Di gurun, perbedaan suhu antara siang dan malam sangat besar.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00568"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00567",
+  "word": "森林",
+  "reading": "しんりん",
+  "romaji": "shinrin",
+  "meaning_id": "hutan (formal, tertulis)",
+  "meaning_en": "forest, woodland (formal)",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["alam-lingkungan", "ilmu-pengetahuan"],
+  "register": "formal",
+  "lawan_bicara": ["umum"],
+  "nuance": "Istilah resmi/formal untuk hutan, dipakai dalam dokumen pemerintah, laporan ilmiah, dan berita. Dalam percakapan sehari-hari, orang lebih sering memakai 森 (mori = hutan lebat) atau 林 (hayashi = hutan/semak kecil). 森林浴 (shinrinyoku = mandi hutan, forest bathing) adalah praktik populer di Jepang. 森林破壊 = deforestasi.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "<b>森林</b>の減少が地球温暖化を加速させている。", "id": "Berkurangnya hutan mempercepat pemanasan global.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]},
+    {"jp": "日本の国土の約67%が<b>森林</b>に覆われている。", "id": "Sekitar 67% wilayah daratan Jepang ditutupi hutan.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00558"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00568",
+  "word": "草原",
+  "reading": "そうげん",
+  "romaji": "sougen",
+  "meaning_id": "padang rumput, stepa, savana",
+  "meaning_en": "grassland, steppe, savanna",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": false,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["alam-lingkungan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Ada dua bacaan: そうげん (sōgen) untuk padang rumput luas/stepa dalam konteks geografi dan ilmu pengetahuan; くさはら (kusahara) untuk nuansa puitis/kasual, biasanya berarti ladang berumput kecil. Berbeda dari 野原 (nohara = ladang terbuka, padang luas) yang lebih kasual. Gunakan そうげん untuk konteks Afrika, Mongolia, atau diskusi geografi.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "モンゴルの<b>草原</b>には馬が自由に駆け回っている。", "id": "Kuda berlari bebas di padang rumput Mongolia.", "level": "n3", "tags": ["alam-lingkungan", "perjalanan"]},
+    {"jp": "アフリカの<b>草原</b>ではライオンやゾウが見られる。", "id": "Di savana Afrika, kita bisa melihat singa dan gajah.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00566", "vg-n3-00569"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00569",
+  "word": "平野",
+  "reading": "へいや",
+  "romaji": "heiya",
+  "meaning_id": "dataran rendah, lembah, dataran",
+  "meaning_en": "plain, flatland",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["alam-lingkungan", "ruang-arah"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Wilayah datar yang luas, biasanya subur dan cocok untuk pertanian. 関東平野 (Kantō Heiya) adalah dataran terbesar di Jepang. Berbeda dari 盆地 (bonchi = cekungan/basin yang dikelilingi pegunungan) dan 台地 (daichi = dataran tinggi/plateau). 平野 selalu mengacu pada dataran yang relatif rendah dan datar.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "関東<b>平野</b>には東京をはじめ多くの都市がある。", "id": "Di Dataran Kantō terdapat banyak kota termasuk Tokyo.", "level": "n3", "tags": ["alam-lingkungan", "ruang-arah"]},
+    {"jp": "<b>平野</b>部では農業が盛んに行われている。", "id": "Pertanian dilakukan secara aktif di daerah dataran.", "level": "n3", "tags": ["alam-lingkungan", "pekerjaan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00570"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00570",
+  "word": "山脈",
+  "reading": "さんみゃく",
+  "romaji": "sanmyaku",
+  "meaning_id": "pegunungan, rangkaian gunung",
+  "meaning_en": "mountain range",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": false,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["alam-lingkungan", "ruang-arah"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Rangkaian gunung yang berkesinambungan, bukan satu gunung tunggal. 山 (yama) = satu gunung; 山脈 = rangkaian gunung. Jepang memiliki 飛騨山脈 (Alpen Jepang Utara), 木曽山脈, dan 赤石山脈 — bersama disebut 日本アルプス. Sering dipakai dalam pelajaran geografi.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "日本アルプスは三つの<b>山脈</b>から成っている。", "id": "Alpen Jepang terdiri dari tiga rangkaian pegunungan.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]},
+    {"jp": "ヒマラヤ<b>山脈</b>には世界最高峰のエベレストがある。", "id": "Di Pegunungan Himalaya terdapat Gunung Everest, puncak tertinggi di dunia.", "level": "n3", "tags": ["alam-lingkungan", "perjalanan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00569"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00571",
+  "word": "海岸",
+  "reading": "かいがん",
+  "romaji": "kaigan",
+  "meaning_id": "pantai, pesisir",
+  "meaning_en": "coast, seashore",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["alam-lingkungan", "perjalanan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Pesisir pantai secara umum — area perbatasan antara daratan dan laut. Berbeda dari 浜 (hama = pantai berpasir, pantai untuk berenang, nuansa lebih santai) dan 砂浜 (sunahama = pantai berpasir). 海岸 lebih netral dan geografis. 海岸線 (kaigansen) = garis pantai.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "この<b>海岸</b>は夕日がとてもきれいだ。", "id": "Pantai ini sangat indah saat matahari terbenam.", "level": "n3", "tags": ["alam-lingkungan", "perjalanan"]},
+    {"jp": "<b>海岸</b>のゴミ拾い活動に参加した。", "id": "Aku ikut kegiatan memungut sampah di pantai.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00572"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00572",
+  "word": "河川",
+  "reading": "かせん",
+  "romaji": "kasen",
+  "meaning_id": "sungai (formal, tertulis)",
+  "meaning_en": "rivers and streams (formal)",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": false,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["alam-lingkungan", "hukum-aturan"],
+  "register": "formal",
+  "lawan_bicara": ["umum"],
+  "nuance": "Istilah formal untuk sungai, dipakai dalam undang-undang (河川法 = Undang-Undang Sungai), laporan resmi, dan dokumen pemerintah. Dalam percakapan sehari-hari, cukup pakai 川 (kawa). 河川 mencakup berbagai jenis aliran air (sungai besar maupun kecil). 河川敷 (kasenshiki) = bantaran sungai.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "<b>河川</b>の汚染を防ぐための法律が制定された。", "id": "Undang-undang untuk mencegah pencemaran sungai telah diberlakukan.", "level": "n3", "tags": ["alam-lingkungan", "hukum-aturan"]},
+    {"jp": "<b>河川</b>の氾濫により、住民が避難した。", "id": "Warga mengungsi akibat sungai meluap.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00564"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00574",
+  "word": "排気ガス",
+  "reading": "はいきガス",
+  "romaji": "haiki gasu",
+  "meaning_id": "emisi gas buang, asap kendaraan, gas knalpot",
+  "meaning_en": "exhaust fumes, exhaust gas",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["alam-lingkungan", "teknologi"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Gas berbahaya yang dikeluarkan dari kendaraan bermotor atau mesin. 排気 = gas buang, ガス = gas (dari Belanda: gas). Berbeda dari 煙 (kemuri = asap) yang lebih umum. 排気ガス規制 = regulasi emisi. Topik ini sangat relevan dalam diskusi lingkungan dan kendaraan listrik (電気自動車) di Jepang.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "都市部では車の<b>排気ガス</b>による大気汚染が問題だ。", "id": "Di perkotaan, polusi udara akibat gas buang kendaraan menjadi masalah.", "level": "n3", "tags": ["alam-lingkungan", "kehidupan-sehari"]},
+    {"jp": "電気自動車は<b>排気ガス</b>を出さないので環境に優しい。", "id": "Kendaraan listrik tidak menghasilkan gas buang sehingga ramah lingkungan.", "level": "n3", "tags": ["teknologi", "alam-lingkungan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00573", "vg-n3-00575"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00575",
+  "word": "温暖化",
+  "reading": "おんだんか",
+  "romaji": "ondanka",
+  "meaning_id": "pemanasan global",
+  "meaning_en": "global warming",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["alam-lingkungan", "politik-masyarakat"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Hampir selalu muncul dalam frasa 地球温暖化 (chikyū ondanka = pemanasan global). 温暖化 sendiri berarti 'penghangatan'. Istilah yang lebih luas adalah 気候変動 (kikou hendou = perubahan iklim) yang mencakup lebih dari sekadar kenaikan suhu. Dalam berita Jepang, kedua istilah ini sering dipakai bersamaan.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "地球<b>温暖化</b>が進むと、海面が上昇する可能性がある。", "id": "Jika pemanasan global terus berlanjut, permukaan laut berpotensi naik.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]},
+    {"jp": "<b>温暖化</b>対策として、再生可能エネルギーの普及が進んでいる。", "id": "Sebagai langkah mengatasi pemanasan global, penggunaan energi terbarukan semakin meluas.", "level": "n3", "tags": ["alam-lingkungan", "politik-masyarakat"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00559", "vg-n3-00576", "vg-n3-00577"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00576",
+  "word": "省エネ",
+  "reading": "しょうエネ",
+  "romaji": "shou ene",
+  "meaning_id": "hemat energi, efisiensi energi",
+  "meaning_en": "energy saving, energy efficiency",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 1,
+  "domain": ["alam-lingkungan", "kehidupan-sehari"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Singkatan dari 省エネルギー (shō enerugī). Sangat umum dalam percakapan sehari-hari dan iklan produk elektronik di Jepang. 省エネ家電 = peralatan rumah tangga hemat energi. Berbeda dari 節電 (setsuden = penghematan listrik, biasanya dalam konteks krisis/pemadaman). 省エネ lebih luas (hemat energi secara umum), 節電 lebih spesifik (hemat listrik).",
+  "conj_type": null,
+  "examples": [
+    {"jp": "新しい冷蔵庫は<b>省エネ</b>で電気代が安くなった。", "id": "Kulkas baru yang hemat energi membuat tagihan listrik jadi lebih murah.", "level": "n3", "tags": ["kehidupan-sehari", "ekonomi-keuangan"]},
+    {"jp": "<b>省エネ</b>のために、使わない部屋の電気は消しましょう。", "id": "Demi hemat energi, matikan lampu di ruangan yang tidak dipakai.", "level": "n3", "tags": ["kehidupan-sehari", "alam-lingkungan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00577", "vg-n3-00575"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00578",
+  "word": "生物",
+  "reading": "せいぶつ",
+  "romaji": "seibutsu",
+  "meaning_id": "organisme, makhluk hidup",
+  "meaning_en": "living thing, organism",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["ilmu-pengetahuan", "alam-lingkungan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Ada dua bacaan: せいぶつ (seibutsu) untuk istilah ilmiah/biologi (organisme); いきもの (ikimono) untuk percakapan sehari-hari yang lebih kasual (makhluk hidup, binatang). Pakai せいぶつ dalam konteks pelajaran sains, diskusi lingkungan, atau tulisan formal. 生物学 (seibutsugaku) = biologi.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "海には様々な<b>生物</b>が生息している。", "id": "Berbagai macam organisme hidup di lautan.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]},
+    {"jp": "<b>生物</b>の多様性を守ることが重要だ。", "id": "Menjaga keanekaragaman hayati adalah hal yang penting.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00579", "vg-n3-00580", "vg-n3-00581"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00579",
+  "word": "植物",
+  "reading": "しょくぶつ",
+  "romaji": "shokubutsu",
+  "meaning_id": "tumbuhan, tanaman",
+  "meaning_en": "plant, vegetation",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["alam-lingkungan", "ilmu-pengetahuan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Istilah ilmiah dan sehari-hari untuk semua jenis tumbuhan. Berbeda dari 草 (kusa = rumput/tanaman kecil) dan 木 (ki = pohon) yang lebih spesifik. 植物園 (shokubutsuen) = kebun botani. Pasangan alaminya adalah 動物 (dōbutsu = hewan). 植物性 (shokubutsusei) = nabati/berbasis tumbuhan.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "<b>植物</b>は光合成によって酸素を作り出す。", "id": "Tumbuhan menghasilkan oksigen melalui fotosintesis.", "level": "n3", "tags": ["ilmu-pengetahuan", "alam-lingkungan"]},
+    {"jp": "熱帯雨林には多様な<b>植物</b>が生えている。", "id": "Berbagai jenis tumbuhan tumbuh di hutan hujan tropis.", "level": "n3", "tags": ["alam-lingkungan", "ilmu-pengetahuan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00578", "vg-n3-00580"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00580",
+  "word": "動物",
+  "reading": "どうぶつ",
+  "romaji": "doubutsu",
+  "meaning_id": "hewan, binatang",
+  "meaning_en": "animal",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 1,
+  "domain": ["alam-lingkungan", "ilmu-pengetahuan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Kata yang sangat umum untuk semua jenis hewan. 動物園 (dōbutsuen) = kebun binatang. Secara teknis, manusia juga termasuk 動物, namun dalam percakapan sehari-hari 動物 biasanya merujuk pada hewan bukan manusia. Berbeda dari 獣 (kemono = binatang buas/liar, nuansa negatif) dan 生き物/いきもの (ikimono = makhluk hidup, mencakup hewan dan tumbuhan).",
+  "conj_type": null,
+  "examples": [
+    {"jp": "子どもが<b>動物</b>園でライオンを見て喜んだ。", "id": "Anak itu senang melihat singa di kebun binatang.", "level": "n3", "tags": ["alam-lingkungan", "keluarga"]},
+    {"jp": "野生<b>動物</b>の保護が急務となっている。", "id": "Perlindungan hewan liar menjadi hal yang mendesak.", "level": "n3", "tags": ["alam-lingkungan", "politik-masyarakat"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00578", "vg-n3-00579"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00581",
+  "word": "微生物",
+  "reading": "びせいぶつ",
+  "romaji": "biseibutsu",
+  "meaning_id": "mikroorganisme, mikroba",
+  "meaning_en": "microorganism, microbe",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": false,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["ilmu-pengetahuan", "kesehatan"],
+  "register": "formal",
+  "lawan_bicara": ["umum"],
+  "nuance": "Organisme hidup yang tidak bisa dilihat dengan mata telanjang: bakteri (細菌), virus (ウイルス), jamur (菌類), dll. 微 = kecil/mikro, 生物 = makhluk hidup. Berbeda dari 細菌 (saikin = bakteri, lebih spesifik) dan ウイルス (uirusu = virus, kata serapan). 微生物 adalah istilah payung yang mencakup semuanya.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "土の中には無数の<b>微生物</b>が存在する。", "id": "Di dalam tanah terdapat tak terhitung banyaknya mikroorganisme.", "level": "n3", "tags": ["ilmu-pengetahuan", "alam-lingkungan"]},
+    {"jp": "<b>微生物</b>の中には人間に役立つものも多い。", "id": "Di antara mikroorganisme, banyak yang bermanfaat bagi manusia.", "level": "n3", "tags": ["ilmu-pengetahuan", "kesehatan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00578", "vg-n3-00583"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00582",
+  "word": "遺伝子",
+  "reading": "いでんし",
+  "romaji": "idenshi",
+  "meaning_id": "gen, materi genetik",
+  "meaning_en": "gene",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": false,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["ilmu-pengetahuan"],
+  "register": "formal",
+  "lawan_bicara": ["umum"],
+  "nuance": "Unit dasar pewarisan sifat yang tersimpan dalam DNA. 遺伝 (iden) = pewarisan genetik/keturunan, 子 (shi) = partikel/elemen kecil. Berbeda dari DNA (ディーエヌエー, dipakai langsung sebagai kata serapan) yang merujuk pada molekulnya. 遺伝子組み換え (idenshi kumikae) = rekayasa genetika. Topik ini sering muncul dalam berita sains dan diskusi etika.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "<b>遺伝子</b>の研究により、多くの病気の原因が解明された。", "id": "Berkat penelitian gen, penyebab banyak penyakit berhasil diungkap.", "level": "n3", "tags": ["ilmu-pengetahuan", "kesehatan"]},
+    {"jp": "<b>遺伝子</b>組み換え食品には賛否両論がある。", "id": "Ada pro dan kontra mengenai makanan hasil rekayasa genetika.", "level": "n3", "tags": ["ilmu-pengetahuan", "makanan-minuman"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00583"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00583",
+  "word": "細胞",
+  "reading": "さいぼう",
+  "romaji": "saibou",
+  "meaning_id": "sel (biologi), sel tubuh",
+  "meaning_en": "cell (biology)",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": false,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["ilmu-pengetahuan", "kesehatan"],
+  "register": "formal",
+  "lawan_bicara": ["umum"],
+  "nuance": "Unit dasar kehidupan dalam biologi. 細 = halus/kecil, 胞 = kantong/rongga. Berbeda dari 細菌 (saikin = bakteri) meski berbagi kanji 細. 細胞分裂 (saibou bunretsu) = pembelahan sel, 幹細胞 (kan saibō) = sel induk/stem cell. Dalam berita medis Jepang, istilah ini sering muncul terkait kanker (がん細胞) dan penelitian medis.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "人間の体は約37兆個の<b>細胞</b>でできている。", "id": "Tubuh manusia tersusun dari sekitar 37 triliun sel.", "level": "n3", "tags": ["ilmu-pengetahuan", "kesehatan"]},
+    {"jp": "<b>細胞</b>の中にはDNAが含まれている。", "id": "Di dalam sel terkandung DNA.", "level": "n3", "tags": ["ilmu-pengetahuan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00582", "vg-n3-00581"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00584",
+  "word": "化学",
+  "reading": "かがく",
+  "romaji": "kagaku",
+  "meaning_id": "kimia, ilmu kimia",
+  "meaning_en": "chemistry",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["ilmu-pengetahuan", "pendidikan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "⚠️ PERHATIAN HOMOFON: 化学 (かがく, kagaku = kimia) dan 科学 (かがく, kagaku = sains/ilmu pengetahuan) diucapkan persis sama! Dalam tulisan mudah dibedakan lewat kanji, tapi dalam percakapan lisan perlu konteks. 化学式 (kagakushiki) = rumus kimia, 化学反応 (kagaku hannō) = reaksi kimia. Pasangan alaminya adalah 物理 (butsuri = fisika).",
+  "conj_type": null,
+  "examples": [
+    {"jp": "高校では<b>化学</b>が得意だった。", "id": "Waktu SMA, aku pintar dalam pelajaran kimia.", "level": "n3", "tags": ["pendidikan", "ilmu-pengetahuan"]},
+    {"jp": "<b>化学</b>の実験で新しい物質が発見された。", "id": "Zat baru ditemukan dalam eksperimen kimia.", "level": "n3", "tags": ["ilmu-pengetahuan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00585"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00585",
+  "word": "物理",
+  "reading": "ぶつり",
+  "romaji": "butsuri",
+  "meaning_id": "fisika, ilmu fisika",
+  "meaning_en": "physics",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["ilmu-pengetahuan", "pendidikan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Bentuk pendek dari 物理学 (butsurigaku = fisika sebagai disiplin ilmu penuh). 物理 dipakai dalam konteks sekolah dan percakapan sehari-hari: 物理の授業 (pelajaran fisika), 物理が苦手 (tidak pandai fisika). 物理的 (butsuri-teki) = secara fisik/fisik (berbeda dari 精神的 = secara mental). Berbeda dari 化学 (kimia) yang mengkaji komposisi zat.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "<b>物理</b>の授業でニュートンの法則を習った。", "id": "Di pelajaran fisika, aku mempelajari hukum Newton.", "level": "n3", "tags": ["pendidikan", "ilmu-pengetahuan"]},
+    {"jp": "<b>物理</b>的に不可能なことを要求しないでください。", "id": "Tolong jangan meminta hal yang secara fisik tidak mungkin.", "level": "n3", "tags": ["kehidupan-sehari", "pekerjaan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00584"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00616",
+  "word": "体調",
+  "reading": "たいちょう",
+  "romaji": "taichou",
+  "meaning_id": "kondisi fisik/kesehatan saat ini",
+  "meaning_en": "physical condition, state of health",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["kesehatan", "kehidupan-sehari"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Mengacu pada kondisi tubuh saat ini, bisa baik (体調がいい) maupun buruk (体調が悪い) — berbeda dari 健康 yang menggambarkan keadaan sehat secara ideal/jangka panjang. 体調 bersifat sementara dan fluktuatif, sering dipakai untuk menjelaskan absen atau performa yang menurun.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "最近、<b>体調</b>が悪くて仕事を休んでいます。", "id": "Belakangan ini kondisi fisikku buruk sehingga aku istirahat dari kerja.", "level": "n3", "tags": ["kesehatan", "pekerjaan"]},
+    {"jp": "試合の前は特に<b>体調</b>管理に気をつけています。", "id": "Terutama sebelum pertandingan, aku sangat memperhatikan kondisi fisikku.", "level": "n3", "tags": ["kesehatan", "olahraga"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00617",
+  "word": "症状",
+  "reading": "しょうじょう",
+  "romaji": "shoujou",
+  "meaning_id": "gejala (penyakit)",
+  "meaning_en": "symptom, sign (of illness)",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["kesehatan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Merujuk pada tanda-tanda klinis yang menunjukkan adanya suatu penyakit — lebih teknis dan medis dari 具合 (yang lebih kasual: 具合が悪い = tidak enak badan). 症状 dipakai saat mendeskripsikan penyakit secara spesifik ke dokter atau dalam laporan medis.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "発熱と咳が主な<b>症状</b>です。", "id": "Demam dan batuk adalah gejala utamanya.", "level": "n3", "tags": ["kesehatan"]},
+    {"jp": "<b>症状</b>が出てから三日以内に受診してください。", "id": "Silakan periksakan diri dalam tiga hari setelah gejala muncul.", "level": "n3", "tags": ["kesehatan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00626",
+  "word": "アレルギー",
+  "reading": "アレルギー",
+  "romaji": "arerugi",
+  "meaning_id": "alergi",
+  "meaning_en": "allergy",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["kesehatan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Reaksi berlebihan sistem imun terhadap zat asing tertentu (alergen) — berbeda dari 不耐性 (intoleransi, yaitu ketidakmampuan mencerna zat tertentu tanpa melibatkan respons imun). Penting: 食物アレルギー (alergi makanan) tidak bisa diobati dengan mengabaikannya, sedangkan 不耐性 kadang bisa ditoleransi dalam jumlah kecil.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "私は花粉<b>アレルギー</b>があって、春はつらい。", "id": "Aku punya alergi serbuk sari, jadi musim semi itu menyiksa.", "level": "n3", "tags": ["kesehatan", "alam-lingkungan"]},
+    {"jp": "食物<b>アレルギー</b>がある場合は、必ず事前に知らせてください。", "id": "Jika punya alergi makanan, mohon beritahu kami terlebih dahulu.", "level": "n3", "tags": ["kesehatan", "makanan-minuman"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00632",
+  "word": "ストレス",
+  "reading": "ストレス",
+  "romaji": "sutoresu",
+  "meaning_id": "stres, tekanan mental/fisik",
+  "meaning_en": "stress",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 1,
+  "domain": ["kesehatan", "emosi-negatif"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Tekanan mental atau fisik akibat beban eksternal yang berlebihan — berbeda dari 不安 (kecemasan yang lebih difus tentang hal tak pasti) dan プレッシャー (tekanan spesifik dari ekspektasi orang lain). ストレス lebih luas dan bersumber dari mana saja; pengelolaan stres disebut ストレス管理 atau ストレス解消.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "仕事の<b>ストレス</b>で夜眠れない日が続いている。", "id": "Terus ada hari-hari di mana aku tidak bisa tidur malam karena stres kerja.", "level": "n3", "tags": ["kesehatan", "pekerjaan"]},
+    {"jp": "<b>ストレス</b>を解消するために、週末は山登りをしている。", "id": "Untuk menghilangkan stres, aku mendaki gunung setiap akhir pekan.", "level": "n3", "tags": ["kesehatan", "olahraga"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00634",
+  "word": "うつ",
+  "reading": "うつ",
+  "romaji": "utsu",
+  "meaning_id": "depresi (klinis maupun perasaan murung sehari-hari)",
+  "meaning_en": "depression",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["kesehatan", "emosi-negatif"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Bisa merujuk pada depresi klinis (うつ病) maupun sekadar perasaan murung/down dalam percakapan sehari-hari. 鬱 (kanji lengkap) lebih formal dan klinis; うつ (kana) lebih umum dipakai. Berbeda dari 落ち込む (merasa sedih/terpuruk secara situasional) — うつ menyiratkan kondisi yang lebih menetap dan mendalam.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "彼は<b>うつ</b>と診断されて、今カウンセリングを受けている。", "id": "Dia didiagnosis depresi dan sekarang menjalani konseling.", "level": "n3", "tags": ["kesehatan"]},
+    {"jp": "長期の残業が続いて、<b>うつ</b>っぽい気分になってきた。", "id": "Setelah lembur panjang terus-menerus, mulai muncul perasaan seperti depresi.", "level": "n3", "tags": ["kesehatan", "pekerjaan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00635",
+  "word": "燃え尽き症候群",
+  "reading": "もえつきしょうこうぐん",
+  "romaji": "moetsuki shoukougun",
+  "meaning_id": "burnout, sindrom kelelahan total akibat tekanan berlebihan",
+  "meaning_en": "burnout syndrome",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": false,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["kesehatan", "pekerjaan", "emosi-negatif"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Kondisi kelelahan fisik, mental, dan emosional akibat tekanan atau tanggung jawab berlebihan yang berlangsung lama — berbeda dari ストレス (yang adalah proses/penyebab) dan うつ (yang lebih berfokus pada gangguan suasana hati). 燃え尽き症候群 menekankan kondisi 'terbakar habis': tidak ada motivasi atau energi tersisa sama sekali.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "長年頑張りすぎた結果、<b>燃え尽き症候群</b>になってしまった。", "id": "Akibat terlalu keras bekerja bertahun-tahun, aku akhirnya terkena burnout.", "level": "n3", "tags": ["kesehatan", "pekerjaan"]},
+    {"jp": "医療従事者に<b>燃え尽き症候群</b>が増えていることが問題になっている。", "id": "Meningkatnya burnout di kalangan tenaga medis menjadi masalah yang serius.", "level": "n3", "tags": ["kesehatan", "pekerjaan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00636",
+  "word": "睡眠",
+  "reading": "すいみん",
+  "romaji": "suimin",
+  "meaning_id": "tidur (sebagai proses fisiologis atau kebutuhan)",
+  "meaning_en": "sleep",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["kesehatan", "kehidupan-sehari"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Merujuk pada tidur sebagai proses fisiologis atau kebutuhan dasar — lebih formal dan ilmiah dari 眠り (tidur sebagai pengalaman subjektif) dan 寝る (tindakan berbaring/tidur). 睡眠 sering muncul dalam konteks medis/kesehatan: 睡眠不足 (kurang tidur), 睡眠の質 (kualitas tidur), 睡眠障害 (gangguan tidur).",
+  "conj_type": null,
+  "examples": [
+    {"jp": "質の高い<b>睡眠</b>をとることが健康の基本だ。", "id": "Mendapatkan tidur berkualitas tinggi adalah dasar dari kesehatan.", "level": "n3", "tags": ["kesehatan"]},
+    {"jp": "<b>睡眠</b>不足が続くと、集中力が低下する。", "id": "Jika terus kekurangan tidur, kemampuan berkonsentrasi akan menurun.", "level": "n3", "tags": ["kesehatan", "pendidikan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00637",
+  "word": "不眠",
+  "reading": "ふみん",
+  "romaji": "fumin",
+  "meaning_id": "insomnia, tidak bisa tidur",
+  "meaning_en": "insomnia, sleeplessness",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["kesehatan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Ketidakmampuan tidur dengan cukup atau berkualitas, baik sebagai gejala (不眠症状) maupun kondisi klinis (不眠症) — berbeda dari 寝不足 (kurang tidur karena pilihan atau situasi eksternal, bukan karena tidak bisa tidur). 不眠 menekankan ketidakmampuan, bukan sekadar kekurangan jam tidur.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "ストレスで<b>不眠</b>が続き、医師に相談した。", "id": "Insomnia terus berlanjut karena stres, aku akhirnya berkonsultasi dengan dokter.", "level": "n3", "tags": ["kesehatan", "emosi-negatif"]},
+    {"jp": "<b>不眠</b>の改善には、薬だけでなく生活習慣の見直しも大切だ。", "id": "Untuk memperbaiki insomnia, perbaikan gaya hidup juga penting, bukan hanya obat.", "level": "n3", "tags": ["kesehatan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00638",
+  "word": "食欲",
+  "reading": "しょくよく",
+  "romaji": "shokuyoku",
+  "meaning_id": "nafsu makan, selera makan",
+  "meaning_en": "appetite",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["kesehatan", "makanan-minuman"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Keinginan atau selera psikologis/fisiologis terhadap makanan — berbeda dari 空腹 (rasa lapar sebagai sinyal fisiologis murni) dan 食事 (makan sebagai kegiatan). Dalam konteks kesehatan, 食欲がない (tidak nafsu makan) sering dijadikan indikator sakit atau gangguan psikologis.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "風邪をひいてから<b>食欲</b>がまったくない。", "id": "Sejak kena flu, sama sekali tidak ada nafsu makan.", "level": "n3", "tags": ["kesehatan"]},
+    {"jp": "秋は<b>食欲</b>の季節とも言われ、自然と食べたくなる。", "id": "Musim gugur juga disebut musim nafsu makan karena secara alami ingin makan lebih banyak.", "level": "n3", "tags": ["makanan-minuman", "budaya"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00639",
+  "word": "体重",
+  "reading": "たいじゅう",
+  "romaji": "taijuu",
+  "meaning_id": "berat badan",
+  "meaning_en": "body weight",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["kesehatan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Berat fisik tubuh yang dapat diukur dengan timbangan — berbeda dari 体型 (bentuk atau postur tubuh) dan 体格 (ukuran/kerangka tubuh secara keseluruhan). 体重 adalah angka konkret yang sering muncul dalam konteks diet, kesehatan, atau pemeriksaan medis.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "最近、<b>体重</b>が三キロ増えてしまった。", "id": "Belakangan ini berat badanku bertambah tiga kilogram.", "level": "n3", "tags": ["kesehatan", "kehidupan-sehari"]},
+    {"jp": "定期的な運動で<b>体重</b>を管理することが大切だ。", "id": "Penting untuk mengatur berat badan dengan olahraga yang rutin.", "level": "n3", "tags": ["kesehatan", "olahraga"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00640",
+  "word": "血圧",
+  "reading": "けつあつ",
+  "romaji": "ketsuatsu",
+  "meaning_id": "tekanan darah",
+  "meaning_en": "blood pressure",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["kesehatan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Tekanan yang diberikan darah pada dinding pembuluh darah saat dipompa oleh jantung — berbeda dari 脈拍 (denyut nadi/pulse). 血圧 diukur dengan 血圧計 (tensimeter). 高血圧 = hipertensi, 低血圧 = hipotensi. Sering muncul dalam konteks gaya hidup sehat dan penyakit tidak menular.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "毎朝、<b>血圧</b>を測る習慣をつけた。", "id": "Aku membiasakan diri mengukur tekanan darah setiap pagi.", "level": "n3", "tags": ["kesehatan", "kehidupan-sehari"]},
+    {"jp": "塩分を控えることで、<b>血圧</b>が下がる場合がある。", "id": "Dengan mengurangi asupan garam, tekanan darah bisa turun.", "level": "n3", "tags": ["kesehatan", "makanan-minuman"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00641",
+  "word": "免疫",
+  "reading": "めんえき",
+  "romaji": "men'eki",
+  "meaning_id": "imunitas, kekebalan tubuh",
+  "meaning_en": "immunity, immune system",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["kesehatan", "ilmu-pengetahuan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Kemampuan tubuh untuk melawan penyakit dan patogen — lebih luas dari 抗体 (antibodi, yang merupakan komponen spesifik dari sistem imun). 免疫力 (daya imun) sering dipakai dalam konteks kesehatan sehari-hari, sedangkan 免疫系 lebih teknis/ilmiah.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "睡眠不足は<b>免疫</b>力を低下させる。", "id": "Kurang tidur dapat menurunkan daya imun.", "level": "n3", "tags": ["kesehatan"]},
+    {"jp": "ワクチンを打つことで、そのウイルスへの<b>免疫</b>ができる。", "id": "Dengan divaksinasi, terbentuk kekebalan terhadap virus tersebut.", "level": "n3", "tags": ["kesehatan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00643",
+  "word": "ウイルス",
+  "reading": "ウイルス",
+  "romaji": "uirusu",
+  "meaning_id": "virus, agen infeksi mikroskopis",
+  "meaning_en": "virus",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["kesehatan", "ilmu-pengetahuan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Agen infeksi berukuran sangat kecil yang hanya bisa berkembang biak di dalam sel hidup — berbeda dari 細菌 (bakteri, organisme bersel tunggal yang bisa hidup mandiri). Perbedaan penting dalam konteks pengobatan: infeksi ウイルス tidak diobati dengan antibiotik (antibiotik hanya efektif untuk infeksi 細菌).",
+  "conj_type": null,
+  "examples": [
+    {"jp": "この<b>ウイルス</b>は飛沫感染によって広がる。", "id": "Virus ini menyebar melalui penularan droplet.", "level": "n3", "tags": ["kesehatan"]},
+    {"jp": "<b>ウイルス</b>性の風邪には抗生物質は効かない。", "id": "Antibiotik tidak efektif untuk flu yang disebabkan oleh virus.", "level": "n3", "tags": ["kesehatan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00644",
+  "word": "細菌",
+  "reading": "さいきん",
+  "romaji": "saikin",
+  "meaning_id": "bakteri",
+  "meaning_en": "bacteria",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["kesehatan", "ilmu-pengetahuan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Mikroorganisme bersel tunggal yang dapat hidup dan berkembang biak secara mandiri — berbeda dari ウイルス (yang membutuhkan sel inang untuk berkembang biak). Infeksi 細菌 umumnya bisa diobati dengan antibiotik, berbeda dengan infeksi ウイルス. Tidak semua 細菌 berbahaya; ada yang menguntungkan (misalnya dalam fermentasi makanan atau flora usus).",
+  "conj_type": null,
+  "examples": [
+    {"jp": "食中毒の多くは<b>細菌</b>が原因だ。", "id": "Banyak kasus keracunan makanan disebabkan oleh bakteri.", "level": "n3", "tags": ["kesehatan", "makanan-minuman"]},
+    {"jp": "この薬は<b>細菌</b>の増殖を抑える効果がある。", "id": "Obat ini memiliki efek menghambat pertumbuhan bakteri.", "level": "n3", "tags": ["kesehatan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00645",
+  "word": "衛生",
+  "reading": "えいせい",
+  "romaji": "eisei",
+  "meaning_id": "kebersihan, higienitas (untuk mencegah penyakit)",
+  "meaning_en": "hygiene, sanitation",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["kesehatan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Standar dan praktik kebersihan yang bertujuan mencegah penyakit — lebih formal dan sistematis dari 清潔 (bersih secara fisik/estetis). 衛生 menekankan dimensi kesehatan dari kebersihan (衛生管理 = manajemen higiene, 食品衛生 = higiene pangan), sedangkan 清潔 lebih pada kondisi bebas kotoran yang terlihat.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "食品を扱う際には<b>衛生</b>管理が徹底的に行われている。", "id": "Dalam penanganan makanan, manajemen higiene dilakukan secara menyeluruh.", "level": "n3", "tags": ["kesehatan", "makanan-minuman"]},
+    {"jp": "手の<b>衛生</b>を保つことが感染予防の基本です。", "id": "Menjaga kebersihan tangan adalah dasar dari pencegahan infeksi.", "level": "n3", "tags": ["kesehatan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00661",
+  "word": "情報",
+  "reading": "じょうほう",
+  "romaji": "jouhou",
+  "meaning_id": "informasi (konten yang diterima, belum tentu sudah dipahami)",
+  "meaning_en": "information, data, news",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["bahasa-komunikasi", "media"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Konten informatif yang diterima dari luar — bisa benar atau salah, baru atau lama, relevan atau tidak. Berbeda dari 知識 (yang sudah dipahami dan disimpan dalam pikiran sendiri), データ (angka/fakta mentah), dan 事実 (sesuatu yang terbukti nyata). 情報 bersifat lebih situasional dan temporal: 最新情報 (informasi terkini).",
+  "conj_type": null,
+  "examples": [
+    {"jp": "インターネットで多くの<b>情報</b>が手に入るようになった。", "id": "Banyak informasi kini bisa didapatkan melalui internet.", "level": "n3", "tags": ["teknologi", "bahasa-komunikasi"]},
+    {"jp": "古い<b>情報</b>をもとに判断するのは危険だ。", "id": "Membuat keputusan berdasarkan informasi lama adalah berbahaya.", "level": "n3", "tags": ["pikiran-opini", "keputusan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00662",
+  "word": "知識",
+  "reading": "ちしき",
+  "romaji": "chishiki",
+  "meaning_id": "pengetahuan (informasi yang sudah dipahami dan tersimpan dalam diri)",
+  "meaning_en": "knowledge",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["bahasa-komunikasi", "pendidikan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Informasi yang sudah diproses, dipahami, dan menjadi milik seseorang secara permanen — berbeda dari 情報 (yang adalah konten yang diterima, belum tentu dipahami) dan データ (angka mentah yang belum diinterpretasi). 知識 bersifat personal dan kognitif: 知識を身につける (menguasai pengetahuan).",
+  "conj_type": null,
+  "examples": [
+    {"jp": "豊富な<b>知識</b>があっても、実践できなければ意味がない。", "id": "Sekalipun punya pengetahuan yang luas, tidak ada artinya jika tidak bisa dipraktikkan.", "level": "n3", "tags": ["pendidikan", "pikiran-opini"]},
+    {"jp": "外国に行く前に、その国の文化的な<b>知識</b>を身につけておくとよい。", "id": "Sebaiknya pelajari pengetahuan budaya negara itu sebelum pergi ke sana.", "level": "n3", "tags": ["perjalanan", "budaya"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00663",
+  "word": "データ",
+  "reading": "データ",
+  "romaji": "deeta",
+  "meaning_id": "data (angka/fakta mentah yang belum diinterpretasi)",
+  "meaning_en": "data",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["bahasa-komunikasi", "ilmu-pengetahuan", "teknologi"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Kumpulan angka atau fakta mentah yang belum dianalisis atau diinterpretasi — lebih teknis dan kuantitatif dari 情報 (informasi yang sudah dikemas) dan 事実 (fakta yang sudah diverifikasi secara kualitatif). データ menjadi bermakna setelah dianalisis: データを分析する (menganalisis data), データに基づく (berbasis data).",
+  "conj_type": null,
+  "examples": [
+    {"jp": "このグラフは過去十年間の気温変化を<b>データ</b>で示している。", "id": "Grafik ini menampilkan perubahan suhu selama sepuluh tahun terakhir dengan data.", "level": "n3", "tags": ["ilmu-pengetahuan", "alam-lingkungan"]},
+    {"jp": "調査の<b>データ</b>を分析した結果、新たな傾向が見えてきた。", "id": "Setelah menganalisis data survei, tren baru mulai terlihat.", "level": "n3", "tags": ["ilmu-pengetahuan", "bisnis"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00664",
+  "word": "事実",
+  "reading": "じじつ",
+  "romaji": "jijitsu",
+  "meaning_id": "fakta (sesuatu yang benar-benar terjadi/ada, bisa diverifikasi)",
+  "meaning_en": "fact, truth, reality",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["bahasa-komunikasi", "pikiran-opini"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Sesuatu yang benar-benar terjadi atau ada di dunia nyata dan bisa diverifikasi secara objektif — lebih spesifik dan terverifikasi dari 情報 (yang bisa benar/salah). Berbeda dari 真実 (kebenaran yang lebih dalam/esensial, kadang tersembunyi). 事実 bersifat objektif dan konkret; 真実 bisa lebih filosofis atau subjektif.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "感情ではなく<b>事実</b>に基づいて判断することが重要だ。", "id": "Penting untuk membuat keputusan berdasarkan fakta, bukan emosi.", "level": "n3", "tags": ["pikiran-opini", "keputusan"]},
+    {"jp": "その報告書に書かれていることは<b>事実</b>と異なっている。", "id": "Apa yang tertulis dalam laporan itu berbeda dari fakta yang sebenarnya.", "level": "n3", "tags": ["bisnis", "pikiran-opini"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00665",
+  "word": "真実",
+  "reading": "しんじつ",
+  "romaji": "shinjitsu",
+  "meaning_id": "kebenaran (yang sesungguhnya, sering tersembunyi atau mendalam)",
+  "meaning_en": "truth, reality",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["bahasa-komunikasi", "pikiran-opini"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Kebenaran yang sesungguhnya — sering kali tersembunyi, mendalam, atau esensial. Berbeda dari 事実 (fakta konkret yang bisa diverifikasi secara langsung). 真実 sering dipakai dalam konteks emosional, moral, atau narasi: 真実を隠す (menyembunyikan kebenaran), 真実が明らかになる (kebenaran terungkap). Ada nuansa bahwa 真実 perlu digali, sementara 事実 bisa langsung dikonfirmasi.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "彼は長い間、その<b>真実</b>を誰にも話さなかった。", "id": "Dia tidak menceritakan kebenaran itu kepada siapa pun selama waktu yang lama.", "level": "n3", "tags": ["pikiran-opini", "bahasa-komunikasi"]},
+    {"jp": "時間が経てば、<b>真実</b>は必ず明らかになる。", "id": "Seiring berjalannya waktu, kebenaran pasti akan terungkap.", "level": "n3", "tags": ["pikiran-opini"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00666",
+  "word": "うわさ",
+  "reading": "うわさ",
+  "romaji": "uwasa",
+  "meaning_id": "gosip, desas-desus, kabar yang belum terkonfirmasi",
+  "meaning_en": "rumor, gossip",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 1,
+  "domain": ["bahasa-komunikasi", "kehidupan-sehari"],
+  "register": "neutral",
+  "lawan_bicara": ["teman"],
+  "nuance": "Informasi yang beredar dari mulut ke mulut tanpa verifikasi — kontennya belum tentu benar, berbeda dari 誤情報 (yang informasinya salah) dan 誤解 (yang merupakan masalah persepsi dalam benak seseorang). うわさ lebih menekankan proses penyebaran informal dan sosial; bisa benar atau salah, tapi sifatnya tidak resmi.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "あの二人が付き合っているという<b>うわさ</b>が広まっている。", "id": "Gosip bahwa kedua orang itu berpacaran sedang menyebar.", "level": "n3", "tags": ["kehidupan-sehari", "bahasa-komunikasi"]},
+    {"jp": "<b>うわさ</b>を信じる前に、まず本人に確認すべきだ。", "id": "Sebelum mempercayai desas-desus, sebaiknya konfirmasi langsung ke orangnya.", "level": "n3", "tags": ["bahasa-komunikasi", "pikiran-opini"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00668",
+  "word": "誤情報",
+  "reading": "ごじょうほう",
+  "romaji": "gojouhou",
+  "meaning_id": "misinformasi (informasi yang salah secara faktual)",
+  "meaning_en": "misinformation, false information",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": false,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["bahasa-komunikasi", "media"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Informasi yang salah secara faktual — bisa disengaja (disinformasi) maupun tidak disengaja. Berbeda dari うわさ (yang lebih ke desas-desus yang belum terverifikasi) dan 誤解 (yang adalah masalah interpretasi di benak seseorang). 誤情報 menekankan bahwa konten faktualnya memang keliru, bukan sekadar belum dikonfirmasi.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "SNSで<b>誤情報</b>が拡散されるのは深刻な問題だ。", "id": "Penyebaran misinformasi di media sosial adalah masalah yang serius.", "level": "n3", "tags": ["media", "teknologi"]},
+    {"jp": "<b>誤情報</b>を見分けるためには、情報源を確認することが大切だ。", "id": "Untuk membedakan misinformasi, penting untuk memeriksa sumber informasi.", "level": "n3", "tags": ["bahasa-komunikasi", "media"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00671",
+  "word": "語彙",
+  "reading": "ごい",
+  "romaji": "goi",
+  "meaning_id": "kosakata, perbendaharaan kata",
+  "meaning_en": "vocabulary, lexicon",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["bahasa-komunikasi", "pendidikan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Keseluruhan kata yang dimiliki seseorang atau yang ada dalam suatu bahasa — berbeda dari 文法 (aturan struktur kalimat) dan 発音 (cara mengucapkan). 語彙力 (kemampuan kosakata) adalah ukuran seberapa banyak kata yang dikuasai. 語彙を増やす = memperluas kosakata; 語彙が豊かだ = kosakatanya kaya.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "本をたくさん読むことで<b>語彙</b>が豊かになる。", "id": "Dengan banyak membaca, kosakata menjadi semakin kaya.", "level": "n3", "tags": ["pendidikan", "bahasa-komunikasi"]},
+    {"jp": "JLPT N3には日常会話でよく使う<b>語彙</b>が多く含まれている。", "id": "JLPT N3 banyak mencakup kosakata yang sering digunakan dalam percakapan sehari-hari.", "level": "n3", "tags": ["pendidikan", "bahasa-komunikasi"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00672",
+  "word": "文法",
+  "reading": "ぶんぽう",
+  "romaji": "bunpou",
+  "meaning_id": "tata bahasa, grammar",
+  "meaning_en": "grammar",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["bahasa-komunikasi", "pendidikan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Aturan yang mengatur bagaimana kata-kata disusun menjadi kalimat yang benar secara struktural — berbeda dari 語彙 (kata-kata yang diketahui) dan 発音 (cara mengucapkan). Menguasai 文法 belum cukup untuk berbicara alami; diperlukan latihan dan paparan nyata untuk menggunakannya secara spontan.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "日本語の<b>文法</b>は最初は難しく感じるかもしれない。", "id": "Tata bahasa Jepang mungkin terasa sulit pada awalnya.", "level": "n3", "tags": ["bahasa-komunikasi", "pendidikan"]},
+    {"jp": "<b>文法</b>を理解していても、自然に使えるようになるには練習が必要だ。", "id": "Sekalipun memahami tata bahasa, latihan tetap diperlukan agar bisa menggunakannya secara alami.", "level": "n3", "tags": ["pendidikan", "bahasa-komunikasi"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00674",
+  "word": "アクセント",
+  "reading": "アクセント",
+  "romaji": "akusento",
+  "meaning_id": "aksen, tekanan nada (pitch accent dalam bahasa Jepang)",
+  "meaning_en": "accent, pitch accent",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["bahasa-komunikasi"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Pola tekanan atau nada pada suku kata dalam sebuah kata — dalam bahasa Jepang ini adalah pitch accent (nada tinggi-rendah), bukan stress accent seperti di bahasa Indonesia atau Inggris. Penting karena アクセント yang berbeda bisa mengubah makna kata: 橋 (jembatan) vs 箸 (sumpit) memiliki pola nada berbeda. Juga berbeda per wilayah (方言).",
+  "conj_type": null,
+  "examples": [
+    {"jp": "日本語では<b>アクセント</b>によって意味が変わる単語がある。", "id": "Dalam bahasa Jepang, ada kata yang maknanya berubah tergantung pada aksennya.", "level": "n3", "tags": ["bahasa-komunikasi"]},
+    {"jp": "地域によって<b>アクセント</b>のパターンが大きく異なる。", "id": "Pola aksen berbeda-beda secara signifikan tergantung wilayah.", "level": "n3", "tags": ["bahasa-komunikasi", "budaya"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00675",
+  "word": "方言",
+  "reading": "ほうげん",
+  "romaji": "hougen",
+  "meaning_id": "dialek, bahasa daerah",
+  "meaning_en": "dialect, regional language",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["bahasa-komunikasi", "budaya"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Variasi bahasa yang digunakan di wilayah geografis tertentu — berbeda dari 標準語 (bahasa standar Jepang berbasis Tokyo) dalam hal kosakata, pengucapan, dan tata bahasa. Berbeda dari アクセント (yang hanya mengacu pada pola nada). Di Jepang, 方言 sangat kaya: 関西弁, 東北弁, 九州弁, dll., masing-masing dengan karakteristik yang sangat berbeda.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "関西<b>方言</b>は東京の標準語とかなり違う。", "id": "Dialek Kansai cukup berbeda dari bahasa standar Tokyo.", "level": "n3", "tags": ["bahasa-komunikasi", "budaya"]},
+    {"jp": "祖父母は今でも地元の<b>方言</b>で話す。", "id": "Kakek-nenek masih berbicara dengan dialek daerah asal mereka hingga kini.", "level": "n3", "tags": ["bahasa-komunikasi", "keluarga"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00680",
+  "word": "宿題",
+  "reading": "しゅくだい",
+  "romaji": "shukudai",
+  "meaning_id": "pekerjaan rumah, tugas yang dikerjakan di rumah",
+  "meaning_en": "homework",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["pendidikan", "kehidupan-sehari"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Secara harfiah berarti 'tugas rumah' — dipakai khusus untuk tugas yang diberikan guru untuk dikerjakan di luar jam sekolah. Berbeda dari 課題 yang lebih luas maknanya (bisa mencakup proyek, tantangan, atau persoalan yang perlu diselesaikan) dan tidak harus dikerjakan di rumah.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "<b>宿題</b>を忘れて先生に怒られた。", "id": "Aku dimarahi guru karena lupa mengerjakan PR.", "level": "n3", "tags": ["pendidikan", "kehidupan-sehari"]},
+    {"jp": "今日の<b>宿題</b>は漢字を10個書くことだ。", "id": "PR hari ini adalah menulis 10 kanji.", "level": "n3", "tags": ["pendidikan", "bahasa-komunikasi"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00681",
+  "word": "課題",
+  "reading": "かだい",
+  "romaji": "kadai",
+  "meaning_id": "tugas, kewajiban yang harus diselesaikan, permasalahan yang perlu ditangani",
+  "meaning_en": "assignment, task, challenge, issue to be addressed",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["pendidikan", "pekerjaan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Lebih luas dari 宿題 — bisa berarti tugas akademik, proyek, atau bahkan permasalahan serius yang harus diatasi (misalnya 社会的課題 = masalah sosial). Dipakai di konteks sekolah, bisnis, dan kebijakan publik. 宿題 hanya merujuk pada pekerjaan rumah sekolah biasa.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "今学期のレポート<b>課題</b>はまだ終わっていない。", "id": "Tugas laporan semester ini belum selesai.", "level": "n3", "tags": ["pendidikan"]},
+    {"jp": "環境問題は現代社会の大きな<b>課題</b>だ。", "id": "Masalah lingkungan adalah tantangan besar masyarakat modern.", "level": "n3", "tags": ["pendidikan", "alam-lingkungan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00684",
+  "word": "成績",
+  "reading": "せいせき",
+  "romaji": "seiseki",
+  "meaning_id": "nilai, prestasi akademik, hasil belajar",
+  "meaning_en": "grades, academic results, performance",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["pendidikan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Merujuk pada hasil atau rekam jejak prestasi seseorang — umumnya dalam konteks akademik (rapor, IPK) tapi bisa juga dipakai untuk hasil kerja. Berbeda dari 点数 (skor spesifik satu ujian); 成績 adalah gambaran performa keseluruhan dalam suatu periode.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "今学期の<b>成績</b>が上がって、両親に喜ばれた。", "id": "Nilai semester ini naik dan orang tuaku senang.", "level": "n3", "tags": ["pendidikan", "keluarga"]},
+    {"jp": "<b>成績</b>が悪くて、奨学金をもらえなかった。", "id": "Nilainya buruk sehingga tidak mendapat beasiswa.", "level": "n3", "tags": ["pendidikan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00689",
+  "word": "奨学金",
+  "reading": "しょうがくきん",
+  "romaji": "shougakukin",
+  "meaning_id": "beasiswa, dana bantuan pendidikan",
+  "meaning_en": "scholarship, student financial aid",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["pendidikan", "ekonomi-keuangan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Di Jepang 奨学金 mencakup baik hibah (tidak perlu dikembalikan) maupun pinjaman berbunga rendah yang harus dilunasi setelah lulus — berbeda dari makna beasiswa di banyak negara lain yang biasanya hibah murni. Penting untuk memahami perbedaan 給付型 (hibah) dan 貸与型 (pinjaman).",
+  "conj_type": null,
+  "examples": [
+    {"jp": "<b>奨学金</b>を申請して、大学の学費を払った。", "id": "Aku mendaftar beasiswa untuk membayar biaya kuliah.", "level": "n3", "tags": ["pendidikan", "ekonomi-keuangan"]},
+    {"jp": "<b>奨学金</b>のおかげで留学することができた。", "id": "Berkat beasiswa, aku bisa pergi belajar ke luar negeri.", "level": "n3", "tags": ["pendidikan", "perjalanan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00690",
+  "word": "教材",
+  "reading": "きょうざい",
+  "romaji": "kyouzai",
+  "meaning_id": "bahan ajar, materi pembelajaran",
+  "meaning_en": "teaching materials, learning resources",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["pendidikan"],
+  "register": "formal",
+  "lawan_bicara": ["umum"],
+  "nuance": "Merujuk pada segala materi yang digunakan dalam proses belajar-mengajar — buku teks, video, lembar kerja, dll. Berbeda dari 参考書 yang khusus buku referensi yang dipelajari sendiri oleh siswa; 教材 lebih luas dan bisa berarti materi yang disiapkan guru untuk pembelajaran terstruktur.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "この授業では、オンライン<b>教材</b>を使っている。", "id": "Pelajaran ini menggunakan bahan ajar online.", "level": "n3", "tags": ["pendidikan", "teknologi"]},
+    {"jp": "先生が自作の<b>教材</b>を配ってくれた。", "id": "Guru membagikan bahan ajar yang dibuatnya sendiri.", "level": "n3", "tags": ["pendidikan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00691",
+  "word": "参考書",
+  "reading": "さんこうしょ",
+  "romaji": "sankousho",
+  "meaning_id": "buku referensi, buku pelajaran tambahan",
+  "meaning_en": "reference book, study guide",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["pendidikan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Secara spesifik merujuk pada buku yang digunakan siswa secara mandiri untuk memperdalam pemahaman atau mempersiapkan ujian — bukan buku teks wajib dari sekolah. Berbeda dari 教材 yang mencakup semua materi ajar; 参考書 dipilih sendiri oleh siswa dan sifatnya suplemental.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "大学受験のために<b>参考書</b>を何冊も買った。", "id": "Aku membeli banyak buku referensi untuk ujian masuk universitas.", "level": "n3", "tags": ["pendidikan"]},
+    {"jp": "この<b>参考書</b>はわかりやすいと評判だ。", "id": "Buku referensi ini terkenal mudah dipahami.", "level": "n3", "tags": ["pendidikan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00698",
+  "word": "効率",
+  "reading": "こうりつ",
+  "romaji": "kouritsu",
+  "meaning_id": "efisiensi, rasio hasil terhadap usaha yang dikeluarkan",
+  "meaning_en": "efficiency, productivity ratio",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["pendidikan", "pekerjaan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Menekankan perbandingan antara hasil yang diperoleh dengan sumber daya (waktu, energi) yang digunakan. Berbeda dari 効果 yang hanya mengukur apakah hasilnya ada/tidak; 効率 mempertanyakan seberapa hemat cara mencapainya. 効率がいい = cara yang efisien; 効果がある = cara yang manjur.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "<b>効率</b>よく勉強するために、時間割を作った。", "id": "Aku membuat jadwal belajar agar bisa belajar secara efisien.", "level": "n3", "tags": ["pendidikan", "waktu"]},
+    {"jp": "この方法は<b>効率</b>が悪いので、別のやり方を考えよう。", "id": "Cara ini tidak efisien, jadi mari pikirkan cara lain.", "level": "n3", "tags": ["pendidikan", "keputusan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00700",
+  "word": "向上心",
+  "reading": "こうじょうしん",
+  "romaji": "koujoushin",
+  "meaning_id": "semangat untuk terus berkembang, hasrat maju",
+  "meaning_en": "desire for self-improvement, ambition to grow",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["pendidikan", "karakter", "emosi-positif"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Merujuk pada dorongan dari dalam diri untuk terus memperbaiki kemampuan dan kualitas diri — selalu berkonotasi positif. Berbeda dari 野心 yang bisa berkonotasi negatif (ambisi berlebihan, haus kekuasaan); 向上心 diapresiasi di konteks belajar dan karier di Jepang.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "<b>向上心</b>がある人は、失敗しても諦めない。", "id": "Orang yang punya semangat berkembang tidak menyerah meski gagal.", "level": "n3", "tags": ["pendidikan", "karakter"]},
+    {"jp": "<b>向上心</b>を持って毎日少しずつ成長していきたい。", "id": "Aku ingin terus berkembang sedikit demi sedikit setiap hari dengan semangat yang tinggi.", "level": "n3", "tags": ["pendidikan", "emosi-positif"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00701",
+  "word": "好奇心",
+  "reading": "こうきしん",
+  "romaji": "koukishin",
+  "meaning_id": "rasa ingin tahu, dorongan untuk menjelajahi hal-hal baru",
+  "meaning_en": "curiosity, inquisitiveness",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["pendidikan", "karakter", "emosi-positif"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Merujuk pada dorongan alami untuk mengetahui dan mengeksplorasi hal-hal yang belum diketahui. Berbeda dari 興味 (minat terhadap sesuatu yang sudah dikenal); 好奇心 lebih aktif dan mengarah ke hal yang belum familiar, serta mengandung nuansa petualangan intelektual.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "子どもの<b>好奇心</b>を大切にすることが、学習意欲につながる。", "id": "Menghargai rasa ingin tahu anak berhubungan dengan motivasi belajar.", "level": "n3", "tags": ["pendidikan", "karakter"]},
+    {"jp": "<b>好奇心</b>旺盛な学生は、授業でよく質問する。", "id": "Siswa yang penuh rasa ingin tahu sering bertanya di kelas.", "level": "n3", "tags": ["pendidikan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00703",
+  "word": "分野",
+  "reading": "ぶんや",
+  "romaji": "bun'ya",
+  "meaning_id": "bidang, ranah, area kajian atau kegiatan",
+  "meaning_en": "field, area, domain (of study or activity)",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["pendidikan", "ilmu-pengetahuan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Merujuk pada 'bidang' atau 'ranah' yang lebih luas dan kategoris — bisa dipakai untuk ilmu pengetahuan, seni, bisnis, dll. Berbeda dari 専門 yang merujuk pada keahlian spesifik seseorang; 分野 adalah label untuk kategori besarnya, bukan tingkat penguasaan individu.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "医療の<b>分野</b>では、技術の進歩が著しい。", "id": "Di bidang medis, kemajuan teknologi sangat pesat.", "level": "n3", "tags": ["pendidikan", "ilmu-pengetahuan"]},
+    {"jp": "どんな<b>分野</b>に興味がありますか。", "id": "Bidang apa yang kamu minati?", "level": "n3", "tags": ["pendidikan", "bahasa-komunikasi"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00704",
+  "word": "専門",
+  "reading": "せんもん",
+  "romaji": "senmon",
+  "meaning_id": "spesialisasi, keahlian yang sudah dimiliki",
+  "meaning_en": "specialty, area of expertise",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["pendidikan", "pekerjaan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Merujuk pada keahlian atau bidang yang sudah dikuasai seseorang — apa yang menjadi kekuatan utamanya. Berbeda dari 専攻 (jurusan yang sedang dipelajari) dan 分野 (kategori bidang yang luas); 専門 menyiratkan penguasaan yang sudah matang, sering dikaitkan dengan karier atau identitas profesional.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "彼の<b>専門</b>は人工知能だ。", "id": "Spesialisasinya adalah kecerdasan buatan.", "level": "n3", "tags": ["pendidikan", "teknologi"]},
+    {"jp": "<b>専門</b>的な知識がないと、この仕事は難しい。", "id": "Tanpa pengetahuan yang terspesialisasi, pekerjaan ini sulit.", "level": "n3", "tags": ["pendidikan", "pekerjaan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00705",
+  "word": "知識",
+  "reading": "ちしき",
+  "romaji": "chishiki",
+  "meaning_id": "pengetahuan, ilmu yang sudah dipahami dan dimiliki",
+  "meaning_en": "knowledge, learning",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["pendidikan", "ilmu-pengetahuan"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Merujuk pada informasi yang sudah diinternalisasi dan dipahami oleh seseorang — pengetahuan yang sudah menjadi milik. Berbeda dari 情報 yang hanya berarti 'informasi' atau 'data' yang belum tentu dipahami; 知識 menyiratkan pemahaman aktif, bukan sekadar data mentah.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "幅広い<b>知識</b>を持つことは、社会で役立つ。", "id": "Memiliki pengetahuan yang luas berguna di masyarakat.", "level": "n3", "tags": ["pendidikan", "kehidupan-sehari"]},
+    {"jp": "読書をすることで<b>知識</b>が増える。", "id": "Pengetahuan bertambah dengan membaca.", "level": "n3", "tags": ["pendidikan"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00724",
+  "word": "余裕",
+  "reading": "よゆう",
+  "romaji": "yoyuu",
+  "meaning_id": "kelonggaran (waktu/uang/mental), kondisi tidak terburu-buru atau tidak tertekan",
+  "meaning_en": "leeway, margin, composure; having room to spare",
+  "jlpt": "n3",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["kehidupan-sehari", "waktu", "emosi"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Merujuk pada kondisi di mana ada 'ruang ekstra' — waktu, uang, atau kapasitas mental yang cukup sehingga tidak merasa tertekan. Bisa dipakai secara fisik (余裕がある = ada waktu sisa) maupun emosional (余裕を持つ = bersikap tenang). Lawannya adalah 余裕がない = tidak ada kelonggaran, terdesak.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "今日は時間に<b>余裕</b>があるから、ゆっくりできる。", "id": "Hari ini ada kelonggaran waktu, jadi bisa santai.", "level": "n3", "tags": ["kehidupan-sehari", "waktu"]},
+    {"jp": "<b>余裕</b>を持って行動すれば、ミスが減る。", "id": "Kalau bertindak dengan tenang dan tidak terburu-buru, kesalahan akan berkurang.", "level": "n3", "tags": ["kehidupan-sehari", "emosi"]}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -21415,54 +21412,28 @@ window.vocabN3 = [
   "added_v": "v15"
 },
 
-{
-  "id": "vg-n3-00731",
-  "word": "効率よく",
-  "reading": "こうりつよく",
-  "romaji": "kouritsu yoku",
-  "meaning_id": "dengan efisien, secara efektif tanpa boros",
-  "meaning_en": "efficiently, productively",
-  "jlpt": "n3",
-  "pos": "adverb-manner",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": ["pekerjaan", "kehidupan-sehari"],
-  "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Bentuk adverbia dari 効率 (efisiensi) — menerangkan cara melakukan sesuatu dengan rasio hasil/usaha yang baik. Berbeda dari ただ速く (sekadar cepat); 効率よく menyiratkan bahwa hasilnya juga berkualitas, bukan sekadar buru-buru. Pasangan alaminya: 効率よく仕事する、効率よく勉強する.",
-  "conj_type": null,
-  "examples": [
-    {"jp": "<b>効率よく</b>家事をこなすために、順番を決めている。", "id": "Aku menentukan urutan pekerjaan rumah agar bisa menyelesaikannya dengan efisien.", "level": "n3", "tags": ["kehidupan-sehari"]},
-    {"jp": "<b>効率よく</b>仕事を終わらせて、早く帰りたい。", "id": "Aku ingin menyelesaikan pekerjaan dengan efisien agar bisa pulang lebih awal.", "level": "n3", "tags": ["pekerjaan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
+  // ── EXPRESSIONS (8) ────────────────────────────────────────
 
 {
-  "id": "vg-n3-00732",
-  "word": "まとめて",
-  "reading": "まとめて",
-  "romaji": "matomete",
-  "meaning_id": "sekaligus, secara kolektif, dikumpulkan jadi satu",
-  "meaning_en": "all at once, in bulk, together",
+  "id": "vg-n3-00329",
+  "word": "相談に乗る",
+  "reading": "そうだんにのる",
+  "romaji": "soudan ni noru",
+  "meaning_id": "membantu berunding, mendengarkan curhatan, bersedia memberi saran",
+  "meaning_en": "to give advice, to help someone with their problem, to lend an ear",
   "jlpt": "n3",
-  "pos": "adverb-manner",
+  "pos": "expr-set",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["kehidupan-sehari"],
+  "domain": ["pertemanan", "emosi-sosial"],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
-  "nuance": "Menekankan penggabungan beberapa hal menjadi satu tindakan atau satu paket — efisiensi dengan menghindari pengulangan. Berbeda dari いっぺんに yang juga berarti 'sekaligus' tapi menekankan kebersamaan waktu; まとめて lebih menekankan penggabungan atau pengumpulan menjadi satu unit sebelum dikerjakan.",
+  "lawan_bicara": ["teman", "umum"],
+  "nuance": "Idiom yang berarti bersedia aktif mendengarkan dan membantu seseorang yang punya masalah. Lebih dari sekadar 聞く — menyiratkan keterlibatan dan dukungan nyata. 相談を受ける memiliki nuansa yang lebih formal.",
   "conj_type": null,
   "examples": [
-    {"jp": "洗い物は<b>まとめて</b>やった方が水を節約できる。", "id": "Mencuci piring sekaligus lebih hemat air.", "level": "n3", "tags": ["kehidupan-sehari", "alam-lingkungan"]},
-    {"jp": "質問は<b>まとめて</b>最後にどうぞ。", "id": "Silakan ajukan pertanyaan sekaligus di akhir.", "level": "n3", "tags": ["kehidupan-sehari", "bahasa-komunikasi"]}
+    {"jp": "いつでも相談に乗るから、気軽に話してね。", "id": "Kapan saja saya siap membantu, jadi bicaralah tanpa sungkan.", "level": "n3", "tags": ["pertemanan"]},
+    {"jp": "友達の就活の相談に乗った。", "id": "Saya membantu teman yang galau soal mencari kerja.", "level": "n3", "tags": ["pekerjaan"]}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -21472,25 +21443,53 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-00733",
-  "word": "こまめに",
-  "reading": "こまめに",
-  "romaji": "komame ni",
-  "meaning_id": "rajin, sering-sering untuk hal-hal kecil, dengan tekun dan konsisten",
-  "meaning_en": "diligently, frequently (for small tasks), attentively",
+  "id": "vg-n3-00341",
+  "word": "お礼を言う",
+  "reading": "おれいをいう",
+  "romaji": "orei wo iu",
+  "meaning_id": "mengucapkan terima kasih, menyampaikan rasa syukur secara lisan",
+  "meaning_en": "to say thank you, to express gratitude (verbally)",
   "jlpt": "n3",
-  "pos": "adverb-manner",
+  "pos": "expr-set",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["kehidupan-sehari", "karakter"],
+  "domain": ["sopan-santun", "kehidupan-sehari"],
   "register": "neutral",
   "lawan_bicara": ["umum"],
-  "nuance": "Menekankan kerajinan melakukan hal-hal kecil secara rutin dan konsisten — bukan sekaligus besar, tapi sedikit-sedikit namun terus. Berlawanan dengan まとめて; こまめに cocok untuk hal yang lebih baik dilakukan kecil-kecil dan sering (menabung, membersihkan, mencatat) agar tidak menumpuk.",
+  "nuance": "Menekankan tindakan verbal mengucapkan terima kasih. Berbeda dari 感謝する yang lebih bersifat internal/perasaan — お礼を言う adalah aksi lisannya. お礼 juga bisa berupa hadiah atau kunjungan sebagai wujud terima kasih.",
   "conj_type": null,
   "examples": [
-    {"jp": "パソコンのデータは<b>こまめに</b>バックアップしておこう。", "id": "Mari rajin-rajin mencadangkan data komputer agar aman.", "level": "n3", "tags": ["kehidupan-sehari", "teknologi"]},
-    {"jp": "部屋を汚さないように、<b>こまめに</b>掃除している。", "id": "Aku rajin membersihkan agar kamar tidak menjadi kotor.", "level": "n3", "tags": ["kehidupan-sehari"]}
+    {"jp": "助けてもらったので、直接お礼を言いに行った。", "id": "Karena sudah dibantu, saya langsung pergi untuk mengucapkan terima kasih.", "level": "n3", "tags": ["sopan-santun"]},
+    {"jp": "お礼を言うのを忘れてしまった。", "id": "Saya lupa mengucapkan terima kasih.", "level": "n3", "tags": ["kehidupan-sehari"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": ["vg-n3-00340"],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00590",
+  "word": "一方で",
+  "reading": "いっぽうで",
+  "romaji": "ippou de",
+  "meaning_id": "sementara itu, di sisi lain, di samping itu",
+  "meaning_en": "while, on the other hand, at the same time",
+  "jlpt": "n3",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["bahasa-komunikasi", "pikiran-opini"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Menekankan dua hal yang terjadi secara bersamaan atau dua aspek yang berbeda dari subjek yang sama. Berbeda dari 一方 (sendiri) yang lebih sering memulai kalimat baru — 一方で dapat melekat langsung pada frasa sebelumnya dalam satu kalimat, menyoroti kontras atau simultan.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "彼女は仕事を続ける<b>一方で</b>、子育てにも全力を注いでいる。", "id": "Dia terus bekerja, sementara di sisi lain juga mencurahkan sepenuh hati untuk membesarkan anak.", "level": "n3", "tags": ["pekerjaan", "keluarga"]},
+    {"jp": "SNSは人々をつなげる<b>一方で</b>、孤独を深めることもある。", "id": "Media sosial menghubungkan orang-orang, sementara di sisi lain juga bisa memperburuk rasa kesepian.", "level": "n3", "tags": ["teknologi", "emosi"]}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -21500,25 +21499,109 @@ window.vocabN3 = [
 },
 
 {
-  "id": "vg-n3-00734",
-  "word": "あらかじめ",
-  "reading": "あらかじめ",
-  "romaji": "arakajime",
-  "meaning_id": "sebelumnya, jauh-jauh hari, lebih dulu dari waktu yang diperlukan",
-  "meaning_en": "in advance, beforehand, ahead of time",
+  "id": "vg-n3-00591",
+  "word": "それに対して",
+  "reading": "それにたいして",
+  "romaji": "sore ni taishite",
+  "meaning_id": "sebagai perbandingan, berbeda dengan itu, di sisi lain",
+  "meaning_en": "in contrast to that, on the other hand, compared to that",
   "jlpt": "n3",
-  "pos": "adverb",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["kehidupan-sehari", "bisnis"],
+  "domain": ["bahasa-komunikasi", "pikiran-opini"],
   "register": "neutral",
   "lawan_bicara": ["umum"],
-  "nuance": "Menekankan tindakan yang dilakukan sebelum waktunya tiba — persiapan dan antisipasi. Lebih formal dari 前もって yang bermakna serupa; あらかじめ sering muncul dalam instruksi tertulis, pengumuman resmi, atau bahasa bisnis. Keduanya bisa saling menggantikan, tapi あらかじめ terasa lebih institusional.",
+  "nuance": "Menyoroti kontras yang lebih eksplisit dan langsung dibanding 一方 — secara harfiah 'terhadap itu'. Biasanya digunakan ketika dua hal sudah disebutkan sebelumnya dan pembicara ingin membandingkan keduanya secara tegas. Lebih terstruktur dari 一方 dan lebih to-the-point dari しかし.",
   "conj_type": null,
   "examples": [
-    {"jp": "<b>あらかじめ</b>予約しておかないと、席が取れない。", "id": "Kalau tidak memesan jauh-jauh hari, tempat duduknya tidak bisa didapat.", "level": "n3", "tags": ["kehidupan-sehari", "perjalanan"]},
-    {"jp": "<b>あらかじめ</b>内容を確認してからご参加ください。", "id": "Tolong periksa materinya terlebih dahulu sebelum ikut serta.", "level": "n3", "tags": ["bisnis", "kehidupan-sehari"]}
+    {"jp": "A社の製品は安いが品質が低い。<b>それに対して</b>、B社は高くても長持ちする。", "id": "Produk perusahaan A murah tapi kualitasnya rendah. Sebagai perbandingan, perusahaan B mahal tapi tahan lama.", "level": "n3", "tags": ["bisnis", "pikiran-opini"]},
+    {"jp": "春は花が咲いて明るい。<b>それに対して</b>、冬は枯れ木ばかりで寂しい感じがする。", "id": "Musim semi cerah dengan bunga bermekaran. Berbeda dengan itu, musim dingin terasa sepi dengan pohon-pohon gundul.", "level": "n3", "tags": ["alam-lingkungan", "emosi"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00592",
+  "word": "その結果",
+  "reading": "そのけっか",
+  "romaji": "sono kekka",
+  "meaning_id": "akibatnya, hasilnya, sebagai hasilnya",
+  "meaning_en": "as a result, consequently",
+  "jlpt": "n3",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": ["bahasa-komunikasi", "sebab-akibat"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Menyatakan hasil/akibat dari tindakan atau kejadian yang disebutkan sebelumnya — fokus pada outcome nyata. Berbeda dari したがって yang menarik kesimpulan logis, その結果 menekankan apa yang benar-benar terjadi setelah suatu proses atau usaha. Cocok untuk laporan dan narasi.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "毎日一時間ずつ練習した。<b>その結果</b>、大会で優勝することができた。", "id": "Aku berlatih satu jam setiap hari. Hasilnya, aku berhasil memenangkan kompetisi.", "level": "n3", "tags": ["olahraga", "sebab-akibat"]},
+    {"jp": "工場からの排水が川に流れ込んだ。<b>その結果</b>、川の魚が大量に死んだ。", "id": "Limbah pabrik mengalir ke sungai. Akibatnya, ikan di sungai mati dalam jumlah besar.", "level": "n3", "tags": ["alam-lingkungan", "sebab-akibat"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00597",
+  "word": "それにもかかわらず",
+  "reading": "それにもかかわらず",
+  "romaji": "sore ni mo kakawarazu",
+  "meaning_id": "meskipun demikian, terlepas dari itu, walaupun begitu",
+  "meaning_en": "nevertheless, despite that, in spite of that",
+  "jlpt": "n3",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": ["bahasa-komunikasi", "pikiran-opini"],
+  "register": "formal",
+  "lawan_bicara": ["umum"],
+  "nuance": "Lebih kuat dan formal dari でも atau しかし — menekankan bahwa sesuatu terjadi atau dilakukan 'terlepas dari' hambatan yang jelas. Sering dipakai dalam konteks yang serius seperti debat, esai, berita. Versi kasualnya adalah それでも. かかわらず berasal dari 関わる (terkait/terpengaruh) + ず (negasi).",
+  "conj_type": null,
+  "examples": [
+    {"jp": "医師に安静にするよう言われた。<b>それにもかかわらず</b>、彼は仕事に復帰した。", "id": "Dokter menyuruhnya beristirahat. Meskipun demikian, dia kembali bekerja.", "level": "n3", "tags": ["kesehatan", "pekerjaan"]},
+    {"jp": "多くの困難があった。<b>それにもかかわらず</b>、チームは目標を達成した。", "id": "Ada banyak kesulitan. Terlepas dari itu, tim berhasil mencapai tujuannya.", "level": "n3", "tags": ["pekerjaan", "karakter"]}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
+},
+
+{
+  "id": "vg-n3-00603",
+  "word": "なぜか",
+  "reading": "なぜか",
+  "romaji": "naze ka",
+  "meaning_id": "entah kenapa, tidak tahu kenapa, tanpa alasan yang jelas",
+  "meaning_en": "for some reason, somehow (unknown reason)",
+  "jlpt": "n3",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": ["pikiran-opini", "emosi"],
+  "register": "neutral",
+  "lawan_bicara": ["umum"],
+  "nuance": "Berbeda dari どうも yang menyiratkan kesan samar — なぜか lebih tegas menyatakan bahwa pembicara tidak mengetahui atau tidak bisa menjelaskan alasannya. Bisa muncul di awal kalimat (なぜか悲しくなった) atau di tengah. Juga bisa dipakai retoris untuk efek naratif.",
+  "conj_type": null,
+  "examples": [
+    {"jp": "<b>なぜか</b>、その曲を聴くと昔のことを思い出してしまう。", "id": "Entah kenapa, saat mendengar lagu itu aku selalu teringat masa lalu.", "level": "n3", "tags": ["emosi", "hiburan"]},
+    {"jp": "彼女に会うと<b>なぜか</b>緊張する。自分でもよくわからない。", "id": "Entah kenapa aku selalu gugup kalau bertemu dengannya. Aku sendiri pun tidak mengerti.", "level": "n3", "tags": ["emosi", "percintaan"]}
   ],
   "synonyms": [],
   "antonyms": [],

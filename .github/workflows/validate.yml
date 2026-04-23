@@ -20,6 +20,9 @@ jobs:
         with:
           node-version: '22'
 
+      - name: Merge category files
+        run: node scripts/merge-vocab.js && node scripts/merge-grammar.js
+
       - name: Run test suite
         run: node tests/run.js
 
