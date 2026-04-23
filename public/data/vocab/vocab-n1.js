@@ -10,198 +10,829 @@ window.vocabN1 = [
   // ── VERBS (106) ────────────────────────────────────────
 
 {
-  "id": "vg-n1-00029", "word": "存在", "reading": "そんざい", "romaji": "sonzai",
-  "meaning_id": "eksistensi, keberadaan", "meaning_en": "existence, being, presence",
-  "jlpt": "n1", "pos": "noun-suru", "common": true, "related_grammar": [],
-  "formalitas": 3, "domain": ["ilmu-pengetahuan", "pikiran-opini"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Dipakai sebagai kata benda (keberadaan) atau verba 存在する (ada/berada). Dalam filsafat mengacu pada konsep eksistensi. Sehari-hari, 大きな存在 = sosok yang sangat berpengaruh atau berarti bagi seseorang.",
+  "id": "vg-n1-00029",
+  "word": "存在",
+  "reading": "そんざい",
+  "romaji": "sonzai",
+  "meaning_id": "eksistensi, keberadaan",
+  "meaning_en": "existence, being, presence",
+  "jlpt": "n1",
+  "pos": "noun-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "ilmu-pengetahuan",
+    "pikiran-opini"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Dipakai sebagai kata benda (keberadaan) atau verba 存在する (ada/berada). Dalam filsafat mengacu pada konsep eksistensi. Sehari-hari, 大きな存在 = sosok yang sangat berpengaruh atau berarti bagi seseorang.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "神の存在を信じるかどうかは個人の問題だ。", "id": "Apakah percaya pada keberadaan Tuhan adalah urusan pribadi.", "level": "n1", "tags": ["ilmu-pengetahuan"]},
-    {"jp": "彼女は私にとって欠かせない存在だ。", "id": "Baginya, dia adalah sosok yang tidak tergantikan bagiku.", "level": "n1", "tags": ["emosi"]},
-    {"jp": "そのような問題が存在することを認めるべきだ。", "id": "Kita harus mengakui bahwa masalah seperti itu memang ada.", "level": "n1", "tags": ["pikiran-opini"]}
+    {
+      "jp": "神の存在を信じるかどうかは個人の問題だ。",
+      "id": "Apakah percaya pada keberadaan Tuhan adalah urusan pribadi.",
+      "level": "n1",
+      "tags": [
+        "ilmu-pengetahuan"
+      ]
+    },
+    {
+      "jp": "彼女は私にとって欠かせない存在だ。",
+      "id": "Baginya, dia adalah sosok yang tidak tergantikan bagiku.",
+      "level": "n1",
+      "tags": [
+        "emosi"
+      ]
+    },
+    {
+      "jp": "そのような問題が存在することを認めるべきだ。",
+      "id": "Kita harus mengakui bahwa masalah seperti itu memang ada.",
+      "level": "n1",
+      "tags": [
+        "pikiran-opini"
+      ]
+    }
   ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15",
+  "jmdict_seq": "1406150",
+  "frequency": 1000
 },
 
 {
-  "id": "vg-n1-00030", "word": "意識", "reading": "いしき", "romaji": "ishiki",
-  "meaning_id": "kesadaran, rasa sadar, kepedulian", "meaning_en": "consciousness, awareness",
-  "jlpt": "n1", "pos": "noun-suru", "common": true, "related_grammar": [],
-  "formalitas": 3, "domain": ["pikiran-opini", "kesehatan", "ilmu-pengetahuan"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Bisa berarti kesadaran medis (意識がある/ない = sadar/tidak sadar) atau kesadaran sosial/mental (問題意識 = kepedulian terhadap masalah). 意識する berarti 'menyadari' atau 'memperhatikan'.",
+  "id": "vg-n1-00030",
+  "word": "意識",
+  "reading": "いしき",
+  "romaji": "ishiki",
+  "meaning_id": "kesadaran, rasa sadar, kepedulian",
+  "meaning_en": "consciousness, awareness",
+  "jlpt": "n1",
+  "pos": "noun-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "pikiran-opini",
+    "kesehatan",
+    "ilmu-pengetahuan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Bisa berarti kesadaran medis (意識がある/ない = sadar/tidak sadar) atau kesadaran sosial/mental (問題意識 = kepedulian terhadap masalah). 意識する berarti 'menyadari' atau 'memperhatikan'.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "事故の後、彼は意識を失った。", "id": "Setelah kecelakaan, dia kehilangan kesadarannya.", "level": "n1", "tags": ["kesehatan"]},
-    {"jp": "もっと環境問題を意識すべきだ。", "id": "Kita harus lebih sadar terhadap masalah lingkungan.", "level": "n1", "tags": ["alam-lingkungan"]},
-    {"jp": "彼女は常に周りの目を意識している。", "id": "Dia selalu memperhatikan pandangan orang-orang di sekitarnya.", "level": "n1", "tags": ["emosi-sosial"]}
+    {
+      "jp": "事故の後、彼は意識を失った。",
+      "id": "Setelah kecelakaan, dia kehilangan kesadarannya.",
+      "level": "n1",
+      "tags": [
+        "kesehatan"
+      ]
+    },
+    {
+      "jp": "もっと環境問題を意識すべきだ。",
+      "id": "Kita harus lebih sadar terhadap masalah lingkungan.",
+      "level": "n1",
+      "tags": [
+        "alam-lingkungan"
+      ]
+    },
+    {
+      "jp": "彼女は常に周りの目を意識している。",
+      "id": "Dia selalu memperhatikan pandangan orang-orang di sekitarnya.",
+      "level": "n1",
+      "tags": [
+        "emosi-sosial"
+      ]
+    }
   ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15",
+  "jmdict_seq": "1156640",
+  "frequency": 1000,
+  "meanings": [
+    {
+      "en": "consciousness",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "becoming aware (of); awareness; sense",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "mano-vijnana (mental consciousness, cognizer of sensory information)",
+      "misc": [],
+      "field": [
+        "Buddhism"
+      ]
+    }
+  ]
 },
 
 {
-  "id": "vg-n1-00031", "word": "認識", "reading": "にんしき", "romaji": "ninshiki",
-  "meaning_id": "pemahaman mendalam, persepsi, pengakuan", "meaning_en": "recognition, cognition, understanding",
-  "jlpt": "n1", "pos": "noun-suru", "common": true, "related_grammar": [],
-  "formalitas": 4, "domain": ["ilmu-pengetahuan", "pikiran-opini"], "register": "formal",
-  "lawan_bicara": ["umum"], "nuance": "Lebih dalam dari 知識 (pengetahuan). Menekankan proses memahami dan mempersepsi, tidak sekadar mengetahui. 認識が甘い = pemahamannya kurang matang atau remeh-temeh.",
+  "id": "vg-n1-00031",
+  "word": "認識",
+  "reading": "にんしき",
+  "romaji": "ninshiki",
+  "meaning_id": "pemahaman mendalam, persepsi, pengakuan",
+  "meaning_en": "recognition, cognition, understanding",
+  "jlpt": "n1",
+  "pos": "noun-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": [
+    "ilmu-pengetahuan",
+    "pikiran-opini"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Lebih dalam dari 知識 (pengetahuan). Menekankan proses memahami dan mempersepsi, tidak sekadar mengetahui. 認識が甘い = pemahamannya kurang matang atau remeh-temeh.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "問題の深刻さを正確に認識する必要がある。", "id": "Kita perlu memahami secara tepat betapa seriusnya masalah ini.", "level": "n1", "tags": ["pikiran-opini"]},
-    {"jp": "彼の認識は現実と大きくずれている。", "id": "Pemahamannya sangat jauh berbeda dari kenyataan.", "level": "n1", "tags": ["pikiran-opini"]},
-    {"jp": "共通認識を持つことがチームワークの基本だ。", "id": "Memiliki pemahaman yang sama adalah dasar dari kerja sama tim.", "level": "n1", "tags": ["bisnis"]}
+    {
+      "jp": "問題の深刻さを正確に認識する必要がある。",
+      "id": "Kita perlu memahami secara tepat betapa seriusnya masalah ini.",
+      "level": "n1",
+      "tags": [
+        "pikiran-opini"
+      ]
+    },
+    {
+      "jp": "彼の認識は現実と大きくずれている。",
+      "id": "Pemahamannya sangat jauh berbeda dari kenyataan.",
+      "level": "n1",
+      "tags": [
+        "pikiran-opini"
+      ]
+    },
+    {
+      "jp": "共通認識を持つことがチームワークの基本だ。",
+      "id": "Memiliki pemahaman yang sama adalah dasar dari kerja sama tim.",
+      "level": "n1",
+      "tags": [
+        "bisnis"
+      ]
+    }
   ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15",
+  "jmdict_seq": "1467550",
+  "frequency": 1000
 },
 
 {
-  "id": "vg-n1-00032", "word": "洞察", "reading": "どうさつ", "romaji": "dōsatsu",
-  "meaning_id": "wawasan mendalam, kemampuan melihat inti masalah, insight", "meaning_en": "insight, discernment, penetrating observation",
-  "jlpt": "n1", "pos": "noun-suru", "common": false, "related_grammar": [],
-  "formalitas": 4, "domain": ["ilmu-pengetahuan", "bisnis", "pikiran-opini"], "register": "formal",
-  "lawan_bicara": ["rekan", "umum"], "nuance": "Kemampuan melihat hal-hal yang tidak terlihat secara kasatmata, menembus ke inti sesuatu. 洞察力 = daya analisis mendalam. Berbeda dari 観察 (pengamatan) yang lebih tentang mencatat fakta di permukaan.",
+  "id": "vg-n1-00032",
+  "word": "洞察",
+  "reading": "どうさつ",
+  "romaji": "dōsatsu",
+  "meaning_id": "wawasan mendalam, kemampuan melihat inti masalah, insight",
+  "meaning_en": "insight, discernment, penetrating observation",
+  "jlpt": "n1",
+  "pos": "noun-suru",
+  "common": false,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": [
+    "ilmu-pengetahuan",
+    "bisnis",
+    "pikiran-opini"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kemampuan melihat hal-hal yang tidak terlihat secara kasatmata, menembus ke inti sesuatu. 洞察力 = daya analisis mendalam. Berbeda dari 観察 (pengamatan) yang lebih tentang mencatat fakta di permukaan.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "彼女の洞察力は常にチームを驚かせる。", "id": "Kemampuan analisis mendalam dia selalu mengejutkan tim.", "level": "n1", "tags": ["bisnis"]},
-    {"jp": "この作品は人間心理への鋭い洞察に満ちている。", "id": "Karya ini penuh dengan wawasan tajam tentang psikologi manusia.", "level": "n1", "tags": ["seni-budaya"]},
-    {"jp": "優れたリーダーは状況を深く洞察する能力を持つ。", "id": "Pemimpin yang baik memiliki kemampuan untuk menganalisis situasi secara mendalam.", "level": "n1", "tags": ["bisnis"]}
+    {
+      "jp": "彼女の洞察力は常にチームを驚かせる。",
+      "id": "Kemampuan analisis mendalam dia selalu mengejutkan tim.",
+      "level": "n1",
+      "tags": [
+        "bisnis"
+      ]
+    },
+    {
+      "jp": "この作品は人間心理への鋭い洞察に満ちている。",
+      "id": "Karya ini penuh dengan wawasan tajam tentang psikologi manusia.",
+      "level": "n1",
+      "tags": [
+        "seni-budaya"
+      ]
+    },
+    {
+      "jp": "優れたリーダーは状況を深く洞察する能力を持つ。",
+      "id": "Pemimpin yang baik memiliki kemampuan untuk menganalisis situasi secara mendalam.",
+      "level": "n1",
+      "tags": [
+        "bisnis"
+      ]
+    }
   ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15",
+  "jmdict_seq": "1453890",
+  "frequency": 13500
 },
 
 {
-  "id": "vg-n1-00044", "word": "混乱", "reading": "こんらん", "romaji": "konran",
-  "meaning_id": "kekacauan, kebingungan, keadaan tidak teratur", "meaning_en": "confusion, chaos, disorder",
-  "jlpt": "n1", "pos": "noun-suru", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["emosi-negatif", "politik-masyarakat"], "register": "neutral",
-  "lawan_bicara": ["teman", "umum"], "nuance": "Bisa menggambarkan kekacauan situasi (状況の混乱) maupun kebingungan internal seseorang (頭の中が混乱する). Berlawanan dengan 秩序. Untuk kekacauan yang jauh lebih besar dan mendalam bisa pakai 混沌 (chaos total).",
+  "id": "vg-n1-00044",
+  "word": "混乱",
+  "reading": "こんらん",
+  "romaji": "konran",
+  "meaning_id": "kekacauan, kebingungan, keadaan tidak teratur",
+  "meaning_en": "confusion, chaos, disorder",
+  "jlpt": "n1",
+  "pos": "noun-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "emosi-negatif",
+    "politik-masyarakat"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Bisa menggambarkan kekacauan situasi (状況の混乱) maupun kebingungan internal seseorang (頭の中が混乱する). Berlawanan dengan 秩序. Untuk kekacauan yang jauh lebih besar dan mendalam bisa pakai 混沌 (chaos total).",
   "conj_type": "suru",
   "examples": [
-    {"jp": "停電が起きて、駅の中は大混乱になった。", "id": "Listrik padam dan stasiun menjadi kacau balau.", "level": "n1", "tags": ["kehidupan-sehari"]},
-    {"jp": "突然の発表で会議の場が混乱した。", "id": "Pengumuman mendadak itu membuat suasana rapat menjadi kacau.", "level": "n1", "tags": ["bisnis"]},
-    {"jp": "情報が錯綜して頭の中が混乱した。", "id": "Informasi yang simpang siur membuat pikiranku benar-benar bingung.", "level": "n1", "tags": ["emosi-negatif"]}
+    {
+      "jp": "停電が起きて、駅の中は大混乱になった。",
+      "id": "Listrik padam dan stasiun menjadi kacau balau.",
+      "level": "n1",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "突然の発表で会議の場が混乱した。",
+      "id": "Pengumuman mendadak itu membuat suasana rapat menjadi kacau.",
+      "level": "n1",
+      "tags": [
+        "bisnis"
+      ]
+    },
+    {
+      "jp": "情報が錯綜して頭の中が混乱した。",
+      "id": "Informasi yang simpang siur membuat pikiranku benar-benar bingung.",
+      "level": "n1",
+      "tags": [
+        "emosi-negatif"
+      ]
+    }
   ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15",
+  "jmdict_seq": "1290560",
+  "frequency": 1000
 },
 
 {
-  "id": "vg-n1-00045", "word": "衰退", "reading": "すいたい", "romaji": "suitai",
-  "meaning_id": "kemunduran, penurunan, kemerosotan bertahap", "meaning_en": "decline, decay, deterioration",
-  "jlpt": "n1", "pos": "noun-suru", "common": false, "related_grammar": [],
-  "formalitas": 4, "domain": ["politik-masyarakat", "ekonomi-keuangan"], "register": "formal",
-  "lawan_bicara": ["umum"], "nuance": "Menyiratkan penurunan bertahap dari suatu peradaban, industri, atau kekuasaan. Lebih formal dan serius dari 落ち込む. Berlawanan dengan 繁栄 (kemakmuran). Umum dalam konteks sejarah, ekonomi, dan kajian sosial.",
+  "id": "vg-n1-00045",
+  "word": "衰退",
+  "reading": "すいたい",
+  "romaji": "suitai",
+  "meaning_id": "kemunduran, penurunan, kemerosotan bertahap",
+  "meaning_en": "decline, decay, deterioration",
+  "jlpt": "n1",
+  "pos": "noun-suru",
+  "common": false,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": [
+    "politik-masyarakat",
+    "ekonomi-keuangan"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Menyiratkan penurunan bertahap dari suatu peradaban, industri, atau kekuasaan. Lebih formal dan serius dari 落ち込む. Berlawanan dengan 繁栄 (kemakmuran). Umum dalam konteks sejarah, ekonomi, dan kajian sosial.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "産業の衰退が地方経済に深刻な打撃を与えた。", "id": "Kemunduran industri memberikan pukulan serius pada perekonomian daerah.", "level": "n1", "tags": ["ekonomi-keuangan"]},
-    {"jp": "ローマ帝国の衰退は歴史的な謎の一つだ。", "id": "Kemunduran Kekaisaran Romawi adalah salah satu misteri dalam sejarah.", "level": "n1", "tags": ["ilmu-pengetahuan"]},
-    {"jp": "少子化が進み、地域社会が徐々に衰退しつつある。", "id": "Penurunan angka kelahiran terus berlanjut dan masyarakat lokal perlahan mengalami kemunduran.", "level": "n1", "tags": ["politik-masyarakat"]}
+    {
+      "jp": "産業の衰退が地方経済に深刻な打撃を与えた。",
+      "id": "Kemunduran industri memberikan pukulan serius pada perekonomian daerah.",
+      "level": "n1",
+      "tags": [
+        "ekonomi-keuangan"
+      ]
+    },
+    {
+      "jp": "ローマ帝国の衰退は歴史的な謎の一つだ。",
+      "id": "Kemunduran Kekaisaran Romawi adalah salah satu misteri dalam sejarah.",
+      "level": "n1",
+      "tags": [
+        "ilmu-pengetahuan"
+      ]
+    },
+    {
+      "jp": "少子化が進み、地域社会が徐々に衰退しつつある。",
+      "id": "Penurunan angka kelahiran terus berlanjut dan masyarakat lokal perlahan mengalami kemunduran.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    }
   ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15",
+  "jmdict_seq": "1372550",
+  "frequency": 6500,
+  "forms": [
+    {
+      "word": "衰退",
+      "info": []
+    },
+    {
+      "word": "衰頽",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    }
+  ]
 },
 
 {
-  "id": "vg-n1-00046", "word": "繁栄", "reading": "はんえい", "romaji": "han'ei",
-  "meaning_id": "kemakmuran, kejayaan, perkembangan yang pesat", "meaning_en": "prosperity, flourishing, thriving",
-  "jlpt": "n1", "pos": "noun-suru", "common": true, "related_grammar": [],
-  "formalitas": 4, "domain": ["ekonomi-keuangan", "politik-masyarakat"], "register": "formal",
-  "lawan_bicara": ["umum"], "nuance": "Menggambarkan kondisi yang berkembang dan sejahtera secara luas. Lebih formal dari 繁盛 yang lebih sering dipakai untuk toko atau usaha kecil. Berlawanan dengan 衰退. Umum dalam konteks kebijakan, ekonomi nasional, dan sejarah.",
+  "id": "vg-n1-00046",
+  "word": "繁栄",
+  "reading": "はんえい",
+  "romaji": "han'ei",
+  "meaning_id": "kemakmuran, kejayaan, perkembangan yang pesat",
+  "meaning_en": "prosperity, flourishing, thriving",
+  "jlpt": "n1",
+  "pos": "noun-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": [
+    "ekonomi-keuangan",
+    "politik-masyarakat"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Menggambarkan kondisi yang berkembang dan sejahtera secara luas. Lebih formal dari 繁盛 yang lebih sering dipakai untuk toko atau usaha kecil. Berlawanan dengan 衰退. Umum dalam konteks kebijakan, ekonomi nasional, dan sejarah.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "この都市は古くから貿易によって繁栄してきた。", "id": "Kota ini telah makmur berkat perdagangan sejak zaman dahulu.", "level": "n1", "tags": ["ekonomi-keuangan"]},
-    {"jp": "国の繁栄のために個人が犠牲になる必要はない。", "id": "Individu tidak perlu berkorban demi kemakmuran negara.", "level": "n1", "tags": ["politik-masyarakat"]},
-    {"jp": "継続的な革新なしに企業の繁栄はない。", "id": "Tidak ada kemakmuran perusahaan tanpa inovasi yang berkelanjutan.", "level": "n1", "tags": ["bisnis"]}
+    {
+      "jp": "この都市は古くから貿易によって繁栄してきた。",
+      "id": "Kota ini telah makmur berkat perdagangan sejak zaman dahulu.",
+      "level": "n1",
+      "tags": [
+        "ekonomi-keuangan"
+      ]
+    },
+    {
+      "jp": "国の繁栄のために個人が犠牲になる必要はない。",
+      "id": "Individu tidak perlu berkorban demi kemakmuran negara.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "継続的な革新なしに企業の繁栄はない。",
+      "id": "Tidak ada kemakmuran perusahaan tanpa inovasi yang berkelanjutan.",
+      "level": "n1",
+      "tags": [
+        "bisnis"
+      ]
+    }
   ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15",
+  "jmdict_seq": "1481670",
+  "frequency": 3000
 },
 
 {
-  "id": "vg-n1-00052", "word": "緊張", "reading": "きんちょう", "romaji": "kinchō",
-  "meaning_id": "ketegangan, rasa tegang, situasi yang menegang", "meaning_en": "tension, strain, nervousness",
-  "jlpt": "n1", "pos": "noun-suru", "common": true, "related_grammar": [],
-  "formalitas": 2, "domain": ["emosi", "politik-masyarakat"], "register": "neutral",
-  "lawan_bicara": ["teman", "umum"], "nuance": "Bisa berarti ketegangan emosional seseorang (gugup sebelum presentasi) atau ketegangan situasional/geopolitik (ketegangan antarnegara). 緊張を解く = meredakan ketegangan; 緊張感 = rasa tegang yang terasa jelas.",
+  "id": "vg-n1-00052",
+  "word": "緊張",
+  "reading": "きんちょう",
+  "romaji": "kinchō",
+  "meaning_id": "ketegangan, rasa tegang, situasi yang menegang",
+  "meaning_en": "tension, strain, nervousness",
+  "jlpt": "n1",
+  "pos": "noun-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "emosi",
+    "politik-masyarakat"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Bisa berarti ketegangan emosional seseorang (gugup sebelum presentasi) atau ketegangan situasional/geopolitik (ketegangan antarnegara). 緊張を解く = meredakan ketegangan; 緊張感 = rasa tegang yang terasa jelas.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "発表の前で緊張して声が少し震えた。", "id": "Sebelum presentasi, aku tegang sampai suaraku sedikit gemetar.", "level": "n1", "tags": ["emosi"]},
-    {"jp": "二国間の緊張が日増しに高まっている。", "id": "Ketegangan antara kedua negara semakin meningkat dari hari ke hari.", "level": "n1", "tags": ["politik-masyarakat"]},
-    {"jp": "深呼吸をすることで緊張を和らげることができた。", "id": "Aku berhasil meredakan ketegangan dengan menarik napas dalam-dalam.", "level": "n1", "tags": ["kesehatan"]}
+    {
+      "jp": "発表の前で緊張して声が少し震えた。",
+      "id": "Sebelum presentasi, aku tegang sampai suaraku sedikit gemetar.",
+      "level": "n1",
+      "tags": [
+        "emosi"
+      ]
+    },
+    {
+      "jp": "二国間の緊張が日増しに高まっている。",
+      "id": "Ketegangan antara kedua negara semakin meningkat dari hari ke hari.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "深呼吸をすることで緊張を和らげることができた。",
+      "id": "Aku berhasil meredakan ketegangan dengan menarik napas dalam-dalam.",
+      "level": "n1",
+      "tags": [
+        "kesehatan"
+      ]
+    }
   ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15",
+  "jmdict_seq": "1241880",
+  "frequency": 1500,
+  "meanings": [
+    {
+      "en": "tension; strain; nervousness; stress",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "tensions (between countries, groups, etc.)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "tonus; muscle tone",
+      "misc": [],
+      "field": [
+        "physiology"
+      ]
+    }
+  ]
 },
 
 {
-  "id": "vg-n1-00053", "word": "緩和", "reading": "かんわ", "romaji": "kanwa",
-  "meaning_id": "pelonggaran, peringanan, pengurangan tekanan atau aturan", "meaning_en": "relaxation, easing, mitigation, alleviation",
-  "jlpt": "n1", "pos": "noun-suru", "common": true, "related_grammar": [],
-  "formalitas": 4, "domain": ["politik-masyarakat", "hukum-aturan", "kesehatan"], "register": "formal",
-  "lawan_bicara": ["umum"], "nuance": "Dipakai dalam konteks melonggarkan aturan (規制緩和 = deregulasi), mengurangi tekanan geopolitik, atau meringankan gejala medis. Bukan hanya tentang relaksasi santai, tapi lebih tentang pengurangan yang terencana dan terstruktur.",
+  "id": "vg-n1-00053",
+  "word": "緩和",
+  "reading": "かんわ",
+  "romaji": "kanwa",
+  "meaning_id": "pelonggaran, peringanan, pengurangan tekanan atau aturan",
+  "meaning_en": "relaxation, easing, mitigation, alleviation",
+  "jlpt": "n1",
+  "pos": "noun-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": [
+    "politik-masyarakat",
+    "hukum-aturan",
+    "kesehatan"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Dipakai dalam konteks melonggarkan aturan (規制緩和 = deregulasi), mengurangi tekanan geopolitik, atau meringankan gejala medis. Bukan hanya tentang relaksasi santai, tapi lebih tentang pengurangan yang terencana dan terstruktur.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "政府は新型ウイルスによる入国制限の緩和を発表した。", "id": "Pemerintah mengumumkan pelonggaran pembatasan masuk terkait virus baru.", "level": "n1", "tags": ["politik-masyarakat"]},
-    {"jp": "この薬は痛みを緩和する効果があります。", "id": "Obat ini memiliki efek untuk meringankan rasa sakit.", "level": "n1", "tags": ["kesehatan"]},
-    {"jp": "規制緩和によって新規参入企業が増加した。", "id": "Akibat deregulasi, jumlah perusahaan pendatang baru meningkat.", "level": "n1", "tags": ["bisnis", "ekonomi-keuangan"]}
+    {
+      "jp": "政府は新型ウイルスによる入国制限の緩和を発表した。",
+      "id": "Pemerintah mengumumkan pelonggaran pembatasan masuk terkait virus baru.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "この薬は痛みを緩和する効果があります。",
+      "id": "Obat ini memiliki efek untuk meringankan rasa sakit.",
+      "level": "n1",
+      "tags": [
+        "kesehatan"
+      ]
+    },
+    {
+      "jp": "規制緩和によって新規参入企業が増加した。",
+      "id": "Akibat deregulasi, jumlah perusahaan pendatang baru meningkat.",
+      "level": "n1",
+      "tags": [
+        "bisnis",
+        "ekonomi-keuangan"
+      ]
+    }
   ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15",
+  "jmdict_seq": "1214530",
+  "frequency": 1000
 },
 
 {
-  "id": "vg-n1-00054", "word": "促進", "reading": "そくしん", "romaji": "sokushin",
-  "meaning_id": "promosi, dorongan, percepatan kemajuan", "meaning_en": "promotion, facilitation, acceleration",
-  "jlpt": "n1", "pos": "noun-suru", "common": true, "related_grammar": [],
-  "formalitas": 4, "domain": ["bisnis", "politik-masyarakat", "kesehatan"], "register": "formal",
-  "lawan_bicara": ["umum"], "nuance": "Berarti mendorong atau memfasilitasi sesuatu agar berkembang lebih cepat. Berbeda dari 宣伝 (iklan/promosi komersial); 促進 lebih umum dipakai dalam kebijakan, kesehatan, dan penelitian. 健康促進 = promosi kesehatan; 販売促進 = promosi penjualan.",
+  "id": "vg-n1-00054",
+  "word": "促進",
+  "reading": "そくしん",
+  "romaji": "sokushin",
+  "meaning_id": "promosi, dorongan, percepatan kemajuan",
+  "meaning_en": "promotion, facilitation, acceleration",
+  "jlpt": "n1",
+  "pos": "noun-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": [
+    "bisnis",
+    "politik-masyarakat",
+    "kesehatan"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Berarti mendorong atau memfasilitasi sesuatu agar berkembang lebih cepat. Berbeda dari 宣伝 (iklan/promosi komersial); 促進 lebih umum dipakai dalam kebijakan, kesehatan, dan penelitian. 健康促進 = promosi kesehatan; 販売促進 = promosi penjualan.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "政府は経済成長の促進を最優先課題として掲げている。", "id": "Pemerintah menjadikan dorongan pertumbuhan ekonomi sebagai prioritas utama.", "level": "n1", "tags": ["ekonomi-keuangan"]},
-    {"jp": "国際交流の促進が相互理解の深化に役立つ。", "id": "Mendorong pertukaran internasional bermanfaat bagi pendalaman saling pemahaman.", "level": "n1", "tags": ["budaya"]},
-    {"jp": "この運動は血液循環の促進に効果があるとされている。", "id": "Olahraga ini dikatakan efektif untuk memperlancar sirkulasi darah.", "level": "n1", "tags": ["kesehatan"]}
+    {
+      "jp": "政府は経済成長の促進を最優先課題として掲げている。",
+      "id": "Pemerintah menjadikan dorongan pertumbuhan ekonomi sebagai prioritas utama.",
+      "level": "n1",
+      "tags": [
+        "ekonomi-keuangan"
+      ]
+    },
+    {
+      "jp": "国際交流の促進が相互理解の深化に役立つ。",
+      "id": "Mendorong pertukaran internasional bermanfaat bagi pendalaman saling pemahaman.",
+      "level": "n1",
+      "tags": [
+        "budaya"
+      ]
+    },
+    {
+      "jp": "この運動は血液循環の促進に効果があるとされている。",
+      "id": "Olahraga ini dikatakan efektif untuk memperlancar sirkulasi darah.",
+      "level": "n1",
+      "tags": [
+        "kesehatan"
+      ]
+    }
   ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15",
+  "jmdict_seq": "1403780",
+  "frequency": 1500
 },
 
 {
-  "id": "vg-n1-00055", "word": "抑制", "reading": "よくせい", "romaji": "yokusei",
-  "meaning_id": "penghambatan, penekanan, pengendalian", "meaning_en": "suppression, inhibition, restraint",
-  "jlpt": "n1", "pos": "noun-suru", "common": true, "related_grammar": [],
-  "formalitas": 4, "domain": ["ilmu-pengetahuan", "kesehatan", "politik-masyarakat"], "register": "formal",
-  "lawan_bicara": ["umum"], "nuance": "Berarti menahan atau menekan sesuatu agar tidak berkembang atau meluap. Berbeda dari 禁止 (melarang sepenuhnya); 抑制 lebih tentang mengendalikan. Dipakai dalam konteks medis (免疫を抑制する = menekan sistem imun), ekonomi, dan psikologi.",
+  "id": "vg-n1-00055",
+  "word": "抑制",
+  "reading": "よくせい",
+  "romaji": "yokusei",
+  "meaning_id": "penghambatan, penekanan, pengendalian",
+  "meaning_en": "suppression, inhibition, restraint",
+  "jlpt": "n1",
+  "pos": "noun-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": [
+    "ilmu-pengetahuan",
+    "kesehatan",
+    "politik-masyarakat"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Berarti menahan atau menekan sesuatu agar tidak berkembang atau meluap. Berbeda dari 禁止 (melarang sepenuhnya); 抑制 lebih tentang mengendalikan. Dipakai dalam konteks medis (免疫を抑制する = menekan sistem imun), ekonomi, dan psikologi.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "感情を抑制することが常に正しいわけではない。", "id": "Menekan perasaan tidak selalu merupakan hal yang benar.", "level": "n1", "tags": ["emosi"]},
-    {"jp": "この薬は炎症を抑制する働きを持っている。", "id": "Obat ini memiliki fungsi untuk menekan peradangan.", "level": "n1", "tags": ["kesehatan"]},
-    {"jp": "物価上昇を抑制することが政府の喫緊の課題だ。", "id": "Mengendalikan kenaikan harga adalah tantangan mendesak pemerintah.", "level": "n1", "tags": ["ekonomi-keuangan"]}
+    {
+      "jp": "感情を抑制することが常に正しいわけではない。",
+      "id": "Menekan perasaan tidak selalu merupakan hal yang benar.",
+      "level": "n1",
+      "tags": [
+        "emosi"
+      ]
+    },
+    {
+      "jp": "この薬は炎症を抑制する働きを持っている。",
+      "id": "Obat ini memiliki fungsi untuk menekan peradangan.",
+      "level": "n1",
+      "tags": [
+        "kesehatan"
+      ]
+    },
+    {
+      "jp": "物価上昇を抑制することが政府の喫緊の課題だ。",
+      "id": "Mengendalikan kenaikan harga adalah tantangan mendesak pemerintah.",
+      "level": "n1",
+      "tags": [
+        "ekonomi-keuangan"
+      ]
+    }
   ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15",
+  "jmdict_seq": "1547290",
+  "frequency": 2000
 },
 
 {
-  "id": "vg-n1-00056", "word": "是正", "reading": "ぜせい", "romaji": "zesei",
-  "meaning_id": "koreksi sistemik, pembenahan, perbaikan terhadap ketidakberesan", "meaning_en": "correction, rectification, redress",
-  "jlpt": "n1", "pos": "noun-suru", "common": false, "related_grammar": [],
-  "formalitas": 5, "domain": ["hukum-aturan", "politik-masyarakat", "bisnis"], "register": "formal",
-  "lawan_bicara": ["umum"], "nuance": "Dipakai khusus untuk koreksi terhadap sesuatu yang salah atau tidak semestinya, terutama dalam konteks institusional, hukum, atau kebijakan publik. Lebih formal dan sistemik dibandingkan 直す. 格差是正 = pembenahan kesenjangan; 不正を是正する = mengoreksi pelanggaran.",
+  "id": "vg-n1-00056",
+  "word": "是正",
+  "reading": "ぜせい",
+  "romaji": "zesei",
+  "meaning_id": "koreksi sistemik, pembenahan, perbaikan terhadap ketidakberesan",
+  "meaning_en": "correction, rectification, redress",
+  "jlpt": "n1",
+  "pos": "noun-suru",
+  "common": false,
+  "related_grammar": [],
+  "formalitas": 5,
+  "domain": [
+    "hukum-aturan",
+    "politik-masyarakat",
+    "bisnis"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Dipakai khusus untuk koreksi terhadap sesuatu yang salah atau tidak semestinya, terutama dalam konteks institusional, hukum, atau kebijakan publik. Lebih formal dan sistemik dibandingkan 直す. 格差是正 = pembenahan kesenjangan; 不正を是正する = mengoreksi pelanggaran.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "この制度における不公平を是正することが急務だ。", "id": "Mengoreksi ketidakadilan dalam sistem ini adalah hal yang mendesak.", "level": "n1", "tags": ["hukum-aturan"]},
-    {"jp": "労働条件の是正を求めてストライキが行われた。", "id": "Pemogokan dilakukan untuk menuntut perbaikan kondisi kerja.", "level": "n1", "tags": ["pekerjaan"]},
-    {"jp": "格差是正のための具体的な政策を早急に実施すべきだ。", "id": "Kebijakan konkret untuk membenahi kesenjangan harus segera dilaksanakan.", "level": "n1", "tags": ["politik-masyarakat"]}
+    {
+      "jp": "この制度における不公平を是正することが急務だ。",
+      "id": "Mengoreksi ketidakadilan dalam sistem ini adalah hal yang mendesak.",
+      "level": "n1",
+      "tags": [
+        "hukum-aturan"
+      ]
+    },
+    {
+      "jp": "労働条件の是正を求めてストライキが行われた。",
+      "id": "Pemogokan dilakukan untuk menuntut perbaikan kondisi kerja.",
+      "level": "n1",
+      "tags": [
+        "pekerjaan"
+      ]
+    },
+    {
+      "jp": "格差是正のための具体的な政策を早急に実施すべきだ。",
+      "id": "Kebijakan konkret untuk membenahi kesenjangan harus segera dilaksanakan.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    }
   ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15",
+  "jmdict_seq": "1374510",
+  "frequency": 1500,
+  "forms": [
+    {
+      "word": "是正",
+      "info": []
+    },
+    {
+      "word": "証正",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ]
 },
 
 {
-  "id": "vg-n1-00059", "word": "逸脱", "reading": "いつだつ", "romaji": "itsudatsu",
-  "meaning_id": "penyimpangan, deviasi dari norma atau jalur yang semestinya", "meaning_en": "deviation, departure from norms",
-  "jlpt": "n1", "pos": "noun-suru", "common": false, "related_grammar": [],
-  "formalitas": 4, "domain": ["hukum-aturan", "bahasa-komunikasi", "ilmu-pengetahuan"], "register": "formal",
-  "lawan_bicara": ["umum"], "nuance": "Menggambarkan tindakan menyimpang dari jalur yang seharusnya — baik secara normatif (melanggar norma sosial) maupun diskursif (melenceng dari topik). Berbeda dari 違反 (pelanggaran aturan konkret); 逸脱 lebih tentang penyimpangan dari pola atau ekspektasi.",
+  "id": "vg-n1-00059",
+  "word": "逸脱",
+  "reading": "いつだつ",
+  "romaji": "itsudatsu",
+  "meaning_id": "penyimpangan, deviasi dari norma atau jalur yang semestinya",
+  "meaning_en": "deviation, departure from norms",
+  "jlpt": "n1",
+  "pos": "noun-suru",
+  "common": false,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": [
+    "hukum-aturan",
+    "bahasa-komunikasi",
+    "ilmu-pengetahuan"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Menggambarkan tindakan menyimpang dari jalur yang seharusnya — baik secara normatif (melanggar norma sosial) maupun diskursif (melenceng dari topik). Berbeda dari 違反 (pelanggaran aturan konkret); 逸脱 lebih tentang penyimpangan dari pola atau ekspektasi.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "彼の行動は社会規範から大きく逸脱していた。", "id": "Perilakunya menyimpang jauh dari norma sosial.", "level": "n1", "tags": ["hukum-aturan"]},
-    {"jp": "議論が本題から逸脱してしまい、時間を無駄にした。", "id": "Diskusi menyimpang dari topik utama sehingga waktu terbuang sia-sia.", "level": "n1", "tags": ["bahasa-komunikasi"]},
-    {"jp": "プロとしての倫理から逸脱した行為は厳しく問われる。", "id": "Tindakan yang menyimpang dari etika profesional akan dituntut dengan tegas.", "level": "n1", "tags": ["pekerjaan"]}
+    {
+      "jp": "彼の行動は社会規範から大きく逸脱していた。",
+      "id": "Perilakunya menyimpang jauh dari norma sosial.",
+      "level": "n1",
+      "tags": [
+        "hukum-aturan"
+      ]
+    },
+    {
+      "jp": "議論が本題から逸脱してしまい、時間を無駄にした。",
+      "id": "Diskusi menyimpang dari topik utama sehingga waktu terbuang sia-sia.",
+      "level": "n1",
+      "tags": [
+        "bahasa-komunikasi"
+      ]
+    },
+    {
+      "jp": "プロとしての倫理から逸脱した行為は厳しく問われる。",
+      "id": "Tindakan yang menyimpang dari etika profesional akan dituntut dengan tegas.",
+      "level": "n1",
+      "tags": [
+        "pekerjaan"
+      ]
+    }
   ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15",
+  "jmdict_seq": "1167750",
+  "frequency": 11500,
+  "meanings": [
+    {
+      "en": "deviation; departure",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "(accidental) omission",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
@@ -216,21 +847,60 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["emosi-negatif", "hubungan-konsep"],
+  "domain": [
+    "emosi-negatif",
+    "hubungan-konsep"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Menggambarkan situasi di mana seseorang dipermainkan atau dikuasai oleh kekuatan yang jauh lebih besar — takdir, kekuasaan, atau orang lain. Meskipun bentuknya aktif, nuansanya sangat pasif.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "運命に翻弄された人生を振り返った。", "id": "Ia merenungkan kembali hidupnya yang dipermainkan oleh takdir.", "level": "n1", "tags": ["emosi-negatif"]},
-    {"jp": "政争に翻弄される市民たちの姿が描かれている。", "id": "Digambarkan sosok warga negara yang dikuasai oleh pertikaian politik.", "level": "n1", "tags": ["politik-masyarakat"]},
-    {"jp": "波に翻弄されながらも、船は港へ向かった。", "id": "Meski dipermainkan ombak, kapal tetap menuju pelabuhan.", "level": "n1", "tags": ["alam-lingkungan"]}
+    {
+      "jp": "運命に翻弄された人生を振り返った。",
+      "id": "Ia merenungkan kembali hidupnya yang dipermainkan oleh takdir.",
+      "level": "n1",
+      "tags": [
+        "emosi-negatif"
+      ]
+    },
+    {
+      "jp": "政争に翻弄される市民たちの姿が描かれている。",
+      "id": "Digambarkan sosok warga negara yang dikuasai oleh pertikaian politik.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "波に翻弄されながらも、船は港へ向かった。",
+      "id": "Meski dipermainkan ombak, kapal tetap menuju pelabuhan.",
+      "level": "n1",
+      "tags": [
+        "alam-lingkungan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "conjugations": {
+    "dict": "ほんろうする",
+    "masu": "ほんろうします",
+    "te": "ほんろうして",
+    "ta": "ほんろうした",
+    "nai": "ほんろうしない",
+    "potential": "ほんろうできる",
+    "passive": "ほんろうされる",
+    "causative": "ほんろうさせる",
+    "volitional": "ほんろうしよう",
+    "cond_ba": "ほんろうすれば",
+    "cond_tara": "ほんろうしたら"
+  }
 },
 
 {
@@ -245,21 +915,75 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["bisnis", "pikiran-opini"],
+  "domain": [
+    "bisnis",
+    "pikiran-opini"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan", "umum"],
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
   "nuance": "Lebih aktif dari に基づく — menyiratkan bahwa pembicara secara sadar berpijak pada fakta atau situasi tertentu sebelum bertindak. Sering muncul dalam pidato, laporan, dan diskusi formal.",
   "conj_type": "ichidan",
   "examples": [
-    {"jp": "現状を踏まえた上で、対策を検討する必要がある。", "id": "Berdasarkan kondisi saat ini, perlu dipertimbangkan langkah-langkah yang tepat.", "level": "n1", "tags": ["bisnis"]},
-    {"jp": "過去の失敗を踏まえて、新しい計画を立てた。", "id": "Berpijak pada kegagalan masa lalu, kami menyusun rencana baru.", "level": "n1", "tags": ["keputusan"]},
-    {"jp": "先行研究を踏まえて論文をまとめた。", "id": "Makalah disusun dengan mempertimbangkan penelitian-penelitian terdahulu.", "level": "n1", "tags": ["ilmu-pengetahuan"]}
+    {
+      "jp": "現状を踏まえた上で、対策を検討する必要がある。",
+      "id": "Berdasarkan kondisi saat ini, perlu dipertimbangkan langkah-langkah yang tepat.",
+      "level": "n1",
+      "tags": [
+        "bisnis"
+      ]
+    },
+    {
+      "jp": "過去の失敗を踏まえて、新しい計画を立てた。",
+      "id": "Berpijak pada kegagalan masa lalu, kami menyusun rencana baru.",
+      "level": "n1",
+      "tags": [
+        "keputusan"
+      ]
+    },
+    {
+      "jp": "先行研究を踏まえて論文をまとめた。",
+      "id": "Makalah disusun dengan mempertimbangkan penelitian-penelitian terdahulu.",
+      "level": "n1",
+      "tags": [
+        "ilmu-pengetahuan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1450110",
+  "frequency": 2500,
+  "meanings": [
+    {
+      "en": "to be based on; to take into account; to build upon; to have origin in",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to have one's feet firmly planted on; to plant oneself on",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "conjugations": {
+    "dict": "ふまえる",
+    "masu": "ふまえます",
+    "te": "ふまえて",
+    "ta": "ふまえた",
+    "nai": "ふまえない",
+    "potential": "ふまえられる",
+    "passive": "ふまえられる",
+    "causative": "ふまえさせる",
+    "volitional": "ふまえよう",
+    "cond_ba": "ふまえれば",
+    "cond_tara": "ふまえたら"
+  }
 },
 
 {
@@ -274,21 +998,85 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["bisnis", "keputusan"],
+  "domain": [
+    "bisnis",
+    "keputusan"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan", "umum"],
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
   "nuance": "Gabungan 見る + 据える (menetapkan/memusatkan). Menunjukkan fokus yang kuat dan disengaja terhadap tujuan jangka panjang. Berbeda dari ただ見る — ada keteguhan dan kedalaman visi.",
   "conj_type": "ichidan",
   "examples": [
-    {"jp": "将来を見据えた投資が重要だ。", "id": "Investasi yang memandang jauh ke masa depan sangat penting.", "level": "n1", "tags": ["ekonomi-keuangan"]},
-    {"jp": "彼は困難を見据えながらも諦めなかった。", "id": "Sambil menatap kesulitan yang ada, ia tetap tidak menyerah.", "level": "n1", "tags": ["karakter"]},
-    {"jp": "10年後を見据えて戦略を練る。", "id": "Menyusun strategi dengan memandang 10 tahun ke depan.", "level": "n1", "tags": ["bisnis"]}
+    {
+      "jp": "将来を見据えた投資が重要だ。",
+      "id": "Investasi yang memandang jauh ke masa depan sangat penting.",
+      "level": "n1",
+      "tags": [
+        "ekonomi-keuangan"
+      ]
+    },
+    {
+      "jp": "彼は困難を見据えながらも諦めなかった。",
+      "id": "Sambil menatap kesulitan yang ada, ia tetap tidak menyerah.",
+      "level": "n1",
+      "tags": [
+        "karakter"
+      ]
+    },
+    {
+      "jp": "10年後を見据えて戦略を練る。",
+      "id": "Menyusun strategi dengan memandang 10 tahun ke depan.",
+      "level": "n1",
+      "tags": [
+        "bisnis"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1259750",
+  "frequency": 14000,
+  "forms": [
+    {
+      "word": "見据える",
+      "info": []
+    },
+    {
+      "word": "見すえる",
+      "info": []
+    }
+  ],
+  "meanings": [
+    {
+      "en": "to stare fixedly at; to fix one's gaze on",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to make sure of; to set one's eyes on (e.g. the future); to focus on",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "conjugations": {
+    "dict": "みすえる",
+    "masu": "みすえます",
+    "te": "みすえて",
+    "ta": "みすえた",
+    "nai": "みすえない",
+    "potential": "みすえられる",
+    "passive": "みすえられる",
+    "causative": "みすえさせる",
+    "volitional": "みすえよう",
+    "cond_ba": "みすえれば",
+    "cond_tara": "みすえたら"
+  }
 },
 
 {
@@ -303,21 +1091,92 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["keputusan", "pikiran-opini"],
+  "domain": [
+    "keputusan",
+    "pikiran-opini"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["rekan", "teman"],
+  "lawan_bicara": [
+    "rekan",
+    "teman"
+  ],
   "nuance": "Nuansa 'menembus permukaan' untuk mengetahui kebenaran atau esensi sesuatu. Lebih mendalam dari 確認する — menekankan proses analisis cermat dan ketepatan penilaian akhir.",
   "conj_type": "ichidan",
   "examples": [
-    {"jp": "相手の本音を見極めることが交渉の鍵だ。", "id": "Mengidentifikasi maksud sebenarnya lawan bicara adalah kunci negosiasi.", "level": "n1", "tags": ["bisnis"]},
-    {"jp": "状況をよく見極めてから動くべきだ。", "id": "Sebaiknya memastikan situasi dengan cermat sebelum bertindak.", "level": "n1", "tags": ["keputusan"]},
-    {"jp": "本物と偽物を見極める目を養う。", "id": "Melatih kemampuan untuk membedakan asli dan palsu.", "level": "n1", "tags": ["kualitas"]}
+    {
+      "jp": "相手の本音を見極めることが交渉の鍵だ。",
+      "id": "Mengidentifikasi maksud sebenarnya lawan bicara adalah kunci negosiasi.",
+      "level": "n1",
+      "tags": [
+        "bisnis"
+      ]
+    },
+    {
+      "jp": "状況をよく見極めてから動くべきだ。",
+      "id": "Sebaiknya memastikan situasi dengan cermat sebelum bertindak.",
+      "level": "n1",
+      "tags": [
+        "keputusan"
+      ]
+    },
+    {
+      "jp": "本物と偽物を見極める目を養う。",
+      "id": "Melatih kemampuan untuk membedakan asli dan palsu.",
+      "level": "n1",
+      "tags": [
+        "kualitas"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1259490",
+  "frequency": 8000,
+  "forms": [
+    {
+      "word": "見極める",
+      "info": []
+    },
+    {
+      "word": "見きわめる",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "to watch to the end",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to ascertain; to determine; to get to the bottom of; to make sure of",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to know thoroughly; to obtain a deep understanding of",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "conjugations": {
+    "dict": "みきわめる",
+    "masu": "みきわめます",
+    "te": "みきわめて",
+    "ta": "みきわめた",
+    "nai": "みきわめない",
+    "potential": "みきわめられる",
+    "passive": "みきわめられる",
+    "causative": "みきわめさせる",
+    "volitional": "みきわめよう",
+    "cond_ba": "みきわめれば",
+    "cond_tara": "みきわめたら"
+  }
 },
 
 {
@@ -332,21 +1191,96 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["bisnis", "keputusan"],
+  "domain": [
+    "bisnis",
+    "keputusan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["rekan", "umum"],
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
   "nuance": "Polisemi penting: bisa berarti 'mengevaluasi ulang kebijakan/rencana' (makna formal) atau 'mengubah pandangan tentang seseorang menjadi lebih positif' (makna interpersonal). Konteks menentukan maknanya.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "規則を見直す必要が出てきた。", "id": "Muncul kebutuhan untuk meninjau kembali peraturan tersebut.", "level": "n1", "tags": ["hukum-aturan"]},
-    {"jp": "彼の努力を見て、少し見直した。", "id": "Melihat kerja kerasnya, pandanganku terhadapnya sedikit berubah menjadi lebih positif.", "level": "n1", "tags": ["emosi", "hubungan-konsep"]},
-    {"jp": "計画を根本から見直すことにした。", "id": "Kami memutuskan untuk meninjau ulang rencana dari akar permasalahannya.", "level": "n1", "tags": ["bisnis"]}
+    {
+      "jp": "規則を見直す必要が出てきた。",
+      "id": "Muncul kebutuhan untuk meninjau kembali peraturan tersebut.",
+      "level": "n1",
+      "tags": [
+        "hukum-aturan"
+      ]
+    },
+    {
+      "jp": "彼の努力を見て、少し見直した。",
+      "id": "Melihat kerja kerasnya, pandanganku terhadapnya sedikit berubah menjadi lebih positif.",
+      "level": "n1",
+      "tags": [
+        "emosi",
+        "hubungan-konsep"
+      ]
+    },
+    {
+      "jp": "計画を根本から見直すことにした。",
+      "id": "Kami memutuskan untuk meninjau ulang rencana dari akar permasalahannya.",
+      "level": "n1",
+      "tags": [
+        "bisnis"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1259900",
+  "frequency": 6000,
+  "forms": [
+    {
+      "word": "見直す",
+      "info": []
+    },
+    {
+      "word": "見なおす",
+      "info": []
+    }
+  ],
+  "meanings": [
+    {
+      "en": "to look at again",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to re-examine (policy, estimate, plan, etc.); to review",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to get a better opinion of; to see in a more positive light",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to improve; to recover (market, illness, etc.)",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "conjugations": {
+    "dict": "みなおす",
+    "masu": "みなおします",
+    "te": "みなおして",
+    "ta": "みなおした",
+    "nai": "みなおさない",
+    "potential": "みなおせる",
+    "passive": "みなおされる",
+    "causative": "みなおさせる",
+    "volitional": "みなおそう",
+    "cond_ba": "みなおせば",
+    "cond_tara": "みなおしたら"
+  }
 },
 
 {
@@ -361,21 +1295,103 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["politik-masyarakat", "bisnis"],
+  "domain": [
+    "politik-masyarakat",
+    "bisnis"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Digunakan untuk menyatakan kebijakan, strategi, atau gagasan baru yang diumumkan secara resmi oleh pihak berwenang. Lebih kuat dan impactful dari ただ発表する — menyiratkan keputusan yang bulat dan disengaja.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "政府は新たな経済政策を打ち出した。", "id": "Pemerintah memproklamasikan kebijakan ekonomi baru.", "level": "n1", "tags": ["politik-masyarakat"]},
-    {"jp": "会社は大胆な改革案を打ち出した。", "id": "Perusahaan mengeluarkan rancangan reformasi yang berani.", "level": "n1", "tags": ["bisnis"]},
-    {"jp": "独自のブランド戦略を打ち出す。", "id": "Mengeluarkan strategi merek yang unik dan khas.", "level": "n1", "tags": ["bisnis"]}
+    {
+      "jp": "政府は新たな経済政策を打ち出した。",
+      "id": "Pemerintah memproklamasikan kebijakan ekonomi baru.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "会社は大胆な改革案を打ち出した。",
+      "id": "Perusahaan mengeluarkan rancangan reformasi yang berani.",
+      "level": "n1",
+      "tags": [
+        "bisnis"
+      ]
+    },
+    {
+      "jp": "独自のブランド戦略を打ち出す。",
+      "id": "Mengeluarkan strategi merek yang unik dan khas.",
+      "level": "n1",
+      "tags": [
+        "bisnis"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1408670",
+  "frequency": 5500,
+  "forms": [
+    {
+      "word": "打ち出す",
+      "info": []
+    },
+    {
+      "word": "打出す",
+      "info": []
+    },
+    {
+      "word": "打ちだす",
+      "info": []
+    }
+  ],
+  "meanings": [
+    {
+      "en": "to emboss",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to print out; to print",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to work out (e.g. policy); to hammer out; to come out with; to set forth",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to strike (a drum indicating the end of a performance)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to begin striking; to start beating",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "conjugations": {
+    "dict": "うちだす",
+    "masu": "うちだします",
+    "te": "うちだして",
+    "ta": "うちだした",
+    "nai": "うちださない",
+    "potential": "うちだせる",
+    "passive": "うちだされる",
+    "causative": "うちださせる",
+    "volitional": "うちだそう",
+    "cond_ba": "うちだせば",
+    "cond_tara": "うちだしたら"
+  }
 },
 
 {
@@ -390,21 +1406,108 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["karakter", "keputusan"],
+  "domain": [
+    "karakter",
+    "keputusan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["teman", "rekan"],
+  "lawan_bicara": [
+    "teman",
+    "rekan"
+  ],
   "nuance": "Menggambarkan keterlibatan total — tenaga, waktu, dan pikiran dicurahkan pada satu kegiatan. Berbeda dari ただ頑張る — ada nuansa keasyikan penuh (tidak teralihkan). Sering untuk hobi, olahraga, atau pekerjaan.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "彼は仕事に打ち込んで、プライベートを忘れた。", "id": "Ia begitu total menekuni pekerjaan sampai melupakan kehidupan pribadinya.", "level": "n1", "tags": ["pekerjaan"]},
-    {"jp": "趣味に打ち込む時間が大切だ。", "id": "Waktu untuk menekuni hobi itu sangat berharga.", "level": "n1", "tags": ["hiburan"]},
-    {"jp": "若い頃はスポーツに打ち込んでいた。", "id": "Waktu muda, aku mencurahkan diri sepenuhnya untuk olahraga.", "level": "n1", "tags": ["olahraga"]}
+    {
+      "jp": "彼は仕事に打ち込んで、プライベートを忘れた。",
+      "id": "Ia begitu total menekuni pekerjaan sampai melupakan kehidupan pribadinya.",
+      "level": "n1",
+      "tags": [
+        "pekerjaan"
+      ]
+    },
+    {
+      "jp": "趣味に打ち込む時間が大切だ。",
+      "id": "Waktu untuk menekuni hobi itu sangat berharga.",
+      "level": "n1",
+      "tags": [
+        "hiburan"
+      ]
+    },
+    {
+      "jp": "若い頃はスポーツに打ち込んでいた。",
+      "id": "Waktu muda, aku mencurahkan diri sepenuhnya untuk olahraga.",
+      "level": "n1",
+      "tags": [
+        "olahraga"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "2714070",
+  "forms": [
+    {
+      "word": "ぶち込む",
+      "info": []
+    },
+    {
+      "word": "打ち込む",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "ブチ込む",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "打ちこむ",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "to throw into; to toss into; to fling into",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to drive (a nail, etc.) into; to hammer in; to land (a punch) on; to belt (a ball) into (e.g. the stands)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to fire (a bullet) into; to launch (a missile) at",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to wear (a sword, etc.); to carry",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "conjugations": {
+    "dict": "うちこむ",
+    "masu": "うちこみます",
+    "te": "うちこんで",
+    "ta": "うちこんだ",
+    "nai": "うちこまない",
+    "potential": "うちこめる",
+    "passive": "うちこまれる",
+    "causative": "うちこませる",
+    "volitional": "うちこもう",
+    "cond_ba": "うちこめば",
+    "cond_tara": "うちこんだら"
+  }
 },
 
 {
@@ -419,21 +1522,93 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["hubungan-konsep", "alam-lingkungan"],
+  "domain": [
+    "hubungan-konsep",
+    "alam-lingkungan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum", "rekan"],
+  "lawan_bicara": [
+    "umum",
+    "rekan"
+  ],
   "nuance": "Sering digunakan secara abstrak dalam frasa 取り巻く環境 (lingkungan yang melingkupi/kondisi sekitar). Bukan sekadar mengepung secara fisik — mencakup konteks sosial, ekonomi, atau situasional.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "私たちを取り巻く社会環境は大きく変化した。", "id": "Lingkungan sosial yang mengelilingi kita telah berubah secara besar-besaran.", "level": "n1", "tags": ["politik-masyarakat"]},
-    {"jp": "多くの支持者に取り巻かれて登場した。", "id": "Ia tampil dikelilingi oleh banyak pendukung.", "level": "n1", "tags": ["hubungan-konsep"]},
-    {"jp": "企業を取り巻くリスクを正確に把握する。", "id": "Memahami secara akurat risiko-risiko yang mengepung perusahaan.", "level": "n1", "tags": ["bisnis"]}
+    {
+      "jp": "私たちを取り巻く社会環境は大きく変化した。",
+      "id": "Lingkungan sosial yang mengelilingi kita telah berubah secara besar-besaran.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "多くの支持者に取り巻かれて登場した。",
+      "id": "Ia tampil dikelilingi oleh banyak pendukung.",
+      "level": "n1",
+      "tags": [
+        "hubungan-konsep"
+      ]
+    },
+    {
+      "jp": "企業を取り巻くリスクを正確に把握する。",
+      "id": "Memahami secara akurat risiko-risiko yang mengepung perusahaan.",
+      "level": "n1",
+      "tags": [
+        "bisnis"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1326610",
+  "frequency": 1000,
+  "forms": [
+    {
+      "word": "取り巻く",
+      "info": []
+    },
+    {
+      "word": "取りまく",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "取巻く",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "to surround; to encircle; to enclose",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to fawn over (someone); to play up to; to curry favor with",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "conjugations": {
+    "dict": "とりまく",
+    "masu": "とりまきます",
+    "te": "とりまいて",
+    "ta": "とりまいた",
+    "nai": "とりまかない",
+    "potential": "とりまける",
+    "passive": "とりまかれる",
+    "causative": "とりまかせる",
+    "volitional": "とりまこう",
+    "cond_ba": "とりまけば",
+    "cond_tara": "とりまいたら"
+  }
 },
 
 {
@@ -448,21 +1623,142 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["media", "bahasa-komunikasi"],
+  "domain": [
+    "media",
+    "bahasa-komunikasi"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum", "rekan"],
+  "lawan_bicara": [
+    "umum",
+    "rekan"
+  ],
   "nuance": "Polisemi penting: (1) 'mengangkat/membahas topik atau isu' — media や授業で問題を取り上げる, dan (2) 'mengambil/merampas sesuatu dari seseorang' — 免許を取り上げる. Konteks menentukan maknanya.",
   "conj_type": "ichidan",
   "examples": [
-    {"jp": "ニュースでその問題が大きく取り上げられた。", "id": "Isu tersebut diangkat secara besar-besaran dalam berita.", "level": "n1", "tags": ["media"]},
-    {"jp": "危険だとして、子供からおもちゃを取り上げた。", "id": "Dengan alasan berbahaya, mainan itu diambil dari anak tersebut.", "level": "n1", "tags": ["keluarga"]},
-    {"jp": "授業でその詩を取り上げることにした。", "id": "Diputuskan untuk membahas puisi itu dalam kelas.", "level": "n1", "tags": ["pendidikan"]}
+    {
+      "jp": "ニュースでその問題が大きく取り上げられた。",
+      "id": "Isu tersebut diangkat secara besar-besaran dalam berita.",
+      "level": "n1",
+      "tags": [
+        "media"
+      ]
+    },
+    {
+      "jp": "危険だとして、子供からおもちゃを取り上げた。",
+      "id": "Dengan alasan berbahaya, mainan itu diambil dari anak tersebut.",
+      "level": "n1",
+      "tags": [
+        "keluarga"
+      ]
+    },
+    {
+      "jp": "授業でその詩を取り上げることにした。",
+      "id": "Diputuskan untuk membahas puisi itu dalam kelas.",
+      "level": "n1",
+      "tags": [
+        "pendidikan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1326800",
+  "frequency": 21000,
+  "forms": [
+    {
+      "word": "取り上げる",
+      "info": []
+    },
+    {
+      "word": "採り上げる",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "取りあげる",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "取上げる",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "とり上げる",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "採りあげる",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "採上げる",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "to pick up",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to adopt (a proposal); to take up (a topic); to accept; to listen to",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to take issue with; to make a problem of; to bring up (as a point of criticism)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to report (news); to cover; to feature",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to take away; to confiscate; to deprive (someone) of; to revoke; to disqualify; to cancel",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to deliver (a baby)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to collect (taxes)",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "conjugations": {
+    "dict": "とりあげる",
+    "masu": "とりあげます",
+    "te": "とりあげて",
+    "ta": "とりあげた",
+    "nai": "とりあげない",
+    "potential": "とりあげられる",
+    "passive": "とりあげられる",
+    "causative": "とりあげさせる",
+    "volitional": "とりあげよう",
+    "cond_ba": "とりあげれば",
+    "cond_tara": "とりあげたら"
+  }
 },
 
 {
@@ -477,21 +1773,98 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["kualitas", "kesehatan"],
+  "domain": [
+    "kualitas",
+    "kesehatan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum", "rekan"],
+  "lawan_bicara": [
+    "umum",
+    "rekan"
+  ],
   "nuance": "Menggambarkan pengurangan nilai, kualitas, atau kondisi sesuatu yang sebelumnya baik. 健康を損なう (merusak kesehatan), 信頼を損なう (merusak kepercayaan). Berbeda dari 壊す yang lebih konkret/fisik.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "過労は健康を損なう恐れがある。", "id": "Kerja berlebihan berisiko merusak kesehatan.", "level": "n1", "tags": ["kesehatan"]},
-    {"jp": "その発言が両国の信頼関係を損なった。", "id": "Pernyataan itu merusak hubungan kepercayaan antara kedua negara.", "level": "n1", "tags": ["politik-masyarakat"]},
-    {"jp": "美観を損なわないよう設計された。", "id": "Dirancang agar tidak merusak keindahan visual.", "level": "n1", "tags": ["seni-budaya"]}
+    {
+      "jp": "過労は健康を損なう恐れがある。",
+      "id": "Kerja berlebihan berisiko merusak kesehatan.",
+      "level": "n1",
+      "tags": [
+        "kesehatan"
+      ]
+    },
+    {
+      "jp": "その発言が両国の信頼関係を損なった。",
+      "id": "Pernyataan itu merusak hubungan kepercayaan antara kedua negara.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "美観を損なわないよう設計された。",
+      "id": "Dirancang agar tidak merusak keindahan visual.",
+      "level": "n1",
+      "tags": [
+        "seni-budaya"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1596510",
+  "frequency": 8000,
+  "forms": [
+    {
+      "word": "損なう",
+      "info": []
+    },
+    {
+      "word": "害う",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "損う",
+      "info": [
+        "okurigana tidak biasa"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "to harm; to hurt; to injure; to damage; to spoil; to mar; to ruin",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to fail to do; to do amiss; to miss one's opportunity to do",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to almost do; to come close to doing",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "conjugations": {
+    "dict": "そこなう",
+    "masu": "そこないます",
+    "te": "そこなって",
+    "ta": "そこなった",
+    "nai": "そこなわない",
+    "potential": "そこなえる",
+    "passive": "そこなわれる",
+    "causative": "そこなわせる",
+    "volitional": "そこなおう",
+    "cond_ba": "そこなえば",
+    "cond_tara": "そこなったら"
+  }
 },
 
 {
@@ -506,21 +1879,90 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["hubungan-konsep", "ilmu-pengetahuan"],
+  "domain": [
+    "hubungan-konsep",
+    "ilmu-pengetahuan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["rekan", "umum"],
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
   "nuance": "Dua makna utama: (1) 'terdiri atas/terbentuk dari' — AはBとCから成り立つ, dan (2) 'berlaku/terwujud' — 取引が成り立つ (transaksi terlaksana). Sering digunakan dalam diskusi akademis dan analisis logis.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "この文章は三つの段落から成り立っている。", "id": "Teks ini terdiri dari tiga paragraf.", "level": "n1", "tags": ["bahasa-komunikasi"]},
-    {"jp": "双方が合意しなければ、契約は成り立たない。", "id": "Jika kedua pihak tidak sepakat, kontrak tidak dapat terlaksana.", "level": "n1", "tags": ["hukum-aturan"]},
-    {"jp": "その理論はいくつかの前提の上に成り立っている。", "id": "Teori itu berdiri di atas beberapa asumsi dasar.", "level": "n1", "tags": ["ilmu-pengetahuan"]}
+    {
+      "jp": "この文章は三つの段落から成り立っている。",
+      "id": "Teks ini terdiri dari tiga paragraf.",
+      "level": "n1",
+      "tags": [
+        "bahasa-komunikasi"
+      ]
+    },
+    {
+      "jp": "双方が合意しなければ、契約は成り立たない。",
+      "id": "Jika kedua pihak tidak sepakat, kontrak tidak dapat terlaksana.",
+      "level": "n1",
+      "tags": [
+        "hukum-aturan"
+      ]
+    },
+    {
+      "jp": "その理論はいくつかの前提の上に成り立っている。",
+      "id": "Teori itu berdiri di atas beberapa asumsi dasar.",
+      "level": "n1",
+      "tags": [
+        "ilmu-pengetahuan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1375600",
+  "frequency": 7500,
+  "forms": [
+    {
+      "word": "成り立つ",
+      "info": []
+    },
+    {
+      "word": "成立つ",
+      "info": []
+    }
+  ],
+  "meanings": [
+    {
+      "en": "to consist of; to be made up of; to be composed of",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to be concluded (e.g. of an agreement); to hold true (e.g. of a theory); to be valid",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to be viable (of a business, lifestyle, etc.); to carry on; to keep going",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "conjugations": {
+    "dict": "なりたつ",
+    "masu": "なりたちます",
+    "te": "なりたって",
+    "ta": "なりたった",
+    "nai": "なりたたない",
+    "potential": "なりたてる",
+    "passive": "なりたたれる",
+    "causative": "なりたたせる",
+    "volitional": "なりたとう",
+    "cond_ba": "なりたてば",
+    "cond_tara": "なりたったら"
+  }
 },
 
 {
@@ -535,21 +1977,75 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["kualitas", "bahasa-komunikasi"],
+  "domain": [
+    "kualitas",
+    "bahasa-komunikasi"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum", "rekan"],
+  "lawan_bicara": [
+    "umum",
+    "rekan"
+  ],
   "nuance": "Lebih kuat dari ただ目立つ — ada nuansa keunggulan yang tajam, jelas, dan menonjol secara signifikan. Sering digunakan dalam penilaian estetika, karakter, atau kemampuan seseorang.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "彼女の才能は他の候補者の中でも際立っていた。", "id": "Bakatnya sangat menonjol di antara kandidat-kandidat lainnya.", "level": "n1", "tags": ["karakter"]},
-    {"jp": "その建物のデザインは街並みの中で際立つ。", "id": "Desain bangunan itu tampak sangat mencolok di antara pemandangan kota.", "level": "n1", "tags": ["seni-budaya"]},
-    {"jp": "際立った特徴がなければ記憶に残らない。", "id": "Tanpa ciri khas yang menonjol, tidak akan mudah diingat.", "level": "n1", "tags": ["bahasa-komunikasi"]}
+    {
+      "jp": "彼女の才能は他の候補者の中でも際立っていた。",
+      "id": "Bakatnya sangat menonjol di antara kandidat-kandidat lainnya.",
+      "level": "n1",
+      "tags": [
+        "karakter"
+      ]
+    },
+    {
+      "jp": "その建物のデザインは街並みの中で際立つ。",
+      "id": "Desain bangunan itu tampak sangat mencolok di antara pemandangan kota.",
+      "level": "n1",
+      "tags": [
+        "seni-budaya"
+      ]
+    },
+    {
+      "jp": "際立った特徴がなければ記憶に残らない。",
+      "id": "Tanpa ciri khas yang menonjol, tidak akan mudah diingat.",
+      "level": "n1",
+      "tags": [
+        "bahasa-komunikasi"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1296360",
+  "frequency": 10000,
+  "forms": [
+    {
+      "word": "際立つ",
+      "info": []
+    },
+    {
+      "word": "際だつ",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "conjugations": {
+    "dict": "きわだつ",
+    "masu": "きわだちます",
+    "te": "きわだって",
+    "ta": "きわだった",
+    "nai": "きわだたない",
+    "potential": "きわだてる",
+    "passive": "きわだたれる",
+    "causative": "きわだたせる",
+    "volitional": "きわだとう",
+    "cond_ba": "きわだてば",
+    "cond_tara": "きわだったら"
+  }
 },
 
 {
@@ -564,21 +2060,131 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["sebab-akibat", "bahasa-komunikasi"],
+  "domain": [
+    "sebab-akibat",
+    "bahasa-komunikasi"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum", "rekan"],
+  "lawan_bicara": [
+    "umum",
+    "rekan"
+  ],
   "nuance": "Sering digunakan untuk kejadian negatif — masalah, bencana, konflik, reaksi tubuh. Meskipun secara gramatikal bisa netral, secara pragmatis konotasinya lebih gelap dibanding ただ起こす.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "その事故は大規模な混乱を引き起こした。", "id": "Kecelakaan itu menimbulkan kekacauan berskala besar.", "level": "n1", "tags": ["sebab-akibat"]},
-    {"jp": "誤解が深刻な対立を引き起こすことがある。", "id": "Kesalahpahaman bisa memicu konflik yang serius.", "level": "n1", "tags": ["bahasa-komunikasi"]},
-    {"jp": "その薬は副作用を引き起こす恐れがある。", "id": "Obat itu berpotensi menyebabkan efek samping.", "level": "n1", "tags": ["kesehatan"]}
+    {
+      "jp": "その事故は大規模な混乱を引き起こした。",
+      "id": "Kecelakaan itu menimbulkan kekacauan berskala besar.",
+      "level": "n1",
+      "tags": [
+        "sebab-akibat"
+      ]
+    },
+    {
+      "jp": "誤解が深刻な対立を引き起こすことがある。",
+      "id": "Kesalahpahaman bisa memicu konflik yang serius.",
+      "level": "n1",
+      "tags": [
+        "bahasa-komunikasi"
+      ]
+    },
+    {
+      "jp": "その薬は副作用を引き起こす恐れがある。",
+      "id": "Obat itu berpotensi menyebabkan efek samping.",
+      "level": "n1",
+      "tags": [
+        "kesehatan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00074"],
+  "see_also": [
+    "vg-n1-00074"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1168880",
+  "frequency": 13000,
+  "forms": [
+    {
+      "word": "引き起こす",
+      "info": []
+    },
+    {
+      "word": "引きおこす",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "ひき起こす",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "引き起す",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "引起す",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "引起こす",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "ひき起す",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "惹き起こす",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "惹き起す",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "to cause; to induce; to bring about; to provoke",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to pull upright; to help up (e.g. a fallen person)",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "conjugations": {
+    "dict": "ひきおこす",
+    "masu": "ひきおこします",
+    "te": "ひきおこして",
+    "ta": "ひきおこした",
+    "nai": "ひきおこさない",
+    "potential": "ひきおこせる",
+    "passive": "ひきおこされる",
+    "causative": "ひきおこさせる",
+    "volitional": "ひきおこそう",
+    "cond_ba": "ひきおこせば",
+    "cond_tara": "ひきおこしたら"
+  }
 },
 
 {
@@ -593,21 +2199,104 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["sebab-akibat", "bisnis"],
+  "domain": [
+    "sebab-akibat",
+    "bisnis"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum", "rekan"],
+  "lawan_bicara": [
+    "umum",
+    "rekan"
+  ],
   "nuance": "Lebih netral dari 引き起こす — bisa mendatangkan hasil positif (利益をもたらす) maupun negatif. Sering digunakan dalam konteks formal, akademis, dan analitis untuk menyatakan dampak atau akibat.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "新技術は産業に革命をもたらした。", "id": "Teknologi baru mendatangkan revolusi bagi industri.", "level": "n1", "tags": ["teknologi"]},
-    {"jp": "不況は多くの企業に損失をもたらした。", "id": "Resesi mengakibatkan kerugian bagi banyak perusahaan.", "level": "n1", "tags": ["ekonomi-keuangan"]},
-    {"jp": "対話は相互理解をもたらすことができる。", "id": "Dialog dapat membawa pemahaman yang saling menguntungkan.", "level": "n1", "tags": ["bahasa-komunikasi"]}
+    {
+      "jp": "新技術は産業に革命をもたらした。",
+      "id": "Teknologi baru mendatangkan revolusi bagi industri.",
+      "level": "n1",
+      "tags": [
+        "teknologi"
+      ]
+    },
+    {
+      "jp": "不況は多くの企業に損失をもたらした。",
+      "id": "Resesi mengakibatkan kerugian bagi banyak perusahaan.",
+      "level": "n1",
+      "tags": [
+        "ekonomi-keuangan"
+      ]
+    },
+    {
+      "jp": "対話は相互理解をもたらすことができる。",
+      "id": "Dialog dapat membawa pemahaman yang saling menguntungkan.",
+      "level": "n1",
+      "tags": [
+        "bahasa-komunikasi"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00073"],
+  "see_also": [
+    "vg-n1-00073"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1573190",
+  "frequency": 1000,
+  "forms": [
+    {
+      "word": "齎す",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "齎らす",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "持たらす",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "to bring (news, knowledge, etc.); to introduce",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "to bring about; to cause; to produce (e.g. results)",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "biasanya kana saja"
+  ],
+  "conjugations": {
+    "dict": "もたらす",
+    "masu": "もたらします",
+    "te": "もたらして",
+    "ta": "もたらした",
+    "nai": "もたらさない",
+    "potential": "もたらせる",
+    "passive": "もたらされる",
+    "causative": "もたらさせる",
+    "volitional": "もたらそう",
+    "cond_ba": "もたらせば",
+    "cond_tara": "もたらしたら"
+  }
 },
 
 {
@@ -622,21 +2311,76 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["hubungan-konsep", "hukum-aturan"],
+  "domain": [
+    "hubungan-konsep",
+    "hukum-aturan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Bisa literal (mengikat tali) atau figuratif (dikekang aturan, tradisi, harapan). Di N1, makna figuratif lebih dominan — 規則に縛られる = terkekang peraturan. Pasangan aktif-pasif縛る/縛られる penting untuk dikuasai.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "古い慣習が人々の行動を縛っている。", "id": "Adat lama mengikat perilaku masyarakat.", "level": "n1", "tags": ["budaya"]},
-    {"jp": "法律は社会全体を縛るものだ。", "id": "Hukum adalah sesuatu yang mengikat seluruh masyarakat.", "level": "n1", "tags": ["hukum-aturan"]},
-    {"jp": "固定観念に縛られず、自由に考えることが大切だ。", "id": "Penting untuk berpikir bebas tanpa terikat stereotip.", "level": "n1", "tags": ["pikiran-opini"]}
+    {
+      "jp": "古い慣習が人々の行動を縛っている。",
+      "id": "Adat lama mengikat perilaku masyarakat.",
+      "level": "n1",
+      "tags": [
+        "budaya"
+      ]
+    },
+    {
+      "jp": "法律は社会全体を縛るものだ。",
+      "id": "Hukum adalah sesuatu yang mengikat seluruh masyarakat.",
+      "level": "n1",
+      "tags": [
+        "hukum-aturan"
+      ]
+    },
+    {
+      "jp": "固定観念に縛られず、自由に考えることが大切だ。",
+      "id": "Penting untuk berpikir bebas tanpa terikat stereotip.",
+      "level": "n1",
+      "tags": [
+        "pikiran-opini"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00076"],
+  "see_also": [
+    "vg-n1-00076"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1476050",
+  "frequency": 6000,
+  "meanings": [
+    {
+      "en": "to tie; to bind; to fasten",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to restrict (freedom); to tie down (with rules, regulations, etc.); to fetter",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "conjugations": {
+    "dict": "しばる",
+    "masu": "しばります",
+    "te": "しばって",
+    "ta": "しばった",
+    "nai": "しばらない",
+    "potential": "しばれる",
+    "passive": "しばられる",
+    "causative": "しばらせる",
+    "volitional": "しばろう",
+    "cond_ba": "しばれば",
+    "cond_tara": "しばったら"
+  }
 },
 
 {
@@ -651,21 +2395,63 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["hubungan-konsep", "emosi-negatif"],
+  "domain": [
+    "hubungan-konsep",
+    "emosi-negatif"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["teman", "umum"],
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
   "nuance": "Bentuk pasif dari 縛る, tapi sering digunakan secara mandiri dengan nuansa emosional kuat. 過去に縛られる = terbelenggu masa lalu. Menggambarkan keadaan tidak bebas karena faktor eksternal atau internal.",
   "conj_type": "ichidan",
   "examples": [
-    {"jp": "過去の失敗に縛られて前へ進めない。", "id": "Terbelenggu oleh kegagalan masa lalu sehingga tidak bisa maju.", "level": "n1", "tags": ["emosi-negatif"]},
-    {"jp": "責任感に縛られて、休めない毎日が続く。", "id": "Terikat oleh rasa tanggung jawab, hari-hari tanpa istirahat pun berlanjut.", "level": "n1", "tags": ["pekerjaan"]},
-    {"jp": "制度に縛られない柔軟な発想が求められる。", "id": "Diperlukan pemikiran fleksibel yang tidak terkekang oleh sistem.", "level": "n1", "tags": ["bisnis"]}
+    {
+      "jp": "過去の失敗に縛られて前へ進めない。",
+      "id": "Terbelenggu oleh kegagalan masa lalu sehingga tidak bisa maju.",
+      "level": "n1",
+      "tags": [
+        "emosi-negatif"
+      ]
+    },
+    {
+      "jp": "責任感に縛られて、休めない毎日が続く。",
+      "id": "Terikat oleh rasa tanggung jawab, hari-hari tanpa istirahat pun berlanjut.",
+      "level": "n1",
+      "tags": [
+        "pekerjaan"
+      ]
+    },
+    {
+      "jp": "制度に縛られない柔軟な発想が求められる。",
+      "id": "Diperlukan pemikiran fleksibel yang tidak terkekang oleh sistem.",
+      "level": "n1",
+      "tags": [
+        "bisnis"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00075"],
+  "see_also": [
+    "vg-n1-00075"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "conjugations": {
+    "dict": "しばられる",
+    "masu": "しばられます",
+    "te": "しばられて",
+    "ta": "しばられた",
+    "nai": "しばられない",
+    "potential": "しばられられる",
+    "passive": "しばられられる",
+    "causative": "しばられさせる",
+    "volitional": "しばられよう",
+    "cond_ba": "しばられれば",
+    "cond_tara": "しばられたら"
+  }
 },
 
 {
@@ -680,21 +2466,75 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["sebab-akibat", "politik-masyarakat"],
+  "domain": [
+    "sebab-akibat",
+    "politik-masyarakat"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum", "rekan"],
+  "lawan_bicara": [
+    "umum",
+    "rekan"
+  ],
   "nuance": "Lebih kuat dan formal dari 邪魔する. Sering digunakan untuk hambatan struktural atau kekuatan besar yang menghalangi kemajuan atau pencapaian tujuan. Berkonotasi resistensi aktif dan signifikan.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "官僚主義が改革を阻んでいる。", "id": "Birokrasi menghambat jalannya reformasi.", "level": "n1", "tags": ["politik-masyarakat"]},
-    {"jp": "悪天候が救助活動を阻んだ。", "id": "Cuaca buruk menghalangi kegiatan penyelamatan.", "level": "n1", "tags": ["alam-lingkungan"]},
-    {"jp": "偏見が人材の活躍を阻むことがある。", "id": "Prasangka bisa menghalangi potensi seseorang untuk berkembang.", "level": "n1", "tags": ["emosi-sosial"]}
+    {
+      "jp": "官僚主義が改革を阻んでいる。",
+      "id": "Birokrasi menghambat jalannya reformasi.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "悪天候が救助活動を阻んだ。",
+      "id": "Cuaca buruk menghalangi kegiatan penyelamatan.",
+      "level": "n1",
+      "tags": [
+        "alam-lingkungan"
+      ]
+    },
+    {
+      "jp": "偏見が人材の活躍を阻むことがある。",
+      "id": "Prasangka bisa menghalangi potensi seseorang untuk berkembang.",
+      "level": "n1",
+      "tags": [
+        "emosi-sosial"
+      ]
+    }
   ],
   "synonyms": [],
-  "antonyms": ["vg-n1-00078"],
+  "antonyms": [
+    "vg-n1-00078"
+  ],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1397800",
+  "frequency": 6500,
+  "forms": [
+    {
+      "word": "阻む",
+      "info": []
+    },
+    {
+      "word": "沮む",
+      "info": []
+    }
+  ],
+  "conjugations": {
+    "dict": "はばむ",
+    "masu": "はばみます",
+    "te": "はばんで",
+    "ta": "はばんだ",
+    "nai": "はばまない",
+    "potential": "はばめる",
+    "passive": "はばまれる",
+    "causative": "はばませる",
+    "volitional": "はばもう",
+    "cond_ba": "はばめば",
+    "cond_tara": "はばんだら"
+  }
 },
 
 {
@@ -709,21 +2549,77 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["bisnis", "bahasa-komunikasi"],
+  "domain": [
+    "bisnis",
+    "bahasa-komunikasi"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan", "umum"],
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
   "nuance": "Mendorong orang lain atau proses untuk bergerak/bertindak. Lebih halus dari 命令する atau 強制する — ada nuansa bimbingan atau desakan yang sopan dan terstruktur. Sering muncul dalam dokumen resmi dan kebijakan.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "政府は企業に省エネを促す政策を取った。", "id": "Pemerintah mengambil kebijakan yang mendorong perusahaan untuk hemat energi.", "level": "n1", "tags": ["politik-masyarakat"]},
-    {"jp": "早期退職を促す施策が発表された。", "id": "Diumumkan kebijakan yang mendorong pensiun dini.", "level": "n1", "tags": ["bisnis"]},
-    {"jp": "教師は生徒の自主的な学びを促した。", "id": "Guru mendorong pembelajaran mandiri dari para murid.", "level": "n1", "tags": ["pendidikan"]}
+    {
+      "jp": "政府は企業に省エネを促す政策を取った。",
+      "id": "Pemerintah mengambil kebijakan yang mendorong perusahaan untuk hemat energi.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "早期退職を促す施策が発表された。",
+      "id": "Diumumkan kebijakan yang mendorong pensiun dini.",
+      "level": "n1",
+      "tags": [
+        "bisnis"
+      ]
+    },
+    {
+      "jp": "教師は生徒の自主的な学びを促した。",
+      "id": "Guru mendorong pembelajaran mandiri dari para murid.",
+      "level": "n1",
+      "tags": [
+        "pendidikan"
+      ]
+    }
   ],
   "synonyms": [],
-  "antonyms": ["vg-n1-00077"],
+  "antonyms": [
+    "vg-n1-00077"
+  ],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1403760",
+  "frequency": 13500,
+  "meanings": [
+    {
+      "en": "to urge; to encourage; to press; to prompt; to draw (attention to)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to stimulate (e.g. growth); to hasten (e.g. development); to quicken; to accelerate; to promote",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "conjugations": {
+    "dict": "うながす",
+    "masu": "うながします",
+    "te": "うながして",
+    "ta": "うながした",
+    "nai": "うながさない",
+    "potential": "うながせる",
+    "passive": "うながされる",
+    "causative": "うながさせる",
+    "volitional": "うながそう",
+    "cond_ba": "うながせば",
+    "cond_tara": "うながしたら"
+  }
 },
 
 {
@@ -738,21 +2634,82 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["karakter", "keputusan"],
+  "domain": [
+    "karakter",
+    "keputusan"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum", "rekan"],
+  "lawan_bicara": [
+    "umum",
+    "rekan"
+  ],
   "nuance": "Dua makna: (1) menembus secara fisik (anak panah menembus), (2) mempertahankan prinsip atau keyakinan sampai akhir tanpa berkompromi. 信念を貫く = teguh pada keyakinan. Nuansa kegigihan yang kuat.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "彼はどんな圧力にも屈せず、信念を貫いた。", "id": "Ia tetap teguh pada keyakinannya tanpa menyerah pada tekanan apapun.", "level": "n1", "tags": ["karakter"]},
-    {"jp": "最後まで主張を貫くことが重要だ。", "id": "Penting untuk mempertahankan argumen hingga akhir.", "level": "n1", "tags": ["bisnis"]},
-    {"jp": "弾丸は壁を貫いた。", "id": "Peluru menembus dinding.", "level": "n1", "tags": ["umum"]}
+    {
+      "jp": "彼はどんな圧力にも屈せず、信念を貫いた。",
+      "id": "Ia tetap teguh pada keyakinannya tanpa menyerah pada tekanan apapun.",
+      "level": "n1",
+      "tags": [
+        "karakter"
+      ]
+    },
+    {
+      "jp": "最後まで主張を貫くことが重要だ。",
+      "id": "Penting untuk mempertahankan argumen hingga akhir.",
+      "level": "n1",
+      "tags": [
+        "bisnis"
+      ]
+    },
+    {
+      "jp": "弾丸は壁を貫いた。",
+      "id": "Peluru menembus dinding.",
+      "level": "n1",
+      "tags": [
+        "umum"
+      ]
+    }
   ],
   "synonyms": [],
-  "antonyms": ["vg-n1-00080"],
+  "antonyms": [
+    "vg-n1-00080"
+  ],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1215070",
+  "frequency": 1000,
+  "meanings": [
+    {
+      "en": "to go through; to pierce; to penetrate",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to run through (e.g. a river through a city); to pass through",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to stick to (opinion, principles, etc.); to carry out; to persist with; to keep (e.g. faith); to maintain (e.g. independence)",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "conjugations": {
+    "dict": "つらぬく",
+    "masu": "つらぬきます",
+    "te": "つらぬいて",
+    "ta": "つらぬいた",
+    "nai": "つらぬかない",
+    "potential": "つらぬける",
+    "passive": "つらぬかれる",
+    "causative": "つらぬかせる",
+    "volitional": "つらぬこう",
+    "cond_ba": "つらぬけば",
+    "cond_tara": "つらぬいたら"
+  }
 },
 
 {
@@ -767,21 +2724,79 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["emosi", "karakter"],
+  "domain": [
+    "emosi",
+    "karakter"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["teman", "umum"],
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
   "nuance": "Digunakan ketika sesuatu yang sebelumnya kokoh mulai kehilangan stabilitasnya — kepercayaan, keyakinan, posisi tawar, atau hubungan. 信念が揺らぐ = keyakinan mulai goyah. Berbeda dari ただ動く.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "連敗が続き、チームへの信頼が揺らぎ始めた。", "id": "Kekalahan beruntun membuat kepercayaan pada tim mulai goyah.", "level": "n1", "tags": ["emosi"]},
-    {"jp": "困難に直面しても、彼の信念は揺らがなかった。", "id": "Meski menghadapi kesulitan, keyakinannya tidak pernah goyah.", "level": "n1", "tags": ["karakter"]},
-    {"jp": "市場の不安定化で経済への信頼が揺らいでいる。", "id": "Ketidakstabilan pasar membuat kepercayaan terhadap perekonomian ikut goyah.", "level": "n1", "tags": ["ekonomi-keuangan"]}
+    {
+      "jp": "連敗が続き、チームへの信頼が揺らぎ始めた。",
+      "id": "Kekalahan beruntun membuat kepercayaan pada tim mulai goyah.",
+      "level": "n1",
+      "tags": [
+        "emosi"
+      ]
+    },
+    {
+      "jp": "困難に直面しても、彼の信念は揺らがなかった。",
+      "id": "Meski menghadapi kesulitan, keyakinannya tidak pernah goyah.",
+      "level": "n1",
+      "tags": [
+        "karakter"
+      ]
+    },
+    {
+      "jp": "市場の不安定化で経済への信頼が揺らいでいる。",
+      "id": "Ketidakstabilan pasar membuat kepercayaan terhadap perekonomian ikut goyah.",
+      "level": "n1",
+      "tags": [
+        "ekonomi-keuangan"
+      ]
+    }
   ],
   "synonyms": [],
-  "antonyms": ["vg-n1-00079"],
-  "see_also": ["vg-n1-00081"],
+  "antonyms": [
+    "vg-n1-00079"
+  ],
+  "see_also": [
+    "vg-n1-00081"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1545630",
+  "frequency": 10000,
+  "meanings": [
+    {
+      "en": "to swing; to sway; to shake; to tremble",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to waver; to feel shaken; to become unstable",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "conjugations": {
+    "dict": "ゆらぐ",
+    "masu": "ゆらぎます",
+    "te": "ゆらいで",
+    "ta": "ゆらいだ",
+    "nai": "ゆらがない",
+    "potential": "ゆらげる",
+    "passive": "ゆらがれる",
+    "causative": "ゆらがせる",
+    "volitional": "ゆらごう",
+    "cond_ba": "ゆらげば",
+    "cond_tara": "ゆらいだら"
+  }
 },
 
 {
@@ -796,21 +2811,97 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["emosi", "hubungan-konsep"],
+  "domain": [
+    "emosi",
+    "hubungan-konsep"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum", "rekan"],
+  "lawan_bicara": [
+    "umum",
+    "rekan"
+  ],
   "nuance": "Bentuk transitif — seseorang atau sesuatu secara aktif mengguncang pihak lain. 心を揺さぶる = menggerakkan/mengguncang hati. Digunakan dalam konteks retorika, seni, konflik, atau interogasi.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "その映画は観る者の心を深く揺さぶった。", "id": "Film itu mengguncang hati siapa pun yang menontonnya dengan sangat dalam.", "level": "n1", "tags": ["hiburan", "emosi"]},
-    {"jp": "対立候補は聴衆の感情を揺さぶる演説をした。", "id": "Kandidat rival memberikan pidato yang mengguncang emosi hadirin.", "level": "n1", "tags": ["politik-masyarakat"]},
-    {"jp": "既存の価値観を揺さぶる問いかけが必要だ。", "id": "Diperlukan pertanyaan yang menggoyahkan nilai-nilai yang sudah ada.", "level": "n1", "tags": ["pikiran-opini"]}
+    {
+      "jp": "その映画は観る者の心を深く揺さぶった。",
+      "id": "Film itu mengguncang hati siapa pun yang menontonnya dengan sangat dalam.",
+      "level": "n1",
+      "tags": [
+        "hiburan",
+        "emosi"
+      ]
+    },
+    {
+      "jp": "対立候補は聴衆の感情を揺さぶる演説をした。",
+      "id": "Kandidat rival memberikan pidato yang mengguncang emosi hadirin.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "既存の価値観を揺さぶる問いかけが必要だ。",
+      "id": "Diperlukan pertanyaan yang menggoyahkan nilai-nilai yang sudah ada.",
+      "level": "n1",
+      "tags": [
+        "pikiran-opini"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00080"],
+  "see_also": [
+    "vg-n1-00080"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1545600",
+  "frequency": 11500,
+  "forms": [
+    {
+      "word": "揺さぶる",
+      "info": []
+    },
+    {
+      "word": "揺さ振る",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "to shake; to jolt; to rock; to swing; to sway",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to shake (e.g. the political world); to disturb; to shock; to upset",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to put off a batter (by varying one's type of pitch)",
+      "misc": [],
+      "field": [
+        "baseball"
+      ]
+    }
+  ],
+  "conjugations": {
+    "dict": "ゆさぶる",
+    "masu": "ゆさぶります",
+    "te": "ゆさぶって",
+    "ta": "ゆさぶった",
+    "nai": "ゆさぶらない",
+    "potential": "ゆさぶれる",
+    "passive": "ゆさぶられる",
+    "causative": "ゆさぶらせる",
+    "volitional": "ゆさぶろう",
+    "cond_ba": "ゆさぶれば",
+    "cond_tara": "ゆさぶったら"
+  }
 },
 
 {
@@ -825,21 +2916,82 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["keputusan", "ilmu-pengetahuan"],
+  "domain": [
+    "keputusan",
+    "ilmu-pengetahuan"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum", "rekan"],
+  "lawan_bicara": [
+    "umum",
+    "rekan"
+  ],
   "nuance": "Digunakan ketika sesuatu yang sudah dianggap tetap atau definitif dibatalkan atau dibalikkan — putusan pengadilan, teori ilmiah, rezim. Berkonotasi dramatis, fundamental, dan tidak mudah dilakukan.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "新証拠が法廷の判決を覆した。", "id": "Bukti baru membalikkan putusan pengadilan.", "level": "n1", "tags": ["hukum-aturan"]},
-    {"jp": "その発見は従来の定説を覆すものだった。", "id": "Penemuan itu berhasil membantah teori yang selama ini berlaku.", "level": "n1", "tags": ["ilmu-pengetahuan"]},
-    {"jp": "予想を覆す大逆転が起きた。", "id": "Terjadi pembalikan besar yang menggulingkan semua prediksi.", "level": "n1", "tags": ["umum"]}
+    {
+      "jp": "新証拠が法廷の判決を覆した。",
+      "id": "Bukti baru membalikkan putusan pengadilan.",
+      "level": "n1",
+      "tags": [
+        "hukum-aturan"
+      ]
+    },
+    {
+      "jp": "その発見は従来の定説を覆すものだった。",
+      "id": "Penemuan itu berhasil membantah teori yang selama ini berlaku.",
+      "level": "n1",
+      "tags": [
+        "ilmu-pengetahuan"
+      ]
+    },
+    {
+      "jp": "予想を覆す大逆転が起きた。",
+      "id": "Terjadi pembalikan besar yang menggulingkan semua prediksi.",
+      "level": "n1",
+      "tags": [
+        "umum"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00083"],
+  "see_also": [
+    "vg-n1-00083"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1501490",
+  "frequency": 8000,
+  "meanings": [
+    {
+      "en": "to overturn; to capsize; to upset",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to overthrow (government etc.)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to reverse (decision etc.); to disprove (an established theory etc.); to overrule",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "conjugations": {
+    "dict": "くつがえす",
+    "masu": "くつがえします",
+    "te": "くつがえして",
+    "ta": "くつがえした",
+    "nai": "くつがえさない",
+    "potential": "くつがえせる",
+    "passive": "くつがえされる",
+    "causative": "くつがえさせる",
+    "volitional": "くつがえそう",
+    "cond_ba": "くつがえせば",
+    "cond_tara": "くつがえしたら"
+  }
 },
 
 {
@@ -854,21 +3006,77 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["keputusan", "hubungan-konsep"],
+  "domain": [
+    "keputusan",
+    "hubungan-konsep"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum", "rekan"],
+  "lawan_bicara": [
+    "umum",
+    "rekan"
+  ],
   "nuance": "Bentuk intransitif dari 覆す — sesuatu terbalik atau gugur (tidak ada agen yang disebutkan). 判決が覆る = putusan dibatalkan. Pasangan aktif (覆す) dan intransitif (覆る) ini sering diuji di N1.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "上訴により、一審の判決が覆った。", "id": "Melalui banding, putusan pengadilan tingkat pertama dibatalkan.", "level": "n1", "tags": ["hukum-aturan"]},
-    {"jp": "定説が覆ることは科学の進歩を示す。", "id": "Terbantahnya teori yang berlaku menunjukkan kemajuan ilmu pengetahuan.", "level": "n1", "tags": ["ilmu-pengetahuan"]},
-    {"jp": "形勢が覆り、劣勢だったチームが優勝した。", "id": "Keadaan berbalik, tim yang tadinya terdesak akhirnya meraih kemenangan.", "level": "n1", "tags": ["olahraga"]}
+    {
+      "jp": "上訴により、一審の判決が覆った。",
+      "id": "Melalui banding, putusan pengadilan tingkat pertama dibatalkan.",
+      "level": "n1",
+      "tags": [
+        "hukum-aturan"
+      ]
+    },
+    {
+      "jp": "定説が覆ることは科学の進歩を示す。",
+      "id": "Terbantahnya teori yang berlaku menunjukkan kemajuan ilmu pengetahuan.",
+      "level": "n1",
+      "tags": [
+        "ilmu-pengetahuan"
+      ]
+    },
+    {
+      "jp": "形勢が覆り、劣勢だったチームが優勝した。",
+      "id": "Keadaan berbalik, tim yang tadinya terdesak akhirnya meraih kemenangan.",
+      "level": "n1",
+      "tags": [
+        "olahraga"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00082"],
+  "see_also": [
+    "vg-n1-00082"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1501500",
+  "frequency": 22500,
+  "meanings": [
+    {
+      "en": "to topple over; to be overturned; to capsize",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to be overruled; to be reversed; to be discredited",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "conjugations": {
+    "dict": "くつがえる",
+    "masu": "くつがえります",
+    "te": "くつがえって",
+    "ta": "くつがえった",
+    "nai": "くつがえらない",
+    "potential": "くつがえれる",
+    "passive": "くつがえられる",
+    "causative": "くつがえらせる",
+    "volitional": "くつがえろう",
+    "cond_ba": "くつがえれば",
+    "cond_tara": "くつがえったら"
+  }
 },
 
 {
@@ -883,21 +3091,63 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["bisnis", "kualitas"],
+  "domain": [
+    "bisnis",
+    "kualitas"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["rekan", "umum"],
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
   "nuance": "Mengisi atau mengimbangi kekurangan dengan sesuatu yang lain. Bukan sekadar menambahkan — ada nuansa restorasi keseimbangan. 不足を補う (menutupi kekurangan), 弱点を補う (mengimbangi kelemahan).",
   "conj_type": "godan",
   "examples": [
-    {"jp": "互いの弱点を補い合うことで、チームは強くなる。", "id": "Dengan saling mengimbangi kelemahan masing-masing, tim menjadi lebih kuat.", "level": "n1", "tags": ["pekerjaan"]},
-    {"jp": "運動不足をサプリメントで補うのは限界がある。", "id": "Ada batasnya dalam menutupi kurang gerak dengan suplemen.", "level": "n1", "tags": ["kesehatan"]},
-    {"jp": "文章の不明瞭さを図で補った。", "id": "Ketidakjelasan dalam teks dilengkapi dengan diagram.", "level": "n1", "tags": ["bahasa-komunikasi"]}
+    {
+      "jp": "互いの弱点を補い合うことで、チームは強くなる。",
+      "id": "Dengan saling mengimbangi kelemahan masing-masing, tim menjadi lebih kuat.",
+      "level": "n1",
+      "tags": [
+        "pekerjaan"
+      ]
+    },
+    {
+      "jp": "運動不足をサプリメントで補うのは限界がある。",
+      "id": "Ada batasnya dalam menutupi kurang gerak dengan suplemen.",
+      "level": "n1",
+      "tags": [
+        "kesehatan"
+      ]
+    },
+    {
+      "jp": "文章の不明瞭さを図で補った。",
+      "id": "Ketidakjelasan dalam teks dilengkapi dengan diagram.",
+      "level": "n1",
+      "tags": [
+        "bahasa-komunikasi"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1514460",
+  "frequency": 21500,
+  "conjugations": {
+    "dict": "おぎなう",
+    "masu": "おぎないます",
+    "te": "おぎなって",
+    "ta": "おぎなった",
+    "nai": "おぎなわない",
+    "potential": "おぎなえる",
+    "passive": "おぎなわれる",
+    "causative": "おぎなわせる",
+    "volitional": "おぎなおう",
+    "cond_ba": "おぎなえば",
+    "cond_tara": "おぎなったら"
+  }
 },
 
 {
@@ -912,21 +3162,95 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["pekerjaan", "politik-masyarakat"],
+  "domain": [
+    "pekerjaan",
+    "politik-masyarakat"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum", "rekan"],
+  "lawan_bicara": [
+    "umum",
+    "rekan"
+  ],
   "nuance": "Lebih dari sekadar 'bertanggung jawab' — ada nuansa beban yang besar dan penting dipikul dengan penuh kesadaran dan kehormatan. 未来を担う (memikul masa depan). Sering digunakan dalam konteks nasional atau kolektif.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "若者こそが日本の未来を担う存在だ。", "id": "Generasi muda adalah mereka yang memikul masa depan Jepang.", "level": "n1", "tags": ["politik-masyarakat"]},
-    {"jp": "重要な役割を担う人材が求められている。", "id": "Dibutuhkan sumber daya manusia yang memikul peran penting.", "level": "n1", "tags": ["pekerjaan"]},
-    {"jp": "プロジェクトの成否を担う決断が迫られた。", "id": "Ia menghadapi keputusan yang memikul nasib berhasil-tidaknya proyek.", "level": "n1", "tags": ["bisnis"]}
+    {
+      "jp": "若者こそが日本の未来を担う存在だ。",
+      "id": "Generasi muda adalah mereka yang memikul masa depan Jepang.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "重要な役割を担う人材が求められている。",
+      "id": "Dibutuhkan sumber daya manusia yang memikul peran penting.",
+      "level": "n1",
+      "tags": [
+        "pekerjaan"
+      ]
+    },
+    {
+      "jp": "プロジェクトの成否を担う決断が迫られた。",
+      "id": "Ia menghadapi keputusan yang memikul nasib berhasil-tidaknya proyek.",
+      "level": "n1",
+      "tags": [
+        "bisnis"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00086"],
+  "see_also": [
+    "vg-n1-00086"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1599900",
+  "frequency": 20500,
+  "forms": [
+    {
+      "word": "担う",
+      "info": []
+    },
+    {
+      "word": "荷う",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "荷なう",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "to carry on one's shoulder; to shoulder; to bear",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to bear (a burden, responsibility, etc.); to take upon oneself",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "conjugations": {
+    "dict": "になう",
+    "masu": "にないます",
+    "te": "になって",
+    "ta": "になった",
+    "nai": "になわない",
+    "potential": "になえる",
+    "passive": "になわれる",
+    "causative": "になわせる",
+    "volitional": "になおう",
+    "cond_ba": "になえば",
+    "cond_tara": "になったら"
+  }
 },
 
 {
@@ -941,21 +3265,95 @@ window.vocabN1 = [
   "common": false,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["politik-masyarakat", "hubungan-konsep"],
+  "domain": [
+    "politik-masyarakat",
+    "hubungan-konsep"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Seseorang didorong atau diusung ke suatu posisi (kandidat, pemimpin simbolis) oleh pihak lain — sering tanpa kehendak penuh orang tersebut. Ada nuansa politis dan sedikit manipulatif atau setidaknya tidak sepenuhnya sukarela.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "党は人気俳優を候補者として担ぎ出した。", "id": "Partai mendorong aktor populer itu sebagai kandidat.", "level": "n1", "tags": ["politik-masyarakat"]},
-    {"jp": "渋る彼を無理やり代表として担ぎ出した。", "id": "Meski ia enggan, ia tetap dipaksa didorong sebagai perwakilan.", "level": "n1", "tags": ["hubungan-konsep"]},
-    {"jp": "御輿を担ぎ出す祭りの準備が始まった。", "id": "Persiapan festival untuk mengusung mikoshi pun dimulai.", "level": "n1", "tags": ["konsep-jepang"]}
+    {
+      "jp": "党は人気俳優を候補者として担ぎ出した。",
+      "id": "Partai mendorong aktor populer itu sebagai kandidat.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "渋る彼を無理やり代表として担ぎ出した。",
+      "id": "Meski ia enggan, ia tetap dipaksa didorong sebagai perwakilan.",
+      "level": "n1",
+      "tags": [
+        "hubungan-konsep"
+      ]
+    },
+    {
+      "jp": "御輿を担ぎ出す祭りの準備が始まった。",
+      "id": "Persiapan festival untuk mengusung mikoshi pun dimulai.",
+      "level": "n1",
+      "tags": [
+        "konsep-jepang"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00085"],
+  "see_also": [
+    "vg-n1-00085"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1850550",
+  "frequency": 22500,
+  "forms": [
+    {
+      "word": "担ぎ出す",
+      "info": []
+    },
+    {
+      "word": "かつぎ出す",
+      "info": []
+    },
+    {
+      "word": "担ぎだす",
+      "info": []
+    }
+  ],
+  "meanings": [
+    {
+      "en": "to carry something out of a place",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to elevate (someone) to a high position; to convince someone to accept a post (esp. through flattery)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to mention something; to broach a topic; to bring up (a subject); to raise (an issue); to mention",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "conjugations": {
+    "dict": "かつぎだす",
+    "masu": "かつぎだします",
+    "te": "かつぎだして",
+    "ta": "かつぎだした",
+    "nai": "かつぎださない",
+    "potential": "かつぎだせる",
+    "passive": "かつぎだされる",
+    "causative": "かつぎださせる",
+    "volitional": "かつぎだそう",
+    "cond_ba": "かつぎだせば",
+    "cond_tara": "かつぎだしたら"
+  }
 },
 
 {
@@ -970,21 +3368,90 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["kuantitas", "hubungan-konsep"],
+  "domain": [
+    "kuantitas",
+    "hubungan-konsep"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum", "rekan"],
+  "lawan_bicara": [
+    "umum",
+    "rekan"
+  ],
   "nuance": "Menunjukkan bahwa sesuatu mencapai batas, skala, atau cakupan tertentu. ～に及ぶ sering digunakan dalam laporan formal untuk menyatakan rentang waktu, jumlah, atau dampak. Juga digunakan dalam ~に及ばない (tidak perlu/tidak sebanding).",
   "conj_type": "godan",
   "examples": [
-    {"jp": "被害は数千人に及ぶとみられる。", "id": "Korban diperkirakan mencapai ribuan orang.", "level": "n1", "tags": ["politik-masyarakat"]},
-    {"jp": "議論は深夜に及んだ。", "id": "Diskusi berlangsung hingga larut malam.", "level": "n1", "tags": ["bisnis"]},
-    {"jp": "その影響は次世代にも及ぶだろう。", "id": "Dampaknya kemungkinan akan meluas hingga generasi berikutnya.", "level": "n1", "tags": ["sebab-akibat"]}
+    {
+      "jp": "被害は数千人に及ぶとみられる。",
+      "id": "Korban diperkirakan mencapai ribuan orang.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "議論は深夜に及んだ。",
+      "id": "Diskusi berlangsung hingga larut malam.",
+      "level": "n1",
+      "tags": [
+        "bisnis"
+      ]
+    },
+    {
+      "jp": "その影響は次世代にも及ぶだろう。",
+      "id": "Dampaknya kemungkinan akan meluas hingga generasi berikutnya.",
+      "level": "n1",
+      "tags": [
+        "sebab-akibat"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1228170",
+  "frequency": 4500,
+  "meanings": [
+    {
+      "en": "to reach; to amount to; to befall; to happen to; to extend; to go on (for, until)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to be up to the task; to come up to",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to compare with; to be a match (for)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to resort (to an act)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to require (to do)",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "conjugations": {
+    "dict": "およぶ",
+    "masu": "およびます",
+    "te": "およんで",
+    "ta": "およんだ",
+    "nai": "およばない",
+    "potential": "およべる",
+    "passive": "およばれる",
+    "causative": "およばせる",
+    "volitional": "およぼう",
+    "cond_ba": "およべば",
+    "cond_tara": "およんだら"
+  }
 },
 
 {
@@ -999,21 +3466,74 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["alam-lingkungan", "pikiran-opini"],
+  "domain": [
+    "alam-lingkungan",
+    "pikiran-opini"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Bisa literal (memandang panorama luas dari ketinggian) atau figuratif (meninjau keseluruhan situasi secara komprehensif). 全体を見渡す = melihat gambaran besar. Nuansa luas dan komprehensif.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "丘の上から街全体を見渡すことができた。", "id": "Dari atas bukit, seluruh kota dapat dipandang secara menyeluruh.", "level": "n1", "tags": ["alam-lingkungan"]},
-    {"jp": "業界全体を見渡した上で戦略を立てる。", "id": "Strategi disusun setelah meninjau secara menyeluruh keseluruhan industri.", "level": "n1", "tags": ["bisnis"]},
-    {"jp": "歴史を見渡せば、同じ過ちが繰り返されている。", "id": "Jika kita memandang sejarah secara menyeluruh, kesalahan yang sama terus terulang.", "level": "n1", "tags": ["ilmu-pengetahuan"]}
+    {
+      "jp": "丘の上から街全体を見渡すことができた。",
+      "id": "Dari atas bukit, seluruh kota dapat dipandang secara menyeluruh.",
+      "level": "n1",
+      "tags": [
+        "alam-lingkungan"
+      ]
+    },
+    {
+      "jp": "業界全体を見渡した上で戦略を立てる。",
+      "id": "Strategi disusun setelah meninjau secara menyeluruh keseluruhan industri.",
+      "level": "n1",
+      "tags": [
+        "bisnis"
+      ]
+    },
+    {
+      "jp": "歴史を見渡せば、同じ過ちが繰り返されている。",
+      "id": "Jika kita memandang sejarah secara menyeluruh, kesalahan yang sama terus terulang.",
+      "level": "n1",
+      "tags": [
+        "ilmu-pengetahuan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00063"],
+  "see_also": [
+    "vg-n1-00063"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1259920",
+  "frequency": 14000,
+  "forms": [
+    {
+      "word": "見渡す",
+      "info": []
+    },
+    {
+      "word": "見わたす",
+      "info": []
+    }
+  ],
+  "conjugations": {
+    "dict": "みわたす",
+    "masu": "みわたします",
+    "te": "みわたして",
+    "ta": "みわたした",
+    "nai": "みわたさない",
+    "potential": "みわたせる",
+    "passive": "みわたされる",
+    "causative": "みわたさせる",
+    "volitional": "みわたそう",
+    "cond_ba": "みわたせば",
+    "cond_tara": "みわたしたら"
+  }
 },
 
 {
@@ -1028,21 +3548,63 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["sebab-akibat", "keputusan"],
+  "domain": [
+    "sebab-akibat",
+    "keputusan"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum", "rekan"],
+  "lawan_bicara": [
+    "umum",
+    "rekan"
+  ],
   "nuance": "Lebih kuat dari ただ影響する — 左右する menyiratkan pengaruh yang benar-benar menentukan arah secara fundamental, bukan sekadar sedikit mempengaruhi. 結果を左右する = menentukan hasilnya secara nyata.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "この試験の結果が進路を左右する。", "id": "Hasil ujian ini akan menentukan arah masa depanku.", "level": "n1", "tags": ["pendidikan"]},
-    {"jp": "リーダーの判断が組織の命運を左右した。", "id": "Keputusan pemimpin menentukan nasib organisasi.", "level": "n1", "tags": ["bisnis"]},
-    {"jp": "天候がイベントの成否を大きく左右する。", "id": "Cuaca sangat mempengaruhi berhasil-tidaknya acara tersebut.", "level": "n1", "tags": ["alam-lingkungan"]}
+    {
+      "jp": "この試験の結果が進路を左右する。",
+      "id": "Hasil ujian ini akan menentukan arah masa depanku.",
+      "level": "n1",
+      "tags": [
+        "pendidikan"
+      ]
+    },
+    {
+      "jp": "リーダーの判断が組織の命運を左右した。",
+      "id": "Keputusan pemimpin menentukan nasib organisasi.",
+      "level": "n1",
+      "tags": [
+        "bisnis"
+      ]
+    },
+    {
+      "jp": "天候がイベントの成否を大きく左右する。",
+      "id": "Cuaca sangat mempengaruhi berhasil-tidaknya acara tersebut.",
+      "level": "n1",
+      "tags": [
+        "alam-lingkungan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00090"],
+  "see_also": [
+    "vg-n1-00090"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "conjugations": {
+    "dict": "さゆうする",
+    "masu": "さゆうします",
+    "te": "さゆうして",
+    "ta": "さゆうした",
+    "nai": "さゆうしない",
+    "potential": "さゆうできる",
+    "passive": "さゆうされる",
+    "causative": "さゆうさせる",
+    "volitional": "さゆうしよう",
+    "cond_ba": "さゆうすれば",
+    "cond_tara": "さゆうしたら"
+  }
 },
 
 {
@@ -1057,21 +3619,63 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["sebab-akibat", "emosi-negatif"],
+  "domain": [
+    "sebab-akibat",
+    "emosi-negatif"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum", "rekan"],
+  "lawan_bicara": [
+    "umum",
+    "rekan"
+  ],
   "nuance": "Bentuk pasif dari 左右する, digunakan secara mandiri. Menggambarkan situasi di mana hasil atau tindakan seseorang benar-benar ditentukan oleh faktor luar. 感情に左右される = dikontrol oleh emosi. Berkonotasi kurangnya kendali diri.",
   "conj_type": "ichidan",
   "examples": [
-    {"jp": "感情に左右されず、冷静に判断することが大切だ。", "id": "Penting untuk menilai dengan tenang tanpa dikuasai oleh emosi.", "level": "n1", "tags": ["keputusan"]},
-    {"jp": "輸出産業は為替相場に大きく左右される。", "id": "Industri ekspor sangat ditentukan oleh nilai tukar mata uang.", "level": "n1", "tags": ["ekonomi-keuangan"]},
-    {"jp": "評価が人間関係に左右されるのは問題だ。", "id": "Penilaian yang ditentukan oleh hubungan personal adalah masalah serius.", "level": "n1", "tags": ["pekerjaan"]}
+    {
+      "jp": "感情に左右されず、冷静に判断することが大切だ。",
+      "id": "Penting untuk menilai dengan tenang tanpa dikuasai oleh emosi.",
+      "level": "n1",
+      "tags": [
+        "keputusan"
+      ]
+    },
+    {
+      "jp": "輸出産業は為替相場に大きく左右される。",
+      "id": "Industri ekspor sangat ditentukan oleh nilai tukar mata uang.",
+      "level": "n1",
+      "tags": [
+        "ekonomi-keuangan"
+      ]
+    },
+    {
+      "jp": "評価が人間関係に左右されるのは問題だ。",
+      "id": "Penilaian yang ditentukan oleh hubungan personal adalah masalah serius.",
+      "level": "n1",
+      "tags": [
+        "pekerjaan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00089"],
+  "see_also": [
+    "vg-n1-00089"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "conjugations": {
+    "dict": "さゆうされる",
+    "masu": "さゆうされます",
+    "te": "さゆうされて",
+    "ta": "さゆうされた",
+    "nai": "さゆうされない",
+    "potential": "さゆうされられる",
+    "passive": "さゆうされられる",
+    "causative": "さゆうされさせる",
+    "volitional": "さゆうされよう",
+    "cond_ba": "さゆうされれば",
+    "cond_tara": "さゆうされたら"
+  }
 },
 
 {
@@ -1086,21 +3690,77 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["emosi", "sastra", "budaya"],
+  "domain": [
+    "emosi",
+    "sastra",
+    "budaya"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 作り出す (membuat secara aktif), 醸し出す menyiratkan suasana atau kesan yang muncul secara organik dan samar — seperti aroma yang meresap tanpa disengaja. Selalu digunakan untuk hal-hal yang terasa alami, bukan dibuat-buat.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "その古い建物は独特の雰囲気を<b>醸し出して</b>いた。", "id": "Gedung tua itu memancarkan suasana yang khas dan unik.", "level": "n1", "tags": ["budaya"]},
-    {"jp": "彼女の話し方は不思議な温かみを<b>醸し出す</b>。", "id": "Cara bicaranya secara alami menciptakan kehangatan yang sulit dijelaskan.", "level": "n1", "tags": ["emosi"]},
-    {"jp": "このインテリアは洗練された大人の雰囲気を<b>醸し出して</b>いる。", "id": "Interior ini memancarkan suasana dewasa yang elegan secara halus.", "level": "n1", "tags": ["budaya"]}
+    {
+      "jp": "その古い建物は独特の雰囲気を<b>醸し出して</b>いた。",
+      "id": "Gedung tua itu memancarkan suasana yang khas dan unik.",
+      "level": "n1",
+      "tags": [
+        "budaya"
+      ]
+    },
+    {
+      "jp": "彼女の話し方は不思議な温かみを<b>醸し出す</b>。",
+      "id": "Cara bicaranya secara alami menciptakan kehangatan yang sulit dijelaskan.",
+      "level": "n1",
+      "tags": [
+        "emosi"
+      ]
+    },
+    {
+      "jp": "このインテリアは洗練された大人の雰囲気を<b>醸し出して</b>いる。",
+      "id": "Interior ini memancarkan suasana dewasa yang elegan secara halus.",
+      "level": "n1",
+      "tags": [
+        "budaya"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1357060",
+  "frequency": 19500,
+  "forms": [
+    {
+      "word": "醸し出す",
+      "info": []
+    },
+    {
+      "word": "かもし出す",
+      "info": []
+    },
+    {
+      "word": "醸しだす",
+      "info": []
+    }
+  ],
+  "conjugations": {
+    "dict": "かもしだす",
+    "masu": "かもしだします",
+    "te": "かもしだして",
+    "ta": "かもしだした",
+    "nai": "かもしださない",
+    "potential": "かもしだせる",
+    "passive": "かもしだされる",
+    "causative": "かもしださせる",
+    "volitional": "かもしだそう",
+    "cond_ba": "かもしだせば",
+    "cond_tara": "かもしだしたら"
+  }
 },
 
 {
@@ -1115,20 +3775,68 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["pikiran-opini", "ilmu-pengetahuan", "bahasa-komunikasi"],
+  "domain": [
+    "pikiran-opini",
+    "ilmu-pengetahuan",
+    "bahasa-komunikasi"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan", "umum"],
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
   "nuance": "Berbeda dari 証明する (membuktikan secara definitif), 裏付ける berarti memperkuat suatu klaim dengan dukungan bukti atau data — cocok untuk argumen yang diperkuat, bukan hanya dibuktikan secara absolut. 裏付けとなるデータ = data pendukung yang menguatkan.",
   "conj_type": "ichidan",
   "examples": [
-    {"jp": "この研究結果は仮説を<b>裏付ける</b>重要なデータだ。", "id": "Hasil penelitian ini adalah data penting yang memperkuat hipotesis tersebut.", "level": "n1", "tags": ["ilmu-pengetahuan"]},
-    {"jp": "目撃者の証言が容疑者の供述を<b>裏付けた</b>。", "id": "Kesaksian saksi mata mengkonfirmasi pernyataan tersangka.", "level": "n1", "tags": ["hukum-aturan"]}
+    {
+      "jp": "この研究結果は仮説を<b>裏付ける</b>重要なデータだ。",
+      "id": "Hasil penelitian ini adalah data penting yang memperkuat hipotesis tersebut.",
+      "level": "n1",
+      "tags": [
+        "ilmu-pengetahuan"
+      ]
+    },
+    {
+      "jp": "目撃者の証言が容疑者の供述を<b>裏付けた</b>。",
+      "id": "Kesaksian saksi mata mengkonfirmasi pernyataan tersangka.",
+      "level": "n1",
+      "tags": [
+        "hukum-aturan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1550590",
+  "frequency": 23000,
+  "forms": [
+    {
+      "word": "裏付ける",
+      "info": []
+    },
+    {
+      "word": "裏づける",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "conjugations": {
+    "dict": "うらづける",
+    "masu": "うらづけます",
+    "te": "うらづけて",
+    "ta": "うらづけた",
+    "nai": "うらづけない",
+    "potential": "うらづけられる",
+    "passive": "うらづけられる",
+    "causative": "うらづけさせる",
+    "volitional": "うらづけよう",
+    "cond_ba": "うらづければ",
+    "cond_tara": "うらづけたら"
+  }
 },
 
 {
@@ -1143,20 +3851,78 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["pikiran-opini", "keputusan", "bisnis"],
+  "domain": [
+    "pikiran-opini",
+    "keputusan",
+    "bisnis"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum", "rekan"],
+  "lawan_bicara": [
+    "umum",
+    "rekan"
+  ],
   "nuance": "Berbeda dari 見通す (melihat atau memperkirakan apa yang akan terjadi), 見据える menekankan sikap menatap dengan mantap dan sadar — ada unsur kesiapan dan determinasi. 将来を見据えた戦略 = strategi yang disusun dengan pandangan jauh ke depan.",
   "conj_type": "ichidan",
   "examples": [
-    {"jp": "将来を<b>見据えて</b>、今から準備を始める必要がある。", "id": "Dengan menatap masa depan yang jauh, kita perlu mulai mempersiapkan diri dari sekarang.", "level": "n1", "tags": ["keputusan"]},
-    {"jp": "10年後の市場を<b>見据えた</b>投資戦略が求められる。", "id": "Strategi investasi yang mengantisipasi pasar sepuluh tahun ke depan sangat dibutuhkan.", "level": "n1", "tags": ["bisnis"]}
+    {
+      "jp": "将来を<b>見据えて</b>、今から準備を始める必要がある。",
+      "id": "Dengan menatap masa depan yang jauh, kita perlu mulai mempersiapkan diri dari sekarang.",
+      "level": "n1",
+      "tags": [
+        "keputusan"
+      ]
+    },
+    {
+      "jp": "10年後の市場を<b>見据えた</b>投資戦略が求められる。",
+      "id": "Strategi investasi yang mengantisipasi pasar sepuluh tahun ke depan sangat dibutuhkan.",
+      "level": "n1",
+      "tags": [
+        "bisnis"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1259750",
+  "frequency": 14000,
+  "forms": [
+    {
+      "word": "見据える",
+      "info": []
+    },
+    {
+      "word": "見すえる",
+      "info": []
+    }
+  ],
+  "meanings": [
+    {
+      "en": "to stare fixedly at; to fix one's gaze on",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to make sure of; to set one's eyes on (e.g. the future); to focus on",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "conjugations": {
+    "dict": "みすえる",
+    "masu": "みすえます",
+    "te": "みすえて",
+    "ta": "みすえた",
+    "nai": "みすえない",
+    "potential": "みすえられる",
+    "passive": "みすえられる",
+    "causative": "みすえさせる",
+    "volitional": "みすえよう",
+    "cond_ba": "みすえれば",
+    "cond_tara": "みすえたら"
+  }
 },
 
 {
@@ -1171,20 +3937,92 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["pikiran-opini", "bahasa-komunikasi", "emosi"],
+  "domain": [
+    "pikiran-opini",
+    "bahasa-komunikasi",
+    "emosi"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 探る (menyelidiki/probing secara aktif), 窺う lebih menekankan pengamatan tersembunyi — mengintip, memata-matai, atau membaca suasana hati seseorang tanpa diketahui. 機会を窺う = menunggu kesempatan sambil mengamati. Jangan disamakan dengan 伺う (bentuk humble dari 聞く/訪ねる).",
   "conj_type": "godan",
   "examples": [
-    {"jp": "彼女は上司の顔色を<b>窺いながら</b>話を進めた。", "id": "Dia melanjutkan pembicaraan sambil diam-diam membaca suasana hati atasannya.", "level": "n1", "tags": ["pekerjaan"]},
-    {"jp": "猫が茂みの陰から鳥の様子を<b>窺って</b>いた。", "id": "Kucing itu mengintip gerakan burung dari balik semak secara diam-diam.", "level": "n1", "tags": ["alam-lingkungan"]}
+    {
+      "jp": "彼女は上司の顔色を<b>窺いながら</b>話を進めた。",
+      "id": "Dia melanjutkan pembicaraan sambil diam-diam membaca suasana hati atasannya.",
+      "level": "n1",
+      "tags": [
+        "pekerjaan"
+      ]
+    },
+    {
+      "jp": "猫が茂みの陰から鳥の様子を<b>窺って</b>いた。",
+      "id": "Kucing itu mengintip gerakan burung dari balik semak secara diam-diam.",
+      "level": "n1",
+      "tags": [
+        "alam-lingkungan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1172230",
+  "forms": [
+    {
+      "word": "窺う",
+      "info": []
+    },
+    {
+      "word": "覗う",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "to peep (through); to peek; to examine (esp. covertly)",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "to await (one's chance)",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "to guess; to infer; to gather; to surmise",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "biasanya kana saja"
+  ],
+  "conjugations": {
+    "dict": "うかがう",
+    "masu": "うかがいます",
+    "te": "うかがって",
+    "ta": "うかがった",
+    "nai": "うかがわない",
+    "potential": "うかがえる",
+    "passive": "うかがわれる",
+    "causative": "うかがわせる",
+    "volitional": "うかがおう",
+    "cond_ba": "うかがえば",
+    "cond_tara": "うかがったら"
+  }
 },
 
 {
@@ -1199,20 +4037,66 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["pikiran-opini", "sastra", "emosi"],
+  "domain": [
+    "pikiran-opini",
+    "sastra",
+    "emosi"
+  ],
   "register": "written",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 見える (terlihat secara umum), 垣間見る selalu menyiratkan pandangan sekilas melalui celah — seperti mengintip dari celah pagar (垣 = pagar). Sering digunakan secara figuratif: 本音を垣間見る = sekilas melihat perasaan sesungguhnya. Bernuansa sastra dan lebih formal dari 覗く.",
   "conj_type": "ichidan",
   "examples": [
-    {"jp": "彼の言葉の端々に孤独を<b>垣間見た</b>。", "id": "Dari sela-sela kata-katanya, aku sekilas melihat kesepian yang dia sembunyikan.", "level": "n1", "tags": ["emosi", "sastra"]},
-    {"jp": "旅を通じて、その国の文化の本質を<b>垣間見る</b>ことができた。", "id": "Melalui perjalanan itu, aku sempat sekilas melihat hakikat budaya negara tersebut.", "level": "n1", "tags": ["budaya"]}
+    {
+      "jp": "彼の言葉の端々に孤独を<b>垣間見た</b>。",
+      "id": "Dari sela-sela kata-katanya, aku sekilas melihat kesepian yang dia sembunyikan.",
+      "level": "n1",
+      "tags": [
+        "emosi",
+        "sastra"
+      ]
+    },
+    {
+      "jp": "旅を通じて、その国の文化の本質を<b>垣間見る</b>ことができた。",
+      "id": "Melalui perjalanan itu, aku sempat sekilas melihat hakikat budaya negara tersebut.",
+      "level": "n1",
+      "tags": [
+        "budaya"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1204790",
+  "frequency": 16000,
+  "forms": [
+    {
+      "word": "垣間見る",
+      "info": []
+    },
+    {
+      "word": "かいま見る",
+      "info": []
+    }
+  ],
+  "conjugations": {
+    "dict": "かいまみる",
+    "masu": "かいまみます",
+    "te": "かいまみて",
+    "ta": "かいまみた",
+    "nai": "かいまみない",
+    "potential": "かいまみられる",
+    "passive": "かいまみられる",
+    "causative": "かいまみさせる",
+    "volitional": "かいまみよう",
+    "cond_ba": "かいまみれば",
+    "cond_tara": "かいまみたら"
+  }
 },
 
 {
@@ -1227,20 +4111,102 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["alam-lingkungan", "emosi", "sastra"],
+  "domain": [
+    "alam-lingkungan",
+    "emosi",
+    "sastra"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 流れる (mengalir dengan arah), 漂う menyiratkan pergerakan pasif tanpa tujuan — melayang mengikuti arus atau angin. Bisa digunakan secara literal (aroma, asap, benda di air) maupun figuratif (suasana, perasaan yang terasa samar-samar memenuhi ruangan). 不安が漂う = kegelisahan yang melayang di udara.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "会議室には緊張した空気が<b>漂って</b>いた。", "id": "Suasana tegang melayang memenuhi ruang rapat.", "level": "n1", "tags": ["emosi", "pekerjaan"]},
-    {"jp": "春の風に乗って花の香りが<b>漂って</b>きた。", "id": "Wangi bunga melayang terbawa angin musim semi.", "level": "n1", "tags": ["alam-lingkungan"]}
+    {
+      "jp": "会議室には緊張した空気が<b>漂って</b>いた。",
+      "id": "Suasana tegang melayang memenuhi ruang rapat.",
+      "level": "n1",
+      "tags": [
+        "emosi",
+        "pekerjaan"
+      ]
+    },
+    {
+      "jp": "春の風に乗って花の香りが<b>漂って</b>きた。",
+      "id": "Wangi bunga melayang terbawa angin musim semi.",
+      "level": "n1",
+      "tags": [
+        "alam-lingkungan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1489240",
+  "frequency": 9000,
+  "meanings": [
+    {
+      "en": "to drift; to float",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to waft (e.g. a scent); to hang in the air",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to be in the air (e.g. a feeling or mood)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to wander; to walk around aimlessly",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to be unsteady; to be unstable",
+      "misc": [
+        "arkais"
+      ],
+      "field": []
+    },
+    {
+      "en": "to falter; to flinch; to wince",
+      "misc": [
+        "arkais"
+      ],
+      "field": []
+    },
+    {
+      "en": "to live in unreliable circumstances",
+      "misc": [
+        "arkais"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "arkais"
+  ],
+  "conjugations": {
+    "dict": "ただよう",
+    "masu": "ただよいます",
+    "te": "ただよって",
+    "ta": "ただよった",
+    "nai": "ただよわない",
+    "potential": "ただよえる",
+    "passive": "ただよわれる",
+    "causative": "ただよわせる",
+    "volitional": "ただよおう",
+    "cond_ba": "ただよえば",
+    "cond_tara": "ただよったら"
+  }
 },
 
 {
@@ -1255,20 +4221,58 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["karakter", "keputusan", "pendidikan"],
+  "domain": [
+    "karakter",
+    "keputusan",
+    "pendidikan"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Hati-hati: 自律 (じりつ) = self-regulation, berbeda dari 自立 (じりつ, bacaan sama!) = independence/self-reliance. 自律 menekankan kepatuhan pada aturan atau prinsip yang datang dari diri sendiri, bukan dipaksakan luar. Juga berbeda dari 自制 (じせい) yang lebih sempit — hanya menahan dorongan sesaat.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "<b>自律</b>した学習者は、自分でペースを管理できる。", "id": "Pelajar yang memiliki disiplin diri mampu mengatur kecepatan belajarnya sendiri.", "level": "n1", "tags": ["pendidikan"]},
-    {"jp": "プロフェッショナルとして<b>自律</b>することが信頼につながる。", "id": "Mengatur diri sendiri secara profesional berujung pada kepercayaan dari orang lain.", "level": "n1", "tags": ["pekerjaan"]}
+    {
+      "jp": "<b>自律</b>した学習者は、自分でペースを管理できる。",
+      "id": "Pelajar yang memiliki disiplin diri mampu mengatur kecepatan belajarnya sendiri.",
+      "level": "n1",
+      "tags": [
+        "pendidikan"
+      ]
+    },
+    {
+      "jp": "プロフェッショナルとして<b>自律</b>することが信頼につながる。",
+      "id": "Mengatur diri sendiri secara profesional berujung pada kepercayaan dari orang lain.",
+      "level": "n1",
+      "tags": [
+        "pekerjaan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00103"],
+  "see_also": [
+    "vg-n1-00103"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1318860",
+  "frequency": 10000,
+  "meanings": [
+    {
+      "en": "autonomy (in Kantian ethics)",
+      "misc": [],
+      "field": [
+        "philosophy"
+      ]
+    },
+    {
+      "en": "self-control",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
@@ -1283,20 +4287,43 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["karakter", "emosi"],
+  "domain": [
+    "karakter",
+    "emosi"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 自律 (prinsip mengatur diri secara menyeluruh), 自制 adalah tindakan konkret menahan dorongan atau nafsu dalam situasi tertentu — lebih situasional dan lebih sempit. 自制心 = kemampuan mengendalikan diri. 自制が効かない = tidak bisa menahan diri.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "怒りを感じても<b>自制</b>することで、無用な衝突を避けられる。", "id": "Dengan mengendalikan diri meski merasa marah, konflik yang tidak perlu bisa dihindari.", "level": "n1", "tags": ["emosi"]},
-    {"jp": "食べ過ぎないよう<b>自制</b>するのは難しいが、健康のために大切だ。", "id": "Menahan diri agar tidak makan berlebihan itu sulit, tetapi penting demi kesehatan.", "level": "n1", "tags": ["kesehatan"]}
+    {
+      "jp": "怒りを感じても<b>自制</b>することで、無用な衝突を避けられる。",
+      "id": "Dengan mengendalikan diri meski merasa marah, konflik yang tidak perlu bisa dihindari.",
+      "level": "n1",
+      "tags": [
+        "emosi"
+      ]
+    },
+    {
+      "jp": "食べ過ぎないよう<b>自制</b>するのは難しいが、健康のために大切だ。",
+      "id": "Menahan diri agar tidak makan berlebihan itu sulit, tetapi penting demi kesehatan.",
+      "level": "n1",
+      "tags": [
+        "kesehatan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00102"],
+  "see_also": [
+    "vg-n1-00102"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1318020",
+  "frequency": 8500
 },
 
 {
@@ -1311,20 +4338,53 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["emosi", "karakter"],
+  "domain": [
+    "emosi",
+    "karakter"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 固執 (こしつ — ngotot mempertahankan pendapat atau cara tertentu), 執着 lebih berdimensi emosional — susah melepaskan sesuatu karena keterikatan batin yang dalam. 執着する = tergantung secara emosional. Dalam konteks Buddhis, 執着 adalah akar penderitaan karena kemelekatan pada hal-hal yang tidak kekal.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "過去に<b>執着</b>しても、前には進めない。", "id": "Melekat pada masa lalu tidak akan membawamu maju ke depan.", "level": "n1", "tags": ["emosi"]},
-    {"jp": "彼は名声への<b>執着</b>から、家族を顧みなくなった。", "id": "Obsesinya terhadap ketenaran membuatnya tidak lagi memedulikan keluarga.", "level": "n1", "tags": ["emosi-negatif"]}
+    {
+      "jp": "過去に<b>執着</b>しても、前には進めない。",
+      "id": "Melekat pada masa lalu tidak akan membawamu maju ke depan.",
+      "level": "n1",
+      "tags": [
+        "emosi"
+      ]
+    },
+    {
+      "jp": "彼は名声への<b>執着</b>から、家族を顧みなくなった。",
+      "id": "Obsesinya terhadap ketenaran membuatnya tidak lagi memedulikan keluarga.",
+      "level": "n1",
+      "tags": [
+        "emosi-negatif"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1594740",
+  "frequency": 11000,
+  "forms": [
+    {
+      "word": "執着",
+      "info": []
+    },
+    {
+      "word": "執著",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    }
+  ]
 },
 
 {
@@ -1339,20 +4399,69 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["emosi", "pikiran-opini", "sastra"],
+  "domain": [
+    "emosi",
+    "pikiran-opini",
+    "sastra"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 迷い (kebimbangan biasa — tidak tahu pilihan mana yang lebih baik), 葛藤 menyiratkan ketegangan yang lebih dalam dan intens antara dua kekuatan yang saling menarik. Berasal dari nama dua tanaman merambat yang saling melilit. Sering digunakan dalam sastra, psikologi, dan drama.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "夢を追うか家族を守るか、深い<b>葛藤</b>の中にあった。", "id": "Dia berada dalam konflik batin yang dalam antara mengejar mimpi atau melindungi keluarga.", "level": "n1", "tags": ["emosi", "keluarga"]},
-    {"jp": "その小説は主人公の内面的な<b>葛藤</b>を丁寧に描いている。", "id": "Novel itu menggambarkan dengan cermat konflik batin sang tokoh utama.", "level": "n1", "tags": ["sastra"]}
+    {
+      "jp": "夢を追うか家族を守るか、深い<b>葛藤</b>の中にあった。",
+      "id": "Dia berada dalam konflik batin yang dalam antara mengejar mimpi atau melindungi keluarga.",
+      "level": "n1",
+      "tags": [
+        "emosi",
+        "keluarga"
+      ]
+    },
+    {
+      "jp": "その小説は主人公の内面的な<b>葛藤</b>を丁寧に描いている。",
+      "id": "Novel itu menggambarkan dengan cermat konflik batin sang tokoh utama.",
+      "level": "n1",
+      "tags": [
+        "sastra"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "2464550",
+  "forms": [
+    {
+      "word": "葛藤",
+      "info": []
+    },
+    {
+      "word": "防已",
+      "info": []
+    }
+  ],
+  "meanings": [
+    {
+      "en": "Chinese moonseed (Sinomenium acutum)",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "complex inter-relationship (as in the struggle between two types of vine over one piece of land)",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
 },
 
 {
@@ -1367,20 +4476,43 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 5,
-  "domain": ["emosi", "pikiran-opini", "bisnis"],
+  "domain": [
+    "emosi",
+    "pikiran-opini",
+    "bisnis"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum", "rekan"],
+  "lawan_bicara": [
+    "umum",
+    "rekan"
+  ],
   "nuance": "Berbeda dari 心配 (everyday worry yang digunakan dalam percakapan sehari-hari), 懸念 adalah kata yang sangat formal, dipakai dalam laporan resmi, pernyataan pers, dan dokumen kebijakan. 懸念を示す = menyatakan kekhawatiran (resmi). 懸念が残る = kekhawatiran masih tersisa. Jangan dipakai dalam percakapan kasual.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "政府は経済への影響について深刻な<b>懸念</b>を示した。", "id": "Pemerintah menyatakan kekhawatiran yang serius mengenai dampak terhadap ekonomi.", "level": "n1", "tags": ["politik-masyarakat"]},
-    {"jp": "安全性に関する<b>懸念</b>から、プロジェクトは一時停止された。", "id": "Proyek dihentikan sementara karena kekhawatiran terkait keamanan.", "level": "n1", "tags": ["bisnis"]}
+    {
+      "jp": "政府は経済への影響について深刻な<b>懸念</b>を示した。",
+      "id": "Pemerintah menyatakan kekhawatiran yang serius mengenai dampak terhadap ekonomi.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "安全性に関する<b>懸念</b>から、プロジェクトは一時停止された。",
+      "id": "Proyek dihentikan sementara karena kekhawatiran terkait keamanan.",
+      "level": "n1",
+      "tags": [
+        "bisnis"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1257720",
+  "frequency": 1000
 },
 
 {
@@ -1395,20 +4527,85 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["politik-masyarakat", "emosi", "pikiran-opini"],
+  "domain": [
+    "politik-masyarakat",
+    "emosi",
+    "pikiran-opini"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 反対 (sekadar menolak atau tidak setuju secara verbal), 抵抗 mengandung usaha aktif untuk menolak atau melawan — bisa fisik, psikologis, atau ideologis. 抵抗感 = rasa enggan/tidak nyaman. 抵抗する = melakukan perlawanan. Digunakan dalam konteks politik, psikologi, maupun ilmu fisika (hambatan).",
   "conj_type": "suru",
   "examples": [
-    {"jp": "市民は不当な政策に<b>抵抗</b>し、デモを行った。", "id": "Warga melakukan perlawanan terhadap kebijakan yang tidak adil dengan menggelar demonstrasi.", "level": "n1", "tags": ["politik-masyarakat"]},
-    {"jp": "変化への<b>抵抗</b>は人間の自然な反応だ。", "id": "Resistensi terhadap perubahan adalah respons manusiawi yang alami.", "level": "n1", "tags": ["emosi", "pikiran-opini"]}
+    {
+      "jp": "市民は不当な政策に<b>抵抗</b>し、デモを行った。",
+      "id": "Warga melakukan perlawanan terhadap kebijakan yang tidak adil dengan menggelar demonstrasi.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "変化への<b>抵抗</b>は人間の自然な反応だ。",
+      "id": "Resistensi terhadap perubahan adalah respons manusiawi yang alami.",
+      "level": "n1",
+      "tags": [
+        "emosi",
+        "pikiran-opini"
+      ]
+    }
   ],
   "synonyms": [],
-  "antonyms": ["vg-n1-00117"],
+  "antonyms": [
+    "vg-n1-00117"
+  ],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1436260",
+  "frequency": 1500,
+  "meanings": [
+    {
+      "en": "resistance; opposition; standing up to",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "reluctance; repulsion; repugnance",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "resistance; drag; friction",
+      "misc": [],
+      "field": [
+        "physics"
+      ]
+    },
+    {
+      "en": "electrical resistance",
+      "misc": [
+        "abbreviation"
+      ],
+      "field": [
+        "electricity, elec. eng."
+      ]
+    },
+    {
+      "en": "resistor",
+      "misc": [
+        "abbreviation"
+      ],
+      "field": [
+        "electricity, elec. eng."
+      ]
+    }
+  ],
+  "misc_jm": [
+    "abbreviation"
+  ]
 },
 
 {
@@ -1423,20 +4620,45 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["keputusan", "bisnis", "politik-masyarakat"],
+  "domain": [
+    "keputusan",
+    "bisnis",
+    "politik-masyarakat"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum", "rekan"],
+  "lawan_bicara": [
+    "umum",
+    "rekan"
+  ],
   "nuance": "Berbeda dari 折衷 (sintesis kreatif dari beberapa pendekatan), 妥協 menyiratkan konsesi — pihak yang berkompromi merelakan sebagian dari posisi idealnya. Sering bernuansa sedikit negatif (menyerah dari prinsip), meskipun bisa netral dalam konteks negosiasi. 妥協案 = proposal kompromi. 妥協の産物 = hasil dari kompromi.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "双方が少しずつ<b>妥協</b>することで、合意に至った。", "id": "Kedua pihak akhirnya mencapai kesepakatan dengan saling berkompromi sedikit demi sedikit.", "level": "n1", "tags": ["bisnis"]},
-    {"jp": "品質に関しては<b>妥協</b>したくないという姿勢が彼の強みだ。", "id": "Sikapnya yang tidak mau berkompromi soal kualitas adalah kekuatan terbesarnya.", "level": "n1", "tags": ["pekerjaan"]}
+    {
+      "jp": "双方が少しずつ<b>妥協</b>することで、合意に至った。",
+      "id": "Kedua pihak akhirnya mencapai kesepakatan dengan saling berkompromi sedikit demi sedikit.",
+      "level": "n1",
+      "tags": [
+        "bisnis"
+      ]
+    },
+    {
+      "jp": "品質に関しては<b>妥協</b>したくないという姿勢が彼の強みだ。",
+      "id": "Sikapnya yang tidak mau berkompromi soal kualitas adalah kekuatan terbesarnya.",
+      "level": "n1",
+      "tags": [
+        "pekerjaan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00118"],
+  "see_also": [
+    "vg-n1-00118"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1408510",
+  "frequency": 1500
 },
 
 {
@@ -1451,20 +4673,54 @@ window.vocabN1 = [
   "common": false,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["keputusan", "hubungan-konsep", "seni-budaya"],
+  "domain": [
+    "keputusan",
+    "hubungan-konsep",
+    "seni-budaya"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 妥協 (menyerahkan sebagian posisi), 折衷 lebih konstruktif dan kreatif — menggabungkan yang terbaik dari dua atau lebih pendekatan yang berbeda. 折衷案 = proposal jalan tengah yang dirancang dengan cermat. Digunakan juga dalam arsitektur (折衷様式 = gaya eklektik) dan estetika.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "西洋と東洋のデザインを<b>折衷</b>した建築が並んでいる。", "id": "Deretan bangunan bergaya arsitektur yang memadukan elemen Barat dan Timur.", "level": "n1", "tags": ["seni-budaya"]},
-    {"jp": "両案の<b>折衷</b>案として、段階的な導入を提案した。", "id": "Sebagai jalan tengah dari kedua rencana, diusulkan penerapan secara bertahap.", "level": "n1", "tags": ["keputusan"]}
+    {
+      "jp": "西洋と東洋のデザインを<b>折衷</b>した建築が並んでいる。",
+      "id": "Deretan bangunan bergaya arsitektur yang memadukan elemen Barat dan Timur.",
+      "level": "n1",
+      "tags": [
+        "seni-budaya"
+      ]
+    },
+    {
+      "jp": "両案の<b>折衷</b>案として、段階的な導入を提案した。",
+      "id": "Sebagai jalan tengah dari kedua rencana, diusulkan penerapan secara bertahap.",
+      "level": "n1",
+      "tags": [
+        "keputusan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00117"],
+  "see_also": [
+    "vg-n1-00117"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1385960",
+  "frequency": 11500,
+  "forms": [
+    {
+      "word": "折衷",
+      "info": []
+    },
+    {
+      "word": "折中",
+      "info": []
+    }
+  ]
 },
 
 {
@@ -1479,20 +4735,55 @@ window.vocabN1 = [
   "common": false,
   "related_grammar": [],
   "formalitas": 5,
-  "domain": ["pikiran-opini", "konsep-jepang", "emosi"],
+  "domain": [
+    "pikiran-opini",
+    "konsep-jepang",
+    "emosi"
+  ],
   "register": "written",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 諦め (あきらめ — menyerah atau berhenti berusaha, sering bernuansa negatif atau pasif), 諦観 adalah penerimaan yang aktif dan bermartabat — dipengaruhi pemikiran Buddhis, melihat segala sesuatu dengan jernih (諦 = melihat dengan benar) tanpa kemelekatan. 人生への諦観 = penerimaan filosofis terhadap kehidupan apa adanya.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "晩年の彼は人生に対する深い<b>諦観</b>を持ち、穏やかに日々を過ごした。", "id": "Di usia senjanya, dia menjalani hari-hari dengan tenang, memiliki penerimaan yang dalam terhadap kehidupan.", "level": "n1", "tags": ["konsep-jepang", "emosi"]},
-    {"jp": "<b>諦観</b>とは敗北ではなく、現実を正確に見通した上での平和である。", "id": "bukanlah kekalahan, melainkan kedamaian yang lahir dari melihat kenyataan secara jernih dan tepat.", "level": "n1", "tags": ["pikiran-opini", "konsep-jepang"]}
+    {
+      "jp": "晩年の彼は人生に対する深い<b>諦観</b>を持ち、穏やかに日々を過ごした。",
+      "id": "Di usia senjanya, dia menjalani hari-hari dengan tenang, memiliki penerimaan yang dalam terhadap kehidupan.",
+      "level": "n1",
+      "tags": [
+        "konsep-jepang",
+        "emosi"
+      ]
+    },
+    {
+      "jp": "<b>諦観</b>とは敗北ではなく、現実を正確に見通した上での平和である。",
+      "id": "bukanlah kekalahan, melainkan kedamaian yang lahir dari melihat kenyataan secara jernih dan tepat.",
+      "level": "n1",
+      "tags": [
+        "pikiran-opini",
+        "konsep-jepang"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1436740",
+  "meanings": [
+    {
+      "en": "clear insight",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "resignation (to one's fate); acceptance",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
@@ -1507,21 +4798,80 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["emosi", "pekerjaan"],
+  "domain": [
+    "emosi",
+    "pekerjaan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Memiliki dua makna: (1) intransitif — perasaan/kerinduan yang semakin kuat secara tak tertahankan (思いが募る); (2) transitif — mengumpulkan/merekrut relawan, pelamar, atau donasi (参加者を募る). Berbeda dari 強まる (tsuyomaru = menguat secara umum), 募る menekankan penumpukan bertahap yang terasa mendesak dari dalam.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "離れて暮らす家族への思いが<b>募る</b>一方だ。", "id": "Kerinduan terhadap keluarga yang tinggal berjauhan semakin kuat tak terbendung.", "level": "n1", "tags": ["emosi", "keluarga"]},
-    {"jp": "不満が<b>募って</b>、ついに声を上げることにした。", "id": "Rasa tidak puas semakin menguat, dan akhirnya aku memutuskan untuk bersuara.", "level": "n1", "tags": ["emosi", "pikiran-opini"]},
-    {"jp": "会社はプロジェクトの参加者を広く<b>募った</b>。", "id": "Perusahaan secara luas merekrut peserta untuk proyek tersebut.", "level": "n1", "tags": ["pekerjaan", "bisnis"]}
+    {
+      "jp": "離れて暮らす家族への思いが<b>募る</b>一方だ。",
+      "id": "Kerinduan terhadap keluarga yang tinggal berjauhan semakin kuat tak terbendung.",
+      "level": "n1",
+      "tags": [
+        "emosi",
+        "keluarga"
+      ]
+    },
+    {
+      "jp": "不満が<b>募って</b>、ついに声を上げることにした。",
+      "id": "Rasa tidak puas semakin menguat, dan akhirnya aku memutuskan untuk bersuara.",
+      "level": "n1",
+      "tags": [
+        "emosi",
+        "pikiran-opini"
+      ]
+    },
+    {
+      "jp": "会社はプロジェクトの参加者を広く<b>募った</b>。",
+      "id": "Perusahaan secara luas merekrut peserta untuk proyek tersebut.",
+      "level": "n1",
+      "tags": [
+        "pekerjaan",
+        "bisnis"
+      ]
+    }
   ],
-  "synonyms": ["高まる", "集める"],
+  "synonyms": [
+    "高まる",
+    "集める"
+  ],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1514800",
+  "frequency": 5500,
+  "meanings": [
+    {
+      "en": "to become stronger; to grow in intensity; to grow violent; to become worse",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to invite contributions, etc.; to solicit help, participation, etc.; to recruit (e.g. soldiers)",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "conjugations": {
+    "dict": "つのる",
+    "masu": "つのります",
+    "te": "つのって",
+    "ta": "つのった",
+    "nai": "つのらない",
+    "potential": "つのれる",
+    "passive": "つのられる",
+    "causative": "つのらせる",
+    "volitional": "つのろう",
+    "cond_ba": "つのれば",
+    "cond_tara": "つのったら"
+  }
 },
 
 {
@@ -1536,21 +4886,98 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["emosi", "seni-budaya"],
+  "domain": [
+    "emosi",
+    "seni-budaya"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Secara literal = tinta atau warna yang merembes/melebar di kertas. Secara figuratif = emosi yang tampak samar di wajah, suara, atau tulisan. 目に涙が滲む = air mata menggenang samar di mata. Berbeda dari 溢れる (afureru = meluap), 滲む jauh lebih halus dan terpendam — sesuatu yang hampir tak terlihat namun terasa.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "雨に濡れた紙にインクが<b>滲んで</b>しまった。", "id": "Tinta merembes di kertas yang basah oleh hujan.", "level": "n1", "tags": ["seni-budaya"]},
-    {"jp": "彼女の言葉には深い悲しみが<b>滲んで</b>いた。", "id": "Dalam kata-katanya terasa samar kesedihan yang mendalam.", "level": "n1", "tags": ["emosi", "bahasa-komunikasi"]},
-    {"jp": "目に涙が<b>滲む</b>のを必死にこらえた。", "id": "Dengan susah payah kutahan air mata yang hampir menggenang di mataku.", "level": "n1", "tags": ["emosi"]}
+    {
+      "jp": "雨に濡れた紙にインクが<b>滲んで</b>しまった。",
+      "id": "Tinta merembes di kertas yang basah oleh hujan.",
+      "level": "n1",
+      "tags": [
+        "seni-budaya"
+      ]
+    },
+    {
+      "jp": "彼女の言葉には深い悲しみが<b>滲んで</b>いた。",
+      "id": "Dalam kata-katanya terasa samar kesedihan yang mendalam.",
+      "level": "n1",
+      "tags": [
+        "emosi",
+        "bahasa-komunikasi"
+      ]
+    },
+    {
+      "jp": "目に涙が<b>滲む</b>のを必死にこらえた。",
+      "id": "Dengan susah payah kutahan air mata yang hampir menggenang di mataku.",
+      "level": "n1",
+      "tags": [
+        "emosi"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00123"],
+  "see_also": [
+    "vg-n1-00123"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1568800",
+  "frequency": 1000,
+  "meanings": [
+    {
+      "en": "to run (of liquid); to spread; to bleed; to blot",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "to blur; to blot; to be blurred",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "to ooze; to well up (of tears, etc.)",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "to show through (of feelings, emotions, etc.); to reveal itself",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "biasanya kana saja"
+  ],
+  "conjugations": {
+    "dict": "にじむ",
+    "masu": "にじみます",
+    "te": "にじんで",
+    "ta": "にじんだ",
+    "nai": "にじまない",
+    "potential": "にじめる",
+    "passive": "にじまれる",
+    "causative": "にじませる",
+    "volitional": "にじもう",
+    "cond_ba": "にじめば",
+    "cond_tara": "にじんだら"
+  }
 },
 
 {
@@ -1565,21 +4992,111 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["alam-lingkungan", "emosi"],
+  "domain": [
+    "alam-lingkungan",
+    "emosi"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Menggambarkan sesuatu yang melayang atau terasa mengambang secara samar — bisa aroma, suasana, atau mood. 不安が漂う = nuansa kecemasan terasa di udara. Berbeda dari 漂流する (hyouryuu suru = hanyut — lebih dramatis dan aktif), 漂う lebih halus, statis, dan puitis. Sering dipakai dalam tulisan sastra.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "部屋には甘い香りが<b>漂って</b>いた。", "id": "Aroma manis samar-samar tercium di ruangan itu.", "level": "n1", "tags": ["kehidupan-sehari"]},
-    {"jp": "会議室には重い雰囲気が<b>漂って</b>いた。", "id": "Suasana berat terasa menggantung di ruang rapat.", "level": "n1", "tags": ["pekerjaan", "emosi"]},
-    {"jp": "秋の空に雲が静かに<b>漂う</b>。", "id": "Awan melayang dengan tenang di langit musim gugur.", "level": "n1", "tags": ["alam-lingkungan"]}
+    {
+      "jp": "部屋には甘い香りが<b>漂って</b>いた。",
+      "id": "Aroma manis samar-samar tercium di ruangan itu.",
+      "level": "n1",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "会議室には重い雰囲気が<b>漂って</b>いた。",
+      "id": "Suasana berat terasa menggantung di ruang rapat.",
+      "level": "n1",
+      "tags": [
+        "pekerjaan",
+        "emosi"
+      ]
+    },
+    {
+      "jp": "秋の空に雲が静かに<b>漂う</b>。",
+      "id": "Awan melayang dengan tenang di langit musim gugur.",
+      "level": "n1",
+      "tags": [
+        "alam-lingkungan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00122"],
+  "see_also": [
+    "vg-n1-00122"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1489240",
+  "frequency": 9000,
+  "meanings": [
+    {
+      "en": "to drift; to float",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to waft (e.g. a scent); to hang in the air",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to be in the air (e.g. a feeling or mood)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to wander; to walk around aimlessly",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to be unsteady; to be unstable",
+      "misc": [
+        "arkais"
+      ],
+      "field": []
+    },
+    {
+      "en": "to falter; to flinch; to wince",
+      "misc": [
+        "arkais"
+      ],
+      "field": []
+    },
+    {
+      "en": "to live in unreliable circumstances",
+      "misc": [
+        "arkais"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "arkais"
+  ],
+  "conjugations": {
+    "dict": "ただよう",
+    "masu": "ただよいます",
+    "te": "ただよって",
+    "ta": "ただよった",
+    "nai": "ただよわない",
+    "potential": "ただよえる",
+    "passive": "ただよわれる",
+    "causative": "ただよわせる",
+    "volitional": "ただよおう",
+    "cond_ba": "ただよえば",
+    "cond_tara": "ただよったら"
+  }
 },
 
 {
@@ -1594,20 +5111,68 @@ window.vocabN1 = [
   "common": false,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["sastra", "pikiran-opini"],
+  "domain": [
+    "sastra",
+    "pikiran-opini"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berasal dari 垣間 (kaiма = celah di pagar). Berarti melihat sesuatu secara sekilas atau tidak sengaja, baik secara literal maupun figuratif. Berbeda dari 見る (miru = melihat) atau 覗く (nozoku = mengintip), 垣間見る menyiratkan bahwa yang terlihat hanyalah sebagian kecil dari keseluruhan — seperti mengintip kebenaran melalui celah sempit.",
   "conj_type": "ichidan",
   "examples": [
-    {"jp": "彼女の日記の一節に、本当の気持ちを<b>垣間見た</b>。", "id": "Dari satu bagian buku hariannya, aku menangkap sekilas perasaan yang sesungguhnya.", "level": "n1", "tags": ["sastra", "emosi"]},
-    {"jp": "その作品に作家の孤独を<b>垣間見る</b>ことができる。", "id": "Dari karya itu, kita bisa menangkap sekilas kesepian sang penulis.", "level": "n1", "tags": ["sastra", "seni-budaya"]}
+    {
+      "jp": "彼女の日記の一節に、本当の気持ちを<b>垣間見た</b>。",
+      "id": "Dari satu bagian buku hariannya, aku menangkap sekilas perasaan yang sesungguhnya.",
+      "level": "n1",
+      "tags": [
+        "sastra",
+        "emosi"
+      ]
+    },
+    {
+      "jp": "その作品に作家の孤独を<b>垣間見る</b>ことができる。",
+      "id": "Dari karya itu, kita bisa menangkap sekilas kesepian sang penulis.",
+      "level": "n1",
+      "tags": [
+        "sastra",
+        "seni-budaya"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00125"],
+  "see_also": [
+    "vg-n1-00125"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1204790",
+  "frequency": 16000,
+  "forms": [
+    {
+      "word": "垣間見る",
+      "info": []
+    },
+    {
+      "word": "かいま見る",
+      "info": []
+    }
+  ],
+  "conjugations": {
+    "dict": "かいまみる",
+    "masu": "かいまみます",
+    "te": "かいまみて",
+    "ta": "かいまみた",
+    "nai": "かいまみない",
+    "potential": "かいまみられる",
+    "passive": "かいまみられる",
+    "causative": "かいまみさせる",
+    "volitional": "かいまみよう",
+    "cond_ba": "かいまみれば",
+    "cond_tara": "かいまみたら"
+  }
 },
 
 {
@@ -1622,20 +5187,68 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["alam-lingkungan", "pikiran-opini"],
+  "domain": [
+    "alam-lingkungan",
+    "pikiran-opini"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Bisa literal (memandang panorama luas dari ketinggian atau titik tertentu) maupun figuratif (meninjau keseluruhan situasi secara komprehensif). 業界全体を見渡す = meninjau keseluruhan industri. Berbeda dari 見る (miru = melihat) atau 眺める (nagameru = menatap/memandang), 見渡す menekankan cakupan yang luas dan menyeluruh.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "展望台から街全体を<b>見渡す</b>ことができた。", "id": "Dari menara pandang, seluruh kota dapat dipandang secara menyeluruh.", "level": "n1", "tags": ["alam-lingkungan", "perjalanan"]},
-    {"jp": "現在の市場全体を<b>見渡せば</b>、新たなビジネスチャンスが見えてくる。", "id": "Jika meninjau keseluruhan pasar saat ini, peluang bisnis baru akan terlihat.", "level": "n1", "tags": ["bisnis", "pikiran-opini"]}
+    {
+      "jp": "展望台から街全体を<b>見渡す</b>ことができた。",
+      "id": "Dari menara pandang, seluruh kota dapat dipandang secara menyeluruh.",
+      "level": "n1",
+      "tags": [
+        "alam-lingkungan",
+        "perjalanan"
+      ]
+    },
+    {
+      "jp": "現在の市場全体を<b>見渡せば</b>、新たなビジネスチャンスが見えてくる。",
+      "id": "Jika meninjau keseluruhan pasar saat ini, peluang bisnis baru akan terlihat.",
+      "level": "n1",
+      "tags": [
+        "bisnis",
+        "pikiran-opini"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00124"],
+  "see_also": [
+    "vg-n1-00124"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1259920",
+  "frequency": 14000,
+  "forms": [
+    {
+      "word": "見渡す",
+      "info": []
+    },
+    {
+      "word": "見わたす",
+      "info": []
+    }
+  ],
+  "conjugations": {
+    "dict": "みわたす",
+    "masu": "みわたします",
+    "te": "みわたして",
+    "ta": "みわたした",
+    "nai": "みわたさない",
+    "potential": "みわたせる",
+    "passive": "みわたされる",
+    "causative": "みわたさせる",
+    "volitional": "みわたそう",
+    "cond_ba": "みわたせば",
+    "cond_tara": "みわたしたら"
+  }
 },
 
 {
@@ -1650,20 +5263,98 @@ window.vocabN1 = [
   "common": false,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["emosi-negatif", "perubahan"],
+  "domain": [
+    "emosi-negatif",
+    "perubahan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Secara literal = menghantam dan menghancurkan. Secara figuratif = menghancurkan harapan, kepercayaan, atau keyakinan seseorang secara total. Berbeda dari 壊す (kowasu = merusak/menghancurkan fisik) atau 失わせる (ushinawaseru = menyebabkan kehilangan), 打ち砕く mengandung nuansa yang lebih dramatis — penghancuran yang mendadak dan total.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "その一言が彼女の夢を<b>打ち砕いた</b>。", "id": "Satu kalimat itu menghancurkan mimpinya.", "level": "n1", "tags": ["emosi-negatif"]},
-    {"jp": "誤った情報が長年の信頼を<b>打ち砕く</b>ことがある。", "id": "Informasi yang salah bisa menghancurkan kepercayaan yang telah dibangun bertahun-tahun.", "level": "n1", "tags": ["hubungan-konsep", "emosi-negatif"]}
+    {
+      "jp": "その一言が彼女の夢を<b>打ち砕いた</b>。",
+      "id": "Satu kalimat itu menghancurkan mimpinya.",
+      "level": "n1",
+      "tags": [
+        "emosi-negatif"
+      ]
+    },
+    {
+      "jp": "誤った情報が長年の信頼を<b>打ち砕く</b>ことがある。",
+      "id": "Informasi yang salah bisa menghancurkan kepercayaan yang telah dibangun bertahun-tahun.",
+      "level": "n1",
+      "tags": [
+        "hubungan-konsep",
+        "emosi-negatif"
+      ]
+    }
   ],
-  "synonyms": ["砕く", "崩す"],
-  "antonyms": ["築く", "育む"],
-  "see_also": ["vg-n1-00127"],
+  "synonyms": [
+    "砕く",
+    "崩す"
+  ],
+  "antonyms": [
+    "築く",
+    "育む"
+  ],
+  "see_also": [
+    "vg-n1-00127"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1408660",
+  "forms": [
+    {
+      "word": "打ち砕く",
+      "info": []
+    },
+    {
+      "word": "うち砕く",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "打ちくだく",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "ぶち砕く",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "to smash; to break (into pieces); to shatter; to crush",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to simplify; to make easy to understand",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "conjugations": {
+    "dict": "うちくだく",
+    "masu": "うちくだきます",
+    "te": "うちくだいて",
+    "ta": "うちくだいた",
+    "nai": "うちくだかない",
+    "potential": "うちくだける",
+    "passive": "うちくだかれる",
+    "causative": "うちくだかせる",
+    "volitional": "うちくだこう",
+    "cond_ba": "うちくだけば",
+    "cond_tara": "うちくだいたら"
+  }
 },
 
 {
@@ -1678,21 +5369,78 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["emosi-negatif", "pikiran-opini"],
+  "domain": [
+    "emosi-negatif",
+    "pikiran-opini"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum", "rekan"],
+  "lawan_bicara": [
+    "umum",
+    "rekan"
+  ],
   "nuance": "Secara literal = mengejar dan memojokkan mangsa ke sudut. Secara figuratif = menempatkan seseorang dalam kondisi terdesak tanpa jalan keluar. 心理的に追い詰める = memojokkan secara psikologis. 追い詰められる = terdesak hingga terpojok. Berbeda dari 追う (ou = mengejar saja), 追い詰める menekankan kondisi akhir yang tanpa harapan.",
   "conj_type": "ichidan",
   "examples": [
-    {"jp": "容疑者を証拠で<b>追い詰めた</b>結果、自白した。", "id": "Setelah terpojok oleh bukti, tersangka akhirnya mengaku.", "level": "n1", "tags": ["hukum-aturan"]},
-    {"jp": "仕事のプレッシャーで精神的に<b>追い詰められた</b>。", "id": "Aku terpojok secara mental oleh tekanan pekerjaan.", "level": "n1", "tags": ["pekerjaan", "emosi-negatif"]},
-    {"jp": "相手を<b>追い詰める</b>ような言い方は避けるべきだ。", "id": "Sebaiknya hindari cara bicara yang memojokkan lawan bicara.", "level": "n1", "tags": ["bahasa-komunikasi"]}
+    {
+      "jp": "容疑者を証拠で<b>追い詰めた</b>結果、自白した。",
+      "id": "Setelah terpojok oleh bukti, tersangka akhirnya mengaku.",
+      "level": "n1",
+      "tags": [
+        "hukum-aturan"
+      ]
+    },
+    {
+      "jp": "仕事のプレッシャーで精神的に<b>追い詰められた</b>。",
+      "id": "Aku terpojok secara mental oleh tekanan pekerjaan.",
+      "level": "n1",
+      "tags": [
+        "pekerjaan",
+        "emosi-negatif"
+      ]
+    },
+    {
+      "jp": "相手を<b>追い詰める</b>ような言い方は避けるべきだ。",
+      "id": "Sebaiknya hindari cara bicara yang memojokkan lawan bicara.",
+      "level": "n1",
+      "tags": [
+        "bahasa-komunikasi"
+      ]
+    }
   ],
-  "synonyms": ["窮地に追い込む"],
+  "synonyms": [
+    "窮地に追い込む"
+  ],
   "antonyms": [],
-  "see_also": ["vg-n1-00126"],
+  "see_also": [
+    "vg-n1-00126"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1432300",
+  "frequency": 18500,
+  "forms": [
+    {
+      "word": "追い詰める",
+      "info": []
+    },
+    {
+      "word": "追いつめる",
+      "info": []
+    }
+  ],
+  "conjugations": {
+    "dict": "おいつめる",
+    "masu": "おいつめます",
+    "te": "おいつめて",
+    "ta": "おいつめた",
+    "nai": "おいつめない",
+    "potential": "おいつめられる",
+    "passive": "おいつめられる",
+    "causative": "おいつめさせる",
+    "volitional": "おいつめよう",
+    "cond_ba": "おいつめれば",
+    "cond_tara": "おいつめたら"
+  }
 },
 
 {
@@ -1707,20 +5455,71 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["emosi-negatif", "hubungan-konsep"],
+  "domain": [
+    "emosi-negatif",
+    "hubungan-konsep"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berarti melanggar kepercayaan atau harapan seseorang. Penting: 期待を裏切る bisa berarti positif jika harapannya negatif — 「心配を裏切る」(meleset dari kekhawatiran = lebih baik dari yang dikhawatirkan). Berbeda dari 배신する (tidak ada padanan langsung), 裏切る mencakup pengkhianatan personal maupun meleset dari ekspektasi.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "信頼していた友人に<b>裏切られた</b>と知り、深く傷ついた。", "id": "Mengetahui bahwa teman yang kupercaya telah mengkhianatiku membuatku sangat terluka.", "level": "n1", "tags": ["emosi-negatif", "pertemanan"]},
-    {"jp": "新作は多くの人の期待を<b>裏切らない</b>出来だった。", "id": "Karya terbarunya terbukti tidak mengecewakan harapan banyak orang.", "level": "n1", "tags": ["hiburan", "seni-budaya"]}
+    {
+      "jp": "信頼していた友人に<b>裏切られた</b>と知り、深く傷ついた。",
+      "id": "Mengetahui bahwa teman yang kupercaya telah mengkhianatiku membuatku sangat terluka.",
+      "level": "n1",
+      "tags": [
+        "emosi-negatif",
+        "pertemanan"
+      ]
+    },
+    {
+      "jp": "新作は多くの人の期待を<b>裏切らない</b>出来だった。",
+      "id": "Karya terbarunya terbukti tidak mengecewakan harapan banyak orang.",
+      "level": "n1",
+      "tags": [
+        "hiburan",
+        "seni-budaya"
+      ]
+    }
   ],
   "synonyms": [],
-  "antonyms": ["信頼する", "応える"],
+  "antonyms": [
+    "信頼する",
+    "応える"
+  ],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1550380",
+  "frequency": 7500,
+  "meanings": [
+    {
+      "en": "to betray; to turn traitor (to); to double-cross; to go back on; to be unfaithful (to)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to disappoint; to let down",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "conjugations": {
+    "dict": "うらぎる",
+    "masu": "うらぎります",
+    "te": "うらぎって",
+    "ta": "うらぎった",
+    "nai": "うらぎらない",
+    "potential": "うらぎれる",
+    "passive": "うらぎられる",
+    "causative": "うらぎらせる",
+    "volitional": "うらぎろう",
+    "cond_ba": "うらぎれば",
+    "cond_tara": "うらぎったら"
+  }
 },
 
 {
@@ -1735,20 +5534,81 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["pikiran-opini", "perubahan"],
+  "domain": [
+    "pikiran-opini",
+    "perubahan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum", "rekan"],
+  "lawan_bicara": [
+    "umum",
+    "rekan"
+  ],
   "nuance": "Berarti membalikkan secara fundamental sesuatu yang sudah mapan — bisa berupa teori ilmiah, putusan pengadilan, kekuasaan, atau konsensus umum. Berbeda dari 変える (kaeru = mengubah) atau 修正する (shuusei suru = merevisi), 覆す mengandung nuansa pembalikan yang dramatis dan menyeluruh. 定説を覆す = membantah teori yang sudah mapan.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "新たな証拠が従来の学説を<b>覆した</b>。", "id": "Bukti baru membalikkan teori akademik yang selama ini berlaku.", "level": "n1", "tags": ["ilmu-pengetahuan", "perubahan"]},
-    {"jp": "弁護団は判決を<b>覆す</b>ために控訴した。", "id": "Tim pembela mengajukan banding untuk membalikkan putusan.", "level": "n1", "tags": ["hukum-aturan"]}
+    {
+      "jp": "新たな証拠が従来の学説を<b>覆した</b>。",
+      "id": "Bukti baru membalikkan teori akademik yang selama ini berlaku.",
+      "level": "n1",
+      "tags": [
+        "ilmu-pengetahuan",
+        "perubahan"
+      ]
+    },
+    {
+      "jp": "弁護団は判決を<b>覆す</b>ために控訴した。",
+      "id": "Tim pembela mengajukan banding untuk membalikkan putusan.",
+      "level": "n1",
+      "tags": [
+        "hukum-aturan"
+      ]
+    }
   ],
-  "synonyms": ["くつがえす", "反転させる"],
-  "antonyms": ["維持する", "支持する"],
-  "see_also": ["vg-n1-00135"],
+  "synonyms": [
+    "くつがえす",
+    "反転させる"
+  ],
+  "antonyms": [
+    "維持する",
+    "支持する"
+  ],
+  "see_also": [
+    "vg-n1-00135"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1501490",
+  "frequency": 8000,
+  "meanings": [
+    {
+      "en": "to overturn; to capsize; to upset",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to overthrow (government etc.)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to reverse (decision etc.); to disprove (an established theory etc.); to overrule",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "conjugations": {
+    "dict": "くつがえす",
+    "masu": "くつがえします",
+    "te": "くつがえして",
+    "ta": "くつがえした",
+    "nai": "くつがえさない",
+    "potential": "くつがえせる",
+    "passive": "くつがえされる",
+    "causative": "くつがえさせる",
+    "volitional": "くつがえそう",
+    "cond_ba": "くつがえせば",
+    "cond_tara": "くつがえしたら"
+  }
 },
 
 {
@@ -1763,20 +5623,70 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["emosi", "bahasa-komunikasi"],
+  "domain": [
+    "emosi",
+    "bahasa-komunikasi"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum", "rekan"],
+  "lawan_bicara": [
+    "umum",
+    "rekan"
+  ],
   "nuance": "Secara literal = memfermentasi/menyeduh (sake, miso). Secara figuratif = menciptakan suasana, kontroversi, atau perasaan tertentu secara halus dan tidak langsung. 雰囲気を醸す = menciptakan atmosfer. 物議を醸す = menimbulkan kontroversi (sangat umum dalam berita). Berbeda dari 作る (tsukuru = membuat), 醸す menekankan proses yang halus, organik, dan bertahap.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "彼の一言が場の雰囲気を<b>醸し</b>出した。", "id": "Satu ucapannya menciptakan suasana tersendiri di tempat itu.", "level": "n1", "tags": ["emosi", "bahasa-komunikasi"]},
-    {"jp": "その発言は社会的に大きな物議を<b>醸した</b>。", "id": "Pernyataan itu menimbulkan kontroversi besar di masyarakat.", "level": "n1", "tags": ["media", "politik-masyarakat"]}
+    {
+      "jp": "彼の一言が場の雰囲気を<b>醸し</b>出した。",
+      "id": "Satu ucapannya menciptakan suasana tersendiri di tempat itu.",
+      "level": "n1",
+      "tags": [
+        "emosi",
+        "bahasa-komunikasi"
+      ]
+    },
+    {
+      "jp": "その発言は社会的に大きな物議を<b>醸した</b>。",
+      "id": "Pernyataan itu menimbulkan kontroversi besar di masyarakat.",
+      "level": "n1",
+      "tags": [
+        "media",
+        "politik-masyarakat"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00123"],
+  "see_also": [
+    "vg-n1-00123"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1357070",
+  "meanings": [
+    {
+      "en": "to brew (sake, etc.)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to cause; to bring on; to bring about; to give rise to",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "conjugations": {
+    "dict": "かもす",
+    "masu": "かもします",
+    "te": "かもして",
+    "ta": "かもした",
+    "nai": "かもさない",
+    "potential": "かもせる",
+    "passive": "かもされる",
+    "causative": "かもさせる",
+    "volitional": "かもそう",
+    "cond_ba": "かもせば",
+    "cond_tara": "かもしたら"
+  }
 },
 
 {
@@ -1791,20 +5701,70 @@ window.vocabN1 = [
   "common": false,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["sastra", "seni-budaya"],
+  "domain": [
+    "sastra",
+    "seni-budaya"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Secara literal = memintal benang/serat. Secara figuratif = merangkai atau menganyam kata-kata dan cerita dengan penuh perhatian dan keahlian. 言葉を紡ぐ = merangkai kata-kata. Berbeda dari 書く (kaku = menulis) atau 話す (hanasu = berbicara), 紡ぐ menekankan proses yang artistik, penuh kesabaran, dan menghasilkan sesuatu yang bermakna dari hal-hal kecil.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "彼女は丁寧に言葉を<b>紡いで</b>、手紙を書いた。", "id": "Dia dengan hati-hati merangkai kata demi kata untuk menulis surat itu.", "level": "n1", "tags": ["sastra", "bahasa-komunikasi"]},
-    {"jp": "長い歴史の中で人々が<b>紡いで</b>きた物語が今に伝わる。", "id": "Cerita-cerita yang telah dirangkai oleh masyarakat sepanjang sejarah panjang kini sampai kepada kita.", "level": "n1", "tags": ["sastra", "budaya"]}
+    {
+      "jp": "彼女は丁寧に言葉を<b>紡いで</b>、手紙を書いた。",
+      "id": "Dia dengan hati-hati merangkai kata demi kata untuk menulis surat itu.",
+      "level": "n1",
+      "tags": [
+        "sastra",
+        "bahasa-komunikasi"
+      ]
+    },
+    {
+      "jp": "長い歴史の中で人々が<b>紡いで</b>きた物語が今に伝わる。",
+      "id": "Cerita-cerita yang telah dirangkai oleh masyarakat sepanjang sejarah panjang kini sampai kepada kita.",
+      "level": "n1",
+      "tags": [
+        "sastra",
+        "budaya"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00132"],
+  "see_also": [
+    "vg-n1-00132"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1519880",
+  "frequency": 18000,
+  "meanings": [
+    {
+      "en": "to spin; to make yarn",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to spin (a tale); to assemble (e.g. words); to put together",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "conjugations": {
+    "dict": "つむぐ",
+    "masu": "つむぎます",
+    "te": "つむいで",
+    "ta": "つむいだ",
+    "nai": "つむがない",
+    "potential": "つむげる",
+    "passive": "つむがれる",
+    "causative": "つむがせる",
+    "volitional": "つむごう",
+    "cond_ba": "つむげば",
+    "cond_tara": "つむいだら"
+  }
 },
 
 {
@@ -1819,21 +5779,105 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["sastra", "emosi"],
+  "domain": [
+    "sastra",
+    "emosi"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Dua makna literal: (1) mengukir/memahat di batu/kayu; (2) mencincang halus (dalam memasak). Makna figuratif yang kuat: mengukir dalam ingatan atau hati secara mendalam dan permanen. 心に刻む = mengukir dalam hati. 歴史に刻む = terukir dalam sejarah. Berbeda dari 覚える (oboeru = mengingat), 刻む menekankan kedalaman dan kekekalan kesan.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "あの日の出来事は心に深く<b>刻まれて</b>いる。", "id": "Peristiwa hari itu terukir dalam di hatiku.", "level": "n1", "tags": ["emosi", "waktu"]},
-    {"jp": "石碑に英雄の名が<b>刻まれて</b>いた。", "id": "Nama sang pahlawan terukir di prasasti batu.", "level": "n1", "tags": ["budaya", "sejarah"]},
-    {"jp": "料理人は野菜を細かく<b>刻んで</b>いた。", "id": "Koki mencincang sayuran dengan halus.", "level": "n1", "tags": ["makanan-minuman"]}
+    {
+      "jp": "あの日の出来事は心に深く<b>刻まれて</b>いる。",
+      "id": "Peristiwa hari itu terukir dalam di hatiku.",
+      "level": "n1",
+      "tags": [
+        "emosi",
+        "waktu"
+      ]
+    },
+    {
+      "jp": "石碑に英雄の名が<b>刻まれて</b>いた。",
+      "id": "Nama sang pahlawan terukir di prasasti batu.",
+      "level": "n1",
+      "tags": [
+        "budaya",
+        "sejarah"
+      ]
+    },
+    {
+      "jp": "料理人は野菜を細かく<b>刻んで</b>いた。",
+      "id": "Koki mencincang sayuran dengan halus.",
+      "level": "n1",
+      "tags": [
+        "makanan-minuman"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00131"],
+  "see_also": [
+    "vg-n1-00131"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1285890",
+  "frequency": 7000,
+  "meanings": [
+    {
+      "en": "to mince; to cut fine; to chop up; to hash; to shred",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to carve; to engrave; to chisel; to notch",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to tick away (time); to beat out (e.g. rhythm); to record the passing moments",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to etch (into one's mind); to remember distinctly",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to have tattooed",
+      "misc": [
+        "arkais"
+      ],
+      "field": []
+    },
+    {
+      "en": "to torment",
+      "misc": [
+        "arkais"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "arkais"
+  ],
+  "conjugations": {
+    "dict": "きざむ",
+    "masu": "きざみます",
+    "te": "きざんで",
+    "ta": "きざんだ",
+    "nai": "きざまない",
+    "potential": "きざめる",
+    "passive": "きざまれる",
+    "causative": "きざませる",
+    "volitional": "きざもう",
+    "cond_ba": "きざめば",
+    "cond_tara": "きざんだら"
+  }
 },
 
 {
@@ -1848,20 +5892,60 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["pendidikan", "karakter"],
+  "domain": [
+    "pendidikan",
+    "karakter"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum", "rekan"],
+  "lawan_bicara": [
+    "umum",
+    "rekan"
+  ],
   "nuance": "Secara literal = mengolah/menyuburkan tanah. Figuratif = mengembangkan kemampuan, hubungan, atau karakter melalui usaha yang konsisten dan jangka panjang. 信頼を培う = membangun kepercayaan secara bertahap. Berbeda dari 育てる (sodateru = membesarkan/merawat), 培う lebih menekankan proses yang organik, sabar, dan dibangun sedikit demi sedikit.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "長年の経験が彼の判断力を<b>培った</b>。", "id": "Pengalaman bertahun-tahun memupuk kemampuan penilaiannya.", "level": "n1", "tags": ["pekerjaan", "karakter"]},
-    {"jp": "異文化との交流が豊かな感性を<b>培う</b>。", "id": "Berinteraksi dengan budaya lain memupuk kepekaan rasa yang kaya.", "level": "n1", "tags": ["budaya", "pendidikan"]}
+    {
+      "jp": "長年の経験が彼の判断力を<b>培った</b>。",
+      "id": "Pengalaman bertahun-tahun memupuk kemampuan penilaiannya.",
+      "level": "n1",
+      "tags": [
+        "pekerjaan",
+        "karakter"
+      ]
+    },
+    {
+      "jp": "異文化との交流が豊かな感性を<b>培う</b>。",
+      "id": "Berinteraksi dengan budaya lain memupuk kepekaan rasa yang kaya.",
+      "level": "n1",
+      "tags": [
+        "budaya",
+        "pendidikan"
+      ]
+    }
   ],
-  "synonyms": ["育む", "育てる"],
+  "synonyms": [
+    "育む",
+    "育てる"
+  ],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1473350",
+  "frequency": 13500,
+  "conjugations": {
+    "dict": "つちかう",
+    "masu": "つちかいます",
+    "te": "つちかって",
+    "ta": "つちかった",
+    "nai": "つちかわない",
+    "potential": "つちかえる",
+    "passive": "つちかわれる",
+    "causative": "つちかわせる",
+    "volitional": "つちかおう",
+    "cond_ba": "つちかえば",
+    "cond_tara": "つちかったら"
+  }
 },
 
 {
@@ -1876,21 +5960,71 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["perubahan", "emosi-negatif"],
+  "domain": [
+    "perubahan",
+    "emosi-negatif"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Secara literal = melengkung/terdistorsi secara fisik. Secara figuratif = nilai, persepsi, atau karakter yang menyimpang dari kondisi yang semestinya. 価値観が歪む = pandangan nilai terdistorsi. 歪んだ社会 = masyarakat yang menyimpang. Berbeda dari 曲がる (magaru = bengkok/belok secara fisik), 歪む menekankan distorsi yang tidak simetris dan sering berkonotasi negatif.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "熱でフレームが<b>歪んで</b>しまった。", "id": "Rangka itu terdistorsi karena panas.", "level": "n1", "tags": ["kehidupan-sehari"]},
-    {"jp": "偏った教育は子どもの価値観を<b>歪める</b>危険がある。", "id": "Pendidikan yang bias berisiko mendistorsi pandangan nilai anak.", "level": "n1", "tags": ["pendidikan", "karakter"]},
-    {"jp": "権力に<b>歪んだ</b>情報が広まった。", "id": "Informasi yang terdistorsi oleh kepentingan kekuasaan menyebar luas.", "level": "n1", "tags": ["media", "politik-masyarakat"]}
+    {
+      "jp": "熱でフレームが<b>歪んで</b>しまった。",
+      "id": "Rangka itu terdistorsi karena panas.",
+      "level": "n1",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "偏った教育は子どもの価値観を<b>歪める</b>危険がある。",
+      "id": "Pendidikan yang bias berisiko mendistorsi pandangan nilai anak.",
+      "level": "n1",
+      "tags": [
+        "pendidikan",
+        "karakter"
+      ]
+    },
+    {
+      "jp": "権力に<b>歪んだ</b>情報が広まった。",
+      "id": "Informasi yang terdistorsi oleh kepentingan kekuasaan menyebar luas.",
+      "level": "n1",
+      "tags": [
+        "media",
+        "politik-masyarakat"
+      ]
+    }
   ],
-  "synonyms": ["ねじれる", "曲がる"],
+  "synonyms": [
+    "ねじれる",
+    "曲がる"
+  ],
   "antonyms": [],
-  "see_also": ["vg-n1-00135"],
+  "see_also": [
+    "vg-n1-00135"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "2846709",
+  "misc_jm": [
+    "biasanya kana saja"
+  ],
+  "conjugations": {
+    "dict": "ゆがむ",
+    "masu": "ゆがみます",
+    "te": "ゆがんで",
+    "ta": "ゆがんだ",
+    "nai": "ゆがまない",
+    "potential": "ゆがめる",
+    "passive": "ゆがまれる",
+    "causative": "ゆがませる",
+    "volitional": "ゆがもう",
+    "cond_ba": "ゆがめば",
+    "cond_tara": "ゆがんだら"
+  }
 },
 
 {
@@ -1905,20 +6039,75 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["emosi", "pikiran-opini"],
+  "domain": [
+    "emosi",
+    "pikiran-opini"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Secara literal = bergoyang pelan (nyala lilin, pantulan di air). Secara figuratif = kepercayaan diri, keyakinan, atau tekad yang mulai goyah. 信念が揺らぐ = keyakinan menjadi goyah. Berbeda dari 揺れる (yureru = bergoyang secara fisik), 揺らぐ lebih sering dipakai untuk hal abstrak. Lihat juga antonimnya: 揺るぎない (vg-n1-00136).",
   "conj_type": "godan",
   "examples": [
-    {"jp": "強い批判を受けて、彼の自信が<b>揺らいだ</b>。", "id": "Setelah mendapat kritik keras, kepercayaan dirinya mulai goyah.", "level": "n1", "tags": ["emosi", "pikiran-opini"]},
-    {"jp": "苦境に立たされても、彼女の意志は少しも<b>揺らがなかった</b>。", "id": "Meski berada dalam situasi sulit, tekadnya tidak sedikit pun goyah.", "level": "n1", "tags": ["karakter", "emosi"]}
+    {
+      "jp": "強い批判を受けて、彼の自信が<b>揺らいだ</b>。",
+      "id": "Setelah mendapat kritik keras, kepercayaan dirinya mulai goyah.",
+      "level": "n1",
+      "tags": [
+        "emosi",
+        "pikiran-opini"
+      ]
+    },
+    {
+      "jp": "苦境に立たされても、彼女の意志は少しも<b>揺らがなかった</b>。",
+      "id": "Meski berada dalam situasi sulit, tekadnya tidak sedikit pun goyah.",
+      "level": "n1",
+      "tags": [
+        "karakter",
+        "emosi"
+      ]
+    }
   ],
-  "synonyms": ["ぐらつく", "動揺する"],
-  "antonyms": ["揺るぎない"],
-  "see_also": ["vg-n1-00136"],
+  "synonyms": [
+    "ぐらつく",
+    "動揺する"
+  ],
+  "antonyms": [
+    "揺るぎない"
+  ],
+  "see_also": [
+    "vg-n1-00136"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1545630",
+  "frequency": 10000,
+  "meanings": [
+    {
+      "en": "to swing; to sway; to shake; to tremble",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to waver; to feel shaken; to become unstable",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "conjugations": {
+    "dict": "ゆらぐ",
+    "masu": "ゆらぎます",
+    "te": "ゆらいで",
+    "ta": "ゆらいだ",
+    "nai": "ゆらがない",
+    "potential": "ゆらげる",
+    "passive": "ゆらがれる",
+    "causative": "ゆらがせる",
+    "volitional": "ゆらごう",
+    "cond_ba": "ゆらげば",
+    "cond_tara": "ゆらいだら"
+  }
 },
 
 {
@@ -1933,20 +6122,49 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["pekerjaan", "ilmu-pengetahuan"],
+  "domain": [
+    "pekerjaan",
+    "ilmu-pengetahuan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum", "rekan"],
+  "lawan_bicara": [
+    "umum",
+    "rekan"
+  ],
   "nuance": "Menggambarkan proses belajar melalui percobaan dan kegagalan yang berulang. Sering berkonotasi positif — proses yang wajar dan bahkan diperlukan dalam inovasi, pengembangan diri, dan riset. 試行錯誤を繰り返す = terus melakukan trial and error. Berbeda dari ただ「失敗」(gagal saja), 試行錯誤menekankan bahwa setiap kegagalan adalah langkah menuju keberhasilan.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "<b>試行錯誤</b>を重ねた末に、ついに解決策を見つけた。", "id": "Setelah berkali-kali melakukan trial and error, akhirnya solusi ditemukan.", "level": "n1", "tags": ["ilmu-pengetahuan", "pekerjaan"]},
-    {"jp": "新しい料理は<b>試行錯誤しながら</b>レシピを完成させた。", "id": "Resep masakan baru diselesaikan sambil terus mencoba dan memperbaiki.", "level": "n1", "tags": ["makanan-minuman", "kehidupan-sehari"]}
+    {
+      "jp": "<b>試行錯誤</b>を重ねた末に、ついに解決策を見つけた。",
+      "id": "Setelah berkali-kali melakukan trial and error, akhirnya solusi ditemukan.",
+      "level": "n1",
+      "tags": [
+        "ilmu-pengetahuan",
+        "pekerjaan"
+      ]
+    },
+    {
+      "jp": "新しい料理は<b>試行錯誤しながら</b>レシピを完成させた。",
+      "id": "Resep masakan baru diselesaikan sambil terus mencoba dan memperbaiki.",
+      "level": "n1",
+      "tags": [
+        "makanan-minuman",
+        "kehidupan-sehari"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00148"],
+  "see_also": [
+    "vg-n1-00148"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1312410",
+  "frequency": 8000,
+  "misc_jm": [
+    "yojijukugo"
+  ]
 },
 
 {
@@ -1961,20 +6179,63 @@ window.vocabN1 = [
   "common": false,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["emosi-negatif", "kesehatan"],
+  "domain": [
+    "emosi-negatif",
+    "kesehatan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Yojijukugo: menggambarkan penderitaan fisik atau mental yang sangat hebat hingga seseorang berguling-guling tak berdaya — seperti jatuh tujuh kali dan terguling delapan kali. 七転八倒する = berguling-guling kesakitan. Berbeda dari ただ「苦しむ」(menderita), 七転八倒 menekankan intensitas yang ekstrem dan ketidakberdayaan total.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "腹痛がひどく、<b>七転八倒</b>しながら救急車を待った。", "id": "Sakit perut yang parah membuatku berguling-guling kesakitan sambil menunggu ambulans.", "level": "n1", "tags": ["kesehatan"]},
-    {"jp": "試験勉強で<b>七転八倒</b>しながらも、なんとか合格した。", "id": "Meski melalui penderitaan luar biasa saat belajar untuk ujian, entah bagaimana aku berhasil lulus.", "level": "n1", "tags": ["pendidikan"]}
+    {
+      "jp": "腹痛がひどく、<b>七転八倒</b>しながら救急車を待った。",
+      "id": "Sakit perut yang parah membuatku berguling-guling kesakitan sambil menunggu ambulans.",
+      "level": "n1",
+      "tags": [
+        "kesehatan"
+      ]
+    },
+    {
+      "jp": "試験勉強で<b>七転八倒</b>しながらも、なんとか合格した。",
+      "id": "Meski melalui penderitaan luar biasa saat belajar untuk ujian, entah bagaimana aku berhasil lulus.",
+      "level": "n1",
+      "tags": [
+        "pendidikan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00148"],
+  "see_also": [
+    "vg-n1-00148"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1615010",
+  "forms": [
+    {
+      "word": "七転八倒",
+      "info": []
+    },
+    {
+      "word": "七顛八倒",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "七顚八倒",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    }
+  ],
+  "misc_jm": [
+    "yojijukugo"
+  ]
 },
 
 {
@@ -1989,21 +6250,117 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["sastra", "pikiran-opini", "perubahan"],
+  "domain": [
+    "sastra",
+    "pikiran-opini",
+    "perubahan"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 含む (fukumu = mengandung, menyertakan — netral dan umum) — 孕む menekankan sesuatu yang terpendam di dalam dan berpotensi berkembang atau meledak: risiko tersembunyi, kemungkinan yang belum terwujud, atau makna yang tersimpan. 危険を孕む = mengandung bahaya laten. Lebih dramatis dan lebih sering muncul dalam tulisan formal dan sastra.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "この計画は多くのリスクを<b>孕んで</b>いる。", "id": "Rencana ini mengandung banyak risiko yang laten.", "level": "n1", "tags": ["pekerjaan", "pikiran-opini"]},
-    {"jp": "彼女の言葉は深い矛盾を<b>孕んで</b>いた。", "id": "Kata-katanya mengandung kontradiksi yang mendalam.", "level": "n1", "tags": ["sastra", "bahasa-komunikasi"]},
-    {"jp": "新技術の普及は常に倫理的問題を<b>孕む</b>。", "id": "Penyebaran teknologi baru selalu mengandung permasalahan etis yang tersembunyi.", "level": "n1", "tags": ["ilmu-pengetahuan", "pikiran-opini"]}
+    {
+      "jp": "この計画は多くのリスクを<b>孕んで</b>いる。",
+      "id": "Rencana ini mengandung banyak risiko yang laten.",
+      "level": "n1",
+      "tags": [
+        "pekerjaan",
+        "pikiran-opini"
+      ]
+    },
+    {
+      "jp": "彼女の言葉は深い矛盾を<b>孕んで</b>いた。",
+      "id": "Kata-katanya mengandung kontradiksi yang mendalam.",
+      "level": "n1",
+      "tags": [
+        "sastra",
+        "bahasa-komunikasi"
+      ]
+    },
+    {
+      "jp": "新技術の普及は常に倫理的問題を<b>孕む</b>。",
+      "id": "Penyebaran teknologi baru selalu mengandung permasalahan etis yang tersembunyi.",
+      "level": "n1",
+      "tags": [
+        "ilmu-pengetahuan",
+        "pikiran-opini"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1611300",
+  "frequency": 1000,
+  "forms": [
+    {
+      "word": "孕む",
+      "info": []
+    },
+    {
+      "word": "妊む",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "胎む",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "to conceive; to become pregnant",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "to get filled with (e.g. sails filled with wind); to be swollen with",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "to contain (a contradiction, danger, etc.); to carry (a problem, consequences, etc.); to involve (e.g. risk)",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "to be swollen and ripe (of a plant ear, head, sprout, etc.)",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "biasanya kana saja"
+  ],
+  "conjugations": {
+    "dict": "はらむ",
+    "masu": "はらみます",
+    "te": "はらんで",
+    "ta": "はらんだ",
+    "nai": "はらまない",
+    "potential": "はらめる",
+    "passive": "はらまれる",
+    "causative": "はらませる",
+    "volitional": "はらもう",
+    "cond_ba": "はらめば",
+    "cond_tara": "はらんだら"
+  }
 },
 
 {
@@ -2018,21 +6375,95 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["sastra", "kualitas", "pikiran-opini"],
+  "domain": [
+    "sastra",
+    "kualitas",
+    "pikiran-opini"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 持つ (motsu = memiliki secara konkret dan eksplisit) — 帯びる menggambarkan sesuatu yang memancarkan atau mengandung suatu kualitas secara halus dan tidak langsung, seperti nuansa warna atau atmosfer tersembunyi. 赤みを帯びる = bernuansa kemerahan. 危険性を帯びた状況 = situasi yang mengandung unsur bahaya. Digunakan dalam deskripsi yang bernuansa dan sastrawi.",
   "conj_type": "ichidan",
   "examples": [
-    {"jp": "夕暮れの空は橙色を<b>帯びて</b>いた。", "id": "Langit senja memancarkan nuansa warna jingga.", "level": "n1", "tags": ["sastra", "alam-lingkungan"]},
-    {"jp": "彼女の声はどこか哀愁を<b>帯びて</b>いた。", "id": "Suaranya mengandung kesedihan yang samar.", "level": "n1", "tags": ["sastra", "emosi"]},
-    {"jp": "その発言は政治的意味合いを<b>帯びて</b>いると受け取られた。", "id": "Pernyataan itu dianggap mengandung nuansa politis.", "level": "n1", "tags": ["politik-masyarakat", "pikiran-opini"]}
+    {
+      "jp": "夕暮れの空は橙色を<b>帯びて</b>いた。",
+      "id": "Langit senja memancarkan nuansa warna jingga.",
+      "level": "n1",
+      "tags": [
+        "sastra",
+        "alam-lingkungan"
+      ]
+    },
+    {
+      "jp": "彼女の声はどこか哀愁を<b>帯びて</b>いた。",
+      "id": "Suaranya mengandung kesedihan yang samar.",
+      "level": "n1",
+      "tags": [
+        "sastra",
+        "emosi"
+      ]
+    },
+    {
+      "jp": "その発言は政治的意味合いを<b>帯びて</b>いると受け取られた。",
+      "id": "Pernyataan itu dianggap mengandung nuansa politis.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat",
+        "pikiran-opini"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1410430",
+  "frequency": 12000,
+  "forms": [
+    {
+      "word": "帯びる",
+      "info": []
+    },
+    {
+      "word": "佩びる",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "to wear (a sword, decoration, etc.); to carry; to bear",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to be entrusted with (a mission); to be charged with; to take on",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to have (a quality, property, etc.); to have a trace of; to be tinged with",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "conjugations": {
+    "dict": "おびる",
+    "masu": "おびます",
+    "te": "おびて",
+    "ta": "おびた",
+    "nai": "おびない",
+    "potential": "おびられる",
+    "passive": "おびられる",
+    "causative": "おびさせる",
+    "volitional": "おびよう",
+    "cond_ba": "おびれば",
+    "cond_tara": "おびたら"
+  }
 },
 
 {
@@ -2047,20 +6478,74 @@ window.vocabN1 = [
   "common": false,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["sastra", "emosi"],
+  "domain": [
+    "sastra",
+    "emosi"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 満たす (mitasu = memenuhi, mengisi — aktif dan umum) — 湛える menggambarkan kondisi berisi hingga penuh dan nyaris meluap dengan ketenangan yang dalam, bukan sekadar terisi. 目に涙を湛える = mata penuh dengan air mata (yang belum jatuh). 笑みを湛える = wajah memancarkan senyum yang tulus. Sangat puitis dan sering dipakai dalam sastra.",
   "conj_type": "ichidan",
   "examples": [
-    {"jp": "彼は目に涙を<b>湛えて</b>、静かに話し続けた。", "id": "Matanya penuh dengan air mata yang belum jatuh, namun ia terus berbicara dengan tenang.", "level": "n1", "tags": ["sastra", "emosi"]},
-    {"jp": "湖は満々と水を<b>湛えて</b>いた。", "id": "Danau itu tergenang penuh dengan air hingga ke tepiannya.", "level": "n1", "tags": ["sastra", "alam-lingkungan"]}
+    {
+      "jp": "彼は目に涙を<b>湛えて</b>、静かに話し続けた。",
+      "id": "Matanya penuh dengan air mata yang belum jatuh, namun ia terus berbicara dengan tenang.",
+      "level": "n1",
+      "tags": [
+        "sastra",
+        "emosi"
+      ]
+    },
+    {
+      "jp": "湖は満々と水を<b>湛えて</b>いた。",
+      "id": "Danau itu tergenang penuh dengan air hingga ke tepiannya.",
+      "level": "n1",
+      "tags": [
+        "sastra",
+        "alam-lingkungan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1982910",
+  "meanings": [
+    {
+      "en": "to fill (with); to be filled with",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "to express (an emotion); to project (sadness, joy, etc.); to wear (e.g. a smile)",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "biasanya kana saja"
+  ],
+  "conjugations": {
+    "dict": "たたえる",
+    "masu": "たたえます",
+    "te": "たたえて",
+    "ta": "たたえた",
+    "nai": "たたえない",
+    "potential": "たたえられる",
+    "passive": "たたえられる",
+    "causative": "たたえさせる",
+    "volitional": "たたえよう",
+    "cond_ba": "たたえれば",
+    "cond_tara": "たたえたら"
+  }
 },
 
 {
@@ -2075,21 +6560,66 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["seni-budaya", "sastra", "media"],
+  "domain": [
+    "seni-budaya",
+    "sastra",
+    "media"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 反射する (hansha suru = memantulkan cahaya/suara secara fisik-ilmiah) dan 写す (utsusu = menyalin, memotret) — 映す secara khusus merujuk pada menampilkan atau memantulkan bayangan/gambar di suatu permukaan seperti cermin, air, atau layar. Juga digunakan secara metaforis: 社会を映す鏡 = cermin yang mencerminkan masyarakat. Menekankan aspek visibilitas dan representasi.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "静かな湖面が山の姿を美しく<b>映して</b>いた。", "id": "Permukaan danau yang tenang memantulkan bayangan pegunungan dengan indah.", "level": "n1", "tags": ["sastra", "alam-lingkungan"]},
-    {"jp": "この小説は現代社会の矛盾を鋭く<b>映して</b>いる。", "id": "Novel ini mencerminkan kontradiksi masyarakat modern dengan tajam.", "level": "n1", "tags": ["sastra", "media"]},
-    {"jp": "スクリーンに映像を<b>映す</b>準備が整った。", "id": "Persiapan untuk menampilkan gambar di layar sudah selesai.", "level": "n1", "tags": ["media", "teknologi"]}
+    {
+      "jp": "静かな湖面が山の姿を美しく<b>映して</b>いた。",
+      "id": "Permukaan danau yang tenang memantulkan bayangan pegunungan dengan indah.",
+      "level": "n1",
+      "tags": [
+        "sastra",
+        "alam-lingkungan"
+      ]
+    },
+    {
+      "jp": "この小説は現代社会の矛盾を鋭く<b>映して</b>いる。",
+      "id": "Novel ini mencerminkan kontradiksi masyarakat modern dengan tajam.",
+      "level": "n1",
+      "tags": [
+        "sastra",
+        "media"
+      ]
+    },
+    {
+      "jp": "スクリーンに映像を<b>映す</b>準備が整った。",
+      "id": "Persiapan untuk menampilkan gambar di layar sudah selesai.",
+      "level": "n1",
+      "tags": [
+        "media",
+        "teknologi"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1588330",
+  "frequency": 18500,
+  "conjugations": {
+    "dict": "うつす",
+    "masu": "うつします",
+    "te": "うつして",
+    "ta": "うつした",
+    "nai": "うつさない",
+    "potential": "うつせる",
+    "passive": "うつされる",
+    "causative": "うつさせる",
+    "volitional": "うつそう",
+    "cond_ba": "うつせば",
+    "cond_tara": "うつしたら"
+  }
 },
 
 {
@@ -2104,20 +6634,59 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["seni-budaya", "media", "kehidupan-sehari"],
+  "domain": [
+    "seni-budaya",
+    "media",
+    "kehidupan-sehari"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum", "teman"],
+  "lawan_bicara": [
+    "umum",
+    "teman"
+  ],
   "nuance": "Berbeda dari きれい (indah secara umum) dan 目立つ (medatsu = mencolok, menonjol) — 映える mendeskripsikan sesuatu yang tampak mengesankan dan menonjol karena interaksi dengan latarnya: cahaya, warna, komposisi. 写真に映える = fotogenik. Istilah ini semakin populer dalam konteks media sosial (インスタ映え = instagramable), meski kata aslinya sudah lama ada dalam bahasa Jepang.",
   "conj_type": "ichidan",
   "examples": [
-    {"jp": "赤いドレスが白い壁に<b>映えて</b>、とても美しかった。", "id": "Gaun merah itu tampak sangat indah dan menonjol di depan dinding putih.", "level": "n1", "tags": ["seni-budaya"]},
-    {"jp": "この料理は色鮮やかで、写真に<b>映える</b>と評判だ。", "id": "Masakan ini terkenal berwarna cerah dan sangat fotogenik.", "level": "n1", "tags": ["media", "makanan-minuman"]}
+    {
+      "jp": "赤いドレスが白い壁に<b>映えて</b>、とても美しかった。",
+      "id": "Gaun merah itu tampak sangat indah dan menonjol di depan dinding putih.",
+      "level": "n1",
+      "tags": [
+        "seni-budaya"
+      ]
+    },
+    {
+      "jp": "この料理は色鮮やかで、写真に<b>映える</b>と評判だ。",
+      "id": "Masakan ini terkenal berwarna cerah dan sangat fotogenik.",
+      "level": "n1",
+      "tags": [
+        "media",
+        "makanan-minuman"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "2849575",
+  "misc_jm": [
+    "percakapan kasual"
+  ],
+  "conjugations": {
+    "dict": "はえる",
+    "masu": "はえます",
+    "te": "はえて",
+    "ta": "はえた",
+    "nai": "はえない",
+    "potential": "はえられる",
+    "passive": "はえられる",
+    "causative": "はえさせる",
+    "volitional": "はえよう",
+    "cond_ba": "はえれば",
+    "cond_tara": "はえたら"
+  }
 },
 
 {
@@ -2132,20 +6701,84 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["karakter", "emosi-negatif", "politik-masyarakat"],
+  "domain": [
+    "karakter",
+    "emosi-negatif",
+    "politik-masyarakat"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 諦める (akirameru = menyerah secara pasif, merelakan) yang lebih internal — 屈する menekankan penyerahan di bawah tekanan eksternal yang kuat: kekuasaan, ancaman, atau kekuatan yang lebih besar. 圧力に屈する = tunduk pada tekanan. Sering digunakan dalam konteks perlawanan yang pada akhirnya gagal. Antonimnya 屈しない = tidak tunduk, menunjukkan keteguhan.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "彼はどんな圧力にも<b>屈しない</b>という強い意志を持っていた。", "id": "Ia memiliki tekad kuat untuk tidak tunduk pada tekanan apa pun.", "level": "n1", "tags": ["karakter", "politik-masyarakat"]},
-    {"jp": "長期の交渉の末、相手側がついに<b>屈した</b>。", "id": "Setelah negosiasi panjang, pihak lawan akhirnya menyerah.", "level": "n1", "tags": ["bisnis", "politik-masyarakat"]}
+    {
+      "jp": "彼はどんな圧力にも<b>屈しない</b>という強い意志を持っていた。",
+      "id": "Ia memiliki tekad kuat untuk tidak tunduk pada tekanan apa pun.",
+      "level": "n1",
+      "tags": [
+        "karakter",
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "長期の交渉の末、相手側がついに<b>屈した</b>。",
+      "id": "Setelah negosiasi panjang, pihak lawan akhirnya menyerah.",
+      "level": "n1",
+      "tags": [
+        "bisnis",
+        "politik-masyarakat"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1246540",
+  "frequency": 16000,
+  "meanings": [
+    {
+      "en": "to yield; to give in; to be daunted; to shrink",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to bend (knee, etc.)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to subdue; to overpower",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to feel down",
+      "misc": [
+        "arkais"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "arkais"
+  ],
+  "conjugations": {
+    "dict": "くっする",
+    "masu": "くっします",
+    "te": "くっして",
+    "ta": "くっした",
+    "nai": "くっしない",
+    "potential": "くっできる",
+    "passive": "くっされる",
+    "causative": "くっさせる",
+    "volitional": "くっしよう",
+    "cond_ba": "くっすれば",
+    "cond_tara": "くっしたら"
+  }
 },
 
 {
@@ -2160,21 +6793,83 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["karakter", "emosi", "sastra"],
+  "domain": [
+    "karakter",
+    "emosi",
+    "sastra"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 反抗する (hankou suru = memberontak, bisa diucapkan dan bersifat umum) — 抗う menekankan perlawanan aktif terhadap sesuatu yang besar, mapan, dan sulit dilawan: aturan alam, kekuasaan besar, atau nasib. Ada nuansa keberanian yang heroik, atau ironisnya, perlawanan sia-sia yang tetap dijalani. 運命に抗う = melawan takdir. Lebih puitis dan lebih berat dari 反抗する.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "人は老いに<b>抗う</b>ことができない。", "id": "Manusia tidak bisa melawan penuaan.", "level": "n1", "tags": ["sastra", "kehidupan-sehari"]},
-    {"jp": "彼女は不当な扱いに<b>抗って</b>、最後まで闘い続けた。", "id": "Ia terus berjuang sampai akhir melawan perlakuan yang tidak adil.", "level": "n1", "tags": ["karakter", "politik-masyarakat"]},
-    {"jp": "大きな時代の流れに<b>抗う</b>のは容易ではない。", "id": "Tidaklah mudah untuk melawan arus besar perubahan zaman.", "level": "n1", "tags": ["sastra", "perubahan"]}
+    {
+      "jp": "人は老いに<b>抗う</b>ことができない。",
+      "id": "Manusia tidak bisa melawan penuaan.",
+      "level": "n1",
+      "tags": [
+        "sastra",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "彼女は不当な扱いに<b>抗って</b>、最後まで闘い続けた。",
+      "id": "Ia terus berjuang sampai akhir melawan perlakuan yang tidak adil.",
+      "level": "n1",
+      "tags": [
+        "karakter",
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "大きな時代の流れに<b>抗う</b>のは容易ではない。",
+      "id": "Tidaklah mudah untuk melawan arus besar perubahan zaman.",
+      "level": "n1",
+      "tags": [
+        "sastra",
+        "perubahan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "2261110",
+  "forms": [
+    {
+      "word": "抗う",
+      "info": []
+    },
+    {
+      "word": "諍う",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "争う",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "conjugations": {
+    "dict": "あらがう",
+    "masu": "あらがいます",
+    "te": "あらがって",
+    "ta": "あらがった",
+    "nai": "あらがわない",
+    "potential": "あらがえる",
+    "passive": "あらがわれる",
+    "causative": "あらがわせる",
+    "volitional": "あらがおう",
+    "cond_ba": "あらがえば",
+    "cond_tara": "あらがったら"
+  }
 },
 
 {
@@ -2189,21 +6884,83 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["karakter", "sastra", "pekerjaan"],
+  "domain": [
+    "karakter",
+    "sastra",
+    "pekerjaan"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Memiliki dua nuansa yang berbeda tergantung konteks: (1) bertahan melalui kesulitan atau kondisi buruk dengan ketahanan — 暑さを凌ぐ = bertahan dari panas terik; (2) melampaui atau mengungguli seseorang/sesuatu — 先輩を凌ぐ才能 = bakat yang melampaui seniornya. Berbeda dari 超える (koeru = melewati batas secara kuantitatif) — 凌ぐ mengandung nuansa usaha keras dan keunggulan dinamis.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "その新人選手の実力は、ベテランを<b>凌ぐ</b>と評価された。", "id": "Kemampuan pemain baru itu dinilai melampaui para veteran.", "level": "n1", "tags": ["olahraga", "pekerjaan"]},
-    {"jp": "避難所での厳しい生活を何とか<b>凌い</b>だ。", "id": "Mereka berhasil bertahan melalui kehidupan keras di tempat pengungsian.", "level": "n1", "tags": ["kehidupan-sehari", "karakter"]},
-    {"jp": "この製品の品質は競合他社を大きく<b>凌いで</b>いる。", "id": "Kualitas produk ini jauh melampaui kompetitor.", "level": "n1", "tags": ["bisnis", "pekerjaan"]}
+    {
+      "jp": "その新人選手の実力は、ベテランを<b>凌ぐ</b>と評価された。",
+      "id": "Kemampuan pemain baru itu dinilai melampaui para veteran.",
+      "level": "n1",
+      "tags": [
+        "olahraga",
+        "pekerjaan"
+      ]
+    },
+    {
+      "jp": "避難所での厳しい生活を何とか<b>凌い</b>だ。",
+      "id": "Mereka berhasil bertahan melalui kehidupan keras di tempat pengungsian.",
+      "level": "n1",
+      "tags": [
+        "kehidupan-sehari",
+        "karakter"
+      ]
+    },
+    {
+      "jp": "この製品の品質は競合他社を大きく<b>凌いで</b>いる。",
+      "id": "Kualitas produk ini jauh melampaui kompetitor.",
+      "level": "n1",
+      "tags": [
+        "bisnis",
+        "pekerjaan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1554200",
+  "frequency": 1000,
+  "meanings": [
+    {
+      "en": "to endure; to keep out (e.g. rain); to stave off (e.g. starvation)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to pull through; to get over; to survive",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to surpass; to outdo; to excel; to eclipse; to defy; to slight",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "conjugations": {
+    "dict": "しのぐ",
+    "masu": "しのぎます",
+    "te": "しのいで",
+    "ta": "しのいだ",
+    "nai": "しのがない",
+    "potential": "しのげる",
+    "passive": "しのがれる",
+    "causative": "しのがせる",
+    "volitional": "しのごう",
+    "cond_ba": "しのげば",
+    "cond_tara": "しのいだら"
+  }
 },
 
 {
@@ -2218,21 +6975,76 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["karakter", "pekerjaan", "sastra"],
+  "domain": [
+    "karakter",
+    "pekerjaan",
+    "sastra"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 妨げる (samatageru = mengganggu, menghambat — lebih umum dan bisa kecil-kecilan) dan 阻止する (soshi suru = menghalangi secara aktif dan total, lebih formal) — 阻む menekankan hambatan yang menutup jalan kemajuan seseorang atau sesuatu secara efektif. Sering digunakan untuk hambatan struktural: 前進を阻む壁 = tembok yang menghalangi kemajuan. Berkonotasi kuat dan dramatis.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "悪天候が登山隊の前進を<b>阻んだ</b>。", "id": "Cuaca buruk menghalangi kemajuan tim pendaki.", "level": "n1", "tags": ["alam-lingkungan", "olahraga"]},
-    {"jp": "官僚的な手続きが改革を<b>阻んで</b>いると批判された。", "id": "Prosedur birokrasi dikritik sebagai penghambat reformasi.", "level": "n1", "tags": ["politik-masyarakat", "hukum-aturan"]},
-    {"jp": "何者も彼の夢への道を<b>阻む</b>ことはできなかった。", "id": "Tidak ada seorang pun yang bisa menghalangi jalannya menuju impian.", "level": "n1", "tags": ["karakter", "sastra"]}
+    {
+      "jp": "悪天候が登山隊の前進を<b>阻んだ</b>。",
+      "id": "Cuaca buruk menghalangi kemajuan tim pendaki.",
+      "level": "n1",
+      "tags": [
+        "alam-lingkungan",
+        "olahraga"
+      ]
+    },
+    {
+      "jp": "官僚的な手続きが改革を<b>阻んで</b>いると批判された。",
+      "id": "Prosedur birokrasi dikritik sebagai penghambat reformasi.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat",
+        "hukum-aturan"
+      ]
+    },
+    {
+      "jp": "何者も彼の夢への道を<b>阻む</b>ことはできなかった。",
+      "id": "Tidak ada seorang pun yang bisa menghalangi jalannya menuju impian.",
+      "level": "n1",
+      "tags": [
+        "karakter",
+        "sastra"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1397800",
+  "frequency": 6500,
+  "forms": [
+    {
+      "word": "阻む",
+      "info": []
+    },
+    {
+      "word": "沮む",
+      "info": []
+    }
+  ],
+  "conjugations": {
+    "dict": "はばむ",
+    "masu": "はばみます",
+    "te": "はばんで",
+    "ta": "はばんだ",
+    "nai": "はばまない",
+    "potential": "はばめる",
+    "passive": "はばまれる",
+    "causative": "はばませる",
+    "volitional": "はばもう",
+    "cond_ba": "はばめば",
+    "cond_tara": "はばんだら"
+  }
 },
 
 {
@@ -2247,21 +7059,78 @@ window.vocabN1 = [
   "common": false,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["sastra", "seni-budaya", "bahasa-komunikasi"],
+  "domain": [
+    "sastra",
+    "seni-budaya",
+    "bahasa-komunikasi"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Secara literal berarti memintal serat menjadi benang. Dalam penggunaan metaforis yang sangat puitis, dipakai untuk merangkai kata-kata menjadi cerita atau puisi: 言葉を紡ぐ = merangkai kata dengan keahlian. Berbeda dari 書く (kaku = menulis, netral) atau 語る (kataru = bercerita) — 紡ぐ menekankan proses menggabungkan elemen dengan kesabaran dan keahlian, seperti pemintal benang. Konotasinya sangat artistik.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "彼女は日々の暮らしの中から美しい物語を<b>紡い</b>だ。", "id": "Dari kehidupan sehari-hari, ia merangkai kisah-kisah yang indah.", "level": "n1", "tags": ["sastra", "seni-budaya"]},
-    {"jp": "二人の詩人が共同で言葉を<b>紡ぎ</b>、一冊の詩集を完成させた。", "id": "Dua penyair secara bersama-sama merangkai kata dan merampungkan satu kumpulan puisi.", "level": "n1", "tags": ["sastra", "seni-budaya"]},
-    {"jp": "世代を超えて語り継がれる物語を<b>紡ぐ</b>ことが彼の使命だった。", "id": "Merangkai cerita yang akan diwariskan lintas generasi adalah misinya.", "level": "n1", "tags": ["sastra", "budaya"]}
+    {
+      "jp": "彼女は日々の暮らしの中から美しい物語を<b>紡い</b>だ。",
+      "id": "Dari kehidupan sehari-hari, ia merangkai kisah-kisah yang indah.",
+      "level": "n1",
+      "tags": [
+        "sastra",
+        "seni-budaya"
+      ]
+    },
+    {
+      "jp": "二人の詩人が共同で言葉を<b>紡ぎ</b>、一冊の詩集を完成させた。",
+      "id": "Dua penyair secara bersama-sama merangkai kata dan merampungkan satu kumpulan puisi.",
+      "level": "n1",
+      "tags": [
+        "sastra",
+        "seni-budaya"
+      ]
+    },
+    {
+      "jp": "世代を超えて語り継がれる物語を<b>紡ぐ</b>ことが彼の使命だった。",
+      "id": "Merangkai cerita yang akan diwariskan lintas generasi adalah misinya.",
+      "level": "n1",
+      "tags": [
+        "sastra",
+        "budaya"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1519880",
+  "frequency": 18000,
+  "meanings": [
+    {
+      "en": "to spin; to make yarn",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to spin (a tale); to assemble (e.g. words); to put together",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "conjugations": {
+    "dict": "つむぐ",
+    "masu": "つむぎます",
+    "te": "つむいで",
+    "ta": "つむいだ",
+    "nai": "つむがない",
+    "potential": "つむげる",
+    "passive": "つむがれる",
+    "causative": "つむがせる",
+    "volitional": "つむごう",
+    "cond_ba": "つむげば",
+    "cond_tara": "つむいだら"
+  }
 },
 
 {
@@ -2276,21 +7145,105 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["sastra", "emosi", "budaya"],
+  "domain": [
+    "sastra",
+    "emosi",
+    "budaya"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 書く (kaku = menulis, bisa dihapus) atau 記録する (kiroku suru = merekam/mencatat secara prosedural) — 刻む menyiratkan tindakan yang meninggalkan bekas permanen dan tak terhapuskan, seperti ukiran di batu atau memori yang terpatri. 心に刻む = terpatri dalam hati. Secara harfiah juga berarti menghacah bahan masakan halus-halus. Pilihan kata yang dramatik dan bernuansa permanen.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "その言葉は彼女の心に深く<b>刻まれた</b>。", "id": "Kata-kata itu terpatri dalam dalam hatinya.", "level": "n1", "tags": ["emosi", "sastra"]},
-    {"jp": "碑には英雄たちの名前が<b>刻まれて</b>いた。", "id": "Nama-nama para pahlawan terukir di atas tugu peringatan itu.", "level": "n1", "tags": ["budaya", "sastra"]},
-    {"jp": "この大会での経験を一生胸に<b>刻んで</b>おきたい。", "id": "Aku ingin mengabadikan pengalaman di kompetisi ini seumur hidup dalam dadaku.", "level": "n1", "tags": ["emosi", "olahraga"]}
+    {
+      "jp": "その言葉は彼女の心に深く<b>刻まれた</b>。",
+      "id": "Kata-kata itu terpatri dalam dalam hatinya.",
+      "level": "n1",
+      "tags": [
+        "emosi",
+        "sastra"
+      ]
+    },
+    {
+      "jp": "碑には英雄たちの名前が<b>刻まれて</b>いた。",
+      "id": "Nama-nama para pahlawan terukir di atas tugu peringatan itu.",
+      "level": "n1",
+      "tags": [
+        "budaya",
+        "sastra"
+      ]
+    },
+    {
+      "jp": "この大会での経験を一生胸に<b>刻んで</b>おきたい。",
+      "id": "Aku ingin mengabadikan pengalaman di kompetisi ini seumur hidup dalam dadaku.",
+      "level": "n1",
+      "tags": [
+        "emosi",
+        "olahraga"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1285890",
+  "frequency": 7000,
+  "meanings": [
+    {
+      "en": "to mince; to cut fine; to chop up; to hash; to shred",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to carve; to engrave; to chisel; to notch",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to tick away (time); to beat out (e.g. rhythm); to record the passing moments",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to etch (into one's mind); to remember distinctly",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to have tattooed",
+      "misc": [
+        "arkais"
+      ],
+      "field": []
+    },
+    {
+      "en": "to torment",
+      "misc": [
+        "arkais"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "arkais"
+  ],
+  "conjugations": {
+    "dict": "きざむ",
+    "masu": "きざみます",
+    "te": "きざんで",
+    "ta": "きざんだ",
+    "nai": "きざまない",
+    "potential": "きざめる",
+    "passive": "きざまれる",
+    "causative": "きざませる",
+    "volitional": "きざもう",
+    "cond_ba": "きざめば",
+    "cond_tara": "きざんだら"
+  }
 },
 
 {
@@ -2305,21 +7258,67 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["pendidikan", "karakter", "pekerjaan"],
+  "domain": [
+    "pendidikan",
+    "karakter",
+    "pekerjaan"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum", "rekan"],
+  "lawan_bicara": [
+    "umum",
+    "rekan"
+  ],
   "nuance": "Berbeda dari 育てる (sodateru = membesarkan, mendidik — lebih umum dan bisa berlangsung cepat) — 培う secara spesifik menggambarkan proses memupuk dan mengembangkan sesuatu secara bertahap dan sabar melalui usaha terus-menerus, seperti merawat tanaman dari benih. 経験を培う = memupuk pengalaman bertahap. Sangat sering digunakan dalam konteks pengembangan kemampuan dan karakter jangka panjang.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "長年の研究を通じて<b>培われた</b>専門知識は貴重だ。", "id": "Pengetahuan ahli yang dipupuk melalui penelitian bertahun-tahun sangatlah berharga.", "level": "n1", "tags": ["pekerjaan", "pendidikan"]},
-    {"jp": "信頼は一朝一夕には<b>培えない</b>。", "id": "Kepercayaan tidak bisa dipupuk dalam semalam.", "level": "n1", "tags": ["karakter", "pertemanan"]},
-    {"jp": "幼少期に<b>培われた</b>感性は生涯の財産となる。", "id": "Kepekaan yang dipupuk sejak masa kecil menjadi aset seumur hidup.", "level": "n1", "tags": ["pendidikan", "karakter"]}
+    {
+      "jp": "長年の研究を通じて<b>培われた</b>専門知識は貴重だ。",
+      "id": "Pengetahuan ahli yang dipupuk melalui penelitian bertahun-tahun sangatlah berharga.",
+      "level": "n1",
+      "tags": [
+        "pekerjaan",
+        "pendidikan"
+      ]
+    },
+    {
+      "jp": "信頼は一朝一夕には<b>培えない</b>。",
+      "id": "Kepercayaan tidak bisa dipupuk dalam semalam.",
+      "level": "n1",
+      "tags": [
+        "karakter",
+        "pertemanan"
+      ]
+    },
+    {
+      "jp": "幼少期に<b>培われた</b>感性は生涯の財産となる。",
+      "id": "Kepekaan yang dipupuk sejak masa kecil menjadi aset seumur hidup.",
+      "level": "n1",
+      "tags": [
+        "pendidikan",
+        "karakter"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1473350",
+  "frequency": 13500,
+  "conjugations": {
+    "dict": "つちかう",
+    "masu": "つちかいます",
+    "te": "つちかって",
+    "ta": "つちかった",
+    "nai": "つちかわない",
+    "potential": "つちかえる",
+    "passive": "つちかわれる",
+    "causative": "つちかわせる",
+    "volitional": "つちかおう",
+    "cond_ba": "つちかえば",
+    "cond_tara": "つちかったら"
+  }
 },
 
 {
@@ -2334,21 +7333,81 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["seni-budaya", "sastra"],
+  "domain": [
+    "seni-budaya",
+    "sastra"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 弾く (hiku = memainkan alat petik/tuts — spesifik instrumen) dan 吹く (fuku = meniup alat tiup) — 奏でる adalah istilah yang lebih puitis dan tidak terikat pada jenis instrumen. Selain literal, juga digunakan secara metaforis: 美しいハーモニーを奏でる = menghasilkan harmoni yang indah (bisa tentang kerjasama tim atau hubungan yang serasi). Pilihan kata yang sangat artistik dan sastrawi.",
   "conj_type": "ichidan",
   "examples": [
-    {"jp": "ピアニストは静寂の中で繊細な旋律を<b>奏でた</b>。", "id": "Di tengah keheningan, pianis itu memainkan melodi yang lembut dan halus.", "level": "n1", "tags": ["seni-budaya"]},
-    {"jp": "二人は長年の信頼から生まれる美しい音楽を<b>奏でた</b>。", "id": "Keduanya menghasilkan musik yang indah, lahir dari kepercayaan yang terjalin bertahun-tahun.", "level": "n1", "tags": ["seni-budaya", "pertemanan"]},
-    {"jp": "自然界では虫や鳥が夜の交響曲を<b>奏でて</b>いる。", "id": "Di alam, serangga dan burung memainkan simfoni malam.", "level": "n1", "tags": ["sastra", "alam-lingkungan"]}
+    {
+      "jp": "ピアニストは静寂の中で繊細な旋律を<b>奏でた</b>。",
+      "id": "Di tengah keheningan, pianis itu memainkan melodi yang lembut dan halus.",
+      "level": "n1",
+      "tags": [
+        "seni-budaya"
+      ]
+    },
+    {
+      "jp": "二人は長年の信頼から生まれる美しい音楽を<b>奏でた</b>。",
+      "id": "Keduanya menghasilkan musik yang indah, lahir dari kepercayaan yang terjalin bertahun-tahun.",
+      "level": "n1",
+      "tags": [
+        "seni-budaya",
+        "pertemanan"
+      ]
+    },
+    {
+      "jp": "自然界では虫や鳥が夜の交響曲を<b>奏でて</b>いる。",
+      "id": "Di alam, serangga dan burung memainkan simfoni malam.",
+      "level": "n1",
+      "tags": [
+        "sastra",
+        "alam-lingkungan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1399470",
+  "frequency": 19500,
+  "meanings": [
+    {
+      "en": "to play an instrument (esp. string instruments)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to dance",
+      "misc": [
+        "obsolete term"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "obsolete term"
+  ],
+  "conjugations": {
+    "dict": "かなでる",
+    "masu": "かなでます",
+    "te": "かなでて",
+    "ta": "かなでた",
+    "nai": "かなでない",
+    "potential": "かなでられる",
+    "passive": "かなでられる",
+    "causative": "かなでさせる",
+    "volitional": "かなでよう",
+    "cond_ba": "かなでれば",
+    "cond_tara": "かなでたら"
+  }
 },
 
 {
@@ -2363,21 +7422,101 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["sastra", "seni-budaya", "kehidupan-sehari"],
+  "domain": [
+    "sastra",
+    "seni-budaya",
+    "kehidupan-sehari"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 色を付ける (iro wo tsukeru = memberi warna secara harfiah dan mekanis) — 彩る digunakan baik secara literal (dedaunan musim gugur mewarnai pegunungan dengan merah dan kuning) maupun metaforis yang puitis untuk menggambarkan sesuatu yang memperkaya dan memperindah: 人生を彩る = mewarnai kehidupan dengan makna. Menekankan efek visual dan emosional yang kaya, bukan sekadar pewarnaan.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "紅葉が山々を鮮やかに<b>彩って</b>いた。", "id": "Daun-daun musim gugur mewarnai pegunungan dengan warna-warna cerah yang menakjubkan.", "level": "n1", "tags": ["sastra", "alam-lingkungan"]},
-    {"jp": "多様な文化が日本の歴史を豊かに<b>彩って</b>きた。", "id": "Beragam budaya telah memperkaya dan memperindah sejarah Jepang.", "level": "n1", "tags": ["budaya", "sastra"]},
-    {"jp": "音楽と出会いが彼の人生を<b>彩った</b>。", "id": "Musik dan pertemuan-pertemuan itu mewarnai hidupnya.", "level": "n1", "tags": ["seni-budaya", "kehidupan-sehari"]}
+    {
+      "jp": "紅葉が山々を鮮やかに<b>彩って</b>いた。",
+      "id": "Daun-daun musim gugur mewarnai pegunungan dengan warna-warna cerah yang menakjubkan.",
+      "level": "n1",
+      "tags": [
+        "sastra",
+        "alam-lingkungan"
+      ]
+    },
+    {
+      "jp": "多様な文化が日本の歴史を豊かに<b>彩って</b>きた。",
+      "id": "Beragam budaya telah memperkaya dan memperindah sejarah Jepang.",
+      "level": "n1",
+      "tags": [
+        "budaya",
+        "sastra"
+      ]
+    },
+    {
+      "jp": "音楽と出会いが彼の人生を<b>彩った</b>。",
+      "id": "Musik dan pertemuan-pertemuan itu mewarnai hidupnya.",
+      "level": "n1",
+      "tags": [
+        "seni-budaya",
+        "kehidupan-sehari"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1294400",
+  "frequency": 10500,
+  "forms": [
+    {
+      "word": "彩る",
+      "info": []
+    },
+    {
+      "word": "色取る",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "色どる",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "to colour; to color; to paint",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to apply make-up",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to decorate; to garnish; to adorn; to add flair",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "conjugations": {
+    "dict": "いろどる",
+    "masu": "いろどります",
+    "te": "いろどって",
+    "ta": "いろどった",
+    "nai": "いろどらない",
+    "potential": "いろどれる",
+    "passive": "いろどられる",
+    "causative": "いろどらせる",
+    "volitional": "いろどろう",
+    "cond_ba": "いろどれば",
+    "cond_tara": "いろどったら"
+  }
 },
 
 {
@@ -2392,20 +7531,55 @@ window.vocabN1 = [
   "common": false,
   "related_grammar": [],
   "formalitas": 5,
-  "domain": ["ilmu-pengetahuan", "sastra", "hukum-aturan"],
+  "domain": [
+    "ilmu-pengetahuan",
+    "sastra",
+    "hukum-aturan"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan"],
+  "lawan_bicara": [
+    "rekan"
+  ],
   "nuance": "Berbeda dari 与える (ataeru = memberikan secara umum) dan 授ける (sazukeru = menganugerahkan dari yang lebih tinggi ke bawah) — 賦与する lebih spesifik pada pemberian kualitas, kemampuan, atau sifat secara inheren, sering berimplikasi bahwa sifat itu melekat sejak awal. Digunakan dalam konteks filosofis, hukum (天賦人権 = hak asasi yang dianugerahkan oleh alam/Tuhan), biologi, atau sastra tinggi. Sangat jarang dalam percakapan sehari-hari.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "人は生まれながらに平等の権利を<b>賦与されて</b>いるとされる。", "id": "Manusia dianggap dianugerahi hak yang setara sejak lahir.", "level": "n1", "tags": ["hukum-aturan", "politik-masyarakat"]},
-    {"jp": "その人物は天才的な才能を<b>賦与された</b>と言われる。", "id": "Orang tersebut dikatakan telah dianugerahi bakat yang jenius.", "level": "n1", "tags": ["sastra", "karakter"]}
+    {
+      "jp": "人は生まれながらに平等の権利を<b>賦与されて</b>いるとされる。",
+      "id": "Manusia dianggap dianugerahi hak yang setara sejak lahir.",
+      "level": "n1",
+      "tags": [
+        "hukum-aturan",
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "その人物は天才的な才能を<b>賦与された</b>と言われる。",
+      "id": "Orang tersebut dikatakan telah dianugerahi bakat yang jenius.",
+      "level": "n1",
+      "tags": [
+        "sastra",
+        "karakter"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "conjugations": {
+    "dict": "ふよする",
+    "masu": "ふよします",
+    "te": "ふよして",
+    "ta": "ふよした",
+    "nai": "ふよしない",
+    "potential": "ふよできる",
+    "passive": "ふよされる",
+    "causative": "ふよさせる",
+    "volitional": "ふよしよう",
+    "cond_ba": "ふよすれば",
+    "cond_tara": "ふよしたら"
+  }
 },
 
 {
@@ -2420,21 +7594,65 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["sastra", "seni-budaya", "pendidikan"],
+  "domain": [
+    "sastra",
+    "seni-budaya",
+    "pendidikan"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum", "rekan"],
+  "lawan_bicara": [
+    "umum",
+    "rekan"
+  ],
   "nuance": "Berbeda dari 刺激する (shigeki suru = merangsang, menstimulasi — lebih umum dan bisa bersifat fisik) dan 感化する (kanka suru = mempengaruhi karakter seseorang secara mendalam dan bertahap) — 触発する menekankan percikan inspirasi atau motivasi yang muncul secara spontan dari suatu pertemuan atau paparan terhadap sesuatu: 名作に触発される = terinspirasi oleh karya agung. Ada unsur reaksi yang tiba-tiba dan kreatif.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "師の生き方に<b>触発されて</b>、彼は研究者の道を選んだ。", "id": "Terinspirasi oleh cara hidup sang guru, ia memilih jalan sebagai peneliti.", "level": "n1", "tags": ["pendidikan", "karakter"]},
-    {"jp": "その作品は多くの若いアーティストを<b>触発した</b>。", "id": "Karya itu menginspirasi banyak seniman muda.", "level": "n1", "tags": ["seni-budaya", "media"]},
-    {"jp": "旅の経験に<b>触発されて</b>、新しい小説のアイデアが浮かんだ。", "id": "Terinspirasi dari pengalaman perjalanan, muncul ide untuk novel baru.", "level": "n1", "tags": ["sastra", "perjalanan"]}
+    {
+      "jp": "師の生き方に<b>触発されて</b>、彼は研究者の道を選んだ。",
+      "id": "Terinspirasi oleh cara hidup sang guru, ia memilih jalan sebagai peneliti.",
+      "level": "n1",
+      "tags": [
+        "pendidikan",
+        "karakter"
+      ]
+    },
+    {
+      "jp": "その作品は多くの若いアーティストを<b>触発した</b>。",
+      "id": "Karya itu menginspirasi banyak seniman muda.",
+      "level": "n1",
+      "tags": [
+        "seni-budaya",
+        "media"
+      ]
+    },
+    {
+      "jp": "旅の経験に<b>触発されて</b>、新しい小説のアイデアが浮かんだ。",
+      "id": "Terinspirasi dari pengalaman perjalanan, muncul ide untuk novel baru.",
+      "level": "n1",
+      "tags": [
+        "sastra",
+        "perjalanan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "conjugations": {
+    "dict": "しょくはつする",
+    "masu": "しょくはつします",
+    "te": "しょくはつして",
+    "ta": "しょくはつした",
+    "nai": "しょくはつしない",
+    "potential": "しょくはつできる",
+    "passive": "しょくはつされる",
+    "causative": "しょくはつさせる",
+    "volitional": "しょくはつしよう",
+    "cond_ba": "しょくはつすれば",
+    "cond_tara": "しょくはつしたら"
+  }
 },
 
 {
@@ -2449,21 +7667,79 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["bahasa-komunikasi", "pekerjaan", "pendidikan"],
+  "domain": [
+    "bahasa-komunikasi",
+    "pekerjaan",
+    "pendidikan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum", "rekan"],
+  "lawan_bicara": [
+    "umum",
+    "rekan"
+  ],
   "nuance": "Berbeda dari 勧める (susumeru = merekomendasikan, menyarankan — lembut dan tidak mendesak) dan 強制する (kyosei suru = memaksa — lebih keras) — 促す berada di tengah: mendorong atau mendesak seseorang untuk segera bertindak dengan lebih tegas dari sekadar saran, tapi tanpa paksaan. 注意を促す = mengingatkan dengan tegas. 行動を促す = mendorong tindakan. Sering digunakan dalam konteks kebijakan dan manajemen.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "医師は患者に生活習慣の改善を<b>促した</b>。", "id": "Dokter mendorong pasiennya untuk memperbaiki gaya hidup.", "level": "n1", "tags": ["kesehatan", "pekerjaan"]},
-    {"jp": "政府は企業に脱炭素への取り組みを<b>促して</b>いる。", "id": "Pemerintah mendorong perusahaan untuk mengambil langkah-langkah dekarbonisasi.", "level": "n1", "tags": ["politik-masyarakat", "alam-lingkungan"]},
-    {"jp": "彼の言葉が私に決断を<b>促した</b>。", "id": "Kata-katanya mendorongku untuk mengambil keputusan.", "level": "n1", "tags": ["keputusan", "bahasa-komunikasi"]}
+    {
+      "jp": "医師は患者に生活習慣の改善を<b>促した</b>。",
+      "id": "Dokter mendorong pasiennya untuk memperbaiki gaya hidup.",
+      "level": "n1",
+      "tags": [
+        "kesehatan",
+        "pekerjaan"
+      ]
+    },
+    {
+      "jp": "政府は企業に脱炭素への取り組みを<b>促して</b>いる。",
+      "id": "Pemerintah mendorong perusahaan untuk mengambil langkah-langkah dekarbonisasi.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat",
+        "alam-lingkungan"
+      ]
+    },
+    {
+      "jp": "彼の言葉が私に決断を<b>促した</b>。",
+      "id": "Kata-katanya mendorongku untuk mengambil keputusan.",
+      "level": "n1",
+      "tags": [
+        "keputusan",
+        "bahasa-komunikasi"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1403760",
+  "frequency": 13500,
+  "meanings": [
+    {
+      "en": "to urge; to encourage; to press; to prompt; to draw (attention to)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to stimulate (e.g. growth); to hasten (e.g. development); to quicken; to accelerate; to promote",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "conjugations": {
+    "dict": "うながす",
+    "masu": "うながします",
+    "te": "うながして",
+    "ta": "うながした",
+    "nai": "うながさない",
+    "potential": "うながせる",
+    "passive": "うながされる",
+    "causative": "うながさせる",
+    "volitional": "うながそう",
+    "cond_ba": "うながせば",
+    "cond_tara": "うながしたら"
+  }
 },
 
 {
@@ -2478,21 +7754,96 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["pikiran-opini", "pekerjaan", "karakter"],
+  "domain": [
+    "pikiran-opini",
+    "pekerjaan",
+    "karakter"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum", "rekan"],
+  "lawan_bicara": [
+    "umum",
+    "rekan"
+  ],
   "nuance": "Berbeda dari 確認する (kakunin suru = mengkonfirmasi secara prosedural) dan 判断する (handan suru = menilai berdasarkan bukti) — 見極める menekankan proses pengamatan mendalam yang cermat untuk sampai pada penilaian yang tepat tentang sifat sejati atau kondisi sebenarnya dari sesuatu atau seseorang. 真意を見極める = melihat niat sesungguhnya. Menyiratkan ketajaman dan ketelitian analitis.",
   "conj_type": "ichidan",
   "examples": [
-    {"jp": "投資する前に、市場の可能性を<b>見極める</b>必要がある。", "id": "Sebelum berinvestasi, perlu menilai dengan tepat potensi pasar.", "level": "n1", "tags": ["bisnis", "ekonomi-keuangan"]},
-    {"jp": "長年の経験があれば人材の真価を<b>見極める</b>ことができる。", "id": "Dengan pengalaman bertahun-tahun, seseorang bisa menilai dengan tepat nilai sejati seorang individu.", "level": "n1", "tags": ["pekerjaan", "karakter"]},
-    {"jp": "状況の変化を<b>見極めた</b>上で、次の一手を考えた。", "id": "Setelah memastikan perubahan situasi dengan cermat, ia memikirkan langkah berikutnya.", "level": "n1", "tags": ["keputusan", "pekerjaan"]}
+    {
+      "jp": "投資する前に、市場の可能性を<b>見極める</b>必要がある。",
+      "id": "Sebelum berinvestasi, perlu menilai dengan tepat potensi pasar.",
+      "level": "n1",
+      "tags": [
+        "bisnis",
+        "ekonomi-keuangan"
+      ]
+    },
+    {
+      "jp": "長年の経験があれば人材の真価を<b>見極める</b>ことができる。",
+      "id": "Dengan pengalaman bertahun-tahun, seseorang bisa menilai dengan tepat nilai sejati seorang individu.",
+      "level": "n1",
+      "tags": [
+        "pekerjaan",
+        "karakter"
+      ]
+    },
+    {
+      "jp": "状況の変化を<b>見極めた</b>上で、次の一手を考えた。",
+      "id": "Setelah memastikan perubahan situasi dengan cermat, ia memikirkan langkah berikutnya.",
+      "level": "n1",
+      "tags": [
+        "keputusan",
+        "pekerjaan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1259490",
+  "frequency": 8000,
+  "forms": [
+    {
+      "word": "見極める",
+      "info": []
+    },
+    {
+      "word": "見きわめる",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "to watch to the end",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to ascertain; to determine; to get to the bottom of; to make sure of",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to know thoroughly; to obtain a deep understanding of",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "conjugations": {
+    "dict": "みきわめる",
+    "masu": "みきわめます",
+    "te": "みきわめて",
+    "ta": "みきわめた",
+    "nai": "みきわめない",
+    "potential": "みきわめられる",
+    "passive": "みきわめられる",
+    "causative": "みきわめさせる",
+    "volitional": "みきわめよう",
+    "cond_ba": "みきわめれば",
+    "cond_tara": "みきわめたら"
+  }
 },
 
 {
@@ -2507,21 +7858,78 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["pikiran-opini", "karakter", "pertemanan"],
+  "domain": [
+    "pikiran-opini",
+    "karakter",
+    "pertemanan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 見抜く (minuku = melihat tembus dan mendeteksi, lebih umum — bisa tentang kemampuan orang, bakat, dsb.) — 見透かす secara spesifik menekankan kemampuan menembus kebohongan, kepura-puraan, atau motif tersembunyi seseorang: 嘘を見透かされた = kebohongannya berhasil ditembus. Selalu ada implikasi bahwa pihak yang diamati sedang berusaha menyembunyikan sesuatu namun gagal.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "熟練した交渉人は相手の本音を<b>見透かして</b>いた。", "id": "Negosiator berpengalaman itu mampu menembus niat sesungguhnya dari pihak lawan.", "level": "n1", "tags": ["bisnis", "pikiran-opini"]},
-    {"jp": "子供の嘘などすぐに<b>見透かされて</b>しまう。", "id": "Kebohongan anak kecil langsung bisa ditembus dalam sekejap.", "level": "n1", "tags": ["keluarga", "pikiran-opini"]},
-    {"jp": "彼は私の本心を<b>見透かして</b>いるかのように、核心を突いた発言をした。", "id": "Ia berkata seolah-olah mampu menembus isi hatiku, langsung menyentuh inti permasalahan.", "level": "n1", "tags": ["karakter", "bahasa-komunikasi"]}
+    {
+      "jp": "熟練した交渉人は相手の本音を<b>見透かして</b>いた。",
+      "id": "Negosiator berpengalaman itu mampu menembus niat sesungguhnya dari pihak lawan.",
+      "level": "n1",
+      "tags": [
+        "bisnis",
+        "pikiran-opini"
+      ]
+    },
+    {
+      "jp": "子供の嘘などすぐに<b>見透かされて</b>しまう。",
+      "id": "Kebohongan anak kecil langsung bisa ditembus dalam sekejap.",
+      "level": "n1",
+      "tags": [
+        "keluarga",
+        "pikiran-opini"
+      ]
+    },
+    {
+      "jp": "彼は私の本心を<b>見透かして</b>いるかのように、核心を突いた発言をした。",
+      "id": "Ia berkata seolah-olah mampu menembus isi hatiku, langsung menyentuh inti permasalahan.",
+      "level": "n1",
+      "tags": [
+        "karakter",
+        "bahasa-komunikasi"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1259960",
+  "frequency": 20500,
+  "forms": [
+    {
+      "word": "見透かす",
+      "info": []
+    },
+    {
+      "word": "見すかす",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "conjugations": {
+    "dict": "みすかす",
+    "masu": "みすかします",
+    "te": "みすかして",
+    "ta": "みすかした",
+    "nai": "みすかさない",
+    "potential": "みすかせる",
+    "passive": "みすかされる",
+    "causative": "みすかさせる",
+    "volitional": "みすかそう",
+    "cond_ba": "みすかせば",
+    "cond_tara": "みすかしたら"
+  }
 },
 
 {
@@ -2536,21 +7944,87 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["hukum-aturan", "pikiran-opini", "bisnis"],
+  "domain": [
+    "hukum-aturan",
+    "pikiran-opini",
+    "bisnis"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan", "umum"],
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
   "nuance": "Berbeda dari 思う (omou = berpikir/merasa, subjektif dan tidak mengikat) dan 判断する (handan suru = menilai berdasarkan bukti) — 見なす berarti memperlakukan sesuatu seolah-olah itu adalah sesuatu yang lain, seringkali berdasarkan konvensi, hukum, atau kesepakatan bersama. 承認したと見なす = dianggap telah menyetujui. Sangat umum dalam konteks hukum, administratif, dan logika formal.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "返答がない場合は、承諾したと<b>見なす</b>ものとする。", "id": "Jika tidak ada respons, akan dianggap sebagai persetujuan.", "level": "n1", "tags": ["hukum-aturan", "bisnis"]},
-    {"jp": "法律上、成人とは18歳以上の者を<b>みなす</b>。", "id": "Secara hukum, orang dewasa dianggap sebagai mereka yang berusia 18 tahun ke atas.", "level": "n1", "tags": ["hukum-aturan"]},
-    {"jp": "その行為は契約違反と<b>見なされる</b>可能性がある。", "id": "Tindakan tersebut kemungkinan bisa dianggap sebagai pelanggaran kontrak.", "level": "n1", "tags": ["hukum-aturan", "bisnis"]}
+    {
+      "jp": "返答がない場合は、承諾したと<b>見なす</b>ものとする。",
+      "id": "Jika tidak ada respons, akan dianggap sebagai persetujuan.",
+      "level": "n1",
+      "tags": [
+        "hukum-aturan",
+        "bisnis"
+      ]
+    },
+    {
+      "jp": "法律上、成人とは18歳以上の者を<b>みなす</b>。",
+      "id": "Secara hukum, orang dewasa dianggap sebagai mereka yang berusia 18 tahun ke atas.",
+      "level": "n1",
+      "tags": [
+        "hukum-aturan"
+      ]
+    },
+    {
+      "jp": "その行為は契約違反と<b>見なされる</b>可能性がある。",
+      "id": "Tindakan tersebut kemungkinan bisa dianggap sebagai pelanggaran kontrak.",
+      "level": "n1",
+      "tags": [
+        "hukum-aturan",
+        "bisnis"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1604630",
+  "frequency": 1000,
+  "forms": [
+    {
+      "word": "見なす",
+      "info": []
+    },
+    {
+      "word": "見做す",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "看做す",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    }
+  ],
+  "misc_jm": [
+    "biasanya kana saja"
+  ],
+  "conjugations": {
+    "dict": "みなす",
+    "masu": "みなします",
+    "te": "みなして",
+    "ta": "みなした",
+    "nai": "みなさない",
+    "potential": "みなせる",
+    "passive": "みなされる",
+    "causative": "みなさせる",
+    "volitional": "みなそう",
+    "cond_ba": "みなせば",
+    "cond_tara": "みなしたら"
+  }
 },
 
 {
@@ -2565,21 +8039,96 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["karakter", "pekerjaan", "sastra"],
+  "domain": [
+    "karakter",
+    "pekerjaan",
+    "sastra"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 達成する (tassei suru = mencapai target — lebih formal dan bisa tentang target kecil atau terukur) — 成し遂げる selalu menyiratkan pencapaian sesuatu yang besar, sulit, dan membutuhkan usaha luar biasa dalam jangka panjang. Ada nuansa kebanggaan, kelegaan, dan keteguhan yang dramatis: 偉業を成し遂げる = mencapai prestasi besar. Lebih emosional dan heroik dari 達成する.",
   "conj_type": "ichidan",
   "examples": [
-    {"jp": "30年の研究の末、ついに難題を<b>成し遂げた</b>。", "id": "Setelah 30 tahun penelitian, ia akhirnya berhasil menyelesaikan tantangan besar itu.", "level": "n1", "tags": ["ilmu-pengetahuan", "karakter"]},
-    {"jp": "不可能と言われたことを<b>成し遂げた</b>彼は、伝説となった。", "id": "Ia menjadi legenda setelah berhasil mencapai sesuatu yang dianggap mustahil.", "level": "n1", "tags": ["karakter", "sastra"]},
-    {"jp": "チーム一丸となって、ついに悲願を<b>成し遂げた</b>。", "id": "Dengan bersatu padu, tim akhirnya berhasil mewujudkan impian yang lama didambakan.", "level": "n1", "tags": ["olahraga", "karakter"]}
+    {
+      "jp": "30年の研究の末、ついに難題を<b>成し遂げた</b>。",
+      "id": "Setelah 30 tahun penelitian, ia akhirnya berhasil menyelesaikan tantangan besar itu.",
+      "level": "n1",
+      "tags": [
+        "ilmu-pengetahuan",
+        "karakter"
+      ]
+    },
+    {
+      "jp": "不可能と言われたことを<b>成し遂げた</b>彼は、伝説となった。",
+      "id": "Ia menjadi legenda setelah berhasil mencapai sesuatu yang dianggap mustahil.",
+      "level": "n1",
+      "tags": [
+        "karakter",
+        "sastra"
+      ]
+    },
+    {
+      "jp": "チーム一丸となって、ついに悲願を<b>成し遂げた</b>。",
+      "id": "Dengan bersatu padu, tim akhirnya berhasil mewujudkan impian yang lama didambakan.",
+      "level": "n1",
+      "tags": [
+        "olahraga",
+        "karakter"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1375550",
+  "frequency": 15500,
+  "forms": [
+    {
+      "word": "成し遂げる",
+      "info": []
+    },
+    {
+      "word": "為し遂げる",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "なし遂げる",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "成しとげる",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "成遂げる",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "conjugations": {
+    "dict": "なしとげる",
+    "masu": "なしとげます",
+    "te": "なしとげて",
+    "ta": "なしとげた",
+    "nai": "なしとげない",
+    "potential": "なしとげられる",
+    "passive": "なしとげられる",
+    "causative": "なしとげさせる",
+    "volitional": "なしとげよう",
+    "cond_ba": "なしとげれば",
+    "cond_tara": "なしとげたら"
+  }
 },
 
 {
@@ -2594,21 +8143,90 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["pekerjaan", "seni-budaya", "olahraga"],
+  "domain": [
+    "pekerjaan",
+    "seni-budaya",
+    "olahraga"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 作る (tsukuru = membuat secara umum, bisa sementara) dan 設立する (setsuritsu suru = mendirikan organisasi/lembaga) — 打ち立てる menekankan tindakan mendirikan atau menetapkan sesuatu dengan kuat, permanen, dan berpengaruh: rekor, tradisi, teori, atau sistem baru. 記録を打ち立てる = mencetak/menetapkan rekor. Prefiks 打ち memberi nuansa kekuatan aktif.",
   "conj_type": "ichidan",
   "examples": [
-    {"jp": "彼女は世界記録を<b>打ち立て</b>、歴史に名を刻んだ。", "id": "Ia mencetak rekor dunia dan mengukir namanya dalam sejarah.", "level": "n1", "tags": ["olahraga", "karakter"]},
-    {"jp": "その哲学者は独自の倫理体系を<b>打ち立てた</b>。", "id": "Filsuf itu mendirikan sistem etika yang unik miliknya sendiri.", "level": "n1", "tags": ["ilmu-pengetahuan", "sastra"]},
-    {"jp": "新会社は業界の新たな標準を<b>打ち立てる</b>ことを目指している。", "id": "Perusahaan baru itu bertujuan menetapkan standar baru dalam industri.", "level": "n1", "tags": ["bisnis", "pekerjaan"]}
+    {
+      "jp": "彼女は世界記録を<b>打ち立て</b>、歴史に名を刻んだ。",
+      "id": "Ia mencetak rekor dunia dan mengukir namanya dalam sejarah.",
+      "level": "n1",
+      "tags": [
+        "olahraga",
+        "karakter"
+      ]
+    },
+    {
+      "jp": "その哲学者は独自の倫理体系を<b>打ち立てた</b>。",
+      "id": "Filsuf itu mendirikan sistem etika yang unik miliknya sendiri.",
+      "level": "n1",
+      "tags": [
+        "ilmu-pengetahuan",
+        "sastra"
+      ]
+    },
+    {
+      "jp": "新会社は業界の新たな標準を<b>打ち立てる</b>ことを目指している。",
+      "id": "Perusahaan baru itu bertujuan menetapkan standar baru dalam industri.",
+      "level": "n1",
+      "tags": [
+        "bisnis",
+        "pekerjaan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1849330",
+  "frequency": 22500,
+  "forms": [
+    {
+      "word": "打ち立てる",
+      "info": []
+    },
+    {
+      "word": "打ちたてる",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "うち立てる",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "打立てる",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "conjugations": {
+    "dict": "うちたてる",
+    "masu": "うちたてます",
+    "te": "うちたてて",
+    "ta": "うちたてた",
+    "nai": "うちたてない",
+    "potential": "うちたてられる",
+    "passive": "うちたてられる",
+    "causative": "うちたてさせる",
+    "volitional": "うちたてよう",
+    "cond_ba": "うちたてれば",
+    "cond_tara": "うちたてたら"
+  }
 },
 
 {
@@ -2623,21 +8241,87 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["karakter", "olahraga", "perubahan"],
+  "domain": [
+    "karakter",
+    "olahraga",
+    "perubahan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 破る (yaburu = merusak, mengalahkan — lebih umum dan bisa tentang hal kecil) — 打ち破る secara spesifik menyiratkan penghancuran sesuatu yang kuat, mapan, atau dianggap tidak bisa dikalahkan. 常識を打ち破る = meruntuhkan anggapan umum. 記録を打ち破る = memecahkan rekor. Prefiks 打ち menambahkan nuansa kekuatan, keberanian, dan intensitas.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "彼はあらゆる偏見を<b>打ち破って</b>、医師になった。", "id": "Ia meruntuhkan segala prasangka dan berhasil menjadi dokter.", "level": "n1", "tags": ["karakter", "perubahan"]},
-    {"jp": "長年の記録を<b>打ち破った</b>若い選手が注目を集めた。", "id": "Atlet muda yang memecahkan rekor bertahun-tahun menarik banyak perhatian.", "level": "n1", "tags": ["olahraga"]},
-    {"jp": "既存の常識を<b>打ち破る</b>革新的なアイデアが求められている。", "id": "Ide-ide inovatif yang mampu meruntuhkan anggapan konvensional sangat dibutuhkan.", "level": "n1", "tags": ["bisnis", "perubahan"]}
+    {
+      "jp": "彼はあらゆる偏見を<b>打ち破って</b>、医師になった。",
+      "id": "Ia meruntuhkan segala prasangka dan berhasil menjadi dokter.",
+      "level": "n1",
+      "tags": [
+        "karakter",
+        "perubahan"
+      ]
+    },
+    {
+      "jp": "長年の記録を<b>打ち破った</b>若い選手が注目を集めた。",
+      "id": "Atlet muda yang memecahkan rekor bertahun-tahun menarik banyak perhatian.",
+      "level": "n1",
+      "tags": [
+        "olahraga"
+      ]
+    },
+    {
+      "jp": "既存の常識を<b>打ち破る</b>革新的なアイデアが求められている。",
+      "id": "Ide-ide inovatif yang mampu meruntuhkan anggapan konvensional sangat dibutuhkan.",
+      "level": "n1",
+      "tags": [
+        "bisnis",
+        "perubahan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1408730",
+  "frequency": 18500,
+  "forms": [
+    {
+      "word": "打ち破る",
+      "info": []
+    },
+    {
+      "word": "討ち破る",
+      "info": []
+    },
+    {
+      "word": "打破る",
+      "info": []
+    },
+    {
+      "word": "撃ち破る",
+      "info": []
+    },
+    {
+      "word": "うち破る",
+      "info": []
+    }
+  ],
+  "conjugations": {
+    "dict": "うちやぶる",
+    "masu": "うちやぶります",
+    "te": "うちやぶって",
+    "ta": "うちやぶった",
+    "nai": "うちやぶらない",
+    "potential": "うちやぶれる",
+    "passive": "うちやぶられる",
+    "causative": "うちやぶらせる",
+    "volitional": "うちやぶろう",
+    "cond_ba": "うちやぶれば",
+    "cond_tara": "うちやぶったら"
+  }
 },
 
 {
@@ -2652,21 +8336,114 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["karakter", "pekerjaan", "sastra"],
+  "domain": [
+    "karakter",
+    "pekerjaan",
+    "sastra"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Secara literal berarti memotong dan membuka lahan atau hutan. Dalam penggunaan metaforis yang lebih umum: merintis jalan baru di bidang yang belum pernah dijelajahi. Berbeda dari 開拓する (kaitaku suru = mengembangkan lahan/pasar secara bertahap dan terencana) — 切り開く menekankan tindakan berani dan aktif membelah rintangan di depan untuk menciptakan kemungkinan baru. 道を切り開く = membuka/merintis jalan.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "彼女は女性研究者が少ない分野で新たな道を<b>切り開い</b>た。", "id": "Di bidang yang minim peneliti perempuan, ia merintis jalan baru.", "level": "n1", "tags": ["karakter", "ilmu-pengetahuan"]},
-    {"jp": "自らの手で未来を<b>切り開く</b>という信念で彼は突き進んだ。", "id": "Dengan keyakinan untuk merintis masa depannya sendiri, ia terus melangkah maju.", "level": "n1", "tags": ["karakter", "keputusan"]},
-    {"jp": "開拓者たちは密林を<b>切り開い</b>て農地を作った。", "id": "Para perintis memotong hutan lebat untuk membuka lahan pertanian.", "level": "n1", "tags": ["sejarah", "alam-lingkungan"]}
+    {
+      "jp": "彼女は女性研究者が少ない分野で新たな道を<b>切り開い</b>た。",
+      "id": "Di bidang yang minim peneliti perempuan, ia merintis jalan baru.",
+      "level": "n1",
+      "tags": [
+        "karakter",
+        "ilmu-pengetahuan"
+      ]
+    },
+    {
+      "jp": "自らの手で未来を<b>切り開く</b>という信念で彼は突き進んだ。",
+      "id": "Dengan keyakinan untuk merintis masa depannya sendiri, ia terus melangkah maju.",
+      "level": "n1",
+      "tags": [
+        "karakter",
+        "keputusan"
+      ]
+    },
+    {
+      "jp": "開拓者たちは密林を<b>切り開い</b>て農地を作った。",
+      "id": "Para perintis memotong hutan lebat untuk membuka lahan pertanian.",
+      "level": "n1",
+      "tags": [
+        "sejarah",
+        "alam-lingkungan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1383920",
+  "forms": [
+    {
+      "word": "切り開く",
+      "info": []
+    },
+    {
+      "word": "切り拓く",
+      "info": []
+    },
+    {
+      "word": "切りひらく",
+      "info": []
+    },
+    {
+      "word": "きり拓く",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "切開く",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "切り墾く",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "to cut open",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to clear (land); to cut (a path, road, etc.); to open; to cut one's way through (e.g. a jungle)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to carve out (a new career, future, etc.); to open up (a new field)",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "conjugations": {
+    "dict": "きりひらく",
+    "masu": "きりひらきます",
+    "te": "きりひらいて",
+    "ta": "きりひらいた",
+    "nai": "きりひらかない",
+    "potential": "きりひらける",
+    "passive": "きりひらかれる",
+    "causative": "きりひらかせる",
+    "volitional": "きりひらこう",
+    "cond_ba": "きりひらけば",
+    "cond_tara": "きりひらいたら"
+  }
 },
 
 {
@@ -2681,21 +8458,102 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["karakter", "politik-masyarakat", "keputusan"],
+  "domain": [
+    "karakter",
+    "politik-masyarakat",
+    "keputusan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Secara literal berarti memotong dan membuang bagian yang tidak diperlukan. Dalam penggunaan metaforis: mengabaikan atau mengorbankan orang/hal tertentu secara dingin dan tanpa belas kasih demi kepentingan lain yang lebih besar. Berbeda dari 諦める (menyerah dengan pasrah) atau 無視する (mengabaikan) — 切り捨てる menyiratkan tindakan aktif dan disengaja yang terkesan tidak berperasaan. 弱者を切り捨てる = mengorbankan yang lemah.",
   "conj_type": "ichidan",
   "examples": [
-    {"jp": "コスト削減のために地方工場を<b>切り捨てる</b>決断は批判を浴びた。", "id": "Keputusan untuk menutup pabrik di daerah demi memangkas biaya menuai banyak kritikan.", "level": "n1", "tags": ["bisnis", "politik-masyarakat"]},
-    {"jp": "都合の悪い情報を<b>切り捨てて</b>、都合の良いデータだけを提示した。", "id": "Informasi yang tidak menguntungkan dibuang, hanya data yang menguntungkan yang disajikan.", "level": "n1", "tags": ["pikiran-opini", "media"]},
-    {"jp": "弱者を<b>切り捨てる</b>ような政策には賛成できない。", "id": "Aku tidak bisa menyetujui kebijakan yang mengorbankan mereka yang lemah.", "level": "n1", "tags": ["politik-masyarakat", "karakter"]}
+    {
+      "jp": "コスト削減のために地方工場を<b>切り捨てる</b>決断は批判を浴びた。",
+      "id": "Keputusan untuk menutup pabrik di daerah demi memangkas biaya menuai banyak kritikan.",
+      "level": "n1",
+      "tags": [
+        "bisnis",
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "都合の悪い情報を<b>切り捨てて</b>、都合の良いデータだけを提示した。",
+      "id": "Informasi yang tidak menguntungkan dibuang, hanya data yang menguntungkan yang disajikan.",
+      "level": "n1",
+      "tags": [
+        "pikiran-opini",
+        "media"
+      ]
+    },
+    {
+      "jp": "弱者を<b>切り捨てる</b>ような政策には賛成できない。",
+      "id": "Aku tidak bisa menyetujui kebijakan yang mengorbankan mereka yang lemah.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat",
+        "karakter"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1591810",
+  "frequency": 12500,
+  "forms": [
+    {
+      "word": "切り捨てる",
+      "info": []
+    },
+    {
+      "word": "切捨てる",
+      "info": []
+    },
+    {
+      "word": "斬り捨てる",
+      "info": []
+    }
+  ],
+  "meanings": [
+    {
+      "en": "to cut off and throw away",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to abandon; to disregard; to discard; to throw to the wolves",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to discard (numbers after a certain decimal place); to drop; to omit; to ignore; to round down",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to cut (someone) down; to slay",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "conjugations": {
+    "dict": "きりすてる",
+    "masu": "きりすてます",
+    "te": "きりすてて",
+    "ta": "きりすてた",
+    "nai": "きりすてない",
+    "potential": "きりすてられる",
+    "passive": "きりすてられる",
+    "causative": "きりすてさせる",
+    "volitional": "きりすてよう",
+    "cond_ba": "きりすてれば",
+    "cond_tara": "きりすてたら"
+  }
 },
 
 {
@@ -2710,21 +8568,84 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["karakter", "keputusan", "pekerjaan"],
+  "domain": [
+    "karakter",
+    "keputusan",
+    "pekerjaan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 主張する (shuchou suru = berpendapat/mengklaim, hanya verbal) dan 貫く (tsuranuku = konsisten sampai akhir, lebih tentang prinsip) — 押し通す menekankan tindakan aktif memaksakan kehendak atau rencana melewati hambatan dan penolakan sampai tujuan tercapai. 意志を押し通す = memaksakan kehendak. Konotasinya bisa positif (keteguhan) maupun negatif (arogansi/keras kepala) tergantung konteks.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "反対意見が多い中、彼はその方針を<b>押し通した</b>。", "id": "Di tengah banyaknya suara yang menentang, ia memaksakan kebijakan tersebut hingga berhasil.", "level": "n1", "tags": ["keputusan", "politik-masyarakat"]},
-    {"jp": "自分の意見を<b>押し通す</b>ことも時には必要だ。", "id": "Memaksakan pendapat sendiri pun terkadang diperlukan.", "level": "n1", "tags": ["karakter", "keputusan"]},
-    {"jp": "交渉は難航したが、最終的に要求を<b>押し通した</b>。", "id": "Negosiasi berjalan alot, namun tuntutan akhirnya berhasil dipaksakan.", "level": "n1", "tags": ["bisnis", "pekerjaan"]}
+    {
+      "jp": "反対意見が多い中、彼はその方針を<b>押し通した</b>。",
+      "id": "Di tengah banyaknya suara yang menentang, ia memaksakan kebijakan tersebut hingga berhasil.",
+      "level": "n1",
+      "tags": [
+        "keputusan",
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "自分の意見を<b>押し通す</b>ことも時には必要だ。",
+      "id": "Memaksakan pendapat sendiri pun terkadang diperlukan.",
+      "level": "n1",
+      "tags": [
+        "karakter",
+        "keputusan"
+      ]
+    },
+    {
+      "jp": "交渉は難航したが、最終的に要求を<b>押し通した</b>。",
+      "id": "Negosiasi berjalan alot, namun tuntutan akhirnya berhasil dipaksakan.",
+      "level": "n1",
+      "tags": [
+        "bisnis",
+        "pekerjaan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1180290",
+  "frequency": 18500,
+  "forms": [
+    {
+      "word": "押し通す",
+      "info": []
+    },
+    {
+      "word": "押通す",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "押しとおす",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "conjugations": {
+    "dict": "おしとおす",
+    "masu": "おしとおします",
+    "te": "おしとおして",
+    "ta": "おしとおした",
+    "nai": "おしとおさない",
+    "potential": "おしとおせる",
+    "passive": "おしとおされる",
+    "causative": "おしとおさせる",
+    "volitional": "おしとおそう",
+    "cond_ba": "おしとおせば",
+    "cond_tara": "おしとおしたら"
+  }
 },
 
 {
@@ -2739,21 +8660,112 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["bisnis", "karakter", "pekerjaan"],
+  "domain": [
+    "bisnis",
+    "karakter",
+    "pekerjaan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Memiliki dua nuansa: (1) condong ke depan dengan badan — 身を乗り出す = condong ke depan karena tertarik/antusias; (2) memasuki atau memulai sesuatu yang baru dan besar dengan keberanian — 新事業に乗り出す = terjun ke bisnis baru. Berbeda dari 始める (hajimeru = mulai secara umum) — 乗り出す mengandung nuansa keberanian, angin segar, dan antisipasi aktif. Ada unsur gerakan menuju sesuatu.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "その企業は海外市場に<b>乗り出す</b>ことを決めた。", "id": "Perusahaan itu memutuskan untuk terjun ke pasar luar negeri.", "level": "n1", "tags": ["bisnis", "pekerjaan"]},
-    {"jp": "政府は経済改革に本格的に<b>乗り出した</b>。", "id": "Pemerintah mulai terjun serius ke dalam reformasi ekonomi.", "level": "n1", "tags": ["politik-masyarakat", "ekonomi-keuangan"]},
-    {"jp": "彼は興味深い話を聞いて、思わず身を<b>乗り出した</b>。", "id": "Mendengar cerita yang menarik, ia tanpa sadar condong ke depan.", "level": "n1", "tags": ["kehidupan-sehari", "emosi"]}
+    {
+      "jp": "その企業は海外市場に<b>乗り出す</b>ことを決めた。",
+      "id": "Perusahaan itu memutuskan untuk terjun ke pasar luar negeri.",
+      "level": "n1",
+      "tags": [
+        "bisnis",
+        "pekerjaan"
+      ]
+    },
+    {
+      "jp": "政府は経済改革に本格的に<b>乗り出した</b>。",
+      "id": "Pemerintah mulai terjun serius ke dalam reformasi ekonomi.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat",
+        "ekonomi-keuangan"
+      ]
+    },
+    {
+      "jp": "彼は興味深い話を聞いて、思わず身を<b>乗り出した</b>。",
+      "id": "Mendengar cerita yang menarik, ia tanpa sadar condong ke depan.",
+      "level": "n1",
+      "tags": [
+        "kehidupan-sehari",
+        "emosi"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1354940",
+  "frequency": 20000,
+  "forms": [
+    {
+      "word": "乗り出す",
+      "info": []
+    },
+    {
+      "word": "乗りだす",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "のり出す",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "乗出す",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "to set out; to set sail",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to embark on (a new venture); to set out (to achieve something)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to begin to ride",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to lean forward",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "conjugations": {
+    "dict": "のりだす",
+    "masu": "のりだします",
+    "te": "のりだして",
+    "ta": "のりだした",
+    "nai": "のりださない",
+    "potential": "のりだせる",
+    "passive": "のりだされる",
+    "causative": "のりださせる",
+    "volitional": "のりだそう",
+    "cond_ba": "のりだせば",
+    "cond_tara": "のりだしたら"
+  }
 },
 
 {
@@ -2768,21 +8780,92 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["karakter", "kehidupan-sehari", "keputusan"],
+  "domain": [
+    "karakter",
+    "kehidupan-sehari",
+    "keputusan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Secara literal = melangkahkan kaki ke luar atau ke depan. Metaforis = mengambil langkah pertama yang berani menuju sesuatu yang baru, tidak pasti, atau menantang. Berbeda dari 乗り出す (noridasU = terjun ke usaha besar — lebih tentang skala dan ambisi) — 踏み出す lebih fokus pada keberanian di momen awal, terutama ketika seseorang ragu atau takut. 一歩踏み出す = berani mengambil satu langkah pertama.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "長い迷いの末、彼はようやく新しい一歩を<b>踏み出した</b>。", "id": "Setelah lama bimbang, akhirnya ia berani mengambil langkah pertama yang baru.", "level": "n1", "tags": ["karakter", "keputusan"]},
-    {"jp": "卒業後、社会という未知の海に<b>踏み出す</b>のは誰でも不安だ。", "id": "Setelah lulus, melangkah ke lautan masyarakat yang belum dikenal membuat siapa pun merasa gelisah.", "level": "n1", "tags": ["pendidikan", "kehidupan-sehari"]},
-    {"jp": "夢に向かって勇気を持って<b>踏み出す</b>ことが大切だ。", "id": "Penting untuk berani mengambil langkah pertama menuju impian.", "level": "n1", "tags": ["karakter", "emosi-positif"]}
+    {
+      "jp": "長い迷いの末、彼はようやく新しい一歩を<b>踏み出した</b>。",
+      "id": "Setelah lama bimbang, akhirnya ia berani mengambil langkah pertama yang baru.",
+      "level": "n1",
+      "tags": [
+        "karakter",
+        "keputusan"
+      ]
+    },
+    {
+      "jp": "卒業後、社会という未知の海に<b>踏み出す</b>のは誰でも不安だ。",
+      "id": "Setelah lulus, melangkah ke lautan masyarakat yang belum dikenal membuat siapa pun merasa gelisah.",
+      "level": "n1",
+      "tags": [
+        "pendidikan",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "夢に向かって勇気を持って<b>踏み出す</b>ことが大切だ。",
+      "id": "Penting untuk berani mengambil langkah pertama menuju impian.",
+      "level": "n1",
+      "tags": [
+        "karakter",
+        "emosi-positif"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1450170",
+  "frequency": 22500,
+  "forms": [
+    {
+      "word": "踏み出す",
+      "info": []
+    },
+    {
+      "word": "踏みだす",
+      "info": []
+    },
+    {
+      "word": "踏出す",
+      "info": []
+    }
+  ],
+  "meanings": [
+    {
+      "en": "to step forward; to step forth; to advance",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to start; to embark on; to set forth on; to take steps toward",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "conjugations": {
+    "dict": "ふみだす",
+    "masu": "ふみだします",
+    "te": "ふみだして",
+    "ta": "ふみだした",
+    "nai": "ふみださない",
+    "potential": "ふみだせる",
+    "passive": "ふみだされる",
+    "causative": "ふみださせる",
+    "volitional": "ふみだそう",
+    "cond_ba": "ふみだせば",
+    "cond_tara": "ふみだしたら"
+  }
 },
 
 {
@@ -2797,21 +8880,91 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["karakter", "keputusan", "emosi"],
+  "domain": [
+    "karakter",
+    "keputusan",
+    "emosi"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Secara literal = berhenti sebelum melangkah lebih jauh (menahan kaki). Metaforis = menahan diri dari tindakan yang hampir dilakukan karena pertimbangan, kebijaksanaan, atau kesadaran mendadak. Berbeda dari 諦める (akirameru = menyerah/merelakan dengan perasaan pasrah terhadap sesuatu yang tidak tercapai) — 踏みとどまる menekankan keputusan aktif untuk tidak melanjutkan. 土壇場で踏みとどまる = mengurungkan niat di saat-saat terakhir.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "怒りに任せて怒鳴りそうになったが、かろうじて<b>踏みとどまった</b>。", "id": "Hampir saja aku berteriak karena marah, namun aku berhasil menahan diri.", "level": "n1", "tags": ["emosi", "karakter"]},
-    {"jp": "辞表を出す直前に、上司の言葉で<b>踏みとどまった</b>。", "id": "Tepat sebelum menyerahkan surat pengunduran diri, kata-kata atasanku membuatku mengurungkan niat.", "level": "n1", "tags": ["pekerjaan", "keputusan"]},
-    {"jp": "崖っぷちで辛うじて<b>踏みとどまる</b>ことができた。", "id": "Di tepi jurang, ia berhasil menahan diri untuk tidak jatuh — secara harfiah maupun kiasan.", "level": "n1", "tags": ["karakter", "sastra"]}
+    {
+      "jp": "怒りに任せて怒鳴りそうになったが、かろうじて<b>踏みとどまった</b>。",
+      "id": "Hampir saja aku berteriak karena marah, namun aku berhasil menahan diri.",
+      "level": "n1",
+      "tags": [
+        "emosi",
+        "karakter"
+      ]
+    },
+    {
+      "jp": "辞表を出す直前に、上司の言葉で<b>踏みとどまった</b>。",
+      "id": "Tepat sebelum menyerahkan surat pengunduran diri, kata-kata atasanku membuatku mengurungkan niat.",
+      "level": "n1",
+      "tags": [
+        "pekerjaan",
+        "keputusan"
+      ]
+    },
+    {
+      "jp": "崖っぷちで辛うじて<b>踏みとどまる</b>ことができた。",
+      "id": "Di tepi jurang, ia berhasil menahan diri untuk tidak jatuh — secara harfiah maupun kiasan.",
+      "level": "n1",
+      "tags": [
+        "karakter",
+        "sastra"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1450160",
+  "forms": [
+    {
+      "word": "踏みとどまる",
+      "info": []
+    },
+    {
+      "word": "踏み止まる",
+      "info": []
+    },
+    {
+      "word": "踏み留まる",
+      "info": []
+    }
+  ],
+  "meanings": [
+    {
+      "en": "to stay on; to remain; to hold out; to hold one's ground",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to stop (doing); to give up",
+      "misc": [],
+      "field": []
+    }
+  ],
+  "conjugations": {
+    "dict": "ふみとどまる",
+    "masu": "ふみとどまります",
+    "te": "ふみとどまって",
+    "ta": "ふみとどまった",
+    "nai": "ふみとどまらない",
+    "potential": "ふみとどまれる",
+    "passive": "ふみとどまられる",
+    "causative": "ふみとどまらせる",
+    "volitional": "ふみとどまろう",
+    "cond_ba": "ふみとどまれば",
+    "cond_tara": "ふみとどまったら"
+  }
 },
 
 {
@@ -2826,21 +8979,108 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["karakter", "emosi", "sastra"],
+  "domain": [
+    "karakter",
+    "emosi",
+    "sastra"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 向き合う (mukiau = berhadapan/menghadapi secara umum — bisa netral, tidak harus melawan) dan 対処する (taisho suru = menangani/mengatasi — lebih teknis dan administratif) — 立ち向かう menekankan keberanian dan ketegaran dalam menghadapi sesuatu yang besar, menakutkan, atau kuat. Ada nuansa kepala tegak meski menyadari risiko. 困難に立ち向かう = menghadapi kesulitan dengan gagah berani. Lebih heroik dan dramatis.",
   "conj_type": "godan",
   "examples": [
-    {"jp": "どんな困難にも<b>立ち向かう</b>強さを持ちなさい。", "id": "Miliklah kekuatan untuk berani menghadapi kesulitan apa pun.", "level": "n1", "tags": ["karakter", "emosi-positif"]},
-    {"jp": "不正に<b>立ち向かう</b>には勇気が必要だ。", "id": "Dibutuhkan keberanian untuk menghadapi ketidakadilan.", "level": "n1", "tags": ["karakter", "hukum-aturan"]},
-    {"jp": "彼女は一人で権力に<b>立ち向かい</b>、正義を訴え続けた。", "id": "Seorang diri ia menghadapi kekuasaan dan terus memperjuangkan keadilan.", "level": "n1", "tags": ["karakter", "politik-masyarakat"]}
+    {
+      "jp": "どんな困難にも<b>立ち向かう</b>強さを持ちなさい。",
+      "id": "Miliklah kekuatan untuk berani menghadapi kesulitan apa pun.",
+      "level": "n1",
+      "tags": [
+        "karakter",
+        "emosi-positif"
+      ]
+    },
+    {
+      "jp": "不正に<b>立ち向かう</b>には勇気が必要だ。",
+      "id": "Dibutuhkan keberanian untuk menghadapi ketidakadilan.",
+      "level": "n1",
+      "tags": [
+        "karakter",
+        "hukum-aturan"
+      ]
+    },
+    {
+      "jp": "彼女は一人で権力に<b>立ち向かい</b>、正義を訴え続けた。",
+      "id": "Seorang diri ia menghadapi kekuasaan dan terus memperjuangkan keadilan.",
+      "level": "n1",
+      "tags": [
+        "karakter",
+        "politik-masyarakat"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1551330",
+  "frequency": 20000,
+  "forms": [
+    {
+      "word": "立ち向かう",
+      "info": []
+    },
+    {
+      "word": "立ち向う",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "立ちむかう",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "立向う",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "立向かう",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "たち向かう",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "たち向う",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "conjugations": {
+    "dict": "たちむかう",
+    "masu": "たちむかいます",
+    "te": "たちむかって",
+    "ta": "たちむかった",
+    "nai": "たちむかわない",
+    "potential": "たちむかえる",
+    "passive": "たちむかわれる",
+    "causative": "たちむかわせる",
+    "volitional": "たちむかおう",
+    "cond_ba": "たちむかえば",
+    "cond_tara": "たちむかったら"
+  }
 },
 
 {
@@ -2855,82 +9095,330 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["hukum-aturan", "karakter", "pikiran-opini"],
+  "domain": [
+    "hukum-aturan",
+    "karakter",
+    "pikiran-opini"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 違反 (ihan = pelanggaran aturan yang tertulis), 逸脱 lebih luas dan bisa mencakup penyimpangan dari norma tidak tertulis, ekspektasi sosial, atau jalur yang diharapkan. 規範から逸脱する = menyimpang dari norma. Bisa berkonotasi negatif (perilaku menyimpang) atau netral/positif (inovasi yang keluar dari konvensi).",
   "conj_type": "suru",
   "examples": [
-    {"jp": "彼の行動は会社の倫理規範から大きく<b>逸脱</b>していた。", "id": "Tindakannya menyimpang jauh dari norma etika perusahaan.", "level": "n1", "tags": ["pekerjaan", "hukum-aturan"]},
-    {"jp": "この小説は従来のジャンルから<b>逸脱</b>した独自のスタイルを持つ。", "id": "Novel ini memiliki gaya yang unik, menyimpang dari genre konvensional.", "level": "n1", "tags": ["sastra", "seni-budaya"]}
+    {
+      "jp": "彼の行動は会社の倫理規範から大きく<b>逸脱</b>していた。",
+      "id": "Tindakannya menyimpang jauh dari norma etika perusahaan.",
+      "level": "n1",
+      "tags": [
+        "pekerjaan",
+        "hukum-aturan"
+      ]
+    },
+    {
+      "jp": "この小説は従来のジャンルから<b>逸脱</b>した独自のスタイルを持つ。",
+      "id": "Novel ini memiliki gaya yang unik, menyimpang dari genre konvensional.",
+      "level": "n1",
+      "tags": [
+        "sastra",
+        "seni-budaya"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00206"],
+  "see_also": [
+    "vg-n1-00206"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1167750",
+  "frequency": 11500,
+  "meanings": [
+    {
+      "en": "deviation; departure",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "(accidental) omission",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
   // ── ADJECTIVES (17) ────────────────────────────────────────
 
 {
-  "id": "vg-n1-00038", "word": "特殊", "reading": "とくしゅ", "romaji": "tokushu",
-  "meaning_id": "khusus, istimewa, tidak biasa, unik", "meaning_en": "special, particular, unique, exceptional",
-  "jlpt": "n1", "pos": "na-adj", "common": true, "related_grammar": [],
-  "formalitas": 3, "domain": ["ilmu-pengetahuan", "umum"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Menekankan bahwa sesuatu berbeda dari yang biasa atau umum. Berlawanan dengan 普遍 atau 一般的. 特殊な事情 = keadaan yang luar biasa/khusus. Berbeda dari 特別 yang bernuansa lebih positif; 特殊 lebih netral atau teknis.",
+  "id": "vg-n1-00038",
+  "word": "特殊",
+  "reading": "とくしゅ",
+  "romaji": "tokushu",
+  "meaning_id": "khusus, istimewa, tidak biasa, unik",
+  "meaning_en": "special, particular, unique, exceptional",
+  "jlpt": "n1",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "ilmu-pengetahuan",
+    "umum"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Menekankan bahwa sesuatu berbeda dari yang biasa atau umum. Berlawanan dengan 普遍 atau 一般的. 特殊な事情 = keadaan yang luar biasa/khusus. Berbeda dari 特別 yang bernuansa lebih positif; 特殊 lebih netral atau teknis.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "これは特殊な技術を必要とする作業だ。", "id": "Ini adalah pekerjaan yang membutuhkan keahlian khusus.", "level": "n1", "tags": ["pekerjaan"]},
-    {"jp": "彼女の置かれた状況は非常に特殊だ。", "id": "Situasi yang dihadapinya sangat tidak biasa.", "level": "n1", "tags": ["umum"]},
-    {"jp": "特殊な事情がない限り、規則に従うべきだ。", "id": "Selama tidak ada keadaan yang luar biasa, kita harus mematuhi aturan.", "level": "n1", "tags": ["hukum-aturan"]}
+    {
+      "jp": "これは特殊な技術を必要とする作業だ。",
+      "id": "Ini adalah pekerjaan yang membutuhkan keahlian khusus.",
+      "level": "n1",
+      "tags": [
+        "pekerjaan"
+      ]
+    },
+    {
+      "jp": "彼女の置かれた状況は非常に特殊だ。",
+      "id": "Situasi yang dihadapinya sangat tidak biasa.",
+      "level": "n1",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "特殊な事情がない限り、規則に従うべきだ。",
+      "id": "Selama tidak ada keadaan yang luar biasa, kita harus mematuhi aturan.",
+      "level": "n1",
+      "tags": [
+        "hukum-aturan"
+      ]
+    }
   ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15",
+  "jmdict_seq": "1454970",
+  "frequency": 2000
 },
 
 {
-  "id": "vg-n1-00050", "word": "脆弱", "reading": "ぜいじゃく", "romaji": "zeijaku",
-  "meaning_id": "rapuh, rentan, mudah rusak atau terpengaruh", "meaning_en": "fragile, vulnerable, weak",
-  "jlpt": "n1", "pos": "na-adj", "common": false, "related_grammar": [],
-  "formalitas": 4, "domain": ["ilmu-pengetahuan", "politik-masyarakat", "kesehatan"], "register": "formal",
-  "lawan_bicara": ["umum"], "nuance": "Kata teknis dan formal, sering dipakai dalam konteks keamanan siber (脆弱性 = vulnerability/celah keamanan), bencana alam, atau analisis ekonomi. Berbeda dari 弱い yang lebih umum; 脆弱 menyiratkan kerentanan yang bersifat struktural.",
+  "id": "vg-n1-00050",
+  "word": "脆弱",
+  "reading": "ぜいじゃく",
+  "romaji": "zeijaku",
+  "meaning_id": "rapuh, rentan, mudah rusak atau terpengaruh",
+  "meaning_en": "fragile, vulnerable, weak",
+  "jlpt": "n1",
+  "pos": "na-adj",
+  "common": false,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": [
+    "ilmu-pengetahuan",
+    "politik-masyarakat",
+    "kesehatan"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Kata teknis dan formal, sering dipakai dalam konteks keamanan siber (脆弱性 = vulnerability/celah keamanan), bencana alam, atau analisis ekonomi. Berbeda dari 弱い yang lebih umum; 脆弱 menyiratkan kerentanan yang bersifat struktural.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "このシステムのセキュリティは脆弱で、攻撃を受けやすい。", "id": "Keamanan sistem ini sangat rentan dan mudah diserang.", "level": "n1", "tags": ["teknologi"]},
-    {"jp": "経済的に脆弱な層への支援が急務となっている。", "id": "Dukungan bagi kelompok yang rentan secara ekonomi menjadi hal yang mendesak.", "level": "n1", "tags": ["ekonomi-keuangan"]},
-    {"jp": "地震に対して脆弱なインフラを強化することが課題だ。", "id": "Memperkuat infrastruktur yang rentan terhadap gempa adalah tantangan yang harus diatasi.", "level": "n1", "tags": ["alam-lingkungan"]}
+    {
+      "jp": "このシステムのセキュリティは脆弱で、攻撃を受けやすい。",
+      "id": "Keamanan sistem ini sangat rentan dan mudah diserang.",
+      "level": "n1",
+      "tags": [
+        "teknologi"
+      ]
+    },
+    {
+      "jp": "経済的に脆弱な層への支援が急務となっている。",
+      "id": "Dukungan bagi kelompok yang rentan secara ekonomi menjadi hal yang mendesak.",
+      "level": "n1",
+      "tags": [
+        "ekonomi-keuangan"
+      ]
+    },
+    {
+      "jp": "地震に対して脆弱なインフラを強化することが課題だ。",
+      "id": "Memperkuat infrastruktur yang rentan terhadap gempa adalah tantangan yang harus diatasi.",
+      "level": "n1",
+      "tags": [
+        "alam-lingkungan"
+      ]
+    }
   ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15",
+  "jmdict_seq": "1918240",
+  "frequency": 19500,
+  "forms": [
+    {
+      "word": "脆弱",
+      "info": []
+    },
+    {
+      "word": "ぜい弱",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ]
 },
 
 {
-  "id": "vg-n1-00051", "word": "強靭", "reading": "きょうじん", "romaji": "kyōjin",
-  "meaning_id": "tangguh, ulet, kuat dan tidak mudah patah", "meaning_en": "tough, resilient, strong and flexible",
-  "jlpt": "n1", "pos": "na-adj", "common": false, "related_grammar": [],
-  "formalitas": 4, "domain": ["karakter", "ilmu-pengetahuan", "politik-masyarakat"], "register": "formal",
-  "lawan_bicara": ["umum"], "nuance": "Menggambarkan kekuatan yang disertai kelenturan — bukan hanya kuat, tapi mampu bertahan dan pulih dari tekanan. Berbeda dari 強い (kuat umum) atau 頑丈 (kokoh secara fisik). Sering dipakai untuk menggambarkan karakter, ekonomi, atau masyarakat yang resilient.",
+  "id": "vg-n1-00051",
+  "word": "強靭",
+  "reading": "きょうじん",
+  "romaji": "kyōjin",
+  "meaning_id": "tangguh, ulet, kuat dan tidak mudah patah",
+  "meaning_en": "tough, resilient, strong and flexible",
+  "jlpt": "n1",
+  "pos": "na-adj",
+  "common": false,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": [
+    "karakter",
+    "ilmu-pengetahuan",
+    "politik-masyarakat"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Menggambarkan kekuatan yang disertai kelenturan — bukan hanya kuat, tapi mampu bertahan dan pulih dari tekanan. Berbeda dari 強い (kuat umum) atau 頑丈 (kokoh secara fisik). Sering dipakai untuk menggambarkan karakter, ekonomi, atau masyarakat yang resilient.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "強靭な意志を持つ彼は何度倒れても立ち上がった。", "id": "Dengan tekad yang tangguh, dia bangkit kembali setiap kali terjatuh.", "level": "n1", "tags": ["karakter"]},
-    {"jp": "多様性を取り入れた強靭な経済を構築することが目標だ。", "id": "Tujuannya adalah membangun ekonomi yang tangguh dengan mengintegrasikan keberagaman.", "level": "n1", "tags": ["ekonomi-keuangan"]},
-    {"jp": "自然災害に対応できる強靭な社会づくりが進んでいる。", "id": "Pembangunan masyarakat yang tangguh dalam menghadapi bencana alam terus berlangsung.", "level": "n1", "tags": ["alam-lingkungan"]}
+    {
+      "jp": "強靭な意志を持つ彼は何度倒れても立ち上がった。",
+      "id": "Dengan tekad yang tangguh, dia bangkit kembali setiap kali terjatuh.",
+      "level": "n1",
+      "tags": [
+        "karakter"
+      ]
+    },
+    {
+      "jp": "多様性を取り入れた強靭な経済を構築することが目標だ。",
+      "id": "Tujuannya adalah membangun ekonomi yang tangguh dengan mengintegrasikan keberagaman.",
+      "level": "n1",
+      "tags": [
+        "ekonomi-keuangan"
+      ]
+    },
+    {
+      "jp": "自然災害に対応できる強靭な社会づくりが進んでいる。",
+      "id": "Pembangunan masyarakat yang tangguh dalam menghadapi bencana alam terus berlangsung.",
+      "level": "n1",
+      "tags": [
+        "alam-lingkungan"
+      ]
+    }
   ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15",
+  "jmdict_seq": "1236340",
+  "frequency": 18000,
+  "forms": [
+    {
+      "word": "強靭",
+      "info": []
+    },
+    {
+      "word": "強靱",
+      "info": []
+    },
+    {
+      "word": "強じん",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ]
 },
 
 {
-  "id": "vg-n1-00060", "word": "顕著", "reading": "けんちょ", "romaji": "kenchō",
-  "meaning_id": "menonjol, nyata, sangat jelas terlihat", "meaning_en": "remarkable, notable, conspicuous, striking",
-  "jlpt": "n1", "pos": "na-adj", "common": true, "related_grammar": [],
-  "formalitas": 4, "domain": ["ilmu-pengetahuan", "umum"], "register": "formal",
-  "lawan_bicara": ["umum"], "nuance": "Menekankan bahwa sesuatu sangat mencolok atau jelas hingga tidak bisa diabaikan. Dipakai dalam konteks akademis, jurnalistik, dan laporan resmi. 顕著な差 = perbedaan yang sangat nyata; 顕著な効果 = efek yang sangat terlihat. Lebih formal dari 明らか atau はっきり.",
+  "id": "vg-n1-00060",
+  "word": "顕著",
+  "reading": "けんちょ",
+  "romaji": "kenchō",
+  "meaning_id": "menonjol, nyata, sangat jelas terlihat",
+  "meaning_en": "remarkable, notable, conspicuous, striking",
+  "jlpt": "n1",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": [
+    "ilmu-pengetahuan",
+    "umum"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Menekankan bahwa sesuatu sangat mencolok atau jelas hingga tidak bisa diabaikan. Dipakai dalam konteks akademis, jurnalistik, dan laporan resmi. 顕著な差 = perbedaan yang sangat nyata; 顕著な効果 = efek yang sangat terlihat. Lebih formal dari 明らか atau はっきり.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "気温上昇の影響が近年顕著に現れている。", "id": "Dampak kenaikan suhu semakin nyata terlihat belakangan ini.", "level": "n1", "tags": ["alam-lingkungan"]},
-    {"jp": "この薬は症状の改善に顕著な効果を示した。", "id": "Obat ini menunjukkan efek yang sangat jelas dalam perbaikan gejala.", "level": "n1", "tags": ["kesehatan"]},
-    {"jp": "顕著な成果を残した研究者が国際的な賞を受賞した。", "id": "Peneliti yang menghasilkan pencapaian yang menonjol berhasil meraih penghargaan internasional.", "level": "n1", "tags": ["ilmu-pengetahuan"]}
+    {
+      "jp": "気温上昇の影響が近年顕著に現れている。",
+      "id": "Dampak kenaikan suhu semakin nyata terlihat belakangan ini.",
+      "level": "n1",
+      "tags": [
+        "alam-lingkungan"
+      ]
+    },
+    {
+      "jp": "この薬は症状の改善に顕著な効果を示した。",
+      "id": "Obat ini menunjukkan efek yang sangat jelas dalam perbaikan gejala.",
+      "level": "n1",
+      "tags": [
+        "kesehatan"
+      ]
+    },
+    {
+      "jp": "顕著な成果を残した研究者が国際的な賞を受賞した。",
+      "id": "Peneliti yang menghasilkan pencapaian yang menonjol berhasil meraih penghargaan internasional.",
+      "level": "n1",
+      "tags": [
+        "ilmu-pengetahuan"
+      ]
+    }
   ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15",
+  "jmdict_seq": "1260640",
+  "frequency": 5000,
+  "forms": [
+    {
+      "word": "顕著",
+      "info": []
+    },
+    {
+      "word": "顯著",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ]
 },
 
 {
@@ -2945,20 +9433,43 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["karakter", "sopan-santun"],
+  "domain": [
+    "karakter",
+    "sopan-santun"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 謙遜 (けんそん) yang lebih merujuk pada tindakan verbal merendahkan diri secara sosial, 謙虚 adalah kualitas batin yang tulus — keterbukaan untuk belajar, menerima kritik, dan tidak merasa lebih tinggi dari orang lain. 謙虚な姿勢 = sikap yang benar-benar rendah hati, bukan sekadar formalitas.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "成功しても<b>謙虚な</b>姿勢を忘れないことが大切だ。", "id": "Bahkan saat sukses, penting untuk tidak melupakan sikap rendah hati.", "level": "n1", "tags": ["karakter"]},
-    {"jp": "彼は批判を<b>謙虚に</b>受け止め、改善に努めた。", "id": "Dia menerima kritik dengan rendah hati dan berusaha untuk memperbaiki diri.", "level": "n1", "tags": ["karakter"]}
+    {
+      "jp": "成功しても<b>謙虚な</b>姿勢を忘れないことが大切だ。",
+      "id": "Bahkan saat sukses, penting untuk tidak melupakan sikap rendah hati.",
+      "level": "n1",
+      "tags": [
+        "karakter"
+      ]
+    },
+    {
+      "jp": "彼は批判を<b>謙虚に</b>受け止め、改善に努めた。",
+      "id": "Dia menerima kritik dengan rendah hati dan berusaha untuk memperbaiki diri.",
+      "level": "n1",
+      "tags": [
+        "karakter"
+      ]
+    }
   ],
   "synonyms": [],
-  "antonyms": ["vg-n1-00099"],
+  "antonyms": [
+    "vg-n1-00099"
+  ],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1260190",
+  "frequency": 6500
 },
 
 {
@@ -2973,20 +9484,62 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["karakter", "emosi-negatif"],
+  "domain": [
+    "karakter",
+    "emosi-negatif"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 高慢 (こうまん) yang menyiratkan keangkuhan yang lebih bersikap dingin dan meremehkan, 傲慢 mengandung nuansa keangkuhan yang aktif dan agresif — tidak hanya merasa lebih tinggi, tetapi juga menunjukkan sikap itu secara terang-terangan. 傲慢な態度 = sikap yang benar-benar merendahkan orang lain.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "彼の<b>傲慢な</b>態度はチームの士気を下げた。", "id": "Sikapnya yang arogan menurunkan semangat tim.", "level": "n1", "tags": ["pekerjaan"]},
-    {"jp": "権力を持つと<b>傲慢に</b>なる人が多い。", "id": "Banyak orang yang menjadi arogan setelah memiliki kekuasaan.", "level": "n1", "tags": ["karakter", "politik-masyarakat"]}
+    {
+      "jp": "彼の<b>傲慢な</b>態度はチームの士気を下げた。",
+      "id": "Sikapnya yang arogan menurunkan semangat tim.",
+      "level": "n1",
+      "tags": [
+        "pekerjaan"
+      ]
+    },
+    {
+      "jp": "権力を持つと<b>傲慢に</b>なる人が多い。",
+      "id": "Banyak orang yang menjadi arogan setelah memiliki kekuasaan.",
+      "level": "n1",
+      "tags": [
+        "karakter",
+        "politik-masyarakat"
+      ]
+    }
   ],
   "synonyms": [],
-  "antonyms": ["vg-n1-00098"],
+  "antonyms": [
+    "vg-n1-00098"
+  ],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1563960",
+  "frequency": 17500,
+  "forms": [
+    {
+      "word": "傲慢",
+      "info": []
+    },
+    {
+      "word": "ごう慢",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "強慢",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ]
 },
 
 {
@@ -3001,20 +9554,42 @@ window.vocabN1 = [
   "common": false,
   "related_grammar": [],
   "formalitas": 5,
-  "domain": ["karakter", "hukum-aturan", "politik-masyarakat"],
+  "domain": [
+    "karakter",
+    "hukum-aturan",
+    "politik-masyarakat"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 誠実 (sincerity dalam hubungan interpersonal), 清廉 secara khusus merujuk pada kebersihan moral dalam konteks kekuasaan atau jabatan publik — tidak menerima suap, tidak menyalahgunakan posisi. 清廉潔白 (せいれんけっぱく) = idiom untuk ketulusan dan kebersihan hati yang sempurna.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "<b>清廉な</b>政治家として国民から信頼を集めた。", "id": "Dia mendapatkan kepercayaan dari rakyat sebagai politisi yang berintegritas dan bersih.", "level": "n1", "tags": ["politik-masyarakat"]},
-    {"jp": "公務員には<b>清廉な</b>姿勢が求められる。", "id": "Para pegawai negeri dituntut untuk memiliki sikap yang bersih dari korupsi.", "level": "n1", "tags": ["hukum-aturan"]}
+    {
+      "jp": "<b>清廉な</b>政治家として国民から信頼を集めた。",
+      "id": "Dia mendapatkan kepercayaan dari rakyat sebagai politisi yang berintegritas dan bersih.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "公務員には<b>清廉な</b>姿勢が求められる。",
+      "id": "Para pegawai negeri dituntut untuk memiliki sikap yang bersih dari korupsi.",
+      "level": "n1",
+      "tags": [
+        "hukum-aturan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1378420",
+  "frequency": 17500
 },
 
 {
@@ -3029,20 +9604,42 @@ window.vocabN1 = [
   "common": false,
   "related_grammar": [],
   "formalitas": 5,
-  "domain": ["pikiran-opini", "hukum-aturan"],
+  "domain": [
+    "pikiran-opini",
+    "hukum-aturan"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan", "umum"],
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
   "nuance": "Berbeda dari 独断的 (unilateral — memutuskan tanpa konsultasi), 恣意的 mempertanyakan dasar rasional dari keputusan itu sendiri — apakah keputusan dibuat berdasarkan keinginan pribadi semata, bukan alasan objektif. Sering digunakan dalam kritik terhadap kebijakan atau penilaian yang tidak memiliki standar jelas.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "評価基準が<b>恣意的</b>では公正な審査はできない。", "id": "Jika kriteria penilaian sewenang-wenang, evaluasi yang adil tidak akan bisa dilakukan.", "level": "n1", "tags": ["hukum-aturan"]},
-    {"jp": "法律の<b>恣意的な</b>解釈は法の支配を損なう。", "id": "Penafsiran undang-undang yang sewenang-wenang merusak supremasi hukum.", "level": "n1", "tags": ["hukum-aturan", "politik-masyarakat"]}
+    {
+      "jp": "評価基準が<b>恣意的</b>では公正な審査はできない。",
+      "id": "Jika kriteria penilaian sewenang-wenang, evaluasi yang adil tidak akan bisa dilakukan.",
+      "level": "n1",
+      "tags": [
+        "hukum-aturan"
+      ]
+    },
+    {
+      "jp": "法律の<b>恣意的な</b>解釈は法の支配を損なう。",
+      "id": "Penafsiran undang-undang yang sewenang-wenang merusak supremasi hukum.",
+      "level": "n1",
+      "tags": [
+        "hukum-aturan",
+        "politik-masyarakat"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1566810"
 },
 
 {
@@ -3057,20 +9654,66 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["karakter", "pikiran-opini"],
+  "domain": [
+    "karakter",
+    "pikiran-opini"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum", "rekan"],
+  "lawan_bicara": [
+    "umum",
+    "rekan"
+  ],
   "nuance": "Bentuk leksikalisasi dari 揺るぐ (negasi). Menggambarkan sesuatu yang tidak bisa digoyahkan sama sekali, bahkan di bawah tekanan sekalipun. Berbeda dari ただ「強い」(tsuyoi = kuat), 揺るぎない menekankan stabilitas mutlak dan keteguhan yang tidak kenal kompromi. 揺るぎない信頼 = kepercayaan yang tak tergoyahkan.",
   "conj_type": "adj-i",
   "examples": [
-    {"jp": "彼は<b>揺るぎない</b>信念を持ち、どんな圧力にも屈しなかった。", "id": "Dia memiliki keyakinan yang tak tergoyahkan dan tidak tunduk pada tekanan apa pun.", "level": "n1", "tags": ["karakter"]},
-    {"jp": "両国の間には<b>揺るぎない</b>信頼関係が築かれている。", "id": "Hubungan kepercayaan yang tidak tergoyahkan telah dibangun antara kedua negara.", "level": "n1", "tags": ["politik-masyarakat", "hubungan-konsep"]}
+    {
+      "jp": "彼は<b>揺るぎない</b>信念を持ち、どんな圧力にも屈しなかった。",
+      "id": "Dia memiliki keyakinan yang tak tergoyahkan dan tidak tunduk pada tekanan apa pun.",
+      "level": "n1",
+      "tags": [
+        "karakter"
+      ]
+    },
+    {
+      "jp": "両国の間には<b>揺るぎない</b>信頼関係が築かれている。",
+      "id": "Hubungan kepercayaan yang tidak tergoyahkan telah dibangun antara kedua negara.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat",
+        "hubungan-konsep"
+      ]
+    }
   ],
-  "synonyms": ["確固たる", "不動の"],
-  "antonyms": ["揺らぐ", "不安定な"],
-  "see_also": ["vg-n1-00135"],
+  "synonyms": [
+    "確固たる",
+    "不動の"
+  ],
+  "antonyms": [
+    "揺らぐ",
+    "不安定な"
+  ],
+  "see_also": [
+    "vg-n1-00135"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1662470",
+  "forms": [
+    {
+      "word": "揺るぎない",
+      "info": []
+    },
+    {
+      "word": "揺るぎ無い",
+      "info": []
+    },
+    {
+      "word": "揺ぎ無い",
+      "info": [
+        "okurigana tidak biasa"
+      ]
+    }
+  ]
 },
 
 {
@@ -3085,20 +9728,52 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["pekerjaan", "pikiran-opini"],
+  "domain": [
+    "pekerjaan",
+    "pikiran-opini"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan", "umum"],
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
   "nuance": "Menekankan ketelitian yang sangat tinggi secara mendetail dan menyeluruh. Berbeda dari 丁寧 (teinei = sopan/hati-hati secara umum) atau 慎重 (shinchō = berhati-hati), 綿密 lebih menekankan cakupan yang sistematis dan tidak ada celah yang terlewat. Berbeda dari 周到 (shuutou = matang dalam persiapan), 綿密 lebih pada ketelitian proses dan detail.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "<b>綿密な</b>調査の結果、原因が特定された。", "id": "Berkat penyelidikan yang sangat teliti, penyebabnya berhasil diidentifikasi.", "level": "n1", "tags": ["ilmu-pengetahuan", "pekerjaan"]},
-    {"jp": "<b>綿密に</b>計画を立てたにもかかわらず、予期せぬ問題が生じた。", "id": "Meskipun sudah merencanakan dengan sangat cermat, masalah tak terduga tetap muncul.", "level": "n1", "tags": ["pekerjaan", "keputusan"]}
+    {
+      "jp": "<b>綿密な</b>調査の結果、原因が特定された。",
+      "id": "Berkat penyelidikan yang sangat teliti, penyebabnya berhasil diidentifikasi.",
+      "level": "n1",
+      "tags": [
+        "ilmu-pengetahuan",
+        "pekerjaan"
+      ]
+    },
+    {
+      "jp": "<b>綿密に</b>計画を立てたにもかかわらず、予期せぬ問題が生じた。",
+      "id": "Meskipun sudah merencanakan dengan sangat cermat, masalah tak terduga tetap muncul.",
+      "level": "n1",
+      "tags": [
+        "pekerjaan",
+        "keputusan"
+      ]
+    }
   ],
-  "synonyms": ["念入り", "詳細"],
-  "antonyms": ["大雑把"],
-  "see_also": ["vg-n1-00138", "vg-n1-00139"],
+  "synonyms": [
+    "念入り",
+    "詳細"
+  ],
+  "antonyms": [
+    "大雑把"
+  ],
+  "see_also": [
+    "vg-n1-00138",
+    "vg-n1-00139"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1533390",
+  "frequency": 9000
 },
 
 {
@@ -3113,20 +9788,51 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["pekerjaan", "keputusan"],
+  "domain": [
+    "pekerjaan",
+    "keputusan"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan", "atasan"],
+  "lawan_bicara": [
+    "rekan",
+    "atasan"
+  ],
   "nuance": "Menekankan kesiapan dan kewaspadaan yang menyeluruh untuk mengantisipasi segala kemungkinan. Berbeda dari 綿密 (menmitsu = teliti dalam proses/detail), 周到 lebih pada kesiapan menyeluruh dari segala sisi — tidak ada yang luput dari perhatian. 周到な準備 = persiapan yang matang dan tidak ada celah.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "<b>周到な</b>準備のおかげでプレゼンは成功した。", "id": "Berkat persiapan yang sangat matang, presentasi tersebut berjalan sukses.", "level": "n1", "tags": ["pekerjaan", "bisnis"]},
-    {"jp": "犯人は<b>周到に</b>計画を練り、証拠を残さなかった。", "id": "Pelaku merencanakan semuanya dengan sangat matang sehingga tidak meninggalkan bukti.", "level": "n1", "tags": ["hukum-aturan"]}
+    {
+      "jp": "<b>周到な</b>準備のおかげでプレゼンは成功した。",
+      "id": "Berkat persiapan yang sangat matang, presentasi tersebut berjalan sukses.",
+      "level": "n1",
+      "tags": [
+        "pekerjaan",
+        "bisnis"
+      ]
+    },
+    {
+      "jp": "犯人は<b>周到に</b>計画を練り、証拠を残さなかった。",
+      "id": "Pelaku merencanakan semuanya dengan sangat matang sehingga tidak meninggalkan bukti.",
+      "level": "n1",
+      "tags": [
+        "hukum-aturan"
+      ]
+    }
   ],
-  "synonyms": ["用意周到"],
-  "antonyms": ["杜撰", "不用意"],
-  "see_also": ["vg-n1-00137", "vg-n1-00139"],
+  "synonyms": [
+    "用意周到"
+  ],
+  "antonyms": [
+    "杜撰",
+    "不用意"
+  ],
+  "see_also": [
+    "vg-n1-00137",
+    "vg-n1-00139"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1331230",
+  "frequency": 9500
 },
 
 {
@@ -3141,20 +9847,52 @@ window.vocabN1 = [
   "common": false,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["seni-budaya", "kualitas"],
+  "domain": [
+    "seni-budaya",
+    "kualitas"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan", "umum"],
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
   "nuance": "Menekankan tingkat kehalusan dan kerumitan yang sangat tinggi pada hasil akhir — sering dipakai untuk karya seni, kerajinan, arsitektur, atau pemikiran yang sangat terperinci. Berbeda dari 綿密 (menmitsu = teliti dalam proses), 精緻 lebih pada kualitas dan keindahan detail pada produk/hasil akhir. 精緻な細工 = kerajinan yang sangat halus.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "<b>精緻な</b>彫刻が宮殿の壁一面を飾っていた。", "id": "Ukiran yang sangat halus dan rumit menghiasi seluruh dinding istana.", "level": "n1", "tags": ["seni-budaya"]},
-    {"jp": "その理論は<b>精緻な</b>論理構造を持っている。", "id": "Teori tersebut memiliki struktur logika yang sangat terperinci dan presisi.", "level": "n1", "tags": ["ilmu-pengetahuan", "pikiran-opini"]}
+    {
+      "jp": "<b>精緻な</b>彫刻が宮殿の壁一面を飾っていた。",
+      "id": "Ukiran yang sangat halus dan rumit menghiasi seluruh dinding istana.",
+      "level": "n1",
+      "tags": [
+        "seni-budaya"
+      ]
+    },
+    {
+      "jp": "その理論は<b>精緻な</b>論理構造を持っている。",
+      "id": "Teori tersebut memiliki struktur logika yang sangat terperinci dan presisi.",
+      "level": "n1",
+      "tags": [
+        "ilmu-pengetahuan",
+        "pikiran-opini"
+      ]
+    }
   ],
-  "synonyms": ["精巧", "緻密"],
-  "antonyms": ["粗雑", "大ざっぱ"],
-  "see_also": ["vg-n1-00137", "vg-n1-00138"],
+  "synonyms": [
+    "精巧",
+    "緻密"
+  ],
+  "antonyms": [
+    "粗雑",
+    "大ざっぱ"
+  ],
+  "see_also": [
+    "vg-n1-00137",
+    "vg-n1-00138"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1380270",
+  "frequency": 17500
 },
 
 {
@@ -3169,20 +9907,63 @@ window.vocabN1 = [
   "common": false,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["karakter", "seni-budaya"],
+  "domain": [
+    "karakter",
+    "seni-budaya"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Menekankan keagungan yang bersifat moral, spiritual, atau estetis — melampaui kepentingan duniawi. Berbeda dari 偉大 (idai = besar/agung dalam pencapaian atau ukuran), 崇高 lebih pada dimensi ideal atau transenden yang membangkitkan kekaguman mendalam. 崇高な理想 = cita-cita yang luhur.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "命を懸けた救助活動は<b>崇高な</b>使命感の表れだ。", "id": "Operasi penyelamatan yang mempertaruhkan nyawa adalah wujud dari rasa misi yang luhur.", "level": "n1", "tags": ["karakter", "emosi-positif"]},
-    {"jp": "芸術は<b>崇高な</b>美を追求するものだという信念がある。", "id": "Ada keyakinan bahwa seni adalah upaya mengejar keindahan yang agung.", "level": "n1", "tags": ["seni-budaya", "pikiran-opini"]}
+    {
+      "jp": "命を懸けた救助活動は<b>崇高な</b>使命感の表れだ。",
+      "id": "Operasi penyelamatan yang mempertaruhkan nyawa adalah wujud dari rasa misi yang luhur.",
+      "level": "n1",
+      "tags": [
+        "karakter",
+        "emosi-positif"
+      ]
+    },
+    {
+      "jp": "芸術は<b>崇高な</b>美を追求するものだという信念がある。",
+      "id": "Ada keyakinan bahwa seni adalah upaya mengejar keindahan yang agung.",
+      "level": "n1",
+      "tags": [
+        "seni-budaya",
+        "pikiran-opini"
+      ]
+    }
   ],
-  "synonyms": ["高尚", "高貴"],
-  "antonyms": ["卑劣", "下劣"],
-  "see_also": ["vg-n1-00142"],
+  "synonyms": [
+    "高尚",
+    "高貴"
+  ],
+  "antonyms": [
+    "卑劣",
+    "下劣"
+  ],
+  "see_also": [
+    "vg-n1-00142"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1372860",
+  "frequency": 14500,
+  "meanings": [
+    {
+      "en": "lofty; sublime; noble",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "the sublime (aesthetics)",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
@@ -3197,20 +9978,63 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["karakter", "emosi-negatif"],
+  "domain": [
+    "karakter",
+    "emosi-negatif"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Menggambarkan tindakan atau karakter yang bertindak secara pengecut sekaligus keji dan tidak bermartabat. 卑劣な手段 = cara yang keji. Berbeda dari 悪い (warui = buruk/jahat secara umum) atau 意地悪 (ijiwaru = jahat/usil), 卑劣 menekankan aspek kehinaan moral dan kepengecutan yang bersamaan — sesuatu yang pantas dihina.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "弱者を標的にするのは<b>卑劣な</b>行為だ。", "id": "Menjadikan orang lemah sebagai sasaran adalah tindakan yang keji dan pengecut.", "level": "n1", "tags": ["karakter", "emosi-negatif"]},
-    {"jp": "そんな<b>卑劣な</b>手段を使うとは、信じられない。", "id": "Tidak bisa dipercaya bahwa dia menggunakan cara yang begitu hina.", "level": "n1", "tags": ["karakter", "hubungan-konsep"]}
+    {
+      "jp": "弱者を標的にするのは<b>卑劣な</b>行為だ。",
+      "id": "Menjadikan orang lemah sebagai sasaran adalah tindakan yang keji dan pengecut.",
+      "level": "n1",
+      "tags": [
+        "karakter",
+        "emosi-negatif"
+      ]
+    },
+    {
+      "jp": "そんな<b>卑劣な</b>手段を使うとは、信じられない。",
+      "id": "Tidak bisa dipercaya bahwa dia menggunakan cara yang begitu hina.",
+      "level": "n1",
+      "tags": [
+        "karakter",
+        "hubungan-konsep"
+      ]
+    }
   ],
-  "synonyms": ["下劣", "卑怯"],
-  "antonyms": ["崇高", "高潔"],
-  "see_also": ["vg-n1-00141"],
+  "synonyms": [
+    "下劣",
+    "卑怯"
+  ],
+  "antonyms": [
+    "崇高",
+    "高潔"
+  ],
+  "see_also": [
+    "vg-n1-00141"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1482820",
+  "frequency": 12500,
+  "forms": [
+    {
+      "word": "卑劣",
+      "info": []
+    },
+    {
+      "word": "鄙劣",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    }
+  ]
 },
 
 {
@@ -3225,20 +10049,50 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["bahasa-komunikasi", "seni-budaya"],
+  "domain": [
+    "bahasa-komunikasi",
+    "seni-budaya"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum", "rekan"],
+  "lawan_bicara": [
+    "umum",
+    "rekan"
+  ],
   "nuance": "Menekankan sesuatu yang sudah terlalu sering dipakai sehingga kehilangan orisinalitas, kesegaran, dan daya tariknya. 陳腐な表現 = ungkapan yang klise. 陳腐化する = menjadi usang. Berbeda dari 古い (furui = tua/kuno) yang netral, 陳腐 mengandung konotasi negatif yang lebih kuat — kurangnya kreativitas dan membosankan.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "その映画のストーリーは<b>陳腐な</b>展開ばかりで退屈だった。", "id": "Jalan cerita film itu hanya berisi klise yang membosankan.", "level": "n1", "tags": ["hiburan", "seni-budaya"]},
-    {"jp": "<b>陳腐な</b>表現を避け、もっと独自の言葉を選ぶべきだ。", "id": "Sebaiknya hindari ungkapan klise dan pilih kata-kata yang lebih orisinal.", "level": "n1", "tags": ["bahasa-komunikasi", "sastra"]}
+    {
+      "jp": "その映画のストーリーは<b>陳腐な</b>展開ばかりで退屈だった。",
+      "id": "Jalan cerita film itu hanya berisi klise yang membosankan.",
+      "level": "n1",
+      "tags": [
+        "hiburan",
+        "seni-budaya"
+      ]
+    },
+    {
+      "jp": "<b>陳腐な</b>表現を避け、もっと独自の言葉を選ぶべきだ。",
+      "id": "Sebaiknya hindari ungkapan klise dan pilih kata-kata yang lebih orisinal.",
+      "level": "n1",
+      "tags": [
+        "bahasa-komunikasi",
+        "sastra"
+      ]
+    }
   ],
-  "synonyms": ["月並み", "ありきたり"],
-  "antonyms": ["斬新", "独創的"],
+  "synonyms": [
+    "月並み",
+    "ありきたり"
+  ],
+  "antonyms": [
+    "斬新",
+    "独創的"
+  ],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1432200",
+  "frequency": 17000
 },
 
 {
@@ -3253,20 +10107,57 @@ window.vocabN1 = [
   "common": false,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["kualitas", "umum"],
+  "domain": [
+    "kualitas",
+    "umum"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Menekankan kelangkaan yang sangat ekstrem — bukan sekadar tidak umum, melainkan benar-benar hampir tidak ada duanya. 稀有な才能 = bakat yang sangat langka. Berbeda dari 珍しい (mezurashii = tidak biasa/unik, lebih umum dan kasual), 稀有 lebih formal dan sering mengandung rasa kekaguman. Sering dipakai dalam konteks bakat, peristiwa, atau fenomena luar biasa.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "彼女は<b>稀有な</b>才能を持つ音楽家だ。", "id": "Dia adalah musisi dengan bakat yang sangat langka.", "level": "n1", "tags": ["seni-budaya", "karakter"]},
-    {"jp": "これほどの大雪は<b>稀有な</b>気象現象だ。", "id": "Salju lebat sebesar ini adalah fenomena cuaca yang sangat jarang terjadi.", "level": "n1", "tags": ["alam-lingkungan"]}
+    {
+      "jp": "彼女は<b>稀有な</b>才能を持つ音楽家だ。",
+      "id": "Dia adalah musisi dengan bakat yang sangat langka.",
+      "level": "n1",
+      "tags": [
+        "seni-budaya",
+        "karakter"
+      ]
+    },
+    {
+      "jp": "これほどの大雪は<b>稀有な</b>気象現象だ。",
+      "id": "Salju lebat sebesar ini adalah fenomena cuaca yang sangat jarang terjadi.",
+      "level": "n1",
+      "tags": [
+        "alam-lingkungan"
+      ]
+    }
   ],
-  "synonyms": ["希少", "珍しい"],
-  "antonyms": ["ありふれた", "一般的"],
+  "synonyms": [
+    "希少",
+    "珍しい"
+  ],
+  "antonyms": [
+    "ありふれた",
+    "一般的"
+  ],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1780770",
+  "forms": [
+    {
+      "word": "希有",
+      "info": []
+    },
+    {
+      "word": "稀有",
+      "info": []
+    }
+  ]
 },
 
 {
@@ -3281,367 +10172,1509 @@ window.vocabN1 = [
   "common": false,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["pikiran-opini", "kualitas"],
+  "domain": [
+    "pikiran-opini",
+    "kualitas"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan", "umum"],
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
   "nuance": "Berasal dari 皮 (kulit) + 相 (penampilan) — secara harfiah 'hanya sebatas penampilan luar'. Menekankan pemahaman atau analisis yang hanya menyentuh permukaan tanpa kedalaman. Berbeda dari 浅い (asai = dangkal secara umum dan netral), 皮相 lebih formal dan lebih sering dipakai dalam kritik intelektual atau akademik. 皮相な見方 = pandangan yang dangkal.",
   "conj_type": "adj-na",
   "examples": [
-    {"jp": "その評論は<b>皮相な</b>観察にとどまり、本質に迫っていない。", "id": "Ulasan itu hanya berhenti pada pengamatan dangkal dan tidak menyentuh esensi.", "level": "n1", "tags": ["pikiran-opini", "sastra"]},
-    {"jp": "<b>皮相的な</b>理解では、この問題の複雑さを見誤る。", "id": "Dengan pemahaman yang hanya di permukaan, kita akan salah memahami kompleksitas masalah ini.", "level": "n1", "tags": ["pikiran-opini", "ilmu-pengetahuan"]}
+    {
+      "jp": "その評論は<b>皮相な</b>観察にとどまり、本質に迫っていない。",
+      "id": "Ulasan itu hanya berhenti pada pengamatan dangkal dan tidak menyentuh esensi.",
+      "level": "n1",
+      "tags": [
+        "pikiran-opini",
+        "sastra"
+      ]
+    },
+    {
+      "jp": "<b>皮相的な</b>理解では、この問題の複雑さを見誤る。",
+      "id": "Dengan pemahaman yang hanya di permukaan, kita akan salah memahami kompleksitas masalah ini.",
+      "level": "n1",
+      "tags": [
+        "pikiran-opini",
+        "ilmu-pengetahuan"
+      ]
+    }
   ],
-  "synonyms": ["表面的", "浅い"],
-  "antonyms": ["深遠", "本質的"],
+  "synonyms": [
+    "表面的",
+    "浅い"
+  ],
+  "antonyms": [
+    "深遠",
+    "本質的"
+  ],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1483890",
+  "meanings": [
+    {
+      "en": "surface; outward appearance",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "superficial; shallow",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
   // ── NOUNS (63) ────────────────────────────────────────
 
 {
-  "id": "vg-n1-00021", "word": "論理", "reading": "ろんり", "romaji": "ronri",
-  "meaning_id": "logika, penalaran", "meaning_en": "logic, reasoning",
-  "jlpt": "n1", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 4, "domain": ["ilmu-pengetahuan", "bahasa-komunikasi"], "register": "formal",
-  "lawan_bicara": ["umum"], "nuance": "Menekankan struktur berpikir yang sistematis dan teratur. 論理的 (logis) dipakai untuk memuji argumen yang terstruktur — berbeda dari 考え yang lebih umum dan personal.",
+  "id": "vg-n1-00021",
+  "word": "論理",
+  "reading": "ろんり",
+  "romaji": "ronri",
+  "meaning_id": "logika, penalaran",
+  "meaning_en": "logic, reasoning",
+  "jlpt": "n1",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": [
+    "ilmu-pengetahuan",
+    "bahasa-komunikasi"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Menekankan struktur berpikir yang sistematis dan teratur. 論理的 (logis) dipakai untuk memuji argumen yang terstruktur — berbeda dari 考え yang lebih umum dan personal.",
   "conj_type": null,
   "examples": [
-    {"jp": "彼女の論理は明快で説得力がある。", "id": "Logika dia jelas dan meyakinkan.", "level": "n1", "tags": ["bahasa-komunikasi"]},
-    {"jp": "感情ではなく、論理に基づいて判断すべきだ。", "id": "Kita harus mengambil keputusan berdasarkan logika, bukan emosi.", "level": "n1", "tags": ["pikiran-opini"]},
-    {"jp": "その主張には論理的な矛盾がある。", "id": "Argumen itu mengandung inkonsistensi logis.", "level": "n1", "tags": ["ilmu-pengetahuan"]}
+    {
+      "jp": "彼女の論理は明快で説得力がある。",
+      "id": "Logika dia jelas dan meyakinkan.",
+      "level": "n1",
+      "tags": [
+        "bahasa-komunikasi"
+      ]
+    },
+    {
+      "jp": "感情ではなく、論理に基づいて判断すべきだ。",
+      "id": "Kita harus mengambil keputusan berdasarkan logika, bukan emosi.",
+      "level": "n1",
+      "tags": [
+        "pikiran-opini"
+      ]
+    },
+    {
+      "jp": "その主張には論理的な矛盾がある。",
+      "id": "Argumen itu mengandung inkonsistensi logis.",
+      "level": "n1",
+      "tags": [
+        "ilmu-pengetahuan"
+      ]
+    }
   ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15",
+  "jmdict_seq": "1561850",
+  "frequency": 2500
 },
 
 {
-  "id": "vg-n1-00022", "word": "倫理", "reading": "りんり", "romaji": "rinri",
-  "meaning_id": "etika, moral", "meaning_en": "ethics, morality",
-  "jlpt": "n1", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 4, "domain": ["ilmu-pengetahuan", "politik-masyarakat"], "register": "formal",
-  "lawan_bicara": ["umum"], "nuance": "Mengacu pada prinsip-prinsip moral yang mengatur perilaku, terutama dalam konteks profesional atau akademis. Lebih formal dari 道徳 yang dipakai dalam konteks moral sehari-hari.",
+  "id": "vg-n1-00022",
+  "word": "倫理",
+  "reading": "りんり",
+  "romaji": "rinri",
+  "meaning_id": "etika, moral",
+  "meaning_en": "ethics, morality",
+  "jlpt": "n1",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": [
+    "ilmu-pengetahuan",
+    "politik-masyarakat"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Mengacu pada prinsip-prinsip moral yang mengatur perilaku, terutama dalam konteks profesional atau akademis. Lebih formal dari 道徳 yang dipakai dalam konteks moral sehari-hari.",
   "conj_type": null,
   "examples": [
-    {"jp": "医療倫理の問題は非常に複雑だ。", "id": "Masalah etika medis sangatlah kompleks.", "level": "n1", "tags": ["kesehatan", "ilmu-pengetahuan"]},
-    {"jp": "研究者には高い倫理観が求められる。", "id": "Para peneliti dituntut memiliki kesadaran etika yang tinggi.", "level": "n1", "tags": ["ilmu-pengetahuan"]},
-    {"jp": "この行為は職業倫理に反する。", "id": "Tindakan ini bertentangan dengan etika profesi.", "level": "n1", "tags": ["bisnis"]}
+    {
+      "jp": "医療倫理の問題は非常に複雑だ。",
+      "id": "Masalah etika medis sangatlah kompleks.",
+      "level": "n1",
+      "tags": [
+        "kesehatan",
+        "ilmu-pengetahuan"
+      ]
+    },
+    {
+      "jp": "研究者には高い倫理観が求められる。",
+      "id": "Para peneliti dituntut memiliki kesadaran etika yang tinggi.",
+      "level": "n1",
+      "tags": [
+        "ilmu-pengetahuan"
+      ]
+    },
+    {
+      "jp": "この行為は職業倫理に反する。",
+      "id": "Tindakan ini bertentangan dengan etika profesi.",
+      "level": "n1",
+      "tags": [
+        "bisnis"
+      ]
+    }
   ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15",
+  "jmdict_seq": "1555390",
+  "frequency": 1500
 },
 
 {
-  "id": "vg-n1-00023", "word": "哲学", "reading": "てつがく", "romaji": "tetsugaku",
-  "meaning_id": "filsafat, filosofi", "meaning_en": "philosophy",
-  "jlpt": "n1", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 4, "domain": ["ilmu-pengetahuan", "sastra"], "register": "formal",
-  "lawan_bicara": ["umum"], "nuance": "Bisa berarti disiplin akademis filsafat, atau pandangan hidup seseorang (人生哲学 = filsafat hidup). Dalam percakapan sehari-hari sering dipakai kiasan untuk menggambarkan prinsip atau keyakinan pribadi.",
+  "id": "vg-n1-00023",
+  "word": "哲学",
+  "reading": "てつがく",
+  "romaji": "tetsugaku",
+  "meaning_id": "filsafat, filosofi",
+  "meaning_en": "philosophy",
+  "jlpt": "n1",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": [
+    "ilmu-pengetahuan",
+    "sastra"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Bisa berarti disiplin akademis filsafat, atau pandangan hidup seseorang (人生哲学 = filsafat hidup). Dalam percakapan sehari-hari sering dipakai kiasan untuk menggambarkan prinsip atau keyakinan pribadi.",
   "conj_type": null,
   "examples": [
-    {"jp": "彼はカントの哲学を専門に研究している。", "id": "Dia meneliti filsafat Kant secara mendalam.", "level": "n1", "tags": ["ilmu-pengetahuan"]},
-    {"jp": "私の人生哲学は誠実に生きることだ。", "id": "Filsafat hidupku adalah hidup dengan jujur.", "level": "n1", "tags": ["karakter"]},
-    {"jp": "哲学は人間の存在意義を問う学問だ。", "id": "Filsafat adalah ilmu yang mempertanyakan makna keberadaan manusia.", "level": "n1", "tags": ["ilmu-pengetahuan"]}
+    {
+      "jp": "彼はカントの哲学を専門に研究している。",
+      "id": "Dia meneliti filsafat Kant secara mendalam.",
+      "level": "n1",
+      "tags": [
+        "ilmu-pengetahuan"
+      ]
+    },
+    {
+      "jp": "私の人生哲学は誠実に生きることだ。",
+      "id": "Filsafat hidupku adalah hidup dengan jujur.",
+      "level": "n1",
+      "tags": [
+        "karakter"
+      ]
+    },
+    {
+      "jp": "哲学は人間の存在意義を問う学問だ。",
+      "id": "Filsafat adalah ilmu yang mempertanyakan makna keberadaan manusia.",
+      "level": "n1",
+      "tags": [
+        "ilmu-pengetahuan"
+      ]
+    }
   ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15",
+  "jmdict_seq": "1437610",
+  "frequency": 2500
 },
 
 {
-  "id": "vg-n1-00024", "word": "思想", "reading": "しそう", "romaji": "shisō",
-  "meaning_id": "pemikiran, ideologi, alam pikiran", "meaning_en": "thought, ideology, ideas",
-  "jlpt": "n1", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 4, "domain": ["ilmu-pengetahuan", "politik-masyarakat"], "register": "formal",
-  "lawan_bicara": ["umum"], "nuance": "Mencakup sistem ide atau ideologi yang besar dan kohesif, bukan sekadar satu pikiran. Sering muncul dalam konteks politik, sosial, atau filosofis. Berbeda dari 考え yang lebih sederhana dan personal.",
+  "id": "vg-n1-00024",
+  "word": "思想",
+  "reading": "しそう",
+  "romaji": "shisō",
+  "meaning_id": "pemikiran, ideologi, alam pikiran",
+  "meaning_en": "thought, ideology, ideas",
+  "jlpt": "n1",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": [
+    "ilmu-pengetahuan",
+    "politik-masyarakat"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Mencakup sistem ide atau ideologi yang besar dan kohesif, bukan sekadar satu pikiran. Sering muncul dalam konteks politik, sosial, atau filosofis. Berbeda dari 考え yang lebih sederhana dan personal.",
   "conj_type": null,
   "examples": [
-    {"jp": "彼の思想は後世に大きな影響を与えた。", "id": "Pemikirannya memberi pengaruh besar pada generasi selanjutnya.", "level": "n1", "tags": ["ilmu-pengetahuan"]},
-    {"jp": "民主主義の思想は近代社会の基盤となっている。", "id": "Pemikiran demokrasi menjadi landasan masyarakat modern.", "level": "n1", "tags": ["politik-masyarakat"]},
-    {"jp": "危険な思想の広がりを防ぐ必要がある。", "id": "Perlu mencegah penyebaran ideologi berbahaya.", "level": "n1", "tags": ["politik-masyarakat"]}
+    {
+      "jp": "彼の思想は後世に大きな影響を与えた。",
+      "id": "Pemikirannya memberi pengaruh besar pada generasi selanjutnya.",
+      "level": "n1",
+      "tags": [
+        "ilmu-pengetahuan"
+      ]
+    },
+    {
+      "jp": "民主主義の思想は近代社会の基盤となっている。",
+      "id": "Pemikiran demokrasi menjadi landasan masyarakat modern.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "危険な思想の広がりを防ぐ必要がある。",
+      "id": "Perlu mencegah penyebaran ideologi berbahaya.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    }
   ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15",
+  "jmdict_seq": "1309560",
+  "frequency": 1500
 },
 
 {
-  "id": "vg-n1-00025", "word": "理念", "reading": "りねん", "romaji": "rinen",
-  "meaning_id": "prinsip dasar, ideal yang mendasari, cita-cita konseptual", "meaning_en": "founding principle, guiding ideal",
-  "jlpt": "n1", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 5, "domain": ["bisnis", "politik-masyarakat", "ilmu-pengetahuan"], "register": "formal",
-  "lawan_bicara": ["umum"], "nuance": "Prinsip atau ideal yang menjadi dasar suatu organisasi, kebijakan, atau gerakan. Lebih tinggi dan abstrak dari 方針 (arah kebijakan konkret). Sering muncul dalam dokumen resmi perusahaan dan pemerintahan.",
+  "id": "vg-n1-00025",
+  "word": "理念",
+  "reading": "りねん",
+  "romaji": "rinen",
+  "meaning_id": "prinsip dasar, ideal yang mendasari, cita-cita konseptual",
+  "meaning_en": "founding principle, guiding ideal",
+  "jlpt": "n1",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 5,
+  "domain": [
+    "bisnis",
+    "politik-masyarakat",
+    "ilmu-pengetahuan"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Prinsip atau ideal yang menjadi dasar suatu organisasi, kebijakan, atau gerakan. Lebih tinggi dan abstrak dari 方針 (arah kebijakan konkret). Sering muncul dalam dokumen resmi perusahaan dan pemerintahan.",
   "conj_type": null,
   "examples": [
-    {"jp": "会社の経営理念は人を大切にすることだ。", "id": "Prinsip manajemen perusahaan adalah menghargai setiap orang.", "level": "n1", "tags": ["bisnis"]},
-    {"jp": "憲法の理念に基づいて政策を立案する。", "id": "Menyusun kebijakan berdasarkan prinsip konstitusi.", "level": "n1", "tags": ["politik-masyarakat"]},
-    {"jp": "その組織の設立理念を改めて確認した。", "id": "Kami kembali menegaskan prinsip pendirian organisasi tersebut.", "level": "n1", "tags": ["bisnis"]}
+    {
+      "jp": "会社の経営理念は人を大切にすることだ。",
+      "id": "Prinsip manajemen perusahaan adalah menghargai setiap orang.",
+      "level": "n1",
+      "tags": [
+        "bisnis"
+      ]
+    },
+    {
+      "jp": "憲法の理念に基づいて政策を立案する。",
+      "id": "Menyusun kebijakan berdasarkan prinsip konstitusi.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "その組織の設立理念を改めて確認した。",
+      "id": "Kami kembali menegaskan prinsip pendirian organisasi tersebut.",
+      "level": "n1",
+      "tags": [
+        "bisnis"
+      ]
+    }
   ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15",
+  "jmdict_seq": "1550060",
+  "frequency": 1500
 },
 
 {
-  "id": "vg-n1-00026", "word": "価値観", "reading": "かちかん", "romaji": "kachikan",
-  "meaning_id": "sistem nilai, pandangan tentang nilai kehidupan", "meaning_en": "sense of values, value system",
-  "jlpt": "n1", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 3, "domain": ["emosi-sosial", "pikiran-opini", "karakter"], "register": "neutral",
-  "lawan_bicara": ["teman", "rekan", "umum"], "nuance": "Mengacu pada keyakinan seseorang tentang apa yang penting dalam hidup. 価値観が合う = cocok secara nilai hidup — sangat penting dalam konteks pernikahan dan persahabatan. Sering dibahas dalam konteks perbedaan generasi atau budaya.",
+  "id": "vg-n1-00026",
+  "word": "価値観",
+  "reading": "かちかん",
+  "romaji": "kachikan",
+  "meaning_id": "sistem nilai, pandangan tentang nilai kehidupan",
+  "meaning_en": "sense of values, value system",
+  "jlpt": "n1",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "emosi-sosial",
+    "pikiran-opini",
+    "karakter"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Mengacu pada keyakinan seseorang tentang apa yang penting dalam hidup. 価値観が合う = cocok secara nilai hidup — sangat penting dalam konteks pernikahan dan persahabatan. Sering dibahas dalam konteks perbedaan generasi atau budaya.",
   "conj_type": null,
   "examples": [
-    {"jp": "彼と私では価値観が大きく異なる。", "id": "Sistem nilai aku dan dia sangat berbeda.", "level": "n1", "tags": ["hubungan-konsep"]},
-    {"jp": "現代の若者の価値観は以前と変化している。", "id": "Sistem nilai anak muda zaman sekarang sudah berubah dari sebelumnya.", "level": "n1", "tags": ["politik-masyarakat"]},
-    {"jp": "多様な価値観を尊重することが大切だ。", "id": "Penting untuk menghormati beragam sistem nilai.", "level": "n1", "tags": ["emosi-sosial"]}
+    {
+      "jp": "彼と私では価値観が大きく異なる。",
+      "id": "Sistem nilai aku dan dia sangat berbeda.",
+      "level": "n1",
+      "tags": [
+        "hubungan-konsep"
+      ]
+    },
+    {
+      "jp": "現代の若者の価値観は以前と変化している。",
+      "id": "Sistem nilai anak muda zaman sekarang sudah berubah dari sebelumnya.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "多様な価値観を尊重することが大切だ。",
+      "id": "Penting untuk menghormati beragam sistem nilai.",
+      "level": "n1",
+      "tags": [
+        "emosi-sosial"
+      ]
+    }
   ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15",
+  "jmdict_seq": "1189610",
+  "frequency": 3000
 },
 
 {
-  "id": "vg-n1-00027", "word": "世界観", "reading": "せかいかん", "romaji": "sekaikan",
-  "meaning_id": "pandangan dunia, cara memandang dan memahami dunia", "meaning_en": "worldview, view of the world",
-  "jlpt": "n1", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 4, "domain": ["ilmu-pengetahuan", "pikiran-opini", "seni-budaya"], "register": "formal",
-  "lawan_bicara": ["umum"], "nuance": "Berbeda dari 価値観 yang fokus pada 'apa yang berharga', 世界観 lebih tentang 'bagaimana dunia ini dipahami secara menyeluruh'. Juga dipakai dalam konteks seni dan fiksi untuk menggambarkan 'alam semesta' dalam sebuah karya.",
+  "id": "vg-n1-00027",
+  "word": "世界観",
+  "reading": "せかいかん",
+  "romaji": "sekaikan",
+  "meaning_id": "pandangan dunia, cara memandang dan memahami dunia",
+  "meaning_en": "worldview, view of the world",
+  "jlpt": "n1",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": [
+    "ilmu-pengetahuan",
+    "pikiran-opini",
+    "seni-budaya"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Berbeda dari 価値観 yang fokus pada 'apa yang berharga', 世界観 lebih tentang 'bagaimana dunia ini dipahami secara menyeluruh'. Juga dipakai dalam konteks seni dan fiksi untuk menggambarkan 'alam semesta' dalam sebuah karya.",
   "conj_type": null,
   "examples": [
-    {"jp": "旅行することで世界観が大きく広がった。", "id": "Pandangan duniaku meluas berkat bepergian.", "level": "n1", "tags": ["perjalanan"]},
-    {"jp": "この作家の作品は独特の世界観を持っている。", "id": "Karya penulis ini memiliki pandangan dunia yang unik.", "level": "n1", "tags": ["seni-budaya"]},
-    {"jp": "異文化体験は人の世界観を根本から変える。", "id": "Pengalaman lintas budaya mengubah pandangan dunia seseorang dari akarnya.", "level": "n1", "tags": ["budaya"]}
+    {
+      "jp": "旅行することで世界観が大きく広がった。",
+      "id": "Pandangan duniaku meluas berkat bepergian.",
+      "level": "n1",
+      "tags": [
+        "perjalanan"
+      ]
+    },
+    {
+      "jp": "この作家の作品は独特の世界観を持っている。",
+      "id": "Karya penulis ini memiliki pandangan dunia yang unik.",
+      "level": "n1",
+      "tags": [
+        "seni-budaya"
+      ]
+    },
+    {
+      "jp": "異文化体験は人の世界観を根本から変える。",
+      "id": "Pengalaman lintas budaya mengubah pandangan dunia seseorang dari akarnya.",
+      "level": "n1",
+      "tags": [
+        "budaya"
+      ]
+    }
   ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15",
+  "jmdict_seq": "1645810",
+  "frequency": 12000,
+  "meanings": [
+    {
+      "en": "worldview; outlook on the world; Weltanschauung",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "setting (for a fictional work); world; universe",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
-  "id": "vg-n1-00028", "word": "本質", "reading": "ほんしつ", "romaji": "honshitsu",
-  "meaning_id": "hakikat, esensi, sifat yang paling mendasar", "meaning_en": "essence, true nature, core",
-  "jlpt": "n1", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 4, "domain": ["ilmu-pengetahuan", "pikiran-opini"], "register": "formal",
-  "lawan_bicara": ["umum"], "nuance": "Merujuk pada inti atau sifat paling mendasar dari sesuatu yang tidak berubah meski tampilannya berbeda. Berlawanan dengan 表面 (permukaan) atau 形式 (bentuk luar). Sering dipakai dalam frasa 問題の本質は… (inti permasalahannya adalah…).",
+  "id": "vg-n1-00028",
+  "word": "本質",
+  "reading": "ほんしつ",
+  "romaji": "honshitsu",
+  "meaning_id": "hakikat, esensi, sifat yang paling mendasar",
+  "meaning_en": "essence, true nature, core",
+  "jlpt": "n1",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": [
+    "ilmu-pengetahuan",
+    "pikiran-opini"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Merujuk pada inti atau sifat paling mendasar dari sesuatu yang tidak berubah meski tampilannya berbeda. Berlawanan dengan 表面 (permukaan) atau 形式 (bentuk luar). Sering dipakai dalam frasa 問題の本質は… (inti permasalahannya adalah…).",
   "conj_type": null,
   "examples": [
-    {"jp": "問題の本質を理解しなければ解決できない。", "id": "Kita tidak bisa menyelesaikan masalah tanpa memahami hakikatnya.", "level": "n1", "tags": ["pikiran-opini"]},
-    {"jp": "彼は人間の本質について深く考え続けた。", "id": "Dia terus berpikir mendalam tentang hakikat manusia.", "level": "n1", "tags": ["ilmu-pengetahuan"]},
-    {"jp": "その議論は本質からずれていると思う。", "id": "Menurut saya, argumen itu meleset dari inti permasalahan.", "level": "n1", "tags": ["bahasa-komunikasi"]}
+    {
+      "jp": "問題の本質を理解しなければ解決できない。",
+      "id": "Kita tidak bisa menyelesaikan masalah tanpa memahami hakikatnya.",
+      "level": "n1",
+      "tags": [
+        "pikiran-opini"
+      ]
+    },
+    {
+      "jp": "彼は人間の本質について深く考え続けた。",
+      "id": "Dia terus berpikir mendalam tentang hakikat manusia.",
+      "level": "n1",
+      "tags": [
+        "ilmu-pengetahuan"
+      ]
+    },
+    {
+      "jp": "その議論は本質からずれていると思う。",
+      "id": "Menurut saya, argumen itu meleset dari inti permasalahan.",
+      "level": "n1",
+      "tags": [
+        "bahasa-komunikasi"
+      ]
+    }
   ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15",
+  "jmdict_seq": "1522620",
+  "frequency": 3000
 },
 
 {
-  "id": "vg-n1-00033", "word": "抽象", "reading": "ちゅうしょう", "romaji": "chūshō",
-  "meaning_id": "abstrak, hal yang tidak konkret atau tidak berwujud", "meaning_en": "abstraction, abstract",
-  "jlpt": "n1", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 4, "domain": ["ilmu-pengetahuan", "bahasa-komunikasi", "seni-budaya"], "register": "formal",
-  "lawan_bicara": ["umum"], "nuance": "Biasanya dipakai sebagai 抽象的な (na-adj = bersifat abstrak). Berlawanan dengan 具体 (konkret). Penting dalam diskusi akademis, seni, dan filsafat. 抽象的すぎる = terlalu abstrak untuk dipahami.",
+  "id": "vg-n1-00033",
+  "word": "抽象",
+  "reading": "ちゅうしょう",
+  "romaji": "chūshō",
+  "meaning_id": "abstrak, hal yang tidak konkret atau tidak berwujud",
+  "meaning_en": "abstraction, abstract",
+  "jlpt": "n1",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": [
+    "ilmu-pengetahuan",
+    "bahasa-komunikasi",
+    "seni-budaya"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Biasanya dipakai sebagai 抽象的な (na-adj = bersifat abstrak). Berlawanan dengan 具体 (konkret). Penting dalam diskusi akademis, seni, dan filsafat. 抽象的すぎる = terlalu abstrak untuk dipahami.",
   "conj_type": null,
   "examples": [
-    {"jp": "彼の説明は抽象的すぎて理解しにくい。", "id": "Penjelasannya terlalu abstrak sehingga sulit dipahami.", "level": "n1", "tags": ["bahasa-komunikasi"]},
-    {"jp": "抽象的な概念を具体的な例で説明してください。", "id": "Tolong jelaskan konsep abstrak itu dengan contoh yang konkret.", "level": "n1", "tags": ["pendidikan"]},
-    {"jp": "この画家は抽象絵画の分野で知られている。", "id": "Pelukis ini dikenal di bidang lukisan abstrak.", "level": "n1", "tags": ["seni-budaya"]}
+    {
+      "jp": "彼の説明は抽象的すぎて理解しにくい。",
+      "id": "Penjelasannya terlalu abstrak sehingga sulit dipahami.",
+      "level": "n1",
+      "tags": [
+        "bahasa-komunikasi"
+      ]
+    },
+    {
+      "jp": "抽象的な概念を具体的な例で説明してください。",
+      "id": "Tolong jelaskan konsep abstrak itu dengan contoh yang konkret.",
+      "level": "n1",
+      "tags": [
+        "pendidikan"
+      ]
+    },
+    {
+      "jp": "この画家は抽象絵画の分野で知られている。",
+      "id": "Pelukis ini dikenal di bidang lukisan abstrak.",
+      "level": "n1",
+      "tags": [
+        "seni-budaya"
+      ]
+    }
   ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15",
+  "jmdict_seq": "1426190",
+  "frequency": 7500
 },
 
 {
-  "id": "vg-n1-00034", "word": "具体", "reading": "ぐたい", "romaji": "gutai",
-  "meaning_id": "konkret, spesifik, nyata", "meaning_en": "concrete, specific, tangible",
-  "jlpt": "n1", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 3, "domain": ["bahasa-komunikasi", "ilmu-pengetahuan"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Biasanya dipakai dalam bentuk 具体的な (na-adj). 具体的に言うと = secara konkretnya / lebih tepatnya. Sangat sering dipakai dalam presentasi dan diskusi bisnis atau akademis. Berlawanan dengan 抽象.",
+  "id": "vg-n1-00034",
+  "word": "具体",
+  "reading": "ぐたい",
+  "romaji": "gutai",
+  "meaning_id": "konkret, spesifik, nyata",
+  "meaning_en": "concrete, specific, tangible",
+  "jlpt": "n1",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "bahasa-komunikasi",
+    "ilmu-pengetahuan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Biasanya dipakai dalam bentuk 具体的な (na-adj). 具体的に言うと = secara konkretnya / lebih tepatnya. Sangat sering dipakai dalam presentasi dan diskusi bisnis atau akademis. Berlawanan dengan 抽象.",
   "conj_type": null,
   "examples": [
-    {"jp": "もっと具体的な計画を示してください。", "id": "Tolong tunjukkan rencana yang lebih konkret.", "level": "n1", "tags": ["bisnis"]},
-    {"jp": "具体的な数字を挙げて説明した。", "id": "Dia menjelaskan dengan menyebutkan angka-angka konkret.", "level": "n1", "tags": ["bisnis"]},
-    {"jp": "理想論ではなく、具体的な解決策が必要だ。", "id": "Yang dibutuhkan bukan teori yang ideal, melainkan solusi yang konkret.", "level": "n1", "tags": ["pikiran-opini"]}
+    {
+      "jp": "もっと具体的な計画を示してください。",
+      "id": "Tolong tunjukkan rencana yang lebih konkret.",
+      "level": "n1",
+      "tags": [
+        "bisnis"
+      ]
+    },
+    {
+      "jp": "具体的な数字を挙げて説明した。",
+      "id": "Dia menjelaskan dengan menyebutkan angka-angka konkret.",
+      "level": "n1",
+      "tags": [
+        "bisnis"
+      ]
+    },
+    {
+      "jp": "理想論ではなく、具体的な解決策が必要だ。",
+      "id": "Yang dibutuhkan bukan teori yang ideal, melainkan solusi yang konkret.",
+      "level": "n1",
+      "tags": [
+        "pikiran-opini"
+      ]
+    }
   ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15",
+  "jmdict_seq": "1245020",
+  "frequency": 1500
 },
 
 {
-  "id": "vg-n1-00035", "word": "客観", "reading": "きゃっかん", "romaji": "kyakkan",
-  "meaning_id": "objektivitas, sudut pandang objektif", "meaning_en": "objectivity, objective standpoint",
-  "jlpt": "n1", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 4, "domain": ["ilmu-pengetahuan", "pikiran-opini"], "register": "formal",
-  "lawan_bicara": ["umum"], "nuance": "Biasanya dipakai sebagai 客観的 (na-adj). 客観的に見ると = dilihat secara objektif. Berlawanan dengan 主観 (subjektivitas). Sangat penting dalam penulisan akademis, jurnalistik, dan laporan ilmiah.",
+  "id": "vg-n1-00035",
+  "word": "客観",
+  "reading": "きゃっかん",
+  "romaji": "kyakkan",
+  "meaning_id": "objektivitas, sudut pandang objektif",
+  "meaning_en": "objectivity, objective standpoint",
+  "jlpt": "n1",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": [
+    "ilmu-pengetahuan",
+    "pikiran-opini"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Biasanya dipakai sebagai 客観的 (na-adj). 客観的に見ると = dilihat secara objektif. Berlawanan dengan 主観 (subjektivitas). Sangat penting dalam penulisan akademis, jurnalistik, dan laporan ilmiah.",
   "conj_type": null,
   "examples": [
-    {"jp": "客観的な視点から問題を分析することが重要だ。", "id": "Penting untuk menganalisis masalah dari sudut pandang yang objektif.", "level": "n1", "tags": ["ilmu-pengetahuan"]},
-    {"jp": "自分の行動を客観的に見つめ直した。", "id": "Dia merenungkan tindakannya sendiri secara objektif.", "level": "n1", "tags": ["karakter"]},
-    {"jp": "客観的なデータに基づいた議論をすべきだ。", "id": "Perdebatan seharusnya didasarkan pada data yang objektif.", "level": "n1", "tags": ["bisnis"]}
+    {
+      "jp": "客観的な視点から問題を分析することが重要だ。",
+      "id": "Penting untuk menganalisis masalah dari sudut pandang yang objektif.",
+      "level": "n1",
+      "tags": [
+        "ilmu-pengetahuan"
+      ]
+    },
+    {
+      "jp": "自分の行動を客観的に見つめ直した。",
+      "id": "Dia merenungkan tindakannya sendiri secara objektif.",
+      "level": "n1",
+      "tags": [
+        "karakter"
+      ]
+    },
+    {
+      "jp": "客観的なデータに基づいた議論をすべきだ。",
+      "id": "Perdebatan seharusnya didasarkan pada data yang objektif.",
+      "level": "n1",
+      "tags": [
+        "bisnis"
+      ]
+    }
   ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15",
+  "jmdict_seq": "1226690",
+  "frequency": 5500
 },
 
 {
-  "id": "vg-n1-00036", "word": "主観", "reading": "しゅかん", "romaji": "shukan",
-  "meaning_id": "subjektivitas, sudut pandang subjektif", "meaning_en": "subjectivity, subjective view",
-  "jlpt": "n1", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 4, "domain": ["ilmu-pengetahuan", "pikiran-opini"], "register": "formal",
-  "lawan_bicara": ["umum"], "nuance": "Biasanya dipakai sebagai 主観的 (na-adj). 主観的な意見 = pendapat yang subjektif. Berlawanan dengan 客観. Dalam sains, 主観を排除する = menghilangkan subjektivitas adalah prinsip penting.",
+  "id": "vg-n1-00036",
+  "word": "主観",
+  "reading": "しゅかん",
+  "romaji": "shukan",
+  "meaning_id": "subjektivitas, sudut pandang subjektif",
+  "meaning_en": "subjectivity, subjective view",
+  "jlpt": "n1",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": [
+    "ilmu-pengetahuan",
+    "pikiran-opini"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Biasanya dipakai sebagai 主観的 (na-adj). 主観的な意見 = pendapat yang subjektif. Berlawanan dengan 客観. Dalam sains, 主観を排除する = menghilangkan subjektivitas adalah prinsip penting.",
   "conj_type": null,
   "examples": [
-    {"jp": "それは主観的な意見に過ぎない。", "id": "Itu hanyalah pendapat yang subjektif.", "level": "n1", "tags": ["pikiran-opini"]},
-    {"jp": "芸術の評価には主観が入るのは当然だ。", "id": "Wajar jika penilaian karya seni mengandung unsur subjektivitas.", "level": "n1", "tags": ["seni-budaya"]},
-    {"jp": "主観と客観のバランスを保つことは難しい。", "id": "Menjaga keseimbangan antara subjektivitas dan objektivitas tidaklah mudah.", "level": "n1", "tags": ["ilmu-pengetahuan"]}
+    {
+      "jp": "それは主観的な意見に過ぎない。",
+      "id": "Itu hanyalah pendapat yang subjektif.",
+      "level": "n1",
+      "tags": [
+        "pikiran-opini"
+      ]
+    },
+    {
+      "jp": "芸術の評価には主観が入るのは当然だ。",
+      "id": "Wajar jika penilaian karya seni mengandung unsur subjektivitas.",
+      "level": "n1",
+      "tags": [
+        "seni-budaya"
+      ]
+    },
+    {
+      "jp": "主観と客観のバランスを保つことは難しい。",
+      "id": "Menjaga keseimbangan antara subjektivitas dan objektivitas tidaklah mudah.",
+      "level": "n1",
+      "tags": [
+        "ilmu-pengetahuan"
+      ]
+    }
   ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15",
+  "jmdict_seq": "1325180",
+  "frequency": 14000,
+  "meanings": [
+    {
+      "en": "subjectivity; subject (philosophical); ego",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "one's personal opinion; one's own idea",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
-  "id": "vg-n1-00037", "word": "普遍", "reading": "ふへん", "romaji": "fuhen",
-  "meaning_id": "universalitas, yang berlaku untuk semua tanpa terkecuali", "meaning_en": "universality, universal",
-  "jlpt": "n1", "pos": "noun", "common": false, "related_grammar": [],
-  "formalitas": 4, "domain": ["ilmu-pengetahuan", "pikiran-opini"], "register": "formal",
-  "lawan_bicara": ["umum"], "nuance": "Biasanya dipakai sebagai 普遍的な (na-adj). 普遍的な真理 = kebenaran yang universal. Berlawanan dengan 特殊 (partikular/khusus). Dipakai dalam filsafat, etika, dan diskusi tentang hak asasi manusia atau nilai lintas budaya.",
+  "id": "vg-n1-00037",
+  "word": "普遍",
+  "reading": "ふへん",
+  "romaji": "fuhen",
+  "meaning_id": "universalitas, yang berlaku untuk semua tanpa terkecuali",
+  "meaning_en": "universality, universal",
+  "jlpt": "n1",
+  "pos": "noun",
+  "common": false,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": [
+    "ilmu-pengetahuan",
+    "pikiran-opini"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Biasanya dipakai sebagai 普遍的な (na-adj). 普遍的な真理 = kebenaran yang universal. Berlawanan dengan 特殊 (partikular/khusus). Dipakai dalam filsafat, etika, dan diskusi tentang hak asasi manusia atau nilai lintas budaya.",
   "conj_type": null,
   "examples": [
-    {"jp": "人権は普遍的な価値として国際的に認められている。", "id": "Hak asasi manusia diakui secara internasional sebagai nilai yang universal.", "level": "n1", "tags": ["politik-masyarakat"]},
-    {"jp": "この音楽は言語を超えた普遍的な感動を与える。", "id": "Musik ini memberikan keharuan yang universal melampaui batasan bahasa.", "level": "n1", "tags": ["seni-budaya"]},
-    {"jp": "普遍的な道徳基準が存在するかどうかは哲学的な問いだ。", "id": "Apakah standar moral yang universal itu ada adalah sebuah pertanyaan filosofis.", "level": "n1", "tags": ["ilmu-pengetahuan"]}
+    {
+      "jp": "人権は普遍的な価値として国際的に認められている。",
+      "id": "Hak asasi manusia diakui secara internasional sebagai nilai yang universal.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "この音楽は言語を超えた普遍的な感動を与える。",
+      "id": "Musik ini memberikan keharuan yang universal melampaui batasan bahasa.",
+      "level": "n1",
+      "tags": [
+        "seni-budaya"
+      ]
+    },
+    {
+      "jp": "普遍的な道徳基準が存在するかどうかは哲学的な問いだ。",
+      "id": "Apakah standar moral yang universal itu ada adalah sebuah pertanyaan filosofis.",
+      "level": "n1",
+      "tags": [
+        "ilmu-pengetahuan"
+      ]
+    }
   ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15",
+  "jmdict_seq": "1602820",
+  "frequency": 7000,
+  "forms": [
+    {
+      "word": "普遍",
+      "info": []
+    },
+    {
+      "word": "普偏",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "普辺",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ]
 },
 
 {
-  "id": "vg-n1-00039", "word": "絶対", "reading": "ぜったい", "romaji": "zettai",
-  "meaning_id": "absolut, mutlak, tanpa pengecualian", "meaning_en": "absolute, unconditional",
-  "jlpt": "n1", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 3, "domain": ["ilmu-pengetahuan", "pikiran-opini"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Bisa dipakai sebagai noun (konsep keabsolutan), 絶対的な (na-adj = mutlak), atau adverbia 絶対に (pasti/sama sekali tidak). Sebagai konsep filosofis, berlawanan dengan 相対 (relatif). Sehari-hari, 絶対に行く = pasti pergi (ekspresi ketegasan).",
+  "id": "vg-n1-00039",
+  "word": "絶対",
+  "reading": "ぜったい",
+  "romaji": "zettai",
+  "meaning_id": "absolut, mutlak, tanpa pengecualian",
+  "meaning_en": "absolute, unconditional",
+  "jlpt": "n1",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "ilmu-pengetahuan",
+    "pikiran-opini"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Bisa dipakai sebagai noun (konsep keabsolutan), 絶対的な (na-adj = mutlak), atau adverbia 絶対に (pasti/sama sekali tidak). Sebagai konsep filosofis, berlawanan dengan 相対 (relatif). Sehari-hari, 絶対に行く = pasti pergi (ekspresi ketegasan).",
   "conj_type": null,
   "examples": [
-    {"jp": "絶対的な正解など存在しない。", "id": "Jawaban yang mutlak benar itu tidak ada.", "level": "n1", "tags": ["ilmu-pengetahuan"]},
-    {"jp": "科学では絶対と相対の概念を区別することが重要だ。", "id": "Dalam ilmu pengetahuan, penting untuk membedakan konsep absolut dan relatif.", "level": "n1", "tags": ["ilmu-pengetahuan"]},
-    {"jp": "彼女は絶対的な自信を持って議論に臨んだ。", "id": "Dia menghadapi perdebatan itu dengan keyakinan yang mutlak.", "level": "n1", "tags": ["karakter"]}
+    {
+      "jp": "絶対的な正解など存在しない。",
+      "id": "Jawaban yang mutlak benar itu tidak ada.",
+      "level": "n1",
+      "tags": [
+        "ilmu-pengetahuan"
+      ]
+    },
+    {
+      "jp": "科学では絶対と相対の概念を区別することが重要だ。",
+      "id": "Dalam ilmu pengetahuan, penting untuk membedakan konsep absolut dan relatif.",
+      "level": "n1",
+      "tags": [
+        "ilmu-pengetahuan"
+      ]
+    },
+    {
+      "jp": "彼女は絶対的な自信を持って議論に臨んだ。",
+      "id": "Dia menghadapi perdebatan itu dengan keyakinan yang mutlak.",
+      "level": "n1",
+      "tags": [
+        "karakter"
+      ]
+    }
   ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15",
+  "jmdict_seq": "1386840",
+  "frequency": 2000,
+  "meanings": [
+    {
+      "en": "absolutely; definitely; unconditionally",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "absolute; unconditional; unmistakable",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "absoluteness",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
-  "id": "vg-n1-00040", "word": "相対", "reading": "そうたい", "romaji": "sōtai",
-  "meaning_id": "relativitas, bersifat relatif, tidak mutlak", "meaning_en": "relativity, relative, relational",
-  "jlpt": "n1", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 4, "domain": ["ilmu-pengetahuan", "pikiran-opini"], "register": "formal",
-  "lawan_bicara": ["umum"], "nuance": "Dipakai sebagai noun atau dalam bentuk 相対的な (na-adj). 相対的に見ると = dilihat secara relatif. Berlawanan dengan 絶対. Dipakai dalam fisika (相対性理論 = teori relativitas Einstein) maupun filsafat dan kajian sosial.",
+  "id": "vg-n1-00040",
+  "word": "相対",
+  "reading": "そうたい",
+  "romaji": "sōtai",
+  "meaning_id": "relativitas, bersifat relatif, tidak mutlak",
+  "meaning_en": "relativity, relative, relational",
+  "jlpt": "n1",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": [
+    "ilmu-pengetahuan",
+    "pikiran-opini"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Dipakai sebagai noun atau dalam bentuk 相対的な (na-adj). 相対的に見ると = dilihat secara relatif. Berlawanan dengan 絶対. Dipakai dalam fisika (相対性理論 = teori relativitas Einstein) maupun filsafat dan kajian sosial.",
   "conj_type": null,
   "examples": [
-    {"jp": "善悪の判断は多くの場合において相対的だ。", "id": "Penilaian tentang baik buruk dalam banyak hal bersifat relatif.", "level": "n1", "tags": ["ilmu-pengetahuan"]},
-    {"jp": "アインシュタインは相対性理論を提唱した。", "id": "Einstein mengemukakan teori relativitas.", "level": "n1", "tags": ["ilmu-pengetahuan"]},
-    {"jp": "価値は相対的であり、文化によって異なる。", "id": "Nilai bersifat relatif dan berbeda-beda tergantung budaya.", "level": "n1", "tags": ["budaya"]}
+    {
+      "jp": "善悪の判断は多くの場合において相対的だ。",
+      "id": "Penilaian tentang baik buruk dalam banyak hal bersifat relatif.",
+      "level": "n1",
+      "tags": [
+        "ilmu-pengetahuan"
+      ]
+    },
+    {
+      "jp": "アインシュタインは相対性理論を提唱した。",
+      "id": "Einstein mengemukakan teori relativitas.",
+      "level": "n1",
+      "tags": [
+        "ilmu-pengetahuan"
+      ]
+    },
+    {
+      "jp": "価値は相対的であり、文化によって異なる。",
+      "id": "Nilai bersifat relatif dan berbeda-beda tergantung budaya.",
+      "level": "n1",
+      "tags": [
+        "budaya"
+      ]
+    }
   ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15",
+  "jmdict_seq": "1401110",
+  "frequency": 1000,
+  "forms": [
+    {
+      "word": "相対",
+      "info": []
+    },
+    {
+      "word": "双対",
+      "info": []
+    }
+  ],
+  "meanings": [
+    {
+      "en": "relativity",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "relative",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "facing (e.g. a problem); confronting",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
-  "id": "vg-n1-00041", "word": "影響力", "reading": "えいきょうりょく", "romaji": "eikyōryoku",
-  "meaning_id": "daya pengaruh, kekuatan mempengaruhi", "meaning_en": "influence, power of influence",
-  "jlpt": "n1", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 3, "domain": ["bisnis", "politik-masyarakat", "media"], "register": "neutral",
-  "lawan_bicara": ["rekan", "umum"], "nuance": "Berbeda dari 影響 (pengaruh/dampak yang sudah terjadi), 影響力 menekankan kapasitas atau kekuatan untuk mempengaruhi. Sering dipakai dalam konteks bisnis, politik, dan media sosial (SNSの影響力 = daya pengaruh media sosial).",
+  "id": "vg-n1-00041",
+  "word": "影響力",
+  "reading": "えいきょうりょく",
+  "romaji": "eikyōryoku",
+  "meaning_id": "daya pengaruh, kekuatan mempengaruhi",
+  "meaning_en": "influence, power of influence",
+  "jlpt": "n1",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "bisnis",
+    "politik-masyarakat",
+    "media"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Berbeda dari 影響 (pengaruh/dampak yang sudah terjadi), 影響力 menekankan kapasitas atau kekuatan untuk mempengaruhi. Sering dipakai dalam konteks bisnis, politik, dan media sosial (SNSの影響力 = daya pengaruh media sosial).",
   "conj_type": null,
   "examples": [
-    {"jp": "彼はその業界で大きな影響力を持っている。", "id": "Dia memiliki pengaruh besar di industri tersebut.", "level": "n1", "tags": ["bisnis"]},
-    {"jp": "SNSを通じた影響力が急速に拡大している。", "id": "Daya pengaruh melalui media sosial berkembang sangat pesat.", "level": "n1", "tags": ["media", "teknologi"]},
-    {"jp": "彼女の影響力を活用して新製品を宣伝した。", "id": "Mereka memanfaatkan daya pengaruhnya untuk mempromosikan produk baru.", "level": "n1", "tags": ["bisnis"]}
+    {
+      "jp": "彼はその業界で大きな影響力を持っている。",
+      "id": "Dia memiliki pengaruh besar di industri tersebut.",
+      "level": "n1",
+      "tags": [
+        "bisnis"
+      ]
+    },
+    {
+      "jp": "SNSを通じた影響力が急速に拡大している。",
+      "id": "Daya pengaruh melalui media sosial berkembang sangat pesat.",
+      "level": "n1",
+      "tags": [
+        "media",
+        "teknologi"
+      ]
+    },
+    {
+      "jp": "彼女の影響力を活用して新製品を宣伝した。",
+      "id": "Mereka memanfaatkan daya pengaruhnya untuk mempromosikan produk baru.",
+      "level": "n1",
+      "tags": [
+        "bisnis"
+      ]
+    }
   ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15",
+  "jmdict_seq": "1173680",
+  "frequency": 1000
 },
 
 {
-  "id": "vg-n1-00042", "word": "権威", "reading": "けんい", "romaji": "ken'i",
-  "meaning_id": "otoritas, wewenang yang diakui, figur yang dihormati", "meaning_en": "authority, prestige, authoritative figure",
-  "jlpt": "n1", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 4, "domain": ["politik-masyarakat", "ilmu-pengetahuan", "bisnis"], "register": "formal",
-  "lawan_bicara": ["umum"], "nuance": "Bisa berarti (1) kekuasaan atau otoritas yang diakui secara sosial, atau (2) seseorang yang diakui sebagai ahli tertinggi (権威ある学者 = ilmuwan otoritatif). Berbeda dari 権力 yang lebih tentang kekuasaan fisik atau politik.",
+  "id": "vg-n1-00042",
+  "word": "権威",
+  "reading": "けんい",
+  "romaji": "ken'i",
+  "meaning_id": "otoritas, wewenang yang diakui, figur yang dihormati",
+  "meaning_en": "authority, prestige, authoritative figure",
+  "jlpt": "n1",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": [
+    "politik-masyarakat",
+    "ilmu-pengetahuan",
+    "bisnis"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Bisa berarti (1) kekuasaan atau otoritas yang diakui secara sosial, atau (2) seseorang yang diakui sebagai ahli tertinggi (権威ある学者 = ilmuwan otoritatif). Berbeda dari 権力 yang lebih tentang kekuasaan fisik atau politik.",
   "conj_type": null,
   "examples": [
-    {"jp": "彼はこの分野における世界的な権威だ。", "id": "Dia adalah otoritas yang diakui secara global di bidang ini.", "level": "n1", "tags": ["ilmu-pengetahuan"]},
-    {"jp": "権威ある機関によって認定された資格だ。", "id": "Ini adalah kualifikasi yang disertifikasi oleh lembaga yang berwenang.", "level": "n1", "tags": ["pendidikan"]},
-    {"jp": "権威への盲目的な服従は危険をはらむ。", "id": "Kepatuhan buta terhadap otoritas menyimpan bahaya.", "level": "n1", "tags": ["politik-masyarakat"]}
+    {
+      "jp": "彼はこの分野における世界的な権威だ。",
+      "id": "Dia adalah otoritas yang diakui secara global di bidang ini.",
+      "level": "n1",
+      "tags": [
+        "ilmu-pengetahuan"
+      ]
+    },
+    {
+      "jp": "権威ある機関によって認定された資格だ。",
+      "id": "Ini adalah kualifikasi yang disertifikasi oleh lembaga yang berwenang.",
+      "level": "n1",
+      "tags": [
+        "pendidikan"
+      ]
+    },
+    {
+      "jp": "権威への盲目的な服従は危険をはらむ。",
+      "id": "Kepatuhan buta terhadap otoritas menyimpan bahaya.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    }
   ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15",
+  "jmdict_seq": "1258090",
+  "frequency": 3000,
+  "meanings": [
+    {
+      "en": "authority; power; influence; prestige",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "(an) authority (on); expert",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
-  "id": "vg-n1-00043", "word": "秩序", "reading": "ちつじょ", "romaji": "chitsujo",
-  "meaning_id": "ketertiban, tatanan, keteraturan", "meaning_en": "order, discipline, social order",
-  "jlpt": "n1", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 4, "domain": ["politik-masyarakat", "hukum-aturan"], "register": "formal",
-  "lawan_bicara": ["umum"], "nuance": "Mengacu pada tatanan yang teratur dalam masyarakat atau suatu sistem. Berlawanan dengan 混乱 (kekacauan). 秩序を保つ = menjaga ketertiban; 秩序が乱れる = ketertiban terganggu. Sering muncul dalam konteks hukum, militer, dan pemerintahan.",
+  "id": "vg-n1-00043",
+  "word": "秩序",
+  "reading": "ちつじょ",
+  "romaji": "chitsujo",
+  "meaning_id": "ketertiban, tatanan, keteraturan",
+  "meaning_en": "order, discipline, social order",
+  "jlpt": "n1",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": [
+    "politik-masyarakat",
+    "hukum-aturan"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Mengacu pada tatanan yang teratur dalam masyarakat atau suatu sistem. Berlawanan dengan 混乱 (kekacauan). 秩序を保つ = menjaga ketertiban; 秩序が乱れる = ketertiban terganggu. Sering muncul dalam konteks hukum, militer, dan pemerintahan.",
   "conj_type": null,
   "examples": [
-    {"jp": "社会の秩序を維持することが法律の目的の一つだ。", "id": "Memelihara ketertiban masyarakat adalah salah satu tujuan dari hukum.", "level": "n1", "tags": ["hukum-aturan"]},
-    {"jp": "長期にわたる戦争によって国家の秩序が崩壊した。", "id": "Perang yang berlangsung lama menghancurkan tatanan negara.", "level": "n1", "tags": ["politik-masyarakat"]},
-    {"jp": "教室の秩序を保つことは教師の重要な役割だ。", "id": "Menjaga ketertiban kelas adalah peran penting seorang guru.", "level": "n1", "tags": ["pendidikan"]}
+    {
+      "jp": "社会の秩序を維持することが法律の目的の一つだ。",
+      "id": "Memelihara ketertiban masyarakat adalah salah satu tujuan dari hukum.",
+      "level": "n1",
+      "tags": [
+        "hukum-aturan"
+      ]
+    },
+    {
+      "jp": "長期にわたる戦争によって国家の秩序が崩壊した。",
+      "id": "Perang yang berlangsung lama menghancurkan tatanan negara.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "教室の秩序を保つことは教師の重要な役割だ。",
+      "id": "Menjaga ketertiban kelas adalah peran penting seorang guru.",
+      "level": "n1",
+      "tags": [
+        "pendidikan"
+      ]
+    }
   ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15",
+  "jmdict_seq": "1422520",
+  "frequency": 1500
 },
 
 {
-  "id": "vg-n1-00047", "word": "格差", "reading": "かくさ", "romaji": "kakusa",
-  "meaning_id": "kesenjangan, ketimpangan, perbedaan yang besar antar kelompok", "meaning_en": "gap, disparity, inequality",
-  "jlpt": "n1", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 3, "domain": ["politik-masyarakat", "ekonomi-keuangan"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Mengacu pada perbedaan besar antara dua kelompok, terutama dalam hal ekonomi atau peluang. 経済格差 = kesenjangan ekonomi; 教育格差 = kesenjangan pendidikan. Berbeda dari 差別 yang mengandung unsur diskriminasi aktif.",
+  "id": "vg-n1-00047",
+  "word": "格差",
+  "reading": "かくさ",
+  "romaji": "kakusa",
+  "meaning_id": "kesenjangan, ketimpangan, perbedaan yang besar antar kelompok",
+  "meaning_en": "gap, disparity, inequality",
+  "jlpt": "n1",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "politik-masyarakat",
+    "ekonomi-keuangan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Mengacu pada perbedaan besar antara dua kelompok, terutama dalam hal ekonomi atau peluang. 経済格差 = kesenjangan ekonomi; 教育格差 = kesenjangan pendidikan. Berbeda dari 差別 yang mengandung unsur diskriminasi aktif.",
   "conj_type": null,
   "examples": [
-    {"jp": "経済格差の拡大が深刻な社会問題となっている。", "id": "Pelebaran kesenjangan ekonomi menjadi masalah sosial yang serius.", "level": "n1", "tags": ["ekonomi-keuangan"]},
-    {"jp": "都市と地方の格差を縮める政策が求められている。", "id": "Kebijakan untuk mempersempit kesenjangan antara kota dan daerah sangat diperlukan.", "level": "n1", "tags": ["politik-masyarakat"]},
-    {"jp": "教育格差が将来の収入格差に直結している。", "id": "Kesenjangan pendidikan berkaitan langsung dengan kesenjangan pendapatan di masa depan.", "level": "n1", "tags": ["pendidikan"]}
+    {
+      "jp": "経済格差の拡大が深刻な社会問題となっている。",
+      "id": "Pelebaran kesenjangan ekonomi menjadi masalah sosial yang serius.",
+      "level": "n1",
+      "tags": [
+        "ekonomi-keuangan"
+      ]
+    },
+    {
+      "jp": "都市と地方の格差を縮める政策が求められている。",
+      "id": "Kebijakan untuk mempersempit kesenjangan antara kota dan daerah sangat diperlukan.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "教育格差が将来の収入格差に直結している。",
+      "id": "Kesenjangan pendidikan berkaitan langsung dengan kesenjangan pendapatan di masa depan.",
+      "level": "n1",
+      "tags": [
+        "pendidikan"
+      ]
+    }
   ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15",
+  "jmdict_seq": "1205340",
+  "frequency": 1500
 },
 
 {
-  "id": "vg-n1-00048", "word": "不平等", "reading": "ふびょうどう", "romaji": "fubyōdō",
-  "meaning_id": "ketidaksetaraan, ketidakadilan struktural", "meaning_en": "inequality, inequity, unfairness",
-  "jlpt": "n1", "pos": "noun", "common": true, "related_grammar": [],
-  "formalitas": 3, "domain": ["politik-masyarakat", "hukum-aturan"], "register": "neutral",
-  "lawan_bicara": ["umum"], "nuance": "Menekankan ketiadaan kesetaraan yang seharusnya ada. Berbeda dari 格差 yang hanya menggambarkan perbedaan; 不平等 mengandung nuansa bahwa kondisi itu tidak adil atau tidak semestinya. 不平等な扱い = perlakuan yang tidak setara.",
+  "id": "vg-n1-00048",
+  "word": "不平等",
+  "reading": "ふびょうどう",
+  "romaji": "fubyōdō",
+  "meaning_id": "ketidaksetaraan, ketidakadilan struktural",
+  "meaning_en": "inequality, inequity, unfairness",
+  "jlpt": "n1",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "politik-masyarakat",
+    "hukum-aturan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Menekankan ketiadaan kesetaraan yang seharusnya ada. Berbeda dari 格差 yang hanya menggambarkan perbedaan; 不平等 mengandung nuansa bahwa kondisi itu tidak adil atau tidak semestinya. 不平等な扱い = perlakuan yang tidak setara.",
   "conj_type": null,
   "examples": [
-    {"jp": "性別による不平等は現代でも依然として存在する。", "id": "Ketidaksetaraan berdasarkan jenis kelamin masih ada bahkan di zaman modern.", "level": "n1", "tags": ["politik-masyarakat"]},
-    {"jp": "すべての人が平等に扱われるべきであり、不平等は許されない。", "id": "Semua orang harus diperlakukan setara; ketidaksetaraan tidak bisa diterima.", "level": "n1", "tags": ["hukum-aturan"]},
-    {"jp": "不平等な条件のもとで競争しても公正な結果は得られない。", "id": "Tidak akan ada hasil yang adil jika bersaing dalam kondisi yang tidak setara.", "level": "n1", "tags": ["hukum-aturan"]}
+    {
+      "jp": "性別による不平等は現代でも依然として存在する。",
+      "id": "Ketidaksetaraan berdasarkan jenis kelamin masih ada bahkan di zaman modern.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "すべての人が平等に扱われるべきであり、不平等は許されない。",
+      "id": "Semua orang harus diperlakukan setara; ketidaksetaraan tidak bisa diterima.",
+      "level": "n1",
+      "tags": [
+        "hukum-aturan"
+      ]
+    },
+    {
+      "jp": "不平等な条件のもとで競争しても公正な結果は得られない。",
+      "id": "Tidak akan ada hasil yang adil jika bersaing dalam kondisi yang tidak setara.",
+      "level": "n1",
+      "tags": [
+        "hukum-aturan"
+      ]
+    }
   ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15",
+  "jmdict_seq": "1494800",
+  "frequency": 8000
 },
 
 {
-  "id": "vg-n1-00049", "word": "弊害", "reading": "へいがい", "romaji": "heigai",
-  "meaning_id": "efek negatif, kerugian sistemik, dampak buruk yang tidak langsung", "meaning_en": "harmful effect, negative consequence, ill effect",
-  "jlpt": "n1", "pos": "noun", "common": false, "related_grammar": [],
-  "formalitas": 4, "domain": ["politik-masyarakat", "kesehatan", "bisnis"], "register": "formal",
-  "lawan_bicara": ["umum"], "nuance": "Mengacu pada efek buruk yang ditimbulkan oleh suatu sistem, kebijakan, atau kebiasaan — biasanya tidak langsung terlihat. Berbeda dari 害 (bahaya umum), 弊害 menyiratkan kerugian yang muncul dari sesuatu yang awalnya dianggap wajar atau bahkan baik.",
+  "id": "vg-n1-00049",
+  "word": "弊害",
+  "reading": "へいがい",
+  "romaji": "heigai",
+  "meaning_id": "efek negatif, kerugian sistemik, dampak buruk yang tidak langsung",
+  "meaning_en": "harmful effect, negative consequence, ill effect",
+  "jlpt": "n1",
+  "pos": "noun",
+  "common": false,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": [
+    "politik-masyarakat",
+    "kesehatan",
+    "bisnis"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Mengacu pada efek buruk yang ditimbulkan oleh suatu sistem, kebijakan, atau kebiasaan — biasanya tidak langsung terlihat. Berbeda dari 害 (bahaya umum), 弊害 menyiratkan kerugian yang muncul dari sesuatu yang awalnya dianggap wajar atau bahkan baik.",
   "conj_type": null,
   "examples": [
-    {"jp": "過度な競争にはさまざまな弊害が生じる。", "id": "Persaingan yang berlebihan menimbulkan berbagai dampak buruk.", "level": "n1", "tags": ["bisnis"]},
-    {"jp": "長時間労働の弊害は身体的にも精神的にも深刻だ。", "id": "Efek negatif dari jam kerja yang panjang sangat serius, baik secara fisik maupun mental.", "level": "n1", "tags": ["kesehatan", "pekerjaan"]},
-    {"jp": "この制度の弊害を認識し、早急に改革する必要がある。", "id": "Kita perlu menyadari dampak negatif sistem ini dan segera melakukan reformasi.", "level": "n1", "tags": ["politik-masyarakat"]}
+    {
+      "jp": "過度な競争にはさまざまな弊害が生じる。",
+      "id": "Persaingan yang berlebihan menimbulkan berbagai dampak buruk.",
+      "level": "n1",
+      "tags": [
+        "bisnis"
+      ]
+    },
+    {
+      "jp": "長時間労働の弊害は身体的にも精神的にも深刻だ。",
+      "id": "Efek negatif dari jam kerja yang panjang sangat serius, baik secara fisik maupun mental.",
+      "level": "n1",
+      "tags": [
+        "kesehatan",
+        "pekerjaan"
+      ]
+    },
+    {
+      "jp": "この制度の弊害を認識し、早急に改革する必要がある。",
+      "id": "Kita perlu menyadari dampak negatif sistem ini dan segera melakukan reformasi.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    }
   ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15",
+  "jmdict_seq": "1508270",
+  "frequency": 4000,
+  "forms": [
+    {
+      "word": "弊害",
+      "info": []
+    },
+    {
+      "word": "幣害",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ]
 },
 
 {
-  "id": "vg-n1-00057", "word": "懸隔", "reading": "けんかく", "romaji": "kenkaku",
-  "meaning_id": "jarak yang sangat jauh, kesenjangan yang sangat besar (sastrawi/formal tinggi)", "meaning_en": "vast gap, great distance (literary)",
-  "jlpt": "n1", "pos": "noun", "common": false, "related_grammar": [],
-  "formalitas": 5, "domain": ["sastra", "ilmu-pengetahuan"], "register": "written",
-  "lawan_bicara": ["umum"], "nuance": "Kata sastrawi dan arkaik yang menggambarkan jarak atau kesenjangan yang sangat besar, baik secara fisik maupun konseptual. Sangat jarang dalam percakapan sehari-hari; muncul terutama dalam tulisan akademis atau sastra serius. Pelajar N1 perlu mengenali kata ini saat membaca teks formal.",
+  "id": "vg-n1-00057",
+  "word": "懸隔",
+  "reading": "けんかく",
+  "romaji": "kenkaku",
+  "meaning_id": "jarak yang sangat jauh, kesenjangan yang sangat besar (sastrawi/formal tinggi)",
+  "meaning_en": "vast gap, great distance (literary)",
+  "jlpt": "n1",
+  "pos": "noun",
+  "common": false,
+  "related_grammar": [],
+  "formalitas": 5,
+  "domain": [
+    "sastra",
+    "ilmu-pengetahuan"
+  ],
+  "register": "written",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Kata sastrawi dan arkaik yang menggambarkan jarak atau kesenjangan yang sangat besar, baik secara fisik maupun konseptual. Sangat jarang dalam percakapan sehari-hari; muncul terutama dalam tulisan akademis atau sastra serius. Pelajar N1 perlu mengenali kata ini saat membaca teks formal.",
   "conj_type": null,
   "examples": [
-    {"jp": "理想と現実の間には大きな懸隔がある。", "id": "Ada kesenjangan yang sangat besar antara ideal dan kenyataan.", "level": "n1", "tags": ["pikiran-opini"]},
-    {"jp": "先進国と途上国との間の懸隔は容易には縮まらない。", "id": "Kesenjangan antara negara maju dan berkembang tidak mudah untuk dipersempit.", "level": "n1", "tags": ["politik-masyarakat"]},
-    {"jp": "彼の実力と一流選手との間には依然として懸隔がある。", "id": "Masih ada jurang yang cukup besar antara kemampuannya dan para pemain kelas satu.", "level": "n1", "tags": ["olahraga"]}
+    {
+      "jp": "理想と現実の間には大きな懸隔がある。",
+      "id": "Ada kesenjangan yang sangat besar antara ideal dan kenyataan.",
+      "level": "n1",
+      "tags": [
+        "pikiran-opini"
+      ]
+    },
+    {
+      "jp": "先進国と途上国との間の懸隔は容易には縮まらない。",
+      "id": "Kesenjangan antara negara maju dan berkembang tidak mudah untuk dipersempit.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "彼の実力と一流選手との間には依然として懸隔がある。",
+      "id": "Masih ada jurang yang cukup besar antara kemampuannya dan para pemain kelas satu.",
+      "level": "n1",
+      "tags": [
+        "olahraga"
+      ]
+    }
   ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15",
+  "jmdict_seq": "1257680"
 },
 
 {
-  "id": "vg-n1-00058", "word": "齟齬", "reading": "そご", "romaji": "sogo",
-  "meaning_id": "ketidakcocokan, miskomunikasi, ketidaksinkronan", "meaning_en": "discrepancy, mismatch, miscommunication",
-  "jlpt": "n1", "pos": "noun", "common": false, "related_grammar": [],
-  "formalitas": 4, "domain": ["bahasa-komunikasi", "bisnis"], "register": "formal",
-  "lawan_bicara": ["rekan", "umum"], "nuance": "Menggambarkan kondisi saat dua hal atau dua pihak tidak cocok atau tidak sejalan, seperti roda gigi yang tidak pas. 齟齬が生じる = terjadi ketidaksinkronan atau miskomunikasi. Sering dipakai dalam bisnis untuk menggambarkan perbedaan pemahaman yang berujung masalah.",
+  "id": "vg-n1-00058",
+  "word": "齟齬",
+  "reading": "そご",
+  "romaji": "sogo",
+  "meaning_id": "ketidakcocokan, miskomunikasi, ketidaksinkronan",
+  "meaning_en": "discrepancy, mismatch, miscommunication",
+  "jlpt": "n1",
+  "pos": "noun",
+  "common": false,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": [
+    "bahasa-komunikasi",
+    "bisnis"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Menggambarkan kondisi saat dua hal atau dua pihak tidak cocok atau tidak sejalan, seperti roda gigi yang tidak pas. 齟齬が生じる = terjadi ketidaksinkronan atau miskomunikasi. Sering dipakai dalam bisnis untuk menggambarkan perbedaan pemahaman yang berujung masalah.",
   "conj_type": null,
   "examples": [
-    {"jp": "両者の認識に齟齬が生じ、交渉が難航した。", "id": "Terjadi ketidakcocokan dalam pemahaman kedua pihak sehingga negosiasi menjadi sulit.", "level": "n1", "tags": ["bisnis"]},
-    {"jp": "契約内容に齟齬があったため、後にトラブルが発生した。", "id": "Karena ada ketidakcocokan dalam isi kontrak, masalah timbul kemudian.", "level": "n1", "tags": ["hukum-aturan", "bisnis"]},
-    {"jp": "チーム内での齟齬をなくすため、定期的な確認会議を設けた。", "id": "Untuk menghilangkan miskomunikasi dalam tim, diadakan rapat konfirmasi secara rutin.", "level": "n1", "tags": ["bisnis"]}
+    {
+      "jp": "両者の認識に齟齬が生じ、交渉が難航した。",
+      "id": "Terjadi ketidakcocokan dalam pemahaman kedua pihak sehingga negosiasi menjadi sulit.",
+      "level": "n1",
+      "tags": [
+        "bisnis"
+      ]
+    },
+    {
+      "jp": "契約内容に齟齬があったため、後にトラブルが発生した。",
+      "id": "Karena ada ketidakcocokan dalam isi kontrak, masalah timbul kemudian.",
+      "level": "n1",
+      "tags": [
+        "hukum-aturan",
+        "bisnis"
+      ]
+    },
+    {
+      "jp": "チーム内での齟齬をなくすため、定期的な確認会議を設けた。",
+      "id": "Untuk menghilangkan miskomunikasi dalam tim, diadakan rapat konfirmasi secara rutin.",
+      "level": "n1",
+      "tags": [
+        "bisnis"
+      ]
+    }
   ],
-  "synonyms": [], "antonyms": [], "see_also": [], "provenance": "jlpt-corpus", "added_v": "v15"
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "provenance": "jlpt-corpus",
+  "added_v": "v15",
+  "jmdict_seq": "1575540",
+  "forms": [
+    {
+      "word": "齟齬",
+      "info": []
+    },
+    {
+      "word": "鉏鋙",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    }
+  ]
 },
 
 {
@@ -3656,20 +11689,47 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["pikiran-opini", "ilmu-pengetahuan", "sastra"],
+  "domain": [
+    "pikiran-opini",
+    "ilmu-pengetahuan",
+    "sastra"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 核心 (inti dari suatu masalah atau argumen), 本質 bersifat ontologis — menyangkut apa yang membuat sesuatu menjadi sesuatu. 本質を見抜く = melihat menembus apa yang sebenarnya ada. Digunakan dalam diskusi filosofis, analisis mendalam, atau kritik yang menerobos penampilan luar.",
   "conj_type": null,
   "examples": [
-    {"jp": "問題の<b>本質</b>を理解しなければ、解決策は見つからない。", "id": "Tanpa memahami esensi dari masalah tersebut, solusi tidak akan ditemukan.", "level": "n1", "tags": ["pikiran-opini"]},
-    {"jp": "芸術の<b>本質</b>は技術ではなく、表現にある。", "id": "Esensi seni bukan terletak pada teknik, melainkan pada ekspresi.", "level": "n1", "tags": ["seni-budaya"]}
+    {
+      "jp": "問題の<b>本質</b>を理解しなければ、解決策は見つからない。",
+      "id": "Tanpa memahami esensi dari masalah tersebut, solusi tidak akan ditemukan.",
+      "level": "n1",
+      "tags": [
+        "pikiran-opini"
+      ]
+    },
+    {
+      "jp": "芸術の<b>本質</b>は技術ではなく、表現にある。",
+      "id": "Esensi seni bukan terletak pada teknik, melainkan pada ekspresi.",
+      "level": "n1",
+      "tags": [
+        "seni-budaya"
+      ]
+    }
   ],
   "synonyms": [],
-  "antonyms": ["vg-n1-00107"],
-  "see_also": ["vg-n1-00105", "vg-n1-00106"],
+  "antonyms": [
+    "vg-n1-00107"
+  ],
+  "see_also": [
+    "vg-n1-00105",
+    "vg-n1-00106"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1522620",
+  "frequency": 3000
 },
 
 {
@@ -3684,20 +11744,45 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["pikiran-opini", "bahasa-komunikasi"],
+  "domain": [
+    "pikiran-opini",
+    "bahasa-komunikasi"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum", "rekan"],
+  "lawan_bicara": [
+    "umum",
+    "rekan"
+  ],
   "nuance": "Berbeda dari 本質 (sifat esensial dari sesuatu secara ontologis), 核心 merujuk pada titik kritis dalam suatu argumen, persoalan, atau situasi — titik yang jika disentuh, semuanya menjadi jelas. 核心に触れる = menyentuh inti permasalahan. Lebih pragmatis dan situasional dari 本質.",
   "conj_type": null,
   "examples": [
-    {"jp": "彼の質問は問題の<b>核心</b>を突いていた。", "id": "Pertanyaannya langsung menyentuh inti dari permasalahan.", "level": "n1", "tags": ["bahasa-komunikasi"]},
-    {"jp": "交渉の<b>核心</b>は価格ではなく、信頼関係だ。", "id": "Inti dari negosiasi bukan soal harga, melainkan hubungan kepercayaan.", "level": "n1", "tags": ["bisnis"]}
+    {
+      "jp": "彼の質問は問題の<b>核心</b>を突いていた。",
+      "id": "Pertanyaannya langsung menyentuh inti dari permasalahan.",
+      "level": "n1",
+      "tags": [
+        "bahasa-komunikasi"
+      ]
+    },
+    {
+      "jp": "交渉の<b>核心</b>は価格ではなく、信頼関係だ。",
+      "id": "Inti dari negosiasi bukan soal harga, melainkan hubungan kepercayaan.",
+      "level": "n1",
+      "tags": [
+        "bisnis"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00104", "vg-n1-00106"],
+  "see_also": [
+    "vg-n1-00104",
+    "vg-n1-00106"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1205590",
+  "frequency": 5500
 },
 
 {
@@ -3712,20 +11797,56 @@ window.vocabN1 = [
   "common": false,
   "related_grammar": [],
   "formalitas": 5,
-  "domain": ["pikiran-opini", "sebab-akibat"],
+  "domain": [
+    "pikiran-opini",
+    "sebab-akibat"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Secara harfiah berarti 'akar dan batang' — menggambarkan fondasi yang jika diguncang, seluruh bangunan runtuh. Lebih absolut dari 基盤 (landasan/foundation). 根幹を揺るがす = mengguncang fondasi paling dasarnya. Digunakan dalam konteks prinsip, sistem, atau nilai yang paling fundamental.",
   "conj_type": null,
   "examples": [
-    {"jp": "その不正行為は組織の<b>根幹</b>を揺るがすものだった。", "id": "Tindakan curang itu mengguncang fondasi paling mendasar dari organisasi tersebut.", "level": "n1", "tags": ["hukum-aturan"]},
-    {"jp": "民主主義の<b>根幹</b>は言論の自由にある。", "id": "Fondasi paling mendasar dari demokrasi terletak pada kebebasan berbicara.", "level": "n1", "tags": ["politik-masyarakat"]}
+    {
+      "jp": "その不正行為は組織の<b>根幹</b>を揺るがすものだった。",
+      "id": "Tindakan curang itu mengguncang fondasi paling mendasar dari organisasi tersebut.",
+      "level": "n1",
+      "tags": [
+        "hukum-aturan"
+      ]
+    },
+    {
+      "jp": "民主主義の<b>根幹</b>は言論の自由にある。",
+      "id": "Fondasi paling mendasar dari demokrasi terletak pada kebebasan berbicara.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00104", "vg-n1-00105"],
+  "see_also": [
+    "vg-n1-00104",
+    "vg-n1-00105"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1290100",
+  "frequency": 5000,
+  "meanings": [
+    {
+      "en": "foundation; root; basis; core; fundamentals",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "root and trunk",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
@@ -3740,20 +11861,43 @@ window.vocabN1 = [
   "common": false,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["pikiran-opini", "ilmu-pengetahuan"],
+  "domain": [
+    "pikiran-opini",
+    "ilmu-pengetahuan"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 表面 (permukaan fisik dari objek konkret), 表層 lebih abstrak — digunakan untuk menggambarkan lapisan terluar dari fenomena sosial, teks, atau konsep. 表層的な理解 = pemahaman yang hanya menyentuh permukaan. Antonim konseptualnya adalah 本質 atau 深層 (lapisan dalam).",
   "conj_type": null,
   "examples": [
-    {"jp": "<b>表層</b>だけを見ても問題の本当の原因はわからない。", "id": "Hanya melihat permukaannya saja tidak akan mengungkap penyebab sebenarnya dari masalah.", "level": "n1", "tags": ["pikiran-opini"]},
-    {"jp": "文化の<b>表層</b>に惑わされず、深層を理解する努力が必要だ。", "id": "Perlu upaya untuk tidak tersesat pada lapisan luar budaya, melainkan memahami lapisan yang lebih dalam.", "level": "n1", "tags": ["budaya"]}
+    {
+      "jp": "<b>表層</b>だけを見ても問題の本当の原因はわからない。",
+      "id": "Hanya melihat permukaannya saja tidak akan mengungkap penyebab sebenarnya dari masalah.",
+      "level": "n1",
+      "tags": [
+        "pikiran-opini"
+      ]
+    },
+    {
+      "jp": "文化の<b>表層</b>に惑わされず、深層を理解する努力が必要だ。",
+      "id": "Perlu upaya untuk tidak tersesat pada lapisan luar budaya, melainkan memahami lapisan yang lebih dalam.",
+      "level": "n1",
+      "tags": [
+        "budaya"
+      ]
+    }
   ],
   "synonyms": [],
-  "antonyms": ["vg-n1-00104"],
+  "antonyms": [
+    "vg-n1-00104"
+  ],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1489710",
+  "frequency": 12500
 },
 
 {
@@ -3768,20 +11912,56 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["pikiran-opini", "sebab-akibat", "hubungan-konsep"],
+  "domain": [
+    "pikiran-opini",
+    "sebab-akibat",
+    "hubungan-konsep"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 当然 (naturally expected, of course — berdasarkan norma sosial atau logika umum), 必然 menyiratkan kausalitas yang kuat — sesuatu tidak hanya diperkirakan, tetapi secara logis HARUS terjadi. 必然性 = sifat keniscayaan. 必然的に = secara niscaya. Sering digunakan dalam diskusi filosofis atau analisis sejarah.",
   "conj_type": null,
   "examples": [
-    {"jp": "努力した者が成功するのは<b>必然</b>だとは言えない。", "id": "Tidak bisa dikatakan bahwa mereka yang berusaha keras pasti akan berhasil.", "level": "n1", "tags": ["pikiran-opini"]},
-    {"jp": "二国間の衝突は歴史的<b>必然</b>だったと論じる学者もいる。", "id": "Ada sejarawan yang berpendapat bahwa konflik antara dua negara itu adalah keniscayaan historis.", "level": "n1", "tags": ["ilmu-pengetahuan"]}
+    {
+      "jp": "努力した者が成功するのは<b>必然</b>だとは言えない。",
+      "id": "Tidak bisa dikatakan bahwa mereka yang berusaha keras pasti akan berhasil.",
+      "level": "n1",
+      "tags": [
+        "pikiran-opini"
+      ]
+    },
+    {
+      "jp": "二国間の衝突は歴史的<b>必然</b>だったと論じる学者もいる。",
+      "id": "Ada sejarawan yang berpendapat bahwa konflik antara dua negara itu adalah keniscayaan historis.",
+      "level": "n1",
+      "tags": [
+        "ilmu-pengetahuan"
+      ]
+    }
   ],
   "synonyms": [],
-  "antonyms": ["vg-n1-00109"],
+  "antonyms": [
+    "vg-n1-00109"
+  ],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1487570",
+  "frequency": 9500,
+  "meanings": [
+    {
+      "en": "inevitable; necessary; certain; sure",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "inevitability; necessity",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
@@ -3796,20 +11976,74 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["pikiran-opini", "hubungan-konsep"],
+  "domain": [
+    "pikiran-opini",
+    "hubungan-konsep"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari たまたま (secara kebetulan — percakapan kasual), 偶然 lebih formal dan dapat digunakan sebagai kata benda (偶然の一致 = sebuah kebetulan) atau adverb (偶然〜した = kebetulan melakukan). 偶然性 = sifat ketidakpastian. Digunakan dalam konteks tertulis maupun lisan formal.",
   "conj_type": null,
   "examples": [
-    {"jp": "旅先で旧友に<b>偶然</b>出会った。", "id": "Aku secara kebetulan bertemu teman lama di perjalanan.", "level": "n1", "tags": ["perjalanan"]},
-    {"jp": "科学的発見の多くは<b>偶然</b>から生まれている。", "id": "Banyak penemuan ilmiah lahir dari kebetulan.", "level": "n1", "tags": ["ilmu-pengetahuan"]}
+    {
+      "jp": "旅先で旧友に<b>偶然</b>出会った。",
+      "id": "Aku secara kebetulan bertemu teman lama di perjalanan.",
+      "level": "n1",
+      "tags": [
+        "perjalanan"
+      ]
+    },
+    {
+      "jp": "科学的発見の多くは<b>偶然</b>から生まれている。",
+      "id": "Banyak penemuan ilmiah lahir dari kebetulan.",
+      "level": "n1",
+      "tags": [
+        "ilmu-pengetahuan"
+      ]
+    }
   ],
   "synonyms": [],
-  "antonyms": ["vg-n1-00108"],
+  "antonyms": [
+    "vg-n1-00108"
+  ],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1246270",
+  "frequency": 7000,
+  "forms": [
+    {
+      "word": "偶然",
+      "info": []
+    },
+    {
+      "word": "遇然",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "coincidence; chance; accident; fortuity",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "by chance; unexpectedly; accidentally",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "contingency",
+      "misc": [],
+      "field": [
+        "philosophy"
+      ]
+    }
+  ]
 },
 
 {
@@ -3824,20 +12058,55 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["pikiran-opini", "emosi"],
+  "domain": [
+    "pikiran-opini",
+    "emosi"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 偏見 (bias dengan konotasi moral negatif — prasangka diskriminatif), 先入観 lebih netral — hanya menyebut asumsi awal yang muncul sebelum fakta dikaji. Bisa positif atau negatif. 先入観を持たずに = tanpa asumsi awal. 先入観に縛られる = terikat oleh asumsi lama.",
   "conj_type": null,
   "examples": [
-    {"jp": "<b>先入観</b>を捨てて、データを客観的に見ることが重要だ。", "id": "Penting untuk membuang asumsi awal dan melihat data secara objektif.", "level": "n1", "tags": ["ilmu-pengetahuan"]},
-    {"jp": "彼に対する<b>先入観</b>があったため、公平に判断できなかった。", "id": "Karena sudah memiliki asumsi awal terhadapnya, aku tidak bisa menilai dengan adil.", "level": "n1", "tags": ["emosi"]}
+    {
+      "jp": "<b>先入観</b>を捨てて、データを客観的に見ることが重要だ。",
+      "id": "Penting untuk membuang asumsi awal dan melihat data secara objektif.",
+      "level": "n1",
+      "tags": [
+        "ilmu-pengetahuan"
+      ]
+    },
+    {
+      "jp": "彼に対する<b>先入観</b>があったため、公平に判断できなかった。",
+      "id": "Karena sudah memiliki asumsi awal terhadapnya, aku tidak bisa menilai dengan adil.",
+      "level": "n1",
+      "tags": [
+        "emosi"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00111"],
+  "see_also": [
+    "vg-n1-00111"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1388330",
+  "frequency": 11500,
+  "forms": [
+    {
+      "word": "先入観",
+      "info": []
+    },
+    {
+      "word": "先入感",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ]
 },
 
 {
@@ -3852,20 +12121,43 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["pikiran-opini", "budaya"],
+  "domain": [
+    "pikiran-opini",
+    "budaya"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 先入観 (asumsi awal yang terbentuk cepat), 固定観念 menekankan kekakuan — ide yang sudah begitu tertancap sehingga sangat sulit diubah meski ada bukti sebaliknya. 固定観念を打ち破る = mendobrak stereotip yang mengakar. Implikasinya lebih negatif dan sistemis.",
   "conj_type": null,
   "examples": [
-    {"jp": "性別に関する<b>固定観念</b>は社会の進歩を妨げる。", "id": "Stereotip yang mengakar soal gender menghalangi kemajuan masyarakat.", "level": "n1", "tags": ["politik-masyarakat"]},
-    {"jp": "<b>固定観念</b>に縛られると、新しい発想が生まれにくい。", "id": "Jika terikat oleh pandangan yang sudah mengeras, ide-ide segar sulit untuk muncul.", "level": "n1", "tags": ["pikiran-opini"]}
+    {
+      "jp": "性別に関する<b>固定観念</b>は社会の進歩を妨げる。",
+      "id": "Stereotip yang mengakar soal gender menghalangi kemajuan masyarakat.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "<b>固定観念</b>に縛られると、新しい発想が生まれにくい。",
+      "id": "Jika terikat oleh pandangan yang sudah mengeras, ide-ide segar sulit untuk muncul.",
+      "level": "n1",
+      "tags": [
+        "pikiran-opini"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00110"],
+  "see_also": [
+    "vg-n1-00110"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1266660",
+  "frequency": 14500
 },
 
 {
@@ -3880,20 +12172,68 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["bahasa-komunikasi", "emosi"],
+  "domain": [
+    "bahasa-komunikasi",
+    "emosi"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 風刺 (ふうし — satire yang ditujukan ke masyarakat/institusi, umumnya dalam bentuk tulisan atau seni), 皮肉 lebih interpersonal — ironi atau sarkasme dalam percakapan atau situasi sehari-hari. 皮肉を言う = mengatakan sesuatu yang sarkastis. 皮肉なことに = ironisnya, secara ironis.",
   "conj_type": null,
   "examples": [
-    {"jp": "彼は笑顔で<b>皮肉</b>を言うから、冗談なのか本気なのかわからない。", "id": "Dia mengatakan sindiran dengan senyum, jadi tidak tahu apakah itu candaan atau serius.", "level": "n1", "tags": ["bahasa-komunikasi"]},
-    {"jp": "<b>皮肉</b>なことに、節約しようとして余計な出費をしてしまった。", "id": "Ironisnya, justru karena ingin berhemat, pengeluaran malah jadi lebih besar.", "level": "n1", "tags": ["emosi"]}
+    {
+      "jp": "彼は笑顔で<b>皮肉</b>を言うから、冗談なのか本気なのかわからない。",
+      "id": "Dia mengatakan sindiran dengan senyum, jadi tidak tahu apakah itu candaan atau serius.",
+      "level": "n1",
+      "tags": [
+        "bahasa-komunikasi"
+      ]
+    },
+    {
+      "jp": "<b>皮肉</b>なことに、節約しようとして余計な出費をしてしまった。",
+      "id": "Ironisnya, justru karena ingin berhemat, pengeluaran malah jadi lebih besar.",
+      "level": "n1",
+      "tags": [
+        "emosi"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1483900",
+  "frequency": 7000,
+  "meanings": [
+    {
+      "en": "irony; sarcasm; cynicism; satire",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "unexpected; different from what one expected; not as one had planned",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "(only) surface; something superficial",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "skin and bone; body",
+      "misc": [
+        "arkais"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "arkais"
+  ]
 },
 
 {
@@ -3908,20 +12248,42 @@ window.vocabN1 = [
   "common": false,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["pikiran-opini", "sastra", "ilmu-pengetahuan"],
+  "domain": [
+    "pikiran-opini",
+    "sastra",
+    "ilmu-pengetahuan"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 矛盾 (むじゅん — kontradiksi biasa, dua hal yang tidak bisa keduanya benar), 逆説 adalah kontradiksi yang justru mengungkap kebenaran lebih dalam jika dikaji lebih jauh. 逆説的に言えば = paradoksnya / secara paradoks. Digunakan dalam filsafat, sains, dan analisis sastra.",
   "conj_type": null,
   "examples": [
-    {"jp": "「自由になるには規律が必要だ」というのは<b>逆説</b>的な真理だ。", "id": "Pernyataan 'untuk menjadi bebas, diperlukan disiplin' adalah kebenaran yang paradoks.", "level": "n1", "tags": ["pikiran-opini"]},
-    {"jp": "<b>逆説</b>的に言えば、失敗を恐れない人ほど成功に近い。", "id": "Secara paradoks, orang yang tidak takut gagal justru lebih dekat dengan keberhasilan.", "level": "n1", "tags": ["pikiran-opini"]}
+    {
+      "jp": "「自由になるには規律が必要だ」というのは<b>逆説</b>的な真理だ。",
+      "id": "Pernyataan 'untuk menjadi bebas, diperlukan disiplin' adalah kebenaran yang paradoks.",
+      "level": "n1",
+      "tags": [
+        "pikiran-opini"
+      ]
+    },
+    {
+      "jp": "<b>逆説</b>的に言えば、失敗を恐れない人ほど成功に近い。",
+      "id": "Secara paradoks, orang yang tidak takut gagal justru lebih dekat dengan keberhasilan.",
+      "level": "n1",
+      "tags": [
+        "pikiran-opini"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1227140",
+  "frequency": 13500
 },
 
 {
@@ -3936,20 +12298,47 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["perubahan", "kehidupan-sehari"],
+  "domain": [
+    "perubahan",
+    "kehidupan-sehari"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Yojijukugo yang menggambarkan perjalanan yang penuh tikungan, hambatan, dan pasang surut. 紆余曲折を経て = setelah melewati berbagai rintangan dan pasang surut. Biasanya berkonotasi bahwa pada akhirnya tujuan berhasil dicapai meski perjalanannya panjang dan berliku. Berbeda dari ただ「大変」(berat/sulit), 紆余曲折 menekankan variasi dan kompleksitas prosesnya.",
   "conj_type": null,
   "examples": [
-    {"jp": "<b>紆余曲折</b>を経て、ふたりはついに結婚した。", "id": "Setelah melewati berbagai pasang surut, keduanya akhirnya menikah.", "level": "n1", "tags": ["percintaan", "kehidupan-sehari"]},
-    {"jp": "この法案は<b>紆余曲折</b>の末、ようやく可決された。", "id": "Setelah melalui perjalanan yang panjang dan berliku, RUU ini akhirnya disahkan.", "level": "n1", "tags": ["politik-masyarakat", "hukum-aturan"]}
+    {
+      "jp": "<b>紆余曲折</b>を経て、ふたりはついに結婚した。",
+      "id": "Setelah melewati berbagai pasang surut, keduanya akhirnya menikah.",
+      "level": "n1",
+      "tags": [
+        "percintaan",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "この法案は<b>紆余曲折</b>の末、ようやく可決された。",
+      "id": "Setelah melalui perjalanan yang panjang dan berliku, RUU ini akhirnya disahkan.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat",
+        "hukum-aturan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00149"],
+  "see_also": [
+    "vg-n1-00149"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1570410",
+  "misc_jm": [
+    "yojijukugo"
+  ]
 },
 
 {
@@ -3964,20 +12353,45 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["pikiran-opini", "karakter", "ilmu-pengetahuan"],
+  "domain": [
+    "pikiran-opini",
+    "karakter",
+    "ilmu-pengetahuan"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 道徳観 yang menyangkut moralitas sehari-hari, 倫理観 lebih sistematis dan akademis — dipakai dalam konteks profesional seperti 医療倫理観 (etika kedokteran) atau 職業倫理観 (etika profesi). 倫理観が問われる = etikanya dipertanyakan, sering dipakai dalam diskusi serius atau jurnalisme.",
   "conj_type": null,
   "examples": [
-    {"jp": "その発言は彼の<b>倫理観</b>を疑わせるものだった。", "id": "Pernyataan itu membuat orang meragukan nilai-nilai etikanya.", "level": "n1", "tags": ["karakter", "bahasa-komunikasi"]},
-    {"jp": "医療の現場では高い<b>倫理観</b>が求められる。", "id": "Di lingkungan medis, standar etika yang tinggi sangat diperlukan.", "level": "n1", "tags": ["kesehatan", "pekerjaan"]}
+    {
+      "jp": "その発言は彼の<b>倫理観</b>を疑わせるものだった。",
+      "id": "Pernyataan itu membuat orang meragukan nilai-nilai etikanya.",
+      "level": "n1",
+      "tags": [
+        "karakter",
+        "bahasa-komunikasi"
+      ]
+    },
+    {
+      "jp": "医療の現場では高い<b>倫理観</b>が求められる。",
+      "id": "Di lingkungan medis, standar etika yang tinggi sangat diperlukan.",
+      "level": "n1",
+      "tags": [
+        "kesehatan",
+        "pekerjaan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00182"],
+  "see_also": [
+    "vg-n1-00182"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "2534540"
 },
 
 {
@@ -4020,20 +12434,44 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["seni-budaya", "karakter", "konsep-jepang"],
+  "domain": [
+    "seni-budaya",
+    "karakter",
+    "konsep-jepang"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 審美眼 (shinbigan = mata yang tajam menilai keindahan seni), 美意識 lebih luas — mencakup selera pribadi terhadap keindahan dalam segala hal, mulai dari pakaian, ruangan, hingga gaya hidup. Konsep ini sangat khas dalam budaya Jepang, terkait dengan wabi-sabi dan konsep keindahan minimalis.",
   "conj_type": null,
   "examples": [
-    {"jp": "日本人の<b>美意識</b>は「侘び寂び」という概念に深く根ざしている。", "id": "Kepekaan estetika orang Jepang berakar dalam pada konsep 'wabi-sabi'.", "level": "n1", "tags": ["konsep-jepang", "seni-budaya"]},
-    {"jp": "彼女のインテリアには独自の<b>美意識</b>が感じられる。", "id": "Dekorasi interiornya mencerminkan kepekaan estetika yang khas dan personal.", "level": "n1", "tags": ["seni-budaya", "kehidupan-sehari"]}
+    {
+      "jp": "日本人の<b>美意識</b>は「侘び寂び」という概念に深く根ざしている。",
+      "id": "Kepekaan estetika orang Jepang berakar dalam pada konsep 'wabi-sabi'.",
+      "level": "n1",
+      "tags": [
+        "konsep-jepang",
+        "seni-budaya"
+      ]
+    },
+    {
+      "jp": "彼女のインテリアには独自の<b>美意識</b>が感じられる。",
+      "id": "Dekorasi interiornya mencerminkan kepekaan estetika yang khas dan personal.",
+      "level": "n1",
+      "tags": [
+        "seni-budaya",
+        "kehidupan-sehari"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1725090",
+  "frequency": 12000
 },
 
 {
@@ -4048,20 +12486,57 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["pikiran-opini", "sastra", "hiburan"],
+  "domain": [
+    "pikiran-opini",
+    "sastra",
+    "hiburan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 人生観 yang berfokus pada cara seseorang memandang hidupnya sendiri, 世界観 lebih makro — menyangkut pandangan tentang realitas, alam semesta, dan keberadaan secara keseluruhan. Dalam konteks seni/media, 世界観 berarti 'dunia fiktif' sebuah karya: この作品の世界観 = dunia (setting/atmosfer) dari karya ini.",
   "conj_type": null,
   "examples": [
-    {"jp": "その哲学者は独自の<b>世界観</b>を著書の中で展開した。", "id": "Filsuf itu mengembangkan worldview-nya yang khas dalam karya tulisnya.", "level": "n1", "tags": ["ilmu-pengetahuan", "sastra"]},
-    {"jp": "このゲームの<b>世界観</b>に引き込まれてしまった。", "id": "Aku terseret masuk ke dalam dunia game ini.", "level": "n1", "tags": ["hiburan"]}
+    {
+      "jp": "その哲学者は独自の<b>世界観</b>を著書の中で展開した。",
+      "id": "Filsuf itu mengembangkan worldview-nya yang khas dalam karya tulisnya.",
+      "level": "n1",
+      "tags": [
+        "ilmu-pengetahuan",
+        "sastra"
+      ]
+    },
+    {
+      "jp": "このゲームの<b>世界観</b>に引き込まれてしまった。",
+      "id": "Aku terseret masuk ke dalam dunia game ini.",
+      "level": "n1",
+      "tags": [
+        "hiburan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00185"],
+  "see_also": [
+    "vg-n1-00185"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1645810",
+  "frequency": 12000,
+  "meanings": [
+    {
+      "en": "worldview; outlook on the world; Weltanschauung",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "setting (for a fictional work); world; universe",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
@@ -4076,20 +12551,59 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["pikiran-opini", "karakter", "kehidupan-sehari"],
+  "domain": [
+    "pikiran-opini",
+    "karakter",
+    "kehidupan-sehari"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Lebih personal dan praktis dari 世界観 (worldview). 人生観 berkaitan dengan bagaimana seseorang memaknai perjalanan hidupnya sendiri — apa yang penting, bagaimana menghadapi kesulitan, apa tujuan hidup. 人生観が変わる = pandangan hidupnya berubah, sering dipakai setelah pengalaman yang mengubah seseorang.",
   "conj_type": null,
   "examples": [
-    {"jp": "父の死をきっかけに、彼の<b>人生観</b>は大きく変わった。", "id": "Kematian ayahnya menjadi titik balik yang mengubah pandangan hidupnya secara mendalam.", "level": "n1", "tags": ["kehidupan-sehari", "karakter"]},
-    {"jp": "旅をすることで<b>人生観</b>が広がると感じる人も多い。", "id": "Banyak orang merasa bahwa bepergian memperluas cara pandang mereka terhadap kehidupan.", "level": "n1", "tags": ["perjalanan", "pikiran-opini"]}
+    {
+      "jp": "父の死をきっかけに、彼の<b>人生観</b>は大きく変わった。",
+      "id": "Kematian ayahnya menjadi titik balik yang mengubah pandangan hidupnya secara mendalam.",
+      "level": "n1",
+      "tags": [
+        "kehidupan-sehari",
+        "karakter"
+      ]
+    },
+    {
+      "jp": "旅をすることで<b>人生観</b>が広がると感じる人も多い。",
+      "id": "Banyak orang merasa bahwa bepergian memperluas cara pandang mereka terhadap kehidupan.",
+      "level": "n1",
+      "tags": [
+        "perjalanan",
+        "pikiran-opini"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00184", "vg-n1-00186"],
+  "see_also": [
+    "vg-n1-00184",
+    "vg-n1-00186"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1368400",
+  "frequency": 10000,
+  "forms": [
+    {
+      "word": "人生観",
+      "info": []
+    },
+    {
+      "word": "人生感",
+      "info": [
+        "word containing irregular kanji usage"
+      ]
+    }
+  ]
 },
 
 {
@@ -4104,20 +12618,45 @@ window.vocabN1 = [
   "common": false,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["pikiran-opini", "karakter", "konsep-jepang"],
+  "domain": [
+    "pikiran-opini",
+    "karakter",
+    "konsep-jepang"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Lebih spesifik dari 人生観 — 死生観 secara eksplisit menyangkut bagaimana seseorang memandang kematian dan hubungannya dengan kehidupan. Dalam budaya Jepang, konsep ini sangat penting, terkait dengan Buddhisme dan nilai-nilai samurai. Sering dipakai dalam konteks perawatan paliatif, filosofi, dan sastra.",
   "conj_type": null,
   "examples": [
-    {"jp": "末期がんの経験は彼女の<b>死生観</b>を根本から変えた。", "id": "Pengalaman menghadapi kanker stadium akhir mengubah pandangannya tentang hidup dan mati secara fundamental.", "level": "n1", "tags": ["kesehatan", "karakter"]},
-    {"jp": "日本の<b>死生観</b>は仏教や武士道の影響を強く受けている。", "id": "Pandangan Jepang tentang hidup dan mati sangat dipengaruhi oleh Buddhisme dan bushido.", "level": "n1", "tags": ["konsep-jepang", "budaya"]}
+    {
+      "jp": "末期がんの経験は彼女の<b>死生観</b>を根本から変えた。",
+      "id": "Pengalaman menghadapi kanker stadium akhir mengubah pandangannya tentang hidup dan mati secara fundamental.",
+      "level": "n1",
+      "tags": [
+        "kesehatan",
+        "karakter"
+      ]
+    },
+    {
+      "jp": "日本の<b>死生観</b>は仏教や武士道の影響を強く受けている。",
+      "id": "Pandangan Jepang tentang hidup dan mati sangat dipengaruhi oleh Buddhisme dan bushido.",
+      "level": "n1",
+      "tags": [
+        "konsep-jepang",
+        "budaya"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00185"],
+  "see_also": [
+    "vg-n1-00185"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1767400"
 },
 
 {
@@ -4132,20 +12671,47 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["karakter", "pikiran-opini", "ilmu-pengetahuan"],
+  "domain": [
+    "karakter",
+    "pikiran-opini",
+    "ilmu-pengetahuan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Loanword dari bahasa Inggris 'identity', digunakan dalam konteks psikologi, sosiologi, dan wacana modern. Lebih luas dari 自己認識 (kesadaran diri) — アイデンティティ mencakup keseluruhan jati diri: budaya, peran sosial, nilai-nilai, dan persepsi diri. アイデンティティ・クライシス = krisis identitas.",
   "conj_type": null,
   "examples": [
-    {"jp": "海外に移住してから、自分の<b>アイデンティティ</b>について深く考えるようになった。", "id": "Sejak pindah ke luar negeri, aku mulai berpikir lebih dalam tentang jati diriku.", "level": "n1", "tags": ["karakter", "perjalanan"]},
-    {"jp": "民族的な<b>アイデンティティ</b>を保つことは、移民にとって重要な課題だ。", "id": "Mempertahankan identitas etnis adalah tantangan penting bagi para imigran.", "level": "n1", "tags": ["budaya", "politik-masyarakat"]}
+    {
+      "jp": "海外に移住してから、自分の<b>アイデンティティ</b>について深く考えるようになった。",
+      "id": "Sejak pindah ke luar negeri, aku mulai berpikir lebih dalam tentang jati diriku.",
+      "level": "n1",
+      "tags": [
+        "karakter",
+        "perjalanan"
+      ]
+    },
+    {
+      "jp": "民族的な<b>アイデンティティ</b>を保つことは、移民にとって重要な課題だ。",
+      "id": "Mempertahankan identitas etnis adalah tantangan penting bagi para imigran.",
+      "level": "n1",
+      "tags": [
+        "budaya",
+        "politik-masyarakat"
+      ]
+    }
   ],
-  "synonyms": ["自己同一性"],
+  "synonyms": [
+    "自己同一性"
+  ],
   "antonyms": [],
-  "see_also": ["vg-n1-00188"],
+  "see_also": [
+    "vg-n1-00188"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1014270"
 },
 
 {
@@ -4188,20 +12754,46 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["karakter", "emosi", "ilmu-pengetahuan"],
+  "domain": [
+    "karakter",
+    "emosi",
+    "ilmu-pengetahuan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 自信 (jishin = kepercayaan diri berbasis kemampuan), 自己肯定感 adalah penerimaan terhadap diri sendiri terlepas dari prestasi atau keberhasilan. 自己肯定感が低い = harga diri rendah, sering dibahas dalam psikologi dan pendidikan anak. Istilah ini semakin populer di Jepang dalam dekade terakhir.",
   "conj_type": null,
   "examples": [
-    {"jp": "幼少期の経験が<b>自己肯定感</b>の形成に大きく影響する。", "id": "Pengalaman masa kecil sangat berpengaruh dalam membentuk rasa harga diri seseorang.", "level": "n1", "tags": ["karakter", "pendidikan"]},
-    {"jp": "<b>自己肯定感</b>が低いと、失敗を必要以上に恐れるようになる。", "id": "Ketika harga diri rendah, seseorang cenderung terlalu takut akan kegagalan.", "level": "n1", "tags": ["emosi", "karakter"]}
+    {
+      "jp": "幼少期の経験が<b>自己肯定感</b>の形成に大きく影響する。",
+      "id": "Pengalaman masa kecil sangat berpengaruh dalam membentuk rasa harga diri seseorang.",
+      "level": "n1",
+      "tags": [
+        "karakter",
+        "pendidikan"
+      ]
+    },
+    {
+      "jp": "<b>自己肯定感</b>が低いと、失敗を必要以上に恐れるようになる。",
+      "id": "Ketika harga diri rendah, seseorang cenderung terlalu takut akan kegagalan.",
+      "level": "n1",
+      "tags": [
+        "emosi",
+        "karakter"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00188", "vg-n1-00203"],
+  "see_also": [
+    "vg-n1-00188",
+    "vg-n1-00203"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "2832149"
 },
 
 {
@@ -4216,20 +12808,47 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["karakter", "pikiran-opini", "pekerjaan"],
+  "domain": [
+    "karakter",
+    "pikiran-opini",
+    "pekerjaan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 自主性 (jishusei = kemandirian dalam melakukan sesuatu), 主体性 lebih menekankan pada posisi seseorang sebagai subjek yang aktif dan bertanggung jawab — bukan sekadar melakukan sesuatu sendiri, tapi juga memiliki visi dan tanggung jawab penuh. 主体性を持つ = memiliki inisiatif dan rasa kepemilikan atas tindakan.",
   "conj_type": null,
   "examples": [
-    {"jp": "この授業では学生の<b>主体性</b>を育てることを重視している。", "id": "Pelajaran ini mengutamakan pengembangan inisiatif dan kemandirian berpikir pada siswa.", "level": "n1", "tags": ["pendidikan", "karakter"]},
-    {"jp": "<b>主体性</b>のある社員は、指示を待たずに動ける。", "id": "Karyawan yang memiliki inisiatif kuat tidak perlu menunggu instruksi untuk bertindak.", "level": "n1", "tags": ["pekerjaan", "karakter"]}
+    {
+      "jp": "この授業では学生の<b>主体性</b>を育てることを重視している。",
+      "id": "Pelajaran ini mengutamakan pengembangan inisiatif dan kemandirian berpikir pada siswa.",
+      "level": "n1",
+      "tags": [
+        "pendidikan",
+        "karakter"
+      ]
+    },
+    {
+      "jp": "<b>主体性</b>のある社員は、指示を待たずに動ける。",
+      "id": "Karyawan yang memiliki inisiatif kuat tidak perlu menunggu instruksi untuk bertindak.",
+      "level": "n1",
+      "tags": [
+        "pekerjaan",
+        "karakter"
+      ]
+    }
   ],
-  "synonyms": ["自主性"],
+  "synonyms": [
+    "自主性"
+  ],
   "antonyms": [],
-  "see_also": ["vg-n1-00191"],
+  "see_also": [
+    "vg-n1-00191"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1325850"
 },
 
 {
@@ -4244,20 +12863,45 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["karakter", "pekerjaan", "pikiran-opini"],
+  "domain": [
+    "karakter",
+    "pekerjaan",
+    "pikiran-opini"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 主体性 yang menekankan inisiatif, 当事者意識 lebih menekankan pada rasa bahwa masalah tersebut adalah milikku — bukan orang lain yang harus menyelesaikannya. 当事者意識が低い = kurang merasa bertanggung jawab, sering dipakai dalam konteks organisasi atau isu sosial.",
   "conj_type": null,
   "examples": [
-    {"jp": "環境問題は<b>当事者意識</b>を持って取り組まなければならない。", "id": "Masalah lingkungan harus dihadapi dengan rasa bahwa itu adalah tanggung jawab kita sendiri.", "level": "n1", "tags": ["alam-lingkungan", "pikiran-opini"]},
-    {"jp": "社員全員が<b>当事者意識</b>を持てば、会社は大きく変わる。", "id": "Jika semua karyawan merasa memiliki peran langsung, perusahaan bisa berubah secara signifikan.", "level": "n1", "tags": ["pekerjaan", "bisnis"]}
+    {
+      "jp": "環境問題は<b>当事者意識</b>を持って取り組まなければならない。",
+      "id": "Masalah lingkungan harus dihadapi dengan rasa bahwa itu adalah tanggung jawab kita sendiri.",
+      "level": "n1",
+      "tags": [
+        "alam-lingkungan",
+        "pikiran-opini"
+      ]
+    },
+    {
+      "jp": "社員全員が<b>当事者意識</b>を持てば、会社は大きく変わる。",
+      "id": "Jika semua karyawan merasa memiliki peran langsung, perusahaan bisa berubah secara signifikan.",
+      "level": "n1",
+      "tags": [
+        "pekerjaan",
+        "bisnis"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00190"],
+  "see_also": [
+    "vg-n1-00190"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "2859708"
 },
 
 {
@@ -4272,20 +12916,45 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["emosi", "pikiran-opini", "politik-masyarakat"],
+  "domain": [
+    "emosi",
+    "pikiran-opini",
+    "politik-masyarakat"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 焦燥感 yang muncul karena tekanan waktu subjektif, 危機感 berorientasi pada ancaman eksternal yang nyata atau diyakini nyata — seperti ancaman terhadap keamanan, kelangsungan hidup, atau keberhasilan. 危機感を持つ = menyadari bahwa situasi ini berbahaya dan perlu segera ditangani.",
   "conj_type": null,
   "examples": [
-    {"jp": "少子化に対する<b>危機感</b>が政府を動かした。", "id": "Kesadaran akan bahaya penurunan angka kelahiran mendorong pemerintah untuk bertindak.", "level": "n1", "tags": ["politik-masyarakat", "kehidupan-sehari"]},
-    {"jp": "<b>危機感</b>がなければ、変化は生まれない。", "id": "Tanpa rasa urgensi, tidak akan ada perubahan yang terjadi.", "level": "n1", "tags": ["pikiran-opini", "perubahan"]}
+    {
+      "jp": "少子化に対する<b>危機感</b>が政府を動かした。",
+      "id": "Kesadaran akan bahaya penurunan angka kelahiran mendorong pemerintah untuk bertindak.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "<b>危機感</b>がなければ、変化は生まれない。",
+      "id": "Tanpa rasa urgensi, tidak akan ada perubahan yang terjadi.",
+      "level": "n1",
+      "tags": [
+        "pikiran-opini",
+        "perubahan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00200"],
+  "see_also": [
+    "vg-n1-00200"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1821440"
 },
 
 {
@@ -4300,20 +12969,45 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["karakter", "pekerjaan", "emosi"],
+  "domain": [
+    "karakter",
+    "pekerjaan",
+    "emosi"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 義務感 (gimukan = rasa kewajiban yang terasa seperti beban), 使命感 lebih positif dan internal — dorongan dari dalam diri bahwa 'akulah yang harus melakukan ini'. 使命感に燃える = terbakar oleh rasa misi. Biasanya dipakai untuk profesi mulia atau gerakan sosial.",
   "conj_type": null,
   "examples": [
-    {"jp": "強い<b>使命感</b>を持った医師が、へき地医療を支えている。", "id": "Dokter-dokter dengan rasa panggilan yang kuat menopang layanan kesehatan di daerah terpencil.", "level": "n1", "tags": ["kesehatan", "pekerjaan"]},
-    {"jp": "<b>使命感</b>があるからこそ、つらい仕事でも続けられる。", "id": "Justru karena ada rasa misi itulah seseorang bisa bertahan dalam pekerjaan yang berat.", "level": "n1", "tags": ["pekerjaan", "karakter"]}
+    {
+      "jp": "強い<b>使命感</b>を持った医師が、へき地医療を支えている。",
+      "id": "Dokter-dokter dengan rasa panggilan yang kuat menopang layanan kesehatan di daerah terpencil.",
+      "level": "n1",
+      "tags": [
+        "kesehatan",
+        "pekerjaan"
+      ]
+    },
+    {
+      "jp": "<b>使命感</b>があるからこそ、つらい仕事でも続けられる。",
+      "id": "Justru karena ada rasa misi itulah seseorang bisa bertahan dalam pekerjaan yang berat.",
+      "level": "n1",
+      "tags": [
+        "pekerjaan",
+        "karakter"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00191"],
+  "see_also": [
+    "vg-n1-00191"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "2100390"
 },
 
 {
@@ -4328,20 +13022,46 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["emosi-sosial", "pekerjaan", "karakter"],
+  "domain": [
+    "emosi-sosial",
+    "pekerjaan",
+    "karakter"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 連帯感 yang menekankan ikatan emosional bersama dalam suatu momen, 帰属意識 lebih menekankan pada identifikasi diri sebagai bagian dari suatu kelompok secara berkelanjutan. 会社への帰属意識 = rasa memiliki terhadap perusahaan. Sering dipakai dalam konteks manajemen organisasi dan sosiologi.",
   "conj_type": null,
   "examples": [
-    {"jp": "社員の<b>帰属意識</b>を高めるために、会社はさまざまな取り組みをしている。", "id": "Perusahaan melakukan berbagai upaya untuk meningkatkan rasa memiliki para karyawannya.", "level": "n1", "tags": ["pekerjaan", "bisnis"]},
-    {"jp": "地域コミュニティへの<b>帰属意識</b>が薄れると、孤立しやすくなる。", "id": "Ketika rasa memiliki terhadap komunitas lokal memudar, seseorang menjadi lebih mudah terisolasi.", "level": "n1", "tags": ["politik-masyarakat", "kehidupan-sehari"]}
+    {
+      "jp": "社員の<b>帰属意識</b>を高めるために、会社はさまざまな取り組みをしている。",
+      "id": "Perusahaan melakukan berbagai upaya untuk meningkatkan rasa memiliki para karyawannya.",
+      "level": "n1",
+      "tags": [
+        "pekerjaan",
+        "bisnis"
+      ]
+    },
+    {
+      "jp": "地域コミュニティへの<b>帰属意識</b>が薄れると、孤立しやすくなる。",
+      "id": "Ketika rasa memiliki terhadap komunitas lokal memudar, seseorang menjadi lebih mudah terisolasi.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat",
+        "kehidupan-sehari"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00195", "vg-n1-00201"],
+  "see_also": [
+    "vg-n1-00195",
+    "vg-n1-00201"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1932750"
 },
 
 {
@@ -4356,20 +13076,45 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["emosi-sosial", "pikiran-opini", "politik-masyarakat"],
+  "domain": [
+    "emosi-sosial",
+    "pikiran-opini",
+    "politik-masyarakat"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 帰属意識 (rasa menjadi bagian dari kelompok), 連帯感 menekankan ikatan horizontal antar individu yang merasakan nasib atau perjuangan yang sama. 連帯感が生まれる = tumbuh rasa solidaritas. Sering muncul dalam konteks gerakan sosial, bencana, atau perjuangan bersama.",
   "conj_type": null,
   "examples": [
-    {"jp": "災害の後、地域住民の間に強い<b>連帯感</b>が生まれた。", "id": "Setelah bencana, rasa solidaritas yang kuat tumbuh di antara warga setempat.", "level": "n1", "tags": ["alam-lingkungan", "kehidupan-sehari"]},
-    {"jp": "同じ苦労を経験することで、チームの<b>連帯感</b>は深まる。", "id": "Dengan melewati kesulitan yang sama, rasa solidaritas dalam tim pun semakin dalam.", "level": "n1", "tags": ["pekerjaan", "emosi-sosial"]}
+    {
+      "jp": "災害の後、地域住民の間に強い<b>連帯感</b>が生まれた。",
+      "id": "Setelah bencana, rasa solidaritas yang kuat tumbuh di antara warga setempat.",
+      "level": "n1",
+      "tags": [
+        "alam-lingkungan",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "同じ苦労を経験することで、チームの<b>連帯感</b>は深まる。",
+      "id": "Dengan melewati kesulitan yang sama, rasa solidaritas dalam tim pun semakin dalam.",
+      "level": "n1",
+      "tags": [
+        "pekerjaan",
+        "emosi-sosial"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00194"],
+  "see_also": [
+    "vg-n1-00194"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1559670"
 },
 
 {
@@ -4384,20 +13129,46 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["emosi-negatif", "kehidupan-sehari"],
+  "domain": [
+    "emosi-negatif",
+    "kehidupan-sehari"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 悲しみ (kanashimi = kesedihan umum), 喪失感 secara spesifik mengacu pada rasa hampa dan kosong yang ditinggalkan oleh sesuatu yang hilang — orang yang dicintai, pekerjaan, masa muda, dan sebagainya. 喪失感に苛まれる = dihantui rasa kehilangan. Berbeda pula dari 虚無感 yang tidak memerlukan 'objek yang hilang'.",
   "conj_type": null,
   "examples": [
-    {"jp": "長年連れ添ったペットを亡くし、深い<b>喪失感</b>に包まれた。", "id": "Kehilangan hewan peliharaan yang menemaninya selama bertahun-tahun membuat dia diselimuti rasa kehilangan yang dalam.", "level": "n1", "tags": ["emosi-negatif", "kehidupan-sehari"]},
-    {"jp": "定年退職後に<b>喪失感</b>を感じる人は少なくない。", "id": "Tidak sedikit orang yang merasakan kehilangan setelah pensiun dari pekerjaan.", "level": "n1", "tags": ["pekerjaan", "emosi-negatif"]}
+    {
+      "jp": "長年連れ添ったペットを亡くし、深い<b>喪失感</b>に包まれた。",
+      "id": "Kehilangan hewan peliharaan yang menemaninya selama bertahun-tahun membuat dia diselimuti rasa kehilangan yang dalam.",
+      "level": "n1",
+      "tags": [
+        "emosi-negatif",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "定年退職後に<b>喪失感</b>を感じる人は少なくない。",
+      "id": "Tidak sedikit orang yang merasakan kehilangan setelah pensiun dari pekerjaan.",
+      "level": "n1",
+      "tags": [
+        "pekerjaan",
+        "emosi-negatif"
+      ]
+    }
   ],
   "synonyms": [],
-  "antonyms": ["充実感"],
-  "see_also": ["vg-n1-00199"],
+  "antonyms": [
+    "充実感"
+  ],
+  "see_also": [
+    "vg-n1-00199"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "2583550"
 },
 
 {
@@ -4412,20 +13183,48 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["emosi-positif", "kehidupan-sehari", "karakter"],
+  "domain": [
+    "emosi-positif",
+    "kehidupan-sehari",
+    "karakter"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 達成感 yang muncul setelah menyelesaikan suatu pencapaian spesifik, 充実感 adalah rasa kepenuhan yang lebih umum dan berkelanjutan — perasaan bahwa hari-hari terasa penuh makna dan tidak terbuang sia-sia. 充実した毎日 = hari-hari yang penuh dan bermakna.",
   "conj_type": null,
   "examples": [
-    {"jp": "好きな仕事をしていると、毎日<b>充実感</b>を感じられる。", "id": "Ketika mengerjakan pekerjaan yang disukai, rasa kepuasan terasa setiap hari.", "level": "n1", "tags": ["pekerjaan", "emosi-positif"]},
-    {"jp": "ボランティア活動を通じて、大きな<b>充実感</b>を得た。", "id": "Melalui kegiatan sukarela, aku mendapatkan rasa kepenuhan yang luar biasa.", "level": "n1", "tags": ["kehidupan-sehari", "emosi-positif"]}
+    {
+      "jp": "好きな仕事をしていると、毎日<b>充実感</b>を感じられる。",
+      "id": "Ketika mengerjakan pekerjaan yang disukai, rasa kepuasan terasa setiap hari.",
+      "level": "n1",
+      "tags": [
+        "pekerjaan",
+        "emosi-positif"
+      ]
+    },
+    {
+      "jp": "ボランティア活動を通じて、大きな<b>充実感</b>を得た。",
+      "id": "Melalui kegiatan sukarela, aku mendapatkan rasa kepenuhan yang luar biasa.",
+      "level": "n1",
+      "tags": [
+        "kehidupan-sehari",
+        "emosi-positif"
+      ]
+    }
   ],
   "synonyms": [],
-  "antonyms": ["喪失感", "虚無感"],
-  "see_also": ["vg-n1-00198"],
+  "antonyms": [
+    "喪失感",
+    "虚無感"
+  ],
+  "see_also": [
+    "vg-n1-00198"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "2525090"
 },
 
 {
@@ -4440,20 +13239,45 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["emosi-positif", "kehidupan-sehari", "pendidikan"],
+  "domain": [
+    "emosi-positif",
+    "kehidupan-sehari",
+    "pendidikan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 充実感 yang bersifat umum dan berkelanjutan, 達成感 terkait langsung dengan pencapaian target tertentu — seperti lulus ujian, menyelesaikan proyek, atau mencapai puncak gunung. 達成感を味わう = merasakan kepuasan pencapaian. Lebih spesifik dan terikat pada momen.",
   "conj_type": null,
   "examples": [
-    {"jp": "マラソンを完走した瞬間、言葉にできない<b>達成感</b>があった。", "id": "Di momen berhasil menyelesaikan maraton, ada rasa bangga yang tak bisa diungkapkan dengan kata-kata.", "level": "n1", "tags": ["olahraga", "emosi-positif"]},
-    {"jp": "難しい資格試験に合格したときの<b>達成感</b>は格別だ。", "id": "Rasa bangga saat lulus ujian sertifikasi yang sulit sungguh luar biasa.", "level": "n1", "tags": ["pendidikan", "emosi-positif"]}
+    {
+      "jp": "マラソンを完走した瞬間、言葉にできない<b>達成感</b>があった。",
+      "id": "Di momen berhasil menyelesaikan maraton, ada rasa bangga yang tak bisa diungkapkan dengan kata-kata.",
+      "level": "n1",
+      "tags": [
+        "olahraga",
+        "emosi-positif"
+      ]
+    },
+    {
+      "jp": "難しい資格試験に合格したときの<b>達成感</b>は格別だ。",
+      "id": "Rasa bangga saat lulus ujian sertifikasi yang sulit sungguh luar biasa.",
+      "level": "n1",
+      "tags": [
+        "pendidikan",
+        "emosi-positif"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00197"],
+  "see_also": [
+    "vg-n1-00197"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "2638040"
 },
 
 {
@@ -4468,20 +13292,46 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["emosi-negatif", "pikiran-opini"],
+  "domain": [
+    "emosi-negatif",
+    "pikiran-opini"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 喪失感 yang disebabkan oleh kehilangan sesuatu yang konkret, 虚無感 adalah kekosongan eksistensial yang tidak selalu punya sebab jelas — perasaan bahwa hidup, usaha, atau keberadaan itu sendiri tidak bermakna. 虚無感に囚われる = terjebak dalam rasa hampa. Terkait dengan konsep nihilisme dalam filsafat.",
   "conj_type": null,
   "examples": [
-    {"jp": "長年の目標を達成した後、逆に<b>虚無感</b>に襲われた。", "id": "Setelah bertahun-tahun mencapai tujuannya, justru rasa hampa yang menghampirinya.", "level": "n1", "tags": ["emosi-negatif", "pikiran-opini"]},
-    {"jp": "繰り返す日常の中で、得体の知れない<b>虚無感</b>を感じることがある。", "id": "Di tengah rutinitas yang berulang, terkadang muncul rasa hampa yang sulit dijelaskan.", "level": "n1", "tags": ["emosi-negatif", "kehidupan-sehari"]}
+    {
+      "jp": "長年の目標を達成した後、逆に<b>虚無感</b>に襲われた。",
+      "id": "Setelah bertahun-tahun mencapai tujuannya, justru rasa hampa yang menghampirinya.",
+      "level": "n1",
+      "tags": [
+        "emosi-negatif",
+        "pikiran-opini"
+      ]
+    },
+    {
+      "jp": "繰り返す日常の中で、得体の知れない<b>虚無感</b>を感じることがある。",
+      "id": "Di tengah rutinitas yang berulang, terkadang muncul rasa hampa yang sulit dijelaskan.",
+      "level": "n1",
+      "tags": [
+        "emosi-negatif",
+        "kehidupan-sehari"
+      ]
+    }
   ],
   "synonyms": [],
-  "antonyms": ["充実感"],
-  "see_also": ["vg-n1-00196"],
+  "antonyms": [
+    "充実感"
+  ],
+  "see_also": [
+    "vg-n1-00196"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "2798670"
 },
 
 {
@@ -4496,20 +13346,56 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["emosi-negatif", "kehidupan-sehari"],
+  "domain": [
+    "emosi-negatif",
+    "kehidupan-sehari"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 危機感 yang berorientasi pada ancaman eksternal, 焦燥感 bersifat lebih internal dan emosional — perasaan terbakar dari dalam karena merasa waktu berlalu tapi sesuatu belum berhasil. 焦燥感に駆られる = terdorong oleh rasa tidak sabar yang membakar. Sering dipakai untuk menggambarkan tekanan psikologis.",
   "conj_type": null,
   "examples": [
-    {"jp": "締め切りが近づくにつれ、<b>焦燥感</b>が増してきた。", "id": "Semakin mendekati tenggat waktu, rasa gelisah dan tidak sabar itu semakin meningkat.", "level": "n1", "tags": ["pekerjaan", "emosi-negatif"]},
-    {"jp": "周りの友人が次々と結婚していく中、彼女は漠然とした<b>焦燥感</b>を抱えていた。", "id": "Di tengah teman-temannya yang menikah satu per satu, dia menyimpan rasa gelisah yang samar-samar.", "level": "n1", "tags": ["percintaan", "emosi-negatif"]}
+    {
+      "jp": "締め切りが近づくにつれ、<b>焦燥感</b>が増してきた。",
+      "id": "Semakin mendekati tenggat waktu, rasa gelisah dan tidak sabar itu semakin meningkat.",
+      "level": "n1",
+      "tags": [
+        "pekerjaan",
+        "emosi-negatif"
+      ]
+    },
+    {
+      "jp": "周りの友人が次々と結婚していく中、彼女は漠然とした<b>焦燥感</b>を抱えていた。",
+      "id": "Di tengah teman-temannya yang menikah satu per satu, dia menyimpan rasa gelisah yang samar-samar.",
+      "level": "n1",
+      "tags": [
+        "percintaan",
+        "emosi-negatif"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00192"],
+  "see_also": [
+    "vg-n1-00192"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "2845065",
+  "forms": [
+    {
+      "word": "焦燥感",
+      "info": []
+    },
+    {
+      "word": "焦躁感",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ]
 },
 
 {
@@ -4524,20 +13410,59 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["emosi-negatif", "emosi-sosial", "kehidupan-sehari"],
+  "domain": [
+    "emosi-negatif",
+    "emosi-sosial",
+    "kehidupan-sehari"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 孤独感 (kodoku-kan = perasaan kesepian yang bisa bersifat fisik), 疎外感 secara khusus menyiratkan pengucilan atau keterpisahan sosial — perasaan bahwa dirinya tidak diinginkan, tidak diterima, atau tidak dipahami oleh kelompok. 疎外感を感じさせる = membuat seseorang merasa terasing.",
   "conj_type": null,
   "examples": [
-    {"jp": "転校してきたばかりの彼は、クラスに<b>疎外感</b>を感じていた。", "id": "Dia yang baru saja pindah sekolah merasa terasing di kelasnya.", "level": "n1", "tags": ["pendidikan", "emosi-sosial"]},
-    {"jp": "マイノリティは社会の中で<b>疎外感</b>を抱えやすい。", "id": "Kaum minoritas cenderung lebih mudah merasakan keterasingan di dalam masyarakat.", "level": "n1", "tags": ["politik-masyarakat", "emosi-sosial"]}
+    {
+      "jp": "転校してきたばかりの彼は、クラスに<b>疎外感</b>を感じていた。",
+      "id": "Dia yang baru saja pindah sekolah merasa terasing di kelasnya.",
+      "level": "n1",
+      "tags": [
+        "pendidikan",
+        "emosi-sosial"
+      ]
+    },
+    {
+      "jp": "マイノリティは社会の中で<b>疎外感</b>を抱えやすい。",
+      "id": "Kaum minoritas cenderung lebih mudah merasakan keterasingan di dalam masyarakat.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat",
+        "emosi-sosial"
+      ]
+    }
   ],
   "synonyms": [],
-  "antonyms": ["帰属意識"],
-  "see_also": ["vg-n1-00194"],
+  "antonyms": [
+    "帰属意識"
+  ],
+  "see_also": [
+    "vg-n1-00194"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1396720",
+  "forms": [
+    {
+      "word": "疎外感",
+      "info": []
+    },
+    {
+      "word": "疏外感",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ]
 },
 
 {
@@ -4552,20 +13477,46 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["karakter", "emosi-sosial", "ilmu-pengetahuan"],
+  "domain": [
+    "karakter",
+    "emosi-sosial",
+    "ilmu-pengetahuan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Istilah psikologi yang dipopulerkan oleh teori Maslow. Berbeda dari 自己肯定感 (menerima diri sendiri), 承認欲求 adalah kebutuhan terhadap penilaian positif dari luar diri. 承認欲求が強い = terlalu bergantung pada pengakuan orang lain. Di era media sosial, istilah ini semakin sering dipakai secara kritis.",
   "conj_type": null,
   "examples": [
-    {"jp": "SNSでの「いいね」は<b>承認欲求</b>を手軽に満たす手段になっている。", "id": "'Like' di media sosial telah menjadi cara mudah untuk memenuhi kebutuhan akan pengakuan.", "level": "n1", "tags": ["teknologi", "emosi-sosial"]},
-    {"jp": "強すぎる<b>承認欲求</b>は、人間関係を複雑にすることがある。", "id": "Kebutuhan akan pengakuan yang terlalu kuat dapat memperumit hubungan dengan orang lain.", "level": "n1", "tags": ["karakter", "hubungan-konsep"]}
+    {
+      "jp": "SNSでの「いいね」は<b>承認欲求</b>を手軽に満たす手段になっている。",
+      "id": "'Like' di media sosial telah menjadi cara mudah untuk memenuhi kebutuhan akan pengakuan.",
+      "level": "n1",
+      "tags": [
+        "teknologi",
+        "emosi-sosial"
+      ]
+    },
+    {
+      "jp": "強すぎる<b>承認欲求</b>は、人間関係を複雑にすることがある。",
+      "id": "Kebutuhan akan pengakuan yang terlalu kuat dapat memperumit hubungan dengan orang lain.",
+      "level": "n1",
+      "tags": [
+        "karakter",
+        "hubungan-konsep"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00189", "vg-n1-00203"],
+  "see_also": [
+    "vg-n1-00189",
+    "vg-n1-00203"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "2830561"
 },
 
 {
@@ -4580,20 +13531,46 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["karakter", "pikiran-opini", "ilmu-pengetahuan"],
+  "domain": [
+    "karakter",
+    "pikiran-opini",
+    "ilmu-pengetahuan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Istilah yang berakar dari teori hierarki kebutuhan Maslow — tingkatan tertinggi setelah kebutuhan fisiologis, keamanan, sosial, dan harga diri terpenuhi. Berbeda dari 成功 (seiko = sukses yang terukur dari luar), 自己実現 lebih bersifat internal dan berpusat pada pemenuhan potensi diri yang sejati. 自己実現を図る = berupaya mengaktualisasikan diri.",
   "conj_type": null,
   "examples": [
-    {"jp": "彼女は家族のために夢を諦めず、<b>自己実現</b>の道を歩み続けた。", "id": "Tanpa melepaskan mimpinya demi keluarga, dia terus berjalan di jalan aktualisasi dirinya.", "level": "n1", "tags": ["karakter", "kehidupan-sehari"]},
-    {"jp": "働く動機として「<b>自己実現</b>」を挙げる若者が増えている。", "id": "Semakin banyak anak muda yang menyebut 'aktualisasi diri' sebagai motivasi bekerja.", "level": "n1", "tags": ["pekerjaan", "pendidikan"]}
+    {
+      "jp": "彼女は家族のために夢を諦めず、<b>自己実現</b>の道を歩み続けた。",
+      "id": "Tanpa melepaskan mimpinya demi keluarga, dia terus berjalan di jalan aktualisasi dirinya.",
+      "level": "n1",
+      "tags": [
+        "karakter",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "働く動機として「<b>自己実現</b>」を挙げる若者が増えている。",
+      "id": "Semakin banyak anak muda yang menyebut 'aktualisasi diri' sebagai motivasi bekerja.",
+      "level": "n1",
+      "tags": [
+        "pekerjaan",
+        "pendidikan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00189", "vg-n1-00202"],
+  "see_also": [
+    "vg-n1-00189",
+    "vg-n1-00202"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "2045820"
 },
 
 {
@@ -4608,20 +13585,46 @@ window.vocabN1 = [
   "common": false,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["pikiran-opini", "media", "politik-masyarakat"],
+  "domain": [
+    "pikiran-opini",
+    "media",
+    "politik-masyarakat"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 偏見 (henken = prasangka yang bersifat personal dan emosional), 偏向 lebih bersifat struktural dan sistematis — kecenderungan yang tertanam dalam suatu sistem, laporan media, atau cara berpikir. 偏向報道 = pemberitaan yang tidak berimbang. Dipakai terutama dalam konteks media dan wacana ilmiah.",
   "conj_type": null,
   "examples": [
-    {"jp": "そのメディアの<b>偏向</b>した報道が問題になった。", "id": "Pemberitaan yang bias dari media tersebut menjadi permasalahan.", "level": "n1", "tags": ["media", "politik-masyarakat"]},
-    {"jp": "研究者は自らの<b>偏向</b>を自覚した上で分析を行う必要がある。", "id": "Peneliti perlu menyadari bias dalam dirinya sendiri sebelum melakukan analisis.", "level": "n1", "tags": ["ilmu-pengetahuan", "pikiran-opini"]}
+    {
+      "jp": "そのメディアの<b>偏向</b>した報道が問題になった。",
+      "id": "Pemberitaan yang bias dari media tersebut menjadi permasalahan.",
+      "level": "n1",
+      "tags": [
+        "media",
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "研究者は自らの<b>偏向</b>を自覚した上で分析を行う必要がある。",
+      "id": "Peneliti perlu menyadari bias dalam dirinya sendiri sebelum melakukan analisis.",
+      "level": "n1",
+      "tags": [
+        "ilmu-pengetahuan",
+        "pikiran-opini"
+      ]
+    }
   ],
-  "synonyms": ["バイアス"],
+  "synonyms": [
+    "バイアス"
+  ],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1510400",
+  "frequency": 13000
 },
 
 {
@@ -4636,20 +13639,45 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["hukum-aturan", "pekerjaan", "bisnis"],
+  "domain": [
+    "hukum-aturan",
+    "pekerjaan",
+    "bisnis"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 慣例 yang menekankan kebiasaan yang sudah mapan secara sosial, 先例 lebih berfokus pada kasus spesifik terdahulu yang bisa dijadikan acuan untuk keputusan serupa. 先例がない = tidak ada preseden, sering dipakai dalam konteks hukum dan birokrasi. 先例を破る = mematahkan preseden.",
   "conj_type": null,
   "examples": [
-    {"jp": "この判決は今後の裁判に大きな<b>先例</b>となるだろう。", "id": "Putusan ini kemungkinan besar akan menjadi preseden penting bagi persidangan-persidangan mendatang.", "level": "n1", "tags": ["hukum-aturan"]},
-    {"jp": "<b>先例</b>のない試みだったが、結果的に成功した。", "id": "Meski tidak ada preseden sebelumnya, upaya itu pada akhirnya berhasil.", "level": "n1", "tags": ["bisnis", "perubahan"]}
+    {
+      "jp": "この判決は今後の裁判に大きな<b>先例</b>となるだろう。",
+      "id": "Putusan ini kemungkinan besar akan menjadi preseden penting bagi persidangan-persidangan mendatang.",
+      "level": "n1",
+      "tags": [
+        "hukum-aturan"
+      ]
+    },
+    {
+      "jp": "<b>先例</b>のない試みだったが、結果的に成功した。",
+      "id": "Meski tidak ada preseden sebelumnya, upaya itu pada akhirnya berhasil.",
+      "level": "n1",
+      "tags": [
+        "bisnis",
+        "perubahan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00206"],
+  "see_also": [
+    "vg-n1-00206"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1388710",
+  "frequency": 9000
 },
 
 {
@@ -4664,20 +13692,47 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["hukum-aturan", "sopan-santun", "bisnis"],
+  "domain": [
+    "hukum-aturan",
+    "sopan-santun",
+    "bisnis"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 先例 yang merujuk pada kasus spesifik terdahulu, 慣例 adalah kebiasaan yang sudah diulang cukup lama hingga menjadi norma yang diharapkan. 慣例に従う = mengikuti konvensi yang berlaku. 慣例を打ち破る = melanggar kebiasaan yang sudah mapan. Sering dipakai dalam konteks protokol organisasi dan adat.",
   "conj_type": null,
   "examples": [
-    {"jp": "この会社では毎年、年末に社員旅行をするのが<b>慣例</b>だ。", "id": "Di perusahaan ini, sudah menjadi kebiasaan yang mapan untuk mengadakan perjalanan bersama karyawan setiap akhir tahun.", "level": "n1", "tags": ["pekerjaan", "bisnis"]},
-    {"jp": "外交の世界では守るべき<b>慣例</b>が数多く存在する。", "id": "Dalam dunia diplomasi, terdapat banyak konvensi yang harus dipatuhi.", "level": "n1", "tags": ["politik-masyarakat", "hukum-aturan"]}
+    {
+      "jp": "この会社では毎年、年末に社員旅行をするのが<b>慣例</b>だ。",
+      "id": "Di perusahaan ini, sudah menjadi kebiasaan yang mapan untuk mengadakan perjalanan bersama karyawan setiap akhir tahun.",
+      "level": "n1",
+      "tags": [
+        "pekerjaan",
+        "bisnis"
+      ]
+    },
+    {
+      "jp": "外交の世界では守るべき<b>慣例</b>が数多く存在する。",
+      "id": "Dalam dunia diplomasi, terdapat banyak konvensi yang harus dipatuhi.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat",
+        "hukum-aturan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00205", "vg-n1-00207"],
+  "see_also": [
+    "vg-n1-00205",
+    "vg-n1-00207"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1212750",
+  "frequency": 5500
 },
 
 {
@@ -4692,20 +13747,45 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["ruang-arah", "hubungan-konsep", "ilmu-pengetahuan"],
+  "domain": [
+    "ruang-arah",
+    "hubungan-konsep",
+    "ilmu-pengetahuan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 境界 (kyoukai = batas/garis pembatas secara umum), 境界線 menekankan garis itu sendiri sebagai entitas yang jelas dan bisa ditelusuri — baik secara fisik maupun konseptual. Dalam psikologi modern, 境界線を引く = menetapkan batasan (boundaries) dalam hubungan, menjadi konsep penting dalam pembahasan kesehatan mental.",
   "conj_type": null,
   "examples": [
-    {"jp": "公私の<b>境界線</b>をはっきりさせることが、健全な職場環境には欠かせない。", "id": "Menetapkan batasan yang jelas antara urusan profesional dan pribadi adalah hal yang tidak bisa diabaikan dalam lingkungan kerja yang sehat.", "level": "n1", "tags": ["pekerjaan", "hubungan-konsep"]},
-    {"jp": "芸術と商業の<b>境界線</b>は年々曖昧になっている。", "id": "Garis batas antara seni dan komersial semakin kabur dari tahun ke tahun.", "level": "n1", "tags": ["seni-budaya", "bisnis"]}
+    {
+      "jp": "公私の<b>境界線</b>をはっきりさせることが、健全な職場環境には欠かせない。",
+      "id": "Menetapkan batasan yang jelas antara urusan profesional dan pribadi adalah hal yang tidak bisa diabaikan dalam lingkungan kerja yang sehat.",
+      "level": "n1",
+      "tags": [
+        "pekerjaan",
+        "hubungan-konsep"
+      ]
+    },
+    {
+      "jp": "芸術と商業の<b>境界線</b>は年々曖昧になっている。",
+      "id": "Garis batas antara seni dan komersial semakin kabur dari tahun ke tahun.",
+      "level": "n1",
+      "tags": [
+        "seni-budaya",
+        "bisnis"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00209"],
+  "see_also": [
+    "vg-n1-00209"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1235970"
 },
 
 {
@@ -4748,20 +13828,44 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["ilmu-pengetahuan", "pikiran-opini", "perubahan"],
+  "domain": [
+    "ilmu-pengetahuan",
+    "pikiran-opini",
+    "perubahan"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Istilah dari filsuf sains Thomas Kuhn (1962). Berbeda dari 世界観 yang bersifat personal, パラダイム mengacu pada kerangka konseptual yang dianut oleh komunitas ilmiah atau masyarakat secara kolektif. パラダイムシフト (paradigm shift) = pergeseran paradigma besar yang merevolusi cara berpikir suatu bidang.",
   "conj_type": null,
   "examples": [
-    {"jp": "コペルニクスの地動説は天文学の<b>パラダイム</b>を根底から覆した。", "id": "Teori heliosentris Copernicus meruntuhkan paradigma astronomi dari dasarnya.", "level": "n1", "tags": ["ilmu-pengetahuan"]},
-    {"jp": "AIの登場は、働き方の<b>パラダイム</b>そのものを変えつつある。", "id": "Kemunculan AI sedang mengubah paradigma cara kerja itu sendiri.", "level": "n1", "tags": ["teknologi", "perubahan"]}
+    {
+      "jp": "コペルニクスの地動説は天文学の<b>パラダイム</b>を根底から覆した。",
+      "id": "Teori heliosentris Copernicus meruntuhkan paradigma astronomi dari dasarnya.",
+      "level": "n1",
+      "tags": [
+        "ilmu-pengetahuan"
+      ]
+    },
+    {
+      "jp": "AIの登場は、働き方の<b>パラダイム</b>そのものを変えつつある。",
+      "id": "Kemunculan AI sedang mengubah paradigma cara kerja itu sendiri.",
+      "level": "n1",
+      "tags": [
+        "teknologi",
+        "perubahan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00184"],
+  "see_also": [
+    "vg-n1-00184"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1102510"
 },
 
   // ── EXPRESSIONS (4) ────────────────────────────────────────
@@ -4778,20 +13882,83 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["pikiran-opini", "bahasa-komunikasi", "politik-masyarakat"],
+  "domain": [
+    "pikiran-opini",
+    "bahasa-komunikasi",
+    "politik-masyarakat"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum", "rekan"],
+  "lawan_bicara": [
+    "umum",
+    "rekan"
+  ],
   "nuance": "Metafora dari seni ukir relief (浮き彫り) di mana figur muncul dari latar. Berbeda dari 強調する (menekankan secara eksplisit), 浮き彫りにする menyiratkan bahwa sesuatu yang sudah ada menjadi tampak jelas — sering dipakai dalam konteks masalah sosial yang 'terkuak' atau 'terungkap'.",
   "conj_type": null,
   "examples": [
-    {"jp": "この事件は社会格差の問題を<b>浮き彫りにした</b>。", "id": "Insiden ini menyoroti dengan jelas masalah kesenjangan sosial yang selama ini ada.", "level": "n1", "tags": ["politik-masyarakat"]},
-    {"jp": "調査結果は制度の欠陥を<b>浮き彫りにして</b>いる。", "id": "Hasil investigasi menonjolkan kelemahan sistem yang selama ini tersembunyi.", "level": "n1", "tags": ["hukum-aturan"]}
+    {
+      "jp": "この事件は社会格差の問題を<b>浮き彫りにした</b>。",
+      "id": "Insiden ini menyoroti dengan jelas masalah kesenjangan sosial yang selama ini ada.",
+      "level": "n1",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "調査結果は制度の欠陥を<b>浮き彫りにして</b>いる。",
+      "id": "Hasil investigasi menonjolkan kelemahan sistem yang selama ini tersembunyi.",
+      "level": "n1",
+      "tags": [
+        "hukum-aturan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "2859780",
+  "forms": [
+    {
+      "word": "浮き彫りにする",
+      "info": []
+    },
+    {
+      "word": "浮彫りにする",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "浮彫にする",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "浮き彫にする",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "to emboss; to carve in relief",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to bring to the fore; to accentuate; to throw into relief",
+      "misc": [
+        "idiomatic expression"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "idiomatic expression"
+  ]
 },
 
 {
@@ -4834,20 +14001,67 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["keputusan", "pikiran-opini"],
+  "domain": [
+    "keputusan",
+    "pikiran-opini"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum", "rekan"],
+  "lawan_bicara": [
+    "umum",
+    "rekan"
+  ],
   "nuance": "Yojijukugo: 本 (hal utama/pokok) + 末 (hal sekunder/ujung) + 転倒 (terbalik). Menggambarkan kondisi di mana yang utama dan yang tidak utama tertukar posisinya. Sering dipakai untuk mengkritik kebijakan, keputusan, atau perilaku yang salah prioritas. Berbeda dari ただ「間違い」(kesalahan umum), 本末転倒 lebih spesifik pada urutan atau hierarki nilai yang terbalik.",
   "conj_type": null,
   "examples": [
-    {"jp": "健康のために運動するのに、それで体を壊すのでは<b>本末転倒</b>だ。", "id": "Berolahraga demi kesehatan tapi malah merusak tubuh — itu namanya terbalik prioritas.", "level": "n1", "tags": ["kesehatan", "keputusan"]},
-    {"jp": "試験に合格するための勉強が目的になってしまうのは<b>本末転倒</b>だ。", "id": "Belajar yang bertujuan hanya untuk lulus ujian adalah terbaliknya prioritas.", "level": "n1", "tags": ["pendidikan", "keputusan"]}
+    {
+      "jp": "健康のために運動するのに、それで体を壊すのでは<b>本末転倒</b>だ。",
+      "id": "Berolahraga demi kesehatan tapi malah merusak tubuh — itu namanya terbalik prioritas.",
+      "level": "n1",
+      "tags": [
+        "kesehatan",
+        "keputusan"
+      ]
+    },
+    {
+      "jp": "試験に合格するための勉強が目的になってしまうのは<b>本末転倒</b>だ。",
+      "id": "Belajar yang bertujuan hanya untuk lulus ujian adalah terbaliknya prioritas.",
+      "level": "n1",
+      "tags": [
+        "pendidikan",
+        "keputusan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00147"],
+  "see_also": [
+    "vg-n1-00147"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1603640",
+  "frequency": 13000,
+  "forms": [
+    {
+      "word": "本末転倒",
+      "info": []
+    },
+    {
+      "word": "本末顛倒",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "本末顚倒",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    }
+  ],
+  "misc_jm": [
+    "yojijukugo"
+  ]
 },
 
 {
@@ -4862,20 +14076,49 @@ window.vocabN1 = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["keputusan", "kehidupan-sehari"],
+  "domain": [
+    "keputusan",
+    "kehidupan-sehari"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum", "teman"],
+  "lawan_bicara": [
+    "umum",
+    "teman"
+  ],
   "nuance": "Yojijukugo yang berarti satu tindakan menghasilkan dua keuntungan sekaligus. 一石二鳥だ = itu seperti sekali mendayung dua pulau terlampaui. Sering dipakai secara positif untuk memuji efisiensi atau keberuntungan. Berbeda dari 効率的 (kouritsu-teki = efisien dalam arti teknis), 一石二鳥 lebih ekspresif dan mengandung unsur kegembiraan atas manfaat ganda yang diperoleh.",
   "conj_type": null,
   "examples": [
-    {"jp": "通勤しながら語学学習をするのは<b>一石二鳥</b>だ。", "id": "Belajar bahasa sambil berangkat kerja — itu seperti sekali mendayung dua pulau terlampaui.", "level": "n1", "tags": ["kehidupan-sehari", "pendidikan"]},
-    {"jp": "旅行で観光もビジネスもこなせるなら<b>一石二鳥</b>だ。", "id": "Jika dalam satu perjalanan bisa sekaligus wisata dan urusan bisnis, itu benar-benar menguntungkan dua sisi.", "level": "n1", "tags": ["perjalanan", "bisnis"]}
+    {
+      "jp": "通勤しながら語学学習をするのは<b>一石二鳥</b>だ。",
+      "id": "Belajar bahasa sambil berangkat kerja — itu seperti sekali mendayung dua pulau terlampaui.",
+      "level": "n1",
+      "tags": [
+        "kehidupan-sehari",
+        "pendidikan"
+      ]
+    },
+    {
+      "jp": "旅行で観光もビジネスもこなせるなら<b>一石二鳥</b>だ。",
+      "id": "Jika dalam satu perjalanan bisa sekaligus wisata dan urusan bisnis, itu benar-benar menguntungkan dua sisi.",
+      "level": "n1",
+      "tags": [
+        "perjalanan",
+        "bisnis"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00146"],
+  "see_also": [
+    "vg-n1-00146"
+  ],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1164160",
+  "frequency": 11000,
+  "misc_jm": [
+    "yojijukugo"
+  ]
 }
 
 ];

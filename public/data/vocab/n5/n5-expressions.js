@@ -28,7 +28,11 @@ window.vocabN5_Expressions = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1295060',
+  frequency: 1000,
+  meanings: [{"en": "excuse me; pardon me; I'm sorry; I beg your pardon", "misc": ["biasanya kana saja", "polite (teineigo) language"], "field": []}, {"en": "thank you; you shouldn't have; it's too much", "misc": ["biasanya kana saja", "polite (teineigo) language"], "field": []}],
+  misc_jm: ["biasanya kana saja", "polite (teineigo) language"],
 },
 
 {
@@ -53,7 +57,11 @@ window.vocabN5_Expressions = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1541040',
+  frequency: 1000,
+  forms: [{"word": "有難うございます", "info": []}, {"word": "有り難うございます", "info": []}, {"word": "有難う御座います", "info": []}, {"word": "ありがとう御座います", "info": []}, {"word": "有り難う御座います", "info": []}],
+  misc_jm: ["biasanya kana saja", "polite (teineigo) language"],
 },
 
 {
@@ -78,7 +86,11 @@ window.vocabN5_Expressions = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1189130',
+  frequency: 1000,
+  meanings: [{"en": "please; kindly; pray; I beg (of you)", "misc": [], "field": []}, {"en": "by all means; certainly; of course; (go) ahead; (feel) free (to); (you are) welcome (to); please (help yourself to)", "misc": [], "field": []}, {"en": "here you are", "misc": [], "field": []}, {"en": "to give", "misc": ["children's language"], "field": []}],
+  misc_jm: ["children's language"],
 },
 
 {
@@ -153,7 +165,8 @@ window.vocabN5_Expressions = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2196920',
 },
 
 {
@@ -178,7 +191,8 @@ window.vocabN5_Expressions = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2836288',
 },
 
 {
@@ -353,7 +367,10 @@ window.vocabN5_Expressions = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1911810',
+  forms: [{"word": "眼鏡をかける", "info": []}, {"word": "眼鏡を掛ける", "info": []}, {"word": "メガネを掛ける", "info": []}, {"word": "めがねを掛ける", "info": []}],
+  misc_jm: ["biasanya kana saja"],
 },
 
 {

@@ -28,7 +28,11 @@ window.vocabN5_Adverbs = [
   antonyms: ['vg-n5-00114'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1415870',
+  frequency: 21500,
+  meanings: [{"en": "a lot; lots; plenty; many; a large number; much; a great deal; a good deal", "misc": ["biasanya kana saja"], "field": []}, {"en": "enough; sufficient", "misc": ["biasanya kana saja"], "field": []}, {"en": "enough; too many; too much", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -53,7 +57,11 @@ window.vocabN5_Adverbs = [
   antonyms: ['vg-n5-00113'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1348870',
+  frequency: 500,
+  forms: [{"word": "少し", "info": []}, {"word": "寡し", "info": ["kanji jarang dipakai"]}, {"word": "些し", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "a little; a bit; a small amount; a few; some; slightly; somewhat", "misc": [], "field": []}, {"en": "a little while; a short time; a moment; a minute", "misc": [], "field": []}, {"en": "a little way; a short distance", "misc": [], "field": []}],
 },
 
 {
@@ -78,7 +86,10 @@ window.vocabN5_Adverbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1012480',
+  frequency: 1000,
+  meanings: [{"en": "already; yet; by now; now; (not) any more; (not) any longer", "misc": [], "field": []}, {"en": "soon; shortly; before long; presently", "misc": [], "field": []}, {"en": "further; more; again; another; the other", "misc": [], "field": []}, {"en": "jeez; geez; gee; boy; come on; damn; seriously", "misc": [], "field": []}],
 },
 
 {
@@ -103,7 +114,11 @@ window.vocabN5_Adverbs = [
   antonyms: ['vg-n5-00115'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1527110',
+  frequency: 1000,
+  meanings: [{"en": "still; as yet; only", "misc": ["biasanya kana saja"], "field": []}, {"en": "(not) yet", "misc": ["biasanya kana saja"], "field": []}, {"en": "more; (more) still", "misc": ["biasanya kana saja"], "field": []}, {"en": "at least; comparatively; relatively", "misc": ["biasanya kana saja"], "field": []}, {"en": "unfinished; incomplete; not yet done", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -128,7 +143,10 @@ window.vocabN5_Adverbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1163420',
+  frequency: 1000,
+  meanings: [{"en": "together (with)", "misc": [], "field": []}, {"en": "at the same time", "misc": [], "field": []}, {"en": "in one lump; in the same category", "misc": [], "field": []}],
 },
 
 {
@@ -153,7 +171,12 @@ window.vocabN5_Adverbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1013050',
+  frequency: 1000,
+  meanings: [{"en": "slowly; unhurriedly; without haste; leisurely; at one's leisure", "misc": ["onomatopoeic or mimetic word"], "field": []}, {"en": "easily (e.g. in time); well; sufficiently; amply; with time to spare", "misc": ["onomatopoeic or mimetic word"], "field": []}, {"en": "well (e.g. sleep); comfortably", "misc": ["onomatopoeic or mimetic word"], "field": []}],
+  misc_jm: ["onomatopoeic or mimetic word"],
+  conjugations: {"dict": "ゆっくり", "masu": "ゆっくりします", "te": "ゆっくりして", "ta": "ゆっくりした", "nai": "ゆっくりしない", "potential": "ゆっくりできる", "passive": "ゆっくりされる", "causative": "ゆっくりさせる", "volitional": "ゆっくりしよう", "cond_ba": "ゆっくりすれば", "cond_tara": "ゆっくりしたら"},
 },
 
 {
@@ -178,7 +201,11 @@ window.vocabN5_Adverbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1188890',
+  frequency: 1000,
+  meanings: [{"en": "always; all the time; at all times", "misc": ["biasanya kana saja"], "field": []}, {"en": "never", "misc": ["biasanya kana saja"], "field": []}, {"en": "usual; regular; habitual; customary", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -203,7 +230,11 @@ window.vocabN5_Adverbs = [
   antonyms: [],
   see_also: ['vg-n5-00119'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1598680',
+  frequency: 3500,
+  forms: [{"word": "時々", "info": []}, {"word": "時時", "info": []}, {"word": "時どき", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "sometimes; occasionally; at times; from time to time; now and then; once in a while; at intervals", "misc": [], "field": []}, {"en": "seasonal; of the season; appropriate (for the season or occasion)", "misc": [], "field": []}],
 },
 
 {
@@ -228,7 +259,10 @@ window.vocabN5_Adverbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1008460',
+  frequency: 1000,
+  meanings: [{"en": "but; however; though; nevertheless; still; yet; even so; also; as well", "misc": [], "field": []}, {"en": "even", "misc": [], "field": []}, {"en": "however; no matter how; even if; even though", "misc": [], "field": []}, {"en": "... or something", "misc": [], "field": []}, {"en": "either ... or ...; neither ... nor ...", "misc": [], "field": []}, {"en": "pseudo-; quack; in-name-only", "misc": [], "field": []}, {"en": "for lack of anything better to do", "misc": [], "field": []}],
 },
 
 {
@@ -253,7 +287,11 @@ window.vocabN5_Adverbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1006730',
+  frequency: 1000,
+  forms: [{"word": "而して", "info": ["kanji jarang dipakai"]}, {"word": "然して", "info": ["kanji jarang dipakai"]}],
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -278,7 +316,12 @@ window.vocabN5_Adverbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1414580',
+  frequency: 12000,
+  forms: [{"word": "大抵", "info": []}, {"word": "大てい", "info": []}],
+  meanings: [{"en": "mostly; ordinarily; usually; generally", "misc": ["biasanya kana saja"], "field": []}, {"en": "probably", "misc": [], "field": []}, {"en": "most; almost all", "misc": [], "field": []}, {"en": "ordinary", "misc": [], "field": []}, {"en": "proper; appropriate; moderate", "misc": [], "field": []}],
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -303,7 +346,11 @@ window.vocabN5_Adverbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1598680',
+  frequency: 3500,
+  forms: [{"word": "時々", "info": []}, {"word": "時時", "info": []}, {"word": "時どき", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "sometimes; occasionally; at times; from time to time; now and then; once in a while; at intervals", "misc": [], "field": []}, {"en": "seasonal; of the season; appropriate (for the season or occasion)", "misc": [], "field": []}],
 },
 
 {
@@ -328,7 +375,12 @@ window.vocabN5_Adverbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1584930',
+  frequency: 7500,
+  forms: [{"word": "余り", "info": []}, {"word": "餘り", "info": ["word containing out-dated kanji or kanji usage"]}, {"word": "剰り", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "remainder; remnant; rest; balance; surplus; remains (of a meal); leftovers", "misc": ["biasanya kana saja"], "field": []}, {"en": "(not) very; (not) much", "misc": ["biasanya kana saja"], "field": []}, {"en": "too much; excessively; overly", "misc": ["biasanya kana saja"], "field": []}, {"en": "extreme; great; severe; tremendous; terrible", "misc": [], "field": []}, {"en": "not very good; so-so; mediocre", "misc": ["percakapan kasual"], "field": []}, {"en": "more than; over", "misc": [], "field": []}],
+  misc_jm: ["biasanya kana saja", "kasual"],
 },
 
 {
@@ -353,7 +405,12 @@ window.vocabN5_Adverbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1395620',
+  frequency: 8000,
+  forms: [{"word": "全然", "info": []}, {"word": "全っ然", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "(not) at all; (not) in the slightest", "misc": [], "field": []}, {"en": "wholly; entirely; completely; totally", "misc": [], "field": []}, {"en": "extremely; very", "misc": ["percakapan kasual"], "field": []}],
+  misc_jm: ["kasual"],
 },
 
 {
@@ -378,7 +435,10 @@ window.vocabN5_Adverbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1547320',
+  frequency: 5500,
+  forms: [{"word": "欲", "info": []}, {"word": "慾", "info": ["kanji jarang dipakai"]}],
 },
 
 {
@@ -403,7 +463,11 @@ window.vocabN5_Adverbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1008630',
+  frequency: 1000,
+  meanings: [{"en": "very; awfully; exceedingly", "misc": ["biasanya kana saja"], "field": []}, {"en": "(not) at all; by no means; simply (cannot)", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -428,7 +492,11 @@ window.vocabN5_Adverbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1414470',
+  frequency: 6500,
+  meanings: [{"en": "generally; on the whole; mostly; almost; nearly; approximately; roughly; about", "misc": ["biasanya kana saja"], "field": []}, {"en": "general; rough", "misc": ["biasanya kana saja"], "field": []}, {"en": "outline; main points; gist; substance; essence", "misc": ["biasanya kana saja"], "field": []}, {"en": "in the first place; first and foremost; from the start; to begin with", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -453,7 +521,9 @@ window.vocabN5_Adverbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1012620',
+  frequency: 1000,
 },
 
 {
@@ -503,7 +573,12 @@ window.vocabN5_Adverbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1163940',
+  frequency: 1000,
+  forms: [{"word": "一寸", "info": ["kanji jarang dipakai"]}, {"word": "鳥渡", "info": ["ateji (phonetic) reading", "kanji jarang dipakai"]}],
+  meanings: [{"en": "a little; a bit; slightly", "misc": ["biasanya kana saja"], "field": []}, {"en": "just a minute; for a moment; briefly", "misc": ["biasanya kana saja"], "field": []}, {"en": "somewhat; rather; fairly; pretty; quite", "misc": ["biasanya kana saja"], "field": []}, {"en": "(not) easily; (not) readily", "misc": ["biasanya kana saja"], "field": []}, {"en": "hey!; come on; excuse me", "misc": ["biasanya kana saja"], "field": []}, {"en": "thanks, but no; not feasible; not possible", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
 }
 
 ];

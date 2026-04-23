@@ -18,20 +18,51 @@ window.vocabN3_Expressions = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["pertemanan", "emosi-sosial"],
+  "domain": [
+    "pertemanan",
+    "emosi-sosial"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["teman", "umum"],
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
   "nuance": "Idiom yang berarti bersedia aktif mendengarkan dan membantu seseorang yang punya masalah. Lebih dari sekadar 聞く — menyiratkan keterlibatan dan dukungan nyata. 相談を受ける memiliki nuansa yang lebih formal.",
   "conj_type": null,
   "examples": [
-    {"jp": "いつでも相談に乗るから、気軽に話してね。", "id": "Kapan saja saya siap membantu, jadi bicaralah tanpa sungkan.", "level": "n3", "tags": ["pertemanan"]},
-    {"jp": "友達の就活の相談に乗った。", "id": "Saya membantu teman yang galau soal mencari kerja.", "level": "n3", "tags": ["pekerjaan"]}
+    {
+      "jp": "いつでも相談に乗るから、気軽に話してね。",
+      "id": "Kapan saja saya siap membantu, jadi bicaralah tanpa sungkan.",
+      "level": "n3",
+      "tags": [
+        "pertemanan"
+      ]
+    },
+    {
+      "jp": "友達の就活の相談に乗った。",
+      "id": "Saya membantu teman yang galau soal mencari kerja.",
+      "level": "n3",
+      "tags": [
+        "pekerjaan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1853990",
+  "forms": [
+    {
+      "word": "相談に乗る",
+      "info": []
+    },
+    {
+      "word": "相談にのる",
+      "info": []
+    }
+  ]
 },
 
 {
@@ -130,20 +161,42 @@ window.vocabN3_Expressions = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["bahasa-komunikasi", "sebab-akibat"],
+  "domain": [
+    "bahasa-komunikasi",
+    "sebab-akibat"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Menyatakan hasil/akibat dari tindakan atau kejadian yang disebutkan sebelumnya — fokus pada outcome nyata. Berbeda dari したがって yang menarik kesimpulan logis, その結果 menekankan apa yang benar-benar terjadi setelah suatu proses atau usaha. Cocok untuk laporan dan narasi.",
   "conj_type": null,
   "examples": [
-    {"jp": "毎日一時間ずつ練習した。<b>その結果</b>、大会で優勝することができた。", "id": "Aku berlatih satu jam setiap hari. Hasilnya, aku berhasil memenangkan kompetisi.", "level": "n3", "tags": ["olahraga", "sebab-akibat"]},
-    {"jp": "工場からの排水が川に流れ込んだ。<b>その結果</b>、川の魚が大量に死んだ。", "id": "Limbah pabrik mengalir ke sungai. Akibatnya, ikan di sungai mati dalam jumlah besar.", "level": "n3", "tags": ["alam-lingkungan", "sebab-akibat"]}
+    {
+      "jp": "毎日一時間ずつ練習した。<b>その結果</b>、大会で優勝することができた。",
+      "id": "Aku berlatih satu jam setiap hari. Hasilnya, aku berhasil memenangkan kompetisi.",
+      "level": "n3",
+      "tags": [
+        "olahraga",
+        "sebab-akibat"
+      ]
+    },
+    {
+      "jp": "工場からの排水が川に流れ込んだ。<b>その結果</b>、川の魚が大量に死んだ。",
+      "id": "Limbah pabrik mengalir ke sungai. Akibatnya, ikan di sungai mati dalam jumlah besar.",
+      "level": "n3",
+      "tags": [
+        "alam-lingkungan",
+        "sebab-akibat"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "2851217"
 },
 
 {
@@ -158,20 +211,67 @@ window.vocabN3_Expressions = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["bahasa-komunikasi", "pikiran-opini"],
+  "domain": [
+    "bahasa-komunikasi",
+    "pikiran-opini"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Lebih kuat dan formal dari でも atau しかし — menekankan bahwa sesuatu terjadi atau dilakukan 'terlepas dari' hambatan yang jelas. Sering dipakai dalam konteks yang serius seperti debat, esai, berita. Versi kasualnya adalah それでも. かかわらず berasal dari 関わる (terkait/terpengaruh) + ず (negasi).",
   "conj_type": null,
   "examples": [
-    {"jp": "医師に安静にするよう言われた。<b>それにもかかわらず</b>、彼は仕事に復帰した。", "id": "Dokter menyuruhnya beristirahat. Meskipun demikian, dia kembali bekerja.", "level": "n3", "tags": ["kesehatan", "pekerjaan"]},
-    {"jp": "多くの困難があった。<b>それにもかかわらず</b>、チームは目標を達成した。", "id": "Ada banyak kesulitan. Terlepas dari itu, tim berhasil mencapai tujuannya.", "level": "n3", "tags": ["pekerjaan", "karakter"]}
+    {
+      "jp": "医師に安静にするよう言われた。<b>それにもかかわらず</b>、彼は仕事に復帰した。",
+      "id": "Dokter menyuruhnya beristirahat. Meskipun demikian, dia kembali bekerja.",
+      "level": "n3",
+      "tags": [
+        "kesehatan",
+        "pekerjaan"
+      ]
+    },
+    {
+      "jp": "多くの困難があった。<b>それにもかかわらず</b>、チームは目標を達成した。",
+      "id": "Ada banyak kesulitan. Terlepas dari itu, tim berhasil mencapai tujuannya.",
+      "level": "n3",
+      "tags": [
+        "pekerjaan",
+        "karakter"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "2454160",
+  "forms": [
+    {
+      "word": "それにも関わらず",
+      "info": []
+    },
+    {
+      "word": "それにも拘わらず",
+      "info": []
+    },
+    {
+      "word": "それにも拘らず",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "それにも関らず",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
 },
 
 {
@@ -186,20 +286,46 @@ window.vocabN3_Expressions = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["pikiran-opini", "emosi"],
+  "domain": [
+    "pikiran-opini",
+    "emosi"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari どうも yang menyiratkan kesan samar — なぜか lebih tegas menyatakan bahwa pembicara tidak mengetahui atau tidak bisa menjelaskan alasannya. Bisa muncul di awal kalimat (なぜか悲しくなった) atau di tengah. Juga bisa dipakai retoris untuk efek naratif.",
   "conj_type": null,
   "examples": [
-    {"jp": "<b>なぜか</b>、その曲を聴くと昔のことを思い出してしまう。", "id": "Entah kenapa, saat mendengar lagu itu aku selalu teringat masa lalu.", "level": "n3", "tags": ["emosi", "hiburan"]},
-    {"jp": "彼女に会うと<b>なぜか</b>緊張する。自分でもよくわからない。", "id": "Entah kenapa aku selalu gugup kalau bertemu dengannya. Aku sendiri pun tidak mengerti.", "level": "n3", "tags": ["emosi", "percintaan"]}
+    {
+      "jp": "<b>なぜか</b>、その曲を聴くと昔のことを思い出してしまう。",
+      "id": "Entah kenapa, saat mendengar lagu itu aku selalu teringat masa lalu.",
+      "level": "n3",
+      "tags": [
+        "emosi",
+        "hiburan"
+      ]
+    },
+    {
+      "jp": "彼女に会うと<b>なぜか</b>緊張する。自分でもよくわからない。",
+      "id": "Entah kenapa aku selalu gugup kalau bertemu dengannya. Aku sendiri pun tidak mengerti.",
+      "level": "n3",
+      "tags": [
+        "emosi",
+        "percintaan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
   "provenance": "jlpt-corpus",
-  "added_v": "v15"
+  "added_v": "v15",
+  "jmdict_seq": "1610980",
+  "frequency": 1000,
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
 },
 
 {

@@ -28,7 +28,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1451210',
+  frequency: 1000,
+  meanings: [{"en": "to move; to stir; to shift; to shake; to swing", "misc": [], "field": []}, {"en": "to operate; to run; to go; to work", "misc": [], "field": []}, {"en": "to make a move; to take action; to act; to go into action", "misc": [], "field": []}, {"en": "to be touched; to be influenced", "misc": [], "field": []}, {"en": "to change; to vary; to fluctuate; to waver", "misc": [], "field": []}, {"en": "to be transferred", "misc": [], "field": []}],
+  conjugations: {"dict": "うごく", "masu": "うごきます", "te": "うごいて", "ta": "うごいた", "nai": "うごかない", "potential": "うごける", "passive": "うごかれる", "causative": "うごかせる", "volitional": "うごこう", "cond_ba": "うごけば", "cond_tara": "うごいたら"},
 },
 
 {
@@ -53,7 +57,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1451170',
+  frequency: 9000,
+  meanings: [{"en": "to move; to shift; to stir; to budge; to change position", "misc": [], "field": []}, {"en": "to inspire; to rouse; to move (e.g. feeling); to influence", "misc": [], "field": []}, {"en": "to change; to alter; to deny", "misc": [], "field": []}, {"en": "to operate; to set in motion; to get going", "misc": [], "field": []}, {"en": "to mobilize (e.g. troops); to mobilise; to deploy", "misc": [], "field": []}, {"en": "to manage (e.g. funds)", "misc": [], "field": []}],
+  conjugations: {"dict": "うごかす", "masu": "うごかします", "te": "うごかして", "ta": "うごかした", "nai": "うごかさない", "potential": "うごかせる", "passive": "うごかされる", "causative": "うごかさせる", "volitional": "うごかそう", "cond_ba": "うごかせば", "cond_tara": "うごかしたら"},
 },
 
 {
@@ -78,7 +86,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1172910',
+  frequency: 500,
+  meanings: [{"en": "exercise; physical training; workout; sports; athletics", "misc": [], "field": []}, {"en": "appeal; campaign; drive; crusade; movement; lobbying", "misc": [], "field": []}, {"en": "motion; movement", "misc": [], "field": []}],
+  conjugations: {"dict": "うんどう", "masu": "うんどうします", "te": "うんどうして", "ta": "うんどうした", "nai": "うんどうしない", "potential": "うんどうできる", "passive": "うんどうされる", "causative": "うんどうさせる", "volitional": "うんどうしよう", "cond_ba": "うんどうすれば", "cond_tara": "うんどうしたら"},
 },
 
 {
@@ -103,7 +115,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1172660',
+  frequency: 3000,
+  meanings: [{"en": "to carry; to transport; to move; to convey", "misc": [], "field": []}, {"en": "to come; to go", "misc": ["honorific or respectful (sonkeigo) language"], "field": []}, {"en": "to use (a brush, chopsticks, etc.); to move", "misc": [], "field": []}, {"en": "to carry out; to proceed with; to arrange", "misc": [], "field": []}, {"en": "to go (well, etc.); to proceed; to progress", "misc": [], "field": []}],
+  misc_jm: ["honorific or respectful (sonkeigo) language"],
+  conjugations: {"dict": "はこぶ", "masu": "はこびます", "te": "はこんで", "ta": "はこんだ", "nai": "はこばない", "potential": "はこべる", "passive": "はこばれる", "causative": "はこばせる", "volitional": "はこぼう", "cond_ba": "はこべば", "cond_tara": "はこんだら"},
 },
 
 {
@@ -128,7 +145,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: ['vg-n4-00318'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1172830',
+  frequency: 1000,
+  meanings: [{"en": "operation (of a machine); running; working", "misc": [], "field": []}, {"en": "driving (a vehicle)", "misc": [], "field": []}, {"en": "use (of capital, funds, etc.); management; investment", "misc": [], "field": []}],
+  conjugations: {"dict": "うんてん", "masu": "うんてんします", "te": "うんてんして", "ta": "うんてんした", "nai": "うんてんしない", "potential": "うんてんできる", "passive": "うんてんされる", "causative": "うんてんさせる", "volitional": "うんてんしよう", "cond_ba": "うんてんすれば", "cond_tara": "うんてんしたら"},
 },
 
 {
@@ -153,7 +174,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1402540',
+  frequency: 5000,
+  forms: [{"word": "走る", "info": []}, {"word": "奔る", "info": ["kanji jarang dipakai"]}, {"word": "疾る", "info": ["kanji jarang dipakai"]}, {"word": "趨る", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "to run", "misc": [], "field": []}, {"en": "to run (of a vehicle); to drive; to travel; to move; to sail", "misc": [], "field": []}, {"en": "to rush (to); to dash; to race", "misc": [], "field": []}, {"en": "to retreat; to flee; to defect (to)", "misc": [], "field": []}, {"en": "to run away; to abscond; to elope", "misc": [], "field": []}, {"en": "to flash (of lightning); to streak; to shoot (through; e.g. of pain); to run (through); to flare; to flit (e.g. across one's face); to spread quickly (of news, shock, etc.)", "misc": [], "field": []}, {"en": "to go (e.g. bad, to extremes); to become; to turn; to take to (e.g. crime); to get carried away by (e.g. one's emotions); to get involved in; to get wrapped up in", "misc": [], "field": []}, {"en": "to run (through; of a road, street, etc.); to extend (e.g. of a mountain range); to stretch; to lie", "misc": [], "field": []}],
+  conjugations: {"dict": "はしる", "masu": "はしります", "te": "はしって", "ta": "はしった", "nai": "はしらない", "potential": "はしれる", "passive": "はしられる", "causative": "はしらせる", "volitional": "はしろう", "cond_ba": "はしれば", "cond_tara": "はしったら"},
 },
 
 {
@@ -178,7 +204,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1402430',
+  frequency: 16500,
+  forms: [{"word": "走り回る", "info": []}, {"word": "走り廻る", "info": ["kanji jarang dipakai"]}, {"word": "走りまわる", "info": ["search-only kanji form"]}],
+  conjugations: {"dict": "はしりまわる", "masu": "はしりまわります", "te": "はしりまわって", "ta": "はしりまわった", "nai": "はしりまわらない", "potential": "はしりまわれる", "passive": "はしりまわられる", "causative": "はしりまわらせる", "volitional": "はしりまわろう", "cond_ba": "はしりまわれば", "cond_tara": "はしりまわったら"},
 },
 
 {
@@ -203,7 +233,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1223660',
+  frequency: 6500,
+  forms: [{"word": "起こす", "info": []}, {"word": "起す", "info": []}],
+  meanings: [{"en": "to raise; to raise up; to set up; to pick up", "misc": [], "field": []}, {"en": "to wake; to wake up; to waken; to awaken", "misc": [], "field": []}, {"en": "to cause; to bring about; to lead to; to trigger; to give rise to; to create; to generate (e.g. heat, electricity); to produce", "misc": [], "field": []}, {"en": "to start; to begin; to launch; to establish; to found; to set up; to open", "misc": [], "field": []}, {"en": "to plough; to plow; to till", "misc": [], "field": []}, {"en": "to fall ill with", "misc": [], "field": []}, {"en": "to transcribe; to write down (what is spoken)", "misc": [], "field": []}, {"en": "to turn over (a card)", "misc": [], "field": []}],
+  conjugations: {"dict": "おこす", "masu": "おこします", "te": "おこして", "ta": "おこした", "nai": "おこさない", "potential": "おこせる", "passive": "おこされる", "causative": "おこさせる", "volitional": "おこそう", "cond_ba": "おこせば", "cond_tara": "おこしたら"},
 },
 
 {
@@ -228,7 +263,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1223680',
+  frequency: 7500,
+  forms: [{"word": "起こる", "info": []}, {"word": "起る", "info": []}],
+  conjugations: {"dict": "おこる", "masu": "おこります", "te": "おこって", "ta": "おこった", "nai": "おこらない", "potential": "おこれる", "passive": "おこられる", "causative": "おこらせる", "volitional": "おころう", "cond_ba": "おこれば", "cond_tara": "おこったら"},
 },
 
 {
@@ -253,7 +292,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: ['vg-n4-00320'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1390980',
+  frequency: 4500,
+  forms: [{"word": "洗濯", "info": []}, {"word": "洗たく", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "washing; laundry", "misc": [], "field": []}, {"en": "relaxation; rejuvenation; melting away (of worries, fatigue, etc.)", "misc": [], "field": []}],
+  conjugations: {"dict": "せんたく", "masu": "せんたくします", "te": "せんたくして", "ta": "せんたくした", "nai": "せんたくしない", "potential": "せんたくできる", "passive": "せんたくされる", "causative": "せんたくさせる", "volitional": "せんたくしよう", "cond_ba": "せんたくすれば", "cond_tara": "せんたくしたら"},
 },
 
 {
@@ -278,7 +322,13 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1607260',
+  frequency: 1000,
+  forms: [{"word": "履く", "info": []}, {"word": "穿く", "info": []}, {"word": "佩く", "info": ["kanji jarang dipakai"]}, {"word": "着く", "info": ["kanji jarang dipakai"]}, {"word": "帯く", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "to put on (lower-body clothing, e.g. pants, skirt, footwear); to wear", "misc": [], "field": []}, {"en": "to affix (a sword to one's hip)", "misc": [], "field": []}, {"en": "to affix (a bowstring to a bow)", "misc": ["archaic"], "field": []}],
+  misc_jm: ["arkais"],
+  conjugations: {"dict": "つく", "masu": "つきます", "te": "ついて", "ta": "ついた", "nai": "つかない", "potential": "つける", "passive": "つかれる", "causative": "つかせる", "volitional": "つこう", "cond_ba": "つけば", "cond_tara": "ついたら"},
 },
 
 {
@@ -303,7 +353,10 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: ['vg-n4-00306'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1449870',
+  frequency: 4000,
+  conjugations: {"dict": "とうちゃく", "masu": "とうちゃくします", "te": "とうちゃくして", "ta": "とうちゃくした", "nai": "とうちゃくしない", "potential": "とうちゃくできる", "passive": "とうちゃくされる", "causative": "とうちゃくさせる", "volitional": "とうちゃくしよう", "cond_ba": "とうちゃくすれば", "cond_tara": "とうちゃくしたら"},
 },
 
 {
@@ -328,7 +381,10 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1519210',
+  frequency: 1000,
+  conjugations: {"dict": "わすれる", "masu": "わすれます", "te": "わすれて", "ta": "わすれた", "nai": "わすれない", "potential": "わすれられる", "passive": "わすれられる", "causative": "わすれさせる", "volitional": "わすれよう", "cond_ba": "わすれれば", "cond_tara": "わすれたら"},
 },
 
 {
@@ -353,7 +409,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1351360',
+  frequency: 11000,
+  forms: [{"word": "笑う", "info": []}, {"word": "嗤う", "info": ["kanji jarang dipakai"]}, {"word": "哂う", "info": ["search-only kanji form"]}, {"word": "咲う", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to laugh", "misc": [], "field": []}, {"en": "to smile", "misc": [], "field": []}, {"en": "to sneer; to ridicule", "misc": [], "field": []}, {"en": "to be dumbfounded; to be flabbergasted", "misc": [], "field": []}],
+  conjugations: {"dict": "わらう", "masu": "わらいます", "te": "わらって", "ta": "わらった", "nai": "わらわない", "potential": "わらえる", "passive": "わらわれる", "causative": "わらわせる", "volitional": "わらおう", "cond_ba": "わらえば", "cond_tara": "わらったら"},
 },
 
 {
@@ -378,7 +439,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1229840',
+  frequency: 1000,
+  meanings: [{"en": "to cry; to shed tears; to weep; to sob", "misc": [], "field": []}, {"en": "to suffer (from); to be troubled (by); to face hardship", "misc": [], "field": []}, {"en": "to accept (an unreasonable request, loss, etc.); to do reluctantly; to make sacrifices", "misc": [], "field": []}, {"en": "to be not worth the name; to suffer (of a reputation); to be spoiled; to be put to shame", "misc": [], "field": []}, {"en": "to lament; to bemoan; to bewail", "misc": [], "field": []}],
+  conjugations: {"dict": "なく", "masu": "なきます", "te": "ないて", "ta": "ないた", "nai": "なかない", "potential": "なける", "passive": "なかれる", "causative": "なかせる", "volitional": "なこう", "cond_ba": "なけば", "cond_tara": "ないたら"},
 },
 
 {
@@ -403,7 +468,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2859682',
+  forms: [{"word": "怒る", "info": []}, {"word": "瞋る", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "to get angry; to get mad", "misc": ["formal or literary term"], "field": []}, {"en": "to be angular; to be square", "misc": [], "field": []}],
+  misc_jm: ["formal or literary term"],
+  conjugations: {"dict": "おこる", "masu": "おこります", "te": "おこって", "ta": "おこった", "nai": "おこらない", "potential": "おこれる", "passive": "おこられる", "causative": "おこらせる", "volitional": "おころう", "cond_ba": "おこれば", "cond_tara": "おこったら"},
 },
 
 {
@@ -428,7 +498,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1289590',
+  frequency: 15000,
+  meanings: [{"en": "to be troubled; to have difficulty; to be in a fix; to be at a loss; to be stumped; to be embarrassed", "misc": [], "field": []}, {"en": "to be bothered; to be inconvenienced; to be annoyed", "misc": [], "field": []}, {"en": "to be badly off; to be hard up; to be in straitened circumstances", "misc": [], "field": []}],
+  conjugations: {"dict": "こまる", "masu": "こまります", "te": "こまって", "ta": "こまった", "nai": "こまらない", "potential": "こまれる", "passive": "こまられる", "causative": "こまらせる", "volitional": "こまろう", "cond_ba": "こまれば", "cond_tara": "こまったら"},
 },
 
 {
@@ -453,7 +527,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: ['vg-n4-00314'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1360930',
+  frequency: 2000,
+  meanings: [{"en": "worry; concern; anxiety; uneasiness; fear", "misc": [], "field": []}, {"en": "care; help; aid; assistance", "misc": ["dated term"], "field": []}],
+  misc_jm: ["dated term"],
+  conjugations: {"dict": "しんぱい", "masu": "しんぱいします", "te": "しんぱいして", "ta": "しんぱいした", "nai": "しんぱいしない", "potential": "しんぱいできる", "passive": "しんぱいされる", "causative": "しんぱいさせる", "volitional": "しんぱいしよう", "cond_ba": "しんぱいすれば", "cond_tara": "しんぱいしたら"},
 },
 
 {
@@ -478,7 +557,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "はしをわたる", "masu": "はしをわたります", "te": "はしをわたって", "ta": "はしをわたった", "nai": "はしをわたらない", "potential": "はしをわたれる", "passive": "はしをわたられる", "causative": "はしをわたらせる", "volitional": "はしをわたろう", "cond_ba": "はしをわたれば", "cond_tara": "はしをわたったら"},
 },
 
 {
@@ -503,7 +583,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1600470',
+  frequency: 11500,
+  forms: [{"word": "乗り換える", "info": []}, {"word": "乗り替える", "info": ["kanji jarang dipakai"]}, {"word": "乗りかえる", "info": ["search-only kanji form"]}, {"word": "乗換える", "info": ["search-only kanji form"]}, {"word": "乗替える", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to transfer (trains); to change (bus, train)", "misc": [], "field": []}, {"en": "to change (to another ideology, party, company, etc.); to switch (to a different system, method, etc.); to move on to (e.g. a new love interest)", "misc": [], "field": []}],
+  conjugations: {"dict": "のりかえる", "masu": "のりかえます", "te": "のりかえて", "ta": "のりかえた", "nai": "のりかえない", "potential": "のりかえられる", "passive": "のりかえられる", "causative": "のりかえさせる", "volitional": "のりかえよう", "cond_ba": "のりかえれば", "cond_tara": "のりかえたら"},
 },
 
 {
@@ -528,7 +613,13 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1606450',
+  frequency: 500,
+  forms: [{"word": "労働", "info": []}, {"word": "労動", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "labor; labour; work", "misc": [], "field": []}, {"en": "Labour Party", "misc": ["abbreviation"], "field": []}],
+  misc_jm: ["abbreviation"],
+  conjugations: {"dict": "ろうどう", "masu": "ろうどうします", "te": "ろうどうして", "ta": "ろうどうした", "nai": "ろうどうしない", "potential": "ろうどうできる", "passive": "ろうどうされる", "causative": "ろうどうさせる", "volitional": "ろうどうしよう", "cond_ba": "ろうどうすれば", "cond_tara": "ろうどうしたら"},
 },
 
 {
@@ -553,7 +644,10 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1516750',
+  frequency: 500,
+  conjugations: {"dict": "ほうそう", "masu": "ほうそうします", "te": "ほうそうして", "ta": "ほうそうした", "nai": "ほうそうしない", "potential": "ほうそうできる", "passive": "ほうそうされる", "causative": "ほうそうさせる", "volitional": "ほうそうしよう", "cond_ba": "ほうそうすれば", "cond_tara": "ほうそうしたら"},
 },
 
 {
@@ -578,7 +672,13 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1329590',
+  frequency: 12000,
+  forms: [{"word": "受ける", "info": []}, {"word": "請ける", "info": []}, {"word": "承ける", "info": []}, {"word": "享ける", "info": []}],
+  meanings: [{"en": "to receive; to get", "misc": [], "field": []}, {"en": "to catch (e.g. a ball)", "misc": [], "field": []}, {"en": "to be struck by (wind, waves, sunlight, etc.)", "misc": [], "field": []}, {"en": "to sustain (damage); to incur (a loss); to suffer (an injury); to feel (influence)", "misc": [], "field": []}, {"en": "to undergo (e.g. surgery); to take (a test); to accept (a challenge)", "misc": [], "field": []}, {"en": "to be given (e.g. life, talent)", "misc": [], "field": []}, {"en": "to find funny; to find humorous; to be amused (by)", "misc": ["percakapan kasual", "biasanya kana saja"], "field": []}, {"en": "to follow; to succeed; to be descended from", "misc": [], "field": []}, {"en": "to face (south, etc.)", "misc": [], "field": []}, {"en": "to be modified by", "misc": [], "field": ["linguistics"]}, {"en": "to obtain (a pawned item, etc.) by paying a fee", "misc": [], "field": []}, {"en": "to be well-received; to become popular; to go down well", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja", "kasual"],
+  conjugations: {"dict": "うける", "masu": "うけます", "te": "うけて", "ta": "うけた", "nai": "うけない", "potential": "うけられる", "passive": "うけられる", "causative": "うけさせる", "volitional": "うけよう", "cond_ba": "うければ", "cond_tara": "うけたら"},
 },
 
 {
@@ -603,7 +703,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1329650',
+  frequency: 6000,
+  forms: [{"word": "受け取る", "info": []}, {"word": "受取る", "info": []}, {"word": "受けとる", "info": ["search-only kanji form"]}, {"word": "うけ取る", "info": ["search-only kanji form"]}, {"word": "請け取る", "info": ["search-only kanji form"]}, {"word": "請取る", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to receive; to get; to accept", "misc": [], "field": []}, {"en": "to take (someone's words or behaviour); to interpret; to understand", "misc": [], "field": []}],
+  conjugations: {"dict": "うけとる", "masu": "うけとります", "te": "うけとって", "ta": "うけとった", "nai": "うけとらない", "potential": "うけとれる", "passive": "うけとられる", "causative": "うけとらせる", "volitional": "うけとろう", "cond_ba": "うけとれば", "cond_tara": "うけとったら"},
 },
 
 {
@@ -628,7 +733,10 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1429060',
+  frequency: 21000,
+  conjugations: {"dict": "しらべる", "masu": "しらべます", "te": "しらべて", "ta": "しらべた", "nai": "しらべない", "potential": "しらべられる", "passive": "しらべられる", "causative": "しらべさせる", "volitional": "しらべよう", "cond_ba": "しらべれば", "cond_tara": "しらべたら"},
 },
 
 {
@@ -653,7 +761,10 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1429310',
+  frequency: 4000,
+  conjugations: {"dict": "ちょうり", "masu": "ちょうりします", "te": "ちょうりして", "ta": "ちょうりした", "nai": "ちょうりしない", "potential": "ちょうりできる", "passive": "ちょうりされる", "causative": "ちょうりさせる", "volitional": "ちょうりしよう", "cond_ba": "ちょうりすれば", "cond_tara": "ちょうりしたら"},
 },
 
 {
@@ -678,7 +789,13 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1169250',
+  frequency: 1000,
+  forms: [{"word": "引く", "info": []}, {"word": "曳く", "info": []}, {"word": "牽く", "info": []}],
+  meanings: [{"en": "to pull; to tug; to lead (e.g. a horse)", "misc": [], "field": []}, {"en": "to draw (attention, sympathy, etc.); to attract (e.g. interest)", "misc": [], "field": []}, {"en": "to draw back (e.g. one's hand); to draw in (one's chin, stomach, etc.); to pull in", "misc": [], "field": []}, {"en": "to draw (a card, mahjong tile, etc.)", "misc": [], "field": []}, {"en": "to draw (a line, plan, etc.)", "misc": [], "field": []}, {"en": "to catch (a cold)", "misc": [], "field": []}, {"en": "to play (a stringed or keyboard instrument)", "misc": [], "field": []}, {"en": "to look up (in a dictionary, phone book, etc.); to consult; to check", "misc": [], "field": []}, {"en": "to haul; to pull (vehicles)", "misc": [], "field": []}, {"en": "to subtract; to deduct", "misc": [], "field": []}, {"en": "to recede; to ebb; to fade", "misc": [], "field": []}, {"en": "to be descend from; to inherit (a characteristic)", "misc": [], "field": []}, {"en": "to quote; to cite; to raise (as evidence)", "misc": [], "field": []}, {"en": "to lay on (electricity, gas, etc.); to install (e.g. a telephone); to supply (e.g. water)", "misc": [], "field": []}, {"en": "to hold (e.g. a note)", "misc": [], "field": []}, {"en": "to apply (e.g. lipstick); to oil (e.g. a pan); to wax (e.g. a floor)", "misc": [], "field": []}, {"en": "to move back; to draw back; to recede; to fall back; to retreat", "misc": [], "field": []}, {"en": "to lessen; to subside; to ebb; to go down (e.g. of swelling)", "misc": [], "field": []}, {"en": "to resign; to retire; to quit", "misc": [], "field": []}, {"en": "to be put off (by someone's words or behaviour); to be turned off; to recoil (in disgust, etc.); to cringe", "misc": ["percakapan kasual"], "field": []}],
+  misc_jm: ["kasual"],
+  conjugations: {"dict": "ひく", "masu": "ひきます", "te": "ひいて", "ta": "ひいた", "nai": "ひかない", "potential": "ひける", "passive": "ひかれる", "causative": "ひかせる", "volitional": "ひこう", "cond_ba": "ひけば", "cond_tara": "ひいたら"},
 },
 
 {
@@ -703,7 +820,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1169340',
+  frequency: 9000,
+  forms: [{"word": "引っ越す", "info": []}, {"word": "引越す", "info": ["search-only kanji form"]}, {"word": "引っこす", "info": ["search-only kanji form"]}, {"word": "ひっ越す", "info": ["search-only kanji form"]}],
+  conjugations: {"dict": "ひっこす", "masu": "ひっこします", "te": "ひっこして", "ta": "ひっこした", "nai": "ひっこさない", "potential": "ひっこせる", "passive": "ひっこされる", "causative": "ひっこさせる", "volitional": "ひっこそう", "cond_ba": "ひっこせば", "cond_tara": "ひっこしたら"},
 },
 
 {
@@ -728,7 +849,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1312260',
+  frequency: 9000,
+  forms: [{"word": "試す", "info": []}, {"word": "験す", "info": ["kanji jarang dipakai"]}],
+  conjugations: {"dict": "ためす", "masu": "ためします", "te": "ためして", "ta": "ためした", "nai": "ためさない", "potential": "ためせる", "passive": "ためされる", "causative": "ためさせる", "volitional": "ためそう", "cond_ba": "ためせば", "cond_tara": "ためしたら"},
 },
 
 {
@@ -753,7 +878,10 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1333070',
+  frequency: 21000,
+  conjugations: {"dict": "ならう", "masu": "ならいます", "te": "ならって", "ta": "ならった", "nai": "ならわない", "potential": "ならえる", "passive": "ならわれる", "causative": "ならわせる", "volitional": "ならおう", "cond_ba": "ならえば", "cond_tara": "ならったら"},
 },
 
 {
@@ -778,7 +906,10 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1559160',
+  frequency: 1000,
+  conjugations: {"dict": "れんしゅう", "masu": "れんしゅうします", "te": "れんしゅうして", "ta": "れんしゅうした", "nai": "れんしゅうしない", "potential": "れんしゅうできる", "passive": "れんしゅうされる", "causative": "れんしゅうさせる", "volitional": "れんしゅうしよう", "cond_ba": "れんしゅうすれば", "cond_tara": "れんしゅうしたら"},
 },
 
 {
@@ -803,7 +934,10 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1543070',
+  frequency: 18000,
+  conjugations: {"dict": "よしゅう", "masu": "よしゅうします", "te": "よしゅうして", "ta": "よしゅうした", "nai": "よしゅうしない", "potential": "よしゅうできる", "passive": "よしゅうされる", "causative": "よしゅうさせる", "volitional": "よしゅうしよう", "cond_ba": "よしゅうすれば", "cond_tara": "よしゅうしたら"},
 },
 
 {
@@ -828,7 +962,10 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1500800',
+  frequency: 18500,
+  conjugations: {"dict": "ふくしゅう", "masu": "ふくしゅうします", "te": "ふくしゅうして", "ta": "ふくしゅうした", "nai": "ふくしゅうしない", "potential": "ふくしゅうできる", "passive": "ふくしゅうされる", "causative": "ふくしゅうさせる", "volitional": "ふくしゅうしよう", "cond_ba": "ふくしゅうすれば", "cond_tara": "ふくしゅうしたら"},
 },
 
 {
@@ -853,7 +990,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1307550',
+  frequency: 8500,
+  forms: [{"word": "始める", "info": []}, {"word": "創める", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "to start; to begin; to commence; to initiate; to originate", "misc": [], "field": []}, {"en": "to start up (a business, society, etc.); to open (e.g. a store); to establish", "misc": [], "field": []}, {"en": "to start ...; to begin to ...", "misc": [], "field": []}],
+  conjugations: {"dict": "はじめる", "masu": "はじめます", "te": "はじめて", "ta": "はじめた", "nai": "はじめない", "potential": "はじめられる", "passive": "はじめられる", "causative": "はじめさせる", "volitional": "はじめよう", "cond_ba": "はじめれば", "cond_tara": "はじめたら"},
 },
 
 {
@@ -878,7 +1020,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1332760',
+  frequency: 3000,
+  forms: [{"word": "終える", "info": []}, {"word": "了える", "info": []}, {"word": "卒える", "info": []}],
+  meanings: [{"en": "to finish", "misc": [], "field": []}, {"en": "to graduate", "misc": [], "field": []}],
+  conjugations: {"dict": "おえる", "masu": "おえます", "te": "おえて", "ta": "おえた", "nai": "おえない", "potential": "おえられる", "passive": "おえられる", "causative": "おえさせる", "volitional": "おえよう", "cond_ba": "おえれば", "cond_tara": "おえたら"},
 },
 
 {
@@ -903,7 +1050,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1405790',
+  frequency: 1000,
+  meanings: [{"en": "to continue; to last; to go on", "misc": [], "field": []}, {"en": "to continue (without a break); to be unbroken", "misc": [], "field": []}, {"en": "to occur again and again", "misc": [], "field": []}, {"en": "to lead to; to connect to; to adjoin", "misc": [], "field": []}, {"en": "to come after; to follow; to succeed; to rank next to", "misc": [], "field": []}, {"en": "to hold out; to keep; to last", "misc": [], "field": []}],
+  conjugations: {"dict": "つづく", "masu": "つづきます", "te": "つづいて", "ta": "つづいた", "nai": "つづかない", "potential": "つづける", "passive": "つづかれる", "causative": "つづかせる", "volitional": "つづこう", "cond_ba": "つづけば", "cond_tara": "つづいたら"},
 },
 
 {
@@ -928,7 +1079,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1405800',
+  frequency: 1000,
+  meanings: [{"en": "to continue; to keep up; to keep on", "misc": [], "field": []}, {"en": "to continue ...; to keep on ...", "misc": [], "field": []}],
+  conjugations: {"dict": "つづける", "masu": "つづけます", "te": "つづけて", "ta": "つづけた", "nai": "つづけない", "potential": "つづけられる", "passive": "つづけられる", "causative": "つづけさせる", "volitional": "つづけよう", "cond_ba": "つづければ", "cond_tara": "つづけたら"},
 },
 
 {
@@ -953,7 +1108,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1562310',
+  frequency: 5500,
+  forms: [{"word": "話し合う", "info": []}, {"word": "話しあう", "info": []}, {"word": "話合う", "info": []}],
+  conjugations: {"dict": "はなしあう", "masu": "はなしあいます", "te": "はなしあって", "ta": "はなしあった", "nai": "はなしあわない", "potential": "はなしあえる", "passive": "はなしあわれる", "causative": "はなしあわせる", "volitional": "はなしあおう", "cond_ba": "はなしあえば", "cond_tara": "はなしあったら"},
 },
 
 {
@@ -978,7 +1137,13 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: ['vg-n4-00307'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1559900',
+  frequency: 1000,
+  forms: [{"word": "連絡", "info": []}, {"word": "聯絡", "info": ["kanji jarang dipakai"]}, {"word": "連らく", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "contacting; (making) contact; getting in touch; communication; correspondence; call; message", "misc": [], "field": []}, {"en": "connection (with a train, bus, etc.); joining (a railway line, etc.); meeting", "misc": [], "field": []}, {"en": "connection (between matters, incidents, etc.); relation; link", "misc": ["formal or literary term"], "field": []}],
+  misc_jm: ["formal or literary term"],
+  conjugations: {"dict": "れんらく", "masu": "れんらくします", "te": "れんらくして", "ta": "れんらくした", "nai": "れんらくしない", "potential": "れんらくできる", "passive": "れんらくされる", "causative": "れんらくさせる", "volitional": "れんらくしよう", "cond_ba": "れんらくすれば", "cond_tara": "れんらくしたら"},
 },
 
 {
@@ -1003,7 +1168,10 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1559290',
+  frequency: 8000,
+  conjugations: {"dict": "つれる", "masu": "つれます", "te": "つれて", "ta": "つれた", "nai": "つれない", "potential": "つれられる", "passive": "つれられる", "causative": "つれさせる", "volitional": "つれよう", "cond_ba": "つれれば", "cond_tara": "つれたら"},
 },
 
 {
@@ -1028,7 +1196,13 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1548370',
+  frequency: 4000,
+  forms: [{"word": "頼む", "info": []}, {"word": "恃む", "info": ["kanji jarang dipakai"]}, {"word": "憑む", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "to request; to beg; to ask", "misc": [], "field": []}, {"en": "to call; to order; to reserve", "misc": [], "field": []}, {"en": "to entrust to", "misc": [], "field": []}, {"en": "to rely on", "misc": [], "field": []}, {"en": "please; please do; help me out here", "misc": ["percakapan kasual"], "field": []}],
+  misc_jm: ["kasual"],
+  conjugations: {"dict": "たのむ", "masu": "たのみます", "te": "たのんで", "ta": "たのんだ", "nai": "たのまない", "potential": "たのめる", "passive": "たのまれる", "causative": "たのませる", "volitional": "たのもう", "cond_ba": "たのめば", "cond_tara": "たのんだら"},
 },
 
 {
@@ -1053,7 +1227,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1597200',
+  frequency: 9500,
+  forms: [{"word": "頼る", "info": []}, {"word": "便る", "info": ["kanji jarang dipakai"]}],
+  conjugations: {"dict": "たよる", "masu": "たよります", "te": "たよって", "ta": "たよった", "nai": "たよらない", "potential": "たよれる", "passive": "たよられる", "causative": "たよらせる", "volitional": "たよろう", "cond_ba": "たよれば", "cond_tara": "たよったら"},
 },
 
 {
@@ -1078,7 +1256,10 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1359730',
+  frequency: 1500,
+  conjugations: {"dict": "しんらい", "masu": "しんらいします", "te": "しんらいして", "ta": "しんらいした", "nai": "しんらいしない", "potential": "しんらいできる", "passive": "しんらいされる", "causative": "しんらいさせる", "volitional": "しんらいしよう", "cond_ba": "しんらいすれば", "cond_tara": "しんらいしたら"},
 },
 
 {
@@ -1103,7 +1284,10 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1257330',
+  frequency: 1000,
+  conjugations: {"dict": "たてる", "masu": "たてます", "te": "たてて", "ta": "たてた", "nai": "たてない", "potential": "たてられる", "passive": "たてられる", "causative": "たてさせる", "volitional": "たてよう", "cond_ba": "たてれば", "cond_tara": "たてたら"},
 },
 
 {
@@ -1128,7 +1312,10 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1257500',
+  frequency: 1500,
+  conjugations: {"dict": "けんちく", "masu": "けんちくします", "te": "けんちくして", "ta": "けんちくした", "nai": "けんちくしない", "potential": "けんちくできる", "passive": "けんちくされる", "causative": "けんちくさせる", "volitional": "けんちくしよう", "cond_ba": "けんちくすれば", "cond_tara": "けんちくしたら"},
 },
 
 {
@@ -1153,7 +1340,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1215810',
+  frequency: 500,
+  meanings: [{"en": "relation; relationship; connection", "misc": [], "field": []}, {"en": "participation; involvement; concern", "misc": [], "field": []}, {"en": "influence; effect", "misc": [], "field": []}, {"en": "sexual relations; sexual relationship", "misc": [], "field": []}, {"en": "related to; connected to", "misc": [], "field": []}],
+  conjugations: {"dict": "かんけい", "masu": "かんけいします", "te": "かんけいして", "ta": "かんけいした", "nai": "かんけいしない", "potential": "かんけいできる", "passive": "かんけいされる", "causative": "かんけいさせる", "volitional": "かんけいしよう", "cond_ba": "かんけいすれば", "cond_tara": "かんけいしたら"},
 },
 
 {
@@ -1178,7 +1369,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1254180',
+  frequency: 11000,
+  forms: [{"word": "決める", "info": []}, {"word": "極める", "info": []}],
+  meanings: [{"en": "to decide; to choose; to determine; to make up one's mind; to resolve; to set one's heart on; to settle; to arrange; to set; to appoint; to fix", "misc": [], "field": []}, {"en": "to clinch (a victory); to decide (the outcome of a match)", "misc": [], "field": []}, {"en": "to persist in doing; to go through with", "misc": [], "field": []}, {"en": "to always do; to have made a habit of", "misc": [], "field": []}, {"en": "to take for granted; to assume", "misc": [], "field": []}, {"en": "to dress up; to dress to kill; to dress to the nines", "misc": [], "field": []}, {"en": "to carry out successfully (a move in sports, a pose in dance, etc.); to succeed in doing", "misc": [], "field": []}, {"en": "to immobilize with a double-arm lock (in sumo, judo, etc.)", "misc": [], "field": ["martial arts", "sumo"]}, {"en": "to eat or drink something; to take illegal drugs", "misc": [], "field": []}],
+  conjugations: {"dict": "きめる", "masu": "きめます", "te": "きめて", "ta": "きめた", "nai": "きめない", "potential": "きめられる", "passive": "きめられる", "causative": "きめさせる", "volitional": "きめよう", "cond_ba": "きめれば", "cond_tara": "きめたら"},
 },
 
 {
@@ -1203,7 +1399,13 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1591420',
+  frequency: 7000,
+  forms: [{"word": "決まる", "info": []}, {"word": "決る", "info": ["okurigana tidak biasa"]}, {"word": "極る", "info": []}],
+  meanings: [{"en": "to be decided; to be settled; to be fixed; to be arranged", "misc": [], "field": []}, {"en": "to be unchanging; to be the same (as always); to be fixed; to be set", "misc": [], "field": []}, {"en": "to be a fixed rule; to be destined; to be a convention; to be a custom; to be common knowledge", "misc": [], "field": []}, {"en": "to be well executed (of a manoeuvre in a sport, game, etc.); to go well; to succeed; to connect (of a punch)", "misc": [], "field": []}, {"en": "to look good (of clothing); to look sharp; to be stylish; to suit one; to be held in place (of a hairdo)", "misc": [], "field": []}, {"en": "to be struck and held (of a pose in kabuki)", "misc": [], "field": []}, {"en": "to get high (on drugs)", "misc": ["slang", "biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja", "slang"],
+  conjugations: {"dict": "きまる", "masu": "きまります", "te": "きまって", "ta": "きまった", "nai": "きまらない", "potential": "きまれる", "passive": "きまられる", "causative": "きまらせる", "volitional": "きまろう", "cond_ba": "きまれば", "cond_tara": "きまったら"},
 },
 
 {
@@ -1228,7 +1430,10 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1198960',
+  frequency: 500,
+  conjugations: {"dict": "かいけつ", "masu": "かいけつします", "te": "かいけつして", "ta": "かいけつした", "nai": "かいけつしない", "potential": "かいけつできる", "passive": "かいけつされる", "causative": "かいけつさせる", "volitional": "かいけつしよう", "cond_ba": "かいけつすれば", "cond_tara": "かいけつしたら"},
 },
 
 {
@@ -1253,7 +1458,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1588730',
+  frequency: 1000,
+  forms: [{"word": "選ぶ", "info": []}, {"word": "撰ぶ", "info": ["kanji jarang dipakai"]}, {"word": "択ぶ", "info": ["kanji jarang dipakai"]}],
+  conjugations: {"dict": "えらぶ", "masu": "えらびます", "te": "えらんで", "ta": "えらんだ", "nai": "えらばない", "potential": "えらべる", "passive": "えらばれる", "causative": "えらばせる", "volitional": "えらぼう", "cond_ba": "えらべば", "cond_tara": "えらんだら"},
 },
 
 {
@@ -1278,7 +1487,10 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1392290',
+  frequency: 1500,
+  conjugations: {"dict": "せんたく", "masu": "せんたくします", "te": "せんたくして", "ta": "せんたくした", "nai": "せんたくしない", "potential": "せんたくできる", "passive": "せんたくされる", "causative": "せんたくさせる", "volitional": "せんたくしよう", "cond_ba": "せんたくすれば", "cond_tara": "せんたくしたら"},
 },
 
 {
@@ -1303,7 +1515,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1510790',
+  frequency: 1500,
+  forms: [{"word": "変わる", "info": []}, {"word": "変る", "info": []}],
+  meanings: [{"en": "to change; to be transformed; to be altered; to vary", "misc": [], "field": []}, {"en": "to move to", "misc": [], "field": []}, {"en": "to be different; to be uncommon; to be unusual", "misc": [], "field": []}],
+  conjugations: {"dict": "かわる", "masu": "かわります", "te": "かわって", "ta": "かわった", "nai": "かわらない", "potential": "かわれる", "passive": "かわられる", "causative": "かわらせる", "volitional": "かわろう", "cond_ba": "かわれば", "cond_tara": "かわったら"},
 },
 
 {
@@ -1328,7 +1545,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1510650',
+  frequency: 17000,
+  meanings: [{"en": "to change; to alter; to transform; to convert; to turn; to vary", "misc": [], "field": []}, {"en": "to reform; to revise; to amend", "misc": [], "field": []}],
+  conjugations: {"dict": "かえる", "masu": "かえます", "te": "かえて", "ta": "かえた", "nai": "かえない", "potential": "かえられる", "passive": "かえられる", "causative": "かえさせる", "volitional": "かえよう", "cond_ba": "かえれば", "cond_tara": "かえたら"},
 },
 
 {
@@ -1353,7 +1574,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1599390',
+  frequency: 19000,
+  meanings: [{"en": "to repair; to mend; to fix; to correct (a mistake, bad habit, etc.); to put right; to restore; to straighten (e.g. a tie); to tidy up (one's hair, make-up, etc.); to revive (one's spirits)", "misc": [], "field": []}, {"en": "to change; to alter; to convert; to translate", "misc": [], "field": []}, {"en": "to put back; to put away", "misc": [], "field": []}, {"en": "to cure; to heal", "misc": [], "field": []}, {"en": "to move up; to promote", "misc": ["dated term"], "field": []}, {"en": "to do over again; to redo", "misc": [], "field": []}],
+  misc_jm: ["dated term"],
+  conjugations: {"dict": "なおす", "masu": "なおします", "te": "なおして", "ta": "なおした", "nai": "なおさない", "potential": "なおせる", "passive": "なおされる", "causative": "なおさせる", "volitional": "なおそう", "cond_ba": "なおせば", "cond_tara": "なおしたら"},
 },
 
 {
@@ -1378,7 +1604,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2846390',
+  frequency: 1000,
+  meanings: [{"en": "to get mended; to be repaired; to be fixed", "misc": [], "field": []}, {"en": "to return to normal; to recover (e.g. one's temper); to be restored; to improve; to rally; to come right", "misc": [], "field": []}, {"en": "to be corrected; to get put right; to be rectified", "misc": [], "field": []}, {"en": "to come right; to cure (itself); to get cured", "misc": [], "field": []}, {"en": "to sit properly", "misc": [], "field": []}, {"en": "to be promoted; to rise", "misc": [], "field": []}, {"en": "to have one's crimes forgiven", "misc": [], "field": []}],
+  conjugations: {"dict": "なおる", "masu": "なおります", "te": "なおって", "ta": "なおった", "nai": "なおらない", "potential": "なおれる", "passive": "なおられる", "causative": "なおらせる", "volitional": "なおろう", "cond_ba": "なおれば", "cond_tara": "なおったら"},
 },
 
 {
@@ -1403,7 +1633,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1218760',
+  frequency: 7500,
+  forms: [{"word": "喜ぶ", "info": []}, {"word": "悦ぶ", "info": ["kanji jarang dipakai"]}, {"word": "歓ぶ", "info": ["kanji jarang dipakai"]}, {"word": "慶ぶ", "info": ["kanji jarang dipakai"]}, {"word": "欣ぶ", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to be delighted; to be glad; to be pleased; to rejoice", "misc": [], "field": []}, {"en": "to congratulate", "misc": [], "field": []}, {"en": "to welcome (a proposal, advice, etc.); to take kindly to", "misc": [], "field": []}, {"en": "to do with pleasure; to do gladly; to be happy (to do)", "misc": [], "field": []}],
+  conjugations: {"dict": "よろこぶ", "masu": "よろこびます", "te": "よろこんで", "ta": "よろこんだ", "nai": "よろこばない", "potential": "よろこべる", "passive": "よろこばれる", "causative": "よろこばせる", "volitional": "よろこぼう", "cond_ba": "よろこべば", "cond_tara": "よろこんだら"},
 },
 
 {
@@ -1428,7 +1663,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1483200',
+  frequency: 11500,
+  forms: [{"word": "悲しむ", "info": []}, {"word": "哀しむ", "info": []}],
+  conjugations: {"dict": "かなしむ", "masu": "かなしみます", "te": "かなしんで", "ta": "かなしんだ", "nai": "かなしまない", "potential": "かなしめる", "passive": "かなしまれる", "causative": "かなしませる", "volitional": "かなしもう", "cond_ba": "かなしめば", "cond_tara": "かなしんだら"},
 },
 
 {
@@ -1453,7 +1692,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1281020',
+  frequency: 5000,
+  forms: [{"word": "考える", "info": []}, {"word": "勘える", "info": ["kanji jarang dipakai"]}, {"word": "稽える", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "to think (about, of); to think over; to ponder; to contemplate; to reflect (on); to meditate (on)", "misc": [], "field": []}, {"en": "to consider; to bear in mind; to allow for; to take into consideration", "misc": [], "field": []}, {"en": "to think (that); to believe; to hold (a view); to judge; to conclude; to suspect", "misc": [], "field": []}, {"en": "to intend (to do); to think of (doing); to plan", "misc": [], "field": []}, {"en": "to predict; to anticipate; to expect; to imagine", "misc": [], "field": []}, {"en": "to come up with; to think up; to contrive; to devise", "misc": [], "field": []}, {"en": "to consider (as); to regard (as); to look on (as); to take; to view", "misc": [], "field": []}],
+  conjugations: {"dict": "かんがえる", "masu": "かんがえます", "te": "かんがえて", "ta": "かんがえた", "nai": "かんがえない", "potential": "かんがえられる", "passive": "かんがえられる", "causative": "かんがえさせる", "volitional": "かんがえよう", "cond_ba": "かんがえれば", "cond_tara": "かんがえたら"},
 },
 
 {
@@ -1478,7 +1722,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1372900',
+  frequency: 8500,
+  forms: [{"word": "数える", "info": []}, {"word": "算える", "info": ["kanji jarang dipakai"]}],
+  conjugations: {"dict": "かぞえる", "masu": "かぞえます", "te": "かぞえて", "ta": "かぞえた", "nai": "かぞえない", "potential": "かぞえられる", "passive": "かぞえられる", "causative": "かぞえさせる", "volitional": "かぞえよう", "cond_ba": "かぞえれば", "cond_tara": "かぞえたら"},
 },
 
 {
@@ -1503,7 +1751,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1333550',
+  frequency: 10000,
+  forms: [{"word": "集まる", "info": []}, {"word": "集る", "info": ["okurigana tidak biasa"]}],
+  conjugations: {"dict": "あつまる", "masu": "あつまります", "te": "あつまって", "ta": "あつまった", "nai": "あつまらない", "potential": "あつまれる", "passive": "あつまられる", "causative": "あつまらせる", "volitional": "あつまろう", "cond_ba": "あつまれば", "cond_tara": "あつまったら"},
 },
 
 {
@@ -1528,7 +1780,10 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1333560',
+  frequency: 3500,
+  conjugations: {"dict": "あつめる", "masu": "あつめます", "te": "あつめて", "ta": "あつめた", "nai": "あつめない", "potential": "あつめられる", "passive": "あつめられる", "causative": "あつめさせる", "volitional": "あつめよう", "cond_ba": "あつめれば", "cond_tara": "あつめたら"},
 },
 
 {
@@ -1553,7 +1808,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1333680',
+  frequency: 4500,
+  meanings: [{"en": "meeting up; gathering; assembly", "misc": [], "field": []}, {"en": "set", "misc": [], "field": ["mathematics"]}],
+  conjugations: {"dict": "しゅうごう", "masu": "しゅうごうします", "te": "しゅうごうして", "ta": "しゅうごうした", "nai": "しゅうごうしない", "potential": "しゅうごうできる", "passive": "しゅうごうされる", "causative": "しゅうごうさせる", "volitional": "しゅうごうしよう", "cond_ba": "しゅうごうすれば", "cond_tara": "しゅうごうしたら"},
 },
 
 {
@@ -1578,7 +1837,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1512130',
+  frequency: 10000,
+  forms: [{"word": "返す", "info": []}, {"word": "反す", "info": []}],
+  meanings: [{"en": "to return (something); to restore; to put back", "misc": [], "field": []}, {"en": "to turn over; to turn upside down; to overturn", "misc": [], "field": []}, {"en": "to pay back; to retaliate; to reciprocate", "misc": [], "field": []}, {"en": "to respond (with); to retort; to reply; to say back", "misc": [], "field": []}, {"en": "to do ... back (e.g. speak back, throw back)", "misc": [], "field": []}, {"en": "to do again; to do repeatedly", "misc": [], "field": []}],
+  conjugations: {"dict": "かえす", "masu": "かえします", "te": "かえして", "ta": "かえした", "nai": "かえさない", "potential": "かえせる", "passive": "かえされる", "causative": "かえさせる", "volitional": "かえそう", "cond_ba": "かえせば", "cond_tara": "かえしたら"},
 },
 
 {
@@ -1603,7 +1867,10 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1512180',
+  frequency: 12500,
+  conjugations: {"dict": "へんきゃく", "masu": "へんきゃくします", "te": "へんきゃくして", "ta": "へんきゃくした", "nai": "へんきゃくしない", "potential": "へんきゃくできる", "passive": "へんきゃくされる", "causative": "へんきゃくさせる", "volitional": "へんきゃくしよう", "cond_ba": "へんきゃくすれば", "cond_tara": "へんきゃくしたら"},
 },
 
 {
@@ -1628,7 +1895,13 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1444680',
+  frequency: 20500,
+  forms: [{"word": "渡る", "info": []}, {"word": "亘る", "info": ["search-only kanji form"]}, {"word": "渉る", "info": ["search-only kanji form"]}, {"word": "亙る", "info": ["search-only kanji form"]}, {"word": "弥る", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to cross over; to go across", "misc": [], "field": []}, {"en": "to extend; to cover; to range; to span", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
+  conjugations: {"dict": "わたる", "masu": "わたります", "te": "わたって", "ta": "わたった", "nai": "わたらない", "potential": "わたれる", "passive": "わたられる", "causative": "わたらせる", "volitional": "わたろう", "cond_ba": "わたれば", "cond_tara": "わたったら"},
 },
 
 {
@@ -1653,7 +1926,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1444610',
+  frequency: 5500,
+  meanings: [{"en": "to ferry across (e.g. a river); to carry across; to traverse", "misc": [], "field": []}, {"en": "to lay across; to build across", "misc": [], "field": []}, {"en": "to hand over; to hand in; to pass; to give; to transfer", "misc": [], "field": []}],
+  conjugations: {"dict": "わたす", "masu": "わたします", "te": "わたして", "ta": "わたした", "nai": "わたさない", "potential": "わたせる", "passive": "わたされる", "causative": "わたさせる", "volitional": "わたそう", "cond_ba": "わたせば", "cond_tara": "わたしたら"},
 },
 
 {
@@ -1678,7 +1955,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1421850',
+  frequency: 1000,
+  meanings: [{"en": "to put; to place", "misc": [], "field": []}, {"en": "to leave (behind)", "misc": [], "field": []}, {"en": "to establish (an organization, a facility, a position, etc.); to set up", "misc": [], "field": []}, {"en": "to appoint (someone to a certain position); to hire; to employ", "misc": [], "field": []}, {"en": "to place (one's trust, one's faith, etc.); to bear (in mind, etc.)", "misc": [], "field": []}, {"en": "to put down a tool (e.g. a pen) hence stopping what one is doing with that tool", "misc": [], "field": []}, {"en": "to take in (boarders, etc.); to provide lodging in one's house", "misc": [], "field": []}, {"en": "to separate spatially or temporally", "misc": [], "field": []}, {"en": "to do something in advance", "misc": ["biasanya kana saja"], "field": []}, {"en": "to leave something in a certain state; to keep something in a certain state", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
+  conjugations: {"dict": "おく", "masu": "おきます", "te": "おいて", "ta": "おいた", "nai": "おかない", "potential": "おける", "passive": "おかれる", "causative": "おかせる", "volitional": "おこう", "cond_ba": "おけば", "cond_tara": "おいたら"},
 },
 
 {
@@ -1703,7 +1985,13 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1548550',
+  frequency: 5000,
+  forms: [{"word": "落ちる", "info": []}, {"word": "墜ちる", "info": []}, {"word": "落る", "info": ["okurigana tidak biasa"]}],
+  meanings: [{"en": "to fall; to drop; to come down; to crash; to collapse; to cave in; to give way", "misc": [], "field": []}, {"en": "to set (of the sun or moon); to sink; to dip; to go down", "misc": [], "field": []}, {"en": "to decrease (of popularity, quality, speed, sales, etc.); to fall; to drop; to go down; to decline; to deteriorate; to abate (of wind)", "misc": [], "field": []}, {"en": "to be inferior (to); to be not as good (as); to fall short (of)", "misc": [], "field": []}, {"en": "to come off (of dirt, paint, makeup, etc.); to come out (of a stain); to fade (of colour); to be removed (of an illness, possessing spirit, etc.)", "misc": [], "field": []}, {"en": "to disappear (of excess fat); to become thinner; to become leaner", "misc": [], "field": []}, {"en": "to be left out; to be omitted; to be missing", "misc": [], "field": []}, {"en": "to fail (an exam); to lose (a contest, election, etc.); to be unsuccessful", "misc": [], "field": []}, {"en": "to decline (of morals, character, etc.); to become vulgar (e.g. of a conversation); to stoop (to); to sink (so low)", "misc": [], "field": []}, {"en": "to be ruined; to go under; to fall (into hell)", "misc": [], "field": []}, {"en": "to fall (in love, asleep, etc.)", "misc": [], "field": []}, {"en": "to fall (into someone's hands); to be accepted (of a bid); to be won (of a tender); to be honoured (of a bill)", "misc": [], "field": []}, {"en": "to fall into (a trap); to fall for (a trick)", "misc": [], "field": []}, {"en": "to give in", "misc": [], "field": []}, {"en": "to confess; to own up", "misc": [], "field": []}, {"en": "to come to (a conclusion, topic, etc.); to arrive at (in the end)", "misc": [], "field": []}, {"en": "to leave (a city, castle, etc.); to (be defeated and) flee", "misc": [], "field": []}, {"en": "to sink in; to be accepted (in one's heart)", "misc": [], "field": []}, {"en": "to fall (to the enemy); to be defeated", "misc": [], "field": []}, {"en": "to come in (of money)", "misc": [], "field": []}, {"en": "to fall (upon; of light, a shadow, one's gaze, etc.)", "misc": [], "field": []}, {"en": "to pass out (in judo); to fall unconscious", "misc": [], "field": []}, {"en": "to go down (of a website, server, etc.); to crash", "misc": [], "field": ["computing"]}, {"en": "to log out (of an online game, chat room, etc.); to drop out; to leave; to go offline", "misc": ["slang"], "field": []}, {"en": "to move to deeper water (of a fish in cold weather)", "misc": [], "field": []}, {"en": "to die (of an animal)", "misc": [], "field": []}],
+  misc_jm: ["slang"],
+  conjugations: {"dict": "おちる", "masu": "おちます", "te": "おちて", "ta": "おちた", "nai": "おちない", "potential": "おちられる", "passive": "おちられる", "causative": "おちさせる", "volitional": "おちよう", "cond_ba": "おちれば", "cond_tara": "おちたら"},
 },
 
 {
@@ -1728,7 +2016,13 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1589260',
+  frequency: 8500,
+  forms: [{"word": "落とす", "info": []}, {"word": "落す", "info": []}, {"word": "堕とす", "info": ["search-only kanji form"]}, {"word": "墜とす", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to drop; to lose; to let fall; to shed (light); to cast (one's gaze); to pour in (liquid); to leave behind", "misc": [], "field": []}, {"en": "to clean off (dirt, makeup, paint, etc.); to remove (e.g. stains or facial hair); to lose; to spend money at a certain place; to omit; to leave out; to secretly let escape", "misc": [], "field": []}, {"en": "to lose (a match); to reject (an applicant); to fail (a course); to defeat (in an election)", "misc": [], "field": []}, {"en": "to lower (e.g. shoulders or voice); to lessen (e.g. production or body weight); to worsen (quality); to reduce (e.g. rank or popularity); to speak badly of; to make light of; to fall into straitened circumstances", "misc": [], "field": []}, {"en": "to fall into (e.g. a dilemma or sin); to make one's own; to have one's bid accepted; to force surrender; to take (e.g. an enemy camp or castle); to forcefully convince; to press for a confession; to deal with", "misc": [], "field": []}, {"en": "to download; to copy from a computer to another medium", "misc": [], "field": ["computing"]}, {"en": "to make someone swoon (judo)", "misc": [], "field": ["martial arts"]}, {"en": "to finish a story (e.g. with the punch line)", "misc": [], "field": []}, {"en": "to finish (a period, e.g. of fasting)", "misc": [], "field": []}, {"en": "to win over; to seduce; to conquer (unwillingness)", "misc": ["percakapan kasual"], "field": []}],
+  misc_jm: ["kasual"],
+  conjugations: {"dict": "おとす", "masu": "おとします", "te": "おとして", "ta": "おとした", "nai": "おとさない", "potential": "おとせる", "passive": "おとされる", "causative": "おとさせる", "volitional": "おとそう", "cond_ba": "おとせば", "cond_tara": "おとしたら"},
 },
 
 {
@@ -1753,7 +2047,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1589220',
+  frequency: 18000,
+  forms: [{"word": "落ち着く", "info": []}, {"word": "落ちつく", "info": []}, {"word": "落着く", "info": []}, {"word": "落ち付く", "info": ["kanji jarang dipakai"]}, {"word": "落付く", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to calm down; to compose oneself; to regain presence of mind; to relax", "misc": [], "field": []}, {"en": "to calm down; to settle down; to die down; to become stable; to abate", "misc": [], "field": []}, {"en": "to settle down (in a location, job, etc.); to settle in", "misc": [], "field": []}, {"en": "to be settled (of an arrangement, conclusion, etc.); to be fixed; to have been reached", "misc": [], "field": []}, {"en": "to harmonize with; to harmonise with; to match; to suit; to fit", "misc": [], "field": []}, {"en": "to be unobtrusive; to be quiet; to be subdued", "misc": [], "field": []}],
+  conjugations: {"dict": "おちつく", "masu": "おちつきます", "te": "おちついて", "ta": "おちついた", "nai": "おちつかない", "potential": "おちつける", "passive": "おちつかれる", "causative": "おちつかせる", "volitional": "おちつこう", "cond_ba": "おちつけば", "cond_tara": "おちついたら"},
 },
 
 {
@@ -1778,7 +2077,10 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1543240',
+  frequency: 500,
+  conjugations: {"dict": "よてい", "masu": "よていします", "te": "よていして", "ta": "よていした", "nai": "よていしない", "potential": "よていできる", "passive": "よていされる", "causative": "よていさせる", "volitional": "よていしよう", "cond_ba": "よていすれば", "cond_tara": "よていしたら"},
 },
 
 {
@@ -1803,7 +2105,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: ['vg-n4-00313'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1543750',
+  frequency: 3000,
+  meanings: [{"en": "reservation; appointment; booking; advance order", "misc": [], "field": []}, {"en": "contract; subscription; pledge", "misc": [], "field": []}, {"en": "programming (e.g. a device); setting (e.g. a timer)", "misc": [], "field": []}],
+  conjugations: {"dict": "よやく", "masu": "よやくします", "te": "よやくして", "ta": "よやくした", "nai": "よやくしない", "potential": "よやくできる", "passive": "よやくされる", "causative": "よやくさせる", "volitional": "よやくしよう", "cond_ba": "よやくすれば", "cond_tara": "よやくしたら"},
 },
 
 {
@@ -1828,7 +2134,10 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1252090',
+  frequency: 500,
+  conjugations: {"dict": "けいかく", "masu": "けいかくします", "te": "けいかくして", "ta": "けいかくした", "nai": "けいかくしない", "potential": "けいかくできる", "passive": "けいかくされる", "causative": "けいかくさせる", "volitional": "けいかくしよう", "cond_ba": "けいかくすれば", "cond_tara": "けいかくしたら"},
 },
 
 {
@@ -1853,7 +2162,10 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1284740',
+  frequency: 1500,
+  conjugations: {"dict": "ごうけい", "masu": "ごうけいします", "te": "ごうけいして", "ta": "ごうけいした", "nai": "ごうけいしない", "potential": "ごうけいできる", "passive": "ごうけいされる", "causative": "ごうけいさせる", "volitional": "ごうけいしよう", "cond_ba": "ごうけいすれば", "cond_tara": "ごうけいしたら"},
 },
 
 {
@@ -1878,7 +2190,13 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1012980',
+  frequency: 1000,
+  forms: [{"word": "遣る", "info": ["kanji jarang dipakai"]}, {"word": "行る", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to do; to undertake; to perform; to play (a game); to study", "misc": ["biasanya kana saja", "percakapan kasual"], "field": []}, {"en": "to send; to dispatch; to despatch", "misc": ["biasanya kana saja"], "field": []}, {"en": "to put; to move; to turn (one's head, glance, etc.)", "misc": ["biasanya kana saja"], "field": []}, {"en": "to give (esp. to someone of equal or lower status); to let have; to present; to bestow; to confer", "misc": ["biasanya kana saja"], "field": []}, {"en": "to make (a vehicle) go faster", "misc": ["biasanya kana saja"], "field": []}, {"en": "to run (a business); to keep; to be engaged in; to practice (law, medicine, etc.); to practise", "misc": ["biasanya kana saja"], "field": []}, {"en": "to have (food, drink, etc.); to eat; to drink; to smoke", "misc": ["biasanya kana saja"], "field": []}, {"en": "to hold (a performance); to perform; to show", "misc": ["biasanya kana saja"], "field": []}, {"en": "to ease (one's mind)", "misc": ["biasanya kana saja"], "field": []}, {"en": "to harm; to injure; to kill", "misc": ["percakapan kasual", "biasanya kana saja"], "field": []}, {"en": "to have sex; to fuck; to bang", "misc": ["biasanya kana saja", "slang", "vulgar expression or word"], "field": []}, {"en": "to live; to get by; to get along", "misc": ["biasanya kana saja"], "field": []}, {"en": "to do ... completely", "misc": ["biasanya kana saja"], "field": []}, {"en": "to do ... broadly; to do ... to a great distance", "misc": ["biasanya kana saja"], "field": []}, {"en": "to do ... for (someone of equal or lower status); to do ... to", "misc": ["biasanya kana saja"], "field": []}, {"en": "to make active efforts to ...", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja", "kasual", "slang", "vulgar expression or word"],
+  conjugations: {"dict": "やる", "masu": "やります", "te": "やって", "ta": "やった", "nai": "やらない", "potential": "やれる", "passive": "やられる", "causative": "やらせる", "volitional": "やろう", "cond_ba": "やれば", "cond_tara": "やったら"},
 },
 
 {
@@ -1903,7 +2221,13 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1291270',
+  frequency: 16000,
+  forms: [{"word": "差し上げる", "info": []}, {"word": "差上げる", "info": []}, {"word": "さし上げる", "info": ["search-only kanji form"]}, {"word": "差しあげる", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to lift up; to hold up; to raise", "misc": [], "field": []}, {"en": "to give; to present; to offer", "misc": ["humble (kenjougo) language"], "field": []}, {"en": "to do (for someone)", "misc": ["humble (kenjougo) language"], "field": []}],
+  misc_jm: ["humble (kenjougo) language"],
+  conjugations: {"dict": "さしあげる", "masu": "さしあげます", "te": "さしあげて", "ta": "さしあげた", "nai": "さしあげない", "potential": "さしあげられる", "passive": "さしあげられる", "causative": "さしあげさせる", "volitional": "さしあげよう", "cond_ba": "さしあげれば", "cond_tara": "さしあげたら"},
 },
 
 {
@@ -1928,7 +2252,13 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1587290',
+  frequency: 1000,
+  forms: [{"word": "頂く", "info": []}, {"word": "戴く", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "to receive; to get; to accept; to take; to buy", "misc": ["humble (kenjougo) language", "biasanya kana saja"], "field": []}, {"en": "to eat; to drink", "misc": ["humble (kenjougo) language", "polite (teineigo) language", "biasanya kana saja"], "field": []}, {"en": "to be crowned with; to wear (on one's head); to have (on top)", "misc": ["biasanya kana saja"], "field": []}, {"en": "to have (as one's leader); to live under (a ruler); to install (a president)", "misc": ["biasanya kana saja"], "field": []}, {"en": "to get someone to do something", "misc": ["humble (kenjougo) language", "biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja", "humble (kenjougo) language", "polite (teineigo) language"],
+  conjugations: {"dict": "いただく", "masu": "いただきます", "te": "いただいて", "ta": "いただいた", "nai": "いただかない", "potential": "いただける", "passive": "いただかれる", "causative": "いただかせる", "volitional": "いただこう", "cond_ba": "いただけば", "cond_tara": "いただいたら"},
 },
 
 {
@@ -1953,7 +2283,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1184280',
+  frequency: 9000,
+  meanings: [{"en": "to give; to confer; to bestow", "misc": ["honorific or respectful (sonkeigo) language", "biasanya kana saja"], "field": []}, {"en": "to kindly do for one; to oblige; to favour; to favor", "misc": ["honorific or respectful (sonkeigo) language", "biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja", "honorific or respectful (sonkeigo) language"],
+  conjugations: {"dict": "くださる", "masu": "くださります", "te": "くださって", "ta": "くださった", "nai": "くださらない", "potential": "くだされる", "passive": "くださられる", "causative": "くださらせる", "volitional": "くださろう", "cond_ba": "くだされば", "cond_tara": "くださったら"},
 },
 
 {
@@ -1978,7 +2313,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "〜てあげる", "masu": "〜てあげます", "te": "〜てあげて", "ta": "〜てあげた", "nai": "〜てあげない", "potential": "〜てあげられる", "passive": "〜てあげられる", "causative": "〜てあげさせる", "volitional": "〜てあげよう", "cond_ba": "〜てあげれば", "cond_tara": "〜てあげたら"},
 },
 
 {
@@ -2003,7 +2339,10 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1508590',
+  frequency: 12500,
+  conjugations: {"dict": "しめる", "masu": "しめます", "te": "しめて", "ta": "しめた", "nai": "しめない", "potential": "しめられる", "passive": "しめられる", "causative": "しめさせる", "volitional": "しめよう", "cond_ba": "しめれば", "cond_tara": "しめたら"},
 },
 
 {
@@ -2028,7 +2367,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1436560',
+  frequency: 21000,
+  forms: [{"word": "閉まる", "info": []}, {"word": "締まる", "info": []}, {"word": "緊まる", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "to be shut; to close; to be closed", "misc": [], "field": []}, {"en": "to be firm (of a body, face, etc.); to be well-knit", "misc": [], "field": []}, {"en": "to be locked", "misc": [], "field": []}, {"en": "to tighten; to be tightened", "misc": [], "field": []}, {"en": "to become sober; to become tense", "misc": [], "field": []}],
+  conjugations: {"dict": "しまる", "masu": "しまります", "te": "しまって", "ta": "しまった", "nai": "しまらない", "potential": "しまれる", "passive": "しまられる", "causative": "しまらせる", "volitional": "しまろう", "cond_ba": "しまれば", "cond_tara": "しまったら"},
 },
 
 {
@@ -2053,7 +2397,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1199890',
+  frequency: 9500,
+  forms: [{"word": "壊す", "info": []}, {"word": "毀す", "info": []}],
+  meanings: [{"en": "to break; to destroy; to demolish", "misc": [], "field": []}, {"en": "to wreck; to ruin; to spoil; to damage", "misc": [], "field": []}, {"en": "to break (a bill, etc.)", "misc": [], "field": []}],
+  conjugations: {"dict": "こわす", "masu": "こわします", "te": "こわして", "ta": "こわした", "nai": "こわさない", "potential": "こわせる", "passive": "こわされる", "causative": "こわさせる", "volitional": "こわそう", "cond_ba": "こわせば", "cond_tara": "こわしたら"},
 },
 
 {
@@ -2078,7 +2427,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1199900',
+  frequency: 10500,
+  forms: [{"word": "壊れる", "info": []}, {"word": "毀れる", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "to be broken; to break; to fall apart; to collapse; to be destroyed; to be damaged", "misc": [], "field": []}, {"en": "to break (down); to stop working", "misc": [], "field": []}, {"en": "to fall through (of a plan, deal, etc.); to collapse; to break down (of a relationship, negotiations, etc.); to be broken off; to be ruined (of an atmosphere, one's image, etc.)", "misc": [], "field": []}],
+  conjugations: {"dict": "こわれる", "masu": "こわれます", "te": "こわれて", "ta": "こわれた", "nai": "こわれない", "potential": "こわれられる", "passive": "こわれられる", "causative": "こわれさせる", "volitional": "こわれよう", "cond_ba": "こわれれば", "cond_tara": "こわれたら"},
 },
 
 {
@@ -2103,7 +2457,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1602880',
+  frequency: 13000,
+  forms: [{"word": "増やす", "info": []}, {"word": "殖やす", "info": ["kanji jarang dipakai"]}],
+  conjugations: {"dict": "ふやす", "masu": "ふやします", "te": "ふやして", "ta": "ふやした", "nai": "ふやさない", "potential": "ふやせる", "passive": "ふやされる", "causative": "ふやさせる", "volitional": "ふやそう", "cond_ba": "ふやせば", "cond_tara": "ふやしたら"},
 },
 
 {
@@ -2128,7 +2486,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1602440',
+  frequency: 10500,
+  forms: [{"word": "増える", "info": []}, {"word": "殖える", "info": []}],
+  conjugations: {"dict": "ふえる", "masu": "ふえます", "te": "ふえて", "ta": "ふえた", "nai": "ふえない", "potential": "ふえられる", "passive": "ふえられる", "causative": "ふえさせる", "volitional": "ふえよう", "cond_ba": "ふえれば", "cond_tara": "ふえたら"},
 },
 
 {
@@ -2153,7 +2515,10 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1263110',
+  frequency: 10000,
+  conjugations: {"dict": "へらす", "masu": "へらします", "te": "へらして", "ta": "へらした", "nai": "へらさない", "potential": "へらせる", "passive": "へらされる", "causative": "へらさせる", "volitional": "へらそう", "cond_ba": "へらせば", "cond_tara": "へらしたら"},
 },
 
 {
@@ -2178,7 +2543,10 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1263120',
+  frequency: 10000,
+  conjugations: {"dict": "へる", "masu": "へります", "te": "へって", "ta": "へった", "nai": "へらない", "potential": "へれる", "passive": "へられる", "causative": "へらせる", "volitional": "へろう", "cond_ba": "へれば", "cond_tara": "へったら"},
 },
 
 {
@@ -2203,7 +2571,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1598820',
+  frequency: 22500,
+  forms: [{"word": "留める", "info": []}, {"word": "止める", "info": []}, {"word": "停める", "info": []}],
+  meanings: [{"en": "to stop; to stay (e.g. the night); to cease; to put an end to", "misc": [], "field": []}, {"en": "to contain; to keep (in position, in place); to limit", "misc": [], "field": []}, {"en": "to record (e.g. a fact); to retain", "misc": [], "field": []}],
+  conjugations: {"dict": "とめる", "masu": "とめます", "te": "とめて", "ta": "とめた", "nai": "とめない", "potential": "とめられる", "passive": "とめられる", "causative": "とめさせる", "volitional": "とめよう", "cond_ba": "とめれば", "cond_tara": "とめたら"},
 },
 
 {
@@ -2228,7 +2601,10 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2657250',
+  misc_jm: ["kasual", "rare term"],
+  conjugations: {"dict": "とまる", "masu": "とまります", "te": "とまって", "ta": "とまった", "nai": "とまらない", "potential": "とまれる", "passive": "とまられる", "causative": "とまらせる", "volitional": "とまろう", "cond_ba": "とまれば", "cond_tara": "とまったら"},
 },
 
 {
@@ -2253,7 +2629,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1309260',
+  frequency: 7500,
+  forms: [{"word": "思い出す", "info": []}, {"word": "思いだす", "info": ["search-only kanji form"]}, {"word": "おもい出す", "info": ["search-only kanji form"]}, {"word": "思出す", "info": ["search-only kanji form"]}],
+  conjugations: {"dict": "おもいだす", "masu": "おもいだします", "te": "おもいだして", "ta": "おもいだした", "nai": "おもいださない", "potential": "おもいだせる", "passive": "おもいだされる", "causative": "おもいださせる", "volitional": "おもいだそう", "cond_ba": "おもいだせば", "cond_tara": "おもいだしたら"},
 },
 
 {
@@ -2278,7 +2658,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1589330',
+  frequency: 20500,
+  forms: [{"word": "思いつく", "info": []}, {"word": "思い付く", "info": []}],
+  meanings: [{"en": "to think of; to hit upon; to come into one's mind; to be struck with an idea", "misc": [], "field": []}, {"en": "to remember; to recall", "misc": [], "field": []}],
+  conjugations: {"dict": "おもいつく", "masu": "おもいつきます", "te": "おもいついて", "ta": "おもいついた", "nai": "おもいつかない", "potential": "おもいつける", "passive": "おもいつかれる", "causative": "おもいつかせる", "volitional": "おもいつこう", "cond_ba": "おもいつけば", "cond_tara": "おもいついたら"},
 },
 
 {
@@ -2303,7 +2688,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1591050',
+  frequency: 1000,
+  forms: [{"word": "気がつく", "info": []}, {"word": "気が付く", "info": []}],
+  meanings: [{"en": "to notice; to realize; to realise; to become aware (of); to perceive; to sense; to suspect", "misc": [], "field": []}, {"en": "to be attentive; to be scrupulous; to be observant", "misc": [], "field": []}, {"en": "to regain consciousness; to come to (one's senses); to come round", "misc": [], "field": []}],
+  conjugations: {"dict": "きがつく", "masu": "きがつきます", "te": "きがついて", "ta": "きがついた", "nai": "きがつかない", "potential": "きがつける", "passive": "きがつかれる", "causative": "きがつかせる", "volitional": "きがつこう", "cond_ba": "きがつけば", "cond_tara": "きがついたら"},
 },
 
 {
@@ -2328,7 +2718,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1315610',
+  frequency: 15000,
+  forms: [{"word": "持ち上げる", "info": []}, {"word": "持ちあげる", "info": ["search-only kanji form"]}, {"word": "持上げる", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to elevate; to raise; to lift up", "misc": [], "field": []}, {"en": "to flatter; to extol; to praise to the sky", "misc": [], "field": []}],
+  conjugations: {"dict": "もちあげる", "masu": "もちあげます", "te": "もちあげて", "ta": "もちあげた", "nai": "もちあげない", "potential": "もちあげられる", "passive": "もちあげられる", "causative": "もちあげさせる", "volitional": "もちあげよう", "cond_ba": "もちあげれば", "cond_tara": "もちあげたら"},
 },
 
 {
@@ -2353,7 +2748,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1658430',
+  frequency: 9500,
+  forms: [{"word": "持ち帰る", "info": []}, {"word": "持帰る", "info": []}],
+  conjugations: {"dict": "もちかえる", "masu": "もちかえります", "te": "もちかえって", "ta": "もちかえった", "nai": "もちかえらない", "potential": "もちかえれる", "passive": "もちかえられる", "causative": "もちかえらせる", "volitional": "もちかえろう", "cond_ba": "もちかえれば", "cond_tara": "もちかえったら"},
 },
 
 {
@@ -2378,7 +2777,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1326770',
+  frequency: 18000,
+  forms: [{"word": "取り出す", "info": []}, {"word": "取出す", "info": []}, {"word": "取りだす", "info": []}, {"word": "とり出す", "info": []}],
+  meanings: [{"en": "to take out; to produce; to pick out", "misc": [], "field": []}, {"en": "to fetch; to retrieve", "misc": [], "field": []}],
+  conjugations: {"dict": "とりだす", "masu": "とりだします", "te": "とりだして", "ta": "とりだした", "nai": "とりださない", "potential": "とりだせる", "passive": "とりだされる", "causative": "とりださせる", "volitional": "とりだそう", "cond_ba": "とりだせば", "cond_tara": "とりだしたら"},
 },
 
 {
@@ -2403,7 +2807,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1326790',
+  frequency: 11500,
+  forms: [{"word": "取り消す", "info": []}, {"word": "取消す", "info": []}],
+  conjugations: {"dict": "とりけす", "masu": "とりけします", "te": "とりけして", "ta": "とりけした", "nai": "とりけさない", "potential": "とりけせる", "passive": "とりけされる", "causative": "とりけさせる", "volitional": "とりけそう", "cond_ba": "とりけせば", "cond_tara": "とりけしたら"},
 },
 
 {
@@ -2428,7 +2836,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1266350',
+  frequency: 12000,
+  forms: [{"word": "呼び出す", "info": []}, {"word": "呼出す", "info": []}, {"word": "呼びだす", "info": ["search-only kanji form"]}, {"word": "喚び出す", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to call (someone) to (the door, phone, etc.); to tell (someone) to come; to call up (on the phone); to summon; to page; to invoke (e.g. a spirit)", "misc": [], "field": []}, {"en": "to invoke (e.g. a subroutine); to call; to open (e.g. a file)", "misc": [], "field": ["computing"]}],
+  conjugations: {"dict": "よびだす", "masu": "よびだします", "te": "よびだして", "ta": "よびだした", "nai": "よびださない", "potential": "よびだせる", "passive": "よびだされる", "causative": "よびださせる", "volitional": "よびだそう", "cond_ba": "よびだせば", "cond_tara": "よびだしたら"},
 },
 
 {
@@ -2453,7 +2866,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1485350',
+  frequency: 6000,
+  forms: [{"word": "飛び出す", "info": []}, {"word": "飛びだす", "info": ["search-only kanji form"]}, {"word": "飛出す", "info": ["search-only kanji form"]}, {"word": "跳び出す", "info": ["search-only kanji form"]}, {"word": "跳びだす", "info": ["search-only kanji form"]}, {"word": "とび出す", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to jump out; to leap out; to fly out; to run out; to rush out; to bolt out", "misc": [], "field": []}, {"en": "to appear (suddenly); to emerge; to come out", "misc": [], "field": []}, {"en": "to protrude; to project; to jut out; to stick out", "misc": [], "field": []}, {"en": "to leave (a company, one's hometown, etc.); to run away (from home); to cut ties with", "misc": [], "field": []}, {"en": "to start flying", "misc": [], "field": []}],
+  conjugations: {"dict": "とびだす", "masu": "とびだします", "te": "とびだして", "ta": "とびだした", "nai": "とびださない", "potential": "とびだせる", "passive": "とびだされる", "causative": "とびださせる", "volitional": "とびだそう", "cond_ba": "とびだせば", "cond_tara": "とびだしたら"},
 },
 
 {
@@ -2478,7 +2896,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1343830',
+  frequency: 21000,
+  forms: [{"word": "書き直す", "info": []}, {"word": "書きなおす", "info": []}, {"word": "かき直す", "info": []}],
+  conjugations: {"dict": "かきなおす", "masu": "かきなおします", "te": "かきなおして", "ta": "かきなおした", "nai": "かきなおさない", "potential": "かきなおせる", "passive": "かきなおされる", "causative": "かきなおさせる", "volitional": "かきなおそう", "cond_ba": "かきなおせば", "cond_tara": "かきなおしたら"},
 },
 
 {
@@ -2503,7 +2925,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1605620',
+  frequency: 1000,
+  forms: [{"word": "やり直す", "info": []}, {"word": "遣り直す", "info": ["kanji jarang dipakai"]}, {"word": "遣りなおす", "info": ["search-only kanji form"]}],
+  conjugations: {"dict": "やりなおす", "masu": "やりなおします", "te": "やりなおして", "ta": "やりなおした", "nai": "やりなおさない", "potential": "やりなおせる", "passive": "やりなおされる", "causative": "やりなおさせる", "volitional": "やりなおそう", "cond_ba": "やりなおせば", "cond_tara": "やりなおしたら"},
 },
 
 {
@@ -2528,7 +2954,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1505800',
+  frequency: 18000,
+  forms: [{"word": "聞き取る", "info": []}, {"word": "聴き取る", "info": []}, {"word": "聞きとる", "info": ["search-only kanji form"]}, {"word": "聞取る", "info": ["search-only kanji form"]}, {"word": "聴取る", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to catch (someone's words); to make out; to follow; to understand", "misc": [], "field": []}, {"en": "to ask about (a situation, circumstances, etc.); to inquire", "misc": [], "field": []}],
+  conjugations: {"dict": "ききとる", "masu": "ききとります", "te": "ききとって", "ta": "ききとった", "nai": "ききとらない", "potential": "ききとれる", "passive": "ききとられる", "causative": "ききとらせる", "volitional": "ききとろう", "cond_ba": "ききとれば", "cond_tara": "ききとったら"},
 },
 
 {
@@ -2553,7 +2984,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1238680',
+  frequency: 1000,
+  forms: [{"word": "驚く", "info": []}, {"word": "愕く", "info": ["kanji jarang dipakai"]}, {"word": "駭く", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "to be surprised; to be taken aback; to be amazed; to be astonished; to be shocked", "misc": [], "field": []}, {"en": "to be frightened; to be startled; to be alarmed", "misc": [], "field": []}],
+  conjugations: {"dict": "おどろく", "masu": "おどろきます", "te": "おどろいて", "ta": "おどろいた", "nai": "おどろかない", "potential": "おどろける", "passive": "おどろかれる", "causative": "おどろかせる", "volitional": "おどろこう", "cond_ba": "おどろけば", "cond_tara": "おどろいたら"},
 },
 
 {
@@ -2578,7 +3014,10 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1469870',
+  frequency: 9000,
+  conjugations: {"dict": "なやむ", "masu": "なやみます", "te": "なやんで", "ta": "なやんだ", "nai": "なやまない", "potential": "なやめる", "passive": "なやまれる", "causative": "なやませる", "volitional": "なやもう", "cond_ba": "なやめば", "cond_tara": "なやんだら"},
 },
 
 {
@@ -2603,7 +3042,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1586250',
+  frequency: 13000,
+  forms: [{"word": "飽きる", "info": []}, {"word": "厭きる", "info": ["kanji jarang dipakai"]}, {"word": "倦きる", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "to get tired of; to tire of; to lose interest in; to grow weary of; to get fed up with; to get sick of; to become bored with", "misc": [], "field": []}, {"en": "to become sated; to become satiated; to have one's fill", "misc": [], "field": []}],
+  conjugations: {"dict": "あきる", "masu": "あきます", "te": "あきて", "ta": "あきた", "nai": "あきない", "potential": "あきられる", "passive": "あきられる", "causative": "あきさせる", "volitional": "あきよう", "cond_ba": "あきれば", "cond_tara": "あきたら"},
 },
 
 {
@@ -2628,7 +3072,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1532710',
+  frequency: 12500,
+  forms: [{"word": "迷う", "info": []}, {"word": "紕う", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "to lose one's way; to get lost; to go astray", "misc": [], "field": []}, {"en": "to waver; to hesitate; to vacillate; to be of two minds (about); to be unable to make up one's mind; to not know what to do; to be at a loss; to be puzzled; to be perplexed", "misc": [], "field": []}, {"en": "to be captivated (by); to be infatuated (with); to be charmed (by); to be carried away (by); to be blinded (by); to be lost (in); to lose oneself (to)", "misc": [], "field": []}, {"en": "to linger (of a departed soul); to be restless in one's grave; to be unable to rest in peace", "misc": [], "field": []}],
+  conjugations: {"dict": "まよう", "masu": "まよいます", "te": "まよって", "ta": "まよった", "nai": "まよわない", "potential": "まよえる", "passive": "まよわれる", "causative": "まよわせる", "volitional": "まよおう", "cond_ba": "まよえば", "cond_tara": "まよったら"},
 },
 
 {
@@ -2653,7 +3102,9 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2827805',
+  conjugations: {"dict": "ほこりにおもう", "masu": "ほこりにおもいます", "te": "ほこりにおもって", "ta": "ほこりにおもった", "nai": "ほこりにおもわない", "potential": "ほこりにおもえる", "passive": "ほこりにおもわれる", "causative": "ほこりにおもわせる", "volitional": "ほこりにおもおう", "cond_ba": "ほこりにおもえば", "cond_tara": "ほこりにおもったら"},
 },
 
 {
@@ -2678,7 +3129,10 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1359040',
+  frequency: 19000,
+  conjugations: {"dict": "しんじる", "masu": "しんじます", "te": "しんじて", "ta": "しんじた", "nai": "しんじない", "potential": "しんじられる", "passive": "しんじられる", "causative": "しんじさせる", "volitional": "しんじよう", "cond_ba": "しんじれば", "cond_tara": "しんじたら"},
 },
 
 {
@@ -2703,7 +3157,10 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1436730',
+  frequency: 1000,
+  conjugations: {"dict": "あきらめる", "masu": "あきらめます", "te": "あきらめて", "ta": "あきらめた", "nai": "あきらめない", "potential": "あきらめられる", "passive": "あきらめられる", "causative": "あきらめさせる", "volitional": "あきらめよう", "cond_ba": "あきらめれば", "cond_tara": "あきらめたら"},
 },
 
 {
@@ -2728,7 +3185,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1217700',
+  frequency: 11500,
+  meanings: [{"en": "to persevere; to persist; to keep at it; to hang on; to hold out; to do one's best", "misc": [], "field": []}, {"en": "to insist that; to stick to (one's opinion)", "misc": [], "field": []}, {"en": "to remain in a place; to stick to one's post; to refuse to budge", "misc": [], "field": []}],
+  conjugations: {"dict": "がんばる", "masu": "がんばります", "te": "がんばって", "ta": "がんばった", "nai": "がんばらない", "potential": "がんばれる", "passive": "がんばられる", "causative": "がんばらせる", "volitional": "がんばろう", "cond_ba": "がんばれば", "cond_tara": "がんばったら"},
 },
 
 {
@@ -2753,7 +3214,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1000940',
+  frequency: 1000,
+  meanings: [{"en": "to come; to go; to be (somewhere)", "misc": ["honorific or respectful (sonkeigo) language"], "field": []}, {"en": "to be (doing)", "misc": ["honorific or respectful (sonkeigo) language"], "field": []}],
+  misc_jm: ["honorific or respectful (sonkeigo) language"],
+  conjugations: {"dict": "いらっしゃる", "masu": "いらっしゃります", "te": "いらっしゃって", "ta": "いらっしゃった", "nai": "いらっしゃらない", "potential": "いらっしゃれる", "passive": "いらっしゃられる", "causative": "いらっしゃらせる", "volitional": "いらっしゃろう", "cond_ba": "いらっしゃれば", "cond_tara": "いらっしゃったら"},
 },
 
 {
@@ -2778,7 +3244,13 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1238840',
+  frequency: 1000,
+  forms: [{"word": "仰る", "info": []}, {"word": "仰有る", "info": ["kanji jarang dipakai"]}, {"word": "仰しゃる", "info": ["search-only kanji form"]}, {"word": "仰っしゃる", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to say; to speak; to tell", "misc": ["biasanya kana saja", "honorific or respectful (sonkeigo) language"], "field": []}, {"en": "to be called", "misc": ["biasanya kana saja", "honorific or respectful (sonkeigo) language"], "field": []}],
+  misc_jm: ["biasanya kana saja", "honorific or respectful (sonkeigo) language"],
+  conjugations: {"dict": "おっしゃる", "masu": "おっしゃります", "te": "おっしゃって", "ta": "おっしゃった", "nai": "おっしゃらない", "potential": "おっしゃれる", "passive": "おっしゃられる", "causative": "おっしゃらせる", "volitional": "おっしゃろう", "cond_ba": "おっしゃれば", "cond_tara": "おっしゃったら"},
 },
 
 {
@@ -2803,7 +3275,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1157090',
+  frequency: 1000,
+  forms: [{"word": "為さる", "info": ["kanji jarang dipakai"]}, {"word": "爲さる", "info": ["search-only kanji form"]}],
+  misc_jm: ["biasanya kana saja", "honorific or respectful (sonkeigo) language"],
+  conjugations: {"dict": "なさる", "masu": "なさります", "te": "なさって", "ta": "なさった", "nai": "なさらない", "potential": "なされる", "passive": "なさられる", "causative": "なさらせる", "volitional": "なさろう", "cond_ba": "なされば", "cond_tara": "なさったら"},
 },
 
 {
@@ -2828,7 +3305,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1346370',
+  frequency: 22500,
+  forms: [{"word": "召し上がる", "info": []}, {"word": "召しあがる", "info": ["search-only kanji form"]}, {"word": "召上がる", "info": ["search-only kanji form"]}, {"word": "召し上る", "info": ["search-only kanji form"]}],
+  misc_jm: ["honorific or respectful (sonkeigo) language"],
+  conjugations: {"dict": "めしあがる", "masu": "めしあがります", "te": "めしあがって", "ta": "めしあがった", "nai": "めしあがらない", "potential": "めしあがれる", "passive": "めしあがられる", "causative": "めしあがらせる", "volitional": "めしあがろう", "cond_ba": "めしあがれば", "cond_tara": "めしあがったら"},
 },
 
 {
@@ -2853,7 +3335,13 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2217040',
+  frequency: 1000,
+  forms: [{"word": "ご覧になる", "info": []}, {"word": "御覧になる", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to see; to look; to watch", "misc": ["honorific or respectful (sonkeigo) language"], "field": []}, {"en": "to try to ...", "misc": ["honorific or respectful (sonkeigo) language"], "field": []}],
+  misc_jm: ["honorific or respectful (sonkeigo) language"],
+  conjugations: {"dict": "ごらんになる", "masu": "ごらんになります", "te": "ごらんになって", "ta": "ごらんになった", "nai": "ごらんにならない", "potential": "ごらんになれる", "passive": "ごらんになられる", "causative": "ごらんにならせる", "volitional": "ごらんになろう", "cond_ba": "ごらんになれば", "cond_tara": "ごらんになったら"},
 },
 
 {
@@ -2878,7 +3366,13 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1302070',
+  frequency: 17500,
+  forms: [{"word": "参る", "info": []}, {"word": "詣る", "info": []}],
+  meanings: [{"en": "to go; to come; to call", "misc": ["humble (kenjougo) language", "biasanya kana saja"], "field": []}, {"en": "to be defeated; to collapse; to die", "misc": [], "field": []}, {"en": "to be annoyed; to be nonplussed", "misc": [], "field": []}, {"en": "to be madly in love", "misc": [], "field": []}, {"en": "to visit (shrine, grave)", "misc": [], "field": []}],
+  misc_jm: ["biasanya kana saja", "humble (kenjougo) language"],
+  conjugations: {"dict": "まいる", "masu": "まいります", "te": "まいって", "ta": "まいった", "nai": "まいらない", "potential": "まいれる", "passive": "まいられる", "causative": "まいらせる", "volitional": "まいろう", "cond_ba": "まいれば", "cond_tara": "まいったら"},
 },
 
 {
@@ -2903,7 +3397,10 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1357420',
+  frequency: 13000,
+  conjugations: {"dict": "おる", "masu": "おります", "te": "おって", "ta": "おった", "nai": "おらない", "potential": "おれる", "passive": "おられる", "causative": "おらせる", "volitional": "おろう", "cond_ba": "おれば", "cond_tara": "おったら"},
 },
 
 {
@@ -2928,7 +3425,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1363090',
+  frequency: 10500,
+  meanings: [{"en": "to say; to be called", "misc": ["humble (kenjougo) language"], "field": []}, {"en": "to do", "misc": ["humble (kenjougo) language"], "field": []}],
+  misc_jm: ["humble (kenjougo) language"],
+  conjugations: {"dict": "もうす", "masu": "もうします", "te": "もうして", "ta": "もうした", "nai": "もうさない", "potential": "もうせる", "passive": "もうされる", "causative": "もうさせる", "volitional": "もうそう", "cond_ba": "もうせば", "cond_tara": "もうしたら"},
 },
 
 {
@@ -2953,7 +3455,13 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1612690',
+  frequency: 1000,
+  forms: [{"word": "御座います", "info": ["kanji jarang dipakai"]}, {"word": "御座居ます", "info": ["search-only kanji form"]}, {"word": "ご座います", "info": ["search-only kanji form"]}, {"word": "厶います", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to be; to exist", "misc": ["polite (teineigo) language", "biasanya kana saja"], "field": []}, {"en": "to be (doing)", "misc": ["polite (teineigo) language", "biasanya kana saja"], "field": []}, {"en": "did; (have) done", "misc": ["polite (teineigo) language", "biasanya kana saja", "dated term"], "field": []}],
+  misc_jm: ["biasanya kana saja", "dated term", "polite (teineigo) language"],
+  conjugations: {"dict": "ございます", "masu": "ございまします", "te": "ございまして", "ta": "ございました", "nai": "ございまさない", "potential": "ございませる", "passive": "ございまされる", "causative": "ございまさせる", "volitional": "ございまそう", "cond_ba": "ございませば", "cond_tara": "ございましたら"},
 },
 
 {
@@ -2978,7 +3486,10 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2859455',
+  meanings: [{"en": "to be able to read; to be legible; to be decipherable", "misc": [], "field": []}, {"en": "to be readable (text, etc.); to read well", "misc": [], "field": []}, {"en": "to understand; to divine; to perceive; to see", "misc": [], "field": []}],
+  conjugations: {"dict": "よめる", "masu": "よめます", "te": "よめて", "ta": "よめた", "nai": "よめない", "potential": "よめられる", "passive": "よめられる", "causative": "よめさせる", "volitional": "よめよう", "cond_ba": "よめれば", "cond_tara": "よめたら"},
 },
 
 {
@@ -3003,7 +3514,13 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1207610',
+  frequency: 10000,
+  forms: [{"word": "掛ける", "info": []}, {"word": "懸ける", "info": []}],
+  meanings: [{"en": "to hang up (e.g. a coat, a picture on the wall); to let hang; to suspend (from); to hoist (e.g. sail); to raise (e.g. flag)", "misc": ["biasanya kana saja"], "field": []}, {"en": "to put on (e.g. a blanket); to put on top of; to cover; to lay; to spread", "misc": ["biasanya kana saja"], "field": []}, {"en": "to put on (glasses, etc.); to wear (a necklace, etc.)", "misc": ["biasanya kana saja"], "field": []}, {"en": "to make (a call)", "misc": ["biasanya kana saja"], "field": []}, {"en": "to spend (time, money); to expend; to use", "misc": ["biasanya kana saja"], "field": []}, {"en": "to pour (liquid) onto; to sprinkle (powder or spices) onto; to splash; to throw (e.g. water) onto", "misc": ["biasanya kana saja"], "field": []}, {"en": "to turn on (an engine, radio, etc.); to set (a dial, alarm clock, etc.); to put on (a DVD, song, etc.); to use (a device, implement, etc.)", "misc": ["biasanya kana saja"], "field": []}, {"en": "to cause (someone inconvenience, trouble, etc.); to burden (someone); to impose", "misc": ["biasanya kana saja"], "field": []}, {"en": "to multiply (arithmetic operation)", "misc": ["biasanya kana saja"], "field": ["mathematics"]}, {"en": "to secure (e.g. lock)", "misc": ["biasanya kana saja"], "field": []}, {"en": "to take a seat; to sit; to rest (something on something else); to support (something on something else)", "misc": ["biasanya kana saja"], "field": []}, {"en": "to bind", "misc": ["biasanya kana saja"], "field": []}, {"en": "to wager; to bet; to risk; to stake; to gamble", "misc": ["biasanya kana saja"], "field": []}, {"en": "to put an effect (spell, anaesthetic, etc.) on", "misc": ["biasanya kana saja"], "field": []}, {"en": "to hold (a play, festival, etc.)", "misc": ["biasanya kana saja"], "field": []}, {"en": "to hold an emotion for (pity, hope, etc.)", "misc": ["biasanya kana saja"], "field": []}, {"en": "to argue (in court); to deliberate (in a meeting); to present (e.g. idea to a conference, etc.)", "misc": ["biasanya kana saja"], "field": []}, {"en": "to increase further", "misc": ["biasanya kana saja"], "field": []}, {"en": "to catch (in a trap, etc.)", "misc": ["biasanya kana saja"], "field": []}, {"en": "to set atop", "misc": ["biasanya kana saja"], "field": []}, {"en": "to erect (a makeshift building)", "misc": ["biasanya kana saja"], "field": []}, {"en": "to apply (insurance)", "misc": ["biasanya kana saja"], "field": []}, {"en": "to pun (on a word); to use (a word) as a pivot word; to play on words", "misc": ["biasanya kana saja"], "field": []}, {"en": "to be partway doing ...; to begin (but not complete) ...; to be about to ...", "misc": ["biasanya kana saja"], "field": []}, {"en": "to address (someone); to direct (something, to someone); to do (something, to someone)", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
+  conjugations: {"dict": "かける", "masu": "かけます", "te": "かけて", "ta": "かけた", "nai": "かけない", "potential": "かけられる", "passive": "かけられる", "causative": "かけさせる", "volitional": "かけよう", "cond_ba": "かければ", "cond_tara": "かけたら"},
 },
 
 {
@@ -3028,7 +3545,10 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1562360',
+  meanings: [{"en": "to be able to speak; to be able to talk", "misc": [], "field": []}, {"en": "to be understanding; to be sensible", "misc": [], "field": []}],
+  conjugations: {"dict": "はなせる", "masu": "はなせます", "te": "はなせて", "ta": "はなせた", "nai": "はなせない", "potential": "はなせられる", "passive": "はなせられる", "causative": "はなせさせる", "volitional": "はなせよう", "cond_ba": "はなせれば", "cond_tara": "はなせたら"},
 },
 
 {
@@ -3053,7 +3573,10 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2517260',
+  misc_jm: ["arkais"],
+  conjugations: {"dict": "きける", "masu": "きけます", "te": "きけて", "ta": "きけた", "nai": "きけない", "potential": "きけられる", "passive": "きけられる", "causative": "きけさせる", "volitional": "きけよう", "cond_ba": "きければ", "cond_tara": "きけたら"},
 },
 
 {
@@ -3078,7 +3601,10 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2765050',
+  meanings: [{"en": "to be able to eat", "misc": [], "field": []}, {"en": "to be edible; to be good to eat", "misc": [], "field": []}],
+  conjugations: {"dict": "たべられる", "masu": "たべられます", "te": "たべられて", "ta": "たべられた", "nai": "たべられない", "potential": "たべられられる", "passive": "たべられられる", "causative": "たべられさせる", "volitional": "たべられよう", "cond_ba": "たべられれば", "cond_tara": "たべられたら"},
 },
 
 {
@@ -3103,7 +3629,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "こられる", "masu": "こられます", "te": "こられて", "ta": "こられた", "nai": "こられない", "potential": "こられられる", "passive": "こられられる", "causative": "こられさせる", "volitional": "こられよう", "cond_ba": "こられれば", "cond_tara": "こられたら"},
 },
 
 {
@@ -3128,7 +3655,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "〜られる", "masu": "〜られます", "te": "〜られて", "ta": "〜られた", "nai": "〜られない", "potential": "〜られられる", "passive": "〜られられる", "causative": "〜られさせる", "volitional": "〜られよう", "cond_ba": "〜られれば", "cond_tara": "〜られたら"},
 },
 
 {
@@ -3153,7 +3681,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "〜える", "masu": "〜えます", "te": "〜えて", "ta": "〜えた", "nai": "〜えない", "potential": "〜えられる", "passive": "〜えられる", "causative": "〜えさせる", "volitional": "〜えよう", "cond_ba": "〜えれば", "cond_tara": "〜えたら"},
 },
 
 {
@@ -3178,7 +3707,13 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1352290',
+  frequency: 6500,
+  forms: [{"word": "上がる", "info": []}, {"word": "上る", "info": ["okurigana tidak biasa"]}, {"word": "騰がる", "info": ["kanji jarang dipakai"]}, {"word": "上ル", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to rise; to go up; to come up; to ascend; to be raised", "misc": [], "field": []}, {"en": "to enter (esp. from outdoors); to come in; to go in", "misc": [], "field": []}, {"en": "to enter (a school); to advance to the next grade", "misc": [], "field": []}, {"en": "to get out (of water); to come ashore; to be washed ashore", "misc": [], "field": []}, {"en": "to float atop the water; to surface from the sea (e.g. of a corpse); to rise to the surface", "misc": [], "field": []}, {"en": "to increase; to be raised (e.g. of a salary); to rise", "misc": [], "field": []}, {"en": "to improve; to make progress", "misc": [], "field": []}, {"en": "to be promoted; to advance", "misc": [], "field": []}, {"en": "to be made (of profit, etc.)", "misc": [], "field": []}, {"en": "to occur (esp. of a favourable result)", "misc": [], "field": []}, {"en": "to be adequate (to cover expenses, etc.)", "misc": [], "field": []}, {"en": "to be finished; to be done; to be over", "misc": [], "field": []}, {"en": "to stop (of rain); to clear up (of weather)", "misc": [], "field": []}, {"en": "to stop (working properly); to cut out; to give out; to die", "misc": [], "field": []}, {"en": "to win (in a card game, etc.)", "misc": [], "field": []}, {"en": "to be spoken loudly; to be raised loudly (of a voice)", "misc": [], "field": []}, {"en": "to get nervous; to get stage fright", "misc": ["percakapan kasual"], "field": []}, {"en": "to be offered (to the gods, etc.)", "misc": [], "field": []}, {"en": "to go; to visit", "misc": ["humble (kenjougo) language"], "field": []}, {"en": "to eat; to drink", "misc": ["honorific or respectful (sonkeigo) language"], "field": []}, {"en": "to serve (in one's master's home)", "misc": [], "field": []}, {"en": "to enter a red light district; to amuse oneself in a red light district; to visit a brothel", "misc": [], "field": []}, {"en": "to arise vigorously (e.g. of voices in excitement); to become excited; to be in uproar (e.g. of a crowd)", "misc": [], "field": []}, {"en": "to be complete; to finish", "misc": [], "field": []}, {"en": "adds the connotation of an action happening strongly or violently", "misc": [], "field": []}, {"en": "above; north of", "misc": [], "field": []}],
+  misc_jm: ["honorific or respectful (sonkeigo) language", "humble (kenjougo) language", "kasual"],
+  conjugations: {"dict": "あがる", "masu": "あがります", "te": "あがって", "ta": "あがった", "nai": "あがらない", "potential": "あがれる", "passive": "あがられる", "causative": "あがらせる", "volitional": "あがろう", "cond_ba": "あがれば", "cond_tara": "あがったら"},
 },
 
 {
@@ -3203,7 +3738,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1323010',
+  frequency: 16000,
+  meanings: [{"en": "to apologize (apologise)", "misc": [], "field": []}, {"en": "to refuse; to decline", "misc": ["dated term"], "field": []}, {"en": "to be unable to bear; to be defeated (by); to be at a loss; to be stumped (by)", "misc": ["dated term"], "field": []}],
+  misc_jm: ["dated term"],
+  conjugations: {"dict": "あやまる", "masu": "あやまります", "te": "あやまって", "ta": "あやまった", "nai": "あやまらない", "potential": "あやまれる", "passive": "あやまられる", "causative": "あやまらせる", "volitional": "あやまろう", "cond_ba": "あやまれば", "cond_tara": "あやまったら"},
 },
 
 {
@@ -3228,7 +3768,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1593670',
+  frequency: 8000,
+  forms: [{"word": "探す", "info": []}, {"word": "捜す", "info": []}],
+  meanings: [{"en": "to search for; to look for; to hunt for; to seek", "misc": [], "field": []}, {"en": "to search (a house, pocket, etc.); to search through; to rummage in (e.g. a drawer); to fish around", "misc": [], "field": []}],
+  conjugations: {"dict": "さがす", "masu": "さがします", "te": "さがして", "ta": "さがした", "nai": "さがさない", "potential": "さがせる", "passive": "さがされる", "causative": "さがさせる", "volitional": "さがそう", "cond_ba": "さがせば", "cond_tara": "さがしたら"},
 },
 
 {
@@ -3253,7 +3798,13 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1184160',
+  frequency: 12000,
+  forms: [{"word": "下がる", "info": []}, {"word": "下る", "info": ["okurigana tidak biasa"]}, {"word": "退がる", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to come down; to go down; to fall; to drop; to sink; to get lower", "misc": [], "field": []}, {"en": "to hang; to dangle", "misc": [], "field": []}, {"en": "to move back; to step back; to withdraw; to retire", "misc": [], "field": []}, {"en": "to deteriorate; to fall off; to be downgraded", "misc": [], "field": []}, {"en": "to get closer to the present day", "misc": [], "field": []}, {"en": "to play a sagari; to extend downwards", "misc": ["biasanya kana saja"], "field": ["go (game)"]}],
+  misc_jm: ["biasanya kana saja"],
+  conjugations: {"dict": "さがる", "masu": "さがります", "te": "さがって", "ta": "さがった", "nai": "さがらない", "potential": "さがれる", "passive": "さがられる", "causative": "さがらせる", "volitional": "さがろう", "cond_ba": "さがれば", "cond_tara": "さがったら"},
 },
 
 {
@@ -3278,7 +3829,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1184170',
+  frequency: 3500,
+  meanings: [{"en": "to hang; to suspend; to wear (e.g. decoration)", "misc": [], "field": []}, {"en": "to lower; to reduce; to bring down", "misc": [], "field": []}, {"en": "to demote; to move back; to pull back", "misc": [], "field": []}, {"en": "to clear (plates); to remove (food, etc. from table or altar)", "misc": [], "field": []}, {"en": "to keep on playing after one has formed a scoring combination with captured cards", "misc": [], "field": ["hanafuda"]}],
+  conjugations: {"dict": "さげる", "masu": "さげます", "te": "さげて", "ta": "さげた", "nai": "さげない", "potential": "さげられる", "passive": "さげられる", "causative": "さげさせる", "volitional": "さげよう", "cond_ba": "さげれば", "cond_tara": "さげたら"},
 },
 
 {
@@ -3303,7 +3858,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1357980',
+  frequency: 18000,
+  meanings: [{"en": "to touch; to feel; to handle", "misc": [], "field": []}, {"en": "to get involved (with); to approach", "misc": [], "field": []}, {"en": "to be harmful to; to hinder; to interfere with; to irritate", "misc": [], "field": []}],
+  conjugations: {"dict": "さわる", "masu": "さわります", "te": "さわって", "ta": "さわった", "nai": "さわらない", "potential": "さわれる", "passive": "さわられる", "causative": "さわらせる", "volitional": "さわろう", "cond_ba": "さわれば", "cond_tara": "さわったら"},
 },
 
 {
@@ -3328,7 +3887,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1403040',
+  frequency: 7000,
+  forms: [{"word": "騒ぐ", "info": []}, {"word": "騷ぐ", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to make noise; to make racket; to be noisy", "misc": [], "field": []}, {"en": "to rustle; to swoosh", "misc": [], "field": []}, {"en": "to make merry", "misc": [], "field": []}, {"en": "to clamor; to clamour; to make a fuss; to kick up a fuss", "misc": [], "field": []}, {"en": "to lose one's cool; to panic; to act flustered", "misc": [], "field": []}, {"en": "to feel tense; to be uneasy; to be excited", "misc": [], "field": []}],
+  conjugations: {"dict": "さわぐ", "masu": "さわぎます", "te": "さわいで", "ta": "さわいだ", "nai": "さわがない", "potential": "さわげる", "passive": "さわがれる", "causative": "さわがせる", "volitional": "さわごう", "cond_ba": "さわげば", "cond_tara": "さわいだら"},
 },
 
 {
@@ -3353,7 +3917,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1420410',
+  frequency: 1000,
+  forms: [{"word": "知らせる", "info": []}, {"word": "報せる", "info": ["kanji jarang dipakai"]}],
+  conjugations: {"dict": "しらせる", "masu": "しらせます", "te": "しらせて", "ta": "しらせた", "nai": "しらせない", "potential": "しらせられる", "passive": "しらせられる", "causative": "しらせさせる", "volitional": "しらせよう", "cond_ba": "しらせれば", "cond_tara": "しらせたら"},
 },
 
 {
@@ -3378,7 +3946,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1984310',
+  forms: [{"word": "荒む", "info": []}, {"word": "進む", "info": []}, {"word": "遊む", "info": []}],
+  meanings: [{"en": "to grow wild; to run to waste; to become degenerate", "misc": [], "field": []}, {"en": "to become rough (of art, craft, etc.); to lose refinement; to deteriorate (of skill)", "misc": [], "field": []}, {"en": "to intensify (of wind, rain, etc.); to become more severe", "misc": [], "field": []}],
+  conjugations: {"dict": "すすむ", "masu": "すすみます", "te": "すすんで", "ta": "すすんだ", "nai": "すすまない", "potential": "すすめる", "passive": "すすまれる", "causative": "すすませる", "volitional": "すすもう", "cond_ba": "すすめば", "cond_tara": "すすんだら"},
 },
 
 {
@@ -3403,7 +3975,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1322320',
+  frequency: 23000,
+  forms: [{"word": "捨てる", "info": []}, {"word": "棄てる", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "to throw away; to cast away; to dump; to discard", "misc": [], "field": []}, {"en": "to abandon; to desert; to leave", "misc": [], "field": []}, {"en": "to give up; to resign", "misc": [], "field": []}, {"en": "to sacrifice (stones)", "misc": [], "field": ["go (game)"]}],
+  conjugations: {"dict": "すてる", "masu": "すてます", "te": "すてて", "ta": "すてた", "nai": "すてない", "potential": "すてられる", "passive": "すてられる", "causative": "すてさせる", "volitional": "すてよう", "cond_ba": "すてれば", "cond_tara": "すてたら"},
 },
 
 {
@@ -3428,7 +4005,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2016150',
+  meanings: [{"en": "to be slippery; to be slimy", "misc": ["biasanya kana saja"], "field": []}, {"en": "to behave charmingly; to walk merrily", "misc": ["archaic"], "field": []}],
+  misc_jm: ["arkais", "biasanya kana saja"],
+  conjugations: {"dict": "すべる", "masu": "すべります", "te": "すべって", "ta": "すべった", "nai": "すべらない", "potential": "すべれる", "passive": "すべられる", "causative": "すべらせる", "volitional": "すべろう", "cond_ba": "すべれば", "cond_tara": "すべったら"},
 },
 
 {
@@ -3453,7 +4034,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1295070',
+  frequency: 19000,
+  forms: [{"word": "済む", "info": []}, {"word": "濟む", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to finish; to end; to be completed; to be resolved", "misc": [], "field": []}, {"en": "to have a result less severe than expected", "misc": [], "field": []}, {"en": "to feel at ease", "misc": [], "field": []}, {"en": "to feel unease or guilt for troubling someone; to be sorry", "misc": [], "field": []}],
+  conjugations: {"dict": "すむ", "masu": "すみます", "te": "すんで", "ta": "すんだ", "nai": "すまない", "potential": "すめる", "passive": "すまれる", "causative": "すませる", "volitional": "すもう", "cond_ba": "すめば", "cond_tara": "すんだら"},
 },
 
 {
@@ -3478,7 +4064,10 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1518070',
+  frequency: 3000,
+  conjugations: {"dict": "たずねる", "masu": "たずねます", "te": "たずねて", "ta": "たずねた", "nai": "たずねない", "potential": "たずねられる", "passive": "たずねられる", "causative": "たずねさせる", "volitional": "たずねよう", "cond_ba": "たずねれば", "cond_tara": "たずねたら"},
 },
 
 {
@@ -3503,7 +4092,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1369940',
+  frequency: 13500,
+  forms: [{"word": "尋ねる", "info": []}, {"word": "訊ねる", "info": []}],
+  meanings: [{"en": "to ask; to enquire; to inquire", "misc": [], "field": []}, {"en": "to search; to look for; to look into; to investigate", "misc": [], "field": []}],
+  conjugations: {"dict": "たずねる", "masu": "たずねます", "te": "たずねて", "ta": "たずねた", "nai": "たずねない", "potential": "たずねられる", "passive": "たずねられる", "causative": "たずねさせる", "volitional": "たずねよう", "cond_ba": "たずねれば", "cond_tara": "たずねたら"},
 },
 
 {
@@ -3528,7 +4122,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1445790',
+  frequency: 5000,
+  forms: [{"word": "倒れる", "info": []}, {"word": "斃れる", "info": ["search-only kanji form"]}, {"word": "仆れる", "info": ["search-only kanji form"]}, {"word": "殪れる", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to fall (over, down); to collapse; to take a fall; to topple", "misc": [], "field": []}, {"en": "to be destroyed (in a collapse); to collapse; to cave in; to crumble; to give away", "misc": [], "field": []}, {"en": "to be confined to bed (with an illness); to come down with; to break down (e.g. from overwork)", "misc": [], "field": []}, {"en": "to die; to be killed", "misc": [], "field": []}, {"en": "to go bankrupt (of a company, bank, etc.); to fail; to collapse; to go under", "misc": [], "field": []}, {"en": "to be defeated (in a game); to lose", "misc": [], "field": []}, {"en": "to fall (of a government, dictator, etc.); to be overthrown", "misc": [], "field": []}],
+  conjugations: {"dict": "たおれる", "masu": "たおれます", "te": "たおれて", "ta": "たおれた", "nai": "たおれない", "potential": "たおれられる", "passive": "たおれられる", "causative": "たおれさせる", "volitional": "たおれよう", "cond_ba": "たおれれば", "cond_tara": "たおれたら"},
 },
 
 {
@@ -3553,7 +4152,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1551530',
+  frequency: 1000,
+  meanings: [{"en": "to stand up; to put up; to set up; to erect; to raise", "misc": [], "field": []}, {"en": "to thrust into; to bury into; to dig into", "misc": [], "field": []}, {"en": "to make (a noise); to start (a rumour); to raise (a cloud of dust, etc.); to cause", "misc": [], "field": []}, {"en": "to make; to establish; to set up; to develop; to formulate", "misc": [], "field": []}, {"en": "to put up (a political candidate); to make (one's leader)", "misc": [], "field": []}, {"en": "to treat with respect; to give (someone) their due; to make (someone) look good; to avoid embarrassing (someone)", "misc": [], "field": []}, {"en": "to sharpen; to make clear", "misc": [], "field": []}, {"en": "to shut; to close", "misc": [], "field": []}, {"en": "to make tea (matcha); to perform the tea ceremony", "misc": [], "field": []}, {"en": "to divide by", "misc": [], "field": []}, {"en": "to do ... vigorously", "misc": [], "field": []}],
+  conjugations: {"dict": "たてる", "masu": "たてます", "te": "たてて", "ta": "たてた", "nai": "たてない", "potential": "たてられる", "passive": "たてられる", "causative": "たてさせる", "volitional": "たてよう", "cond_ba": "たてれば", "cond_tara": "たてたら"},
 },
 
 {
@@ -3578,7 +4181,13 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1207270',
+  frequency: 8000,
+  forms: [{"word": "楽しむ", "info": []}, {"word": "愉しむ", "info": ["kanji jarang dipakai"]}, {"word": "楽む", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to enjoy; to take pleasure in; to have a good time; to have fun; to amuse oneself", "misc": [], "field": []}, {"en": "to look forward to", "misc": ["dated term"], "field": []}],
+  misc_jm: ["dated term"],
+  conjugations: {"dict": "たのしむ", "masu": "たのしみます", "te": "たのしんで", "ta": "たのしんだ", "nai": "たのしまない", "potential": "たのしめる", "passive": "たのしまれる", "causative": "たのしませる", "volitional": "たのしもう", "cond_ba": "たのしめば", "cond_tara": "たのしんだら"},
 },
 
 {
@@ -3603,7 +4212,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2831360',
+  frequency: 1000,
+  misc_jm: ["biasanya kana saja"],
+  conjugations: {"dict": "つつむ", "masu": "つつみます", "te": "つつんで", "ta": "つつんだ", "nai": "つつまない", "potential": "つつめる", "passive": "つつまれる", "causative": "つつませる", "volitional": "つつもう", "cond_ba": "つつめば", "cond_tara": "つつんだら"},
 },
 
 {
@@ -3628,7 +4241,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1597780',
+  frequency: 17500,
+  forms: [{"word": "捕まえる", "info": []}, {"word": "掴まえる", "info": []}, {"word": "捉まえる", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "to catch; to capture; to arrest; to seize; to restrain", "misc": [], "field": []}, {"en": "to grab; to clutch; to grasp; to seize; to hold on to", "misc": [], "field": []}, {"en": "to catch hold of (someone); to stop (e.g. a stranger in the street); to hail (a taxi, waiter, etc.); to hold (someone) back; to detain", "misc": [], "field": []}, {"en": "towards (someone); at (someone); in (someone's) face", "misc": [], "field": []}],
+  conjugations: {"dict": "つかまえる", "masu": "つかまえます", "te": "つかまえて", "ta": "つかまえた", "nai": "つかまえない", "potential": "つかまえられる", "passive": "つかまえられる", "causative": "つかまえさせる", "volitional": "つかまえよう", "cond_ba": "つかまえれば", "cond_tara": "つかまえたら"},
 },
 
 {
@@ -3653,7 +4271,10 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1441870',
+  frequency: 1000,
+  conjugations: {"dict": "つたえる", "masu": "つたえます", "te": "つたえて", "ta": "つたえた", "nai": "つたえない", "potential": "つたえられる", "passive": "つたえられる", "causative": "つたえさせる", "volitional": "つたえよう", "cond_ba": "つたえれば", "cond_tara": "つたえたら"},
 },
 
 {
@@ -3678,7 +4299,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1434120',
+  frequency: 17500,
+  meanings: [{"en": "to fish; to angle; to catch", "misc": [], "field": []}, {"en": "to lure in; to tempt; to attract; to entice; to allure", "misc": [], "field": []}],
+  conjugations: {"dict": "つる", "masu": "つります", "te": "つって", "ta": "つった", "nai": "つらない", "potential": "つれる", "passive": "つられる", "causative": "つらせる", "volitional": "つろう", "cond_ba": "つれば", "cond_tara": "つったら"},
 },
 
 {
@@ -3703,7 +4328,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1328190',
+  frequency: 23000,
+  forms: [{"word": "手伝う", "info": []}, {"word": "手つだう", "info": []}],
+  meanings: [{"en": "to help; to assist; to aid", "misc": [], "field": []}, {"en": "to contribute to; to be a factor in", "misc": [], "field": []}],
+  conjugations: {"dict": "てつだう", "masu": "てつだいます", "te": "てつだって", "ta": "てつだった", "nai": "てつだわない", "potential": "てつだえる", "passive": "てつだわれる", "causative": "てつだわせる", "volitional": "てつだおう", "cond_ba": "てつだえば", "cond_tara": "てつだったら"},
 },
 
 {
@@ -3728,7 +4358,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1457210',
+  frequency: 1000,
+  forms: [{"word": "届ける", "info": []}, {"word": "屆ける", "info": ["word containing out-dated kanji or kanji usage"]}],
+  meanings: [{"en": "to deliver; to forward; to send", "misc": [], "field": []}, {"en": "to report; to notify; to file notice (to the authorities); to give notice; to register", "misc": [], "field": []}],
+  conjugations: {"dict": "とどける", "masu": "とどけます", "te": "とどけて", "ta": "とどけた", "nai": "とどけない", "potential": "とどけられる", "passive": "とどけられる", "causative": "とどけさせる", "volitional": "とどけよう", "cond_ba": "とどければ", "cond_tara": "とどけたら"},
 },
 
 {
@@ -3753,7 +4388,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1474850',
+  frequency: 14500,
+  forms: [{"word": "泊まる", "info": []}, {"word": "泊る", "info": []}],
+  meanings: [{"en": "to stay at (e.g. hotel)", "misc": [], "field": []}, {"en": "to be docked; to be berthed; to be moored", "misc": [], "field": []}],
+  conjugations: {"dict": "とまる", "masu": "とまります", "te": "とまって", "ta": "とまった", "nai": "とまらない", "potential": "とまれる", "passive": "とまられる", "causative": "とまらせる", "volitional": "とまろう", "cond_ba": "とまれば", "cond_tara": "とまったら"},
 },
 
 {
@@ -3778,7 +4418,13 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1433030',
+  frequency: 7000,
+  forms: [{"word": "通る", "info": []}, {"word": "透る", "info": ["kanji jarang dipakai"]}, {"word": "徹る", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "to go by; to go past; to go along; to travel along; to pass through; to use (a road); to take (a route); to go via; to go by way of", "misc": [], "field": []}, {"en": "to run (between; of a rail service, bus route, etc.); to operate (between); to connect", "misc": [], "field": []}, {"en": "to go indoors; to go into a room; to be admitted; to be shown in; to be ushered in; to come in", "misc": [], "field": []}, {"en": "to penetrate; to pierce; to skewer; to go through; to come through", "misc": [], "field": []}, {"en": "to permeate; to soak into; to spread throughout", "misc": [], "field": []}, {"en": "to carry (e.g. of a voice); to reach far", "misc": [], "field": []}, {"en": "to be passed on (e.g. of a customer's order to the kitchen); to be relayed; to be conveyed", "misc": [], "field": []}, {"en": "to pass (a test, a bill in the House, etc.); to be approved; to be accepted", "misc": [], "field": []}, {"en": "to go by (a name); to be known as; to be accepted as; to have a reputation for", "misc": [], "field": []}, {"en": "to be coherent; to be logical; to be reasonable; to be comprehensible; to be understandable; to make sense", "misc": [], "field": []}, {"en": "to get across (e.g. of one's point); to be understood", "misc": [], "field": []}, {"en": "to pass for; to come across as; to seem like", "misc": [], "field": []}, {"en": "to be straight (e.g. wood grain)", "misc": [], "field": []}, {"en": "to be well-informed; to be wise", "misc": ["archaic"], "field": []}, {"en": "to do ... completely; to do ... thoroughly", "misc": [], "field": []}],
+  misc_jm: ["arkais"],
+  conjugations: {"dict": "とおる", "masu": "とおります", "te": "とおって", "ta": "とおった", "nai": "とおらない", "potential": "とおれる", "passive": "とおられる", "causative": "とおらせる", "volitional": "とおろう", "cond_ba": "とおれば", "cond_tara": "とおったら"},
 },
 
 {
@@ -3803,7 +4449,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1160570',
+  frequency: 1000,
+  meanings: [{"en": "to raise; to rear; to bring up", "misc": [], "field": []}, {"en": "to train; to teach; to educate", "misc": [], "field": []}, {"en": "to promote the growth of; to nurture; to foster; to develop", "misc": [], "field": []}],
+  conjugations: {"dict": "そだてる", "masu": "そだてます", "te": "そだてて", "ta": "そだてた", "nai": "そだてない", "potential": "そだてられる", "passive": "そだてられる", "causative": "そだてさせる", "volitional": "そだてよう", "cond_ba": "そだてれば", "cond_tara": "そだてたら"},
 },
 
 {
@@ -3828,7 +4478,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1151120',
+  frequency: 12000,
+  meanings: [{"en": "greeting; greetings; salutation; salute; polite set phrase used when meeting or parting from someone", "misc": [], "field": []}, {"en": "speech (congratulatory or appreciative); address", "misc": [], "field": []}, {"en": "reply; response", "misc": [], "field": []}, {"en": "courtesy visit (to offer condolences, say congratulations, pay respect, introduce oneself, etc.)", "misc": [], "field": []}, {"en": "revenge; retaliation", "misc": ["percakapan kasual"], "field": []}, {"en": "a fine thing to say", "misc": ["jocular, humorous term"], "field": []}, {"en": "dialoging (with another Zen practitioner to ascertain their level of enlightenment)", "misc": ["archaic"], "field": []}, {"en": "relationship (between people); connection", "misc": ["archaic"], "field": []}, {"en": "intervention; mediation; mediator", "misc": ["archaic"], "field": []}],
+  misc_jm: ["arkais", "jocular, humorous term", "kasual"],
+  conjugations: {"dict": "あいさつ", "masu": "あいさつします", "te": "あいさつして", "ta": "あいさつした", "nai": "あいさつしない", "potential": "あいさつできる", "passive": "あいさつされる", "causative": "あいさつさせる", "volitional": "あいさつしよう", "cond_ba": "あいさつすれば", "cond_tara": "あいさつしたら"},
 },
 
 {
@@ -3853,7 +4508,10 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: ['vg-n4-00299'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1386460',
+  frequency: 1000,
+  conjugations: {"dict": "せつめい", "masu": "せつめいします", "te": "せつめいして", "ta": "せつめいした", "nai": "せつめいしない", "potential": "せつめいできる", "passive": "せつめいされる", "causative": "せつめいさせる", "volitional": "せつめいしよう", "cond_ba": "せつめいすれば", "cond_tara": "せつめいしたら"},
 },
 
 {
@@ -3878,7 +4536,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1236950',
+  frequency: 500,
+  meanings: [{"en": "education; schooling; training; instruction; teaching; upbringing", "misc": [], "field": []}, {"en": "culture; cultivation; education", "misc": [], "field": []}],
+  conjugations: {"dict": "きょういく", "masu": "きょういくします", "te": "きょういくして", "ta": "きょういくした", "nai": "きょういくしない", "potential": "きょういくできる", "passive": "きょういくされる", "causative": "きょういくさせる", "volitional": "きょういくしよう", "cond_ba": "きょういくすれば", "cond_tara": "きょういくしたら"},
 },
 
 {
@@ -3903,7 +4565,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1258520',
+  frequency: 500,
+  forms: [{"word": "研究", "info": []}, {"word": "硏究", "info": ["search-only kanji form"]}],
+  conjugations: {"dict": "けんきゅう", "masu": "けんきゅうします", "te": "けんきゅうして", "ta": "けんきゅうした", "nai": "けんきゅうしない", "potential": "けんきゅうできる", "passive": "けんきゅうされる", "causative": "けんきゅうさせる", "volitional": "けんきゅうしよう", "cond_ba": "けんきゅうすれば", "cond_tara": "けんきゅうしたら"},
 },
 
 {
@@ -3928,7 +4594,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1234140',
+  frequency: 1000,
+  meanings: [{"en": "competition; contest; rivalry; race", "misc": [], "field": []}, {"en": "competition (between organisms or species)", "misc": [], "field": ["biology"]}],
+  conjugations: {"dict": "きょうそう", "masu": "きょうそうします", "te": "きょうそうして", "ta": "きょうそうした", "nai": "きょうそうしない", "potential": "きょうそうできる", "passive": "きょうそうされる", "causative": "きょうそうさせる", "volitional": "きょうそうしよう", "cond_ba": "きょうそうすれば", "cond_tara": "きょうそうしたら"},
 },
 
 {
@@ -3953,7 +4623,10 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: ['vg-n4-00305'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1340000',
+  frequency: 2500,
+  conjugations: {"dict": "しゅっぱつ", "masu": "しゅっぱつします", "te": "しゅっぱつして", "ta": "しゅっぱつした", "nai": "しゅっぱつしない", "potential": "しゅっぱつできる", "passive": "しゅっぱつされる", "causative": "しゅっぱつさせる", "volitional": "しゅっぱつしよう", "cond_ba": "しゅっぱつすれば", "cond_tara": "しゅっぱつしたら"},
 },
 
 {
@@ -3978,7 +4651,10 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: ['vg-n4-00308'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1351430',
+  frequency: 2500,
+  conjugations: {"dict": "しょうかい", "masu": "しょうかいします", "te": "しょうかいして", "ta": "しょうかいした", "nai": "しょうかいしない", "potential": "しょうかいできる", "passive": "しょうかいされる", "causative": "しょうかいさせる", "volitional": "しょうかいしよう", "cond_ba": "しょうかいすれば", "cond_tara": "しょうかいしたら"},
 },
 
 {
@@ -4003,7 +4679,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: ['vg-n4-00309'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1349610',
+  frequency: 2500,
+  forms: [{"word": "招待", "info": []}, {"word": "請待", "info": ["kanji jarang dipakai"]}],
+  conjugations: {"dict": "しょうたい", "masu": "しょうたいします", "te": "しょうたいして", "ta": "しょうたいした", "nai": "しょうたいしない", "potential": "しょうたいできる", "passive": "しょうたいされる", "causative": "しょうたいさせる", "volitional": "しょうたいしよう", "cond_ba": "しょうたいすれば", "cond_tara": "しょうたいしたら"},
 },
 
 {
@@ -4028,7 +4708,10 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: ['vg-n4-00304'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1341670',
+  frequency: 1000,
+  conjugations: {"dict": "じゅんび", "masu": "じゅんびします", "te": "じゅんびして", "ta": "じゅんびした", "nai": "じゅんびしない", "potential": "じゅんびできる", "passive": "じゅんびされる", "causative": "じゅんびさせる", "volitional": "じゅんびしよう", "cond_ba": "じゅんびすれば", "cond_tara": "じゅんびしたら"},
 },
 
 {
@@ -4053,7 +4736,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1267180',
+  frequency: 2500,
+  meanings: [{"en": "fault; trouble; breakdown; failure; being out of order", "misc": [], "field": []}, {"en": "damage (to a part of the body); injury; hurt", "misc": [], "field": []}, {"en": "problem; hitch; obstacle; hindrance", "misc": [], "field": []}, {"en": "objection; protest", "misc": [], "field": []}],
+  conjugations: {"dict": "こしょう", "masu": "こしょうします", "te": "こしょうして", "ta": "こしょうした", "nai": "こしょうしない", "potential": "こしょうできる", "passive": "こしょうされる", "causative": "こしょうさせる", "volitional": "こしょうしよう", "cond_ba": "こしょうすれば", "cond_tara": "こしょうしたら"},
 },
 
 {
@@ -4078,7 +4765,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1390360',
+  frequency: 500,
+  meanings: [{"en": "war", "misc": [], "field": []}, {"en": "fighting; fierce competition", "misc": [], "field": []}],
+  conjugations: {"dict": "せんそう", "masu": "せんそうします", "te": "せんそうして", "ta": "せんそうした", "nai": "せんそうしない", "potential": "せんそうできる", "passive": "せんそうされる", "causative": "せんそうさせる", "volitional": "せんそうしよう", "cond_ba": "せんそうすれば", "cond_tara": "せんそうしたら"},
 },
 
 {
@@ -4103,7 +4794,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: ['vg-n4-00325'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1405890',
+  frequency: 1500,
+  meanings: [{"en": "graduation; completion (of a course)", "misc": [], "field": []}, {"en": "moving on (from); outgrowing (something)", "misc": [], "field": []}, {"en": "leaving (a group, company, etc.); quitting", "misc": [], "field": []}],
+  conjugations: {"dict": "そつぎょう", "masu": "そつぎょうします", "te": "そつぎょうして", "ta": "そつぎょうした", "nai": "そつぎょうしない", "potential": "そつぎょうできる", "passive": "そつぎょうされる", "causative": "そつぎょうさせる", "volitional": "そつぎょうしよう", "cond_ba": "そつぎょうすれば", "cond_tara": "そつぎょうしたら"},
 },
 
 {
@@ -4128,7 +4823,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1007060',
+  frequency: 1000,
+  forms: [{"word": "それ程", "info": []}, {"word": "其れ程", "info": []}, {"word": "其程", "info": []}],
+  misc_jm: ["biasanya kana saja"],
+  conjugations: {"dict": "それほど", "masu": "それほどます", "te": "それほどて", "ta": "それほどた", "nai": "それほどない", "potential": "それほどる", "passive": "それほどれる", "causative": "それほどせる", "volitional": "それほどう", "cond_ba": "それほどば", "cond_tara": "それほどたら"},
 },
 
 {
@@ -4153,7 +4853,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1185290',
+  frequency: 8500,
+  meanings: [{"en": "boarding; lodging; board and lodging; room and board", "misc": [], "field": []}, {"en": "boarding house; lodging house; lodgings", "misc": [], "field": []}],
+  conjugations: {"dict": "げしゅく", "masu": "げしゅくします", "te": "げしゅくして", "ta": "げしゅくした", "nai": "げしゅくしない", "potential": "げしゅくできる", "passive": "げしゅくされる", "causative": "げしゅくさせる", "volitional": "げしゅくしよう", "cond_ba": "げしゅくすれば", "cond_tara": "げしゅくしたら"},
 },
 
 {
@@ -4178,7 +4882,11 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1310260',
+  frequency: 7500,
+  forms: [{"word": "支度", "info": []}, {"word": "仕度", "info": []}],
+  conjugations: {"dict": "したく", "masu": "したくします", "te": "したくして", "ta": "したくした", "nai": "したくしない", "potential": "したくできる", "passive": "したくされる", "causative": "したくさせる", "volitional": "したくしよう", "cond_ba": "したくすれば", "cond_tara": "したくしたら"},
 },
 
 {
@@ -4203,7 +4911,10 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: ['vg-n4-00315'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1320140',
+  frequency: 2000,
+  conjugations: {"dict": "しっぱい", "masu": "しっぱいします", "te": "しっぱいして", "ta": "しっぱいした", "nai": "しっぱいしない", "potential": "しっぱいできる", "passive": "しっぱいされる", "causative": "しっぱいさせる", "volitional": "しっぱいしよう", "cond_ba": "しっぱいすれば", "cond_tara": "しっぱいしたら"},
 },
 
 {
@@ -4228,7 +4939,10 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: ['vg-n4-00652'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1445130',
+  frequency: 500,
+  conjugations: {"dict": "どりょく", "masu": "どりょくします", "te": "どりょくして", "ta": "どりょくした", "nai": "どりょくしない", "potential": "どりょくできる", "passive": "どりょくされる", "causative": "どりょくさせる", "volitional": "どりょくしよう", "cond_ba": "どりょくすれば", "cond_tara": "どりょくしたら"},
 },
 
 {
@@ -4253,7 +4967,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1483540',
+  frequency: 1000,
+  forms: [{"word": "比べる", "info": []}, {"word": "較べる", "info": ["kanji jarang dipakai"]}, {"word": "競べる", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to compare; to make a comparison (between)", "misc": [], "field": []}, {"en": "to compete (on); to measure (one's strength, ability, etc. against another's)", "misc": [], "field": []}],
+  conjugations: {"dict": "くらべる", "masu": "くらべます", "te": "くらべて", "ta": "くらべた", "nai": "くらべない", "potential": "くらべられる", "passive": "くらべられる", "causative": "くらべさせる", "volitional": "くらべよう", "cond_ba": "くらべれば", "cond_tara": "くらべたら"},
 },
 
 {
@@ -4278,7 +4997,12 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1327120',
+  frequency: 4500,
+  forms: [{"word": "守る", "info": []}, {"word": "護る", "info": ["kanji jarang dipakai"]}, {"word": "戍る", "info": ["search-only kanji form"]}, {"word": "守護る", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "to protect; to guard; to defend", "misc": [], "field": []}, {"en": "to keep (i.e. a promise); to abide (by the rules); to observe; to obey; to follow", "misc": [], "field": []}],
+  conjugations: {"dict": "まもる", "masu": "まもります", "te": "まもって", "ta": "まもった", "nai": "まもらない", "potential": "まもれる", "passive": "まもられる", "causative": "まもらせる", "volitional": "まもろう", "cond_ba": "まもれば", "cond_tara": "まもったら"},
 },
 
 {
@@ -4303,7 +5027,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "ねぼうする", "masu": "ねぼうします", "te": "ねぼうして", "ta": "ねぼうした", "nai": "ねぼうしない", "potential": "ねぼうできる", "passive": "ねぼうされる", "causative": "ねぼうさせる", "volitional": "ねぼうしよう", "cond_ba": "ねぼうすれば", "cond_tara": "ねぼうしたら"},
 },
 
 {
@@ -4328,7 +5053,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "さんかする", "masu": "さんかします", "te": "さんかして", "ta": "さんかした", "nai": "さんかしない", "potential": "さんかできる", "passive": "さんかされる", "causative": "さんかさせる", "volitional": "さんかしよう", "cond_ba": "さんかすれば", "cond_tara": "さんかしたら"},
 },
 
 {
@@ -4353,7 +5079,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "かくにんする", "masu": "かくにんします", "te": "かくにんして", "ta": "かくにんした", "nai": "かくにんしない", "potential": "かくにんできる", "passive": "かくにんされる", "causative": "かくにんさせる", "volitional": "かくにんしよう", "cond_ba": "かくにんすれば", "cond_tara": "かくにんしたら"},
 },
 
 {
@@ -4378,7 +5105,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: ['vg-n4-00485'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "せつめいする", "masu": "せつめいします", "te": "せつめいして", "ta": "せつめいした", "nai": "せつめいしない", "potential": "せつめいできる", "passive": "せつめいされる", "causative": "せつめいさせる", "volitional": "せつめいしよう", "cond_ba": "せつめいすれば", "cond_tara": "せつめいしたら"},
 },
 
 {
@@ -4403,7 +5131,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "そうだんする", "masu": "そうだんします", "te": "そうだんして", "ta": "そうだんした", "nai": "そうだんしない", "potential": "そうだんできる", "passive": "そうだんされる", "causative": "そうだんさせる", "volitional": "そうだんしよう", "cond_ba": "そうだんすれば", "cond_tara": "そうだんしたら"},
 },
 
 {
@@ -4428,7 +5157,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "ちゅういする", "masu": "ちゅういします", "te": "ちゅういして", "ta": "ちゅういした", "nai": "ちゅういしない", "potential": "ちゅういできる", "passive": "ちゅういされる", "causative": "ちゅういさせる", "volitional": "ちゅういしよう", "cond_ba": "ちゅういすれば", "cond_tara": "ちゅういしたら"},
 },
 
 {
@@ -4453,7 +5183,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "りようする", "masu": "りようします", "te": "りようして", "ta": "りようした", "nai": "りようしない", "potential": "りようできる", "passive": "りようされる", "causative": "りようさせる", "volitional": "りようしよう", "cond_ba": "りようすれば", "cond_tara": "りようしたら"},
 },
 
 {
@@ -4478,7 +5209,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "よういする", "masu": "よういします", "te": "よういして", "ta": "よういした", "nai": "よういしない", "potential": "よういできる", "passive": "よういされる", "causative": "よういさせる", "volitional": "よういしよう", "cond_ba": "よういすれば", "cond_tara": "よういしたら"},
 },
 
 {
@@ -4503,7 +5235,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: ['vg-n4-00502'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "じゅんびする", "masu": "じゅんびします", "te": "じゅんびして", "ta": "じゅんびした", "nai": "じゅんびしない", "potential": "じゅんびできる", "passive": "じゅんびされる", "causative": "じゅんびさせる", "volitional": "じゅんびしよう", "cond_ba": "じゅんびすれば", "cond_tara": "じゅんびしたら"},
 },
 
 {
@@ -4528,7 +5261,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: ['vg-n4-00498'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "しゅっぱつする", "masu": "しゅっぱつします", "te": "しゅっぱつして", "ta": "しゅっぱつした", "nai": "しゅっぱつしない", "potential": "しゅっぱつできる", "passive": "しゅっぱつされる", "causative": "しゅっぱつさせる", "volitional": "しゅっぱつしよう", "cond_ba": "しゅっぱつすれば", "cond_tara": "しゅっぱつしたら"},
 },
 
 {
@@ -4553,7 +5287,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: ['vg-n4-00021'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "とうちゃくする", "masu": "とうちゃくします", "te": "とうちゃくして", "ta": "とうちゃくした", "nai": "とうちゃくしない", "potential": "とうちゃくできる", "passive": "とうちゃくされる", "causative": "とうちゃくさせる", "volitional": "とうちゃくしよう", "cond_ba": "とうちゃくすれば", "cond_tara": "とうちゃくしたら"},
 },
 
 {
@@ -4578,7 +5313,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: ['vg-n4-00114'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "れんらくする", "masu": "れんらくします", "te": "れんらくして", "ta": "れんらくした", "nai": "れんらくしない", "potential": "れんらくできる", "passive": "れんらくされる", "causative": "れんらくさせる", "volitional": "れんらくしよう", "cond_ba": "れんらくすれば", "cond_tara": "れんらくしたら"},
 },
 
 {
@@ -4603,7 +5339,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: ['vg-n4-00499'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "しょうかいする", "masu": "しょうかいします", "te": "しょうかいして", "ta": "しょうかいした", "nai": "しょうかいしない", "potential": "しょうかいできる", "passive": "しょうかいされる", "causative": "しょうかいさせる", "volitional": "しょうかいしよう", "cond_ba": "しょうかいすれば", "cond_tara": "しょうかいしたら"},
 },
 
 {
@@ -4628,7 +5365,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: ['vg-n4-00500'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "しょうたいする", "masu": "しょうたいします", "te": "しょうたいして", "ta": "しょうたいした", "nai": "しょうたいしない", "potential": "しょうたいできる", "passive": "しょうたいされる", "causative": "しょうたいさせる", "volitional": "しょうたいしよう", "cond_ba": "しょうたいすれば", "cond_tara": "しょうたいしたら"},
 },
 
 {
@@ -4653,7 +5391,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "あんないする", "masu": "あんないします", "te": "あんないして", "ta": "あんないした", "nai": "あんないしない", "potential": "あんないできる", "passive": "あんないされる", "causative": "あんないさせる", "volitional": "あんないしよう", "cond_ba": "あんないすれば", "cond_tara": "あんないしたら"},
 },
 
 {
@@ -4678,7 +5417,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "きろくする", "masu": "きろくします", "te": "きろくして", "ta": "きろくした", "nai": "きろくしない", "potential": "きろくできる", "passive": "きろくされる", "causative": "きろくさせる", "volitional": "きろくしよう", "cond_ba": "きろくすれば", "cond_tara": "きろくしたら"},
 },
 
 {
@@ -4703,7 +5443,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "ほうこくする", "masu": "ほうこくします", "te": "ほうこくして", "ta": "ほうこくした", "nai": "ほうこくしない", "potential": "ほうこくできる", "passive": "ほうこくされる", "causative": "ほうこくさせる", "volitional": "ほうこくしよう", "cond_ba": "ほうこくすれば", "cond_tara": "ほうこくしたら"},
 },
 
 {
@@ -4728,7 +5469,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: ['vg-n4-00179'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "よやくする", "masu": "よやくします", "te": "よやくして", "ta": "よやくした", "nai": "よやくしない", "potential": "よやくできる", "passive": "よやくされる", "causative": "よやくさせる", "volitional": "よやくしよう", "cond_ba": "よやくすれば", "cond_tara": "よやくしたら"},
 },
 
 {
@@ -4753,7 +5495,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: ['vg-n4-00033'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "しんぱいする", "masu": "しんぱいします", "te": "しんぱいして", "ta": "しんぱいした", "nai": "しんぱいしない", "potential": "しんぱいできる", "passive": "しんぱいされる", "causative": "しんぱいさせる", "volitional": "しんぱいしよう", "cond_ba": "しんぱいすれば", "cond_tara": "しんぱいしたら"},
 },
 
 {
@@ -4778,7 +5521,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: ['vg-n4-00685'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "しっぱいする", "masu": "しっぱいします", "te": "しっぱいして", "ta": "しっぱいした", "nai": "しっぱいしない", "potential": "しっぱいできる", "passive": "しっぱいされる", "causative": "しっぱいさせる", "volitional": "しっぱいしよう", "cond_ba": "しっぱいすれば", "cond_tara": "しっぱいしたら"},
 },
 
 {
@@ -4803,7 +5547,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "せいこうする", "masu": "せいこうします", "te": "せいこうして", "ta": "せいこうした", "nai": "せいこうしない", "potential": "せいこうできる", "passive": "せいこうされる", "causative": "せいこうさせる", "volitional": "せいこうしよう", "cond_ba": "せいこうすれば", "cond_tara": "せいこうしたら"},
 },
 
 {
@@ -4828,7 +5573,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "おうえんする", "masu": "おうえんします", "te": "おうえんして", "ta": "おうえんした", "nai": "おうえんしない", "potential": "おうえんできる", "passive": "おうえんされる", "causative": "おうえんさせる", "volitional": "おうえんしよう", "cond_ba": "おうえんすれば", "cond_tara": "おうえんしたら"},
 },
 
 {
@@ -4853,7 +5599,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: ['vg-n4-00006'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "うんてんする", "masu": "うんてんします", "te": "うんてんして", "ta": "うんてんした", "nai": "うんてんしない", "potential": "うんてんできる", "passive": "うんてんされる", "causative": "うんてんさせる", "volitional": "うんてんしよう", "cond_ba": "うんてんすれば", "cond_tara": "うんてんしたら"},
 },
 
 {
@@ -4878,7 +5625,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "さんぽする", "masu": "さんぽします", "te": "さんぽして", "ta": "さんぽした", "nai": "さんぽしない", "potential": "さんぽできる", "passive": "さんぽされる", "causative": "さんぽさせる", "volitional": "さんぽしよう", "cond_ba": "さんぽすれば", "cond_tara": "さんぽしたら"},
 },
 
 {
@@ -4903,7 +5651,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: ['vg-n4-00016'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "せんたくする", "masu": "せんたくします", "te": "せんたくして", "ta": "せんたくした", "nai": "せんたくしない", "potential": "せんたくできる", "passive": "せんたくされる", "causative": "せんたくさせる", "volitional": "せんたくしよう", "cond_ba": "せんたくすれば", "cond_tara": "せんたくしたら"},
 },
 
 {
@@ -4928,7 +5677,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "そうじする", "masu": "そうじします", "te": "そうじして", "ta": "そうじした", "nai": "そうじしない", "potential": "そうじできる", "passive": "そうじされる", "causative": "そうじさせる", "volitional": "そうじしよう", "cond_ba": "そうじすれば", "cond_tara": "そうじしたら"},
 },
 
 {
@@ -4953,7 +5703,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "りょうりする", "masu": "りょうりします", "te": "りょうりして", "ta": "りょうりした", "nai": "りょうりしない", "potential": "りょうりできる", "passive": "りょうりされる", "causative": "りょうりさせる", "volitional": "りょうりしよう", "cond_ba": "りょうりすれば", "cond_tara": "りょうりしたら"},
 },
 
 {
@@ -4978,7 +5729,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "けっこんする", "masu": "けっこんします", "te": "けっこんして", "ta": "けっこんした", "nai": "けっこんしない", "potential": "けっこんできる", "passive": "けっこんされる", "causative": "けっこんさせる", "volitional": "けっこんしよう", "cond_ba": "けっこんすれば", "cond_tara": "けっこんしたら"},
 },
 
 {
@@ -5003,7 +5755,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "りこんする", "masu": "りこんします", "te": "りこんして", "ta": "りこんした", "nai": "りこんしない", "potential": "りこんできる", "passive": "りこんされる", "causative": "りこんさせる", "volitional": "りこんしよう", "cond_ba": "りこんすれば", "cond_tara": "りこんしたら"},
 },
 
 {
@@ -5028,7 +5781,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: ['vg-n4-00573'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "そつぎょうする", "masu": "そつぎょうします", "te": "そつぎょうして", "ta": "そつぎょうした", "nai": "そつぎょうしない", "potential": "そつぎょうできる", "passive": "そつぎょうされる", "causative": "そつぎょうさせる", "volitional": "そつぎょうしよう", "cond_ba": "そつぎょうすれば", "cond_tara": "そつぎょうしたら"},
 },
 
 {
@@ -5053,7 +5807,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "きんちょうする", "masu": "きんちょうします", "te": "きんちょうして", "ta": "きんちょうした", "nai": "きんちょうしない", "potential": "きんちょうできる", "passive": "きんちょうされる", "causative": "きんちょうさせる", "volitional": "きんちょうしよう", "cond_ba": "きんちょうすれば", "cond_tara": "きんちょうしたら"},
 },
 
 {
@@ -5078,7 +5833,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "びっくりする", "masu": "びっくりします", "te": "びっくりして", "ta": "びっくりした", "nai": "びっくりしない", "potential": "びっくりできる", "passive": "びっくりされる", "causative": "びっくりさせる", "volitional": "びっくりしよう", "cond_ba": "びっくりすれば", "cond_tara": "びっくりしたら"},
 },
 
 {
@@ -5103,7 +5859,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "がっかりする", "masu": "がっかりします", "te": "がっかりして", "ta": "がっかりした", "nai": "がっかりしない", "potential": "がっかりできる", "passive": "がっかりされる", "causative": "がっかりさせる", "volitional": "がっかりしよう", "cond_ba": "がっかりすれば", "cond_tara": "がっかりしたら"},
 },
 
 {
@@ -5128,7 +5885,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "こうかいする", "masu": "こうかいします", "te": "こうかいして", "ta": "こうかいした", "nai": "こうかいしない", "potential": "こうかいできる", "passive": "こうかいされる", "causative": "こうかいさせる", "volitional": "こうかいしよう", "cond_ba": "こうかいすれば", "cond_tara": "こうかいしたら"},
 },
 
 {
@@ -5153,7 +5911,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "かんしゃする", "masu": "かんしゃします", "te": "かんしゃして", "ta": "かんしゃした", "nai": "かんしゃしない", "potential": "かんしゃできる", "passive": "かんしゃされる", "causative": "かんしゃさせる", "volitional": "かんしゃしよう", "cond_ba": "かんしゃすれば", "cond_tara": "かんしゃしたら"},
 },
 
 {
@@ -5178,7 +5937,8 @@ window.vocabN4_Verbs = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  conjugations: {"dict": "ちこくする", "masu": "ちこくします", "te": "ちこくして", "ta": "ちこくした", "nai": "ちこくしない", "potential": "ちこくできる", "passive": "ちこくされる", "causative": "ちこくさせる", "volitional": "ちこくしよう", "cond_ba": "ちこくすれば", "cond_tara": "ちこくしたら"},
 }
 
 ];

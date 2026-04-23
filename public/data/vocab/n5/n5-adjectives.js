@@ -28,7 +28,11 @@ window.vocabN5_Adjectives = [
   antonyms: ['vg-n5-00058'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1588880',
+  frequency: 3500,
+  forms: [{"word": "大きい", "info": []}, {"word": "巨きい", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "big; large; great", "misc": [], "field": []}, {"en": "loud", "misc": [], "field": []}, {"en": "extensive; spacious", "misc": [], "field": []}, {"en": "important; decisive; valuable", "misc": [], "field": []}, {"en": "older; grown-up", "misc": [], "field": []}],
 },
 
 {
@@ -53,7 +57,10 @@ window.vocabN5_Adjectives = [
   antonyms: ['vg-n5-00057'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1347750',
+  frequency: 12000,
+  meanings: [{"en": "small; little; tiny", "misc": [], "field": []}, {"en": "slight; below average (in degree, amount, etc.); minor; small", "misc": [], "field": []}, {"en": "low (e.g. sound); soft (e.g. voice)", "misc": [], "field": []}, {"en": "unimportant; petty; insignificant; trifling; trivial", "misc": [], "field": []}, {"en": "young; juvenile", "misc": [], "field": []}],
 },
 
 {
@@ -78,7 +85,11 @@ window.vocabN5_Adjectives = [
   antonyms: ['vg-n5-00060'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1605820',
+  frequency: 4000,
+  forms: [{"word": "良い", "info": []}, {"word": "好い", "info": []}, {"word": "善い", "info": []}, {"word": "佳い", "info": ["kanji jarang dipakai"]}, {"word": "吉い", "info": ["kanji jarang dipakai"]}, {"word": "宜い", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "good; excellent; fine; nice; pleasant; agreeable", "misc": [], "field": []}, {"en": "sufficient; enough; ready; prepared", "misc": [], "field": []}, {"en": "profitable (deal, business offer, etc.); beneficial", "misc": [], "field": []}, {"en": "OK; all right; fine; no problem", "misc": [], "field": []}, {"en": "easy to ...", "misc": [], "field": []}],
 },
 
 {
@@ -103,7 +114,11 @@ window.vocabN5_Adjectives = [
   antonyms: ['vg-n5-00059'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2772730',
+  frequency: 14000,
+  forms: [{"word": "難い", "info": ["kanji jarang dipakai"]}, {"word": "悪い", "info": ["search-only kanji form"]}],
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -128,7 +143,11 @@ window.vocabN5_Adjectives = [
   antonyms: ['vg-n5-00062'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1283190',
+  frequency: 4000,
+  forms: [{"word": "高い", "info": []}, {"word": "高価い", "info": ["search-only kanji form"]}, {"word": "高ーい", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "high; tall", "misc": [], "field": []}, {"en": "expensive; high-priced", "misc": [], "field": []}, {"en": "high (level); above average (in degree, quality, etc.)", "misc": [], "field": []}, {"en": "loud", "misc": [], "field": []}, {"en": "high-pitched; shrill", "misc": [], "field": []}],
 },
 
 {
@@ -153,7 +172,11 @@ window.vocabN5_Adjectives = [
   antonyms: ['vg-n5-00061'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1153670',
+  frequency: 23500,
+  forms: [{"word": "安い", "info": []}, {"word": "廉い", "info": []}],
+  meanings: [{"en": "cheap; inexpensive", "misc": [], "field": []}, {"en": "calm; peaceful; quiet", "misc": [], "field": []}],
 },
 
 {
@@ -178,7 +201,10 @@ window.vocabN5_Adjectives = [
   antonyms: ['vg-n5-00064'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1343460',
+  frequency: 17000,
+  meanings: [{"en": "hot; warm; sultry; heated", "misc": [], "field": []}, {"en": "passionate; impassioned; burning (desire, etc.)", "misc": [], "field": []}, {"en": "on everybody's mind; on the radar; du jour; interested (gaze, etc.)", "misc": [], "field": []}],
 },
 
 {
@@ -203,7 +229,10 @@ window.vocabN5_Adjectives = [
   antonyms: ['vg-n5-00063'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1210360',
+  frequency: 20000,
+  meanings: [{"en": "cold (e.g. weather)", "misc": [], "field": []}, {"en": "uninteresting (esp. joke); lame; dull; weak; corny", "misc": [], "field": []}],
 },
 
 {
@@ -228,7 +257,10 @@ window.vocabN5_Adjectives = [
   antonyms: ['vg-n5-00066'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1361490',
+  frequency: 4000,
+  forms: [{"word": "新しい", "info": []}, {"word": "新らしい", "info": ["search-only kanji form"]}],
 },
 
 {
@@ -253,7 +285,11 @@ window.vocabN5_Adjectives = [
   antonyms: ['vg-n5-00065'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1265070',
+  frequency: 8000,
+  forms: [{"word": "古い", "info": []}, {"word": "旧い", "info": ["kanji jarang dipakai"]}, {"word": "故い", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "old; aged; ancient; antiquated; antique; timeworn", "misc": [], "field": []}, {"en": "long; since long ago; time-honored", "misc": [], "field": []}, {"en": "of the distant past; long-ago", "misc": [], "field": []}, {"en": "stale; threadbare; hackneyed; corny", "misc": [], "field": []}, {"en": "old-fashioned; outmoded; out-of-date", "misc": [], "field": []}],
 },
 
 {
@@ -278,7 +314,10 @@ window.vocabN5_Adjectives = [
   antonyms: ['vg-n5-00068'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1533580',
+  frequency: 9500,
+  meanings: [{"en": "interesting; fascinating; intriguing; enthralling", "misc": [], "field": []}, {"en": "amusing; funny; comical", "misc": [], "field": []}, {"en": "enjoyable; fun; entertaining; pleasant; agreeable", "misc": [], "field": []}, {"en": "good; satisfactory; favourable; desirable; encouraging", "misc": [], "field": []}],
 },
 
 {
@@ -303,7 +342,12 @@ window.vocabN5_Adjectives = [
   antonyms: ['vg-n5-00067'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1008190',
+  frequency: 1000,
+  forms: [{"word": "詰らない", "info": []}, {"word": "詰まらない", "info": []}],
+  meanings: [{"en": "dull; uninteresting; boring; tedious", "misc": ["biasanya kana saja"], "field": []}, {"en": "insignificant; unimportant; trifling; trivial; worthless", "misc": ["biasanya kana saja"], "field": []}, {"en": "absurd; foolish; silly; stupid", "misc": ["biasanya kana saja"], "field": []}, {"en": "useless; pointless; disappointing", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -328,7 +372,12 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1486650',
+  frequency: 1000,
+  forms: [{"word": "美味しい", "info": []}, {"word": "旨味しい", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "good(-tasting); nice; delicious; tasty", "misc": ["biasanya kana saja"], "field": []}, {"en": "attractive (offer, opportunity, etc.); appealing; convenient; favorable; desirable; profitable", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -353,7 +402,12 @@ window.vocabN5_Adjectives = [
   antonyms: ['vg-n5-00071'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1460850',
+  frequency: 3500,
+  forms: [{"word": "難しい", "info": []}, {"word": "六借しい", "info": ["search-only kanji form"]}, {"word": "六ヶ敷い", "info": ["search-only kanji form"]}, {"word": "六かしい", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "difficult; hard; troublesome; complicated; serious (disease, problem, etc.)", "misc": [], "field": []}, {"en": "impossible; unfeasible", "misc": ["euphemistic"], "field": []}, {"en": "fussy; particular; fastidious; hard to please; displeased", "misc": [], "field": []}, {"en": "gloomy; glum; sullen; serious (look)", "misc": [], "field": []}, {"en": "dirty; unclean; filthy; detestable", "misc": ["archaic"], "field": []}, {"en": "unpleasant; uncomfortable; creepy; spooky", "misc": ["archaic"], "field": []}],
+  misc_jm: ["arkais", "euphemistic"],
 },
 
 {
@@ -378,7 +432,10 @@ window.vocabN5_Adjectives = [
   antonyms: ['vg-n5-00070'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1157000',
+  frequency: 19500,
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -403,7 +460,10 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2835296',
+  meanings: [{"en": "busy; hectic; frantic", "misc": ["biasanya kana saja"], "field": []}, {"en": "restless; hurried; fidgety", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -428,7 +488,10 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2863274',
+  meanings: [{"en": "cute; adorable; charming; lovely; pretty", "misc": ["biasanya kana saja", "dated term"], "field": []}, {"en": "dear; precious; darling; pet", "misc": ["biasanya kana saja", "dated term"], "field": []}, {"en": "innocent; childlike; childish; lovable", "misc": ["biasanya kana saja", "dated term"], "field": []}, {"en": "dainty; little; tiny", "misc": ["biasanya kana saja", "dated term"], "field": []}],
+  misc_jm: ["biasanya kana saja", "dated term"],
 },
 
 {
@@ -453,7 +516,11 @@ window.vocabN5_Adjectives = [
   antonyms: ['vg-n5-00075'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1429750',
+  frequency: 7500,
+  forms: [{"word": "長い", "info": []}, {"word": "永い", "info": []}],
+  meanings: [{"en": "long (distance, length)", "misc": [], "field": []}, {"en": "long (time); protracted; prolonged", "misc": [], "field": []}],
 },
 
 {
@@ -478,7 +545,11 @@ window.vocabN5_Adjectives = [
   antonyms: ['vg-n5-00074'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1418620',
+  frequency: 12500,
+  forms: [{"word": "短い", "info": []}, {"word": "短かい", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "short", "misc": [], "field": []}, {"en": "brief", "misc": [], "field": []}],
 },
 
 {
@@ -503,7 +574,9 @@ window.vocabN5_Adjectives = [
   antonyms: ['vg-n5-00077'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2146440',
+  meanings: [{"en": "love of; affection for; enthusiast for; lover of; fan; -phile", "misc": [], "field": []}, {"en": "being attractive to; being liked by", "misc": [], "field": []}],
 },
 
 {
@@ -528,7 +601,8 @@ window.vocabN5_Adjectives = [
   antonyms: ['vg-n5-00076'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2796330',
 },
 
 {
@@ -553,7 +627,9 @@ window.vocabN5_Adjectives = [
   antonyms: ['vg-n5-00079'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1580400',
+  meanings: [{"en": "upper part", "misc": [], "field": []}, {"en": "upper stream; upper course of a river", "misc": [], "field": []}, {"en": "right side of the stage (audience's or camera's POV); stage left (actor's POV)", "misc": [], "field": []}, {"en": "skillful (in comparisons); dexterity", "misc": [], "field": []}, {"en": "over-arm grip on opponent's belt", "misc": [], "field": ["sumo"]}],
 },
 
 {
@@ -578,7 +654,10 @@ window.vocabN5_Adjectives = [
   antonyms: ['vg-n5-00078'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1185200',
+  frequency: 7500,
+  meanings: [{"en": "unskillful; poor; awkward", "misc": [], "field": []}, {"en": "imprudent; untactful", "misc": [], "field": []}],
 },
 
 {
@@ -603,7 +682,12 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1591900',
+  frequency: 1000,
+  forms: [{"word": "綺麗", "info": []}, {"word": "奇麗", "info": []}, {"word": "暉麗", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "pretty; lovely; beautiful; fair", "misc": [], "field": []}, {"en": "clean; clear; pure; tidy; neat", "misc": ["biasanya kana saja"], "field": []}, {"en": "completely; entirely", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -628,7 +712,11 @@ window.vocabN5_Adjectives = [
   antonyms: ['vg-n5-00082'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1381820',
+  frequency: 2500,
+  forms: [{"word": "静か", "info": []}, {"word": "閑か", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "quiet; silent", "misc": [], "field": []}, {"en": "slow; unhurried", "misc": [], "field": []}, {"en": "calm; peaceful", "misc": [], "field": []}],
 },
 
 {
@@ -653,7 +741,10 @@ window.vocabN5_Adjectives = [
   antonyms: ['vg-n5-00081'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1463480',
+  frequency: 1000,
+  meanings: [{"en": "bustling; busy; crowded; lively; prosperous; thriving", "misc": [], "field": []}, {"en": "lively (party, voices, etc.); loud; noisy; merry; cheerful", "misc": [], "field": []}],
 },
 
 {
@@ -678,7 +769,9 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1643470',
+  forms: [{"word": "大切り", "info": []}, {"word": "大切", "info": ["okurigana tidak biasa"]}],
 },
 
 {
@@ -703,7 +796,11 @@ window.vocabN5_Adjectives = [
   antonyms: ['vg-n5-00146'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1474910',
+  frequency: 8000,
+  meanings: [{"en": "white", "misc": [], "field": []}, {"en": "blank (e.g. paper); uncolored; unmarked; spotless; immaculate", "misc": [], "field": []}, {"en": "innocent; not guilty; pure", "misc": [], "field": []}, {"en": "bright; vivid", "misc": ["archaic"], "field": []}, {"en": "inexperienced; naive; unrefined", "misc": ["archaic"], "field": []}],
+  misc_jm: ["arkais"],
 },
 
 {
@@ -728,7 +825,10 @@ window.vocabN5_Adjectives = [
   antonyms: ['vg-n5-00145'],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1287420',
+  frequency: 9000,
+  meanings: [{"en": "black", "misc": [], "field": []}, {"en": "dark; blackish; sun-tanned (skin)", "misc": [], "field": []}, {"en": "suspicious; criminal; illicit", "misc": [], "field": []}, {"en": "darkened and dirty; sooty; covered in dirt", "misc": [], "field": []}, {"en": "evil; wicked; black-hearted", "misc": [], "field": []}, {"en": "inauspicious; ill-boding; unlucky", "misc": [], "field": []}],
 },
 
 {
@@ -753,7 +853,12 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1383240',
+  frequency: 7500,
+  forms: [{"word": "赤い", "info": []}, {"word": "紅い", "info": []}, {"word": "朱い", "info": ["kanji jarang dipakai"]}, {"word": "緋い", "info": ["search-only kanji form"]}, {"word": "赭い", "info": ["search-only kanji form"]}, {"word": "丹い", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "red; crimson; scarlet; vermilion", "misc": [], "field": []}, {"en": "Red; communist", "misc": ["percakapan kasual"], "field": []}],
+  misc_jm: ["kasual"],
 },
 
 {
@@ -778,7 +883,11 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1381390',
+  frequency: 12500,
+  forms: [{"word": "青い", "info": []}, {"word": "蒼い", "info": []}, {"word": "碧い", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "blue; azure", "misc": [], "field": []}, {"en": "green", "misc": [], "field": []}, {"en": "pale (facial color); gray; grey", "misc": [], "field": []}, {"en": "unripe; inexperienced", "misc": [], "field": []}],
 },
 
 {
@@ -803,7 +912,10 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1207240',
+  frequency: 8000,
+  forms: [{"word": "楽しい", "info": []}, {"word": "愉しい", "info": ["kanji jarang dipakai"]}, {"word": "樂しい", "info": ["search-only kanji form"]}, {"word": "娯しい", "info": ["search-only kanji form"]}],
 },
 
 {
@@ -828,7 +940,10 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: ['vg-n5-00166'],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1451750',
+  frequency: 16500,
+  meanings: [{"en": "same; identical; equal; alike; equivalent", "misc": [], "field": []}, {"en": "anyway; in any case; if one must ...; if one has to ...; as long as ...", "misc": [], "field": []}],
 },
 
 {
@@ -853,7 +968,12 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1383240',
+  frequency: 7500,
+  forms: [{"word": "赤い", "info": []}, {"word": "紅い", "info": []}, {"word": "朱い", "info": ["kanji jarang dipakai"]}, {"word": "緋い", "info": ["search-only kanji form"]}, {"word": "赭い", "info": ["search-only kanji form"]}, {"word": "丹い", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "red; crimson; scarlet; vermilion", "misc": [], "field": []}, {"en": "Red; communist", "misc": ["percakapan kasual"], "field": []}],
+  misc_jm: ["kasual"],
 },
 
 {
@@ -878,7 +998,10 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1151180',
+  meanings: [{"en": "mallow (any plant of family Malvaceae)", "misc": ["biasanya kana saja"], "field": []}, {"en": "Asarum caulescens (species of wild ginger)", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -903,7 +1026,11 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1474910',
+  frequency: 8000,
+  meanings: [{"en": "white", "misc": [], "field": []}, {"en": "blank (e.g. paper); uncolored; unmarked; spotless; immaculate", "misc": [], "field": []}, {"en": "innocent; not guilty; pure", "misc": [], "field": []}, {"en": "bright; vivid", "misc": ["archaic"], "field": []}, {"en": "inexperienced; naive; unrefined", "misc": ["archaic"], "field": []}],
+  misc_jm: ["arkais"],
 },
 
 {
@@ -928,7 +1055,10 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1287420',
+  frequency: 9000,
+  meanings: [{"en": "black", "misc": [], "field": []}, {"en": "dark; blackish; sun-tanned (skin)", "misc": [], "field": []}, {"en": "suspicious; criminal; illicit", "misc": [], "field": []}, {"en": "darkened and dirty; sooty; covered in dirt", "misc": [], "field": []}, {"en": "evil; wicked; black-hearted", "misc": [], "field": []}, {"en": "inauspicious; ill-boding; unlucky", "misc": [], "field": []}],
 },
 
 {
@@ -953,7 +1083,10 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1361490',
+  frequency: 4000,
+  forms: [{"word": "新しい", "info": []}, {"word": "新らしい", "info": ["search-only kanji form"]}],
 },
 
 {
@@ -978,7 +1111,11 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1265070',
+  frequency: 8000,
+  forms: [{"word": "古い", "info": []}, {"word": "旧い", "info": ["kanji jarang dipakai"]}, {"word": "故い", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "old; aged; ancient; antiquated; antique; timeworn", "misc": [], "field": []}, {"en": "long; since long ago; time-honored", "misc": [], "field": []}, {"en": "of the distant past; long-ago", "misc": [], "field": []}, {"en": "stale; threadbare; hackneyed; corny", "misc": [], "field": []}, {"en": "old-fashioned; outmoded; out-of-date", "misc": [], "field": []}],
 },
 
 {
@@ -1003,7 +1140,11 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1283190',
+  frequency: 4000,
+  forms: [{"word": "高い", "info": []}, {"word": "高価い", "info": ["search-only kanji form"]}, {"word": "高ーい", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "high; tall", "misc": [], "field": []}, {"en": "expensive; high-priced", "misc": [], "field": []}, {"en": "high (level); above average (in degree, quality, etc.)", "misc": [], "field": []}, {"en": "loud", "misc": [], "field": []}, {"en": "high-pitched; shrill", "misc": [], "field": []}],
 },
 
 {
@@ -1028,7 +1169,11 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1153670',
+  frequency: 23500,
+  forms: [{"word": "安い", "info": []}, {"word": "廉い", "info": []}],
+  meanings: [{"en": "cheap; inexpensive", "misc": [], "field": []}, {"en": "calm; peaceful; quiet", "misc": [], "field": []}],
 },
 
 {
@@ -1053,7 +1198,11 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1429750',
+  frequency: 7500,
+  forms: [{"word": "長い", "info": []}, {"word": "永い", "info": []}],
+  meanings: [{"en": "long (distance, length)", "misc": [], "field": []}, {"en": "long (time); protracted; prolonged", "misc": [], "field": []}],
 },
 
 {
@@ -1078,7 +1227,11 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1418620',
+  frequency: 12500,
+  forms: [{"word": "短い", "info": []}, {"word": "短かい", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "short", "misc": [], "field": []}, {"en": "brief", "misc": [], "field": []}],
 },
 
 {
@@ -1103,7 +1256,11 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1588880',
+  frequency: 3500,
+  forms: [{"word": "大きい", "info": []}, {"word": "巨きい", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "big; large; great", "misc": [], "field": []}, {"en": "loud", "misc": [], "field": []}, {"en": "extensive; spacious", "misc": [], "field": []}, {"en": "important; decisive; valuable", "misc": [], "field": []}, {"en": "older; grown-up", "misc": [], "field": []}],
 },
 
 {
@@ -1128,7 +1285,10 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1347750',
+  frequency: 12000,
+  meanings: [{"en": "small; little; tiny", "misc": [], "field": []}, {"en": "slight; below average (in degree, amount, etc.); minor; small", "misc": [], "field": []}, {"en": "low (e.g. sound); soft (e.g. voice)", "misc": [], "field": []}, {"en": "unimportant; petty; insignificant; trifling; trivial", "misc": [], "field": []}, {"en": "young; juvenile", "misc": [], "field": []}],
 },
 
 {
@@ -1153,7 +1313,11 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1275320',
+  frequency: 14500,
+  forms: [{"word": "厚い", "info": []}, {"word": "篤い", "info": []}],
+  meanings: [{"en": "thick; deep; heavy", "misc": [], "field": []}, {"en": "kind; cordial; hospitable; warm; faithful", "misc": [], "field": []}, {"en": "serious (of an illness)", "misc": [], "field": []}, {"en": "abundant", "misc": [], "field": []}],
 },
 
 {
@@ -1178,7 +1342,10 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1210360',
+  frequency: 20000,
+  meanings: [{"en": "cold (e.g. weather)", "misc": [], "field": []}, {"en": "uninteresting (esp. joke); lame; dull; weak; corny", "misc": [], "field": []}],
 },
 
 {
@@ -1203,7 +1370,10 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1556730',
+  frequency: 14000,
+  meanings: [{"en": "cold (to the touch); chilly; icy; freezing", "misc": [], "field": []}, {"en": "(emotionally) cold; coldhearted; unfeeling; indifferent; unfriendly; distant", "misc": [], "field": []}],
 },
 
 {
@@ -1228,7 +1398,11 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1586420',
+  frequency: 10500,
+  forms: [{"word": "暖かい", "info": []}, {"word": "温かい", "info": []}, {"word": "暖い", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "warm; mild; (pleasantly) hot", "misc": [], "field": []}, {"en": "considerate; kind; genial", "misc": [], "field": []}, {"en": "warm (of a colour); mellow", "misc": [], "field": []}, {"en": "having enough money", "misc": [], "field": []}],
 },
 
 {
@@ -1253,7 +1427,12 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1554370',
+  frequency: 15000,
+  forms: [{"word": "涼しい", "info": []}, {"word": "凉しい", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "cool; refreshing", "misc": [], "field": []}, {"en": "clear (e.g. eyes); bright", "misc": [], "field": []}, {"en": "clear; distinct", "misc": [], "field": []}, {"en": "composed (facial expression); unruffled; unconcerned", "misc": [], "field": []}, {"en": "pure; upright; innocent", "misc": ["archaic"], "field": []}],
+  misc_jm: ["arkais"],
 },
 
 {
@@ -1278,7 +1457,10 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1207240',
+  frequency: 8000,
+  forms: [{"word": "楽しい", "info": []}, {"word": "愉しい", "info": ["kanji jarang dipakai"]}, {"word": "樂しい", "info": ["search-only kanji form"]}, {"word": "娯しい", "info": ["search-only kanji form"]}],
 },
 
 {
@@ -1303,7 +1485,11 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1219510',
+  frequency: 1000,
+  forms: [{"word": "嬉しい", "info": []}, {"word": "欣しい", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "happy; glad; pleased; delighted; overjoyed", "misc": [], "field": []}, {"en": "joyful; delightful; gratifying; pleasant", "misc": [], "field": []}],
 },
 
 {
@@ -1328,7 +1514,11 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1577200',
+  frequency: 16000,
+  meanings: [{"en": "cute; adorable; charming; lovely; pretty", "misc": ["biasanya kana saja"], "field": []}, {"en": "dear; precious; darling; pet", "misc": ["biasanya kana saja"], "field": []}, {"en": "innocent; childlike; childish; lovable", "misc": ["biasanya kana saja"], "field": []}, {"en": "dainty; little; tiny", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -1353,7 +1543,10 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1365850',
+  frequency: 12000,
+  meanings: [{"en": "spicy; hot", "misc": [], "field": []}, {"en": "salty", "misc": [], "field": []}, {"en": "harsh (criticism); severe (punishment); strict", "misc": [], "field": []}, {"en": "painful; bitter; difficult; tough", "misc": [], "field": []}],
 },
 
 {
@@ -1378,7 +1571,10 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1213400',
+  frequency: 9500,
+  meanings: [{"en": "sweet-tasting; sweet; sugary; sugared", "misc": [], "field": []}, {"en": "fragrant (smelling); sweet (music)", "misc": [], "field": []}, {"en": "lightly salted; light in salt; not spicy", "misc": [], "field": []}, {"en": "naive; overly optimistic; soft on; generous; indulgent; easy-going; lenient", "misc": [], "field": []}, {"en": "half-hearted; not finished properly", "misc": [], "field": []}, {"en": "insufficient; not satisfactory; inadequate; loose", "misc": [], "field": []}, {"en": "mild", "misc": [], "field": []}, {"en": "tempting; enticing; luring", "misc": [], "field": []}],
 },
 
 {
@@ -1403,7 +1599,9 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1244310',
+  frequency: 5500,
 },
 
 {
@@ -1428,7 +1626,11 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1519290',
+  frequency: 9000,
+  forms: [{"word": "忙しい", "info": []}, {"word": "忙がしい", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "busy; occupied; hectic", "misc": [], "field": []}, {"en": "restless; hurried; fidgety", "misc": [], "field": []}],
 },
 
 {
@@ -1453,7 +1655,8 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1571650',
 },
 
 {
@@ -1478,7 +1681,10 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1463480',
+  frequency: 1000,
+  meanings: [{"en": "bustling; busy; crowded; lively; prosperous; thriving", "misc": [], "field": []}, {"en": "lively (party, voices, etc.); loud; noisy; merry; cheerful", "misc": [], "field": []}],
 },
 
 {
@@ -1503,7 +1709,11 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1381820',
+  frequency: 2500,
+  forms: [{"word": "静か", "info": []}, {"word": "閑か", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "quiet; silent", "misc": [], "field": []}, {"en": "slow; unhurried", "misc": [], "field": []}, {"en": "calm; peaceful", "misc": [], "field": []}],
 },
 
 {
@@ -1528,7 +1738,11 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1253780',
+  frequency: 21500,
+  forms: [{"word": "隙", "info": []}, {"word": "透き", "info": []}],
+  meanings: [{"en": "gap; opening; room; space", "misc": [], "field": []}, {"en": "break; interval; spare moment; spare time", "misc": [], "field": []}, {"en": "unguarded moment; carelessness; weak spot; chink in one's armor; flaw; fault", "misc": [], "field": []}, {"en": "chance; opportunity", "misc": [], "field": []}],
 },
 
 {
@@ -1553,7 +1767,10 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1221210',
+  frequency: 5500,
+  misc_jm: ["abbreviation"],
 },
 
 {
@@ -1578,7 +1795,10 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1353320',
+  frequency: 6000,
+  meanings: [{"en": "skillful; skilled; proficient; good (at); adept; clever", "misc": [], "field": []}, {"en": "flattery", "misc": [], "field": []}],
 },
 
 {
@@ -1603,7 +1823,9 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1011310',
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -1628,7 +1850,11 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1260720',
+  frequency: 3000,
+  forms: [{"word": "元気", "info": []}, {"word": "元氣", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "lively; full of spirit; energetic; vigorous; vital; spirited", "misc": [], "field": []}, {"en": "healthy; well; fit; in good health", "misc": [], "field": []}],
 },
 
 {
@@ -1653,7 +1879,10 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1414340',
+  frequency: 1000,
+  meanings: [{"en": "important; significant; serious; crucial", "misc": [], "field": []}, {"en": "precious; valuable; dear; cherished; beloved", "misc": [], "field": []}, {"en": "careful", "misc": [], "field": []}],
 },
 
 {
@@ -1678,7 +1907,11 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1414150',
+  frequency: 3000,
+  meanings: [{"en": "safe; secure; sound; problem-free; without fear; all right; alright; OK; okay", "misc": [], "field": []}, {"en": "certainly; surely; undoubtedly", "misc": [], "field": []}, {"en": "no thanks; I'm good; that's alright", "misc": ["percakapan kasual"], "field": []}, {"en": "great man; fine figure of a man", "misc": ["archaic"], "field": []}],
+  misc_jm: ["arkais", "kasual"],
 },
 
 {
@@ -1703,7 +1936,12 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1460850',
+  frequency: 3500,
+  forms: [{"word": "難しい", "info": []}, {"word": "六借しい", "info": ["search-only kanji form"]}, {"word": "六ヶ敷い", "info": ["search-only kanji form"]}, {"word": "六かしい", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "difficult; hard; troublesome; complicated; serious (disease, problem, etc.)", "misc": [], "field": []}, {"en": "impossible; unfeasible", "misc": ["euphemistic"], "field": []}, {"en": "fussy; particular; fastidious; hard to please; displeased", "misc": [], "field": []}, {"en": "gloomy; glum; sullen; serious (look)", "misc": [], "field": []}, {"en": "dirty; unclean; filthy; detestable", "misc": ["archaic"], "field": []}, {"en": "unpleasant; uncomfortable; creepy; spooky", "misc": ["archaic"], "field": []}],
+  misc_jm: ["arkais", "euphemistic"],
 },
 
 {
@@ -1728,7 +1966,10 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1157000',
+  frequency: 19500,
+  misc_jm: ["biasanya kana saja"],
 },
 
 {
@@ -1753,7 +1994,10 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1533580',
+  frequency: 9500,
+  meanings: [{"en": "interesting; fascinating; intriguing; enthralling", "misc": [], "field": []}, {"en": "amusing; funny; comical", "misc": [], "field": []}, {"en": "enjoyable; fun; entertaining; pleasant; agreeable", "misc": [], "field": []}, {"en": "good; satisfactory; favourable; desirable; encouraging", "misc": [], "field": []}],
 },
 
 {
@@ -1778,7 +2022,8 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1211900',
 },
 
 {
@@ -1803,7 +2048,10 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1237680',
+  frequency: 23500,
+  meanings: [{"en": "narrow; confined; small; cramped", "misc": [], "field": []}, {"en": "limited; narrow-minded; confining", "misc": [], "field": []}],
 },
 
 {
@@ -1828,7 +2076,10 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1177800',
+  frequency: 17000,
+  meanings: [{"en": "far; distant; far away; a long way off; in the distance", "misc": [], "field": []}, {"en": "distant (past); remote (in time); remote; far-removed (in time)", "misc": [], "field": []}, {"en": "distant (relationship or kinship); having little to do (with someone)", "misc": [], "field": []}, {"en": "far (from something else in quality, degree, etc.); not similar; way off", "misc": [], "field": []}, {"en": "hard (of hearing)", "misc": [], "field": []}, {"en": "nearsighted", "misc": [], "field": []}],
 },
 
 {
@@ -1853,7 +2104,10 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1242130',
+  frequency: 10000,
+  meanings: [{"en": "near; close; short (distance)", "misc": [], "field": []}, {"en": "close (in time); soon", "misc": [], "field": []}, {"en": "close (relationship); friendly; intimate", "misc": [], "field": []}, {"en": "closely related", "misc": [], "field": []}, {"en": "similar; almost the same; close to; nearly", "misc": [], "field": []}],
 },
 
 {
@@ -1878,7 +2132,10 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1407460',
+  frequency: 22000,
+  meanings: [{"en": "many; numerous; a lot", "misc": [], "field": []}, {"en": "large amount of; large quantity of; a lot; much", "misc": [], "field": []}, {"en": "frequent; common", "misc": [], "field": []}],
 },
 
 {
@@ -1903,7 +2160,10 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1348910',
+  frequency: 8000,
+  forms: [{"word": "少ない", "info": []}, {"word": "尠い", "info": ["kanji jarang dipakai"]}, {"word": "寡い", "info": ["kanji jarang dipakai"]}, {"word": "少い", "info": ["search-only kanji form"]}, {"word": "尠ない", "info": ["search-only kanji form"]}, {"word": "寡ない", "info": ["search-only kanji form"]}],
 },
 
 {
@@ -1928,7 +2188,10 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1324300',
+  frequency: 15000,
+  meanings: [{"en": "young; youthful", "misc": [], "field": []}, {"en": "immature; green", "misc": [], "field": []}, {"en": "low (number); small", "misc": [], "field": []}],
 },
 
 {
@@ -1953,7 +2216,11 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1421970',
+  frequency: 9000,
+  forms: [{"word": "遅い", "info": []}, {"word": "鈍い", "info": ["search-only kanji form"]}, {"word": "晩い", "info": ["search-only kanji form"]}, {"word": "遲い", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "slow", "misc": [], "field": []}, {"en": "late", "misc": [], "field": []}, {"en": "too late", "misc": [], "field": []}],
 },
 
 {
@@ -1978,7 +2245,11 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1404975',
+  frequency: 15500,
+  forms: [{"word": "早い", "info": []}, {"word": "速い", "info": []}, {"word": "疾い", "info": ["kanji jarang dipakai"]}, {"word": "捷い", "info": ["kanji jarang dipakai"]}, {"word": "迅い", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "fast; quick; rapid; swift; speedy; brisk; prompt", "misc": [], "field": []}, {"en": "early; soon; earlier than usual", "misc": [], "field": []}, {"en": "premature; too soon; too early", "misc": [], "field": []}, {"en": "easy; simple; quick; fast", "misc": [], "field": []}, {"en": "as soon as ...; the moment ...; the instant ...", "misc": [], "field": []}],
 },
 
 {
@@ -2003,7 +2274,10 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1335750',
+  frequency: 12500,
+  meanings: [{"en": "heavy; weighty", "misc": [], "field": []}, {"en": "heavy (feeling); depressed; gloomy; blue; uneasy", "misc": [], "field": []}, {"en": "slow; sluggish; lumbering; ponderous; clumsy", "misc": [], "field": []}, {"en": "important (position, responsibility, etc.); serious; grave", "misc": [], "field": []}, {"en": "serious (punishment, illness, etc.); severe; critical", "misc": [], "field": []}, {"en": "solid; established; dignified; sensible", "misc": [], "field": []}],
 },
 
 {
@@ -2028,7 +2302,10 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1252560',
+  frequency: 17000,
+  meanings: [{"en": "light (i.e. not heavy); feeling light (i.e. offering little resistance, moving easily)", "misc": [], "field": []}, {"en": "light (i.e. of foot); effortless; nimble; agile", "misc": [], "field": []}, {"en": "non-serious; minor; unimportant; trivial", "misc": [], "field": []}, {"en": "slight; small; gentle; soft; easy; lighthearted (e.g. joke)", "misc": [], "field": []}, {"en": "easy; simple", "misc": [], "field": []}, {"en": "indiscriminate", "misc": [], "field": []}],
 },
 
 {
@@ -2053,7 +2330,11 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1236070',
+  frequency: 9000,
+  forms: [{"word": "強い", "info": []}, {"word": "勁い", "info": ["search-only kanji form"]}, {"word": "剛い", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "strong; potent; competent; domineering; tough", "misc": [], "field": []}, {"en": "strong; brawny; powerful; healthy; rugged", "misc": [], "field": []}, {"en": "good (at); skilled; knowledgeable", "misc": [], "field": []}, {"en": "being able to handle; know how to deal (with); durable (against); resistant (to); resilient", "misc": [], "field": []}, {"en": "firm; rigid; solid", "misc": [], "field": []}, {"en": "intense; strong; fierce; high", "misc": [], "field": []}, {"en": "dependable; trustworthy", "misc": [], "field": []}],
 },
 
 {
@@ -2078,7 +2359,9 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1324520',
+  frequency: 12000,
 },
 
 {
@@ -2103,7 +2386,8 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1539910',
 },
 
 {
@@ -2128,7 +2412,12 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1415000',
+  frequency: 1000,
+  forms: [{"word": "大変", "info": []}, {"word": "大へん", "info": []}],
+  meanings: [{"en": "very; greatly; terribly; awfully", "misc": [], "field": []}, {"en": "immense; enormous; great", "misc": [], "field": []}, {"en": "serious; grave; dreadful; terrible", "misc": [], "field": []}, {"en": "difficult; hard; challenging", "misc": [], "field": []}, {"en": "major incident; disaster", "misc": ["archaic"], "field": []}],
+  misc_jm: ["arkais"],
 },
 
 {
@@ -2153,7 +2442,9 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1153930',
+  frequency: 500,
 },
 
 {
@@ -2178,7 +2469,9 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1512610',
+  frequency: 3000,
 },
 
 {
@@ -2203,7 +2496,8 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1157920',
 },
 
 {
@@ -2253,7 +2547,10 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1348910',
+  frequency: 8000,
+  forms: [{"word": "少ない", "info": []}, {"word": "尠い", "info": ["kanji jarang dipakai"]}, {"word": "寡い", "info": ["kanji jarang dipakai"]}, {"word": "少い", "info": ["search-only kanji form"]}, {"word": "尠ない", "info": ["search-only kanji form"]}, {"word": "寡ない", "info": ["search-only kanji form"]}],
 },
 
 {
@@ -2278,7 +2575,10 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1407460',
+  frequency: 22000,
+  meanings: [{"en": "many; numerous; a lot", "misc": [], "field": []}, {"en": "large amount of; large quantity of; a lot; much", "misc": [], "field": []}, {"en": "frequent; common", "misc": [], "field": []}],
 },
 
 {
@@ -2378,7 +2678,11 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1404975',
+  frequency: 15500,
+  forms: [{"word": "早い", "info": []}, {"word": "速い", "info": []}, {"word": "疾い", "info": ["kanji jarang dipakai"]}, {"word": "捷い", "info": ["kanji jarang dipakai"]}, {"word": "迅い", "info": ["search-only kanji form"]}],
+  meanings: [{"en": "fast; quick; rapid; swift; speedy; brisk; prompt", "misc": [], "field": []}, {"en": "early; soon; earlier than usual", "misc": [], "field": []}, {"en": "premature; too soon; too early", "misc": [], "field": []}, {"en": "easy; simple; quick; fast", "misc": [], "field": []}, {"en": "as soon as ...; the moment ...; the instant ...", "misc": [], "field": []}],
 },
 
 {
@@ -2528,7 +2832,10 @@ window.vocabN5_Adjectives = [
   antonyms: ['vg-n5-00717'],
   see_also: [],
   added_v: 'v15.6.1-plan-c',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1278410',
+  frequency: 2000,
+  forms: [{"word": "広い", "info": []}, {"word": "廣い", "info": ["search-only kanji form"]}, {"word": "宏い", "info": ["search-only kanji form"]}, {"word": "弘い", "info": ["search-only kanji form"]}],
 },
 
 {
@@ -2553,7 +2860,10 @@ window.vocabN5_Adjectives = [
   antonyms: ['vg-n5-00716'],
   see_also: [],
   added_v: 'v15.6.1-plan-c',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1237680',
+  frequency: 23500,
+  meanings: [{"en": "narrow; confined; small; cramped", "misc": [], "field": []}, {"en": "limited; narrow-minded; confining", "misc": [], "field": []}],
 },
 
 {
@@ -2578,7 +2888,10 @@ window.vocabN5_Adjectives = [
   antonyms: ['vg-n5-00719'],
   see_also: [],
   added_v: 'v15.6.1-plan-c',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1177800',
+  frequency: 17000,
+  meanings: [{"en": "far; distant; far away; a long way off; in the distance", "misc": [], "field": []}, {"en": "distant (past); remote (in time); remote; far-removed (in time)", "misc": [], "field": []}, {"en": "distant (relationship or kinship); having little to do (with someone)", "misc": [], "field": []}, {"en": "far (from something else in quality, degree, etc.); not similar; way off", "misc": [], "field": []}, {"en": "hard (of hearing)", "misc": [], "field": []}, {"en": "nearsighted", "misc": [], "field": []}],
 },
 
 {
@@ -2603,7 +2916,10 @@ window.vocabN5_Adjectives = [
   antonyms: ['vg-n5-00718'],
   see_also: [],
   added_v: 'v15.6.1-plan-c',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1242130',
+  frequency: 10000,
+  meanings: [{"en": "near; close; short (distance)", "misc": [], "field": []}, {"en": "close (in time); soon", "misc": [], "field": []}, {"en": "close (relationship); friendly; intimate", "misc": [], "field": []}, {"en": "closely related", "misc": [], "field": []}, {"en": "similar; almost the same; close to; nearly", "misc": [], "field": []}],
 },
 
 {
@@ -2628,7 +2944,11 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15.6.1-plan-c',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '2858986',
+  forms: [{"word": "暇", "info": []}, {"word": "遑", "info": ["kanji jarang dipakai"]}],
+  meanings: [{"en": "(spare) time; free time; leisure", "misc": ["biasanya kana saja"], "field": []}, {"en": "time off; leave; vacation; holiday", "misc": ["biasanya kana saja"], "field": []}, {"en": "resignation; dismissal; divorce", "misc": ["biasanya kana saja", "dated term"], "field": []}, {"en": "leaving; taking one's leave; farewell", "misc": ["biasanya kana saja"], "field": []}],
+  misc_jm: ["biasanya kana saja", "dated term"],
 },
 
 {
@@ -2653,7 +2973,12 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15.6.1-plan-c',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1415000',
+  frequency: 1000,
+  forms: [{"word": "大変", "info": []}, {"word": "大へん", "info": []}],
+  meanings: [{"en": "very; greatly; terribly; awfully", "misc": [], "field": []}, {"en": "immense; enormous; great", "misc": [], "field": []}, {"en": "serious; grave; dreadful; terrible", "misc": [], "field": []}, {"en": "difficult; hard; challenging", "misc": [], "field": []}, {"en": "major incident; disaster", "misc": ["archaic"], "field": []}],
+  misc_jm: ["arkais"],
 },
 
 {
@@ -2678,7 +3003,9 @@ window.vocabN5_Adjectives = [
   antonyms: [],
   see_also: [],
   added_v: 'v15.6.1-plan-c',
-  provenance: 'jlpt-corpus'
+  provenance: 'jlpt-corpus',
+  jmdict_seq: '1541620',
+  frequency: 1500,
 }
 
 ];
