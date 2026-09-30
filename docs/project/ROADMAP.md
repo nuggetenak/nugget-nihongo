@@ -33,7 +33,9 @@ Semua task berlabel 🔴 KRITIS di _MAP.md sudah ✅ APPROVED oleh Agent 6 QA.
 ---
 
 ## Fase 2 — Konten Lengkap
-**Status: 🟡 AKTIF SEKARANG**
+**Status: ✅ SELESAI**
+> **Catatan (v15.15.0):** 100% entri vocab N5 (725) dan N4 (692) kini memiliki contoh kalimat lengkap (1.400+ kalimat baru ditambahkan). Book index Minna 1 & 2 serta Irodori A1, A2-1, A2-2 terpetakan penuh. Vocab N3 aktif dengan 735 entri bersih.
+
 **Tujuan: Konten yang ada terasa premium dan lengkap sebelum ekspansi.**
 
 Jangan mulai fase ini sebelum Fase 1 selesai.

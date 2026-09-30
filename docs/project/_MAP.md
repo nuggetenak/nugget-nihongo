@@ -1,6 +1,6 @@
 # Nugget Nihongo — Project Map
 > Read this first every session. Single source of truth for project structure.
-> Last updated: v15.14.0 — 30 September 2026
+> Last updated: v15.15.0 — 30 September 2026
 > **Selalu baca MASTER-AUDIT.md di root repo untuk task list terbaru.**
 
 ---
