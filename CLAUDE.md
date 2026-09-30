@@ -1,6 +1,6 @@
 # CLAUDE.md — Handoff Note for Claude Agents
 **Project:** Nugget Nihongo — Japanese language learning PWA  
-**Last updated:** 19 April 2026 · v15.13.0  
+**Last updated:** 30 September 2026 · v15.14.0  
 **Owner:** Nugget (non-programmer, Indonesian speaker, product owner + content expert)
 
 ---
@@ -23,7 +23,7 @@ A vanilla JS **hybrid** PWA for learning Japanese, targeting Indonesian speakers
 
 ---
 
-## CURRENT STATE (v15.13.0)
+## CURRENT STATE (v15.14.0)
 
 ### What works
 - **Grammar DB:** N5 (94), N4 (92), N3 (46+), N2 (250), N1 (140) entries
@@ -131,7 +131,7 @@ All JS loaded via `<script>` in `index.html`. Load order matters. 63 script tags
 ```
 public/                    ← Cloudflare Pages deploy root
   index.html               ← SPA, 5 tabs, 1700+ lines
-  sw.js                    ← Service Worker (nihongo-v15.13.0)
+  sw.js                    ← Service Worker (nihongo-v15.14.0)
   styles/app.css           ← All styles (5046 lines, §1–§31)
   js/
     core/                  ← version.js, state.js, router.js, theme.js, install.js
@@ -248,4 +248,4 @@ If JMdict data is used, the About/Attribution page MUST display:
 
 ---
 
-*Last edited: Crunchy 🧂 (QA + dev session) — 19 April 2026 · v15.13.0*
+*Last edited: v15.14.0 reboot — 30 September 2026*

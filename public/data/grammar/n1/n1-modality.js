@@ -71,7 +71,7 @@ window.grammarN1_Modality = [
   desc: '<b>〜まじき</b> adalah bentuk klasik (dari まじ = larangan klasik) yang mengekspresikan sesuatu yang seharusnya tidak dilakukan oleh seseorang dalam posisi atau status tertentu.',
   nuance: 'Sangat literary dan formal — hampir eksklusif dalam tulisan serius, hukum, atau editorial. Kata benda yang mengikutinya biasanya adalah jabatan atau status (教師、医師、指導者, dll). Setara modern: 〜てはいけない / すべきでない が jauh lebih lemah.',
   examples: [
-    { jp: 'それは教師にあるまじき行為だ。', id: 'Itu adalah tindakan yang tidak pantas dilakukan oleh seorang guru.' },
+    { jp: 'それは教師にある<b>まじき</b>行為だ。', id: 'Itu adalah tindakan yang tidak pantas dilakukan oleh seorang guru.' },
     { jp: '指導者にある<b>まじき</b>発言が批判を呼んだ。', id: 'Pernyataan yang tidak patut diucapkan pemimpin itu menuai kritik.' },
     { jp: '医師にある<b>まじき</b>態度で患者に接した。', id: 'Dia bersikap kepada pasien dengan cara yang tidak layak bagi seorang dokter.' }
   ],
@@ -129,8 +129,8 @@ window.grammarN1_Modality = [
   desc: '<b>〜ずにはすまない</b> menyatakan bahwa seseorang tidak dapat menghindari suatu tindakan karena tekanan sosial, moral, atau situasional. Ada perasaan bahwa norma atau harapan orang lain mengharuskan tindakan tersebut.',
   nuance: 'Menekankan tekanan dari luar diri sendiri — norma sosial, harapan orang lain, atau konsekuensi moral. Berbeda dari ないわけにはいかない (alasan logis) dan ないではいられない (dorongan dari dalam). Formal-netral.',
   examples: [
-    { jp: '迷惑をかけた以上、謝らずにはすまない。', id: 'Karena sudah merepotkan, tidak bisa begitu saja tanpa meminta maaf.' },
-    { jp: 'こんな大きなミスをしたら、責任を取らずにはすまないだろう。', id: 'Kalau sudah membuat kesalahan sebesar ini, pasti tidak bisa lepas dari tanggung jawab.' }
+    { jp: '迷惑をかけた以上、謝ら<b>ずにはすまない</b>。', id: 'Karena sudah merepotkan, tidak bisa begitu saja tanpa meminta maaf.' },
+    { jp: 'こんな大きなミスをしたら、責任を取ら<b>ずにはすまない</b>だろう。', id: 'Kalau sudah membuat kesalahan sebesar ini, pasti tidak bisa lepas dari tanggung jawab.' }
   ],
   see_also_grammar: ['gn1-00069', 'gn1-00072'],
   see_also_vocab: [],
@@ -148,8 +148,8 @@ window.grammarN1_Modality = [
   desc: '<b>〜ないではすまない</b> memiliki makna yang sangat mirip dengan 〜ずにはすまない — menyatakan bahwa suatu tindakan tidak dapat dihindari karena tuntutan sosial atau moral.',
   nuance: 'Secara makna hampir identik dengan ずにはすまない. Perbedaan halus: ないではすまない sedikit lebih umum dalam percakapan modern dan lebih ringan terdengar; ずにはすまない terasa lebih formal/tertulis. Keduanya menekankan tekanan eksternal.',
   examples: [
-    { jp: 'こんなことをされたら、怒らないではすまない。', id: 'Kalau diperlakukan seperti ini, tidak mungkin bisa tidak marah.' },
-    { jp: '彼女に直接謝らないではすまない状況だ。', id: 'Ini situasi di mana tidak bisa tidak minta maaf langsung padanya.' }
+    { jp: 'こんなことをされたら、怒ら<b>ないではすまない</b>。', id: 'Kalau diperlakukan seperti ini, tidak mungkin bisa tidak marah.' },
+    { jp: '彼女に直接謝ら<b>ないではすまない</b>状況だ。', id: 'Ini situasi di mana tidak bisa tidak minta maaf langsung padanya.' }
   ],
   see_also_grammar: ['gn1-00068', 'gn1-00072'],
   see_also_vocab: [],
@@ -167,8 +167,8 @@ window.grammarN1_Modality = [
   desc: '<b>〜を禁じ得ない</b> menyatakan bahwa seseorang tidak mampu menahan perasaan tertentu yang muncul secara spontan. Kata benda yang mendahului hampir selalu adalah perasaan: 感動, 涙, 怒り, 遺憾, 痛恨.',
   nuance: 'Sangat formal dan tertulis — lazim dalam pernyataan resmi, pidato, atau jurnalisme. Tidak digunakan dalam percakapan biasa. Berbeda dari にたえない — 禁じ得ない menekankan ketidakmampuan mengendalikan perasaan yang muncul, bukan evaluasi kualitas.',
   examples: [
-    { jp: 'その報道を聞いて、怒りを禁じ得なかった。', id: 'Mendengar laporan itu, tidak bisa menahan amarah.' },
-    { jp: '被災地の映像を見て、涙を禁じ得ない。', id: 'Melihat tayangan daerah bencana, tidak kuasa menahan air mata.' }
+    { jp: 'その報道を聞いて、怒り<b>を禁じ得なかった</b>。', id: 'Mendengar laporan itu, tidak bisa menahan amarah.' },
+    { jp: '被災地の映像を見て、涙<b>を禁じ得ない</b>。', id: 'Melihat tayangan daerah bencana, tidak kuasa menahan air mata.' }
   ],
   see_also_grammar: ['gn1-00070', 'gn1-00064'],
   see_also_vocab: [],
@@ -186,8 +186,8 @@ window.grammarN1_Modality = [
   desc: '<b>〜ないわけにはいかない</b> menyatakan bahwa suatu tindakan tidak bisa dihindari karena ada alasan kuat — logis, moral, atau sosial — yang mengharuskannya. Seseorang merasa tidak mungkin melewatkan atau menolak tindakan tersebut.',
   nuance: 'Menekankan alasan yang jelas dan logis mengapa tindakan itu wajib dilakukan. Berbeda dari ずにはすまない (tekanan norma sosial dari luar) dan ないではいられない (dorongan emosional dari dalam). Ini lebih rasional dan umum penggunaannya.',
   examples: [
-    { jp: '彼には本当のことを話さないわけにはいかない。', id: 'Tidak bisa tidak memberitahu dia yang sebenarnya.' },
-    { jp: '招待されたのだから、行かないわけにはいかない。', id: 'Karena sudah diundang, tidak bisa tidak pergi.' }
+    { jp: '彼には本当のことを話さ<b>ないわけにはいかない</b>。', id: 'Tidak bisa tidak memberitahu dia yang sebenarnya.' },
+    { jp: '招待されたのだから、行か<b>ないわけにはいかない</b>。', id: 'Karena sudah diundang, tidak bisa tidak pergi.' }
   ],
   see_also_grammar: ['gn1-00068', 'gn1-00069', 'gn1-00073'],
   see_also_vocab: [],
@@ -224,9 +224,9 @@ window.grammarN1_Modality = [
   desc: '<b>〜たるもの</b> menyatakan bahwa seseorang yang memegang posisi, jabatan, atau peran tertentu seharusnya berperilaku sesuai standar yang diharapkan dari posisi tersebut. Biasanya diikuti oleh pernyataan tentang kewajiban atau standar moral/profesional.',
   nuance: 'Sangat formal dan terasa seperti ceramah moral. Mengandung nuansa "sudah sepatutnya" atau "layaknya". Lebih kuat dari 〜として dan menekankan tanggung jawab yang melekat pada jabatan. Sering digunakan untuk menegur atau mengingatkan standar perilaku.',
   examples: [
-    { jp: '教師たるもの、常に公正であるべきだ。', id: 'Sebagai seorang guru, sudah sepatutnya selalu bersikap adil.' },
-    { jp: '社会人たるもの、礼儀を忘れてはならない。', id: 'Sebagai orang yang telah terjun ke masyarakat, jangan pernah melupakan sopan santun.' },
-    { jp: 'リーダーたるもの、困難な時こそ率先して行動すべきだ。', id: 'Sebagai seorang pemimpin, justru di saat sulit harus bertindak sebagai pelopor.' }
+    { jp: '教師<b>たるもの</b>、常に公正であるべきだ。', id: 'Sebagai seorang guru, sudah sepatutnya selalu bersikap adil.' },
+    { jp: '社会人<b>たるもの</b>、礼儀を忘れてはならない。', id: 'Sebagai orang yang telah terjun ke masyarakat, jangan pernah melupakan sopan santun.' },
+    { jp: 'リーダー<b>たるもの</b>、困難な時こそ率先して行動すべきだ。', id: 'Sebagai seorang pemimpin, justru di saat sulit harus bertindak sebagai pelopor.' }
   ],
   see_also_grammar: ['gn1-00117'],
   see_also_vocab: [],
@@ -244,9 +244,9 @@ window.grammarN1_Modality = [
   desc: '<b>〜てやまない</b> menyatakan bahwa perasaan atau sikap tertentu terus berlanjut tanpa henti karena sangat kuat. Digunakan khusus untuk ekspresi perasaan positif yang mendalam seperti cinta, harapan, kekaguman, atau dukungan. Memberikan kesan ketulusan dan kedalaman emosional.',
   nuance: 'Hampir selalu digunakan dengan kata kerja emosi positif: 愛してやまない (mencintai sepenuh hati), 敬ってやまない (senantiasa menghormati), 願ってやまない (terus-menerus berharap). Tidak lazim dengan emosi negatif. Lebih kuat dan formal dari 〜続ける untuk ekspresi perasaan.',
   examples: [
-    { jp: '私は故郷を愛してやまない。', id: 'Aku mencintai kampung halamanku dari lubuk hati yang paling dalam.' },
-    { jp: '皆様のご活躍を願ってやまない。', id: 'Kami terus-menerus mendoakan kesuksesan dan kemajuan Anda semua.' },
-    { jp: '恩師への敬意は、今も変わらずあってやまない。', id: 'Rasa hormat kepada guru yang berjasa tidak pernah pudar hingga kini.' }
+    { jp: '私は故郷を愛し<b>てやまない</b>。', id: 'Aku mencintai kampung halamanku dari lubuk hati yang paling dalam.' },
+    { jp: '皆様のご活躍を願っ<b>てやまない</b>。', id: 'Kami terus-menerus mendoakan kesuksesan dan kemajuan Anda semua.' },
+    { jp: '恩師への敬意は、今も変わらずあっ<b>てやまない</b>。', id: 'Rasa hormat kepada guru yang berjasa tidak pernah pudar hingga kini.' }
   ],
   see_also_grammar: ['gn1-00132'],
   see_also_vocab: [],
@@ -264,9 +264,9 @@ window.grammarN1_Modality = [
   desc: '<b>〜を禁じ得ない</b> menyatakan bahwa pembicara tidak mampu menahan atau menekan suatu perasaan karena begitu kuat. Berbeda dari 〜てやまない, pola ini sering digunakan untuk ekspresi emosi baik positif maupun negatif, termasuk indignasi, haru, kekhawatiran, atau simpati.',
   nuance: 'Kata benda yang mendahului biasanya adalah nomina emosi: 怒りを禁じ得ない (tidak bisa menahan amarah), 涙を禁じ得ない (tidak bisa menahan air mata), 驚きを禁じ得ない (tidak bisa menyembunyikan rasa terkejut). Lebih formal dari 〜ずにはいられない dan terasa lebih sastra.',
   examples: [
-    { jp: 'その知らせを聞いて、悲しみを禁じ得なかった。', id: 'Setelah mendengar kabar itu, aku tidak bisa menahan rasa sedih.' },
-    { jp: '子どもたちの努力に、感動を禁じ得ない。', id: 'Menghadapi usaha keras anak-anak itu, aku tidak bisa menahan rasa haru.' },
-    { jp: '彼の無責任な態度には、怒りを禁じ得ない。', id: 'Menyaksikan sikapnya yang tidak bertanggung jawab, aku tidak bisa menahan amarah.' }
+    { jp: 'その知らせを聞いて、悲しみ<b>を禁じ得なかった</b>。', id: 'Setelah mendengar kabar itu, aku tidak bisa menahan rasa sedih.' },
+    { jp: '子どもたちの努力に、感動<b>を禁じ得ない</b>。', id: 'Menghadapi usaha keras anak-anak itu, aku tidak bisa menahan rasa haru.' },
+    { jp: '彼の無責任な態度には、怒り<b>を禁じ得ない</b>。', id: 'Menyaksikan sikapnya yang tidak bertanggung jawab, aku tidak bisa menahan amarah.' }
   ],
   see_also_grammar: ['gn1-00131', 'gn1-00130'],
   see_also_vocab: [],
@@ -284,9 +284,9 @@ window.grammarN1_Modality = [
   desc: '<b>〜ざるを得ない</b> menyatakan bahwa meskipun tidak diinginkan, seseorang terpaksa melakukan sesuatu karena tekanan situasi atau tidak ada pilihan lain. Mengandung nuansa keterpaksaan dan ketidakleluasaan.',
   nuance: 'Lebih formal dari 〜しかない atau 〜なければならない. Perbedaan utama: 〜ざるを得ない menekankan bahwa pilihan tersebut tidak disukai namun terpaksa diambil (keterpaksaan dari luar), sementara 〜なければならない lebih netral tentang sumber kewajiban. Sangat umum dalam konteks bisnis, hukum, dan tulisan formal.',
   examples: [
-    { jp: '証拠が揃った以上、容疑者を逮捕せざるを得ない。', id: 'Karena buktinya sudah lengkap, tidak ada pilihan selain menangkap tersangka.' },
-    { jp: '予算の削減で、プロジェクトを縮小せざるを得なくなった。', id: 'Karena pemotongan anggaran, kami terpaksa memperkecil skala proyek.' },
-    { jp: '状況を考えると、同意せざるを得ない。', id: 'Kalau mempertimbangkan situasinya, aku tidak punya pilihan selain menyetujui.' }
+    { jp: '証拠が揃った以上、容疑者を逮捕<b>せざるを得ない</b>。', id: 'Karena buktinya sudah lengkap, tidak ada pilihan selain menangkap tersangka.' },
+    { jp: '予算の削減で、プロジェクトを縮小<b>せざるを得なくなった</b>。', id: 'Karena pemotongan anggaran, kami terpaksa memperkecil skala proyek.' },
+    { jp: '状況を考えると、同意<b>せざるを得ない</b>。', id: 'Kalau mempertimbangkan situasinya, aku tidak punya pilihan selain menyetujui.' }
   ],
   see_also_grammar: ['gn1-00134'],
   see_also_vocab: [],

@@ -53,9 +53,9 @@ window.grammarN1_Verb_Forms = [
   desc: '<b>〜にたえる</b> memiliki dua makna utama: (1) mampu bertahan terhadap sesuatu yang berat secara fisik atau mental; (2) sesuatu cukup bernilai untuk dinikmati atau layak untuk dilakukan.',
   nuance: 'Konteks menentukan makna. Makna (2) sering muncul dalam penilaian karya seni atau kemampuan seseorang: "bernilai untuk ditonton." Keduanya formal dan lebih umum dalam tulisan. Jangan digunakan untuk hal-hal sehari-hari yang sepele.',
   examples: [
-    { jp: 'この小説は再読にたえる傑作だ。', id: 'Novel ini adalah mahakarya yang tahan dibaca berulang kali.' },
-    { jp: '彼の演技はようやく鑑賞にたえるレベルになった。', id: 'Aktingnya akhirnya mencapai level yang layak untuk dinikmati.' },
-    { jp: '長年の苦難にたえてきた人だ。', id: 'Dia adalah orang yang telah bertahan menanggung penderitaan bertahun-tahun.' }
+    { jp: 'この小説は再読<b>にたえる</b>傑作だ。', id: 'Novel ini adalah mahakarya yang tahan dibaca berulang kali.' },
+    { jp: '彼の演技はようやく鑑賞<b>にたえる</b>レベルになった。', id: 'Aktingnya akhirnya mencapai level yang layak untuk dinikmati.' },
+    { jp: '長年の苦難<b>にたえてきた</b>人だ。', id: 'Dia adalah orang yang telah bertahan menanggung penderitaan bertahun-tahun.' }
   ],
   see_also_grammar: ['gn1-00064', 'gn1-00061'],
   see_also_vocab: [],
@@ -73,8 +73,8 @@ window.grammarN1_Verb_Forms = [
   desc: '<b>〜に堪える</b> memiliki dua makna utama: (1) mampu atau tahan terhadap sesuatu yang berat atau menuntut, dan (2) layak atau cukup baik untuk sesuatu (mirip 〜に足る). Dalam makna kedua, sering muncul dalam frasa seperti 鑑賞に堪える (layak untuk dinikmati/diapresiasi).',
   nuance: 'Dalam makna "tahan/mampu menanggung" biasanya menyatakan kemampuan bertahan terhadap tekanan fisik, emosional, atau kritik. Dalam makna "layak untuk", mirip dengan 〜に足る. Konteks menentukan makna mana yang berlaku. Kebalikannya adalah 〜に堪えない.',
   examples: [
-    { jp: 'この橋は重い車両にも堪えられるよう設計されている。', id: 'Jembatan ini dirancang agar mampu menahan kendaraan berat sekalipun.' },
-    { jp: '彼の演技は批評に堪えるレベルに達している。', id: 'Aktingnya telah mencapai level yang layak mendapat ulasan kritis.' }
+    { jp: 'この橋は重い車両<b>にも堪えられる</b>よう設計されている。', id: 'Jembatan ini dirancang agar mampu menahan kendaraan berat sekalipun.' },
+    { jp: '彼の演技は批評<b>に堪える</b>レベルに達している。', id: 'Aktingnya telah mencapai level yang layak mendapat ulasan kritis.' }
   ],
   see_also_grammar: ['gn1-00130', 'gn1-00128'],
   see_also_vocab: [],
@@ -92,9 +92,9 @@ window.grammarN1_Verb_Forms = [
   desc: '<b>〜を余儀なくされる</b> menyatakan bahwa seseorang dipaksa oleh keadaan atau faktor eksternal untuk melakukan atau menerima sesuatu yang tidak diinginkan. Konstruksi ini bersifat pasif dan menekankan bahwa kekuatan dari luar yang memaksakan situasi tersebut.',
   nuance: 'Berbeda dari 〜ざるを得ない (yang lebih berfokus pada tidak adanya pilihan dari sudut pandang pembicara), 〜を余儀なくされる lebih bersifat pasif — penekanannya pada tekanan eksternal yang memaksa. Sering digunakan dalam berita atau laporan resmi tentang situasi krisis, bencana, atau keputusan sulit yang dipaksakan.',
   examples: [
-    { jp: '地震の影響で、住民は避難を余儀なくされた。', id: 'Akibat gempa bumi, para penduduk terpaksa mengungsi.' },
-    { jp: '業績悪化により、会社は大規模なリストラを余儀なくされた。', id: 'Akibat memburuknya kinerja, perusahaan terpaksa melakukan restrukturisasi besar-besaran.' },
-    { jp: '悪天候のため、登山隊は撤退を余儀なくされた。', id: 'Karena cuaca buruk, tim pendaki terpaksa mundur.' }
+    { jp: '地震の影響で、住民は避難<b>を余儀なくされた</b>。', id: 'Akibat gempa bumi, para penduduk terpaksa mengungsi.' },
+    { jp: '業績悪化により、会社は大規模なリストラ<b>を余儀なくされた</b>。', id: 'Akibat memburuknya kinerja, perusahaan terpaksa melakukan restrukturisasi besar-besaran.' },
+    { jp: '悪天候のため、登山隊は撤退<b>を余儀なくされた</b>。', id: 'Karena cuaca buruk, tim pendaki terpaksa mundur.' }
   ],
   see_also_grammar: ['gn1-00133'],
   see_also_vocab: [],

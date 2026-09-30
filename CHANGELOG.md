@@ -1,5 +1,130 @@
 # Changelog — Nugget Nihongo
 
+## v15.14.0 (30 September 2026) — Project Reboot & Synchronization
+
+### v15.14.0 — fix+docs: project reboot — SW cache gaps fixed, N3-N1 vocab UI enabled, Supabase client fixes, documentation synced to v15.13.7 state
+- **Service Worker cache gaps fixed**:
+  - Added missing CSS files to cache (`shell.css`, `onboarding.css`, `settings.css`) in `public/sw.js`.
+  - Added full N2 and N1 grammar and vocab data files (`grammar-n2.js`, `grammar-n1.js`, `vocab-n2.js`, `vocab-n1.js`) to offline `ASSETS`.
+  - Bumped cache key to `nihongo-v15.14.0`.
+- **Vocab UI enabled for N3–N1**:
+  - Enabled level filter pills (`vpill-n3`, `vpill-n2`, `vpill-n1`) in `public/index.html` (N3 was previously disabled with `pill-soon`, N2/N1 were missing).
+- **Supabase client fixes**:
+  - Replaced `data.full_name` with `data.display_name` in `signUp()`.
+  - Updated OAuth and email confirmation redirects to use `window.location.origin` (supports local dev and preview deployments).
+  - Wired auto-migration on `SIGNED_IN` event in `_onAuthStateChange()` to ensure local data syncs to Supabase on first login.
+- **UI & Versioning updates**:
+  - Fixed version labels in "Tentang Nugget" modal to read dynamically from `window.APP_VERSION`.
+  - Bumped version to `v15.14.0` in `package.json`, `public/js/core/version.js`, and `public/sw.js`.
+- **Documentation synchronization**:
+  - Updated `CLAUDE.md`, `README.md`, `docs/project/_MAP.md`, and `docs/project/ROADMAP.md` to reflect true codebase state: 2,692 vocab entries, 859 grammar patterns, 68 category files, and active Phase 2 status.
+
+## v15.13.5–15.13.7 (23 April 2026) — JMDict Enrichment, Category File Split & Content Expansion
+
+### v15.13.7 — feat(schema-v2): JMDict enrichment across all 2,692 entries
+- **Schema v2 enrichment** (sourced from JMDict 216k entries):
+  - `jmdict_seq`: Traceability to source dictionary entry.
+  - `frequency`: Corpus frequency rank band (lower = more common).
+  - `forms`: Alternate kanji spellings with usage notes.
+  - `meanings`: Full multi-sense array containing all JMDict definitions.
+  - `misc_jm`: Nuance notes (biasanya kana, kasual, arkais, dsb.).
+  - `conjugations`: Auto-generated 11-form verb tables (dict, masu, te, ta, nai, potential, passive, causative, volitional, cond_ba, cond_tara) in consistent hiragana.
+- **Coverage breakdown**:
+  - N5: 725 entries (freq: 570, forms: 277, conj: 165)
+  - N4: 692 entries (freq: 534, forms: 221, conj: 207)
+  - N3: 735 entries (freq: 621, forms: 246, conj: 279)
+  - N2: 350 entries (freq: 212, forms: 46, conj: 78)
+  - N1: 190 entries (freq: 139, forms: 68, conj: 81)
+  - Total enriched: 2,558+ entries.
+- **Tooling & Data quality**:
+  - `scripts/enrich-schema-v2.py`: Main enrichment pipeline supporting both standard JSON and SQ format.
+  - Verb conjugation engine: Algorithmically verified for godan, ichidan, suru, and kuru verbs.
+  - Fixed te/ta forms to reading-based hiragana; fixed missing commas in N5/N4 entries.
+  - Test suite: 22,483 PASS, 0 FAIL, 0 ERROR.
+
+### v15.13.6 — refactor(arch): split vocab+grammar into category files, JMDict pipeline
+- **Modular category architecture**:
+  - Vocab split into 22 category files under `public/data/vocab/{n5,n4,n3,n2,n1}/` (verbs, adjectives, adverbs, nouns, expressions).
+  - Grammar split into 46 category files under `public/data/grammar/{n5,n4,n3,n2,n1}/` (grouped by grammatical function).
+- **Build scripts & migration tooling**:
+  - `scripts/merge-vocab.js`: Auto-rebuilds root `vocab-nX.js` files from category files.
+  - `scripts/merge-grammar.js`: Auto-rebuilds root `grammar-nX.js` files from category files.
+  - `scripts/split-vocab.py` & `scripts/split-grammar.py`: String-aware bracket tracking migration scripts.
+  - `scripts/jmdict-enrich.py`: Pipeline indexing 216,568 JMDict entries.
+  - `scripts/README.md`: Complete guide for category file editing workflow.
+- **CI/CD automation**:
+  - Added auto-merge step to `.github/workflows/deploy.yml` and `.github/workflows/validate.yml` before validation and deployment.
+
+### v15.13.5 — feat(content): batch3 partial (14/20 agents) — +840 entries
+- **Content additions across all levels**:
+  - `vocab-n3`: 615 → 735 (+120 entries: health, communication, education, daily life).
+  - `vocab-n2`: 260 → 350 (+90 entries: society, tech, environment).
+  - `vocab-n1`: 130 → 190 (+60 entries: advanced verbs, abstract nouns).
+  - `grammar-n3`: 46 → 76 (+30 entries: request/modal patterns).
+  - `grammar-n2`: 250 → 310 (+60 entries: scope/reference, compound verbs).
+  - `grammar-n1`: 140 → 200 (+60 entries: formal patterns).
+- **QA fixes**:
+  - Cleared 520 invalid `see_also` references.
+  - Resolved 43 bidirectional `confusion_pairs`.
+  - Corrected 1 invalid `meaning_id`.
+
+## v15.13.3–15.13.4 (20 April 2026) — Data Hygiene & Character Normalization
+
+### v15.13.4 — fix(n5/n4): romaji katakana→latin (68 fields), fullwidth chars
+- **Romaji normalization**: Converted 68 katakana/halfwidth romaji fields in N5 and N4 vocab to standard Latin alphabet.
+- **Character cleanup**: Replaced fullwidth punctuation and symbols with canonical halfwidth characters.
+
+### v15.13.3 — fix(n5/n4): provenance field, tags, meaning_id, romaji — 0 errors all levels
+- **N5 vocab (725 entries)**: Added `provenance` field to all 725 entries, remapped 212 invalid tags to Taxonomy v2 standards, and corrected 12 `meaning_id` values.
+- **N4 vocab (692 entries)**: Added `provenance` field to all 692 entries, remapped 41 invalid tags, stripped 11 accidental Japanese text entries in translation fields, and fixed 5 `meaning_id` values.
+- **Validation**: `tests/run.js` (20,373 PASS, 0 FAIL) and `tests/quality.js` (0 blockers across all levels).
+
+## v15.13.0–15.13.2 (19 April 2026) — VocabDB Activation & 20-Agent Content Batch
+
+### v15.13.2 — fix+docs: activate N2+N1 in vocabDB, fix warnings (conj_type, tags, romaji, POS), CLAUDE.md accurate
+- **Active VocabDB expansion**: Activated N2 and N1 vocab databases in `public/data/vocab/vocab-index.js`.
+- **Data warning resolution**: Fixed data warnings across N3, N2, and N1 (`conj_type` values, non-standard tags, romaji casing, POS consistency).
+- **Documentation**: Updated `CLAUDE.md` with accurate entry counts and active dataset status.
+
+### v15.13.1 — docs+fix: update CLAUDE.md + _MAP.md to v15.13.0 state, batch3 bundle prepared
+- **Milestone docs sync**: Updated `CLAUDE.md` and `docs/project/_MAP.md` to reflect v15.13.0 state (+615 entries).
+- **Batch 3 preparation**: Prepared multi-agent content prompt bundles and assignments.
+
+### v15.13.0 — feat(content): 20-agent batch — +615 entries across all levels
+- **Content population across levels**:
+  - `vocab-n3`: 405 → 615 (+210 entries: verbs, work nouns, adj/adv, abstract nouns, change-of-state, nature, expressions).
+  - `vocab-n2`: 140 → 260 (+120 entries: formal verbs, academic nouns, culture/ethics, cognitive verbs).
+  - `vocab-n1`: 70 → 130 (+60 entries: literary/formal mixed).
+  - `grammar-n2`: 130 → 250 (+120 entries: connective, contrast/modal, formal patterns).
+  - `grammar-n1`: 80 → 140 (+60 entries: advanced/literary patterns).
+  - `grammar-n3`: 16 → 46 (+30 entries: aspect/temporal/conditional patterns).
+- **QA fixes**: Fixed 2 Japanese strings in translation fields, cleared 78 invalid references, resolved N3 grammar ID collision, and fixed 17 bidirectional `confusion_pairs`.
+
+## v15.12.7–15.12.10 (19 April 2026) — Quality Suite, Minna no Nihongo & Settings Fixes
+
+### v15.12.10 — fix+quality: quality.js v4 upgrade + CI auto-trigger + fix 35 data errors in vocab-n3
+- **Quality suite upgrade**: Upgraded `tests/quality.js` to v4 with Taxonomy v2 validation, POS checks, meaning_id format, and blocker gates.
+- **CI automation**: Added automated test trigger to `.github/workflows/validate.yml` for pull requests and pushes.
+- **Vocab N3 fixes**: Fixed 35 data errors in `public/data/vocab/vocab-n3.js` flagged by the new quality validator.
+
+### v15.12.9 — fix+test: upgrade test runner (cat validation, xref, count floors) + fix 72 retired cat values in grammar N2/N3/N1
+- **Test runner upgrade (`tests/run.js`)**:
+  - Added canonical grammar category validation against Taxonomy v2 (36 valid categories).
+  - Added cross-reference checking for `grammar_ids` in book lens files (`book-minna-1.js`, `book-minna-2.js`, etc.).
+  - Added minimum count floor assertions for N2 and N1 vocab/grammar.
+  - Added duplicate ID detection for `vocabN2`, `vocabN1`, `grammarN2`, and `grammarN1`.
+- **Data fixes**: Migrated 72 retired `cat` values across `grammar-n2.js`, `grammar-n3.js`, and `grammar-n1.js` to canonical taxonomy values.
+
+### v15.12.8 — feat(5C): Minna no Nihongo 1 & 2 live — grammar lens data + SERIES registry wired
+- **Minna no Nihongo lenses wired**:
+  - `public/data/books/book-minna-1.js` (50 lessons, N5) and `book-minna-2.js` (50 lessons, N4) grammar lens data completed and verified.
+  - `public/js/pages/materi-hub.js`: Set `lensVar` to `'bookMinna1'` and `'bookMinna2'`, marked series as active (`available: true`).
+
+### v15.12.7 — fix: settings clearData bunpou_* keys, resetAITutorHistory export, onboarding level pre-select
+- **Settings cleanup (`settings.js`)**: `clearData` now clears both `nn_*` and legacy `bunpou_*` keys from `localStorage`.
+- **AI Tutor (`ai-tutor.js`)**: Exported `window.resetAITutorHistory()` to reset chat history, clear `sessionStorage`, and empty the conversation feed.
+- **Onboarding integration (`app.js`, `browse.js`, `quiz.js`)**: Synchronized active level pills from `nn_starting_level` set during onboarding.
+
 ## v15.12.4–15.12.6 (19 April 2026)
 
 ### v15.12.6 — Supabase backend fully functional

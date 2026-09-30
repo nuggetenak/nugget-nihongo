@@ -72,8 +72,8 @@ window.grammarN1_Conditionals = [
   desc: '<b>〜とあれば</b> menyatakan kesiapan atau kesediaan untuk melakukan sesuatu demi suatu kondisi atau tujuan tertentu. Mengandung nuansa pengorbanan atau dedikasi — "demi hal itu, saya rela melakukan apa saja."',
   nuance: 'Berbeda dari なら yang netral — とあれば mengandung tekad dan keseriusan yang lebih kuat. Formal. Sering diikuti ekspresi kesiapan seperti どこへでも行く, 何でもする, 一肌脱ぐ. Mengimplikasikan kondisi yang dianggap penting atau mulia.',
   examples: [
-    { jp: 'あなたのためとあれば、どこへでも参ります。', id: 'Demi kamu, saya siap pergi ke mana saja.' },
-    { jp: '必要とあれば、夜を徹して作業します。', id: 'Kalau memang diperlukan, saya siap bekerja semalam suntuk.' }
+    { jp: 'あなたのため<b>とあれば</b>、どこへでも参ります。', id: 'Demi kamu, saya siap pergi ke mana saja.' },
+    { jp: '必要<b>とあれば</b>、夜を徹して作業します。', id: 'Kalau memang diperlukan, saya siap bekerja semalam suntuk.' }
   ],
   see_also_grammar: ['gn1-00077', 'gn1-00078'],
   see_also_vocab: [],
@@ -91,8 +91,8 @@ window.grammarN1_Conditionals = [
   desc: '<b>〜ともなると</b> menyatakan bahwa begitu seseorang atau sesuatu mencapai tingkat atau status tertentu, konsekuensi tertentu secara alami dan tak terelakkan mengikutinya. Menekankan kelogisan konsekuensi pada level tersebut.',
   nuance: 'Formal. Menekankan bahwa pada level atau status itu, suatu hal adalah konsekuensi yang wajar dan lumrah. Sering digunakan untuk mengacu pada jabatan tinggi, skala besar, atau kondisi khusus. Mirip ともなれば tapi lebih deskriptif tentang kondisi nyata.',
   examples: [
-    { jp: '部長ともなると、背負う責任も格段に大きくなる。', id: 'Kalau sudah jadi manajer, tanggung jawab yang dipikul pun jauh lebih besar.' },
-    { jp: 'この規模のプロジェクトともなると、管理だけで一苦労だ。', id: 'Kalau sudah proyek sebesar ini, pengelolaannya saja sudah susah payah.' }
+    { jp: '部長<b>ともなると</b>、背負う責任も格段に大きくなる。', id: 'Kalau sudah jadi manajer, tanggung jawab yang dipikul pun jauh lebih besar.' },
+    { jp: 'この規模のプロジェクト<b>ともなると</b>、管理だけで一苦労だ。', id: 'Kalau sudah proyek sebesar ini, pengelolaannya saja sudah susah payah.' }
   ],
   see_also_grammar: ['gn1-00078', 'gn1-00076'],
   see_also_vocab: [],
@@ -110,8 +110,8 @@ window.grammarN1_Conditionals = [
   desc: '<b>〜ともなれば</b> adalah varian dari 〜ともなると dengan makna yang sangat mirip — menyatakan bahwa di status atau kondisi tertentu, suatu konsekuensi adalah hal yang wajar. Menggunakan ば-form sehingga terasa sedikit lebih hipotetis.',
   nuance: 'Secara fungsional hampir identik dengan ともなると. Perbedaan halus: ともなれば terasa lebih hipotetis atau umum ("siapapun yang berada di posisi itu..."); ともなると lebih deskriptif tentang kondisi yang sudah terjadi. Keduanya formal.',
   examples: [
-    { jp: '社長ともなれば、孤独な決断を迫られることも多い。', id: 'Kalau sudah menjadi direktur, banyak pula keputusan sulit yang harus diambil sendiri.' },
-    { jp: '有名人ともなれば、プライバシーの確保が難しくなる。', id: 'Kalau sudah jadi orang terkenal, menjaga privasi pun menjadi sulit.' }
+    { jp: '社長<b>ともなれば</b>、孤独な決断を迫られることも多い。', id: 'Kalau sudah menjadi direktur, banyak pula keputusan sulit yang harus diambil sendiri.' },
+    { jp: '有名人<b>ともなれば</b>、プライバシーの確保が難しくなる。', id: 'Kalau sudah jadi orang terkenal, menjaga privasi pun menjadi sulit.' }
   ],
   see_also_grammar: ['gn1-00077', 'gn1-00076'],
   see_also_vocab: [],
@@ -205,8 +205,8 @@ window.grammarN1_Conditionals = [
   desc: '<b>〜をもってすれば</b> menyatakan bahwa dengan menggunakan kemampuan, kekuatan, atau sumber daya tertentu, sesuatu yang mungkin tampak sulit pun dapat tercapai. Sering mengandung nuansa pujian atau pengakuan terhadap kemampuan yang disebut.',
   nuance: 'Berbeda dengan 〜をもってしても (yang menyatakan ketidakmampuan bahkan dengan sumber daya itu), 〜をもってすれば justru menyatakan kemungkinan atau optimisme. Berpasangan secara semantis sebagai kebalikannya.',
   examples: [
-    { jp: '彼女の能力をもってすれば、この難題も解決できるはずだ。', id: 'Dengan kemampuan yang ia miliki, masalah sulit ini pun seharusnya bisa diselesaikan.' },
-    { jp: '最新技術をもってすれば、不可能なことはない。', id: 'Dengan teknologi terkini, tidak ada yang tidak mungkin.' }
+    { jp: '彼女の能力<b>をもってすれば</b>、この難題も解決できるはずだ。', id: 'Dengan kemampuan yang ia miliki, masalah sulit ini pun seharusnya bisa diselesaikan.' },
+    { jp: '最新技術<b>をもってすれば</b>、不可能なことはない。', id: 'Dengan teknologi terkini, tidak ada yang tidak mungkin.' }
   ],
   see_also_grammar: ['gn1-00115'],
   see_also_vocab: [],

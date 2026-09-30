@@ -262,8 +262,8 @@ window.grammarN1_Tense_Aspect = [
   desc: '<b>〜てやまない</b> menyatakan perasaan yang terus-menerus dan mendalam yang tidak pernah berhenti. Hampir selalu digunakan dengan kata kerja yang menyatakan emosi atau keinginan: 愛する, 願う, 望む, 敬う, 期待する.',
   nuance: 'Sangat formal dan hampir hanya ditemukan dalam tulisan atau pidato formal. Tidak bisa digunakan dengan kata kerja tindakan biasa. Mengekspresikan perasaan yang tulus, dalam, dan abadi — bukan perasaan sesaat.',
   examples: [
-    { jp: '皆様のご健康とご多幸を願ってやみません。', id: 'Saya tidak henti-hentinya mendoakan kesehatan dan kebahagiaan semua pihak.' },
-    { jp: '彼は子供たちの未来を愛してやまない。', id: 'Dia sungguh tidak henti-hentinya mencintai masa depan anak-anak itu.' }
+    { jp: '皆様のご健康とご多幸を願っ<b>てやみません</b>。', id: 'Saya tidak henti-hentinya mendoakan kesehatan dan kebahagiaan semua pihak.' },
+    { jp: '彼は子供たちの未来を愛し<b>てやまない</b>。', id: 'Dia sungguh tidak henti-hentinya mencintai masa depan anak-anak itu.' }
   ],
   see_also_grammar: ['gn1-00071', 'gn1-00067'],
   see_also_vocab: [],
@@ -281,8 +281,8 @@ window.grammarN1_Tense_Aspect = [
   desc: '<b>〜がてら</b> menyatakan bahwa sambil melakukan suatu kegiatan utama, sekalian memanfaatkan kesempatan untuk melakukan hal lain. Tindakan sebelum がてら adalah kegiatan yang dijadikan alasan atau sarana.',
   nuance: 'Lebih kasual dari かたがた tapi tetap mengandung nuansa formal-netral. Bisa digunakan dalam percakapan maupun tulisan. Ciri khas: kedua kegiatan terjadi bersamaan atau dalam satu perjalanan. Kegiatan setelah がてら adalah tujuan sebenarnya.',
   examples: [
-    { jp: '散歩がてら、コンビニに寄ってきた。', id: 'Sambil jalan-jalan, mampir ke konbini.' },
-    { jp: '買い物がてら、久しぶりに友人の家を訪ねた。', id: 'Sambil belanja, mampir ke rumah teman yang sudah lama tidak dikunjungi.' }
+    { jp: '散歩<b>がてら</b>、コンビニに寄ってきた。', id: 'Sambil jalan-jalan, mampir ke konbini.' },
+    { jp: '買い物<b>がてら</b>、久しぶりに友人の家を訪ねた。', id: 'Sambil belanja, mampir ke rumah teman yang sudah lama tidak dikunjungi.' }
   ],
   see_also_grammar: ['gn1-00074'],
   see_also_vocab: [],

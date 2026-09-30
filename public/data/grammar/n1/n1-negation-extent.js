@@ -167,9 +167,9 @@ window.grammarN1_Negation_Extent = [
   desc: '<b>〜に足る</b> menyatakan bahwa seseorang atau sesuatu memiliki kualitas yang cukup untuk memenuhi suatu standar atau pantas mendapatkan sesuatu. Varian klasik adalah 〜に足る, lebih modern 〜に足りる.',
   nuance: 'Pola formal dan tertulis. Paling sering dipadukan dengan kata seperti 信頼, 尊敬, 称賛, 注目 — menyatakan bahwa objeknya benar-benar pantas mendapat penilaian setinggi itu. Memberikan kesan penilaian yang berwibawa.',
   examples: [
-    { jp: '彼女の業績は称賛に足るものだ。', id: 'Prestasinya memang layak mendapat pujian.' },
-    { jp: 'この作品は繰り返し鑑賞に足る傑作だ。', id: 'Karya ini adalah mahakarya yang layak dinikmati berulang kali.' },
-    { jp: '信頼に足る人物を選ぶことが重要だ。', id: 'Penting untuk memilih orang yang layak dipercaya.' }
+    { jp: '彼女の業績は称賛<b>に足る</b>ものだ。', id: 'Prestasinya memang layak mendapat pujian.' },
+    { jp: 'この作品は繰り返し鑑賞<b>に足る</b>傑作だ。', id: 'Karya ini adalah mahakarya yang layak dinikmati berulang kali.' },
+    { jp: '信頼<b>に足る</b>人物を選ぶことが重要だ。', id: 'Penting untuk memilih orang yang layak dipercaya.' }
   ],
   see_also_grammar: ['gn1-00062', 'gn1-00063'],
   see_also_vocab: [],
@@ -187,8 +187,8 @@ window.grammarN1_Negation_Extent = [
   desc: '<b>〜に足らない</b> adalah bentuk negatif dari 〜に足る — menyatakan bahwa sesuatu tidak memiliki nilai atau kualitas yang cukup, tidak pantas dipertimbangkan, atau tidak perlu dicemaskan.',
   nuance: 'Sering digunakan dengan nuansa meremehkan sesuatu — "hal sekecil itu tidak perlu dibesar-besarkan." Umum berpasangan dengan kata seperti 問題, 心配, 気にする, 取り上げる. Formal tapi juga bisa bernuansa merendahkan.',
   examples: [
-    { jp: 'そんなことは気にするに足らない。', id: 'Hal seperti itu sama sekali tidak perlu dirisaukan.' },
-    { jp: '彼の反論は取り上げるに足りない内容だった。', id: 'Sanggahan dia tidak berisi sesuatu yang layak dibahas.' }
+    { jp: 'そんなことは気にする<b>に足らない</b>。', id: 'Hal seperti itu sama sekali tidak perlu dirisaukan.' },
+    { jp: '彼の反論は取り上げる<b>に足りない</b>内容だった。', id: 'Sanggahan dia tidak berisi sesuatu yang layak dibahas.' }
   ],
   see_also_grammar: ['gn1-00061'],
   see_also_vocab: [],
@@ -206,8 +206,8 @@ window.grammarN1_Negation_Extent = [
   desc: '<b>〜にたえない</b> adalah bentuk negatif dari 〜にたえる — menyatakan bahwa seseorang tidak sanggup menahan perasaan yang muncul, atau bahwa sesuatu terlalu buruk atau menyedihkan untuk ditonton atau didengarkan.',
   nuance: 'Dua penggunaan utama: (1) ekspresi formal untuk perasaan yang tidak terbendung — 感謝にたえない, 遺憾にたえない (sering dalam surat resmi/pidato); (2) penilaian bahwa sesuatu terlalu jelek/menyedihkan untuk ditoleransi. Sangat formal.',
   examples: [
-    { jp: '皆様のご支援に感謝にたえません。', id: 'Sungguh tidak kuasa menahan rasa syukur atas dukungan semua pihak.' },
-    { jp: 'あの映像は目にたえない残酷さだった。', id: 'Tayangan itu sungguh terlalu kejam untuk ditonton.' }
+    { jp: '皆様のご支援に感謝<b>にたえません</b>。', id: 'Sungguh tidak kuasa menahan rasa syukur atas dukungan semua pihak.' },
+    { jp: 'あの映像は目<b>にたえない</b>残酷さだった。', id: 'Tayangan itu sungguh terlalu kejam untuk ditonton.' }
   ],
   see_also_grammar: ['gn1-00063', 'gn1-00071'],
   see_also_vocab: [],
@@ -225,8 +225,8 @@ window.grammarN1_Negation_Extent = [
   desc: '<b>〜をおいてほかにない</b> menyatakan eksklusivitas mutlak — hanya satu pilihan, satu orang, atau satu hal yang paling tepat atau mampu. Kata ほかに bersifat opsional tapi sering digunakan.',
   nuance: 'Sangat formal dan kuat. Digunakan untuk memuji seseorang sebagai satu-satunya yang mampu, atau menegaskan bahwa tidak ada alternatif lain. Tidak cocok untuk situasi biasa. Jika subjeknya orang, gunakan いない (bukan ない).',
   examples: [
-    { jp: 'この仕事を任せられるのは彼女をおいてほかにいない。', id: 'Tidak ada selain dia yang bisa dipercaya untuk pekerjaan ini.' },
-    { jp: 'この危機を乗り越える方法は対話をおいてほかにない。', id: 'Tidak ada cara lain untuk mengatasi krisis ini selain dialog.' }
+    { jp: 'この仕事を任せられるのは彼女<b>をおいてほかにいない</b>。', id: 'Tidak ada selain dia yang bisa dipercaya untuk pekerjaan ini.' },
+    { jp: 'この危機を乗り越える方法は対話<b>をおいてほかにない</b>。', id: 'Tidak ada cara lain untuk mengatasi krisis ini selain dialog.' }
   ],
   see_also_grammar: ['gn1-00066'],
   see_also_vocab: [],
@@ -244,9 +244,9 @@ window.grammarN1_Negation_Extent = [
   desc: '<b>〜といったらない</b> mengekspresikan tingkat yang ekstrem — bisa positif maupun negatif. Varian kasual 〜といったらありゃしない lebih emosional dan umumnya digunakan untuk mengeluh atau mengekspresikan hal negatif.',
   nuance: '〜といったらない bisa untuk hal positif (rasa haru, keindahan) maupun negatif; 〜といったらありゃしない hampir selalu untuk hal negatif atau keluhan. Keduanya mengekspresikan emosi yang sangat kuat dan sulit diungkapkan dengan kata-kata.',
   examples: [
-    { jp: 'あの映画の感動といったらなかった。', id: 'Rasa haru dari film itu sungguh bukan main.' },
-    { jp: '彼のマナーの悪さといったらありゃしない。', id: 'Sungguh keterlaluan kelakuannya yang tidak sopan itu.' },
-    { jp: 'あの夏の暑さといったらなかった。', id: 'Panasnya musim panas itu sungguh luar biasa.' }
+    { jp: 'あの映画の感動<b>といったらなかった</b>。', id: 'Rasa haru dari film itu sungguh bukan main.' },
+    { jp: '彼のマナーの悪さ<b>といったらありゃしない</b>。', id: 'Sungguh keterlaluan kelakuannya yang tidak sopan itu.' },
+    { jp: 'あの夏の暑さ<b>といったらなかった</b>。', id: 'Panasnya musim panas itu sungguh luar biasa.' }
   ],
   see_also_grammar: ['gn1-00070', 'gn1-00071'],
   see_also_vocab: [],
@@ -264,8 +264,8 @@ window.grammarN1_Negation_Extent = [
   desc: '<b>〜ことなしに</b> menyatakan bahwa suatu hal terjadi atau diupayakan tanpa melakukan tindakan tertentu. Sering digunakan untuk menyatakan bahwa sesuatu tidak mungkin terjadi tanpa prasyarat yang disebutkan.',
   nuance: 'Lebih formal dari ないで atau ずに. Sering muncul dalam konteks akademik, tulisan ilmiah, atau pernyataan formal. Memberikan kesan bahwa ketiadaan tindakan yang disebut merupakan hambatan nyata atau bertentangan dengan logika.',
   examples: [
-    { jp: '努力することなしに、成功はありえない。', id: 'Tanpa berusaha, kesuksesan adalah hal yang mustahil.' },
-    { jp: '互いに話し合うことなしに、問題は解決しない。', id: 'Tanpa saling berdiskusi, masalah tidak akan bisa diselesaikan.' }
+    { jp: '努力する<b>ことなしに</b>、成功はありえない。', id: 'Tanpa berusaha, kesuksesan adalah hal yang mustahil.' },
+    { jp: '互いに話し合う<b>ことなしに</b>、問題は解決しない。', id: 'Tanpa saling berdiskusi, masalah tidak akan bisa diselesaikan.' }
   ],
   see_also_grammar: ['gn1-00068', 'gn1-00069'],
   see_also_vocab: [],
@@ -473,8 +473,8 @@ window.grammarN1_Negation_Extent = [
   desc: '<b>〜に足りない</b> adalah bentuk negatif dari 〜に足る. Menyatakan bahwa sesuatu atau seseorang tidak memenuhi standar atau kualifikasi yang diperlukan untuk tujuan tertentu. Sering digunakan untuk menolak atau meremehkan sesuatu dengan nada formal.',
   nuance: 'Karena merupakan kebalikan langsung dari 〜に足る, keduanya sering berpasangan dalam konteks evaluasi. 〜に足りない tidak sekedar menyatakan ketidakcukupan biasa, tetapi mengandung nuansa penilaian yang lebih tegas bahwa standar benar-benar tidak terpenuhi.',
   examples: [
-    { jp: 'その程度の努力では、合格するに足りない。', id: 'Dengan usaha sekecil itu, tidak cukup untuk lulus.' },
-    { jp: '彼の実績は、リーダーを任せるに足りないと上司は判断した。', id: 'Atasannya menilai rekam jejaknya tidak cukup layak untuk dipercaya menjadi pemimpin.' }
+    { jp: 'その程度の努力では、合格する<b>に足りない</b>。', id: 'Dengan usaha sekecil itu, tidak cukup untuk lulus.' },
+    { jp: '彼の実績は、リーダーを任せる<b>に足りない</b>と上司は判断した。', id: 'Atasannya menilai rekam jejaknya tidak cukup layak untuk dipercaya menjadi pemimpin.' }
   ],
   see_also_grammar: ['gn1-00126', 'gn1-00128'],
   see_also_vocab: [],

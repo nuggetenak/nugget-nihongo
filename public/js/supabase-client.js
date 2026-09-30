@@ -32,8 +32,8 @@
         email: email,
         password: password,
         options: {
-          data: { full_name: displayName || '' },
-          emailRedirectTo: 'https://nugget-nihongo.pages.dev',
+          data: { display_name: displayName || '' },
+          emailRedirectTo: window.location.origin,
         }
       });
     },
@@ -48,7 +48,7 @@
       return sb.auth.signInWithOAuth({
         provider: 'google',
         options: {
-          redirectTo: 'https://nugget-nihongo.pages.dev',
+          redirectTo: window.location.origin,
         }
       });
     },
@@ -214,11 +214,15 @@
 
   var _syncTimer = null;
 
-  function _onAuthStateChange(session) {
+  function _onAuthStateChange(event, session) {
     const user = session?.user;
     _updateHeaderAuth(user);
     if (user) {
       _syncProgress();
+      if (event === 'SIGNED_IN' && !window._migrationDone) {
+        window._migrationDone = true;
+        _migrateAllToSupabase();
+      }
     }
   }
 
