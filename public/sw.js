@@ -4,7 +4,7 @@
 //  network-first for API calls (Supabase / Cloudflare Workers).
 // ══════════════════════════════════════
 
-const CACHE = 'nihongo-v15.15.0';
+const CACHE = 'nihongo-v15.16.0';
 const ASSETS = [
   './',
   './index.html',
@@ -15,6 +15,7 @@ const ASSETS = [
   './styles/layout/shell.css',
   './styles/onboarding.css',
   './styles/settings.css',
+  './styles/home-dashboard.css',
   './fonts/dm-sans.woff2',
   './fonts/biz-udgothic.woff2',
 
@@ -70,6 +71,7 @@ const ASSETS = [
   './js/app.js',
 
   // ── Pages ─────────────────────────────────────────────
+  './js/pages/home.js',
   './js/pages/materi-hub.js',
   './js/pages/onboarding.js',
   './js/pages/settings.js',
