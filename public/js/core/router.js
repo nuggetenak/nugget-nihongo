@@ -6,7 +6,7 @@
 //    restoreTabFromHash()  Read URL hash and activate matching tab
 // ══════════════════════════════════════
 
-const VALID_TABS = ['browse', 'quiz', 'sensei', 'stats', 'settings'];
+const VALID_TABS = ['home', 'browse', 'quiz', 'sensei', 'stats', 'settings'];
 
 window.switchTab = function(tab, btn) {
   document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
@@ -21,20 +21,17 @@ window.switchTab = function(tab, btn) {
 // Called once on DOMContentLoaded (from app.js) to restore tab from hash
 window.restoreTabFromHash = function() {
   const hash = (location.hash || '').replace('#', '').toLowerCase();
-  if (!VALID_TABS.includes(hash)) return; // unknown hash → default browse
+  const targetTab = VALID_TABS.includes(hash) ? hash : 'home';
   // Find the matching tab button and activate
-  const btn = document.querySelector('[onclick*="switchTab(\'' + hash + '\'"]') ||
-              document.querySelector('[aria-label="' + _tabLabel(hash) + '"]');
-  // Use synthetic call to switchTab with the correct btn element
   const allBtns = document.querySelectorAll('.tab-btn');
   let found = null;
   allBtns.forEach(function(b) {
     const oc = b.getAttribute('onclick') || '';
-    if (oc.includes("'" + hash + "'") || oc.includes('"' + hash + '"')) found = b;
+    if (oc.includes("'" + targetTab + "'") || oc.includes('"' + targetTab + '"')) found = b;
   });
-  if (found) window.switchTab(hash, found);
+  window.switchTab(targetTab, found);
 };
 
 function _tabLabel(tab) {
-  return { browse:'Materi', quiz:'Latihan', sensei:'Sensei', stats:'Progress', settings:'Lainnya' }[tab] || '';
+  return { home:'Beranda', browse:'Materi', quiz:'Latihan', sensei:'Sensei', stats:'Progress', settings:'Lainnya' }[tab] || '';
 }

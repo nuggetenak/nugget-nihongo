@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="./styles/app.css">
   <link rel="stylesheet" href="./styles/onboarding.css">
   <link rel="stylesheet" href="./styles/settings.css">
+  <link rel="stylesheet" href="./styles/home-dashboard.css">
 </head>
 <body>
 
@@ -97,7 +98,13 @@
 
 <!-- TAB NAV — SVG icons (Claude Design) -->
 <nav class="tab-nav">
-  <button id="tabBtnBrowse" class="tab-btn active" onclick="switchTab('browse',this)" aria-label="Materi">
+  <button id="tabBtnHome" class="tab-btn active" onclick="switchTab('home',this)" aria-label="Beranda">
+    <svg class="tab-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+    </svg>
+    <span class="tab-label">Beranda</span>
+  </button>
+  <button id="tabBtnBrowse" class="tab-btn" onclick="switchTab('browse',this)" aria-label="Materi">
     <svg class="tab-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
       <path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v17H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 19.5V4.5"/>
     </svg>
@@ -134,8 +141,11 @@
   <button id="tabBtnAbout"    class="tab-btn tab-btn--hidden" onclick="switchTab('about',this)"></button>
 </nav>
 
+<!-- ══════════════ HOME PAGE (DASHBOARD) ══════════════ -->
+<div id="homePage" class="page active"></div>
+
 <!-- ══════════════ BROWSE PAGE ══════════════ -->
-<div id="browsePage" class="page active">
+<div id="browsePage" class="page">
 
   <!-- WELCOME BANNER -->
   <div class="welcome-banner" id="welcomeBanner">
@@ -1769,6 +1779,7 @@
 <script src="./js/global-search.js"></script>
 <script src="./js/analytics.js"></script>
 <!-- JS: Phase 3 — Onboarding / Settings / About -->
+<script src="./js/pages/home.js"></script>
 <script src="./js/pages/onboarding.js"></script>
 <script src="./js/pages/settings.js"></script>
 <script src="./js/pages/about.js"></script>

@@ -1,5 +1,21 @@
 # Changelog — Nugget Nihongo
 
+## v15.16.0 (30 September 2026) — Action-First Dashboard & Desktop Dual-Column Shell
+
+### v15.16.0 — feat(ui): Beranda Dashboard, Duolingo-style 3D gamification, and Desktop Dual-Column Shell
+- **Action-First Dashboard (`#homePage` & `pages/home.js`)**:
+  - Greet users with dynamic time-based greetings ("おはよう / こんにちは / こんばんは") and friendly mascot badge 🍙.
+  - Interactive Daily SRS Mission Card: calculates real-time due reviews from FSRS and provides a prominent 3D button ("Mulai Review Sekarang").
+  - Quick Action Navigation Grid (4 bubbly cards for Materi, Latihan Kuis, Kebun Mastery, and Tanya Sensei).
+  - Quick textbook access strip (Minna 1 & 2, Irodori A1, Soumatome N3).
+- **Desktop Dual-Column App Shell (`@media (min-width: 960px)`)**:
+  - Transformed bottom tab navigation into a fixed, branded left sidebar with mascot header ("🍙 Nugget日本語") and tactile navigation items.
+  - Divided dashboard on desktop into a spacious main activity stream and right-hand stats/streak/daily-word panel.
+  - Thumb-friendly responsive mobile bottom bar with bouncy feedback on smaller viewports.
+- **Duolingo-Inspired Gamified Styling (`styles/home-dashboard.css`)**:
+  - Implemented 3D tactile buttons (`.btn-3d`, `.btn-3d--primary`, `.btn-3d--accent`) with responsive push feedback.
+  - Bubbly cards with rounded corners, lively icons, and mascot wiggle animations.
+
 ## v15.15.0 (30 September 2026) — 100% N5/N4 Vocab Examples & CSS Overhaul
 
 ### v15.15.0 — feat(content)+refactor(css): 1,400+ new authentic examples (Phase 2 Done) & app.css deduplication

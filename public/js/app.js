@@ -55,6 +55,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (wb) wb.style.display = 'none';
   }
 
+  // Home Dashboard init
+  if (window.initHomePage)      window.initHomePage();      // pages/home.js
+
   // Phase 3 — Onboarding / Settings / About
   if (window.initOnboarding)    window.initOnboarding();    // pages/onboarding.js
   if (window.initSettingsPage)  window.initSettingsPage();  // pages/settings.js
@@ -71,13 +74,14 @@ const _origSwitchTab = window.switchTab;
 window.switchTab = function (tab, btn) {
   if (_origSwitchTab) _origSwitchTab(tab, btn);
 
-  const pages = ['browsePage', 'quizPage', 'senseiPage', 'statsPage', 'settingsPage', 'aboutPage'];
+  const pages = ['homePage', 'browsePage', 'quizPage', 'senseiPage', 'statsPage', 'settingsPage', 'aboutPage'];
   pages.forEach(id => {
     const el = document.getElementById(id);
     if (el) el.classList.remove('active');
   });
 
   const pageMap = {
+    home     : 'homePage',
     browse   : 'browsePage',
     quiz     : 'quizPage',
     sensei   : 'senseiPage',
@@ -92,6 +96,7 @@ window.switchTab = function (tab, btn) {
   }
 
   // Tab-specific hooks
+  if (tab === 'home'     && window.initHomePage)        window.initHomePage();
   if (tab === 'sensei'   && window._aiTutorOnTabShow)   window._aiTutorOnTabShow();
   if (tab === 'stats'    && window._analyticsOnTabShow) window._analyticsOnTabShow();
   if (tab === 'settings' && window.initSettingsPage)    window.initSettingsPage();
