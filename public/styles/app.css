@@ -55,6 +55,9 @@
 :focus:not(:focus-visible) { outline: none; }
 :focus-visible { outline: 2px solid var(--accent-hot); outline-offset: 2px; border-radius: 6px; }
 ::selection { background: rgba(245,158,11,0.35); color: var(--text-bright); }
+button, [role="button"], input[type="button"], input[type="submit"], input[type="reset"], select, summary, a {
+  touch-action: manipulation;
+}
 
 /* ══════════════════════════════════════
    §3 TOKENS — design variables
@@ -187,6 +190,11 @@ body.light {
   --input-bg  : #F4EAD6;
   --surface-1 : #FDF6EC;
   --text-sub  : rgba(42,26,5,0.52);
+  /* feedback colors for light bg */
+  --success-dim  : #dcfce7;
+  --success-text : #16a34a;
+  --error-dim    : #fee2e2;
+  --error-text   : #dc2626;
 }
 
 /* Night mode — boost text clarity */
@@ -203,7 +211,7 @@ body:not(.light) .face {
 /* Day/Night toggle button */
 .theme-toggle {
   display: flex; align-items: center; justify-content: center;
-  width: 36px; height: 36px;
+  width: 40px; height: 40px; min-width: 44px; min-height: 44px;
   border: 1px solid var(--border-2);
   border-radius: 50%;
   background: var(--surface-2);
@@ -218,8 +226,8 @@ body:not(.light) .face {
 
 /* Header top row */
 .header-top-row {
-  display: flex; align-items: flex-start;
-  justify-content: space-between; gap: 1rem;
+  display: flex; align-items: center;
+  gap: 0.75rem; flex: 1;
 }
 
 /* ══════════════════════════════════════
@@ -396,7 +404,7 @@ body.light {
 }
 .modal-close {
   background: var(--surface-2); border: 1px solid var(--border);
-  border-radius: 50%; width: 30px; height: 30px; font-size: 1rem;
+  border-radius: 50%; width: 36px; height: 36px; min-width: 44px; min-height: 44px; font-size: 1rem;
   cursor: pointer; color: var(--muted); flex-shrink: 0;
   display: flex; align-items: center; justify-content: center;
   -webkit-tap-highlight-color: transparent;
@@ -406,7 +414,8 @@ body.light {
   flex: 1; padding: 0.55rem; border: 1px solid var(--border-2);
   border-radius: 8px; background: var(--surface-2); font-size: var(--text-sm);
   font-weight: 700; cursor: pointer; color: var(--muted);
-  font-family: var(--font-ui);
+  font-family: var(--font-ui); min-height: 44px;
+  display: inline-flex; align-items: center; justify-content: center;
   -webkit-tap-highlight-color: transparent; transition: all 0.12s;
 }
 .os-tab.active { background: var(--grad); color: white; border-color: transparent; }
@@ -520,14 +529,13 @@ header::before {
 }
 /* Search button — rounded square like Claude Design */
 .gs-trigger-btn.icon-btn {
-  width: 38px; height: 38px; border-radius: 12px;
+  width: 44px; height: 44px; min-width: 44px; min-height: 44px; border-radius: 12px;
   background: var(--surface-2); border: 1px solid var(--border-2);
   display: flex; align-items: center; justify-content: center;
 }
 /* Keep old classes working */
-.header-top-row { display: flex; align-items: center; gap: 0.75rem; flex: 1; }
-.header-rule { display: none; }
-.header-badges { display: none; }
+.header-rule,
+.header-badges,
 .badge { display: none; }
 header h1 {
   font-size: 0.95rem; font-weight: 700;
@@ -551,10 +559,6 @@ header p { color: var(--muted); font-size: 0.62rem; }
   backdrop-filter: blur(20px) saturate(1.2);
   -webkit-backdrop-filter: blur(20px) saturate(1.2);
 }
-body.light .tab-nav {
-  background: linear-gradient(180deg, color-mix(in oklab, var(--bg) 60%, transparent) 0%, var(--bg) 60%);
-  border-top-color: var(--border);
-}
 .tab-btn {
   border: none; background: none;
   font-family: var(--font-ui);
@@ -562,10 +566,12 @@ body.light .tab-nav {
   color: var(--muted); cursor: pointer;
   transition: color 0.2s;
   -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
   display: flex; flex-direction: column; align-items: center;
   justify-content: center; gap: 4px;
   position: relative;
   padding: 10px 2px;
+  min-height: 48px;
 }
 /* dot indicator above icon for active tab */
 .tab-btn::before {
@@ -622,6 +628,9 @@ body.light .tab-nav {
     backdrop-filter: blur(24px) saturate(1.4);
     -webkit-backdrop-filter: blur(24px) saturate(1.4);
   }
+  body.light .tab-nav {
+    background: rgba(253,246,236,0.94);
+  }
   .tab-btn {
     flex: 1;
     flex-direction: row; gap: 0.4rem;
@@ -655,7 +664,7 @@ body.light .tab-nav {
   position: sticky; top: 0; z-index: 50;
 }
 @media (min-width: 768px) {
-  .filter-bar { top: 49px; }
+  .filter-bar { top: 49px; padding: 0.75rem 1.25rem 0.5rem; }
 }
 
 /* Row label */
@@ -1023,12 +1032,14 @@ body.light .tab-nav {
   background: currentColor; color: var(--bg) !important;
   border-radius: 999px; padding: 0.1rem 0.55rem;
 }
-.cards {
+.cards, .sk-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   gap: 0.85rem;
 }
-@media (max-width: 520px) { .cards { grid-template-columns: 1fr; } }
+@media (max-width: 520px) { .cards, .sk-grid { grid-template-columns: 1fr; } }
+@media (min-width: 768px) { .cards, .sk-grid { grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); } }
+@media (min-width: 960px) { .cards, .sk-grid { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); } }
 
 /* ══════════════════════════════════════
    FLIP CARD
@@ -1288,11 +1299,12 @@ body.light .tab-nav {
 .quiz-end-btn {
   flex-shrink: 0;
   border: 1px solid var(--border-2); border-radius: 20px;
-  padding: 0.35rem 0.8rem; font-size: 0.68rem; font-weight: 700;
+  padding: 0.35rem 0.85rem; font-size: 0.68rem; font-weight: 700;
   font-family: var(--font-ui);
   background: transparent; color: var(--muted);
   cursor: pointer; transition: all 0.15s;
-  -webkit-tap-highlight-color: transparent; min-height: 34px;
+  -webkit-tap-highlight-color: transparent;
+  min-height: 44px; display: inline-flex; align-items: center; justify-content: center;
 }
 .quiz-end-btn:active { background: rgba(248,113,113,0.12); color: var(--n4); border-color: var(--n4-border); }
 
@@ -1807,14 +1819,6 @@ body.light .tab-nav {
 ══════════════════════════════════════════════════════════════ */
 
 
-/* ── CSS tambahan ── */
-
-body.light {
-  --success-dim  : #dcfce7;
-  --success-text : #16a34a;
-  --error-dim    : #fee2e2;
-  --error-text   : #dc2626;
-}
 
 
 /* ══════════════════════════════════════
@@ -2465,7 +2469,9 @@ body.light {
 .gs-input::placeholder { color: var(--muted); }
 .gs-close-btn {
   background: none; border: none; cursor: pointer;
-  color: var(--muted); font-size: 1rem; padding: 0.25rem;
+  color: var(--muted); font-size: 1.1rem; padding: 0.25rem;
+  min-width: 44px; min-height: 44px; display: inline-flex;
+  align-items: center; justify-content: center;
 }
 
 .gs-results {
@@ -2533,12 +2539,13 @@ body.light {
 
 .vd-close-btn {
   position: sticky; top: 0; float: right;
-  background: var(--surface-2); border: none;
-  width: 2rem; height: 2rem; border-radius: 50%;
-  cursor: pointer; font-size: 0.9rem;
+  background: var(--surface-2); border: 1px solid var(--border);
+  width: 2.75rem; height: 2.75rem; min-width: 44px; min-height: 44px; border-radius: 50%;
+  cursor: pointer; font-size: 1rem;
   color: var(--text-sub); display: flex;
   align-items: center; justify-content: center;
-  margin-bottom: -2rem;
+  margin-bottom: -2.75rem;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* Header */
@@ -2771,14 +2778,17 @@ body.light {
 .vb-ch-ctrl {
   font-size: 0.72rem;
   font-weight: 600;
-  padding: 0.2rem 0.6rem;
+  padding: 0.35rem 0.75rem;
   border: 1px solid var(--border);
   border-radius: 1rem;
   background: var(--surface-1, var(--bg));
   color: var(--text-sub);
   cursor: pointer;
   transition: all 0.14s;
-  min-height: 28px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 .vb-ch-ctrl.active-ch-ctrl {
   background: var(--accent);
@@ -2794,9 +2804,9 @@ body.light {
   padding-bottom: 0.25rem;
 }
 .vb-ch-pill {
-  min-width: 2.2rem;
-  min-height: 2.2rem;
-  padding: 0.2rem 0.4rem;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0.25rem 0.5rem;
   border: 1.5px solid var(--border);
   border-radius: 0.5rem;
   background: var(--surface-1, var(--bg));
@@ -2806,6 +2816,9 @@ body.light {
   cursor: pointer;
   transition: all 0.14s;
   text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 .vb-ch-pill.active-ch {
   background: var(--accent);
@@ -3100,14 +3113,14 @@ body.light {
   font-size: 0.875rem;
   resize: none;
   line-height: 1.4;
-  min-height: 40px;
+  min-height: 44px;
   max-height: 120px;
   overflow-y: auto;
   font-family: inherit;
 }
 .ai-input:focus { outline: none; border-color: var(--accent, var(--accent)); }
 .ai-send-btn {
-  width: 40px; height: 40px;
+  width: 44px; height: 44px; min-width: 44px; min-height: 44px;
   border-radius: 50%;
   background: var(--accent, var(--accent));
   color: #fff;
@@ -3462,7 +3475,7 @@ body.light {
 
 .auth-header-btn {
   display: inline-flex; align-items: center; gap: 0.3rem;
-  padding: 0.35rem 0.65rem;
+  padding: 0.35rem 0.75rem;
   border-radius: 100px;
   border: 1px solid var(--border);
   background: var(--surface-2);
@@ -3470,6 +3483,7 @@ body.light {
   font-size: 0.72rem; font-weight: 600;
   font-family: var(--font-ui);
   cursor: pointer;
+  min-height: 44px;
   transition: border-color 0.18s, color 0.18s;
   -webkit-tap-highlight-color: transparent;
 }
@@ -3604,12 +3618,7 @@ body.light {
   margin-bottom: 0.85rem;
 }
 
-.sk-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
-  gap: 0.85rem;
-}
-@media (max-width: 520px) { .sk-grid { grid-template-columns: 1fr; } }
+/* .sk-grid layout consolidated with .cards in §9 */
 
 .sk-card {
   background: var(--surface);
@@ -3902,18 +3911,21 @@ body.light {
   border-top: 1px solid var(--border);
 }
 .detail-lens-label {
-  font-size: 11px; font-weight: 700; text-transform: uppercase;
-  letter-spacing: 0.05em; color: var(--muted); margin-bottom: 0.6rem;
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.08em; color: var(--muted); margin-bottom: 0.5rem;
 }
 .detail-lens-item {
-  display: flex; align-items: center; gap: 0.4rem;
-  padding: 0.4rem 0.65rem; margin-bottom: 0.35rem;
+  display: flex; align-items: center; gap: 8px;
+  padding: 0.45rem 0.75rem; margin-bottom: 0.35rem;
   background: var(--surface-2); border-radius: 8px;
-  font-size: var(--text-sm);
+  font-size: 13px; color: var(--text);
+  border: 1px solid transparent;
+  transition: background 0.15s;
 }
-.detail-lens-emoji  { flex-shrink: 0; }
-.detail-lens-title  { font-weight: 600; color: var(--text); }
-.detail-lens-loc    { color: var(--muted); font-size: var(--text-xs); }
+.detail-lens-item:last-child { margin-bottom: 0; }
+.detail-lens-emoji  { font-size: 15px; flex-shrink: 0; }
+.detail-lens-title  { font-weight: 600; color: var(--text-bright); }
+.detail-lens-loc    { color: var(--muted); font-size: 12px; }
 
 /* ══════════════════════════════════════
    §22 TWEAKS PANEL — Claude Design
@@ -4021,7 +4033,6 @@ html[data-furigana="auto"]   .n1 rt { display: none; }
 @keyframes spin-slow { to { transform:rotate(360deg); } }
 @keyframes ember { 0% { transform:translateY(0) translateX(0); opacity:0; } 20% { opacity:1; } 100% { transform:translateY(-40px) translateX(var(--dx,0)); opacity:0; } }
 @keyframes card-enter { from { opacity:0; transform:translateY(12px) scale(0.98); } to { opacity:1; transform:none; } }
-@keyframes sensei-typing { 0%,60%,100% { transform:translateY(0); opacity:0.5; } 30% { transform:translateY(-3px); opacity:1; } }
 
 /* ══════════════════════════════════════
    §18b UTILITIES — Claude Design additions
@@ -4042,7 +4053,7 @@ html[data-furigana="auto"]   .n1 rt { display: none; }
    §22 MATERI HUB v2 — Claude Design layout
 ══════════════════════════════════════ */
 .hub2-wrap {
-  padding: 8px 16px 120px;
+  padding: 0 16px 120px;
   display: flex; flex-direction: column; gap: 12px;
 }
 /* Hero greeting */
@@ -4137,20 +4148,24 @@ html[data-furigana="auto"]   .n1 rt { display: none; }
   background: var(--surface-3);
 }
 /* See all shortcut */
-.hub2-see-all {
+.hub2-see-all,
+.hub2-see-all-row {
   width: 100%; text-align: left;
   padding: 14px 16px;
   background: var(--surface);
   border: 1px dashed var(--border-2); border-radius: 16px;
-  color: var(--muted); cursor: pointer;
+  color: var(--text); cursor: pointer;
   display: flex; align-items: center; gap: 12px;
   -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
   transition: background 0.15s;
+  font-family: inherit;
 }
-.hub2-see-all:active { background: var(--surface-2); }
+.hub2-see-all:active,
+.hub2-see-all-row:active { background: var(--surface-2); }
 .hub2-see-all-text { flex: 1; }
-.hub2-see-all-title { font-size: 13px; font-weight: 600; color: var(--text); }
-.hub2-see-all-sub { font-size: 11px; margin-top: 2px; }
+.hub2-see-all-title { font-size: 13px; font-weight: 600; color: var(--text); display: block; }
+.hub2-see-all-sub { font-size: 11px; color: var(--muted); margin-top: 2px; display: block; }
 /* Section label */
 .hub2-section-label {
   font-size: 11px; color: var(--muted); font-weight: 700;
@@ -4737,11 +4752,6 @@ html[data-furigana="auto"]   .n1 rt { display: none; }
   font-size: 13px; color: var(--muted); margin: 0; line-height: 1.5; max-width: 300px;
 }
 
-/* Hub wrap — ensure bottom padding for last item not touching nav */
-.hub2-wrap {
-  padding: 0 16px 120px;
-  display: flex; flex-direction: column;
-}
 
 /* ══════════════════════════════════════
    §29 WEAK POINTS (Perlu Perhatian)
@@ -4802,19 +4812,6 @@ html[data-furigana="auto"]   .n1 rt { display: none; }
   color: var(--accent-hot); text-transform: uppercase; margin-bottom: 4px;
 }
 
-/* "Lihat semua kartu" compact dashed row */
-.hub2-see-all-row {
-  width: 100%; display: flex; align-items: center; gap: 12px;
-  padding: 14px 16px;
-  background: var(--surface); border: 1px dashed var(--border-2);
-  border-radius: 16px; cursor: pointer; font-family: inherit;
-  color: var(--text); text-align: left;
-  -webkit-tap-highlight-color: transparent;
-  transition: background 0.15s;
-}
-.hub2-see-all-row:active { background: var(--surface-2); }
-.hub2-see-all-title { font-size: 13px; font-weight: 600; color: var(--text); display: block; }
-.hub2-see-all-sub   { font-size: 11px; color: var(--muted); margin-top: 1px; display: block; }
 
 /* ══════════════════════════════════════
    §29 PERLU PERHATIAN (ss9 style)
@@ -4914,10 +4911,10 @@ html[data-furigana="auto"]   .n1 rt { display: none; }
   margin-bottom: 10px;
 }
 .detail-close-btn {
-  width: 30px; height: 30px;
+  width: 36px; height: 36px; min-width: 44px; min-height: 44px;
   background: var(--surface-3); border: 1px solid var(--border);
   border-radius: 50%; cursor: pointer; color: var(--muted);
-  font-size: 13px; display: flex; align-items: center; justify-content: center;
+  font-size: 14px; display: flex; align-items: center; justify-content: center;
   flex-shrink: 0; touch-action: manipulation;
   transition: background 0.15s, color 0.15s;
 }
@@ -5037,24 +5034,6 @@ html[data-furigana="auto"]   .n1 rt { display: none; }
   font-size: 13px; color: var(--text); line-height: 1.6;
 }
 
-/* ── Lens breadcrumbs (injected by materi-hub.js) ────────────── */
-.detail-lens-breadcrumbs {
-  border-top: 1px solid var(--border);
-  padding-top: 12px; margin-top: 4px;
-}
-.detail-lens-label {
-  font-size: 10px; font-weight: 700; letter-spacing: 0.08em;
-  color: var(--muted); text-transform: uppercase; margin-bottom: 8px;
-}
-.detail-lens-item {
-  display: flex; align-items: center; gap: 8px;
-  font-size: 13px; color: var(--text);
-  padding: 6px 0; border-bottom: 1px solid var(--border);
-}
-.detail-lens-item:last-child { border-bottom: none; }
-.detail-lens-emoji { font-size: 16px; flex-shrink: 0; }
-.detail-lens-title { font-weight: 600; color: var(--text-bright); }
-.detail-lens-loc   { color: var(--muted); font-size: 12px; }
 /* ══════════════════════════════════════════════════════════════
    §30 Kebun Mastery — SRS Card Garden Visualization
    Append to app.css after §29

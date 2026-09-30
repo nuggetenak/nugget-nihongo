@@ -1,5 +1,28 @@
 # Changelog — Nugget Nihongo
 
+## v15.15.0 (30 September 2026) — 100% N5/N4 Vocab Examples & CSS Overhaul
+
+### v15.15.0 — feat(content)+refactor(css): 1,400+ new authentic examples (Phase 2 Done) & app.css deduplication
+- **100% Example Sentence Coverage for N5 & N4 Vocab (Phase 2 Complete)**:
+  - Generated and populated 1,400+ authentic Japanese example sentences with clear, natural Indonesian translations across all 10 category files.
+  - `n5-nouns.js` (183 entries updated, 0 missing).
+  - `n5-verbs.js` (16 entries updated, 0 missing).
+  - `n5-adjectives.js` (5 entries updated, 0 missing).
+  - `n5-adverbs.js` (8 entries updated, 0 missing).
+  - `n5-expressions.js` (1 entry updated, 0 missing).
+  - `n4-nouns.js` (376 entries updated with 752 sentences, 0 missing).
+  - `n4-verbs.js` (170 entries updated with 340 sentences, 0 missing).
+  - `n4-adjectives.js` (54 entries updated, 0 missing).
+  - `n4-adverbs.js` (9 entries updated, 0 missing).
+  - `n4-expressions.js` (5 entries updated, 0 missing).
+  - Compiled clean with `node scripts/merge-vocab.js` into monolithic `vocab-n5.js` and `vocab-n4.js`.
+- **UI/UX Overhaul & CSS Consolidation (`public/styles/app.css`)**:
+  - Deduplicated all 22 duplicate selector blocks including `.hub2-wrap`, `.detail-lens-item`, `.header-top-row`, `.hub2-see-all-row`, and `.cards, .sk-grid`.
+  - Added global `touch-action: manipulation` across all buttons, inputs, summaries, and links to eliminate mobile tap delays.
+  - Upgraded tap targets to >= 44px on `.theme-toggle`, `.gs-trigger-btn`, `.modal-close`, `.auth-header-btn`, `.quiz-end-btn`, and tab buttons.
+- **Phase 2 Officially Completed**:
+  - `ROADMAP.md` updated with Phase 2 marked as ✅ Selesai.
+
 ## v15.14.0 (30 September 2026) — Project Reboot & Synchronization
 
 ### v15.14.0 — fix+docs: project reboot — SW cache gaps fixed, N3-N1 vocab UI enabled, Supabase client fixes, documentation synced to v15.13.7 state

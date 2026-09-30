@@ -160,7 +160,7 @@ window.vocabN5_Expressions = [
   lawan_bicara: ['teman', 'umum'],
   nuance: null,
   conj_type: null,
-  examples: [],
+  examples: [{"jp":"仕事が終わりましたので、お先に失礼します。","id":"Karena pekerjaan sudah selesai, permisi saya pulang duluan.","level":"n5","tags":["pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
