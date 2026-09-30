@@ -357,7 +357,7 @@ window.grammarN1_Connectives = [
   nuance: 'Berbeda dari を踏まえて — を前提として berfokus pada asumsi/syarat awal yang belum tentu terjadi, sedangkan を踏まえて berfokus pada fakta yang sudah ada. Penting untuk debat akademis dan dokumen resmi.',
   examples: [
     { jp: '結婚<b>を前提として</b>付き合っている。', id: 'Kami berpacaran dengan asumsi menuju pernikahan.' },
-    { jp: '留学することを前提として、英語の勉強を始めた。', id: 'Dengan premis akan belajar ke luar negeri, aku mulai belajar bahasa Inggris.' },
+    { jp: '留学すること<b>を前提として</b>、英語の勉強を始めた。', id: 'Dengan premis akan belajar ke luar negeri, aku mulai belajar bahasa Inggris.' },
     { jp: '参加者全員の同意<b>を前提として</b>、計画を進める。', id: 'Dengan asumsi persetujuan seluruh peserta, rencana akan dilanjutkan.' }
   ],
   see_also_grammar: ['gn1-00038'],
@@ -529,8 +529,8 @@ window.grammarN1_Connectives = [
   desc: '<b>〜をもってしても</b> menyatakan bahwa bahkan dengan menggunakan kemampuan, kekuatan, atau sumber daya terbaik sekalipun, suatu hal tetap tidak bisa tercapai. Selalu diikuti klausa negatif.',
   nuance: 'Menekankan ketidakmampuan bahkan dalam kondisi yang paling ideal. Formal dan sering digunakan dalam konteks yang mengagumi kemampuan seseorang sambil mengakui ada batas yang tidak bisa ditembus. Berbeda dari でさえ yang lebih kasual.',
   examples: [
-    { jp: '現代の科学をもってしても、解明できない謎がある。', id: 'Bahkan dengan ilmu pengetahuan modern sekalipun, ada misteri yang belum terpecahkan.' },
-    { jp: '彼の卓越した技術をもってしても、その記録を破ることはできなかった。', id: 'Bahkan dengan keahliannya yang luar biasa sekalipun, catatan itu tidak bisa dipecahkan.' }
+    { jp: '現代の科学<b>をもってしても</b>、解明できない謎がある。', id: 'Bahkan dengan ilmu pengetahuan modern sekalipun, ada misteri yang belum terpecahkan.' },
+    { jp: '彼の卓越した技術<b>をもってしても</b>、その記録を破ることはできなかった。', id: 'Bahkan dengan keahliannya yang luar biasa sekalipun, catatan itu tidak bisa dipecahkan.' }
   ],
   see_also_grammar: ['gn1-00065'],
   see_also_vocab: [],
@@ -548,8 +548,8 @@ window.grammarN1_Connectives = [
   desc: '<b>〜かたがた</b> menyatakan bahwa suatu kunjungan atau pertemuan dilakukan untuk dua tujuan sekaligus. Tujuan yang disebutkan sebelum かたがた adalah tujuan pendamping; tujuan utama biasanya disebutkan setelahnya.',
   nuance: 'Jauh lebih formal dari がてら — hampir hanya ditemukan dalam surat resmi atau kunjungan formal. Terbatas pada nominal tindakan yang bermakna interaksi sosial (挨拶, お礼, 近況報告). Memberikan kesan sangat sopan dan berwibawa.',
   examples: [
-    { jp: 'ご挨拶かたがた、お伺いしました。', id: 'Sambil menyampaikan salam, saya datang berkunjung.' },
-    { jp: 'お礼かたがた、近況をご報告申し上げます。', id: 'Sambil menyampaikan terima kasih, perkenankan saya melaporkan kabar terkini.' }
+    { jp: 'ご挨拶<b>かたがた</b>、お伺いしました。', id: 'Sambil menyampaikan salam, saya datang berkunjung.' },
+    { jp: 'お礼<b>かたがた</b>、近況をご報告申し上げます。', id: 'Sambil menyampaikan terima kasih, perkenankan saya melaporkan kabar terkini.' }
   ],
   see_also_grammar: ['gn1-00075'],
   see_also_vocab: [],
@@ -567,8 +567,8 @@ window.grammarN1_Connectives = [
   desc: '<b>〜んがために</b> adalah ekspresi tujuan yang sangat formal dan bernuansa sastra klasik. Menyatakan bahwa seseorang melakukan sesuatu dengan tekad kuat demi mencapai tujuan tertentu. Varian 〜んがための digunakan sebagai modifier nomina.',
   nuance: 'Hampir hanya ditemukan dalam tulisan sastra, pidato formal kenegaraan, atau dokumen sejarah. Jauh lebih kuat dan arkaik dari ために biasa. Memberikan kesan tekad yang sangat besar, serius, dan heroik. Tidak untuk percakapan sehari-hari.',
   examples: [
-    { jp: '勝たんがために、選手たちは限界を超えて練習した。', id: 'Demi meraih kemenangan, para atlet berlatih melampaui batas kemampuan.' },
-    { jp: '国を守らんがための犠牲であった。', id: 'Itu adalah pengorbanan demi melindungi negara.' }
+    { jp: '勝た<b>んがために</b>、選手たちは限界を超えて練習した。', id: 'Demi meraih kemenangan, para atlet berlatih melampaui batas kemampuan.' },
+    { jp: '国を守ら<b>んがための</b>犠牲であった。', id: 'Itu adalah pengorbanan demi melindungi negara.' }
   ],
   see_also_grammar: ['gn1-00074', 'gn1-00075'],
   see_also_vocab: [],
@@ -757,9 +757,9 @@ window.grammarN1_Connectives = [
   desc: '<b>〜べく</b> menyatakan tujuan atau niat dengan nuansa sangat formal dan sastra. Maknanya setara dengan ために atau ようと, namun jauh lebih kuat secara register dan terasa arkaik. Digunakan dalam tulisan serius, pidato resmi, atau laporan formal.',
   nuance: 'Lebih formal dan kuno dari ために atau ように. Menunjukkan tekad atau tujuan yang kuat. Berbeda dengan 〜んがために (yang sangat arkaik dan heroik), 〜べく masih sering muncul di konteks profesional modern seperti laporan bisnis atau surat resmi.',
   examples: [
-    { jp: '優勝すべく、チーム全員が一丸となって練習した。', id: 'Demi meraih kemenangan, seluruh anggota tim berlatih bersatu padu.' },
-    { jp: '問題を解決すべく、専門家を招集した。', id: 'Demi menyelesaikan masalah, para ahli dipanggil untuk berkumpul.' },
-    { jp: '夢を実現すべく、彼は故郷を離れた。', id: 'Demi mewujudkan impiannya, ia meninggalkan kampung halaman.' }
+    { jp: '優勝す<b>べく</b>、チーム全員が一丸となって練習した。', id: 'Demi meraih kemenangan, seluruh anggota tim berlatih bersatu padu.' },
+    { jp: '問題を解決す<b>べく</b>、専門家を招集した。', id: 'Demi menyelesaikan masalah, para ahli dipanggil untuk berkumpul.' },
+    { jp: '夢を実現す<b>べく</b>、彼は故郷を離れた。', id: 'Demi mewujudkan impiannya, ia meninggalkan kampung halaman.' }
   ],
   see_also_grammar: ['gn1-00112', 'gn1-00079'],
   see_also_vocab: [],
@@ -777,8 +777,8 @@ window.grammarN1_Connectives = [
   desc: '<b>〜をもってしても</b> menyatakan bahwa bahkan dengan menggunakan sumber daya, kekuatan, atau kemampuan terbaik sekalipun, sesuatu tetap tidak dapat dilakukan atau tidak cukup. Mengandung nuansa penegasan terhadap keterbatasan.',
   nuance: 'Kebalikan langsung dari 〜をもってすれば. Kalimat setelahnya biasanya berisi ungkapan negatif atau ketidakmampuan (〜できない、〜難しい). Sering digunakan untuk memberikan penekanan dramatis bahwa situasinya benar-benar sulit atau mustahil.',
   examples: [
-    { jp: 'どんな名医をもってしても、この病気は治せなかった。', id: 'Bahkan dengan dokter terbaik sekalipun, penyakit ini tidak bisa disembuhkan.' },
-    { jp: '彼の努力をもってしても、合格点には届かなかった。', id: 'Bahkan dengan segala usaha kerasnya, nilai kelulusan pun tidak tercapai.' }
+    { jp: 'どんな名医<b>をもってしても</b>、この病気は治せなかった。', id: 'Bahkan dengan dokter terbaik sekalipun, penyakit ini tidak bisa disembuhkan.' },
+    { jp: '彼の努力<b>をもってしても</b>、合格点には届かなかった。', id: 'Bahkan dengan segala usaha kerasnya, nilai kelulusan pun tidak tercapai.' }
   ],
   see_also_grammar: ['gn1-00114'],
   see_also_vocab: [],
@@ -796,9 +796,9 @@ window.grammarN1_Connectives = [
   desc: '<b>〜であれ</b> menyatakan konsesi atau penekanan bahwa terlepas dari kondisi yang disebutkan, pernyataan utama tetap berlaku. Digunakan secara formal untuk menyatakan bahwa tidak ada pengecualian. Bisa berdiri sendiri atau diulang (〜であれ〜であれ) untuk menyatakan "baik ... maupun ...".',
   nuance: 'Lebih formal dari 〜でも atau 〜にしても. Pola ulang 〜であれ〜であれ hampir setara dengan 〜にせよ〜にせよ namun sedikit lebih formal dan sering terasa seperti pernyataan prinsip. Versi tunggal menekankan tidak adanya pengecualian.',
   examples: [
-    { jp: '何人であれ、法律の前では平等だ。', id: 'Siapa pun orangnya, semua sama di hadapan hukum.' },
-    { jp: '成功であれ失敗であれ、挑戦することに意義がある。', id: 'Baik sukses maupun gagal, ada nilai dalam mencoba.' },
-    { jp: '理由が何であれ、暴力は許されない。', id: 'Apa pun alasannya, kekerasan tidak bisa dibenarkan.' }
+    { jp: '何人<b>であれ</b>、法律の前では平等だ。', id: 'Siapa pun orangnya, semua sama di hadapan hukum.' },
+    { jp: '成功<b>であれ</b>失敗<b>であれ</b>、挑戦することに意義がある。', id: 'Baik sukses maupun gagal, ada nilai dalam mencoba.' },
+    { jp: '理由が何<b>であれ</b>、暴力は許されない。', id: 'Apa pun alasannya, kekerasan tidak bisa dibenarkan.' }
   ],
   see_also_grammar: ['gn1-00119', 'gn1-00120'],
   see_also_vocab: [],
@@ -816,8 +816,8 @@ window.grammarN1_Connectives = [
   desc: '<b>〜にせよ〜にせよ</b> menyatakan bahwa terlepas dari pilihan atau kondisi mana pun yang disebutkan, kesimpulan atau pernyataan utama tetap berlaku. Digunakan untuk menyatakan bahwa kedua kemungkinan tidak mengubah situasi atau sikap yang akan diambil.',
   nuance: 'Sedikit lebih formal dari 〜にしろ〜にしろ. Keduanya dapat digunakan secara bergantian dalam banyak konteks, namun 〜にせよ〜にせよ terasa lebih serius dan sering muncul dalam tulisan formal. Berbeda dari 〜であれ〜であれ yang lebih arkaik dan kuat secara register.',
   examples: [
-    { jp: '行くにせよ行かないにせよ、早めに返事をください。', id: 'Baik kamu pergi maupun tidak, mohon segera beri jawaban.' },
-    { jp: '賛成するにせよ反対するにせよ、理由を明確に述べてほしい。', id: 'Baik setuju maupun tidak, tolong nyatakan alasannya dengan jelas.' }
+    { jp: '行く<b>にせよ</b>行かない<b>にせよ</b>、早めに返事をください。', id: 'Baik kamu pergi maupun tidak, mohon segera beri jawaban.' },
+    { jp: '賛成する<b>にせよ</b>反対する<b>にせよ</b>、理由を明確に述べてほしい。', id: 'Baik setuju maupun tidak, tolong nyatakan alasannya dengan jelas.' }
   ],
   see_also_grammar: ['gn1-00118', 'gn1-00120'],
   see_also_vocab: [],
@@ -835,8 +835,8 @@ window.grammarN1_Connectives = [
   desc: '<b>〜にしろ〜にしろ</b> menyatakan bahwa dalam situasi apa pun — baik A maupun B — pernyataan utama tetap berlaku. Secara makna dan fungsi sangat mirip dengan 〜にせよ〜にせよ, namun sedikit lebih kasual dan lebih sering digunakan dalam percakapan.',
   nuance: 'Pasangan minimnya adalah 〜にせよ〜にせよ (lebih formal). Keduanya dapat saling menggantikan dalam sebagian besar konteks. 〜にしろ〜にしろ lebih terasa alami dalam percakapan lisan, sementara 〜にせよ〜にせよ lebih sering dalam tulisan resmi.',
   examples: [
-    { jp: '合格するにしろしないにしろ、最後まで全力でやろう。', id: 'Baik lulus maupun tidak, mari lakukan yang terbaik sampai akhir.' },
-    { jp: '買うにしろ買わないにしろ、一度試してみる価値はある。', id: 'Baik kamu beli maupun tidak, mencobanya sekali tetap bernilai.' }
+    { jp: '合格する<b>にしろ</b>しない<b>にしろ</b>、最後まで全力でやろう。', id: 'Baik lulus maupun tidak, mari lakukan yang terbaik sampai akhir.' },
+    { jp: '買う<b>にしろ</b>買わない<b>にしろ</b>、一度試してみる価値はある。', id: 'Baik kamu beli maupun tidak, mencobanya sekali tetap bernilai.' }
   ],
   see_also_grammar: ['gn1-00118', 'gn1-00119'],
   see_also_vocab: [],
@@ -854,9 +854,9 @@ window.grammarN1_Connectives = [
   desc: '<b>〜とも</b> menyatakan konsesi kuat — bahwa meskipun sesuatu terjadi atau kondisinya demikian, pembicara tetap pada sikapnya atau pernyataan utama tetap berlaku. Memberikan nuansa tekad yang kuat atau penerimaan yang tulus terhadap kondisi buruk sekalipun.',
   nuance: 'Lebih formal dan sastra dari 〜ても. Mengandung nuansa resolusi, keteguhan hati, atau penerimaan yang dalam. Sering ditemukan dalam puisi, pidato inspirasional, atau pernyataan bertekad tinggi. Berbeda dari 〜でも yang lebih kasual dan netral.',
   examples: [
-    { jp: 'たとえ失敗しようとも、私はこの道を進み続ける。', id: 'Sekalipun gagal, aku akan terus melangkah di jalan ini.' },
-    { jp: '嵐が来ようとも、私たちは計画を変えない。', id: 'Meskipun badai datang, kami tidak akan mengubah rencana.' },
-    { jp: 'いかに困難であろうとも、諦めない精神が重要だ。', id: 'Betapapun sulitnya, semangat untuk tidak menyerah adalah hal yang penting.' }
+    { jp: 'たとえ失敗しよう<b>とも</b>、私はこの道を進み続ける。', id: 'Sekalipun gagal, aku akan terus melangkah di jalan ini.' },
+    { jp: '嵐が来よう<b>とも</b>、私たちは計画を変えない。', id: 'Meskipun badai datang, kami tidak akan mengubah rencana.' },
+    { jp: 'いかに困難であろう<b>とも</b>、諦めない精神が重要だ。', id: 'Betapapun sulitnya, semangat untuk tidak menyerah adalah hal yang penting.' }
   ],
   see_also_grammar: ['gn1-00136'],
   see_also_vocab: [],
@@ -874,8 +874,8 @@ window.grammarN1_Connectives = [
   desc: '<b>〜ならいざしらず</b> menyatakan bahwa kondisi A (yang disebutkan) mungkin bisa dimaklumi atau dipahami, namun kondisi aktual yang terjadi tidak bisa diterima dengan cara yang sama. Menetapkan pengecualian hipotetis untuk menekankan ketidaksesuaian situasi yang sebenarnya.',
   nuance: 'Konstruksi ini menyiratkan "kalau A mungkin bisa diterima, tapi faktanya bukan A, jadi ini tidak bisa diterima". Sangat formal dan hampir tidak digunakan dalam percakapan sehari-hari. Berbeda dari 〜はいざしらず yang tidak mensyaratkan kondisi hipotetis sekuat ini.',
   examples: [
-    { jp: '初心者ならいざしらず、プロがこんなミスをするとは驚きだ。', id: 'Kalau pemula mungkin masih bisa dimaklumi, tapi seorang profesional membuat kesalahan seperti ini sungguh mengejutkan.' },
-    { jp: '昔ならいざしらず、今はインターネットで何でも調べられる。', id: 'Kalau zaman dulu mungkin berbeda, tapi sekarang segala hal bisa dicari lewat internet.' }
+    { jp: '初心者<b>ならいざしらず</b>、プロがこんなミスをするとは驚きだ。', id: 'Kalau pemula mungkin masih bisa dimaklumi, tapi seorang profesional membuat kesalahan seperti ini sungguh mengejutkan.' },
+    { jp: '昔<b>ならいざしらず</b>、今はインターネットで何でも調べられる。', id: 'Kalau zaman dulu mungkin berbeda, tapi sekarang segala hal bisa dicari lewat internet.' }
   ],
   see_also_grammar: ['gn1-00125'],
   see_also_vocab: [],
@@ -893,8 +893,8 @@ window.grammarN1_Connectives = [
   desc: '<b>〜はいざしらず</b> menyatakan bahwa hal A (yang disebutkan sebelumnya) tidak dipermasalahkan atau dikecualikan, namun yang menjadi fokus adalah hal B yang berbeda atau lebih penting. Digunakan untuk mengalihkan atau memisahkan dua hal dan menekankan bahwa fokusnya bukan pada A.',
   nuance: 'Lebih umum digunakan daripada 〜ならいざしらず. 〜はいざしらず tidak membutuhkan kondisi hipotetis yang kuat — cukup mengatakan "soal X saya tidak akan mempermasalahkan, tapi...". Nuansanya lebih santai secara komparatif, meskipun tetap formal.',
   examples: [
-    { jp: '趣味はいざしらず、仕事では正確さが求められる。', id: 'Soal hobi lain cerita, tapi dalam pekerjaan ketelitian sangat diperlukan.' },
-    { jp: '他の人はいざしらず、あなたにはもっと頑張ってほしい。', id: 'Soal orang lain lain cerita, tapi dari kamu aku berharap bisa berusaha lebih keras.' }
+    { jp: '趣味<b>はいざしらず</b>、仕事では正確さが求められる。', id: 'Soal hobi lain cerita, tapi dalam pekerjaan ketelitian sangat diperlukan.' },
+    { jp: '他の人<b>はいざしらず</b>、あなたにはもっと頑張ってほしい。', id: 'Soal orang lain lain cerita, tapi dari kamu aku berharap bisa berusaha lebih keras.' }
   ],
   see_also_grammar: ['gn1-00124'],
   see_also_vocab: [],
@@ -912,8 +912,8 @@ window.grammarN1_Connectives = [
   desc: '<b>〜といえども</b> menyatakan konsesi kuat dalam bahasa yang sangat formal. Meskipun kondisi atau status yang disebutkan diakui, pernyataan utama tetap berlaku atau merupakan pengecualian. Sering mengandung nuansa prinsip yang tidak tergoyahkan meskipun menghadapi kondisi yang biasanya dianggap sebagai pengecualian.',
   nuance: 'Lebih formal dari 〜といっても dan 〜ても. Sering muncul dalam hukum, pidato kenegaraan, dan tulisan sastra. Memberikan kesan pernyataan prinsip yang kokoh. Berbeda dari 〜とも (yang lebih sastra/puitis), 〜といえども terasa lebih argumentatif dan logis.',
   examples: [
-    { jp: '大統領といえども、法の上に立つことはできない。', id: 'Bahkan seorang presiden sekalipun tidak bisa berdiri di atas hukum.' },
-    { jp: '緊急事態といえども、基本的人権は守られなければならない。', id: 'Meskipun dalam keadaan darurat sekalipun, hak asasi manusia dasar harus tetap dilindungi.' }
+    { jp: '大統領<b>といえども</b>、法の上に立つことはできない。', id: 'Bahkan seorang presiden sekalipun tidak bisa berdiri di atas hukum.' },
+    { jp: '緊急事態<b>といえども</b>、基本的人権は守られなければならない。', id: 'Meskipun dalam keadaan darurat sekalipun, hak asasi manusia dasar harus tetap dilindungi.' }
   ],
   see_also_grammar: ['gn1-00137', 'gn1-00122'],
   see_also_vocab: [],
@@ -931,8 +931,8 @@ window.grammarN1_Connectives = [
   desc: '<b>〜といえど</b> adalah bentuk yang lebih pendek dan lebih arkaik dari 〜といえども. Maknanya identik — menyatakan konsesi bahwa meskipun kondisi tertentu diakui, pernyataan utama tetap berlaku. Muncul terutama dalam karya sastra klasik, puisi, atau teks sangat formal.',
   nuance: 'Hampir tidak digunakan dalam percakapan maupun tulisan modern biasa. Muncul sebagian besar dalam konteks sastra, puisi, atau dokumen bersejarah. Lebih arkaik dari 〜といえども yang juga formal. Bagi ujian JLPT, penting untuk mengenali bentuk ini sebagai pasif form recognition.',
   examples: [
-    { jp: '春といえど、山の頂にはまだ雪が残る。', id: 'Meskipun sudah musim semi, salju masih tersisa di puncak gunung.' },
-    { jp: '友といえど、秘密を話すべきではなかった。', id: 'Meskipun itu seorang teman, seharusnya aku tidak menceritakan rahasianya.' }
+    { jp: '春<b>といえど</b>、山の頂にはまだ雪が残る。', id: 'Meskipun sudah musim semi, salju masih tersisa di puncak gunung.' },
+    { jp: '友<b>といえど</b>、秘密を話すべきではなかった。', id: 'Meskipun itu seorang teman, seharusnya aku tidak menceritakan rahasianya.' }
   ],
   see_also_grammar: ['gn1-00136'],
   see_also_vocab: [],

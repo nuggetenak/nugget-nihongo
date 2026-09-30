@@ -34,8 +34,8 @@ window.grammarN1_Nouns_Predicates = [
   desc: '<b>〜たる</b> adalah bentuk atributif dari kopula formal たり. Digunakan untuk memodifikasi nomina dan menyatakan bahwa sesuatu atau seseorang benar-benar memenuhi kualifikasi atau esensi dari hal yang disebutkan. Memberikan kesan penilaian atau standar yang tinggi.',
   nuance: 'Lebih formal dan arkaik dari である. Sering muncul dalam judul jabatan formal, deskripsi karakter dalam tulisan sastra, atau pernyataan yang bernuansa idealis. Mirip dengan 〜たるもの namun berfungsi sebagai modifier nomina, bukan predikat.',
   examples: [
-    { jp: '真のリーダーたる人物は、部下の失敗を自分の責任として引き受ける。', id: 'Seseorang yang layak disebut pemimpin sejati akan menanggung kegagalan bawahannya sebagai tanggung jawabnya sendiri.' },
-    { jp: '名医たる所以は、技術だけでなく患者への共感にある。', id: 'Alasan seseorang layak disebut dokter ternama terletak bukan hanya pada keahlian, tetapi juga pada empati terhadap pasien.' }
+    { jp: '真のリーダー<b>たる</b>人物は、部下の失敗を自分の責任として引き受ける。', id: 'Seseorang yang layak disebut pemimpin sejati akan menanggung kegagalan bawahannya sebagai tanggung jawabnya sendiri.' },
+    { jp: '名医<b>たる</b>所以は、技術だけでなく患者への共感にある。', id: 'Alasan seseorang layak disebut dokter ternama terletak bukan hanya pada keahlian, tetapi juga pada empati terhadap pasien.' }
   ],
   see_also_grammar: ['gn1-00116'],
   see_also_vocab: [],

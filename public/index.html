@@ -245,7 +245,9 @@
         <button class="pill active-all" id="vpill-all"  onclick="vbPillLevel('all',this)">Semua</button>
         <button class="pill" id="vpill-n5" onclick="vbPillLevel('n5',this)"><span class="pill-dot" style="background:var(--n5)"></span>N5</button>
         <button class="pill" id="vpill-n4" onclick="vbPillLevel('n4',this)"><span class="pill-dot" style="background:var(--n4)"></span>N4</button>
-        <button class="pill pill-soon" id="vpill-n3" disabled aria-disabled="true" title="Belum tersedia"><span class="pill-dot" style="background:var(--n3)"></span>N3</button>
+        <button class="pill" id="vpill-n3" onclick="vbPillLevel('n3',this)"><span class="pill-dot" style="background:var(--n3)"></span>N3</button>
+        <button class="pill" id="vpill-n2" onclick="vbPillLevel('n2',this)"><span class="pill-dot" style="background:var(--n2)"></span>N2</button>
+        <button class="pill" id="vpill-n1" onclick="vbPillLevel('n1',this)"><span class="pill-dot" style="background:var(--n1)"></span>N1</button>
       </div>
       <div class="vocab-pos-row" id="vocabPosRow">
         <button class="cat-chip active-all-cat" onclick="vbPillPos('all',this)">Semua POS</button>
@@ -1412,13 +1414,13 @@
       </div>
       <div class="ms-item-text">
         <div class="ms-label">Tentang Nugget</div>
-        <div class="ms-sub" id="msVersionLabel">v2026.04 · dibuat dengan 🍵</div>
+        <div class="ms-sub" id="msVersionLabel">— · dibuat dengan 🍵</div>
       </div>
       <svg class="ms-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
     </div>
     <div class="ms-divider"></div>
     <div class="ms-app-info">
-      <span id="abVersion">v15.7.0</span> · Nugget Nihongo · Gratis selamanya
+      <span id="msAppVersion">—</span> · Nugget Nihongo · Gratis selamanya
     </div>
   </div>
 </div>

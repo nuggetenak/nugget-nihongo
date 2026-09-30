@@ -10,15 +10,15 @@
 A Progressive Web App for learning Japanese, built for JLPT N5–N1 preparation.
 Works completely offline after first load. No account needed. No ads. Free forever.
 
-**Live**: [nuggetenak.github.io/nugget-nihongo](https://nuggetenak.github.io/nugget-nihongo/)
+**Live**: [nugget-nihongo.pages.dev](https://nugget-nihongo.pages.dev)
 
 ## Features
 
-- 📚 **1,800+ vocabulary entries** across JLPT N5–N1
+- 📚 **2,400+ vocabulary entries** across JLPT N5–N1
 - 📝 **450+ grammar points** with examples and explanations
-- 🎯 **7 quiz modes** — flashcard, fill-in, rearrange, conjugation, translation, error-find, multiple choice
+- 🎯 **9 quiz modes** — flashcard, fill-in, rearrange, conjugation, translation, error-find, multiple choice
 - 🔄 **SRS (Spaced Repetition)** — FSRS algorithm for optimized review
-- 📖 **Book index** — learn by textbook chapter (Irodori, Sou Matome)
+- 📖 **Book index** — learn by textbook chapter (Irodori, Sou Matome, Minna no Nihongo)
 - 🌐 **Bilingual** — Indonesian interface with Japanese content
 - 📱 **PWA** — install on any device, works offline
 - 🌙 **Dark mode** — easy on the eyes
@@ -63,13 +63,13 @@ See [ARCHITECTURE.md](ARCHITECTURE.md) for detailed structure.
 
 ## Data
 
-| Level | Vocab | Grammar (Global) | Grammar (Cards) |
-|-------|-------|-------------------|-----------------|
-| N5 | 789 | 248 | 132 |
-| N4 | 720 | 272 | 132 |
-| N3 | 110 | 329 | — |
-| N2 | — | — | — |
-| N1 | — | — | — |
+| Level | Vocab | Grammar |
+|-------|-------|---------|
+| N5 | 725 | 94 |
+| N4 | 692 | 92 |
+| N3 | 615 | 119 |
+| N2 | 260 | 250 |
+| N1 | 130 | 140 |
 
 ## Contributing
 

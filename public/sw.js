@@ -4,7 +4,7 @@
 //  network-first for API calls (Supabase / Cloudflare Workers).
 // ══════════════════════════════════════
 
-const CACHE = 'nihongo-v15.13.7';
+const CACHE = 'nihongo-v15.14.0';
 const ASSETS = [
   './',
   './index.html',
@@ -12,6 +12,9 @@ const ASSETS = [
   './icons/icon-192.png',
   './icons/icon-512.png',
   './styles/app.css',
+  './styles/layout/shell.css',
+  './styles/onboarding.css',
+  './styles/settings.css',
   './fonts/dm-sans.woff2',
   './fonts/biz-udgothic.woff2',
 
@@ -83,14 +86,16 @@ const ASSETS = [
   './data/grammar/grammar-n5.js',
   './data/grammar/grammar-n4.js',
   './data/grammar/grammar-n3.js',
-  // grammar-n2.js and grammar-n1.js omitted — seed data only, not production-complete
+  './data/grammar/grammar-n2.js',
+  './data/grammar/grammar-n1.js',
   './data/grammar/grammar-index.js',
 
   // ── Vocab DB ──────────────────────────────────────────
   './data/vocab/vocab-n5.js',
   './data/vocab/vocab-n4.js',
   './data/vocab/vocab-n3.js',
-  // vocab-n2.js and vocab-n1.js omitted — seed data only
+  './data/vocab/vocab-n2.js',
+  './data/vocab/vocab-n1.js',
   './data/vocab/vocab-index.js',
 
   // ── Book Lenses + Sources ─────────────────────────────

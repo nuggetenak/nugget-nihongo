@@ -1,6 +1,6 @@
 # Nugget Nihongo — Project Map
 > Read this first every session. Single source of truth for project structure.
-> Last updated: v15.7.0 — 18 April 2026 (TASK-CC-7 + content population batch A)
+> Last updated: v15.14.0 — 30 September 2026
 > **Selalu baca MASTER-AUDIT.md di root repo untuk task list terbaru.**
 
 ---
@@ -41,7 +41,7 @@ SPEC-GRAMMAR-IRODORI-A2.md ← Spec for TASK 4 & 5
 public/
   index.html                ← SPA entry point (63 <script> tags)
   styles/app.css            ← All styles (3144 lines)
-  sw.js                     ← Service worker (nihongo-v15.6.0)
+  sw.js                     ← Service worker (nihongo-v15.13.7)
   manifest.webmanifest      ← PWA manifest
   icons/                    ← PWA icons
 ```
@@ -88,7 +88,7 @@ data/fallback/
   vocab-drills.json             Offline AI fallback drills
 ```
 
-### Script Load Order (v15.6.0 — from index.html)
+### Script Load Order (v15.13.7 — from index.html)
 
 ```
 [data files above, in order listed]
@@ -136,7 +136,7 @@ js/app.js                 Thin orchestrator — ALWAYS LAST
 
 ---
 
-## Key Global Variables (v15.6.0)
+## Key Global Variables (v15.13.7)
 
 | Variable | Defined in | Notes |
 |---|---|---|
@@ -158,14 +158,14 @@ js/app.js                 Thin orchestrator — ALWAYS LAST
 
 ---
 
-## Known Gotchas (v15.6.0)
+## Known Gotchas (v15.13.7)
 
 - `quiz-feedback.js` MUST load BEFORE fillin, conjugation, translation, errorfind, multichoice, quiz-typetr
 - `error-boundary.js` loads 2nd after version.js
 - `quiz-mixed.js` loads AFTER quiz-vocab.js
 - `vocab-index.js` only activates N5+N4 by default — enable N3+ when data is sufficient
 - `grammar-index.js` merges all levels
-- `sw.js` cache name = `nihongo-v15.6.0` — must match version.js on every release
+- `sw.js` cache name = `nihongo-v15.13.7` — must match version.js on every release
 - Book lens files in `data/books/irodori/` are loaded in index.html
 - `book-irodori-*.js` vocab_ids use `vg-n5-*` format; grammar_ids still empty (TASK 4)
 - Supabase credentials are live — see MASTER-AUDIT.md for status

@@ -26,8 +26,13 @@
   }
 
   function _setVersion() {
+    var v = window.APP_VERSION || '—';
     var el = document.getElementById('abVersion');
-    if (el && window.APP_VERSION) el.textContent = window.APP_VERSION;
+    if (el) el.textContent = v;
+    var ms = document.getElementById('msAppVersion');
+    if (ms) ms.textContent = v;
+    var label = document.getElementById('msVersionLabel');
+    if (label) label.textContent = v + ' · dibuat dengan 🍵';
   }
 
 })();

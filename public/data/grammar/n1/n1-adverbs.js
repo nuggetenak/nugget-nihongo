@@ -15,9 +15,9 @@ window.grammarN1_Adverbs = [
   desc: '<b>〜しも</b> adalah partikel penekan yang muncul dalam kombinasi tetap dengan kata-kata tertentu. Paling umum dalam bentuk 必ずしも (tidak selalu/tidak serta-merta), 折りしも (tepat pada saat itu), dan 何もしも (apa pun juga). Menambahkan penekanan pada ketepatan waktu, konteks, atau cakupan yang disebut.',
   nuance: 'Tidak digunakan secara bebas — harus muncul dalam kombinasi tetap. 必ずしも は bentuk paling umum dan selalu diikuti negatif. 折りしも muncul dalam narasi dan menandai kebetulan waktu yang dramatis. Ketiganya bersifat formal atau sastra.',
   examples: [
-    { jp: 'お金が多ければ必ずしも幸せになれるわけではない。', id: 'Banyak uang tidak serta-merta menjamin kebahagiaan.' },
-    { jp: '折りしも、雪が降り始めた。', id: 'Tepat pada saat itu, salju mulai turun.' },
-    { jp: '必ずしも専門家だけが正解を知っているとは限らない。', id: 'Tidak selalu hanya para ahli yang mengetahui jawaban yang benar.' }
+    { jp: 'お金が多ければ必ず<b>しも</b>幸せになれるわけではない。', id: 'Banyak uang tidak serta-merta menjamin kebahagiaan.' },
+    { jp: '折り<b>しも</b>、雪が降り始めた。', id: 'Tepat pada saat itu, salju mulai turun.' },
+    { jp: '必ず<b>しも</b>専門家だけが正解を知っているとは限らない。', id: 'Tidak selalu hanya para ahli yang mengetahui jawaban yang benar.' }
   ],
   see_also_grammar: [],
   see_also_vocab: [],

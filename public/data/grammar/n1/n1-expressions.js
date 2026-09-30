@@ -53,8 +53,8 @@ window.grammarN1_Expressions = [
   desc: '<b>〜べくして</b> menyatakan bahwa sesuatu terjadi sesuai dengan hal yang seharusnya atau sudah ditakdirkan. Biasanya berbentuk 「〜べくしてVた」dan menggambarkan hasil yang sudah selayaknya terjadi berdasarkan keadaan atau logika.',
   nuance: 'Sering mengandung konotasi positif atau negatif tergantung konteks — bisa berarti "sudah selayaknya berhasil" (positif) atau "sudah semestinya gagal" (negatif). Berbeda dengan 〜べく (yang menyatakan tujuan), 〜べくして menyatakan keniscayaan atau kewajaran sebuah hasil.',
   examples: [
-    { jp: 'あの事故は起こるべくして起こった。安全対策が全くなかったのだから。', id: 'Kecelakaan itu memang sudah semestinya terjadi. Karena tidak ada langkah keselamatan sama sekali.' },
-    { jp: '彼は勝つべくして勝った。誰よりも努力してきたのだから。', id: 'Ia menang karena memang sudah sepatutnya menang. Ia telah berusaha lebih keras dari siapa pun.' }
+    { jp: 'あの事故は起こる<b>べくして</b>起こった。安全対策が全くなかったのだから。', id: 'Kecelakaan itu memang sudah semestinya terjadi. Karena tidak ada langkah keselamatan sama sekali.' },
+    { jp: '彼は勝つ<b>べくして</b>勝った。誰よりも努力してきたのだから。', id: 'Ia menang karena memang sudah sepatutnya menang. Ia telah berusaha lebih keras dari siapa pun.' }
   ],
   see_also_grammar: ['gn1-00111'],
   see_also_vocab: [],
@@ -72,9 +72,9 @@ window.grammarN1_Expressions = [
   desc: '<b>〜にあって</b> menyatakan bahwa seseorang atau sesuatu berada dalam situasi, kondisi, atau lingkungan tertentu. Biasanya diikuti oleh pernyataan tentang bagaimana seseorang bersikap atau berperilaku dalam situasi tersebut. Bentuk 〜にあっても menambahkan nuansa "meskipun dalam kondisi itu".',
   nuance: 'Lebih formal dari 〜の中で atau 〜において. Mengandung nuansa bahwa situasinya cukup khusus atau kritis. Sering dipakai dalam konteks kesulitan, krisis, atau momen penting. Tidak untuk situasi sehari-hari yang biasa.',
   examples: [
-    { jp: '非常事態にあって、リーダーは冷静さを保った。', id: 'Di tengah keadaan darurat, sang pemimpin tetap mempertahankan ketenangannya.' },
-    { jp: '困難な状況にあっても、彼女は諦めなかった。', id: 'Meskipun berada dalam kondisi yang sulit, ia tidak menyerah.' },
-    { jp: '変化の時代にあって、企業は柔軟な対応が求められる。', id: 'Di tengah era perubahan, perusahaan dituntut untuk merespons dengan fleksibel.' }
+    { jp: '非常事態<b>にあって</b>、リーダーは冷静さを保った。', id: 'Di tengah keadaan darurat, sang pemimpin tetap mempertahankan ketenangannya.' },
+    { jp: '困難な状況<b>にあっても</b>、彼女は諦めなかった。', id: 'Meskipun berada dalam kondisi yang sulit, ia tidak menyerah.' },
+    { jp: '変化の時代<b>にあって</b>、企業は柔軟な対応が求められる。', id: 'Di tengah era perubahan, perusahaan dituntut untuk merespons dengan fleksibel.' }
   ],
   see_also_grammar: [],
   see_also_vocab: [],
@@ -92,8 +92,8 @@ window.grammarN1_Expressions = [
   desc: '<b>〜ともあろう</b> menyatakan kejutan atau kekecewaan bahwa seseorang yang seharusnya memiliki standar lebih tinggi karena posisi atau statusnya justru melakukan sesuatu yang tidak pantas. Selalu mengandung nuansa penilaian negatif atau kritik tersirat.',
   nuance: 'Selalu digunakan secara kritis — tidak bisa untuk pujian. Biasanya berbentuk 「〜ともあろう人が〜するとは」 dan menyiratkan "orang sekaliber itu pun melakukan hal seperti itu, sungguh mengejutkan". Kekuatan kritiknya cukup tajam dan terasa seperti teguran terhormat.',
   examples: [
-    { jp: '大臣ともあろう人が、公の場でそんな発言をするとは信じられない。', id: 'Sungguh tidak dapat dipercaya bahwa seseorang yang statusnya setara menteri pun melontarkan pernyataan seperti itu di depan publik.' },
-    { jp: 'ベテラン医師ともあろう者が、こんな初歩的なミスをするとは。', id: 'Mengejutkan sekali bahwa seorang dokter berpengalaman sekaliber itu pun membuat kesalahan dasar seperti ini.' }
+    { jp: '大臣<b>ともあろう</b>人が、公の場でそんな発言をするとは信じられない。', id: 'Sungguh tidak dapat dipercaya bahwa seseorang yang statusnya setara menteri pun melontarkan pernyataan seperti itu di depan publik.' },
+    { jp: 'ベテラン医師<b>ともあろう</b>者が、こんな初歩的なミスをするとは。', id: 'Mengejutkan sekali bahwa seorang dokter berpengalaman sekaliber itu pun membuat kesalahan dasar seperti ini.' }
   ],
   see_also_grammar: ['gn1-00116'],
   see_also_vocab: [],
@@ -111,8 +111,8 @@ window.grammarN1_Expressions = [
   desc: '<b>〜に足る</b> menyatakan bahwa sesuatu atau seseorang memenuhi standar atau kualifikasi yang diperlukan untuk tujuan tertentu. Sering digunakan untuk menyatakan kelayakan atau keabsahan seseorang/sesuatu dalam konteks formal.',
   nuance: 'Lebih formal dari 〜に値する dan terasa lebih kaku dan objektif. 〜に足る sering muncul dalam konteks evaluasi atau penilaian. Kebalikannya adalah 〜に足りない. Sering digunakan dalam frasa seperti 信頼するに足る (layak dipercaya), 尊敬するに足る (layak dihormati).',
   examples: [
-    { jp: '彼の証言は信頼するに足るものだと判断された。', id: 'Kesaksiannya dinilai sebagai sesuatu yang layak untuk dipercaya.' },
-    { jp: 'この研究は発表するに足る成果を上げている。', id: 'Penelitian ini telah menghasilkan capaian yang layak untuk dipresentasikan.' }
+    { jp: '彼の証言は信頼する<b>に足る</b>ものだと判断された。', id: 'Kesaksiannya dinilai sebagai sesuatu yang layak untuk dipercaya.' },
+    { jp: 'この研究は発表する<b>に足る</b>成果を上げている。', id: 'Penelitian ini telah menghasilkan capaian yang layak untuk dipresentasikan.' }
   ],
   see_also_grammar: ['gn1-00127', 'gn1-00128'],
   see_also_vocab: [],
@@ -130,9 +130,9 @@ window.grammarN1_Expressions = [
   desc: '<b>〜に値する</b> menyatakan bahwa seseorang atau sesuatu layak untuk mendapatkan atau diperlakukan dengan cara tertentu karena kualitas atau capaiannya. Menunjukkan pengakuan terhadap nilai atau keunggulan sesuatu.',
   nuance: 'Berbeda dari 〜に足る yang lebih berfokus pada pemenuhan standar minimum, 〜に値する mengandung nuansa penghargaan atau pengakuan yang lebih positif. 〜に値する sering digunakan untuk menyatakan bahwa seseorang pantas mendapat pujian, penghargaan, atau perhatian.',
   examples: [
-    { jp: 'この映画は、何度も観るに値する傑作だ。', id: 'Film ini adalah mahakarya yang layak untuk ditonton berkali-kali.' },
-    { jp: '彼女の業績は、最高賞に値すると委員会は判断した。', id: 'Komite memutuskan bahwa prestasinya layak mendapatkan penghargaan tertinggi.' },
-    { jp: 'その提案は検討に値する内容を含んでいる。', id: 'Proposal itu mengandung isi yang layak untuk dipertimbangkan.' }
+    { jp: 'この映画は、何度も観る<b>に値する</b>傑作だ。', id: 'Film ini adalah mahakarya yang layak untuk ditonton berkali-kali.' },
+    { jp: '彼女の業績は、最高賞<b>に値する</b>と委員会は判断した。', id: 'Komite memutuskan bahwa prestasinya layak mendapatkan penghargaan tertinggi.' },
+    { jp: 'その提案は検討<b>に値する</b>内容を含んでいる。', id: 'Proposal itu mengandung isi yang layak untuk dipertimbangkan.' }
   ],
   see_also_grammar: ['gn1-00126', 'gn1-00129'],
   see_also_vocab: [],
@@ -150,9 +150,9 @@ window.grammarN1_Expressions = [
   desc: '<b>〜に堪えない</b> adalah bentuk negatif dari 〜に堪える, menyatakan ketidakmampuan untuk menahan atau menanggung sesuatu. Dalam penggunaan emosional, sering muncul dalam frasa tetap seperti 遺憾に堪えない (sangat menyesal), 感謝に堪えない (sangat berterima kasih), dengan makna yang paradoks namun sudah terkonvensionalisasi.',
   nuance: 'Dalam frasa konvensional seperti 遺憾に堪えない dan 感謝に堪えない, maknanya adalah "perasaan ini begitu kuat sampai tidak dapat ditahan" — bukan berarti tidak mau bersyukur atau tidak menyesal. Penggunaan ini sering di surat resmi atau pidato. Nuance ini berbeda dari penggunaan harfiahnya.',
   examples: [
-    { jp: 'このような結果になったことは、遺憾に堪えません。', id: 'Kami sangat menyesalkan terjadinya hasil yang seperti ini.' },
-    { jp: '皆様のご支援に感謝に堪えません。', id: 'Kami sungguh tidak bisa cukup berterima kasih atas dukungan semua pihak.' },
-    { jp: 'その映像は目に堪えないほど残酷だった。', id: 'Rekaman itu begitu kejam sehingga tidak sanggup untuk ditonton.' }
+    { jp: 'このような結果になったことは、遺憾<b>に堪えません</b>。', id: 'Kami sangat menyesalkan terjadinya hasil yang seperti ini.' },
+    { jp: '皆様のご支援に感謝<b>に堪えません</b>。', id: 'Kami sungguh tidak bisa cukup berterima kasih atas dukungan semua pihak.' },
+    { jp: 'その映像は目<b>に堪えない</b>ほど残酷だった。', id: 'Rekaman itu begitu kejam sehingga tidak sanggup untuk ditonton.' }
   ],
   see_also_grammar: ['gn1-00129', 'gn1-00132'],
   see_also_vocab: [],
@@ -170,8 +170,8 @@ window.grammarN1_Expressions = [
   desc: '<b>〜にしてからが</b> menyatakan bahwa bahkan entitas yang paling tidak terduga atau yang seharusnya memiliki standar lebih tinggi pun mengalami atau melakukan hal yang disebutkan. Menyoroti betapa ekstremnya situasi dengan menggunakan contoh yang paling mengejutkan.',
   nuance: 'Sangat mirip dengan 〜ですら dan 〜でさえ, namun lebih formal dan lebih kuat secara penekanan. 〜にしてからが secara khusus memilih contoh yang paling "tidak terduga" untuk menunjukkan bahwa jika entitas ini saja mengalaminya, maka situasinya benar-benar serius. Sering digunakan secara kritis.',
   examples: [
-    { jp: '専門家にしてからが、この問題の解決策を見つけられないでいる。', id: 'Bahkan para ahli sekalipun belum bisa menemukan solusi untuk masalah ini.' },
-    { jp: '親にしてからが、子どもに嘘をつくことがある。', id: 'Bahkan orang tua pun kadang berbohong kepada anaknya.' }
+    { jp: '専門家<b>にしてからが</b>、この問題の解決策を見つけられないでいる。', id: 'Bahkan para ahli sekalipun belum bisa menemukan solusi untuk masalah ini.' },
+    { jp: '親<b>にしてからが</b>、子どもに嘘をつくことがある。', id: 'Bahkan orang tua pun kadang berbohong kepada anaknya.' }
   ],
   see_also_grammar: ['gn1-00121'],
   see_also_vocab: [],
@@ -189,8 +189,8 @@ window.grammarN1_Expressions = [
   desc: '<b>〜ものとして</b> menyatakan bahwa sesuatu dijadikan sebagai asumsi atau anggapan dasar dalam konteks tertentu. Digunakan ketika seseorang bertindak atau membuat keputusan berdasarkan anggapan tertentu, meskipun kenyataannya belum pasti atau belum dikonfirmasi.',
   nuance: 'Berbeda dari 〜ものとする (yang menetapkan aturan) dan 〜ものとみなす (yang secara resmi menggolongkan sesuatu), 〜ものとして lebih bersifat operasional dan kontekstual — digunakan untuk menyatakan asumsi kerja dalam perencanaan, diskusi, atau simulasi.',
   examples: [
-    { jp: '全員が参加するものとして、会場の手配を進めてください。', id: 'Tolong lanjutkan persiapan venue dengan anggapan bahwa semua orang akan hadir.' },
-    { jp: '試験に合格したものとして、入学後の計画を立てておこう。', id: 'Dengan anggapan sudah lulus ujian, mari buat rencana setelah masuk.' }
+    { jp: '全員が参加する<b>ものとして</b>、会場の手配を進めてください。', id: 'Tolong lanjutkan persiapan venue dengan anggapan bahwa semua orang akan hadir.' },
+    { jp: '試験に合格した<b>ものとして</b>、入学後の計画を立てておこう。', id: 'Dengan anggapan sudah lulus ujian, mari buat rencana setelah masuk.' }
   ],
   see_also_grammar: ['gn1-00139', 'gn1-00140'],
   see_also_vocab: [],
@@ -208,9 +208,9 @@ window.grammarN1_Expressions = [
   desc: '<b>〜ものとする</b> digunakan dalam dokumen hukum, peraturan, kontrak, dan regulasi untuk menyatakan bahwa suatu kondisi atau aturan ditetapkan dan berlaku. Menyatakan bahwa sesuatu diperlakukan atau diatur sebagaimana yang disebutkan secara resmi.',
   nuance: 'Ini adalah bahasa hukum dan birokratis yang khas. Sering ditemukan di pasal-pasal kontrak, peraturan perusahaan, atau undang-undang. Berbeda dari 〜ものとして (yang menyatakan asumsi operasional), 〜ものとする menetapkan kewajiban atau aturan yang mengikat.',
   examples: [
-    { jp: '本契約は、双方が署名した日から有効になるものとする。', id: 'Perjanjian ini ditetapkan berlaku sejak tanggal ditandatangani oleh kedua belah pihak.' },
-    { jp: '費用は甲が負担するものとする。', id: 'Ditetapkan bahwa biaya ditanggung oleh Pihak Pertama.' },
-    { jp: '違反した場合は、会員資格を失うものとする。', id: 'Ditetapkan bahwa apabila melanggar, status keanggotaan akan dicabut.' }
+    { jp: '本契約は、双方が署名した日から有効になる<b>ものとする</b>。', id: 'Perjanjian ini ditetapkan berlaku sejak tanggal ditandatangani oleh kedua belah pihak.' },
+    { jp: '費用は甲が負担する<b>ものとする</b>。', id: 'Ditetapkan bahwa biaya ditanggung oleh Pihak Pertama.' },
+    { jp: '違反した場合は、会員資格を失う<b>ものとする</b>。', id: 'Ditetapkan bahwa apabila melanggar, status keanggotaan akan dicabut.' }
   ],
   see_also_grammar: ['gn1-00138', 'gn1-00140'],
   see_also_vocab: [],
@@ -228,9 +228,9 @@ window.grammarN1_Expressions = [
   desc: '<b>〜ものとみなす</b> menyatakan bahwa sesuatu secara resmi digolongkan, diperlakukan, atau dianggap sebagai hal tertentu — terlepas dari kondisi aktualnya. Digunakan dalam konteks hukum, regulasi, dan dokumen resmi untuk menetapkan suatu fiksi hukum atau standar klasifikasi.',
   nuance: 'Dibandingkan dengan 〜ものとする (yang menetapkan aturan atau kewajiban), 〜ものとみなす lebih berfokus pada klasifikasi atau penggolongan. Ini adalah "fiksi hukum" — bahkan jika kondisi aktualnya berbeda, secara hukum diperlakukan seolah-olah memenuhi kondisi tersebut. Eksklusif untuk bahasa hukum dan birokratis.',
   examples: [
-    { jp: '届け出がない場合、同意したものとみなす。', id: 'Apabila tidak ada pemberitahuan, dianggap telah menyetujui.' },
-    { jp: '期日までに返答がない場合、辞退したものとみなします。', id: 'Apabila tidak ada jawaban hingga batas waktu, akan dianggap mengundurkan diri.' },
-    { jp: '本規約に同意した場合、成人と同等の資格を持つものとみなす。', id: 'Apabila menyetujui ketentuan ini, akan dianggap memiliki kualifikasi setara orang dewasa.' }
+    { jp: '届け出がない場合、同意した<b>ものとみなす</b>。', id: 'Apabila tidak ada pemberitahuan, dianggap telah menyetujui.' },
+    { jp: '期日までに返答がない場合、辞退した<b>ものとみなします</b>。', id: 'Apabila tidak ada jawaban hingga batas waktu, akan dianggap mengundurkan diri.' },
+    { jp: '本規約に同意した場合、成人と同等の資格を持つ<b>ものとみなす</b>。', id: 'Apabila menyetujui ketentuan ini, akan dianggap memiliki kualifikasi setara orang dewasa.' }
   ],
   see_also_grammar: ['gn1-00138', 'gn1-00139'],
   see_also_vocab: [],

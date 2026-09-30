@@ -12,7 +12,7 @@ Setiap fase punya **definisi selesai** yang jelas — Integrator tidak boleh dec
 ---
 
 ## Fase 1 — Stabilisasi
-**Status: 🟡 AKTIF SEKARANG**
+**Status: ✅ SELESAI**
 **Tujuan: App yang sudah ada harus berfungsi sempurna tanpa bug.**
 
 Selama masih ada bug kritis, jangan tambah fitur baru. Ini adalah fase paling penting karena fondasi yang rapuh akan merusak semua fase berikutnya.
@@ -33,7 +33,7 @@ Semua task berlabel 🔴 KRITIS di _MAP.md sudah ✅ APPROVED oleh Agent 6 QA.
 ---
 
 ## Fase 2 — Konten Lengkap
-**Status: 🔴 Belum mulai**
+**Status: 🟡 AKTIF SEKARANG**
 **Tujuan: Konten yang ada terasa premium dan lengkap sebelum ekspansi.**
 
 Jangan mulai fase ini sebelum Fase 1 selesai.
@@ -54,6 +54,8 @@ Semua entry vocab N4-N5 punya examples[] minimal 1 kalimat. Book index minimal 1
 
 ## Fase 3 — Local Backup & Sync
 **Status: 🔴 Belum mulai**
+> **Catatan:** Backup & restore lokal sudah diimplementasikan (`public/js/backup-restore.js`).
+
 **Tujuan: User tidak kehilangan progress meski ganti device.**
 
 Jangan mulai fase ini sebelum Fase 2 cukup stabil (minimal N4-N5 selesai).
@@ -74,6 +76,8 @@ User bisa export progress, pindah device, import, dan semua progress kembali sep
 
 ## Fase 4 — Personalisasi & Gamifikasi
 **Status: 🔴 Belum mulai**
+> **Catatan:** Gamifikasi, FSRS, onboarding, dan Kebun Mastery sudah diimplementasikan (`public/js/gamification.js`, `public/js/fsrs.js`, `public/js/onboarding.js`, `public/js/kebun.js`).
+
 **Tujuan: App terasa personal dan membuat user ingin terus belajar.**
 
 Jangan mulai fase ini sebelum Fase 3 selesai.
