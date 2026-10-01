@@ -15,16 +15,17 @@ window.grammarN5_Desire_Social = [
     cat        : 'desire-want',
     connection : 'V-ます語幹 + たい',
     desc       : '<b>〜たい</b> menyatakan keinginan si pembicara untuk melakukan sesuatu. Berperilaku seperti adjektif-i.',
-    nuance     : 'Untuk menyatakan keinginan orang ketiga, gunakan 〜たがる.',
+    nuance: null,
     examples   : [
       { jp: 'にほんへ<b>いきたい</b>です。', id: 'Ingin pergi ke Jepang.' },
       { jp: 'なにを<b>たべたい</b>ですか。', id: 'Mau makan apa?' },
     ],
+    confusion_pairs: ['gn3-00135', 'gn5-00041', 'gn5-00077', 'gn4-00033', 'gn4-00069', 'gn4-00045', 'gn3-00076', 'gn2-00008', 'gn2-00158', 'gn2-00247'],
     see_also_grammar : ['gn5-00041'],
     see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
+    register: null,
+    exceptions: null,
+    notes: null,
   },
 
 {
@@ -36,16 +37,17 @@ window.grammarN5_Desire_Social = [
     cat        : 'desire-want',
     connection : 'V-ます語幹 + たがる',
     desc       : '<b>〜たがる</b> digunakan untuk menyatakan keinginan orang ketiga, berdasarkan pengamatan perilaku atau sikapnya.',
-    nuance     : null,
+    nuance: null,
     examples   : [
       { jp: 'こどもはおかし<b>をたべたがっています</b>。', id: 'Anak itu sepertinya ingin makan kue.' },
       { jp: 'かれはもっとねむり<b>たがっている</b>。', id: 'Sepertinya dia ingin tidur lebih lama.' },
     ],
+    confusion_pairs: ['gn5-00040', 'gn3-00135'],
     see_also_grammar : ['gn5-00040'],
     see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
+    register: null,
+    exceptions: null,
+    notes: null,
   }
 
 ];

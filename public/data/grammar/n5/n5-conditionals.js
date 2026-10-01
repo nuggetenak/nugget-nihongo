@@ -15,16 +15,17 @@ window.grammarN5_Conditionals = [
     cat        : 'conditional-tara',
     connection : 'Vた → Vたら / Adjかった → Adjかったら / N + だったら',
     desc       : '<b>〜たら</b> menyatakan kondisi atau urutan: "kalau...", "jika...", "setelah...". Bisa untuk kondisi hipotetis maupun nyata.',
-    nuance     : 'Lebih fleksibel dari 〜と dan 〜ば. Paling sering digunakan di percakapan.',
+    nuance: null,
     examples   : [
       { jp: 'うちに<b>かえったら</b>、でんわします。', id: 'Kalau sudah sampai rumah, saya akan menelepon.' },
       { jp: 'やすかっ<b>たら</b>かいます。', id: 'Kalau murah, saya beli.' },
     ],
+    confusion_pairs: ['gn5-00049', 'gn4-00035', 'gn5-00048', 'gn4-00016', 'gn2-00019', 'gn2-00187', 'gn1-00014', 'gn1-00190'],
     see_also_grammar : ['gn5-00048', 'gn5-00049'],
     see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
+    register: null,
+    exceptions: null,
+    notes: null,
   },
 
 {
@@ -36,16 +37,17 @@ window.grammarN5_Conditionals = [
     cat        : 'conditional-tara',
     connection : 'V plain / Adj plain + と',
     desc       : '<b>〜と</b> menyatakan kondisi yang secara otomatis atau selalu menghasilkan akibat tertentu. Digunakan untuk fakta alami, petunjuk arah, atau kondisi yang pasti.',
-    nuance     : 'Tidak digunakan di kalimat yang melibatkan kemauan/permintaan di klausa hasil.',
+    nuance: null,
     examples   : [
       { jp: 'みぎに<b>まがると</b>、こうえんがあります。', id: 'Kalau belok kanan, ada taman.' },
       { jp: 'はるになる<b>と</b>、さくらがさきます。', id: 'Kalau musim semi tiba, bunga sakura mekar.' },
     ],
+    confusion_pairs: ['gn5-00047', 'gn5-00049'],
     see_also_grammar : ['gn5-00047', 'gn5-00049'],
     see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
+    register: null,
+    exceptions: null,
+    notes: null,
   },
 
 {
@@ -57,16 +59,17 @@ window.grammarN5_Conditionals = [
     cat        : 'conditional-tara',
     connection : 'V → V-ba form (e.g. いく → いけば) / Adj → Adj-ければ',
     desc       : '<b>〜ば</b> menyatakan kondisi hipotetis: "kalau...", "seandainya...". Sering digunakan dengan nuansa nasihat atau kondisi yang harus dipenuhi.',
-    nuance     : null,
+    nuance: null,
     examples   : [
       { jp: 'はやくおき<b>れば</b>、おくれません。', id: 'Kalau bangun cepat, tidak akan terlambat.' },
       { jp: 'やすけ<b>れば</b>かいたいです。', id: 'Kalau murah, ingin beli.' },
     ],
+    confusion_pairs: ['gn5-00047', 'gn5-00048', 'gn4-00035', 'gn4-00036', 'gn3-00013', 'gn2-00124'],
     see_also_grammar : ['gn5-00047', 'gn5-00048'],
     see_also_vocab   : [],
-    register   : null,
-    exceptions : 'いい → よければ',
-    notes      : null,
+    register: null,
+    exceptions: null,
+    notes: null,
   }
 
 ];

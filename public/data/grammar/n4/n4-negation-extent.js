@@ -15,16 +15,17 @@ window.grammarN4_Negation_Extent = [
     cat        : 'extent-degree',
     connection : 'V-ます語幹 + やすい',
     desc       : '<b>〜やすい</b> menyatakan bahwa suatu tindakan mudah dilakukan atau bahwa sesuatu cenderung terjadi. Berperilaku seperti adjektif-i.',
-    nuance     : null,
+    nuance: null,
     examples   : [
       { jp: 'この辞書は使い<b>やすい</b>です。', id: 'Kamus ini mudah digunakan.' },
       { jp: '彼女の説明は分かり<b>やすかった</b>。', id: 'Penjelasannya mudah dipahami.' },
     ],
+    confusion_pairs: ['gn4-00045', 'gn2-00246'],
     see_also_grammar : ['gn4-00045'],
     see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
+    register: null,
+    exceptions: null,
+    notes: null,
   },
 
 {
@@ -36,16 +37,17 @@ window.grammarN4_Negation_Extent = [
     cat        : 'extent-degree',
     connection : 'V-ます語幹 + にくい',
     desc       : '<b>〜にくい</b> menyatakan bahwa suatu tindakan sulit dilakukan.',
-    nuance     : null,
+    nuance: null,
     examples   : [
       { jp: 'この漢字は書き<b>にくい</b>です。', id: 'Kanji ini sulit ditulis.' },
       { jp: '狭くて住み<b>にくい</b>アパートです。', id: 'Ini apartemen yang sempit dan susah untuk ditinggali.' },
     ],
+    confusion_pairs: ['gn4-00044', 'gn5-00040'],
     see_also_grammar : ['gn4-00044'],
     see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : null,
+    register: null,
+    exceptions: null,
+    notes: null,
   },
 
 {
@@ -57,16 +59,16 @@ window.grammarN4_Negation_Extent = [
     cat        : 'extent-degree',
     connection : 'V-ます語幹 / Adj-i語幹 / Adj-na + すぎる',
     desc       : '<b>〜すぎる</b> menyatakan bahwa sesuatu melebihi batas yang diinginkan atau wajar: "terlalu".',
-    nuance     : null,
+    nuance: null,
     examples   : [
       { jp: 'このカレーは辛<b>すぎます</b>。', id: 'Kari ini terlalu pedas.' },
       { jp: '昨日飲み<b>すぎた</b>。', id: 'Kemarin terlalu banyak minum.' },
     ],
     see_also_grammar : [],
     see_also_vocab   : [],
-    register   : null,
-    exceptions : 'いい → よすぎる',
-    notes      : null,
+    register: null,
+    exceptions: null,
+    notes: null,
   }
 
 ];

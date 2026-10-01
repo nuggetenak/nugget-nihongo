@@ -12,7 +12,7 @@ window.grammarN1_Modality = [
   cat: 'conjecture-possibility',
   connection: 'V-plain / Adj-plain / N + とみえて / とみえる',
   desc: '<b>〜とみえる</b> menyatakan dugaan yang didasarkan pada bukti yang dapat diamati secara langsung. <b>〜とみえて</b> digunakan sebagai klausa penghubung: "kelihatannya X, karenanya Y."',
-  nuance: 'Berbeda dari 〜らしい atau 〜ようだ yang lebih umum, 〜とみえる/とみえて menekankan bahwa dugaan berasal dari observasi konkret. Lebih formal, sering muncul dalam tulisan naratif dan laporan.',
+  nuance: null,
   examples: [
     { jp: '疲れている<b>とみえて</b>、彼はすぐ眠ってしまった。', id: 'Kelihatannya dia kelelahan, karena langsung tertidur.' },
     { jp: '気に入った<b>とみえて</b>、何度も読み返している。', id: 'Tampaknya dia menyukainya, karena berkali-kali dibaca ulang.' },
@@ -20,8 +20,8 @@ window.grammarN1_Modality = [
   ],
   see_also_grammar: ['gn1-00021'],
   see_also_vocab: [],
-  confusion_pairs: ['gn1-00021'],
-  register: 'written', exceptions: null, notes: null,
+  confusion_pairs: ['gn4-00085', 'gn1-00021'],
+  register: null, exceptions: null, notes: null,
   provenance: 'jlpt-corpus', added_v: 'v15'
 },
 
@@ -31,7 +31,7 @@ window.grammarN1_Modality = [
   cat: 'sentence-final-modality',
   connection: 'Adj-i / Adj-na（な形）+ 限りだ',
   desc: '<b>〜限りだ</b> mengungkapkan perasaan yang sangat intens dari sudut pandang orang pertama — baik positif maupun negatif. "Sungguh X rasanya." Biasanya digunakan untuk emosi seperti kebahagiaan, keharuan, rasa malu, atau sedih.',
-  nuance: 'Hanya untuk emosi orang pertama — tidak bisa menggambarkan perasaan orang lain. Berbeda dari 〜を限りに yang bermakna temporal, 〜限りだ murni ekspresi perasaan. Terasa formal dan khidmat, sering dalam sambutan resmi.',
+  nuance: null,
   examples: [
     { jp: 'このような賞をいただき、光栄の<b>限りです</b>。', id: 'Menerima penghargaan seperti ini, sungguh merupakan kehormatan yang tiada tara.' },
     { jp: '皆さんの応援が、うれしい<b>限りです</b>。', id: 'Dukungan dari semua orang ini sungguh membahagiakan.' },
@@ -39,8 +39,8 @@ window.grammarN1_Modality = [
   ],
   see_also_grammar: ['gn1-00029'],
   see_also_vocab: [],
-  confusion_pairs: ['gn1-00029'],
-  register: 'formal', exceptions: null, notes: null,
+  confusion_pairs: ['gn2-00073', 'gn1-00029'],
+  register: null, exceptions: null, notes: null,
   provenance: 'jlpt-corpus', added_v: 'v15'
 },
 
@@ -50,7 +50,7 @@ window.grammarN1_Modality = [
   cat: 'sentence-final-modality',
   connection: 'V-dict + べくして + V (kata kerja sama)',
   desc: '<b>〜べくして</b> menyatakan bahwa hasil Y terjadi karena memang sudah seharusnya demikian — bukan kebetulan, melainkan keniscayaan logis atau alami. Selalu menggunakan kata kerja yang sama di depan dan belakang.',
-  nuance: 'Berbeda dari べく yang menyatakan tujuan — べくして menyatakan bahwa kejadian itu sudah "tertulis" atau "wajar" terjadi. Sering dipakai untuk menggambarkan kemenangan, kegagalan, atau peristiwa yang tampak tak terelakkan.',
+  nuance: null,
   examples: [
     { jp: '彼は勝つ<b>べくして</b>勝った — 準備が違った。', id: 'Dia menang karena memang sudah seharusnya menang — persiapannya berbeda.' },
     { jp: 'あの事故は起こる<b>べくして</b>起きた悲劇だった。', id: 'Kecelakaan itu adalah tragedi yang sudah seharusnya terjadi.' },
@@ -58,8 +58,8 @@ window.grammarN1_Modality = [
   ],
   see_also_grammar: ['gn1-00050'],
   see_also_vocab: [],
-  confusion_pairs: ['gn1-00050'],
-  register: 'literary', exceptions: null, notes: null,
+  confusion_pairs: ['gn1-00050', 'gn3-00175', 'gn3-00177'],
+  register: null, exceptions: null, notes: null,
   provenance: 'jlpt-corpus', added_v: 'v15'
 },
 
@@ -69,7 +69,7 @@ window.grammarN1_Modality = [
   cat: 'permission-prohibition',
   connection: 'V-dict + まじき + N',
   desc: '<b>〜まじき</b> adalah bentuk klasik (dari まじ = larangan klasik) yang mengekspresikan sesuatu yang seharusnya tidak dilakukan oleh seseorang dalam posisi atau status tertentu.',
-  nuance: 'Sangat literary dan formal — hampir eksklusif dalam tulisan serius, hukum, atau editorial. Kata benda yang mengikutinya biasanya adalah jabatan atau status (教師、医師、指導者, dll). Setara modern: 〜てはいけない / すべきでない が jauh lebih lemah.',
+  nuance: null,
   examples: [
     { jp: 'それは教師にある<b>まじき</b>行為だ。', id: 'Itu adalah tindakan yang tidak pantas dilakukan oleh seorang guru.' },
     { jp: '指導者にある<b>まじき</b>発言が批判を呼んだ。', id: 'Pernyataan yang tidak patut diucapkan pemimpin itu menuai kritik.' },
@@ -77,8 +77,8 @@ window.grammarN1_Modality = [
   ],
   see_also_grammar: ['gn1-00053'],
   see_also_vocab: [],
-  confusion_pairs: ['gn1-00053'],
-  register: 'literary', exceptions: null, notes: null,
+  confusion_pairs: ['gn2-00070', 'gn1-00121', 'gn4-00027', 'gn1-00053', 'gn1-00116'],
+  register: null, exceptions: null, notes: null,
   provenance: 'jlpt-corpus', added_v: 'v15'
 },
 
@@ -88,7 +88,7 @@ window.grammarN1_Modality = [
   cat: 'sentence-final-modality',
   connection: 'N + ともあろう + N (jabatan/status)',
   desc: '<b>〜ともあろう</b> mengekspresikan kekecewaan atau kecaman bahwa seseorang dengan status/kaliber X melakukan sesuatu yang tidak sesuai dengan harapan. Menekankan kontras antara status tinggi dan tindakan yang rendah.',
-  nuance: 'Selalu bernuansa kecaman atau kritik. N yang digunakan adalah jabatan/status yang dihormati (社長、教授、プロ選手, dll). Diikuti klausa negatif atau ekspresi penyesalan. Berbeda dari まじき yang lebih tentang larangan prinsipil.',
+  nuance: null,
   examples: [
     { jp: '社長<b>ともあろう</b>人が、そんな失礼なことを言うとは。', id: 'Tidak disangka seseorang sekaliber direktur utama mengucapkan hal yang tidak sopan seperti itu.' },
     { jp: 'プロ<b>ともあろう</b>者が、基本的なミスをするとは情けない。', id: 'Sungguh memalukan bahwa seseorang yang mengaku profesional melakukan kesalahan dasar seperti itu.' },
@@ -96,8 +96,8 @@ window.grammarN1_Modality = [
   ],
   see_also_grammar: ['gn1-00052'],
   see_also_vocab: [],
-  confusion_pairs: ['gn1-00052'],
-  register: 'literary', exceptions: null, notes: null,
+  confusion_pairs: ['gn1-00052', 'gn1-00116', 'gn2-00122'],
+  register: null, exceptions: null, notes: null,
   provenance: 'jlpt-corpus', added_v: 'v15'
 },
 
@@ -107,7 +107,7 @@ window.grammarN1_Modality = [
   cat: 'obligation-necessity',
   connection: 'V-neg (ず形) + にはおかない',
   desc: '<b>〜ずにはおかない</b> menyatakan bahwa sesuatu pasti terjadi atau dilakukan — tidak bisa dihindari, baik karena dorongan kuat dari dalam maupun kekuatan luar yang mendesak.',
-  nuance: 'Ada dua nuansa: (1) "sesuatu yang menimbulkan reaksi kuat" — X ずにはおかない = X pasti membuatmu bereaksi; (2) "tekad yang tidak tergoyahkan" — subjek pasti akan melakukan X. Berbeda dari ないではいられない yang lebih personal/emosional — ずにはおかない lebih kuat dan sering tentang efek pada orang lain.',
+  nuance: null,
   examples: [
     { jp: 'この映画は観る者を感動させ<b>ずにはおかない</b>。', id: 'Film ini pasti akan mengharukan siapapun yang menontonnya.' },
     { jp: '彼の演奏は聴く人を感動させ<b>ずにはおかない</b>力があった。', id: 'Permainannya memiliki kekuatan yang pasti menggerakkan hati siapapun yang mendengar.' },
@@ -115,8 +115,8 @@ window.grammarN1_Modality = [
   ],
   see_also_grammar: [],
   see_also_vocab: [],
-  confusion_pairs: [],
-  register: 'written', exceptions: null, notes: null,
+  confusion_pairs: ['gn2-00072', 'gn1-00072'],
+  register: null, exceptions: null, notes: null,
   provenance: 'jlpt-corpus', added_v: 'v15'
 },
 
@@ -127,15 +127,15 @@ window.grammarN1_Modality = [
   cat: 'obligation-necessity',
   connection: 'V-nai-stem + ずにはすまない (suru → せずにはすまない)',
   desc: '<b>〜ずにはすまない</b> menyatakan bahwa seseorang tidak dapat menghindari suatu tindakan karena tekanan sosial, moral, atau situasional. Ada perasaan bahwa norma atau harapan orang lain mengharuskan tindakan tersebut.',
-  nuance: 'Menekankan tekanan dari luar diri sendiri — norma sosial, harapan orang lain, atau konsekuensi moral. Berbeda dari ないわけにはいかない (alasan logis) dan ないではいられない (dorongan dari dalam). Formal-netral.',
+  nuance: null,
   examples: [
     { jp: '迷惑をかけた以上、謝ら<b>ずにはすまない</b>。', id: 'Karena sudah merepotkan, tidak bisa begitu saja tanpa meminta maaf.' },
     { jp: 'こんな大きなミスをしたら、責任を取ら<b>ずにはすまない</b>だろう。', id: 'Kalau sudah membuat kesalahan sebesar ini, pasti tidak bisa lepas dari tanggung jawab.' }
   ],
   see_also_grammar: ['gn1-00069', 'gn1-00072'],
   see_also_vocab: [],
-  confusion_pairs: ['gn1-00069', 'gn1-00072'],
-  register: 'formal', exceptions: null, notes: null,
+  confusion_pairs: ['gn1-00069', 'gn1-00072', 'gn1-00133'],
+  register: null, exceptions: null, notes: null,
   provenance: 'jlpt-corpus', added_v: 'v15'
 },
 
@@ -146,14 +146,14 @@ window.grammarN1_Modality = [
   cat: 'obligation-necessity',
   connection: 'V-nai + ではすまない',
   desc: '<b>〜ないではすまない</b> memiliki makna yang sangat mirip dengan 〜ずにはすまない — menyatakan bahwa suatu tindakan tidak dapat dihindari karena tuntutan sosial atau moral.',
-  nuance: 'Secara makna hampir identik dengan ずにはすまない. Perbedaan halus: ないではすまない sedikit lebih umum dalam percakapan modern dan lebih ringan terdengar; ずにはすまない terasa lebih formal/tertulis. Keduanya menekankan tekanan eksternal.',
+  nuance: null,
   examples: [
     { jp: 'こんなことをされたら、怒ら<b>ないではすまない</b>。', id: 'Kalau diperlakukan seperti ini, tidak mungkin bisa tidak marah.' },
     { jp: '彼女に直接謝ら<b>ないではすまない</b>状況だ。', id: 'Ini situasi di mana tidak bisa tidak minta maaf langsung padanya.' }
   ],
   see_also_grammar: ['gn1-00068', 'gn1-00072'],
   see_also_vocab: [],
-  confusion_pairs: ['gn1-00068'],
+  confusion_pairs: ['gn1-00068', 'gn1-00072', 'gn5-00045'],
   register: null, exceptions: null, notes: null,
   provenance: 'jlpt-corpus', added_v: 'v15'
 },
@@ -165,15 +165,15 @@ window.grammarN1_Modality = [
   cat: 'sentence-final-modality',
   connection: 'N (kata benda perasaan) + を禁じ得ない',
   desc: '<b>〜を禁じ得ない</b> menyatakan bahwa seseorang tidak mampu menahan perasaan tertentu yang muncul secara spontan. Kata benda yang mendahului hampir selalu adalah perasaan: 感動, 涙, 怒り, 遺憾, 痛恨.',
-  nuance: 'Sangat formal dan tertulis — lazim dalam pernyataan resmi, pidato, atau jurnalisme. Tidak digunakan dalam percakapan biasa. Berbeda dari にたえない — 禁じ得ない menekankan ketidakmampuan mengendalikan perasaan yang muncul, bukan evaluasi kualitas.',
+  nuance: null,
   examples: [
     { jp: 'その報道を聞いて、怒り<b>を禁じ得なかった</b>。', id: 'Mendengar laporan itu, tidak bisa menahan amarah.' },
     { jp: '被災地の映像を見て、涙<b>を禁じ得ない</b>。', id: 'Melihat tayangan daerah bencana, tidak kuasa menahan air mata.' }
   ],
   see_also_grammar: ['gn1-00070', 'gn1-00064'],
   see_also_vocab: [],
-  confusion_pairs: ['gn1-00064', 'gn1-00070'],
-  register: 'written', exceptions: null, notes: null,
+  confusion_pairs: ['gn1-00131', 'gn1-00064', 'gn2-00072'],
+  register: null, exceptions: null, notes: null,
   provenance: 'jlpt-corpus', added_v: 'v15'
 },
 
@@ -184,14 +184,14 @@ window.grammarN1_Modality = [
   cat: 'obligation-necessity',
   connection: 'V-nai + わけにはいかない',
   desc: '<b>〜ないわけにはいかない</b> menyatakan bahwa suatu tindakan tidak bisa dihindari karena ada alasan kuat — logis, moral, atau sosial — yang mengharuskannya. Seseorang merasa tidak mungkin melewatkan atau menolak tindakan tersebut.',
-  nuance: 'Menekankan alasan yang jelas dan logis mengapa tindakan itu wajib dilakukan. Berbeda dari ずにはすまない (tekanan norma sosial dari luar) dan ないではいられない (dorongan emosional dari dalam). Ini lebih rasional dan umum penggunaannya.',
+  nuance: null,
   examples: [
     { jp: '彼には本当のことを話さ<b>ないわけにはいかない</b>。', id: 'Tidak bisa tidak memberitahu dia yang sebenarnya.' },
     { jp: '招待されたのだから、行か<b>ないわけにはいかない</b>。', id: 'Karena sudah diundang, tidak bisa tidak pergi.' }
   ],
   see_also_grammar: ['gn1-00068', 'gn1-00069', 'gn1-00073'],
   see_also_vocab: [],
-  confusion_pairs: ['gn1-00068', 'gn1-00073'],
+  confusion_pairs: ['gn1-00069', 'gn1-00133', 'gn3-00036', 'gn1-00057', 'gn1-00068'],
   register: null, exceptions: null, notes: null,
   provenance: 'jlpt-corpus', added_v: 'v15'
 },
@@ -203,15 +203,15 @@ window.grammarN1_Modality = [
   cat: 'sentence-final-modality',
   connection: 'V-nai-stem + ずにはおかない（する→せずにはおかない）',
   desc: '<b>〜ずにはおかない</b> menyatakan dua makna utama: (1) sesuatu pasti/niscaya menimbulkan efek tertentu pada orang lain atau keadaan — efek yang tak terhindarkan; (2) tekad kuat pembicara bahwa ia tidak akan membiarkan sesuatu terjadi tanpa tindakan. Kata kerja sebelum pola ini hampir selalu bersifat kausal.',
-  nuance: 'Berbeda dari 〜ずにはいられない (tidak tahan untuk tidak melakukan sesuatu — fokus pada dorongan diri sendiri yang tak terkendali), 〜ずにはおかない menekankan efek yang ditimbulkan pada pihak lain atau hasil yang tak terelakkan. Makna (1): この映画は人を感動させ<b>ずにはおかない</b> = film ini pasti membuat orang tersentuh. Makna (2): 謝らせずにはおかない = aku pasti akan membuatnya minta maaf.',
+  nuance: null,
   examples: [
     { jp: '彼女の演技は、観客を感動させ<b>ずにはおかない</b>ほど素晴らしかった。', id: 'Aktingnya begitu luar biasa sehingga pasti membuat para penonton tersentuh tanpa terkecuali.' },
     { jp: 'あんな不正を見たら、指摘せ<b>ずにはおかない</b>。', id: 'Kalau melihat kecurangan seperti itu, aku pasti tidak akan membiarkannya tanpa menegur.' },
   ],
   see_also_grammar: [],
   see_also_vocab: [],
-  confusion_pairs: [],
-  register: 'formal', exceptions: null, notes: 'する動詞 → せずにはおかない（例：批判する→批判せずにはおかない）。〜ずにはいられない との違いに注意。',
+  confusion_pairs: ['gn2-00072', 'gn1-00133'],
+  register: null, exceptions: null, notes: null,
   provenance: 'jlpt-corpus', added_v: 'v15'
 },
 
@@ -222,7 +222,7 @@ window.grammarN1_Modality = [
   cat: 'obligation-necessity',
   connection: 'N + たるもの',
   desc: '<b>〜たるもの</b> menyatakan bahwa seseorang yang memegang posisi, jabatan, atau peran tertentu seharusnya berperilaku sesuai standar yang diharapkan dari posisi tersebut. Biasanya diikuti oleh pernyataan tentang kewajiban atau standar moral/profesional.',
-  nuance: 'Sangat formal dan terasa seperti ceramah moral. Mengandung nuansa "sudah sepatutnya" atau "layaknya". Lebih kuat dari 〜として dan menekankan tanggung jawab yang melekat pada jabatan. Sering digunakan untuk menegur atau mengingatkan standar perilaku.',
+  nuance: null,
   examples: [
     { jp: '教師<b>たるもの</b>、常に公正であるべきだ。', id: 'Sebagai seorang guru, sudah sepatutnya selalu bersikap adil.' },
     { jp: '社会人<b>たるもの</b>、礼儀を忘れてはならない。', id: 'Sebagai orang yang telah terjun ke masyarakat, jangan pernah melupakan sopan santun.' },
@@ -230,8 +230,8 @@ window.grammarN1_Modality = [
   ],
   see_also_grammar: ['gn1-00117'],
   see_also_vocab: [],
-  confusion_pairs: [],
-  register: 'formal', exceptions: null, notes: null,
+  confusion_pairs: ['gn3-00144', 'gn1-00121', 'gn1-00052', 'gn1-00053', 'gn1-00117'],
+  register: null, exceptions: null, notes: null,
   provenance: 'jlpt-corpus', added_v: 'v15'
 },
 
@@ -242,7 +242,7 @@ window.grammarN1_Modality = [
   cat: 'sentence-final-modality',
   connection: 'V-te + やまない',
   desc: '<b>〜てやまない</b> menyatakan bahwa perasaan atau sikap tertentu terus berlanjut tanpa henti karena sangat kuat. Digunakan khusus untuk ekspresi perasaan positif yang mendalam seperti cinta, harapan, kekaguman, atau dukungan. Memberikan kesan ketulusan dan kedalaman emosional.',
-  nuance: 'Hampir selalu digunakan dengan kata kerja emosi positif: 愛してやまない (mencintai sepenuh hati), 敬ってやまない (senantiasa menghormati), 願ってやまない (terus-menerus berharap). Tidak lazim dengan emosi negatif. Lebih kuat dan formal dari 〜続ける untuk ekspresi perasaan.',
+  nuance: null,
   examples: [
     { jp: '私は故郷を愛し<b>てやまない</b>。', id: 'Aku mencintai kampung halamanku dari lubuk hati yang paling dalam.' },
     { jp: '皆様のご活躍を願っ<b>てやまない</b>。', id: 'Kami terus-menerus mendoakan kesuksesan dan kemajuan Anda semua.' },
@@ -250,8 +250,8 @@ window.grammarN1_Modality = [
   ],
   see_also_grammar: ['gn1-00132'],
   see_also_vocab: [],
-  confusion_pairs: [],
-  register: 'formal', exceptions: 'Hampir eksklusif untuk perasaan positif — tidak lazim untuk emosi negatif.', notes: null,
+  confusion_pairs: ['gn1-00071', 'gn2-00073', 'gn1-00132'],
+  register: null, exceptions: null, notes: null,
   provenance: 'jlpt-corpus', added_v: 'v15'
 },
 
@@ -262,7 +262,7 @@ window.grammarN1_Modality = [
   cat: 'sentence-final-modality',
   connection: 'N (ekspresi emosi) + を禁じ得ない',
   desc: '<b>〜を禁じ得ない</b> menyatakan bahwa pembicara tidak mampu menahan atau menekan suatu perasaan karena begitu kuat. Berbeda dari 〜てやまない, pola ini sering digunakan untuk ekspresi emosi baik positif maupun negatif, termasuk indignasi, haru, kekhawatiran, atau simpati.',
-  nuance: 'Kata benda yang mendahului biasanya adalah nomina emosi: 怒りを禁じ得ない (tidak bisa menahan amarah), 涙を禁じ得ない (tidak bisa menahan air mata), 驚きを禁じ得ない (tidak bisa menyembunyikan rasa terkejut). Lebih formal dari 〜ずにはいられない dan terasa lebih sastra.',
+  nuance: null,
   examples: [
     { jp: 'その知らせを聞いて、悲しみ<b>を禁じ得なかった</b>。', id: 'Setelah mendengar kabar itu, aku tidak bisa menahan rasa sedih.' },
     { jp: '子どもたちの努力に、感動<b>を禁じ得ない</b>。', id: 'Menghadapi usaha keras anak-anak itu, aku tidak bisa menahan rasa haru.' },
@@ -270,8 +270,8 @@ window.grammarN1_Modality = [
   ],
   see_also_grammar: ['gn1-00131', 'gn1-00130'],
   see_also_vocab: [],
-  confusion_pairs: [],
-  register: 'formal', exceptions: null, notes: null,
+  confusion_pairs: ['gn1-00131', 'gn1-00064', 'gn2-00072'],
+  register: null, exceptions: null, notes: null,
   provenance: 'jlpt-corpus', added_v: 'v15'
 },
 
@@ -282,7 +282,7 @@ window.grammarN1_Modality = [
   cat: 'obligation-necessity',
   connection: 'V-nai-stem + ざるを得ない (suru → せざるを得ない)',
   desc: '<b>〜ざるを得ない</b> menyatakan bahwa meskipun tidak diinginkan, seseorang terpaksa melakukan sesuatu karena tekanan situasi atau tidak ada pilihan lain. Mengandung nuansa keterpaksaan dan ketidakleluasaan.',
-  nuance: 'Lebih formal dari 〜しかない atau 〜なければならない. Perbedaan utama: 〜ざるを得ない menekankan bahwa pilihan tersebut tidak disukai namun terpaksa diambil (keterpaksaan dari luar), sementara 〜なければならない lebih netral tentang sumber kewajiban. Sangat umum dalam konteks bisnis, hukum, dan tulisan formal.',
+  nuance: null,
   examples: [
     { jp: '証拠が揃った以上、容疑者を逮捕<b>せざるを得ない</b>。', id: 'Karena buktinya sudah lengkap, tidak ada pilihan selain menangkap tersangka.' },
     { jp: '予算の削減で、プロジェクトを縮小<b>せざるを得なくなった</b>。', id: 'Karena pemotongan anggaran, kami terpaksa memperkecil skala proyek.' },
@@ -290,8 +290,8 @@ window.grammarN1_Modality = [
   ],
   see_also_grammar: ['gn1-00134'],
   see_also_vocab: [],
-  confusion_pairs: [],
-  register: 'formal', exceptions: null, notes: 'Konjugasi: 書く→書かざるを得ない、する→せざるを得ない、来る→来ざるを得ない.',
+  confusion_pairs: ['gn3-00036', 'gn1-00072', 'gn3-00138', 'gn2-00072', 'gn2-00082', 'gn2-00155', 'gn2-00179', 'gn2-00180', 'gn1-00134', 'gn1-00068', 'gn1-00081', 'gn1-00073'],
+  register: null, exceptions: null, notes: null,
   provenance: 'jlpt-corpus', added_v: 'v15'
 },
 
@@ -304,7 +304,7 @@ window.grammarN1_Modality = [
   cat: 'hearsay-report',
   connection: 'V-plain / N + と見られる',
   desc: '<b>〜と見られる</b> menyatakan bahwa sesuatu dipandang, diperkirakan, atau dinilai demikian oleh banyak orang atau oleh pengamat secara umum. Sering digunakan dalam berita, laporan, dan analisis untuk menyatakan perkiraan atau penilaian yang belum dikonfirmasi secara resmi.',
-  nuance: 'Berbeda dari 〜とされる (gn1-00149) yang menyatakan anggapan resmi atau konsensus yang sudah mapan, 〜と見られる lebih bersifat estimasi atau pengamatan dari luar. Sering ditemukan dalam jurnalisme untuk melaporkan informasi yang belum dikonfirmasi (misalnya "diperkirakan korban jiwa mencapai ..."). Lebih subjektif dibanding 〜とされている (gn1-00151).',
+  nuance: null,
   examples: [
     { jp: '事故の原因は機器の故障<b>と見られる</b>。', id: 'Penyebab kecelakaan diperkirakan adalah kerusakan alat.' },
     { jp: '被害総額は数十億円に上る<b>と見られている</b>。', id: 'Total kerugian dipandang bisa mencapai puluhan miliar yen.' },
@@ -312,10 +312,10 @@ window.grammarN1_Modality = [
   ],
   see_also_grammar: ['gn1-00149', 'gn1-00150', 'gn1-00151'],
   see_also_vocab: [],
-  confusion_pairs: ['gn1-00149', 'gn1-00150', 'gn1-00147'],
+  confusion_pairs: ['gn1-00149', 'gn1-00152', 'gn5-00050', 'gn4-00066', 'gn1-00147'],
   register: null,
   exceptions: null,
-  notes: 'Sangat umum dalam bahasa berita dan laporan.',
+  notes: null,
   provenance: 'jlpt-corpus',
   added_v: 'v15',
 },
@@ -329,7 +329,7 @@ window.grammarN1_Modality = [
   cat: 'hearsay-report',
   connection: 'V-plain / N + とされる',
   desc: '<b>〜とされる</b> menyatakan bahwa sesuatu dianggap atau digolongkan demikian berdasarkan penilaian umum, konvensi, atau otoritas. Menyampaikan anggapan yang bersifat konsensus atau sudah diterima, tanpa harus menyebutkan sumber spesifik.',
-  nuance: 'Lebih kuat dari 〜といわれる (gn1-00150) yang sekadar menyampaikan "kata orang". 〜とされる mengimplikasikan bahwa anggapan tersebut sudah mapan atau ditetapkan oleh pihak yang memiliki otoritas. Berbeda dari 〜とされている (gn1-00151) yang menyatakan kondisi yang masih berlaku hingga sekarang; 〜とされる lebih umum dan tidak terikat waktu.',
+  nuance: null,
   examples: [
     { jp: 'この地域は危険区域<b>とされる</b>。', id: 'Kawasan ini dianggap sebagai zona berbahaya.' },
     { jp: '彼の発言は問題あり<b>とされた</b>。', id: 'Pernyataannya dinilai bermasalah.' },
@@ -337,7 +337,7 @@ window.grammarN1_Modality = [
   ],
   see_also_grammar: ['gn1-00148', 'gn1-00150', 'gn1-00151'],
   see_also_vocab: [],
-  confusion_pairs: ['gn1-00150', 'gn1-00151', 'gn1-00148'],
+  confusion_pairs: ['gn1-00150', 'gn1-00148', 'gn1-00152', 'gn1-00151'],
   register: null,
   exceptions: null,
   notes: null,
@@ -354,7 +354,7 @@ window.grammarN1_Modality = [
   cat: 'hearsay-report',
   connection: 'V-plain / N + といわれる',
   desc: '<b>〜といわれる</b> menyatakan bahwa sesuatu dikatakan atau dipercaya demikian oleh banyak orang atau oleh tradisi. Menyampaikan informasi yang beredar luas atau diturunkan secara budaya, tanpa mengklaim kebenarannya secara langsung.',
-  nuance: 'Lebih informal dan kurang otoritatif dibanding 〜とされる (gn1-00149). Sementara 〜とされる mengimplikasikan konsensus yang ditetapkan, 〜といわれる sekadar menyampaikan "begitulah yang dikatakan orang". Sering digunakan untuk tradisi, kepercayaan populer, atau informasi yang belum diverifikasi. Mirip dengan "konon" atau "kata orang" dalam bahasa Indonesia.',
+  nuance: null,
   examples: [
     { jp: '富士山は日本の象徴<b>といわれる</b>。', id: 'Gunung Fuji konon adalah simbol Jepang.' },
     { jp: '彼女は天才<b>といわれている</b>が、本人は謙遜している。', id: 'Dia dikatakan sebagai jenius, namun ia sendiri merendah.' },
@@ -362,7 +362,7 @@ window.grammarN1_Modality = [
   ],
   see_also_grammar: ['gn1-00149', 'gn1-00148', 'gn1-00151'],
   see_also_vocab: [],
-  confusion_pairs: ['gn1-00149', 'gn1-00151', 'gn1-00148'],
+  confusion_pairs: ['gn1-00149', 'gn4-00085'],
   register: null,
   exceptions: null,
   notes: null,
@@ -379,7 +379,7 @@ window.grammarN1_Modality = [
   cat: 'hearsay-report',
   connection: 'V-plain / N + とされている',
   desc: '<b>〜とされている</b> menyatakan bahwa suatu anggapan atau penilaian sudah berlaku dan masih diterima hingga saat ini. Menekankan aspek kondisi yang berkelanjutan (〜ている), sehingga menunjukkan bahwa konsensus atau klasifikasi tersebut masih aktif.',
-  nuance: 'Ini adalah bentuk progresif dari 〜とされる (gn1-00149). Sementara 〜とされる bisa merujuk pada penilaian saat itu juga atau umum, 〜とされている secara eksplisit menyatakan bahwa anggapan tersebut masih berlaku sekarang. Sering digunakan dalam teks ilmiah, berita, atau kebijakan yang sedang berjalan.',
+  nuance: null,
   examples: [
     { jp: 'この物質は有害<b>とされている</b>。', id: 'Zat ini saat ini berlaku anggapan bahwa ia berbahaya.' },
     { jp: '彼は業界のパイオニア<b>とされている</b>。', id: 'Ia diakui sebagai pelopor di industri ini.' },
@@ -387,7 +387,7 @@ window.grammarN1_Modality = [
   ],
   see_also_grammar: ['gn1-00149', 'gn1-00150', 'gn1-00148'],
   see_also_vocab: [],
-  confusion_pairs: ['gn1-00149', 'gn1-00152', 'gn1-00150'],
+  confusion_pairs: ['gn1-00149', 'gn2-00206', 'gn2-00205', 'gn1-00152'],
   register: null,
   exceptions: null,
   notes: null,

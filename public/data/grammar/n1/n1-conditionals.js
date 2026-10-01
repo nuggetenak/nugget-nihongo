@@ -12,7 +12,7 @@ window.grammarN1_Conditionals = [
   cat: 'conditional-tara',
   connection: 'N + いかんによって / N + いかんで',
   desc: '<b>〜いかんによって</b> (atau <b>〜いかんで</b>) menyatakan bahwa hasil sepenuhnya bergantung pada isi atau keadaan sesuatu. Sering digunakan dalam pengumuman, surat resmi, dan regulasi.',
-  nuance: 'Jauh lebih formal dari 〜によって biasa. Tidak dipakai dalam percakapan sehari-hari. Versi pendek いかんで sama artinya namun sedikit lebih sering digunakan secara lisan dalam konteks formal.',
+  nuance: null,
   examples: [
     { jp: '試験の結果<b>いかんによって</b>、採用が決まる。', id: 'Keputusan penerimaan ditentukan tergantung pada hasil ujian.' },
     { jp: '今後の対応<b>いかんで</b>、契約を更新するかどうか判断します。', id: 'Keputusan perpanjangan kontrak akan ditentukan tergantung pada tindakan selanjutnya.' },
@@ -20,8 +20,8 @@ window.grammarN1_Conditionals = [
   ],
   see_also_grammar: ['gn1-00002'],
   see_also_vocab: [],
-  confusion_pairs: ['gn1-00002'],
-  register: 'written', exceptions: null, notes: null,
+  confusion_pairs: ['gn2-00054', 'gn1-00168', 'gn1-00002'],
+  register: null, exceptions: null, notes: null,
   provenance: 'jlpt-corpus', added_v: 'v15'
 },
 
@@ -31,7 +31,7 @@ window.grammarN1_Conditionals = [
   cat: 'conditional-tara',
   connection: 'V-stem + ようによっては',
   desc: '<b>〜ようによっては</b> menyatakan bahwa hasil bisa berbeda tergantung pada cara atau metode melakukan X. Menekankan bahwa cara/pendekatan (ように) adalah faktor penentu.',
-  nuance: 'Berbeda dari 次第では yang berfokus pada kondisi/hasil yang tidak pasti — ようによっては berfokus pada cara/metode. Sering dipakai untuk memberi saran atau menunjukkan bahwa ada cara yang lebih baik.',
+  nuance: null,
   examples: [
     { jp: '言い方<b>ようによっては</b>、同じ内容でも相手に伝わり方が変わる。', id: 'Tergantung cara mengatakannya, pesan yang sama bisa tersampaikan dengan cara yang berbeda.' },
     { jp: '使い<b>ようによっては</b>、この道具はとても便利だ。', id: 'Tergantung cara menggunakannya, alat ini bisa sangat berguna.' },
@@ -40,7 +40,7 @@ window.grammarN1_Conditionals = [
   see_also_grammar: ['gn1-00055'],
   see_also_vocab: [],
   confusion_pairs: ['gn1-00055'],
-  register: 'formal', exceptions: null, notes: null,
+  register: null, exceptions: null, notes: null,
   provenance: 'jlpt-corpus', added_v: 'v15'
 },
 
@@ -50,7 +50,7 @@ window.grammarN1_Conditionals = [
   cat: 'conditional-tara',
   connection: 'N + 次第では',
   desc: '<b>〜次第では</b> menyatakan bahwa tindakan atau hasil Y akan berbeda tergantung pada kondisi atau hasil dari N. Menekankan bahwa N adalah variabel penentu — bisa ke arah mana saja.',
-  nuance: 'Berbeda dari ようによっては yang berfokus pada cara/metode — 次第では berfokus pada kondisi/faktor eksternal yang hasilnya belum diketahui. Sering mengandung nuansa bahwa ada kemungkinan hasil buruk atau perubahan besar.',
+  nuance: null,
   examples: [
     { jp: '交渉の結果<b>次第では</b>、計画を変更することもある。', id: 'Tergantung hasil negosiasi, ada kemungkinan rencana perlu diubah.' },
     { jp: '天候<b>次第では</b>、イベントが中止になる可能性がある。', id: 'Tergantung cuaca, ada kemungkinan acara dibatalkan.' },
@@ -58,8 +58,8 @@ window.grammarN1_Conditionals = [
   ],
   see_also_grammar: ['gn1-00054'],
   see_also_vocab: [],
-  confusion_pairs: ['gn1-00054'],
-  register: 'formal', exceptions: null, notes: null,
+  confusion_pairs: ['gn2-00243', 'gn1-00054', 'gn2-00019', 'gn2-00241', 'gn2-00272', 'gn2-00274', 'gn1-00110'],
+  register: null, exceptions: null, notes: null,
   provenance: 'jlpt-corpus', added_v: 'v15'
 },
 
@@ -70,15 +70,15 @@ window.grammarN1_Conditionals = [
   cat: 'conditional-tara',
   connection: 'N / Clause (plain form) + とあれば',
   desc: '<b>〜とあれば</b> menyatakan kesiapan atau kesediaan untuk melakukan sesuatu demi suatu kondisi atau tujuan tertentu. Mengandung nuansa pengorbanan atau dedikasi — "demi hal itu, saya rela melakukan apa saja."',
-  nuance: 'Berbeda dari なら yang netral — とあれば mengandung tekad dan keseriusan yang lebih kuat. Formal. Sering diikuti ekspresi kesiapan seperti どこへでも行く, 何でもする, 一肌脱ぐ. Mengimplikasikan kondisi yang dianggap penting atau mulia.',
+  nuance: null,
   examples: [
     { jp: 'あなたのため<b>とあれば</b>、どこへでも参ります。', id: 'Demi kamu, saya siap pergi ke mana saja.' },
     { jp: '必要<b>とあれば</b>、夜を徹して作業します。', id: 'Kalau memang diperlukan, saya siap bekerja semalam suntuk.' }
   ],
   see_also_grammar: ['gn1-00077', 'gn1-00078'],
   see_also_vocab: [],
-  confusion_pairs: [],
-  register: 'formal', exceptions: null, notes: null,
+  confusion_pairs: ['gn4-00035', 'gn2-00090', 'gn2-00223'],
+  register: null, exceptions: null, notes: null,
   provenance: 'jlpt-corpus', added_v: 'v15'
 },
 
@@ -89,15 +89,15 @@ window.grammarN1_Conditionals = [
   cat: 'conditional-tara',
   connection: 'N / V-dictionary + ともなると',
   desc: '<b>〜ともなると</b> menyatakan bahwa begitu seseorang atau sesuatu mencapai tingkat atau status tertentu, konsekuensi tertentu secara alami dan tak terelakkan mengikutinya. Menekankan kelogisan konsekuensi pada level tersebut.',
-  nuance: 'Formal. Menekankan bahwa pada level atau status itu, suatu hal adalah konsekuensi yang wajar dan lumrah. Sering digunakan untuk mengacu pada jabatan tinggi, skala besar, atau kondisi khusus. Mirip ともなれば tapi lebih deskriptif tentang kondisi nyata.',
+  nuance: null,
   examples: [
     { jp: '部長<b>ともなると</b>、背負う責任も格段に大きくなる。', id: 'Kalau sudah jadi manajer, tanggung jawab yang dipikul pun jauh lebih besar.' },
     { jp: 'この規模のプロジェクト<b>ともなると</b>、管理だけで一苦労だ。', id: 'Kalau sudah proyek sebesar ini, pengelolaannya saja sudah susah payah.' }
   ],
   see_also_grammar: ['gn1-00078', 'gn1-00076'],
   see_also_vocab: [],
-  confusion_pairs: ['gn1-00078'],
-  register: 'formal', exceptions: null, notes: null,
+  confusion_pairs: ['gn1-00078', 'gn1-00102'],
+  register: null, exceptions: null, notes: null,
   provenance: 'jlpt-corpus', added_v: 'v15'
 },
 
@@ -108,15 +108,15 @@ window.grammarN1_Conditionals = [
   cat: 'conditional-tara',
   connection: 'N / V-dictionary + ともなれば',
   desc: '<b>〜ともなれば</b> adalah varian dari 〜ともなると dengan makna yang sangat mirip — menyatakan bahwa di status atau kondisi tertentu, suatu konsekuensi adalah hal yang wajar. Menggunakan ば-form sehingga terasa sedikit lebih hipotetis.',
-  nuance: 'Secara fungsional hampir identik dengan ともなると. Perbedaan halus: ともなれば terasa lebih hipotetis atau umum ("siapapun yang berada di posisi itu..."); ともなると lebih deskriptif tentang kondisi yang sudah terjadi. Keduanya formal.',
+  nuance: null,
   examples: [
     { jp: '社長<b>ともなれば</b>、孤独な決断を迫られることも多い。', id: 'Kalau sudah menjadi direktur, banyak pula keputusan sulit yang harus diambil sendiri.' },
     { jp: '有名人<b>ともなれば</b>、プライバシーの確保が難しくなる。', id: 'Kalau sudah jadi orang terkenal, menjaga privasi pun menjadi sulit.' }
   ],
   see_also_grammar: ['gn1-00077', 'gn1-00076'],
   see_also_vocab: [],
-  confusion_pairs: ['gn1-00077'],
-  register: 'formal', exceptions: null, notes: null,
+  confusion_pairs: ['gn1-00077', 'gn1-00101'],
+  register: null, exceptions: null, notes: null,
   provenance: 'jlpt-corpus', added_v: 'v15'
 },
 
@@ -127,15 +127,15 @@ window.grammarN1_Conditionals = [
   cat: 'conditional-tara',
   connection: 'V-ta + が最後',
   desc: '<b>〜たが最後</b> menyatakan bahwa begitu suatu tindakan dilakukan, akibat negatif atau tak terelakkan pasti akan terjadi dan tidak ada jalan kembali. Digunakan untuk situasi di mana satu langkah merupakan titik of no return.',
-  nuance: 'Selalu diikuti ekspresi negatif atau situasi yang tidak diinginkan pembicara. Mirip dengan 〜たら最後 (hampir identik, sedikit lebih formal), dan 〜てしまう (sudah terlanjur). Perbedaannya: 〜たが最後 lebih dramatis dan menekankan konsekuensi yang sudah pasti terjadi dan tidak bisa dibatalkan.',
+  nuance: null,
   examples: [
     { jp: '彼に秘密を話し<b>たが最後</b>、翌日には皆に知られてしまう。', id: 'Sekali kamu cerita rahasia ke dia, keesokan harinya semua orang pasti sudah tahu.' },
     { jp: 'あのゲームを始め<b>たが最後</b>、止められなくなる。', id: 'Begitu kamu mulai main game itu, kamu tidak akan bisa berhenti lagi.' },
   ],
   see_also_grammar: [],
   see_also_vocab: [],
-  confusion_pairs: [],
-  register: 'neutral', exceptions: null, notes: 'Varian: 〜が最後（辞書形＋が最後）も可だが、〜たが最後（タ形）のほうが一般的。後件は必ず否定的・不可逆な内容。',
+  confusion_pairs: ['gn3-00131'],
+  register: null, exceptions: null, notes: null,
   provenance: 'jlpt-corpus', added_v: 'v15'
 },
 
@@ -146,15 +146,15 @@ window.grammarN1_Conditionals = [
   cat: 'conditional-tara',
   connection: 'N / V-dictionary + ともなると',
   desc: '<b>〜ともなると</b> menyatakan bahwa ketika seseorang atau sesuatu mencapai suatu level, status, atau tahapan tertentu, hal-hal tertentu secara alami muncul atau diharapkan. Menekankan perubahan yang terjadi seiring dengan naiknya level atau status.',
-  nuance: 'Hampir sinonim dengan 〜ともなれば, tetapi 〜ともなると sedikit lebih deskriptif — menggambarkan realita yang memang terjadi ketika status itu dicapai. 〜ともなれば lebih bernuansa normatif — mengatakan apa yang seharusnya atau wajarnya terjadi. Keduanya sering dapat saling menggantikan.',
+  nuance: null,
   examples: [
     { jp: '社会人3年目<b>ともなると</b>、ある程度の責任ある仕事を任されるようになる。', id: 'Begitu sudah tahun ketiga bekerja, secara alami mulai dipercaya dengan pekerjaan yang cukup bertanggung jawab.' },
     { jp: 'プロのアスリート<b>ともなると</b>、練習の質も量も一般人とは全然違う。', id: 'Kalau sudah menjadi atlet profesional, baik kualitas maupun kuantitas latihannya sangat berbeda dari orang biasa.' },
   ],
   see_also_grammar: ['gn1-00102'],
   see_also_vocab: [],
-  confusion_pairs: ['gn1-00102'],
-  register: 'neutral', exceptions: null, notes: null,
+  confusion_pairs: ['gn1-00078'],
+  register: null, exceptions: null, notes: null,
   provenance: 'jlpt-corpus', added_v: 'v15'
 },
 
@@ -165,15 +165,15 @@ window.grammarN1_Conditionals = [
   cat: 'conditional-tara',
   connection: 'N / V-dictionary + ともなれば',
   desc: '<b>〜ともなれば</b> menyatakan bahwa jika seseorang atau sesuatu mencapai level atau status tertentu, maka suatu sikap, tanggung jawab, atau situasi tertentu sudah sewajarnya ada atau diharapkan muncul. Lebih normatif dari 〜ともなると.',
-  nuance: 'Hampir sama dengan 〜ともなると, tetapi 〜ともなれば memiliki nuansa lebih kuat bahwa ada ekspektasi atau norma yang berlaku — "sudah seharusnya demikian jika sudah pada posisi itu." Sering diikuti 〜ものだ atau 〜はずだ yang memperkuat nuansa normatif tersebut.',
+  nuance: null,
   examples: [
     { jp: '一国のリーダー<b>ともなれば</b>、言葉の一つ一つに責任が伴う。', id: 'Jika sudah menjadi pemimpin suatu negara, setiap kata yang diucapkan membawa tanggung jawab.' },
     { jp: '親<b>ともなれば</b>、子どもの将来を真剣に考えるものだ。', id: 'Kalau sudah menjadi orang tua, sudah sewajarnya memikirkan masa depan anak dengan serius.' },
   ],
   see_also_grammar: ['gn1-00101'],
   see_also_vocab: [],
-  confusion_pairs: ['gn1-00101'],
-  register: 'neutral', exceptions: null, notes: 'ともなると（描写的）vs ともなれば（規範的）の微差に注意。後件に「ものだ」「はずだ」が来ることが多い。',
+  confusion_pairs: ['gn1-00077'],
+  register: null, exceptions: null, notes: null,
   provenance: 'jlpt-corpus', added_v: 'v15'
 },
 
@@ -184,15 +184,15 @@ window.grammarN1_Conditionals = [
   cat: 'conditional-tara',
   connection: 'N + いかんによっては / いかんによって / いかんによらず / いかんを問わず',
   desc: '<b>〜いかんによっては</b> menyatakan bahwa hasil atau tindakan tergantung pada kondisi atau keadaan yang disebutkan. 〜いかんによらず / いかんを問わず adalah varian dengan makna sebaliknya: terlepas dari bagaimana pun keadaannya, tetap berlaku.',
-  nuance: '〜いかん (如何) berarti "bagaimana" — sangat formal dan kaku, hampir eksklusif digunakan dalam dokumen resmi, hukum, kontrak, dan pengumuman formal. Tidak untuk percakapan sehari-hari. Dua varian: いかんによっては (tergantung) vs いかんにかかわらず / いかんを問わず (tanpa tergantung = berlaku untuk semua kondisi).',
+  nuance: null,
   examples: [
     { jp: '交渉の結果<b>いかんによっては</b>、契約を白紙に戻すこともありえる。', id: 'Tergantung bagaimana hasil negosiasi, ada kemungkinan kontrak akan dibatalkan sepenuhnya.' },
     { jp: '成績<b>いかんによっては</b>、奨学金の継続が難しくなる場合があります。', id: 'Bergantung pada bagaimana nilai akademisnya, perpanjangan beasiswa mungkin menjadi sulit.' },
   ],
   see_also_grammar: [],
   see_also_vocab: [],
-  confusion_pairs: [],
-  register: 'formal', exceptions: null, notes: 'いかんによらず・いかんを問わず（〜に関係なく）との意味の違いに注意。いかん単体は「如何」（漢字）で書かれることも多い。',
+  confusion_pairs: ['gn1-00055', 'gn2-00143'],
+  register: null, exceptions: null, notes: null,
   provenance: 'jlpt-corpus', added_v: 'v15'
 },
 
@@ -203,15 +203,15 @@ window.grammarN1_Conditionals = [
   cat: 'conditional-tara',
   connection: 'N + をもってすれば',
   desc: '<b>〜をもってすれば</b> menyatakan bahwa dengan menggunakan kemampuan, kekuatan, atau sumber daya tertentu, sesuatu yang mungkin tampak sulit pun dapat tercapai. Sering mengandung nuansa pujian atau pengakuan terhadap kemampuan yang disebut.',
-  nuance: 'Berbeda dengan 〜をもってしても (yang menyatakan ketidakmampuan bahkan dengan sumber daya itu), 〜をもってすれば justru menyatakan kemungkinan atau optimisme. Berpasangan secara semantis sebagai kebalikannya.',
+  nuance: null,
   examples: [
     { jp: '彼女の能力<b>をもってすれば</b>、この難題も解決できるはずだ。', id: 'Dengan kemampuan yang ia miliki, masalah sulit ini pun seharusnya bisa diselesaikan.' },
     { jp: '最新技術<b>をもってすれば</b>、不可能なことはない。', id: 'Dengan teknologi terkini, tidak ada yang tidak mungkin.' }
   ],
   see_also_grammar: ['gn1-00115'],
   see_also_vocab: [],
-  confusion_pairs: [],
-  register: 'formal', exceptions: null, notes: null,
+  confusion_pairs: ['gn1-00003', 'gn1-00066', 'gn1-00115'],
+  register: null, exceptions: null, notes: null,
   provenance: 'jlpt-corpus', added_v: 'v15'
 }
 

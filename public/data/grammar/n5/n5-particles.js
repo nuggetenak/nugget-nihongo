@@ -15,7 +15,7 @@ window.grammarN5_Particles = [
     cat        : 'particle',
     connection : '【場所/人】から + V kedatangan (来ます、帰ります、dll.)',
     desc       : 'Partikel <b>から</b> menunjukkan asal atau titik keberangkatan. Pada level ini diajarkan sebagai pola tetap <b>【場所】から来ました</b> untuk menyatakan asal negara/kota.',
-    nuance     : 'Berbeda dengan から di gn5-00020 (rentang waktu/tempat から〜まで). Di sini から berdiri sendiri untuk menunjukkan titik asal pergerakan.',
+    nuance: null,
     examples   : [
       { jp: 'ブラジル<b>から</b>来ました。', id: 'Saya berasal dari Brasil.' },
       { jp: 'インドネシア<b>から</b>来ました。', id: 'Saya dari Indonesia.' },
@@ -23,9 +23,9 @@ window.grammarN5_Particles = [
     ],
     see_also_grammar : ['gn5-00020'],
     see_also_vocab   : [],
-    register   : null,
-    exceptions : null,
-    notes      : 'Pattern from Irodori 入門 L3. Diajarkan sebagai frasa tetap; ekspansi pola dibahas di level Elementary.',
+    register: null,
+    exceptions: null,
+    notes: null,
   }
 
 ];

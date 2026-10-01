@@ -12,7 +12,7 @@ window.grammarN1_Nouns_Predicates = [
   cat: 'copula',
   connection: 'N / V-plain + にほかならない',
   desc: '<b>〜にほかならない</b> adalah penegasan kuat bahwa X tidak lain, tidak lebih, tidak kurang dari Y. Pembicara menyimpulkan atau menyatakan identitas/alasan dengan sangat tegas.',
-  nuance: 'Lebih kuat dari だ/です biasa. Sering digunakan untuk menyatakan kesimpulan logis atau evaluasi final. Setara dengan "tidak lain dan tidak bukan adalah X." Formal — jarang dalam percakapan kasual.',
+  nuance: null,
   examples: [
     { jp: 'これは彼の努力の結果<b>にほかならない</b>。', id: 'Ini tidak lain adalah hasil dari kerja kerasnya.' },
     { jp: '彼女が成功したのは、才能ではなく努力<b>にほかならない</b>。', id: 'Keberhasilannya tidak lain adalah kerja keras, bukan bakat.' },
@@ -20,8 +20,8 @@ window.grammarN1_Nouns_Predicates = [
   ],
   see_also_grammar: [],
   see_also_vocab: [],
-  confusion_pairs: [],
-  register: 'formal', exceptions: null, notes: null,
+  confusion_pairs: ['gn1-00154'],
+  register: null, exceptions: null, notes: null,
   provenance: 'jlpt-corpus', added_v: 'v15'
 },
 
@@ -32,15 +32,15 @@ window.grammarN1_Nouns_Predicates = [
   cat: 'predicate-adjective',
   connection: 'N + たる + N',
   desc: '<b>〜たる</b> adalah bentuk atributif dari kopula formal たり. Digunakan untuk memodifikasi nomina dan menyatakan bahwa sesuatu atau seseorang benar-benar memenuhi kualifikasi atau esensi dari hal yang disebutkan. Memberikan kesan penilaian atau standar yang tinggi.',
-  nuance: 'Lebih formal dan arkaik dari である. Sering muncul dalam judul jabatan formal, deskripsi karakter dalam tulisan sastra, atau pernyataan yang bernuansa idealis. Mirip dengan 〜たるもの namun berfungsi sebagai modifier nomina, bukan predikat.',
+  nuance: null,
   examples: [
     { jp: '真のリーダー<b>たる</b>人物は、部下の失敗を自分の責任として引き受ける。', id: 'Seseorang yang layak disebut pemimpin sejati akan menanggung kegagalan bawahannya sebagai tanggung jawabnya sendiri.' },
     { jp: '名医<b>たる</b>所以は、技術だけでなく患者への共感にある。', id: 'Alasan seseorang layak disebut dokter ternama terletak bukan hanya pada keahlian, tetapi juga pada empati terhadap pasien.' }
   ],
   see_also_grammar: ['gn1-00116'],
   see_also_vocab: [],
-  confusion_pairs: [],
-  register: 'literary', exceptions: null, notes: 'Berbeda dari 〜たるもの yang berfungsi sebagai predikat, 〜たる digunakan sebagai prenominal modifier: 〜たる + Nomina.',
+  confusion_pairs: ['gn3-00144', 'gn1-00116'],
+  register: null, exceptions: null, notes: null,
   provenance: 'jlpt-corpus', added_v: 'v15'
 }
 
