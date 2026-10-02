@@ -1717,6 +1717,966 @@ window.vocabN4_Adjectives = [
   provenance: 'jlpt-corpus',
   jmdict_seq: '1539040',
   frequency: 7000,
-}
+},
 
+{
+  "id": "vg-n4-00709",
+  "word": "別",
+  "reading": "べつ",
+  "romaji": "betsu",
+  "meaning_id": "berbeda, lain; terpisah",
+  "meaning_en": "different, another, separate",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "deskripsi",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Bisa berfungsi sebagai nomina atau kata sifat-na (khususnya bentuk 別の + kata benda / 別に). Menunjukkan objek lain yang bukan ini (contoh: 別の意見 / pendapat lain), atau sesuatu yang dihitung terpisah (contoh: お会計は別々にしてください / tolong bayar sendiri-sendiri/terpisah).",
+  "conj_type": "na-adj",
+  "examples": [
+    {
+      "jp": "この服はサイズが合わないので、別の色のものを見せてください。",
+      "id": "Karena pakaian ini ukurannya tidak pas, tolong tunjukkan yang warna lain.",
+      "level": "n4",
+      "tags": [
+        "belanja",
+        "pakaian"
+      ]
+    },
+    {
+      "jp": "彼とは別々の道を進むことにしました。",
+      "id": "Saya memutuskan untuk menempuh jalan yang berbeda dengannya.",
+      "level": "n4",
+      "tags": [
+        "hubungan",
+        "keputusan"
+      ]
+    }
+  ],
+  "synonyms": [
+    "他",
+    "別個",
+    "異なる"
+  ],
+  "antonyms": [
+    "同じ",
+    "同一"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "2259830",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00715",
+  "word": "だめ",
+  "reading": "だめ",
+  "romaji": "dame",
+  "meaning_id": "tidak boleh, tidak bisa, sia-sia, rusak/tidak berguna",
+  "meaning_en": "no good, useless, forbidden, hopeless",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 1,
+  "domain": [
+    "evaluasi",
+    "percakapan",
+    "kehidupan-sehari"
+  ],
+  "register": "casual",
+  "lawan_bicara": [
+    "teman",
+    "keluarga",
+    "rekan"
+  ],
+  "nuance": "Kata sifat-na yang mengekspresikan larangan (~てはだめ / tidak boleh), ketidakmampuan, keputusasaan, atau kondisi sesuatu yang sudah rusak/gagal. Sering ditulis dalam katakana ダメ. Dalam situasi sopan/formal kepada atasan, sebaiknya gunakan いけません atau ご遠慮ください daripada だめです.",
+  "conj_type": "na-adj",
+  "examples": [
+    {
+      "jp": "館内での写真撮影はだめですよ。",
+      "id": "Memotret di dalam gedung tidak boleh ya.",
+      "level": "n4",
+      "tags": [
+        "larangan",
+        "aturan"
+      ]
+    },
+    {
+      "jp": "パソコンの電源が入らなくなって、もうだめかもしれません。",
+      "id": "Komputernya tidak mau menyala lagi, mungkin sudah rusak sama sekali.",
+      "level": "n4",
+      "tags": [
+        "alat",
+        "keluhan"
+      ]
+    }
+  ],
+  "synonyms": [
+    "いけない",
+    "無理",
+    "不可能"
+  ],
+  "antonyms": [
+    "いい",
+    "大丈夫"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1409110",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00751",
+  "word": "無理",
+  "reading": "むり",
+  "romaji": "muri",
+  "meaning_id": "mustahil, memaksakan diri, tidak masuk akal",
+  "meaning_en": "impossible; unreasonable; overdoing it",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "pikiran-opini",
+    "kesehatan",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "keluarga"
+  ],
+  "nuance": "Bermakna sesuatu yang tidak wajar atau melampaui batas kemampuan fisik maupun akal sehat. Sangat sering dipakai memberi peringatan ramah seperti '無理をしないで' (jangan memaksakan diri). Berbeda dengan 不可能 yang merupakan istilah objektif murni untuk hal yang mustahil secara logika.",
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "一日だけでこの分厚い教科書を全部覚えるのは無理です。",
+      "id": "Mengingat seluruh buku pelajaran tebal ini hanya dalam waktu satu hari adalah hal yang mustahil.",
+      "level": "n4",
+      "tags": [
+        "pendidikan",
+        "pikiran-opini"
+      ]
+    },
+    {
+      "jp": "まだ熱があるのだから、あまり無理をして学校に行かないでね。",
+      "id": "Karena badanmu masih demam, jangan terlalu memaksakan diri untuk pergi ke sekolah ya.",
+      "level": "n4",
+      "tags": [
+        "kesehatan",
+        "pertemanan"
+      ]
+    }
+  ],
+  "synonyms": [
+    "無茶",
+    "不可能"
+  ],
+  "antonyms": [
+    "可能",
+    "容易"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1530970",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00759",
+  "word": "そんな",
+  "reading": "そんな",
+  "romaji": "sonna",
+  "meaning_id": "seperti itu, yang seperti itu, begitu",
+  "meaning_en": "such; that sort of; like that",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "deskripsi",
+    "komunikasi"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata penunjuk kata benda (rentaishi) dari kelompok ko-so-a-do yang merujuk pada hal, sifat, atau pembicaraan yang berkaitan dengan posisi lawan bicara. Berbeda dengan こんな (seperti ini, dekat dengan pembicara) dan あんな (seperti itu, jauh dari kedua belah pihak).",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "そんな難しい試験の問題は小学生にはとても解けません。",
+      "id": "Soal ujian sesulit itu sungguh tidak mungkin dapat dipecahkan oleh anak sekolah dasar.",
+      "level": "n4",
+      "tags": [
+        "pendidikan",
+        "deskripsi"
+      ]
+    },
+    {
+      "jp": "そんなに落ち込まなくても次の機会に頑張れば大丈夫ですよ。",
+      "id": "Jangan sampai berkecil hati seperti itu, kalau berjuang di kesempatan berikutnya pasti tidak apa-apa kok.",
+      "level": "n4",
+      "tags": [
+        "pertemanan",
+        "komunikasi"
+      ]
+    }
+  ],
+  "synonyms": [
+    "そのような",
+    "そういった"
+  ],
+  "antonyms": [
+    "こんな",
+    "あんな"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1007130",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00772",
+  "word": "美しい",
+  "reading": "うつくしい",
+  "romaji": "utsukushii",
+  "meaning_id": "indah, elok, mempesona",
+  "meaning_en": "beautiful; lovely; graceful; charming",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "deskripsi",
+    "alam-lingkungan",
+    "seni-budaya"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata sifat-i yang melukiskan keindahan visual maupun batiniah yang anggun dan menyentuh perasaan (alam, karya seni, sikap mulia). Terasa lebih puitis dan formal dibandingkan kata きれい (kirei) yang sangat jamak digunakan untuk keelokan fisik atau kebersihan tempat.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "夕暮れ時に展望台から眺める富士山の景色は息をのむほど美しい。",
+      "id": "Pemandangan Gunung Fuji yang dipandang dari gardu pandang saat senja sungguh sangat indah mempesona.",
+      "level": "n4",
+      "tags": [
+        "alam-lingkungan",
+        "deskripsi"
+      ]
+    },
+    {
+      "jp": "彼女が弾くピアノの美しい旋律を聴いて深く感動しました。",
+      "id": "Saya merasa sangat terharu saat mendengarkan lantunan melodi piano yang indah darinya.",
+      "level": "n4",
+      "tags": [
+        "seni-budaya",
+        "emosi-positif"
+      ]
+    }
+  ],
+  "synonyms": [
+    "きれい",
+    "麗しい"
+  ],
+  "antonyms": [
+    "醜い"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1486360",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00782",
+  "word": "変",
+  "reading": "へん",
+  "romaji": "hen",
+  "meaning_id": "aneh, ganjil, tidak wajar",
+  "meaning_en": "strange; odd; weird; peculiar",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "deskripsi",
+    "pikiran-opini",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata sifat-na yang menyatakan kejanggalan atau ketidakwajaran yang menyimpang dari keadaan normal (rasa aneh, suara mencurigakan, tingkah ganjil). Berbeda dengan おかしい (okashii) yang selain berarti aneh juga bisa bermakna lucu mengundang tawa.",
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "夜遅くに誰もいないはずの庭から変な物音が聞こえました。",
+      "id": "Larut malam terdengar bunyi benda aneh dari halaman yang seharusnya tidak ada orang.",
+      "level": "n4",
+      "tags": [
+        "kejadian",
+        "emosi-negatif"
+      ]
+    },
+    {
+      "jp": "このスマートフォンの画面の動きが変なので一度電源を切ってみます。",
+      "id": "Pergerakan layar ponsel pintar ini terasa aneh, jadi saya coba matikan daya sekali.",
+      "level": "n4",
+      "tags": [
+        "teknologi",
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [
+    "おかしい",
+    "奇妙",
+    "風変わり"
+  ],
+  "antonyms": [
+    "普通",
+    "正常"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1510640",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00808",
+  "word": "真面目",
+  "reading": "まじめ",
+  "romaji": "majime",
+  "meaning_id": "rajin; sungguh-sungguh; serius; dapat dipercaya",
+  "meaning_en": "serious; earnest; diligent; honest",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "sifat",
+    "kepribadian",
+    "pekerjaan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "keluarga",
+    "umum"
+  ],
+  "nuance": "Menyatakan sifat atau perilaku seseorang yang tekun, disiplin, berpegang teguh pada aturan, dan tidak main-main. Merupakan sifat yang sangat diapresiasi dalam lingkungan kerja dan sekolah di Jepang.",
+  "conj_type": "na-adj",
+  "examples": [
+    {
+      "jp": "山田さんは真面目な性格で、一度も遅刻をしたことがありません。",
+      "id": "Yamada-san berkepribadian rajin dan bersungguh-sungguh, dia belum pernah terlambat sekalipun.",
+      "level": "n4",
+      "tags": [
+        "kepribadian",
+        "pujian"
+      ]
+    },
+    {
+      "jp": "将来後悔しないように、今から真面目に勉強に取り組もう。",
+      "id": "Agar tidak menyesal di masa depan, mari mulai sekarang bersungguh-sungguh dalam belajar.",
+      "level": "n4",
+      "tags": [
+        "nasihat",
+        "belajar"
+      ]
+    }
+  ],
+  "synonyms": [
+    "熱心",
+    "誠実"
+  ],
+  "antonyms": [
+    "不真面目",
+    "いい加減"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1364360",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00810",
+  "word": "よろしい",
+  "reading": "よろしい",
+  "romaji": "yoroshii",
+  "meaning_id": "baik; boleh; berkenan (ragam sopan / teineigo)",
+  "meaning_en": "good; OK; fine; all right (polite)",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "kesopanan",
+    "pelayanan",
+    "bisnis"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "atasan",
+    "pelanggan",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Bentuk halus dan formal dari kata sifat いい / よい. Sering digunakan oleh staf toko, pegawai hotel, atau pramugari saat mengonfirmasi pesanan (よろしいでしょうか) atau meminta izin secara sopan.",
+  "conj_type": "i-adj",
+  "examples": [
+    {
+      "jp": "ご注文のお品物は以上でよろしいでしょうか。",
+      "id": "Apakah barang pesanannya sudah tepat dan cukup demikian?",
+      "level": "n4",
+      "tags": [
+        "pelayanan",
+        "restoran"
+      ]
+    },
+    {
+      "jp": "こちらの書類にお名前をご記入いただいてもよろしいですか。",
+      "id": "Bolehkah saya memohon Anda untuk mengisi nama pada dokumen ini?",
+      "level": "n4",
+      "tags": [
+        "bisnis",
+        "kesopanan"
+      ]
+    }
+  ],
+  "synonyms": [
+    "いい",
+    "よい",
+    "結構"
+  ],
+  "antonyms": [
+    "だめ",
+    "いけない"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1224880",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00832",
+  "word": "～やすい",
+  "reading": "～やすい",
+  "romaji": "-yasui",
+  "meaning_id": "mudah di-...; gampang ...; rentan ...",
+  "meaning_en": "easy to do ~; prone to ~",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "tata-bahasa",
+    "sifat",
+    "kemudahan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Sufiks kata sifat-i yang dilekatkan pada masu-stem verba. Memiliki dua fungsi: 1) mudah dilakukan secara fisik/mental (misal: 分かりやすい = mudah dipahami, 使いやすい = mudah dipakai); 2) memiliki kecenderungan/rentan terhadap hal negatif (misal: 壊れやすい = mudah rusak, 風邪をひきやすい = mudah kena flu). Lawan katanya adalah ～にくい (-nikui).",
+  "conj_type": "i-adj",
+  "examples": [
+    {
+      "jp": "この教科書はイラストが多くて、文法がとても分かりやすいです。",
+      "id": "Buku pelajaran ini memuat banyak ilustrasi sehingga tata bahasanya sangat mudah dipahami.",
+      "level": "n4",
+      "tags": [
+        "belajar",
+        "kemudahan"
+      ]
+    },
+    {
+      "jp": "ガラスのコップは割れやすいので、運ぶときは気をつけてください。",
+      "id": "Karena gelas kaca mudah pecah, berhati-hatilah saat membawanya.",
+      "level": "n4",
+      "tags": [
+        "kehati-hatian",
+        "benda"
+      ]
+    }
+  ],
+  "synonyms": [
+    "～がち",
+    "容易"
+  ],
+  "antonyms": [
+    "～にくい",
+    "～づらい"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": null,
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "reference",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00833",
+  "word": "うまい",
+  "reading": "うまい",
+  "romaji": "umai",
+  "meaning_id": "enak; lezat; mahir; pintar; berhasil baik",
+  "meaning_en": "delicious; skillful; clever; successful",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 1,
+  "domain": [
+    "makanan",
+    "kemampuan",
+    "percakapan"
+  ],
+  "register": "casual",
+  "lawan_bicara": [
+    "teman",
+    "keluarga",
+    "rekan"
+  ],
+  "nuance": "Kata sifat serbaguna dalam percakapan kasual dengan 2 arti pokok: 1) rasa makanan lezat (sinonim santai dari 美味しい, sering dipakai laki-laki atau situasi santai); 2) terampil / mahir dalam suatu keahlian (sinonim dari 上手).",
+  "conj_type": "i-adj",
+  "examples": [
+    {
+      "jp": "母が作ってくれた手料理はいつ食べても本当にうまいです。",
+      "id": "Masakan buatan ibu kapan pun dimakan rasanya sungguh lezat.",
+      "level": "n4",
+      "tags": [
+        "makanan",
+        "keluarga"
+      ]
+    },
+    {
+      "jp": "鈴木さんは英語の発音もうまくて、流暢に会話ができます。",
+      "id": "Suzuki-san pelafalan bahasa Inggrisnya pun sangat mahir dan bisa bercakap-cakap dengan fasih.",
+      "level": "n4",
+      "tags": [
+        "kemampuan",
+        "bahasa"
+      ]
+    }
+  ],
+  "synonyms": [
+    "美味しい",
+    "上手"
+  ],
+  "antonyms": [
+    "まずい",
+    "下手"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1310460",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00874",
+  "word": "普通",
+  "reading": "ふつう",
+  "romaji": "futsuu",
+  "meaning_id": "biasa, lumrah, normal, kereta lokal",
+  "meaning_en": "ordinary, normal, usual; local train",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "deskripsi",
+    "kualitas",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Menyatakan hal atau standar yang umum, lumrah, dan wajar tanpa keistimewaan khusus. Pada transportasi kereta di Jepang, juga merujuk kereta lokal yang berhenti di semua stasiun (普通列車). Lawan katanya adalah 特別 (tokubetsu - khusus/istimewa).",
+  "conj_type": "na-adj",
+  "examples": [
+    {
+      "jp": "この算数の問題は普通の中学生ならすぐに解くことができます。",
+      "id": "Soal matematika ini bisa segera diselesaikan jika anak SMP biasa.",
+      "level": "n4",
+      "tags": [
+        "pendidikan",
+        "deskripsi"
+      ]
+    },
+    {
+      "jp": "急行が止まらない小さな駅なので、普通電車に乗ってください。",
+      "id": "Karena ini stasiun kecil yang tidak disinggahi kereta ekspres, silakan naik kereta lokal.",
+      "level": "n4",
+      "tags": [
+        "perjalanan",
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [
+    "平凡",
+    "並み",
+    "通常"
+  ],
+  "antonyms": [
+    "特別",
+    "異常"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1497190",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00888",
+  "word": "久しぶり",
+  "reading": "ひさしぶり",
+  "romaji": "hisashiburi",
+  "meaning_id": "setelah sekian lama, lama tidak berjumpa",
+  "meaning_en": "after a long time, it has been a long time",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "bahasa-komunikasi",
+    "waktu",
+    "pertemanan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Menyatakan suatu perbuatan yang terjadi kembali sesudah kurun waktu cukup lama. Salam ramah 'お久しぶりです' (o-hisashiburi desu) selalu diucapkan saat bersua kembali dengan kawan lama sesudah waktu yang panjang.",
+  "conj_type": "na-adj",
+  "examples": [
+    {
+      "jp": "高校時代の親友と久しぶりに駅前のカフェでお茶を飲みました。",
+      "id": "Saya minum teh di kafe depan stasiun setelah sekian lama bersama sahabat masa SMA.",
+      "level": "n4",
+      "tags": [
+        "pertemanan",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "「田中さん、本当にお久しぶりですね！お元気でしたか。」",
+      "id": "\"Tanaka-san, sungguh sudah lama tidak bertemu ya! Apakah Anda sehat-sehat saja?\"",
+      "level": "n4",
+      "tags": [
+        "komunikasi",
+        "sopan-santun"
+      ]
+    }
+  ],
+  "synonyms": [
+    "久方ぶり"
+  ],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1227370",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00924",
+  "word": "簡単",
+  "reading": "かんたん",
+  "romaji": "kantan",
+  "meaning_id": "mudah, gampang, sederhana, ringkas",
+  "meaning_en": "simple, easy, brief",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas",
+    "deskripsi",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata sifat-na yang menyatakan hal yang tidak berbelit-belit atau sangat mudah dikerjakan tanpa prosedur rumit. Bentuk keterangannya adalah 簡単に (dengan mudah/singkat). Kebalikannya adalah 複雑 (fukuzatsu, rumit) atau 難しい (muzukashii, sukar).",
+  "conj_type": "na-adj",
+  "examples": [
+    {
+      "jp": "この料理は材料を切って炒めるだけなので作り方が非常に簡単です。",
+      "id": "Masakan ini cara pembuatannya sangat mudah karena hanya tinggal memotong bahan lalu menumisnya.",
+      "level": "n4",
+      "tags": [
+        "makanan-minuman",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "面接の最初に、一分程度で簡単な自己紹介をお願いします。",
+      "id": "Di awal wawancara, mohon berikan perkenalan diri yang singkat sekitar satu menit.",
+      "level": "n4",
+      "tags": [
+        "komunikasi",
+        "sopan-santun"
+      ]
+    }
+  ],
+  "synonyms": [
+    "易しい",
+    "単純",
+    "容易"
+  ],
+  "antonyms": [
+    "複雑",
+    "難しい",
+    "困難"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1214330",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00936",
+  "word": "～にくい",
+  "reading": "～にくい",
+  "romaji": "~nikui",
+  "meaning_id": "sulit untuk ~, sukar di~",
+  "meaning_en": "difficult to do ~, hard to ~",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "deskripsi",
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Sufiks kata sifat-i yang dilekatkan pada batang kata kerja masu (stem + にくい) untuk menyatakan bahwa suatu tindakan secara objektif sukar dilakukan atau benda tersebut tidak mudah mengalami suatu proses. Kebalikannya adalah ～やすい (~yasui, mudah di~).",
+  "conj_type": "i-adj",
+  "examples": [
+    {
+      "jp": "このボールペンはインクの出が悪くて字がとても書きにくいです。",
+      "id": "Pena ini keluaran tintanya macet sehingga sangat sulit untuk dipakai menulis huruf.",
+      "level": "n4",
+      "tags": [
+        "deskripsi",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "専門用語がたくさん使われていて話の内容が分かりにくかったです。",
+      "id": "Isi pembicaraannya sulit dipahami karena memuat banyak istilah khusus yang rumit.",
+      "level": "n4",
+      "tags": [
+        "deskripsi",
+        "komunikasi"
+      ]
+    }
+  ],
+  "synonyms": [
+    "～づらい",
+    "～がたい"
+  ],
+  "antonyms": [
+    "～やすい"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": null,
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "reference",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00943",
+  "word": "ソフト",
+  "reading": "ソフト",
+  "romaji": "sofuto",
+  "meaning_id": "lembut, halus; perangkat lunak (software)",
+  "meaning_en": "soft, gentle; software; soft-serve ice cream",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "sifat",
+    "teknologi",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Berasal dari kata serapan bahasa Inggris 'soft'. Memiliki dua fungsi utama: (1) sebagai kata sifat-na (ソフトな) yang berarti lembut, santun, fleksibel, atau tidak kaku (misalnya ソフトな態度/sikap ramah, ソフトな色/warna lembut), dan (2) sebagai kata benda singkatan dari ソフトウェア (software/perangkat lunak) serta ソフトクリーム (es krim cone lembut).",
+  "conj_type": "na-adj",
+  "examples": [
+    {
+      "jp": "店員さんのソフトな対応にとても好感が持てました。",
+      "id": "Pelayanan staf toko yang ramah dan lembut membuat saya merasa sangat terkesan.",
+      "level": "n4",
+      "tags": [
+        "sifat",
+        "pelayanan"
+      ]
+    },
+    {
+      "jp": "パソコンに新しい日本語入力ソフトを入れました。",
+      "id": "Saya memasang perangkat lunak pengetikan bahasa Jepang baru di komputer.",
+      "level": "n4",
+      "tags": [
+        "teknologi",
+        "komputer"
+      ]
+    }
+  ],
+  "synonyms": [
+    "柔らかい",
+    "ソフトウェア",
+    "柔軟"
+  ],
+  "antonyms": [
+    "ハード"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1075500",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
 ];

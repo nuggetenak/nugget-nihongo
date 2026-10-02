@@ -385,80 +385,7 @@ window.vocabN2_Nouns = [
   "frequency": 500
 },
 
-{
-  "id": "vg-n2-00097",
-  "word": "背景",
-  "reading": "はいけい",
-  "romaji": "haikei",
-  "meaning_id": "latar belakang, konteks",
-  "meaning_en": "background; backdrop; context",
-  "jlpt": "n2",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "bahasa-komunikasi",
-    "sastra",
-    "ilmu-pengetahuan"
-  ],
-  "register": "written",
-  "lawan_bicara": [
-    "umum"
-  ],
-  "nuance": "Dapat berarti latar fisik (latar belakang foto/lukisan) maupun latar konteks/riwayat di balik suatu peristiwa; sering muncul dalam analisis dan penulisan akademis.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "この問題の背景を理解することが重要だ。",
-      "id": "Penting untuk memahami latar belakang masalah ini.",
-      "level": "n2",
-      "tags": [
-        "ilmu-pengetahuan"
-      ]
-    },
-    {
-      "jp": "彼の行動には複雑な背景がある。",
-      "id": "Di balik tindakannya terdapat latar belakang yang rumit.",
-      "level": "n2",
-      "tags": [
-        "pikiran-opini"
-      ]
-    },
-    {
-      "jp": "白い背景に赤い花が映えている。",
-      "id": "Bunga merah tampak menonjol di atas latar belakang putih.",
-      "level": "n2",
-      "tags": [
-        "seni-budaya"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15",
-  "jmdict_seq": "1472720",
-  "frequency": 500,
-  "meanings": [
-    {
-      "en": "background; scenery; backdrop; setting",
-      "misc": [],
-      "field": []
-    },
-    {
-      "en": "background (of an incident, situation, etc.); circumstances; context",
-      "misc": [],
-      "field": []
-    },
-    {
-      "en": "backing; support (from behind the scenes)",
-      "misc": [],
-      "field": []
-    }
-  ]
-},
+
 
 {
   "id": "vg-n2-00098",
@@ -1439,7 +1366,7 @@ window.vocabN2_Nouns = [
     "umum"
   ],
   "nuance": "Bisa dibaca りえき (keuntungan/manfaat umum dan finansial) atau りやく (manfaat/berkah, lebih religius/filosofis); dalam konteks bisnis selalu りえき.",
-  "conj_type": null,
+  "conj_type": 'suru',
   "examples": [
     {
       "jp": "今期は大きな利益を上げた。",
@@ -1956,7 +1883,7 @@ window.vocabN2_Nouns = [
     "umum"
   ],
   "nuance": "Sangat formal — dipakai terutama dalam dokumen resmi, hukum, dan pernyataan pemerintah; 措置を取る = 'mengambil tindakan (resmi)'; lebih berat bobot formalnya daripada 対策.",
-  "conj_type": null,
+  "conj_type": 'suru',
   "examples": [
     {
       "jp": "政府は緊急措置を発動した。",
@@ -2280,63 +2207,7 @@ window.vocabN2_Nouns = [
   "frequency": 500
 },
 
-{
-  "id": "vg-n2-00163",
-  "word": "法律",
-  "reading": "ほうりつ",
-  "romaji": "houritsu",
-  "meaning_id": "hukum, undang-undang",
-  "meaning_en": "law, legislation",
-  "jlpt": "n2",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 4,
-  "domain": [
-    "hukum-aturan",
-    "politik-masyarakat"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "umum"
-  ],
-  "nuance": "Merujuk pada undang-undang yang berlaku secara resmi. Berbeda dari 法 (hou) yang lebih luas, dan ルール yang lebih informal. 法律 selalu menunjuk pada aturan tertulis yang ditetapkan negara.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "法律に違反した場合は罰せられる。",
-      "id": "Jika melanggar hukum, akan mendapat hukuman.",
-      "level": "n2",
-      "tags": [
-        "hukum-aturan"
-      ]
-    },
-    {
-      "jp": "新しい法律が国会で可決された。",
-      "id": "Undang-undang baru telah disahkan di parlemen.",
-      "level": "n2",
-      "tags": [
-        "politik-masyarakat",
-        "hukum-aturan"
-      ]
-    },
-    {
-      "jp": "この行為は法律上問題ない。",
-      "id": "Tindakan ini tidak bermasalah dari segi hukum.",
-      "level": "n2",
-      "tags": [
-        "hukum-aturan"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15",
-  "jmdict_seq": "1517480",
-  "frequency": 1000
-},
+
 
 {
   "id": "vg-n2-00165",
@@ -3108,7 +2979,7 @@ window.vocabN2_Nouns = [
     "umum"
   ],
   "nuance": "判決 adalah keputusan resmi yang dikeluarkan hakim setelah proses persidangan selesai. 判決を下す = menjatuhkan vonis. Berbeda dari 判断 (handan — penilaian/pertimbangan umum) yang bisa digunakan dalam konteks sehari-hari — 判決 khusus untuk keputusan hukum formal di pengadilan dan bernuansa sangat resmi.",
-  "conj_type": null,
+  "conj_type": 'suru',
   "examples": [
     {
       "jp": "裁判所は被告に無罪の<b>判決</b>を言い渡した。",
@@ -3690,73 +3561,7 @@ window.vocabN2_Nouns = [
   "frequency": 1000
 },
 
-{
-  "id": "vg-n2-00240",
-  "word": "世論",
-  "reading": "せろん",
-  "romaji": "seron",
-  "meaning_id": "opini publik, pendapat umum masyarakat",
-  "meaning_en": "public opinion, popular opinion",
-  "jlpt": "n2",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 4,
-  "domain": [
-    "politik-masyarakat",
-    "media"
-  ],
-  "register": "written",
-  "lawan_bicara": [
-    "rekan"
-  ],
-  "nuance": "世論 merujuk pada pandangan atau sikap dominan yang dipegang masyarakat luas terhadap suatu isu publik. Dapat dibaca せろん (seron, umum di media modern) atau よろん (yoron, lebih tradisional) — keduanya benar. Berbeda dari 意見 (iken — pendapat individu) — 世論 selalu merujuk pada pandangan kolektif masyarakat, bukan seorang individu. 世論調査 = survei opini publik.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "<b>世論</b>調査の結果、内閣支持率が過去最低を記録した。",
-      "id": "Hasil survei opini publik mencatat tingkat dukungan kabinet terendah sepanjang sejarah.",
-      "level": "n2",
-      "tags": [
-        "politik-masyarakat",
-        "media"
-      ]
-    },
-    {
-      "jp": "政府はメディアを通じて<b>世論</b>の形成に影響を与えようとした。",
-      "id": "Pemerintah berusaha mempengaruhi pembentukan opini publik melalui media.",
-      "level": "n2",
-      "tags": [
-        "media",
-        "politik-masyarakat"
-      ]
-    }
-  ],
-  "synonyms": [
-    "民意",
-    "公論"
-  ],
-  "antonyms": [],
-  "see_also": [
-    "報道"
-  ],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15",
-  "jmdict_seq": "1606150",
-  "frequency": 1000,
-  "forms": [
-    {
-      "word": "世論",
-      "info": []
-    },
-    {
-      "word": "輿論",
-      "info": [
-        "kanji jarang dipakai"
-      ]
-    }
-  ]
-},
+
 
 {
   "id": "vg-n2-00241",
@@ -3779,7 +3584,7 @@ window.vocabN2_Nouns = [
     "umum"
   ],
   "nuance": "統計 merujuk pada pengumpulan, analisis, dan penyajian data numerik secara sistematis. 統計学 = ilmu statistik. 統計的に = secara statistik. Berbeda dari データ (deeta — data mentah) yang lebih tentang informasi yang belum diproses — 統計 menekankan hasil yang sudah dianalisis dan disajikan dalam bentuk yang dapat diinterpretasi.",
-  "conj_type": null,
+  "conj_type": 'suru',
   "examples": [
     {
       "jp": "政府の<b>統計</b>によると、失業率は前月比で0.2ポイント改善した。",
@@ -4431,7 +4236,7 @@ window.vocabN2_Nouns = [
     "umum"
   ],
   "nuance": "Menekankan bahwa semua orang diperlakukan dengan cara yang sama tanpa perbedaan. Berbeda dari 公平 (kousei = adil) — 平等 berarti perlakuan yang identik untuk semua, sedangkan 公平 bisa mempertimbangkan konteks dan perbedaan individu demi hasil yang proporsional.",
-  "conj_type": null,
+  "conj_type": 'na-adj',
   "examples": [
     {
       "jp": "法の下の<b>平等</b>はすべての民主主義社会の基本原則だ。",
@@ -5006,7 +4811,7 @@ window.vocabN2_Nouns = [
     "umum"
   ],
   "nuance": "Mengacu pada praktik yang sudah lazim dilakukan secara kolektif oleh masyarakat atau kelompok tertentu. Berbeda dari 習慣 (shuukan = kebiasaan individual) — 慣習 bersifat sosial dan sering memiliki kekuatan normatif. 慣習法 = hukum adat. Pelanggaran 慣習 bisa menimbulkan sanksi sosial.",
-  "conj_type": null,
+  "conj_type": 'suru',
   "examples": [
     {
       "jp": "お中元やお歳暮は日本独自の贈り物の<b>慣習</b>だ。",
@@ -5336,7 +5141,7 @@ window.vocabN2_Nouns = [
     "umum"
   ],
   "nuance": "Konsep luas yang mencakup kebebasan fisik, kebebasan berbicara, kebebasan berpikir, dan lainnya. Juga digunakan dalam konteks sehari-hari (自由な時間 = waktu luang; 自由にしてください = silakan lakukan sesukamu). 自由 dalam konteks hak asasi lebih bernuansa filosofis-politis dari pada 許可 (ijin) yang bersifat praktis.",
-  "conj_type": null,
+  "conj_type": 'na-adj',
   "examples": [
     {
       "jp": "言論の<b>自由</b>は民主主義社会の根本的な権利のひとつだ。",
@@ -6146,7 +5951,7 @@ window.vocabN2_Nouns = [
     "umum"
   ],
   "nuance": "Merujuk pada fenomena meningkatnya proporsi penduduk berusia lanjut dalam suatu populasi — akibat kombinasi 少子化 dan meningkatnya harapan hidup. Sering dipakai bersama 少子化 dalam frasa 少子高齢化 yang merangkum krisis demografis Jepang. Berbeda dari 老化 yang berarti proses menua pada individu.",
-  "conj_type": null,
+  "conj_type": 'suru',
   "examples": [
     {
       "jp": "<b>高齢化</b>社会では、介護の需要が増加する。",
@@ -6195,7 +6000,7 @@ window.vocabN2_Nouns = [
     "umum"
   ],
   "nuance": "Merujuk pada perpindahan menetap dari satu negara ke negara lain — bisa untuk individu (imigran) maupun proses (imigrasi). Berbeda dari 難民 yang melarikan diri karena ancaman; 移民 lebih menekankan kepindahan sukarela dengan tujuan ekonomi atau keluarga. Di Jepang kata ini sensitif secara politik karena kebijakan imigrasi yang ketat.",
-  "conj_type": null,
+  "conj_type": 'suru',
   "examples": [
     {
       "jp": "労働力不足を補うために<b>移民</b>を受け入れる議論が高まっている。",
@@ -6371,7 +6176,7 @@ window.vocabN2_Nouns = [
     "umum"
   ],
   "nuance": "Merujuk pada kondisi struktural kekurangan kebutuhan dasar — lebih dari sekadar 'tidak punya uang'. Berbeda dari 貧乏 yang lebih kasual dan personal (sering dipakai sendiri atau untuk orang dekat tanpa konotasi kebijakan); 貧困 adalah istilah kebijakan publik dan akademis, dipakai dalam laporan dan diskusi sosial.",
-  "conj_type": null,
+  "conj_type": 'na-adj',
   "examples": [
     {
       "jp": "子どもの<b>貧困</b>率を下げるために、さまざまな支援策が実施されている。",
@@ -6483,7 +6288,7 @@ window.vocabN2_Nouns = [
     "umum"
   ],
   "nuance": "Lebih luas dan personal dari 育児 — mencakup keseluruhan proses membesarkan anak mulai dari bayi hingga dewasa, termasuk aspek emosional, pendidikan, dan pembentukan karakter. Lebih sering dipakai dalam konteks percakapan dan pengalaman pribadi; 育児 lebih formal dan spesifik untuk perawatan fisik bayi.",
-  "conj_type": null,
+  "conj_type": 'suru',
   "examples": [
     {
       "jp": "<b>子育て</b>には多くの時間とエネルギーが必要だ。",
@@ -7109,7 +6914,7 @@ window.vocabN2_Nouns = [
     "umum"
   ],
   "nuance": "Merujuk spesifik pada penurunan penduduk di daerah rural atau terpencil akibat migrasi ke kota — kebalikan dari 都市化. Berbeda dari 人口減少 yang bisa terjadi di mana saja; 過疎化 selalu berkaitan dengan ketidakseimbangan antara daerah dan kota, dan berdampak pada ditutupnya sekolah, toko, dan layanan publik di desa.",
-  "conj_type": null,
+  "conj_type": 'suru',
   "examples": [
     {
       "jp": "<b>過疎化</b>が進む地域では、廃校や廃業する店が増えている。",
@@ -8868,60 +8673,7 @@ window.vocabN2_Nouns = [
   "frequency": 1000
 },
 
-{
-  "id": "vg-n2-00381",
-  "word": "省エネ",
-  "reading": "しょうエネ",
-  "romaji": "shou ene",
-  "meaning_id": "hemat energi, efisiensi energi",
-  "meaning_en": "energy saving, energy efficiency",
-  "jlpt": "n2",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 2,
-  "domain": [
-    "alam-lingkungan",
-    "kehidupan-sehari",
-    "ekonomi-keuangan"
-  ],
-  "register": "neutral",
-  "lawan_bicara": [
-    "umum",
-    "teman"
-  ],
-  "nuance": "Singkatan informal dari 省エネルギー (shou enerugii). Berbeda dari 節電 (setsuden = hemat listrik secara spesifik) — 省エネ mencakup semua jenis energi termasuk gas, bahan bakar kendaraan, dan listrik. Digunakan luas dalam label produk rumah tangga (省エネ家電), kampanye pemerintah, dan percakapan sehari-hari.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "この冷蔵庫は<b>省エネ</b>性能が高く、電気代を大幅に節約できる。",
-      "id": "Kulkas ini memiliki efisiensi energi yang tinggi sehingga bisa menghemat tagihan listrik secara signifikan.",
-      "level": "n2",
-      "tags": [
-        "kehidupan-sehari",
-        "ekonomi-keuangan"
-      ]
-    },
-    {
-      "jp": "夏の電力不足に備えて、<b>省エネ</b>への協力が呼びかけられた。",
-      "id": "Masyarakat diimbau untuk berhemat energi guna menghadapi kemungkinan kekurangan listrik di musim panas.",
-      "level": "n2",
-      "tags": [
-        "kehidupan-sehari",
-        "alam-lingkungan"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15",
-  "jmdict_seq": "1351060",
-  "misc_jm": [
-    "abbreviation"
-  ]
-},
+
 
 {
   "id": "vg-n2-00383",
@@ -8976,57 +8728,7 @@ window.vocabN2_Nouns = [
   "frequency": 1000
 },
 
-{
-  "id": "vg-n2-00384",
-  "word": "生態系",
-  "reading": "せいたいけい",
-  "romaji": "seitai kei",
-  "meaning_id": "ekosistem",
-  "meaning_en": "ecosystem",
-  "jlpt": "n2",
-  "pos": "noun",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "alam-lingkungan",
-    "ilmu-pengetahuan"
-  ],
-  "register": "neutral",
-  "lawan_bicara": [
-    "umum",
-    "rekan"
-  ],
-  "nuance": "Berbeda dari 自然 (shizen = alam secara umum) dan 環境 (kankyou = lingkungan hidup secara luas) — 生態系 adalah istilah ilmiah yang merujuk pada jaringan interaksi fungsional antara organisme hidup dan lingkungan fisiknya dalam suatu area tertentu. Menekankan keterhubungan dan keseimbangan antar komponen, bukan sekadar keberadaannya.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "外来種の侵入が在来の<b>生態系</b>に深刻なダメージを与えている。",
-      "id": "Masuknya spesies invasif menimbulkan kerusakan serius pada ekosistem asli.",
-      "level": "n2",
-      "tags": [
-        "alam-lingkungan",
-        "ilmu-pengetahuan"
-      ]
-    },
-    {
-      "jp": "珊瑚礁は海洋<b>生態系</b>の中で非常に重要な役割を果たしている。",
-      "id": "Terumbu karang memainkan peran yang sangat penting dalam ekosistem laut.",
-      "level": "n2",
-      "tags": [
-        "alam-lingkungan",
-        "ilmu-pengetahuan"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15",
-  "jmdict_seq": "1379300",
-  "frequency": 4500
-},
+
 
 {
   "id": "vg-n2-00385",
@@ -9205,7 +8907,7 @@ window.vocabN2_Nouns = [
     "rekan"
   ],
   "nuance": "Berbeda dari 乾燥化 (kansouka = proses menjadi kering secara umum) — 砂漠化 secara spesifik merujuk pada degradasi lahan yang mengubah wilayah yang sebelumnya produktif menjadi padang pasir gersang akibat gabungan perubahan iklim dan aktivitas manusia seperti penggembalaan berlebihan. Prosesnya sangat sulit dibalik.",
-  "conj_type": null,
+  "conj_type": 'suru',
   "examples": [
     {
       "jp": "アフリカのサヘル地帯では<b>砂漠化</b>が急速に進んでいる。",

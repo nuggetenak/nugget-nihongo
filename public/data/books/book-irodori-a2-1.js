@@ -259,7 +259,7 @@ window.bookIrodoriA21 = {
         'vg-n4-00529', // 事故 — kecelakaan
         'vg-n4-00525', // 地震 — gempa bumi
         'vg-n4-00038', // 台風 — topan, taifun
-        'vg-n4-00288', // ニュース — berita
+        'vg-n5-00402', // ニュース — berita
         'vg-n4-00335', // 驚く — terkejut, terkagum
         'vg-n4-00029', // 困る — kebingungan, kesulitan
         'vg-n4-00336', // 悩む — merasa dilema, khawatir

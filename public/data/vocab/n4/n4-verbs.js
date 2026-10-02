@@ -5939,6 +5939,4267 @@ window.vocabN4_Verbs = [
   added_v: 'v15-migrated',
   provenance: 'jlpt-corpus',
   conjugations: {"dict": "ちこくする", "masu": "ちこくします", "te": "ちこくして", "ta": "ちこくした", "nai": "ちこくしない", "potential": "ちこくできる", "passive": "ちこくされる", "causative": "ちこくさせる", "volitional": "ちこくしよう", "cond_ba": "ちこくすれば", "cond_tara": "ちこくしたら"},
-}
+},
 
+{
+  "id": "vg-n4-00693",
+  "word": "踏む",
+  "reading": "ふむ",
+  "romaji": "fumu",
+  "meaning_id": "menginjak, melangkah di atas",
+  "meaning_en": "to step on, to tread on",
+  "jlpt": "n4",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "aktivitas",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja transitif (他動詞) yang berarti meletakkan kaki di atas sesuatu dengan memberi tekanan, baik sengaja (misalnya menginjak rem 車のブレーキを踏む) maupun tidak sengaja (misalnya menginjak kaki orang di kereta 足を踏む). Jika kakinya yang terinjak oleh orang lain, menggunakan bentuk pasif 踏まれる (fumareru).",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "満員電車で誰かに足を踏まれて痛かったです。",
+      "id": "Kaki saya terinjak seseorang di kereta yang penuh sesak sehingga terasa sakit.",
+      "level": "n4",
+      "tags": [
+        "transportasi",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "赤信号が見えたので、すぐにブレーキを踏みました。",
+      "id": "Karena melihat lampu merah, saya segera menginjak rem.",
+      "level": "n4",
+      "tags": [
+        "transportasi",
+        "kendaraan"
+      ]
+    }
+  ],
+  "synonyms": [
+    "立ち入る"
+  ],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1450270",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00696",
+  "word": "盗む",
+  "reading": "ぬすむ",
+  "romaji": "nusumu",
+  "meaning_id": "mencuri, merampas tanpa izin",
+  "meaning_en": "to steal, to rob",
+  "jlpt": "n4",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "hukum",
+    "kehidupan-sehari",
+    "masyarakat"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja transitif yang berarti mengambil barang milik orang lain secara diam-diam tanpa izin. Dalam tata bahasa JLPT N4 sering muncul dalam bentuk pasif berkonotasi penderitaan (meiwaku ukemi / suffering passive), misalnya 泥棒に財布を盗まれた (dompet saya dicuri oleh maling).",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "駅の駐輪場に止めておいた自転車を盗まれてしまいました。",
+      "id": "Sepeda yang saya parkir di tempat parkir stasiun telah dicuri.",
+      "level": "n4",
+      "tags": [
+        "transportasi",
+        "kejadian"
+      ]
+    },
+    {
+      "jp": "他人の物を盗むのは法律で禁止されています。",
+      "id": "Mencuri barang milik orang lain dilarang oleh hukum.",
+      "level": "n4",
+      "tags": [
+        "hukum",
+        "sosial"
+      ]
+    }
+  ],
+  "synonyms": [
+    "奪う",
+    "くすねる"
+  ],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1448440",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00698",
+  "word": "生きる",
+  "reading": "いきる",
+  "romaji": "ikiru",
+  "meaning_id": "hidup, bernyawa, menjalani kehidupan",
+  "meaning_en": "to live, to exist, to survive",
+  "jlpt": "n4",
+  "pos": "verb-ru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "filsafat",
+    "kehidupan-sehari",
+    "biologi"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja intransitif yang bermakna memiliki kehidupan hayati / bernyawa (lawan dari 死ぬ/shinu), atau menjalani hidup dengan tujuan tertentu (misal: 自分のために生きる/hidup demi diri sendiri). Berbeda dengan 住む (sumu) yang berarti 'bertempat tinggal di suatu lokasi'.",
+  "conj_type": "ichidan",
+  "examples": [
+    {
+      "jp": "水がなければ、人間も動物も長く生きることができません。",
+      "id": "Jika tidak ada air, manusia maupun hewan tidak dapat bertahan hidup lama.",
+      "level": "n4",
+      "tags": [
+        "alam",
+        "biologi"
+      ]
+    },
+    {
+      "jp": "祖父は九十歳まで元気に生きました。",
+      "id": "Kakek saya hidup dengan sehat sampai usia sembilan puluh tahun.",
+      "level": "n4",
+      "tags": [
+        "keluarga",
+        "kesehatan"
+      ]
+    }
+  ],
+  "synonyms": [
+    "生存する",
+    "暮らす"
+  ],
+  "antonyms": [
+    "死ぬ"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1378520",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00699",
+  "word": "沸く",
+  "reading": "わく",
+  "romaji": "waku",
+  "meaning_id": "mendidih; bergelora, bersemangat (suasana)",
+  "meaning_en": "to boil, to grow hot (water); to get excited (crowd)",
+  "jlpt": "n4",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari",
+    "makanan",
+    "perasaan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja intransitif (自動詞). Arti harafiahnya adalah air yang mendidih atau air bak mandi yang sudah cukup panas (お湯が沸く / お風呂が沸く). Pasangan transitifnya adalah 沸かす (wakasu - mendidihkan/memanaskan). Secara kiasan juga digunakan ketika suasana penonton bersorak gembira (会場が沸く).",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "お湯が沸いたら、お茶の葉を入れてください。",
+      "id": "Kalau airnya sudah mendidih, tolong masukkan daun tehnya.",
+      "level": "n4",
+      "tags": [
+        "dapur",
+        "minuman"
+      ]
+    },
+    {
+      "jp": "お風呂が沸いたので、先に入ってもいいですよ。",
+      "id": "Air mandi air hangatnya sudah siap, jadi kamu boleh mandi duluan lho.",
+      "level": "n4",
+      "tags": [
+        "rumah",
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [
+    "煮える",
+    "沸騰する"
+  ],
+  "antonyms": [
+    "冷める"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1606680",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00704",
+  "word": "うかがう",
+  "reading": "うかがう",
+  "romaji": "ukagau",
+  "meaning_id": "berkunjung; bertanya; mendengar (ragam merendah / kenjougo)",
+  "meaning_en": "to visit; to ask; to hear (humble / kenjougo)",
+  "jlpt": "n4",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "keigo",
+    "bisnis",
+    "komunikasi"
+  ],
+  "register": "humble",
+  "lawan_bicara": [
+    "atasan",
+    "rekan",
+    "tamu",
+    "klien"
+  ],
+  "nuance": "Kata kerja ragam merendahkan diri (謙譲語 / kenjougo) dengan tiga fungsi utama: (1) pengganti 行く/来る saat bertamu ke rumah/kantor pihak yang dihormati, (2) pengganti 聞く saat bertanya atau mendengar kabar, (3) pengganti 尋ねる saat mengajukan pertanyaan kepada atasan/klien.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "明日、午後三時に先生の研究室へうかがってもよろしいでしょうか。",
+      "id": "Bolehkah saya berkunjung ke ruang kerja Sensei besok pada pukul tiga sore?",
+      "level": "n4",
+      "tags": [
+        "keigo",
+        "sopan"
+      ]
+    },
+    {
+      "jp": "ちょっとお伺いしたいことがあるのですが、今お時間ありますか。",
+      "id": "Ada sedikit hal yang ingin saya tanyakan, apakah sekarang Anda punya waktu?",
+      "level": "n4",
+      "tags": [
+        "keigo",
+        "pertanyaan"
+      ]
+    }
+  ],
+  "synonyms": [
+    "参る",
+    "聞く",
+    "尋ねる"
+  ],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1172230",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00706",
+  "word": "止む",
+  "reading": "やむ",
+  "romaji": "yamu",
+  "meaning_id": "berhenti, reda (hujan, angin, badai, rasa sakit)",
+  "meaning_en": "to cease, to stop (of rain, wind, noise, etc.)",
+  "jlpt": "n4",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "cuaca",
+    "alam",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja intransitif (自動詞) yang khusus digunakan untuk fenomena alam seperti hujan (雨が止む), angin (風が止む), salju, atau bunyi bising yang berhenti dengan sendirinya. Berbeda dengan 止まる (tomaru) yang dipakai untuk gerakan objek/kendaraan yang berhenti.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "雨が止むまで、喫茶店でコーヒーを飲みながら待ちましょう。",
+      "id": "Mari kita menunggu di kedai kopi sambil minum kopi sampai hujan reda.",
+      "level": "n4",
+      "tags": [
+        "cuaca",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "夕方になって、強かった風がようやく止みました。",
+      "id": "Menjelang sore hari, angin yang kencang akhirnya reda.",
+      "level": "n4",
+      "tags": [
+        "cuaca",
+        "alam"
+      ]
+    }
+  ],
+  "synonyms": [
+    "治まる",
+    "途切れる"
+  ],
+  "antonyms": [
+    "降る",
+    "吹き荒れる"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1310640",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00719",
+  "word": "焼く",
+  "reading": "やく",
+  "romaji": "yaku",
+  "meaning_id": "memanggang, membakar, menggoreng wajan",
+  "meaning_en": "to bake, to grill, to roast, to toast",
+  "jlpt": "n4",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "memasak",
+    "dapur",
+    "makanan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja transitif (他動詞) yang mencakup metode memasak dengan panas langsung atau oven: memanggang roti (パンを焼く), membakar ikan/daging (魚を焼く), atau membakar sampah (ごみを焼く). Pasangan intransitifnya adalah 焼ける (yakeru / terpanggang/terbakar).",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "朝ご飯に食パンを焼いて、バターを塗って食べました。",
+      "id": "Untuk sarapan, saya memanggang roti tawar lalu mengolesinya dengan mentega dan memakannya.",
+      "level": "n4",
+      "tags": [
+        "makanan",
+        "pagi"
+      ]
+    },
+    {
+      "jp": "庭で家族と一緒に魚や肉を焼いてバーベキューをしました。",
+      "id": "Di halaman rumah saya memanggang ikan dan daging bersama keluarga untuk barbeku.",
+      "level": "n4",
+      "tags": [
+        "makanan",
+        "keluarga"
+      ]
+    }
+  ],
+  "synonyms": [
+    "焙る",
+    "炙る"
+  ],
+  "antonyms": [
+    "煮る",
+    "茹でる"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1350600",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00731",
+  "word": "過ぎる",
+  "reading": "すぎる",
+  "romaji": "sugiru",
+  "meaning_id": "berlalu, lewat; melampaui, terlalu (berlebihan)",
+  "meaning_en": "to pass (by), to elapse; to exceed, to be too much",
+  "jlpt": "n4",
+  "pos": "verb-ru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "waktu",
+    "kondisi",
+    "derajat"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja ichidan (一段動詞). Memiliki dua penggunaan mendasar: (1) sebagai kata kerja independen yang berarti waktu/tempat berlalu atau melampaui batas (contoh: 約束の時間を過ぎる / melewati waktu janji), dan (2) sebagai kata kerja bantu setelah akar kata kerja masu / kata sifat untuk menyatakan kadar berlebihan (contoh: 食べすぎる / makan berlebihan, 高すぎる / terlalu mahal).",
+  "conj_type": "ichidan",
+  "examples": [
+    {
+      "jp": "約束の時間を三十分も過ぎてから友達が来ました。",
+      "id": "Teman saya datang setelah lewat tiga puluh menit dari waktu janjian.",
+      "level": "n4",
+      "tags": [
+        "waktu",
+        "pertemuan"
+      ]
+    },
+    {
+      "jp": "昨夜はお酒を飲みすぎて、今朝は頭が痛いです。",
+      "id": "Tadi malam saya terlalu banyak minum alkohol, sehingga pagi ini kepala saya sakit.",
+      "level": "n4",
+      "tags": [
+        "kesehatan",
+        "kondisi"
+      ]
+    }
+  ],
+  "synonyms": [
+    "経過する",
+    "超える"
+  ],
+  "antonyms": [
+    "及ばない",
+    "足りない"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "2106790",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00738",
+  "word": "揺れる",
+  "reading": "ゆれる",
+  "romaji": "yureru",
+  "meaning_id": "bergoyang, berguncang, berayun",
+  "meaning_en": "to shake, to sway, to swing, to rock",
+  "jlpt": "n4",
+  "pos": "verb-ru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "gerakan",
+    "alam",
+    "keadaan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja intransitif (一段自動詞) untuk gerakan objek yang berayun-ayun atau terguncang karena tiupan angin, gelombang ombak, pergerakan kendaraan, atau gempa bumi (contoh: 地震で家が大きく揺れた / rumah berguncang hebat akibat gempa; 風で木の葉が揺れる / daun pohon bergoyang ditiup angin). Pasangan transitifnya adalah 揺らす (yurasu / menggoyang-goyangkan).",
+  "conj_type": "ichidan",
+  "examples": [
+    {
+      "jp": "強い地震が発生して、部屋のシャンデリアが激しく揺れました。",
+      "id": "Gempa bumi kuat terjadi, dan lampu gantung di ruangan berguncang dengan hebat.",
+      "level": "n4",
+      "tags": [
+        "bencana",
+        "kejadian"
+      ]
+    },
+    {
+      "jp": "船が波で大きく揺れたため、少し気分が悪くなりました。",
+      "id": "Karena kapal berguncang hebat diterpa ombak, saya merasa agak mual.",
+      "level": "n4",
+      "tags": [
+        "transportasi",
+        "perjalanan"
+      ]
+    }
+  ],
+  "synonyms": [
+    "揺らぐ",
+    "動揺する"
+  ],
+  "antonyms": [
+    "静止する",
+    "安定する"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1545710",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00740",
+  "word": "祈る",
+  "reading": "いのる",
+  "romaji": "inoru",
+  "meaning_id": "berdoa, mendoakan, memohon keselamatan/kesuksesan",
+  "meaning_en": "to pray, to wish for",
+  "jlpt": "n4",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "perasaan",
+    "agama",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja transitif (五段他動詞). Berarti memanjatkan doa kepada Tuhan/dewa di kuil (神に祈る), atau mendoakan keberhasilan, kebahagiaan, dan kesehatan seseorang dalam interaksi sosial (contoh: 成功を祈っています / saya mendoakan kesuksesanmu; ご無事を祈ります / saya berdoa untuk keselamatanmu).",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "家族の健康と安全を神様にお祈りしました。",
+      "id": "Saya berdoa kepada Tuhan memohon kesehatan dan keselamatan keluarga.",
+      "level": "n4",
+      "tags": [
+        "doa",
+        "keluarga"
+      ]
+    },
+    {
+      "jp": "明日から始まる試験で合格できるよう、心から祈っています。",
+      "id": "Saya mendoakan dari lubuk hati agar kamu bisa lulus ujian yang dimulai besok.",
+      "level": "n4",
+      "tags": [
+        "harapan",
+        "ujian"
+      ]
+    }
+  ],
+  "synonyms": [
+    "願う",
+    "拝む",
+    "祈願する"
+  ],
+  "antonyms": [
+    "呪う"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1222770",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00741",
+  "word": "致す",
+  "reading": "いたす",
+  "romaji": "itasu",
+  "meaning_id": "melakukan, mengerjakan (ragam merendahkan diri / kenjougo)",
+  "meaning_en": "to do (humble form of suru / kenjougo)",
+  "jlpt": "n4",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "keigo",
+    "bisnis",
+    "komunikasi"
+  ],
+  "register": "humble",
+  "lawan_bicara": [
+    "atasan",
+    "klien",
+    "tamu",
+    "pelanggan"
+  ],
+  "nuance": "Bentuk kenjougo (謙譲語 / humble speech) dari kata kerja する (suru / melakukan). Sangat produktif dalam pola keigo: お + akar kata kerja + いたします (contoh: お願いいたします / mohon bantuannya; ご案内いたします / saya akan memandu Anda; よろしくお願いいたします). Jangan pernah gunakan untuk aksi orang lain / lawan bicara.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "それでは、私が会議の準備を担当させていただきます。よろしくお願いいたします。",
+      "id": "Kalau begitu, izinkan saya yang menangani persiapan rapat. Mohon kerja samanya.",
+      "level": "n4",
+      "tags": [
+        "bisnis",
+        "keigo"
+      ]
+    },
+    {
+      "jp": "詳しい資料をメールでお送りいたしますので、ご確認ください。",
+      "id": "Saya akan mengirimkan dokumen rinciannya melalui email, silakan diperiksa.",
+      "level": "n4",
+      "tags": [
+        "bisnis",
+        "komunikasi"
+      ]
+    }
+  ],
+  "synonyms": [
+    "する",
+    "行う",
+    "仕る"
+  ],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1421900",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00742",
+  "word": "噛む",
+  "reading": "かむ",
+  "romaji": "kamu",
+  "meaning_id": "menggigit, mengunyah",
+  "meaning_en": "to bite, to chew",
+  "jlpt": "n4",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "makan",
+    "tubuh",
+    "kesehatan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja transitif (五段他動詞) yang berarti: (1) melumat makanan dengan gigi/mengunyah (contoh: よく噛んで食べる / makan dengan mengunyah baik-baik), atau (2) menggigit dengan gigi secara tajam (contoh: 犬に噛まれる / digigit anjing). Dalam bahasa gaul percakapan media juga berarti 'keseleo lidah saat berbicara lisan' (舌を噛む / 言葉を噛む).",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "消化によくありませんから、食べ物はよく噛んでから飲み込んでください。",
+      "id": "Karena tidak baik untuk pencernaan, kunyahlah makanan baik-baik sebelum menelannya.",
+      "level": "n4",
+      "tags": [
+        "kesehatan",
+        "makanan"
+      ]
+    },
+    {
+      "jp": "公園を散歩しているときに、突然近所の犬に足を噛まれました。",
+      "id": "Saat sedang jalan-jalan santai di taman, kaki saya tiba-tiba digigit oleh anjing tetangga.",
+      "level": "n4",
+      "tags": [
+        "kejadian",
+        "hewan"
+      ]
+    }
+  ],
+  "synonyms": [
+    "咀嚼する",
+    "齧る"
+  ],
+  "antonyms": [
+    "丸呑みする"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "2826405",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00746",
+  "word": "申し上げる",
+  "reading": "もうしあげる",
+  "romaji": "moushiageru",
+  "meaning_id": "menyampaikan, mengatakan (bentuk merendah)",
+  "meaning_en": "to say; to tell; to state (humble)",
+  "jlpt": "n4",
+  "pos": "verb-ru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "keigo-vocabulary",
+    "bisnis",
+    "sopan-santun"
+  ],
+  "register": "humble",
+  "lawan_bicara": [
+    "atasan",
+    "pelanggan",
+    "rekan"
+  ],
+  "nuance": "Merupakan ragam bahasa merendahkan diri (kenjougo) tingkat tinggi dari 言う (iu) atau 申す (mousu). Digunakan untuk menyampaikan pesan atau pernyataan secara santun kepada atasan atau pelanggan. Berbeda dengan おっしゃる yang merupakan bentuk penghormatan (sonkeigo) untuk tindakan pihak lawan bicara.",
+  "conj_type": "ichidan",
+  "examples": [
+    {
+      "jp": "皆様の温かいご支援に心からお礼を申し上げます。",
+      "id": "Saya menyampaikan terima kasih yang tulus atas dukungan hangat Anda sekalian.",
+      "level": "n4",
+      "tags": [
+        "keigo-vocabulary",
+        "sopan-santun"
+      ]
+    },
+    {
+      "jp": "担当者が戻り次第、こちらからお電話を差し上げるよう申し伝えます。",
+      "id": "Segera setelah penanggung jawab kembali, saya akan sampaikan agar menelepon kembali dari pihak kami.",
+      "level": "n4",
+      "tags": [
+        "bisnis",
+        "komunikasi"
+      ]
+    }
+  ],
+  "synonyms": [
+    "申す",
+    "申し述べる"
+  ],
+  "antonyms": [
+    "おっしゃる"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1362950",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00753",
+  "word": "利用",
+  "reading": "りよう",
+  "romaji": "riyou",
+  "meaning_id": "memanfaatkan, menggunakan (fasilitas/kesempatan)",
+  "meaning_en": "use; utilization; making use of; application",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari",
+    "aksi",
+    "teknologi"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Bermakna memanfaatkan fungsi sarana umum, fasilitas transportasi, sistem aplikasi, atau peluang demi faedah praktis tertentu. Berbeda dengan 使う (tsukau) yang berfokus pada pemakaian alat fisik sederhana (seperti pulpen, pisau, payung, uang).",
+  "conj_type": "suru",
+  "examples": [
+    {
+      "jp": "私は毎朝通勤するときに地下鉄の便利な路線を利用しています。",
+      "id": "Saya memanfaatkan jalur kereta bawah tanah yang praktis setiap pagi saat berangkat kerja.",
+      "level": "n4",
+      "tags": [
+        "perjalanan",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "市立図書館のパソコンとインターネットは誰でも自由に利用できます。",
+      "id": "Komputer dan internet perpustakaan kota dapat digunakan secara bebas oleh siapa saja.",
+      "level": "n4",
+      "tags": [
+        "teknologi",
+        "pendidikan"
+      ]
+    }
+  ],
+  "synonyms": [
+    "活用",
+    "使用"
+  ],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1549660",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00754",
+  "word": "飾る",
+  "reading": "かざる",
+  "romaji": "kazaru",
+  "meaning_id": "menghias, memajang, mendekorasi",
+  "meaning_en": "to decorate; to adorn; to display; to embellish",
+  "jlpt": "n4",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari",
+    "seni-budaya",
+    "aksi"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "keluarga",
+    "umum"
+  ],
+  "nuance": "Kata kerja transitif godan yang bermakna memajang atau menghiasi ruangan dengan benda hiasan agar tampak indah dan semarak. Berbeda dengan 片付ける (katadukeru / membereskan barang agar rapi tersimpan).",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "友達の誕生日パーティーのためにみんなで部屋をきれいに飾りました。",
+      "id": "Kami bersama-sama menghias kamar dengan indah demi pesta ulang tahun teman.",
+      "level": "n4",
+      "tags": [
+        "hiburan",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "玄関の棚の上に季節のきれいな花を花瓶に飾っておきましょう。",
+      "id": "Mari kita pajang bunga musiman yang cantik di dalam vas di atas rak pintu masuk.",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari",
+        "seni-budaya"
+      ]
+    }
+  ],
+  "synonyms": [
+    "装飾する",
+    "デコレーションする"
+  ],
+  "antonyms": [
+    "片付ける"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1357210",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00757",
+  "word": "けんかする",
+  "reading": "けんかする",
+  "romaji": "kenkasuru",
+  "meaning_id": "bertengkar, berselisih",
+  "meaning_en": "to quarrel; to fight; to have an argument",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 1,
+  "domain": [
+    "pertemanan",
+    "emosi-negatif",
+    "komunikasi"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "keluarga",
+    "rekan"
+  ],
+  "nuance": "Menunjukkan pertengkaran mulut atau fisik antar individu yang dekat seperti saudara, teman, atau pasangan. Sering ditulis dengan kanji 喧嘩する. Berbeda dengan 争う (arasou) yang bernuansa persaingan memperebutkan sesuatu atau sengketa resmi yang lebih formal.",
+  "conj_type": "suru",
+  "examples": [
+    {
+      "jp": "昨日テレビのチャンネルの取り合いで弟とけんかしました。",
+      "id": "Kemarin saya bertengkar dengan adik laki-laki gara-gara berebut saluran televisi.",
+      "level": "n4",
+      "tags": [
+        "keluarga",
+        "emosi-negatif"
+      ]
+    },
+    {
+      "jp": "些細なことで友達とけんかしてしまったので早く謝りたいです。",
+      "id": "Karena terlanjur bertengkar dengan teman akibat masalah sepele, saya ingin lekas meminta maaf.",
+      "level": "n4",
+      "tags": [
+        "pertemanan",
+        "komunikasi"
+      ]
+    }
+  ],
+  "synonyms": [
+    "言い争う",
+    "口論する"
+  ],
+  "antonyms": [
+    "仲直りする"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": null,
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "reference",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00758",
+  "word": "間違える",
+  "reading": "まちがえる",
+  "romaji": "machigaeru",
+  "meaning_id": "melakukan kesalahan, salah (memilih/mengenali)",
+  "meaning_en": "to make a mistake; to err; to confuse (one with another)",
+  "jlpt": "n4",
+  "pos": "verb-ru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "aksi",
+    "pendidikan",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja transitif ichidan yang menyatakan pelaku secara tidak sengaja salah memilih, salah menjawab, atau salah mengenali orang/benda. Berbeda dengan bentuk intransitifnya 間違う (machigau) yang lebih menyoroti kondisi bahwa faktanya salah.",
+  "conj_type": "ichidan",
+  "examples": [
+    {
+      "jp": "昨日の算数のテストで一番簡単な計算問題を間違えてしまいました。",
+      "id": "Pada ujian matematika kemarin saya tidak sengaja salah menjawab soal berhitung yang paling mudah.",
+      "level": "n4",
+      "tags": [
+        "pendidikan",
+        "kejadian"
+      ]
+    },
+    {
+      "jp": "夜道が暗くて曲がるべき交差点を一つ間違えてしまいました。",
+      "id": "Karena jalan malam gelap, saya salah belok di satu persimpangan yang seharusnya dilewati.",
+      "level": "n4",
+      "tags": [
+        "perjalanan",
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [
+    "誤る",
+    "間違う"
+  ],
+  "antonyms": [
+    "正す",
+    "当てる"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1215330",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00761",
+  "word": "行う",
+  "reading": "おこなう",
+  "romaji": "okonau",
+  "meaning_id": "mengadakan, melaksanakan, menyelenggarakan",
+  "meaning_en": "to perform; to conduct; to carry out; to hold",
+  "jlpt": "n4",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "aksi",
+    "pekerjaan",
+    "sosial"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "rekan",
+    "atasan",
+    "umum"
+  ],
+  "nuance": "Kata kerja transitif godan formal untuk menyelenggarakan acara, eksperimen, survei, upacara, atau kegiatan resmi. Cenderung lebih resmi dan formal dibandingkan kata する (suru) atau やる (yaru) yang dipakai dalam kegiatan santai sehari-hari.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "来週の月曜日に新しい事業に関する会議を行います。",
+      "id": "Kami akan menyelenggarakan rapat mengenai proyek bisnis baru pada hari Senin minggu depan.",
+      "level": "n4",
+      "tags": [
+        "pekerjaan",
+        "bisnis"
+      ]
+    },
+    {
+      "jp": "大学の大講堂で留学生のためのスピーチ大会が行われました。",
+      "id": "Lomba pidato bagi para mahasiswa asing telah diselenggarakan di auditorium besar universitas.",
+      "level": "n4",
+      "tags": [
+        "pendidikan",
+        "sosial"
+      ]
+    }
+  ],
+  "synonyms": [
+    "実施する",
+    "開催する",
+    "実行する"
+  ],
+  "antonyms": [
+    "中止する"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1589060",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00762",
+  "word": "無くなる",
+  "reading": "なくなる",
+  "romaji": "nakunaru",
+  "meaning_id": "hilang, habis, lenyap",
+  "meaning_en": "to disappear; to be lost; to run out; to go missing",
+  "jlpt": "n4",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kejadian",
+    "perubahan",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja intransitif godan yang menyatakan persediaan barang habis atau barang hilang tidak dapat ditemukan. Ditulis 無くなる untuk benda fisik atau kesempatan, berbeda dengan 亡くなる yang khusus bermakna orang meninggal dunia.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "上着のポケットに入れておいたはずの定期券が無くなりました。",
+      "id": "Tiket langganan kereta yang seharusnya saya taruh di saku jaket telah hilang.",
+      "level": "n4",
+      "tags": [
+        "kejadian",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "冷蔵庫に入っていた牛乳が無くなったので買いに行きます。",
+      "id": "Karena susu yang ada di lemari es sudah habis, saya akan pergi membelinya.",
+      "level": "n4",
+      "tags": [
+        "makanan-minuman",
+        "belanja"
+      ]
+    }
+  ],
+  "synonyms": [
+    "消える",
+    "尽きる",
+    "失われる"
+  ],
+  "antonyms": [
+    "見つかる",
+    "現れる"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1529550",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00764",
+  "word": "痩せる",
+  "reading": "やせる",
+  "romaji": "yaseru",
+  "meaning_id": "menjadi kurus, menurunkan berat badan",
+  "meaning_en": "to lose weight; to become thin; to slim down",
+  "jlpt": "n4",
+  "pos": "verb-ru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kesehatan",
+    "perubahan",
+    "deskripsi"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "keluarga",
+    "rekan"
+  ],
+  "nuance": "Kata kerja intransitif ichidan yang menyatakan proses berkurangnya berat tubuh atau menjadi langsing. Untuk mendeskripsikan kondisi bentuk fisik seseorang yang kurus saat ini, memakai bentuk 痩せている. Berlawanan dengan 太る (futoru / bertambah gemuk).",
+  "conj_type": "ichidan",
+  "examples": [
+    {
+      "jp": "毎朝のジョギングを続けたら三か月で五キロ痩せました。",
+      "id": "Setelah rutin jogging setiap pagi, saya berhasil menurunkan berat badan lima kilogram dalam tiga bulan.",
+      "level": "n4",
+      "tags": [
+        "kesehatan",
+        "olahraga"
+      ]
+    },
+    {
+      "jp": "山田さんは最近少し痩せて以前のズボンが大きくなりました。",
+      "id": "Yamada-san belakangan ini agak kurus sehingga celana panjang yang dulu menjadi kedodoran.",
+      "level": "n4",
+      "tags": [
+        "kesehatan",
+        "deskripsi"
+      ]
+    }
+  ],
+  "synonyms": [
+    "スリムになる",
+    "減量する"
+  ],
+  "antonyms": [
+    "太る"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1605510",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00765",
+  "word": "寝坊",
+  "reading": "ねぼう",
+  "romaji": "nebou",
+  "meaning_id": "bangun kesiangan, kesiangan bangun tidur",
+  "meaning_en": "oversleeping; sleeping in late; late riser",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari",
+    "kejadian"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "keluarga",
+    "rekan"
+  ],
+  "nuance": "Bisa berupa kata benda ataupun kata kerja (寝坊する) yang menyatakan tidak sengaja tertidur melebihi waktu bangun normal sehingga berakibat terlambat. Berbeda dengan 二度寝 (nidone / tidur kembali setelah sempat bangun) atau 夜更かし (yofukashi / begadang).",
+  "conj_type": "suru",
+  "examples": [
+    {
+      "jp": "目覚まし時計を合わせるのを忘れて今朝は寝坊してしまいました。",
+      "id": "Karena lupa menyetel jam weker, pagi ini saya tidak sengaja bangun kesiangan.",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari",
+        "kejadian"
+      ]
+    },
+    {
+      "jp": "寝坊をして会社に遅刻しそうになったので急いで駅まで走りました。",
+      "id": "Karena bangun kesiangan dan hampir terlambat ke kantor, saya bergegas lari menuju stasiun.",
+      "level": "n4",
+      "tags": [
+        "pekerjaan",
+        "kejadian"
+      ]
+    }
+  ],
+  "synonyms": [
+    "朝寝坊"
+  ],
+  "antonyms": [
+    "早起き"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1360320",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00767",
+  "word": "光る",
+  "reading": "ひかる",
+  "romaji": "hikaru",
+  "meaning_id": "bersinar, berkilau, memancarkan cahaya",
+  "meaning_en": "to shine; to glitter; to sparkle; to flash",
+  "jlpt": "n4",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "alam-lingkungan",
+    "deskripsi",
+    "kejadian"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja intransitif godan yang menggambarkan kilauan cahaya dari lampu, bintang, permukaan air, atau permata. Berbeda dengan 輝く (kagayaku) yang mengandung konotasi kilauan sangat cemerlang atau kejayaan gemilang dalam pencapaian.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "遠くの暗い空で雷がピカッと激しく光るのが見えました。",
+      "id": "Terlihat kilat menyambar dan bersinar terang benderang di langit gelap yang jauh.",
+      "level": "n4",
+      "tags": [
+        "alam-lingkungan",
+        "kejadian"
+      ]
+    },
+    {
+      "jp": "月明かりが海に反射して静かな波の表面が白く光っています。",
+      "id": "Cahaya bulan memantul di laut sehingga permukaan ombak yang tenang tampak bersinar putih.",
+      "level": "n4",
+      "tags": [
+        "alam-lingkungan",
+        "deskripsi"
+      ]
+    }
+  ],
+  "synonyms": [
+    "輝く",
+    "きらめく"
+  ],
+  "antonyms": [
+    "陰る",
+    "曇る"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1272820",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00768",
+  "word": "～(て) しまう",
+  "reading": "～(て) しまう",
+  "romaji": "~(te) shimau",
+  "meaning_id": "terlanjur ~, tuntas melakukan ~",
+  "meaning_en": "to end up doing; to do accidentally; to finish completely",
+  "jlpt": "n4",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kejadian",
+    "emosi-negatif",
+    "perubahan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Bentuk tata bahasa kata kerja bantu godan setelah bentuk -te. Memiliki dua nuansa utama: (1) menyatakan penyesalan atau kekecewaan atas perbuatan yang tidak disengaja/terlanjur terjadi; (2) menyelesaikan suatu perbuatan sampai tuntas. Dalam percakapan kasual sering disingkat menjadi ～ちゃう atau ～じゃう.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "買ったばかりの大切な切符をどこかに落としてしまいました。",
+      "id": "Saya terlanjur menjatuhkan tiket berharga yang baru saja dibeli di suatu tempat.",
+      "level": "n4",
+      "tags": [
+        "kejadian",
+        "emosi-negatif"
+      ]
+    },
+    {
+      "jp": "明日の朝までにこのたくさんの宿題を全部やってしまいます。",
+      "id": "Saya akan menuntaskan semua PR yang banyak ini sebelum besok pagi.",
+      "level": "n4",
+      "tags": [
+        "pendidikan",
+        "aksi"
+      ]
+    }
+  ],
+  "synonyms": [
+    "～ちゃう"
+  ],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": null,
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "reference",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00784",
+  "word": "残る",
+  "reading": "のこる",
+  "romaji": "nokoru",
+  "meaning_id": "tersisa, tertinggal, masih ada",
+  "meaning_en": "to remain; to be left over; to stay behind",
+  "jlpt": "n4",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kejadian",
+    "perubahan",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja intransitif godan yang menandakan sesuatu masih tersisa setelah bagian lain dipakai atau orang lain telah pergi. Berpasangan dengan kata kerja transitif 残す (nokosu / menyisakan). Berbeda dengan 留まる (tomaru) yang berfokus pada tindakan sengaja bertahan di lokasi.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "夕食に作ったカレーがまだ少し残っているので明日の朝食べます。",
+      "id": "Karena kari yang dimasak untuk makan malam masih tersisa sedikit, saya akan memakannya besok pagi.",
+      "level": "n4",
+      "tags": [
+        "makanan-minuman",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "放課後に他の生徒が帰った後も一人で教室に残って勉強しました。",
+      "id": "Bahkan setelah murid-murid lain pulang usai sekolah, saya tetap tinggal sendirian di kelas untuk belajar.",
+      "level": "n4",
+      "tags": [
+        "pendidikan",
+        "kejadian"
+      ]
+    }
+  ],
+  "synonyms": [
+    "余る",
+    "留まる"
+  ],
+  "antonyms": [
+    "無くなる",
+    "消え去る"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1304510",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00789",
+  "word": "けがする",
+  "reading": "けがする",
+  "romaji": "kegasuru",
+  "meaning_id": "terluka, mengalami cedera fisik",
+  "meaning_en": "to get injured; to get hurt; to suffer a wound",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kesehatan",
+    "kejadian",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "keluarga",
+    "rekan"
+  ],
+  "nuance": "Mengalami cedera luka pada badan akibat insiden kecelakaan, jatuh, atau saat berolahraga. Umum pula ditulis 怪我する. Berbeda dengan 傷つく (kizutsuku) yang selain luka fisik juga lazim digunakan untuk perasaan batin yang terluka.",
+  "conj_type": "suru",
+  "examples": [
+    {
+      "jp": "雨の日のサッカーの試合中に激しく滑って足にけがをしました。",
+      "id": "Saya mengalami cedera pada bagian kaki karena terpeleset keras saat pertandingan sepak bola di hari hujan.",
+      "level": "n4",
+      "tags": [
+        "olahraga",
+        "kesehatan"
+      ]
+    },
+    {
+      "jp": "よく切れる包丁を使うときは手や指をけがしないように気をつけてください。",
+      "id": "Saat menggunakan pisau dapur yang tajam, berhati-hatilah agar tangan atau jari tidak terluka.",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari",
+        "kesehatan"
+      ]
+    }
+  ],
+  "synonyms": [
+    "負傷する",
+    "傷を負う"
+  ],
+  "antonyms": [
+    "治る"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": null,
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "reference",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00792",
+  "word": "～だす",
+  "reading": "～だす",
+  "romaji": "~dasu",
+  "meaning_id": "mulai mendadak ~, tiba-tiba mulai ~",
+  "meaning_en": "to start doing; to begin suddenly; to burst out",
+  "jlpt": "n4",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "perubahan",
+    "kejadian",
+    "aksi"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Sufiks kata kerja bantu godan yang dilekatkan pada pangkal kata kerja bentuk masu (misalnya: 降り出す / mendadak turun hujan, 泣き出す / tiba-tiba menangis). Berbeda dengan ～始める (hajimeru) yang menggambarkan proses mulai secara wajar bertahap atau terencana, ～だす menekankan kejadian yang pecah secara spontan dan tak terduga.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "午後になって急に空が暗くなり激しい雨が降り出しました。",
+      "id": "Memasuki siang hari langit mendadak menggelap dan hujan lebat mulai turun secara tiba-tiba.",
+      "level": "n4",
+      "tags": [
+        "alam-lingkungan",
+        "kejadian"
+      ]
+    },
+    {
+      "jp": "お腹が空いたのか、赤ちゃんが突然大きな声で激しく泣き出しました。",
+      "id": "Mungkin karena lapar, bayi itu mendadak mulai menangis kencang dengan suara yang keras.",
+      "level": "n4",
+      "tags": [
+        "keluarga",
+        "kejadian"
+      ]
+    }
+  ],
+  "synonyms": [
+    "～始める",
+    "急に～する"
+  ],
+  "antonyms": [
+    "～やめる",
+    "～終わる"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": null,
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "reference",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00795",
+  "word": "踊る",
+  "reading": "おどる",
+  "romaji": "odoru",
+  "meaning_id": "menari; berdansa",
+  "meaning_en": "to dance",
+  "jlpt": "n4",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "seni",
+    "hiburan",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "keluarga",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Menari mengikuti irama musik dengan gerakan tubuh yang energik dan lincah, baik tarian modern maupun tarian rakyat (seperti Bon Odori). Berbeda dengan 舞う (mau) yang berfokus pada tarian anggun dan melayang.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "夏祭りで町の人たちと一緒に楽しく踊りました。",
+      "id": "Pada festival musim panas, saya menari dengan gembira bersama warga kota.",
+      "level": "n4",
+      "tags": [
+        "festival",
+        "kegiatan"
+      ]
+    },
+    {
+      "jp": "彼女は好きな音楽が流れると、部屋で楽しそうに踊り始めます。",
+      "id": "Saat musik kesukaannya diputar, dia mulai menari dengan riang di kamarnya.",
+      "level": "n4",
+      "tags": [
+        "musik",
+        "hiburan"
+      ]
+    }
+  ],
+  "synonyms": [
+    "ダンスする",
+    "舞う"
+  ],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1538440",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00796",
+  "word": "塗る",
+  "reading": "ぬる",
+  "romaji": "nuru",
+  "meaning_id": "mengoleskan; mengecat; memoles",
+  "meaning_en": "to paint; to smear; to apply (cream/paint/butter)",
+  "jlpt": "n4",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari",
+    "kesehatan",
+    "kegiatan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "keluarga",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Melumurkan atau meratakan benda cair, salep, cat, minyak, atau krim ke suatu permukaan. Contoh umum: バターを塗る (mengoles mentega), 薬を塗る (mengoleskan obat salep), 壁にペンキを塗る (mengecat dinding).",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "トーストにイチゴジャムをたっぷり塗って食べました。",
+      "id": "Saya mengoleskan banyak selai stroberi pada roti panggang lalu memakannya.",
+      "level": "n4",
+      "tags": [
+        "makanan",
+        "sarapan"
+      ]
+    },
+    {
+      "jp": "虫に刺されたところにこの軟膏を塗ると、すぐにかゆみが治まります。",
+      "id": "Jika kamu mengoleskan salep ini pada bagian yang digigit serangga, gatalnya akan segera reda.",
+      "level": "n4",
+      "tags": [
+        "kesehatan",
+        "perawatan"
+      ]
+    }
+  ],
+  "synonyms": [
+    "つける"
+  ],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "2862613",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00800",
+  "word": "用意",
+  "reading": "ようい",
+  "romaji": "youi",
+  "meaning_id": "persiapan; menyediakan; menyiapkan",
+  "meaning_en": "preparation; arrangement; to prepare; to get ready",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari",
+    "kegiatan",
+    "pekerjaan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Fokus pada penyediaan barang fisik, makanan, dana, atau materi konkret yang akan langsung dipakai (misal: 部屋を用意する = menyediakan kamar, 昼ご飯を用意する = menyiapkan makan siang). Berbeda dengan 準備 (junbi) yang mencakup persiapan rencana atau prosedur menyeluruh.",
+  "conj_type": "suru",
+  "examples": [
+    {
+      "jp": "明日のプレゼンのために必要な書類を用意しました。",
+      "id": "Saya telah menyiapkan dokumen-dokumen yang diperlukan untuk presentasi besok.",
+      "level": "n4",
+      "tags": [
+        "pekerjaan",
+        "persiapan"
+      ]
+    },
+    {
+      "jp": "出かける時間までに荷物の用意を済ませておいてください。",
+      "id": "Tolong selesaikan persiapan barang bawaan Anda sebelum waktu keberangkatan tiba.",
+      "level": "n4",
+      "tags": [
+        "perjalanan",
+        "jadwal"
+      ]
+    }
+  ],
+  "synonyms": [
+    "準備",
+    "手配"
+  ],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1546220",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00804",
+  "word": "通う",
+  "reading": "かよう",
+  "romaji": "kayou",
+  "meaning_id": "pulang-pergi (rutin); bolak-balik; menempuh jalan secara teratur",
+  "meaning_en": "to commute; to attend regularly; to go back and forth",
+  "jlpt": "n4",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "transportasi",
+    "sekolah",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "keluarga",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Menunjukkan mobilitas pulang-pergi yang dilakukan secara berkala dan berulang ke suatu tempat tujuan tetap, seperti ke sekolah (学校に通う), kantor (会社に通う), atau rumah sakit (病院に通う). Partikel yang menandai tujuannya adalah に.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "毎朝満員電車に乗って一時間かけて大学に通っています。",
+      "id": "Setiap pagi saya naik kereta penuh sesak selama satu jam untuk pulang-pergi kuliah.",
+      "level": "n4",
+      "tags": [
+        "transportasi",
+        "kuliah"
+      ]
+    },
+    {
+      "jp": "会話の練習をするために、週末は英会話教室に通っています。",
+      "id": "Untuk melatih percakapan, setiap akhir pekan saya rutin menghadiri tempat les bahasa Inggris.",
+      "level": "n4",
+      "tags": [
+        "belajar",
+        "kebiasaan"
+      ]
+    }
+  ],
+  "synonyms": [
+    "通勤する",
+    "通学する"
+  ],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1432850",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00812",
+  "word": "チェックする",
+  "reading": "チェックする",
+  "romaji": "chekku suru",
+  "meaning_id": "memeriksa; mengecek; menandai daftar periksa",
+  "meaning_en": "to check; to inspect; to verify",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "pekerjaan",
+    "belajar",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata serapan dari bahasa Inggris 'check'. Dipakai dalam kegiatan memastikan kesalahan, mengecek kelengkapan barang, memeriksa jawaban tes, atau mencentang poin daftar (checklist).",
+  "conj_type": "suru",
+  "examples": [
+    {
+      "jp": "メールを送信する前に、添付ファイルをもう一度チェックしてください。",
+      "id": "Tolong cek lampiran berkas sekali lagi sebelum mengirim email.",
+      "level": "n4",
+      "tags": [
+        "email",
+        "pekerjaan"
+      ]
+    },
+    {
+      "jp": "旅行へ出かける前に、パスポートがあるかチェックしました。",
+      "id": "Sebelum berangkat berwisata, saya mengecek apakah paspor saya sudah terbawa.",
+      "level": "n4",
+      "tags": [
+        "perjalanan",
+        "persiapan"
+      ]
+    }
+  ],
+  "synonyms": [
+    "確認する",
+    "調べる"
+  ],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": null,
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "reference",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00817",
+  "word": "遠慮",
+  "reading": "えんりょする",
+  "romaji": "enryo suru",
+  "meaning_id": "sungkan; menahan diri; ragu-ragu; menolak secara halus",
+  "meaning_en": "to hold back; to refrain; to hesitate; restraint",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kesopanan",
+    "budaya",
+    "percakapan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Sikap menahan diri atau tidak memaksakan kehendak agar tidak merepotkan orang lain. Sangat sering dipakai dalam ungkapan keramahan '遠慮しないで' (jangan sungkan) atau pengumuman larangan sopan 'ご遠慮ください' (mohon tidak melakukan).",
+  "conj_type": "suru",
+  "examples": [
+    {
+      "jp": "どうぞ遠慮しないで、お好きな料理をたくさん召し上がってください。",
+      "id": "Silakan jangan sungkan, nikmati masakan yang Anda sukai sebanyak-banyaknya.",
+      "level": "n4",
+      "tags": [
+        "keramahan",
+        "makanan"
+      ]
+    },
+    {
+      "jp": "図書館の中での大きな声での会話はご遠慮ください。",
+      "id": "Mohon untuk menahan diri dari berbicara dengan suara keras di dalam perpustakaan.",
+      "level": "n4",
+      "tags": [
+        "aturan",
+        "kesopanan"
+      ]
+    }
+  ],
+  "synonyms": [
+    "控え",
+    "辞退"
+  ],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1178450",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": "Input had reading 'えんりょする'; pos set to verb-suru"
+  }
+},
+{
+  "id": "vg-n4-00818",
+  "word": "亡くなる",
+  "reading": "なくなる",
+  "romaji": "nakunaru",
+  "meaning_id": "meninggal dunia; wafat; berpulang",
+  "meaning_en": "to pass away; to die (polite/euphemistic)",
+  "jlpt": "n4",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan",
+    "kesopanan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Bentuk eufemisme dan sopan untuk menyatakan kematian manusia (meninggal dunia). Menggantikan kata 死ぬ (shinu) yang terdengar terlalu lugas atau kasar. Jangan digunakan untuk hewan.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "私の祖母は九十歳で安らかに亡くなりました。",
+      "id": "Nenek saya meninggal dunia dengan tenang pada usia sembilan puluh tahun.",
+      "level": "n4",
+      "tags": [
+        "keluarga",
+        "berita-duka"
+      ]
+    },
+    {
+      "jp": "有名な作家が亡くなったというニュースを聞いて、とても残念です。",
+      "id": "Saya merasa sangat sedih mendengar berita bahwa penulis terkenal itu telah meninggal dunia.",
+      "level": "n4",
+      "tags": [
+        "berita",
+        "perasaan"
+      ]
+    }
+  ],
+  "synonyms": [
+    "他界する",
+    "死ぬ"
+  ],
+  "antonyms": [
+    "生まれる"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1518540",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00827",
+  "word": "伺う",
+  "reading": "うかがう",
+  "romaji": "ukagau",
+  "meaning_id": "berkunjung; bertanya; mendengar (bentuk merendah / kenjougo)",
+  "meaning_en": "to visit; to ask; to hear (humble kenjougo)",
+  "jlpt": "n4",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "kesopanan",
+    "bisnis",
+    "kehidupan-sehari"
+  ],
+  "register": "humble",
+  "lawan_bicara": [
+    "atasan",
+    "guru",
+    "klien",
+    "umum"
+  ],
+  "nuance": "Bentuk verba merendah (kenjougo) serbaguna untuk 3 kata: 1) 行く / 来る (berkunjung ke kediaman/kantor orang yang dihormati), 2) 聞く (bertanya kepada atasan/guru), 3) 聞く (mendengar kabar/penjelasan). Dipakai untuk perbuatan diri sendiri.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "明日の午後二時にお宅へ伺ってもよろしいでしょうか。",
+      "id": "Bolehkah saya berkunjung ke rumah Anda besok pukul dua siang?",
+      "level": "n4",
+      "tags": [
+        "kesopanan",
+        "janji-temu"
+      ]
+    },
+    {
+      "jp": "先生に卒業後の進路について詳しくお話を伺いました。",
+      "id": "Saya meminta penjelasan dan bertanya secara rinci kepada guru mengenai jalur masa depan setelah kelulusan.",
+      "level": "n4",
+      "tags": [
+        "pendidikan",
+        "bimbingan"
+      ]
+    }
+  ],
+  "synonyms": [
+    "参る",
+    "尋ねる",
+    "聞く"
+  ],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1305700",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00831",
+  "word": "～続ける",
+  "reading": "～つづける",
+  "romaji": "-tsuzukeru",
+  "meaning_id": "terus melakukan ...; terus-menerus ...",
+  "meaning_en": "to continue doing ~; to keep on doing ~",
+  "jlpt": "n4",
+  "pos": "verb-ru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "tata-bahasa",
+    "kegiatan",
+    "waktu"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Sufiks verba yang dilekatkan pada bentuk akar kata kerja (masu-stem). Menyatakan aksi atau proses yang terus berlangsung tanpa henti atau kebiasaan yang terus dilakukan berulang kali. Berkonjugasi seperti verba golongan ichidan.",
+  "conj_type": "ichidan",
+  "examples": [
+    {
+      "jp": "昨夜から降り続けた大雨は、今朝になってようやく止みました。",
+      "id": "Hujan deras yang terus turun sejak tadi malam akhirnya reda saat pagi tiba.",
+      "level": "n4",
+      "tags": [
+        "cuaca",
+        "tata-bahasa"
+      ]
+    },
+    {
+      "jp": "諦めずに毎日努力し続ければ、必ず試験に合格できますよ。",
+      "id": "Jika kamu terus berusaha setiap hari tanpa menyerah, kamu pasti bisa lulus ujian lho.",
+      "level": "n4",
+      "tags": [
+        "semangat",
+        "belajar"
+      ]
+    }
+  ],
+  "synonyms": [
+    "継続する"
+  ],
+  "antonyms": [
+    "～やめる",
+    "～終わる"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": null,
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "reference",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00836",
+  "word": "沸かす",
+  "reading": "わかす",
+  "romaji": "wakasu",
+  "meaning_id": "merebus (air); memanaskan (air mandi)",
+  "meaning_en": "to boil (water); to heat up (a bath)",
+  "jlpt": "n4",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "memasak",
+    "kehidupan-sehari",
+    "rumah"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "keluarga",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja transitif (tadouji) khusus untuk memanaskan air hingga mendidih (お湯を沸かす) atau memanaskan air bak mandi (お風呂を沸かす). Pasangan kata kerja intransitifnya adalah 沸く (waku / mendidih sendiri).",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "コーヒーを淹れるために、まずやかんにお湯を沸かしました。",
+      "id": "Untuk menyeduh kopi, pertama-tama saya merebus air panas di teko.",
+      "level": "n4",
+      "tags": [
+        "minuman",
+        "dapur"
+      ]
+    },
+    {
+      "jp": "お風呂を沸かしておいたから、体が冷めないうちに早く入ってね。",
+      "id": "Aku sudah memanaskan air bak mandi, lekaslah mandi selagi badanmu belum kedinginan ya.",
+      "level": "n4",
+      "tags": [
+        "keluarga",
+        "rumah"
+      ]
+    }
+  ],
+  "synonyms": [
+    "煮る"
+  ],
+  "antonyms": [
+    "冷やす"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1501660",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00841",
+  "word": "おいでになる",
+  "reading": "おいでになる",
+  "romaji": "oideninaru",
+  "meaning_id": "ada; pergi; datang (ragam hormat / sonkeigo)",
+  "meaning_en": "to be; to go; to come (honorific sonkeigo)",
+  "jlpt": "n4",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "kesopanan",
+    "bisnis",
+    "kehidupan-sehari"
+  ],
+  "register": "honorific",
+  "lawan_bicara": [
+    "atasan",
+    "klien",
+    "guru",
+    "tamu"
+  ],
+  "nuance": "Bentuk penghormatan tinggi (sonkeigo) yang menggantikan tiga kata kerja sekaligus: 居る (ada), 行く (pergi), dan 来る (datang). Setara tingkat kehalusannya dengan いらっしゃる. Hanya dipakai untuk subjek orang yang dihormati.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "部長はただいま社長室においでになりますので、少々お待ちください。",
+      "id": "Bapak Kepala Bagian saat ini sedang berada di ruang direktur, mohon tunggu sebentar.",
+      "level": "n4",
+      "tags": [
+        "bisnis",
+        "keberadaan"
+      ]
+    },
+    {
+      "jp": "先生、明日の懇親会にはおいでになりますでしょうか。",
+      "id": "Bapak Guru, apakah Anda berkenan hadir pada acara ramah-tamah besok?",
+      "level": "n4",
+      "tags": [
+        "kesopanan",
+        "undangan"
+      ]
+    }
+  ],
+  "synonyms": [
+    "いらっしゃる",
+    "お見えになる",
+    "来られる"
+  ],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1001180",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00846",
+  "word": "～始める",
+  "reading": "～はじめる",
+  "romaji": "~hajimeru",
+  "meaning_id": "mulai (melakukan sesuatu)",
+  "meaning_en": "to start doing ~, to begin to ~",
+  "jlpt": "n4",
+  "pos": "verb-ru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "aksi",
+    "perubahan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Pola kata kerja gabungan (akar masu + 始める) yang menyatakan permulaan suatu tindakan terencana atau proses bertahap. Berbeda dengan ～出す (dasu) yang menyatakan aksi yang bermula secara tiba-tiba tanpa kendali.",
+  "conj_type": "ichidan",
+  "examples": [
+    {
+      "jp": "午後になって空が暗くなり、雨が降り始めました。",
+      "id": "Menjelang siang langit menjadi gelap, dan hujan pun mulai turun.",
+      "level": "n4",
+      "tags": [
+        "alam-lingkungan",
+        "kejadian"
+      ]
+    },
+    {
+      "jp": "健康のために毎朝近所の公園を走り始めました。",
+      "id": "Demi kesehatan, saya mulai berlari di taman dekat rumah setiap pagi.",
+      "level": "n4",
+      "tags": [
+        "kesehatan",
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [
+    "～出す",
+    "開始する"
+  ],
+  "antonyms": [
+    "～終わる"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": null,
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "reference",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00849",
+  "word": "折れる",
+  "reading": "おれる",
+  "romaji": "oreru",
+  "meaning_id": "patah, terlipat, membelok",
+  "meaning_en": "to break, to snap, to be folded, to turn (corner)",
+  "jlpt": "n4",
+  "pos": "verb-ru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kejadian",
+    "perubahan",
+    "ruang-arah"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja intransitif (ichidan) yang menunjukkan benda panjang atau kaku patah menjadi dua bagian (seperti ranting pohon, pensil, tulang) atau berbelok arah. Berbeda dengan 割れる (wareru) yang dipakai khusus untuk benda datar atau kaca yang pecah berantakan.",
+  "conj_type": "ichidan",
+  "examples": [
+    {
+      "jp": "強い台風の風で庭の木の枝が折れてしまいました。",
+      "id": "Dahan pohon di halaman patah akibat kencangnya tiupan angin topan.",
+      "level": "n4",
+      "tags": [
+        "alam-lingkungan",
+        "kejadian"
+      ]
+    },
+    {
+      "jp": "郵便局の角を右に折れると、目の前に駅が見えます。",
+      "id": "Jika membelok ke kanan di sudut kantor pos, stasiun akan terlihat di depan mata.",
+      "level": "n4",
+      "tags": [
+        "perjalanan",
+        "ruang-arah"
+      ]
+    }
+  ],
+  "synonyms": [
+    "曲がる"
+  ],
+  "antonyms": [
+    "折る"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1385920",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00850",
+  "word": "輸入",
+  "reading": "ゆにゅう",
+  "romaji": "yunyuu",
+  "meaning_id": "impor, pemasukan barang luar negeri",
+  "meaning_en": "import, importation",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "ekonomi-keuangan",
+    "bisnis"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Aktivitas mendatangkan komoditas dagang dari negara lain ke dalam negeri (輸入する). Lawan katanya adalah 輸出 (yushutsu - ekspor) yang berarti menjual atau mengirim barang keluar negeri.",
+  "conj_type": "suru",
+  "examples": [
+    {
+      "jp": "日本は多くの石油や天然ガスを外国から輸入しています。",
+      "id": "Jepang mengimpor banyak minyak bumi dan gas alam dari luar negeri.",
+      "level": "n4",
+      "tags": [
+        "ekonomi-keuangan",
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "海外から珍しい果物を輸入する仕事に興味があります。",
+      "id": "Saya berminat pada pekerjaan mengimpor buah-buahan langka dari luar negeri.",
+      "level": "n4",
+      "tags": [
+        "bisnis",
+        "pekerjaan"
+      ]
+    }
+  ],
+  "synonyms": [
+    "移入"
+  ],
+  "antonyms": [
+    "輸出"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1538870",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00861",
+  "word": "ファックス",
+  "reading": "ファックス",
+  "romaji": "fakkusu",
+  "meaning_id": "faksimile, faks (mesin/dokumen)",
+  "meaning_en": "fax, facsimile",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "teknologi",
+    "bisnis",
+    "komunikasi"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Mesin atau layanan pengiriman salinan dokumen tertulis melalui saluran telepon (ファックスする / ファックスを送る). Di lingkungan kantor Jepang, penggunaan faks masih kerap dijumpai untuk pemesanan barang dan dokumen resmi.",
+  "conj_type": "suru",
+  "examples": [
+    {
+      "jp": "急ぎの用事ですから、この書類をすぐに会社へファックスしてください。",
+      "id": "Karena ini urusan mendesak, tolong segera kirimkan dokumen ini ke kantor lewat faks.",
+      "level": "n4",
+      "tags": [
+        "bisnis",
+        "komunikasi"
+      ]
+    },
+    {
+      "jp": "オフィスのファックスが故障して紙が出てこなくなりました。",
+      "id": "Mesin faks di kantor rusak sehingga kertasnya tidak mau keluar.",
+      "level": "n4",
+      "tags": [
+        "teknologi",
+        "pekerjaan"
+      ]
+    }
+  ],
+  "synonyms": [
+    "ファクシミリ"
+  ],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1108180",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00862",
+  "word": "負ける",
+  "reading": "まける",
+  "romaji": "makeru",
+  "meaning_id": "kalah, mengalah, memberi diskon",
+  "meaning_en": "to lose, to be defeated; to give a discount",
+  "jlpt": "n4",
+  "pos": "verb-ru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "olahraga",
+    "emosi-negatif",
+    "kejadian"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja intransitif (ichidan) yang menunjukkan kekalahan dalam pertandingan, perdebatan, atau godaan nafsu. Lawan katanya adalah 勝つ (katsu - menang). Dalam tawar-menawar pasar tradisional, juga bisa bermakna memotong harga.",
+  "conj_type": "ichidan",
+  "examples": [
+    {
+      "jp": "昨日の決勝戦で強い相手チームに負けてしまい、とても悔しかったです。",
+      "id": "Dalam pertandingan final kemarin, kami kalah dari tim lawan yang tangguh, dan rasanya sangat menyesal.",
+      "level": "n4",
+      "tags": [
+        "olahraga",
+        "emosi-negatif"
+      ]
+    },
+    {
+      "jp": "市場の店員さんに頼んで少し値段を負けてもらいました。",
+      "id": "Saya memohon kepada penjaga kios di pasar agar harganya sedikit dipotongkan.",
+      "level": "n4",
+      "tags": [
+        "belanja",
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [
+    "敗れる",
+    "敗北する"
+  ],
+  "antonyms": [
+    "勝つ"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1497980",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00868",
+  "word": "承知",
+  "reading": "しょうちする",
+  "romaji": "shouchisuru",
+  "meaning_id": "paham, maklum, menyetujui",
+  "meaning_en": "consent, acceptance, agreement, awareness",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "sopan-santun",
+    "keigo-vocabulary",
+    "bisnis",
+    "komunikasi"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "atasan",
+    "rekan",
+    "klien",
+    "umum"
+  ],
+  "nuance": "Ungkapan formal saat menerima permohonan atau memahami instruksi dalam dunia kerja (khususnya frasa '承知しました' / shouchi shimashita). Hindari pemakaian frasa kasual 了解 (ryoukai) kepada atasan bisnis karena dinilai kurang pantas.",
+  "conj_type": "suru",
+  "examples": [
+    {
+      "jp": "課長からのご指示の件、確かに承知いたしました。",
+      "id": "Mengenai arahan dari kepala seksi, tentu saya sudah memahaminya dengan baik.",
+      "level": "n4",
+      "tags": [
+        "pekerjaan",
+        "keigo-vocabulary"
+      ]
+    },
+    {
+      "jp": "危ない場所であることをあらかじめ十分に承知した上で参加しました。",
+      "id": "Saya berpartisipasi setelah terlebih dahulu memahami betul bahwa tempatnya berbahaya.",
+      "level": "n4",
+      "tags": [
+        "pikiran-opini",
+        "keputusan"
+      ]
+    }
+  ],
+  "synonyms": [
+    "了解",
+    "承諾",
+    "納得"
+  ],
+  "antonyms": [
+    "拒否",
+    "不同意"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1349480",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00871",
+  "word": "～おわる",
+  "reading": "～おわる",
+  "romaji": "~owaru",
+  "meaning_id": "selesai (melakukan sesuatu)",
+  "meaning_en": "to finish doing ~, to finish ~ing",
+  "jlpt": "n4",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "aksi",
+    "perubahan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Pola bentukan kata kerja majemuk (akar bentuk masu + 終わる) yang menunjukkan tuntasnya pelaksanaan suatu pekerjaan atau kegiatan hingga akhir. Lawan katanya adalah ～始める (mulai melakukan sesuatu).",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "宿題を全部やり終わったら、大好きなテレビ番組を見てもいいですよ。",
+      "id": "Kalau sudah selesai mengerjakan semua PR, boleh menonton acara televisi favorit lho.",
+      "level": "n4",
+      "tags": [
+        "pendidikan",
+        "hiburan"
+      ]
+    },
+    {
+      "jp": "図書館から借りてきた分厚い本をやっと読み終わりました。",
+      "id": "Akhirnya saya selesai membaca buku tebal yang saya pinjam dari perpustakaan.",
+      "level": "n4",
+      "tags": [
+        "hiburan",
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [
+    "～終える"
+  ],
+  "antonyms": [
+    "～始める"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": null,
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "reference",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00872",
+  "word": "暖房",
+  "reading": "だんぼう",
+  "romaji": "danbou",
+  "meaning_id": "pemanas ruangan, penghangat suhu ruangan",
+  "meaning_en": "indoor heating, heater",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "teknologi",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Sistem atau peralatan penghangat udara dalam ruang untuk menghadapi musim dingin (暖房をつける/消す). Lawan katanya adalah 冷房 (reibou) yang mendinginkan udara di musim panas.",
+  "conj_type": "suru",
+  "examples": [
+    {
+      "jp": "外が雪でとても寒いので、部屋の暖房の温度を少し上げました。",
+      "id": "Karena di luar bersalju dan sangat dingin, saya menaikkan sedikit suhu pemanas ruangan di kamar.",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari",
+        "teknologi"
+      ]
+    },
+    {
+      "jp": "冬の間は毎朝オフィスに着くとすぐに暖房のスイッチを入れます。",
+      "id": "Selama musim dingin, begitu tiba di kantor setiap pagi saya segera menyalakan tombol pemanas ruangan.",
+      "level": "n4",
+      "tags": [
+        "pekerjaan",
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [
+    "ヒーター",
+    "ストーブ"
+  ],
+  "antonyms": [
+    "冷房"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1419860",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00873",
+  "word": "留守",
+  "reading": "るす",
+  "romaji": "rusu",
+  "meaning_id": "tidak ada di rumah, sedang keluar",
+  "meaning_en": "absence, being away from home",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari",
+    "komunikasi"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Menunjukkan keadaan saat seseorang sedang bepergian dan tidak berada di rumah kediamannya (留守にする, 留守番). Berbeda dengan 不在 (fuzai) yang lebih bernuansa formal di dunia perkantoran.",
+  "conj_type": "suru",
+  "examples": [
+    {
+      "jp": "友達のアパートを訪ねて行きましたが、留守で会えませんでした。",
+      "id": "Saya pergi berkunjung ke apartemen teman, tetapi dia sedang tidak ada di rumah sehingga tidak bisa bertemu.",
+      "level": "n4",
+      "tags": [
+        "pertemanan",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "留守の間に届いた宅配便の荷物は近所の人が預かってくれました。",
+      "id": "Paket kiriman kilat yang tiba saat saya tidak ada di rumah dititipkan dan disimpan oleh tetangga.",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari",
+        "komunikasi"
+      ]
+    }
+  ],
+  "synonyms": [
+    "不在"
+  ],
+  "antonyms": [
+    "在宅"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1552760",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00883",
+  "word": "空く",
+  "reading": "すく",
+  "romaji": "suku",
+  "meaning_id": "menjadi sepi, lengang, menjadi lapar (perut)",
+  "meaning_en": "to become less crowded, to thin out, to become empty",
+  "jlpt": "n4",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kejadian",
+    "perubahan",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja intransitif (godan) yang menunjukkan situasi tempat berkurang kepadatannya (seperti 道が空いている = jalanan lancar/lengang). Sering pula dipakai untuk kondisi perut lapar (お腹が空いた). Berbeda dengan bacaan 'あく' (aku) yang berarti kursi atau wadah kosong tak terisi.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "昼休みが過ぎたので、店内の席がだいぶ空いてきました。",
+      "id": "Karena jam makan siang telah lewat, kursi di dalam toko mulai cukup lengang.",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari",
+        "makanan-minuman"
+      ]
+    },
+    {
+      "jp": "朝から何も食べていないので、すっかりお腹が空いてしまいました。",
+      "id": "Karena belum makan apa pun sejak pagi, perut saya benar-benar menjadi lapar.",
+      "level": "n4",
+      "tags": [
+        "kesehatan",
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [
+    "空く（あく）"
+  ],
+  "antonyms": [
+    "混む",
+    "混雑する"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1586270",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00891",
+  "word": "遅れる",
+  "reading": "おくれる",
+  "romaji": "okureru",
+  "meaning_id": "terlambat, kasip, ketinggalan (jadwal/waktu)",
+  "meaning_en": "to be late, to be delayed",
+  "jlpt": "n4",
+  "pos": "verb-ru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "waktu",
+    "kehidupan-sehari",
+    "kejadian"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja intransitif (ichidan) yang menunjukkan kehadiran seseorang atau datangnya kendaraan melampaui batas waktu yang ditentukan (seperti 電車が遅れる, 時間に遅れる). Lawan katanya adalah 間に合う (maniau - sempat/tepat waktu). Berbeda dengan 遅くなる (osoku naru) yang hanya berarti waktu menjadi larut malam.",
+  "conj_type": "ichidan",
+  "examples": [
+    {
+      "jp": "大雪の影響で電車の到着時間が三十分も遅れてしまいました。",
+      "id": "Akibat pengaruh salju lebat, waktu kedatangan kereta terlambat sampai tiga puluh menit.",
+      "level": "n4",
+      "tags": [
+        "perjalanan",
+        "kejadian"
+      ]
+    },
+    {
+      "jp": "授業に遅れないように毎朝七時には家を出るようにしています。",
+      "id": "Agar tidak terlambat masuk kelas, saya membiasakan keluar rumah pada pukul tujuh setiap pagi.",
+      "level": "n4",
+      "tags": [
+        "pendidikan",
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [
+    "遅刻する"
+  ],
+  "antonyms": [
+    "間に合う"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1589040",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00892",
+  "word": "太る",
+  "reading": "ふとる",
+  "romaji": "futoru",
+  "meaning_id": "menjadi gemuk, bertambah berat badan",
+  "meaning_en": "to gain weight, to become fat",
+  "jlpt": "n4",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kesehatan",
+    "perubahan",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja intransitif (godan) yang menandakan terjadinya penambahan massa tubuh atau bobot badan. Untuk menyebut kondisi badan yang saat ini gemuk, gunakan bentuk kontinu 太っている (futotte iru). Lawan katanya adalah 痩せる (yaseru - menjadi kurus).",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "甘いケーキを毎日たくさん食べていたら急に太ってしまいました。",
+      "id": "Karena setiap hari banyak makan kue manis, saya mendadak menjadi gemuk.",
+      "level": "n4",
+      "tags": [
+        "kesehatan",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "健康のため太らないように、休日は公園をジョギングしています。",
+      "id": "Demi kesehatan agar tidak bertambah gemuk, saya joging di taman pada hari libur.",
+      "level": "n4",
+      "tags": [
+        "kesehatan",
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [
+    "肥満する"
+  ],
+  "antonyms": [
+    "痩せる"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1408220",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00897",
+  "word": "払う",
+  "reading": "はらう",
+  "romaji": "harau",
+  "meaning_id": "membayar; membersihkan (debu/menepis)",
+  "meaning_en": "to pay; to brush off",
+  "jlpt": "n4",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "ekonomi",
+    "belanja",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja transitif godan golongan 1. Makna paling umumnya adalah membayarkan uang untuk barang atau jasa (お金を払う). Selain itu juga sering dipakai dalam arti menepis kotoran/debu (埃を払う) atau menaruh perhatian (注意を払う).",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "レジで電子マネーを使って代金を支払いました。",
+      "id": "Saya membayar tagihan di kasir menggunakan uang elektronik.",
+      "level": "n4",
+      "tags": [
+        "belanja",
+        "ekonomi"
+      ]
+    },
+    {
+      "jp": "コートについた白い雪を手で軽く払いました。",
+      "id": "Saya menepis salju putih yang menempel di mantel dengan tangan secara perlahan.",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari",
+        "aksi"
+      ]
+    }
+  ],
+  "synonyms": [
+    "支払う",
+    "納める"
+  ],
+  "antonyms": [
+    "受け取る",
+    "もらう"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1501620",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00898",
+  "word": "焼ける",
+  "reading": "やける",
+  "romaji": "yakeru",
+  "meaning_id": "terbakar; terpanggang; matang; gosong",
+  "meaning_en": "to burn, to be roasted, to be baked",
+  "jlpt": "n4",
+  "pos": "verb-ru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "makanan-minuman",
+    "kejadian"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja intransitif ichidan. Menunjukkan sesuatu mengalami proses pemanasan sehingga matang terpanggang, atau terbakar oleh api hingga hangus. Pasangan transitifnya adalah 焼く (yaku, memanggang/membakar).",
+  "conj_type": "ichidan",
+  "examples": [
+    {
+      "jp": "トースターで香ばしい食パンが美味しく焼けました。",
+      "id": "Roti tawar beraroma harum terpanggang dengan lezat di dalam pemanggang roti.",
+      "level": "n4",
+      "tags": [
+        "makanan-minuman",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "昨夜の大きな火事で古い工場が焼けてしまいました。",
+      "id": "Pabrik tua hangus terbakar dalam peristiwa kebakaran besar semalam.",
+      "level": "n4",
+      "tags": [
+        "kejadian",
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [
+    "焦げる",
+    "燃える"
+  ],
+  "antonyms": [
+    "焼く"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1350610",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00899",
+  "word": "冷える",
+  "reading": "ひえる",
+  "romaji": "hieru",
+  "meaning_id": "menjadi dingin; mendingin",
+  "meaning_en": "to grow cold, to cool down, to get chilled",
+  "jlpt": "n4",
+  "pos": "verb-ru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "alam-lingkungan",
+    "kesehatan",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja intransitif ichidan. Menunjukkan suhu benda atau tubuh yang bersentuhan dengan udara menjadi dingin secara alami atau berangsur-angsur. Berbeda dengan 冷やす (transitif, mendinginkan) dan 冷める (makanan/minuman panas yang kehilangan panasnya).",
+  "conj_type": "ichidan",
+  "examples": [
+    {
+      "jp": "夜遅くになると急に冷え込んできますね。",
+      "id": "Ketika larut malam tiba, udara berangsur-angsur menjadi sangat dingin ya.",
+      "level": "n4",
+      "tags": [
+        "alam-lingkungan",
+        "kesehatan"
+      ]
+    },
+    {
+      "jp": "冷蔵庫の中で冷たい麦茶がよく冷えています。",
+      "id": "Teh gandum dingin sudah mendingin dengan sangat baik di dalam kulkas.",
+      "level": "n4",
+      "tags": [
+        "makanan-minuman",
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [
+    "冷え込む",
+    "涼しくなる"
+  ],
+  "antonyms": [
+    "温まる",
+    "暖まる"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1556630",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00901",
+  "word": "かまう",
+  "reading": "かまう",
+  "romaji": "kamau",
+  "meaning_id": "mempedulikan, menghiraukan, berkeberatan",
+  "meaning_en": "to mind, to care about, to be concerned about",
+  "jlpt": "n4",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "bahasa-komunikasi",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja godan intransitif. Paling sering digunakan dalam bentuk negatif '構わない' (kamawanai) yang berarti 'tidak apa-apa / tidak masalah / boleh'. Hati-hati jangan mengabaikan konteks sopan santun saat memberikan izin kepada atasan.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "少し喉が渇いたので水を飲んでも構いませんか。",
+      "id": "Karena tenggorokan agak haus, bolehkah saya meminum air?",
+      "level": "n4",
+      "tags": [
+        "bahasa-komunikasi",
+        "sopan-santun"
+      ]
+    },
+    {
+      "jp": "雨が降っていてもかまわずに子供たちは元気に遊びました。",
+      "id": "Meskipun hujan turun, anak-anak tidak mempedulikannya dan tetap asyik bermain dengan ceria.",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari",
+        "alam-lingkungan"
+      ]
+    }
+  ],
+  "synonyms": [
+    "気にする",
+    "気にかける"
+  ],
+  "antonyms": [
+    "放っておく",
+    "無視する"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1279680",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": "Input had empty reading; populated with かまう."
+  }
+},
+{
+  "id": "vg-n4-00902",
+  "word": "拝見",
+  "reading": "はいけんする",
+  "romaji": "haikensuru",
+  "meaning_id": "melihat (ragam rendah hati / kenjougo)",
+  "meaning_en": "to see, to look at (humble/kenjougo)",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "keigo-vocabulary",
+    "sopan-santun",
+    "pekerjaan"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "atasan",
+    "rekan-bisnis"
+  ],
+  "nuance": "Bentuk rendah hati (kenjougo) dari kata kerja 見る (melihat). Digunakan khusus saat pembicara melihat barang, berkas, atau tulisan milik pihak yang dihormati sebagai wujud kerendahan hati dalam tata krama bisnis formal.",
+  "conj_type": "suru",
+  "examples": [
+    {
+      "jp": "先生から送っていただいた資料を拝見いたしました。",
+      "id": "Saya telah membaca dan mencermati dokumen materi yang dikirimkan oleh guru.",
+      "level": "n4",
+      "tags": [
+        "keigo-vocabulary",
+        "sopan-santun"
+      ]
+    },
+    {
+      "jp": "お客様のお手元の搭乗券を拝見してもよろしいでしょうか。",
+      "id": "Bolehkah saya memeriksa tiket boarding pass yang berada di tangan Anda?",
+      "level": "n4",
+      "tags": [
+        "keigo-vocabulary",
+        "pekerjaan"
+      ]
+    }
+  ],
+  "synonyms": [
+    "見る",
+    "目を通す"
+  ],
+  "antonyms": [
+    "ご覧になる"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1472270",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00903",
+  "word": "割れる",
+  "reading": "われる",
+  "romaji": "wareru",
+  "meaning_id": "pecah; terbelah; terbagi",
+  "meaning_en": "to break, to smash, to split, to crack",
+  "jlpt": "n4",
+  "pos": "verb-ru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kejadian",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja intransitif ichidan. Menunjukkan benda keras atau rapuh seperti piring, kaca, atau cangkir yang retak hingga hancur berkeping-keping akibat benturan. Pasangan transitifnya adalah 割る (waru, memecahkan).",
+  "conj_type": "ichidan",
+  "examples": [
+    {
+      "jp": "手を滑らせて大事にしていたガラスのコップが割れました。",
+      "id": "Tangan saya tergelincir sehingga gelas kaca berharga saya pecah.",
+      "level": "n4",
+      "tags": [
+        "kejadian",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "新しい方針について会議で意見が真っ二つに割れました。",
+      "id": "Pendapat dalam rapat terbelah menjadi dua kubu mengenai kebijakan baru.",
+      "level": "n4",
+      "tags": [
+        "komunikasi",
+        "pekerjaan"
+      ]
+    }
+  ],
+  "synonyms": [
+    "砕ける",
+    "壊れる"
+  ],
+  "antonyms": [
+    "割る",
+    "くっつく"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1208020",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00905",
+  "word": "いじめる",
+  "reading": "いじめる",
+  "romaji": "ijimeru",
+  "meaning_id": "merundung, menindas, mengintimidasi",
+  "meaning_en": "to bully, to torment, to tease harshly",
+  "jlpt": "n4",
+  "pos": "verb-ru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "hubungan",
+    "sosial",
+    "emosi-negatif"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja transitif ichidan. Bermakna menyakiti, menganiaya, atau merundung pihak yang lebih lemah baik secara fisik maupun perkataan mental. Sering menjadi isu sosial perundungan di lingkungan sekolah Jepang (いじめ - ijime).",
+  "conj_type": "ichidan",
+  "examples": [
+    {
+      "jp": "自分より年下の弱い者をいじめてはいけません。",
+      "id": "Kita tidak boleh merundung orang yang lebih muda atau lebih lemah dari kita.",
+      "level": "n4",
+      "tags": [
+        "hubungan",
+        "sosial"
+      ]
+    },
+    {
+      "jp": "弟をいじめて泣かせてしまい、母親にひどく叱られました。",
+      "id": "Saya dimarahi keras oleh ibu karena mengganggu adik laki-laki hingga menangis.",
+      "level": "n4",
+      "tags": [
+        "keluarga",
+        "emosi-negatif"
+      ]
+    }
+  ],
+  "synonyms": [
+    "からかう",
+    "虐待する"
+  ],
+  "antonyms": [
+    "助ける",
+    "かばう"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1195140",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00906",
+  "word": "回る、回す",
+  "reading": "まわる、まわす",
+  "romaji": "mawaru, mawasu",
+  "meaning_id": "berputar (intransitif) dan memutar (transitif)",
+  "meaning_en": "to go around, to revolve, to turn (intransitive and transitive pair)",
+  "jlpt": "n4",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "gerakan",
+    "aksi"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Merupakan pasangan kata kerja perputaran godan: 回る (mawaru) adalah bentuk intransitif yang berarti berputar sendiri mengikuti porosnya, sedangkan 回す (mawasu) adalah bentuk transitif yang berarti memutar atau menggerakkan suatu benda dengan tangan atau daya dorong.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "強い風が吹いて丘の上の風車が勢いよく回っています。",
+      "id": "Kincir angin di atas bukit berputar kencang karena tertiup angin kencang.",
+      "level": "n4",
+      "tags": [
+        "gerakan",
+        "alam-lingkungan"
+      ]
+    },
+    {
+      "jp": "ドアのノブを右に回してゆっくり部屋の中に入りました。",
+      "id": "Saya memutar pegangan pintu ke arah kanan lalu masuk perlahan ke dalam ruangan.",
+      "level": "n4",
+      "tags": [
+        "aksi",
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [
+    "回転する",
+    "巡る"
+  ],
+  "antonyms": [
+    "止まる",
+    "止める"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": null,
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "reference",
+    "needs_review": false,
+    "review_notes": "Input pairs intransitive mawaru and transitive mawasu together."
+  }
+},
+{
+  "id": "vg-n4-00908",
+  "word": "濡れる",
+  "reading": "ぬれる",
+  "romaji": "nureru",
+  "meaning_id": "basah, menjadi basah",
+  "meaning_en": "to get wet, to become damp",
+  "jlpt": "n4",
+  "pos": "verb-ru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari",
+    "alam-lingkungan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja intransitif ichidan. Menunjukkan pakaian, rambut, tubuh, atau benda menyerap cairan sehingga basah terkena hujan atau tumpahan air. Pasangan transitifnya adalah 濡らす (nurasu, membasahi).",
+  "conj_type": "ichidan",
+  "examples": [
+    {
+      "jp": "傘を持たずに出かけたので大雨で上着が濡れました。",
+      "id": "Karena bepergian tanpa membawa payung, jaket saya basah terkena hujan lebat.",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari",
+        "alam-lingkungan"
+      ]
+    },
+    {
+      "jp": "濡れたタオルをベランダに干して乾かしました。",
+      "id": "Saya menjemur handuk yang basah di balkon untuk mengeringkannya.",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari",
+        "deskripsi"
+      ]
+    }
+  ],
+  "synonyms": [
+    "湿る",
+    "水浸しになる"
+  ],
+  "antonyms": [
+    "乾く"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1467620",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00919",
+  "word": "植える",
+  "reading": "うえる",
+  "romaji": "ueru",
+  "meaning_id": "menanam (tanaman/pohon)",
+  "meaning_en": "to plant, to sow",
+  "jlpt": "n4",
+  "pos": "verb-ru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "alam-lingkungan",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja transitif ichidan. Khusus dipakai untuk tindakan menancapkan atau menanam bibit, tanaman hidup, atau pohon ke dalam tanah agar berakar dan bertumbuh. Berbeda dengan 育てる (sodateru) yang berarti merawat dan membesarkan organisme hingga tumbuh besar.",
+  "conj_type": "ichidan",
+  "examples": [
+    {
+      "jp": "暖かくなったら庭に綺麗なチューリップの球根を植えましょう。",
+      "id": "Ketika udara menghangat, mari menanam umbi bunga tulip yang indah di halaman rumah.",
+      "level": "n4",
+      "tags": [
+        "alam-lingkungan",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "近所の公園の周りに桜の若い木をみんなで十本植えました。",
+      "id": "Kami bersama-sama menanam sepuluh pohon sakura muda di sekeliling taman dekat lingkungan kami.",
+      "level": "n4",
+      "tags": [
+        "alam-lingkungan",
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [
+    "植樹する",
+    "栽培する"
+  ],
+  "antonyms": [
+    "抜く",
+    "刈る"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1357250",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00921",
+  "word": "汚れる",
+  "reading": "よごれる",
+  "romaji": "yogoreru",
+  "meaning_id": "menjadi kotor; ternoda",
+  "meaning_en": "to become dirty, to get soiled",
+  "jlpt": "n4",
+  "pos": "verb-ru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari",
+    "deskripsi"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja intransitif ichidan. Menunjukkan pakaian, badan, atau perabot rumah terkena noda, debu, atau lumpur sehingga tidak bersih lagi. Pasangan transitifnya adalah 汚す (yogosu, mengotori).",
+  "conj_type": "ichidan",
+  "examples": [
+    {
+      "jp": "泥だらけの道で遊んだので靴やズボンがひどく汚れました。",
+      "id": "Karena bermain di jalanan berlumpur, sepatu dan celana saya menjadi sangat kotor.",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari",
+        "deskripsi"
+      ]
+    },
+    {
+      "jp": "白いシャツは汚れが目立つので、着るときは注意しています。",
+      "id": "Karena kemeja putih mudah terlihat nodanya, saya berhati-hati saat mengenakannya.",
+      "level": "n4",
+      "tags": [
+        "deskripsi",
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [
+    "汚損する",
+    "染みる"
+  ],
+  "antonyms": [
+    "綺麗になる"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1179005",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00922",
+  "word": "勝つ",
+  "reading": "かつ",
+  "romaji": "katsu",
+  "meaning_id": "menang, memenangkan",
+  "meaning_en": "to win, to gain victory",
+  "jlpt": "n4",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "olahraga",
+    "hubungan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja intransitif godan (akhiran -tsu: katsu -> kachimasu). Menunjukkan hasil unggul atas pihak lawan dalam suatu kompetisi atau persaingan olahraga. Pihak lawan yang dikalahkan diberi partikel に (misalnya ライバルに勝つ). Kebalikannya adalah 負ける (makeru, kalah).",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "昨日のサッカーの試合で私たちは強豪チームに勝ちました。",
+      "id": "Pada pertandingan sepak bola kemarin kami berhasil menang melawan tim unggulan.",
+      "level": "n4",
+      "tags": [
+        "olahraga",
+        "kejadian"
+      ]
+    },
+    {
+      "jp": "どんなに強い相手であっても、諦めずに勝つつもりで戦います。",
+      "id": "Meskipun lawannya sekuat apa pun, kami akan bertanding dengan tekad pantang menyerah untuk menang.",
+      "level": "n4",
+      "tags": [
+        "olahraga",
+        "motivasi"
+      ]
+    }
+  ],
+  "synonyms": [
+    "勝利する",
+    "打ち勝つ"
+  ],
+  "antonyms": [
+    "負ける",
+    "敗れる"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1346150",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00923",
+  "word": "取り替える",
+  "reading": "とりかえる",
+  "romaji": "torikaeru",
+  "meaning_id": "menukar, mengganti (dengan yang baru)",
+  "meaning_en": "to exchange, to replace, to swap",
+  "jlpt": "n4",
+  "pos": "verb-ru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari",
+    "belanja"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja gabungan transitif ichidan (dari 取る + 替える). Berarti mencopot barang lama yang aus/habis lalu memasang barang baru sebagai gantinya (seperti bohlam lampu, baterai jam), atau menukar barang cacat di toko dengan unit baru yang bagus.",
+  "conj_type": "ichidan",
+  "examples": [
+    {
+      "jp": "居間の電球が急に切れてしまったので、新しいものに取り替えました。",
+      "id": "Karena bohlam lampu di ruang keluarga mendadak putus, saya menggantinya dengan yang baru.",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari",
+        "teknologi"
+      ]
+    },
+    {
+      "jp": "サイズが少し小さかった服をデパートで別の服に取り替えてもらいました。",
+      "id": "Saya meminta ditukarkan pakaian yang ukurannya agak kekecilan dengan pakaian lain di toserba.",
+      "level": "n4",
+      "tags": [
+        "belanja",
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [
+    "交換する",
+    "代える"
+  ],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1326830",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00925",
+  "word": "役に立つ",
+  "reading": "やくにたつ",
+  "romaji": "yaku ni tatsu",
+  "meaning_id": "berguna, bermanfaat, berfaedah",
+  "meaning_en": "to be helpful, to be useful",
+  "jlpt": "n4",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Frasa kata kerja gabungan godan (役 + に + 立つ). Bermakna memberikan kegunaan atau manfaat nyata yang membantu meringankan aktivitas orang. Sering dipakai dalam bentuk '役に立ちます' atau kebalikannya '役に立たない' (tidak berguna/sia-sia).",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "スマートフォンに入れた地図アプリは海外旅行で大変役に立ちました。",
+      "id": "Aplikasi peta yang dipasang di ponsel pintar sangat berguna sewaktu berwisata ke luar negeri.",
+      "level": "n4",
+      "tags": [
+        "teknologi",
+        "perjalanan"
+      ]
+    },
+    {
+      "jp": "先輩からもらったアドバイスがこれからの仕事で大いに役に立ちます。",
+      "id": "Nasihat yang saya terima dari senior akan sangat bermanfaat untuk pekerjaan ke depan.",
+      "level": "n4",
+      "tags": [
+        "pekerjaan",
+        "hubungan"
+      ]
+    }
+  ],
+  "synonyms": [
+    "有用",
+    "重宝する",
+    "有益"
+  ],
+  "antonyms": [
+    "無用",
+    "役に立たない"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1537980",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00927",
+  "word": "戻る",
+  "reading": "もどる",
+  "romaji": "modoru",
+  "meaning_id": "kembali, balik (ke tempat asal/kondisi semula)",
+  "meaning_en": "to return, to turn back, to go back",
+  "jlpt": "n4",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "gerakan",
+    "perjalanan",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja intransitif godan (akhiran -ru). Menunjukkan gerakan berbalik atau kembali ke lokasi awal keberangkatan (misal balik ke kantor setelah dinas luar), atau kembali ke kondisi sebelumnya. Berbeda dengan 帰る (kaeru) yang khusus untuk pulang ke rumah atau tempat tinggal.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "忘れ物を思い出したので、急いで駅のホームから家に戻りました。",
+      "id": "Karena teringat ada barang tertinggal, saya bergegas kembali ke rumah dari peron stasiun.",
+      "level": "n4",
+      "tags": [
+        "gerakan",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "お昼の休憩が終わったので、自分の席に戻って仕事を続けました。",
+      "id": "Karena waktu istirahat siang usai, saya kembali ke tempat duduk dan melanjutkan pekerjaan.",
+      "level": "n4",
+      "tags": [
+        "pekerjaan",
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [
+    "引き返す",
+    "復帰する"
+  ],
+  "antonyms": [
+    "進む",
+    "去る"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1642200",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00928",
+  "word": "込む",
+  "reading": "こむ",
+  "romaji": "komu",
+  "meaning_id": "ramai, padat, sesak, macet",
+  "meaning_en": "to be crowded, to be packed, to be congested",
+  "jlpt": "n4",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari",
+    "kejadian"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja intransitif godan (akhiran -mu). Menggambarkan ruangan, jalan raya, atau kereta yang penuh sesak berjejal oleh kerumunan manusia atau kendaraan. Hampir selalu dipakai dalam bentuk te-iru: '込んでいる'. Kebalikannya adalah 空く (suku, sepi/lega).",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "平日の朝の通勤電車はいつも満員で非常に込んでいます。",
+      "id": "Kereta komuter pada pagi hari kerja selalu penuh penumpang dan amat padat sesak.",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari",
+        "perjalanan"
+      ]
+    },
+    {
+      "jp": "連休中の高速道路は車が多くてひどく込んでいました。",
+      "id": "Jalan tol selama libur panjang dipadati banyak mobil dan macet parah.",
+      "level": "n4",
+      "tags": [
+        "perjalanan",
+        "kejadian"
+      ]
+    }
+  ],
+  "synonyms": [
+    "混雑する",
+    "詰まる"
+  ],
+  "antonyms": [
+    "空く",
+    "すく"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1593410",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00929",
+  "word": "別れる",
+  "reading": "わかれる",
+  "romaji": "wakareru",
+  "meaning_id": "berpisah; putus (hubungan)",
+  "meaning_en": "to part from, to separate, to break up",
+  "jlpt": "n4",
+  "pos": "verb-ru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "hubungan",
+    "pertemanan",
+    "percintaan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja intransitif ichidan. Menunjukkan orang yang tadinya bersama kemudian berpisah jalan, atau pasangan kekasih yang putus mengakhiri jalinan asmara. Orang yang diajak berpisah ditandai partikel と (misalnya 恋人と別れる). Berbeda dengan 離れる (menjauh secara fisik).",
+  "conj_type": "ichidan",
+  "examples": [
+    {
+      "jp": "駅の改札の前で友達と「また来週ね」と笑顔で別れました。",
+      "id": "Di depan pintu tiket stasiun, saya berpisah dengan teman sambil tersenyum dan berkata 'sampai jumpa minggu depan ya'.",
+      "level": "n4",
+      "tags": [
+        "pertemanan",
+        "komunikasi"
+      ]
+    },
+    {
+      "jp": "長い間付き合っていた恋人と話し合ってお互いに別れることに決めました。",
+      "id": "Setelah berbicara bersama kekasih yang sudah lama dipacari, kami memutuskan untuk saling berpisah.",
+      "level": "n4",
+      "tags": [
+        "percintaan",
+        "hubungan"
+      ]
+    }
+  ],
+  "synonyms": [
+    "離れる",
+    "分流する"
+  ],
+  "antonyms": [
+    "出会う",
+    "付き合う"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1606590",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00933",
+  "word": "眠る",
+  "reading": "ねむる",
+  "romaji": "nemuru",
+  "meaning_id": "tidur, terlelap",
+  "meaning_en": "to sleep, to fall asleep",
+  "jlpt": "n4",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kesehatan",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja intransitif godan (akhiran -ru). Menekankan kondisi fisiologis saat seseorang sudah terlelap tidur dan kehilangan kesadaran. Berbeda dengan 寝る (neru) yang lebih menitikberatkan pada aksi fisik berbaring di kasur atau niat untuk mulai tidur.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "昨夜は部屋がとても静かだったので朝までぐっすり眠れました。",
+      "id": "Karena semalam kamar sangat hening, saya bisa tidur nyenyak sekali hingga pagi.",
+      "level": "n4",
+      "tags": [
+        "kesehatan",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "赤ちゃんがお母さんの胸の中で気持ちよさそうに眠っています。",
+      "id": "Bayi tampak terlelap tidur dengan nyaman di dalam dekapan sang ibu.",
+      "level": "n4",
+      "tags": [
+        "keluarga",
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [
+    "寝る",
+    "熟睡する"
+  ],
+  "antonyms": [
+    "起きる",
+    "目覚める"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1529390",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00940",
+  "word": "輸出",
+  "reading": "ゆしゅつする",
+  "romaji": "yushutsusuru",
+  "meaning_id": "mengekspor, ekspor",
+  "meaning_en": "to export, exportation",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "ekonomi",
+    "bisnis"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja suru atau kata benda yang bermakna menjual dan mengirimkan komoditas produk manufaktur ke mancanegara. Lawan kebalikannya adalah 輸入 (yunyuu, impor). Sering digunakan dalam topik perniagaan global dan perekonomian perdagangan luar negeri.",
+  "conj_type": "suru",
+  "examples": [
+    {
+      "jp": "日本は高品質な工業製品や自動車を世界各地へ輸出しています。",
+      "id": "Jepang mengekspor produk manufaktur berkualitas tinggi dan mobil ke berbagai penjuru dunia.",
+      "level": "n4",
+      "tags": [
+        "ekonomi",
+        "bisnis"
+      ]
+    },
+    {
+      "jp": "円安の影響で自社製品を海外に輸出する企業の業績が伸びました。",
+      "id": "Berkat pengaruh pelemahan nilai yen, kinerja perusahaan yang mengekspor produk buatannya ke luar negeri meningkat pesat.",
+      "level": "n4",
+      "tags": [
+        "ekonomi",
+        "bisnis"
+      ]
+    }
+  ],
+  "synonyms": [
+    "海外輸出",
+    "積み出す"
+  ],
+  "antonyms": [
+    "輸入",
+    "輸入する"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1538820",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
 ];

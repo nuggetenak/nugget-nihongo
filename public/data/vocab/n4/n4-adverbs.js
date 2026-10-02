@@ -257,6 +257,825 @@ window.vocabN4_Adverbs = [
   jmdict_seq: '1449890',
   frequency: 1000,
   misc_jm: ["biasanya kana saja"],
-}
+},
 
+{
+  "id": "vg-n4-00695",
+  "word": "すっと",
+  "reading": "すっと",
+  "romaji": "sutto",
+  "meaning_id": "dengan lancar, cepat; merasa lega, plong",
+  "meaning_en": "straight, smoothly, quickly; feeling refreshed or relieved",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "perasaan",
+    "gerakan",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Onomatopoeia/mimetik yang memiliki dua makna utama: (1) gerakan cepat, luwes, dan tanpa hambatan (misal berdiri dengan cepat すっと立ち上がる), dan (2) perasaan yang tiba-tiba terasa lega, ringan, atau plong setelah beban/rasa tidak nyaman hilang (胸がすっとした).",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "言いたいことを全部伝えたら、胸がすっとしました。",
+      "id": "Setelah menyampaikan semua yang ingin saya katakan, dada saya terasa sangat lega.",
+      "level": "n4",
+      "tags": [
+        "perasaan",
+        "komunikasi"
+      ]
+    },
+    {
+      "jp": "彼は名前を呼ばれると、席からすっと立ち上がりました。",
+      "id": "Ketika namanya dipanggil, dia langsung berdiri dengan luwes dari tempat duduknya.",
+      "level": "n4",
+      "tags": [
+        "gerakan",
+        "sekolah"
+      ]
+    }
+  ],
+  "synonyms": [
+    "さっと",
+    "すっきり"
+  ],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1006140",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00700",
+  "word": "やはり; やっぱり",
+  "reading": "やはり; やっぱり",
+  "romaji": "yahari; yappari",
+  "meaning_id": "seperti dugaan, ternyata; bagaimanapun juga",
+  "meaning_en": "as I thought, after all, nevertheless",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "percakapan",
+    "opini",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "'やはり' adalah bentuk standar dan lebih formal, sedangkan 'やっぱり' adalah bentuk lisan percakapan santai. Digunakan ketika suatu hasil sesuai dengan apa yang dipikirkan sebelumnya (sesuai dugaan) atau setelah mempertimbangkan berbagai pilihan akhirnya kembali ke pilihan semula.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "雨が降りそうでしたが、やはり途中で降ってきました。",
+      "id": "Tadinya tampak akan turun hujan, dan ternyata di tengah jalan benar-benar turun hujan.",
+      "level": "n4",
+      "tags": [
+        "cuaca",
+        "kejadian"
+      ]
+    },
+    {
+      "jp": "色々考えましたが、やっぱり日本の大学に進学することに決めました。",
+      "id": "Saya sudah mempertimbangkan berbagai hal, tapi bagaimanapun juga akhirnya saya memutuskan lanjut kuliah di Jepang.",
+      "level": "n4",
+      "tags": [
+        "pendidikan",
+        "rencana"
+      ]
+    }
+  ],
+  "synonyms": [
+    "案の定"
+  ],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": null,
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "reference",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00710",
+  "word": "非常に",
+  "reading": "ひじょうに",
+  "romaji": "hijou ni",
+  "meaning_id": "sangat, amat, luar biasa",
+  "meaning_en": "extremely, very, exceedingly",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "derajat",
+    "komunikasi",
+    "formal"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "atasan",
+    "rekan",
+    "umum",
+    "klien"
+  ],
+  "nuance": "Kata keterangan tingkat tinggi yang menyatakan 'sangat' dalam konteks formal, resmi, atau tertulis. Jauh lebih sopan dan elegan dibanding とても (totemo / umum sehari-hari) atau すごく (sugoku / kasual lisan).",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "今回のプロジェクトは会社にとって非常に重要です。",
+      "id": "Proyek kali ini sangat penting bagi perusahaan.",
+      "level": "n4",
+      "tags": [
+        "bisnis",
+        "kerja"
+      ]
+    },
+    {
+      "jp": "昨夜の地震は非常に強い揺れでした。",
+      "id": "Gempa bumi tadi malam guncangannya sangat kuat.",
+      "level": "n4",
+      "tags": [
+        "bencana",
+        "alam"
+      ]
+    }
+  ],
+  "synonyms": [
+    "大変",
+    "極めて",
+    "とても"
+  ],
+  "antonyms": [
+    "少し",
+    "わずかに"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1484930",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00722",
+  "word": "一生懸命",
+  "reading": "いっしょうけんめい",
+  "romaji": "isshoukenmei",
+  "meaning_id": "dengan sungguh-sungguh, sekuat tenaga, mati-matian",
+  "meaning_en": "with utmost effort, very hard, desperately",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "usaha",
+    "karakter",
+    "belajar"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Berasal dari istilah kuno 一所懸命 (mempertaruhkan nyawa demi sebidang tanah). Digunakan untuk mendeskripsikan tindakan yang dilakukan dengan curahan seluruh tenaga, fokus, dan dedikasi penuh (contoh: 一生懸命勉強する / belajar mati-matian). Bisa berfungsi langsung sebagai adverbia atau dengan partikel に.",
+  "conj_type": "na-adj",
+  "examples": [
+    {
+      "jp": "JLPTに合格するために、毎日一生懸命勉強しています。",
+      "id": "Demi lulus JLPT, saya belajar dengan sekuat tenaga setiap hari.",
+      "level": "n4",
+      "tags": [
+        "belajar",
+        "ujian"
+      ]
+    },
+    {
+      "jp": "選手たちは試合の最後まで一生懸命に走りました。",
+      "id": "Para pemain berlari dengan sekuat tenaga hingga akhir pertandingan.",
+      "level": "n4",
+      "tags": [
+        "olahraga",
+        "semangat"
+      ]
+    }
+  ],
+  "synonyms": [
+    "懸命",
+    "必死",
+    "精一杯"
+  ],
+  "antonyms": [
+    "いい加減",
+    "怠慢"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1164010",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00730",
+  "word": "そう",
+  "reading": "そう",
+  "romaji": "sou",
+  "meaning_id": "begitu, demikian, ya (tanda persetujuan atau penegasan)",
+  "meaning_en": "so, like that, that way, right",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "percakapan",
+    "komunikasi",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata tunjuk adverbial dalam seri ko-so-a-do (こう, そう, ああ, どう) yang bermakna 'dengan cara begitu' atau mengonfirmasi kebenaran perkataan lawan bicara (contoh: そうですね / begitu ya, betul sekali; そう思います / saya berpendapat begitu; そうですか / benarkah begitu?).",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "「この問題は難しいですね。」「ええ、私もそう思います。」",
+      "id": "「Soal ini sulit ya.」「Iya, saya juga berpikir begitu.」",
+      "level": "n4",
+      "tags": [
+        "percakapan",
+        "opini"
+      ]
+    },
+    {
+      "jp": "そう簡単に諦めてはいけませんよ。",
+      "id": "Kamu tidak boleh menyerah begitu mudahnya lho.",
+      "level": "n4",
+      "tags": [
+        "nasihat",
+        "semangat"
+      ]
+    }
+  ],
+  "synonyms": [
+    "そのように"
+  ],
+  "antonyms": [
+    "こう",
+    "ああ"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1006610",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00750",
+  "word": "なるべく",
+  "reading": "なるべく",
+  "romaji": "narubeku",
+  "meaning_id": "sebisa mungkin, sedapat mungkin",
+  "meaning_en": "as much as possible; wherever possible; if possible",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "komunikasi",
+    "kehidupan-sehari",
+    "derajat"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Dipakai untuk menyatakan upaya mengerjakan sesuatu semaksimal batas kelonggaran atau kemampuan yang ada tanpa tuntutan mutlak. Mirip dengan できるだけ (dekiru dake), namun なるべく terkesan lebih lembut dan sopan saat meminta tolong atau memberi saran.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "健康のために毎朝なるべく歩いて通勤するようにしています。",
+      "id": "Demi kesehatan, sebisa mungkin saya membiasakan diri berjalan kaki saat berangkat kerja setiap pagi.",
+      "level": "n4",
+      "tags": [
+        "kesehatan",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "会議で配る資料はなるべく早く準備して提出してください。",
+      "id": "Tolong siapkan dan kumpulkan dokumen yang akan dibagikan dalam rapat sebisa mungkin lebih awal.",
+      "level": "n4",
+      "tags": [
+        "pekerjaan",
+        "komunikasi"
+      ]
+    }
+  ],
+  "synonyms": [
+    "できるだけ",
+    "極力"
+  ],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1375620",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00774",
+  "word": "どんどん",
+  "reading": "どんどん",
+  "romaji": "dondon",
+  "meaning_id": "cepat dan beruntun, terus-menerus tanpa henti",
+  "meaning_en": "rapidly; steadily; continuously; without hesitation",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "onomatope",
+    "perubahan",
+    "derajat"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata keterangan onomatope yang menggambarkan perubahan, peningkatan, atau kemajuan aksi yang melaju cepat, berurutan, dan mantap tanpa terputus. Berbeda dengan だんだん (dandan) yang menyatakan perubahan berlangsung secara lambat dan bertahap.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "毎日日本語で会話する練習をしたら話す力がどんどん伸びました。",
+      "id": "Setelah rutin berlatih bercakap-cakap dalam bahasa Jepang setiap hari, kemampuan bicara saya meningkat pesat terus-menerus.",
+      "level": "n4",
+      "tags": [
+        "pendidikan",
+        "perubahan"
+      ]
+    },
+    {
+      "jp": "分からない言葉や質問があれば遠慮しないでどんどん聞いてください。",
+      "id": "Jika ada kata yang tidak dimengerti atau ada pertanyaan, jangan sungkan dan silakan bertanya terus.",
+      "level": "n4",
+      "tags": [
+        "pendidikan",
+        "komunikasi"
+      ]
+    }
+  ],
+  "synonyms": [
+    "次々に",
+    "すらすら"
+  ],
+  "antonyms": [
+    "だんだん",
+    "そろそろ"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1009320",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00777",
+  "word": "一度",
+  "reading": "いちど",
+  "romaji": "ichido",
+  "meaning_id": "sekali, satu kali, suatu saat",
+  "meaning_en": "once; one time; on one occasion",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kuantitas",
+    "waktu",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Menyatakan frekuensi tunggal satu kali atau keinginan mencoba pengalaman (一度～してみたい). Jika digabung dengan partikel mo dalam bentuk negatif (一度も～ない), berarti sama sekali belum pernah. Berbeda dengan もう一度 (sekali lagi).",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "日本に留学している間に一度富士山に登ってみたいです。",
+      "id": "Selama menempuh studi di Jepang, saya ingin mencoba mendaki Gunung Fuji satu kali.",
+      "level": "n4",
+      "tags": [
+        "perjalanan",
+        "motivasi"
+      ]
+    },
+    {
+      "jp": "この頑丈な時計は買ってから今まで一度も壊れたことがありません。",
+      "id": "Jam tangan kokoh ini belum pernah rusak sekalipun sejak dibeli hingga sekarang.",
+      "level": "n4",
+      "tags": [
+        "teknologi",
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [
+    "一回",
+    "ひとたび"
+  ],
+  "antonyms": [
+    "何度も",
+    "幾度も"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1576250",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00823",
+  "word": "いっぱい",
+  "reading": "いっぱい",
+  "romaji": "ippai",
+  "meaning_id": "penuh; banyak; sampai batas maksimal; kenyang",
+  "meaning_en": "full; a lot; crowded; to the limit",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 1,
+  "domain": [
+    "jumlah",
+    "keadaan",
+    "kehidupan-sehari"
+  ],
+  "register": "casual",
+  "lawan_bicara": [
+    "teman",
+    "keluarga",
+    "rekan"
+  ],
+  "nuance": "Dipakai untuk menyatakan kondisi terisi penuh (seperti ruangan penuh orang, perut kenyang / お腹がいっぱい) atau jumlah yang banyak (sinonim santai dari たくさん). Jika ditulis kanji 一杯 bisa juga berarti 'satu cangkir/gelas'.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "お昼ご飯をたくさん食べて、お腹がいっぱいになりました。",
+      "id": "Saya makan siang banyak sekali sampai perut saya kenyang.",
+      "level": "n4",
+      "tags": [
+        "makanan",
+        "kondisi"
+      ]
+    },
+    {
+      "jp": "休日のショッピングモールは買い物客でいっぱいでした。",
+      "id": "Pusat perbelanjaan pada hari libur penuh sesak dengan pengunjung yang berbelanja.",
+      "level": "n4",
+      "tags": [
+        "belanja",
+        "tempat"
+      ]
+    }
+  ],
+  "synonyms": [
+    "たくさん",
+    "満杯"
+  ],
+  "antonyms": [
+    "からっぽ",
+    "すこし"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1165660",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": "Normalized reading to hiragana いっぱい; raw stub had kanji 一杯"
+  }
+},
+{
+  "id": "vg-n4-00838",
+  "word": "こう",
+  "reading": "こう",
+  "romaji": "kou",
+  "meaning_id": "seperti ini; begini",
+  "meaning_en": "like this; in this way; this way",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "tata-bahasa",
+    "percakapan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "keluarga",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Adverbia penunjuk cara deret ko-so-a-do (deret ko-) yang mengindikasikan cara atau kondisi yang dilakukan oleh pembicara sendiri ('begini caranya', 'seperti ini keadaannya'). Berpasangan dengan そう (begitu, pada pendengar), ああ (begitu, jauh dari keduanya), dan どう (bagaimana).",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "折り紙はこうやって指でしっかりと折り目をつけてから広げます。",
+      "id": "Kertas origami ditekan lipatannya dengan jari seperti ini terlebih dahulu, baru kemudian dibentangkan.",
+      "level": "n4",
+      "tags": [
+        "petunjuk",
+        "kegiatan"
+      ]
+    },
+    {
+      "jp": "こう毎日雨が続いては、洗濯物が乾かなくて困りますね。",
+      "id": "Kalau hujan terus-menerus setiap hari begini, repot sekali karena jemuran pakaian tidak kering-kering ya.",
+      "level": "n4",
+      "tags": [
+        "cuaca",
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [
+    "このように",
+    "こんな風に"
+  ],
+  "antonyms": [
+    "そう",
+    "ああ"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1004310",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00848",
+  "word": "きっと",
+  "reading": "きっと",
+  "romaji": "kitto",
+  "meaning_id": "pasti, tentu saja (dugaan kuat)",
+  "meaning_en": "surely, definitely, undoubtedly",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "pikiran-opini",
+    "komunikasi"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Menyatakan dugaan pembicara dengan keyakinan atau harapan yang sangat kuat, sering kali berpadu dengan ～でしょう atau ～と思う. Berbeda dengan 必ず (kanarazu) yang menyatakan kepastian mutlak tanpa pengecualian.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "毎日真面目に勉強したから、きっと試験に合格できます。",
+      "id": "Karena rajin belajar setiap hari, pasti bisa lulus ujian.",
+      "level": "n4",
+      "tags": [
+        "pendidikan",
+        "motivasi"
+      ]
+    },
+    {
+      "jp": "明日は雲が消えてきっといい天気になるでしょう。",
+      "id": "Besok awan akan menghilang dan pasti cuaca menjadi cerah.",
+      "level": "n4",
+      "tags": [
+        "alam-lingkungan",
+        "pikiran-opini"
+      ]
+    }
+  ],
+  "synonyms": [
+    "必ず",
+    "絶対に"
+  ],
+  "antonyms": [
+    "おそらく",
+    "たぶん"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1003430",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00885",
+  "word": "最も",
+  "reading": "もっとも",
+  "romaji": "mottomo",
+  "meaning_id": "paling, ter- (tingkat superlatif)",
+  "meaning_en": "most, extremely",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "derajat",
+    "deskripsi",
+    "kuantitas"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Adverbia superlatif penunjuk derajat tertinggi. Bernuansa lebih formal dan resmi dalam bahasa tulisan atau pidato bila dibandingkan dengan kata 一番 (ichiban) yang lebih lazim dalam percakapan santai sehari-hari.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "富士山は日本で最も高い美しい山として世界的に有名です。",
+      "id": "Gunung Fuji terkenal secara mendunia sebagai gunung paling tinggi dan indah di Jepang.",
+      "level": "n4",
+      "tags": [
+        "alam-lingkungan",
+        "deskripsi"
+      ]
+    },
+    {
+      "jp": "これが今年発売された商品の中で最も人気を集めています。",
+      "id": "Ini adalah yang paling banyak menarik kepopuleran di antara barang-barang yang dirilis tahun ini.",
+      "level": "n4",
+      "tags": [
+        "bisnis",
+        "kualitas"
+      ]
+    }
+  ],
+  "synonyms": [
+    "一番",
+    "最高に"
+  ],
+  "antonyms": [
+    "最も...ない"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1293700",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n4-00911",
+  "word": "程",
+  "reading": "ほど",
+  "romaji": "hodo",
+  "meaning_id": "kira-kira, sekitar; derajat, tingkat",
+  "meaning_en": "extent, degree, about, approximately",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "derajat",
+    "kuantitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Dipakai untuk menyatakan perkiraan takaran jumlah atau batasan derajat. Berbeda dengan くらい (kurai) yang bernuansa sangat santai, 程 (hodo) sedikit lebih formal dan sering digunakan dalam pola perbandingan negatif (～ほど…ない) atau korelasi (～ば～ほど).",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "駅から私の自宅まで歩いて十分程かかります。",
+      "id": "Dari stasiun ke rumah kediaman saya memakan waktu jalan kaki sekitar sepuluh menit.",
+      "level": "n4",
+      "tags": [
+        "kuantitas",
+        "perjalanan"
+      ]
+    },
+    {
+      "jp": "今年の夏は去年の夏ほど暑くありませんでした。",
+      "id": "Musim panas tahun ini tidak sepanas musim panas tahun lalu.",
+      "level": "n4",
+      "tags": [
+        "derajat",
+        "alam-lingkungan"
+      ]
+    }
+  ],
+  "synonyms": [
+    "くらい",
+    "ばかり",
+    "程度"
+  ],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1436510",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
 ];

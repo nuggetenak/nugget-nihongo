@@ -4633,7 +4633,7 @@ window.vocabN2_Verbs = [
   "synonyms": [],
   "antonyms": [],
   "see_also": [
-    "vg-n2-00186"
+    "vg-n3-00457"
   ],
   "provenance": "jlpt-corpus",
   "added_v": "v15",
@@ -4641,77 +4641,7 @@ window.vocabN2_Verbs = [
   "frequency": 500
 },
 
-{
-  "id": "vg-n2-00186",
-  "word": "交渉",
-  "reading": "こうしょう",
-  "romaji": "koushou",
-  "meaning_id": "negosiasi, perundingan",
-  "meaning_en": "negotiation, talks, bargaining",
-  "jlpt": "n2",
-  "pos": "noun-suru",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "bisnis",
-    "politik-masyarakat"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan"
-  ],
-  "nuance": "Merujuk pada proses tawar-menawar atau perundingan untuk mencapai kesepakatan. 交渉する = 'bernegosiasi'. 交渉が決裂する = 'negosiasi gagal/buntuu'. 交渉が妥結する = 'negosiasi berhasil'.",
-  "conj_type": "suru",
-  "examples": [
-    {
-      "jp": "賃金引き上げについて会社側と交渉した。",
-      "id": "Bernegosiasi dengan pihak perusahaan mengenai kenaikan gaji.",
-      "level": "n2",
-      "tags": [
-        "pekerjaan",
-        "bisnis"
-      ]
-    },
-    {
-      "jp": "平和交渉が続けられているが進展はない。",
-      "id": "Perundingan damai terus berlangsung namun belum ada kemajuan.",
-      "level": "n2",
-      "tags": [
-        "politik-masyarakat"
-      ]
-    },
-    {
-      "jp": "交渉の余地があるかどうか確認したい。",
-      "id": "Ingin memastikan apakah ada ruang untuk negosiasi.",
-      "level": "n2",
-      "tags": [
-        "bisnis"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [
-    "vg-n2-00185"
-  ],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15",
-  "jmdict_seq": "1272110",
-  "frequency": 500,
-  "meanings": [
-    {
-      "en": "negotiations; bargaining; discussions; talks",
-      "misc": [],
-      "field": []
-    },
-    {
-      "en": "connection; relationship; relations; dealings",
-      "misc": [],
-      "field": []
-    }
-  ]
-},
+
 
 {
   "id": "vg-n2-00187",

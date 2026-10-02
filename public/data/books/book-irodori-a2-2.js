@@ -205,7 +205,7 @@ window.bookIrodoriA22 = {
         'vg-n4-00529', // 事故 — kecelakaan
         'vg-n4-00037', // 風 — angin
         'vg-n4-00447', // 安全 — keselamatan; keamanan
-        'vg-n4-00288', // ニュース — berita
+        'vg-n5-00402', // ニュース — berita
         'vg-n5-00089', // 病院 — rumah sakit
         'vg-n4-00071', // 薬 — obat
         'vg-n4-00072', // 薬局 — apotek

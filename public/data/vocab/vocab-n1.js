@@ -2,7 +2,7 @@
 //  vocab-n1.js — Nugget Nihongo · JLPT N1
 //  AUTO-GENERATED — DO NOT EDIT DIRECTLY
 //  Edit: public/data/vocab/n1/*.js  then run: node scripts/merge-vocab.js
-//  Entries: 190 | Generated: 2026-09-30
+//  Entries: 190 | Generated: 2026-10-02
 // ══════════════════════════════════════════════════════════════
 
 window.vocabN1 = [
@@ -10727,7 +10727,7 @@ window.vocabN1 = [
     "umum"
   ],
   "nuance": "Biasanya dipakai sebagai 抽象的な (na-adj = bersifat abstrak). Berlawanan dengan 具体 (konkret). Penting dalam diskusi akademis, seni, dan filsafat. 抽象的すぎる = terlalu abstrak untuk dipahami.",
-  "conj_type": null,
+  "conj_type": 'suru',
   "examples": [
     {
       "jp": "彼の説明は抽象的すぎて理解しにくい。",
@@ -11444,7 +11444,7 @@ window.vocabN1 = [
     "umum"
   ],
   "nuance": "Menekankan ketiadaan kesetaraan yang seharusnya ada. Berbeda dari 格差 yang hanya menggambarkan perbedaan; 不平等 mengandung nuansa bahwa kondisi itu tidak adil atau tidak semestinya. 不平等な扱い = perlakuan yang tidak setara.",
-  "conj_type": null,
+  "conj_type": 'na-adj',
   "examples": [
     {
       "jp": "性別による不平等は現代でも依然として存在する。",
@@ -11572,7 +11572,7 @@ window.vocabN1 = [
     "umum"
   ],
   "nuance": "Kata sastrawi dan arkaik yang menggambarkan jarak atau kesenjangan yang sangat besar, baik secara fisik maupun konseptual. Sangat jarang dalam percakapan sehari-hari; muncul terutama dalam tulisan akademis atau sastra serius. Pelajar N1 perlu mengenali kata ini saat membaca teks formal.",
-  "conj_type": null,
+  "conj_type": 'suru',
   "examples": [
     {
       "jp": "理想と現実の間には大きな懸隔がある。",
@@ -11629,7 +11629,7 @@ window.vocabN1 = [
     "umum"
   ],
   "nuance": "Menggambarkan kondisi saat dua hal atau dua pihak tidak cocok atau tidak sejalan, seperti roda gigi yang tidak pas. 齟齬が生じる = terjadi ketidaksinkronan atau miskomunikasi. Sering dipakai dalam bisnis untuk menggambarkan perbedaan pemahaman yang berujung masalah.",
-  "conj_type": null,
+  "conj_type": 'suru',
   "examples": [
     {
       "jp": "両者の認識に齟齬が生じ、交渉が難航した。",
@@ -11922,7 +11922,7 @@ window.vocabN1 = [
     "umum"
   ],
   "nuance": "Berbeda dari 当然 (naturally expected, of course — berdasarkan norma sosial atau logika umum), 必然 menyiratkan kausalitas yang kuat — sesuatu tidak hanya diperkirakan, tetapi secara logis HARUS terjadi. 必然性 = sifat keniscayaan. 必然的に = secara niscaya. Sering digunakan dalam diskusi filosofis atau analisis sejarah.",
-  "conj_type": null,
+  "conj_type": 'na-adj',
   "examples": [
     {
       "jp": "努力した者が成功するのは<b>必然</b>だとは言えない。",
@@ -12181,7 +12181,7 @@ window.vocabN1 = [
     "umum"
   ],
   "nuance": "Berbeda dari 風刺 (ふうし — satire yang ditujukan ke masyarakat/institusi, umumnya dalam bentuk tulisan atau seni), 皮肉 lebih interpersonal — ironi atau sarkasme dalam percakapan atau situasi sehari-hari. 皮肉を言う = mengatakan sesuatu yang sarkastis. 皮肉なことに = ironisnya, secara ironis.",
-  "conj_type": null,
+  "conj_type": 'na-adj',
   "examples": [
     {
       "jp": "彼は笑顔で<b>皮肉</b>を言うから、冗談なのか本気なのかわからない。",
@@ -12307,7 +12307,7 @@ window.vocabN1 = [
     "umum"
   ],
   "nuance": "Yojijukugo yang menggambarkan perjalanan yang penuh tikungan, hambatan, dan pasang surut. 紆余曲折を経て = setelah melewati berbagai rintangan dan pasang surut. Biasanya berkonotasi bahwa pada akhirnya tujuan berhasil dicapai meski perjalanannya panjang dan berliku. Berbeda dari ただ「大変」(berat/sulit), 紆余曲折 menekankan variasi dan kompleksitas prosesnya.",
-  "conj_type": null,
+  "conj_type": 'suru',
   "examples": [
     {
       "jp": "<b>紆余曲折</b>を経て、ふたりはついに結婚した。",
@@ -13595,7 +13595,7 @@ window.vocabN1 = [
     "umum"
   ],
   "nuance": "Berbeda dari 偏見 (henken = prasangka yang bersifat personal dan emosional), 偏向 lebih bersifat struktural dan sistematis — kecenderungan yang tertanam dalam suatu sistem, laporan media, atau cara berpikir. 偏向報道 = pemberitaan yang tidak berimbang. Dipakai terutama dalam konteks media dan wacana ilmiah.",
-  "conj_type": null,
+  "conj_type": 'suru',
   "examples": [
     {
       "jp": "そのメディアの<b>偏向</b>した報道が問題になった。",
@@ -13893,7 +13893,7 @@ window.vocabN1 = [
     "rekan"
   ],
   "nuance": "Metafora dari seni ukir relief (浮き彫り) di mana figur muncul dari latar. Berbeda dari 強調する (menekankan secara eksplisit), 浮き彫りにする menyiratkan bahwa sesuatu yang sudah ada menjadi tampak jelas — sering dipakai dalam konteks masalah sosial yang 'terkuak' atau 'terungkap'.",
-  "conj_type": null,
+  "conj_type": 'suru',
   "examples": [
     {
       "jp": "この事件は社会格差の問題を<b>浮き彫りにした</b>。",
@@ -14011,7 +14011,7 @@ window.vocabN1 = [
     "rekan"
   ],
   "nuance": "Yojijukugo: 本 (hal utama/pokok) + 末 (hal sekunder/ujung) + 転倒 (terbalik). Menggambarkan kondisi di mana yang utama dan yang tidak utama tertukar posisinya. Sering dipakai untuk mengkritik kebijakan, keputusan, atau perilaku yang salah prioritas. Berbeda dari ただ「間違い」(kesalahan umum), 本末転倒 lebih spesifik pada urutan atau hierarki nilai yang terbalik.",
-  "conj_type": null,
+  "conj_type": 'suru',
   "examples": [
     {
       "jp": "健康のために運動するのに、それで体を壊すのでは<b>本末転倒</b>だ。",

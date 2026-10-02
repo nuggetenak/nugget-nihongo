@@ -29,7 +29,7 @@ window.vocabN1_Expressions = [
     "rekan"
   ],
   "nuance": "Metafora dari seni ukir relief (浮き彫り) di mana figur muncul dari latar. Berbeda dari 強調する (menekankan secara eksplisit), 浮き彫りにする menyiratkan bahwa sesuatu yang sudah ada menjadi tampak jelas — sering dipakai dalam konteks masalah sosial yang 'terkuak' atau 'terungkap'.",
-  "conj_type": null,
+  "conj_type": 'suru',
   "examples": [
     {
       "jp": "この事件は社会格差の問題を<b>浮き彫りにした</b>。",
@@ -147,7 +147,7 @@ window.vocabN1_Expressions = [
     "rekan"
   ],
   "nuance": "Yojijukugo: 本 (hal utama/pokok) + 末 (hal sekunder/ujung) + 転倒 (terbalik). Menggambarkan kondisi di mana yang utama dan yang tidak utama tertukar posisinya. Sering dipakai untuk mengkritik kebijakan, keputusan, atau perilaku yang salah prioritas. Berbeda dari ただ「間違い」(kesalahan umum), 本末転倒 lebih spesifik pada urutan atau hierarki nilai yang terbalik.",
-  "conj_type": null,
+  "conj_type": 'suru',
   "examples": [
     {
       "jp": "健康のために運動するのに、それで体を壊すのでは<b>本末転倒</b>だ。",

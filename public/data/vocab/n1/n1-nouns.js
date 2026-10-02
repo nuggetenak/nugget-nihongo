@@ -502,7 +502,7 @@ window.vocabN1_Nouns = [
     "umum"
   ],
   "nuance": "Biasanya dipakai sebagai 抽象的な (na-adj = bersifat abstrak). Berlawanan dengan 具体 (konkret). Penting dalam diskusi akademis, seni, dan filsafat. 抽象的すぎる = terlalu abstrak untuk dipahami.",
-  "conj_type": null,
+  "conj_type": 'suru',
   "examples": [
     {
       "jp": "彼の説明は抽象的すぎて理解しにくい。",
@@ -1219,7 +1219,7 @@ window.vocabN1_Nouns = [
     "umum"
   ],
   "nuance": "Menekankan ketiadaan kesetaraan yang seharusnya ada. Berbeda dari 格差 yang hanya menggambarkan perbedaan; 不平等 mengandung nuansa bahwa kondisi itu tidak adil atau tidak semestinya. 不平等な扱い = perlakuan yang tidak setara.",
-  "conj_type": null,
+  "conj_type": 'na-adj',
   "examples": [
     {
       "jp": "性別による不平等は現代でも依然として存在する。",
@@ -1347,7 +1347,7 @@ window.vocabN1_Nouns = [
     "umum"
   ],
   "nuance": "Kata sastrawi dan arkaik yang menggambarkan jarak atau kesenjangan yang sangat besar, baik secara fisik maupun konseptual. Sangat jarang dalam percakapan sehari-hari; muncul terutama dalam tulisan akademis atau sastra serius. Pelajar N1 perlu mengenali kata ini saat membaca teks formal.",
-  "conj_type": null,
+  "conj_type": 'suru',
   "examples": [
     {
       "jp": "理想と現実の間には大きな懸隔がある。",
@@ -1404,7 +1404,7 @@ window.vocabN1_Nouns = [
     "umum"
   ],
   "nuance": "Menggambarkan kondisi saat dua hal atau dua pihak tidak cocok atau tidak sejalan, seperti roda gigi yang tidak pas. 齟齬が生じる = terjadi ketidaksinkronan atau miskomunikasi. Sering dipakai dalam bisnis untuk menggambarkan perbedaan pemahaman yang berujung masalah.",
-  "conj_type": null,
+  "conj_type": 'suru',
   "examples": [
     {
       "jp": "両者の認識に齟齬が生じ、交渉が難航した。",
@@ -1697,7 +1697,7 @@ window.vocabN1_Nouns = [
     "umum"
   ],
   "nuance": "Berbeda dari 当然 (naturally expected, of course — berdasarkan norma sosial atau logika umum), 必然 menyiratkan kausalitas yang kuat — sesuatu tidak hanya diperkirakan, tetapi secara logis HARUS terjadi. 必然性 = sifat keniscayaan. 必然的に = secara niscaya. Sering digunakan dalam diskusi filosofis atau analisis sejarah.",
-  "conj_type": null,
+  "conj_type": 'na-adj',
   "examples": [
     {
       "jp": "努力した者が成功するのは<b>必然</b>だとは言えない。",
@@ -1956,7 +1956,7 @@ window.vocabN1_Nouns = [
     "umum"
   ],
   "nuance": "Berbeda dari 風刺 (ふうし — satire yang ditujukan ke masyarakat/institusi, umumnya dalam bentuk tulisan atau seni), 皮肉 lebih interpersonal — ironi atau sarkasme dalam percakapan atau situasi sehari-hari. 皮肉を言う = mengatakan sesuatu yang sarkastis. 皮肉なことに = ironisnya, secara ironis.",
-  "conj_type": null,
+  "conj_type": 'na-adj',
   "examples": [
     {
       "jp": "彼は笑顔で<b>皮肉</b>を言うから、冗談なのか本気なのかわからない。",
@@ -2082,7 +2082,7 @@ window.vocabN1_Nouns = [
     "umum"
   ],
   "nuance": "Yojijukugo yang menggambarkan perjalanan yang penuh tikungan, hambatan, dan pasang surut. 紆余曲折を経て = setelah melewati berbagai rintangan dan pasang surut. Biasanya berkonotasi bahwa pada akhirnya tujuan berhasil dicapai meski perjalanannya panjang dan berliku. Berbeda dari ただ「大変」(berat/sulit), 紆余曲折 menekankan variasi dan kompleksitas prosesnya.",
-  "conj_type": null,
+  "conj_type": 'suru',
   "examples": [
     {
       "jp": "<b>紆余曲折</b>を経て、ふたりはついに結婚した。",
@@ -3370,7 +3370,7 @@ window.vocabN1_Nouns = [
     "umum"
   ],
   "nuance": "Berbeda dari 偏見 (henken = prasangka yang bersifat personal dan emosional), 偏向 lebih bersifat struktural dan sistematis — kecenderungan yang tertanam dalam suatu sistem, laporan media, atau cara berpikir. 偏向報道 = pemberitaan yang tidak berimbang. Dipakai terutama dalam konteks media dan wacana ilmiah.",
-  "conj_type": null,
+  "conj_type": 'suru',
   "examples": [
     {
       "jp": "そのメディアの<b>偏向</b>した報道が問題になった。",

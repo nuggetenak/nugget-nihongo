@@ -313,7 +313,7 @@ window.bookMinna2 = {
         'vg-n5-00672', // はれ — cerah
         'vg-n5-00673', // くもり — mendung
         'vg-n5-00134', // 雨 — hujan
-        'vg-n4-00288', // ニュース — berita
+        'vg-n5-00402', // ニュース — berita
         'vg-n4-00529', // 事故 — kecelakaan
         'vg-n4-00525', // 地震 — gempa bumi
       ],

@@ -54,7 +54,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Intransitif — benda yang terbuka sendiri. Beda dengan 開ける (transitif).',
   conj_type: 'godan',
-  examples: [{"jp": "ドアが開きました。", "id": "Pintunya terbuka.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [
+      { jp: '心を開くんだ。', en: 'Open your hearts.', id: '[TBD]' },{"jp": "ドアが開きました。", "id": "Pintunya terbuka.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: ['vg-n5-00003'],
   see_also: ['vg-n5-00004'],
@@ -171,9 +172,10 @@ window.vocabN5_Verbs = [
   domain: ['kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
-  nuance: null,
+  nuance: 'Refers specifically to washing with water or a liquid. Not used for \'washing\' a car using a rag without water, for example.',
   conj_type: 'godan',
-  examples: [{"jp": "手を洗ってください。", "id": "Tolong cuci tangan.", "level": "n5", "tags": ["kesehatan"]}],
+  examples: [
+      { jp: '洗う必要がある。', en: 'It needs washing.', id: '[TBD]' },{"jp": "手を洗ってください。", "id": "Tolong cuci tangan.", "level": "n5", "tags": ["kesehatan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -200,9 +202,10 @@ window.vocabN5_Verbs = [
   domain: ['perjalanan', 'kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
-  nuance: null,
+  nuance: 'Denotes the physical action of walking on foot. Often contrasted with 走る (はしる, to run).',
   conj_type: 'godan',
-  examples: [{"jp": "駅まで歩いて行きます。", "id": "Saya berjalan ke stasiun.", "level": "n5", "tags": ["perjalanan"]}],
+  examples: [
+      { jp: '彼は歩くつもりだ。', en: 'He will walk.', id: '[TBD]' },{"jp": "駅まで歩いて行きます。", "id": "Saya berjalan ke stasiun.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -231,7 +234,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Sangat umum. Keigo: おっしゃる (sonkei), 申す (kenjo).',
   conj_type: 'godan',
-  examples: [{"jp": "何と言いましたか。", "id": "Apa yang kamu katakan?", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [
+      { jp: '言うとおりにして。', en: 'Do as I say.', id: '[TBD]' },{"jp": "何と言いましたか。", "id": "Apa yang kamu katakan?", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -261,7 +265,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Te-form irregular: いって (bukan いいて).',
   conj_type: 'godan',
-  examples: [{"jp": "学校に行きます。", "id": "Saya pergi ke sekolah.", "level": "n5", "tags": ["pendidikan"]}],
+  examples: [
+      { jp: '行くよ。', en: 'I\'ll go.', id: '[TBD]' },{"jp": "学校に行きます。", "id": "Saya pergi ke sekolah.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: ['vg-n5-00010'],
   see_also: [],
@@ -321,7 +326,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman', 'keluarga'],
   nuance: 'Godan meski berakhiran る. Beda dengan 戻る (kembali ke tempat sebelumnya).',
   conj_type: 'godan',
-  examples: [{"jp": "６時に家に帰ります。", "id": "Saya pulang jam 6.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [
+      { jp: '家に帰るよ。', en: 'I\'m going home.', id: '[TBD]' },{"jp": "６時に家に帰ります。", "id": "Saya pulang jam 6.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -351,7 +357,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '図書館 = perpustakaan umum. Beda: 本屋 (honya) = toko buku.',
   conj_type: 'godan',
-  examples: [{"jp": "図書館で本を借りることができます。", "id": "Di perpustakaan bisa meminjam buku.", "level": "n5", "tags": ["pendidikan"]}],
+  examples: [
+      { jp: '私は書くことに飽きた。', en: 'I\'m tired of writing.', id: '[TBD]' },{"jp": "図書館で本を借りることができます。", "id": "Di perpustakaan bisa meminjam buku.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -380,7 +387,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Dua arti: mendengarkan (音楽を聞く) dan bertanya (先生に聞く).',
   conj_type: 'godan',
-  examples: [{"jp": "音楽を聞いています。", "id": "Saya sedang mendengarkan musik.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [
+      { jp: 'トムは聞く。', en: 'Tom listens.', id: '[TBD]' },{"jp": "音楽を聞いています。", "id": "Saya sedang mendengarkan musik.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -410,7 +418,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Godan meski berakhiran る.',
   conj_type: 'godan',
-  examples: [{"jp": "野菜を切ります。", "id": "Saya memotong sayuran.", "level": "n5", "tags": ["makanan-minuman"]}],
+  examples: [
+      { jp: '道路を横切るな。', en: 'Don\'t cross the road.', id: '[TBD]' },{"jp": "野菜を切ります。", "id": "Saya memotong sayuran.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -439,7 +448,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Hanya untuk pakaian di bagian atas tubuh. 履く untuk celana/sepatu, かぶる untuk topi.',
   conj_type: 'ichidan',
-  examples: [{"jp": "コートを着て出かけました。", "id": "Saya keluar memakai mantel.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [
+      { jp: '恩に着るよ。', en: 'I owe you one.', id: '[TBD]' },{"jp": "コートを着て出かけました。", "id": "Saya keluar memakai mantel.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -469,7 +479,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '聞く = mendengarkan (sengaja) ATAU bertanya. Konteks menentukan. Lawan: 聞こえる = terdengar.',
   conj_type: 'godan',
-  examples: [{"jp": "電気を消してください。", "id": "Tolong matikan lampunya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [
+      { jp: 'ガスを消すのを忘れたわ。', en: 'I forgot to turn off the gas!', id: '[TBD]' },{"jp": "電気を消してください。", "id": "Tolong matikan lampunya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: ['vg-n5-00017'],
   see_also: [],
@@ -528,7 +539,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '知っている = keadaan tahu sekarang. 知らない = tidak tahu.',
   conj_type: 'godan',
-  examples: [{"jp": "彼の名前を知っていますか。", "id": "Apakah kamu tahu namanya?", "level": "n5", "tags": ["hubungan"]}],
+  examples: [
+      { jp: '知るもんか。', en: 'Who cares?', id: '[TBD]' },{"jp": "彼の名前を知っていますか。", "id": "Apakah kamu tahu namanya?", "level": "n5", "tags": ["hubungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -558,7 +570,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Untuk tempat tinggal permanen. 〜に住む pakai partikel に.',
   conj_type: 'godan',
-  examples: [{"jp": "東京に住んでいます。", "id": "Saya tinggal di Tokyo.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [
+      { jp: '私には住む家がない。', en: 'I have no home to live in.', id: '[TBD]' },{"jp": "東京に住んでいます。", "id": "Saya tinggal di Tokyo.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -586,7 +599,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Irregular verb. Paling sering dipakai untuk suru-compound: 勉強する, 仕事する, dll.',
   conj_type: 'suru',
-  examples: [{"jp": "毎日運動します。", "id": "Saya olahraga setiap hari.", "level": "n5", "tags": ["olahraga"]}],
+  examples: [
+      { jp: '感謝する。', en: 'Thanks.', id: '[TBD]' },{"jp": "毎日運動します。", "id": "Saya olahraga setiap hari.", "level": "n5", "tags": ["olahraga"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -616,7 +630,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '来る (くる) — CATATAN: entry ini duplikat v-n5-0010? Cek.',
   conj_type: 'godan',
-  examples: [{"jp": "椅子に座ってください。", "id": "Silakan duduk di kursi.", "level": "n5", "tags": ["sopan-santun"]}],
+  examples: [
+      { jp: 'ここに座るのはよそう。', en: 'Let\'s not sit here.', id: '[TBD]' },{"jp": "椅子に座ってください。", "id": "Silakan duduk di kursi.", "level": "n5", "tags": ["sopan-santun"]}],
   synonyms: [],
   antonyms: ['vg-n5-00022'],
   see_also: [],
@@ -676,7 +691,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Keigo: 召し上がる (sonkei), いただく (kenjo).',
   conj_type: 'ichidan',
-  examples: [{"jp": "朝ご飯を食べました。", "id": "Saya makan sarapan.", "level": "n5", "tags": ["makanan-minuman"]}],
+  examples: [
+      { jp: '彼はたくさん食べる。', en: 'He eats a lot.', id: '[TBD]' },{"jp": "朝ご飯を食べました。", "id": "Saya makan sarapan.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n5-00024'],
@@ -736,7 +752,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'わかる = mengerti/paham (intransitif). Tidak ada objek-を; pakai が: 日本語がわかります.',
   conj_type: 'godan',
-  examples: [{"jp": "日本語を使って話してください。", "id": "Tolong bicara menggunakan bahasa Jepang.", "level": "n5", "tags": ["pendidikan"]}],
+  examples: [
+      { jp: '何に使うの？', en: 'What for?', id: '[TBD]' },{"jp": "日本語を使って話してください。", "id": "Tolong bicara menggunakan bahasa Jepang.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -766,7 +783,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'できる = bisa/mampu. 日本語ができる = bisa bahasa Jepang. Juga: selesai dibuat/terjadi.',
   conj_type: 'godan',
-  examples: [{"jp": "ケーキを作りました。", "id": "Saya membuat kue.", "level": "n5", "tags": ["makanan-minuman"]}],
+  examples: [
+      { jp: '夕飯、作るね。', en: 'I\'ll make dinner.', id: '[TBD]' },{"jp": "ケーキを作りました。", "id": "Saya membuat kue.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -796,7 +814,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman', 'keluarga'],
   nuance: '出かける = pergi keluar (dari rumah/kantor). Lebih spesifik dari 行く.',
   conj_type: 'ichidan',
-  examples: [{"jp": "今から出かけます。", "id": "Saya akan keluar sekarang.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [
+      { jp: '今出かける所なんですよ。', en: 'I\'m leaving now.', id: '[TBD]' },{"jp": "今から出かけます。", "id": "Saya akan keluar sekarang.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -826,7 +845,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '〜を出る: keluar dari tempat. 〜に出る: muncul di acara.',
   conj_type: 'ichidan',
-  examples: [{"jp": "学校を出ました。", "id": "Saya keluar dari sekolah.", "level": "n5", "tags": ["pendidikan"]}],
+  examples: [
+      { jp: 'よくしゃっくりが出る。', en: 'I often hiccup.', id: '[TBD]' },{"jp": "学校を出ました。", "id": "Saya keluar dari sekolah.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: ['vg-n5-00029'],
   see_also: [],
@@ -886,7 +906,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman', 'rekan'],
   nuance: '寝る = tidur/berbaring. 寝る時間 = jam tidur. Berbeda: 眠る (nemuru) = tertidur (intransitif).',
   conj_type: 'godan',
-  examples: [{"jp": "会社で働いています。", "id": "Saya bekerja di perusahaan.", "level": "n5", "tags": ["pekerjaan"]}],
+  examples: [
+      { jp: '働くのが好きなんだよ。', en: 'I like working.', id: '[TBD]' },{"jp": "会社で働いています。", "id": "Saya bekerja di perusahaan.", "level": "n5", "tags": ["pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -915,7 +936,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'はたらく (働く) = bekerja (aktif). Berbeda: 仕事する (aktivitas kerja).',
   conj_type: 'godan',
-  examples: [{"jp": "日本語で話しましょう。", "id": "Ayo bicara dalam bahasa Jepang.", "level": "n5", "tags": ["pendidikan"]}],
+  examples: [
+      { jp: '私は話すことができない。', en: 'I can\'t talk.', id: '[TBD]' },{"jp": "日本語で話しましょう。", "id": "Ayo bicara dalam bahasa Jepang.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -945,7 +967,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Keigo: ご覧になる (sonkei), 拝見する (kenjo).',
   conj_type: 'ichidan',
-  examples: [{"jp": "映画を見ました。", "id": "Saya menonton film.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [
+      { jp: 'じろじろ見るな。', en: 'Don\'t stare.', id: '[TBD]' },{"jp": "映画を見ました。", "id": "Saya menonton film.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -976,7 +999,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '郵便局 = kantor pos. 郵便 = surat/pos. 郵便局でお金を送る = kirim uang di kantor pos.',
   conj_type: 'godan',
-  examples: [{"jp": "郵便局で荷物を送りました。", "id": "Saya mengirim paket di kantor pos.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [
+      { jp: '私は読むことができます。', en: 'I can read.', id: '[TBD]' },{"jp": "郵便局で荷物を送りました。", "id": "Saya mengirim paket di kantor pos.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -1006,7 +1030,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman'],
   nuance: 'かける = menelepon / menggantungkan / menuangkan. Konteks tergantung objek.',
   conj_type: 'godan',
-  examples: [{"jp": "プールで泳ぎました。", "id": "Saya berenang di kolam renang.", "level": "n5", "tags": ["olahraga"]}],
+  examples: [
+      { jp: '私は泳ぐことが出来ます。', en: 'I can swim.', id: '[TBD]' },{"jp": "プールで泳ぎました。", "id": "Saya berenang di kolam renang.", "level": "n5", "tags": ["olahraga"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -1036,7 +1061,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman', 'keluarga'],
   nuance: '乗る = naik (kendaraan). 電車に乗る. Lawan: 降りる (oriru) = turun.',
   conj_type: 'ichidan',
-  examples: [{"jp": "毎朝６時に起きます。", "id": "Setiap pagi saya bangun jam 6.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [
+      { jp: '起きる時間よ。', en: 'Time to get up.', id: '[TBD]' },{"jp": "毎朝６時に起きます。", "id": "Setiap pagi saya bangun jam 6.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: ['vg-n5-00036'],
   see_also: [],
@@ -1095,7 +1121,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Nai-form: 買わない (う→わ).',
   conj_type: 'godan',
-  examples: [{"jp": "スーパーで野菜を買いました。", "id": "Saya membeli sayuran di supermarket.", "level": "n5", "tags": ["belanja", "makanan-minuman"]}],
+  examples: [
+      { jp: 'それ買うよ。', en: 'I\'ll buy it.', id: '[TBD]' },{"jp": "スーパーで野菜を買いました。", "id": "Saya membeli sayuran di supermarket.", "level": "n5", "tags": ["belanja", "makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -1124,7 +1151,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '売る = menjual. Lawan: 買う. 売り場 = counter/bagian di toko.',
   conj_type: 'godan',
-  examples: [{"jp": "この店は本を売っています。", "id": "Toko ini menjual buku.", "level": "n5", "tags": ["belanja"]}],
+  examples: [
+      { jp: '売ることにしたんだ。', en: 'I decided to sell it.', id: '[TBD]' },{"jp": "この店は本を売っています。", "id": "Toko ini menjual buku.", "level": "n5", "tags": ["belanja"]}],
   synonyms: [],
   antonyms: ['vg-n5-00037'],
   see_also: [],
@@ -1153,7 +1181,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman'],
   nuance: 'Lawan: 借りる (meminjam).',
   conj_type: 'godan',
-  examples: [{"jp": "傘を貸してください。", "id": "Tolong pinjamkan payung.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [
+      { jp: '噂話に耳を貸すな。', en: 'Don\'t listen to gossip.', id: '[TBD]' },{"jp": "傘を貸してください。", "id": "Tolong pinjamkan payung.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: ['vg-n5-00040'],
   see_also: [],
@@ -1214,7 +1243,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman', 'murid'],
   nuance: 'もらう = menerima/mendapat (dari orang). Lawan: あげる (ageru) = memberi.',
   conj_type: 'ichidan',
-  examples: [{"jp": "日本語を教えています。", "id": "Saya mengajar bahasa Jepang.", "level": "n5", "tags": ["pendidikan", "pekerjaan"]}],
+  examples: [
+      { jp: 'トムは教える。', en: 'Tom teaches.', id: '[TBD]' },{"jp": "日本語を教えています。", "id": "Saya mengajar bahasa Jepang.", "level": "n5", "tags": ["pendidikan", "pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -1244,7 +1274,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'あげる = memberi (ke orang). Keigo: さしあげる (humble). Lawan: もらう.',
   conj_type: 'ichidan',
-  examples: [{"jp": "単語を覚えました。", "id": "Saya menghafal kosakata.", "level": "n5", "tags": ["pendidikan"]}],
+  examples: [
+      { jp: '僕は覚えるのが遅いんだ。', en: 'I\'m a slow learner.', id: '[TBD]' },{"jp": "単語を覚えました。", "id": "Saya menghafal kosakata.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -1274,7 +1305,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman'],
   nuance: 'くれる = memberi (ke saya/pihak saya). Berbeda dari あげる: perspektif penerima.',
   conj_type: 'godan',
-  examples: [{"jp": "カラオケで歌いました。", "id": "Saya bernyanyi di karaoke.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [
+      { jp: '鼻歌を歌うのはやめろ。', en: 'Stop humming.', id: '[TBD]' },{"jp": "カラオケで歌いました。", "id": "Saya bernyanyi di karaoke.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -1304,7 +1336,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Lawan: 乗る (naik). Pakai partikel で atau を.',
   conj_type: 'ichidan',
-  examples: [{"jp": "次の駅で降ります。", "id": "Saya turun di stasiun berikutnya.", "level": "n5", "tags": ["perjalanan"]}],
+  examples: [
+      { jp: '終点で降りる。', en: 'I\'ll get off at the last stop.', id: '[TBD]' },{"jp": "次の駅で降ります。", "id": "Saya turun di stasiun berikutnya.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n5-00045'],
@@ -1364,7 +1397,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Intransitif. Transitif: 終える (jarang).',
   conj_type: 'godan',
-  examples: [{"jp": "授業が終わりました。", "id": "Pelajaran sudah selesai.", "level": "n5", "tags": ["pendidikan"]}],
+  examples: [
+      { jp: 'いつ終わるの？', en: 'When\'s it over?', id: '[TBD]' },{"jp": "授業が終わりました。", "id": "Pelajaran sudah selesai.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -1395,7 +1429,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Intransitif. Transitif: 始める.',
   conj_type: 'godan',
-  examples: [{"jp": "映画が始まりました。", "id": "Filmnya mulai.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [
+      { jp: 'ほら、始まるわよ。', en: 'It\'s starting now.', id: '[TBD]' },{"jp": "映画が始まりました。", "id": "Filmnya mulai.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: ['vg-n5-00046'],
   see_also: [],
@@ -1424,7 +1459,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '終わる = selesai/berakhir (intransitif). 仕事が終わる. Transitif: 終える (lebih formal).',
   conj_type: 'godan',
-  examples: [{"jp": "ボタンを押してください。", "id": "Tolong tekan tombolnya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [
+      { jp: '押すなよ。', en: 'Don\'t push.', id: '[TBD]' },{"jp": "ボタンを押してください。", "id": "Tolong tekan tombolnya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -1452,9 +1488,10 @@ window.vocabN5_Verbs = [
   domain: ['kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
-  nuance: null,
+  nuance: 'Can mean to send a thing or to see someone off. When used for people, it implies accompanying someone to their point of departure.',
   conj_type: 'godan',
-  examples: [{"jp": "メールを送りました。", "id": "Saya mengirim email.", "level": "n5", "tags": ["pekerjaan"]}],
+  examples: [
+      { jp: '家まで送るよ。', en: 'I will take you home.', id: '[TBD]' },{"jp": "メールを送りました。", "id": "Saya mengirim email.", "level": "n5", "tags": ["pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -1483,7 +1520,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Keigo: いただく (kenjo). Berlawanan perspektif dengan あげる/くれる.',
   conj_type: 'godan',
-  examples: [{"jp": "プレゼントをもらいました。", "id": "Saya menerima hadiah.", "level": "n5", "tags": ["hubungan"]}],
+  examples: [
+      { jp: '医者に診てもらうべきですよ。', en: 'You should see a doctor.', id: '[TBD]' },{"jp": "プレゼントをもらいました。", "id": "Saya menerima hadiah.", "level": "n5", "tags": ["hubungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n5-00051', 'vg-n5-00052'],
@@ -1574,7 +1612,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Untuk orang dan hewan. Benda mati pakai ある. Keigo: いらっしゃる.',
   conj_type: 'ichidan',
-  examples: [{"jp": "猫が二匹います。", "id": "Ada dua ekor kucing.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [
+      { jp: '私は太っている。', en: 'I\'m fat.', id: '[TBD]' },{"jp": "猫が二匹います。", "id": "Ada dua ekor kucing.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n5-00054'],
@@ -1633,7 +1672,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '知る = tahu/mengetahui. Perhatian: 知っています (bukan 知ります) untuk state "sedang tahu".',
   conj_type: 'ichidan',
-  examples: [{"jp": "パスポートを見せてください。", "id": "Tolong tunjukkan paspornya.", "level": "n5", "tags": ["perjalanan"]}],
+  examples: [
+      { jp: '喜怒哀楽を見せるな。', en: 'Don\'t let your feelings show.', id: '[TBD]' },{"jp": "パスポートを見せてください。", "id": "Tolong tunjukkan paspornya.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -1663,7 +1703,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '思う = berpikir/merasa (opini). Lebih subjektif dari 考える (kangaeru) = memikirkan secara aktif.',
   conj_type: 'ichidan',
-  examples: [{"jp": "東京で生まれました。", "id": "Saya lahir di Tokyo.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [
+      { jp: 'もうすぐ子供が生まれるんです。', en: 'We\'re about to have a baby.', id: '[TBD]' },{"jp": "東京で生まれました。", "id": "Saya lahir di Tokyo.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -1692,7 +1733,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '電話する = menelepon. 電話をかける juga umum.',
   conj_type: 'suru',
-  examples: [{"jp": "後で電話します。", "id": "Nanti saya telepon.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [
+      { jp: '電話してね。', en: 'Call me.', id: '[TBD]' },{"jp": "後で電話します。", "id": "Nanti saya telepon.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -1887,7 +1929,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: [],
   nuance: 'あける = membuka (transitif, ada pelaku). Intransitif: あく.',
   conj_type: 'ichidan',
-  examples: [{"jp": "窓を開けてください。", "id": "Tolong buka jendelanya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [
+      { jp: '行と行の間をあけること。', en: 'Leave a space between the lines.', id: '[TBD]' },{"jp": "窓を開けてください。", "id": "Tolong buka jendelanya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -1915,7 +1958,7 @@ window.vocabN5_Verbs = [
   domain: ['kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: [],
-  nuance: null,
+  nuance: 'Used for spending leisure time or hanging out, not just playing games. Adults can \'play\' by going out for drinks or hanging out with friends.',
   conj_type: 'godan',
   examples: [{"jp": "子どもたちが公園で遊んでいます。", "id": "Anak-anak sedang bermain di taman.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
@@ -1973,7 +2016,7 @@ window.vocabN5_Verbs = [
   domain: ['kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: [],
-  nuance: null,
+  nuance: 'Refers to washing hands, dishes, or clothes with water. Identical to 洗う in kanji.',
   conj_type: 'godan',
   examples: [{"jp": "手をよく洗ってください。", "id": "Tolong cuci tangan dengan bersih.", "level": "n5", "tags": ["kesehatan"]}],
   synonyms: [],
@@ -2004,7 +2047,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: [],
   nuance: '言う vs 話す: 言う = menyatakan sesuatu, 話す = bercakap-cakap.',
   conj_type: 'godan',
-  examples: [{"jp": "何と言いましたか。", "id": "Anda bilang apa?", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [
+      { jp: 'そういうこと。', en: 'That\'s it.', id: '[TBD]' },{"jp": "何と言いましたか。", "id": "Anda bilang apa?", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2033,7 +2077,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: [],
   nuance: 'Keigo: いらっしゃる (sonkei). Berbeda dari 来る: 行く = menjauh dari pembicara.',
   conj_type: 'godan',
-  examples: [{"jp": "学校に行きます。", "id": "Saya pergi ke sekolah.", "level": "n5", "tags": ["pendidikan"]}],
+  examples: [
+      { jp: '歩いていくよ。', en: 'We\'ll walk.', id: '[TBD]' },{"jp": "学校に行きます。", "id": "Saya pergi ke sekolah.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2058,7 +2103,7 @@ window.vocabN5_Verbs = [
   domain: ['kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: [],
-  nuance: null,
+  nuance: 'Can describe physical movement of a person or object, but also refers to a machine functioning or operating.',
   conj_type: 'godan',
   examples: [{"jp": "このエレベーターは動きません。", "id": "Lift ini tidak bergerak.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
@@ -2087,7 +2132,7 @@ window.vocabN5_Verbs = [
   domain: ['keluarga'],
   register: 'neutral',
   lawan_bicara: [],
-  nuance: null,
+  nuance: 'Focuses on the event of being born. Often used in the past tense (生まれました) to state where or when one was born.',
   conj_type: 'ichidan',
   examples: [{"jp": "私は大阪で生まれました。", "id": "Saya lahir di Osaka.", "level": "n5", "tags": ["keluarga"]}],
   synonyms: [],
@@ -2116,9 +2161,10 @@ window.vocabN5_Verbs = [
   domain: ['kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: [],
-  nuance: null,
+  nuance: 'Means both to wake up from sleep and to physically get up from a bed. Also used for things that \'happen\' or \'occur\'.',
   conj_type: 'ichidan',
-  examples: [{"jp": "毎朝七時に起きます。", "id": "Setiap pagi saya bangun jam tujuh.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [
+      { jp: '私はたいてい６時におきる。', en: 'I usually get up at six.', id: '[TBD]' },{"jp": "毎朝七時に起きます。", "id": "Setiap pagi saya bangun jam tujuh.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2145,9 +2191,10 @@ window.vocabN5_Verbs = [
   domain: ['kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: [],
-  nuance: null,
+  nuance: 'Denotes applying pressure, such as pressing a button or pushing a door. Can also mean to affix a seal (stamp).',
   conj_type: 'godan',
-  examples: [{"jp": "ボタンを押してください。", "id": "Tolong tekan tombolnya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [
+      { jp: 'どうぞ、おすわりください。', en: 'Please sit down.', id: '[TBD]' },{"jp": "ボタンを押してください。", "id": "Tolong tekan tombolnya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2208,7 +2255,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: [],
   nuance: '帰る = pulang ke tempat asal (rumah). Berbeda: 戻る = kembali ke tempat sebelumnya.',
   conj_type: 'godan',
-  examples: [{"jp": "今日は早く帰ります。", "id": "Hari ini saya pulang lebih awal.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [
+      { jp: '今のところ買いかえる予定はないなあ。', en: 'I don\'t plan to buy a new one at this time.', id: '[TBD]' },{"jp": "今日は早く帰ります。", "id": "Hari ini saya pulang lebih awal.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2238,7 +2286,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: [],
   nuance: '時間がかかる / お金がかかる。 Selalu intransitif.',
   conj_type: 'godan',
-  examples: [{"jp": "ここから駅まで十分かかります。", "id": "Dari sini ke stasiun butuh sepuluh menit.", "level": "n5", "tags": ["perjalanan"]}],
+  examples: [
+      { jp: 'めっちゃ時間がかかるのよ。', en: 'It takes a lot of time.', id: '[TBD]' },{"jp": "ここから駅まで十分かかります。", "id": "Dari sini ke stasiun butuh sepuluh menit.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2263,9 +2312,10 @@ window.vocabN5_Verbs = [
   domain: ['pendidikan'],
   register: 'neutral',
   lawan_bicara: [],
-  nuance: null,
+  nuance: 'Used broadly for writing words or drawing pictures. Kanji varies depending on whether you write letters (書く) or draw pictures (描く).',
   conj_type: 'godan',
-  examples: [{"jp": "名前を書いてください。", "id": "Tolong tulis namanya.", "level": "n5", "tags": ["pendidikan"]}],
+  examples: [
+      { jp: 'あったかくしてなさい。', en: 'Keep warm.', id: '[TBD]' },{"jp": "名前を書いてください。", "id": "Tolong tulis namanya.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2292,7 +2342,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: [],
   nuance: '電話をかける = menelepon. 鍵をかける = mengunci. 眼鏡をかける = memakai kacamata.',
   conj_type: 'ichidan',
-  examples: [{"jp": "後で電話をかけます。", "id": "Nanti saya akan menelepon.", "level": "n5", "tags": ["hubungan"]}],
+  examples: [
+      { jp: '３かける５は１５。', en: '3 times 5 is 15.', id: '[TBD]' },{"jp": "後で電話をかけます。", "id": "Nanti saya akan menelepon.", "level": "n5", "tags": ["hubungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2323,7 +2374,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: [],
   nuance: '貸す = meminjamkan (ke orang). Lawan: 借りる = meminjam (dari orang).',
   conj_type: 'godan',
-  examples: [{"jp": "傘を貸してもらえますか。", "id": "Bisakah kamu meminjamkan payung?", "level": "n5", "tags": ["hubungan"]}],
+  examples: [
+      { jp: 'かっかするな。', en: 'Don\'t get mad.', id: '[TBD]' },{"jp": "傘を貸してもらえますか。", "id": "Bisakah kamu meminjamkan payung?", "level": "n5", "tags": ["hubungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2349,7 +2401,7 @@ window.vocabN5_Verbs = [
   domain: ['kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: [],
-  nuance: null,
+  nuance: 'Implies organizing or putting things back in their proper place, unlike 掃除する (to clean/sweep) which focuses on removing dirt.',
   conj_type: 'ichidan',
   examples: [{"jp": "部屋を片付けてください。", "id": "Tolong bereskan kamarnya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
@@ -2381,7 +2433,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: [],
   nuance: 'かぶる = khusus topi, helm, masker (di kepala). Beda: きる = pakaian atas, はく = bawah.',
   conj_type: 'godan',
-  examples: [{"jp": "ヘルメットをかぶってください。", "id": "Tolong pakai helmnya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [
+      { jp: '彼らは帽子をかぶると外へ出た。', en: 'They put their hats on and went outside.', id: '[TBD]' },{"jp": "ヘルメットをかぶってください。", "id": "Tolong pakai helmnya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2442,7 +2495,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: [],
   nuance: '聞く = mendengarkan (musik, dll) ATAU bertanya. 聞こえる = terdengar (involuntar).',
   conj_type: 'godan',
-  examples: [{"jp": "音楽を聞きながら勉強します。", "id": "Saya belajar sambil mendengarkan musik.", "level": "n5", "tags": ["pendidikan"]}],
+  examples: [
+      { jp: 'もう少し大きくして。', en: 'Turn it up.', id: '[TBD]' },{"jp": "音楽を聞きながら勉強します。", "id": "Saya belajar sambil mendengarkan musik.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2470,7 +2524,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: [],
   nuance: '着る = pakaian atas (kemeja, jaket, kimono). Beda: はく = bawah, かぶる = kepala.',
   conj_type: 'ichidan',
-  examples: [{"jp": "今日は白いシャツを着ています。", "id": "Hari ini saya memakai kemeja putih.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [
+      { jp: '私は走ることができる。', en: 'I can run.', id: '[TBD]' },{"jp": "今日は白いシャツを着ています。", "id": "Hari ini saya memakai kemeja putih.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2498,7 +2553,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: [],
   nuance: '来る = datang menuju pembicara. Keigo: いらっしゃる (sonkei), 参る (kenjo).',
   conj_type: 'kuru',
-  examples: [{"jp": "友達がうちに来ます。", "id": "Teman akan datang ke rumah saya.", "level": "n5", "tags": ["hubungan"]}],
+  examples: [
+      { jp: '戻ってくるんだ。', en: 'Come back.', id: '[TBD]' },{"jp": "友達がうちに来ます。", "id": "Teman akan datang ke rumah saya.", "level": "n5", "tags": ["hubungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2527,7 +2583,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: [],
   nuance: '電気を消す = matikan lampu. 黒板を消す = hapus papan tulis. Lawan: つける.',
   conj_type: 'godan',
-  examples: [{"jp": "電気を消してください。", "id": "Tolong matikan lampunya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [
+      { jp: '今夜はお出かけするよ。', en: 'I\'m going out this evening.', id: '[TBD]' },{"jp": "電気を消してください。", "id": "Tolong matikan lampunya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2555,9 +2612,10 @@ window.vocabN5_Verbs = [
   domain: ['pendidikan'],
   register: 'neutral',
   lawan_bicara: [],
-  nuance: null,
+  nuance: 'Refers to replying to a question, answering a test, or responding to someone. Takes the particle に for what you are answering.',
   conj_type: 'ichidan',
-  examples: [{"jp": "質問に答えてください。", "id": "Tolong jawab pertanyaannya.", "level": "n5", "tags": ["pendidikan"]}],
+  examples: [
+      { jp: '我が家がハリケーンに持ちこたえるなんて奇跡だよ。', en: 'It\'s a miracle that our house survived the hurricane.', id: '[TBD]' },{"jp": "質問に答えてください。", "id": "Tolong jawab pertanyaannya.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2585,9 +2643,10 @@ window.vocabN5_Verbs = [
   domain: ['kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: [],
-  nuance: null,
+  nuance: 'Means to physically touch something. Often used with the particle に to indicate the object being touched (e.g., 絵にさわる).',
   conj_type: 'godan',
-  examples: [{"jp": "これに触らないでください。", "id": "Tolong jangan sentuh ini.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [
+      { jp: 'ああいう人は神経にさわる。', en: 'A man like that gets on my nerves.', id: '[TBD]' },{"jp": "これに触らないでください。", "id": "Tolong jangan sentuh ini.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2644,7 +2703,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: [],
   nuance: '閉める (transitif). Intransitif: 閉まる (shimaru). ドアを閉める = menutup pintu.',
   conj_type: 'ichidan',
-  examples: [{"jp": "ドアを閉めてください。", "id": "Tolong tutup pintunya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [
+      { jp: 'ドアの鍵をしめるんだ。', en: 'Lock the doors.', id: '[TBD]' },{"jp": "ドアを閉めてください。", "id": "Tolong tutup pintunya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2672,7 +2732,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: [],
   nuance: '知っています (bukan 知ります) untuk "sedang tahu". 知りません = tidak tahu.',
   conj_type: 'godan',
-  examples: [{"jp": "彼の電話番号を知っていますか。", "id": "Apakah kamu tahu nomor teleponnya?", "level": "n5", "tags": ["hubungan"]}],
+  examples: [
+      { jp: '腹を立てると彼はよく口汚くののしる。', en: 'He often swears when he is angry.', id: '[TBD]' },{"jp": "彼の電話番号を知っていますか。", "id": "Apakah kamu tahu nomor teleponnya?", "level": "n5", "tags": ["hubungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2700,9 +2761,10 @@ window.vocabN5_Verbs = [
   domain: ['kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: [],
-  nuance: null,
+  nuance: 'Focuses on the state of residing somewhere. When currently living in a place, you use the continuous form (住んでいる).',
   conj_type: 'godan',
-  examples: [{"jp": "東京に住んでいます。", "id": "Saya tinggal di Tokyo.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [
+      { jp: 'あまり長く待たなくてすむといいんだけど。', en: 'I hope we don\'t have to wait for too long.', id: '[TBD]' },{"jp": "東京に住んでいます。", "id": "Saya tinggal di Tokyo.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2730,9 +2792,10 @@ window.vocabN5_Verbs = [
   domain: ['kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: [],
-  nuance: null,
+  nuance: 'Means to physically stand up from a sitting or lying position. It\'s an action, not the state of standing.',
   conj_type: 'godan',
-  examples: [{"jp": "立ってください。", "id": "Tolong berdiri.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [
+      { jp: '時のたつのは早いものだ。', en: 'Time flies.', id: '[TBD]' },{"jp": "立ってください。", "id": "Tolong berdiri.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2759,7 +2822,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: [],
   nuance: 'Keigo: 召し上がる (sonkei), いただく (kenjo).',
   conj_type: 'ichidan',
-  examples: [{"jp": "何を食べますか。", "id": "Mau makan apa?", "level": "n5", "tags": ["makanan-minuman"]}],
+  examples: [
+      { jp: '僕のおじいちゃんは、ふつうは６時に朝食をたべる。', en: 'My grandfather usually eats breakfast at six.', id: '[TBD]' },{"jp": "何を食べますか。", "id": "Mau makan apa?", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2787,7 +2851,7 @@ window.vocabN5_Verbs = [
   domain: ['kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: [],
-  nuance: null,
+  nuance: 'A very general verb for using tools, time, money, or language. Cannot be used for \'using\' a person in a polite context.',
   conj_type: 'godan',
   examples: [{"jp": "スマホをよく使います。", "id": "Saya sering menggunakan smartphone.", "level": "n5", "tags": ["teknologi"]}],
   synonyms: [],
@@ -2817,9 +2881,10 @@ window.vocabN5_Verbs = [
   domain: ['kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: [],
-  nuance: null,
+  nuance: 'Refers to creating or building something from raw materials, such as cooking food or building a table.',
   conj_type: 'godan',
-  examples: [{"jp": "料理を作ります。", "id": "Saya membuat masakan.", "level": "n5", "tags": ["makanan-minuman"]}],
+  examples: [
+      { jp: '鳥は巣をつくる。', en: 'Birds build nests.', id: '[TBD]' },{"jp": "料理を作ります。", "id": "Saya membuat masakan.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2847,9 +2912,10 @@ window.vocabN5_Verbs = [
   domain: ['kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: [],
-  nuance: null,
+  nuance: 'Specifically means leaving one\'s home or current location to go somewhere else, usually with a purpose like shopping or an errand.',
   conj_type: 'ichidan',
-  examples: [{"jp": "友達と買い物に出かけます。", "id": "Saya pergi belanja dengan teman.", "level": "n5", "tags": ["belanja"]}],
+  examples: [
+      { jp: '時々散歩にでかける。', en: 'I sometimes go out for a walk.', id: '[TBD]' },{"jp": "友達と買い物に出かけます。", "id": "Saya pergi belanja dengan teman.", "level": "n5", "tags": ["belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2879,7 +2945,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: [],
   nuance: '出る = keluar/berangkat (intransitif). Lawan: 入る.',
   conj_type: 'ichidan',
-  examples: [{"jp": "バスはもう出ましたか。", "id": "Apakah busnya sudah berangkat?", "level": "n5", "tags": ["perjalanan"]}],
+  examples: [
+      { jp: '楽しんでるよ。', en: 'I\'m amused.', id: '[TBD]' },{"jp": "バスはもう出ましたか。", "id": "Apakah busnya sudah berangkat?", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2907,9 +2974,10 @@ window.vocabN5_Verbs = [
   domain: ['alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: [],
-  nuance: null,
+  nuance: 'Can mean to fly through the air (like a bird or airplane) or to jump high. Written with different kanji depending on the meaning.',
   conj_type: 'godan',
-  examples: [{"jp": "鳥が空を飛んでいます。", "id": "Burung terbang di langit.", "level": "n5", "tags": ["alam-lingkungan"]}],
+  examples: [
+      { jp: '彼女は私の給料が安いとぶつぶつ言った。', en: 'She complained about my low salary.', id: '[TBD]' },{"jp": "鳥が空を飛んでいます。", "id": "Burung terbang di langit.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2969,7 +3037,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: [],
   nuance: '写真を撮る = mengambil foto. 手紙を取る = mengambil surat.',
   conj_type: 'godan',
-  examples: [{"jp": "写真を撮ってもいいですか。", "id": "Boleh saya mengambil foto?", "level": "n5", "tags": ["perjalanan"]}],
+  examples: [
+      { jp: '軽率な行動はとるな。', en: 'Don\'t act rashly.', id: '[TBD]' },{"jp": "写真を撮ってもいいですか。", "id": "Boleh saya mengambil foto?", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2997,9 +3066,10 @@ window.vocabN5_Verbs = [
   domain: ['emosi'],
   register: 'neutral',
   lawan_bicara: [],
-  nuance: null,
+  nuance: 'Refers to crying or weeping (humans) or making a sound (animals, like barking or meowing). Kanji differs: 泣く for humans, 鳴く for animals.',
   conj_type: 'godan',
-  examples: [{"jp": "悲しい映画を見て泣きました。", "id": "Saya menangis menonton film sedih.", "level": "n5", "tags": ["emosi"]}],
+  examples: [
+      { jp: '行かなくちゃ。', en: 'I must go.', id: '[TBD]' },{"jp": "悲しい映画を見て泣きました。", "id": "Saya menangis menonton film sedih.", "level": "n5", "tags": ["emosi"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3026,9 +3096,10 @@ window.vocabN5_Verbs = [
   domain: ['kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: [],
-  nuance: null,
+  nuance: 'Means to accidentally lose or misplace an item. Contrast with 負ける (to lose a game or match).',
   conj_type: 'godan',
-  examples: [{"jp": "財布をなくしてしまいました。", "id": "Saya kehilangan dompet.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [
+      { jp: 'トムはよく物をなくす。', en: 'Tom often loses things.', id: '[TBD]' },{"jp": "財布をなくしてしまいました。", "id": "Saya kehilangan dompet.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3059,7 +3130,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: [],
   nuance: '習う = belajar dari guru/orang lain. Berbeda: 勉強する = belajar mandiri.',
   conj_type: 'godan',
-  examples: [{"jp": "先生に日本語を習っています。", "id": "Saya belajar bahasa Jepang dari guru.", "level": "n5", "tags": ["pendidikan"]}],
+  examples: [
+      { jp: 'お前ならうまくやれるよ。', en: 'I know you can make it.', id: '[TBD]' },{"jp": "先生に日本語を習っています。", "id": "Saya belajar bahasa Jepang dari guru.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3087,7 +3159,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: [],
   nuance: '〜になる (noun/adj-na), 〜くなる (adj-i). 医者になる = menjadi dokter.',
   conj_type: 'godan',
-  examples: [{"jp": "将来, 医者になりたいです。", "id": "Di masa depan, saya ingin menjadi dokter.", "level": "n5", "tags": ["pekerjaan"]}],
+  examples: [
+      { jp: 'なるほど。', en: 'I see.', id: '[TBD]' },{"jp": "将来, 医者になりたいです。", "id": "Di masa depan, saya ingin menjadi dokter.", "level": "n5", "tags": ["pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3118,7 +3191,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: [],
   nuance: '脱ぐ = melepas pakaian/alas kaki. Lawan: 着る/はく/かぶる.',
   conj_type: 'godan',
-  examples: [{"jp": "家に入る前に靴を脱いでください。", "id": "Tolong lepas sepatu sebelum masuk rumah.", "level": "n5", "tags": ["kehidupan-sehari", "sopan-santun"]}],
+  examples: [
+      { jp: '彼女は涙をぬぐった。', en: 'She wiped away her tears.', id: '[TBD]' },{"jp": "家に入る前に靴を脱いでください。", "id": "Tolong lepas sepatu sebelum masuk rumah.", "level": "n5", "tags": ["kehidupan-sehari", "sopan-santun"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3144,9 +3218,10 @@ window.vocabN5_Verbs = [
   domain: ['makanan-minuman'],
   register: 'neutral',
   lawan_bicara: [],
-  nuance: null,
+  nuance: 'Primarily means to drink liquids, but uniquely in Japanese, it is also used for swallowing pills or taking medicine (薬を飲む).',
   conj_type: 'godan',
-  examples: [{"jp": "水をたくさん飲んでください。", "id": "Tolong banyak minum air.", "level": "n5", "tags": ["kesehatan"]}],
+  examples: [
+      { jp: '私の家はちょうど通りのむこうにある。', en: 'My house is just across the street.', id: '[TBD]' },{"jp": "水をたくさん飲んでください。", "id": "Tolong banyak minum air.", "level": "n5", "tags": ["kesehatan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3206,7 +3281,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: [],
   nuance: '入る (intransitif). Lawan: 出る. お風呂に入る = mandi berendam.',
   conj_type: 'godan',
-  examples: [{"jp": "どうぞ, お入りください。", "id": "Silakan masuk.", "level": "n5", "tags": ["sopan-santun"]}],
+  examples: [
+      { jp: '火星に生き物はいるの？', en: 'Is there life on Mars?', id: '[TBD]' },{"jp": "どうぞ, お入りください。", "id": "Silakan masuk.", "level": "n5", "tags": ["sopan-santun"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3236,7 +3312,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: [],
   nuance: 'はく = pakaian bawah (celana, rok) dan alas kaki (sepatu, kaus kaki). Beda: きる = atas.',
   conj_type: 'godan',
-  examples: [{"jp": "このズボンをはいてみてください。", "id": "Tolong coba pakai celana ini.", "level": "n5", "tags": ["belanja"]}],
+  examples: [
+      { jp: 'トムはくしゃみをした。', en: 'Tom sneezed.', id: '[TBD]' },{"jp": "このズボンをはいてみてください。", "id": "Tolong coba pakai celana ini.", "level": "n5", "tags": ["belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3263,7 +3340,7 @@ window.vocabN5_Verbs = [
   domain: ['olahraga'],
   register: 'neutral',
   lawan_bicara: [],
-  nuance: null,
+  nuance: 'Means to run. Can also be used for vehicles traveling on a road (車が走る).',
   conj_type: 'godan',
   examples: [{"jp": "毎朝公園を走ります。", "id": "Setiap pagi saya berlari di taman.", "level": "n5", "tags": ["olahraga"]}],
   synonyms: [],
@@ -3293,9 +3370,10 @@ window.vocabN5_Verbs = [
   domain: ['kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: [],
-  nuance: null,
+  nuance: 'Means to speak or talk. It focuses on the action of conversing or delivering a speech, compared to 言う (to say a specific thing).',
   conj_type: 'godan',
-  examples: [{"jp": "ゆっくり話してください。", "id": "Tolong bicara pelan-pelan.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [
+      { jp: '彼はドイツなまりの英語をはなす。', en: 'He speaks English with a German accent.', id: '[TBD]' },{"jp": "ゆっくり話してください。", "id": "Tolong bicara pelan-pelan.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3322,9 +3400,10 @@ window.vocabN5_Verbs = [
   domain: ['kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: [],
-  nuance: null,
+  nuance: 'Refers to affixing or sticking something flat onto a surface, like putting a stamp on an envelope or a poster on a wall.',
   conj_type: 'godan',
-  examples: [{"jp": "ポスターを壁に貼りました。", "id": "Saya menempelkan poster di dinding.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [
+      { jp: 'はるか遠くに明かりが見えた。', en: 'I saw a light far away.', id: '[TBD]' },{"jp": "ポスターを壁に貼りました。", "id": "Saya menempelkan poster di dinding.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3353,7 +3432,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: [],
   nuance: '弾く = memainkan alat musik petik/tuts. 引く = menarik.',
   conj_type: 'godan',
-  examples: [{"jp": "ピアノを弾くことが好きです。", "id": "Saya suka memainkan piano.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [
+      { jp: '俺、毎年風邪をひくんだよ。', en: 'I catch a cold every year.', id: '[TBD]' },{"jp": "ピアノを弾くことが好きです。", "id": "Saya suka memainkan piano.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3382,9 +3462,10 @@ window.vocabN5_Verbs = [
   domain: ['alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: [],
-  nuance: null,
+  nuance: 'Specifically used for precipitation falling from the sky, such as rain (雨が降る) or snow (雪が降る).',
   conj_type: 'godan',
-  examples: [{"jp": "雨が降っています。", "id": "Hujan turun.", "level": "n5", "tags": ["alam-lingkungan"]}],
+  examples: [
+      { jp: '年相応にふるまえ。', en: 'Act your age.', id: '[TBD]' },{"jp": "雨が降っています。", "id": "Hujan turun.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3411,7 +3492,7 @@ window.vocabN5_Verbs = [
   domain: ['perjalanan'],
   register: 'neutral',
   lawan_bicara: [],
-  nuance: null,
+  nuance: 'Means to turn a corner or for something to bend. Used with を to indicate the corner you are turning (角を曲がる).',
   conj_type: 'godan',
   examples: [{"jp": "あの角を右に曲がってください。", "id": "Tolong belok kanan di sudut itu.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
@@ -3443,7 +3524,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: [],
   nuance: 'お待ちください = harap tunggu (formal). 待ってください = tolong tunggu.',
   conj_type: 'godan',
-  examples: [{"jp": "少し待ってください。", "id": "Tolong tunggu sebentar.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [
+      { jp: 'な起こしたてまつりそ。', en: 'Don\'t wake him up.', id: '[TBD]' },{"jp": "少し待ってください。", "id": "Tolong tunggu sebentar.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3470,9 +3552,10 @@ window.vocabN5_Verbs = [
   domain: ['kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: [],
-  nuance: null,
+  nuance: 'The causative form of 見る (to see), literally meaning \'to make someone see\' or \'to show\'. Takes に for the person being shown.',
   conj_type: 'ichidan',
-  examples: [{"jp": "パスポートを見せてください。", "id": "Tolong tunjukkan paspornya.", "level": "n5", "tags": ["perjalanan"]}],
+  examples: [
+      { jp: 'どんな手を使ってでも勝ちとってみせる。', en: 'I\'ll win using whatever means it takes.', id: '[TBD]' },{"jp": "パスポートを見せてください。", "id": "Tolong tunjukkan paspornya.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3500,7 +3583,7 @@ window.vocabN5_Verbs = [
   domain: ['pertemanan'],
   register: 'neutral',
   lawan_bicara: [],
-  nuance: null,
+  nuance: 'Means to go out to meet or welcome someone, like picking someone up from the station (駅に迎えに行く).',
   conj_type: 'ichidan',
   examples: [{"jp": "空港まで迎えに来てください。", "id": "Tolong jemput saya di bandara.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
@@ -3530,9 +3613,10 @@ window.vocabN5_Verbs = [
   domain: ['kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: [],
-  nuance: null,
+  nuance: 'Means to hold or carry something in your hands. When expressing ownership or possessing something, the continuous form 持っている is used.',
   conj_type: 'godan',
-  examples: [{"jp": "荷物を持ちましょうか。", "id": "Boleh saya bawakan barangnya?", "level": "n5", "tags": ["sopan-santun"]}],
+  examples: [
+      { jp: 'とてもつかれました。', en: 'I was very tired.', id: '[TBD]' },{"jp": "荷物を持ちましょうか。", "id": "Boleh saya bawakan barangnya?", "level": "n5", "tags": ["sopan-santun"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3560,7 +3644,7 @@ window.vocabN5_Verbs = [
   domain: ['kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: [],
-  nuance: null,
+  nuance: 'Can mean taking a break or resting your body, but also commonly means being absent from work or school (学校を休む).',
   conj_type: 'godan',
   examples: [{"jp": "今日は体の調子が悪くて会社を休みました。", "id": "Hari ini badan tidak enak jadi tidak masuk kerja.", "level": "n5", "tags": ["kesehatan", "pekerjaan"]}],
   synonyms: [],
@@ -3589,7 +3673,7 @@ window.vocabN5_Verbs = [
   domain: ['pertemanan'],
   register: 'neutral',
   lawan_bicara: [],
-  nuance: null,
+  nuance: 'Means to call out to someone, to summon them, or to invite them. Not used for making a phone call (which is 電話をかける).',
   conj_type: 'godan',
   examples: [{"jp": "タクシーを呼びました。", "id": "Saya memanggil taksi.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
@@ -3620,7 +3704,7 @@ window.vocabN5_Verbs = [
   domain: ['pendidikan'],
   register: 'neutral',
   lawan_bicara: [],
-  nuance: null,
+  nuance: 'Refers to reading text. It can also imply understanding the deeper meaning of a situation or \'reading the room\'.',
   conj_type: 'godan',
   examples: [{"jp": "毎日新聞を読みます。", "id": "Saya membaca koran setiap hari.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
@@ -3651,7 +3735,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: [],
   nuance: '日本語がわかります (pakai が, bukan を). Intransitif.',
   conj_type: 'godan',
-  examples: [{"jp": "説明がわかりましたか。", "id": "Apakah penjelasannya dimengerti?", "level": "n5", "tags": ["pendidikan"]}],
+  examples: [
+      { jp: '今にわかる。', en: 'You\'ll see.', id: '[TBD]' },{"jp": "説明がわかりましたか。", "id": "Apakah penjelasannya dimengerti?", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3680,7 +3765,7 @@ window.vocabN5_Verbs = [
   domain: ['perjalanan'],
   register: 'neutral',
   lawan_bicara: [],
-  nuance: null,
+  nuance: 'Means to cross over a physical barrier or space, such as a bridge (橋を渡る) or a street (道を渡る).',
   conj_type: 'godan',
   examples: [{"jp": "横断歩道を渡ってください。", "id": "Tolong seberang di zebra cross.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
@@ -3713,7 +3798,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: [],
   nuance: '〜と思います = saya pikir... Lebih subjektif dari 考える (memikirkan secara aktif).',
   conj_type: 'godan',
-  examples: [{"jp": "彼は優しいと思います。", "id": "Saya pikir dia baik hati.", "level": "n5", "tags": ["emosi"]}],
+  examples: [
+      { jp: 'この本は読む値打ちがあるとおもう。', en: 'I think this book is worth reading.', id: '[TBD]' },{"jp": "彼は優しいと思います。", "id": "Saya pikir dia baik hati.", "level": "n5", "tags": ["emosi"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3743,7 +3829,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: [],
   nuance: '日本語ができます = bisa bahasa Jepang. Juga: できました = sudah selesai.',
   conj_type: 'ichidan',
-  examples: [{"jp": "日本語を少し話すことができます。", "id": "Saya bisa berbicara sedikit bahasa Jepang.", "level": "n5", "tags": ["pendidikan"]}],
+  examples: [
+      { jp: '私は走ることができる。', en: 'I can run.', id: '[TBD]' },{"jp": "日本語を少し話すことができます。", "id": "Saya bisa berbicara sedikit bahasa Jepang.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3770,7 +3857,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: [],
   nuance: '合う = cocok/pas (baju, rasa). Berbeda: 会う = bertemu orang.',
   conj_type: 'godan',
-  examples: [{"jp": "この服, サイズが合いますか。", "id": "Apakah ukuran baju ini cocok?", "level": "n5", "tags": ["belanja"]}],
+  examples: [
+      { jp: '悪い友達とつきあうな。', en: 'Don\'t keep bad company.', id: '[TBD]' },{"jp": "この服, サイズが合いますか。", "id": "Apakah ukuran baju ini cocok?", "level": "n5", "tags": ["belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3799,9 +3887,10 @@ window.vocabN5_Verbs = [
   domain: ['belanja'],
   register: 'neutral',
   lawan_bicara: [],
-  nuance: null,
+  nuance: 'Means to sell something, exchanging goods for money. Often used in the continuous form (売っている) to describe what a store carries.',
   conj_type: 'godan',
-  examples: [{"jp": "ここでは新鮮な野菜を売っています。", "id": "Di sini menjual sayuran segar.", "level": "n5", "tags": ["belanja", "makanan-minuman"]}],
+  examples: [
+      { jp: 'トムは口うるさい。', en: 'Tom is picky.', id: '[TBD]' },{"jp": "ここでは新鮮な野菜を売っています。", "id": "Di sini menjual sayuran segar.", "level": "n5", "tags": ["belanja", "makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3858,9 +3947,10 @@ window.vocabN5_Verbs = [
   domain: ['kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: [],
-  nuance: null,
+  nuance: 'A noun meaning cleaning or sweeping that becomes a verb when \'する\' is added. Focuses on removing dirt and dust.',
   conj_type: 'suru',
-  examples: [{"jp": "毎週掃除をします。", "id": "Saya bersih-bersih setiap minggu.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [
+      { jp: 'そうじゃない？', en: 'Isn\'t that so?', id: '[TBD]' },{"jp": "毎週掃除をします。", "id": "Saya bersih-bersih setiap minggu.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3887,7 +3977,7 @@ window.vocabN5_Verbs = [
   domain: ['kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: [],
-  nuance: null,
+  nuance: 'Refers specifically to doing the laundry or washing clothes. Usually combined with する to make the verb 洗濯する.',
   conj_type: 'suru',
   examples: [{"jp": "洗濯は毎日しますか。", "id": "Apakah kamu mencuci pakaian setiap hari?", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
@@ -3946,9 +4036,10 @@ window.vocabN5_Verbs = [
   domain: ['belanja'],
   register: 'neutral',
   lawan_bicara: [],
-  nuance: null,
+  nuance: 'Means the act of shopping. Used as a verb with する. Generally refers to buying everyday goods, clothes, or groceries.',
   conj_type: 'suru',
-  examples: [{"jp": "週末に買い物をします。", "id": "Saya berbelanja di akhir pekan.", "level": "n5", "tags": ["belanja"]}],
+  examples: [
+      { jp: '柔らかいものだけを食べてくださいね。', en: 'Please eat only soft foods.', id: '[TBD]' },{"jp": "週末に買い物をします。", "id": "Saya berbelanja di akhir pekan.", "level": "n5", "tags": ["belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3975,7 +4066,7 @@ window.vocabN5_Verbs = [
   domain: ['kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: [],
-  nuance: null,
+  nuance: 'Refers to taking a leisurely walk or stroll for pleasure or health, not just walking to get to a destination.',
   conj_type: 'suru',
   examples: [{"jp": "犬と散歩しました。", "id": "Saya jalan-jalan bersama anjing.", "level": "n5", "tags": ["olahraga", "kehidupan-sehari"]}],
   synonyms: [],
@@ -4004,7 +4095,7 @@ window.vocabN5_Verbs = [
   domain: ['perjalanan'],
   register: 'neutral',
   lawan_bicara: [],
-  nuance: null,
+  nuance: 'Means travel or a trip. When adding する, it means to travel. Usually implies a journey for leisure, distinct from commuting.',
   conj_type: 'suru',
   examples: [{"jp": "来月, 京都へ旅行します。", "id": "Bulan depan saya wisata ke Kyoto.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
@@ -4032,7 +4123,7 @@ window.vocabN5_Verbs = [
   domain: ['kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: [],
-  nuance: null,
+  nuance: 'Refers to a telephone or phone call. To make a phone call, use 電話をかける or 電話する.',
   conj_type: 'suru',
   examples: [{"jp": "後で電話します。", "id": "Nanti saya akan menelepon.", "level": "n5", "tags": ["hubungan"]}],
   synonyms: [],
@@ -4062,9 +4153,10 @@ window.vocabN5_Verbs = [
   domain: ['teknologi'],
   register: 'neutral',
   lawan_bicara: [],
-  nuance: null,
+  nuance: 'A loanword meaning email or text message. To send an email, you say メールを送る or メールする.',
   conj_type: 'suru',
-  examples: [{"jp": "後でメールします。", "id": "Nanti saya email.", "level": "n5", "tags": ["teknologi", "pekerjaan"]}],
+  examples: [
+      { jp: 'メールするね。', en: 'I\'ll text you.', id: '[TBD]' },{"jp": "後でメールします。", "id": "Nanti saya email.", "level": "n5", "tags": ["teknologi", "pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -4093,7 +4185,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: [],
   nuance: 'テスト = tes/kuis. 試験 (しけん) = ujian yang lebih besar/formal.',
   conj_type: 'suru',
-  examples: [{"jp": "明日テストがあります。", "id": "Besok ada tes.", "level": "n5", "tags": ["pendidikan"]}],
+  examples: [
+      { jp: 'テストなんか、大嫌い。', en: 'I hate tests.', id: '[TBD]' },{"jp": "明日テストがあります。", "id": "Besok ada tes.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -4120,9 +4213,10 @@ window.vocabN5_Verbs = [
   domain: ['kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
-  nuance: null,
+  nuance: 'Refers to one\'s daily life, livelihood, or lifestyle. It focuses on the everyday routines of living, rather than life as a biological state (命).',
   conj_type: 'suru',
-  examples: [{"jp":"日本での生活はとても楽しいです。","id":"Kehidupan di Jepang sangat menyenangkan.","level":"n5","tags":["kehidupan-sehari"]}],
+  examples: [
+      { jp: 'ここでの生活は大変ですか？', en: 'Is life here hard?', id: '[TBD]' },{"jp":"日本での生活はとても楽しいです。","id":"Kehidupan di Jepang sangat menyenangkan.","level":"n5","tags":["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -4149,9 +4243,10 @@ window.vocabN5_Verbs = [
   domain: ['waktu'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
-  nuance: null,
+  nuance: 'Means to be on time for an event or deadline. It is an intransitive verb, so it takes に for the event (e.g., 電車に間に合う).',
   conj_type: 'godan',
-  examples: [{"jp":"急いで走れば、電車に間に合います。","id":"Kalau buru-buru lari, akan sempat mengejar kereta tepat waktu.","level":"n5","tags":["kehidupan-sehari","waktu"]}],
+  examples: [
+      { jp: 'それで間に合うでしょう。', en: 'That\'ll do.', id: '[TBD]' },{"jp":"急いで走れば、電車に間に合います。","id":"Kalau buru-buru lari, akan sempat mengejar kereta tepat waktu.","level":"n5","tags":["kehidupan-sehari","waktu"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -4207,7 +4302,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '聞こえる = terdengar (involuntar). Berbeda: 聞く = mendengarkan (sengaja).',
   conj_type: 'ichidan',
-  examples: [{"jp": "隣の部屋から音楽が聞こえます。", "id": "Terdengar musik dari kamar sebelah.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [
+      { jp: '音楽が聞こえる。', en: 'I hear music.', id: '[TBD]' },{"jp": "隣の部屋から音楽が聞こえます。", "id": "Terdengar musik dari kamar sebelah.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -4236,9 +4332,10 @@ window.vocabN5_Verbs = [
   domain: ['perjalanan', 'kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
-  nuance: null,
+  nuance: 'A versatile verb meaning to take out, to submit (homework), or to send (a letter). It implies moving something from inside to outside.',
   conj_type: 'godan',
-  examples: [{"jp":"郵便局で手紙を出しました。","id":"Saya mengirim surat di kantor pos.","level":"n5","tags":["kehidupan-sehari"]}],
+  examples: [
+      { jp: '彼らは思い出すでしょう。', en: 'They\'ll remember.', id: '[TBD]' },{"jp":"郵便局で手紙を出しました。","id":"Saya mengirim surat di kantor pos.","level":"n5","tags":["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -4265,9 +4362,10 @@ window.vocabN5_Verbs = [
   domain: ['perjalanan', 'kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
-  nuance: null,
+  nuance: 'Means to put something into a container or space (e.g., かばんに本を入れる). The transitive counterpart to 入る (to enter).',
   conj_type: 'ichidan',
-  examples: [{"jp":"かばんに本とノートを入れます。","id":"Saya memasukkan buku dan buku catatan ke dalam tas.","level":"n5","tags":["kehidupan-sehari","pendidikan"]}],
+  examples: [
+      { jp: '犬を中に入れるな。', en: 'Keep the dog out.', id: '[TBD]' },{"jp":"かばんに本とノートを入れます。","id":"Saya memasukkan buku dan buku catatan ke dalam tas.","level":"n5","tags":["kehidupan-sehari","pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -4295,9 +4393,10 @@ window.vocabN5_Verbs = [
   domain: ['kehidupan-sehari', 'pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
-  nuance: null,
+  nuance: 'Means to take a rest, take a day off, or go to sleep. Same as やすむ but presented here with its kanji.',
   conj_type: 'godan',
-  examples: [{"jp":"風邪をひいたので、会社を休みます。","id":"Karena masuk angin, saya izin tidak masuk kerja.","level":"n5","tags":["kesehatan","pekerjaan"]}],
+  examples: [
+      { jp: '彼は休む必要があった。', en: 'He needed to rest.', id: '[TBD]' },{"jp":"風邪をひいたので、会社を休みます。","id":"Karena masuk angin, saya izin tidak masuk kerja.","level":"n5","tags":["kesehatan","pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -4324,9 +4423,10 @@ window.vocabN5_Verbs = [
   domain: ['kehidupan-sehari', 'pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
-  nuance: null,
+  nuance: 'Refers to a field trip or study tour where one learns by observing. Often used in educational contexts.',
   conj_type: 'suru',
-  examples: [{"jp":"あした自動車の工場を見学します。","id":"Besok kami akan melakukan kunjungan belajar ke pabrik mobil.","level":"n5","tags":["pendidikan","pekerjaan"]}],
+  examples: [
+      { jp: 'どういう所を見学したいですか。', en: 'What places would you like to visit?', id: '[TBD]' },{"jp":"あした自動車の工場を見学します。","id":"Besok kami akan melakukan kunjungan belajar ke pabrik mobil.","level":"n5","tags":["pendidikan","pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -4353,9 +4453,10 @@ window.vocabN5_Verbs = [
   domain: ['kehidupan-sehari', 'pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
-  nuance: null,
+  nuance: 'Means sightseeing or looking at interesting things for fun. Focuses on enjoyment rather than learning, unlike 見学.',
   conj_type: 'suru',
-  examples: [{"jp":"京都の有名なお寺を見物しました。","id":"Saya berkeliling melihat-lihat kuil terkenal di Kyoto.","level":"n5","tags":["kehidupan-sehari"]}],
+  examples: [
+      { jp: '彼はバスで奈良を見物した。', en: 'He visited Nara by bus.', id: '[TBD]' },{"jp":"京都の有名なお寺を見物しました。","id":"Saya berkeliling melihat-lihat kuil terkenal di Kyoto.","level":"n5","tags":["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -4381,9 +4482,10 @@ window.vocabN5_Verbs = [
   domain: ['kehidupan-sehari', 'pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
-  nuance: null,
+  nuance: 'Means that something is naturally visible or in sight. Contrast with 見られる, which means having the ability or permission to see.',
   conj_type: 'ichidan',
-  examples: [{"jp":"部屋の窓からきれいな海が見えます。","id":"Dari jendela kamar terlihat laut yang indah.","level":"n5","tags":["alam-lingkungan","kehidupan-sehari"]}],
+  examples: [
+      { jp: 'トムが見える。', en: 'I see Tom.', id: '[TBD]' },{"jp":"部屋の窓からきれいな海が見えます。","id":"Dari jendela kamar terlihat laut yang indah.","level":"n5","tags":["alam-lingkungan","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -4411,9 +4513,10 @@ window.vocabN5_Verbs = [
   domain: ['kehidupan-sehari', 'pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
-  nuance: null,
+  nuance: 'The kanji for \'travel\' or \'trip\'. Same usage as りょこう, involving taking a journey away from home.',
   conj_type: 'suru',
-  examples: [{"jp":"夏休みに家族と旅行します。","id":"Saya akan berlibur bersama keluarga saat liburan musim panas.","level":"n5","tags":["keluarga","kehidupan-sehari"]}],
+  examples: [
+      { jp: '私は旅行が好きです。', en: 'I love trips.', id: '[TBD]' },{"jp":"夏休みに家族と旅行します。","id":"Saya akan berlibur bersama keluarga saat liburan musim panas.","level":"n5","tags":["keluarga","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -4439,9 +4542,10 @@ window.vocabN5_Verbs = [
   domain: ['kesehatan', 'alam-lingkungan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
-  nuance: null,
+  nuance: 'Means to be sufficient or enough. Usually used to describe having enough money, time, or materials for a purpose.',
   conj_type: 'ichidan',
-  examples: [{"jp":"このお金で買い物の代金は足りますか。","id":"Apakah uang ini cukup untuk biaya belanja?","level":"n5","tags":["belanja"]}],
+  examples: [
+      { jp: 'これで足りる？', en: 'Is this enough?', id: '[TBD]' },{"jp":"このお金で買い物の代金は足りますか。","id":"Apakah uang ini cukup untuk biaya belanja?","level":"n5","tags":["belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -4470,7 +4574,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '駐車場 = tempat parkir. 無料駐車場 = parkir gratis. 有料駐車場 = parkir berbayar.',
   conj_type: 'godan',
-  examples: [{"jp": "駐車場はありますか。", "id": "Apakah ada tempat parkir?", "level": "n5", "tags": ["perjalanan"]}],
+  examples: [
+      { jp: '１足す２は３である。', en: 'One plus two equals three.', id: '[TBD]' },{"jp": "駐車場はありますか。", "id": "Apakah ada tempat parkir?", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -4528,7 +4633,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman', 'umum'],
   nuance: '〜階 = suffix untuk lantai gedung. 何階 (nankai) = lantai berapa?',
   conj_type: 'godan',
-  examples: [{"jp": "こうじょうではたらいている", "id": "work in a factory", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [
+      { jp: 'アリは夏じゅうせっせとはたらく。', en: 'Ants work hard all summer.', id: '[TBD]' },{"jp": "こうじょうではたらいている", "id": "work in a factory", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -4581,7 +4687,7 @@ window.vocabN5_Verbs = [
   domain: ['kehidupan-sehari', 'pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
-  nuance: null,
+  nuance: 'A set phrase meaning to smoke a cigarette. すう literally means to inhale or suck.',
   conj_type: 'godan',
   examples: [{"jp":"この部屋でタバコをすわないでください。","id":"Tolong jangan merokok di ruangan ini.","level":"n5","tags":["kesehatan","kehidupan-sehari"]}],
   synonyms: [],
@@ -4609,9 +4715,10 @@ window.vocabN5_Verbs = [
   domain: ['kehidupan-sehari', 'pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
-  nuance: null,
+  nuance: 'Means to lie down, go to bed, or to sleep. It often focuses on the action of going to sleep, while 眠る focuses on the state of sleeping.',
   conj_type: 'ichidan',
-  examples: [{"jp":"毎晩十一時にねます。","id":"Setiap malam saya tidur pada jam 11.","level":"n5","tags":["kehidupan-sehari","waktu"]}],
+  examples: [
+      { jp: '尋ねるだけの価値がある。', en: 'I think it\'s worth asking.', id: '[TBD]' },{"jp":"毎晩十一時にねます。","id":"Setiap malam saya tidur pada jam 11.","level":"n5","tags":["kehidupan-sehari","waktu"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -4639,9 +4746,10 @@ window.vocabN5_Verbs = [
   domain: ['kehidupan-sehari', 'pekerjaan'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
-  nuance: null,
+  nuance: 'Means to put or place an object somewhere. The destination is marked with に (e.g., 机の上に置く).',
   conj_type: 'godan',
-  examples: [{"jp":"つくえの上に荷物をおいてください。","id":"Tolong letakkan barang bawaan di atas meja.","level":"n5","tags":["kehidupan-sehari"]}],
+  examples: [
+      { jp: 'トムは知っておくべきだ。', en: 'Tom ought to know.', id: '[TBD]' },{"jp":"つくえの上に荷物をおいてください。","id":"Tolong letakkan barang bawaan di atas meja.","level":"n5","tags":["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -4671,7 +4779,8 @@ window.vocabN5_Verbs = [
   lawan_bicara: ['teman', 'umum'],
   nuance: 'Lawan kata: しまる (close)',
   conj_type: 'godan',
-  examples: [{"jp": "ドアが開いています。", "id": "Pintunya terbuka.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+  examples: [
+      { jp: 'あくびをした。', en: 'I yawned.', id: '[TBD]' },{"jp": "ドアが開いています。", "id": "Pintunya terbuka.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -4726,7 +4835,7 @@ window.vocabN5_Verbs = [
   domain: ['kehidupan-sehari'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
-  nuance: null,
+  nuance: 'Means to hurry or rush. The te-form (急いで) is often used to tell someone to hurry up.',
   conj_type: 'godan',
   examples: [{"jp":"時間がありませんから、いそぎましょう。","id":"Karena tidak ada waktu, mari kita bergegas.","level":"n5","tags":["kehidupan-sehari","waktu"]}],
   synonyms: [],
@@ -4754,7 +4863,7 @@ window.vocabN5_Verbs = [
   domain: ['kesehatan', 'makanan-minuman'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
-  nuance: null,
+  nuance: 'A set phrase meaning to get thirsty. Literally translates to \'the throat becomes dry\'. Often used in the past tense (のどがかわきました) to say \'I am thirsty\'.',
   conj_type: 'godan',
   examples: [{"jp":"たくさん走って、のどがかわきました。","id":"Setelah banyak berlari, tenggorokan saya terasa haus.","level":"n5","tags":["kesehatan"]}],
   synonyms: [],
@@ -4782,9 +4891,10 @@ window.vocabN5_Verbs = [
   domain: ['kesehatan', 'makanan-minuman'],
   register: 'neutral',
   lawan_bicara: ['teman', 'umum'],
-  nuance: null,
+  nuance: 'A set phrase meaning to get hungry. Literally translates to \'the stomach becomes empty\'. Often used in the past tense (おなかがすきました) to say \'I am hungry\'.',
   conj_type: 'godan',
-  examples: [{"jp":"おなかがすいたので、ラーメンを食べたいです。","id":"Karena lapar, saya ingin makan ramen.","level":"n5","tags":["makanan-minuman","kesehatan"]}],
+  examples: [
+      { jp: '赤ん坊はおなかがすくと泣く。', en: 'Babies cry when they\'re hungry.', id: '[TBD]' },{"jp":"おなかがすいたので、ラーメンを食べたいです。","id":"Karena lapar, saya ingin makan ramen.","level":"n5","tags":["makanan-minuman","kesehatan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -4823,6 +4933,1041 @@ window.vocabN5_Verbs = [
   forms: [{"word": "勤める", "info": []}, {"word": "務める", "info": []}],
   meanings: [{"en": "to work (for); to be employed (at); to serve (in)", "misc": [], "field": []}, {"en": "to serve (as); to act (as); to fill (the position of); to play the role (of)", "misc": [], "field": []}, {"en": "to conduct a religious service", "misc": [], "field": []}],
   conjugations: {"dict": "つとめる", "masu": "つとめます", "te": "つとめて", "ta": "つとめた", "nai": "つとめない", "potential": "つとめられる", "passive": "つとめられる", "causative": "つとめさせる", "volitional": "つとめよう", "cond_ba": "つとめれば", "cond_tara": "つとめたら"},
-}
+},
 
+{
+  "id": "vg-n5-00768",
+  "word": "～がる",
+  "reading": "～がる",
+  "romaji": "-garu",
+  "meaning_id": "tampak merasa ..., bersikap ... (menunjukkan rasa)",
+  "meaning_en": "feel, show signs of feeling, act as if",
+  "jlpt": "n5",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "tata-bahasa",
+    "perasaan",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Sufiks verba godan yang ditempelkan pada kata sifat-i/na atau pola keinginan ~たい untuk menyatakan emosi/keinginan pihak ketiga (orang lain) yang terlihat dari perilakunya (contoh: 欲しがる = tampak menginginkan; 寂しがる = tampak kesepian). Jangan dipakai untuk diri sendiri.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "妹は新しいおもちゃを欲しがっています。",
+      "id": "Adik perempuan saya tampak sangat menginginkan mainan baru.",
+      "level": "n5",
+      "tags": [
+        "keinginan",
+        "keluarga"
+      ]
+    },
+    {
+      "jp": "犬が寒がっているから、服を着せましょう。",
+      "id": "Karena anjingnya tampak kedinginan, mari kita pakaikan baju.",
+      "level": "n5",
+      "tags": [
+        "hewan",
+        "kondisi"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": null,
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "reference",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n5-00773",
+  "word": "消える",
+  "reading": "きえる",
+  "romaji": "kieru",
+  "meaning_id": "padam, mati (lampu/api); hilang, lenyap",
+  "meaning_en": "to go out, to be extinguished; to vanish, to disappear",
+  "jlpt": "n5",
+  "pos": "verb-ru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "keadaan",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Verba intransitif (jidoushi) golongan ichidan. Menyatakan sesuatu yang padam atau lenyap dengan sendirinya (contoh: 電気が消える = lampu mati/padam). Pasangan verba transitifnya (tadoshi) adalah 消す (kesu = memadamkan/menghapus).",
+  "conj_type": "ichidan",
+  "examples": [
+    {
+      "jp": "突然部屋の電気が消えました。",
+      "id": "Tiba-tiba lampu kamar padam.",
+      "level": "n5",
+      "tags": [
+        "kejadian",
+        "rumah"
+      ]
+    },
+    {
+      "jp": "雨がやんで、霧が消えました。",
+      "id": "Hujan reda dan kabut pun menghilang.",
+      "level": "n5",
+      "tags": [
+        "cuaca",
+        "alam"
+      ]
+    }
+  ],
+  "synonyms": [
+    "なくなる"
+  ],
+  "antonyms": [
+    "つく",
+    "現れる"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1350040",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n5-00783",
+  "word": "曇る",
+  "reading": "くもる",
+  "romaji": "kumoru",
+  "meaning_id": "berawan, mendung",
+  "meaning_en": "to become cloudy; to cloud over",
+  "jlpt": "n5",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "alam-lingkungan",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja intransitif (godan) yang berarti langit tertutup awan mendung atau kaca/cermin menjadi buram berembun. Untuk menyatakan kondisi cuaca mendung saat ini, umumnya memakai bentuk kata benda 曇り (kumori) atau 曇っている.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "午後から空がだんだん曇ってきました。",
+      "id": "Mulai siang hari langit berangsur-angsur menjadi mendung.",
+      "level": "n5",
+      "tags": [
+        "alam-lingkungan"
+      ]
+    },
+    {
+      "jp": "温かいラーメンを食べたら眼鏡が曇りました。",
+      "id": "Kacamata saya menjadi buram saat memakan ramen panas.",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari",
+        "makanan-minuman"
+      ]
+    }
+  ],
+  "synonyms": [
+    "陰る"
+  ],
+  "antonyms": [
+    "晴れる"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1457560",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n5-00789",
+  "word": "結婚",
+  "reading": "けっこん (する)",
+  "romaji": "kekkon (suru)",
+  "meaning_id": "pernikahan; menikah",
+  "meaning_en": "marriage; to marry",
+  "jlpt": "n5",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "keluarga",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "keluarga",
+    "umum"
+  ],
+  "nuance": "Dapat berdiri sendiri sebagai kata benda (pernikahan) atau digabung dengan kata kerja する menjadi 結婚する (menikah). Untuk menyatakan status telah berumah tangga, biasanya digunakan pola te-iru yaitu 結婚しています.",
+  "conj_type": "suru",
+  "examples": [
+    {
+      "jp": "姉は去年の春に結婚しました。",
+      "id": "Kakak perempuan saya menikah pada musim semi tahun lalu.",
+      "level": "n5",
+      "tags": [
+        "keluarga",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "田中さんは結婚して子供が二人います。",
+      "id": "Tanaka-san sudah menikah dan mempunyai dua orang anak.",
+      "level": "n5",
+      "tags": [
+        "keluarga"
+      ]
+    }
+  ],
+  "synonyms": [
+    "婚姻"
+  ],
+  "antonyms": [
+    "離婚"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1254790",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n5-00802",
+  "word": "コピーする",
+  "reading": "コピーする",
+  "romaji": "kopiisuru",
+  "meaning_id": "memfotokopi, menyalin dokumen",
+  "meaning_en": "to photocopy; to copy",
+  "jlpt": "n5",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "pekerjaan",
+    "pendidikan",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Gabungan kata serapan コピー (kopi/fotokopi) dengan kata kerja する. Paling sering dipakai di kantor atau sekolah saat menggandakan lembaran dokumen dengan mesin fotokopi, atau menyalin data di komputer.",
+  "conj_type": "suru",
+  "examples": [
+    {
+      "jp": "会議の資料を十枚コピーしてください。",
+      "id": "Tolong fotokopi dokumen rapat ini sebanyak sepuluh lembar.",
+      "level": "n5",
+      "tags": [
+        "pekerjaan",
+        "komunikasi"
+      ]
+    },
+    {
+      "jp": "コンビニの機械でパスポートをコピーしました。",
+      "id": "Saya memfotokopi paspor menggunakan mesin di toserba.",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari",
+        "belanja"
+      ]
+    }
+  ],
+  "synonyms": [
+    "複写する"
+  ],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": null,
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "reference",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n5-00810",
+  "word": "咲く",
+  "reading": "さく",
+  "romaji": "saku",
+  "meaning_id": "mekar, berkembang (bunga)",
+  "meaning_en": "to bloom; to blossom",
+  "jlpt": "n5",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "alam-lingkungan",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja intransitif (godan) khusus untuk kuncup bunga yang merekah. Sangat erat kaitannya dengan musim semi di Jepang ketika bunga sakura bermekaran (桜が咲く). Lawan katanya adalah 散る (chiru / rontok/gugur).",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "春になると庭に綺麗な花がたくさん咲きます。",
+      "id": "Saat musim semi tiba, banyak bunga indah bermekaran di halaman rumah.",
+      "level": "n5",
+      "tags": [
+        "alam-lingkungan"
+      ]
+    },
+    {
+      "jp": "公園の桜はまだ咲いていません。",
+      "id": "Bunga sakura di taman belum mekar.",
+      "level": "n5",
+      "tags": [
+        "alam-lingkungan"
+      ]
+    }
+  ],
+  "synonyms": [
+    "開花する"
+  ],
+  "antonyms": [
+    "散る"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1297210",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n5-00812",
+  "word": "差す",
+  "reading": "さす",
+  "romaji": "sasu",
+  "meaning_id": "memakai (payung), membentangkan payung; menyinari",
+  "meaning_en": "to open (an umbrella); to put up; to shine",
+  "jlpt": "n5",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari",
+    "alam-lingkungan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Pada level N5, pemakaian paling mendasar adalah frasa 傘を差す (kasa o sasu) yang berarti membuka atau memegang payung untuk berlindung dari hujan. Berbeda dengan kata kerja memakai pakaian seperti 着る atau 履く.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "雨が降ってきたので傘を差して歩きました。",
+      "id": "Karena hujan mulai turun, saya berjalan sambil memakai payung.",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "窓から暖かい日差しが差しています。",
+      "id": "Sinar matahari hangat menyinari masuk dari celah jendela.",
+      "level": "n5",
+      "tags": [
+        "alam-lingkungan"
+      ]
+    }
+  ],
+  "synonyms": [
+    "開く"
+  ],
+  "antonyms": [
+    "閉じる"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1291330",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n5-00817",
+  "word": "散歩",
+  "reading": "さんぽ (する)",
+  "romaji": "sanpo (suru)",
+  "meaning_id": "jalan-jalan santai, jalan kaki",
+  "meaning_en": "walk; stroll; to take a walk",
+  "jlpt": "n5",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari",
+    "kesehatan",
+    "olahraga"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "keluarga",
+    "umum"
+  ],
+  "nuance": "Kegiatan berjalan kaki santai tanpa tujuan terburu-buru demi menghirup udara segar, berolahraga, atau menyegarkan pikiran. Sering digabungkan dengan する (散歩する) atau partikel を (散歩をする).",
+  "conj_type": "suru",
+  "examples": [
+    {
+      "jp": "天気がいいので犬と一緒に公園を散歩しました。",
+      "id": "Karena cuaca cerah, saya berjalan-jalan santai di taman bersama anjing saya.",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari",
+        "alam-lingkungan"
+      ]
+    },
+    {
+      "jp": "毎朝三十分ほど近所を散歩することにしています。",
+      "id": "Saya membiasakan diri jalan-jalan santai di sekitar rumah selama sekitar tiga puluh menit setiap pagi.",
+      "level": "n5",
+      "tags": [
+        "kesehatan",
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [
+    "散策"
+  ],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1303620",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n5-00820",
+  "word": "質問",
+  "reading": "しつもん",
+  "romaji": "shitsumon",
+  "meaning_id": "pertanyaan; bertanya",
+  "meaning_en": "question; inquiry; to ask",
+  "jlpt": "n5",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "pendidikan",
+    "komunikasi"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Digunakan saat menanyakan hal yang belum dimengerti atau meminta kejelasan informasi. Sering memakai kata kerja 質問する atau frasa 質問がある. Berbeda dengan 問題 (mondai) yang berarti soal ujian atau permasalahan hidup.",
+  "conj_type": "suru",
+  "examples": [
+    {
+      "jp": "分からないところがあれば先生に質問してください。",
+      "id": "Jika ada bagian yang belum dimengerti, silakan ajukan pertanyaan kepada guru.",
+      "level": "n5",
+      "tags": [
+        "pendidikan",
+        "komunikasi"
+      ]
+    },
+    {
+      "jp": "学生が先生に日本語の文法について質問しました。",
+      "id": "Siswa bertanya kepada guru mengenai tata bahasa Jepang.",
+      "level": "n5",
+      "tags": [
+        "pendidikan",
+        "komunikasi"
+      ]
+    }
+  ],
+  "synonyms": [
+    "問い",
+    "疑義"
+  ],
+  "antonyms": [
+    "答え",
+    "返答"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1320760",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n5-00830",
+  "word": "吸う",
+  "reading": "すう",
+  "romaji": "suu",
+  "meaning_id": "menghisap, menghirup, merokok",
+  "meaning_en": "to breathe in, to inhale, to smoke",
+  "jlpt": "n5",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari",
+    "kesehatan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "keluarga",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja godan transitif (五段動詞). Digunakan untuk menghirup udara/nafas (息を吸う) serta menghisap rokok (たばこを吸う). Dalam konteks tes JLPT N5, kata ini paling sering muncul dalam larangan merokok (吸わないでください).",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "朝の新鮮な空気を深く吸いました。",
+      "id": "Saya menghirup udara pagi yang segar dalam-dalam.",
+      "level": "n5",
+      "tags": [
+        "kesehatan",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "ここでたばこを吸わないでください。",
+      "id": "Tolong jangan merokok di sini.",
+      "level": "n5",
+      "tags": [
+        "larangan",
+        "aturan"
+      ]
+    }
+  ],
+  "synonyms": [
+    "飲む"
+  ],
+  "antonyms": [
+    "吐く"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1228260",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n5-00843",
+  "word": "掃除",
+  "reading": "そうじ (する)",
+  "romaji": "souji (suru)",
+  "meaning_id": "pembersihan, membersihkan (bersih-bersih)",
+  "meaning_en": "cleaning, sweeping, to clean",
+  "jlpt": "n5",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari",
+    "rumah"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "keluarga",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Bisa berfungsi sebagai nomina (掃除 = pembersihan/kegiatan bersih-bersih) maupun kata kerja suru (掃除する = membersihkan). Merujuk pada membersihkan ruangan atau lingkungan dengan menyapu, mengepel, atau merapikan benda.",
+  "conj_type": "suru",
+  "examples": [
+    {
+      "jp": "毎朝自分の部屋をきれいに掃除します。",
+      "id": "Setiap pagi saya membersihkan kamar saya sampai rapi dan bersih.",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari",
+        "rumah"
+      ]
+    },
+    {
+      "jp": "放課後、みんなで教室の掃除をしました。",
+      "id": "Sepulang sekolah, kami bersama-sama membersihkan ruang kelas.",
+      "level": "n5",
+      "tags": [
+        "sekolah",
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [
+    "清掃"
+  ],
+  "antonyms": [
+    "汚す"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1399790",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n5-00868",
+  "word": "疲れる",
+  "reading": "つかれる",
+  "romaji": "tsukareru",
+  "meaning_id": "lelah, capek, letih",
+  "meaning_en": "to get tired, to become fatigued",
+  "jlpt": "n5",
+  "pos": "verb-ru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kesehatan",
+    "kehidupan-sehari",
+    "emosi"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "keluarga",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja ichidan (一段動詞). Dalam percakapan sehari-hari hampir selalu digunakan dalam bentuk lampau/status 疲れました (tsukaremashita / saya lelah) atau 疲れている (tsukarete iru / sedang dalam keadaan lelah) untuk menyatakan kondisi lelah fisik atau mental saat ini.",
+  "conj_type": "ichidan",
+  "examples": [
+    {
+      "jp": "今日はたくさん歩いたので、とても疲れました。",
+      "id": "Hari ini karena banyak berjalan kaki, saya sangat lelah.",
+      "level": "n5",
+      "tags": [
+        "kesehatan",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "仕事で疲れたときは、お風呂にゆっくり入ります。",
+      "id": "Ketika capek karena pekerjaan, saya berendam santai di bak mandi.",
+      "level": "n5",
+      "tags": [
+        "kerja",
+        "kesehatan"
+      ]
+    }
+  ],
+  "synonyms": [
+    "くたびれる"
+  ],
+  "antonyms": [
+    "元気になる"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1483740",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n5-00906",
+  "word": "登る",
+  "reading": "のぼる",
+  "romaji": "noboru",
+  "meaning_id": "mendaki, memanjat",
+  "meaning_en": "to climb, to ascend, to go up",
+  "jlpt": "n5",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "olahraga",
+    "alam",
+    "aktivitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja intransitif godan golongan 1 yang berarti bergerak naik ke tempat yang tinggi (gunung, pohon, tangga) dengan usaha fisik. Tempat yang dinaiki ditandai dengan partikel に (contoh: 山に登る = mendaki gunung). Bentuk konjugasi: noborimasu, nobotte, nobotta, noboranai.",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "週末に友達と富士山に登りました。",
+      "id": "Pada akhir pekan saya mendaki Gunung Fuji bersama teman.",
+      "level": "n5",
+      "tags": [
+        "liburan",
+        "alam"
+      ]
+    },
+    {
+      "jp": "子供が木に登って遊んでいます。",
+      "id": "Anak-anak sedang memanjat pohon dan bermain.",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari",
+        "aktivitas"
+      ]
+    }
+  ],
+  "synonyms": [
+    "上がる"
+  ],
+  "antonyms": [
+    "下りる"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1352570",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n5-00917",
+  "word": "晴れる",
+  "reading": "はれる",
+  "romaji": "hareru",
+  "meaning_id": "cerah (cuaca), menjadi terang",
+  "meaning_en": "to clear up, to be sunny",
+  "jlpt": "n5",
+  "pos": "verb-ru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "cuaca",
+    "alam"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
+  "nuance": "Kata kerja intransitif ichidan golongan 2 yang menggambarkan cuaca hujan atau berawan yang menjadi terang dan cerah. Bentuk kata bendanya adalah 晴れ (cuaca cerah). Konjugasi: haremasu, harete, hareta, harenai.",
+  "conj_type": "ichidan",
+  "examples": [
+    {
+      "jp": "明日はいい天気に晴れるでしょう。",
+      "id": "Besok sepertinya cuaca akan cerah dan bagus.",
+      "level": "n5",
+      "tags": [
+        "cuaca",
+        "alam"
+      ]
+    },
+    {
+      "jp": "午後から空が晴れてきました。",
+      "id": "Sejak siang hari langit mulai cerah.",
+      "level": "n5",
+      "tags": [
+        "cuaca",
+        "alam"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [
+    "曇る",
+    "雨が降る"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1376470",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n5-00933",
+  "word": "吹く",
+  "reading": "ふく",
+  "romaji": "fuku",
+  "meaning_id": "bertiup, meniup",
+  "meaning_en": "to blow (wind); to blow, to play (wind instrument)",
+  "jlpt": "n5",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "alam",
+    "cuaca",
+    "aktivitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum",
+    "keluarga"
+  ],
+  "nuance": "Memiliki fungsi intransitif untuk hembusan angin (風が吹く - angin bertiup) dan fungsi transitif saat seseorang meniup udara dari mulut untuk mendinginkan makanan atau memainkan alat musik tiup (笛を吹く). Merupakan kata kerja godan golongan 1 (akhiran -ku).",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "今日は冷たい風が吹いています。",
+      "id": "Hari ini angin dingin sedang bertiup.",
+      "level": "n5",
+      "tags": [
+        "cuaca",
+        "alam"
+      ]
+    },
+    {
+      "jp": "熱いお茶を吹いて飲みました。",
+      "id": "Saya meniup teh panas lalu meminumnya.",
+      "level": "n5",
+      "tags": [
+        "makanan",
+        "tindakan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1370760",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n5-00944",
+  "word": "勉強",
+  "reading": "べんきょう (する)",
+  "romaji": "benkyou (suru)",
+  "meaning_id": "belajar; pelajaran",
+  "meaning_en": "study, studying; to study",
+  "jlpt": "n5",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "pendidikan",
+    "belajar",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum",
+    "guru",
+    "keluarga"
+  ],
+  "nuance": "Dapat berfungsi sebagai kata benda (勉強 = pelajaran/studi) maupun kata kerja suru (勉強する = belajar). Berfokus pada usaha aktif dan tekun menyerap materi akademik atau wawasan. Berbeda dengan '習う' (narau) yang bermakna belajar keterampilan praktik langsung dari instruktur/guru.",
+  "conj_type": "suru",
+  "examples": [
+    {
+      "jp": "図書館で日本語を二時間勉強しました。",
+      "id": "Saya belajar bahasa Jepang di perpustakaan selama dua jam.",
+      "level": "n5",
+      "tags": [
+        "belajar",
+        "sekolah"
+      ]
+    },
+    {
+      "jp": "来週のテストのために毎晩勉強しています。",
+      "id": "Saya belajar setiap malam demi persiapan ujian minggu depan.",
+      "level": "n5",
+      "tags": [
+        "sekolah",
+        "rutinitas"
+      ]
+    }
+  ],
+  "synonyms": [
+    "学習",
+    "学問"
+  ],
+  "antonyms": [
+    "遊ぶ"
+  ],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1512670",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
+{
+  "id": "vg-n5-00962",
+  "word": "磨く",
+  "reading": "みがく",
+  "romaji": "migaku",
+  "meaning_id": "menggosok (gigi), memoles, mengilapkan",
+  "meaning_en": "to brush (teeth), to polish, to shine",
+  "jlpt": "n5",
+  "pos": "verb-u",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kesehatan",
+    "kebersihan",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum",
+    "keluarga"
+  ],
+  "nuance": "Merupakan kata kerja godan akhiran -ku. Memiliki dua penggunaan penting dalam kehidupan sehari-hari: (1) menggosok/menyikat gigi (歯を磨く / ha o migaku), dan (2) menggosok/memoles benda padat agar berkilau bersih seperti sepatu (靴を磨く) atau cermin (鏡を磨く).",
+  "conj_type": "godan",
+  "examples": [
+    {
+      "jp": "毎晩寝る前に必ず歯を磨きます。",
+      "id": "Saya selalu menyikat gigi setiap malam sebelum tidur.",
+      "level": "n5",
+      "tags": [
+        "kebersihan",
+        "rutinitas"
+      ]
+    },
+    {
+      "jp": "出かける前に黒い革靴をきれいに磨きました。",
+      "id": "Sebelum berangkat, saya memoles sepatu kulit hitam hingga mengilap bersih.",
+      "level": "n5",
+      "tags": [
+        "kebersihan",
+        "tindakan"
+      ]
+    }
+  ],
+  "synonyms": [
+    "研ぐ"
+  ],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-expansion",
+  "provenance": "jlpt-reference+ai",
+  "jmdict_seq": "1523940",
+  "_audit": {
+    "confidence": "high",
+    "meaning_source": "jmdict",
+    "needs_review": false,
+    "review_notes": ""
+  }
+},
 ];
