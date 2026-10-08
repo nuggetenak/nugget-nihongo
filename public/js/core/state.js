@@ -10,12 +10,20 @@
 // ══════════════════════════════════════
 
 // ── localStorage keys (single source of truth) ──
-const LS_PROGRESS  = 'bunpou_progress';
-const LS_BOOKMARKS = 'bunpou_bookmarks';
-const LS_STREAK    = 'bunpou_streak';
-const LS_THEME     = 'bunpou-theme';
-const LS_SRS       = 'bunpou_srs';
-const LS_STREAK_ACTIVITY = 'bunpou_streak_activity'; // TASK-UI-7: flag aktivitas harian
+window.LS_PROGRESS        = 'bunpou_progress';
+window.LS_BOOKMARKS       = 'bunpou_bookmarks';
+window.LS_STREAK          = 'bunpou_streak';
+window.LS_THEME           = 'bunpou-theme';
+window.LS_SRS             = 'bunpou_srs';
+window.LS_STREAK_ACTIVITY = 'bunpou_streak_activity'; // TASK-UI-7: flag aktivitas harian
+
+const LS_PROGRESS        = window.LS_PROGRESS;
+const LS_BOOKMARKS       = window.LS_BOOKMARKS;
+const LS_STREAK          = window.LS_STREAK;
+const LS_THEME           = window.LS_THEME;
+const LS_SRS             = window.LS_SRS;
+const LS_STREAK_ACTIVITY = window.LS_STREAK_ACTIVITY;
+
 
 // ── Global state ──
 window.progress  = {};
@@ -31,6 +39,8 @@ function loadStorage() {
     window.bookmarks = b ? new Set(JSON.parse(b)) : new Set();
   } catch(e) { window.bookmarks = new Set(); }
 }
+window.loadStorage = loadStorage;
+loadStorage();
 
 window.saveProgress = function(id, result) {
   window.progress[id] = result;

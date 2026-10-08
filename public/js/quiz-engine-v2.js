@@ -66,6 +66,7 @@ function selectCards(opts) {
     for (var i = 0; i < vData.length; i++) {
       var v = vData[i];
       if (level && v.jlpt !== level) continue;
+      if (opts.posFilter && (!v.pos || v.pos.indexOf(opts.posFilter) === -1)) continue;
       pool.push({ card: v, type: 'vocab' });
     }
   }
@@ -177,8 +178,10 @@ function generateFillIn(grammarCard, allGrammar) {
     level: grammarCard.level,
     type: 'fill_in',
     sentence: sentence,
+    question: sentence,
     translation: ex.id || '',
     choices: choices,
+    options: choices,
     answer: answerIdx,
     grammarId: grammarCard.id,
     explanation: grammarCard.meaning + ' — ' + (grammarCard.desc || '').substring(0, 100),
@@ -187,52 +190,257 @@ function generateFillIn(grammarCard, allGrammar) {
   };
 }
 
-// Q-08: Sentence Rearrangement
+// Helper: split Japanese sentence into 4 grammatical chunks for JLPT Star format
+function splitJapaneseSentence4(jp) {
+  var clean = stripHtml(jp).replace(/[。\s]+$/g, '');
+  if (!clean || clean.length < 6) return null;
+
+  var splitRegex = /(?<=[はがをにでへとも、]|から|まで|より|ので|のに|けど|たら|して|くて|って|みて|きて|んで)/;
+  var rawChunks = clean.split(splitRegex).map(function(s) { return s.trim(); }).filter(Boolean);
+
+  if (rawChunks.length >= 4) {
+    var chunks = rawChunks.slice();
+    while (chunks.length > 4) {
+      var minLen = Infinity;
+      var mergeIdx = 0;
+      for (var i = 0; i < chunks.length - 1; i++) {
+        var combinedLen = chunks[i].length + chunks[i + 1].length;
+        if (combinedLen < minLen) {
+          minLen = combinedLen;
+          mergeIdx = i;
+        }
+      }
+      chunks.splice(mergeIdx, 2, chunks[mergeIdx] + chunks[mergeIdx + 1]);
+    }
+    return chunks;
+  }
+
+  var len = clean.length;
+  var step = Math.floor(len / 4);
+  if (step < 1) return null;
+  return [
+    clean.substring(0, step),
+    clean.substring(step, step * 2),
+    clean.substring(step * 2, step * 3),
+    clean.substring(step * 3)
+  ];
+}
+
+// Q-08: Sentence Rearrangement (True JLPT Star ★ Format)
 function generateRearrange(grammarCard) {
   var examples = grammarCard.examples || [];
   if (examples.length === 0) return null;
 
   var ex = examples[Math.floor(Math.random() * examples.length)];
   var jp = stripHtml(ex.jp || '');
-  if (jp.length < 8) return null;
+  var chunks = splitJapaneseSentence4(jp);
+  if (!chunks || chunks.length !== 4) return null;
 
-  // Split sentence into ~4 parts
-  var chars = jp.split('');
-  var partLen = Math.max(2, Math.floor(chars.length / 4));
-  var parts = [];
-  for (var i = 0; i < chars.length; i += partLen) {
-    parts.push(chars.slice(i, i + partLen).join(''));
-  }
-  // Ensure exactly 4 parts
-  while (parts.length > 4) {
-    parts[parts.length - 2] += parts[parts.length - 1];
-    parts.pop();
-  }
-  while (parts.length < 4 && parts.length > 0 && parts[0].length > 3) {
-    var first = parts[0];
-    var mid = Math.floor(first.length / 2);
-    parts.splice(0, 1, first.substring(0, mid), first.substring(mid));
-  }
+  var starPos = Math.floor(Math.random() * 4); // 0, 1, 2, 3
+  var correctChunks = chunks.slice(); // [chunk0, chunk1, chunk2, chunk3]
 
-  var correctOrder = parts.slice();
-  var shuffled = shuffle(parts.slice());
-  // Ensure shuffled differs from correct
+  // Shuffled parts presented as options
+  var shuffledParts = shuffle(correctChunks.slice());
   var attempts = 0;
-  while (shuffled.join('') === correctOrder.join('') && attempts < 10) {
-    shuffled = shuffle(parts.slice());
+  while (shuffledParts.every(function(p, i) { return p === correctChunks[i]; }) && attempts < 10) {
+    shuffledParts = shuffle(correctChunks.slice());
     attempts++;
   }
+
+  // Answer indices: shuffledParts[answerIndices[i]] === correctChunks[i]
+  var answerIndices = correctChunks.map(function(c) {
+    return shuffledParts.indexOf(c);
+  });
+
+  // Sentence frame with 4 blank slots for fillin.js
+  var sentenceFrame = '_____' + '_____' + '_____' + '_____';
 
   return {
     id: grammarCard.id,
     level: grammarCard.level,
     type: 'rearrange',
-    parts: shuffled,
-    answer: correctOrder,
-    sentence: jp,
+    parts: shuffledParts,
+    options: shuffledParts,
+    answer: answerIndices,
+    star_pos: starPos,
+    sentence: sentenceFrame,
+    question: sentenceFrame,
+    full_sentence: jp,
+    display_solution: stripHtml(jp),
     translation: ex.id || '',
     grammarId: grammarCard.id,
     explanation: getGrammarPattern(grammarCard) + ': ' + grammarCard.meaning,
+    source: 'grammar',
+    entry: grammarCard,
+  };
+}
+
+// Q-11: Verb Conjugation (uses conjugation-engine.js)
+function generateConjugation(card, allVocab) {
+  var conjugateFn = window.conjugate;
+  if (!conjugateFn) return null;
+
+  var word = card.word || card.pattern || card.grammar;
+  if (!word) return null;
+
+  var opts = {
+    type: card.pos || card.type || undefined,
+    reading: card.reading || card.kana || undefined,
+  };
+
+  var TARGET_FORMS = [
+    { key: 'te', label: 'Bentuk -te (て形)' },
+    { key: 'ta', label: 'Bentuk Lampau / -ta (た形)' },
+    { key: 'nai', label: 'Bentuk Negatif / -nai (ない形)' },
+    { key: 'masu', label: 'Bentuk Sopan / -masu (ます形)' },
+    { key: 'potential', label: 'Bentuk Potensial (可能形)' },
+    { key: 'ba', label: 'Bentuk Pengandaian (ば形)' },
+    { key: 'passive', label: 'Bentuk Pasif (受身形)' },
+    { key: 'causative', label: 'Bentuk Kausatif (使役形)' },
+  ];
+
+  var tf = TARGET_FORMS[Math.floor(Math.random() * TARGET_FORMS.length)];
+  var correct = conjugateFn(word, tf.key, opts);
+  if (!correct || correct === word) return null;
+
+  var distractors = [];
+  if (window.ConjugationEngine && typeof window.ConjugationEngine.generateDistractors === 'function') {
+    distractors = window.ConjugationEngine.generateDistractors(word, tf.key, opts);
+  }
+
+  // Backup fallback if fewer than 3
+  if (!distractors || distractors.length < 3) {
+    var otherForms = TARGET_FORMS.filter(function(f) { return f.key !== tf.key; });
+    shuffle(otherForms).forEach(function(f) {
+      if (distractors.length < 3) {
+        var d = conjugateFn(word, f.key, opts);
+        if (d && d !== correct && distractors.indexOf(d) === -1) {
+          distractors.push(d);
+        }
+      }
+    });
+  }
+  if (distractors.length < 3) return null;
+
+  var choices = shuffle([correct].concat(distractors.slice(0, 3)));
+  var answerIdx = choices.indexOf(correct);
+
+  return {
+    id: card.id,
+    level: card.jlpt || card.level || 'n5',
+    type: 'conjugation',
+    instruction: 'Ubah ke ' + tf.label,
+    base: word + (card.reading ? ' (' + card.reading + ')' : ''),
+    question: 'Bentuk ' + tf.label + ' dari ' + word,
+    choices: choices,
+    options: choices,
+    answer: answerIdx,
+    target_form: tf.key,
+    grammarId: card.grammarId || card.id,
+    explanation: word + ' → ' + correct + ' (' + tf.label + ')',
+    source: 'vocab',
+    entry: card,
+  };
+}
+
+// Q-12: Sentence Translation Drill
+function generateTranslation(card, allCards) {
+  var examples = card.examples || [];
+  if (examples.length === 0) return null;
+
+  var ex = examples[Math.floor(Math.random() * examples.length)];
+  var jp = stripHtml(ex.jp || '');
+  var id = stripHtml(ex.id || '');
+  if (!jp || !id || jp.length < 3 || id.length < 3) return null;
+
+  var isJpToId = Math.random() < 0.5;
+  var prompt = isJpToId ? jp : id;
+  var correctAnswer = isJpToId ? id : jp;
+
+  var distractors = [];
+  var shuffled = shuffle(allCards || []);
+  for (var i = 0; i < shuffled.length && distractors.length < 3; i++) {
+    var otherExs = shuffled[i].examples || [];
+    if (otherExs.length > 0) {
+      var oEx = otherExs[0];
+      var cand = stripHtml(isJpToId ? oEx.id : oEx.jp);
+      if (cand && cand !== correctAnswer && distractors.indexOf(cand) === -1) {
+        distractors.push(cand);
+      }
+    }
+  }
+  if (distractors.length < 3) return null;
+
+  var choices = shuffle([correctAnswer].concat(distractors.slice(0, 3)));
+  var answerIdx = choices.indexOf(correctAnswer);
+
+  return {
+    id: card.id,
+    level: card.level || card.jlpt || 'n5',
+    type: 'translation',
+    direction: isJpToId ? 'jp_to_id' : 'id_to_jp',
+    prompt: prompt,
+    question: prompt,
+    choices: choices,
+    options: choices,
+    answer: answerIdx,
+    grammarId: card.id,
+    explanation: jp + ' = ' + id,
+    source: card.source || (card.id && card.id.startsWith('vg-') ? 'vocab' : 'grammar'),
+    entry: card,
+  };
+}
+
+// Q-13: Error Find Drill
+function generateErrorFind(grammarCard, allGrammar) {
+  var examples = grammarCard.examples || [];
+  if (examples.length === 0) return null;
+
+  var targetEx = examples[Math.floor(Math.random() * examples.length)];
+  var targetJp = stripHtml(targetEx.jp || '');
+  if (targetJp.length < 5) return null;
+
+  var wrongJp = targetJp;
+  if (/は/.test(wrongJp)) wrongJp = wrongJp.replace(/は/, 'を');
+  else if (/に/.test(wrongJp)) wrongJp = wrongJp.replace(/に/, 'で');
+  else if (/を/.test(wrongJp)) wrongJp = wrongJp.replace(/を/, 'が');
+  else if (/で/.test(wrongJp)) wrongJp = wrongJp.replace(/で/, 'に');
+  else if (/が/.test(wrongJp)) wrongJp = wrongJp.replace(/が/, 'は');
+  else return null;
+
+  if (wrongJp === targetJp) return null;
+
+  var correctSentences = [];
+  var sameLevel = (allGrammar || []).filter(function(g) {
+    return g.level === grammarCard.level && g.id !== grammarCard.id;
+  });
+  var shuffled = shuffle(sameLevel);
+  for (var i = 0; i < shuffled.length && correctSentences.length < 3; i++) {
+    var ex = (shuffled[i].examples || [])[0];
+    if (ex && ex.jp) {
+      var s = stripHtml(ex.jp);
+      if (s && s !== targetJp && correctSentences.indexOf(s) === -1) {
+        correctSentences.push(s);
+      }
+    }
+  }
+  if (correctSentences.length < 3) return null;
+
+  var choices = shuffle([wrongJp].concat(correctSentences.slice(0, 3)));
+  var answerIdx = choices.indexOf(wrongJp);
+
+  return {
+    id: grammarCard.id,
+    level: grammarCard.level,
+    type: 'error_find',
+    question: 'Pilih kalimat yang mengandung kesalahan tatabahasa:',
+    choices: choices,
+    options: choices,
+    answer: answerIdx,
+    correct_sentence: targetJp,
+    sentence_with_error: wrongJp,
+    grammarIds: [grammarCard.id],
+    explanation: 'Kalimat yang salah: ' + wrongJp + '\nPerbaikan: ' + targetJp,
     source: 'grammar',
     entry: grammarCard,
   };
@@ -385,16 +593,20 @@ window.quizEngine = {
   // Generate a quiz session
   generate: function (opts) {
     opts = opts || {};
-    var quizType = opts.quizType || 'mixed';
+    var quizType = opts.quizType || opts.type || 'mixed';
     var n = opts.n || 10;
     var level = opts.level || null;
-    var source = opts.source || 'both';
+    var source = opts.source || (
+      (quizType === 'fill_in' || quizType === 'rearrange' || quizType === 'error_find' || quizType === 'context_grammar') ? 'grammar' :
+      (quizType === 'conjugation') ? 'vocab' : 'both'
+    );
     var mode = opts.mode || 'mixed';
 
     var cards = selectCards({
       source: source,
       level: level,
-      n: n * 2, // select more, filter later
+      posFilter: quizType === 'conjugation' ? 'verb' : (opts.posFilter || null),
+      n: Math.max(n * 3, 25), // select more, filter later
       mode: mode,
     });
 
@@ -409,6 +621,16 @@ window.quizEngine = {
         q = generateFillIn(item.card, allGrammar);
       } else if (quizType === 'rearrange' && item.type === 'grammar') {
         q = generateRearrange(item.card);
+      } else if (quizType === 'conjugation') {
+        q = generateConjugation(item.card, window.vocabDB || []);
+        if (!q && (window.vocabDB || []).length > 0) {
+          var randV = (window.vocabDB || [])[Math.floor(Math.random() * (window.vocabDB || []).length)];
+          q = generateConjugation(randV, window.vocabDB || []);
+        }
+      } else if (quizType === 'translation') {
+        q = generateTranslation(item.card, allGrammar);
+      } else if (quizType === 'error_find' && item.type === 'grammar') {
+        q = generateErrorFind(item.card, allGrammar);
       } else if (quizType === 'confusion_pair') {
         q = generateConfusionPair(item.card, item.type);
       } else if (quizType === 'cloze') {
@@ -418,14 +640,17 @@ window.quizEngine = {
       } else if (quizType === 'mixed') {
         // Randomly pick a quiz type appropriate for this card
         var types = item.type === 'grammar'
-          ? ['fill_in', 'cloze', 'context_grammar', 'rearrange']
-          : ['cloze'];
+          ? ['fill_in', 'cloze', 'context_grammar', 'rearrange', 'translation', 'error_find']
+          : ['cloze', 'conjugation', 'translation'];
         var picked = types[Math.floor(Math.random() * types.length)];
 
         if (picked === 'fill_in') q = generateFillIn(item.card, allGrammar);
         else if (picked === 'cloze') q = generateCloze(item.card, item.type);
         else if (picked === 'context_grammar') q = generateContextGrammar(item.card, allGrammar);
         else if (picked === 'rearrange') q = generateRearrange(item.card);
+        else if (picked === 'conjugation') q = generateConjugation(item.card, window.vocabDB || []);
+        else if (picked === 'translation') q = generateTranslation(item.card, allGrammar);
+        else if (picked === 'error_find') q = generateErrorFind(item.card, allGrammar);
       }
 
       if (q) questions.push(q);
@@ -462,7 +687,7 @@ window.quizEngine = {
       grammar_with_examples: withExamples.length,
       grammar_with_confusion: withConfusion.length,
       vocab_total: vPool.length,
-      quiz_types_available: ['fill_in', 'rearrange', 'confusion_pair', 'cloze', 'context_grammar', 'mixed'],
+      quiz_types_available: ['fill_in', 'rearrange', 'conjugation', 'translation', 'error_find', 'confusion_pair', 'cloze', 'context_grammar', 'mixed'],
     };
   },
 };
@@ -487,24 +712,87 @@ window.getBankSoal = function (opts) {
 // Alias
 window.getFillInBank = window.getBankSoal;
 
+// Dynamic getters for dedicated quiz modes
+window.getRearrangeBank = function (opts) {
+  opts = opts || {};
+  return window.quizEngine.generate({
+    quizType: 'rearrange',
+    level: opts.level === 'all' ? null : opts.level,
+    n: opts.n || 20,
+    source: 'grammar',
+    mode: 'mixed',
+  });
+};
+
+window.getConjugationBank = function (opts) {
+  opts = opts || {};
+  return window.quizEngine.generate({
+    quizType: 'conjugation',
+    level: opts.level === 'all' ? null : opts.level,
+    n: opts.n || 20,
+    source: 'vocab',
+    mode: 'mixed',
+  });
+};
+
+window.getTranslationBank = function (opts) {
+  opts = opts || {};
+  return window.quizEngine.generate({
+    quizType: 'translation',
+    level: opts.level === 'all' ? null : opts.level,
+    n: opts.n || 20,
+    source: 'grammar',
+    mode: 'mixed',
+  });
+};
+
+window.getErrorFindBank = function (opts) {
+  opts = opts || {};
+  return window.quizEngine.generate({
+    quizType: 'error_find',
+    level: opts.level === 'all' ? null : opts.level,
+    n: opts.n || 20,
+    source: 'grammar',
+    mode: 'mixed',
+  });
+};
+
+window.getMultiChoiceBank = function (opts) {
+  opts = opts || {};
+  return window.quizEngine.generate({
+    quizType: 'context_grammar',
+    level: opts.level === 'all' ? null : opts.level,
+    n: opts.n || 20,
+    source: 'grammar',
+    mode: 'mixed',
+  });
+};
+
+// Also expose on quizEngine namespace
+window.quizEngine.getRearrangeBank = window.getRearrangeBank;
+window.quizEngine.getConjugationBank = window.getConjugationBank;
+window.quizEngine.getTranslationBank = window.getTranslationBank;
+window.quizEngine.getErrorFindBank = window.getErrorFindBank;
+window.quizEngine.getMultiChoiceBank = window.getMultiChoiceBank;
+window.quizEngine.getFillInBank = window.getFillInBank;
+window.quizEngine.getBankSoal = window.getBankSoal;
+
 // bankSoalQuiz4: used by translation.js, errorfind.js, multichoice.js
 // Generate a pool on load and expose as array
 var _quiz4Pool = [];
 function _buildQuiz4Pool() {
-  var allGrammar = window.grammarDB || window.grammarData || [];
   var pool = [];
 
   // Generate fill-in questions
   var fillIns = window.quizEngine.generate({
-    quizType: 'fill_in', n: 60, source: 'grammar', mode: 'mixed'
+    quizType: 'fill_in', n: 40, source: 'grammar', mode: 'mixed'
   });
   pool = pool.concat(fillIns);
 
-  // Generate context grammar
+  // Generate context grammar (adapted to multi_choice format)
   var contexts = window.quizEngine.generate({
-    quizType: 'context_grammar', n: 40, source: 'grammar', mode: 'mixed'
+    quizType: 'context_grammar', n: 30, source: 'grammar', mode: 'mixed'
   });
-  // Adapt to multi_choice format
   for (var i = 0; i < contexts.length; i++) {
     var c = contexts[i];
     pool.push({
@@ -521,9 +809,27 @@ function _buildQuiz4Pool() {
 
   // Generate rearrange
   var rearranges = window.quizEngine.generate({
-    quizType: 'rearrange', n: 40, source: 'grammar', mode: 'mixed'
+    quizType: 'rearrange', n: 30, source: 'grammar', mode: 'mixed'
   });
   pool = pool.concat(rearranges);
+
+  // Generate conjugation
+  var conjugations = window.quizEngine.generate({
+    quizType: 'conjugation', n: 30, source: 'vocab', mode: 'mixed'
+  });
+  pool = pool.concat(conjugations);
+
+  // Generate translation
+  var translations = window.quizEngine.generate({
+    quizType: 'translation', n: 30, source: 'grammar', mode: 'mixed'
+  });
+  pool = pool.concat(translations);
+
+  // Generate error find
+  var errorFinds = window.quizEngine.generate({
+    quizType: 'error_find', n: 30, source: 'grammar', mode: 'mixed'
+  });
+  pool = pool.concat(errorFinds);
 
   return shuffle(pool);
 }

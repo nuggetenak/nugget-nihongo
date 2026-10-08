@@ -4,7 +4,7 @@
 //  network-first for API calls (Supabase / Cloudflare Workers).
 // ══════════════════════════════════════
 
-const CACHE = 'nihongo-v15.16.0';
+const CACHE = 'nihongo-v15.17.0';
 const ASSETS = [
   './',
   './index.html',
@@ -30,6 +30,7 @@ const ASSETS = [
   // ── Local state + SRS ─────────────────────────────────
   './js/local-state.js',
   './js/fsrs-engine.js',
+  './js/fsrs-4d-engine.js',
   './js/fsrs-math.js',
   './js/gamification.js',
   './js/streak.js',
@@ -38,6 +39,7 @@ const ASSETS = [
 
   // ── Supabase + AI layer ───────────────────────────────
   './js/supabase-client.js',
+  './js/sync-manager.js',
   './js/dna-summarizer.js',
   './js/ai-proxy.js',
   './js/ai-tutor.js',
@@ -52,6 +54,9 @@ const ASSETS = [
   './js/vocab-detail.js',
   './js/global-search.js',
   './js/conjugation-engine.js',
+  './js/particle-engine.js',
+  './js/lexicon-engine.js',
+  './js/sentence-generator-engine.js',
   './js/conjugation.js',
   './js/quiz.js',
   './js/quiz-engine-v2.js',

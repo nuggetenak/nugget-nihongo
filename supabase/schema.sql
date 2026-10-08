@@ -484,3 +484,159 @@ BEGIN
     END;
 END;
 $$;
+
+-- ══════════════════════════════════════════════════════
+-- §16 LINGUISTIC & LMS RELATIONAL LAYER (V16 Total Overhaul)
+-- ══════════════════════════════════════════════════════
+
+-- Enable pgvector for semantic caching & AI Sensei optimizations
+CREATE EXTENSION IF NOT EXISTS vector;
+
+-- ── KANJI ──────────────────────────────────────────────
+CREATE TABLE IF NOT EXISTS public.kanji (
+  character     TEXT PRIMARY KEY,
+  onyomi        TEXT[] DEFAULT '{}',
+  kunyomi       TEXT[] DEFAULT '{}',
+  meaning_id    TEXT NOT NULL,
+  meaning_en    TEXT,
+  stroke_count  SMALLINT,
+  jlpt_level    TEXT CHECK (jlpt_level IN ('n5','n4','n3','n2','n1')),
+  radical       TEXT,
+  created_at    TIMESTAMPTZ DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS idx_kanji_level ON public.kanji(jlpt_level);
+
+-- ── VOCABULARY ─────────────────────────────────────────
+CREATE TABLE IF NOT EXISTS public.vocabulary (
+  id                TEXT PRIMARY KEY,  -- e.g. 'vn5-00001' or 'vg-n5-00001'
+  word              TEXT NOT NULL,
+  reading           TEXT NOT NULL,
+  romaji            TEXT,
+  meaning_id        TEXT NOT NULL,
+  meaning_en        TEXT,
+  pos               TEXT,              -- 'verb-u', 'verb-ru', 'noun', 'i-adj', 'na-adj'
+  conj_type         TEXT,              -- 'godan', 'ichidan', 'suru', 'kuru'
+  transitivity      TEXT CHECK (transitivity IN ('transitive','intransitive','both','none')),
+  formality_level   TEXT DEFAULT 'neutral' CHECK (formality_level IN ('casual','neutral','polite','sonkeigo','kenjougo')),
+  jlpt_level        TEXT CHECK (jlpt_level IN ('n5','n4','n3','n2','n1')),
+  furigana_mapping  JSONB DEFAULT '[]',-- [{"kanji":"食","reading":"た"},{"kana":"べる"}]
+  synonyms          TEXT[] DEFAULT '{}',
+  antonyms          TEXT[] DEFAULT '{}',
+  see_also          TEXT[] DEFAULT '{}',
+  examples          JSONB DEFAULT '[]',
+  created_at        TIMESTAMPTZ DEFAULT NOW(),
+  updated_at        TIMESTAMPTZ DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS idx_vocab_reading ON public.vocabulary(reading);
+CREATE INDEX IF NOT EXISTS idx_vocab_word    ON public.vocabulary(word);
+CREATE INDEX IF NOT EXISTS idx_vocab_level   ON public.vocabulary(jlpt_level);
+CREATE INDEX IF NOT EXISTS idx_vocab_pos     ON public.vocabulary(pos);
+
+DROP TRIGGER IF EXISTS vocabulary_updated_at ON public.vocabulary;
+CREATE TRIGGER vocabulary_updated_at BEFORE UPDATE ON public.vocabulary
+  FOR EACH ROW EXECUTE FUNCTION public.update_updated_at();
+
+-- ── GRAMMAR RULES ──────────────────────────────────────
+CREATE TABLE IF NOT EXISTS public.grammar_rules (
+  id                TEXT PRIMARY KEY,  -- e.g. 'gn5-00001'
+  pattern           TEXT NOT NULL,
+  reading           TEXT,
+  meaning_id        TEXT NOT NULL,
+  meaning_en        TEXT,
+  level             TEXT CHECK (level IN ('n5','n4','n3','n2','n1')),
+  category          TEXT,
+  connection        TEXT,
+  desc_id           TEXT,
+  formality_level   TEXT DEFAULT 'neutral' CHECK (formality_level IN ('casual','neutral','polite','sonkeigo','kenjougo')),
+  examples          JSONB DEFAULT '[]',
+  created_at        TIMESTAMPTZ DEFAULT NOW(),
+  updated_at        TIMESTAMPTZ DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS idx_grammar_level ON public.grammar_rules(level);
+
+DROP TRIGGER IF EXISTS grammar_rules_updated_at ON public.grammar_rules;
+CREATE TRIGGER grammar_rules_updated_at BEFORE UPDATE ON public.grammar_rules
+  FOR EACH ROW EXECUTE FUNCTION public.update_updated_at();
+
+-- ── PARTICLES ──────────────────────────────────────────
+CREATE TABLE IF NOT EXISTS public.particles (
+  id                TEXT PRIMARY KEY,  -- e.g. 'pt-wa-01'
+  particle          TEXT NOT NULL,
+  function_name     TEXT NOT NULL,
+  meaning_id        TEXT NOT NULL,
+  level             TEXT DEFAULT 'n5',
+  explanation_id    TEXT,
+  collocation       TEXT,
+  examples          JSONB DEFAULT '[]'
+);
+
+CREATE INDEX IF NOT EXISTS idx_particles_particle ON public.particles(particle);
+
+-- ── 4-DIMENSIONAL FSRS ATOMS ───────────────────────────
+-- Tracks multi-dimensional mastery: Visual, Context, Auditory, Verbal
+CREATE TABLE IF NOT EXISTS public.fsrs_atoms (
+  id                  BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  user_id             UUID NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
+  atom_type           TEXT NOT NULL CHECK (atom_type IN ('vocab','grammar','kanji','particle')),
+  atom_id             TEXT NOT NULL,
+  visual_stability    REAL DEFAULT 0,
+  visual_difficulty   REAL DEFAULT 0,
+  context_stability   REAL DEFAULT 0,
+  context_difficulty  REAL DEFAULT 0,
+  auditory_stability  REAL DEFAULT 0,
+  auditory_difficulty REAL DEFAULT 0,
+  verbal_stability    REAL DEFAULT 0,
+  verbal_difficulty   REAL DEFAULT 0,
+  last_reviewed_at    TIMESTAMPTZ,
+  created_at          TIMESTAMPTZ DEFAULT NOW(),
+  updated_at          TIMESTAMPTZ DEFAULT NOW(),
+  UNIQUE (user_id, atom_type, atom_id)
+);
+
+CREATE INDEX IF NOT EXISTS idx_fsrs_atoms_user ON public.fsrs_atoms(user_id, atom_type);
+
+ALTER TABLE public.fsrs_atoms ENABLE ROW LEVEL SECURITY;
+
+DROP POLICY IF EXISTS "fsrs_atoms_select_own" ON public.fsrs_atoms;
+CREATE POLICY "fsrs_atoms_select_own" ON public.fsrs_atoms
+  FOR SELECT USING (auth.uid() = user_id);
+
+DROP POLICY IF EXISTS "fsrs_atoms_all_own" ON public.fsrs_atoms;
+CREATE POLICY "fsrs_atoms_all_own" ON public.fsrs_atoms
+  FOR ALL USING (auth.uid() = user_id);
+
+DROP TRIGGER IF EXISTS fsrs_atoms_updated_at ON public.fsrs_atoms;
+CREATE TRIGGER fsrs_atoms_updated_at BEFORE UPDATE ON public.fsrs_atoms
+  FOR EACH ROW EXECUTE FUNCTION public.update_updated_at();
+
+-- ── AI SENSEI SEMANTIC CACHE (Vector Database) ─────────
+-- Avoids duplicate Gemini API calls by semantic vector similarity
+CREATE TABLE IF NOT EXISTS public.ai_semantic_cache (
+  id              BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  query_text      TEXT NOT NULL,
+  query_embedding vector(768),  -- Gemini text-embedding-004 dimensions
+  response_text   TEXT NOT NULL,
+  category        TEXT DEFAULT 'grammar_explanation',
+  created_at      TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- Public read permissions on core reference tables
+ALTER TABLE public.kanji ENABLE ROW LEVEL SECURITY;
+DROP POLICY IF EXISTS "kanji_public_read" ON public.kanji;
+CREATE POLICY "kanji_public_read" ON public.kanji FOR SELECT USING (true);
+
+ALTER TABLE public.vocabulary ENABLE ROW LEVEL SECURITY;
+DROP POLICY IF EXISTS "vocab_public_read" ON public.vocabulary;
+CREATE POLICY "vocab_public_read" ON public.vocabulary FOR SELECT USING (true);
+
+ALTER TABLE public.grammar_rules ENABLE ROW LEVEL SECURITY;
+DROP POLICY IF EXISTS "grammar_public_read" ON public.grammar_rules;
+CREATE POLICY "grammar_public_read" ON public.grammar_rules FOR SELECT USING (true);
+
+ALTER TABLE public.particles ENABLE ROW LEVEL SECURITY;
+DROP POLICY IF EXISTS "particles_public_read" ON public.particles;
+CREATE POLICY "particles_public_read" ON public.particles FOR SELECT USING (true);
+

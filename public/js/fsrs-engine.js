@@ -35,7 +35,7 @@ let FSRS, Rating, State, createEmptyCard, generatorParameters;
 function initFSRSLib() {
   const lib = window.tsfsrs;
   if (!lib) {
-    console.error('[fsrs-engine] ts-fsrs library not loaded! Falling back to basic scheduling.');
+    console.log('[fsrs-engine] ts-fsrs CDN not detected; standalone FSRS 4.5/5.0 engine active');
     return false;
   }
   FSRS = lib.FSRS || lib.fsrs;
@@ -329,8 +329,28 @@ function reviewCard(cardId, rating) {
   return entry;
 }
 
-// Simple fallback if FSRS lib fails to load
+// Standalone FSRS scheduling (delegates to fsrs-math.js if ts-fsrs CDN is absent)
 function fallbackSchedule(entry, rating, now) {
+  if (typeof window !== 'undefined' && typeof window.fsrsCalculate === 'function') {
+    var isKanji = entry.source === 'kanji' || (entry.card && entry.card.is_kanji);
+    var res = window.fsrsCalculate(entry.card, rating, now, {
+      request_retention: settings.request_retention,
+      maximum_interval: settings.maximum_interval,
+      is_kanji: isKanji
+    });
+    entry.card.stability = res.stability;
+    entry.card.difficulty = res.difficulty;
+    entry.card.scheduled_days = res.interval;
+    entry.card.due = res.due_iso;
+    entry.card.reps = res.reps;
+    entry.card.lapses = res.lapses;
+    entry.card.state = res.state;
+    entry.card.last_review = res.last_review;
+    entry.card.elapsed_days = res.elapsed_days;
+    return;
+  }
+
+  // Primitive emergency fallback if fsrs-math is not loaded
   var intervals = { 1: 1, 2: 3, 3: 7, 4: 14 };
   var multipliers = { 1: 0.5, 2: 0.8, 3: 1.5, 4: 2.5 };
   var baseInterval = entry.card.scheduled_days || 1;
@@ -345,6 +365,7 @@ function fallbackSchedule(entry, rating, now) {
   entry.card.reps = (entry.card.reps || 0) + 1;
   entry.card.last_review = now.toISOString();
   entry.card.stability = newInterval;
+  entry.card.state = (rating <= 1) ? 3 : (entry.card.reps > 1 ? 2 : 1);
   if (rating <= 1) entry.card.lapses = (entry.card.lapses || 0) + 1;
 }
 
@@ -357,24 +378,28 @@ function getRetrievability(cardId) {
   var S = entry.card.stability || 1;
   var lastReview = new Date(entry.card.last_review);
   var now = new Date();
-  var elapsedDays = (now - lastReview) / DAY_MS;
+  var elapsedDays = Math.max(0, (now - lastReview) / DAY_MS);
 
-  // FSRS retrievability formula: R = (1 + t / (9 * S))^(-1)
-  // This is the power forgetting curve
-  var R = Math.pow(1 + elapsedDays / (9 * S), -1);
+  // Calibrated FSRS forgetting curve from fsrs-math.js: R(t, S) = (1 + 19/81 * t/S)^(-0.5)
+  if (typeof window !== 'undefined' && typeof window.fsrsForgettingCurve === 'function') {
+    return window.fsrsForgettingCurve(elapsedDays, S);
+  }
+
+  // Pure mathematical fallback: R(S, S) = 0.90
+  var R = Math.pow(1 + (19 / 81) * (elapsedDays / S), -0.5);
   return Math.max(0, Math.min(1, R));
 }
 
 // ── Public API (backward-compatible) ───────────────────
 
-// Review: accepts quality 0-4 (old SM-2 scale) OR 1-4 (FSRS scale)
+// Review: accepts quality 0-4 (old SM-2 scale), string ('know'|'unsure'|'forgot'), OR 1-4 (FSRS scale)
 window.srsReview = function (id, quality) {
-  // Map old SM-2 quality (0,2,3,4) to FSRS rating (1,2,3,4)
   var rating;
-  if (quality === 0) rating = 1;      // forgot → Again
-  else if (quality <= 2) rating = 2;  // unsure → Hard
-  else if (quality === 3) rating = 3; // know (hesitant) → Good
-  else rating = 4;                     // know (confident) → Easy
+  if (quality === 'forgot' || quality === 0 || quality === 1) rating = 1;      // forgot → Again
+  else if (quality === 'unsure' || quality === 2) rating = 2;  // unsure → Hard
+  else if (quality === 'know' || quality === 3) rating = 3;   // know (hesitant) → Good
+  else if (quality === 'easy' || quality >= 4) rating = 4;    // know (confident) → Easy
+  else rating = 3;
   return reviewCard(id, rating);
 };
 
@@ -488,13 +513,244 @@ window.srsStats = function () {
   };
 };
 
+// ── 4-Button Next Interval Prediction ─────────────────
+// Predicts intervals, due dates, stability, and difficulty for ratings 1-4
+// Used by the 4-button review UI for dynamic interval labels (Again, Hard, Good, Easy)
+window.fsrsPredictNext = function (cardId, now) {
+  var nowDate = (now instanceof Date) ? now : new Date();
+  var entry = window.srsData[cardId];
+  var card = entry ? entry.card : {
+    due: nowDate.toISOString(),
+    stability: 0,
+    difficulty: 5.0,
+    elapsed_days: 0,
+    scheduled_days: 0,
+    reps: 0,
+    lapses: 0,
+    state: 0,
+    last_review: nowDate.toISOString(),
+  };
+
+  var predictions = {};
+  var labels = { 1: 'Again', 2: 'Hard', 3: 'Good', 4: 'Easy' };
+
+  for (var r = 1; r <= 4; r++) {
+    var pred = null;
+
+    // 1. Try ts-fsrs library if available
+    if (fsrsAvailable && fsrs) {
+      try {
+        var fsrsCard = {
+          due: new Date(card.due),
+          stability: card.stability || 0,
+          difficulty: card.difficulty || 5,
+          elapsed_days: card.elapsed_days || 0,
+          scheduled_days: card.scheduled_days || 0,
+          reps: card.reps || 0,
+          lapses: card.lapses || 0,
+          state: card.state || 0,
+          last_review: card.last_review ? new Date(card.last_review) : undefined,
+        };
+        var sched = fsrs.repeat(fsrsCard, nowDate);
+        var result = sched[r];
+        if (result && result.card) {
+          var intv = Math.max(1, Math.round((result.card.due - nowDate) / DAY_MS));
+          pred = {
+            rating: r,
+            label: labels[r],
+            interval: intv,
+            intervalStr: (typeof window.fsrsFormatInterval === 'function')
+              ? window.fsrsFormatInterval(intv)
+              : (intv + 'd'),
+            stability: Number(result.card.stability.toFixed(2)),
+            difficulty: Number(result.card.difficulty.toFixed(2)),
+            due: result.card.due,
+            due_iso: result.card.due.toISOString(),
+            state: result.card.state,
+          };
+        }
+      } catch (e) {}
+    }
+
+    // 2. Fall back to standalone fsrsCalculate
+    if (!pred) {
+      if (typeof window.fsrsCalculate === 'function') {
+        var isKanji = (entry && entry.source === 'kanji') || (card && card.is_kanji);
+        var calc = window.fsrsCalculate(card, r, nowDate, {
+          request_retention: settings.request_retention,
+          maximum_interval: settings.maximum_interval,
+          is_kanji: isKanji,
+        });
+        pred = {
+          rating: r,
+          label: labels[r],
+          interval: calc.interval,
+          intervalStr: (typeof window.fsrsFormatInterval === 'function')
+            ? window.fsrsFormatInterval(calc.interval)
+            : (calc.interval + 'd'),
+          stability: Number(calc.stability.toFixed(2)),
+          difficulty: Number(calc.difficulty.toFixed(2)),
+          due: calc.due,
+          due_iso: calc.due_iso,
+          state: calc.state,
+        };
+      } else {
+        // 3. Static fallback
+        var staticIntervals = { 1: 1, 2: 3, 3: 7, 4: 14 };
+        var iv = staticIntervals[r];
+        var d = new Date(nowDate.getTime() + iv * DAY_MS);
+        pred = {
+          rating: r,
+          label: labels[r],
+          interval: iv,
+          intervalStr: iv + 'd',
+          stability: iv,
+          difficulty: 5.0,
+          due: d,
+          due_iso: d.toISOString(),
+          state: r === 1 ? 3 : 2,
+        };
+      }
+    }
+    predictions[r] = pred;
+  }
+
+  return predictions;
+};
+
+// ── Level Ladder Mastery Engine ───────────────────────
+// Implements Level Ladder exit criteria & milestone gates
+// Research: LEVEL-LADDER-SPEC-v1.md & Blueprint Part 2
+window.srsLevelMastery = function (level) {
+  var targetLevel = (level || 'n5').toLowerCase();
+  var grammarList = [];
+  if (window.grammarDB && window.grammarDB.length) {
+    grammarList = window.grammarDB;
+  } else if (window.grammarData && window.grammarData.length) {
+    grammarList = window.grammarData.filter(function (d) { return d.cat !== 'dummy'; });
+  }
+  var vocabList = window.vocabDB || [];
+
+  var levelGrammar = grammarList.filter(function (g) {
+    var l = (g.level || g.jlpt || '').toLowerCase();
+    return targetLevel === 'all' || l === targetLevel;
+  });
+
+  var levelVocab = vocabList.filter(function (v) {
+    var l = (v.level || v.jlpt || '').toLowerCase();
+    return targetLevel === 'all' || l === targetLevel;
+  });
+
+  var countTiers = function (items) {
+    var total = items.length;
+    var studied = 0;
+    var young = 0;        // stability >= 21d (Young mature)
+    var mature = 0;       // stability >= 90d (Mature - N5 milestone gate)
+    var deepMature = 0;   // stability >= 180d (Deep mature - N4 milestone gate)
+    var annualMature = 0; // stability >= 365d (Annual mature - N3 milestone gate)
+    var totalStability = 0;
+    var totalR = 0;
+
+    for (var i = 0; i < items.length; i++) {
+      var item = items[i];
+      if (!item || !item.id) continue;
+      var entry = window.srsData[item.id];
+      if (!entry || !entry.card || entry.card.state === 0) continue;
+
+      studied++;
+      var s = entry.card.stability || 0;
+      totalStability += s;
+      totalR += getRetrievability(item.id);
+
+      if (s >= 365) annualMature++;
+      if (s >= 180) deepMature++;
+      if (s >= 90) mature++;
+      if (s >= 21) young++;
+    }
+
+    return {
+      total: total,
+      studied: studied,
+      coverage_pct: total > 0 ? Number(((studied / total) * 100).toFixed(1)) : 0,
+      young: young,
+      young_pct: total > 0 ? Number(((young / total) * 100).toFixed(1)) : 0,
+      mature: mature,
+      mature_pct: total > 0 ? Number(((mature / total) * 100).toFixed(1)) : 0,
+      deep_mature: deepMature,
+      annual_mature: annualMature,
+      avg_stability: studied > 0 ? Number((totalStability / studied).toFixed(1)) : 0,
+      avg_retrievability: studied > 0 ? Number((totalR / studied).toFixed(3)) : 0,
+    };
+  };
+
+  var gStats = countTiers(levelGrammar);
+  var vStats = countTiers(levelVocab);
+
+  // Targets from Level Ladder Specification:
+  // N5: Vocab >= 80% (>=21d), Grammar >= 75% (>=21d), Mature >= 500 (>=90d)
+  // N4: Vocab >= 80% (>=21d), Grammar >= 75% (>=21d), Deep mature >= 1200 (>=180d)
+  // N3: Vocab >= 75% (>=30d), Grammar >= 80% (>=30d), Annual mature >= 3000 (>=365d)
+  // N2: Vocab >= 70% (>=30d), Annual mature >= 5000 (>=365d)
+  // N1: Vocab >= 65% (>=30d), Annual mature >= 8000 (>=365d)
+  var milestones = {
+    n5: { vocabPct: 80, grammarPct: 75, matureCount: 500, matureStability: 90 },
+    n4: { vocabPct: 80, grammarPct: 75, matureCount: 1200, matureStability: 180 },
+    n3: { vocabPct: 75, grammarPct: 80, matureCount: 3000, matureStability: 365 },
+    n2: { vocabPct: 70, grammarPct: 75, matureCount: 5000, matureStability: 365 },
+    n1: { vocabPct: 65, grammarPct: 70, matureCount: 8000, matureStability: 365 },
+  };
+
+  var ms = milestones[targetLevel] || milestones.n5;
+  var vocabPassed = vStats.young_pct >= ms.vocabPct;
+  var grammarPassed = gStats.young_pct >= ms.grammarPct;
+
+  var currentMilestoneCount = (ms.matureStability === 90) ? (vStats.mature + gStats.mature)
+    : (ms.matureStability === 180) ? (vStats.deep_mature + gStats.deep_mature)
+    : (vStats.annual_mature + gStats.annual_mature);
+
+  var milestonePassed = currentMilestoneCount >= ms.matureCount;
+  var levelComplete = vocabPassed && grammarPassed && milestonePassed;
+
+  return {
+    level: targetLevel,
+    total_cards: gStats.total + vStats.total,
+    studied_cards: gStats.studied + vStats.studied,
+    overall_coverage_pct: (gStats.total + vStats.total > 0)
+      ? Number((((gStats.studied + vStats.studied) / (gStats.total + vStats.total)) * 100).toFixed(1))
+      : 0,
+    vocab: vStats,
+    grammar: gStats,
+    gates: {
+      vocab_gate: {
+        metric: 'stability >= 21d',
+        target_pct: ms.vocabPct,
+        current_pct: vStats.young_pct,
+        passed: vocabPassed,
+      },
+      grammar_gate: {
+        metric: 'stability >= 21d',
+        target_pct: ms.grammarPct,
+        current_pct: gStats.young_pct,
+        passed: grammarPassed,
+      },
+      milestone_gate: {
+        metric: 'stability >= ' + ms.matureStability + 'd',
+        target_count: ms.matureCount,
+        current_count: currentMilestoneCount,
+        passed: milestonePassed,
+      },
+      level_promoted: levelComplete,
+    },
+  };
+};
+
 // ── Hook into saveProgress ─────────────────────────────
 var _origSaveProgress = window.saveProgress;
 window.saveProgress = function (id, result) {
   // Call original (updates progress object + localStorage)
   if (_origSaveProgress) _origSaveProgress(id, result);
-  // Feed FSRS
-  var q = result === 'know' ? 4 : result === 'unsure' ? 2 : 0;
+  // Feed FSRS: map 3-button know/unsure/forgot to standard FSRS 3(Good) / 2(Hard) / 1(Again)
+  var q = (result === 'know') ? 3 : (result === 'unsure') ? 2 : 1;
   window.srsReview(id, q);
   if (window.updateProgressPanel) window.updateProgressPanel();
 };
@@ -509,6 +765,23 @@ var stats = window.srsStats();
 console.log('[fsrs-engine] Loaded:', stats.total, 'cards |',
   'Due today:', stats.due_today, '|',
   'Mature:', stats.mature, '|',
-  'FSRS:', fsrsAvailable ? 'active' : 'fallback mode');
+  'FSRS:', fsrsAvailable ? 'active' : 'standalone mode');
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = {
+    srsData: window.srsData,
+    srsReview: window.srsReview,
+    srsReviewFSRS: window.srsReviewFSRS,
+    srsDueToday: window.srsDueToday,
+    srsDueCount: window.srsDueCount,
+    srsStatus: window.srsStatus,
+    srsStats: window.srsStats,
+    srsNextDue: window.srsNextDue,
+    srsRetrievability: window.srsRetrievability,
+    srsStrength: window.srsStrength,
+    fsrsPredictNext: window.fsrsPredictNext,
+    srsLevelMastery: window.srsLevelMastery,
+  };
+}
 
 })();

@@ -54,10 +54,12 @@ function startFillQuiz() {
     week:  quizWeek
   });
 
-  // hide setup, show fill-in active
+  // hide all panels, show fill-in active
+  ['quizActive','fillInActive','rearrangeActive',
+   'conjugationActive','translationActive',
+   'errorFindActive','multiChoiceActive','typeTrActive','quizResult'
+  ].forEach(id => { const el = document.getElementById(id); if (el) el.style.display = 'none'; });
   document.getElementById('quizSetup').style.display  = 'none';
-  document.getElementById('quizActive').style.display = 'none';
-  document.getElementById('quizResult').style.display = 'none';
   document.getElementById('fillInActive').style.display = 'block';
 
   if (!pool.length) {
@@ -219,20 +221,21 @@ let reaAnswered = false, reaSelected = null;
 let reaResults = []; // true/false per soal untuk SRS feed
 
 function startRearrangeQuiz() {
-  const pool = (window.getRearrangeBank || (() => []))({
+  let pool = (window.getRearrangeBank || (() => []))({
     level: quizLevel,
     week:  quizWeek
   });
 
+  ['quizActive','fillInActive','rearrangeActive',
+   'conjugationActive','translationActive',
+   'errorFindActive','multiChoiceActive','typeTrActive','quizResult'
+  ].forEach(id => { const el = document.getElementById(id); if (el) el.style.display = 'none'; });
   document.getElementById('quizSetup').style.display      = 'none';
-  document.getElementById('quizActive').style.display     = 'none';
-  document.getElementById('fillInActive').style.display   = 'none';
-  document.getElementById('quizResult').style.display     = 'none';
   document.getElementById('rearrangeActive').style.display = 'block';
 
   if (!pool.length) {
     var _fb = window.quizEngine
-      ? window.quizEngine.generate({ quizType: 'rearrange', level: null, n: 20, source: 'grammar', mode: 'mixed' })
+      ? window.quizEngine.generate({ quizType: 'rearrange', level: quizLevel === 'all' ? null : quizLevel, n: 20, source: 'grammar', mode: 'mixed' })
       : [];
     if (_fb.length) {
       pool = _fb;

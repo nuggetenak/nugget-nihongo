@@ -2616,17 +2616,29 @@ header p { color: var(--muted); font-size: 0.62rem; }
 
 /* Conjugation */
 .vd-conj-grid {
-  display: grid; grid-template-columns: 1fr 1fr;
-  gap: 0.4rem;
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.5rem;
 }
-.vd-conj-row {
-  background: var(--surface-2); border-radius: 0.5rem;
-  padding: 0.4rem 0.65rem;
+.vd-conj-row, .vd-conj-card {
+  background: var(--surface-2); border-radius: 0.6rem;
+  padding: 0.5rem 0.75rem;
+  display: flex; flex-direction: column; gap: 0.2rem;
+  border: 1px solid color-mix(in srgb, var(--border) 60%, transparent);
+}
+.vd-conj-top {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 0.4rem;
+}
+.vd-conj-label { font-size: 0.68rem; color: var(--muted); font-weight: 500; }
+.vd-conj-val   { font-family: var(--font-jp); font-size: 0.95rem;
+                 font-weight: 600; color: var(--accent); }
+.vd-conj-meaning { font-size: 0.73rem; color: var(--text-sub); }
+.vd-conj-ex {
+  margin-top: 0.2rem; padding-top: 0.25rem;
+  border-top: 1px dashed color-mix(in srgb, var(--border) 50%, transparent);
   display: flex; flex-direction: column; gap: 0.1rem;
 }
-.vd-conj-label { font-size: 0.65rem; color: var(--muted); }
-.vd-conj-val   { font-family: var(--font-jp); font-size: 0.95rem;
-                 font-weight: 600; color: var(--text); }
+.vd-conj-ex-ja { font-family: var(--font-jp); font-size: 0.78rem; font-weight: 500; color: var(--text); }
+.vd-conj-ex-id { font-size: 0.7rem; color: var(--muted); }
 
 /* vb-card tap hint */
 .vb-detail-hint {
@@ -5143,3 +5155,242 @@ html[data-furigana="auto"]   .n1 rt { display: none; }
   padding: 32px 16px; color: var(--muted);
   font-size: var(--text-sm);
 }
+
+/* ══════════════════════════════════════════════════════════════
+   INTERACTIVE SLA LEXICON & PEEK-SHEET / POPOVER
+   v1.0.0 — Subtle dotted underlines & responsive peek card
+══════════════════════════════════════════════════════════════ */
+.nn-lex-item {
+  display: inline;
+  cursor: pointer;
+  border-bottom: 1.5px dotted rgba(245, 158, 11, 0.45);
+  border-radius: 3px;
+  padding: 0 1px;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+  -webkit-tap-highlight-color: rgba(245, 158, 11, 0.15);
+}
+
+.nn-lex-item:hover,
+.nn-lex-item:focus {
+  background: rgba(245, 158, 11, 0.14);
+  border-bottom-color: var(--accent, #f59e0b);
+  border-bottom-style: solid;
+  outline: none;
+}
+
+.nn-lex-particle {
+  border-bottom-color: rgba(96, 165, 250, 0.5); /* blueish tint for particles */
+}
+.nn-lex-particle:hover,
+.nn-lex-particle:focus {
+  background: rgba(96, 165, 250, 0.15);
+  border-bottom-color: #60a5fa;
+}
+
+.nn-lex-grammar,
+.nn-lex-combined_particle {
+  border-bottom-color: rgba(168, 85, 247, 0.5); /* purple tint for grammar patterns */
+}
+.nn-lex-grammar:hover,
+.nn-lex-grammar:focus {
+  background: rgba(168, 85, 247, 0.15);
+  border-bottom-color: #a855f7;
+}
+
+/* ── Overlay ── */
+.lex-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.48);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+/* ── Base Card ── */
+.lex-card {
+  background: var(--surface-1, #181512);
+  color: var(--text, #f5f2eb);
+  border: 1px solid var(--border-2, rgba(255,255,255,0.12));
+  border-radius: 18px 18px 0 0;
+  padding: 1.25rem 1.25rem 1.5rem;
+  box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.5);
+  max-height: 80vh;
+  overflow-y: auto;
+  font-family: var(--font-ui, -apple-system, sans-serif);
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s ease;
+}
+
+/* ── Mobile Peek Sheet (Default < 768px) ── */
+.lex-sheet-mobile {
+  width: 100%;
+  max-width: 540px;
+  transform: translateY(100%);
+  margin: 0 auto;
+}
+.lex-sheet-mobile.lex-active {
+  transform: translateY(0);
+}
+
+/* ── Desktop Floating Popover (>= 768px) ── */
+.lex-popover-desktop {
+  border-radius: 14px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(245, 158, 11, 0.25);
+  opacity: 0;
+  transform: translateY(6px);
+}
+.lex-popover-desktop.lex-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Card Header ── */
+.lex-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.65rem;
+}
+.lex-badges {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.lex-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.lex-badge-lvl {
+  background: rgba(245, 158, 11, 0.2);
+  color: var(--accent, #f59e0b);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+}
+.lex-badge-pos {
+  background: var(--surface-2, #25201b);
+  color: var(--muted, #a8a29e);
+  border: 1px solid var(--border, rgba(255,255,255,0.08));
+}
+.lex-close-btn {
+  background: transparent;
+  border: none;
+  color: var(--muted, #a8a29e);
+  font-size: 1.15rem;
+  cursor: pointer;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  line-height: 1;
+}
+.lex-close-btn:hover {
+  color: var(--text, #f5f2eb);
+  background: var(--surface-2, #25201b);
+}
+
+/* ── Word / Surface Row ── */
+.lex-word-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  margin-bottom: 0.4rem;
+  flex-wrap: wrap;
+}
+.lex-word {
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-family: var(--font-jp, "Shippori Mincho", serif);
+  color: var(--text, #f5f2eb);
+  letter-spacing: 0.02em;
+}
+.lex-reading {
+  font-size: 1.05rem;
+  font-family: var(--font-jp, "BIZ UDGothic", sans-serif);
+  color: var(--accent, #f59e0b);
+}
+.lex-romaji {
+  font-size: 0.85rem;
+  font-family: var(--font-mono, monospace);
+  color: var(--muted, #a8a29e);
+}
+
+/* ── Meaning ── */
+.lex-meaning-main {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text, #f5f2eb);
+  line-height: 1.45;
+  margin-bottom: 0.8rem;
+}
+
+/* ── Inflection Block ── */
+.lex-inflection-box {
+  background: rgba(96, 165, 250, 0.08);
+  border: 1px solid rgba(96, 165, 250, 0.25);
+  border-radius: 10px;
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 0.8rem;
+  font-size: 0.88rem;
+}
+.lex-inf-label {
+  font-weight: 700;
+  color: #60a5fa;
+  margin-bottom: 0.2rem;
+}
+.lex-inf-root {
+  color: var(--text, #f5f2eb);
+}
+
+/* ── SLA Nuance Box ── */
+.lex-sla-box {
+  background: rgba(245, 158, 11, 0.07);
+  border-left: 3.5px solid var(--accent, #f59e0b);
+  border-radius: 4px 10px 10px 4px;
+  padding: 0.75rem 0.85rem;
+  margin-bottom: 1rem;
+}
+.lex-sla-title {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--accent, #f59e0b);
+  margin-bottom: 0.35rem;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.lex-sla-content {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--text, #f5f2eb);
+}
+
+/* ── Footer ── */
+.lex-footer {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+}
+.lex-btn-detail {
+  flex: 1;
+  background: var(--surface-2, #25201b);
+  color: var(--text, #f5f2eb);
+  border: 1px solid var(--border-2, rgba(255,255,255,0.12));
+  border-radius: 10px;
+  padding: 0.65rem 1rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.15s ease;
+}
+.lex-btn-detail:hover {
+  background: rgba(245, 158, 11, 0.15);
+  border-color: var(--accent, #f59e0b);
+  color: var(--accent, #f59e0b);
+}
+

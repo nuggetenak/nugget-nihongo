@@ -1,0 +1,187 @@
+{
+  "version": "1.0",
+  "type": "grammar",
+  "description": "Static fallback grammar drills — served when all AI providers are unavailable.",
+  "items": [
+    {
+      "id": "fd-g-001",
+      "source_id": "gn5-00001",
+      "level": "n5",
+      "question": "わたし___がくせいです。",
+      "answer": "は",
+      "options": ["は", "が", "を", "に"],
+      "explanation_id": "Partikel は menandai topik kalimat. 'Watashi wa gakusei desu' = Saya adalah pelajar. Beda dari が yang menandai subjek gramatikal."
+    },
+    {
+      "id": "fd-g-002",
+      "source_id": "gn5-00005",
+      "level": "n5",
+      "question": "ねこ___います。(Ada kucing.)",
+      "answer": "が",
+      "options": ["が", "は", "で", "の"],
+      "explanation_id": "Partikel が digunakan dengan kata kerja keberadaan います/あります untuk menyatakan apa yang ada. 'Neko ga imasu' = Ada kucing (kucing itulah yang ada)."
+    },
+    {
+      "id": "fd-g-003",
+      "source_id": "gn5-00008",
+      "level": "n5",
+      "question": "にほんご___べんきょうします。",
+      "answer": "を",
+      "options": ["を", "に", "で", "と"],
+      "explanation_id": "Partikel を menandai objek langsung dari kata kerja transitif. 'Nihongo o benkyou shimasu' = Saya belajar bahasa Jepang. Ingat: を selalu mengikuti benda yang dikenai aksi."
+    },
+    {
+      "id": "fd-g-004",
+      "source_id": "gn5-00010",
+      "level": "n5",
+      "question": "としょかん___ほんをよみます。(Saya membaca buku di perpustakaan.)",
+      "answer": "で",
+      "options": ["で", "に", "へ", "から"],
+      "explanation_id": "Partikel で menandai tempat berlangsungnya suatu aktivitas. 'Toshokan de hon wo yomimasu' = Membaca buku di perpustakaan. Berbeda dengan に yang menandai tujuan/lokasi keberadaan."
+    },
+    {
+      "id": "fd-g-005",
+      "source_id": "gn5-00012",
+      "level": "n5",
+      "question": "がっこう___いきます。(Saya pergi ke sekolah.)",
+      "answer": "に",
+      "options": ["に", "で", "を", "から"],
+      "explanation_id": "Partikel に digunakan untuk menandai tujuan pergerakan bersama kata kerja 行く/来る/帰る. 'Gakkou ni ikimasu' = Pergi ke sekolah. に juga menandai waktu spesifik (月曜日に = pada hari Senin)."
+    },
+    {
+      "id": "fd-g-006",
+      "source_id": "gn5-00020",
+      "level": "n5",
+      "question": "これは___ですか。(Ini milik siapa?)",
+      "answer": "だれ",
+      "options": ["だれ", "なに", "どこ", "どれ"],
+      "explanation_id": "だれ (dare) = siapa, digunakan untuk menanyakan orang. なに (nani) = apa, どこ (doko) = di mana, どれ (dore) = yang mana. 'Kore wa dare no desu ka' = Ini milik siapa?"
+    },
+    {
+      "id": "fd-g-007",
+      "source_id": "gn5-00030",
+      "level": "n5",
+      "question": "まいにち___じかんべんきょうします。(Saya belajar 3 jam setiap hari.)",
+      "answer": "さん",
+      "options": ["さん", "みっ", "みつ", "さんつ"],
+      "explanation_id": "Bilangan diikuti counter じかん (jam). 1じかん, 2じかん, 3じかん. 'Mainichi san jikan benkyou shimasu' = Belajar 3 jam setiap hari. Ingat: じかん pakai bilangan Sino-Jepang (いち、に、さん...)."
+    },
+    {
+      "id": "fd-g-008",
+      "source_id": "gn5-00035",
+      "level": "n5",
+      "question": "あした___パーティーがあります。(Besok ada pesta.)",
+      "answer": "に",
+      "options": ["に", "で", "が", "は"],
+      "explanation_id": "に untuk waktu spesifik: 'Ashita ni paatii ga arimasu'. Catatan: あした (besok), きのう (kemarin), まいにち (setiap hari) biasanya tanpa に, tapi tanggal/hari spesifik membutuhkan に."
+    },
+    {
+      "id": "fd-g-009",
+      "source_id": "gn5-00040",
+      "level": "n5",
+      "question": "たべもの___なかで、すしが___すきです。",
+      "answer": "の・いちばん",
+      "options": ["の・いちばん", "で・もっとも", "に・いちばん", "が・とても"],
+      "explanation_id": "Pola 〜の中で〜が一番 digunakan untuk menyatakan superlative (paling...). 'Tabemono no naka de, sushi ga ichiban suki desu' = Di antara makanan, saya paling suka sushi."
+    },
+    {
+      "id": "fd-g-010",
+      "source_id": "gn5-00045",
+      "level": "n5",
+      "question": "あのひとは___ひとですか。(Orang itu orang mana?)",
+      "answer": "どこの",
+      "options": ["どこの", "だれの", "なんの", "いくらの"],
+      "explanation_id": "どこの + N = dari mana / asal mana. 'Ano hito wa doko no hito desu ka' = Orang itu orang mana (dari negara/daerah mana)? Berbeda dengan だれ (siapa orangnya)."
+    },
+    {
+      "id": "fd-g-011",
+      "source_id": "gn4-00001",
+      "level": "n4",
+      "question": "もっとはやく___ば、まにあいました。(Kalau lebih cepat pergi, pasti tepat waktu.)",
+      "answer": "いけ",
+      "options": ["いけ", "いき", "いっ", "いか"],
+      "explanation_id": "Pola 〜ば adalah bentuk kondisional (kalau/jika). Untuk kata kerja godan 行く: 行けば (ieba) = kalau pergi. Kondisi hipotetis yang tidak terjadi di masa lampau."
+    },
+    {
+      "id": "fd-g-012",
+      "source_id": "gn4-00010",
+      "level": "n4",
+      "question": "かれは___きます。(Dia mungkin datang.)",
+      "answer": "くるかもしれません",
+      "options": ["くるかもしれません", "きたでしょう", "くるつもりです", "きているはずです"],
+      "explanation_id": "〜かもしれません = mungkin (kemungkinan 50/50). Beda dari: でしょう (dugaan kuat ~80%), つもり (rencana/niat), はず (seharusnya/ekspektasi). 'Kare wa kuru kamoshiremasen' = Dia mungkin datang."
+    },
+    {
+      "id": "fd-g-013",
+      "source_id": "gn4-00015",
+      "level": "n4",
+      "question": "この仕事は___むずかしい。(Pekerjaan ini sangat sulit.)",
+      "answer": "とても",
+      "options": ["とても", "あまり", "まだ", "もう"],
+      "explanation_id": "とても = sangat (digunakan dengan kalimat positif). あまり = tidak terlalu (digunakan dengan negatif: あまり難しくない). まだ = masih/belum, もう = sudah. 'Kono shigoto wa totemo muzukashii'."
+    },
+    {
+      "id": "fd-g-014",
+      "source_id": "gn4-00020",
+      "level": "n4",
+      "question": "雨が___から、かさをもってください。(Karena akan hujan, bawalah payung.)",
+      "answer": "ふる",
+      "options": ["ふる", "ふり", "ふって", "ふった"],
+      "explanation_id": "〜から = karena (sebab-akibat). Sebelum から, pakai bentuk kamus (plain form) atau bentuk biasa: 降るから (karena akan turun hujan). Dalam bahasa lisan から lebih umum dari ので."
+    },
+    {
+      "id": "fd-g-015",
+      "source_id": "gn4-00025",
+      "level": "n4",
+      "question": "このりんごは___おおきくない。(Apel ini tidak terlalu besar.)",
+      "answer": "あまり",
+      "options": ["あまり", "とても", "ぜんぜん", "まったく"],
+      "explanation_id": "あまり + ない = tidak terlalu (negatif lemah). ぜんぜん + ない = sama sekali tidak (negatif kuat). まったく + ない = sama sekali tidak (formal). 'Kono ringo wa amari ookikunai' = Apel ini tidak terlalu besar."
+    },
+    {
+      "id": "fd-g-016",
+      "source_id": "gn4-00030",
+      "level": "n4",
+      "question": "もし___なら、おしえてください。(Kalau tahu, tolong beritahu.)",
+      "answer": "しっている",
+      "options": ["しっている", "しります", "しった", "しろ"],
+      "explanation_id": "もし〜なら = kalau/jika (kondisional dengan もし untuk penekanan). Setelah なら pakai plain form. 'Moshi shitte iru nara, oshiete kudasai' = Kalau tahu, tolong beritahu saya."
+    },
+    {
+      "id": "fd-g-017",
+      "source_id": "gn4-00035",
+      "level": "n4",
+      "question": "かれ___いっしょにいきたい。(Saya ingin pergi bersama dia.)",
+      "answer": "と",
+      "options": ["と", "に", "で", "を"],
+      "explanation_id": "と = bersama (untuk kegiatan bersama orang lain). 'Kare to issho ni ikitai' = Ingin pergi bersama dia. Berbeda dengan に (tujuan/arah) dan で (tempat/alat)."
+    },
+    {
+      "id": "fd-g-018",
+      "source_id": "gn4-00040",
+      "level": "n4",
+      "question": "日本語の勉強を___います。(Sedang belajar bahasa Jepang.)",
+      "answer": "して",
+      "options": ["して", "し", "する", "した"],
+      "explanation_id": "〜ています = sedang melakukan (progressive). Untuk する → して + います. 'Nihongo no benkyou wo shite imasu' = Sedang belajar bahasa Jepang. Perhatikan: ている juga bisa berarti keadaan hasil tindakan."
+    },
+    {
+      "id": "fd-g-019",
+      "source_id": "gn4-00045",
+      "level": "n4",
+      "question": "このえいがはみた___があります。(Saya pernah menonton film ini.)",
+      "answer": "こと",
+      "options": ["こと", "もの", "ところ", "はず"],
+      "explanation_id": "〜たことがある = pernah melakukan. Pakai bentuk た (lampau) + ことがある. 'Kono eiga wa mita koto ga arimasu' = Saya pernah menonton film ini. Menyatakan pengalaman masa lalu."
+    },
+    {
+      "id": "fd-g-020",
+      "source_id": "gn4-00050",
+      "level": "n4",
+      "question": "かれはにほんご___できます。(Dia bisa berbahasa Jepang.)",
+      "answer": "が",
+      "options": ["が", "を", "に", "で"],
+      "explanation_id": "できる (bisa/mampu) menggunakan partikel が, bukan を. 'Kare wa nihongo ga dekimasu' = Dia bisa bahasa Jepang. Ingat: わかる (mengerti), できる (bisa), すき (suka), きらい (tidak suka) semuanya pakai が."
+    }
+  ]
+}

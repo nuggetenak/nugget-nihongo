@@ -26,11 +26,11 @@ window.startQuiz = function(deck) {
 
 // ── Start ────────────────────────────────────────────────────────
 function startErrorFindQuiz() {
-  const pool = window.getErrorFindBank({ level: quizLevel, week: quizWeek });
+  let pool = window.getErrorFindBank({ level: quizLevel, week: quizWeek });
 
   ['quizActive','fillInActive','rearrangeActive',
    'conjugationActive','translationActive',
-   'errorFindActive','multiChoiceActive','quizResult'
+   'errorFindActive','multiChoiceActive','typeTrActive','quizResult'
   ].forEach(id => { const el = document.getElementById(id); if (el) el.style.display = 'none'; });
   document.getElementById('quizSetup').style.display = 'none';
 
@@ -39,9 +39,9 @@ function startErrorFindQuiz() {
   activeEl.style.display = 'block';
 
   if (!pool.length) {
-    // Fallback: generate from all grammar without level restriction
+    // Fallback: generate error_find questions
     var _fb = window.quizEngine
-      ? window.quizEngine.generate({ quizType: 'mixed', level: null, n: 20, source: 'grammar', mode: 'mixed' })
+      ? window.quizEngine.generate({ quizType: 'error_find', level: quizLevel === 'all' ? null : quizLevel, n: 20, source: 'grammar', mode: 'mixed' })
       : [];
     if (_fb.length) {
       pool = _fb;

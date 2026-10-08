@@ -1,0 +1,187 @@
+{
+  "version": "1.0",
+  "type": "vocab",
+  "description": "Static fallback vocabulary drills — served when all AI providers are unavailable.",
+  "items": [
+    {
+      "id": "fd-v-001",
+      "source_id": "vg-n5-00001",
+      "level": "n5",
+      "question": "「会う」artinya?",
+      "answer": "bertemu",
+      "options": ["bertemu", "membeli", "berbicara", "melihat"],
+      "explanation_id": "会う (あう / au) = bertemu seseorang secara tatap muka. Kata kerja godan (u-verb). Contoh: 友達に会いました (Saya bertemu teman). Ingat: に menandai orang yang ditemui."
+    },
+    {
+      "id": "fd-v-002",
+      "source_id": "vg-n5-00010",
+      "level": "n5",
+      "question": "「食べる」artinya?",
+      "answer": "makan",
+      "options": ["makan", "minum", "memasak", "mencicipi"],
+      "explanation_id": "食べる (たべる / taberu) = makan. Kata kerja ichidan (ru-verb). Bentuk te: 食べて, bentuk ta: 食べた. Contoh: ごはんを食べます (Saya makan nasi). を menandai makanan yang dimakan."
+    },
+    {
+      "id": "fd-v-003",
+      "source_id": "vg-n5-00020",
+      "level": "n5",
+      "question": "「飲む」artinya?",
+      "answer": "minum",
+      "options": ["minum", "makan", "mengambil", "mencicipi"],
+      "explanation_id": "飲む (のむ / nomu) = minum. Kata kerja godan. Bentuk te: 飲んで (ada perubahan む → ん). Contoh: お水を飲みます (Saya minum air). Juga dipakai untuk minum obat: 薬を飲む."
+    },
+    {
+      "id": "fd-v-004",
+      "source_id": "vg-n5-00030",
+      "level": "n5",
+      "question": "「見る」artinya?",
+      "answer": "melihat / menonton",
+      "options": ["melihat / menonton", "mendengar", "membaca", "menulis"],
+      "explanation_id": "見る (みる / miru) = melihat, menonton. Kata kerja ichidan. Contoh: テレビを見ます (menonton TV), 映画を見ます (menonton film). Beda dengan 見える (terlihat — intransitif, tanpa usaha)."
+    },
+    {
+      "id": "fd-v-005",
+      "source_id": "vg-n5-00040",
+      "level": "n5",
+      "question": "「聞く」memiliki dua arti utama, yaitu?",
+      "answer": "mendengar / bertanya",
+      "options": ["mendengar / bertanya", "berbicara / menjawab", "membaca / menulis", "melihat / menonton"],
+      "explanation_id": "聞く (きく / kiku) punya dua arti: 1) mendengar (音楽を聞く = mendengar musik), 2) bertanya/menanyakan (先生に聞く = bertanya kepada guru). Konteks menentukan artinya. Kata kerja godan."
+    },
+    {
+      "id": "fd-v-006",
+      "source_id": "vg-n5-00050",
+      "level": "n5",
+      "question": "「大きい」artinya?",
+      "answer": "besar",
+      "options": ["besar", "kecil", "tinggi", "rendah"],
+      "explanation_id": "大きい (おおきい / ookii) = besar. Kata sifat-i. Bentuk negatif: 大きくない (tidak besar). Lawan kata: 小さい (ちいさい = kecil). Contoh: 大きい犬 (anjing besar), このかばんは大きい (tas ini besar)."
+    },
+    {
+      "id": "fd-v-007",
+      "source_id": "vg-n5-00060",
+      "level": "n5",
+      "question": "「新しい」artinya?",
+      "answer": "baru",
+      "options": ["baru", "lama", "mahal", "murah"],
+      "explanation_id": "新しい (あたらしい / atarashii) = baru. Kata sifat-i. Lawan kata: 古い (ふるい / furui = lama/tua). Contoh: 新しいスマホを買いました (Saya membeli HP baru). Perhatikan: 4 suku kata あ-た-ら-し-い."
+    },
+    {
+      "id": "fd-v-008",
+      "source_id": "vg-n5-00070",
+      "level": "n5",
+      "question": "「学校」artinya?",
+      "answer": "sekolah",
+      "options": ["sekolah", "rumah sakit", "kantor", "toko"],
+      "explanation_id": "学校 (がっこう / gakkou) = sekolah. Kanji: 学 (belajar) + 校 (sekolah/lembaga). Kata terkait: 学生 (gakusei = murid), 先生 (sensei = guru). Contoh: 学校に行きます (Pergi ke sekolah)."
+    },
+    {
+      "id": "fd-v-009",
+      "source_id": "vg-n5-00080",
+      "level": "n5",
+      "question": "「電車」artinya?",
+      "answer": "kereta listrik",
+      "options": ["kereta listrik", "bus", "taksi", "pesawat"],
+      "explanation_id": "電車 (でんしゃ / densha) = kereta listrik (commuter, MRT, dll). Kanji: 電 (listrik) + 車 (kendaraan). Contoh: 電車で行きます (Pergi naik kereta). で = menggunakan alat transportasi."
+    },
+    {
+      "id": "fd-v-010",
+      "source_id": "vg-n5-00090",
+      "level": "n5",
+      "question": "「友達」artinya?",
+      "answer": "teman",
+      "options": ["teman", "keluarga", "guru", "dokter"],
+      "explanation_id": "友達 (ともだち / tomodachi) = teman. Kanji: 友 (sahabat) + 達 (suffix plural). Contoh: 友達と遊びます (Bermain dengan teman). Kata terkait: 親友 (しんゆう = sahabat karib)."
+    },
+    {
+      "id": "fd-v-011",
+      "source_id": "vg-n4-00001",
+      "level": "n4",
+      "question": "「集める」artinya?",
+      "answer": "mengumpulkan",
+      "options": ["mengumpulkan", "membuang", "membagi", "mencari"],
+      "explanation_id": "集める (あつめる / atsumeru) = mengumpulkan (transitif). Kata kerja ichidan. Pasangannya 集まる (あつまる = berkumpul, intransitif). Contoh: スタンプを集めています (Saya sedang mengumpulkan stempel)."
+    },
+    {
+      "id": "fd-v-012",
+      "source_id": "vg-n4-00010",
+      "level": "n4",
+      "question": "「急ぐ」artinya?",
+      "answer": "terburu-buru / bergegas",
+      "options": ["terburu-buru / bergegas", "berhenti", "beristirahat", "menunggu"],
+      "explanation_id": "急ぐ (いそぐ / isogu) = terburu-buru, bergegas. Kata kerja godan. Bentuk te: 急いで (ada perubahan gu → い + で). Contoh: 急いでください (Tolong cepat/bergegas). 急ぎ足で = dengan langkah tergesa."
+    },
+    {
+      "id": "fd-v-013",
+      "source_id": "vg-n4-00020",
+      "level": "n4",
+      "question": "「遅れる」artinya?",
+      "answer": "terlambat",
+      "options": ["terlambat", "cepat", "tepat waktu", "selesai"],
+      "explanation_id": "遅れる (おくれる / okureru) = terlambat, tertinggal. Kata kerja ichidan intransitif. Contoh: 授業に遅れました (Saya terlambat masuk kelas). Berbeda: 遅い (おそい = lambat, kata sifat-i)."
+    },
+    {
+      "id": "fd-v-014",
+      "source_id": "vg-n4-00030",
+      "level": "n4",
+      "question": "「連絡する」artinya?",
+      "answer": "menghubungi / memberi kabar",
+      "options": ["menghubungi / memberi kabar", "bertemu", "mengajar", "membantu"],
+      "explanation_id": "連絡する (れんらくする / renraku suru) = menghubungi, memberi kabar. Kata kerja suru-compound. Kanji: 連絡 (kontak/hubungan). Contoh: あとで連絡します (Nanti saya hubungi). 連絡先 = nomor/alamat kontak."
+    },
+    {
+      "id": "fd-v-015",
+      "source_id": "vg-n4-00040",
+      "level": "n4",
+      "question": "「説明する」artinya?",
+      "answer": "menjelaskan",
+      "options": ["menjelaskan", "bertanya", "menulis", "membaca"],
+      "explanation_id": "説明する (せつめいする / setsumei suru) = menjelaskan. Kata kerja suru-compound. Kanji: 説 (berbicara/menjelaskan) + 明 (terang/jelas). Contoh: 先生が文法を説明しました (Guru menjelaskan grammar)."
+    },
+    {
+      "id": "fd-v-016",
+      "source_id": "vg-n4-00050",
+      "level": "n4",
+      "question": "「危険」artinya?",
+      "answer": "berbahaya / bahaya",
+      "options": ["berbahaya / bahaya", "aman", "menarik", "mudah"],
+      "explanation_id": "危険 (きけん / kiken) = bahaya, berbahaya. Kata sifat-na: 危険な場所 (tempat berbahaya). Kata benda: 危険がある (ada bahaya). Lawan kata: 安全 (あんぜん / anzen = aman). Contoh: ここは危険です。"
+    },
+    {
+      "id": "fd-v-017",
+      "source_id": "vg-n4-00060",
+      "level": "n4",
+      "question": "「親切」artinya?",
+      "answer": "baik hati / ramah",
+      "options": ["baik hati / ramah", "jahat", "pemalu", "malas"],
+      "explanation_id": "親切 (しんせつ / shinsetsu) = baik hati, ramah. Kata sifat-na: 親切な人 (orang baik hati). Ungkapan sopan: ご親切に (terima kasih atas kebaikan Anda). Contoh: 田中さんはとても親切です。"
+    },
+    {
+      "id": "fd-v-018",
+      "source_id": "vg-n4-00070",
+      "level": "n4",
+      "question": "「経験」artinya?",
+      "answer": "pengalaman",
+      "options": ["pengalaman", "perasaan", "pengetahuan", "kemampuan"],
+      "explanation_id": "経験 (けいけん / keiken) = pengalaman. Kanji: 経 (melewati) + 験 (ujian/pengalaman). Contoh: いい経験になりました (Menjadi pengalaman yang baik). 経験がある = punya pengalaman. Beda: 体験 (たいけん = pengalaman langsung/nyata)."
+    },
+    {
+      "id": "fd-v-019",
+      "source_id": "vg-n4-00080",
+      "level": "n4",
+      "question": "「残念」artinya?",
+      "answer": "sayang / menyesal",
+      "options": ["sayang / menyesal", "senang", "terkejut", "puas"],
+      "explanation_id": "残念 (ざんねん / zannen) = sayang sekali, menyesal. Kata sifat-na. Ungkapan sangat umum: 残念ながら (sayang sekali / dengan menyesal). Contoh: 残念ですね (Sayang ya). 残念に思う = merasa menyesal."
+    },
+    {
+      "id": "fd-v-020",
+      "source_id": "vg-n4-00090",
+      "level": "n4",
+      "question": "「必要」artinya?",
+      "answer": "perlu / diperlukan",
+      "options": ["perlu / diperlukan", "tidak perlu", "mewah", "cukup"],
+      "explanation_id": "必要 (ひつよう / hitsuyou) = perlu, diperlukan. Kata sifat-na: 必要な書類 (dokumen yang diperlukan). Pola: 〜が必要です (membutuhkan ~). Contoh: パスポートが必要です (Paspor diperlukan). Beda: 要る (いる = butuh, kata kerja)."
+    }
+  ]
+}

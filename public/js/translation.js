@@ -32,12 +32,12 @@ const TRANS_DIR_LABEL = {
 
 // ── Start ────────────────────────────────────────────────────────
 function startTranslationQuiz() {
-  const pool = window.getTranslationBank({ level: quizLevel, week: quizWeek });
+  let pool = window.getTranslationBank({ level: quizLevel, week: quizWeek });
 
   // Hide all panels
   ['quizActive','fillInActive','rearrangeActive',
    'conjugationActive','translationActive',
-   'errorFindActive','multiChoiceActive','quizResult'
+   'errorFindActive','multiChoiceActive','typeTrActive','quizResult'
   ].forEach(id => {
     const el = document.getElementById(id);
     if (el) el.style.display = 'none';
@@ -49,9 +49,9 @@ function startTranslationQuiz() {
   activeEl.style.display = 'block';
 
   if (!pool.length) {
-    // Fallback: generate from all grammar without level restriction
+    // Fallback: generate translation questions
     var _fb = window.quizEngine
-      ? window.quizEngine.generate({ quizType: 'mixed', level: null, n: 20, source: 'grammar', mode: 'mixed' })
+      ? window.quizEngine.generate({ quizType: 'translation', level: quizLevel === 'all' ? null : quizLevel, n: 20, source: 'grammar', mode: 'mixed' })
       : [];
     if (_fb.length) {
       pool = _fb;

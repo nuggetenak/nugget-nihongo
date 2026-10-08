@@ -9,6 +9,8 @@
 //    toggleTheme()   Toggle and persist theme
 // ══════════════════════════════════════
 
+const LS_THEME = (typeof window !== 'undefined' && window.LS_THEME) || 'bunpou-theme';
+
 function toggleTheme() {
   const isLight = document.body.classList.toggle('light');
   const btn = document.getElementById('themeToggle');
@@ -32,4 +34,12 @@ function loadTheme() {
   if (legacy && !saved) {
     try { localStorage.setItem(LS_THEME, legacy); } catch(e) {}
   }
+}
+
+window.loadTheme = loadTheme;
+window.toggleTheme = toggleTheme;
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', loadTheme);
+} else {
+  loadTheme();
 }

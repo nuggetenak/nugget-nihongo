@@ -36,6 +36,10 @@ const USER_DATA_KEYS = [
   'nn_fontsize',         // font size pref
   'nn_reduce_motion',    // reduce motion pref
   'nn_last_activity',    // ContinueCard context
+  'nn_starting_level',   // user selected level
+  'nn_onboarded',        // onboarding completion flag
+  'nn_goals',            // daily/weekly study goals
+  'nn_user_profile',     // user profile settings
   'nn_migrated_v1',      // Supabase migration flag
   // Legacy keys (preserved for safety)
   'bunpou_progress',
@@ -242,6 +246,8 @@ window.checkBackupReminder = function () {
   }
   return false;
 };
+
+window.USER_DATA_KEYS = USER_DATA_KEYS;
 
 console.log('[backup] Module loaded. Last backup:',
   window.getBackupAge() !== null ? window.getBackupAge() + ' days ago' : 'never');

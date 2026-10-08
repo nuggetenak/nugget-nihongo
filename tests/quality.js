@@ -238,12 +238,17 @@ for (const [filePath, varName, level, prefix] of VOCAB_FILES) {
 
     // ── Cross-level word duplicate ──
     const word = String(e.word || '');
-    if (word) {
-      if (wordLevelMap.has(word) && wordLevelMap.get(word).level !== level)
-        warn('CROSSLEVEL_DUP_WORD', id,
-          `'${word}' also in ${wordLevelMap.get(word).level} (${wordLevelMap.get(word).id})`);
-      else if (!wordLevelMap.has(word)) wordLevelMap.set(word, {id,level});
-    }
+      const meaning = String(e.meaning_id || '');
+      if (word) {
+        if (wordLevelMap.has(word) && wordLevelMap.get(word).level !== level) {
+          if (wordLevelMap.get(word).meaning === meaning) {
+            warn('CROSSLEVEL_DUP_WORD', id,
+              `'${word}' also in ${wordLevelMap.get(word).level} (${wordLevelMap.get(word).id}) with identical meaning`);
+          }
+        } else if (!wordLevelMap.has(word)) {
+          wordLevelMap.set(word, {id, level, meaning});
+        }
+      }
 
     // ── jlpt field ──
     if (e.jlpt && e.jlpt !== level) issue('JLPT_MISMATCH', id, `entry.jlpt='${e.jlpt}' but file is ${level}`);

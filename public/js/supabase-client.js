@@ -10,9 +10,9 @@
 (function () {
   'use strict';
 
-  // ── CONFIG (replace these) ───────────────────────────
-  var SUPABASE_URL  = 'https://oxeuwkpgrtojjzhcboqz.supabase.co';
-  var SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im94ZXV3a3BncnRvamp6aGNib3F6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzUwNDczNTMsImV4cCI6MjA5MDYyMzM1M30.0kEo4o6U9YNWA0RA5h83W9nMacoxQR9uUL2lHiDiZPk';
+  // ── CONFIG ───────────────────────────────────────────
+  var SUPABASE_URL  = 'https://xipvhxorvwpvfokauboy.supabase.co';
+  var SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhpcHZoeG9ydndwdmZva2F1Ym95Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTE0NTA2ODYsImV4cCI6MjEwNzAyNjY4Nn0.xz2jvXwkM15rBRnohCYxAC6d7I7WFkzmeu1arPMgNtU';
 
   // ── INIT ─────────────────────────────────────────────
   if (typeof window.supabase === 'undefined') {
@@ -117,7 +117,7 @@
       });
     },
 
-    // Bulk sync: push all local SRS state to cloud
+    // Bulk sync: push all local SRS state to cloud in chunks of 200
     // cards = { [id]: { card: FSRSCard, history: [], source: 'grammar'|'vocab' } }
     bulkSync: async function (cards) {
       var u = await sb.auth.getUser();
@@ -143,8 +143,124 @@
         };
       });
       if (!rows.length) return;
-      return sb.from('srs_cards').upsert(rows, { onConflict: 'user_id,item_type,item_id' });
+      var CHUNK_SIZE = 200;
+      for (var i = 0; i < rows.length; i += CHUNK_SIZE) {
+        var chunk = rows.slice(i, i + CHUNK_SIZE);
+        var r = await sb.from('srs_cards').upsert(chunk, { onConflict: 'user_id,item_type,item_id' });
+        if (r && r.error) throw r.error;
+      }
     },
+
+    // Pull all remote cards from Supabase and merge with local
+    pullAll: async function () {
+      var u = await sb.auth.getUser();
+      var userId = u.data?.user?.id;
+      if (!userId) return Promise.reject('Not authenticated');
+      var res = await sb.from('srs_cards').select('*').eq('user_id', userId);
+      if (res.error) throw res.error;
+      var remoteCards = res.data || [];
+      if (!remoteCards.length) return {};
+
+      var localCards = {};
+      try { localCards = JSON.parse(localStorage.getItem('nn_fsrs_cards') || '{}'); } catch (e) {}
+      var updated = false;
+
+      remoteCards.forEach(function (rc) {
+        var id = rc.item_id;
+        var localEntry = localCards[id];
+        var remoteLast = new Date(rc.last_review || 0).getTime();
+        var localLast = localEntry && localEntry.card && localEntry.card.last_review
+          ? new Date(localEntry.card.last_review).getTime()
+          : 0;
+
+        if (!localEntry || remoteLast > localLast) {
+          localCards[id] = {
+            card: {
+              due:            rc.due,
+              stability:      rc.stability,
+              difficulty:     rc.difficulty,
+              elapsed_days:   rc.elapsed_days,
+              scheduled_days: rc.scheduled_days,
+              reps:           rc.reps,
+              lapses:         rc.lapses,
+              state:          rc.state,
+              last_review:    rc.last_review,
+            },
+            history: (localEntry && localEntry.history) || [],
+            source:  rc.item_type || (id.startsWith('vg-') ? 'vocab' : 'grammar')
+          };
+          updated = true;
+          if (window.localState && window.localState.saveCard) {
+            window.localState.saveCard(id, localCards[id]);
+          }
+        }
+      });
+
+      if (updated) {
+        window.srsData = localCards;
+        try { localStorage.setItem('nn_fsrs_cards', JSON.stringify(localCards)); } catch (e) {}
+      }
+      return localCards;
+    },
+  };
+
+  // ── 4D FSRS ATOMS ─────────────────────────────────────
+  window.sbFSRSAtoms = {
+    getAtoms: async function (atomType) {
+      var u = await sb.auth.getUser();
+      var userId = u.data?.user?.id;
+      if (!userId) return Promise.reject('Not authenticated');
+      var q = sb.from('fsrs_atoms').select('*').eq('user_id', userId);
+      if (atomType) q = q.eq('atom_type', atomType);
+      return q;
+    },
+    upsertAtom: async function (atom) {
+      var u = await sb.auth.getUser();
+      var userId = u.data?.user?.id;
+      if (!userId) return Promise.reject('Not authenticated');
+      return sb.from('fsrs_atoms').upsert({
+        user_id:             userId,
+        atom_type:           atom.atom_type,
+        atom_id:             atom.atom_id,
+        visual_stability:    atom.dimensions?.visual?.stability    || atom.visual_stability    || 0,
+        visual_difficulty:   atom.dimensions?.visual?.difficulty   || atom.visual_difficulty   || 0,
+        context_stability:   atom.dimensions?.context?.stability   || atom.context_stability   || 0,
+        context_difficulty:  atom.dimensions?.context?.difficulty  || atom.context_difficulty  || 0,
+        auditory_stability:  atom.dimensions?.auditory?.stability  || atom.auditory_stability  || 0,
+        auditory_difficulty: atom.dimensions?.auditory?.difficulty || atom.auditory_difficulty || 0,
+        verbal_stability:    atom.dimensions?.verbal?.stability    || atom.verbal_stability    || 0,
+        verbal_difficulty:   atom.dimensions?.verbal?.difficulty   || atom.verbal_difficulty   || 0,
+        last_reviewed_at:    atom.last_reviewed_at || new Date().toISOString()
+      }, { onConflict: 'user_id,atom_type,atom_id' });
+    },
+    batchUpsertAtoms: async function (atoms) {
+      var u = await sb.auth.getUser();
+      var userId = u.data?.user?.id;
+      if (!userId) return Promise.reject('Not authenticated');
+      if (!Array.isArray(atoms) || atoms.length === 0) return;
+      var rows = atoms.map(function (atom) {
+        return {
+          user_id:             userId,
+          atom_type:           atom.atom_type,
+          atom_id:             atom.atom_id,
+          visual_stability:    atom.dimensions?.visual?.stability    || atom.visual_stability    || 0,
+          visual_difficulty:   atom.dimensions?.visual?.difficulty   || atom.visual_difficulty   || 0,
+          context_stability:   atom.dimensions?.context?.stability   || atom.context_stability   || 0,
+          context_difficulty:  atom.dimensions?.context?.difficulty  || atom.context_difficulty  || 0,
+          auditory_stability:  atom.dimensions?.auditory?.stability  || atom.auditory_stability  || 0,
+          auditory_difficulty: atom.dimensions?.auditory?.difficulty || atom.auditory_difficulty || 0,
+          verbal_stability:    atom.dimensions?.verbal?.stability    || atom.verbal_stability    || 0,
+          verbal_difficulty:   atom.dimensions?.verbal?.difficulty   || atom.verbal_difficulty   || 0,
+          last_reviewed_at:    atom.last_reviewed_at || new Date().toISOString()
+        };
+      });
+      var CHUNK = 100;
+      for (var i = 0; i < rows.length; i += CHUNK) {
+        var chunk = rows.slice(i, i + CHUNK);
+        var r = await sb.from('fsrs_atoms').upsert(chunk, { onConflict: 'user_id,atom_type,atom_id' });
+        if (r && r.error) throw r.error;
+      }
+    }
   };
 
   // ── PROFILE ──────────────────────────────────────────
@@ -327,7 +443,7 @@
   }
 
   // ── Full localStorage → Supabase migration ──────────
-  // Triggered once on first sign-in. Idempotent.
+  // Triggered once on first sign-in. Idempotent & bi-directional.
   // Blueprint basis: Phase 4 (Cloud sync)
   async function _migrateAllToSupabase() {
     var user = (await sb.auth.getUser()).data?.user;
@@ -335,12 +451,62 @@
     if (localStorage.getItem('nn_migrated_v1') === 'true') return;
 
     try {
-      // 1. FSRS cards (already works via syncProgress)
-      _syncProgress();
+      // 1. Pull remote profile first (prevent wiping cloud profile if new device)
+      var remoteProf = null;
+      try {
+        var profRes = await sbProfile.get();
+        if (profRes && profRes.data) remoteProf = profRes.data;
+      } catch (profErr) {
+        console.warn('[supabase] Could not fetch remote profile:', profErr.message);
+      }
 
-      // 2. Achievements → achievements table
+      // 2. Resolve XP and streak
+      var xpData = {}, streakData = {};
+      try { xpData = JSON.parse(localStorage.getItem('nn_xp') || '{"xp":0}'); } catch (e) {}
+      try { streakData = JSON.parse(localStorage.getItem('nn_streak') || '{"current":0}'); } catch (e) {}
+
+      var localXP = xpData.xp || 0;
+      var localStreak = streakData.current || streakData.count || 0;
+      var localStreakLast = streakData.last_active || streakData.lastDate || null;
+
+      if (remoteProf) {
+        if ((remoteProf.xp || 0) > localXP) {
+          localXP = remoteProf.xp;
+          xpData.xp = localXP;
+          if (window.xpState) window.xpState.xp = localXP;
+          try { localStorage.setItem('nn_xp', JSON.stringify(xpData)); } catch (e) {}
+        }
+        if ((remoteProf.streak_days || 0) > localStreak) {
+          localStreak = remoteProf.streak_days;
+          localStreakLast = remoteProf.streak_last;
+          streakData.current = localStreak;
+          streakData.last_active = localStreakLast;
+          if (window.streakState) {
+            window.streakState.current = localStreak;
+            window.streakState.last_active = localStreakLast;
+          }
+          try { localStorage.setItem('nn_streak', JSON.stringify(streakData)); } catch (e) {}
+        }
+      }
+
+      await sbProfile.update({
+        xp: localXP,
+        streak_days: localStreak,
+        streak_last: localStreakLast,
+      });
+
+      // 3. Remote achievements pull & merge
       var achievements = [];
       try { achievements = JSON.parse(localStorage.getItem('nn_achievements') || '[]'); } catch (e) {}
+      try {
+        var remoteAchRes = await sb.from('achievements').select('achievement').eq('user_id', user.id);
+        if (remoteAchRes && remoteAchRes.data && remoteAchRes.data.length) {
+          var remoteAchs = remoteAchRes.data.map(function (r) { return r.achievement; });
+          achievements = Array.from(new Set(achievements.concat(remoteAchs)));
+          try { localStorage.setItem('nn_achievements', JSON.stringify(achievements)); } catch (e) {}
+        }
+      } catch (achErr) {}
+
       for (var i = 0; i < achievements.length; i++) {
         await sb.from('achievements').upsert(
           { user_id: user.id, achievement: achievements[i], earned_at: new Date().toISOString() },
@@ -348,20 +514,14 @@
         );
       }
 
-      // 3. XP + streak → profiles table
-      var xpData = {}, streakData = {};
-      try { xpData = JSON.parse(localStorage.getItem('nn_xp') || '{"xp":0}'); } catch (e) {}
-      try { streakData = JSON.parse(localStorage.getItem('nn_streak') || '{"count":0}'); } catch (e) {}
-      await sbProfile.update({
-        xp: xpData.xp || 0,
-        streak_days: streakData.count || 0,
-        streak_last: streakData.lastDate || null,
-      });
+      // 4. Bi-directional FSRS pull and sync
+      await sbSRS.pullAll();
+      _syncProgress();
 
-      // 4. learning_dna → profiles.learning_dna
+      // 5. learning_dna → profiles.learning_dna
       await sbProfile.updateLearningDNA(_buildLearningDNA());
 
-      // 5. Course progress → course_progress table
+      // 6. Course progress → course_progress table
       var cp = {};
       try { cp = JSON.parse(localStorage.getItem('nn_course_progress') || '{}'); } catch (e) {}
       for (var trackId in cp) {
@@ -372,7 +532,7 @@
       }
 
       localStorage.setItem('nn_migrated_v1', 'true');
-      console.log('[supabase] Full migration complete');
+      console.log('[supabase] Full migration complete (bi-directional)');
     } catch (e) {
       console.warn('[supabase] Migration incomplete:', e.message);
     }
