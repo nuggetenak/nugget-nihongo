@@ -544,45 +544,47 @@ function renderSection(container, lv, items, title, count, isSubDay = false) {
 }
 
 // ── Progress panel — SRS-powered ──
+function updateHeroDueCount() {
+  const heroCount = document.getElementById('latihanHeroDueCount');
+  if (!heroCount) return;
+  const due = window.srsDueToday ? window.srsDueToday() : [];
+  heroCount.textContent = due.length > 0
+    ? `${due.length} kartu nunggu`
+    : 'Semua beres! 🎉';
+}
+
 function updateProgressPanel() {
   const data     = (window.grammarData || []).filter(Boolean);
   const srs      = window.srsData     || {};
   const panel    = document.getElementById('progressPanel');
-  if (!panel) return;
-
-  const today    = Math.floor(Date.now() / 86400000);
   const realData = data.filter(d => d.cat !== 'dummy');
 
   // Count anything that's been touched
   const seen = realData.filter(d => srs[d.id] && srs[d.id].card && srs[d.id].card.reps > 0);
-  if (!seen.length) { panel.classList.remove('show'); updateQuickReviewCard(); return; }
-  panel.classList.add('show');
 
-  const totalAll = realData.length;
-  const totalSeen = seen.length;
-  document.getElementById('progressPanelTotal').textContent =
-    `${totalSeen} / ${totalAll} dipelajari`;
+  if (panel) {
+    if (!seen.length) {
+      panel.classList.remove('show');
+    } else {
+      panel.classList.add('show');
+      const totalAll = realData.length;
+      const totalSeen = seen.length;
+      const totalEl = document.getElementById('progressPanelTotal');
+      if (totalEl) totalEl.textContent = `${totalSeen} / ${totalAll} dipelajari`;
+    }
+  }
 
   // Due today banner
-  const nowMs = Date.now();
-  const dueAll = realData.filter(d => {
-    const c = srs[d.id];
-    if (!c || !c.card) return true; // unseen = treat as due
-    return new Date(c.card.due).getTime() <= nowMs;
-  });
+  const due = window.srsDueToday ? window.srsDueToday() : [];
   const dueBanner = document.getElementById('progressDueBanner');
   const dueCountEl = document.getElementById('dueCount');
   if (dueBanner && dueCountEl) {
-    dueCountEl.textContent = dueAll.length;
-    dueBanner.style.display = dueAll.length > 0 ? 'flex' : 'none';
+    dueCountEl.textContent = due.length;
+    dueBanner.style.display = due.length > 0 ? 'flex' : 'none';
   }
+
   // Also update Latihan hero due count
-  const heroCount = document.getElementById('latihanHeroDueCount');
-  if (heroCount) {
-    heroCount.textContent = dueAll.length > 0
-      ? dueAll.length + ' kartu nunggu'
-      : 'Semua beres! 🎉';
-  }
+  updateHeroDueCount();
 
   // Per level bars — Mature / Young / Learning / (unseen = empty space)
   levelOrder.forEach(lv => {
@@ -613,20 +615,21 @@ function updateProgressPanel() {
 }
 
 function updateQuickReviewCard() {
-  const today   = Math.floor(Date.now() / 86400000);
   const due     = window.srsDueToday ? window.srsDueToday() : [];
   const card    = document.getElementById('quickReviewCard');
   const divider = document.getElementById('quizDivider');
   const cnt     = document.getElementById('qrDueCount');
-  if (!card) return;
-  if (due.length > 0) {
-    card.style.display = 'flex';
-    if (divider) divider.style.display = 'flex';
-    if (cnt) cnt.textContent = due.length;
-  } else {
-    card.style.display = 'none';
-    if (divider) divider.style.display = 'none';
+  if (card) {
+    if (due.length > 0) {
+      card.style.display = 'flex';
+      if (divider) divider.style.display = 'flex';
+      if (cnt) cnt.textContent = due.length;
+    } else {
+      card.style.display = 'none';
+      if (divider) divider.style.display = 'none';
+    }
   }
+  updateHeroDueCount();
 }
 
 // Expose for app.js
@@ -636,6 +639,7 @@ window.browseInit = function() {
   updateQuickReviewCard();
 };
 window.render = render;
+window.updateHeroDueCount = updateHeroDueCount;
 window.updateProgressPanel = updateProgressPanel;
 window.updateQuickReviewCard = updateQuickReviewCard;
 window.pillLevel = pillLevel;

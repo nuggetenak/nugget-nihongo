@@ -125,15 +125,34 @@ function showQuizCard() {
   const d = quizDeck[quizIdx];
   quizFlipped = false;
   const wrap = document.getElementById('quizCardWrap');
-  wrap.className = `quiz-card-wrap q${d.level}`;
+  const level = (d.level || d.jlpt || 'n5').toLowerCase();
+  wrap.className = `quiz-card-wrap q${level}`;
   wrap.classList.remove('flipped');
-  document.getElementById('qGrammar').textContent = d.grammar;
-  document.getElementById('qReading').textContent = d.reading;
-  document.getElementById('qMeaning').textContent = d.meaning;
-  document.getElementById('qDesc').innerHTML = d.desc;
-  document.getElementById('qExamples').innerHTML = d.examples.slice(0,2).map(e =>
-    `<div class="quiz-ex"><div class="jp">${e.jp}</div><div class="id">${e.id}</div></div>`
-  ).join('');
+
+  const isVocab = d.source === 'vocab' || (d.id && d.id.startsWith('vg-')) || (!d.grammar && !!d.word);
+
+  if (isVocab) {
+    document.getElementById('qGrammar').textContent = d.word || '';
+    document.getElementById('qReading').textContent = d.reading || '';
+    document.getElementById('qMeaning').textContent = d.meaning_id || d.meaning || '';
+    var posBadge = d.pos ? `<span class="quiz-pos-badge" style="font-size:0.8rem;opacity:0.8;font-weight:600;padding:2px 6px;border-radius:4px;background:var(--surface-3);">${d.pos}</span> ` : '';
+    var nuanceHtml = d.nuance ? `<div class="quiz-nuance" style="font-size:0.85rem;margin-top:4px;">${d.nuance}</div>` : '';
+    document.getElementById('qDesc').innerHTML = posBadge + (d.desc || nuanceHtml || '');
+    var exs = d.examples || [];
+    document.getElementById('qExamples').innerHTML = exs.slice(0, 2).map(e =>
+      `<div class="quiz-ex"><div class="jp">${e.jp || ''}</div><div class="id">${e.id || ''}</div></div>`
+    ).join('');
+  } else {
+    document.getElementById('qGrammar').textContent = d.grammar || d.pattern || '';
+    document.getElementById('qReading').textContent = d.reading || '';
+    document.getElementById('qMeaning').textContent = d.meaning || '';
+    document.getElementById('qDesc').innerHTML = d.desc || '';
+    var exs = d.examples || [];
+    document.getElementById('qExamples').innerHTML = exs.slice(0, 2).map(e =>
+      `<div class="quiz-ex"><div class="jp">${e.jp || ''}</div><div class="id">${e.id || ''}</div></div>`
+    ).join('');
+  }
+
   document.getElementById('assessBtns').classList.remove('show');
   updateProgress();
 }
@@ -362,6 +381,7 @@ window.quizPillLevel    = quizPillLevel;
 window.quizSelectWeek   = quizSelectWeek;
 window.quizSelCat       = quizSelCat;
 window.startQuiz        = startQuiz;
+window.showQuizCard     = showQuizCard;
 window.flipQuizCard     = flipQuizCard;
 window.assess           = assess;
 window.confirmEndQuiz   = confirmEndQuiz;

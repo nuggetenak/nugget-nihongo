@@ -118,6 +118,18 @@
     });
   }
 
+  function idbClear(storeName) {
+    return new Promise(function (resolve, reject) {
+      if (!_db) { resolve(); return; }
+      try {
+        var tx  = _db.transaction(storeName, 'readwrite');
+        var req = tx.objectStore(storeName).clear();
+        req.onsuccess = function () { resolve(); };
+        req.onerror   = function () { reject(req.error); };
+      } catch (e) { reject(e); }
+    });
+  }
+
   // ── Public API ────────────────────────────────────────
 
   var localState = {
@@ -189,6 +201,16 @@
     clearSynced: function (queueIds) {
       return idbDeleteMany(STORE_QUEUE, queueIds).catch(function (e) {
         console.warn('[local-state] clearSynced IDB error (non-fatal):', e);
+      });
+    },
+
+    // clearAll: wipe all cards and queues from IndexedDB
+    clearAll: function () {
+      return Promise.all([
+        idbClear(STORE_CARDS),
+        idbClear(STORE_QUEUE)
+      ]).catch(function (e) {
+        console.warn('[local-state] clearAll IDB error (non-fatal):', e);
       });
     },
   };

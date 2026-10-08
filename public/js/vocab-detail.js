@@ -66,7 +66,7 @@ window.openVocabDetail = function (vocabId) {
       <div class="vd-section-title">📝 Contoh Kalimat</div>
       ${v.examples.map(e => `
         <div class="vd-example">
-          <div class="vd-ex-jp">${e.jp}</div>
+          <div class="vd-ex-jp">${window.LexiconEngine ? window.LexiconEngine.renderInteractive(e.jp) : e.jp}</div>
           <div class="vd-ex-id">${e.id}</div>
           ${e.tags && e.tags.length ? `<div class="vd-ex-tags">${e.tags.map(t => `<span class="vd-tag">${t}</span>`).join('')}</div>` : ''}
         </div>`).join('')}
@@ -108,25 +108,63 @@ window.openVocabDetail = function (vocabId) {
 
   // ── Konjugasi hint ───────────────────────────────────
   let conjHTML = '';
-  if (v.conj_type && window.conjugateAll) {
+  if (v.conj_type) {
     try {
-      const forms = window.conjugateAll(v.reading);
-      const labels = {
-        dict: '辞書形', masu: 'ます形', nai: 'ない形',
-        ta: 'た形', te: 'て形', potential: '可能形',
-        passive: '受身形', causative: '使役形',
-        tai: 'たい形', nakute: 'なくて形',
-        nagara: 'ながら形', nasai: 'なさい形',
-      };
-      const rows = Object.entries(forms)
-        .filter(([k]) => labels[k])
-        .map(([k, val]) => `<div class="vd-conj-row"><span class="vd-conj-label">${labels[k]}</span><span class="vd-conj-val">${val}</span></div>`)
-        .join('');
-      if (rows) conjHTML = `
-        <div class="vd-section">
-          <div class="vd-section-title">🔤 Konjugasi</div>
-          <div class="vd-conj-grid">${rows}</div>
-        </div>`;
+      if (window.ConjugationEngine && typeof window.ConjugationEngine.inspectAll === 'function') {
+        const wordToInspect = v.word || v.reading;
+        const inspected = window.ConjugationEngine.inspectAll(wordToInspect, {
+          type: v.conj_type,
+          reading: v.reading
+        });
+        if (inspected && inspected.length > 0) {
+          const cards = inspected.map(item => {
+            const jpLabel = item.formLabelJp || item.form_label_jp || item.formKey;
+            const idLabel = item.formLabelId || item.form_label_id || '';
+            const labelStr = idLabel ? `${jpLabel} · ${idLabel}` : jpLabel;
+            const meaningStr = item.meaning_id ? `<div class="vd-conj-meaning">${item.meaning_id}</div>` : '';
+            const exJp = item.example && (item.example.jp || item.example.ja);
+            const exId = item.example && (item.example.id || item.example.en || '');
+            const exStr = exJp ? `
+              <div class="vd-conj-ex">
+                <span class="vd-conj-ex-ja">${exJp}</span>
+                <span class="vd-conj-ex-id">${exId}</span>
+              </div>` : '';
+            return `
+              <div class="vd-conj-card">
+                <div class="vd-conj-top">
+                  <span class="vd-conj-label">${labelStr}</span>
+                  <span class="vd-conj-val">${item.conjugated}</span>
+                </div>
+                ${meaningStr}
+                ${exStr}
+              </div>`;
+          }).join('');
+
+          conjHTML = `
+            <div class="vd-section">
+              <div class="vd-section-title">🔤 Konjugasi & Contoh Kalimat</div>
+              <div class="vd-conj-grid">${cards}</div>
+            </div>`;
+        }
+      } else if (window.conjugateAll) {
+        const forms = window.conjugateAll(v.reading);
+        const labels = {
+          dict: '辞書形', masu: 'ます形', nai: 'ない形',
+          ta: 'た形', te: 'て形', potential: '可能形',
+          passive: '受身形', causative: '使役形',
+          tai: 'たい形', nakute: 'なくて形',
+          nagara: 'ながら形', nasai: 'なさい形',
+        };
+        const rows = Object.entries(forms)
+          .filter(([k]) => labels[k])
+          .map(([k, val]) => `<div class="vd-conj-row"><span class="vd-conj-label">${labels[k]}</span><span class="vd-conj-val">${val}</span></div>`)
+          .join('');
+        if (rows) conjHTML = `
+          <div class="vd-section">
+            <div class="vd-section-title">🔤 Konjugasi</div>
+            <div class="vd-conj-grid">${rows}</div>
+          </div>`;
+      }
     } catch(e) {}
   }
 

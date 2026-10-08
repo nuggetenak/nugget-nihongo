@@ -12,22 +12,23 @@
   //     AMAN: isi <b>…</b> tidak akan tersentuh regex.
   // ─────────────────────────────────────────────────────────────
   window.buildBreakdownSafe = function (jpHtml) {
-    // Urutkan dari terpanjang ke terpendek supaya "から" tidak
-    // di-match sebelum "か"
+    if (typeof window !== 'undefined' && window.ParticleEngine && typeof window.ParticleEngine.breakdownHtml === 'function') {
+      return window.ParticleEngine.breakdownHtml(jpHtml);
+    }
+
+    // Fallback if ParticleEngine is not loaded
     const particles = [
       'から','まで','ので','のに','けれど','けど','ても','でも',
       'たら','ながら','ては','では','には','へは',
       'は','が','を','に','で','も','と','の','へ','て'
     ];
 
-    // Lindungi <b>…</b> dengan placeholder agar regex tidak masuk
     const saved = [];
-    let out = jpHtml.replace(/<b>([\s\S]*?)<\/b>/g, (_, inner) => {
+    let out = (jpHtml || '').replace(/<b>([\s\S]*?)<\/b>/g, (_, inner) => {
       saved.push(inner);
       return '\x00' + (saved.length - 1) + '\x00';
     });
 
-    // Terapkan highlight hanya di luar <b>
     for (const p of particles) {
       out = out.replace(
         new RegExp(`(${p})`, 'g'),
@@ -35,7 +36,6 @@
       );
     }
 
-    // Kembalikan <b> asli
     out = out.replace(/\x00(\d+)\x00/g, (_, i) => `<b>${saved[+i]}</b>`);
     return out;
   };

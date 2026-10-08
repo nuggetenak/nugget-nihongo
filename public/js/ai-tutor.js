@@ -394,8 +394,8 @@ function _escHtml(str) {
 window.resetAITutorHistory = function () {
   aiHistory = [];
   sessionStorage.removeItem(AI_HISTORY_KEY);
-  const feed = document.getElementById('aiFeed');
-  if (feed) feed.innerHTML = '';
+  const container = document.getElementById('aiChatMessages') || document.getElementById('aiFeed');
+  if (container) container.innerHTML = '';
 };
 
 // ── Tab switch hook (called by app.js switchTab) ──────────────────

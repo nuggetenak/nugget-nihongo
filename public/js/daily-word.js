@@ -33,11 +33,11 @@
         <span class="dw-label">✨ Kata Hari Ini</span>
         ${jlpt ? `<span class="dw-jlpt dw-jlpt-${jlpt}">${jlpt.toUpperCase()}</span>` : ''}
       </div>
-      <div class="dw-word">${w.word || ''}</div>
+      <div class="dw-word" style="cursor:pointer" onclick="if(window.openVocabDetail) openVocabDetail('${w.id}')" title="Ketuk untuk melihat detail kosakata">${w.word || ''}</div>
       ${w.reading ? `<div class="dw-reading">${w.reading}</div>` : ''}
       <div class="dw-meaning">${w.meaning_id || ''}</div>
       ${w.examples && w.examples[0]
-        ? `<div class="dw-ex"><span class="dw-ex-jp">${w.examples[0].jp}</span>
+        ? `<div class="dw-ex"><span class="dw-ex-jp">${window.LexiconEngine ? window.LexiconEngine.renderInteractive(w.examples[0].jp) : w.examples[0].jp}</span>
            <span class="dw-ex-id">${w.examples[0].id}</span></div>`
         : ''}
     `;

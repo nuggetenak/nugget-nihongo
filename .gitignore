@@ -28,9 +28,21 @@ Thumbbs.db
 *.bak
 /tmp/
 pk-nugget-nihongo/
+public-legacy/
 
 # wrangler files
 .wrangler
 .dev.vars*
 !.dev.vars.example
 !.env.example
+
+# ── Data dumps & quality reports ───────────────────────
+data-sources/
+quality-report*.json
+quality.log
+quality.txt
+to_delete.json
+scratch/
+generate.js
+generate_json.py
+

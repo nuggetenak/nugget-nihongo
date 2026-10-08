@@ -36,10 +36,10 @@
       // Pakai buildBreakdownSafe dari quiz-feedback.js (sudah diload lebih dulu)
       const broken  = window.buildBreakdownSafe
         ? window.buildBreakdownSafe(e.jp)
-        : e.jp;
+      const interactiveJp = window.LexiconEngine ? window.LexiconEngine.renderInteractive(e.jp) : e.jp;
       return `
       <div class="detail-example" id="ex-${bdId}">
-        <div class="detail-ex-jp"  id="jp-${bdId}">${e.jp}</div>
+        <div class="detail-ex-jp"  id="jp-${bdId}">${interactiveJp}</div>
         <div class="detail-ex-jp detail-ex-jp--broken"
              id="jp-bd-${bdId}" style="display:none">${broken}</div>
         <div class="detail-ex-id">${e.id}</div>

@@ -65,7 +65,26 @@ function _gsRender(q) {
     )
   ).slice(0, 8);
 
-  if (!vocabHits.length && !grammarHits.length) {
+  // ── Lexicon & De-conjugation Hook ─────────────────────
+  let lexParticleHit = null;
+  if (window.LexiconEngine && typeof window.LexiconEngine.lookup === 'function') {
+    const lex = window.LexiconEngine.lookup(q);
+    if (lex) {
+      if (lex.type === 'inflection' && lex.rawEntry) {
+        if (!vocabHits.some(v => v.id === lex.rawEntry.id)) {
+          vocabHits.unshift(lex.rawEntry);
+        }
+      } else if ((lex.type === 'grammar' || lex.type === 'compound_particle') && lex.rawEntry) {
+        if (!grammarHits.some(g => g.id === lex.rawEntry.id)) {
+          grammarHits.unshift(lex.rawEntry);
+        }
+      } else if (lex.type === 'particle' || lex.type === 'combined_particle') {
+        lexParticleHit = lex;
+      }
+    }
+  }
+
+  if (!vocabHits.length && !grammarHits.length && !lexParticleHit) {
     resultsEl.innerHTML = `
       <div class="gs-empty">
         <div class="gs-empty-icon">🔍</div>
@@ -75,6 +94,19 @@ function _gsRender(q) {
   }
 
   let html = '';
+
+  if (lexParticleHit) {
+    html += `<div class="gs-section-label">🧩 Partikel (助詞)</div>`;
+    html += `
+      <button class="gs-item gs-item-grammar" onclick="gsClose(); if(window.LexiconUI) window.LexiconUI.open('${_esc(lexParticleHit.surface)}');">
+        <div class="gs-item-main">
+          <span class="gs-word">${_esc(lexParticleHit.surface)}</span>
+          <span class="gs-reading">${_esc(lexParticleHit.reading || '')}</span>
+          <span class="gs-jlpt-dot gs-jlpt-${(lexParticleHit.badgeLevel||'N5').toLowerCase()}">${_esc(lexParticleHit.badgeLevel||'N5')}</span>
+        </div>
+        <div class="gs-item-sub">${_esc(lexParticleHit.meaning_id || lexParticleHit.function_title || '')}</div>
+      </button>`;
+  }
 
   if (vocabHits.length) {
     html += `<div class="gs-section-label">📚 Kosakata (${vocabHits.length})</div>`;
