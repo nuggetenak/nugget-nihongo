@@ -51,6 +51,14 @@ const BADGE_TEMPLATES: Omit<BadgeItem, 'earned' | 'earnedAt'>[] = [
   { id: 'garden-bloom', name: 'Kebun Semerbak',   desc: 'Mekarkan bunga kanji pertama di kebun', icon: '🌸', category: 'special' },
 ];
 
+export const STREAK_TIPS = [
+  "Jangan nyerah! Satu hari absen bukan akhir segalanya. 始めましょう！",
+  "Streak putus = kesempatan baru mulai lebih kuat. がんばれ！",
+  "Otak butuh istirahat juga — yang penting balik lagi hari ini!",
+  "Konsistensi bukan tentang sempurna, tapi tentang balik lagi. 頑張って！",
+  "Anki pun bilang: review hari ini lebih baik dari tidak sama sekali!"
+];
+
 export interface HeatmapDay {
   date: string;
   reviews: number;
@@ -61,6 +69,10 @@ export interface HeatmapDay {
 export interface GamificationState {
   badges: BadgeItem[];
   heatmap: Record<string, { reviews: number; xp: number }>;
+  isStreakBrokenModalOpen: boolean;
+  streakBrokenTip: string;
+  openStreakBrokenModal: (customTip?: string) => void;
+  closeStreakBrokenModal: () => void;
   recordActivity: (reviewsCount?: number, xpEarned?: number) => void;
   getHeatmapDays: (daysCount?: number) => HeatmapDay[];
   checkAndAwardBadges: (context: { vocabCount?: number; grammarCount?: number; streak?: number }) => BadgeItem[];
@@ -101,6 +113,16 @@ export const useGamificationStore = create<GamificationState>((set, get) => {
   return {
     badges: initialBadges,
     heatmap: loadHeatmap(),
+    isStreakBrokenModalOpen: false,
+    streakBrokenTip: STREAK_TIPS[0],
+
+    openStreakBrokenModal: (customTip?: string) =>
+      set({
+        isStreakBrokenModalOpen: true,
+        streakBrokenTip: customTip || STREAK_TIPS[Math.floor(Math.random() * STREAK_TIPS.length)],
+      }),
+
+    closeStreakBrokenModal: () => set({ isStreakBrokenModalOpen: false }),
 
     recordActivity: (reviewsCount = 1, xpEarned = 10) => {
       const today = new Date().toISOString().slice(0, 10);

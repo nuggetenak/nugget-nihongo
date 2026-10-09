@@ -7,6 +7,7 @@ import { Toast } from './components/ui/Toast';
 import { SearchPalette } from './components/ui/SearchPalette';
 import { DetailModal } from './components/ui/DetailModal';
 import { InstallModal } from './components/ui/InstallModal';
+import { StreakBrokenModal } from './components/gamification/StreakBrokenModal';
 import { usePwaStore } from './lib/pwa/pwaStore';
 import { NormalizedVocab, NormalizedGrammar } from './lib/data/dataManager';
 
@@ -118,6 +119,9 @@ export const App: React.FC = () => {
 
       {/* PWA Add to Home Screen Modal */}
       <InstallModal />
+
+      {/* Streak Broken Motivational Modal */}
+      <StreakBrokenModal />
     </div>
   );
 };
