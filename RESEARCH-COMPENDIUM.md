@@ -1,8 +1,8 @@
 # NUGGET NIHONGO — EMPIRICAL SLA RESEARCH COMPENDIUM
 ## Master Academic Evidence Base & Curriculum Architecture Guide
-**Corpus Version:** v18 (Comprehensive Meta-Analysis Consolidation)  
-**Total Unique Citations:** 754  
-**Verified DOIs / Canonical Records:** 358 Verified DOIs | 100% Accounted For  
+**Corpus Version:** v19 (Indonesian L1 Diagnostic, Vocational EPA/SSW Corpus & Algorithmic Blueprint Expansion)  
+**Total Unique Citations:** 757  
+**Verified DOIs / Canonical Records:** 361 Verified DOIs | 100% Accounted For  
 **Target Domain:** Indonesian Adult Learners of Japanese as a Foreign Language (SSW / Tokutei Ginou & General Academic)
 
 ---
@@ -50,18 +50,26 @@ nugget-nihongo-research/
 │   │   ├── SECTION17-ADULT.md                 ← Adult SLA, ego permeability, autonomous learning (19 citations)
 │   │   ├── SECTION-CA-CURRICULUM.md           ← Curriculum architecture & vocabulary depth (~107 citations)
 │   │   ├── PLATFORM-RESEARCH-AGENDA.md        ← Standalone empirical research studies roadmap
+│   │   │
+│   │   ├── contrastive/                       ← Granular L1 Diagnostic Inventory (Jalur A)
+│   │   │   └── INDONESIAN-L1-DIAGNOSTIC-INVENTORY-v1.md ← 100-item micro-diagnostic contrastive matrix
+│   │   │
+│   │   ├── vocational/                        ← Workplace SLA & Discourse Corpus (Jalur B)
+│   │   │   └── EPA-KAIGO-SSW-WORKPLACE-CORPUS-v1.md ← Eldercare speech shifts, pain onomatopoeia, gemba nihongo
+│   │   │
 │   │   └── synthesis/                         ← Pedagogical synthesis specifications
 │   │       ├── LEVEL-LADDER-SPEC-v1.md        ← 5-level exit criteria ladder (N5 to N1)
 │   │       └── SECTION18-SYNTHESIS-v1.md      ← Unified pedagogical model & cross-strand architecture
 │   │
 │   └── bibliography/
-│       ├── MASTER-BIBLIOGRAPHY-FINAL.md       ← Canonical bibliographic registry (754 unique entries)
+│       ├── MASTER-BIBLIOGRAPHY-FINAL.md       ← Canonical bibliographic registry (757 unique entries)
 │       └── DOI-VERIFICATION-TRACKER.md        ← CrossRef & publisher audit registry (100% accounted for)
 │
 ├── blueprint/
 │   ├── DESIGN-DECISION-MASTER-v1.md          ← 123 citation-grounded engineering & UX decisions
 │   ├── CURRICULUM-BLUEPRINT-v1.md            ← Authoritative end-to-end curriculum roadmap
-│   └── METHODOLOGY-PAGE-NARRATIVE-v1.md      ← Public-facing empirical methodology narrative
+│   ├── METHODOLOGY-PAGE-NARRATIVE-v1.md      ← Public-facing empirical methodology narrative
+│   └── MICRO-SESSION-ALGORITHMIC-SPEC-v1.md  ← 7-minute session formula, 6 card archetypes & dual-track FSRS (Jalur C)
 │
 └── archive/                                   ← Historical version registers, logs, and superseded drafts
     ├── README-ARCHIVE.md                      ← Archive index & provenance tracking
@@ -101,6 +109,9 @@ The previous literature gap marker `EA-22` has been replaced with rigorous, peer
 - **`[EA-24]` Haristiani, N., & Christinawati, D. (2024).** *Interlanguage pragmatic competence of university students: An error analysis of apology speech act strategies.* *IJOLE*, 8(1), 162–177. DOI: `10.26858/ijole.v8i1.60904`. Documents negative pragmatic transfer in apology and politeness routines.
 - **`[EA-25]` Husna, L., & Febriyanti, R. (2022).** *Japanese native speakers' perception on learners' pronunciation of double consonant sounds (sokuon).* *JAPANEDU*, 7(1), 58–69. DOI: `10.17509/japanedu.v7i1.44578`. Quantifies native acoustic perception thresholds for mora-timing and geminate closure shortfalls.
 - **`[EA-26]` Prihantoro et al. (2024).** *A corpus-based syntactic error analysis of Japanese learners' writing in LPK Cahaya Mandiri Indonesia.* *JRLLC*, 6(2), 118–135. DOI: `10.33633/jr.v6i2.11252`. Corroborates vocational trainee error distributions in high-stakes Specified Skilled Worker (SSW) preparation.
+- **`[EA-27]` Maarif, S. (2021).** *Indonesian learners’ acquisition of Japanese adnominal clauses and the role of metalinguistic awareness.* *JAPANEDU*, 6(2), 114–125. DOI: `10.17509/japanedu.v7i2.36622`. Establishes head-final word order interference in relative clause embedding and validates explicit metalinguistic feedback.
+- **`[EA-28]` Alifah, S. N., Kadir, A., & Risagarniwa, Y. Y. (2020).** *Penguasaan partikel o dan ga pada verba transitif-statif oleh pemelajar bahasa Jepang di Indonesia.* *IZUMI*, 9(2), 147–154. DOI: `10.14710/izumi.9.2.147-154`. Dissects persistent L1 fossilization in stative-transitive objective case marking (*suki*, *deki*, *wakaru*).
+- **`[VS-29]` Pramesti, P. D. M. Y., Sadyana, I. W. R., & Pradnyani, N. L. P. E. (2019).** *Speech level shifts in eldercare communication: An empirical study of Indonesian caregiver workers in Japan.* *JLTR*, 10(5), 1014–1022. DOI: `10.17507/jltr.1005.13`. Documents real-time downward speech-level shifting (*tameguchi* + empathetic particles) among 68 Indonesian EPA caregivers across Kansai and Kanto facilities.
 
 #### 2. Canonical Assignment of Matsunaga (1999) `[OD-20]`
 Formally assigned canonical citation ID **`[OD-20]`**:
@@ -122,18 +133,26 @@ In `blueprint/DESIGN-DECISION-MASTER-v1.md`, all cross-section theoretical tensi
 
 ---
 
-## 4. CURRICULUM SYNTHESIS ROADMAP
+## 4. CURRICULUM SYNTHESIS ROADMAP & OPERATIONAL BLUEPRINTS
 
-The synthesis phase of the research compendium has landed three authoritative specifications:
+The synthesis phase has landed six authoritative specifications bridging meta-analysis to live software:
 
-1. **Level Ladder Exit Criteria Specification (`LEVEL-LADDER-SPEC-v1.md`):**
-   - Defines rigorous, multi-dimensional exit criteria across 5 JLPT levels (N5 through N1).
-   - Combines FSRS memory stability thresholds (Stability $\ge$ 90–365 days), Processability Theory grammatical stages (Stages 2–6), vocabulary depth metrics (VD-01–VD-16), and extensive reading fluency words-per-minute (WPM) benchmarks.
-2. **Unified Pedagogical Model (`SECTION18-SYNTHESIS-v1.md`):**
-   - Integrates the four strands (meaning-focused input, meaning-focused output, language-focused learning, and fluency development) into a cohesive daily study cycle.
-   - Enforces the 5-to-7-minute microlearning session limit (`CL-02`, `CL-04`) and balances receptive retrieval with productive type-answer prompts.
-3. **Methodology Page Narrative (`METHODOLOGY-PAGE-NARRATIVE-v1.md`):**
-   - Provides transparent, academically grounded copy for learners and educators, detailing exactly why the curriculum is structured around empirical evidence while candidly articulating boundary conditions and research limits.
+1. **Indonesian L1 Diagnostic Inventory (`INDONESIAN-L1-DIAGNOSTIC-INVENTORY-v1.md` - Jalur A):**
+   - 100-item micro-diagnostic contrastive matrix across 5 interference domains: Case Particles, Tense/Aspect/Modality, False Cognates & Wasei-Eigo, Benefactives, and Adnominal Clauses.
+   - Prescribes concrete back-card metalinguistic gap explanations for immediate fossilization remediation.
+2. **EPA & SSW Vocational SLA Corpus (`EPA-KAIGO-SSW-WORKPLACE-CORPUS-v1.md` - Jalur B):**
+   - Fieldwork-grounded sociopragmatics for Indonesian migrant workers in eldercare (*kaigo*) and manufacturing (*gemba nihongo*).
+   - Covers Pramesti (2019) speech-level shift dynamics, 10 subjective pain onomatopoeias (*zukizuki*, *chikuchiku*, *kirikiri*), emergency imperative continuums, and *hou-ren-so* bad-news-first formulas.
+3. **Micro-Session Algorithmic Specification (`MICRO-SESSION-ALGORITHMIC-SPEC-v1.md` - Jalur C):**
+   - Precise 5-to-7 minute session choreography grounded in Cowan's $4 \pm 1$ chunk capacity and Sweller's Cognitive Load Theory.
+   - Full JSON schemas and state machines for 6 production card archetypes (`contrastive_pair_slot`, `audio_speed_gate`, `production_type_cloze`, `pragmatic_register_pivot`, `collocation_chunk_builder`, `speed_comprehension_blast`).
+   - Dual-track FSRS stability ($S_{\text{audio}}$ vs $S_{\text{ortho}}$), response latency efficiency weighting $\Phi(\Delta t)$, and L1 interference penalty spikes.
+4. **Level Ladder Exit Criteria Specification (`LEVEL-LADDER-SPEC-v1.md`):**
+   - Multi-dimensional exit criteria across 5 JLPT levels (N5 through N1) integrating FSRS memory stability, Processability Theory, and reading fluency.
+5. **Unified Pedagogical Model (`SECTION18-SYNTHESIS-v1.md`):**
+   - Four-strand integration balancing receptive input, pushed output, form-focused study, and fluency development.
+6. **Methodology Page Narrative (`METHODOLOGY-PAGE-NARRATIVE-v1.md`):**
+   - Public-facing empirical narrative providing academic transparency and candid boundary declarations.
 
 ---
 

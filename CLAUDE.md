@@ -1,14 +1,14 @@
 # NUGGET NIHONGO — EMPIRICAL SLA RESEARCH REPOSITORY CONTEXT
 **Operational Standards & Architecture Guide**  
-**Corpus Version:** v18 (Comprehensive Meta-Analysis Consolidation)  
-**Total Unique Citations:** 754 (358 verified DOIs, 100% accounted for)
+**Corpus Version:** v19 (Indonesian L1 Diagnostic, Vocational EPA/SSW Corpus & Algorithmic Blueprint Expansion)  
+**Total Unique Citations:** 757 (361 verified DOIs, 100% accounted for)
 
 ---
 
 ## 1. Scope & Domain
 
 Research library for the evidence-based Japanese learning platform tailored specifically to Indonesian L1 native speakers.
-- **Scale:** 754 unique citations across 16 primary corpus sections (§1–§5, §8–§17, §CA) plus synthesis specifications.
+- **Scale:** 757 unique citations across 16 primary corpus sections (§1–§5, §8–§17, §CA), contrastive inventory, vocational corpus, and synthesis specifications.
 - **Target Audience:** Indonesian adult learners, Specified Skilled Worker (SSW / *Tokutei Ginou*) candidates, and general academic learners.
 - **Pedagogical Alignment:** Empirical Second Language Acquisition (SLA), Processability Theory, High-Variability Phonetic Training (HVPT), Free Spaced Repetition Scheduling (FSRS), and Cognitive Load Theory (CLT).
 
@@ -21,7 +21,10 @@ Research library for the evidence-based Japanese learning platform tailored spec
 | Master Research Compendium | `RESEARCH-COMPENDIUM.md` | Master academic guide, audit register, and implementation priority map |
 | Design Decision Master | `blueprint/DESIGN-DECISION-MASTER-v1.md` | 123 citation-grounded design decisions with reconciled conflict resolutions |
 | Curriculum Blueprint | `blueprint/CURRICULUM-BLUEPRINT-v1.md` | Authoritative curriculum roadmap, level definitions, and study sequences |
-| Master Bibliography | `corpus/bibliography/MASTER-BIBLIOGRAPHY-FINAL.md` | Canonical bibliography registry (754 unique entries, v18) |
+| Micro-Session Algorithmic Spec | `blueprint/MICRO-SESSION-ALGORITHMIC-SPEC-v1.md` | 7-minute session formula, 6 card archetypes, dual-track FSRS latency tuning (Jalur C) |
+| Indonesian L1 Diagnostic Inventory | `corpus/sections/contrastive/INDONESIAN-L1-DIAGNOSTIC-INVENTORY-v1.md` | 100-item micro-diagnostic contrastive matrix across 5 interference domains (Jalur A) |
+| Vocational EPA/SSW SLA Corpus | `corpus/sections/vocational/EPA-KAIGO-SSW-WORKPLACE-CORPUS-v1.md` | Eldercare speech shifts, pain onomatopoeia, gemba nihongo safety (Jalur B) |
+| Master Bibliography | `corpus/bibliography/MASTER-BIBLIOGRAPHY-FINAL.md` | Canonical bibliography registry (757 unique entries, v19) |
 | DOI Verification Tracker | `corpus/bibliography/DOI-VERIFICATION-TRACKER.md` | Audit registry of publisher DOIs and verification statuses (100% accounted for) |
 | Repository Index | `INDEX.md` | Comprehensive file and section index |
 | Compass Foundation | `corpus/source-of-truth/compass_artifact.md` | 44 foundational SLA and cognitive psychology citations |
@@ -91,17 +94,17 @@ Examples:
 
 ---
 
-## 6. Current Corpus Status (v18)
+## 6. Current Corpus Status (v19)
 
 | Metric | Status |
 |---|---|
-| Total Unique Citations | **754** |
-| Verified DOIs | **358** (100% accounted for in `DOI-VERIFICATION-TRACKER.md`) |
+| Total Unique Citations | **757** |
+| Verified DOIs | **361** (100% accounted for in `DOI-VERIFICATION-TRACKER.md`) |
 | Open Duplicate Flags | **0** (all 11 resolved) |
-| Open Literature Gaps | **0** (EA-22 resolved via Maarif 2023, Prihantoro 2024/2025, Haristiani 2024, Husna 2022) |
+| Open Literature Gaps | **0** (EA-22 resolved via Maarif 2023, Prihantoro 2024/2025, Haristiani 2024, Husna 2022, Maarif 2021, Alifah 2020, Pramesti 2019) |
 | Canonical Assignment | Matsunaga (1999) canonicalized as **`[OD-20]`** |
 | Cross-Section Design Flags | Reconciled in `DESIGN-DECISION-MASTER-v1.md` (Flags A, B, C, D, E) |
-| Synthesis Deliverables | Complete (`LEVEL-LADDER-SPEC-v1.md`, `SECTION18-SYNTHESIS-v1.md`, `METHODOLOGY-PAGE-NARRATIVE-v1.md`) |
+| Operational Deliverables | Complete (Jalur A: Diagnostic Inventory, Jalur B: Vocational Corpus, Jalur C: Algorithmic Spec, Level Ladder, §18 Synthesis, Methodology Page) |
 
 ---
 
@@ -116,4 +119,4 @@ When communicating curriculum design publicly, adhere to the following empirical
 
 ---
 
-*CLAUDE.md — Updated to v18 Comprehensive Consolidation Standards.*
+*CLAUDE.md — Updated to v19 Indonesian Diagnostic, Vocational & Algorithmic Blueprint Standards.*

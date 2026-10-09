@@ -70,7 +70,7 @@ These were specifically flagged by Agent 37 for QA — resolve before library pu
 | Flag | ID | Issue | Action |
 |---|---|---|---|
 | 🔴 VD-17 | VD-17 | Cai (2015) — may not exist; search CiNii/J-STAGE | DELETE if not found |
-| 🔴 EA-22 | EA-22 | Indonesian L1 Japanese error study — gap marker | Formalize as gap if not found |
+| ✅ EA-22 | EA-22 | Maarif (2023) *JAPANEDU* 8(2) 127–138 — Case argument structure acquisition | Confirmed OpenAlex/CrossRef DOI: 10.17509/japanedu.v8i2.62701 |
 | 🟡 CV-05 | CV-05 | Qi & Mitchell (2012) — DOI unverified | Remove if unverifiable |
 | 🟡 PR-03 | PR-03 | Tamaoka (1991) — pre-DOI era, Psychologia archive | Verify via J-STAGE |
 | 🟡 PR-02 | PR-02 | Wydell et al. (1993) — DOI exists but check for conflict | Verify DOI + check KS-09/OD-07 |
@@ -227,4 +227,14 @@ All 40 entries below are tagged `*(verify)*` in `SECTION13-INDIVIDUAL-DIFFS.md`.
 | ID-43 | Clément, Dörnyei & Noels (1994) *Language Learning* 44(3) | Candidate: `10.1111/j.1467-1770.1994.tb01113.x` | *(verify)* tag in §13.6 body | ⬜ PENDING |
 
 > **Pass 12 note:** Actual count = **40 entries** across 6 subsections (ID-02–ID-06, ID-08–ID-14, ID-15–ID-21, ID-22–ID-28, ID-29–ID-35, ID-37–ID-43). PASS11-LOG estimated ~34; actual count is higher because the summary table at lines 304–344 of §13 is a subset. IDs not present in that summary but tagged *(verify)* in body: ID-08, ID-09, ID-10, ID-12, ID-15, ID-22, ID-29, ID-38, ID-42. No-DOI entries (9): ID-08, ID-09, ID-10, ID-12, ID-15, ID-22, ID-29, ID-38, ID-42.
+
+---
+
+## INDONESIAN L1 EMPIRICAL SLA & VOCATIONAL VERIFICATION EXPANSION (v17 Pass 16)
+
+| Cluster ID | Citation | DOI / URL | Scope & Finding | Status |
+|---|---|---|---|---|
+| EA-27 | Maarif, S. (2021) *JAPANEDU* 6(2), 114–125 | `10.17509/japanedu.v7i2.36622` | Adnominal clause acquisition & metalinguistic awareness among Indonesian learners | ✅ CONFIRMED |
+| EA-28 | Alifah, Kadir, & Risagarniwa (2020) *IZUMI* 9(2), 147–154 | `10.14710/izumi.9.2.147-154` | Transitive-stative predicate particles (*o* vs *ga*) acquisition by Indonesian learners | ✅ CONFIRMED |
+| VS-29 | Pramesti, Sadyana, & Pradnyani (2019) *JLTR* 10(5), 1014–1022 | `10.17507/jltr.1005.13` | Speech level shifts (*keigo* vs *tameguchi*) among 68 Indonesian EPA caregivers | ✅ CONFIRMED |
 

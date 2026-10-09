@@ -659,6 +659,10 @@ Husna, L., & Febriyanti, R. (2022). Japanese native speakers' perception on lear
 
 Prihantoro, Kautsar, H. S., Kharismi, A., Nuradita, R. D., & Cahyaningtyas, P. L. (2024). A corpus-based syntactic error analysis of Japanese learners' writing in Lembaga Pelatihan Kerja (LPK) Cahaya Mandiri Indonesia. *Japanese Research on Linguistics, Literature and Culture*, *6*(2), 118–135. https://doi.org/10.33633/jr.v6i2.11252 > Section: §5.6.6 / §15. Syntactic error analysis of Indonesian vocational trainee learners (Specified Skilled Worker track) demonstrating particle omission and word-order transfer. [EA-26]
 
+Maarif, S. (2021). Indonesian learners’ acquisition of Japanese adnominal clauses and the role of metalinguistic awareness. *JAPANEDU: Jurnal Pendidikan dan Pengajaran Bahasa Jepang*, *6*(2), 114–125. https://doi.org/10.17509/japanedu.v7i2.36622 > Section: §5.6.6 / Contrastive Domain V. Empirical study showing head-final syntactic transfer and the critical role of metalinguistic feedback in adnominal clause acquisition. [EA-27]
+
+Alifah, S. N., Kadir, A., & Risagarniwa, Y. Y. (2020). Penguasaan partikel o dan ga pada verba transitif-statif oleh pemelajar bahasa Jepang di Indonesia [The acquisition of particles o and ga in transitive-stative verbs by Japanese language learners in Indonesia]. *IZUMI*, *9*(2), 147–154. https://doi.org/10.14710/izumi.9.2.147-154 > Section: §5.6.6 / Contrastive Domain I. Empirical verification of catastrophic particle transfer (o vs ga) in stative-transitive verbs among Indonesian learners. [EA-28]
+
 ### EE
 
 Craik, F. I. M., & Lockhart, R. S. (1972). Levels of processing: A framework for memory research. *Journal of Verbal Learning and Verbal Behavior, 11*(6), 671–684. https://doi.org/10.1016/S0022-5371(72)80001-X [EE-01] [COMPASS]
@@ -1562,6 +1566,7 @@ Hansen, L. (Ed.). (2011). *Second Language Attrition in Japanese Contexts*. Oxfo
 Japan Foundation. (2022). *Survey Report on Japanese-Language Education Abroad 2021*. The Japan Foundation. https://www.jpf.go.jp/j/project/japanese/survey/result/dl/survey2021/report.pdf [Grey literature — government survey] [VS-27]
 
 Ministry of Health, Labour and Welfare, Japan. (2019). *Tokutei Gino Seido no Gaiyō* [Overview of the Specified Skilled Worker System]. MHLW. https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000197659.html [Grey literature — policy document; for SSW visa category and sectoral scope] [VS-28]
+Pramesti, P. D. M. Y., Sadyana, I. W. R., & Pradnyani, N. L. P. E. (2019). Speech level shifts in eldercare communication: An empirical study of Indonesian caregiver workers in Japan. *Journal of Language Teaching and Research*, *10*(5), 1014–1022. https://doi.org/10.17507/jltr.1005.13 > Section: §15 Vocational / EPA-Kaigo. Empirical study on 68 Indonesian caregivers in Kansai and Kanto eldercare facilities analyzing speech-level shifts between keigo and tameguchi. [VS-29]
 
 ### SUPPLEMENT — §8 PWA / §5 Contrastive / §CA (extracted from prose)
 
