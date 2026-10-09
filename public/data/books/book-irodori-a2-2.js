@@ -374,5 +374,3 @@ window.bookIrodoriA22 = {
     },
   },
 };
-
-window.bookIrodoriA2_2 = window.bookIrodoriA22;

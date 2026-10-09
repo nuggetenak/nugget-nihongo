@@ -1,6 +1,6 @@
 {
   "name": "nugget-nihongo",
-  "version": "15.17.0",
+  "version": "15.16.0",
   "description": "Hybrid PWA for learning Japanese — JLPT N5 to N1, targeting Indonesian speakers",
   "private": true,
   "license": "MIT",
@@ -10,22 +10,12 @@
     "url": "https://github.com/nuggetenak/nugget-nihongo.git"
   },
   "homepage": "https://nuggetenak.github.io/nugget-nihongo/",
-  "keywords": [
-    "jlpt",
-    "japanese",
-    "language-learning",
-    "pwa",
-    "vanilla-js",
-    "supabase",
-    "cloudflare"
-  ],
+  "keywords": ["jlpt", "japanese", "language-learning", "pwa", "vanilla-js", "supabase", "cloudflare"],
   "engines": {
     "node": ">=22"
   },
   "scripts": {
-    "build": "node scripts/merge-vocab.js && node scripts/merge-grammar.js",
-    "test": "node tests/run.js && node tests/test-runtime.js",
-    "test:runtime": "node tests/test-runtime.js",
+    "test": "node tests/run.js",
     "validate": "node tests/run.js",
     "start": "npx http-server public -p 3000 -c-1",
     "serve": "npx http-server public -p 3000 -c-1 --push-state",
@@ -35,7 +25,6 @@
     "preview": "wrangler pages dev public"
   },
   "devDependencies": {
-    "postgres": "^3.4.9",
     "wrangler": "^4.81.0"
   }
 }

@@ -73,8 +73,8 @@ function buildBookIndex() {
     window.bookMinna1,
     window.bookMinna2,
     window.bookIrodoriA1,
-    window.bookIrodoriA2_1 || window.bookIrodoriA21,
-    window.bookIrodoriA2_2 || window.bookIrodoriA22,
+    window.bookIrodoriA2_1,
+    window.bookIrodoriA2_2,
   ].filter(Boolean);
 
   for (const book of books) {

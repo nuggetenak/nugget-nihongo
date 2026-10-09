@@ -1,17 +1,14 @@
-name: Deploy → Cloudflare Pages & GitHub Pages
+name: Deploy → Cloudflare Pages
 
 on:
   push:
     branches: [main]      # production deploy: hanya dari main
   workflow_dispatch:       # manual trigger
 
-permissions:
-  contents: write
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    name: Deploy to Cloudflare Pages & GitHub Pages
+    name: Deploy to nugget-nihongo.pages.dev
 
     steps:
       - name: Checkout
@@ -25,22 +22,20 @@ jobs:
       - name: Install Wrangler
         run: npm install -g wrangler
 
+      - name: Merge vocab category files
+        run: node scripts/merge-vocab.js
+
+      - name: Merge grammar category files
+        run: node scripts/merge-grammar.js
+
       - name: Validate merged output
-        run: echo "Skipping legacy JS tests for Next.js overhaul"
+        run: node tests/run.js
 
       - name: Deploy to Cloudflare Pages
-        continue-on-error: true
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: wrangler pages deploy public --project-name=nugget-nihongo --branch=main
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          keep_files: false
-
       - name: Confirm live URL
-        run: echo "✅ Live deployments complete!"
+        run: echo "✅ Live at https://nugget-nihongo.pages.dev"
