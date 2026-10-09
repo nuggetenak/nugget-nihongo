@@ -33,7 +33,7 @@ export const HeatmapCalendar: React.FC<HeatmapCalendarProps> = ({ days = 49 }) =
       </div>
 
       {/* Grid of days (7 rows x 7 cols) */}
-      <div className="grid grid-flow-col grid-rows-7 gap-1.5 sm:gap-2 overflow-x-auto pb-1 max-w-full justify-between sm:justify-start">
+      <div className="grid grid-flow-col grid-rows-7 gap-1.5 sm:gap-2 overflow-x-auto pb-1 max-w-full justify-between sm:justify-start scrollbar-none">
         {heatmapDays.map((d) => (
           <div
             key={d.date}

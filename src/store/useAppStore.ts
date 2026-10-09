@@ -33,6 +33,10 @@ export interface AppState {
   setShowFurigana: (show: boolean) => void;
   showRomaji: boolean;
   setShowRomaji: (show: boolean) => void;
+  soundEffects: boolean;
+  setSoundEffects: (enabled: boolean) => void;
+  speechRate: number;
+  setSpeechRate: (rate: number) => void;
 
   // Toast System
   toast: ToastMessage | null;
@@ -131,6 +135,22 @@ export const useAppStore = create<AppState>((set, get) => ({
     set({ showRomaji });
     if (typeof window !== 'undefined') {
       try { localStorage.setItem('nn_romaji', showRomaji ? '1' : '0'); } catch {}
+    }
+  },
+
+  soundEffects: typeof window !== 'undefined' ? localStorage.getItem('nn_sound_effects') !== '0' : true,
+  setSoundEffects: (soundEffects) => {
+    set({ soundEffects });
+    if (typeof window !== 'undefined') {
+      try { localStorage.setItem('nn_sound_effects', soundEffects ? '1' : '0'); } catch {}
+    }
+  },
+
+  speechRate: typeof window !== 'undefined' ? (parseFloat(localStorage.getItem('nn_speech_rate') || '0.9') || 0.9) : 0.9,
+  setSpeechRate: (speechRate) => {
+    set({ speechRate });
+    if (typeof window !== 'undefined') {
+      try { localStorage.setItem('nn_speech_rate', speechRate.toString()); } catch {}
     }
   },
 

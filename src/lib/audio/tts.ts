@@ -24,7 +24,7 @@ if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
 /**
  * Pronounce Japanese text
  */
-export function speakJapanese(text: string, rate: number = 0.9): void {
+export function speakJapanese(text: string, customRate?: number): void {
   if (typeof window === 'undefined' || !('speechSynthesis' in window)) {
     console.warn('[tts] Web Speech API not supported on this device.');
     return;
@@ -37,9 +37,19 @@ export function speakJapanese(text: string, rate: number = 0.9): void {
   const cleanText = text.replace(/<[^>]*>/g, '').trim();
   if (!cleanText) return;
 
+  let effectiveRate = customRate;
+  if (!effectiveRate) {
+    try {
+      const stored = localStorage.getItem('nn_speech_rate');
+      effectiveRate = stored ? parseFloat(stored) : 0.9;
+    } catch {
+      effectiveRate = 0.9;
+    }
+  }
+
   const utterance = new SpeechSynthesisUtterance(cleanText);
   utterance.lang = 'ja-JP';
-  utterance.rate = rate; // slightly slower for better pedagogical clarity
+  utterance.rate = effectiveRate; // default 0.9 for pedagogical clarity
   utterance.pitch = 1.0;
 
   const voice = getJaVoice();

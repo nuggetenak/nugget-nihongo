@@ -1,14 +1,18 @@
 import React, { useState } from 'react';
-import { Moon, Sun, Type, Download, Upload, Trash2, CheckCircle2, Smartphone, Cloud, CloudOff, RefreshCw, UserCheck, LogOut, LogIn } from 'lucide-react';
+import { Moon, Sun, Type, Download, Upload, Trash2, CheckCircle2, Smartphone, Cloud, CloudOff, RefreshCw, UserCheck, LogOut, LogIn, Volume2, VolumeX, Sparkles } from 'lucide-react';
 import { useAppStore } from '../store/useAppStore';
 import { usePwaStore } from '../lib/pwa/pwaStore';
 import { useAuthStore } from '../lib/supabase/authStore';
+import { speakJapanese } from '../lib/audio/tts';
+import { playSuccessSfx } from '../lib/audio/sfx';
 
 export const SettingsPage: React.FC = () => {
   const {
     theme, toggleTheme,
     showFurigana, setShowFurigana,
     showRomaji, setShowRomaji,
+    soundEffects, setSoundEffects,
+    speechRate, setSpeechRate,
     showToast, resetAllData
   } = useAppStore();
 
@@ -150,6 +154,91 @@ export const SettingsPage: React.FC = () => {
           >
             {theme === 'dark' ? <Moon className="w-3.5 h-3.5 text-amber-400" /> : <Sun className="w-3.5 h-3.5 text-amber-400" />}
             <span className="capitalize">{theme}</span>
+          </button>
+        </div>
+      </div>
+
+      {/* Audio & Sound Effects Settings */}
+      <div className="bg-surface border border-accent/20 rounded-2xl p-6 space-y-5">
+        <h2 className="font-bold text-sm text-appText-bright flex items-center gap-2 border-b border-accent/15 pb-3">
+          <Volume2 className="w-4 h-4 text-accent" />
+          <span>Audio & Efek Suara</span>
+        </h2>
+
+        {/* Sound Effects Toggle */}
+        <div className="flex items-center justify-between">
+          <div>
+            <div className="text-sm font-semibold text-appText-bright">Efek Suara Interaksi (SFX)</div>
+            <div className="text-xs text-appText-muted">Suara chime jawaban benar, balik kartu, dan tetesan air kebun</div>
+          </div>
+          <button
+            type="button"
+            role="switch"
+            aria-checked={soundEffects}
+            onClick={() => {
+              const next = !soundEffects;
+              setSoundEffects(next);
+              if (next) playSuccessSfx();
+              showToast(next ? 'Efek suara aktif' : 'Efek suara dibisukan', next ? '🔔' : '🔕');
+            }}
+            className={`w-11 h-6 flex items-center rounded-full p-1 transition-colors ${
+              soundEffects ? 'bg-amber-500' : 'bg-surface-3'
+            }`}
+          >
+            <div
+              className={`bg-white w-4 h-4 rounded-full shadow-md transform transition-transform ${
+                soundEffects ? 'translate-x-5' : 'translate-x-0'
+              }`}
+            />
+          </button>
+        </div>
+
+        {/* Speech Rate Selection */}
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div>
+            <div className="text-sm font-semibold text-appText-bright">Kecepatan Pelafalan Bahasa Jepang (TTS)</div>
+            <div className="text-xs text-appText-muted">Atur tempo suara penutur untuk kenyamanan telinga</div>
+          </div>
+          <div className="flex items-center gap-1.5 bg-surface-2 p-1 rounded-xl border border-accent/15">
+            {[
+              { rate: 0.75, label: '0.75x Lambat' },
+              { rate: 0.9, label: '0.9x Standar' },
+              { rate: 1.0, label: '1.0x Cepat' },
+            ].map((item) => {
+              const isSelected = Math.abs(speechRate - item.rate) < 0.05;
+              return (
+                <button
+                  key={item.rate}
+                  onClick={() => {
+                    setSpeechRate(item.rate);
+                    speakJapanese('こんにちは、頑張りましょう', item.rate);
+                    showToast(`Kecepatan TTS diatur ke ${item.rate}x`, '🗣️');
+                  }}
+                  className={`px-2.5 py-1 text-xs font-semibold rounded-lg transition-all ${
+                    isSelected
+                      ? 'bg-accent text-bg font-bold shadow-sm'
+                      : 'text-appText-muted hover:text-appText-bright'
+                  }`}
+                >
+                  {item.label}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Test Speech Sample */}
+        <div className="pt-1 flex items-center justify-between border-t border-accent/10">
+          <span className="text-xs text-appText-muted">Uji audio perangkat:</span>
+          <button
+            onClick={() => {
+              if (soundEffects) playSuccessSfx();
+              setTimeout(() => speakJapanese('日本語の勉強を始めましょう！', speechRate), 300);
+            }}
+            className="px-3.5 py-1.5 rounded-xl bg-surface-2 border border-accent/25 hover:border-accent text-accent-hot text-xs font-bold flex items-center gap-1.5 transition-all"
+          >
+            <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+            <span>Tes Pelafalan Audio 🔊</span>
           </button>
         </div>
       </div>

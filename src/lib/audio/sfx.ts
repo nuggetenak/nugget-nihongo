@@ -19,10 +19,20 @@ function getAudioContext(): AudioContext | null {
   return audioCtx;
 }
 
+export function isSfxEnabled(): boolean {
+  if (typeof window === 'undefined') return false;
+  try {
+    return localStorage.getItem('nn_sound_effects') !== '0';
+  } catch {
+    return true;
+  }
+}
+
 /**
  * Play pleasant cheerful chime when answering correctly or watering
  */
 export function playSuccessSfx() {
+  if (!isSfxEnabled()) return;
   const ctx = getAudioContext();
   if (!ctx) return;
 
@@ -58,6 +68,7 @@ export function playSuccessSfx() {
  * Play gentle low tone on incorrect answer
  */
 export function playErrorSfx() {
+  if (!isSfxEnabled()) return;
   const ctx = getAudioContext();
   if (!ctx) return;
 
@@ -83,6 +94,7 @@ export function playErrorSfx() {
  * Play gentle bubbling water droplet sound when watering plant
  */
 export function playWaterSfx() {
+  if (!isSfxEnabled()) return;
   const ctx = getAudioContext();
   if (!ctx) return;
 
@@ -108,6 +120,7 @@ export function playWaterSfx() {
  * Play subtle crisp tap sound when flipping flashcard
  */
 export function playFlipSfx() {
+  if (!isSfxEnabled()) return;
   const ctx = getAudioContext();
   if (!ctx) return;
 
@@ -133,6 +146,7 @@ export function playFlipSfx() {
  * Play celebratory ascending arpeggio when unlocking a badge or completing quiz
  */
 export function playFanfareSfx() {
+  if (!isSfxEnabled()) return;
   const ctx = getAudioContext();
   if (!ctx) return;
 
