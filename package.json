@@ -23,6 +23,7 @@
     "node": ">=22"
   },
   "scripts": {
+    "build": "node scripts/merge-vocab.js && node scripts/merge-grammar.js",
     "test": "node tests/run.js && node tests/test-runtime.js",
     "test:runtime": "node tests/test-runtime.js",
     "validate": "node tests/run.js",

@@ -2,7 +2,7 @@
 //  grammar-n2.js — Nugget Nihongo · JLPT N2 Grammar
 //  AUTO-GENERATED — DO NOT EDIT DIRECTLY
 //  Edit: public/data/grammar/n2/*.js  then run: node scripts/merge-grammar.js
-//  Entries: 310 | Generated: 2026-10-01
+//  Entries: 310 | Generated: 2026-10-09
 // ══════════════════════════════════════════════════════════════
 
 window.grammarN2 = [
