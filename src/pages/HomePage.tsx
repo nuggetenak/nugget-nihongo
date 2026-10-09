@@ -9,7 +9,7 @@ import { loadVocab, NormalizedVocab } from '../lib/data/dataManager';
 import { speakJapanese } from '../lib/audio/tts';
 
 export const HomePage: React.FC = () => {
-  const { streak, xp, setActiveTab } = useAppStore();
+  const { streak, xp, setActiveTab, openOnboarding } = useAppStore();
   const [isBadgesOpen, setIsBadgesOpen] = useState(false);
   const [isKanaOpen, setIsKanaOpen] = useState(false);
   const [dailyWord, setDailyWord] = useState<NormalizedVocab | null>(null);
@@ -84,8 +84,15 @@ export const HomePage: React.FC = () => {
 
         <div className="w-full md:w-auto flex flex-wrap sm:flex-nowrap items-center gap-2.5 shrink-0">
           <button
-            onClick={() => setIsKanaOpen(true)}
+            onClick={openOnboarding}
             className="flex-1 sm:flex-initial px-4 py-2.5 rounded-xl bg-accent hover:bg-accent-hot text-bg text-xs font-bold transition-all flex items-center justify-center gap-2 shadow-sm active:scale-95"
+          >
+            <span>Tur Pengenalan</span>
+            <span className="text-sm">🍙</span>
+          </button>
+          <button
+            onClick={() => setIsKanaOpen(true)}
+            className="flex-1 sm:flex-initial px-4 py-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/25 text-appText-bright text-xs font-bold transition-all flex items-center justify-center gap-1.5 active:scale-95"
           >
             <span>Tabel Kana (あ/ア)</span>
             <span className="text-sm">🗣️</span>

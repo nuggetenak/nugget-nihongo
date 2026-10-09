@@ -10,6 +10,11 @@ import { InstallModal } from './components/ui/InstallModal';
 import { StreakBrokenModal } from './components/gamification/StreakBrokenModal';
 import { AuthModal } from './components/auth/AuthModal';
 import { KeyboardShortcutsModal } from './components/ui/KeyboardShortcutsModal';
+import { OnboardingModal } from './components/onboarding/OnboardingModal';
+import { FeatureGuideModal } from './components/ui/FeatureGuideModal';
+import { KanaChartModal } from './components/kana/KanaChartModal';
+import { ConjugationModal } from './components/grammar/ConjugationModal';
+import { NuanceCompareModal } from './components/grammar/NuanceCompareModal';
 import { usePwaStore } from './lib/pwa/pwaStore';
 import { useAuthStore } from './lib/supabase/authStore';
 import { NormalizedVocab, NormalizedGrammar } from './lib/data/dataManager';
@@ -29,6 +34,9 @@ export const App: React.FC = () => {
   const { initAuth } = useAuthStore();
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isShortcutsOpen, setIsShortcutsOpen] = useState(false);
+  const [isKanaOpen, setIsKanaOpen] = useState(false);
+  const [isConjugationOpen, setIsConjugationOpen] = useState(false);
+  const [isNuanceOpen, setIsNuanceOpen] = useState(false);
   const [selectedModalItem, setSelectedModalItem] = useState<(NormalizedVocab | NormalizedGrammar) | null>(null);
   const [modalItemType, setModalItemType] = useState<'vocab' | 'grammar'>('vocab');
 
@@ -165,6 +173,35 @@ export const App: React.FC = () => {
 
       {/* Supabase User Authentication Modal */}
       <AuthModal />
+
+      {/* Interactive Onboarding Tour Modal */}
+      <OnboardingModal />
+
+      {/* Feature Guide & Directory Modal */}
+      <FeatureGuideModal
+        onOpenKana={() => setIsKanaOpen(true)}
+        onOpenConjugation={() => setIsConjugationOpen(true)}
+        onOpenNuance={() => setIsNuanceOpen(true)}
+        onOpenShortcuts={() => setIsShortcutsOpen(true)}
+      />
+
+      {/* Interactive Kana Chart Modal */}
+      <KanaChartModal
+        isOpen={isKanaOpen}
+        onClose={() => setIsKanaOpen(false)}
+      />
+
+      {/* Verb Conjugation Matrix Modal */}
+      <ConjugationModal
+        isOpen={isConjugationOpen}
+        onClose={() => setIsConjugationOpen(false)}
+      />
+
+      {/* Grammar Nuance Compare Modal */}
+      <NuanceCompareModal
+        isOpen={isNuanceOpen}
+        onClose={() => setIsNuanceOpen(false)}
+      />
     </div>
   );
 };

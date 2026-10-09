@@ -1,7 +1,23 @@
 import React, { useState, useEffect } from 'react';
-import { X, Mail, Lock, User as UserIcon, Loader2, Sparkles, AlertCircle } from 'lucide-react';
+import {
+  X,
+  Mail,
+  Lock,
+  User as UserIcon,
+  Loader2,
+  Sparkles,
+  AlertCircle,
+  Settings,
+  CheckCircle2,
+  ExternalLink,
+} from 'lucide-react';
 import { useAuthStore } from '../../lib/supabase/authStore';
 import { useAppStore } from '../../store/useAppStore';
+import {
+  getStoredSupabaseConfig,
+  updateSupabaseConfig,
+  testSupabaseConnection,
+} from '../../lib/supabase/client';
 
 export const AuthModal: React.FC = () => {
   const {
@@ -21,6 +37,17 @@ export const AuthModal: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
+  // Custom Supabase configuration states
+  const initialConfig = getStoredSupabaseConfig();
+  const [showConfig, setShowConfig] = useState(initialConfig.isLegacyDeadUrl);
+  const [customUrl, setCustomUrl] = useState(
+    initialConfig.isLegacyDeadUrl ? '' : initialConfig.url
+  );
+  const [customKey, setCustomKey] = useState(
+    initialConfig.isLegacyDeadUrl ? '' : initialConfig.anonKey
+  );
+  const [testResult, setTestResult] = useState<{ ok: boolean; message: string } | null>(null);
+
   // Lock body scroll when modal is open
   useEffect(() => {
     if (isAuthModalOpen) {
@@ -33,10 +60,37 @@ export const AuthModal: React.FC = () => {
 
   if (!isAuthModalOpen) return null;
 
+  const handleSaveCustomConfig = () => {
+    if (!customUrl.trim()) {
+      setErrorMessage('Harap isi Project URL Supabase kamu (contoh: https://xxxx.supabase.co).');
+      return;
+    }
+    updateSupabaseConfig(customUrl, customKey);
+    showToast('Konfigurasi Supabase berhasil diperbarui!', '☁️');
+    setErrorMessage(null);
+    handleTestConnection();
+  };
+
+  const handleTestConnection = async () => {
+    setTestResult(null);
+    const res = await testSupabaseConnection(customUrl, customKey);
+    setTestResult(res);
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
     setErrorMessage(null);
+
+    const cfg = getStoredSupabaseConfig();
+    if (cfg.isLegacyDeadUrl) {
+      setShowConfig(true);
+      setErrorMessage(
+        'Project URL Supabase bawaan tidak aktif (DNS NXDOMAIN). Masukkan Project URL & Anon Key dari dashboard Supabase kamu di bawah ini.'
+      );
+      setLoading(false);
+      return;
+    }
 
     try {
       if (authMode === 'signin') {
@@ -69,6 +123,17 @@ export const AuthModal: React.FC = () => {
   const handleGoogleSignIn = async () => {
     setLoading(true);
     setErrorMessage(null);
+
+    const cfg = getStoredSupabaseConfig();
+    if (cfg.isLegacyDeadUrl) {
+      setShowConfig(true);
+      setErrorMessage(
+        'Project URL Supabase bawaan tidak aktif (DNS NXDOMAIN). Masukkan Project URL & Anon Key dari dashboard Supabase kamu di bawah ini.'
+      );
+      setLoading(false);
+      return;
+    }
+
     try {
       const { error } = await signInWithGoogle();
       if (error) setErrorMessage(error.message);
@@ -79,10 +144,12 @@ export const AuthModal: React.FC = () => {
     }
   };
 
+  const isLegacyDead = getStoredSupabaseConfig().isLegacyDeadUrl;
+
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fade-in">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/80 backdrop-blur-sm animate-fade-in">
       <div
-        className="w-full max-w-md bg-surface border border-accent/25 rounded-3xl shadow-glow overflow-hidden relative max-h-[90vh] flex flex-col"
+        className="w-full max-w-md bg-surface border border-accent/25 rounded-3xl shadow-glow overflow-hidden relative max-h-[92vh] flex flex-col"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Glow corner accent */}
@@ -98,7 +165,7 @@ export const AuthModal: React.FC = () => {
         </button>
 
         {/* Modal Scrollable Body */}
-        <div className="overflow-y-auto px-6 py-8 space-y-4">
+        <div className="overflow-y-auto px-6 py-7 space-y-4 scrollbar-thin">
           {/* Header */}
           <div className="text-center">
             <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-amber-500 to-amber-700 flex items-center justify-center mx-auto mb-3 shadow-lg shadow-amber-950/50 text-2xl font-bold text-bg">
@@ -111,6 +178,102 @@ export const AuthModal: React.FC = () => {
               Sinkronkan kartu FSRS, kebun kanji & streak belajarmu ke cloud lintas perangkat.
             </p>
           </div>
+
+          {/* Legacy Supabase Warning Badge if dead URL */}
+          {isLegacyDead && (
+            <div className="p-3.5 rounded-2xl bg-amber-500/10 border border-amber-500/25 space-y-2 text-left">
+              <div className="flex items-center gap-2 text-accent font-bold text-xs">
+                <AlertCircle className="w-4 h-4 shrink-0" />
+                <span>Koneksi Supabase Pribadi Diperlukan</span>
+              </div>
+              <p className="text-[11px] text-appText-muted leading-relaxed">
+                Project URL bawaan telah dinonaktifkan (DNS NXDOMAIN). Agar Google Sign-In dan pendaftaran akun dapat berfungsi, masukkan Project URL & Anon Key dari proyek Supabase aktifmu di bawah ini.
+              </p>
+              <button
+                type="button"
+                onClick={() => setShowConfig(!showConfig)}
+                className="text-[11px] font-bold text-accent hover:underline flex items-center gap-1"
+              >
+                <span>{showConfig ? 'Sembunyikan Form URL ▲' : 'Buka Pengaturan URL Supabase ▼'}</span>
+              </button>
+            </div>
+          )}
+
+          {/* Collapsible Supabase Key Form */}
+          {showConfig && (
+            <div className="p-4 rounded-2xl bg-surface-2 border border-accent/25 space-y-3 text-left">
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-bold text-appText-bright flex items-center gap-1.5">
+                  <Settings className="w-3.5 h-3.5 text-accent" />
+                  <span>Kunci Proyek Supabase</span>
+                </span>
+                <a
+                  href="https://supabase.com/dashboard"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-[10px] text-accent hover:underline flex items-center gap-1"
+                >
+                  <span>Buka Dashboard</span>
+                  <ExternalLink className="w-2.5 h-2.5" />
+                </a>
+              </div>
+
+              <div>
+                <label className="block text-[10px] font-semibold text-appText-muted mb-1">
+                  Project URL (contoh: https://xxxx.supabase.co)
+                </label>
+                <input
+                  type="url"
+                  value={customUrl}
+                  onChange={(e) => setCustomUrl(e.target.value)}
+                  placeholder="https://xyzabcdefg.supabase.co"
+                  className="w-full bg-surface border border-accent/20 rounded-xl px-3 py-1.5 text-xs text-appText-bright focus:outline-none focus:border-accent"
+                />
+              </div>
+
+              <div>
+                <label className="block text-[10px] font-semibold text-appText-muted mb-1">
+                  Project Anon / Public API Key
+                </label>
+                <input
+                  type="text"
+                  value={customKey}
+                  onChange={(e) => setCustomKey(e.target.value)}
+                  placeholder="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+                  className="w-full bg-surface border border-accent/20 rounded-xl px-3 py-1.5 text-[11px] font-mono text-appText-bright focus:outline-none focus:border-accent"
+                />
+              </div>
+
+              <div className="flex items-center gap-2 pt-1">
+                <button
+                  type="button"
+                  onClick={handleSaveCustomConfig}
+                  className="px-3 py-1.5 rounded-xl bg-accent text-bg font-bold text-xs hover:bg-accent-hot transition-all shadow-sm"
+                >
+                  Simpan & Hubungkan
+                </button>
+                <button
+                  type="button"
+                  onClick={handleTestConnection}
+                  className="px-3 py-1.5 rounded-xl bg-surface-3 text-appText-bright text-xs hover:bg-surface transition-all"
+                >
+                  Cek Koneksi
+                </button>
+              </div>
+
+              {testResult && (
+                <div
+                  className={`text-[11px] p-2 rounded-lg border ${
+                    testResult.ok
+                      ? 'bg-emerald-500/10 border-emerald-500/25 text-emerald-400'
+                      : 'bg-red-500/10 border-red-500/25 text-red-400'
+                  }`}
+                >
+                  {testResult.message}
+                </div>
+              )}
+            </div>
+          )}
 
           {/* Google Sign-in */}
           <button

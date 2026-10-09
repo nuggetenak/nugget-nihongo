@@ -1,5 +1,5 @@
 import React from 'react';
-import { Search, Flame, Zap, Download, RefreshCw, User as UserIcon, Cloud, HelpCircle } from 'lucide-react';
+import { Search, Flame, Zap, Download, RefreshCw, User as UserIcon, Cloud, HelpCircle, Compass } from 'lucide-react';
 import { useAppStore } from '../../store/useAppStore';
 import { usePwaStore } from '../../lib/pwa/pwaStore';
 import { useAuthStore } from '../../lib/supabase/authStore';
@@ -15,7 +15,8 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onOpenShortcuts })
   const {
     streak, xp, selectedLevel, setSelectedLevel,
     showFurigana, setShowFurigana,
-    showRomaji, setShowRomaji, showToast
+    showRomaji, setShowRomaji, showToast,
+    openFeatureGuide
   } = useAppStore();
   const { isInstalled, setShowInstallModal } = usePwaStore();
   const { user, syncStatus, openAuthModal, syncNow } = useAuthStore();
@@ -102,6 +103,16 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onOpenShortcuts })
       <div className="flex items-center gap-2">
         {/* Offline Status Pill */}
         <OfflineStatusPill />
+
+        {/* Navigation & Feature Guide Button */}
+        <button
+          onClick={openFeatureGuide}
+          title="Panduan Fitur & Bantuan (Tekan untuk melihat seluruh modul & tips)"
+          className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-full bg-amber-500/10 hover:bg-amber-500/20 text-accent border border-accent/25 text-xs font-bold transition-all shadow-sm active:scale-95"
+        >
+          <Compass className="w-3.5 h-3.5" />
+          <span className="hidden sm:inline">Panduan</span>
+        </button>
 
         {/* Desktop Shortcuts Help Button */}
         {onOpenShortcuts && (

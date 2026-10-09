@@ -50,6 +50,14 @@ export interface AppState {
   cards: Record<string, { card: FSRSCard; source?: string }>;
   setCard: (id: string, cardData: { card: FSRSCard; source?: string }) => void;
 
+  // Onboarding & Feature Guide Modals
+  isOnboardingOpen: boolean;
+  openOnboarding: () => void;
+  closeOnboarding: () => void;
+  isFeatureGuideOpen: boolean;
+  openFeatureGuide: () => void;
+  closeFeatureGuide: () => void;
+
   // Reset entire store
   resetAllData: () => void;
 }
@@ -242,6 +250,19 @@ export const useAppStore = create<AppState>((set, get) => ({
       try { localStorage.setItem('nn_fsrs_cards', JSON.stringify(updated)); } catch {}
     }
   },
+
+  isOnboardingOpen: typeof window !== 'undefined' ? !localStorage.getItem('nn_onboarding_completed') : false,
+  openOnboarding: () => set({ isOnboardingOpen: true }),
+  closeOnboarding: () => {
+    set({ isOnboardingOpen: false });
+    if (typeof window !== 'undefined') {
+      try { localStorage.setItem('nn_onboarding_completed', 'true'); } catch {}
+    }
+  },
+
+  isFeatureGuideOpen: false,
+  openFeatureGuide: () => set({ isFeatureGuideOpen: true }),
+  closeFeatureGuide: () => set({ isFeatureGuideOpen: false }),
 
   resetAllData: () => {
     if (typeof window !== 'undefined') {
