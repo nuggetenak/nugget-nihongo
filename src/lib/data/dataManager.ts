@@ -43,7 +43,30 @@ declare global {
     grammarN3?: any[];
     grammarN2?: any[];
     grammarN1?: any[];
+    bookMinna1?: any;
+    bookMinna2?: any;
+    bookIrodoriA1?: any;
+    bookIrodoriA2_1?: any;
+    bookIrodoriA2_2?: any;
   }
+}
+
+export interface BookUnit {
+  topic: string;
+  vocab_ids: string[];
+  grammar_ids: string[];
+}
+
+export interface BookData {
+  meta: {
+    book: string;
+    title: string;
+    publisher: string;
+    chapters?: number;
+    units?: number;
+    jlpt_range: string[];
+  };
+  units: Record<number, BookUnit>;
 }
 
 // Memory cache
@@ -145,4 +168,38 @@ export function preloadLevels(levels: JLPTLevel[] = ['n5', 'n4']) {
     loadVocab(lvl).catch(() => {});
     loadGrammar(lvl).catch(() => {});
   });
+}
+
+const bookCache: Record<string, BookData> = {};
+
+/**
+ * Load textbook metadata and units
+ */
+export async function loadBook(bookKey: 'minna1' | 'minna2' | 'irodori-a1' | 'irodori-a2-1'): Promise<BookData | null> {
+  if (bookCache[bookKey]) return bookCache[bookKey];
+
+  const fileMap: Record<string, { src: string; varKey: keyof Window }> = {
+    minna1: { src: '/data/books/book-minna-1.js', varKey: 'bookMinna1' },
+    minna2: { src: '/data/books/book-minna-2.js', varKey: 'bookMinna2' },
+    'irodori-a1': { src: '/data/books/book-irodori-a1.js', varKey: 'bookIrodoriA1' },
+    'irodori-a2-1': { src: '/data/books/book-irodori-a2-1.js', varKey: 'bookIrodoriA2_1' },
+  };
+
+  const target = fileMap[bookKey];
+  if (!target) return null;
+
+  if (!window[target.varKey]) {
+    try {
+      await loadScript(target.src);
+    } catch (e) {
+      console.warn(`[dataManager] Failed to load book: ${target.src}`, e);
+      return null;
+    }
+  }
+
+  const raw = window[target.varKey] as BookData;
+  if (raw) {
+    bookCache[bookKey] = raw;
+  }
+  return raw || null;
 }

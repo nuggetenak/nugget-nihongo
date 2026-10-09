@@ -5,6 +5,7 @@ import { JLPTLevel } from '../types/vocab';
 import { loadVocab, loadGrammar, NormalizedVocab, NormalizedGrammar } from '../lib/data/dataManager';
 import { speakJapanese } from '../lib/audio/tts';
 import { DetailModal } from '../components/ui/DetailModal';
+import { BookTrackBrowser } from '../components/materi/BookTrackBrowser';
 
 export const MateriHubPage: React.FC = () => {
   const { selectedLevel, setSelectedLevel, searchQuery, setSearchQuery } = useAppStore();
@@ -318,15 +319,16 @@ export const MateriHubPage: React.FC = () => {
         </div>
       )}
 
-      {/* Book Track Placeholder */}
+      {/* Jalur Buku Teks (Minna no Nihongo & Irodori) */}
       {activeTrack === 'buku' && (
-        <div className="bg-surface border border-accent/20 rounded-2xl p-8 text-center space-y-3">
-          <div className="text-4xl">📚</div>
-          <h3 className="font-bold text-base text-appText-bright">Jalur Buku Teks</h3>
-          <p className="text-xs text-appText-muted max-w-md mx-auto leading-relaxed">
-            Materi terindeks per bab untuk Minna no Nihongo I & II serta Irodori A1 & A2 sedang dikaitkan ke indeks kosakata terpadu.
-          </p>
-        </div>
+        <BookTrackBrowser
+          vocabList={vocabList}
+          grammarList={grammarList}
+          onSelectItem={(item, type) => {
+            setSelectedItem(item);
+            setItemType(type);
+          }}
+        />
       )}
 
       {/* Detail Modal */}

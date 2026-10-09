@@ -3,7 +3,11 @@ import { Search, Flame, Zap } from 'lucide-react';
 import { useAppStore } from '../../store/useAppStore';
 import { JLPTLevel } from '../../types/vocab';
 
-export const Header: React.FC = () => {
+interface HeaderProps {
+  onOpenSearch?: () => void;
+}
+
+export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
   const { streak, xp, selectedLevel, setSelectedLevel, searchQuery, setSearchQuery } = useAppStore();
 
   const levels: (JLPTLevel | 'all')[] = ['all', 'n5', 'n4', 'n3', 'n2', 'n1'];
@@ -19,14 +23,17 @@ export const Header: React.FC = () => {
       </div>
 
       {/* Search Input Bar with Shortcut Indicator */}
-      <div className="flex-1 max-w-md relative">
+      <div 
+        onClick={onOpenSearch}
+        className="flex-1 max-w-md relative cursor-pointer"
+      >
         <Search className="w-4 h-4 text-appText-muted absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" />
         <input
           type="text"
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
+          readOnly
+          onClick={onOpenSearch}
           placeholder="Cari kanji, kosakata, pola tata bahasa..."
-          className="w-full bg-surface-2 border border-accent/20 rounded-xl pl-9 pr-12 py-2 text-xs md:text-sm text-appText-bright placeholder-appText-muted/60 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all"
+          className="w-full bg-surface-2 border border-accent/20 rounded-xl pl-9 pr-12 py-2 text-xs md:text-sm text-appText-bright placeholder-appText-muted/60 focus:outline-none focus:border-accent cursor-pointer transition-all"
         />
         <kbd className="hidden sm:inline-block absolute right-2.5 top-1/2 -translate-y-1/2 text-[10px] font-mono bg-surface-3/80 text-appText-muted px-1.5 py-0.5 rounded border border-accent/15">
           ⌘K
