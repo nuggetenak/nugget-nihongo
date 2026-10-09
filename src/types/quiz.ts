@@ -3,6 +3,7 @@ import { JLPTLevel } from './vocab';
 export type QuizMode = 
   | 'flashcard'
   | 'multiple-choice'
+  | 'listening'
   | 'fill-in'
   | 'rearrange'
   | 'conjugation'

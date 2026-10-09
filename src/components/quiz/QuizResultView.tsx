@@ -9,6 +9,8 @@ interface QuizResultViewProps {
   answers: Array<{ question: QuizQuestionItem; isCorrect: boolean; selected: string }>;
   onRestart: () => void;
   onGoHome: () => void;
+  onRetryMistakes?: () => void;
+  onGoToHub?: () => void;
 }
 
 export const QuizResultView: React.FC<QuizResultViewProps> = ({
@@ -18,6 +20,8 @@ export const QuizResultView: React.FC<QuizResultViewProps> = ({
   answers,
   onRestart,
   onGoHome,
+  onRetryMistakes,
+  onGoToHub,
 }) => {
   const percentage = Math.round((score / total) * 100);
 
@@ -65,21 +69,42 @@ export const QuizResultView: React.FC<QuizResultViewProps> = ({
           </div>
         </div>
 
+        {/* Mistake Retry Action */}
+        {answers.some(a => !a.isCorrect) && onRetryMistakes && (
+          <div className="pt-2">
+            <button
+              onClick={onRetryMistakes}
+              className="w-full py-3 rounded-2xl bg-red-950/50 hover:bg-red-900/60 border border-red-500/50 text-red-200 font-bold text-xs flex items-center justify-center gap-2 transition-all shadow-sm active:scale-95"
+            >
+              <RotateCcw className="w-4 h-4" />
+              <span>Latih Ulang {answers.filter(a => !a.isCorrect).length} Soal yang Salah 🔁</span>
+            </button>
+          </div>
+        )}
+
         {/* Action Buttons */}
-        <div className="flex items-center justify-center gap-3 pt-2">
+        <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
+          {onGoToHub && (
+            <button
+              onClick={onGoToHub}
+              className="px-5 py-2.5 rounded-xl bg-accent text-bg font-bold text-xs flex items-center gap-2 hover:bg-accent-hot transition-all shadow-glow"
+            >
+              <span>🏟️ Dasbor Kuis</span>
+            </button>
+          )}
           <button
             onClick={onRestart}
-            className="px-5 py-2.5 rounded-xl bg-accent text-bg font-bold text-xs flex items-center gap-2 hover:bg-accent-hot transition-all shadow-glow"
+            className="px-5 py-2.5 rounded-xl bg-surface-2 text-appText-bright border border-accent/25 font-bold text-xs flex items-center gap-2 hover:bg-surface-3 transition-all"
           >
             <RotateCcw className="w-4 h-4" />
-            <span>Latihan Lagi</span>
+            <span>Ulangi Sesi</span>
           </button>
           <button
             onClick={onGoHome}
-            className="px-5 py-2.5 rounded-xl bg-surface-2 text-appText-bright border border-accent/25 font-bold text-xs flex items-center gap-2 hover:bg-surface-3 transition-all"
+            className="px-5 py-2.5 rounded-xl bg-surface-2 text-appText-muted hover:text-appText-bright border border-accent/15 font-bold text-xs flex items-center gap-2 hover:bg-surface-3 transition-all"
           >
             <Home className="w-4 h-4" />
-            <span>Ke Beranda</span>
+            <span>Beranda</span>
           </button>
         </div>
       </div>

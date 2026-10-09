@@ -115,14 +115,14 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onOpenShortcuts })
         )}
 
         {/* Streak Flame */}
-        <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-amber-500/15 border border-amber-500/30 text-accent-hot shadow-sm">
-          <Flame className="w-4 h-4 fill-amber-500 text-amber-500 animate-pulse" />
+        <div className="flex items-center gap-1 sm:gap-1.5 px-2 sm:px-3 py-1 sm:py-1.5 rounded-full bg-amber-500/15 border border-amber-500/30 text-accent-hot shadow-sm shrink-0">
+          <Flame className="w-3.5 sm:w-4 h-3.5 sm:h-4 fill-amber-500 text-amber-500 animate-pulse" />
           <span className="text-xs font-bold font-mono">{streak}</span>
         </div>
 
         {/* XP Pill */}
-        <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-2 border border-accent/20 text-appText-bright shadow-sm">
-          <Zap className="w-4 h-4 fill-amber-400 text-amber-400" />
+        <div className="flex items-center gap-1 sm:gap-1.5 px-2 sm:px-3 py-1 sm:py-1.5 rounded-full bg-surface-2 border border-accent/20 text-appText-bright shadow-sm shrink-0">
+          <Zap className="w-3.5 sm:w-4 h-3.5 sm:h-4 fill-amber-400 text-amber-400" />
           <span className="text-xs font-bold font-mono">{xp} XP</span>
         </div>
 

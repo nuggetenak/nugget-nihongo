@@ -21,7 +21,7 @@ export const BottomNav: React.FC = () => {
           <button
             key={item.id}
             onClick={() => setActiveTab(item.id)}
-            className={`flex flex-col items-center justify-center py-1 px-3 rounded-xl transition-all relative ${
+            className={`flex flex-col items-center justify-center py-1 px-3 min-w-[48px] min-h-[48px] rounded-2xl transition-all relative active:scale-90 ${
               isActive
                 ? 'text-accent-hot font-bold'
                 : 'text-appText-muted hover:text-appText-bright'

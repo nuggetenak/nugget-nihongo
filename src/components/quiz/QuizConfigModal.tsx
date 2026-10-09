@@ -52,6 +52,7 @@ export const QuizConfigModal: React.FC<QuizConfigModalProps> = ({
   const modes: Array<{ id: QuizMode; label: string; icon: string }> = [
     { id: 'flashcard', label: 'Flashcard 3D', icon: '🃏' },
     { id: 'multiple-choice', label: 'Pilihan Ganda', icon: '🔘' },
+    { id: 'listening', label: 'Latihan Mendengar', icon: '🎧' },
     { id: 'conjugation', label: 'Konjugasi Verba', icon: '🔄' },
     { id: 'fill-in', label: 'Isian Kosong', icon: '✍️' },
     { id: 'rearrange', label: 'Susun Kalimat', icon: '🧩' },
@@ -62,14 +63,16 @@ export const QuizConfigModal: React.FC<QuizConfigModalProps> = ({
   return (
     <div
       onClick={onClose}
-      className="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-4 animate-in fade-in duration-200"
+      className="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-end sm:items-center justify-center p-0 sm:p-4 animate-in fade-in duration-200"
       role="dialog"
       aria-label="Pengaturan Sesi Latihan"
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="w-full max-w-lg bg-surface border-2 border-accent/30 rounded-3xl p-6 sm:p-8 space-y-6 shadow-2xl relative animate-in zoom-in-95 duration-200"
+        className="w-full max-w-lg max-h-[88dvh] sm:max-h-[90vh] overflow-y-auto bg-surface border-t-2 sm:border-2 border-accent/30 rounded-t-3xl sm:rounded-3xl p-5 sm:p-8 space-y-5 sm:space-y-6 shadow-2xl relative animate-in slide-in-from-bottom-6 sm:zoom-in-95 duration-200 scrollbar-none"
       >
+        {/* Mobile Drag Handle Pill */}
+        <div className="w-12 h-1.5 rounded-full bg-accent/25 mx-auto -mt-1 mb-2 sm:hidden shrink-0" />
         {/* Header */}
         <div className="flex items-center justify-between border-b border-accent/15 pb-4">
           <div className="flex items-center gap-3">

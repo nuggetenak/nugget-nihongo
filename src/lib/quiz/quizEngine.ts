@@ -8,6 +8,7 @@ import { JLPTLevel } from '../../types/vocab';
 import { QuizMode } from '../../types/quiz';
 import { NormalizedVocab, NormalizedGrammar } from '../data/dataManager';
 import { conjugate, FORMS } from '../grammar/conjugation';
+import { FSRSCard } from '../../types/fsrs';
 
 export interface QuizQuestionItem {
   id: string;
@@ -107,6 +108,28 @@ export function generateQuizQuestions(
         correctAnswer: v.meaning,
         options,
         explanation: `Kata "${v.word}" (${v.reading}) berarti "${v.meaning}".`,
+        level,
+      });
+    }
+    return questions;
+  }
+
+  if (mode === 'listening') {
+    const shuffledVocab = shuffle(vocabPool);
+    const selected = shuffledVocab.slice(0, count);
+    for (const v of selected) {
+      const distractors = getVocabDistractors(v, vocabPool, 3);
+      const options = shuffle([v.meaning, ...distractors]);
+      questions.push({
+        id: `list-${v.id}-${Date.now()}`,
+        mode: 'listening',
+        prompt: 'Dengarkan pelafalan audio lalu pilih arti yang tepat:',
+        targetItem: v,
+        questionText: v.word,
+        subText: v.reading !== v.word ? v.reading : undefined,
+        correctAnswer: v.meaning,
+        options,
+        explanation: `Audio menyebutkan "${v.word}" (${v.reading}) yang berarti "${v.meaning}".`,
         level,
       });
     }
@@ -273,3 +296,92 @@ function splitIntoTokens(sentence: string): string[] {
   }
   return chunks;
 }
+
+/**
+ * Count how many cards are due for review today according to FSRS
+ */
+export function getFSRSDueCount(cardsMap: Record<string, { card: FSRSCard; source?: string }>): number {
+  const now = new Date();
+  let count = 0;
+  for (const record of Object.values(cardsMap)) {
+    if (record?.card) {
+      if (!record.card.due || new Date(record.card.due) <= now) {
+        count++;
+      }
+    }
+  }
+  return count;
+}
+
+/**
+ * Generate a smart FSRS Daily Review session (due cards prioritized first, then new items)
+ */
+export function generateFSRSDueQuestions(
+  cardsMap: Record<string, { card: FSRSCard; source?: string }>,
+  vocabPool: NormalizedVocab[],
+  grammarPool: NormalizedGrammar[],
+  level: JLPTLevel,
+  count = 10
+): QuizQuestionItem[] {
+  const now = new Date();
+  const dueVocab: NormalizedVocab[] = [];
+  const otherVocab: NormalizedVocab[] = [];
+
+  const vocabMap = new Map<string, NormalizedVocab>();
+  for (const v of vocabPool) {
+    vocabMap.set(v.id, v);
+  }
+
+  // Find due vocabs
+  for (const [id, record] of Object.entries(cardsMap)) {
+    const v = vocabMap.get(id);
+    if (v && record?.card) {
+      if (!record.card.due || new Date(record.card.due) <= now) {
+        dueVocab.push(v);
+      }
+    }
+  }
+
+  for (const v of vocabPool) {
+    if (!dueVocab.some(dv => dv.id === v.id)) {
+      otherVocab.push(v);
+    }
+  }
+
+  // Combine due items first, fill remaining with others
+  const targetPool = [...shuffle(dueVocab), ...shuffle(otherVocab)].slice(0, count);
+  const questions: QuizQuestionItem[] = [];
+
+  for (const v of targetPool) {
+    const distractors = getVocabDistractors(v, vocabPool, 3);
+    const options = shuffle([v.meaning, ...distractors]);
+    questions.push({
+      id: `fsrs-${v.id}-${Date.now()}`,
+      mode: 'flashcard',
+      prompt: 'Review FSRS Harian (Ingat arti kata ini?):',
+      targetItem: v,
+      questionText: v.word,
+      subText: v.reading !== v.word ? v.reading : undefined,
+      correctAnswer: v.meaning,
+      options,
+      explanation: `Kata "${v.word}" (${v.reading}) berarti "${v.meaning}". ${v.examples[0] ? `Contoh: ${v.examples[0].jp}` : ''}`,
+      level,
+    });
+  }
+
+  return questions;
+}
+
+/**
+ * Regenerate questions specifically for missed/incorrect items (Mistake Notebook)
+ */
+export function generateMistakeQuestions(
+  missedQuestions: QuizQuestionItem[]
+): QuizQuestionItem[] {
+  return missedQuestions.map((q) => ({
+    ...q,
+    id: `retry-${q.id}-${Date.now()}`,
+    prompt: `[Ulangi Kesalahan] ${q.prompt}`,
+  }));
+}
+

@@ -82,17 +82,17 @@ export const HomePage: React.FC = () => {
           </div>
         </div>
 
-        <div className="flex items-center gap-2.5 shrink-0 self-end md:self-center">
+        <div className="w-full md:w-auto flex flex-wrap sm:flex-nowrap items-center gap-2.5 shrink-0">
           <button
             onClick={() => setIsKanaOpen(true)}
-            className="px-4 py-2.5 rounded-xl bg-accent hover:bg-accent-hot text-bg text-xs font-bold transition-all flex items-center gap-2 shadow-sm"
+            className="flex-1 sm:flex-initial px-4 py-2.5 rounded-xl bg-accent hover:bg-accent-hot text-bg text-xs font-bold transition-all flex items-center justify-center gap-2 shadow-sm active:scale-95"
           >
             <span>Tabel Kana (あ/ア)</span>
             <span className="text-sm">🗣️</span>
           </button>
           <button
             onClick={() => setActiveTab('materi')}
-            className="px-4 py-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/25 text-appText-bright text-xs font-bold transition-all flex items-center gap-1.5"
+            className="flex-1 sm:flex-initial px-4 py-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/25 text-appText-bright text-xs font-bold transition-all flex items-center justify-center gap-1.5 active:scale-95"
           >
             <span>Jalur Freeway</span>
             <span>🛣️</span>

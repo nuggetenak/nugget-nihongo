@@ -33,7 +33,7 @@ body {
 
 /* Safe area inset padding for mobile bottom bar */
 .safe-area-bottom {
-  padding-bottom: max(0.375rem, env(safe-area-inset-bottom));
+  padding-bottom: max(0.625rem, env(safe-area-inset-bottom));
 }
 
 /* Hide scrollbars while keeping touch/scroll functionality */

@@ -84,20 +84,22 @@ export const KebunPage: React.FC = () => {
         </div>
 
         {/* Water Stock Card & Action */}
-        <div className="flex flex-col sm:flex-row items-center gap-3">
-          <div className="flex items-center gap-3 px-5 py-3 rounded-2xl bg-surface-2 border border-emerald-500/30 shadow-sm">
-            <div className="w-10 h-10 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center">
-              <Droplets className="w-6 h-6 fill-blue-400 text-blue-400" />
-            </div>
-            <div>
-              <div className="text-[10px] font-bold uppercase tracking-wider text-appText-muted">Persediaan Air</div>
-              <div className="text-xl font-bold font-mono text-blue-400">{waterDrops} Tetes</div>
+        <div className="w-full sm:w-auto flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+          <div className="flex items-center justify-between sm:justify-start gap-3 px-5 py-3 rounded-2xl bg-surface-2 border border-emerald-500/30 shadow-sm">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center">
+                <Droplets className="w-6 h-6 fill-blue-400 text-blue-400" />
+              </div>
+              <div>
+                <div className="text-[10px] font-bold uppercase tracking-wider text-appText-muted">Persediaan Air</div>
+                <div className="text-xl font-bold font-mono text-blue-400">{waterDrops} Tetes</div>
+              </div>
             </div>
           </div>
 
           <button
             onClick={handleWaterAll}
-            className="w-full sm:w-auto px-5 py-3.5 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs flex items-center justify-center gap-2 shadow-lg transition-all"
+            className="w-full sm:w-auto px-5 py-3.5 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs flex items-center justify-center gap-2 shadow-lg transition-all active:scale-95"
           >
             <Droplets className="w-4 h-4 fill-white" />
             <span>Siram Semua</span>

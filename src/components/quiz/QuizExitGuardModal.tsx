@@ -21,14 +21,15 @@ export const QuizExitGuardModal: React.FC<QuizExitGuardModalProps> = ({
   return (
     <div
       onClick={onStay}
-      className="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-4 animate-in fade-in duration-200"
+      className="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-end sm:items-center justify-center p-0 sm:p-4 animate-in fade-in duration-200"
       role="dialog"
       aria-label="Konfirmasi Tinggalkan Kuis"
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="w-full max-w-sm bg-surface border-2 border-amber-500/40 rounded-3xl p-6 sm:p-7 space-y-5 shadow-2xl relative animate-in zoom-in-95 duration-200 text-center"
+        className="w-full max-w-sm bg-surface border-t-2 sm:border-2 border-amber-500/40 rounded-t-3xl sm:rounded-3xl p-6 sm:p-7 space-y-5 shadow-2xl relative animate-in slide-in-from-bottom-6 sm:zoom-in-95 duration-200 text-center"
       >
+        <div className="w-12 h-1.5 rounded-full bg-accent/25 mx-auto -mt-2 mb-2 sm:hidden shrink-0" />
         <div className="w-12 h-12 rounded-2xl bg-amber-500/20 border border-amber-500/35 flex items-center justify-center text-accent-hot mx-auto shadow-sm">
           <AlertCircle className="w-6 h-6" />
         </div>
