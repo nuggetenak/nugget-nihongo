@@ -202,24 +202,19 @@
 
   // ── Toast util (shared) ───────────────────────────
   function _showToast(msg) {
+    var existing = document.querySelector('.nn-toast');
+    if (existing) existing.remove();
+
     var t = document.createElement('div');
-    t.textContent = msg;
-    t.style.cssText = [
-      'position:fixed', 'bottom:calc(var(--nav-h) + 1rem + var(--safe-bottom))',
-      'left:50%', 'transform:translateX(-50%)',
-      'background:var(--surface-3)', 'color:var(--text)',
-      'padding:0.6rem 1.2rem', 'border-radius:20px',
-      'font-size:0.82rem', 'z-index:9999',
-      'box-shadow:var(--shadow-lg)', 'pointer-events:none',
-      'opacity:0', 'transition:opacity 0.2s',
-    ].join(';');
+    t.className = 'nn-toast';
+    t.innerHTML = '<span class="nn-toast-icon">✨</span><span class="nn-toast-msg">' + msg + '</span>';
     document.body.appendChild(t);
     requestAnimationFrame(function () {
-      t.style.opacity = '1';
+      t.classList.add('show');
       setTimeout(function () {
-        t.style.opacity = '0';
-        setTimeout(function () { t.remove(); }, 300);
-      }, 2500);
+        t.classList.remove('show');
+        setTimeout(function () { t.remove(); }, 350);
+      }, 2600);
     });
   }
 

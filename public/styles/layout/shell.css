@@ -603,3 +603,160 @@
     grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)) !important;
   }
 }
+
+/* ══════════════════════════════════════════════════════════════════
+   5. COMPONENT GAPS & SPATIAL HARMONY SYSTEM
+══════════════════════════════════════════════════════════════════ */
+
+/* ── Modern Toast Capsule ────────────────────────────────────── */
+.nn-toast,
+.ai-fb-toast {
+  position: fixed !important;
+  bottom: calc(var(--nav-h, 56px) + 1.25rem + env(safe-area-inset-bottom, 0px)) !important;
+  left: 50% !important;
+  transform: translate(-50%, 14px) scale(0.96) !important;
+  background: rgba(26, 21, 15, 0.94) !important;
+  color: var(--text-bright, #FFFBEB) !important;
+  border: 1.5px solid rgba(245, 158, 11, 0.35) !important;
+  border-radius: 999px !important;
+  padding: 0.65rem 1.4rem !important;
+  font-family: var(--font-ui, 'DM Sans', sans-serif) !important;
+  font-size: 0.88rem !important;
+  font-weight: 600 !important;
+  z-index: 10000 !important;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45), 0 0 20px rgba(245, 158, 11, 0.18) !important;
+  backdrop-filter: blur(20px) saturate(1.3) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(1.3) !important;
+  pointer-events: none !important;
+  opacity: 0 !important;
+  transition: opacity 0.22s cubic-bezier(0.4, 0, 0.2, 1), transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.55rem !important;
+  white-space: nowrap !important;
+}
+
+.nn-toast.show,
+.ai-fb-toast.show {
+  opacity: 1 !important;
+  transform: translate(-50%, 0) scale(1) !important;
+}
+
+.nn-toast-icon {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+@media (min-width: 960px) {
+  .nn-toast,
+  .ai-fb-toast {
+    bottom: 2.25rem !important;
+    left: calc(50% + 130px) !important; /* Offset by 130px (half sidebar) for true visual center */
+    padding: 0.75rem 1.6rem !important;
+    font-size: 0.92rem !important;
+  }
+}
+
+/* ── Harmonized Section Spacing & Margins ────────────────────── */
+.home-section-title-wrap,
+.stat-section-title,
+.sp-section-title,
+.ab-section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem !important;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.home-section-title-wrap {
+  margin-top: 0.5rem;
+}
+
+/* Harmonized Card Internal Padding & Gaps */
+.home-nav-card,
+.stat-card,
+.hww-card,
+.home-side-widget,
+.sp-section,
+.ab-section {
+  border-radius: 20px !important;
+  border: 1.5px solid rgba(245, 158, 11, 0.16) !important;
+  transition: transform 0.15s ease, border-color 0.15s ease !important;
+}
+
+.home-nav-card:hover,
+.home-side-widget:hover {
+  border-color: rgba(245, 158, 11, 0.35) !important;
+}
+
+/* Spacing between Quiz Setup & Components */
+.quiz-topbar {
+  margin-bottom: 1.25rem !important;
+  padding: 0 0.25rem;
+}
+
+.quiz-score {
+  margin-bottom: 1rem !important;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+
+/* Assessment Buttons Balanced Gap */
+.assess-btns-row,
+#vqAssessBtns,
+#mxAssessBtns {
+  gap: 0.85rem !important;
+  margin-top: 1.25rem !important;
+}
+
+.assess-btns-row button,
+#vqAssessBtns button,
+#mxAssessBtns button {
+  flex: 1;
+  min-height: 48px;
+  border-radius: 14px;
+}
+
+/* Multiple choice choices gap */
+.fill-choices {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.75rem !important;
+  margin-top: 1.25rem !important;
+}
+
+.fill-choice,
+.mc-choice {
+  min-height: 50px !important;
+  border-radius: 14px !important;
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  padding: 0.85rem 1.25rem !important;
+}
+
+/* Settings rows spacing */
+.sp-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.sp-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0 !important;
+  border-bottom: 1px solid rgba(245, 158, 11, 0.1) !important;
+}
+
+.sp-row:last-child {
+  border-bottom: none !important;
+  padding-bottom: 0.25rem !important;
+}
+
+.sp-row:first-child {
+  padding-top: 0.25rem !important;
+}
+
