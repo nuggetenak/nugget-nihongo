@@ -3,7 +3,7 @@ import { ShieldCheck, Heart, Sparkles, BookOpen } from 'lucide-react';
 
 export const AboutPage: React.FC = () => {
   return (
-    <div className="max-w-3xl mx-auto py-6 px-4 space-y-8 animate-in fade-in duration-300">
+    <div className="max-w-3xl mx-auto py-6 space-y-8 animate-in fade-in duration-300">
       <div>
         <h1 className="text-2xl font-extrabold text-appText-bright mb-1">Tentang Nugget Nihongo</h1>
         <p className="text-xs text-appText-muted">Aplikasi teman belajar bahasa Jepang yang hangat, ramah, dan bebas tekanan.</p>

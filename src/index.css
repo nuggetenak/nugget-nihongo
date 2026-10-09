@@ -12,6 +12,16 @@
   --accent-hot: #FBBF24;
 }
 
+:root.light {
+  --bg: #FDFBF7;
+  --surface: #F5EFE6;
+  --surface-2: #EAE0D2;
+  --text: #2D2319;
+  --text-bright: #1A130B;
+  --accent: #D97706;
+  --accent-hot: #B45309;
+}
+
 body {
   background-color: var(--bg);
   color: var(--text);
@@ -19,6 +29,20 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Safe area inset padding for mobile bottom bar */
+.safe-area-bottom {
+  padding-bottom: max(0.375rem, env(safe-area-inset-bottom));
+}
+
+/* Hide scrollbars while keeping touch/scroll functionality */
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
 }
 
 /* Custom scrollbars */
@@ -35,4 +59,37 @@ body {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(245, 158, 11, 0.4);
+}
+
+/* 3D Flashcard Transitions */
+.perspective-1000 {
+  perspective: 1000px;
+}
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Keyframes animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.97); }
+  to { opacity: 1; transform: scale(1); }
+}
+.animate-fade-in {
+  animation: fadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes waterPulse {
+  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.5); }
+  50% { transform: scale(1.04); box-shadow: 0 0 0 10px rgba(16, 185, 129, 0); }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+}
+.animate-water-pulse {
+  animation: waterPulse 0.5s ease-out;
 }

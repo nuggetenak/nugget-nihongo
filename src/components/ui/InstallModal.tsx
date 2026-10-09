@@ -24,7 +24,7 @@ export const InstallModal: React.FC = () => {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fade-in">
       <div
-        className="w-full max-w-md bg-[#181410] border border-amber-900/40 rounded-2xl shadow-2xl p-6 relative overflow-hidden text-left"
+        className="w-full max-w-md max-h-[90vh] overflow-y-auto bg-[#181410] border border-amber-900/40 rounded-2xl shadow-2xl p-6 relative text-left scrollbar-none"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Glow corner accent */}

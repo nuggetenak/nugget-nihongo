@@ -8,7 +8,9 @@ import { SearchPalette } from './components/ui/SearchPalette';
 import { DetailModal } from './components/ui/DetailModal';
 import { InstallModal } from './components/ui/InstallModal';
 import { StreakBrokenModal } from './components/gamification/StreakBrokenModal';
+import { AuthModal } from './components/auth/AuthModal';
 import { usePwaStore } from './lib/pwa/pwaStore';
+import { useAuthStore } from './lib/supabase/authStore';
 import { NormalizedVocab, NormalizedGrammar } from './lib/data/dataManager';
 
 // Views
@@ -23,14 +25,16 @@ import { AboutPage } from './pages/AboutPage';
 export const App: React.FC = () => {
   const { activeTab, setActiveTab } = useAppStore();
   const { initPwa } = usePwaStore();
+  const { initAuth } = useAuthStore();
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [selectedModalItem, setSelectedModalItem] = useState<(NormalizedVocab | NormalizedGrammar) | null>(null);
   const [modalItemType, setModalItemType] = useState<'vocab' | 'grammar'>('vocab');
 
-  // Initialize PWA Service Worker & install prompt listener
+  // Initialize PWA Service Worker & Supabase Auth session on mount
   useEffect(() => {
     initPwa();
-  }, [initPwa]);
+    initAuth();
+  }, [initPwa, initAuth]);
 
   // Listen to browser forward/back hash changes
   useEffect(() => {
@@ -90,9 +94,9 @@ export const App: React.FC = () => {
       <Sidebar />
 
       {/* Main App Content Container (Offset by 260px on desktop) */}
-      <div className="flex-1 lg:pl-[260px] flex flex-col min-h-screen pb-20 lg:pb-12">
+      <div className="flex-1 lg:pl-[260px] flex flex-col min-h-screen pb-[calc(5.5rem+env(safe-area-inset-bottom))] lg:pb-12">
         <Header onOpenSearch={() => setIsSearchOpen(true)} />
-        <main className="flex-1 px-4 lg:px-8 max-w-7xl w-full mx-auto">
+        <main className="flex-1 px-4 sm:px-6 lg:px-8 max-w-7xl w-full mx-auto">
           {renderActiveView()}
         </main>
       </div>
@@ -122,6 +126,9 @@ export const App: React.FC = () => {
 
       {/* Streak Broken Motivational Modal */}
       <StreakBrokenModal />
+
+      {/* Supabase User Authentication Modal */}
+      <AuthModal />
     </div>
   );
 };

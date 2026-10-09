@@ -6,7 +6,7 @@ export const SenseiPage: React.FC = () => {
   const { setActiveTab } = useAppStore();
 
   return (
-    <div className="max-w-4xl mx-auto py-6 px-4 space-y-8 animate-in fade-in duration-300">
+    <div className="max-w-4xl mx-auto py-6 space-y-8 animate-in fade-in duration-300">
       {/* Warm Amber Hero Banner */}
       <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-amber-950/40 via-amber-900/20 to-surface border-2 border-amber-500/30 p-8 sm:p-12 text-center shadow-xl">
         {/* Pulsing Orb Glow */}

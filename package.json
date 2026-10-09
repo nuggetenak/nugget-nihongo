@@ -10,7 +10,15 @@
     "url": "https://github.com/nuggetenak/nugget-nihongo.git"
   },
   "homepage": "https://nuggetenak.github.io/nugget-nihongo/",
-  "keywords": ["jlpt", "japanese", "language-learning", "pwa", "vanilla-js", "supabase", "cloudflare"],
+  "keywords": [
+    "jlpt",
+    "japanese",
+    "language-learning",
+    "pwa",
+    "vanilla-js",
+    "supabase",
+    "cloudflare"
+  ],
   "scripts": {
     "build": "node scripts/merge-vocab.js && node scripts/merge-grammar.js && node tests/run.js && vite build",
     "test": "node tests/run.js",
@@ -26,6 +34,7 @@
     "preview": "wrangler pages dev dist"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.117.3",
     "clsx": "^2.1.1",
     "lucide-react": "^1.16.0",
     "react": "^18.3.1",

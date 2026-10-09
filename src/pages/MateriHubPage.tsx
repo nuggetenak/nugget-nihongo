@@ -8,7 +8,11 @@ import { DetailModal } from '../components/ui/DetailModal';
 import { BookTrackBrowser } from '../components/materi/BookTrackBrowser';
 
 export const MateriHubPage: React.FC = () => {
-  const { selectedLevel, setSelectedLevel, searchQuery, setSearchQuery } = useAppStore();
+  const {
+    selectedLevel, setSelectedLevel,
+    searchQuery, setSearchQuery,
+    showFurigana, showRomaji
+  } = useAppStore();
   const [activeTrack, setActiveTrack] = useState<'jlpt' | 'buku'>('jlpt');
   const [activeTab, setActiveTab] = useState<'all' | 'vocab' | 'grammar'>('vocab');
 
@@ -81,7 +85,7 @@ export const MateriHubPage: React.FC = () => {
   const [renderLimit, setRenderLimit] = useState(60);
 
   return (
-    <div className="max-w-5xl mx-auto py-6 px-4 space-y-8 animate-in fade-in duration-300">
+    <div className="max-w-5xl mx-auto py-6 space-y-8 animate-in fade-in duration-300">
       <div>
         <h1 className="text-2xl font-extrabold text-appText-bright mb-1">Materi Hub · 学習ハブ</h1>
         <p className="text-xs text-appText-muted">Eksplor 4.800+ kosakata dan 850+ tata bahasa JLPT dengan audio pelafalan asli.</p>
@@ -134,7 +138,7 @@ export const MateriHubPage: React.FC = () => {
         </div>
       </div>
 
-      {/* JLPT Level Selector Pills */}
+      {/* JLPT Level Selector Pills & Inline Search */}
       {activeTrack === 'jlpt' && (
         <div className="space-y-4">
           <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
@@ -157,6 +161,26 @@ export const MateriHubPage: React.FC = () => {
                 </button>
               );
             })}
+          </div>
+
+          {/* Inline Search Bar */}
+          <div className="relative">
+            <Search className="w-4 h-4 text-appText-muted absolute left-3.5 top-1/2 -translate-y-1/2" />
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder={`Cari kosakata / pola tata bahasa ${(selectedLevel === 'all' ? 'n5' : selectedLevel).toUpperCase()} (kanji, kana, arti, romaji)...`}
+              className="w-full bg-surface-2 border border-accent/20 rounded-xl pl-10 pr-10 py-2.5 text-xs text-appText-bright placeholder:text-appText-muted/60 focus:outline-none focus:border-accent transition-colors"
+            />
+            {searchQuery && (
+              <button
+                onClick={() => setSearchQuery('')}
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-appText-muted hover:text-appText-bright p-1"
+              >
+                ✕
+              </button>
+            )}
           </div>
 
           {/* Sub-Tabs: Kosakata vs Tata Bahasa */}
@@ -185,7 +209,7 @@ export const MateriHubPage: React.FC = () => {
             </div>
 
             <span className="text-[11px] text-appText-muted">
-              Menampilkan level {(selectedLevel === 'all' ? 'n5' : selectedLevel).toUpperCase()}
+              Level {(selectedLevel === 'all' ? 'n5' : selectedLevel).toUpperCase()}
             </span>
           </div>
 
@@ -211,9 +235,14 @@ export const MateriHubPage: React.FC = () => {
                         <div className="text-xl font-jp font-bold text-appText-bright group-hover:text-amber-300 transition-colors">
                           {v.word}
                         </div>
-                        {v.reading && v.reading !== v.word && (
+                        {showFurigana && v.reading && v.reading !== v.word && (
                           <div className="text-xs font-jp text-amber-400/80">
                             【{v.reading}】
+                          </div>
+                        )}
+                        {showRomaji && v.romaji && (
+                          <div className="text-[11px] font-mono text-appText-muted">
+                            {v.romaji}
                           </div>
                         )}
                       </div>
@@ -245,12 +274,18 @@ export const MateriHubPage: React.FC = () => {
               </div>
 
               {filteredVocab.length > renderLimit && (
-                <div className="text-center pt-2">
+                <div className="flex items-center justify-center gap-3 pt-2">
                   <button
                     onClick={() => setRenderLimit((prev) => prev + 60)}
-                    className="px-6 py-2.5 rounded-xl bg-surface-2 border border-accent/20 hover:border-accent/40 text-xs font-bold text-appText-bright transition-all"
+                    className="px-5 py-2.5 rounded-xl bg-surface-2 border border-accent/20 hover:border-accent/40 text-xs font-bold text-appText-bright transition-all"
                   >
-                    Muat Lebih Banyak ({filteredVocab.length - renderLimit} tersisa)
+                    Muat +60 Lagi ({filteredVocab.length - renderLimit} tersisa)
+                  </button>
+                  <button
+                    onClick={() => setRenderLimit(filteredVocab.length)}
+                    className="px-4 py-2.5 rounded-xl bg-accent text-bg hover:bg-accent-hot text-xs font-bold transition-all shadow-sm"
+                  >
+                    Tampilkan Semua ({filteredVocab.length})
                   </button>
                 </div>
               )}
@@ -305,12 +340,18 @@ export const MateriHubPage: React.FC = () => {
               </div>
 
               {filteredGrammar.length > renderLimit && (
-                <div className="text-center pt-2">
+                <div className="flex items-center justify-center gap-3 pt-2">
                   <button
                     onClick={() => setRenderLimit((prev) => prev + 60)}
-                    className="px-6 py-2.5 rounded-xl bg-surface-2 border border-accent/20 hover:border-accent/40 text-xs font-bold text-appText-bright transition-all"
+                    className="px-5 py-2.5 rounded-xl bg-surface-2 border border-accent/20 hover:border-accent/40 text-xs font-bold text-appText-bright transition-all"
                   >
-                    Muat Lebih Banyak ({filteredGrammar.length - renderLimit} tersisa)
+                    Muat +60 Lagi ({filteredGrammar.length - renderLimit} tersisa)
+                  </button>
+                  <button
+                    onClick={() => setRenderLimit(filteredGrammar.length)}
+                    className="px-4 py-2.5 rounded-xl bg-accent text-bg hover:bg-accent-hot text-xs font-bold transition-all shadow-sm"
+                  >
+                    Tampilkan Semua ({filteredGrammar.length})
                   </button>
                 </div>
               )}

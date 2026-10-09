@@ -3,11 +3,13 @@ import { Sprout, Droplets, Sparkles, Award, Volume2, Info } from 'lucide-react';
 import { useGardenStore, PlantItem } from '../lib/garden/gardenStore';
 import { useAppStore } from '../store/useAppStore';
 import { speakJapanese } from '../lib/audio/tts';
+import { playWaterSfx } from '../lib/audio/sfx';
 
 export const KebunPage: React.FC = () => {
   const { waterDrops, plants, waterPlant, waterAll } = useGardenStore();
   const { showToast, incrementXp } = useAppStore();
   const [selectedLevelFilter, setSelectedLevelFilter] = useState<'all' | 'n5' | 'n4' | 'n3' | 'n2'>('all');
+  const [wateringId, setWateringId] = useState<string | null>(null);
 
   const STAGE_LABELS = [
     { label: 'Benih Ditabur', icon: '🌰', desc: 'Butuh air untuk berkecambah' },
@@ -28,6 +30,9 @@ export const KebunPage: React.FC = () => {
     }
     const success = waterPlant(plant.id);
     if (success) {
+      playWaterSfx();
+      setWateringId(plant.id);
+      setTimeout(() => setWateringId(null), 500);
       incrementXp(5);
       showToast(`Menyiram kanji "${plant.kanji}" (+5 XP)! 💧`, '🌱');
     }
@@ -40,6 +45,7 @@ export const KebunPage: React.FC = () => {
     }
     const count = waterAll();
     if (count > 0) {
+      playWaterSfx();
       incrementXp(count * 5);
       showToast(`Menyiram ${count} tanaman di kebun (+${count * 5} XP)! 🌸`, '✨');
     } else {
@@ -54,7 +60,7 @@ export const KebunPage: React.FC = () => {
   const bloomingCount = plants.filter((p) => p.stage === 4).length;
 
   return (
-    <div className="max-w-5xl mx-auto py-6 px-4 space-y-8 animate-in fade-in duration-300">
+    <div className="max-w-5xl mx-auto py-6 space-y-8 animate-in fade-in duration-300">
       <div>
         <h1 className="text-2xl font-extrabold text-appText-bright mb-1">Kebun Kata · 単語の庭</h1>
         <p className="text-xs text-appText-muted">Rawat pohon kanjimu dengan latihan harian. Setiap ulasan memekarkan bunga pemahaman.</p>
@@ -125,10 +131,12 @@ export const KebunPage: React.FC = () => {
           const stageInfo = STAGE_LABELS[plant.stage];
           const isMaxBloom = plant.stage >= 4;
 
-          return (
+              return (
             <div
               key={plant.id}
               className={`rounded-3xl border-2 p-6 flex flex-col justify-between transition-all duration-200 hover:-translate-y-1 shadow-sm ${
+                wateringId === plant.id ? 'animate-water-pulse' : ''
+              } ${
                 isMaxBloom
                   ? 'bg-amber-950/20 border-amber-500/35'
                   : 'bg-surface-2 border-accent/20 hover:border-accent/40'

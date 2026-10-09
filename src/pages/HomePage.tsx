@@ -1,15 +1,34 @@
-import React, { useState } from 'react';
-import { BookOpen, Layers, Flame, Sprout, ArrowRight, Sparkles, Award } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { BookOpen, Layers, Flame, Sprout, ArrowRight, Sparkles, Award, Volume2, Info } from 'lucide-react';
 import { useAppStore } from '../store/useAppStore';
 import { HeatmapCalendar } from '../components/gamification/HeatmapCalendar';
 import { BadgesModal } from '../components/gamification/BadgesModal';
+import { DetailModal } from '../components/ui/DetailModal';
+import { loadVocab, NormalizedVocab } from '../lib/data/dataManager';
+import { speakJapanese } from '../lib/audio/tts';
 
 export const HomePage: React.FC = () => {
   const { streak, xp, setActiveTab } = useAppStore();
   const [isBadgesOpen, setIsBadgesOpen] = useState(false);
+  const [dailyWord, setDailyWord] = useState<NormalizedVocab | null>(null);
+  const [selectedWordForModal, setSelectedWordForModal] = useState<NormalizedVocab | null>(null);
+
+  useEffect(() => {
+    let isMounted = true;
+    loadVocab('n5').then((vocabList) => {
+      if (!isMounted || !vocabList || vocabList.length === 0) return;
+      const dayIndex = Math.floor(Date.now() / 86400000);
+      const chosen = vocabList[dayIndex % vocabList.length];
+      setDailyWord(chosen);
+    }).catch(() => {});
+
+    return () => {
+      isMounted = false;
+    };
+  }, []);
 
   return (
-    <div className="max-w-5xl mx-auto py-6 px-4 space-y-8 animate-in fade-in duration-300">
+    <div className="max-w-5xl mx-auto py-6 space-y-8 animate-in fade-in duration-300">
       {/* Hero Greeting Card */}
       <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-amber-950/60 via-amber-900/30 to-surface border border-accent/25 p-6 sm:p-10 shadow-lg">
         <div className="max-w-xl space-y-3">
@@ -89,23 +108,64 @@ export const HomePage: React.FC = () => {
         <div className="md:col-span-2 bg-surface-2 border border-accent/20 rounded-2xl p-6 flex flex-col justify-between">
           <div className="flex items-center justify-between mb-4">
             <span className="text-[11px] font-bold uppercase tracking-wider text-accent">Kotoba Hari Ini · 言葉</span>
-            <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30">
-              JLPT N5
-            </span>
+            <div className="flex items-center gap-2">
+              <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30 uppercase">
+                {dailyWord ? `JLPT ${dailyWord.level.toUpperCase()}` : 'JLPT N5'}
+              </span>
+              {dailyWord && (
+                <button
+                  onClick={() => setSelectedWordForModal(dailyWord)}
+                  className="p-1 rounded-lg bg-surface hover:bg-surface-3 text-appText-muted hover:text-accent transition-colors"
+                  title="Lihat Detail & Contoh"
+                >
+                  <Info className="w-3.5 h-3.5" />
+                </button>
+              )}
+            </div>
           </div>
 
           <div className="space-y-1.5 my-2">
-            <div className="text-2xl sm:text-3xl font-jp font-bold text-appText-bright">
-              頑張る <span className="text-sm font-normal text-appText-muted font-ui">【がんばる】</span>
+            <div className="flex items-center gap-3">
+              <div className="text-2xl sm:text-3xl font-jp font-bold text-appText-bright">
+                {dailyWord ? dailyWord.word : '頑張る'}
+                <span className="text-sm font-normal text-appText-muted font-ui ml-2">
+                  【{dailyWord ? dailyWord.reading : 'がんばる'}】
+                </span>
+              </div>
+              <button
+                onClick={() => speakJapanese(dailyWord ? dailyWord.word : '頑張る')}
+                className="w-8 h-8 rounded-full bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-accent flex items-center justify-center transition-all"
+                title="Dengarkan pelafalan"
+              >
+                <Volume2 className="w-4 h-4" />
+              </button>
             </div>
-            <div className="text-sm font-semibold text-accent-hot">Berusaha keras / Bersemangat</div>
-            <div className="text-xs text-appText-muted italic">
-              "諦めずに最後まで頑張りましょう。" (Mari berusaha keras sampai akhir tanpa menyerah.)
+
+            <div className="text-sm font-semibold text-accent-hot">
+              {dailyWord ? dailyWord.meaning : 'Berusaha keras / Bersemangat'}
             </div>
+
+            {dailyWord?.examples?.[0] ? (
+              <div className="text-xs text-appText-muted italic">
+                "{dailyWord.examples[0].jp}" ({dailyWord.examples[0].id})
+              </div>
+            ) : (
+              <div className="text-xs text-appText-muted italic">
+                "諦めずに最後まで頑張りましょう。" (Mari berusaha keras sampai akhir tanpa menyerah.)
+              </div>
+            )}
           </div>
 
-          <div className="text-[11px] text-appText-muted/70 mt-3 pt-3 border-t border-accent/10">
-            Kata kerja Godan · Bentuk kamus
+          <div className="text-[11px] text-appText-muted/70 mt-3 pt-3 border-t border-accent/10 flex items-center justify-between">
+            <span className="capitalize">{dailyWord?.pos || 'Kata kerja · Bentuk kamus'}</span>
+            {dailyWord && (
+              <button
+                onClick={() => setSelectedWordForModal(dailyWord)}
+                className="text-accent hover:underline font-semibold text-[11px]"
+              >
+                Pelajari Selengkapnya →
+              </button>
+            )}
           </div>
         </div>
 
@@ -158,6 +218,13 @@ export const HomePage: React.FC = () => {
       <BadgesModal
         isOpen={isBadgesOpen}
         onClose={() => setIsBadgesOpen(false)}
+      />
+
+      {/* Word Detail Modal */}
+      <DetailModal
+        item={selectedWordForModal}
+        type="vocab"
+        onClose={() => setSelectedWordForModal(null)}
       />
     </div>
   );

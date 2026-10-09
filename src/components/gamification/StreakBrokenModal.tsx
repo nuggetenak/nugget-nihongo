@@ -17,7 +17,7 @@ export const StreakBrokenModal: React.FC = () => {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fade-in">
       <div
-        className="w-full max-w-md bg-[#181410] border border-amber-900/50 rounded-3xl p-6 sm:p-8 relative overflow-hidden text-center shadow-2xl"
+        className="w-full max-w-md max-h-[90vh] overflow-y-auto bg-[#181410] border border-amber-900/50 rounded-3xl p-6 sm:p-8 relative text-center shadow-2xl scrollbar-none"
         onClick={(e) => e.stopPropagation()}
       >
         <button

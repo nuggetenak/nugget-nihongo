@@ -42,6 +42,9 @@ export interface AppState {
   // FSRS Cards state
   cards: Record<string, { card: FSRSCard; source?: string }>;
   setCard: (id: string, cardData: { card: FSRSCard; source?: string }) => void;
+
+  // Reset entire store
+  resetAllData: () => void;
 }
 
 // Safely read from localStorage
@@ -149,5 +152,25 @@ export const useAppStore = create<AppState>((set, get) => ({
     if (typeof window !== 'undefined') {
       try { localStorage.setItem('nn_fsrs_cards', JSON.stringify(updated)); } catch {}
     }
+  },
+
+  resetAllData: () => {
+    if (typeof window !== 'undefined') {
+      try {
+        const keysToRemove = [];
+        for (let i = 0; i < localStorage.length; i++) {
+          const key = localStorage.key(i);
+          if (key && (key.startsWith('nn_') || key.startsWith('bunpou_'))) {
+            keysToRemove.push(key);
+          }
+        }
+        keysToRemove.forEach((k) => localStorage.removeItem(k));
+      } catch {}
+    }
+    set({
+      streak: 0,
+      xp: 0,
+      cards: {},
+    });
   },
 }));

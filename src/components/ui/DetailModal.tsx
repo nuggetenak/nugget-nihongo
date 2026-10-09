@@ -35,7 +35,7 @@ export const DetailModal: React.FC<DetailModalProps> = ({ item, type, onClose })
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="w-full max-w-lg bg-surface border-2 border-accent/30 rounded-3xl p-6 sm:p-8 space-y-6 shadow-2xl relative overflow-hidden animate-in zoom-in-95 duration-200"
+        className="w-full max-w-lg max-h-[90vh] overflow-y-auto bg-surface border-2 border-accent/30 rounded-3xl p-6 sm:p-8 space-y-6 shadow-2xl relative animate-in zoom-in-95 duration-200"
       >
         {/* Top Header Row */}
         <div className="flex items-center justify-between border-b border-accent/15 pb-4">

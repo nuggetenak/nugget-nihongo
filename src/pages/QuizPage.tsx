@@ -3,15 +3,17 @@ import { Layers, RotateCcw, Volume2, Sparkles, Check, ArrowRight, CornerDownLeft
 import { useAppStore } from '../store/useAppStore';
 import { QuizMode } from '../types/quiz';
 import { JLPTLevel } from '../types/vocab';
+import { FSRSCard } from '../types/fsrs';
 import { loadVocab, loadGrammar } from '../lib/data/dataManager';
 import { generateQuizQuestions, QuizQuestionItem } from '../lib/quiz/quizEngine';
 import { speakJapanese } from '../lib/audio/tts';
+import { playFlipSfx, playSuccessSfx, playErrorSfx, playFanfareSfx } from '../lib/audio/sfx';
 import { QuizResultView } from '../components/quiz/QuizResultView';
 import { useGamificationStore } from '../lib/gamification/gamificationStore';
 import { useGardenStore } from '../lib/garden/gardenStore';
 
 export const QuizPage: React.FC = () => {
-  const { selectedLevel, showToast, incrementXp, setActiveTab } = useAppStore();
+  const { selectedLevel, showToast, incrementXp, setActiveTab, setCard, cards } = useAppStore();
   const [activeMode, setActiveMode] = useState<QuizMode>('flashcard');
 
   // Question state
@@ -91,18 +93,32 @@ export const QuizPage: React.FC = () => {
     }
   }, [currentIndex, currentQ, activeMode]);
 
+  const toggleFlip = () => {
+    setIsFlipped((prev) => {
+      playFlipSfx();
+      return !prev;
+    });
+  };
+
   // Keyboard shortcut listener (Space to flip/advance, 1-4 for choices)
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (isFinished || !currentQ) return;
 
+      const numpadMap: Record<string, number> = {
+        Digit1: 1, Numpad1: 1,
+        Digit2: 2, Numpad2: 2,
+        Digit3: 3, Numpad3: 3,
+        Digit4: 4, Numpad4: 4,
+      };
+
       // Flashcard mode
       if (activeMode === 'flashcard') {
         if (e.code === 'Space') {
           e.preventDefault();
-          setIsFlipped((prev) => !prev);
-        } else if (isFlipped && ['Digit1', 'Digit2', 'Digit3', 'Digit4'].includes(e.code)) {
-          const rating = parseInt(e.key, 10);
+          toggleFlip();
+        } else if (isFlipped && e.code in numpadMap) {
+          const rating = numpadMap[e.code];
           handleFlashcardRate(rating);
         }
         return;
@@ -110,8 +126,8 @@ export const QuizPage: React.FC = () => {
 
       // Choice modes (multiple-choice, conjugation, fill-in, translation, error-find)
       if (currentQ.options && !feedback) {
-        if (['Digit1', 'Digit2', 'Digit3', 'Digit4'].includes(e.code)) {
-          const optIdx = parseInt(e.key, 10) - 1;
+        if (e.code in numpadMap) {
+          const optIdx = numpadMap[e.code] - 1;
           if (currentQ.options[optIdx]) {
             handleSelectOption(currentQ.options[optIdx]);
           }
@@ -128,6 +144,32 @@ export const QuizPage: React.FC = () => {
   // Handle Flashcard Rating (FSRS quality 1 to 4)
   const handleFlashcardRate = (quality: number) => {
     const isCorrect = quality >= 3;
+    if (isCorrect) {
+      playSuccessSfx();
+    } else {
+      playErrorSfx();
+    }
+
+    // Persist FSRS scheduling
+    const existing = cards[currentQ.id]?.card;
+    const reps = (existing?.reps || 0) + 1;
+    const lapses = quality === 1 ? (existing?.lapses || 0) + 1 : (existing?.lapses || 0);
+    const stability = quality === 1 ? 0.5 : (existing?.stability || 1) * (1 + (quality - 1) * 0.8);
+    const scheduledDays = Math.max(1, Math.round(stability));
+    const nextDue = new Date(Date.now() + scheduledDays * 86400000).toISOString();
+    const updatedCard: FSRSCard = {
+      due: nextDue,
+      stability,
+      difficulty: Math.max(1, Math.min(10, (existing?.difficulty || 5) + (3 - quality))),
+      elapsed_days: 0,
+      scheduled_days: scheduledDays,
+      reps,
+      lapses,
+      state: quality === 1 ? 1 : 2,
+      last_review: new Date().toISOString(),
+    };
+    setCard(currentQ.id, { card: updatedCard, source: 'vocab' });
+
     const gainedXp = quality * 3;
     incrementXp(gainedXp);
     setSessionXp((prev) => prev + gainedXp);
@@ -162,12 +204,14 @@ export const QuizPage: React.FC = () => {
     setSessionXp((prev) => prev + gainedXp);
 
     if (isCorrect) {
+      playSuccessSfx();
       setSessionScore((prev) => prev + 1);
       setFeedback({
         isCorrect: true,
         text: 'Bagus sekali! 正解です！ ✨',
       });
     } else {
+      playErrorSfx();
       setFeedback({
         isCorrect: false,
         text: `Hampir benar! Jawaban tepat: "${currentQ.correctAnswer}"`,
@@ -205,12 +249,14 @@ export const QuizPage: React.FC = () => {
     setSessionXp((prev) => prev + gainedXp);
 
     if (isCorrect) {
+      playSuccessSfx();
       setSessionScore((prev) => prev + 1);
       setFeedback({
         isCorrect: true,
         text: 'Hebat! Kalimat tersusun sempurna! 🎉',
       });
     } else {
+      playErrorSfx();
       setFeedback({
         isCorrect: false,
         text: `Urutan yang tepat: "${currentQ.correctAnswer}"`,
@@ -229,6 +275,7 @@ export const QuizPage: React.FC = () => {
 
   const finishSession = () => {
     setIsFinished(true);
+    playFanfareSfx();
     useGamificationStore.getState().recordActivity(questions.length, sessionXp);
     useGardenStore.getState().addWaterDrop(2);
     const newly = useGamificationStore.getState().checkAndAwardBadges({
@@ -254,7 +301,7 @@ export const QuizPage: React.FC = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto py-6 px-4 space-y-6 animate-in fade-in duration-300">
+    <div className="max-w-4xl mx-auto py-6 space-y-6 animate-in fade-in duration-300">
       <div>
         <h1 className="text-2xl font-extrabold text-appText-bright mb-1">Arena Kuis · 練習アリーナ</h1>
         <p className="text-xs text-appText-muted">Latih pemahaman kosakata, tata bahasa, dan konjugasi verba secara mendalam.</p>
@@ -327,7 +374,7 @@ export const QuizPage: React.FC = () => {
           {activeMode === 'flashcard' && (
             <div className="space-y-4">
               <div
-                onClick={() => setIsFlipped(!isFlipped)}
+                onClick={toggleFlip}
                 className={`cursor-pointer min-h-[300px] rounded-3xl border-2 p-8 flex flex-col justify-between text-center transition-all duration-300 select-none shadow-xl ${
                   isFlipped
                     ? 'bg-amber-950/40 border-amber-500/60'
@@ -414,7 +461,7 @@ export const QuizPage: React.FC = () => {
               ) : (
                 <div className="text-center">
                   <button
-                    onClick={() => setIsFlipped(true)}
+                    onClick={toggleFlip}
                     className="px-6 py-3 rounded-xl bg-accent text-bg font-bold text-xs shadow-glow hover:bg-accent-hot transition-all"
                   >
                     Lihat Jawaban (Spasi)
