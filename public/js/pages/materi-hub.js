@@ -240,8 +240,9 @@
       + '<p class="hub2-hero-body">Pilih jalur yang paling cocok buat mood belajar kamu sekarang.</p>'
       + '</div>'
 
-      // Jalur JLPT — full-width door
-      + '<button class="hub2-door hub2-door--full" onclick="window.showJlptDoor()">'
+      // Jalur JLPT & Buku — Two-door gateway
+      + '<div class="hub2-doors-grid">'
+      + '<button class="hub2-door" onclick="window.showJlptDoor()">'
       + '<div class="hub2-door-glyph">日</div>'
       + '<div class="hub2-door-eyebrow">5 LEVEL</div>'
       + '<div class="hub2-door-title">Jalur JLPT</div>'
@@ -249,14 +250,15 @@
       + '<div class="hub2-door-pills">' + levelPills + '</div>'
       + '</button>'
 
-      // Jalur Buku — full-width door
-      + '<button class="hub2-door hub2-door--full" onclick="window.showBukuDoor()">'
+      // Jalur Buku
+      + '<button class="hub2-door" onclick="window.showBukuDoor()">'
       + '<div class="hub2-door-glyph">本</div>'
       + '<div class="hub2-door-eyebrow">3 SERI</div>'
       + '<div class="hub2-door-title">Jalur Buku</div>'
       + '<div class="hub2-door-desc">Ikuti kurikulum buku favoritmu!</div>'
       + '<div class="hub2-door-books">' + bookChips + '</div>'
       + '</button>'
+      + '</div>'
 
       // "Lihat semua kartu" — compact dashed row
       + '<button class="hub2-see-all-row" onclick="window.showFlatBrowse()">'

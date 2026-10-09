@@ -214,6 +214,24 @@
   box-shadow: 0 1px 0 #181410;
 }
 
+/* ── Hub 2-Door Responsive Grid ─────────────────────────────── */
+.hub2-doors-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+@media (min-width: 640px) {
+  .hub2-doors-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.25rem !important;
+  }
+}
+@media (min-width: 960px) {
+  .hub2-doors-grid {
+    gap: 1.5rem !important;
+  }
+}
+
 /* ══════════════════════════════════════════════════════════════════
    2. TABLET RESPONSIVE ENHANCEMENTS (768px – 959px)
 ══════════════════════════════════════════════════════════════════ */
