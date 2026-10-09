@@ -3,6 +3,7 @@ import { useAppStore } from './store/useAppStore';
 import { Sidebar } from './components/layout/Sidebar';
 import { Header } from './components/layout/Header';
 import { BottomNav } from './components/layout/BottomNav';
+import { MobileDrawer } from './components/layout/MobileDrawer';
 import { Toast } from './components/ui/Toast';
 import { SearchPalette } from './components/ui/SearchPalette';
 import { DetailModal } from './components/ui/DetailModal';
@@ -37,6 +38,7 @@ export const App: React.FC = () => {
   const [isKanaOpen, setIsKanaOpen] = useState(false);
   const [isConjugationOpen, setIsConjugationOpen] = useState(false);
   const [isNuanceOpen, setIsNuanceOpen] = useState(false);
+  const [isMobileDrawerOpen, setIsMobileDrawerOpen] = useState(false);
   const [selectedModalItem, setSelectedModalItem] = useState<(NormalizedVocab | NormalizedGrammar) | null>(null);
   const [modalItemType, setModalItemType] = useState<'vocab' | 'grammar'>('vocab');
 
@@ -124,22 +126,32 @@ export const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-bg text-appText flex flex-col antialiased selection:bg-amber-500/30 selection:text-white">
+    <div className="min-h-screen bg-bg text-appText flex flex-col antialiased selection:bg-amber-500/30 selection:text-white w-full max-w-full overflow-x-hidden">
       {/* Desktop Sidebar (Fixed left 260px) */}
       <Sidebar />
 
       {/* Main App Content Container (Offset by 260px on desktop) */}
-      <div className="flex-1 lg:pl-[260px] flex flex-col min-h-screen pb-[calc(5.5rem+env(safe-area-inset-bottom))] lg:pb-12">
+      <div className="flex-1 lg:pl-[260px] flex flex-col min-h-screen pb-[calc(5.5rem+env(safe-area-inset-bottom))] lg:pb-12 w-full max-w-full min-w-0 overflow-x-hidden">
         <Header
           onOpenSearch={() => setIsSearchOpen(true)}
           onOpenShortcuts={() => setIsShortcutsOpen(true)}
+          onOpenMobileDrawer={() => setIsMobileDrawerOpen(true)}
         />
-        <main className="flex-1 px-4 sm:px-6 lg:px-8 max-w-7xl w-full mx-auto">
+        <main className="flex-1 px-3 sm:px-6 lg:px-8 max-w-7xl w-full mx-auto min-w-0 overflow-x-hidden">
           {renderActiveView()}
         </main>
       </div>
 
-      {/* Mobile Bottom Navigation */}
+      {/* Mobile Slide-Over Navigation Drawer */}
+      <MobileDrawer
+        isOpen={isMobileDrawerOpen}
+        onClose={() => setIsMobileDrawerOpen(false)}
+        onOpenKana={() => setIsKanaOpen(true)}
+        onOpenConjugation={() => setIsConjugationOpen(true)}
+        onOpenNuance={() => setIsNuanceOpen(true)}
+      />
+
+      {/* Mobile Bottom Navigation (Includes direct 1-tap Tentang tab) */}
       <BottomNav />
 
       {/* Floating Modern Toast Capsule */}

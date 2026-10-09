@@ -26,6 +26,7 @@ import {
   HelpCircle,
 } from 'lucide-react';
 import { useAppStore } from '../store/useAppStore';
+import { APP_VERSION, APP_RELEASE_NAME } from '../config/version';
 import { usePwaStore } from '../lib/pwa/pwaStore';
 import { useAuthStore } from '../lib/supabase/authStore';
 import { speakJapanese } from '../lib/audio/tts';
@@ -598,7 +599,7 @@ export const SettingsPage: React.FC = () => {
         <div className="flex items-center justify-between text-xs">
           <div>
             <div className="font-semibold text-appText-bright">Versi Sistem</div>
-            <div className="text-appText-muted">v15.16.0 · Arsitektur SPA React & Vite</div>
+            <div className="text-appText-muted">{APP_VERSION} ({APP_RELEASE_NAME}) · Arsitektur SPA React & Vite</div>
           </div>
           <span className="px-2.5 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 font-mono text-[11px] font-bold">
             Produksi Aktif

@@ -175,51 +175,51 @@ export const QuizArenaHub: React.FC<QuizArenaHubProps> = ({
       </div>
 
       {/* Real-time Arena Metric Overview Bar */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3">
-        <div className="p-3.5 rounded-2xl bg-surface border border-accent/20 flex items-center gap-3 shadow-sm">
-          <div className="w-9 h-9 rounded-xl bg-amber-500/15 border border-amber-500/25 flex items-center justify-center text-accent text-lg shrink-0">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3">
+        <div className="p-2.5 sm:p-3.5 rounded-2xl bg-surface border border-accent/20 flex items-center gap-2.5 sm:gap-3 shadow-sm min-w-0 overflow-hidden">
+          <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-amber-500/15 border border-amber-500/25 flex items-center justify-center text-accent text-base sm:text-lg shrink-0">
             🎯
           </div>
-          <div>
-            <div className="text-[10px] font-bold text-appText-muted uppercase tracking-wider">Soal Dijawab</div>
-            <div className="text-base font-extrabold text-appText-bright font-mono">
-              {overall.totalAnswered} <span className="text-[10px] font-normal text-appText-muted">soal</span>
+          <div className="min-w-0 flex-1">
+            <div className="text-[9px] sm:text-[10px] font-bold text-appText-muted uppercase tracking-wider truncate">Soal Dijawab</div>
+            <div className="text-sm sm:text-base font-extrabold text-appText-bright font-mono truncate">
+              {overall.totalAnswered} <span className="text-[9px] sm:text-[10px] font-normal text-appText-muted">soal</span>
             </div>
           </div>
         </div>
 
-        <div className="p-3.5 rounded-2xl bg-surface border border-accent/20 flex items-center gap-3 shadow-sm">
-          <div className="w-9 h-9 rounded-xl bg-emerald-500/15 border border-emerald-500/25 flex items-center justify-center text-emerald-400 text-lg shrink-0">
+        <div className="p-2.5 sm:p-3.5 rounded-2xl bg-surface border border-accent/20 flex items-center gap-2.5 sm:gap-3 shadow-sm min-w-0 overflow-hidden">
+          <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-emerald-500/15 border border-emerald-500/25 flex items-center justify-center text-emerald-400 text-base sm:text-lg shrink-0">
             📊
           </div>
-          <div>
-            <div className="text-[10px] font-bold text-appText-muted uppercase tracking-wider">Rata-rata Akurasi</div>
-            <div className="text-base font-extrabold text-emerald-400 font-mono">
+          <div className="min-w-0 flex-1">
+            <div className="text-[9px] sm:text-[10px] font-bold text-appText-muted uppercase tracking-wider truncate">Akurasi Rata-rata</div>
+            <div className="text-sm sm:text-base font-extrabold text-emerald-400 font-mono truncate">
               {overall.overallAccuracy}%
             </div>
           </div>
         </div>
 
-        <div className="p-3.5 rounded-2xl bg-surface border border-accent/20 flex items-center gap-3 shadow-sm">
-          <div className="w-9 h-9 rounded-xl bg-purple-500/15 border border-purple-500/25 flex items-center justify-center text-purple-400 text-lg shrink-0">
+        <div className="p-2.5 sm:p-3.5 rounded-2xl bg-surface border border-accent/20 flex items-center gap-2.5 sm:gap-3 shadow-sm min-w-0 overflow-hidden">
+          <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-purple-500/15 border border-purple-500/25 flex items-center justify-center text-purple-400 text-base sm:text-lg shrink-0">
             🧠
           </div>
-          <div>
-            <div className="text-[10px] font-bold text-appText-muted uppercase tracking-wider">Kartu FSRS Aktif</div>
-            <div className="text-base font-extrabold text-appText-bright font-mono">
-              {Object.keys(cards).length} <span className="text-[10px] font-normal text-appText-muted">kartu</span>
+          <div className="min-w-0 flex-1">
+            <div className="text-[9px] sm:text-[10px] font-bold text-appText-muted uppercase tracking-wider truncate">Kartu FSRS</div>
+            <div className="text-sm sm:text-base font-extrabold text-appText-bright font-mono truncate">
+              {Object.keys(cards).length} <span className="text-[9px] sm:text-[10px] font-normal text-appText-muted">kartu</span>
             </div>
           </div>
         </div>
 
-        <div className="p-3.5 rounded-2xl bg-surface border border-accent/20 flex items-center gap-3 shadow-sm">
-          <div className="w-9 h-9 rounded-xl bg-cyan-500/15 border border-cyan-500/25 flex items-center justify-center text-cyan-400 text-lg shrink-0">
+        <div className="p-2.5 sm:p-3.5 rounded-2xl bg-surface border border-accent/20 flex items-center gap-2.5 sm:gap-3 shadow-sm min-w-0 overflow-hidden">
+          <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-cyan-500/15 border border-cyan-500/25 flex items-center justify-center text-cyan-400 text-base sm:text-lg shrink-0">
             💧
           </div>
-          <div>
-            <div className="text-[10px] font-bold text-appText-muted uppercase tracking-wider">Tetes Air Tersedia</div>
-            <div className="text-base font-extrabold text-cyan-400 font-mono">
-              {waterDrops} <span className="text-[10px] font-normal text-appText-muted">tetes</span>
+          <div className="min-w-0 flex-1">
+            <div className="text-[9px] sm:text-[10px] font-bold text-appText-muted uppercase tracking-wider truncate">Tetes Air</div>
+            <div className="text-sm sm:text-base font-extrabold text-cyan-400 font-mono truncate">
+              {waterDrops} <span className="text-[9px] sm:text-[10px] font-normal text-appText-muted">tetes</span>
             </div>
           </div>
         </div>

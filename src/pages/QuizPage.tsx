@@ -4,7 +4,7 @@
 // ══════════════════════════════════════════════════════════════════
 
 import React, { useState, useEffect } from 'react';
-import { Layers, RotateCcw, Volume2, Sparkles, Check, ArrowRight, CornerDownLeft, ChevronLeft } from 'lucide-react';
+import { Layers, RotateCcw, Volume2, Sparkles, Check, ArrowRight, CornerDownLeft, ChevronLeft, Flag } from 'lucide-react';
 import { useAppStore } from '../store/useAppStore';
 import { QuizMode } from '../types/quiz';
 import { JLPTLevel } from '../types/vocab';
@@ -28,6 +28,8 @@ import { useGamificationStore } from '../lib/gamification/gamificationStore';
 import { useGardenStore } from '../lib/garden/gardenStore';
 import { useSwipeGesture } from '../components/quiz/useSwipeGesture';
 import { QuizConfigModal } from '../components/quiz/QuizConfigModal';
+import { SpoilerTranslation } from '../components/ui/SpoilerTranslation';
+import { ReportIssueModal, ReportItemContext } from '../components/ui/ReportIssueModal';
 import { QuizExitGuardModal } from '../components/quiz/QuizExitGuardModal';
 
 export const QuizPage: React.FC = () => {
@@ -63,6 +65,20 @@ export const QuizPage: React.FC = () => {
   const [sessionScore, setSessionScore] = useState(0);
   const [sessionXp, setSessionXp] = useState(0);
   const [sessionEarnedWater, setSessionEarnedWater] = useState(0);
+
+  // Content Issue Report Modal State
+  const [reportContext, setReportContext] = useState<ReportItemContext | null>(null);
+  const [isReportOpen, setIsReportOpen] = useState(false);
+
+  const handleOpenReport = (q: QuizQuestionItem) => {
+    setReportContext({
+      itemId: q.id,
+      itemType: 'quiz_question',
+      originalJapanese: q.questionText,
+      originalTranslation: q.subText || q.explanation,
+    });
+    setIsReportOpen(true);
+  };
 
   // Calculate count of due cards in FSRS
   const dueCount = getFSRSDueCount(cards);
@@ -530,6 +546,7 @@ export const QuizPage: React.FC = () => {
               onGoHome={() => setActiveTab('home')}
               onRetryMistakes={mistakesList.length > 0 ? startMistakeSession : undefined}
               onGoToHub={() => setViewState('hub')}
+              onReportQuestion={handleOpenReport}
             />
           ) : !currentQ ? (
             <div className="bg-surface border border-accent/20 rounded-3xl p-8 text-center space-y-3">
@@ -590,15 +607,27 @@ export const QuizPage: React.FC = () => {
 
                     <div className="flex items-center justify-between text-xs text-appText-muted">
                       <span className="font-semibold text-accent">{currentQ.prompt}</span>
-                      <button
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          speakJapanese(currentQ.questionText);
-                        }}
-                        className="p-1.5 rounded-xl bg-surface hover:bg-surface-2 text-appText-muted hover:text-accent transition-all"
-                      >
-                        <Volume2 className="w-4 h-4" />
-                      </button>
+                      <div className="flex items-center gap-1.5">
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            handleOpenReport(currentQ);
+                          }}
+                          className="p-1.5 rounded-xl bg-surface hover:bg-surface-2 text-appText-muted hover:text-amber-400 transition-all"
+                          title="Laporkan keanehan/kesalahan materi kartu 🚩"
+                        >
+                          <Flag className="w-3.5 h-3.5" />
+                        </button>
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            speakJapanese(currentQ.questionText);
+                          }}
+                          className="p-1.5 rounded-xl bg-surface hover:bg-surface-2 text-appText-muted hover:text-accent transition-all"
+                        >
+                          <Volume2 className="w-4 h-4" />
+                        </button>
+                      </div>
                     </div>
 
                     <div className="my-auto space-y-3">
@@ -683,19 +712,41 @@ export const QuizPage: React.FC = () => {
                 <div className="space-y-4">
                   {/* Question Card */}
                   <div className="bg-surface border-2 border-accent/25 rounded-3xl p-6 sm:p-8 space-y-3 shadow-lg relative">
-                    <div className="text-xs font-bold text-accent">{currentQ.prompt}</div>
+                    <div className="flex items-center justify-between">
+                      <div className="text-xs font-bold text-accent">{currentQ.prompt}</div>
+                      <div className="flex items-center gap-1.5">
+                        <button
+                          onClick={() => handleOpenReport(currentQ)}
+                          className="p-1.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-amber-400 transition-all"
+                          title="Laporkan keanehan/kesalahan soal 🚩"
+                        >
+                          <Flag className="w-3.5 h-3.5" />
+                        </button>
+                        <button
+                          onClick={() => speakJapanese(currentQ.questionText)}
+                          className="p-1.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-accent transition-all"
+                          title="Dengarkan pelafalan"
+                        >
+                          <Volume2 className="w-4 h-4" />
+                        </button>
+                      </div>
+                    </div>
                     <div className="text-3xl sm:text-4xl font-jp font-bold text-appText-bright">
                       {currentQ.questionText}
                     </div>
                     {currentQ.subText && (
-                      <div className="text-xs text-appText-muted">{currentQ.subText}</div>
+                      <div className="pt-1">
+                        {activeMode === 'fill-in' || currentQ.subText.toLowerCase().includes('arti') ? (
+                          <SpoilerTranslation
+                            text={currentQ.subText.replace(/^Arti:\s*"?/, '').replace(/"?$/, '')}
+                            autoReveal={!!feedback}
+                            label="Arti Kalimat"
+                          />
+                        ) : (
+                          <div className="text-xs text-appText-muted">{currentQ.subText}</div>
+                        )}
+                      </div>
                     )}
-                    <button
-                      onClick={() => speakJapanese(currentQ.questionText)}
-                      className="absolute right-5 top-5 p-2 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-accent transition-all"
-                    >
-                      <Volume2 className="w-4 h-4" />
-                    </button>
                   </div>
 
                   {/* Options Grid */}
@@ -740,7 +791,16 @@ export const QuizPage: React.FC = () => {
               {activeMode === 'rearrange' && (
                 <div className="space-y-4">
                   <div className="bg-surface border-2 border-accent/25 rounded-3xl p-6 space-y-2">
-                    <div className="text-xs font-bold text-accent">{currentQ.prompt}</div>
+                    <div className="flex items-center justify-between">
+                      <div className="text-xs font-bold text-accent">{currentQ.prompt}</div>
+                      <button
+                        onClick={() => handleOpenReport(currentQ)}
+                        className="p-1.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-amber-400 transition-all"
+                        title="Laporkan keanehan susunan kalimat 🚩"
+                      >
+                        <Flag className="w-3.5 h-3.5" />
+                      </button>
+                    </div>
                     <div className="text-lg font-bold text-appText-bright">"{currentQ.questionText}"</div>
                   </div>
 
@@ -846,6 +906,13 @@ export const QuizPage: React.FC = () => {
         isOpen={isExitGuardOpen}
         onStay={() => setIsExitGuardOpen(false)}
         onConfirmExit={handleConfirmExit}
+      />
+
+      {/* Content Issue Report Modal */}
+      <ReportIssueModal
+        isOpen={isReportOpen}
+        onClose={() => setIsReportOpen(false)}
+        context={reportContext}
       />
     </div>
   );

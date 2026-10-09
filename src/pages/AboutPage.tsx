@@ -20,6 +20,7 @@ import {
   Volume2,
 } from 'lucide-react';
 import { useAppStore } from '../store/useAppStore';
+import { APP_VERSION, APP_RELEASE_NAME } from '../config/version';
 
 interface FAQItem {
   id: string;
@@ -131,7 +132,7 @@ export const AboutPage: React.FC = () => {
           <div className="max-w-xl space-y-3">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/15 border border-amber-500/30 text-accent font-bold text-xs">
               <img src="/icons/icon-192.png" alt="Logo" className="w-4 h-4 rounded-full object-cover" />
-              <span>Nugget Nihongo · v15.16.0</span>
+              <span>Nugget Nihongo · {APP_VERSION} ({APP_RELEASE_NAME})</span>
             </div>
 
             <h1 className="text-2xl sm:text-4xl font-extrabold text-appText-bright tracking-tight leading-tight">
@@ -328,7 +329,7 @@ export const AboutPage: React.FC = () => {
             <span className="text-xs text-appText-muted font-mono">2.368 Kosakata · 163 Grammar</span>
           </div>
 
-          <div className="p-4 rounded-2xl bg-surface-2/80 border border-emerald-500/20 flex items-center justify-between">
+          <div className="p-4 rounded-2xl bg-surface-2/80 border border-emerald-500/20 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
             <span className="flex items-center gap-2.5 text-xs font-bold text-appText-bright">
               <span className="w-3 h-3 rounded-full bg-emerald-400" />
               JLPT N2 & N1 (Lanjutan & Profesional)
@@ -337,7 +338,7 @@ export const AboutPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="p-3.5 rounded-xl bg-amber-500/10 border border-amber-500/20 text-xs text-appText-muted flex items-center justify-between">
+        <div className="p-3.5 rounded-xl bg-amber-500/10 border border-amber-500/20 text-xs text-appText-muted flex flex-col sm:flex-row sm:items-center justify-between gap-2">
           <span>Total Database: <b>4.839 Kosakata</b> & <b>859 Pola Tata Bahasa</b></span>
           <span className="text-accent font-semibold">100% Bebas Typo & Terindeks</span>
         </div>
@@ -371,7 +372,7 @@ export const AboutPage: React.FC = () => {
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
           <div className="p-3 rounded-xl bg-surface-2 border border-accent/10">
             <div className="text-appText-muted text-[11px]">Versi Rilis</div>
-            <div className="font-bold text-appText-bright font-mono mt-0.5">v15.16.0</div>
+            <div className="font-bold text-appText-bright font-mono mt-0.5">{APP_VERSION}</div>
           </div>
           <div className="p-3 rounded-xl bg-surface-2 border border-accent/10">
             <div className="text-appText-muted text-[11px]">Framework</div>

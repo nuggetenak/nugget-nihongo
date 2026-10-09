@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Volume2, X, Sparkles, BookOpen, RotateCcw } from 'lucide-react';
+import { Volume2, X, Sparkles, BookOpen, RotateCcw, Flag, Eye, EyeOff } from 'lucide-react';
 import { NormalizedVocab, NormalizedGrammar } from '../../lib/data/dataManager';
 import { speakJapanese } from '../../lib/audio/tts';
 import { ConjugationModal } from '../grammar/ConjugationModal';
+import { ReportIssueModal } from './ReportIssueModal';
 
 interface DetailModalProps {
   item: (NormalizedVocab | NormalizedGrammar) | null;
@@ -12,6 +13,9 @@ interface DetailModalProps {
 
 export const DetailModal: React.FC<DetailModalProps> = ({ item, type, onClose }) => {
   const [isConjugationModalOpen, setIsConjugationModalOpen] = useState(false);
+  const [blurTranslations, setBlurTranslations] = useState(false);
+  const [revealedSentences, setRevealedSentences] = useState<Record<number, boolean>>({});
+  const [isReportOpen, setIsReportOpen] = useState(false);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -121,9 +125,23 @@ export const DetailModal: React.FC<DetailModalProps> = ({ item, type, onClose })
         {/* Examples Section */}
         {item.examples && item.examples.length > 0 && (
           <div className="space-y-2.5">
-            <div className="text-xs font-bold text-appText-bright flex items-center gap-1.5">
-              <BookOpen className="w-3.5 h-3.5 text-accent" />
-              <span>Contoh Kalimat:</span>
+            <div className="flex items-center justify-between text-xs font-bold text-appText-bright">
+              <div className="flex items-center gap-1.5">
+                <BookOpen className="w-3.5 h-3.5 text-accent" />
+                <span>Contoh Kalimat:</span>
+              </div>
+              <button
+                type="button"
+                onClick={() => {
+                  setBlurTranslations(!blurTranslations);
+                  setRevealedSentences({});
+                }}
+                className="text-[11px] font-semibold text-accent hover:text-accent-hot flex items-center gap-1 px-2 py-0.5 rounded-lg bg-surface-2 border border-accent/20 transition-colors"
+                title="Samarkan terjemahan untuk latihan membaca mandiri"
+              >
+                {blurTranslations ? <Eye className="w-3 h-3" /> : <EyeOff className="w-3 h-3" />}
+                <span>{blurTranslations ? 'Buka Semua' : 'Samarkan'}</span>
+              </button>
             </div>
             <div className="space-y-2 max-h-48 overflow-y-auto pr-1">
               {item.examples.map((ex, idx) => (
@@ -136,7 +154,21 @@ export const DetailModal: React.FC<DetailModalProps> = ({ item, type, onClose })
                       className="font-jp text-appText-bright text-sm"
                       dangerouslySetInnerHTML={{ __html: ex.jp }}
                     />
-                    <div className="text-appText-muted">{ex.id}</div>
+                    {blurTranslations && !revealedSentences[idx] ? (
+                      <button
+                        type="button"
+                        onClick={() => setRevealedSentences((prev) => ({ ...prev, [idx]: true }))}
+                        className="inline-flex items-center gap-1 text-[11px] text-accent/80 hover:text-accent select-none cursor-pointer"
+                        title="Klik untuk melihat terjemahan"
+                      >
+                        <span className="blur-[4px] opacity-40">{ex.id}</span>
+                        <span className="text-[10px] bg-amber-500/15 px-1.5 py-0.2 rounded font-bold">
+                          Intip 👁️
+                        </span>
+                      </button>
+                    ) : (
+                      <div className="text-appText-muted">{ex.id}</div>
+                    )}
                   </div>
                   <button
                     onClick={() => speakJapanese(ex.jp)}
@@ -150,6 +182,17 @@ export const DetailModal: React.FC<DetailModalProps> = ({ item, type, onClose })
             </div>
           </div>
         )}
+
+        {/* Report Content Mistake / Unnatural Sentence */}
+        <div className="pt-2 border-t border-accent/15">
+          <button
+            onClick={() => setIsReportOpen(true)}
+            className="w-full py-2 px-3 rounded-xl bg-surface-2/60 hover:bg-surface-2 border border-accent/15 text-appText-muted hover:text-amber-400 text-xs font-medium transition-all flex items-center justify-center gap-1.5 active:scale-95"
+          >
+            <Flag className="w-3.5 h-3.5 text-accent" />
+            <span>Laporkan Kesalahan / Kalimat Rancu 🚩</span>
+          </button>
+        </div>
       </div>
 
       {/* Verb Conjugation Matrix Modal */}
@@ -157,6 +200,18 @@ export const DetailModal: React.FC<DetailModalProps> = ({ item, type, onClose })
         isOpen={isConjugationModalOpen}
         onClose={() => setIsConjugationModalOpen(false)}
         initialVerb={title}
+      />
+
+      {/* Content Issue Report Modal */}
+      <ReportIssueModal
+        isOpen={isReportOpen}
+        onClose={() => setIsReportOpen(false)}
+        context={{
+          itemId: item.id,
+          itemType: isVocab ? 'vocab' : 'grammar',
+          originalJapanese: title || '',
+          originalTranslation: isVocab ? vocab?.meaning : grammar?.meaning,
+        }}
       />
     </div>
   );

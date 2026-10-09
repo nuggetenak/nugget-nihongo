@@ -1,5 +1,5 @@
 import React from 'react';
-import { Award, RotateCcw, Home, Sparkles, CheckCircle2, XCircle, Volume2, Droplets } from 'lucide-react';
+import { Award, RotateCcw, Home, Sparkles, CheckCircle2, XCircle, Volume2, Droplets, Flag } from 'lucide-react';
 import { QuizQuestionItem } from '../../lib/quiz/quizEngine';
 import { speakJapanese } from '../../lib/audio/tts';
 
@@ -13,6 +13,7 @@ interface QuizResultViewProps {
   onGoHome: () => void;
   onRetryMistakes?: () => void;
   onGoToHub?: () => void;
+  onReportQuestion?: (question: QuizQuestionItem) => void;
 }
 
 export const QuizResultView: React.FC<QuizResultViewProps> = ({
@@ -25,6 +26,7 @@ export const QuizResultView: React.FC<QuizResultViewProps> = ({
   onGoHome,
   onRetryMistakes,
   onGoToHub,
+  onReportQuestion,
 }) => {
   const percentage = Math.round((score / total) * 100);
 
@@ -141,6 +143,15 @@ export const QuizResultView: React.FC<QuizResultViewProps> = ({
                   >
                     <Volume2 className="w-3 h-3" />
                   </button>
+                  {onReportQuestion && (
+                    <button
+                      onClick={() => onReportQuestion(ans.question)}
+                      className="p-1 rounded-md bg-surface border border-accent/15 hover:border-amber-400/50 text-appText-muted hover:text-amber-400 transition-colors"
+                      title="Laporkan kejanggalan/kesalahan soal ini 🚩"
+                    >
+                      <Flag className="w-3 h-3" />
+                    </button>
+                  )}
                   {ans.question.subText && (
                     <span className="text-[11px] text-appText-muted">{ans.question.subText}</span>
                   )}

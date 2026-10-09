@@ -1,5 +1,5 @@
 import React from 'react';
-import { Search, Flame, Zap, Download, RefreshCw, User as UserIcon, Cloud, HelpCircle, Compass } from 'lucide-react';
+import { Search, Flame, Zap, Download, RefreshCw, User as UserIcon, Cloud, HelpCircle, Compass, Menu } from 'lucide-react';
 import { useAppStore } from '../../store/useAppStore';
 import { usePwaStore } from '../../lib/pwa/pwaStore';
 import { useAuthStore } from '../../lib/supabase/authStore';
@@ -9,9 +9,10 @@ import { JLPTLevel } from '../../types/vocab';
 interface HeaderProps {
   onOpenSearch?: () => void;
   onOpenShortcuts?: () => void;
+  onOpenMobileDrawer?: () => void;
 }
 
-export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onOpenShortcuts }) => {
+export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onOpenShortcuts, onOpenMobileDrawer }) => {
   const {
     streak, xp, selectedLevel, setSelectedLevel,
     showFurigana, setShowFurigana,
@@ -24,15 +25,22 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onOpenShortcuts })
   const levels: (JLPTLevel | 'all')[] = ['all', 'n5', 'n4', 'n3', 'n2', 'n1'];
 
   return (
-    <header className="sticky top-0 z-30 bg-surface/90 backdrop-blur-md border-b border-accent/15 px-3 sm:px-6 lg:px-8 py-2.5 sm:py-3 flex items-center justify-between gap-2.5 sm:gap-4">
-      {/* Mobile brand (hidden on desktop) */}
-      <div className="flex lg:hidden items-center gap-2 shrink-0">
+    <header className="sticky top-0 z-30 bg-surface/90 backdrop-blur-md border-b border-accent/15 px-2.5 sm:px-6 lg:px-8 py-2.5 sm:py-3 flex items-center justify-between gap-2 sm:gap-4 max-w-full overflow-hidden">
+      {/* Mobile brand & Menu Drawer Toggle (hidden on desktop) */}
+      <div className="flex lg:hidden items-center gap-1.5 shrink-0">
+        <button
+          onClick={onOpenMobileDrawer}
+          className="p-1.5 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/20 text-accent transition-all active:scale-95"
+          title="Buka Menu Navigasi Lengkap"
+        >
+          <Menu className="w-4 h-4" />
+        </button>
         <img
           src="/icons/icon-192.png"
           alt="Nugget Nihongo"
-          className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg object-cover shadow-sm ring-1 ring-amber-500/30"
+          onClick={onOpenMobileDrawer}
+          className="w-7 h-7 rounded-lg object-cover shadow-sm ring-1 ring-amber-500/30 cursor-pointer"
         />
-        <span className="font-bold text-xs sm:text-sm text-appText-bright hidden xs:inline">Nugget</span>
       </div>
 
       {/* Search Input Bar with Shortcut Indicator */}
@@ -102,18 +110,18 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onOpenShortcuts })
       </div>
 
       {/* Gamification Badges: Streak, XP & Offline Indicator */}
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
         {/* Offline Status Pill */}
         <OfflineStatusPill />
 
-        {/* Navigation & Feature Guide Button */}
+        {/* Navigation & Feature Guide Button (Desktop/Tablet) */}
         <button
           onClick={openFeatureGuide}
           title="Panduan Fitur & Bantuan (Tekan untuk melihat seluruh modul & tips)"
-          className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-full bg-amber-500/10 hover:bg-amber-500/20 text-accent border border-accent/25 text-xs font-bold transition-all shadow-sm active:scale-95"
+          className="hidden sm:flex items-center gap-1.5 px-2.5 py-1.5 rounded-full bg-amber-500/10 hover:bg-amber-500/20 text-accent border border-accent/25 text-xs font-bold transition-all shadow-sm active:scale-95"
         >
           <Compass className="w-3.5 h-3.5" />
-          <span className="hidden sm:inline">Panduan</span>
+          <span>Panduan</span>
         </button>
 
         {/* Desktop Shortcuts Help Button */}
@@ -121,7 +129,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onOpenShortcuts })
           <button
             onClick={onOpenShortcuts}
             title="Pintasan Keyboard (Tekan ?)"
-            className="hidden sm:flex items-center justify-center w-8 h-8 rounded-full bg-surface-2 hover:bg-surface-3 border border-accent/20 text-appText-muted hover:text-accent transition-all"
+            className="hidden md:flex items-center justify-center w-8 h-8 rounded-full bg-surface-2 hover:bg-surface-3 border border-accent/20 text-appText-muted hover:text-accent transition-all"
           >
             <HelpCircle className="w-4 h-4" />
           </button>
@@ -133,31 +141,31 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onOpenShortcuts })
           <span className="text-xs font-bold font-mono">{streak}</span>
         </div>
 
-        {/* XP Pill */}
-        <div className="flex items-center gap-1 sm:gap-1.5 px-2 sm:px-3 py-1 sm:py-1.5 rounded-full bg-surface-2 border border-accent/20 text-appText-bright shadow-sm shrink-0">
-          <Zap className="w-3.5 sm:w-4 h-3.5 sm:h-4 fill-amber-400 text-amber-400" />
+        {/* XP Pill (Desktop/Tablet) */}
+        <div className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-2 border border-accent/20 text-appText-bright shadow-sm shrink-0">
+          <Zap className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
           <span className="text-xs font-bold font-mono">{xp} XP</span>
         </div>
 
-        {/* PWA Install Button */}
+        {/* PWA Install Button (Desktop/Tablet) */}
         {!isInstalled && (
           <button
             onClick={() => setShowInstallModal(true)}
             title="Pasang Aplikasi (PWA)"
-            className="flex items-center gap-1 px-2.5 py-1.5 rounded-full bg-amber-500/10 hover:bg-amber-500/20 text-amber-300 border border-amber-500/30 text-xs font-semibold transition-all active:scale-95"
+            className="hidden md:flex items-center gap-1 px-2.5 py-1.5 rounded-full bg-amber-500/10 hover:bg-amber-500/20 text-amber-300 border border-amber-500/30 text-xs font-semibold transition-all active:scale-95"
           >
             <Download className="w-3.5 h-3.5" />
-            <span className="hidden sm:inline">Pasang</span>
+            <span>Pasang</span>
           </button>
         )}
 
         {/* Supabase Cloud Sync & Account */}
         {user ? (
-          <div className="flex items-center gap-1.5">
+          <div className="flex items-center gap-1 sm:gap-1.5">
             <button
               onClick={syncNow}
               title={syncStatus === 'syncing' ? 'Sedang sinkronisasi...' : 'Tersinkron ke Cloud (Klik untuk sinkron ulang)'}
-              className={`flex items-center gap-1 px-2.5 py-1.5 rounded-full border text-xs font-semibold transition-all ${
+              className={`hidden sm:flex items-center gap-1 px-2.5 py-1.5 rounded-full border text-xs font-semibold transition-all ${
                 syncStatus === 'syncing'
                   ? 'bg-amber-500/15 border-amber-500/35 text-amber-300'
                   : syncStatus === 'error'
@@ -172,11 +180,13 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onOpenShortcuts })
             </button>
 
             <button
-              onClick={() => openAuthModal('signin')}
+              onClick={() => openAuthModal()}
               title={`Akun: ${user.email}`}
-              className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-full bg-surface-2 border border-accent/25 text-appText-bright text-xs font-semibold hover:border-accent transition-all max-w-[120px]"
+              className="flex items-center gap-1.5 p-1 sm:px-2.5 sm:py-1.5 rounded-full bg-surface-2 border border-accent/25 text-appText-bright text-xs font-semibold hover:border-accent transition-all max-w-[120px]"
             >
-              <UserIcon className="w-3.5 h-3.5 text-accent shrink-0" />
+              <div className="w-6 h-6 rounded-full bg-amber-500/20 text-accent font-bold flex items-center justify-center text-[10px] shrink-0">
+                {user.email?.charAt(0).toUpperCase()}
+              </div>
               <span className="truncate hidden sm:inline">
                 {user.user_metadata?.display_name || user.email?.split('@')[0]}
               </span>
@@ -186,7 +196,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onOpenShortcuts })
           <button
             onClick={() => openAuthModal('signin')}
             title="Masuk untuk sinkronisasi cloud"
-            className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-full bg-surface-2 hover:bg-surface-3 border border-accent/20 hover:border-accent text-appText-bright text-xs font-semibold transition-all"
+            className="flex items-center gap-1 px-2 py-1 sm:px-2.5 sm:py-1.5 rounded-full bg-surface-2 hover:bg-surface-3 border border-accent/20 hover:border-accent text-appText-bright text-xs font-semibold transition-all shrink-0"
           >
             <UserIcon className="w-3.5 h-3.5 text-accent" />
             <span className="hidden sm:inline">Masuk</span>

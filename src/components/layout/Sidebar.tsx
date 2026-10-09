@@ -1,6 +1,7 @@
 import React from 'react';
 import { Home, BookOpen, Layers, Sprout, Sparkles, Settings, HelpCircle } from 'lucide-react';
 import { useAppStore, AppState } from '../../store/useAppStore';
+import { APP_VERSION } from '../../config/version';
 
 interface NavItem {
   id: AppState['activeTab'];
@@ -90,7 +91,7 @@ export const Sidebar: React.FC = () => {
       {/* Bottom User / Info Card */}
       <div className="p-4 border-t border-accent/15 bg-surface-2/40">
         <div className="flex items-center justify-between text-xs text-appText-muted">
-          <span>v15.16 · Modern Engine</span>
+          <span>{APP_VERSION} · Modern Engine</span>
           <span className="text-accent font-semibold">100% Offline</span>
         </div>
       </div>
