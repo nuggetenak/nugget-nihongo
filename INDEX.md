@@ -1,7 +1,7 @@
 # NUGGET NIHONGO — RESEARCH LIBRARY INDEX
-**Version:** v19 (Indonesian L1 Diagnostic, Vocational EPA/SSW Corpus & Algorithmic Blueprint Expansion)  
-**Total Unique Citations:** 757  
-**Verified DOIs:** 361 (100% accounted for)
+**Version:** v20 (18-Sector SSW Master Taxonomy & Adult Lexical Error Expansion)  
+**Total Unique Citations:** 760  
+**Verified DOIs:** 364 (100% accounted for)
 
 ---
 
@@ -23,7 +23,7 @@ nugget-nihongo-research/
 │   │   ├── SECTION2-GRAMMAR.md                ← Grammar acquisition & Processability Theory (31)
 │   │   ├── SECTION3-LISTENING.md              ← L2 listening comprehension (25)
 │   │   ├── SECTION4-ER.md                     ← Extensive reading & 98% lexical coverage (25)
-│   │   ├── SECTION5-CONTRASTIVE.md            ← Indonesian-Japanese contrastive linguistics (~64)
+│   │   ├── SECTION5-CONTRASTIVE.md            ← Indonesian-Japanese contrastive linguistics (~67)
 │   │   ├── SECTION8-PWA.md                    ← Mobile CALL/MALL architecture, SDT, malu (~145)
 │   │   ├── SECTION9-MULTIMEDIA.md             ← Cognitive Load Theory & Japanese orthography (~93)
 │   │   ├── SECTION10-GAMIFICATION-HABIT.md    ← Behavioral habit formation, sleep consolidation (~41)
@@ -31,7 +31,7 @@ nugget-nihongo-research/
 │   │   ├── SECTION12-OUTPUT-THEORY.md         ← Pushed output hypothesis & noticing the gap (~32)
 │   │   ├── SECTION13-INDIVIDUAL-DIFFS.md      ← Working memory capacity, anxiety, aptitude (~43)
 │   │   ├── SECTION14-SOCIO.md                 ← Interlanguage pragmatics & honorifics (25)
-│   │   ├── SECTION15-SSW.md                   ← Specified Skilled Worker vocational Japanese (~26)
+│   │   ├── SECTION15-SSW.md                   ← Specified Skilled Worker vocational Japanese (29)
 │   │   ├── SECTION16-CALL.md                  ← Meta-analytic CALL/MALL evidence (21)
 │   │   ├── SECTION17-ADULT.md                 ← Adult SLA, ego permeability, autonomous learning (19)
 │   │   ├── SECTION-CA-CURRICULUM.md           ← Curriculum architecture & vocabulary depth (~107)
@@ -41,14 +41,15 @@ nugget-nihongo-research/
 │   │   │   └── INDONESIAN-L1-DIAGNOSTIC-INVENTORY-v1.md ← 100-item micro-diagnostic contrastive matrix
 │   │   │
 │   │   ├── vocational/                        ← Workplace SLA & Discourse Corpus (Jalur B)
-│   │   │   └── EPA-KAIGO-SSW-WORKPLACE-CORPUS-v1.md ← Eldercare speech shifts, pain onomatopoeia, gemba nihongo
+│   │   │   ├── EPA-KAIGO-SSW-WORKPLACE-CORPUS-v1.md ← Eldercare speech shifts, pain onomatopoeia, gemba nihongo
+│   │   │   └── ALL-SECTOR-SSW-TAXONOMY-CORPUS-v1.md ← Exhaustive 18-sector Tokutei Ginou master taxonomy, TSA & safety shouting
 │   │   │
 │   │   └── synthesis/                         ← Pedagogical synthesis specifications
 │   │       ├── LEVEL-LADDER-SPEC-v1.md        ← F1: 5-level exit criteria ladder (N5 to N1)
 │   │       └── SECTION18-SYNTHESIS-v1.md      ← F2: unified pedagogical model
 │   │
 │   └── bibliography/
-│       ├── MASTER-BIBLIOGRAPHY-FINAL.md       ← Canonical bibliographic registry (757 unique entries, v19)
+│       ├── MASTER-BIBLIOGRAPHY-FINAL.md       ← Canonical bibliographic registry (760 unique entries, v20)
 │       └── DOI-VERIFICATION-TRACKER.md        ← CrossRef & publisher audit registry (100% accounted for)
 │
 ├── blueprint/
@@ -74,7 +75,7 @@ nugget-nihongo-research/
 | §2 | Grammar Acquisition | `SECTION2-GRAMMAR.md` | GA | 31 |
 | §3 | L2 Listening | `SECTION3-LISTENING.md` | LS | 25 |
 | §4 | Extensive Reading | `SECTION4-ER.md` | ER | 25 |
-| §5 | Contrastive + Error Analysis | `SECTION5-CONTRASTIVE.md` | CP, EA | ~64 |
+| §5 | Contrastive + Error Analysis | `SECTION5-CONTRASTIVE.md` | CP, EA | ~67 |
 | §8 | PWA Platform | `SECTION8-PWA.md` | IM, MALL, SDT, CC | ~145 |
 | §9 | Multimedia + Orthography + Phon. Recoding | `SECTION9-MULTIMEDIA.md` | KS, OD, CL, CT, AV, DC, PR | ~93 |
 | §10 | Gamification, Habit, Sleep | `SECTION10-GAMIFICATION-HABIT.md` | GI, HB, SL | ~41 |
@@ -82,7 +83,7 @@ nugget-nihongo-research/
 | §12 | Output Theory & Noticing | `SECTION12-OUTPUT-THEORY.md` | OT | ~32 |
 | §13 | Individual Differences | `SECTION13-INDIVIDUAL-DIFFS.md` | ID | ~43 |
 | §14 | Sociolinguistics & Keigo | `SECTION14-SOCIO.md` | SC | 25 |
-| §15 | SSW / Vocational Japanese | `SECTION15-SSW.md` | VS | ~26 |
+| §15 | SSW / Vocational Japanese | `SECTION15-SSW.md` | VS | 29 |
 | §16 | CALL/MALL Meta-Analysis | `SECTION16-CALL.md` | CM | 21 |
 | §17 | Adult Learning | `SECTION17-ADULT.md` | AL | 19 |
 | §CA | Curriculum Architecture + Vocab Depth | `SECTION-CA-CURRICULUM.md` | CA, VD, GE, GF, GM, GX, GL | ~107 |
@@ -92,17 +93,17 @@ nugget-nihongo-research/
 
 ---
 
-## 3. BIBLIOGRAPHY & AUDIT METRICS (v19)
+## 3. BIBLIOGRAPHY & AUDIT METRICS (v20)
 
 | Metric | Value | Status |
 |---|---|---|
-| **Total unique entries** | **757** | Fully verified and accounted for |
-| **Entries with verified DOI** | **361** | 100% accounted for against CrossRef/publisher records |
+| **Total unique entries** | **760** | Fully verified and accounted for |
+| **Entries with verified DOI** | **364** | 100% accounted for against CrossRef/publisher records |
 | **Open duplicate pairs** | **0** | All 11 candidate pairs formally resolved (DUP-01–DUP-11) |
-| **Open literature gaps** | **0** | EA-22 resolved and expanded with EA-22–EA-28 & VS-29 |
+| **Open literature gaps** | **0** | EA-22 resolved and expanded with EA-22–EA-29 & VS-29–VS-31 |
 | **Canonical assignment** | **Complete** | Matsunaga (1999) canonicalized as `[OD-20]` |
 | **DDM Cross-Conflicts** | **Resolved** | Flags A, B, C, D, E reconciled in `DESIGN-DECISION-MASTER-v1.md` |
-| **Synthesis & Operational specs** | **Complete** | Jalur A (Diagnostic), Jalur B (Vocational), Jalur C (Algorithmic), Level Ladder, §18 Synthesis |
+| **Synthesis & Operational specs** | **Complete** | Jalur A (Diagnostic), Jalur B (Vocational), Jalur C (Algorithmic), 18-Sector SSW Taxonomy, Level Ladder, §18 Synthesis |
 
 ---
 
@@ -112,6 +113,7 @@ nugget-nihongo-research/
 |---|---|---|---|
 | **L1 Diagnostic Inventory (Jalur A)** | `corpus/sections/contrastive/INDONESIAN-L1-DIAGNOSTIC-INVENTORY-v1.md` | 100-item micro-diagnostic contrastive matrix across 5 interference domains with back-card gap prescriptions | ✅ Complete |
 | **Vocational SLA Corpus (Jalur B)** | `corpus/sections/vocational/EPA-KAIGO-SSW-WORKPLACE-CORPUS-v1.md` | Eldercare speech level shifts, pain onomatopoeia, gemba nihongo safety, and industrial discourse | ✅ Complete |
+| **All-Sector SSW Taxonomy** | `corpus/sections/vocational/ALL-SECTOR-SSW-TAXONOMY-CORPUS-v1.md` | Complete 18-sector Specified Skilled Worker operational taxonomy, TSA workflows, Layer 2 terminology, emergency shouting, and card mappings | ✅ Complete |
 | **Micro-Session Spec (Jalur C)** | `blueprint/MICRO-SESSION-ALGORITHMIC-SPEC-v1.md` | 5-to-7 minute session formula, 6 production card archetypes (JSON schemas), and dual-track FSRS latency tuning | ✅ Complete |
 | **Level Ladder Specification** | `corpus/sections/synthesis/LEVEL-LADDER-SPEC-v1.md` | 5-level exit criteria ladder (N5 to N1) combining FSRS stability, Processability Theory stages, and vocabulary depth | ✅ Complete |
 | **§18 Synthesis Model** | `corpus/sections/synthesis/SECTION18-SYNTHESIS-v1.md` | Unified pedagogical model integrating Nation's four strands into daily microlearning sessions | ✅ Complete |
@@ -123,6 +125,7 @@ nugget-nihongo-research/
 
 | Version | Date | Key Milestones |
 |---|---|---|
+| **v20** | October 2026 | **All-Sector SSW Master Taxonomy & Adult Lexical Error Integration:** Authored exhaustive 18-sector Tokutei Ginou master taxonomy covering all 4 macro-clusters (Care, Industrial Manufacturing, Primary/Infrastructure, Consumer/Logistics) with TSA workflows, Layer 2 technical terms, emergency shouting registers, and FSRS card mappings; enriched §15 with 18-sector taxonomy and empirical studies Pratama & Srimulyani (2024) `[VS-30]` (hospitality needs) and Mustaqim & Priventa (2026) `[VS-31]` (bad-news HORENSO adaptation); integrated Nurjaman et al. (2025) `[EA-29]` adult near-synonym (*ruigigo*) error analysis into §5; canonicalized 3 verified DOIs in bibliography and tracker bringing corpus totals to 760 unique citations and 364 verified DOIs. |
 | **v19** | October 2026 | **Jalur A–C Operationalization & Expansion:** Added Indonesian L1 Diagnostic Inventory (100 atomic items across 5 domains); created EPA & SSW Workplace Discourse Corpus (Pramesti 2019 speech level shift, pain onomatopoeia, factory safety); formalized 5-to-7 minute Micro-Session Algorithmic Specification (6 card archetypes with JSON schemas, dual-track FSRS stability, latency efficiency weighting $\Phi(\Delta t)$, and interference penalty spikes); added verified empirical studies (`EA-27`, `EA-28`, `VS-29`) to master bibliography and DOI tracker. |
 | **v18** | October 2026 | Comprehensive meta-analysis consolidation & housekeeping: verified all 15 pending DOIs (100% accounted for); resolved DUP-04 (`BC-08`) and DUP-05 (`VD-05`); assigned canonical `[OD-20]` for Matsunaga (1999) 2.3× exposure study; resolved EA-22 gap with Maarif (2023) and expanded Indonesian SLA studies (`EA-23`–`EA-26`); reconciled DDM Flags A–E; scrubbed AI agent terminology; renamed compendium to `RESEARCH-COMPENDIUM.md`. |
 | **v17-PASS16** | April 2026 | Synthesis deliverables shipped (Level Ladder F1, Section 18 F2, Methodology Page Narrative F3); confirmed DUP-01–03 and DUP-06–11 executed; bibliography updated to v7. |
@@ -133,4 +136,4 @@ nugget-nihongo-research/
 
 ---
 
-*INDEX.md — Master Research Library Index — Version 19.*
+*INDEX.md — Master Research Library Index — Version 20.*

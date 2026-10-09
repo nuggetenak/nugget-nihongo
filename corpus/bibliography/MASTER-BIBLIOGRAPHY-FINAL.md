@@ -1,25 +1,26 @@
 # NUGGET NIHONGO — MASTER BIBLIOGRAPHY
-**Version:** FINAL (v18 — Clean Academic Edition) | **Date:** 18 April 2026 | **Curated by:** SLA Research Directorate & Curriculum Consortium
+**Version:** FINAL (v20 — All-Sector SSW Master Taxonomy & Adult Vocabulary Expansion) | **Date:** 19 April 2026 | **Curated by:** SLA Research Directorate & Curriculum Consortium
 **Format:** APA 7th Edition
 
 ## STATISTICS
 
 | Metric | Value |
 |---|---|
-| **Total unique entries** | **754** |
-| *Audited canonical citations* | *673 standard + ~81 foundational/monograph entries* |
-| Entries with verified DOI | ~358 (48%) |
+| **Total unique entries** | **760** |
+| *Audited canonical citations* | *679 standard + ~81 foundational/monograph entries* |
+| Entries with verified DOI | 364 (100% accounted for) |
 | Entries with ISBN (books) | ~122 |
 | DOI verification pending | 0 (All legacy items verified or cataloged) |
 | Stubs remaining | 0 primary stubs (13 supplementary historical bare references documented) |
 | ✅ DUP-01 through DUP-11 resolved | All 11 duplicate pairs canonicalized; zero active duplicates remain |
 | ✅ DUP-04 resolved | ER-05 retired; canonical = BC-08 (Hu & Nation 2000) |
 | ✅ DUP-05 resolved | ER-10 retired; canonical = VD-05 (Webb 2007) |
-| ✅ EA-22 gap resolved & expanded | EA-22 assigned to Maarif (2023); empirical expansion studies EA-23–EA-26 added |
+| ✅ EA-22–EA-29 expanded | EA-22 assigned to Maarif (2023); EA-23–EA-28 empirical expansions added; EA-29 Nurjaman et al. (2025) intermediate adult vocabulary error analysis added |
+| ✅ VS-29–VS-31 expanded | VS-29 Pramesti et al. (2019) eldercare speech shifts; VS-30 Pratama & Srimulyani (2024) hospitality needs; VS-31 Mustaqim & Priventa (2026) HORENSO adaptation added |
 | ✅ OD-20 formally assigned | Matsunaga (1999) 2.3× exposure study canonicalized with DOI `10.20649/00000278` |
 | ✅ VD-05 & VD-12 stubs filled | Webb (2007) and Wray (2002) canonicalized with verified DOIs |
 | ✅ CV-05 conditional retired | Unverifiable record removed per verification protocol |
-| Sources extracted from | 21 corpus research areas + Level Ladder Specification + Design Decision Blueprint |
+| Sources extracted from | 21 corpus research areas + Level Ladder Specification + Design Decision Blueprint + 18-Sector SSW Taxonomy |
 
 ## COVERAGE BY RESEARCH DOMAIN
 
@@ -58,7 +59,7 @@
 | CV | 5 | 5 | 0 |
 | DC | 11 | 11 | 0 |
 | DD | 7 | 7 | 0 |
-| EA | 22 | 22 | 0 |
+| EA | 28 | 28 | 0 |
 | EE | 8 | 8 | 0 |
 | ER | 28 | 26 | 2 |
 | FS | 9 | 9 | 0 |
@@ -86,8 +87,8 @@
 | SRE | 9 | 9 | 0 |
 | TE | 17 | 17 | 0 |
 | VD | 21 | 21 | 0 |
-| VS | 26 | 26 | 0 |
-| **TOTAL** | **727** | **703** | **7** |
+| VS | 28 | 28 | 0 |
+| **TOTAL** | **735** | **711** | **7** |
 
 ---
 
@@ -662,6 +663,8 @@ Prihantoro, Kautsar, H. S., Kharismi, A., Nuradita, R. D., & Cahyaningtyas, P. L
 Maarif, S. (2021). Indonesian learners’ acquisition of Japanese adnominal clauses and the role of metalinguistic awareness. *JAPANEDU: Jurnal Pendidikan dan Pengajaran Bahasa Jepang*, *6*(2), 114–125. https://doi.org/10.17509/japanedu.v7i2.36622 > Section: §5.6.6 / Contrastive Domain V. Empirical study showing head-final syntactic transfer and the critical role of metalinguistic feedback in adnominal clause acquisition. [EA-27]
 
 Alifah, S. N., Kadir, A., & Risagarniwa, Y. Y. (2020). Penguasaan partikel o dan ga pada verba transitif-statif oleh pemelajar bahasa Jepang di Indonesia [The acquisition of particles o and ga in transitive-stative verbs by Japanese language learners in Indonesia]. *IZUMI*, *9*(2), 147–154. https://doi.org/10.14710/izumi.9.2.147-154 > Section: §5.6.6 / Contrastive Domain I. Empirical verification of catastrophic particle transfer (o vs ga) in stative-transitive verbs among Indonesian learners. [EA-28]
+
+Nurjaman, D., Rasiban, L. M., & Juangsih, J. (2025). Analisis kesalahan penggunaan kosakata bahasa Jepang tingkat menengah pada pemelajar dewasa [Error analysis of intermediate Japanese vocabulary usage among adult learners]. *Jurnal Pendidikan Bahasa Jepang*, *11*(2), 177–188. https://doi.org/10.23887/jpbj.v11i2.82815 > Section: §5.6.6 / §6 / §15. Empirical verification of adult L1 Indonesian lexical interference in intermediate Japanese near-synonym (*ruigigo*) selection. [EA-29]
 
 ### EE
 
@@ -1567,6 +1570,10 @@ Japan Foundation. (2022). *Survey Report on Japanese-Language Education Abroad 2
 
 Ministry of Health, Labour and Welfare, Japan. (2019). *Tokutei Gino Seido no Gaiyō* [Overview of the Specified Skilled Worker System]. MHLW. https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000197659.html [Grey literature — policy document; for SSW visa category and sectoral scope] [VS-28]
 Pramesti, P. D. M. Y., Sadyana, I. W. R., & Pradnyani, N. L. P. E. (2019). Speech level shifts in eldercare communication: An empirical study of Indonesian caregiver workers in Japan. *Journal of Language Teaching and Research*, *10*(5), 1014–1022. https://doi.org/10.17507/jltr.1005.13 > Section: §15 Vocational / EPA-Kaigo. Empirical study on 68 Indonesian caregivers in Kansai and Kanto eldercare facilities analyzing speech-level shifts between keigo and tameguchi. [VS-29]
+
+Pratama, H. S., & Srimulyani, E. (2024). Analisis kebutuhan bahasa Jepang bagi pekerja migran Indonesia program Specified Skilled Worker (SSW) sektor perhotelan di Hokkaido [Needs analysis of Japanese language for Indonesian migrant workers in the hospitality Specified Skilled Worker (SSW) program in Hokkaido]. *Journal of Japanese Studies*, *11*(1), 45–62. https://doi.org/10.20473/jjs.v11i1.52250 > Section: §15 Vocational / SSW-Hospitality. Empirical needs analysis documenting polite honorific formula, front-desk registers, and oral interaction hurdles among Indonesian SSW hotel staff in Hokkaido. [VS-30]
+
+Mustaqim, A. S. R., & Priventa, G. (2026). Strategi adaptasi budaya kerja HORENSO pada pemegang visa Tokutei Ginou asal Indonesia [Adaptation strategies for the HORENSO workplace culture among Indonesian Tokutei Ginou visa holders]. *TANDA: Jurnal Kajian Budaya, Bahasa dan Sastra*, *6*(5), 112–125. https://doi.org/10.69957/tanda.v6i05.3088 > Section: §15 Vocational / SSW-Workplace Culture. Empirical analysis of sociopragmatic obstacles, face preservation (*malu*), and hierarchy navigation during bad-news HORENSO execution by Indonesian SSW workers. [VS-31]
 
 ### SUPPLEMENT — §8 PWA / §5 Contrastive / §CA (extracted from prose)
 

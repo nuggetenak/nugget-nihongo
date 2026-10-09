@@ -1,14 +1,14 @@
 # NUGGET NIHONGO — EMPIRICAL SLA RESEARCH REPOSITORY CONTEXT
 **Operational Standards & Architecture Guide**  
-**Corpus Version:** v19 (Indonesian L1 Diagnostic, Vocational EPA/SSW Corpus & Algorithmic Blueprint Expansion)  
-**Total Unique Citations:** 757 (361 verified DOIs, 100% accounted for)
+**Corpus Version:** v20 (18-Sector SSW Master Taxonomy & Adult Lexical Error Expansion)  
+**Total Unique Citations:** 760 (364 verified DOIs, 100% accounted for)
 
 ---
 
 ## 1. Scope & Domain
 
 Research library for the evidence-based Japanese learning platform tailored specifically to Indonesian L1 native speakers.
-- **Scale:** 757 unique citations across 16 primary corpus sections (§1–§5, §8–§17, §CA), contrastive inventory, vocational corpus, and synthesis specifications.
+- **Scale:** 760 unique citations across 16 primary corpus sections (§1–§5, §8–§17, §CA), contrastive inventory, 18-sector vocational taxonomy, and synthesis specifications.
 - **Target Audience:** Indonesian adult learners, Specified Skilled Worker (SSW / *Tokutei Ginou*) candidates, and general academic learners.
 - **Pedagogical Alignment:** Empirical Second Language Acquisition (SLA), Processability Theory, High-Variability Phonetic Training (HVPT), Free Spaced Repetition Scheduling (FSRS), and Cognitive Load Theory (CLT).
 
@@ -24,7 +24,8 @@ Research library for the evidence-based Japanese learning platform tailored spec
 | Micro-Session Algorithmic Spec | `blueprint/MICRO-SESSION-ALGORITHMIC-SPEC-v1.md` | 7-minute session formula, 6 card archetypes, dual-track FSRS latency tuning (Jalur C) |
 | Indonesian L1 Diagnostic Inventory | `corpus/sections/contrastive/INDONESIAN-L1-DIAGNOSTIC-INVENTORY-v1.md` | 100-item micro-diagnostic contrastive matrix across 5 interference domains (Jalur A) |
 | Vocational EPA/SSW SLA Corpus | `corpus/sections/vocational/EPA-KAIGO-SSW-WORKPLACE-CORPUS-v1.md` | Eldercare speech shifts, pain onomatopoeia, gemba nihongo safety (Jalur B) |
-| Master Bibliography | `corpus/bibliography/MASTER-BIBLIOGRAPHY-FINAL.md` | Canonical bibliography registry (757 unique entries, v19) |
+| All-Sector SSW Master Taxonomy | `corpus/sections/vocational/ALL-SECTOR-SSW-TAXONOMY-CORPUS-v1.md` | 18-sector Tokutei Ginou operational taxonomy, TSA workflows, and emergency shouting |
+| Master Bibliography | `corpus/bibliography/MASTER-BIBLIOGRAPHY-FINAL.md` | Canonical bibliography registry (760 unique entries, v20) |
 | DOI Verification Tracker | `corpus/bibliography/DOI-VERIFICATION-TRACKER.md` | Audit registry of publisher DOIs and verification statuses (100% accounted for) |
 | Repository Index | `INDEX.md` | Comprehensive file and section index |
 | Compass Foundation | `corpus/source-of-truth/compass_artifact.md` | 44 foundational SLA and cognitive psychology citations |
@@ -45,7 +46,7 @@ All 16 clean, verified section files are maintained in `corpus/sections/`:
 | `SECTION2-GRAMMAR.md` | Grammar Acquisition Theory & Processability Theory | 31 |
 | `SECTION3-LISTENING.md` | L2 Listening Comprehension & Aural Decoding | 25 |
 | `SECTION4-ER.md` | Extensive Reading & 98% Lexical Coverage Threshold | 25 |
-| `SECTION5-CONTRASTIVE.md` | Indonesian-Japanese Contrastive Linguistics & Error Analysis | ~64 |
+| `SECTION5-CONTRASTIVE.md` | Indonesian-Japanese Contrastive Linguistics & Error Analysis | ~67 |
 | `SECTION8-PWA.md` | Mobile Architecture, SDT Motivation, Malu Anxiety Mitigation | ~145 |
 | `SECTION9-MULTIMEDIA.md` | Multimedia Learning & Japanese Orthographic Acquisition | ~93 |
 | `SECTION10-GAMIFICATION-HABIT.md` | Behavioral Habit Formation & Sleep Consolidation | ~41 |
@@ -53,7 +54,7 @@ All 16 clean, verified section files are maintained in `corpus/sections/`:
 | `SECTION12-OUTPUT-THEORY.md` | Output Hypothesis & Noticing the Gap | ~32 |
 | `SECTION13-INDIVIDUAL-DIFFS.md` | Working Memory, Anxiety, & Individual Learner Differences | ~43 |
 | `SECTION14-SOCIO.md` | Sociolinguistics, Keigo Calibration, Speech Acts | 25 |
-| `SECTION15-SSW.md` | Specified Skilled Worker (SSW) Vocational Japanese | ~26 |
+| `SECTION15-SSW.md` | Specified Skilled Worker (SSW) Vocational Japanese | 29 |
 | `SECTION16-CALL.md` | Meta-Analytic CALL/MALL Effectiveness Evidence | 21 |
 | `SECTION17-ADULT.md` | Adult SLA, Ego Permeability, Autonomous Learning | 19 |
 | `SECTION-CA-CURRICULUM.md` | Curriculum Architecture & Vocabulary Depth | ~107 |
@@ -94,17 +95,17 @@ Examples:
 
 ---
 
-## 6. Current Corpus Status (v19)
+## 6. Current Corpus Status (v20)
 
 | Metric | Status |
 |---|---|
-| Total Unique Citations | **757** |
-| Verified DOIs | **361** (100% accounted for in `DOI-VERIFICATION-TRACKER.md`) |
+| Total Unique Citations | **760** |
+| Verified DOIs | **364** (100% accounted for in `DOI-VERIFICATION-TRACKER.md`) |
 | Open Duplicate Flags | **0** (all 11 resolved) |
-| Open Literature Gaps | **0** (EA-22 resolved via Maarif 2023, Prihantoro 2024/2025, Haristiani 2024, Husna 2022, Maarif 2021, Alifah 2020, Pramesti 2019) |
+| Open Literature Gaps | **0** (EA-22 resolved via Maarif 2023, Prihantoro 2024/2025, Haristiani 2024, Husna 2022, Maarif 2021, Alifah 2020, Nurjaman 2025, Pramesti 2019, Pratama 2024, Mustaqim 2026) |
 | Canonical Assignment | Matsunaga (1999) canonicalized as **`[OD-20]`** |
 | Cross-Section Design Flags | Reconciled in `DESIGN-DECISION-MASTER-v1.md` (Flags A, B, C, D, E) |
-| Operational Deliverables | Complete (Jalur A: Diagnostic Inventory, Jalur B: Vocational Corpus, Jalur C: Algorithmic Spec, Level Ladder, §18 Synthesis, Methodology Page) |
+| Operational Deliverables | Complete (Jalur A: Diagnostic Inventory, Jalur B: Vocational Corpus & 18-Sector Master Taxonomy, Jalur C: Algorithmic Spec, Level Ladder, §18 Synthesis, Methodology Page) |
 
 ---
 
@@ -119,4 +120,4 @@ When communicating curriculum design publicly, adhere to the following empirical
 
 ---
 
-*CLAUDE.md — Updated to v19 Indonesian Diagnostic, Vocational & Algorithmic Blueprint Standards.*
+*CLAUDE.md — Updated to v20 18-Sector SSW Master Taxonomy & Adult Lexical Error Standards.*
