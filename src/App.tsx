@@ -9,6 +9,7 @@ import { DetailModal } from './components/ui/DetailModal';
 import { InstallModal } from './components/ui/InstallModal';
 import { StreakBrokenModal } from './components/gamification/StreakBrokenModal';
 import { AuthModal } from './components/auth/AuthModal';
+import { KeyboardShortcutsModal } from './components/ui/KeyboardShortcutsModal';
 import { usePwaStore } from './lib/pwa/pwaStore';
 import { useAuthStore } from './lib/supabase/authStore';
 import { NormalizedVocab, NormalizedGrammar } from './lib/data/dataManager';
@@ -27,6 +28,7 @@ export const App: React.FC = () => {
   const { initPwa } = usePwaStore();
   const { initAuth } = useAuthStore();
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [isShortcutsOpen, setIsShortcutsOpen] = useState(false);
   const [selectedModalItem, setSelectedModalItem] = useState<(NormalizedVocab | NormalizedGrammar) | null>(null);
   const [modalItemType, setModalItemType] = useState<'vocab' | 'grammar'>('vocab');
 
@@ -50,12 +52,36 @@ export const App: React.FC = () => {
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, [setActiveTab]);
 
-  // Keyboard shortcut listener (Ctrl+K or ⌘K for spotlight search)
+  // Desktop global keyboard shortcut listener (⌘K, ?, F, R)
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
+      // Shortcut ⌘K / Ctrl+K (Global search)
       if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
         e.preventDefault();
         setIsSearchOpen((prev) => !prev);
+        return;
+      }
+
+      // Ignore single hotkeys if typing in inputs or textareas (Edge Case 5)
+      const target = e.target as HTMLElement;
+      const isInput = target && (
+        target.tagName === 'INPUT' ||
+        target.tagName === 'TEXTAREA' ||
+        target.isContentEditable
+      );
+      if (isInput) return;
+
+      if (e.key === '?') {
+        e.preventDefault();
+        setIsShortcutsOpen((prev) => !prev);
+      } else if (e.key.toLowerCase() === 'f') {
+        const { showFurigana, setShowFurigana, showToast } = useAppStore.getState();
+        setShowFurigana(!showFurigana);
+        showToast(!showFurigana ? 'Furigana diaktifkan' : 'Furigana disembunyikan', '文');
+      } else if (e.key.toLowerCase() === 'r') {
+        const { showRomaji, setShowRomaji, showToast } = useAppStore.getState();
+        setShowRomaji(!showRomaji);
+        showToast(!showRomaji ? 'Romaji diaktifkan' : 'Romaji dinonaktifkan', '🔤');
       }
     };
     window.addEventListener('keydown', handleKeyDown);
@@ -95,7 +121,10 @@ export const App: React.FC = () => {
 
       {/* Main App Content Container (Offset by 260px on desktop) */}
       <div className="flex-1 lg:pl-[260px] flex flex-col min-h-screen pb-[calc(5.5rem+env(safe-area-inset-bottom))] lg:pb-12">
-        <Header onOpenSearch={() => setIsSearchOpen(true)} />
+        <Header
+          onOpenSearch={() => setIsSearchOpen(true)}
+          onOpenShortcuts={() => setIsShortcutsOpen(true)}
+        />
         <main className="flex-1 px-4 sm:px-6 lg:px-8 max-w-7xl w-full mx-auto">
           {renderActiveView()}
         </main>
@@ -119,6 +148,12 @@ export const App: React.FC = () => {
         item={selectedModalItem}
         type={modalItemType}
         onClose={() => setSelectedModalItem(null)}
+      />
+
+      {/* Keyboard Shortcuts Helper Modal (?) */}
+      <KeyboardShortcutsModal
+        isOpen={isShortcutsOpen}
+        onClose={() => setIsShortcutsOpen(false)}
       />
 
       {/* PWA Add to Home Screen Modal */}

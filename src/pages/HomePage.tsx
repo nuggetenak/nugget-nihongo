@@ -4,12 +4,14 @@ import { useAppStore } from '../store/useAppStore';
 import { HeatmapCalendar } from '../components/gamification/HeatmapCalendar';
 import { BadgesModal } from '../components/gamification/BadgesModal';
 import { DetailModal } from '../components/ui/DetailModal';
+import { KanaChartModal } from '../components/kana/KanaChartModal';
 import { loadVocab, NormalizedVocab } from '../lib/data/dataManager';
 import { speakJapanese } from '../lib/audio/tts';
 
 export const HomePage: React.FC = () => {
   const { streak, xp, setActiveTab } = useAppStore();
   const [isBadgesOpen, setIsBadgesOpen] = useState(false);
+  const [isKanaOpen, setIsKanaOpen] = useState(false);
   const [dailyWord, setDailyWord] = useState<NormalizedVocab | null>(null);
   const [selectedWordForModal, setSelectedWordForModal] = useState<NormalizedVocab | null>(null);
 
@@ -60,6 +62,41 @@ export const HomePage: React.FC = () => {
               Eksplor Materi
             </button>
           </div>
+        </div>
+      </div>
+
+      {/* Tier 0 Beginner Onboarding Banner */}
+      <div className="bg-gradient-to-r from-amber-500/15 via-surface-2 to-surface-2 border border-amber-500/35 rounded-3xl p-5 sm:p-6 flex flex-col md:flex-row md:items-center justify-between gap-4 shadow-sm">
+        <div className="flex items-start sm:items-center gap-4">
+          <div className="w-12 h-12 rounded-2xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-2xl shrink-0 shadow-sm">
+            🌱
+          </div>
+          <div>
+            <div className="font-extrabold text-sm sm:text-base text-appText-bright flex items-center gap-2">
+              <span>Baru Mulai Belajar dari Nol? (0 Pengetahuan)</span>
+              <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-accent text-bg">Pemula</span>
+            </div>
+            <p className="text-xs text-appText-muted mt-1 leading-relaxed">
+              Kuasai huruf Hiragana & Katakana dengan audio pelafalan asli, atau coba 21 pola percakapan survival Freeway.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex items-center gap-2.5 shrink-0 self-end md:self-center">
+          <button
+            onClick={() => setIsKanaOpen(true)}
+            className="px-4 py-2.5 rounded-xl bg-accent hover:bg-accent-hot text-bg text-xs font-bold transition-all flex items-center gap-2 shadow-sm"
+          >
+            <span>Tabel Kana (あ/ア)</span>
+            <span className="text-sm">🗣️</span>
+          </button>
+          <button
+            onClick={() => setActiveTab('materi')}
+            className="px-4 py-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/25 text-appText-bright text-xs font-bold transition-all flex items-center gap-1.5"
+          >
+            <span>Jalur Freeway</span>
+            <span>🛣️</span>
+          </button>
         </div>
       </div>
 
@@ -225,6 +262,12 @@ export const HomePage: React.FC = () => {
         item={selectedWordForModal}
         type="vocab"
         onClose={() => setSelectedWordForModal(null)}
+      />
+
+      {/* Kana Chart Modal (Hiragana & Katakana) */}
+      <KanaChartModal
+        isOpen={isKanaOpen}
+        onClose={() => setIsKanaOpen(false)}
       />
     </div>
   );

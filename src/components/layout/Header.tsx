@@ -1,16 +1,22 @@
 import React from 'react';
-import { Search, Flame, Zap, Download, RefreshCw, User as UserIcon, Cloud } from 'lucide-react';
+import { Search, Flame, Zap, Download, RefreshCw, User as UserIcon, Cloud, HelpCircle } from 'lucide-react';
 import { useAppStore } from '../../store/useAppStore';
 import { usePwaStore } from '../../lib/pwa/pwaStore';
 import { useAuthStore } from '../../lib/supabase/authStore';
+import { OfflineStatusPill } from '../ui/OfflineStatusPill';
 import { JLPTLevel } from '../../types/vocab';
 
 interface HeaderProps {
   onOpenSearch?: () => void;
+  onOpenShortcuts?: () => void;
 }
 
-export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
-  const { streak, xp, selectedLevel, setSelectedLevel } = useAppStore();
+export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onOpenShortcuts }) => {
+  const {
+    streak, xp, selectedLevel, setSelectedLevel,
+    showFurigana, setShowFurigana,
+    showRomaji, setShowRomaji, showToast
+  } = useAppStore();
   const { isInstalled, setShowInstallModal } = usePwaStore();
   const { user, syncStatus, openAuthModal, syncNow } = useAuthStore();
 
@@ -64,8 +70,50 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
         })}
       </div>
 
-      {/* Gamification Badges: Streak & XP */}
+      {/* Quick Furigana & Romaji Toggles (Desktop only) */}
+      <div className="hidden xl:flex items-center gap-1 bg-surface-2 p-1 rounded-xl border border-accent/15 text-[11px]">
+        <button
+          onClick={() => {
+            setShowFurigana(!showFurigana);
+            showToast(showFurigana ? 'Furigana dinonaktifkan' : 'Furigana diaktifkan', '文');
+          }}
+          className={`px-2 py-0.5 rounded-lg font-bold transition-all ${
+            showFurigana ? 'bg-amber-500/20 text-accent-hot border border-amber-500/30' : 'text-appText-muted hover:text-appText-bright'
+          }`}
+          title="Toggle Furigana (Shortcut: F)"
+        >
+          文 {showFurigana ? 'ON' : 'OFF'}
+        </button>
+        <button
+          onClick={() => {
+            setShowRomaji(!showRomaji);
+            showToast(showRomaji ? 'Romaji dinonaktifkan' : 'Romaji diaktifkan', '🔤');
+          }}
+          className={`px-2 py-0.5 rounded-lg font-bold transition-all ${
+            showRomaji ? 'bg-amber-500/20 text-accent-hot border border-amber-500/30' : 'text-appText-muted hover:text-appText-bright'
+          }`}
+          title="Toggle Romaji (Shortcut: R)"
+        >
+          🔤 {showRomaji ? 'ON' : 'OFF'}
+        </button>
+      </div>
+
+      {/* Gamification Badges: Streak, XP & Offline Indicator */}
       <div className="flex items-center gap-2">
+        {/* Offline Status Pill */}
+        <OfflineStatusPill />
+
+        {/* Desktop Shortcuts Help Button */}
+        {onOpenShortcuts && (
+          <button
+            onClick={onOpenShortcuts}
+            title="Pintasan Keyboard (Tekan ?)"
+            className="hidden sm:flex items-center justify-center w-8 h-8 rounded-full bg-surface-2 hover:bg-surface-3 border border-accent/20 text-appText-muted hover:text-accent transition-all"
+          >
+            <HelpCircle className="w-4 h-4" />
+          </button>
+        )}
+
         {/* Streak Flame */}
         <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-amber-500/15 border border-amber-500/30 text-accent-hot shadow-sm">
           <Flame className="w-4 h-4 fill-amber-500 text-amber-500 animate-pulse" />

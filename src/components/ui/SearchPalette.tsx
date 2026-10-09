@@ -132,8 +132,29 @@ export const SearchPalette: React.FC<SearchPaletteProps> = ({ isOpen, onClose, o
               </p>
             </div>
           ) : vocabResults.length === 0 && grammarResults.length === 0 ? (
-            <div className="py-12 text-center text-xs text-appText-muted">
-              Tidak ada hasil yang cocok dengan "{query}". Coba kata kunci lain.
+            <div className="py-10 text-center space-y-4">
+              <div className="text-3xl">🔍</div>
+              <div className="space-y-1">
+                <p className="text-sm font-bold text-appText-bright">
+                  Tidak ada hasil untuk "{query}"
+                </p>
+                <p className="text-xs text-appText-muted max-w-sm mx-auto">
+                  Coba periksa ejaan romaji atau ketuk salah satu saran kata kunci di bawah:
+                </p>
+              </div>
+
+              {/* Helpful Suggestion Pills */}
+              <div className="flex flex-wrap items-center justify-center gap-2 max-w-md mx-auto pt-1">
+                {['taberu', 'sumimasen', 'arigatou', 'iku', 'desu', 'nomu', 'wa', 'kudasai'].map((suggestion) => (
+                  <button
+                    key={suggestion}
+                    onClick={() => setQuery(suggestion)}
+                    className="px-3 py-1.5 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/20 text-xs font-semibold text-accent transition-all"
+                  >
+                    {suggestion}
+                  </button>
+                ))}
+              </div>
             </div>
           ) : (
             <>

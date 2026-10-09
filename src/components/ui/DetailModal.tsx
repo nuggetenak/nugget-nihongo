@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react';
-import { Volume2, X, Sparkles, BookOpen } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Volume2, X, Sparkles, BookOpen, RotateCcw } from 'lucide-react';
 import { NormalizedVocab, NormalizedGrammar } from '../../lib/data/dataManager';
 import { speakJapanese } from '../../lib/audio/tts';
+import { ConjugationModal } from '../grammar/ConjugationModal';
 
 interface DetailModalProps {
   item: (NormalizedVocab | NormalizedGrammar) | null;
@@ -10,6 +11,8 @@ interface DetailModalProps {
 }
 
 export const DetailModal: React.FC<DetailModalProps> = ({ item, type, onClose }) => {
+  const [isConjugationModalOpen, setIsConjugationModalOpen] = useState(false);
+
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') onClose();
@@ -100,6 +103,19 @@ export const DetailModal: React.FC<DetailModalProps> = ({ item, type, onClose })
           </div>
         )}
 
+        {/* Quick Conjugation Matrix Link for Verbs */}
+        {isVocab && (
+          <div>
+            <button
+              onClick={() => setIsConjugationModalOpen(true)}
+              className="w-full py-2.5 px-4 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/20 hover:border-accent/40 text-accent-hot text-xs font-bold transition-all flex items-center justify-center gap-2 shadow-sm"
+            >
+              <RotateCcw className="w-3.5 h-3.5 text-accent" />
+              <span>Buka Matriks Konjugasi Lengkap ({title})</span>
+            </button>
+          </div>
+        )}
+
         {/* Examples Section */}
         {item.examples && item.examples.length > 0 && (
           <div className="space-y-2.5">
@@ -133,6 +149,13 @@ export const DetailModal: React.FC<DetailModalProps> = ({ item, type, onClose })
           </div>
         )}
       </div>
+
+      {/* Verb Conjugation Matrix Modal */}
+      <ConjugationModal
+        isOpen={isConjugationModalOpen}
+        onClose={() => setIsConjugationModalOpen(false)}
+        initialVerb={title}
+      />
     </div>
   );
 };

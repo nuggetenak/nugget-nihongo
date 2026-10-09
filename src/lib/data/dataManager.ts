@@ -203,3 +203,35 @@ export async function loadBook(bookKey: 'minna1' | 'minna2' | 'irodori-a1' | 'ir
   }
   return raw || null;
 }
+
+export const FREEWAY_TRACK_IDS = [
+  'gn5-00059', // sumimasen (permisi/maaf)
+  'gn5-00001', // wa desu (X adalah Y)
+  'gn5-00002', // wa janai desu (X bukan Y)
+  'gn5-00004', // wa desu ka (apakah X adalah Y?)
+  'gn5-00005', // kore/sore/are (ini/itu/itu jauh)
+  'gn5-00006', // kono/sono/ano (benda ini/itu)
+  'gn5-00007', // ga arimasu (ada benda mati)
+  'gn5-00008', // ga imasu (ada makhluk hidup)
+  'gn5-00010', // ni (tempat keberadaan)
+  'gn5-00011', // de (tempat aktivitas)
+  'gn5-00013', // ni (waktu)
+  'gn5-00016', // masu (bentuk sopan sekarang)
+  'gn5-00017', // mashita (bentuk sopan lampau)
+  'gn5-00018', // masen (bentuk sopan negatif)
+  'gn5-00019', // masen deshita (bentuk sopan negatif lampau)
+  'gn5-00025', // te kudasai (tolong lakukan)
+  'gn5-00027', // tai desu (ingin melakukan)
+  'gn5-00030', // i-adjective (kata sifat i)
+  'gn5-00031', // na-adjective (kata sifat na)
+  'gn5-00040', // counter tsu (berhitung benda)
+  'gn5-00051', // wo kudasai (minta tolong berikan)
+];
+
+/**
+ * Load Freeway Survival Track grammar items
+ */
+export async function loadFreewayTrack(): Promise<NormalizedGrammar[]> {
+  const n5Grammar = await loadGrammar('n5');
+  return FREEWAY_TRACK_IDS.map((id) => n5Grammar.find((g) => g.id === id)).filter(Boolean) as NormalizedGrammar[];
+}

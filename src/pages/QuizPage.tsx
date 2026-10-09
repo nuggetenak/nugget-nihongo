@@ -11,10 +11,19 @@ import { playFlipSfx, playSuccessSfx, playErrorSfx, playFanfareSfx } from '../li
 import { QuizResultView } from '../components/quiz/QuizResultView';
 import { useGamificationStore } from '../lib/gamification/gamificationStore';
 import { useGardenStore } from '../lib/garden/gardenStore';
+import { useSwipeGesture } from '../components/quiz/useSwipeGesture';
+import { QuizConfigModal } from '../components/quiz/QuizConfigModal';
+import { QuizExitGuardModal } from '../components/quiz/QuizExitGuardModal';
 
 export const QuizPage: React.FC = () => {
-  const { selectedLevel, showToast, incrementXp, setActiveTab, setCard, cards } = useAppStore();
+  const { selectedLevel, setSelectedLevel, showToast, incrementXp, setActiveTab, setCard, cards } = useAppStore();
   const [activeMode, setActiveMode] = useState<QuizMode>('flashcard');
+
+  // Session configuration state
+  const [sessionCount, setSessionCount] = useState<number>(10);
+  const [isConfigOpen, setIsConfigOpen] = useState<boolean>(false);
+  const [isExitGuardOpen, setIsExitGuardOpen] = useState<boolean>(false);
+  const [pendingMode, setPendingMode] = useState<QuizMode | null>(null);
 
   // Question state
   const [questions, setQuestions] = useState<QuizQuestionItem[]>([]);
@@ -65,7 +74,7 @@ export const QuizPage: React.FC = () => {
         loadGrammar(targetLevel),
       ]);
 
-      const items = generateQuizQuestions(activeMode, vocabs, grammars, targetLevel, 10);
+      const items = generateQuizQuestions(activeMode, vocabs, grammars, targetLevel, sessionCount);
       setQuestions(items);
 
       if (items.length > 0 && activeMode === 'rearrange' && items[0].tokens) {
@@ -81,9 +90,36 @@ export const QuizPage: React.FC = () => {
 
   useEffect(() => {
     loadNewSession();
-  }, [activeMode, selectedLevel]);
+  }, [activeMode, selectedLevel, sessionCount]);
 
   const currentQ = questions[currentIndex];
+
+  // Touch Swipe Gesture for Mobile Flashcards
+  const { swipeHint, touchHandlers } = useSwipeGesture({
+    enabled: activeMode === 'flashcard' && isFlipped,
+    onSwipeLeft: () => handleFlashcardRate(3),
+    onSwipeRight: () => handleFlashcardRate(1),
+    onSwipeDown: () => handleFlashcardRate(2),
+  });
+
+  // Switch mode with accidental abandonment protection (Exit Guard)
+  const handleSwitchMode = (newMode: QuizMode) => {
+    if (newMode === activeMode) return;
+    if (currentIndex > 0 && !isFinished) {
+      setPendingMode(newMode);
+      setIsExitGuardOpen(true);
+    } else {
+      setActiveMode(newMode);
+    }
+  };
+
+  const handleConfirmExit = () => {
+    setIsExitGuardOpen(false);
+    if (pendingMode) {
+      setActiveMode(pendingMode);
+      setPendingMode(null);
+    }
+  };
 
   // Set up tokens when moving to next rearrange question
   useEffect(() => {
@@ -302,9 +338,17 @@ export const QuizPage: React.FC = () => {
 
   return (
     <div className="max-w-4xl mx-auto py-6 space-y-6 animate-in fade-in duration-300">
-      <div>
-        <h1 className="text-2xl font-extrabold text-appText-bright mb-1">Arena Kuis · 練習アリーナ</h1>
-        <p className="text-xs text-appText-muted">Latih pemahaman kosakata, tata bahasa, dan konjugasi verba secara mendalam.</p>
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div>
+          <h1 className="text-2xl font-extrabold text-appText-bright mb-1">Arena Kuis · 練習アリーナ</h1>
+          <p className="text-xs text-appText-muted">Latih pemahaman kosakata, tata bahasa, dan konjugasi verba secara mendalam.</p>
+        </div>
+        <button
+          onClick={() => setIsConfigOpen(true)}
+          className="px-4 py-2 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/25 text-accent-hot text-xs font-bold transition-all flex items-center gap-2 shadow-sm shrink-0 self-start sm:self-auto"
+        >
+          <span>⚙️ Atur Sesi ({sessionCount} Soal)</span>
+        </button>
       </div>
 
       {/* Mode Carousel */}
@@ -314,7 +358,7 @@ export const QuizPage: React.FC = () => {
           return (
             <button
               key={mode.id}
-              onClick={() => setActiveMode(mode.id)}
+              onClick={() => handleSwitchMode(mode.id)}
               className={`flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all border ${
                 isSelected
                   ? 'bg-accent text-bg border-accent shadow-sm'
@@ -374,13 +418,37 @@ export const QuizPage: React.FC = () => {
           {activeMode === 'flashcard' && (
             <div className="space-y-4">
               <div
+                {...touchHandlers}
                 onClick={toggleFlip}
-                className={`cursor-pointer min-h-[300px] rounded-3xl border-2 p-8 flex flex-col justify-between text-center transition-all duration-300 select-none shadow-xl ${
+                className={`relative cursor-pointer min-h-[300px] rounded-3xl border-2 p-8 flex flex-col justify-between text-center transition-all duration-300 select-none shadow-xl overflow-hidden ${
                   isFlipped
                     ? 'bg-amber-950/40 border-amber-500/60'
                     : 'bg-surface border-accent/30 hover:border-accent/50'
                 }`}
               >
+                {/* Visual Swipe Gesture Hint Badges (Mobile Touch) */}
+                {isFlipped && swipeHint === 'left' && (
+                  <div className="absolute inset-0 bg-green-500/25 backdrop-blur-[2px] rounded-3xl flex items-center justify-center pointer-events-none z-20 animate-in fade-in duration-150">
+                    <span className="text-xl sm:text-2xl font-bold text-green-300 bg-surface/95 px-5 py-2.5 rounded-2xl border border-green-500/50 shadow-2xl">
+                      ✅ Hafal (Geser Kiri)
+                    </span>
+                  </div>
+                )}
+                {isFlipped && swipeHint === 'right' && (
+                  <div className="absolute inset-0 bg-red-500/25 backdrop-blur-[2px] rounded-3xl flex items-center justify-center pointer-events-none z-20 animate-in fade-in duration-150">
+                    <span className="text-xl sm:text-2xl font-bold text-red-300 bg-surface/95 px-5 py-2.5 rounded-2xl border border-red-500/50 shadow-2xl">
+                      ❌ Lupa (Geser Kanan)
+                    </span>
+                  </div>
+                )}
+                {isFlipped && swipeHint === 'down' && (
+                  <div className="absolute inset-0 bg-amber-500/25 backdrop-blur-[2px] rounded-3xl flex items-center justify-center pointer-events-none z-20 animate-in fade-in duration-150">
+                    <span className="text-xl sm:text-2xl font-bold text-amber-300 bg-surface/95 px-5 py-2.5 rounded-2xl border border-amber-500/50 shadow-2xl">
+                      😅 Ragu (Geser Bawah)
+                    </span>
+                  </div>
+                )}
+
                 <div className="flex items-center justify-between text-xs text-appText-muted">
                   <span className="font-semibold text-accent">{currentQ.prompt}</span>
                   <button
@@ -622,6 +690,29 @@ export const QuizPage: React.FC = () => {
           )}
         </div>
       )}
+
+      {/* Quiz Session Configuration Modal */}
+      <QuizConfigModal
+        isOpen={isConfigOpen}
+        onClose={() => setIsConfigOpen(false)}
+        selectedCount={sessionCount}
+        onSelectCount={setSessionCount}
+        selectedLevel={selectedLevel}
+        onSelectLevel={setSelectedLevel}
+        selectedMode={activeMode}
+        onSelectMode={setActiveMode}
+        onStartSession={loadNewSession}
+      />
+
+      {/* Mid-Quiz Accidental Exit Guard Modal */}
+      <QuizExitGuardModal
+        isOpen={isExitGuardOpen}
+        onStay={() => {
+          setIsExitGuardOpen(false);
+          setPendingMode(null);
+        }}
+        onConfirmExit={handleConfirmExit}
+      />
     </div>
   );
 };

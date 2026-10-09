@@ -6,6 +6,11 @@ import { loadVocab, loadGrammar, NormalizedVocab, NormalizedGrammar } from '../l
 import { speakJapanese } from '../lib/audio/tts';
 import { DetailModal } from '../components/ui/DetailModal';
 import { BookTrackBrowser } from '../components/materi/BookTrackBrowser';
+import { KanaChartModal } from '../components/kana/KanaChartModal';
+import { ConjugationModal } from '../components/grammar/ConjugationModal';
+import { NuanceCompareModal } from '../components/grammar/NuanceCompareModal';
+import { SkeletonGrid } from '../components/ui/SkeletonCard';
+import { loadFreewayTrack } from '../lib/data/dataManager';
 
 export const MateriHubPage: React.FC = () => {
   const {
@@ -13,12 +18,17 @@ export const MateriHubPage: React.FC = () => {
     searchQuery, setSearchQuery,
     showFurigana, showRomaji
   } = useAppStore();
-  const [activeTrack, setActiveTrack] = useState<'jlpt' | 'buku'>('jlpt');
+  const [activeTrack, setActiveTrack] = useState<'jlpt' | 'buku' | 'freeway'>('jlpt');
   const [activeTab, setActiveTab] = useState<'all' | 'vocab' | 'grammar'>('vocab');
+  const [isKanaOpen, setIsKanaOpen] = useState(false);
+  const [isConjugationOpen, setIsConjugationOpen] = useState(false);
+  const [isNuanceOpen, setIsNuanceOpen] = useState(false);
+  const [selectedParticle, setSelectedParticle] = useState<string>('all');
 
   // Loaded items
   const [vocabList, setVocabList] = useState<NormalizedVocab[]>([]);
   const [grammarList, setGrammarList] = useState<NormalizedGrammar[]>([]);
+  const [freewayList, setFreewayList] = useState<NormalizedGrammar[]>([]);
   const [isLoading, setIsLoading] = useState(false);
 
   // Selected item for modal
@@ -34,10 +44,12 @@ export const MateriHubPage: React.FC = () => {
     Promise.all([
       loadVocab(targetLevel),
       loadGrammar(targetLevel),
-    ]).then(([vocabs, grammars]) => {
+      loadFreewayTrack(),
+    ]).then(([vocabs, grammars, freeways]) => {
       if (!isCancelled) {
         setVocabList(vocabs);
         setGrammarList(grammars);
+        setFreewayList(freeways);
         setIsLoading(false);
       }
     }).catch(() => {
@@ -57,6 +69,8 @@ export const MateriHubPage: React.FC = () => {
     { id: 'n1', label: 'JLPT N1', desc: 'Mahir / Profesional', count: '190 Kata · 200 Pola' },
   ];
 
+  const particles = ['all', 'は', 'が', 'を', 'に', 'で', 'へ', 'と', 'も', 'から', 'まで'];
+
   // Filtered lists
   const filteredVocab = useMemo(() => {
     if (!searchQuery.trim()) return vocabList;
@@ -71,31 +85,64 @@ export const MateriHubPage: React.FC = () => {
   }, [vocabList, searchQuery]);
 
   const filteredGrammar = useMemo(() => {
-    if (!searchQuery.trim()) return grammarList;
+    let list = grammarList;
+    if (selectedParticle !== 'all') {
+      list = list.filter((g) =>
+        g.pattern.includes(selectedParticle) ||
+        g.reading.includes(selectedParticle) ||
+        (g.cat && g.cat.includes(selectedParticle))
+      );
+    }
+    if (!searchQuery.trim()) return list;
     const q = searchQuery.toLowerCase().trim();
-    return grammarList.filter(
+    return list.filter(
       (g) =>
         g.pattern.toLowerCase().includes(q) ||
         g.reading.toLowerCase().includes(q) ||
         g.meaning.toLowerCase().includes(q)
     );
-  }, [grammarList, searchQuery]);
+  }, [grammarList, searchQuery, selectedParticle]);
 
   // Max items to render in list for instantaneous rendering
   const [renderLimit, setRenderLimit] = useState(60);
 
   return (
     <div className="max-w-5xl mx-auto py-6 space-y-8 animate-in fade-in duration-300">
-      <div>
-        <h1 className="text-2xl font-extrabold text-appText-bright mb-1">Materi Hub · 学習ハブ</h1>
-        <p className="text-xs text-appText-muted">Eksplor 4.800+ kosakata dan 850+ tata bahasa JLPT dengan audio pelafalan asli.</p>
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div>
+          <h1 className="text-2xl font-extrabold text-appText-bright mb-1">Materi Hub · 学習ハブ</h1>
+          <p className="text-xs text-appText-muted">Eksplor 4.800+ kosakata dan 850+ tata bahasa JLPT dengan audio pelafalan asli.</p>
+        </div>
+        <div className="flex flex-wrap items-center gap-2 shrink-0 self-start sm:self-auto">
+          <button
+            onClick={() => setIsKanaOpen(true)}
+            className="px-3.5 py-2 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/35 text-accent-hot text-xs font-bold transition-all flex items-center gap-1.5 shadow-sm"
+          >
+            <span>Tabel Kana</span>
+            <span className="font-mono text-xs">あ/ア</span>
+          </button>
+          <button
+            onClick={() => setIsConjugationOpen(true)}
+            className="px-3.5 py-2 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/25 text-appText-bright text-xs font-bold transition-all flex items-center gap-1.5 shadow-sm"
+          >
+            <span>Konjugasi</span>
+            <span>🔄</span>
+          </button>
+          <button
+            onClick={() => setIsNuanceOpen(true)}
+            className="px-3.5 py-2 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/25 text-appText-bright text-xs font-bold transition-all flex items-center gap-1.5 shadow-sm"
+          >
+            <span>Inspektor Nuansa</span>
+            <span>⚖️</span>
+          </button>
+        </div>
       </div>
 
-      {/* The Two-Door Gateways (Side-by-side on desktop/tablet) */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+      {/* The Three Gateways (JLPT, Buku Teks, Freeway) */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div
           onClick={() => setActiveTrack('jlpt')}
-          className={`cursor-pointer rounded-3xl p-6 border-2 transition-all duration-200 ${
+          className={`cursor-pointer rounded-3xl p-5 border-2 transition-all duration-200 ${
             activeTrack === 'jlpt'
               ? 'bg-amber-950/30 border-amber-500/60 shadow-glow'
               : 'bg-surface border-accent/20 hover:border-accent/40'
@@ -105,19 +152,19 @@ export const MateriHubPage: React.FC = () => {
             <div className="w-10 h-10 rounded-xl bg-amber-500/20 text-accent-hot flex items-center justify-center">
               <Award className="w-5 h-5" />
             </div>
-            <span className="text-[11px] font-bold uppercase tracking-wider text-accent px-2.5 py-0.5 rounded-full bg-amber-500/15">
-              Jalur Standar
+            <span className="text-[10px] font-bold uppercase tracking-wider text-accent px-2 py-0.5 rounded-full bg-amber-500/15">
+              Standar Resmi
             </span>
           </div>
-          <h2 className="text-lg font-bold text-appText-bright">Jalur JLPT (N5 — N1)</h2>
-          <p className="text-xs text-appText-muted mt-1 leading-relaxed">
-            Terstruktur rapi sesuai standar resmi ujian kemampuan bahasa Jepang internasional.
+          <h2 className="text-base font-bold text-appText-bright">Jalur JLPT (N5 — N1)</h2>
+          <p className="text-[11px] text-appText-muted mt-1 leading-relaxed">
+            Standar kurikulum resmi tes kemampuan bahasa Jepang.
           </p>
         </div>
 
         <div
           onClick={() => setActiveTrack('buku')}
-          className={`cursor-pointer rounded-3xl p-6 border-2 transition-all duration-200 ${
+          className={`cursor-pointer rounded-3xl p-5 border-2 transition-all duration-200 ${
             activeTrack === 'buku'
               ? 'bg-amber-950/30 border-amber-500/60 shadow-glow'
               : 'bg-surface border-accent/20 hover:border-accent/40'
@@ -127,13 +174,35 @@ export const MateriHubPage: React.FC = () => {
             <div className="w-10 h-10 rounded-xl bg-amber-500/20 text-accent-hot flex items-center justify-center">
               <BookMarked className="w-5 h-5" />
             </div>
-            <span className="text-[11px] font-bold uppercase tracking-wider text-accent px-2.5 py-0.5 rounded-full bg-amber-500/15">
-              Jalur Buku Pegangan
+            <span className="text-[10px] font-bold uppercase tracking-wider text-accent px-2 py-0.5 rounded-full bg-amber-500/15">
+              Buku Pegangan
             </span>
           </div>
-          <h2 className="text-lg font-bold text-appText-bright">Jalur Buku Teks</h2>
-          <p className="text-xs text-appText-muted mt-1 leading-relaxed">
-            Cocok bagi yang belajar dengan buku Minna no Nihongo atau materi praktis Irodori Japan Foundation.
+          <h2 className="text-base font-bold text-appText-bright">Jalur Buku Teks</h2>
+          <p className="text-[11px] text-appText-muted mt-1 leading-relaxed">
+            Minna no Nihongo & modul percakapan praktis Irodori.
+          </p>
+        </div>
+
+        <div
+          onClick={() => setActiveTrack('freeway')}
+          className={`cursor-pointer rounded-3xl p-5 border-2 transition-all duration-200 ${
+            activeTrack === 'freeway'
+              ? 'bg-amber-950/30 border-amber-500/60 shadow-glow'
+              : 'bg-surface border-accent/20 hover:border-accent/40'
+          }`}
+        >
+          <div className="flex items-center justify-between mb-3">
+            <div className="w-10 h-10 rounded-xl bg-amber-500/20 text-accent-hot flex items-center justify-center">
+              <span className="text-xl">🛣️</span>
+            </div>
+            <span className="text-[10px] font-bold uppercase tracking-wider text-accent px-2 py-0.5 rounded-full bg-amber-500/15">
+              0 Pengetahuan
+            </span>
+          </div>
+          <h2 className="text-base font-bold text-appText-bright">Jalur Freeway (Survival)</h2>
+          <p className="text-[11px] text-appText-muted mt-1 leading-relaxed">
+            21 pola paling penting untuk bertahan hidup di Jepang.
           </p>
         </div>
       </div>
@@ -213,10 +282,38 @@ export const MateriHubPage: React.FC = () => {
             </span>
           </div>
 
+          {/* Particle Quick Filter Pills (Tier 1 & 2) */}
+          {activeTab === 'grammar' && (
+            <div className="flex items-center gap-1.5 overflow-x-auto pb-1.5 scrollbar-none">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-accent shrink-0 mr-1">
+                Partikel:
+              </span>
+              {particles.map((p) => {
+                const isSelected = selectedParticle === p;
+                return (
+                  <button
+                    key={p}
+                    onClick={() => {
+                      setSelectedParticle(p);
+                      setRenderLimit(60);
+                    }}
+                    className={`px-2.5 py-1 rounded-lg text-xs font-semibold whitespace-nowrap transition-all border ${
+                      isSelected
+                        ? 'bg-accent text-bg border-accent font-bold shadow-sm'
+                        : 'bg-surface-2 border-accent/15 text-appText-muted hover:text-appText-bright'
+                    }`}
+                  >
+                    {p === 'all' ? 'Semua Partikel' : p}
+                  </button>
+                );
+              })}
+            </div>
+          )}
+
           {/* Content Grid */}
           {isLoading ? (
-            <div className="py-12 text-center text-xs text-appText-muted animate-pulse">
-              Memuat database kosakata & tata bahasa... 🍙
+            <div className="py-2">
+              <SkeletonGrid count={6} />
             </div>
           ) : activeTab === 'vocab' ? (
             <div className="space-y-4">
@@ -372,11 +469,98 @@ export const MateriHubPage: React.FC = () => {
         />
       )}
 
+      {/* Jalur Freeway (Survival Japanese for Beginners) */}
+      {activeTrack === 'freeway' && (
+        <div className="space-y-6 animate-in fade-in duration-300">
+          <div className="bg-gradient-to-r from-amber-950/40 via-surface-2 to-surface-2 border border-accent/25 rounded-3xl p-6 sm:p-8 space-y-2">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/15 border border-amber-500/30 text-accent-hot text-xs font-bold">
+              <span>🛣️ Jalur Freeway · Survival Japanese</span>
+            </div>
+            <h2 className="text-xl sm:text-2xl font-bold text-appText-bright">
+              21 Pola Paling Fundamental untuk Bertahan Hidup
+            </h2>
+            <p className="text-xs text-appText-muted leading-relaxed max-w-2xl">
+              Dirancang khusus untuk pemula yang belum mengenal tata bahasa rumit. Urutan terstruktur mulai dari salam, permisi (*sumimasen*), memperkenalkan diri (*wa desu*), bertanya (*wa desu ka*), tunjuk barang (*kore/sore/are*), hingga meminta tolong (*te kudasai*).
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {freewayList.map((item, index) => (
+              <div
+                key={item.id}
+                onClick={() => {
+                  setSelectedItem(item);
+                  setItemType('grammar');
+                }}
+                className="bg-surface-2 hover:bg-surface-3 border border-accent/20 hover:border-accent/40 rounded-2xl p-5 flex flex-col justify-between cursor-pointer transition-all hover:-translate-y-0.5 shadow-sm group"
+              >
+                <div className="flex items-start justify-between gap-3">
+                  <div className="space-y-1">
+                    <div className="flex items-center gap-2">
+                      <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-amber-500/20 text-accent border border-amber-500/30">
+                        Langkah #{index + 1}
+                      </span>
+                    </div>
+                    <div className="text-xl font-jp font-bold text-appText-bright group-hover:text-amber-300 transition-colors">
+                      {item.pattern}
+                    </div>
+                    {item.reading && (
+                      <div className="text-xs text-appText-muted font-mono">
+                        {item.reading}
+                      </div>
+                    )}
+                  </div>
+
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      speakJapanese(item.pattern);
+                    }}
+                    className="p-2 rounded-xl bg-surface hover:bg-amber-500/20 text-appText-muted hover:text-accent transition-all shrink-0"
+                    title="Dengarkan pelafalan"
+                  >
+                    <Volume2 className="w-4 h-4" />
+                  </button>
+                </div>
+
+                <div className="text-xs text-appText font-medium mt-3">
+                  {item.meaning}
+                </div>
+
+                {item.examples?.[0] && (
+                  <div className="mt-3 pt-3 border-t border-accent/10 text-xs text-appText-muted italic">
+                    "{item.examples[0].jp}" ({item.examples[0].id})
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
       {/* Detail Modal */}
       <DetailModal
         item={selectedItem}
         type={itemType}
         onClose={() => setSelectedItem(null)}
+      />
+
+      {/* Kana Chart Modal (Hiragana & Katakana) */}
+      <KanaChartModal
+        isOpen={isKanaOpen}
+        onClose={() => setIsKanaOpen(false)}
+      />
+
+      {/* Verb Conjugation Matrix Modal */}
+      <ConjugationModal
+        isOpen={isConjugationOpen}
+        onClose={() => setIsConjugationOpen(false)}
+      />
+
+      {/* Grammar Nuance Comparison Inspector Modal */}
+      <NuanceCompareModal
+        isOpen={isNuanceOpen}
+        onClose={() => setIsNuanceOpen(false)}
       />
     </div>
   );

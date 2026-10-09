@@ -736,6 +736,40 @@ console.log('\n── Sensei persona drift ──');
   }
 })();
 
+// ── Curriculum N5 Original ──
+(() => {
+  console.log('\n── Curriculum N5 Original ──');
+  const currPath = path.join(ROOT, 'public/data/curriculum/curriculum-n5.json');
+  if (!fs.existsSync(currPath)) {
+    skip++; console.log('  SKIP: curriculum-n5.json not found'); return;
+  }
+  let curr = null;
+  try { curr = JSON.parse(fs.readFileSync(currPath, 'utf8')); } catch (e) {
+    assert(false, `curriculum-n5.json JSON parse error: ${e.message}`);
+    return;
+  }
+
+  assert(curr && curr.units && curr.units.length === 10, 'Curriculum N5 must contain exactly 10 units');
+  const gn5 = global.grammarN5 || [];
+  const gn5Set = new Set(gn5.map(g => g.id));
+  const seenG = new Set();
+
+  for (const unit of (curr.units || [])) {
+    assert(unit.id && unit.title_id && unit.can_do_summary, `Unit ${unit.unit_number || '?'}: missing required metadata`);
+    assert(Array.isArray(unit.grammar_ids) && unit.grammar_ids.length > 0, `Unit ${unit.unit_number}: grammar_ids must be non-empty array`);
+    assert(Array.isArray(unit.lessons) && unit.lessons.length > 0, `Unit ${unit.unit_number}: lessons must be non-empty array`);
+
+    for (const gid of (unit.grammar_ids || [])) {
+      assert(gn5Set.has(gid), `Unit ${unit.unit_number}: grammar ID ${gid} not found in grammarN5`);
+      assert(!seenG.has(gid), `Unit ${unit.unit_number}: duplicate grammar ID ${gid}`);
+      seenG.add(gid);
+    }
+  }
+
+  assert(seenG.size === gn5.length, `Curriculum N5 must cover all 94 grammar points (covered: ${seenG.size}/${gn5.length})`);
+})();
+
+
 // ── Summary ──
 console.log(`\n══════════════════════════════════`);
 console.log(`  PASS: ${pass}  |  FAIL: ${fail}  |  SKIP: ${skip}`);
