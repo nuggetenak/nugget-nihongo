@@ -1,6 +1,7 @@
 import React from 'react';
-import { Search, Flame, Zap } from 'lucide-react';
+import { Search, Flame, Zap, Download } from 'lucide-react';
 import { useAppStore } from '../../store/useAppStore';
+import { usePwaStore } from '../../lib/pwa/pwaStore';
 import { JLPTLevel } from '../../types/vocab';
 
 interface HeaderProps {
@@ -8,7 +9,8 @@ interface HeaderProps {
 }
 
 export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
-  const { streak, xp, selectedLevel, setSelectedLevel, searchQuery, setSearchQuery } = useAppStore();
+  const { streak, xp, selectedLevel, setSelectedLevel } = useAppStore();
+  const { isInstalled, setShowInstallModal } = usePwaStore();
 
   const levels: (JLPTLevel | 'all')[] = ['all', 'n5', 'n4', 'n3', 'n2', 'n1'];
 
@@ -73,6 +75,18 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
           <Zap className="w-4 h-4 fill-amber-400 text-amber-400" />
           <span className="text-xs font-bold font-mono">{xp} XP</span>
         </div>
+
+        {/* PWA Install Button */}
+        {!isInstalled && (
+          <button
+            onClick={() => setShowInstallModal(true)}
+            title="Pasang Aplikasi (PWA)"
+            className="flex items-center gap-1 px-2.5 py-1.5 rounded-full bg-amber-500/10 hover:bg-amber-500/20 text-amber-300 border border-amber-500/30 text-xs font-semibold transition-all active:scale-95"
+          >
+            <Download className="w-3.5 h-3.5" />
+            <span className="hidden sm:inline">Pasang</span>
+          </button>
+        )}
       </div>
     </header>
   );

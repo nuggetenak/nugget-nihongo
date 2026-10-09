@@ -6,6 +6,8 @@ import { BottomNav } from './components/layout/BottomNav';
 import { Toast } from './components/ui/Toast';
 import { SearchPalette } from './components/ui/SearchPalette';
 import { DetailModal } from './components/ui/DetailModal';
+import { InstallModal } from './components/ui/InstallModal';
+import { usePwaStore } from './lib/pwa/pwaStore';
 import { NormalizedVocab, NormalizedGrammar } from './lib/data/dataManager';
 
 // Views
@@ -19,9 +21,29 @@ import { AboutPage } from './pages/AboutPage';
 
 export const App: React.FC = () => {
   const { activeTab, setActiveTab } = useAppStore();
+  const { initPwa } = usePwaStore();
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [selectedModalItem, setSelectedModalItem] = useState<(NormalizedVocab | NormalizedGrammar) | null>(null);
   const [modalItemType, setModalItemType] = useState<'vocab' | 'grammar'>('vocab');
+
+  // Initialize PWA Service Worker & install prompt listener
+  useEffect(() => {
+    initPwa();
+  }, [initPwa]);
+
+  // Listen to browser forward/back hash changes
+  useEffect(() => {
+    const handleHashChange = () => {
+      const raw = (window.location.hash || '').replace('#', '').toLowerCase();
+      const mapped = raw === 'browse' ? 'materi' : raw === 'stats' ? 'kebun' : raw;
+      const validTabs = ['home', 'materi', 'quiz', 'kebun', 'sensei', 'settings', 'about'] as const;
+      if (validTabs.includes(mapped as any)) {
+        setActiveTab(mapped as any);
+      }
+    };
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, [setActiveTab]);
 
   // Keyboard shortcut listener (Ctrl+K or ⌘K for spotlight search)
   useEffect(() => {
@@ -93,6 +115,9 @@ export const App: React.FC = () => {
         type={modalItemType}
         onClose={() => setSelectedModalItem(null)}
       />
+
+      {/* PWA Add to Home Screen Modal */}
+      <InstallModal />
     </div>
   );
 };

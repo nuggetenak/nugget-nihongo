@@ -1,36 +1,61 @@
 {
   "name": "Nugget Nihongo · Belajar JLPT",
   "short_name": "Nugget日本語",
-  "description": "Belajar bahasa Jepang JLPT N5–N1 — Grammar, Kosakata, Quiz · by Nugget",
-  "start_url": "./",
+  "description": "Aplikasi belajar bahasa Jepang JLPT N5–N1: Kosakata, Tata Bahasa, Latihan Kuis, dan Kebun Kata.",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
-  "background_color": "#0D1117",
-  "theme_color": "#0D1117",
+  "background_color": "#0D0B08",
+  "theme_color": "#0D0B08",
   "orientation": "portrait",
+  "categories": ["education", "reference"],
   "icons": [
     {
-      "src": "./icons/icon-192.png",
+      "src": "/icons/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "./icons/icon-192.png",
+      "src": "/icons/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "./icons/icon-512.png",
+      "src": "/icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "./icons/icon-512.png",
+      "src": "/icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Kuis Harian",
+      "short_name": "Kuis",
+      "description": "Latihan soal dan review FSRS harian",
+      "url": "/#quiz",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Materi Hub",
+      "short_name": "Materi",
+      "description": "Jelajahi Kosakata & Grammar JLPT & Buku Teks",
+      "url": "/#materi",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Kebun Kata",
+      "short_name": "Kebun",
+      "description": "Lihat pertumbuhan tanaman kosakata Anda",
+      "url": "/#kebun",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
     }
   ]
 }

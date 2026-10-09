@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Moon, Sun, Type, Download, Upload, Trash2, CheckCircle2 } from 'lucide-react';
+import { Moon, Sun, Type, Download, Upload, Trash2, CheckCircle2, Smartphone } from 'lucide-react';
 import { useAppStore } from '../store/useAppStore';
+import { usePwaStore } from '../lib/pwa/pwaStore';
 
 export const SettingsPage: React.FC = () => {
   const {
@@ -157,6 +158,56 @@ export const SettingsPage: React.FC = () => {
             <span>Impor Cadangan</span>
             <input type="file" accept=".json" onChange={handleImportBackup} className="hidden" />
           </label>
+        </div>
+      </div>
+
+      {/* PWA & Offline Engine Settings */}
+      <div className="bg-surface border border-accent/20 rounded-2xl p-6 space-y-5">
+        <h2 className="font-bold text-sm text-appText-bright flex items-center gap-2 border-b border-accent/15 pb-3">
+          <Smartphone className="w-4 h-4 text-accent" />
+          <span>Aplikasi & Penyimpanan Offline (PWA)</span>
+        </h2>
+
+        <div className="flex items-center justify-between text-xs">
+          <div>
+            <div className="font-semibold text-appText-bright">Versi Sistem</div>
+            <div className="text-appText-muted">v15.16.0 · Arsitektur SPA React & Vite</div>
+          </div>
+          <span className="px-2.5 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 font-mono text-[11px] font-bold">
+            Produksi Aktif
+          </span>
+        </div>
+
+        <div className="flex items-center justify-between text-xs">
+          <div>
+            <div className="font-semibold text-appText-bright">Mode Offline & Service Worker</div>
+            <div className="text-appText-muted">Cache data kosakata & grammar tersedia tanpa internet</div>
+          </div>
+          <button
+            onClick={async () => {
+              if ('caches' in window) {
+                const keys = await caches.keys();
+                await Promise.all(keys.map(k => caches.delete(k)));
+                showToast('Cache offline dibersihkan. Memuat ulang...', '🧹');
+                setTimeout(() => window.location.reload(), 1000);
+              } else {
+                showToast('Cache tidak tersedia', '⚠️');
+              }
+            }}
+            className="px-3 py-1.5 rounded-lg bg-surface-2 border border-accent/20 text-appText-bright hover:bg-surface-3 transition-colors text-xs font-medium"
+          >
+            Bersihkan Cache
+          </button>
+        </div>
+
+        <div className="pt-2">
+          <button
+            onClick={() => usePwaStore.getState().setShowInstallModal(true)}
+            className="w-full py-2.5 rounded-xl bg-surface-2 border border-accent/30 text-accent font-bold text-xs flex items-center justify-center gap-2 hover:bg-amber-500/10 transition-colors"
+          >
+            <Smartphone className="w-4 h-4" />
+            <span>Panduan Pasang Aplikasi ke Layar Utama</span>
+          </button>
         </div>
       </div>
     </div>

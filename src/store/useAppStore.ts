@@ -67,9 +67,25 @@ function getStoredCards(): Record<string, { card: FSRSCard; source?: string }> {
   }
 }
 
+function getInitialTab(): AppState['activeTab'] {
+  if (typeof window === 'undefined') return 'home';
+  const hash = (window.location.hash || '').replace('#', '').toLowerCase();
+  if (hash === 'browse') return 'materi';
+  if (hash === 'stats') return 'kebun';
+  const validTabs: AppState['activeTab'][] = ['home', 'materi', 'quiz', 'kebun', 'sensei', 'settings', 'about'];
+  return validTabs.includes(hash as AppState['activeTab']) ? (hash as AppState['activeTab']) : 'home';
+}
+
 export const useAppStore = create<AppState>((set, get) => ({
-  activeTab: 'home',
-  setActiveTab: (activeTab) => set({ activeTab }),
+  activeTab: getInitialTab(),
+  setActiveTab: (activeTab) => {
+    set({ activeTab });
+    if (typeof window !== 'undefined') {
+      try {
+        history.replaceState(null, '', '#' + activeTab);
+      } catch {}
+    }
+  },
 
   selectedLevel: 'n5',
   setSelectedLevel: (selectedLevel) => set({ selectedLevel }),

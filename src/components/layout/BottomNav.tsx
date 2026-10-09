@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, BookOpen, Layers, Sparkles, Settings } from 'lucide-react';
+import { Home, BookOpen, Layers, Sprout, Settings } from 'lucide-react';
 import { useAppStore, AppState } from '../../store/useAppStore';
 
 export const BottomNav: React.FC = () => {
@@ -9,7 +9,7 @@ export const BottomNav: React.FC = () => {
     { id: 'home', label: 'Beranda', icon: <Home className="w-5 h-5" /> },
     { id: 'materi', label: 'Materi', icon: <BookOpen className="w-5 h-5" /> },
     { id: 'quiz', label: 'Kuis', icon: <Layers className="w-5 h-5" /> },
-    { id: 'sensei', label: 'Sensei', icon: <Sparkles className="w-5 h-5" /> },
+    { id: 'kebun', label: 'Kebun', icon: <Sprout className="w-5 h-5" /> },
     { id: 'settings', label: 'Setelan', icon: <Settings className="w-5 h-5" /> },
   ];
 
