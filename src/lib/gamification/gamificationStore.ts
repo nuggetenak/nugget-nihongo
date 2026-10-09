@@ -35,6 +35,12 @@ export interface BadgeItem {
   earnedAt?: string;
 }
 
+export interface QuizModeStat {
+  sessionsCompleted: number;
+  questionsAnswered: number;
+  correctCount: number;
+}
+
 const BADGE_TEMPLATES: Omit<BadgeItem, 'earned' | 'earnedAt'>[] = [
   { id: 'vocab-10',   name: 'First Words',        desc: 'Review 10 kosakata pertama',          icon: '🌱', category: 'vocab' },
   { id: 'vocab-100',  name: 'Word Collector',     desc: 'Kumpulkan 100 kosakata',              icon: '📚', category: 'vocab' },
@@ -46,6 +52,12 @@ const BADGE_TEMPLATES: Omit<BadgeItem, 'earned' | 'earnedAt'>[] = [
   { id: 'streak-3',   name: 'Awal yang Baik',     desc: 'Capai streak belajar 3 hari berturut', icon: '🔥', category: 'streak' },
   { id: 'streak-7',   name: 'Satu Pekan Kuat',    desc: 'Konsisten 7 hari berturut-turut',      icon: '💪', category: 'streak' },
   { id: 'streak-30',  name: 'Pejuang Satu Bulan', desc: 'Pertahankan streak 30 hari',          icon: '🏆', category: 'streak' },
+  { id: 'quiz-first', name: 'Langkah Pertama',    desc: 'Selesaikan 1 sesi latihan di Arena Kuis', icon: '⚔️', category: 'special' },
+  { id: 'quiz-perfect', name: 'Sempurna Tanpa Cela', desc: 'Dapatkan akurasi 100% dalam satu sesi kuis', icon: '💯', category: 'special' },
+  { id: 'quiz-listening-3', name: 'Telinga Penutur Asli', desc: 'Selesaikan 3 sesi latihan audio listening', icon: '🎧', category: 'special' },
+  { id: 'quiz-conjugation-3', name: 'Penakluk Konjugasi', desc: 'Selesaikan 3 sesi matriks konjugasi verba', icon: '🔄', category: 'special' },
+  { id: 'quiz-rearrange-3', name: 'Arsitek Sintaksis', desc: 'Selesaikan 3 sesi susun kalimat Jepang', icon: '🧩', category: 'special' },
+  { id: 'quiz-50-correct', name: 'Gladiator Kuis', desc: 'Jawab 50 pertanyaan kuis dengan benar', icon: '🥋', category: 'special' },
   { id: 'night-owl',  name: 'Night Owl',          desc: 'Belajar tengah malam (00:00 - 04:00)', icon: '🦉', category: 'special' },
   { id: 'early-bird', name: 'Early Bird',         desc: 'Belajar subuh (04:00 - 06:00)',        icon: '🐦', category: 'special' },
   { id: 'garden-bloom', name: 'Kebun Semerbak',   desc: 'Mekarkan bunga kanji pertama di kebun', icon: '🌸', category: 'special' },
@@ -69,17 +81,23 @@ export interface HeatmapDay {
 export interface GamificationState {
   badges: BadgeItem[];
   heatmap: Record<string, { reviews: number; xp: number }>;
+  quizModeStats: Record<string, QuizModeStat>;
   isStreakBrokenModalOpen: boolean;
   streakBrokenTip: string;
   openStreakBrokenModal: (customTip?: string) => void;
   closeStreakBrokenModal: () => void;
   recordActivity: (reviewsCount?: number, xpEarned?: number) => void;
+  recordQuizAnswer: (mode: string, isCorrect: boolean) => void;
+  recordQuizSessionComplete: (mode: string, score: number, total: number) => void;
+  getModeStat: (mode: string) => { sessions: number; answered: number; correct: number; accuracy: number };
+  getOverallQuizStats: () => { totalSessions: number; totalAnswered: number; totalCorrect: number; overallAccuracy: number };
   getHeatmapDays: (daysCount?: number) => HeatmapDay[];
   checkAndAwardBadges: (context: {
     vocabCount?: number;
     grammarCount?: number;
     streak?: number;
     gardenBloomed?: boolean;
+    perfectQuizSession?: boolean;
   }) => BadgeItem[];
 }
 
@@ -107,6 +125,16 @@ function loadHeatmap(): Record<string, { reviews: number; xp: number }> {
   }
 }
 
+function loadQuizModeStats(): Record<string, QuizModeStat> {
+  if (typeof window === 'undefined') return {};
+  try {
+    const raw = localStorage.getItem('nn_quiz_mode_stats');
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
 export const useGamificationStore = create<GamificationState>((set, get) => {
   const earnedMap = loadEarnedBadges();
   const initialBadges: BadgeItem[] = BADGE_TEMPLATES.map((t) => ({
@@ -118,6 +146,7 @@ export const useGamificationStore = create<GamificationState>((set, get) => {
   return {
     badges: initialBadges,
     heatmap: loadHeatmap(),
+    quizModeStats: loadQuizModeStats(),
     isStreakBrokenModalOpen: false,
     streakBrokenTip: STREAK_TIPS[0],
 
@@ -152,6 +181,70 @@ export const useGamificationStore = create<GamificationState>((set, get) => {
       }
     },
 
+    recordQuizAnswer: (mode: string, isCorrect: boolean) => {
+      const stats = { ...get().quizModeStats };
+      const current = stats[mode] || { sessionsCompleted: 0, questionsAnswered: 0, correctCount: 0 };
+      stats[mode] = {
+        ...current,
+        questionsAnswered: current.questionsAnswered + 1,
+        correctCount: current.correctCount + (isCorrect ? 1 : 0),
+      };
+      set({ quizModeStats: stats });
+      if (typeof window !== 'undefined') {
+        try { localStorage.setItem('nn_quiz_mode_stats', JSON.stringify(stats)); } catch {}
+      }
+
+      const totalCorrect = Object.values(stats).reduce((acc, s) => acc + (s.correctCount || 0), 0);
+      if (totalCorrect >= 50) {
+        get().checkAndAwardBadges({});
+      }
+    },
+
+    recordQuizSessionComplete: (mode: string, score: number, total: number) => {
+      const stats = { ...get().quizModeStats };
+      const current = stats[mode] || { sessionsCompleted: 0, questionsAnswered: 0, correctCount: 0 };
+      stats[mode] = {
+        ...current,
+        sessionsCompleted: current.sessionsCompleted + 1,
+      };
+      set({ quizModeStats: stats });
+      if (typeof window !== 'undefined') {
+        try { localStorage.setItem('nn_quiz_mode_stats', JSON.stringify(stats)); } catch {}
+      }
+
+      get().checkAndAwardBadges({
+        perfectQuizSession: score === total && total > 0,
+      });
+    },
+
+    getModeStat: (mode: string) => {
+      const stat = get().quizModeStats[mode];
+      if (!stat || stat.questionsAnswered === 0) {
+        return { sessions: 0, answered: 0, correct: 0, accuracy: 0 };
+      }
+      const accuracy = Math.round((stat.correctCount / stat.questionsAnswered) * 100);
+      return {
+        sessions: stat.sessionsCompleted,
+        answered: stat.questionsAnswered,
+        correct: stat.correctCount,
+        accuracy,
+      };
+    },
+
+    getOverallQuizStats: () => {
+      const stats = get().quizModeStats;
+      let totalSessions = 0;
+      let totalAnswered = 0;
+      let totalCorrect = 0;
+      for (const s of Object.values(stats)) {
+        totalSessions += s.sessionsCompleted || 0;
+        totalAnswered += s.questionsAnswered || 0;
+        totalCorrect += s.correctCount || 0;
+      }
+      const overallAccuracy = totalAnswered > 0 ? Math.round((totalCorrect / totalAnswered) * 100) : 0;
+      return { totalSessions, totalAnswered, totalCorrect, overallAccuracy };
+    },
+
     getHeatmapDays: (daysCount = 60): HeatmapDay[] => {
       const heatmap = get().heatmap;
       const result: HeatmapDay[] = [];
@@ -177,6 +270,8 @@ export const useGamificationStore = create<GamificationState>((set, get) => {
       const updated = [...badges];
       const newlyEarned: BadgeItem[] = [];
       const hour = new Date().getHours();
+      const overall = get().getOverallQuizStats();
+      const modeStats = get().quizModeStats;
 
       updated.forEach((b, idx) => {
         if (b.earned) return;
@@ -193,6 +288,12 @@ export const useGamificationStore = create<GamificationState>((set, get) => {
         if (b.id === 'grammar-50' && (context.grammarCount || 0) >= 50) shouldEarn = true;
         if (b.id === 'grammar-100' && (context.grammarCount || 0) >= 100) shouldEarn = true;
         if (b.id === 'garden-bloom' && context.gardenBloomed) shouldEarn = true;
+        if (b.id === 'quiz-first' && overall.totalSessions >= 1) shouldEarn = true;
+        if (b.id === 'quiz-perfect' && context.perfectQuizSession) shouldEarn = true;
+        if (b.id === 'quiz-listening-3' && (modeStats['listening']?.sessionsCompleted || 0) >= 3) shouldEarn = true;
+        if (b.id === 'quiz-conjugation-3' && (modeStats['conjugation']?.sessionsCompleted || 0) >= 3) shouldEarn = true;
+        if (b.id === 'quiz-rearrange-3' && (modeStats['rearrange']?.sessionsCompleted || 0) >= 3) shouldEarn = true;
+        if (b.id === 'quiz-50-correct' && overall.totalCorrect >= 50) shouldEarn = true;
         if (b.id === 'night-owl' && hour >= 0 && hour < 4) shouldEarn = true;
         if (b.id === 'early-bird' && hour >= 4 && hour < 6) shouldEarn = true;
 

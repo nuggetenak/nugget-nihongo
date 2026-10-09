@@ -26,10 +26,12 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onOpenShortcuts })
   return (
     <header className="sticky top-0 z-30 bg-surface/90 backdrop-blur-md border-b border-accent/15 px-3 sm:px-6 lg:px-8 py-2.5 sm:py-3 flex items-center justify-between gap-2.5 sm:gap-4">
       {/* Mobile brand (hidden on desktop) */}
-      <div className="flex lg:hidden items-center gap-1.5 shrink-0">
-        <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-gradient-to-br from-amber-600 to-amber-500 flex items-center justify-center text-sm sm:text-base shadow-sm">
-          🍙
-        </div>
+      <div className="flex lg:hidden items-center gap-2 shrink-0">
+        <img
+          src="/icons/icon-192.png"
+          alt="Nugget Nihongo"
+          className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg object-cover shadow-sm ring-1 ring-amber-500/30"
+        />
         <span className="font-bold text-xs sm:text-sm text-appText-bright hidden xs:inline">Nugget</span>
       </div>
 

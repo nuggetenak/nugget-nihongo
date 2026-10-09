@@ -218,9 +218,17 @@ export const OnboardingModal: React.FC = () => {
           {/* Hero Banner */}
           <div className={`p-5 rounded-2xl bg-gradient-to-br ${slide.accentBg} border border-accent/20 relative overflow-hidden`}>
             <div className="flex items-start gap-4">
-              <div className="w-14 h-14 rounded-2xl bg-amber-500/20 border border-amber-500/30 flex items-center justify-center text-3xl shadow-md shrink-0">
-                {slide.icon}
-              </div>
+              {currentSlide === 0 ? (
+                <img
+                  src="/icons/logo.png"
+                  alt="Nugget Nihongo"
+                  className="w-14 h-14 rounded-2xl object-cover shadow-glow ring-1 ring-amber-500/40 shrink-0"
+                />
+              ) : (
+                <div className="w-14 h-14 rounded-2xl bg-amber-500/20 border border-amber-500/30 flex items-center justify-center text-3xl shadow-md shrink-0">
+                  {slide.icon}
+                </div>
+              )}
               <div className="space-y-1">
                 <h2 className="text-lg sm:text-xl font-extrabold text-appText-bright tracking-tight leading-snug">
                   {slide.title}

@@ -36,9 +36,11 @@ export const Sidebar: React.FC = () => {
       {/* Brand Header */}
       <div className="p-5 border-b border-accent/15 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-600 to-amber-500 flex items-center justify-center text-xl shadow-glow">
-            🍙
-          </div>
+          <img
+            src="/icons/icon-192.png"
+            alt="Nugget Nihongo"
+            className="w-10 h-10 rounded-xl object-cover shadow-glow ring-1 ring-amber-500/40"
+          />
           <div>
             <div className="font-bold text-base text-appText-bright leading-tight tracking-tight">
               Nugget 日本語

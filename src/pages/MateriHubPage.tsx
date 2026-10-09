@@ -16,7 +16,8 @@ export const MateriHubPage: React.FC = () => {
   const {
     selectedLevel, setSelectedLevel,
     searchQuery, setSearchQuery,
-    showFurigana, showRomaji
+    showFurigana, showRomaji,
+    cards,
   } = useAppStore();
   const [activeTrack, setActiveTrack] = useState<'jlpt' | 'buku' | 'freeway'>('jlpt');
   const [activeTab, setActiveTab] = useState<'all' | 'vocab' | 'grammar'>('vocab');
@@ -361,7 +362,15 @@ export const MateriHubPage: React.FC = () => {
                     </div>
 
                     <div className="mt-3 pt-2 border-t border-accent/10 flex items-center justify-between text-[10px] text-appText-muted">
-                      <span className="capitalize">{v.pos}</span>
+                      <div className="flex items-center gap-1.5">
+                        <span className="capitalize">{v.pos}</span>
+                        {cards[v.id]?.card && (
+                          <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-full text-[9px] font-bold bg-amber-500/15 text-accent border border-amber-500/30">
+                            <Sparkles className="w-2.5 h-2.5" />
+                            <span>FSRS</span>
+                          </span>
+                        )}
+                      </div>
                       <span className="opacity-0 group-hover:opacity-100 text-accent transition-opacity">
                         Detail →
                       </span>
@@ -427,7 +436,15 @@ export const MateriHubPage: React.FC = () => {
                     </div>
 
                     <div className="mt-4 pt-2 border-t border-accent/10 flex items-center justify-between text-[10px] text-appText-muted">
-                      <span>{g.cat || 'Pola Kalimat'}</span>
+                      <div className="flex items-center gap-1.5">
+                        <span>{g.cat || 'Pola Kalimat'}</span>
+                        {cards[g.id]?.card && (
+                          <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-full text-[9px] font-bold bg-amber-500/15 text-accent border border-amber-500/30">
+                            <Sparkles className="w-2.5 h-2.5" />
+                            <span>FSRS</span>
+                          </span>
+                        )}
+                      </div>
                       <span className="opacity-0 group-hover:opacity-100 text-accent transition-opacity">
                         Detail & Contoh →
                       </span>

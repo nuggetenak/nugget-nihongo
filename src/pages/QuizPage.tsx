@@ -62,6 +62,7 @@ export const QuizPage: React.FC = () => {
   const [isFinished, setIsFinished] = useState(false);
   const [sessionScore, setSessionScore] = useState(0);
   const [sessionXp, setSessionXp] = useState(0);
+  const [sessionEarnedWater, setSessionEarnedWater] = useState(0);
 
   // Calculate count of due cards in FSRS
   const dueCount = getFSRSDueCount(cards);
@@ -239,6 +240,50 @@ export const QuizPage: React.FC = () => {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [viewState, isFinished, currentQ, activeMode, isFlipped, feedback]);
 
+  // Atomized calculation helper: updates FSRS spaced repetition and seeds Kanji garden
+  const updateItemFSRSAndGarden = (
+    target: QuizQuestionItem['targetItem'],
+    isCorrect: boolean,
+    customRating?: FSRSRating
+  ) => {
+    const itemId = target.id;
+    const isVocab = 'word' in target;
+    const itemType = isVocab ? 'vocab' : 'grammar';
+
+    const existing: FSRSCard = cards[itemId]?.card || {
+      due: new Date().toISOString(),
+      stability: 0,
+      difficulty: 5,
+      elapsed_days: 0,
+      scheduled_days: 0,
+      reps: 0,
+      lapses: 0,
+      state: 0,
+    };
+
+    const rating: FSRSRating = customRating || (isCorrect ? 3 : 1);
+    const updatedCard = calculateFSRSReview(existing, rating);
+
+    setCard(itemId, {
+      card: updatedCard,
+      source: itemType,
+    });
+
+    // Dynamic Kanji garden seeding on correct answer if item contains kanji
+    if (isCorrect && isVocab) {
+      const v = target as any;
+      const kanjiMatch = v.word?.match(/[\u4e00-\u9faf]/);
+      if (kanjiMatch) {
+        useGardenStore.getState().seedPlant(
+          kanjiMatch[0],
+          v.reading || v.word,
+          v.meaning,
+          (v.level || 'n5').toLowerCase() as any
+        );
+      }
+    }
+  };
+
   // Flashcard FSRS Rating handler
   const handleFlashcardRate = (rating: number) => {
     if (!currentQ) return;
@@ -252,42 +297,11 @@ export const QuizPage: React.FC = () => {
     setSessionScore((prev) => (isCorrect ? prev + 1 : prev));
     setSessionXp((prev) => prev + xpGain);
 
-    // Save FSRS state with mathematical memory model
-    const itemId = currentQ.targetItem.id;
-    const existing: FSRSCard = cards[itemId]?.card || {
-      due: new Date().toISOString(),
-      stability: 0,
-      difficulty: 5,
-      elapsed_days: 0,
-      scheduled_days: 0,
-      reps: 0,
-      lapses: 0,
-      state: 0,
-    };
+    // Save FSRS state with mathematical memory model & garden seeding
+    updateItemFSRSAndGarden(currentQ.targetItem, isCorrect, rating as FSRSRating);
 
-    const updatedCard = calculateFSRSReview(existing, rating as FSRSRating);
-
-    const target = currentQ.targetItem;
-    const isVocab = 'word' in target;
-    const itemType = isVocab ? 'vocab' : 'grammar';
-
-    setCard(itemId, {
-      card: updatedCard,
-      source: itemType,
-    });
-
-    // Dynamic Kanji garden seeding on successful review
-    if (isCorrect && 'word' in target) {
-      const kanjiMatch = target.word.match(/[\u4e00-\u9faf]/);
-      if (kanjiMatch) {
-        useGardenStore.getState().seedPlant(
-          kanjiMatch[0],
-          target.reading || target.word,
-          target.meaning,
-          (target.level || 'n5').toLowerCase() as any
-        );
-      }
-    }
+    // Record atomized mode statistics
+    useGamificationStore.getState().recordQuizAnswer('flashcard', isCorrect);
 
     setUserAnswers((prev) => [
       ...prev,
@@ -305,7 +319,7 @@ export const QuizPage: React.FC = () => {
     handleNextQuestion();
   };
 
-  // Option selection handler for choices
+  // Option selection handler for choices (Multiple choice, Audio listening, Conjugation, Fill-in, etc.)
   const handleSelectOption = (opt: string) => {
     if (feedback || !currentQ) return;
     setSelectedOption(opt);
@@ -323,6 +337,12 @@ export const QuizPage: React.FC = () => {
 
     incrementXp(xpGain);
     setSessionXp((prev) => prev + xpGain);
+
+    // Atomized FSRS calculation & Garden seeding across ALL modes
+    updateItemFSRSAndGarden(currentQ.targetItem, isCorrect);
+
+    // Record atomized mode statistics
+    useGamificationStore.getState().recordQuizAnswer(activeMode, isCorrect);
 
     setFeedback({
       isCorrect,
@@ -375,6 +395,12 @@ export const QuizPage: React.FC = () => {
     incrementXp(xpGain);
     setSessionXp((prev) => prev + xpGain);
 
+    // Atomized FSRS update & Garden seeding for Rearrange
+    updateItemFSRSAndGarden(currentQ.targetItem, isCorrect, isCorrect ? 4 : 1);
+
+    // Record atomized mode statistics
+    useGamificationStore.getState().recordQuizAnswer('rearrange', isCorrect);
+
     setFeedback({
       isCorrect,
       text: isCorrect
@@ -398,7 +424,17 @@ export const QuizPage: React.FC = () => {
     const appStore = useAppStore.getState();
     appStore.recordStudyActivity();
     useGamificationStore.getState().recordActivity(questions.length, sessionXp);
-    useGardenStore.getState().addWaterDrop(2);
+
+    // Atomized dynamic water drop rewards (1 base + 1 per 3 correct + 1 bonus for 100% accuracy)
+    const baseDrops = 1;
+    const scoreDrops = Math.floor(sessionScore / 3);
+    const perfectBonus = sessionScore === questions.length && questions.length > 0 ? 1 : 0;
+    const earnedDrops = baseDrops + scoreDrops + perfectBonus;
+    setSessionEarnedWater(earnedDrops);
+    useGardenStore.getState().addWaterDrop(earnedDrops);
+
+    // Record session completion in gamification stats
+    useGamificationStore.getState().recordQuizSessionComplete(activeMode, sessionScore, questions.length);
 
     const allCards = Object.values(appStore.cards);
     const vocabCount = allCards.filter((c) => c.source === 'vocab' || !c.source).length;
@@ -408,6 +444,7 @@ export const QuizPage: React.FC = () => {
       streak: appStore.streak,
       vocabCount,
       grammarCount,
+      perfectQuizSession: sessionScore === questions.length && questions.length > 0,
     });
     if (newly.length > 0) {
       showToast(`Lencana baru: ${newly[0].name} ${newly[0].icon}!`, '🏆');
@@ -487,6 +524,7 @@ export const QuizPage: React.FC = () => {
               score={sessionScore}
               total={questions.length}
               xpEarned={sessionXp}
+              waterEarned={sessionEarnedWater}
               answers={userAnswers}
               onRestart={() => startStandardSession(activeMode)}
               onGoHome={() => setActiveTab('home')}

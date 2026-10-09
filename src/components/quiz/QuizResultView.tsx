@@ -1,11 +1,13 @@
 import React from 'react';
-import { Award, RotateCcw, Home, Sparkles, CheckCircle2, XCircle } from 'lucide-react';
+import { Award, RotateCcw, Home, Sparkles, CheckCircle2, XCircle, Volume2, Droplets } from 'lucide-react';
 import { QuizQuestionItem } from '../../lib/quiz/quizEngine';
+import { speakJapanese } from '../../lib/audio/tts';
 
 interface QuizResultViewProps {
   score: number;
   total: number;
   xpEarned: number;
+  waterEarned?: number;
   answers: Array<{ question: QuizQuestionItem; isCorrect: boolean; selected: string }>;
   onRestart: () => void;
   onGoHome: () => void;
@@ -17,6 +19,7 @@ export const QuizResultView: React.FC<QuizResultViewProps> = ({
   score,
   total,
   xpEarned,
+  waterEarned = 2,
   answers,
   onRestart,
   onGoHome,
@@ -53,8 +56,8 @@ export const QuizResultView: React.FC<QuizResultViewProps> = ({
           </p>
         </div>
 
-        {/* Score Ring / Stats Box */}
-        <div className="grid grid-cols-3 gap-3 pt-3 border-t border-accent/15">
+        {/* Score Ring / Stats Box (4-column metric grid) */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3 pt-3 border-t border-accent/15">
           <div className="bg-surface-2 p-3 rounded-2xl border border-accent/10">
             <div className="text-[10px] font-bold uppercase tracking-wider text-appText-muted">Skor Akurasi</div>
             <div className="text-xl font-bold font-mono text-accent-hot mt-0.5">{percentage}%</div>
@@ -65,7 +68,11 @@ export const QuizResultView: React.FC<QuizResultViewProps> = ({
           </div>
           <div className="bg-surface-2 p-3 rounded-2xl border border-accent/10">
             <div className="text-[10px] font-bold uppercase tracking-wider text-appText-muted">XP Diraih</div>
-            <div className="text-xl font-bold font-mono text-green-400 mt-0.5">+{xpEarned} XP</div>
+            <div className="text-xl font-bold font-mono text-emerald-400 mt-0.5">+{xpEarned} XP</div>
+          </div>
+          <div className="bg-surface-2 p-3 rounded-2xl border border-accent/10">
+            <div className="text-[10px] font-bold uppercase tracking-wider text-appText-muted">Tetes Air</div>
+            <div className="text-xl font-bold font-mono text-cyan-400 mt-0.5">+{waterEarned} 💧</div>
           </div>
         </div>
 
@@ -123,15 +130,22 @@ export const QuizResultView: React.FC<QuizResultViewProps> = ({
               }`}
             >
               <div className="space-y-1">
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 flex-wrap">
                   <span className="font-bold text-appText-bright font-jp text-sm">
                     {ans.question.questionText}
                   </span>
+                  <button
+                    onClick={() => speakJapanese(ans.question.questionText)}
+                    className="p-1 rounded-md bg-surface border border-accent/15 hover:border-accent text-appText-muted hover:text-accent transition-colors"
+                    title="Dengarkan pelafalan"
+                  >
+                    <Volume2 className="w-3 h-3" />
+                  </button>
                   {ans.question.subText && (
                     <span className="text-[11px] text-appText-muted">{ans.question.subText}</span>
                   )}
                 </div>
-                <div className="text-appText-muted">{ans.question.explanation}</div>
+                <div className="text-appText-muted leading-relaxed">{ans.question.explanation}</div>
               </div>
 
               <div className="shrink-0 mt-0.5">

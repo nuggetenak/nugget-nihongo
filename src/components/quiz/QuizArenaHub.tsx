@@ -4,9 +4,28 @@
 // ══════════════════════════════════════════════════════════════════
 
 import React from 'react';
-import { Layers, Sparkles, SlidersHorizontal, Headphones, RotateCcw, Flame, CheckCircle2, AlertTriangle, ArrowRight, BookOpen, Clock } from 'lucide-react';
+import {
+  Layers,
+  Sparkles,
+  SlidersHorizontal,
+  Headphones,
+  RotateCcw,
+  Flame,
+  CheckCircle2,
+  AlertTriangle,
+  ArrowRight,
+  BookOpen,
+  Clock,
+  Target,
+  Trophy,
+  Droplets,
+  BarChart2,
+} from 'lucide-react';
 import { QuizMode } from '../../types/quiz';
 import { JLPTLevel } from '../../types/vocab';
+import { useGamificationStore } from '../../lib/gamification/gamificationStore';
+import { useGardenStore } from '../../lib/garden/gardenStore';
+import { useAppStore } from '../../store/useAppStore';
 
 interface QuizArenaHubProps {
   onStartMode: (mode: QuizMode) => void;
@@ -123,6 +142,11 @@ export const QuizArenaHub: React.FC<QuizArenaHubProps> = ({
   dueCount,
   mistakesCount,
 }) => {
+  const { getModeStat, getOverallQuizStats } = useGamificationStore();
+  const { waterDrops } = useGardenStore();
+  const { cards } = useAppStore();
+  const overall = getOverallQuizStats();
+
   return (
     <div className="space-y-6 sm:space-y-8 animate-in fade-in duration-300">
       {/* Hero Header & Quick Session Bar */}
@@ -148,6 +172,57 @@ export const QuizArenaHub: React.FC<QuizArenaHubProps> = ({
           <SlidersHorizontal className="w-4 h-4" />
           <span>Atur Sesi ({selectedLevel.toUpperCase()} · {sessionCount} Soal)</span>
         </button>
+      </div>
+
+      {/* Real-time Arena Metric Overview Bar */}
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3">
+        <div className="p-3.5 rounded-2xl bg-surface border border-accent/20 flex items-center gap-3 shadow-sm">
+          <div className="w-9 h-9 rounded-xl bg-amber-500/15 border border-amber-500/25 flex items-center justify-center text-accent text-lg shrink-0">
+            🎯
+          </div>
+          <div>
+            <div className="text-[10px] font-bold text-appText-muted uppercase tracking-wider">Soal Dijawab</div>
+            <div className="text-base font-extrabold text-appText-bright font-mono">
+              {overall.totalAnswered} <span className="text-[10px] font-normal text-appText-muted">soal</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="p-3.5 rounded-2xl bg-surface border border-accent/20 flex items-center gap-3 shadow-sm">
+          <div className="w-9 h-9 rounded-xl bg-emerald-500/15 border border-emerald-500/25 flex items-center justify-center text-emerald-400 text-lg shrink-0">
+            📊
+          </div>
+          <div>
+            <div className="text-[10px] font-bold text-appText-muted uppercase tracking-wider">Rata-rata Akurasi</div>
+            <div className="text-base font-extrabold text-emerald-400 font-mono">
+              {overall.overallAccuracy}%
+            </div>
+          </div>
+        </div>
+
+        <div className="p-3.5 rounded-2xl bg-surface border border-accent/20 flex items-center gap-3 shadow-sm">
+          <div className="w-9 h-9 rounded-xl bg-purple-500/15 border border-purple-500/25 flex items-center justify-center text-purple-400 text-lg shrink-0">
+            🧠
+          </div>
+          <div>
+            <div className="text-[10px] font-bold text-appText-muted uppercase tracking-wider">Kartu FSRS Aktif</div>
+            <div className="text-base font-extrabold text-appText-bright font-mono">
+              {Object.keys(cards).length} <span className="text-[10px] font-normal text-appText-muted">kartu</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="p-3.5 rounded-2xl bg-surface border border-accent/20 flex items-center gap-3 shadow-sm">
+          <div className="w-9 h-9 rounded-xl bg-cyan-500/15 border border-cyan-500/25 flex items-center justify-center text-cyan-400 text-lg shrink-0">
+            💧
+          </div>
+          <div>
+            <div className="text-[10px] font-bold text-appText-muted uppercase tracking-wider">Tetes Air Tersedia</div>
+            <div className="text-base font-extrabold text-cyan-400 font-mono">
+              {waterDrops} <span className="text-[10px] font-normal text-appText-muted">tetes</span>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Special Banner 1: FSRS Due Today Review */}
@@ -219,49 +294,71 @@ export const QuizArenaHub: React.FC<QuizArenaHubProps> = ({
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
-          {ARENA_MODES.map((mode) => (
-            <div
-              key={mode.id}
-              onClick={() => onStartMode(mode.id)}
-              className="group cursor-pointer bg-surface hover:bg-surface-2 border border-accent/20 hover:border-accent/50 rounded-3xl p-5 flex flex-col justify-between space-y-4 transition-all duration-200 hover:-translate-y-1 shadow-sm active:scale-[0.98]"
-            >
-              {/* Card Header */}
-              <div className="space-y-3">
-                <div className="flex items-center justify-between">
-                  <span className="text-2xl p-2 rounded-2xl bg-surface-2 border border-accent/15 group-hover:scale-110 transition-transform">
-                    {mode.icon}
-                  </span>
-                  <span className={`text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full border ${mode.badgeColor}`}>
-                    {mode.tag}
-                  </span>
-                </div>
-
-                <div>
-                  <h3 className="font-extrabold text-sm sm:text-base text-appText-bright group-hover:text-accent transition-colors flex items-center justify-between">
-                    <span>{mode.name}</span>
-                  </h3>
-                  <div className="text-[11px] font-jp font-semibold text-amber-400/80 mt-0.5">
-                    {mode.nameJp}
+          {ARENA_MODES.map((mode) => {
+            const stat = getModeStat(mode.id);
+            return (
+              <div
+                key={mode.id}
+                onClick={() => onStartMode(mode.id)}
+                className="group cursor-pointer bg-surface hover:bg-surface-2 border border-accent/20 hover:border-accent/50 rounded-3xl p-5 flex flex-col justify-between space-y-4 transition-all duration-200 hover:-translate-y-1 shadow-sm active:scale-[0.98]"
+              >
+                {/* Card Header */}
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between">
+                    <span className="text-2xl p-2 rounded-2xl bg-surface-2 border border-accent/15 group-hover:scale-110 transition-transform">
+                      {mode.icon}
+                    </span>
+                    <span className={`text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full border ${mode.badgeColor}`}>
+                      {mode.tag}
+                    </span>
                   </div>
-                  <p className="text-xs text-appText-muted mt-2 leading-relaxed line-clamp-2">
-                    {mode.desc}
-                  </p>
+
+                  <div>
+                    <h3 className="font-extrabold text-sm sm:text-base text-appText-bright group-hover:text-accent transition-colors flex items-center justify-between">
+                      <span>{mode.name}</span>
+                    </h3>
+                    <div className="text-[11px] font-jp font-semibold text-amber-400/80 mt-0.5">
+                      {mode.nameJp}
+                    </div>
+                    <p className="text-xs text-appText-muted mt-2 leading-relaxed line-clamp-2">
+                      {mode.desc}
+                    </p>
+
+                    {/* Atomized Mode Progress Pill */}
+                    <div className="pt-2 flex items-center justify-between text-[11px]">
+                      {stat.answered > 0 ? (
+                        <span className="inline-flex items-center gap-1 font-semibold text-emerald-400">
+                          <Target className="w-3 h-3" />
+                          <span>Akurasi {stat.accuracy}% ({stat.answered} soal)</span>
+                        </span>
+                      ) : (
+                        <span className="text-appText-muted/60 text-[10px]">
+                          Belum dicoba
+                        </span>
+                      )}
+                      {stat.sessions > 0 && (
+                        <span className="text-[10px] text-accent font-mono">
+                          {stat.sessions} sesi
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                </div>
+
+                {/* Card Footer */}
+                <div className="pt-3 border-t border-accent/10 flex items-center justify-between text-[11px] text-appText-muted">
+                  <span className="flex items-center gap-1 font-mono">
+                    <Clock className="w-3 h-3 text-accent" />
+                    {mode.estTime}
+                  </span>
+                  <span className="text-accent font-bold group-hover:translate-x-1 transition-transform flex items-center gap-1">
+                    Mulai
+                    <ArrowRight className="w-3 h-3" />
+                  </span>
                 </div>
               </div>
-
-              {/* Card Footer */}
-              <div className="pt-3 border-t border-accent/10 flex items-center justify-between text-[11px] text-appText-muted">
-                <span className="flex items-center gap-1 font-mono">
-                  <Clock className="w-3 h-3 text-accent" />
-                  {mode.estTime}
-                </span>
-                <span className="text-accent font-bold group-hover:translate-x-1 transition-transform flex items-center gap-1">
-                  Mulai
-                  <ArrowRight className="w-3 h-3" />
-                </span>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </div>

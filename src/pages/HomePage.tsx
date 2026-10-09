@@ -33,34 +33,44 @@ export const HomePage: React.FC = () => {
     <div className="max-w-5xl mx-auto py-6 space-y-8 animate-in fade-in duration-300">
       {/* Hero Greeting Card */}
       <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-amber-950/60 via-amber-900/30 to-surface border border-accent/25 p-6 sm:p-10 shadow-lg">
-        <div className="max-w-xl space-y-3">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/15 border border-amber-500/30 text-accent-hot text-xs font-bold">
-            <Flame className="w-3.5 h-3.5 fill-amber-500 text-amber-500" />
-            <span>Streak {streak} Hari Aktif · Pertahankan!</span>
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+          <div className="max-w-xl space-y-3">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/15 border border-amber-500/30 text-accent-hot text-xs font-bold">
+              <Flame className="w-3.5 h-3.5 fill-amber-500 text-amber-500" />
+              <span>Streak {streak} Hari Aktif · Pertahankan!</span>
+            </div>
+
+            <h1 className="text-2xl sm:text-3xl font-extrabold text-appText-bright tracking-tight">
+              Selamat Belajar! 今日も頑張ろう
+            </h1>
+
+            <p className="text-xs sm:text-sm text-appText-muted leading-relaxed">
+              Luangkan waktu 5 menit hari ini untuk mereview kosakata dan pola tata bahasa barumu dengan Spaced Repetition FSRS.
+            </p>
+
+            <div className="pt-2 flex flex-wrap gap-3">
+              <button
+                onClick={() => setActiveTab('quiz')}
+                className="px-5 py-2.5 rounded-xl bg-accent hover:bg-accent-hot text-bg font-bold text-xs flex items-center gap-2 transition-all shadow-glow"
+              >
+                <span>Mulai Latihan Sekarang</span>
+                <ArrowRight className="w-4 h-4" />
+              </button>
+              <button
+                onClick={() => setActiveTab('materi')}
+                className="px-4 py-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-bright border border-accent/20 font-bold text-xs transition-all"
+              >
+                Eksplor Materi
+              </button>
+            </div>
           </div>
 
-          <h1 className="text-2xl sm:text-3xl font-extrabold text-appText-bright tracking-tight">
-            Selamat Belajar! 今日も頑張ろう 🍙
-          </h1>
-
-          <p className="text-xs sm:text-sm text-appText-muted leading-relaxed">
-            Luangkan waktu 5 menit hari ini untuk mereview kosakata dan pola tata bahasa barumu.
-          </p>
-
-          <div className="pt-2 flex flex-wrap gap-3">
-            <button
-              onClick={() => setActiveTab('quiz')}
-              className="px-5 py-2.5 rounded-xl bg-accent hover:bg-accent-hot text-bg font-bold text-xs flex items-center gap-2 transition-all shadow-glow"
-            >
-              <span>Mulai Latihan Sekarang</span>
-              <ArrowRight className="w-4 h-4" />
-            </button>
-            <button
-              onClick={() => setActiveTab('materi')}
-              className="px-4 py-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-bright border border-accent/20 font-bold text-xs transition-all"
-            >
-              Eksplor Materi
-            </button>
+          <div className="shrink-0 flex items-center justify-center">
+            <img
+              src="/icons/logo.png"
+              alt="Nugget Nihongo"
+              className="w-20 h-20 sm:w-28 sm:h-28 rounded-2xl object-cover shadow-glow ring-2 ring-amber-500/40"
+            />
           </div>
         </div>
       </div>
