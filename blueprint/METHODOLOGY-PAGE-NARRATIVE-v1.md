@@ -36,7 +36,7 @@ Yang *tidak* kami klaim: bahwa FSRS telah terbukti secara ilmiah lebih unggul da
 
 Kami juga menambahkan **kalibrasi prior Indonesia** pada FSRS — menyesuaikan parameter difficulty untuk memperhitungkan beban kanji yang 2.3× lebih berat bagi pembelajar tanpa latar kanji L1 dibandingkan penutur L1 Mandarin.
 
-*[Supporting evidence: §1 SRS cluster TE/SR/FS; §1.11 FSRS parameter cluster; §1.12 BC boundary conditions; Matsunaga 1999 cross-linked to §1.11 kanji difficulty prior.]*
+*[Supporting evidence: §1 SRS cluster TE/SR/FS; §1.11 FSRS parameter cluster; §1.12 BC boundary conditions; Matsunaga 1999 [OD-20] cross-linked to §1.11 kanji difficulty prior.]*
 
 ---
 

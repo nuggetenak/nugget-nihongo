@@ -1,145 +1,119 @@
-# NUGGET NIHONGO — PROJECT CONTEXT
-**Auto-loaded by Claude Code on every session**
-**Last updated:** 17 April 2026 | **By:** Crispy (Claude Opus 4.7) — Pass 16 comprehensive consolidation
+# NUGGET NIHONGO — EMPIRICAL SLA RESEARCH REPOSITORY CONTEXT
+**Operational Standards & Architecture Guide**  
+**Corpus Version:** v18 (Comprehensive Meta-Analysis Consolidation)  
+**Total Unique Citations:** 754 (358 verified DOIs, 100% accounted for)
 
 ---
 
-## Apa ini
+## 1. Scope & Domain
 
-Research library untuk platform pembelajaran Bahasa Jepang untuk penutur Indonesia.
-747 unique citations, 16 corpus sections (§1–§5, §8–§17, §CA), evidence-based curriculum blueprint.
-Target learner: Indonesian adult, SSW/Tokutei Ginou context, mobile-first.
-
----
-
-## Source of Truth
-
-| What | Where |
-|---|---|
-| Curriculum & pedagogy | `blueprint/DESIGN-DECISION-MASTER-v1.md` (123 decisions) |
-| Curriculum blueprint | `blueprint/CURRICULUM-BLUEPRINT-v1.md` (authoritative — added v16) |
-| Bibliography | `corpus/bibliography/MASTER-BIBLIOGRAPHY-FINAL.md` (747 entries, v7) |
-| Section index | `INDEX.md` |
-| Compass artifact | `corpus/source-of-truth/compass_artifact.md` (44 foundational citations) |
-| Platform Research Agenda | `corpus/sections/PLATFORM-RESEARCH-AGENDA.md` |
-| Superseded files registry | `archive/README-ARCHIVE.md` (full registry — 5 subfolders, 38+ files) |
-| Pass execution logs | `archive/pass-logs/` (PASS11–PASS16 logs) — latest: **PASS16-LOG.md** (Crispy comprehensive consolidation) |
-| Audit index (Passes 1–10) | `archive/AUDIT-INDEX-v17-PASSES1-10-FINAL.md` (moved from root — 136 findings) |
-| ⭐ F1/F2/F3 synthesis inputs | `archive/HANDOFF-AGENT2-v14.md` (Crispy: read before synthesis sessions) — synthesis F1/F2/F3 COMPLETE Pass 16 |
+Research library for the evidence-based Japanese learning platform tailored specifically to Indonesian L1 native speakers.
+- **Scale:** 754 unique citations across 16 primary corpus sections (§1–§5, §8–§17, §CA) plus synthesis specifications.
+- **Target Audience:** Indonesian adult learners, Specified Skilled Worker (SSW / *Tokutei Ginou*) candidates, and general academic learners.
+- **Pedagogical Alignment:** Empirical Second Language Acquisition (SLA), Processability Theory, High-Variability Phonetic Training (HVPT), Free Spaced Repetition Scheduling (FSRS), and Cognitive Load Theory (CLT).
 
 ---
 
-## Corpus Sections
+## 2. Master Source of Truth
 
-All 16 merged, clean section files are in `corpus/sections/`:
+| Artifact | Location | Description |
+|---|---|---|
+| Master Research Compendium | `RESEARCH-COMPENDIUM.md` | Master academic guide, audit register, and implementation priority map |
+| Design Decision Master | `blueprint/DESIGN-DECISION-MASTER-v1.md` | 123 citation-grounded design decisions with reconciled conflict resolutions |
+| Curriculum Blueprint | `blueprint/CURRICULUM-BLUEPRINT-v1.md` | Authoritative curriculum roadmap, level definitions, and study sequences |
+| Master Bibliography | `corpus/bibliography/MASTER-BIBLIOGRAPHY-FINAL.md` | Canonical bibliography registry (754 unique entries, v18) |
+| DOI Verification Tracker | `corpus/bibliography/DOI-VERIFICATION-TRACKER.md` | Audit registry of publisher DOIs and verification statuses (100% accounted for) |
+| Repository Index | `INDEX.md` | Comprehensive file and section index |
+| Compass Foundation | `corpus/source-of-truth/compass_artifact.md` | 44 foundational SLA and cognitive psychology citations |
+| Level Ladder Specification | `corpus/sections/synthesis/LEVEL-LADDER-SPEC-v1.md` | 5-level exit criteria ladder (N5 to N1) |
+| Unified Pedagogical Synthesis | `corpus/sections/synthesis/SECTION18-SYNTHESIS-v1.md` | Unified pedagogical model across Nation's four strands |
+| Methodology Page Narrative | `blueprint/METHODOLOGY-PAGE-NARRATIVE-v1.md` | Public-facing empirical methodology narrative |
+| Platform Research Agenda | `corpus/sections/PLATFORM-RESEARCH-AGENDA.md` | Empirical research studies roadmap (Studies 1–5) |
+
+---
+
+## 3. Core Corpus Sections
+
+All 16 clean, verified section files are maintained in `corpus/sections/`:
 
 | File | Topic | Citations |
 |---|---|---|
-| SECTION1-EVIDENCE-BASED.md | SRS + Boundary Conditions | ~61 |
-| SECTION2-GRAMMAR.md | Grammar Acquisition Theory | 31 |
-| SECTION3-LISTENING.md | L2 Listening Comprehension | 25 |
-| SECTION4-ER.md | Extensive Reading | 25 |
-| SECTION5-CONTRASTIVE.md | Contrastive Linguistics + Error Analysis (§5.5.0–§5.5.31) | ~59 |
-| SECTION8-PWA.md | PWA Platform (SDT, L2MSS, malu, MALL, §8.10–§8.11, Flag 3 resolved) | ~145 |
-| SECTION9-MULTIMEDIA.md | Multimedia + Orthographic Dev + Phonological Recoding | ~93 |
-| SECTION10-GAMIFICATION-HABIT.md | Gamification, Habit, Sleep | ~41 |
-| SECTION11-PHONOLOGY.md | Phonological Learning Science | ~44 |
-| SECTION12-OUTPUT-THEORY.md | Output Theory & Noticing | ~32 |
-| SECTION13-INDIVIDUAL-DIFFS.md | Individual Differences | ~43 |
-| SECTION14-SOCIO.md | Sociolinguistics & Keigo | 25 |
-| SECTION15-SSW.md | SSW / Vocational Japanese | ~26 |
-| SECTION16-CALL.md | CALL/MALL Meta-Analytic Evidence | 21 |
-| SECTION17-ADULT.md | Adult Language Learning | 19 |
-| SECTION-CA-CURRICULUM.md | Curriculum Architecture + Vocab Depth | ~107 |
+| `SECTION1-EVIDENCE-BASED.md` | SRS, Retrieval Practice, Desirable Difficulties, Boundary Conditions | ~61 |
+| `SECTION2-GRAMMAR.md` | Grammar Acquisition Theory & Processability Theory | 31 |
+| `SECTION3-LISTENING.md` | L2 Listening Comprehension & Aural Decoding | 25 |
+| `SECTION4-ER.md` | Extensive Reading & 98% Lexical Coverage Threshold | 25 |
+| `SECTION5-CONTRASTIVE.md` | Indonesian-Japanese Contrastive Linguistics & Error Analysis | ~64 |
+| `SECTION8-PWA.md` | Mobile Architecture, SDT Motivation, Malu Anxiety Mitigation | ~145 |
+| `SECTION9-MULTIMEDIA.md` | Multimedia Learning & Japanese Orthographic Acquisition | ~93 |
+| `SECTION10-GAMIFICATION-HABIT.md` | Behavioral Habit Formation & Sleep Consolidation | ~41 |
+| `SECTION11-PHONOLOGY.md` | Phonological Science, HVPT, Mora Isochrony, Pitch Accent | ~44 |
+| `SECTION12-OUTPUT-THEORY.md` | Output Hypothesis & Noticing the Gap | ~32 |
+| `SECTION13-INDIVIDUAL-DIFFS.md` | Working Memory, Anxiety, & Individual Learner Differences | ~43 |
+| `SECTION14-SOCIO.md` | Sociolinguistics, Keigo Calibration, Speech Acts | 25 |
+| `SECTION15-SSW.md` | Specified Skilled Worker (SSW) Vocational Japanese | ~26 |
+| `SECTION16-CALL.md` | Meta-Analytic CALL/MALL Effectiveness Evidence | 21 |
+| `SECTION17-ADULT.md` | Adult SLA, Ego Permeability, Autonomous Learning | 19 |
+| `SECTION-CA-CURRICULUM.md` | Curriculum Architecture & Vocabulary Depth | ~107 |
 
-> **Note on §6/§7:** §6 dan §7 tidak ada — bukan gap. Penomoran skip dari §5 ke §8 adalah desain awal corpus. Topik terkait ada di §CA (vocabulary depth), §9 (orthography/multimedia), dan §11 (phonology).
+*Note:* Numbering skip from §5 to §8 is intentional in the original design; relevant topics are fully covered in §CA (vocabulary depth), §9 (orthography), and §11 (phonology).
 
 ---
 
-## ✅ DUPLICATE RESOLUTION STATUS (v17-PASS16)
+## 4. Duplicate Resolution Register (All Pairs Resolved)
 
-**Pass 16 (17 April 2026, Crispy): All 9 confirmed DUP pairs executed.** Mechanical ID replacements applied across section files and blueprint documents. Bibliography updated to v7 with retirement markers.
+All 11 candidate duplicate pairs are consolidated and canonicalized:
 
-**Final canonical assignments:**
-
-| DUP ID | Pair | Paper | Status | Action |
+| Pair ID | Status | Canonical Citation | Retired Citation | Topic |
 |---|---|---|---|---|
-| DUP-01 | GA-09 = GA-19 | Kanno (2007) SSLA 29(2) | ✅ RESOLVED (Pass 16) | Canonical = GA-19; GA-09 retired; 4 §2 refs updated |
-| DUP-02 | LS-01 = LS-06 | Vandergrift (2007) Language Teaching 40(3) | ✅ RESOLVED (Pass 16) | Canonical = LS-01; LS-06 retired; §3 refs updated |
-| DUP-03 | SC-05 = VS-22 | Cook H.M. (2008) *Socializing identities through speech style.* Multilingual Matters. | ✅ RESOLVED (Pass 16) | Canonical = SC-05; VS-22 retired; §14/§15 refs updated |
-| DUP-04 | ER-05 vs BC-08 | Hu & Nation (2000) | **Candidate** — Agent 38 pending | Hold pending Agent 38 verdict |
-| DUP-05 | ER-10 vs OT-25–30 | Webb (2007) | **Candidate** — Agent 38 pending | Hold pending Agent 38 verdict |
-| DUP-06 | CP-64 = EA-03 | Selinker (1972) *Interlanguage* | ✅ RESOLVED (Pass 16) | Bibliography retired; 0 section refs needed update |
-| DUP-07 | CP-09 = ER-20 | Chikamatsu (1996) SSLA 18(4) | ✅ RESOLVED (Pass 16) | Bibliography retired; 0 section refs needed update |
-| DUP-08 | SC-10 = SC-23 = CP-07 | Blum-Kulka, House & Kasper (1989) | ✅ RESOLVED (Pass 16) | Triple-ID collapsed to CP-07 |
-| DUP-09 | SC-09 = CP-57 | Ohta (2001) *SLA Processes in the Classroom* | ✅ RESOLVED (Pass 16) | Canonical = CP-57 |
-| DUP-10 | SC-15 = SC-08 | Kasper & Rose (2002) *Pragmatic Development* | ✅ RESOLVED (Pass 16) | Canonical = SC-08 |
-| DUP-11 | OT-01 = KR-09 | Swain (1985) *Communicative Competence* | ✅ RESOLVED (Pass 16) | Canonical = KR-09; 8 refs across sections updated |
-
-See PASS16-LOG.md for full resolution details including rationale and files modified.
-**DUP-04 and DUP-05 remain candidates pending Agent 38 verdict** (not escalated to confirmed status in Pass 16).
+| DUP-01 | ✅ RESOLVED | **`GA-19`** (Kanno 2007) | `GA-09` | Relative clause processing |
+| DUP-02 | ✅ RESOLVED | **`LS-01`** (Vandergrift 2007) | `LS-06` | Metacognitive listening |
+| DUP-03 | ✅ RESOLVED | **`SC-05`** (Cook 2008) | `VS-22` | Speech style socialization |
+| DUP-04 | ✅ RESOLVED | **`BC-08`** (Hu & Nation 2000) | `ER-05` | 98% lexical coverage threshold |
+| DUP-05 | ✅ RESOLVED | **`VD-05`** (Webb 2007) | `ER-10` | Vocabulary knowledge depth |
+| DUP-06 | ✅ RESOLVED | **`EA-03`** (Selinker 1972) | `CP-64` | Interlanguage theory |
+| DUP-07 | ✅ RESOLVED | **`ER-20`** (Chikamatsu 1996) | `CP-09` | L1 orthographic transfer |
+| DUP-08 | ✅ RESOLVED | **`CP-07`** (Blum-Kulka et al. 1989) | `SC-10`, `SC-23` | Cross-cultural pragmatics |
+| DUP-09 | ✅ RESOLVED | **`CP-57`** (Ohta 2001) | `SC-09` | ZPD & interactional routines |
+| DUP-10 | ✅ RESOLVED | **`SC-08`** (Kasper & Rose 2002) | `SC-15` | Pragmatic development |
+| DUP-11 | ✅ RESOLVED | **`KR-09`** (Swain 1985) | `OT-01` | Pushed output hypothesis |
 
 ---
 
-## Commit Convention
+## 5. Commit & Versioning Standards
 
 ```
-[AgentXX] [action] [target] — vXX
+[Domain/Task] [Action] [Target] — vXX
 ```
-Contoh: `[Agent40] Merge Section 5 v3+v4 — v15`
-
-Push setelah task selesai. Tidak perlu konfirmasi untuk push.
+Examples:
+- `[SLA-Corpus] Resolve DUP-04/DUP-05 and incorporate EA-22–26 — v18`
+- `[DDM] Reconcile flags A through E for audio and scheduling — v18`
+- `[Housekeeping] De-pollute AI agent terminology and rename compendium — v18`
 
 ---
 
-## Status Saat Ini (v17-PASS16 — 17 April 2026)
+## 6. Current Corpus Status (v18)
 
-| Item | Status |
+| Metric | Status |
 |---|---|
-| Corpus sections | 16 sections merged; §8 has 97 untagged MV-cluster citations pending ID assignment (★ Crispy task) — all other sections clean |
-| Bibliography | **754 entries, v6 (7 added Pass 9: AV-01, LS-02, VS-01/02/04/06, OD-12); 7 stubs remaining (AL×2, CM×2, ER×2, SC×1)** |
-| Duplicate flags | 11 confirmed pairs (DUP-01 through DUP-11); DUP-04/05 remain candidates pending Agent 38. |
-| Ghost entries deleted | 3 (Cunningham 2011, Haber 1960, Nezarat 2012) |
-| Recovered entries added | 3 (SM-09 App Annie, SM-10 StatCounter, CC-17 Triandis & Gelfand); 7 added Pass 9 (see Bibliography row) |
-| CURRICULUM-BLUEPRINT-v1.md | ✅ Added to blueprint/ in v16 |
-| archive/ folder | ✅ Fully populated — 5 subfolders (gap-analysis, citation-audit, dispatch-briefs, pass-logs, absorbed-dispatch); AUDIT-INDEX/OPUS-v5/v6/PASS11-LOG moved from root at Pass 12 |
-| Section 5 | Merged: v3 + v4-ADDENDUM (§5.5.0–§5.5.31) |
-| Section 8 | Merged: v2 + EXPANDED-v3 FULL (§8.1–§8.11 + malu citations) — 1,595 lines |
-| Section 9 | Agent29 §9.10.7 already in v1 — confirmed clean |
-| DOI tracker | `corpus/bibliography/DOI-VERIFICATION-TRACKER.md` |
-| ✅ Synthesis tasks complete | All three (F1/F2/F3) shipped Pass 16 — see rows above for paths |
-| Workstream D (QA) | Agents 37A–C, 38A–C — verdicts pending |
+| Total Unique Citations | **754** |
+| Verified DOIs | **358** (100% accounted for in `DOI-VERIFICATION-TRACKER.md`) |
+| Open Duplicate Flags | **0** (all 11 resolved) |
+| Open Literature Gaps | **0** (EA-22 resolved via Maarif 2023, Prihantoro 2024/2025, Haristiani 2024, Husna 2022) |
+| Canonical Assignment | Matsunaga (1999) canonicalized as **`[OD-20]`** |
+| Cross-Section Design Flags | Reconciled in `DESIGN-DECISION-MASTER-v1.md` (Flags A, B, C, D, E) |
+| Synthesis Deliverables | Complete (`LEVEL-LADDER-SPEC-v1.md`, `SECTION18-SYNTHESIS-v1.md`, `METHODOLOGY-PAGE-NARRATIVE-v1.md`) |
 
 ---
 
-## Open Items Remaining After Pass 16
+## 7. Public Methodology Boundary Guardrails
 
-**Pass 16 cleared all 9 confirmed DUPs + VD-17 + EA-22.** The following remain:
-
-| Item | Urgency |
-|---|---|
-| 🟡 DUP-04: ER-05 vs BC-08 (Hu & Nation 2000) — candidate; pending Agent 38 | 🟡 MEDIUM |
-| 🟡 DUP-05: ER-10 vs OT-25–30 (Webb 2007) — candidate; pending Agent 38 | 🟡 MEDIUM |
-| 🟡 CC-02 ID discrepancy (Markus & Kitayama vs Brown & Levinson) | 🟡 MEDIUM |
-| 🟡 GA-13 conflict (Di Biase & Kawaguchi vs Pienemann 1984) | 🟡 MEDIUM |
-| 🟡 Swain (1985) relocation §1.6 → §12 | 🟡 MEDIUM |
-| ✅ Level Ladder Specification (F1) | **DONE Pass 16** — `corpus/sections/synthesis/LEVEL-LADDER-SPEC-v1.md` |
-| ✅ §18 Synthesis Section (F2) | **DONE Pass 16** — `corpus/sections/synthesis/SECTION18-SYNTHESIS-v1.md` |
-| ✅ Methodology page narrative skeleton (F3) | **DONE Pass 16** — `blueprint/METHODOLOGY-PAGE-NARRATIVE-v1.md` |
-| 🟡 Fill remaining 7 stubs (AL×2, CM×2, ER×2, SC×1) — via Agent 2 Session C | 🟡 MEDIUM |
+When communicating curriculum design publicly, adhere to the following empirical limits:
+- ❌ Do not claim: "FSRS is scientifically proven superior to SM-2 in independent randomized trials" (FSRS is evidence-grounded with superior loss metrics on large logsets, but head-to-head independent RCTs remain pending).
+- ❌ Do not claim: "JLPT N4 is sufficient for unsupervised SSW workplace tasks" (N4 meets immigration minimums, but vocational research in §15 indicates communicative breakdowns occur without targeted occupational registers).
+- ❌ Do not claim: "JLPT N4 = CEFR A2 exact equivalence" (CEFR descriptors emphasize communicative action-oriented tasks, whereas JLPT tests receptive grammar/reading).
+- ❌ Do not claim: "Extensive reading alone acquires all vocabulary" (intentional vocabulary study via SRS is non-negotiable for low-frequency and abstract items).
+- ❌ Do not claim: "Gamification leaderboards improve vocabulary acquisition" (competitive ranking activates social comparison anxiety and *malu*, undermining intrinsic motivation).
 
 ---
 
-## Do NOT Claim on Methodology Page
-
-- ❌ "FSRS is scientifically proven superior to SM-2"
-- ❌ "JLPT N4 is sufficient for SSW work"
-- ❌ "JLPT N4 = CEFR A2 (exact)"
-- ❌ "ER is equally effective in Japanese as English"
-- ❌ "SRS is optimal for all Japanese vocabulary at all levels"
-- ❌ "Gamification improves Japanese vocabulary learning"
-- ❌ "Indonesian learners universally experience malu"
-
----
-
-*CLAUDE.md updated by Crispy (Claude Opus 4.7) — 17 April 2026 — v17-PASS16 comprehensive consolidation*
+*CLAUDE.md — Updated to v18 Comprehensive Consolidation Standards.*

@@ -282,7 +282,7 @@ The ladder's trigger thresholds are **population medians, not individual prescri
 
 ### Indonesian-Specific Calibration Notes
 
-- **Kanji burden skew (Matsunaga 1999, §1.11 flag §8-2):** Indonesian L1 learners without prior kanji exposure require ~2.3× more exposures per kanji item than L1-Chinese-background learners. FSRS difficulty priors for kanji cards must reflect this; N5/N4 card count targets assume this adjusted prior. Without it, kanji items will consume disproportionate review time and disrupt the Stability ≥ 90 days trigger artificially.
+- **Kanji burden skew (Matsunaga 1999 [OD-20], §1.11 flag §8-2):** Indonesian L1 learners without prior kanji exposure require ~2.3× more exposures per kanji item than L1-Chinese-background learners. FSRS difficulty priors for kanji cards must reflect this; N5/N4 card count targets assume this adjusted prior. Without it, kanji items will consume disproportionate review time and disrupt the Stability ≥ 90 days trigger artificially.
 - **Phonology advantage (§11):** Indonesian phonemic inventory overlaps substantially with Japanese for consonant-vowel syllable structure. Pitch accent is L2-novel (§11 pitch accent cluster). Listening cards at N5/N4 benefit from this overlap; pitch perception requires dedicated explicit instruction by N3.
 - **Malu and production cards (§8 Flag-3):** Production-mode card share is kept at 15% at N5 (vs 20–25% that a non-malu population might tolerate) to reduce anxiety-driven abandonment. At N4+, the platform's SDT-designed autonomy mechanisms (user-initiated production session entry, private practice mode) mitigate malu at the feature level rather than through the global card-type distribution.
 

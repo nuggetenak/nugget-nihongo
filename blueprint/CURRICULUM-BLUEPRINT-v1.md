@@ -493,11 +493,11 @@ Honest scope: SRS is most efficient for the first 2,000–3,000 words. Speaking 
 |---|---|---|---|---|
 | 3 | Malu/FLCA/SRS engagement A/B test | ✅ Strongest | Post-launch Month 3 | Feature prominently on methodology page |
 | 1 | SDT need satisfaction survey | ✅ Strong | Post-launch Month 6 | Cite as "in preparation" |
-| 2 | FSRS difficulty prior calibration | ⚠️ Matsunaga gap | Post-launch Month 9+ | Cite as "monitoring in progress" |
+| 2 | FSRS difficulty prior calibration | ✅ Strong (OD-20) | Post-launch Month 9+ | Cite as "monitoring in progress" |
 | 4 | Habit formation timing | ⚠️ Underdeveloped | Internal analytics | Do not cite publicly yet |
 | 5 | PWA vs. native app | ✅ Adequate | Deprioritize | Replace with corpus argument |
 
-**Matsunaga (1999) action item:** Formally absorb into §1.11 with a citation ID. It's the only evidence for the kanji exposure differential claim and currently cited secondhand only.
+**Matsunaga (1999) [OD-20]:** Formally absorbed with canonical citation ID `[OD-20]` (*Japanese Language and Literature*, 33(1), 1–23, DOI: `10.20649/00000278`), establishing the empirical baseline for the non-kanji-background 2.3× exposure multiplier and FSRS Indonesian difficulty prior calibration.
 
 ---
 

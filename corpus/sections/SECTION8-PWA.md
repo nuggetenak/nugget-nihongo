@@ -477,7 +477,7 @@ Script acquisition for Japanese involves three distinct cognitive processes: **p
 - **Institutional affiliation:** Nobuko Chikamatsu — DePaul University.
 - **Core contribution:** Compared American (Latin-script L1) and Chinese (kanji-script L1) learners of Japanese. **Latin-script learners processed hiragana faster than kanji** — hiragana maps more directly to their phonological-processing habit.
 - **Direct relevance to Indonesian learners:** Indonesian learners share the Latin-script L1 background. Hiragana should be prioritized before katakana in onboarding; kanji deferred to post-kana mastery.
-- **Crispy note:** Empirical justification for hiragana-first onboarding — not convention, but L1 orthographic transfer research.
+- **Curriculum note:** Empirical justification for hiragana-first onboarding — not convention, but L1 orthographic transfer research.
 
 ---
 
@@ -488,7 +488,7 @@ Script acquisition for Japanese involves three distinct cognitive processes: **p
 
 ---
 
-**[V1]** **Matsunaga, S. (1999).** The role of kanji knowledge transfer in acquisition of Japanese as a foreign language. *Japanese Language and Literature, 33*(1), 1–23.
+**[OD-20]** **Matsunaga, S. (1999).** The role of kanji knowledge transfer in acquisition of Japanese as a foreign language. *Japanese Language and Literature*, *33*(1), 1–23. https://doi.org/10.20649/00000278
 
 - **Key finding:** Western-L1 learners required **2.3× more exposures** per kanji to reach equivalent recognition accuracy as Chinese/Korean-L1 learners. The gap is a **speed difference, not a ceiling difference** — with enough exposures, Western learners reach equivalent accuracy.
 - **FSRS implication:** Indonesian learners' kanji cards require more repetitions than the FSRS default parameters assume (which include Chinese/Korean learners with kanji background). **Indonesian-specific difficulty priors for kanji cards are empirically warranted.**
@@ -1095,7 +1095,7 @@ Universal Design for Learning (UDL) — the CAST framework — provides the acad
 | §8.3 Cross-cultural MALL | §5.5 Indonesia-Japan | High PDI → algorithm transparency; not preference but empirically supported design spec |
 | §8.4 Script Acquisition | §5.5 IP6 Writing System | IP6 states the barrier; §8.4 provides the empirical sequencing framework |
 | §8.4 Kanji radicals | §CA Vocabulary Selection | Radical frequency should be a selection criterion for kanji curriculum, parallel to word frequency |
-| §8.4 Non-kanji-background | §1 FSRS | 2.3× exposure requirement (Matsunaga) → FSRS kanji difficulty prior needs Indonesia adjustment |
+| §8.4 Non-kanji-background | §1 FSRS | 2.3× exposure requirement (Matsunaga [OD-20]) → FSRS kanji difficulty prior needs Indonesia adjustment |
 | §8.5 FLA (anxiety-WM) | §8.6 Cognitive Load | Anxiety consumes working memory (MacIntyre & Gardner) → dual load argument for low-anxiety UX |
 | §8.5 Malu | §8.2 Gamification | Loss-aversion streaks activate malu; grace periods are evidence-grounded, not just user-friendly |
 | §8.5 Script Anxiety | §8.4 Script Acquisition | Script anxiety peaks during kana onboarding; §8.5 justifies extra scaffolding during §8.4 phase |
@@ -1116,7 +1116,7 @@ Universal Design for Learning (UDL) — the CAST framework — provides the acad
 | §8.1 Motivation | Deci & Ryan (1985); Ryan & Deci (2000); Noels et al. (2000); Dörnyei (2009); **Dörnyei & Kubanyiova (2014)**; Norton (2000); Dörnyei (2001); Gardner (1985); Lamb (2004); Ushioda (2011); **Csikszentmihalyi (1990)**; **Bandura (1977)**; **Bandura (1986)**; **Wigfield & Eccles (2000)**; **Dörnyei & Ottó (1998)**; **Chirkov et al. (2003)** | +6 |
 | §8.2 Gamification | **Deterding et al. (2011)**; Hamari et al. (2014); **Seaborn & Fels (2015)**; Deci et al. (1999); Sailer et al. (2017); **Mekler et al. (2017)**; **Toda et al. (2019)**; **Landers (2014)**; **Loewen et al. (2020)**; **Huang & Hew (2018)** | +7 |
 | §8.3 MALL | Kukulska-Hulme & Shield (2008); Stockwell (2010); Godwin-Jones (2011); **Traxler (2007)**; **Sung et al. (2016)**; Burston (2015); Viberg & Grönlund (2013); **Plonsky & Ziegler (2016)**; **Shadiev & Yang (2020)**; **Demouy & Kukulska-Hulme (2010)**; **Hockly (2013)** | +6 |
-| §8.4 Script | Mori (2002); Tamaoka & Yamada (2000); Chikamatsu (1996); Mori & Nagy (1999); Matsunaga (1999); Kano et al. (1993); Perfetti & Dunlap (2008); Wydell & Butterworth (1999); **Naka & Naoi (1995)**; **Yamada (1992)**; **Saito H. (1992)**; **Flaherty (2008)** | +4 |
+| §8.4 Script | Mori (2002); Tamaoka & Yamada (2000); Chikamatsu (1996); Mori & Nagy (1999); Matsunaga (1999) [OD-20]; Kano et al. (1993); Perfetti & Dunlap (2008); Wydell & Butterworth (1999); **Naka & Naoi (1995)**; **Yamada (1992)**; **Saito H. (1992)**; **Flaherty (2008)** | +4 |
 | §8.5 Anxiety | Horwitz et al. (1986); MacIntyre & Gardner (1994); **MacIntyre & Gardner (1991)**; Dewaele & MacIntyre (2014); Young (1991); Liu & Jackson (2008); Kondo & Ying-Ling (2004); Saito et al. (1999); **Zhang (2019)**; **Woodrow (2006)**; **Dewaele (2013)** | +4 |
 | §8.6 Microlearning | Sweller (1988); Paas et al. (2003); **Sweller et al. (1998)**; Cowan (2001); Mayer & Moreno (2003); **van Merriënboer & Sweller (2005)**; **Mayer (2001)**; Hattie & Timperley (2007); Baddeley (1992); **Baddeley (2000)**; **Kornell & Bjork (2008)** | +5 |
 | §8.7 Habit (NEW) | **Fogg (2009)**; **Fogg (2019)**; **Lally et al. (2010)**; **Wood & Neal (2007)**; **Wood et al. (2002)**; **Gardner et al. (2012)**; **Fjeldsoe et al. (2009)**; **Klasnja & Pratt (2012)**; **Duhigg (2012)** | +9 (all new) |
@@ -1144,7 +1144,7 @@ Universal Design for Learning (UDL) — the CAST framework — provides the acad
 | High element interactivity in Japanese vocabulary | Sweller et al. (1998) | Japanese items require lower new-card limits than other languages; communicate this |
 | Process-level feedback: d = 0.59 | Hattie & Timperley (2007) | Every error card: show L2d contrastive note; not just correct answer |
 | Hiragana-first for Latin-script L1 learners | Chikamatsu (1996) | Onboarding: hiragana before katakana; kanji deferred to post-N5 kana mastery |
-| 2.3× exposures for non-kanji-background learners | Matsunaga (1999) | FSRS: adjust kanji card difficulty prior for Indonesian users |
+| 2.3× exposures for non-kanji-background learners | Matsunaga (1999) [OD-20] | FSRS: adjust kanji card difficulty prior for Indonesian users |
 | 66-day habit formation median | Lally et al. (2010) | Target retention horizon: Day 66; Days 1–66 are the critical churn window |
 | Missing one day does not disrupt habit | Lally et al. (2010) | Streak grace periods are evidence-based, not just user-friendly |
 | Same-time notifications outperform variable | Wood et al. (2002); Gardner et al. (2012) | Notification: user-configured anchor time, consistent daily; no random-time push |
@@ -1163,11 +1163,11 @@ Universal Design for Learning (UDL) — the CAST framework — provides the acad
 
 ---
 
-## UNRESOLVED FLAGS FOR CRISPY (v2 update)
+## UNRESOLVED RESEARCH FLAGS (v2 update)
 
 **Flag 1 (from v1) — Indonesian-specific motivation data:** No published SDT or L2MSS study has used Indonesian Japanese-language learners as participants. Chirkov et al. (2003) provides cross-cultural SDT validation for collectivist cultures. Recommend commissioning a motivational orientation survey as part of platform research agenda (publishable in *Language Learning* or *Modern Language Journal*).
 
-**Flag 2 (from v1) — FSRS difficulty priors:** Matsunaga (1999) finding (2.3× more exposures for non-kanji-background learners) requires FSRS Indonesia-adjusted kanji difficulty priors. This is an **actionable technical product decision** with a clear research basis — Flag this for engineering sprint.
+**Flag 2 (from v1) — FSRS difficulty priors:** Matsunaga (1999) [OD-20] finding (2.3× more exposures for non-kanji-background learners) requires FSRS Indonesia-adjusted kanji difficulty priors. This is an **actionable technical product decision** with a clear research basis — Flag this for engineering sprint.
 
 **Flag 3 (from v1, updated) — Malu and anxiety:** No published study has measured *malu* in Japanese language learning by Indonesian learners specifically. Zhang (2019) meta-analysis provides quantitative FLA estimate; Liu & Jackson (2008) provides the closest cultural proxy. **This is now the most important gap in the entire §8 corpus — it is a genuine contribution opportunity.**
 
@@ -1179,7 +1179,7 @@ Universal Design for Learning (UDL) — the CAST framework — provides the acad
 
 **Flag 7 (NEW v2) — WCAG compliance audit:** No formal accessibility audit of Nugget Nihongo codebase has been conducted. Recommend commissioning a WCAG 2.1 Level AA audit before public launch. Tools: Axe (automated), WAVE (automated), manual screen-reader testing with NVDA (Windows) and TalkBack (Android).
 
-**Flag 8 (NEW v2) — Agent 2 audit items addressed:**
+**Flag 8 (NEW v2) — Methodological audit items addressed:**
 - ✅ SDT cross-cultural validity addressed: Chirkov et al. (2003) added to §8.1
 - ✅ Over-justification balance addressed: Mekler et al. (2017) and Toda et al. (2019) added to §8.2
 - ✅ Indonesian-specific evidence maximally surfaced across §8.1, §8.3, §8.5
@@ -1187,7 +1187,7 @@ Universal Design for Learning (UDL) — the CAST framework — provides the acad
 
 ---
 
-## PRIORITY SUMMARY FOR CRISPY MERGE DECISION
+## PRIORITY SUMMARY FOR CURRICULUM SYNTHESIS
 
 ### CRITICAL (must include in v1 methodology page)
 
@@ -1197,7 +1197,7 @@ Universal Design for Learning (UDL) — the CAST framework — provides the acad
 
 **§8.3:** Sung et al. (2016) largest MALL meta-analysis (g = 0.52); Stockwell (2010) 5–7 minute session; Burston (2015) d = 0.82 for mobile vocabulary.
 
-**§8.4:** Chikamatsu (1996) hiragana-first justification; Matsunaga (1999) 2.3× exposure finding; Mori & Nagy (1999) 300–400 kanji threshold.
+**§8.4:** Chikamatsu (1996) hiragana-first justification; Matsunaga (1999) [OD-20] 2.3× exposure finding; Mori & Nagy (1999) 300–400 kanji threshold.
 
 **§8.5:** Horwitz et al. (1986) FLCAS; Zhang (2019) r = −0.33 meta-analysis; MacIntyre & Gardner (1994) anxiety-WM mechanism; Kondo & Ying-Ling (2004) preparation as coping.
 

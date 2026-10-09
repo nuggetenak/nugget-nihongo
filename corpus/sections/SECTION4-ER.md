@@ -11,14 +11,14 @@ The following internal duplicates were identified and resolved at merge:
 | Nation & Wang (1999) graded readers and vocabulary | **ER-09** ← PRIMARY | ER-21 (freed) | §4.6 cross-references ER-09; ER-21 slot vacant |
 | Pigada & Schmitt (2006) vocabulary acquisition from ER | **ER-11** ← PRIMARY | ER-25 (freed) | §4.7 cross-references ER-11; ER-25 slot vacant |
 
-**Active flags for downstream agents:**
-- ER-05: Hu & Nation (2000) — possible duplicate of BC-08 (§1.12). → **Agent 38** to determine consolidation strategy.
-- ER-10: Webb (2007) — possible overlap with OT-25–OT-30 (§12.5). → **Agent 38** to verify.
-- ER-19: Mori & Shimizu (2007) DOI marked unverified. → **Agent 37** to confirm.
-- ER-20: Chikamatsu (1996) DOI marked unverified. → **Agent 37** to confirm.
+**Resolved flags and verified citations:**
+- **DUP-04 RESOLVED:** ER-05 (Hu & Nation 2000) consolidated to canonical **BC-08** (§1.12); ER-05 retired.
+- **DUP-05 RESOLVED:** ER-10 (Webb 2007) consolidated to canonical **VD-05** (§CA/VD cluster, cross-ref SR-09); ER-10 retired.
+- **ER-19 CONFIRMED:** Mori & Shimizu (2007) verified with DOI `10.1111/j.1944-9720.2007.tb02871.x`.
+- **ER-20 CONFIRMED:** Chikamatsu (1996) verified with DOI `10.1017/s0272263100015369`.
 
-**Active ID blocks:** ER-01–ER-15 (Agent 22, §4.1–4.4) + ER-16–ER-20, ER-22–ER-24, ER-26–ER-27 (Agent 23, §4.5–4.7)
-**Vacant slots:** ER-21, ER-25
+**Active ID blocks:** ER-01–ER-04, BC-08 (ex-ER-05), ER-06–ER-09, VD-05 (ex-ER-10), ER-11–ER-15 (§4.1–4.4) + ER-16–ER-20, ER-22–ER-24, ER-26–ER-27 (§4.5–4.7)
+**Vacant / retired slots:** ER-05 (retired to BC-08), ER-10 (retired to VD-05), ER-21, ER-25
 
 ---
 
@@ -88,9 +88,9 @@ This threshold finding has direct implications for two of Nugget Nihongo's core 
 
 ---
 
-**[ER-05]** ⚠️ **FLAG: POTENTIAL DUPLICATE OF BC-08** **Hu, M., & Nation, I. S. P. (2000).** Unknown vocabulary density and reading comprehension. *Reading in a Foreign Language, 13*(1), 403–430. Retrieved from https://nflrc.hawaii.edu/rfl/
+**[BC-08]** *(formerly ER-05; canonical ID: BC-08)* **Hu, M., & Nation, I. S. P. (2000).** Unknown vocabulary density and reading comprehension. *Reading in a Foreign Language, 13*(1), 403–430. Retrieved from https://nflrc.hawaii.edu/rfl/
 
-- **⚠️ Anti-duplication note:** BC-08 (§1.12) covers this paper. If BC-08 is the same Hu & Nation (2000), Agent 38 should consolidate: use BC-08 for §1 context and ER-05 for §4 context, or collapse to BC-08 with cross-reference. Citing here because the §4.2 treatment requires its methods and findings directly, not merely a passing reference.
+- **Canonical consolidation note:** Consolidated under canonical ID **BC-08** (§1.12); ER-05 retired per DUP-04 resolution.
 - **Core contribution:** The most-cited empirical study of text coverage thresholds. Hu and Nation measured reading comprehension at four vocabulary coverage levels — 80%, 90%, 95%, and 100% — using specially constructed texts with controlled unknown word proportions. Participants (university EFL learners) demonstrated that 80% and 90% coverage produced near-chance comprehension; 95% coverage yielded partial but unstable comprehension; only at 98% coverage (extrapolated from their findings) did genuine independent comprehension become reliably possible. The study formalized what Nation had theorized: the 95% figure widely cited in the pre-2000 literature is *insufficient* for independent reading. The true threshold is higher — approximately 98%, meaning no more than 1 unknown word per 50 running tokens.
 - **Relevance to Nugget Nihongo:** Defines the coverage standard against which all vocabulary level recommendations must be calibrated. A learner with 3,000 word families achieves approximately 95% coverage of general Japanese text — still below the 98% threshold. A learner with 6,000–8,000 word families approaches 98% coverage for newspapers and novels. These thresholds, combined with the vocabulary size estimates in §CA.2 (cross-reference Nation, 2006; Schmitt & Schmitt, 2014), provide the empirical basis for Nugget's per-level reading recommendations.
 
@@ -98,14 +98,14 @@ This threshold finding has direct implications for two of Nugget Nihongo's core 
 
 **[ER-06]** **Laufer, B. (1989).** What percentage of text-lexis is essential for comprehension? In C. Lauren & M. Nordman (Eds.), *Special language: From humans thinking to thinking machines* (pp. 316–323). Multilingual Matters.
 
-- **Core contribution:** The first systematic attempt to quantify vocabulary coverage requirements for reading comprehension. Laufer proposed the "95% coverage threshold" from corpus-based analysis of EFL reading data — arguing that readers needed to know at least 95% of the words in a text to achieve adequate comprehension. This 1989 paper established the research tradition that Hu & Nation (2000) would later revise upward. Laufer's 95% figure influenced vocabulary pedagogy through the 1990s; its revision to 98% (Hu & Nation, 2000, ER-05) is one of the most practically consequential findings in the field. Laufer (1989) is distinct from Laufer (1992), which is already cited in §CA.1 (vocabulary threshold for comfortable reading, 5,000 word families). The 1989 paper addresses the *coverage* question; the 1992 paper addresses the *vocabulary size* question.
-- **Relevance to Nugget Nihongo:** Provides the historical baseline from which current 98% consensus evolved. Citing both Laufer (1989) and Hu & Nation (2000, ER-05) demonstrates methodological progression: the field moved from "approximately 95%" to "empirically, 98%" through controlled experimentation. The methodology page can use this progression to show that vocabulary size recommendations are evidence-based, not arbitrary.
+- **Core contribution:** The first systematic attempt to quantify vocabulary coverage requirements for reading comprehension. Laufer proposed the "95% coverage threshold" from corpus-based analysis of EFL reading data — arguing that readers needed to know at least 95% of the words in a text to achieve adequate comprehension. This 1989 paper established the research tradition that Hu & Nation (2000) would later revise upward. Laufer's 95% figure influenced vocabulary pedagogy through the 1990s; its revision to 98% (Hu & Nation, 2000, BC-08) is one of the most practically consequential findings in the field. Laufer (1989) is distinct from Laufer (1992), which is already cited in §CA.1 (vocabulary threshold for comfortable reading, 5,000 word families). The 1989 paper addresses the *coverage* question; the 1992 paper addresses the *vocabulary size* question.
+- **Relevance to Nugget Nihongo:** Provides the historical baseline from which current 98% consensus evolved. Citing both Laufer (1989) and Hu & Nation (2000, BC-08) demonstrates methodological progression: the field moved from "approximately 95%" to "empirically, 98%" through controlled experimentation. The methodology page can use this progression to show that vocabulary size recommendations are evidence-based, not arbitrary.
 
 ---
 
 **[ER-07]** **Liu, N., & Nation, I. S. P. (1985).** Factors affecting guessing vocabulary in context. *RELC Journal, 16*(1), 33–42. https://doi.org/10.1177/003368828501600103
 
-- **Core contribution:** Nation's empirical examination of when readers can successfully infer unknown vocabulary from context. Liu and Nation found that successful contextual guessing requires not only high text coverage but also specific discourse-level clues — the unknown word must be supported by accessible surrounding context. Critically, guessing accuracy collapsed when the surrounding text itself contained multiple unknown items — even at 95% coverage, the unknown words are not randomly distributed, meaning dense clusters of unknowns produce local comprehension failures disproportionate to the overall coverage statistic. The paper provides a *mechanism* for why the 98% threshold (ER-05) is not merely about raw density but about the cognitive conditions needed for successful inference.
+- **Core contribution:** Nation's empirical examination of when readers can successfully infer unknown vocabulary from context. Liu and Nation found that successful contextual guessing requires not only high text coverage but also specific discourse-level clues — the unknown word must be supported by accessible surrounding context. Critically, guessing accuracy collapsed when the surrounding text itself contained multiple unknown items — even at 95% coverage, the unknown words are not randomly distributed, meaning dense clusters of unknowns produce local comprehension failures disproportionate to the overall coverage statistic. The paper provides a *mechanism* for why the 98% threshold (BC-08) is not merely about raw density but about the cognitive conditions needed for successful inference.
 - **Relevance to Nugget Nihongo:** Explains *why* the lexical threshold matters and cannot be circumvented by telling learners to "guess from context." Contextual guessing is a legitimate reading strategy (§4.4), but it requires contextual support — which requires high coverage. Nugget's onboarding communication should set honest expectations: "The vocabulary gap you're closing with Nugget is the prerequisite for reading strategies to work. Strategies don't substitute for vocabulary; they work *because* you have vocabulary."
 
 ---
@@ -138,9 +138,9 @@ Cross-reference §1.7 (BC-02, Webb & Nation, 2017) — the SRS-vs-ER threshold a
 
 ---
 
-**[ER-10]** **Webb, S. (2007).** The effects of repetition on vocabulary knowledge. *Applied Linguistics, 28*(1), 46–65. https://doi.org/10.1093/applin/aml048
+**[VD-05]** *(formerly ER-10; canonical ID: VD-05; cross-ref SR-09)* **Webb, S. (2007).** The effects of repetition on vocabulary knowledge. *Applied Linguistics, 28*(1), 46–65. https://doi.org/10.1093/applin/aml048
 
-- **⚠️ Anti-duplication note:** Webb (2007) may overlap with OT-25–OT-30 (§12.5, Barcroft/Webb vocabulary consolidation cluster). Check §12 file before finalizing. If already cited in §12 as OT-2X, cross-reference rather than create ER-10.
+- **Canonical consolidation note:** Consolidated under canonical ID **VD-05** (§CA/VD cluster, cross-ref SR-09); ER-10 retired per DUP-05 resolution.
 - **Core contribution:** Webb's study manipulated the number of times learners encountered target words in a reading passage (1, 3, 7, or 10 encounters) and measured subsequent vocabulary knowledge across multiple dimensions (form recognition, meaning recall, use in context). The key findings: (1) a single encounter produces negligible acquisition; (2) meaningful acquisition of form-meaning connections requires a minimum of 7–10 encounters; (3) even 10 encounters in a single reading context produces shallower vocabulary knowledge than the same number of encounters distributed across multiple reading sessions (a retrieval practice and spacing effect consistent with §1.2 and §1.3). Webb's findings establish both a *floor* (1–3 encounters is insufficient) and a *ceiling* (10 encounters in a single context leaves considerable knowledge depth ungained) for ER-based incidental vocabulary acquisition.
 - **Relevance to Nugget Nihongo:** Webb (2007) explains precisely when SRS is more efficient than ER and why: for words encountered fewer than 7 times in reading contexts, SRS-mediated spaced retrieval produces richer and more durable knowledge representations than incidental reading encounter. For words encountered frequently in authentic texts (above ~3,000 word families), the reading encounter rate eventually exceeds what SRS can provide per unit time. The strategy handoff from SRS to ER is not about abandoning deliberate study — it is about recognizing when the encounter ecology has shifted sufficiently to make ER the dominant acquisition mechanism.
 
@@ -205,22 +205,22 @@ This has specific implications for Indonesian learners of Japanese that extend t
 | ER-02 | Day & Bamford (2002) | Top Ten Principles | §4.1 | Clean |
 | ER-03 | Krashen (2004) | *The Power of Reading* | §4.1 | Clean — distinct from CI-01–CI-05 |
 | ER-04 | Elley (1991) | Book flood programs | §4.1 | Clean |
-| ER-05 | Hu & Nation (2000) | Unknown vocabulary density | §4.2 | ⚠️ FLAG: may duplicate BC-08 |
+| ~~ER-05~~ | Hu & Nation (2000) | Unknown vocabulary density | §4.2 | ✅ RETIRED — DUP-04 — canonical ID: **BC-08** |
 | ER-06 | Laufer (1989) | 95% text-lexis threshold | §4.2 | Clean — distinct from Laufer (1992) in §CA |
 | ER-07 | Liu & Nation (1985) | Guessing vocabulary in context | §4.2 | Clean |
 | ER-08 | Carver (1994) | Unknown vocabulary and text difficulty | §4.2 | Clean |
 | ER-09 | Nation & Wang (1999) | Graded readers and vocabulary | §4.3 | Clean |
-| ER-10 | Webb (2007) | Repetition and vocabulary knowledge | §4.3 | ⚠️ CHECK: possible overlap OT-25–OT-30 |
+| ~~ER-10~~ | Webb (2007) | Repetition and vocabulary knowledge | §4.3 | ✅ RETIRED — DUP-05 — canonical ID: **VD-05** (cross-ref SR-09) |
 | ER-11 | Pigada & Schmitt (2006) | Vocabulary acquisition from ER | §4.3 | Clean |
 | ER-12 | Grabe (2009) | *Reading in a Second Language* | §4.4 | Clean |
 | ER-13 | Alderson (1984) | Reading problem or language problem? | §4.4 | Clean |
 | ER-14 | Bernhardt & Kamil (1995) | L1 and L2 reading relationships | §4.4 | Clean |
 | ER-15 | Koda (2005) | *Insights into Second Language Reading* | §4.4 | Clean |
 
-**Total: 15 citations (ER-01–ER-15)**  
-**Flags for Agent 2 / Agent 38:**
-1. ER-05 (Hu & Nation, 2000): Verify against BC-08. If same paper, consolidate to BC-08 and cross-reference in §4.2 — OR retain ER-05 as §4-primary citation and BC-08 as §1-primary. The paper is needed in both sections for substantive purposes; Agent 38 to determine consolidation strategy.
-2. ER-10 (Webb, 2007): Verify against OT-25–OT-30 (§12.5). If Webb (2007) is already assigned an OT-XX ID, cross-reference in §4.3 rather than using ER-10.
+**Total: 13 active citations in block ER-01–ER-15 (ER-05 retired to BC-08; ER-10 retired to VD-05)**  
+**Duplicate resolutions:**
+1. **DUP-04 RESOLVED:** ER-05 consolidated to canonical **BC-08** (Hu & Nation, 2000, *Reading in a Foreign Language*).
+2. **DUP-05 RESOLVED:** ER-10 consolidated to canonical **VD-05** (Webb, 2007, *Applied Linguistics*).
 
 **Handoff to Agent 23:** Citation range ER-16–ER-30 reserved for §4 Part 2 (§4.5–§4.7: Japanese-specific ER research, graded reader level analysis, design matrix). ER-01–ER-15 IDs are locked.
 

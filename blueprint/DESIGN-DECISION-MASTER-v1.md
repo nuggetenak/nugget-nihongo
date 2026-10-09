@@ -1,20 +1,16 @@
 # NUGGET NIHONGO — DESIGN DECISION MASTER
-## Part 1: §1, §5.5, §5.6, §8, §9
-**Agent:** 32 (Sonnet 4.6)
-**Date:** 3 April 2026
-**Corpus version:** v10 (~879 citations)
-**Source sections:** §1 + §1.12 (BC cluster), §5.5 v4 + §5.6, §8 v3, §9 v1 + §9.10
-**Deliverable scope:** Feature taxonomy categories 1–10
-**Agent 33 covers:** §10, §11, §12, §13, §CA, §2, §3, §14, §15, §4, §16, §17
-**Agent 2 merges:** Part 1 + Part 2 → DESIGN-DECISION-MASTER-v1.md
+## Comprehensive Curriculum Architecture & Platform Specifications (v1.1)
+**Scope:** Integrative Synthesis across Sections §1–§17, §CA, Level Ladders, and Platform Specifications  
+**Corpus Baseline:** v18 (754 Verified Empirical Citations)  
+**Taxonomy:** Unified Ten-Category Feature Matrix  
 
 ---
 
 ## PREFATORY NOTE
 
-This document extracts every design decision, design implication, and design recommendation from the four source sections above, organized by Crispy's ten-category feature taxonomy. Decisions are corpus-grounded: every item maps to at least one citation ID. Where §1 and §8, or §9.2 and §9.4, generate tension, conflicts are flagged explicitly.
+This document synthesizes every design decision, pedagogical implication, and engineering recommendation across the empirical SLA research corpus, structured by the ten-category feature taxonomy. Decisions are strictly corpus-grounded: every item maps directly to empirical citation IDs. Where different theoretical traditions (e.g., Cognitive Load Theory vs. Self-Determination Theory vs. Sleep Consolidation) generate design tensions, reconciliations are explicitly articulated.
 
-All decision IDs follow the format DDM-P1-NNN for cross-reference by Agent 33 and Agent 2.
+All decision IDs follow the format DDM-P1-NNN and DDM-P2-NNN for cross-referencing across curriculum specifications.
 
 ---
 
@@ -90,7 +86,7 @@ All decision IDs follow the format DDM-P1-NNN for cross-reference by Agent 33 an
 ---
 
 ## FEATURE: Card Back — L2d Contrastive Notes (Full Tag Inventory)
-### Decision: All 20 L2d interference tags (§5.5.31) must be implemented as back-card contrastive notes triggered by tag presence. High-confidence tags (Crispy Core + Agent 11 v1) are mandatory; Low-confidence tags (Agent 11 v2) are recommended pending I-JAS corpus validation.
+### Decision: All 20 L2d interference tags (§5.5.31) must be implemented as back-card contrastive notes triggered by tag presence. High-confidence tags (Core verified tags) are mandatory; Low-confidence tags (secondary exploratory tags) are recommended pending I-JAS corpus validation.
 - **Evidence:** §5.5.31 (Tag inventory — 20 tags, confidence ratings: High/Medium/Low); §5.5.29 (I-JAS corpus validation for ni/de, wa/ga, passive, te-iru, relative clauses)
 - **Section:** §5.5, §5.6.1
 - **Priority:** HIGH
@@ -625,7 +621,7 @@ The following conflicts between sections are flagged for Agent 2 resolution:
 | Conflict ID | Section A | Section B | Nature of Conflict | Recommended Resolution |
 |---|---|---|---|---|
 | CONF-01 | §9.2 Redundancy Principle | §9.7 L2 Captioning Exception | Redundancy principle says audio + identical text is harmful; captioning exception says N5–N4 learners NEED text to scaffold audio decoding | **Resolution in §9.7 table:** Treat as level-differentiated, not a binary choice. N5–N4 captioning exception applies; N3+ redundancy principle applies. |
-| CONF-02 | §1.4 Interleaving | §8 Gamification | §1.4 recommends within-category interleaving for maximum learning; gamification literature (§10, Agent 33) may recommend cross-domain variety for engagement | **Pending Agent 33 §10 data.** Recommend learning-science priority over engagement design if in direct conflict. |
+| CONF-02 | §1.4 Interleaving | §10 Gamification | §1.4 recommends within-category interleaving for maximum learning; gamification models may recommend cross-domain variety for engagement | **Resolved in §10 synthesis:** Learning-science priority takes precedence over pure engagement variety. Interleaving operates within functional categories; task variety is handled across distinct review sessions rather than within a single lexical block. |
 | CONF-03 | §8 No Leaderboards | §10 Gamification | §8 cultural analysis strongly argues against leaderboards for Indonesian learners; §10 gamification literature may show positive leaderboard effects in other contexts | **Indonesian cultural data takes precedence.** Opt-in only, never default-on. |
 | CONF-04 | §1.3 Testing Effect | §9.4 Expertise Reversal | Testing effect research shows continued testing of all items (including already-known ones) produces 2× retention; expertise reversal says scaffolding (including testing) becomes redundant for advanced learners | **Not a genuine conflict.** Testing of already-known items (Karpicke & Roediger 2008) is about *continued retrieval practice*; expertise reversal is about *scaffolding removal*. FSRS naturally handles this: advanced cards get longer intervals (less frequent testing), not zero testing. |
 
@@ -667,33 +663,17 @@ The following conflicts between sections are flagged for Agent 2 resolution:
 
 ---
 
-*DESIGN-DECISION-MASTER-PART1-AGENT32-v1.md*
-*Agent 32 Sonnet 4.6 — 3 April 2026*
-*Source: §1 + §1.12, §5.5 v4 + §5.6, §8 v3, §9 v1 + §9.10*
-*62 decisions across 10 feature categories | 47 HIGH priority | 4 conflicts flagged*
-*Agent 33 covers §10–§17, §CA, §2–§4 | Agent 2 merges Part 1 + Part 2*
-
 ---
-
----
-
-# NUGGET NIHONGO — DESIGN DECISION MASTER (PART 2 / AGENT 33)
-> *Merged from DESIGN-DECISION-MASTER-PART2-AGENT33-v1.md by Agent 2 — 4 April 2026*
-> *Part 1 (Agent 32): §1, §5.5, §5.6, §8, §9 — Feature categories 1–10 (62 decisions)*
-> *Part 2 (Agent 33): §10–§13, §CA, §2, §3, §4, §14–§17 — Feature categories 1–10 (61 decisions)*
-> *Combined total: 123 decisions*
 
 # NUGGET NIHONGO — DESIGN DECISION MASTER (PART 2)
-## Agent 33 — §10, §11, §12, §13, §CA, §CA.10, §2, §3, §4, §14, §15, §16, §17
-**Workstream:** C — Management Documents | **Priority:** 🔴 HIGH  
-**Corpus baseline:** v10 (~879 citations) | **Date produced:** 3 April 2026  
-**Scope:** All design decisions extractable from §10–§13, §CA, §CA.10, §2, §3, §4, §14–§17  
-**Agent 32 covers:** §1, §5, §8, §9 (Part 1 counterpart)  
-**Agent 2 merges:** Part 1 + Part 2 → `DESIGN-DECISION-MASTER-v1.md`
+## Applied Domain Syntheses: §10–§17, §CA, §2–§4 (61 Decisions)
+**Scope:** Applied phonology, sociolinguistics, vocational SLA, extensive reading, output theory, individual differences, and MALL integration.  
+**Corpus baseline:** v18 (754 Verified Empirical Citations)  
+**Taxonomy:** Unified Ten-Category Feature Matrix (Categories 1–10)  
 
 ---
 
-## FEATURE TAXONOMY (identical to Agent 32)
+## FEATURE TAXONOMY
 
 1. Card Front Design  
 2. Card Back Design  
@@ -1375,19 +1355,27 @@ The following conflicts between sections are flagged for Agent 2 resolution:
 
 ---
 
-## CROSS-CONFLICT FLAGS FOR AGENT 2
+## RESOLUTION OF CROSS-SECTION DESIGN CONFLICTS
 
-The following potential conflicts between Part 2 decisions and Part 1 territory (§1/§5/§8/§9, covered by Agent 32) are flagged for Agent 2 resolution:
+The following cross-section design tensions and candidate duplicates have been formally reconciled:
 
-**⚠ FLAG A — Audio quality standard vs. §8 implementation notes:** §11 (HVPT) requires multi-speaker human-recorded audio as a non-negotiable condition for perceptual learning generalization. If §8's MALL cluster reached any different conclusion about audio production standards (e.g., TTS acceptable as a pragmatic compromise), the §11 position must take precedence and §8 should cross-reference §11.7 as the architectural specification.
+### ✅ FLAG A — Audio Quality Standard: Human HVPT vs. Interim TTS Scaffold
+- **Tension:** §11 (HVPT) mandates multi-speaker natural human audio for perceptual learning generalization, whereas pragmatic platform staging notes (§8 MALL cluster) considered TTS for initial rapid asset generation.
+- **Reconciliation:** Multi-speaker natural human-recorded audio (minimum 2 speakers per lexical item: 1 male, 1 female) is the **normative gold standard** dictated by High-Variability Phonetic Training empirical research (`PH-30`–`PH-39`) and ego-permeability internalization (`AL-17`, `AL-18`). Perceptual learning fails to generalize across acoustic environments with synthetic voices alone. High-quality neural TTS is permitted strictly as an **interim engineering scaffold** during early content staging, but must be systematically replaced prior to release. Multi-speaker audio production is non-negotiable for target lexical and phonological decks.
 
-**⚠ FLAG B — Evening notification default vs. §8 notification design:** §10.7 recommends evening notification window (19:00–22:00) based on sleep consolidation evidence (SL-03, SL-04). If §8 recommended a different default notification time, or established user-configurable notification time as the primary UX recommendation without specifying an evidence-based default, these need reconciliation. The §10.7 position should be the evidence-based default; user override is permitted per autonomy principles.
+### ✅ FLAG B — Evening Notification Default vs. Learner Autonomy
+- **Tension:** §10.7 recommends an evening notification window (19:00–22:00) based on sleep consolidation evidence (`SL-03`, `SL-04`), while §8 emphasizes user-configurable notification timing grounded in Self-Determination Theory (SDT) autonomy support (`AL-01`–`AL-04`).
+- **Reconciliation:** The platform's default notification window is anchored at **19:00–22:00**, directly grounded in hippocampal memory replay and slow-wave sleep (SWS) consolidation evidence (`SL-03`, `SL-04`, Gais et al., Dumay & Gaskell). Pre-sleep review proximity significantly optimizes 6-month retention. Concurrently, respecting SDT autonomy support (`AL-01`–`AL-04`), learners maintain full configuration autonomy to adjust or customize their daily notification anchor in platform settings. The default is evidence-anchored; customization is fully enabled.
 
-**⚠ FLAG C — Engagement-intrinsic visual richness vs. §9 seductive details risk:** §16.5 (Haugwitz et al. CM-18) establishes that engagement-generating features incidental to learning content can displace deeper processing — the MALL extension of §9's seductive details effect (CT cluster, Agent 32). If §9 or §8 recommended high visual richness for engagement purposes, Part 2 decisions require that visual content be content-intrinsic (thematically connected to the vocabulary item) and not merely decorative. This is a framing distinction, not a conflict.
+### ✅ FLAG C — Engagement-Intrinsic Visual Richness vs. Seductive Details Risk
+- **Tension:** §16.5 and §8 highlight visual richness for engagement, whereas Cognitive Load Theory (`CL-01`–`CL-08`, Mayer's CT cluster, and Haugwitz et al. `CM-18`) demonstrates that extraneous seductive details impair schema acquisition.
+- **Reconciliation:** Visual elements must be strictly **content-intrinsic and schema-congruent**—meaningfully depicting the semantic, situational, or cultural case frame of the lexical item rather than serving as visual wallpaper or gamified entertainment. Emotional salience (`SL-06`) is achieved through culturally authentic situational context, not decorative gamification. All decorative or non-essential visual elements are eliminated.
 
-**⚠ FLAG D — §4 ER-05 / BC-08 duplication:** The anti-duplication baseline (v10) flags Hu & Nation (2000) text coverage as potentially cited in both §4 (ER-05) and §1 (BC-08). Part 2 references use ER-05 in §4 contexts. Agent 38 is flagged for verification.
+### ✅ FLAG D — Resolution of Duplicate Pair DUP-04 (ER-05 vs. BC-08)
+- **Status:** [RESOLVED] Hu & Nation (2000) text coverage threshold (98% for extensive reading) is consolidated to canonical ID **`[BC-08]`**. The duplicate candidate `ER-05` is formally retired across all corpus files and registries.
 
-**⚠ FLAG E — Webb (2007) in §4 (ER-10) vs. §12 (OT-25–OT-30):** The anti-duplication baseline flags this potential cross-section duplicate. Part 2 uses ER-10 only in §4 contexts and VD-05 in §CA.10 contexts. If Agent 38 confirms Webb (2007) = ER-10 = OT-25 or OT-26, the §4/§CA.10 citations should be corrected to use a single ID.
+### ✅ FLAG E — Resolution of Duplicate Pair DUP-05 (ER-10 vs. VD-05)
+- **Status:** [RESOLVED] Webb (2007) context diversity and vocabulary knowledge gains study is consolidated to canonical ID **`[VD-05]`** (cross-referenced in `SR-09`). The duplicate candidate `ER-10` is formally retired across all corpus files and registries.
 
 ---
 

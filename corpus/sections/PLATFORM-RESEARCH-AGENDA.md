@@ -55,7 +55,7 @@ This section proposes a structured research agenda: five publishable studies tha
 
 **Research question:** Do Indonesian learners (non-kanji L1 background) require calibrated difficulty priors for kanji cards in FSRS, and what difficulty prior value is empirically justified by Indonesian learner forgetting curve data?
 
-**Existing evidence basis:** Matsunaga (1999) found 2.3× more exposures required for non-kanji-background learners. FSRS default difficulty priors are calibrated on a mixed-L1 international dataset. A dataset dominated by Indonesian learners would allow Indonesian-specific calibration.
+**Existing evidence basis:** Matsunaga (1999) [OD-20] found 2.3× more exposures required for non-kanji-background learners. FSRS default difficulty priors are calibrated on a mixed-L1 international dataset. A dataset dominated by Indonesian learners would allow Indonesian-specific calibration.
 
 **Data source:** FSRS memory algorithm logs from Nugget Nihongo platform — requires minimum 10,000 kanji card review events per learner cohort.
 
