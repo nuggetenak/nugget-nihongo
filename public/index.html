@@ -15,11 +15,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/layout/shell.css">
   <link rel="stylesheet" href="./styles/app.css">
   <link rel="stylesheet" href="./styles/onboarding.css">
   <link rel="stylesheet" href="./styles/settings.css">
   <link rel="stylesheet" href="./styles/home-dashboard.css">
+  <link rel="stylesheet" href="./styles/layout/shell.css">
 </head>
 <body>
 
@@ -137,8 +137,19 @@
     </svg>
     <span class="tab-label">Lainnya</span>
   </button>
-  <button id="tabBtnSettings" class="tab-btn tab-btn--hidden" onclick="switchTab('settings',this)"></button>
-  <button id="tabBtnAbout"    class="tab-btn tab-btn--hidden" onclick="switchTab('about',this)"></button>
+  <button id="tabBtnSettings" class="tab-btn tab-btn--desktop-only" onclick="switchTab('settings',this)" aria-label="Pengaturan">
+    <svg class="tab-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="3"/>
+      <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+    </svg>
+    <span class="tab-label">Pengaturan</span>
+  </button>
+  <button id="tabBtnAbout" class="tab-btn tab-btn--desktop-only" onclick="switchTab('about',this)" aria-label="Tentang">
+    <svg class="tab-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/>
+    </svg>
+    <span class="tab-label">Tentang</span>
+  </button>
 </nav>
 
 <!-- ══════════════ HOME PAGE (DASHBOARD) ══════════════ -->
@@ -923,76 +934,72 @@
 <!-- ══════════════ AI SENSEI PAGE ══════════════ -->
 <div id="senseiPage" class="page">
 
-  <div class="ai-tutor-wrap">
-
-    <!-- Header -->
-    <div class="ai-tutor-header">
-      <div class="ai-tutor-avatar">✨</div>
-      <div>
-        <div class="ai-tutor-name">Sensei Nugget</div>
-        <div class="ai-tutor-tagline">Guru bahasa Jepang kamu — tanya apa saja!</div>
+  <div class="sensei-cs-container">
+    <!-- Hero banner -->
+    <div class="sensei-cs-hero">
+      <div class="sensei-cs-orb-glow">
+        <div class="sensei-cs-orb">✨</div>
       </div>
-      <div class="ai-tutor-status" id="senseiStatus">
-        <span class="ai-status-dot" id="senseiStatusDot"></span>
-        <span id="senseiStatusText">Siap</span>
+      <div class="sensei-cs-badge">
+        <span class="cs-badge-dot"></span>
+        <span>DALAM TAHAP PENGEMBANGAN · COMING SOON</span>
       </div>
+      <h1 class="sensei-cs-title">Sensei AI Sedang Bersiap! 🍵</h1>
+      <p class="sensei-cs-desc">
+        Sensei virtual Nugget Nihongo sedang diracik dengan kurikulum JLPT dan buku teks terlengkap. 
+        Fitur kecerdasan buatan ini akan hadir untuk membimbing belajarmu secara personal, akurat, dan bebas halusinasi.
+      </p>
     </div>
 
-    <!-- Mode tabs -->
-    <div class="ai-mode-tabs">
-      <button class="ai-mode-tab active" id="modeExplain" onclick="aiSetMode('explain',this)">
-        💡 Jelaskan
-      </button>
-      <button class="ai-mode-tab" id="modeQuizMe" onclick="aiSetMode('quiz',this)">
-        🎯 Tantang Aku
-      </button>
-      <button class="ai-mode-tab" id="modeChat" onclick="aiSetMode('chat',this)">
-        💬 Ngobrol Bebas
-      </button>
-    </div>
-
-    <!-- Quota indicator -->
-    <div class="ai-quota-bar" id="aiQuotaBar">
-      <span id="aiQuotaText">10 pertanyaan gratis hari ini</span>
-      <div class="ai-quota-track"><div class="ai-quota-fill" id="aiQuotaFill" style="width:100%"></div></div>
-    </div>
-
-    <!-- Chat messages -->
-    <div class="ai-chat-messages" id="aiChatMessages">
-      <div class="ai-msg ai-msg--bot">
-        <div class="ai-msg-bubble">
-          Konnichiwa! 👋 Aku <strong>Sensei Nugget</strong>, guru bahasa Jepang virtualmu.<br><br>
-          Kamu bisa tanya apa saja: pola tata bahasa, kosakata, perbedaan ekspresi, atau minta quiz. Mau mulai dari mana?
-        </div>
+    <!-- Feature sneak peek cards -->
+    <div class="sensei-cs-grid">
+      <div class="sensei-cs-card">
+        <div class="sensei-cs-icon">💡</div>
+        <h3>Penjelasan Nuansa Grammar</h3>
+        <p>Bingung membedakan ～ために vs ～ように atau partikel に vs で? Sensei akan mengupas tuntas dengan analogi bahasa Indonesia yang mudah dipahami.</p>
+        <span class="sensei-cs-status">Fitur Terencana</span>
+      </div>
+      <div class="sensei-cs-card">
+        <div class="sensei-cs-icon">🎯</div>
+        <h3>Tantangan Kuis Adaptif</h3>
+        <p>Sensei membaca kartu FSRS yang sering kamu jawab ragu atau lupa, lalu menyusun kuis khusus untuk menambal kelemahan memorimu secara presisi.</p>
+        <span class="sensei-cs-status">Fitur Terencana</span>
+      </div>
+      <div class="sensei-cs-card">
+        <div class="sensei-cs-icon">💬</div>
+        <h3>Simulasi Percakapan Harian</h3>
+        <p>Latihan ngobrol bahasa Jepang santai atau formal (Keigo) untuk persiapan kerja, wawancara, maupun traveling ke Jepang tanpa rasa cemas.</p>
+        <span class="sensei-cs-status">Fitur Terencana</span>
       </div>
     </div>
 
-    <!-- Input area -->
-    <div class="ai-input-area">
-      <div class="ai-context-chip" id="aiContextChip" style="display:none">
-        📌 <span id="aiContextLabel"></span>
-        <button onclick="aiClearContext()" class="ai-ctx-clear">✕</button>
+    <!-- Encouraging Banner & Fast navigation -->
+    <div class="sensei-cs-action-box">
+      <div class="sensei-cs-action-text">
+        <h4>Sambil Menunggu Sensei Siap...</h4>
+        <p>Kamu tetap bisa menguasai ribuan kosakata, kanji, dan tata bahasa di menu <b>Materi</b> atau menguji kemampuanmu di <b>Latihan</b>!</p>
       </div>
-      <div class="ai-input-row">
-        <textarea
-          id="aiInputText"
-          class="ai-input"
-          rows="1"
-          placeholder="Tanya sesuatu... mis. 'Jelaskan perbedaan に dan で'"
-          onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();aiSend()}"
-          oninput="this.style.height='auto';this.style.height=Math.min(this.scrollHeight,120)+'px'"
-        ></textarea>
-        <button class="ai-send-btn" id="aiSendBtn" onclick="aiSend()">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
-          </svg>
+      <div class="sensei-cs-btn-group">
+        <button class="btn-3d btn-3d--primary" onclick="switchTab('browse')">
+          📖 Buka Materi Belajar
+        </button>
+        <button class="btn-3d btn-3d--secondary" onclick="switchTab('quiz')">
+          ✏️ Mulai Kuis Latihan
         </button>
       </div>
-      <div class="ai-setup-notice" id="aiSetupNotice" style="display:none">
-        ⚙️ AI Sensei belum dikonfigurasi. <a href="https://github.com/nuggetenak/nugget-nihongo#setup" target="_blank">Lihat panduan setup →</a>
-      </div>
     </div>
+  </div>
 
+  <!-- Hidden compatibility elements for existing ai-tutor.js scripts -->
+  <div style="display:none" aria-hidden="true">
+    <div id="senseiStatus"><span id="senseiStatusDot"></span><span id="senseiStatusText"></span></div>
+    <div id="aiQuotaText"></div>
+    <div id="aiQuotaFill"></div>
+    <div id="aiChatMessages"></div>
+    <div id="aiContextChip"><span id="aiContextLabel"></span></div>
+    <textarea id="aiInputText"></textarea>
+    <button id="aiSendBtn"></button>
+    <div id="aiSetupNotice"></div>
   </div>
 
 </div><!-- end senseiPage -->

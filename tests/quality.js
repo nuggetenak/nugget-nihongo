@@ -580,7 +580,7 @@ for (const [filePath, varName, level, prefix] of GRAMMAR_FILES) {
 // ── confusion_pairs bidirectionality ──────────────────────────────────────
 for (const [id, refs] of cpMap)
   for (const ref of refs)
-    if (grammarById.has(ref) && !(cpMap.get(ref)||[]).includes(id))
+    if (grammarById.has(ref) && !(grammarById.get(ref)?.confusion_pairs || []).includes(id))
       err('CONFUSION_NOT_BIDIR', id, `${id}→${ref} not reciprocal`);
 
 // ══════════════════════════════════════════════════════════════════════════

@@ -6,7 +6,7 @@
 //    restoreTabFromHash()  Read URL hash and activate matching tab
 // ══════════════════════════════════════
 
-const VALID_TABS = ['home', 'browse', 'quiz', 'sensei', 'stats', 'settings'];
+const VALID_TABS = ['home', 'browse', 'quiz', 'sensei', 'stats', 'settings', 'about'];
 
 window.switchTab = function(tab, btn) {
   document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
@@ -33,5 +33,5 @@ window.restoreTabFromHash = function() {
 };
 
 function _tabLabel(tab) {
-  return { home:'Beranda', browse:'Materi', quiz:'Latihan', sensei:'Sensei', stats:'Progress', settings:'Lainnya' }[tab] || '';
+  return { home:'Beranda', browse:'Materi', quiz:'Latihan', sensei:'Sensei', stats:'Progress', settings:'Pengaturan', about:'Tentang' }[tab] || '';
 }
