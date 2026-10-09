@@ -1,9 +1,12 @@
-import React from 'react';
-import { BookOpen, Layers, Flame, Sprout, ArrowRight, Sparkles } from 'lucide-react';
+import React, { useState } from 'react';
+import { BookOpen, Layers, Flame, Sprout, ArrowRight, Sparkles, Award } from 'lucide-react';
 import { useAppStore } from '../store/useAppStore';
+import { HeatmapCalendar } from '../components/gamification/HeatmapCalendar';
+import { BadgesModal } from '../components/gamification/BadgesModal';
 
 export const HomePage: React.FC = () => {
   const { streak, xp, setActiveTab } = useAppStore();
+  const [isBadgesOpen, setIsBadgesOpen] = useState(false);
 
   return (
     <div className="max-w-5xl mx-auto py-6 px-4 space-y-8 animate-in fade-in duration-300">
@@ -106,11 +109,21 @@ export const HomePage: React.FC = () => {
           </div>
         </div>
 
-        {/* Daily Streak Routine */}
+        {/* Daily Streak Routine & Badges Link */}
         <div className="bg-surface-2 border border-accent/20 rounded-2xl p-6 flex flex-col justify-between">
           <div>
-            <span className="text-[11px] font-bold uppercase tracking-wider text-accent">Statistik Kamu</span>
-            <div className="mt-4 space-y-3">
+            <div className="flex items-center justify-between mb-3">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-accent">Statistik Kamu</span>
+              <button
+                onClick={() => setIsBadgesOpen(true)}
+                className="text-[11px] font-bold text-accent-hot hover:underline flex items-center gap-1"
+              >
+                <Award className="w-3.5 h-3.5" />
+                <span>Lencana</span>
+              </button>
+            </div>
+
+            <div className="space-y-3">
               <div className="flex items-center justify-between">
                 <span className="text-xs text-appText-muted">Total XP</span>
                 <span className="text-sm font-bold font-mono text-appText-bright">{xp} XP</span>
@@ -132,11 +145,20 @@ export const HomePage: React.FC = () => {
               <span>Kebun Kata</span>
             </span>
             <button onClick={() => setActiveTab('kebun')} className="text-accent hover:underline font-semibold">
-              Lihat →
+              Lihat Kebun →
             </button>
           </div>
         </div>
       </div>
+
+      {/* Activity Heatmap Calendar */}
+      <HeatmapCalendar days={49} />
+
+      {/* Badges Modal */}
+      <BadgesModal
+        isOpen={isBadgesOpen}
+        onClose={() => setIsBadgesOpen(false)}
+      />
     </div>
   );
 };

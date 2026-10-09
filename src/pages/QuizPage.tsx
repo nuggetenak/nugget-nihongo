@@ -7,6 +7,8 @@ import { loadVocab, loadGrammar } from '../lib/data/dataManager';
 import { generateQuizQuestions, QuizQuestionItem } from '../lib/quiz/quizEngine';
 import { speakJapanese } from '../lib/audio/tts';
 import { QuizResultView } from '../components/quiz/QuizResultView';
+import { useGamificationStore } from '../lib/gamification/gamificationStore';
+import { useGardenStore } from '../lib/garden/gardenStore';
 
 export const QuizPage: React.FC = () => {
   const { selectedLevel, showToast, incrementXp, setActiveTab } = useAppStore();
@@ -145,7 +147,7 @@ export const QuizPage: React.FC = () => {
       setCurrentIndex((prev) => prev + 1);
       setIsFlipped(false);
     } else {
-      setIsFinished(true);
+      finishSession();
     }
   };
 
@@ -225,6 +227,19 @@ export const QuizPage: React.FC = () => {
     ]);
   };
 
+  const finishSession = () => {
+    setIsFinished(true);
+    useGamificationStore.getState().recordActivity(questions.length, sessionXp);
+    useGardenStore.getState().addWaterDrop(2);
+    const newly = useGamificationStore.getState().checkAndAwardBadges({
+      streak: useAppStore.getState().streak,
+      vocabCount: userAnswers.length,
+    });
+    if (newly.length > 0) {
+      showToast(`Lencana baru: ${newly[0].name} ${newly[0].icon}!`, '🏆');
+    }
+  };
+
   // Advance to next question
   const handleNextQuestion = () => {
     setSelectedOption(null);
@@ -234,7 +249,7 @@ export const QuizPage: React.FC = () => {
     if (currentIndex + 1 < questions.length) {
       setCurrentIndex((prev) => prev + 1);
     } else {
-      setIsFinished(true);
+      finishSession();
     }
   };
 
