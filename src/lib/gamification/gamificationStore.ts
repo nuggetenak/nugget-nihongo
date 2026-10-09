@@ -75,7 +75,12 @@ export interface GamificationState {
   closeStreakBrokenModal: () => void;
   recordActivity: (reviewsCount?: number, xpEarned?: number) => void;
   getHeatmapDays: (daysCount?: number) => HeatmapDay[];
-  checkAndAwardBadges: (context: { vocabCount?: number; grammarCount?: number; streak?: number }) => BadgeItem[];
+  checkAndAwardBadges: (context: {
+    vocabCount?: number;
+    grammarCount?: number;
+    streak?: number;
+    gardenBloomed?: boolean;
+  }) => BadgeItem[];
 }
 
 function loadEarnedBadges(): Record<string, string> {
@@ -183,8 +188,11 @@ export const useGamificationStore = create<GamificationState>((set, get) => {
         if (b.id === 'vocab-10' && (context.vocabCount || 0) >= 10) shouldEarn = true;
         if (b.id === 'vocab-100' && (context.vocabCount || 0) >= 100) shouldEarn = true;
         if (b.id === 'vocab-500' && (context.vocabCount || 0) >= 500) shouldEarn = true;
+        if (b.id === 'vocab-1000' && (context.vocabCount || 0) >= 1000) shouldEarn = true;
         if (b.id === 'grammar-10' && (context.grammarCount || 0) >= 10) shouldEarn = true;
         if (b.id === 'grammar-50' && (context.grammarCount || 0) >= 50) shouldEarn = true;
+        if (b.id === 'grammar-100' && (context.grammarCount || 0) >= 100) shouldEarn = true;
+        if (b.id === 'garden-bloom' && context.gardenBloomed) shouldEarn = true;
         if (b.id === 'night-owl' && hour >= 0 && hour < 4) shouldEarn = true;
         if (b.id === 'early-bird' && hour >= 4 && hour < 6) shouldEarn = true;
 

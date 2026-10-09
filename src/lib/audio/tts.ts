@@ -33,8 +33,23 @@ export function speakJapanese(text: string, customRate?: number): void {
   // Cancel any ongoing utterance
   window.speechSynthesis.cancel();
 
-  // Strip HTML tags if any
-  const cleanText = text.replace(/<[^>]*>/g, '').trim();
+  // Strip HTML tags and parenthetical/bracketed furigana or notes
+  let cleanText = text.replace(/<[^>]*>/g, '').trim();
+  const stripped = cleanText
+    .replace(/【[^】]*】/g, '')
+    .replace(/〔[^〕]*〕/g, '')
+    .replace(/（[^）]*）/g, '')
+    .replace(/\([^)]*\)/g, '')
+    .replace(/\[[^\]]*\]/g, '')
+    .trim();
+
+  // If stripped isn't empty, use stripped; otherwise remove bare brackets
+  if (stripped) {
+    cleanText = stripped;
+  } else {
+    cleanText = cleanText.replace(/[【】〔〕（）\(\)\[\]]/g, '').trim();
+  }
+
   if (!cleanText) return;
 
   let effectiveRate = customRate;

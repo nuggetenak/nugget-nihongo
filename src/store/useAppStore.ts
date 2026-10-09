@@ -1,6 +1,7 @@
 import { create } from 'zustand';
 import { JLPTLevel } from '../types/vocab';
 import { FSRSCard } from '../types/fsrs';
+import { useGamificationStore } from '../lib/gamification/gamificationStore';
 
 export interface ToastMessage {
   id: string;
@@ -25,6 +26,8 @@ export interface AppState {
   xp: number;
   incrementXp: (amount: number) => void;
   updateStreak: (newStreak: number) => void;
+  recordStudyActivity: () => void;
+  checkStreakStatus: () => void;
 
   // User Preferences
   theme: 'dark' | 'light';
@@ -111,8 +114,74 @@ export const useAppStore = create<AppState>((set, get) => ({
   updateStreak: (newStreak) => {
     set({ streak: newStreak });
     if (typeof window !== 'undefined') {
-      try { localStorage.setItem('nn_streak', JSON.stringify({ count: newStreak, lastDate: new Date().toISOString().slice(0, 10) })); } catch {}
+      try {
+        localStorage.setItem(
+          'nn_streak',
+          JSON.stringify({ count: newStreak, lastDate: new Date().toISOString().slice(0, 10) })
+        );
+      } catch {}
     }
+  },
+
+  checkStreakStatus: () => {
+    if (typeof window === 'undefined') return;
+    try {
+      const raw = localStorage.getItem('nn_streak');
+      if (!raw) return;
+      const parsed = JSON.parse(raw);
+      const count = typeof parsed === 'number' ? parsed : (parsed.count || 0);
+      const lastDate = parsed.lastDate;
+      if (!lastDate || count <= 1) return;
+
+      const today = new Date().toISOString().slice(0, 10);
+      const yesterdayDate = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
+
+      // If last study date was before yesterday, streak broke!
+      if (lastDate !== today && lastDate !== yesterdayDate) {
+        set({ streak: 1 });
+        try {
+          localStorage.setItem('nn_streak', JSON.stringify({ count: 1, lastDate: '' }));
+        } catch {}
+        useGamificationStore.getState().openStreakBrokenModal();
+      }
+    } catch {}
+  },
+
+  recordStudyActivity: () => {
+    const today = new Date().toISOString().slice(0, 10);
+    const yesterday = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
+    const currentStreak = get().streak;
+    let storedLastDate = '';
+
+    if (typeof window !== 'undefined') {
+      try {
+        const raw = localStorage.getItem('nn_streak');
+        if (raw) {
+          const parsed = JSON.parse(raw);
+          storedLastDate = parsed.lastDate || '';
+        }
+      } catch {}
+    }
+
+    if (storedLastDate === today) {
+      return; // already recorded today
+    }
+
+    let nextStreak = currentStreak;
+    if (storedLastDate === yesterday) {
+      nextStreak = currentStreak + 1;
+    } else {
+      nextStreak = 1;
+    }
+
+    set({ streak: nextStreak });
+    if (typeof window !== 'undefined') {
+      try {
+        localStorage.setItem('nn_streak', JSON.stringify({ count: nextStreak, lastDate: today }));
+      } catch {}
+    }
+
+    useGamificationStore.getState().checkAndAwardBadges({ streak: nextStreak });
   },
 
   theme: 'dark',

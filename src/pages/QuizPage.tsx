@@ -8,7 +8,8 @@ import { Layers, RotateCcw, Volume2, Sparkles, Check, ArrowRight, CornerDownLeft
 import { useAppStore } from '../store/useAppStore';
 import { QuizMode } from '../types/quiz';
 import { JLPTLevel } from '../types/vocab';
-import { FSRSCard } from '../types/fsrs';
+import { FSRSCard, FSRSRating } from '../types/fsrs';
+import { calculateFSRSReview } from '../lib/fsrs/math';
 import { loadVocab, loadGrammar } from '../lib/data/dataManager';
 import {
   generateQuizQuestions,
@@ -251,35 +252,42 @@ export const QuizPage: React.FC = () => {
     setSessionScore((prev) => (isCorrect ? prev + 1 : prev));
     setSessionXp((prev) => prev + xpGain);
 
-    // Save FSRS state
+    // Save FSRS state with mathematical memory model
     const itemId = currentQ.targetItem.id;
-    const existing = cards[itemId]?.card || {
+    const existing: FSRSCard = cards[itemId]?.card || {
       due: new Date().toISOString(),
-      stability: 1,
+      stability: 0,
       difficulty: 5,
       elapsed_days: 0,
-      scheduled_days: 1,
+      scheduled_days: 0,
       reps: 0,
       lapses: 0,
       state: 0,
     };
 
-    const nextStability = isCorrect ? existing.stability * 1.5 : Math.max(0.5, existing.stability * 0.7);
-    const nextIntervalDays = Math.max(1, Math.round(nextStability * 2));
-    const nextDueDate = new Date(Date.now() + nextIntervalDays * 86400000).toISOString();
+    const updatedCard = calculateFSRSReview(existing, rating as FSRSRating);
+
+    const target = currentQ.targetItem;
+    const isVocab = 'word' in target;
+    const itemType = isVocab ? 'vocab' : 'grammar';
 
     setCard(itemId, {
-      card: {
-        ...existing,
-        due: nextDueDate,
-        stability: nextStability,
-        reps: existing.reps + 1,
-        lapses: isCorrect ? existing.lapses : existing.lapses + 1,
-        state: isCorrect ? 2 : 3,
-        last_review: new Date().toISOString(),
-      },
-      source: 'vocab',
+      card: updatedCard,
+      source: itemType,
     });
+
+    // Dynamic Kanji garden seeding on successful review
+    if (isCorrect && 'word' in target) {
+      const kanjiMatch = target.word.match(/[\u4e00-\u9faf]/);
+      if (kanjiMatch) {
+        useGardenStore.getState().seedPlant(
+          kanjiMatch[0],
+          target.reading || target.word,
+          target.meaning,
+          (target.level || 'n5').toLowerCase() as any
+        );
+      }
+    }
 
     setUserAnswers((prev) => [
       ...prev,
@@ -387,11 +395,19 @@ export const QuizPage: React.FC = () => {
   const finishSession = () => {
     setIsFinished(true);
     playFanfareSfx();
+    const appStore = useAppStore.getState();
+    appStore.recordStudyActivity();
     useGamificationStore.getState().recordActivity(questions.length, sessionXp);
     useGardenStore.getState().addWaterDrop(2);
+
+    const allCards = Object.values(appStore.cards);
+    const vocabCount = allCards.filter((c) => c.source === 'vocab' || !c.source).length;
+    const grammarCount = allCards.filter((c) => c.source === 'grammar').length;
+
     const newly = useGamificationStore.getState().checkAndAwardBadges({
-      streak: useAppStore.getState().streak,
-      vocabCount: userAnswers.length,
+      streak: appStore.streak,
+      vocabCount,
+      grammarCount,
     });
     if (newly.length > 0) {
       showToast(`Lencana baru: ${newly[0].name} ${newly[0].icon}!`, '🏆');

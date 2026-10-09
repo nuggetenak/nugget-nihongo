@@ -59,6 +59,30 @@ export const GODAN_EXCEPTIONS = new Set<string>([
   '参る', 'まいる',
   '下さる', 'くださる',
   'いらっしゃる',
+  '減る', 'へる',
+  '滑る', 'すべる',
+  '散る', 'ちる',
+  '焦る', 'あせる',
+  '遮る', 'さえぎる',
+  '喋る', 'しゃべる',
+]);
+
+export const COMMON_ICHIDAN_VERBS = new Set<string>([
+  '見る', 'みる',
+  '着る', 'きる',
+  '寝る', 'ねる',
+  '出る', 'でる',
+  '似る', 'にる',
+  '居る', 'いる',
+  '得る', 'える',
+  '経る', 'へる',
+  '診る',
+  '観る',
+  '視る',
+  '射る',
+  '煮る',
+  '干る',
+  '鋳る',
 ]);
 
 export const ROMAJI_MAP: Record<string, string> = {
@@ -113,7 +137,7 @@ export function romajiToKana(str: string): string {
   return result;
 }
 
-export function inferType(w: string): VerbType | null {
+export function inferType(w: string, reading?: string): VerbType | null {
   if (w === 'する' || w.endsWith('する')) return 'suru';
   if (w === '来る' || w === 'くる') return 'kuru';
   if (w === 'だ' || w === 'です') return 'copula';
@@ -124,11 +148,20 @@ export function inferType(w: string): VerbType | null {
 
   if (w.endsWith('る')) {
     if (GODAN_EXCEPTIONS.has(w)) return 'godan';
+    if (COMMON_ICHIDAN_VERBS.has(w)) return 'ichidan';
+
     const preRu = w.slice(0, -1);
     const lastChar = preRu.slice(-1);
     const iRow = ['き','に','み','い','り','ぎ','じ','び','ぴ','ち','ひ','し','ゐ'];
     const eRow = ['け','ね','め','え','れ','げ','ぜ','べ','ぺ','て','へ','せ','ゑ','で'];
     if (iRow.includes(lastChar) || eRow.includes(lastChar)) return 'ichidan';
+
+    if (reading && reading.endsWith('る')) {
+      const rPreRu = reading.slice(0, -1);
+      const rLastChar = rPreRu.slice(-1);
+      if (iRow.includes(rLastChar) || eRow.includes(rLastChar)) return 'ichidan';
+    }
+
     return 'godan';
   }
 
@@ -137,11 +170,15 @@ export function inferType(w: string): VerbType | null {
   return null;
 }
 
-export function normalize(word: string, hintType?: VerbType): { dict: string; type: VerbType | null } | null {
+export function normalize(
+  word: string,
+  hintType?: VerbType,
+  reading?: string
+): { dict: string; type: VerbType | null } | null {
   if (!word) return null;
   let w = word.trim();
   if (/^[a-zA-Z]+$/.test(w)) w = romajiToKana(w);
-  return { dict: w, type: hintType || inferType(w) };
+  return { dict: w, type: hintType || inferType(w, reading) };
 }
 
 export const FORMS: Record<string, FormMeta> = {

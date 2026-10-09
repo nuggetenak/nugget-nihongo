@@ -4,6 +4,7 @@
 // ══════════════════════════════════════════════════════════════════
 
 import { create } from 'zustand';
+import { useGamificationStore } from '../gamification/gamificationStore';
 
 export interface PlantItem {
   id: string;
@@ -34,6 +35,7 @@ export interface GardenStoreState {
   addWaterDrop: (count?: number) => void;
   waterPlant: (plantId: string) => boolean;
   waterAll: () => number;
+  seedPlant: (kanji: string, reading: string, meaning: string, level: 'n5' | 'n4' | 'n3' | 'n2' | 'n1') => boolean;
 }
 
 function loadSavedPlants(): PlantItem[] {
@@ -99,6 +101,10 @@ export const useGardenStore = create<GardenStoreState>((set, get) => ({
       } catch {}
     }
 
+    if (newStage >= 4) {
+      useGamificationStore.getState().checkAndAwardBadges({ gardenBloomed: true });
+    }
+
     return true;
   },
 
@@ -131,6 +137,36 @@ export const useGardenStore = create<GardenStoreState>((set, get) => ({
       } catch {}
     }
 
+    if (updatedPlants.some((p) => p.stage >= 4)) {
+      useGamificationStore.getState().checkAndAwardBadges({ gardenBloomed: true });
+    }
+
     return dropsUsed;
+  },
+
+  seedPlant: (kanji, reading, meaning, level) => {
+    const { plants } = get();
+    if (plants.some((p) => p.kanji === kanji)) return false;
+
+    const newPlant: PlantItem = {
+      id: `p-${Date.now()}-${kanji}`,
+      kanji,
+      reading,
+      meaning,
+      level,
+      stage: 0,
+      waterCount: 0,
+      maxWater: 5,
+    };
+
+    const updated = [newPlant, ...plants];
+    set({ plants: updated });
+
+    if (typeof window !== 'undefined') {
+      try {
+        localStorage.setItem('nn_garden_plants', JSON.stringify(updated));
+      } catch {}
+    }
+    return true;
   },
 }));

@@ -24,7 +24,7 @@ import { SettingsPage } from './pages/SettingsPage';
 import { AboutPage } from './pages/AboutPage';
 
 export const App: React.FC = () => {
-  const { activeTab, setActiveTab } = useAppStore();
+  const { activeTab, setActiveTab, checkStreakStatus } = useAppStore();
   const { initPwa } = usePwaStore();
   const { initAuth } = useAuthStore();
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -32,11 +32,12 @@ export const App: React.FC = () => {
   const [selectedModalItem, setSelectedModalItem] = useState<(NormalizedVocab | NormalizedGrammar) | null>(null);
   const [modalItemType, setModalItemType] = useState<'vocab' | 'grammar'>('vocab');
 
-  // Initialize PWA Service Worker & Supabase Auth session on mount
+  // Initialize PWA Service Worker, Supabase Auth session, & Streak Check on mount
   useEffect(() => {
     initPwa();
     initAuth();
-  }, [initPwa, initAuth]);
+    checkStreakStatus();
+  }, [initPwa, initAuth, checkStreakStatus]);
 
   // Listen to browser forward/back hash changes
   useEffect(() => {

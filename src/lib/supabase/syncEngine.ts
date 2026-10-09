@@ -106,56 +106,64 @@ export const syncEngine = {
   },
 
   async pushCards(userId: string): Promise<void> {
-    const localCards = useAppStore.getState().cards;
-    const entries = Object.entries(localCards);
-    if (entries.length === 0) return;
+    try {
+      const localCards = useAppStore.getState().cards;
+      const entries = Object.entries(localCards);
+      if (entries.length === 0) return;
 
-    // Batch upsert cards in chunks of 50
-    const CHUNK_SIZE = 50;
-    for (let i = 0; i < entries.length; i += CHUNK_SIZE) {
-      const chunk = entries.slice(i, i + CHUNK_SIZE);
-      const rows = chunk.map(([id, entry]) => {
-        const c = entry.card || ({} as Partial<FSRSCard>);
-        return {
-          user_id: userId,
-          item_type: entry.source || (id.startsWith('vg-') ? 'vocab' : 'grammar'),
-          item_id: id,
-          stability: c.stability || 0,
-          difficulty: c.difficulty || 0,
-          elapsed_days: c.elapsed_days || 0,
-          scheduled_days: c.scheduled_days || 0,
-          reps: c.reps || 0,
-          lapses: c.lapses || 0,
-          state: c.state || 0,
-          due: c.due || new Date().toISOString(),
-          last_review: c.last_review || new Date().toISOString(),
-        };
-      });
+      // Batch upsert cards in chunks of 50
+      const CHUNK_SIZE = 50;
+      for (let i = 0; i < entries.length; i += CHUNK_SIZE) {
+        const chunk = entries.slice(i, i + CHUNK_SIZE);
+        const rows = chunk.map(([id, entry]) => {
+          const c = entry.card || ({} as Partial<FSRSCard>);
+          return {
+            user_id: userId,
+            item_type: entry.source || (id.startsWith('vg-') ? 'vocab' : 'grammar'),
+            item_id: id,
+            stability: c.stability || 0,
+            difficulty: c.difficulty || 0,
+            elapsed_days: c.elapsed_days || 0,
+            scheduled_days: c.scheduled_days || 0,
+            reps: c.reps || 0,
+            lapses: c.lapses || 0,
+            state: c.state || 0,
+            due: c.due || new Date().toISOString(),
+            last_review: c.last_review || new Date().toISOString(),
+          };
+        });
 
-      await supabase.from('srs_cards').upsert(rows, {
-        onConflict: 'user_id,item_type,item_id',
-      });
+        await supabase.from('srs_cards').upsert(rows, {
+          onConflict: 'user_id,item_type,item_id',
+        });
+      }
+    } catch (e) {
+      console.warn('[syncEngine] pushCards failed:', e);
     }
   },
 
   async pushProfileAndGamification(userId: string): Promise<void> {
-    const appState = useAppStore.getState();
-    const gardenState = useGardenStore.getState();
-    const gamificationState = useGamificationStore.getState();
+    try {
+      const appState = useAppStore.getState();
+      const gardenState = useGardenStore.getState();
+      const gamificationState = useGamificationStore.getState();
 
-    const learningDna = {
-      garden_plants: gardenState.plants,
-      garden_drops: gardenState.waterDrops,
-      heatmap: gamificationState.heatmap,
-      last_synced: new Date().toISOString(),
-    };
+      const learningDna = {
+        garden_plants: gardenState.plants,
+        garden_drops: gardenState.waterDrops,
+        heatmap: gamificationState.heatmap,
+        last_synced: new Date().toISOString(),
+      };
 
-    await supabase.from('profiles').upsert({
-      id: userId,
-      xp: appState.xp,
-      streak_days: appState.streak,
-      learning_dna: learningDna,
-      updated_at: new Date().toISOString(),
-    });
+      await supabase.from('profiles').upsert({
+        id: userId,
+        xp: appState.xp,
+        streak_days: appState.streak,
+        learning_dna: learningDna,
+        updated_at: new Date().toISOString(),
+      });
+    } catch (e) {
+      console.warn('[syncEngine] pushProfileAndGamification failed:', e);
+    }
   },
 };
