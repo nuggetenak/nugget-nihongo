@@ -1,13 +1,13 @@
 # NUGGET NIHONGO — MASTER BIBLIOGRAPHY
-**Version:** FINAL (v21 — Prometric CBT Exam Ecosystem, 17 JAIM Divisions, Business Career Kentei, and Empirical Fieldwork Expansion) | **Date:** 20 April 2026 | **Curated by:** SLA Research Directorate & Curriculum Consortium
+**Version:** FINAL (v22 — SSW Cluster III Primary Production: Agriculture GAP, Fishery & Aquaculture, Timber & Wood Expansion) | **Date:** 20 April 2026 | **Curated by:** SLA Research Directorate & Curriculum Consortium
 **Format:** APA 7th Edition
 
 ## STATISTICS
 
 | Metric | Value |
 |---|---|
-| **Total unique entries** | **765** |
-| *Audited canonical citations* | *684 standard + ~81 foundational/monograph entries* |
+| **Total unique entries** | **768** |
+| *Audited canonical citations* | *687 standard + ~81 foundational/monograph entries* |
 | Entries with verified DOI | 369 (100% accounted for) |
 | Entries with ISBN (books) | ~122 |
 | DOI verification pending | 0 (All legacy items verified or cataloged) |
@@ -16,7 +16,7 @@
 | ✅ DUP-04 resolved | ER-05 retired; canonical = BC-08 (Hu & Nation 2000) |
 | ✅ DUP-05 resolved | ER-10 retired; canonical = VD-05 (Webb 2007) |
 | ✅ EA-22–EA-33 expanded | EA-22 Maarif (2023); EA-23–EA-28 empirical expansions; EA-29 Nurjaman et al. (2025); EA-30 Lestari et al. (2022); EA-31 Wahyuningtias et al. (2018) sentence-final particles; EA-32 Gusti (2022) spoken conditionals; EA-33 Widodo & Sutedi (2020) conditional error analysis added |
-| ✅ VS-29–VS-46 expanded | VS-29–VS-35 vocational expansions; VS-36 Sakamoto et al. (2014); VS-37 Doizaki et al. (2015); VS-38 Okuda (2018); VS-39 JNIOSH (2020); VS-40 JAIM (2024) 17 manufacturing divisions; VS-41 JAC (2024) 3 construction divisions; VS-42 Wijayanti & Septipani (2025) food service needs; VS-43 OTAFF (2024) food service & manufacture test standard; VS-44 MHLW & MAFF (2021) HACCP manual; VS-45 MLIT (2024) automobile transport standard; VS-46 NASVA (2023) roll-call alcohol inspection manual |
+| ✅ VS-29–VS-49 expanded | VS-29–VS-35 vocational expansions; VS-36 Sakamoto et al. (2014); VS-37 Doizaki et al. (2015); VS-38 Okuda (2018); VS-39 JNIOSH (2020); VS-40 JAIM (2024) 17 manufacturing divisions; VS-41 JAC (2024) 3 construction divisions; VS-42 Wijayanti & Septipani (2025) food service needs; VS-43 OTAFF (2024) food service & manufacture test standard; VS-44 MHLW & MAFF (2021) HACCP manual; VS-45 MLIT (2024) automobile transport standard; VS-46 NASVA (2023) roll-call alcohol inspection manual; VS-47 National Chamber of Agriculture (2024) agriculture & livestock test standard; VS-48 Fisheries Agency & Japan Fisheries Association (2024) fishery & aquaculture standard; VS-49 JAWIC & Forestry Agency (2024) timber & wood manufacturing standard |
 | ✅ OD-20 formally assigned | Matsunaga (1999) 2.3× exposure study canonicalized with DOI `10.20649/00000278` |
 | ✅ VD-05 & VD-12 stubs filled | Webb (2007) and Wray (2002) canonicalized with verified DOIs |
 | ✅ CV-05 conditional retired | Unverifiable record removed per verification protocol |
@@ -1648,6 +1648,12 @@ Ministry of Health, Labour and Welfare (MHLW), & Ministry of Agriculture, Forest
 Ministry of Land, Infrastructure, Transport and Tourism (MLIT). (2024). *Operational guidelines and safety management standards for specified skilled foreign workers in automobile transport business: Truck, taxi, and bus operations* (Jidōsha Unsōgyō Bun'ya Tokutei Ginō Seido Un'yō Hōshin). Road Transport Bureau, MLIT. > Section: §15 / Automobile Transport. Statutory operational standard regulating Specified Skilled Worker entry in truck freight, passenger taxi, and route bus sectors. [VS-45]
 
 National Agency for Automobile Safety and Victims' Aid (NASVA). (2023). *Standard manual for roll-call inspection, breathalyzer alcohol testing, and safe driving management in commercial motor vehicles* (Jidōsha Unkō Kanri Tenko Manyuaru). NASVA, Japan. > Section: §15 / Transport Safety & Tenko. Official technical standard defining zero-tolerance breathalyzer roll-call inspection (0.000 mg/L), pre-trip 10-point vehicle inspection, and accident reporting. [VS-46]
+
+National Chamber of Agriculture (全国農業会議所). (2024). *Test implementation guidelines and technical evaluation standards for specified skilled worker evaluation test in agriculture: Cultivation and livestock farming divisions* (Nōgyō Tokutei Ginō Sokutei Shiken Jisshi Yōryō oyobi Gijutsu Hyōkan Kijun). Ministry of Agriculture, Forestry and Fisheries (MAFF) & National Chamber of Agriculture. > Section: §15 / Agriculture & Livestock. Official statutory test specification defining cultivation and livestock operational tasks, JGAP compliance, chemical dilution safety, and tractor rollover mitigation. [VS-47]
+
+Fisheries Agency (水産庁), & Japan Fisheries Association (大日本水産会). (2024). *Operational standards and safety examination guidelines for specified skilled workers in the fishery and aquaculture industry* (Gyogyō / Suisan Yōshokugyō Tokutei Ginō Sokutei Shiken Jisshi Kijun). Ministry of Agriculture, Forestry and Fisheries (MAFF) & Japan Fisheries Association. > Section: §15 / Fishery & Aquaculture. Statutory examination framework governing marine boat fishing (purse seine/longline hauler winches) and aquaculture (cage feeding, oyster culture, dissolved oxygen monitoring, and red tide emergency management). [VS-48]
+
+Japan Wood Industry Information Center (JAWIC / 日本木材総合情報センター), & Forestry Agency (林野庁). (2024). *Implementation guidelines and safety evaluation standards for the specified skilled worker evaluation test in timber and wood manufacturing* (Mokuzai Sangyō Tokutei Ginō Sokutei Shiken Jisshi Yōryō). Forestry Agency, Ministry of Agriculture, Forestry and Fisheries (MAFF) & JAWIC. > Section: §15 / Timber & Wood Industry. Official technical test standard covering primary bandsaw breakdown, lumber kiln drying, plywood/glulam press lamination, and combustible wood dust deflagration safety protocols. [VS-49]
 
 ### SUPPLEMENT — §8 PWA / §5 Contrastive / §CA (extracted from prose)
 

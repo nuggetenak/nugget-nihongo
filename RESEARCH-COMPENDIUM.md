@@ -1,7 +1,7 @@
 # NUGGET NIHONGO — EMPIRICAL SLA RESEARCH COMPENDIUM
 ## Master Academic Evidence Base & Curriculum Architecture Guide
-**Corpus Version:** v28 (Klaster IV Consumer & Logistics: Sektor 14 HACCP, Sektor 15 Omotenashi, Sektor 17 Transportasi Truk/Taksi/Bus: 539+ Verified DOIs, 100% Accounted For)  
-**Total Unique Citations:** 799+  
+**Corpus Version:** v29 (Klaster III Primary Production: Sektor 10 Pertanian GAP, Sektor 11 Perikanan/Akuakultur, Sektor 13 Industri Kayu: 539+ Verified DOIs, 100% Accounted For)  
+**Total Unique Citations:** 802+  
 **Verified DOIs / Canonical Records:** 539+ Verified DOIs | 100% Accounted For (Zero pending flags across all 24 section files)  
 **Target Domain:** Indonesian Adult Learners of Japanese as a Foreign Language (SSW / Tokutei Ginou & General Academic)
 
@@ -9,7 +9,7 @@
 
 ## 1. EXECUTIVE SUMMARY & REPOSITORY PURPOSE
 
-This repository contains the exhaustive Second Language Acquisition (SLA), psycholinguistic, and cognitive science research compendium underpinning the original curriculum of **Nugget Nihongo**. Designed specifically for Indonesian L1 speakers acquiring Japanese, the platform synthesizes over 799 peer-reviewed studies across 16 core thematic domains, level-ladder specifications, and algorithmic design matrices.
+This repository contains the exhaustive Second Language Acquisition (SLA), psycholinguistic, and cognitive science research compendium underpinning the original curriculum of **Nugget Nihongo**. Designed specifically for Indonesian L1 speakers acquiring Japanese, the platform synthesizes over 802 peer-reviewed studies across 16 core thematic domains, level-ladder specifications, and algorithmic design matrices.
 
 All findings are operationalized into reproducible curriculum parameters:
 1. **Contrastive Linguistics & Error Analysis:** Direct empirical mapping of Indonesian ↔ Japanese grammatical, lexical, and phonological interference points.
@@ -56,7 +56,7 @@ nugget-nihongo-research/
 │   │   │
 │   │   ├── vocational/                        ← Workplace SLA & Discourse Corpus (Jalur B)
 │   │   │   ├── EPA-KAIGO-SSW-WORKPLACE-CORPUS-v1.md ← 42-item pain onomatopoeia matrix, 4-tier Rousai escalation, eldercare speech shifts
-│   │   │   ├── ALL-SECTOR-SSW-TAXONOMY-CORPUS-v1.md ← Exhaustive 18-sector Tokutei Ginou master taxonomy, JAIM 17 divisions, JAC 3 construction divisions, Klaster IV (HACCP, Omotenashi, Transportasi), and 12 K3 gemba disaster simulations
+│   │   │   ├── ALL-SECTOR-SSW-TAXONOMY-CORPUS-v1.md ← Exhaustive 18-sector Tokutei Ginou master taxonomy, JAIM 17 divisions, JAC 3 construction divisions, Klaster III (Pertanian GAP, Perikanan, Industri Kayu), Klaster IV (HACCP, Omotenashi, Transportasi), and 21 K3 gemba disaster simulations
 │   │   │   └── PROMETRIC-SSW-EXAM-SPECIFICATION-CORPUS-v1.md ← Prometric CBT test matrix, 17 JAIM sub-divisions, JAVADA Business Career Kentei, & non-Prometric bodies
 │   │   │
 │   │   └── synthesis/                         ← Pedagogical synthesis specifications
@@ -64,7 +64,7 @@ nugget-nihongo-research/
 │   │       └── SECTION18-SYNTHESIS-v1.md      ← Unified pedagogical model & cross-strand architecture
 │   │
 │   └── bibliography/
-│       ├── MASTER-BIBLIOGRAPHY-FINAL.md       ← Canonical bibliographic registry (799+ unique entries, v28)
+│       ├── MASTER-BIBLIOGRAPHY-FINAL.md       ← Canonical bibliographic registry (802+ unique entries, v29)
 │       └── DOI-VERIFICATION-TRACKER.md        ← CrossRef & publisher audit registry (100% accounted for)
 │
 ├── blueprint/
@@ -136,6 +136,9 @@ The previous literature gap marker `EA-22` has been replaced with rigorous, peer
 - **`[VS-44]` MHLW & MAFF (2021).** *HACCP institutionalization guidelines and hygienic control manuals for food processing facilities and restaurants.* Government of Japan. Statutory hygiene framework defining the 7 HACCP principles, CCP-1 core heating limits, CCP-2 metal detection, and Norovirus outbreak protocols.
 - **`[VS-45]` MLIT (2024).** *Operational guidelines and safety management standards for specified skilled foreign workers in automobile transport business: Truck, taxi, and bus operations.* Road Transport Bureau, MLIT. Statutory operational standard regulating Specified Skilled Worker entry in truck freight, passenger taxi, and route bus sectors.
 - **`[VS-46]` NASVA (2023).** *Standard manual for roll-call inspection, breathalyzer alcohol testing, and safe driving management in commercial motor vehicles.* NASVA, Japan. Official technical standard defining zero-tolerance breathalyzer roll-call inspection (0.000 mg/L), pre-trip 10-point vehicle inspection, and accident reporting.
+- **`[VS-47]` National Chamber of Agriculture (2024).** *Test implementation guidelines and technical evaluation standards for specified skilled worker evaluation test in agriculture: Cultivation and livestock farming divisions.* MAFF & National Chamber of Agriculture. Statutory test specification defining cultivation and livestock operational tasks, JGAP compliance, chemical dilution safety, and tractor rollover mitigation.
+- **`[VS-48]` Fisheries Agency & Japan Fisheries Association (2024).** *Operational standards and safety examination guidelines for specified skilled workers in the fishery and aquaculture industry.* MAFF & Dai Nippon Suisankai. Statutory examination framework governing marine boat fishing (purse seine/longline hauler winches) and aquaculture (cage feeding, oyster culture, dissolved oxygen monitoring, and red tide emergency management).
+- **`[VS-49]` JAWIC & Forestry Agency (2024).** *Implementation guidelines and safety evaluation standards for the specified skilled worker evaluation test in timber and wood manufacturing.* Forestry Agency, MAFF & JAWIC. Official technical test standard covering primary bandsaw breakdown, lumber kiln drying, plywood/glulam press lamination, and combustible wood dust deflagration safety protocols.
 
 #### 2. Canonical Assignment of Matsunaga (1999) `[OD-20]`
 Formally assigned canonical citation ID **`[OD-20]`**:
@@ -171,6 +174,7 @@ The synthesis phase has landed eight authoritative specifications bridging meta-
    - Exhaustive operational classification of all 18 official Tokutei Ginou sectors across 4 macro-clusters (Care, Industrial Manufacturing, Primary/Infrastructure, Consumer/Logistics).
    - METI/JAIM 17 Operational Divisions master matrix, 16 universal machine control panel (*sōsa-ban*) commands, 4-step *Shiteki Koshō* (pointing-and-calling) startup protocol, and high-noise gemba emergency directives.
    - MLIT/JAC 3 consolidated construction divisions (Doboku, Kenchiku, Lifelines/Setsubi) with Layer 2 technical lexis and 5 full-scale K3 disaster simulations (scaffold fall, trench cave-in, electrical shock, crane drop, confined space anoxia) with SBAR reporting.
+   - Klaster III Primary Production operational modules: Sektor 10 Agriculture (耕種・畜産 dual-division, JGAP/ASIAGAP, pesticide dilution, tractor rollover mitigation, mastitis CMT test, poultry HPAI biosecurity, 3 agricultural disaster simulations), Sektor 11 Fishery & Aquaculture (漁船漁業・水産養殖業 dual-division, purse seine/longline line haulers, Type-A lifejacket, oyster raft, dissolved oxygen monitoring, red tide hypoxia alert, 3 marine emergency simulations), and Sektor 13 Timber & Wood Industry (4 processing lines: bandsaw breakdown, kiln drying & JAS stress grading, glulam/plywood press lamination, wood dust cyclone explosion prevention, 3 sawmill emergency simulations), totaling 21 full-scale K3 gemba disaster simulations with acoustic shouting commands.
    - Klaster IV Consumer & Logistics operational modules: Sektor 14 Food & Beverage (7 manufacturing sub-lines, HACCP 7 Principles & CCP-1/2/3 parameters, 8 statutory allergens, 3 food safety gemba simulations), Sektor 15 Food Service/Restaurant (Front-of-house *Sekkyaku 7-daigo*, 4-stage *kureemu taiou* de-escalation, 4-color cutting boards, 3 restaurant incident simulations), and Sektor 17 Automobile Transport (Truck, Taxi, Bus segments, statutory Tenko zero-alcohol 0.000 mg/L limit, ratchet cargo lashing, 4 highway/road crisis simulations).
    - Details regulatory jurisdictions, Technical Skill Assessment (TSA) oral/practical workflows, emergency shouting registers (*kansei*), and 6-slot FSRS card archetype mappings.
 4. **Prometric SSW CBT Exam Specification Corpus (`PROMETRIC-SSW-EXAM-SPECIFICATION-CORPUS-v1.md`):**
@@ -203,4 +207,4 @@ The following platform architecture features are backed by empirical findings in
 
 ---
 
-*Curriculum Research Compendium v28 — Formally verified, de-polluted, and aligned with international SLA and psycholinguistic standards.*
+*Curriculum Research Compendium v29 — Formally verified, de-polluted, and aligned with international SLA and psycholinguistic standards.*

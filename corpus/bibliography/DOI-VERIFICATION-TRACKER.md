@@ -1,5 +1,5 @@
 # NUGGET NIHONGO — DOI VERIFICATION TRACKER
-**Audited & Verified:** 20 April 2026 | **Curated by:** Research Review Directorate | **Status:** ✅ Completed — 100% Accounted For (Corpus v28)
+**Audited & Verified:** 20 April 2026 | **Curated by:** Research Review Directorate | **Status:** ✅ Completed — 100% Accounted For (Corpus v29)
 **Total verified DOIs in corpus:** 539+ verified DOIs across all 15 sections & clusters (547 unique verified DOIs across markdown repository)
 
 ---
@@ -297,6 +297,9 @@ All 40 entries from `SECTION13-INDIVIDUAL-DIFFS.md` have been fully verified via
 | VS-44 | MHLW & MAFF (2021) HACCP Implementation Manual | Statutory Guidelines, MHLW & MAFF | Official statutory hygiene manual | ❌ UNAVAILABLE (Official statutory standard) |
 | VS-45 | MLIT (2024) Automobile Transport SSW Operational Policy | Statutory Operational Standard, MLIT Japan | Official statutory transport standard | ❌ UNAVAILABLE (Official statutory standard) |
 | VS-46 | NASVA (2023) Commercial Driver Tenko & Safety Manual | Technical Manual, NASVA Japan | Official technical safety manual | ❌ UNAVAILABLE (Official technical standard) |
+| VS-47 | National Chamber of Agriculture (2024) Agriculture & Livestock Test Guidelines | Statutory Test Standard, MAFF & National Chamber of Agriculture | Official statutory test standard | ❌ UNAVAILABLE (Official statutory standard) |
+| VS-48 | Fisheries Agency & Japan Fisheries Association (2024) Fishery & Aquaculture Standard | Statutory Operational Standard, MAFF & Dai Nippon Suisankai | Official statutory examination standard | ❌ UNAVAILABLE (Official statutory standard) |
+| VS-49 | JAWIC & Forestry Agency (2024) Timber & Wood Manufacturing Standard | Statutory Test Standard, Forestry Agency & JAWIC | Official statutory test standard | ❌ UNAVAILABLE (Official statutory standard) |
 
 
 

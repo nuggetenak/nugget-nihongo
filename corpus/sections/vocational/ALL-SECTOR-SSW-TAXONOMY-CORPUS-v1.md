@@ -546,51 +546,148 @@ Sesuai standar penanganan bencana industri darurat MHLW dan kurikulum keselamata
 
 ---
 
-### 4.2 Sector 10: Agriculture: Cultivation & Livestock (農業 - Nogyo)
-- **Supervising Authority:** Ministry of Agriculture, Forestry and Fisheries (MAFF / 農林水産省).
-- **Target Situation Analysis (TSA):** Cultivation (*Koushu*): Greenhouse micro-climate control, hydroponic fertilizer dosing, tractor plowing, pesticide spraying, harvesting and sorting. Livestock (*Chikusan*): Dairy cattle milking parlor sanitization, artificial insemination recordkeeping, swine farrowing care, broiler poultry house ventilation, and biosecurity disinfection against Avian Influenza/Swine Fever.
+### 4.2 Sector 10: Agriculture: Cultivation & Livestock (農業: 耕種・畜産 - Nōgyō)
+- **Supervising Authority:** Ministry of Agriculture, Forestry and Fisheries (MAFF / 農林水産省) & National Chamber of Agriculture (全国農業会議所).
+- **Statutory Standards & CBT Matrix:** National Chamber of Agriculture 2024 [VS-47]; MAFF JGAP / ASIAGAP Compliance Framework. Prometric CBT Test Specifications: `AGRI-CULT-SSW1` (耕種農業 - Cultivation: 60 min, vegetable/fruit/crop farming, pesticide safety, farm machinery) & `AGRI-LIVE-SSW1` (畜産農業 - Livestock: 60 min, dairy/beef cattle, swine, poultry biosecurity; 65% pass mark).
+- **Operational Dual-Division Architecture:**
+  1. **耕種農業 (*Kōshu Nōgyō* - Cultivation Agriculture):**
+     - Good Agricultural Practice (JGAP / ASIAGAP) compliance: Mandatory traceability records, harvest hygiene, chemical storage locks, and environmental runoff prevention.
+     - Facility Horticulture (*Shisetsu Engei* - Greenhouse/Polyhouse): Automated micro-climate control (temperature, humidity, CO2 enrichment), drip hydroponic fertigation (*kankyū*), and summer heatstroke (*netchūshō*) mitigation.
+     - Open Field Farming (*Roten Saibai*): Tractor hitching, rotary tilling, ridge forming (*une-tate*), mulching film laydown, seeders, transplanters, and combine harvesters.
+     - Chemical Pesticide Spraying (*Nōyaku Chōsei & Sanpu*): Strict dilution ratio calculations (500x–2000x), active ingredient verification, personal protective equipment (chemical vapor respirator, nitrile gloves, hooded suit), wind velocity checking (< 3 m/s), and Pre-Harvest Interval (PHI / *shūkaku mae nissū*) enforcement.
+  2. **畜産農業 (*Chikusan Nōgyō* - Livestock Agriculture):**
+     - Dairy Cattle (*Rakunō*): Milking parlor routines (herringbone/rotary/robotic), pre-milking iodine teat dipping, strip cup mastitis test (*nyūbōen kensa*), post-milking barrier dipping, bulk tank milk chilling (< 4°C), and CIP washdown.
+     - Beef Cattle (*Nikuyūgyō*): Calf nursing, automated TMR (Total Mixed Ration) feed wagons, barn manure scraping, hoof trimming (*sakutei*), and safe handling of 800 kg flighty bulls.
+     - Swine (*Yōton*): Breeding, artificial insemination, farrowing pen monitoring, neonatal piglet warmth management (30°C–32°C creep lamps), tail docking, iron injections, and all-in/all-out barn disinfection.
+     - Poultry (*Yōkei*): Broiler and layer shed management, automated egg conveyor belts, manure belt scrapers, tunnel ventilation fan maintenance, and strict biosecurity to prevent Highly Pathogenic Avian Influenza (HPAI).
 
 #### Atomized Technical Lexicon (Layer 2)
 | Kanji / Term | Kana Reading | Romaji | Technical Definition | Indonesian Gloss | High-Stakes Risk Category |
 |---|---|---|---|---|---|
-| 農薬散布 | のうやくさんぷ | *nouyaku sanpu* | Spraying chemical insecticides/fungicides | Penyemprotan pestisida kimia tanaman | Inhalation toxicity poisoning |
-| 収穫選別 | しゅうかくせんべつ | *shuukaku senbetsu* | Harvesting, grading, sorting produce by size/grade | Pemanenan dan sortasi kualitas hasil tani | Quality downgrading |
-| 搾乳機消毒 | さくにゅうきしょうどく | *sakunyuuki shoudoku* | Chemical sterilization of automated milking clusters | Sterilisasi mesin pemerah susu sapi | Bacterial milk spoilage |
-| 堆肥撹拌 | たいひかくはん | *taihi kakuhan* | Turning organic livestock manure compost piles | Pembalikan pupuk kompos kotoran ternak | Methane / Ammonia gas risk |
-| 消毒マット踏台 | しょうどくまっとふみだい | *shoudoku matto fumidai* | Biosecurity footbath sponge mat at poultry gate | Bak desinfeksi alas kaki biosekuriti | Epizootic outbreak spread |
-| 耕運機ロータリー | こううんきろーたりー | *kouunki rootarii* | Tractor rotary tiller cultivating blades | Pisau bajak putar traktor rotary | Entanglement amputation |
-| ビニールハウス換気 | びにーるはうすかんき | *biniiru hausu kanki* | Rolling greenhouse polyethylene film for airflow | Pengaturan ventilasi plastik greenhouse | Heat stress / Plant wither |
-| 仔豚分娩介助 | こぶたぶんべんかいじょ | *kobuta bunben kaijo* | Assisting sow farrowing and neonatal piglet warming | Pertolongan kelahiran anak babi | Piglet crushing mortality |
-| 蹄病削蹄 | ていびょうさくてい | *teibyou sakutei* | Cattle hoof trimming and claw lesion treatment | Pemotongan dan perawatan kuku sapi | Lameness / Milk yield loss |
-| 追肥施肥 | ついひせひ | *tsuihi sehi* | Side-dressing chemical fertilizer granules to rows | Pemupukan susulan tanaman sayur | Root fertilizer burn |
+| 農薬希釈調製 | のうやくきしゃくちょうせい | *nōyaku kishaku chōsei* | Precision pesticide dilution ratio calculation (e.g. 1000x) | Perhitungan rasio pengenceran pestisida kimia tanaman | Chemical overdose / crop burning |
+| 収穫前日数（PHI） | しゅうかくまえにっすう | *shūkakumae nissū* | Statutory pre-harvest waiting interval after spray | Batas hari minimal jeda penyemprotan sebelum panen | Chemical residue food law violation |
+| トラクター横転防止 | とらくたーおうてんぼうし | *toraktā ōten bōshi* | Preventing rollover on steep paddy field slope levees | Pencegahan traktor terguling di pematang sawah miring | Fatal crushing under tractor weight |
+| 搾乳機殺菌洗浄 | さくにゅうきさっきんせんじょう | *sakunyūki sakkin senjō* | Chemical disinfection & CIP acid/alkali wash of milking units | Sterilisasi mesin pemerah susu sapi anti-bakteri | Milk contamination / rejection |
+| 乳房炎検査（CMT） | にゅうぼうえんけんさ | *nyūbōen kensa* | California Mastitis Test reagent screening for somatic cells | Uji reagen deteksi radang ambing susu pada sapi perah | Bacterial milk spoilage |
+| 家畜防疫バイオセキュリティ | かちくぼうえきばいおせきゅりてぃ | *kachiku bōeki baiosekyuriti* | Vehicle wheel disinfection & boot bath biosecurity locks | Sterilisasi biosekuriti roda dan alas kaki gerbang ternak | Epizootic disease outbreak (HPAI/CSF) |
+| 耕運機ロータリー | こううんきろーたりー | *kōunki rōtarī* | Rotating tiller blades cultivated by power take-off (PTO) | Pisau putar rotary traktor pembajak tanah | High-torque limb entanglement |
+| ハウス熱中症対策 | はうすねっちゅうしょうたいさく | *hausu netchūshō taisaku* | Greenhouse hydration, salt tabs, & 40°C temperature pacing | Mitigasi sengatan panas ekstrem di dalam greenhouse | Fatal thermal collapse / heatstroke |
+| 仔豚分娩介助 | こぶたぶんべんかいじょ | *kobuta bunben kaijo* | Assisting sow labor, clearing airway mucus, warming runts | Pertolongan persalinan induk babi dan penghangatan anak | Crushing mortality / hypothermia |
+| 蹄病・削蹄 | ていびょう・さくてい | *teibyō / sakutei* | Hoof claw trimming and lesion spray for lame cattle | Pemotongan dan perawatan kuku sapi pencegah kepincangan | Cattle lameness / milk yield plunge |
+| 堆肥発酵撹拌 | たいひはっこうかくはん | *taihi hakkō kakuhan* | Turning aerobic manure compost piles to prevent methane/spores | Pembalikan tumpukan kompos kotoran ternak berkala | Toxic ammonia/methane inhalation |
+| 育苗・接ぎ木 | いくびょう・つぎき | *ikubyō / tsugiki* | Nursery grafting of scion seedlings onto disease-proof rootstock | Pembibitan dan penyambungan tunas ke batang bawah tahan layu | Grafting failure / wilt disease |
+| 追肥・肥培管理 | ついひ・ひばいかんり | *tsuihi / hibai kanri* | Liquid drip or granule side-dressing of nitrogen fertilizer | Pemupukan susulan dan manajemen nutrisi tanah | Salt accumulation / root rot |
+| 出荷規格選別 | しゅっかきかくせんべつ | *shukka kikaku senbetsu* | Optical grading of produce shape, blemish, and sugar Brix | Pemilahan mutu buah/sayur sesuai standar ukuran JAS/JA | Commercial downgrade penalty |
+| 剪定・摘果作業 | せんてい・てきかさぎょう | *sentei / tekika sagyō* | Pruning fruit branches and culling undersized fruitlets | Pemangkasan dahan dan penjarangan buah agar tumbuh besar | Yield quality deterioration |
 
-#### Biosecurity Directives
-- 「鶏舎に入る前に長靴消毒マットを踏め！踏み込みヨシ！」 (*Keisha ni hairu mae ni nagagutsu shoudoku matto o fume! Fumikomi yoshi!* — Step in boot disinfection mat before entering poultry coop!)
-- 「ロータリー停止前に手を近づけるな！」 (*Rootarii teishi mae ni te o chikazukeru na!* — Never approach rotary blades before full stop!)
+#### 3 Full-Scale Gemba Agriculture Incident Simulations (SBAR & 10-Second Action)
+
+##### Simulasi A: Tergulingnya Traktor di Lereng Tanggul Sawah (*Toraktā Norimen Yokotensho Jiko*)
+- **Konteks & Pemicu:** Saat mengendarai traktor rotary menaiki pematang sawah miring yang licin berlumpur, roda kiri belakang tergelincir masuk parit drainase (*mizoroji*), menyebabkan traktor miring 45 derajat dan nyaris terguling menimpa operator.
+- **Aksi 10 Detik Pertama & Teriakan Akustik Gemba:**
+  1. Jangan mencoba melompat ke sisi bawah lereng (akan tertimpa bobot 2 ton traktor).
+  2. Matikan tuas kopling PTO seketika, injak pedal rem ganda, dan matikan mesin (*enjin teishi*).
+  3. Tetap di kursi kemudi dengan sabuk pengaman terkunci di dalam rangka pelindung kabin ROPS (*Rollover Protective Structure*).
+  4. Teriakkan panggilan darurat:
+     「トラクター横転の危険！エンジン停止！近づくな！ジャッキ持ってこい！」 (*Toraktā ōten no kiken! Enjin teishi! Chikayoru na! Jakki motte koi!* — Tractor rollover hazard! Engine stopped! Stay back! Bring the heavy jack!)
+- **Panggilan Pelaporan SBAR ke Pemilik Lahan / Pengawas JA (*Nōen-chō*):**
+  - **S (Situation):** 「農園長の佐藤さん、圃場第3ブロックのワヤンです。トラクターが畦道で脱輪し、横転寸前で緊急停止しました。」
+  - **B (Background):** 「雨上がりの泥濘地で代かき作業中、法面の崩れにより左後輪が水路に落ちました。エンジンは停止済みです。」
+  - **A (Assessment):** 「自力での脱出は転倒の危険が高く不可能です。幸い怪我はなく、燃料タンクからの軽油漏れも目視では確認されていません。」
+  - **R (Recommendation):** 「大型ホイールローダーによる牽引救出と、安全確保のためのワイヤー固定班の手配をお願いいたします。」
+
+##### Simulasi B: Keracunan Pestisida Organofosfat Saat Penyemprotan Greenhouse (*Biniiru Hausu Nōyaku Chūdoku*)
+- **Konteks & Pemicu:** Saat menyemprotkan pestisida fungisida organofosfat di dalam greenhouse tomat tertutup pada suhu 36°C, masker respirator kimia pekerja terlepas kendor. Pekerja mendadak mengalami pusing hebat, pupil mata mengecil (*shukukō*), mual, dan pingsan di lorong tanaman.
+- **Aksi 10 Detik Pertama & Teriakan Akustik Gemba:**
+  1. Dilarang masuk sendirian tanpa memakai masker pelindung uap gas.
+  2. Teriakkan instruksi darurat:
+     「ハウス内で作業員が倒れた！農薬中毒だ！防護マスクを着けて救助班入れ！」 (*Hausu-nai de sagyōin ga taoreta! Nōyaku chūdoku da! Bōgo masuku o tsukete kyūjo-han ire!*)
+  3. Buka seluruh plastik ventilasi samping greenhouse (*kanki rōrā*) selebar-lebarnya.
+  4. Tarik korban ke luar ruangan terbuka berventilasi udara segar, tanggalkan pakaian yang tercemar pestisida, dan bilas wajah/mata dengan air bersih yang mengalir.
+- **Panggilan Pelaporan 119 via SBAR Model:**
+  - **S (Situation):** 「救急です。茨城県鉾田市、佐藤農園ビニールハウス前です。従業員のアグスが有機リン系農薬散布中に中毒で倒れました。」
+  - **B (Background):** 「約15分間、密閉ハウス内で散布作業を行っていました。農薬名は『スミチオン乳剤』1000倍希釈液です。」
+  - **A (Assessment):** 「意識混濁、嘔吐、縮瞳、呼吸抑制が見られます。皮膚からの吸収も疑われます。」
+  - **R (Recommendation):** 「救急車の手配と、有機リン中毒に対応するアトロピン等の解毒薬の準備をお願いします。農薬ボトルの安全データシート（SDS）を確保しています。」
+
+##### Simulasi C: Dugaan Wabah Flu Burung / HPAI di Kandang Ayam (*Keisha Kōbyōgentai Tori Infuruenza Utagai*)
+- **Konteks & Pemicu:** Saat melakukan inspeksi pagi di kandang broiler sektor B, pekerja menemukan lebih dari 80 ekor ayam mati mendadak dengan jengger membiru (*chianōze*) dan cairan lendir keluar dari paruh, mengindikasikan suspek Flu Burung Sangat Patogen (HPAI).
+- **Aksi 10 Detik Pertama & Protokol Biosekuriti Darurat:**
+  1. Hentikan seluruh perpindahan personel dan unggas ke luar kandang seketika.
+  2. Teriakkan panggilan karantina:
+     「鳥インフル疑い！鶏舎を完全封鎖！外に出るな！家畜保健衛生所に緊急通報！」 (*Tori-infuru utagai! Keisha o kanzen fūsa! Soto ni deru na! Kachiku Hoken Eiseijo ni kinkyū tsūhō!*)
+  3. Seluruh pakaian kerja, sepatu bot, dan peralatan harus disemprot disinfektan glutaraldehid di ruang airlock.
+  4. Pengemudi truk pakan dan truk telur dilarang keras memasuki atau meninggalkan gerbang peternakan.
+  5. Hubungi Kantor Pusat Kesehatan Ternak MAFF (*Kachiku Hoken Eiseijo*) dalam 30 menit pertama untuk pengambilan sampel usap trakea/kloaka resmi.
 
 ---
 
-### 4.3 Sector 11: Fishery & Aquaculture (漁業: 漁業・養殖業 - Gyogyou)
-- **Supervising Authority:** Ministry of Agriculture, Forestry and Fisheries (MAFF).
-- **Target Situation Analysis (TSA):** Marine purse seine netting, coastal longline hauling, winch capstan handling on rolling decks, live fish sorting, aquaculture cage feeding, oyster raft cultivation, and fish blast freezing.
+### 4.3 Sector 11: Fishery & Aquaculture (漁業: 漁業・養殖業 - Gyogyō)
+- **Supervising Authority:** Ministry of Agriculture, Forestry and Fisheries (MAFF / 水産庁) & Japan Fisheries Association (大日本水産会).
+- **Statutory Standards & CBT Matrix:** Fisheries Agency / Dai Nippon Suisankai 2024 [VS-48]. Prometric CBT Test Specifications: `FISH-MAR-SSW1` (漁船漁業 - Marine Boat Fishing: 60 min, net hauling, line hauler winches, marine safety, cold room staging) & `FISH-AQUA-SSW1` (水産養殖業 - Aquaculture: 60 min, cage feeding, raft oyster culture, fish health; 65% pass mark).
+- **Operational Dual-Division Architecture:**
+  1. **漁船漁業 (*Gyosen Gyogyō* - Marine Boat Fishing):**
+     - Pukat Cincin (*Maki-ami*): Pengoperasian skiff boat pembawa jala lingkar, penarikan tali kerut (*shime-nawa*), pompa hisap ikan hidup (*sakushon gyoponpu*), dan pengisian ruang palkah es basah (*hyōzō-shitsu*).
+     - Rawai Dasar / Hanyut (*Hae-nawa*): Peluncuran ribuan mata pancing berumpan cumi (*tō-nawa*), penarikan tali utama dengan drum hidrolik line-hauler (*makiage-ki*), dan pelepasan ikan dengan ganco tanpa merusak daging.
+     - Keselamatan Dek Kapal Berombak (*Yure-sen Sagyou*): Penggunaan sepatu bot anti-selip bergerigi, kewajiban rompi pelampung berlampu suar otomatis (*kūmeikugi*), dan pencegahan terseret tali tambang (*makikomi*).
+  2. **水産養殖業 (*Suisan Yōshokugyō* - Aquaculture):**
+     - Keramba Jaring Apung Laut (*Kaisō Ikesu*): Pembesaran ikan bawal Jepang (*buri*), kakap merah (*tai*), dan tuna sirip biru (*kuromaguro*); pemberian pakan pelet otomatis dengan kanon blower; penggantian jaring lumutan dengan derek kapal (*ami-kae*).
+     - Budidaya Rakit Tiram & Kerang Simping (*Kaki Ikada / Hotate*): Pengangkatan tali kolektor gantung dari kedalaman 10 meter, pencucian cangkang dengan semprotan air laut tekanan tinggi, dan pemisahan kotoran parasit.
+     - Manajemen Kualitas Air & Biosekuriti: Pengukuran harian suhu laut, salinitas, dan oksigen terlarut (*yōzon sanso* / DO); monitoring fenomena pasang merah beracun (*akashio*); pencegahan keracunan hidrogen sulfida di dasar laut.
 
 #### Atomized Technical Lexicon (Layer 2)
 | Kanji / Term | Kana Reading | Romaji | Technical Definition | Indonesian Gloss | High-Stakes Risk Category |
 |---|---|---|---|---|---|
-| 投網・揚網 | とうもう・ようもう | *toumou / youmou* | Casting net / hauling net over boat stern roller | Pelemparan dan penarikan jala kapal | Net winch entanglement |
-| 延縄巻揚機 | はえなわまきあげき | *haenawa makiageki* | Hydraulic longline line-hauler drum hauler | Mesin penarik tali pancing rawai | Hook puncture / Line snap |
-| 養殖生簀給餌 | ようしょくいけすきゅうじ | *youshoku ikesu kyuuji* | Feeding floating marine aquaculture net cages | Pemberian pakan keramba jaring apung | Man-overboard drowning |
-| 活魚選別 | かつぎょせんべつ | *katsugyo senbetsu* | Grading live fish into oxygenated circulating tanks | Sortasi ikan hidup ke tangki beroksigen | Fin puncture / Spoilage |
-| 救命胴衣常時着用 | きゅうめいどういじょうじちゃくよう | *kyuumeidoui jouji chakuyou* | Mandatory permanent lifejacket vest wear on deck | Kewajiban memakai pelampung di dek | Fatal drowning mitigation |
-| 船体傾斜注意 | せんたいけいしゃちゅうい | *sentai keisha chuui* | Vessel listing warning under heavy swell waves | Bahaya kemiringan oleng kapal nelayan | Capsizing hazard |
-| 急速凍結保管 | きゅうそくとうけつほかん | *kyuusoku touketsu hokan* | Ultra-low temperature blast freezing (-50°C hold) | Pembekuan cepat suhu super dingin | Frostbite entrapment |
-| 網補修・網仕立て | あみほしゅう・あみしたて | *ami hoshuu / ami shitate* | Mending torn nylon mesh with netting needle shuttle | Penambalan jaring ikan robek | Operational readiness |
-| カキ筏吊り上げ | かきいかだつりあげ | *kaki ikada tsuriage* | Lifting hanging oyster cultivation ropes by derrick | Pengangkatan tali gantung kerang tiram | Heavy load pendulum swing |
-| 潮汐潮流確認 | ちょうせきちょうりゅうかくにん | *chouseki chouryuu kakunin* | Navigational checking of tidal currents and drift | Pemantauan pasang surut dan arus laut | Grounding / Drift hazard |
+| 投網・揚網作業 | とうもう・ようもうさぎょう | *tōmō / yōmō sagyō* | Setting and hauling fishing nets over rolling hydraulic drum | Penurunan dan penarikan jala kapal di atas drum hidrolik | Net winch body entanglement |
+| 延縄巻揚機（ラインホーラー） | はえなわまきあげき | *haenawa makiageki* | High-speed hydraulic hauler retrieving longline hooks | Mesin penarik tali pancing rawai berkecepatan tinggi | High-speed hook flesh impalement |
+| 養殖生簀給餌ブロワー | ようしょくいけすきゅうじ | *yōshoku ikesu kyūji* | Automated pneumatic blower spraying fish feed pellets | Mesin blower penyemprot pelet pakan keramba jaring apung | Slipping from cage pontoon |
+| 救命胴衣（桜マーク） | きゅうめいどうい | *kyūmeidōi* | Ministry-approved Type-A lifejacket vest with whistle/light | Rompi pelampung standar resmi laut Jepang dengan peluit/lampu | Drowning upon accidental fall |
+| 活魚締め・血抜き | かつぎょじめ・ちぬき | *katsugyojime / chinuki* | Spinal cord severing (*ikejime*) & gill bleeding of live tuna | Teknik mematikan ikan hidup menusuk saraf dan buang darah | Deep knife puncture laceration |
+| 赤潮プランクトン警報 | あかしおぷらんくとん | *akashio purankuton* | Toxic dinoflagellate algal bloom depleting dissolved oxygen | Peringatan pasang merah plankton beracun perusak insang | Mass fish kill in farm cages |
+| 超低温冷凍庫保冷 | ちょうていおんれいとうこ | *chō-teion reitōko* | Ultra-low -50°C to -60°C blast freezer hold on fishing ship | Palkah beku suhu ultra-rendah -60°C pengawet tuna | Fatal cold entrapment / frostbite |
+| カキ筏吊り上げ作業 | かきいかだつりあげ | *kaki ikada tsuriage* | Hoisting heavy hanging oyster culture ropes with crane | Pengangkatan tali gantung tiram dengan derek hidrolik | Snapped hoisting wire rope whiplash |
+| 溶存酸素量（DO）測定 | ようぞんさんそりょう | *yōzon sansoryō* | Measuring dissolved oxygen levels in fish cages (> 5.0 mg/L) | Pengukuran kadar oksigen terlarut air keramba pemeliharaan | Hypoxic fish suffocation |
+| 船体傾斜・復原力 | せんたいけいしゃ・ふくげんりょく | *sentai keisha / fukugenryoku* | Vessel listing angle and hydrostatic righting stability | Sudut kemiringan kapal dan gaya apung penyeimbang ombak | Vessel capsizing disaster |
+| 錨鎖・揚錨機 | びょうさ・ようびょうき | *byōsa / yōbyōki* | Heavy anchor chain links and hydraulic anchor windlass | Rantai jangkar kapal dan mesin pengerek jangkar hidrolik | Crushing limbs in chain locker |
+| 網補修・仕立て | あみほしゅう・したて | *ami hoshū / shitate* | Mending torn nylon net meshes with netting shuttle needles | Penambalan jaring ikan robek dengan jarum jahit khusus | Loss of catch / snagged gear |
+| 潮汐・潮流把握 | ちょうせき・ちょうりゅう | *chōseki / chōryū* | Monitoring ebb/flood tides and rip currents for navigation | Pemantauan pasang surut dan arus laut deras navigasi kapal | Ship grounding / drifting away |
+| 凍結網巻き込み防止 | とうけつあみまきこみ | *tōketsu ami makikomi* | Preventing slip into ice-encrusted hauling machinery | Pencegahan terselip ke drum mesin akibat jala membeku | Heavy winter mechanical crush |
+| 低体温症応急手当 | ていたいおんしょう | *teitaion-shō* | Hypothermia first-aid warming protocol for ocean falls | Pertolongan pertama hipotermia korban jatuh ke laut dingin | Rapid cardiac arrest from freezing |
 
-#### High Seas Emergency Directives
-- 「落水者発生！面舵一杯！救命浮環投げろ！」 (*Rakusuisha hassei! Omo kaji ippai! Kyuumei fukan nagero!* — Man overboard! Hard to starboard! Throw lifebuoy ring!)
-- 「ウインチに巻き込まれるぞ！ロープから手を放せ！」 (*Uinchi ni makikomareru zo! Roopu kara te o hanase!* — Winch entanglement hazard! Release the rope!)
+#### 3 Full-Scale High-Seas & Marine Farm Emergency Incident Simulations
+
+##### Simulasi A: Jatuhnya Awak Kapal ke Laut Gelombang Dingin (*Kaisō Rakusuisha / Man Overboard*)
+- **Konteks & Pemicu:** Saat menarik jala pukat cincin di laut lepas pada malam hari bersuhu air 8°C dan gelombang tinggi 3 meter, seorang awak kapal terhantam hempasan tali tambang dan jatuh terlempar ke laut (*rakusuisha*).
+- **Aksi 10 Detik Pertama & Teriakan Akustik Gemba:**
+  1. Jangan pernah mengalihkan pandangan dari titik jatuhnya korban (*Watchman eye lock*).
+  2. Teriakkan panggilan darurat seketika ke arah anjungan:
+     「落水者発生！右舷から落ちた！面舵一杯！救命浮環投げろ！」 (*Rakusuisha hassei! Ugen kara ochita! Omo kaji ippai! Kyūmei fukan nagero!* — Man overboard! Fallen off starboard! Hard to starboard! Throw the lifebuoy ring!)
+  3. Lepaskan pelampung cincin berlampu otomatis (*kyūmei fukan*) ke arah korban.
+  4. Kapten membelokkan kemudi ke arah sisi korban jatuh (Manuver Williamson) untuk menjauhkan baling-baling kapal (*puropera*) dari tubuh korban.
+- **Panggilan Penyelamatan Radio Maritim & Penanganan Hipotermia:**
+  - Naikkan korban ke dek dengan jaring evakuasi (*rescue net*).
+  - Korban laut dingin mengalami hipotermia berat: tanggalkan baju basah seketika, bungkus dengan selimut pemanas termal, hangatkan bagian dada dan leher (dilarang menggosok tangan/kaki secara kasar karena memicu aritmia jantung mendadak).
+  - Hubungi Japan Coast Guard via **Kanal 16 VHF Darurat Maritim** atau telepon darurat laut **118**.
+
+##### Simulasi B: Terbelitnya Tangan di Drum Penarik Tali Pancing Rawai (*Haenawa Makiage-ki Makikomi Jiko*)
+- **Konteks & Pemicu:** Saat memandu tali pancing rawai berkecepatan tinggi ke drum line hauler, sarung tangan karet pekerja tersangkut kail pancing baja tajam, menarik tangan kanannya mendekati celah rol berputar bertekanan tinggi.
+- **Aksi 10 Detik Pertama & Teriakan Akustik Gemba:**
+  1. Tarik tuas kawat pengaman darurat hidrolik (*kinkyū teishi wāyā*) dengan tangan kiri atau tendang pedal penghenti.
+  2. Teriakkan instruksi pemutus tenaga:
+     「巻き込まれた！ウインチ止めろ！油圧クラッチを今すぐ切れ！」 (*Makikomareta! Uinchi tomero! Yuatsu kuracchi o ima sugu kire!* — Entangled! Stop the winch! Cut the hydraulic clutch right now!)
+  3. Putar tuas katup ke posisi mundur (*gyaku-kaiten*) secara manual untuk melonggarkan tekanan rol.
+- **Penanganan Medis & Mitigasi L1 Indonesia:**
+  - Pasang torniket atau perban tekan jika terjadi robekan pembuluh darah. Jangan mencabut paksa kail yang menancap di otot tanpa memotong ujung kaitnya (*gaeshi*).
+  - *Mitigasi L1 Indonesia:* Pekerja kerap ragu menggunakan tuas darurat kapal karena takut merusak peralatan mahal kapten. Tekankan bahwa hukum maritim Jepang mendahulukan keselamatan nyawa manusia di atas alat tangkap laut.
+
+##### Simulasi C: Penurunan Drastis Oksigen Terlarut / Fenomena Pasang Merah di Keramba (*Ikesu Akashio / Sanso Ketsubō Kinkyū Taiou*)
+- **Konteks & Pemicu:** Di teluk peternakan ikan tuna dan kakap, warna air laut mendadak berubah menjadi cokelat kemerahan pekat (*akashio*). Sensor oksigen terlarut berbunyi alarm menunjukkan penurunan drastis ke angka `2.8 mg/L` (batas kritis hidup ikan $\ge 5.0\,\text{mg/L}$), ikan-ikan di keramba mulai mengapung lemas ke permukaan air.
+- **Aksi 10 Detik Pertama & Tindakan Penyelamatan Farm:**
+  1. Hentikan seluruh pemberian pakan (*kyūji teishi*) seketika (pakan mempercepat deplesi oksigen).
+  2. Teriakkan komando darurat ke seluruh perahu kerja:
+     「赤潮警報！溶存酸素が落ちてる！給餌ストップ！酸素供給バルブ全開！」 (*Akashio keihō! Yōzon sanso ga ochiteru! Kyūji sutoppu! Sanso kyōkyū barubu zenkai!*)
+  3. Buka kran tabung oksigen murni dan pasang diffuser mikrobubble ke dasar keramba.
+  4. Untuk keramba jenis tenggelam (*chinshiki ikesu*), aktifkan winch hidrolik untuk menenggelamkan kantong jaring ke kedalaman 15 meter di bawah lapisan pasang merah.
 
 ---
 
@@ -618,26 +715,71 @@ Sesuai standar penanganan bencana industri darurat MHLW dan kurikulum keselamata
 
 ---
 
-### 4.5 Sector 13: Timber & Wood Industry (木材産業 - Mokuzai Sangyou)
-- **Supervising Authority:** Ministry of Agriculture, Forestry and Fisheries (MAFF) / METI.
-- **Target Situation Analysis (TSA):** Sawmill carriage sawing, circular resaw feed, lumber kiln drying (*kansou*), veneer peeling, structural laminated timber gluing (*shuuseizai*), and automated timber strength stress grading.
+### 4.5 Sector 13: Timber & Wood Industry (木材産業 - Mokuzai Sangyō)
+- **Supervising Authority:** Forestry Agency (林野庁 / MAFF) & Japan Wood Industry Information Center (JAWIC / 日本木材総合情報センター).
+- **Statutory Standards & CBT Matrix:** JAWIC & Forestry Agency 2024 [VS-49]. Prometric CBT Test Specifications: `TIMBER-MFG-SSW1` (木材産業 - Timber & Wood Manufacturing: 60 min, sawmill machinery, kiln drying, plywood/glulam lamination, combustible wood dust explosion safety; 65% pass mark).
+- **Operational 4 Processing Lines Architecture:**
+  1. **製材ライン (*Seizai Rain* - Primary Bandsaw Breakdown & Resawing):**
+     - Pengoperasian gergaji pita besar vertikal (*seizai obinokoban*), penjepitan batang kayu gelondongan pada kereta dorong (*dai-sha tōji kensō*), pembelahan papan dengan gergaji bundar (*marunoko ban*), pemasangan bilah pemisah (*wari-ba*) dan cakar anti-tendangan balik (*kikkubakku bōshi tsume*), serta pemilahan konveyor rol otomatis.
+  2. **人工乾燥・JAS強度選別ライン (*Jinkō Kansō / JAS Tsuyosa Senbetsu* - Kiln Drying & JAS Stress Grading):**
+     - Pengeringan ruang uap suhu tinggi (*kōon jōki kansō-ko*), pengujian kadar air kayu dengan tusuk jarum digital (*gansuiritsu sokutei* batas JAS $\le 15\%-20\%$), pengujian modulus elastisitas akustik / lentur (*shōon-shiki gangō-do sokutei*), dan inspeksi visual mata kayu mati (*shini-bushi*), retakan (*ware*), dan puntiran (*kuruhi*).
+  3. **集成材・合板製造ライン (*Shūseizai / Gōhan Seizō* - Glued Laminated Timber & Plywood Manufacturing):**
+     - Pengupasan kayu bulat menjadi lembaran venir tipis dengan mesin bubut putar (*rōtarī tanban sessaku*), pengeringan venir rol, pelapisan lem resin isosianat/resorsinol dengan mesin pelumut lem (*kōtā*), pengepresan hidrolik balok laminasi struktural (*atsu-kuseikei*), dan pengetaman presisi (*pureinā*).
+  4. **木くず集塵・防火防爆管理 (*Mokuzu Shūjin / Bōka Bōbaku Kanri* - Combustible Wood Dust Extraction & Explosion Prevention):**
+     - Pengoperasian sistem pembuangan serbuk kayu siklon filter kantong (*saikuron baggu firutā*), sistem deteksi percikan api inframerah dan penyemprotan air otomatis di saluran pipa (*hibana kenchi shōka sōchi*), penghentian listrik statis pada pipa konduktif (*seidenki jokkyo*), dan penegakan izin kerja panas (*kaki shiyō kyoka*).
 
 #### Atomized Technical Lexicon (Layer 2)
 | Kanji / Term | Kana Reading | Romaji | Technical Definition | Indonesian Gloss | High-Stakes Risk Category |
 |---|---|---|---|---|---|
-| 製材帯鋸盤 | せいざいおびのここばん | *seizai obinokoban* | Large industrial vertical band saw breakdown mill | Mesin gergaji pita kayu gelondongan | High-speed blade fracture |
-| キックバック防止 | きっくばっくぼうし | *kikkubakku boushi* | Anti-kickback pawls on table circular rip saws | Pencegahan tendangan balik kayu pada gergaji | Projectile wood impalement |
-| 人工乾燥機 | じんこうかんそうき | *jinkou kansouki* | High-temperature steam dehumidification lumber kiln | Kiln ruang pengeringan kayu buatan | Thermal scald / Fire hazard |
-| 含水率測定 | がんすいりつそくてい | *gansuiritsu sokutei* | Moisture content meter pin testing in dry lumber | Pengukuran kadar air kayu kering | Warping / Rot defect |
-| 集成材接着 | しゅうせいざいせっちゃく | *shuuseizai secchaku* | Hydraulic press bonding of glue-laminated beams | Pengepresan lem balok kayu laminasi | Adhesive cure failure |
-| 節・曲がり選別 | ふし・まがりせんべつ | *fushi / magari senbetsu* | Grading lumber knots, checks, cup, and grain bow | Sortasi mata kayu dan kelengkungan papan | Structural strength grading |
-| ロータリー単板切削 | ろーたりーたんばんせっさく | *rootarii tanban sessaku* | Rotary lathe peeling veneer sheets from heated log | Pengupasan kayu lapis tipis mesin bubut | Lathe knife pinch hazard |
-| 木くず集塵機 | もくずしゅうじんき | *mokuzu shuujinki* | Industrial cyclone wood dust extraction exhaust | Siklon penghisap debu serbuk gergaji | Combustible wood dust explosion |
-| 自動搬送コンベヤ | じどうはんそうこんべや | *jidou hansou konbeya* | Automated roller sorting conveyor line for planks | Konveyor pemilah papan otomatis | Roller nip point trap |
-| フォークリフト木材運搬 | ふぉーくりふともくざいうんぱん | *fookurifuto mokuzai unpan* | Handling long lumber bundles with counterbalance truck | Pengangkutan ikatan kayu dengan forklift | Tip-over / Load shift |
+| 製材帯鋸盤 | せいざいおびのここばん | *seizai obinokoban* | Large industrial vertical band saw breakdown mill | Mesin gergaji pita industri pembelah kayu gelondongan | High-speed blade fracture & projectile |
+| キックバック防止爪・割り刃 | きっくばっくぼうしつめ・わりば | *kikkubakku bōshi tsume / wariba* | Anti-kickback pawls and riving knife splitter on circular rip saws | Cakar anti-tendang balik dan bilah pemisah gergaji bundar | Projectile lumber chest impalement |
+| 木材人工乾燥機（高温蒸気） | もくざいじんこうかんそうき | *mokuzai jinkō kansōki* | High-temperature steam dehumidification lumber kiln chamber | Ruang kiln pengering kayu uap suhu tinggi | Thermal steam scald & heat trapping |
+| 含水率測定器 | がんすいりつそくていき | *gansuiritsu sokuteiki* | Digital electrical resistance pin-type moisture meter | Alat uji tusuk resistansi kadar air kayu kering | Structural warping & rot rejection |
+| 構造用集成材接着プレス | こうぞうようしゅうせいざいせっちゃく | *kōzōyō shūseizai secchaku puresu* | High-pressure hydraulic clamp press bonding glulam architectural beams | Mesin pres hidrolik rekat balok kayu laminasi struktural | Crushing under hydraulic press clamp |
+| ロータリー単板レース | ろーたりーたんばんれーす | *rōtarī tanban rēsu* | High-speed rotary veneer peeling lathe for plywood production | Mesin bubut kupas lembaran venir kayu lapis putar cepat | Rotating log snag & lathe knife laceration |
+| 木くず集塵サイクロン | もくずしゅうじんさいくろん | *mokuzu shūjin saikuron* | Industrial cyclone wood dust collector and baghouse filter | Siklon penghisap dan pemisah debu serbuk kayu industri | Deflagration dust explosion shockwave |
+| 火花検知・自動消火装置 | ひばなけんち・じどうしょうか | *hibana kenchi / jidō shōka* | Infrared spark detector & rapid deluge extinguishing system in dust ducts | Sensor inframerah percikan api dan pemadam air instan saluran pipa | Catastrophic ductwork fire spread |
+| 静電気アース接地確認 | せいでんきあーすせっち | *seidenki āsu secchi kakunin* | Grounding conductivity verification on dust pneumatic pipelines | Verifikasi pembumian arde anti-listrik statis pipa serbuk gergaji | Electrostatic discharge spark ignition |
+| 死に節・腐れ・割れ選別 | しにぶし・くされ・われせんべつ | *shinibushi / kusare / ware senbetsu* | Sorting dead knots, fungal rot decay, and drying checks/shakes | Sortasi mata kayu mati, pembusukan jamur, dan retakan kayu | Structural lumber failure in building |
+| 自動モルダー・プレーナー | じどうもるだー・ぷれーなー | *jidō morudā / purēnā* | Multi-head automated four-side thickness planer and moulder | Mesin ketam perata dan pembentuk profil empat sisi otomatis | High-speed cutterblock entanglement |
+| 送りローラー巻き込み防止 | おくりろーらーまきこみぼうし | *okuri rōrā makikomi bōshi* | Interlocked guard preventing hand nip into powered infeed rollers | Pelindung interlock pencegah terjepit rol penarik kayu masuk | Hand crushing & bone fracture |
+| フォークリフト木材荷崩れ | ふぉーくりふともくざいにくずれ | *fōkurifuto mokuzai nikuzure* | Preventing lumber bundle collapse during counterbalance forklift transport | Pencegahan robohnya tumpukan ikatan balok kayu forklift | Fatal crushing by falling lumber bundle |
+| JAS機械等級区分測定 | じゃすきかいとうきゅうくぶん | *JAS kikai tōkyū kubun sokutei* | Machine stress grading of structural timber modulus of elasticity ($E$) | Pengukuran modulus elastisitas kayu struktural standar JAS | Substandard structural component hazard |
+| 有機溶剤・接着剤換気 | ゆうきようざい・せっちゃくざいかんき | *yūki yōzai / secchakuzai kanki* | Local exhaust ventilation for isocyanate/formaldehyde resin fumes | Ventilasi hisap uap lem kimia isosianat dan formaldehida | Toxic chemical inhalation & occupational asthma |
 
-#### Sawmill Safety Commands
-- 「ノコ刃停止確認ヨシ！挽き割りに手を添えるな！」 (*Nokoba teishi kakunin yoshi! Hikiwari ni te o soeru na!* — Saw blade full stop verified OK! Do not guide split cut with bare hands!)
+#### 3 Full-Scale Sawmill & Timber Plant Emergency Simulations
+
+##### Simulasi A: Pecahnya Bilah Gergaji Pita Kecepatan Tinggi (*Obi-noko Ha-kire / High-Speed Bandsaw Blade Rupture*)
+- **Konteks & Pemicu:** Saat membelah kayu gelondongan kayu cedar (*sugi*) berdiameter 60 cm pada mesin gergaji pita berkecepatan tinggi, bilah gergaji pita baja mengalami kelelahan logam (*kinzoku hirō*) dan putus mendadak dengan suara dentuman keras, terpental di dalam sangkar pelindung baja (*kābā*).
+- **Aksi 10 Detik Pertama & Teriakan Akustik Gemba:**
+  1. Jangan mendekat atau membuka penutup sangkar pelindung sebelum putaran roda gergaji benar-benar berhenti total.
+  2. Tekan tombol pemutus darurat jamur merah (*kinkyū teishi botan*) seketika.
+  3. Teriakkan panggilan darurat ke seluruh stasiun sawmill:
+     「鋸刃断裂！帯鋸非常停止！近づくな！メイン電源ブレーカーを落とせ！」 (*Nokoba danretsu! Obinoko hijō teishi! Chikazuku na! Mein dengen burēkā o otose!* — Saw blade snapped! Emergency stop bandsaw! Stay back! Trip the main power breaker!)
+  4. Pasang gembok LOTO (*Lockout/Tagout*) pada sakelar daya utama sebelum membuka penutup baja untuk evaluasi penggantian bilah.
+
+##### Simulasi B: Tendangan Balik Kayu Balok Mesin Gergaji Bundar (*Marunoko Ban Kikkubakku / Kickback Wood Projectile*)
+- **Konteks & Pemicu:** Operator pemotong papan kayu pinus mendapati kayu terjepit di bagian belakang bilah gergaji bundar (*marunoko*). Cakar anti-kickback tidak berfungsi optimal karena terganjal serbuk kayu, menyebabkan balok kayu terlempar ke belakang dengan kecepatan tinggi seperti peluru menembus dada operator rekan kerja.
+- **Aksi 10 Detik Pertama & Teriakan Akustik Gemba:**
+  1. Tekan tombol pemutus darurat kaki atau lutut (*futto suicchi / ni-bā*).
+  2. Teriakkan peringatan dan panggilan P3K:
+     「キックバック発生！負傷者あり！丸鋸停止！担架とAEDを持ってこい！」 (*Kikkubakku hassei! Fushōsha ari! Marunoko teishi! Tanka to AED o motte koi!* — Kickback incident! Person injured! Stop circular saw! Bring stretcher and AED!)
+  3. Amankan korban: baringkan di permukaan rata, evaluasi trauma tumpul rongga dada (*kyōbu daboku*), longgarkan pakaian seragam kerja, periksa frekuensi napas dan denyut nadi karotis.
+  4. SBAR Laporan Medis 119:
+     - **S (Situation):** 「木材工場です。丸鋸盤のキックバックにより、胸部に角材が激突した作業員1名が倒れました。」
+     - **B (Background):** 「5分前の事故です。安全保護具は着用していましたが、角材が高速で胸骨部直撃しました。」
+     - **A (Assessment):** 「呼吸困難、意識混濁、胸部打撲痕、チアノーゼが見られます。肋骨骨折および外傷性気胸の疑いがあります。」
+     - **R (Recommendation):** 「救急車の緊急出動と胸部外傷専門の受け入れ病院の選定をお願いします。」
+
+##### Simulasi C: Kebakaran Debu Kayu di Pipa Saluran Silo Siklon (*Shūjinki Dakuto Seidenki Hakka / Combustible Dust Deflagration*)
+- **Konteks & Pemicu:** Di saluran pembuangan siklon serbuk kayu pengamplasan (*mokuzu shūjin dakuto*), gesekan aliran partikel debu kering menimbulkan listrik statis yang memicu percikan api. Sensor inframerah berbunyi alarm, asap hitam pekat mengepul dari sambungan ducting, mengancam deflagrasi ledakan debu kayu sekunder di seluruh silo pabrik.
+- **Aksi 10 Detik Pertama & Komando Pemadaman Silo:**
+  1. Aktifkan sistem pemadam air otomatis saluran (*hibana shōka delūji barubu*) secara manual jika belum terpicu otomatis.
+  2. Hentikan seluruh mesin pemotong dan mesin pengampelas yang terhubung ke siklon agar suplai debu terhenti seketika.
+  3. Teriakkan evakuasi ledakan debu:
+     「集塵ダクト火災！粉塵爆発の危険！全ライン停止！屋外へ即時避難！」 (*Shūjin dakuto kasai! Funjin bakuhatsu no kiken! Zen rain teishi! Okugai e sokuji hinan!* — Dust duct fire! Dust explosion risk! Stop all lines! Evacuate outdoors immediately!)
+  4. Jangan pernah memukul atau menggedor dinding saluran atau silo yang terbakar (dilarang mengaduk endapan debu menjadi awan debu tersuspensi yang memicu ledakan sekunder dahsyat).
+  5. Tutup katup isolasi ledakan (*bakuhatsu kakuri ben*) dan hubungi 119 pemadam kebakaran unit bahaya industri.
 
 ---
 
