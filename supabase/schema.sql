@@ -484,3 +484,50 @@ BEGIN
     END;
 END;
 $$;
+
+-- ── CONTENT REPORTS (In-App Feedback & Mistake Reporting) ────────
+-- Stores user feedback for unnatural sentences, typos, wrong translations, etc.
+CREATE TABLE IF NOT EXISTS public.content_reports (
+  id              BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  user_id         UUID REFERENCES auth.users(id) ON DELETE SET NULL,
+  category        TEXT NOT NULL CHECK (category IN (
+                    'unnatural_japanese',
+                    'wrong_translation',
+                    'wrong_answer',
+                    'typo',
+                    'audio_issue',
+                    'other'
+                  )),
+  item_id         TEXT,
+  item_type       TEXT,
+  target_text     TEXT,
+  description     TEXT,
+  suggestion      TEXT,
+  app_version     TEXT DEFAULT 'v16.0.0',
+  device_info     TEXT,
+  status          TEXT NOT NULL DEFAULT 'open' CHECK (status IN ('open', 'reviewed', 'resolved', 'dismissed')),
+  created_at      TIMESTAMPTZ DEFAULT NOW(),
+  updated_at      TIMESTAMPTZ DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS idx_reports_category ON public.content_reports(category);
+CREATE INDEX IF NOT EXISTS idx_reports_status   ON public.content_reports(status);
+CREATE INDEX IF NOT EXISTS idx_reports_created  ON public.content_reports(created_at DESC);
+
+ALTER TABLE public.content_reports ENABLE ROW LEVEL SECURITY;
+
+-- Allow anyone (authenticated or anonymous learners) to submit a report
+DROP POLICY IF EXISTS "content_reports_insert_all" ON public.content_reports;
+CREATE POLICY "content_reports_insert_all" ON public.content_reports
+  FOR INSERT WITH CHECK (true);
+
+-- Allow users to view their own submitted reports
+DROP POLICY IF EXISTS "content_reports_select_own" ON public.content_reports;
+CREATE POLICY "content_reports_select_own" ON public.content_reports
+  FOR SELECT USING (auth.uid() = user_id OR auth.role() = 'service_role' OR auth.jwt() ->> 'role' = 'admin');
+
+-- Service role / admins can update status
+DROP POLICY IF EXISTS "content_reports_admin_update" ON public.content_reports;
+CREATE POLICY "content_reports_admin_update" ON public.content_reports
+  FOR UPDATE USING (auth.role() = 'service_role' OR auth.jwt() ->> 'role' = 'admin');
+

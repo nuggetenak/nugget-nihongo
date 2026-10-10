@@ -204,10 +204,10 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({
           {user ? (
             <button
               onClick={() => {
-                openAuthModal();
+                setActiveTab('settings');
                 onClose();
               }}
-              className="w-full flex items-center justify-between p-2.5 rounded-xl bg-surface border border-accent/20 text-xs text-appText-bright"
+              className="w-full flex items-center justify-between p-2.5 rounded-xl bg-surface border border-accent/20 text-xs text-appText-bright hover:border-accent transition-colors"
             >
               <div className="flex items-center gap-2 min-w-0">
                 <div className="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 font-bold flex items-center justify-center text-xs shrink-0">

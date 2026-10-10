@@ -492,6 +492,8 @@ export const QuizPage: React.FC = () => {
           selectedLevel={selectedLevel}
           dueCount={dueCount}
           mistakesCount={mistakesList.length}
+          onSelectLevel={setSelectedLevel}
+          onSelectSessionCount={setSessionCount}
         />
       ) : (
         /* State 2: Active Focused Quiz Arena */

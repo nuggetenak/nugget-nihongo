@@ -67,8 +67,13 @@ export const KebunPage: React.FC = () => {
       </div>
 
       {/* Garden Stats & Water Drops Hero */}
-      <div className="bg-gradient-to-r from-emerald-950/40 via-surface to-surface border-2 border-emerald-500/30 rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl">
-        <div className="space-y-2 text-center sm:text-left">
+      <div className="relative overflow-hidden bg-gradient-to-r from-emerald-950/40 via-surface to-surface border-2 border-emerald-500/30 rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl">
+        {/* Subtle ambient Zen Garden art overlay */}
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-10 pointer-events-none"
+          style={{ backgroundImage: `url('/images/zen-study.jpg')` }}
+        />
+        <div className="relative z-10 space-y-2 text-center sm:text-left">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 text-xs font-bold">
             <Sprout className="w-4 h-4 text-emerald-400" />
             <span>{bloomingCount} dari {plants.length} Kanji Telah Mekar</span>

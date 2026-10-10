@@ -17,7 +17,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onOpenShortcuts, o
     streak, xp, selectedLevel, setSelectedLevel,
     showFurigana, setShowFurigana,
     showRomaji, setShowRomaji, showToast,
-    openFeatureGuide
+    openFeatureGuide, setActiveTab
   } = useAppStore();
   const { isInstalled, setShowInstallModal } = usePwaStore();
   const { user, syncStatus, openAuthModal, syncNow } = useAuthStore();
@@ -180,8 +180,8 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onOpenShortcuts, o
             </button>
 
             <button
-              onClick={() => openAuthModal()}
-              title={`Akun: ${user.email}`}
+              onClick={() => setActiveTab('settings')}
+              title={`Akun: ${user.email} (Buka Pengaturan Akun)`}
               className="flex items-center gap-1.5 p-1 sm:px-2.5 sm:py-1.5 rounded-full bg-surface-2 border border-accent/25 text-appText-bright text-xs font-semibold hover:border-accent transition-all max-w-[120px]"
             >
               <div className="w-6 h-6 rounded-full bg-amber-500/20 text-accent font-bold flex items-center justify-center text-[10px] shrink-0">

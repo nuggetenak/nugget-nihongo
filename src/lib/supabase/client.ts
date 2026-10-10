@@ -3,8 +3,8 @@ import { createClient, SupabaseClient } from '@supabase/supabase-js';
 export interface SupabaseConfig {
   url: string;
   anonKey: string;
+  isConfigured: boolean;
   isCustom: boolean;
-  isLegacyDeadUrl: boolean;
 }
 
 const DEFAULT_DEAD_URL = 'https://oxeuwkpgrtojjzhcboqz.supabase.co';
@@ -16,6 +16,20 @@ export function getStoredSupabaseConfig(): SupabaseConfig {
   let anonKey = '';
 
   if (typeof window !== 'undefined') {
+    // Check URL query parameters for one-time developer setup (e.g. ?sb_url=...&sb_key=...)
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const qUrl = params.get('sb_url') || params.get('supabase_url');
+      const qKey = params.get('sb_key') || params.get('supabase_anon_key');
+      if (qUrl && qKey) {
+        localStorage.setItem('nn_supabase_url', qUrl.trim());
+        localStorage.setItem('nn_supabase_anon_key', qKey.trim());
+        console.info('[supabase] Configured via URL params!');
+      }
+    } catch {
+      // Ignore URL parsing errors
+    }
+
     url = localStorage.getItem('nn_supabase_url') || '';
     anonKey = localStorage.getItem('nn_supabase_anon_key') || '';
   }
@@ -27,14 +41,14 @@ export function getStoredSupabaseConfig(): SupabaseConfig {
     anonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
   }
 
-  const isCustom = !!url && !url.includes('oxeuwkpgrtojjzhcboqz');
-  const isLegacyDeadUrl = !url || url.includes('oxeuwkpgrtojjzhcboqz');
+  const isConfigured = !!url && !url.includes('oxeuwkpgrtojjzhcboqz') && !url.includes('your-project-id');
+  const isCustom = isConfigured;
 
   return {
     url: (url || DEFAULT_DEAD_URL).trim().replace(/\/$/, ''),
     anonKey: (anonKey || DEFAULT_ANON_KEY).trim(),
+    isConfigured,
     isCustom,
-    isLegacyDeadUrl,
   };
 }
 
@@ -48,6 +62,10 @@ export let supabase: SupabaseClient = createClient(initialConfig.url, initialCon
     storage: typeof window !== 'undefined' ? window.localStorage : undefined,
   },
 });
+
+export function isSupabaseConfigured(): boolean {
+  return getStoredSupabaseConfig().isConfigured;
+}
 
 export function updateSupabaseConfig(newUrl: string, newAnonKey: string): SupabaseClient {
   const cleanUrl = newUrl.trim().replace(/\/$/, '');
@@ -77,13 +95,14 @@ export function updateSupabaseConfig(newUrl: string, newAnonKey: string): Supaba
 }
 
 export async function testSupabaseConnection(targetUrl?: string, targetKey?: string): Promise<{ ok: boolean; message: string }> {
-  const url = (targetUrl || getStoredSupabaseConfig().url).trim().replace(/\/$/, '');
-  const key = (targetKey || getStoredSupabaseConfig().anonKey).trim();
+  const cfg = getStoredSupabaseConfig();
+  const url = (targetUrl || cfg.url).trim().replace(/\/$/, '');
+  const key = (targetKey || cfg.anonKey).trim();
 
-  if (!url || url.includes('oxeuwkpgrtojjzhcboqz')) {
+  if (!url || url.includes('oxeuwkpgrtojjzhcboqz') || url.includes('your-project-id')) {
     return {
       ok: false,
-      message: 'Project URL belum diatur ke proyek Supabase aktifmu (URL saat ini tidak valid / NXDOMAIN).',
+      message: 'Server cloud Supabase belum dikonfigurasi.',
     };
   }
 
@@ -97,15 +116,23 @@ export async function testSupabaseConnection(targetUrl?: string, targetKey?: str
     });
 
     if (res.ok) {
-      return { ok: true, message: 'Koneksi ke Supabase berhasil! Proyek aktif.' };
+      return { ok: true, message: 'Koneksi ke Supabase aktif dan terhubung!' };
     }
-    return { ok: false, message: `Server Supabase merespons dengan kode ${res.status}. Periksa Anon Key.` };
+    return { ok: false, message: `Server Supabase merespons dengan kode HTTP ${res.status}.` };
   } catch (err: unknown) {
     const errStr = err instanceof Error ? err.message : String(err);
     return {
       ok: false,
-      message: `Gagal terhubung ke host: ${errStr}. Pastikan URL benar dan terhubung ke internet.`,
+      message: `Tidak dapat terhubung ke server cloud: ${errStr}`,
     };
   }
 }
 
+// Developer Console helper for direct browser setup without exposing forms to learners
+if (typeof window !== 'undefined') {
+  (window as any).configureSupabase = (url: string, anonKey: string) => {
+    updateSupabaseConfig(url, anonKey);
+    console.log('✅ Supabase updated! Reloading...');
+    window.location.reload();
+  };
+}
