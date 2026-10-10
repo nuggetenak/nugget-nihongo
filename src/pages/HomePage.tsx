@@ -38,6 +38,7 @@ export const HomePage: React.FC = () => {
     setActiveTab,
     openOnboarding,
     openFeatureGuide,
+    openKotowaza,
     cards,
     setSelectedLevel,
   } = useAppStore();
@@ -450,10 +451,10 @@ export const HomePage: React.FC = () => {
 
         {/* Kotowaza: Daily Authentic Japanese Proverb */}
         <div className="relative overflow-hidden bg-surface-2 border border-accent/20 rounded-3xl p-6 flex flex-col justify-between shadow-sm group">
-          {/* Subtle ambient Zen Garden art overlay */}
+          {/* Subtle ambient Zen Calligraphy art overlay */}
           <div
-            className="absolute inset-0 bg-cover bg-center opacity-10 group-hover:opacity-15 transition-opacity pointer-events-none"
-            style={{ backgroundImage: `url('/images/zen-study.jpg')` }}
+            className="absolute inset-0 bg-cover bg-center opacity-15 group-hover:opacity-25 transition-opacity pointer-events-none"
+            style={{ backgroundImage: `url('/images/kotowaza-zen.jpg')` }}
           />
           <div className="relative z-10">
             <div className="flex items-center justify-between mb-3">
@@ -494,16 +495,16 @@ export const HomePage: React.FC = () => {
             </div>
           </div>
 
-          <div className="mt-3 pt-3 border-t border-accent/10 flex items-center justify-between text-[11px] text-appText-muted">
+          <div className="relative z-10 mt-3 pt-3 border-t border-accent/10 flex items-center justify-between text-[11px] text-appText-muted">
             <span className="flex items-center gap-1">
-              <Sprout className="w-3.5 h-3.5 text-emerald-400" />
-              <span>Kebun Kata</span>
+              <Sparkles className="w-3.5 h-3.5 text-accent" />
+              <span>52 Peribahasa</span>
             </span>
             <button
-              onClick={() => setActiveTab('kebun')}
-              className="text-accent hover:underline font-semibold"
+              onClick={openKotowaza}
+              className="text-accent hover:underline font-bold flex items-center gap-1 hover:text-accent-hot transition-colors"
             >
-              Kunjungi Kebun →
+              <span>Jelajahi Galeri →</span>
             </button>
           </div>
         </div>

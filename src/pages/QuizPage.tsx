@@ -392,6 +392,13 @@ export const QuizPage: React.FC = () => {
     setAssembledTokens((prev) => prev.filter((_, i) => i !== tokenIndex));
   };
 
+  const handleResetRearrange = () => {
+    if (feedback || !currentQ?.tokens) return;
+    playFlipSfx();
+    setAssembledTokens([]);
+    setAvailableTokens([...currentQ.tokens]);
+  };
+
   const handleCheckRearrange = () => {
     if (!currentQ || feedback) return;
     const assembledStr = assembledTokens.join('');
@@ -806,6 +813,21 @@ export const QuizPage: React.FC = () => {
                     <div className="text-lg font-bold text-appText-bright">"{currentQ.questionText}"</div>
                   </div>
 
+                  {/* Assembled Sentence Box Header & Reset */}
+                  <div className="flex items-center justify-between text-xs text-appText-muted px-1">
+                    <span className="font-semibold text-appText-bright">Susunan Kalimat Anda:</span>
+                    {assembledTokens.length > 0 && !feedback && (
+                      <button
+                        onClick={handleResetRearrange}
+                        className="text-amber-400 hover:text-accent font-semibold flex items-center gap-1 active:scale-95 text-xs transition-colors"
+                        title="Kembalikan semua kata ke susunan awal"
+                      >
+                        <RotateCcw className="w-3.5 h-3.5" />
+                        <span>Reset Susunan</span>
+                      </button>
+                    )}
+                  </div>
+
                   {/* Assembled Sentence Box */}
                   <div className="min-h-[70px] bg-surface-2 border border-accent/30 rounded-2xl p-4 flex flex-wrap gap-2 items-center">
                     {assembledTokens.length === 0 ? (
@@ -878,7 +900,36 @@ export const QuizPage: React.FC = () => {
                   {/* Pedagogical Particle & Sentence Structure Detail */}
                   <QuizExplanationDetail
                     rawExplanation={currentQ.explanation}
-                    jpSentence={currentQ.targetItem?.examples?.[0]?.jp || (activeMode !== 'flashcard' ? currentQ.questionText : undefined)}
+                    jpSentence={
+                      activeMode === 'rearrange'
+                        ? currentQ.correctAnswer
+                        : activeMode === 'translation'
+                        ? currentQ.questionText
+                        : currentQ.targetItem?.examples?.[0]?.jp ||
+                          (activeMode !== 'flashcard' && !currentQ.questionText.startsWith('Bentuk')
+                            ? currentQ.questionText
+                            : (currentQ.targetItem && 'word' in currentQ.targetItem ? (currentQ.targetItem as any).word : currentQ.questionText))
+                    }
+                    reading={
+                      (currentQ.targetItem && 'reading' in currentQ.targetItem ? currentQ.targetItem.reading : undefined) ||
+                      (currentQ.subText?.startsWith('【') ? currentQ.subText.replace(/[【】]/g, '') : undefined) ||
+                      (currentQ.targetItem && 'word' in currentQ.targetItem ? (currentQ.targetItem as any).reading : undefined)
+                    }
+                    romaji={
+                      currentQ.targetItem && 'romaji' in currentQ.targetItem
+                        ? (currentQ.targetItem as any).romaji
+                        : undefined
+                    }
+                    translation={
+                      activeMode === 'rearrange'
+                        ? currentQ.questionText
+                        : activeMode === 'translation'
+                        ? currentQ.correctAnswer
+                        : currentQ.targetItem?.examples?.[0]?.id ||
+                          (currentQ.subText && !currentQ.subText.startsWith('【')
+                            ? currentQ.subText.replace(/^Arti:\s*"?/, '').replace(/"?$/, '')
+                            : currentQ.targetItem?.meaning)
+                    }
                   />
                 </div>
               )}

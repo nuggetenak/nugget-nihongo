@@ -342,11 +342,11 @@ export const QuizArenaHub: React.FC<QuizArenaHubProps> = ({
       {/* Categorized Mode Section */}
       <div className="space-y-4">
         {/* Category Selector Tabs */}
-        <div className="flex items-center justify-between border-b border-accent/15 pb-2.5">
-          <div className="flex items-center gap-2">
+        <div className="flex items-center justify-between border-b border-accent/15 pb-2.5 gap-2">
+          <div className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto scrollbar-none max-w-full pb-0.5">
             <button
               onClick={() => setActiveCategory('all')}
-              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all ${
+              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all whitespace-nowrap shrink-0 active:scale-95 ${
                 activeCategory === 'all'
                   ? 'bg-accent text-bg shadow-sm font-extrabold'
                   : 'text-appText-muted hover:text-appText-bright bg-surface-2'
@@ -356,7 +356,7 @@ export const QuizArenaHub: React.FC<QuizArenaHubProps> = ({
             </button>
             <button
               onClick={() => setActiveCategory('core')}
-              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all ${
+              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all whitespace-nowrap shrink-0 active:scale-95 ${
                 activeCategory === 'core'
                   ? 'bg-accent text-bg shadow-sm font-extrabold'
                   : 'text-appText-muted hover:text-appText-bright bg-surface-2'
@@ -366,17 +366,17 @@ export const QuizArenaHub: React.FC<QuizArenaHubProps> = ({
             </button>
             <button
               onClick={() => setActiveCategory('specialty')}
-              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all ${
+              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all whitespace-nowrap shrink-0 active:scale-95 ${
                 activeCategory === 'specialty'
                   ? 'bg-accent text-bg shadow-sm font-extrabold'
                   : 'text-appText-muted hover:text-appText-bright bg-surface-2'
               }`}
             >
-              Keterampilan Khusus (4)
+              Keahlian Khusus (4)
             </button>
           </div>
 
-          <span className="text-[11px] text-appText-muted font-mono font-bold hidden sm:inline-block">
+          <span className="text-[11px] text-appText-muted font-mono font-bold hidden sm:inline-block shrink-0">
             Level {(selectedLevel === 'all' ? 'n5' : selectedLevel).toUpperCase()}
           </span>
         </div>

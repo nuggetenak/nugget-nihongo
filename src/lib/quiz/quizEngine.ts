@@ -256,7 +256,220 @@ export function generateQuizQuestions(
     return questions;
   }
 
-  // Translation & Error Find fallbacks
+  if (mode === 'translation') {
+    // Collect authentic sentence examples from grammar & vocab
+    const sentenceCandidates: Array<{
+      jp: string;
+      id: string;
+      reading?: string;
+      target: NormalizedVocab | NormalizedGrammar;
+    }> = [];
+
+    for (const g of grammarPool) {
+      for (const ex of g.examples) {
+        if (ex.jp && ex.id && ex.jp.length >= 8 && ex.jp.length <= 50) {
+          sentenceCandidates.push({
+            jp: ex.jp.replace(/<[^>]*>/g, ''),
+            id: ex.id,
+            target: g,
+          });
+        }
+      }
+    }
+
+    for (const v of vocabPool) {
+      for (const ex of v.examples) {
+        if (ex.jp && ex.id && ex.jp.length >= 8 && ex.jp.length <= 50) {
+          sentenceCandidates.push({
+            jp: ex.jp.replace(/<[^>]*>/g, ''),
+            id: ex.id,
+            reading: v.reading,
+            target: v,
+          });
+        }
+      }
+    }
+
+    const shuffledCandidates = shuffle(sentenceCandidates);
+    const selected = shuffledCandidates.slice(0, count);
+
+    for (const item of selected) {
+      const otherSentences = shuffledCandidates.filter((s) => s.id !== item.id && s.jp !== item.jp);
+      const distractorItems = shuffle(otherSentences).slice(0, 3);
+      const distractors = distractorItems.map((d) => d.id);
+
+      const generalDistractors = [
+        'Saya berencana pergi ke perpustakaan nanti sore.',
+        'Meskipun cuaca dingin, kegiatan di luar ruangan tetap berjalan.',
+        'Tolong jangan lupa mengunci pintu sebelum tidur.',
+        'Kemarin saya belajar tata bahasa Jepang sampai larut malam.',
+      ].filter((d) => d !== item.id && !distractors.includes(d));
+
+      while (distractors.length < 3 && generalDistractors.length > 0) {
+        distractors.push(generalDistractors.pop()!);
+      }
+
+      const options = shuffle([item.id, ...distractors]);
+
+      questions.push({
+        id: `trans-${Date.now()}-${Math.random()}`,
+        mode: 'translation',
+        prompt: 'Pilihlah terjemahan bahasa Indonesia yang paling tepat:',
+        targetItem: item.target,
+        questionText: item.jp,
+        subText: item.reading ? `【${item.reading}】` : undefined,
+        correctAnswer: item.id,
+        options,
+        explanation: `Kalimat "${item.jp}" memiliki terjemahan yang tepat: "${item.id}".`,
+        level,
+      });
+    }
+
+    if (questions.length > 0) return questions;
+  }
+
+  if (mode === 'error-find') {
+    // JLPT High-Yield Error Trap Bank
+    interface ErrorTrapTemplate {
+      levels: JLPTLevel[];
+      sentenceWithError: string;
+      wrongPart: string;
+      correctAnswer: string;
+      options: string[];
+      fullCorrectSentence: string;
+      translation: string;
+      explanation: string;
+    }
+
+    const ERROR_TRAP_BANK: ErrorTrapTemplate[] = [
+      {
+        levels: ['n5', 'n4'],
+        sentenceWithError: '明日、駅の前で友達[ を ]会います。',
+        wrongPart: 'を',
+        correctAnswer: 'に',
+        options: ['に', 'で', 'へ', 'と'],
+        fullCorrectSentence: '明日、駅の前で友達に会います。',
+        translation: 'Besok, saya akan bertemu teman di depan stasiun.',
+        explanation: 'Kata kerja 会う (bertemu) berpasangan dengan partikel に untuk orang yang ditemui (友達に会う), BUKAN partikel objek を.',
+      },
+      {
+        levels: ['n5'],
+        sentenceWithError: '毎朝、歩いて学校[ を ]行きます。',
+        wrongPart: 'を',
+        correctAnswer: 'へ',
+        options: ['へ', 'を', 'で', 'から'],
+        fullCorrectSentence: '毎朝、歩いて学校へ行きます。',
+        translation: 'Setiap pagi, saya pergi ke sekolah dengan berjalan kaki.',
+        explanation: 'Arah perpindahan menuju suatu tempat (行く, 来る, 帰る) menggunakan partikel へ atau に, BUKAN partikel objek を.',
+      },
+      {
+        levels: ['n5', 'n4'],
+        sentenceWithError: '教室の机の上[ で ]辞書があります。',
+        wrongPart: 'で',
+        correctAnswer: 'に',
+        options: ['に', 'で', 'へ', 'を'],
+        fullCorrectSentence: '教室の机の上に辞書があります。',
+        translation: 'Ada kamus di atas meja ruang kelas.',
+        explanation: 'Keberadaan benda mati atau hidup (ある / いる) di suatu lokasi menggunakan partikel に, sedangkan で digunakan untuk tempat terjadinya aktivitas aktif.',
+      },
+      {
+        levels: ['n5'],
+        sentenceWithError: '私は魚[ を ]好きではありません。',
+        wrongPart: 'を',
+        correctAnswer: 'が',
+        options: ['が', 'を', 'に', 'で'],
+        fullCorrectSentence: '私は魚が好きではありません。',
+        translation: 'Saya tidak suka ikan.',
+        explanation: 'Kata sifat 好き (suka) dan 嫌い (benci) memerlukan partikel が untuk menandai hal yang disukai/dibenci, bukan を.',
+      },
+      {
+        levels: ['n5', 'n4'],
+        sentenceWithError: 'お金がありませんから、パン[ しか ]買います。',
+        wrongPart: '買います',
+        correctAnswer: '買えません (hanya bisa / negatif)',
+        options: ['買えません (hanya bisa / negatif)', '買います', '買いました', '買うでしょう'],
+        fullCorrectSentence: 'お金がありませんから、パンしか買いません。',
+        translation: 'Karena tidak punya uang, saya hanya bisa membeli roti.',
+        explanation: 'Partikel しか (hanya) WAJIB selalu diikuti oleh kata kerja bentuk NEGATIF (〜ない / 〜ません) untuk menunjukkan keterbatasan.',
+      },
+      {
+        levels: ['n5', 'n4'],
+        sentenceWithError: '朝から晩[ までに ]ずっと雨が降っていました。',
+        wrongPart: 'までに',
+        correctAnswer: 'まで',
+        options: ['まで', 'までに', 'から', 'より'],
+        fullCorrectSentence: '朝から晩までずっと雨が降っていました。',
+        translation: 'Hujan terus turun dari pagi sampai malam.',
+        explanation: 'Aktivitas yang berlanjut terus-menerus menggunakan まで (sampai). Sedangkan までに (paling lambat / sebelum) hanya untuk tenggat waktu tunggal (deadline).',
+      },
+      {
+        levels: ['n4', 'n3'],
+        sentenceWithError: '日本へ[ 行くことがあります ]か。',
+        wrongPart: '行くことがあります',
+        correctAnswer: '行ったことがあります (pernah)',
+        options: ['行ったことがあります (pernah)', '行くことがあります', '行ってあります', '行かないことがあります'],
+        fullCorrectSentence: '日本へ行ったことがありますか。',
+        translation: 'Apakah Anda pernah pergi ke Jepang?',
+        explanation: 'Menyatakan pengalaman lampau "pernah" menggunakan bentuk lampau biasa [Kata Kerja た形 + ことがある]. Bentuk kamus [辞書形 + ことがある] berarti "kadang-kadang melakukan".',
+      },
+      {
+        levels: ['n4', 'n3'],
+        sentenceWithError: '雨が[ 降るそう ]ですから、傘を持って行きます。',
+        wrongPart: '降るそう',
+        correctAnswer: '降りそう (kelihatannya akan)',
+        options: ['降りそう (kelihatannya akan)', '降るそう', '降ったそう', '降らないそう'],
+        fullCorrectSentence: '雨が降りそうですから、傘を持って行きます。',
+        translation: 'Karena kelihatannya akan turun hujan, saya akan membawa payung.',
+        explanation: 'Perkiraan visual langsung (様態 - kelihatannya mau hujan) menggunakan Stem kata kerja (降り) + そう. Bentuk kamus 降る + そう berarti kabar angin dari orang lain (伝聞 - katanya akan hujan).',
+      },
+      {
+        levels: ['n3', 'n2'],
+        sentenceWithError: '高い料理だからといって、必ずしも美味しい[ わけではない ]とは言えません。',
+        wrongPart: 'わけではない',
+        correctAnswer: 'とは限らない (belum tentu)',
+        options: ['とは限らない (belum tentu)', 'わけではない', 'はずがない', 'べきではない'],
+        fullCorrectSentence: '高い料理だからといって、必ずしも美味しいとは限らない。',
+        translation: 'Hanya karena masakannya mahal, belum tentu rasanya enak.',
+        explanation: 'Kombinasi dengan kata 必ずしも (belum tentu / tidak selalu) secara alami berpasangan dengan pola 〜とは限らない.',
+      },
+      {
+        levels: ['n3', 'n2', 'n1'],
+        sentenceWithError: '年を取る[ にしたがって ]、視力が弱くなってきた。',
+        wrongPart: 'にしたがって',
+        correctAnswer: 'につれて (seiring bertambahnya)',
+        options: ['につれて (seiring bertambahnya)', 'にしては', 'に反して', 'にとって'],
+        fullCorrectSentence: '年を取るにつれて、視力が弱くなってきた。',
+        translation: 'Seiring bertambahnya usia, penglihatan semakin melemah.',
+        explanation: 'Perubahan alamiah bertahap pada kondisi tubuh seiring berjalannya waktu lazim menggunakan 〜につれて.',
+      },
+    ];
+
+    // Filter traps suitable for the active level
+    const matchedTraps = ERROR_TRAP_BANK.filter(
+      (t) => t.levels.includes(level) || t.levels.includes('n5')
+    );
+
+    const shuffledTraps = shuffle(matchedTraps).slice(0, count);
+
+    for (const trap of shuffledTraps) {
+      questions.push({
+        id: `err-${Date.now()}-${Math.random()}`,
+        mode: 'error-find',
+        prompt: 'Temukan bagian yang salah atau perbaikan yang tepat untuk bagian dalam kurung [ ]:',
+        targetItem: grammarPool[0] || vocabPool[0],
+        questionText: trap.sentenceWithError,
+        subText: `Arti: "${trap.translation}"`,
+        correctAnswer: trap.correctAnswer,
+        options: shuffle(trap.options),
+        explanation: `${trap.explanation}\nKalimat yang benar: "${trap.fullCorrectSentence}"`,
+        level,
+      });
+    }
+
+    if (questions.length > 0) return questions;
+  }
+
+  // Graceful vocab fallback
   const shuffledVocab = shuffle(vocabPool).slice(0, count);
   for (const v of shuffledVocab) {
     const distractors = getVocabDistractors(v, vocabPool, 3);
@@ -264,7 +477,7 @@ export function generateQuizQuestions(
     questions.push({
       id: `trans-${v.id}`,
       mode,
-      prompt: mode === 'translation' ? 'Terjemahkan kata berikut ke bahasa Indonesia:' : 'Temukan terjemahan yang benar:',
+      prompt: 'Pilihlah arti kata yang paling tepat:',
       targetItem: v,
       questionText: v.word,
       subText: v.reading,
@@ -281,17 +494,38 @@ export function generateQuizQuestions(
  * Split sentence into natural Japanese phrase chunks
  */
 function splitIntoTokens(sentence: string): string[] {
-  // Simple token splitter using particles and punctuation boundaries
-  const parts = sentence.split(/(?<=[はがをにでへと、。！？])/g).filter(Boolean);
+  // Strip trailing punctuation
+  const clean = sentence.replace(/[。！？\s]+$/, '');
+
+  // Split after particles and natural grammatical pauses
+  const parts = clean.split(/(?<=[はがをにでへとからもより、])/g).filter(Boolean);
   if (parts.length >= 3 && parts.length <= 6) {
     return parts;
   }
+
+  // If too many chunks, merge adjacent short ones
+  if (parts.length > 6) {
+    const combined: string[] = [];
+    for (let i = 0; i < parts.length; i += 2) {
+      if (i + 1 < parts.length) {
+        combined.push(parts[i] + parts[i + 1]);
+      } else {
+        if (combined.length > 0) {
+          combined[combined.length - 1] += parts[i];
+        } else {
+          combined.push(parts[i]);
+        }
+      }
+    }
+    if (combined.length >= 3) return combined;
+  }
+
   // Fallback: chunk by 2-4 chars
   const chunks: string[] = [];
   let i = 0;
-  while (i < sentence.length) {
-    const len = Math.min(3, sentence.length - i);
-    chunks.push(sentence.slice(i, i + len));
+  while (i < clean.length) {
+    const len = Math.min(3, clean.length - i);
+    chunks.push(clean.slice(i, i + len));
     i += len;
   }
   return chunks;

@@ -17,6 +17,7 @@ import { KanaChartModal } from './components/kana/KanaChartModal';
 import { ConjugationModal } from './components/grammar/ConjugationModal';
 import { NuanceCompareModal } from './components/grammar/NuanceCompareModal';
 import { PatchNotesModal } from './components/ui/PatchNotesModal';
+import { KotowazaModal } from './components/kotowaza/KotowazaModal';
 import { usePwaStore } from './lib/pwa/pwaStore';
 import { useAuthStore } from './lib/supabase/authStore';
 import { NormalizedVocab, NormalizedGrammar } from './lib/data/dataManager';
@@ -37,6 +38,8 @@ export const App: React.FC = () => {
     checkStreakStatus,
     isPatchNotesOpen,
     closePatchNotes,
+    isKotowazaOpen,
+    closeKotowaza,
   } = useAppStore();
   const { initPwa } = usePwaStore();
   const { initAuth } = useAuthStore();
@@ -226,6 +229,12 @@ export const App: React.FC = () => {
       <PatchNotesModal
         isOpen={isPatchNotesOpen}
         onClose={closePatchNotes}
+      />
+
+      {/* 52 Traditional Japanese Proverbs & Wisdom Gallery */}
+      <KotowazaModal
+        isOpen={isKotowazaOpen}
+        onClose={closeKotowaza}
       />
     </div>
   );

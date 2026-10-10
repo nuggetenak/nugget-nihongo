@@ -25,6 +25,7 @@ import {
   Cloud,
   CloudOff,
   History,
+  Quote,
 } from 'lucide-react';
 import { useAppStore, AppState } from '../../store/useAppStore';
 import { useAuthStore } from '../../lib/supabase/authStore';
@@ -45,7 +46,7 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({
   onOpenConjugation,
   onOpenNuance,
 }) => {
-  const { activeTab, setActiveTab, openFeatureGuide, openOnboarding, openPatchNotes } = useAppStore();
+  const { activeTab, setActiveTab, openFeatureGuide, openOnboarding, openPatchNotes, openKotowaza } = useAppStore();
   const { user, openAuthModal } = useAuthStore();
 
   if (!isOpen) return null;
@@ -186,6 +187,16 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({
                   <span>Komparator Nuansa Tata Bahasa</span>
                 </button>
               )}
+              <button
+                onClick={() => {
+                  openKotowaza();
+                  onClose();
+                }}
+                className="w-full flex items-center gap-3 px-3 py-2 rounded-xl text-xs text-appText-muted hover:text-accent hover:bg-surface-2 transition-all"
+              >
+                <Quote className="w-4 h-4 text-amber-400" />
+                <span>Galeri Peribahasa (ことわざ · 52)</span>
+              </button>
               <button
                 onClick={() => {
                   openFeatureGuide();

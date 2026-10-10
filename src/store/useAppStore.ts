@@ -63,6 +63,11 @@ export interface AppState {
   openPatchNotes: () => void;
   closePatchNotes: () => void;
 
+  // Kotowaza Proverb Library Modal
+  isKotowazaOpen: boolean;
+  openKotowaza: () => void;
+  closeKotowaza: () => void;
+
   // Reset entire store
   resetAllData: () => void;
 }
@@ -272,6 +277,10 @@ export const useAppStore = create<AppState>((set, get) => ({
   isPatchNotesOpen: false,
   openPatchNotes: () => set({ isPatchNotesOpen: true }),
   closePatchNotes: () => set({ isPatchNotesOpen: false }),
+
+  isKotowazaOpen: false,
+  openKotowaza: () => set({ isKotowazaOpen: true }),
+  closeKotowaza: () => set({ isKotowazaOpen: false }),
 
   resetAllData: () => {
     if (typeof window !== 'undefined') {
