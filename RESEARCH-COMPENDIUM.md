@@ -54,6 +54,9 @@ nugget-nihongo-research/
 │   │   ├── contrastive/                       ← Granular L1 Diagnostic Inventory (Jalur A)
 │   │   │   └── INDONESIAN-L1-DIAGNOSTIC-INVENTORY-v1.md ← 150-item micro-diagnostic contrastive matrix across 6 domains
 │   │   │
+│   │   ├── phonology/                         ← Phonological Contrast & HVPT Diagnostic Matrix (Jalur D)
+│   │   │   └── HVPT-JAPANESE-PITCH-ACCENT-MINIMAL-PAIR-MATRIX-v1.md ← 150-item Pitch Accent, Mora Duration, & Phonological Contrast Matrix
+│   │   │
 │   │   ├── vocational/                        ← Workplace SLA & Discourse Corpus (Jalur B)
 │   │   │   ├── EPA-KAIGO-SSW-WORKPLACE-CORPUS-v1.md ← 42-item pain onomatopoeia matrix, 4-tier Rousai escalation, eldercare speech shifts
 │   │   │   ├── ALL-SECTOR-SSW-TAXONOMY-CORPUS-v1.md ← Complete 18-sector Tokutei Ginou master taxonomy across all 4 macro-clusters, JAIM 17 manufacturing divisions, JAC 3 construction divisions, and 36 K3 gemba disaster simulations
@@ -195,6 +198,9 @@ The synthesis phase has landed eight authoritative specifications bridging meta-
    - Four-strand integration balancing receptive input, pushed output, form-focused study, and fluency development.
 8. **Methodology Page Narrative (`METHODOLOGY-PAGE-NARRATIVE-v1.md`):**
    - Public-facing empirical narrative providing academic transparency and candid boundary declarations.
+9. **Phonology & HVPT Minimal Pair Diagnostic Matrix (`HVPT-JAPANESE-PITCH-ACCENT-MINIMAL-PAIR-MATRIX-v1.md` - Jalur D):**
+   - 150-item granular phonological contrast matrix across 6 domains: Tokyo Pitch Accent Homophone Pairs (Atamadaka, Nakadaka, Odaka, Heiban), Vowel Duration (Chōon), Geminate Consonants (Sokuon), Contracted Sounds (Yōon) & Moraic Nasals (/N/), Liquid Flap [ɾ] vs Trill [r], and Gemba SSW Critical Safety Pairs.
+   - Grounded in SLM-r (Flege & Bohn 2021 [PH-03]), PAM-L2 (Best & Tyler 2007 [PH-09]), Mora Isochrony (Port et al. 1987 [PH-16]), HVPT (Logan et al. 1991 [PH-30]; Thomson 2012 [PH-33]), and CAPT F0 tracing (Hardison 2004 [PH-55]; Vance 2008 [PH-58]).
 
 ---
 

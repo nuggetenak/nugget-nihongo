@@ -40,6 +40,9 @@ nugget-nihongo-research/
 │   │   ├── contrastive/                       ← Granular L1 Diagnostic Inventory (Jalur A)
 │   │   │   └── INDONESIAN-L1-DIAGNOSTIC-INVENTORY-v1.md ← 150-item micro-diagnostic contrastive matrix across 6 domains
 │   │   │
+│   │   ├── phonology/                         ← Phonological Contrast & HVPT Diagnostic Matrix (Jalur D)
+│   │   │   └── HVPT-JAPANESE-PITCH-ACCENT-MINIMAL-PAIR-MATRIX-v1.md ← 150-item Pitch Accent, Mora Duration, & Phonological Contrast Matrix
+│   │   │
 │   │   ├── vocational/                        ← Workplace SLA & Discourse Corpus (Jalur B)
 │   │   │   ├── EPA-KAIGO-SSW-WORKPLACE-CORPUS-v1.md ← 42-item pain onomatopoeia matrix, 4-tier Rousai escalation, eldercare speech shifts
 │   │   │   ├── ALL-SECTOR-SSW-TAXONOMY-CORPUS-v1.md ← Complete 18-sector Tokutei Ginou master taxonomy across all 4 macro-clusters, JAIM 17 manufacturing divisions, JAC 3 construction divisions, and 36 K3 gemba disaster simulations
