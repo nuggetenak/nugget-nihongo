@@ -26,7 +26,8 @@ var confusionPairs = [
     "root_cause": "Verba sumu memproyeksikan locus of result/state (keberadaan permanen subjek), bukan lokasi aktivitas dinamis. Partikel wajib: に.",
     "prescription": "⚠️ JANGAN GUNAKAN で! Tinggal (sumu) adalah kondisi menetap (keberadaan), bukan aktivitas fisik sementara. Pola mutlak: [Tempat] に 住む.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-002",
@@ -47,7 +48,8 @@ var confusionPairs = [
     "root_cause": "Hataraku adalah verba aktivitas fisik dinamis $\\rightarrow$ wajib で. Sebaliknya, tsutomeru adalah status kepegawaian (keterikatan posisi) $\\rightarrow$ wajib に.",
     "prescription": "⚠️ Beda Verba Beda Partikel! • Aktivitas kerja (hataraku) $\\rightarrow$ [Tempat] で 働く • Status ikatan kerja (tsutomeru) $\\rightarrow$ [Tempat] に 勤める.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-003",
@@ -68,7 +70,8 @@ var confusionPairs = [
     "root_cause": "Indonesian menganggap kendaraan sebagai sarana (dengan) atau objek langsung. Japanese memandang kendaraan sebagai target titik kontak/masuk subjek $\\rightarrow$ に.",
     "prescription": "⚠️ Naik = Menempel/Masuk ke Target! Titik kontak yang dinaiki selalu ditandai に. Pola: [Kendaraan] に 乗る. (Bukan を / で).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-004",
@@ -89,7 +92,8 @@ var confusionPairs = [
     "root_cause": "Kendaraan yang ditinggalkan adalah space of departure $\\rightarrow$ wajib を (seperti ie o deru). Stasiun adalah lokasi tindakan turun terjadi $\\rightarrow$ で.",
     "prescription": "⚠️ Turun DARI kendaraan pakai を! • Kendaraan yang ditinggalkan $\\rightarrow$ [Kendaraan] を 降りる • Lokasi stasiun tempat turun $\\rightarrow$ [Stasiun] で 降りる.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-005",
@@ -110,7 +114,8 @@ var confusionPairs = [
     "root_cause": "Tindakan menaruh memindahkan benda ke titik henti/kontak akhir (resulting point of arrival). Titik penempatan akhir wajib に.",
     "prescription": "⚠️ Titik Akhir Penempatan = に! Di mana benda mendarat dan diam, gunakan に. Meja di sini bukan arena bekerja, melainkan tempat berdiamnya tas.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-006",
@@ -131,7 +136,8 @@ var confusionPairs = [
     "root_cause": "Dinding adalah surface of contact (titik target perlekatan), bukan lokasi di mana subjek beraktivitas dinamis. Wajib に.",
     "prescription": "⚠️ Permukaan yang ditempeli = に! Target lekat selalu ditandai partikel に.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-007",
@@ -152,7 +158,8 @@ var confusionPairs = [
     "root_cause": "Menginap berfokus pada titik menetap/menjangkar semalam (stative anchor), analog dengan hairu/sumu. Standar alami adalah に.",
     "prescription": "⚠️ Menginap berjangkar pada に! Pola standar: ホテルに泊まる. (Penggunaan で merujuk pada aktivitas di dalam hotel, bukan penandaan menginapnya).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-008",
@@ -173,7 +180,8 @@ var confusionPairs = [
     "root_cause": "Kursi adalah titik kontak akhir pantat mendarat (point of arrival). Bukan lokasi arena berjalan/berlari. Wajib に.",
     "prescription": "⚠️ Duduk mendarat di atas kursi = に! Pola: 椅子に座る.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-009",
@@ -194,7 +202,8 @@ var confusionPairs = [
     "root_cause": "Ruangan adalah batas target yang ditembus dan dimasuki. Wajib に (atau directional へ).",
     "prescription": "⚠️ Arah masuk selalu に! Pola: 部屋に入る.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-010",
@@ -215,7 +224,8 @@ var confusionPairs = [
     "root_cause": "Tiba adalah instantaneous change of location menuju titik koordinat target. Wajib に.",
     "prescription": "⚠️ Titik tiba selalu に! Stasiun adalah destinasi akhir, bukan arena aktivitas $\\rightarrow$ 駅に着く.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-011",
@@ -236,7 +246,8 @@ var confusionPairs = [
     "root_cause": "Suki secara gramatikal adalah adjektiva-na (keiyoudoushi), bukan verba! Adjektiva tidak dapat menuntut kasus akusatif を. Target afeksi ditandai nominatif が.",
     "prescription": "⚠️ SUKI ADALAH KATA SIFAT! Di Jepang, kopi bukan objek yang 'disukai', melainkan kopi yang memicu rasa suka (kopi-lah yang menarik). Pola: 〜が好き.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-012",
@@ -257,7 +268,8 @@ var confusionPairs = [
     "root_cause": "Dekiru adalah verba intransitif statif (potential intransitive). Kemampuan/kapabilitas adalah sifat subjek yang ditandai が, bukan objek akusatif を.",
     "prescription": "⚠️ DEKIRU TIDAK PERNAH MEMAKAI を! Kemampuan adalah kondisi eksistensi. Pola mutlak: 〜ができる.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-013",
@@ -278,7 +290,8 @@ var confusionPairs = [
     "root_cause": "Wakaru adalah verba statif intransitif (to be comprehensible). Informasi yang dipahami berstatus nominatif penjelas が.",
     "prescription": "⚠️ WAKARU ADALAH STATIF! Makna harfiah: \"Pelajaran ini terjelaskan/dapat dipahami bagi saya\". Selalu gunakan 〜が分かる.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-014",
@@ -299,7 +312,8 @@ var confusionPairs = [
     "root_cause": "Hoshii adalah kata sifat-i (i-keiyoushi). Kata sifat tidak bisa mengambil objek penderita を. Benda yang diinginkan ditandai が.",
     "prescription": "⚠️ HOSHII ITU KATA SIFAT-I! Bukan kata kerja 'menginginkan'. Pola mutlak: [Benda] が 欲しい.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-015",
@@ -320,7 +334,8 @@ var confusionPairs = [
     "root_cause": "Akhiran -tai mengubah verba menjadi predikat ajektival statif. Dalam sintaksis murni, partikel が menandai fokus keinginan tertinggi, meski を diperbolehkan pada tuturan modern.",
     "prescription": "💡 Catatan Sintaksis: Partikel が menunjukkan fokus kuat pada objek yang diinginkan (コーヒーが飲みたい). Hindari menganggap -tai selalu identik dengan を.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-016",
@@ -341,7 +356,8 @@ var confusionPairs = [
     "root_cause": "Jouzu adalah adjektiva-na evaluatif. Bidang kecakapan ditandai partikel fokus が.",
     "prescription": "⚠️ Kecakapan ditandai が! [Bidang] が 上手/下手. Adjektiva tidak pernah mengambil partikel を!",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-017",
@@ -362,7 +378,8 @@ var confusionPairs = [
     "root_cause": "Kowai adalah adjektiva emosional. Sumber stimulus rasa takut berstatus nominatif が.",
     "prescription": "⚠️ Objek emosi adalah sumber stimulus = が! Pola: [Stimulus] が 怖い.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-018",
@@ -383,7 +400,8 @@ var confusionPairs = [
     "root_cause": "Hitsuyou adalah adjektiva-na (atau nomina statif). Kebutuhan berstatus nominatif が.",
     "prescription": "⚠️ Hitsuyou adalah kata sifat! Gunakan 〜が必要だ, jangan pernah 〜を必要です.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-019",
@@ -404,7 +422,8 @@ var confusionPairs = [
     "root_cause": "Ruang asal yang ditinggalkan ditandai partikel tolak akusatif を. Penggunaan kara terasa sangat kaku jika hanya keluar rumah biasa.",
     "prescription": "⚠️ Keluar DARI tempat asal = を! Meninggalkan ruang tertutup (rumah, ruangan, universitas) secara alami menggunakan 家を出る, bukan ie kara.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-020",
@@ -425,7 +444,8 @@ var confusionPairs = [
     "root_cause": "Jalan adalah medium ruang yang dilintasi secara berkesinambungan (space of traversal). Wajib を.",
     "prescription": "⚠️ Melintasi ruang gerak = を! Menyeberang jalan, melintasi jembatan (hashi o wataru), atau terbang di langit (sora o tobu) wajib memakai を!",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-021",
@@ -446,7 +466,8 @@ var confusionPairs = [
     "root_cause": "Meskipun de sering digunakan pembelajar, native speaker menggunakan を untuk menunjukkan taman sebagai area jelajah gerak kontinu.",
     "prescription": "💡 Area jelajah kontinu = を! Jika berjalan menjelajahi seluruh area taman, gunakan 公園を散歩する. (で berfokus pada lokasi kegiatan secara umum).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-022",
@@ -467,7 +488,8 @@ var confusionPairs = [
     "root_cause": "Institusi yang ditinggalkan sebagai titik tolak kelulusan berstatus asal akusatif を.",
     "prescription": "⚠️ Lulus DARI institusi = を! Pola standar bahasa Jepang: 大学を卒業する. Bukan kara.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-023",
@@ -488,7 +510,8 @@ var confusionPairs = [
     "root_cause": "Indonesian menggunakan dengan $\\rightarrow$ transfer ke と. Namun dalam bahasa Jepang, に adalah pertemuan yang direncanakan satu arah/dua arah umum; と menandai tindakan mutualitas simetris bersama-sama.",
     "prescription": "⚠️ Bertemu default-nya adalah に! • 友達に会う: Bertemu teman (standar umum). • 友達と会う: Bertemu bersama secara mutual/janjian khusus. Jangan selalu menerjemahkan dengan menjadi と!",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-024",
@@ -509,7 +532,8 @@ var confusionPairs = [
     "root_cause": "Menikah adalah tindakan relasional mutual dua arah simetris mutlak $\\rightarrow$ wajib と.",
     "prescription": "⚠️ Menikah adalah tindakan timbal-balik = と! Pola mutlak: [Orang] と 結婚する. (Bukan に).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-025",
@@ -530,7 +554,8 @@ var confusionPairs = [
     "root_cause": "Niau mengevaluasi kesesuaian terhadap target subjek penerima $\\rightarrow$ wajib に.",
     "prescription": "⚠️ Cocok terhadap seseorang = に! Pola mutlak: [Orang] に 似合う. (Bukan と).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-026",
@@ -551,7 +576,8 @@ var confusionPairs = [
     "root_cause": "Menyerupai target acuan pembanding $\\rightarrow$ target acuan ditandai に.",
     "prescription": "⚠️ Mirip terhadap figur acuan = に! Pola: 父に似ている. (Bukan と).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-027",
@@ -572,7 +598,8 @@ var confusionPairs = [
     "root_cause": "Partisipan sumber informasi atau target permohonan berstatus datif に.",
     "prescription": "⚠️ Target permohonan / narasumber = に! Pola: 先生に聞く, 友達に頼む.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-028",
@@ -593,7 +620,8 @@ var confusionPairs = [
     "root_cause": "Target penerima komunikasi langsung berstatus datif personal に. (He hanya untuk arah spasial geografis).",
     "prescription": "⚠️ Penerima komunikasi personal = に! Manusia bukan destinasi peta jalan; gunakan に (田中さんに電話する).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-029",
@@ -614,7 +642,8 @@ var confusionPairs = [
     "root_cause": "Lawan tanding dalam relasi menang/kalah adalah target benturan interaksi $\\rightarrow$ ditandai に.",
     "prescription": "⚠️ Lawan tanding = に! 敵に勝つ (menang atas musuh), 相手に負ける (kalah dari lawan).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-030",
@@ -635,7 +664,8 @@ var confusionPairs = [
     "root_cause": "Pekerjaan adalah lingkungan/objek penyesuaian target adaptasi $\\rightarrow$ wajib に.",
     "prescription": "⚠️ Terbiasa terhadap kondisi = に! Pola mutlak: [Hal] に 慣れる.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-031",
@@ -656,7 +686,8 @@ var confusionPairs = [
     "root_cause": "Menjawab merespons terhadap stimulus pertanyaan $\\rightarrow$ stimulus ditandai に.",
     "prescription": "⚠️ Menjawab terhadap stimulus = に! Pola mutlak: 質問に答える. Bukan を!",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "javanese"
   },
   {
     "id": "cp-l1-032",
@@ -677,7 +708,8 @@ var confusionPairs = [
     "root_cause": "Agaru adalah verba intransitif otomatis. Kenaikan terjadi pada subjek nominatif が. Objek akusatif を hanya untuk verba transitif kausatif ageru.",
     "prescription": "⚠️ Agaru = Intransitif! Gunakan 給料が上がる. Jika Anda yang menaikkan, barulah 給料を上げる.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-033",
@@ -698,7 +730,8 @@ var confusionPairs = [
     "root_cause": "Kieru adalah intransitif $\\rightarrow$ が. Nakusu adalah transitif $\\rightarrow$ を.",
     "prescription": "⚠️ Jangan campur aduk transitif-intransitif! Uang hilang sendiri = お金が消えた/なくなった.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-034",
@@ -719,7 +752,8 @@ var confusionPairs = [
     "root_cause": "Kimaru (intransitif $\\rightarrow$ が); kimeru (transitif $\\rightarrow$ を). Pembelajar Indonesia rancu karena imbuhan me-...-kan dan ter-... di L1 tidak dipetakan otomatis ke pasangan morfologis Jepang.",
     "prescription": "⚠️ Cek akhiran verba! • 〜が決まる (Jadwalnya sudah fix - intransitif). • 〜を決める (Memutuskan jadwal - transitif).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-035",
@@ -740,7 +774,8 @@ var confusionPairs = [
     "root_cause": "Perubahan status/wujud menjadi entitas baru selalu menggunakan partikel penanda hasil transisi に.",
     "prescription": "⚠️ Hasil perubahan wujud selalu に! Pola: [Profesi/Kondisi] に なる.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-036",
@@ -761,7 +796,8 @@ var confusionPairs = [
     "root_cause": "Kekkon shimashita berarti upacara pernikahannya selesai di masa lalu (event), tetapi bisa jadi sekarang sudah cerai! Kondisi status perkawinan saat ini adalah resultant state $\\rightarrow$ ている (Shirai & Kurono 1998 [EA-21]).",
     "prescription": "⚠️ STATUS SAAT INI = ている! Menikah, bercerai, bangun, mengenal orang, dan memiliki bentuk tubuh adalah kondisi hasil. Pola mutlak: 結婚している, bukan kekkon shimashita.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-037",
@@ -782,7 +818,8 @@ var confusionPairs = [
     "root_cause": "Shiru adalah verba perubahan kesadaran (inchoative verb). Begitu tahu, statusnya menjadi shitte iru. Shirimashita terdengar seperti \"oh baru saja saya ketahui sekarang\". Negasinya unik: shirimasen (bukan shitte imasen).",
     "prescription": "⚠️ SUDAH TAHU = 知っている! Status memiliki informasi selalu 知っている. Tapi kalau TIDAK TAHU, wajib gunakan 知りません (bukan shitte imasen).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-038",
@@ -803,7 +840,8 @@ var confusionPairs = [
     "root_cause": "Okimashita hanya mencatat momen membuka mata di kasur. Jika anak itu saat ini sedang beraktivitas di ruang tamu (status terjaga), wajib 起きています.",
     "prescription": "⚠️ Kondisi terjaga = 起きている! Okita hanya momen bangunnya; kondisi tidak tidurnya adalah okite iru.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-039",
@@ -824,7 +862,8 @@ var confusionPairs = [
     "root_cause": "Shinmashita adalah peristiwa tarikan napas terakhir. Mayat ikan yang mengambang adalah kondisi resultant $\\rightarrow$ 死んでいる.",
     "prescription": "⚠️ Kondisi mati = 死んでいる! Jangan katakan shinimashita untuk mendeskripsikan bangkai/ikan mati yang sedang dilihat saat ini.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-040",
@@ -845,7 +884,8 @@ var confusionPairs = [
     "root_cause": "Eror kebalikan: Menggunakan te iru untuk aktivitas yang sudah selesai tuntas. Makan adalah verba duratif; tabete iru berarti \"sedang mengunyah makanan sekarang\".",
     "prescription": "⚠️ Tindakan selesai tuntas = もう + bentuk た! Jangan gunakan te iru untuk tindakan yang sudah beres dilakukan. Pola: もう食べました.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-041",
@@ -866,7 +906,8 @@ var confusionPairs = [
     "root_cause": "Pembelajar Indonesia over-rely pada bentuk formal kaku koto ga dekiru alih-alih konjugasi bentuk potensial (kanoukei).",
     "prescription": "💡 Prioritaskan Bentuk Potensial Verba! Dalam percakapan alami, gunakan konjugasi langsung: 食べる $\\rightarrow$ 食べられる (Group 2), 飲む $\\rightarrow$ 飲める (Group 1). Objeknya berubah menjadi が!",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-042",
@@ -887,7 +928,8 @@ var confusionPairs = [
     "root_cause": "Koto ga dekiru menanyakan kapabilitas absolut secara kaku. Koreru/korareru menanyakan ketersediaan situasional yang sopan dan natural.",
     "prescription": "💡 Gunakan Bentuk Potensial Kuru $\\rightarrow$ こられる! Jauh lebih luwes untuk janji temu dibanding koto ga dekimasu ka.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-043",
@@ -908,7 +950,8 @@ var confusionPairs = [
     "root_cause": "Indonesian bisa merangkap makna kapabilitas (ability) dan izin (permission). Bertanya izin dengan koto ga dekimasu ka terdengar seolah bertanya apakah kursinya kuat menahan beban!",
     "prescription": "⚠️ MINTA IZIN = 〜てもいいですか? Jangan pakai kata 'bisa/dekiru' untuk meminta izin! Pola: 〜てもいいですか.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-044",
@@ -929,7 +972,8 @@ var confusionPairs = [
     "root_cause": "Di Jepang, kondisi batin/keinginan orang ketiga tidak bisa diobservasi langsung secara absolut. Bentuk -tai HANYA untuk orang pertama (watashi). Untuk orang ketiga wajib 〜たがる atau hearsay.",
     "prescription": "⚠️ DILARANG PAKAI -TAI UNTUK ORANG LAIN! Keinginan orang lain belum tentu pasti di hati mereka. Gunakan 〜たがっている (terlihat ingin) atau 〜たいと言っている (berkata ingin).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-045",
@@ -950,7 +994,8 @@ var confusionPairs = [
     "root_cause": "Pembelajar sering mentransfer kata keterangan pernah menjadi sekadar bentuk lampau itta (\"kemarin saya pergi ke Jepang\"). Tanpa koto ga aru, nuansa pengalaman hidup seumur hidup hilang.",
     "prescription": "💡 Pengalaman seumur hidup = 〜たことがある! Bentuk lampau biasa (itta) hanya menceritakan kejadian masa lalu; pengalaman seumur hidup wajib V-たことがある.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-046",
@@ -971,7 +1016,8 @@ var confusionPairs = [
     "root_cause": "Eror ganda: Partikel salah (o alih-alih ni) dan kegagalan memadukan bentuk pasif penderitaan (meiwaku no ukemi).",
     "prescription": "⚠️ Mengalami musibah: 〜に遭う! Bencana atau musibah ditandai partikel に (事故に遭う, スリに遭う).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-047",
@@ -992,7 +1038,8 @@ var confusionPairs = [
     "root_cause": "Indonesian harus adalah kata bantu modalitas lepas. Japanese membingkainya sebagai kondisi negatif bersyarat ganda (\"jika tidak pergi, tidak akan beres\" $\\rightarrow$ ikanakereba naranai).",
     "prescription": "⚠️ HARUS = KONDISI BERSYARAT GANDA! Jangan terjemahkan secara harfiah. Pola baku: V-ない + なければならない atau bentuk santai V-ないと.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-048",
@@ -1013,7 +1060,8 @@ var confusionPairs = [
     "root_cause": "Indonesian tidak harus diterjemahkan keliru menjadi larangan jangan datang (konaide kudasai). Padahal maknanya adalah kelonggaran (\"tidak datang pun boleh\").",
     "prescription": "⚠️ TIDAK HARUS ≠ LARANGAN! • Tidak harus $\\rightarrow$ 〜なくてもいい (tidak usah). • Jangan $\\rightarrow$ 〜ないでください (melarang). Sangat fatal jika tertukar di tempat kerja!",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-049",
@@ -1034,7 +1082,8 @@ var confusionPairs = [
     "root_cause": "Kegagalan memilih bentuk nomina waktu (chuu) atau bentuk pasif alami (okonawarete iru).",
     "prescription": "💡 Sedang berlangsung = 〜中 (chuu) atau 行われている! Gunakan 会議中 untuk status ringkas profesional.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-050",
@@ -1055,7 +1104,8 @@ var confusionPairs = [
     "root_cause": "Menggunakan bentuk lampau ochimashita berarti sudah benar-benar jatuh! Hampir menuntut modalitas kontrafaktual (-sou datta atau tokoro datta).",
     "prescription": "⚠️ HAMPIR = BELUM JADI TERJADI! Jangan pakai bentuk lampau langsung! Gunakan 〜そうだった atau 〜ところだった. Jika Anda bilang ochimashita, orang mengira Anda sudah tergeletak di lantai!",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-051",
@@ -1076,7 +1126,8 @@ var confusionPairs = [
     "root_cause": "⚠️ Jepang Tidak Kenal 'Kulkas'! Kata kulkas berasal dari bahasa Belanda koelkast. Bahasa Jepang menggunakan kanji murni: 冷蔵庫 (れいぞうこ).",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-052",
@@ -1097,7 +1148,8 @@ var confusionPairs = [
     "root_cause": "⚠️ Sopir Berasal dari Prancis/Belanda! Di Jepang, gunakan istilah formal 運転手 (うんてんしゅ) atau serapan Inggris ドライバー (doraibā).",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-053",
@@ -1118,7 +1170,8 @@ var confusionPairs = [
     "root_cause": "⚠️ Kantor = Bahasa Belanda! Orang Jepang tidak paham kantoru. Gunakan 事務所 (じむしょ) untuk kantor fisik, atau 会社 (かいしゃ) untuk perusahaan.",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-054",
@@ -1139,7 +1192,8 @@ var confusionPairs = [
     "root_cause": "⚠️ Gunakan Taoru! Handuk berasal dari bahasa Belanda handdoek. Jepang menyerap bahasa Inggris towel $\\rightarrow$ タオル.",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-055",
@@ -1160,7 +1214,8 @@ var confusionPairs = [
     "root_cause": "⚠️ Bensin = Belanda (benzine)! Di Jepang gunakan serapan Amerika: ガソリン (gasorin).",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-056",
@@ -1181,7 +1236,8 @@ var confusionPairs = [
     "root_cause": "⚠️ Knalpot Tidak Ada di Jepang! Knalpot adalah bahasa Belanda murni. Bahasa Jepang memakai serapan Inggris: マフラー (mafurā).",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-057",
@@ -1202,7 +1258,8 @@ var confusionPairs = [
     "root_cause": "⚠️ Spion Bahasa Belanda = Mata-mata! Di Jepang, kaca spion kendaraan disebut サイドミラー (samping) atau バックミラー (tengah).",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-058",
@@ -1223,7 +1280,8 @@ var confusionPairs = [
     "root_cause": "⚠️ Gunakan Suitchi! Saklar adalah kata Belanda schakelaar. Jepang memakai スイッチ (suitchi).",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-059",
@@ -1244,7 +1302,8 @@ var confusionPairs = [
     "root_cause": "⚠️ Apotek = Kango 薬局! Orang Jepang membeli obat di 薬局 (やっきょく) atau ドラッグストア (doraggu sutoa).",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-060",
@@ -1265,7 +1324,8 @@ var confusionPairs = [
     "root_cause": "💡 WC jarang diucapkan lisan. Gunakan トイレ atau kata sopan お手洗い (おてあらい).",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-061",
@@ -1286,7 +1346,8 @@ var confusionPairs = [
     "root_cause": "⚠️ Karcis = Belanda kaartjes! Tiket transportasi kereta di Jepang selalu disebut 切符 (きっぷ).",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-062",
@@ -1307,7 +1368,8 @@ var confusionPairs = [
     "root_cause": "⚠️ Koper = Belanda koffer! Di Jepang barang bawaan perjalanan disebut スーツケース (sūtsukēsu).",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-063",
@@ -1328,7 +1390,8 @@ var confusionPairs = [
     "root_cause": "⚠️ Gratis = Gratis (Latin/Belanda)! Di Jepang gunakan 無料 (むりょう).",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-064",
@@ -1349,7 +1412,8 @@ var confusionPairs = [
     "root_cause": "⚠️ Pasien Medis = 患者 (かんじゃ)! Di fasilitas lansia/panti jompo, gunakan sebutan hormat 利用者様 (りようしゃさま).",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-065",
@@ -1370,7 +1434,8 @@ var confusionPairs = [
     "root_cause": "⚠️ Awas Tertukar di Rumah Sakit! Resep obat untuk pasien adalah 処方箋 (しょほうせん). Kata reseputo di Jepang berarti klaim biaya asuransi ke dinas kesehatan!",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-066",
@@ -1391,7 +1456,8 @@ var confusionPairs = [
     "root_cause": "",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-067",
@@ -1412,7 +1478,8 @@ var confusionPairs = [
     "root_cause": "",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-068",
@@ -1433,7 +1500,8 @@ var confusionPairs = [
     "root_cause": "",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-069",
@@ -1454,7 +1522,8 @@ var confusionPairs = [
     "root_cause": "",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-070",
@@ -1475,7 +1544,8 @@ var confusionPairs = [
     "root_cause": "",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-071",
@@ -1496,7 +1566,8 @@ var confusionPairs = [
     "root_cause": "",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-072",
@@ -1517,7 +1588,8 @@ var confusionPairs = [
     "root_cause": "",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-073",
@@ -1538,7 +1610,8 @@ var confusionPairs = [
     "root_cause": "",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-074",
@@ -1559,7 +1632,8 @@ var confusionPairs = [
     "root_cause": "",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-075",
@@ -1580,7 +1654,8 @@ var confusionPairs = [
     "root_cause": "",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-076",
@@ -1601,7 +1676,8 @@ var confusionPairs = [
     "root_cause": "",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-077",
@@ -1622,7 +1698,8 @@ var confusionPairs = [
     "root_cause": "",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-078",
@@ -1643,7 +1720,8 @@ var confusionPairs = [
     "root_cause": "",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-079",
@@ -1664,7 +1742,8 @@ var confusionPairs = [
     "root_cause": "",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-080",
@@ -1685,7 +1764,8 @@ var confusionPairs = [
     "root_cause": "",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-081",
@@ -1706,7 +1786,8 @@ var confusionPairs = [
     "root_cause": "⚠️ PEMBERIAN MENUJU SAYA = KURERU! Jika orang lain memberi kebaikan kepada SAYA atau KELUARGA SAYA, selalu gunakan くれる / くださる. Jangan pernah memakai ageru!",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-082",
@@ -1727,7 +1808,8 @@ var confusionPairs = [
     "root_cause": "⚠️ Menerima Kebaikan = 〜てもらう / いただく! Bentuk V-ていただく mengekspresikan rasa hormat dan terima kasih mendalam atas bimbingan guru.",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-083",
@@ -1748,7 +1830,8 @@ var confusionPairs = [
     "root_cause": "⚠️ DILARANG PAKAI 〜てあげる KE ATASAN! Terdengar sombong seperti bos memamerkan kebaikan. Kepada atasan/tamu, gunakan bentuk merendah: お + verba + しましょうか.",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-084",
@@ -1769,7 +1852,8 @@ var confusionPairs = [
     "root_cause": "⚠️ BAHAYA FATAL! Meminta tolong kepada atasan wajib memohon kebaikan mereka menuju kita: 〜ていただけませんか (Maukah Anda berbaik hati mengajari saya?).",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-085",
@@ -1790,7 +1874,8 @@ var confusionPairs = [
     "root_cause": "⚠️ Ibu memasak untuk SAYA = くれた! Kebaikan siapa pun yang mengalir masuk ke diri kita selalu ditandai くれる.",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-086",
@@ -1811,7 +1896,8 @@ var confusionPairs = [
     "root_cause": "💡 Saya yang berbuat kebaikan = あげる! Arah dari saya keluar menuju orang lain $\\rightarrow$ 〜てあげる.",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-087",
@@ -1832,7 +1918,8 @@ var confusionPairs = [
     "root_cause": "⚠️ Konfirmasi tindakan atasan = 〜ていただけましたか? Tanyakan dengan sopan apakah atasan telah berkenan melakukan tindakan tersebut.",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-088",
@@ -1853,7 +1940,8 @@ var confusionPairs = [
     "root_cause": "⚠️ Menerima jasa profesional medis = 〜てもらう! Pasien adalah pihak yang beruntung menerima pemeriksaan dokter: 診てもらった.",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-089",
@@ -1874,7 +1962,8 @@ var confusionPairs = [
     "root_cause": "💡 Memberi ke atasan = 差し上げる! Hormati atasan dengan bentuk merendah resmi: お土産を差し上げます.",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-090",
@@ -1895,7 +1984,8 @@ var confusionPairs = [
     "root_cause": "⚠️ Fokus pada penerima faedah! Pola: [Pihak ahli] に [Benda] を 直してもらう.",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-091",
@@ -1916,7 +2006,8 @@ var confusionPairs = [
     "root_cause": "⚠️ BALIK POSISI KATA BENDA! Bahasa Jepang tidak punya kata 'yang'. Taruh tindakan di depan, kata bendanya di belakang: [昨日来た] + 人.",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-092",
@@ -1937,7 +2028,8 @@ var confusionPairs = [
     "root_cause": "⚠️ RESTO DITARUH DI BELAKANG! Restoran adalah inti yang dijelaskan: [私がラーメンを食べた] + レストラン. Subjek anak kalimat ditandai が!",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-093",
@@ -1958,7 +2050,8 @@ var confusionPairs = [
     "root_cause": "⚠️ BAHAYA SUBJEK TERBALIK! Siapa yang membeli? Ayah (父が). Apa yang dibeli? Mobil (車). Susunan mutlak: [父が買った] + 車.",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-094",
@@ -1979,7 +2072,8 @@ var confusionPairs = [
     "root_cause": "💡 Gunakan Bentuk Aktif di Anak Kalimat! Tidak perlu dipasifkan. Cukup: [母が作った] + ケーキ (Kue buatan ibu).",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-095",
@@ -2000,7 +2094,8 @@ var confusionPairs = [
     "root_cause": "⚠️ Bungkus dulu frasanya! Frasa: [私がやりたい仕事] + ditutup partikel induk は見つからない.",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-096",
@@ -2021,7 +2116,8 @@ var confusionPairs = [
     "root_cause": "💡 Waktu masa lampau = Nomina + だった + 時! Untuk kondisi masa lalu yang sudah selesai: 子供だった時.",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-097",
@@ -2042,7 +2138,8 @@ var confusionPairs = [
     "root_cause": "⚠️ Letakkan FOTO di akhir frasa! Pola: [バリで撮った写真] を 見せたい. Jangan pisahkan fotonya di awal kalimat!",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-098",
@@ -2063,7 +2160,8 @@ var confusionPairs = [
     "root_cause": "⚠️ Janji itu dilakukan (suru), bukan dirakit (tsukuru)! Pola frasa: [友達とした] + 約束.",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-099",
@@ -2084,7 +2182,8 @@ var confusionPairs = [
     "root_cause": "💡 Ciri kamar ditaruh di depan! [タバコが吸えない] + 部屋 (Kamar dilarang merokok).",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-100",
@@ -2105,7 +2204,8 @@ var confusionPairs = [
     "root_cause": "⚠️ KATA ALASAN (理由) DITARUH DI UJUNG! Seluruh isi penjelas dirangkum di depan: [私が日本語を勉強する] + 理由.",
     "prescription": "",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-101",
@@ -2126,7 +2226,8 @@ var confusionPairs = [
     "root_cause": "L1 tapi digunakan bebas di tengah/awal kalimat. Demo dilarang mengikat dua klausa di tengah kalimat; shikashi terlalu kaku untuk lisan harian; koordinasi intraklausa wajib menggunakan ga atau kedo.",
     "prescription": "⚠️ DILARANG PAKAI でも DI TENGAH KALIMAT! Gunakan 〜が (sopan) atau 〜けど (akrab) untuk menyambung dua kalimat: 行きたいですが、お金がない. Simpan shikashi hanya untuk tulisan resmi/pidato!",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-102",
@@ -2147,7 +2248,8 @@ var confusionPairs = [
     "root_cause": "Kara menandai pembenaran subjektif penutur dan bernada mendikte/memerintah. Node menyatakan kausalitas objektif yang sopan dan tidak memaksakan ego penutur.",
     "prescription": "💡 Alasan Publik / SOP Kerja = ので! Gunakan node untuk situasi kerja, permohonan sopan, dan instruksi publik (危険なので). Simpan kara untuk opini pribadi atau ajakan informal sesama kawan.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-103",
@@ -2168,7 +2270,8 @@ var confusionPairs = [
     "root_cause": "L1 supaya/untuk netral. ために menuntut verba berkehendak (volitional) dengan subjek identik. Verba potensial (dekiru) atau kondisi non-volisional wajib dipasangkan dengan ように.",
     "prescription": "⚠️ Verba Potensial / Bisa Wajib ように! Bentuk 〜できる / kondisi di luar kendali langsung kehendak wajib dipasangkan dengan ように, BUKAN ために! Pola: 合格できるように勉強する.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-104",
@@ -2189,7 +2292,8 @@ var confusionPairs = [
     "root_cause": "L1 dan/lalu/lagipula sering disamaratakan. Soshite merangkai kronologi naratif berurutan, sedangkan soreni menambahkan bobot argumen/kelebihan yang searah (reinforcement).",
     "prescription": "💡 Menambah Alasan/Kelebihan = それに! Gunakan soreni untuk menambah poin positif/negatif yang sejalan (lagipula). Gunakan sorekara untuk urutan waktu (setelah itu).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-105",
@@ -2210,7 +2314,8 @@ var confusionPairs = [
     "root_cause": "L1 padahal sarat afeksi dongkol/kekecewaan ekspektasi. Menerjemahkan dengan konjungsi kontras netral (ga/kedo) menghapus muatan emosi interpersonil yang mutlak diwakili oleh noni.",
     "prescription": "⚠️ Padahal + Kecewa = のに! Jika kenyataan mengkhianati harapan dan memicu rasa kesal/sayang, gunakan V-biasa + のに. Jangan pakai ga/keredomo yang netral datar!",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-106",
@@ -2231,7 +2336,8 @@ var confusionPairs = [
     "root_cause": "Suruto menandai akibat langsung yang runtut dari tindakan sebelumnya. Tokoroga menandai realitas baru yang berlawanan 180 derajat dari ekspektasi awal penutur.",
     "prescription": "⚠️ Fakta Bertentangan = ところが! Tokoroga berarti \"namun ternyata di luar dugaan\". Suruto berarti \"seketika itu juga / begitu melakukan A, langsung B\".",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-107",
@@ -2252,7 +2358,8 @@ var confusionPairs = [
     "root_cause": "Pembelajar memaksakan kata hubung karena (kara). Dalam bahasa Jepang, pemicu emosi psikologis (ureshii,安心した) secara alamiah disambung langsung dengan bentuk penghubung 〜て / 〜で.",
     "prescription": "💡 Pemicu Emosi Cukup Bentuk-Te! Hubungan kausal rasa senang/kaget/sedih tidak perlu kara, cukup sambung dengan V-て / V-なくて: 会えて嬉しい, 聞けて安心した.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-108",
@@ -2273,7 +2380,8 @@ var confusionPairs = [
     "root_cause": "Ippou (de) membandingkan dua subjek/fenomena yang berbeda. Hanmen menyoroti dua sisi kontradiktif dari satu subjek/entitas yang sama (two sides of the same coin).",
     "prescription": "💡 Satu Hal Punya 2 Sisi = 反面! Gaji tinggi tapi capek adalah 2 sisi dari pekerjaan yang sama $\\rightarrow$ 反面. Gunakan 一方(で) bila membandingkan dua pihak berbeda (Divisi A vs Divisi B).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-109",
@@ -2294,7 +2402,8 @@ var confusionPairs = [
     "root_cause": "Tada adalah catatan sampingan subjektif dalam ragam lisan. Tadashi adalah konjungsi pembatas syarat legal/formal (proviso) yang wajib digunakan dalam teks operasional.",
     "prescription": "⚠️ Syarat Resmi & Aturan SOP = ただし! Gunakan tadashi untuk syarat mutlak dan perkecualian aturan SOP. Gunakan tada untuk percakapan santai (\"cuma ya...\").",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-110",
@@ -2315,7 +2424,8 @@ var confusionPairs = [
     "root_cause": "Dakara terdengar emosional, egosentris, dan mencari alasan. Laporan kerja dan pengumuman publik menuntut soko de (langkah tindakan yang diambil) atau shitagatte (konsekuensi logis resmi).",
     "prescription": "⚠️ JANGAN GUNAKAN だから DI LAPORAN KERJA! Dakara terdengar membela diri atau menyalahkan situasi. Gunakan そこで (maka kami mengambil tindakan X) atau したがって (dengan demikian).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-111",
@@ -2336,7 +2446,8 @@ var confusionPairs = [
     "root_cause": "Tsumari berfungsi menyimpulkan inti argumen panjang (\"singkat kata / intinya\"). Sunawachi adalah aposisi penjelas identitas ekuivalen formal (\"yaitu / dengan kata lain A = B\").",
     "prescription": "💡 Yaitu / Definisi Identik = すなわち! Sunawachi menyamakan dua entitas secara persis (A = B). Tsumari digunakan untuk merangkum kesimpulan akhir dari pembicaraan panjang.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-112",
@@ -2357,7 +2468,8 @@ var confusionPairs = [
     "root_cause": "Dalam L1, kata soalnya ditaruh bebas di depan klausa. Di L2, struktur nazenara mewajibkan korelasi berpasangan di akhir kalimat dengan 〜からだ / 〜ためだ.",
     "prescription": "⚠️ なぜなら WAJIB DITUTUP 〜からだ! Membuka kalimat dengan nazenara tanpa menutup dengan 〜からです membuat kalimat terkatung-katung secara gramatikal!",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-113",
@@ -2378,7 +2490,8 @@ var confusionPairs = [
     "root_cause": "Eror leksikal false friend: pembelajar mengira mata dan matawa identik. Mata berarti \"dan juga / selain itu\" (keduanya), sedangkan matawa berarti \"atau\" (pilih salah satu).",
     "prescription": "⚠️ A atau B = または! • また = dan juga / selain itu (kumulatif). • または = atau (alternatif disjungtif). Jangan sampai keliru pada dokumen administratif!",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-114",
@@ -2399,7 +2512,8 @@ var confusionPairs = [
     "root_cause": "Pembelajar mentransfer konjungsi atau dengan menaruh partikel tanya ka di awal kalimat kedua. Partikel ka tidak bisa berdiri sendiri di awal kalimat; wajib memakai soretomo.",
     "prescription": "⚠️ Partikel か DILARANG DI AWAL KALIMAT! Untuk menanyakan pilihan di antara dua pertanyaan terpisah, gunakan kata penghubung それとも: Aですか？それともBですか？.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-115",
@@ -2420,7 +2534,8 @@ var confusionPairs = [
     "root_cause": "Moshi adalah pengandaian sehari-hari biasa. Dalam SOP K3 rousai dan keselamatan industri, kemungkinan buruk yang kecil namun berakibat fatal wajib diawali 万一 atau 万が一.",
     "prescription": "💡 Mitigasi Bahaya Gemba = 万が一! Untuk peristiwa darurat fatal berprobabilitas rendah (kebakaran, kecelakaan mesin), gunakan 万が一 (まんがいち) sebagai penanda kehati-hatian maksimal.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-116",
@@ -2441,7 +2556,8 @@ var confusionPairs = [
     "root_cause": "L1 membingungkan dugaan visual (-sou) dengan kabar angin (sou da). Bentuk visual membuang akhiran -i (oishisou), sedangkan kabar angin menempel utuh pada bentuk kamus (oishii sou da).",
     "prescription": "⚠️ BUANG AKHIRAN 'I' UNTUK KESAN VISUAL! • 美味しそう = Kelihatannya lezat (mata melihat langsung). • 美味しいそうだ = Katanya lezat (mendengar info dari orang lain).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-117",
@@ -2462,7 +2578,8 @@ var confusionPairs = [
     "root_cause": "Rashii digunakan untuk kesimpulan berdasarkan desas-desus pihak luar. Bila penutur melihat bukti fisik nyata dengan mata kepala sendiri di depan mata, wajib menggunakan ようだ / みたいだ.",
     "prescription": "⚠️ Ada Bukti Fisik Nyata = ようだ / みたいだ! Melihat jalan basah atau bekas tapak kaki adalah bukti fisik langsung $\\rightarrow$ gunakan ようだ. Gunakan らしい jika didasarkan pada kabar burung.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-118",
@@ -2483,7 +2600,8 @@ var confusionPairs = [
     "root_cause": "Mitaida terbatas pada percakapan santai lisan. Dalam penulisan esai formal, deskripsi kerja, atau pidato resmi, perumpamaan wajib dikonstruksikan dengan 〜のように / 〜のような.",
     "prescription": "💡 Ragam Formal & Laporan Resmi = のように! Hubungan simile dalam tulisan resmi: [Nomina] + のように. Simpan みたいに hanya untuk obrolan santai sehari-hari.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-119",
@@ -2504,7 +2622,8 @@ var confusionPairs = [
     "root_cause": "Deshou dengan intonasi naik mencari persetujuan lawan bicara (\"...kan?\"). Intonasi turun menyatakan estimasi probabilitas penutur (~70-80%).",
     "prescription": "⚠️ AWAS INTONASI DESHOU! • Intonasi turun ↘ = perkiraan penutur (\"tampaknya besok hujan\"). • Intonasi naik ↗ = meminta persetujuan (\"hujan, kan?\"). Bila ragu, gunakan かもしれません.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-120",
@@ -2525,7 +2644,8 @@ var confusionPairs = [
     "root_cause": "Dalam L1, kata mungkin cukup diletakkan di depan. Di L2, kata keterangan tabun saja tidak cukup; predikat di akhir kalimat WAJIB dikunci modalitas epistemik 〜かもしれない.",
     "prescription": "⚠️ Tabun WAJIB Ditutup かもしれない! Bahasa Jepang mengunci derajat kepastian di ujung kalimat. Menaruh tabun di depan tanpa かもしれない di belakang terdengar tidak tuntas!",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-121",
@@ -2546,7 +2666,8 @@ var confusionPairs = [
     "root_cause": "L1 seharusnya mendua makna antara kalkulasi logis/jadwal dan tuntutan moral. Di L2, ekspektasi logis berdasarkan jadwal = はずだ, tuntutan etika/kewajiban = べきだ.",
     "prescription": "⚠️ Jadwal/Logika = はず! Kewajiban Etika = べき! • Tiba sesuai jadwal $\\rightarrow$ 着くはずだ. • Melakukan kewajiban moral $\\rightarrow$ 謝るべきだ. Jangan tertukar!",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-122",
@@ -2567,7 +2688,8 @@ var confusionPairs = [
     "root_cause": "Kanarazu adalah adverbia kepastian tindakan masa depan (\"pasti akan kulakukan\"). Keyakinan deduktif penutur terhadap sebuah fakta masa kini wajib menggunakan 〜に違いない.",
     "prescription": "⚠️ Menebak Yakin 100% = に違いない! Gunakan 〜に違いない untuk keyakinan deduktif (\"pasti dia pelakunya\"). Gunakan 必ず untuk janji kepastian tindakan (\"pasti saya selesaikan\").",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-123",
@@ -2588,7 +2710,8 @@ var confusionPairs = [
     "root_cause": "Penutur Indonesia bingung menyatakan rasa paham rasional (pantas saja). Ketika sebuah fenomena terpecahkan alasan logisnya, konstruksi penutupnya adalah 〜わけだ.",
     "prescription": "💡 Pantas Saja = 〜わけだ! Saat Anda akhirnya memahami akar penyebab dari suatu kondisi (\"Oh, ternyata karena ini, pantas saja!\"), tutup kalimat dengan 〜わけだ / 〜わけですね.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-124",
@@ -2609,7 +2732,8 @@ var confusionPairs = [
     "root_cause": "L1 membedakan negasi total (tidak setuju) dan sanggahan parsial diplomatis (bukan berarti setuju). Tanpa 〜わけではない, penolakan terdengar kasar dan tidak bernuansa.",
     "prescription": "💡 Bukan Berarti Begitu = 〜わけではない! Gunakan pola 〜わけではない untuk menepis kesalahpahaman atau memperhalus sanggahan secara santun dan diplomatis.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-125",
@@ -2630,7 +2754,8 @@ var confusionPairs = [
     "root_cause": "Mono da mengekspresikan hakikat alamiah dari suatu entitas (intrinsic property of things). Pembelajar sering menggantinya dengan nominalisasi deskriptif kaku koto da.",
     "prescription": "💡 Hakikat Umum / Wajarnya Begitu = ものだ! Untuk menyatakan fitrah manusia, hukum alam, atau norma sosial umum: gunakan V-kamus + ものだ.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-126",
@@ -2651,7 +2776,8 @@ var confusionPairs = [
     "root_cause": "Beki da menyiratkan kewajiban moral/hukum yang menekan. Untuk saran praktis dari pihak berpengalaman kepada orang yang butuh solusi, gunakan V-kamus / V-nai + ことだ.",
     "prescription": "💡 Saran Praktis Solutif = ことだ! Gunakan 〜ことだ untuk tips/anjuran solusi terbaik (\"sebaiknya kamu...\"). Hindari べきだ kecuali menyangkut norma etika atau hukum berat.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-127",
@@ -2672,7 +2798,8 @@ var confusionPairs = [
     "root_cause": "L1 harus digeneralisasi menjadi なければならない. Padahal panggilan hati nurani dan prinsip moral masyarakat diungkapkan secara tepat melalui modalitas etis べきだ.",
     "prescription": "💡 Kewajiban Nurani & Moral = べきだ! • Aturan hukum / SOP gemba $\\rightarrow$ 〜なければならない. • Panggilan moral / etika kepantasan $\\rightarrow$ 〜べきだ.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-128",
@@ -2693,7 +2820,8 @@ var confusionPairs = [
     "root_cause": "Menggunakan kondisional biasa tara mengimplikasikan hal itu mungkin terjadi. Pengandaian atas hal yang mustahil/sangat kecil kemungkinan terwujudnya menuntut V-potensial + ものなら.",
     "prescription": "⚠️ Andai Hal Mustahil Bisa Terwujud = ものなら! Gunakan V-potensial + ものなら untuk impian atau angan-angan yang bertentangan dengan hukum kenyataan fisik.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-129",
@@ -2714,7 +2842,8 @@ var confusionPairs = [
     "root_cause": "Hazu da bersandar pada kalkulasi logis objektif. Keyakinan subjektif yang didasari intuisi spontan, emosi, atau prasangka pribadi mutlak menggunakan 〜に決まっている.",
     "prescription": "💡 Jelas-Jelas Pasti Begitu = に決まっている! Gunakan saat Anda merasa tidak ada kemungkinan lain berdasarkan intuisi subjektif penutur (\"sudah pasti dong!\").",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-130",
@@ -2735,7 +2864,8 @@ var confusionPairs = [
     "root_cause": "L1 nggak mungkin menuntut sanggahan mutlak. Menggunakan negasi sederhana (nai deshou) terdengar ragu-ragu dan gagal menyampaikan keyakinan 0% probabilitas.",
     "prescription": "⚠️ Mustahil / 0% Kemungkinan = はずがない! Untuk menyangkal dugaan secara kategoris berdasarkan logika akal sehat, gunakan 〜はずがない atau 〜わけがない!",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-131",
@@ -2756,7 +2886,8 @@ var confusionPairs = [
     "root_cause": "Sangat Kasar: Partikel yo memaksakan informasi ke wilayah pendengar (Kamio 1990). Kepada atasan, yo terdengar seperti membentak atau menggurui: \"Kemarin sudah kukirim, masa kamu tidak tahu?!",
     "prescription": "⚠️ DILARANG PAKAI よ KE ATASAN / TAMU! Akhiran yo memberi kesan menggurui atau menyalahkan lawan bicara yang dianggap lalai. Cukup tutup dengan bentuk sopan netral 〜ました / kenjougo!",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "javanese"
   },
   {
     "id": "cp-l1-132",
@@ -2777,7 +2908,8 @@ var confusionPairs = [
     "root_cause": "Bizarre: Partikel ne menuntut informasi berada di teritori bersama. Memberitakan peristiwa privat yang lawan bicara BELUM tahu memakai ne terdengar aneh, seolah lawan bicara yang melahirkan bayi tersebut.",
     "prescription": "⚠️ Berita Baru yang Teman Belum Tahu = JANGAN PAKAI ね! Ne hanya untuk hal yang sudah diketahui bersama. Bila Anda membagikan informasi baru milik Anda, gunakan よ atau んだ.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-133",
@@ -2798,7 +2930,8 @@ var confusionPairs = [
     "root_cause": "Yone mengonfirmasi ingatan penutur sekaligus mengajak lawan bicara memvalidasi fakta yang dipercaya sama-sama diketahui kedua belah pihak.",
     "prescription": "💡 Konfirmasi Saling Tahu = 〜ですよね! Saat Anda yakin tetapi ingin mencocokkan ingatan dengan rekan kerja (\"jam 10 kan ya?\"), kombinasi よね adalah pilihan paling natural.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-134",
@@ -2819,7 +2952,8 @@ var confusionPairs = [
     "root_cause": "Partikel sa meredakan tensi percakapan, menegaskan hal lumrah yang tak perlu diperdebatkan (obvious matter-of-fact) tanpa kesan menggurui seperti yo.",
     "prescription": "💡 Partikel さ = Menenangkan & Santai! Gunakan partikel さ di akhir ujaran sesama kawan akrab untuk menyatakan hal wajar secara rileks (\"ya biasalah / santai saja\").",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-135",
@@ -2840,7 +2974,8 @@ var confusionPairs = [
     "root_cause": "Ne menuntut kehadiran lawan bicara. Ketika berbicara kepada diri sendiri (soliloquy / internal speech), bahasa Jepang mewajibkan partikel evaluatif batin なあ / な.",
     "prescription": "💡 Bergumam Sendiri Wajib なあ! Jika berbicara kepada diri sendiri tanpa mengajak orang lain, jangan gunakan ね. Gunakan 〜なあ (疲れたなあ, 困ったなあ).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-136",
@@ -2861,7 +2996,8 @@ var confusionPairs = [
     "root_cause": "Partikel tanya ka pada ragam santai terdengar tajam dan menuntut jawaban seketika. Partikel かな melembutkan pertanyaan menjadi keraguan diri yang sopan.",
     "prescription": "💡 Tanya Batin & Nanya Halus = かな! Akhiran 〜かな membuat pertanyaan terdengar halus dan tidak memojokkan lawan bicara.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "CRITICAL"
+    "fossilization_risk": "CRITICAL",
+    "l1_substratum": "javanese"
   },
   {
     "id": "cp-l1-137",
@@ -2882,7 +3018,8 @@ var confusionPairs = [
     "root_cause": "Di Tokyo standar, wa intonasi naik adalah penanda feminin klasik. Di area Kansai (Osaka/Kobe), wa intonasi datar/turun adalah penanda netral gender yang lazim di tempat kerja.",
     "prescription": "💡 Awas Konteks Wilayah Partikel わ! Di Tokyo standar, 〜わ terkesan feminin klasik. Di area industri Kansai, 〜わ dipakai semua gender dengan intonasi datar/turun.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "CRITICAL"
+    "fossilization_risk": "CRITICAL",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-138",
@@ -2903,7 +3040,8 @@ var confusionPairs = [
     "root_cause": "Fatal di Dunia Kerja: Akhiran mon/mono adalah pembelaan diri emosional yang sangat kekanak-kanakan (childish pout). Meniru anime di tempat kerja merusak kredibilitas profesional.",
     "prescription": "⚠️ DILARANG PAKAI もん DI TEMPAT KERJA! Akhiran 〜もん / 〜もの terdengar seperti anak kecil yang merajuk manja. Di kantor, akui kesalahan dengan permohonan maaf resmi!",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "CRITICAL"
+    "fossilization_risk": "CRITICAL",
+    "l1_substratum": "javanese"
   },
   {
     "id": "cp-l1-139",
@@ -2924,7 +3062,8 @@ var confusionPairs = [
     "root_cause": "Dalam ragam tertulis regulasi pabrik (gemba manual), V-kamus + こと berfungsi sebagai perintah instruksional wajib yang berkekuatan hukum SOP.",
     "prescription": "💡 Instruksi SOP Tertulis = V-kamus + こと! Di tempat kerja manufaktur dan SOP K3, perintah tertulis wajib diakhiri 〜こと (保護具を着用すること).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "CRITICAL"
+    "fossilization_risk": "CRITICAL",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-140",
@@ -2945,7 +3084,8 @@ var confusionPairs = [
     "root_cause": "Kalimat tanya ragam biasa yang ditutup partikel ka terdengar kaku, dingin, dan mengintimidasi seperti introgasi. Ragam akrab alami menggunakan 〜の？ atau 〜んだい？.",
     "prescription": "💡 Tanya Kasual Akrab = 〜の？ / 〜んだい？ Jangan gunakan V-biasa + か karena terkesan kasar dan mengintimidasi! Gunakan 〜の？ untuk gaya netral akrab.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "CRITICAL"
+    "fossilization_risk": "CRITICAL",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-141",
@@ -2966,7 +3106,8 @@ var confusionPairs = [
     "root_cause": "Eror Fatal: Kondisional 〜と HANYA berlaku untuk hukum alam atau reaksi otomatis mesin. Klausa kedua (apodosis) DILARANG KERAS memuat permohonan (kudasai), ajakan, atau kehendak penutur!",
     "prescription": "⚠️ Kondisional と DILARANG DIIKUTI PERMOHONAN! 〜と mutlak untuk reaksi otomatis (tekan tombol $\\rightarrow$ air keluar). Jika kalimat belakang berisi permohonan (〜てください) atau ajakan, WAJIB gunakan 〜たら!",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "CRITICAL"
+    "fossilization_risk": "CRITICAL",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-142",
@@ -2987,7 +3128,8 @@ var confusionPairs = [
     "root_cause": "〜ば mengisolasi klausa pertama sebagai syarat prasyarat esensial (indispensable condition). Penggunaan to keliru karena pergi ke luar negeri bukan reaksi mekanis otomatis dari kepemilikan paspor.",
     "prescription": "💡 Syarat Penentu Kunci = 〜ば! Gunakan bentuk 〜ば saat Anda ingin menegaskan: \"Hanya jika syarat kunci ini terpenuhi, maka hasilnya baru bisa terwujud\".",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "CRITICAL"
+    "fossilization_risk": "CRITICAL",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-143",
@@ -3008,7 +3150,8 @@ var confusionPairs = [
     "root_cause": "Tara adalah kondisional temporal sekuensial (\"bila A sudah tuntas terlaksana\"). Bentuk ini merupakan satu-satunya kondisional yang sepenuhnya bebas diikuti ajakan (〜ましょう) atau perintah.",
     "prescription": "💡 Kalau Sudah Tuntas + Ajakan = 〜たら! Rumus paling aman dalam percakapan sehari-hari untuk rencana berurutan: [Selesai A] たら、[Ayo lakukan B].",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "CRITICAL"
+    "fossilization_risk": "CRITICAL",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-144",
@@ -3029,7 +3172,8 @@ var confusionPairs = [
     "root_cause": "なら mengambil informasi atau topik yang baru saja diutarakan lawan bicara sebagai landasan pemberian saran. Memakai tara keliru karena menyiratkan penutur harus membeli dulu baru tokonya bagus.",
     "prescription": "⚠️ Menanggapi Topik Teman = なら! Gunakan 〜なら untuk memberi rekomendasi atas topik yang diucapkan lawan bicara: \"Kalau yang kamu maksud adalah X, maka solusinya Y\".",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "CRITICAL"
+    "fossilization_risk": "CRITICAL",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-145",
@@ -3050,7 +3194,8 @@ var confusionPairs = [
     "root_cause": "Bentuk 〜ば dilarang digunakan untuk melaporkan peristiwa nyata masa lalu yang sudah terjadi. Penemuan fakta tak terduga (unexpected discovery / kikkake) wajib memakai V-kamus + と atau V-tara + lampau.",
     "prescription": "⚠️ DILARANG PAKAI 〜ば UNTUK FAKTA MASA LALU! Melaporkan penemuan nyata di masa lalu (\"begitu membuka jendela, ternyata...\") hanya boleh memakai 〜と atau 〜たら, TIDAK BOLEH pakai 〜ば!",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "CRITICAL"
+    "fossilization_risk": "CRITICAL",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-146",
@@ -3071,7 +3216,8 @@ var confusionPairs = [
     "root_cause": "Pembelajar memaksakan pola saran 〜ほうがいい ke masa lalu. Untuk mengekspresikan penyesalan mendalam atas tindakan yang tidak sempat dilakukan, konstruksi baku adalah V-ばよかった.",
     "prescription": "⚠️ Penyesalan \"Harusnya Dulu Begitu\" = 〜ばよかった! Jangan pakai hou ga yokatta. Gunakan bentuk penyesalan kontrafaktual: V-ばよかった (\"andai saja dulu kulakukan!\").",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "CRITICAL"
+    "fossilization_risk": "CRITICAL",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-147",
@@ -3092,7 +3238,8 @@ var confusionPairs = [
     "root_cause": "Dalam SOP keselamatan industri rousai, kelalaian memakai APD dihubungkan dengan bahaya fatal. Bentuk なければ dan ないと memberikan sinyal ketegasan hukum yang jauh lebih kuat dibanding nakattara.",
     "prescription": "💡 Peringatan Bahaya Gemba = 〜なければ / 〜ないと! Untuk memperingatkan akibat buruk jika SOP diabaikan, gunakan V-なければ atau V-ないと: 確認しないと危険です.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "CRITICAL"
+    "fossilization_risk": "CRITICAL",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-148",
@@ -3113,7 +3260,8 @@ var confusionPairs = [
     "root_cause": "Untuk eksperimen pikiran atau pengandaian abstrak yang bertentangan dengan kenyataan saat ini, konstruksi 〜としたら mempertegas status premis sebagai dunia andaian murni.",
     "prescription": "💡 Hipotesis Abstrak / Andaian Murni = 〜としたら! Gunakan 〜としたら untuk menguji skenario imajiner (\"seandainya benar-benar terjadi...\").",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "CRITICAL"
+    "fossilization_risk": "CRITICAL",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-149",
@@ -3134,7 +3282,8 @@ var confusionPairs = [
     "root_cause": "L1 walaupun dan padahal tertukar. 〜ても / 〜demo adalah konsesif prospektif (\"apapun situasinya, tindakan tetap berjalan\"), sedangkan 〜のに adalah keluhan atas fakta nyata yang mengecewakan.",
     "prescription": "⚠️ Biar Bagaimanapun = 〜ても / 〜でも! • 雨でも行く = Walaupun hujan, saya tetap pergi (tekad/kondisi ke depan). • 雨なのに来た = Padahal hujan, dia malah datang (keluhan realitas lampau).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "CRITICAL"
+    "fossilization_risk": "CRITICAL",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-l1-150",
@@ -3155,7 +3304,8 @@ var confusionPairs = [
     "root_cause": "Eror Morfologis Fatal: Menempelkan kata sifat-i langsung dengan demo (isogashii demo) adalah kesalahan fatal pembelajar Indonesia. Konsesif ekstrem menuntut pola 〜にしても (\"bahkan jika mengakui kondisi itu...\").",
     "prescription": "⚠️ KATA SIFAT-I DILARANG DITEMPEL 'DEMO' LANGSUNG! Tidak ada kata isogashii-demo! Gunakan bentuk te-mo (忙しくても) atau konsesif tajam: 忙しいにしても (\"meskipun memang sibuk...\").",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "CRITICAL"
+    "fossilization_risk": "CRITICAL",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-001",
@@ -3166,7 +3316,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-001",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "箸 (Sumpit) vs. 橋 (Jembatan)",
@@ -3178,7 +3328,9 @@ var confusionPairs = [
     "root_cause": "L1 menerapkan intonasi datar atau menaikkan nada di akhir kata, mengaburkan posisi penurunan pitch.",
     "prescription": "Visualizer: [箸: ＼_], [橋: _／＼]. Latihan diskriminasi A/B dengan konteks makan vs. jalan.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "atamadaka"
   },
   {
     "id": "cp-phon-002",
@@ -3189,7 +3341,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-002",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "雨 (Hujan) vs. 飴 (Permen)",
@@ -3201,7 +3353,9 @@ var confusionPairs = [
     "root_cause": "Mengasimilasikan vokal /a/ awal dengan volume keras (stress), mengubah permen menjadi hujan.",
     "prescription": "Visualizer: [雨: ＼_], [飴: _￣]. Tes audio recognition sebelum kartu bertipe input teks.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "heiban"
   },
   {
     "id": "cp-phon-003",
@@ -3212,7 +3366,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-003",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "牡蠣 (Tiram Laut) vs. 柿 (Buah Kesemek)",
@@ -3224,7 +3378,9 @@ var confusionPairs = [
     "root_cause": "L1 mentransfer penekanan silabel awal secara acak, gagal membedakan seafood vs buah.",
     "prescription": "Multi-speaker HVPT audio (suara pria & wanita) mengontraskan penangkapan tiram vs panen buah.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "heiban"
   },
   {
     "id": "cp-phon-004",
@@ -3235,7 +3391,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-004",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "雲 (Awan) vs. 蜘蛛 (Laba-laba)",
@@ -3247,7 +3403,9 @@ var confusionPairs = [
     "root_cause": "Mengabaikan aksen nada kedua, menganggap kedua kata homofon murni.",
     "prescription": "Visual kontur $F_0$: garis curam turun di mora 1 (雲) vs penurunan setelah partikel (蜘蛛が).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "atamadaka"
   },
   {
     "id": "cp-phon-005",
@@ -3258,7 +3416,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-005",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "酒 (Minuman Beralkohol) vs. 鮭 (Ikan Salmon)",
@@ -3270,7 +3428,9 @@ var confusionPairs = [
     "root_cause": "Menyamakan nada awal, memproduksi sake (alkohol) dengan nada tinggi di awal seperti shake.",
     "prescription": "Kartu A/B minimal pair: audio cepat di gemba kantin makanan olahan.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "heiban"
   },
   {
     "id": "cp-phon-006",
@@ -3281,7 +3441,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-006",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "神 (Tuhan / Dewa) vs. 紙 (Kertas) vs. 髪 (Rambut)",
@@ -3293,7 +3453,9 @@ var confusionPairs = [
     "root_cause": "Mentransfer nada tinggi pada kata benda sakral atau mengucapkan semuanya secara heiban datar.",
     "prescription": "Triad contrast matrix. Menampilkan partikel が untuk membedakan [1] vs [2].",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "atamadaka"
   },
   {
     "id": "cp-phon-007",
@@ -3304,7 +3466,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-007",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "息 (Napas) vs. 行き (Tujuan / Pergi)",
@@ -3316,7 +3478,9 @@ var confusionPairs = [
     "root_cause": "Nada penultima bahasa Indonesia menaikkan mora pertama, membuat iki (tujuan) terdengar seperti napas.",
     "prescription": "Indikator visual H/L dot: ●○ (iki napas) vs ○● (iki tujuan).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "heiban"
   },
   {
     "id": "cp-phon-008",
@@ -3327,7 +3491,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-008",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "朝 (Pagi Hari) vs. 麻 (Serat Rami / Ganja)",
@@ -3339,7 +3503,9 @@ var confusionPairs = [
     "root_cause": "Meratakan nada morfem dua-silabel, mengabaikan penurunan nada tajam pada kata asa.",
     "prescription": "Audio kontras: penutur asli Tokyo melafalkan \"Asa no jikan\" vs \"Asa no nuno\".",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "atamadaka"
   },
   {
     "id": "cp-phon-009",
@@ -3350,7 +3516,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-009",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "今 (Sekarang) vs. 居間 (Ruang Tamu)",
@@ -3362,7 +3528,9 @@ var confusionPairs = [
     "root_cause": "Pembelajar memanjangkan vokal /i/ karena tekanan stres L1, mengacaukan adverbia waktu vs ruang.",
     "prescription": "Kontur garis tajam: [今: ¯\\_], [居間: _/¯\\ (partikel turun)].",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "atamadaka"
   },
   {
     "id": "cp-phon-010",
@@ -3373,7 +3541,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-010",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "花 (Bunga) vs. 鼻 (Hidung)",
@@ -3385,7 +3553,9 @@ var confusionPairs = [
     "root_cause": "Menganggap keduanya identik karena dalam isolasi tanpa partikel keduanya berbunyi L-H.",
     "prescription": "Kunci diskriminasi pada partikel: 花が (turun di ga) vs 鼻が (tetap tinggi di ga).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "heiban"
   },
   {
     "id": "cp-phon-011",
@@ -3396,7 +3566,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-011",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "歯 (Gigi) vs. 葉 (Daun)",
@@ -3408,7 +3578,9 @@ var confusionPairs = [
     "root_cause": "Monosyllabic pitch collapse: L1 tidak mampu mempertahankan nada tinggi tunggal pada 1 mora.",
     "prescription": "Pelatihan moraic latching: memperjelas hentakan nada H pada kata benda 1-mora sebelum partikel.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "atamadaka"
   },
   {
     "id": "cp-phon-012",
@@ -3419,7 +3591,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-012",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "首 (Leher) vs. 窪 (Lekukan / Cekungan)",
@@ -3431,7 +3603,9 @@ var confusionPairs = [
     "root_cause": "Melafalkan kubi (leher) dengan penurunan di akhir kata, menyerupai lekukan tanah.",
     "prescription": "Rekaman multi-talker 3 pembicara dengan penekanan pada kestabilan nada partikel kasus ga.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "heiban"
   },
   {
     "id": "cp-phon-013",
@@ -3442,7 +3616,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-013",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "秋 (Musim Gugur) vs. 空き (Kekosongan / Ruang Bebas)",
@@ -3454,7 +3628,9 @@ var confusionPairs = [
     "root_cause": "Mentransfer nada tinggi ke akhir kata karena mengira kata benda musim adalah heiban.",
     "prescription": "Grafis kontur nada warna kontras: Biru (H-L) untuk Musim Gugur, Oranye (L-H-H) untuk Kamar Kosong.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "heiban"
   },
   {
     "id": "cp-phon-014",
@@ -3465,7 +3641,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-014",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "音 (Bunyi / Suara) vs. 夫 (Suami)",
@@ -3477,7 +3653,9 @@ var confusionPairs = [
     "root_cause": "L1 menerapkan intonasi seragam pada vokal awal /o/, memicu kebingungan subjek.",
     "prescription": "Latihan audio diskriminasi: \"Kono oto\" (suara ini) vs \"Watashi no otto\".",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "atamadaka"
   },
   {
     "id": "cp-phon-015",
@@ -3488,7 +3666,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-015",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "海 (Laut) vs. 膿 (Nanah)",
@@ -3500,7 +3678,9 @@ var confusionPairs = [
     "root_cause": "Melafalkan nanah medis (umi) dengan nada tinggi di awal seperti laut (úmi).",
     "prescription": "Critical Medical Flag: Latihan identifikasi audio berulang dengan threshold kelulusan 100%.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "heiban"
   },
   {
     "id": "cp-phon-016",
@@ -3511,7 +3691,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-016",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "靴 (Sepatu) vs. 苦痛 (Rasa Sakit / Derita)",
@@ -3523,7 +3703,9 @@ var confusionPairs = [
     "root_cause": "Mengompresi durasi vokal panjang pada kutsuu, menjadikannya terdengar seperti kutsu (sepatu).",
     "prescription": "Gabungan Chōon + Pitch: Visual baris durasi mora (●● vs ●●●●) disinkronkan nada.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "heiban"
   },
   {
     "id": "cp-phon-017",
@@ -3534,7 +3716,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-017",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "虹 (Pelangi) vs. 二時 (Pukul Dua)",
@@ -3546,7 +3728,9 @@ var confusionPairs = [
     "root_cause": "L1 menerapkan aksen waktu (jam) pada fenomena alam pelangi.",
     "prescription": "Audio recognition: Membedakan níji (jam 2) vs nijí (pelangi).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "heiban"
   },
   {
     "id": "cp-phon-018",
@@ -3557,7 +3741,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-018",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "猿 (Monyet) vs. 去る (Pergi / Meninggalkan)",
@@ -3569,7 +3753,9 @@ var confusionPairs = [
     "root_cause": "Mengucapkan piring (sara) dengan atamadaka, terdengar seperti monyet (saru).",
     "prescription": "Latihan minimal pair: sara (piring [0]) vs saru (monyet [1]).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "heiban"
   },
   {
     "id": "cp-phon-019",
@@ -3580,7 +3766,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-019",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "熱 (Demam / Panas) vs. netsu (vokal)",
@@ -3592,7 +3778,9 @@ var confusionPairs = [
     "root_cause": "Pembelajar melafalkan netsu sebagai atamadaka (H-L) karena asosiasi kata darurat.",
     "prescription": "Pola Odaka: nada naik di tsu, jatuh bebas pada partikel ga (ne-TSÚ-ga).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "nakadaka"
   },
   {
     "id": "cp-phon-020",
@@ -3603,7 +3791,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-020",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "服 (Pakaian) vs. 拭く (Menyeka / Mengelap)",
@@ -3615,7 +3803,9 @@ var confusionPairs = [
     "root_cause": "Menyamakan kata kerja menyeka meja (fuku) dengan kata benda pakaian (fuku).",
     "prescription": "Verba heiban vs nomina odaka: visualisasi penurunan nada pada partikel objek.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "heiban"
   },
   {
     "id": "cp-phon-021",
@@ -3626,7 +3816,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-021",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "切る (Memotong) vs. 着る (Memakai Baju)",
@@ -3638,7 +3828,9 @@ var confusionPairs = [
     "root_cause": "Menggunakan nada datar untuk memotong, menghasilkan kalimat \"memakai sayuran\" (yasai o kiru).",
     "prescription": "Verba minimal pair fundamental N5: [切る: ＼_] vs [着る: _￣].",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "heiban"
   },
   {
     "id": "cp-phon-022",
@@ -3649,7 +3841,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-022",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "帰る (Pulang) vs. 変える (Mengubah) vs. 飼う (Memelihara)",
@@ -3661,7 +3853,9 @@ var confusionPairs = [
     "root_cause": "Melafalkan pulang kerja dengan nada heiban, terdengar seperti mengubah jadwal.",
     "prescription": "Latihan konjugasi: kaeru [1] (H-L-L) vs kaeru [0] (L-H-H).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "heiban"
   },
   {
     "id": "cp-phon-023",
@@ -3672,7 +3866,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-023",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "見る (Melihat) vs. 診る (Memeriksa Medis)",
@@ -3684,7 +3878,9 @@ var confusionPairs = [
     "root_cause": "Menyamakan pola verba 2-mora dengan verba derivasi 3-mora.",
     "prescription": "Umpan balik visual $F_0$ real-time CAPT.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "atamadaka"
   },
   {
     "id": "cp-phon-024",
@@ -3695,7 +3891,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-024",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "知る (Mengetahui / Kenal) vs. 汁 (Kuah / Sup)",
@@ -3707,7 +3903,9 @@ var confusionPairs = [
     "root_cause": "Menyebut kuah sup (shiru) dengan pola kata kerja heiban datar.",
     "prescription": "Kontras nomina [1] vs verba [0].",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "heiban"
   },
   {
     "id": "cp-phon-025",
@@ -3718,7 +3916,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-025",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "春 (Musim Semi) vs. 貼る (Menempelkan)",
@@ -3730,7 +3928,9 @@ var confusionPairs = [
     "root_cause": "Mengucapkan perintah menempel stiker label K3 (haru) dengan nada musim semi.",
     "prescription": "Diskriminasi audio HVPT minimal pair verba operasional.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "heiban"
   },
   {
     "id": "cp-phon-026",
@@ -3741,7 +3941,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-026",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "昼 (Siang Hari) vs. 蛭 (Lintah)",
@@ -3753,7 +3953,9 @@ var confusionPairs = [
     "root_cause": "Menyebut istirahat siang dengan atamadaka, terdengar seperti hama lintah.",
     "prescription": "Latihan membedakan penurunan nada partikel pada kata 2-mora.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "atamadaka"
   },
   {
     "id": "cp-phon-027",
@@ -3764,7 +3966,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-027",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "夜 (Malam Hari) vs. 寄る (Mampir / Mendekat)",
@@ -3776,7 +3978,9 @@ var confusionPairs = [
     "root_cause": "Mengucapkan waktu malam dengan nada rendah-tinggi, terdengar seperti perintah mendekat.",
     "prescription": "Audio display: visualisasi kontur $F_0$ adjacent teks kana.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "heiban"
   },
   {
     "id": "cp-phon-028",
@@ -3787,7 +3991,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-028",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "熊 (Beruang) vs. 首 (Leher) vs. 隈 (Lingkar Hitam Mata)",
@@ -3799,7 +4003,9 @@ var confusionPairs = [
     "root_cause": "Melafalkan beruang buas dengan atamadaka, terdengar seperti mata lelah.",
     "prescription": "Peringatan K3 gemba darurat kehutanan MAFF.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "atamadaka"
   },
   {
     "id": "cp-phon-029",
@@ -3810,7 +4016,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-029",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "白 (Warna Putih) vs. 城 (Kastil / Benteng)",
@@ -3822,7 +4028,9 @@ var confusionPairs = [
     "root_cause": "Gagal membedakan warna putih dan kastil saat menambahkan partikel subjek.",
     "prescription": "Kunci diskriminasi pada sambungan partikel 白が (L-H-L) vs 城が (L-H-H).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "heiban"
   },
   {
     "id": "cp-phon-030",
@@ -3833,7 +4041,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-030",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "黒 (Warna Hitam) vs. 苦労 (Jerih Payah / Kesulitan)",
@@ -3845,7 +4053,9 @@ var confusionPairs = [
     "root_cause": "Kompresi vokal panjang kurō menjadi kuro, mengacaukan warna dan kesulitan kerja.",
     "prescription": "Durasi mora ganda disinkronkan dengan penurunan nada di awal.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "atamadaka"
   },
   {
     "id": "cp-phon-031",
@@ -3856,7 +4066,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-031",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "赤 (Warna Merah) vs. 垢 (Daki / Kerak Kotoran)",
@@ -3868,7 +4078,9 @@ var confusionPairs = [
     "root_cause": "L1 stres penultima mengaburkan nada odaka pada kata warna standar.",
     "prescription": "Konteks kejuruan sanitasi industri food processing.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "atamadaka"
   },
   {
     "id": "cp-phon-032",
@@ -3879,7 +4091,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-032",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "青 (Warna Biru / Hijau Lampu) vs. 煽 (Hembusan Angin)",
@@ -3891,7 +4103,9 @@ var confusionPairs = [
     "root_cause": "Mengucapkan lampu hijau lalu lintas/forklift (ao) secara heiban datar.",
     "prescription": "Latihan teriakan konfirmasi keselamatan gemba: \"Ao yoshi!\" (H-L).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "atamadaka"
   },
   {
     "id": "cp-phon-033",
@@ -3902,7 +4116,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-033",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "金 (Uang / Emas) vs. 菌 (Bakteri / Kuman)",
@@ -3914,7 +4128,9 @@ var confusionPairs = [
     "root_cause": "Mengompresi mora nasal /N/ menjadi silabel tunggal tertutup tanpa ketukan nada.",
     "prescription": "Penjagaan durasi moraic nasal (2 mora penuh: ki-n) dengan penurunan nada tajam.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "atamadaka"
   },
   {
     "id": "cp-phon-034",
@@ -3925,7 +4141,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-034",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "銀 (Perak) vs. 吟 (Membaca Puisi)",
@@ -3937,7 +4153,9 @@ var confusionPairs = [
     "root_cause": "Menghilangkan status mora /N/, memproduksi nada datar.",
     "prescription": "Visual dot: ●○ dengan penurunan nada di ketukan ke-2.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "atamadaka"
   },
   {
     "id": "cp-phon-035",
@@ -3948,7 +4166,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-035",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "鉄 (Besi / Baja) vs. 徹 (Tuntas / Melek Semalaman)",
@@ -3960,7 +4178,9 @@ var confusionPairs = [
     "root_cause": "Mengucapkan besi konstruksi dengan nada tinggi di awal seperti kata pinjaman Inggris.",
     "prescription": "Latihan intonasi heiban datar berkesinambungan melintasi partikel.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "heiban"
   },
   {
     "id": "cp-phon-036",
@@ -3971,7 +4191,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-036",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "石 (Batu) vs. 医師 (Dokter)",
@@ -3983,7 +4203,9 @@ var confusionPairs = [
     "root_cause": "Menyebut dokter dengan nada rendah-tinggi seperti batu jalanan.",
     "prescription": "Critical Medical Flag: Diskriminasi mutlak 医師 (H-L) vs 石 (L-H).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "atamadaka"
   },
   {
     "id": "cp-phon-037",
@@ -3994,7 +4216,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-037",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "紙 (Kertas) vs. 噛み (Gigitan / Mengunyah)",
@@ -4006,7 +4228,9 @@ var confusionPairs = [
     "root_cause": "Mengacaukan formulir administrasi dengan masalah pengunyahan makanan pasien.",
     "prescription": "Pemisahan odaka vs heiban melalui pengujian klausa berpartikel.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "heiban"
   },
   {
     "id": "cp-phon-038",
@@ -4017,7 +4241,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-038",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "糸 (Benang) vs. 意図 (Niat / Intensi)",
@@ -4029,7 +4253,9 @@ var confusionPairs = [
     "root_cause": "L1 tidak membedakan vokal pendek benang (ito) vs vokal panjang niat jika terdistorsi.",
     "prescription": "Visual kontur $F_0$ disandingkan dengan durasi mora.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "heiban"
   },
   {
     "id": "cp-phon-039",
@@ -4040,7 +4266,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-039",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "針 (Jarum) vs. 梁 (Balok Kayu Struktural)",
@@ -4052,7 +4278,9 @@ var confusionPairs = [
     "root_cause": "Melafalkan jarum suntik secara heiban, terdengar seperti ketegangan material konstruksi.",
     "prescription": "HVPT audio kontras dengan penekanan pada intonasi tajam mora 1.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "heiban"
   },
   {
     "id": "cp-phon-040",
@@ -4063,7 +4291,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-040",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "棒 (Tongkat / Batang) vs. 暴 (Kekerasan / Liar)",
@@ -4075,7 +4303,9 @@ var confusionPairs = [
     "root_cause": "Melafalkan tongkat pemukul secara atamadaka curam, terdengar seperti ancaman kekerasan.",
     "prescription": "Chōon 2-mora heiban datar stabil tanpa penurunan pitch.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "heiban"
   },
   {
     "id": "cp-phon-041",
@@ -4086,7 +4316,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-041",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "管 (Pipa / Selang) vs. 勘 (Intuisi / Firasat)",
@@ -4098,7 +4328,9 @@ var confusionPairs = [
     "root_cause": "Mengandalkan firasat di pabrik saat melaporkan kebocoran selang kimia gas.",
     "prescription": "Kategori heiban pipa vs atamadaka firasat: latihan A/B speed test.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "heiban"
   },
   {
     "id": "cp-phon-042",
@@ -4109,7 +4341,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-042",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "箱 (Kotak / Kardus) vs. 履こ (Ayo Memakai Sepatu)",
@@ -4121,7 +4353,9 @@ var confusionPairs = [
     "root_cause": "Mengucapkan kardus kemasan logistik dengan nada atamadaka seperti bahasa daerah Jawa.",
     "prescription": "Stabilisasi intonasi heiban bagi penutur L1 dari latar belakang bahasa daerah bertekanan.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "javanese",
+    "pitch_accent_type": "heiban"
   },
   {
     "id": "cp-phon-043",
@@ -4132,7 +4366,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-043",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "蓋 (Tutup / Cover) vs. 豚 (Babi)",
@@ -4144,7 +4378,9 @@ var confusionPairs = [
     "root_cause": "Devoicing konsonan labial /b/ menjadi /f/, tertukar antara penutup mesin dan babi.",
     "prescription": "Latihan voice onset time (VOT) dan kontur nada heiban terpadu.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "sundanese",
+    "pitch_accent_type": "heiban"
   },
   {
     "id": "cp-phon-044",
@@ -4155,7 +4391,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-044",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "溝 (Parit / Saluran Air) vs. 味噌 (Miso / Bumbu Kedelai)",
@@ -4167,7 +4403,9 @@ var confusionPairs = [
     "root_cause": "Pelafalan sibilant /z/ terdistorsi menjadi /s/, mengacaukan parit limbah dan sup miso.",
     "prescription": "Latihan persepsi kontras konsonan bersuara /z/ vs /s/ dalam bingkai atamadaka.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "atamadaka"
   },
   {
     "id": "cp-phon-045",
@@ -4178,7 +4416,7 @@ var confusionPairs = [
     "note_id": "nuance-cp-phon-045",
     "level": "n5",
     "provenance": "empirical-diagnostic-v1",
-    "archetype": "audio_speed_gate",
+    "archetype": "pitch_accent_contrast",
     "domain": "Domain I: Tokyo Pitch Accent Homophones",
     "category": "Domain I: Tokyo Pitch Accent Homophones",
     "title": "壁 (Dinding / Tembok) vs. 癖 (Kebiasaan Buruk)",
@@ -4190,7 +4428,9 @@ var confusionPairs = [
     "root_cause": "Mengasimilasikan konsonan bilabial /b/ dengan sibilant /s/, nada partikel tertukar.",
     "prescription": "Pemisahan nada partikel: kabe ga (tinggi) vs kuse ga (jatuh pada ga).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "batak_eastern",
+    "pitch_accent_type": "heiban"
   },
   {
     "id": "cp-phon-046",
@@ -4213,7 +4453,8 @@ var confusionPairs = [
     "root_cause": "Menghina wanita paruh baya dengan memanggilnya \"nenek\" tua rentan, atau sebaliknya meremehkan lansia Kaigo.",
     "prescription": "Visual Mora Bar: お・ば・さ・ん (4 bar) vs お・ば・あ・さ・ん (5 bar). Kinesthetic mora tap test.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-047",
@@ -4236,7 +4477,8 @@ var confusionPairs = [
     "root_cause": "Pelanggaran etika keperawatan Kaigo: salah memanggil status generasi pasien lansia laki-laki.",
     "prescription": "Visual H/L + Mora: おじさん (heiban) vs おじいさん (nakadaka turun di い). Latihan A/B multi-talker.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-048",
@@ -4259,7 +4501,8 @@ var confusionPairs = [
     "root_cause": "Instruksi darurat gemba musim dingin: salju menumpuk di atap (yuki) tertukar dengan dorongan moral (yūki).",
     "prescription": "Audio pacing: 0.8x memperpanjang vokal /uː/ secara proporsional. Visual: ゆ・う・き (3 ketukan).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-049",
@@ -4282,7 +4525,8 @@ var confusionPairs = [
     "root_cause": "Keselamatan forklift manufaktur/konstruksi: \"Soko o tōru\" (forklift akan melintas) dikira mengambil barang.",
     "prescription": "Critical Safety Flag: Peringatan tabrakan forklift. Visual penandaan 3 mora merah terang.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-050",
@@ -4305,7 +4549,8 @@ var confusionPairs = [
     "root_cause": "Komunikasi onboarding magang: menjelaskan lokasi fasilitas pabrik (koko) vs riwayat pendidikan (kōkō).",
     "prescription": "Rasio durasi akustik 1:2. Latihan mengetuk meja 2 ketukan vs 4 ketukan berirama konstan.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-051",
@@ -4328,7 +4573,8 @@ var confusionPairs = [
     "root_cause": "Menanyakan lokasi gedung kantor pertemuan bisnis dikira mengajak minum bir beralkohol.",
     "prescription": "Kontras gairaigo loanword trap: ビ・ル (2 mora) vs ビ・ー・ル (3 mora).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-052",
@@ -4351,7 +4597,8 @@ var confusionPairs = [
     "root_cause": "Terbaca sebagai sikap kasar atau tidak acuh (aiso ga nai) saat merespons atasan kerja Jepang.",
     "prescription": "Pelatihan respons pragmatis: durasi pemanjangan vokal /ee/ untuk kelembutan interaksi (keigo softening).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-053",
@@ -4374,7 +4621,8 @@ var confusionPairs = [
     "root_cause": "Keselamatan kerja ketinggian konstruksi scaffolding: ketinggian jatuh (kōdo) vs suhu udara (do).",
     "prescription": "Kontras teknis gemba JAC: rekaman multi-speaker pengawas lapangan meneriakkan parameter teknis.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-054",
@@ -4397,7 +4645,8 @@ var confusionPairs = [
     "root_cause": "Menjelaskan alamat pengiriman kargo truk: jalan raya utama (ōdōri) vs peternakan unggas.",
     "prescription": "Visual dot: ○● (tori) vs ○●● (tōri odaka turun di ri).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-055",
@@ -4420,7 +4669,8 @@ var confusionPairs = [
     "root_cause": "Koordinat mitigasi bencana alam agrikultur: banjir di dataran rendah (heiya) vs kerusakan kamar (heya).",
     "prescription": "Pemisahan jelas: へ・や (2 mora) vs へ・い・や (3 mora).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-056",
@@ -4443,7 +4693,8 @@ var confusionPairs = [
     "root_cause": "Industri perikanan dan agrikultur: menanyakan fluktuasi lelang pasar ikan (sōba) vs sisi samping kapal.",
     "prescription": "Latihan audio A/B di bursa lelang hasil laut Tsukiji/Toyosu.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-057",
@@ -4466,7 +4717,8 @@ var confusionPairs = [
     "root_cause": "Keselamatan ruang terbatas K3: ventilasi udara pipa (tsūki-kan) tertukar dengan kalender bulan.",
     "prescription": "Critical K3 Confined Space Flag: Wajib lulus 100% pada modul konstruksi dan pengelasan pabrik.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-058",
@@ -4489,7 +4741,8 @@ var confusionPairs = [
     "root_cause": "Pemeriksaan medis Kaigo: memeriksa bahu pasien (kata ga itai) vs kadar gula darah (tōnyō/katō).",
     "prescription": "Triad contrast matrix: かた (2 mora) vs かとう (3 mora) vs かった (sokuon).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-059",
@@ -4512,7 +4765,8 @@ var confusionPairs = [
     "root_cause": "Dokumentasi keperawatan Kaigo: mencatat gejala kejang/demam (hossanonymous-shō) vs berkas surat (sho).",
     "prescription": "Latihan perpanjangan moraic glide: し・ょ (1 mora) vs し・ょ・う (2 mora).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-060",
@@ -4535,7 +4789,8 @@ var confusionPairs = [
     "root_cause": "Peringatan darurat gemba: kebakaran pabrik (kaji da!) terdengar santai seperti minta kue camilan (kashi).",
     "prescription": "Critical Emergency Alarm Flag: Latihan teriakan evakuasi gemba dengan sirene latar.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-061",
@@ -4558,7 +4813,9 @@ var confusionPairs = [
     "root_cause": "Pasien sesak napas membutuhkan suplai tabung oksigen/udara bersih (kūki).",
     "prescription": "Indikator visual 3 dot: く・う・き (3 mora atamadaka).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian",
+    "pitch_accent_type": "atamadaka"
   },
   {
     "id": "cp-phon-062",
@@ -4581,7 +4838,8 @@ var confusionPairs = [
     "root_cause": "Alergi makanan di restoran omotenashi: alergi kacang (mame arerugī) vs posisi di depan (mae).",
     "prescription": "Peringatan alergen makanan: presisi artikulatoris vokal bilabial /m/.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-063",
@@ -4604,7 +4862,8 @@ var confusionPairs = [
     "root_cause": "Resep pengolahan makanan pabrik dan dapur restoran: penimbangan takaran gula (satō).",
     "prescription": "Latihan audio dapur gemba: perbandingan gramasi takaran bumbu.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-064",
@@ -4627,7 +4886,8 @@ var confusionPairs = [
     "root_cause": "Rehabilitasi fisik lansia Kaigo: latihan jalan (hokō kunren) tertukar dengan petunjuk arah evakuasi (hōkō).",
     "prescription": "Visual baris durasi: 3 mora (ほ・こ・う) vs 4 mora (ほ・う・こ・う).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-065",
@@ -4650,7 +4910,8 @@ var confusionPairs = [
     "root_cause": "Jadwal rumah sakit: pasien dijadwalkan operasi bedah (shujutsu) dikira penutupan klinik seharian (shūjitsu).",
     "prescription": "Critical Surgical Flag: Latihan ortografi phonological loop intensif.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-066",
@@ -4673,7 +4934,8 @@ var confusionPairs = [
     "root_cause": "Supir taksi / logistik bus membawa penumpang darurat sakit ke salon kecantikan alih-alih IGD rumah sakit.",
     "prescription": "Classic SLA Trap: Penjelasan metalinguistik kontras びょ (1 ketukan) vs び・よ (2 ketukan terpisah).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-067",
@@ -4696,7 +4958,8 @@ var confusionPairs = [
     "root_cause": "Rapat koordinasi gemba: \"Iken ga arimasu\" (ada pendapat) terdengar aneh sebagai kolam.",
     "prescription": "Penegasan ketukan nasal akhir berbobot 1 mora penuh.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-068",
@@ -4719,7 +4982,8 @@ var confusionPairs = [
     "root_cause": "Verifikasi laporan kerusakan mesin: meyakinkan atasan (hontō desu) vs merasa lega santai.",
     "prescription": "Latihan ritme mora berpasangan: kontras nasal vs sokuon.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-069",
@@ -4742,7 +5006,8 @@ var confusionPairs = [
     "root_cause": "Menghasilkan bentuk bahasa Jepang yang cacat secara fonologis dalam laporan kuantitas teknis.",
     "prescription": "Rule Flag: Larangan memanjangkan vokal /o/ untuk penekanan makna. Gunakan adverbia intensifier sah.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-070",
@@ -4765,7 +5030,8 @@ var confusionPairs = [
     "root_cause": "Mengurangi kelancaran bicara pada wawancara visa SSW dan ujian lisan JFT-Basic.",
     "prescription": "Visualisasi vokal panjang ei/ee: せ・い・か・つ (4 mora penuh).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-071",
@@ -4788,7 +5054,8 @@ var confusionPairs = [
     "root_cause": "Instruksi SOP perhotelan dan omotenashi restoran: pelayanan sopan (teinei na taiō).",
     "prescription": "Latihan audio shadowing bertahap kecepatan 0.8x $\\rightarrow$ 1.0x.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-072",
@@ -4811,7 +5078,8 @@ var confusionPairs = [
     "root_cause": "Rapat harian gemba (chourei): jadwal kerja mingguan (shūkan keikaku).",
     "prescription": "Haptic tap per mora: ketuk 4 kali rata tanpa mempercepat ketukan 1-2.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-073",
@@ -4834,7 +5102,8 @@ var confusionPairs = [
     "root_cause": "Percakapan sosial rekreasi pekerja: menonton film di hari libur.",
     "prescription": "Audio recognition test: membedakan 2 mora vs 3 mora.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-074",
@@ -4857,7 +5126,8 @@ var confusionPairs = [
     "root_cause": "Situasi etika bisnis perhotelan/kantor: \"Meishi o kōkan suru\" (tukar kartu nama) terdengar kasar \"tukar nasi\".",
     "prescription": "Catatan Pragmatis Kritis: Mencegah penghinaan mitra bisnis Jepang akibat reduksi vokal.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-075",
@@ -4880,7 +5150,8 @@ var confusionPairs = [
     "root_cause": "Panggilan darurat 110 kepolisian gemba saat terjadi tindak kriminal atau kecelakaan jalan raya.",
     "prescription": "Standar Pelaporan Darurat SBAR: pelafalan jernih け・い・さ・つ (4 mora).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-076",
@@ -4903,7 +5174,8 @@ var confusionPairs = [
     "root_cause": "Instruksi darurat bedah/dapur pabrik: \"Yubi o kitte shimatta\" (jari terpotong) tertukar dengan datang.",
     "prescription": "Triad Master Pair: Visual henti nafas き・[⏸️]・て. Latihan membedakan jeda henti vs vokal molor.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "javanese"
   },
   {
     "id": "cp-phon-077",
@@ -4926,7 +5198,8 @@ var confusionPairs = [
     "root_cause": "Pekerjaan administrasi kantor & logistik: mengisi data di dalam tanda kurung (kakko no naka ni kinyū).",
     "prescription": "Visual Stopwatch Closure: menampilkan animasi jeda diam 1 ketukan penuh sebelum letupan /ko/.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "javanese"
   },
   {
     "id": "cp-phon-078",
@@ -4949,7 +5222,8 @@ var confusionPairs = [
     "root_cause": "Mengemudi truk logistik / dump truck di lokasi proyek tanah: peringatan tanjakan curam (saka-michi).",
     "prescription": "Peringatan keselamatan armada transportasi jalan raya MLIT.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "javanese"
   },
   {
     "id": "cp-phon-079",
@@ -4972,7 +5246,8 @@ var confusionPairs = [
     "root_cause": "Komunikasi keperawatan lansia: pasien bercerita tentang almarhum suaminya (otto) dikira mendengar bunyi gaib.",
     "prescription": "Kontras ganda: durasi closure 1 mora + perbedaan aksen odaka [2] vs heiban [0].",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "javanese"
   },
   {
     "id": "cp-phon-080",
@@ -4995,7 +5270,8 @@ var confusionPairs = [
     "root_cause": "Percakapan bisnis & manajemen bengkel kerja: inflasi melonjak tinggi (bukka ga takai) vs staf bawahan.",
     "prescription": "Multi-speaker HVPT audio mengontraskan konteks ekonomi vs hierarki SDM pabrik.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "javanese"
   },
   {
     "id": "cp-phon-081",
@@ -5018,7 +5294,8 @@ var confusionPairs = [
     "root_cause": "Bahaya K3 kebakaran di bengkel perkayuan / gas: mencari korek api (mMatchi) tertukar dengan kota.",
     "prescription": "Visual penahan afrikat: penekanan lidah pada gigi atas sebelum letupan chi.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "javanese"
   },
   {
     "id": "cp-phon-082",
@@ -5041,7 +5318,8 @@ var confusionPairs = [
     "root_cause": "Prosedur K3 LOTO (Lockout/Tagout): perintah mengunci tuas daya panel (rokku suru) dikira angka enam.",
     "prescription": "Critical Industrial Safety Flag: Kepatuhan mutlak SOP pemasangan gembok keselamatan mesin.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "javanese"
   },
   {
     "id": "cp-phon-083",
@@ -5064,7 +5342,8 @@ var confusionPairs = [
     "root_cause": "Merusak kesan profesionalitas pada percakapan formal wawancara kerja dan interaksi sosial.",
     "prescription": "Rule Flag: Latihan pelafalan 4 ketukan: け・[っ]・こ・ん.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "javanese"
   },
   {
     "id": "cp-phon-084",
@@ -5087,7 +5366,8 @@ var confusionPairs = [
     "root_cause": "Pelaporan pergantian shift kerja kejuruan: buku catatan harian (gyōmu nikki) vs periode kerja.",
     "prescription": "Latihan pencatatan log book gemba: membedakan 2 mora vs 3 mora.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "javanese"
   },
   {
     "id": "cp-phon-085",
@@ -5110,7 +5390,8 @@ var confusionPairs = [
     "root_cause": "Kontrol kualitas penyimpanan gabah agrikultur MAFF / gudang kayu: bahaya jamur kelembaban tinggi (shikki).",
     "prescription": "Pemantauan sensor lingkungan gemba: membedakan shiki vs shikki.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "javanese"
   },
   {
     "id": "cp-phon-086",
@@ -5133,7 +5414,8 @@ var confusionPairs = [
     "root_cause": "Pemeriksaan medis klinis kekurangan vitamin B1 pada pekerja asrama.",
     "prescription": "Rekaman audio diagnostik perawat klinis Kaigo.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "javanese"
   },
   {
     "id": "cp-phon-087",
@@ -5156,7 +5438,8 @@ var confusionPairs = [
     "root_cause": "Pembelian ATK dan media baca rekreasi lansia panti jompo.",
     "prescription": "Pelatihan tahanan desis alveolar: penahanan friksi 1 mora penuh.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "javanese"
   },
   {
     "id": "cp-phon-088",
@@ -5179,7 +5462,8 @@ var confusionPairs = [
     "root_cause": "Manajemen bencana gemba gempa bumi: pasokan logistik bantuan darurat (kyūen busshi).",
     "prescription": "Prosedur K3 Tanggap Darurat Bencana: kejelasan komunikasi radio logistik.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "javanese"
   },
   {
     "id": "cp-phon-089",
@@ -5202,7 +5486,8 @@ var confusionPairs = [
     "root_cause": "Laporan inspeksi gemba: menemukan cacat retakan mesin (hakkenshita) dikira mengirim staf outsourcing.",
     "prescription": "Perbedaan status gramatikal & tindakan gemba: は・け・ん (3) vs は・[っ]・け・ん (4).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "javanese"
   },
   {
     "id": "cp-phon-090",
@@ -5225,7 +5510,8 @@ var confusionPairs = [
     "root_cause": "Evaluasi teknis mesin: sekilas terlihat normal (ikken mondai nai) vs pendapat (iken).",
     "prescription": "Triad contrast: penekanan pada mora closure sebelum velar stop /k/.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "javanese"
   },
   {
     "id": "cp-phon-091",
@@ -5248,7 +5534,8 @@ var confusionPairs = [
     "root_cause": "Quality Control (QC) manufaktur otomotif: cacat fatal komponen rem (kekkan buhin).",
     "prescription": "Critical Manufacturing QC Flag: Latihan artikulasi tegas dengan audio multi-speaker.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "javanese"
   },
   {
     "id": "cp-phon-092",
@@ -5271,7 +5558,8 @@ var confusionPairs = [
     "root_cause": "Latihan simulasi K3 penanggulangan kebakaran pabrik (kasai hassei).",
     "prescription": "Protokol Alarm Gemba: Teriakan darurat \"Kasai da! Hinan shiro!\".",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "javanese"
   },
   {
     "id": "cp-phon-093",
@@ -5294,7 +5582,8 @@ var confusionPairs = [
     "root_cause": "Kebersihan dan sanitasi pengolahan makanan HACCP: kewajiban mencuci tangan pakai sabun (sekken).",
     "prescription": "Mandatori K3 Higiene Pangan: Pengecekan audio berulang pada modul sanitasi makanan.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "javanese"
   },
   {
     "id": "cp-phon-094",
@@ -5317,7 +5606,8 @@ var confusionPairs = [
     "root_cause": "Penjadwalan logistik pengiriman kargo kapal: jadwal tanggal 10 (tōka) vs jalur lintasan (tsūka).",
     "prescription": "Dual Error Diagnostic: Matriks pembeda antara jeda tahanan letup vs vokal melar.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "javanese"
   },
   {
     "id": "cp-phon-095",
@@ -5340,7 +5630,8 @@ var confusionPairs = [
     "root_cause": "Kepatuhan hukum dan kerahasiaan data kantor: membuang limbah kertas rahasia (haki suru).",
     "prescription": "Latihan A/B context recognition: instruksi hukum vs unjuk kinerja tim.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "javanese"
   },
   {
     "id": "cp-phon-096",
@@ -5363,7 +5654,8 @@ var confusionPairs = [
     "root_cause": "Prosedur keselamatan konstruksi JAC: pembongkaran pipa perancah lantai 5 (ashiba tekkyo).",
     "prescription": "Critical Construction Safety Flag: Konfirmasi teriakan kerja mandor lapangan.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "javanese"
   },
   {
     "id": "cp-phon-097",
@@ -5386,7 +5678,8 @@ var confusionPairs = [
     "root_cause": "Etika komunikasi medis Kaigo: pasien kanker stadium terminal (makki-gan no kea).",
     "prescription": "Critical Medical Ethics Flag: Mencegah kekeliruan fatal empati di hadapan keluarga pasien.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "javanese"
   },
   {
     "id": "cp-phon-098",
@@ -5409,7 +5702,8 @@ var confusionPairs = [
     "root_cause": "Keselamatan maritim perikanan MAFF: kewajiban mengenakan rompi pelampung tanda sakura (chokki).",
     "prescription": "Inspeksi APD perikanan: membedakan instruksi lisan langsung vs pakaian keselamatan.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "javanese"
   },
   {
     "id": "cp-phon-099",
@@ -5432,7 +5726,8 @@ var confusionPairs = [
     "root_cause": "Kecepatan respons perintah atasan kerja: \"Sassoku torikakari-masu\" (segera saya kerjakan).",
     "prescription": "Latihan kelancaran operasional gemba: pelafalan mantap tanpa jeda ragu.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "javanese"
   },
   {
     "id": "cp-phon-100",
@@ -5455,7 +5750,8 @@ var confusionPairs = [
     "root_cause": "Keselamatan K3 mitigasi kematian sengatan panas di greenhouse agrikultur dan konstruksi.",
     "prescription": "Mandatory K3 Disaster Alert: Wajib dikuasai sebelum penempatan kerja musim panas di Jepang.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "javanese"
   },
   {
     "id": "cp-phon-101",
@@ -5478,7 +5774,8 @@ var confusionPairs = [
     "root_cause": "Pengajuan izin kerja administrasi: formulir perjalanan dinas (shucchō shinsei) vs adu argumen.",
     "prescription": "Pemisahan makna formal: しゅ・[っ]・ちょ・う (4) vs しゅ・ちょ・う (3).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "javanese"
   },
   {
     "id": "cp-phon-102",
@@ -5501,7 +5798,8 @@ var confusionPairs = [
     "root_cause": "Pengolahan makanan perikanan dan klaim asuransi kecelakaan kerja Rousai (hoken).",
     "prescription": "Kontras fonemik akhir: nasal /N/ vs stop closure /k/.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "javanese"
   },
   {
     "id": "cp-phon-103",
@@ -5524,7 +5822,8 @@ var confusionPairs = [
     "root_cause": "Laporan penyelesaian pekerjaan gemba: berhasil menyelesaikan target (katta).",
     "prescription": "Konjugasi te-form / ta-form verba: penguatan closure sokuon pada bentuk lampau.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "javanese"
   },
   {
     "id": "cp-phon-104",
@@ -5547,7 +5846,8 @@ var confusionPairs = [
     "root_cause": "Hubungan interpersonal tim kerja bengkel: \"Motte kite\" (tolong bawakan) vs perintah kasar mote.",
     "prescription": "Pelatihan etika kerja gemba: mencegah kesalahpahaman sosiopragmatik akibat reduksi fonetik.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "javanese"
   },
   {
     "id": "cp-phon-105",
@@ -5570,7 +5870,8 @@ var confusionPairs = [
     "root_cause": "Protokol mobilisasi pasien Kaigo: memandu pasien berdiri dari kursi roda (Tatte kudasai).",
     "prescription": "Standard Care Protocol: Umpan balik visual hentian mora untuk keamanan transfer lansia.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "javanese"
   },
   {
     "id": "cp-phon-106",
@@ -5593,7 +5894,8 @@ var confusionPairs = [
     "root_cause": "Negosiasi kontrak kerja SSW / cuti kerja: jam istirahat bebas (jiyū jikan) vs 10 jam kerja lembur (jū-jikan).",
     "prescription": "Kontras yōon chōon vs vokal terpisah: じ・ゆ・う (3) vs じゅ・う (2).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-107",
@@ -5616,7 +5918,8 @@ var confusionPairs = [
     "root_cause": "Evaluasi keterampilan montir bengkel JAIM: memuji cekatan (kiyō da) tertukar dengan jadwal hari ini (kyō).",
     "prescription": "Visual glide: huruf kecil ょ menempel tanpa spasi. 2 ketukan vs 3 ketukan.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-108",
@@ -5639,7 +5942,8 @@ var confusionPairs = [
     "root_cause": "Peraturan tata tertib tempat tinggal pekerja asing: aturan asrama (ryō no kisoku) vs pemanfaatan fasilitas.",
     "prescription": "Indikator visual 2 dot vs 3 dot: りょ・う (2) vs り・よ・う (3).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-109",
@@ -5662,7 +5966,8 @@ var confusionPairs = [
     "root_cause": "Pengajuan anggaran operasional gemba: estimasi biaya material (hiyō no mitumori) vs tabel data (hyō).",
     "prescription": "Audio diskriminasi A/B: penekanan pada artikulasi vokal tengah /o/.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-110",
@@ -5685,7 +5990,8 @@ var confusionPairs = [
     "root_cause": "Diagnosis medis klinik Kaigo: mendeteksi benjolan tumor ganas (akusei shuyō) tertukar dengan fungsi utama.",
     "prescription": "Critical Medical Oncology Flag: Presisi pelaporan hasil USG/rontgen pasien lansia.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-111",
@@ -5708,7 +6014,8 @@ var confusionPairs = [
     "root_cause": "Transaksi kasir perhotelan omotenashi dan perhitungan inventaris stok gudang spare part.",
     "prescription": "Pelatihan fonetik palatal: friksi bibir-langit-langit /hj/ sebelum vokal /a/.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-112",
@@ -5731,7 +6038,8 @@ var confusionPairs = [
     "root_cause": "Pelayanan tamu hotel (omotenashi): memandu tamu ke kamar (oheya e go-annai shimasu).",
     "prescription": "Latihan perpanjangan nasal velar/alveolar: あ・ん・な・い (4 mora penuh).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-113",
@@ -5754,7 +6062,9 @@ var confusionPairs = [
     "root_cause": "Penugasan resmi penanggung jawab keselamatan K3: staf ahli K3 berdedikasi (sennin gijutsusha).",
     "prescription": "Pembeda kontur nada partikel: せんにんが (heiban tetap tinggi) vs せんにんが (odaka turun di ga).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "javanese",
+    "pitch_accent_type": "heiban"
   },
   {
     "id": "cp-phon-114",
@@ -5777,7 +6087,8 @@ var confusionPairs = [
     "root_cause": "Laporan analisis insiden kecelakaan kerja gemba: mencari akar penyebab fatal (gen'in kyūmei).",
     "prescription": "Critical Incident Investigation Flag: Menjaga kewibawaan pelaporan insiden darurat di hadapan polisi/Rousai.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-115",
@@ -5800,7 +6111,8 @@ var confusionPairs = [
     "root_cause": "Kalibrasi presisi mesin bubut CNC JAIM: toleransi satuan mikron (tan'i).",
     "prescription": "Inspeksi kalibrasi dimensi presisi pabrik manufaktur otomotif.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-116",
@@ -5823,7 +6135,8 @@ var confusionPairs = [
     "root_cause": "Pengadaan APD gemba: masker respirator sederhana (kan'i masuku) tertukar dengan seafood kepiting.",
     "prescription": "Pengadaan alat kerja logistik dan APD keselamatan kerja.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-117",
@@ -5846,7 +6159,8 @@ var confusionPairs = [
     "root_cause": "Prosedur K3 rencana tanggap darurat gempa: \"Man'ichi no baai\" (jika terjadi kondisi terburuk) vs setiap hari.",
     "prescription": "Standar Operasional Tanggap Darurat Bencana Alam Gemba.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-118",
@@ -5869,7 +6183,8 @@ var confusionPairs = [
     "root_cause": "Rencana aksi mitigasi bahaya kecelakaan kerja: pedoman tindakan cepat (kōdō shishin) vs kekeliruan.",
     "prescription": "Konfirmasi perintah komando regu evakuasi pemadam kebakaran pabrik.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-119",
@@ -5892,7 +6207,8 @@ var confusionPairs = [
     "root_cause": "Operasi bisnis logistik armada truk MLIT: kalkulasi biaya pengiriman barang (unchin keisan).",
     "prescription": "Perhitungan slip invoice jalan raya pengemudi truk SSW.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-120",
@@ -5915,7 +6231,8 @@ var confusionPairs = [
     "root_cause": "Keselamatan perlintasan sebidang jalur transportasi rel: dilarang masuk area rel (senro nai tachiiri kinshi).",
     "prescription": "Critical Railway Transport Safety Flag: Peringatan tertabrak kereta api ekspres.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-121",
@@ -5938,7 +6255,8 @@ var confusionPairs = [
     "root_cause": "Keselamatan bejana tekan autoclave pengolahan makanan: bahaya pipa pecah meledak (haretsu kiken).",
     "prescription": "Critical Boiler & Pressure Vessel Flag: Evakuasi kebocoran uap panas mendidih.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-122",
@@ -5961,7 +6279,8 @@ var confusionPairs = [
     "root_cause": "Lini permesinan logam JAIM: pemrosesan komponen mesin bubut (buhin kakō) vs jalan-jalan wisata.",
     "prescription": "Laporan harian produksi manufaktur: kejelasan artikulasi istilah teknis mesin.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-123",
@@ -5984,7 +6303,8 @@ var confusionPairs = [
     "root_cause": "Operasi pengangkatan crane sling beban 5 ton: lakukan pengangkatan dengan sangat hati-hati (shinchō ni).",
     "prescription": "Pengawasan keselamatan kerja derek konstruksi dan dok perkapalan.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-124",
@@ -6007,7 +6327,8 @@ var confusionPairs = [
     "root_cause": "Laporan operasional pergantian shift kerja: semua lini berjalan normal lancar (junchō ni kadō-chū).",
     "prescription": "Serah terima buku laporan operasional pergantian shift (hōkoku-sho).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-125",
@@ -6030,7 +6351,8 @@ var confusionPairs = [
     "root_cause": "Pengecekan jumlah personel saat evakuasi gempa gemba: verifikasi semua orang selamat (zen'in buji).",
     "prescription": "Critical Roll-Call Evacuation Flag: Penghitungan kepala korban selamat di muster point.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-126",
@@ -6053,7 +6375,8 @@ var confusionPairs = [
     "root_cause": "Protokol komunikasi lapor gemba Hōrensō (Hōkoku, Renraku, Sōdan): terkesan kasar dan kaku di telinga rekan kerja.",
     "prescription": "Pelatihan Flap Artikulatoris: satu sentuhan lidah ringan (single ballistic tap) pada alveolum atas.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-127",
@@ -6076,7 +6399,8 @@ var confusionPairs = [
     "root_cause": "Operasi pekerjaan malam hari konstruksi/bongkar muat kapal: menyalakan lampu sorot (raito o tsukeru).",
     "prescription": "Pemeriksaan APD dan pencahayaan area kerja bahaya tubrukan forklift.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-128",
@@ -6099,7 +6423,8 @@ var confusionPairs = [
     "root_cause": "Pemeliharaan kelistrikan industri JAIM: memeriksa keausan relay magnetik (rirē no kanten).",
     "prescription": "Manual perbaikan mesin kelistrikan bertegangan tinggi: presisi istilah teknis.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-129",
@@ -6122,7 +6447,8 @@ var confusionPairs = [
     "root_cause": "Pengemudi truk logistik kontainer: kecepatan aman jalan tol (supīdo gensoku) vs kawat kabel penarik.",
     "prescription": "Pengendalian kecepatan armada jalan raya MLIT: safety driving guidelines.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-130",
@@ -6145,7 +6471,8 @@ var confusionPairs = [
     "root_cause": "Pemadaman listrik mendadak di asrama pekerja: mencari lilin penerangan (rōsoku) tertukar jalan tol.",
     "prescription": "Tanggap darurat mati daya total akibat badai taifun atau gempa bumi.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-131",
@@ -6168,7 +6495,8 @@ var confusionPairs = [
     "root_cause": "Pelaporan formulir kecelakaan kerja Rousai: kecelakaan kerja gemba (jiko hōkoku) vs evaluasi diri (jiko shindan).",
     "prescription": "Critical Rousai Accident Flag: Wajib membedakan lafal kecelakaan kerja dari instrospeksi diri.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-132",
@@ -6191,7 +6519,8 @@ var confusionPairs = [
     "root_cause": "Inspeksi pra-operasi forklift pergudangan: retakan pada garpu cakar angkat (fōku no tsume no kiretsu).",
     "prescription": "Critical Heavy Machinery Inspection Flag: Verifikasi keselamatan garpu hidrolik pengangkat beban.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-133",
@@ -6214,7 +6543,8 @@ var confusionPairs = [
     "root_cause": "Penggalian parit konstruksi JAC: bahaya longsor timbunan tanah galian (tsuchi no hōkai).",
     "prescription": "Critical Trench Shoring Collapse Flag: Peringatan bahaya pekerja tertimbun tanah parit.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-134",
@@ -6237,7 +6567,8 @@ var confusionPairs = [
     "root_cause": "Keperawatan lansia Kaigo: peregangan otot tegang pasien (suji o chigaeta) vs instruksi dokter (shiji).",
     "prescription": "Protokol Penerimaan Instruksi Kerja Gemba: konfirmasi perintah kerja mandor.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-135",
@@ -6260,7 +6591,8 @@ var confusionPairs = [
     "root_cause": "Penanganan bahan kimia berbahaya SDS: cairan mengandung racun korosif (yūgai busshitsu o fukumu).",
     "prescription": "Critical Chemical Safety Flag: Lembar Data Keselamatan Bahan (SDS) pabrik kimia.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "HIGH"
+    "fossilization_risk": "HIGH",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-136",
@@ -6283,7 +6615,8 @@ var confusionPairs = [
     "root_cause": "Pekerja menyalakan blower ventilasi bermotor listrik non-explosion-proof di zona uap gas mudah terbakar $\\rightarrow$ memicu ledakan pabrik.",
     "prescription": "Critical Combustible Gas Explosion Flag: Visual kontur $F_0$ tegas dan teriakan audio latar sirine pabrik.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "CRITICAL_SAFETY"
+    "fossilization_risk": "CRITICAL_SAFETY",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-137",
@@ -6306,7 +6639,8 @@ var confusionPairs = [
     "root_cause": "Panggilan darurat 119 SBAR: mandor konstruksi melaporkan pekerja jatuh dari lantai 5 terdengar seperti pasien lansia lemas di ranjang.",
     "prescription": "Critical Fall from Heights Flag: Pelaporan medis SBAR darurat ambulans 119 ambulans.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "CRITICAL_SAFETY"
+    "fossilization_risk": "CRITICAL_SAFETY",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-138",
@@ -6329,7 +6663,8 @@ var confusionPairs = [
     "root_cause": "Pekerja tersengat kabel daya 440V dilaporkan sebagai flu/infeksi $\\rightarrow$ regu penyelamat menyentuh korban tanpa memutus sakelar utama dan ikut tewas tersengat.",
     "prescription": "Catastrophic Electrocution Flag: Pemutusan sakelar utama LOTO sebelum menyentuh tubuh korban.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "CRITICAL_SAFETY"
+    "fossilization_risk": "CRITICAL_SAFETY",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-139",
@@ -6352,7 +6687,8 @@ var confusionPairs = [
     "root_cause": "Pekerja pingsan akibat kadar oksigen $<18\\%$ di dalam silo pakan dilaporkan sebagai prosedur suntik darah $\\rightarrow$ penyelamat masuk tanpa SCBA dan tewas lemas.",
     "prescription": "Catastrophic Confined Space Asphyxiation Flag: Larangan masuk tangki tanpa alat bantu pernapasan mandiri.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "CRITICAL_SAFETY"
+    "fossilization_risk": "CRITICAL_SAFETY",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-140",
@@ -6375,7 +6711,8 @@ var confusionPairs = [
     "root_cause": "Penyelamat memutar balik mesin rol yang salah arah $\\rightarrow$ meremukkan tulang lengan korban lebih dalam alih-alih melepaskan tekanan hidrolik.",
     "prescription": "Critical Machinery Entrapment Flag: Tombol jamur E-Stop merah dan pelepasan tuas hidrolik darurat.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "CRITICAL_SAFETY"
+    "fossilization_risk": "CRITICAL_SAFETY",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-141",
@@ -6398,7 +6735,8 @@ var confusionPairs = [
     "root_cause": "Triase medis ambulans 119: cedera patah tulang pinggul lansia vs cedera trauma kepala parah akibat jatuh bebas dari tangga perancah.",
     "prescription": "Protokol Pelaporan Insiden K3: pemisahan jelas tentō (lantai datar) vs tenraku (ketinggian).",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "CRITICAL_SAFETY"
+    "fossilization_risk": "CRITICAL_SAFETY",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-142",
@@ -6421,7 +6759,8 @@ var confusionPairs = [
     "root_cause": "Beban sling crane 3 ton mengayun menghantam pekerja yang tidak mendengar seruan peringatan evakuasi radius ayun.",
     "prescription": "Critical Struck-By Crane Hazard Flag: Pelatihan teriakan seruan akustik gemba (kansei): \"Gekitotsu chūi!\".",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "CRITICAL_SAFETY"
+    "fossilization_risk": "CRITICAL_SAFETY",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-143",
@@ -6444,7 +6783,8 @@ var confusionPairs = [
     "root_cause": "Pipa uap kiln bersuhu $120^\\circ\\text{C}$ meledak dilaporkan sebagai pasien demam $\\rightarrow$ boiler room tidak ditutup dan memicu luka bakar uap massal.",
     "prescription": "Catastrophic Boiler Explosion Flag: Manual pematian katup uap induk bertekanan tinggi.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "CRITICAL_SAFETY"
+    "fossilization_risk": "CRITICAL_SAFETY",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-144",
@@ -6467,7 +6807,8 @@ var confusionPairs = [
     "root_cause": "Tumpahan oli hidrolik licin disangka kebocoran kawat ground $\\rightarrow$ penanganan menggunakan air alih-alih pasir penyerap $\\rightarrow$ api menyala membakar oli.",
     "prescription": "Critical Industrial Fire & Slip Hazard Flag: Standar inspeksi visual harian mesin press hidrolik.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "CRITICAL_SAFETY"
+    "fossilization_risk": "CRITICAL_SAFETY",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-145",
@@ -6490,7 +6831,8 @@ var confusionPairs = [
     "root_cause": "Pasien tersedak bakso makanan padat (aspirasi saluran napas) ditangani dengan obat penetral asam lambung $\\rightarrow$ asfiksia total berujung kematian.",
     "prescription": "Catastrophic Choking & Poisoning Flag: Prosedur Manuver Heimlich vs pemberian arang aktif medis.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "CRITICAL_SAFETY"
+    "fossilization_risk": "CRITICAL_SAFETY",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-146",
@@ -6513,7 +6855,8 @@ var confusionPairs = [
     "root_cause": "Korban pendarahan arteri robek akibat bilah gergaji mesin sawmill kayu kehilangan 1.000 mL darah tanpa pemasangan torniket segera.",
     "prescription": "Critical Arterial Hemorrhage Protocol: Pemasangan torniket hemostatik darurat dalam 60 detik.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "CRITICAL_SAFETY"
+    "fossilization_risk": "CRITICAL_SAFETY",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-147",
@@ -6536,7 +6879,8 @@ var confusionPairs = [
     "root_cause": "Regu evakuasi meninggalkan korban tertimpa balok di dalam gedung karena mengira instruksi memerintahkan seluruh staf langsung berkumpul di lapangan.",
     "prescription": "Disaster Search & Rescue Protocol Flag: Pemisahan tim evakuasi penyelamat dari regu absensi luar gedung.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "CRITICAL_SAFETY"
+    "fossilization_risk": "CRITICAL_SAFETY",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-148",
@@ -6559,7 +6903,8 @@ var confusionPairs = [
     "root_cause": "Supir truk dalam kondisi mabuk alkohol lolos mengemudi di jalan tol karena tidak menjalani uji breathalyzer wajib $\\rightarrow$ tabrakan beruntun fatal.",
     "prescription": "Statutory NASVA Alcohol Inspection Flag: Ambang mutlak 0.000 mg/L breathalyzer sebelum kunci kontak diserahkan.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "CRITICAL_SAFETY"
+    "fossilization_risk": "CRITICAL_SAFETY",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-149",
@@ -6582,7 +6927,8 @@ var confusionPairs = [
     "root_cause": "Operator derek mengangkat beban crane saat rigger belum selesai memasang kait tali sling karena salah mendengar tiupan peluit tanda berhenti.",
     "prescription": "Critical Crane Signalman Protocol Flag: Standar isyarat peluit dan gerakan tangan pengangkat derek kementerian.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "CRITICAL_SAFETY"
+    "fossilization_risk": "CRITICAL_SAFETY",
+    "l1_substratum": "general_indonesian"
   },
   {
     "id": "cp-phon-150",
@@ -6605,7 +6951,8 @@ var confusionPairs = [
     "root_cause": "Pekerja asing ragu menekan tombol alarm evakuasi tsunami karena takut disalahkan atau dimarahi atasan (hinan sareru) akibat sindrom malu.",
     "prescription": "Ultimate Emergency Evacuation Principle: Perlindungan nyawa mutlak melampaui rasa takut dievaluasi atasan.",
     "fsrs_difficulty": 7.2,
-    "fossilization_risk": "CRITICAL_SAFETY"
+    "fossilization_risk": "CRITICAL_SAFETY",
+    "l1_substratum": "general_indonesian"
   }
 ];
 

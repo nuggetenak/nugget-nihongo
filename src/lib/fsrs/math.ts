@@ -59,15 +59,41 @@ export const DEFAULT_FSRS_WEIGHTS = [
   0.29, 2.61,         // w[15..16]: hard penalty, easy bonus
 ];
 
+export interface FSRSReviewOptions {
+  requestRetention?: number;
+  isFatigued?: boolean;
+  currentHour?: number;
+  sessionMinutes?: number;
+}
+
+/**
+ * Checks whether user is currently in a cognitive fatigue state (late night or prolonged session).
+ */
+export function isFatigueCondition(options?: { currentHour?: number; sessionMinutes?: number }): boolean {
+  if (!options) return false;
+  const hour = options.currentHour !== undefined ? options.currentHour : new Date().getHours();
+  const session = options.sessionMinutes || 0;
+  return hour >= 21 || hour < 5 || session > 45;
+}
+
 /**
  * Calculates updated FSRSCard metrics after a user review rating (1: Again, 2: Hard, 3: Good, 4: Easy).
- * Mathematically derived from the Ye et al. (2022) FSRS memory model.
+ * Mathematically derived from the Ye et al. (2022) FSRS memory model with ADR-009 fatigue calibration.
  */
 export function calculateFSRSReview(
   existingCard: FSRSCard,
   rating: FSRSRating,
-  requestRetention = 0.9
+  requestRetentionOrOptions: number | FSRSReviewOptions = 0.9
 ): FSRSCard {
+  const options: FSRSReviewOptions =
+    typeof requestRetentionOrOptions === 'number'
+      ? { requestRetention: requestRetentionOrOptions }
+      : requestRetentionOrOptions || {};
+
+  const requestRetention = options.requestRetention ?? 0.9;
+  const isFatigued =
+    options.isFatigued ?? isFatigueCondition({ currentHour: options.currentHour, sessionMinutes: options.sessionMinutes });
+
   const now = new Date();
   const lastReviewTime = existingCard.last_review
     ? new Date(existingCard.last_review).getTime()
@@ -101,12 +127,16 @@ export function calculateFSRSReview(
 
     if (rating === 1) {
       // Lapse (Again)
+      // ADR-009 Fatigue-Aware Dampening: if fatigued, cap difficulty surge to prevent punishment spiral
+      if (isFatigued) {
+        nextDifficulty = Math.min(nextDifficulty, existingCard.difficulty + 0.4);
+      }
       const sForget =
         DEFAULT_FSRS_WEIGHTS[11] *
         Math.pow(nextDifficulty, -DEFAULT_FSRS_WEIGHTS[12]) *
         (Math.pow(existingCard.stability + 1, DEFAULT_FSRS_WEIGHTS[13]) - 1) *
         Math.exp(DEFAULT_FSRS_WEIGHTS[14] * (1 - r));
-      nextStability = Math.max(0.1, sForget);
+      nextStability = Math.max(0.1, isFatigued ? sForget * 1.2 : sForget);
     } else {
       // Successful recall (Hard, Good, Easy)
       const hardPenalty = rating === 2 ? DEFAULT_FSRS_WEIGHTS[15] : 1.0;

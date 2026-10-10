@@ -122,9 +122,24 @@ function compileL1Items(content) {
           category: currentCategory
         };
 
+        function inferL1Substratum(title, stimulus, rootCause) {
+          const text = (title + ' ' + stimulus + ' ' + rootCause).toLowerCase();
+          if (text.includes('/f/') || text.includes('/p/') || text.includes('sunda') || text.includes('fooku') || text.includes('bilabial')) {
+            return 'sundanese';
+          }
+          if (text.includes('jawa') || text.includes('glottal') || text.includes('retroflex') || text.includes('geminate') || text.includes('konsonan berat')) {
+            return 'javanese';
+          }
+          if (text.includes('batak') || text.includes('stres') || text.includes('prosodi') || text.includes('tekanan akhir')) {
+            return 'batak_eastern';
+          }
+          return 'general_indonesian';
+        }
+
         const patterns = extractL1Patterns(raw);
         const level = parseL1Level(num, currentDomain, currentCategory);
         const id = `cp-l1-${String(num).padStart(3, '0')}`;
+        const substratum = inferL1Substratum(raw.title, raw.stimulus, raw.rootCause);
 
         items.push({
           id,
@@ -142,7 +157,8 @@ function compileL1Items(content) {
           root_cause: cleanMarkdown(raw.rootCause),
           prescription: cleanMarkdown(raw.prescription),
           fsrs_difficulty: 7.2,
-          fossilization_risk: num >= 136 ? 'CRITICAL' : 'HIGH'
+          fossilization_risk: num >= 136 ? 'CRITICAL' : 'HIGH',
+          l1_substratum: substratum
         });
       }
     }
@@ -179,9 +195,29 @@ function compilePhonItems(content) {
           domain: currentDomain
         };
 
+        function inferPitchAccentType(pattern, pitch) {
+          const str = (pattern + ' ' + pitch).toLowerCase();
+          if (str.includes('[0]') || str.includes('⓪') || str.includes('heiban')) return 'heiban';
+          if (str.includes('[1]') || str.includes('①') || str.includes('atamadaka')) return 'atamadaka';
+          if (str.includes('[2]') || str.includes('[3]') || str.includes('②') || str.includes('③') || str.includes('nakadaka')) return 'nakadaka';
+          if (str.includes('[4]') || str.includes('④') || str.includes('odaka')) return 'odaka';
+          return undefined;
+        }
+
+        function inferPhonSubstratum(domain, title, l1Transfer) {
+          const text = (domain + ' ' + title + ' ' + l1Transfer).toLowerCase();
+          if (text.includes('sunda') || text.includes('/f/') || text.includes('/p/')) return 'sundanese';
+          if (text.includes('sokuon') || text.includes('geminate') || text.includes('jawa') || text.includes('konsonan ganda')) return 'javanese';
+          if (text.includes('pitch') || text.includes('aksen') || text.includes('stres') || text.includes('batak')) return 'batak_eastern';
+          return 'general_indonesian';
+        }
+
         const patterns = extractPhonPatterns(raw.pairText);
         const level = parsePhonLevel(num);
         const id = `cp-phon-${String(num).padStart(3, '0')}`;
+        const isPitchDomain = currentDomain.includes('Pitch Accent');
+        const pitchType = inferPitchAccentType(raw.accentPattern, raw.particlePitch);
+        const phonSubstratum = inferPhonSubstratum(currentDomain, raw.pairText, raw.l1Transfer);
 
         items.push({
           id,
@@ -189,7 +225,7 @@ function compilePhonItems(content) {
           note_id: `nuance-${id}`,
           level,
           provenance: 'empirical-diagnostic-v1',
-          archetype: 'audio_speed_gate',
+          archetype: isPitchDomain ? 'pitch_accent_contrast' : 'audio_speed_gate',
           domain: currentDomain,
           category: currentDomain,
           title: cleanMarkdown(raw.pairText),
@@ -201,7 +237,9 @@ function compilePhonItems(content) {
           root_cause: cleanMarkdown(raw.l1Transfer),
           prescription: cleanMarkdown(raw.hvptPrescription || raw.communicativeRisk),
           fsrs_difficulty: 7.2,
-          fossilization_risk: num >= 136 ? 'CRITICAL_SAFETY' : 'HIGH'
+          fossilization_risk: num >= 136 ? 'CRITICAL_SAFETY' : 'HIGH',
+          l1_substratum: phonSubstratum,
+          ...(pitchType ? { pitch_accent_type: pitchType } : {})
         });
       }
     }

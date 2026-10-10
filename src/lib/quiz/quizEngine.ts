@@ -9,7 +9,7 @@ import { QuizMode } from '../../types/quiz';
 import { NormalizedVocab, NormalizedGrammar } from '../data/dataManager';
 import { conjugate, FORMS } from '../grammar/conjugation';
 import { FSRSCard } from '../../types/fsrs';
-import { DiagnosticPair } from '../data/diagnosticManager';
+import { DiagnosticPair, L1Substratum, PitchAccentType } from '../data/diagnosticManager';
 
 export interface QuizQuestionItem {
   id: string;
@@ -23,6 +23,12 @@ export interface QuizQuestionItem {
   tokens?: string[];  // for rearrange
   explanation: string;
   level: JLPTLevel;
+  panicTimeoutSeconds?: number;
+  actionChecklist?: string[];
+  moraBeats?: string[];
+  pitchContour?: string;
+  discourseRole?: 'premise' | 'antithesis' | 'synthesis' | 'evidence' | 'conclusion';
+  collocationContrast?: { patternA: string; patternB: string; difference: string };
 }
 
 // Utility to shuffle array
@@ -621,12 +627,49 @@ export function generateMistakeQuestions(
 }
 
 /**
- * Generate diagnostic confusion pair drill questions from the 300 compiled items
+ * Segments a Japanese text string into phonetic mora units.
+ * Digraphs (e.g. きゃ, しゅ, ちょ) are grouped as single morae.
+ * Geminate stop (っ) and moraic nasal (ん) each count as an individual mora.
+ */
+export function splitIntoMora(text: string): string[] {
+  const smallKana = new Set([
+    'ゃ', 'ゅ', 'ょ', 'ぁ', 'ぃ', 'ぅ', 'ぇ', 'ぉ',
+    'ャ', 'ュ', 'ョ', 'ァ', 'ィ', 'ゥ', 'ェ', 'ォ'
+  ]);
+  const morae: string[] = [];
+  const chars = Array.from(text);
+  for (let i = 0; i < chars.length; i++) {
+    const c = chars[i];
+    if (i + 1 < chars.length && smallKana.has(chars[i + 1])) {
+      morae.push(c + chars[i + 1]);
+      i++;
+    } else {
+      morae.push(c);
+    }
+  }
+  return morae;
+}
+
+export interface PanicScenarioItem {
+  id: string;
+  situation: string;
+  japaneseOutput: string;
+  romaji?: string;
+  actionChecklist: string[];
+  context: string;
+  level?: JLPTLevel;
+  timeoutSeconds?: number;
+}
+
+/**
+ * Generate diagnostic confusion pair drill questions from the 300 compiled items.
+ * Supports L1 Substratum prioritization (Sunda, Jawa, Batak, General Indonesian).
  */
 export function generateDiagnosticQuestions(
   pairs: DiagnosticPair[],
   count = 10,
-  level?: JLPTLevel
+  level?: JLPTLevel,
+  substratum?: L1Substratum
 ): QuizQuestionItem[] {
   let pool = pairs;
   if (level) {
@@ -634,19 +677,33 @@ export function generateDiagnosticQuestions(
     if (filtered.length > 0) pool = filtered;
   }
 
+  if (substratum) {
+    const subFiltered = pool.filter((p) => p.l1_substratum === substratum);
+    if (subFiltered.length > 0) {
+      // Prioritize substratum matches, fill remaining from general pool
+      const rest = pool.filter((p) => p.l1_substratum !== substratum);
+      pool = [...shuffle(subFiltered), ...shuffle(rest)];
+    }
+  }
+
   const selected = shuffle(pool).slice(0, count);
   const questions: QuizQuestionItem[] = [];
 
   for (const item of selected) {
-    const isPhon = item.archetype === 'audio_speed_gate';
+    const isPitch = item.archetype === 'pitch_accent_contrast';
+    const isPhon = item.archetype === 'audio_speed_gate' || isPitch;
     const optA = item.target_form;
     const optB = item.l1_trap_form || (item.patterns && item.patterns[1]) || 'Lainnya';
     const options = shuffle([optA, optB]);
 
+    const mode: QuizMode = isPitch ? 'pitch-accent' : isPhon ? 'listening' : 'error-find';
+
     questions.push({
       id: `diag-${item.id}-${Date.now()}`,
-      mode: isPhon ? 'listening' : 'error-find',
-      prompt: isPhon
+      mode,
+      prompt: isPitch
+        ? `[Kontur Aksen Nada Tokyo] Bedakan pola nada tinggi-rendah kata:`
+        : isPhon
         ? `[Diskriminasi Fonologis ${item.level.toUpperCase()}] Pilih bentuk ujaran/pasangan yang benar:`
         : `[Diagnostik L1 Indonesia ${item.level.toUpperCase()}] Hindari jebakan interferensi bahasa Indonesia:`,
       targetItem: {
@@ -659,19 +716,159 @@ export function generateDiagnosticQuestions(
         pos: isPhon ? 'phonology' : 'contrastive',
         examples: [{ jp: item.target_form, id: item.stimulus_l1 }],
       } as any,
-      questionText: isPhon
+      questionText: isPitch
+        ? `${item.title} — ${item.accent_pattern || ''}`
+        : isPhon
         ? `${item.title} — ${item.particle_pitch || item.accent_pattern || ''}`
         : `${item.title}: "${item.stimulus_l1}"`,
-      subText: isPhon
+      subText: isPitch
+        ? `Pola nada: ${item.accent_pattern || 'Standar Tokyo'}`
+        : isPhon
         ? `Tantangan: ${item.stimulus_l1}`
         : `Bentuk yang salah (jebakan L1): ${item.l1_trap_form}`,
       correctAnswer: item.target_form,
       options,
-      explanation: `✅ Bentuk benar: ${item.target_form}\n⚠️ Aturan: ${item.prescription}\n🔍 Analisis: ${item.root_cause}`,
+      explanation: `✅ Bentuk benar: ${item.target_form}\n⚠️ Aturan: ${item.prescription}\n🔍 Analisis: ${item.root_cause}${
+        item.l1_substratum ? `\n📌 Substratum: ${item.l1_substratum}` : ''
+      }`,
       level: item.level,
+      pitchContour: item.accent_pattern,
     });
   }
 
   return questions;
 }
+
+/**
+ * Generate Panic Simulator drills (Cover-Recall-Check under 5s/8s timer).
+ * Designed for SSW Gemba K3 protocols and Kaigo Emergency SBAR.
+ * No multiple choice options are presented: forces real-world spoken production.
+ */
+export function generatePanicRecallQuestions(
+  scenarios: PanicScenarioItem[],
+  count = 5
+): QuizQuestionItem[] {
+  const selected = shuffle(scenarios).slice(0, count);
+  const questions: QuizQuestionItem[] = [];
+
+  for (const s of selected) {
+    questions.push({
+      id: `panic-${s.id}-${Date.now()}`,
+      mode: 'panic-recall',
+      prompt: `[Simulasi Kedaruratan Gemba K3 / SBAR] Lafalkan instruksi/komando dalam ${s.timeoutSeconds || 5} detik!`,
+      targetItem: {
+        id: s.id,
+        word: s.japaneseOutput,
+        reading: s.romaji || s.japaneseOutput,
+        romaji: s.romaji || '',
+        meaning: s.situation,
+        level: s.level || 'n4',
+        pos: 'vocational_safety',
+        examples: [{ jp: s.japaneseOutput, id: s.situation }],
+      } as any,
+      questionText: `🚨 SITUASI: ${s.situation}`,
+      subText: `Konteks: ${s.context}`,
+      correctAnswer: s.japaneseOutput,
+      // No options provided: Cover-Recall-Check!
+      explanation: `🎯 Komando Wajib: "${s.japaneseOutput}"\n📋 Langkah Tindakan:\n${s.actionChecklist.map((a, idx) => `  ${idx + 1}. ${a}`).join('\n')}`,
+      level: s.level || 'n4',
+      panicTimeoutSeconds: s.timeoutSeconds || 5,
+      actionChecklist: s.actionChecklist,
+    });
+  }
+
+  return questions;
+}
+
+/**
+ * Generate Visual Mora Metronome rhythm pacing drills.
+ * Breaks words into distinct mora beats to eliminate stress-timed rush.
+ */
+export function generateMoraPacingQuestions(
+  vocabList: NormalizedVocab[],
+  count = 5
+): QuizQuestionItem[] {
+  const selected = shuffle(vocabList).slice(0, count);
+  const questions: QuizQuestionItem[] = [];
+
+  for (const v of selected) {
+    const morae = splitIntoMora(v.reading || v.word);
+    questions.push({
+      id: `mora-${v.id}-${Date.now()}`,
+      mode: 'mora-pacing',
+      prompt: `[Pemandu Irama Mora] Ikuti ketukan metronom (${morae.length} mora) dengan tempo teratur:`,
+      targetItem: v,
+      questionText: `${v.word} (${v.reading})`,
+      subText: `Artikulasi ${morae.length} mora merata: ${morae.join(' • ')}`,
+      correctAnswer: morae.join(' • '),
+      options: [
+        morae.join(' • '),
+        shuffle([...morae]).join(' • '),
+        morae.slice(0, Math.max(1, morae.length - 1)).join(' • '),
+      ],
+      explanation: `Kata "${v.word}" terdiri dari ${morae.length} mora: [${morae.join(' | ')}]. Ucapkan setiap mora dengan durasi waktu yang sama rata!`,
+      level: v.level,
+      moraBeats: morae,
+    });
+  }
+
+  return questions;
+}
+
+/**
+ * Generate Pitch Accent contrast drills for Tokyo pitch discrimination.
+ */
+export function generatePitchAccentQuestions(
+  pairs: DiagnosticPair[],
+  count = 5
+): QuizQuestionItem[] {
+  const pitchPool = pairs.filter(
+    (p) => p.archetype === 'pitch_accent_contrast' || p.pitch_accent_type !== undefined
+  );
+  const pool = pitchPool.length > 0 ? pitchPool : pairs;
+  const selected = shuffle(pool).slice(0, count);
+  const questions: QuizQuestionItem[] = [];
+
+  const PITCH_LABELS: Record<string, string> = {
+    heiban: '[⓪] Heiban (Datar)',
+    atamadaka: '[①] Atamadaka (Awal Tinggi)',
+    nakadaka: '[②] Nakadaka (Tengah Tinggi)',
+    odaka: '[④] Odaka (Akhir Tinggi)',
+  };
+
+  for (const p of selected) {
+    const correctLabel = p.pitch_accent_type
+      ? PITCH_LABELS[p.pitch_accent_type] || p.accent_pattern || p.target_form
+      : p.target_form;
+
+    const allOptions = Object.values(PITCH_LABELS);
+    const options = shuffle(allOptions);
+
+    questions.push({
+      id: `pitch-${p.id}-${Date.now()}`,
+      mode: 'pitch-accent',
+      prompt: `[Aksen Nada Tokyo] Tentukan pola kontur nada yang benar untuk kata:`,
+      targetItem: {
+        id: p.id,
+        word: p.title,
+        reading: p.accent_pattern || p.target_form,
+        romaji: p.patterns.join(' vs '),
+        meaning: p.stimulus_l1,
+        level: p.level,
+        pos: 'phonology',
+        examples: [{ jp: p.target_form, id: p.stimulus_l1 }],
+      } as any,
+      questionText: `Kata: "${p.title}"`,
+      subText: `Arti: ${p.stimulus_l1} | Pola Partikel: ${p.particle_pitch || '-'}`,
+      correctAnswer: correctLabel,
+      options,
+      explanation: `Pola nada untuk "${p.title}" adalah ${correctLabel}. Pola partikel: ${p.particle_pitch || '-'}.\n⚠️ Bahaya salah aksen: ${p.prescription}`,
+      level: p.level,
+      pitchContour: p.accent_pattern,
+    });
+  }
+
+  return questions;
+}
+
 

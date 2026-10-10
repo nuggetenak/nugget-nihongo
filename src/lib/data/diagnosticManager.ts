@@ -7,13 +7,16 @@
 
 import { JLPTLevel } from '../../types/vocab';
 
+export type L1Substratum = 'sundanese' | 'javanese' | 'batak_eastern' | 'general_indonesian';
+export type PitchAccentType = 'heiban' | 'atamadaka' | 'nakadaka' | 'odaka';
+
 export interface DiagnosticPair {
   id: string;
   patterns: string[];
   note_id: string;
   level: JLPTLevel;
   provenance: string;
-  archetype: 'contrastive_pair_slot' | 'audio_speed_gate';
+  archetype: 'contrastive_pair_slot' | 'audio_speed_gate' | 'pitch_accent_contrast';
   domain: string;
   category: string;
   title: string;
@@ -26,6 +29,8 @@ export interface DiagnosticPair {
   fossilization_risk: 'HIGH' | 'CRITICAL' | 'CRITICAL_SAFETY';
   accent_pattern?: string;
   particle_pitch?: string;
+  l1_substratum?: L1Substratum;
+  pitch_accent_type?: PitchAccentType;
 }
 
 declare global {
@@ -120,11 +125,36 @@ export async function getDiagnosticPairsByDomain(domainKeyword: string): Promise
 }
 
 /**
+ * Filter diagnostic items by L1 Substratum (sundanese, javanese, batak_eastern, general_indonesian)
+ */
+export async function getDiagnosticPairsBySubstratum(
+  substratum: L1Substratum
+): Promise<DiagnosticPair[]> {
+  const all = await loadDiagnosticPairs();
+  return all.filter((p) => p.l1_substratum === substratum);
+}
+
+/**
+ * Filter diagnostic items by Tokyo Pitch Accent type or presence
+ */
+export async function getDiagnosticPairsByPitchAccent(
+  pitchType?: PitchAccentType
+): Promise<DiagnosticPair[]> {
+  const all = await loadDiagnosticPairs();
+  if (pitchType) {
+    return all.filter((p) => p.pitch_accent_type === pitchType);
+  }
+  return all.filter((p) => p.archetype === 'pitch_accent_contrast' || p.pitch_accent_type !== undefined);
+}
+
+/**
  * Get a random diagnostic pair with optional filtering
  */
 export async function getRandomDiagnosticPair(filter?: {
   level?: JLPTLevel;
-  archetype?: 'contrastive_pair_slot' | 'audio_speed_gate';
+  archetype?: 'contrastive_pair_slot' | 'audio_speed_gate' | 'pitch_accent_contrast';
+  substratum?: L1Substratum;
+  pitchType?: PitchAccentType;
 }): Promise<DiagnosticPair | null> {
   let pool = await loadDiagnosticPairs();
   if (filter?.level) {
@@ -132,6 +162,12 @@ export async function getRandomDiagnosticPair(filter?: {
   }
   if (filter?.archetype) {
     pool = pool.filter((p) => p.archetype === filter.archetype);
+  }
+  if (filter?.substratum) {
+    pool = pool.filter((p) => p.l1_substratum === filter.substratum);
+  }
+  if (filter?.pitchType) {
+    pool = pool.filter((p) => p.pitch_accent_type === filter.pitchType);
   }
   if (pool.length === 0) return null;
   return pool[Math.floor(Math.random() * pool.length)];

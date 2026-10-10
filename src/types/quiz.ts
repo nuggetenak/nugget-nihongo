@@ -8,7 +8,12 @@ export type QuizMode =
   | 'rearrange'
   | 'conjugation'
   | 'translation'
-  | 'error-find';
+  | 'error-find'
+  | 'panic-recall'
+  | 'mora-pacing'
+  | 'pitch-accent'
+  | 'discourse-deconstruct'
+  | 'collocation-matrix';
 
 export interface QuizQuestion {
   id: string;
@@ -23,6 +28,12 @@ export interface QuizQuestion {
   romaji?: string;
   sourceType: 'vocab' | 'grammar';
   level: JLPTLevel;
+  panicTimeoutSeconds?: number;
+  actionChecklist?: string[];
+  moraBeats?: string[];
+  pitchContour?: string;
+  discourseRole?: 'premise' | 'antithesis' | 'synthesis' | 'evidence' | 'conclusion';
+  collocationContrast?: { patternA: string; patternB: string; difference: string };
 }
 
 export interface QuizSessionResult {
