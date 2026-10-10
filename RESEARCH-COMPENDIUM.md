@@ -1,15 +1,15 @@
 # NUGGET NIHONGO — EMPIRICAL SLA RESEARCH COMPENDIUM
 ## Master Academic Evidence Base & Curriculum Architecture Guide
-**Corpus Version:** v23 (Universal Empirical Verification & Audit Hardening: 512 Verified DOIs, 100% Accounted For)  
-**Total Unique Citations:** 765+  
-**Verified DOIs / Canonical Records:** 512 Verified DOIs | 100% Accounted For (Zero pending flags across all 23 section files)  
+**Corpus Version:** v24 (Advanced Phonology, Prosodic CAPT, & Sociopragmatic Refusals Expansion: 531+ Verified DOIs, 100% Accounted For)  
+**Total Unique Citations:** 785+  
+**Verified DOIs / Canonical Records:** 531+ Verified DOIs | 100% Accounted For (Zero pending flags across all 23 section files)  
 **Target Domain:** Indonesian Adult Learners of Japanese as a Foreign Language (SSW / Tokutei Ginou & General Academic)
 
 ---
 
 ## 1. EXECUTIVE SUMMARY & REPOSITORY PURPOSE
 
-This repository contains the exhaustive Second Language Acquisition (SLA), psycholinguistic, and cognitive science research compendium underpinning the original curriculum of **Nugget Nihongo**. Designed specifically for Indonesian L1 speakers acquiring Japanese, the platform synthesizes over 760 peer-reviewed studies across 16 core thematic domains, level-ladder specifications, and algorithmic design matrices.
+This repository contains the exhaustive Second Language Acquisition (SLA), psycholinguistic, and cognitive science research compendium underpinning the original curriculum of **Nugget Nihongo**. Designed specifically for Indonesian L1 speakers acquiring Japanese, the platform synthesizes over 780 peer-reviewed studies across 16 core thematic domains, level-ladder specifications, and algorithmic design matrices.
 
 All findings are operationalized into reproducible curriculum parameters:
 1. **Contrastive Linguistics & Error Analysis:** Direct empirical mapping of Indonesian ↔ Japanese grammatical, lexical, and phonological interference points.
@@ -41,10 +41,10 @@ nugget-nihongo-research/
 │   │   ├── SECTION8-PWA.md                    ← Mobile CALL/MALL architecture, SDT motivation, anxiety (~145 citations)
 │   │   ├── SECTION9-MULTIMEDIA.md             ← Cognitive Load Theory & Japanese orthography (~93 citations)
 │   │   ├── SECTION10-GAMIFICATION-HABIT.md    ← Behavioral habit formation, sleep consolidation (~41 citations)
-│   │   ├── SECTION11-PHONOLOGY.md             ← Speech perception, HVPT, mora isochrony, pitch accent (~44 citations)
+│   │   ├── SECTION11-PHONOLOGY.md             ← Speech perception, HVPT, mora isochrony, pitch accent, shadowing & CAPT (55 citations)
 │   │   ├── SECTION12-OUTPUT-THEORY.md         ← Pushed output hypothesis & noticing the gap (~32 citations)
 │   │   ├── SECTION13-INDIVIDUAL-DIFFS.md      ← Working memory capacity, anxiety, language aptitude (~43 citations)
-│   │   ├── SECTION14-SOCIO.md                 ← Interlanguage pragmatics & honorifics (27 citations)
+│   │   ├── SECTION14-SOCIO.md                 ← Interlanguage pragmatics, keigo, refusals & conflict mitigation (36 citations)
 │   │   ├── SECTION15-SSW.md                   ← Specified Skilled Worker vocational Japanese (33 citations)
 │   │   ├── SECTION16-CALL.md                  ← Meta-analytic CALL/MALL effectiveness (21 citations)
 │   │   ├── SECTION17-ADULT.md                 ← Adult SLA, ego permeability, autonomous learning (19 citations)

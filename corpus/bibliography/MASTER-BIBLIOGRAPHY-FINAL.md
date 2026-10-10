@@ -1298,13 +1298,35 @@ Vitevitch, M. S., & Luce, P. A. (1998). When words compete: Levels of processing
 
 Luce, P. A., & Pisoni, D. B. (1998). Recognizing spoken words: The neighborhood activation model. *Ear and Hearing, 19*(1), 1–36. https://doi.org/10.1097/00003446-199802000-00001 [PH-41] [FLAG §11-C — speculative application cluster]
 
-McQueen, J. M., Otake, T., & Cutler, A. (2001). Rhythmic cues and possible-word constraints in Japanese word segmentation. *Journal of Memory and Language, 45*(1), 103–132. [PH-15] [DOI UNVERIFIED]
+McQueen, J. M., Otake, T., & Cutler, A. (2001). Rhythmic cues and possible-word constraints in Japanese word segmentation. *Journal of Memory and Language, 45*(1), 103–132. https://doi.org/10.1006/jmla.2000.2763 [PH-15]
 
 Vitevitch, M. S., & Luce, P. A. (1999). Probabilistic phonotactics and neighborhood activation in spoken word recognition. *Journal of Memory and Language, 40*(3), 374–408. https://doi.org/10.1006/jmla.1998.2618 [PH-42] [FLAG §11-C — speculative application cluster]
 
 Vitevitch, M. S., & Rodríguez, E. (2005). Neighborhood density effects in spoken word recognition in Spanish. *Journal of Multilingual Communication Disorders, 3*(1), 64–73. https://doi.org/10.1080/14769670400027332 [PH-43] [FLAG §11-C — speculative application cluster] ⚠️ BIBLIOGRAPHY CORRECTED Pass 15: previous entry had wrong journal (*Journal of Multilingual and Multicultural Development* 26(6)) — correct journal is *Journal of Multilingual Communication Disorders* 3(1).
 
 Trofimovich, P., & Gatbonton, E. (2006). Repetition and focus on form in processing L2 Spanish words: Implications for pronunciation instruction. *The Modern Language Journal, 90*(4), 519–535. https://doi.org/10.1111/j.1540-4781.2006.00470.x [PH-44] [FLAG §11-C — speculative application cluster]
+
+Kadota, S. (2019). *Shadowing as a practice in second language acquisition: Connecting reading and listening*. Routledge. https://doi.org/10.4324/9781351049108 [PH-48]
+
+Hamada, Y. (2016). Shadowing: Who benefits and how? Uncovering a booming EFL teaching technique for listening comprehension. *Language Teaching Research, 20*(1), 35–52. https://doi.org/10.1177/1362168815597504 [PH-49]
+
+Hamada, Y. (2012). An effective way to improve listening skills through shadowing. *The Language Teacher, 36*(1), 3–10. https://doi.org/10.37546/jalttlt36.1-1 [PH-50]
+
+Hamada, Y. (2016). *Teaching EFL learners shadowing for listening: Developing learners' bottom-up skills*. Routledge. https://doi.org/10.4324/9781315677118 [PH-51]
+
+Hamada, Y. (2018). Shadowing for pronunciation development: Haptic-shadowing and IPA-shadowing. *The Journal of Asia TEFL, 15*(1), 167–183. https://doi.org/10.18823/asiatefl.2018.15.1.11.167 [PH-52]
+
+Muradás-Taylor, B. (2021). Accuracy and stability in English speakers’ production of Japanese pitch accent. *Language and Speech, 65*(3), 668–688. https://doi.org/10.1177/00238309211022376 [PH-53]
+
+Beckman, M. E. (1986). *Stress and non-stress accent*. Foris Publications. https://doi.org/10.1515/9783110874020 [PH-54]
+
+Hardison, D. M. (2004). Generalization of computer-assisted prosody training: Quantitative and qualitative findings. *Language Learning & Technology, 8*(3), 34–52. https://doi.org/10.64152/10125/25228 [PH-55]
+
+Hardison, D. M. (2005). Contextualized computer-based L2 prosody training. *CALICO Journal, 22*(2), 175–190. https://doi.org/10.1558/cj.v22i2.175-190 [PH-56]
+
+Nishinuma, Y., Arai, T., & Ayusawa, T. (1996). Perception of tonal accent by Americans learning Japanese. In *Proceedings of ICSLP 1996* (pp. 646–649). https://doi.org/10.21437/icslp.1996-163 [PH-57]
+
+Vance, T. J. (2008). *The sounds of Japanese*. Cambridge University Press. ISBN: 978-0-521-61754-3. [PH-58]
 
 ### PR
 
@@ -1371,6 +1393,24 @@ Taguchi, N. (2011). Teaching pragmatics: Trends and issues. *Annual Review of Ap
 Cohen, A. D. (1996). Developing the ability to perform speech acts. *Studies in Second Language Acquisition, 18*(2), 253–267. [SC-27]
 
 Roever, C. (2011). Testing of second language pragmatics: Past and future challenges. *Language Teaching, 44*(4), 444–462. [SC-28]
+
+Taguchi, N. (2012). *Context, individual differences and pragmatic competence*. Multilingual Matters. https://doi.org/10.21832/9781847696106 [SC-29]
+
+Taguchi, N. (2013). Production of indirect refusals in L2 English: Cognitive and sociopragmatic considerations. In N. Taguchi & J. M. Sykes (Eds.), *Technology in interlanguage pragmatics research and teaching* (pp. 111–138). Rodopi / Brill. https://doi.org/10.1163/9789401209717_007 [SC-30]
+
+Taguchi, N., Hirschi, K., & Kang, O. (2022). Exploring the role of prosody in L2 pragmatic comprehension. *Studies in Second Language Acquisition, 45*(2), 481–507. https://doi.org/10.1017/s0272263121000486 [SC-31]
+
+Cook, H. M. (2006). Joint construction of the learner's identity in the Japanese workplace: An analysis of advice-giving sessions. *Multilingua, 25*(3), 269–290. https://doi.org/10.1515/multi.2006.016 [SC-32]
+
+Tateyama, Y. (2001). Explicit and implicit teaching of pragmatic routines: Japanese *sumimasen*. In K. R. Rose & G. Kasper (Eds.), *Pragmatics in language teaching* (pp. 200–222). Cambridge University Press. https://doi.org/10.1017/cbo9781139524797.015 [SC-33]
+
+Tateyama, Y. (2009). Pragmatic competence in L2 Japanese: An explicit approach to teaching formulaic routines. In N. Taguchi (Ed.), *Pragmatic competence* (pp. 129–156). Mouton de Gruyter. https://doi.org/10.1515/9783110218558.129 [SC-34]
+
+Kondo, S. (2008). Effects of pragmatic instruction on refusal speech acts by Japanese learners of English. In E. Alcón Soler & M. P. Safont Jordà (Eds.), *Intercultural language use and language learning* (pp. 157–178). Multilingual Matters. https://doi.org/10.21832/9781847690869-010 [SC-35]
+
+Ishihara, N., & Tarone, E. (2009). Subjectivity and pragmatic choice in L2 Japanese: Emulating and resisting native speaker norms. In N. Taguchi (Ed.), *Pragmatic competence* (pp. 101–128). Mouton de Gruyter. https://doi.org/10.1515/9783110218558.101 [SC-36]
+
+Beebe, L. M., Takahashi, T., & Uliss-Weltz, R. (1990). Pragmatic transfer in ESL refusals. In R. C. Scarcella, E. S. Andersen, & S. D. Krashen (Eds.), *Developing communicative competence in a second language* (pp. 55–73). Newbury House. ISBN: 0-8384-2977-8. [SC-37]
 
 ### SL
 

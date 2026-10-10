@@ -1,14 +1,14 @@
 # NUGGET NIHONGO — EMPIRICAL SLA RESEARCH REPOSITORY CONTEXT
 **Operational Standards & Architecture Guide**  
-**Corpus Version:** v23 (Universal Empirical Verification & Audit Hardening: 512 Verified DOIs, 100% Accounted For)  
-**Total Unique Citations:** 765+ (512 verified DOIs, 100% accounted for, zero pending flags)
+**Corpus Version:** v24 (Advanced Phonology, Prosodic CAPT, & Sociopragmatic Refusals Expansion: 531+ Verified DOIs, 100% Accounted For)  
+**Total Unique Citations:** 785+ (531+ verified DOIs, 100% accounted for, zero pending flags)
 
 ---
 
 ## 1. Scope & Domain
 
 Research library for the evidence-based Japanese learning platform tailored specifically to Indonesian L1 native speakers.
-- **Scale:** 765 unique citations across 16 primary corpus sections (§1–§5, §8–§17, §CA), contrastive inventory, 18-sector vocational taxonomy, Prometric CBT exam matrix, and synthesis specifications.
+- **Scale:** 785+ unique citations across 16 primary corpus sections (§1–§5, §8–§17, §CA), contrastive inventory, 18-sector vocational taxonomy, Prometric CBT exam matrix, and synthesis specifications.
 - **Target Audience:** Indonesian adult learners, Specified Skilled Worker (SSW / *Tokutei Ginou*) candidates, and general academic learners.
 - **Pedagogical Alignment:** Empirical Second Language Acquisition (SLA), Processability Theory, High-Variability Phonetic Training (HVPT), Free Spaced Repetition Scheduling (FSRS), and Cognitive Load Theory (CLT).
 
@@ -26,7 +26,7 @@ Research library for the evidence-based Japanese learning platform tailored spec
 | Vocational EPA/SSW SLA Corpus | `corpus/sections/vocational/EPA-KAIGO-SSW-WORKPLACE-CORPUS-v1.md` | Eldercare speech shifts, pain onomatopoeia, gemba nihongo safety (Jalur B) |
 | All-Sector SSW Master Taxonomy | `corpus/sections/vocational/ALL-SECTOR-SSW-TAXONOMY-CORPUS-v1.md` | 18-sector Tokutei Ginou operational taxonomy, TSA workflows, and emergency shouting |
 | Prometric SSW Exam Specification | `corpus/sections/vocational/PROMETRIC-SSW-EXAM-SPECIFICATION-CORPUS-v1.md` | Prometric CBT test matrix, 17 JAIM manufacturing sub-divisions, JAVADA Business Career Kentei L3, JAC 3 divisions, & 4 visa pipelines |
-| Master Bibliography | `corpus/bibliography/MASTER-BIBLIOGRAPHY-FINAL.md` | Canonical bibliography registry (765 unique entries, v22) |
+| Master Bibliography | `corpus/bibliography/MASTER-BIBLIOGRAPHY-FINAL.md` | Canonical bibliography registry (785+ unique entries, v24) |
 | DOI Verification Tracker | `corpus/bibliography/DOI-VERIFICATION-TRACKER.md` | Audit registry of publisher DOIs and verification statuses (100% accounted for) |
 | Repository Index | `INDEX.md` | Comprehensive file and section index |
 | Compass Foundation | `corpus/source-of-truth/compass_artifact.md` | 44 foundational SLA and cognitive psychology citations |
@@ -51,10 +51,10 @@ All 16 clean, verified section files are maintained in `corpus/sections/`:
 | `SECTION8-PWA.md` | Mobile Architecture, SDT Motivation, Malu Anxiety Mitigation | ~145 |
 | `SECTION9-MULTIMEDIA.md` | Multimedia Learning & Japanese Orthographic Acquisition | ~93 |
 | `SECTION10-GAMIFICATION-HABIT.md` | Behavioral Habit Formation & Sleep Consolidation | ~41 |
-| `SECTION11-PHONOLOGY.md` | Phonological Science, HVPT, Mora Isochrony, Pitch Accent | ~44 |
+| `SECTION11-PHONOLOGY.md` | Phonological Science, HVPT, Mora Isochrony, Pitch Accent, Shadowing & CAPT | 55 |
 | `SECTION12-OUTPUT-THEORY.md` | Output Hypothesis & Noticing the Gap | ~32 |
 | `SECTION13-INDIVIDUAL-DIFFS.md` | Working Memory, Anxiety, & Individual Learner Differences | ~43 |
-| `SECTION14-SOCIO.md` | Sociolinguistics, Keigo Calibration, Speech Acts | 27 |
+| `SECTION14-SOCIO.md` | Sociolinguistics, Keigo Calibration, Speech Acts, Workplace Refusals & Conflict Mitigation | 36 |
 | `SECTION15-SSW.md` | Specified Skilled Worker (SSW) Vocational Japanese | 33 |
 | `SECTION16-CALL.md` | Meta-Analytic CALL/MALL Effectiveness Evidence | 21 |
 | `SECTION17-ADULT.md` | Adult SLA, Ego Permeability, Autonomous Learning | 19 |

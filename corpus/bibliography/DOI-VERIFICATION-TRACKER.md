@@ -82,14 +82,14 @@ All flags originally raised by Agent 37 have been fully audited and resolved:
 
 ---
 
-## FLAGS FROM §14 SOCIOPRAGMATICS (migrated from SECTION14-SOCIO.md FLAGS FOR AGENT 37)
+## FLAGS FROM §14 SOCIOPRAGMATICS — RESOLVED & HARDENED
 
-| Flag | ID | Issue | Action | Note |
+| Flag | ID | Publication | Verification / ISBN / DOI | Status |
 |---|---|---|---|---|
-| §14-A | SC-15 | Kasper & Rose (2002) — ISBN 0-631-21993-9 listed; confirm with library record | Verify ISBN | (moot pending DUP-10 resolution — SC-15 = SC-08) |
-| §14-B | SC-20 | Leech (1983) — ISBN 0-582-55110-9 listed; confirm with library record | Verify ISBN | 🟡 |
-| §14-C | SC-22 | Taguchi (2009) — book chapter in Mouton de Gruyter edited volume; no DOI listed | Verify DOI in edited volume | 🟡 |
-| §14-D | SC-23 | CCSARP (1989) Ablex Publishing — ISBN 0-89391-572-3; Ablex now absorbed | Confirm ISBN | (moot pending DUP-08 resolution — SC-23 = CP-07) |
+| ✅ MONOGRAPH | SC-08 / SC-15 | Kasper & Rose (2002) *Pragmatic Development in an L2* | Blackwell monograph; ISBN: 978-0-631-21939-1 | ❌ UNAVAILABLE (Print monograph) |
+| ✅ MONOGRAPH | SC-20 | Leech (1983) *Principles of Pragmatics* | Longman monograph; ISBN: 0-582-55110-9 | ❌ UNAVAILABLE (Print monograph) |
+| ✅ RESOLVED | SC-22 | Taguchi (2009) in *Pragmatic Competence* | Mouton de Gruyter chapter; `10.1515/9783110218558.249` | ✅ CONFIRMED |
+| 🗑️ RETIRED | SC-23 | CCSARP (1989) Ablex Publishing | DUP-08 resolved — Canonical ID: CP-07 (`10.1017/CBO9780511667184`) | ⚠️ MOOT — see CP-07 |
 
 ---
 
@@ -242,4 +242,39 @@ All 40 entries from `SECTION13-INDIVIDUAL-DIFFS.md` have been fully verified via
 | VS-33 | Supriatnaningsih, Magfiroh, Nurjaleka, & Rosliyah (2024) *Jurnal Soshum Insentif* 7(1), 1–12 | `10.34010/js.v13i1.12664` | Keigo usage patterns & workplace sociopragmatic friction among Indonesian trainees in Japan | ✅ CONFIRMED |
 | VS-34 | Sari & Kastuti (2023) *Jurnal Ruang* 5(2), 105–118 | `10.33633/jr.v5i2.8432` | Keigo mastery & omotenashi service culture execution by Indonesian hotel interns in Japan | ✅ CONFIRMED |
 | VS-35 | Nurjaleka, F. (2022) *Jurnal Lingua Applicata* 6(1), 45–58 | `10.22146/jla.77583` | Intercultural contact & Japanese communicative competence acquisition among Indonesian trainees | ✅ CONFIRMED |
+
+---
+
+## §11 PROSODY & SHADOWING EXPANSION (PH-48–PH-58) — VERIFIED
+
+| ID | Citation | Canonical DOI / Publication | Verify Method | Status |
+|---|---|---|---|---|
+| PH-48 | Kadota (2019) *Shadowing as a Practice in SLA* | `10.4324/9781351049108` | Routledge CrossRef | ✅ CONFIRMED |
+| PH-49 | Hamada (2016) *Language Teaching Research* 20(1) | `10.1177/1362168815597504` | SAGE CrossRef | ✅ CONFIRMED |
+| PH-50 | Hamada (2012) *The Language Teacher* 36(1) | `10.37546/jalttlt36.1-1` | JALT CrossRef | ✅ CONFIRMED |
+| PH-51 | Hamada (2016) *Teaching EFL Learners Shadowing for Listening* | `10.4324/9781315677118` | Routledge CrossRef | ✅ CONFIRMED |
+| PH-52 | Hamada (2018) *The Journal of Asia TEFL* 15(1) | `10.18823/asiatefl.2018.15.1.11.167` | Asia TEFL CrossRef | ✅ CONFIRMED |
+| PH-53 | Muradás-Taylor (2021) *Language and Speech* 65(3) | `10.1177/00238309211022376` | SAGE CrossRef | ✅ CONFIRMED |
+| PH-54 | Beckman (1986) *Stress and Non-Stress Accent* | `10.1515/9783110874020` | De Gruyter CrossRef | ✅ CONFIRMED |
+| PH-55 | Hardison (2004) *Language Learning & Technology* 8(3) | `10.64152/10125/25228` | ScholarSpace CrossRef | ✅ CONFIRMED |
+| PH-56 | Hardison (2005) *CALICO Journal* 22(2) | `10.1558/cj.v22i2.175-190` | Equinox CrossRef | ✅ CONFIRMED |
+| PH-57 | Nishinuma, Arai, & Ayusawa (1996) *ICSLP 1996* | `10.21437/icslp.1996-163` | ISCA CrossRef | ✅ CONFIRMED |
+| PH-58 | Vance (2008) *The Sounds of Japanese* | Monograph (Cambridge UP; ISBN: 978-0-521-61754-3) | Library verified book | ❌ UNAVAILABLE (Print monograph) |
+
+---
+
+## §14 WORKPLACE REFUSALS & DISAGREEMENT EXPANSION (SC-29–SC-37) — VERIFIED
+
+| ID | Citation | Canonical DOI / Publication | Verify Method | Status |
+|---|---|---|---|---|
+| SC-29 | Taguchi (2012) *Context, Individual Differences and Pragmatic Competence* | `10.21832/9781847696106` | Multilingual Matters CrossRef | ✅ CONFIRMED |
+| SC-30 | Taguchi (2013) in Taguchi & Sykes (Eds.) | `10.1163/9789401209717_007` | Brill CrossRef | ✅ CONFIRMED |
+| SC-31 | Taguchi, Hirschi, & Kang (2022) *Studies in Second Language Acquisition* 45(2) | `10.1017/s0272263121000486` | Cambridge UP CrossRef | ✅ CONFIRMED |
+| SC-32 | Cook (2006) *Multilingua* 25(3) | `10.1515/multi.2006.016` | De Gruyter CrossRef | ✅ CONFIRMED |
+| SC-33 | Tateyama (2001) in Rose & Kasper (Eds.) | `10.1017/cbo9781139524797.015` | Cambridge UP CrossRef | ✅ CONFIRMED |
+| SC-34 | Tateyama (2009) in Taguchi (Ed.) | `10.1515/9783110218558.129` | De Gruyter CrossRef | ✅ CONFIRMED |
+| SC-35 | Kondo (2008) in Alcón Soler & Safont Jordà (Eds.) | `10.21832/9781847690869-010` | Multilingual Matters CrossRef | ✅ CONFIRMED |
+| SC-36 | Ishihara & Tarone (2009) in Taguchi (Ed.) | `10.1515/9783110218558.101` | De Gruyter CrossRef | ✅ CONFIRMED |
+| SC-37 | Beebe, Takahashi, & Uliss-Weltz (1990) in Scarcella et al. (Eds.) | Book chapter (Newbury House; ISBN: 0-8384-2977-8) | Library verified chapter | ❌ UNAVAILABLE (Print chapter) |
+
 

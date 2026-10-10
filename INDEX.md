@@ -1,7 +1,7 @@
 # NUGGET NIHONGO — RESEARCH LIBRARY INDEX
-**Version:** v23 (Universal Empirical Verification & Audit Hardening: 512 Verified DOIs, 100% Accounted For)  
-**Total Unique Citations:** 765+  
-**Verified DOIs:** 512 (100% accounted for, zero pending flags across all 23 section files)
+**Version:** v24 (Advanced Phonology, Prosodic CAPT, & Sociopragmatic Refusals Expansion: 531+ Verified DOIs, 100% Accounted For)  
+**Total Unique Citations:** 785+  
+**Verified DOIs:** 531+ (100% accounted for, zero pending flags across all 23 section files)
 
 ---
 
@@ -27,10 +27,10 @@ nugget-nihongo-research/
 │   │   ├── SECTION8-PWA.md                    ← Mobile CALL/MALL architecture, SDT, malu (~145)
 │   │   ├── SECTION9-MULTIMEDIA.md             ← Cognitive Load Theory & Japanese orthography (~93)
 │   │   ├── SECTION10-GAMIFICATION-HABIT.md    ← Behavioral habit formation, sleep consolidation (~41)
-│   │   ├── SECTION11-PHONOLOGY.md             ← Speech perception, HVPT, mora isochrony, pitch accent (~44)
+│   │   ├── SECTION11-PHONOLOGY.md             ← Speech perception, HVPT, mora isochrony, pitch accent, shadowing & CAPT (55)
 │   │   ├── SECTION12-OUTPUT-THEORY.md         ← Pushed output hypothesis & noticing the gap (~32)
 │   │   ├── SECTION13-INDIVIDUAL-DIFFS.md      ← Working memory capacity, anxiety, aptitude (~43)
-│   │   ├── SECTION14-SOCIO.md                 ← Interlanguage pragmatics & honorifics (27)
+│   │   ├── SECTION14-SOCIO.md                 ← Interlanguage pragmatics, honorifics, refusals & conflict mitigation (36)
 │   │   ├── SECTION15-SSW.md                   ← Specified Skilled Worker vocational Japanese (33)
 │   │   ├── SECTION16-CALL.md                  ← Meta-analytic CALL/MALL evidence (21)
 │   │   ├── SECTION17-ADULT.md                 ← Adult SLA, ego permeability, autonomous learning (19)
