@@ -9,6 +9,7 @@ import { QuizMode } from '../../types/quiz';
 import { NormalizedVocab, NormalizedGrammar } from '../data/dataManager';
 import { conjugate, FORMS } from '../grammar/conjugation';
 import { FSRSCard } from '../../types/fsrs';
+import { DiagnosticPair } from '../data/diagnosticManager';
 
 export interface QuizQuestionItem {
   id: string;
@@ -617,5 +618,60 @@ export function generateMistakeQuestions(
     id: `retry-${q.id}-${Date.now()}`,
     prompt: `[Ulangi Kesalahan] ${q.prompt}`,
   }));
+}
+
+/**
+ * Generate diagnostic confusion pair drill questions from the 300 compiled items
+ */
+export function generateDiagnosticQuestions(
+  pairs: DiagnosticPair[],
+  count = 10,
+  level?: JLPTLevel
+): QuizQuestionItem[] {
+  let pool = pairs;
+  if (level) {
+    const filtered = pool.filter((p) => p.level === level);
+    if (filtered.length > 0) pool = filtered;
+  }
+
+  const selected = shuffle(pool).slice(0, count);
+  const questions: QuizQuestionItem[] = [];
+
+  for (const item of selected) {
+    const isPhon = item.archetype === 'audio_speed_gate';
+    const optA = item.target_form;
+    const optB = item.l1_trap_form || (item.patterns && item.patterns[1]) || 'Lainnya';
+    const options = shuffle([optA, optB]);
+
+    questions.push({
+      id: `diag-${item.id}-${Date.now()}`,
+      mode: isPhon ? 'listening' : 'error-find',
+      prompt: isPhon
+        ? `[Diskriminasi Fonologis ${item.level.toUpperCase()}] Pilih bentuk ujaran/pasangan yang benar:`
+        : `[Diagnostik L1 Indonesia ${item.level.toUpperCase()}] Hindari jebakan interferensi bahasa Indonesia:`,
+      targetItem: {
+        id: item.id,
+        word: item.title,
+        reading: item.accent_pattern || item.target_form,
+        romaji: item.patterns.join(' vs '),
+        meaning: item.stimulus_l1,
+        level: item.level,
+        pos: isPhon ? 'phonology' : 'contrastive',
+        examples: [{ jp: item.target_form, id: item.stimulus_l1 }],
+      } as any,
+      questionText: isPhon
+        ? `${item.title} — ${item.particle_pitch || item.accent_pattern || ''}`
+        : `${item.title}: "${item.stimulus_l1}"`,
+      subText: isPhon
+        ? `Tantangan: ${item.stimulus_l1}`
+        : `Bentuk yang salah (jebakan L1): ${item.l1_trap_form}`,
+      correctAnswer: item.target_form,
+      options,
+      explanation: `✅ Bentuk benar: ${item.target_form}\n⚠️ Aturan: ${item.prescription}\n🔍 Analisis: ${item.root_cause}`,
+      level: item.level,
+    });
+  }
+
+  return questions;
 }
 
