@@ -22,3 +22,14 @@ Every component, page, layout, modal, and interactive widget in Nugget Nihongo M
    - Modals must render as bottom sheets or centered cards capped at `max-h-[90dvh] sm:max-h-[92vh] overflow-y-auto` with safe drag handles on mobile.
 6. **Japanese Typography Safeguards**:
    - Long kanji compounds, furigana readings, and example sentences must employ `break-words`, `min-w-0`, or `truncate` to prevent pushing out card widths.
+
+## Web Interface & Anti-Slop Design Guidelines Rule (Learned)
+
+In accordance with `.agents/rules/web-interface-guidelines.md`:
+1. **Focus Rings**: All interactive elements must show visible `:focus-visible` rings (`focus-visible:ring-2 focus-visible:ring-amber-500/60`).
+2. **Mobile Input Font Size**: Always use $\ge 16$px (`text-base sm:text-sm`) on inputs/textareas to prevent iOS Safari auto-zoom.
+3. **Touch Targets & Hit Areas**: $\ge 44 \times 44$px touch targets with `touch-action: manipulation` and active tactile press feedback (`active:scale-95`).
+4. **Compositor-Friendly Animations**: Use GPU `transform` and `opacity` only; never use `transition: all`; always honor `prefers-reduced-motion`.
+5. **Anti-Slop Brand Depth**: Adhere to the `DESIGN.md` lacquerware amber theme (`#0D0B08`, `#181410`, `#F59E0B`); never ship generic boilerplate cards.
+6. **Tabular Numerals**: Apply `tabular-nums font-mono` to counters, stats, XP, timers, and ratings.
+7. **Redundant Status Cues**: Pair color indicators with icons and descriptive text.
