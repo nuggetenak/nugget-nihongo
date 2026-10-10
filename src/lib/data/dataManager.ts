@@ -235,3 +235,95 @@ export async function loadFreewayTrack(): Promise<NormalizedGrammar[]> {
   const n5Grammar = await loadGrammar('n5');
   return FREEWAY_TRACK_IDS.map((id) => n5Grammar.find((g) => g.id === id)).filter(Boolean) as NormalizedGrammar[];
 }
+
+export interface CurriculumLesson {
+  id: string;
+  lesson_number: number;
+  title_id: string;
+  title_jp: string;
+  desc_id: string;
+  can_do_statement: string;
+  grammar_ids: string[];
+  vocab_ids?: string[];
+  l2d_contrastive_tags?: string[];
+}
+
+export interface CurriculumUnit {
+  unit_number: number;
+  id: string;
+  level: string;
+  pt_stage: number;
+  title_id: string;
+  title_jp: string;
+  theme: string;
+  icon: string;
+  can_do_summary: string;
+  l2d_focus_notes?: string;
+  grammar_ids: string[];
+  vocab_ids: string[];
+  lessons: CurriculumLesson[];
+}
+
+export interface CurriculumTrackData {
+  meta: {
+    track_id: string;
+    level?: string;
+    title?: string;
+    sector?: string;
+    version: string;
+    total_units: number;
+    authoritative: boolean;
+  };
+  units: CurriculumUnit[];
+}
+
+const curriculumCache: Record<string, CurriculumTrackData> = {};
+
+/**
+ * Load any curriculum track (N5, N4, N3, N2, N1, SSW Kaigo, SSW Food, SSW Construction)
+ */
+export async function loadCurriculumTrack(
+  trackKey: 'n5' | 'n4' | 'n3' | 'n2' | 'n1' | 'ssw-kaigo' | 'ssw-food' | 'ssw-construction'
+): Promise<CurriculumTrackData | null> {
+  if (curriculumCache[trackKey]) return curriculumCache[trackKey];
+
+  const fileMap: Record<string, { src: string; varKey: string }> = {
+    n5: { src: '/data/curriculum/curriculum-n5.js', varKey: 'curriculumN5' },
+    n4: { src: '/data/curriculum/curriculum-n4.js', varKey: 'curriculumN4' },
+    n3: { src: '/data/curriculum/curriculum-n3.js', varKey: 'curriculumN3' },
+    n2: { src: '/data/curriculum/curriculum-n2.js', varKey: 'curriculumN2' },
+    n1: { src: '/data/curriculum/curriculum-n1.js', varKey: 'curriculumN1' },
+    'ssw-kaigo': { src: '/data/curriculum/curriculum-ssw-kaigo.js', varKey: 'curriculumSSWKaigo' },
+    'ssw-food': { src: '/data/curriculum/curriculum-ssw-food.js', varKey: 'curriculumSSWFood' },
+    'ssw-construction': { src: '/data/curriculum/curriculum-ssw-construction.js', varKey: 'curriculumSSWConstruction' },
+  };
+
+  const target = fileMap[trackKey];
+  if (!target) return null;
+
+  if (!(window as any)[target.varKey]) {
+    try {
+      await loadScript(target.src);
+    } catch {
+      // Fallback: fetch JSON
+      try {
+        const jsonRes = await fetch(`/data/curriculum/curriculum-${trackKey}.json`);
+        if (jsonRes.ok) {
+          const jsonData = await jsonRes.json();
+          curriculumCache[trackKey] = jsonData;
+          return jsonData;
+        }
+      } catch (err2) {
+        console.warn(`[dataManager] Failed to load curriculum: ${trackKey}`, err2);
+        return null;
+      }
+    }
+  }
+
+  const raw = (window as any)[target.varKey] as CurriculumTrackData;
+  if (raw) {
+    curriculumCache[trackKey] = raw;
+  }
+  return raw || null;
+}
+

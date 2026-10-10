@@ -20,7 +20,8 @@
     "cloudflare"
   ],
   "scripts": {
-    "build": "node scripts/compile_diagnostics.js && node scripts/merge-vocab.js && node scripts/merge-grammar.js && node tests/run.js && vite build",
+    "build": "node scripts/compile_diagnostics.js && node scripts/build-curriculum-all.js && node scripts/merge-vocab.js && node scripts/merge-grammar.js && node tests/run.js && vite build",
+    "build:curriculum": "node scripts/build-curriculum-all.js",
     "compile:diagnostics": "node scripts/compile_diagnostics.js",
     "test": "node tests/run.js",
     "validate": "node tests/run.js",

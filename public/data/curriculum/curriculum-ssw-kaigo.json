@@ -1,0 +1,428 @@
+{
+  "meta": {
+    "track_id": "curriculum-ssw-kaigo",
+    "title": "Kurikulum SSW Keperawatan Lansia (Kaigo)",
+    "sector": "Kaigo",
+    "version": "1.0.0",
+    "total_units": 8,
+    "authoritative": true
+  },
+  "units": [
+    {
+      "unit_number": 1,
+      "id": "unit-curriculum-ssw-kaigo-01",
+      "level": "n4_ssw",
+      "pt_stage": 3,
+      "title_id": "Sapaan Empatik & Izin Tindakan (Koe-kake)",
+      "title_jp": "声かけと共感挨拶",
+      "theme": "Greeting & Rapport",
+      "icon": "👵",
+      "can_do_summary": "Bisa meminta izin verbal dengan ramah sebelum menyentuh lansia.",
+      "l2d_focus_notes": "",
+      "grammar_ids": [
+        "gn4-00010",
+        "gn4-00013",
+        "gn4-00021"
+      ],
+      "vocab_ids": [
+        "vg-n4-00001",
+        "vg-n4-00002"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-ssw-kaigo-u01-01",
+          "lesson_number": 1,
+          "title_id": "Sapaan Empatik & Izin Tindakan (Koe-kake) (Prosedur & Terminologi)",
+          "title_jp": "声かけと共感挨拶（手順と用語）",
+          "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Sapaan Empatik & Izin Tindakan (Koe-kake).",
+          "can_do_statement": "Bisa meminta izin verbal dengan ramah sebelum menyentuh lansia.",
+          "grammar_ids": [
+            "gn4-00010",
+            "gn4-00013"
+          ],
+          "vocab_ids": [
+            "vg-n4-00001"
+          ]
+        },
+        {
+          "id": "les-curriculum-ssw-kaigo-u01-02",
+          "lesson_number": 2,
+          "title_id": "Sapaan Empatik & Izin Tindakan (Koe-kake) (Simulasi Darurat & Laporan SBAR)",
+          "title_jp": "声かけと共感挨拶（緊急時SBAR報告）",
+          "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
+          "can_do_statement": "Bisa meminta izin verbal dengan ramah sebelum menyentuh lansia.",
+          "grammar_ids": [
+            "gn4-00021"
+          ],
+          "vocab_ids": [
+            "vg-n4-00002"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 2,
+      "id": "unit-curriculum-ssw-kaigo-02",
+      "level": "n4_ssw",
+      "pt_stage": 3,
+      "title_id": "Bantuan Makan & Pencegahan Tersedak (Shokuji)",
+      "title_jp": "食事介助と誤嚥予防",
+      "theme": "Eating & Choking Safety",
+      "icon": "👵",
+      "can_do_summary": "Bisa memberi makan bertahap dan merespons kondisi tersedak Heimlich.",
+      "l2d_focus_notes": "",
+      "grammar_ids": [
+        "gn4-00010",
+        "gn4-00013",
+        "gn4-00021"
+      ],
+      "vocab_ids": [
+        "vg-n4-00001",
+        "vg-n4-00002"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-ssw-kaigo-u02-01",
+          "lesson_number": 1,
+          "title_id": "Bantuan Makan & Pencegahan Tersedak (Shokuji) (Prosedur & Terminologi)",
+          "title_jp": "食事介助と誤嚥予防（手順と用語）",
+          "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Bantuan Makan & Pencegahan Tersedak (Shokuji).",
+          "can_do_statement": "Bisa memberi makan bertahap dan merespons kondisi tersedak Heimlich.",
+          "grammar_ids": [
+            "gn4-00010",
+            "gn4-00013"
+          ],
+          "vocab_ids": [
+            "vg-n4-00001"
+          ]
+        },
+        {
+          "id": "les-curriculum-ssw-kaigo-u02-02",
+          "lesson_number": 2,
+          "title_id": "Bantuan Makan & Pencegahan Tersedak (Shokuji) (Simulasi Darurat & Laporan SBAR)",
+          "title_jp": "食事介助と誤嚥予防（緊急時SBAR報告）",
+          "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
+          "can_do_statement": "Bisa memberi makan bertahap dan merespons kondisi tersedak Heimlich.",
+          "grammar_ids": [
+            "gn4-00021"
+          ],
+          "vocab_ids": [
+            "vg-n4-00002"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 3,
+      "id": "unit-curriculum-ssw-kaigo-03",
+      "level": "n4_ssw",
+      "pt_stage": 3,
+      "title_id": "Mobilisasi Kursi Roda & Pencegahan Jatuh",
+      "title_jp": "移動介助と転倒予防",
+      "theme": "Wheelchair & Falls",
+      "icon": "👵",
+      "can_do_summary": "Bisa mengunci rem kursi roda dan memandu lansia bangun aman.",
+      "l2d_focus_notes": "",
+      "grammar_ids": [
+        "gn4-00010",
+        "gn4-00013",
+        "gn4-00021"
+      ],
+      "vocab_ids": [
+        "vg-n4-00001",
+        "vg-n4-00002"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-ssw-kaigo-u03-01",
+          "lesson_number": 1,
+          "title_id": "Mobilisasi Kursi Roda & Pencegahan Jatuh (Prosedur & Terminologi)",
+          "title_jp": "移動介助と転倒予防（手順と用語）",
+          "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Mobilisasi Kursi Roda & Pencegahan Jatuh.",
+          "can_do_statement": "Bisa mengunci rem kursi roda dan memandu lansia bangun aman.",
+          "grammar_ids": [
+            "gn4-00010",
+            "gn4-00013"
+          ],
+          "vocab_ids": [
+            "vg-n4-00001"
+          ]
+        },
+        {
+          "id": "les-curriculum-ssw-kaigo-u03-02",
+          "lesson_number": 2,
+          "title_id": "Mobilisasi Kursi Roda & Pencegahan Jatuh (Simulasi Darurat & Laporan SBAR)",
+          "title_jp": "移動介助と転倒予防（緊急時SBAR報告）",
+          "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
+          "can_do_statement": "Bisa mengunci rem kursi roda dan memandu lansia bangun aman.",
+          "grammar_ids": [
+            "gn4-00021"
+          ],
+          "vocab_ids": [
+            "vg-n4-00002"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 4,
+      "id": "unit-curriculum-ssw-kaigo-04",
+      "level": "n4_ssw",
+      "pt_stage": 3,
+      "title_id": "Bantuan Mandi & Privasi Pasien (Nyuyoku)",
+      "title_jp": "入浴介助と羞恥心配慮",
+      "theme": "Bathing & Privacy",
+      "icon": "👵",
+      "can_do_summary": "Bisa mengecek suhu air hangat dan menjaga privasi lansia.",
+      "l2d_focus_notes": "",
+      "grammar_ids": [
+        "gn4-00010",
+        "gn4-00013",
+        "gn4-00021"
+      ],
+      "vocab_ids": [
+        "vg-n4-00001",
+        "vg-n4-00002"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-ssw-kaigo-u04-01",
+          "lesson_number": 1,
+          "title_id": "Bantuan Mandi & Privasi Pasien (Nyuyoku) (Prosedur & Terminologi)",
+          "title_jp": "入浴介助と羞恥心配慮（手順と用語）",
+          "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Bantuan Mandi & Privasi Pasien (Nyuyoku).",
+          "can_do_statement": "Bisa mengecek suhu air hangat dan menjaga privasi lansia.",
+          "grammar_ids": [
+            "gn4-00010",
+            "gn4-00013"
+          ],
+          "vocab_ids": [
+            "vg-n4-00001"
+          ]
+        },
+        {
+          "id": "les-curriculum-ssw-kaigo-u04-02",
+          "lesson_number": 2,
+          "title_id": "Bantuan Mandi & Privasi Pasien (Nyuyoku) (Simulasi Darurat & Laporan SBAR)",
+          "title_jp": "入浴介助と羞恥心配慮（緊急時SBAR報告）",
+          "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
+          "can_do_statement": "Bisa mengecek suhu air hangat dan menjaga privasi lansia.",
+          "grammar_ids": [
+            "gn4-00021"
+          ],
+          "vocab_ids": [
+            "vg-n4-00002"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 5,
+      "id": "unit-curriculum-ssw-kaigo-05",
+      "level": "n4_ssw",
+      "pt_stage": 3,
+      "title_id": "Dekoding 42 Onomatopoeia Nyeri Fisik",
+      "title_jp": "痛みのオノマトペ解読",
+      "theme": "Pain Decoding",
+      "icon": "👵",
+      "can_do_summary": "Bisa membedakan rasa nyeri menusuk chikuchiku vs berdenyut zukinzukin.",
+      "l2d_focus_notes": "",
+      "grammar_ids": [
+        "gn4-00010",
+        "gn4-00013",
+        "gn4-00021"
+      ],
+      "vocab_ids": [
+        "vg-n4-00001",
+        "vg-n4-00002"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-ssw-kaigo-u05-01",
+          "lesson_number": 1,
+          "title_id": "Dekoding 42 Onomatopoeia Nyeri Fisik (Prosedur & Terminologi)",
+          "title_jp": "痛みのオノマトペ解読（手順と用語）",
+          "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Dekoding 42 Onomatopoeia Nyeri Fisik.",
+          "can_do_statement": "Bisa membedakan rasa nyeri menusuk chikuchiku vs berdenyut zukinzukin.",
+          "grammar_ids": [
+            "gn4-00010",
+            "gn4-00013"
+          ],
+          "vocab_ids": [
+            "vg-n4-00001"
+          ]
+        },
+        {
+          "id": "les-curriculum-ssw-kaigo-u05-02",
+          "lesson_number": 2,
+          "title_id": "Dekoding 42 Onomatopoeia Nyeri Fisik (Simulasi Darurat & Laporan SBAR)",
+          "title_jp": "痛みのオノマトペ解読（緊急時SBAR報告）",
+          "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
+          "can_do_statement": "Bisa membedakan rasa nyeri menusuk chikuchiku vs berdenyut zukinzukin.",
+          "grammar_ids": [
+            "gn4-00021"
+          ],
+          "vocab_ids": [
+            "vg-n4-00002"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 6,
+      "id": "unit-curriculum-ssw-kaigo-06",
+      "level": "n4_ssw",
+      "pt_stage": 3,
+      "title_id": "De-eskalasi Agitasi Demensia (Ninchishou)",
+      "title_jp": "認知症ケアと対応",
+      "theme": "Dementia Care",
+      "icon": "👵",
+      "can_do_summary": "Bisa menenangkan lansia gelisah tanpa membantah ilusi mereka.",
+      "l2d_focus_notes": "",
+      "grammar_ids": [
+        "gn4-00010",
+        "gn4-00013",
+        "gn4-00021"
+      ],
+      "vocab_ids": [
+        "vg-n4-00001",
+        "vg-n4-00002"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-ssw-kaigo-u06-01",
+          "lesson_number": 1,
+          "title_id": "De-eskalasi Agitasi Demensia (Ninchishou) (Prosedur & Terminologi)",
+          "title_jp": "認知症ケアと対応（手順と用語）",
+          "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja De-eskalasi Agitasi Demensia (Ninchishou).",
+          "can_do_statement": "Bisa menenangkan lansia gelisah tanpa membantah ilusi mereka.",
+          "grammar_ids": [
+            "gn4-00010",
+            "gn4-00013"
+          ],
+          "vocab_ids": [
+            "vg-n4-00001"
+          ]
+        },
+        {
+          "id": "les-curriculum-ssw-kaigo-u06-02",
+          "lesson_number": 2,
+          "title_id": "De-eskalasi Agitasi Demensia (Ninchishou) (Simulasi Darurat & Laporan SBAR)",
+          "title_jp": "認知症ケアと対応（緊急時SBAR報告）",
+          "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
+          "can_do_statement": "Bisa menenangkan lansia gelisah tanpa membantah ilusi mereka.",
+          "grammar_ids": [
+            "gn4-00021"
+          ],
+          "vocab_ids": [
+            "vg-n4-00002"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 7,
+      "id": "unit-curriculum-ssw-kaigo-07",
+      "level": "n4_ssw",
+      "pt_stage": 3,
+      "title_id": "Pelaporan Catatan Shift (Moushiokuri)",
+      "title_jp": "申し送りと介護記録",
+      "theme": "Shift Handover",
+      "icon": "👵",
+      "can_do_summary": "Bisa mencatat intake cairan, suhu tubuh, dan buang air.",
+      "l2d_focus_notes": "",
+      "grammar_ids": [
+        "gn4-00010",
+        "gn4-00013",
+        "gn4-00021"
+      ],
+      "vocab_ids": [
+        "vg-n4-00001",
+        "vg-n4-00002"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-ssw-kaigo-u07-01",
+          "lesson_number": 1,
+          "title_id": "Pelaporan Catatan Shift (Moushiokuri) (Prosedur & Terminologi)",
+          "title_jp": "申し送りと介護記録（手順と用語）",
+          "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Pelaporan Catatan Shift (Moushiokuri).",
+          "can_do_statement": "Bisa mencatat intake cairan, suhu tubuh, dan buang air.",
+          "grammar_ids": [
+            "gn4-00010",
+            "gn4-00013"
+          ],
+          "vocab_ids": [
+            "vg-n4-00001"
+          ]
+        },
+        {
+          "id": "les-curriculum-ssw-kaigo-u07-02",
+          "lesson_number": 2,
+          "title_id": "Pelaporan Catatan Shift (Moushiokuri) (Simulasi Darurat & Laporan SBAR)",
+          "title_jp": "申し送りと介護記録（緊急時SBAR報告）",
+          "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
+          "can_do_statement": "Bisa mencatat intake cairan, suhu tubuh, dan buang air.",
+          "grammar_ids": [
+            "gn4-00021"
+          ],
+          "vocab_ids": [
+            "vg-n4-00002"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 8,
+      "id": "unit-curriculum-ssw-kaigo-08",
+      "level": "n4_ssw",
+      "pt_stage": 3,
+      "title_id": "Protokol Pelaporan Medis Darurat SBAR",
+      "title_jp": "緊急時SBAR医療報告",
+      "theme": "SBAR Escalation",
+      "icon": "👵",
+      "can_do_summary": "Bisa melapor insiden jatuh dan dugaan fraktur tulang 119 SBAR.",
+      "l2d_focus_notes": "",
+      "grammar_ids": [
+        "gn4-00010",
+        "gn4-00013",
+        "gn4-00021"
+      ],
+      "vocab_ids": [
+        "vg-n4-00001",
+        "vg-n4-00002"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-ssw-kaigo-u08-01",
+          "lesson_number": 1,
+          "title_id": "Protokol Pelaporan Medis Darurat SBAR (Prosedur & Terminologi)",
+          "title_jp": "緊急時SBAR医療報告（手順と用語）",
+          "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Protokol Pelaporan Medis Darurat SBAR.",
+          "can_do_statement": "Bisa melapor insiden jatuh dan dugaan fraktur tulang 119 SBAR.",
+          "grammar_ids": [
+            "gn4-00010",
+            "gn4-00013"
+          ],
+          "vocab_ids": [
+            "vg-n4-00001"
+          ]
+        },
+        {
+          "id": "les-curriculum-ssw-kaigo-u08-02",
+          "lesson_number": 2,
+          "title_id": "Protokol Pelaporan Medis Darurat SBAR (Simulasi Darurat & Laporan SBAR)",
+          "title_jp": "緊急時SBAR医療報告（緊急時SBAR報告）",
+          "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
+          "can_do_statement": "Bisa melapor insiden jatuh dan dugaan fraktur tulang 119 SBAR.",
+          "grammar_ids": [
+            "gn4-00021"
+          ],
+          "vocab_ids": [
+            "vg-n4-00002"
+          ]
+        }
+      ]
+    }
+  ]
+}

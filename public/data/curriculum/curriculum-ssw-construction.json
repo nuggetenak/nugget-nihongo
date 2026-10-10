@@ -1,0 +1,428 @@
+{
+  "meta": {
+    "track_id": "curriculum-ssw-construction",
+    "title": "Kurikulum SSW Konstruksi (JAC)",
+    "sector": "Konstruksi",
+    "version": "1.0.0",
+    "total_units": 8,
+    "authoritative": true
+  },
+  "units": [
+    {
+      "unit_number": 1,
+      "id": "unit-curriculum-ssw-construction-01",
+      "level": "n4_ssw",
+      "pt_stage": 3,
+      "title_id": "APD Wajib Konstruksi & Senam Pagi KYK",
+      "title_jp": "保護具と朝礼KYK活動",
+      "theme": "PPE & Morning Routine",
+      "icon": "🏗️",
+      "can_do_summary": "Bisa mengecek tali dagu helm, sepatu baja, dan hazard KYK.",
+      "l2d_focus_notes": "",
+      "grammar_ids": [
+        "gn4-00010",
+        "gn4-00013",
+        "gn4-00021"
+      ],
+      "vocab_ids": [
+        "vg-n4-00001",
+        "vg-n4-00002"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-ssw-construction-u01-01",
+          "lesson_number": 1,
+          "title_id": "APD Wajib Konstruksi & Senam Pagi KYK (Prosedur & Terminologi)",
+          "title_jp": "保護具と朝礼KYK活動（手順と用語）",
+          "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja APD Wajib Konstruksi & Senam Pagi KYK.",
+          "can_do_statement": "Bisa mengecek tali dagu helm, sepatu baja, dan hazard KYK.",
+          "grammar_ids": [
+            "gn4-00010",
+            "gn4-00013"
+          ],
+          "vocab_ids": [
+            "vg-n4-00001"
+          ]
+        },
+        {
+          "id": "les-curriculum-ssw-construction-u01-02",
+          "lesson_number": 2,
+          "title_id": "APD Wajib Konstruksi & Senam Pagi KYK (Simulasi Darurat & Laporan SBAR)",
+          "title_jp": "保護具と朝礼KYK活動（緊急時SBAR報告）",
+          "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
+          "can_do_statement": "Bisa mengecek tali dagu helm, sepatu baja, dan hazard KYK.",
+          "grammar_ids": [
+            "gn4-00021"
+          ],
+          "vocab_ids": [
+            "vg-n4-00002"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 2,
+      "id": "unit-curriculum-ssw-construction-02",
+      "level": "n4_ssw",
+      "pt_stage": 3,
+      "title_id": "Protokol Pointing-and-Calling (Shiteki Koshou)",
+      "title_jp": "指差呼称プロトコル",
+      "theme": "Pointing-and-Calling",
+      "icon": "🏗️",
+      "can_do_summary": "Bisa mengecek sakelar dan kait derek dengan rumus Yoshi.",
+      "l2d_focus_notes": "",
+      "grammar_ids": [
+        "gn4-00010",
+        "gn4-00013",
+        "gn4-00021"
+      ],
+      "vocab_ids": [
+        "vg-n4-00001",
+        "vg-n4-00002"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-ssw-construction-u02-01",
+          "lesson_number": 1,
+          "title_id": "Protokol Pointing-and-Calling (Shiteki Koshou) (Prosedur & Terminologi)",
+          "title_jp": "指差呼称プロトコル（手順と用語）",
+          "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Protokol Pointing-and-Calling (Shiteki Koshou).",
+          "can_do_statement": "Bisa mengecek sakelar dan kait derek dengan rumus Yoshi.",
+          "grammar_ids": [
+            "gn4-00010",
+            "gn4-00013"
+          ],
+          "vocab_ids": [
+            "vg-n4-00001"
+          ]
+        },
+        {
+          "id": "les-curriculum-ssw-construction-u02-02",
+          "lesson_number": 2,
+          "title_id": "Protokol Pointing-and-Calling (Shiteki Koshou) (Simulasi Darurat & Laporan SBAR)",
+          "title_jp": "指差呼称プロトコル（緊急時SBAR報告）",
+          "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
+          "can_do_statement": "Bisa mengecek sakelar dan kait derek dengan rumus Yoshi.",
+          "grammar_ids": [
+            "gn4-00021"
+          ],
+          "vocab_ids": [
+            "vg-n4-00002"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 3,
+      "id": "unit-curriculum-ssw-construction-03",
+      "level": "n4_ssw",
+      "pt_stage": 3,
+      "title_id": "Pekerjaan Ketinggian & Pencegahan Jatuh (Tsuiraku)",
+      "title_jp": "高所作業と墜落防止",
+      "theme": "Fall Arrest & Scaffolding",
+      "icon": "🏗️",
+      "can_do_summary": "Bisa mengaitkan harness ganda di perancah lantai 4.",
+      "l2d_focus_notes": "",
+      "grammar_ids": [
+        "gn4-00010",
+        "gn4-00013",
+        "gn4-00021"
+      ],
+      "vocab_ids": [
+        "vg-n4-00001",
+        "vg-n4-00002"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-ssw-construction-u03-01",
+          "lesson_number": 1,
+          "title_id": "Pekerjaan Ketinggian & Pencegahan Jatuh (Tsuiraku) (Prosedur & Terminologi)",
+          "title_jp": "高所作業と墜落防止（手順と用語）",
+          "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Pekerjaan Ketinggian & Pencegahan Jatuh (Tsuiraku).",
+          "can_do_statement": "Bisa mengaitkan harness ganda di perancah lantai 4.",
+          "grammar_ids": [
+            "gn4-00010",
+            "gn4-00013"
+          ],
+          "vocab_ids": [
+            "vg-n4-00001"
+          ]
+        },
+        {
+          "id": "les-curriculum-ssw-construction-u03-02",
+          "lesson_number": 2,
+          "title_id": "Pekerjaan Ketinggian & Pencegahan Jatuh (Tsuiraku) (Simulasi Darurat & Laporan SBAR)",
+          "title_jp": "高所作業と墜落防止（緊急時SBAR報告）",
+          "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
+          "can_do_statement": "Bisa mengaitkan harness ganda di perancah lantai 4.",
+          "grammar_ids": [
+            "gn4-00021"
+          ],
+          "vocab_ids": [
+            "vg-n4-00002"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 4,
+      "id": "unit-curriculum-ssw-construction-04",
+      "level": "n4_ssw",
+      "pt_stage": 3,
+      "title_id": "Pekerjaan Galian & Shoring Longsor Parit",
+      "title_jp": "掘削作業と土砂崩壊防止",
+      "theme": "Trench Collapse",
+      "icon": "🏗️",
+      "can_do_summary": "Bisa memasang kotak pelindung shoring dan evakuasi longsor.",
+      "l2d_focus_notes": "",
+      "grammar_ids": [
+        "gn4-00010",
+        "gn4-00013",
+        "gn4-00021"
+      ],
+      "vocab_ids": [
+        "vg-n4-00001",
+        "vg-n4-00002"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-ssw-construction-u04-01",
+          "lesson_number": 1,
+          "title_id": "Pekerjaan Galian & Shoring Longsor Parit (Prosedur & Terminologi)",
+          "title_jp": "掘削作業と土砂崩壊防止（手順と用語）",
+          "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Pekerjaan Galian & Shoring Longsor Parit.",
+          "can_do_statement": "Bisa memasang kotak pelindung shoring dan evakuasi longsor.",
+          "grammar_ids": [
+            "gn4-00010",
+            "gn4-00013"
+          ],
+          "vocab_ids": [
+            "vg-n4-00001"
+          ]
+        },
+        {
+          "id": "les-curriculum-ssw-construction-u04-02",
+          "lesson_number": 2,
+          "title_id": "Pekerjaan Galian & Shoring Longsor Parit (Simulasi Darurat & Laporan SBAR)",
+          "title_jp": "掘削作業と土砂崩壊防止（緊急時SBAR報告）",
+          "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
+          "can_do_statement": "Bisa memasang kotak pelindung shoring dan evakuasi longsor.",
+          "grammar_ids": [
+            "gn4-00021"
+          ],
+          "vocab_ids": [
+            "vg-n4-00002"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 5,
+      "id": "unit-curriculum-ssw-construction-05",
+      "level": "n4_ssw",
+      "pt_stage": 3,
+      "title_id": "Pengoperasian Crane, Sling & Zona Bahaya Radius",
+      "title_jp": "クレーン玉掛けと旋回半径",
+      "theme": "Crane & Rigging Safety",
+      "icon": "🏗️",
+      "can_do_summary": "Bisa memberi isyarat peluit derek dan barikade radius putar.",
+      "l2d_focus_notes": "",
+      "grammar_ids": [
+        "gn4-00010",
+        "gn4-00013",
+        "gn4-00021"
+      ],
+      "vocab_ids": [
+        "vg-n4-00001",
+        "vg-n4-00002"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-ssw-construction-u05-01",
+          "lesson_number": 1,
+          "title_id": "Pengoperasian Crane, Sling & Zona Bahaya Radius (Prosedur & Terminologi)",
+          "title_jp": "クレーン玉掛けと旋回半径（手順と用語）",
+          "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Pengoperasian Crane, Sling & Zona Bahaya Radius.",
+          "can_do_statement": "Bisa memberi isyarat peluit derek dan barikade radius putar.",
+          "grammar_ids": [
+            "gn4-00010",
+            "gn4-00013"
+          ],
+          "vocab_ids": [
+            "vg-n4-00001"
+          ]
+        },
+        {
+          "id": "les-curriculum-ssw-construction-u05-02",
+          "lesson_number": 2,
+          "title_id": "Pengoperasian Crane, Sling & Zona Bahaya Radius (Simulasi Darurat & Laporan SBAR)",
+          "title_jp": "クレーン玉掛けと旋回半径（緊急時SBAR報告）",
+          "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
+          "can_do_statement": "Bisa memberi isyarat peluit derek dan barikade radius putar.",
+          "grammar_ids": [
+            "gn4-00021"
+          ],
+          "vocab_ids": [
+            "vg-n4-00002"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 6,
+      "id": "unit-curriculum-ssw-construction-06",
+      "level": "n4_ssw",
+      "pt_stage": 3,
+      "title_id": "Bahaya Kelistrikan & Pencegahan Sengatan (Kanden)",
+      "title_jp": "感電防止とLOTO遮断",
+      "theme": "Electrocution & LOTO",
+      "icon": "🏗️",
+      "can_do_summary": "Bisa menjaga jarak kabel 6600V dan memutus daya sakelar.",
+      "l2d_focus_notes": "",
+      "grammar_ids": [
+        "gn4-00010",
+        "gn4-00013",
+        "gn4-00021"
+      ],
+      "vocab_ids": [
+        "vg-n4-00001",
+        "vg-n4-00002"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-ssw-construction-u06-01",
+          "lesson_number": 1,
+          "title_id": "Bahaya Kelistrikan & Pencegahan Sengatan (Kanden) (Prosedur & Terminologi)",
+          "title_jp": "感電防止とLOTO遮断（手順と用語）",
+          "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Bahaya Kelistrikan & Pencegahan Sengatan (Kanden).",
+          "can_do_statement": "Bisa menjaga jarak kabel 6600V dan memutus daya sakelar.",
+          "grammar_ids": [
+            "gn4-00010",
+            "gn4-00013"
+          ],
+          "vocab_ids": [
+            "vg-n4-00001"
+          ]
+        },
+        {
+          "id": "les-curriculum-ssw-construction-u06-02",
+          "lesson_number": 2,
+          "title_id": "Bahaya Kelistrikan & Pencegahan Sengatan (Kanden) (Simulasi Darurat & Laporan SBAR)",
+          "title_jp": "感電防止とLOTO遮断（緊急時SBAR報告）",
+          "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
+          "can_do_statement": "Bisa menjaga jarak kabel 6600V dan memutus daya sakelar.",
+          "grammar_ids": [
+            "gn4-00021"
+          ],
+          "vocab_ids": [
+            "vg-n4-00002"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 7,
+      "id": "unit-curriculum-ssw-construction-07",
+      "level": "n4_ssw",
+      "pt_stage": 3,
+      "title_id": "Ruang Terbatas, Terowongan & Asfiksia Gas Beracun",
+      "title_jp": "閉鎖空間と酸素欠乏症",
+      "theme": "Confined Space Anoxia",
+      "icon": "🏗️",
+      "can_do_summary": "Bisa mengecek oksigen >18% dan menyalakan blower udara segar.",
+      "l2d_focus_notes": "",
+      "grammar_ids": [
+        "gn4-00010",
+        "gn4-00013",
+        "gn4-00021"
+      ],
+      "vocab_ids": [
+        "vg-n4-00001",
+        "vg-n4-00002"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-ssw-construction-u07-01",
+          "lesson_number": 1,
+          "title_id": "Ruang Terbatas, Terowongan & Asfiksia Gas Beracun (Prosedur & Terminologi)",
+          "title_jp": "閉鎖空間と酸素欠乏症（手順と用語）",
+          "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Ruang Terbatas, Terowongan & Asfiksia Gas Beracun.",
+          "can_do_statement": "Bisa mengecek oksigen >18% dan menyalakan blower udara segar.",
+          "grammar_ids": [
+            "gn4-00010",
+            "gn4-00013"
+          ],
+          "vocab_ids": [
+            "vg-n4-00001"
+          ]
+        },
+        {
+          "id": "les-curriculum-ssw-construction-u07-02",
+          "lesson_number": 2,
+          "title_id": "Ruang Terbatas, Terowongan & Asfiksia Gas Beracun (Simulasi Darurat & Laporan SBAR)",
+          "title_jp": "閉鎖空間と酸素欠乏症（緊急時SBAR報告）",
+          "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
+          "can_do_statement": "Bisa mengecek oksigen >18% dan menyalakan blower udara segar.",
+          "grammar_ids": [
+            "gn4-00021"
+          ],
+          "vocab_ids": [
+            "vg-n4-00002"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 8,
+      "id": "unit-curriculum-ssw-construction-08",
+      "level": "n4_ssw",
+      "pt_stage": 3,
+      "title_id": "Protokol 4-Tier Rousai & Pelaporan Bencana SBAR",
+      "title_jp": "労災4段階とSBAR報告",
+      "theme": "Rousai & Disaster SBAR",
+      "icon": "🏗️",
+      "can_do_summary": "Bisa melapor kecelakaan kerja ke kementerian dan ambulans 119.",
+      "l2d_focus_notes": "",
+      "grammar_ids": [
+        "gn4-00010",
+        "gn4-00013",
+        "gn4-00021"
+      ],
+      "vocab_ids": [
+        "vg-n4-00001",
+        "vg-n4-00002"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-ssw-construction-u08-01",
+          "lesson_number": 1,
+          "title_id": "Protokol 4-Tier Rousai & Pelaporan Bencana SBAR (Prosedur & Terminologi)",
+          "title_jp": "労災4段階とSBAR報告（手順と用語）",
+          "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Protokol 4-Tier Rousai & Pelaporan Bencana SBAR.",
+          "can_do_statement": "Bisa melapor kecelakaan kerja ke kementerian dan ambulans 119.",
+          "grammar_ids": [
+            "gn4-00010",
+            "gn4-00013"
+          ],
+          "vocab_ids": [
+            "vg-n4-00001"
+          ]
+        },
+        {
+          "id": "les-curriculum-ssw-construction-u08-02",
+          "lesson_number": 2,
+          "title_id": "Protokol 4-Tier Rousai & Pelaporan Bencana SBAR (Simulasi Darurat & Laporan SBAR)",
+          "title_jp": "労災4段階とSBAR報告（緊急時SBAR報告）",
+          "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
+          "can_do_statement": "Bisa melapor kecelakaan kerja ke kementerian dan ambulans 119.",
+          "grammar_ids": [
+            "gn4-00021"
+          ],
+          "vocab_ids": [
+            "vg-n4-00002"
+          ]
+        }
+      ]
+    }
+  ]
+}

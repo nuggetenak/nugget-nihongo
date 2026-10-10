@@ -1,0 +1,428 @@
+{
+  "meta": {
+    "track_id": "curriculum-ssw-food",
+    "title": "Kurikulum SSW Pengolahan Makanan & Restoran",
+    "sector": "Pengolahan Makanan & Restoran",
+    "version": "1.0.0",
+    "total_units": 8,
+    "authoritative": true
+  },
+  "units": [
+    {
+      "unit_number": 1,
+      "id": "unit-curriculum-ssw-food-01",
+      "level": "n4_ssw",
+      "pt_stage": 3,
+      "title_id": "Sanitasi Diri & Prosedur Masuk Pabrik Steril",
+      "title_jp": "衛生着と入室手順",
+      "theme": "Sanitation & Entry",
+      "icon": "🍱",
+      "can_do_summary": "Bisa memakai APD steril, mencuci tangan 6-langkah, dan air shower.",
+      "l2d_focus_notes": "",
+      "grammar_ids": [
+        "gn4-00010",
+        "gn4-00013",
+        "gn4-00021"
+      ],
+      "vocab_ids": [
+        "vg-n4-00001",
+        "vg-n4-00002"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-ssw-food-u01-01",
+          "lesson_number": 1,
+          "title_id": "Sanitasi Diri & Prosedur Masuk Pabrik Steril (Prosedur & Terminologi)",
+          "title_jp": "衛生着と入室手順（手順と用語）",
+          "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Sanitasi Diri & Prosedur Masuk Pabrik Steril.",
+          "can_do_statement": "Bisa memakai APD steril, mencuci tangan 6-langkah, dan air shower.",
+          "grammar_ids": [
+            "gn4-00010",
+            "gn4-00013"
+          ],
+          "vocab_ids": [
+            "vg-n4-00001"
+          ]
+        },
+        {
+          "id": "les-curriculum-ssw-food-u01-02",
+          "lesson_number": 2,
+          "title_id": "Sanitasi Diri & Prosedur Masuk Pabrik Steril (Simulasi Darurat & Laporan SBAR)",
+          "title_jp": "衛生着と入室手順（緊急時SBAR報告）",
+          "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
+          "can_do_statement": "Bisa memakai APD steril, mencuci tangan 6-langkah, dan air shower.",
+          "grammar_ids": [
+            "gn4-00021"
+          ],
+          "vocab_ids": [
+            "vg-n4-00002"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 2,
+      "id": "unit-curriculum-ssw-food-02",
+      "level": "n4_ssw",
+      "pt_stage": 3,
+      "title_id": "7 Prinsip HACCP & Titik Kendali Kritis CCP",
+      "title_jp": "HACCP7原則とCCP管理",
+      "theme": "HACCP Principles",
+      "icon": "🍱",
+      "can_do_summary": "Bisa memantau suhu sterilisasi pemanasan inti 85C dan detektor logam.",
+      "l2d_focus_notes": "",
+      "grammar_ids": [
+        "gn4-00010",
+        "gn4-00013",
+        "gn4-00021"
+      ],
+      "vocab_ids": [
+        "vg-n4-00001",
+        "vg-n4-00002"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-ssw-food-u02-01",
+          "lesson_number": 1,
+          "title_id": "7 Prinsip HACCP & Titik Kendali Kritis CCP (Prosedur & Terminologi)",
+          "title_jp": "HACCP7原則とCCP管理（手順と用語）",
+          "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja 7 Prinsip HACCP & Titik Kendali Kritis CCP.",
+          "can_do_statement": "Bisa memantau suhu sterilisasi pemanasan inti 85C dan detektor logam.",
+          "grammar_ids": [
+            "gn4-00010",
+            "gn4-00013"
+          ],
+          "vocab_ids": [
+            "vg-n4-00001"
+          ]
+        },
+        {
+          "id": "les-curriculum-ssw-food-u02-02",
+          "lesson_number": 2,
+          "title_id": "7 Prinsip HACCP & Titik Kendali Kritis CCP (Simulasi Darurat & Laporan SBAR)",
+          "title_jp": "HACCP7原則とCCP管理（緊急時SBAR報告）",
+          "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
+          "can_do_statement": "Bisa memantau suhu sterilisasi pemanasan inti 85C dan detektor logam.",
+          "grammar_ids": [
+            "gn4-00021"
+          ],
+          "vocab_ids": [
+            "vg-n4-00002"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 3,
+      "id": "unit-curriculum-ssw-food-03",
+      "level": "n4_ssw",
+      "pt_stage": 3,
+      "title_id": "Deklarasi 8 Alergen Wajib Hukum Jepang",
+      "title_jp": "特定原材料8品目管理",
+      "theme": "Allergen Compliance",
+      "icon": "🍱",
+      "can_do_summary": "Bisa mencegah kontaminasi silang 8 alergen statutori MAFF.",
+      "l2d_focus_notes": "",
+      "grammar_ids": [
+        "gn4-00010",
+        "gn4-00013",
+        "gn4-00021"
+      ],
+      "vocab_ids": [
+        "vg-n4-00001",
+        "vg-n4-00002"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-ssw-food-u03-01",
+          "lesson_number": 1,
+          "title_id": "Deklarasi 8 Alergen Wajib Hukum Jepang (Prosedur & Terminologi)",
+          "title_jp": "特定原材料8品目管理（手順と用語）",
+          "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Deklarasi 8 Alergen Wajib Hukum Jepang.",
+          "can_do_statement": "Bisa mencegah kontaminasi silang 8 alergen statutori MAFF.",
+          "grammar_ids": [
+            "gn4-00010",
+            "gn4-00013"
+          ],
+          "vocab_ids": [
+            "vg-n4-00001"
+          ]
+        },
+        {
+          "id": "les-curriculum-ssw-food-u03-02",
+          "lesson_number": 2,
+          "title_id": "Deklarasi 8 Alergen Wajib Hukum Jepang (Simulasi Darurat & Laporan SBAR)",
+          "title_jp": "特定原材料8品目管理（緊急時SBAR報告）",
+          "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
+          "can_do_statement": "Bisa mencegah kontaminasi silang 8 alergen statutori MAFF.",
+          "grammar_ids": [
+            "gn4-00021"
+          ],
+          "vocab_ids": [
+            "vg-n4-00002"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 4,
+      "id": "unit-curriculum-ssw-food-04",
+      "level": "n4_ssw",
+      "pt_stage": 3,
+      "title_id": "Sistem Kode 4 Warna Talenan & Pisau",
+      "title_jp": "まな板4色区分管理",
+      "theme": "Color Coding",
+      "icon": "🍱",
+      "can_do_summary": "Bisa memisahkan talenan daging, ikan, sayur, dan matang.",
+      "l2d_focus_notes": "",
+      "grammar_ids": [
+        "gn4-00010",
+        "gn4-00013",
+        "gn4-00021"
+      ],
+      "vocab_ids": [
+        "vg-n4-00001",
+        "vg-n4-00002"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-ssw-food-u04-01",
+          "lesson_number": 1,
+          "title_id": "Sistem Kode 4 Warna Talenan & Pisau (Prosedur & Terminologi)",
+          "title_jp": "まな板4色区分管理（手順と用語）",
+          "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Sistem Kode 4 Warna Talenan & Pisau.",
+          "can_do_statement": "Bisa memisahkan talenan daging, ikan, sayur, dan matang.",
+          "grammar_ids": [
+            "gn4-00010",
+            "gn4-00013"
+          ],
+          "vocab_ids": [
+            "vg-n4-00001"
+          ]
+        },
+        {
+          "id": "les-curriculum-ssw-food-u04-02",
+          "lesson_number": 2,
+          "title_id": "Sistem Kode 4 Warna Talenan & Pisau (Simulasi Darurat & Laporan SBAR)",
+          "title_jp": "まな板4色区分管理（緊急時SBAR報告）",
+          "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
+          "can_do_statement": "Bisa memisahkan talenan daging, ikan, sayur, dan matang.",
+          "grammar_ids": [
+            "gn4-00021"
+          ],
+          "vocab_ids": [
+            "vg-n4-00002"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 5,
+      "id": "unit-curriculum-ssw-food-05",
+      "level": "n4_ssw",
+      "pt_stage": 3,
+      "title_id": "Pengemasan Hermetis & Karantina Patahan Pisau",
+      "title_jp": "レトルト密封と異物混入",
+      "theme": "Packaging & Contamination",
+      "icon": "🍱",
+      "can_do_summary": "Bisa mengarantina batch jika alarm detektor logam berbunyi.",
+      "l2d_focus_notes": "",
+      "grammar_ids": [
+        "gn4-00010",
+        "gn4-00013",
+        "gn4-00021"
+      ],
+      "vocab_ids": [
+        "vg-n4-00001",
+        "vg-n4-00002"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-ssw-food-u05-01",
+          "lesson_number": 1,
+          "title_id": "Pengemasan Hermetis & Karantina Patahan Pisau (Prosedur & Terminologi)",
+          "title_jp": "レトルト密封と異物混入（手順と用語）",
+          "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Pengemasan Hermetis & Karantina Patahan Pisau.",
+          "can_do_statement": "Bisa mengarantina batch jika alarm detektor logam berbunyi.",
+          "grammar_ids": [
+            "gn4-00010",
+            "gn4-00013"
+          ],
+          "vocab_ids": [
+            "vg-n4-00001"
+          ]
+        },
+        {
+          "id": "les-curriculum-ssw-food-u05-02",
+          "lesson_number": 2,
+          "title_id": "Pengemasan Hermetis & Karantina Patahan Pisau (Simulasi Darurat & Laporan SBAR)",
+          "title_jp": "レトルト密封と異物混入（緊急時SBAR報告）",
+          "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
+          "can_do_statement": "Bisa mengarantina batch jika alarm detektor logam berbunyi.",
+          "grammar_ids": [
+            "gn4-00021"
+          ],
+          "vocab_ids": [
+            "vg-n4-00002"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 6,
+      "id": "unit-curriculum-ssw-food-06",
+      "level": "n4_ssw",
+      "pt_stage": 3,
+      "title_id": "Protokol Outbreak Norovirus & Klorin 1.000 ppm",
+      "title_jp": "ノロウイルス対応",
+      "theme": "Norovirus Quarantine",
+      "icon": "🍱",
+      "can_do_summary": "Bisa mengisolasi area muntahan dan disinfeksi klorin 1000 ppm.",
+      "l2d_focus_notes": "",
+      "grammar_ids": [
+        "gn4-00010",
+        "gn4-00013",
+        "gn4-00021"
+      ],
+      "vocab_ids": [
+        "vg-n4-00001",
+        "vg-n4-00002"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-ssw-food-u06-01",
+          "lesson_number": 1,
+          "title_id": "Protokol Outbreak Norovirus & Klorin 1.000 ppm (Prosedur & Terminologi)",
+          "title_jp": "ノロウイルス対応（手順と用語）",
+          "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Protokol Outbreak Norovirus & Klorin 1.000 ppm.",
+          "can_do_statement": "Bisa mengisolasi area muntahan dan disinfeksi klorin 1000 ppm.",
+          "grammar_ids": [
+            "gn4-00010",
+            "gn4-00013"
+          ],
+          "vocab_ids": [
+            "vg-n4-00001"
+          ]
+        },
+        {
+          "id": "les-curriculum-ssw-food-u06-02",
+          "lesson_number": 2,
+          "title_id": "Protokol Outbreak Norovirus & Klorin 1.000 ppm (Simulasi Darurat & Laporan SBAR)",
+          "title_jp": "ノロウイルス対応（緊急時SBAR報告）",
+          "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
+          "can_do_statement": "Bisa mengisolasi area muntahan dan disinfeksi klorin 1000 ppm.",
+          "grammar_ids": [
+            "gn4-00021"
+          ],
+          "vocab_ids": [
+            "vg-n4-00002"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 7,
+      "id": "unit-curriculum-ssw-food-07",
+      "level": "n4_ssw",
+      "pt_stage": 3,
+      "title_id": "Sekkyaku 7-Daigo & Layanan Omotenashi Restoran",
+      "title_jp": "接客7大用語と接遇",
+      "theme": "Omotenashi Service",
+      "icon": "🍱",
+      "can_do_summary": "Bisa menyapa tamu, mencatat pesanan, dan meminta maaf sopan.",
+      "l2d_focus_notes": "",
+      "grammar_ids": [
+        "gn4-00010",
+        "gn4-00013",
+        "gn4-00021"
+      ],
+      "vocab_ids": [
+        "vg-n4-00001",
+        "vg-n4-00002"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-ssw-food-u07-01",
+          "lesson_number": 1,
+          "title_id": "Sekkyaku 7-Daigo & Layanan Omotenashi Restoran (Prosedur & Terminologi)",
+          "title_jp": "接客7大用語と接遇（手順と用語）",
+          "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Sekkyaku 7-Daigo & Layanan Omotenashi Restoran.",
+          "can_do_statement": "Bisa menyapa tamu, mencatat pesanan, dan meminta maaf sopan.",
+          "grammar_ids": [
+            "gn4-00010",
+            "gn4-00013"
+          ],
+          "vocab_ids": [
+            "vg-n4-00001"
+          ]
+        },
+        {
+          "id": "les-curriculum-ssw-food-u07-02",
+          "lesson_number": 2,
+          "title_id": "Sekkyaku 7-Daigo & Layanan Omotenashi Restoran (Simulasi Darurat & Laporan SBAR)",
+          "title_jp": "接客7大用語と接遇（緊急時SBAR報告）",
+          "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
+          "can_do_statement": "Bisa menyapa tamu, mencatat pesanan, dan meminta maaf sopan.",
+          "grammar_ids": [
+            "gn4-00021"
+          ],
+          "vocab_ids": [
+            "vg-n4-00002"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 8,
+      "id": "unit-curriculum-ssw-food-08",
+      "level": "n4_ssw",
+      "pt_stage": 3,
+      "title_id": "Penanganan Komplain & SBAR Syok Anafilaksis",
+      "title_jp": "クレーム対応とアナフィラキシー",
+      "theme": "Complaint & Anaphylaxis SBAR",
+      "icon": "🍱",
+      "can_do_summary": "Bisa menangani komplain rambut dan panggil 119 untuk syok alergi.",
+      "l2d_focus_notes": "",
+      "grammar_ids": [
+        "gn4-00010",
+        "gn4-00013",
+        "gn4-00021"
+      ],
+      "vocab_ids": [
+        "vg-n4-00001",
+        "vg-n4-00002"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-ssw-food-u08-01",
+          "lesson_number": 1,
+          "title_id": "Penanganan Komplain & SBAR Syok Anafilaksis (Prosedur & Terminologi)",
+          "title_jp": "クレーム対応とアナフィラキシー（手順と用語）",
+          "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Penanganan Komplain & SBAR Syok Anafilaksis.",
+          "can_do_statement": "Bisa menangani komplain rambut dan panggil 119 untuk syok alergi.",
+          "grammar_ids": [
+            "gn4-00010",
+            "gn4-00013"
+          ],
+          "vocab_ids": [
+            "vg-n4-00001"
+          ]
+        },
+        {
+          "id": "les-curriculum-ssw-food-u08-02",
+          "lesson_number": 2,
+          "title_id": "Penanganan Komplain & SBAR Syok Anafilaksis (Simulasi Darurat & Laporan SBAR)",
+          "title_jp": "クレーム対応とアナフィラキシー（緊急時SBAR報告）",
+          "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
+          "can_do_statement": "Bisa menangani komplain rambut dan panggil 119 untuk syok alergi.",
+          "grammar_ids": [
+            "gn4-00021"
+          ],
+          "vocab_ids": [
+            "vg-n4-00002"
+          ]
+        }
+      ]
+    }
+  ]
+}
