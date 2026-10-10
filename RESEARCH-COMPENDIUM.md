@@ -52,7 +52,7 @@ nugget-nihongo-research/
 │   │   ├── PLATFORM-RESEARCH-AGENDA.md        ← Standalone empirical research studies roadmap
 │   │   │
 │   │   ├── contrastive/                       ← Granular L1 Diagnostic Inventory (Jalur A)
-│   │   │   └── INDONESIAN-L1-DIAGNOSTIC-INVENTORY-v1.md ← 100-item micro-diagnostic contrastive matrix
+│   │   │   └── INDONESIAN-L1-DIAGNOSTIC-INVENTORY-v1.md ← 150-item micro-diagnostic contrastive matrix across 6 domains
 │   │   │
 │   │   ├── vocational/                        ← Workplace SLA & Discourse Corpus (Jalur B)
 │   │   │   ├── EPA-KAIGO-SSW-WORKPLACE-CORPUS-v1.md ← 42-item pain onomatopoeia matrix, 4-tier Rousai escalation, eldercare speech shifts
@@ -148,11 +148,11 @@ In `blueprint/DESIGN-DECISION-MASTER-v1.md`, all cross-section theoretical tensi
 The synthesis phase has landed eight authoritative specifications bridging meta-analysis to live software:
 
 1. **Indonesian L1 Diagnostic Inventory (`INDONESIAN-L1-DIAGNOSTIC-INVENTORY-v1.md` - Jalur A):**
-   - 100-item micro-diagnostic contrastive matrix across 5 interference domains: Case Particles, Tense/Aspect/Modality, False Cognates & Wasei-Eigo, Benefactives, and Adnominal Clauses.
+   - 150-item micro-diagnostic contrastive matrix across 6 interference domains: Case Particles, Tense/Aspect/Modality, False Cognates & Wasei-Eigo, Benefactives, Adnominal Clauses, and Discourse Connectors / Epistemic Modality / Shuujoshi / Conditionals.
    - Prescribes concrete back-card metalinguistic gap explanations for immediate fossilization remediation.
 2. **EPA & SSW Vocational SLA Corpus (`EPA-KAIGO-SSW-WORKPLACE-CORPUS-v1.md` - Jalur B):**
    - Fieldwork-grounded sociopragmatics for Indonesian migrant workers in eldercare (*kaigo*) and manufacturing (*gemba nihongo*).
-   - Covers Pramesti (2019) speech-level shift dynamics, 10 subjective pain onomatopoeias (*zukizuki*, *chikuchiku*, *kirikiri*), emergency imperative continuums, and *hou-ren-so* bad-news-first formulas.
+   - Covers Pramesti (2019) speech-level shift dynamics, 42 atomized pain onomatopoeias across 7 trauma clusters, 4-tier Industrial Rousai accident escalation protocol, emergency imperative continuums, and *hou-ren-so* bad-news-first formulas.
 3. **All-Sector SSW Master Taxonomy (`ALL-SECTOR-SSW-TAXONOMY-CORPUS-v1.md`):**
    - Exhaustive operational classification of all 18 official Tokutei Ginou sectors across 4 macro-clusters (Care, Industrial Manufacturing, Primary/Infrastructure, Consumer/Logistics).
    - Details regulatory jurisdictions, Technical Skill Assessment (TSA) oral/practical workflows, Layer 2 technical terminology, emergency shouting registers (*kansei*), and 6-slot FSRS card archetype mappings.

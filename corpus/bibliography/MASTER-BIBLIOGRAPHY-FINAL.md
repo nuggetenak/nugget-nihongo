@@ -15,8 +15,8 @@
 | ✅ DUP-01 through DUP-11 resolved | All 11 duplicate pairs canonicalized; zero active duplicates remain |
 | ✅ DUP-04 resolved | ER-05 retired; canonical = BC-08 (Hu & Nation 2000) |
 | ✅ DUP-05 resolved | ER-10 retired; canonical = VD-05 (Webb 2007) |
-| ✅ EA-22–EA-30 expanded | EA-22 assigned to Maarif (2023); EA-23–EA-28 empirical expansions added; EA-29 adult vocabulary; EA-30 Lestari et al. (2022) narrative composition error analysis added |
-| ✅ VS-29–VS-35 expanded | VS-29 Pramesti (2019); VS-30 Pratama (2024); VS-31 Mustaqim (2026); VS-32 Aror et al. (2025) GROW-ME; VS-33 Supriatnaningsih et al. (2024) enterprise keigo; VS-34 Sari & Kastuti (2023) omotenashi; VS-35 Nurjaleka (2022) intercultural contact added |
+| ✅ EA-22–EA-33 expanded | EA-22 Maarif (2023); EA-23–EA-28 empirical expansions; EA-29 Nurjaman et al. (2025); EA-30 Lestari et al. (2022); EA-31 Wahyuningtias et al. (2018) sentence-final particles; EA-32 Gusti (2022) spoken conditionals; EA-33 Widodo & Sutedi (2020) conditional error analysis added |
+| ✅ VS-29–VS-39 expanded | VS-29–VS-35 vocational expansions; VS-36 Sakamoto et al. (2014); VS-37 Doizaki et al. (2015); VS-38 Okuda (2018); VS-39 JNIOSH (2020) industrial rousai standard |
 | ✅ OD-20 formally assigned | Matsunaga (1999) 2.3× exposure study canonicalized with DOI `10.20649/00000278` |
 | ✅ VD-05 & VD-12 stubs filled | Webb (2007) and Wray (2002) canonicalized with verified DOIs |
 | ✅ CV-05 conditional retired | Unverifiable record removed per verification protocol |
@@ -667,6 +667,12 @@ Alifah, S. N., Kadir, A., & Risagarniwa, Y. Y. (2020). Penguasaan partikel o dan
 Nurjaman, D., Rasiban, L. M., & Juangsih, J. (2025). Analisis kesalahan penggunaan kosakata bahasa Jepang tingkat menengah pada pemelajar dewasa [Error analysis of intermediate Japanese vocabulary usage among adult learners]. *Jurnal Pendidikan Bahasa Jepang*, *11*(2), 177–188. https://doi.org/10.23887/jpbj.v11i2.82815 > Section: §5.6.6 / §6 / §15. Empirical verification of adult L1 Indonesian lexical interference in intermediate Japanese near-synonym (*ruigigo*) selection. [EA-29]
 
 Lestari, R. D., Rasiban, L. M., & Juangsih, J. (2022). Analisis kesalahan berbahasa tataran morfologi, sintaksis, dan semantik pada karangan narasi mahasiswa [Language error analysis at morphological, syntactic, and semantic levels in students' narrative essays]. *Paedagoria: Jurnal Kajian, Penelitian dan Pengembangan Kependidikan*, *13*(2), 118–125. https://doi.org/10.31764/paedagoria.v13i2.9834 > Section: §5.6.6 / §16. Empirical distribution of narrative composition writing errors in Indonesian university learners, confirming that case particle omission/substitution and discourse connector calquing dominate free composition. [EA-30]
+
+Wahyuningtias, H., Artadi, A., & Djaya, H. (2018). Analysis of students' learning needs: Learning design of module for Japanese sentences' final particles. *KnE Social Sciences*, *3*(9), 235–248. https://doi.org/10.18502/kss.v3i9.2623 > Section: §5.6.6 / Contrastive Domain VI. Empirical analysis of Indonesian learners' pragmatic misuse of sentence-final particles (*ne* and *yo*) and pedagogic intervention design. [EA-31]
+
+Gusti, M. S. (2022). Structure, usage, and meaning of Japanese conditional sentences “to”, “tara”, “ba”, and “nara” in Japanese spoken language: A study case of Dr. Stone animation. *JAPANEDU: Jurnal Pendidikan dan Pengajaran Bahasa Jepang*, *7*(1), 18–29. https://doi.org/10.17509/japanedu.v7i1.45061 > Section: §5.6.6 / Contrastive Domain VI. Structural and pragmatic analysis of Japanese conditional markers (*to, tara, ba, nara*) mapping syntactic constraints and discourse distributions. [EA-32]
+
+Widodo, G. A. P., & Sutedi, D. (2020). Kesalahan penggunaan jouken hyougen pada pembelajar bahasa Jepang level menengah atas [Errors in the use of conditional expressions among upper-intermediate Japanese learners]. *J-Litera: Jurnal Kajian Bahasa, Sastra dan Budaya Jepang*, *2*(2), 56–67. https://doi.org/10.20884/1.jlitera.2020.2.2.2593 > Section: §5.6.6 / Contrastive Domain VI. Empirical error analysis of Indonesian learners on conditional expressions (*to, ba, tara, nara*), documenting high error rates in volitional apodosis and past temporal realization. [EA-33]
 
 ### EE
 

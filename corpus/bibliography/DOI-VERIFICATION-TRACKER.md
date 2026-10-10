@@ -1,6 +1,6 @@
 # NUGGET NIHONGO — DOI VERIFICATION TRACKER
-**Audited & Verified:** 20 April 2026 | **Curated by:** Research Review Directorate | **Status:** ✅ Completed — 100% Accounted For (Corpus v22)
-**Total verified DOIs in corpus:** 420+ verified DOIs across all 15 sections & clusters
+**Audited & Verified:** 20 April 2026 | **Curated by:** Research Review Directorate | **Status:** ✅ Completed — 100% Accounted For (Corpus v26)
+**Total verified DOIs in corpus:** 538+ verified DOIs across all 15 sections & clusters (546 unique verified DOIs across markdown repository)
 
 ---
 
@@ -235,6 +235,9 @@ All 40 entries from `SECTION13-INDIVIDUAL-DIFFS.md` have been fully verified via
 | EA-28 | Alifah, Kadir, & Risagarniwa (2020) *IZUMI* 9(2), 147–154 | `10.14710/izumi.9.2.147-154` | Transitive-stative predicate particles (*o* vs *ga*) acquisition by Indonesian learners | ✅ CONFIRMED |
 | EA-29 | Nurjaman, Rasiban, & Juangsih (2025) *JPBJ* 11(2), 177–188 | `10.23887/jpbj.v11i2.82815` | Intermediate Japanese vocabulary errors (*ruigigo*) in adult learners | ✅ CONFIRMED |
 | EA-30 | Lestari, Rasiban, & Juangsih (2022) *Paedagoria* 13(2), 118–125 | `10.31764/paedagoria.v13i2.9834` | L1 transfer errors across morphology, syntax, and semantics in narrative composition (*sakubun*) | ✅ CONFIRMED |
+| EA-31 | Wahyuningtias, Artadi, & Djaya (2018) *KnE Social Sciences* 3(9), 235–248 | `10.18502/kss.v3i9.2623` | Pedagogic design & pragmatic error analysis of sentence-final particles (*ne* and *yo*) among Indonesian learners | ✅ CONFIRMED |
+| EA-32 | Gusti, M. S. (2022) *JAPANEDU* 7(1), 18–29 | `10.17509/japanedu.v7i1.45061` | Structural & pragmatic constraints of Japanese conditional markers (*to, tara, ba, nara*) in spoken discourse | ✅ CONFIRMED |
+| EA-33 | Widodo & Sutedi (2020) *J-Litera* 2(2), 56–67 | `10.20884/1.jlitera.2020.2.2.2593` | Error analysis of conditional expressions (*jouken hyougen*) among intermediate Indonesian learners | ✅ CONFIRMED |
 | VS-29 | Pramesti, Sadyana, & Pradnyani (2019) *JLTR* 10(5), 1014–1022 | `10.17507/jltr.1005.13` | Speech level shifts (*keigo* vs *tameguchi*) among 68 Indonesian EPA caregivers | ✅ CONFIRMED |
 | VS-30 | Pratama & Srimulyani (2024) *JJS* 11(1), 45–62 | `10.20473/jjs.v11i1.52250` | SSW Hospitality language needs & honorifics in Hokkaido hotels | ✅ CONFIRMED |
 | VS-31 | Mustaqim & Priventa (2026) *TANDA* 6(5), 112–125 | `10.69957/tanda.v6i05.3088` | HORENSO workplace culture adaptation & bad-news reporting among Indonesian SSW | ✅ CONFIRMED |
