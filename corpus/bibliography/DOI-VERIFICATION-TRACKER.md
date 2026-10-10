@@ -290,6 +290,8 @@ All 40 entries from `SECTION13-INDIVIDUAL-DIFFS.md` have been fully verified via
 | VS-37 | Doizaki et al. (2015) *IJAE* 15(2) | `10.5057/ijae.ijae-d-15-00028` | J-STAGE CrossRef | ✅ CONFIRMED |
 | VS-38 | Okuda (2018) *JPA Proc* 82 | `10.4992/pacjpa.82.0_2am-070` | J-STAGE CrossRef | ✅ CONFIRMED |
 | VS-39 | JNIOSH (2020) Technical Report No.48 | Technical Report JNIOSH-TR-No.48, MHLW Japan | Official government safety standard | ❌ UNAVAILABLE (Official technical standard) |
+| VS-40 | JAIM (2024) Operational Guidelines (17 Divisions) | Statutory Operational Standard, METI & JAIM | Official statutory manufacturing standard | ❌ UNAVAILABLE (Official statutory standard) |
+| VS-41 | JAC (2024) Construction Safety Standards (3 Divisions) | Statutory Curriculum Standard, MLIT & JAC | Official statutory construction standard | ❌ UNAVAILABLE (Official statutory standard) |
 
 
 

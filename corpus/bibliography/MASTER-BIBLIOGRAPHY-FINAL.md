@@ -16,7 +16,7 @@
 | ✅ DUP-04 resolved | ER-05 retired; canonical = BC-08 (Hu & Nation 2000) |
 | ✅ DUP-05 resolved | ER-10 retired; canonical = VD-05 (Webb 2007) |
 | ✅ EA-22–EA-33 expanded | EA-22 Maarif (2023); EA-23–EA-28 empirical expansions; EA-29 Nurjaman et al. (2025); EA-30 Lestari et al. (2022); EA-31 Wahyuningtias et al. (2018) sentence-final particles; EA-32 Gusti (2022) spoken conditionals; EA-33 Widodo & Sutedi (2020) conditional error analysis added |
-| ✅ VS-29–VS-39 expanded | VS-29–VS-35 vocational expansions; VS-36 Sakamoto et al. (2014); VS-37 Doizaki et al. (2015); VS-38 Okuda (2018); VS-39 JNIOSH (2020) industrial rousai standard |
+| ✅ VS-29–VS-41 expanded | VS-29–VS-35 vocational expansions; VS-36 Sakamoto et al. (2014); VS-37 Doizaki et al. (2015); VS-38 Okuda (2018); VS-39 JNIOSH (2020); VS-40 JAIM (2024) 17 manufacturing divisions; VS-41 JAC (2024) 3 construction divisions |
 | ✅ OD-20 formally assigned | Matsunaga (1999) 2.3× exposure study canonicalized with DOI `10.20649/00000278` |
 | ✅ VD-05 & VD-12 stubs filled | Webb (2007) and Wray (2002) canonicalized with verified DOIs |
 | ✅ CV-05 conditional retired | Unverifiable record removed per verification protocol |
@@ -1634,6 +1634,10 @@ Doizaki, R., Matsuda, T., Utsumi, A., & Sakamoto, M. (2015). Constructing a Syst
 Okuda, H. (2018). Evaluation of Onomatopoeias Concerning the Pain with the Described Subject Evaluation Method in a Young Japanese Group. *Proceedings of the Annual Convention of the Japanese Psychological Association, 82*, 2AM-070. https://doi.org/10.4992/pacjpa.82.0_2am-070 > Section: §15 / EPA-Kaigo. Empirical psychometric evaluation of Japanese pain onomatopoeia describing sensory intensity, temporal continuity, and tissue depth. [VS-38]
 
 Japan National Institute of Occupational Safety and Health (JNIOSH). (2020). *Occupational safety and health guidelines for accident reporting and pointing-and-calling procedures (shiteki koshou) in industrial manufacturing* (Technical Report JNIOSH-TR-No.48). Ministry of Health, Labour and Welfare, Japan. > Section: §15 / Industrial Gemba. Standard industrial safety protocol defining 4-tier emergency escalation, acoustic shouting, and pointing-and-calling cognitive verification. [VS-39]
+
+Japan Association for Human Resources in Industrial Product Manufacturing (JAIM). (2024). *Operational guidelines and task classification standards for the specified skilled worker system in industrial product manufacturing (17 Operational Divisions)* (Kōgyō Seihin Seizōgyō Bun'ya Un'yō Yōryō). Ministry of Economy, Trade and Industry (METI) & JAIM. > Section: §15 / Industrial Manufacturing. Statutory classification and task standard defining the 17 operational divisions, machine panel terminology, and qualification criteria. [VS-40]
+
+Japan Association for Construction Human Resources (JAC). (2024). *Safety and health education curriculum and 3-division operational standard for specified skilled foreign workers in the construction industry* (Kensetsu Bun'ya Anzen Eisei Kyōiku Shishin). Ministry of Land, Infrastructure, Transport and Tourism (MLIT) & JAC. > Section: §15 / Construction Gemba. National safety training framework defining the 3 consolidated construction divisions, high-altitude fall arrest, trench shoring, and multilingual emergency response. [VS-41]
 
 ### SUPPLEMENT — §8 PWA / §5 Contrastive / §CA (extracted from prose)
 

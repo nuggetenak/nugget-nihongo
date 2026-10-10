@@ -14,6 +14,9 @@
 - Vocational Syntactic Error Analysis: Prihantoro et al. (2024) [EA-26] (DOI: `10.33633/jr.v6i2.11252`)
 - Adult Vocabulary Errors: Nurjaman, Rasiban, & Juangsih (2025) [EA-29] (DOI: `10.23887/jpbj.v11i2.82815`)
 - Geminate Acoustic Durations in Industrial Intelligibility: Husna & Febriyanti (2022) [EA-25] (DOI: `10.17509/japanedu.v7i1.44578`)
+- Industrial Safety Guidelines & Pointing-and-Calling (Shiteki Koshou): JNIOSH (2020) Technical Report JNIOSH-TR-No.48 [VS-39]
+- Manufacturing 17 Operational Divisions Standard: Japan Association for Human Resources in Industrial Product Manufacturing (JAIM, 2024 [VS-40])
+- Construction 3 Consolidated Divisions & Multilingual Safety Standards: Japan Association for Construction Human Resources (JAC, 2024 [VS-41])
 
 ---
 
@@ -116,8 +119,122 @@ For every designated SSW sector, the curriculum separates vocabulary into three 
 
 ## 3. CLUSTER II: INDUSTRIAL MANUFACTURING & ENGINEERING
 
+### 3.0 METI/JAIM 17 OPERATIONAL DIVISIONS MASTER MATRIX & MACHINE CONTROL PANEL COMMANDS (製造分野 17業務区分 統合マトリクス)
+
+Under the regulatory unification administered by the **Ministry of Economy, Trade and Industry (METI / 経済産業省)** and the **Japan Association for Human Resources in Industrial Product Manufacturing (JAIM / 一般社団法人工業製品製造技能人材機構, 2024 [VS-40])**, the previously separate manufacturing industries (Sokeizai, Industrial Machinery, Electrical/Electronics) are unified under the single **Industrial Product Manufacturing Sector (工業製品製造業分野 / 製造分野)** comprising **17 discrete operational divisions (*17 業務区分*)**.
+
+```
+[JAIM MANUFACTURING SECTOR: 17 OPERATIONAL DIVISIONS (製造分野 17業務区分)]
+│
+├── A. CORE DIVISIONS (基幹3区分 — Eligible for SSW Tier 1 & Tier 2 / 特定技能1号・2号)
+│   ├── Division 01: 機械金属加工 (Machining & Metal Processing)
+│   ├── Division 02: 電気電子機器組立て (Electric & Electronic Equipment Assembly)
+│   └── Division 03: 金属表面処理 (Metal Surface Treatment & Plating)
+│
+└── B. PRODUCT & SPECIALIZED MATERIAL DIVISIONS (追加14区分 — SSW Tier 1 / 特定技能1号)
+    ├── Division 04: 紙器・段ボール箱製造 (Paper Container & Corrugated Board)
+    ├── Division 05: コンクリート製品製造 (Precast Concrete Products)
+    ├── Division 06: RPF製造 (Refuse Paper & Plastic Fuel)
+    ├── Division 07: 陶磁器製品製造 (Ceramic Products)
+    ├── Division 08: 印刷・製本 (Printing & Bookbinding)
+    ├── Division 09: 紡織製品製造 (Textile Products)
+    ├── Division 10: 縫製 (Sewing & Apparel)
+    ├── Division 11: 電線・ケーブル製造 (Electric Wire & Cable)
+    ├── Division 12: プレハブ住宅製品製造 (Prefabricated Housing Products)
+    ├── Division 13: 家具製造 (Furniture Manufacturing)
+    ├── Division 14: 定形・不定形耐火物製造 (Shaped & Monolithic Refractories)
+    ├── Division 15: 生コンクリート製造 (Ready-Mixed Concrete Manufacturing)
+    ├── Division 16: ゴム製品製造 (Rubber Products)
+    └── Division 17: かばん製造 (Luggage & Bag Manufacturing)
+```
+
+#### Master Operational Matrix: The 17 JAIM Divisions
+| 区分 | 業務区分名 (Romaji) | Klasifikasi Proses & Mesin Inti | Istilah Panel Operasi & Layer 2 | Kategori Risiko K3 & SOP |
+|---|---|---|---|---|
+| **01** | **機械金属加工** (*Kikai Kinzoku Kakō*) | Bubut NC, Milling CNC, Mesin Gerinda, Stamping Press, Pengelasan | 旋盤, 送り速度, 寸法公差, 切削油, バリ取り, 原点復帰 | Terjepit spindel putar, serbukan logam tatal, ledakan batu gerinda |
+| **02** | **電気電子機器組立て** (*Denki Denshi Kiki Kumitate*) | Surface Mount (SMT), Solder tangan, Wiring harness, Uji kontinuitas | 基板実装, はんだブリッジ, アース接地, 短絡, 導通検査 | Sengatan listrik, kerusakan statis ESD, uap timah solder beracun |
+| **03** | **金属表面処理** (*Kinzoku Hyōmen Shori*) | Elektroplating, Anodisasi aluminium, Degreasing kimiawi, Pickling asam | めっき槽, 脱脂, 陽極酸化, 酸洗い, 排気ファン, pH中和 | Percikan asam pekat, gas beracun, luka bakar kimiawi korosif |
+| **04** | **紙器・段ボール箱製造** (*Shiki / Danbōrubako*) | Mesin corrugator, Flexographic printing, Die-cutting, Pengeleman flap | コルゲータ, 罫線, 糊付け, スリッター刃, 耐圧強度 | Terjepit silinder roller berputar, tergores pisau slitter tajam |
+| **05** | **コンクリート製品製造** (*Konkuriito Seihin*) | Cetakan beton pracetak, Pemasangan tulangan, Curing uap, Demolding | プレキャスト型枠, 蒸気養生, 脱型, 配筋, 高周波バイブレータ | Tertimpa panel beton pracetak roboh, luka bakar uap curing |
+| **06** | **RPF製造** (*RPF Seizō*) | Pencacahan limbah industri, Pemilahan magnetik, Peletisasi bahan bakar | 一次破砕機, 磁選機, 成形押出機, 含水率, 異物除去 | Kebakaran spontan debu bahan bakar, terjepit pisau crusher |
+| **07** | **陶磁器製品製造** (*Tōjiki Seihin*) | Pembentukan tanah liat, Glasir keramik, Pembakaran kiln suhu tinggi | 坏土成形, 釉薬掛け, トンネル窯, 焼成温度, 素焼き | Luka bakar suhu tungku kiln > 1.200°C, debu silika silikosis |
+| **08** | **印刷・製本** (*Insatsu / Seihon*) | Mesin cetak offset, Mesin pemotong kertas otomatis, Penjilidan lem panas | オフセット輪転機, 断裁機, 丁合, ホットメルト, 色合わせ | Jari terpotong mesin pemotong kertas (guillotine), paparan solvent tinta |
+| **09** | **紡織製品製造** (*Bōshoku Seihin*) | Pemintalan serat benang, Penenunan mesin tenun udara (air-jet loom) | 紡績機, 織機, シャトル, 経糸・緯糸, 張力調整 | Rambut/baju terlilit spindel pintal cepat, gangguan pendengaran bising |
+| **10** | **縫製** (*Hōsei*) | Jahit mesin industri lockstitch, Pemasangan kancing, Setrika uap garmen | 工業用ミシン, 目飛び, 押さえ圧, 糸調子, 蒸気アイロン | Jari tertusuk jarum mesin jahit kecepatan tinggi, luka bakar uap |
+| **11** | **電線・ケーブル製造** (*Densen / Kēburu*) | Penarikan kawat tembaga (*wire drawing*), Ekstrusi insulasi polimer | 伸線機, 押出被覆, より線, 耐電圧試験, ドラム巻取 | Terbelit putaran drum gulungan kawat, sengatan uji tegangan tinggi |
+| **12** | **プレハブ住宅製品製造** (*Purehabu Jūtaku*) | Perakitan rangka baja ringan, Pemasangan insulasi dinding/lantai modular | パネル組立, 断熱材充填, 溶接ロボット, 天井クレーン | Tertimpa modul dinding prefab, jatuh dari perancah assembly line |
+| **13** | **家具製造** (*Kagu Seizō*) | Pemotongan kayu mesin gergaji serbaguna, Pengeleman laminasi, Finishing cat | 昇降盤, NCルーター, 木工ボンド, サンダー仕上げ, 突き板 | Terpotong pisau gergaji circular putar, debu serbuk kayu pernapasan |
+| **14** | **定形・不定形耐火物製造** (*Taikamono Seizō*) | Pencampuran semen tahan api tungku baja, Pengepresan bata tahan panas | 耐火レンガ, 混練機, 高圧プレス, 耐火キャスタブル | Terjepit silinder hydraulic press hidrolik ribuan ton, debu tahan api |
+| **15** | **生コンクリート製造** (*Nama-konkuriito*) | Penakaran semen/agregat di batching plant, Pengadukan truk mixer agitator | バッチャープラント, 骨材計量, スランプ管理, アジテータ車 | Terjepit blade putar mixer beton, iritasi korosif semen basah |
+| **16** | **ゴム製品製造** (*Gomu Seihin*) | Pencampuran karet mesin banbury, Vulkanisasi cetak panas hidrolik | バンバリーミキサー, 加硫プレス, 金型離型剤, ゴム練りロール | Terjepit roll pencampur karet panas, luka bakar silinder vulkanisasi |
+| **17** | **かばん製造** (*Kaban Seizō*) | Pemotongan pola kulit/sintetis mesin hidrolik clicker, Penipisan kulit (*skiving*) | 裁断クリッカー, 革漉き機, 芯材貼り, コバ塗り, カシメ打ち | Jari terpotong mesin penipis kulit putar, terjepit die cetakan pon |
+
+---
+
+#### Universal Machine Control Panel (*Sōsa-ban* / 操作盤) Operational Lexicon
+Setiap mesin pabrik di 17 divisi JAIM menggunakan terminologi standar panel operasi berikut yang wajib dikuasai secara otomatis (tanpa latensi terjemahan):
+
+| # | Kanji / Istilah Panel | Kana Reading | Romaji & Aksentuasi | Fungsi Kontrol Mesin | Tindakan Operator di Gemba |
+|---|---|---|---|---|---|
+| 1 | **電源投入** | でんげんとうにゅう | *dengen tōnyū* [0-0] | Power ON / Sakelar utama daya | Menghidupkan daya listrik panel utama |
+| 2 | **非常停止** | ひじょうていし | *hijō-teishi* [0-0] | Emergency Stop (E-Stop) | Menekan tombol jamur merah saat darurat bahaya |
+| 3 | **原点復帰** | げんてんふっき | *genten fukki* [0-0] | Zero-Point Homing | Mengembalikan sumbu koordinat mesin ke posisi nol |
+| 4 | **自動運転** | じどううんてん | *jidō unten* [0-0] | Automatic Cycle Run | Memulai siklus kerja otomatis setelah verifikasi |
+| 5 | **手動運転** | しゅどううんてん | *shudō unten* [0-0] | Manual Jog Operation | Menggerakkan mesin secara manual satu per satu |
+| 6 | **段取り替え** | だんどりがえ | *dandori-gae* [0] | Tooling / Model Setup | Mengganti cetakan/jig dan parameter tipe baru |
+| 7 | **寸動・インチング** | すんどう・いんちんぐ | *sundō / inchingu* [0] | Inching / Pulse Movement | Menggerakkan motor sedikit demi sedikit untuk cek posisi |
+| 8 | **サイクル停止** | さいくるていし | *saikuru teishi* [1-0] | Single Cycle Stop | Menghentikan mesin setelah 1 siklus selesai tuntas |
+| 9 | **ワーククランプ** | わーくくらんぷ | *wāku kuranpu* [1-1] | Workpiece Clamp | Mengunci benda kerja dengan tekanan pneumatik/hidrolik |
+| 10 | **アンクランプ** | あんくらんぷ | *ankuranpu* [1] | Workpiece Release | Melepaskan cengkeraman klem pada benda kerja |
+| 11 | **切削油ON/OFF** | せっさくゆ | *sessakuyu on/ofu* [0] | Coolant Pump Control | Mengaktifkan/mematikan semprotan cairan pendingin |
+| 12 | **インターロック解除**| いんたーろっくかいじょ | *intārokku kaijo* [3-1] | Safety Interlock Bypass | Kunci khusus pembuka gerbang sensor (HANYA teknisi resmi) |
+| 13 | **アラームリセット** | あらーむりせっと | *arāmu risetto* [2-1] | Fault Clear / Alarm Reset | Menghapus kode eror setelah memeriksa akar penyebab |
+| 14 | **チョコ停** | ちょこてい | *choko-tei* [0] | Minor Jam (< 5 menit) | Mesin macet sejenak karena sensor/part miring |
+| 15 | **ドカ停** | どかてい | *doka-tei* [0] | Major Failure (> 1 jam) | Kerusakan berat yang mematikan seluruh lini produksi |
+| 16 | **ポカヨケ** | ぽかよけ | *poka-yoke* [0] | Mistake-Proofing Jig | Mekanisme sensor pencegah salah pasang orientasi benda |
+
+---
+
+#### The 4-Step Shiteki Koshō (Pointing-and-Calling / 指差呼称) Machine Startup Protocol
+Berdasarkan standar keselamatan **JNIOSH-TR-No.48 [VS-39]** dan pedoman **JAIM (2024 [VS-40])**, pengoperasian mesin wajib melalui protokol 4 langkah verifikasi vokal:
+
+```
+[TARGET OBJEK DITUNJUK DENGAN TELUNJUK TANGAN KANAN]
+        │
+        ▼ (Mata memandang tajam + Telunjuk mengarah lurus)
+[LANGKAH 1: IDENTIFIKASI OBJEK] ──► 「〇〇ヨシ！」 (Suara lantang keluar dari mulut)
+        │
+        ▼ (Tangan ditarik ke telinga kanan lalu dihentakkan ke depan)
+[LANGKAH 2: EKSEKUSI TOMBOL]     ──► 「スイッチON！」
+```
+
+1. **Langkah 1 (Tekanan Sistem):** Menunjuk jarum manometer hidrolik/angin:  
+   *「油圧ゲージ、0.5メガパスカル、基準値ヨシ！」* (*Yuatsu geeji, rei-ten-go megapasukaru, kijunchi yoshi!*)
+2. **Langkah 2 (Pencekaman Benda Kerja):** Menunjuk klem silinder penahan:  
+   *「ワーククランプ、ガタツキなし、固定ヨシ！」* (*Wāku kuranpu, gatatsuki nashi, kotei yoshi!*)
+3. **Langkah 3 (Pintu Pengaman Interlock):** Menunjuk pintu akrilik pelindung:  
+   *「安全扉閉鎖、インターロック作動ヨシ！」* (*Anzentobira heisa, intārokku sadō yoshi!*)
+4. **Langkah 4 (Verifikasi Rekan Kerja & Start):** Menoleh kiri-kanan melihat rekan satu lini:  
+   *「周囲安全、合図確認ヨシ！自動運転起動！」* (*Shūi anzen, aizu kakunin yoshi! Jidō unten kidō!*)
+
+---
+
+#### High-Noise Gemba Machine Directives & 2-Way Emergency Callouts (> 85 dB)
+Di lantai pabrik dengan tingkat kebisingan tinggi, tata krama kesantunan normal ditangguhkan demi kecepatan respons penyelamatan jiwa:
+
+- **Teriakan Darurat Spontan (*Kansei*):**
+  - *「非常停止！手巻き込まれ！ブレーカー落とせ！」* (*Hijō-teishi! Te makikomare! Burēkā ototse!* — Emergency stop! Hand caught! Cut main breaker!)
+  - *「触るな！自動運転中だ！安全柵から出ろ！」* (*Sawaru na! Jidō untenchū da! Anzensaku kara dero!* — Don't touch! Machine is in auto-cycle! Step out of safety fence!)
+  - *「金型降下中！頭を入れちゃダメだ！」* (*Kanagata kōkachū! Atama o irecha dame da!* — Press die descending! Keep your head out!)
+- **Pemberitahuan Dua Arah Handoff (*Koe-gake*):**
+  - Operator A: *「今から段取り替え入ります！主電源切ります！」* (*Mulai setup cetakan sekarang! Mematikan daya utama!*)
+  - Operator B (Balasan Wajib): *「了解！主電源OFF確認！スイッチ触りません！」* (*Dimengerti! Daya utama OFF terkonfirmasi! Sakelar tidak akan disentuh!*)
+
+---
+
 ### 3.1 Sector 03: Machine Parts & Tooling (素形材産業 - Sokeizai)
-- **Supervising Authority:** Ministry of Economy, Trade and Industry (METI / 経済産業省).
+*(Sub-Divisi JAIM 01: 機械金属加工, 03: 金属表面処理, 11: 金属プレス加工)*
+- **Supervising Authority:** Ministry of Economy, Trade and Industry (METI / 経済産業省) & JAIM.
 - **Target Situation Analysis (TSA):** Foundry casting (*chuuzou*), forging (*tanzou*), die casting (*daikasuto*), precision machining, metal stamping/pressing (*puresu*), heat treatment (*netsushori*), and industrial welding.
 
 #### Atomized Technical Lexicon (Layer 2)
@@ -262,26 +379,170 @@ For every designated SSW sector, the curriculum separates vocabulary into three 
 ## 4. CLUSTER III: INFRASTRUCTURE & PRIMARY PRODUCTION
 
 ### 4.1 Sector 09: Construction Industry (建設業 - Kensetsu)
-- **Supervising Authority:** Ministry of Land, Infrastructure, Transport and Tourism (MLIT).
-- **Target Situation Analysis (TSA):** Modular scaffolding assembly (*ashiba*), rebar tie-wire fixing (*tekkinki*), concrete formwork carpentry (*katawaku*), concrete boom pump discharge (*dagasete*), and trench shoring excavation.
+- **Supervising Authority:** Ministry of Land, Infrastructure, Transport and Tourism (MLIT / 国土交通省) & Japan Association for Construction Human Resources (JAC / 一般社団法人建設技能人材機構, 2024 [VS-41]).
+- **Regulatory Reform Baseline:** Following the official MLIT regulatory consolidation, the construction industry evaluates and deploys foreign skilled workers across **3 consolidated operational divisions (3大括り区分)** covering civil engineering, architectural building, and building utility lifelines.
 
-#### Atomized Technical Lexicon (Layer 2)
-| Kanji / Term | Kana Reading | Romaji | Technical Definition | Indonesian Gloss | High-Stakes Risk Category |
+```
+[JAC CONSOLIDATED CONSTRUCTION SECTOR (建設分野 3大括り区分)]
+│
+├── 4.1.1 Division 1: 土木 (Civil Engineering & Heavy Earthworks)
+│   └── Earthwork (土工), Road paving (舗装), Tunneling (トンネル), Bridge substructure (橋梁基礎), River training
+│
+├── 4.1.2 Division 2: 建築 (Architecture & Structural Building)
+│   └── Scaffolding (足場), Formwork (型枠), Rebar fixing (鉄筋), Concrete pumping (圧送), Interior/Plastering (内装・左官)
+│
+└── 4.1.3 Division 3: ライフライン・設備 (Lifelines & Utilities Equipment)
+    └── Plumbing (配管), Electrical wiring (電気), HVAC ducting (空調ダクト), Telecommunication lines (通信)
+```
+
+---
+
+#### 4.1.1 Division 1: 土木 (Civil Engineering & Heavy Infrastructure / Doboku)
+- **Target Situation Analysis (TSA):** Deep trench excavation for drainage pipes, soil compaction testing, asphalt road paver feeding, rock bolt drilling in tunnel bores, and sheet pile driving for cofferdams.
+
+| Kanji / Term | Kana Reading | Romaji & Aksentuasi | Technical Definition | Indonesian Gloss | High-Stakes Risk Category |
 |---|---|---|---|---|---|
-| 足場組立 | あしばくみたて | *ashiba kumitate* | Erecting prefabricated tubular steel modular scaffolding | Perakitan perancah baja bertingkat | High-altitude fall hazard |
-| 安全帯（ハーネス） | あんぜんたい | *anzen-tai* | Full-body fall arrest harness lanyards | Sabuk pengaman tubuh tali ganda | Fall arrest compliance |
-| 鉄筋結束 | てっきんけっそく | *tekkin kessoku* | Tying intersecting rebars using manual hacker tool | Pengikatan kawat besi beton ulir | Structural integrity |
-| 型枠建込み | かたわくたてこみ | *katawaku tatekomi* | Positioning plywood formwork panels for concrete | Pemasangan bekisting kayu cor beton | Formwork blowout burst |
-| 生コン打設 | なまこんだせつ | *namakon dasetsu* | Pouring wet transit-mixed concrete from pump boom | Pengecoran adukan beton basah | Hose whip / Structural slump |
-| 掘削土留め | くっさくどどめ | *kussaku dodome* | Shoring trench trench walls to prevent soil cave-in | Pemasangan turap penahan tanah galian | Trench collapse suffocation |
-| 重機作業半径 | じゅうきさぎょうはんけい | *juuki sagyou hankei* | Slew radius swing zone of hydraulic excavators | Radius putar alat berat ekskavator | Blindspot crush death |
-| 開口部養生 | かいこうぶようじょう | *kaikoubu youjou* | Securing safety covers and toe-boards over slab holes | Penutupan lubang lantai void bangunan | Plunge fall hazard |
-| 吊り荷の下進入禁止 | つりにのしたしんにゅうきんし | *tsurini no shita shinnyuu kinshi* | Warning: Never walk beneath suspended crane loads | Larangan melintas di bawah beban gantung | Crushing fatality |
-| 朝礼・危険予知 | ちょうれい・きけんよち | *chourei / kiken yochi* | Morning tool-box talk hazard prediction meeting (KYT) | Apel pagi & analisis prediksi bahaya kerja | Behavioral safety alignment |
+| **盛土・切土** | もりど・きりど | *morido / kirido* [0 / 0] | Embankment fill / slope earth cut | Timbunan tanah peninggian / pemotongan tebing lereng | Slope failure landslide |
+| **掘削法面** | くっさくのりめん | *kussaku norimen* [0-0] | Excavated earthen embankment batter slope | Dinding miring lereng galian tanah | Cave-in collapse bury |
+| **転圧締固め** | てんあつしめがため | *ten'atsu shimegatame* [0-4] | Soil vibratory roller compaction passes | Pemadatan tanah fondasi dengan mesin vibro-roller | Settlement void sinkhole |
+| **丁張・水準器** | ちょうはり・すいじゅんき | *chōhari / suijunki* [0 / 3] | Batter board profile marker & spirit level | Patok profil acuan elevasi & waterpass | Grade elevation error |
+| **バックホウ旋回** | ばっくほうせんかい | *bakku-hō senkai* [3-0] | Hydraulic excavator swing slew radius zone | Radius putar kabin alat berat ekskavator | Blindspot strike fatality |
+| **土留め支保工** | どどめしほこう | *dodome shihokō* [0-0] | Trench box steel shoring strut bracing | Rangka turap baja penahan dinding galian | Trench cave-in entrapment |
+| **泥水シールド** | でいすいしーるど | *deisui shīrudo* [0-3] | Slurry shield tunnel boring machine (TBM) | Mesin bor terowongan sistem lumpur tekan | Face blowout water surge |
+| **暗渠排水** | あんきょはいすい | *ankyo haisui* [0-0] | Subsurface perforated drain pipe culvert | Saluran drainase pipa resapan bawah tanah | Flooding back-up |
+| **クラッシャーラン** | くらっしゃーらん | *kurasshā-ran* [4] | Crushed aggregate base course stone (C-40) | Lapis fondasi agregat batu pecah jalan | Pavement subsidence |
+| **矢板打設** | やいただせつ | *yaita dasetsu* [0-0] | Driving interlocking steel sheet piles | Pemancangan tiang turap baja penahan air/tanah | Pile tilt / Underground strike |
 
-#### Emergency Directives
-- 「吊り荷の下に入るな！離れろ！」 (*Tsurini no shita ni hairuna! Hanarero!* — Get out from under the crane load! Move away!)
-- 「安全帯フック掛けろ！二丁掛けヨシ！」 (*Anzentai fukku kakero! Nichougake yoshi!* — Clip safety harness hooks! Double lanyards attached OK!)
+- **High-Stakes Civil Directives:**
+  - *「旋回範囲に入るな！バックホウの死角だ！」* (*Senkai han'i ni hairuna! Bakku-hō no shikaku da!* — Stay out of swing radius! You are in the excavator's blind spot!)
+  - *「法面が崩れてくるぞ！溝から上がれ！」* (*Norimen ga kuzurete kuru zo! Mizo kara agare!* — Embankment is sliding! Climb out of the trench immediately!)
+
+---
+
+#### 4.1.2 Division 2: 建築 (Architecture, Structural Shell & Interior / Kenchiku)
+- **Target Situation Analysis (TSA):** Prefabricated modular scaffolding erection, rebar cage tie-wire fixing, formwork plywood tie-bolt assembly, wet concrete boom pump discharge, laser datum level marking, and drywall installation.
+
+| Kanji / Term | Kana Reading | Romaji & Aksentuasi | Technical Definition | Indonesian Gloss | High-Stakes Risk Category |
+|---|---|---|---|---|---|
+| **クサビ式足場** | くさびしきあしば | *kusabi-shiki ashiba* [0-0] | Wedge-lock modular steel pipe scaffolding | Perancah pipa baja modular sistem baji pasak | Scaffolding collapse plunge |
+| **根がらみ** | ねがらみ | *negarami* [0] | Bottom base tie-runner securing scaffold jacks | Pipa pengikat kaki perancah paling bawah | Jack base slip / Overturn |
+| **巾木・幅木** | はばき | *habaki* [0] | Toe-board kickplate installed on platforms | Papan penahan kaki pelindung barang jatuh | Dropped tool head injury |
+| **セパレーター** | せぱれーたー | *separētā* [3] | Formwork threaded tie rod spacer bolt | Besi batang spacer penahan jarak bekisting cor | Formwork blowout burst |
+| **鉄筋かぶり厚** | てっきんかぶりあつ | *tekkin kaburi-atsu* [0-3] | Minimum concrete cover depth over rebar | Ketebalan selimut beton pelindung besi tulangan | Structural corrosion failure |
+| **スランプ試験** | すらんぷしけん | *suranpu shiken* [2-2] | Slump cone workability consistency test | Uji slump kekentalan adukan beton basah | Segregation / Cold joint |
+| **墨出しレーザー** | すみだしれーざー | *sumidashi rēzā* [0-1] | Chalk-line laser level projection on slabs | Penandaan garis as dan elevasi dengan laser | Dimension layout misalignment |
+| **胴縁・野縁** | どうぶち・のぶち | *dōbuchi / nobuchi* [0 / 0] | Wall furring strip & ceiling suspended joists | Rangka kaso dinding & rangka gantungan plafon | Ceiling load sag failure |
+| **石膏ボード張り** | せっこうぼーどばり | *sekkō-bōdo-bari* [5-0] | Gypsum plasterboard fixing on steel studs | Pemasangan lembaran papan gipsum dinding | Eye injury / Heavy drop |
+| **フルハーネス二丁掛け**| ふるはーねすにちょうがけ | *furuhānesu ni-chō-gake* [4-0] | 100% tie-off twin-lanyard fall arrest harness | Sabuk pengaman tubuh penuh pengait ganda | Fatal fall from height (> 2m) |
+
+- **High-Stakes Structural Directives:**
+  - *「二丁掛けを徹底しろ！フックを外すな！」* (*Ni-chō-gake o tettei shiro! Fukku o hazusuna!* — Strictly enforce twin lanyards! Never detach both hooks at once!)
+  - *「生コン吹き出し注意！ホースの先端を押さえろ！」* (*Namakon fukidashi chūi! Hōsu no sentan o osaero!* — Concrete blowout danger! Secure pump hose tip!)
+
+---
+
+#### 4.1.3 Division 3: ライフライン・設備 (Lifelines, Electrical, HVAC & Utilities / Setsubi)
+- **Target Situation Analysis (TSA):** Underground PVC/cast-iron water pipe trenching, indoor EMT conduit cable pulling, earth grounding electrode resistance testing, ELCB breaker tripping inspection, refrigerant gas recovery, and ventilation duct ceiling hanging.
+
+| Kanji / Term | Kana Reading | Romaji & Aksentuasi | Technical Definition | Indonesian Gloss | High-Stakes Risk Category |
+|---|---|---|---|---|---|
+| **圧着端子** | あっちゃくたんし | *acchaku tanshi* [4] | Crimp terminal lug for stranded copper cable | Sepatu kabel skun tembaga jepit pres | Terminal overheat / Arc fire |
+| **絶縁抵抗測定** | ぜつえんていこうそくてい | *zetsuen teikō sokutei* [6-0] | Megohmmeter insulation breakdown testing | Pengukuran resistansi isolasi kabel (Mega-ohm) | Electrical leakage shock |
+| **漏電遮断器** | ろうでんしゃだんき | *rōden shadanki* [5] | Earth Leakage Circuit Breaker (ELCB / GFCI) | Pemutus arus kebocoran tanah otomatis | Electrocution fatality |
+| **配管勾配** | はいかんこうばい | *haikan kōbai* [0-0] | Gravity drain slope pitch angle (e.g. 1/100) | Derajat kemiringan pipa pembuangan air kotor | Backflow clogging flood |
+| **水圧テスト** | すいあつてすと | *suiatsu tesuto* [3-1] | Hydrostatic pressure hold test for piping | Uji ketahanan tekanan air pada pipa air bersih | Pipe burst water damage |
+| **冷媒ガス回収** | れいばいがすかいしゅう | *reibai gasu kaishū* [4-0] | Fluorocarbon refrigerant recovery machine | Mesin penyedot gas freon pendingin AC | Refrigerant frostbite / Eco fine |
+| **ダクト吊りボルト** | だくとつりぼると | *dakuto tsuri-boruto* [1-3] | Ceiling threaded rod drop hangers for air ducts | Batang besi drat gantungan saluran udara ducting | Duct collapse fall hazard |
+| **通線ワイヤー** | つうせんわいやー | *tsūsen waiyā* [0-2] | Fish tape wire puller through conduits | Kawat pemancing penarik kabel pipa instalasi | Eye whip puncture hazard |
+| **架空配線** | かくうはいせん | *kakū haisen* [0-0] | Overhead high-voltage utility pole wire line | Saluran kabel transmisi listrik udara | High voltage electrocution |
+| **接地抵抗（アース）**| せっちていこう | *secchi teikō* [4] | Earth grounding electrode rod ohm resistance | Pengukuran hambatan pentanahan pembumian | Lightning / Fault hazard |
+
+- **High-Stakes Utility Directives:**
+  - *「検電器当てろ！まだ活線だ！触るな！」* (*Kendenki atero! Mada kassen da! Sawaru na!* — Check with voltage tester! Line is still live! Do not touch!)
+  - *「冷媒バルブ急激に開けるな！凍傷になるぞ！」* (*Reibai barubu kyūgeki ni akeruna! Tōshō ni naru zo!* — Do not open refrigerant valve abruptly! Frostbite hazard!)
+
+---
+
+#### 4.1.4 Five Gemba K3 Emergency Disaster Simulations (現場K3災害緊急シミュレーション)
+Sesuai standar penanganan bencana industri darurat MHLW dan kurikulum keselamatan **JAC (2024 [VS-41])**, setiap pekerja konstruksi wajib menguasai 5 skenario kedaruratan berikut:
+
+##### [SIMULASI A] Kejatuhan dari Perancah Ketinggian (*Ashiba Tsuiraku Jiko*)
+- **Skenario Lapangan:** Rekan pekerja di lantai 4 perancah tergelincir dari papan pijakan (*ashiba-ita*) karena tali pengait tidak terpasang; korban tergantung lemas pada jaring keselamatan (*anzen net*) atau jatuh ke dek bawah.
+- **Teriakan Darurat Spontan (*Kansei Directive*):**  
+  *「墜落発生！4工区足場！作業止めろ！全員手を止めろ！」*  
+  (*Tsuiraku hassei! Yon-kōku ashiba! Sagyō tomero! Zen'in te o tomero!* — Fall from height! Scaffold block 4! Halt all operations!)
+- **Tindakan Kritis 10 Detik Pertama:**  
+  1. Hentikan seluruh derek crane dan peralatan di sekitar agar tidak ada material jatuh susulan.  
+  2. Jangan memindahkan korban bila dicurigai patah tulang leher/punggung tanpa petugas medis.  
+  3. Kunci area bawah perancah (*shin'nyū kinshi*).
+- **Laporan SBAR ke Pengawas (*Kantoku / Shokuchō*):**  
+  - **S (Situation):** *「現場監督、4工区の足場から作業員1名が約4メートル墜落しました！」*
+  - **B (Background):** *「クサビの点検作業中に足を滑らせ、2層目の足場板上に倒れています！」*
+  - **A (Assessment):** *「意識はありますが、腰を強打して動けません。右腕から出血しています！」*
+  - **R (Recommendation):** *「直ちに119番通報で救急車を要請してください！担架と救急箱を持ってきてください！」*
+- **Mitigasi Budaya L1:** Mengikis rasa sungkan (*enryo*) pekerja Indonesia yang ragu meneriaki rekan senior saat melihat pengait harness belum dipasang (*nichō-gake*).
+
+##### [SIMULASI B] Longsor Dinding Galian Parit (*Kussaku Dodome Hōkai / Ikomare*)
+- **Skenario Lapangan:** Saat memasang pipa drainase di parit sedalam 3 meter, dinding tanah berpasir tiba-tiba runtuh menimbun separuh badan pekerja karena turap (*dodome*) belum terkunci sempurna.
+- **Teriakan Darurat Spontan (*Kansei Directive*):**  
+  *「山崩れだ！生き埋め発生！スコップ持って集まれ！バックホウ止めろ！」*  
+  (*Yamakuzure da! Ikiume hassei! Sukoppu motte atsumare! Bakku-hō tomero!* — Trench cave-in! Worker buried! Bring shovels and assemble! Stop excavator!)
+- **Tindakan Kritis 10 Detik Pertama:**  
+  1. Matikan mesin ekskavator seketika agar getarannya tidak memicu longsoran sekunder.  
+  2. DILARANG menggunakan alat berat untuk menggali korban (gunakan sekop tangan secara hati-hati di sekitar dada/kepala).  
+  3. Bebaskan saluran pernapasan korban terlebih dahulu.
+- **Laporan SBAR ke Pengawas:**  
+  - **S:** *「職長！B工区の配管溝で土留めが崩壊し、作業員が腰まで生き埋めになりました！」*
+  - **B:** *「雨上がりの掘削作業中、法面が突然滑り落ちました！」*
+  - **A:** *「呼吸は確保できていますが、土圧で胸が圧迫されており二次崩壊の危険があります！」*
+  - **R:** *「二次崩壊防止用の矢板を至急打ち込んでください！救急隊のレスキューを要請願います！」*
+
+##### [SIMULASI C] Sengatan Arus Listrik Rusak (*Kanden Jiko*)
+- **Skenario Lapangan:** Pekerja memegang bor listrik genggam di area basah; kabel terkelupas menyebabkan sengatan listrik tegangan 200V; korban kejang kaku dan tidak bisa melepaskan kabel dari tangannya.
+- **Teriakan Darurat Spontan (*Kansei Directive*):**  
+  *「感電だ！触るな！触ると巻き込まれるぞ！ブレーカーを落とせ！」*  
+  (*Kanden da! Sawaru na! Sawaru to makikomareru zo! Burēkā o ototse!* — Electric shock! Don't touch him or you'll be shocked too! Trip the circuit breaker!)
+- **Tindakan Kritis 10 Detik Pertama:**  
+  1. DILARANG MENYENTUH BADAN KORBAN DENGAN TANGAN TELANJANG.  
+  2. Lari ke kotak panel distribusi (*bunbanchi*) dan matikan tuas sakelar utama (*shudengen* / ELCB).  
+  3. Jika panel jauh, gunakan kayu kering atau pipa PVC non-konduktif untuk menjatuhkan kabel dari tangan korban.
+- **Laporan SBAR ke Pengawas:**  
+  - **S:** *「仮設電気室前で作業員が水中ポンプの漏電により感電しました！」*
+  - **B:** *「雨水排水のポンプ設置作業中、被覆破れのコードに触れました！」*
+  - **A:** *「ブレーカーは遮断済みですが、現在心肺停止状態で呼吸がありません！」*
+  - **R:** *「救急車の出動要請と同時に、現場事務所のAEDを今すぐ持ってきてください！」*
+
+##### [SIMULASI D] Beban Crane Gantung Jatuh (*Tsurini Rakka / Tamakake Hazure*)
+- **Skenario Lapangan:** Ikatan sling kawat (*wire rope*) pada seikat besi beton ulir tergelincir saat diangkat crawler crane pada ketinggian 15 meter; ikatan lepas dan batangan besi meluncur jatuh ke area kerja.
+- **Teriakan Darurat Spontan (*Kansei Directive*):**  
+  *「頭上注意！鉄筋落下！伏せろ！逃げろ！」*  
+  (*Zujō chūi! Tekkin rakka! Fusero! Nigero!* — DANGER OVERHEAD! Falling rebar! Hit the ground! RUN!)
+- **Tindakan Kritis 10 Detik Pertama:**  
+  1. Teriakan sekeras mungkin tanpa membuang waktu menunjuk-nunjuk.  
+  2. Menjauh dari lintasan ayunan beban crane menuju tempat bertenda baja pelindung (*asagao*).  
+  3. Pastikan tidak ada orang yang tertimpa di tumpukan material.
+- **Laporan SBAR ke Pengawas:**  
+  - **S:** *「クレーン吊り荷の玉掛けワイヤーが切れ、鉄筋が地上ヤードに散乱・落下しました！」*
+  - **B:** *「3階スラブへの荷揚げ作業中、偏荷重によりワイヤーが滑り抜けました！」*
+  - **A:** *「作業員は退避しましたが、1名が跳ねた鉄筋に足を挟まれて骨折の疑いがあります！」*
+  - **R:** *「クレーン作業を全ライン凍結し、玉掛け器具の全数点検を行ってください！」*
+
+##### [SIMULASI E] Asfiksia / Kekurangan Oksigen di Ruang Terbatas Terowongan (*Sanso Ketsubō / Manhōru*)
+- **Skenario Lapangan:** Pekerja masuk ke gorong-gorong bawah tanah (*manhole*) sedalam 5 meter yang tertutup rapat berhari-hari; gas hidrogen sulfida terkumpul dan kadar oksigen di bawah 16%; pekerja langsung pingsan di dasar lubang.
+- **Teriakan Darurat Spontan (*Kansei Directive*):**  
+  *「酸欠だ！飛び込むな！そのまま入ると死ぬぞ！送風機回せ！」*  
+  (*Sanketsu da! Tobikomuna! Sonomama hairu to shinu zo! Sōfūki mawase!* — Oxygen deficiency! DO NOT JUMP IN! Entering raw is suicide! Turn on forced ventilation fan!)
+- **Tindakan Kritis 10 Detik Pertama:**  
+  1. DILARANG KERAS MELOMPAT MASUK MENOLONG TANPA PERALATAN MANDIRI (penyebab utama 70% kematian ganda insiden ruang terbatas!).  
+  2. Turunkan selang blower ventilasi paksa (*sōfūki*) ke dasar lubang dengan volume maksimal.  
+  3. Pasang tripod penolong dan kenakan masker respirator bertekanan oksigen (*kūki kokyūki*).
+- **Laporan SBAR ke Pengawas:**  
+  - **S:** *「マンホール地下ピット内で作業員が酸欠により意識を失い倒れています！」*
+  - **B:** *「事前の酸素濃度測定を怠り、単独でピット内に進入しました！」*
+  - **A:** *「濃度計の警報が鳴り響いており（酸素濃度14%）、自力脱出不可能です！」*
+  - **R:** *「空気呼吸器を装備した救助班の出動と、直ちに119番レスキュー隊を要請してください！」*
+
+---
 
 ---
 
