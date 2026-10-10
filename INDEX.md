@@ -1,7 +1,7 @@
 # NUGGET NIHONGO — RESEARCH LIBRARY INDEX
-**Version:** v25 (Atomized Pain Onomatopoeia, Industrial Rousai Escalation, & AI Term Scrubbing: 535+ Verified DOIs, 100% Accounted For)  
-**Total Unique Citations:** 789+  
-**Verified DOIs:** 535+ (100% accounted for, zero pending flags across all 23 section files)
+**Version:** v28 (Klaster IV Consumer & Logistics: Sektor 14 HACCP, Sektor 15 Omotenashi, Sektor 17 Transportasi Truk/Taksi/Bus: 539+ Verified DOIs, 100% Accounted For)  
+**Total Unique Citations:** 799+  
+**Verified DOIs:** 539+ (100% accounted for, zero pending flags across all 24 section files)
 
 ---
 
@@ -42,7 +42,7 @@ nugget-nihongo-research/
 │   │   │
 │   │   ├── vocational/                        ← Workplace SLA & Discourse Corpus (Jalur B)
 │   │   │   ├── EPA-KAIGO-SSW-WORKPLACE-CORPUS-v1.md ← 42-item pain onomatopoeia matrix, 4-tier Rousai escalation, eldercare speech shifts
-│   │   │   ├── ALL-SECTOR-SSW-TAXONOMY-CORPUS-v1.md ← 18-sector Tokutei Ginou master taxonomy, JAIM 17 manufacturing divisions & machine panel commands, JAC 3 construction divisions & 5 K3 disaster simulations
+│   │   │   ├── ALL-SECTOR-SSW-TAXONOMY-CORPUS-v1.md ← 18-sector Tokutei Ginou master taxonomy, JAIM 17 manufacturing divisions, JAC 3 construction divisions, Klaster IV (HACCP, Omotenashi 7-daigo, Transportasi 3 segmen & tenko), dan 12 simulasi darurat K3 gemba
 │   │   │   └── PROMETRIC-SSW-EXAM-SPECIFICATION-CORPUS-v1.md ← Prometric CBT test matrix, 17 JAIM sub-divisions, JAVADA Business Career Kentei, & non-Prometric bodies
 │   │   │
 │   │   └── synthesis/                         ← Pedagogical synthesis specifications
@@ -114,7 +114,7 @@ nugget-nihongo-research/
 |---|---|---|---|
 | **L1 Diagnostic Inventory (Jalur A)** | `corpus/sections/contrastive/INDONESIAN-L1-DIAGNOSTIC-INVENTORY-v1.md` | 150-item micro-diagnostic contrastive matrix across 6 interference domains with back-card gap prescriptions | ✅ Complete |
 | **Vocational SLA Corpus (Jalur B)** | `corpus/sections/vocational/EPA-KAIGO-SSW-WORKPLACE-CORPUS-v1.md` | Eldercare speech level shifts, 42-item pain onomatopoeia matrix, 4-tier Rousai escalation, gemba nihongo safety, and industrial discourse | ✅ Complete |
-| **All-Sector SSW Taxonomy** | `corpus/sections/vocational/ALL-SECTOR-SSW-TAXONOMY-CORPUS-v1.md` | Complete 18-sector Specified Skilled Worker operational taxonomy, JAIM 17 manufacturing divisions & machine panel commands, JAC 3 construction divisions, and 5 K3 gemba disaster simulations | ✅ Complete |
+| **All-Sector SSW Taxonomy** | `corpus/sections/vocational/ALL-SECTOR-SSW-TAXONOMY-CORPUS-v1.md` | Complete 18-sector Specified Skilled Worker operational taxonomy, JAIM 17 manufacturing divisions, JAC 3 construction divisions, Klaster IV (HACCP, Omotenashi 7-daigo, Transportasi 3 segmen & tenko), dan 12 simulasi darurat K3 gemba | ✅ Complete |
 | **Prometric SSW CBT Exam Spec** | `corpus/sections/vocational/PROMETRIC-SSW-EXAM-SPECIFICATION-CORPUS-v1.md` | Exhaustive Prometric CBT test codes, 17 JAIM manufacturing sub-divisions, JAVADA Business Career Kentei L3, JAC 3 divisions, & 4 visa pipelines | ✅ Complete |
 | **Micro-Session Spec (Jalur C)** | `blueprint/MICRO-SESSION-ALGORITHMIC-SPEC-v1.md` | 5-to-7 minute session formula, 6 production card archetypes (JSON schemas), and dual-track FSRS latency tuning | ✅ Complete |
 | **Level Ladder Specification** | `corpus/sections/synthesis/LEVEL-LADDER-SPEC-v1.md` | 5-level exit criteria ladder (N5 to N1) combining FSRS stability, Processability Theory stages, and vocabulary depth | ✅ Complete |
@@ -127,6 +127,7 @@ nugget-nihongo-research/
 
 | Version | Date | Key Milestones |
 |---|---|---|
+| **v28** | October 2026 | **Klaster IV Consumer & Logistics Expansion (Sektor 14 HACCP, Sektor 15 Omotenashi, Sektor 17 Transportasi Truk/Taksi/Bus):** Expanded `ALL-SECTOR-SSW-TAXONOMY-CORPUS-v1.md` with Section 5.1 (7 Food Manufacturing Sub-Lines, HACCP 7 Principles & CCP-1/2/3 limits, 8 Statutory Allergens, 3 Food Safety Gemba Simulations), Section 5.2 (Front-of-House *Sekkyaku 7-daigo*, 4-Stage *Kureemu Taiou* de-escalation, 4-Color Cutting Boards, 3 Restaurant Crisis Simulations), and Section 5.4 (3 Transport Segments, statutory Tenko zero-alcohol 0.000 mg/L threshold, ratchet cargo lashing, 4 highway/road crisis simulations); integrated empirical study Wijayanti & Septipani (2025) `[VS-42]` (DOI: `10.59672/stilistika.v13i2.4561`) and statutory standards OTAFF (2024) `[VS-43]`, MHLW/MAFF (2021) `[VS-44]`, MLIT (2024) `[VS-45]`, and NASVA (2023) `[VS-46]`; updated master bibliography and tracker to 799+ unique citations and 539+ verified DOIs. |
 | **v27** | October 2026 | **JAIM 17 Manufacturing Divisions & JAC 3 Construction Divisions with 5 K3 Disaster Simulations:** Expanded `ALL-SECTOR-SSW-TAXONOMY-CORPUS-v1.md` with Section 3.0 integrating the METI/JAIM 17 operational divisions, 16 machine control panel (*sōsa-ban*) operational keywords, 4-step pointing-and-calling (*shiteki koshō*) protocol, and high-noise gemba emergency shouting; expanded Section 4.1 into the 3 consolidated JAC construction divisions (土木, 建築, ライフライン・設備) with 30 Layer 2 technical terms and 5 full-scale K3 disaster simulations (scaffolding fall, trench collapse, electrocution, dropped crane load, confined space asphyxiation) with SBAR reporting; integrated statutory standards JAIM (2024) `[VS-40]` and JAC (2024) `[VS-41]`; updated master bibliography and tracker to 794+ unique citations. |
 | **v26** | October 2026 | **Indonesian L1 Diagnostic Domain VI Expansion (Discourse Connectors, Modality, Shuujoshi, & Conditionals):** Expanded `INDONESIAN-L1-DIAGNOSTIC-INVENTORY-v1.md` from 100 to 150 micro-diagnostic items across 6 catastrophic interference domains, incorporating discourse connectors (#101–#115), epistemic modality (#116–#130), sentence-final particles & territory of information (#131–#140), and conditional constraints (#141–#150); integrated empirical citations Wahyuningtias et al. (2018) `[EA-31]`, Gusti (2022) `[EA-32]`, and Widodo & Sutedi (2020) `[EA-33]`; updated master bibliography and DOI tracker to 792+ unique citations and 538+ verified DOIs (100% accounted for). |
 | **v25** | October 2026 | **Atomized Pain Onomatopoeia & Industrial Rousai Escalation:** Expanded `EPA-KAIGO-SSW-WORKPLACE-CORPUS-v1.md` to 42-item atomized pain onomatopoeia matrix across 7 physiological trauma clusters and integrated 4-tier Industrial Rousai accident escalation protocol; scrubbed all AI agent buzzwords across repository; verified citations `[VS-36]`–`[VS-39]`. |

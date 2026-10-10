@@ -1,6 +1,6 @@
 # NUGGET NIHONGO — DOI VERIFICATION TRACKER
-**Audited & Verified:** 20 April 2026 | **Curated by:** Research Review Directorate | **Status:** ✅ Completed — 100% Accounted For (Corpus v26)
-**Total verified DOIs in corpus:** 538+ verified DOIs across all 15 sections & clusters (546 unique verified DOIs across markdown repository)
+**Audited & Verified:** 20 April 2026 | **Curated by:** Research Review Directorate | **Status:** ✅ Completed — 100% Accounted For (Corpus v28)
+**Total verified DOIs in corpus:** 539+ verified DOIs across all 15 sections & clusters (547 unique verified DOIs across markdown repository)
 
 ---
 
@@ -292,6 +292,12 @@ All 40 entries from `SECTION13-INDIVIDUAL-DIFFS.md` have been fully verified via
 | VS-39 | JNIOSH (2020) Technical Report No.48 | Technical Report JNIOSH-TR-No.48, MHLW Japan | Official government safety standard | ❌ UNAVAILABLE (Official technical standard) |
 | VS-40 | JAIM (2024) Operational Guidelines (17 Divisions) | Statutory Operational Standard, METI & JAIM | Official statutory manufacturing standard | ❌ UNAVAILABLE (Official statutory standard) |
 | VS-41 | JAC (2024) Construction Safety Standards (3 Divisions) | Statutory Curriculum Standard, MLIT & JAC | Official statutory construction standard | ❌ UNAVAILABLE (Official statutory standard) |
+| VS-42 | Wijayanti & Septipani (2025) *Stilistika* 13(2) | `10.59672/stilistika.v13i2.4561` | Garuda / CrossRef HTTP 200 | ✅ CONFIRMED |
+| VS-43 | OTAFF (2024) Food Manufacturing & Restaurant Test Standards | Statutory Test Standard, MAFF & OTAFF | Official statutory test standard | ❌ UNAVAILABLE (Official statutory standard) |
+| VS-44 | MHLW & MAFF (2021) HACCP Implementation Manual | Statutory Guidelines, MHLW & MAFF | Official statutory hygiene manual | ❌ UNAVAILABLE (Official statutory standard) |
+| VS-45 | MLIT (2024) Automobile Transport SSW Operational Policy | Statutory Operational Standard, MLIT Japan | Official statutory transport standard | ❌ UNAVAILABLE (Official statutory standard) |
+| VS-46 | NASVA (2023) Commercial Driver Tenko & Safety Manual | Technical Manual, NASVA Japan | Official technical safety manual | ❌ UNAVAILABLE (Official technical standard) |
+
 
 
 

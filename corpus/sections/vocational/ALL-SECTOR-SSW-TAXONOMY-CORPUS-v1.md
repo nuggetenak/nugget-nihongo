@@ -644,50 +644,196 @@ Sesuai standar penanganan bencana industri darurat MHLW dan kurikulum keselamata
 ## 5. CLUSTER IV: CONSUMER SERVICES, FOOD & LOGISTICS
 
 ### 5.1 Sector 14: Food & Beverage Manufacturing (飲食料品製造業 - Inshokuryouhin)
-- **Supervising Authority:** Ministry of Agriculture, Forestry and Fisheries (MAFF).
-- **Target Situation Analysis (TSA):** Conveyor meat cutting/deboning, retort pouch packaging, bread automated kneading/baking, liquid beverage bottling, chemical CIP clean-in-place sanitization, allergen changeover, and HACCP monitoring.
+- **Supervising Authority:** Ministry of Agriculture, Forestry and Fisheries (MAFF) & Organization for Food Safety and Quality (OTAFF).
+- **Statutory Standards & CBT Matrix:** OTAFF 2024 [VS-43]; MHLW & MAFF 2021 [VS-44]. Prometric CBT Test Code: `INSHOKU-SSW1` (60 min, 30 practical/safety questions; 65% pass mark).
+- **Target Situation Analysis (TSA) across 7 Statutory Sub-Lines:**
+  1. **惣菜製造 (*Sōzai Seizō* - Ready-to-Eat & Delicatessen):** High-speed bento line assembly, tempura/karaage fryer lines, chilled pasta/salad weighing, vacuum packaging, and cold-chain staging (< 10°C).
+  2. **水産加工 (*Suisan Kakō* - Marine Products Processing):** Round fish scaling, automatic/manual deboning (*sanmai oroshi*), squid gutting, fish cake surimi kneading, retort fish boiling, and blast freezing.
+  3. **食肉加工 (*Shokuniku Kakō* - Meat Products Processing):** Carcass splitting, deboning knives, tenderizing, sausage stuffing/linking, ham brine injection, smoking chambers, and clean slicing.
+  4. **製パン・製菓 (*Seipan / Seika* - Bakery & Confectionery):** Bulk flour pneumatic transfer, high-capacity spiral kneading mixers, dough dividing/rounding (*bunkatsu / marume*), fermentation proofers (*hoirō*), tunnel ovens, and metal detection.
+  5. **清涼飲料水・酒類 (*Seiryō Inryōsui / Shurui* - Soft Drinks & Brewing):** Stainless blending tanks, ultra-clean filtration, rotary aseptic bottle filling, automated capping, and Clean-In-Place (CIP) chemical wash cycles.
+  6. **調味料・動植物油脂 (*Chōmiryō / Yushi* - Seasonings & Edible Oils):** Soy sauce/miso fermentation vats, seasoning liquid blending, edible oil pressing/filtering, high-temperature filling, and aseptic pouch sealing.
+  7. **レトルト・缶詰・冷凍食品 (*Retoruto / Kanzume / Reitō Shokuhin*):** Hermetic retort pouch heat sealing, autoclave high-pressure steam sterilization (*katsuatsu sakkin*), canned seam roll crimping, and IQF spiral freezing (-35°C).
+
+#### HACCP 7 Principles & Critical Control Point (CCP) Engineering Master Matrix
+All Indonesian SSW candidates must internalize statutory HACCP standards institutionalized across all Japanese food processing facilities (MHLW & MAFF 2021 [VS-44]):
+
+| CCP Step | Critical Limit (CL) / Statutory Parameter | Monitoring Method & Frequency | Corrective Action (*Kaizen / Kakuri*) | Indonesian L1 Failure Mode & Risk |
+|---|---|---|---|---|
+| **CCP-1: Pemanasan Inti (*Chūshin Ondo*)** | $\ge 75^\circ\text{C}$ selama $\ge 1$ menit (produk daging/unggas); $\ge 85^\circ\text{C}$–$90^\circ\text{C}$ selama $\ge 90$ detik (bivalvia/norovirus risk). | Termometer jarum digital tusuk (*chūshin ondo-kei*) pada setiap batch/30 menit. | Teruskan pemanasan ulang (*sai-kanetsu*) hingga mencapai limit; jika gagal, tolak/musnahkan batch (*haiki*). | Menilai matang dari warna luar (*kira-kira*); risiko keracunan spora *Salmonella* / *Campylobacter*. |
+| **CCP-2: Deteksi Benda Asing (*Ibutsu Kenshutsu*)** | Uji lolos test piece: Ferrous (Fe) $\phi 1.0\,\text{mm}$, Stainless (SUS304) $\phi 1.5\,\text{mm}$. Toleransi = 0 tembus. | Pengecekan kalibrasi kupon uji setiap 60 menit dan setiap pergantian shift/lot. | Segera tekan tombol darurat garis (*rain teishi*); karantina produk 30 menit ke belakang (*kakuri*); investigasi patahan mesin. | Sungkan menghentikan konveyor (*takut dimarahi supervisor*); risiko fatal retur produk massal & luka konsumen. |
+| **CCP-3: Penurunan Suhu Cepat (*Kyūsoku Reikyaku*)** | Melewati zona bahaya $60^\circ\text{C} \rightarrow 10^\circ\text{C}$ dalam waktu $< 120$ menit. | Pengecekan sensor suhu *chiller* / *blast freezer* kontinu per 15 menit. | Pindahkan ke ruang pendingin cadangan (*sub-chiller*); kecilkan ketebalan tumpukan pan baki makanan. | Menumpuk baki makanan terlalu tebal sehingga tengahnya tetap hangat; spora *Clostridium perfringens* berkembang biak. |
+| **Manajemen 8 Alergen Wajib (*Tokutei Genzairyō*)** | 0% kontaminasi silang 8 bahan baku wajib: えび (udang), かに (kepiting), くるみ (walnut), 小麦 (gandum), そば (soba), 卵 (telur), 乳 (susu), 落花生 (kacang tanah). | Inspeksi swab ATP cepat allergen residu sebelum memulai lot non-alergen; wadah warna terpisah. | Cuci ulang total jalur (*teichi senjou / CIP*); buang batch jika terbukti tercemar silang (*kōsa osen*). | Menyamakan lap/spatula antar wadah bumbu tanpa disinfeksi; risiko syok anafilaksis konsumen hingga kematian. |
 
 #### Atomized Technical Lexicon (Layer 2)
 | Kanji / Term | Kana Reading | Romaji | Technical Definition | Indonesian Gloss | High-Stakes Risk Category |
 |---|---|---|---|---|---|
-| アレルゲン交差汚染 | あれるげんこうさおせん | *arerugen kousa osen* | Allergen cross-contamination on shared lines | Kontaminasi silang alergen makanan | Severe consumer anaphylaxis |
-| 異物混入検知 | いぶつこんにゅうけんち | *ibutsu konnyuu kenchi* | Metal detector & X-ray machine rejection check | Deteksi benda asing (logam/plastik/kaca) | Product recall crisis |
-| 賞味期限印字 | しょうみきげんいんじ | *shoumikigen inji* | Inkjet expiration best-before date print verification | Pengecekan cetakan tanggal kedaluwarsa | Regulatory mislabeling |
-| 定置洗浄（CIP） | ていちせんじょう | *teichi senjou* | Automated clean-in-place chemical pipe washing | Pencucian pipa kimia otomatis tanpa bongkar | Caustic acid chemical burn |
-| 中心温度測定 | ちゅうしんおんどそくてい | *chuushin ondo sokutei* | Core probe cooking temperature (e.g. 75°C for 1 min) | Pengukuran suhu inti pemanasan makanan | Bacterial food poisoning |
-| 粘着ローラー掛け | ねんちゃくろーらーがけ | *nenchaku rooraa gake* | Sticky lint roller hair removal before hygiene airlock | Pembersihan rambut dengan rol perekat | Hair contamination defect |
-| 手洗いマニュアル | てあらいまにゅある | *tearai manyuaru* | 2-stage surgical-grade handwashing protocol | Prosedur cuci tangan steril 2 tahap | Microbial spread |
-| 金属検出機テストピース | きんぞくけんしゅつき | *kinzoku kenshutsuki* | Ferrous/Non-ferrous test coupon calibration check | Uji kepekaan detektor logam potongan sampel | False-negative bypass |
-| 真空包装シール | しんくうほうそうしーる | *shinkuu housou shiiru* | Thermal heat-sealing of hermetic vacuum food pouches | Pengepresan panas kemasan kedap udara | Seal leakage spoilage |
-| 冷凍解凍管理 | れいとうかいとうかんり | *reitou kaitou kanri* | Controlled chilled thawing of frozen meat blocks | Manajemen suhu pelelehan daging beku | Bacterial bloom hazard |
+| アレルゲン交差汚染 | あれるげんこうさおせん | *arerugen kōsa osen* | Allergen cross-contamination on shared processing lines | Kontaminasi silang alergen makanan pada lini produksi bersama | Severe consumer anaphylaxis |
+| 異物混入検知 | いぶつこんにゅうけんち | *ibutsu konnyū kenchi* | Metal detector & X-ray machine rejection check | Deteksi benda asing (logam, keping plastik, jarum patah) | National product recall crisis |
+| 賞味期限印字 | しょうみきげんいんじ | *shōmikigen inji* | Inkjet expiration best-before date print verification | Pengecekan cetakan tanggal kedaluwarsa & kode lot | Regulatory mislabeling sanction |
+| 定置洗浄（CIP） | ていちせんじょう | *teichi senjō* | Automated clean-in-place chemical pipe washing | Pencucian pipa kimia sirkulasi otomatis tanpa bongkar | Caustic acid chemical burn |
+| 中心温度測定 | ちゅうしんおんどそくてい | *chūshin ondo sokutei* | Core probe cooking temperature (e.g. 75°C for 1 min) | Pengukuran suhu inti pemanasan makanan dengan termometer jarum | Pathogenic bacterial survival |
+| 粘着ローラー掛け | ねんちゃくろーらーがけ | *nenchaku rōrā gake* | Sticky lint roller hair removal before hygiene airlock | Pembersihan rambut/debu pakaian dengan rol perekat | Physical hair contamination defect |
+| 手洗いマニュアル | てあらいまにゅある | *tearai manyuaru* | 2-stage surgical-grade handwashing protocol with foam | Prosedur cuci tangan steril 2 tahap dengan sabun busa & kuku | Microbial spread & cross-infection |
+| 金属検出機テストピース | きんぞくけんしゅつき | *kinzoku kenshutsuki* | Ferrous/Non-ferrous test coupon calibration check | Uji kepekaan detektor logam potongan sampel uji berkala | False-negative sensor bypass |
+| 真空包装シール | しんくうほうそうしーる | *shinkū hōsō shīru* | Thermal heat-sealing of hermetic vacuum food pouches | Pengepresan panas kemasan kedap udara anti-kebocoran | Seal leakage anaerobic spoilage |
+| 急速冷却管理 | きゅうそくれいきゃく | *kyūsoku reikyaku* | Rapid chilled cooling of hot foods to suppress spores | Manajemen penurunan suhu cepat untuk mencegah spora bakteri | Bacterial bloom (*C. perfringens*) |
+| 次亜塩素酸ナトリウム | じあえんそさんなとりうむ | *jiaensosan natoriumu* | Sodium hypochlorite disinfectant solution (200-1000 ppm) | Larutan klorin natrium hipoklorit untuk sanitasi sayur & muntahan | Chemical toxicity / viral persistence |
+| 検食保管 | けんしょくほかん | *kenshoku hokan* | Retaining 50g frozen food samples per lot for 2 weeks | Penyimpanan sampel makanan uji 50g beku selama minimal 2 minggu | Food poisoning liability investigation |
+| エアシャワー通過 | えあしゃわーつうか | *eashawā tsūka* | 15-second high-velocity air shower passage before entry | Melintasi ruang air shower 15 detik sebelum masuk ruang bersih | Dust particle ingress into cleanroom |
+| 落じん菌・落下細菌 | らくじんきん | *rakujinkin* | Settle plate airborne bacterial monitoring in cleanroom | Uji cawan mikrobiologi bakteri jatuh di udara pabrik | Cleanroom air quality failure |
+| 衛生キャップ・インナー | えいせいきゃっぷ | *eisei kyappu* | Hair containment net and double hood sanitary headgear | Topi jaring penutup rambut ganda penahan rontok | Foreign matter hair contamination |
 
-#### High-Stakes Food Safety Directives
-- 「ライン停止！金属検出機がブザー鳴動！異物混入品を隔離しろ！」 (*Rain teishi! Kinzoku kenshutsuki ga buzaa meidou! Ibutsu konnyuuhin o kakuri shiro!* — Stop the line! Metal detector alarmed! Quarantine the defective item!)
-- 「手袋の破損はないか？指先確認ヨシ！」 (*Tebukuro no hason wa nai ka? Yubisaki kakunin yoshi!* — Any tear in rubber gloves? Fingertips verified OK!)
+#### 3 Full-Scale Gemba Food Safety Incident Simulations (SBAR Protocol & 10-Second Action)
+
+##### Simulasi A: Kebocoran Seal Kantong Retort & Kontaminasi Pembusukan (*Retoruto Pōchi Shiiru Furyō / Fuhai Jiko*)
+- **Konteks & Pemicu:** Saat mengeluarkan keranjang dari mesin autoclave (*retoruto-gama*), pekerja menemukan salah satu kemasan kari retort berkerut (*shiwa*) pada sambungan panas, cairan bumbu merembes keluar, menandakan kebocoran segel panas mikro (*pinhole leakage*).
+- **Aksi 10 Detik Pertama & Teriakan Akustik Gemba:**
+  1. Hentikan konveyor pengemasan sekunder seketika.
+  2. Teriakkan peringatan darurat dengan vokal lantang:
+     「シール不良発見！ライン止めろ！このバッチの出荷を直ちに止めろ！」 (*Shīru furyō hakken! Rain tomero! Kono batchi no shukka o tadachi ni tomero!* — Seal defect detected! Stop the line! Halt shipment of this batch immediately!)
+  3. Beri tanda visual merah (*kakuri fuda*) pada seluruh keranjang retort batch tersebut.
+- **Panggilan Pelaporan SBAR ke Manajer QA (*Hinshitsu Kanri Buchō*):**
+  - **S (Situation):** 「品質管理の田中部長、成形ラインAのイルファンです。レトルト釜3号機から排出したカレーパウチにシール不良と液漏れを発見しました。」
+  - **B (Background):** 「ロット番号2610-B、殺菌温度121度で30分間の処理を完了したばかりのバッチです。シーラーの圧着部に焦げ付きの噛み込みがありました。」
+  - **A (Assessment):** 「このバッチ全量1,200個にピンホールによる嫌気性細菌の侵入および腐敗のリスクがあります。後工程への流出は阻止しています。」
+  - **R (Recommendation):** 「ロット2610-B全数の隔離検査と、ヒートシーラーのテフロンテープ交換および温度センサーの校正確認をお願いいたします。」
+- **Mitigasi Hambatan Budaya L1 Indonesia:**
+  - *Mitigasi Sungkan:* Pekerja Indonesia kerap merasa bersalah (*takut disalahkan atas target produksi yang macet*) jika menghentikan jalur. SOP MAFF/OTAFF mewajibkan prinsip: "Lebih baik menghentikan jalur 1 jam daripada melakukan *recall* 100.000 produk". Tindakan menekan tombol *rain teishi* dipuji sebagai kepatuhan K3 mutlak.
+
+##### Simulasi B: Alarm Detektor Logam & Benda Asing Jarum/Patahan Pisau (*Kinzoku Kenshutsu-ki Buzaa / Ha-kobore Ibutsu Konnyū*)
+- **Konteks & Pemicu:** Pada konveyor pengemasan nugget daging ayam, detektor logam berbunyi keras (*buzzer*) dan lengan pendorong hidrolik (*auto-rejector*) membuang kotak nomor 402. Operator pemotong daging di hulu melaporkan ujung pisau filet patah 3 mm.
+- **Aksi 10 Detik Pertama & Teriakan Akustik Gemba:**
+  1. Tekan tombol darurat konveyor (*rain teishi*).
+  2. Teriakkan instruksi darurat:
+     「金属反応！ライン停止！包丁の刃こぼれだ！直近30分の製品を全部ストップ！」 (*Kinzoku hannō! Rain teishi! Hōchō no ha-kobore da! Chokkin sanjuppun no seihin o zenbu sutoppu!*)
+  3. Karantina produk yang rejected dan 3 kardus sebelum serta sesudahnya.
+- **Panggilan Pelaporan SBAR ke Pengawas Jalur (*Shokuchō*):**
+  - **S (Situation):** 「鈴木リーダー、ライン2のブディです。金属検出機がFe 1.0mm以上の異物混入を検知して作動しました。解体工程で骨スキ包丁の刃先3ミリの欠損が確認されました。」
+  - **B (Background):** 「14時15分に通過した鶏モモ肉パックです。直前の14時00分のテストピース点検では正常に反応していました。」
+  - **A (Assessment):** 「刃先の金属片がパック内に混入した可能性が極めて高く、このまま流通すれば消費者の口腔内裂傷を引き起こします。」
+  - **R (Recommendation):** 「14時00分以降に製造したロット全数（約150パック）をX線異物検査機に再投入して金属片を特定し、全包丁の点検・研ぎ直しログを確認してください。」
+- **Mitigasi Hambatan Budaya L1 Indonesia:**
+  - *Mitigasi Menutup-nutupi:* Ketakutan L1 terhadap pemotongan gaji akibat merusak pisau harus dimitigasi. Laporan jujur atas *ha-kobore* seketika diapresiasi sebagai penyelamat reputasi perusahaan, sedangkan menyembunyikan pisau patah merupakan pelanggaran pidana UU Sanitasi Pangan (*Shokuhin Eisei Hō*).
+
+##### Simulasi C: Karyawan Muntah di Area Sanitasi / Wabah Norovirus (*Jūgyōin Ōto / Norouirusu Kinkyū Shōdoku*)
+- **Konteks & Pemicu:** Seorang pekerja mendadak muntah di lantai koridor depan ruang ganti (*kōishitsu*) sebelum pintu masuk ruang cuci tangan. Muntahan berpotensi mengandung aerosol Norovirus berdaya tular ekstrem.
+- **Aksi 10 Detik Pertama & Teriakan Akustik Gemba:**
+  1. Cegah siapa pun melangkahi atau menginjak muntahan.
+  2. Teriakkan perintah barikade:
+     「近づくな！足元を踏むな！ノロ感染の疑い！嘔吐物処理セットをすぐに持ってこい！」 (*Chikayoru na! Ashimoto o fumu na! Noro kansen no utagai! Ōtobutsu shori setto o sugu ni motte koi!*)
+  3. Ambil kit penanganan muntahan (*ōtobutsu shori kitto*): kenakan masker ganda, kacamata goggle, jubah plastik, dan sarung tangan ganda.
+- **Protokol Eksekusi Desinfeksi Sesuai Standar MHLW [VS-44]:**
+  - Tutup muntahan dengan kertas koran/tisu penyerap yang telah dibasahi larutan natrium hipoklorit 1.000 ppm (次亜塩素酸ナトリウム 0.1%).
+  - Seka dari arah luar ke dalam (*soto kara uchi e*) agar aerosol virus tidak menyebar. Masukkan seluruh bekas tisu ke kantong plastik ganda, ikat rapat, dan buang ke limbah medis berbahaya.
+  - Pelapisan lantai dalam radius 3 meter disinfeksi ulang dengan klorin 1.000 ppm selama 10 menit sebelum dibilas air bersih.
+  - Pekerja yang bersangkutan dilarang keras memasuki area produksi, dirujuk ke klinik untuk uji feses (*kensen / PCR Norovirus*), dan dipulangkan.
 
 ---
 
 ### 5.2 Sector 15: Food Service Industry / Restaurant (外食業 - Gaishokugyou)
-- **Supervising Authority:** Ministry of Agriculture, Forestry and Fisheries (MAFF).
-- **Target Situation Analysis (TSA):** Kitchen cook line mise-en-place, knife sanitation, deep fryer thermal safety, front-of-house table service, customer order reception (*chuumon tori*), cash register POS billing, and closing disinfection.
+- **Supervising Authority:** Ministry of Agriculture, Forestry and Fisheries (MAFF) & Organization for Food Safety and Quality (OTAFF).
+- **Statutory Standards & CBT Matrix:** OTAFF 2024 [VS-43]; MHLW & MAFF 2021 [VS-44]. Prometric CBT Test Code: `GAISHOKU-SSW1` (80 min, 45 questions across Customer Service, Cooking, and General Hygiene; 65% pass mark).
+- **Empirical Grounding:** 
+  - Wijayanti & Septipani (2025) [VS-42] `10.59672/stilistika.v13i2.4561` established that Indonesian learners in hospitality and restaurant internships exhibit acute communicative anxiety during order reception, price statements, menu explanations, and kitchen tool descriptions, identifying explicit *omotenashi* cultural training and conversational formulas as essential preconditions.
+  - Sari & Kastuti (2023) [VS-34] demonstrated that *keigo* mastery directly mitigates workplace supervisory friction and customer misunderstandings.
+
+#### Operational Dual-Track Architecture: Front-of-House (Hall / 接客) & Kitchen (調理)
+
+##### A. Front-of-House: The 7 Sacred Keigo Formulas of Japanese Hospitality (*Sekkyaku 7-Daigo* / 接客7大用語)
+Front-of-house staff must automate the 7 standardized customer interaction formulas with exact physical bow posture (*ojigi*) and situational triggers (Wijayanti & Septipani 2025 [VS-42]):
+
+| No | Frase Standar (*Sekkyaku 7-Daigo*) | Sudut Bungkuk (*Ojigi*) | Pemicu Situasional (*Bamen*) | Larangan Pragmatis / Jebakan L1 Indonesia |
+|---|---|---|---|---|
+| 1 | **「いらっしゃいませ！」** (*Irasshaimase!*) | 30° (*Keirei*) | Tamu membuka pintu masuk dan melangkah ke area lobi. | Dilarang menyapa santai seperti "Konnichiwa" atau "Halo"; suara harus ramah dan bersemangat. |
+| 2 | **「かしこまりました」** (*Kashikomarimashita*) | 15° (*Eshaku*) | Menerima pesanan menu atau permintaan khusus tamu. | Dilarang keras menjawab *Wakarimashita* atau *Ryōkai desu* (bahasa militer/rekan kerja; tidak sopan untuk tamu). |
+| 3 | **「少々お待ちくださいませ」** (*Shōshō omachi kudasaimase*) | 15° (*Eshaku*) | Hendak mengambil barang, mencetak bon, atau mengonfirmasi ke dapur. | Dilarang menggunakan *Chotto matte kudasai* (kasar/tidak profesional untuk tamu). |
+| 4 | **「大変お待たせいたしました」** (*Taihen omatase itashimashita*) | 15° (*Eshaku*) | Mengantarkan hidangan ke meja atau kembali ke hadapan tamu. | Wajib diucapkan meskipun tamu hanya menunggu beberapa saat; mengakui waktu berharga tamu. |
+| 5 | **「恐れ入りますが...」** (*Osoreirimasu ga...*) | 15° (*Eshaku*) | Kata bantal (*kushon kotoba*) saat meminta tamu menunggu meja, mengisi buku tamu, atau pindah meja. | Mencegah kesan memerintah (*Sumimasen ga...* terlalu tumpul dalam standar omotenashi). |
+| 6 | **「申し訳ございません」** (*Mōshiwake gozaimasen*) | 45° (*Saikeirei*) | Terjadi pesanan terlambat, piring kotor tertukar, atau menghadapi keluhan (*kureemu*). | Dilarang keras meminta maaf dengan *Gomennasai* atau *Sumimasen*; wajib bentuk formal terhormat. |
+| 7 | **「ありがとうございました。またお越しくださいませ」** (*Arigatō gozaimashita. Mata okoshi kudasaimase*) | 45° (*Saikeirei*) | Tamu selesai membayar di kasir dan melangkah keluar pintu restoran. | Mengucapkan kalimat pertama saat tamu berdiri, kalimat kedua sambil membungkuk dalam di pintu. |
+
+##### B. Customer Complaint Handling Protocol (*Kureemu Taiou* / クレーム対応) & Indonesian L1 Mitigation
+Indonesian learners frequently experience paralysis, nervous smiles (*senyum canggung*), or defensive justification (*mencari alasan/alibi*) when confronted by agitated Japanese customers. The platform enforces the **4-Stage De-escalation Sequence**:
+1. **Stage 1 — Shazetsu (Permohonan Maaf Awal atas Ketidaknyamanan):**
+   - Meminta maaf atas ketidaknyamanan perasaan tamu *tanpa langsung mengakui kesalahan hukum sepihak sebelum fakta jelas*.
+   - Script: 「お客様にご不快な思いをおかけしてしまい、大変申し訳ございません。」 (*Okyaku-sama ni gofukai na omoi o okake shite shimai, taihen mōshiwake gozaimasen.*)
+2. **Stage 2 — Keichō & Memo (Mendengarkan Aktif & Mencatat):**
+   - Menatap mata tamu dengan empati, mengangguk perlahan, dilarang menyela kalimat tamu, dan mencatat butir keluhan.
+   - Script: 「ご指摘ありがとうございます。詳しくお聞かせいただけますでしょうか。」 (*Goshiteki arigatō gozaimasu. Kuwashiku okikase itadakemasu deshou ka.*)
+3. **Stage 3 — Jijitsu Kakunin & Daitai-an (Verifikasi Fakta & Solusi Pengganti Segera):**
+   - Mengecek fisik hidangan atau bon, dan menawarkan hidangan baru yang segar seketika atau pengembalian dana.
+   - Script: 「すぐに新しい出来立てのお料理とお取り替えいたします。他にお気づきの点はございませんでしょうか。」
+4. **Stage 4 — Hōrenso Escalation (Eskalasi ke Manajer Restoran):**
+   - Jika tamu tetap menunjukkan kemarahan tinggi, segera alihkan ke *tenchō*.
+   - Script: 「責任者の店長をお呼びしてまいりますので、恐れ入りますが、少々お待ちいただけますでしょうか。」
+
+##### C. Kitchen Hygiene & Color-Coded Separation (*Manaita Irowake Kanri*)
+- **4-Color Cutting Board System:**
+  - 🔴 **Merah (Aka):** Daging merah mentah (sapi, babi, domba) — resiko *E. coli* O157.
+  - 🔵 **Biru (Ao):** Ikan dan makanan laut mentah — resiko *Vibrio parahaemolyticus*.
+  - 🟢 **Hijau (Midori):** Sayuran segar, buah, dan salad mentah.
+  - ⚪ **Putih (Shiro):** Makanan matang siap santap, daging panggang, roti.
+- **Deep Fryer Thermal Safety (Larangan Kontak Air-Minyak 180°C):**
+  - Tetesan air ke dalam minyak panas menghasilkan ledakan uap mendadak (*boilover explosion*). Penirisan es batu dari keranjang beku wajib dilakukan di atas nampan terpisah sebelum dimasukkan ke dalam penggorengan.
 
 #### Atomized Technical Lexicon (Layer 2)
 | Kanji / Term | Kana Reading | Romaji | Technical Definition | Indonesian Gloss | High-Stakes Risk Category |
 |---|---|---|---|---|---|
-| お客様ご案内 | おきゃくさまごあんない | *okyakusama goannai* | Welcoming and seating diners with formal keigo | Pemanduan dan pengantaran tamu ke meja | Customer satisfaction |
-| 復唱確認 | ふくしょうかくにん | *fukushou kakunin* | Repeating customer orders back clearly to prevent error | Konfirmasi ulang pesanan tamu | Order mismatch error |
-| 揚げ油温度過熱 | あげあぶらおんどかねつ | *ageabura ondo kanetsu* | Deep fryer oil thermal runaway ignition hazard | Panas berlebih minyak penggorengan | Kitchen grease fire |
-| まな板色分け管理 | まないたいろわけかんり | *manaita irowake kanri* | Color-coded cutting boards for raw meat, fish, veggies | Pembagian talenan beda warna anti-silang | Cross-contamination poisoning |
-| レジ会計・釣銭 | れじかいけい・つりせん | *reji kaikei / tsurisen* | Cash register tallying and two-handed change return | Penghitungan kasir dan penyerahan uang kembalian | Financial discrepancy |
-| バッシング（下膳） | ばっしんぐ | *basshingu* | Clearing soiled tableware and sanitizing table surface | Pengangkatan piring kotor dan lap meja | Table turnaround speed |
-| ノロウイルス対策 | のろういるすたいさく | *norouirusu taisaku* | Vomit handling bleach protocol against Norovirus | Penanganan muntah tamu anti-Norovirus | Facility epidemic closure |
-| 食物アレルギー確認 | しょくもつあれるぎーかくにん | *shokumotsu arerugii kakunin* | Verifying crustacean/egg/peanut allergens with chef | Pengecekan alergi makanan ke koki | Medical emergency |
-| 包丁消毒保管庫 | ほうちょうしょうどくほかんこ | *houchou shoudoku hokanko* | UV light sterilizing cabinet for kitchen knives | Lemari sterilisasi pisau sinar UV | Bacterial contamination |
-| お冷とおしぼり | おひやとおしぼり | *ohiya to oshibori* | Serving complimentary ice water and wet towels | Penyajian air es dan lap basah gratis | Omotenashi greeting standard |
+| お客様ご案内 | おきゃくさまごあんない | *okyakusama goannai* | Welcoming and seating diners with formal keigo & posture | Pemanduan dan pengantaran tamu ke meja dengan sopan | Customer satisfaction breach |
+| 復唱確認 | ふくしょうかくにん | *fukushō kakunin* | Repeating customer orders back clearly item-by-item | Konfirmasi ulang butir pesanan tamu secara verbatim | Order mismatch & food waste |
+| まな板色分け管理 | まないたいろわけかんり | *manaita irowake kanri* | 4-color coded chopping boards for raw meat, fish, veg, cooked | Sistem pemisahan talenan 4 warna pencegah kontaminasi silang | Cross-contamination poisoning |
+| 揚げ油温度過熱 | あげあぶらおんどかねつ | *ageabura ondo kanetsu* | Deep fryer oil thermal runaway ignition hazard (> 200°C) | Pemanasan berlebih minyak penggorengan bahaya kebakaran | Kitchen grease flash fire |
+| 食物アレルギー確認 | しょくもつあれるぎーかくにん | *shokumotsu arerugī kakunin* | Checking dish ingredients against customer allergy declaration | Verifikasi alergen makanan pesanan tamu ke koki dapur | Anaphylactic shock emergency |
+| バッシング（下膳） | ばっしんぐ | *basshingu* | Clearing soiled tableware and sanitizing table surface | Pengangkatan piring kotor dan disinfeksi meja dengan alkohol | Table turnaround & hygiene |
+| ノロウイルス嘔吐処理 | のろういるすおうとしょり | *norouirusu ōto shori* | Disinfecting vomit with 1,000 ppm chlorine bleach protocol | Prosedur penanganan muntahan tamu anti-Norovirus klorin | Facility outbreak shutdown |
+| レジ会計・釣銭渡し | れじかいけい・つりせんはわたし | *reji kaikei / tsurisen* | Cash/POS terminal tallying and respectful 2-hand change return | Penghitungan kasir dan penyerahan kembalian dua belah tangan | Cash discrepancy / insult |
+| 包丁消毒保管庫 | ほうちょうしょうどくほかんこ | *hōchō shōdoku hokanko* | UV light sterilizing cabinet for storing kitchen knives | Lemari sterilisasi pisau dapur sinar ultraviolet | Bacterial proliferation on blades |
+| クレーム初期対応 | くれーむしょきたいおう | *kurēmu shoki taiou* | De-escalating customer complaints with empathic listening | Penanganan awal keluhan tamu dengan sikap mendengar aktif | Viral social media boycott |
+| 差し替え（作り直し） | さしかえ | *sashikae* | Re-cooking and replacing defective dish immediately | Pembuatan ulang hidangan cacat dan penggantian seketika | Customer loss & dissatisfaction |
+| お冷とおしぼり提供 | おひやとおしぼりていきょう | *ohiya to oshibori* | Serving complimentary iced water and wet hand towel | Penyajian air es dan lap basah higienis saat tamu duduk | Omotenashi hospitality standard |
+| 先入れ先出し（FIFO） | さきいれさきだし | *saki-ire saki-dashi* | First-in, first-out stock rotation in walk-in refrigerator | Rotasi bahan baku kulkas: yang pertama masuk keluar pertama | Expired ingredient usage |
+| 二次汚染防止 | にじおせんぼうし | *niji osen bōshi* | Preventing raw food drips onto ready-to-eat cooked food | Pencegahan kontaminasi sekunder tetesan cairan mentah | Cross-pathogen contamination |
+| 割り箸・カトラリー補充 | わりばし・かとらりーほじゅう | *waribashi / katorarī* | Replenishing disposable chopsticks, spoons, condiments | Pengisian ulang sumpit sekali pakai, sendok, dan wadah saus | Table station readiness |
 
-#### Front-of-House Keigo Routines
-- 「いらっしゃいませ！何名様でいらっしゃいますでしょうか。」 (*Irasshaimase! Nan-mei-sama de irasshaimasu deshou ka.* — Welcome! How many guests in your party?)
-- 「ご注文を復唱させていただきます。唐揚げ定食がおひとつ、生ビールがおひとつでよろしいでしょうか。」 (*Confirming your order: One karaage set meal and one draft beer, is that correct?*)
+#### 3 Full-Scale Restaurant Conflict & Crisis Dialogue Simulations
+
+##### Simulasi A: Komplain Benda Asing Rambut/Logam di Hidangan Tamu (*Ryōri e no Ibutsu Konnyū Kurēmu*)
+- **Konteks & Pemicu:** Seorang tamu yang sedang menyantap ramen memanggil pelayan dengan nada kesal: 「すいません、これ見てよ！ラーメンの中に髪の毛が入ってるんだけど！どういう衛生管理してるの？」 (Permisi, lihat ini! Ada sehelai rambut di dalam ramen saya! Bagaimana manajemen kebersihannya?)
+- **Aksi Front-of-House 4 Langkah & Dialog De-eskalasi:**
+  1. Pelayan segera mendekat, membungkuk 45 derajat (*Saikeirei*), dan menatap tamu dengan ekspresi tulus:
+     「大変申し訳ございません！せっかくのお食事中に、ご不快な思いをおかけしてしまい、心よりお詫び申し上げます。」 (*Taihen mōshiwake gozaimasen! Sekkaku no oshokujichū ni, gofukai na omoi o okake shite shimai, kokoro yori owabi mōshiagemasu.*)
+  2. Meminta izin memeriksa dan mengambil mangkok dengan kedua belah tangan:
+     「恐れ入りますが、状態を確認させていただきます。お椀をお下げしてもよろしいでしょうか。」
+  3. Menawarkan penggantian hidangan segar seketika:
+     「直ちに新しいラーメンをお作り直ししてお持ちいたします。それとも、別のお料理にご変更なさいますでしょうか。」
+  4. Melapor ke *tenchō* di dapur dalam 15 detik:
+     「店長、テーブル3番の山田様のお椀から髪の毛の混入のご指摘をいただきました。平謝りし、作り直しの手配をいたしました。お詫びの同行をお願いできますでしょうか。」
+- **Mitigasi Hambatan Budaya L1 Indonesia:**
+  - *Larangan Senyum Canggung:* Pelajar Indonesia sering tersenyum saat gugup (*senyum refleks*). Dalam budaya layanan Jepang, tersenyum saat tamu komplain dianggap sebagai penghinaan berat (*baka ni sarete iru*). Mimik wajah wajib serius, penuh empati, dan tidak berargumen ("itu bukan rambut saya").
+
+##### Simulasi B: Reaksi Alergi Akut & Anafilaksis Tamu di Ruang Makan (*Kyaku no Shokuhin Arerugī Anafirakishī Kinkyū Taiou*)
+- **Konteks & Pemicu:** Tamu anak-anak yang memakan kue penutup tiba-tiba mengalami batuk tersedak, gatal-gatal di leher (*jinmashin*), dan kesulitan bernapas (*kokyū konnan*). Ibu anak berteriak panik: 「助けて！子供が卵アレルギーなのに、呼吸が苦しそう！」 (Tolong! Anak saya alergi telur, napasnya tersengal-sengal!)
+- **Aksi 10 Detik Pertama & Teriakan Darurat:**
+  1. Hentikan seluruh aktivitas bervolume bising di ruang makan.
+  2. Teriakkan panggilan darurat ke seluruh staf:
+     「お客様がアレルギー発作です！119番通報！店長を呼んでください！」 (*Okyaku-sama ga arerugī hossa desu! Hyaku-jūkyū-ban tsūhō! Tenchō o yonde kudasai!*)
+  3. Tanyakan segera kepada orang tua mengenai obat darurat:
+     「お母様、エピペン（自己注射薬）はお持ちでしょうか？衣服を緩めて楽な姿勢にしてください！」
+- **Panggilan Pelaporan 119 via SBAR Model:**
+  - **S (Situation):** 「救急です。渋谷区宇田川町1-2、居酒屋サクラの従業員のリツキです。店内で小学生のお子様が卵アレルギーによる呼吸困難とアナフィラキシーショックを起こしています。」
+  - **B (Background):** 「約5分前にデザートのプリンを口にされ、直後に激しい咳き込みと顔面の腫れが発症しました。エピペンの所持はありません。」
+  - **A (Assessment):** 「意識はありますが、喘鳴（ゼーゼー音）があり、唇がチアノーゼ色に変化しつつあります。気道狭窄の危険があります。」
+  - **R (Recommendation):** 「救急車の至急の派遣をお願いします。救急隊到着まで気道確保の姿勢を保ちます。」
+
+##### Simulasi C: Api Minyak Penggorengan Menyala di Jalur Dapur (*Chūbō Furaiyā Yuka Hakka / Shōka Taiou*)
+- **Konteks & Pemicu:** Minyak di mesin deep fryer komersial terlalu panas (*overheating* > 350°C) akibat termostat rusak saat menggoreng tempura, memicu kobaran api di permukaan tangki minyak (*abura hakka*).
+- **Aksi 10 Detik Pertama & Teriakan Akustik Gemba:**
+  1. Dilarang keras menyiramkan air (air akan mendidih seketika dan meledakkan bola api minyak ke seluruh dapur).
+  2. Teriakkan instruksi darurat pemadam api:
+     「油火災だ！水をかけるな！フライヤーの電源落とせ！強化液消火器持ってこい！」 (*Abura kasai da! Mizu o kakeru na! Furaiyā no dengen otose! Kyōka-eki shōkaki motte koi!* — Grease fire! Do not use water! Cut the fryer power! Bring the wet chemical extinguisher!)
+  3. Matikan tuas gas utama (*gasu motosen*) dan saklar daya listrik.
+  4. Ambil APAR khusus cairan pendingin/minyak (*kyōka-eki shōkaki*) atau tutup tangki dengan selimut pemadam api (*faiyā buranketto*) untuk memutus suplai oksigen.
 
 ---
 
@@ -716,27 +862,104 @@ Sesuai standar penanganan bencana industri darurat MHLW dan kurikulum keselamata
 
 ---
 
-### 5.4 Sector 17: Automobile Transport & Logistics (自動車運送業) [2024 Expansion]
-- **Supervising Authority:** Ministry of Land, Infrastructure, Transport and Tourism (MLIT).
-- **Target Situation Analysis (TSA):** Heavy truck long-distance logistics, tail-lift pallet loading, bus passenger ticket inspection and announcement, taxi customer navigation, pre-trip breathalyzer alcohol testing (*tenko*), and dashcam accident logging.
+### 5.4 Sector 17: Automobile Transport & Logistics (自動車運送業: トラック・タクシー・バス) [2024 Expansion]
+- **Supervising Authority:** Ministry of Land, Infrastructure, Transport and Tourism (MLIT) & National Agency for Automobile Safety and Victims' Aid (NASVA).
+- **Statutory Standards & Operational Rules:** MLIT 2024 [VS-45]; NASVA 2023 [VS-46]. Prometric CBT Test Specifications across 3 Sub-Categories (Truck: `TRANS-TRUCK-SSW1`; Taxi: `TRANS-TAXI-SSW1`; Bus: `TRANS-BUS-SSW1`; Japanese JLPT N3/N4 equivalent requirement).
+- **Target Situation Analysis (TSA) across 3 Distinct Operational Segments:**
+  1. **トラック運送 (*Torakku Unsō* - Freight & Heavy Cargo Logistics):** Pre-trip/post-trip roll-call alcohol inspection (*tenko*), cargo pallet strapping with ratchet tie-down lashing belts, hydraulic tail-lift operation, digital tachograph (*dejitako*) compliance, long-haul highway rest schedules, and loading dock communication.
+  2. **タクシー乗務 (*Takushī Jōmu* - Passenger Taxi Transport):** Automated door opening etiquette, luggage loading assistance into trunk, polite passenger route negotiation, fare calculation and cashless POS terminal handling (IC card, credit card, QR), handling intoxicated or difficult passengers, and preventing left-behind belongings (*wasuremono*).
+  3. **バス運行 (*Basu Unkō* - Route Transit & Charter Bus Driving):** Real-time safety broadcasting inside bus (*shanai hōsō*), sudden brake warning alerts, intersection inner-wheel radius differential (*nairinsa*) blindspot checks, crosswalk pedestrian priority, and elderly passenger boarding/deboarding assistance.
+
+#### 3 Segmen Operasional & Protokol Keselamatan Kemudi Standar
+
+##### A. Truk Logistik: Protokol Tenko & Pengamanan Beban Muatan (*Kobaku*)
+- **Tenko Titik Nol Alkohol (0.000 mg/L Mutlak):**
+  - Berdasarkan UU Kendaraan Angkutan Jalan Jepang (*Dōro Unsō Sharyō Hō*), kadar alkohol dalam napas pengemudi komersial wajib bernilai **0.000 mg/L**. Angka 0.001 mg/L saja langsung membatalkan surat tugas jalan, pencabutan izin mengemudi, dan sanksi administratif berat bagi perusahaan logistik.
+  - Pemeriksaan Tenko meliputi 4 pilar: Uji alkohol detektor digital (*kenki*), konfirmasi fisik (suhu tubuh, tekanan darah, durasi tidur $\ge 6$ jam), pengecekan dokumen SIM dan buku KIR (*shaken-shō*), serta pengarahan rute/cuaca bahaya (*tenkō jōhō*).
+- **Pengikatan Muatan Anti-Runtuh (*Nikuzure Boushi*):**
+  - Pemasangan sabuk rachet (*rasshingu beruto* / *gachako*), tiang penahan hidrolik (*tsupparibō*), alas karet anti-selip (*subaridome gomu*), dan pelindung sudut (*kōnā ate*). Muatan berat wajib ditempatkan di lantai paling bawah di antara sumbu roda (*jiku-jū* merata).
+
+##### B. Taksi Penumpang: Register Omotenashi & Negosiasi Rute
+- **Standar Bahasa Layanan Taksi Jepang (*Takushī Sekkyaku Keigo*):**
+  - Sambutan masuk: 「ご乗車ありがとうございます。どちらまでまいりましょうか。」 (*Gojōsha arigatō gozaimasu. Dochira made mairimashō ka.*)
+  - Konfirmasi rute jalan tol: 「高速道路をご利用なさいますか。それとも一般道でよろしいでしょうか。」 (*Kōsokudōro o goriyō nasaimasu ka. Soretomo ippandō de yoroshii deshou ka.*)
+  - Menjelaskan rute memutar akibat kemacetan: 「あいにく前方の交差点で渋滞が発生しております。迂回路を通行してもよろしいでしょうか。」
+  - Selesai transaksi & salam perpisahan: 「お忘れ物はございませんでしょうか。ご乗車ありがとうございました。」
+
+##### C. Bus Penumpang: Pengumuman Keselamatan Kabin (*Shanai Hōsō*) & Titik Buta Tikungan
+- **SOP Siaran Pengemudi Bus Berkelanjutan:**
+  - Keberangkatan: 「発車いたします。お立ちのお客様は吊り革や手すりにおつかまりください。」
+  - Belok / Guncangan: 「左に曲がりますので揺れます。ご注意ください。」
+  - Pengereman mendadak darurat: 「急ブレーキにご注意ください！」
+  - Tiba di halte: 「完全に停車するまで、お席をお立ちにならないようお願いいたします。」
+- **Mitigasi Titik Buta & Radius Putar Roda Dalam (*Nairinsa*):**
+  - Saat bus panjang berbelok di persimpangan jalan sempit, ban belakang melintas lebih ke dalam daripada ban depan. Pengemudi wajib berhenti sejenak (*ichi-ji teishi*), memeriksa spion bawah (*shikaku kakunin*), dan melakukan *shiteki koshō*: 「巻き込みヨシ！」 sebelum memutar kemudi.
 
 #### Atomized Technical Lexicon (Layer 2)
 | Kanji / Term | Kana Reading | Romaji | Technical Definition | Indonesian Gloss | High-Stakes Risk Category |
 |---|---|---|---|---|---|
-| アルコール点呼 | あるこーるてんこ | *arukooru tenko* | Pre-trip zero-tolerance breathalyzer alcohol test | Uji tiup alkohol sebelum menyetir | Immediate license revocation |
-| 荷崩れ防止固縛 | にくずれぼうしこばく | *nikuzure boushi kobaku* | Securing cargo pallets with ratchet tie-down straps | Pengikatan kargo palet dengan tali rachet | Load shifting rollover |
-| 運行前点検 | うんこうまえてんけん | *unkoumae tenken* | Pre-trip 10-point vehicle inspection walkaround | Pengecekan 10 titik armada sebelum berangkat | Mechanical breakdown |
-| 内輪差・死角 | ないりんさ・しかく | *nairinsa / shikaku* | Turning inner-rear wheel radius cut & cab blindspots | Radius potong ban belakang dan titik buta spion | Cyclist/Pedestrian crushing |
-| 運送状（送り状） | うんそうじょう | *unsoujou* | Waybill consignment delivery note documentation | Surat jalan pengiriman barang logistik | Misdelivery discrepancy |
-| デジタコ記録 | でじたこきろく | *dejitako kiroku* | Digital tachograph speed, idle, and drive-time log | Rekaman takograf digital kecepatan dan istirahat | Speeding violation |
-| 車間距離保持 | しゃかんきょりほじ | *shakan kyori hoji* | Maintaining 3-second safe stopping following distance | Menjaga jarak aman pengereman kendaraan | Rear-end collision hazard |
-| テールゲート昇降 | てーるげーとしょうこう | *teerugeeto shoukou* | Operating rear hydraulic tail-lift loading platform | Pengoperasian lift hidrolik pintu belakang truk | Crushing under platform |
-| バス車内アナウンス | ばすしゃないあなうんす | *basu shanai anaunsu* | Clear bus stop and sudden brake warning broadcasting | Pengumuman halte dan peringatan rem mendadak | Passenger fall liability |
-| 過積載禁止 | かせきさいきんし | *kasekisai kinshi* | Statutory prohibition of exceeding axle load limits | Larangan muatan berlebih (overload) | Brake failure / Road damage |
+| アルコール点呼 | あるこーるてんこ | *arukōru tenko* | Statutory pre/post-trip breathalyzer inspection (0.000 mg/L) | Uji tiup alkohol wajib sebelum dan sesudah menyetir (toleransi 0) | Immediate license revocation & arrest |
+| 荷崩れ防止固縛 | にくずれぼうしこばく | *nikuzure bōshi kobaku* | Securing cargo pallets with ratchet tie-down lashing belts | Pengikatan muatan kargo dengan tali rachet anti-runtuh | Load shifting rollover accident |
+| 運行前日常点検 | うんこうまえにちじょうてんけん | *unkōmae nichijō tenken* | Pre-trip 10-point vehicle inspection walkaround check | Pengecekan 10 titik armada sebelum berangkat (oli, ban, lampu) | Highway mechanical breakdown |
+| 内輪差・死角確認 | ないりんさ・しかくかくにん | *nairinsa / shikaku* | Verifying cab blindspots & inner rear-wheel turn radius | Pengecekan radius potong roda belakang dan titik buta spion | Cyclist/Pedestrian crushing fatality |
+| デジタコ記録管理 | でじたこきろくかんり | *dejitako kiroku kanri* | Digital tachograph speed, idle time, and driving hours log | Rekaman takograf digital kecepatan, pengereman, dan jam istirahat | Statutory labor violation fine |
+| 車間距離保持 | しゃかんきょりほじ | *shakan kyori hoji* | Maintaining 3-4 second safe stopping braking distance | Menjaga jarak aman pengereman dengan kendaraan depan | Multi-vehicle rear-end pileup |
+| テールゲート昇降 | てーるげーとしょうこう | *tērugēto shōkō* | Operating rear hydraulic tail-lift loading platform | Pengoperasian lift hidrolik pintu belakang truk angkut kargo | Crushing under descending platform |
+| 巻き込み事故防止 | まきこみじこぼうし | *makikomi jiko bōshi* | Preventing collisions with cyclists passing on turning side | Pencegahan insiden terseretnya sepeda motor/sepeda saat belok | Fatal blindspot traffic collision |
+| 車内転倒事故防止 | しゃないてんとうじこ | *shanai tentō jiko* | Preventing passenger falls inside bus during braking | Pencegahan insiden penumpang bus terjatuh akibat rem mendadak | Passenger injury civil lawsuit |
+| 運送状（送り状） | うんそうじょう | *unsōjō* | Waybill consignment delivery manifest documentation | Surat jalan pengiriman barang ekspedisi logistik | Misdelivery & freight loss claim |
+| 過積載厳禁 | かせきさいげんきん | *kasekisai genkin* | Statutory prohibition of exceeding axle load capacity limits | Larangan mutlak muatan berlebih (overload kapasitas tonase) | Brake failure & chassis collapse |
+| 発炎筒・停止表示板 | はつえんとう・ていしひょうじばん | *hatsuentō / teishi hyōjiban* | Emergency highway red flares & reflective warning triangle | Suar suar merah darurat dan segitiga pengaman pemantul cahaya | Secondary highway collision disaster |
+| ドライブレコーダー | どらいぶれこーだー | *doraibu rekōdā* | Continuous dashcam driving video and audio event logger | Kamera perekam perjalanan kabin depan dan ruang kemudi | Accident liability dispute evidence |
+| 輪留め（車輪止め） | わどめ（しゃりんどめ） | *wadome / sharin dome* | Placing chocks under tires during loading dock parking | Pemasangan balok pengganjal roda saat parkir bongkar muat | Runaway vehicle rollaway disaster |
+| 拘束時間・休息期間 | こうそくじかん・きゅうそく | *kōsoku jikan / kyūsoku* | Statutory driving hours cap (max 13-15h) & 11h daily rest | Batas jam kerja kemudi resmi dan periode istirahat wajib | Drowsy driving fatal catastrophe |
 
-#### Driving Safety & Communication Commands
-- 「右よし、左よし、巻き込み確認よし、発車！」 (*Migi yoshi, hidari yoshi, makikomi kakunin yoshi, hassha!* — Right OK, left OK, blindspot clear OK, depart!)
-- 「バスが揺れますので、お立ちの方は手すりにおつかまりください。」 (*The bus will shake, please hold handrails if standing.*)
+#### 4 High-Stakes Highway & Road Crisis Simulations
+
+##### Simulasi A: Kegagalan Tes Tiup Titik Nol Alkohol Saat Tenko Pagi (*Asa no Tenko Arukooru Kenshutsu*)
+- **Konteks & Pemicu:** Saat pengemudi truk meniupkan napas ke alat sensor alkohol digital saat Tenko pukul 06.00 pagi, alat berbunyi bip dan menunjukkan angka `0.045 mg/L`. Pengemudi mengaku minum 2 kaleng bir pada pukul 21.00 malam sebelumnya dan merasa sudah bugar sepenuhnya.
+- **Tindakan Hukum & Prosedur Manajer Operasi (*Unkō Kanrisha*):**
+  1. Kunci kontak kendaraan segera disita oleh petugas Tenko; pengemudi dilarang keras menyentuh truk.
+  2. Dialog Protokol Disiplin:
+     「検知器からアルコールが検出されました（0.045 mg/L）。本日の乗務は法令により一切認められません。」 (*Kenki kara arukooru ga kenshutsu saremashita. Honjitsu no jōmu wa hōrei ni yori issai mitomeraremasen.* — Alcohol detected by the breathalyzer. By statutory law, you are strictly prohibited from driving today.)
+  3. Lakukan pengujian ulang 15 menit kemudian dengan berkumur air putih untuk menyingkirkan residu obat kumur/makanan berfermentasi. Jika tetap di atas 0.000 mg/L, tetapkan status *jōmu teishi* (skorsing tugas jalan), tugaskan supir pengganti (*daihai untenshu*), dan laporkan ke kepala cabang (*shitenchō*).
+- **Mitigasi Hambatan Budaya L1 Indonesia:**
+  - *Perbedaan Norma Alkohol:* Di Indonesia, konsep mengemudi mabuk sering dikaitkan dengan hilangnya kesadaran total. Di Jepang, standar hukum adalah angka instrumen mutlak (**0.000 mg/L**). Pemahaman "masih sadar dan sanggup menyetir" (*masih kuat kok*) harus diberantas secara total.
+
+##### Simulasi B: Muatan Kargo Miring & Nyaris Runtuh di Bahu Jalan Tol (*Kōsokudōro Nikuzure / Katamuki Kinkyū Teisha*)
+- **Konteks & Pemicu:** Saat mengemudikan truk 10 ton di jalan tol antarkota (*Kōsokudōro*), pengemudi merasakan guncangan miring ke kiri. Melalui spion, terlihat palet kargo di dalam boks bergeser dan menekan dinding samping terpal.
+- **Aksi 10 Detik Pertama & Protokol Darurat Bahu Jalan Tol:**
+  1. Nyalakan lampu hazard (*hazādo ranpu*), perlambat kecepatan secara halus tanpa mengerem mendadak, dan tepikan truk ke bahu jalan (*rojō teisha*).
+  2. Kenakan rompi reflektif kuning (*hansha besuto*). Jangan pernah memeriksa muatan di sisi kanan yang menghadap lalu lintas aktif!
+  3. Berlari ke belakang truk sejauh **50 meter** sambil memegang suar darurat (*hatsuentō*) yang dinyalakan, dan pasang segitiga pengaman (*sankaku hyōjiban*).
+  4. Segera evakuasi diri ke luar pembatas jalan (*gādorēru no soto*). Dilarang tetap berada di dalam kabin truk karena resiko tabrakan dari belakang oleh kendaraan lain (*tsuitotsu jiko*).
+  5. Hubungi nomor telepon darurat jalan tol **#9910** (NEXCO) atau 110 (Kepolisian).
+- **Panggilan Pelaporan Darurat SBAR ke Kantor Pusat Logistik:**
+  - **S (Situation):** 「運行管理者の高橋さん、10トントラック乗務のヘンドラです。東名高速道路上り線75キロポスト付近の路肩に緊急停車しています。」
+  - **B (Background):** 「急カーブを抜けた直後に積荷のパレット固縛が緩み、荷崩れを起こして左側に車体が約15度傾斜しました。」
+  - **A (Assessment):** 「自力での復旧は横転の危険があり不可能です。発炎筒と停止表示板を50メートル後方に設置し、私はガードレールの外側に避難完了しています。」
+  - **R (Recommendation):** 「道路緊急ダイヤル#9910に通報済みです。レッカー車の手配と、代替トラックによる荷物の積み替え救援をお願いいたします。」
+
+##### Simulasi C: Titik Buta Tikungan Kiri & Pengereman Darurat Pejalan Kaki (*Hidarisetsu Makikomi Kiken / Kinkyū Teishi*)
+- **Konteks & Pemicu:** Truk sedang berbelok kiri di persimpangan lampu hijau jalan kota. Sebuah sepeda listrik melaju kencang dari trotoar di sisi kiri belakang (titik buta kabin spion) hendak menyeberang zebra cross.
+- **Aksi 10 Detik Pertama & Reaksi Spontan:**
+  1. Pengemudi melakukan jeda berhenti sesaat (*ichi-ji teishi*) sebelum melintasi zebra cross.
+  2. Saat sudut mata menangkap gerakan cepat, segera injak pedal rem penuh (*kyū-burēki*).
+  3. Lakukan konfirmasi verbal lantang:
+     「止まれ！巻き込み危ない！自転車確認ヨシ！」 (*Tomare! Makikomi abunai! Jitensha kakunin yoshi!* — Stop! Entanglement danger! Bicycle checked clear OK!)
+  4. Biarkan sepeda melintas hingga tuntas. Tekan tombol *event mark* pada dashcam (*dora-reko*) untuk mengabadikan rekaman insiden nyaris celaka (*hiyari-hatto*) sebagai bahan evaluasi keselamatan bulanan.
+
+##### Simulasi D: Penumpang Bus Terjatuh Akibat Rem Mendadak Menghindari Tabrakan (*Shanai Jiko / Kyū-burēki Tentō*)
+- **Konteks & Pemicu:** Sebuah mobil pribadi memotong jalur bus kota secara tiba-tiba dari gang kecil. Pengemudi bus terpaksa menginjak rem mendadak (*kyū-burēki*). Di kabin belakang, seorang penumpang lansia yang berdiri kehilangan pegangan dan terjatuh ke lantai koridor.
+- **Aksi 10 Detik Pertama & Teriakan Penenang Pengemudi:**
+  1. Hentikan bus dengan aman di sisi kiri jalan, tarik rem tangan (*saido burēki*), dan nyalakan lampu hazard.
+  2. Berikan instruksi penenang melalui mikrofon kabin:
+     「急ブレーキで大変失礼いたしました！お怪我はございませんでしょうか。ただいま様子を確認にまいりますので、皆様そのままお席でお待ちください！」
+  3. Menghampiri korban, memeriksa kesadaran (*ishiki kakunin*), rasa sakit pada tulang belakang atau kepala.
+- **Eskalasi Medis 119 & Panggilan Kantor Pusat:**
+  - Jika korban mengeluh nyeri punggung atau benturan kepala: dilarang memaksakan korban berdiri.
+  - Hubungi 119 ambulans dan kepolisian (kecelakaan kabin diklasifikasikan sebagai kecelakaan lalu lintas resmi / *jinken jiko*).
+  - Hubungi kantor operasi (*eigyōsho*): laporkan jumlah penumpang, kondisi cedera, lokasi tepat, dan minta bus pengganti (*furikae basu*) untuk mengangkut penumpang lainnya yang tidak cedera.
 
 ---
 
