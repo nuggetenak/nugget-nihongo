@@ -215,7 +215,7 @@ All decision IDs follow the format DDM-P1-NNN and DDM-P2-NNN for cross-referenci
 - **Evidence:** DC-02 (Paivio 1986 — dual coding advantage: information encoded in both verbal and imagistic systems produces more durable memory traces); CT-01/CT-02 (Mayer 1991/2009 — multimedia principle, d ≈ 1.50, the largest effect in the CTML literature: words + pictures > words alone)
 - **Section:** §9.1, §9.2
 - **Priority:** HIGH
-- **Notes:** The multimedia principle effect (d ≈ 1.50) is the largest single effect size in the §9 corpus. This is not a content enrichment choice — it is the evidence-based minimum requirement for concrete vocabulary cards. Juicy agent image brief must treat image inclusion as mandatory, not optional.
+- **Notes:** The multimedia principle effect (d ≈ 1.50) is the largest single effect size in the §9 corpus. This is not a content enrichment choice — it is the evidence-based minimum requirement for concrete vocabulary cards. Content image curation briefs must treat image inclusion as mandatory, not optional.
 
 ---
 
@@ -233,7 +233,7 @@ All decision IDs follow the format DDM-P1-NNN and DDM-P2-NNN for cross-referenci
 - **Evidence:** IM-04 (Mayer & Gallini 1990 — for simple, well-known content, illustrations add no benefit and can be distracting); §5.5.25 (Daulton 2008 — Indonesian learners have pre-existing concept knowledge for English-origin gairaigo)
 - **Section:** §9.6, §5.5.25
 - **Priority:** MEDIUM
-- **Notes:** For loanwords where the concept is already known (learner knows what a "hotel" is), the L2 vocabulary task is form-sound mapping, not concept acquisition. Image encoding adds no dual coding advantage when the concept representation is already fully established. This frees Juicy from image curation burden for this card subset.
+- **Notes:** For loanwords where the concept is already known (learner knows what a "hotel" is), the L2 vocabulary task is form-sound mapping, not concept acquisition. Image encoding adds no dual coding advantage when the concept representation is already fully established. This frees editorial pipeline from image curation burden for this card subset.
 
 ---
 
@@ -242,7 +242,7 @@ All decision IDs follow the format DDM-P1-NNN and DDM-P2-NNN for cross-referenci
 - **Evidence:** CT-16 (Ginns 2006 meta-analysis — spatial contiguity mean d = 0.79, k = 36 effects); IM-05 (Chandler & Sweller 1992 — split-attention effect: spatially separated information sources increase cognitive load)
 - **Section:** §9.2, §9.6
 - **Priority:** HIGH
-- **Notes:** This is a hard layout constraint for Golden (UI agent), not a soft design preference. Text-image separation creates a split-attention effect that measurably degrades encoding. Japanese word + image must be co-located within the same visual zone, with furigana immediately adjacent to the kanji it annotates (not in a separate field below).
+- **Notes:** This is a hard layout constraint for UI implementation, not a soft design preference. Text-image separation creates a split-attention effect that measurably degrades encoding. Japanese word + image must be co-located within the same visual zone, with furigana immediately adjacent to the kanji it annotates (not in a separate field below).
 
 ---
 
@@ -315,7 +315,7 @@ All decision IDs follow the format DDM-P1-NNN and DDM-P2-NNN for cross-referenci
 
 ## FEATURE: Scheduling — New Card Daily Cap
 ### Decision: New cards per day must be capped at 10–15 maximum, with a hard default cap for new users at 10 new cards/day.
-- **Evidence:** CL-02 (Sweller 1994 — CLT: working memory has a fixed capacity ceiling); OD-21 (Osaka & Osaka 1992 — Japanese reading span tasks more demanding than English equivalent, confirming higher WM load for Japanese materials); §13.3 [referenced, to be confirmed by Agent 33 — individual differences WM]
+- **Evidence:** CL-02 (Sweller 1994 — CLT: working memory has a fixed capacity ceiling); OD-21 (Osaka & Osaka 1992 — Japanese reading span tasks more demanding than English equivalent, confirming higher WM load for Japanese materials); §13.3 [individual differences in working memory]
 - **Section:** §9.4, §9.10.6
 - **Priority:** HIGH
 - **Notes:** Multi-script Japanese (kana + kanji in the same session) imposes dual WM demands — phonological loop for kana (sublexical route) + semantic/visual memory for kanji (lexical route). The WM switching cost compounds the standard new-card load. 10 cards/day for beginners with mixed script exposure. Users may increase this manually, but the system should warn against exceeding 20 new cards/day.
@@ -398,7 +398,7 @@ All decision IDs follow the format DDM-P1-NNN and DDM-P2-NNN for cross-referenci
 - **Evidence:** Hofstede et al. 2010 [§8.11.3] — IDV = 14 (highly collectivist): individual achievement displays create shame risk rather than pride in collectivist cultures; Triandis & Gelfand 1998 [§8.11.3] — vertical collectivism: hierarchical comparison is anxiety-producing for bottom-ranked users; Goffman 1967 [§8.11.3] — face-threatening acts trigger avoidance behavior (session frequency reduction, card skipping)
 - **Section:** §8.11
 - **Priority:** HIGH
-- **Notes:** In vertical collectivist cultures (Indonesia IDV = 14, one of the lowest globally), being visibly ranked below peers is not merely unmotivating — it is a face-threatening act (Goffman 1967) that triggers malu-avoidance behavior. Default opt-in for any social comparison feature violates the malu-reduction design principle. **Conflict note:** Gamification literature (§10, covered by Agent 33) may recommend leaderboards as engagement drivers — if so, this creates a genuine conflict that Agent 2 must resolve. Indonesian cultural data strongly suggests privacy-by-default takes precedence.
+- **Notes:** In vertical collectivist cultures (Indonesia IDV = 14, one of the lowest globally), being visibly ranked below peers is not merely unmotivating — it is a face-threatening act (Goffman 1967) that triggers malu-avoidance behavior. Default opt-in for any social comparison feature violates the malu-reduction design principle. **Conflict note:** Gamification literature (§10) may recommend leaderboards as engagement drivers — Indonesian cultural data strongly establishes that privacy-by-default takes precedence.
 
 ---
 
@@ -435,7 +435,7 @@ All decision IDs follow the format DDM-P1-NNN and DDM-P2-NNN for cross-referenci
 
 ## FEATURE: UX — Session Length Cap (5–7 Minutes Default)
 ### Decision: Default daily session length should be capped at approximately 5–7 minutes (equivalent to ≤20 due reviews for typical learners). The platform should prompt a natural session close at this threshold, not mandate an abrupt stop.
-- **Evidence:** §8 [MALL affordances; session fatigue — Flag 5 in §8 v2]; App Annie 2022 [§8.10.5] — Indonesian learners in a 5.5-hr/day mobile attention competition; §9.4 (CLT — WM depletion constrains effective session length); §13 [WM individual differences — to be confirmed by Agent 33]
+- **Evidence:** §8 [MALL affordances; session fatigue — Flag 5 in §8 v2]; App Annie 2022 [§8.10.5] — Indonesian learners in a 5.5-hr/day mobile attention competition; §9.4 (CLT — WM depletion constrains effective session length); §13 [WM individual differences]
 - **Section:** §8.6, §9.4, §9.10.6
 - **Priority:** HIGH
 - **Notes:** Short sessions are not just cognitively optimal (CLT) — they are the only realistic slot available in Indonesia's high-competition attention environment. The 15–20 minute cap from §9.10.6 (WM × multi-script data) and the 5–7 minute recommendation from §8.6 are compatible: 5–7 minutes is the daily-habit target; 15–20 minutes is the absolute ceiling before WM depletion significantly degrades learning. Platform should suggest "Lanjutkan besok" after the first threshold.
@@ -494,7 +494,7 @@ All decision IDs follow the format DDM-P1-NNN and DDM-P2-NNN for cross-referenci
 | Furigana on examples | Always | On demand | Hide |
 | Cultural note | Show | Show | Show |
 
-This table is the implementation spec for Golden agent. One universal template is the worst possible design from a CLT perspective.
+This table is the implementation spec for UI design implementation. One universal template is the worst possible design from a CLT perspective.
 
 ---
 
@@ -610,13 +610,13 @@ This table is the implementation spec for Golden agent. One universal template i
 - **Evidence:** §8.11 (Studies 1–5) — SDT validation study, FSRS difficulty prior calibration, malu/anxiety study, habit formation study, PWA vs. native app comparison; all require platform behavioral data
 - **Section:** §8.11
 - **Priority:** MEDIUM
-- **Notes:** The research agenda in §8.11 positions Nugget Nihongo to generate original academic contributions — the first empirical SDT data for Indonesian Japanese learners, the first FSRS calibration for non-kanji-background populations. This requires: (a) behavioral data collection consent during onboarding, (b) anonymized session log architecture, (c) survey deployment infrastructure (for FLCAS and LLOS instruments). Recommend flagging this to Crispy for legal/privacy review. Specifically relevant: Study 3 (malu/FLCAS) is the highest-priority study for Indonesian-specific platform design validation.
+- **Notes:** The research agenda in §8.11 positions Nugget Nihongo to generate original academic contributions — the first empirical SDT data for Indonesian Japanese learners, the first FSRS calibration for non-kanji-background populations. This requires: (a) behavioral data collection consent during onboarding, (b) anonymized session log architecture, (c) survey deployment infrastructure (for FLCAS and LLOS instruments). Recommend flagging this for legal/privacy review. Specifically relevant: Study 3 (malu/FLCAS) is the highest-priority study for Indonesian-specific platform design validation.
 
 ---
 
 ## CONFLICT REGISTER
 
-The following conflicts between sections are flagged for Agent 2 resolution:
+The following conflicts between sections are flagged for canonical curriculum alignment and resolution:
 
 | Conflict ID | Section A | Section B | Nature of Conflict | Recommended Resolution |
 |---|---|---|---|---|
@@ -755,7 +755,7 @@ The following conflicts between sections are flagged for Agent 2 resolution:
 
 ### Decision: All card backs must include a contrastive note flagging Indonesian ↔ Japanese form or function differences wherever L1 interference is predicted
 
-- **Evidence:** OT-06 (Schmidt 1990 Noticing Hypothesis), OT-07 (Schmidt 1993); §5.5 CP cluster (cross-ref Agent 32, §1/§5)
+- **Evidence:** OT-06 (Schmidt 1990 Noticing Hypothesis), OT-07 (Schmidt 1993); §5.5 CP cluster (§1/§5 cross-matrix)
 - **Section:** §12.2
 - **Priority:** HIGH
 - **Notes:** Schmidt's Noticing Hypothesis (OT-06) establishes that input cannot be acquired without conscious attention to form. For Indonesian learners, categories without L1 equivalents (は/が distinction, te-iru resultative/progressive split, classifiers, keigo morphology) will not be noticed from input alone. The contrastive note is not supplementary content — it is a designed noticing trigger. Notes should identify: "This differs from Indonesian because X." Ellis (GA-22, §2) confirms: gaining metalinguistic rule knowledge without production-oriented framing does not automatically produce procedural competence, so contrastive notes should always be embedded in a contextual example sentence, not stated as abstract rules.
@@ -850,7 +850,7 @@ The following conflicts between sections are flagged for Agent 2 resolution:
 - **Evidence:** PH-16 (Port et al. 1987), §11.3 mora timing theory
 - **Section:** §11.3, §11.7
 - **Priority:** MEDIUM
-- **Notes:** Mora isochrony is acoustically present (PH-16) but not automatically perceived by non-native listeners whose segmentation system operates at the syllable level. A proportional slow playback — slowing duration while preserving pitch contour — allows the learner to internalize mora duration before native-speed exposure. This is the phonological equivalent of desirable difficulty spacing (§1 DD cluster, cross-ref Agent 32): slightly increased processing difficulty that improves long-term form-meaning mapping. Speed toggle should be available on demand, not enforced (autonomy principle, CM-23).
+- **Notes:** Mora isochrony is acoustically present (PH-16) but not automatically perceived by non-native listeners whose segmentation system operates at the syllable level. A proportional slow playback — slowing duration while preserving pitch contour — allows the learner to internalize mora duration before native-speed exposure. This is the phonological equivalent of desirable difficulty spacing (§1 DD cluster): slightly increased processing difficulty that improves long-term form-meaning mapping. Speed toggle should be available on demand, not enforced (autonomy principle, CM-23).
 
 ---
 
@@ -898,7 +898,7 @@ The following conflicts between sections are flagged for Agent 2 resolution:
 - **Evidence:** SL-06 (Payne & Kensinger 2010 emotional memory + sleep consolidation)
 - **Section:** §10.7
 - **Priority:** MEDIUM
-- **Notes:** Payne & Kensinger (SL-06) establish that emotionally engaging material benefits disproportionately from sleep consolidation — the hippocampal replay mechanism preferentially processes emotionally salient content during SWS. This extends the sleep consolidation argument (§10.7) from study timing to content design: cultural images that evoke genuine emotional interest (matsuri scenes, 和食 craftsmanship, seasonal imagery) are not merely decorative but may enhance consolidation via emotional salience. This does not mean shocking or highly arousing images — moderate positive emotional valence is sufficient. Cross-reference: §9 CT/CL cluster (cognitive load, seductive details effect, Agent 32) — images must be content-intrinsic, not tangential to the vocabulary item being encoded.
+- **Notes:** Payne & Kensinger (SL-06) establish that emotionally engaging material benefits disproportionately from sleep consolidation — the hippocampal replay mechanism preferentially processes emotionally salient content during SWS. This extends the sleep consolidation argument (§10.7) from study timing to content design: cultural images that evoke genuine emotional interest (matsuri scenes, 和食 craftsmanship, seasonal imagery) are not merely decorative but may enhance consolidation via emotional salience. This does not mean shocking or highly arousing images — moderate positive emotional valence is sufficient. Cross-reference: §9 CT/CL cluster (cognitive load, seductive details effect) — images must be content-intrinsic, not tangential to the vocabulary item being encoded.
 
 ---
 
@@ -913,7 +913,7 @@ The following conflicts between sections are flagged for Agent 2 resolution:
 - **Evidence:** SL-01 (Walker & Stickgold 2004), SL-02 (Diekelmann & Born 2010), SL-04 (Dumay & Gaskell 2007)
 - **Section:** §10.7
 - **Priority:** HIGH
-- **Notes:** Dumay & Gaskell (SL-04) demonstrate that new vocabulary items integrate into the established lexical network specifically during sleep — this integration is absent immediately after learning and present after a sleep interval even when total elapsed time is controlled. Walker & Stickgold (SL-01) establish that slow-wave sleep (SWS) in the first half of the night preferentially consolidates declarative memory (vocabulary). FSRS's minimum interval architecture already enforces overnight spacing algorithmically; what this decision adds is a communication obligation — users should be informed of this rationale ("Your cards are scheduled across nights, not within the same day, because memory consolidation happens during sleep"). Cross-reference: §1 TE-01, Cepeda et al. (2006) spacing theory (Agent 32).
+- **Notes:** Dumay & Gaskell (SL-04) demonstrate that new vocabulary items integrate into the established lexical network specifically during sleep — this integration is absent immediately after learning and present after a sleep interval even when total elapsed time is controlled. Walker & Stickgold (SL-01) establish that slow-wave sleep (SWS) in the first half of the night preferentially consolidates declarative memory (vocabulary). FSRS's minimum interval architecture already enforces overnight spacing algorithmically; what this decision adds is a communication obligation — users should be informed of this rationale ("Your cards are scheduled across nights, not within the same day, because memory consolidation happens during sleep"). Cross-reference: §1 TE-01, Cepeda et al. (2006) spacing theory.
 
 ---
 
@@ -924,7 +924,7 @@ The following conflicts between sections are flagged for Agent 2 resolution:
 - **Evidence:** SL-03 (Gais, Lucas & Born 2006), SL-04 (Dumay & Gaskell 2007)
 - **Section:** §10.7
 - **Priority:** MEDIUM
-- **Notes:** Gais et al. (SL-03) found that studying before sleep produces significantly better recall at 6-month follow-up than studying in the morning and remaining awake for hours before sleeping. The proximity of the study session to sleep onset — not merely the fact of sleeping — is the operative variable. The evening recommendation should be the platform default (not the mandatory setting) and explained briefly: "Reviewing before bed helps your brain consolidate vocabulary during sleep." Cross-reference: notification design must use achievement framing, not threat framing (§10.6 HB cluster). **⚠ Potential conflict with §8:** If §8 proposed a user-configurable notification time as the primary recommendation without specifying an evidence-based default, flag for Agent 2 alignment.
+- **Notes:** Gais et al. (SL-03) found that studying before sleep produces significantly better recall at 6-month follow-up than studying in the morning and remaining awake for hours before sleeping. The proximity of the study session to sleep onset — not merely the fact of sleeping — is the operative variable. The evening recommendation should be the platform default (not the mandatory setting) and explained briefly: "Reviewing before bed helps your brain consolidate vocabulary during sleep." Cross-reference: notification design must use achievement framing, not threat framing (§10.6 HB cluster). **⚠ Canonical alignment with §8:** User-configurable notification times should be paired with an evidence-based evening default recommendation.
 
 ---
 
@@ -1028,10 +1028,10 @@ The following conflicts between sections are flagged for Agent 2 resolution:
 
 ### Decision: Public leaderboards are prohibited as a default feature; if implemented at all, must be opt-in and private-by-default
 
-- **Evidence:** GX-01 (Hanus & Fox 2015 longitudinal failure study), GX-02 (Deci, Koestner & Ryan 1999 meta-analysis); §8 CC-01–CC-07 (malu/face cluster, cross-ref Agent 32)
+- **Evidence:** GX-01 (Hanus & Fox 2015 longitudinal failure study), GX-02 (Deci, Koestner & Ryan 1999 meta-analysis); §8 CC-01–CC-07 (malu/face cluster)
 - **Section:** §10.3, §10.9
 - **Priority:** HIGH — NON-NEGOTIABLE
-- **Notes:** Hanus & Fox (GX-01) demonstrate in a semester-long controlled study that gamified classrooms with leaderboards produce significantly lower intrinsic motivation, lower enjoyment, and lower performance than non-gamified controls; the leaderboard was identified as the primary damage mechanism through social comparison anxiety. Deci et al. (GX-02, 128 studies) establish that contingent expected rewards reliably undermine intrinsic motivation. For Indonesian learners, the §8 CC-cluster (cross-ref Agent 32) adds a second independent damage mechanism: malu/face-loss threat activated by public ranking. The double-harm structure (SDT damage + malu activation simultaneously) makes public leaderboards particularly contraindicated for this learner population.
+- **Notes:** Hanus & Fox (GX-01) demonstrate in a semester-long controlled study that gamified classrooms with leaderboards produce significantly lower intrinsic motivation, lower enjoyment, and lower performance than non-gamified controls; the leaderboard was identified as the primary damage mechanism through social comparison anxiety. Deci et al. (GX-02, 128 studies) establish that contingent expected rewards reliably undermine intrinsic motivation. For Indonesian learners, the §8 CC-cluster adds a second independent damage mechanism: malu/face-loss threat activated by public ranking. The double-harm structure (SDT damage + malu activation simultaneously) makes public leaderboards particularly contraindicated for this learner population.
 
 ---
 
@@ -1109,10 +1109,10 @@ The following conflicts between sections are flagged for Agent 2 resolution:
 
 ### Decision: All review practice is private by default; error displays are visible only to the FSRS algorithm, never to other users or publicly
 
-- **Evidence:** ID-01 (Horwitz et al. 1986 FLCA — fear of negative evaluation), ID-07 (Zhang 2019 meta-analysis r = −.33 FLCA/performance); §8 CC-01–CC-07 (malu, cross-ref Agent 32)
+- **Evidence:** ID-01 (Horwitz et al. 1986 FLCA — fear of negative evaluation), ID-07 (Zhang 2019 meta-analysis r = −.33 FLCA/performance); §8 CC-01–CC-07 (malu)
 - **Section:** §13.1, §13.7 (Decision 1)
 - **Priority:** HIGH — NON-NEGOTIABLE
-- **Notes:** Zhang (ID-07, 95 studies, N=8,712) quantifies the FLCA–performance relationship at r = −.33 — a medium-to-large effect. The fear of negative evaluation component of FLCA (Horwitz et al. ID-01) is specifically activated by public error visibility. Young (ID-05) identifies elimination of unnecessary public evaluation as the highest-priority low-anxiety design intervention. For Indonesian learners, the malu/face cluster (§8 CC, Agent 32) provides a second independent theoretical grounding for the same decision. The private-mode default addresses both simultaneously. This is a design decision that also creates a pedagogically unique value proposition: the SRS review environment is structurally the safest space to make — and learn from — the keigo calibration errors that would be professionally costly in the workplace (§14.3).
+- **Notes:** Zhang (ID-07, 95 studies, N=8,712) quantifies the FLCA–performance relationship at r = −.33 — a medium-to-large effect. The fear of negative evaluation component of FLCA (Horwitz et al. ID-01) is specifically activated by public error visibility. Young (ID-05) identifies elimination of unnecessary public evaluation as the highest-priority low-anxiety design intervention. For Indonesian learners, the malu/face cluster (§8 CC) provides a second independent theoretical grounding for the same decision. The private-mode default addresses both simultaneously. This is a design decision that also creates a pedagogically unique value proposition: the SRS review environment is structurally the safest space to make — and learn from — the keigo calibration errors that would be professionally costly in the workplace (§14.3).
 
 ---
 
@@ -1153,7 +1153,7 @@ The following conflicts between sections are flagged for Agent 2 resolution:
 
 ### Decision: Audio ≤64kbps AAC; card images ≤100KB; no JavaScript in card templates; note model fields ≤11
 
-- **Evidence:** §8 MALL cluster (cross-ref Agent 32 §8.10.3 StatCounter: Android 88.7%); CM-05 (Sung et al. 2016 mobile access inequality)
+- **Evidence:** §8 MALL cluster (§8.10.3 StatCounter: Android 88.7%); CM-05 (Sung et al. 2016 mobile access inequality)
 - **Section:** §17.6
 - **Priority:** HIGH — PLATFORM CONSTRAINT
 - **Notes:** The target demographic is Indonesian SSW applicants, for whom low-end Android devices represent the primary (often only) computing platform. These are not secondary constraints to be addressed post-launch — they are primary design requirements that determine whether the deck functions at all on the intended user's hardware. JavaScript in card templates is an AnkiDroid incompatibility; exceeding field count limits causes rendering failures. These constraints must be validated against each new card type before deployment.

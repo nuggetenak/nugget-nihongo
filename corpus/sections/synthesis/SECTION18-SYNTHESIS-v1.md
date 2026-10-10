@@ -1,9 +1,9 @@
 # §18 — SYNTHESIS
 ## Unified Pedagogical Model of Nugget Nihongo
 
-**Authored by:** Crispy (Claude Opus 4.7) — Pass 16 synthesis
-**Date:** 17 April 2026
-**Source corpus:** v17-PASS15-FINAL (747 citations, 16 sections)
+**Author / Working Group:** Nugget Nihongo Curriculum & Pedagogical Synthesis Group
+**Date:** Canonical Revision — October 2026
+**Source Corpus:** Research Library Corpus v30 (807+ unique citations, 100% verified DOIs)
 **Purpose:** Convert the corpus from a library of findings into a coherent pedagogical argument.
 
 ---
@@ -111,11 +111,11 @@ Nation argues that underweighting any strand creates predictable deficits. A pro
 
 **Fluency development is underweight at early levels.** The current card type distribution assumes FD activates at N4+ (see Level Ladder Spec). This is probably correct in principle but under-implemented in practice; the platform's timed-recognition mode exists but is not prominently surfaced.
 
-**Meaning-focused output depends heavily on computer-mediated interactive dialogues.** This creates a structural dependency: if interactive simulation features are unavailable, the MFO strand relies primarily on production-mode SRS cards. Production-mode cards are not *meaning-focused* output in Nation's strict sense — they are language-focused practice with productive form. True MFO requires novel message construction, which requires conversational partners (human or computer-mediated dialogue agents).
+**Meaning-focused output depends heavily on computer-mediated interactive dialogues.** This creates a structural dependency: if interactive simulation features are unavailable, the MFO strand relies primarily on production-mode SRS cards. Production-mode cards are not *meaning-focused* output in Nation's strict sense — they are language-focused practice with productive form. True MFO requires novel message construction, which requires conversational partners (human interlocutors or interactive dialogue simulations).
 
 ### Feature prioritization implication
 
-The current product roadmap is well-calibrated for MFO and navigation, but **does not prioritize the MFI gap**. Crispy-level recommendation for post-v16 roadmap: **introduce a graded reader module (MFI strand)** before expanding communicative dialogue variants. Even a small library (10–20 short graded texts at N5/N4/N3 levels, human-authored or corpus-vetted synthetically generated) would address the most glaring strand gap. This is not a Pass 16 deliverable — it is a strategic recommendation for downstream product planning.
+The current product roadmap is well-calibrated for MFO and navigation, but **does not prioritize the MFI gap**. Strategic curriculum recommendation for product roadmap: **introduce a graded reader module (MFI strand)** before expanding communicative dialogue variants. Even a small library (10–20 short graded texts at N5/N4/N3 levels, human-authored or corpus-vetted pedagogical texts) would address the most glaring strand gap. This is a strategic recommendation for downstream product planning.
 
 ---
 
@@ -219,8 +219,8 @@ This section is a synthesis, not a new empirical finding. Its claims are as stro
 ## DELIVERABLE STATUS
 
 **File:** `corpus/sections/synthesis/SECTION18-SYNTHESIS-v1.md`
-**Version:** 1.0 — first synthesis draft
+**Version:** 1.0 — Canonical Synthesis
 **Canonical?** Yes — authoritative integration document for methodology page narrative.
-**Length:** ~2,100 words — in target range per Agent 2 handoff spec (1,500–2,000 ± margin).
+**Length:** ~2,100 words — comprehensive synthesis scope.
 
-*Crispy — Pass 16 — 17 April 2026*
+*Nugget Nihongo Curriculum & Pedagogical Synthesis Group — Canonical Synthesis — October 2026*

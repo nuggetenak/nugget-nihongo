@@ -304,75 +304,194 @@ Di lantai pabrik dengan tingkat kebisingan tinggi, tata krama kesantunan normal 
 
 ---
 
-### 3.4 Sector 06: Automobile Maintenance & Repair (自動車整備業 - Jidousha Seibi)
-- **Supervising Authority:** Ministry of Land, Infrastructure, Transport and Tourism (MLIT / 国土交通省).
-- **Target Situation Analysis (TSA):** Periodic vehicle roadworthiness inspection (*shaken*), hydraulic lift operation, brake pad replacement, OBD-II electronic diagnostic scanning, wheel torque tightening, and tire mounting.
+### 3.4 Sector 06: Automobile Maintenance & Repair (自動車整備業 - Jidōsha Seibi)
+- **Supervising Authority:** Ministry of Land, Infrastructure, Transport and Tourism (MLIT / 国土交通省 自動車局) & Japan Automobile Service Promotion Association (JASPA / 日本自動車整備振興会連合会).
+- **Statutory Standards & CBT Matrix:** JASPA & MLIT 2024 [VS-54]. Prometric CBT Test Code: `AUTO-MECH-SSW1` (自動車整備 - 60 min, 30 questions covering powertrain, chassis, electrical/electronic OBD diagnostics, and vehicle safety inspection *shaken*; 65% pass mark).
+- **Operational 4 Sub-Disciplines Architecture:**
+  1. **シャーシ・足回り整備 (*Shashī / Ashi-mawari Seibi* - Chassis, Brakes & Suspension):**
+     - Penggantian bantalan rem cakram (*bureeki paddo*) dan sepatu rem tromol (*shū*), pengukuran ketebalan sisa bantalan dengan jangka sorong digital (*nokisu* limit $\ge 1.0\text{--}2.0\,\text{mm}$), pembuangan gelembung udara minyak rem hidrolik (*ea-nuki / bureeki furūdo kōkan*), penggantian bushing suspensi arm, balancing dinamis roda ban (*hoiiru baransā*), dan pengencangan mur roda dengan kunci torsi terkalibrasi (*toruku renchi*).
+  2. **パワートレイン・エンジンオーバーホール (*Pawātorein / Enjin Seibi* - Powertrain & Engine):**
+     - Pembongkaran kepala silinder (*shirindā heddo*), pembersihan kerak karbon katup (*barubu*), penyesuaian rantai timing (*taimingu chēn awase*), pengukuran celah busi (*puragu gyappu*), pengujian tekanan kompresi silinder (*konpuresshon tesuto*), penggantian oli mesin dan filter oli, serta vakum pengisian air radiator pendingin (*kūrando chāji*).
+  3. **電装品・OBD-II電子診断・EV/HEV整備 (*Densō-hin / OBD Shindan / EV-HEV* - Electrical & Hybrid/EV Safety):**
+     - Koneksi scan tool diagnostik ke soket OBD-II, pembacaan dan analisis Diagnostic Trouble Codes (DTC) serta live data CAN-bus (sensor $O_2$, rasio bahan bakar-udara $A/F$, throttle position), pengujian beban alternator dan aki 12V, serta protokol isolasi tegangan tinggi kendaraan listrik/hibrida (HEV/PHEV/BEV): pencabutan service plug pemutus tegangan (*kōden'atsu shadan sabisu puragu*), verifikasi nol volt (*den'atsu zero kakunin*), dan kewajiban sarung tangan isolasi karet kelas JIS (1.000V rated).
+  4. **定期点検・車検ライン検査 (*Teiki Tenken / Shaken Rain Kensa* - Statutory Safety Inspection Shaken):**
+     - Pengujian beam lampu utama (*heddoraito kensaki*), pengukuran kelurusan sudut roda dengan side slip tester (*saidosurippu tesutā*), analisis emisi gas buang karbon monoksida (CO) dan hidrokarbon (HC) (*haiki gasu anaraizā*), serta uji gaya pengereman total (*bureeki tesutā*) pada roller dynamometer.
 
 #### Atomized Technical Lexicon (Layer 2)
 | Kanji / Term | Kana Reading | Romaji | Technical Definition | Indonesian Gloss | High-Stakes Risk Category |
 |---|---|---|---|---|---|
-| 車検点検整備 | しゃけんてんけんせいび | *shaken tenken seibi* | Statutory statutory roadworthiness inspection overhaul | Servis uji kelaikan jalan kendaraan | Regulatory compliance |
-| リフトロック確認 | りふとろっくかくにん | *rifuto rokku kakunin* | Confirming two-post hydraulic lift safety pawl lock | Penguncian pengaman hidrolik lift mobil | Vehicle fall / Crushing death |
-| トルクレンチ締付 | とるくれんちしめつけ | *toruku renchi shimetsuke* | Tightening wheel lug nuts with calibrated torque | Pengencangan baut roda dengan kunci torsi | Wheel detachment disaster |
-| ブレーキフルード | ぶれーきふるーど | *bureeki furuudo* | Hygroscopic hydraulic brake fluid DOT4 | Minyak rem hidrolik | Brake fade / Loss of braking |
-| 空気圧点検 | くうきあつてんけん | *kuukiatsu tenken* | Tire inflation pressure check using dial gauge | Pemeriksaan tekanan angin ban | Tire blowout hazard |
-| オイル漏れ | おいるもれ | *oiru more* | Engine oil pan / transmission fluid seepage leak | Kebocoran oli mesin / transmisi | Engine seizure / Fire |
-| 診断機接続 | しんだんきせつぞく | *shindanki setsuzoku* | Connecting OBD-II scanner to onboard ECU port | Penghubungan alat scan diagnostik ECU | Electronic troubleshooting |
-| 冷却水補充 | れいきゃくすいほじゅう | *reikyakusui hojuu* | Radiator ethylene glycol coolant top-up | Penambahan cairan pendingin radiator | Overheating hazard |
-| パッド残厚 | ぱっどざんこう | *paddo zankou* | Brake pad friction lining remaining thickness | Ketebalan sisa kampas rem | Metal-to-metal rotor gouging |
-| バッテリー液補充 | ばってりーえきほじゅう | *batterii-eki hojuu* | Dilute sulfuric acid electrolyte water top-up | Penambahan air aki asam sulfat | Acid splatter / Explosion |
+| 車検法定点検整備 | しゃけんほうていてんけん | *shaken hōtei tenken seibi* | Statutory periodic roadworthiness inspection overhaul | Servis uji kelaikan jalan kendaraan berkala resmi | Inspection omission license revocation |
+| 2柱リフト安全ロック確認 | にちゅうりふとあんぜんろっく | *nichū rifuto anzen rokku kakunin* | Verifying mechanical safety lock pawl engagement on two-post lift | Penguncian mekanis pasak pengaman hidrolik lift dua tiang | Vehicle collapse & crush death |
+| 規定トルク締付・マーキング | きていとるくしめつけ | *kitei toruku shimetsuke / mākingu* | Calibrated torque wrench tightening & paint witness marking on lug nuts | Pengencangan mur roda dengan kunci torsi standar dan penandaan cat garis | Wheel separation at high speed |
+| ブレーキエア抜き作業 | ぶれーきえあぬき | *burēki ea-nuki sagyō* | Hydraulic brake line air bleeding using pressure bleeder | Pembuangan gelembung udara saluran minyak rem hidrolik | Total brake failure pedal sponge |
+| スキャンツール（OBD-II診断機） | すきゃんつーる | *sukyantsūru* | Handheld diagnostic scan tool reading engine ECU fault codes | Alat pemindai diagnostik digital komputer ECU mobil | Unidentified electrical misfire |
+| 高電圧サービスプラグ遮断 | こうでんあつさーびすぷらぐ | *kōden'atsu sābisu puragu shadan* | Isolating orange high-voltage main fuse disconnect plug on HEV/BEV | Pencabutan steker pemutus daya baterai tegangan tinggi mobil hibrida/EV | 650V fatal electrocution |
+| 絶縁手袋・絶縁工具点検 | ぜつえんてぶくろ | *zetsuen tebukuro / zetsuen kōgu* | Inspecting 1,000V certified dielectric rubber gloves with air leak test | Pengecekan sarung tangan karet dan perkakas isolasi 1.000V anti-bocor | High-voltage arc flash burn |
+| タイミングチェーン合いマーク | たいみんぐちぇーんあいまーく | *taimingu chēn ai-māku* | Aligning camshaft and crankshaft timing chain sprocket timing marks | Penyesuaian tanda sinkronisasi rantai timing poros bubungan | Valve-piston collision engine smash |
+| シリンダーヘッド締付順序 | しりんだーへっどしめつけ | *shirindā heddo shimetsuke junjo* | Spiral torque sequence for cylinder head bolts to prevent warpage | Urutan pengencangan spiral baut kepala silinder pencegah melengkung | Blown head gasket coolant leak |
+| ディスクローター摩耗限度 | でぃすくろーたーまもう | *disuku rōtā mamō gendo* | Measuring brake rotor minimum thickness with micrometer | Pengukuran ketebalan minimum cakram rem menggunakan mikrometer | Rotor cracking under hard braking |
+| 排気ガステスター（CO/HC測定） | はいきがすてすたー | *haiki gasu tesutā* | Exhaust emissions gas analyzer probe measuring CO and HC concentrations | Pipa sensor pengukur kadar emisi gas buang CO dan HC | Failure of shaken environmental test |
+| サイドスリップテスター | さいどすりっぷてすたー | *saidosurippu tesutā* | Dynamic toe-in/toe-out wheel alignment tester plate | Plat pengukur sudut kemudi roda depan dinamis | Severe uneven tire wear |
+| オイルエレメント交換 | おいるえれめんとこうかん | *oiru eremento kōkan* | Replacing spin-on engine oil filter cartridge and O-ring seal lubrication | Penggantian saringan oli mesin dan pelumasan sil karet | Oil leak & engine seizure |
+| 冷却水真空引き注入 | れいきゃくすいしんくうびき | *reikyakusui shinkūbiki chūnyū* | Vacuum filling radiator coolant to eliminate air pockets | Pengisian cairan pendingin radiator dengan sistem vakum anti-kantong udara | Cylinder head overheating warp |
+| バッテリー比重・テスター測定 | ばってりーひじゅう | *batterī hijū tesutā* | Measuring electrolyte hydrometer specific gravity and CCA load | Pengukuran berat jenis air aki dan daya arus start CCA | Battery acid blowout & cranking dead |
 
-#### Emergency Directives
-- 「リフト下がるぞ！車輪下から退避！」 (*Rifuto sagaru zo! Sharin shita kara taihi!* — Lift coming down! Evacuate from beneath wheels!)
-- 「ホイールナット規定トルク締め付けヨシ！」 (*Hoiiru natto kitei toruku shimetsuke yoshi!* — Wheel nuts torqued to specification OK!)
+#### 3 Full-Scale Garage Emergency Incident Simulations
+
+##### Simulasi A: Kegagalan Penguncian Lift Hidrolik / Kendaraan Miring di Atas Kepala (*Rifuto Rokku Hazure / Sharyō Kōraku Kiken*)
+- **Konteks & Pemicu:** Saat mengangkat minivan seberat 2.2 ton ke ketinggian 1.8 meter pada lift dua tiang hidrolik (*nichū rifuto*), terdengar suara patahan logam berderak (*gashan*). Lengan penopang kanan belakang terlepas dari titik tumpu sasis (*jakki appu pointo*), menyebabkan bodi mobil miring 25 derajat tepat di atas kepala dua teknisi yang bersiap melepas pipa knalpot.
+- **Aksi 10 Detik Pertama & Teriakan Akustik Gemba:**
+  1. Melompat mundur seketika keluar dari kolong mobil ke arah dinding bengkel.
+  2. Teriakkan panggilan evakuasi keras membahana:
+     「リフト倒壊の危険！全員車の下から出ろ！近づくな！非常停止ボタンを押せ！」 (*Rifuto tōkai no kiken! Zen'in kuruma no shita kara dero! Chikazuku na! Hijō teishi botan o ose!* — Risk of lift collapse! Everyone get out from under the car! Stay clear! Hit emergency stop button!)
+  3. Tekan tombol E-Stop pemutus hidrolik. Pasang tiang penyangga darurat hidrolik (*ankā sutando*) dari samping jika mobil dalam kondisi stabil parsial.
+  4. Lapor kepala bengkel (*kōjōchō*) dan dilarang keras mencoba menahan mobil dengan tangan atau balok kayu.
+
+##### Simulasi B: Ledakan Arus Pendek Baterai Tegangan Tinggi HEV/BEV (*Kōden'atsu Batterī Tanraku / Kanden Jiko*)
+- **Konteks & Pemicu:** Saat melakukan pembongkaran paket baterai lithium-ion 650V pada kendaraan hibrida, teknisi magang lupa mencabut service disconnect plug berwarna oranye dan menyentuhkan kunci pas logam non-isolasi ke terminal busbar tembaga, memicu kilatan busur api (*āku hōden*), ledakan suara dentuman keras, dan teknisi terlempar dengan luka bakar di tangan serta tidak sadarkan diri.
+- **Aksi 10 Detik Pertama & Evakuasi Bahaya Sengatan Listrik:**
+  1. Dilarang menyentuh tubuh korban dengan tangan telanjang sebelum memastikan isolasi listrik aman.
+  2. Gunakan tongkat penyelamat isolasi non-konduktif (*zetsuen resukyū fukku*) untuk menarik tubuh korban menjauh dari area baterai.
+  3. Teriakkan panggilan ambulans dan pemadam:
+     「高電圧感電事故！ブレーカー落とせ！触るな！AEDと救急車を要請！」 (*Kōden'atsu kanden jiko! Burēkā otose! Sawaru na! AED to kyūkyūsha o yōsei!* — High voltage electrocution! Drop the breaker! Do not touch! Call AED and ambulance!)
+  4. Cabut steker servis oranye dengan sarung tangan karet isolasi 1.000V.
+  5. SBAR Laporan Medis 119:
+     - **S (Situation):** 「自動車整備工場です。ハイブリッド車整備中に高電圧感電事故が発生、作業員1名が心肺停止状態です。」
+     - **B (Background):** 「650Vの直流電源に接触し、アーク放電による爆風と電撃を受けました。」
+     - **A (Assessment):** 「自発呼吸なし、橈骨動脈拍動なし、両手掌に重度熱傷痕あり。心肺蘇生（CPR）を開始しています。」
+     - **R (Recommendation):** 「高エネルギー感電熱傷対応の救急車緊急出動と除細動器（AED）の携行を求めます。」
+
+##### Simulasi C: Kebakaran Uap Bensin Saat Kuras Tangki Bahan Bakar (*Nenryō Tanku Doren Hakka*)
+- **Konteks & Pemicu:** Saat menguras bensin dari baut pembuangan tangki mobil tua (*tanku doren boruto*), uap bensin pekat merayap di lantai bengkel dan tersulut oleh percikan api dari lampu kerja inspeksi (*wāku raito*) yang terjatuh dan pecah bohlamnya, memicu kobaran api menjalar ke wadah penampung 20 liter bensin.
+- **Aksi 10 Detik Pertama & Protokol Pemadaman Kebakaran Bensin:**
+  1. Dilarang keras menyiram api bensin dengan air (air membuat bensin terapung dan kobaran api meluas seketika).
+  2. Teriakkan peringatan kebakaran kelas B:
+     「ガソリン火災だ！水をかけるな！粉末消火器持ってこい！全作業員退避！」 (*Gasorin kasai da! Mizu o kakeru na! Funmatsu shōkaki motte koi! Zen sagyōin taihi!* — Gasoline fire! Do not use water! Bring dry chemical powder extinguisher! All workers evacuate!)
+  3. Ambil APAR serbuk kimia kering ABC (*funmatsu shōkaki*), cabut pin pengaman, arahkan corong ke pangkal lidah api dengan gerakan menyapu dari jarak 2–3 meter.
+  4. Tekan tombol alarm kebakaran gedung dan hubungi 119.
 
 ---
 
-### 3.5 Sector 07: Shipbuilding & Ship Machinery (造船・舶用工業 - Zousen Hakuyou)
-- **Supervising Authority:** Ministry of Land, Infrastructure, Transport and Tourism (MLIT).
-- **Target Situation Analysis (TSA):** Hull steel block assembly, submerged arc welding, enclosed dry-dock sandblasting, marine diesel engine erection, and high-altitude scaffolding erection in shipyards.
+### 3.5 Sector 07: Shipbuilding & Ship Machinery (造船・舶用工業 - Zōsen / Hakuyō Kōgyō)
+- **Supervising Authority:** Ministry of Land, Infrastructure, Transport and Tourism (MLIT / 海事局) & Nippon Kaiji Kyokai (ClassNK / 日本海事協会).
+- **Statutory Standards & CBT Matrix:** ClassNK 2024 [VS-50]. Prometric CBT Test Specifications: `SHIP-WELD-SSW1` (溶接 - CO2/GMAW flux-core welding), `SHIP-PAINT-SSW1` (塗装 - Airless blast coating), `SHIP-MACH-SSW1` (鉄工・舶用艤装 - Machinery erection & hull fitting; 60 min, 65% pass mark).
+- **Operational 3 Sub-Disciplines Architecture:**
+  1. **船殻ブロック組立・大型溶接 (*Senkaku Burokku / Yōsetsu* - Hull Block Assembly & Naval Welding):**
+     - Fabrikasi dan perakitan blok baja lambung kapal berbobot puluhan ton, pengelasan busur fluks CO2 semi-otomatis (*tansangasu hanjidō yōsetsu*), pemanasan api pelurusan pelat (*hizumi kyōsei / gasu yaki-ire*), penyisipan strip keramik penahan cairan las (*seramikku bakkingu*), dan pemeriksaan cacat las ultrasonik (UT) / radiografi (RT).
+  2. **二重底・バラストタンク塗装 (*Nijū-tei Tosō* - Double Bottom & Ballast Tank Coating):**
+     - Pengecatan semprot airless (*earsu fukitsuke*) pada kompartemen tangki balas lambung ganda yang tertutup rapat, pemantauan konsentrasi uap tiner cat di bawah batas bawah ledakan (*bakuhatsu genkai / LEL < 10%*), ventilasi dorong-hisap kontinu, dan pencegahan listrik statis pada nosel semprot.
+  3. **舶用主機・軸系据付艤装 (*Hakuyō Shuki / Jiku-kei Gisō* - Marine Diesel Engine & Shaft Alignment):**
+     - Perakitan mesin diesel 2-tak raksasa di ruang mesin (*kikan-shitsu*), pengencangan baut kepala silinder dengan hidrolik tensioner (*yuatsu boruto tenshonā*), penyelarasan kelurusan poros baling-baling (*puropera jiku*) dengan sensor laser interferometri, dan pemasangan daun baling-baling kuningan pada poros tirus.
 
 #### Atomized Technical Lexicon (Layer 2)
 | Kanji / Term | Kana Reading | Romaji | Technical Definition | Indonesian Gloss | High-Stakes Risk Category |
 |---|---|---|---|---|---|
-| 船殻ブロック | せんかくぶろっく | *senkaku burokku* | Mega hull steel modular curved construction block | Blok rakitan lambung kapal baja | Multi-ton rigging hazard |
-| 炭酸ガス半自動溶接 | たんさんがすはんじどうようせつ | *tansangasu hanjidou yousetsu* | CO2 shielded semi-automatic flux-core welding | Las semi-otomatis gas pelindung CO2 | Flash burn / Fire hazard |
-| 酸素欠乏危険 | さんそけつぼうきけん | *sanso ketsubou kiken* | Confined space oxygen deficiency hazard (< 18% O2) | Bahaya kekurangan oksigen di ruang sempit | Fatal asphyxiation |
-| 換気ファン送風 | かんきふぁんそうふう | *kanki fan soufuu* | Forced ventilation ducting in double hull ballast tanks | Ventilasi udara paksa tangki lambung ganda | Toxic fume build-up |
-| 乾ドック注水 | かんどっくちゅうすい | *kandokku chuusui* | Flooding dry dock sluice gates for vessel float-off | Penggenangan air pintu dok kering | Water surge drowning hazard |
-| 溶接ヒューム | ようせつひゅーむ | *yousetsu hyuumu* | Airborne toxic zinc and metal welding fumes | Asap partikel las beracun | Severe pulmonary illness |
-| 高所作業車 | こうしょさぎょうしゃ | *kousho sagyousha* | Boom-type mobile elevating work platform (MEWP) | Kendaraan tangga hidrolik kerja tinggi | Overturn / Fall hazard |
-| 係船索 | けいせんさく | *keisensaku* | Heavy synthetic mooring hawser lines | Tali tambat kapal baja/sintetik | Snapback whip-kill hazard |
-| 舶用ディーゼル | はくようでぃーぜる | *hakuyou diizeru* | Two-stroke marine propulsion main engine | Mesin diesel penggerak utama kapal | Cranking / High pressure oil |
-| 歪み矯正 | ひずみきょうせい | *hizumi kyousei* | Flame heating line fairing to straighten steel plate | Pemanasan api pelurusan pelat baja lambung | Severe thermal distortion |
+| 船殻立体ブロック | せんかくりったいぶろっく | *senkaku rittai burokku* | Three-dimensional mega hull steel construction block | Blok konstruksi tiga dimensi baja lambung kapal | Multi-ton rigging drop disaster |
+| 炭酸ガスフラックスワイヤ溶接 | たんさんがすふらっくす | *tansangasu furakkusu yōsetsu* | FCAW CO2-shielded flux-cored arc welding on heavy naval plate | Pengelasan busur kawat fluks berpelindung gas CO2 pelat baja tebal | Lack of fusion weld crack |
+| 二重底バラストタンク閉鎖空間 | にじゅうていばらすとたんく | *nijū-tei barasuto tanku* | Confined double-bottom water ballast tank void space | Tangki balas lambung ganda ruang tertutup sempit | Fatal oxygen deficiency & toxic fumes |
+| 防爆型強制換気ブロワー | ぼうばくがたきょうせいかんき | *bōbaku-gata kanki burowā* | Explosion-proof forced air pneumatic ventilator blower | Blower ventilasi dorong udara paksa tipe anti-ledakan | Solvent vapor ignition & deflagration |
+| 爆発下限界（LEL）ガス検知器 | ばくはつげんかいがすけんち | *bakuhatsu genkai LEL gasu kenchiki* | Multi-gas detector measuring combustible paint vapor lower explosive limit | Detektor gas uap pelarut cat batas bawah ledakan LEL | Flash explosion in tank |
+| エアレススプレー塗装機 | えあれすすぷれーとそう | *earesu supurē tosōki* | High-pressure hydraulic airless paint spray coating pump | Mesin semprot cat hidrolik tekanan tinggi tanpa udara | Paint injection skin trauma |
+| 舶用主機油圧ボルトテンショナー | はくようしゅきゆあつぼると | *hakuyō shuki yuatsu boruto tenshonā* | Hydraulic bolt tensioner stretching diesel cylinder head studs | Alat penegang hidrolik baut tanam kepala silinder mesin kapal | High-pressure hydraulic oil burst |
+| プロペラ軸系レーザー芯出し | ぷろぺらじくけいれーざー | *puropera jikukēi rēzā shin-dashi* | Optical laser alignment of propeller shaft stern tube bearings | Penyelarasan kelurusan poros baling-baling kapal sistem laser | Catastrophic shaft bearing burn |
+| 線状加熱歪み矯正 | せんじょうかねつひずみ | *senjō kanetsu hizumi kyōsei* | Oxy-propane torch line heating and water quenching to fair buckled steel | Pemanasan garis api dan pendinginan air pelurus lengkungan pelat baja | Plate structural weakening |
+| 係船索スナップバックゾーン | けいせんさくすなっぷばっく | *keisensaku sunappubakku zōn* | Mooring line snapback recoil danger area during drydock undocking | Area bahaya lentingan balik putusnya tali tambat dok kapal | Fatal body bisecting strike |
+| 吊りワイヤー玉掛け点検 | つりわいやーたまがけてんけん | *tsuri-waiyā tamagake tenken* | Slings, shackles, and wire rope inspection before lifting block | Pengecekan kawat seling, segel, dan tali derek blok lambung | Snapped hoisting wire rope drop |
+| ゴライアスクレーン無線合図 | ごらいあすくれーんむせん | *goriasu kurēn musen aizu* | Radio transceiver hand-signal coordination for 1,000-ton gantry crane | Komunikasi radio dua arah pemandu derek goliath raksasa | Blind lift collision |
+| セラミック裏当て材圧着 | せらみっくうらあてざい | *seramikku uraate-zai acchaku* | Taping ceramic backing strips behind root gap for one-side welding | Pemasangan keramik penahan akar las satu sisi | Weld root burn-through |
+| 乾ドック注水開閉バルブ | かんどっくちゅうすい | *kandokku chūsui kaihei barubu* | Drydock sluice gate flooding valve for floating out vessel | Katup pintu air dok penggenang dok kering pelepasan kapal | Sudden rush of flood water |
+| 溶接部超音波探傷試験（UT） | ようせつぶちょうおんぱ | *yōsetsu-bu chōonpa tanshō shiken* | Ultrasonic non-destructive testing for internal naval weld inclusions | Uji ultrasonik non-destruktif cacat porusitas internal sambungan las | Hull rupture at heavy sea |
 
-#### High-Stakes Confined Space Directives
-- 「マンホールに入る前に酸素濃度測定ヨシ！21パーセント確認！」 (*Manhooru ni hairu mae ni sanso noudo sokutei yoshi! 21 paasento kakunin!* — Measure O2 before entering manhole OK! 21% verified!)
-- 「係船索スナップバックゾーンから退避しろ！」 (*Keisensaku sunappubakku zoon kara taihi shiro!* — Clear the mooring line snapback zone!)
+#### 3 Full-Scale Shipyard Drydock Emergency Incident Simulations
+
+##### Simulasi A: Ledakan Uap Cat Tinner di Ruang Palka Tangki Ganda (*Nijū-tei Tosō Yōzai Bakuhatsu*)
+- **Konteks & Pemicu:** Dua tukang cat menyemprotkan cat epoksi di dalam kompartemen tangki balas lambung ganda (*nijū-tei barasuto tanku*). Selang ventilasi blower tertekuk sehingga konsentrasi uap tiner naik melampaui batas $LEL \ge 10\%$. Saat rekan kerja mencabut steker lampu kerja biasa yang bukan tipe anti-ledakan (*hi-bōbaku*), terjadi percikan api dan meledakkan uap pelarut dengan kobaran bola api dahsyat.
+- **Aksi 10 Detik Pertama & Teriakan Akustik Gemba:**
+  1. Jangan masuk ke dalam manhole sebelum sistem ventilasi darurat dipasang.
+  2. Teriakkan panggilan evakuasi palka tertutup:
+     「二重底で爆発火災！マンホールから離れろ！ブロワー逆転排気！レスキュー隊要請！」 (*Nijū-tei de bakuhatsu kasai! Manhōru kara hanarero! Burowā gyakuten haiki! Resukyū-tai yōsei!* — Explosion in double-bottom! Stand clear of manhole! Reverse blower exhaust! Request rescue team!)
+  3. Tekan sirine alarm kebakaran drydock seketika.
+  4. Tim penyelamat mengenakan SCBA (alat bantu pernapasan tabung udara mandiri) dan tali harness keselamatan (*inochi-zuna*) sebelum menuruni manhole vertikal.
+
+##### Simulasi B: Jatuhnya Blok Baja Lambung Kapal Seberat 20 Ton dari Crane (*Kurēn Senkaku Burokku Kōraku Jiko*)
+- **Konteks & Pemicu:** Sebuah blok sekat baja kapal seberat 20 ton sedang dipindahkan oleh Goliath gantry crane di atas area dok perakitan. Kawat seling baja (*tsuri-waiyā*) mengalami gesekan pada sudut tajam pelat tanpa pelindung sudut (*kōnā ate*), putus mendadak dengan suara cambukan keras (*pashīn*), dan blok baja meluncur jatuh bebas ke lantai dok.
+- **Aksi 10 Detik Pertama & Komando Menghindar:**
+  1. Teriakkan peringatan jatuhnya beban derek sekuat tenaga:
+     「吊り荷落下！頭上危険！クレーン下から逃げろ！山側へ走れ！」 (*Tsuri-ni rakka! Zujō kiken! Kurēn shita kara nigero! Yamagawa e hashire!* — Falling load! Overhead danger! Run clear of crane! Run uphill!)
+  2. Seluruh pekerja melompat ke balik tiang baja struktural dok untuk menghindari hempasan serpihan pelat baja yang terpental.
+  3. Operator crane menghentikan seluruh pergerakan troli dan menurunkan kait derek kosong.
+  4. Lakukan penghitungan jumlah personel regu (*tenko*) seketika untuk memastikan tidak ada korban tertindih.
+
+##### Simulasi C: Kebocoran Katup Karbon Dioksida Pemadam Kamar Mesin (*Kikan-shitsu CO2 Shōka Kago-sō*)
+- **Konteks & Pemicu:** Saat menguji sistem alarm pemadam kebakaran kamar mesin (*kikan-shitsu*), katup solenoide sistem pelepasan total gas $CO_2$ terpicu secara tidak sengaja (*gohōsetsu*). Gas karbon dioksida bertekanan tinggi mulai mendesis mengisi seluruh ruangan mesin yang tertutup, menurunkan kadar oksigen di bawah 10% dalam hitungan 60 detik.
+- **Aksi 10 Detik Pertama & Evakuasi Cepat 30 Detik:**
+  1. Hentikan seluruh pekerjaan fitting dan jangan mencari barang bawaan.
+  2. Teriakkan komando evakuasi gas mati lemas:
+     「CO2放出警報！窒息するぞ！作業中止！非常階段から直ちに脱出！」 (*Shī-ō-tsū hōshutsu keihō! Chissoku suru zo! Sagyō chūshi! Hijō kaidan kara tadachi ni dasshutsu!*)
+  3. Panjat tangga darurat menuju dek terbuka dalam tempo $< 30$ detik.
+  4. Tutup pintu kedap air (*suimitsutobira*) kamar mesin dari luar dan kunci rapat untuk mencegah gas $CO_2$ merembes ke koridor akomodasi awak kapal.
 
 ---
 
-### 3.6 Sector 08: Aviation: Ground Handling & Maintenance (航空業 - Koukuu)
-- **Supervising Authority:** Ministry of Land, Infrastructure, Transport and Tourism (MLIT).
-- **Target Situation Analysis (TSA):** Airport tarmac ramp marshalling, aircraft pushback tug operation, cargo high-loader freight staging, passenger jet de-icing, and line maintenance tire/brake inspections.
+### 3.6 Sector 08: Aviation: Airport Ground Handling & Aircraft Maintenance (航空業: グランドハンドリング・航空機整備 - Kōkū)
+- **Supervising Authority:** Ministry of Land, Infrastructure, Transport and Tourism (MLIT / 航空局) & Japan Airport Ground Handling Association (JAGHA / 一般社団法人 航空グランドハンドリング協会).
+- **Statutory Standards & CBT Matrix:** JAGHA & MLIT 2024 [VS-51]. Prometric CBT Test Codes: `AERO-GND-SSW1` (グランドハンドリング - Ground Handling) & `AERO-MAINT-SSW1` (航空機整備 - Cabin/Line Maintenance; 60 min, 65% pass mark).
+- **Operational 3 Sub-Disciplines Architecture:**
+  1. **ランプ・マーシャリング・プッシュバック (*Rampu / Māshāringu / Pusshubakku* - Ramp Operations & Aircraft Movement):**
+     - Pemanduan parkir pesawat (*māshāringu*) menggunakan tongkat lampu berkedip pada apron bergaris kuning (*apuron teishi-sen*), pengoperasian traktor pendorong tanpa towbar (*tōbāresu torakutā*) untuk pushback keberangkatan, pemasangan bypass pin hidrolik kemudi roda depan (*nōzu gia baipasu pin*), peletakan ganjal roda karet ganda (*chōkusu-in*), dan menjaga batas aman zona bahaya hisapan mesin turbofan jet (*suikomi kiken kuiki* radius 5.0–7.5 meter pada idle).
+  2. **貨物・手荷物搭載（ULDハイローダー） (*Kamotsu / ULD Tōsai* - Cargo Staging & High-Loader Operations):**
+     - Pengoperasian mesin pengangkat gunting hidrolik (*hai-rōdā*), penataan dan penguncian kontainer kargo Unit Load Device (ULD / AKH / AKE) ke dalam kompartemen kargo dek bawah (*rōwā dekki*) pesawat lorong ganda/tunggal, verifikasi sensor kunci kait (*rakku rokku*), serta penanganan barang berbahaya DGA (baterai litium, es kering *dorai aisu*).
+  3. **給排水・キャビンサービス・防除氷作業 (*Kyūhaisui / Bōjōhyō* - Ground Servicing & Aircraft De-Icing):**
+     - Pengisian tangki air minum pesawat (*kyūsui-sha*), pengurasan tangki limbah toilet dengan selang vakum bersegel hermetis (*osuisō bābu*), siaga cuci kabin pergantian cepat 25 menit (*tān-araundo*), dan pengoperasian truk semprot pemanas glikol anti-es (*de-aishingu kā*) untuk mencairkan lapisan salju pada sayap dan ekor kemudi sebelum lepas landas.
 
 #### Atomized Technical Lexicon (Layer 2)
 | Kanji / Term | Kana Reading | Romaji | Technical Definition | Indonesian Gloss | High-Stakes Risk Category |
 |---|---|---|---|---|---|
-| マーシャリング | まーしゃりんぐ | *maasharingu* | Waving lighted wands to marshal aircraft to gate | Pemanduan parkir pesawat dengan tongkat sinyal | Ramp wingtip collision |
-| プッシュバック | ぷっしゅばっく | *pusshubakku* | Towbar tractor reversing aircraft from apron gate | Pendorongan mundur pesawat dengan traktor | Ground collision / Shear pin |
-| ジェットブラスト | じぇっとぶらすと | *jetto burasuto* | Dangerous high-velocity jet engine exhaust efflux | Semburan turbin jet mesin pesawat | Blown debris / Fatal impact |
-| 吸い込み危険区域 | すいこみきけんくいき | *suikomi kiken kuiki* | Jet engine ingestion danger hazard cone | Area bahaya hisapan turbin mesin jet | Fatal engine ingestion |
-| 輪止め装着 | わどめそうちゃく | *wadome souchaku* | Placing heavy rubber chocks against landing gear | Pemasangan ganjal roda karet pesawat | Aircraft rollback runaway |
-| ハイローダー操作 | はいろーだーそうさ | *hairoodaa sousa* | Operating main-deck hydraulic air cargo scissor lift | Pengoperasian scissor lift kargo pesawat | Hull puncture strike |
-| 防氷剤散布 | ぼうひょうざいさんぷ | *bouhyouzai sanpu* | De-icing / anti-icing glycol fluid spray on wings | Penyemprotan cairan anti-es pada sayap | Aerodynamic stall hazard |
-| FOD拾容点検 | えふおーでぃーしゅうようてんけん | *efu-oo-dii shuuyou tenken* | Foreign Object Debris inspection walk on taxiway | Pembersihan serpihan sampah asing di apron | Engine foreign ingestion |
-| 牽引バー連結 | けんいんばーれんけつ | *ken'in baa renketsu* | Securing aircraft towbar bypass pin to nose gear | Pemasangan pin bypass towbar roda depan | Steering hydraulic damage |
-| イヤーマフ着用 | いやーまふちゃくよう | *iyaamafu chakuyou* | Ear-defender acoustic muff wear against 110 dB noise | Pemakaian penutup telinga peredam bising | Acoustic hearing loss |
+| パドルマーシャリング合図 | ぱどるまーしゃりんぐ | *padoru māshāringu aizu* | Waving daylight batons or illuminated wands to guide aircraft into gate | Pemanduan arah parkir pesawat dengan tongkat sinyal di apron | Wingtip bridge strike |
+| トーバーレスプッシュバック | とーばーれすぷっしゅばっく | *tōbāresu pusshubakku* | Hydraulic cradle tractor lifting nosewheel for aircraft pushback | Pendorongan mundur pesawat dengan traktor hidrolik penjepit roda | Nose landing gear structural collapse |
+| ジェットエンジン吸い込み危険円 | じぇっとえんじんすいこみ | *jetto enjin suikomi kiken-en* | Hazard perimeter cone around spooling turbofan nacelle (5–7.5m) | Lingkaran perimeter bahaya hisapan turbin mesin jet berputar | Fatal human engine ingestion |
+| ジェットブラスト後方警戒 | じぇっとぶらすとこうほう | *jetto burasuto kōhō keikai* | Jet blast hazard zone behind tail of taxiing aircraft | Area bahaya hempasan semburan gas buang jet di belakang pesawat | Vehicle blow-over & projectile debris |
+| チョーク装着確認（イン・アウト） | ちょーくそうちゃく | *chōku sōchaku kakunin* | Chocks-in and chocks-out verification on main landing gear | Pemasangan dan pelepasan ganjal roda karet pesawat | Aircraft unattended rollback |
+| ステアリングバイパスピン | すてありんぐばいぱすぴん | *sutearingu baipasu pin* | Inserting lockout pin bypassing nosegear hydraulic steering | Pemasangan pin pengunci bypass hidrolik kemudi roda depan | Steering actuator cylinder blowout |
+| ULDコンテナロッキングラッチ | ゆーえるでぃーこんてな | *ULD kontena rokkingu racchi* | Engaging mechanical lock latches securing air cargo ULDs in bay | Penguncian gerigi kait kontainer kargo udara di kompartemen | In-flight cargo shift causing stall |
+| メインデッキハイローダー | めいんでっきはいろーだー | *mein dekki hairōdā* | High-capacity scissor-lift truck transferring containers into main cargo door | Truk scissor-lift hidrolik pengangkut kargo pintu utama | Aircraft fuselage skin puncture |
+| 防除氷作業（Type I / Type IV液） | ぼうじょひょうさぎょう | *bōjōhyō sagyō* | Spraying heated Type-I de-icing & Type-IV anti-icing fluid on wings | Penyemprotan cairan pemanas pengusir es Type-I dan anti-es Type-IV | Loss of aerodynamic lift & crash |
+| 便間折り返し（ターンアラウンド） | びんかんおりかえし | *binkan orikaeshi / tān-araundo* | Fast turnaround servicing routine in 30 minutes between flights | Prosedur persiapan cepat pesawat transit antara penerbangan | Rushed safety step oversight |
+| 航空機地上給電（GPU接続） | こうくうきちじょうきゅうでん | *kōkūki chijō kyūden GPU setsuzoku* | Connecting Ground Power Unit 115V 400Hz 3-phase cable to aircraft | Penghubungan kabel daya listrik darat GPU 400Hz ke pesawat | Electrical short & APU shutdown |
+| 汚水処理バルブ・ホース結合 | おすいしょりばるぶ | *osui shori barubu hōsu ketsugō* | Connecting vacuum waste extraction hose to aircraft lavatory port | Pemasangan selang penyedot tangki limbah toilet pesawat | Untreated biological waste sewage leak |
+| FOD捜索・路面異物除去 | えふおーでぃーそうさく | *FOD sōsaku romen ibutsu jokyo* | Walking inspection collecting Foreign Object Debris on ramp | Pemeriksaan jalan kaki pembersihan sampah dan baut asing apron | Punctured aircraft tire / engine intake |
+| 危険物搭載通知書（NOTOC） | きけんぶつとうさいつうち | *kikenbutsu tōsai tsūchisho / NOTOC* | Notification to Captain declaring dangerous goods Class 9 lithium batteries | Pemberitahuan resmi ke Kapten tentang muatan barang berbahaya | Undetected cargo fire in flight |
+| ボーディングブリッジドッキング | ぼーでぃんぐぶりっじ | *bōdingu burijji dokkingu* | Precision maneuvering of passenger boarding bridge canopy to door 1L | Pemasangan lorong belalai garbarata ke pintu kabin penumpang | Aircraft fuselage skin crunch |
 
-#### Emergency Runway Directives
-- 「エンジン回転中！吸い込み区域に近づくな！」 (*Enjin kaitenchuu! Suikomi kuiki ni chikazukuna!* — Engine spooling! Stay clear of intake hazard zone!)
-- 「車輪チョーク装着ヨシ！バイパスピン確認！」 (*Wheel chocks installed OK! Bypass pin confirmed!*)
+#### 3 Full-Scale Airport Apron Emergency Incident Simulations
+
+##### Simulasi A: Nyaris Terhisap ke Mesin Turbofan Jet Saat Lepas Ganjal Roda (*Jetto Enjin Inretto Suikomi Kiken*)
+- **Konteks & Pemicu:** Pilot pesawat Airbus A320 menyalakan mesin nomor 1 sebelum menerima sinyal konfirmasi pelepasan ganjal roda (*chōkusu-auto*). Seorang pekerja ground handling baru yang sedang membungkuk mengambil ganjal roda depan mulai tertarik oleh gaya hisap kuat turbofan jet (*suikomi ryoku*), helm pelindung dan kacamatanya terlepas tersedot ke arah intake mesin.
+- **Aksi 10 Detik Pertama & Teriakan Akustik Gemba:**
+  1. Pekerja segera merapatkan tubuh tiarap ke aspal apron (*fuse*) untuk meminimalkan luas permukaan seretan angin.
+  2. Kepala regu (*māsharā*) yang melihat situasi segera menyilangkan kedua tongkat sinyal di atas kepala membentuk huruf 'X' besar sambil menyalakan lampu merah darurat:
+     「エンジンカット！インレット吸い込み危険！エンジンを今すぐ止めろ！」 (*Enjin katto! Inretto suikomi kiken! Enjin o ima sugu tomero!* — Cut engines! Intake ingestion hazard! Cut engine right now!)
+  3. Hubungi kokpit via interkom kabel headset nosewheel (*heddosetto tsūwa*): 「Captain, emergency engine shutdown immediately! Ground crew down!」
+  4. Jangan pernah berdiri tegak atau berlari melawan arah aliran udara intake turbofan jet.
+
+##### Simulasi B: Tabrakan Traktor Kargo dengan Sayap Pesawat & Kebocoran Avtur (*Tōin Torakutā Shuyoku Shōtotsu / Nenryō Rōei*)
+- **Konteks & Pemicu:** Pengemudi traktor penarik bagasi (*tōin torakutā*) melaju melebihi batas kecepatan ramp (15 km/jam) di tengah hujan lebat. Roda traktor tergelincir di atas marka cat basah apron dan menghantam tangki bahan bakar sayap kanan pesawat Boeing 737. Pipa bahan bakar avtur retak dan menyemburkan bahan bakar jet A-1 bertekanan tinggi ke aspal.
+- **Aksi 10 Detik Pertama & Protokol Bahaya Kebakaran Avtur Ramp:**
+  1. Matikan kunci kontak traktor seketika untuk mencegah busur api alternator menyulut uap avtur.
+  2. Teriakkan panggilan evakuasi bahaya tumpahan bahan bakar:
+     「燃料漏れ発生！ジェット燃料流出！エンジン停止！火気厳禁！空港消防へ緊急通報！」 (*Nenryō-more hassei! Jetto nenryō ryūshutsu! Enjin teishi! Kaki genkin! Kūkō shōbō e kinkyū tsūhō!*)
+  3. Dilarang keras menyalakan radio non-intrinsik aman (*non-IS*) di dekat genangan bahan bakar.
+  4. Tebarkan pasir absorben atau spons penahan tumpahan kimia (*oiru fensu*) di sekeliling drainase parit apron untuk mencegah avtur mengalir ke gorong-gorong bandara.
+  5. Hubungi Layanan Pemadam Kebakaran Bandara (*Kūkō Shōbō-tai*) via hotline darurat apron.
+
+##### Simulasi C: Badai Angin Tiba-tiba & Kontainer ULD Terlepas di Apron (*Kyūfū Apron ULD Datsuraku*)
+- **Konteks & Pemicu:** Angin kencang badai monsun (*突風 - toppū*) berkecepatan 35 knot menerjang apron secara tiba-tiba. Tiga kontainer kargo aluminium Unit Load Device (ULD AKE) kosong yang belum sempat dipasang jaring pengikat (*kāgo netto*) terdorong angin badai dan meluncur kencang di atas lantai apron mendekati pesawat regional yang sedang menurunkan penumpang.
+- **Aksi 10 Detik Pertama & Pengamanan Muatan:**
+  1. Jangan mencoba menahan kontainer ULD logam seberat 100 kg yang meluncur cepat dengan tangan kosong (risiko fraktur tulang tangan/hancur).
+  2. Teriakkan komando darurat ke seluruh kru apron:
+     「ULD暴走！風下危険！コンテナが流れてる！車両でブロックしろ！搭乗橋停止！」 (*Yū-eru-dī bōsō! Kazashimo kiken! Kontena ga nagareteru! Sharyō de burokku shiro! Tōjōhyō teishi!*)
+  3. Kemudikan kendaraan ramp patroli secara perlahan dari arah samping untuk menghalangi jalur luncur ULD sebelum menabrak roda pendarat atau bodi pesawat.
+  4. Turunkan rem roda gerobak dolly (*dorī*) dan kaitkan pin pengunci mekanis seketika.
 
 ---
 
@@ -691,27 +810,64 @@ Sesuai standar penanganan bencana industri darurat MHLW dan kurikulum keselamata
 
 ---
 
-### 4.4 Sector 12: Forestry (林業 - Ringyou) [2024 Expansion]
-- **Supervising Authority:** Ministry of Agriculture, Forestry and Fisheries (MAFF).
-- **Target Situation Analysis (TSA):** Mountain steep-slope silviculture, seedling planting (*shokusui*), undergrowth clearing (*shitagari*), tree thinning (*kanbatsu*), chainsaw felling (*bassai*), cable yarder timber extraction, and log processor bucking.
+### 4.4 Sector 12: Forestry (林業 - Ringyō) [2024 Expansion]
+- **Supervising Authority:** Forestry Agency (林野庁 / MAFF) & National Forestry Workforce Securing Support Center Council (全国林業労働力確保支援センター協議会).
+- **Statutory Standards & CBT Matrix:** Forestry Agency 2024 [VS-52]. Prometric CBT Test Specifications: `FOREST-OP-SSW1` (林業 - Silviculture & Log Harvesting: 60 min, chainsaw felling safety, cable yarder extraction, heavy forestry machinery operation, steep slope terrain safety; 65% pass mark).
+- **Operational 3 Sub-Disciplines Architecture:**
+  1. **チェーンソー伐倒・造材作業 (*Cheensō Battō / Zōzai* - Chainsaw Felling & Bucking):**
+     - Penebangan pohon kayu cedar (*sugi*) dan cemara (*hinoki*) di lereng gunung curam, pembuatan takik rebah depan (*ukeguchi* sudut 30°–45° kedalaman 1/4–1/5 diameter batang), pemotongan takik punggung (*oiguchi* horizontal 2/3 tinggi takik depan), penyisihan kayu engsel penahan (*tsuru* ketebalan 1/10 diameter), pembersihan jalur evakuasi miring 45 derajat (*taihiro* 5–10 meter ke belakang atas), pembagian batang (*tamakiri*), serta kewajiban celana pengaman kevlar anti-gergaji (*chappusu*).
+  2. **架線集材・ウインチ集材 (*Kasen Shūzai / Uinchi* - Cable Skyline Yarder Extraction):**
+     - Pemasangan menara derek kabel gantung (*tawā yādā*), penarikan tali kawat utama (*mein rain*) dan tali pengangkut (*hōru bakku rain*), penyetelan rem drum hidrolik, pemasangan pengait kawat seling (*chōkā*), dan koordinasi sinyal peluit frekuensi tinggi (*denshi hoissuru / aizu*) untuk menarik kayu gelondongan menyeberangi lembah tebing.
+  3. **高性能林業機械操作 (*Kōseinō Ringyō Kikai* - Heavy Forestry Mechanization):**
+     - Pengoperasian mesin pemanen pohon ekskavator hidrolik (*hābesutā / purosessā*): pemotongan batang, pengupasan cabang otomatis (*edauchi*), pemotongan kayu sesuai ukuran komputerisasi, pengoperasian grapple loader (*gurappuru rōdā*) untuk menaikkan kayu ke truk tronton logging (*shinrin unpan torakku*), dan perawatan traksi ulat baja (*kyatorapira*).
 
 #### Atomized Technical Lexicon (Layer 2)
 | Kanji / Term | Kana Reading | Romaji | Technical Definition | Indonesian Gloss | High-Stakes Risk Category |
 |---|---|---|---|---|---|
-| チェーンソー伐倒 | ちぇーんそーばっとう | *cheensoo battou* | Felling standing mature trees with petrol chainsaw | Penebangan pohon dengan gergaji mesin | Kickback / Fatal tree crush |
-| 受け口・追い口 | うけぐち・おいぐち | *ukeguchi / oiguchi* | Directional notch undercut and back cut on trunk | Takik rebah depan dan takik punggung | Uncontrolled tree fall direction |
-| つる（折れ残り） | つる | *tsuru* | Hinge wood left intact between undercut and back cut | Kayu engsel penahan arah rebah pohon | Premature snapping tree twist |
-| 集材機・架線集材 | しゅうざいき・かせんしゅうざい | *shuuzaiki / kasen shuuzai* | Skyline cable yarder carriage hauling logs uphill | Penarikan kayu gelondongan kabel gantung | Wire rope failure whiplash |
-| かかり木処理 | かかりきしょり | *kakariki shori* | Dislodging a "widowmaker" felled tree hung up on branches | Penanganan pohon tumbang yang menyangkut | Sudden release crushing hazard |
-| 下草刈り | したくさかり | *shitakusa kari* | Clearing brush around saplings with brushcutter | Pembabatan semak belukar pelindung bibit | Blade bounce / Foot laceration |
-| 防護チャップス | ぼうごちゃっぷす | *bougo chappusu* | Ballistic Kevlar chainsaw safety chaps trousers | Celana pengaman serat kevlar anti-chainsaw | Leg laceration protection |
-| 間伐作業 | かんばつさぎょう | *kanbatsu sagyou* | Forest thinning to improve sunlight penetration | Penjarangan pohon hutan terencana | Slope rolling log hazard |
-| 斜面滑落注意 | しゃめんかつらくちゅうい | *shamen katsuraku chuui* | Steep slope slip and fall warning on loose scree | Bahaya terpeleset di lereng gunung curam | Gravity tumble injury |
-| 退避路確保 | たいひろかくほ | *taihiro kakuho* | Clearing 45-degree escape path before felling tree | Pembersihan jalur evakuasi saat pohon roboh | Escape route blockage fatal |
+| チェーンソー伐倒安全基準 | ちぇーんそーばっとう | *chēnsō battō anzen kijun* | Statutory chainsaw felling procedures and PPE compliance | Standar operasional keselamatan penebangan pohon gergaji mesin | Kickback & fatal tree crush |
+| 受け口・追い口・つる | うけぐち・おいぐち・つる | *ukeguchi / oiguchi / tsuru* | Directional undercut notch, back cut, and holding hinge wood | Takik rebah depan, takik punggung, dan engsel penahan arah | Uncontrolled tree twist & barber chair |
+| 伐倒退避路（45度斜め後方） | ばっとうたいひろ | *battō taihiro* | Clearing 45-degree uphill escape path before felling tree | Pembersihan jalur evakuasi 45 derajat ke arah belakang atas lereng | Worker crushed by falling trunk |
+| かかり木処理具（フェリングレバー） | かかりきしょりぐ | *kakariki shorigu / feringu rebā* | Cant hook and felling lever used to safely dislodge hung trees | Tuas pengungkit kayu pemutar pohon rebah yang tersangkut dahan | Sudden violent drop of widowmaker |
+| 防護チャップス（EN381-5認証） | ぼうごちゃっぷす | *bōgo chappusu* | Ballistic Kevlar chainsaw protective safety chaps Class 1 | Celana pelindung serat balistik kevlar penahan bilah chainsaw | Severed femoral artery bleeding |
+| タワーヤーダ架線集材 | たわーやーだかせんしゅうざい | *tawā yādā kasen shūzai* | Mobile tower yarder skyline carriage hauling logs over ravines | Menara kabel gantung derek penarik kayu melintasi jurang tebing | Snapped skyline whiplash fatality |
+| チョーカーマン合図笛 | ちょーかーまんあいずぶえ | *chōkāman aizu-bue* | High-pitch electronic signal whistle coordinating log rigging | Peluit elektronik sinyal pemandu pemasangan tali derek kayu | Premature winch haul crush |
+| プロセッサ造材・玉切り | ぷろせっさぞうざい | *purosessā zōzai / tamakiri* | Hydraulic excavator log processor delimbing and bucking | Mesin prosesor ekskavator pemotong ranting dan pembagi balok | Hydraulic hose blowout |
+| グラップルローダー積込 | ぐらっぷるろーだー | *gurappuru rōdā tsumikomi* | Rotating grapple excavator loading logs onto log trucks | Ekskavator capit hidrolik pemuat kayu gelondongan ke truk | Log rolling off truck bed |
+| 下草刈り機（刈払機）飛散防止 | したくさかりき | *shitakusa kariki hisan bōshi* | Brushcutter circular saw blade debris shield & shin guards | Pelindung serpihan batu dan pelindung tulang kering mesin potong rumput | High-speed stone projectile eye blind |
+| 斜面落石・転倒防止 | しゃめんらくせきてんとう | *shamen rakuseki tentō bōshi* | Preventing slope scree rockfall and slip on steep timber slopes | Pencegahan batu longsor dan terpeleset di lereng hutan curam | Fall down rocky ravine |
+| チェーンソーキックバック防止 | ちぇーんそーきっくばっく | *chēnsō kikkubakku bōshi* | Chain brake inertia activation upon guide bar nose kick | Pengaktifan rem rantai otomatis saat hidung bilah terlempar | Neck and facial chain laceration |
+| 林内作業車集材 | りんないさぎょうしゃ | *rinnai sagyōsha shūzai* | Tracked crawler mini-forwarder hauling logs on narrow logging roads | Kendaraan crawler roda rantai pengangkut kayu di jalan setapak hutan | Vehicle rollover down ravine |
+| 枯損木・偏心木見極め | こそんぼく・へんしんぼく | *kosonboku / henshinboku* | Inspecting rot decay and asymmetric crown weight distribution | Pemeriksaan pembusukan batang dan ketidakseimbangan beban tajuk pohon | Sudden premature tree snap |
+| 蜂刺され（アナフィラキシー）対策 | はちさされ | *hachi-sasare taisaku* | Emergency epinephrine auto-injector kit for hornet stings | Kotak pertolongan darurat sengatan tawon suzumebachi hutan | Fatal anaphylactic shock |
 
-#### Emergency Directives
-- 「倒れるぞー！退避！山側へ逃げろ！」 (*Taoreru zoo! Taihi! Yamagawa e nigero!* — Tree falling! Evacuate uphill immediately!)
-- 「かかり木の下に入るな！絶対に揺するな！」 (*Kakariki no shita ni hairuna! Zettai ni yusuruna!* — Never walk beneath a hung-up tree! Do not shake it!)
+#### 3 Full-Scale Mountain Steep-Slope Forestry Emergency Simulations
+
+##### Simulasi A: Pohon Rebahan Menimpa Pekerja Akibat Patah Engsel (*Tsuru Hason / Jumoku Tōboku Shikitotsu*)
+- **Konteks & Pemicu:** Saat menebang pohon cedar berdiameter 70 cm di lereng gunung bersudut 35 derajat, penebang memotong takik punggung (*oiguchi*) terlalu dalam hingga memotong habis kayu engsel penahan (*tsuru*). Pohon berputar tak terkendali dan roboh ke arah kiri menyimpang 90 derajat dari takik rebah, batangnya menghantam kaki asisten penebang yang berdiri di jalur luncur.
+- **Aksi 10 Detik Pertama & Teriakan Akustik Gemba:**
+  1. Hentikan putaran rantai chainsaw dengan menekan rem tangan seketika.
+  2. Teriakkan peringatan bahaya pohon tumbang ke seluruh punggung bukit:
+     「倒れるぞー！つるが折れた！退避！山側へ逃げろ！」 (*Taoreru zoo! Tsuru ga oreta! Taihi! Yamagawa e nigero!* — Tree falling! Hinge wood snapped! Evacuate uphill immediately!)
+  3. Gunakan dongkrak hidrolik mini atau felling lever untuk mengangkat batang kayu yang menindih kaki korban.
+  4. Periksa pulsasi arteri dorsalis pedis dan imobilisasi fraktur tulang tungkai dengan bidai ranting kayu.
+
+##### Simulasi B: Tendangan Balik Bilah Chainsaw (*Cheensō Kikkubakku*) Menghantam Bahu
+- **Konteks & Pemicu:** Saat memotong dahan (*edauchi*) di bawah pohon tumbang, ujung atas hidung bilah pemandu chainsaw (*gaido bā no sentō*) membentur dahan tersembunyi yang keras. Terjadi fenomena kickback mendadak yang melemparkan gergaji berputar ke arah bahu dan wajah operator dengan kecepatan tinggi.
+- **Aksi 10 Detik Pertama & Evakuasi Cedera Robek:**
+  1. Rem rantai inersia otomatis aktif menghentikan bilah rantai sebelum memotong leher, namun gigi rantai merobek jaket pelindung dan menggores otot bahu.
+  2. Teriakkan panggilan medis ke rekan kerja:
+     「キックバック発生！負傷！エンジン停止！救急包帯持ってこい！」 (*Kikkubakku hassei! Fushō! Enjin teishi! Kyūkyū hōtai motte koi!* — Kickback occurred! Injured! Cut engine! Bring emergency bandage!)
+  3. Lakukan balut tekan cepat (*appaku shihō*) dengan kain kassa steril untuk menghentikan pendarahan luar.
+  4. Bimbing korban berjalan perlahan ke titik evakuasi jalan logging (*rindō*) untuk penjemputan ambulans atau helikopter penyelamat pegunungan.
+
+##### Simulasi C: Putusnya Kawat Baja Menara Derek Penarik Kayu Gelondongan (*Kasen Shūzai Wāyā Danretsu*)
+- **Konteks & Pemicu:** Menara derek tower yarder sedang menarik 3 gelondong kayu besar seberat 4 ton melintasi jurang jurang tebing. Kayu tersangkut tonjolan batu padas (*iwa ni kenshō*). Tegangan kawat seling utama (*mein rain*) melonjak drastis melebihi batas beban aman dan putus mendadak dengan suara letupan keras seperti tembakan meriam (*dōn*), kawat baja berputar mencambuk pepohonan di sekelilingnya.
+- **Aksi 10 Detik Pertama & Peringatan Cambukan Kawat Baja:**
+  1. Tiarap rapat ke tanah di balik tunggul pohon besar (*kirikabu*) untuk menghindari kibasan kawat baja (*waiyā no wippu*).
+  2. Teriakkan peringatan darurat:
+     「メインライン断裂！ワイヤー跳ねるぞ！伏せろ！集材機止めろ！」 (*Mein rain danretsu! Waiyā haneru zo! Fusero! Shūzaiki tomero!* — Skyline snapped! Wire rope whipping! Hit the ground! Stop the yarder winch!)
+  3. Operator menara derek segera melepas kopling dan menginjak rem drum darurat.
+  4. Lakukan verifikasi visual bahwa kawat baja telah berhenti bergerak total sebelum ada anggota regu yang berdiri.
 
 ---
 
@@ -1105,27 +1261,68 @@ Indonesian learners frequently experience paralysis, nervous smiles (*senyum can
 
 ---
 
-### 5.5 Sector 18: Railway Operations & Maintenance (鉄道業) [2024 Expansion]
-- **Supervising Authority:** Ministry of Land, Infrastructure, Transport and Tourism (MLIT).
-- **Target Situation Analysis (TSA):** Midnight ballast track tamping, overhead catenary line electrical inspection, rolling stock bogie and brake shoe overhaul, station platform crowd dispatch, and train emergency halt signaling.
+### 5.5 Sector 18: Railway Operations & Maintenance (鉄道業 - Tetsudō) [2024 Expansion]
+- **Supervising Authority:** Ministry of Land, Infrastructure, Transport and Tourism (MLIT / 鉄道局) & Japan Railway Rolling Stock & Track Maintenance Consortium.
+- **Statutory Standards & CBT Matrix:** MLIT 2024 [VS-53]. Prometric CBT Test Specifications: `RAIL-TRACK-SSW1` (線路保守 - Track maintenance & civil infrastructure), `RAIL-ELEC-SSW1` (電気・架線・信号 - Catenary overhead power & signaling), `RAIL-ROLL-SSW1` (車両整備 - Rolling stock bogie & mechanical overhaul; 60 min, 65% pass mark).
+- **Operational 3 Sub-Disciplines Architecture:**
+  1. **線路軌道保守・マルチプルタイタンパー (*Senro Kidō / Tairō* - Track Alignment & Ballast Maintenance):**
+     - Pemeliharaan jalur rel tengah malam jendela waktu tertutup (*shūden-go shindai sagyō* 01:00–04:30), pemadatan batu ballast dengan mesin tie tamper otomatis (*maruchipuru taitanpā*), pengelasan rel termit (*terumitto yōsetsu*), pengukuran celah lebar rel (*kikan sokutei* standar 1.067 mm / Shinkansen 1.435 mm), serta pengecekan kelurusan lengkungan (*tōri / kōtei*) dengan sensor laser.
+  2. **架線・電力・信号通信設備 (*Kasen / Denryoku / Shingō* - Overhead Catenary, Power & Signaling):**
+     - Verifikasi pemutusan tegangan listrik aliran atas (LAA) 1.500V DC / 25.000V AC (*kasen kōden'atsu shadan*), pemasangan tongkat arde pembumian pendek (*kōtō setchi-bō*), inspeksi keausan kawat kontak tembaga pantograf (*masshō-sen*), pengetesan relai sirkuit rel (*kidō kairo*), dan pengoperasian sinyal bendera siang/lampu lentera (*kantera*).
+  3. **鉄道車両台車・機器解体検査 (*Tetsudō Sharyō / Daisha Seibi* - Rolling Stock Bogie & Mechanical Overhaul):**
+     - Pembongkaran bogie roda kereta api (*daisha kaitai*), uji keretakan non-destruktif partikel magnetik (MT) pada poros gandar (*shajiku*), pembubutan profil tapak roda aus (*sharin senban*), pengujian silinder rem udara bertekanan (*kūki bureeki*), dan penggantian pegas suspensi udara (*kūki-bane*).
 
 #### Atomized Technical Lexicon (Layer 2)
 | Kanji / Term | Kana Reading | Romaji | Technical Definition | Indonesian Gloss | High-Stakes Risk Category |
 |---|---|---|---|---|---|
-| 線路保守点検 | せんろほしゅてんけん | *senro hoshu tenken* | Overnight track ballast, tie, and rail alignment check | Pemeliharaan dan pemeriksaan rel kereta api | Train derailment disaster |
-| 架線電圧遮断 | かせんでんあつしゃだん | *kasen den'atsu shadan* | Confirming 1,500V DC overhead wire power shutdown | Pemutusan aliran listrik kabel listrik atas (LAA) | Fatal electrocution |
-| 非常列車停止ボタン | ひじょうれっしゃていし | *hijou ressha teishi* | Platform emergency red button stopping trains | Tombol darurat peron penghenti kereta | Track trespass collision |
-| 台車ブレーキ点検 | だいしゃぶれーき | *daisha bureeki* | Inspecting bogie disc brake calipers and air hoses | Pemeriksaan rem bogie roda kereta | Brake failure runaway |
-| 線路閉鎖確認 | せんろへいさかくにん | *senro heisa kakunin* | Dispatcher clearance locking track segment for work | Konfirmasi penutupan petak jalur rel | Collision with incoming train |
-| 指差喚呼（指差呼称） | しさかんこ | *shisa kanko* | High-precision pointing and calling vocalization | Tunjuk-sebut sinyal kereta dengan suara lantang | Operating signal oversight |
-| 合図旗・カンテラ | あいずき・かんてら | *aizuki / kantera* | Day signaling flags and night illuminated lantern | Bendera dan lampu lentera sinyal masinis | Misunderstood train movement |
-| ホーム転落防止 | ほーむてんらくぼうし | *hoomu tenraku boushi* | Guiding passengers clear of edge / platform screen doors | Pencegahan penumpang jatuh ke rel peron | Passenger track strike |
-| 軌間測定 | きかんそくてい | *kikan sokutei* | Measuring gauge distance between rails (1067mm/1435mm) | Pengukuran lebar celah antar rel | Gauge widening derailment |
-| 終電後作業着手 | しゅうでんごさぎょう | *shuudengo sagyou* | Commencing track repair only after final train passes | Memulai pekerjaan hanya setelah kereta terakhir | Struck by unscheduled train |
+| 線路閉鎖手続確認 | せんろへいさ | *senro heisa tetsuzuki kakunin* | Dispatcher block authorization locking track segment from unscheduled trains | Konfirmasi prosedur penutupan petak jalur rel dari kereta tak terjadwal | Struck by incoming train |
+| 架線停電・短絡接地器具 | かせんていでん | *kasen teiden / tanraku setchi kigu* | High-voltage catenary power shutdown & grounding clamp hookup | Pemutusan aliran listrik kabel LAA 1.500V dan pemasangan arde pengaman | Fatal high-voltage electrocution |
+| マルチプルタイタンパー締固め | まるちぷるたいたんぱー | *maruchipuru taitanpā shimegatame* | Ballast tamping machine vibrating and compacting track ballast | Mesin tie tamper pemadat dan perata batu ballast bantalan rel | Track buckle derailment |
+| テルミット溶接作業 | てるみっとようせつ | *terumitto yōsetsu sagyō* | Thermite exothermic chemical reaction welding joining continuous rails | Pengelasan termit kimia suhu 2.500°C penyambung rel kontinu | Molten metal splatter burn |
+| 軌間・カント・高低測定 | きかん・かんと・こうてい | *kikan / kanto / kōtei sokutei* | Measuring track gauge width, superelevation cant, and vertical profile | Pengukuran lebar rel, sudut kemiringan tikungan, dan kerataan vertikal | High-speed train rollover |
+| 指差呼称（指差喚呼） | しさこしょう | *shisa koshō / shisa kanko* | Mandatory pointing-and-calling vocalization for all signal/switch states | Tunjuk-sebut sinyal dan wesel dengan intonasi lantang tegas | Signal misinterpretation disaster |
+| 列車見張員・退避警報 | れっしゃみはりいん | *ressha mihari-in / taihi keihō* | Dedicated track watchman sounding loud acoustic horn for inbound trains | Petugas jaga khusus pengawas jalur pembunyi klakson darurat | Crew struck on blind curve |
+| 台車輪軸・磁粉探傷試験 | だいしゃりんじく | *daisha rinjiku jifun tanshō shiken* | Magnetic particle non-destructive testing for axle fatigue micro-cracks | Uji partikel magnetik deteksi retak lelah poros gandar bogie | Catastrophic axle fracture derailment |
+| 車輪踏面旋盤加工 | しゃりんとうめんせんばん | *sharin tōmen senban kakō* | Truing wheel tread profile and removing flat spots on underfloor lathe | Pembubutan profil tapak roda kereta penghilang cacat aus | Violent train hunting oscillation |
+| 空気ブレーキ弁気密試験 | くうきぶれーきべん | *kūki burēki-ben kimitsu shiken* | Pneumatic air brake distributor valve pressure leakage testing | Uji kekedapan tekanan katup distributor rem udara kereta api | Total train brake loss runaway |
+| パンタグラフ舟体すり板 | ぱんたぐらふしゅうたい | *pantagrafu shūtai suri-ita* | Inspecting carbon contact strips on pantograph collecting current | Pemeriksaan ketebalan pelat karbon kontak arus listrik pantograf | Overhead catenary wire severing |
+| 転轍器（ポイント）密着点検 | てんてつきぽいんと | *tentetsuki pointo micchaku tenken* | Verifying turnout switch rail zero-gap fit against stock rail | Pengecekan kerapatan lidah wesel rel pemindah jalur | Switch split train derailment |
+| 軌道短絡（軌道回路）点検 | きどうたんらく | *kidō tanraku kairo tenken* | Testing electrical track circuit shunt indicating train occupancy | Pengujian sirkuit arus listrik rel penanda posisi kereta | Phantom track block clearance |
+| 非常停止合図灯（カンテラ） | ひじょうていしあいずとう | *hijō teishi aizutō / kantera* | Waving red emergency flare or lantern to halt train in emergency | Pengayunan lentera sinyal merah darurat penghenti kereta | Train collision with obstacle |
+| ホームドア開閉安全確認 | ほーむどあかいへい | *hōmudoa kaihei anzen kakunin* | Verifying platform screen doors interlocked with train departure | Pengecekan pintu peron otomatis terkunci sebelum kereta meluncur | Passenger dragging by train |
 
-#### Absolute Railway Zero-Tolerance Safety Directives
-- 「下り接近！退避線へ退避！作業中止！」 (*Kudari sekkin! Taihisen e taihi! Sagyou chuushi!* — Inbound train approaching! Evacuate to refuge siding! Stop work immediately!)
-- 「出発信号機、進行！指差喚呼、よし！」 (*Shuppatsu shingouki, shinkou! Shisa kanko, yoshi!* — Departure signal green! Pointing and calling, OK!)
+#### 3 Full-Scale Railway Gemba Emergency Incident Simulations
+
+##### Simulasi A: Kereta Tak Terjadwal Melintas Saat Perbaikan Rel Malam Hari (*Hoshū Sagyou-chū Resha Sekkin / Miharikyaku Keihō*)
+- **Konteks & Pemicu:** Pukul 02:15 dini hari, sebuah regu beranggotakan 6 teknisi sedang mengganti bantalan rel kayu (*makuragi*) di tikungan jalur pegunungan berkabut tebal. Tiba-tiba kereta uji inspeksi lintasan (*shisō ressha*) yang tidak terjadwal muncul dari balik terowongan berjarak 400 meter dengan kecepatan 80 km/jam.
+- **Aksi 10 Detik Pertama & Teriakan Akustik Gemba:**
+  1. Petugas pengawas jalur (*ressha mihari-in*) meniup terompet darurat gas bertekanan tinggi (*taihi rappa*) dengan nada melengking panjang.
+  2. Teriakkan panggilan evakuasi seketika:
+     「上り接近！列車が来るぞ！道具を捨てろ！退避線へ走れ！」 (*Nobori sekkin! Ressha ga kuru zo! Dōgu o sutero! Taihisen e hashire!* — Inbound train approaching! Drop your tools! Run to the refuge siding!)
+  3. Seluruh pekerja segera melompat ke parit samping luar rel atau ceruk darurat terowongan (*taihi-ko*), memunggungi arah hembusan angin kereta sambil menundukkan kepala.
+  4. Pengawas mengayunkan lentera sinyal merah (*kantera*) berputar di atas kepala ke arah masinis untuk memicu pengereman darurat (*hijō burēki*).
+
+##### Simulasi B: Busur Api Listrik Arus Pendek Tegangan Tinggi Pantograf 1.500V (*Kasen Kōden'atsu Āku Hōden / Kanden Jiko*)
+- **Konteks & Pemicu:** Teknisi pemeliharaan jaringan kabel listrik atas (*kasen shagyōsha*) menaiki platform tangga isolasi untuk memeriksa kawat kontak tembaga. Petugas gardu induk (*hensensho*) salah membuka sakelar daya, menyalurkan kembali arus listrik DC 1.500V saat tongkat arde pembumian darurat (*setchi-bō*) belum dilepas sempurna, memicu ledakan busur listrik dahsyat (*āku hōden*) yang membakar pakaian teknisi di atas perancah.
+- **Aksi 10 Detik Pertama & Pemutusan Arus Darurat:**
+  1. Dilarang menyentuh tangga logam atau kabel derek perancah sebelum konfirmasi pemutusan daya gardu.
+  2. Teriakkan instruksi ke operator komunikasi gardu:
+     「架線でアーク放電！感電事故！今すぐ変電所ブレーカーを遮断しろ！」 (*Kasen de āku hōden! Kanden jiko! Ima sugu hensensho burēkā o shadan shiro!*)
+  3. Verifikasi lampu indikator pembumian padam dan gunakan tongkat pengait isolasi 20 kV untuk menarik tubuh korban turun ke lantai kerja.
+  4. Lakukan evaluasi henti jantung seketika dan pasang bantalan elektroda AED di area bebas induksi listrik.
+
+##### Simulasi C: Terjepit Roda Gandar Bogie Kereta Saat Pelepasan Hidrolik (*Daisha Sharin Kōkan Makikomi*)
+- **Konteks & Pemicu:** Di bengkel depo kereta (*sharyō kichi*), gandar roda seberat 1.5 ton sedang diturunkan dari kerangka bogie (*daisha*) menggunakan lift hidrolik lantai (*daisha rifutā*). Saat memandu posisi gandar dengan tangan, kaki seorang mekanik terselip ke celah rel pemandu dan lengan kanannya tertarik masuk ke bawah lingkaran baja roda gandar yang sedang bergerak turun.
+- **Aksi 10 Detik Pertama & Penghentian Hidrolik Kritis:**
+  1. Tendang pedal penghenti darurat kaki lift (*futto E-sutoppu*) seketika.
+  2. Teriakkan pemutus daya hidrolik:
+     「車輪に挟まれた！リフター止めろ！油圧を逆転させて上げろ！」 (*Sharin ni hasamareta! Rifutā tomero! Yuatsu o gyakuten sasete agero!* — Trapped in wheel! Stop the lifter! Reverse hydraulic and raise it up!)
+  3. Putar katup pembebas tekanan hidrolik manual untuk menaikkan kembali gandar roda 5 cm agar lengan korban bebas dari tekanan roda.
+  4. SBAR Laporan Medis 119:
+     - **S (Situation):** 「鉄道車両基地です。台車の車輪降下作業中に右腕が車輪下部に挟まれ、重度圧挫傷が発生しました。」
+     - **B (Background):** 「1.5トンの車輪アセンブリによる挟み込み事故です。油圧を解除して救出しました。」
+     - **A (Assessment):** 「右前腕部の骨折の疑い、激しい出血、末梢の脈拍微弱、血圧低下（ショックバイタル）が見られます。」
+     - **R (Recommendation):** 「外傷専門チームと輸液準備を整えた救急車の至急出動をお願いします。」
 
 ---
 

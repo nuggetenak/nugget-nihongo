@@ -79,7 +79,7 @@ Marriott (1995) **[SC-11]**, in a study of exchange students' acquisition of Jap
 | SC-02 | Canale, M., & Swain, M. (1980). Theoretical bases of communicative approaches to second language teaching and testing. *Applied Linguistics, 1*(1), 1–47. https://doi.org/10.1093/applin/1.1.1 |
 | SC-03 | Bachman, L. F. (1990). *Fundamental considerations in language testing.* Oxford University Press. ISBN: 978-0-19-437003-4. |
 | SC-04 | Bachman, L. F., & Palmer, A. S. (1996). *Language testing in practice: Designing and developing useful language tests.* Oxford University Press. ISBN: 978-0-19-437148-2. |
-| SC-05 | Cook, H. M. (2008). *Socializing identities through speech style: Learners of Japanese as a foreign language.* Multilingual Matters. ISBN: 978-1-84769-026-1. *(Cross-reference: registered as SC-05 in §15 citation register. SC-05 is the §14 primary citation record. Agent 37/38 title-verify flag carried forward from SC-05 open flag.)* |
+| SC-05 | Cook, H. M. (2008). *Socializing identities through speech style: Learners of Japanese as a foreign language.* Multilingual Matters. ISBN: 978-1-84769-026-1. *(Cross-reference: registered as SC-05 in §15 citation register. SC-05 is the §14 primary citation record. Title confirmed via ISBN.)* |
 | SC-06 | Pizziconi, B. (2011). Honorifics: Cultural scripts, professional standards or local achievements in Japanese? *Pragmatics, 21*(3), 383–413. https://doi.org/10.1075/prag.21.3.04piz |
 | SC-07 | Siegal, M. (1996). The role of learner subjectivity in second language sociolinguistic competency: Western women learning Japanese. *Applied Linguistics, 17*(3), 356–382. https://doi.org/10.1093/applin/17.3.356 |
 | SC-08 | Kasper, G., & Rose, K. R. (2002). *Pragmatic development in a second language.* Blackwell. ISBN: 978-0-631-21939-1. |
@@ -87,7 +87,7 @@ Marriott (1995) **[SC-11]**, in a study of exchange students' acquisition of Jap
 | ~~SC-10~~ | Blum-Kulka, S., House, J., & Kasper, G. (Eds.). (1989). *Cross-cultural pragmatics: Requests and apologies.* Ablex. ISBN: 978-0-89391-555-1. **[RETIRED — DUP-08 — canonical ID: CP-07]** |
 | SC-11 | Marriott, H. (1995). The acquisition of politeness patterns by exchange students in Japan. In B. F. Freed (Ed.), *Second language acquisition in a study abroad context* (pp. 197–224). John Benjamins. https://doi.org/10.1075/sibil.9.11mar |
 
-**SC-12–SC-14:** Reserved for Agent 19 (§14 Part 2: §14.4–§14.6).
+**SC-12–SC-14:** Designated for §14 Part 2 (§14.4–§14.6).
 
 ---
 
@@ -101,7 +101,7 @@ Marriott (1995) **[SC-11]**, in a study of exchange students' acquisition of Jap
 
 ## SCOPE & POSISI DALAM CORPUS
 
-§14 Part 2 mengisi gap kritikal dalam justifikasi pedagogis Nugget Nihongo: **mengapa pragmatic competence — kemampuan menggunakan bahasa secara kontekstual dan sosial tepat — adalah target akuisisi yang berbeda dari dan tidak dapat direduksi ke morfosintaks.** Part 1 (Agent 18) membangun dasar keigo dan variasi sosiolinguistik. Part 2 membangun kasus bahwa:
+§14 Part 2 mengisi gap kritikal dalam justifikasi pedagogis Nugget Nihongo: **mengapa pragmatic competence — kemampuan menggunakan bahasa secara kontekstual dan sosial tepat — adalah target akuisisi yang berbeda dari dan tidak dapat direduksi ke morfosintaks.** Part 1 membangun dasar keigo dan variasi sosiolinguistik. Part 2 membangun kasus bahwa:
 
 - Pragmatic competence berkembang dengan lintasan berbeda dari grammatical competence, lebih lambat dan lebih resistif terhadap paparan natural (**§14.4**).
 - Kegagalan pragmatik terbagi ke dalam dua tipe yang berbeda secara fundamental — sociopragmatic vs. pragmalinguistic — dan perbedaan ini memiliki implikasi langsung untuk desain kartu (**§14.5**).

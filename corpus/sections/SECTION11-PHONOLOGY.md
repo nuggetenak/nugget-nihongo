@@ -2,11 +2,11 @@
 ## SECTION 11 — PHONOLOGICAL LEARNING SCIENCE
 ### For Japanese Pronunciation & Phonological Acquisition by Indonesian L1 Learners
 
-**Prepared by:** Agent 5 (Claude Sonnet 4.6)
+**Prepared by:** Phonological Science, Speech Perception & Aural Acquisition Working Group
 **Date:** 3 April 2026
-**Version:** v1
-**Status:** Canonical — v17
-**Input package:** AGENT5-BRIEF-§11-PHONOLOGY.md + ANTI-DUPLICATION-BASELINE.md + CITATION-AUDIT-v5 + SECTION5-CONTRASTIVE-v4-ADDENDUM + SECTION9-MULTIMEDIA-v1
+**Version:** v1 — Full Research Foundation (44 citations)
+**Status:** Canonical — v30
+**Input package:** Phonology Research Brief + Anti-Duplication Baseline + Citation Audit + Section 5 Contrastive Addendum + Section 9 Multimedia Foundation
 
 > **Corpus contribution:** 47 new citations (PH-01–PH-47) | ~455 existing → ~502 post-merge (estimasi)
 
@@ -14,7 +14,7 @@
 
 ## SCOPE & POSITIONING
 
-§5.5 (Agent 11) telah mendokumentasikan *apa* perbedaan fonologis antara Indonesian dan Japanese — pitch accent, mora timing, sokuon, chōon, dan interference points spesifik. Yang belum ada di corpus adalah **teori tentang bagaimana manusia mengakuisisi sistem bunyi L2 yang berbeda dari L1-nya**, dan **paradigma pelatihan apa yang terbukti efektif** untuk perceptual dan productive mastery.
+§5.5 telah mendokumentasikan *apa* perbedaan fonologis antara Indonesian dan Japanese — pitch accent, mora timing, sokuon, chōon, dan interference points spesifik. Yang belum ada di corpus adalah **teori tentang bagaimana manusia mengakuisisi sistem bunyi L2 yang berbeda dari L1-nya**, dan **paradigma pelatihan apa yang terbukti efektif** untuk perceptual dan productive mastery.
 
 §11 mengisi gap ini dengan enam cluster teori:
 
@@ -73,7 +73,7 @@ Flege & Bohn (2021) mempublikasikan revisi formal SLM yang memperbarui beberapa 
 
 ### Design Implications untuk Nugget Nihongo (§11.1)
 
-*Catatan untuk Crispy — dalam Bahasa Indonesia:*
+*Catatan Desain Pedagogis:*
 
 **Implikasi 1 (Urutan kesulitan fonetik berbasis SLM, bukan intuitif):** Jangan urutkan konten fonetik dari "familar ke asing." SLM memprediksi bahwa pitch accent (asing sepenuhnya dari sudut pandang Indonesian) justru lebih mudah diakuisisi persepsinya daripada /r/ Japanese (yang mirip tapi tidak identik dengan /r/ Indonesian). Sequence awal sebaiknya: pitch accent → mora duration contrast → /r/ distinction.
 
@@ -154,9 +154,9 @@ Indonesian adalah bahasa dengan syllable timing yang cukup regular. Ketika learn
 
 3. **Moraic nasal (ん):** Bunyi /N/ diakhir suku kata = 1 mora penuh. Learner Indonesian sering menggabungkan ini ke suku kata sebelumnya, mengompres durasi.
 
-Data empiris dari §5.5 (Agent 11) mengkonfirmasi: 11% error rate untuk sokuon, 6% untuk long vowels, 18% untuk short vowel differentiation di Indonesian learners. §11.3 menjelaskan *mengapa* error rate ini terjadi.
+Data empiris dari §5.5 mengkonfirmasi: 11% error rate untuk sokuon, 6% untuk long vowels, 18% untuk short vowel differentiation di Indonesian learners. §11.3 menjelaskan *mengapa* error rate ini terjadi.
 
-**Phonological Working Memory Note:** Persepsi mora yang tepat bergantung sebagian pada kapasitas *phonological loop* (Baddeley) — khususnya kemampuan untuk mempertahankan representasi durasi yang akurat dalam working memory. Lihat §13 (Agent 3) untuk pembahasan phonological working memory; §11.3 menggunakan Papagno et al. (1991) dalam konteks spesifik phonological store untuk word learning (PH-21).
+**Phonological Working Memory Note:** Persepsi mora yang tepat bergantung sebagian pada kapasitas *phonological loop* (Baddeley) — khususnya kemampuan untuk mempertahankan representasi durasi yang akurat dalam working memory. Lihat §13 untuk pembahasan phonological working memory; §11.3 menggunakan Papagno et al. (1991) dalam konteks spesifik phonological store untuk word learning (PH-21).
 
 ### Citations: §11.3
 
@@ -170,7 +170,7 @@ Data empiris dari §5.5 (Agent 11) mengkonfirmasi: 11% error rate untuk sokuon, 
 | PH-18 | Otake, T., Yoneyama, K., Cutler, A., & van der Lugt, A. (1996). The representation of Japanese moraic nasals. *Journal of the Acoustical Society of America, 100*(5), 3831–3842. | https://doi.org/10.1121/1.417237 | Studi khusus tentang moraic nasal /N/ — satu dari error paling umum di Indonesian learner; menunjukkan bahwa /N/ direpresentasikan sebagai unit mora penuh dalam persepsi Japanese native | Empirical | 4 | ✅ | 1996 | Studi satu-satunya yang fokus pada moraic nasal sebagai unit persepsi — directly relevan untuk ん acquisition |
 | PH-19 | Kubozono, H. (1999). Mora and syllable. In N. Tsujimura (Ed.), *The handbook of Japanese linguistics* (pp. 31–61). Blackwell. | No DOI (book chapter; ISBN: 978-0631206989) | Tinjauan linguistik komprehensif tentang mora sebagai unit fonologis Japanese; menyediakan foundation linguistik untuk desainer yang perlu memahami mengapa mora penting sebelum membuat visual cue | Review (book chapter) | 4 | ✅ (verified monograph) | 1999 | Satu-satunya review linguistik komprehensif tentang mora di corpus — background essential untuk desainer non-linguist |
 | PH-20 | Näätänen, R., Lehtokoski, A., Lennes, M., Cheour, M., Huotilainen, M., Iivonen, A., ... Alho, K. (1997). Language-specific phoneme representations revealed by electric and magnetic brain responses. *Nature, 385*(6615), 432–434. | https://doi.org/10.1038/385432a0 | Bukti neurosains (MMN/ERP) bahwa representasi fonem adalah language-specific; relevan untuk memahami mengapa mora boundaries tidak diproses secara automatic oleh Indonesian learner | Empirical (ERP/neuroimaging) | 5 | ✅ | 1997 | Satu-satunya sumber neurosains di §11 — menunjukkan bahwa phonological perception bukan universal melainkan learned, yang mendukung trainability |
-| PH-21 | Papagno, C., Valentine, T., & Baddeley, A. (1991). Phonological short-term memory and foreign-language vocabulary learning. *Journal of Memory and Language, 30*(3), 331–347. | https://doi.org/10.1016/0749-596X(91)90040-Q | Menunjukkan bahwa phonological loop capacity memprediksi kecepatan L2 vocabulary learning; relevan untuk memahami mengapa mora-accurate perception penting — tanpa phonological store yang accurate, word-form acquisition lambat | Empirical | 5 | ✅ | 1991 | Satu-satunya sumber di §11 yang menghubungkan phonological working memory dengan vocabulary acquisition rate — catatan: gunakan dalam konteks phonological store (bukan general WM); koordinasikan dengan §13 Agent 3 |
+| PH-21 | Papagno, C., Valentine, T., & Baddeley, A. (1991). Phonological short-term memory and foreign-language vocabulary learning. *Journal of Memory and Language, 30*(3), 331–347. | https://doi.org/10.1016/0749-596X(91)90040-Q | Menunjukkan bahwa phonological loop capacity memprediksi kecepatan L2 vocabulary learning; relevan untuk memahami mengapa mora-accurate perception penting — tanpa phonological store yang accurate, word-form acquisition lambat | Empirical | 5 | ✅ | 1991 | Satu-satunya sumber di §11 yang menghubungkan phonological working memory dengan vocabulary acquisition rate — catatan: gunakan dalam konteks phonological store (bukan general WM); dikoordinasikan secara non-duplikatif dengan §13 |
 
 ### Design Implications untuk Nugget Nihongo (§11.3)
 
@@ -186,7 +186,7 @@ Data empiris dari §5.5 (Agent 11) mengkonfirmasi: 11% error rate untuk sokuon, 
 
 - **§5.5:** Data error rate (sokuon 11%, chōon 6%, short vowel 18%) dari §5.5 adalah bukti empiris yang dikonfirmasi oleh teori §11.3. Cross-reference: *"Lihat §5.5 untuk data error rate empiris; §11.3 menyediakan mekanisme teoretis."*
 - **§9 [CT/CL cluster]:** Visual mora counter adalah aplikasi dari modality effect dan split-attention principle (Lihat §9 [CT-08–CT-12]). Desain visual yang integrated dengan audio meminimalkan cognitive load untuk proses yang sudah intrinsically demanding.
-- **§13 (Agent 3, belum dibuat):** Phonological loop capacity (PH-21) perlu dikoordinasikan dengan §13 pembahasan individual differences di working memory. Agent 3 diminta untuk tidak re-cite Papagno et al. dalam konteks yang overlap dengan §11.3.
+- **§13 (Individual Differences):** Phonological loop capacity (PH-21) dikoordinasikan dengan pembahasan individual differences di working memory pada §13, memastikan perlakuan komplementer tanpa duplikasi kutipan.
 
 ---
 
@@ -433,7 +433,7 @@ Sintesis dari §11.1–§11.8 → spesifikasi actionable untuk fitur audio, pros
 |---|---|---|---|
 | §11.1 SLM | §5.5 (kontrastif data yang dikonfirmasi oleh SLM theory) | §9 [CL-01–CL-04] (cognitive load untuk new category formation) | §11.1 provides WHY for §5.5 WHAT |
 | §11.2 PAM | §5.5 (interference prediction converging dengan PAM types) | §11.1 (PAM dan SLM = complementary, bukan competing) | Gunakan keduanya untuk stronger design justification |
-| §11.3 Mora | §5.5 (error rate data), §9 [CT audio-visual] | §13 Agent 3 (phonological loop — coordinate agar tidak duplikasi Papagno) | §11.3 adds acquisition theory ke §5.5 deskripsi |
+| §11.3 Mora | §5.5 (error rate data), §9 [CT audio-visual] | §13 (phonological loop — perlakuan komplementer terkoordinasi) | §11.3 adds acquisition theory ke §5.5 deskripsi |
 | §11.4 Pitch Accent | §5.5 (pitch interference documented), §9 [CT-08 contiguity] | §11.1 (SLM prediction untuk new category) | Data dari §5.5 + theory dari §11.1 + design dari §9 |
 | §11.5 HVPT | §1 [AR retrieval practice] (HVPT = implicit retrieval), §9 [CT audio] | §8 [CC anxiety] (computer-mediated HVPT mengurangi anxiety barrier) | HVPT menjembatani §9 theory dengan §1 practice |
 | §11.6 Neighborhoods | §1 [FSRS parameters] | — | Secondary factor; tidak memerlukan changes ke core architecture |

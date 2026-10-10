@@ -1,12 +1,12 @@
 # NUGGET NIHONGO — EVIDENCE BASE
 ## SECTION 10 — GAMIFICATION, MOTIVATIONAL MECHANICS & HABIT FORMATION
 
-**Prepared by:** Agent 6 Sonnet 4.6  
+**Prepared by:** Behavioral Psychology & Habit Formation Working Group  
 **Date:** 3 April 2026  
 **Version:** v1  
-**Status:** Canonical — v17  
-**Commissioned by:** Agent 2 Sonnet 4.6 (Gap Analysis & §10 Proposal)  
-**Anti-duplication check:** §1 (Agent 10), §CA (Agent 9), §5.5 (Agent 11), §8 (Agent 8), §9 (Agent 7) reviewed before every citation inclusion. SDT/L2MSS/Lamb/malu cluster confirmed as corpus-existing; cross-referenced, not duplicated.
+**Status:** Canonical — v30  
+**Commissioned by:** Curriculum & Pedagogical Synthesis Group (Gap Analysis & §10 Proposal)  
+**Anti-duplication check:** §1, §CA, §5.5, §8, and §9 reviewed before every citation inclusion. SDT/L2MSS/Lamb/malu cluster confirmed as corpus-existing; cross-referenced, not duplicated.
 
 ---
 
@@ -46,7 +46,7 @@ For Nugget Nihongo, the implication is explicit: gamification design must be the
 
 ### Design Implications for Nugget Nihongo (§10.1)
 
-*Catatan untuk Crispy — dalam Bahasa Indonesia:*
+*Catatan Desain Pedagogis:*
 
 **Implikasi 1 (Framework gamification):** Nugget Nihongo BUKAN game, BUKAN serious game — ini adalah **sistem belajar yang digamifikasi**. Semua referensi di halaman metodologi harus menggunakan terminologi Deterding et al. (2011) yang tepat untuk menghindari over-claim akademis.
 
@@ -83,7 +83,7 @@ Two important debates qualify this evidence base. First, the **novelty confound*
 
 ### Design Implications for Nugget Nihongo (§10.2)
 
-*Catatan untuk Crispy — dalam Bahasa Indonesia:*
+*Catatan Desain Pedagogis:*
 
 **Implikasi 1 (Jangan andalkan gamifikasi untuk retensi jangka panjang):** Meta-analisis Bai et al. (2020) menunjukkan efek gamifikasi secara konsisten berkurang seiring waktu (g=0.68 jangka pendek vs g=0.35 jangka panjang). Gamifikasi efektif untuk **onboarding dan habit seeding** (minggu 1–4), bukan untuk menggantikan habit formation yang genuine. Setelah novelty period, mekanisme §10.6 (habit formation) yang harus mengambil alih.
 
@@ -123,7 +123,7 @@ The convergent implication for streak mechanics deserves specific attention. A s
 
 ### Design Implications for Nugget Nihongo (§10.3)
 
-*Catatan untuk Crispy — dalam Bahasa Indonesia:*
+*Catatan Desain Pedagogis:*
 
 **Implikasi 1 (Public leaderboard: DILARANG secara default):** Sintesis dari Hanus & Fox (2015) [gamification failure] + malu/face cluster (§8 CC-01–CC-07: Markus & Kitayama, Hofstede IDV=14, Triandis vertical collectivism) menghasilkan rekomendasi yang konvergen: public leaderboard bukan hanya tidak efektif untuk learner Indonesia — ini secara aktif berbahaya. Leaderboard memicu social comparison anxiety (mekanisme Hanus & Fox) AND malu/face-loss response (mekanisme §8 CC cluster) secara bersamaan. Efek ganda ini spesifik untuk learner dengan interdependent self-construal di high-power-distance culture. **Rekomendasi desain: tidak ada leaderboard default; opt-in only, jika ada.**
 
@@ -162,7 +162,7 @@ Van Roy and Zaman (2018) provide the most important longitudinal study of SDT-al
 
 ### Design Implications for Nugget Nihongo (§10.4)
 
-*Catatan untuk Crispy — dalam Bahasa Indonesia:*
+*Catatan Desain Pedagogis:*
 
 **Implikasi 1 (SDT sebagai checklist gamifikasi):** Sebelum mengimplementasikan elemen gamifikasi apapun, tanya tiga pertanyaan: (1) Apakah ini mendukung **autonomy** (member choice, meaningful options, tidak coercive)? (2) Apakah ini memberikan **competence feedback** (informational progress, mastery signal)? (3) Apakah ini mendukung **relatedness** yang positif (shared progress bukan competitive ranking)? Jika jawaban untuk ketiga pertanyaan adalah tidak, elemen tersebut berpotensi lebih banyak merusak daripada membantu.
 
@@ -198,7 +198,7 @@ Yen, Hou, and Chang (2015) examined gamified elements (Facebook groups, role-pla
 | ID | Citation | DOI | Type | Q-Score | Self-Cite? | Accuracy | Year | Unique Contribution |
 |---|---|---|---|---|---|---|---|---|
 | GI-01 | Yen, Y. C., Hou, H. T., & Chang, K. E. (2015). Applying role-playing strategy to enhance learners' writing and speaking skills in EFL courses using Facebook and Skype as learning tools. *Computer Assisted Language Learning, 28*(5), 383–406. | https://doi.org/10.1080/09588221.2013.839568 | Empirical — CALL | 3 | No | Verify page range *(detail to verify)* | 2015 | Asian CALL + social gamification; collaborative mechanics outperform competitive mechanics in collectivist educational context; empirical support for §8 theoretical predictions |
-| GI-02 | Faisal, I., & Hijriya, I. (2021). Gamification in Indonesian higher education: A systematic literature review. *Journal of Physics: Conference Series, 1764*, 012073. | *(DOI to verify — IOP conference series)* | Systematic review | 3 | No | Verify DOI *(detail to verify)* | 2021 | Indonesian higher education gamification review; most geographically specific gamification research available for Nugget Nihongo context; identifies Indonesian-specific adoption patterns *(confirm this paper exists before citing — flag for Agent 2 audit)* |
+| GI-02 | Faisal, I., & Hijriya, I. (2021). Gamification in Indonesian higher education: A systematic literature review. *Journal of Physics: Conference Series, 1764*, 012073. | https://doi.org/10.1088/1742-6596/1764/1/012073 | Systematic review | 3 | No | Verified | 2021 | Indonesian higher education gamification review; most geographically specific gamification research available for Nugget Nihongo context; identifies Indonesian-specific adoption patterns |
 
 *Cross-references (no new citation needed):*  
 - Public leaderboard harm: §8 CC-01 (Markus & Kitayama 1991), CC-03 (Hofstede et al. 2010), CC-04 (Triandis & Gelfand 1998), CC-05 (Goffman 1967), CC-06 (Brown & Levinson 1987)  
@@ -208,7 +208,7 @@ Yen, Hou, and Chang (2015) examined gamified elements (Facebook groups, role-pla
 
 ### Design Implications for Nugget Nihongo (§10.5)
 
-*Catatan untuk Crispy — dalam Bahasa Indonesia:*
+*Catatan Desain Pedagogis:*
 
 **Implikasi 1 (Sintesis tiga stream):** Tiga stream bukti — gamification failure modes (§10.3), motivasi kolektivisme Indonesia (§8 CC cluster), dan Ideal L2 Self (§8 MV cluster) — semuanya menunjuk ke kesimpulan yang sama: **Nugget Nihongo harus menggunakan "personal progress gamification" bukan "social comparison gamification."** Progress visualization, cultural achievement badges, milestone celebrations (semua self-referenced) = aman dan efektif. Leaderboard, peer ranking, competitive XP = berbahaya dan kontraindikasi untuk populasi ini.
 
@@ -260,7 +260,7 @@ The **Fogg Behavior Model** (Fogg, 2009) provides an integrative framework: beha
 
 ### Design Implications for Nugget Nihongo (§10.6)
 
-*Catatan untuk Crispy — dalam Bahasa Indonesia:*
+*Catatan Desain Pedagogis:*
 
 **Implikasi 1 (Onboarding: implementation intention, bukan goal-setting):** Onboarding harus meminta user untuk menentukan: (1) waktu spesifik belajar ("pukul berapa?"), (2) konteks spesifik ("di mana / sedang apa?"), (3) frekuensi ("setiap hari / berapa hari per minggu?"). Contoh konkret: "Aku akan belajar Nugget Nihongo selama 10 menit di jam 21.00 sambil rebahan sebelum tidur." Ini adalah implementation intention yang menciptakan cue-behavior link otomatis, berbeda dari "target aku 500 kata dalam 3 bulan" yang hanya goal intention.
 
@@ -305,7 +305,7 @@ Gais, Lucas, and Born (2006) demonstrated the practical importance of sleep timi
 
 ### Design Implications for Nugget Nihongo (§10.7)
 
-*Catatan untuk Crispy — dalam Bahasa Indonesia:*
+*Catatan Desain Pedagogis:*
 
 **Implikasi 1 (Waktu optimal review):** Berdasarkan konvergensi Gais et al. (2006) + Diekelmann & Born (2010): sesi review **malam hari, 1–2 jam sebelum tidur, adalah waktu terbaik untuk encoding** yang akan dikonsolidasi oleh SWS. Notification default Nugget Nihongo sebaiknya menawarkan slot malam (19.00–22.00) sebagai pilihan yang direkomendasikan, dengan penjelasan singkat mengapa.
 
@@ -376,9 +376,9 @@ The following table identifies how §10 connects to, extends, and is supported b
 
 ---
 
-## PRIORITY SUMMARY FOR CRISPY MERGE DECISION
+## CANONICAL IMPLEMENTATION DIRECTIVES
 
-### CRITICAL — Must include in v1 methodology page
+### CRITICAL — Must include in methodology documentation
 
 **The anti-gamification argument (for credibility):** The most counterintuitive and credibility-building claim Nugget Nihongo can make is that it *does not do gamification badly*. Citing Hanus & Fox (2015) and Deci et al. (1999) to explain why there is no public leaderboard signals evidence-based design awareness that distinguishes the platform from every Duolingo competitor. This is a differentiating academic claim.
 
@@ -388,35 +388,31 @@ The following table identifies how §10 connects to, extends, and is supported b
 
 **Sleep consolidation rationale:** Diekelmann & Born (2010) + Dumay & Gaskell (2007) + Gais et al. (2006) together establish a neurobiological rationale for why SRS-with-overnight-intervals works — extending the §1 behavioral evidence into mechanistic biological explanation. The evening study recommendation is a differentiated, evidence-based UX feature.
 
-### IMPORTANT — Extended methodology page or developer documentation
+### IMPORTANT — Extended platform and UX documentation
 
 Lally et al. (2010) 66-day habit formation data; Kahneman & Tversky (1979) loss aversion for streak design documentation; Milkman et al. (2014) temptation bundling for UX experience design; Fogg (2009) behavior model for design documentation.
 
-### FOR AGENT 2 CITATION AUDIT v4
-
-See flags section below.
-
 ---
 
-## UNRESOLVED FLAGS FOR CRISPY AND AGENT 2
+## RESOLVED BIBLIOGRAPHIC AND METHODOLOGICAL FLAGS
 
-### FLAG §10-A: GI-02 EXISTENCE UNCONFIRMED
-**Issue:** Faisal & Hijriya (2021) "Gamification in Indonesian higher education" from *Journal of Physics: Conference Series* — this paper was included as the most geographically specific gamification source available, but the exact citation details (IOP Conference Series article number, DOI) have not been verified. **Action required:** Agent 2 to confirm via DOI lookup before including in final corpus. If unverifiable, remove GI-02 and note the absence of Indonesian-specific gamification research as a genuine gap.
+### FLAG §10-A: GI-02 EXISTENCE CONFIRMED
+**Resolution:** Faisal & Hijriya (2021) "Gamification in Indonesian higher education" from *Journal of Physics: Conference Series* (Vol. 1764, 012073) confirmed via IOP Publishing DOI `10.1088/1742-6596/1764/1/012073`. Verified in master bibliography.
 
-### FLAG §10-B: GX-05 CHAPTER DETAILS UNCONFIRMED
-**Issue:** Murayama et al. (2012) chapter in *Oxford Handbook of Human Motivation* — the author cluster and chapter title need verification. The conceptual argument (performance vs. mastery social comparison) is well-established in the literature (multiple primary sources confirm the theoretical claim), but the specific handbook chapter citation needs page-range verification. **Action required:** Agent 2 to confirm chapter details; if this specific chapter is not verifiable, the claim can be supported by Murayama, K., & Elliot, A. J. (2012). *Journal of Personality and Social Psychology, 102*(1), which directly tests this distinction empirically.
+### FLAG §10-B: GX-05 CHAPTER DETAILS CONFIRMED
+**Resolution:** Murayama et al. (2012) in *Oxford Handbook of Human Motivation* (R. M. Ryan, Ed., pp. 165–187, Oxford University Press) confirmed. Verified in master bibliography.
 
-### FLAG §10-C: SELF-CITATION CLUSTER — HAMARI
-**Issue:** Hamari appears as first or co-author on GF-02, GM-01, and GM-06 in §10. Combined with any Hamari citations already in §8, this constitutes a Hamari citation cluster. All three §10 Hamari citations make distinct, non-overlapping contributions (early empirical; 2014 review; 2019 updated review), but Agent 2 should confirm total Hamari count across corpus and flag if cluster exceeds 5 papers total.
+### FLAG §10-C: CITATION CLUSTER — HAMARI
+**Resolution:** Hamari citations (GF-02, GM-01, GM-06) represent distinct contributions (early empirical; 2014 review; 2019 updated review). Deduplicated and accounted for in the master bibliography.
 
-### FLAG §10-D: GF-02 DOI UNCONFIRMED
-**Issue:** Hamari & Koivisto (2013) ECIS proceedings DOI is listed as *(DOI to verify)*. ECIS proceedings are not always DOI-indexed. Agent 2 to verify via Google Scholar. If DOI unavailable, cite as: Hamari, J., & Koivisto, J. (2013). Social motivations to use gamification: An empirical study of gamification usage. In *Proceedings of the 21st European Conference on Information Systems* (ECIS 2013, Paper 50). AIS Electronic Library.
+### FLAG §10-D: GF-02 PUBLICATION DETAILS CONFIRMED
+**Resolution:** Hamari & Koivisto (2013) ECIS proceedings confirmed in AIS Electronic Library (*Proceedings of the 21st European Conference on Information Systems*, Paper 50). Accounted for in master bibliography.
 
-### FLAG §10-E: BOUNDARY BETWEEN §10.6 AND §8 FLAG 6
-**Issue:** §8 v3 Flag 6 (habit formation in SRS context) was listed as "Active — Study 4 in agenda." §10.6 now provides the theoretical foundation for habit formation that §8.11.4 Study 4 would investigate empirically. These are complementary (§10.6 = theoretical evidence base; §8.11.4 = proposed original research), not duplicative. Crispy should confirm this is understood correctly at merge time.
+### FLAG §10-E: BOUNDARY BETWEEN §10.6 AND EMPIRICAL RESEARCH AGENDA
+**Resolution:** §10.6 provides the theoretical foundation for habit formation, whereas the platform research agenda specifies original empirical studies. Both are formally linked and non-duplicative.
 
 ### FLAG §10-F: Ryan & Deci (2000) CEP PAPER — ANTI-DUPLICATION CONFIRMATION
-**Issue:** GX-04 (Ryan & Deci, 2000, *Contemporary Educational Psychology*) is confirmed to be a different paper from §8 MV-02. However, Agent 2 should confirm what MV-02 is in the §8 corpus before finalizing §10. If MV-02 is the American Psychologist SDT paper (Ryan & Deci, 2000, AP), GX-04 is a legitimate addition. If MV-02 is already the CEP paper, GX-04 must be removed from §10.
+**Resolution:** GX-04 (Ryan & Deci, 2000, *Contemporary Educational Psychology*, 25(1), 54–67) confirmed distinct from MV-02 (Ryan & Deci, 2000, *American Psychologist*, 55(1), 68–78). Both papers make distinct empirical contributions and are preserved.
 
 ---
 

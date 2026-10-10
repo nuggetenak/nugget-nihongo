@@ -231,8 +231,8 @@ Relevansi langsung untuk Nugget Nihongo saat ini terbatas (ini adalah solo SRS),
 
 | ID | Full Citation | DOI | Relevansi | Tipe | Skor Q | Akurasi | Tahun | Kontribusi Unik |
 |---|---|---|---|---|---|---|---|---|
-| — | Swain, M., & Lapkin, S. (1998). Interaction and second language learning: Two adolescent French immersion students working together. *The Modern Language Journal, 82*(3), 320–337. | https://doi.org/10.1111/j.1540-4781.1998.tb01209.x | Collaborative output dan languaging | Empirical (case study) | 4 | ✅ | 1998 | *(Tidak diberi ID OT — untuk merge Agent 2: masukkan sebagai OT-31 jika di bawah budget 35)* |
-| — | Swain, M. (2006). Languaging, agency and collaboration in advanced second language proficiency. In H. Byrnes (Ed.), *Advanced language learning: The contribution of Halliday and Vygotsky* (pp. 95–108). Continuum. | No DOI (book chapter; ISBN: 978-0826489944) | Konseptualisasi languaging sebagai akuisisi | Theoretical book chapter | 3 | ✅ (verified monograph chapter) | 2006 | *(Tidak diberi ID OT — untuk merge Agent 2: masukkan sebagai OT-32 jika di bawah budget 35)* |
+| OT-31 | Swain, M., & Lapkin, S. (1998). Interaction and second language learning: Two adolescent French immersion students working together. *The Modern Language Journal, 82*(3), 320–337. | https://doi.org/10.1111/j.1540-4781.1998.tb01209.x | Collaborative output dan languaging | Empirical (case study) | 4 | ✅ | 1998 | *(Canonical: diintegrasikan sebagai OT-31)* |
+| OT-32 | Swain, M. (2006). Languaging, agency and collaboration in advanced second language proficiency. In H. Byrnes (Ed.), *Advanced language learning: The contribution of Halliday and Vygotsky* (pp. 95–108). Continuum. | No DOI (book chapter; ISBN: 978-0826489944) | Konseptualisasi languaging sebagai akuisisi | Theoretical book chapter | 3 | ✅ (verified monograph chapter) | 2006 | *(Canonical: diintegrasikan sebagai OT-32)* |
 
 
 ---

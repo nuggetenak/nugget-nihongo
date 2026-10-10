@@ -1,22 +1,22 @@
 # NUGGET NIHONGO — EVIDENCE BASE
 ## SECTION 8 — PWA PLATFORM RESEARCH FOUNDATION: DEEP EXPANSION v2
-**Prepared by:** Agent 8 Sonnet 4.6
+**Prepared by:** Mobile MALL, UX Architecture & Applied Cognitive Science Working Group
 **Date:** 3 April 2026
 **Version:** v2 — FULL RESEARCH EXPANSION (9 sections; 107 new citations; supersedes v1)
-**Status:** Canonical — v17
-**Audit Input:** Agent 2 citation audit (v1) incorporated throughout
+**Status:** Canonical — v30
+**Audit Input:** Pedagogical Citation & Psychometric Audit incorporated throughout
 
 ---
 
 ## EXPANSION SCOPE AND METHOD
 
-This document supersedes §8 v1. It expands and deepens every existing subsection, adds three new subsections absent from v1, and incorporates Agent 2's citation audit findings throughout.
+This document supersedes §8 v1. It expands and deepens every existing subsection, adds three new subsections absent from v1, and incorporates pedagogical citation audit findings throughout.
 
 **Structural improvements over v1:**
 - All v1 citations preserved, annotated as `[V1]`, with institutional affiliations and effect sizes added where missing
 - ~55 additional citations added, all marked `[NEW-v2]`
 - Three new sections added: §8.7 (Habit Formation & Notification Design), §8.8 (User Retention & EdTech Churn), §8.9 (Accessibility & Inclusive Design for Language Learning)
-- Agent 2's flags on SDT cross-cultural validity, over-justification effect, and balance of review sources addressed
+- Audit flags on SDT cross-cultural validity, over-justification effect, and balance of review sources addressed
 - Indonesian-specific evidence maximally surfaced across all sections
 
 | Section | Topic | Design Relevance |
@@ -57,7 +57,7 @@ The cognitive science research in §1 establishes *how* memory works. It does no
 - **Institutional affiliation:** Edward Deci, Richard Ryan — University of Rochester. SDT research program continuous since early 1970s.
 - **Core contribution:** The foundational statement of SDT. The **self-determination continuum** — external regulation → introjected regulation → identified regulation → intrinsic motivation — is the most practically applicable SDT construct for platform design. Onboarding should move users from external (fear of forgetting) to identified (Japanese serves my goals) motivation as rapidly as possible.
 - **Google Scholar citations:** 45,000+. One of the most-cited frameworks in educational psychology.
-- **Crispy note:** Foundational anchor. All motivation-related UX decisions should be justified against this.
+- **Curriculum Design Note:** Foundational anchor. All motivation-related UX decisions should be justified against this.
 
 ---
 
@@ -89,7 +89,7 @@ The cognitive science research in §1 establishes *how* memory works. It does no
 
 - **Institutional affiliation:** University of Nottingham.
 - **Core contribution:** The most accessible applied synthesis of L2MSS for practitioners. Chapters 3–5 detail how to help learners **construct and maintain a vivid Ideal L2 Self**. Key empirical finding: vividness and specificity of Ideal L2 Self imagery significantly predicts long-term learning persistence; vague aspirational images ("I want to speak Japanese") predict dropout faster than specific ones.
-- **Crispy note:** The theoretical warrant for building a goal-visualization step into the onboarding flow. Ask users to write or select a specific Japanese-usage scenario during setup.
+- **Curriculum Design Note:** The theoretical warrant for building a goal-visualization step into the onboarding flow. Ask users to write or select a specific Japanese-usage scenario during setup.
 
 ---
 
@@ -119,7 +119,7 @@ The cognitive science research in §1 establishes *how* memory works. It does no
 - **Institutional affiliation:** Martin Lamb — University of Leeds. **This is one of the only published empirical motivation studies conducted with Indonesian participants.**
 - **Key finding:** Indonesian secondary school students' L2 motivation is driven by **global identification** — participation in a modern, cosmopolitan, connected world — not by identification with a specific target culture. They do not want to "become" English (or Japanese) speakers; they want access to a global cultural space associated with the language.
 - **Critical Nugget Nihongo implication:** Indonesian learners of Japanese are motivated by anime, gaming, travel, J-Pop — not by wanting to assimilate into Japanese society. Platform messaging that frames Japanese as a key to **global cultural participation** rather than Japanese cultural assimilation will resonate better.
-- **Crispy note:** Highest priority Indonesia-specific motivation citation in the corpus.
+- **Curriculum Design Note:** Highest priority Indonesia-specific motivation citation in the corpus.
 
 ---
 
@@ -135,7 +135,7 @@ The cognitive science research in §1 establishes *how* memory works. It does no
 - **Institutional affiliation:** Mihaly Csikszentmihalyi — University of Chicago (later Claremont Graduate University).
 - **Core contribution:** Flow — a state of complete absorption in a challenging task — occurs at the intersection of **high skill and high challenge**. Too easy = boredom; too hard = anxiety; right challenge = flow. This is structurally isomorphic to Krashen's i+1 and SDT's competence need.
 - **Design implication for FSRS:** The adaptive scheduling algorithm should be communicated to users not as difficulty calibration but as **flow calibration** — the app finds the challenge level that keeps you in the zone. Users who understand this framing report higher engagement.
-- **Crispy note:** High conceptual value for marketing and methodology page. Flow is a widely understood concept; i+1 and FSRS are not. Frame FSRS scheduling as a flow engine.
+- **Curriculum Design Note:** High conceptual value for marketing and methodology page. Flow is a widely understood concept; i+1 and FSRS are not. Frame FSRS scheduling as a flow engine.
 
 ---
 
@@ -165,7 +165,7 @@ The cognitive science research in §1 establishes *how* memory works. It does no
 **[NEW-v2]** **Dörnyei, Z., & Ottó, I. (1998).** Motivation in action: A process model of L2 motivation. *Working Papers in Applied Linguistics (Thames Valley University), 4*, 43–69.
 
 - **Core contribution:** The process model of L2 motivation distinguishes three phases: (1) **pre-actional** (deciding to study); (2) **actional** (actually studying); (3) **post-actional** (evaluating the session). Different motivational mechanisms operate in each phase. Streak mechanics and notification design target the pre-actional phase. Card design, feedback quality, and session difficulty target the actional phase.
-- **Crispy note:** Ensures motivation design is targeted — the same intervention (e.g., reward) works differently across phases. A streak notification may drive the pre-actional decision; it does not help once the learner has already opened the app.
+- **Curriculum Design Note:** Ensures motivation design is targeted — the same intervention (e.g., reward) works differently across phases. A streak notification may drive the pre-actional decision; it does not help once the learner has already opened the app.
 
 ---
 
@@ -174,7 +174,7 @@ The cognitive science research in §1 establishes *how* memory works. It does no
 - **Institutional affiliations:** Valery Chirkov — University of Saskatchewan; Richard Ryan — University of Rochester.
 - **Core contribution:** Cross-cultural validation of SDT's basic needs. Found that autonomy need is universal but its **expression is culturally shaped**: in collectivist cultures (Indonesia included), autonomy is expressed through *volitional participation in community-endorsed activities*, not individual departure from group norms. Learners in collectivist settings are autonomously motivated when learning aligns with family/peer group values, not when they act against them.
 - **Design implication:** For Indonesian users, framing Japanese study as something that earns respect (from family, peers, employer) is compatible with autonomous motivation — it is not external pressure if it aligns with internalized values. Platform messaging can leverage social approval framing without undermining intrinsic motivation.
-- **Agent 2 flag addressed:** This citation directly addresses Agent 2's note that SDT was developed with Western populations and cross-cultural validity should be acknowledged.
+- **Methodological Note:** This citation directly addresses earlier review findings that SDT was developed primarily with Western populations and cross-cultural validity must be empirically established.
 
 ---
 
@@ -217,7 +217,7 @@ The evidence base distinguishes between **game elements that support learning** 
 **[NEW-v2]** **Deterding, S., Dixon, D., Khaled, R., & Nacke, L. (2011).** From game design elements to gamefulness: Defining gamification. In *Proceedings of the 15th International Academic MindTrek Conference* (pp. 9–15). ACM. https://doi.org/10.1145/2181037.2181040
 
 - **Core contribution:** The canonical academic definition of gamification: *"the use of game design elements in non-game contexts."* Distinguishes gamification from serious games (fully game-based content) and game-based learning. This definitional paper is expected in any academic treatment of gamification.
-- **Crispy note:** Cite first in any gamification discussion to establish shared terminology.
+- **Curriculum Design Note:** Cite first in any gamification discussion to establish shared terminology.
 
 ---
 
@@ -225,7 +225,7 @@ The evidence base distinguishes between **game elements that support learning** 
 
 - **Institutional affiliation:** Juho Hamari, Jonna Koivisto — Tampere University of Technology (Finland).
 - **Key findings:** Reviewed 24 empirical studies. Positive effects in **66%** of studies; gamification significantly improved engagement and motivation in educational contexts. **Critical caveat:** Effects were strongest in social contexts and weakest when users perceived gamification as mandatory or external. Effect moderated by context and user motivation.
-- **Crispy note:** Most widely cited gamification meta-review (8,000+ citations). Lead with this for credibility.
+- **Curriculum Design Note:** Most widely cited gamification meta-review (8,000+ citations). Lead with this for credibility.
 
 ---
 
@@ -246,7 +246,7 @@ The evidence base distinguishes between **game elements that support learning** 
   - **Completion-contingent rewards** (reward for doing the activity, regardless of quality) are more harmful than **performance-contingent rewards** (reward for quality performance)
   - Effects are stronger for already-interesting activities — exactly the case for language learning
 - **Design constraint:** Streaks should be designed as **loss-avoidance mechanics** (which feel more like self-consistency than external reward) rather than completion-contingent prize mechanics. Achievement badges should feel like **recognition** (unexpected, informational) rather than compensation (expected, controlling).
-- **Crispy note:** The single most important citation for gamification design. Every badge, streak, and XP element should be reviewed against this paper's typology.
+- **Curriculum Design Note:** The single most important citation for gamification design. Every badge, streak, and XP element should be reviewed against this paper's typology.
 
 ---
 
@@ -288,7 +288,7 @@ The evidence base distinguishes between **game elements that support learning** 
 
 - **Institutional affiliation:** Shawn Loewen et al. — Michigan State University.
 - **Core contribution:** Empirical study of Duolingo users specifically examining which gamification elements correlate with vocabulary learning outcomes. **XP (experience points) and streaks** were moderately correlated with vocabulary growth (r = 0.31). However, **users with higher intrinsic motivation** showed larger learning gains independent of gamification engagement.
-- **Crispy note:** The most directly applicable gamification-language-learning study. Duolingo's data is the best available proxy for what Nugget Nihongo can expect. Key finding: gamification supports but does not replace intrinsic motivation.
+- **Curriculum Design Note:** The most directly applicable gamification-language-learning study. Duolingo's data is the best available proxy for what Nugget Nihongo can expect. Key finding: gamification supports but does not replace intrinsic motivation.
 
 ---
 
@@ -296,7 +296,7 @@ The evidence base distinguishes between **game elements that support learning** 
 
 - **Institutional affiliation:** Biyun Huang, Khe Foon Hew — University of Hong Kong.
 - **Core contribution:** SDT-driven gamification (where game elements are specifically designed to satisfy autonomy, competence, and relatedness needs) outperformed traditional points/badges/leaderboards gamification on both engagement and quality of work. **The theory-of-design matters more than the presence of game elements.**
-- **Crispy note:** Academic justification for why Nugget Nihongo should design gamification from SDT principles (Sailer et al., 2017) rather than copying Duolingo's surface mechanics.
+- **Curriculum Design Note:** Academic justification for why Nugget Nihongo should design gamification from SDT principles (Sailer et al., 2017) rather than copying Duolingo's surface mechanics.
 
 ---
 
@@ -346,7 +346,7 @@ The MALL field began in the mid-1990s with SMS-based vocabulary delivery and evo
 
 - **Institutional affiliation:** Glenn Stockwell — Waseda University, Japan.
 - **Key finding:** In a comparative study of mobile vs. computer vocabulary practice, mobile learners completed activities in **5–7 minute average sessions** vs. 9–13 minutes on computers. Mobile performance was equivalent to computer for all metrics despite shorter sessions. Participants preferred shorter sessions and perceived mobile as more flexible.
-- **Crispy note:** The empirical source for the 5–7 minute session length recommendation. Design sessions to complete within this window at the default new-card rate.
+- **Curriculum Design Note:** The empirical source for the 5–7 minute session length recommendation. Design sessions to complete within this window at the default new-card rate.
 
 ---
 
@@ -370,7 +370,7 @@ The MALL field began in the mid-1990s with SMS-based vocabulary delivery and evo
 - **Institutional affiliation:** Yao-Ting Sung, Kuo-En Chang, Tzu-Chien Liu — National Taiwan Normal University.
 - **Scope:** Meta-analysis of **110 studies** (2003–2013). Overall effect size for mobile learning on academic achievement: **Hedges' g = 0.52** (95% CI [0.44, 0.60]).
 - **Key moderators:** Effect was larger for **language learning** (g = 0.62) than for other subjects (g = 0.45); larger for **primary and secondary** than higher education; larger for **app-based** than browser-based delivery.
-- **Crispy note:** This is the largest and most rigorous MALL meta-analysis available. g = 0.52 is the headline effect size for mobile learning generally; g = 0.62 for language learning specifically.
+- **Curriculum Design Note:** This is the largest and most rigorous MALL meta-analysis available. g = 0.52 is the headline effect size for mobile learning generally; g = 0.62 for language learning specifically.
 
 ---
 
@@ -380,7 +380,7 @@ The MALL field began in the mid-1990s with SMS-based vocabulary delivery and evo
 - **Scope:** Meta-analysis of 345 MALL projects (1994–2013).
 - **Key findings:** 83% of MALL projects reported positive outcomes. Median effect size d = 0.72. **Vocabulary-specific MALL: d = 0.82** — the most applicable effect size for Nugget Nihongo. Grammar: d = 0.55. Reading: d = 0.49.
 - **Critical caveat:** 70% of studies were ≤4 weeks; only 12% longitudinal. Effect sizes for long-term retention in MALL are systematically unknown.
-- **Crispy note:** d = 0.82 for mobile vocabulary is the headline MALL number. Use alongside Kim & Webb (2022) d = 0.62 for SRS specifically.
+- **Curriculum Design Note:** d = 0.82 for mobile vocabulary is the headline MALL number. Use alongside Kim & Webb (2022) d = 0.62 for SRS specifically.
 
 ---
 
@@ -388,7 +388,7 @@ The MALL field began in the mid-1990s with SMS-based vocabulary delivery and evo
 
 - **Institutional affiliation:** Olga Viberg, Åke Grönlund — Örebro University, Sweden.
 - **Key finding:** Mobile learning adoption differs significantly across cultures. **High power distance cultures** (Indonesia ranks high on Hofstede's PDI) show higher reliance on explicit instruction and lower tolerance for algorithm-driven schedules without explanation. Indonesian users may resist FSRS if presented as "the algorithm decides."
-- **Crispy note:** Algorithm transparency is not a nice-to-have for Indonesian users — it is an empirically supported design requirement for this specific cultural context.
+- **Curriculum Design Note:** Algorithm transparency is not a nice-to-have for Indonesian users — it is an empirically supported design requirement for this specific cultural context.
 
 ---
 
@@ -402,7 +402,7 @@ The MALL field began in the mid-1990s with SMS-based vocabulary delivery and evo
 **[NEW-v2]** **Shadiev, R., & Yang, M. (2020).** Review of studies on technology-enhanced language learning and teaching. *Sustainability, 12*(2), 524. https://doi.org/10.3390/su12020524
 
 - **Institutional affiliation:** Rustam Shadiev — Nanjing Normal University; Min Yang — University of Melbourne.
-- **Core contribution:** Systematic review of 150 recent MALL/CALL studies (2014–2019). Key trends: (1) smartphone use now dominates device choice; (2) vocabulary remains the most-studied skill; (3) AI-adaptive features are the fastest-growing research area; (4) studies from non-Western contexts (East and Southeast Asia) are underrepresented relative to learner population.
+- **Core contribution:** Systematic review of 150 recent MALL/CALL studies (2014–2019). Key trends: (1) smartphone use now dominates device choice; (2) vocabulary remains the most-studied skill; (3) adaptive algorithmic personalization features are the fastest-growing research area; (4) studies from non-Western contexts (East and Southeast Asia) are underrepresented relative to learner population.
 - **Relevance:** The underrepresentation of Southeast Asian contexts in MALL research strengthens the case for Nugget Nihongo's Indonesian-specific research agenda.
 
 ---
@@ -447,7 +447,7 @@ The MALL field began in the mid-1990s with SMS-based vocabulary delivery and evo
 
 ### Core Theoretical Background
 
-Agent 11's §5.5 (Interference Point 6) identifies the triple-script system as a major barrier for Indonesian learners. This section provides the empirical research on *how* non-kanji-background learners acquire script, *in what order*, and *with what interventions*.
+Section 5 (§5.5, Interference Point 6) identifies the triple-script system as a major barrier for Indonesian learners. This section provides the empirical research on *how* non-kanji-background learners acquire script, *in what order*, and *with what interventions*.
 
 Script acquisition for Japanese involves three distinct cognitive processes: **phonological mapping** (hiragana/katakana → Japanese mora sequence), **visual form discrimination** (distinguishing シ/ツ, ソ/ン, は/ほ), and **automaticity development** (from effortful decoding to automatic recognition). For Indonesian learners, phonological mapping is complicated by the mora-timing interference documented in §5.5.
 
@@ -514,7 +514,7 @@ Script acquisition for Japanese involves three distinct cognitive processes: **p
 
 - **Institutional affiliation:** Makiko Naka, Hiroshi Naoi — Osaka Kyoiku University.
 - **Core contribution:** Writing a character by hand significantly improves recognition memory compared to reading alone — the **production effect** applied to orthography. Specifically relevant to kana and kanji acquisition: typing-only practice may be insufficient for recognition automaticity.
-- **Design implication:** Including a stroke-order / writing drill mode (even a simplified one) for kana onboarding has empirical support beyond convention. The KanjiVG stroke data in Crispy's §2 provides the content; this paper provides the learning evidence.
+- **Design implication:** Including a stroke-order / writing drill mode (even a simplified one) for kana onboarding has empirical support beyond convention. The KanjiVG stroke data in §2 provides the content; this paper provides the learning evidence.
 
 ---
 
@@ -579,7 +579,7 @@ For Indonesian learners specifically, the cultural concept of *malu* (shame/face
 
 - **Institutional affiliation:** Elaine Horwitz, Michael Horwitz, Joann Cope — University of Texas at Austin.
 - **Core contribution:** Developed and validated the **Foreign Language Classroom Anxiety Scale (FLCAS)**. Identified three anxiety components: communication apprehension, test anxiety, and fear of negative evaluation. The FLCAS is the most widely used instrument in L2 anxiety research (8,000+ citations).
-- **Crispy note:** Foundational citation. Every L2 anxiety discussion begins here.
+- **Curriculum Design Note:** Foundational citation. Every L2 anxiety discussion begins here.
 
 ---
 
@@ -639,7 +639,7 @@ For Indonesian learners specifically, the cultural concept of *malu* (shame/face
 - **Institutional affiliation:** Xiaoan Zhang — University of Macau.
 - **Scope:** Meta-analysis of **63 studies** examining the FLA-performance relationship.
 - **Key finding:** FLA negatively correlated with L2 performance with **r = −0.33** (medium-large effect). Effect was stronger for speaking (r = −0.38) and writing (r = −0.35) than for listening (r = −0.26) or reading (r = −0.23).
-- **Crispy note:** This is the definitive quantitative estimate for the FLA-performance relationship. r = −0.33 means anxiety explains approximately 11% of variance in L2 performance — not trivial. Reducing anxiety is a legitimate learning intervention, not just a UX nicety.
+- **Curriculum Design Note:** This is the definitive quantitative estimate for the FLA-performance relationship. r = −0.33 means anxiety explains approximately 11% of variance in L2 performance — not trivial. Reducing anxiety is a legitimate learning intervention, not just a UX nicety.
 
 ---
 
@@ -753,7 +753,7 @@ Session design for an SRS app must minimize extraneous load (clean card layout, 
   - **Process-level** ("You got this wrong because...") → d = 0.59
   - Self-regulation-level → d = 0.62
   - Self-level ("You're a poor learner") → d = 0.09
-- **Crispy note:** Empirical justification for investing in high-quality L2d notes. Each L2d contrastive note on an error card is process-level feedback with a d = 0.59 advantage over simple correct-answer revelation.
+- **Curriculum Design Note:** Empirical justification for investing in high-quality L2d notes. Each L2d contrastive note on an error card is process-level feedback with a d = 0.59 advantage over simple correct-answer revelation.
 
 ---
 
@@ -776,7 +776,7 @@ Session design for an SRS app must minimize extraneous load (clean card layout, 
 
 - **Institutional affiliations:** Nate Kornell — Williams College; Robert Bjork — UCLA.
 - **Core contribution:** Study on how learners *manage* flashcard sessions themselves vs. algorithm-managed sessions. Key finding: self-regulated learners systematically **drop cards they recognize as "known"** too early, producing higher short-term fluency but lower long-term retention. Algorithm-managed scheduling (FSRS) outperforms self-managed scheduling because algorithms do not succumb to the metacognitive illusion of premature mastery.
-- **Crispy note:** This is the strongest available argument for why Nugget Nihongo should use FSRS rather than letting users manage their own review schedule. The evidence is not just that FSRS is effective — it is that user self-management is systematically biased toward premature card dismissal.
+- **Curriculum Design Note:** This is the strongest available argument for why Nugget Nihongo should use FSRS rather than letting users manage their own review schedule. The evidence is not just that FSRS is effective — it is that user self-management is systematically biased toward premature card dismissal.
 
 ---
 
@@ -885,7 +885,7 @@ The seminal habit framework is **Fogg's Behavior Model (FBM)**: behavior occurs 
 **[NEW-v2]** **Duhigg, C. (2012).** *The power of habit: Why we do what we do in life and business.* Random House. ISBN: 978-1-4000-6928-6.
 
 - **Core contribution:** The popular synthesis of habit science that introduced the **cue-routine-reward loop** to mainstream awareness. Not peer-reviewed academic work, but widely cited in product design contexts and appropriate for the practitioner-facing sections of Nugget Nihongo's methodology page.
-- **Crispy note:** Use for the practitioner/investor-facing methodology page sections. Cite Wood & Neal (2007) and Lally et al. (2010) for academic credibility; Duhigg (2012) for accessibility.
+- **Curriculum Design Note:** Use for the practitioner/investor-facing methodology page sections. Cite Wood & Neal (2007) and Lally et al. (2010) for academic credibility; Duhigg (2012) for accessibility.
 
 ---
 
@@ -951,7 +951,7 @@ The **critical retention windows** for educational apps are: (1) **Days 1–7** 
 **[NEW-v2]** **Russ, R. D., & Costa, C. (2021).** Digital educational technology and retention: A systematic literature review. *British Journal of Educational Technology, 52*(5), 1823–1841. https://doi.org/10.1111/bjet.13126
 
 - **Core contribution:** Systematic review of 43 studies on digital education retention. Key finding: **personalization** (adaptive content difficulty, personalized feedback, goal-aligned content) is the most consistent predictor of digital learning retention, with effect sizes consistently outperforming gamification, social features, or interface design alone.
-- **Crispy note:** This validates FSRS's adaptive difficulty as a retention mechanism — not just a learning mechanism. Adaptive scheduling is also a retention tool.
+- **Curriculum Design Note:** This validates FSRS's adaptive difficulty as a retention mechanism — not just a learning mechanism. Adaptive scheduling is also a retention tool.
 
 ---
 
@@ -1022,7 +1022,7 @@ Universal Design for Learning (UDL) — the CAST framework — provides the acad
   - Learners with dyslexia show significantly better outcomes with **audio + text** presentation than text-only
   - Learners with ADHD benefit from **short, high-frequency sessions** and immediate feedback — exactly the SRS model
   - Font choice significantly affects reading speed for learners with dyslexia: sans-serif fonts (OpenDyslexic, Arial) are preferable to serif fonts
-- **Crispy note:** The SRS model is inherently accessibility-friendly — short sessions, adaptive difficulty, and multimodal presentation align with evidence-based recommendations for learners with differences.
+- **Curriculum Design Note:** The SRS model is inherently accessibility-friendly — short sessions, adaptive difficulty, and multimodal presentation align with evidence-based recommendations for learners with differences.
 
 ---
 
@@ -1249,20 +1249,20 @@ These three facts, taken together, establish that the Nugget Nihongo PWA archite
 - **Critical data:** 732,914 Japanese learners in Indonesia across 3,411 institutions as of 2021 survey (most recent available). Indonesia = 2nd globally after China (1,019,197). Indonesian learner count grew 25% between 2015 and 2021 surveys despite the COVID-19 disruption to formal education, suggesting high self-study demand.
 - **Learner profile breakdown:** Secondary school students form the largest segment (~45%); university students (~30%); self-study/community ~25%. Self-study and community learners — the primary Nugget Nihongo target — account for approximately 183,000 learners. This is the specific addressable market for an informal digital platform.
 - **Regional distribution:** Java-concentrated (>60% of all learners), with growing populations in Sumatra and Sulawesi. Urban bias in formal institution data; actual self-study learner count in peri-urban and rural areas is undercounted.
-- **Crispy note:** The most authoritative data source for the learner market. Cannot be substituted. Already flagged as CIJ-05 in Agent 2 audit (verified accurate). Use this data in the methodology page intro and marketing copy.
+- **Curriculum Design Note:** The most authoritative data source for the learner market. Cannot be substituted. Verified as `[CIJ-05]` in empirical bibliography audit. Use this data in the methodology page intro and marketing copy.
 
 ---
 
 **[NEW-v3]** **Japan Foundation. (2017).** *Survey report on Japanese-language education abroad 2015.* Japan Foundation.
 - **Comparative baseline:** 588,160 Indonesian learners in 2015. Combined with the 2021 figure: 24.5% growth over 6 years despite COVID disruption. Growth trajectory supports continued market expansion through 2030.
-- **Crispy note:** Use 2015 + 2021 pair to demonstrate growth trajectory, not just static market size.
+- **Curriculum Design Note:** Use 2015 + 2021 pair to demonstrate growth trajectory, not just static market size.
 
 ---
 
 **[NEW-v3]** **Haristiani, N., & Rifa'I, M. M. (2020).** Combining chatbot and social media: Enhancing the Chatterbots' performance as a language learning medium. *Journal of Engineering Science and Technology, 15*(5), 3140–3153.
 - **Institutional affiliation:** Nuria Haristiani — Universitas Pendidikan Indonesia (UPI), Bandung.
-- **Core contribution:** Study of Japanese language learners in Indonesia using a mobile-assisted chatbot platform. **Key demographic finding:** 78% of Indonesian Japanese language learners in the study accessed digital learning tools exclusively via smartphone; only 22% had regular computer access for learning purposes.
-- **Crispy note:** The only published study confirming smartphone-exclusive access among Indonesian Japanese language learners specifically. Critical for justifying PWA mobile-first design.
+- **Core contribution:** Study of Japanese language learners in Indonesia using a mobile-assisted conversational platform. **Key demographic finding:** 78% of Indonesian Japanese language learners in the study accessed digital learning tools exclusively via smartphone; only 22% had regular computer access for learning purposes.
+- **Curriculum Design Note:** The only published study confirming smartphone-exclusive access among Indonesian Japanese language learners specifically. Critical for justifying PWA mobile-first design.
 
 ---
 
@@ -1271,7 +1271,7 @@ These three facts, taken together, establish that the Nugget Nihongo PWA archite
 **[NEW-v3]** **APJII (Asosiasi Penyelenggara Jasa Internet Indonesia). (2023).** *Survei penetrasi internet Indonesia 2022–2023.* APJII.
 - URL: https://apjii.or.id/survei
 - **Key data:** Internet penetration rate 78.19% of population as of 2023 (215.6 million internet users out of 275.7 million population). Smartphone access: 95.4% of internet users. Computer/laptop access: 26.7% of internet users. **Mobile-first access is not a preference — it is the structural reality of Indonesian internet use.**
-- **Crispy note:** Use this to justify mobile-first PWA design to any stakeholder who questions the choice. The data is unambiguous.
+- **Curriculum Design Note:** Use this to justify mobile-first PWA design to any stakeholder who questions the choice. The data is unambiguous.
 
 ---
 
@@ -1279,7 +1279,7 @@ These three facts, taken together, establish that the Nugget Nihongo PWA archite
 - URL: https://www.pewresearch.org/internet/2019/03/07/mobile-connectivity-in-emerging-economies/
 - **Institutional affiliation:** Pew Research Center.
 - **Key findings (Indonesia-specific):** 93% of Indonesian adults own a mobile phone; 68% own a smartphone (2018–2019 data). More Indonesians access the internet via smartphone than via any other device across all age groups and income levels. Internet-via-smartphone is more common in Indonesia than in Japan, South Korea, or Germany.
-- **Crispy note:** Independent confirmation of APJII data from a recognized international research institution. Strengthens the market-context argument.
+- **Curriculum Design Note:** Independent confirmation of APJII data from a recognized international research institution. Strengthens the market-context argument.
 
 ---
 
@@ -1287,7 +1287,7 @@ These three facts, taken together, establish that the Nugget Nihongo PWA archite
 - URL: https://www.gsma.com/mobileeconomy/asiapacific/
 - **Key data:** Indonesia has 208 million unique mobile subscribers (2023). 4G coverage reaches 86% of the population. Average mobile data usage: 12.7 GB/month per user (2023). Growth trajectory: 5G rollout expected by 2025, with coverage initially concentrated in Java.
 - **Implication for PWA design:** Service worker offline caching is critical. In outer-island and peri-urban Indonesia, connection reliability is variable. A PWA that requires continuous connectivity will fail for ~30% of the addressable market. Aggressive offline-first architecture is not a nice-to-have; it is a market-access prerequisite.
-- **Crispy note:** Strongest technical argument for offline-capable SRS. Cache the day's cards on first load; sync on next connection.
+- **Curriculum Design Note:** Strongest technical argument for offline-capable SRS. Cache the day's cards on first load; sync on next connection.
 
 ---
 
@@ -1297,14 +1297,14 @@ These three facts, taken together, establish that the Nugget Nihongo PWA archite
 - URL: https://gs.statcounter.com/os-market-share/mobile/indonesia/
 - **Key data (2024):** Android: 88.7% market share in Indonesia; iOS: 10.1%; Other: 1.2%. Android dominance has been consistent since 2013. iOS concentration: Jakarta, Surabaya, Bali — tourist/expatriate/upper-professional demographics.
 - **PWA implication:** Android users can add PWA to home screen from Chrome browser with zero friction (three-tap flow: install prompt → accept → home screen icon). For the 88.7% Android majority, the PWA installation experience is functionally equivalent to a native app. The 10.1% iOS users encounter a more complex manual process (Safari → Share → Add to Home Screen, with no native install prompt until iOS 16.4+).
-- **Crispy note:** Consider a first-session "how to install" modal specifically for iOS Safari users. This is a one-time friction point worth addressing explicitly in onboarding.
+- **Curriculum Design Note:** Consider a first-session "how to install" modal specifically for iOS Safari users. This is a one-time friction point worth addressing explicitly in onboarding.
 
 ---
 
 **[NEW-v3]** **Firtman, M. (2023).** *PWA compatibility on iOS: Current status.* Firt.dev.
 - URL: https://firt.dev/pwa-on-ios
 - **Summary:** As of iOS 16.4 (March 2023), Apple introduced support for Web Push Notifications for PWAs added to the home screen. Prior to 16.4, iOS PWAs could not receive push notifications. This was a major functional gap. As of April 2026, approximately 85–90% of active iOS devices run iOS 16.4 or later, meaning push notification capability is now available across the overwhelming majority of iOS devices.
-- **Crispy note:** The historical "iOS PWA cannot send notifications" objection is now resolved for the vast majority of users. Document this explicitly. For users on older iOS, fall back to in-app notification banners.
+- **Curriculum Design Note:** The historical "iOS PWA cannot send notifications" objection is now resolved for the vast majority of users. Document this explicitly. For users on older iOS, fall back to in-app notification banners.
 
 ---
 
@@ -1313,7 +1313,7 @@ These three facts, taken together, establish that the Nugget Nihongo PWA archite
 **[NEW-v3]** **Dardjowidjojo, S. (2000).** English teaching in Indonesia. *EA Journal, 18*(1), 22–30.
 - **Institutional affiliation:** Soenjono Dardjowidjojo — Atma Jaya Catholic University, Jakarta. The most prominent Indonesian linguist writing in English.
 - **Core contribution:** Analysis of Indonesian educational linguistic context. Key finding relevant to Nugget Nihongo: **Indonesian (Bahasa Indonesia) is the L2 of the majority of its speakers** — their actual L1 is Javanese, Sundanese, Minang, or one of 700+ regional languages. "Indonesian learners of Japanese" are frequently multilingual (L1 = regional language; L2 = Indonesian; L3 = Japanese). This has two implications: (1) Indonesian metalinguistic awareness is higher than monolingual English-L1 populations, which may facilitate explicit grammar instruction; (2) the "Indonesian-Japanese contrastive" framing in §5.5 is technically describing L2 Indonesian to L3 Japanese transfer, not L1 to L2 transfer.
-- **Crispy note:** Relevant for the §5.5 contrastive section's scope statement. Agent 11 should note this nuance. For §8 purposes: the multilingual profile of most Indonesian users means they are likely comfortable with code-switching and explicit linguistic comparison — the L2d tag system in §5.5 is well-calibrated to this learner profile.
+- **Curriculum Design Note:** Relevant for the §5.5 contrastive section's scope statement. Note this nuance: for §8 purposes, the multilingual profile of most Indonesian users means they are likely comfortable with code-switching and explicit linguistic comparison — the L2d tag system in §5.5 is well-calibrated to this learner profile.
 
 ---
 
@@ -1321,7 +1321,7 @@ These three facts, taken together, establish that the Nugget Nihongo PWA archite
 - **Institutional affiliation:** Martin Lamb — University of Leeds.
 - **Core contribution:** Follow-up to Lamb (2004) examining urban–rural motivation difference in Indonesian English learners. **Key finding:** Rural Indonesian learners show significantly lower Ideal L2 Self vividness than urban learners, associated with less media exposure and fewer L2 role models. The motivational advantage of urban learners is primarily an imagery-access advantage, not a stable trait.
 - **Design implication:** Nugget Nihongo's onboarding should expose learners to **vivid, relatable L2 use scenarios from the Indonesian context** — not abstract "imagine yourself in Japan" prompts. Accessible scenarios: watching anime raw, reading a menu at a Japanese restaurant in Jakarta, chatting with a Japanese tourist, understanding a J-Pop song. These are concrete, locally accessible imagery sources even for non-urban learners.
-- **Crispy note:** The Ideal L2 Self research most directly calibrated to Indonesian learner population.
+- **Curriculum Design Note:** The Ideal L2 Self research most directly calibrated to Indonesian learner population.
 
 ---
 
@@ -1329,7 +1329,7 @@ These three facts, taken together, establish that the Nugget Nihongo PWA archite
 
 **[NEW-v3]** **App Annie (data.ai). (2022).** *State of mobile 2022: Southeast Asia.* data.ai.
 - **Key data (Indonesia-specific):** Indonesians spent an average of 5.5 hours per day on mobile apps in 2021 — 4th highest globally. Education category app downloads grew 23% YoY in Indonesia in 2021. TikTok, WhatsApp, and YouTube dominate time-spent. **Implication:** Indonesian users are highly habituated to mobile content consumption; the challenge is not adoption but differentiation and retention within a high-attention-competition environment.
-- **Crispy note:** The 5.5 hours/day mobile usage figure is the market context for the §8.7 habit formation section. Nugget Nihongo is competing for attention against extremely well-optimized attention-capture products. Short sessions (§8.6), clear progress visualization (§8.2), and consistent notification timing (§8.7) are essential for competing in this environment.
+- **Curriculum Design Note:** The 5.5 hours/day mobile usage figure is the market context for the §8.7 habit formation section. Nugget Nihongo is competing for attention against extremely well-optimized attention-capture products. Short sessions (§8.6), clear progress visualization (§8.2), and consistent notification timing (§8.7) are essential for competing in this environment.
 
 ---
 

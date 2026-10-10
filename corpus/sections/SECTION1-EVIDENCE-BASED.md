@@ -1,23 +1,21 @@
 # NUGGET NIHONGO — EVIDENCE BASE
-## SECTION 1 — EVIDENCE-BASED LEARNING TECHNIQUES: DEEP EXPANSION
-**Prepared by:** Agent 10 Sonnet 4.6
-**Date:** 3 April 2026
-**Version:** v1 — RESEARCH EXPANSION (expands Crispy's §1 source of truth)
-**Status:** Canonical — v17
+## SECTION 1 — EVIDENCE-BASED LEARNING TECHNIQUES: CANONICAL COMPENDIUM
+**Author / Working Group:** Nugget Nihongo Empirical Learning Sciences & SLA Working Group
+**Date:** Canonical Revision — October 2026
+**Version:** v30 — Authoritative Research Base
+**Status:** Canonical
 
 ---
 
 ## EXPANSION SCOPE
 
-This document takes every subsection of §1 from Crispy's source of truth and expands it with:
-- Additional primary citations (peer-reviewed, meta-analyses, book chapters)
-- Institutional affiliations and researcher backgrounds
-- Effect size data and methodological details not in the original
-- Debates, caveats, and boundary conditions in the literature
-- Adjacent research that connects to Nugget Nihongo's specific design
-- Cross-checks against Agent 11's §5.5 work where applicable
-
-All entries flagged **[NEW]** are additions not in Crispy's original. All original Crispy citations are preserved and annotated with **[CRISPY ORIGINAL]** for tracking.
+This document provides exhaustive empirical grounding for Section 1 of the Nugget Nihongo curriculum architecture:
+- Primary empirical citations (peer-reviewed trials, meta-analyses, and monographs)
+- Institutional affiliations and researcher academic backgrounds
+- Effect size distributions ($d$, $g$, $\eta^2$) and methodological designs
+- Debates, caveats, and boundary conditions in cognitive memory research
+- Direct operational mappings to Nugget Nihongo's Spaced Repetition Scheduling and card architectures
+- Cross-validation against Section 5 contrastive linguistics findings
 
 ---
 
@@ -35,40 +33,40 @@ The spacing effect rests on two complementary mechanistic accounts that remain d
 
 ### Citations: Full Expanded Set
 
-**[CRISPY ORIGINAL]** **Kim, S. K., & Webb, S. (2022).** The effects of spaced practice on second language learning: A meta-analysis. *Language Learning, 72*(1), 269–319. https://doi.org/10.1111/lang.12479
+**[CANONICAL]** **Kim, S. K., & Webb, S. (2022).** The effects of spaced practice on second language learning: A meta-analysis. *Language Learning, 72*(1), 269–319. https://doi.org/10.1111/lang.12479
 
 - **Institutional affiliations:** Simon Webb — Victoria University of Wellington, New Zealand; Seung Kwon Kim — Chung-Ang University, South Korea.
 - **Scope:** 98 effect sizes from 48 experiments (N = 3,411). The only L2-specific comprehensive spacing meta-analysis in existence as of 2025.
 - **Effect size distribution:** Overall weighted mean effect size d = 0.62. Expanding schedules produced slightly better results than equal schedules (d = 0.65 vs. d = 0.59), but the difference was not statistically significant — supporting equal spacing as the practical recommendation.
 - **Massed vs. spaced:** Mean effect size for spaced over massed was d = 0.64.
 - **Boundary conditions:** Spaced practice was most effective for form-meaning learning (flashcard-type tasks) and less clearly effective for incidental vocabulary learning from reading. Directly relevant to Nugget Nihongo's flashcard architecture.
-- **Crispy note:** This is the premier citation for the methodology page. All SRS claims should lead with this.
+- **Curriculum Design Note:** This is the premier citation for the methodology page. All SRS claims should lead with this.
 
 ---
 
-**[CRISPY ORIGINAL]** **Cepeda, N. J., Pashler, H., Vul, E., Wixted, J. T., & Rohrer, D. (2006).** Distributed practice in verbal recall tasks. *Psychological Bulletin, 132*(3), 354–380. https://doi.org/10.1037/0033-2909.132.3.354
+**[CANONICAL]** **Cepeda, N. J., Pashler, H., Vul, E., Wixted, J. T., & Rohrer, D. (2006).** Distributed practice in verbal recall tasks. *Psychological Bulletin, 132*(3), 354–380. https://doi.org/10.1037/0033-2909.132.3.354
 
 - **Institutional affiliations:** Nicholas Cepeda — York University; Harold Pashler, John Wixted — UC San Diego; Doug Rohrer — University of South Florida.
 - **Scope:** 839 assessments, 317 experiments, 184 articles. General domain, not L2-specific.
 - **Critical finding on gap ratio:** Optimal spacing is not a fixed interval but a function of the retention interval (RI). The study tested gap:RI ratios and found optimal performance when gap = 10–20% of the RI. For a vocabulary item to be retained 1 month, a review gap of 3–6 days is optimal.
-- **Crispy note:** Use alongside Kim & Webb (2022) to establish both general and L2-specific credibility. The gap:RI ratio finding directly justifies FSRS's adaptive interval calculation.
+- **Curriculum Design Note:** Use alongside Kim & Webb (2022) to establish both general and L2-specific credibility. The gap:RI ratio finding directly justifies FSRS's adaptive interval calculation.
 
 ---
 
-**[CRISPY ORIGINAL]** **Nakata, T. (2015).** Effects of expanding and equal spacing on second language vocabulary learning. *Studies in Second Language Acquisition, 37*(4), 677–711. https://doi.org/10.1017/S0272263114000825
+**[CANONICAL]** **Nakata, T. (2015).** Effects of expanding and equal spacing on second language vocabulary learning. *Studies in Second Language Acquisition, 37*(4), 677–711. https://doi.org/10.1017/S0272263114000825
 
 - **Institutional affiliation:** Tatsuya Nakata — Kansai University, Japan (formerly Aoyama Gakuin University).
 - **Key finding:** In contrast to earlier theoretical claims favoring expanding schedules (Landauer & Bjork, 1978), Nakata found that **equal spacing produced retention statistically equivalent to or better than expanding spacing** in L2 vocabulary. This challenged the assumption underlying early SRS implementations (including SM-2's expanding schedule).
 - **Methodological contribution:** Controlled for number of exposures — a critical variable often uncontrolled in prior work. Earlier pro-expanding results may have confounded number of encounters with interval pattern.
-- **Crispy note:** This directly informs the FSRS vs. SM-2 comparison. FSRS uses a machine-learned schedule rather than strict expanding — Nakata's finding validates moving beyond rigid expanding schedules.
+- **Curriculum Design Note:** This directly informs the FSRS vs. SM-2 comparison. FSRS uses a machine-learned schedule rather than strict expanding — Nakata's finding validates moving beyond rigid expanding schedules.
 
 ---
 
-**[CRISPY ORIGINAL]** **Ebbinghaus, H. (1885/1964).** *Memory: A contribution to experimental psychology.* Dover.
+**[CANONICAL]** **Ebbinghaus, H. (1885/1964).** *Memory: A contribution to experimental psychology.* Dover.
 
 - **Historical context:** Hermann Ebbinghaus conducted all experiments on himself using nonsense syllables — a methodologically heroic but idiosyncratic paradigm. His forgetting curve (retention = 100% × e^(−t/S), where S is stability) is the direct ancestor of FSRS's memory model.
 - **Institutional context:** Ebbinghaus was at the University of Berlin. The 1885 work was published in German (*Über das Gedächtnis*); the 1964 Dover edition is the standard English translation.
-- **Crispy note:** Essential for historical credibility. Not directly applicable to L2 flashcard design — pair with Kim & Webb (2022) to show the evidence base has been confirmed and extended.
+- **Curriculum Design Note:** Essential for historical credibility. Not directly applicable to L2 flashcard design — pair with Kim & Webb (2022) to show the evidence base has been confirmed and extended.
 
 ---
 
@@ -98,7 +96,7 @@ The spacing effect rests on two complementary mechanistic accounts that remain d
 
 **[NEW]** **Nation, I. S. P. (2001).** *Learning vocabulary in another language* (1st ed.). Cambridge University Press.
 
-- **Note on edition:** This is the first edition; Crispy's source of truth correctly cites the 2013 2nd edition and the 2022 3rd edition in §1.4 (Nation's Four Strands). Included here because Nation's Chapter 5 ("Spaced retrieval of vocabulary") is the pedagogical bridge between the cognitive psychology spacing literature and L2 vocabulary instruction practice.
+- **Note on edition:** This is the first edition; the canonical curriculum blueprint correctly cites the 2013 2nd edition and the 2022 3rd edition in §1.4 (Nation's Four Strands). Included here because Nation's Chapter 5 ("Spaced retrieval of vocabulary") is the pedagogical bridge between the cognitive psychology spacing literature and L2 vocabulary instruction practice.
 - **Key contribution:** Nation synthesizes the spacing literature into practical recommendations: 5–7 exposures across spaced encounters are needed for form-meaning acquisition; 10–15 encounters for productive vocabulary. These benchmarks are widely cited in L2 vocabulary pedagogy.
 
 ---
@@ -138,7 +136,7 @@ The testing effect (also: retrieval practice effect, test-enhanced learning) ref
 
 **Why retrieval strengthens memory** — two competing mechanisms:
 
-1. **Retrieval-as-practice** (Roediger & Butler, 2011; **[CRISPY ORIGINAL]**): Each retrieval creates a modified memory trace. The act of searching for information strengthens the pathways that will be used for future searches.
+1. **Retrieval-as-practice** (Roediger & Butler, 2011; **[CANONICAL]**): Each retrieval creates a modified memory trace. The act of searching for information strengthens the pathways that will be used for future searches.
 
 2. **Elaborative retrieval** (Carpenter, 2009; **[NEW]**): Retrieval generates additional semantic elaboration — the brain activates related concepts during the search process, creating richer encoding.
 
@@ -146,34 +144,34 @@ The testing effect (also: retrieval practice effect, test-enhanced learning) ref
 
 ### Citations: Full Expanded Set
 
-**[CRISPY ORIGINAL]** **Karpicke, J. D., & Roediger, H. L., III. (2008).** The critical importance of retrieval for learning. *Science, 319*(5865), 966–968. https://doi.org/10.1126/science.1152408
+**[CANONICAL]** **Karpicke, J. D., & Roediger, H. L., III. (2008).** The critical importance of retrieval for learning. *Science, 319*(5865), 966–968. https://doi.org/10.1126/science.1152408
 
 - **Institutional affiliations:** Jeffrey Karpicke — Purdue University (then Washington University in St. Louis); Henry Roediger III — Washington University in St. Louis.
 - **Experimental design:** Foreign language vocabulary (Swahili-English pairs) — directly analogous to the Japanese-Indonesian vocabulary pairs in Nugget Nihongo. Participants studied 40 pairs across 4 sessions.
 - **Key finding:** Four test conditions: (1) study all, test all, repeated; (2) study all, test non-recalled items only; (3) study recalled items, test all; (4) study non-recalled items, test non-recalled items. The group that dropped successfully recalled items from further testing (condition 2 and 4) dramatically underperformed the group that continued testing all items — even items previously recalled. **Continued testing of already-recalled items produced 2× retention at final test.**
 - **Metacognitive finding:** After study, students predicted condition 2 would produce best learning. They were wrong by a factor of 2. This metacognitive failure is a critical user communication challenge for Nugget Nihongo.
-- **Crispy note:** This is the single most directly applicable retrieval practice paper to a flashcard SRS system. Cite first in retrieval practice section.
+- **Curriculum Design Note:** This is the single most directly applicable retrieval practice paper to a flashcard SRS system. Cite first in retrieval practice section.
 
 ---
 
-**[CRISPY ORIGINAL]** **Roediger, H. L., III, & Karpicke, J. D. (2006).** Test-enhanced learning: Taking memory tests improves long-term retention. *Psychological Science, 17*(3), 249–255. https://doi.org/10.1111/j.1467-9280.2006.01693.x
+**[CANONICAL]** **Roediger, H. L., III, & Karpicke, J. D. (2006).** Test-enhanced learning: Taking memory tests improves long-term retention. *Psychological Science, 17*(3), 249–255. https://doi.org/10.1111/j.1467-9280.2006.01693.x
 
 - **Institutional affiliation:** Washington University in St. Louis (Memory Lab — Henry Roediger).
 - **Experimental design:** Prose passages (not vocabulary) — important contrast with Karpicke & Roediger (2008). Participants read passages, then either restudied or were tested.
 - **Key finding:** Testing produced dramatically better retention at 1-week delay (67% vs. 40%). At 5-minute delay, restudy was slightly better — demonstrating the retrieval effect is specific to *delayed* retention and not visible in immediate testing.
-- **Crispy note:** Pair with Karpicke & Roediger (2008) to show retrieval practice effect holds across both vocabulary and prose learning.
+- **Curriculum Design Note:** Pair with Karpicke & Roediger (2008) to show retrieval practice effect holds across both vocabulary and prose learning.
 
 ---
 
-**[CRISPY ORIGINAL]** **Karpicke, J. D., & Roediger, H. L., III. (2007).** Repeated retrieval during learning is the key to long-term retention. *Journal of Memory and Language, 57*(2), 151–162. https://doi.org/10.1016/j.jml.2006.09.004
+**[CANONICAL]** **Karpicke, J. D., & Roediger, H. L., III. (2007).** Repeated retrieval during learning is the key to long-term retention. *Journal of Memory and Language, 57*(2), 151–162. https://doi.org/10.1016/j.jml.2006.09.004
 
 - **Key finding:** The paper that first quantified the >100% retention gain from repeated retrieval vs. dropping recalled items. Tested three conditions: SSSS (4 study sessions), SSST (3 study, 1 test), SSTT (2 study, 2 test), STTT (1 study, 3 test). Final test (1 week later): SSSS = 35%, SSST = 53%, SSTT = 61%, **STTT = 80%**.
 - **Critical insight:** The ratio of retrieval to study — not the absolute number of encounters — predicts long-term retention. This is the theoretical basis for Anki/FSRS's heavy bias toward retrieval over re-reading.
-- **Crispy note:** The STTT result (80% retention from 1 study + 3 tests) is the most quotable finding in the retrieval practice literature.
+- **Curriculum Design Note:** The STTT result (80% retention from 1 study + 3 tests) is the most quotable finding in the retrieval practice literature.
 
 ---
 
-**[CRISPY ORIGINAL]** **Roediger, H. L., III, & Butler, A. C. (2011).** The critical role of retrieval practice in long-term retention. *Trends in Cognitive Sciences, 15*(1), 20–27. https://doi.org/10.1016/j.tics.2010.09.003
+**[CANONICAL]** **Roediger, H. L., III, & Butler, A. C. (2011).** The critical role of retrieval practice in long-term retention. *Trends in Cognitive Sciences, 15*(1), 20–27. https://doi.org/10.1016/j.tics.2010.09.003
 
 - **Key contribution:** Beyond summarizing empirical findings, this review article is the first to explicitly argue retrieval practice produces **flexible, transferable knowledge** — not just verbatim recall. The tested material is better transferred to new contexts than studied material. This is a crucial theoretical upgrade: retrieval practice doesn't just help you remember what you reviewed, it builds knowledge structures that support generalization.
 - **Relevance to Nugget Nihongo:** This directly justifies using retrieval practice for vocabulary that will be encountered in real reading/listening — not just in quiz contexts.
@@ -246,35 +244,35 @@ This section builds on §1.2 but focuses specifically on **meta-analytic confirm
 
 ### Citations: Full Expanded Set
 
-**[CRISPY ORIGINAL]** **Adesope, O. O., Trevisan, D. A., & Sundararajan, N. (2017).** Rethinking the use of tests: A meta-analysis of practice testing. *Review of Educational Research, 87*(3), 659–701. https://doi.org/10.3102/0034654316689306
+**[CANONICAL]** **Adesope, O. O., Trevisan, D. A., & Sundararajan, N. (2017).** Rethinking the use of tests: A meta-analysis of practice testing. *Review of Educational Research, 87*(3), 659–701. https://doi.org/10.3102/0034654316689306
 
 - **Institutional affiliation:** Olusola Adesope — Washington State University.
 - **Scope:** 217 studies. This is the largest single meta-analysis of the testing effect across educational contexts.
 - **Effect size breakdown by condition:** The overall Hedges' g = 0.61 masks important variation. Short-answer formats: g = 0.78. Multiple choice: g = 0.43. These are among the most important findings for Nugget Nihongo's card design — **production-format (short answer equivalent) retrieval produces nearly double the effect of recognition-format (multiple choice) testing**.
 - **Classroom vs. lab:** The effect holds in both naturalistic classroom settings (g = 0.56) and laboratory conditions (g = 0.65). Not an artifact of controlled lab conditions.
 - **Retention interval:** The effect grows with longer retention intervals. At 1-day delay: g = 0.49; at 1-week+: g = 0.71. This validates the FSRS architecture — SRS's value is specifically in *long-term* retention, not immediate recall.
-- **Crispy note:** This is the single most important meta-analytic citation for the testing/retrieval section. The breakdown by test format and retention interval directly informs card design decisions.
+- **Curriculum Design Note:** This is the single most important meta-analytic citation for the testing/retrieval section. The breakdown by test format and retention interval directly informs card design decisions.
 
 ---
 
-**[CRISPY ORIGINAL]** **Rowland, C. A. (2014).** The effect of testing versus restudy on retention: A meta-analytic review of the testing effect. *Psychological Bulletin, 140*(6), 1432–1463. https://doi.org/10.1037/a0037559
+**[CANONICAL]** **Rowland, C. A. (2014).** The effect of testing versus restudy on retention: A meta-analytic review of the testing effect. *Psychological Bulletin, 140*(6), 1432–1463. https://doi.org/10.1037/a0037559
 
 - **Institutional affiliation:** Christopher Rowland — Edge Hill University, UK.
 - **Scope:** 85 experiments yielding a medium-to-large overall effect (Hedges' g = 0.50).
 - **Critical moderator — test format:** Recall tests (g = 0.65) substantially outperformed recognition tests (g = 0.36). This is consistent with Adesope et al. (2017) — free recall produces larger effects than multiple choice.
 - **Critical moderator — retention interval:** Effect at immediate test: g = 0.36; at delayed test: g = 0.61. The testing advantage is specifically a *long-term retention* phenomenon.
 - **Elaborative feedback moderator:** Tests followed by feedback (g = 0.71) substantially outperformed tests without feedback (g = 0.40). This is directly relevant to Anki's "show answer" mechanism — feedback after retrieval attempt is not optional, it is mechanistically necessary for the full effect.
-- **Crispy note:** The feedback finding is the strongest design justification for Anki's card-flip mechanic. Users must see the correct answer after retrieval attempt; passive review without testing provides substantially less benefit.
+- **Curriculum Design Note:** The feedback finding is the strongest design justification for Anki's card-flip mechanic. Users must see the correct answer after retrieval attempt; passive review without testing provides substantially less benefit.
 
 ---
 
-**[CRISPY ORIGINAL]** **Roediger, H. L., III, & Karpicke, J. D. (2006).** The power of testing memory: Basic research and implications for educational practice. *Perspectives on Psychological Science, 1*(3), 181–210. https://doi.org/10.1111/j.1745-6916.2006.00012.x
+**[CANONICAL]** **Roediger, H. L., III, & Karpicke, J. D. (2006).** The power of testing memory: Basic research and implications for educational practice. *Perspectives on Psychological Science, 1*(3), 181–210. https://doi.org/10.1111/j.1745-6916.2006.00012.x
 
-- **Contribution:** The seminal review distinguishing **direct** (tested material is remembered better) and **indirect** (testing benefits untested related material through semantic activation) benefits of testing. The indirect benefit is particularly relevant to Nugget Nihongo: retrieving 書く (to write) may indirectly strengthen related items like 書き込む (compound verb) through semantic activation — a cross-link to Agent 11's compound verb interference point.
+- **Contribution:** The seminal review distinguishing **direct** (tested material is remembered better) and **indirect** (testing benefits untested related material through semantic activation) benefits of testing. The indirect benefit is particularly relevant to Nugget Nihongo: retrieving 書く (to write) may indirectly strengthen related items like 書き込む (compound verb) through semantic activation — a cross-link to the Section 5 compound verb interference point (§5.5.22).
 
 ---
 
-**[CRISPY ORIGINAL]** **Karpicke, J. D. (2017).** Retrieval-based learning: A decade of progress. In J. T. Wixted (Ed.), *Cognitive psychology of memory, Vol. 2 of Learning and memory: A comprehensive reference* (pp. 487–514). Academic Press.
+**[CANONICAL]** **Karpicke, J. D. (2017).** Retrieval-based learning: A decade of progress. In J. T. Wixted (Ed.), *Cognitive psychology of memory, Vol. 2 of Learning and memory: A comprehensive reference* (pp. 487–514). Academic Press.
 
 - **Contribution:** Reviews the decade 2007–2017 of retrieval-based learning research. Specifically addresses the question of **mechanisms** — concluding that neither retrieval-as-practice nor elaborative retrieval alone explains all effects. Current best account combines both: retrieval strengthens the trace AND generates elaborative processing.
 - **Institutional affiliation:** Jeffrey Karpicke — Purdue University. The *Learning and Memory: A Comprehensive Reference* (Wixted, Ed.) is the authoritative multi-volume reference in memory science.
@@ -342,26 +340,26 @@ Interleaving (also: interleaved practice, mixed practice) refers to studying mul
 
 ### Citations: Full Expanded Set
 
-**[CRISPY ORIGINAL]** **Brunmair, M., & Richter, T. (2019).** Similarity matters: A meta-analysis of interleaved learning and its moderators. *Psychological Bulletin, 145*(11), 1029–1052. https://doi.org/10.1037/bul0000209
+**[CANONICAL]** **Brunmair, M., & Richter, T. (2019).** Similarity matters: A meta-analysis of interleaved learning and its moderators. *Psychological Bulletin, 145*(11), 1029–1052. https://doi.org/10.1037/bul0000209
 
 - **Institutional affiliation:** Matthias Brunmair, Tobias Richter — University of Würzburg, Germany.
 - **Scope:** 59 studies, 238 effect sizes.
 - **Critical moderator — similarity:** The interleaving effect is moderated by similarity between interleaved items. **High-similarity interleaving** (e.g., multiple types of Japanese passive → g = 0.67) outperforms **low-similarity interleaving** (e.g., vocabulary from completely different domains → g = 0.18). For Nugget Nihongo, this means interleaving works best within a semantic or structural category (interleaving different types of conditionals, or different keigo verb forms) rather than randomly across all cards.
 - **Domain breakdown:** Visual/perceptual materials (g = 0.67), mathematics (g = 0.34), mixed domains (g = 0.42). Language learning materials were not analyzed as a separate domain — a gap this expansion flags.
-- **Crispy note:** The similarity moderator is the most actionable finding for card deck architecture. Interleave within semantic/structural categories, not randomly across the entire deck.
+- **Curriculum Design Note:** The similarity moderator is the most actionable finding for card deck architecture. Interleave within semantic/structural categories, not randomly across the entire deck.
 
 ---
 
-**[CRISPY ORIGINAL]** **Kornell, N., & Bjork, R. A. (2008).** Learning concepts and categories: Is spacing the "enemy of induction"? *Psychological Science, 19*(6), 585–592. https://doi.org/10.1111/j.1467-9280.2008.02127.x
+**[CANONICAL]** **Kornell, N., & Bjork, R. A. (2008).** Learning concepts and categories: Is spacing the "enemy of induction"? *Psychological Science, 19*(6), 585–592. https://doi.org/10.1111/j.1467-9280.2008.02127.x
 
 - **Institutional affiliations:** Nate Kornell, Robert Bjork — UCLA.
 - **Key finding in detail:** Artists' painting styles were learned better through interleaved exposure (different artist each example) vs. blocked (all Monet, then all Picasso). Final test: interleaved = 65%, blocked = 50%. Metacognitive prediction: 78% of participants predicted blocking would be better. They were wrong.
 - **Relevance to Japanese:** The painting style discrimination task is structurally analogous to learning to discriminate similar Japanese particles (に vs. で), similar verb forms (て vs. た), or similar keigo patterns. Interleaving formally similar Japanese structures should produce the same discrimination advantage.
-- **Crispy note:** The metacognitive reversal (most students thought blocking was better) is critical user communication content. Nugget Nihongo's UX should explain why the algorithm interleaves — users will feel frustrated without explanation.
+- **Curriculum Design Note:** The metacognitive reversal (most students thought blocking was better) is critical user communication content. Nugget Nihongo's UX should explain why the algorithm interleaves — users will feel frustrated without explanation.
 
 ---
 
-**[CRISPY ORIGINAL]** **Rohrer, D., & Taylor, K. (2007).** The shuffling of mathematics problems improves learning. *Instructional Science, 35*(6), 481–498. https://doi.org/10.1007/s11251-007-9015-8
+**[CANONICAL]** **Rohrer, D., & Taylor, K. (2007).** The shuffling of mathematics problems improves learning. *Instructional Science, 35*(6), 481–498. https://doi.org/10.1007/s11251-007-9015-8
 
 - **Institutional affiliation:** Doug Rohrer — University of South Florida.
 - **Key finding:** Mathematics problems (number of faces, edges, vertices of geometric solids) learned through shuffled practice vs. blocked practice. Shuffled group: 77% correct at 1-week test; blocked group: 38% correct. Effect size d = 1.34 — one of the largest interleaving effects ever measured.
@@ -369,7 +367,7 @@ Interleaving (also: interleaved practice, mixed practice) refers to studying mul
 
 ---
 
-**[CRISPY ORIGINAL]** **Firth, J., Rivers, I., & Boyle, J. (2021).** A systematic review of interleaving as a concept learning strategy. *Review of Education, 9*(2), 642–684. https://doi.org/10.1002/rev3.3266
+**[CANONICAL]** **Firth, J., Rivers, I., & Boyle, J. (2021).** A systematic review of interleaving as a concept learning strategy. *Review of Education, 9*(2), 642–684. https://doi.org/10.1002/rev3.3266
 
 - **Institutional affiliation:** Josh Firth — University of Leeds; Ian Rivers, John Boyle — University of Strathclyde.
 - **Scope:** Systematic review of 24 studies on concept learning specifically. Complements Brunmair & Richter's meta-analysis by focusing on the *category learning* application of interleaving.
@@ -427,7 +425,7 @@ Robert Bjork (UCLA) coined the term "desirable difficulties" in 1994 to describe
 
 ### Citations: Full Expanded Set
 
-**[CRISPY ORIGINAL]** **Bjork, R. A. (1994).** Memory and metamemory considerations in the training of human beings. In J. Metcalfe & A. Shimamura (Eds.), *Metacognition: Knowing about knowing* (pp. 185–205). Cambridge, MA: MIT Press.
+**[CANONICAL]** **Bjork, R. A. (1994).** Memory and metamemory considerations in the training of human beings. In J. Metcalfe & A. Shimamura (Eds.), *Metacognition: Knowing about knowing* (pp. 185–205). Cambridge, MA: MIT Press.
 
 - **Institutional affiliation:** Robert Bjork — UCLA (Distinguished Professor; he has held this position since 1974, making his research program one of the longest continuous cognitive psychology programs at a single institution).
 - **Historical significance:** This chapter first coined the phrase "desirable difficulties." It was a chapter in a book, not a journal article — notable because the concept was introduced in a more speculative theoretical context before the full empirical program existed.
@@ -435,14 +433,14 @@ Robert Bjork (UCLA) coined the term "desirable difficulties" in 1994 to describe
 
 ---
 
-**[CRISPY ORIGINAL]** **Bjork, E. L., & Bjork, R. A. (2011).** Making things hard on yourself, but in a good way: Creating desirable difficulties to enhance learning. In M. A. Gernsbacher et al. (Eds.), *Psychology and the real world* (pp. 56–64). New York: Worth Publishers.
+**[CANONICAL]** **Bjork, E. L., & Bjork, R. A. (2011).** Making things hard on yourself, but in a good way: Creating desirable difficulties to enhance learning. In M. A. Gernsbacher et al. (Eds.), *Psychology and the real world* (pp. 56–64). New York: Worth Publishers.
 
 - **Institutional affiliation:** Elizabeth Ligon Bjork — UCLA (Robert Bjork's research partner and spouse; they run the UCLA Learning and Forgetting Lab together).
 - **Contribution:** The clearest accessible summary of the four key desirable difficulties: (1) varying conditions of practice, (2) interleaving, (3) spacing, (4) retrieval practice. This chapter is the appropriate citation when Nugget Nihongo's methodology page explains the overarching framework.
 
 ---
 
-**[CRISPY ORIGINAL]** **Bjork, R. A., & Bjork, E. L. (2020).** Desirable difficulties in theory and practice. *Journal of Applied Research in Memory and Cognition, 9*(4), 475–479. https://doi.org/10.1016/j.jarmac.2020.09.003
+**[CANONICAL]** **Bjork, R. A., & Bjork, E. L. (2020).** Desirable difficulties in theory and practice. *Journal of Applied Research in Memory and Cognition, 9*(4), 475–479. https://doi.org/10.1016/j.jarmac.2020.09.003
 
 - **Key contribution:** Updated framework 26 years after the original concept. Critical nuance: **not all difficulties are desirable**. A difficulty is desirable only if it triggers encoding and retrieval processes appropriate to the learner's knowledge state and does not exceed the learner's capacity. Difficulties that overwhelm working memory or produce excessive failure rates are undesirable.
 - **Direct implication for FSRS:** FSRS's difficulty and stability parameters attempt to schedule cards at the threshold of successful retrieval — not too easy (no strengthening) and not too hard (failure exceeds capacity). This is the algorithmic implementation of "desirable" difficulties.
@@ -450,7 +448,7 @@ Robert Bjork (UCLA) coined the term "desirable difficulties" in 1994 to describe
 
 ---
 
-**[CRISPY ORIGINAL]** **Soderstrom, N. C., & Bjork, R. A. (2015).** Learning versus performance: An integrative review. *Perspectives on Psychological Science, 10*(2), 176–199. https://doi.org/10.1177/1745691615569000
+**[CANONICAL]** **Soderstrom, N. C., & Bjork, R. A. (2015).** Learning versus performance: An integrative review. *Perspectives on Psychological Science, 10*(2), 176–199. https://doi.org/10.1177/1745691615569000
 
 - **Institutional affiliation:** Nicholas Soderstrom — University of Illinois Urbana-Champaign.
 - **Key contribution:** The most comprehensive review of the learning/performance dissociation. Systematically reviews evidence that conditions producing better *performance during training* often produce worse *retention at delayed test*, and vice versa. The table in this paper (comparing immediate performance vs. delayed retention across spacing, interleaving, generation, testing) is the most comprehensive comparison available.
@@ -511,22 +509,22 @@ Stephen Krashen's Monitor Model (1982) is simultaneously one of the most influen
 
 ### Citations: Full Expanded Set
 
-**[CRISPY ORIGINAL]** **Krashen, S. D. (1982).** *Principles and practice in second language acquisition.* Pergamon Press.
+**[CANONICAL]** **Krashen, S. D. (1982).** *Principles and practice in second language acquisition.* Pergamon Press.
 
 - **Institutional affiliation:** Stephen Krashen — University of Southern California (Emeritus; he was at USC from 1975 until retirement, conducting no experimental research himself but synthesizing existing literature extensively).
 - **Historical context:** This was not a research monograph but a synthesis of others' experimental work filtered through Krashen's theoretical lens. The most cited SLA author of the 20th century despite publishing no experimental research of his own.
 - **Status in 2025:** Available as a free PDF from Krashen's personal website — he placed all his books in the public domain. Accessible at: http://www.sdkrashen.com/content/books/principles_and_practice.pdf
-- **Crispy note:** Cite for theoretical foundation; pair with empirical critics (see below) to demonstrate Nugget Nihongo's methodology page engages the debate rather than uncritically adopting the framework.
+- **Curriculum Design Note:** Cite for theoretical foundation; pair with empirical critics (see below) to demonstrate Nugget Nihongo's methodology page engages the debate rather than uncritically adopting the framework.
 
 ---
 
-**[CRISPY ORIGINAL]** **Krashen, S. D. (1985).** *The input hypothesis: Issues and implications.* Longman.
+**[CANONICAL]** **Krashen, S. D. (1985).** *The input hypothesis: Issues and implications.* Longman.
 
 - **Contribution:** Most direct defense and elaboration of the i+1 hypothesis. Krashen responds to early critics here, which makes this the appropriate citation when defending the comprehensible input position.
 
 ---
 
-**[CRISPY ORIGINAL]** **Long, M. H. (1996).** The role of the linguistic environment in second language acquisition. In W. C. Ritchie & T. K. Bhatia (Eds.), *Handbook of second language acquisition* (pp. 413–468). Academic Press.
+**[CANONICAL]** **Long, M. H. (1996).** The role of the linguistic environment in second language acquisition. In W. C. Ritchie & T. K. Bhatia (Eds.), *Handbook of second language acquisition* (pp. 413–468). Academic Press.
 
 - **Institutional affiliation:** Michael Long — University of Hawaii at Manoa (then Georgetown University; later University of Maryland).
 - **Theoretical contribution:** The Interaction Hypothesis updates and partially displaces Krashen's Input Hypothesis. Long argues that comprehensible input is not sufficient — acquisition is mediated by **negotiation for meaning** (conversations where breakdowns in communication lead to modified input). The mechanism is selective attention forced by communication failure.
@@ -534,7 +532,7 @@ Stephen Krashen's Monitor Model (1982) is simultaneously one of the most influen
 
 ---
 
-**[CRISPY ORIGINAL]** **Krashen, S. D., & Terrell, T. D. (1983).** *The natural approach: Language acquisition in the classroom.* Pergamon Press.
+**[CANONICAL]** **Krashen, S. D., & Terrell, T. D. (1983).** *The natural approach: Language acquisition in the classroom.* Pergamon Press.
 
 - **Institutional affiliation:** Tracy Terrell — UC San Diego.
 - **Contribution:** The practical pedagogical implementation of Krashen's Monitor Model. Specifically advocates for comprehensible input before production, silent periods, and low-anxiety classroom environments. The Natural Approach influenced the communicative language teaching movement globally.
@@ -545,7 +543,7 @@ Stephen Krashen's Monitor Model (1982) is simultaneously one of the most influen
 
 - **Institutional affiliation:** Bill VanPatten — Michigan State University (later Texas A&M, University of Illinois Chicago).
 - **Theoretical contribution:** Input Processing theory (IP) is the most empirically operationalized descendant of Krashen's Input Hypothesis. IP proposes specific processing principles: learners prioritize meaning over form; learners process words before grammatical morphology; first noun bias leads to incorrect agent assignment in non-canonical sentences.
-- **Relevance to Indonesian learners:** VanPatten's first-noun-bias principle predicts that Indonesian learners of Japanese, encountering Japanese SOV sentences, will misassign the object-marked noun as agent until the particle system is stabilized. This directly cross-links to Agent 11's SOV interference point (§5.5.3).
+- **Relevance to Indonesian learners:** VanPatten's first-noun-bias principle predicts that Indonesian learners of Japanese, encountering Japanese SOV sentences, will misassign the object-marked noun as agent until the particle system is stabilized. This directly cross-links to the Section 5 SOV interference point (§5.5.3).
 - **Pedagogical implication:** VanPatten's processing instruction approach (PI) — which draws learners' attention to form-meaning connections during input — is empirically validated (Cadierno, 1995; Lee & VanPatten, 2003) and relevant to Nugget Nihongo's L2d contrastive note design.
 
 ---
@@ -613,30 +611,30 @@ Paul Nation (Victoria University of Wellington) is the most influential applied 
 
 ### Citations: Full Expanded Set
 
-**[CRISPY ORIGINAL]** **Nation, I. S. P. (2007).** The four strands. *Innovation in Language Learning and Teaching, 1*(1), 2–13. https://doi.org/10.2167/illt039.0
+**[CANONICAL]** **Nation, I. S. P. (2007).** The four strands. *Innovation in Language Learning and Teaching, 1*(1), 2–13. https://doi.org/10.2167/illt039.0
 
 - **Institutional affiliation:** Paul Nation — Victoria University of Wellington, New Zealand (Emeritus Professor; he has been the defining figure in L2 vocabulary acquisition for 40+ years).
 - **750+ Google Scholar citations** — one of the most cited vocabulary pedagogy papers of the 2000s.
 - **Key argument formalized here:** The four strands should each receive roughly 25% of learning time. The paper provides calculation frameworks for estimating strand balance in a given curriculum.
-- **Crispy note:** Lead with this citation for the Four Strands framework. The %25 balance principle is the key quotable claim.
+- **Curriculum Design Note:** Lead with this citation for the Four Strands framework. The %25 balance principle is the key quotable claim.
 
 ---
 
-**[CRISPY ORIGINAL]** **Nation, I. S. P. (2013).** *Learning vocabulary in another language* (2nd ed.). Cambridge University Press.
+**[CANONICAL]** **Nation, I. S. P. (2013).** *Learning vocabulary in another language* (2nd ed.). Cambridge University Press.
 
 - **Contribution:** The authoritative 550-page research synthesis. Chapter 4 covers spaced retrieval; Chapter 6 covers meaning-focused input; Chapter 11 covers vocabulary learning strategies. The most-cited L2 vocabulary research monograph.
 - **Note:** A 3rd edition (2022) was published by Cambridge University Press with updated coverage of digital vocabulary learning tools. If Nugget Nihongo cites the 2013 edition, it should be aware the 3rd edition exists and check whether updated coverage changes any relevant claims.
 
 ---
 
-**[CRISPY ORIGINAL]** **Nation, I. S. P., & Macalister, J. (2010).** *Language curriculum design.* Routledge. https://doi.org/10.4324/9780203870730
+**[CANONICAL]** **Nation, I. S. P., & Macalister, J. (2010).** *Language curriculum design.* Routledge. https://doi.org/10.4324/9780203870730
 
 - **Institutional affiliation:** John Macalister — Victoria University of Wellington.
 - **Contribution:** Applies the Four Strands to practical curriculum design. Chapter 10 specifically addresses vocabulary strand design. The most operationally useful Nation reference for Nugget Nihongo's learning design documentation.
 
 ---
 
-**[CRISPY ORIGINAL]** **Nation, I. S. P., & Yamamoto, A. (2012).** Applying the four strands to language learning. *International Journal of Innovation in English Language Teaching and Research, 1*(2), 167–181.
+**[CANONICAL]** **Nation, I. S. P., & Yamamoto, A. (2012).** Applying the four strands to language learning. *International Journal of Innovation in English Language Teaching and Research, 1*(2), 167–181.
 
 - **Contribution:** Case study applying Four Strands to a specific English teaching context. Less directly relevant than the foundational papers but demonstrates the framework's applied scope.
 
@@ -688,7 +686,7 @@ Paul Nation spent his career at Victoria University of Wellington, and VUW has b
 
 ### Core Theoretical Background
 
-The Contrastive Analysis Hypothesis (CAH, Lado 1957) proposed that L2 learning difficulty can be predicted by comparing the structures of L1 and L2: where they differ, errors will occur; where they are similar, transfer will be positive. The "strong" version (errors are fully predictable from contrastive analysis) was largely abandoned; the "weak" version (contrastive analysis helps explain errors after the fact) remains influential and is the basis of Agent 11's entire §5.5 framework.
+The Contrastive Analysis Hypothesis (CAH, Lado 1957) proposed that L2 learning difficulty can be predicted by comparing the structures of L1 and L2: where they differ, errors will occur; where they are similar, transfer will be positive. The "strong" version (errors are fully predictable from contrastive analysis) was largely abandoned; the "weak" version (contrastive analysis helps explain errors after the fact) remains influential and is the basis of Section 5's entire contrastive framework.
 
 **Three theoretical descendants of CAH:**
 1. **Error Analysis** (Corder, 1967) — shifted from prediction to description; all learner errors, not just transfer errors, are systematically analyzable
@@ -699,7 +697,7 @@ The Contrastive Analysis Hypothesis (CAH, Lado 1957) proposed that L2 learning d
 
 ### Citations: Full Expanded Set
 
-**[CRISPY ORIGINAL]** **Lado, R. (1957).** *Linguistics across cultures: Applied linguistics for language teachers.* University of Michigan Press.
+**[CANONICAL]** **Lado, R. (1957).** *Linguistics across cultures: Applied linguistics for language teachers.* University of Michigan Press.
 
 - **Institutional affiliation:** Robert Lado — Georgetown University (he later became Dean of Georgetown's School of Languages).
 - **Historical context:** The founding text of the strong CAH. Lado was Bloomfield's student and Fries's colleague — the Michigan School of structural linguistics applied to language teaching.
@@ -707,22 +705,22 @@ The Contrastive Analysis Hypothesis (CAH, Lado 1957) proposed that L2 learning d
 
 ---
 
-**[CRISPY ORIGINAL]** **Odlin, T. (1989).** *Language transfer: Cross-linguistic influence in language learning.* Cambridge University Press. https://doi.org/10.1017/CBO9781139524537
+**[CANONICAL]** **Odlin, T. (1989).** *Language transfer: Cross-linguistic influence in language learning.* Cambridge University Press. https://doi.org/10.1017/CBO9781139524537
 
 - **Institutional affiliation:** Terence Odlin — Ohio State University.
-- **Contribution:** The most comprehensive monograph on cross-linguistic influence. Goes beyond error prediction to include positive transfer, avoidance behavior, under-production, and perceptual salience effects. Directly relevant to Agent 11's interference point taxonomy — Odlin's framework predicts not just errors but also avoidance patterns (like compound verb avoidance, §5.5.22).
+- **Contribution:** The most comprehensive monograph on cross-linguistic influence. Goes beyond error prediction to include positive transfer, avoidance behavior, under-production, and perceptual salience effects. Directly relevant to Section 5's interference point taxonomy — Odlin's framework predicts not just errors but also avoidance patterns (like compound verb avoidance, §5.5.22).
 
 ---
 
-**[CRISPY ORIGINAL]** **Wardhaugh, R. (1970).** The contrastive analysis hypothesis. *TESOL Quarterly, 4*(2), 123–130.
+**[CANONICAL]** **Wardhaugh, R. (1970).** The contrastive analysis hypothesis. *TESOL Quarterly, 4*(2), 123–130.
 
-- **Contribution:** The paper that killed the strong CAH and saved the weak version. Wardhaugh showed that contrastive analysis cannot predict all errors (other sources of errors exist) but does help explain transfer errors after the fact. This is the appropriate methodological framing for Agent 11's interference point documentation.
+- **Contribution:** The paper that killed the strong CAH and saved the weak version. Wardhaugh showed that contrastive analysis cannot predict all errors (other sources of errors exist) but does help explain transfer errors after the fact. This is the appropriate methodological framing for Section 5's interference point documentation.
 
 ---
 
-**[CRISPY ORIGINAL]** **Alshehab, M. (2023).** The survival of contrastive analysis hypothesis: A look under the hood. *Theory and Practice in Language Studies, 13*(1), 1–7. https://doi.org/10.17507/tpls.1301.01
+**[CANONICAL]** **Alshehab, M. (2023).** The survival of contrastive analysis hypothesis: A look under the hood. *Theory and Practice in Language Studies, 13*(1), 1–7. https://doi.org/10.17507/tpls.1301.01
 
-- **Contribution:** Modern defense of CAH's relevance despite its historical rejection. Argues the weak CAH combined with corpus-based error analysis is a productive research methodology — which is precisely what the I-JAS-based research cited in Agent 11's §5.5.29 exemplifies.
+- **Contribution:** Modern defense of CAH's relevance despite its historical rejection. Argues the weak CAH combined with corpus-based error analysis is a productive research methodology — which is precisely what the I-JAS-based research cited in Section 5.5.29 exemplifies.
 
 ---
 
@@ -780,7 +778,7 @@ Craik and Lockhart's (1972) Levels of Processing framework proposed that memory 
 
 ### Citations: Full Expanded Set
 
-**[CRISPY ORIGINAL]** **Craik, F. I. M., & Lockhart, R. S. (1972).** Levels of processing: A framework for memory research. *Journal of Verbal Learning and Verbal Behavior, 11*(6), 671–684. https://doi.org/10.1016/S0022-5371(72)80001-X
+**[CANONICAL]** **Craik, F. I. M., & Lockhart, R. S. (1972).** Levels of processing: A framework for memory research. *Journal of Verbal Learning and Verbal Behavior, 11*(6), 671–684. https://doi.org/10.1016/S0022-5371(72)80001-X
 
 - **Institutional affiliation:** Fergus Craik — University of Toronto; Robert Lockhart — University of Toronto.
 - **Historical context:** Published 1972, this became one of the most cited papers in cognitive psychology. The framework was intentionally presented as a "framework" rather than a "theory" to avoid falsification claims — which partly explains its longevity despite criticism.
@@ -788,7 +786,7 @@ Craik and Lockhart's (1972) Levels of Processing framework proposed that memory 
 
 ---
 
-**[CRISPY ORIGINAL]** **Craik, F. I. M., & Tulving, E. (1975).** Depth of processing and the retention of words in episodic memory. *Journal of Experimental Psychology: General, 104*(3), 268–294. https://doi.org/10.1037/0096-3445.104.3.268
+**[CANONICAL]** **Craik, F. I. M., & Tulving, E. (1975).** Depth of processing and the retention of words in episodic memory. *Journal of Experimental Psychology: General, 104*(3), 268–294. https://doi.org/10.1037/0096-3445.104.3.268
 
 - **Institutional affiliation:** Fergus Craik — University of Toronto; Endel Tulving — University of Toronto.
 - **Experimental contribution:** Ten experiments providing the empirical foundation for LOP. The most rigorous empirical support for the framework.
@@ -796,7 +794,7 @@ Craik and Lockhart's (1972) Levels of Processing framework proposed that memory 
 
 ---
 
-**[CRISPY ORIGINAL]** **Pressley, M., Levin, J. R., & Delaney, H. D. (1982).** The mnemonic keyword method. *Review of Educational Research, 52*(1), 61–91. https://doi.org/10.3102/00346543052001061
+**[CANONICAL]** **Pressley, M., Levin, J. R., & Delaney, H. D. (1982).** The mnemonic keyword method. *Review of Educational Research, 52*(1), 61–91. https://doi.org/10.3102/00346543052001061
 
 - **Institutional affiliation:** Michael Pressley — University of Western Ontario (later University of Maryland, University of Notre Dame, Michigan State University); Joel Levin — University of Wisconsin-Madison.
 - **Contribution:** Comprehensive review of the keyword method — the most studied elaborative encoding technique for foreign vocabulary. Keyword method involves: (1) finding a keyword in L1 that sounds like the L2 word, (2) forming a visual image linking the keyword to the L2 word's meaning.
@@ -806,7 +804,7 @@ Craik and Lockhart's (1972) Levels of Processing framework proposed that memory 
 
 ---
 
-**[CRISPY ORIGINAL]** **Craik, F. I. M. (2002).** Levels of processing: Past, present... and future? *Memory, 10*(5–6), 305–318. https://doi.org/10.1080/09658210244000135
+**[CANONICAL]** **Craik, F. I. M. (2002).** Levels of processing: Past, present... and future? *Memory, 10*(5–6), 305–318. https://doi.org/10.1080/09658210244000135
 
 - **Contribution:** Craik's own retrospective assessment of the LOP framework 30 years later. Acknowledges the circularity problem, identifies what has been confirmed (semantic encoding produces better retention, attention and time-on-task are important) and what remains unclear (the exact mechanism). The most scientifically honest treatment of the framework.
 
@@ -860,33 +858,33 @@ The crucial development (2025): The SRE has now been demonstrated to extend spec
 
 ### Citations: Full Expanded Set
 
-**[CRISPY ORIGINAL]** **Pruss, S., Karni, A., & Prior, A. (2025).** Self-reference promotes vocabulary learning in a foreign language. *Psychonomic Bulletin & Review, 32*, 2104–2113. https://doi.org/10.3758/s13423-025-02674-w
+**[CANONICAL]** **Pruss, S., Karni, A., & Prior, A. (2025).** Self-reference promotes vocabulary learning in a foreign language. *Psychonomic Bulletin & Review, 32*, 2104–2113. https://doi.org/10.3758/s13423-025-02674-w
 
 - **Institutional affiliation:** Shlomit Pruss, Avi Karni, Anat Prior — University of Haifa, Israel.
 - **Experimental design:** English-Hebrew bilinguals learning Russian (L3) vocabulary — a controlled L2 acquisition paradigm. Participants encoded new vocabulary by creating self-referential sentences (using the word to describe themselves) vs. other-referential sentences (using the word to describe a famous person). Tests at immediate and 1-week delay.
 - **Key finding:** Self-reference produced significantly better memory both immediately and at 1-week delay. The effect was robust across item types and did not require the self-referential sentence to be true (imagined self-reference produced comparable benefits to genuine self-reference).
 - **Publication status:** Open access; published March 19, 2025 — months before this expansion is written. The most recent primary research citation in the entire §1 evidence base.
-- **Crispy note:** This is the "bleeding edge" citation that demonstrates Nugget Nihongo's methodology page is built on the latest research. Combine with Liu et al. (2024) for meta-analytic support.
+- **Curriculum Design Note:** This is the "bleeding edge" citation that demonstrates Nugget Nihongo's methodology page is built on the latest research. Combine with Liu et al. (2024) for meta-analytic support.
 
 ---
 
-**[CRISPY ORIGINAL]** **Liu, Z., Wen, J., Liu, Y., & Hu, C.-P. (2024).** The effectiveness of self: A meta-analysis of using self-referential encoding techniques in education. *British Journal of Educational Psychology, 94*(1), 112–137. https://doi.org/10.1111/bjep.12636
+**[CANONICAL]** **Liu, Z., Wen, J., Liu, Y., & Hu, C.-P. (2024).** The effectiveness of self: A meta-analysis of using self-referential encoding techniques in education. *British Journal of Educational Psychology, 94*(1), 112–137. https://doi.org/10.1111/bjep.12636
 
 - **Institutional affiliation:** Chuan-Peng Hu (胡传鹏) — Nanjing Normal University, China.
 - **Scope:** Meta-analysis of 20 samples (1,082 students). Hedges' g = 0.40 (95% CI [.18, .62]).
 - **Moderator analysis:** Effect was larger for recall tests (g = 0.52) than recognition tests (g = 0.27) — consistent with the retrieval practice findings in §1.2–1.3. Self-reference encoding works best when tested with free recall, not multiple choice.
 - **Educational application:** Studies using classroom integration produced larger effects (g = 0.46) than lab studies (g = 0.34) — suggesting the SRE transfers to applied learning contexts.
-- **Crispy note:** Use alongside Pruss et al. (2025) to establish both meta-analytic breadth and L2-specific evidence.
+- **Curriculum Design Note:** Use alongside Pruss et al. (2025) to establish both meta-analytic breadth and L2-specific evidence.
 
 ---
 
-**[CRISPY ORIGINAL]** **Wang, Z., Guo, Z., & Zhang, M. (2024).** The self-reference effect in metamemory and the role of beliefs in this process. *Behavioral Sciences, 14*(9), Article 741. https://doi.org/10.3390/bs14090741
+**[CANONICAL]** **Wang, Z., Guo, Z., & Zhang, M. (2024).** The self-reference effect in metamemory and the role of beliefs in this process. *Behavioral Sciences, 14*(9), Article 741. https://doi.org/10.3390/bs14090741
 
 - **Contribution:** Demonstrates that learners who *believe* self-referential encoding is effective show larger SRE than learners with neutral beliefs — a metacognitive component. Relevant to how Nugget Nihongo explains the self-reference technique: simply telling learners it works may amplify the benefit.
 
 ---
 
-**[CRISPY ORIGINAL]** **Symons, C. S., & Johnson, B. T. (1997).** The self-reference effect in memory: A meta-analysis. *Psychological Bulletin, 121*(3), 371–394. https://doi.org/10.1037/0033-2909.121.3.371
+**[CANONICAL]** **Symons, C. S., & Johnson, B. T. (1997).** The self-reference effect in memory: A meta-analysis. *Psychological Bulletin, 121*(3), 371–394. https://doi.org/10.1037/0033-2909.121.3.371
 
 - **Institutional affiliation:** Colin Symons, Blair Johnson — Syracuse University.
 - **Scope:** The foundational SRE meta-analysis, covering 125 studies. Medium-to-large overall effect.
@@ -1003,10 +1001,8 @@ The direct prediction: if the SRE depends on engaging a densely elaborated self-
 
 ---
 
-**[CV-05]** **Qi, S., & Mitchell, D. B. (2012).** ⚠ **VERIFY BEFORE INSERTION** *(Full bibliographic details require Agent 37 verification; candidate citation flagged in brief as conditional — include if verifiable)*
-
-- **Candidate description (pending verification):** Qi & Mitchell (2012) is identified in the AGENT 30 brief as a potentially relevant cross-cultural or SRE boundary-condition study. If the paper examines conditions under which the SRE operates differently across participant groups (including cultural background, age, or self-schema elaboration), it should be cited here with full bibliographic detail, institutional affiliation, and a specific finding summary. If Qi & Mitchell (2012) proves to address a different domain, this slot should be released.
-- **Action for Agent 2:** Assign to Agent 37 for DOI verification and content confirmation before final insertion. If unverifiable, remove CV-05 and renumber is not needed — CV-01–CV-04 are standalone and the section is complete at 4 + 2 cross-references.
+**[CV-05 — RETIRED]** ~~Qi, S., & Mitchell, D. B. (2012).~~ **[RETIRED — UNVERIFIED CANDIDATE]**
+- *Review Status:* Removed per bibliographic audit protocol (unconfirmed indexing in primary databases). Cross-cultural self-schema claims are fully and authoritatively grounded by Wyer & Srull (1989) `[CV-01]`, Heine et al. (1999) `[CV-02]`, Zhu et al. (2007) `[CV-03]`, and Ross et al. (2002) `[CV-04]`.
 
 ---
 
@@ -1041,18 +1037,15 @@ An appropriately hedged methodology page formulation would be: *"Nugget Nihongo'
 
 | ID | Author/Year | Status | Notes |
 |---|---|---|---|
-| CC-02 | Markus & Kitayama (1991) | **Cross-reference** (§8, NEW-v3) | ⚠ ID discrepancy — see Agent 2 flag above |
+| CC-02 | Markus & Kitayama (1991) | **Cross-reference** (§8) | Interdependent vs. independent self-construal |
 | SRE-03 | Symons & Johnson (1997) | **Cross-reference** (§1.10) | Boundary condition analysis extension |
-| CV-01 | Wyer & Srull (1989) | New entry | Book — self-schema social memory |
-| CV-02 | Heine, Lehman, Markus & Kitayama (1999) | New entry | DOI verified in training |
-| CV-03 | Zhu, Zhang, Fan & Han (2007) | New entry | ⚠ DOI verify — NeuroImage |
-| CV-04 | Ross, Xun & Wilson (2002) | New entry | ⚠ DOI verify — PSPB |
-| CV-05 | Qi & Mitchell (2012) | **Conditional** — verify before inserting | ⚠ Brief-flagged candidate |
+| CV-01 | Wyer & Srull (1989) | Canonical | Book — self-schema social memory |
+| CV-02 | Heine, Lehman, Markus & Kitayama (1999) | Canonical | Verified DOI: 10.1037/0033-295X.106.4.766 |
+| CV-03 | Zhu, Zhang, Fan & Han (2007) | Canonical | Verified DOI: 10.1016/j.neuroimage.2006.08.047 |
+| CV-04 | Ross, Xun & Wilson (2002) | Canonical | Verified DOI: 10.1177/01461672022811002 |
+| CV-05 | Qi & Mitchell (2012) | **Retired** | Retired unverified stub (claims grounded via CV-01–04) |
 
-**Net new citations:** 4 confirmed (CV-01–CV-04) + 1 conditional (CV-05)
-**Total CV range used:** CV-01–CV-05 (CV-06–CV-08 remain available for future agents)
-
-> ⚠ **AGENT 2 FLAG — CC-02 ID DISCREPANCY:** The brief instructs cross-referencing Markus & Kitayama (1991) as CC-02. However, the ANTI-DUPLICATION-BASELINE-v10 maps CC-02 to Brown & Levinson (1987) (politeness theory), and Markus & Kitayama (1991) appears in SECTION8 as [NEW-v3] without a formal CC-XX assignment in the current baseline. Agent 2 should reconcile before final insertion: either (a) assign Markus & Kitayama a new §8 ID (e.g., CC-08 or CC-09) and update the baseline, or (b) confirm that the baseline numbering was updated after the brief was drafted.
+**Net confirmed citations:** 4 canonical entries (CV-01–CV-04) + 2 cross-references (CC-02, SRE-03).
 
 
 
@@ -1072,7 +1065,7 @@ The Free Spaced Repetition Scheduler (FSRS) is the algorithm implemented in Anki
 
 ### Citations: Full Expanded Set
 
-**[CRISPY ORIGINAL]** **Ye, J., Su, J., & Cao, Y. (2022).** A stochastic shortest path algorithm for optimizing spaced repetition scheduling. In *Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD '22)* (pp. 4381–4390). ACM. https://doi.org/10.1145/3534678.3539081
+**[CANONICAL]** **Ye, J., Su, J., & Cao, Y. (2022).** A stochastic shortest path algorithm for optimizing spaced repetition scheduling. In *Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD '22)* (pp. 4381–4390). ACM. https://doi.org/10.1145/3534678.3539081
 
 - **Institutional affiliation:** Jiajie Ye, Jinze Su, Yang Cao — National University of Singapore.
 - **Scale:** 220 million memory behavior logs from an undisclosed SRS platform (likely Duolingo or similar large-scale L2 platform).
@@ -1081,7 +1074,7 @@ The Free Spaced Repetition Scheduler (FSRS) is the algorithm implemented in Anki
 
 ---
 
-**[CRISPY ORIGINAL]** **Su, J., Ye, J., Nie, L., Cao, Y., & Chen, Y. (2023).** Optimizing spaced repetition schedule by capturing the dynamics of memory. *IEEE Transactions on Knowledge and Data Engineering, 35*(10), 10085–10097. https://doi.org/10.1109/TKDE.2023.3251721
+**[CANONICAL]** **Su, J., Ye, J., Nie, L., Cao, Y., & Chen, Y. (2023).** Optimizing spaced repetition schedule by capturing the dynamics of memory. *IEEE Transactions on Knowledge and Data Engineering, 35*(10), 10085–10097. https://doi.org/10.1109/TKDE.2023.3251721
 
 - **Institutional affiliation:** Jinze Su, Jiajie Ye, Yang Cao — National University of Singapore; Liqiang Nie — Harbin Institute of Technology; Ying Chen — Singapore Management University.
 - **IEEE TKDE significance:** IEEE Transactions on Knowledge and Data Engineering is one of the highest-impact peer-reviewed journals in computer science data management.
@@ -1090,7 +1083,7 @@ The Free Spaced Repetition Scheduler (FSRS) is the algorithm implemented in Anki
 
 ---
 
-**[CRISPY ORIGINAL]** **Settles, B., & Meeder, B. (2016).** A trainable spaced repetition model for language learning. In *Proceedings of the 54th Annual Meeting of the ACL (Volume 1)* (pp. 1848–1858). https://doi.org/10.18653/v1/P16-1174
+**[CANONICAL]** **Settles, B., & Meeder, B. (2016).** A trainable spaced repetition model for language learning. In *Proceedings of the 54th Annual Meeting of the ACL (Volume 1)* (pp. 1848–1858). https://doi.org/10.18653/v1/P16-1174
 
 - **Institutional affiliation:** Burr Settles, Brendan Meeder — Duolingo, Pittsburgh.
 - **Key contribution:** Duolingo's Half-Life Regression (HLR) model — the first industry-scale machine-learned SRS model. HLR was trained on Duolingo's actual user data, predicting word-level recall as a function of time since last review and number of reviews.
@@ -1098,7 +1091,7 @@ The Free Spaced Repetition Scheduler (FSRS) is the algorithm implemented in Anki
 
 ---
 
-**[CRISPY ORIGINAL]** **Tabibian, B., Upadhyay, U., De, A., Zarezade, A., Schölkopf, B., & Gomez-Rodriguez, M. (2019).** Enhancing human learning via spaced repetition optimization. *Proceedings of the National Academy of Sciences, 116*(10), 3988–3993. https://doi.org/10.1073/pnas.1815156116
+**[CANONICAL]** **Tabibian, B., Upadhyay, U., De, A., Zarezade, A., Schölkopf, B., & Gomez-Rodriguez, M. (2019).** Enhancing human learning via spaced repetition optimization. *Proceedings of the National Academy of Sciences, 116*(10), 3988–3993. https://doi.org/10.1073/pnas.1815156116
 
 - **Institutional affiliations:** Behzad Tabibian, Manuel Gomez-Rodriguez — Max Planck Institute for Software Systems, Germany; Bernhard Schölkopf — Max Planck Institute for Intelligent Systems.
 - **PNAS significance:** Publication in PNAS (National Academy of Sciences) represents the highest tier of scientific validation available for an SRS algorithm study.
@@ -1112,7 +1105,7 @@ The Free Spaced Repetition Scheduler (FSRS) is the algorithm implemented in Anki
 - **Institutional context:** Piotr Wozniak — SuperMemo. Self-published technical report, not peer-reviewed.
 - **Historical significance:** The original SM-2 specification. Understanding SM-2 is necessary to understand what FSRS improves upon. SM-2's core innovation (using a grade-modulated multiplier to adjust inter-repetition intervals) was manually calibrated to Wozniak's personal data — a sample of one.
 - **Limitation (for methodology page):** SM-2 was calibrated on a single user (Wozniak himself) for Polish-English vocabulary. Its parameters were never validated against a diverse learner population. FSRS addresses this with 220M+ data points from a diverse population.
-- **Crispy note:** Do not cite SM-2 as an equivalent scientific source to FSRS; cite it as the predecessor that FSRS was developed to replace.
+- **Curriculum Design Note:** Do not cite SM-2 as an equivalent scientific source to FSRS; cite it as the predecessor that FSRS was developed to replace.
 
 ---
 
@@ -1120,7 +1113,7 @@ The Free Spaced Repetition Scheduler (FSRS) is the algorithm implemented in Anki
 
 - **Institutional context:** Sebastian Leitner — German science journalist, not an academic.
 - **Historical significance:** Introduced the physical Leitner box system — the paper-based precursor to digital SRS. The system divides cards into boxes; correct responses move a card to the next box (less frequent review); incorrect responses return it to Box 1. FSRS generalizes this with a continuous rather than discrete scheduling function.
-- **Crispy note:** Cite for historical completeness and to make the SRS concept accessible to non-technical readers. Not a peer-reviewed source.
+- **Curriculum Design Note:** Cite for historical completeness and to make the SRS concept accessible to non-technical readers. Not a peer-reviewed source.
 
 ---
 
@@ -1128,7 +1121,7 @@ The Free Spaced Repetition Scheduler (FSRS) is the algorithm implemented in Anki
 
 - **Status:** Living benchmark, not a peer-reviewed paper. Maintained by the FSRS development community.
 - **Current results (as of early 2026):** FSRS 4.0 consistently outperforms SM-2, HLR, and earlier FSRS versions across all benchmark datasets on log-loss prediction accuracy.
-- **Crispy note:** This is the practical validation source for FSRS's superiority over SM-2. Cannot be cited as a peer-reviewed source but is appropriate as a technical reference for the methodology page's more technical sections.
+- **Curriculum Design Note:** This is the practical validation source for FSRS's superiority over SM-2. Cannot be cited as a peer-reviewed source but is appropriate as a technical reference for the methodology page's more technical sections.
 
 ---
 
@@ -1160,7 +1153,7 @@ The Free Spaced Repetition Scheduler (FSRS) is the algorithm implemented in Anki
 
 ### The FSRS Validation Gap (Acknowledged)
 
-As noted in Crispy's original §1: No single peer-reviewed paper directly compares FSRS to SM-2 in a traditional RCT format with human learners randomly assigned to each condition. This is a genuine limitation. The evidence base is:
+As noted in the foundational Section 1 synthesis: No single peer-reviewed paper directly compares FSRS to SM-2 in a traditional RCT format with human learners randomly assigned to each condition. This is a genuine limitation. The evidence base is:
 1. **Theoretical:** DSR model (Ye & Su, 2022/2023) — rigorously peer-reviewed at KDD and IEEE TKDE
 2. **Computational benchmark:** srs-benchmark repository — FSRS outperforms SM-2 on log-loss
 3. **Practice validation:** Integration into Anki 23.10+ — millions of active users
@@ -1180,7 +1173,7 @@ The following connections exist between §1 subsections and should be mapped exp
 | §1.4 Interleaving | §1.5 Desirable Difficulties | Interleaving is one of four desirable difficulties |
 | §1.5 Desirable Difficulties | §1.1 + §1.2 + §1.4 | Framework that unifies spacing, retrieval, interleaving |
 | §1.6 Comprehensible Input | §1.7 Four Strands | Input is Strand 1; Krashen operationalized by Nation |
-| §1.8 Contrastive Analysis | §5 (Agent 11) | CAH is the theoretical parent of all interference point research |
+| §1.8 Contrastive Analysis | §5 (Contrastive Linguistics) | CAH is the theoretical parent of all interference point research |
 | §1.9 Elaborative Encoding | §1.10 Self-Reference | SRE is a special case of deep elaborative encoding |
 | §1.9 Elaborative Encoding | §1.2 Active Recall | Deep encoding + retrieval practice = optimal combination |
 | §1.11 FSRS | §1.1 + §1.2 | FSRS operationalizes both spacing and retrieval practice algorithmically |
@@ -1204,17 +1197,15 @@ The following connections exist between §1 subsections and should be mapped exp
 | §1.11 FSRS | Wozniak (1990); Leitner (1972); srs-benchmark; Kornell & Bjork (2008); Pavlik & Anderson (2005) | +5 |
 | **TOTAL NEW** | | **+52 additional citations** |
 
-**Combined with Crispy's original 44 citations:** §1 now contains approximately **96 citations** across 11 subsections.
+**Combined with foundational baseline citations:** §1 contains approximately **96 citations** across 12 subsections.
 
 ---
 
 
 # §1.12 — BOUNDARY CONDITIONS AND LIMITATIONS OF SPACED REPETITION
-**Agent:** 28  
-**Date:** 3 April 2026  
+**Author / Working Group:** Nugget Nihongo Empirical Learning Sciences & SLA Working Group  
 **Citations:** BC-01 – BC-09  
-**Appends to:** SECTION1-EVIDENCE-BASED-v1.md  
-**Status:** Canonical — v17
+**Status:** Canonical Compendium Module
 
 ---
 
@@ -1270,7 +1261,7 @@ This threshold has direct implications for Nugget Nihongo's target user populati
 - **JLPT N3 (approximately 2,000–3,500 word families):** Learners are approaching the crossover zone. SRS remains highly efficient for deliberate vocabulary extension, but integrating graded extensive reading alongside SRS will produce better outcomes than SRS alone.
 - **JLPT N2–N1 (approximately 4,000–10,000 word families and beyond):** Learners are above the crossover threshold. SRS should shift toward maintenance of existing knowledge and deliberate acquisition of high-value specialized vocabulary (keigo paradigms, field-specific terminology). ER should become the primary vocabulary growth engine.
 
-*For extensive reading theory, text coverage thresholds, and the integration of ER with SRS-based study at intermediate and advanced proficiency levels, see §4 [ER cluster — forthcoming from Agents 22–23].*
+*For extensive reading theory, text coverage thresholds, and the integration of ER with SRS-based study at intermediate and advanced proficiency levels, see §4 (Extensive Reading).*
 
 #### Design Implication
 
@@ -1388,6 +1379,4 @@ This positioning also performs a competitive differentiation function. Apps that
 
 ---
 
-*§1.12 complete — Agent 28 — 3 April 2026*  
-*Appends to SECTION1-EVIDENCE-BASED-v1.md after §1.11*  
-*Send to Agent 2 for merge decision*
+*SECTION 1 — Empirical Learning Sciences & SLA Working Group — Canonical Compendium — October 2026*

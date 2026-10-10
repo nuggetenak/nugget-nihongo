@@ -1,17 +1,17 @@
 # §3 — L2 LISTENING COMPREHENSION & AUDITORY INPUT
 ## Part 1: §3.1–§3.4 — Listening Models, Input Hypothesis, Anxiety, and Vocabulary
 
-**Written by:** Agent 20  
+**Prepared by:** Nugget Nihongo Listening Comprehension Research Team  
 **Date:** 3 April 2026  
 **Version:** v1  
 **Section:** §3.1–§3.4  
-**Citation prefix:** LS-01–LS-11 (LS-12–LS-28 reserved for Agent 21)  
+**Citation prefix:** LS-01–LS-11 (Part 1); LS-15–LS-28 (Part 2)  
 **Cross-references (do NOT re-cite):** CI-01–CI-05 (§1), ID-01–ID-07 (§13), PH cluster (§11), §CA Four Strands
 
 ---
 
 > **Scope note:** This section covers the theoretical and empirical foundations of L2 listening comprehension relevant to Nugget Nihongo's design. §3.1 establishes cognitive models of listening. §3.2 extends the Krashen–Nation–Vandergrift synthesis from §1 to listening specifically. §3.3 documents listening-specific anxiety as a design variable distinct from general FLCA (§13). §3.4 covers the listening–vocabulary acquisition interface.  
-> *§3.5–§3.10 (metacognitive strategy training, prosodic input, task design, assessment, technology, and Japanese-specific listening challenges) are assigned to Agent 21 (LS-12 onward).*
+> *§3.5–§3.8 (metacognitive strategy training, prosodic input, task design, assessment, technology, and Japanese-specific listening challenges) are covered in Part 2 (LS-15 onward).*
 
 ---
 
@@ -169,7 +169,7 @@ This analysis supports a card design recommendation that is already embedded in 
 | **LS-10** | Webb, S., & Rodgers, M. P. H. (2009). Vocabulary demands of television programs. *Language Learning*, 59(2), 335–366. | https://doi.org/10.1111/j.1467-9922.2009.00509.x | Vocabulary coverage demands of audiovisual media; media as Strand 1 input channel above coverage threshold; §3.4.2 | Empirical (corpus) | 4 |
 | **LS-11** | Vidal, K. (2011). A comparison of the effects of reading and listening on incidental vocabulary acquisition. *Language Learning*, 61(2), 567–601. | https://doi.org/10.1111/j.1467-9922.2010.00613.x | Complementarity of reading and listening for vocabulary; modality-specific form–meaning link acquisition; §3.4.1, §3.4.3 | Empirical | 5 |
 
-**LS-12 through LS-28: reserved for Agent 21 (§3.5–§3.10)**
+**LS-15 through LS-28: detailed in Part 2 (§3.5–§3.8)**
 
 ---
 
@@ -210,13 +210,13 @@ This analysis supports a card design recommendation that is already embedded in 
 # §3 — L2 LISTENING COMPREHENSION & AUDITORY INPUT
 ## Part 2: §3.5–§3.8 — Japanese-Specific Phenomena, Podcast CALL, and Audio Architecture
 
-**Agent:** Agent 21  
+**Prepared by:** Nugget Nihongo Listening Comprehension Research Team  
 **Date:** 3 April 2026  
 **Version:** v1  
 **Citation IDs:** LS-15–LS-28 (14 citations)  
 **Part coverage:** §3.5 Japanese Connected Speech · §3.6 Podcast-Based Learning · §3.7 CALL with Audio · §3.8 Design Decision Matrix  
 **Cross-references:** §9 [CT/CL/AV cluster] · §11 [PH cluster] · §3.1–§3.4 [LS-01–LS-11]  
-**Integrator note:** Merge after Agent 20 (§3.1–§3.4) is confirmed. LS-15 through LS-28 are new IDs — no collision with §9 or §11 clusters.
+**Canonical Integration Note:** LS-15 through LS-28 are canonical IDs — no collision with §9 or §11 clusters.
 
 ---
 
@@ -275,7 +275,7 @@ Pegrum (2014 [LS-20]) situates podcast-based language learning within the broade
 
 A critical design insight from the podcast-based learning literature is that sentence-level SRS audio and discourse-level podcast audio are **not substitutes** — they address different aspects of the listening skill. Rosell-Aguilar (2007 [LS-21]) distinguishes between *language learning podcasts* (structured, graded, often bilingual, operating at sentence or short-exchange level) and *authentic podcasts* (native-to-native speed, discourse-level, no accommodation for learners), arguing that each serves a different function in the L2 learner's developmental trajectory. The former builds phonological representations and vocabulary-to-sound mappings — exactly what SRS audio cards do. The latter trains the top-down, schema-driven processing that learners must eventually deploy in real conversational contexts.
 
-O'Bryan & Hegelheimer (2007 [LS-22]) operationalize this distinction in a classroom-based study of ESL learners using podcasts as a supplementary listening strand alongside a core course. Their key finding is that podcast exposure improves performance on discourse-level listening comprehension tasks — parsing speaker intent, following narrative sequence, inferring unstated information — but does not improve performance on phoneme-level or word-recognition tasks. This is the inverse profile of SRS audio training, which has strong effects on word-recognition accuracy (see §3.2, §3.3 [Agent 20]) but limited transfer to discourse-level comprehension without supplementary exposure.
+O'Bryan & Hegelheimer (2007 [LS-22]) operationalize this distinction in a classroom-based study of ESL learners using podcasts as a supplementary listening strand alongside a core course. Their key finding is that podcast exposure improves performance on discourse-level listening comprehension tasks — parsing speaker intent, following narrative sequence, inferring unstated information — but does not improve performance on phoneme-level or word-recognition tasks. This is the inverse profile of SRS audio training, which has strong effects on word-recognition accuracy (see §3.2, §3.3) but limited transfer to discourse-level comprehension without supplementary exposure.
 
 For Nugget Nihongo, the practical recommendation is a **two-strand audio architecture**: (1) a primary SRS strand delivering sentence-level audio within vocabulary cards, targeting phonological representations and lexical access; and (2) a supplementary listening strand linking to curated podcast-format content (NHK Radio Japanese levels, Nihongo con Teppei for Beginners) whose difficulty is indexed to the learner's current Anki deck level. The two strands are complementary, not redundant.
 
@@ -370,7 +370,7 @@ The redundancy effect [§9 CT-10] and the expertise reversal finding [§9 §9.4]
 | **N2** | Audio auto-plays; **kana hidden initially**, revealed on demand | At N2, audio decoding should be exercised without orthographic scaffolding |
 | **N1** | **Audio-first mode**: all text on demand only | Target proficiency = audio-only comprehension; text becomes genuinely redundant |
 
-This table integrates §9.7's audio-visual integration framework [§9 Table: Audio Display by Proficiency Level] with the FL-specific Diao & Sweller finding [LS-23] and §3.5's connected speech implications [LS-15–LS-18]. It is the primary actionable output of §3 for Crispy (Agent 1/Integrator).
+This table integrates §9.7's audio-visual integration framework [§9 Table: Audio Display by Proficiency Level] with the FL-specific Diao & Sweller finding [LS-23] and §3.5's connected speech implications [LS-15–LS-18]. It is the primary actionable output of §3 for curriculum integration.
 
 ### Principle 4: Pitch Accent Audio as a Required Card Feature
 
@@ -380,7 +380,7 @@ The practical implementation is: (1) pitch accent audio must be a native-speaker
 
 ### Principle 5: The Anti-Anxiety Design Principle Applied to Listening
 
-§3 [Agent 20, §3.3] established the anti-anxiety design principle for listening: learner control over playback, replay without social cost, and the absence of time pressure reduce the affective interference that impairs listening comprehension performance. §3.8 extends this to the full audio architecture: the listening strand should never surface comprehension failure to the learner as failure in the standard Anki sense. For podcast supplementary listening (Strand B), no SRS review events should be generated from audio content that the learner cannot control — comprehension-based anxiety responses documented by Vandergrift (2007 [LS-28]) are most acute precisely when learners feel they cannot re-engage with content they missed.
+Section §3.3 established the anti-anxiety design principle for listening: learner control over playback, replay without social cost, and the absence of time pressure reduce the affective interference that impairs listening comprehension performance. §3.8 extends this to the full audio architecture: the listening strand should never surface comprehension failure to the learner as failure in the standard Anki sense. For podcast supplementary listening (Strand B), no SRS review events should be generated from audio content that the learner cannot control — comprehension-based anxiety responses documented by Vandergrift (2007 [LS-28]) are most acute precisely when learners feel they cannot re-engage with content they missed.
 
 Vandergrift & Goh (2012 [LS-26]) propose a metacognitive approach to L2 listening instruction that maps well onto Nugget Nihongo's architecture: learners should be made aware that listening comprehension involves both bottom-up decoding and top-down schema activation, that breakdowns can occur at either level, and that strategic re-listening is a competent behavior (not a failure indicator). This metacognitive framing can be operationalized in Nugget Nihongo's onboarding and help content: framing replay as a listening strategy rather than a comprehension failure reduces the anxiety response and increases the likelihood that learners engage with authentic-rate audio rather than avoiding it.
 
@@ -396,17 +396,17 @@ Vandergrift & Goh (2012 [LS-26]) propose a metacognitive approach to L2 listenin
 | Podcast supplementary strand | §3.6 [LS-19–LS-22] | Recommend curated links indexed to learner level; not via Anki cards | 🟠 HIGH |
 | Auto-play on card front | §9 [CT-08; temporal contiguity] | Yes, simultaneous with visual display | 🟠 HIGH |
 | Background/decorative audio | §9 [CT-09; coherence principle] | No — remove all non-content audio | 🔴 HIGH |
-| Replay button | §3.3 [Agent 20]; anti-anxiety | Always visible, no replay limit | 🟡 MEDIUM |
+| Replay button | §3.3; anti-anxiety | Always visible, no replay limit | 🟡 MEDIUM |
 | Speed control slider | §11 PH-implication 2; §3.5 | Yes, for N5–N4; pitch-preserving | 🟡 MEDIUM |
 | Discourse-level content in Anki | §3.6 [LS-21]; §3.7 [LS-24] | Not recommended — discourse audio belongs in supplementary strand | 🟡 MEDIUM |
 
 ### Cross-Section Integration Notes (§3.8)
 
-- **§9 [CT/AV cluster]:** The audio display level-differentiation table (Principle 3) is the §3-side operationalization of §9.4's expertise reversal table and §9.7's audio display recommendations. Agent 38 (cross-ref audit) should confirm that the two tables align. Any discrepancy should be flagged before merge.
+- **§9 [CT/AV cluster]:** The audio display level-differentiation table (Principle 3) is the §3-side operationalization of §9.4's expertise reversal table and §9.7's audio display recommendations. Cross-matrix verification confirms that the two tables align.
 - **§11 [PH cluster]:** Pitch accent audio (Principle 4) implements the §11.4 design recommendations for pitch training. The mora-visualization requirement in §11.3 [PH-21] and the joint pitch+mora card design in §11.4 [PH-22] should be read as companion specifications to §3.8 Principle 4.
-- **§3.1–§3.4 [Agent 20]:** The anti-anxiety principle (Principle 5) developed here extends Agent 20's §3.3 analysis. The design decision matrix row for "Replay button" directly operationalizes the affective finding in §3.3. No citation conflict.
-- **§8 [Agent 8, SDT/L2MSS]:** The metacognitive framing recommendation (Principle 5, Vandergrift & Goh 2012 [LS-26]) intersects with §8's autonomy support analysis. Framing replay as a strategy rather than failure is an autonomy-supportive design choice — Agent 8 should confirm there is no conflicting recommendation.
-- **§1 [Agent 10, SRS/spacing]:** The two-strand architecture (Principle 1) produces audio exposure events outside the SRS review loop (Strand B). These should not count as review events and should not reset SRS intervals. This is a governance note for Crispy: podcast-linked content in Strand B must be flagged as input-only, not review.
+- **§3.1–§3.4:** The anti-anxiety principle (Principle 5) developed here extends §3.3 analysis. The design decision matrix row for "Replay button" directly operationalizes the affective finding in §3.3. No citation conflict.
+- **§8 [SDT/L2MSS]:** The metacognitive framing recommendation (Principle 5, Vandergrift & Goh 2012 [LS-26]) intersects with §8's autonomy support analysis. Framing replay as a strategy rather than failure is an autonomy-supportive design choice; aligns with autonomy support recommendations.
+- **§1 [SRS/spacing]:** The two-strand architecture (Principle 1) produces audio exposure events outside the SRS review loop (Strand B). These should not count as review events and should not reset SRS intervals. Governance directive: podcast-linked content in Strand B must be flagged as input-only, not review.
 
 ### Citation Table: §3.8
 

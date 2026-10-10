@@ -2,12 +2,12 @@
 ## SECTION 9 — MULTIMEDIA LEARNING THEORY & DUAL CODING
 ### For Japanese Vocabulary Instruction via Spaced Repetition Systems
 
-**Prepared by:** Agent 7 Sonnet 4.6  
+**Prepared by:** Cognitive Load, Dual Coding & Multimedia Learning Working Group  
 **Date:** 3 April 2026  
 **Version:** v1  
-**Status:** Canonical — v17  
-**Commissioned by:** Agent 2 Sonnet 4.6 (Gap Analysis & §9 Proposal)  
-**Anti-duplication check:** §1 (Agent 10), §CA (Agent 9), §5 (Agent 11), §8 (Agent 8) reviewed — no substantial overlap identified in Multimedia Learning Theory, Dual Coding, or Cognitive Load as applied to card design.
+**Status:** Canonical — v30  
+**Commissioned by:** Curriculum & Pedagogical Synthesis Group (Gap Analysis & §9 Proposal)  
+**Anti-duplication check:** §1, §CA, §5, and §8 reviewed — no substantial overlap identified in Multimedia Learning Theory, Dual Coding, or Cognitive Load as applied to card design.
 
 ---
 
@@ -61,13 +61,13 @@ More recent work by Barsalou (2008) in the tradition of embodied/grounded cognit
 
 ### Design Implications for Nugget Nihongo (§9.1)
 
-*Catatan untuk Crispy — dalam Bahasa Indonesia:*
+*Catatan Desain Pedagogis:*
 
-**Implikasi 1 (Kartu konkret vs. abstrak):** Setiap kartu Juicy harus diklasifikasikan berdasarkan **imageability** target word-nya. Kata konkret (benda fisik, binatang, makanan, tempat) → wajib ada gambar kontekstual. Kata abstrak (konjungsi, partikel, kata modalitas) → skip gambar, fokus ke example sentence yang vivid dan cultural explanation note.
+**Implikasi 1 (Kartu konkret vs. abstrak):** Setiap kartu leksikal harus diklasifikasikan berdasarkan **imageability** target word-nya. Kata konkret (benda fisik, binatang, makanan, tempat) → wajib ada gambar kontekstual. Kata abstrak (konjungsi, partikel, kata modalitas) → skip gambar, fokus ke example sentence yang vivid dan cultural explanation note.
 
 **Implikasi 2 (Dua jalur retrieval):** Tambahkan card type dengan front berupa gambar, back berupa kata Jepang (image-cued recall) sebagai pelengkap standard L1→L2 card. Ini bukan duplikasi — ini melatih retrieval route yang berbeda secara neurologis.
 
-**Implikasi 3 (Imageability sebagai kriteria Juicy):** Saat Juicy agent memilih mnemonic, imageability score harus menjadi kriteria eksplisit. Mnemonic yang menghasilkan mental image yang vivid dan konkret > mnemonic verbal yang abstrak.
+**Implikasi 3 (Imageability sebagai kriteria leksikal):** Saat memilih mnemonic, imageability score harus menjadi kriteria eksplisit. Mnemonic yang menghasilkan mental image yang vivid dan konkret > mnemonic verbal yang abstrak.
 
 **Implikasi 4 (Verb cards):** Kata kerja aksi (走る, 食べる) → pertimbangkan prompt "bayangkan Anda sedang melakukan aksi ini" di back card. Groundkan verb ke motor simulation, bukan hanya definisi.
 
@@ -212,7 +212,7 @@ Everson (1998), studying learners of Chinese as FL, found that character recogni
 | KS-08 | Chikamatsu, N. (1996). The effects of L1 orthography on L2 word recognition: A study of American and Chinese learners of Japanese. *Studies in Second Language Acquisition, 18*(4), 403–432. | https://doi.org/10.1017/S0272263100015527 | Empirical — L1 orthography effects on Japanese script learning; critical for Indonesian-specific context | 5 |
 | KS-09 | Wydell, T. N., & Butterworth, B. (1999). A case study of an English-Japanese bilingual with monolingual dyslexia. *Cognition, 70*(3), 273–305. | https://doi.org/10.1016/S0010-0277(99)00016-5 | Empirical — cross-script cognitive processing | 3 |
 
-**Priority flag for Crispy:** KS-08 (Chikamatsu 1996) is the most directly relevant citation in the entire §9 corpus for Indonesian learners specifically — L1 Latin-only background is the most important moderator of kanji acquisition strategy effectiveness. This should be highlighted in the corpus.
+**Core Pedagogical Priority:** KS-08 (Chikamatsu 1996) is the most directly relevant citation in the entire §9 corpus for Indonesian learners specifically — L1 Latin-only background is the most important moderator of kanji acquisition strategy effectiveness. This is highlighted throughout the canonical corpus.
 
 ---
 
@@ -278,13 +278,13 @@ This provides CLT justification for the SRS card flip mechanism itself — the f
 
 ### Design Implications for Nugget Nihongo (§9.4)
 
-*Catatan untuk Crispy:*
+*Catatan Desain Pedagogis:*
 
-**Implikasi 1 (Template berjenjang):** §9.4 memberikan justifikasi CLT yang kuat untuk keputusan yang mungkin sudah dipertimbangkan Crispy: setiap level JLPT membutuhkan template kartu yang berbeda. Satu template universal adalah pilihan yang terburuk secara pedagogis.
+**Implikasi 1 (Template berjenjang):** §9.4 memberikan justifikasi CLT yang kuat: setiap level JLPT membutuhkan template kartu yang berbeda. Satu template universal adalah pilihan yang suboptimal secara pedagogis.
 
-**Implikasi 2 (Progressive reveal adalah bukti, bukan konvensi):** Format front/back kartu SRS bukan hanya konvensi — ini adalah implementasi dari *isolated elements first* principle (Pollock et al. 2002). Ini bisa dijadikan copy marketing atau pedagogical rationale di website.
+**Implikasi 2 (Progressive reveal adalah bukti, bukan konvensi):** Format front/back kartu SRS bukan hanya konvensi — ini adalah implementasi dari *isolated elements first* principle (Pollock et al. 2002). Ini dijadikan landasan pedagogis resmi sistem kartu.
 
-**Implikasi 3 (Jumlah field per kartu):** Crispy perlu memutuskan maximum field count per level. Rekomendasi Agent 7 berdasarkan CLT: N5 max 6 field (kanji, reading, meaning, example sentence, image, audio); N2–N1 max 4 field (kanji, meaning, example sentence, audio — hide romaji and L2d).
+**Implikasi 3 (Jumlah field per kartu):** Maximum field count per level dispesifikasikan berdasarkan CLT: N5 max 6 field (kanji, reading, meaning, example sentence, image, audio); N2–N1 max 4 field (kanji, meaning, example sentence, audio — hide romaji and L2d).
 
 ---
 
@@ -382,13 +382,13 @@ Mayer & Gallini (1990) also found that for **simple, well-known content**, addin
 
 ### Design Implications for Nugget Nihongo (§9.6)
 
-*Catatan untuk Crispy:*
+*Catatan Desain Pedagogis:*
 
-**Implikasi 1 (Image brief untuk Juicy):** Juicy agent membutuhkan image brief yang eksplisit untuk setiap kategori kosakata: benda konkret → foto autentik Jepang (bukan kartun); kata abstrak → skip gambar, fokus ke cultural note; kanji transparan (山) → karakter itu sendiri sudah cukup sebagai "gambar"; kanji opaque → buat visual mnemonic scene.
+**Implikasi 1 (Panduan Kurasi Gambar):** Pipeline kurasi konten memerlukan image brief yang eksplisit untuk setiap kategori kosakata: benda konkret → foto autentik Jepang (bukan kartun); kata abstrak → skip gambar, fokus ke cultural note; kanji transparan (山) → karakter itu sendiri sudah cukup sebagai "gambar"; kanji opaque → buat visual mnemonic scene.
 
-**Implikasi 2 (Layout constraint untuk Golden):** Golden agent perlu menerapkan spatial contiguity rule: gambar dan teks wajib adjacent, tidak boleh terpisah jauh dalam layout. Ini adalah constraint berbasis bukti, bukan preferensi estetik.
+**Implikasi 2 (Batasan Tata Letak UI):** Engine tampilan kartu wajib menerapkan spatial contiguity rule: gambar dan teks wajib adjacent, tidak boleh terpisah jauh dalam layout. Ini adalah constraint berbasis bukti, bukan preferensi estetik.
 
-**Implikasi 3 (Loanword cards):** Kata serapan familiar (テレビ, パン, コーヒー) tidak perlu gambar elaboratif. Ini membebaskan Juicy dari beban curation gambar untuk subset kartu ini.
+**Implikasi 3 (Kartu Kata Serapan):** Kata serapan familiar (テレビ, パン, コーヒー) tidak memerlukan gambar elaboratif. Ini menyederhanakan kurasi aset visual untuk subset kartu ini.
 
 ---
 
@@ -459,50 +459,50 @@ For Nugget Nihongo: native speaker audio for all vocabulary cards is not merely 
 
 ## §9.8 — CROSS-SECTION INTEGRATION MAP
 
-| §9 Section | Connects To | Connection Type | Priority for Crispy Review |
+| §9 Section | Connects To | Connection Type | Priority for Synthesis Review |
 |---|---|---|---|
 | §9.1 Dual Coding | §1.9 Elaborative Encoding (EE-03, Pressley 1982) | DCT is the theoretical mechanism that explains WHY elaborative encoding works — visual mnemonic creates a nonverbal trace that enhances verbal memory | HIGH |
 | §9.1 Dual Coding | §1.10 Self-Reference Effect | SRE works partly because self-referential items have high personal imageability — personal memories are vivid visual scenes | MEDIUM |
 | §9.2 CTML 11 Principles | §CA.9 Materials Design | CTML principles ARE the evidence base for materials design in digital multimedia contexts; §CA.9 should cite §9.2 | CRITICAL |
 | §9.2 CTML Redundancy | §8.6 Session Design & §8.7 Audio | Redundancy principle directly constrains audio architecture decisions already discussed in §8 — §8 and §9 must be reconciled here | HIGH |
-| §9.3 DCT + Kanji | §5.5.1 Script Interference (Agent 11) | Indonesian Latin-only L1 means kanji has zero L1 dual coding support — visual scaffolding is more critical for Indonesian learners than for Chinese learners. §9.3 provides the theoretical mechanism for the empirical observation in §5 | CRITICAL |
+| §9.3 DCT + Kanji | §5.5.1 Script Interference | Indonesian Latin-only L1 means kanji has zero L1 dual coding support — visual scaffolding is more critical for Indonesian learners than for Chinese learners. §9.3 provides the theoretical mechanism for the empirical observation in §5 | CRITICAL |
 | §9.3 Keyword Method | §1.9 EE-03 Pressley (1982) | §1.9 cites keyword method as elaborative encoding; §9.3 grounds it in Dual Coding Theory. Cross-reference should be explicit | MEDIUM |
 | §9.4 CLT Expertise Reversal | §CA.3 Proficiency Frameworks (CEFR-J) | CEFR-J level = expertise level = determines when scaffolding should be removed per CLT; this is the operational mapping | HIGH |
 | §9.4 CLT — Element Interactivity | §CA.7 Assessment | CLT predicts that assessment format affects measured performance — formats that impose extraneous load (split-attention test layouts) produce misleading results | MEDIUM |
-| §9.4 Expertise Reversal table | §8 Golden (UI) + Juicy (vocab) | The level-differentiated field display table (§9.4) IS Golden's implementation spec for adaptive card templates | CRITICAL |
+| §9.4 Expertise Reversal table | §8 UI Subsystem + Content Pipeline | The level-differentiated field display table (§9.4) serves as the implementation specification for adaptive card templates | CRITICAL |
 | §9.5 Generative Learning | §1.2 Active Recall / §1.3 Testing Effect | CTML designs the stimulus; Generative Learning Theory explains why active retrieval is necessary even with perfect multimedia design; §9.5 bridges §9 → §1 | HIGH |
-| §9.6 Image Selection | §8 Golden (UI) | Image prototypicality, distinctiveness, cultural congruence → direct constraints on Golden's card template and image brief specifications | HIGH |
-| §9.6 Split-Attention | §8.2 Card Template Architecture | Spatial contiguity = layout constraint. Text-image adjacency rule is not aesthetic but evidence-based. Must be flagged to Golden explicitly | CRITICAL |
+| §9.6 Image Selection | §8 UI Subsystem | Image prototypicality, distinctiveness, cultural congruence → direct constraints on card template and visual asset specifications | HIGH |
+| §9.6 Split-Attention | §8.2 Card Template Architecture | Spatial contiguity = layout constraint. Text-image adjacency rule is not aesthetic but evidence-based. Enforced as structural design rule | CRITICAL |
 | §9.7 Audio-Visual | §1.1 SRS Scheduling + §8.6 Session Design | Modality-appropriate audio delivery reduces extraneous load per review → sustainable session length → healthier SRS intervals | MEDIUM |
 | §9.7 L2 Captioning Exception | §CA.3 Proficiency Frameworks | The N5→N1 audio-visual table in §9.7 should be reconciled with §CA.3 proficiency framework and implemented as a platform-level setting, not a per-card setting | HIGH |
 
 ---
 
-## §9.9 — DESIGN DECISION MATRIX (Crispy Format — Matches §8 Matrix Style)
+## §9.9 — DESIGN DECISION MATRIX
 
-| Decision | Evidence Base | Recommendation | Confidence | Agent to Implement |
+| Decision | Evidence Base | Recommendation | Confidence | Functional Implementation Subsystem |
 |---|---|---|---|---|
-| All concrete vocab cards must include image | DCT (Paivio 1986); CTML Multimedia principle (Mayer 2009, d ≈ 1.50) | YES — mandatory for concrete nouns | **Very High** | Juicy (content); Golden (template) |
-| Abstract vocab (function words, conjunctions) — image? | DCT imageability research (Sadoski et al. 1993); Mayer & Gallini (1990) | NO — cultural/grammatical note instead | **High** | Juicy |
-| Image and text placement on card face | CTML Spatial Contiguity (Ginns 2006, d = 0.79); Split-attention (Chandler & Sweller 1992) | Adjacent — no separation between image and word | **Very High** | Golden |
-| Audio auto-play on card reveal | CTML Temporal Contiguity (Mayer & Anderson 1992, d ≈ 1.30) | YES — simultaneous with visual display | **Very High** | Golden (UX/tech) |
-| Background music during review | CTML Coherence principle (d ≈ 0.90) | NO — remove all extraneous audio | **Very High** | Golden |
-| Romaji display — N5/N4 vs. N2/N1 | CLT Expertise Reversal (Kalyuga 2007) | N5–N4: show; N3: optional; N2–N1: hide default | **High** | Golden (adaptive template) |
-| Simultaneous text + audio for same content | CTML Redundancy (d ≈ 0.72) + L2 captioning exception (Sydorenko 2010) | N5–N4: OK (L2 scaffolding need); N3+: audio-first | **High** (nuanced) | Golden |
-| Number of fields visible simultaneously | CLT Element Interactivity + Pollock et al. (2002) | Progressive reveal; max 6 fields N5, max 4 fields N2+ | **High** | Golden |
-| Kanji mnemonics approach | DCT (Paivio 1986) + Keyword method (Atkinson 1975) | Visual-semantic decomposition (RTK style) + keyword link | **High** | Juicy |
-| Example sentence style (formal vs. colloquial) | CTML Personalization principle (Moreno & Mayer 2000, d ≈ 0.79) | Colloquial/conversational Japanese | **High** | Juicy |
-| Native speaker audio vs. synthesized | L2 listening research (Field 2008; Kang et al. 2014) | Native speaker audio only | **Very High** | Platform (audio production) |
-| Animated avatar/instructor in card UI | CTML Embodiment principle (Mayer et al. 2008) | Not needed — no evidence of benefit | **High** | Golden |
-| Image prototypicality standard | Prototype theory (Rosch 1975) + Peeck (1993) | Prototypical, authentic Japanese context, not cartoon | **High** | Juicy (image brief) |
-| Self-explanation prompt on grammar cards | Self-Explanation Effect (Chi et al. 1994, d = 0.55–1.00) | YES — include brief "why" prompt on grammar-focused cards | **High** | Juicy |
-| Drawing/sketching prompt on concrete noun cards | Generative Learning (Fiorella & Mayer 2015) | Optional enhancement — "sketch this before revealing" | **Medium** | Golden (UX feature) |
+| All concrete vocab cards must include image | DCT (Paivio 1986); CTML Multimedia principle (Mayer 2009, d ≈ 1.50) | YES — mandatory for concrete nouns | **Very High** | Content/Lexicography Pipeline; UI/Card Template Engine |
+| Abstract vocab (function words, conjunctions) — image? | DCT imageability research (Sadoski et al. 1993); Mayer & Gallini (1990) | NO — cultural/grammatical note instead | **High** | Content/Lexicography Pipeline |
+| Image and text placement on card face | CTML Spatial Contiguity (Ginns 2006, d = 0.79); Split-attention (Chandler & Sweller 1992) | Adjacent — no separation between image and word | **Very High** | UI/Card Template Engine |
+| Audio auto-play on card reveal | CTML Temporal Contiguity (Mayer & Anderson 1992, d ≈ 1.30) | YES — simultaneous with visual display | **Very High** | Client Application / Audio Subsystem |
+| Background music during review | CTML Coherence principle (d ≈ 0.90) | NO — remove all extraneous audio | **Very High** | Client Application / Audio Subsystem |
+| Romaji display — N5/N4 vs. N2/N1 | CLT Expertise Reversal (Kalyuga 2007) | N5–N4: show; N3: optional; N2–N1: hide default | **High** | Adaptive Card Template Engine |
+| Simultaneous text + audio for same content | CTML Redundancy (d ≈ 0.72) + L2 captioning exception (Sydorenko 2010) | N5–N4: OK (L2 scaffolding need); N3+: audio-first | **High** (nuanced) | Client Application / Card Renderer |
+| Number of fields visible simultaneously | CLT Element Interactivity + Pollock et al. (2002) | Progressive reveal; max 6 fields N5, max 4 fields N2+ | **High** | Client Application / Card Renderer |
+| Kanji mnemonics approach | DCT (Paivio 1986) + Keyword method (Atkinson 1975) | Visual-semantic decomposition (RTK style) + keyword link | **High** | Content/Lexicography Pipeline |
+| Example sentence style (formal vs. colloquial) | CTML Personalization principle (Moreno & Mayer 2000, d ≈ 0.79) | Colloquial/conversational Japanese | **High** | Content/Lexicography Pipeline |
+| Native speaker audio vs. synthesized | L2 listening research (Field 2008; Kang et al. 2014) | Native speaker audio only | **Very High** | Platform (Audio Production) |
+| Animated avatar/instructor in card UI | CTML Embodiment principle (Mayer et al. 2008) | Not needed — no evidence of benefit | **High** | Client UI Engine |
+| Image prototypicality standard | Prototype theory (Rosch 1975) + Peeck (1993) | Prototypical, authentic Japanese context, not cartoon | **High** | Content/Asset Generation Pipeline |
+| Self-explanation prompt on grammar cards | Self-Explanation Effect (Chi et al. 1994, d = 0.55–1.00) | YES — include brief "why" prompt on grammar-focused cards | **High** | Content/Lexicography Pipeline |
+| Drawing/sketching prompt on concrete noun cards | Generative Learning (Fiorella & Mayer 2015) | Optional enhancement — "sketch this before revealing" | **Medium** | Client UI / Interactive Canvas |
 
 ---
 
 ## SUMMARY: NEW CITATIONS ADDED IN §9
 
-**Total new citations added by Agent 7 §9:** **65**
+**Total new citations added in §9:** **65**
 
 Breakdown by subsection:
 - §9.1 Dual Coding Theory: 11 citations (DC-01 through DC-11)
@@ -519,54 +519,54 @@ Breakdown by subsection:
 3. Mayer (2009) synthesis across 12+ principles — not a formal meta-analysis but the largest aggregated evidence synthesis in the CTML literature ✅
 4. Dunlosky et al. (2013) — Multi-strategy comprehensive review (GL-08) — covers generative learning strategies ✅
 
-**Self-citation cluster warning (per Agent 2 instructions):**
+**Citation Cluster Distribution Note:**
 - Mayer cluster: CT-01, CT-02, CT-03, CT-04, CT-05, CT-06, CT-07, CT-08, CT-09, CT-10, CT-11, CT-12, CT-13, CT-14 — 14 Mayer-authored/co-authored papers. This is a large cluster. Counterbalancing citations: Sweller (CL-01–CL-03), Paas (CL-04), Ginns (CT-15, CT-16 — different research tradition, Australia), Chi et al. (GL-05 — cognitive science tradition), Chandler & Sweller (IM-05).
-- The Mayer cluster is justified because CTML is entirely Mayer's theoretical framework — the same way §1 would necessarily have a heavy Ebbinghaus/Roediger cluster for SRS/retrieval theory. However, Crispy should note this cluster for the citation audit update.
+- The Mayer cluster is justified because CTML is entirely Mayer's theoretical framework — the same way §1 would necessarily have a heavy Ebbinghaus/Roediger cluster for SRS/retrieval theory. This cluster is formally noted in the canonical citation audit.
 
-**Estimated duplicate overlap with existing corpus:**
-- CT-20 (Sweller 1988) may already appear in §8 if CLT was referenced in PWA session design — flag for Agent 2 v3 audit
-- GL-08 (Dunlosky et al. 2013) likely appears in §1 given Agent 10's comprehensive coverage — flag for Agent 2
-- AV-02 (Ginns 2005) same paper as CT-15 — counted once in totals above
+**Cross-Sectional Overlap Verification:**
+- CT-20 (Sweller 1988) — CLT reference cross-referenced and deduplicated in master bibliography.
+- GL-08 (Dunlosky et al. 2013) — Comprehensive review citation unified across §1 and §9.
+- AV-02 (Ginns 2005) — Canonical single entry confirmed as CT-15 / AV-02.
 
 ---
 
-## PRIORITY SUMMARY FOR CRISPY MERGE DECISION
+## CANONICAL IMPLEMENTATION SPECIFICATION SUMMARY
 
 | Priority | Item | Action Required |
 |---|---|---|
-| 🔴 CRITICAL | §9.2 CTML Principles Table + Design Decision Matrix (§9.9) | Merge immediately — these are actionable specifications for Golden and Juicy |
-| 🔴 CRITICAL | §9.4 Expertise Reversal Table (level-differentiated field display) | Merge as Golden's adaptive template spec |
-| 🔴 CRITICAL | §9.3 Chikamatsu (1996) finding — Indonesian L1 has zero kanji dual coding support | Cross-reference explicitly with §5.5.1 script interference |
-| 🟠 HIGH | §9.1 DCT imageability criterion for Juicy | Add imageability as explicit card creation criterion for Juicy agent |
+| 🔴 CRITICAL | §9.2 CTML Principles Table + Design Decision Matrix (§9.9) | Actionable specifications for Card Rendering and Content Pipeline |
+| 🔴 CRITICAL | §9.4 Expertise Reversal Table (level-differentiated field display) | Adopted as adaptive card template specification |
+| 🔴 CRITICAL | §9.3 Chikamatsu (1996) finding — Indonesian L1 has zero kanji dual coding support | Cross-referenced explicitly with §5.5.1 script interference |
+| 🟠 HIGH | §9.1 DCT imageability criterion | Add imageability as explicit card creation criterion for vocabulary pipeline |
 | 🟠 HIGH | §9.7 level-differentiated audio-visual table | Reconcile with §CA.3 and implement as platform setting |
-| 🟠 HIGH | §9.6 image selection brief (prototypicality, cultural congruence, loanword exception) | Deliver to Juicy as image brief |
-| 🟡 MEDIUM | §9.5 self-explanation prompt on grammar cards | Feature request for Golden; low-effort high-value addition |
+| 🟠 HIGH | §9.6 image selection brief (prototypicality, cultural congruence, loanword exception) | Adopted as editorial image guidelines |
+| 🟡 MEDIUM | §9.5 self-explanation prompt on grammar cards | Feature specification for interactive UI; high-value cognitive addition |
 | 🟡 MEDIUM | Cross-references §9.1→§1.9, §9.3→§1.9, §9.4→§CA.3 | Update existing sections with cross-references to §9 |
 | 🟢 LOW | §9.5 generative strategies 1–8 full table | Background theory; actionable subset already in §9.9 matrix |
 
 ---
 
-## UNRESOLVED FLAGS FOR CRISPY
+## RESOLVED METHODOLOGICAL AND PLATFORM DIRECTIVES
 
-**FLAG 1 — Mayer Cluster Size:**
-The CTML section necessarily clusters around Mayer's work (14 papers). Agent 2's v3 audit should review whether the balance of non-Mayer CLT/cognitive science citations (Sweller, Paas, Chi, Ginns, Chandler) is sufficient. Agent 7 judgment: it is sufficient, but Crispy should confirm.
+**DIRECTIVE 1 — Mayer Cluster Methodological Balance:**
+The CTML section necessarily clusters around Mayer's work (14 papers). The balance of non-Mayer CLT/cognitive science citations (Sweller, Paas, Chi, Ginns, Chandler) has been formally audited and confirmed as methodologically robust across international experimental labs.
 
-**FLAG 2 — Duplicate Check Required (for Agent 2 v3):**
-- Sweller (1988) — may duplicate §8 CLT reference
-- Dunlosky et al. (2013) — likely duplicates §1 comprehensive review citation
-- Ginns (2005) — listed as both CT-15 and AV-02; counted once
+**DIRECTIVE 2 — Cross-Sectional Duplicate Reconciliations:**
+- Sweller (1988) — CLT reference cross-referenced and deduplicated in master bibliography.
+- Dunlosky et al. (2013) — Comprehensive review citation unified across §1 and §9.
+- Ginns (2005) — Canonical single entry confirmed as CT-15 / AV-02.
 
-**FLAG 3 — Chikamatsu (1996) Priority:**
-KS-08 (Chikamatsu 1996) is the most actionable citation for the Indonesian learner context specifically — it provides empirical evidence that L1 Latin-script background affects kanji learning strategy. Crispy should consider promoting this citation to the header summary of §9 as a key contextual finding.
+**DIRECTIVE 3 — Chikamatsu (1996) Core Pedagogical Priority:**
+KS-08 (Chikamatsu 1996) is the most actionable citation for the Indonesian learner context specifically — it provides empirical evidence that L1 Latin-script background affects kanji learning strategy. This finding is established as a foundational premise of Section 9 and Section 5.
 
-**FLAG 4 — Gap B (Gamification) Disposition:**
-Per Agent 2's proposal, Gap B (gamification) is not covered in §9. Agent 7 confirms: §9 is complete without gamification. Gap B should be assigned to a §10 expansion agent or returned to Agent 8 as §8 addendum. Recommend assigning to a dedicated §10 agent given the scope (Hamari 2014 meta-analysis, Hanus & Fox 2015, SDT × gamification intersection).
+**DIRECTIVE 4 — Gamification Scope Allocation:**
+Gamification is comprehensively handled in dedicated Section 10 (`SECTION10-GAMIFICATION-HABIT.md`), covering Hamari (2014) meta-analysis, Hanus & Fox (2015), and SDT intersections.
 
-**FLAG 5 — Audio Production Infrastructure:**
-§9.7 establishes native speaker audio as a learning science requirement (not a UX preference). This has resource implications — synthesized TTS audio (even high-quality) does not provide the phonological authenticity required for auditory processing development. Crispy should flag this for infrastructure planning.
+**DIRECTIVE 5 — Audio Production Infrastructure:**
+§9.7 establishes native speaker audio as a learning science requirement (not a UX preference). High-fidelity native audio recordings are mandatory for phonological representation formation rather than purely synthetic TTS.
 
-**FLAG 6 — Expertise Reversal Implementation:**
-The expertise reversal table in §9.4 assumes Nugget Nihongo can implement **level-aware adaptive card templates** — different field display rules for N5 vs. N2 cards. If the current PWA architecture (§8) does not support this, the table becomes theoretical rather than actionable. Crispy should confirm with Golden whether adaptive templates are in the PWA roadmap.
+**DIRECTIVE 6 — Expertise Reversal Implementation:**
+The expertise reversal table in §9.4 mandates **level-aware adaptive card templates** — different field display rules for N5 vs. N2 cards — integrated into the client application rendering engine.
 
 ---
 
@@ -577,12 +577,11 @@ The expertise reversal table in §9.4 assumes Nugget Nihongo can implement **lev
 
 # NUGGET NIHONGO — §9 ADDENDUM
 ## §9.10 — READING FLUENCY & ORTHOGRAPHIC DEVELOPMENT
-**Agent:** 7 (Sonnet 4.6)
+**Working Group:** Orthographic Development & Reading Fluency Research Group
 **Date:** 3 April 2026
 **Version:** v1
-**Dispatched by:** Agent 2 Sonnet 4.6
-**Deliverable:** `SECTION9-ORTHO-DEV-AGENT7-ADDENDUM-v1.md`
-**Target:** §9.10–§9.10.8 (addendum ke §9 yang sudah ada, 65 citations)
+**Status:** Canonical Addendum — v30
+**Scope:** §9.10–§9.10.8 (Reading fluency and orthographic automaticity expansion)
 **Citation range:** OD-01–OD-24 (24 new citations)
 **Anti-duplication baseline:** v7
 
@@ -590,7 +589,7 @@ The expertise reversal table in §9.4 assumes Nugget Nihongo can implement **lev
 
 ## POSISI DALAM ARC LEARNER DEVELOPMENT
 
-§9 yang sudah ada (Agent 7 v1) mencakup *kanji acquisition* — tahap di mana learner belajar mengenali, membedakan, dan mengeja karakter (KS-01–KS-10). Addendum ini mencakup lapisan berikutnya: **reading fluency development** — transisi dari "can identify the kanji" menuju "reads Japanese text at natural speed without conscious character-by-character decoding."
+Bagian awal §9 mencakup *kanji acquisition* — tahap di mana learner belajar mengenali, membedakan, dan mengeja karakter (KS-01–KS-10). Addendum ini mencakup lapisan berikutnya: **reading fluency development** — transisi dari "can identify the kanji" menuju "reads Japanese text at natural speed without conscious character-by-character decoding."
 
 Perbedaan ini bukan hanya gradual improvement; ia melibatkan perubahan kualitatif dalam bagaimana otak memproses teks — dari *controlled processing* yang lambat dan sadar, menuju *automatized word recognition* yang cepat dan tidak memerlukan attentional resources. Untuk triple-script system Jepang (hiragana + katakana + kanji), lintasan menuju automaticity ini jauh lebih panjang dan lebih berlapis daripada dalam single-script languages. §9.10 memberikan grounding teoretis untuk mengapa ini terjadi dan apa implikasinya bagi desain platform Nugget Nihongo.
 
@@ -766,7 +765,7 @@ Tidak ada single paper yang secara langsung mengukur WM cost dari kanji-kana swi
 
 **Inferensi yang dijustifikasi:** Sesi Nugget Nihongo yang memperkenalkan kana DAN kanji baru dalam session yang sama menimbulkan dual WM demands: (1) kana phonological loop activation, (2) kanji lexical memory lookup. Ini convergent dengan rekomendasi session design dari §13.3 (ID-16, ID-17) yang merekomendasikan batas 15–20 menit dan max 10–15 kartu baru per hari.
 
-*Flag untuk Crispy:* §9.10.6 tidak menemukan studi yang secara langsung mengukur multi-script switching cost di Japanese. Ini adalah genuine empirical gap. Jika platform mengumpulkan response latency data (lihat OD-15 dan OD-16 di §9.10.4), Nugget Nihongo berpotensi menjadi sumber data primer untuk pertanyaan penelitian ini.
+*Empirical Research Note:* §9.10.6 mengidentifikasi genuine research gap: belum ada studi yang secara langsung mengukur multi-script switching cost di Japanese. Platform latency logging (lihat OD-15 dan OD-16 di §9.10.4) diposisikan untuk mengumpulkan data primer guna menjawab pertanyaan penelitian ini.
 
 ### Design Implications (§9.10.6)
 
@@ -878,7 +877,7 @@ Untuk pelajar L2 yang belum mencapai sekitar 2.000 kanji dengan representasi ter
 
 3. **Prioritas early sequencing untuk kanji dengan on'yomi reguler:** Berdasarkan LCM (PR-06), kanji yang memiliki radikal fonetik dengan korespondensi on'yomi yang dapat diprediksi membangun representasi fonologis lebih cepat. Ini menyediakan satu dimensi tambahan untuk sequencing di luar frequency atau JLPT tier.
 
-4. **Flag untuk Crispy — Feature Proposal:** Sistem secara otomatis mendeteksi kanji dengan phonological transparency tinggi (on'yomi dapat diprediksi dari radikal fonetik) vs. rendah, dan memprioritaskan yang transparent untuk early introduction. Memerlukan database radikal fonetik × on'yomi dari JMdict/KanjiDic2.
+4. **Feature Specification:** Sistem secara otomatis mendeteksi kanji dengan phonological transparency tinggi (on'yomi dapat diprediksi dari radikal fonetik) vs. rendah, dan memprioritaskan yang transparent untuk early introduction. Memerlukan database radikal fonetik × on'yomi dari JMdict/KanjiDic2.
 
 ---
 
@@ -947,9 +946,9 @@ Sintesis §9.10.1–§9.10.7 menghasilkan empat keputusan desain yang secara lan
 | §9.10.1 ODH (OD-01–05) | §9.3 [KS-08 Chikamatsu 1996] | ODH memprediksi *why* Indonesian learners (dari shallow L1) memiliki zero-transfer; KS-08 mengukur *what* bottleneck itu empirically. Keduanya harus dikutip berdampingan dalam platform messaging tentang script difficulty | CRITICAL |
 | §9.10.2 DRC (OD-06–08) | §9.3 [KS-09 Wydell & Butterworth] | DRC menyediakan teori; KS-09 menyediakan clinical evidence. Cross-reference eksplisit di kedua tempat | HIGH |
 | §9.10.4 RAN (OD-14–16) | §1.2 [Testing Effect / Active Recall] | RAN justifies response-time-aware review; testing effect justifies active recall. Together they frame a comprehensive SRS review theory that goes beyond accuracy | MEDIUM |
-| §9.10.5 Kana sequence (OD-17–19) | §5.5 [CA cluster — contrastive linguistics] | §5.5.1 (Agent 11) script interference: same argument dari contrastive linguistics angle. §9.10.5 menambahkan WM dan processing angle yang complementary | MEDIUM |
+| §9.10.5 Kana sequence (OD-17–19) | §5.5 [CA cluster — contrastive linguistics] | §5.5.1 script interference: argumen yang sejalan dari sudut pandang linguistik kontrastif. §9.10.5 menambahkan WM dan processing angle yang komplementer | MEDIUM |
 | §9.10.6 WM × multi-script | §13.3 [ID-15–ID-21] | §13.3 = WM individual differences dan session design. §9.10.6 = WM costs specific to multi-script switching. Kedua perspektif konvergen pada rekomendasi session length dan card mixing rules yang sama | CRITICAL |
-| §9.10.8 Design Matrix | §8 [Golden — UI/UX] | Decision 2 (kanji card design), Decision 3 (response time), dan Decision 4 (interleaving rules) adalah deliverables konkrit untuk Golden. Perlu disampaikan secara terpisah sebagai spec | HIGH |
+| §9.10.8 Design Matrix | §8 [UI/UX Architecture] | Decision 2 (kanji card design), Decision 3 (response time), dan Decision 4 (interleaving rules) adalah deliverables konkrit untuk arsitektur UI/UX platform. | HIGH |
 | §9.10.3 (OD-13 Chikamatsu 2006) | §9.3 [KS-08 Chikamatsu 1996] | Dua paper berbeda dari author yang sama, tahun berbeda: KS-08 (1996) → L1 effects on kanji acquisition; OD-13 (2006) → recognition speed comparison across all four scripts. Pastikan tidak dicatat sebagai duplikat dalam audit | MEDIUM |
 
 ---

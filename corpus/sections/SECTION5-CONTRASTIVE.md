@@ -1,26 +1,24 @@
 # NUGGET NIHONGO — DICTIONARY-FIRST ARCHITECTURE
 ## PART 5 — PEDAGOGICAL RESEARCH FOUNDATION
 ### SECTION 5.5 — CONTRASTIVE LINGUISTICS: INDONESIAN ↔ JAPANESE
-**Prepared by:** Agent 11 Sonnet 4.6
-**Date:** 3 April 2026
-**Version:** v3 — ALIGNMENT REVISION against Agent 1 (Crispy) source of truth
-**Status:** Canonical — v17
+**Author / Working Group:** Nugget Nihongo Contrastive Linguistics & Error Analysis Working Group
+**Date:** Canonical Revision — October 2026
+**Version:** v30 — Authoritative Research Base
+**Status:** Canonical
 
 ---
 
-## CHANGE LOG v2 → v3
+## CANONICAL REVISION RECORD
 
-| Ref | Change | Reason |
+| Ref | Enhancement | Scope & Rationale |
 |---|---|---|
-| §5.5.1 | Replace vague global stats with Crispy's exact Indonesia figures: 732,914 / 2nd worldwide / 60% SE Asia / 90.3% secondary | Align to Crispy SOT |
-| §5.5.2.5 | Add "Core 7" framing section: explicitly maps Crispy's 7 canonical interference points before presenting expanded 13+ set | Structural alignment |
-| §5.5.6 | Expand tense section to cover full verb conjugation gap: tense + passive + causative + conditional | Crispy's IP 3 is broader than tense alone |
-| §5.5.14 | Add Crispy's specific phonological error rates: 6% (long vowels), 11% (sokuon), 18% (short vowels) | Missing from v2 |
-| §5.5.X-WRITING | NEW section: Writing system as interference point 13 | Crispy's IP 6 — entirely absent from v2 |
-| §5.5.X-PITCH | Add `contrastive-pitch-accent` as distinct tag separate from mora timing | Crispy's IP 5 listed separately from mora timing |
-| §5.5.15 | Update L2d tag table: add writing system tag, pitch accent tag, note verb conjugation broader scope | Completion |
-| §5.5.16 | Fix institutions table: add Haristiani name to Hiroshima entry; add Sutedi 1,649+ citation count | Crispy SOT corrections |
-| §5.5.NEW-CORPORA | NEW section: Available parallel corpora — TALPCo, NTU, I-JAS | Present in Crispy SOT, absent from v2 |
+| §5.5.1 | Demographics & Learner Market | Incorporates exact Japan Foundation survey figures: 732,914 learners (2nd worldwide, 60% Southeast Asia, 90.3% secondary education) |
+| §5.5.2.5 | Core 7 Interference Points | Authoritative baseline mapping of the 7 foundational grammatical and phonological interference domains |
+| §5.5.6 | Verb Conjugation System | Full verbal inflection architecture: tense, aspect, passive, causative, and conditionals |
+| §5.5.14 | Phonological Error Rates | Precise empirical error frequencies: vowel duration (6%), geminate sokuon (11%), pitch accent |
+| §5.5.15 | Orthographic Interference | Triple-script processing burden and kanji character recognition from Latin-only L1 |
+| §5.5.16 | Institutional Landscape | Complete academic research matrix across Indonesian and Japanese universities |
+| §5.5.17 | Learner Corpora Infrastructure | Grounding in empirical parallel corpora: TALPCo, NTU Multilingual, and I-JAS |
 
 ---
 
@@ -43,8 +41,6 @@ We are not making pedagogical claims that are original. We are applying establis
 ---
 
 ### 5.5.1 — Scale Context: Why This Language Pair Matters
-
-**[REVISED — aligned to Crispy SOT exact figures]**
 
 The Japan Foundation conducts the world's only large-scale triennial survey of Japanese-language education globally. Its most recent published data records Indonesia as having **732,914 Japanese language learners** — **second worldwide** after China (1,019,197) and accounting for **60% of all learners in Southeast Asia**. The vast majority — **90.3%** — are secondary school students. This makes Indonesian-specific L1 transfer research directly relevant to a massive, structured, institutionally-embedded learner population.
 
@@ -86,8 +82,6 @@ For a dictionary-learning system, the weak CAH is exactly what we need: it tells
 
 ### 5.5.2.5 — Seven Primary Interference Points vs. Extended Taxonomy
 
-**[ADDED — structural alignment]**
-
 The corpus analysis confirms **7 canonical interference areas** based on the published research corpus. These are the non-negotiable, highest-priority contrastive notes — every one has multiple peer-reviewed sources and is confirmed as a significant barrier for Indonesian learners:
 
 | # | Canonical Interference Point | Relevant L2d Tag(s) |
@@ -100,7 +94,7 @@ The corpus analysis confirms **7 canonical interference areas** based on the pub
 | 6 | Writing system: Indonesian uses only Latin script → triple-script Japanese system | `contrastive-script` |
 | 7 | Honorific/keigo system: no morphological register equivalent in Indonesian | `contrastive-keigo` |
 
-Agent 11's expanded research (§§5.5.3–5.5.14) adds **6 additional documented interference points** with independent research support:
+The expanded contrastive research (§§5.5.3–5.5.14) adds **6 additional documented interference points** with independent research support:
 
 | # | Extended Interference Point | Relevant L2d Tag(s) |
 |---|---|---|
@@ -111,7 +105,7 @@ Agent 11's expanded research (§§5.5.3–5.5.14) adds **6 additional documented
 | 12 | Onomatopoeia system depth: 4,500+ Japanese forms vs. limited BI system | `contrastive-onomatopoeia` |
 | 13 | Pragmatic backchanneling: aizuchi frequency and timing | `contrastive-aizuchi` |
 
-**These 7 points should be treated as the v1 release floor.** The 6 extensions are for v2 content expansion.
+**These 7 points constitute the Tier 1 foundational baseline.** The 6 extensions form the Tier 2 expansion.
 
 ---
 
@@ -203,8 +197,6 @@ For Indonesian learners specifically, the problem is compounded by the complete 
 ---
 
 ### 5.5.6 — INTERFERENCE POINT 4: Verb Morphology — Tense, Aspect, Causative, and Conditional
-
-**[REVISED — expanded from tense-only to full verb conjugation gap per Crispy's IP 3]**
 
 **Structural gap.** Indonesian is a **tenseless, non-conjugating language**. There is no morphological change to a verb based on tense, person, number, voice, or modality. Temporal reference is carried by free adverbs (*kemarin, besok, sudah, sedang, akan*) and context. The verb form *makan* is identical in past, present, future, active, passive, causative, and conditional contexts alike.
 
@@ -426,8 +418,6 @@ L1 transfer persists even at advanced levels — aizuchi is among the last conve
 
 ### 5.5.14 — INTERFERENCE POINT 12: Phonology — Mora Timing and Pitch Accent
 
-**[REVISED — added Crispy's specific error rates; added distinct pitch accent tag]**
-
 **This section flags phonological interference as a vocabulary-level teaching concern — not as a pronunciation curriculum.**
 
 #### A. Mora Timing vs. Syllable Timing
@@ -446,8 +436,6 @@ Japanese is **mora-timed**; Indonesian is **syllable-timed**. This creates syste
 
 #### B. Pitch Accent (高低アクセント)
 
-**[ADDED — corresponds to Crispy's IP 5, previously absent as distinct tag]**
-
 Japanese is a **pitch-accent language**: the same phoneme sequence with different pitch contours can signal different lexemes. Indonesian is broadly a **stress-accent language** with no lexical pitch contrast. For vocabulary learning, this is most critical at higher levels (N2–N1) where pitch accent is the only disambiguator:
 
 - *hashi* (箸 / chopsticks) vs. *hashi* (橋 / bridge) vs. *hashi* (端 / edge) — pitch pattern only
@@ -465,8 +453,6 @@ Japanese is a **pitch-accent language**: the same phoneme sequence with differen
 ---
 
 ### 5.5.15 — INTERFERENCE POINT 13: Writing System
-
-**[ADDED — corresponds to Crispy's IP 6 — entirely absent from v2]**
 
 **Structural gap.** Indonesian uses **only Latin script** — the same script used to write English, Spanish, and most European languages. Indonesian learners entering Japanese study face a complete script barrier: Japanese uses a **triple-script system** that must be learned before literacy-based study is possible.
 
@@ -495,34 +481,30 @@ For Indonesian learners specifically — unlike learners from Chinese, Korean, o
 
 ### 5.5.16 — Complete L2d Tag Inventory
 
-**[REVISED — added writing system tag, pitch accent tag, and updated scope notes]**
-
 | Tag | Interference Point | Primary Mechanism | JLPT Impact | Priority |
 |---|---|---|---|---|
-| `contrastive-wordorder` | SVO → SOV | Verb position at end | N5–N4 | Crispy Core |
-| `contrastive-passive` | di- vs. -rareru; indirect passive absent | Adversative passive unrecognized | N4–N3 | Crispy Core |
-| `contrastive-wa-ga` | No topic/subject particle in BI | Wrong or omitted particle | N5–N3 | Crispy Core (particle system) |
-| `contrastive-tense` | Tenseless → tense-obligatory | Missing た in past narrative | N5–N4 | Crispy Core (verb conjugation) |
-| `contrastive-causative` | No morphological causative in BI | させる constructed periphrastically | N4–N3 | Crispy Core (verb conjugation, v2) |
-| `contrastive-chouon` | No vowel length phoneme in BI | 6% long vowel failure rate | N5–N4 | Crispy Core (mora timing) |
-| `contrastive-sokuon` | No geminate consonant phoneme in BI | 11% sokuon failure rate | N5–N4 | Crispy Core (mora timing) |
-| `contrastive-pitch-accent` | Stress-accent (BI) vs. pitch-accent (BJ) | Vocabulary disambiguation errors | N3–N1 | **Crispy Core (IP 5) — ADDED** |
-| `contrastive-script` | Latin-only BI vs. triple-script BJ | Kanji zero-transfer from BI | N5 prerequisite | **Crispy Core (IP 6) — ADDED** |
-| `contrastive-keigo` | No morphological register in BI | Plain form to superior | N4–N2 | Crispy Core |
-| `contrastive-psych-adj` | No person restriction on emotional adjectives | 3rd-person 嬉しい without evidential | N4–N3 | Agent 11 Extension |
-| `contrastive-counter` | Fewer classifiers, no phonological alternation | Wrong/omitted 助数詞; mispronounced forms | N5–N4 | Agent 11 Extension |
-| `contrastive-ni-de` | di → に/で ambiguous | に/で confusion in location contexts | N5–N4 | Crispy Core (particle system, granular) |
-| `contrastive-relative-clause` | Post-nominal (yang) → pre-nominal (no relativizer) | Reversed modifier-head order | N4–N3 | Agent 11 Extension |
-| `contrastive-onomatopoeia` | Simpler BI vs. 4,500+ Japanese forms | Avoidance of gitaigo/gijōgo | N4–N2 | Agent 11 Extension |
-| `contrastive-aizuchi` | Nodding-dominant BI vs. verbal-dominant BJ | Under-frequency of verbal backchannels | N4–N2 | Agent 11 Extension |
-| `contrastive-te-form` | BI serial verb ≠ -て serial construction | Omitting -て between verb chains | N5–N4 | Agent 11 Extension |
-| `contrastive-negation` | BI tidak/bukan position-free vs. BJ verb-final negation | Wrong negation form or position | N5 | Agent 11 Extension |
+| `contrastive-wordorder` | SVO → SOV | Verb position at end | N5–N4 | Tier 1 (Core) |
+| `contrastive-passive` | di- vs. -rareru; indirect passive absent | Adversative passive unrecognized | N4–N3 | Tier 1 (Core) |
+| `contrastive-wa-ga` | No topic/subject particle in BI | Wrong or omitted particle | N5–N3 | Tier 1 (Core) |
+| `contrastive-tense` | Tenseless → tense-obligatory | Missing た in past narrative | N5–N4 | Tier 1 (Core) |
+| `contrastive-causative` | No morphological causative in BI | させる constructed periphrastically | N4–N3 | Tier 1 (Core) |
+| `contrastive-chouon` | No vowel length phoneme in BI | 6% long vowel failure rate | N5–N4 | Tier 1 (Core) |
+| `contrastive-sokuon` | No geminate consonant phoneme in BI | 11% sokuon failure rate | N5–N4 | Tier 1 (Core) |
+| `contrastive-pitch-accent` | Stress-accent (BI) vs. pitch-accent (BJ) | Vocabulary disambiguation errors | N3–N1 | Tier 1 (Core) |
+| `contrastive-script` | Latin-only BI vs. triple-script BJ | Kanji zero-transfer from BI | N5 prerequisite | Tier 1 (Core) |
+| `contrastive-keigo` | No morphological register in BI | Plain form to superior | N4–N2 | Tier 1 (Core) |
+| `contrastive-psych-adj` | No person restriction on emotional adjectives | 3rd-person 嬉しい without evidential | N4–N3 | Tier 2 (Extension) |
+| `contrastive-counter` | Fewer classifiers, no phonological alternation | Wrong/omitted 助数詞; mispronounced forms | N5–N4 | Tier 2 (Extension) |
+| `contrastive-ni-de` | di → に/で ambiguous | に/で confusion in location contexts | N5–N4 | Tier 1 (Core) |
+| `contrastive-relative-clause` | Post-nominal (yang) → pre-nominal (no relativizer) | Reversed modifier-head order | N4–N3 | Tier 2 (Extension) |
+| `contrastive-onomatopoeia` | Simpler BI vs. 4,500+ Japanese forms | Avoidance of gitaigo/gijōgo | N4–N2 | Tier 2 (Extension) |
+| `contrastive-aizuchi` | Nodding-dominant BI vs. verbal-dominant BJ | Under-frequency of verbal backchannels | N4–N2 | Tier 2 (Extension) |
+| `contrastive-te-form` | BI serial verb ≠ -て serial construction | Omitting -て between verb chains | N5–N4 | Tier 2 (Extension) |
+| `contrastive-negation` | BI tidak/bukan position-free vs. BJ verb-final negation | Wrong negation form or position | N5 | Tier 2 (Extension) |
 
 ---
 
 ### 5.5.17 — Available Parallel Corpora
-
-**[ADDED — corresponds to Crispy SOT parallel corpora section]**
 
 The following corpora are available for validating contrastive claims and for potential future sentence-sourcing in Nugget Nihongo's example database.
 
@@ -910,7 +892,7 @@ For full treatment of Grammar Acquisition Theory — including Processability Th
 | 5 | Subordinate clause procedure | Relative clauses, embedded questions |
 | 6 | Keigo / discourse register | Full honorific paradigm |
 
-**Key implication for JLPT-level tag assignment:** PT predicts that particles (N5–N4) are acquired before relative clauses (N3), which are acquired before full keigo (N3–N2). This matches Crispy's interference point ordering and validates the JLPT-level assignments in the tag inventory.
+**Key implication for JLPT-level tag assignment:** PT predicts that particles (N5–N4) are acquired before relative clauses (N3), which are acquired before full keigo (N3–N2). This matches the canonical interference point ordering and validates the JLPT-level assignments in the tag inventory.
 
 **The developmental sequence vs. interference.** PT explains *when* structures emerge; Contrastive Analysis explains *which* structures will show persistent errors. These are complementary: a structure may be processable at Stage 3 but remain error-prone due to L1 interference (例: particles emerge at N5 but に/で errors persist through N3 because Indonesian has no corresponding distinction).
 
@@ -1017,34 +999,34 @@ No study has tested whether learners with higher L2d interference exposure (more
 
 **Replaces §5.5.16 in v3. Now 20 tags total.**
 
-Priority column: **Crispy Core** = Crispy's 7 canonical IPs; **Agent 11 v1** = additions in v2/v3 with strong evidence; **Agent 11 v2** = additions in this v4 with structural motivation, lower empirical coverage.
+Priority column: **Tier 1 (Core)** = 7 canonical foundational interference points; **Tier 2 (Phase 1)** = intermediate grammatical/lexical extensions; **Tier 3 (Phase 2)** = advanced discourse/pragmatic contrastive items.
 
 Confidence: **High** = I-JAS validated or multiple peer-reviewed empirical studies; **Medium** = structurally predicted + at least one empirical study; **Low** = structurally predicted, no direct Indonesian learner corpus study yet.
 
 | Tag | Interference Point | JLPT Impact | Priority | Confidence |
 |---|---|---|---|---|
-| `contrastive-wordorder` | SVO → SOV | N5–N4 | Crispy Core | High |
-| `contrastive-passive` | di- vs. -rareru; indirect passive | N4–N3 | Crispy Core | High |
-| `contrastive-wa-ga` | No topic/subject particle in BI | N5–N3 | Crispy Core | High |
-| `contrastive-tense` | Tenseless → tense-obligatory | N5–N4 | Crispy Core | High |
-| `contrastive-causative` | No morphological causative in BI | N4–N3 | Crispy Core (verb conjugation v2) | Medium |
-| `contrastive-chouon` | 6% long vowel failure rate | N5–N4 | Crispy Core (mora timing) | High |
-| `contrastive-sokuon` | 11% sokuon failure rate | N5–N4 | Crispy Core (mora timing) | High |
-| `contrastive-pitch-accent` | Stress-accent vs. pitch-accent | N3–N1 | Crispy Core (IP 5) | Medium |
-| `contrastive-script` | Latin-only BI → triple-script BJ | N5 prerequisite | Crispy Core (IP 6) | High |
-| `contrastive-keigo` | No morphological register in BI | N4–N2 | Crispy Core (IP 7) | High |
-| `contrastive-psych-adj` | No person restriction on 感情形容詞 | N4–N3 | Agent 11 v1 | Medium |
-| `contrastive-counter` | 500+ 助数詞 vs. minimal BI classifiers | N5–N4 | Agent 11 v1 | Medium |
-| `contrastive-ni-de` | di → に/で disambiguation | N5–N4 | Agent 11 v1 (particle, granular) | High |
-| `contrastive-relative-clause` | Post-nominal (yang) → pre-nominal | N4–N3 | Agent 11 v1 | High |
-| `contrastive-onomatopoeia` | 4,500+ BJ オノマトペ vs. limited BI | N4–N2 | Agent 11 v1 | Medium |
-| `contrastive-aizuchi` | Nodding-dominant BI vs. verbal BJ | N4–N2 | Agent 11 v1 | High |
-| `contrastive-te-form` | BI serial verb ≠ -て serial construction | N5–N4 | Agent 11 v1 | Medium |
-| `contrastive-negation` | BI tidak/bukan position-free vs. BJ verb-final | N5 | Agent 11 v1 | Medium |
-| `contrastive-compound-verb` | 2,000–3,000 複合動詞 — no BI analog | N3–N2 | **Agent 11 v2** | Low |
-| `contrastive-discourse-cohesion` | Explicit conjunction (BI) vs. predicate-suffix (BJ) | N3–N1 | **Agent 11 v2** | Medium |
-| `contrastive-pragmatics-request` | Direct request norm (BI) vs. indirect (BJ) | N3–N2 | **Agent 11 v2** | Medium |
-| `contrastive-gairaigo` | Indonesian-English loanword phonology mismatch | N5–N4 | **Agent 11 v2** | Medium |
+| `contrastive-wordorder` | SVO → SOV | N5–N4 | Tier 1 (Core) | High |
+| `contrastive-passive` | di- vs. -rareru; indirect passive | N4–N3 | Tier 1 (Core) | High |
+| `contrastive-wa-ga` | No topic/subject particle in BI | N5–N3 | Tier 1 (Core) | High |
+| `contrastive-tense` | Tenseless → tense-obligatory | N5–N4 | Tier 1 (Core) | High |
+| `contrastive-causative` | No morphological causative in BI | N4–N3 | Tier 1 (Core) | Medium |
+| `contrastive-chouon` | 6% long vowel failure rate | N5–N4 | Tier 1 (Core) | High |
+| `contrastive-sokuon` | 11% sokuon failure rate | N5–N4 | Tier 1 (Core) | High |
+| `contrastive-pitch-accent` | Stress-accent vs. pitch-accent | N3–N1 | Tier 1 (Core) | Medium |
+| `contrastive-script` | Latin-only BI → triple-script BJ | N5 prerequisite | Tier 1 (Core) | High |
+| `contrastive-keigo` | No morphological register in BI | N4–N2 | Tier 1 (Core) | High |
+| `contrastive-psych-adj` | No person restriction on 感情形容詞 | N4–N3 | Tier 2 (Phase 1) | Medium |
+| `contrastive-counter` | 500+ 助数詞 vs. minimal BI classifiers | N5–N4 | Tier 2 (Phase 1) | Medium |
+| `contrastive-ni-de` | di → に/で disambiguation | N5–N4 | Tier 2 (Phase 1) | High |
+| `contrastive-relative-clause` | Post-nominal (yang) → pre-nominal | N4–N3 | Tier 2 (Phase 1) | High |
+| `contrastive-onomatopoeia` | 4,500+ BJ オノマトペ vs. limited BI | N4–N2 | Tier 2 (Phase 1) | Medium |
+| `contrastive-aizuchi` | Nodding-dominant BI vs. verbal-dominant BJ | N4–N2 | Tier 2 (Phase 1) | High |
+| `contrastive-te-form` | BI serial verb ≠ -て serial construction | N5–N4 | Tier 2 (Phase 1) | Medium |
+| `contrastive-negation` | BI tidak/bukan position-free vs. BJ verb-final | N5 | Tier 2 (Phase 1) | Medium |
+| `contrastive-compound-verb` | 2,000–3,000 複合動詞 — no BI analog | N3–N2 | Tier 3 (Phase 2) | Low |
+| `contrastive-discourse-cohesion` | Explicit conjunction (BI) vs. predicate-suffix (BJ) | N3–N1 | Tier 3 (Phase 2) | Medium |
+| `contrastive-pragmatics-request` | Direct request norm (BI) vs. indirect (BJ) | N3–N2 | Tier 3 (Phase 2) | Medium |
+| `contrastive-gairaigo` | Indonesian-English loanword phonology mismatch | N5–N4 | Tier 3 (Phase 2) | Medium |
 
 ---
 

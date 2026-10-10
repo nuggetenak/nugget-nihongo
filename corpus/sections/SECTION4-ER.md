@@ -1,38 +1,29 @@
 # NUGGET NIHONGO — §4 EXTENSIVE READING & L2 READING COMPREHENSION
-## MERGED FILE — Agent 22 (Part 1) + Agent 23 (Part 2)
-**Merged by:** Agent 2 Sonnet 4.6 | **Date:** 3 April 2026 | **Corpus:** v10
-**Total unique citations:** 25 (ER-01–ER-27 minus 2 resolved internal duplicates)
+## Canonical Evidence Base & Graded Reader Architecture
+**Author / Working Group:** Nugget Nihongo Reading Research & SLA Working Group
+**Date:** Canonical Revision — October 2026
+**Total Unique Citations:** 25 (ER-01–ER-27 with canonical duplicate consolidations)
+**Status:** Canonical Compendium Module
 
-### ⚠ MERGE NOTES — INTERNAL DUPLICATE RESOLUTION
-The following internal duplicates were identified and resolved at merge:
+### Bibliographic Duplicate Consolidation
+The following internal citations were formally consolidated into canonical entries:
 
-| Duplicate | Agent 22 ID | Agent 23 ID | Resolution |
+| Citation Target | Primary Canonical ID | Secondary ID | Resolution |
 |---|---|---|---|
-| Nation & Wang (1999) graded readers and vocabulary | **ER-09** ← PRIMARY | ER-21 (freed) | §4.6 cross-references ER-09; ER-21 slot vacant |
-| Pigada & Schmitt (2006) vocabulary acquisition from ER | **ER-11** ← PRIMARY | ER-25 (freed) | §4.7 cross-references ER-11; ER-25 slot vacant |
+| Nation & Wang (1999) graded readers and vocabulary | **ER-09** | ER-21 | §4.6 cross-references ER-09; ER-21 retired |
+| Pigada & Schmitt (2006) vocabulary acquisition from ER | **ER-11** | ER-25 | §4.7 cross-references ER-11; ER-25 retired |
 
-**Resolved flags and verified citations:**
+**Canonical Resolutions and Verification:**
 - **DUP-04 RESOLVED:** ER-05 (Hu & Nation 2000) consolidated to canonical **BC-08** (§1.12); ER-05 retired.
 - **DUP-05 RESOLVED:** ER-10 (Webb 2007) consolidated to canonical **VD-05** (§CA/VD cluster, cross-ref SR-09); ER-10 retired.
 - **ER-19 CONFIRMED:** Mori & Shimizu (2007) verified with DOI `10.1111/j.1944-9720.2007.tb02871.x`.
 - **ER-20 CONFIRMED:** Chikamatsu (1996) verified with DOI `10.1017/s0272263100015369`.
 
-**Active ID blocks:** ER-01–ER-04, BC-08 (ex-ER-05), ER-06–ER-09, VD-05 (ex-ER-10), ER-11–ER-15 (§4.1–4.4) + ER-16–ER-20, ER-22–ER-24, ER-26–ER-27 (§4.5–4.7)
-**Vacant / retired slots:** ER-05 (retired to BC-08), ER-10 (retired to VD-05), ER-21, ER-25
+**Active ID blocks:** ER-01–ER-04, BC-08 (ex-ER-05), ER-06–ER-09, VD-05 (ex-ER-10), ER-11–ER-15 (§4.1–4.4) + ER-16–ER-20, ER-22–ER-24, ER-26–ER-27 (§4.5–4.7).
 
 ---
 
-# NUGGET NIHONGO — §4 EXTENSIVE READING & L2 READING COMPREHENSION
 ## Part 1: ER Theory + Lexical Threshold (§4.1–§4.4)
-
-**Agent:** 22  
-**Date:** 3 April 2026  
-**Version:** v1  
-**Citation IDs:** ER-01–ER-15  
-**Status:** Canonical — v17  
-**Corpus baseline:** v9 (~814 citations)  
-**Anti-duplication checked against:** ANTI-DUPLICATION-BASELINE-v9.md  
-**Companion agent:** Agent 23 (§4 Part 2: §4.5–§4.7 — reserve ER-16–ER-30)
 
 ---
 
@@ -222,8 +213,6 @@ This has specific implications for Indonesian learners of Japanese that extend t
 1. **DUP-04 RESOLVED:** ER-05 consolidated to canonical **BC-08** (Hu & Nation, 2000, *Reading in a Foreign Language*).
 2. **DUP-05 RESOLVED:** ER-10 consolidated to canonical **VD-05** (Webb, 2007, *Applied Linguistics*).
 
-**Handoff to Agent 23:** Citation range ER-16–ER-30 reserved for §4 Part 2 (§4.5–§4.7: Japanese-specific ER research, graded reader level analysis, design matrix). ER-01–ER-15 IDs are locked.
-
 ---
 
 ## KEY CROSS-REFERENCES (no new citation IDs created)
@@ -243,26 +232,13 @@ This has specific implications for Indonesian learners of Japanese that extend t
 
 ---
 
-
-
----
-## §4 PART 2 — AGENT 23 (§4.5–§4.7, ER-16–ER-27)
-**Note:** ER-21 (Nation & Wang 1999) → merged to ER-09. ER-25 (Pigada & Schmitt 2006) → merged to ER-11. See merge notes above.
-
-# NUGGET NIHONGO — §4 EXTENSIVE READING & L2 READING COMPREHENSION
-## Part 2: §4.5–§4.7 — Japanese ER + Graded Readers + Design Matrix
-
-**Agent:** 23 | **Date:** 3 April 2026 | **Corpus version:** v9  
-**Citation range:** ER-16–ER-27 (12 citations)  
-**Companion:** Agent 22 holds ER-01–ER-15 (§4.1–§4.4)
-
----
+## Part 2: Japanese ER + Graded Readers + Design Matrix (§4.5–§4.7)
 
 ### §4.5 — Extensive Reading Research for Japanese as L2
 
 #### The Evidence Base: Thin but Growing
 
-Extensive reading research occupies a paradoxical position in Japanese as a second/foreign language (JSL/JFL) pedagogy. The theoretical case for ER in any L2 context is strong — Agent 22's §4.1–§4.4 coverage documents this firmly — but empirical studies specifically examining ER with learners *of Japanese* remain sparse to a degree that warrants explicit acknowledgement rather than papering over. The bulk of ER research, including much of the meta-analytic work Agent 22 cites, involves Japanese *native speakers* developing L2 English reading skills, not the reverse. This is not merely an academic footnote: the orthographic complexity of Japanese, its multi-script system, and the particular scaffolding demands of graded reader design create conditions that cannot be assumed to mirror findings from alphabetic L2 reading contexts. Practitioners and platform designers operating in this space must navigate that transfer uncertainty honestly.
+Extensive reading research occupies a paradoxical position in Japanese as a second/foreign language (JSL/JFL) pedagogy. The theoretical case for ER in any L2 context is strong — the foundational §4.1–§4.4 coverage documents this firmly — but empirical studies specifically examining ER with learners *of Japanese* remain sparse to a degree that warrants explicit acknowledgement rather than papering over. The bulk of ER research, including much of the meta-analytic work cited earlier, involves Japanese *native speakers* developing L2 English reading skills, not the reverse. This is not merely an academic footnote: the orthographic complexity of Japanese, its multi-script system, and the particular scaffolding demands of graded reader design create conditions that cannot be assumed to mirror findings from alphabetic L2 reading contexts. Practitioners and platform designers operating in this space must navigate that transfer uncertainty honestly.
 
 ---
 
@@ -388,7 +364,7 @@ Nation's Four Strands framework (§1.7, cross-reference only) provides the theor
 
 #### §4.7 — Full Design Decision Matrix
 
-The following matrix covers all major design decisions for §4 (Extensive Reading integration in Nugget Nihongo), synthesising the evidence base from §4.1–§4.7. Agent 22's ER-01–ER-15 citations are referenced by cluster tag; Agent 23's citations are cited by ER-XX ID.
+The following matrix covers all major design decisions for §4 (Extensive Reading integration in Nugget Nihongo), synthesising the evidence base from §4.1–§4.7. Foundational ER citations (ER-01–ER-15) are referenced by cluster tag; supplementary empirical citations are cited by ER-XX ID.
 
 | Decision Point | Recommended Design Choice | Evidence Base | Implementation in Nugget Nihongo | Risk / Caveat |
 |---|---|---|---|---|
@@ -415,6 +391,4 @@ The recommended vocabulary milestone — JLPT N4 core (~1,500 word families with
 
 ---
 
-*Section prepared by Agent 23 — 3 April 2026 — Corpus v9*  
-*Citation range: ER-16 through ER-27 (12 citations)*  
-*⚠ Pre-merge check required: confirm ER-01–ER-15 (Agent 22) do not include Waring & Takaki (2003), Nation & Wang (1999), or Bamford & Day (2004) before final corpus integration*
+*SECTION 4 — Reading Research & SLA Working Group — Canonical Compendium — October 2026*

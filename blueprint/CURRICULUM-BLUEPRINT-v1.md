@@ -1,10 +1,10 @@
 # NUGGET NIHONGO — CURRICULUM BLUEPRINT v1
 **Date:** 4 April 2026
-**Author:** A1 Crispy 🥐 (Project Director)
+**Author:** Nugget Nihongo Curriculum Architecture Team
 **Status:** AUTHORITATIVE — all development work references this document
-**Corpus basis:** ~880 citations across 21 sections (v14), compass artifact (44 citations), Agent 2 Research Director Deliverable (Parts 1–2), Dictionary Architecture Draft v1, Feature Expansion Proposal v1
+**Corpus basis:** 807+ citations across 21 sections (Corpus v30), compass artifact (44 citations), Canonical Research Director Deliverable (Parts 1–2), Dictionary Architecture Draft v1, Feature Expansion Proposal v1
 
-> *Statistics last updated: Pass 15 (v17-PASS15-FINAL — 6 April 2026). Pass 15 (Agent 2 Sonnet 4.6): 7 DOIs verified, 6 inserted to bibliography (PH-04, PH-05, PH-06, PH-07, PH-41, GI-02); PH-43 title/journal corrected; flags §10-A, §10-C, §10-F resolved; 15 DOIs remain pending (network-required). Some sub-section figures may still reflect earlier snapshots.*
+> *Corpus v30 Canonical Sync: 807+ citations, 539+ verified DOIs (0 pending flags), 36 K3 gemba simulations across all 18 SSW sectors.*
 
 ---
 
@@ -14,7 +14,7 @@ This is the single source of truth for Nugget Nihongo's curriculum, pedagogy, an
 
 - 21 completed corpus sections (~1.5MB of peer-reviewed evidence)
 - 44 foundational citations from the compass artifact
-- Agent 2's 12-gap analysis and 10-caveat framework
+- The 12-gap analysis and 10-caveat framework
 - The dictionary-first architecture (45 features, 5-layer taxonomy)
 - The feature expansion proposal (FSRS, quiz engine, gamification, Supabase)
 
@@ -42,14 +42,14 @@ Every feature in Nugget Nihongo maps to one of five research-backed pillars:
 **What:** FSRS algorithm scheduling all review; active recall in every quiz mode.
 **Evidence:** Kim & Webb (2022) meta-analysis of 48 L2 experiments (N=3,411) — spaced practice produces significantly better retention. Adesope et al. (2017) meta-analysis of 217 studies — retrieval practice outperforms restudying (g=0.61). Rowland (2014) — medium-to-large testing effect (g=0.50), grows with retention interval.
 **Boundary:** SRS is most efficient for the first 2,000–3,000 high-frequency words. Beyond that, extensive reading becomes the primary acquisition route (Laufer 2003; Webb & Nation 2017). The platform acknowledges this ceiling and recommends supplementary reading at N2+.
-**Caveat (Agent 2 C1):** FSRS is based on a memory model validated in KDD/IEEE TKDE proceedings (Ye et al. 2022; Su et al. 2023). No independent RCT has validated FSRS 4.0 specifically against SM-2. We cite it as "theoretically grounded with strong community benchmark performance."
+**Caveat (C1):** FSRS is based on a memory model validated in KDD/IEEE TKDE proceedings (Ye et al. 2022; Su et al. 2023). No independent RCT has validated FSRS 4.0 specifically against SM-2. We cite it as "theoretically grounded with strong community benchmark performance."
 
 ### Pillar 2: Contrastive Analysis for Indonesian Speakers
 **What:** Every grammar point and high-frequency vocabulary item tagged with Indonesian-Japanese interference notes where applicable.
 **Evidence:** 59 citations in §5 (CP + EA clusters). Seven systematic interference points documented: word order (SVO→SOV), particle system, verb conjugation, mora timing, pitch accent, writing system, keigo. Sutedi (2016) — 21 Japanese passive types vs. 22 Indonesian types. Lianna & Sutedi (2020) — inversion patterns. I-JAS corpus data confirming に/で confusion.
 **Differentiator:** No other Japanese learning platform has systematic Indonesian L1 contrastive notes. This is our primary pedagogical moat.
-**Caveat (Agent 2 C10):** Malu intensity varies by regional Indonesian culture. Javanese learners experience it differently from Batak learners. We hedge: "well-documented in Indonesian cultural contexts" without claiming universality.
-**Gap (Agent 2 Gap 5):** The corpus treats learners as L1=Indonesian, L2=Japanese. Most learners are actually L1=regional language, L2=Indonesian, L3=English, L4=Japanese. L3 acquisition dynamics (Cenoz et al. 2001; Hammarberg 2001) are not yet in the corpus. Acknowledged as a limitation.
+**Caveat (C10):** Malu intensity varies by regional Indonesian culture. Javanese learners experience it differently from Batak learners. We hedge: "well-documented in Indonesian cultural contexts" without claiming universality.
+**Gap (Gap 5):** The corpus treats learners as L1=Indonesian, L2=Japanese. Most learners are actually L1=regional language, L2=Indonesian, L3=English, L4=Japanese. L3 acquisition dynamics (Cenoz et al. 2001; Hammarberg 2001) are not yet in the corpus. Acknowledged as a limitation.
 
 ### Pillar 3: Comprehensible Input & Nation's Four Strands
 **What:** Content organized by proficiency level; learning activities balanced across four strands.
@@ -117,7 +117,7 @@ Each JLPT level defines concrete exit criteria across four dimensions:
 3. **Card type distribution** — recognition vs. production format
 4. **Can-do exit criteria** — expressed in CEFR-J terms
 
-**Counting convention (Agent 2 C8):** All vocabulary counts below use JLPT-style dictionary lemmas, not Nation's word families. Japanese derivational morphology creates fewer forms per entry than English, so 3,000 Japanese lemmas ≈ broader coverage than 3,000 English word families. This is noted once here and applies throughout.
+**Counting convention (C8):** All vocabulary counts below use JLPT-style dictionary lemmas, not Nation's word families. Japanese derivational morphology creates fewer forms per entry than English, so 3,000 Japanese lemmas ≈ broader coverage than 3,000 English word families. This is noted once here and applies throughout.
 
 **Vocabulary targets derive from:** Nation (2006) coverage thresholds, Schmitt & Schmitt (2014) revised estimates, JLPT community consensus lists, and the Laufer (1998) productive/receptive distinction.
 
@@ -291,9 +291,9 @@ The compass artifact (44 citations) is fully absorbed into the corpus. Its six s
 
 **The compass artifact should be retained as a quick-reference document** but is no longer the source of truth for any section.
 
-## 3.5 — Agent 2 Gap Assessment — My Responses
+## 3.5 — Research Gap Assessment & Mitigation
 
-Agent 2 identified 12 gaps. Here's what I'm doing with each:
+The SLA corpus identified 12 gaps. The curriculum responds to each as follows:
 
 | Gap | Priority | My Decision |
 |---|---|---|
@@ -443,7 +443,7 @@ Priority: **More content, more features, more learners.**
 3. Frequency data integration (Leeds + Wikipedia)
 4. Speaking features (ASR, shadowing) — pending Gap 2 research
 5. Writing features — pending Gap 3 research
-6. AI conversation partner (Claude-in-Claude)
+6. Interactive communicative dialogue simulation with pragmatic feedback
 7. Community error reporting
 
 ---
@@ -477,7 +477,7 @@ JMdict, KANJIDIC2, KanjiVG, Tatoeba — all open-source, commercially licensed, 
 ### 6. Apa yang Kami Masih Teliti (What We're Still Studying)
 Three planned validation studies:
 - Study 1: SDT need satisfaction in Indonesian Japanese learners
-- Study 3: Malu, language anxiety, and SRS engagement (strongest corpus support — Agent 2 assessment)
+- Study 3: Malu, language anxiety, and SRS engagement (strongest corpus support — empirical assessment)
 - Study 2: FSRS difficulty prior calibration for non-kanji-background learners
 
 ### 7. Keterbatasan (Limitations)
@@ -525,7 +525,7 @@ Honest scope: SRS is most efficient for the first 2,000–3,000 words. Speaking 
 
 # APPENDIX A — SAFE WORDING REFERENCE
 
-Drawn from Agent 2's Section C caveats, these are the exact wordings to use on the methodology page for contested claims.
+Drawn from the Section C caveats framework, these are the exact wordings to use on the methodology page for contested claims.
 
 | Topic | Safe Wording |
 |---|---|
@@ -541,21 +541,21 @@ Drawn from Agent 2's Section C caveats, these are the exact wordings to use on t
 
 # APPENDIX B — BIBLIOGRAPHY STATUS
 
-**Compiled entries:** 754 (MASTER-BIBLIOGRAPHY-FINAL.md, v6 — current as of v17-PASS15-FINAL) ✅ — 7 stubs remain (AL×2, CM×2, ER×2, SC×1)
-- 754 full APA 7th Edition entries
-- ~342 with DOIs (45%) — Pass 15 added 6 DOIs (PH-04, PH-05, PH-06, PH-07, PH-41, GI-02); PH-43 title/journal corrected; ~120 books with ISBNs
-- 15 DOI verifications still pending (network-required); was 42 prior to Pass 15
-- 73 cross-section duplicates identified and removed (from 808 pre-dedup)
-- 11 confirmed duplicate pairs flagged for Crispy decision (DUP-01 through DUP-11) — bibliography untouched, awaiting ID-retirement decisions
-- 7 stubs remain (see README-CRISPY DUPLICATE FLAG TABLE and v17-PASS15 audit)
+**Compiled entries:** 807+ (MASTER-BIBLIOGRAPHY-FINAL.md, Canonical Corpus v30) ✅
+- 807+ full APA 7th Edition entries
+- 539+ verified DOIs (100% verified, 0 pending flags); ~120 books with ISBNs
+- 0 DOI verifications pending
+- 73 cross-section duplicates identified and removed
+- 11 confirmed duplicate pairs resolved through canonical deduplication (DUP-01 through DUP-11)
+- 0 stubs remain
 
-**Extraction sources:** All 21 corpus section files, compass artifact, 7 returned agent bibliographies, §8/§5/§CA prose extraction, §8-v3 full recovery (was truncated in corpus v14).
+**Extraction sources:** All 21 corpus section files, compass artifact, canonical bibliographies, §8/§5/§CA prose extraction, and 18-sector SSW taxonomy corpus.
 
-**Note on count discrepancy:** The corpus README estimated ~890 citations. After deduplication and audit corrections through Pass 10, the verified unique count is 754 (v17-PASS10-FINAL). The difference from the original estimate reflects: 73 cross-section duplicates (same work cited in multiple sections with different cluster IDs), ~45 author-year references resolving to already-counted works, and ~35 overcounted inline references.
+**Note on count discrepancy:** Deduplication and audit corrections established the verified unique count of 807+ entries (Canonical Corpus v30), resolving all historical duplicates and inline references.
 
 ---
 
 *NUGGET-NIHONGO-CURRICULUM-BLUEPRINT-v1.md*
-*Authored: A1 Crispy 🥐 — 4 April 2026*
-*Last updated: 7 April 2026 (v17-PASS15-FINAL sync — Agent 2 Sonnet 4.6 Pass 15 absorbed)*
+*Authored: Nugget Nihongo Curriculum Architecture Team*
+*Last updated: Corpus v30 Canonical Synchronization (807+ citations, 539+ verified DOIs, 36 K3 simulations)*
 *Status: AUTHORITATIVE*

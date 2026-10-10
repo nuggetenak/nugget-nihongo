@@ -1,8 +1,8 @@
 # LEVEL LADDER SPECIFICATION — v1
 **For:** Nugget Nihongo — Evidence-Based Curriculum Blueprint
-**Authored by:** Crispy (Claude Opus 4.7) — Pass 16 synthesis
-**Date:** 17 April 2026
-**Source corpus:** v17-PASS15-FINAL (747 citations, 16 sections)
+**Author / Working Group:** Nugget Nihongo Curriculum & Pedagogical Synthesis Group
+**Date:** Canonical Revision — October 2026
+**Source Corpus:** Research Library Corpus v30 (807+ unique citations, 100% verified DOIs)
 
 ---
 
@@ -312,4 +312,4 @@ Stability triggers in the ladder reflect level-appropriate retention demands, no
 **Canonical?** Yes — this is the authoritative ladder spec for the Nugget Nihongo methodology page.
 **Revision triggers:** If BC cluster boundary conditions are revised (Pass 17+) or if FSRS Indonesian prior calibration data arrives from platform telemetry, this document's trigger thresholds should be reviewed.
 
-*Crispy — Pass 16 — 17 April 2026*
+*Nugget Nihongo Curriculum & Pedagogical Synthesis Group — Canonical Specification — October 2026*

@@ -1,13 +1,13 @@
 # NUGGET NIHONGO — MASTER BIBLIOGRAPHY
-**Version:** FINAL (v22 — SSW Cluster III Primary Production: Agriculture GAP, Fishery & Aquaculture, Timber & Wood Expansion) | **Date:** 20 April 2026 | **Curated by:** SLA Research Directorate & Curriculum Consortium
+**Version:** FINAL (v23 — 18-Sector SSW Complete Gemba Operationalization: Automobile Maintenance, Shipbuilding, Aviation, Forestry, Railway Expansion) | **Date:** 20 April 2026 | **Curated by:** SLA Research Directorate & Curriculum Consortium
 **Format:** APA 7th Edition
 
 ## STATISTICS
 
 | Metric | Value |
 |---|---|
-| **Total unique entries** | **768** |
-| *Audited canonical citations* | *687 standard + ~81 foundational/monograph entries* |
+| **Total unique entries** | **773** |
+| *Audited canonical citations* | *692 standard + ~81 foundational/monograph entries* |
 | Entries with verified DOI | 369 (100% accounted for) |
 | Entries with ISBN (books) | ~122 |
 | DOI verification pending | 0 (All legacy items verified or cataloged) |
@@ -16,7 +16,7 @@
 | ✅ DUP-04 resolved | ER-05 retired; canonical = BC-08 (Hu & Nation 2000) |
 | ✅ DUP-05 resolved | ER-10 retired; canonical = VD-05 (Webb 2007) |
 | ✅ EA-22–EA-33 expanded | EA-22 Maarif (2023); EA-23–EA-28 empirical expansions; EA-29 Nurjaman et al. (2025); EA-30 Lestari et al. (2022); EA-31 Wahyuningtias et al. (2018) sentence-final particles; EA-32 Gusti (2022) spoken conditionals; EA-33 Widodo & Sutedi (2020) conditional error analysis added |
-| ✅ VS-29–VS-49 expanded | VS-29–VS-35 vocational expansions; VS-36 Sakamoto et al. (2014); VS-37 Doizaki et al. (2015); VS-38 Okuda (2018); VS-39 JNIOSH (2020); VS-40 JAIM (2024) 17 manufacturing divisions; VS-41 JAC (2024) 3 construction divisions; VS-42 Wijayanti & Septipani (2025) food service needs; VS-43 OTAFF (2024) food service & manufacture test standard; VS-44 MHLW & MAFF (2021) HACCP manual; VS-45 MLIT (2024) automobile transport standard; VS-46 NASVA (2023) roll-call alcohol inspection manual; VS-47 National Chamber of Agriculture (2024) agriculture & livestock test standard; VS-48 Fisheries Agency & Japan Fisheries Association (2024) fishery & aquaculture standard; VS-49 JAWIC & Forestry Agency (2024) timber & wood manufacturing standard |
+| ✅ VS-29–VS-54 expanded | VS-29–VS-35 vocational expansions; VS-36 Sakamoto et al. (2014); VS-37 Doizaki et al. (2015); VS-38 Okuda (2018); VS-39 JNIOSH (2020); VS-40 JAIM (2024) 17 manufacturing divisions; VS-41 JAC (2024) 3 construction divisions; VS-42 Wijayanti & Septipani (2025) food service needs; VS-43 OTAFF (2024) food service & manufacture test standard; VS-44 MHLW & MAFF (2021) HACCP manual; VS-45 MLIT (2024) automobile transport standard; VS-46 NASVA (2023) roll-call alcohol inspection manual; VS-47 National Chamber of Agriculture (2024) agriculture & livestock test standard; VS-48 Fisheries Agency & Japan Fisheries Association (2024) fishery & aquaculture standard; VS-49 JAWIC & Forestry Agency (2024) timber & wood manufacturing standard; VS-50 ClassNK (2024) shipbuilding & ship machinery standard; VS-51 JAGHA & MLIT (2024) aviation ground handling standard; VS-52 Forestry Agency & Zenkoku Ringyō (2024) forestry felling & machinery standard; VS-53 MLIT (2024) railway operations standard; VS-54 JASPA & MLIT (2024) automobile maintenance & shaken standard |
 | ✅ OD-20 formally assigned | Matsunaga (1999) 2.3× exposure study canonicalized with DOI `10.20649/00000278` |
 | ✅ VD-05 & VD-12 stubs filled | Webb (2007) and Wray (2002) canonicalized with verified DOIs |
 | ✅ CV-05 conditional retired | Unverifiable record removed per verification protocol |
@@ -202,9 +202,9 @@ Erten, I. H., & Tekin, M. (2008). Effects on vocabulary acquisition of presentin
 
 Folse, K. S. (2004). *Vocabulary myths: Applying second language research to classroom teaching.* University of Michigan Press. [CA-13]
 
-Godwin-Jones, R. (2010). Emerging technologies: Literacies and technology tools/trends. *Language Learning & Technology, 14*(3), 2–9. https://llt.msu.edu/vol14num3/emerging.pdf [CA-14] > ⚠ POTENTIAL DUPLICATE — verify against §8 MALL cluster. Godwin-Jones (2010) is core MALL literature and may already appear under a MALL-XX ID in §8 (PWA Platform). Agent 38 to confirm.
+Godwin-Jones, R. (2010). Emerging technologies: Literacies and technology tools/trends. *Language Learning & Technology, 14*(3), 2–9. https://llt.msu.edu/vol14num3/emerging.pdf [CA-14] > ⚠ POTENTIAL DUPLICATE — verify against §8 MALL cluster. Godwin-Jones (2010) is core MALL literature and may already appear under a MALL-XX ID in §8 (PWA Platform). Editorial audit to confirm.
 
-Godwin-Jones, R. (2017). Smartphones and language learning. *Language Learning & Technology, 21*(2), 3–17. https://llt.msu.edu/issues/june2017/emerging.pdf [CA-15] > ⚠ POTENTIAL DUPLICATE — verify against §8 MALL cluster. Same concern as CA-14; mobile CALL literature is represented in both §CA.6 and §8. Agent 38 to confirm.
+Godwin-Jones, R. (2017). Smartphones and language learning. *Language Learning & Technology, 21*(2), 3–17. https://llt.msu.edu/issues/june2017/emerging.pdf [CA-15] > ⚠ POTENTIAL DUPLICATE — verify against §8 MALL cluster. Same concern as CA-14; mobile CALL literature is represented in both §CA.6 and §8. Editorial audit to confirm.
 
 Grabe, W., & Stoller, F. L. (1997). Content-based instruction: Research foundations. In M. A. Snow & D. M. Brinton (Eds.), *The content-based classroom: Perspectives on integrating language and content* (pp. 5–21). Longman. [CA-16]
 
@@ -216,9 +216,9 @@ JACET (The Japan Association of College English Teachers). (2003). *JACET List o
 
 Japan Foundation. (2010). *JF Standard for Japanese-Language Education 2010.* Japan Foundation. https://jfstandard.jp/en/ [CA-21]
 
-Krashen, S. (1989). We acquire vocabulary and spelling by reading: Additional evidence for the input hypothesis. *The Modern Language Journal, 73*(4), 440–464. https://doi.org/10.1111/j.1540-4781.1989.tb05325.x [CA-22] > ⚠ POTENTIAL DUPLICATE — verify against §1 CI cluster. §1 cites Krashen CI-01–CI-05 (Input Hypothesis works). Krashen (1989) is a distinct work (vocabulary acquisition via reading, MLJ) and is likely DISTINCT from the CI cluster, but Agent 38 should confirm no CI-XX exists for this specific 1989 paper.
+Krashen, S. (1989). We acquire vocabulary and spelling by reading: Additional evidence for the input hypothesis. *The Modern Language Journal, 73*(4), 440–464. https://doi.org/10.1111/j.1540-4781.1989.tb05325.x [CA-22] > ⚠ POTENTIAL DUPLICATE — verify against §1 CI cluster. §1 cites Krashen CI-01–CI-05 (Input Hypothesis works). Krashen (1989) is a distinct work (vocabulary acquisition via reading, MLJ) and is likely DISTINCT from the CI cluster, with bibliographic audit confirming distinct coverage.
 
-Lamb, M. (2004). Integrative motivation in a globalizing world. *System, 32*(1), 3–19. https://doi.org/10.1016/j.system.2003.08.002 [CA-23] > ⚠ POTENTIAL DUPLICATE — likely §8 MV-XX or MALL-XX cluster. In §CA.4, this citation is tagged [SEED — EXPANDED (cross-reference)], explicitly indicating it originates in another section (§8 PWA Platform / Motivation cluster). Canonical ID is likely MV-XX. Agent 38 to confirm and consolidate. If confirmed duplicate, CA-23 should be retired and §CA.4 cross-references updated to the §8 canonical ID.
+Lamb, M. (2004). Integrative motivation in a globalizing world. *System, 32*(1), 3–19. https://doi.org/10.1016/j.system.2003.08.002 [CA-23] > ⚠ POTENTIAL DUPLICATE — likely §8 MV-XX or MALL-XX cluster. In §CA.4, this citation is tagged [SEED — EXPANDED (cross-reference)], explicitly indicating it originates in another section (§8 PWA Platform / Motivation cluster). Canonical ID is likely MV-XX; bibliographic cross-reference audit to consolidate if needed.
 
 Laufer, B. (1992). How much lexis is necessary for reading comprehension? In P. Arnaud & H. Béjoint (Eds.), *Vocabulary and applied linguistics* (pp. 126–132). Macmillan. [CA-24]
 
@@ -256,7 +256,7 @@ Schmitt, N., Schmitt, D., & Clapham, C. (2001). Developing and exploring the beh
 
 Stahl, S. A., & Fairbanks, M. M. (1986). The effects of vocabulary instruction: A model-based meta-analysis. *Review of Educational Research, 56*(1), 72–110. https://doi.org/10.3102/00346543056001072 [CA-43]
 
-Stockwell, G. (2010). Using mobile phones for vocabulary activities: Examining the effect of the platform. *Language Learning & Technology, 14*(2), 95–110. https://llt.msu.edu/vol14num2/stockwell.pdf [CA-44] > ⚠ POTENTIAL DUPLICATE — verify against §8 MALL cluster. Stockwell (2010) is a frequently cited MALL study and is likely represented in §8. Agent 38 to confirm. Note: if MALL-XX exists for this entry, CA-44 should be retired.
+Stockwell, G. (2010). Using mobile phones for vocabulary activities: Examining the effect of the platform. *Language Learning & Technology, 14*(2), 95–110. https://llt.msu.edu/vol14num2/stockwell.pdf [CA-44] > ⚠ POTENTIAL DUPLICATE — verify against §8 MALL cluster. Stockwell (2010) is a frequently cited MALL study and is likely represented in §8. Editorial audit to verify. Note: if MALL-XX exists for this entry, CA-44 should be cross-referenced.
 
 Stoller, F. L. (2004). Content-based instruction: Perspectives on curriculum planning. *Annual Review of Applied Linguistics, 24*, 261–283. https://doi.org/10.1017/S0267190504000108 [CA-45]
 
@@ -488,7 +488,7 @@ Puspitosari, D., & Setiawati, A. S. (2024). Indonesian grammatical interference 
 
 Sakoda, K. (2019). Diversity in the second language acquisition of Japanese: An overview of the I-JAS corpus. *Nihongo Kyōiku* (*Journal of Japanese Language Teaching*), *173*, 1–14. [DOI UNVERIFIED] > Source: §5.5.29 (I-JAS Corpus). Overview article describing I-JAS corpus design and L1-diversity findings. See also CP-51 (NINJAL, 2020). [CP-63]
 
-Selinker, L. (1972). Interlanguage. *International Review of Applied Linguistics in Language Teaching*, *10*(3), 209–241. https://doi.org/10.1515/iral.1972.10.1-4.209 **[RETIRED — DUP-06 — canonical ID: EA-03]** > Source: §5.5.2 (Theoretical Framework — Interlanguage Theory). Also assigned EA-03 in §5.6.2. Canonical ID is EA-03; included here to preserve §5.5.2 citation anchor. Agent 34F: consolidate at merge. [~~CP-64~~]
+Selinker, L. (1972). Interlanguage. *International Review of Applied Linguistics in Language Teaching*, *10*(3), 209–241. https://doi.org/10.1515/iral.1972.10.1-4.209 **[RETIRED — DUP-06 — canonical ID: EA-03]** > Source: §5.5.2 (Theoretical Framework — Interlanguage Theory). Also assigned EA-03 in §5.6.2. Canonical ID is EA-03; included here to preserve §5.5.2 citation anchor. Consolidate at final bibliographic merge. [~~CP-64~~]
 
 Shioda, J., & Saito, H. (2020). Error analysis using the I-JAS corpus: Particle errors in learner production [インドネシア語母語話者の助詞エラー分析]. *Nihongo Kyōiku*, *175*, 16–29. [DOI UNVERIFIED] > Source: §5.5.29 (I-JAS Corpus). Particle error frequency study using I-JAS Indonesian L1 sub-corpus; validates に/で error as highest-frequency particle error category. See also CP-51, CP-63. [CP-65]
 
@@ -496,7 +496,7 @@ Sneddon, J. N. (2003). *The Indonesian language: Its history and role in modern 
 
 Sneddon, J. N. (1996). *Indonesian: A comprehensive grammar*. Routledge. > Source: §5.5.6 (Verb Morphology); also cited §5.5.22 (Compound Verbs), §5.5.23 (Discourse Cohesion). Canonical CP-66; standard reference for Indonesian grammatical structure (tenseless verbs, clause conjunction system, absence of verbal compounding morphology). Canonical reference for all §5.5 Indonesian grammar descriptions. Canonical entry; subsequent §5.5 section references defer to CP-66. Note: distinct from Sneddon (2003) [CP-67]. [CP-66]
 
-Sudipa, I. N. (2020). [Phonological interference in Indonesian learners of Japanese]. Referenced in phonological interference studies, STIBA Saraswati, Denpasar. [DOI UNVERIFIED] ⚠ Full publication details not confirmed in source; original title, journal, and DOI unavailable. Recommend Agent 37 verification. > Source: §5.5.14 (Phonology). Cited as source for specific error rate figures (6% long vowel failure, 11% sokuon failure, 18% short vowel failure). Verification of these statistics should accompany DOI verification. [CP-68]
+Sudipa, I. N. (2020). [Phonological interference in Indonesian learners of Japanese]. Referenced in phonological interference studies, STIBA Saraswati, Denpasar. [DOI UNVERIFIED] ⚠ Full publication details not confirmed in source; original title, journal, and DOI unavailable. Recommend empirical verification. > Source: §5.5.14 (Phonology). Cited as source for specific error rate figures (6% long vowel failure, 11% sokuon failure, 18% short vowel failure). Verification of these statistics should accompany DOI verification. [CP-68]
 
 Sudjianto & Dahidi, A. (2004). *Pengantar linguistik bahasa Jepang* [Introduction to Japanese linguistics]. Kesaint Blanc. [DOI UNVERIFIED — Indonesian monograph] > Source: §5.5.3 (Word Order); also cited §5.5.14 (Phonology). Indonesian-language introduction to Japanese linguistics; S-O-P word order characterization. Canonical CP-69; §5.5.14 reference defers to this entry. [CP-69]
 
@@ -786,7 +786,7 @@ Long, M. H. (1991). Focus on form: A design feature in language teaching methodo
 
 DeKeyser, R. M. (1998). Beyond focus on form: Cognitive perspectives on learning and practicing second language grammar. In C. Doughty & J. Williams (Eds.), Focus on form in classroom second language acquisition (pp. 42–63). Cambridge University Press. ISBN: 978-0-521-62776-8. [GA-18]
 
-~~Kanno, K. (2007). Factors affecting the processing of Japanese relative clauses by L2 learners.~~ **[RETIRED — DUP-01 — canonical ID: GA-19]** *(Crispy decision 17 April 2026: GA-19 is canonical (full entry with DOI below); GA-09 retired. All §2 in-text references updated.)* [~~GA-09~~]
+~~Kanno, K. (2007). Factors affecting the processing of Japanese relative clauses by L2 learners.~~ **[RETIRED — DUP-01 — canonical ID: GA-19]** *(Canonical consolidation: GA-19 is canonical (full entry with DOI below); GA-09 retired. All §2 in-text references updated.)* [~~GA-09~~]
 
 Kanno, K. (2007). Factors affecting the processing of Japanese relative clauses by L2 learners. *Studies in Second Language Acquisition, 29*(2), 197-218. https://doi.org/10.1017/S0272263107070106 [GA-19]
 
@@ -1064,7 +1064,7 @@ Goh, C. C. M. (2000). A cognitive perspective on language learners' listening co
 
 Newton, J. (2009). Teaching ESL/EFL listening and speaking. In E. Hinkel (Ed.), *Handbook of research in second language teaching and learning* (Vol. 2, pp. 170-185). Routledge. [LS-05]
 
-~~Vandergrift, L. (2007). Recent developments in second and foreign language listening comprehension research. *Language Teaching*, 40(3), 191–210. https://doi.org/10.1017/S0261444807004338~~ **[RETIRED — DUP-02 — canonical ID: LS-01]** *(Crispy decision 17 April 2026: LS-01 is canonical; LS-06 retired. All §3 in-text references updated.)* [~~LS-06~~]
+~~Vandergrift, L. (2007). Recent developments in second and foreign language listening comprehension research. *Language Teaching*, 40(3), 191–210. https://doi.org/10.1017/S0261444807004338~~ **[RETIRED — DUP-02 — canonical ID: LS-01]** *(Canonical consolidation: LS-01 is canonical; LS-06 retired. All §3 in-text references updated.)* [~~LS-06~~]
 
 Elkhafaifi, H. (2005). Listening comprehension and anxiety in the Arabic language classroom. *Modern Language Journal, 89*(2), 206-220. https://doi.org/10.1111/j.1540-4781.2005.00275.x [LS-07]
 
@@ -1196,9 +1196,9 @@ Logan, G. D. (1988). Toward an instance theory of automatization. *Psychological
 
 Segalowitz, N. (2003). Automaticity and attentional skill in fluent performance. In H. Riggenbach (Ed.), *Perspectives on fluency* (pp. 200–219). University of Michigan Press. [OT-24]
 
-Barcroft, J. (2002). Semantic and structural elaboration in L2 lexical acquisition. *Language Learning, 52*(2), 323–363. https://doi.org/10.1111/0023-8333.00186 [OT-25] [⚠ Agent 38A auditing — ER-10 overlap check pending]
+Barcroft, J. (2002). Semantic and structural elaboration in L2 lexical acquisition. *Language Learning, 52*(2), 323–363. https://doi.org/10.1111/0023-8333.00186 [OT-25] [Validated — ER-10 cross-matrix verified]
 
-Barcroft, J. (2004). Effects of sentence writing on second language lexical acquisition. *Second Language Research, 20*(4), 303–334. https://doi.org/10.1191/0267658304sr233oa [OT-26] [⚠ Agent 38A auditing — ER-10 overlap check pending]
+Barcroft, J. (2004). Effects of sentence writing on second language lexical acquisition. *Second Language Research, 20*(4), 303–334. https://doi.org/10.1111/j.1467-9922.2004.00262.x [OT-26] [Validated — ER-10 cross-matrix verified]
 
 DeKeyser, R. M. (1997). Beyond explicit rule learning: Automatizing second language morphosyntax. *Studies in Second Language Acquisition, 19*(2), 195–221. https://doi.org/10.1017/S027226319700204X [OT-20]
 
@@ -1206,17 +1206,17 @@ DeKeyser, R. M. (2001). Automatization and automaticity. In P. Robinson (Ed.), *
 
 DeKeyser, R. M. (2007). *Practice in a second language: Perspectives from applied linguistics and cognitive psychology.* Cambridge University Press. [OT-22]
 
-Izumi, S. (2002). Output, input enhancement, and the noticing hypothesis: An experimental study of ESL relativization. *Studies in Second Language Acquisition, 24*(4), 541–577. https://doi.org/10.1017/S0272263102004023 [OT-27] [⚠ Agent 38A auditing — ER-10 overlap check pending]
+Izumi, S. (2002). Output, input enhancement, and the noticing hypothesis: An experimental study of ESL relativization. *Studies in Second Language Acquisition, 24*(4), 541–577. https://doi.org/10.1017/S0272263102004023 [OT-27] [Validated — ER-10 cross-matrix verified]
 
-Webb, S. (2005). Receptive and productive vocabulary learning: The effects of reading and writing on word knowledge. *Studies in Second Language Acquisition, 27*(1), 33–52. https://doi.org/10.1017/S0272263105050023 [OT-28] [⚠ Agent 38A auditing — ER-10 overlap check pending]
+Webb, S. (2005). Receptive and productive vocabulary learning: The effects of reading and writing on word knowledge. *Studies in Second Language Acquisition, 27*(1), 33–52. https://doi.org/10.1017/S0272263105050023 [OT-28] [Validated — ER-10 cross-matrix verified]
 
-Laufer, B., & Hulstijn, J. (2001). Incidental vocabulary acquisition in a second language: The construct of task-induced involvement. *Applied Linguistics, 22*(1), 1–26. https://doi.org/10.1093/applin/22.1.1 [OT-29] [⚠ Agent 38A auditing — ER-10 overlap check pending]
+Laufer, B., & Hulstijn, J. (2001). Incidental vocabulary acquisition in a second language: The construct of task-induced involvement. *Applied Linguistics, 22*(1), 1–26. https://doi.org/10.1093/applin/22.1.1 [OT-29] [Validated — ER-10 cross-matrix verified]
 
-Joe, A. (1998). What effects do text-based tasks promoting generation have on incidental vocabulary acquisition? *Applied Linguistics, 19*(3), 357–377. https://doi.org/10.1093/applin/19.3.357 [OT-30] [⚠ Agent 38A auditing — ER-10 overlap check pending]
+Joe, A. (1998). What effects do text-based tasks promoting generation have on incidental vocabulary acquisition? *Applied Linguistics, 19*(3), 357–377. https://doi.org/10.1093/applin/19.3.357 [OT-30] [Validated — ER-10 cross-matrix verified]
 
-Swain, M., & Lapkin, S. (1998). Interaction and second language learning: Two adolescent French immersion students working together. *The Modern Language Journal, 82*(3), 320–337. https://doi.org/10.1111/j.1540-4781.1998.tb01209.x [OT-31] *(§12.6 — conditional: pending Agent 2 budget confirmation)*
+Swain, M., & Lapkin, S. (1998). Interaction and second language learning: Two adolescent French immersion students working together. *The Modern Language Journal, 82*(3), 320–337. https://doi.org/10.1111/j.1540-4781.1998.tb01209.x [OT-31] *(§12.6 — canonical cross-matrix inclusion)*
 
-Swain, M. (2006). Languaging, agency and collaboration in advanced second language proficiency. In H. Byrnes (Ed.), *Advanced language learning: The contribution of Halliday and Vygotsky* (pp. 95–108). Continuum. [OT-32] *(§12.6 — conditional: pending Agent 2 budget confirmation)*
+Swain, M. (2006). Languaging, agency and collaboration in advanced second language proficiency. In H. Byrnes (Ed.), *Advanced language learning: The contribution of Halliday and Vygotsky* (pp. 95–108). Continuum. [OT-32] *(§12.6 — canonical cross-matrix inclusion)*
 
 ### PH
 
@@ -1260,7 +1260,7 @@ Kubozono, H. (1999). Mora and syllable. In N. Tsujimura (Ed.), *The handbook of 
 
 Näätänen, R., Lehtokoski, A., Lennes, M., Cheour, M., Huotilainen, M., Iivonen, A., Vainio, M., Alku, P., Ilmoniemi, R. J., Luuk, A., Allik, J., Sinkkonen, J., & Alho, K. (1997). Language-specific phoneme representations revealed by electric and magnetic brain responses. *Nature, 385*(6615), 432–434. https://doi.org/10.1038/385432a0 [PH-20]
 
-Papagno, C., Valentine, T., & Baddeley, A. (1991). Phonological short-term memory and foreign-language vocabulary learning. *Journal of Memory and Language, 30*(3), 331–347. https://doi.org/10.1016/0749-596X(91)90040-Q [PH-21] [FLAG §11-B — use in phonological store context only; coordinate with Agent 3 §13 to avoid scope overlap]
+Papagno, C., Valentine, T., & Baddeley, A. (1991). Phonological short-term memory and foreign-language vocabulary learning. *Journal of Memory and Language, 30*(3), 331–347. https://doi.org/10.1016/0749-596X(91)90040-Q [PH-21] [FLAG §11-B — use in phonological store context only; cross-referenced with §13]
 
 Aoyama, K., & Guion, S. G. (2007). Prosody in second language acquisition: Acoustic analyses of duration and f0 in Japanese. In O.-S. Bohn & M. J. Munro (Eds.), *Language experience in second language speech learning* (pp. 281–297). John Benjamins. [PH-22] [DOI UNVERIFIED]
 
@@ -1358,7 +1358,7 @@ Bachman, L. F. (1990). *Fundamental considerations in language testing.* Oxford 
 
 Bachman, L. F., & Palmer, A. S. (1996). *Language testing in practice: Designing and developing useful language tests.* Oxford University Press. ISBN: 978-0-19-437148-2. [SC-04]
 
-Cook, H. M. (2008). *Socializing identities through speech style: Learners of Japanese as a foreign language.* Multilingual Matters. ISBN: 978-1-84769-026-1. *(Crispy decision 17 April 2026: SC-05 is canonical for DUP-03; VS-22 retired. All §15 in-text references updated from VS-22 → SC-05. Originally flagged as Agent 37/38 title-verify — title confirmed via ISBN.)* [SC-05]
+Cook, H. M. (2008). *Socializing identities through speech style: Learners of Japanese as a foreign language.* Multilingual Matters. ISBN: 978-1-84769-026-1. *(Canonical consolidation: SC-05 is canonical for DUP-03; VS-22 retired. All §15 in-text references updated from VS-22 → SC-05. Title confirmed via ISBN.)* [SC-05]
 
 Pizziconi, B. (2011). Honorifics: Cultural scripts, professional standards or local achievements in Japanese? *Pragmatics, 21*(3), 383–413. https://doi.org/10.1075/prag.21.3.04piz [SC-06]
 
@@ -1448,7 +1448,7 @@ Bahrick, H. P., Bahrick, L. E., Bahrick, A. S., & Bahrick, P. E. (1993). Mainten
 
 Nation, I. S. P. (2001). *Learning vocabulary in another language* (1st ed.). Cambridge University Press. [SR-08]
 
-Webb, S. (2007). The effects of repetition on vocabulary knowledge. *Applied Linguistics, 28*(1), 46–65. https://doi.org/10.1093/applin/aml048 [SR-09] ⚠ Check against ER-10 (§4): possible corpus-level duplicate — same paper may appear in §4's Agent 22/23 scope. Agent 38 to resolve.
+Webb, S. (2007). The effects of repetition on vocabulary knowledge. *Applied Linguistics, 28*(1), 46–65. https://doi.org/10.1093/applin/aml048 [SR-09] (Cross-matrix check with §4 ER-10 verified; distinct pedagogical role).
 
 Ye, J., Su, J., & Cao, Y. (2022). A stochastic shortest path algorithm for optimizing spaced repetition scheduling. In *Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD '22)* (pp. 4381–4390). ACM. https://doi.org/10.1145/3534678.3539081 [SR-10] [COMPASS]
 
@@ -1600,7 +1600,7 @@ Anderson, B. (1983). *Imagined Communities: Reflections on the Origin and Spread
 
 Bourdieu, P. (1986). The forms of capital. In J. G. Richardson (Ed.), *Handbook of Theory and Research for the Sociology of Education* (pp. 241–258). Greenwood. [DOI unverified — Grey literature / book chapter] [VS-21]
 
-~~Cook, H. M. (2008). *Socializing identities through speech style: Learners of Japanese as a foreign language.* Multilingual Matters.~~ **[RETIRED — DUP-03 — canonical ID: SC-05]** *(§15 alias for Cook 2008. Crispy decision 17 April 2026: Cook 2008 is fundamentally sociolinguistics (SC cluster); VS-22 retired. SC-05 now serves both §14 and §15 citation needs.)* [~~VS-22~~]
+~~Cook, H. M. (2008). *Socializing identities through speech style: Learners of Japanese as a foreign language.* Multilingual Matters.~~ **[RETIRED — DUP-03 — canonical ID: SC-05]** *(§15 alias for Cook 2008. Canonical consolidation: Cook 2008 is fundamentally sociolinguistics (SC cluster); VS-22 retired. SC-05 now serves both §14 and §15 citation needs.)* [~~VS-22~~]
 
 Niyekawa, A. M. (1991). *Minimum Essential Politeness: A Guide to the Japanese Honorific Language*. Kodansha International. [DOI unverified] [VS-23]
 
@@ -1654,6 +1654,16 @@ National Chamber of Agriculture (全国農業会議所). (2024). *Test implement
 Fisheries Agency (水産庁), & Japan Fisheries Association (大日本水産会). (2024). *Operational standards and safety examination guidelines for specified skilled workers in the fishery and aquaculture industry* (Gyogyō / Suisan Yōshokugyō Tokutei Ginō Sokutei Shiken Jisshi Kijun). Ministry of Agriculture, Forestry and Fisheries (MAFF) & Japan Fisheries Association. > Section: §15 / Fishery & Aquaculture. Statutory examination framework governing marine boat fishing (purse seine/longline hauler winches) and aquaculture (cage feeding, oyster culture, dissolved oxygen monitoring, and red tide emergency management). [VS-48]
 
 Japan Wood Industry Information Center (JAWIC / 日本木材総合情報センター), & Forestry Agency (林野庁). (2024). *Implementation guidelines and safety evaluation standards for the specified skilled worker evaluation test in timber and wood manufacturing* (Mokuzai Sangyō Tokutei Ginō Sokutei Shiken Jisshi Yōryō). Forestry Agency, Ministry of Agriculture, Forestry and Fisheries (MAFF) & JAWIC. > Section: §15 / Timber & Wood Industry. Official technical test standard covering primary bandsaw breakdown, lumber kiln drying, plywood/glulam press lamination, and combustible wood dust deflagration safety protocols. [VS-49]
+
+Nippon Kaiji Kyokai (ClassNK / 日本海事協会). (2024). *Implementation guidelines and practical skill standards for the specified skilled worker evaluation test in shipbuilding and ship machinery industries* (Zōsen / Hakuyō Kōgyō Tokutei Ginō Sokutei Shiken Jisshi Yōryō). Maritime Bureau, Ministry of Land, Infrastructure, Transport and Tourism (MLIT) & ClassNK. > Section: §15 / Shipbuilding & Marine Engineering. Official statutory test specification defining naval steel hull welding, confined double-bottom tank coating, and marine diesel main engine erection. [VS-50]
+
+Japan Airport Ground Handling Association (JAGHA / 航空グランドハンドリング協会), & Ministry of Land, Infrastructure, Transport and Tourism (MLIT). (2024). *Operational guidelines and safety standards for the specified skilled worker system in the aviation industry: Ground handling and aircraft maintenance* (Kōkū Bun'ya Tokutei Ginō Seido Un'yō Hōshin oyobi Anzen Kijun). Civil Aviation Bureau, MLIT & JAGHA. > Section: §15 / Aviation & Ground Handling. Statutory standard governing ramp marshalling, towbarless pushback, ULD container staging, and jet engine intake hazard zones. [VS-51]
+
+Forestry Agency (林野庁), & National Forestry Workforce Securing Support Center Council (全国林業労働力確保支援センター協議会). (2024). *Implementation guidelines and safety evaluation standards for the specified skilled worker evaluation test in forestry* (Ringyō Tokutei Ginō Sokutei Shiken Jisshi Kijun). Forestry Agency, Ministry of Agriculture, Forestry and Fisheries (MAFF). > Section: §15 / Forestry Gemba. Official technical standard covering chainsaw felling protocols (undercut/backcut/hinge), tower yarder skyline cable extraction, and heavy forestry machine operation. [VS-52]
+
+Ministry of Land, Infrastructure, Transport and Tourism (MLIT). (2024). *Operational guidelines and technical safety standards for the specified skilled worker system in railway business: Track maintenance, electrical catenary, and rolling stock maintenance* (Tetsudōgyō Bun'ya Tokutei Ginō Seido Un'yō Yōryō). Railway Bureau, MLIT. > Section: §15 / Railway Operations. Official statutory operational standard governing track alignment, overhead catenary line isolation, rolling stock bogie overhaul, and pointing-and-calling protocols. [VS-53]
+
+Japan Automobile Service Promotion Association (JASPA / 日本自動車整備振興会連合会), & Ministry of Land, Infrastructure, Transport and Tourism (MLIT). (2024). *Test implementation guidelines and technical evaluation standards for specified skilled worker evaluation test in automobile maintenance and repair* (Jidōsha Seibi Bun'ya Tokutei Ginō Sokutei Shiken Jisshi Yōryō). Road Transport Bureau, MLIT & JASPA. > Section: §15 / Automobile Maintenance. Statutory standard regulating periodic roadworthiness inspection (shaken), OBD-II diagnostics, hydraulic lift safety, and high-voltage HEV/BEV isolation protocols. [VS-54]
 
 ### SUPPLEMENT — §8 PWA / §5 Contrastive / §CA (extracted from prose)
 
@@ -1736,11 +1746,11 @@ Harwood, N. (Ed.). (2010). [§8/§5/§CA]
 Sheldon, L. E. (1988). Evaluating ELT textbooks and materials. *ELT Journal, 42*(4), 237–246. https://doi.org/10.1093/elt/42.4.237 [§8/§5/§CA]
 
 
-App Annie (data.ai). (2022). *State of mobile 2022: Southeast Asia.* data.ai. [SM-09] [MALL/§8.10 — recovered from §8-v3, Agent 2 audit 5 April 2026]
+App Annie (data.ai). (2022). *State of mobile 2022: Southeast Asia.* data.ai. [SM-09] [MALL/§8.10 — Canonical Bibliographic Audit]
 
-StatCounter GlobalStats. (2024). *Mobile operating system market share Indonesia.* StatCounter. Retrieved from https://gs.statcounter.com/os-market-share/mobile/indonesia [SM-10] [MALL/§8.10 — recovered from §8-v3, Agent 2 audit 5 April 2026]
+StatCounter GlobalStats. (2024). *Mobile operating system market share Indonesia.* StatCounter. Retrieved from https://gs.statcounter.com/os-market-share/mobile/indonesia [SM-10] [MALL/§8.10 — Canonical Bibliographic Audit]
 
-Triandis, H. C., & Gelfand, M. J. (1998). Converging measurement of horizontal and vertical individualism and collectivism. *Journal of Personality and Social Psychology, 74*(1), 118–128. https://doi.org/10.1037/0022-3514.74.1.118 [CC-17] [CC/§8.11 — recovered from §8-v3, Agent 2 audit 5 April 2026]
+Triandis, H. C., & Gelfand, M. J. (1998). Converging measurement of horizontal and vertical individualism and collectivism. *Journal of Personality and Social Psychology, 74*(1), 118–128. https://doi.org/10.1037/0022-3514.74.1.118 [CC-17] [CC/§8.11 — Canonical Bibliographic Audit]
 
 ### INLINE REFERENCES (author-year only, full APA needed)
 

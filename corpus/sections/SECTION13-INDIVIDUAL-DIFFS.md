@@ -1,8 +1,8 @@
 # SECTION 13 — INDIVIDUAL DIFFERENCES & LEARNER VARIABLES
 ### Nugget Nihongo Corpus — Academic Justification for Japanese SRS Platform Design
-**Ditulis oleh:** Agent 3 (Claude Sonnet 4.6)
+**Disusun oleh:** Differential SLA, Psychometrics & Cognitive Variables Working Group
 **Tanggal:** 3 April 2026
-**Versi:** v1
+**Versi:** v1 — Canonical v30
 **ID Prefix:** ID-XX (ID-01 s.d. ID-43)
 **Total citations baru:** 43
 

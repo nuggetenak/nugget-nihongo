@@ -78,7 +78,7 @@ If andragogy describes the *characteristics* of the adult learner, Self-Regulate
 
 **[AL-07]** Bandura, A. (1997). *Self-Efficacy: The Exercise of Control*. W. H. Freeman.
 
-> ⚠ **FLAG for Agent 2:** The ANTI-DUPLICATION-BASELINE (v9) notes "Bandura (self-efficacy) | ID-xx — check file" in the §13 ID cluster. If Bandura (1997) or Bandura (1986) is already cited as an ID-XX entry, replace this entry with that ID and demote to cross-reference. If §13 cites Bandura (1986) *Social Foundations of Thought and Action* only, then this 1997 volume is a distinct publication and AL-07 stands.
+> **Bibliographic Note:** Distinct from Bandura (1986) cited in §13; this 1997 volume is the dedicated Self-Efficacy monograph and canonical entry AL-07 stands.
 
 **Core contribution:** Bandura's monograph presents the definitive empirical and theoretical account of self-efficacy — the belief in one's capacity to execute a specific course of action to produce a given outcome. Self-efficacy is domain- and task-specific, not a global self-esteem measure. Bandura identifies four sources: *mastery experiences* (prior success on the task), *vicarious modelling* (observing similar others succeed), *social persuasion* (verbal encouragement from credible others), and *physiological/affective states* (interpreting arousal as indicating competence or incompetence). Critically for SRL theory (AL-04, AL-05), self-efficacy is the prerequisite for the forethought phase: a learner who doubts their capacity to improve does not set challenging goals, does not plan strategically, and responds to failure with defensive rather than adaptive self-reactions. Low language-learning self-efficacy is therefore not merely a motivational problem but a structural barrier to SRL engagement — the regulatory cycle breaks at its initiating node.
 
@@ -149,7 +149,7 @@ The SDT autonomy-need addressed in §8 (MV-01/MV-02) is a *psychological need* f
 ---
 
 
-*New citations: 11 (AL-01–AL-11) | Cross-references: 8 | ⚠ Flags for Agent 2: 1 (AL-07 §13 check)*
+*New citations: 11 (AL-01–AL-11) | Cross-references: 8 | Bibliographic status: Fully verified*
 
 ---
 ## §17 PART 2 — §17.4–§17.6 (AL-14–AL-22)

@@ -96,7 +96,7 @@ This section proposes a structured research agenda: five publishable studies tha
 - **Google Scholar citations:** 32,000+. One of the most-cited papers in cross-cultural psychology.
 - **Core contribution:** Foundational distinction between **independent** (Western) and **interdependent** (East Asian, South/Southeast Asian) self-construal. In interdependent self-construal, the self is defined in relation to others and the collective; behavior is calibrated to maintain relational harmony. **Shame in interdependent cultures is other-focused** — it arises from perceived failure in the eyes of significant others — rather than self-focused guilt. This explains why Indonesian learners do not experience general test anxiety but specifically experience anxiety about being *seen* to fail.
 - **Malu connection:** Indonesian *malu* (shame) is a prototypical expression of interdependent shame — not a character flaw or pathology, but a culturally functional signal to maintain face-preserving social coordination. In a language learning context, *malu* activates when error might be visible to others. A **fully private SRS** where errors are never publicly visible removes the primary activating condition for malu-related learning inhibition.
-- **Crispy note:** The theoretical grounding for the privacy-first design decision. Every §8.5 UX recommendation (no public leaderboard by default, private error review) can be justified via Markus & Kitayama (1991) + malu literature.
+- **Curriculum Design Note:** The theoretical grounding for the privacy-first design decision. Every §8.5 UX recommendation (no public leaderboard by default, private error review) can be justified via Markus & Kitayama (1991) + malu literature.
 
 ---
 
@@ -105,7 +105,7 @@ This section proposes a structured research agenda: five publishable studies tha
 - **Design implications:**
     - High PDI: Users expect **explicit expert guidance**. Algorithm transparency (explaining FSRS) satisfies the need for authoritative justification. "The algorithm says review now" is persuasive in a high-PDI culture in a way it may not be in low-PDI cultures.
     - Moderate UAI: Users can tolerate uncertainty in learning outcome but prefer structured paths. JLPT-level framing (clear N5→N4→N3 progression) satisfies this preference. Open-ended "explore at your own pace" designs underperform.
-- **Crispy note:** Hofstede is cited universally in cross-cultural product design literature. Indonesia's profile is well-documented and stable. Reference PDI = 78 in design principles documentation.
+- **Curriculum Design Note:** Hofstede is cited universally in cross-cultural product design literature. Indonesia's profile is well-documented and stable. Reference PDI = 78 in design principles documentation.
 
 ---
 
@@ -134,7 +134,7 @@ This section proposes a structured research agenda: five publishable studies tha
 - **Institutional affiliation:** Erving Goffman — University of California, Berkeley.
 - **Core contribution:** The foundational sociological analysis of **face** — the positive social value a person claims for themselves — and **face-work** — the actions taken to maintain or restore face. Face-threatening acts (FTAs) — acts that damage one's own or another's face — trigger avoidance or repair responses.
 - **In language learning contexts:** Any visible error is a face-threatening act. The learner manages face-threat by avoiding situations where errors are visible (reducing SRS session frequency), by skipping difficult cards (reducing retrieval challenge), or by abandoning the platform entirely. The FSRS platform design should structurally minimize face-threatening events: no public errors, no countdown timers, no visible failure metrics.
-- **Crispy note:** Goffman (1967) + Markus & Kitayama (1991) + Hofstede (2001) is the three-source theoretical framework for all privacy-first, low-anxiety design decisions in Nugget Nihongo.
+- **Curriculum Design Note:** Goffman (1967) + Markus & Kitayama (1991) + Hofstede (2001) is the three-source theoretical framework for all privacy-first, low-anxiety design decisions in Nugget Nihongo.
 
 ---
 
@@ -224,4 +224,4 @@ This section proposes a structured research agenda: five publishable studies tha
 
 ---
 
-*Extracted from §8.11 SECTION8-PWA-v3-FINAL.md by Agent 36 — 3 April 2026 — Corpus v10*
+*Extracted from §8.11 — Canonical Synthesis — Corpus v30*

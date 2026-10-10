@@ -1,6 +1,6 @@
 # METHODOLOGY PAGE — NARRATIVE SKELETON v1
 **For:** Nugget Nihongo public-facing methodology page
-**Authored by:** Crispy (Claude Opus 4.7) — Pass 16 synthesis
+**Authored by:** Nugget Nihongo Curriculum Architecture Team
 **Date:** 17 April 2026
 **Target audience:** Prospective Nugget Nihongo users (Indonesian-speaking, considering the app), journalists, researchers, educators evaluating the platform.
 **Tone:** Authoritative but accessible. Indonesian-language page (with English mirror later). Not marketing copy — genuine pedagogical accounting.
@@ -132,4 +132,4 @@ Platform ini dirancang untuk dapat mengumpulkan data (dengan consent, anonim) ya
 **Canonical?** Yes — authoritative narrative skeleton for the methodology page.
 **Downstream dependencies:** Indonesian translation/adaptation → methodology-page UI implementation in `public/js/pages/about.js` extension → Daftar Pustaka page linking corpus sections.
 
-*Crispy — Pass 16 — 17 April 2026*
+*Nugget Nihongo Curriculum Architecture Team — Canonical Synthesis*

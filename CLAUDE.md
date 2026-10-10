@@ -1,14 +1,14 @@
 # NUGGET NIHONGO — EMPIRICAL SLA RESEARCH REPOSITORY CONTEXT
 **Operational Standards & Architecture Guide**  
-**Corpus Version:** v29 (Klaster III Primary Production: Sektor 10 Pertanian GAP, Sektor 11 Perikanan/Akuakultur, Sektor 13 Industri Kayu: 802+ Unique Citations, 539+ Verified DOIs, 100% Accounted For)  
-**Total Unique Citations:** 802+ (539+ verified DOIs, 100% accounted for, zero pending flags)
+**Corpus Version:** v30 (18-Sector SSW Complete Operationalization: Sektor 06 Bengkel Mobil, Sektor 07 Galangan Kapal, Sektor 08 Aviasi, Sektor 12 Kehutanan, Sektor 18 Perkeretaapian: 807+ Unique Citations, 539+ Verified DOIs, 100% Accounted For)  
+**Total Unique Citations:** 807+ (539+ verified DOIs, 100% accounted for, zero pending flags)
 
 ---
 
 ## 1. Scope & Domain
 
 Research library for the evidence-based Japanese learning platform tailored specifically to Indonesian L1 native speakers.
-- **Scale:** 802+ unique citations across 16 primary corpus sections (§1–§5, §8–§17, §CA), contrastive inventory, 18-sector vocational taxonomy, Prometric CBT exam matrix, and synthesis specifications.
+- **Scale:** 807+ unique citations across 16 primary corpus sections (§1–§5, §8–§17, §CA), contrastive inventory, 18-sector vocational taxonomy, Prometric CBT exam matrix, and synthesis specifications.
 - **Target Audience:** Indonesian adult learners, Specified Skilled Worker (SSW / *Tokutei Ginou*) candidates, and general academic learners.
 - **Pedagogical Alignment:** Empirical Second Language Acquisition (SLA), Processability Theory, High-Variability Phonetic Training (HVPT), Free Spaced Repetition Scheduling (FSRS), and Cognitive Load Theory (CLT).
 
@@ -24,9 +24,9 @@ Research library for the evidence-based Japanese learning platform tailored spec
 | Micro-Session Algorithmic Spec | `blueprint/MICRO-SESSION-ALGORITHMIC-SPEC-v1.md` | 7-minute session formula, 6 card archetypes, dual-track FSRS latency tuning (Jalur C) |
 | Indonesian L1 Diagnostic Inventory | `corpus/sections/contrastive/INDONESIAN-L1-DIAGNOSTIC-INVENTORY-v1.md` | 150-item micro-diagnostic contrastive matrix across 6 interference domains (Jalur A) |
 | Vocational EPA/SSW SLA Corpus | `corpus/sections/vocational/EPA-KAIGO-SSW-WORKPLACE-CORPUS-v1.md` | 42-item atomized pain onomatopoeia matrix, 4-tier Rousai incident escalation protocol, eldercare speech shifts, gemba nihongo safety (Jalur B) |
-| All-Sector SSW Master Taxonomy | `corpus/sections/vocational/ALL-SECTOR-SSW-TAXONOMY-CORPUS-v1.md` | 18-sector Tokutei Ginou operational taxonomy, JAIM 17 manufacturing divisions, JAC 3 construction divisions, Klaster III (Pertanian GAP, Perikanan/Akuakultur, Industri Kayu), Klaster IV (HACCP, Omotenashi 7-daigo, Transportasi 3 segmen & tenko), dan 21 simulasi darurat K3 gemba |
+| All-Sector SSW Master Taxonomy | `corpus/sections/vocational/ALL-SECTOR-SSW-TAXONOMY-CORPUS-v1.md` | 18-sector Tokutei Ginou master taxonomy (100% lengkap seluruh 18 sektor: JAIM 17 divisi, JAC 3 divisi, Klaster I–IV operasional penuh) dan 36 simulasi darurat K3 gemba |
 | Prometric SSW Exam Specification | `corpus/sections/vocational/PROMETRIC-SSW-EXAM-SPECIFICATION-CORPUS-v1.md` | Prometric CBT test matrix, 17 JAIM manufacturing sub-divisions, JAVADA Business Career Kentei L3, JAC 3 divisions, & 4 visa pipelines |
-| Master Bibliography | `corpus/bibliography/MASTER-BIBLIOGRAPHY-FINAL.md` | Canonical bibliography registry (802+ unique entries, v29) |
+| Master Bibliography | `corpus/bibliography/MASTER-BIBLIOGRAPHY-FINAL.md` | Canonical bibliography registry (807+ unique entries, v30 / v23 biblio) |
 | DOI Verification Tracker | `corpus/bibliography/DOI-VERIFICATION-TRACKER.md` | Audit registry of publisher DOIs and verification statuses (100% accounted for) |
 | Repository Index | `INDEX.md` | Comprehensive file and section index |
 | Compass Foundation | `corpus/source-of-truth/compass_artifact.md` | 44 foundational SLA and cognitive psychology citations |
