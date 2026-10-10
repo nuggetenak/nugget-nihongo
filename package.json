@@ -23,7 +23,7 @@
     "build": "node scripts/compile_diagnostics.js && node scripts/build-curriculum-all.js && node scripts/merge-vocab.js && node scripts/merge-grammar.js && node tests/run.js && vite build",
     "build:curriculum": "node scripts/build-curriculum-all.js",
     "compile:diagnostics": "node scripts/compile_diagnostics.js",
-    "test": "node tests/run.js && node tests/test-backend-consolidation.js",
+    "test": "node tests/run.js && node tests/test-backend-consolidation.js && node tests/test-backend-exhaustive-audit.js",
     "validate": "node tests/run.js",
     "dev": "vite",
     "build:vite": "vite build",

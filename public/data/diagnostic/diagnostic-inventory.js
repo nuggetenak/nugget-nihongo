@@ -2,7 +2,7 @@
 // Universal global bundle for browser and service worker ingestion
 var diagnosticInventory = {
   "version": "1.0.0",
-  "generated_at": "2026-10-10T10:34:11.664Z",
+  "generated_at": "2026-10-10T10:45:52.295Z",
   "total_count": 300,
   "l1_contrastive_count": 150,
   "phonology_hvpt_count": 150,
@@ -1124,8 +1124,8 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-051",
       "patterns": [
-        "Kango murni: 冷 ",
-        "✅ 冷蔵庫 (reizouko"
+        "冷蔵庫 (reizouko)",
+        "クルカス (kurukasu)"
       ],
       "note_id": "nuance-cp-l1-051",
       "level": "n5",
@@ -1134,11 +1134,11 @@ var diagnosticInventory = {
       "domain": "Domain III: False Cognates & Wasei-Eigo",
       "category": "III.A: Jebakan Serapan Belanda Indonesia vs. Yamato/Kango Jepang",
       "title": "Kulkas (koelkast)",
-      "stimulus_l1": "❌ クルカス (kurukasu)",
-      "target_form": "Kango murni: 冷 (dingin) + 蔵 (simpan) + 庫 (gudang).",
-      "l1_trap_form": "✅ 冷蔵庫 (reizouko)",
-      "root_cause": "⚠️ Jepang Tidak Kenal 'Kulkas'! Kata kulkas berasal dari bahasa Belanda koelkast. Bahasa Jepang menggunakan kanji murni: 冷蔵庫 (れいぞうこ).",
-      "prescription": "",
+      "stimulus_l1": "Kulkas (koelkast)",
+      "target_form": "冷蔵庫 (reizouko)",
+      "l1_trap_form": "クルカス (kurukasu)",
+      "root_cause": "Kango murni: 冷 (dingin) + 蔵 (simpan) + 庫 (gudang).",
+      "prescription": "⚠️ Jepang Tidak Kenal 'Kulkas'! Kata kulkas berasal dari bahasa Belanda koelkast. Bahasa Jepang menggunakan kanji murni: 冷蔵庫 (れいぞうこ).",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -1146,8 +1146,8 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-052",
       "patterns": [
-        "Kango: 運転 (meng",
-        "✅ 運転手 (untenshu"
+        "運転手 (untenshu) ",
+        "ソピル (sopiru) / "
       ],
       "note_id": "nuance-cp-l1-052",
       "level": "n5",
@@ -1156,11 +1156,11 @@ var diagnosticInventory = {
       "domain": "Domain III: False Cognates & Wasei-Eigo",
       "category": "III.A: Jebakan Serapan Belanda Indonesia vs. Yamato/Kango Jepang",
       "title": "Sopir (chauffeur)",
-      "stimulus_l1": "❌ ソピル (sopiru) / ショーファー",
-      "target_form": "Kango: 運転 (mengemudi) + 手 (orang).",
-      "l1_trap_form": "✅ 運転手 (untenshu) / ドライバー",
-      "root_cause": "⚠️ Sopir Berasal dari Prancis/Belanda! Di Jepang, gunakan istilah formal 運転手 (うんてんしゅ) atau serapan Inggris ドライバー (doraibā).",
-      "prescription": "",
+      "stimulus_l1": "Sopir (chauffeur)",
+      "target_form": "運転手 (untenshu) / ドライバー",
+      "l1_trap_form": "ソピル (sopiru) / ショーファー",
+      "root_cause": "Kango: 運転 (mengemudi) + 手 (orang).",
+      "prescription": "⚠️ Sopir Berasal dari Prancis/Belanda! Di Jepang, gunakan istilah formal 運転手 (うんてんしゅ) atau serapan Inggris ドライバー (doraibā).",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -1168,8 +1168,8 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-053",
       "patterns": [
-        "Kango: 事務 (tuga",
-        "✅ 事務所 (jimusho)"
+        "事務所 (jimusho) /",
+        "カントル (kantoru)"
       ],
       "note_id": "nuance-cp-l1-053",
       "level": "n5",
@@ -1178,11 +1178,11 @@ var diagnosticInventory = {
       "domain": "Domain III: False Cognates & Wasei-Eigo",
       "category": "III.A: Jebakan Serapan Belanda Indonesia vs. Yamato/Kango Jepang",
       "title": "Kantor (kantoor)",
-      "stimulus_l1": "❌ カントル (kantoru)",
-      "target_form": "Kango: 事務 (tugas kantor) + 所 (tempat).",
-      "l1_trap_form": "✅ 事務所 (jimusho) / 会社 (kaisha)",
-      "root_cause": "⚠️ Kantor = Bahasa Belanda! Orang Jepang tidak paham kantoru. Gunakan 事務所 (じむしょ) untuk kantor fisik, atau 会社 (かいしゃ) untuk perusahaan.",
-      "prescription": "",
+      "stimulus_l1": "Kantor (kantoor)",
+      "target_form": "事務所 (jimusho) / 会社 (kaisha)",
+      "l1_trap_form": "カントル (kantoru)",
+      "root_cause": "Kango: 事務 (tugas kantor) + 所 (tempat).",
+      "prescription": "⚠️ Kantor = Bahasa Belanda! Orang Jepang tidak paham kantoru. Gunakan 事務所 (じむしょ) untuk kantor fisik, atau 会社 (かいしゃ) untuk perusahaan.",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -1190,8 +1190,8 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-054",
       "patterns": [
-        "Serapan Inggris",
-        "✅ タオル (taoru)"
+        "タオル (taoru)",
+        "ハンドゥク (handuku)"
       ],
       "note_id": "nuance-cp-l1-054",
       "level": "n5",
@@ -1200,11 +1200,11 @@ var diagnosticInventory = {
       "domain": "Domain III: False Cognates & Wasei-Eigo",
       "category": "III.A: Jebakan Serapan Belanda Indonesia vs. Yamato/Kango Jepang",
       "title": "Handuk (handdoek)",
-      "stimulus_l1": "❌ ハンドゥク (handuku)",
-      "target_form": "Serapan Inggris: towel.",
-      "l1_trap_form": "✅ タオル (taoru)",
-      "root_cause": "⚠️ Gunakan Taoru! Handuk berasal dari bahasa Belanda handdoek. Jepang menyerap bahasa Inggris towel $\\rightarrow$ タオル.",
-      "prescription": "",
+      "stimulus_l1": "Handuk (handdoek)",
+      "target_form": "タオル (taoru)",
+      "l1_trap_form": "ハンドゥク (handuku)",
+      "root_cause": "Serapan Inggris: towel.",
+      "prescription": "⚠️ Gunakan Taoru! Handuk berasal dari bahasa Belanda handdoek. Jepang menyerap bahasa Inggris towel $\\rightarrow$ タオル.",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -1212,8 +1212,8 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-055",
       "patterns": [
-        "Serapan Inggris",
-        "✅ ガソリン (gasorin"
+        "ガソリン (gasorin)",
+        "ベンシン (benshin)"
       ],
       "note_id": "nuance-cp-l1-055",
       "level": "n5",
@@ -1222,11 +1222,11 @@ var diagnosticInventory = {
       "domain": "Domain III: False Cognates & Wasei-Eigo",
       "category": "III.A: Jebakan Serapan Belanda Indonesia vs. Yamato/Kango Jepang",
       "title": "Bensin (benzine)",
-      "stimulus_l1": "❌ ベンシン (benshin)",
-      "target_form": "Serapan Inggris: gasoline. Tempat pom bensin = ガソリンスタンド (gasorin sutando).",
-      "l1_trap_form": "✅ ガソリン (gasorin)",
-      "root_cause": "⚠️ Bensin = Belanda (benzine)! Di Jepang gunakan serapan Amerika: ガソリン (gasorin).",
-      "prescription": "",
+      "stimulus_l1": "Bensin (benzine)",
+      "target_form": "ガソリン (gasorin)",
+      "l1_trap_form": "ベンシン (benshin)",
+      "root_cause": "Serapan Inggris: gasoline. Tempat pom bensin = ガソリンスタンド (gasorin sutando).",
+      "prescription": "⚠️ Bensin = Belanda (benzine)! Di Jepang gunakan serapan Amerika: ガソリン (gasorin).",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -1234,8 +1234,8 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-056",
       "patterns": [
-        "Serapan Inggris",
-        "✅ マフラー (mafurā)"
+        "マフラー (mafurā)",
+        "クナルポット (kunarup"
       ],
       "note_id": "nuance-cp-l1-056",
       "level": "n5",
@@ -1244,11 +1244,11 @@ var diagnosticInventory = {
       "domain": "Domain III: False Cognates & Wasei-Eigo",
       "category": "III.A: Jebakan Serapan Belanda Indonesia vs. Yamato/Kango Jepang",
       "title": "Knalpot (knalpot)",
-      "stimulus_l1": "❌ クナルポット (kunarupotto)",
-      "target_form": "Serapan Inggris: muffler.",
-      "l1_trap_form": "✅ マフラー (mafurā)",
-      "root_cause": "⚠️ Knalpot Tidak Ada di Jepang! Knalpot adalah bahasa Belanda murni. Bahasa Jepang memakai serapan Inggris: マフラー (mafurā).",
-      "prescription": "",
+      "stimulus_l1": "Knalpot (knalpot)",
+      "target_form": "マフラー (mafurā)",
+      "l1_trap_form": "クナルポット (kunarupotto)",
+      "root_cause": "Serapan Inggris: muffler.",
+      "prescription": "⚠️ Knalpot Tidak Ada di Jepang! Knalpot adalah bahasa Belanda murni. Bahasa Jepang memakai serapan Inggris: マフラー (mafurā).",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -1256,8 +1256,8 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-057",
       "patterns": [
-        "Wasei-eigo: bac",
-        "✅ バックミラー (bakku"
+        "バックミラー (bakku m",
+        "スピオン (supion)"
       ],
       "note_id": "nuance-cp-l1-057",
       "level": "n5",
@@ -1266,11 +1266,11 @@ var diagnosticInventory = {
       "domain": "Domain III: False Cognates & Wasei-Eigo",
       "category": "III.A: Jebakan Serapan Belanda Indonesia vs. Yamato/Kango Jepang",
       "title": "Spion (spion = mata-mata)",
-      "stimulus_l1": "❌ スピオン (supion)",
-      "target_form": "Wasei-eigo: back mirror (kaca spion tengah) / side mirror (spion samping).",
-      "l1_trap_form": "✅ バックミラー (bakku mirā) / サイドミラー",
-      "root_cause": "⚠️ Spion Bahasa Belanda = Mata-mata! Di Jepang, kaca spion kendaraan disebut サイドミラー (samping) atau バックミラー (tengah).",
-      "prescription": "",
+      "stimulus_l1": "Spion (spion = mata-mata)",
+      "target_form": "バックミラー (bakku mirā) / サイドミラー",
+      "l1_trap_form": "スピオン (supion)",
+      "root_cause": "Wasei-eigo: back mirror (kaca spion tengah) / side mirror (spion samping).",
+      "prescription": "⚠️ Spion Bahasa Belanda = Mata-mata! Di Jepang, kaca spion kendaraan disebut サイドミラー (samping) atau バックミラー (tengah).",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -1278,8 +1278,8 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-058",
       "patterns": [
-        "Serapan Inggris",
-        "✅ スイッチ (suitchi"
+        "スイッチ (suitchi)",
+        "サクラル (sakuraru)"
       ],
       "note_id": "nuance-cp-l1-058",
       "level": "n5",
@@ -1288,11 +1288,11 @@ var diagnosticInventory = {
       "domain": "Domain III: False Cognates & Wasei-Eigo",
       "category": "III.A: Jebakan Serapan Belanda Indonesia vs. Yamato/Kango Jepang",
       "title": "Saklar (schakelaar)",
-      "stimulus_l1": "❌ サクラル (sakuraru)",
-      "target_form": "Serapan Inggris: switch.",
-      "l1_trap_form": "✅ スイッチ (suitchi)",
-      "root_cause": "⚠️ Gunakan Suitchi! Saklar adalah kata Belanda schakelaar. Jepang memakai スイッチ (suitchi).",
-      "prescription": "",
+      "stimulus_l1": "Saklar (schakelaar)",
+      "target_form": "スイッチ (suitchi)",
+      "l1_trap_form": "サクラル (sakuraru)",
+      "root_cause": "Serapan Inggris: switch.",
+      "prescription": "⚠️ Gunakan Suitchi! Saklar adalah kata Belanda schakelaar. Jepang memakai スイッチ (suitchi).",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -1300,8 +1300,8 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-059",
       "patterns": [
-        "Kango: 薬 (obat)",
-        "✅ 薬局 (yakkyoku)"
+        "薬局 (yakkyoku)",
+        "アポテク (apoteku)"
       ],
       "note_id": "nuance-cp-l1-059",
       "level": "n5",
@@ -1310,11 +1310,11 @@ var diagnosticInventory = {
       "domain": "Domain III: False Cognates & Wasei-Eigo",
       "category": "III.A: Jebakan Serapan Belanda Indonesia vs. Yamato/Kango Jepang",
       "title": "Apotek (apotheek)",
-      "stimulus_l1": "❌ アポテク (apoteku)",
-      "target_form": "Kango: 薬 (obat) + 局 (biro/kantor).",
-      "l1_trap_form": "✅ 薬局 (yakkyoku)",
-      "root_cause": "⚠️ Apotek = Kango 薬局! Orang Jepang membeli obat di 薬局 (やっきょく) atau ドラッグストア (doraggu sutoa).",
-      "prescription": "",
+      "stimulus_l1": "Apotek (apotheek)",
+      "target_form": "薬局 (yakkyoku)",
+      "l1_trap_form": "アポテク (apoteku)",
+      "root_cause": "Kango: 薬 (obat) + 局 (biro/kantor).",
+      "prescription": "⚠️ Apotek = Kango 薬局! Orang Jepang membeli obat di 薬局 (やっきょく) atau ドラッグストア (doraggu sutoa).",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -1322,8 +1322,8 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-060",
       "patterns": [
-        "Serapan Inggris",
-        "✅ トイレ (toire) /"
+        "トイレ (toire) / お",
+        "ワーセー (wāsē)"
       ],
       "note_id": "nuance-cp-l1-060",
       "level": "n5",
@@ -1332,11 +1332,11 @@ var diagnosticInventory = {
       "domain": "Domain III: False Cognates & Wasei-Eigo",
       "category": "III.A: Jebakan Serapan Belanda Indonesia vs. Yamato/Kango Jepang",
       "title": "Kamar Mandi / WC (watercloset)",
-      "stimulus_l1": "❌ ワーセー (wāsē)",
-      "target_form": "Serapan Inggris: toilet $\\rightarrow$ トイレ. Formal: お手洗い.",
-      "l1_trap_form": "✅ トイレ (toire) / お手洗い (otearai)",
-      "root_cause": "💡 WC jarang diucapkan lisan. Gunakan トイレ atau kata sopan お手洗い (おてあらい).",
-      "prescription": "",
+      "stimulus_l1": "Kamar Mandi / WC (watercloset)",
+      "target_form": "トイレ (toire) / お手洗い (otearai)",
+      "l1_trap_form": "ワーセー (wāsē)",
+      "root_cause": "Serapan Inggris: toilet $\\rightarrow$ トイレ. Formal: お手洗い.",
+      "prescription": "💡 WC jarang diucapkan lisan. Gunakan トイレ atau kata sopan お手洗い (おてあらい).",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -1344,8 +1344,8 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-061",
       "patterns": [
-        "Tiket kereta = ",
-        "✅ 切符 (kippu) / "
+        "切符 (kippu) / チケ",
+        "カルチス (karuchisu"
       ],
       "note_id": "nuance-cp-l1-061",
       "level": "n5",
@@ -1354,11 +1354,11 @@ var diagnosticInventory = {
       "domain": "Domain III: False Cognates & Wasei-Eigo",
       "category": "III.A: Jebakan Serapan Belanda Indonesia vs. Yamato/Kango Jepang",
       "title": "Karcis / Tiket (kaartjes)",
-      "stimulus_l1": "❌ カルチス (karuchisu)",
-      "target_form": "Tiket kereta = 切符 (きっぷ); tiket konser/pesawat = チケット.",
-      "l1_trap_form": "✅ 切符 (kippu) / チケット (chiketto)",
-      "root_cause": "⚠️ Karcis = Belanda kaartjes! Tiket transportasi kereta di Jepang selalu disebut 切符 (きっぷ).",
-      "prescription": "",
+      "stimulus_l1": "Karcis / Tiket (kaartjes)",
+      "target_form": "切符 (kippu) / チケット (chiketto)",
+      "l1_trap_form": "カルチス (karuchisu)",
+      "root_cause": "Tiket kereta = 切符 (きっぷ); tiket konser/pesawat = チケット.",
+      "prescription": "⚠️ Karcis = Belanda kaartjes! Tiket transportasi kereta di Jepang selalu disebut 切符 (きっぷ).",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -1366,8 +1366,8 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-062",
       "patterns": [
-        "Serapan Inggris",
-        "✅ スーツケース (sūtsu"
+        "スーツケース (sūtsukē",
+        "コペル (koperu)"
       ],
       "note_id": "nuance-cp-l1-062",
       "level": "n5",
@@ -1376,11 +1376,11 @@ var diagnosticInventory = {
       "domain": "Domain III: False Cognates & Wasei-Eigo",
       "category": "III.A: Jebakan Serapan Belanda Indonesia vs. Yamato/Kango Jepang",
       "title": "Koper (koffer)",
-      "stimulus_l1": "❌ コペル (koperu)",
-      "target_form": "Serapan Inggris: suitcase.",
-      "l1_trap_form": "✅ スーツケース (sūtsukēsu)",
-      "root_cause": "⚠️ Koper = Belanda koffer! Di Jepang barang bawaan perjalanan disebut スーツケース (sūtsukēsu).",
-      "prescription": "",
+      "stimulus_l1": "Koper (koffer)",
+      "target_form": "スーツケース (sūtsukēsu)",
+      "l1_trap_form": "コペル (koperu)",
+      "root_cause": "Serapan Inggris: suitcase.",
+      "prescription": "⚠️ Koper = Belanda koffer! Di Jepang barang bawaan perjalanan disebut スーツケース (sūtsukēsu).",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -1388,8 +1388,8 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-063",
       "patterns": [
-        "Kango: 無 (tanpa",
-        "✅ 無料 (muryou) /"
+        "無料 (muryou) / タ",
+        "グラティス (guratisu"
       ],
       "note_id": "nuance-cp-l1-063",
       "level": "n5",
@@ -1398,11 +1398,11 @@ var diagnosticInventory = {
       "domain": "Domain III: False Cognates & Wasei-Eigo",
       "category": "III.A: Jebakan Serapan Belanda Indonesia vs. Yamato/Kango Jepang",
       "title": "Gratis (gratis)",
-      "stimulus_l1": "❌ グラティス (guratisu)",
-      "target_form": "Kango: 無 (tanpa) + 料 (biaya). Ragam santai: ただ.",
-      "l1_trap_form": "✅ 無料 (muryou) / タダ (tada)",
-      "root_cause": "⚠️ Gratis = Gratis (Latin/Belanda)! Di Jepang gunakan 無料 (むりょう).",
-      "prescription": "",
+      "stimulus_l1": "Gratis (gratis)",
+      "target_form": "無料 (muryou) / タダ (tada)",
+      "l1_trap_form": "グラティス (guratisu)",
+      "root_cause": "Kango: 無 (tanpa) + 料 (biaya). Ragam santai: ただ.",
+      "prescription": "⚠️ Gratis = Gratis (Latin/Belanda)! Di Jepang gunakan 無料 (むりょう).",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -1410,8 +1410,8 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-064",
       "patterns": [
-        "Kango: 患 (derit",
-        "✅ 患者 (kanja)"
+        "患者 (kanja)",
+        "パシエン (pashien)"
       ],
       "note_id": "nuance-cp-l1-064",
       "level": "n5",
@@ -1420,11 +1420,11 @@ var diagnosticInventory = {
       "domain": "Domain III: False Cognates & Wasei-Eigo",
       "category": "III.A: Jebakan Serapan Belanda Indonesia vs. Yamato/Kango Jepang",
       "title": "Pasien (patiënt)",
-      "stimulus_l1": "❌ パシエン (pashien)",
-      "target_form": "Kango: 患 (derita) + 者 (orang). Dalam konteks Kaigo: 利用者 (riyousha).",
-      "l1_trap_form": "✅ 患者 (kanja)",
-      "root_cause": "⚠️ Pasien Medis = 患者 (かんじゃ)! Di fasilitas lansia/panti jompo, gunakan sebutan hormat 利用者様 (りようしゃさま).",
-      "prescription": "",
+      "stimulus_l1": "Pasien (patiënt)",
+      "target_form": "患者 (kanja)",
+      "l1_trap_form": "パシエン (pashien)",
+      "root_cause": "Kango: 患 (derita) + 者 (orang). Dalam konteks Kaigo: 利用者 (riyousha).",
+      "prescription": "⚠️ Pasien Medis = 患者 (かんじゃ)! Di fasilitas lansia/panti jompo, gunakan sebutan hormat 利用者様 (りようしゃさま).",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -1432,8 +1432,8 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-065",
       "patterns": [
-        "Kango: 処方 (rese",
-        "✅ 処方箋 (shohouse"
+        "処方箋 (shohousen)",
+        "レセプ (resepu)"
       ],
       "note_id": "nuance-cp-l1-065",
       "level": "n5",
@@ -1442,11 +1442,11 @@ var diagnosticInventory = {
       "domain": "Domain III: False Cognates & Wasei-Eigo",
       "category": "III.A: Jebakan Serapan Belanda Indonesia vs. Yamato/Kango Jepang",
       "title": "Resep Dokter (recept)",
-      "stimulus_l1": "❌ レセプ (resepu)",
-      "target_form": "Kango: 処方 (resep/penanganan) + 箋 (lembaran kertas). Catatan: kata レセプト di Jepang merujuk klaim asuransi medis bulanan!",
-      "l1_trap_form": "✅ 処方箋 (shohousen)",
-      "root_cause": "⚠️ Awas Tertukar di Rumah Sakit! Resep obat untuk pasien adalah 処方箋 (しょほうせん). Kata reseputo di Jepang berarti klaim biaya asuransi ke dinas kesehatan!",
-      "prescription": "",
+      "stimulus_l1": "Resep Dokter (recept)",
+      "target_form": "処方箋 (shohousen)",
+      "l1_trap_form": "レセプ (resepu)",
+      "root_cause": "Kango: 処方 (resep/penanganan) + 箋 (lembaran kertas). Catatan: kata レセプト di Jepang merujuk klaim asuransi medis bulanan!",
+      "prescription": "⚠️ Awas Tertukar di Rumah Sakit! Resep obat untuk pasien adalah 処方箋 (しょほうせん). Kata reseputo di Jepang berarti klaim biaya asuransi ke dinas kesehatan!",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -1454,7 +1454,7 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-066",
       "patterns": [
-        "⚠️ Manshon Buka",
+        "Apartemen beton",
         "Mengira rumah m"
       ],
       "note_id": "nuance-cp-l1-066",
@@ -1464,11 +1464,11 @@ var diagnosticInventory = {
       "domain": "Domain III: False Cognates & Wasei-Eigo",
       "category": "III.B: Wasei-Eigo (Jepang Buatan) yang Menyesatkan Penutur Indonesia",
       "title": "マンション (manshon)",
-      "stimulus_l1": "Apartemen beton / kondominium modern standar kelas menengah.",
-      "target_form": "⚠️ Manshon Bukan Rumah Mewah! Di Jepang, manshon adalah apartemen struktur beton bertulang (RC) biasa. Rumah mewah disebut 豪邸 (goutei).",
+      "stimulus_l1": "Mengira rumah mewah gedung bertingkat (mansion sultan).",
+      "target_form": "Apartemen beton / kondominium modern standar kelas menengah.",
       "l1_trap_form": "Mengira rumah mewah gedung bertingkat (mansion sultan).",
-      "root_cause": "",
-      "prescription": "",
+      "root_cause": "Mengira rumah mewah gedung bertingkat (mansion sultan).",
+      "prescription": "⚠️ Manshon Bukan Rumah Mewah! Di Jepang, manshon adalah apartemen struktur beton bertulang (RC) biasa. Rumah mewah disebut 豪邸 (goutei).",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -1476,7 +1476,7 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-067",
       "patterns": [
-        "⚠️ Apāto = Ruma",
+        "Rumah susun kay",
         "Mengira apartem"
       ],
       "note_id": "nuance-cp-l1-067",
@@ -1486,11 +1486,11 @@ var diagnosticInventory = {
       "domain": "Domain III: False Cognates & Wasei-Eigo",
       "category": "III.B: Wasei-Eigo (Jepang Buatan) yang Menyesatkan Penutur Indonesia",
       "title": "アパート (apāto)",
-      "stimulus_l1": "Rumah susun kayu/baja ringan bertarif murah, dinding tipis.",
-      "target_form": "⚠️ Apāto = Rumah Susun Sederhana! Di Jepang, apāto terbuat dari kayu/baja ringan dengan peredam suara minim dan harga sewa paling murah.",
+      "stimulus_l1": "Mengira apartemen modern bertingkat tinggi.",
+      "target_form": "Rumah susun kayu/baja ringan bertarif murah, dinding tipis.",
       "l1_trap_form": "Mengira apartemen modern bertingkat tinggi.",
-      "root_cause": "",
-      "prescription": "",
+      "root_cause": "Mengira apartemen modern bertingkat tinggi.",
+      "prescription": "⚠️ Apāto = Rumah Susun Sederhana! Di Jepang, apāto terbuat dari kayu/baja ringan dengan peredam suara minim dan harga sewa paling murah.",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -1498,7 +1498,7 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-068",
       "patterns": [
-        "⚠️ Kanningu = M",
+        "Mencontek saat ",
         "Mengira sifat l"
       ],
       "note_id": "nuance-cp-l1-068",
@@ -1508,11 +1508,11 @@ var diagnosticInventory = {
       "domain": "Domain III: False Cognates & Wasei-Eigo",
       "category": "III.B: Wasei-Eigo (Jepang Buatan) yang Menyesatkan Penutur Indonesia",
       "title": "カンニング (kanningu)",
-      "stimulus_l1": "Mencontek saat ujian (tindakan curang kriminal akademik).",
-      "target_form": "⚠️ Kanningu = MENCONTEK! Berasal dari kata Inggris cunning, tetapi di Jepang HANYA berarti perbuatan curang mencontek dalam ujian.",
+      "stimulus_l1": "Mengira sifat licik, cerdik, atau pintar (cunning bahasa Inggris).",
+      "target_form": "Mencontek saat ujian (tindakan curang kriminal akademik).",
       "l1_trap_form": "Mengira sifat licik, cerdik, atau pintar (cunning bahasa Inggris).",
-      "root_cause": "",
-      "prescription": "",
+      "root_cause": "Mengira sifat licik, cerdik, atau pintar (cunning bahasa Inggris).",
+      "prescription": "⚠️ Kanningu = MENCONTEK! Berasal dari kata Inggris cunning, tetapi di Jepang HANYA berarti perbuatan curang mencontek dalam ujian.",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -1520,7 +1520,7 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-069",
       "patterns": [
-        "⚠️ Sukinshippu ",
+        "Sentuhan fisik ",
         "Mengira masalah"
       ],
       "note_id": "nuance-cp-l1-069",
@@ -1530,11 +1530,11 @@ var diagnosticInventory = {
       "domain": "Domain III: False Cognates & Wasei-Eigo",
       "category": "III.B: Wasei-Eigo (Jepang Buatan) yang Menyesatkan Penutur Indonesia",
       "title": "スキンシップ (sukinshippu)",
-      "stimulus_l1": "Sentuhan fisik kasih sayang (rangkulan, pelukan orang tua-anak, gandengan tangan).",
-      "target_form": "⚠️ Sukinshippu = Bahasa Inggris Buatan Jepang! Artinya sentuhan fisik keintiman/kehangatan emosional (seperti mengusap kepala anak).",
+      "stimulus_l1": "Mengira masalah kulit, penyakit kulit, atau skincare.",
+      "target_form": "Sentuhan fisik kasih sayang (rangkulan, pelukan orang tua-anak, gandengan tangan).",
       "l1_trap_form": "Mengira masalah kulit, penyakit kulit, atau skincare.",
-      "root_cause": "",
-      "prescription": "",
+      "root_cause": "Mengira masalah kulit, penyakit kulit, atau skincare.",
+      "prescription": "⚠️ Sukinshippu = Bahasa Inggris Buatan Jepang! Artinya sentuhan fisik keintiman/kehangatan emosional (seperti mengusap kepala anak).",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -1542,7 +1542,7 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-070",
       "patterns": [
-        "💡 Arubaito = K",
+        "Kerja paruh wak",
         "Berasal dari Je"
       ],
       "note_id": "nuance-cp-l1-070",
@@ -1552,11 +1552,11 @@ var diagnosticInventory = {
       "domain": "Domain III: False Cognates & Wasei-Eigo",
       "category": "III.B: Wasei-Eigo (Jepang Buatan) yang Menyesatkan Penutur Indonesia",
       "title": "アルバイト (arubaito)",
-      "stimulus_l1": "Kerja paruh waktu / sampingan (part-time job).",
-      "target_form": "💡 Arubaito = Kerja Paruh Waktu! Diserap dari bahasa Jerman Arbeit. Pekerja tetap penuh waktu disebut 正社員 (seishain).",
+      "stimulus_l1": "Berasal dari Jerman Arbeit (bekerja umum). Mengira kerja kantoran permanen.",
+      "target_form": "Kerja paruh waktu / sampingan (part-time job).",
       "l1_trap_form": "Berasal dari Jerman Arbeit (bekerja umum). Mengira kerja kantoran permanen.",
-      "root_cause": "",
-      "prescription": "",
+      "root_cause": "Berasal dari Jerman Arbeit (bekerja umum). Mengira kerja kantoran permanen.",
+      "prescription": "💡 Arubaito = Kerja Paruh Waktu! Diserap dari bahasa Jerman Arbeit. Pekerja tetap penuh waktu disebut 正社員 (seishain).",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -1564,7 +1564,7 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-071",
       "patterns": [
-        "⚠️ Laptop di Je",
+        "Laptop / komput",
         "Mengira kompute"
       ],
       "note_id": "nuance-cp-l1-071",
@@ -1574,11 +1574,11 @@ var diagnosticInventory = {
       "domain": "Domain III: False Cognates & Wasei-Eigo",
       "category": "III.B: Wasei-Eigo (Jepang Buatan) yang Menyesatkan Penutur Indonesia",
       "title": "ノートパソコン (nōto-pasokon)",
-      "stimulus_l1": "Laptop / komputer jinjing.",
-      "target_form": "⚠️ Laptop di Jepang = Pasokon! Di Jepang jangan katakan 'laptop', orang lokal menyebutnya ノートパソコン (nōto-pasokon) atau ringkasnya パソコン.",
+      "stimulus_l1": "Mengira komputer PC di atas meja berbentuk buku tulis.",
+      "target_form": "Laptop / komputer jinjing.",
       "l1_trap_form": "Mengira komputer PC di atas meja berbentuk buku tulis.",
-      "root_cause": "",
-      "prescription": "",
+      "root_cause": "Mengira komputer PC di atas meja berbentuk buku tulis.",
+      "prescription": "⚠️ Laptop di Jepang = Pasokon! Di Jepang jangan katakan 'laptop', orang lokal menyebutnya ノートパソコン (nōto-pasokon) atau ringkasnya パソコン.",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -1586,7 +1586,7 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-072",
       "patterns": [
-        "⚠️ Kurēmu = Kom",
+        "Komplain / kelu",
         "Mengira klaim a"
       ],
       "note_id": "nuance-cp-l1-072",
@@ -1596,11 +1596,11 @@ var diagnosticInventory = {
       "domain": "Domain III: False Cognates & Wasei-Eigo",
       "category": "III.B: Wasei-Eigo (Jepang Buatan) yang Menyesatkan Penutur Indonesia",
       "title": "クレーム (kurēmu)",
-      "stimulus_l1": "Komplain / keluhan pelanggan atas barang cacat atau pelayanan buruk.",
-      "target_form": "⚠️ Kurēmu = Komplain Pelanggan! Di Jepang, kurēmu o tsukeru berarti melayangkan komplain marah. Klaim asuransi disebut 請求 (seikyuu).",
+      "stimulus_l1": "Mengira klaim asuransi atau pengakuan hak cipta (claim).",
+      "target_form": "Komplain / keluhan pelanggan atas barang cacat atau pelayanan buruk.",
       "l1_trap_form": "Mengira klaim asuransi atau pengakuan hak cipta (claim).",
-      "root_cause": "",
-      "prescription": "",
+      "root_cause": "Mengira klaim asuransi atau pengakuan hak cipta (claim).",
+      "prescription": "⚠️ Kurēmu = Komplain Pelanggan! Di Jepang, kurēmu o tsukeru berarti melayangkan komplain marah. Klaim asuransi disebut 請求 (seikyuu).",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -1608,7 +1608,7 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-073",
       "patterns": [
-        "💡 Baikingu = R",
+        "Restoran prasma",
         "Mengira suku pe"
       ],
       "note_id": "nuance-cp-l1-073",
@@ -1618,11 +1618,11 @@ var diagnosticInventory = {
       "domain": "Domain III: False Cognates & Wasei-Eigo",
       "category": "III.B: Wasei-Eigo (Jepang Buatan) yang Menyesatkan Penutur Indonesia",
       "title": "バイキング (baikingu)",
-      "stimulus_l1": "Restoran prasmanan makan sepuasnya (all-you-can-eat buffet).",
-      "target_form": "💡 Baikingu = Restoran Buffet! Diambil dari nama restoran Imperial Viking di Hotel Teikoku tahun 1958. Sekarang berarti buffet makan sepuasnya (食べ放題).",
+      "stimulus_l1": "Mengira suku penjelajah laut Skandinavia (Viking).",
+      "target_form": "Restoran prasmanan makan sepuasnya (all-you-can-eat buffet).",
       "l1_trap_form": "Mengira suku penjelajah laut Skandinavia (Viking).",
-      "root_cause": "",
-      "prescription": "",
+      "root_cause": "Mengira suku penjelajah laut Skandinavia (Viking).",
+      "prescription": "💡 Baikingu = Restoran Buffet! Diambil dari nama restoran Imperial Viking di Hotel Teikoku tahun 1958. Sekarang berarti buffet makan sepuasnya (食べ放題).",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -1630,7 +1630,7 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-074",
       "patterns": [
-        "💡 Faito = Sema",
+        "Ucapan penyeman",
         "Mengira ajakan "
       ],
       "note_id": "nuance-cp-l1-074",
@@ -1640,11 +1640,11 @@ var diagnosticInventory = {
       "domain": "Domain III: False Cognates & Wasei-Eigo",
       "category": "III.B: Wasei-Eigo (Jepang Buatan) yang Menyesatkan Penutur Indonesia",
       "title": "ファイト (faito)",
-      "stimulus_l1": "Ucapan penyemangat: \"Semangat ya! Kamu pasti bisa!",
-      "target_form": "💡 Faito = Semangat! Jangan kaget jika disoraki faito!, itu sinonim dari ganbatte!, bukan tantangan berkelahi.",
+      "stimulus_l1": "Mengira ajakan berkelahi fisik (fight / baku hantam).",
+      "target_form": "Ucapan penyemangat: \"Semangat ya! Kamu pasti bisa!",
       "l1_trap_form": "Mengira ajakan berkelahi fisik (fight / baku hantam).",
-      "root_cause": "",
-      "prescription": "",
+      "root_cause": "Mengira ajakan berkelahi fisik (fight / baku hantam).",
+      "prescription": "💡 Faito = Semangat! Jangan kaget jika disoraki faito!, itu sinonim dari ganbatte!, bukan tantangan berkelahi.",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -1652,7 +1652,7 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-075",
       "patterns": [
-        "💡 Morning Call",
+        "Panggilan telep",
         "Mengira panggil"
       ],
       "note_id": "nuance-cp-l1-075",
@@ -1662,11 +1662,11 @@ var diagnosticInventory = {
       "domain": "Domain III: False Cognates & Wasei-Eigo",
       "category": "III.B: Wasei-Eigo (Jepang Buatan) yang Menyesatkan Penutur Indonesia",
       "title": "モーニングコール (mōningu kōru)",
-      "stimulus_l1": "Panggilan telepon bangun tidur dari resepsionis hotel (wake-up call).",
-      "target_form": "💡 Morning Call = Wake-up call hotel! Istilah khas perhotelan Jepang untuk meminta dibangunkan via telepon kamar.",
+      "stimulus_l1": "Mengira panggilan kerja darurat di pagi hari.",
+      "target_form": "Panggilan telepon bangun tidur dari resepsionis hotel (wake-up call).",
       "l1_trap_form": "Mengira panggilan kerja darurat di pagi hari.",
-      "root_cause": "",
-      "prescription": "",
+      "root_cause": "Mengira panggilan kerja darurat di pagi hari.",
+      "prescription": "💡 Morning Call = Wake-up call hotel! Istilah khas perhotelan Jepang untuk meminta dibangunkan via telepon kamar.",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -1674,7 +1674,7 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-076",
       "patterns": [
-        "⚠️ Tenshon ga t",
+        "Tingkat antusia",
         "Mengira stres, "
       ],
       "note_id": "nuance-cp-l1-076",
@@ -1684,19 +1684,19 @@ var diagnosticInventory = {
       "domain": "Domain III: False Cognates & Wasei-Eigo",
       "category": "III.B: Wasei-Eigo (Jepang Buatan) yang Menyesatkan Penutur Indonesia",
       "title": "テンション (tenshon)",
-      "stimulus_l1": "Tingkat antusiasme/kegembiraan (tension ga takai = sangat ceria dan bersemangat).",
-      "target_form": "⚠️ Tenshon ga takai = Sangat Semangat! Di Jepang tenshon merujuk pada energi keriangan. Jika situasi stres/tegang, orang Jepang memakai kata 緊張 (kinchou) atau ストレス.",
+      "stimulus_l1": "Mengira stres, darah tinggi, atau situasi menegangkan (tension tegang).",
+      "target_form": "Tingkat antusiasme/kegembiraan (tension ga takai = sangat ceria dan bersemangat).",
       "l1_trap_form": "Mengira stres, darah tinggi, atau situasi menegangkan (tension tegang).",
-      "root_cause": "",
-      "prescription": "",
+      "root_cause": "Mengira stres, darah tinggi, atau situasi menegangkan (tension tegang).",
+      "prescription": "⚠️ Tenshon ga takai = Sangat Semangat! Di Jepang tenshon merujuk pada energi keriangan. Jika situasi stres/tegang, orang Jepang memakai kata 緊張 (kinchou) atau ストレス.",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
-      "l1_substratum": "general_indonesian"
+      "l1_substratum": "batak_eastern"
     },
     {
       "id": "cp-l1-077",
       "patterns": [
-        "💡 Paper Driver",
+        "Orang yang puny",
         "Mengira sopir p"
       ],
       "note_id": "nuance-cp-l1-077",
@@ -1706,11 +1706,11 @@ var diagnosticInventory = {
       "domain": "Domain III: False Cognates & Wasei-Eigo",
       "category": "III.B: Wasei-Eigo (Jepang Buatan) yang Menyesatkan Penutur Indonesia",
       "title": "ペーパードライバー (pēpā doraibā)",
-      "stimulus_l1": "Orang yang punya SIM tetapi tidak pernah menyetir mobil sama sekali.",
-      "target_form": "💡 Paper Driver! Istilah unik untuk orang yang SIM-nya hanya tidur di dalam dompet (hanya berwujud kertas/kartu).",
+      "stimulus_l1": "Mengira sopir pengangkut kertas.",
+      "target_form": "Orang yang punya SIM tetapi tidak pernah menyetir mobil sama sekali.",
       "l1_trap_form": "Mengira sopir pengangkut kertas.",
-      "root_cause": "",
-      "prescription": "",
+      "root_cause": "Mengira sopir pengangkut kertas.",
+      "prescription": "💡 Paper Driver! Istilah unik untuk orang yang SIM-nya hanya tidur di dalam dompet (hanya berwujud kertas/kartu).",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -1718,7 +1718,7 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-078",
       "patterns": [
-        "💡 Ankēto = Kue",
+        "Kuesioner surve",
         "Mengira tiket a"
       ],
       "note_id": "nuance-cp-l1-078",
@@ -1728,11 +1728,11 @@ var diagnosticInventory = {
       "domain": "Domain III: False Cognates & Wasei-Eigo",
       "category": "III.B: Wasei-Eigo (Jepang Buatan) yang Menyesatkan Penutur Indonesia",
       "title": "アンケート (ankēto)",
-      "stimulus_l1": "Kuesioner survei / formulir jajak pendapat (serapan Prancis enquête).",
-      "target_form": "💡 Ankēto = Kuesioner! Berasal dari bahasa Prancis. Sering muncul di toko atau hotel untuk meminta ulasan kepuasan pelanggan.",
+      "stimulus_l1": "Mengira tiket angket / undian berhadiah.",
+      "target_form": "Kuesioner survei / formulir jajak pendapat (serapan Prancis enquête).",
       "l1_trap_form": "Mengira tiket angket / undian berhadiah.",
-      "root_cause": "",
-      "prescription": "",
+      "root_cause": "Mengira tiket angket / undian berhadiah.",
+      "prescription": "💡 Ankēto = Kuesioner! Berasal dari bahasa Prancis. Sering muncul di toko atau hotel untuk meminta ulasan kepuasan pelanggan.",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -1740,7 +1740,7 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-079",
       "patterns": [
-        "💡 Tarento = Ar",
+        "Selebriti TV / ",
         "Mengira bakat k"
       ],
       "note_id": "nuance-cp-l1-079",
@@ -1750,11 +1750,11 @@ var diagnosticInventory = {
       "domain": "Domain III: False Cognates & Wasei-Eigo",
       "category": "III.B: Wasei-Eigo (Jepang Buatan) yang Menyesatkan Penutur Indonesia",
       "title": "タレント (tarento)",
-      "stimulus_l1": "Selebriti TV / artis pembawa acara hiburan reguler.",
-      "target_form": "💡 Tarento = Artis TV! Di Jepang merujuk pada profesi figur publik yang sering muncul di acara variety show televisi.",
+      "stimulus_l1": "Mengira bakat kemampuan bawaan lahir (talent).",
+      "target_form": "Selebriti TV / artis pembawa acara hiburan reguler.",
       "l1_trap_form": "Mengira bakat kemampuan bawaan lahir (talent).",
-      "root_cause": "",
-      "prescription": "",
+      "root_cause": "Mengira bakat kemampuan bawaan lahir (talent).",
+      "prescription": "💡 Tarento = Artis TV! Di Jepang merujuk pada profesi figur publik yang sering muncul di acara variety show televisi.",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -1762,7 +1762,7 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-080",
       "patterns": [
-        "💡 Sain = Tanda",
+        "Tanda tangan do",
         "Mengira rambu t"
       ],
       "note_id": "nuance-cp-l1-080",
@@ -1772,11 +1772,11 @@ var diagnosticInventory = {
       "domain": "Domain III: False Cognates & Wasei-Eigo",
       "category": "III.B: Wasei-Eigo (Jepang Buatan) yang Menyesatkan Penutur Indonesia",
       "title": "サイン (sain)",
-      "stimulus_l1": "Tanda tangan dokumen resmi atau tanda tangan kenang-kenangan (autograph).",
-      "target_form": "💡 Sain = Tanda Tangan! Di bank atau pos pengiriman: サインをお願いします berarti \"Mohon tanda tangani di sini\".",
+      "stimulus_l1": "Mengira rambu tanda bahaya lalu lintas (traffic sign).",
+      "target_form": "Tanda tangan dokumen resmi atau tanda tangan kenang-kenangan (autograph).",
       "l1_trap_form": "Mengira rambu tanda bahaya lalu lintas (traffic sign).",
-      "root_cause": "",
-      "prescription": "",
+      "root_cause": "Mengira rambu tanda bahaya lalu lintas (traffic sign).",
+      "prescription": "💡 Sain = Tanda Tangan! Di bank atau pos pengiriman: サインをお願いします berarti \"Mohon tanda tangani di sini\".",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -1784,8 +1784,8 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-081",
       "patterns": [
-        "Fatal:",
-        "くれました"
+        "くれました",
+        "あげました"
       ],
       "note_id": "nuance-cp-l1-081",
       "level": "n4",
@@ -1794,11 +1794,11 @@ var diagnosticInventory = {
       "domain": "Domain IV: Benefactive Verbs",
       "category": "III.B: Wasei-Eigo (Jepang Buatan) yang Menyesatkan Penutur Indonesia",
       "title": "Teman memberi saya kue.",
-      "stimulus_l1": "❌ 友達は私にケーキをあげました。",
-      "target_form": "Fatal: Menggunakan agemashita menempatkan penutur di posisi pihak luar yang dingin. Terkesan merendahkan tindakan teman atau menganggap teman adalah bawahan penutur.",
-      "l1_trap_form": "✅ 友達が私にケーキをくれました。",
-      "root_cause": "⚠️ PEMBERIAN MENUJU SAYA = KURERU! Jika orang lain memberi kebaikan kepada SAYA atau KELUARGA SAYA, selalu gunakan くれる / くださる. Jangan pernah memakai ageru!",
-      "prescription": "",
+      "stimulus_l1": "Teman memberi saya kue.",
+      "target_form": "友達が私にケーキをくれました。",
+      "l1_trap_form": "友達は私にケーキをあげました。",
+      "root_cause": "Fatal: Menggunakan agemashita menempatkan penutur di posisi pihak luar yang dingin. Terkesan merendahkan tindakan teman atau menganggap teman adalah bawahan penutur.",
+      "prescription": "⚠️ PEMBERIAN MENUJU SAYA = KURERU! Jika orang lain memberi kebaikan kepada SAYA atau KELUARGA SAYA, selalu gunakan くれる / くださる. Jangan pernah memakai ageru!",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -1806,8 +1806,8 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-082",
       "patterns": [
-        "Pasif reguler t",
-        "✅ 先生に日本語を教えていただ"
+        "先生に日本語を教えていただきま",
+        "先生は私に日本語を教えられまし"
       ],
       "note_id": "nuance-cp-l1-082",
       "level": "n4",
@@ -1816,11 +1816,11 @@ var diagnosticInventory = {
       "domain": "Domain IV: Benefactive Verbs",
       "category": "III.B: Wasei-Eigo (Jepang Buatan) yang Menyesatkan Penutur Indonesia",
       "title": "Saya diajari bahasa Jepang oleh Sensei.",
-      "stimulus_l1": "❌ 先生は私に日本語を教えられました。",
-      "target_form": "Pasif reguler terdengar seperti musibah (adversative passive). Menggunakan moratta/itadaita menunjukkan apresiasi atas budi baik sang guru.",
-      "l1_trap_form": "✅ 先生に日本語を教えていただきました / 教えてもらいました。",
-      "root_cause": "⚠️ Menerima Kebaikan = 〜てもらう / いただく! Bentuk V-ていただく mengekspresikan rasa hormat dan terima kasih mendalam atas bimbingan guru.",
-      "prescription": "",
+      "stimulus_l1": "Saya diajari bahasa Jepang oleh Sensei.",
+      "target_form": "先生に日本語を教えていただきました / 教えてもらいました。",
+      "l1_trap_form": "先生は私に日本語を教えられました。",
+      "root_cause": "Pasif reguler terdengar seperti musibah (adversative passive). Menggunakan moratta/itadaita menunjukkan apresiasi atas budi baik sang guru.",
+      "prescription": "⚠️ Menerima Kebaikan = 〜てもらう / いただく! Bentuk V-ていただく mengekspresikan rasa hormat dan terima kasih mendalam atas bimbingan guru.",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -1828,8 +1828,8 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-083",
       "patterns": [
-        "Sangat Kurang Ajar:",
-        "しましょうか"
+        "しましょうか",
+        "あげましょうか"
       ],
       "note_id": "nuance-cp-l1-083",
       "level": "n4",
@@ -1838,11 +1838,11 @@ var diagnosticInventory = {
       "domain": "Domain IV: Benefactive Verbs",
       "category": "III.B: Wasei-Eigo (Jepang Buatan) yang Menyesatkan Penutur Indonesia",
       "title": "Menawarkan bantuan ke atasan / tamu.",
-      "stimulus_l1": "❌ 手伝ってあげましょうか？",
-      "target_form": "Sangat Kurang Ajar: Akhiran ~te ageru menyiratkan penutur sedang berbaik hati menurunkan kasta demi menolong orang di bawahnya (condescending). Dilarang keras kepada atasan!",
-      "l1_trap_form": "✅ お手伝いしましょうか？ / お手伝いいたします。",
-      "root_cause": "⚠️ DILARANG PAKAI 〜てあげる KE ATASAN! Terdengar sombong seperti bos memamerkan kebaikan. Kepada atasan/tamu, gunakan bentuk merendah: お + verba + しましょうか.",
-      "prescription": "",
+      "stimulus_l1": "Menawarkan bantuan ke atasan / tamu.",
+      "target_form": "お手伝いしましょうか？ / お手伝いいたします。",
+      "l1_trap_form": "手伝ってあげましょうか？",
+      "root_cause": "Sangat Kurang Ajar: Akhiran ~te ageru menyiratkan penutur sedang berbaik hati menurunkan kasta demi menolong orang di bawahnya (condescending). Dilarang keras kepada atasan!",
+      "prescription": "⚠️ DILARANG PAKAI 〜てあげる KE ATASAN! Terdengar sombong seperti bos memamerkan kebaikan. Kepada atasan/tamu, gunakan bentuk merendah: お + verba + しましょうか.",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -1850,8 +1850,8 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-084",
       "patterns": [
-        "Eror transfer t",
-        "✅ 先生、教えていただけません"
+        "いただけませんか",
+        "あげてください"
       ],
       "note_id": "nuance-cp-l1-084",
       "level": "n4",
@@ -1860,11 +1860,11 @@ var diagnosticInventory = {
       "domain": "Domain IV: Benefactive Verbs",
       "category": "III.B: Wasei-Eigo (Jepang Buatan) yang Menyesatkan Penutur Indonesia",
       "title": "Meminta atasan mengajari sesuatu.",
-      "stimulus_l1": "❌ 先生、教えてあげてください。",
-      "target_form": "Eror transfer terburuk: pembelajar mengira ageru berarti memberi, sehingga mengira kalimat ini berarti \"Sensei, tolong berikan pelajaran ke saya\". Maknanya justru kacau: \"Sensei, tolong ajari orang lain di sana!",
-      "l1_trap_form": "✅ 先生、教えていただけませんか？ / 教えてください。",
-      "root_cause": "⚠️ BAHAYA FATAL! Meminta tolong kepada atasan wajib memohon kebaikan mereka menuju kita: 〜ていただけませんか (Maukah Anda berbaik hati mengajari saya?).",
-      "prescription": "",
+      "stimulus_l1": "Meminta atasan mengajari sesuatu.",
+      "target_form": "先生、教えていただけませんか？ / 教えてください。",
+      "l1_trap_form": "先生、教えてあげてください。",
+      "root_cause": "Eror transfer terburuk: pembelajar mengira ageru berarti memberi, sehingga mengira kalimat ini berarti \"Sensei, tolong berikan pelajaran ke saya\". Maknanya justru kacau: \"Sensei, tolong ajari orang lain di sana!",
+      "prescription": "⚠️ BAHAYA FATAL! Meminta tolong kepada atasan wajib memohon kebaikan mereka menuju kita: 〜ていただけませんか (Maukah Anda berbaik hati mengajari saya?).",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -1872,8 +1872,8 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-085",
       "patterns": [
-        "くれた",
-        "くれた"
+        "母が私にご飯を作ってくれた。",
+        "母は私にご飯を作ってあげた。"
       ],
       "note_id": "nuance-cp-l1-085",
       "level": "n4",
@@ -1882,11 +1882,11 @@ var diagnosticInventory = {
       "domain": "Domain IV: Benefactive Verbs",
       "category": "III.B: Wasei-Eigo (Jepang Buatan) yang Menyesatkan Penutur Indonesia",
       "title": "Ibu memasakkan makanan untuk saya.",
-      "stimulus_l1": "❌ 母は私にご飯を作ってあげた。",
-      "target_form": "Ibu adalah bagian dari lingkaran keluarga penutur, namun tindakan ditujukan kepada saya $\\rightarrow$ arah kebaikan mendekat $\\rightarrow$ くれた.",
-      "l1_trap_form": "✅ 母が私にご飯を作ってくれた。",
-      "root_cause": "⚠️ Ibu memasak untuk SAYA = くれた! Kebaikan siapa pun yang mengalir masuk ke diri kita selalu ditandai くれる.",
-      "prescription": "",
+      "stimulus_l1": "Ibu memasakkan makanan untuk saya.",
+      "target_form": "母が私にご飯を作ってくれた。",
+      "l1_trap_form": "母は私にご飯を作ってあげた。",
+      "root_cause": "Ibu adalah bagian dari lingkaran keluarga penutur, namun tindakan ditujukan kepada saya $\\rightarrow$ arah kebaikan mendekat $\\rightarrow$ くれた.",
+      "prescription": "⚠️ Ibu memasak untuk SAYA = くれた! Kebaikan siapa pun yang mengalir masuk ke diri kita selalu ditandai くれる.",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -1894,8 +1894,8 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-086",
       "patterns": [
-        "あげた",
-        "あげた"
+        "私は弟におもちゃを買ってあげた",
+        "弟は私におもちゃを買ってくれた"
       ],
       "note_id": "nuance-cp-l1-086",
       "level": "n4",
@@ -1904,11 +1904,11 @@ var diagnosticInventory = {
       "domain": "Domain IV: Benefactive Verbs",
       "category": "III.B: Wasei-Eigo (Jepang Buatan) yang Menyesatkan Penutur Indonesia",
       "title": "Saya membelikan adik mainan.",
-      "stimulus_l1": "❌ 弟は私におもちゃを買ってくれた。",
-      "target_form": "Penutur yang berinisiatif mengeluarkan uang dan tindakan demi orang lain $\\rightarrow$ arah menjauh $\\rightarrow$ あげた (atau yatta untuk hewan/tumbuhan/adik kecil).",
-      "l1_trap_form": "✅ 私は弟におもちゃを買ってあげた。",
-      "root_cause": "💡 Saya yang berbuat kebaikan = あげる! Arah dari saya keluar menuju orang lain $\\rightarrow$ 〜てあげる.",
-      "prescription": "",
+      "stimulus_l1": "Saya membelikan adik mainan.",
+      "target_form": "私は弟におもちゃを買ってあげた。",
+      "l1_trap_form": "弟は私におもちゃを買ってくれた。",
+      "root_cause": "Penutur yang berinisiatif mengeluarkan uang dan tindakan demi orang lain $\\rightarrow$ arah menjauh $\\rightarrow$ あげた (atau yatta untuk hewan/tumbuhan/adik kecil).",
+      "prescription": "💡 Saya yang berbuat kebaikan = あげる! Arah dari saya keluar menuju orang lain $\\rightarrow$ 〜てあげる.",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -1916,8 +1916,8 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-087",
       "patterns": [
-        "Bertanya \"Apaka",
-        "✅ メールを送っていただけまし"
+        "メールを送っていただけましたか",
+        "メールを送ってあげましたか？"
       ],
       "note_id": "nuance-cp-l1-087",
       "level": "n4",
@@ -1926,11 +1926,11 @@ var diagnosticInventory = {
       "domain": "Domain IV: Benefactive Verbs",
       "category": "III.B: Wasei-Eigo (Jepang Buatan) yang Menyesatkan Penutur Indonesia",
       "title": "Meminta konfirmasi apakah email sudah terkirim.",
-      "stimulus_l1": "❌ メールを送ってあげましたか？",
-      "target_form": "Bertanya \"Apakah Anda sudah mengirimkan email untuk kebaikan orang lain?\" terkesan menginterogasi secara kasar.",
-      "l1_trap_form": "✅ メールを送っていただけましたか？",
-      "root_cause": "⚠️ Konfirmasi tindakan atasan = 〜ていただけましたか? Tanyakan dengan sopan apakah atasan telah berkenan melakukan tindakan tersebut.",
-      "prescription": "",
+      "stimulus_l1": "Meminta konfirmasi apakah email sudah terkirim.",
+      "target_form": "メールを送っていただけましたか？",
+      "l1_trap_form": "メールを送ってあげましたか？",
+      "root_cause": "Bertanya \"Apakah Anda sudah mengirimkan email untuk kebaikan orang lain?\" terkesan menginterogasi secara kasar.",
+      "prescription": "⚠️ Konfirmasi tindakan atasan = 〜ていただけましたか? Tanyakan dengan sopan apakah atasan telah berkenan melakukan tindakan tersebut.",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -1938,8 +1938,8 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-088",
       "patterns": [
-        "てもらった",
-        "もらった"
+        "医者に診てもらった / 医者が",
+        "医者は私を診てあげた。"
       ],
       "note_id": "nuance-cp-l1-088",
       "level": "n4",
@@ -1948,11 +1948,11 @@ var diagnosticInventory = {
       "domain": "Domain IV: Benefactive Verbs",
       "category": "III.B: Wasei-Eigo (Jepang Buatan) yang Menyesatkan Penutur Indonesia",
       "title": "Dokter memeriksa kesehatan saya.",
-      "stimulus_l1": "❌ 医者は私を診てあげた。",
-      "target_form": "Pasien tidak boleh merasa 'diberi sedekah pemeriksaan' dengan kata ageta. Pasien menerima pelayanan profesional berharga $\\rightarrow$ てもらった.",
-      "l1_trap_form": "✅ 医者に診てもらった / 医者が診てくれた。",
-      "root_cause": "⚠️ Menerima jasa profesional medis = 〜てもらう! Pasien adalah pihak yang beruntung menerima pemeriksaan dokter: 診てもらった.",
-      "prescription": "",
+      "stimulus_l1": "Dokter memeriksa kesehatan saya.",
+      "target_form": "医者に診てもらった / 医者が診てくれた。",
+      "l1_trap_form": "医者は私を診てあげた。",
+      "root_cause": "Pasien tidak boleh merasa 'diberi sedekah pemeriksaan' dengan kata ageta. Pasien menerima pelayanan profesional berharga $\\rightarrow$ てもらった.",
+      "prescription": "⚠️ Menerima jasa profesional medis = 〜てもらう! Pasien adalah pihak yang beruntung menerima pemeriksaan dokter: 診てもらった.",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -1960,8 +1960,8 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-089",
       "patterns": [
-        "差し上げる",
-        "差し上げます"
+        "お土産を差し上げます。",
+        "お土産をあげます。"
       ],
       "note_id": "nuance-cp-l1-089",
       "level": "n4",
@@ -1970,11 +1970,11 @@ var diagnosticInventory = {
       "domain": "Domain IV: Benefactive Verbs",
       "category": "III.B: Wasei-Eigo (Jepang Buatan) yang Menyesatkan Penutur Indonesia",
       "title": "Menghaturkan oleh-oleh ke atasan.",
-      "stimulus_l1": "❌ お土産をあげます。",
-      "target_form": "Ageru adalah tingkat netral setara kawan sebaya. Menghaturkan kebaikan ke atasan menuntut verba kenjougo resmi 差し上げる (sashiageru).",
-      "l1_trap_form": "✅ お土産を差し上げます。",
-      "root_cause": "💡 Memberi ke atasan = 差し上げる! Hormati atasan dengan bentuk merendah resmi: お土産を差し上げます.",
-      "prescription": "",
+      "stimulus_l1": "Menghaturkan oleh-oleh ke atasan.",
+      "target_form": "お土産を差し上げます。",
+      "l1_trap_form": "お土産をあげます。",
+      "root_cause": "Ageru adalah tingkat netral setara kawan sebaya. Menghaturkan kebaikan ke atasan menuntut verba kenjougo resmi 差し上げる (sashiageru).",
+      "prescription": "💡 Memberi ke atasan = 差し上げる! Hormati atasan dengan bentuk merendah resmi: お土産を差し上げます.",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -1982,8 +1982,8 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-090",
       "patterns": [
-        "直してもらった",
-        "もらった"
+        "技術者に機械を直してもらった。",
+        "技術者は機械を直してあげた。"
       ],
       "note_id": "nuance-cp-l1-090",
       "level": "n4",
@@ -1992,11 +1992,11 @@ var diagnosticInventory = {
       "domain": "Domain IV: Benefactive Verbs",
       "category": "III.B: Wasei-Eigo (Jepang Buatan) yang Menyesatkan Penutur Indonesia",
       "title": "Diperbaiki barangnya oleh teknisi.",
-      "stimulus_l1": "❌ 技術者は機械を直してあげた。",
-      "target_form": "Pihak penerima manfaat perbaikan adalah penutur $\\rightarrow$ wajib konstruksi pasif benefaktif 直してもらった.",
-      "l1_trap_form": "✅ 技術者に機械を直してもらった。",
-      "root_cause": "⚠️ Fokus pada penerima faedah! Pola: [Pihak ahli] に [Benda] を 直してもらう.",
-      "prescription": "",
+      "stimulus_l1": "Diperbaiki barangnya oleh teknisi.",
+      "target_form": "技術者に機械を直してもらった。",
+      "l1_trap_form": "技術者は機械を直してあげた。",
+      "root_cause": "Pihak penerima manfaat perbaikan adalah penutur $\\rightarrow$ wajib konstruksi pasif benefaktif 直してもらった.",
+      "prescription": "⚠️ Fokus pada penerima faedah! Pola: [Pihak ahli] に [Benda] を 直してもらう.",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -2004,8 +2004,8 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-091",
       "patterns": [
-        "Pembelajar memb",
-        "✅ 昨日来た人"
+        "昨日来た",
+        "が"
       ],
       "note_id": "nuance-cp-l1-091",
       "level": "n4",
@@ -2014,11 +2014,11 @@ var diagnosticInventory = {
       "domain": "Domain V: Adnominal Clauses",
       "category": "III.B: Wasei-Eigo (Jepang Buatan) yang Menyesatkan Penutur Indonesia",
       "title": "Orang yang datang kemarin",
-      "stimulus_l1": "❌ 人が昨日来た。",
-      "target_form": "Pembelajar membuat kalimat predikatif utuh (\"Orang datang kemarin\"), bukan frasa nomina modifikasi subjek!",
-      "l1_trap_form": "✅ 昨日来た人",
-      "root_cause": "⚠️ BALIK POSISI KATA BENDA! Bahasa Jepang tidak punya kata 'yang'. Taruh tindakan di depan, kata bendanya di belakang: [昨日来た] + 人.",
-      "prescription": "",
+      "stimulus_l1": "Orang yang datang kemarin",
+      "target_form": "昨日来た人",
+      "l1_trap_form": "人が昨日来た。",
+      "root_cause": "Pembelajar membuat kalimat predikatif utuh (\"Orang datang kemarin\"), bukan frasa nomina modifikasi subjek!",
+      "prescription": "⚠️ BALIK POSISI KATA BENDA! Bahasa Jepang tidak punya kata 'yang'. Taruh tindakan di depan, kata bendanya di belakang: [昨日来た] + 人.",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -2026,8 +2026,8 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-092",
       "patterns": [
-        "Menaruh restora",
-        "✅ 私がラーメンを食べたレスト"
+        "レストラン",
+        "で"
       ],
       "note_id": "nuance-cp-l1-092",
       "level": "n4",
@@ -2036,11 +2036,11 @@ var diagnosticInventory = {
       "domain": "Domain V: Adnominal Clauses",
       "category": "III.B: Wasei-Eigo (Jepang Buatan) yang Menyesatkan Penutur Indonesia",
       "title": "Restoran tempat saya makan ramen",
-      "stimulus_l1": "❌ レストランで私はラーメンを食べた。",
-      "target_form": "Menaruh restoran di depan dengan partikel で. Akibatnya kalimat menjadi rancu dan kehilangan fungsi sebagai satu kesatuan objek/subjek kalimat induk.",
-      "l1_trap_form": "✅ 私がラーメンを食べたレストラン",
-      "root_cause": "⚠️ RESTO DITARUH DI BELAKANG! Restoran adalah inti yang dijelaskan: [私がラーメンを食べた] + レストラン. Subjek anak kalimat ditandai が!",
-      "prescription": "",
+      "stimulus_l1": "Restoran tempat saya makan ramen",
+      "target_form": "私がラーメンを食べたレストラン",
+      "l1_trap_form": "レストランで私はラーメンを食べた。",
+      "root_cause": "Menaruh restoran di depan dengan partikel で. Akibatnya kalimat menjadi rancu dan kehilangan fungsi sebagai satu kesatuan objek/subjek kalimat induk.",
+      "prescription": "⚠️ RESTO DITARUH DI BELAKANG! Restoran adalah inti yang dijelaskan: [私がラーメンを食べた] + レストラン. Subjek anak kalimat ditandai が!",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -2048,8 +2048,8 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-093",
       "patterns": [
-        "Eror pembalikan",
-        "✅ 父が買った車"
+        "父が買った",
+        "は"
       ],
       "note_id": "nuance-cp-l1-093",
       "level": "n4",
@@ -2058,11 +2058,11 @@ var diagnosticInventory = {
       "domain": "Domain V: Adnominal Clauses",
       "category": "III.B: Wasei-Eigo (Jepang Buatan) yang Menyesatkan Penutur Indonesia",
       "title": "Mobil yang dibeli ayah",
-      "stimulus_l1": "❌ 車は父を買いました。",
-      "target_form": "Eror pembalikan peran yang fatal: kalimat pembelajar berarti \"Mobil membeli ayah!\" karena partikel salah dan urutan kata terbalik.",
-      "l1_trap_form": "✅ 父が買った車",
-      "root_cause": "⚠️ BAHAYA SUBJEK TERBALIK! Siapa yang membeli? Ayah (父が). Apa yang dibeli? Mobil (車). Susunan mutlak: [父が買った] + 車.",
-      "prescription": "",
+      "stimulus_l1": "Mobil yang dibeli ayah",
+      "target_form": "父が買った車",
+      "l1_trap_form": "車は父を買いました。",
+      "root_cause": "Eror pembalikan peran yang fatal: kalimat pembelajar berarti \"Mobil membeli ayah!\" karena partikel salah dan urutan kata terbalik.",
+      "prescription": "⚠️ BAHAYA SUBJEK TERBALIK! Siapa yang membeli? Ayah (父が). Apa yang dibeli? Mobil (車). Susunan mutlak: [父が買った] + 車.",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -2070,8 +2070,8 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-094",
       "patterns": [
-        "が",
-        "母が作った"
+        "母が作ったケーキ",
+        "ケーキは母が作られた。"
       ],
       "note_id": "nuance-cp-l1-094",
       "level": "n4",
@@ -2080,11 +2080,11 @@ var diagnosticInventory = {
       "domain": "Domain V: Adnominal Clauses",
       "category": "III.B: Wasei-Eigo (Jepang Buatan) yang Menyesatkan Penutur Indonesia",
       "title": "Kue yang dibuat oleh ibu",
-      "stimulus_l1": "❌ ケーキは母が作られた。",
-      "target_form": "Mencoba memaksakan bentuk pasif karena bahasa Indonesia menggunakan kata dibuat. Dalam bahasa Jepang, klausa modifikasi menggunakan bentuk aktif biasa subjek anak kalimat bertanda が.",
-      "l1_trap_form": "✅ 母が作ったケーキ",
-      "root_cause": "💡 Gunakan Bentuk Aktif di Anak Kalimat! Tidak perlu dipasifkan. Cukup: [母が作った] + ケーキ (Kue buatan ibu).",
-      "prescription": "",
+      "stimulus_l1": "Kue yang dibuat oleh ibu",
+      "target_form": "母が作ったケーキ",
+      "l1_trap_form": "ケーキは母が作られた。",
+      "root_cause": "Mencoba memaksakan bentuk pasif karena bahasa Indonesia menggunakan kata dibuat. Dalam bahasa Jepang, klausa modifikasi menggunakan bentuk aktif biasa subjek anak kalimat bertanda が.",
+      "prescription": "💡 Gunakan Bentuk Aktif di Anak Kalimat! Tidak perlu dipasifkan. Cukup: [母が作った] + ケーキ (Kue buatan ibu).",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -2092,8 +2092,8 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-095",
       "patterns": [
-        "Frasa ini adala",
-        "✅ 私がやりたい仕事"
+        "仕事",
+        "を"
       ],
       "note_id": "nuance-cp-l1-095",
       "level": "n4",
@@ -2102,11 +2102,11 @@ var diagnosticInventory = {
       "domain": "Domain V: Adnominal Clauses",
       "category": "III.B: Wasei-Eigo (Jepang Buatan) yang Menyesatkan Penutur Indonesia",
       "title": "Pekerjaan yang ingin saya lakukan",
-      "stimulus_l1": "❌ 仕事を私がやりたい。",
-      "target_form": "Frasa ini adalah satu kesatuan nomina. Menaruh shigoto di depan merusak struktur bila frasa ini hendak dimasukkan ke dalam kalimat utama: \"Pekerjaan yang ingin saya lakukan belum ditemukan\".",
-      "l1_trap_form": "✅ 私がやりたい仕事",
-      "root_cause": "⚠️ Bungkus dulu frasanya! Frasa: [私がやりたい仕事] + ditutup partikel induk は見つからない.",
-      "prescription": "",
+      "stimulus_l1": "Pekerjaan yang ingin saya lakukan",
+      "target_form": "私がやりたい仕事",
+      "l1_trap_form": "仕事を私がやりたい。",
+      "root_cause": "Frasa ini adalah satu kesatuan nomina. Menaruh shigoto di depan merusak struktur bila frasa ini hendak dimasukkan ke dalam kalimat utama: \"Pekerjaan yang ingin saya lakukan belum ditemukan\".",
+      "prescription": "⚠️ Bungkus dulu frasanya! Frasa: [私がやりたい仕事] + ditutup partikel induk は見つからない.",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -2114,8 +2114,8 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-096",
       "patterns": [
-        "Anak kalimat no",
-        "✅ 子供だった時 / 子供の時"
+        "子供だった時 / 子供の時",
+        "私が子供の時"
       ],
       "note_id": "nuance-cp-l1-096",
       "level": "n4",
@@ -2124,11 +2124,11 @@ var diagnosticInventory = {
       "domain": "Domain V: Adnominal Clauses",
       "category": "III.B: Wasei-Eigo (Jepang Buatan) yang Menyesatkan Penutur Indonesia",
       "title": "Waktu saya masih anak-anak",
-      "stimulus_l1": "❌ 私が子供の時",
-      "target_form": "Anak kalimat nominal penjelas waktu (toki) menggunakan bentuk lampau biasa kata benda: 子供だった.",
-      "l1_trap_form": "✅ 子供だった時 / 子供の時",
-      "root_cause": "💡 Waktu masa lampau = Nomina + だった + 時! Untuk kondisi masa lalu yang sudah selesai: 子供だった時.",
-      "prescription": "",
+      "stimulus_l1": "Waktu saya masih anak-anak",
+      "target_form": "子供だった時 / 子供の時",
+      "l1_trap_form": "私が子供の時",
+      "root_cause": "Anak kalimat nominal penjelas waktu (toki) menggunakan bentuk lampau biasa kata benda: 子供だった.",
+      "prescription": "💡 Waktu masa lampau = Nomina + だった + 時! Untuk kondisi masa lalu yang sudah selesai: 子供だった時.",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -2136,8 +2136,8 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-097",
       "patterns": [
-        "Foto diletakkan",
-        "✅ バリで撮った写真"
+        "バリで撮った",
+        "は"
       ],
       "note_id": "nuance-cp-l1-097",
       "level": "n4",
@@ -2146,11 +2146,11 @@ var diagnosticInventory = {
       "domain": "Domain V: Adnominal Clauses",
       "category": "III.B: Wasei-Eigo (Jepang Buatan) yang Menyesatkan Penutur Indonesia",
       "title": "Foto yang saya ambil di Bali",
-      "stimulus_l1": "❌ 写真はバリで撮った。",
-      "target_form": "Foto diletakkan di depan sebagai topik kalimat terputus, alih-alih menjadi objek untuk verba kalimat berikutnya (misal: \"Saya ingin memperlihatkan foto yang saya ambil di Bali\").",
-      "l1_trap_form": "✅ バリで撮った写真",
-      "root_cause": "⚠️ Letakkan FOTO di akhir frasa! Pola: [バリで撮った写真] を 見せたい. Jangan pisahkan fotonya di awal kalimat!",
-      "prescription": "",
+      "stimulus_l1": "Foto yang saya ambil di Bali",
+      "target_form": "バリで撮った写真",
+      "l1_trap_form": "写真はバリで撮った。",
+      "root_cause": "Foto diletakkan di depan sebagai topik kalimat terputus, alih-alih menjadi objek untuk verba kalimat berikutnya (misal: \"Saya ingin memperlihatkan foto yang saya ambil di Bali\").",
+      "prescription": "⚠️ Letakkan FOTO di akhir frasa! Pola: [バリで撮った写真] を 見せたい. Jangan pisahkan fotonya di awal kalimat!",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -2158,8 +2158,8 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-098",
       "patterns": [
-        "Eror asosiasi k",
-        "✅ 友達とした約束"
+        "友達とした",
+        "と"
       ],
       "note_id": "nuance-cp-l1-098",
       "level": "n4",
@@ -2168,11 +2168,11 @@ var diagnosticInventory = {
       "domain": "Domain V: Adnominal Clauses",
       "category": "III.B: Wasei-Eigo (Jepang Buatan) yang Menyesatkan Penutur Indonesia",
       "title": "Janji yang dibuat dengan teman",
-      "stimulus_l1": "❌ 約束と友達を作った。",
-      "target_form": "Eror asosiasi kata: janji tidak dibuat dengan verba tsukuru (membuat barang fisik), melainkan suru / kawasu. Seluruh penjelas ditaruh sebelum kata yakusoku.",
-      "l1_trap_form": "✅ 友達とした約束",
-      "root_cause": "⚠️ Janji itu dilakukan (suru), bukan dirakit (tsukuru)! Pola frasa: [友達とした] + 約束.",
-      "prescription": "",
+      "stimulus_l1": "Janji yang dibuat dengan teman",
+      "target_form": "友達とした約束",
+      "l1_trap_form": "約束と友達を作った。",
+      "root_cause": "Eror asosiasi kata: janji tidak dibuat dengan verba tsukuru (membuat barang fisik), melainkan suru / kawasu. Seluruh penjelas ditaruh sebelum kata yakusoku.",
+      "prescription": "⚠️ Janji itu dilakukan (suru), bukan dirakit (tsukuru)! Pola frasa: [友達とした] + 約束.",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -2180,8 +2180,8 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-099",
       "patterns": [
-        "Menjelaskan kam",
-        "✅ タバコが吸えない部屋"
+        "タバコが吸えない",
+        "で"
       ],
       "note_id": "nuance-cp-l1-099",
       "level": "n4",
@@ -2190,11 +2190,11 @@ var diagnosticInventory = {
       "domain": "Domain V: Adnominal Clauses",
       "category": "III.B: Wasei-Eigo (Jepang Buatan) yang Menyesatkan Penutur Indonesia",
       "title": "Kamar yang tidak bisa merokok",
-      "stimulus_l1": "❌ 部屋でタバコを吸えない。",
-      "target_form": "Menjelaskan kamar bebas asap rokok (non-smoking room). Anak kalimat potensial negatif diletakkan mendahului kata kamar.",
-      "l1_trap_form": "✅ タバコが吸えない部屋",
-      "root_cause": "💡 Ciri kamar ditaruh di depan! [タバコが吸えない] + 部屋 (Kamar dilarang merokok).",
-      "prescription": "",
+      "stimulus_l1": "Kamar yang tidak bisa merokok",
+      "target_form": "タバコが吸えない部屋",
+      "l1_trap_form": "部屋でタバコを吸えない。",
+      "root_cause": "Menjelaskan kamar bebas asap rokok (non-smoking room). Anak kalimat potensial negatif diletakkan mendahului kata kamar.",
+      "prescription": "💡 Ciri kamar ditaruh di depan! [タバコが吸えない] + 部屋 (Kamar dilarang merokok).",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"
@@ -2202,8 +2202,8 @@ var diagnosticInventory = {
     {
       "id": "cp-l1-100",
       "patterns": [
-        "Penutur Indones",
-        "✅ 私が日本語を勉強する理由"
+        "私が日本語を勉強する理由",
+        "理由は私は日本語を勉強する。"
       ],
       "note_id": "nuance-cp-l1-100",
       "level": "n4",
@@ -2212,11 +2212,11 @@ var diagnosticInventory = {
       "domain": "Domain V: Adnominal Clauses",
       "category": "III.B: Wasei-Eigo (Jepang Buatan) yang Menyesatkan Penutur Indonesia",
       "title": "Alasan mengapa saya belajar bahasa Jepang",
-      "stimulus_l1": "❌ 理由は私は日本語を勉強する。",
-      "target_form": "Penutur Indonesia sering memulai kalimat dengan frasa \"Alasannya adalah...\" tanpa mampu menyusun anak kalimat penjelas alasan ke dalam satu kesatuan nomina subjek.",
-      "l1_trap_form": "✅ 私が日本語を勉強する理由",
-      "root_cause": "⚠️ KATA ALASAN (理由) DITARUH DI UJUNG! Seluruh isi penjelas dirangkum di depan: [私が日本語を勉強する] + 理由.",
-      "prescription": "",
+      "stimulus_l1": "Alasan mengapa saya belajar bahasa Jepang",
+      "target_form": "私が日本語を勉強する理由",
+      "l1_trap_form": "理由は私は日本語を勉強する。",
+      "root_cause": "Penutur Indonesia sering memulai kalimat dengan frasa \"Alasannya adalah...\" tanpa mampu menyusun anak kalimat penjelas alasan ke dalam satu kesatuan nomina subjek.",
+      "prescription": "⚠️ KATA ALASAN (理由) DITARUH DI UJUNG! Seluruh isi penjelas dirangkum di depan: [私が日本語を勉強する] + 理由.",
       "fsrs_difficulty": 7.2,
       "fossilization_risk": "HIGH",
       "l1_substratum": "general_indonesian"

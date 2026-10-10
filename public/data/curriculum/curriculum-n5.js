@@ -4,6 +4,16 @@
 // ══════════════════════════════════════════════════════════════
 
 window.curriculumN5 = {
+  "meta": {
+    "track_id": "curriculum-n5",
+    "level": "n5",
+    "title": "Kurikulum Original Nugget Nihongo · N5",
+    "title_id": "Jalur Mandiri N5 (Kurikulum Nugget)",
+    "version": "1.0.0",
+    "total_units": 10,
+    "total_grammar_points": 94,
+    "authoritative": true
+  },
   "id": "trk-nugget-n5",
   "name": "Kurikulum Original Nugget Nihongo · N5",
   "name_id": "Jalur Mandiri N5 (Kurikulum Nugget)",

@@ -110,17 +110,60 @@ function compileL1Items(content) {
       const parts = line.split('|').map(s => s.trim());
       const num = parseInt(parts[1], 10);
       if (!isNaN(num) && num >= 1 && num <= 150) {
-        const raw = {
-          num,
-          title: parts[2],
-          stimulus: parts[3],
-          failForm: parts[4],
-          targetForm: parts[5],
-          rootCause: parts[6],
-          prescription: parts[7],
-          domain: currentDomain,
-          category: currentCategory
-        };
+        let raw;
+        if (num >= 51 && num <= 65) {
+          // 6 columns: # | Kosakata Indonesia | Eror Transfer | Kata Sebenarnya | Etimologi | Resep
+          raw = {
+            num,
+            title: parts[2],
+            stimulus: parts[2],
+            failForm: parts[3],
+            targetForm: parts[4],
+            rootCause: parts[5],
+            prescription: parts[6] || parts[5],
+            domain: currentDomain,
+            category: currentCategory
+          };
+        } else if (num >= 66 && num <= 80) {
+          // 5 columns: # | Kata Katakana | Arti Sebenarnya | Pemahaman Keliru | Resep
+          raw = {
+            num,
+            title: parts[2],
+            stimulus: parts[4],
+            failForm: parts[4],
+            targetForm: parts[3],
+            rootCause: parts[4],
+            prescription: parts[5] || parts[4],
+            domain: currentDomain,
+            category: currentCategory
+          };
+        } else if (num >= 81 && num <= 100) {
+          // 6 columns: # | Skenario/Konstruksi | Eror | Benar | Analisis | Resep
+          raw = {
+            num,
+            title: parts[2],
+            stimulus: parts[2],
+            failForm: parts[3],
+            targetForm: parts[4],
+            rootCause: parts[5],
+            prescription: parts[6] || parts[5],
+            domain: currentDomain,
+            category: currentCategory
+          };
+        } else {
+          // Standard 7 columns: # | Title | Stimulus | Gagal | Benar | Root Cause | Prescription
+          raw = {
+            num,
+            title: parts[2],
+            stimulus: parts[3],
+            failForm: parts[4],
+            targetForm: parts[5],
+            rootCause: parts[6],
+            prescription: parts[7] || parts[6],
+            domain: currentDomain,
+            category: currentCategory
+          };
+        }
 
         function inferL1Substratum(title, stimulus, rootCause) {
           const text = (title + ' ' + stimulus + ' ' + rootCause).toLowerCase();

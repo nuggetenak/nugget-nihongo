@@ -567,6 +567,16 @@ const fullUnits = unitsDef.map(u => {
 });
 
 const curriculumTrackN5 = {
+  meta: {
+    track_id: 'curriculum-n5',
+    level: 'n5',
+    title: 'Kurikulum Original Nugget Nihongo · N5',
+    title_id: 'Jalur Mandiri N5 (Kurikulum Nugget)',
+    version: '1.0.0',
+    total_units: fullUnits.length,
+    total_grammar_points: grammarN5.length,
+    authoritative: true
+  },
   id: 'trk-nugget-n5',
   name: 'Kurikulum Original Nugget Nihongo · N5',
   name_id: 'Jalur Mandiri N5 (Kurikulum Nugget)',

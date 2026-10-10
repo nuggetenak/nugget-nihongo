@@ -279,6 +279,23 @@ export interface CurriculumTrackData {
 
 const curriculumCache: Record<string, CurriculumTrackData> = {};
 
+function normalizeTrackData(raw: any, trackKey: string): CurriculumTrackData {
+  if (!raw) return raw;
+  const meta = raw.meta || {
+    track_id: raw.id || `curriculum-${trackKey}`,
+    level: raw.level || trackKey,
+    title: raw.name || raw.name_id || `Kurikulum ${trackKey.toUpperCase()}`,
+    version: '1.0.0',
+    total_units: raw.units ? raw.units.length : 0,
+    authoritative: true,
+  };
+  return {
+    ...raw,
+    meta,
+    units: raw.units || [],
+  };
+}
+
 /**
  * Load any curriculum track (N5, N4, N3, N2, N1, SSW Kaigo, SSW Food, SSW Construction)
  */
@@ -301,29 +318,35 @@ export async function loadCurriculumTrack(
   const target = fileMap[trackKey];
   if (!target) return null;
 
-  if (!(window as any)[target.varKey]) {
+  const hasWindow = typeof window !== 'undefined';
+  let raw: any = hasWindow ? (window as any)[target.varKey] : null;
+
+  if (!raw && hasWindow) {
     try {
       await loadScript(target.src);
+      raw = (window as any)[target.varKey];
     } catch {
       // Fallback: fetch JSON
-      try {
-        const jsonRes = await fetch(`/data/curriculum/curriculum-${trackKey}.json`);
-        if (jsonRes.ok) {
-          const jsonData = await jsonRes.json();
-          curriculumCache[trackKey] = jsonData;
-          return jsonData;
-        }
-      } catch (err2) {
-        console.warn(`[dataManager] Failed to load curriculum: ${trackKey}`, err2);
-        return null;
-      }
     }
   }
 
-  const raw = (window as any)[target.varKey] as CurriculumTrackData;
-  if (raw) {
-    curriculumCache[trackKey] = raw;
+  if (!raw) {
+    try {
+      const jsonRes = await fetch(`/data/curriculum/curriculum-${trackKey}.json`);
+      if (jsonRes.ok) {
+        raw = await jsonRes.json();
+      }
+    } catch (err2) {
+      console.warn(`[dataManager] Failed to load curriculum: ${trackKey}`, err2);
+      return null;
+    }
   }
-  return raw || null;
+
+  if (raw) {
+    const normalized = normalizeTrackData(raw, trackKey);
+    curriculumCache[trackKey] = normalized;
+    return normalized;
+  }
+  return null;
 }
 
