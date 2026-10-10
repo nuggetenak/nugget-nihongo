@@ -17,6 +17,50 @@ export interface PatchNote {
 
 export const PATCH_NOTES_HISTORY: PatchNote[] = [
   {
+    version: 'v18.0.0',
+    releaseName: 'Studio Pembelajaran Berbasis Riset SLA & Latihan Tersemat Mandiri',
+    date: '10 Oktober 2026',
+    type: 'major',
+    highlights: [
+      'Dedicated Full-Page Learning Studio (LessonStudyPage) Menggantikan Infinite Scroll Vertikal',
+      'Integrasi Kerangka Pedagogis 5W1H Berbasis Riset Akuisisi Bahasa Kedua (Processability Theory & Analisis Kontrasif L1)',
+      '100% Latihan Tersemat di Tempat (Zero Menu-Jumping) Tanpa Memental Pembelajar ke Menu Arena Kuis',
+      'Umpan Balik Instan & Putaran Koreksi Otomatis (Retry Loop) untuk Setiap Soal yang Keliru',
+      'Handoff Memori Otomatis ke Algoritma FSRS Setelah Mencapai Skor Kelulusan ≥ 80%',
+      'Sintesis Suara Offline Bahasa Jepang (Web Speech API) dengan Pilihan Kecepatan 0.8x dan 1.0x',
+      'Tantangan Komunikasi Nyata Berstandar CEFR-J (Can-Do Real-World Challenge) & Kunci Jawaban Model Percakapan',
+      'Anti-Leakage Layout Terverifikasi: 0px Horizontal Overflow di Seluruh Perangkat (iPhone SE hingga Desktop)',
+    ],
+    details: [
+      {
+        category: 'Dedicated Studio Belajar & Stepper 4-Tahap',
+        items: [
+          'Penggantian scrolling vertikal panjang dengan halaman studio mandiri yang fokus dan bebas distraksi.',
+          'Bilah Stepper 4-Tahap: 1. Dialog Otentik, 2. Bedah Pola & 5W1H, 3. Latihan di Tempat, 4. Verifikasi Can-Do.',
+          'Navigasi mulus antar pelajaran dalam satu unit atau unit berikutnya tanpa perlu bolak-balik ke menu katalog.',
+        ],
+      },
+      {
+        category: 'Kerangka Pedagogis 5W1H Berbasis Riset SLA',
+        items: [
+          'WHAT: Rangkuman target kalimat, pola gramatikal, dan kosakata pokok.',
+          'WHY: Justifikasi kognitif ilmiah (Processability Theory Pienemann, Semantic Clustering Tinkham, Analisis Kontrasif Sutedi) dengan kartu akordeon progressive disclosure.',
+          'WHO & WHEN: Konteks sosiolinguistik, relasi hierarkis lawan bicara (Teineigo/Sonkeigo), dan aturan pantangan budaya.',
+          'SCENARIO: Studi kasus situasional nyata di Jepang (balai kota, rumah sakit, tempat kerja).',
+          'EDGE CASES: Analisis kontrasif mendalam (Contrastive Copula Trap, partikel WA vs GA, batasan penggunaan).',
+        ],
+      },
+      {
+        category: 'Latihan Tersemat 100% In-Place (Zero Menu-Jumping)',
+        items: [
+          'Seluruh latihan interaktif (susun kata, cloze partikel, spot the edge case) dikerjakan langsung di dalam halaman materi.',
+          'Sistem koreksi cerdas: soal yang dijawab salah otomatis dimasukkan ke putaran koreksi (retry loop) hingga tuntas.',
+          'Pencapaian skor kelulusan (≥ 80%) secara otomatis menginjeksi kartu tata bahasa dan kosakata ke antrean FSRS Beranda.',
+        ],
+      },
+    ],
+  },
+  {
     version: 'v17.1.0',
     releaseName: 'Desain Seluler Adaptif & Optimasi Lintas Perangkat',
     date: '10 Oktober 2026',

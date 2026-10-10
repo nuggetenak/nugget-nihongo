@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BookOpen, ChevronRight, Volume2, Sparkles } from 'lucide-react';
 import { loadBook, BookData, NormalizedVocab, NormalizedGrammar } from '../../lib/data/dataManager';
 import { speakJapanese } from '../../lib/audio/tts';
+import { useAppStore } from '../../store/useAppStore';
 
 interface BookTrackBrowserProps {
   vocabList: NormalizedVocab[];
@@ -14,6 +15,7 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
   grammarList,
   onSelectItem,
 }) => {
+  const { openLessonStudy } = useAppStore();
   const [selectedBookKey, setSelectedBookKey] = useState<'minna1' | 'minna2' | 'irodori-a1' | 'irodori-a2-1'>('minna1');
   const [bookData, setBookData] = useState<BookData | null>(null);
   const [selectedChapter, setSelectedChapter] = useState<number>(1);
@@ -136,16 +138,27 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
           {/* Chapter Content Details */}
           <div className="md:col-span-2 space-y-6">
             {/* Header info */}
-            <div className="bg-surface-2 border border-accent/20 rounded-2xl p-5 space-y-1">
-              <span className="text-[10px] font-bold uppercase tracking-wider text-accent">
-                Bab {selectedChapter} · Kurikulum Buku
-              </span>
-              <h3 className="text-lg font-bold text-appText-bright">
-                {currentUnit?.topic || 'Materi Pelajaran'}
-              </h3>
-              <div className="text-xs text-appText-muted">
-                {currentUnit?.vocab_ids?.length || 0} Kosakata terkait · {currentUnit?.grammar_ids?.length || 0} Pola Tata Bahasa
+            <div className="bg-surface-2 border border-accent/20 rounded-2xl p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 shadow-sm">
+              <div className="space-y-1">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-accent">
+                  Bab {selectedChapter} · Kurikulum Buku
+                </span>
+                <h3 className="text-lg font-bold text-appText-bright">
+                  {currentUnit?.topic || 'Materi Pelajaran'}
+                </h3>
+                <div className="text-xs text-appText-muted">
+                  {currentUnit?.vocab_ids?.length || 0} Kosakata terkait · {currentUnit?.grammar_ids?.length || 0} Pola Tata Bahasa
+                </div>
               </div>
+
+              <button
+                type="button"
+                onClick={() => openLessonStudy('n5', 'unit-n5-01', 'les-n5-u01-01', 'book')}
+                className="min-h-[44px] px-5 py-2.5 rounded-xl bg-accent text-bg font-extrabold text-xs shadow-md hover:brightness-110 flex items-center justify-center gap-2 active:scale-95 shrink-0"
+              >
+                <BookOpen className="w-4 h-4" />
+                <span>Pelajari di Studio Bab Ini</span>
+              </button>
             </div>
 
             {/* Vocab in this Chapter */}

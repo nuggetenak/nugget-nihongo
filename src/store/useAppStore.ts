@@ -11,10 +11,23 @@ export interface ToastMessage {
   duration?: number;
 }
 
+export interface ActiveLessonContext {
+  trackId: string;
+  unitId: string;
+  lessonId: string;
+  trackType?: 'curriculum' | 'book' | 'jlpt';
+}
+
 export interface AppState {
   // Navigation & Active View
-  activeTab: 'home' | 'materi' | 'quiz' | 'kebun' | 'sensei' | 'settings' | 'about';
+  activeTab: 'home' | 'materi' | 'quiz' | 'kebun' | 'sensei' | 'settings' | 'about' | 'study';
   setActiveTab: (tab: AppState['activeTab']) => void;
+
+  // Active Dedicated Study Studio
+  activeLessonContext: ActiveLessonContext | null;
+  openLessonStudy: (trackId: string, unitId: string, lessonId: string, trackType?: 'curriculum' | 'book' | 'jlpt') => void;
+  closeLessonStudy: () => void;
+  injectLessonItemsToFSRS: (grammarIds: string[], vocabIds: string[]) => void;
 
   // Level & Search Filter
   selectedLevel: JLPTLevel | 'all';
@@ -98,13 +111,29 @@ function getStoredCards(): Record<string, { card: FSRSCard; source?: string }> {
   }
 }
 
+function getInitialLessonContext(): { trackId: string; unitId: string; lessonId: string; trackType: 'curriculum' | 'book' | 'jlpt' } | null {
+  if (typeof window === 'undefined') return null;
+  const hash = window.location.hash || '';
+  if (!hash.startsWith('#study')) return null;
+  const qIndex = hash.indexOf('?');
+  if (qIndex === -1) return null;
+  const params = new URLSearchParams(hash.substring(qIndex + 1));
+  const trackId = params.get('track') || 'n5';
+  const lessonId = params.get('lesson') || '';
+  const unitId = params.get('unit') || '';
+  const trackType = (params.get('type') || 'curriculum') as any;
+  if (!lessonId) return null;
+  return { trackId, unitId, lessonId, trackType };
+}
+
 function getInitialTab(): AppState['activeTab'] {
   if (typeof window === 'undefined') return 'home';
-  const hash = (window.location.hash || '').replace('#', '').toLowerCase();
-  if (hash === 'browse') return 'materi';
-  if (hash === 'stats') return 'kebun';
-  const validTabs: AppState['activeTab'][] = ['home', 'materi', 'quiz', 'kebun', 'sensei', 'settings', 'about'];
-  return validTabs.includes(hash as AppState['activeTab']) ? (hash as AppState['activeTab']) : 'home';
+  const rawHash = (window.location.hash || '').replace('#', '').toLowerCase();
+  const baseTab = rawHash.split('?')[0];
+  if (baseTab === 'browse') return 'materi';
+  if (baseTab === 'stats') return 'kebun';
+  const validTabs: AppState['activeTab'][] = ['home', 'materi', 'quiz', 'kebun', 'sensei', 'settings', 'about', 'study'];
+  return validTabs.includes(baseTab as AppState['activeTab']) ? (baseTab as AppState['activeTab']) : 'home';
 }
 
 export const useAppStore = create<AppState>((set, get) => ({
@@ -115,6 +144,83 @@ export const useAppStore = create<AppState>((set, get) => ({
       try {
         history.replaceState(null, '', '#' + activeTab);
       } catch {}
+    }
+  },
+
+  activeLessonContext: getInitialLessonContext(),
+  openLessonStudy: (trackId, unitId, lessonId, trackType = 'curriculum') => {
+    set({
+      activeLessonContext: { trackId, unitId, lessonId, trackType },
+      activeTab: 'study',
+    });
+    if (typeof window !== 'undefined') {
+      try {
+        history.replaceState(null, '', '#study?track=' + trackId + '&unit=' + unitId + '&lesson=' + lessonId + '&type=' + trackType);
+      } catch {}
+    }
+  },
+  closeLessonStudy: () => {
+    set({
+      activeLessonContext: null,
+      activeTab: 'materi',
+    });
+    if (typeof window !== 'undefined') {
+      try {
+        history.replaceState(null, '', '#materi');
+      } catch {}
+    }
+  },
+
+  injectLessonItemsToFSRS: (grammarIds, vocabIds) => {
+    const currentCards = { ...get().cards };
+    const nowIso = new Date().toISOString();
+    let updated = false;
+
+    vocabIds.forEach((vid) => {
+      if (!currentCards[vid]) {
+        currentCards[vid] = {
+          card: {
+            due: nowIso,
+            stability: 1.0,
+            difficulty: 4.5,
+            elapsed_days: 0,
+            scheduled_days: 1,
+            reps: 1,
+            lapses: 0,
+            state: 1,
+          },
+          source: 'vocab',
+        };
+        updated = true;
+      }
+    });
+
+    grammarIds.forEach((gid) => {
+      if (!currentCards[gid]) {
+        currentCards[gid] = {
+          card: {
+            due: nowIso,
+            stability: 1.2,
+            difficulty: 4.8,
+            elapsed_days: 0,
+            scheduled_days: 1,
+            reps: 1,
+            lapses: 0,
+            state: 1,
+          },
+          source: 'grammar',
+        };
+        updated = true;
+      }
+    });
+
+    if (updated) {
+      set({ cards: currentCards });
+      if (typeof window !== 'undefined') {
+        try {
+          localStorage.setItem('nn_fsrs_cards', JSON.stringify(currentCards));
+        } catch {}
+      }
     }
   },
 

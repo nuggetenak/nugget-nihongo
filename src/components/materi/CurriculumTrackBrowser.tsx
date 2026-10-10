@@ -116,6 +116,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
     incrementXp,
     setActiveTab,
     setUserSubstratum: setAppSubstratum,
+    openLessonStudy,
   } = useAppStore();
 
   // Category filter: JLPT academic vs SSW vocational
@@ -876,40 +877,15 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                               <div className="flex sm:flex-col items-center gap-2 shrink-0 self-end sm:self-auto">
                                 <button
                                   type="button"
-                                  onClick={() => handleToggleLessonComplete(unit.id, lesson.id)}
-                                  className={`min-h-[44px] px-3.5 py-2 rounded-xl text-xs font-bold transition-colors flex items-center gap-1.5 active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
+                                  onClick={() => openLessonStudy(activeTrackId, unit.id, lesson.id, 'curriculum')}
+                                  className={`min-h-[44px] px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all flex items-center gap-2 active:scale-95 shadow-sm focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
                                     isLessonDone
                                       ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 hover:bg-emerald-500/30'
-                                      : 'bg-accent text-bg shadow-sm hover:brightness-110'
+                                      : 'bg-accent text-bg hover:brightness-110 shadow-md'
                                   }`}
                                 >
-                                  {isLessonDone ? (
-                                    <>
-                                      <CheckCircle2 className="w-3.5 h-3.5" />
-                                      <span>Selesai ✓</span>
-                                    </>
-                                  ) : (
-                                    <>
-                                      <Circle className="w-3.5 h-3.5" />
-                                      <span>Tandai Selesai</span>
-                                    </>
-                                  )}
-                                </button>
-
-                                <button
-                                  type="button"
-                                  onClick={() => {
-                                    if (onNavigateToQuiz) {
-                                      onNavigateToQuiz(activeTrackId, unit.id);
-                                    } else {
-                                      setActiveTab('quiz');
-                                    }
-                                  }}
-                                  className="min-h-[44px] px-3 py-2 rounded-xl bg-surface-3 hover:bg-surface border border-accent/20 text-appText-bright text-xs font-semibold flex items-center gap-1 transition-colors active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none"
-                                  title="Latihan materi di Arena Kuis"
-                                >
-                                  <Zap className="w-3 h-3 text-accent" />
-                                  <span>Latihan</span>
+                                  <BookOpen className="w-4 h-4" />
+                                  <span>{isLessonDone ? 'Ulas Pelajaran' : 'Mulai Belajar'}</span>
                                 </button>
                               </div>
                             </div>

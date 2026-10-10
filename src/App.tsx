@@ -30,6 +30,7 @@ import { KebunPage } from './pages/KebunPage';
 import { SenseiPage } from './pages/SenseiPage';
 import { SettingsPage } from './pages/SettingsPage';
 import { AboutPage } from './pages/AboutPage';
+import { LessonStudyPage } from './pages/LessonStudyPage';
 
 export const App: React.FC = () => {
   const {
@@ -62,9 +63,28 @@ export const App: React.FC = () => {
   // Listen to browser forward/back hash changes
   useEffect(() => {
     const handleHashChange = () => {
-      const raw = (window.location.hash || '').replace('#', '').toLowerCase();
-      const mapped = raw === 'browse' ? 'materi' : raw === 'stats' ? 'kebun' : raw;
-      const validTabs = ['home', 'materi', 'quiz', 'kebun', 'sensei', 'settings', 'about'] as const;
+      const fullHash = (window.location.hash || '').replace('#', '');
+      const baseTab = fullHash.split('?')[0].toLowerCase();
+      const mapped = baseTab === 'browse' ? 'materi' : baseTab === 'stats' ? 'kebun' : baseTab;
+
+      if (mapped === 'study') {
+        const qIndex = fullHash.indexOf('?');
+        if (qIndex !== -1) {
+          const params = new URLSearchParams(fullHash.substring(qIndex + 1));
+          const trackId = params.get('track') || 'n5';
+          const lessonId = params.get('lesson') || '';
+          const unitId = params.get('unit') || '';
+          const trackType = (params.get('type') || 'curriculum') as any;
+          if (lessonId) {
+            useAppStore.getState().openLessonStudy(trackId, unitId, lessonId, trackType);
+            return;
+          }
+        }
+        setActiveTab('study');
+        return;
+      }
+
+      const validTabs = ['home', 'materi', 'quiz', 'kebun', 'sensei', 'settings', 'about', 'study'] as const;
       if (validTabs.includes(mapped as any)) {
         setActiveTab(mapped as any);
       }
@@ -135,6 +155,8 @@ export const App: React.FC = () => {
         return <SettingsPage />;
       case 'about':
         return <AboutPage />;
+      case 'study':
+        return <LessonStudyPage />;
       default:
         return <HomePage />;
     }
