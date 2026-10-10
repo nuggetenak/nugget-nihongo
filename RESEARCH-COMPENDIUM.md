@@ -1,8 +1,8 @@
 # NUGGET NIHONGO — EMPIRICAL SLA RESEARCH COMPENDIUM
 ## Master Academic Evidence Base & Curriculum Architecture Guide
-**Corpus Version:** v22 (Universal Empirical Verification & DOI Hardening: 420+ Verified DOIs, 100% Accounted For)  
-**Total Unique Citations:** 765  
-**Verified DOIs / Canonical Records:** 420+ Verified DOIs | 100% Accounted For  
+**Corpus Version:** v23 (Universal Empirical Verification & Audit Hardening: 512 Verified DOIs, 100% Accounted For)  
+**Total Unique Citations:** 765+  
+**Verified DOIs / Canonical Records:** 512 Verified DOIs | 100% Accounted For (Zero pending flags across all 23 section files)  
 **Target Domain:** Indonesian Adult Learners of Japanese as a Foreign Language (SSW / Tokutei Ginou & General Academic)
 
 ---
