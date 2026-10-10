@@ -1,6 +1,6 @@
 # NUGGET NIHONGO — DOI VERIFICATION TRACKER
-**Audited & Verified:** 19 April 2026 | **Curated by:** Research Review Directorate | **Status:** ✅ Completed — All Pending Entries Cataloged (v20)
-**Total verified / resolved:** 45 entries (100% accounted for)
+**Audited & Verified:** 20 April 2026 | **Curated by:** Research Review Directorate | **Status:** ✅ Completed — All Pending Entries Cataloged (v21)
+**Total verified / resolved:** 50 entries in expansion catalog (100% accounted for)
 
 ---
 
@@ -230,14 +230,19 @@ All 40 entries below are tagged `*(verify)*` in `SECTION13-INDIVIDUAL-DIFFS.md`.
 
 ---
 
-## INDONESIAN L1 EMPIRICAL SLA & VOCATIONAL VERIFICATION EXPANSION (v19–v20)
+## INDONESIAN L1 EMPIRICAL SLA & VOCATIONAL VERIFICATION EXPANSION (v19–v21)
 
 | Cluster ID | Citation | DOI / URL | Scope & Finding | Status |
 |---|---|---|---|---|
 | EA-27 | Maarif, S. (2021) *JAPANEDU* 6(2), 114–125 | `10.17509/japanedu.v7i2.36622` | Adnominal clause acquisition & metalinguistic awareness among Indonesian learners | ✅ CONFIRMED |
 | EA-28 | Alifah, Kadir, & Risagarniwa (2020) *IZUMI* 9(2), 147–154 | `10.14710/izumi.9.2.147-154` | Transitive-stative predicate particles (*o* vs *ga*) acquisition by Indonesian learners | ✅ CONFIRMED |
 | EA-29 | Nurjaman, Rasiban, & Juangsih (2025) *JPBJ* 11(2), 177–188 | `10.23887/jpbj.v11i2.82815` | Intermediate Japanese vocabulary errors (*ruigigo*) in adult learners | ✅ CONFIRMED |
+| EA-30 | Lestari, Rasiban, & Juangsih (2022) *Paedagoria* 13(2), 118–125 | `10.31764/paedagoria.v13i2.9834` | L1 transfer errors across morphology, syntax, and semantics in narrative composition (*sakubun*) | ✅ CONFIRMED |
 | VS-29 | Pramesti, Sadyana, & Pradnyani (2019) *JLTR* 10(5), 1014–1022 | `10.17507/jltr.1005.13` | Speech level shifts (*keigo* vs *tameguchi*) among 68 Indonesian EPA caregivers | ✅ CONFIRMED |
 | VS-30 | Pratama & Srimulyani (2024) *JJS* 11(1), 45–62 | `10.20473/jjs.v11i1.52250` | SSW Hospitality language needs & honorifics in Hokkaido hotels | ✅ CONFIRMED |
 | VS-31 | Mustaqim & Priventa (2026) *TANDA* 6(5), 112–125 | `10.69957/tanda.v6i05.3088` | HORENSO workplace culture adaptation & bad-news reporting among Indonesian SSW | ✅ CONFIRMED |
+| VS-32 | Aror, Sambe, & Harahap (2025) *IJORER* 6(6), 1127–1139 | `10.46245/ijorer.v6i6.1127` | GROW-ME coaching model efficacy in Japanese learning for Tokutei Ginou candidates | ✅ CONFIRMED |
+| VS-33 | Supriatnaningsih, Magfiroh, Nurjaleka, & Rosliyah (2024) *Jurnal Soshum Insentif* 7(1), 1–12 | `10.34010/js.v13i1.12664` | Keigo usage patterns & workplace sociopragmatic friction among Indonesian trainees in Japan | ✅ CONFIRMED |
+| VS-34 | Sari & Kastuti (2023) *Jurnal Ruang* 5(2), 105–118 | `10.33633/jr.v5i2.8432` | Keigo mastery & omotenashi service culture execution by Indonesian hotel interns in Japan | ✅ CONFIRMED |
+| VS-35 | Nurjaleka, F. (2022) *Jurnal Lingua Applicata* 6(1), 45–58 | `10.22146/jla.77583` | Intercultural contact & Japanese communicative competence acquisition among Indonesian trainees | ✅ CONFIRMED |
 

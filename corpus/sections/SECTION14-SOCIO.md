@@ -260,6 +260,28 @@ Roever (2011) menyediakan perspektif dari testing pragmatics yang relevan untuk 
 
 ---
 
+## §14.7 — TOKUTEI GINŌ TIER 2 SUPERVISORY PRAGMATICS & INTERCULTURAL LEADERSHIP
+
+### Background & Operational Scope
+With the statutory expansion of Tokutei Ginō Tier 2 (特定技能2号) across manufacturing, construction, accommodation, agriculture, food service, and food manufacturing, foreign workers are no longer restricted to entry-level task execution under direct supervision. Tier 2 workers serve as operational leaders (*gemba rīdā* / 現場リーダー), floor foremen, line instructors, and shift coordinators. This shift from subordinate execution to supervisory responsibility fundamentally transforms the required sociopragmatic repertoire:
+1. **Upward Deference & Institutional Representation:** Reporting to Japanese factory directors, plant managers, and regulatory auditors requires advanced *Kenjōgo* (謙譲語) and *Sonkeigo* (尊敬語), surpassing basic *teineigo* (です/ます).
+2. **Downward Instructional Pragmatics (指導・是正):** Delivering corrective feedback (*shidō* / 指導, *chūi* / 注意) to junior trainees without resorting to abrasive bare imperatives (*nasai*, *shiro*) or overly lax plain forms that undermine workplace discipline. Supervisors must employ mitigating modal constructions (*~te kudasai*, *~yō ni shite kudasai*, *~shite kureru to tasukaru*) to maintain both safety compliance and worker morale.
+3. **Lateral Conflict Mediation:** De-escalating intercultural misunderstandings between junior foreign workers (Indonesian, Vietnamese, Filipino) and senior Japanese craftspeople (*shokunin*).
+
+### Empirical Evidence from Indonesian Trainees in Japan
+Recent empirical fieldwork directly validates this pragmatic complexity:
+- **Supriatnaningsih, Magfiroh, Nurjaleka, & Rosliyah (2024) [VS-33]:** In a sociolinguistic investigation of Indonesian trainees in Japanese enterprises, the authors observed that while workers consistently achieve baseline *teineigo* competence, they encounter acute pragmatic friction during vertical status shifts. Trainees frequently default to invariant polite forms in high-stress operational moments, leading Japanese supervisors to perceive them as either overly distant or insufficiently decisive. The study demonstrates that explicit instruction in vertical honorific shifts and supervisory reporting frameworks is essential for career progression into managerial roles.
+- **Sari & Kastuti (2023) [VS-34]:** Examining Indonesian interns in the Japanese hospitality sector, the authors analyzed keigo acquisition within the framework of *omotenashi* (おもてなし). Front-line service and supervisory oversight require nuanced command of sonkeigo and kenjōgo formulas (e.g., *shōchi itashimashita*, *mōshiwake gozaimasen*) alongside situational body language and facial pragmatics. Inability to execute these formulaic routines fluently triggers customer dissatisfaction and supervisory reprimand.
+
+### Pedagogical & Deck Architecture Implications for Nugget Nihongo
+1. **Tier 2 Supervisory Pragmatics Sub-Deck:** Develop targeted scenario-based cards simulating floor leadership tasks:
+   - *Line Startup Briefing (Asachō / 朝礼):* Formulating clear, encouraging shift objectives using polite imperative mitigators.
+   - *Corrective Intervention (Chūi / 注意):* Correcting a junior worker's unsafe PPE usage or defective assembly posture without triggering face loss (*malu* / 面子): *「〜すると危ないから、次から〜するように気をつけてね」*.
+   - *Escalating Bad News to Plant Managers (Jiko Hōkoku / 事故報告):* Structuring high-stakes error disclosures using humble constructions (*「大変申し訳ございません。直ちに〜を確認いたします」*).
+2. **Cross-Referenced Foundations:** Aligns directly with §15.2 (Prometric CBT & JAVADA Business Career Kentei syllabus on production management, Kaizen, and KYT), §8.11.3 (mitigating *malu* in public feedback), and §5.5.24 (mitigating L1 pragmatic transfer in directives and requests).
+
+---
+
 ## CITATION INDEX SUMMARY
 
 | ID | Author(s) | Year | Section |
@@ -278,8 +300,10 @@ Roever (2011) menyediakan perspektif dari testing pragmatics yang relevan untuk 
 | SC-26 | Taguchi | 2011 | §14.6 |
 | SC-27 | Cohen | 1996 | §14.6 |
 | SC-28 | Roever | 2011 | §14.6 |
+| VS-33 | Supriatnaningsih et al. | 2024 | §14.7 |
+| VS-34 | Sari & Kastuti | 2023 | §14.7 |
 
-**Total new citations: 14 (SC-08 — SC-28)**
+**Total new citations: 14 (SC-08 — SC-28) + 2 cross-sectoral vocational studies (VS-33, VS-34)**
 
 ---
 

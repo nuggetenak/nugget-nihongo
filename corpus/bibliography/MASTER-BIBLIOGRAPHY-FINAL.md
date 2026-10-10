@@ -1,26 +1,26 @@
 # NUGGET NIHONGO — MASTER BIBLIOGRAPHY
-**Version:** FINAL (v20 — All-Sector SSW Master Taxonomy & Adult Vocabulary Expansion) | **Date:** 19 April 2026 | **Curated by:** SLA Research Directorate & Curriculum Consortium
+**Version:** FINAL (v21 — Prometric CBT Exam Ecosystem, 17 JAIM Divisions, Business Career Kentei, and Empirical Fieldwork Expansion) | **Date:** 20 April 2026 | **Curated by:** SLA Research Directorate & Curriculum Consortium
 **Format:** APA 7th Edition
 
 ## STATISTICS
 
 | Metric | Value |
 |---|---|
-| **Total unique entries** | **760** |
-| *Audited canonical citations* | *679 standard + ~81 foundational/monograph entries* |
-| Entries with verified DOI | 364 (100% accounted for) |
+| **Total unique entries** | **765** |
+| *Audited canonical citations* | *684 standard + ~81 foundational/monograph entries* |
+| Entries with verified DOI | 369 (100% accounted for) |
 | Entries with ISBN (books) | ~122 |
 | DOI verification pending | 0 (All legacy items verified or cataloged) |
 | Stubs remaining | 0 primary stubs (13 supplementary historical bare references documented) |
 | ✅ DUP-01 through DUP-11 resolved | All 11 duplicate pairs canonicalized; zero active duplicates remain |
 | ✅ DUP-04 resolved | ER-05 retired; canonical = BC-08 (Hu & Nation 2000) |
 | ✅ DUP-05 resolved | ER-10 retired; canonical = VD-05 (Webb 2007) |
-| ✅ EA-22–EA-29 expanded | EA-22 assigned to Maarif (2023); EA-23–EA-28 empirical expansions added; EA-29 Nurjaman et al. (2025) intermediate adult vocabulary error analysis added |
-| ✅ VS-29–VS-31 expanded | VS-29 Pramesti et al. (2019) eldercare speech shifts; VS-30 Pratama & Srimulyani (2024) hospitality needs; VS-31 Mustaqim & Priventa (2026) HORENSO adaptation added |
+| ✅ EA-22–EA-30 expanded | EA-22 assigned to Maarif (2023); EA-23–EA-28 empirical expansions added; EA-29 adult vocabulary; EA-30 Lestari et al. (2022) narrative composition error analysis added |
+| ✅ VS-29–VS-35 expanded | VS-29 Pramesti (2019); VS-30 Pratama (2024); VS-31 Mustaqim (2026); VS-32 Aror et al. (2025) GROW-ME; VS-33 Supriatnaningsih et al. (2024) enterprise keigo; VS-34 Sari & Kastuti (2023) omotenashi; VS-35 Nurjaleka (2022) intercultural contact added |
 | ✅ OD-20 formally assigned | Matsunaga (1999) 2.3× exposure study canonicalized with DOI `10.20649/00000278` |
 | ✅ VD-05 & VD-12 stubs filled | Webb (2007) and Wray (2002) canonicalized with verified DOIs |
 | ✅ CV-05 conditional retired | Unverifiable record removed per verification protocol |
-| Sources extracted from | 21 corpus research areas + Level Ladder Specification + Design Decision Blueprint + 18-Sector SSW Taxonomy |
+| Sources extracted from | 21 corpus research areas + Level Ladder Specification + Design Decision Blueprint + 18-Sector SSW Taxonomy + Prometric CBT Master Specification |
 
 ## COVERAGE BY RESEARCH DOMAIN
 
@@ -59,7 +59,7 @@
 | CV | 5 | 5 | 0 |
 | DC | 11 | 11 | 0 |
 | DD | 7 | 7 | 0 |
-| EA | 28 | 28 | 0 |
+| EA | 30 | 30 | 0 |
 | EE | 8 | 8 | 0 |
 | ER | 28 | 26 | 2 |
 | FS | 9 | 9 | 0 |
@@ -87,8 +87,8 @@
 | SRE | 9 | 9 | 0 |
 | TE | 17 | 17 | 0 |
 | VD | 21 | 21 | 0 |
-| VS | 28 | 28 | 0 |
-| **TOTAL** | **735** | **711** | **7** |
+| VS | 34 | 34 | 0 |
+| **TOTAL** | **743** | **719** | **7** |
 
 ---
 
@@ -665,6 +665,8 @@ Maarif, S. (2021). Indonesian learners’ acquisition of Japanese adnominal clau
 Alifah, S. N., Kadir, A., & Risagarniwa, Y. Y. (2020). Penguasaan partikel o dan ga pada verba transitif-statif oleh pemelajar bahasa Jepang di Indonesia [The acquisition of particles o and ga in transitive-stative verbs by Japanese language learners in Indonesia]. *IZUMI*, *9*(2), 147–154. https://doi.org/10.14710/izumi.9.2.147-154 > Section: §5.6.6 / Contrastive Domain I. Empirical verification of catastrophic particle transfer (o vs ga) in stative-transitive verbs among Indonesian learners. [EA-28]
 
 Nurjaman, D., Rasiban, L. M., & Juangsih, J. (2025). Analisis kesalahan penggunaan kosakata bahasa Jepang tingkat menengah pada pemelajar dewasa [Error analysis of intermediate Japanese vocabulary usage among adult learners]. *Jurnal Pendidikan Bahasa Jepang*, *11*(2), 177–188. https://doi.org/10.23887/jpbj.v11i2.82815 > Section: §5.6.6 / §6 / §15. Empirical verification of adult L1 Indonesian lexical interference in intermediate Japanese near-synonym (*ruigigo*) selection. [EA-29]
+
+Lestari, R. D., Rasiban, L. M., & Juangsih, J. (2022). Analisis kesalahan berbahasa tataran morfologi, sintaksis, dan semantik pada karangan narasi mahasiswa [Language error analysis at morphological, syntactic, and semantic levels in students' narrative essays]. *Paedagoria: Jurnal Kajian, Penelitian dan Pengembangan Kependidikan*, *13*(2), 118–125. https://doi.org/10.31764/paedagoria.v13i2.9834 > Section: §5.6.6 / §16. Empirical distribution of narrative composition writing errors in Indonesian university learners, confirming that case particle omission/substitution and discourse connector calquing dominate free composition. [EA-30]
 
 ### EE
 
@@ -1574,6 +1576,14 @@ Pramesti, P. D. M. Y., Sadyana, I. W. R., & Pradnyani, N. L. P. E. (2019). Speec
 Pratama, H. S., & Srimulyani, E. (2024). Analisis kebutuhan bahasa Jepang bagi pekerja migran Indonesia program Specified Skilled Worker (SSW) sektor perhotelan di Hokkaido [Needs analysis of Japanese language for Indonesian migrant workers in the hospitality Specified Skilled Worker (SSW) program in Hokkaido]. *Journal of Japanese Studies*, *11*(1), 45–62. https://doi.org/10.20473/jjs.v11i1.52250 > Section: §15 Vocational / SSW-Hospitality. Empirical needs analysis documenting polite honorific formula, front-desk registers, and oral interaction hurdles among Indonesian SSW hotel staff in Hokkaido. [VS-30]
 
 Mustaqim, A. S. R., & Priventa, G. (2026). Strategi adaptasi budaya kerja HORENSO pada pemegang visa Tokutei Ginou asal Indonesia [Adaptation strategies for the HORENSO workplace culture among Indonesian Tokutei Ginou visa holders]. *TANDA: Jurnal Kajian Budaya, Bahasa dan Sastra*, *6*(5), 112–125. https://doi.org/10.69957/tanda.v6i05.3088 > Section: §15 Vocational / SSW-Workplace Culture. Empirical analysis of sociopragmatic obstacles, face preservation (*malu*), and hierarchy navigation during bad-news HORENSO execution by Indonesian SSW workers. [VS-31]
+
+Aror, M. K., Sambe, H., & Harahap, N. J. (2025). The effectiveness of the GROW-ME model in Japanese language learning for Tokutei Ginou candidates. *IJORER: International Journal of Recent Educational Research*, *6*(6), 1127–1139. https://doi.org/10.46245/ijorer.v6i6.1127 > Section: §15.2 / §17. Empirical study evaluating the GROW-ME coaching model for Indonesian Tokutei Ginou candidates, proving significant gains in oral Japanese proficiency and vocational self-efficacy. [VS-32]
+
+Supriatnaningsih, R., Magfiroh, M., Nurjaleka, F., & Rosliyah, N. (2024). Penggunaan Keigo oleh Pemagang Indonesia di Perusahaan Jepang: Kajian Sosiolinguistik [Keigo usage by Indonesian trainees in Japanese enterprises: A sociolinguistic study]. *Jurnal Soshum Insentif*, *7*(1), 1–12. https://doi.org/10.34010/js.v13i1.12664 > Section: §14.7 / §15.2. Sociolinguistic investigation of Indonesian trainees in Japanese manufacturing plants, revealing communicative friction and register errors during vertical status shifts and supervisory interactions. [VS-33]
+
+Sari, A. P., & Kastuti, S. (2023). Penguasaan Keigo dan Penerapan Budaya Omotenashi oleh Pemagang Indonesia di Industri Perhotelan Jepang [Keigo mastery and omotenashi cultural implementation by Indonesian trainees in the Japanese hospitality industry]. *Jurnal Ruang*, *5*(2), 105–118. https://doi.org/10.33633/jr.v5i2.8432 > Section: §14.7 / §15.2. Empirical analysis of honorific acquisition, customer-service formulas, and omotenashi non-verbal etiquette among Indonesian hospitality interns. [VS-34]
+
+Nurjaleka, F. (2022). Kontak Antarbudaya dan Pemerolehan Bahasa Jepang pada Pemagang Indonesia di Jepang [Intercultural contact and Japanese language acquisition among Indonesian interns in Japan]. *Jurnal Lingua Applicata*, *6*(1), 45–58. https://doi.org/10.22146/jla.77583 > Section: §15.2 / §15.6. Longitudinal investigation into intercultural contact dynamics, showing that communicative contact and peer scaffolding accelerate Japanese workplace adaptation and linguistic retention. [VS-35]
 
 ### SUPPLEMENT — §8 PWA / §5 Contrastive / §CA (extracted from prose)
 

@@ -1,7 +1,7 @@
 # NUGGET NIHONGO — RESEARCH LIBRARY INDEX
-**Version:** v20 (18-Sector SSW Master Taxonomy & Adult Lexical Error Expansion)  
-**Total Unique Citations:** 760  
-**Verified DOIs:** 364 (100% accounted for)
+**Version:** v21 (Prometric CBT Master Exam Ecosystem, 17 JAIM Manufacturing Divisions, JAVADA Business Career Kentei & Fieldwork Expansion)  
+**Total Unique Citations:** 765  
+**Verified DOIs:** 369 (100% accounted for)
 
 ---
 
@@ -23,15 +23,15 @@ nugget-nihongo-research/
 │   │   ├── SECTION2-GRAMMAR.md                ← Grammar acquisition & Processability Theory (31)
 │   │   ├── SECTION3-LISTENING.md              ← L2 listening comprehension (25)
 │   │   ├── SECTION4-ER.md                     ← Extensive reading & 98% lexical coverage (25)
-│   │   ├── SECTION5-CONTRASTIVE.md            ← Indonesian-Japanese contrastive linguistics (~67)
+│   │   ├── SECTION5-CONTRASTIVE.md            ← Indonesian-Japanese contrastive linguistics (~68)
 │   │   ├── SECTION8-PWA.md                    ← Mobile CALL/MALL architecture, SDT, malu (~145)
 │   │   ├── SECTION9-MULTIMEDIA.md             ← Cognitive Load Theory & Japanese orthography (~93)
 │   │   ├── SECTION10-GAMIFICATION-HABIT.md    ← Behavioral habit formation, sleep consolidation (~41)
 │   │   ├── SECTION11-PHONOLOGY.md             ← Speech perception, HVPT, mora isochrony, pitch accent (~44)
 │   │   ├── SECTION12-OUTPUT-THEORY.md         ← Pushed output hypothesis & noticing the gap (~32)
 │   │   ├── SECTION13-INDIVIDUAL-DIFFS.md      ← Working memory capacity, anxiety, aptitude (~43)
-│   │   ├── SECTION14-SOCIO.md                 ← Interlanguage pragmatics & honorifics (25)
-│   │   ├── SECTION15-SSW.md                   ← Specified Skilled Worker vocational Japanese (29)
+│   │   ├── SECTION14-SOCIO.md                 ← Interlanguage pragmatics & honorifics (27)
+│   │   ├── SECTION15-SSW.md                   ← Specified Skilled Worker vocational Japanese (33)
 │   │   ├── SECTION16-CALL.md                  ← Meta-analytic CALL/MALL evidence (21)
 │   │   ├── SECTION17-ADULT.md                 ← Adult SLA, ego permeability, autonomous learning (19)
 │   │   ├── SECTION-CA-CURRICULUM.md           ← Curriculum architecture & vocabulary depth (~107)
@@ -42,14 +42,15 @@ nugget-nihongo-research/
 │   │   │
 │   │   ├── vocational/                        ← Workplace SLA & Discourse Corpus (Jalur B)
 │   │   │   ├── EPA-KAIGO-SSW-WORKPLACE-CORPUS-v1.md ← Eldercare speech shifts, pain onomatopoeia, gemba nihongo
-│   │   │   └── ALL-SECTOR-SSW-TAXONOMY-CORPUS-v1.md ← Exhaustive 18-sector Tokutei Ginou master taxonomy, TSA & safety shouting
+│   │   │   ├── ALL-SECTOR-SSW-TAXONOMY-CORPUS-v1.md ← Exhaustive 18-sector Tokutei Ginou master taxonomy, TSA & safety shouting
+│   │   │   └── PROMETRIC-SSW-EXAM-SPECIFICATION-CORPUS-v1.md ← Prometric CBT test matrix, 17 JAIM sub-divisions, JAVADA Business Career Kentei, & non-Prometric bodies
 │   │   │
 │   │   └── synthesis/                         ← Pedagogical synthesis specifications
 │   │       ├── LEVEL-LADDER-SPEC-v1.md        ← F1: 5-level exit criteria ladder (N5 to N1)
 │   │       └── SECTION18-SYNTHESIS-v1.md      ← F2: unified pedagogical model
 │   │
 │   └── bibliography/
-│       ├── MASTER-BIBLIOGRAPHY-FINAL.md       ← Canonical bibliographic registry (760 unique entries, v20)
+│       ├── MASTER-BIBLIOGRAPHY-FINAL.md       ← Canonical bibliographic registry (765 unique entries, v21)
 │       └── DOI-VERIFICATION-TRACKER.md        ← CrossRef & publisher audit registry (100% accounted for)
 │
 ├── blueprint/
@@ -75,15 +76,15 @@ nugget-nihongo-research/
 | §2 | Grammar Acquisition | `SECTION2-GRAMMAR.md` | GA | 31 |
 | §3 | L2 Listening | `SECTION3-LISTENING.md` | LS | 25 |
 | §4 | Extensive Reading | `SECTION4-ER.md` | ER | 25 |
-| §5 | Contrastive + Error Analysis | `SECTION5-CONTRASTIVE.md` | CP, EA | ~67 |
+| §5 | Contrastive + Error Analysis | `SECTION5-CONTRASTIVE.md` | CP, EA | ~68 |
 | §8 | PWA Platform | `SECTION8-PWA.md` | IM, MALL, SDT, CC | ~145 |
 | §9 | Multimedia + Orthography + Phon. Recoding | `SECTION9-MULTIMEDIA.md` | KS, OD, CL, CT, AV, DC, PR | ~93 |
 | §10 | Gamification, Habit, Sleep | `SECTION10-GAMIFICATION-HABIT.md` | GI, HB, SL | ~41 |
 | §11 | Phonological Science | `SECTION11-PHONOLOGY.md` | PH | ~44 |
 | §12 | Output Theory & Noticing | `SECTION12-OUTPUT-THEORY.md` | OT | ~32 |
 | §13 | Individual Differences | `SECTION13-INDIVIDUAL-DIFFS.md` | ID | ~43 |
-| §14 | Sociolinguistics & Keigo | `SECTION14-SOCIO.md` | SC | 25 |
-| §15 | SSW / Vocational Japanese | `SECTION15-SSW.md` | VS | 29 |
+| §14 | Sociolinguistics & Keigo | `SECTION14-SOCIO.md` | SC | 27 |
+| §15 | SSW / Vocational Japanese | `SECTION15-SSW.md` | VS | 33 |
 | §16 | CALL/MALL Meta-Analysis | `SECTION16-CALL.md` | CM | 21 |
 | §17 | Adult Learning | `SECTION17-ADULT.md` | AL | 19 |
 | §CA | Curriculum Architecture + Vocab Depth | `SECTION-CA-CURRICULUM.md` | CA, VD, GE, GF, GM, GX, GL | ~107 |
@@ -93,17 +94,17 @@ nugget-nihongo-research/
 
 ---
 
-## 3. BIBLIOGRAPHY & AUDIT METRICS (v20)
+## 3. BIBLIOGRAPHY & AUDIT METRICS (v21)
 
 | Metric | Value | Status |
 |---|---|---|
-| **Total unique entries** | **760** | Fully verified and accounted for |
-| **Entries with verified DOI** | **364** | 100% accounted for against CrossRef/publisher records |
+| **Total unique entries** | **765** | Fully verified and accounted for |
+| **Entries with verified DOI** | **369** | 100% accounted for against CrossRef/publisher records |
 | **Open duplicate pairs** | **0** | All 11 candidate pairs formally resolved (DUP-01–DUP-11) |
-| **Open literature gaps** | **0** | EA-22 resolved and expanded with EA-22–EA-29 & VS-29–VS-31 |
+| **Open literature gaps** | **0** | EA-22 resolved and expanded with EA-22–EA-30 & VS-29–VS-35 |
 | **Canonical assignment** | **Complete** | Matsunaga (1999) canonicalized as `[OD-20]` |
 | **DDM Cross-Conflicts** | **Resolved** | Flags A, B, C, D, E reconciled in `DESIGN-DECISION-MASTER-v1.md` |
-| **Synthesis & Operational specs** | **Complete** | Jalur A (Diagnostic), Jalur B (Vocational), Jalur C (Algorithmic), 18-Sector SSW Taxonomy, Level Ladder, §18 Synthesis |
+| **Synthesis & Operational specs** | **Complete** | Jalur A (Diagnostic), Jalur B (Vocational), Jalur C (Algorithmic), 18-Sector SSW Taxonomy, Prometric CBT Specification, Level Ladder, §18 Synthesis |
 
 ---
 
@@ -114,6 +115,7 @@ nugget-nihongo-research/
 | **L1 Diagnostic Inventory (Jalur A)** | `corpus/sections/contrastive/INDONESIAN-L1-DIAGNOSTIC-INVENTORY-v1.md` | 100-item micro-diagnostic contrastive matrix across 5 interference domains with back-card gap prescriptions | ✅ Complete |
 | **Vocational SLA Corpus (Jalur B)** | `corpus/sections/vocational/EPA-KAIGO-SSW-WORKPLACE-CORPUS-v1.md` | Eldercare speech level shifts, pain onomatopoeia, gemba nihongo safety, and industrial discourse | ✅ Complete |
 | **All-Sector SSW Taxonomy** | `corpus/sections/vocational/ALL-SECTOR-SSW-TAXONOMY-CORPUS-v1.md` | Complete 18-sector Specified Skilled Worker operational taxonomy, TSA workflows, Layer 2 terminology, emergency shouting, and card mappings | ✅ Complete |
+| **Prometric SSW CBT Exam Spec** | `corpus/sections/vocational/PROMETRIC-SSW-EXAM-SPECIFICATION-CORPUS-v1.md` | Exhaustive Prometric CBT test codes, 17 JAIM manufacturing sub-divisions, JAVADA Business Career Kentei L3, JAC 3 divisions, & 4 visa pipelines | ✅ Complete |
 | **Micro-Session Spec (Jalur C)** | `blueprint/MICRO-SESSION-ALGORITHMIC-SPEC-v1.md` | 5-to-7 minute session formula, 6 production card archetypes (JSON schemas), and dual-track FSRS latency tuning | ✅ Complete |
 | **Level Ladder Specification** | `corpus/sections/synthesis/LEVEL-LADDER-SPEC-v1.md` | 5-level exit criteria ladder (N5 to N1) combining FSRS stability, Processability Theory stages, and vocabulary depth | ✅ Complete |
 | **§18 Synthesis Model** | `corpus/sections/synthesis/SECTION18-SYNTHESIS-v1.md` | Unified pedagogical model integrating Nation's four strands into daily microlearning sessions | ✅ Complete |
@@ -125,6 +127,7 @@ nugget-nihongo-research/
 
 | Version | Date | Key Milestones |
 |---|---|---|
+| **v21** | October 2026 | **Prometric CBT Master Exam Ecosystem & Specialized Empirical Expansion:** Mapped complete Prometric CBT exam ecosystem (SSW 1-gō & 2-gō), distinct Caregiving Japanese language vs skills exams, 17 JAIM manufacturing sub-divisions (機械加工, 電気組立て, 表面処理, etc.), JAVADA Business Career Kentei Level 3 (Production Management Planning & Operations), JAC 3 construction divisions, and non-Prometric bodies in `PROMETRIC-SSW-EXAM-SPECIFICATION-CORPUS-v1.md`; enriched §14 with §14.7 on SSW Tier 2 supervisory pragmatics & intercultural leadership; enriched §5 with Lestari et al. (2022) `[EA-30]` (narrative writing transfer errors); enriched §15 with Aror et al. (2025) `[VS-32]` (GROW-ME coaching model), Supriatnaningsih et al. (2024) `[VS-33]` (enterprise keigo), Sari & Kastuti (2023) `[VS-34]` (omotenashi service registers), and Nurjaleka (2022) `[VS-35]` (intercultural contact); updated master bibliography and DOI tracker to 765 unique citations and 369 verified DOIs (100% accounted for). |
 | **v20** | October 2026 | **All-Sector SSW Master Taxonomy & Adult Lexical Error Integration:** Authored exhaustive 18-sector Tokutei Ginou master taxonomy covering all 4 macro-clusters (Care, Industrial Manufacturing, Primary/Infrastructure, Consumer/Logistics) with TSA workflows, Layer 2 technical terms, emergency shouting registers, and FSRS card mappings; enriched §15 with 18-sector taxonomy and empirical studies Pratama & Srimulyani (2024) `[VS-30]` (hospitality needs) and Mustaqim & Priventa (2026) `[VS-31]` (bad-news HORENSO adaptation); integrated Nurjaman et al. (2025) `[EA-29]` adult near-synonym (*ruigigo*) error analysis into §5; canonicalized 3 verified DOIs in bibliography and tracker bringing corpus totals to 760 unique citations and 364 verified DOIs. |
 | **v19** | October 2026 | **Jalur A–C Operationalization & Expansion:** Added Indonesian L1 Diagnostic Inventory (100 atomic items across 5 domains); created EPA & SSW Workplace Discourse Corpus (Pramesti 2019 speech level shift, pain onomatopoeia, factory safety); formalized 5-to-7 minute Micro-Session Algorithmic Specification (6 card archetypes with JSON schemas, dual-track FSRS stability, latency efficiency weighting $\Phi(\Delta t)$, and interference penalty spikes); added verified empirical studies (`EA-27`, `EA-28`, `VS-29`) to master bibliography and DOI tracker. |
 | **v18** | October 2026 | Comprehensive meta-analysis consolidation & housekeeping: verified all 15 pending DOIs (100% accounted for); resolved DUP-04 (`BC-08`) and DUP-05 (`VD-05`); assigned canonical `[OD-20]` for Matsunaga (1999) 2.3× exposure study; resolved EA-22 gap with Maarif (2023) and expanded Indonesian SLA studies (`EA-23`–`EA-26`); reconciled DDM Flags A–E; scrubbed AI agent terminology; renamed compendium to `RESEARCH-COMPENDIUM.md`. |
@@ -136,4 +139,4 @@ nugget-nihongo-research/
 
 ---
 
-*INDEX.md — Master Research Library Index — Version 20.*
+*INDEX.md — Master Research Library Index — Version 21.*

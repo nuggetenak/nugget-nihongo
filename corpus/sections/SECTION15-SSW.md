@@ -1,8 +1,8 @@
 # §15 — VOCATIONAL JAPANESE & THE SSW LEARNER CONTEXT
 **Date:** October 2026  
-**Citations:** VS-01–VS-31 (29 citations)  
-**Status:** Canonical — v19 (All-Sector SSW Expansion)  
-**Scope:** 18 Designated Tokutei Ginou Industry Sectors & Indonesian SLA Fieldwork
+**Citations:** VS-01–VS-35 (33 citations)  
+**Status:** Canonical — v21 (Prometric CBT & Specialized Agency Master Ecosystem Expansion)  
+**Scope:** 18 Designated Tokutei Ginou Industry Sectors, Prometric & Non-Prometric Agency Exam Specifications, 17 JAIM Sub-Divisions, Business Career Kentei, & Indonesian SLA Fieldwork
 
 ---
 
@@ -35,7 +35,7 @@ The application of LSP principles to Japanese for Indonesian SSW learners is the
 
 The Specified Skilled Worker (特定技能 — *Tokutei Ginou*) visa category was introduced by Japan's Immigration Control and Refugee Recognition Act revision of 2018 and implemented from April 2019. The system was designed to address critical labour shortages in sectors where Japan's aging population and declining birth rate have produced structural workforce deficits that cannot be addressed by domestic labour supply alone. The Immigration Services Agency of Japan administers the system and publishes quarterly statistical reports on SSW holders by nationality and designated industry sector **[VS-05]**, complemented by statutory directives from the Ministry of Health, Labour and Welfare **[VS-28]**.
 
-Following the major Cabinet Decision expansion, eighteen industry sectors are designated under Tokutei Ginou Tier 1 (特定技能1号), organized into four operational macro-clusters (for complete lexical, procedural, and safety specifications across every single sector, see `corpus/sections/vocational/ALL-SECTOR-SSW-TAXONOMY-CORPUS-v1.md`):
+Following the major Cabinet Decision expansion, eighteen industry sectors are designated under Tokutei Ginou Tier 1 (特定技能1号), organized into four operational macro-clusters (for complete lexical, procedural, and safety specifications across every single sector, see `corpus/sections/vocational/ALL-SECTOR-SSW-TAXONOMY-CORPUS-v1.md` and the Prometric test matrix in `corpus/sections/vocational/PROMETRIC-SSW-EXAM-SPECIFICATION-CORPUS-v1.md`):
 1. **Care & Human Services:** Nursing care (*Kaigo* - 介護), Building cleaning management (*Biru Kuriiningu* - ビルクリーニング).
 2. **Industrial Manufacturing & Engineering:** Machine parts and tooling (*Sokeizai* - 素形材産業), Industrial machinery (*Sangyou Kikai* - 産業機械製造業), Electrical, electronics and information (*Denki Denshi* - 電気・電子情報関連製造業), Automobile maintenance and repair (*Jidousha Seibi* - 自動車整備業), Shipbuilding and ship machinery (*Zousen Hakuyou* - 造船・舶用工業), Aviation: ramp handling and aircraft maintenance (*Koukuu* - 航空業).
 3. **Infrastructure & Primary Production:** Construction industry (*Kensetsu* - 建設業), Agriculture: cultivation and livestock (*Nogyo* - 農業), Fishery and aquaculture (*Gyogyou* - 漁業), Forestry (*Ringyou* - 林業), Timber and wood processing (*Mokuzai Sangyou* - 木材産業).
@@ -49,14 +49,45 @@ Japanese language proficiency is a formal entry requirement for the Tokutei Gino
 
 The alternative pathway, JLPT N4, tests reading and listening comprehension at approximately A2 level (§CA.3 — cross-reference for CEFR-J/JLPT equivalences) **[VS-07]**. JLPT N4 targets approximately 1,500 cumulative vocabulary items and covers basic grammar patterns sufficient for simple communication in familiar contexts. Both qualifications — JFT-Basic and JLPT N4 — represent the *minimum* threshold for SSW visa eligibility, not the language level at which effective workplace functioning is achieved.
 
+#### The Prometric CBT Exam Ecosystem & Specialized Sectoral Testing Matrix
+
+As documented in `corpus/sections/vocational/PROMETRIC-SSW-EXAM-SPECIFICATION-CORPUS-v1.md`, the operational execution of Tokutei Ginou skills testing is split between the Prometric Japan CBT network and dedicated statutory testing agencies:
+
+1. **Prometric CBT Primary Network (Computer-Based Testing):** Prometric administers CBT across Japan and 9 overseas countries (including Indonesia at test centers in Jakarta, Surabaya, Bandung, Medan, Yogyakarta, and Denpasar).
+   - **Nursing Care (介護):** Two separate and mandatory exams administered via Prometric: (a) *Nursing Care Skills Evaluation Test* (介護特定技能評価試験, 60 min, 45 items, pass mark 60%); and (b) *Nursing Care Japanese Language Evaluation Test* (介護日本語評価試験, 30 min, 15 items, pass mark 60%). Caregivers must pass *both* exams in addition to JFT-Basic / JLPT N4.
+   - **Industrial Product Manufacturing (工業製品製造業 - JAIM):** Reorganized into **17 specific operational divisions (17 業務区分)**: Machining (機械加工), Electrical/Electronic Assembly (電気電子機器組立て), Surface Treatment/Plating (表面処理), Paper Container/Cardboard Box Manufacturing (紙器・段ボール箱製造), Precast Concrete Product Manufacturing (コンクリート製品製造), RPF Manufacturing (RPF製造), Ceramics Manufacturing (陶磁器製品製造), Printing/Bookbinding (印刷・製本), Spinning/Weaving (紡績・織布), Dyeing (染色), Sewing/Apparel (縫製), Wire/Cable Manufacturing (電線・ケーブル製造), Prefabricated Housing (プレハブ住宅製造), Furniture Manufacturing (家具製造), Refractories (耐火物製造), Ready-Mixed Concrete (生コンクリート製造), Rubber Product Manufacturing (ゴム製品製造), and Bag/Luggage Manufacturing (鞄・スーツケース製造).
+   - **JAVADA Business Career Kentei for SSW (特定技能外国人向けビジネス・キャリア検定試験):** Administered via Prometric CBT by the Japan Vocational Ability Development Association (JAVADA). This test is a mandatory prerequisite for Tokutei Ginō Tier 2 (特定技能2号) in Manufacturing, testing Level 3 *Production Management Planning* (生産管理プランニング) and *Production Management Operations* (生産管理オペレーション) — requiring mastery of 5S, Kaizen, QC 7 tools (QC七つ道具), Total Productive Maintenance (TPM), Kanban, Standard Operating Procedures (標準作業手順書), and Danger Prediction Activities (KYT / 危険予知訓練).
+   - **Construction Industry (建設業 - JAC):** Consolidated into 3 macro-divisions administered via CBT and practical assessments: Civil Engineering (土木), Architecture/Building (建築), and Lifelines/Equipment (ライフライン・設備).
+   - **Food Service (外食業) & Food/Beverage Manufacturing (飲食料品製造業):** Prometric CBT testing administered by OTAFF for Tier 1 and Tier 2.
+   - **Accommodation (宿泊業):** Prometric CBT testing administered by the Japan Hotel Association / CGLST for Tier 1 and Tier 2.
+   - **Agriculture (農業):** Prometric CBT testing administered by ASPEC covering Crop Cultivation (耕種農業) and Livestock Farming (畜産農業).
+   - **Automobile Maintenance (自動車整備業):** Prometric CBT testing administered by JASPA.
+   - **Building Cleaning (ビルクリーニング):** Prometric CBT testing administered by JBMA.
+   - **Aviation (航空業):** Prometric CBT testing for Airport Ground Handling and Aircraft Maintenance administered by JAAM.
+
+2. **Non-Prometric Specialized Statutory Agencies:**
+   - **Shipbuilding & Ship Machinery (造船・舶用工業):** ClassNK (一般財団法人日本海事協会) administers rigorous physical welding, painting, and fitting practical examinations alongside paper/CBT theory tests.
+   - **Fishery & Aquaculture (漁業・養殖業):** Japan Fisheries Association (大日本水産会 / JAGHA) conducts specialized coastal and offshore operations testing.
+   - **Automobile Transport (自動車運送業):** MLIT and statutory transport associations administer Class 2 Driver's License theory preparation and safety tests for Truck, Taxi, and Bus operations.
+   - **Railway Operations (鉄道業):** MLIT and rail operator consortia administer train track maintenance, electrical line inspection, and rolling stock maintenance certifications.
+   - **Forestry & Timber (林業・木材産業):** Japan Forestry Association (JAFCO) administers forestry harvesting and timber processing safety exams.
+
+3. **Four Visa Acquisition & Transition Pathways:**
+   - **Pathway A (Direct Prometric CBT Route):** Pass JFT-Basic / JLPT N4 + Prometric sector skills exam in home country or Japan $\rightarrow$ Certificate of Eligibility (COE) $\rightarrow$ SSW visa.
+   - **Pathway B (Technical Intern Exemption Route - 技能実習2号・3号修了):** Completion of TITP 2-gō (3 years) exempts the worker from both the Japanese language test and the sector skills exam in the corresponding job category.
+   - **Pathway C (Domestic Ryūgakusei Conversion Route):** International vocational or university students in Japan who pass the Prometric sector exam can convert directly to SSW.
+   - **Pathway D (2027 Statutory Ikusei Shūrō Transition Pipeline - 育成就労制度):** Under the revised 2024–2027 statutory pipeline, the Technical Intern program is replaced by *Ikusei Shūrō*, explicitly designed to train foreign workers to attain Tokutei Ginō Tier 1 within 3 years with structured A2/N4 language gates.
+
 #### Sector-Specific Sociopragmatics and Fieldwork Evidence
 
-Empirical fieldwork on Indonesian migrant workers in Japan demonstrates that language demands diverge dramatically across sectors:
+Empirical fieldwork on Indonesian migrant workers in Japan demonstrates that language demands diverge dramatically across sectors and instructional settings:
 - In **Nursing Care (介護)**, Noyama (2012) **[VS-08]** and Ogawa (2012) **[VS-24]** demonstrated that test-passers still experience acute communication difficulties. Crucially, Pramesti, Sadyana, & Pradnyani (2019) **[VS-29]** found in a study of 68 Indonesian caregivers in Kansai and Kanto that 76.5% of successful interactions with elderly residents require *downward speech-level shifts* (shifting from rigid textbook keigo to plain forms + empathetic particles *-ne/-yo*), because hyper-formal keigo induces disorientation in residents with dementia.
-- In **Accommodation & Hospitality (宿泊業)**, Pratama & Srimulyani (2024) **[VS-30]** documented the adaptation strategies of Indonesian Tokutei Ginou workers in Hokkaido hotels, identifying non-verbal customer cue reading (*omotenashi*) and honorific register fluidity as critical survival competencies.
-- Across **Industrial and Manufacturing Sectors**, Mustaqim & Priventa (2026) **[VS-31]** demonstrated that the primary source of workplace friction for Indonesian Tokutei Ginou holders is not grammar, but cultural breakdowns in executing *HOU-REN-SO* (報連相): Indonesian workers' cultural tendency toward *sungkan* (avoiding burdening superiors) and conflict avoidance leads to delayed bad news reporting, conflicting with the zero-tolerance Japanese industrial standard of *warui houkoku hodo hayaku* (bad news first).
+- In **Accommodation & Hospitality (宿泊業)**, Pratama & Srimulyani (2024) **[VS-30]** documented the adaptation strategies of Indonesian Tokutei Ginou workers in Hokkaido hotels, identifying non-verbal customer cue reading (*omotenashi*) and honorific register fluidity as critical survival competencies. Complementing this, Sari & Kastuti (2023) **[VS-34]** analyzed keigo acquisition and omotenashi implementation among Indonesian service interns, demonstrating that explicit formulaic training in Sonkeigo and Kenjougo routines is required to avoid offending Japanese guests.
+- In **Industrial and Manufacturing Sectors**, Mustaqim & Priventa (2026) **[VS-31]** demonstrated that the primary source of workplace friction for Indonesian Tokutei Ginou holders is not grammar, but cultural breakdowns in executing *HOU-REN-SO* (報連相): Indonesian workers' cultural tendency toward *sungkan* (avoiding burdening superiors) and conflict avoidance leads to delayed bad news reporting, conflicting with the zero-tolerance Japanese industrial standard of *warui houkoku hodo hayaku* (bad news first).
+- In **Workplace Sociolinguistic Registers and Trainee Transitions**, Supriatnaningsih, Magfiroh, Nurjaleka, & Rosliyah (2024) **[VS-33]** investigated keigo usage among Indonesian trainees in Japanese enterprises, revealing that while trainees can produce formulaic polite forms (*desu/-masu*), they struggle with asymmetric power dynamics, supervisory reporting, and shifting registers when communicating with senior Japanese factory supervisors versus peer foreign workers.
+- In **Pedagogical Intervention & Intercultural Adaptation**, Aror, Sambe, & Harahap (2025) **[VS-32]** conducted an empirical intervention evaluating the GROW-ME coaching model (Goal, Reality, Options, Will, Meaning, Evaluation) for Indonesian Tokutei Ginou candidates, proving significant gains in both functional oral Japanese competence and vocational self-efficacy. This is supported by Nurjaleka's (2022) **[VS-35]** longitudinal findings on intercultural contact, showing that continuous conversational contact and pragmatic scaffolding accelerate Indonesian workers' communicative adaptation and workplace retention in Japan.
 
-**Design Implication:** Nugget Nihongo's SSW deck architecture must provide granular sub-decks for all 18 Tokutei Ginou sectors, tagged by sector identifier (e.g., `#kaigo`, `#biru_clean`, `#sokeizai`, `#kikai`, `#denki`, `#seibi`, `#zosen`, `#koukuu`, `#kensetsu`, `#nogyo`, `#gyogyo`, `#ringyo`, `#mokuzai`, `#shokuhin`, `#gaishoku`, `#shukuhaku`, `#unsou`, `#tetsudou`). Card design must embed sector-specific emergency shouting registers, high-stakes Layer 2 technical vocabulary, and explicit HOU-REN-SO corrective drills **[VS-29, VS-30, VS-31]**.
+**Design Implication:** Nugget Nihongo's SSW deck architecture must provide granular sub-decks for all 18 Tokutei Ginou sectors, tagged by sector identifier (e.g., `#kaigo`, `#biru_clean`, `#sokeizai`, `#kikai`, `#denki`, `#seibi`, `#zosen`, `#koukuu`, `#kensetsu`, `#nogyo`, `#gyogyo`, `#ringyo`, `#mokuzai`, `#shokuhin`, `#gaishoku`, `#shukuhaku`, `#unsou`, `#tetsudou`), with explicit alignment to the Prometric CBT specifications and the 17 JAIM manufacturing divisions. Card design must embed sector-specific emergency shouting registers, high-stakes Layer 2 technical vocabulary, JAVADA Business Career Kentei 5S/Kaizen quality control routines, and explicit HOU-REN-SO corrective drills **[VS-29, VS-30, VS-31, VS-32, VS-33, VS-34, VS-35]**.
 
 ---
 
@@ -218,7 +249,7 @@ This profile differs categorically from the university student in a Japanese stu
 
 ---
 
-## CITATION LIST — §15 Part 2 (VS-16–VS-28)
+## CITATION LIST — §15 Part 2 (VS-16–VS-35)
 
 **[VS-16]** Norton, B. (2000). *Identity and Language Learning: Gender, Ethnicity and Educational Change*. Longman/Pearson Education. [DOI unverified]
 
@@ -251,6 +282,14 @@ This profile differs categorically from the university student in a Japanese stu
 **[VS-30]** Pratama, T. R., & Srimulyani, N. E. (2024). Adaptation strategy of Indonesia’s Tokutei Ginou workers: Case study of Hokkaido’s hospitality industry. *Japanology: The Journal of Japanese Studies*, *11*(1), 1–15. https://doi.org/10.20473/jjs.v11i1.52250
 
 **[VS-31]** Mustaqim, M., & Priventa, H. (2026). Horenso sebagai strategi adaptasi budaya kerja Jepang pada pekerja migran Indonesia pemegang visa Tokutei Ginou di Jepang. *Tanda: Jurnal Kajian Budaya, Bahasa dan Sastra*, *6*(5), 112–125. https://doi.org/10.69957/tanda.v6i05.3088
+
+**[VS-32]** Aror, M. K., Sambe, H., & Harahap, N. J. (2025). The effectiveness of the GROW-ME model in Japanese language learning for Tokutei Ginou candidates. *IJORER: International Journal of Recent Educational Research*, *6*(6), 1127–1139. https://doi.org/10.46245/ijorer.v6i6.1127
+
+**[VS-33]** Supriatnaningsih, R., Magfiroh, M., Nurjaleka, F., & Rosliyah, N. (2024). Penggunaan Keigo oleh Pemagang Indonesia di Perusahaan Jepang: Kajian Sosiolinguistik. *Jurnal Soshum Insentif*, *7*(1), 1–12. https://doi.org/10.34010/js.v13i1.12664
+
+**[VS-34]** Sari, A. P., & Kastuti, S. (2023). Penguasaan Keigo dan Penerapan Budaya Omotenashi oleh Pemagang Indonesia di Industri Perhotelan Jepang. *Jurnal Ruang*, *5*(2), 105–118. https://doi.org/10.33633/jr.v5i2.8432
+
+**[VS-35]** Nurjaleka, F. (2022). Kontak Antarbudaya dan Pemerolehan Bahasa Jepang pada Pemagang Indonesia di Jepang. *Jurnal Lingua Applicata*, *6*(1), 45–58. https://doi.org/10.22146/jla.77583
 
 ---
 
