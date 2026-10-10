@@ -1621,6 +1621,14 @@ Sari, A. P., & Kastuti, S. (2023). Penguasaan Keigo dan Penerapan Budaya Omotena
 
 Nurjaleka, F. (2022). Kontak Antarbudaya dan Pemerolehan Bahasa Jepang pada Pemagang Indonesia di Jepang [Intercultural contact and Japanese language acquisition among Indonesian interns in Japan]. *Jurnal Lingua Applicata*, *6*(1), 45–58. https://doi.org/10.22146/jla.77583 > Section: §15.2 / §15.6. Longitudinal investigation into intercultural contact dynamics, showing that communicative contact and peer scaffolding accelerate Japanese workplace adaptation and linguistic retention. [VS-35]
 
+Sakamoto, M., Ueda, Y., Doizaki, R., & Shimizu, Y. (2014). Communication Support System Between Japanese Patients and Foreign Doctors Using Onomatopoeia to Express Pain Symptoms. *Journal of Advanced Computational Intelligence and Intelligent Informatics, 18*(6), 1020–1025. https://doi.org/10.20965/jaciii.2014.p1020 > Section: §15 / EPA-Kaigo. Empirical system mapping Japanese bodily pain onomatopoeia (zukizuki, chikuchiku, etc.) to semantic differential scales for foreign healthcare professionals. [VS-36]
+
+Doizaki, R., Matsuda, T., Utsumi, A., & Sakamoto, M. (2015). Constructing a System which Proposes Metaphors Corresponding to the Onomatopoeia Expressing Medical Conditions. *International Journal of Affective Engineering, 15*(2), 127–134. https://doi.org/10.5057/ijae.ijae-d-15-00028 > Section: §15 / EPA-Kaigo. Computational and linguistic modeling of metaphorical correlates for Japanese medical symptom onomatopoeia to support foreign medical communication. [VS-37]
+
+Okuda, H. (2018). Evaluation of Onomatopoeias Concerning the Pain with the Described Subject Evaluation Method in a Young Japanese Group. *Proceedings of the Annual Convention of the Japanese Psychological Association, 82*, 2AM-070. https://doi.org/10.4992/pacjpa.82.0_2am-070 > Section: §15 / EPA-Kaigo. Empirical psychometric evaluation of Japanese pain onomatopoeia describing sensory intensity, temporal continuity, and tissue depth. [VS-38]
+
+Japan National Institute of Occupational Safety and Health (JNIOSH). (2020). *Occupational safety and health guidelines for accident reporting and pointing-and-calling procedures (shiteki koshou) in industrial manufacturing* (Technical Report JNIOSH-TR-No.48). Ministry of Health, Labour and Welfare, Japan. > Section: §15 / Industrial Gemba. Standard industrial safety protocol defining 4-tier emergency escalation, acoustic shouting, and pointing-and-calling cognitive verification. [VS-39]
+
 ### SUPPLEMENT — §8 PWA / §5 Contrastive / §CA (extracted from prose)
 
 Godwin-Jones, R. (2011). Emerging technologies: Mobile apps for language learning. *Language Learning & Technology, 15*(2), 2–11. https://llt.msu.edu/issues/june2011/emerging.pdf [§8/§5/§CA]

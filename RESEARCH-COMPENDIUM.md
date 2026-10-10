@@ -1,8 +1,8 @@
 # NUGGET NIHONGO — EMPIRICAL SLA RESEARCH COMPENDIUM
 ## Master Academic Evidence Base & Curriculum Architecture Guide
-**Corpus Version:** v24 (Advanced Phonology, Prosodic CAPT, & Sociopragmatic Refusals Expansion: 531+ Verified DOIs, 100% Accounted For)  
-**Total Unique Citations:** 785+  
-**Verified DOIs / Canonical Records:** 531+ Verified DOIs | 100% Accounted For (Zero pending flags across all 23 section files)  
+**Corpus Version:** v25 (Atomized Pain Onomatopoeia, Industrial Rousai Escalation, & AI Term Scrubbing: 535+ Verified DOIs, 100% Accounted For)  
+**Total Unique Citations:** 789+  
+**Verified DOIs / Canonical Records:** 535+ Verified DOIs | 100% Accounted For (Zero pending flags across all 23 section files)  
 **Target Domain:** Indonesian Adult Learners of Japanese as a Foreign Language (SSW / Tokutei Ginou & General Academic)
 
 ---
@@ -55,7 +55,7 @@ nugget-nihongo-research/
 │   │   │   └── INDONESIAN-L1-DIAGNOSTIC-INVENTORY-v1.md ← 100-item micro-diagnostic contrastive matrix
 │   │   │
 │   │   ├── vocational/                        ← Workplace SLA & Discourse Corpus (Jalur B)
-│   │   │   ├── EPA-KAIGO-SSW-WORKPLACE-CORPUS-v1.md ← Eldercare speech shifts, pain onomatopoeia, gemba nihongo
+│   │   │   ├── EPA-KAIGO-SSW-WORKPLACE-CORPUS-v1.md ← 42-item pain onomatopoeia matrix, 4-tier Rousai escalation, eldercare speech shifts
 │   │   │   ├── ALL-SECTOR-SSW-TAXONOMY-CORPUS-v1.md ← Exhaustive 18-sector Tokutei Ginou master taxonomy, TSA & safety shouting
 │   │   │   └── PROMETRIC-SSW-EXAM-SPECIFICATION-CORPUS-v1.md ← Prometric CBT test matrix, 17 JAIM sub-divisions, JAVADA Business Career Kentei, & non-Prometric bodies
 │   │   │

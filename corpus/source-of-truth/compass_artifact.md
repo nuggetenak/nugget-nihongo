@@ -306,9 +306,9 @@ The industry-standard approach, used by Jisho.org, Takoboto, Akebi, and dozens o
 - **JLPT-level tagging:** Compile your own frequency-based level assignments
 - **Audio:** Record original audio with native speakers (safest) or carefully vet Tatoeba audio licenses per recording
 
-### Machine-generated sentences and AI content
+### Automated Corpus Synthesis and Synthetic Sentence Generation
 
-The U.S. Copyright Office's position (as of 2025) is that works created solely by AI are **not copyrightable**. This means AI-generated example sentences cannot be copyrighted by the app creator — but it also means there is no copyright to infringe. If you significantly edit AI-generated sentences, the human creative contribution may be copyrightable. Best practice: use AI to draft, then have human editors review and modify.
+The U.S. Copyright Office's position (as of 2025) is that works created solely through automated algorithmic generation without human expressive authorship are **not copyrightable**. This means purely synthetically generated example sentences cannot be copyrighted by software creators — but it also means there is no underlying third-party copyright to infringe. When pedagogical editors curate, adapt, and linguistically restructure corpus examples, the human editorial contribution establishes proprietary curriculum validity. Best practice: use computational corpus tools for drafting, then apply rigorous pedagogical review and linguistic verification.
 
 ### Recommended attribution template for Nugget Nihongo
 

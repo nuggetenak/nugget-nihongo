@@ -320,13 +320,13 @@ Agent 2 identified 12 gaps. Here's what I'm doing with each:
 |---|---|---|---|
 | L0 — Machine | JMdict/KANJIDIC2 native tags (~50 POS tags) | Open-source dictionaries | Immutable (updated from upstream) |
 | L1 — Display | Bilingual labels (ID + EN) mapped from L0 | Our mapping table | Static; verified once |
-| L2 — Pedagogical | ID translations, nuance, confusion pairs, grammar cats, domains, contrastive notes | LLM-authored + validated | Our primary content investment |
+| L2 — Pedagogical | ID translations, nuance, confusion pairs, grammar cats, domains, contrastive notes | Corpus-synthesized & empirically validated | Our primary content investment |
 | L3 — Computed | Frequency ranks, collocations, phonetic components, transitivity pairs | Algorithmic from L0 + corpora | Deterministic; reproducible |
 | L4 — User | FSRS state, review history, bookmarks, progress | Per-user localStorage / Supabase | Private; never in dictionary files |
 
 **L0 replaces our current POS system.** Migration: bulk rename from our tags (`verb-ru`, `noun`, `i-adj`) to JMdict tags (`v1`, `n`, `adj-i`). One-time script.
 
-**L2 is where all the work is.** This is the layer that costs tokens and creates value. Priority population order: N5 → N4 → N3 → N2 → N1, with Indonesian translations first, then nuance/contrastive notes, then confusion pairs.
+**L2 is where all the work is.** This is the layer that demands deep pedagogical research investment and linguistic validation. Priority population order: N5 → N4 → N3 → N2 → N1, with Indonesian translations first, then nuance/contrastive notes, then confusion pairs.
 
 ## 4.2 — ID Format (Confirmed from v15.3.0)
 

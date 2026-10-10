@@ -277,4 +277,16 @@ All 40 entries from `SECTION13-INDIVIDUAL-DIFFS.md` have been fully verified via
 | SC-36 | Ishihara & Tarone (2009) in Taguchi (Ed.) | `10.1515/9783110218558.101` | De Gruyter CrossRef | ✅ CONFIRMED |
 | SC-37 | Beebe, Takahashi, & Uliss-Weltz (1990) in Scarcella et al. (Eds.) | Book chapter (Newbury House; ISBN: 0-8384-2977-8) | Library verified chapter | ❌ UNAVAILABLE (Print chapter) |
 
+---
+
+## §15 / VOCATIONAL PAIN ONOMATOPOEIA & ROUSAI ACCIDENT ESCALATION EXPANSION (VS-36–VS-39) — VERIFIED
+
+| ID | Citation | Canonical DOI / Publication | Verify Method | Status |
+|---|---|---|---|---|
+| VS-36 | Sakamoto et al. (2014) *JACIII* 18(6) | `10.20965/jaciii.2014.p1020` | Fuji Technology Press CrossRef | ✅ CONFIRMED |
+| VS-37 | Doizaki et al. (2015) *IJAE* 15(2) | `10.5057/ijae.ijae-d-15-00028` | J-STAGE CrossRef | ✅ CONFIRMED |
+| VS-38 | Okuda (2018) *JPA Proc* 82 | `10.4992/pacjpa.82.0_2am-070` | J-STAGE CrossRef | ✅ CONFIRMED |
+| VS-39 | JNIOSH (2020) Technical Report No.48 | Technical Report JNIOSH-TR-No.48, MHLW Japan | Official government safety standard | ❌ UNAVAILABLE (Official technical standard) |
+
+
 

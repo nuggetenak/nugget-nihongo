@@ -13,6 +13,10 @@
 - Interlanguage Pragmatic Speech Acts & Apology Routines: Haristiani & Christinawati (2024) [EA-24] (DOI: `10.26858/ijole.v8i1.60904`)
 - Workplace Foreign Language Anxiety & Willingness to Communicate: Horwitz, Horwitz, & Cope (1986) [FLA-01], Yashima (2002) [VS-05]
 - Official Regulatory Frameworks: Immigration Services Agency of Japan (2023) [VS-05], Ministry of Health, Labour and Welfare (2019) [VS-28]
+- Clinical Pain Onomatopoeia Communication: Sakamoto, Ueda, Doizaki, & Shimizu (2014) [VS-36] (DOI: `10.20965/jaciii.2014.p1020`)
+- Medical Onomatopoeia Metaphorical Modeling: Doizaki, Matsuda, Utsumi, & Sakamoto (2015) [VS-37] (DOI: `10.5057/ijae.ijae-d-15-00028`)
+- Pain Onomatopoeia Psychometrics: Okuda (2018) [VS-38] (DOI: `10.4992/pacjpa.82.0_2am-070`)
+- Industrial Safety & Accident Reporting Standards: Japan National Institute of Occupational Safety and Health (JNIOSH, 2020) [VS-39]
 
 ---
 
@@ -76,24 +80,93 @@ Indonesian caregivers must master **Register Pivoting**:
 
 ---
 
-### 2.2 Clinical Symptom Onomatopoeia Corpus: The Subjective Pain Inventory
+### 2.2 Clinical Symptom & Physical Sensation Onomatopoeia Corpus: The Atomized Diagnostic Inventory (42-Item Matrix)
 
-Japanese elderly patients rarely describe pain using clinical adjectives (e.g., *gekiryutsu* or *toushou*). Instead, they use Japanese mimetic and onomatopoeic words (*gitaigo / giongo*). Indonesian caregivers without explicit training cannot decipher these terms, leading to delayed medical escalations (Kamata & Tanaka 2021 [VS-12]).
+Japanese elderly patients in care facilities (*kaigo roujin shisetsu*) and industrial factory workers rarely describe physical distress or trauma using formal clinical terminology (e.g., *sashitō*, *gekiryūtsu*, or *fukubuhōman*). Instead, they almost exclusively employ Japanese mimetic words and sound symbolism (*gitaigo / giongo*) to convey the sensory quality, mechanical origin, temporal rhythm, and urgency of pain (Sakamoto et al. 2014 [VS-36]; Doizaki et al. 2015 [VS-37]; Okuda 2018 [VS-38]; Kamata & Tanaka 2021 [VS-12]).
 
-| Japanese Onomatopoeia | Patient Utterance Example | Physical Sensation / Clinical Meaning | Potential Medical Condition | L1 Indonesian Semantic Gloss | Diagnostic SRS Card Trigger |
-|---|---|---|---|---|---|
-| **ズキズキ** (*zukizuki*) | 「頭がズキズキ痛むんや。」 | Throbbing, pulsating pain synchronized with heartbeat. | Migraine, vascular headache, severe tooth pulpitis. | Nyeri berdenyut-denyut mengikuti detak nadi. | `[Pain: Pulsing]` $\rightarrow$ ズキズキ (Bukan chikuchiku!) |
-| **チクチク** (*chikuchiku*) | 「お腹のあたりがチクチクする。」 | Pricking, needle-stinging pain; localized superficial prick. | Nerve pain, dry skin irritation, early shingles (*taijou houshin*). | Nyeri seperti tertusuk jarum kecil / semut. | `[Pain: Needle prick]` $\rightarrow$ チクチク |
-| **ガンガン** (*gan-gan*) | 「朝から頭がガンガン割れそう。」 | Heavy, smashing, pounding headache (like a hammer beating). | Tension headache, hypertensive crisis, dehydration. | Sakit kepala berat seperti dihantam palu. | `[Pain: Sledgehammer]` $\rightarrow$ ガンガン |
-| **ヒリヒリ** (*hirihiri*) | 「背中がヒリヒリして痛がゆい。」 | Burning, smarting sensation on mucosal or epidermal tissue. | Pressure sore (*jokusou*) grade 1, scald, hot water burn. | Nyeri perih terbakar pada permukaan kulit. | `[Pain: Burning/Smarting]` $\rightarrow$ ヒリヒリ |
-| **キリキリ** (*kirikiri*) | 「胃がキリキリ差し込むように痛い。」 | Sharp, piercing internal stomach cramp or visceral spasm. | Gastric ulcer, acute gastritis, abdominal colic. | Nyeri melilit / menusuk tajam di ulu hati. | `[Pain: Stomach cramp]` $\rightarrow$ キリキリ |
-| **シクシク** (*shikushiku*) | 「お腹がシクシク鈍く痛む。」 | Dull, persistent, nagging, low-intensity ache. | Chronic gastritis, chronic pelvic or intestinal pain. | Nyeri ngilu tumpul berulang-ulang yang tak hilang. | `[Pain: Dull ache]` $\rightarrow$ シクシク |
-| **フラフラ** (*furafura*) | 「立ち上がったら足元がフラフラする。」 | Unsteady balance, wobbling gait, loss of equilibrium. | Orthostatic hypotension, medication side-effect, fall risk. | Sempoyongan / limbung saat berjalan atau berdiri. | `[Motor: Wobbling]` $\rightarrow$ フラフラ (Risiko jatuh!) |
-| **クラクラ** (*kurakura*) | 「急に目の前がクラクラしてきた。」 | Vertigo, spinning room, lightheadedness. | Cerebral ischemia, inner ear disorder, acute anemia. | Pusing tujuh keliling / ruangan berputar. | `[Neuro: Vertigo]` $\rightarrow$ クラクラ |
-| **ゾクゾク** (*zokuzoku*) | 「急に寒気がしてゾクゾクする。」 | Shivering, febrile chills preceding high fever. | Acute infection, pneumonia, sepsis, influenza. | Menggigil kedinginan mendadak (gejala demam). | `[Fever: Chills]` $\rightarrow$ ゾクゾク |
-| **ムカムカ** (*mukamuka*) | 「胸がムカムカして吐きそう。」 | Nausea, queasiness, gastric upset / desire to vomit. | Food stagnation, medication toxicity, ileus. | Mual / eneg di ulu hati ingin muntah. | `[Gastric: Nausea]` $\rightarrow$ ムカムカ |
+Indonesian caregivers and technical interns without systematic contrastive training fail to distinguish between acoustic minimal pairs or sound-symbolic nuances (e.g., confusing *zukizuki* vascular throbbing with *chikuchiku* epidermal pricking, or dismissing *kirikiri* stomach colic as mild indigestion), leading to catastrophic delays in emergency escalations.
+
+The following 42-item inventory classifies Japanese bodily onomatopoeia across seven distinct anatomical, physiological, and industrial trauma clusters, mapped directly to clinical conditions, Indonesian semantic equivalents, and diagnostic SRS card triggers:
+
+#### Klaster 1: Cephalic, Cranial & Neurological Pain (頭部・神経痛)
+
+| No | Japanese Onomatopoeia | Utterance Example | Acoustic/Physical Sensation | Potential Clinical/Pathological State | L1 Indonesian Semantic Gloss | Diagnostic SRS Trigger & Card Anchor |
+|---|---|---|---|---|---|---|
+| 1 | **ズキズキ / ズキンズキン** (*zukizuki / zukin-zukin*) | 「こめかみがズキンズキン脈打って痛い。」 | Throbbing, pulsating pain perfectly synchronous with cardiac pulse ($F_0$ rhythmic beat). | Migraine, temporal arteritis, severe pulpitis, vascular engorgement. | Nyeri berdenyut-denyut kuat mengikuti detak nadi. | `[Pain: Vascular Pulsing]` $\rightarrow$ ズキズキ (Distinksi tegas vs. チクチク) |
+| 2 | **ガンガン** (*gan-gan*) | 「頭が割れそうにガンガン響いている。」 | Heavy, pounding, shattering headache; feeling of being struck with an iron hammer. | Hypertensive encephalopathy, intracranial hypertension, acute dehydration, severe hangover. | Sakit kepala hebat seperti dihantam palu godam. | `[Pain: Pounding Hammer]` $\rightarrow$ ガンガン (Waspada krisis hipertensi!) |
+| 3 | **ズシン / ズシンズシン** (*zushin / zushin-zushin*) | 「後頭部がズシンと重く痛む。」 | Deep, blunt, compressive gravitational ache situated deep within the cranium or cervical spine. | Subacute subdural hematoma, tension-type headache, cervical spondylosis. | Sakit kepala tumpul yang sangat berat di tengkuk. | `[Pain: Heavy Compressive]` $\rightarrow$ ズシン |
+| 4 | **ピリピリ** (*piripiri*) | 「顔の右側だけがピリピリ痺れて痛い。」 | Sharp, tingling, electric micro-shocks on skin/nerve pathway; tactile hypersensitivity. | Trigeminal neuralgia, early herpes zoster (shingles prodrome), peripheral neuropathy. | Rasa nyeri perih kesetrum/terbakar pada jalur saraf. | `[Pain: Electric Nerve Sting]` $\rightarrow$ ピリピリ (Tanda awal herpes zoster!) |
+| 5 | **チクチク** (*chikuchiku*) | 「胸のあたりがチクチク刺すように痛む。」 | Superficial, intermittent needle-like pricking or pinpoint stinging. | Intercostal neuralgia, superficial epidermal irritation, localized cardiac neurosis. | Nyeri seperti tertusuk-tusuk jarum kecil berulang. | `[Pain: Pinpoint Needle]` $\rightarrow$ チクチク |
+| 6 | **キリキリ** (*kirikiri*) | 「頭の奥をキリキリ錐（きり）で揉まれるようだ。」 | Boring, piercing, drilling pain penetrating inward along a sharp vector. | Cluster headache, severe sinus pressure, intracranial focal neuralgia. | Nyeri menusuk tajam memutar seperti dibor. | `[Pain: Piercing Drill]` $\rightarrow$ キリキリ (Beda dr perut) |
+| 7 | **ぼーっと** (*bōtto*) | 「熱のせいで頭がぼーっとして考えられない。」 | Clouded sensorium, sluggish cognition, haziness, pre-syncopal mental dullness. | Severe hyperthermia, carbon monoxide toxicity, early stroke, drug intoxication. | Pikiran berkabut / linglung tidak sadar penuh. | `[Mental: Clouded Sensorium]` $\rightarrow$ ぼーっと |
+
+#### Klaster 2: Visceral, Abdominal & Gastrointestinal Pain (内臓・消化器系)
+
+| No | Japanese Onomatopoeia | Utterance Example | Acoustic/Physical Sensation | Potential Clinical/Pathological State | L1 Indonesian Semantic Gloss | Diagnostic SRS Trigger & Card Anchor |
+|---|---|---|---|---|---|---|
+| 8 | **キリキリ** (*kirikiri*) | 「みぞおちがキリキリ締め付けられて痛い。」 | Sharp, localized spasmodic visceral twisting; intense colic cramp. | Acute gastric ulcer, duodenal erosion, cholelithiasis (gallstone colic). | Nyeri melilit tajam mencengkeram di ulu hati. | `[Abdomen: Visceral Spasm]` $\rightarrow$ キリキリ (Evaluasi perforasi lambung) |
+| 9 | **シクシク** (*shikushiku*) | 「昨夜から下腹部がシクシク重く痛む。」 | Continuous, low-intensity, nagging, melancholy visceral ache without sharp peaks. | Chronic gastritis, pelvic inflammatory disease, mild intestinal ischemia. | Nyeri ngilu tumpul berkepanjangan tak kunjung reda. | `[Abdomen: Dull Nagging]` $\rightarrow$ シクシク |
+| 10 | **ムカムカ** (*mukamuka*) | 「胃のあたりがムカムカして吐き気が止まらない。」 | Unpleasant queasiness, nausea, rising gastroesophageal churning and reflux. | Food stagnation, medication side-effect, mechanical ileus, ketoacidosis. | Mual / eneg bergejolak di kerongkongan mau muntah. | `[Gastric: Nausea/Reflux]` $\rightarrow$ ムカムカ |
+| 11 | **ゴロゴロ** (*gorogoro*) | 「お腹がゴロゴロ鳴って下痢しそうだ。」 | Audible rumbling, churning, hyperactive peristaltic liquid/gas shifting. | Acute enteritis, lactose intolerance, bacterial food poisoning (*shokuchūdoku*). | Perut berbunyi krucuk-krucuk mules hendak diare. | `[Bowel: Borborygmi]` $\rightarrow$ ゴロゴロ |
+| 12 | **パンパン** (*panpan*) | 「ガスが溜まってお腹がパンパンに張っている。」 | Tense, drum-like elastic distension; tight abdominal wall under internal pressure. | Bowel obstruction (ileus), severe ascites, urinary retention (*nōnyō*). | Perut begah kembung keras tegang seperti balon gas. | `[Abdomen: Tense Distension]` $\rightarrow$ パンパン (Palpasi perut kembung) |
+| 13 | **キューッ / ギューッ** (*kyū-tto / gyū-tto*) | 「胃をギューッと鷲掴みにされたように痛い。」 | Squeezing, crushing, vice-like constrictive gripping of visceral organ. | Intestinal invagination, ischemic bowel disease, acute coronary syndrome (referred). | Nyeri seperti diperas / dicengkeram kuat-kuat. | `[Abdomen: Vice-like Gripping]` $\rightarrow$ ギューッ |
+
+#### Klaster 3: Epidermal, Dermatological & Mucosal Sensations (皮膚・粘膜・外傷)
+
+| No | Japanese Onomatopoeia | Utterance Example | Acoustic/Physical Sensation | Potential Clinical/Pathological State | L1 Indonesian Semantic Gloss | Diagnostic SRS Trigger & Card Anchor |
+|---|---|---|---|---|---|---|
+| 14 | **ヒリヒリ** (*hirihiri*) | 「熱湯がかかって腕がヒリヒリ焼けるように痛い。」 | Burning, smarting sensation on mucosal, epidermal, or excoriated surface. | Scalds, thermal burns, friction skin tear (*hifu hakuri*), Stage 1 decubitus ulcer. | Nyeri perih menyengat terbakar di lapisan kulit luar. | `[Skin: Smarting Burn]` $\rightarrow$ ヒリヒリ (Periksa luka bakar/abrasi) |
+| 15 | **ジワジワ** (*jiwajiwa*) | 「傷口からジワジワ血が滲み出ている。」 | Slow, steady, capillary oozing; insidious progressive expansion of pain or swelling. | Venous bleeding, hematoma spreading, subcutaneous tissue infiltration. | Rembesan darah/nyeri perlahan meluas tanpa henti. | `[Hemostasis: Oozing Seepage]` $\rightarrow$ ジワジワ |
+| 16 | **ムズムズ** (*muzumuz*) | 「ギプスの中がムズムズ痒くてたまらない。」 | Deep, inaccessible formication; tickling itchiness deep beneath epidermal layer. | Restless legs syndrome, nerve regeneration itching, allergic contact dermatitis. | Rasa gatal merayap di dalam jaringan yang tak bisa digaruk. | `[Skin: Formication Pruritus]` $\rightarrow$ ムズムズ |
+| 17 | **ガサガサ** (*gasagasa*) | 「踵（かかと）がガサガサに乾いてひび割れている。」 | Dry, rough, sandpaper-like desquamation; lack of natural skin lipids. | Senile xerosis, severe dehydration, decubitus precursor skin breakdown. | Kulit kering kasar bersisik pecah-pecah. | `[Skin: Rough Xerosis]` $\rightarrow$ ガサガサ |
+| 18 | **ジュクジュク** (*jukujuku*) | 「褥瘡（じょくそう）の傷口がジュクジュク湿っている。」 | Wet, weeping, macerated wound bed discharging purulent exudate or plasma. | Infected Stage 3–4 decubitus ulcer, fungal intertrigo, wound maceration. | Luka basah becek bernanah/berlendir tak kunjung kering. | `[Infection: Weeping Maceration]` $\rightarrow$ ジュクジュク (Tanda infeksi ulkus!) |
+| 19 | **ピタッと** (*pitat-to*) | 「ガーゼが傷口にピタッと張り付いて剥がれない。」 | Firm, airtight adhesion; dressing sticking dryly to raw granulation tissue. | Desiccated wound dressing, adherent gauze tearing epithelial tissue. | Menempel erat merekat mati pada luka. | `[Dressing: Adherent Dressing]` $\rightarrow$ ピタッと |
+
+#### Klaster 4: Musculoskeletal, Joint, Spine & Skeletal Trauma (筋骨格・関節・脊椎)
+
+| No | Japanese Onomatopoeia | Utterance Example | Acoustic/Physical Sensation | Potential Clinical/Pathological State | L1 Indonesian Semantic Gloss | Diagnostic SRS Trigger & Card Anchor |
+|---|---|---|---|---|---|---|
+| 20 | **ギクッ / ギクッと** (*giku-tto*) | 「重い荷物を持ち上げた瞬間に腰がギクッとなった。」 | Sudden, acute, locking structural shift or wrench in lumbar spine or joint. | Acute lumbar sprain (*gikkuri-goshi*), facet joint impingement, disc herniation. | Pinggang kecetit / terkilir mendadak terkunci kaku. | `[Spine: Acute Lumbar Sprain]` $\rightarrow$ ギクッと (Gikkuri-goshi!) |
+| 21 | **ミシミシ** (*mishimishi*) | 「歩くたびに膝の軟骨がミシミシ軋む。」 | Crepitus, creaking, grating frictional noise under compressive axial load. | Advanced osteoarthritis (*henkei-sei hiza kansetsu-shō*), cartilage loss. | Sendi berderit-derit ngilu menahan beban tubuh. | `[Joint: Crepitant Grating]` $\rightarrow$ ミシミシ |
+| 22 | **ポキッ / ポキッと** (*poki-tto*) | 「転倒した時に手首がポキッと音を立てた。」 | Dry, brittle snapping or cracking sound of bone or rigid cartilage fracturing. | Colles' fracture, clavicle break, traumatic rib fracture from CPR. | Patah berbunyi kletuk/prak seperti ranting patah. | `[Bone: Snapping Fracture]` $\rightarrow$ ポキッと (Fraktur tulang akut!) |
+| 23 | **ギシギシ** (*gishigishi*) | 「指の関節がギシギシして朝曲がらない。」 | Severe mechanical stiffness, lack of lubrication; tight rusty hinge sensation. | Rheumatoid arthritis morning stiffness, ankylosing contracture. | Sendi kaku berkarat seret digerakkan di pagi hari. | `[Joint: Stiff Hinge]` $\rightarrow$ ギシギシ |
+| 24 | **ジンジン** (*jinjin*) | 「打撲した足指がジンジン熱を持って痛む。」 | Deep, continuous throbbing radiating warmth after mechanical blunt contusion. | Severe bone contusion, subungual hematoma, acute inflammatory flare. | Nyeri ngilu berdenyut panas pasca terbentur/tertimpa. | `[Trauma: Radiating Heat Ache]` $\rightarrow$ ジンジン |
+| 25 | **パンパン** (*panpan*) | 「立ち仕事で夕方になるとふくらはぎがパンパンだ。」 | Tense, hard muscular edema; tight skin envelope stretched over swollen muscle. | Deep vein thrombosis (DVT), acute compartment syndrome, congestive edema. | Betis bengkak keras kencang menegang penuh cairan. | `[Muscular: Tense Edema]` $\rightarrow$ パンパン (Waspada DVT!) |
+
+#### Klaster 5: Sensory, Equilibrium & Vestibular Dysfunction (感覚・平衡・意識障害)
+
+| No | Japanese Onomatopoeia | Utterance Example | Acoustic/Physical Sensation | Potential Clinical/Pathological State | L1 Indonesian Semantic Gloss | Diagnostic SRS Trigger & Card Anchor |
+|---|---|---|---|---|---|---|
+| 26 | **フラフラ** (*furafura*) | 「ベッドから降りたら足元がフラフラして倒れそう。」 | Unsteady, swaying, drifting gait; cerebellar or motor ataxia; inability to stabilize base. | Orthostatic hypotension, psychotropic drug accumulation, acute fall risk (*tentō*). | Sempoyongan / limbung melayang risiko jatuh. | `[Gait: Unsteady Sway]` $\rightarrow$ フラフラ (Segera fiksasi pasien!) |
+| 27 | **クラクラ** (*kurakura*) | 「急に天井がぐるぐるクラクラ回り出した。」 | Rotational vertigo, spinning environment, severe lightheaded vestibular disorientation. | Benign paroxysmal positional vertigo (BPPV), Ménière's disease, vertebrobasilar stroke. | Pusing tujuh keliling / ruangan berputar dahsyat. | `[Vestibular: Spinning Vertigo]` $\rightarrow$ クラクラ |
+| 28 | **チカチカ** (*chikachika*) | 「目の前で光がチカチカ点滅して見えにくい。」 | Flashing, twinkling photopsia, scintillating scotoma; optical nerve discharge. | Retinal detachment aura, ophthalmic migraine, severe carotid insufficiency. | Penglihatan berkunang-kunang silau berkedip-kedip. | `[Vision: Scintillating Photopsia]` $\rightarrow$ チカチカ |
+| 29 | **ザーザー / ワンワン** (*zāzā / wanwan*) | 「耳の中でザーザー滝のような音が鳴り響く。」 | Rushing water tinnitus, roaring acoustic interference, low-frequency ear fullness. | Sudden sensorineural hearing loss (*toppatsusei nanchō*), vascular loop compression. | Suara mendengung / bergemuruh gemercik di telinga. | `[Auditory: Rushing Tinnitus]` $\rightarrow$ ザーザー |
+| 30 | **カスカス** (*kasukasu*) | 「声がカスカスになって息しか出ない。」 | Breathy, rasping, hollow aphonia; vocal cords unable to close midline. | Recurrent laryngeal nerve paralysis (post-surgical/thoracic aneurysm), laryngitis. | Suara serak parau habis hanya keluar desah angin. | `[Laryngeal: Breathy Hoarseness]` $\rightarrow$ カスカス |
+| 31 | **グラグラ** (*guragura*) | 「前歯がグラグラして入れ歯が噛めない。」 | Hypermobile, loose, unanchored instability of tooth or bone screw. | Advanced periodontal disease, implant looseness, bone hardware failure. | Gigi / implan goyang mau copot. | `[Dental: Loose Instability]` $\rightarrow$ グラグラ |
+
+#### Klaster 6: Cardiopulmonary, Respiratory & Thermal Distress (心肺・呼吸・体温異常)
+
+| No | Japanese Onomatopoeia | Utterance Example | Acoustic/Physical Sensation | Potential Clinical/Pathological State | L1 Indonesian Semantic Gloss | Diagnostic SRS Trigger & Card Anchor |
+|---|---|---|---|---|---|---|
+| 32 | **ドキドキ** (*dokidoki*) | 「胸がドキドキ早鐘を打って苦しい。」 | Rapid, forceful, pounding tachycardia; violent awareness of heartbeat at rest. | Paroxysmal supraventricular tachycardia (PSVT), atrial fibrillation, panic attack. | Jantung berdebar kencang melonjak-lonjak gelisah. | `[Cardiac: Palpitation Tachycardia]` $\rightarrow$ ドキドキ |
+| 33 | **ゼーゼー** (*zēzē*) | 「痰が絡んで喉がゼーゼー苦しそうに鳴っている。」 | Coarse, rattling, low-pitched rhonchi caused by secretions lodged in large bronchi. | Chronic obstructive pulmonary disease (COPD), sputum impaction, aspiration risk. | Nafas grok-grok berlendir berat tersumbat dahak. | `[Airway: Rattling Rhonchi]` $\rightarrow$ ゼーゼー (Perlu suction dahak!) |
+| 34 | **ヒューヒュー** (*hyūhyū*) | 「息を吸うたびにヒューヒュー高い笛の音がする。」 | High-pitched whistling, musical inspiratory stridor or expiratory wheeze in narrowed lumen. | Bronchial asthma exacerbation, foreign body aspiration (*kitō ibutsu*), anaphylaxis. | Nafas berbunyi menciut-ciut ngik-ngik menyempit. | `[Airway: Stridor/Wheezing]` $\rightarrow$ ヒューヒュー (Gawat asma/anafilaksis!) |
+| 35 | **ゾクゾク** (*zokuzoku*) | 「背筋がゾクゾク寒気（さむけ）がして歯が鳴る。」 | Severe rigors, involuntary muscle shivering preceding steep core temperature spike. | Bacteremia, acute pyelonephritis, pneumonia onset, sepsis chill. | Menggigil kedinginan hebat pertanda demam melonjak. | `[Fever: Septic Rigors]` $\rightarrow$ ゾクゾク (Suhu akan tembus 39°C!) |
+| 36 | **カーッと** (*kātto*) | 「顔が急にカーッと火照って熱くなる。」 | Sudden, intense flushing hyperemia, intense vascular heat surging to face/head. | Malignant hypertension spike, heat stroke (*netchūshō*) Stage 2, menopausal flush. | Wajah memerah panas mendadak menyengat ke ubun-ubun. | `[Thermal: Vasomotor Flushing]` $\rightarrow$ カーッと |
+
+#### Klaster 7: Gemba Industrial Mechanics & Factory Traumatic Injuries (製造・工場機械外傷)
+
+| No | Japanese Onomatopoeia | Utterance Example | Acoustic/Physical Sensation | Potential Clinical/Pathological State | L1 Indonesian Semantic Gloss | Diagnostic SRS Trigger & Card Anchor |
+|---|---|---|---|---|---|---|
+| 37 | **グシャッ / グシャッと** (*gusha-tto*) | 「金型に指が挟まれてグシャッと潰れた！」 | Massive crushing, pulverizing, soft-tissue and skeletal mangling impact under die press. | Severe crush injury (*hasamare/makikomare*), open comminuted hand fracture, traumatic amputation. | Hancur remuk terlindas mesin pres/die kempis. | `[Trauma: Crush Mangling]` $\rightarrow$ グシャッと (Kecelakaan mesin pres fatal!) |
+| 38 | **バチッ / バチッと** (*bachi-tto*) | 「分電盤に触れた瞬間、バチッと火花が飛んで弾き飛ばされた！」 | Sharp, violent high-voltage electrical arc explosion and involuntary neuromuscular convulsion. | 200V industrial electric shock (*kanden*), arc flash burn, secondary cardiac arrest. | Meledak kena setrum busur api listrik tegangan tinggi. | `[Electrical: High-Voltage Shock]` $\rightarrow$ バチッと (Matikan sakelar utama!) |
+| 39 | **プツッ / プツンと** (*putsu-nto*) | 「ホイストのワイヤーがプツンと切れた！」 | Sudden tension snap or parting of pressurized cable, line, or ligament. | High-tension steel cable break, crane rigging failure, mechanical release hazard. | Putus mendadak kawat sling bertegangan tinggi. | `[Mechanical: Cable Snap]` $\rightarrow$ プツンと |
+| 40 | **ピシッ / ピシッと** (*pishi-tto*) | 「油圧ホースがピシッと破裂してオイルが噴き出した！」 | High-pressure whipping rupture of hydraulic hose, plastic shield fracture. | High-pressure fluid injection injury, chemical caustic jet, flying debris laceration. | Selang hidrolik meledak pecah menyabet bertekanan. | `[Hydraulic: Rupture Whipping]` $\rightarrow$ ピシッと |
+| 41 | **ドサッ / ドサッと** (*dosa-tto*) | 「パレットが崩れて鋼材がドサッと落ちてきた！」 | Heavy, deadening, high-mass gravitational collapse of bundled materials. | Crushing by falling cargo (*rakka-butsu hasamare*), pallet collapse disaster. | Ambruk runtuh menimpa muatan berat berdebum. | `[Impact: Heavy Cargo Collapse]` $\rightarrow$ ドサッと |
+| 42 | **ツルッ / ツルッと** (*tsuru-tto*) | 「床の油膜で足がツルッと滑って転倒した！」 | Instantaneous, zero-friction loss of traction on oily, greasy, or icy floor surface. | Shop floor oil slick slip-and-fall, head trauma against concrete machine base. | Terpeleset licin oli seketika terjungkal. | `[Floor: Zero-Friction Slip]` $\rightarrow$ ツルッと |
 
 ---
+
 
 ### 2.3 Eldercare Daily Assistance Registers (*Kaigo Kaijo*)
 
@@ -197,6 +270,68 @@ In dangerous situations, standard polite Japanese disappears. A supervisor shout
 - **さわるな！** (*Sawaruna!*) — DO NOT TOUCH! HIGH VOLTAGE / CRUSH ZONE!
 - **あぶない！** (*Abunai!*) — DANGER! LOOK OUT!
 - **しゃがめ！** (*Shagame!*) — DUCK! CRANE OVERHEAD!
+
+---
+
+### 3.4 INDUSTRIAL ROUSAI (OCCUPATIONAL INJURY) & KAIGO INCIDENT ESCALATION PROTOCOL
+
+In both manufacturing plants and eldercare facilities, workplace injuries (*rōsai jiko* / 労災事故) and clinical adverse events (*shisetsu jiko* / 施設事故) operate under unforgiving statutory timelines. A delayed report or garbled triage message directly triggers irreversible tissue necrosis, amputation, or patient mortality.
+
+Under standard guidelines from the Japan National Institute of Occupational Safety and Health (JNIOSH 2020 [VS-39]) and the Ministry of Health, Labour and Welfare (MHLW [VS-28]), emergency escalation follows a mandatory **4-Tier Incident Escalation Protocol**:
+
+```
+[TIER 1: PHYSICAL ZERO-STATE]
+  • Factory: E-Stop / Machine Circuit Lockout (非常停止・主電源遮断)
+  • Kaigo: Immediate Patient Immobilization (患者安静・二次転倒防止)
+       │
+       ▼
+[TIER 2: ACOUSTIC ALARM SHOUTING]
+  • High-volume unmitigated emergency broadcast (< 3 seconds)
+  • "労災発生！ライン停止！応援求む！" / "看護師さん！転倒事故発生！"
+       │
+       ▼
+[TIER 3: GEMBA SBAR TRIAGE COMMUNICATION]
+  • Situation (状況) ──► Background (背景) ──► Assessment (評価) ──► Recommendation (要請)
+       │
+       ▼
+[TIER 4: STATUTORY INCIDENT DOCUMENTATION]
+  • Rousai Sokuhou-sho (労災速報書) & Hiyari-Hatto (ヒヤリハット報告書)
+```
+
+#### 1. The 4-Tier Operational Framework
+
+##### Tier 1: Emergency Stoppage & Zero-Energy Isolation (非常停止・動力遮断 / 患者安静固定)
+- **Manufacturing Gemba:** Absolute rule: *Stop machine first, never attempt rescue with power engaged*. Press the mushroom E-Stop button (*hijō teishi botan*); confirm mechanical zero-state: *「非常停止ヨシ！主電源遮断ヨシ！」*.
+- **Eldercare Facility:** In patient falls (*tentō*), *never hoist resident by the arms*. Stabilize cervical spine and limbs in situ: *「〇〇さん、動かないで！そのまま楽に呼吸してくださいね！」*.
+
+##### Tier 2: Acoustic Emergency Alarm Shouting (現場大声喚呼)
+Classroom polite Japanese (*kushon kotoba* like *osoreirimasu ga...*) is **strictly prohibited** in Tier 2 escalations. Politeness filters waste precious seconds and reduce acoustic audibility under ambient noise:
+- **Factory Emergency Broadcast:**
+  - *「労災発生！プレス停止！班長、至急応援お願いします！」 (Rōsai hassei! Puresu teishi! Hanchō, shikyū ōen onegai shimasu!)*
+- **Care Facility Emergency Call:**
+  - *「看護師さん！203号室で転倒事故発生！意識レベル確認中！至急来てください！」 (Kangoshi-san! Ni-maru-san goushitsu de tentō jiko hassei! Ishiki reberu kakunin-chū! Shikyū kite kudasai!)*
+
+##### Tier 3: Gemba SBAR Triage Communication Matrix
+To communicate with foremen (*kōjōchō / hanchō*) and head nurses (*shichō / kangoshi*), Indonesian workers must master the **Gemba SBAR Formula**, integrating the subjective onomatopoeia documented in §2.2:
+
+| SBAR Step | Japanese Functional Frame | Clinical / Eldercare Example | Industrial / Manufacturing Example | Indonesian Pedagogical Focus |
+|---|---|---|---|---|
+| **S (Situation - 状況)** | `「[場所] で [誰が] [何が起きたか] が発生しました。」` | 「2階食堂で、田中様が椅子から転落し、床に倒れられました。」 | 「第2ラインのプレス機で、実習生のアリさんが金型に手を挟まれました。」 | Menyatakan subjek, lokasi tepat, dan jenis insiden dalam 1 kalimat pembuka tanpa pembelaan diri. |
+| **B (Background - 背景)** | `「[時間] 頃、[作業/動作] 中の出来事です。」` | 「14時10分頃、立ち上がってトイレに向かおうとされた際の転倒です。」 | 「15時20分、ワークの取り出し作業中にスライドが急降下したことによるものです。」 | Menyebutkan waktu persis dan aktivitas kerja saat insiden terjadi secara objektif. |
+| **A (Assessment - 評価)** | `「意識は [状態] で、[部位] に [オノマトペ/症状] が見られます。」` | 「意識は清明ですが、後頭部を打撲され、ズキズキ痛むと訴えておられます。出血はありません。」 | 「意識はありますが、右手人差し指がグシャッと潰れ、ジワジワ出血が続いており、骨折の疑いがあります。」 | **Integrasi Onomatopoeia §2.2:** Menerjemahkan keluhan rasa sakit korban (*zukizuki, gusha-tto, jiwajiwa*) ke evaluasi anatomis. |
+| **R (Recommendation - 要請)** | `「直ちに [処置] をお願いいたします。」` | 「直ちにバイタル測定と看護師による頭部触診、安静臥床の指示をお願いします。」 | 「直ちに119番通報で救急車を手配し、事業所の止血救急セットを持ってきてください！」 | Mengajukan tindakan darurat konkret: panggil ambulans (119), bawa perban torniket, hentikan lini perakitan. |
+
+##### Tier 4: Formal Incident Quick-Report (*Rōsai Sokuhō-sho* / *Hiyari-Hatto*)
+Within 60 minutes of injury stabilization, workers and line leaders must record the incident. The report categorizes causality into:
+1. **Unsafe Condition (*Fuanzen Jōtai* / 不安全状態):** Slippery floor (*tsurutsu-to* oil slick), bypassed safety interlock sensor, inadequate lighting.
+2. **Unsafe Behavior (*Fuanzen Kōdō* / 不安全行動):** Reaching into running die without safety tongs, failing to secure crane outriggers.
+
+#### 2. Indonesian L1 Cultural Barrier: The *Malu* & *Sungkan* Hazard
+In Indonesian workplace culture, reporting minor injuries or near-misses (*hiyari-hatto*) is often suppressed due to:
+- **Fear of Reprimand (*Takut Dimarahi*):** Worry that reporting a near-miss will reflect poorly on the worker's competence or jeopardize visa extension.
+- **Fear of Causing Trouble (*Sungkan Merepotkan Atasan*):** Reluctance to stop an entire assembly line for a "mere finger cut" (*kasurikizu*).
+
+In Japanese industrial philosophy, however, **concealing a near-miss is considered the gravest moral violation**, because Heinrich's Law (300 near-misses $\rightarrow$ 29 minor accidents $\rightarrow$ 1 fatal disaster) dictates that open reporting of *hiyari-hatto* is the sole preventive barrier against workplace deaths. Nugget Nihongo flashcards explicitly train learners to reframe incident reporting as an active act of professional integrity.
 
 ---
 
@@ -382,4 +517,4 @@ Indonesian workers in Japan experience heightened **Foreign Language Workplace A
 | **Construction & Agriculture (*Kensetsu/Nogyo*)** | High-volume outdoor directives, weather warnings, heavy machinery safety. | Misinterpreting distance cues or crane clearance signals. | Scaffolding (*ashiba*), harness (*anzen-tai*), slope (*norimen*), pesticide (*nouyaku*), heavy equipment (*juuki*). | `VOK-KEN-01` to `VOK-KEN-10` (100 Micro-Decks) |
 
 ---
-*Curriculum Corpus Specification compiled for Nugget Nihongo Core Engine. Fully cross-referenced with empirical field studies (Pramesti et al. 2019 [VS-29]; Noyama 2012 [VS-08]; Kamata & Tanaka 2021 [VS-12]; Prihantoro et al. 2024 [EA-26]; Husna & Febriyanti 2022 [EA-25]).*
+*Curriculum Corpus Specification compiled for Nugget Nihongo Core Engine. Fully cross-referenced with empirical field studies (Pramesti et al. 2019 [VS-29]; Noyama 2012 [VS-08]; Kamata & Tanaka 2021 [VS-12]; Prihantoro et al. 2024 [EA-26]; Husna & Febriyanti 2022 [EA-25]; Sakamoto et al. 2014 [VS-36]; Doizaki et al. 2015 [VS-37]; Okuda 2018 [VS-38]; JNIOSH 2020 [VS-39]).*
