@@ -170,7 +170,7 @@ In `blueprint/DESIGN-DECISION-MASTER-v1.md`, all cross-section theoretical tensi
 
 ## 4. CURRICULUM SYNTHESIS ROADMAP & OPERATIONAL BLUEPRINTS
 
-The synthesis phase has landed eight authoritative specifications bridging meta-analysis to live software:
+The synthesis phase has landed ten authoritative specifications bridging meta-analysis to live software:
 
 1. **Indonesian L1 Diagnostic Inventory (`INDONESIAN-L1-DIAGNOSTIC-INVENTORY-v1.md` - Jalur A):**
    - 150-item micro-diagnostic contrastive matrix across 6 interference domains: Case Particles, Tense/Aspect/Modality, False Cognates & Wasei-Eigo, Benefactives, Adnominal Clauses, and Discourse Connectors / Epistemic Modality / Shuujoshi / Conditionals.
@@ -201,6 +201,9 @@ The synthesis phase has landed eight authoritative specifications bridging meta-
 9. **Phonology & HVPT Minimal Pair Diagnostic Matrix (`HVPT-JAPANESE-PITCH-ACCENT-MINIMAL-PAIR-MATRIX-v1.md` - Jalur D):**
    - 150-item granular phonological contrast matrix across 6 domains: Tokyo Pitch Accent Homophone Pairs (Atamadaka, Nakadaka, Odaka, Heiban), Vowel Duration (Chōon), Geminate Consonants (Sokuon), Contracted Sounds (Yōon) & Moraic Nasals (/N/), Liquid Flap [ɾ] vs Trill [r], and Gemba SSW Critical Safety Pairs.
    - Grounded in SLM-r (Flege & Bohn 2021 [PH-03]), PAM-L2 (Best & Tyler 2007 [PH-09]), Mora Isochrony (Port et al. 1987 [PH-16]), HVPT (Logan et al. 1991 [PH-30]; Thomson 2012 [PH-33]), and CAPT F0 tracing (Hardison 2004 [PH-55]; Vance 2008 [PH-58]).
+10. **Cross-Matrix Pre-Synthesis Audit (`CROSS-MATRIX-PRE-SYNTHESIS-AUDIT-v1.md` - Jalur E):**
+    - Comprehensive bidirectional Requirements Traceability Matrix (RTM) linking all 18 corpus research sections (§1–§18, §CA), 123 Master Design Decisions, 5 Level Ladder exit milestones (N5–N1), 300 diagnostic items (Jalur A & Jalur D), and 18 SSW vocational sectors.
+    - Formally certifies zero ghost features, zero orphaned empirical claims, 100% verified citation ratio (539+ DOIs), and resolution of all theoretical boundary condition flags (CONF-01 to CONF-04).
 
 ---
 

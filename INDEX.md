@@ -60,7 +60,8 @@ nugget-nihongo-research/
 │   ├── DESIGN-DECISION-MASTER-v1.md          ← 123 citation-grounded design decisions
 │   ├── CURRICULUM-BLUEPRINT-v1.md            ← Authoritative end-to-end curriculum roadmap
 │   ├── METHODOLOGY-PAGE-NARRATIVE-v1.md      ← Public-facing empirical methodology narrative
-│   └── MICRO-SESSION-ALGORITHMIC-SPEC-v1.md  ← 7-minute session formula, 6 card archetypes & dual-track FSRS (Jalur C)
+│   ├── MICRO-SESSION-ALGORITHMIC-SPEC-v1.md  ← 7-minute session formula, 6 card archetypes & dual-track FSRS (Jalur C)
+│   └── CROSS-MATRIX-PRE-SYNTHESIS-AUDIT-v1.md ← Cross-Matrix Pre-Synthesis Audit (18 sections, 123 DDM, 5 levels, 300 items) (Jalur E)
 │
 └── archive/                                   ← Historical registers, logs, and superseded drafts
     ├── README-ARCHIVE.md                      ← Archive index & provenance tracking
@@ -123,6 +124,8 @@ nugget-nihongo-research/
 | **Level Ladder Specification** | `corpus/sections/synthesis/LEVEL-LADDER-SPEC-v1.md` | 5-level exit criteria ladder (N5 to N1) combining FSRS stability, Processability Theory stages, and vocabulary depth | ✅ Complete |
 | **§18 Synthesis Model** | `corpus/sections/synthesis/SECTION18-SYNTHESIS-v1.md` | Unified pedagogical model integrating Nation's four strands into daily microlearning sessions | ✅ Complete |
 | **Methodology Page Narrative** | `blueprint/METHODOLOGY-PAGE-NARRATIVE-v1.md` | Transparent public-facing narrative of empirical curriculum principles and boundary conditions | ✅ Complete |
+| **Phonology & HVPT Matrix (Jalur D)** | `corpus/sections/phonology/HVPT-JAPANESE-PITCH-ACCENT-MINIMAL-PAIR-MATRIX-v1.md` | 150-item Pitch Accent, Mora Duration, & Phonological Contrast Matrix across 6 acoustic domains with F0 contours | ✅ Complete |
+| **Cross-Matrix Pre-Synthesis Audit (Jalur E)** | `blueprint/CROSS-MATRIX-PRE-SYNTHESIS-AUDIT-v1.md` | Exhaustive bidirectional verification linking 18 research sections, 123 DDM decisions, 5 level milestones, and 300 diagnostic items | ✅ Complete |
 
 ---
 
