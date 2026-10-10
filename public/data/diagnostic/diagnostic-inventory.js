@@ -2,7 +2,7 @@
 // Universal global bundle for browser and service worker ingestion
 var diagnosticInventory = {
   "version": "1.0.0",
-  "generated_at": "2026-10-10T13:41:39.117Z",
+  "generated_at": "2026-10-10T14:10:57.835Z",
   "total_count": 300,
   "l1_contrastive_count": 150,
   "phonology_hvpt_count": 150,
