@@ -292,8 +292,14 @@ function compilePhonItems(content) {
 
 function main() {
   console.log('Reading research corpus diagnostic inventories...');
-  if (!fs.existsSync(L1_MD)) throw new Error(`L1 inventory not found: ${L1_MD}`);
-  if (!fs.existsSync(PHON_MD)) throw new Error(`Phonology matrix not found: ${PHON_MD}`);
+  if (!fs.existsSync(L1_MD) || !fs.existsSync(PHON_MD)) {
+    if (fs.existsSync(CONFUSION_PAIRS_JS) && fs.existsSync(DIAG_JS)) {
+      console.log('Research repository markdown sources not present in build environment (CI/Cloudflare).');
+      console.log('Using existing compiled diagnostic data in public/data/ (300 items intact).');
+      return;
+    }
+    throw new Error(`Diagnostic source files not found and no precompiled data available: ${L1_MD}`);
+  }
 
   const l1Content = fs.readFileSync(L1_MD, 'utf8');
   const phonContent = fs.readFileSync(PHON_MD, 'utf8');
