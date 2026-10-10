@@ -173,7 +173,7 @@ export const HomePage: React.FC = () => {
             </div>
           </div>
 
-          <div className="shrink-0 flex items-center justify-center">
+          <div className="hidden sm:flex shrink-0 items-center justify-center">
             <img
               src="/icons/logo.png"
               alt="Nugget Nihongo"

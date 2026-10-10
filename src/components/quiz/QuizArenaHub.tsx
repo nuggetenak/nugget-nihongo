@@ -227,51 +227,51 @@ export const QuizArenaHub: React.FC<QuizArenaHubProps> = ({
       </div>
 
       {/* Real-time Arena Metric Overview Bar */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3">
-        <div className="p-3 rounded-2xl bg-surface border border-accent/20 flex items-center gap-3 shadow-sm min-w-0 overflow-hidden">
-          <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-amber-500/15 border border-amber-500/25 flex items-center justify-center text-accent text-base sm:text-lg shrink-0">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3">
+        <div className="p-2.5 sm:p-3 rounded-2xl bg-surface border border-accent/20 flex items-center gap-2.5 sm:gap-3 shadow-sm min-w-0 overflow-hidden">
+          <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-amber-500/15 border border-amber-500/25 flex items-center justify-center text-accent text-sm sm:text-lg shrink-0">
             🎯
           </div>
           <div className="min-w-0 flex-1">
-            <div className="text-[10px] font-bold text-appText-muted uppercase tracking-wider truncate">Soal Dijawab</div>
-            <div className="text-sm sm:text-base font-extrabold text-appText-bright font-mono truncate">
-              {overall.totalAnswered} <span className="text-[10px] font-normal text-appText-muted">soal</span>
+            <div className="text-[9px] sm:text-[10px] font-bold text-appText-muted uppercase tracking-wider truncate">Soal Dijawab</div>
+            <div className="text-xs sm:text-base font-extrabold text-appText-bright font-mono truncate">
+              {overall.totalAnswered} <span className="text-[9px] sm:text-[10px] font-normal text-appText-muted">soal</span>
             </div>
           </div>
         </div>
 
-        <div className="p-3 rounded-2xl bg-surface border border-accent/20 flex items-center gap-3 shadow-sm min-w-0 overflow-hidden">
-          <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-emerald-500/15 border border-emerald-500/25 flex items-center justify-center text-emerald-400 text-base sm:text-lg shrink-0">
+        <div className="p-2.5 sm:p-3 rounded-2xl bg-surface border border-accent/20 flex items-center gap-2.5 sm:gap-3 shadow-sm min-w-0 overflow-hidden">
+          <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-emerald-500/15 border border-emerald-500/25 flex items-center justify-center text-emerald-400 text-sm sm:text-lg shrink-0">
             📊
           </div>
           <div className="min-w-0 flex-1">
-            <div className="text-[10px] font-bold text-appText-muted uppercase tracking-wider truncate">Akurasi Rata-rata</div>
-            <div className="text-sm sm:text-base font-extrabold text-emerald-400 font-mono truncate">
+            <div className="text-[9px] sm:text-[10px] font-bold text-appText-muted uppercase tracking-wider truncate">Akurasi Rata-rata</div>
+            <div className="text-xs sm:text-base font-extrabold text-emerald-400 font-mono truncate">
               {overall.overallAccuracy}%
             </div>
           </div>
         </div>
 
-        <div className="p-3 rounded-2xl bg-surface border border-accent/20 flex items-center gap-3 shadow-sm min-w-0 overflow-hidden">
-          <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-purple-500/15 border border-purple-500/25 flex items-center justify-center text-purple-400 text-base sm:text-lg shrink-0">
+        <div className="p-2.5 sm:p-3 rounded-2xl bg-surface border border-accent/20 flex items-center gap-2.5 sm:gap-3 shadow-sm min-w-0 overflow-hidden">
+          <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-purple-500/15 border border-purple-500/25 flex items-center justify-center text-purple-400 text-sm sm:text-lg shrink-0">
             🧠
           </div>
           <div className="min-w-0 flex-1">
-            <div className="text-[10px] font-bold text-appText-muted uppercase tracking-wider truncate">Kartu FSRS</div>
-            <div className="text-sm sm:text-base font-extrabold text-appText-bright font-mono truncate">
-              {Object.keys(cards).length} <span className="text-[10px] font-normal text-appText-muted">kartu</span>
+            <div className="text-[9px] sm:text-[10px] font-bold text-appText-muted uppercase tracking-wider truncate">Kartu FSRS</div>
+            <div className="text-xs sm:text-base font-extrabold text-appText-bright font-mono truncate">
+              {Object.keys(cards).length} <span className="text-[9px] sm:text-[10px] font-normal text-appText-muted">kartu</span>
             </div>
           </div>
         </div>
 
-        <div className="p-3 rounded-2xl bg-surface border border-accent/20 flex items-center gap-3 shadow-sm min-w-0 overflow-hidden">
-          <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-cyan-500/15 border border-cyan-500/25 flex items-center justify-center text-cyan-400 text-base sm:text-lg shrink-0">
+        <div className="p-2.5 sm:p-3 rounded-2xl bg-surface border border-accent/20 flex items-center gap-2.5 sm:gap-3 shadow-sm min-w-0 overflow-hidden">
+          <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-cyan-500/15 border border-cyan-500/25 flex items-center justify-center text-cyan-400 text-sm sm:text-lg shrink-0">
             💧
           </div>
           <div className="min-w-0 flex-1">
-            <div className="text-[10px] font-bold text-appText-muted uppercase tracking-wider truncate">Tetes Air</div>
-            <div className="text-sm sm:text-base font-extrabold text-cyan-400 font-mono truncate">
-              {waterDrops} <span className="text-[10px] font-normal text-appText-muted">tetes</span>
+            <div className="text-[9px] sm:text-[10px] font-bold text-appText-muted uppercase tracking-wider truncate">Tetes Air</div>
+            <div className="text-xs sm:text-base font-extrabold text-cyan-400 font-mono truncate">
+              {waterDrops} <span className="text-[9px] sm:text-[10px] font-normal text-appText-muted">tetes</span>
             </div>
           </div>
         </div>
@@ -382,41 +382,51 @@ export const QuizArenaHub: React.FC<QuizArenaHubProps> = ({
         </div>
 
         {/* 8 Modes Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-4">
           {filteredModes.map((mode) => {
             const stat = getModeStat(mode.id);
             return (
               <div
                 key={mode.id}
                 onClick={() => onStartMode(mode.id)}
-                className="group cursor-pointer bg-surface hover:bg-surface-2 border border-accent/20 hover:border-accent/50 rounded-3xl p-5 flex flex-col justify-between space-y-4 transition-all duration-200 hover:-translate-y-1 shadow-sm active:scale-[0.98]"
+                className="group cursor-pointer bg-surface hover:bg-surface-2 border border-accent/20 hover:border-accent/50 rounded-2xl sm:rounded-3xl p-3.5 sm:p-5 flex flex-col justify-between space-y-3 sm:space-y-4 transition-all duration-200 hover:-translate-y-1 shadow-sm active:scale-[0.98]"
               >
                 {/* Card Header */}
-                <div className="space-y-3">
-                  <div className="flex items-center justify-between">
-                    <span className="text-2xl p-2 rounded-2xl bg-surface-2 border border-accent/15 group-hover:scale-110 transition-transform">
-                      {mode.icon}
-                    </span>
+                <div className="space-y-2.5 sm:space-y-3">
+                  <div className="flex items-center justify-between gap-2">
+                    <div className="flex items-center gap-2.5 sm:gap-3 min-w-0">
+                      <span className="text-xl sm:text-2xl p-1.5 sm:p-2 rounded-xl sm:rounded-2xl bg-surface-2 border border-accent/15 group-hover:scale-110 transition-transform shrink-0">
+                        {mode.icon}
+                      </span>
+                      <div className="sm:hidden min-w-0 flex-1">
+                        <h3 className="font-extrabold text-xs sm:text-sm text-appText-bright group-hover:text-accent transition-colors truncate">
+                          {mode.name}
+                        </h3>
+                        <div className="text-[10px] font-jp font-semibold text-amber-400/80 truncate">
+                          {mode.nameJp}
+                        </div>
+                      </div>
+                    </div>
                     <span
-                      className={`text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full border ${mode.badgeColor}`}
+                      className={`text-[9px] sm:text-[10px] font-bold uppercase px-2 sm:px-2.5 py-0.5 rounded-full border shrink-0 ${mode.badgeColor}`}
                     >
                       {mode.tag}
                     </span>
                   </div>
 
                   <div>
-                    <h3 className="font-extrabold text-sm sm:text-base text-appText-bright group-hover:text-accent transition-colors flex items-center justify-between">
+                    <h3 className="hidden sm:flex font-extrabold text-sm sm:text-base text-appText-bright group-hover:text-accent transition-colors items-center justify-between">
                       <span>{mode.name}</span>
                     </h3>
-                    <div className="text-[11px] font-jp font-semibold text-amber-400/80 mt-0.5">
+                    <div className="hidden sm:block text-[11px] font-jp font-semibold text-amber-400/80 mt-0.5">
                       {mode.nameJp}
                     </div>
-                    <p className="text-xs text-appText-muted mt-2 leading-relaxed line-clamp-2">
+                    <p className="text-xs text-appText-muted mt-1 sm:mt-2 leading-relaxed line-clamp-2">
                       {mode.desc}
                     </p>
 
                     {/* Atomized Mode Progress Pill */}
-                    <div className="pt-2 flex items-center justify-between text-[11px]">
+                    <div className="pt-2 flex items-center justify-between text-[10px] sm:text-[11px]">
                       {stat.answered > 0 ? (
                         <span className="inline-flex items-center gap-1 font-semibold text-emerald-400">
                           <Target className="w-3 h-3" />
@@ -424,7 +434,7 @@ export const QuizArenaHub: React.FC<QuizArenaHubProps> = ({
                         </span>
                       ) : (
                         <span className="text-appText-muted/60 text-[10px]">
-                          Belum pernah dicoba
+                          Belum dicoba
                         </span>
                       )}
                       {stat.sessions > 0 && (
@@ -437,14 +447,14 @@ export const QuizArenaHub: React.FC<QuizArenaHubProps> = ({
                 </div>
 
                 {/* Card Footer */}
-                <div className="pt-3 border-t border-accent/10 flex items-center justify-between text-[11px] text-appText-muted">
-                  <span className="flex items-center gap-1 font-mono">
+                <div className="pt-2.5 sm:pt-3 border-t border-accent/10 flex items-center justify-between text-[11px] text-appText-muted">
+                  <span className="flex items-center gap-1 font-mono text-[10px] sm:text-xs">
                     <Clock className="w-3 h-3 text-accent" />
                     {mode.estTime}
                   </span>
-                  <span className="text-accent font-bold group-hover:translate-x-1 transition-transform flex items-center gap-1">
+                  <span className="text-accent font-bold group-hover:translate-x-1 transition-transform flex items-center gap-1 text-xs">
                     <span>Mulai</span>
-                    <ArrowRight className="w-3 h-3" />
+                    <ArrowRight className="w-3.5 h-3.5" />
                   </span>
                 </div>
               </div>

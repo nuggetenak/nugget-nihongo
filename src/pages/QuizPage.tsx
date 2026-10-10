@@ -586,7 +586,7 @@ export const QuizPage: React.FC = () => {
                   <div
                     {...touchHandlers}
                     onClick={toggleFlip}
-                    className={`relative cursor-pointer min-h-[300px] rounded-3xl border-2 p-8 flex flex-col justify-between text-center transition-all duration-300 select-none shadow-xl overflow-hidden ${
+                    className={`relative cursor-pointer min-h-[260px] sm:min-h-[300px] rounded-2xl sm:rounded-3xl border-2 p-5 sm:p-8 flex flex-col justify-between text-center transition-all duration-300 select-none shadow-xl overflow-hidden ${
                       isFlipped
                         ? 'bg-amber-950/40 border-amber-500/60'
                         : 'bg-surface border-accent/30 hover:border-accent/50'
@@ -721,7 +721,7 @@ export const QuizPage: React.FC = () => {
               {activeMode !== 'flashcard' && activeMode !== 'listening' && activeMode !== 'rearrange' && (
                 <div className="space-y-4">
                   {/* Question Card */}
-                  <div className="bg-surface border-2 border-accent/25 rounded-3xl p-6 sm:p-8 space-y-3 shadow-lg relative">
+                  <div className="bg-surface border-2 border-accent/25 rounded-2xl sm:rounded-3xl p-5 sm:p-8 space-y-3 shadow-lg relative">
                     <div className="flex items-center justify-between">
                       <div className="text-xs font-bold text-accent">{currentQ.prompt}</div>
                       <div className="flex items-center gap-1.5">
@@ -741,7 +741,7 @@ export const QuizPage: React.FC = () => {
                         </button>
                       </div>
                     </div>
-                    <div className="text-3xl sm:text-4xl font-jp font-bold text-appText-bright">
+                    <div className="text-2xl sm:text-4xl font-jp font-bold text-appText-bright">
                       {currentQ.questionText}
                     </div>
                     {currentQ.subText && (
@@ -781,7 +781,7 @@ export const QuizPage: React.FC = () => {
                           key={idx}
                           onClick={() => handleSelectOption(opt)}
                           disabled={!!feedback}
-                          className={`w-full p-4 rounded-2xl border text-sm font-semibold text-left transition-all flex items-center justify-between ${btnStyle} active:scale-[0.99]`}
+                          className={`w-full p-3.5 sm:p-4 rounded-xl sm:rounded-2xl border text-xs sm:text-sm font-semibold text-left transition-all flex items-center justify-between ${btnStyle} active:scale-[0.99]`}
                         >
                           <div className="flex items-center gap-3">
                             <span className="w-7 h-7 rounded-xl bg-surface border border-accent/15 flex items-center justify-center text-xs font-mono text-appText-muted shrink-0">

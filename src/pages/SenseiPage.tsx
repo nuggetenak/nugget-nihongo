@@ -66,22 +66,22 @@ export const SenseiPage: React.FC = () => {
       </div>
 
       {/* Action Box to Redirect */}
-      <div className="bg-surface border border-accent/20 rounded-2xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+      <div className="bg-surface border border-accent/20 rounded-2xl p-5 sm:p-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
         <div>
-          <h4 className="font-bold text-appText-bright text-base">Sambil menunggu Sensei siap...</h4>
+          <h4 className="font-bold text-appText-bright text-sm sm:text-base">Sambil menunggu Sensei siap...</h4>
           <p className="text-xs text-appText-muted">Kamu tetap bisa memperkuat hafalan dengan ribuan materi di Hub & Arena Kuis!</p>
         </div>
-        <div className="flex items-center gap-3">
+        <div className="flex flex-col sm:flex-row items-center gap-2.5 sm:gap-3 w-full sm:w-auto">
           <button
             onClick={() => setActiveTab('materi')}
-            className="px-4 py-2.5 rounded-xl bg-accent hover:bg-accent-hot text-bg font-bold text-xs flex items-center gap-2 transition-all shadow-sm"
+            className="w-full sm:w-auto px-4 py-2.5 rounded-xl bg-accent hover:bg-accent-hot text-bg font-bold text-xs flex items-center justify-center gap-2 transition-all shadow-sm active:scale-95"
           >
             <span>Buka Materi Hub</span>
             <ArrowRight className="w-4 h-4" />
           </button>
           <button
             onClick={() => setActiveTab('quiz')}
-            className="px-4 py-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-bright font-bold text-xs border border-accent/25 transition-all"
+            className="w-full sm:w-auto px-4 py-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-bright font-bold text-xs border border-accent/25 transition-all active:scale-95"
           >
             Mulai Kuis
           </button>

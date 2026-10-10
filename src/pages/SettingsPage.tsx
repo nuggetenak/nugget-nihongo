@@ -429,16 +429,16 @@ export const SettingsPage: React.FC = () => {
           Semua catatan FSRS, hafalan kartu, dan riwayat streak tersimpan aman secara offline di browser perangkatmu. Kamu bisa mengunduh file cadangan kapan saja untuk dipindahkan ke perangkat lain.
         </p>
 
-        <div className="flex flex-wrap items-center gap-3 pt-2">
+        <div className="flex flex-col sm:flex-row items-center gap-2.5 sm:gap-3 pt-2">
           <button
             onClick={handleExportBackup}
-            className="px-4 py-2.5 rounded-xl bg-accent text-bg font-bold text-xs flex items-center gap-2 hover:bg-accent-hot transition-all shadow-sm"
+            className="w-full sm:w-auto px-4 py-2.5 rounded-xl bg-accent text-bg font-bold text-xs flex items-center justify-center gap-2 hover:bg-accent-hot transition-all shadow-sm active:scale-95"
           >
             <Download className="w-4 h-4" />
             <span>Ekspor Cadangan (JSON)</span>
           </button>
 
-          <label className="px-4 py-2.5 rounded-xl bg-surface-2 border border-accent/25 text-appText-bright font-bold text-xs flex items-center gap-2 hover:bg-surface-3 transition-all cursor-pointer">
+          <label className="w-full sm:w-auto px-4 py-2.5 rounded-xl bg-surface-2 border border-accent/25 text-appText-bright font-bold text-xs flex items-center justify-center gap-2 hover:bg-surface-3 transition-all cursor-pointer active:scale-95 text-center">
             <Upload className="w-4 h-4 text-accent" />
             <span>Impor Cadangan</span>
             <input type="file" accept=".json" onChange={handleImportBackup} className="hidden" />

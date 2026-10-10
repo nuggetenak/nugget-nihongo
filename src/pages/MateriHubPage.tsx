@@ -160,8 +160,8 @@ export const MateriHubPage: React.FC = () => {
           </p>
         </div>
 
-        {/* Floating Quick Study Tools */}
-        <div className="flex flex-wrap items-center gap-2 shrink-0 self-start sm:self-auto">
+        {/* Floating Quick Study Tools (Desktop/Tablet: available in MobileDrawer on phones) */}
+        <div className="hidden sm:flex flex-wrap items-center gap-2 shrink-0 self-start sm:self-auto">
           <button
             onClick={() => setIsKanaOpen(true)}
             className="px-3.5 py-2 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/35 text-accent-hot text-xs font-bold transition-all flex items-center gap-1.5 shadow-sm active:scale-95"
@@ -229,7 +229,7 @@ export const MateriHubPage: React.FC = () => {
       {activeTrack === 'jlpt' && (
         <div className="space-y-4">
           {/* Level Selector Pills */}
-          <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none">
+          <div className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto pb-1 scrollbar-none">
             {jlptLevels.map((lvl) => {
               const isSelected = (selectedLevel === 'all' ? 'n5' : selectedLevel) === lvl.id;
               return (
@@ -239,14 +239,14 @@ export const MateriHubPage: React.FC = () => {
                     setSelectedLevel(lvl.id);
                     setRenderLimit(60);
                   }}
-                  className={`px-3.5 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all border ${
+                  className={`px-3 sm:px-3.5 py-1.5 sm:py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all border ${
                     isSelected
                       ? 'bg-amber-500 text-bg border-amber-500 shadow-sm'
                       : 'bg-surface-2 border-accent/20 text-appText-muted hover:text-appText-bright hover:border-accent/40'
                   }`}
                 >
                   <span>{lvl.label}</span>
-                  <span className="opacity-75 text-[11px] ml-1.5 font-normal">({lvl.desc})</span>
+                  <span className="opacity-75 text-[11px] ml-1.5 font-normal hidden sm:inline">({lvl.desc})</span>
                 </button>
               );
             })}
@@ -260,8 +260,8 @@ export const MateriHubPage: React.FC = () => {
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder={`Cari kosakata / tata bahasa ${(selectedLevel === 'all' ? 'n5' : selectedLevel).toUpperCase()} (kanji, kana, arti, romaji)...`}
-                className="w-full bg-surface-2 border border-accent/20 rounded-xl pl-10 pr-10 py-2.5 text-xs text-appText-bright placeholder:text-appText-muted/60 focus:outline-none focus:border-accent transition-colors"
+                placeholder={`Cari kosakata / tata bahasa ${(selectedLevel === 'all' ? 'n5' : selectedLevel).toUpperCase()}...`}
+                className="w-full bg-surface-2 border border-accent/20 rounded-xl pl-9 pr-9 py-2 sm:py-2.5 text-xs text-appText-bright placeholder:text-appText-muted/60 focus:outline-none focus:border-accent transition-colors"
               />
               {searchQuery && (
                 <button
