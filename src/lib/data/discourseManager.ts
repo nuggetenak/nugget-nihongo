@@ -5,7 +5,16 @@
 // ══════════════════════════════════════════════════════════════════
 
 import { JLPTLevel } from '../../types/vocab';
-import { QuizQuestionItem, shuffle } from '../quiz/quizEngine';
+import { QuizQuestionItem } from '../../types/quiz';
+
+function shuffle<T>(array: T[]): T[] {
+  const arr = [...array];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
 
 export type DiscourseRole = 'premise' | 'antithesis' | 'evidence' | 'synthesis' | 'conclusion';
 
@@ -51,7 +60,7 @@ export interface CollocationNuanceEntry {
 }
 
 // Canonical Pre-loaded N2 & N1 Discourse Passages
-const CANONICAL_PASSAGES: DiscoursePassage[] = [
+export const CANONICAL_PASSAGES: DiscoursePassage[] = [
   {
     id: 'disc-n2-01',
     title_jp: 'AI技術の導入と労働市場の変容',
@@ -152,7 +161,7 @@ const CANONICAL_PASSAGES: DiscoursePassage[] = [
 ];
 
 // Canonical Pre-loaded N2 & N1 Collocation & Nuance Contrast Entries
-const CANONICAL_COLLOCATIONS: CollocationNuanceEntry[] = [
+export const CANONICAL_COLLOCATIONS: CollocationNuanceEntry[] = [
   {
     id: 'colloc-n1-time',
     title: 'Suksesi Waktu Seketika N1 (や否や vs が早いか vs そばから vs なり)',

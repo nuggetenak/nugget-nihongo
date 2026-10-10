@@ -2,6 +2,7 @@ import { create } from 'zustand';
 import { JLPTLevel } from '../types/vocab';
 import { FSRSCard } from '../types/fsrs';
 import { useGamificationStore } from '../lib/gamification/gamificationStore';
+import { L1Substratum } from '../lib/data/diagnosticManager';
 
 export interface ToastMessage {
   id: string;
@@ -29,7 +30,9 @@ export interface AppState {
   recordStudyActivity: () => void;
   checkStreakStatus: () => void;
 
-  // User Preferences
+  // User Preferences & L1 Dialect Substratum
+  userSubstratum: L1Substratum;
+  setUserSubstratum: (substratum: L1Substratum) => void;
   theme: 'dark' | 'light';
   toggleTheme: () => void;
   showFurigana: boolean;
@@ -200,6 +203,16 @@ export const useAppStore = create<AppState>((set, get) => ({
     }
 
     useGamificationStore.getState().checkAndAwardBadges({ streak: nextStreak });
+  },
+
+  userSubstratum: typeof window !== 'undefined'
+    ? ((localStorage.getItem('nn_user_l1_substratum') as L1Substratum) || 'general_indonesian')
+    : 'general_indonesian',
+  setUserSubstratum: (userSubstratum) => {
+    set({ userSubstratum });
+    if (typeof window !== 'undefined') {
+      try { localStorage.setItem('nn_user_l1_substratum', userSubstratum); } catch {}
+    }
   },
 
   theme: 'dark',

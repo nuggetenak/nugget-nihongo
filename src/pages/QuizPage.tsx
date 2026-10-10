@@ -10,7 +10,7 @@ import { QuizMode } from '../types/quiz';
 import { JLPTLevel } from '../types/vocab';
 import { FSRSCard, FSRSRating } from '../types/fsrs';
 import { calculateFSRSReview } from '../lib/fsrs/math';
-import { loadVocab, loadGrammar } from '../lib/data/dataManager';
+import { loadVocab, loadGrammar, loadDiagnosticPairs } from '../lib/data/dataManager';
 import {
   generateQuizQuestions,
   generateFSRSDueQuestions,
@@ -31,9 +31,11 @@ import { QuizConfigModal } from '../components/quiz/QuizConfigModal';
 import { SpoilerTranslation } from '../components/ui/SpoilerTranslation';
 import { ReportIssueModal, ReportItemContext } from '../components/ui/ReportIssueModal';
 import { QuizExitGuardModal } from '../components/quiz/QuizExitGuardModal';
+import { PanicRecallCard } from '../components/quiz/PanicRecallCard';
+import { MoraPacingCard } from '../components/quiz/MoraPacingCard';
 
 export const QuizPage: React.FC = () => {
-  const { selectedLevel, setSelectedLevel, showToast, incrementXp, setActiveTab, setCard, cards } = useAppStore();
+  const { selectedLevel, setSelectedLevel, showToast, incrementXp, setActiveTab, setCard, cards, userSubstratum } = useAppStore();
 
   // Navigation state within Quiz Arena: 'hub' (dashboard) | 'quiz' (active session)
   const [viewState, setViewState] = useState<'hub' | 'quiz'>('hub');
@@ -99,12 +101,16 @@ export const QuizPage: React.FC = () => {
 
     try {
       const targetLevel: JLPTLevel = selectedLevel === 'all' ? 'n5' : selectedLevel;
-      const [vocabs, grammars] = await Promise.all([
+      const [vocabs, grammars, diagPairs] = await Promise.all([
         loadVocab(targetLevel),
         loadGrammar(targetLevel),
+        loadDiagnosticPairs(),
       ]);
 
-      const items = generateQuizQuestions(mode, vocabs, grammars, targetLevel, sessionCount);
+      const items = generateQuizQuestions(mode, vocabs, grammars, targetLevel, sessionCount, {
+        diagnosticPairs: diagPairs,
+        substratum: userSubstratum,
+      });
       setQuestions(items);
 
       if (items.length > 0 && mode === 'rearrange' && items[0].tokens) {
@@ -239,7 +245,7 @@ export const QuizPage: React.FC = () => {
       }
 
       // Choice-based modes
-      if (['multiple-choice', 'listening', 'conjugation', 'fill-in', 'translation', 'error-find'].includes(activeMode)) {
+      if (['multiple-choice', 'listening', 'conjugation', 'fill-in', 'translation', 'error-find', 'mora-pacing', 'pitch-accent', 'discourse-deconstruct', 'collocation-matrix'].includes(activeMode)) {
         if (!feedback && e.code in numpadMap && currentQ.options) {
           const idx = numpadMap[e.code] - 1;
           if (idx >= 0 && idx < currentQ.options.length) {
@@ -325,6 +331,38 @@ export const QuizPage: React.FC = () => {
         question: currentQ,
         isCorrect,
         selected: rating === 4 ? 'Mudah' : rating === 3 ? 'Ingat' : rating === 2 ? 'Ragu' : 'Lupa',
+      },
+    ]);
+
+    if (!isCorrect) {
+      setMistakesList((prev) => (prev.some((m) => m.id === currentQ.id) ? prev : [...prev, currentQ]));
+    }
+
+    handleNextQuestion();
+  };
+
+  // Panic Simulator self-rating handler
+  const handlePanicRate = (rating: 'gagal' | 'ragu' | 'lancar') => {
+    if (!currentQ) return;
+    const isCorrect = rating !== 'gagal';
+    const xpGain = rating === 'lancar' ? 15 : rating === 'ragu' ? 8 : 2;
+
+    if (isCorrect) playSuccessSfx();
+    else playErrorSfx();
+
+    incrementXp(xpGain);
+    setSessionScore((prev) => (isCorrect ? prev + 1 : prev));
+    setSessionXp((prev) => prev + xpGain);
+
+    updateItemFSRSAndGarden(currentQ.targetItem, isCorrect);
+    useGamificationStore.getState().recordQuizAnswer('panic-recall', isCorrect);
+
+    setUserAnswers((prev) => [
+      ...prev,
+      {
+        question: currentQ,
+        isCorrect,
+        selected: rating === 'lancar' ? 'Lancar & Sigap' : rating === 'ragu' ? 'Ragu' : 'Gagal',
       },
     ]);
 
@@ -580,6 +618,25 @@ export const QuizPage: React.FC = () => {
                 />
               )}
 
+              {/* Mode: Panic Recall (Gemba K3 Cover-Recall-Check) */}
+              {activeMode === 'panic-recall' && (
+                <PanicRecallCard
+                  question={currentQ}
+                  onRateSelf={handlePanicRate}
+                  onOpenReport={() => handleOpenReport(currentQ)}
+                />
+              )}
+
+              {/* Mode: Mora Pacing (Visual Metronome) */}
+              {activeMode === 'mora-pacing' && (
+                <MoraPacingCard
+                  question={currentQ}
+                  selectedOption={selectedOption}
+                  feedback={feedback}
+                  onSelectOption={handleSelectOption}
+                />
+              )}
+
               {/* Mode: Flashcard 3D */}
               {activeMode === 'flashcard' && (
                 <div className="space-y-4">
@@ -717,8 +774,8 @@ export const QuizPage: React.FC = () => {
                 </div>
               )}
 
-              {/* Modes: Multiple Choice, Conjugation, Fill-in, Translation, Error Find */}
-              {activeMode !== 'flashcard' && activeMode !== 'listening' && activeMode !== 'rearrange' && (
+              {/* Modes: Multiple Choice, Conjugation, Fill-in, Translation, Error Find, Pitch Accent, Discourse, Collocation */}
+              {activeMode !== 'flashcard' && activeMode !== 'listening' && activeMode !== 'rearrange' && activeMode !== 'panic-recall' && activeMode !== 'mora-pacing' && (
                 <div className="space-y-4">
                   {/* Question Card */}
                   <div className="bg-surface border-2 border-accent/25 rounded-2xl sm:rounded-3xl p-5 sm:p-8 space-y-3 shadow-lg relative">

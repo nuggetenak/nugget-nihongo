@@ -260,6 +260,82 @@ requiredStoreActions.forEach(action => {
   auditAssert(sContent.includes(action), `Curriculum store implements action '${action}'`);
 });
 
+// ── AUDIT 7: GEMBA K3 & VOCATIONAL PANIC SCENARIOS REPOSITORY ──
+console.log('\n── AUDIT 7: Gemba K3 & Vocational Panic Scenarios (ADR-009) ──');
+const panicTsPath = path.resolve(__dirname, '../src/lib/data/panicScenarioManager.ts');
+auditAssert(fs.existsSync(panicTsPath), 'panicScenarioManager.ts exists on disk');
+const pContent = fs.readFileSync(panicTsPath, 'utf8');
+
+const canonicalPanicIds = [
+  'panic-kaigo-01', 'panic-kaigo-02', 'panic-kaigo-03',
+  'panic-jac-01', 'panic-jac-02', 'panic-jac-03', 'panic-jac-04', 'panic-jac-05',
+  'panic-jaim-01',
+  'panic-agri-01', 'panic-agri-02', 'panic-agri-03',
+  'panic-fish-01', 'panic-fish-02', 'panic-fish-03',
+  'panic-food-01', 'panic-food-02', 'panic-food-03',
+  'panic-resto-01', 'panic-resto-02', 'panic-resto-03'
+];
+
+canonicalPanicIds.forEach(id => {
+  auditAssert(pContent.includes(`id: '${id}'`), `Panic scenario '${id}' defined in repository`);
+});
+
+const requiredPanicFields = [
+  'standardProtocol',
+  'kanseiUtterance',
+  'situation',
+  'japaneseOutput',
+  'actionChecklist',
+  'timeoutSeconds'
+];
+requiredPanicFields.forEach(field => {
+  auditAssert(pContent.includes(field), `Panic scenario schema includes '${field}'`);
+});
+
+// ── AUDIT 8: UNIFIED QUIZ ENGINE DISPATCHER & DRILL COMPONENTS ──
+console.log('\n── AUDIT 8: Unified Quiz Engine Dispatcher & Drill Cards ──');
+const qEnginePath = path.resolve(__dirname, '../src/lib/quiz/quizEngine.ts');
+auditAssert(fs.existsSync(qEnginePath), 'quizEngine.ts exists');
+const qContent = fs.readFileSync(qEnginePath, 'utf8');
+
+const all13Modes = [
+  'flashcard',
+  'multiple-choice',
+  'listening',
+  'fill-in',
+  'rearrange',
+  'conjugation',
+  'translation',
+  'error-find',
+  'panic-recall',
+  'mora-pacing',
+  'pitch-accent',
+  'discourse-deconstruct',
+  'collocation-matrix'
+];
+all13Modes.forEach(mode => {
+  auditAssert(qContent.includes(`mode === '${mode}'`), `Quiz engine dispatcher explicitly routes '${mode}'`);
+});
+
+// Verify drill components exist
+const panicCardPath = path.resolve(__dirname, '../src/components/quiz/PanicRecallCard.tsx');
+auditAssert(fs.existsSync(panicCardPath), 'PanicRecallCard.tsx component exists');
+const moraCardPath = path.resolve(__dirname, '../src/components/quiz/MoraPacingCard.tsx');
+auditAssert(fs.existsSync(moraCardPath), 'MoraPacingCard.tsx component exists');
+
+// Verify QuizArenaHub registers all 5 new specialty modes
+const arenaHubPath = path.resolve(__dirname, '../src/components/quiz/QuizArenaHub.tsx');
+const aContent = fs.readFileSync(arenaHubPath, 'utf8');
+['panic-recall', 'mora-pacing', 'pitch-accent', 'discourse-deconstruct', 'collocation-matrix'].forEach(mode => {
+  auditAssert(aContent.includes(`id: '${mode}'`), `QuizArenaHub registers mode card '${mode}'`);
+});
+
+// Verify useAppStore tracks userSubstratum
+const appStorePath = path.resolve(__dirname, '../src/store/useAppStore.ts');
+const storeContent = fs.readFileSync(appStorePath, 'utf8');
+auditAssert(storeContent.includes('userSubstratum:'), 'useAppStore tracks userSubstratum');
+auditAssert(storeContent.includes('setUserSubstratum:'), 'useAppStore exposes setUserSubstratum');
+
 // ── AUDIT SUMMARY ──
 console.log('\n══════════════════════════════════════════════════════════════════');
 console.log(` AUDIT COMPLETE: ${passedChecks} / ${totalChecks} CHECKS PASSED (${failedChecks} FAILURES)`);
@@ -268,5 +344,6 @@ console.log('══════════════════════�
 if (failedChecks > 0) {
   process.exit(1);
 } else {
-  console.log('🌟 BACKEND INTEGRITY VERIFIED 100%: ALL SYSTEMS PRODUCTION READY!\n');
+  console.log('🌟 ALL 8 BACKEND & DRILL AUDITS VERIFIED 100%: FULL PRODUCTION READINESS!\n');
 }
+

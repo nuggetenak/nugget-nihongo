@@ -5,30 +5,26 @@
 // ══════════════════════════════════════════════════════════════════
 
 import { JLPTLevel } from '../../types/vocab';
-import { QuizMode } from '../../types/quiz';
+import { QuizMode, QuizQuestionItem, PanicScenarioItem } from '../../types/quiz';
 import { NormalizedVocab, NormalizedGrammar } from '../data/dataManager';
 import { conjugate, FORMS } from '../grammar/conjugation';
 import { FSRSCard } from '../../types/fsrs';
 import { DiagnosticPair, L1Substratum, PitchAccentType } from '../data/diagnosticManager';
+import { CANONICAL_PANIC_SCENARIOS } from '../data/panicScenarioManager';
+import {
+  CANONICAL_PASSAGES,
+  CANONICAL_COLLOCATIONS,
+  generateDiscourseQuestions,
+  generateCollocationQuestions,
+} from '../data/discourseManager';
 
-export interface QuizQuestionItem {
-  id: string;
-  mode: QuizMode;
-  prompt: string;
-  targetItem: NormalizedVocab | NormalizedGrammar;
-  questionText: string;
-  subText?: string;
-  correctAnswer: string;
-  options?: string[]; // for multiple choice
-  tokens?: string[];  // for rearrange
-  explanation: string;
-  level: JLPTLevel;
-  panicTimeoutSeconds?: number;
-  actionChecklist?: string[];
-  moraBeats?: string[];
-  pitchContour?: string;
-  discourseRole?: 'premise' | 'antithesis' | 'synthesis' | 'evidence' | 'conclusion';
-  collocationContrast?: { patternA: string; patternB: string; difference: string };
+export type { QuizQuestionItem, PanicScenarioItem };
+
+export interface GenerateQuizOptions {
+  diagnosticPairs?: DiagnosticPair[];
+  panicScenarios?: PanicScenarioItem[];
+  substratum?: L1Substratum;
+  pitchType?: PitchAccentType;
 }
 
 // Utility to shuffle array
@@ -76,8 +72,35 @@ export function generateQuizQuestions(
   vocabPool: NormalizedVocab[],
   grammarPool: NormalizedGrammar[],
   level: JLPTLevel,
-  count = 10
+  count = 10,
+  options?: GenerateQuizOptions
 ): QuizQuestionItem[] {
+  if (mode === 'panic-recall') {
+    const scenarios = options?.panicScenarios && options.panicScenarios.length > 0
+      ? options.panicScenarios
+      : CANONICAL_PANIC_SCENARIOS;
+    return generatePanicRecallQuestions(scenarios, count);
+  }
+
+  if (mode === 'mora-pacing') {
+    return generateMoraPacingQuestions(vocabPool, count);
+  }
+
+  if (mode === 'pitch-accent') {
+    if (options?.diagnosticPairs && options.diagnosticPairs.length > 0) {
+      return generatePitchAccentQuestions(options.diagnosticPairs, count);
+    }
+    return generateMoraPacingQuestions(vocabPool, count);
+  }
+
+  if (mode === 'discourse-deconstruct') {
+    return generateDiscourseQuestions(CANONICAL_PASSAGES, Math.min(count, CANONICAL_PASSAGES.length));
+  }
+
+  if (mode === 'collocation-matrix') {
+    return generateCollocationQuestions(CANONICAL_COLLOCATIONS, Math.min(count, CANONICAL_COLLOCATIONS.length));
+  }
+
   const questions: QuizQuestionItem[] = [];
 
   if (mode === 'flashcard') {

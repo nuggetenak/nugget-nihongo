@@ -350,3 +350,9 @@ export async function loadCurriculumTrack(
   return null;
 }
 
+// Re-export diagnostic, vocational panic, and macro-discourse data modules
+export * from './diagnosticManager';
+export * from './panicScenarioManager';
+export * from './discourseManager';
+
+
