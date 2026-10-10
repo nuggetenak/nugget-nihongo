@@ -1176,6 +1176,8 @@ Norris, J. M., & Ortega, L. (2000). Effectiveness of L2 instruction: A research 
 
 Ellis, R. (2001). Investigating form-focused instruction. *Language Learning, 51*(Suppl. 1), 1–46. https://doi.org/10.1111/j.1467-9922.2001.tb00049.x [OT-17]
 
+Anderson, J. R. (1983). *The architecture of cognition.* Harvard University Press. [OT-18] [DOI UNVERIFIED — monograph ISBN: 978-0674044258]
+
 Anderson, J. R. (1992). Automaticity and the ACT theory. *American Journal of Psychology, 105*(2), 165–180. https://doi.org/10.2307/1423026 [OT-19]
 
 DeKeyser, R. M. (1997). Beyond explicit rule learning: Automatizing second language morphosyntax. *Studies in Second Language Acquisition, 19*(2), 195–221. [OT-20]
@@ -1240,7 +1242,7 @@ Cutler, A., & Otake, T. (1994). Mora or syllable? Speech segmentation in Japanes
 
 Otake, T., Hatano, G., Cutler, A., & Mehler, J. (1993). Mora or syllable? Speech segmentation in Japanese. *Journal of Memory and Language, 32*(2), 258–278. https://doi.org/10.1006/jmla.1993.1014 [PH-14]
 
-McQueen, J. M., Otake, T., & Cutler, A. (2001). Rhythmic cues and possible-word constraints in Japanese word segmentation. *Journal of Memory and Language, 45*(1), 103–132. [PH-15]
+McQueen, J. M., Otake, T., & Cutler, A. (2001). Rhythmic cues and possible-word constraints in Japanese word segmentation. *Journal of Memory and Language, 45*(1), 103–132. https://doi.org/10.1006/jmla.2000.2763 [PH-15]
 
 Port, R., Dalby, J., & O'Dell, M. (1987). Evidence for mora timing in Japanese. *Journal of the Acoustical Society of America, 81*(5), 1574–1585. https://doi.org/10.1121/1.394510 [PH-16]
 
@@ -1346,19 +1348,19 @@ Kasper, G., & Rose, K. R. (2002). *Pragmatic development in a second language.* 
 
 Marriott, H. (1995). The acquisition of politeness patterns by exchange students in Japan. In B. F. Freed (Ed.), *Second language acquisition in a study abroad context* (pp. 197–224). John Benjamins. https://doi.org/10.1075/sibil.9.11mar [SC-11]
 
-Bardovi-Harlig, K. (2001). Empirical evidence of the need for instruction in pragmatics. In K. R. Rose & G. Kasper (Eds.), *Pragmatics in language teaching* (pp. 13–32). Cambridge University Press. [SC-16]
+Bardovi-Harlig, K. (2001). Evaluating the empirical evidence: Grounds for instruction in pragmatics? In K. R. Rose & G. Kasper (Eds.), *Pragmatics in language teaching* (pp. 13–32). Cambridge University Press. https://doi.org/10.1017/CBO9781139524797.005 [SC-16]
 
-Kasper, G. (1992). Pragmatic transfer. *Second Language Research, 8*(3), 203–231. [SC-17]
+Kasper, G. (1992). Pragmatic transfer. *Second Language Research, 8*(3), 203–231. https://doi.org/10.1177/026765839200800303 [SC-17]
 
-Félix-Brasdefer, J. C. (2007). Pragmatic development in the classroom: A cross-sectional study of learner requests in Spanish L2. *Intercultural Pragmatics, 4*(2), 181–218. [SC-18]
+Félix-Brasdefer, J. C. (2007). Pragmatic development in the classroom: A cross-sectional study of learner requests in Spanish L2. *Intercultural Pragmatics, 4*(2), 181–218. https://doi.org/10.1515/IP.2007.009 [SC-18]
 
-Thomas, J. (1983). Cross-cultural pragmatic failure. *Applied Linguistics, 4*(2), 91–112. [SC-19]
+Thomas, J. (1983). Cross-cultural pragmatic failure. *Applied Linguistics, 4*(2), 91–112. https://doi.org/10.1093/applin/4.2.91 [SC-19]
 
-Leech, G. N. (1983). *Principles of pragmatics*. Longman. [SC-20]
+Leech, G. N. (1983). *Principles of pragmatics*. Longman. [SC-20] [DOI UNVERIFIED — monograph ISBN: 0-582-55110-9]
 
-Bardovi-Harlig, K., & Dörnyei, Z. (1998). Do language learners recognize pragmatic violations? Pragmatic versus grammatical awareness in instructed L2 learning. *TESOL Quarterly, 32*(2), 233–262. [SC-21]
+Bardovi-Harlig, K., & Dörnyei, Z. (1998). Do language learners recognize pragmatic violations? Pragmatic versus grammatical awareness in instructed L2 learning. *TESOL Quarterly, 32*(2), 233–262. https://doi.org/10.2307/3587583 [SC-21]
 
-Taguchi, N. (2009). Comprehension of indirect opinions and refusals in L2 Japanese. In N. Taguchi (Ed.), *Pragmatic competence* (pp. 249–274). Mouton de Gruyter. [SC-22]
+Taguchi, N. (2009). Comprehension of indirect opinions and refusals in L2 Japanese. In N. Taguchi (Ed.), *Pragmatic competence* (pp. 249–274). Mouton de Gruyter. https://doi.org/10.1515/9783110218558.249 [SC-22]
 
 Rose, K. R. (2000). An exploratory cross-sectional study of interlanguage pragmatic development. *Studies in Second Language Acquisition, 22*(1), 27–67. [SC-24]
 

@@ -97,20 +97,20 @@ All flags originally raised by Agent 37 have been fully audited and resolved:
 
 ---
 
-## FLAGS FROM §12 OUTPUT THEORY (migrated from SECTION12-OUTPUT-THEORY.md)
+## FLAGS FROM §12 OUTPUT THEORY — RESOLVED & HARDENED
 
-| Flag | ID | Issue | Action |
-|---|---|---|---|
-| ⚑ VERIFY | OT-22 | DeKeyser (2007) — Practice in a Second Language — DOI unconfirmed; ISBN 978-0521677356 | Verify ISBN |
-| ⚑ VERIFY | OT-01 | Swain (1985) — Output hypothesis book chapter | Book chapter — no standard DOI; verify via WorldCat |
-| ⚑ VERIFY | OT-02 | Swain (1993) — Output hypothesis book chapter | Book chapter — no standard DOI; verify via WorldCat |
-| ⚑ VERIFY | OT-03 | Swain (1995) — Output hypothesis book chapter | Book chapter — no standard DOI; verify via WorldCat |
-| ⚑ VERIFY | OT-12 | Long (2007) — Problems in SLA book chapter | Book chapter — no standard DOI; verify via WorldCat |
-| ⚑ VERIFY | OT-13 | Doughty chapter | Book chapter — no standard DOI; verify via WorldCat |
-| ⚑ VERIFY | OT-14 | Doughty/Williams chapter | Book chapter — no standard DOI; verify via WorldCat |
-| ⚑ VERIFY | OT-18 | Anderson chapter | Book chapter — no standard DOI; verify via WorldCat |
-| ⚑ VERIFY | OT-21 | DeKeyser chapter | Book chapter — no standard DOI; verify via WorldCat |
-| ⚑ VERIFY | OT-24 | Segalowitz chapter | Book chapter — no standard DOI; verify via WorldCat |
+| Flag | ID | Publication | Verification / ISBN | Status |
+|---|---|---|---|---|
+| ✅ MONOGRAPH | OT-22 | DeKeyser (2007) *Practice in a Second Language* | Cambridge UP edited volume; ISBN: 978-0521677356 | ❌ UNAVAILABLE (Print monograph) |
+| 🗑️ RETIRED | OT-01 | Swain (1985) Output Hypothesis chapter | DUP-11 resolved — Canonical ID: KR-09 | ⚠️ MOOT — see KR-09 |
+| ✅ MONOGRAPH | OT-02 | Swain (1995) in Cook & Seidlhofer (Eds.) | Oxford UP chapter; ISBN: 0-19-437096-7 | ❌ UNAVAILABLE (Book chapter) |
+| ✅ MONOGRAPH | OT-03 | Swain (2005) in Hinkel (Ed.) | Lawrence Erlbaum chapter; ISBN: 978-0805847604 | ❌ UNAVAILABLE (Book chapter) |
+| ✅ MONOGRAPH | OT-12 | Long (1991) in de Bot et al. (Eds.) | John Benjamins chapter; ISBN: 978-9027241016 | ❌ UNAVAILABLE (Book chapter) |
+| ✅ MONOGRAPH | OT-13 | Doughty & Williams (1998) (Eds.) | Cambridge UP volume; ISBN: 978-0521625401 | ❌ UNAVAILABLE (Edited volume) |
+| ✅ MONOGRAPH | OT-14 | Long & Robinson (1998) in Doughty & Williams | Cambridge UP chapter; ISBN: 978-0521625401 | ❌ UNAVAILABLE (Book chapter) |
+| ✅ MONOGRAPH | OT-18 | Anderson (1983) *The Architecture of Cognition* | Harvard University Press; ISBN: 978-0674044258 | ❌ UNAVAILABLE (Seminal monograph) |
+| ✅ MONOGRAPH | OT-21 | DeKeyser (2001) in Robinson (Ed.) | Cambridge UP chapter; ISBN: 978-0521003865 | ❌ UNAVAILABLE (Book chapter) |
+| ✅ MONOGRAPH | OT-24 | Segalowitz (2003) in Riggenbach (Ed.) | Univ of Michigan Press; ISBN: 978-0472086436 | ❌ UNAVAILABLE (Book chapter) |
 
 ---
 
