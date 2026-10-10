@@ -1,6 +1,6 @@
 // ══════════════════════════════════════════════════════════════════
 //  patchNotes.ts — Riwayat Catatan Rilis & Pembaruan Nugget Nihongo
-//  Merekam evolusi sistem dari inisiasi awal hingga v17.0.0
+//  Merekam evolusi sistem dari inisiasi awal hingga v17.1.0
 // ══════════════════════════════════════════════════════════════════
 
 export interface PatchNote {
@@ -16,6 +16,49 @@ export interface PatchNote {
 }
 
 export const PATCH_NOTES_HISTORY: PatchNote[] = [
+  {
+    version: 'v17.1.0',
+    releaseName: 'Desain Seluler Adaptif & Optimasi Lintas Perangkat',
+    date: '10 Oktober 2026',
+    type: 'minor',
+    highlights: [
+      'Perombakan Total Antarmuka Seluler (Mobile UX Overhaul) di Seluruh Menu Utama',
+      'Eliminasi Tab Collisions & Stacked Navigation Chrome dengan Bounded Responsive Grid',
+      'Navigasi Kurikulum Cerdas dengan Bottom Sheet Picker & Target Sentuh Adaptif ≥ 44px',
+      'Bilah Metrik Ringkas 4-Kolom di Arena Kuis & Sinkronisasi 13 Mode Latihan Lengkap',
+      'Kebun Kata Format 2-Kolom Zen Garden yang Proporsional di Layar Sempit',
+      'Horizontal Chip Carousel pada Penjelajah Bab Buku Pegangan (Minna no Nihongo & Genki)',
+      'Zero Horizontal Overflow Guarantee (0px) Terverifikasi Otomatis Melalui Playwright Test Suite',
+    ],
+    details: [
+      {
+        category: 'Restrukturisasi Tata Letak Seluler (Mobile UX)',
+        items: [
+          'Materi Hub: Tab switcher (Kurikulum, Buku, Kosakata, Tata Bahasa) direkayasa ulang menggunakan CSS Grid 4-kolom terkendali untuk mengeliminasi bug tab menumpuk.',
+          'Materi Hub Quick Tools: Tombol pintasan Kana, Konjugasi, dan Nuansa dipadatkan menjadi satu baris horizontal 36px yang elegan di mobile.',
+          'Penjelajah Kurikulum: 4 lapis selector bertingkat digantikan oleh kartu ringkas (~85px) yang memunculkan Bottom Sheet Picker saat disentuh, membawa materi pelajaran langsung di atas lipatan layar (above the fold).',
+          'Penjelajah Buku: Daftar bab vertikal 500px digantikan dengan horizontal carousel chip bab yang efisien.',
+          'Kebun Kata: Ditransformasikan dari kartu memanjang tunggal menjadi tata letak 2-kolom mobile yang seimbang.',
+        ],
+      },
+      {
+        category: 'Arena Kuis & Interaktivitas',
+        items: [
+          'Kartu metrik kuis disederhanakan menjadi bilah status 4-kolom kompak (~48px) menampilkan Soal, Akurasi, FSRS, dan Air.',
+          'Seluruh 13 mode kuis (termasuk Panic Recall, Mora Pacing, dan Pitch Accent) dapat diakses dengan mudah tanpa perlu scrolling panjang.',
+          'Sinkronisasi badge Arena Kuis pada Mobile Drawer menjadi "13 Mode".',
+        ],
+      },
+      {
+        category: 'Aksesibilitas & Pengujian Lintas Perangkat',
+        items: [
+          'Seluruh tombol dan kartu interaktif memenuhi standar tap target ≥ 44px dengan umpan balik sentuhan active:scale-95.',
+          'Pemberian padding cushion bawah dinamis (calc(5.5rem + env(safe-area-inset-bottom))) mencegah konten tertutup oleh BottomNav.',
+          'Verifikasi otomatis 62/62 skenario Playwright pada iPhone SE (375px), Mobile Standar (390px), Tablet (768px), dan Desktop (1440px) dengan zero overflow.',
+        ],
+      },
+    ],
+  },
   {
     version: 'v17.0.0',
     releaseName: 'Kurikulum Orisinal, Diagnostik L1, & Vokasional SSW',
