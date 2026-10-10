@@ -24,6 +24,7 @@
     "build:curriculum": "node scripts/build-curriculum-all.js",
     "compile:diagnostics": "node scripts/compile_diagnostics.js",
     "test": "node tests/run.js && node tests/test-backend-consolidation.js && node tests/test-backend-exhaustive-audit.js",
+    "test:responsive": "node tests/verify-frontend-responsive.js",
     "validate": "node tests/run.js",
     "dev": "vite",
     "build:vite": "vite build",

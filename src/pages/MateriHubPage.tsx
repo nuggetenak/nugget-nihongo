@@ -19,6 +19,7 @@ import { loadVocab, loadGrammar, NormalizedVocab, NormalizedGrammar } from '../l
 import { speakJapanese } from '../lib/audio/tts';
 import { DetailModal } from '../components/ui/DetailModal';
 import { BookTrackBrowser } from '../components/materi/BookTrackBrowser';
+import { CurriculumTrackBrowser } from '../components/materi/CurriculumTrackBrowser';
 import { KanaChartModal } from '../components/kana/KanaChartModal';
 import { ConjugationModal } from '../components/grammar/ConjugationModal';
 import { NuanceCompareModal } from '../components/grammar/NuanceCompareModal';
@@ -33,7 +34,7 @@ export const MateriHubPage: React.FC = () => {
     cards,
   } = useAppStore();
 
-  const [activeTrack, setActiveTrack] = useState<'jlpt' | 'buku' | 'freeway'>('jlpt');
+  const [activeTrack, setActiveTrack] = useState<'kurikulum' | 'jlpt' | 'buku' | 'freeway'>('kurikulum');
   const [activeTab, setActiveTab] = useState<'all' | 'vocab' | 'grammar'>('vocab');
   const [viewMode, setViewMode] = useState<'grid' | 'compact'>('grid');
   const [selectedParticle, setSelectedParticle] = useState<string>('all');
@@ -189,20 +190,32 @@ export const MateriHubPage: React.FC = () => {
       {/* Streamlined Segmented Track Switcher */}
       <div className="flex items-center gap-1.5 sm:gap-2 p-1.5 bg-surface rounded-2xl border border-accent/20 overflow-x-auto scrollbar-none shadow-sm max-w-full">
         <button
+          onClick={() => setActiveTrack('kurikulum')}
+          className={`flex-1 min-w-0 sm:min-w-[150px] py-2 sm:py-2.5 px-2.5 sm:px-3 rounded-xl text-xs font-bold transition-colors flex items-center justify-center gap-1.5 sm:gap-2 whitespace-nowrap shrink-0 sm:shrink min-h-[44px] active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
+            activeTrack === 'kurikulum'
+              ? 'bg-accent text-bg shadow-sm font-extrabold'
+              : 'text-appText-muted hover:text-appText-bright hover:bg-surface-2'
+          }`}
+        >
+          <Sparkles className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0 text-accent-hot" />
+          <span>Kurikulum Orisinal</span>
+        </button>
+
+        <button
           onClick={() => setActiveTrack('jlpt')}
-          className={`flex-1 min-w-0 sm:min-w-[140px] py-2 sm:py-2.5 px-2.5 sm:px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 sm:gap-2 whitespace-nowrap shrink-0 sm:shrink ${
+          className={`flex-1 min-w-0 sm:min-w-[130px] py-2 sm:py-2.5 px-2.5 sm:px-3 rounded-xl text-xs font-bold transition-colors flex items-center justify-center gap-1.5 sm:gap-2 whitespace-nowrap shrink-0 sm:shrink min-h-[44px] active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
             activeTrack === 'jlpt'
               ? 'bg-accent text-bg shadow-sm font-extrabold'
               : 'text-appText-muted hover:text-appText-bright hover:bg-surface-2'
           }`}
         >
           <Award className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
-          <span>JLPT (N5–N1)</span>
+          <span>Indeks JLPT</span>
         </button>
 
         <button
           onClick={() => setActiveTrack('buku')}
-          className={`flex-1 min-w-0 sm:min-w-[140px] py-2 sm:py-2.5 px-2.5 sm:px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 sm:gap-2 whitespace-nowrap shrink-0 sm:shrink ${
+          className={`flex-1 min-w-0 sm:min-w-[120px] py-2 sm:py-2.5 px-2.5 sm:px-3 rounded-xl text-xs font-bold transition-colors flex items-center justify-center gap-1.5 sm:gap-2 whitespace-nowrap shrink-0 sm:shrink min-h-[44px] active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
             activeTrack === 'buku'
               ? 'bg-accent text-bg shadow-sm font-extrabold'
               : 'text-appText-muted hover:text-appText-bright hover:bg-surface-2'
@@ -214,7 +227,7 @@ export const MateriHubPage: React.FC = () => {
 
         <button
           onClick={() => setActiveTrack('freeway')}
-          className={`flex-1 min-w-0 sm:min-w-[140px] py-2 sm:py-2.5 px-2.5 sm:px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 sm:gap-2 whitespace-nowrap shrink-0 sm:shrink ${
+          className={`flex-1 min-w-0 sm:min-w-[120px] py-2 sm:py-2.5 px-2.5 sm:px-3 rounded-xl text-xs font-bold transition-colors flex items-center justify-center gap-1.5 sm:gap-2 whitespace-nowrap shrink-0 sm:shrink min-h-[44px] active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
             activeTrack === 'freeway'
               ? 'bg-accent text-bg shadow-sm font-extrabold'
               : 'text-appText-muted hover:text-appText-bright hover:bg-surface-2'
@@ -224,6 +237,21 @@ export const MateriHubPage: React.FC = () => {
           <span>Freeway (0 Nol)</span>
         </button>
       </div>
+
+      {/* Kurikulum Orisinal Track View */}
+      {activeTrack === 'kurikulum' && (
+        <CurriculumTrackBrowser
+          vocabList={vocabList}
+          grammarList={grammarList}
+          onSelectItem={(item, type) => {
+            setSelectedItem(item);
+            setItemType(type);
+          }}
+          onNavigateToQuiz={() => {
+            useAppStore.getState().setActiveTab('quiz');
+          }}
+        />
+      )}
 
       {/* JLPT Track Main View */}
       {activeTrack === 'jlpt' && (

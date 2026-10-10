@@ -22,8 +22,11 @@ import {
   Sliders,
   HelpCircle,
   History,
+  Languages,
 } from 'lucide-react';
 import { useAppStore } from '../store/useAppStore';
+import { useCurriculumStore } from '../lib/curriculum/curriculumStore';
+import { L1Substratum } from '../lib/data/diagnosticManager';
 import { APP_VERSION, APP_RELEASE_NAME } from '../config/version';
 import { usePwaStore } from '../lib/pwa/pwaStore';
 import { useAuthStore } from '../lib/supabase/authStore';
@@ -40,6 +43,7 @@ export const SettingsPage: React.FC = () => {
     showToast, resetAllData,
     openOnboarding, openFeatureGuide,
     openPatchNotes,
+    userSubstratum, setUserSubstratum,
   } = useAppStore();
 
   const {
@@ -272,6 +276,88 @@ export const SettingsPage: React.FC = () => {
             <Sparkles className="w-3.5 h-3.5 text-amber-400" />
             <span>Tes Pelafalan Audio 🔊</span>
           </button>
+        </div>
+      </div>
+
+      {/* L1 Substratum Dialect & Contrastive Diagnostics Settings */}
+      <div className="bg-surface border border-accent/20 rounded-2xl p-6 space-y-4">
+        <h2 className="font-bold text-sm text-appText-bright flex items-center gap-2 border-b border-accent/15 pb-3">
+          <Languages className="w-4 h-4 text-accent" />
+          <span>Preferensi Dialek Bahasa Ibu (L1 Substratum)</span>
+        </h2>
+
+        <p className="text-xs text-appText-muted leading-relaxed">
+          Nugget Nihongo menyesuaikan diagnosis kesalahan tata bahasa dan latihan nada Tokyo (Pitch Accent) berdasarkan latar belakang bahasa daerahmu untuk membedah interferensi fonologis spesifik.
+        </p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+          {[
+            {
+              id: 'general_indonesian' as L1Substratum,
+              title: 'Bahasa Indonesia Umum',
+              badge: 'Umum',
+              desc: 'Fokus interferensi dasar struktur SVO vs SOV, partikel wa/ga, dan jebakan kopula adalah.',
+            },
+            {
+              id: 'javanese' as L1Substratum,
+              title: 'Substratum Jawa',
+              badge: 'Jawa',
+              desc: 'Pemberat konsonan plosif b/d/g, kecenderungan pemanjangan vokal chōon, & partikel penegas.',
+            },
+            {
+              id: 'sundanese' as L1Substratum,
+              title: 'Substratum Sunda',
+              badge: 'Sunda',
+              desc: 'Netralisasi konsonan f/p/v, vokal sentral /ə/, & kelembutan intonasi.',
+            },
+            {
+              id: 'batak_eastern' as L1Substratum,
+              title: 'Substratum Batak & Timur',
+              badge: 'Batak / Timur',
+              desc: 'Ritme suku kata bertekanan, intonasi dinamis vs nada Tokyo heiban (datar).',
+            },
+          ].map((item) => {
+            const isSelected = userSubstratum === item.id;
+            return (
+              <button
+                key={item.id}
+                onClick={() => {
+                  setUserSubstratum(item.id);
+                  useCurriculumStore.getState().setUserSubstratum(item.id);
+                  if (soundEffects) playSuccessSfx();
+                  showToast(`Substratum dialek disetel ke: ${item.title}`, '🗣️');
+                }}
+                className={`p-4 rounded-xl border text-left transition-colors flex items-start gap-3 min-h-[56px] active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
+                  isSelected
+                    ? 'bg-amber-950/40 border-amber-500/60 shadow-sm'
+                    : 'bg-surface-2 border-accent/20 hover:border-accent/40 hover:bg-surface-3'
+                }`}
+              >
+                <div
+                  className={`w-8 h-8 rounded-lg flex items-center justify-center font-bold text-xs shrink-0 ${
+                    isSelected
+                      ? 'bg-amber-500 text-bg'
+                      : 'bg-surface-3 text-appText-muted'
+                  }`}
+                >
+                  {item.badge.slice(0, 2)}
+                </div>
+                <div className="min-w-0">
+                  <div className="flex items-center gap-2">
+                    <div className="text-xs font-bold text-appText-bright">
+                      {item.title}
+                    </div>
+                    {isSelected && (
+                      <span className="text-[10px] font-extrabold text-accent">✓ Aktif</span>
+                    )}
+                  </div>
+                  <div className="text-[11px] text-appText-muted mt-1 leading-normal break-words">
+                    {item.desc}
+                  </div>
+                </div>
+              </button>
+            );
+          })}
         </div>
       </div>
 
