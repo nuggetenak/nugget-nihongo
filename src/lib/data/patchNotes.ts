@@ -1,6 +1,6 @@
 // ══════════════════════════════════════════════════════════════════
 //  patchNotes.ts — Riwayat Catatan Rilis & Pembaruan Nugget Nihongo
-//  Merekam evolusi sistem dari inisiasi awal hingga v16.0.0
+//  Merekam evolusi sistem dari inisiasi awal hingga v17.0.0
 // ══════════════════════════════════════════════════════════════════
 
 export interface PatchNote {
@@ -16,6 +16,62 @@ export interface PatchNote {
 }
 
 export const PATCH_NOTES_HISTORY: PatchNote[] = [
+  {
+    version: 'v17.0.0',
+    releaseName: 'Kurikulum Orisinal, Diagnostik L1, & Vokasional SSW',
+    date: '10 Oktober 2026',
+    type: 'major',
+    highlights: [
+      'Peluncuran 8 Jalur Kurikulum Orisinal Nugget Nihongo (JLPT N5–N1 & SSW Kaigo, Food Service, Konstruksi)',
+      'Pengorganisasian 74 Unit & 155 Pelajaran Mandiri Lengkap dengan Sasaran Can-Do Standar CEFR-J',
+      'Peta Tangga Kognitif Berbasis Processability Theory (Stages 1–6 Pienemann)',
+      'Mesin Diagnostik Empiris L1 Bahasa Indonesia: 300 Butir Uji (150 Morfosintaksis & 150 Nada Fonologis)',
+      'Personalisasi 4 Substratum Dialek Daerah (Umum, Jawa, Sunda, Batak/Timur) di Materi & Pengaturan',
+      '21 Protokol Kedaruratan Gemba K3 & Kaigo SBAR Berstandar Kerja Nyata Jepang',
+      'Ekspansi Arena Kuis Menjadi 13 Mode: Panic Recall (5s Fading), Mora Pacing (240 bpm), Pitch Accent, dll.',
+      'Kalibrasi FSRS Fatigue-Aware Clamping & Penyesuaian Peluruhan Waktu Malam',
+      'Audit Responsif Multi-Device Headless Playwright: 64/64 Cek Lolos Melintasi iPhone SE hingga Desktop',
+    ],
+    details: [
+      {
+        category: 'Kurikulum Orisinal & Vokasional',
+        items: [
+          'Jalur Akademik N5–N1 terstruktur dari Aisatsu dasar hingga dekonstruksi wacana editorial surat kabar tingkat mahir.',
+          'Jalur Vokasional SSW Kaigo (Keperawatan Lansia): SOP Koe-kake, komunikasi empatik, & format baku pelaporan darurat SBAR.',
+          'Jalur Vokasional SSW Food Service: Protokol sanitasi 5S, standar HACCP, penanganan alergen, & etika pelayanan Omotenashi.',
+          'Jalur Vokasional SSW Konstruksi: Pencegahan celaka K3 Gemba, komando akustik kansei KYT (Kiken Yochi Training), & aba-aba alat berat.',
+          'Setiap unit dilengkapi catatan fokus analisis kontrasif L1 untuk membongkar jebakan bahasa ibu.',
+        ],
+      },
+      {
+        category: 'Diagnostik L1 & Substratum Daerah',
+        items: [
+          'Database 300 butir diagnostik empiris membedah interferensi transfer L1 Indonesia ↔ L2 Jepang.',
+          'Substratum Jawa: Latihan fonologis plosif b/d/g dan pemanjangan vokal chōon.',
+          'Substratum Sunda: Mitigasi netralisasi konsonan f/p/v dan artikulasi vokal sentral /ə/.',
+          'Substratum Batak & Indonesia Timur: Penyetaraan aksen nada Tokyo heiban (datar) dari irama silabel dinamis.',
+        ],
+      },
+      {
+        category: 'Arena Kuis & Mode Latihan Baru',
+        items: [
+          'Panic Recall Drill: Latihan cover-recall-check dengan hitungan mundur 5 detik tanpa bantuan opsi ganda.',
+          'Mora Pacing Drill: Metronom visual 240 bpm untuk menjaga kestabilan isokroni tiap ketukan suku kata mora.',
+          'Pitch Accent Drill: Visualisasi kontur nada tinggi-rendah Tokyo (Heiban, Atamadaka, Nakadaka, Odaka).',
+          'Macro-Discourse Deconstruct: Bedah struktur argumen premis-antitesis-bukti-sintesis teks N2/N1.',
+          'Collocation Matrix: Analisis batas kompatibilitas pragmatis pasangan kata alami.',
+        ],
+      },
+      {
+        category: 'Performa & Keandalan Offline',
+        items: [
+          'Precache Service Worker mencakup seluruh 8 berkas kurikulum mandiri dan basis data diagnostik.',
+          'Pencapaian 41.018 tes lolos 100% tanpa kegagalan pada rangkaian pengujian backend dan integrasi.',
+          'Audit otomatis Playwright mengonfirmasi 0px kebocoran horizontal melintasi seluruh resolusi layar.',
+        ],
+      },
+    ],
+  },
   {
     version: 'v16.0.0',
     releaseName: 'Renaissance & Spaced Mastery',

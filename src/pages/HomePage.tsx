@@ -17,6 +17,7 @@ import {
   Quote,
 } from 'lucide-react';
 import { useAppStore } from '../store/useAppStore';
+import { useCurriculumStore, TrackId } from '../lib/curriculum/curriculumStore';
 import { HeatmapCalendar } from '../components/gamification/HeatmapCalendar';
 import { BadgesModal } from '../components/gamification/BadgesModal';
 import { DetailModal } from '../components/ui/DetailModal';
@@ -46,9 +47,43 @@ export const HomePage: React.FC = () => {
   const [isNuanceOpen, setIsNuanceOpen] = useState(false);
   const [dailyWord, setDailyWord] = useState<NormalizedVocab | null>(null);
   const [selectedWordForModal, setSelectedWordForModal] = useState<NormalizedVocab | null>(null);
-  const [activeSection, setActiveSection] = useState<'mastery' | 'stats'>('mastery');
+  const [activeSection, setActiveSection] = useState<'curriculum' | 'mastery' | 'stats'>('curriculum');
+
+  const { trackProgress, setActiveTrack } = useCurriculumStore();
 
   const dailyKotowaza: Kotowaza = useMemo(() => getDailyKotowaza(), []);
+
+  const curriculumTracks = useMemo(() => {
+    const list: Array<{
+      id: TrackId;
+      label: string;
+      badge: string;
+      units: number;
+      lessons: number;
+      icon: string;
+    }> = [
+      { id: 'n5', label: 'JLPT N5', badge: 'Akses Lemma (PT-1)', units: 10, lessons: 20, icon: '🌱' },
+      { id: 'n4', label: 'JLPT N4', badge: 'Kategori Frasa (PT-2)', units: 10, lessons: 20, icon: '📘' },
+      { id: 'n3', label: 'JLPT N3', badge: 'Prosedur Kalimat (PT-4)', units: 12, lessons: 25, icon: '📙' },
+      { id: 'n2', label: 'JLPT N2', badge: 'Klausa Subordinat (PT-5)', units: 12, lessons: 25, icon: '📕' },
+      { id: 'n1', label: 'JLPT N1', badge: 'Variasi Pragmatis (PT-6)', units: 10, lessons: 20, icon: '👑' },
+      { id: 'ssw-kaigo', label: 'SSW Kaigo', badge: 'Perawat Lansia SBAR', units: 8, lessons: 18, icon: '🏥' },
+      { id: 'ssw-food', label: 'SSW Restoran', badge: 'Higiene & HACCP', units: 6, lessons: 14, icon: '🍳' },
+      { id: 'ssw-construction', label: 'SSW Konstruksi', badge: 'K3 Gemba & KYT', units: 6, lessons: 13, icon: '🦺' },
+    ];
+
+    return list.map((trk) => {
+      const prog = trackProgress[trk.id] || { completedLessons: [], completedUnits: [], lessonScores: {} };
+      const completed = prog.completedLessons.length;
+      const percent = Math.min(100, Math.round((completed / trk.lessons) * 100));
+      return { ...trk, completed, percent };
+    });
+  }, [trackProgress]);
+
+  const handleNavigateCurriculum = (trackId: TrackId) => {
+    setActiveTrack(trackId);
+    setActiveTab('materi');
+  };
 
   // Calculate FSRS due cards today
   const dueCount = useMemo(() => {
@@ -158,9 +193,10 @@ export const HomePage: React.FC = () => {
 
               <button
                 onClick={() => setActiveTab('materi')}
-                className="px-4 py-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-bright border border-accent/20 font-bold text-xs transition-all active:scale-95"
+                className="px-4 py-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-bright border border-accent/25 hover:border-accent/40 font-bold text-xs transition-all active:scale-95 flex items-center gap-1.5"
               >
-                Buka Materi Hub
+                <Sparkles className="w-3.5 h-3.5 text-accent" />
+                <span>Kurikulum 8 Jalur</span>
               </button>
 
               <button
@@ -388,33 +424,98 @@ export const HomePage: React.FC = () => {
           </div>
 
           {/* Segmented Switcher */}
-          <div className="flex items-center gap-1 bg-surface-2 p-1 rounded-xl border border-accent/15 self-start sm:self-auto">
+          <div className="flex items-center gap-1 bg-surface-2 p-1 rounded-xl border border-accent/15 overflow-x-auto scrollbar-none max-w-full">
+            <button
+              onClick={() => setActiveSection('curriculum')}
+              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 shrink-0 ${
+                activeSection === 'curriculum'
+                  ? 'bg-accent text-bg shadow-sm font-extrabold'
+                  : 'text-appText-muted hover:text-appText-bright'
+              }`}
+            >
+              <Sparkles className="w-3.5 h-3.5" />
+              <span>8 Jalur & SSW</span>
+            </button>
             <button
               onClick={() => setActiveSection('mastery')}
-              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 ${
+              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 shrink-0 ${
                 activeSection === 'mastery'
                   ? 'bg-accent text-bg shadow-sm font-extrabold'
                   : 'text-appText-muted hover:text-appText-bright'
               }`}
             >
               <BookMarked className="w-3.5 h-3.5" />
-              <span>Kurikulum JLPT</span>
+              <span>Level JLPT</span>
             </button>
             <button
               onClick={() => setActiveSection('stats')}
-              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 ${
+              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 shrink-0 ${
                 activeSection === 'stats'
                   ? 'bg-accent text-bg shadow-sm font-extrabold'
                   : 'text-appText-muted hover:text-appText-bright'
               }`}
             >
               <Calendar className="w-3.5 h-3.5" />
-              <span>Heatmap & Statistik</span>
+              <span>Statistik</span>
             </button>
           </div>
         </div>
 
-        {activeSection === 'mastery' ? (
+        {activeSection === 'curriculum' ? (
+          /* View 1: 8-Track Original Curriculum Progression */
+          <div className="space-y-3 animate-in fade-in duration-200">
+            <div className="flex items-center justify-between text-xs text-appText-muted">
+              <span>Kurikulum Orisinal Berbasis Riset (Processability Theory & SSW):</span>
+              <button
+                onClick={() => setActiveTab('materi')}
+                className="font-bold text-accent hover:underline flex items-center gap-1"
+              >
+                <span>Buka Materi Hub →</span>
+              </button>
+            </div>
+
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3 pt-1">
+              {curriculumTracks.map((trk) => (
+                <div
+                  key={trk.id}
+                  onClick={() => handleNavigateCurriculum(trk.id)}
+                  className="p-3.5 rounded-2xl bg-surface-2 border border-accent/15 hover:border-accent/40 cursor-pointer transition-all hover:bg-surface-3 group flex flex-col justify-between"
+                >
+                  <div>
+                    <div className="flex items-center justify-between text-xs font-bold mb-1">
+                      <div className="flex items-center gap-1.5 min-w-0">
+                        <span className="text-sm shrink-0">{trk.icon}</span>
+                        <span className="group-hover:text-accent transition-colors text-appText-bright truncate">
+                          {trk.label}
+                        </span>
+                      </div>
+                      <span className="text-[10px] font-mono text-appText-muted shrink-0">{trk.percent}%</span>
+                    </div>
+
+                    <div className="text-[10px] text-appText-muted/80 truncate mb-2">
+                      {trk.badge}
+                    </div>
+                  </div>
+
+                  <div className="space-y-1.5">
+                    {/* Progress bar */}
+                    <div className="w-full h-1.5 rounded-full bg-surface-3 overflow-hidden">
+                      <div
+                        className="h-full bg-accent transition-all duration-500"
+                        style={{ width: `${Math.max(trk.percent, 3)}%` }}
+                      />
+                    </div>
+
+                    <div className="text-[10px] text-appText-muted flex items-center justify-between">
+                      <span>{trk.units} Unit · {trk.lessons} Pelajaran</span>
+                      <ChevronRight className="w-3 h-3 opacity-40 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all text-accent shrink-0" />
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        ) : activeSection === 'mastery' ? (
           /* View 1: JLPT Level Mastery Progression Bars */
           <div className="space-y-3 animate-in fade-in duration-200">
             <div className="flex items-center justify-between text-xs text-appText-muted">

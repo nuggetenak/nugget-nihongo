@@ -1,6 +1,6 @@
 // ══════════════════════════════════════════════════════════════════
 //  PatchNotesModal.tsx — Riwayat Versi & Catatan Rilis Nugget Nihongo
-//  Modal interaktif untuk meninjau pembaruan fitur dari v1 ke v16
+//  Modal interaktif untuk meninjau pembaruan fitur dari v1 ke v17
 // ══════════════════════════════════════════════════════════════════
 
 import React, { useState, useEffect } from 'react';
@@ -28,7 +28,7 @@ interface PatchNotesModalProps {
 export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClose }) => {
   const [selectedFilter, setSelectedFilter] = useState<'all' | 'major'>('all');
   const [expandedVersions, setExpandedVersions] = useState<Record<string, boolean>>({
-    'v16.0.0': true, // Expanded by default
+    [APP_VERSION]: true, // Expanded by default
   });
 
   // Lock body scroll when modal is open

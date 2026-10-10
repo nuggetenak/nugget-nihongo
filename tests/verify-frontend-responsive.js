@@ -13,6 +13,9 @@ const assert = require('assert');
 const path = require('path');
 const fs = require('fs');
 
+const http = require('http');
+const { spawn } = require('child_process');
+
 const BASE_URL = process.env.TEST_URL || 'http://localhost:5173';
 
 const VIEWPORTS = [
@@ -22,11 +25,42 @@ const VIEWPORTS = [
   { name: 'Desktop Wide (1440x900)', width: 1440, height: 900, isMobile: false },
 ];
 
+function isServerRunning(url) {
+  return new Promise((resolve) => {
+    const req = http.get(url, (res) => {
+      resolve(true);
+    });
+    req.on('error', () => resolve(false));
+    req.setTimeout(1000, () => {
+      req.destroy();
+      resolve(false);
+    });
+  });
+}
+
 async function runVerification() {
   console.log('╔════════════════════════════════════════════════════════════════╗');
   console.log('║   NUGGET NIHONGO — MULTI-DEVICE RESPONSIVE UI/UX AUDIT         ║');
   console.log('║   Verifying Curriculum Hub, Substratum, & Anti-Leakage Layout  ║');
   console.log('╚════════════════════════════════════════════════════════════════╝\n');
+
+  let serverProcess = null;
+  const running = await isServerRunning(BASE_URL);
+  if (!running) {
+    console.log(`⚡ Preview server not detected. Starting on ${BASE_URL}...`);
+    serverProcess = spawn('npx', ['vite', 'preview', '--port', '5173'], {
+      shell: true,
+      cwd: path.join(__dirname, '..'),
+      stdio: 'ignore',
+    });
+    for (let i = 0; i < 20; i++) {
+      await new Promise((r) => setTimeout(r, 500));
+      if (await isServerRunning(BASE_URL)) {
+        console.log(`✅ Server is up and listening on ${BASE_URL}\n`);
+        break;
+      }
+    }
+  }
 
   const browser = await chromium.launch({ headless: true, channel: 'msedge' });
 
@@ -210,6 +244,9 @@ async function runVerification() {
     console.log('🌟 MULTI-DEVICE RESPONSIVE UI & CURRICULUM AUDIT VERIFIED 100%!\n');
 
   } finally {
+    if (serverProcess) {
+      serverProcess.kill();
+    }
     await browser.close();
   }
 }

@@ -801,6 +801,12 @@ export const QuizPage: React.FC = () => {
                     <div className="text-2xl sm:text-4xl font-jp font-bold text-appText-bright">
                       {currentQ.questionText}
                     </div>
+                    {currentQ.pitchContour && (
+                      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-xl bg-purple-500/15 border border-purple-500/30 text-purple-300 text-xs font-mono">
+                        <span className="font-semibold text-appText-muted">Aksen Tokyo:</span>
+                        <span className="font-extrabold text-accent-hot">{currentQ.pitchContour}</span>
+                      </div>
+                    )}
                     {currentQ.subText && (
                       <div className="pt-1">
                         {activeMode === 'fill-in' || currentQ.subText.toLowerCase().includes('arti') ? (

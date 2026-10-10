@@ -160,10 +160,10 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-xs font-bold text-appText-bright">
-                      Materi Hub (Kamus Kosakata & Pola Tata Bahasa)
+                      Materi Hub (Kurikulum Orisinal, Kamus, & SSW)
                     </h3>
                     <p className="text-[11px] text-appText-muted leading-relaxed">
-                      Jelajahi 4.800+ kosakata dan 850+ pola kalimat N5–N1. Dilengkapi filter tingkat JLPT, jalur buku Minna no Nihongo & Irodori, audio penutur asli, dan contoh kalimat.
+                      Jelajahi 8 Jalur Kurikulum Orisinal (JLPT N5–N1 & SSW Kaigo, Food Service, Konstruksi) dengan 74 unit, 155 pelajaran Can-Do CEFR-J, 4.800+ kata, 850+ pola kalimat, dan analisis kontrasif L1 bahasa Indonesia.
                     </p>
                   </div>
                 </div>
@@ -183,10 +183,10 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-xs font-bold text-appText-bright">
-                      Arena Kuis (Drill Interaktif 8 Mode)
+                      Arena Kuis (13 Mode Fondasi & Spesialisasi)
                     </h3>
                     <p className="text-[11px] text-appText-muted leading-relaxed">
-                      Dasbor latihan interaktif dengan FSRS Due Today. Latih kemampuanmu lewat Flashcard FSRS, Pilihan Ganda, Audio Listening, Susun Kalimat, Konjugasi, Tebak Partikel, dan Mode Review Kesalahan.
+                      Dasbor latihan interaktif dengan FSRS Due Today. 8 Mode Fondasi (Flashcard 3D, Pilihan Ganda, Isian, Susun Kalimat, Audio, Konjugasi, Terjemahan, Eror Makna) & 5 Mode Spesialisasi (Panic Recall K3 5s, Mora Pacing 240 bpm, Pitch Accent Tokyo, Wacana Makro, Kolokasi).
                     </p>
                   </div>
                 </div>

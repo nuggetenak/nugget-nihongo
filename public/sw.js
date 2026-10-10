@@ -6,7 +6,7 @@
 //  - Network-first for dynamic API endpoints (Supabase / Cloudflare Workers)
 // ══════════════════════════════════════
 
-const CACHE = 'nihongo-v16.0.0';
+const CACHE = 'nihongo-v17.0.0';
 
 const CORE_ASSETS = [
   '/',
@@ -32,6 +32,19 @@ const CORE_ASSETS = [
   '/data/vocab/vocab-n2.js',
   '/data/vocab/vocab-n1.js',
   '/data/vocab/vocab-index.js',
+
+  // ── Kurikulum Orisinal 8 Jalur (N5–N1 & SSW) ──────────────
+  '/data/curriculum/curriculum-n5.js',
+  '/data/curriculum/curriculum-n4.js',
+  '/data/curriculum/curriculum-n3.js',
+  '/data/curriculum/curriculum-n2.js',
+  '/data/curriculum/curriculum-n1.js',
+  '/data/curriculum/curriculum-ssw-kaigo.js',
+  '/data/curriculum/curriculum-ssw-food.js',
+  '/data/curriculum/curriculum-ssw-construction.js',
+
+  // ── Inventaris Diagnostik L1 ────────────────────────────
+  '/data/diagnostics/confusion-pairs.js',
 
   // ── Books & Tracks ──────────────────────────────────────
   '/data/books/sources.js',

@@ -18,18 +18,22 @@ export const SearchPalette: React.FC<SearchPaletteProps> = ({ isOpen, onClose, o
   const [allGrammar, setAllGrammar] = useState<NormalizedGrammar[]>([]);
   const inputRef = useRef<HTMLInputElement>(null);
 
-  // Preload N5-N3 for search pool on mount
+  // Preload N5-N1 for search pool on mount
   useEffect(() => {
     Promise.all([
       loadVocab('n5'),
       loadVocab('n4'),
       loadVocab('n3'),
+      loadVocab('n2'),
+      loadVocab('n1'),
       loadGrammar('n5'),
       loadGrammar('n4'),
       loadGrammar('n3'),
-    ]).then(([v5, v4, v3, g5, g4, g3]) => {
-      setAllVocab([...v5, ...v4, ...v3]);
-      setAllGrammar([...g5, ...g4, ...g3]);
+      loadGrammar('n2'),
+      loadGrammar('n1'),
+    ]).then(([v5, v4, v3, v2, v1, g5, g4, g3, g2, g1]) => {
+      setAllVocab([...v5, ...v4, ...v3, ...v2, ...v1]);
+      setAllGrammar([...g5, ...g4, ...g3, ...g2, ...g1]);
     });
   }, []);
 

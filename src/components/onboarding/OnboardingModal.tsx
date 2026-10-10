@@ -45,24 +45,24 @@ const ONBOARDING_SLIDES: OnboardingSlide[] = [
   {
     badge: 'Dua Pilar Pembelajaran',
     badgeIcon: '🏛️',
-    title: 'Materi Hub & Arena Kuis',
-    tagline: 'Kombinasi teori berstruktur dan latihan aktif yang terbukti efektif.',
+    title: 'Kurikulum Orisinal & Arena Kuis',
+    tagline: 'Kombinasi teori berstruktur Can-Do CEFR-J dan 13 mode latihan aktif.',
     icon: '📖',
     accentBg: 'from-orange-500/20 to-amber-600/10',
     points: [
       {
-        title: 'Materi Hub (Kamus & Tata Bahasa)',
-        desc: '4.800+ kosakata dan 850+ pola tata bahasa lengkap dengan furigana, romaji, audio, dan contoh kalimat nyata.',
+        title: 'Kurikulum Orisinal 8 Jalur & SSW',
+        desc: '74 Unit terstruktur (JLPT N5–N1 & SSW Kaigo, Food Service, Konstruksi) dengan analisis kontrasif L1 bahasa Indonesia.',
+        icon: '⭐',
+      },
+      {
+        title: 'Materi Hub & Buku Populer',
+        desc: '4.800+ kosakata dan 850+ pola kalimat N5–N1, plus pendamping buku Minna no Nihongo & Irodori.',
         icon: '📚',
       },
       {
-        title: 'Jalur Buku Populer',
-        desc: 'Jelajahi materi berdasarkan bab Minna no Nihongo (Shokyu I & II) atau Irodori (A1, A2-1, A2-2).',
-        icon: '🔖',
-      },
-      {
-        title: 'Arena Kuis 8 Mode',
-        desc: 'Flashcard FSRS, Pilihan Ganda, Latihan Audio Listening, Susun Kalimat, hingga Tebak Partikel.',
+        title: 'Arena Kuis 13 Mode Drill',
+        desc: 'Flashcard FSRS, Audio Listening, Panic Recall K3 (5 detik), Metronom Mora Pacing, Pitch Accent Tokyo, hingga Konjugasi.',
         icon: '⚔️',
       },
     ],

@@ -52,8 +52,20 @@ const FAQ_LIST: FAQItem[] = [
   {
     id: 'faq-4',
     category: 'materi',
-    q: 'Apa bedanya Jalur Tingkat JLPT dengan Jalur Buku (Minna no Nihongo & Irodori)?',
-    a: 'Jalur JLPT mengelompokkan kata dan pola kalimat berdasarkan standar resmi Ujian Kemampuan Bahasa Jepang (N5 hingga N1). Sementara Jalur Buku menyusun materi persis mengikuti urutan bab buku teks populer seperti Minna no Nihongo (Shokyu 1 & 2) dan Irodori (A1, A2-1, A2-2 dari The Japan Foundation), sehingga sangat cocok digunakan sebagai pendamping belajar di kelas kursus atau universitas.',
+    q: 'Apa itu Kurikulum Orisinal Nugget Nihongo dan apa bedanya dengan Jalur Buku?',
+    a: 'Kurikulum Orisinal Nugget Nihongo adalah jalur belajar 8 trek mandiri (JLPT N5–N1 & SSW Kaigo, Food Service, Konstruksi) dengan 74 unit dan 155 pelajaran yang disusun memakai Processability Theory (Pienemann) dan deskriptor Can-Do standar CEFR-J. Di samping itu, tersedia pula Jalur Kamus JLPT, Jalur Buku Teks pendamping kelas (Minna no Nihongo & Irodori), serta Jalur Cepat Freeway.',
+  },
+  {
+    id: 'faq-4b',
+    category: 'materi',
+    q: 'Apa itu Jalur Vokasional SSW (Tokutei Ginou) dan sektor apa saja yang tersedia?',
+    a: 'Jalur Vokasional SSW membekali calon pekerja migran terampil di Jepang dengan standar kerja nyata: (1) SSW Kaigo: Komunikasi empatik Koe-kake lansia & laporan darurat SBAR; (2) SSW Food Service & Processing: Sanitasi 5S, standar HACCP, alergen, & etika Omotenashi; (3) SSW Konstruksi: Keselamatan K3 Gemba, komando akustik kansei KYT (Kiken Yochi Training), & aba-aba alat berat.',
+  },
+  {
+    id: 'faq-4c',
+    category: 'materi',
+    q: 'Bagaimana Nugget Nihongo membantu mengatasi interferensi bahasa ibu (L1 Substratum)?',
+    a: 'Melalui 300 butir data diagnostik empiris, Nugget Nihongo mendeteksi titik transfer negatif bahasa Indonesia ke bahasa Jepang (seperti jebakan kopula "adalah" vs desu, partikel wa vs ga). Pengguna juga dapat memilih dialek asal (Umum, Jawa, Sunda, Batak/Indonesia Timur) untuk mendapatkan penyesuaian khusus pada latihan fonologis dan nada Tokyo (Pitch Accent).',
   },
   {
     id: 'faq-5',
