@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, BookOpen, Layers, Sprout, Sparkles, Settings, HelpCircle } from 'lucide-react';
+import { Home, BookOpen, Layers, Sprout, Sparkles, Settings, HelpCircle, History } from 'lucide-react';
 import { useAppStore, AppState } from '../../store/useAppStore';
 import { APP_VERSION } from '../../config/version';
 
@@ -13,7 +13,7 @@ interface NavItem {
 }
 
 export const Sidebar: React.FC = () => {
-  const { activeTab, setActiveTab } = useAppStore();
+  const { activeTab, setActiveTab, openPatchNotes } = useAppStore();
 
   const navItems: NavItem[] = [
     { id: 'home', label: 'Beranda', jp: 'ホーム', icon: <Home className="w-5 h-5" /> },
@@ -90,10 +90,17 @@ export const Sidebar: React.FC = () => {
 
       {/* Bottom User / Info Card */}
       <div className="p-4 border-t border-accent/15 bg-surface-2/40">
-        <div className="flex items-center justify-between text-xs text-appText-muted">
-          <span>{APP_VERSION} · Modern Engine</span>
-          <span className="text-accent font-semibold">100% Offline</span>
-        </div>
+        <button
+          onClick={openPatchNotes}
+          className="w-full flex items-center justify-between text-xs text-appText-muted hover:text-accent transition-colors group cursor-pointer text-left"
+          title="Lihat Catatan Rilis & Riwayat Versi Lengkap"
+        >
+          <span className="group-hover:underline font-mono">{APP_VERSION} · Catatan Rilis</span>
+          <span className="text-accent font-semibold flex items-center gap-1 text-[11px]">
+            <span>Changelog</span>
+            <History className="w-3.5 h-3.5 group-hover:rotate-12 transition-transform" />
+          </span>
+        </button>
       </div>
     </aside>
   );

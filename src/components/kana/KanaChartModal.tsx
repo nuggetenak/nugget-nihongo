@@ -213,22 +213,23 @@ export const KanaChartModal: React.FC<KanaChartModalProps> = ({ isOpen, onClose 
               </div>
 
               {/* Sound Groups */}
-              <div className="flex items-center gap-1">
+              <div className="flex items-center gap-1 overflow-x-auto scrollbar-none max-w-full pb-0.5">
                 {[
-                  { id: 'gojuon', label: 'Dasar (46)' },
-                  { id: 'dakuon', label: 'Tebal (が/ざ/だ/ば/ぱ)' },
-                  { id: 'yoon', label: 'Kombinasi (きゃ/しゃ)' },
+                  { id: 'gojuon', shortLabel: 'Dasar (46)', fullLabel: 'Dasar (46)' },
+                  { id: 'dakuon', shortLabel: 'Tebal (が)', fullLabel: 'Tebal (が/ざ/だ/ば/ぱ)' },
+                  { id: 'yoon', shortLabel: 'Kombinasi (きゃ)', fullLabel: 'Kombinasi (きゃ/しゃ)' },
                 ].map((tab) => (
                   <button
                     key={tab.id}
                     onClick={() => setGroupTab(tab.id as any)}
-                    className={`px-3 py-1.5 rounded-xl text-xs font-semibold transition-all ${
+                    className={`px-2.5 sm:px-3 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap shrink-0 transition-all ${
                       groupTab === tab.id
                         ? 'bg-amber-500/20 text-accent-hot border border-amber-500/35 font-bold'
                         : 'text-appText-muted hover:text-appText-bright'
                     }`}
                   >
-                    {tab.label}
+                    <span className="sm:hidden">{tab.shortLabel}</span>
+                    <span className="hidden sm:inline">{tab.fullLabel}</span>
                   </button>
                 ))}
               </div>

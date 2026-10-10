@@ -187,41 +187,41 @@ export const MateriHubPage: React.FC = () => {
       </div>
 
       {/* Streamlined Segmented Track Switcher */}
-      <div className="flex items-center gap-2 p-1.5 bg-surface rounded-2xl border border-accent/20 overflow-x-auto scrollbar-none shadow-sm">
+      <div className="flex items-center gap-1.5 sm:gap-2 p-1.5 bg-surface rounded-2xl border border-accent/20 overflow-x-auto scrollbar-none shadow-sm max-w-full">
         <button
           onClick={() => setActiveTrack('jlpt')}
-          className={`flex-1 min-w-[140px] py-2.5 px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2 ${
+          className={`flex-1 min-w-0 sm:min-w-[140px] py-2 sm:py-2.5 px-2.5 sm:px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 sm:gap-2 whitespace-nowrap shrink-0 sm:shrink ${
             activeTrack === 'jlpt'
               ? 'bg-accent text-bg shadow-sm font-extrabold'
               : 'text-appText-muted hover:text-appText-bright hover:bg-surface-2'
           }`}
         >
-          <Award className="w-4 h-4" />
-          <span>Kurikulum JLPT (N5–N1)</span>
+          <Award className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
+          <span>JLPT (N5–N1)</span>
         </button>
 
         <button
           onClick={() => setActiveTrack('buku')}
-          className={`flex-1 min-w-[140px] py-2.5 px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2 ${
+          className={`flex-1 min-w-0 sm:min-w-[140px] py-2 sm:py-2.5 px-2.5 sm:px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 sm:gap-2 whitespace-nowrap shrink-0 sm:shrink ${
             activeTrack === 'buku'
               ? 'bg-accent text-bg shadow-sm font-extrabold'
               : 'text-appText-muted hover:text-appText-bright hover:bg-surface-2'
           }`}
         >
-          <BookMarked className="w-4 h-4" />
-          <span>Jalur Buku Teks</span>
+          <BookMarked className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
+          <span>Buku Teks</span>
         </button>
 
         <button
           onClick={() => setActiveTrack('freeway')}
-          className={`flex-1 min-w-[140px] py-2.5 px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2 ${
+          className={`flex-1 min-w-0 sm:min-w-[140px] py-2 sm:py-2.5 px-2.5 sm:px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 sm:gap-2 whitespace-nowrap shrink-0 sm:shrink ${
             activeTrack === 'freeway'
               ? 'bg-accent text-bg shadow-sm font-extrabold'
               : 'text-appText-muted hover:text-appText-bright hover:bg-surface-2'
           }`}
         >
-          <span>🛣️</span>
-          <span>Freeway Survival (0 Nol)</span>
+          <span className="shrink-0">🛣️</span>
+          <span>Freeway (0 Nol)</span>
         </button>
       </div>
 
@@ -519,16 +519,16 @@ export const MateriHubPage: React.FC = () => {
 
               {/* Load More Pagination */}
               {filteredVocab.length > renderLimit && (
-                <div className="flex items-center justify-center gap-3 pt-3">
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-2.5 sm:gap-3 pt-3 w-full">
                   <button
                     onClick={() => setRenderLimit((prev) => prev + 60)}
-                    className="px-5 py-2.5 rounded-xl bg-surface-2 border border-accent/20 hover:border-accent/40 text-xs font-bold text-appText-bright transition-all"
+                    className="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-surface-2 border border-accent/20 hover:border-accent/40 text-xs font-bold text-appText-bright transition-all"
                   >
                     Muat +60 Lagi ({filteredVocab.length - renderLimit} tersisa)
                   </button>
                   <button
                     onClick={() => setRenderLimit(filteredVocab.length)}
-                    className="px-4 py-2.5 rounded-xl bg-accent text-bg hover:bg-accent-hot text-xs font-bold transition-all shadow-sm"
+                    className="w-full sm:w-auto px-4 py-2.5 rounded-xl bg-accent text-bg hover:bg-accent-hot text-xs font-bold transition-all shadow-sm"
                   >
                     Tampilkan Semua ({filteredVocab.length})
                   </button>
@@ -652,16 +652,16 @@ export const MateriHubPage: React.FC = () => {
 
               {/* Load More Pagination */}
               {filteredGrammar.length > renderLimit && (
-                <div className="flex items-center justify-center gap-3 pt-3">
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-2.5 sm:gap-3 pt-3 w-full">
                   <button
                     onClick={() => setRenderLimit((prev) => prev + 60)}
-                    className="px-5 py-2.5 rounded-xl bg-surface-2 border border-accent/20 hover:border-accent/40 text-xs font-bold text-appText-bright transition-all"
+                    className="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-surface-2 border border-accent/20 hover:border-accent/40 text-xs font-bold text-appText-bright transition-all"
                   >
                     Muat +60 Lagi ({filteredGrammar.length - renderLimit} tersisa)
                   </button>
                   <button
                     onClick={() => setRenderLimit(filteredGrammar.length)}
-                    className="px-4 py-2.5 rounded-xl bg-accent text-bg hover:bg-accent-hot text-xs font-bold transition-all shadow-sm"
+                    className="w-full sm:w-auto px-4 py-2.5 rounded-xl bg-accent text-bg hover:bg-accent-hot text-xs font-bold transition-all shadow-sm"
                   >
                     Tampilkan Semua ({filteredGrammar.length})
                   </button>

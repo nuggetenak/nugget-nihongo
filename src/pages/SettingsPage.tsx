@@ -21,6 +21,7 @@ import {
   ExternalLink,
   Sliders,
   HelpCircle,
+  History,
 } from 'lucide-react';
 import { useAppStore } from '../store/useAppStore';
 import { APP_VERSION, APP_RELEASE_NAME } from '../config/version';
@@ -38,6 +39,7 @@ export const SettingsPage: React.FC = () => {
     speechRate, setSpeechRate,
     showToast, resetAllData,
     openOnboarding, openFeatureGuide,
+    openPatchNotes,
   } = useAppStore();
 
   const {
@@ -451,14 +453,23 @@ export const SettingsPage: React.FC = () => {
           <span>Aplikasi & Penyimpanan Offline (PWA)</span>
         </h2>
 
-        <div className="flex items-center justify-between text-xs">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs">
           <div>
             <div className="font-semibold text-appText-bright">Versi Sistem</div>
             <div className="text-appText-muted">{APP_VERSION} ({APP_RELEASE_NAME}) · Arsitektur SPA React & Vite</div>
           </div>
-          <span className="px-2.5 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 font-mono text-[11px] font-bold">
-            Produksi Aktif
-          </span>
+          <div className="flex items-center gap-2">
+            <button
+              onClick={openPatchNotes}
+              className="px-3 py-1.5 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/35 text-accent font-bold text-xs flex items-center gap-1.5 transition-all shadow-sm active:scale-95"
+            >
+              <History className="w-3.5 h-3.5" />
+              <span>Catatan Rilis (Patch Notes)</span>
+            </button>
+            <span className="hidden sm:inline-block px-2.5 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 font-mono text-[11px] font-bold">
+              Produksi Aktif
+            </span>
+          </div>
         </div>
 
         <div className="flex items-center justify-between text-xs">

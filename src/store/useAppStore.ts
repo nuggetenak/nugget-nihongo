@@ -58,6 +58,11 @@ export interface AppState {
   openFeatureGuide: () => void;
   closeFeatureGuide: () => void;
 
+  // Patch Notes Modal
+  isPatchNotesOpen: boolean;
+  openPatchNotes: () => void;
+  closePatchNotes: () => void;
+
   // Reset entire store
   resetAllData: () => void;
 }
@@ -263,6 +268,10 @@ export const useAppStore = create<AppState>((set, get) => ({
   isFeatureGuideOpen: false,
   openFeatureGuide: () => set({ isFeatureGuideOpen: true }),
   closeFeatureGuide: () => set({ isFeatureGuideOpen: false }),
+
+  isPatchNotesOpen: false,
+  openPatchNotes: () => set({ isPatchNotesOpen: true }),
+  closePatchNotes: () => set({ isPatchNotesOpen: false }),
 
   resetAllData: () => {
     if (typeof window !== 'undefined') {

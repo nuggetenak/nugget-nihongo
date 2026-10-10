@@ -345,12 +345,14 @@ export const HomePage: React.FC = () => {
           </span>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-5 gap-3 pt-1">
+        <div className="grid grid-cols-2 sm:grid-cols-5 gap-2.5 sm:gap-3 pt-1">
           {levelMastery.map((lvl) => (
             <div
               key={lvl.id}
               onClick={() => handleNavigateLevel(lvl.id)}
-              className="p-3 rounded-2xl bg-surface-2 border border-accent/15 hover:border-accent/40 cursor-pointer transition-all hover:bg-surface-3 group"
+              className={`p-3 rounded-2xl bg-surface-2 border border-accent/15 hover:border-accent/40 cursor-pointer transition-all hover:bg-surface-3 group ${
+                lvl.id === 'n1' ? 'col-span-2 sm:col-span-1' : ''
+              }`}
             >
               <div className="flex items-center justify-between text-xs font-bold mb-1.5">
                 <span className="group-hover:text-accent transition-colors text-appText-bright">

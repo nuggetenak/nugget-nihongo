@@ -24,6 +24,7 @@ import {
   User as UserIcon,
   Cloud,
   CloudOff,
+  History,
 } from 'lucide-react';
 import { useAppStore, AppState } from '../../store/useAppStore';
 import { useAuthStore } from '../../lib/supabase/authStore';
@@ -44,7 +45,7 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({
   onOpenConjugation,
   onOpenNuance,
 }) => {
-  const { activeTab, setActiveTab, openFeatureGuide, openOnboarding } = useAppStore();
+  const { activeTab, setActiveTab, openFeatureGuide, openOnboarding, openPatchNotes } = useAppStore();
   const { user, openAuthModal } = useAuthStore();
 
   if (!isOpen) return null;
@@ -195,6 +196,16 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({
                 <Compass className="w-4 h-4 text-accent" />
                 <span>Direktori Panduan Fitur</span>
               </button>
+              <button
+                onClick={() => {
+                  openPatchNotes();
+                  onClose();
+                }}
+                className="w-full flex items-center gap-3 px-3 py-2 rounded-xl text-xs text-appText-muted hover:text-accent hover:bg-surface-2 transition-all"
+              >
+                <History className="w-4 h-4 text-accent-hot" />
+                <span>Catatan Rilis (Patch Notes)</span>
+              </button>
             </div>
           </div>
         </div>
@@ -236,10 +247,20 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({
             </button>
           )}
 
-          <div className="flex items-center justify-between text-[11px] text-appText-muted pt-1">
-            <span>100% PWA Offline</span>
-            <span className="font-mono text-accent">{APP_VERSION}</span>
-          </div>
+          <button
+            onClick={() => {
+              openPatchNotes();
+              onClose();
+            }}
+            className="w-full flex items-center justify-between text-[11px] text-appText-muted hover:text-accent transition-colors pt-1 cursor-pointer text-left"
+            title="Lihat Catatan Rilis & Riwayat Versi"
+          >
+            <span className="hover:underline">100% PWA Offline</span>
+            <span className="font-mono text-accent font-bold flex items-center gap-1">
+              <span>{APP_VERSION}</span>
+              <History className="w-3 h-3" />
+            </span>
+          </button>
         </div>
       </div>
     </div>

@@ -133,7 +133,7 @@ export const KebunPage: React.FC = () => {
       </div>
 
       {/* Plants Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3.5 sm:gap-4">
         {filteredPlants.map((plant) => {
           const stageInfo = STAGE_LABELS[plant.stage];
           const isMaxBloom = plant.stage >= 4;

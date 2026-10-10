@@ -18,6 +18,7 @@ import {
   Cpu,
   GraduationCap,
   Volume2,
+  History,
 } from 'lucide-react';
 import { useAppStore } from '../store/useAppStore';
 import { APP_VERSION, APP_RELEASE_NAME } from '../config/version';
@@ -75,8 +76,8 @@ const FAQ_LIST: FAQItem[] = [
   {
     id: 'faq-8',
     category: 'cloud',
-    q: 'Mengapa Google Sign-In menampilkan pesan kesalahan DNS NXDOMAIN?',
-    a: 'Jika muncul kesalahan "DNS_PROBE_FINISHED_NXDOMAIN" pada URL Supabase, itu artinya domain proyek Supabase bawaan telah diarsipkan atau dipause oleh server. Buka menu "Pengaturan > Konfigurasi Supabase Cloud", lalu masukkan Project URL dan Anon Key dari proyek Supabase aktifmu sendiri (tersedia gratis di supabase.com). Setelah disimpan, Google Sign-In dan pendaftaran akun email akan langsung terhubung ke proyek pribadimu.',
+    q: 'Bagaimana cara kerja sinkronisasi cloud dengan Akun Google?',
+    a: 'Cukup ketuk tombol "Masuk dengan Akun Google" di menu Pengaturan. Progres belajar, kartu FSRS, streak harian, dan kebun kanjimu otomatis tersinkronisasi antar perangkat (HP, tablet, dan laptop) tanpa perlu memasukkan kunci API database apa pun. Selama dalam kondisi offline, seluruh data tetap tersimpan 100% aman di perangkat lokalmu.',
   },
   {
     id: 'faq-9',
@@ -105,7 +106,7 @@ const FAQ_LIST: FAQItem[] = [
 ];
 
 export const AboutPage: React.FC = () => {
-  const { openOnboarding, openFeatureGuide, setActiveTab } = useAppStore();
+  const { openOnboarding, openFeatureGuide, openPatchNotes, setActiveTab } = useAppStore();
   const [faqSearch, setFaqSearch] = useState('');
   const [selectedFaqCategory, setSelectedFaqCategory] = useState<string>('all');
   const [expandedFaqId, setExpandedFaqId] = useState<string | null>('faq-1');
@@ -143,10 +144,10 @@ export const AboutPage: React.FC = () => {
               Aplikasi pendamping belajar bahasa Jepang yang hangat, santai, dan bebas rasa bersalah. Dibangun di atas riset memori modern FSRS v4 dan kurikulum JLPT N5–N1 terstandar.
             </p>
 
-            <div className="pt-2 flex flex-wrap gap-3">
+            <div className="pt-2 flex flex-wrap gap-2.5 sm:gap-3">
               <button
                 onClick={openOnboarding}
-                className="px-4 py-2.5 rounded-xl bg-accent hover:bg-accent-hot text-bg font-bold text-xs flex items-center gap-2 transition-all shadow-glow"
+                className="px-4 py-2.5 rounded-xl bg-accent hover:bg-accent-hot text-bg font-bold text-xs flex items-center gap-2 transition-all shadow-glow active:scale-95"
               >
                 <span>Mulai Tur Aplikasi</span>
                 <Compass className="w-4 h-4" />
@@ -154,10 +155,18 @@ export const AboutPage: React.FC = () => {
 
               <button
                 onClick={openFeatureGuide}
-                className="px-4 py-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-bright border border-accent/25 font-bold text-xs flex items-center gap-2 transition-all"
+                className="px-4 py-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-bright border border-accent/25 font-bold text-xs flex items-center gap-2 transition-all active:scale-95"
               >
                 <span>Panduan Fitur & Navigasi</span>
                 <BookOpen className="w-4 h-4 text-accent" />
+              </button>
+
+              <button
+                onClick={openPatchNotes}
+                className="px-4 py-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-bright border border-accent/25 font-bold text-xs flex items-center gap-2 transition-all active:scale-95"
+              >
+                <span>Catatan Rilis (Patch Notes)</span>
+                <History className="w-4 h-4 text-accent-hot" />
               </button>
             </div>
           </div>
@@ -370,9 +379,16 @@ export const AboutPage: React.FC = () => {
           <span>Spesifikasi Teknis & Rilis</span>
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
-          <div className="p-3 rounded-xl bg-surface-2 border border-accent/10">
-            <div className="text-appText-muted text-[11px]">Versi Rilis</div>
-            <div className="font-bold text-appText-bright font-mono mt-0.5">{APP_VERSION}</div>
+          <div
+            onClick={openPatchNotes}
+            className="p-3 rounded-xl bg-surface-2 border border-accent/20 hover:border-accent/40 cursor-pointer transition-all hover:bg-surface-3 group"
+            title="Klik untuk membuka Catatan Rilis Lengkap"
+          >
+            <div className="text-appText-muted text-[11px] flex items-center justify-between">
+              <span>Versi Rilis</span>
+              <History className="w-3 h-3 text-accent group-hover:rotate-12 transition-transform" />
+            </div>
+            <div className="font-bold text-accent font-mono mt-0.5 group-hover:underline">{APP_VERSION}</div>
           </div>
           <div className="p-3 rounded-xl bg-surface-2 border border-accent/10">
             <div className="text-appText-muted text-[11px]">Framework</div>
@@ -386,6 +402,16 @@ export const AboutPage: React.FC = () => {
             <div className="text-appText-muted text-[11px]">Lisensi</div>
             <div className="font-bold text-appText-bright mt-0.5">Open Source</div>
           </div>
+        </div>
+
+        <div className="pt-1">
+          <button
+            onClick={openPatchNotes}
+            className="w-full py-2.5 px-4 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/25 hover:border-accent text-appText-bright font-bold text-xs flex items-center justify-center gap-2 transition-all shadow-sm"
+          >
+            <History className="w-4 h-4 text-accent" />
+            <span>Buka Riwayat Catatan Rilis & Changelog Lengkap</span>
+          </button>
         </div>
       </div>
     </div>

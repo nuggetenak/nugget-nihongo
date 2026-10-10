@@ -16,6 +16,7 @@ import { FeatureGuideModal } from './components/ui/FeatureGuideModal';
 import { KanaChartModal } from './components/kana/KanaChartModal';
 import { ConjugationModal } from './components/grammar/ConjugationModal';
 import { NuanceCompareModal } from './components/grammar/NuanceCompareModal';
+import { PatchNotesModal } from './components/ui/PatchNotesModal';
 import { usePwaStore } from './lib/pwa/pwaStore';
 import { useAuthStore } from './lib/supabase/authStore';
 import { NormalizedVocab, NormalizedGrammar } from './lib/data/dataManager';
@@ -30,7 +31,13 @@ import { SettingsPage } from './pages/SettingsPage';
 import { AboutPage } from './pages/AboutPage';
 
 export const App: React.FC = () => {
-  const { activeTab, setActiveTab, checkStreakStatus } = useAppStore();
+  const {
+    activeTab,
+    setActiveTab,
+    checkStreakStatus,
+    isPatchNotesOpen,
+    closePatchNotes,
+  } = useAppStore();
   const { initPwa } = usePwaStore();
   const { initAuth } = useAuthStore();
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -213,6 +220,12 @@ export const App: React.FC = () => {
       <NuanceCompareModal
         isOpen={isNuanceOpen}
         onClose={() => setIsNuanceOpen(false)}
+      />
+
+      {/* Historical Patch Notes & Changelog Modal */}
+      <PatchNotesModal
+        isOpen={isPatchNotesOpen}
+        onClose={closePatchNotes}
       />
     </div>
   );
