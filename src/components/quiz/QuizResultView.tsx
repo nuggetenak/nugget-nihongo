@@ -13,6 +13,7 @@ interface QuizResultViewProps {
   onGoHome: () => void;
   onRetryMistakes?: () => void;
   onGoToHub?: () => void;
+  onGoToGarden?: () => void;
   onReportQuestion?: (question: QuizQuestionItem) => void;
 }
 
@@ -26,6 +27,7 @@ export const QuizResultView: React.FC<QuizResultViewProps> = ({
   onGoHome,
   onRetryMistakes,
   onGoToHub,
+  onGoToGarden,
   onReportQuestion,
 }) => {
   const percentage = Math.round((score / total) * 100);
@@ -87,6 +89,19 @@ export const QuizResultView: React.FC<QuizResultViewProps> = ({
             >
               <RotateCcw className="w-4 h-4" />
               <span>Latih Ulang {answers.filter(a => !a.isCorrect).length} Soal yang Salah 🔁</span>
+            </button>
+          </div>
+        )}
+
+        {/* Garden Watering Ecosystem Loop Action */}
+        {onGoToGarden && waterEarned > 0 && (
+          <div className="pt-1">
+            <button
+              onClick={onGoToGarden}
+              className="w-full py-3 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold text-xs flex items-center justify-center gap-2 transition-all shadow-md active:scale-95"
+            >
+              <Droplets className="w-4 h-4 fill-white" />
+              <span>Kunjungi Kebun Kata (Siram Tanaman dengan +{waterEarned} 💧) 🌸</span>
             </button>
           </div>
         )}

@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Volume2, X, Sparkles, BookOpen, RotateCcw, Flag, Eye, EyeOff } from 'lucide-react';
+import { Volume2, X, Sparkles, BookOpen, RotateCcw, Flag, Eye, EyeOff, Zap } from 'lucide-react';
 import { NormalizedVocab, NormalizedGrammar } from '../../lib/data/dataManager';
 import { speakJapanese } from '../../lib/audio/tts';
 import { ConjugationModal } from '../grammar/ConjugationModal';
 import { ReportIssueModal } from './ReportIssueModal';
+import { useAppStore } from '../../store/useAppStore';
 
 interface DetailModalProps {
   item: (NormalizedVocab | NormalizedGrammar) | null;
@@ -12,6 +13,7 @@ interface DetailModalProps {
 }
 
 export const DetailModal: React.FC<DetailModalProps> = ({ item, type, onClose }) => {
+  const { setActiveTab } = useAppStore();
   const [isConjugationModalOpen, setIsConjugationModalOpen] = useState(false);
   const [blurTranslations, setBlurTranslations] = useState(false);
   const [revealedSentences, setRevealedSentences] = useState<Record<number, boolean>>({});
@@ -183,8 +185,22 @@ export const DetailModal: React.FC<DetailModalProps> = ({ item, type, onClose })
           </div>
         )}
 
+        {/* Action: Practice item directly in Arena Kuis */}
+        <div className="pt-2">
+          <button
+            onClick={() => {
+              onClose();
+              setActiveTab('quiz');
+            }}
+            className="w-full py-2.5 px-4 rounded-xl bg-accent hover:bg-accent-hot text-bg font-bold text-xs flex items-center justify-center gap-2 transition-all shadow-glow active:scale-95"
+          >
+            <Zap className="w-3.5 h-3.5 fill-bg" />
+            <span>Latih di Arena Kuis 🎯</span>
+          </button>
+        </div>
+
         {/* Report Content Mistake / Unnatural Sentence */}
-        <div className="pt-2 border-t border-accent/15">
+        <div className="pt-1 border-t border-accent/15">
           <button
             onClick={() => setIsReportOpen(true)}
             className="w-full py-2 px-3 rounded-xl bg-surface-2/60 hover:bg-surface-2 border border-accent/15 text-appText-muted hover:text-amber-400 text-xs font-medium transition-all flex items-center justify-center gap-1.5 active:scale-95"

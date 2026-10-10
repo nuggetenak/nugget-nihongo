@@ -555,6 +555,7 @@ export const QuizPage: React.FC = () => {
               onGoHome={() => setActiveTab('home')}
               onRetryMistakes={mistakesList.length > 0 ? startMistakeSession : undefined}
               onGoToHub={() => setViewState('hub')}
+              onGoToGarden={() => setActiveTab('kebun')}
               onReportQuestion={handleOpenReport}
             />
           ) : !currentQ ? (

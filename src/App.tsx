@@ -73,6 +73,11 @@ export const App: React.FC = () => {
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, [setActiveTab]);
 
+  // Smooth scroll to top when activeTab changes
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [activeTab]);
+
   // Desktop global keyboard shortcut listener (⌘K, ?, F, R)
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {

@@ -7,7 +7,7 @@ import { playWaterSfx } from '../lib/audio/sfx';
 
 export const KebunPage: React.FC = () => {
   const { waterDrops, plants, waterPlant, waterAll } = useGardenStore();
-  const { showToast, incrementXp } = useAppStore();
+  const { showToast, incrementXp, setActiveTab } = useAppStore();
   const [selectedLevelFilter, setSelectedLevelFilter] = useState<'all' | 'n5' | 'n4' | 'n3' | 'n2'>('all');
   const [wateringId, setWateringId] = useState<string | null>(null);
 
@@ -111,6 +111,27 @@ export const KebunPage: React.FC = () => {
           </button>
         </div>
       </div>
+
+      {/* Empty Water Drops Guide Banner */}
+      {waterDrops === 0 && (
+        <div className="bg-surface-2 border border-amber-500/30 rounded-2xl p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 animate-in fade-in duration-200">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-xl bg-amber-500/20 text-accent-hot border border-amber-500/30 flex items-center justify-center text-lg shrink-0">
+              💧
+            </div>
+            <div>
+              <div className="text-xs font-bold text-appText-bright">Persediaan Air Habis</div>
+              <div className="text-[11px] text-appText-muted">Selesaikan 1 sesi latihan di Arena Kuis untuk mengumpulkan 2–5 tetes air segar.</div>
+            </div>
+          </div>
+          <button
+            onClick={() => setActiveTab('quiz')}
+            className="w-full sm:w-auto px-4 py-2 rounded-xl bg-accent hover:bg-accent-hot text-bg font-bold text-xs flex items-center justify-center gap-1.5 transition-all shadow-sm shrink-0 active:scale-95"
+          >
+            <span>Latihan Kuis Sekarang →</span>
+          </button>
+        </div>
+      )}
 
       {/* Level Filter Tabs */}
       <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none">
