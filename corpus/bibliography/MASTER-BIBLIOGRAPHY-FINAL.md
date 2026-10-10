@@ -908,9 +908,9 @@ Gardner, B., Lally, P., & Wardle, J. (2012). Making health habitual: The psychol
 
 Horwitz, E. K., Horwitz, M. B., & Cope, J. (1986). Foreign language classroom anxiety. *The Modern Language Journal, 70*(2), 125–132. https://doi.org/10.1111/j.1540-4781.1986.tb05256.x [ID-01]
 
-MacIntyre, P. D., & Gardner, R. C. (1994). The subtle effects of language anxiety on cognitive processing in the second language. *Language Learning, 44*(2), 283–305. [ID-02]
+MacIntyre, P. D., & Gardner, R. C. (1994). The subtle effects of language anxiety on cognitive processing in the second language. *Language Learning, 44*(2), 283–305. https://doi.org/10.1111/j.1467-1770.1994.tb01103.x [ID-02]
 
-Aida, Y. (1994). Examination of Horwitz, Horwitz, and Cope's construct of foreign language anxiety: The case of students of Japanese. *The Modern Language Journal, 78*(2), 155–168. https://doi.org/10.1111/j.1540-4781.1994.tb02025.x [ID-03]
+Aida, Y. (1994). Examination of Horwitz, Horwitz, and Cope's construct of foreign language anxiety: The case of students of Japanese. *The Modern Language Journal, 78*(2), 155–168. https://doi.org/10.1111/j.1540-4781.1994.tb02026.x [ID-03]
 
 Horwitz, E. K. (2001). Language anxiety and achievement. *Annual Review of Applied Linguistics, 21*, 112–126. https://doi.org/10.1017/S0267190501000071 [ID-04]
 
@@ -924,11 +924,11 @@ Carroll, J. B. (1981). Twenty-five years of research on foreign language aptitud
 
 Carroll, J. B. (1990). Cognitive abilities in foreign language aptitude: Then and now. In T. S. Parry & C. W. Stansfield (Eds.), *Language aptitude reconsidered* (pp. 11–29). Prentice Hall Regents. [ID-09]
 
-Skehan, P. (1998). *A cognitive approach to language learning.* Oxford University Press. [ID-10]
+Skehan, P. (1998). *A cognitive approach to language learning.* Oxford University Press. ISBN: 978-0-19-437215-2. [ID-10]
 
-Grigorenko, E. L., Sternberg, R. J., & Ehrman, M. E. (2000). A theory-based approach to the measurement of foreign language learning aptitude. *The Modern Language Journal, 84*(3), 390–405. https://doi.org/10.1111/0026-7902.00030 [ID-11]
+Grigorenko, E. L., Sternberg, R. J., & Ehrman, M. E. (2000). A theory-based approach to the measurement of foreign language learning aptitude. *The Modern Language Journal, 84*(3), 390–405. https://doi.org/10.1111/0026-7902.00076 [ID-11]
 
-Dörnyei, Z., & Skehan, P. (2003). Individual differences in second language learning. In C. J. Doughty & M. H. Long (Eds.), *The handbook of second language acquisition* (pp. 589–630). Blackwell. [ID-12]
+Dörnyei, Z., & Skehan, P. (2003). Individual differences in second language learning. In C. J. Doughty & M. H. Long (Eds.), *The handbook of second language acquisition* (pp. 589–630). Blackwell. https://doi.org/10.1002/9780470756492.ch18 [ID-12]
 
 Li, S. (2015). The associations between language aptitude and second language grammar acquisition: A meta-analytic review of five decades of research. *Applied Linguistics, 36*(3), 385–408. https://doi.org/10.1093/applin/amu054 [ID-13]
 
@@ -954,25 +954,23 @@ Long, M. H. (1990). Maturational constraints on language development. *Studies i
 
 Birdsong, D., & Molis, M. (2001). On the evidence for maturational constraints in second-language acquisition. *Journal of Memory and Language, 44*(2), 235–249. https://doi.org/10.1006/jmla.2000.2750 [ID-24]
 
-DeKeyser, R. M. (2000). The robustness of critical period effects in second language acquisition. *Studies in Second Language Acquisition, 22*(4), 499–533. [ID-25]
+DeKeyser, R. M. (2000). The robustness of critical period effects in second language acquisition. *Studies in Second Language Acquisition, 22*(4), 499–533. https://doi.org/10.1017/S0272263100004022 [ID-25]
 
 Abrahamsson, N., & Hyltenstam, K. (2009). Age of onset and nativelikeness in a second language: Listener perception versus linguistic scrutiny. *Language Learning, 59*(2), 249–306. https://doi.org/10.1111/j.1467-9922.2009.00507.x [ID-26]
 
-DeKeyser, R. M. (2013). Age effects in second language learning: Stepping stones toward better understanding. *Language Learning, 63*(Suppl. 1), 52–67. [ID-27]
+DeKeyser, R. M. (2013). Age effects in second language learning: Stepping stones toward better understanding. *Language Learning, 63*(Suppl. 1), 52–67. https://doi.org/10.1111/j.1467-9922.2012.00737.x [ID-27]
 
 Flege, J. E., Yeni-Komshian, G. H., & Liu, S. (1999). Age constraints on second-language acquisition. *Journal of Memory and Language, 41*(1), 78–104. https://doi.org/10.1006/jmla.1999.2638 [ID-28]
 
-Dweck, C. S. (2006). *Mindset: The new psychology of success.* Random House. [ID-29]
+Dweck, C. S. (2006). *Mindset: The new psychology of success.* Random House. ISBN: 978-1-4000-6275-1. [ID-29]
 
 Mercer, S., & Ryan, S. (2010). A mindset for EFL: In the words of the learners. *ELT Journal, 64*(4), 436–444. https://doi.org/10.1093/elt/ccp083 [ID-30]
 
-Lou, N. M., & Noels, K. A. (2019). Decreasing language learners' failure-related beliefs and emotions with a growth mindset: A theoretical synthesis and empirical agenda. *Contemporary Educational Psychology, 59*, 101799. https://doi.org/10.1016/j.cedpsych.2019.101799 [ID-31]
-
-MacIntyre, P. D., & Gardner, R. C. (1994). The subtle effects of language anxiety on cognitive processing in the second language. *Language Learning, 44*(2), 283–305. https://doi.org/10.1111/j.1467-1770.1994.tb01103.x [ID-02]
+Lou, N. M., & Noels, K. A. (2017). Measuring language mindsets and modeling their effects on language learners' intrinsic motivation, self-regulation, and anxiety. *The Modern Language Journal, 101*(1), 214–243. https://doi.org/10.1111/modl.12380 [ID-31]
 
 Blackwell, L. S., Trzesniewski, K. H., & Dweck, C. S. (2007). Implicit theories of intelligence predict achievement across an adolescent transition: A longitudinal study and an intervention. *Child Development, 78*(1), 246–263. https://doi.org/10.1111/j.1467-8624.2007.00995.x [ID-32]
 
-Yeager, D. S., & Dweck, C. S. (2012). Mindset interventions are key facilitators of achievement. *Perspectives on Psychological Science, 7*(1), 58–62. https://doi.org/10.1177/1745691611433815 [ID-33]
+Yeager, D. S., & Dweck, C. S. (2012). Mindsets that promote resilience: When students believe that personal characteristics can be developed. *Educational Psychologist, 47*(4), 302–314. https://doi.org/10.1080/00461520.2012.722805 [ID-33]
 
 Haimovitz, K., & Dweck, C. S. (2016). What predicts children's fixed and growth intelligence mind-sets? Not their parents' views of intelligence but their parents' views of failure. *Psychological Science, 27*(6), 859–869. https://doi.org/10.1177/0956797616639727 [ID-34]
 
@@ -984,19 +982,15 @@ Williams, M., & Burden, R. (1999). Students' developing conceptions of themselve
 
 Ushioda, E. (2001). Language learning at university: Exploring the role of motivational thinking. In Z. Dörnyei & R. Schmidt (Eds.), *Motivation and second language acquisition* (pp. 93–125). University of Hawai'i Press. [ID-38]
 
-Hsieh, P.-H., & Schallert, D. L. (2008). Implications from self-determination theory and attribution theory for the role of volition in foreign language learning. *System, 36*(2), 300–312. https://doi.org/10.1016/j.system.2007.08.001 [ID-39]
+Hsieh, P.-H. P., & Schallert, D. L. (2008). Implications from self-efficacy and attribution theories for college students' foreign language achievement. *Contemporary Educational Psychology, 33*(4), 513–532. https://doi.org/10.1016/j.cedpsych.2008.01.003 [ID-39]
 
 Graham, S. (2004). Giving up on modern foreign languages? Students' perceptions of learning French. *The Modern Language Journal, 88*(2), 171–191. https://doi.org/10.1111/j.0026-7902.2004.00224.x [ID-40]
 
 Weiner, B. (2000). Intrapersonal and interpersonal theories of motivation from an attributional perspective. *Educational Psychology Review, 12*(1), 1–14. https://doi.org/10.1023/A:1009017532121 [ID-41]
 
-Ushioda, E. (2009). A person-in-context relational view of emergent motivation, self and identity. In Z. Dörnyei & E. Ushioda (Eds.), *Motivation, language identity and the L2 self* (pp. 215–228). Multilingual Matters. [ID-42]
+Ushioda, E. (2009). A person-in-context relational view of emergent motivation, self and identity. In Z. Dörnyei & E. Ushioda (Eds.), *Motivation, language identity and the L2 self* (pp. 215–228). Multilingual Matters. https://doi.org/10.21832/9781847691293-012 [ID-42]
 
 Clément, R., Dörnyei, Z., & Noels, K. A. (1994). Motivation, self-confidence, and group cohesion in the foreign language classroom. *Language Learning, 44*(3), 417–448. https://doi.org/10.1111/j.1467-1770.1994.tb01113.x [ID-43]
-
-DeKeyser, R. M. (2000). The robustness of critical period effects in second language acquisition. *Studies in Second Language Acquisition, 22*(4), 499–533. https://doi.org/10.1017/S0272263100004022 [ID-25]
-
-DeKeyser, R. M. (2013). Age effects in second language learning: Stepping stones toward better understanding. *Language Learning, 63*(Suppl. 1), 52–67. https://doi.org/10.1111/j.1467-9922.2012.00737.x [ID-27]
 
 ### IM
 
@@ -1124,9 +1118,9 @@ Tamaoka, K., & Yamada, H. (2000). The effects of stroke order and radicals on ka
 
 Shibahara, N., Zorzi, M., Hill, M. P., Wydell, T., & Butterworth, B. (2003). Semantic effects in word naming: Evidence from English and Japanese kanji. *Quarterly Journal of Experimental Psychology, 56A*(2), 263–286. [OD-10]
 
-Hirose, T., & Hatta, T. (1988). Reading disabilities in modern Japanese children. *Journal of Research in Reading, 11*(2), 152–160. [OD-11]
+Hirose, T., & Hatta, T. (1988). Reading disabilities in modern Japanese children. *Journal of Research in Reading, 11*(2), 152–160. https://doi.org/10.1111/j.1467-9817.1988.tb00157.x [OD-11]
 
-Mori, Y. (1998). Effects of first language and phonological accessibility on kanji recognition. *The Modern Language Journal, 82*(1), 69–82. https://doi.org/10.1111/j.1540-4781.1998.tb02598.x [OD-12]
+Mori, Y. (1998). Effects of first language and phonological accessibility on kanji recognition. *The Modern Language Journal, 82*(1), 69–82. https://doi.org/10.1111/j.1540-4781.1998.tb02595.x [OD-12]
 
 Chikamatsu, N. (2006). L2 Japanese word recognition: The role of hiragana, katakana, kanji, and romanization. *The Canadian Modern Language Review, 62*(3), 409–439. [OD-13]
 
@@ -1318,11 +1312,11 @@ Wydell, T. N., Patterson, K. E., & Humphreys, G. W. (1993). Phonologically media
 
 Tamaoka, K. (1991). Phonological coding in reading Japanese kanji. *Psychologia: An International Journal of Psychological Sciences, 34*(2), 116–123. [PR-03]
 
-Perfetti, C. A., & Tan, L. H. (1998). The time course of graphic, phonological, and semantic activation in Chinese character identification. *Journal of Experimental Psychology: Learning, Memory, and Cognition, 24*(5), 1105–1122. [PR-04]
+Perfetti, C. A., & Tan, L. H. (1998). The time course of graphic, phonological, and semantic activation in Chinese character identification. *Journal of Experimental Psychology: Learning, Memory, and Cognition, 24*(1), 101–118. https://doi.org/10.1037/0278-7393.24.1.101 [PR-04]
 
-Frost, R. (1998). Toward a strong phonological theory of visual word identification: True issues and false trails. *Psychological Bulletin, 123*(1), 71–99. [PR-05]
+Frost, R. (1998). Toward a strong phonological theory of visual word identification: True issues and false trails. *Psychological Bulletin, 123*(1), 71–99. https://doi.org/10.1037/0033-2909.123.1.71 [PR-05]
 
-Perfetti, C. A., Liu, Y., & Tan, L. H. (2005). The lexical constituency model: Some implications of research on Chinese for general theories of reading. *Psychological Review, 112*(1), 43–59. [PR-06]
+Perfetti, C. A., Liu, Y., & Tan, L. H. (2005). The lexical constituency model: Some implications of research on Chinese for general theories of reading. *Psychological Review, 112*(1), 43–59. https://doi.org/10.1037/0033-295X.112.1.43 [PR-06]
 
 ### SC
 
@@ -1490,7 +1484,7 @@ Paribakht, T. S., & Wesche, M. (1997). Vocabulary enhancement activities and rea
 
 Meara, P. (1996). The dimensions of lexical competence. In G. Brown, K. Malmkjaer, & J. Williams (Eds.), *Performance and competence in second language acquisition* (pp. 35–53). Cambridge University Press. [VD-07]
 
-Schmitt, N. (1998). Tracking the incremental acquisition of second language vocabulary: A longitudinal study. *Language Learning, 48*(2), 281–317. https://doi.org/10.1111/0023-8333.00042 [VD-08]
+Schmitt, N. (1998). Tracking the incremental acquisition of second language vocabulary: A longitudinal study. *Language Learning, 48*(2), 281–317. https://doi.org/10.1111/1467-9922.00042 [VD-08]
 
 Webb, S. (2008). Receptive and productive vocabulary sizes of L2 learners. *Studies in Second Language Acquisition, 30*(1), 79–95. https://doi.org/10.1017/S0272263108080042 [VD-09]
 

@@ -290,7 +290,7 @@ Extensive reading research occupies a paradoxical position in Japanese as a seco
 
 ---
 
-**[ER-19]** Mori, Y., & Shimizu, H. (2007). Japanese language students' attitudes toward kanji and their learning strategies. *Foreign Language Annals, 40*(3), 455–471. https://doi.org/10.1111/j.1944-9720.2007.tb02867.x *(verify DOI)*
+**[ER-19]** Mori, Y., & Shimizu, H. (2007). Japanese language students' attitudes toward kanji and their perceptions on kanji learning strategies. *Foreign Language Annals, 40*(3), 472–490. https://doi.org/10.1111/j.1944-9720.2007.tb02871.x ✅
 
 **Core contribution:** Mori and Shimizu surveyed JFL students at US universities on their attitudes toward kanji learning and the strategies they deployed, finding a clear bifurcation: students with positive attitudes toward kanji as a meaningful orthographic system used deeper processing strategies (semantic radical analysis, compound decomposition, mnemonic linking to meaning), while students with negative or avoidant attitudes defaulted to phonological bypass — relying on furigana or romaji transliteration rather than engaging with the kanji form. Critically, the furigana-reliant group showed significantly lower retention of kanji forms over a delayed post-test, even when immediate comprehension scores were comparable. This is the empirical grounding for the *furigana dilemma* in Japanese L2 graded readers: phonological scaffolding via furigana enables comprehension access in the short term but may systematically suppress kanji acquisition by providing a bypass route that skilled readers would not use.
 
@@ -298,7 +298,7 @@ Extensive reading research occupies a paradoxical position in Japanese as a seco
 
 ---
 
-**[ER-20]** Chikamatsu, N. (1996). The effects of L1 orthography on L2 word recognition: A study of American and Chinese learners of Japanese. *Studies in Second Language Acquisition, 18*(4), 403–432. https://doi.org/10.1017/S0272263196004032 *(verify DOI)*
+**[ER-20]** Chikamatsu, N. (1996). The effects of L1 orthography on L2 word recognition: A study of American and Chinese learners of Japanese. *Studies in Second Language Acquisition, 18*(4), 403–432. https://doi.org/10.1017/S0272263100015369 ✅
 
 **Core contribution:** Chikamatsu compared how American English L1 speakers and Chinese L1 speakers processed Japanese written words, exploiting the critical difference that Chinese readers arrive with prior logographic experience while English readers do not. Her findings are foundational for understanding the orthographic scaffolding dilemma in Japanese L2 reading: English-background learners, lacking logographic prior knowledge, showed a strong tendency to phonologically recode Japanese words (using hiragana or furigana as the primary access route) rather than processing kanji as whole semantic units. Chinese-background learners, by contrast, showed patterns closer to native Japanese readers in kanji-as-unit processing. This L1 transfer effect in orthographic processing has a direct pedagogical implication: furigana scaffolding in graded readers, while necessary for English-background learners, actively reinforces a processing route (phonological recoding) that is ultimately less efficient for kanji-dense authentic Japanese text.
 

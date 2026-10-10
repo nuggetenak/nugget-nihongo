@@ -1450,8 +1450,8 @@ Implikasi untuk Nugget Nihongo: JLPT word lists mendefinisikan breadth targets (
 | VD-01 | Read, J. (2004). Plumbing the depths: How should the construct of vocabulary knowledge be defined? In P. Bogaards & B. Laufer (Eds.), *Vocabulary in a second language: Selection, acquisition, and testing* (pp. 209–227). John Benjamins. | no DOI — book chapter | theoretical | 4 | no DOI acceptable | 2004 |
 | VD-02 | Schmitt, N. (2014). Size and depth of vocabulary knowledge: What the research shows. *Language Learning, 64*(4), 913–951. https://doi.org/10.1111/lang.12077 | 10.1111/lang.12077 | review | 5 | ✅ DOI verified | 2014 |
 | VD-03 | Qian, D. D. (1999). Assessing the roles of depth and breadth of vocabulary knowledge in reading comprehension. *Canadian Modern Language Review, 56*(2), 282–307. https://doi.org/10.3138/cmlr.56.2.282 | 10.3138/cmlr.56.2.282 | empirical | 4 | ✅ DOI verified | 1999 |
-| VD-04 | Henriksen, B. (1999). Three dimensions of vocabulary development. *Studies in Second Language Acquisition, 21*(2), 303–317. https://doi.org/10.1017/S0272263199002028 | 10.1017/S0272263199002028 | theoretical | 4 | *(verify)* | 1999 |
-| VD-05 | Webb, S. (2007). The effects of repetition on vocabulary knowledge. *Applied Linguistics, 28*(1), 46–65. https://doi.org/10.1093/applin/aml048 | 10.1093/applin/aml048 | empirical | 5 | *(verify)* | 2007 |
+| VD-04 | Henriksen, B. (1999). Three dimensions of vocabulary development. *Studies in Second Language Acquisition, 21*(2), 303–317. https://doi.org/10.1017/S0272263199002028 | 10.1017/S0272263199002028 | theoretical | 4 | ✅ DOI verified | 1999 |
+| VD-05 | Webb, S. (2007). The effects of repetition on vocabulary knowledge. *Applied Linguistics, 28*(1), 46–65. https://doi.org/10.1093/applin/aml048 | 10.1093/applin/aml048 | empirical | 5 | ✅ DOI verified | 2007 |
 
 **Kontribusi unik per citation:**
 
@@ -1499,8 +1499,8 @@ Mapping ke FSRS: tahapan VKS ini tidak secara langsung encoded dalam FSRS interv
 |---|---|---|---|---|---|---|
 | VD-06 | Paribakht, T. S., & Wesche, M. (1997). Vocabulary enhancement activities and reading for meaning in second language vocabulary acquisition. In J. Coady & T. Huckin (Eds.), *Second language vocabulary acquisition* (pp. 174–202). Cambridge University Press. | no DOI — book chapter | empirical | 4 | no DOI acceptable | 1997 |
 | VD-07 | Meara, P. (1996). The dimensions of lexical competence. In G. Brown, K. Malmkjaer, & J. Williams (Eds.), *Performance and competence in second language acquisition* (pp. 35–53). Cambridge University Press. | no DOI — book chapter | theoretical | 4 | no DOI acceptable | 1996 |
-| VD-08 | Schmitt, N. (1998). Tracking the incremental acquisition of second language vocabulary: A longitudinal study. *Language Learning, 48*(2), 281–317. https://doi.org/10.1111/0023-8333.00042 | 10.1111/0023-8333.00042 | empirical | 5 | *(verify)* | 1998 |
-| VD-09 | Webb, S. (2008). Receptive and productive vocabulary sizes of L2 learners. *Studies in Second Language Acquisition, 30*(1), 79–95. https://doi.org/10.1017/S0272263108080042 | 10.1017/S0272263108080042 | empirical | 5 | *(verify)* | 2008 |
+| VD-08 | Schmitt, N. (1998). Tracking the incremental acquisition of second language vocabulary: A longitudinal study. *Language Learning, 48*(2), 281–317. https://doi.org/10.1111/1467-9922.00042 | 10.1111/1467-9922.00042 | empirical | 5 | ✅ DOI verified | 1998 |
+| VD-09 | Webb, S. (2008). Receptive and productive vocabulary sizes of L2 learners. *Studies in Second Language Acquisition, 30*(1), 79–95. https://doi.org/10.1017/S0272263108080042 | 10.1017/S0272263108080042 | empirical | 5 | ✅ DOI verified | 2008 |
 
 > **Cross-reference, bukan VD entry baru:** Laufer, B. (1998). Development of passive and active vocabulary — *sudah ada di §CA.1 sebagai [NEW]*. Relevansi untuk §CA.10.2 (receptive/productive gap sebagai stage continuum) — silakan cross-reference ke §CA.1 saat merging.
 
@@ -1540,10 +1540,10 @@ Formulaic language research (Wray, 2002) mengusulkan bahwa native-like fluency s
 | ID | Full Citation | DOI | Tipe | Q | Akurasi | Tahun |
 |---|---|---|---|---|---|---|
 | VD-10 | Howarth, P. (1998). Phraseology and second language proficiency. *Applied Linguistics, 19*(1), 24–44. https://doi.org/10.1093/applin/19.1.24 | 10.1093/applin/19.1.24 | empirical | 5 | ✅ DOI verified | 1998 |
-| VD-11 | Nesselhauf, N. (2005). *Collocations in a learner corpus.* John Benjamins. https://doi.org/10.1075/scl.14 | 10.1075/scl.14 | empirical | 4 | *(verify)* | 2005 |
-| VD-12 | Wray, A. (2002). *Formulaic language and the lexicon.* Cambridge University Press. https://doi.org/10.1017/CBO9780511519772 | 10.1017/CBO9780511519772 | theoretical | 5 | *(verify)* | 2002 |
-| VD-13 | Yamashita, J., & Jiang, N. (2010). L1 influence on the acquisition of L2 collocations: Language-specific versus universal. *TESOL Quarterly, 44*(4), 647–675. https://doi.org/10.5054/tq.2010.235998 | 10.5054/tq.2010.235998 | empirical | 5 | *(verify)* | 2010 |
-| VD-14 | Durrant, P., & Schmitt, N. (2010). Adult learners' retention of collocations from exposure. *Second Language Research, 26*(2), 163–188. https://doi.org/10.1177/0267658309349431 | 10.1177/0267658309349431 | empirical | 5 | *(verify)* | 2010 |
+| VD-11 | Nesselhauf, N. (2005). *Collocations in a learner corpus.* John Benjamins. https://doi.org/10.1075/scl.14 | 10.1075/scl.14 | empirical | 4 | ✅ DOI verified | 2005 |
+| VD-12 | Wray, A. (2002). *Formulaic language and the lexicon.* Cambridge University Press. https://doi.org/10.1017/CBO9780511519772 | 10.1017/CBO9780511519772 | theoretical | 5 | ✅ DOI verified | 2002 |
+| VD-13 | Yamashita, J., & Jiang, N. (2010). L1 influence on the acquisition of L2 collocations: Language-specific versus universal. *TESOL Quarterly, 44*(4), 647–675. https://doi.org/10.5054/tq.2010.235998 | 10.5054/tq.2010.235998 | empirical | 5 | ✅ DOI verified | 2010 |
+| VD-14 | Durrant, P., & Schmitt, N. (2010). Adult learners' retention of collocations from exposure. *Second Language Research, 26*(2), 163–188. https://doi.org/10.1177/0267658309349431 | 10.1177/0267658309349431 | empirical | 5 | ✅ DOI verified | 2010 |
 
 **Kontribusi unik per citation:**
 
@@ -1591,8 +1591,8 @@ Indonesian learners memulai dari zero kanji knowledge — tidak ada cognate adva
 | ID | Full Citation | DOI | Tipe | Q | Akurasi | Tahun |
 |---|---|---|---|---|---|---|
 | VD-15 | Kieffer, M. J., & Lesaux, N. K. (2008). The role of derivational morphology in the reading comprehension of Spanish-speaking English language learners. *Reading and Writing, 21*(8), 783–804. https://doi.org/10.1007/s11145-007-9078-2 | 10.1007/s11145-007-9078-2 | empirical | 4 | ✅ DOI verified | 2008 |
-| VD-16 | Mori, Y. (1998). Effects of first language and phonological accessibility on kanji recognition. *The Modern Language Journal, 82*(1), 69–82. https://doi.org/10.1111/j.1540-4781.1998.tb02594.x | 10.1111/j.1540-4781.1998.tb02594.x | empirical | 4 | *(verify)* | 1998 |
-| VD-17 | Cai, M. (2015). The effects of learning kanji compounds through morphological analysis on vocabulary size. *Journal of the Japanese Language Teaching Association, 162*, 32–47. | no DOI — *(verify journal/pagination)* | empirical | 3 | *(verify — FLAG VD-17)* | 2015 |
+| VD-16 | Mori, Y. (1998). Effects of first language and phonological accessibility on kanji recognition. *The Modern Language Journal, 82*(1), 69–82. https://doi.org/10.1111/j.1540-4781.1998.tb02595.x | 10.1111/j.1540-4781.1998.tb02595.x | empirical | 4 | ✅ DOI verified | 1998 |
+| VD-17 | [RETIRED] Cai, M. (2015) — Unverifiable print record in CiNii/J-STAGE. Retired from active corpus count; empirical grounding maintained via Kieffer & Lesaux (2008) and Mori (1998). | retired | empirical | — | 🗑️ RETIRED | 2015 |
 
 > **Cross-reference, bukan VD entry baru:** Bauer, L., & Nation, I.S.P. (1993). Word families — *sudah ada di §CA.1*. Relevansi: word family conventions dalam Japanese berbeda dari English karena lebih sedikit derivational morphology; the §CA.1 entry sudah mencakup implikasi ini. Tidak perlu re-entry untuk §CA.10.4.
 
@@ -1602,9 +1602,7 @@ Indonesian learners memulai dari zero kanji knowledge — tidak ada cognate adva
 
 **VD-16 — Mori (1998):** Studi khusus Japanese sebagai foreign language yang mengukur bagaimana learners menggunakan semantic dan phonological components kanji untuk inferring meaning. Dua temuan kunci: (1) learners yang secara eksplisit diajarkan komponen semantik kanji (semantic radicals) lebih akurat dalam menginfer makna unfamiliar compounds; (2) phonological accessibility (on-yomi vs. kun-yomi knowledge) moderates compound recognition. Implikasi: cards yang menyertakan radical information di samping compound meaning membangun morphological inferencing skill.
 
-**VD-17 — Cai (2015) — FLAG:** Mengklaim efek positif dari *morphological analysis training* pada kanji vocabulary size dalam waktu yang lebih singkat dibanding standard rote memorization. Namun: citation ini perlu verifikasi — JJLTA volume 162 dan pagination perlu dikonfirmasi. **Jika DOI atau verifiable record tidak ditemukan, pertimbangkan untuk replace dengan studi kanji morphological awareness yang lebih verifiable.** Skor Q 3 karena jurnal lebih rendah visibility dibanding SSLA/LL; demote ke Q2 jika tidak terverifikasi.
-
-> **FLAG VD-17:** Agent 2 atau Crispy perlu verifikasi: JJLTA (日本語教育) vol. 162, penulis Cai M., hal. 32-47. Cari di CiNii (National Institute of Informatics, Japan) atau J-STAGE. Jika tidak ditemukan, hapus dan replace dengan studi kanji morphological awareness yang terverifikasi.
+**VD-17 [RETIRED]:** Cai (2015) dipensiunkan dari korpus aktif karena catatan bibliografis tidak dapat diverifikasi secara independen di CiNii/J-STAGE. Landasan empiris untuk kesadaran morfologis kanji sepenuhnya didukung oleh studi terverifikasi Mori (1998) [VD-16] dan Kieffer & Lesaux (2008) [VD-15].
 
 ### Design Implications
 
@@ -1633,8 +1631,8 @@ Wolter (2001) menunjukkan bahwa L2 mental lexicon berorganisasi awalnya berdasar
 |---|---|---|---|---|---|---|
 | VD-18 | Wolter, B. (2001). Comparing the L1 and L2 mental lexicon: A depth of individual word knowledge model. *Studies in Second Language Acquisition, 23*(1), 41–69. https://doi.org/10.1017/S0272263101001024 | 10.1017/S0272263101001024 | theoretical | 5 | ✅ DOI verified | 2001 |
 | VD-19 | Aitchison, J. (2003). *Words in the mind: An introduction to the mental lexicon* (3rd ed.). Blackwell. ISBN: 978-0-631-19665-0. | no DOI — monograph | theoretical | 4 | no DOI acceptable | 2003 |
-| VD-20 | Meara, P., & Wolter, B. (2004). V_Links: Beyond vocabulary depth. *Angles on the English Speaking World, 4*, 85–96. | no DOI — journal article (low-circulation) | theoretical | 3 | no DOI — *(verify journal)* | 2004 |
-| VD-21 | Jiang, N. (2000). Lexical representation and development in a second language. *Applied Linguistics, 21*(1), 47–77. https://doi.org/10.1093/applin/21.1.47 | 10.1093/applin/21.1.47 | theoretical | 5 | *(verify)* | 2000 |
+| VD-20 | Meara, P., & Wolter, B. (2004). V_Links: Beyond vocabulary depth. *Angles on the English Speaking World, 4*, 85–96. | no DOI — print article (Angles on the English Speaking World 4, 85–96) | theoretical | 3 | ✅ verified print article | 2004 |
+| VD-21 | Jiang, N. (2000). Lexical representation and development in a second language. *Applied Linguistics, 21*(1), 47–77. https://doi.org/10.1093/applin/21.1.47 | 10.1093/applin/21.1.47 | theoretical | 5 | ✅ DOI verified | 2000 |
 
 **Kontribusi unik per citation:**
 
@@ -1717,27 +1715,27 @@ Depth-building card features berinteraksi dengan FSRS scheduling:
 | §CA.10.1 — Depth vs. Breadth | 5 | VD-01 – VD-05 |
 | §CA.10.2 — VKS & Lexical Profiles | 4 | VD-06 – VD-09 |
 | §CA.10.3 — Collocational Knowledge | 5 | VD-10 – VD-14 |
-| §CA.10.4 — Morphological Awareness | 3 | VD-15 – VD-17 |
+| §CA.10.4 — Morphological Awareness | 2 | VD-15 – VD-16 (VD-17 retired) |
 | §CA.10.5 — Word Association Networks | 4 | VD-18 – VD-21 |
 | §CA.10.6 — Design Implications | 0 (synthesis) | — |
-| **TOTAL** | **21** | **VD-01 – VD-21** |
+| **TOTAL** | **20 aktif (1 retired)** | **VD-01 – VD-21** |
 
-### Flags untuk Verifikasi
+### Status Verifikasi & Resolusi Flag (§CA.10)
 
-| Flag ID | Citation | Isu | Aksi |
+| Flag ID | Citation | Status Resolusi | Detail / Canonical DOI |
 |---|---|---|---|
-| FLAG VD-04 | Henriksen (1999) SSLA 21(2) | DOI belum dikonfirmasi | Verify via Cambridge Core: 10.1017/S0272263199002028 |
-| FLAG VD-05 | Webb (2007) Applied Linguistics | DOI belum dikonfirmasi | Verify via OUP: 10.1093/applin/aml048 |
-| FLAG VD-08 | Schmitt (1998) Language Learning | DOI belum dikonfirmasi | Verify via Wiley: 10.1111/0023-8333.00042 |
-| FLAG VD-09 | Webb (2008) SSLA | DOI belum dikonfirmasi | Verify via Cambridge: 10.1017/S0272263108080042 |
-| FLAG VD-11 | Nesselhauf (2005) Benjamins monograph | DOI belum dikonfirmasi | Verify via Benjamins: 10.1075/scl.14 |
-| FLAG VD-12 | Wray (2002) CUP monograph | DOI belum dikonfirmasi | Verify via Cambridge: 10.1017/CBO9780511519772 |
-| FLAG VD-13 | Yamashita & Jiang (2010) TESOL Q | DOI belum dikonfirmasi | Verify via TESOL: 10.5054/tq.2010.235998 |
-| FLAG VD-14 | Durrant & Schmitt (2010) SLR | DOI belum dikonfirmasi | Verify via SAGE: 10.1177/0267658309349431 |
-| FLAG VD-16 | Mori (1998) MLJ | DOI belum dikonfirmasi | Verify via Wiley: 10.1111/j.1540-4781.1998.tb02594.x |
-| FLAG VD-17 | Cai (2015) JJLTA ⚠ HIGH PRIORITY | Journal, volume, pagination perlu konfirmasi; delete jika tidak terverifikasi | Search CiNii/J-STAGE: 日本語教育 162, author Cai |
-| FLAG VD-20 | Meara & Wolter (2004) Angles | Low-circulation journal, no DOI | Verify existence; acceptable as no-DOI if confirmed |
-| FLAG VD-21 | Jiang (2000) Applied Linguistics | DOI belum dikonfirmasi | Verify via OUP: 10.1093/applin/21.1.47 |
+| FLAG VD-04 | Henriksen (1999) SSLA 21(2) | ✅ RESOLVED | Cambridge Core: `10.1017/S0272263199002028` |
+| FLAG VD-05 | Webb (2007) Applied Linguistics | ✅ RESOLVED | Oxford Academic: `10.1093/applin/aml048` |
+| FLAG VD-08 | Schmitt (1998) Language Learning | ✅ RESOLVED | Wiley Online Library: `10.1111/1467-9922.00042` |
+| FLAG VD-09 | Webb (2008) SSLA | ✅ RESOLVED | Cambridge Core: `10.1017/S0272263108080042` |
+| FLAG VD-11 | Nesselhauf (2005) Benjamins monograph | ✅ RESOLVED | John Benjamins: `10.1075/scl.14` |
+| FLAG VD-12 | Wray (2002) CUP monograph | ✅ RESOLVED | Cambridge Core: `10.1017/CBO9780511519772` |
+| FLAG VD-13 | Yamashita & Jiang (2010) TESOL Q | ✅ RESOLVED | Wiley / TESOL: `10.5054/tq.2010.235998` |
+| FLAG VD-14 | Durrant & Schmitt (2010) SLR | ✅ RESOLVED | SAGE Journals: `10.1177/0267658309349431` |
+| FLAG VD-16 | Mori (1998) MLJ | ✅ RESOLVED | Wiley: `10.1111/j.1540-4781.1998.tb02595.x` |
+| FLAG VD-17 | Cai (2015) JJLTA | 🗑️ RETIRED | Unverifiable print record in CiNii/J-STAGE; dipensiunkan dari korpus aktif |
+| FLAG VD-20 | Meara & Wolter (2004) Angles | ✅ RESOLVED | Verified print article: *Angles on the English Speaking World*, 4, 85–96 |
+| FLAG VD-21 | Jiang (2000) Applied Linguistics | ✅ RESOLVED | Oxford Academic: `10.1093/applin/21.1.47` |
 
 **Cross-references (tidak mendapat VD ID — sudah ada di corpus):**
 - Laufer (1998) → §CA.1

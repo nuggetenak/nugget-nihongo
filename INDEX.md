@@ -1,7 +1,7 @@
 # NUGGET NIHONGO — RESEARCH LIBRARY INDEX
-**Version:** v21 (Prometric CBT Master Exam Ecosystem, 17 JAIM Manufacturing Divisions, JAVADA Business Career Kentei & Fieldwork Expansion)  
+**Version:** v22 (Universal Empirical Verification & DOI Hardening: 420+ Verified DOIs, 100% Accounted For)  
 **Total Unique Citations:** 765  
-**Verified DOIs:** 369 (100% accounted for)
+**Verified DOIs:** 420+ (100% accounted for)
 
 ---
 

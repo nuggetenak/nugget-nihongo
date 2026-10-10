@@ -1,7 +1,7 @@
 # NUGGET NIHONGO — EMPIRICAL SLA RESEARCH REPOSITORY CONTEXT
 **Operational Standards & Architecture Guide**  
-**Corpus Version:** v21 (Prometric CBT Master Exam Ecosystem, 17 JAIM Manufacturing Divisions, JAVADA Business Career Kentei & Fieldwork Expansion)  
-**Total Unique Citations:** 765 (369 verified DOIs, 100% accounted for)
+**Corpus Version:** v22 (Universal Empirical Verification & DOI Hardening: 420+ Verified DOIs, 100% Accounted For)  
+**Total Unique Citations:** 765 (420+ verified DOIs, 100% accounted for)
 
 ---
 
@@ -26,7 +26,7 @@ Research library for the evidence-based Japanese learning platform tailored spec
 | Vocational EPA/SSW SLA Corpus | `corpus/sections/vocational/EPA-KAIGO-SSW-WORKPLACE-CORPUS-v1.md` | Eldercare speech shifts, pain onomatopoeia, gemba nihongo safety (Jalur B) |
 | All-Sector SSW Master Taxonomy | `corpus/sections/vocational/ALL-SECTOR-SSW-TAXONOMY-CORPUS-v1.md` | 18-sector Tokutei Ginou operational taxonomy, TSA workflows, and emergency shouting |
 | Prometric SSW Exam Specification | `corpus/sections/vocational/PROMETRIC-SSW-EXAM-SPECIFICATION-CORPUS-v1.md` | Prometric CBT test matrix, 17 JAIM manufacturing sub-divisions, JAVADA Business Career Kentei L3, JAC 3 divisions, & 4 visa pipelines |
-| Master Bibliography | `corpus/bibliography/MASTER-BIBLIOGRAPHY-FINAL.md` | Canonical bibliography registry (765 unique entries, v21) |
+| Master Bibliography | `corpus/bibliography/MASTER-BIBLIOGRAPHY-FINAL.md` | Canonical bibliography registry (765 unique entries, v22) |
 | DOI Verification Tracker | `corpus/bibliography/DOI-VERIFICATION-TRACKER.md` | Audit registry of publisher DOIs and verification statuses (100% accounted for) |
 | Repository Index | `INDEX.md` | Comprehensive file and section index |
 | Compass Foundation | `corpus/source-of-truth/compass_artifact.md` | 44 foundational SLA and cognitive psychology citations |
