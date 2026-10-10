@@ -133,6 +133,9 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
   // Substratum picker dropdown open state
   const [isSubstratumDropdownOpen, setIsSubstratumDropdownOpen] = useState(false);
 
+  // Mobile track picker modal state
+  const [isMobileTrackPickerOpen, setIsMobileTrackPickerOpen] = useState(false);
+
   // Track definitions metadata
   const jlptTracks: Array<{
     id: TrackId;
@@ -284,14 +287,100 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
 
   const activeSubstratumMeta = SUBSTRATUM_OPTIONS.find((s) => s.id === userSubstratum) || SUBSTRATUM_OPTIONS[0];
 
+  const activeTrackMeta = useMemo(() => {
+    return [...jlptTracks, ...sswTracks].find((t) => t.id === activeTrackId);
+  }, [activeTrackId, jlptTracks, sswTracks]);
+
   return (
-    <div className="space-y-6 sm:space-y-8 animate-in fade-in duration-300">
+    <div className="space-y-4 sm:space-y-6 animate-in fade-in duration-300">
       {/* ─────────────────────────────────────────────────────────────
-          1. TWO-TIER CATEGORY & TRACK SELECTOR
+          STREAMLINED MOBILE TRACK CARD (Mobile Only: sm:hidden)
+          Consolidates Category + Track Selector + Progress into 1 compact bar
          ───────────────────────────────────────────────────────────── */}
-      <div className="space-y-3">
-        {/* Category Switcher: JLPT vs SSW */}
-        <div className="flex items-center gap-2 p-1 bg-surface-2/80 rounded-2xl border border-accent/20 w-fit">
+      <div className="block sm:hidden bg-gradient-to-r from-surface-2 to-surface border border-accent/25 rounded-2xl p-3.5 space-y-2.5 shadow-sm">
+        <div className="flex items-center justify-between gap-2">
+          {/* Track selector button */}
+          <button
+            type="button"
+            onClick={() => setIsMobileTrackPickerOpen(true)}
+            className="flex items-center gap-2.5 min-w-0 text-left p-1 -m-1 rounded-xl active:scale-95 transition-transform"
+          >
+            <span className="text-2xl shrink-0 p-1.5 rounded-xl bg-surface-3 border border-accent/15">
+              {activeTrackMeta?.icon || '🌱'}
+            </span>
+            <div className="min-w-0">
+              <div className="flex items-center gap-1">
+                <h2 className="font-extrabold text-sm text-appText-bright truncate">
+                  {trackData?.meta?.title || `${activeTrackMeta?.title || 'Jalur N5'} · Kurikulum`}
+                </h2>
+                <ChevronDown className="w-3.5 h-3.5 text-accent shrink-0" />
+              </div>
+              <div className="text-[10px] text-appText-muted truncate">
+                {trackData?.units?.length || 0} Unit · {totalLessons} Pelajaran
+              </div>
+            </div>
+          </button>
+
+          {/* Dialect selector button */}
+          <div className="relative shrink-0">
+            <button
+              type="button"
+              onClick={() => setIsSubstratumDropdownOpen(!isSubstratumDropdownOpen)}
+              className="px-2.5 py-1.5 rounded-xl bg-surface-3 hover:bg-surface border border-accent/20 text-[11px] font-bold text-appText-bright flex items-center gap-1 active:scale-95"
+            >
+              <span>🗣️ {activeSubstratumMeta.label.split(' ')[0]}</span>
+              <ChevronDown className="w-3 h-3 text-appText-muted" />
+            </button>
+
+            {isSubstratumDropdownOpen && (
+              <div className="absolute right-0 top-full mt-2 w-64 bg-surface-2 border border-accent/30 rounded-2xl shadow-xl p-2 z-40 space-y-1 animate-in fade-in">
+                <div className="px-2 py-1 text-[10px] font-bold uppercase text-appText-muted tracking-wider border-b border-accent/15 mb-1">
+                  Pilih Substratum Bahasa
+                </div>
+                {SUBSTRATUM_OPTIONS.map((opt) => (
+                  <button
+                    key={opt.id}
+                    onClick={() => handleSelectSubstratum(opt.id)}
+                    className={`w-full min-h-[40px] p-2 rounded-xl text-left text-xs transition-colors flex items-center gap-2 active:scale-95 ${
+                      userSubstratum === opt.id
+                        ? 'bg-accent text-bg font-bold shadow-sm'
+                        : 'text-appText hover:bg-surface-3'
+                    }`}
+                  >
+                    <span>{opt.badge}</span>
+                    <span className="truncate">{opt.label}</span>
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* Progress summary & bar */}
+        <div className="space-y-1 pt-0.5">
+          <div className="flex items-center justify-between text-[10px] text-appText-muted font-medium tabular-nums">
+            <span>Kesiapan Jalur</span>
+            <span>
+              <strong className="text-accent">{progressPercent}%</strong> ({completedLessonsCount}/{totalLessons} Pelajaran)
+            </span>
+          </div>
+          <div className="w-full h-1.5 bg-surface-3 rounded-full overflow-hidden">
+            <div
+              className="h-full bg-gradient-to-r from-amber-500 to-amber-400 rounded-full transition-all duration-300"
+              style={{ width: `${progressPercent}%` }}
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* ─────────────────────────────────────────────────────────────
+          DESKTOP / TABLET CURRICULUM SELECTOR & HERO (hidden sm:block)
+         ───────────────────────────────────────────────────────────── */}
+      <div className="hidden sm:block space-y-4 sm:space-y-6">
+        {/* 1. TWO-TIER CATEGORY & TRACK SELECTOR */}
+        <div className="space-y-2.5 sm:space-y-3">
+          {/* Category Switcher: JLPT vs SSW */}
+          <div className="grid grid-cols-2 gap-1 p-1 bg-surface-2/90 rounded-2xl border border-accent/20 w-full sm:w-fit">
           <button
             onClick={() => {
               setTrackCategory('jlpt');
@@ -299,14 +388,14 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                 setActiveTrack('n5');
               }
             }}
-            className={`min-h-[44px] px-4 py-2 rounded-xl text-xs font-bold transition-colors flex items-center gap-2 active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
+            className={`min-h-[44px] px-3 sm:px-4 py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 sm:gap-2 active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
               trackCategory === 'jlpt'
                 ? 'bg-accent text-bg shadow-sm font-extrabold'
                 : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3'
             }`}
           >
             <GraduationCap className="w-4 h-4 shrink-0" />
-            <span>Jalur JLPT Akademik (N5–N1)</span>
+            <span className="truncate">Jalur JLPT Akademik (N5–N1)</span>
           </button>
 
           <button
@@ -316,19 +405,19 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                 setActiveTrack('ssw-kaigo');
               }
             }}
-            className={`min-h-[44px] px-4 py-2 rounded-xl text-xs font-bold transition-colors flex items-center gap-2 active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
+            className={`min-h-[44px] px-3 sm:px-4 py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 sm:gap-2 active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
               trackCategory === 'ssw'
                 ? 'bg-accent text-bg shadow-sm font-extrabold'
                 : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3'
             }`}
           >
             <Briefcase className="w-4 h-4 shrink-0" />
-            <span>Jalur Kerja SSW Vokasional</span>
+            <span className="truncate">Jalur Kerja SSW Vokasional</span>
           </button>
         </div>
 
         {/* Track Pills: Horizontal Scroll with Touch Targets >= 44px */}
-        <div className="flex items-center gap-2 overflow-x-auto scrollbar-none pb-1 max-w-full">
+        <div className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto scrollbar-none pb-1 max-w-full">
           {trackCategory === 'jlpt' ? (
             jlptTracks.map((trk) => {
               const isSelected = activeTrackId === trk.id;
@@ -339,16 +428,16 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                 <button
                   key={trk.id}
                   onClick={() => setActiveTrack(trk.id)}
-                  className={`min-h-[44px] px-3.5 sm:px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-colors border flex items-center gap-2 shrink-0 active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
+                  className={`min-h-[44px] px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-colors border flex items-center gap-1.5 sm:gap-2 shrink-0 active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
                     isSelected
                       ? 'bg-amber-500 text-bg border-amber-500 shadow-md font-extrabold'
                       : 'bg-surface-2 border-accent/20 text-appText-muted hover:text-appText-bright hover:border-accent/40'
                   }`}
                 >
-                  <span className="text-sm">{trk.icon}</span>
+                  <span className="text-sm sm:text-base">{trk.icon}</span>
                   <div className="text-left">
-                    <div className="leading-tight">{trk.title}</div>
-                    <div className="text-[10px] opacity-80 font-normal tabular-nums">
+                    <div className="leading-tight text-xs font-bold">{trk.title}</div>
+                    <div className="text-[10px] opacity-80 font-normal tabular-nums hidden sm:block">
                       {trk.units} · {completedCount > 0 ? `${completedCount} selesai` : trk.grammarCount}
                     </div>
                   </div>
@@ -365,16 +454,16 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                 <button
                   key={trk.id}
                   onClick={() => setActiveTrack(trk.id)}
-                  className={`min-h-[44px] px-3.5 sm:px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-colors border flex items-center gap-2.5 shrink-0 active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
+                  className={`min-h-[44px] px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-colors border flex items-center gap-2 shrink-0 active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
                     isSelected
                       ? 'bg-amber-500 text-bg border-amber-500 shadow-md font-extrabold'
                       : 'bg-surface-2 border-accent/20 text-appText-muted hover:text-appText-bright hover:border-accent/40'
                   }`}
                 >
-                  <span className="text-base">{trk.icon}</span>
+                  <span className="text-sm sm:text-base">{trk.icon}</span>
                   <div className="text-left">
-                    <div className="leading-tight">{trk.title}</div>
-                    <div className="text-[10px] opacity-80 font-normal tabular-nums">
+                    <div className="leading-tight text-xs font-bold">{trk.title}</div>
+                    <div className="text-[10px] opacity-80 font-normal tabular-nums hidden sm:block">
                       {trk.units} {completedCount > 0 ? `· ${completedCount} selesai` : ''}
                     </div>
                   </div>
@@ -386,64 +475,64 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
       </div>
 
       {/* ─────────────────────────────────────────────────────────────
-          2. TRACK HERO & MASTER PROGRESS DASHBOARD
+          2. TRACK HERO & MASTER PROGRESS DASHBOARD (Mobile Zen Layout)
          ───────────────────────────────────────────────────────────── */}
-      <div className="bg-gradient-to-br from-surface-2 via-surface to-surface-2 border border-accent/25 rounded-3xl p-5 sm:p-7 space-y-5 shadow-sm relative overflow-hidden">
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-          <div className="space-y-1.5 max-w-2xl min-w-0">
-            <div className="flex flex-wrap items-center gap-2">
-              <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-amber-500/15 border border-amber-500/30 text-accent-hot text-[11px] font-extrabold uppercase tracking-wide">
+      <div className="bg-gradient-to-br from-surface-2 via-surface to-surface-2 border border-accent/25 rounded-2xl sm:rounded-3xl p-4 sm:p-7 space-y-3.5 sm:space-y-5 shadow-sm relative overflow-hidden">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-3 sm:gap-4">
+          <div className="space-y-1 sm:space-y-1.5 max-w-2xl min-w-0">
+            <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
+              <span className="inline-flex items-center gap-1 px-2 sm:px-2.5 py-0.5 rounded-full bg-amber-500/15 border border-amber-500/30 text-accent-hot text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wide">
                 <Sparkles className="w-3 h-3" />
                 {trackCategory === 'jlpt' ? 'Kurikulum Orisinal Nugget Nihongo' : 'Standar Kompetensi Kerja Jepang (SSW)'}
               </span>
-              <span className="px-2 py-0.5 rounded-md bg-surface-3 text-appText-muted text-[10px] font-mono border border-accent/15 tabular-nums">
+              <span className="px-1.5 sm:px-2 py-0.5 rounded-md bg-surface-3 text-appText-muted text-[10px] font-mono border border-accent/15 tabular-nums">
                 {trackData?.units?.length || 0} Unit · {totalLessons} Pelajaran
               </span>
             </div>
 
-            <h2 className="text-xl sm:text-2xl font-black text-appText-bright tracking-tight break-words">
+            <h2 className="text-lg sm:text-2xl font-black text-appText-bright tracking-tight break-words">
               {trackData?.meta?.title || 'Memuat Kurikulum…'}
             </h2>
 
-            <p className="text-xs sm:text-sm text-appText-muted leading-relaxed break-words">
+            <p className="text-xs sm:text-sm text-appText-muted leading-relaxed break-words line-clamp-2 sm:line-clamp-none hidden sm:block">
               {trackCategory === 'jlpt'
                 ? 'Jalur belajar bertahap yang diorkestrasi menggunakan Processability Theory (Pienemann) dan Analisis Kontrasif L1 Bahasa Indonesia untuk menjamin pemahaman alami tanpa salah kaprah.'
                 : 'Kurikulum vokasional berbasis skenario kerja nyata: protokol keselamatan K3 Gemba, komunikasi Koe-kake lansia, standar HACCP, dan pelaporan SBAR baku kepada penyelia Jepang.'}
             </p>
           </div>
 
-          {/* Quick Stats Pill Block */}
-          <div className="flex items-center gap-3 bg-surface-3/90 border border-accent/20 rounded-2xl p-3.5 self-start md:self-auto shrink-0 shadow-inner">
+          {/* Quick Stats Pill Block (Desktop/Tablet) */}
+          <div className="hidden md:flex items-center gap-3 bg-surface-3/90 border border-accent/20 rounded-2xl p-3.5 shrink-0 shadow-inner">
             <div className="text-center px-2">
               <div className="text-[10px] text-appText-muted font-medium uppercase tracking-wider">Progres</div>
-              <div className="text-lg sm:text-xl font-black text-accent tabular-nums">
+              <div className="text-xl font-black text-accent tabular-nums">
                 {progressPercent}%
               </div>
             </div>
             <div className="w-px h-8 bg-accent/20" />
             <div className="text-center px-2">
               <div className="text-[10px] text-appText-muted font-medium uppercase tracking-wider">Tuntas</div>
-              <div className="text-lg sm:text-xl font-black text-appText-bright tabular-nums">
+              <div className="text-xl font-black text-appText-bright tabular-nums">
                 {completedLessonsCount}/{totalLessons}
               </div>
             </div>
             <div className="w-px h-8 bg-accent/20" />
             <div className="text-center px-2">
               <div className="text-[10px] text-appText-muted font-medium uppercase tracking-wider">Akurasi</div>
-              <div className="text-lg sm:text-xl font-black text-emerald-400 tabular-nums">
+              <div className="text-xl font-black text-emerald-400 tabular-nums">
                 {averageScore}%
               </div>
             </div>
           </div>
         </div>
 
-        {/* Visual Progress Bar */}
-        <div className="space-y-1.5">
+        {/* Visual Progress Bar & Summary */}
+        <div className="space-y-1">
           <div className="flex items-center justify-between text-[11px] text-appText-muted font-medium tabular-nums">
             <span>Kesiapan Jalur</span>
-            <span>{progressPercent}% Selesai ({completedLessonsCount} dari {totalLessons} Pelajaran)</span>
+            <span>{progressPercent}% Selesai ({completedLessonsCount}/{totalLessons} Pelajaran · Akurasi {averageScore}%)</span>
           </div>
-          <div className="w-full h-2.5 bg-surface-3 rounded-full overflow-hidden p-0.5 border border-accent/15">
+          <div className="w-full h-2 sm:h-2.5 bg-surface-3 rounded-full overflow-hidden p-0.5 border border-accent/15">
             <div
               className="h-full bg-gradient-to-r from-amber-500 to-amber-400 rounded-full transition-[width] duration-500 ease-out"
               style={{ width: `${progressPercent}%` }}
@@ -452,32 +541,32 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
         </div>
 
         {/* ─────────────────────────────────────────────────────────────
-            3. L1 SUBSTRATUM DIALECT SELECTOR BANNER
+            3. L1 SUBSTRATUM DIALECT SELECTOR BANNER (Sleek Compact Bar)
            ───────────────────────────────────────────────────────────── */}
-        <div className="bg-surface/90 border border-amber-500/30 rounded-2xl p-3.5 sm:p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
-          <div className="flex items-start gap-3 min-w-0">
-            <span className="text-xl p-2 rounded-xl bg-amber-500/15 text-accent-hot shrink-0">
+        <div className="bg-surface/90 border border-amber-500/30 rounded-xl sm:rounded-2xl p-2.5 sm:p-4 flex items-center justify-between gap-2.5 text-xs">
+          <div className="flex items-center gap-2 sm:gap-3 min-w-0">
+            <span className="text-base sm:text-xl p-1.5 sm:p-2 rounded-lg sm:rounded-xl bg-amber-500/15 text-accent-hot shrink-0">
               🗣️
             </span>
             <div className="min-w-0">
-              <div className="flex items-center gap-2">
-                <span className="font-extrabold text-appText-bright">
+              <div className="flex items-center gap-1.5">
+                <span className="font-extrabold text-appText-bright truncate text-xs sm:text-sm">
                   Dialek L1: {activeSubstratumMeta.label}
                 </span>
-                <span className="px-2 py-0.2 rounded-full bg-amber-500/20 text-accent font-bold text-[10px]">
+                <span className="px-1.5 py-0.2 rounded-full bg-amber-500/20 text-accent font-bold text-[9px] sm:text-[10px] shrink-0">
                   Aktif
                 </span>
               </div>
-              <p className="text-[11px] text-appText-muted mt-0.5 leading-normal break-words">
+              <p className="text-[10px] sm:text-[11px] text-appText-muted mt-0.5 leading-normal truncate hidden sm:block">
                 {activeSubstratumMeta.desc}
               </p>
             </div>
           </div>
 
-          <div className="relative shrink-0 self-end sm:self-auto">
+          <div className="relative shrink-0">
             <button
               onClick={() => setIsSubstratumDropdownOpen(!isSubstratumDropdownOpen)}
-              className="min-h-[44px] px-3.5 py-2 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/25 text-appText-bright font-bold text-xs flex items-center gap-1.5 transition-colors active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none"
+              className="min-h-[40px] sm:min-h-[44px] px-3 sm:px-3.5 py-1.5 sm:py-2 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/25 text-appText-bright font-bold text-xs flex items-center gap-1.5 transition-colors active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none"
               aria-expanded={isSubstratumDropdownOpen}
               aria-haspopup="listbox"
             >
@@ -519,31 +608,26 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
           </div>
         </div>
       </div>
+      </div>
 
       {/* ─────────────────────────────────────────────────────────────
-          4. PROCESSABILITY THEORY STAGE ROADMAP RIBBON
+          4. PROCESSABILITY THEORY STAGE ROADMAP RIBBON (Desktop/Tablet)
          ───────────────────────────────────────────────────────────── */}
       {trackCategory === 'jlpt' && (
-        <div className="space-y-2">
-          <div className="flex items-center justify-between">
-            <div className="text-xs font-bold text-appText-bright flex items-center gap-1.5">
+        <div className="hidden sm:block space-y-2">
+          <div className="flex items-center justify-between text-xs">
+            <div className="font-bold text-appText-bright flex items-center gap-1.5">
               <span>Tangga Perkembangan Bahasa (Processability Theory)</span>
               <span className="text-[10px] px-1.5 py-0.5 rounded bg-surface-3 text-appText-muted font-normal">
                 Pienemann
               </span>
             </div>
-            <button
-              onClick={handleToggleAllUnits}
-              className="text-[11px] font-bold text-accent hover:underline active:scale-95 focus-visible:ring-1 focus-visible:ring-amber-500 rounded p-1"
-            >
-              Buka/Tutup Semua Unit
-            </button>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2">
+          {/* Desktop 6-stage roadmap grid */}
+          <div className="grid sm:grid-cols-3 lg:grid-cols-6 gap-2">
             {[1, 2, 3, 4, 5, 6].map((stageNum) => {
               const info = PT_STAGE_NAMES[stageNum];
-              // Check if current track contains units with this stage
               const hasUnitsInTrack = trackData?.units?.some((u) => u.pt_stage === stageNum);
 
               return (
@@ -571,6 +655,17 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
       {/* ─────────────────────────────────────────────────────────────
           5. UNITS & LESSONS HIERARCHICAL ACCORDION
          ───────────────────────────────────────────────────────────── */}
+      <div className="flex items-center justify-between pt-1">
+        <h3 className="text-xs font-bold uppercase tracking-wider text-appText-muted">
+          Daftar Unit & Pelajaran
+        </h3>
+        <button
+          onClick={handleToggleAllUnits}
+          className="text-xs font-bold text-accent hover:underline active:scale-95 focus-visible:ring-1 focus-visible:ring-amber-500 rounded px-2 py-1"
+        >
+          Buka / Tutup Semua
+        </button>
+      </div>
       {isLoading ? (
         <div className="py-16 text-center space-y-3">
           <div className="w-10 h-10 border-2 border-accent border-t-transparent rounded-full animate-spin mx-auto" />
@@ -879,6 +974,143 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
               </div>
             );
           })}
+        </div>
+      )}
+
+      {/* ─────────────────────────────────────────────────────────────
+          MOBILE TRACK PICKER BOTTOM SHEET MODAL
+         ───────────────────────────────────────────────────────────── */}
+      {isMobileTrackPickerOpen && (
+        <div
+          className="fixed inset-0 z-50 bg-black/75 backdrop-blur-sm flex items-end sm:items-center justify-center p-0 sm:p-4 animate-in fade-in duration-200"
+          onClick={() => setIsMobileTrackPickerOpen(false)}
+        >
+          <div
+            className="w-full sm:max-w-md bg-surface-2 border border-accent/25 rounded-t-3xl sm:rounded-3xl p-4 sm:p-6 space-y-4 max-h-[85vh] overflow-y-auto animate-in slide-in-from-bottom duration-200"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Pilih Jalur Kurikulum"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Modal Header */}
+            <div className="flex items-center justify-between pb-2 border-b border-accent/15">
+              <div className="flex items-center gap-2">
+                <span className="text-lg">📚</span>
+                <span className="font-extrabold text-sm text-appText-bright">Pilih Jalur Kurikulum</span>
+              </div>
+              <button
+                type="button"
+                onClick={() => setIsMobileTrackPickerOpen(false)}
+                className="w-8 h-8 rounded-full bg-surface-3 hover:bg-surface text-appText-muted hover:text-appText-bright flex items-center justify-center text-xs font-bold active:scale-95"
+                aria-label="Tutup"
+              >
+                ✕
+              </button>
+            </div>
+
+            {/* Category Switcher in Modal */}
+            <div className="grid grid-cols-2 gap-1 p-1 bg-surface rounded-xl border border-accent/15">
+              <button
+                type="button"
+                onClick={() => setTrackCategory('jlpt')}
+                className={`py-2 px-3 rounded-lg text-xs font-bold transition-all min-h-[40px] ${
+                  trackCategory === 'jlpt'
+                    ? 'bg-accent text-bg shadow-sm font-extrabold'
+                    : 'text-appText-muted hover:text-appText-bright'
+                }`}
+              >
+                JLPT (N5–N1)
+              </button>
+              <button
+                type="button"
+                onClick={() => setTrackCategory('ssw')}
+                className={`py-2 px-3 rounded-lg text-xs font-bold transition-all min-h-[40px] ${
+                  trackCategory === 'ssw'
+                    ? 'bg-accent text-bg shadow-sm font-extrabold'
+                    : 'text-appText-muted hover:text-appText-bright'
+                }`}
+              >
+                SSW Vokasional
+              </button>
+            </div>
+
+            {/* Track Options Grid */}
+            <div className="space-y-2">
+              {trackCategory === 'jlpt' ? (
+                jlptTracks.map((trk) => {
+                  const isSelected = activeTrackId === trk.id;
+                  const stats = trackProgress[trk.id];
+                  const completedCount = stats?.completedLessons?.length || 0;
+                  return (
+                    <button
+                      key={trk.id}
+                      type="button"
+                      onClick={() => {
+                        setActiveTrack(trk.id);
+                        setIsMobileTrackPickerOpen(false);
+                      }}
+                      className={`w-full p-3 rounded-xl border text-left flex items-center justify-between gap-3 transition-colors min-h-[52px] active:scale-98 ${
+                        isSelected
+                          ? 'bg-amber-500/15 border-amber-500 text-appText-bright font-bold ring-1 ring-amber-500'
+                          : 'bg-surface hover:bg-surface-3 border-accent/15 text-appText'
+                      }`}
+                    >
+                      <div className="flex items-center gap-2.5 min-w-0">
+                        <span className="text-xl shrink-0">{trk.icon}</span>
+                        <div className="min-w-0">
+                          <div className="font-bold text-xs text-appText-bright">{trk.title}</div>
+                          <div className="text-[10px] text-appText-muted">{trk.level} · {trk.units}</div>
+                        </div>
+                      </div>
+                      <div className="text-right shrink-0">
+                        {completedCount > 0 ? (
+                          <span className="text-[10px] text-emerald-400 font-bold">{completedCount} tuntas</span>
+                        ) : (
+                          <span className="text-[10px] text-appText-muted">{trk.grammarCount}</span>
+                        )}
+                      </div>
+                    </button>
+                  );
+                })
+              ) : (
+                sswTracks.map((trk) => {
+                  const isSelected = activeTrackId === trk.id;
+                  const stats = trackProgress[trk.id];
+                  const completedCount = stats?.completedLessons?.length || 0;
+                  return (
+                    <button
+                      key={trk.id}
+                      type="button"
+                      onClick={() => {
+                        setActiveTrack(trk.id);
+                        setIsMobileTrackPickerOpen(false);
+                      }}
+                      className={`w-full p-3 rounded-xl border text-left flex items-center justify-between gap-3 transition-colors min-h-[52px] active:scale-98 ${
+                        isSelected
+                          ? 'bg-amber-500/15 border-amber-500 text-appText-bright font-bold ring-1 ring-amber-500'
+                          : 'bg-surface hover:bg-surface-3 border-accent/15 text-appText'
+                      }`}
+                    >
+                      <div className="flex items-center gap-2.5 min-w-0">
+                        <span className="text-xl shrink-0">{trk.icon}</span>
+                        <div className="min-w-0">
+                          <div className="font-bold text-xs text-appText-bright">{trk.title}</div>
+                          <div className="text-[10px] text-appText-muted">{trk.sector}</div>
+                        </div>
+                      </div>
+                      <div className="text-right shrink-0">
+                        {completedCount > 0 ? (
+                          <span className="text-[10px] text-emerald-400 font-bold">{completedCount} tuntas</span>
+                        ) : (
+                          <span className="text-[10px] text-appText-muted">{trk.units}</span>
+                        )}
+                      </div>
+                    </button>
+                  );
+                })
+              )}
+            </div>
+          </div>
         </div>
       )}
     </div>

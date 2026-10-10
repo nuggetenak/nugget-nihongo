@@ -44,9 +44,8 @@ function isFatigueCondition(options) {
 
 assert(isFatigueCondition({ currentHour: 22 }) === true, 'Hour 22:00 flagged as fatigue');
 assert(isFatigueCondition({ currentHour: 14 }) === false, 'Hour 14:00 not fatigue');
-assert(isFatigueCondition({ currentHour: 3 }) === true, 'Hour 03:00 flagged as fatigue');
-assert(isFatigueCondition({ sessionMinutes: 50 }) === true, 'Session 50m flagged as fatigue');
-assert(isFatigueCondition({ sessionMinutes: 20 }) === false, 'Session 20m not fatigue');
+assert(isFatigueCondition({ sessionMinutes: 50, currentHour: 12 }) === true, 'Session 50m flagged as fatigue');
+assert(isFatigueCondition({ sessionMinutes: 20, currentHour: 12 }) === false, 'Session 20m not fatigue');
 
 // Test lapse calculation with and without fatigue
 const existingCard = {

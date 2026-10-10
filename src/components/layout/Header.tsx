@@ -53,7 +53,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onOpenShortcuts, o
           type="text"
           readOnly
           onClick={onOpenSearch}
-          placeholder="Cari kanji, kosakata, pola tata bahasa..."
+          placeholder="Cari materi, kanji, pola..."
           className="w-full bg-surface-2 border border-accent/20 rounded-xl pl-9 pr-12 py-2 text-xs md:text-sm text-appText-bright placeholder-appText-muted/60 focus:outline-none focus:border-accent cursor-pointer transition-all"
         />
         <kbd className="hidden sm:inline-block absolute right-2.5 top-1/2 -translate-y-1/2 text-[10px] font-mono bg-surface-3/80 text-appText-muted px-1.5 py-0.5 rounded border border-accent/15">

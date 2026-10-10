@@ -79,8 +79,32 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Chapter Selector Sidebar */}
-          <div className="bg-surface border border-accent/20 rounded-2xl p-4 space-y-2 max-h-[500px] overflow-y-auto">
+          {/* Chapter Selector (Mobile Horizontal Carousel) */}
+          <div className="md:hidden space-y-1.5">
+            <div className="text-xs font-bold text-appText-bright">Pilih Bab Pelajaran:</div>
+            <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-none pb-1">
+              {availableChapters.map((ch) => {
+                const u = bookData?.units[ch];
+                const isSelected = selectedChapter === ch;
+                return (
+                  <button
+                    key={ch}
+                    onClick={() => setSelectedChapter(ch)}
+                    className={`min-h-[40px] px-3 py-1.5 rounded-xl text-xs font-bold shrink-0 transition-all active:scale-95 ${
+                      isSelected
+                        ? 'bg-accent text-bg shadow-sm font-extrabold'
+                        : 'bg-surface-2 border border-accent/20 text-appText-muted hover:text-appText-bright'
+                    }`}
+                  >
+                    Bab {ch}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Chapter Selector Sidebar (Desktop/Tablet) */}
+          <div className="hidden md:block bg-surface border border-accent/20 rounded-2xl p-4 space-y-2 max-h-[500px] overflow-y-auto">
             <div className="text-xs font-bold text-appText-bright border-b border-accent/15 pb-2">
               Daftar Bab / Bab Pelajaran:
             </div>

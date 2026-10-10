@@ -149,20 +149,20 @@ export const MateriHubPage: React.FC = () => {
   }, [grammarList, searchQuery, selectedParticle]);
 
   return (
-    <div className="max-w-5xl mx-auto py-6 space-y-6 sm:space-y-7 animate-in fade-in duration-300">
-      {/* Header and Quick Tools */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-        <div>
-          <h1 className="text-2xl sm:text-3xl font-extrabold text-appText-bright mb-1 tracking-tight">
-            Materi Hub · 学習ハブ
+    <div className="max-w-5xl mx-auto py-3 sm:py-6 space-y-4 sm:space-y-7 animate-in fade-in duration-300">
+      {/* Header and Quick Tools: Consolidated single-row on mobile */}
+      <div className="flex items-center justify-between gap-2 sm:gap-4">
+        <div className="min-w-0">
+          <h1 className="text-lg sm:text-3xl font-extrabold text-appText-bright tracking-tight truncate">
+            Materi Hub <span className="text-xs sm:text-base font-normal text-appText-muted">· 学習ハブ</span>
           </h1>
-          <p className="text-xs sm:text-sm text-appText-muted">
+          <p className="text-xs sm:text-sm text-appText-muted mt-0.5 hidden sm:block">
             Eksplor 4.800+ kosakata dan 850+ tata bahasa lengkap dengan audio pelafalan asli.
           </p>
         </div>
 
-        {/* Floating Quick Study Tools (Desktop/Tablet: available in MobileDrawer on phones) */}
-        <div className="hidden sm:flex flex-wrap items-center gap-2 shrink-0 self-start sm:self-auto">
+        {/* Quick Tools Ribbon (Desktop/Tablet) */}
+        <div className="hidden sm:flex flex-wrap items-center gap-2 shrink-0">
           <button
             onClick={() => setIsKanaOpen(true)}
             className="px-3.5 py-2 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/35 text-accent-hot text-xs font-bold transition-all flex items-center gap-1.5 shadow-sm active:scale-95"
@@ -185,56 +185,92 @@ export const MateriHubPage: React.FC = () => {
             <span>⚖️</span>
           </button>
         </div>
+
+        {/* Quick Tools Compact Icons (Mobile phones: sleek 36px icon buttons) */}
+        <div className="flex sm:hidden items-center gap-1.5 shrink-0">
+          <button
+            onClick={() => setIsKanaOpen(true)}
+            title="Tabel Kana"
+            aria-label="Tabel Kana"
+            className="h-8 px-2 rounded-xl bg-amber-500/15 border border-amber-500/30 text-accent-hot text-[11px] font-extrabold flex items-center gap-1 active:scale-95"
+          >
+            <span>あ</span>
+          </button>
+          <button
+            onClick={() => setIsConjugationOpen(true)}
+            title="Konjugasi Verba"
+            aria-label="Konjugasi Verba"
+            className="w-8 h-8 rounded-xl bg-surface-2 border border-accent/20 text-appText-bright text-xs flex items-center justify-center active:scale-95"
+          >
+            🔄
+          </button>
+          <button
+            onClick={() => setIsNuanceOpen(true)}
+            title="Inspektor Nuansa"
+            aria-label="Inspektor Nuansa"
+            className="w-8 h-8 rounded-xl bg-surface-2 border border-accent/20 text-appText-bright text-xs flex items-center justify-center active:scale-95"
+          >
+            ⚖️
+          </button>
+        </div>
       </div>
 
-      {/* Streamlined Segmented Track Switcher */}
-      <div className="flex items-center gap-1.5 sm:gap-2 p-1.5 bg-surface rounded-2xl border border-accent/20 overflow-x-auto scrollbar-none shadow-sm max-w-full">
+      {/* Robust 4-Column Responsive Segmented Track Switcher (Zero Collision) */}
+      <div className="grid grid-cols-4 gap-1 p-1 bg-surface rounded-2xl border border-accent/20 shadow-sm">
         <button
           onClick={() => setActiveTrack('kurikulum')}
-          className={`flex-1 min-w-0 sm:min-w-[150px] py-2 sm:py-2.5 px-2.5 sm:px-3 rounded-xl text-xs font-bold transition-colors flex items-center justify-center gap-1.5 sm:gap-2 whitespace-nowrap shrink-0 sm:shrink min-h-[44px] active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
+          className={`py-2 px-1 sm:px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1 sm:gap-2 min-h-[44px] active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
             activeTrack === 'kurikulum'
               ? 'bg-accent text-bg shadow-sm font-extrabold'
               : 'text-appText-muted hover:text-appText-bright hover:bg-surface-2'
           }`}
         >
-          <Sparkles className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0 text-accent-hot" />
-          <span>Kurikulum Orisinal</span>
+          <Sparkles className="w-3.5 h-3.5 shrink-0 text-accent-hot" />
+          <span className="truncate">
+            Kurikulum<span className="hidden sm:inline"> Orisinal</span>
+          </span>
         </button>
 
         <button
           onClick={() => setActiveTrack('jlpt')}
-          className={`flex-1 min-w-0 sm:min-w-[130px] py-2 sm:py-2.5 px-2.5 sm:px-3 rounded-xl text-xs font-bold transition-colors flex items-center justify-center gap-1.5 sm:gap-2 whitespace-nowrap shrink-0 sm:shrink min-h-[44px] active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
+          className={`py-2 px-1 sm:px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1 sm:gap-2 min-h-[44px] active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
             activeTrack === 'jlpt'
               ? 'bg-accent text-bg shadow-sm font-extrabold'
               : 'text-appText-muted hover:text-appText-bright hover:bg-surface-2'
           }`}
         >
-          <Award className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
-          <span>Indeks JLPT</span>
+          <Award className="w-3.5 h-3.5 shrink-0" />
+          <span className="truncate">
+            <span className="hidden sm:inline">Indeks </span>JLPT
+          </span>
         </button>
 
         <button
           onClick={() => setActiveTrack('buku')}
-          className={`flex-1 min-w-0 sm:min-w-[120px] py-2 sm:py-2.5 px-2.5 sm:px-3 rounded-xl text-xs font-bold transition-colors flex items-center justify-center gap-1.5 sm:gap-2 whitespace-nowrap shrink-0 sm:shrink min-h-[44px] active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
+          className={`py-2 px-1 sm:px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1 sm:gap-2 min-h-[44px] active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
             activeTrack === 'buku'
               ? 'bg-accent text-bg shadow-sm font-extrabold'
               : 'text-appText-muted hover:text-appText-bright hover:bg-surface-2'
           }`}
         >
-          <BookMarked className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
-          <span>Buku Teks</span>
+          <BookMarked className="w-3.5 h-3.5 shrink-0" />
+          <span className="truncate">
+            Buku<span className="hidden sm:inline"> Teks</span>
+          </span>
         </button>
 
         <button
           onClick={() => setActiveTrack('freeway')}
-          className={`flex-1 min-w-0 sm:min-w-[120px] py-2 sm:py-2.5 px-2.5 sm:px-3 rounded-xl text-xs font-bold transition-colors flex items-center justify-center gap-1.5 sm:gap-2 whitespace-nowrap shrink-0 sm:shrink min-h-[44px] active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
+          className={`py-2 px-1 sm:px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1 sm:gap-2 min-h-[44px] active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
             activeTrack === 'freeway'
               ? 'bg-accent text-bg shadow-sm font-extrabold'
               : 'text-appText-muted hover:text-appText-bright hover:bg-surface-2'
           }`}
         >
-          <span className="shrink-0">🛣️</span>
-          <span>Freeway (0 Nol)</span>
+          <span className="shrink-0 text-xs">🛣️</span>
+          <span className="truncate">
+            Freeway<span className="hidden sm:inline"> (0 Nol)</span>
+          </span>
         </button>
       </div>
 

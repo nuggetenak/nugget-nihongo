@@ -140,7 +140,7 @@ async function runVerification() {
       pass(`Kurikulum Orisinal tab button is rendered and visible`);
 
       // 5. Verify Curriculum Track Hero & Statistics
-      const trackTitle = page.locator('h2:has-text("Kurikulum")');
+      const trackTitle = page.locator('h2:has-text("Kurikulum")').locator('visible=true').first();
       await trackTitle.waitFor({ state: 'visible', timeout: 5000 });
       const trackTitleText = await trackTitle.textContent();
       pass(`Active track rendered: "${trackTitleText?.trim()}"`);
@@ -175,36 +175,69 @@ async function runVerification() {
       pass(`Anti-leakage: 0px horizontal overflow on Materi Hub (${vp.name})`);
 
       // 8. Test SSW Vocational Track Switcher
-      const sswCategoryBtn = page.locator('button:has-text("Jalur Kerja SSW Vokasional")');
-      await sswCategoryBtn.click();
-      await page.waitForTimeout(500);
+      if (vp.isMobile) {
+        // On mobile: Open the mobile track picker bottom sheet
+        const mobileTrackBtn = page.locator('div.block.sm\\:hidden button').first();
+        await mobileTrackBtn.click();
+        await page.waitForTimeout(300);
 
-      const sswKaigoPill = page.locator('button:has-text("SSW Keperawatan Lansia")');
-      await sswKaigoPill.waitFor({ state: 'visible', timeout: 5000 });
-      pass(`SSW Vocational category opened, Kaigo track visible`);
+        // Click SSW Vokasional tab in bottom sheet
+        const sswTab = page.locator('div[role="dialog"] button:has-text("SSW Vokasional")');
+        await sswTab.click();
+        await page.waitForTimeout(300);
 
-      // Click SSW Food track
-      const sswFoodPill = page.locator('button:has-text("SSW Pengolahan")');
-      await sswFoodPill.click();
-      await page.waitForTimeout(600);
+        // Select SSW Pengolahan track
+        const sswFoodPill = page.locator('div[role="dialog"] button:has-text("SSW Pengolahan")');
+        await sswFoodPill.click();
+        await page.waitForTimeout(600);
 
-      const foodHeading = page.locator('h2:has-text("SSW Pengolahan")');
-      await foodHeading.waitFor({ state: 'visible', timeout: 5000 });
-      pass(`SSW Food Service & Processing track loaded successfully`);
+        const foodHeading = page.locator('h2:has-text("SSW Pengolahan")').locator('visible=true').first();
+        await foodHeading.waitFor({ state: 'visible', timeout: 5000 });
+        pass(`SSW Food Service & Processing track loaded successfully (mobile modal)`);
+      } else {
+        const sswCategoryBtn = page.locator('button:has-text("Jalur Kerja SSW Vokasional")');
+        await sswCategoryBtn.click();
+        await page.waitForTimeout(500);
+
+        const sswKaigoPill = page.locator('button:has-text("SSW Keperawatan Lansia")').locator('visible=true').first();
+        await sswKaigoPill.waitFor({ state: 'visible', timeout: 5000 });
+        pass(`SSW Vocational category opened, Kaigo track visible`);
+
+        // Click SSW Food track
+        const sswFoodPill = page.locator('button:has-text("SSW Pengolahan")').locator('visible=true').first();
+        await sswFoodPill.click();
+        await page.waitForTimeout(600);
+
+        const foodHeading = page.locator('h2:has-text("SSW Pengolahan")').locator('visible=true').first();
+        await foodHeading.waitFor({ state: 'visible', timeout: 5000 });
+        pass(`SSW Food Service & Processing track loaded successfully`);
+      }
 
       // 9. Test Substratum Dialect Switcher
-      const switchSubBtn = page.locator('button:has-text("Ganti Dialek")').first();
-      await switchSubBtn.click();
-      await page.waitForTimeout(300);
+      if (vp.isMobile) {
+        const switchSubBtn = page.locator('div.block.sm\\:hidden button:has-text("🗣️")');
+        await switchSubBtn.click();
+        await page.waitForTimeout(300);
 
-      const jawaOption = page.locator('button:has-text("Substratum Jawa")').first();
-      await jawaOption.waitFor({ state: 'visible', timeout: 3000 });
-      await jawaOption.click();
-      await page.waitForTimeout(300);
+        const jawaOption = page.locator('button:has-text("Substratum Jawa")').first();
+        await jawaOption.waitFor({ state: 'visible', timeout: 3000 });
+        await jawaOption.click();
+        await page.waitForTimeout(300);
+        pass(`Substratum dynamically switched to Substratum Jawa (mobile)`);
+      } else {
+        const switchSubBtn = page.locator('button:has-text("Ganti Dialek")').first();
+        await switchSubBtn.click();
+        await page.waitForTimeout(300);
 
-      const activeDialectText = page.locator('text=Dialek L1: Substratum Jawa');
-      await activeDialectText.waitFor({ state: 'visible', timeout: 3000 });
-      pass(`Substratum dynamically switched to Substratum Jawa`);
+        const jawaOption = page.locator('button:has-text("Substratum Jawa")').locator('visible=true').first();
+        await jawaOption.waitFor({ state: 'visible', timeout: 3000 });
+        await jawaOption.click();
+        await page.waitForTimeout(300);
+
+        const activeDialectText = page.locator('text=Dialek L1: Substratum Jawa');
+        await activeDialectText.waitFor({ state: 'visible', timeout: 3000 });
+        pass(`Substratum dynamically switched to Substratum Jawa`);
+      }
 
       // 10. Navigate to Settings Page and verify L1 Dialect preferences
       if (isBottomNav) {
