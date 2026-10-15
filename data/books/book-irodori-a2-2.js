@@ -29,7 +29,6 @@ window.bookIrodoriA22 = {
         'vg-n5-00491', // 社員 — karyawan
         'vg-n5-00093', // 先生 — guru
         'vg-n4-00278', // アルバイト — kerja paruh waktu
-        'vg-n5-00093', // 先生 — guru
         'vg-n4-00057', // 会議 — rapat, konferensi
         'vg-n4-00113', // 連絡 — kontak, menghubungi
         'vg-n4-00668', // 連絡する — menghubungi
@@ -374,5 +373,3 @@ window.bookIrodoriA22 = {
     },
   },
 };
-
-window.bookIrodoriA2_2 = window.bookIrodoriA22;

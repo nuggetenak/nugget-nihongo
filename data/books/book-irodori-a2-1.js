@@ -202,7 +202,6 @@ window.bookIrodoriA21 = {
         'vg-n4-00042', // 海 — laut
         'vg-n5-00132', // 川 — sungai
         'vg-n5-00133', // 花 — bunga
-        'vg-n5-00133', // 花 — bunga
         'vg-n5-00134', // 雨 — hujan
         'vg-n5-00135', // 雪 — salju
         'vg-n4-00038', // 台風 — topan, taifun
@@ -219,7 +218,6 @@ window.bookIrodoriA21 = {
       topic      : "どのくらいかかりますか — Waktu dan Biaya (かつどう)",
       topic_id   : 6,
       vocab_ids  : [
-        'vg-n5-00094', // 時間 — waktu; jam (durasi)
         'vg-n5-00094', // 時間 — waktu; jam (durasi)
         'vg-n5-00099', // お金 — uang
         'vg-n5-00180', // かかる — membutuhkan (waktu/biaya)
@@ -242,7 +240,6 @@ window.bookIrodoriA21 = {
         'vg-n5-00113', // たくさん — banyak
         'vg-n5-00114', // 少し — sedikit
         'vg-n5-00628', // もっと — lebih (lagi)
-        'vg-n5-00114', // 少し — sedikit
         'vg-n5-00478', // 多い — banyak
         'vg-n5-00477', // 少ない — sedikit, tidak banyak
         'vg-n5-00115', // もう — sudah; lagi
@@ -373,5 +370,3 @@ window.bookIrodoriA21 = {
     },
   },
 };
-
-window.bookIrodoriA2_1 = window.bookIrodoriA21;

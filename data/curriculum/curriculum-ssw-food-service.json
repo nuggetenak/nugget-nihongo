@@ -1,0 +1,776 @@
+{
+  "meta": {
+    "track_id": "curriculum-ssw-food-service",
+    "title": "Kurikulum SSW Pelayanan Restoran & Kuliner (Gaishoku)",
+    "sector": "外食業",
+    "version": "1.2.0",
+    "total_units": 4,
+    "authoritative": true
+  },
+  "units": [
+    {
+      "unit_number": 1,
+      "id": "unit-curriculum-ssw-food-service-01",
+      "level": "n4_ssw",
+      "pt_stage": 3,
+      "title_id": "Penyambutan Tamu & Penerimaan Pesanan (Hall)",
+      "title_jp": "ホール接客とハンディ注文入力",
+      "theme": "Table Service",
+      "icon": "🍽️",
+      "can_do_summary": "Mampu mengucapkan \"Irasshaimase\", mengantar tamu ke meja, dan mencatat pesanan via tablet handy.",
+      "l2d_focus_notes": "Pencegahan tumpahan minuman panas saat menyajikan di meja anak-anak.",
+      "grammar_ids": [
+        "gn4-00021",
+        "gn4-00028"
+      ],
+      "vocab_ids": [
+        "v-ssw-food-service-001",
+        "v-ssw-food-service-002",
+        "v-ssw-food-service-003"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-ssw-food-service-u01-01",
+          "lesson_number": 1,
+          "title_id": "Penyambutan Tamu & Penerimaan Pesanan (Hall) (SOP & Terminologi Kerja)",
+          "title_jp": "ホール接客とハンディ注文入力（手順と専門用語）",
+          "desc_id": "Standar operasional prosedur resmi, kosakata kunci, dan protokol kerja di tempat kerja Jepang.",
+          "can_do_statement": "Mampu mengucapkan \"Irasshaimase\", mengantar tamu ke meja, dan mencatat pesanan via tablet handy.",
+          "grammar_ids": [
+            "gn4-00021"
+          ],
+          "vocab_ids": [
+            "v-ssw-food-service-001",
+            "v-ssw-food-service-002"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Penguasaan istilah operasional dan komunikasi sopan dalam bidang 外食業.",
+              "canDo": "Mampu mengucapkan \"Irasshaimase\", mengantar tamu ke meja, dan mencatat pesanan via tablet handy.",
+              "targetPatterns": [
+                "〜てください",
+                "〜てもいいですか"
+              ],
+              "coreVocabSample": [
+                "v-ssw-food-service-001"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang bertugas di stasiun kerja bidang 外食業 di Jepang. Mandor (Koujoucho / Shunin) memberikan instruksi shift pagi ini.",
+              "dailyMission": "Mampu mengucapkan \"Irasshaimase\", mengantar tamu ke meja, dan mencatat pesanan via tablet handy.",
+              "whyOrder": "Pondasi keselamatan kerja Jepang selalu diawali dari pemahaman instruksi lisan di tempat kerja."
+            },
+            "cultural_notes": {
+              "title": "Budaya Keselamatan Kerja & Horenso di Bidang 外食業",
+              "etiquette": "Sebelum memulai pekerjaan, ucapkan 'Yoroshiku onegai shimasu' dan pastikan helm keselamatan serta APD terpasang kencang.",
+              "taboos": "Jangan pernah memulai mengoperasikan mesin sebelum ada instruksi 'Yoshi!' dari mandor pendamping."
+            },
+            "pronunciation_tips": {
+              "title": "Tips Pelafalan Aba-Aba Suara Lantang",
+              "moraNote": "Gunakan suara diafragma yang tegas dan jelas saat menjawab perintah atasan.",
+              "soundTip": "Katakan \"Hai, kashikomarimashita\" dengan tegas tanpa ragu-ragu."
+            },
+            "common_pitfalls": [
+              {
+                "title": "Jebakan Asumsi Mandiri (Dokusen)",
+                "caseScenario": "Ragu tentang tombol mesin tetapi mencoba menekan tanpa bertanya.",
+                "pitfallWarning": "❌ Bertindak sendiri tanpa melapor saat ada bunyi aneh pada mesin.",
+                "rightSolution": "✅ Segera hentikan pekerjaan, lapor supervisor: \"Sumimasen, ijin ga arimasu.\"",
+                "explanation": "Prinsip nomor satu pekerja Jepang adalah Horenso (Houkoku, Renraku, Soudan)."
+              }
+            ]
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Atasan (Tanaka-san)",
+              "speakerRole": "Supervisor Kerja",
+              "jp": "作業を始める前に、保護具を確認してください。",
+              "furigana": "さぎょうをはじめるまえに、ほごぐをかくにんしてください。",
+              "romaji": "Sagyou wo hajimeru mae ni, hogogu wo kakunin shite kudasai.",
+              "idText": "Sebelum memulai pekerjaan, tolong pastikan alat pelindung diri Anda sudah terpasang."
+            },
+            {
+              "id": "d2",
+              "speaker": "Anda (Pekerja SSW)",
+              "speakerRole": "Staf Operasional",
+              "jp": "はい、了解いたしました！点検よし！",
+              "furigana": "はい、りょうかいいいたしました！てんけんよし！",
+              "romaji": "Hai, ryoukai itashimashita! Tenken yoshi!",
+              "idText": "Baik, saya mengerti! Pemeriksaan siap/aman!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa tindakan pertama sebelum memulai pekerjaan di sektor 外食業?",
+              "options": [
+                "Memeriksa alat pelindung diri (Hogogu) dan konfirmasi aman (Yoshi)",
+                "Langsung menekan tombol mesin tanpa instruksi",
+                "Pergi istirahat makan siang",
+                "Mematikan lampu pabrik"
+              ],
+              "correctAnswer": "Memeriksa alat pelindung diri (Hogogu) dan konfirmasi aman (Yoshi)",
+              "explanation": "SOP keselamatan kerja Jepang mewajibkan pemeriksaan APD sebelum menyentuh peralatan kerja."
+            }
+          ]
+        },
+        {
+          "id": "les-curriculum-ssw-food-service-u01-02",
+          "lesson_number": 2,
+          "title_id": "Penyambutan Tamu & Penerimaan Pesanan (Hall) (Simulasi Darurat & Laporan SBAR)",
+          "title_jp": "ホール接客とハンディ注文入力（緊急時対応と報告）",
+          "desc_id": "Simulasi tanggap darurat, mitigasi kecelakaan kerja K3, dan teknik pelaporan ringkas kepada atasan.",
+          "can_do_statement": "Mampu melaporkan insiden keselamatan atau kendala operasional dengan cepat dan tepat.",
+          "grammar_ids": [
+            "gn4-00028"
+          ],
+          "vocab_ids": [
+            "v-ssw-food-service-003"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Komunikasi tanggap darurat dan pelaporan cepat saat terjadi kendala.",
+              "canDo": "Bisa melaporkan insiden darurat dengan formula situasi-latar belakang-solusi.",
+              "targetPatterns": [
+                "〜てしまいました",
+                "〜てください"
+              ],
+              "coreVocabSample": [
+                "v-ssw-food-service-003"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Tiba-tiba terjadi ketidaksesuaian operasional di tempat kerja. Kamu harus segera melapor kepada mandor.",
+              "dailyMission": "Menyampaikan laporan kendala kerja dalam 15 detik pertama.",
+              "whyOrder": "Dalam situasi krisis industri Jepang, kecepatan pelaporan menyelamatkan nyawa dan aset pabrik."
+            },
+            "cultural_notes": {
+              "title": "Etika Tanggap Darurat di Tempat Kerja Jepang",
+              "etiquette": "Berbicaralah dengan nada tenang namun tegas, tatap mata supervisor, dan tunjukkan lokasi masalah.",
+              "taboos": "Jangan menyembunyikan kesalahan atau menunda laporan karena takut dimarahi."
+            },
+            "common_pitfalls": [
+              {
+                "title": "Jebakan Menunda Laporan",
+                "caseScenario": "Ada tetesan oli atau baut longgar tapi didiamkan.",
+                "pitfallWarning": "❌ \"Nanti saja lapornya saat jam istirahat siang.\"",
+                "rightSolution": "✅ Segera lapor saat itu juga: \"Shunin, ima yoroshii desu ka.\"",
+                "explanation": "Kecelakaan kerja fatal sering berawal dari kelalaian kecil yang tidak segera dilaporkan."
+              }
+            ]
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Anda (Pekerja SSW)",
+              "speakerRole": "Staf Operasional",
+              "jp": "主任、すみません！機械に異常音が聞こえます。すぐに確認をお願いします。",
+              "furigana": "しゅにん、すみません！きかいにいじょうおんがきこえます。すぐにかくにんをおねがいします。",
+              "romaji": "Shunin, sumimasen! Kikai ni ijouon ga kikoemasu. Sugu ni kakunin wo onegai shimasu.",
+              "idText": "Mandor, permisi! Terdengar suara tidak wajar pada mesin. Mohon segera diperiksa."
+            },
+            {
+              "id": "d2",
+              "speaker": "Mandor (Shunin)",
+              "speakerRole": "Supervisor Kerja",
+              "jp": "よく気づいてくれた！直ちに停止ボタンを押して安全を確保しよう。",
+              "furigana": "よくきづいてくれた！ただちにていしボタンをおしてあんぜんをかくほしよう。",
+              "romaji": "Yoku kizuite kureta! Tadachi ni teishi botan wo oshite anzen wo kakuho shiyou.",
+              "idText": "Terima kasih sudah sigap menyadarinya! Segera tekan tombol berhenti dan amankan lokasi."
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa yang harus dikatakan saat mendengar suara aneh pada mesin kerja?",
+              "options": [
+                "主任、機械に異常音が聞こえます。確認をお願いします。",
+                "大丈夫ですから、そのまま続けましょう。",
+                "明日の朝、報告すればいいです。",
+                "何も聞こえませんでした。"
+              ],
+              "correctAnswer": "主任、機械に異常音が聞こえます。確認をお願いします。",
+              "explanation": "Melaporkan kejanggalan suara mesin secara langsung adalah tindakan keselamatan yang tepat."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 2,
+      "id": "unit-curriculum-ssw-food-service-02",
+      "level": "n4_ssw",
+      "pt_stage": 3,
+      "title_id": "Pengolahan Bahan Makanan di Dapur (Kitchen Preparation)",
+      "title_jp": "厨房での食材仕込みと衛生管理",
+      "theme": "Kitchen Prep",
+      "icon": "🍽️",
+      "can_do_summary": "Mampu memotong sayuran, menakar bumbu, dan menyiapkan porsi bahan sesuai resep standar.",
+      "l2d_focus_notes": "Pemisahan talenan pisau untuk daging mentah vs sayuran segar (cegah kontaminasi silang).",
+      "grammar_ids": [
+        "gn4-00021",
+        "gn4-00028"
+      ],
+      "vocab_ids": [
+        "v-ssw-food-service-001",
+        "v-ssw-food-service-002",
+        "v-ssw-food-service-003"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-ssw-food-service-u02-01",
+          "lesson_number": 1,
+          "title_id": "Pengolahan Bahan Makanan di Dapur (Kitchen Preparation) (SOP & Terminologi Kerja)",
+          "title_jp": "厨房での食材仕込みと衛生管理（手順と専門用語）",
+          "desc_id": "Standar operasional prosedur resmi, kosakata kunci, dan protokol kerja di tempat kerja Jepang.",
+          "can_do_statement": "Mampu memotong sayuran, menakar bumbu, dan menyiapkan porsi bahan sesuai resep standar.",
+          "grammar_ids": [
+            "gn4-00021"
+          ],
+          "vocab_ids": [
+            "v-ssw-food-service-001",
+            "v-ssw-food-service-002"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Penguasaan istilah operasional dan komunikasi sopan dalam bidang 外食業.",
+              "canDo": "Mampu memotong sayuran, menakar bumbu, dan menyiapkan porsi bahan sesuai resep standar.",
+              "targetPatterns": [
+                "〜てください",
+                "〜てもいいですか"
+              ],
+              "coreVocabSample": [
+                "v-ssw-food-service-001"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang bertugas di stasiun kerja bidang 外食業 di Jepang. Mandor (Koujoucho / Shunin) memberikan instruksi shift pagi ini.",
+              "dailyMission": "Mampu memotong sayuran, menakar bumbu, dan menyiapkan porsi bahan sesuai resep standar.",
+              "whyOrder": "Pondasi keselamatan kerja Jepang selalu diawali dari pemahaman instruksi lisan di tempat kerja."
+            },
+            "cultural_notes": {
+              "title": "Budaya Keselamatan Kerja & Horenso di Bidang 外食業",
+              "etiquette": "Sebelum memulai pekerjaan, ucapkan 'Yoroshiku onegai shimasu' dan pastikan helm keselamatan serta APD terpasang kencang.",
+              "taboos": "Jangan pernah memulai mengoperasikan mesin sebelum ada instruksi 'Yoshi!' dari mandor pendamping."
+            },
+            "pronunciation_tips": {
+              "title": "Tips Pelafalan Aba-Aba Suara Lantang",
+              "moraNote": "Gunakan suara diafragma yang tegas dan jelas saat menjawab perintah atasan.",
+              "soundTip": "Katakan \"Hai, kashikomarimashita\" dengan tegas tanpa ragu-ragu."
+            },
+            "common_pitfalls": [
+              {
+                "title": "Jebakan Asumsi Mandiri (Dokusen)",
+                "caseScenario": "Ragu tentang tombol mesin tetapi mencoba menekan tanpa bertanya.",
+                "pitfallWarning": "❌ Bertindak sendiri tanpa melapor saat ada bunyi aneh pada mesin.",
+                "rightSolution": "✅ Segera hentikan pekerjaan, lapor supervisor: \"Sumimasen, ijin ga arimasu.\"",
+                "explanation": "Prinsip nomor satu pekerja Jepang adalah Horenso (Houkoku, Renraku, Soudan)."
+              }
+            ]
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Atasan (Tanaka-san)",
+              "speakerRole": "Supervisor Kerja",
+              "jp": "作業を始める前に、保護具を確認してください。",
+              "furigana": "さぎょうをはじめるまえに、ほごぐをかくにんしてください。",
+              "romaji": "Sagyou wo hajimeru mae ni, hogogu wo kakunin shite kudasai.",
+              "idText": "Sebelum memulai pekerjaan, tolong pastikan alat pelindung diri Anda sudah terpasang."
+            },
+            {
+              "id": "d2",
+              "speaker": "Anda (Pekerja SSW)",
+              "speakerRole": "Staf Operasional",
+              "jp": "はい、了解いたしました！点検よし！",
+              "furigana": "はい、りょうかいいいたしました！てんけんよし！",
+              "romaji": "Hai, ryoukai itashimashita! Tenken yoshi!",
+              "idText": "Baik, saya mengerti! Pemeriksaan siap/aman!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa tindakan pertama sebelum memulai pekerjaan di sektor 外食業?",
+              "options": [
+                "Memeriksa alat pelindung diri (Hogogu) dan konfirmasi aman (Yoshi)",
+                "Langsung menekan tombol mesin tanpa instruksi",
+                "Pergi istirahat makan siang",
+                "Mematikan lampu pabrik"
+              ],
+              "correctAnswer": "Memeriksa alat pelindung diri (Hogogu) dan konfirmasi aman (Yoshi)",
+              "explanation": "SOP keselamatan kerja Jepang mewajibkan pemeriksaan APD sebelum menyentuh peralatan kerja."
+            }
+          ]
+        },
+        {
+          "id": "les-curriculum-ssw-food-service-u02-02",
+          "lesson_number": 2,
+          "title_id": "Pengolahan Bahan Makanan di Dapur (Kitchen Preparation) (Simulasi Darurat & Laporan SBAR)",
+          "title_jp": "厨房での食材仕込みと衛生管理（緊急時対応と報告）",
+          "desc_id": "Simulasi tanggap darurat, mitigasi kecelakaan kerja K3, dan teknik pelaporan ringkas kepada atasan.",
+          "can_do_statement": "Mampu melaporkan insiden keselamatan atau kendala operasional dengan cepat dan tepat.",
+          "grammar_ids": [
+            "gn4-00028"
+          ],
+          "vocab_ids": [
+            "v-ssw-food-service-003"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Komunikasi tanggap darurat dan pelaporan cepat saat terjadi kendala.",
+              "canDo": "Bisa melaporkan insiden darurat dengan formula situasi-latar belakang-solusi.",
+              "targetPatterns": [
+                "〜てしまいました",
+                "〜てください"
+              ],
+              "coreVocabSample": [
+                "v-ssw-food-service-003"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Tiba-tiba terjadi ketidaksesuaian operasional di tempat kerja. Kamu harus segera melapor kepada mandor.",
+              "dailyMission": "Menyampaikan laporan kendala kerja dalam 15 detik pertama.",
+              "whyOrder": "Dalam situasi krisis industri Jepang, kecepatan pelaporan menyelamatkan nyawa dan aset pabrik."
+            },
+            "cultural_notes": {
+              "title": "Etika Tanggap Darurat di Tempat Kerja Jepang",
+              "etiquette": "Berbicaralah dengan nada tenang namun tegas, tatap mata supervisor, dan tunjukkan lokasi masalah.",
+              "taboos": "Jangan menyembunyikan kesalahan atau menunda laporan karena takut dimarahi."
+            },
+            "common_pitfalls": [
+              {
+                "title": "Jebakan Menunda Laporan",
+                "caseScenario": "Ada tetesan oli atau baut longgar tapi didiamkan.",
+                "pitfallWarning": "❌ \"Nanti saja lapornya saat jam istirahat siang.\"",
+                "rightSolution": "✅ Segera lapor saat itu juga: \"Shunin, ima yoroshii desu ka.\"",
+                "explanation": "Kecelakaan kerja fatal sering berawal dari kelalaian kecil yang tidak segera dilaporkan."
+              }
+            ]
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Anda (Pekerja SSW)",
+              "speakerRole": "Staf Operasional",
+              "jp": "主任、すみません！機械に異常音が聞こえます。すぐに確認をお願いします。",
+              "furigana": "しゅにん、すみません！きかいにいじょうおんがきこえます。すぐにかくにんをおねがいします。",
+              "romaji": "Shunin, sumimasen! Kikai ni ijouon ga kikoemasu. Sugu ni kakunin wo onegai shimasu.",
+              "idText": "Mandor, permisi! Terdengar suara tidak wajar pada mesin. Mohon segera diperiksa."
+            },
+            {
+              "id": "d2",
+              "speaker": "Mandor (Shunin)",
+              "speakerRole": "Supervisor Kerja",
+              "jp": "よく気づいてくれた！直ちに停止ボタンを押して安全を確保しよう。",
+              "furigana": "よくきづいてくれた！ただちにていしボタンをおしてあんぜんをかくほしよう。",
+              "romaji": "Yoku kizuite kureta! Tadachi ni teishi botan wo oshite anzen wo kakuho shiyou.",
+              "idText": "Terima kasih sudah sigap menyadarinya! Segera tekan tombol berhenti dan amankan lokasi."
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa yang harus dikatakan saat mendengar suara aneh pada mesin kerja?",
+              "options": [
+                "主任、機械に異常音が聞こえます。確認をお願いします。",
+                "大丈夫ですから、そのまま続けましょう。",
+                "明日の朝、報告すればいいです。",
+                "何も聞こえませんでした。"
+              ],
+              "correctAnswer": "主任、機械に異常音が聞こえます。確認をお願いします。",
+              "explanation": "Melaporkan kejanggalan suara mesin secara langsung adalah tindakan keselamatan yang tepat."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 3,
+      "id": "unit-curriculum-ssw-food-service-03",
+      "level": "n4_ssw",
+      "pt_stage": 3,
+      "title_id": "Penyajian Makanan & Pencucian Alat Makan (Wash Area)",
+      "title_jp": "料理の配膳と自動洗浄機オペレーション",
+      "theme": "Serving & Dishwashing",
+      "icon": "🍽️",
+      "can_do_summary": "Mampu menata hidangan di atas baki nampan dan mengoperasikan mesin pencuci piring otomatis.",
+      "l2d_focus_notes": "Pengaturan suhu air bilas minimal 80°C untuk sterilisasi higienis.",
+      "grammar_ids": [
+        "gn4-00021",
+        "gn4-00028"
+      ],
+      "vocab_ids": [
+        "v-ssw-food-service-001",
+        "v-ssw-food-service-002",
+        "v-ssw-food-service-003"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-ssw-food-service-u03-01",
+          "lesson_number": 1,
+          "title_id": "Penyajian Makanan & Pencucian Alat Makan (Wash Area) (SOP & Terminologi Kerja)",
+          "title_jp": "料理の配膳と自動洗浄機オペレーション（手順と専門用語）",
+          "desc_id": "Standar operasional prosedur resmi, kosakata kunci, dan protokol kerja di tempat kerja Jepang.",
+          "can_do_statement": "Mampu menata hidangan di atas baki nampan dan mengoperasikan mesin pencuci piring otomatis.",
+          "grammar_ids": [
+            "gn4-00021"
+          ],
+          "vocab_ids": [
+            "v-ssw-food-service-001",
+            "v-ssw-food-service-002"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Penguasaan istilah operasional dan komunikasi sopan dalam bidang 外食業.",
+              "canDo": "Mampu menata hidangan di atas baki nampan dan mengoperasikan mesin pencuci piring otomatis.",
+              "targetPatterns": [
+                "〜てください",
+                "〜てもいいですか"
+              ],
+              "coreVocabSample": [
+                "v-ssw-food-service-001"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang bertugas di stasiun kerja bidang 外食業 di Jepang. Mandor (Koujoucho / Shunin) memberikan instruksi shift pagi ini.",
+              "dailyMission": "Mampu menata hidangan di atas baki nampan dan mengoperasikan mesin pencuci piring otomatis.",
+              "whyOrder": "Pondasi keselamatan kerja Jepang selalu diawali dari pemahaman instruksi lisan di tempat kerja."
+            },
+            "cultural_notes": {
+              "title": "Budaya Keselamatan Kerja & Horenso di Bidang 外食業",
+              "etiquette": "Sebelum memulai pekerjaan, ucapkan 'Yoroshiku onegai shimasu' dan pastikan helm keselamatan serta APD terpasang kencang.",
+              "taboos": "Jangan pernah memulai mengoperasikan mesin sebelum ada instruksi 'Yoshi!' dari mandor pendamping."
+            },
+            "pronunciation_tips": {
+              "title": "Tips Pelafalan Aba-Aba Suara Lantang",
+              "moraNote": "Gunakan suara diafragma yang tegas dan jelas saat menjawab perintah atasan.",
+              "soundTip": "Katakan \"Hai, kashikomarimashita\" dengan tegas tanpa ragu-ragu."
+            },
+            "common_pitfalls": [
+              {
+                "title": "Jebakan Asumsi Mandiri (Dokusen)",
+                "caseScenario": "Ragu tentang tombol mesin tetapi mencoba menekan tanpa bertanya.",
+                "pitfallWarning": "❌ Bertindak sendiri tanpa melapor saat ada bunyi aneh pada mesin.",
+                "rightSolution": "✅ Segera hentikan pekerjaan, lapor supervisor: \"Sumimasen, ijin ga arimasu.\"",
+                "explanation": "Prinsip nomor satu pekerja Jepang adalah Horenso (Houkoku, Renraku, Soudan)."
+              }
+            ]
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Atasan (Tanaka-san)",
+              "speakerRole": "Supervisor Kerja",
+              "jp": "作業を始める前に、保護具を確認してください。",
+              "furigana": "さぎょうをはじめるまえに、ほごぐをかくにんしてください。",
+              "romaji": "Sagyou wo hajimeru mae ni, hogogu wo kakunin shite kudasai.",
+              "idText": "Sebelum memulai pekerjaan, tolong pastikan alat pelindung diri Anda sudah terpasang."
+            },
+            {
+              "id": "d2",
+              "speaker": "Anda (Pekerja SSW)",
+              "speakerRole": "Staf Operasional",
+              "jp": "はい、了解いたしました！点検よし！",
+              "furigana": "はい、りょうかいいいたしました！てんけんよし！",
+              "romaji": "Hai, ryoukai itashimashita! Tenken yoshi!",
+              "idText": "Baik, saya mengerti! Pemeriksaan siap/aman!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa tindakan pertama sebelum memulai pekerjaan di sektor 外食業?",
+              "options": [
+                "Memeriksa alat pelindung diri (Hogogu) dan konfirmasi aman (Yoshi)",
+                "Langsung menekan tombol mesin tanpa instruksi",
+                "Pergi istirahat makan siang",
+                "Mematikan lampu pabrik"
+              ],
+              "correctAnswer": "Memeriksa alat pelindung diri (Hogogu) dan konfirmasi aman (Yoshi)",
+              "explanation": "SOP keselamatan kerja Jepang mewajibkan pemeriksaan APD sebelum menyentuh peralatan kerja."
+            }
+          ]
+        },
+        {
+          "id": "les-curriculum-ssw-food-service-u03-02",
+          "lesson_number": 2,
+          "title_id": "Penyajian Makanan & Pencucian Alat Makan (Wash Area) (Simulasi Darurat & Laporan SBAR)",
+          "title_jp": "料理の配膳と自動洗浄機オペレーション（緊急時対応と報告）",
+          "desc_id": "Simulasi tanggap darurat, mitigasi kecelakaan kerja K3, dan teknik pelaporan ringkas kepada atasan.",
+          "can_do_statement": "Mampu melaporkan insiden keselamatan atau kendala operasional dengan cepat dan tepat.",
+          "grammar_ids": [
+            "gn4-00028"
+          ],
+          "vocab_ids": [
+            "v-ssw-food-service-003"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Komunikasi tanggap darurat dan pelaporan cepat saat terjadi kendala.",
+              "canDo": "Bisa melaporkan insiden darurat dengan formula situasi-latar belakang-solusi.",
+              "targetPatterns": [
+                "〜てしまいました",
+                "〜てください"
+              ],
+              "coreVocabSample": [
+                "v-ssw-food-service-003"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Tiba-tiba terjadi ketidaksesuaian operasional di tempat kerja. Kamu harus segera melapor kepada mandor.",
+              "dailyMission": "Menyampaikan laporan kendala kerja dalam 15 detik pertama.",
+              "whyOrder": "Dalam situasi krisis industri Jepang, kecepatan pelaporan menyelamatkan nyawa dan aset pabrik."
+            },
+            "cultural_notes": {
+              "title": "Etika Tanggap Darurat di Tempat Kerja Jepang",
+              "etiquette": "Berbicaralah dengan nada tenang namun tegas, tatap mata supervisor, dan tunjukkan lokasi masalah.",
+              "taboos": "Jangan menyembunyikan kesalahan atau menunda laporan karena takut dimarahi."
+            },
+            "common_pitfalls": [
+              {
+                "title": "Jebakan Menunda Laporan",
+                "caseScenario": "Ada tetesan oli atau baut longgar tapi didiamkan.",
+                "pitfallWarning": "❌ \"Nanti saja lapornya saat jam istirahat siang.\"",
+                "rightSolution": "✅ Segera lapor saat itu juga: \"Shunin, ima yoroshii desu ka.\"",
+                "explanation": "Kecelakaan kerja fatal sering berawal dari kelalaian kecil yang tidak segera dilaporkan."
+              }
+            ]
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Anda (Pekerja SSW)",
+              "speakerRole": "Staf Operasional",
+              "jp": "主任、すみません！機械に異常音が聞こえます。すぐに確認をお願いします。",
+              "furigana": "しゅにん、すみません！きかいにいじょうおんがきこえます。すぐにかくにんをおねがいします。",
+              "romaji": "Shunin, sumimasen! Kikai ni ijouon ga kikoemasu. Sugu ni kakunin wo onegai shimasu.",
+              "idText": "Mandor, permisi! Terdengar suara tidak wajar pada mesin. Mohon segera diperiksa."
+            },
+            {
+              "id": "d2",
+              "speaker": "Mandor (Shunin)",
+              "speakerRole": "Supervisor Kerja",
+              "jp": "よく気づいてくれた！直ちに停止ボタンを押して安全を確保しよう。",
+              "furigana": "よくきづいてくれた！ただちにていしボタンをおしてあんぜんをかくほしよう。",
+              "romaji": "Yoku kizuite kureta! Tadachi ni teishi botan wo oshite anzen wo kakuho shiyou.",
+              "idText": "Terima kasih sudah sigap menyadarinya! Segera tekan tombol berhenti dan amankan lokasi."
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa yang harus dikatakan saat mendengar suara aneh pada mesin kerja?",
+              "options": [
+                "主任、機械に異常音が聞こえます。確認をお願いします。",
+                "大丈夫ですから、そのまま続けましょう。",
+                "明日の朝、報告すればいいです。",
+                "何も聞こえませんでした。"
+              ],
+              "correctAnswer": "主任、機械に異常音が聞こえます。確認をお願いします。",
+              "explanation": "Melaporkan kejanggalan suara mesin secara langsung adalah tindakan keselamatan yang tepat."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 4,
+      "id": "unit-curriculum-ssw-food-service-04",
+      "level": "n4_ssw",
+      "pt_stage": 3,
+      "title_id": "Transaksi Kasir & Kebersihan Meja (Register & Busser)",
+      "title_jp": "レジ会計とテーブルリセット",
+      "theme": "Cashier & Turnover",
+      "icon": "🍽️",
+      "can_do_summary": "Mampu menghitung uang kembalian kasir dengan sopan dan membersihkan meja makan untuk tamu berikutnya.",
+      "l2d_focus_notes": "Penyemprotan alkohol disinfektan pada meja makan setelah tamu selesai.",
+      "grammar_ids": [
+        "gn4-00021",
+        "gn4-00028"
+      ],
+      "vocab_ids": [
+        "v-ssw-food-service-001",
+        "v-ssw-food-service-002",
+        "v-ssw-food-service-003"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-ssw-food-service-u04-01",
+          "lesson_number": 1,
+          "title_id": "Transaksi Kasir & Kebersihan Meja (Register & Busser) (SOP & Terminologi Kerja)",
+          "title_jp": "レジ会計とテーブルリセット（手順と専門用語）",
+          "desc_id": "Standar operasional prosedur resmi, kosakata kunci, dan protokol kerja di tempat kerja Jepang.",
+          "can_do_statement": "Mampu menghitung uang kembalian kasir dengan sopan dan membersihkan meja makan untuk tamu berikutnya.",
+          "grammar_ids": [
+            "gn4-00021"
+          ],
+          "vocab_ids": [
+            "v-ssw-food-service-001",
+            "v-ssw-food-service-002"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Penguasaan istilah operasional dan komunikasi sopan dalam bidang 外食業.",
+              "canDo": "Mampu menghitung uang kembalian kasir dengan sopan dan membersihkan meja makan untuk tamu berikutnya.",
+              "targetPatterns": [
+                "〜てください",
+                "〜てもいいですか"
+              ],
+              "coreVocabSample": [
+                "v-ssw-food-service-001"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang bertugas di stasiun kerja bidang 外食業 di Jepang. Mandor (Koujoucho / Shunin) memberikan instruksi shift pagi ini.",
+              "dailyMission": "Mampu menghitung uang kembalian kasir dengan sopan dan membersihkan meja makan untuk tamu berikutnya.",
+              "whyOrder": "Pondasi keselamatan kerja Jepang selalu diawali dari pemahaman instruksi lisan di tempat kerja."
+            },
+            "cultural_notes": {
+              "title": "Budaya Keselamatan Kerja & Horenso di Bidang 外食業",
+              "etiquette": "Sebelum memulai pekerjaan, ucapkan 'Yoroshiku onegai shimasu' dan pastikan helm keselamatan serta APD terpasang kencang.",
+              "taboos": "Jangan pernah memulai mengoperasikan mesin sebelum ada instruksi 'Yoshi!' dari mandor pendamping."
+            },
+            "pronunciation_tips": {
+              "title": "Tips Pelafalan Aba-Aba Suara Lantang",
+              "moraNote": "Gunakan suara diafragma yang tegas dan jelas saat menjawab perintah atasan.",
+              "soundTip": "Katakan \"Hai, kashikomarimashita\" dengan tegas tanpa ragu-ragu."
+            },
+            "common_pitfalls": [
+              {
+                "title": "Jebakan Asumsi Mandiri (Dokusen)",
+                "caseScenario": "Ragu tentang tombol mesin tetapi mencoba menekan tanpa bertanya.",
+                "pitfallWarning": "❌ Bertindak sendiri tanpa melapor saat ada bunyi aneh pada mesin.",
+                "rightSolution": "✅ Segera hentikan pekerjaan, lapor supervisor: \"Sumimasen, ijin ga arimasu.\"",
+                "explanation": "Prinsip nomor satu pekerja Jepang adalah Horenso (Houkoku, Renraku, Soudan)."
+              }
+            ]
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Atasan (Tanaka-san)",
+              "speakerRole": "Supervisor Kerja",
+              "jp": "作業を始める前に、保護具を確認してください。",
+              "furigana": "さぎょうをはじめるまえに、ほごぐをかくにんしてください。",
+              "romaji": "Sagyou wo hajimeru mae ni, hogogu wo kakunin shite kudasai.",
+              "idText": "Sebelum memulai pekerjaan, tolong pastikan alat pelindung diri Anda sudah terpasang."
+            },
+            {
+              "id": "d2",
+              "speaker": "Anda (Pekerja SSW)",
+              "speakerRole": "Staf Operasional",
+              "jp": "はい、了解いたしました！点検よし！",
+              "furigana": "はい、りょうかいいいたしました！てんけんよし！",
+              "romaji": "Hai, ryoukai itashimashita! Tenken yoshi!",
+              "idText": "Baik, saya mengerti! Pemeriksaan siap/aman!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa tindakan pertama sebelum memulai pekerjaan di sektor 外食業?",
+              "options": [
+                "Memeriksa alat pelindung diri (Hogogu) dan konfirmasi aman (Yoshi)",
+                "Langsung menekan tombol mesin tanpa instruksi",
+                "Pergi istirahat makan siang",
+                "Mematikan lampu pabrik"
+              ],
+              "correctAnswer": "Memeriksa alat pelindung diri (Hogogu) dan konfirmasi aman (Yoshi)",
+              "explanation": "SOP keselamatan kerja Jepang mewajibkan pemeriksaan APD sebelum menyentuh peralatan kerja."
+            }
+          ]
+        },
+        {
+          "id": "les-curriculum-ssw-food-service-u04-02",
+          "lesson_number": 2,
+          "title_id": "Transaksi Kasir & Kebersihan Meja (Register & Busser) (Simulasi Darurat & Laporan SBAR)",
+          "title_jp": "レジ会計とテーブルリセット（緊急時対応と報告）",
+          "desc_id": "Simulasi tanggap darurat, mitigasi kecelakaan kerja K3, dan teknik pelaporan ringkas kepada atasan.",
+          "can_do_statement": "Mampu melaporkan insiden keselamatan atau kendala operasional dengan cepat dan tepat.",
+          "grammar_ids": [
+            "gn4-00028"
+          ],
+          "vocab_ids": [
+            "v-ssw-food-service-003"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Komunikasi tanggap darurat dan pelaporan cepat saat terjadi kendala.",
+              "canDo": "Bisa melaporkan insiden darurat dengan formula situasi-latar belakang-solusi.",
+              "targetPatterns": [
+                "〜てしまいました",
+                "〜てください"
+              ],
+              "coreVocabSample": [
+                "v-ssw-food-service-003"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Tiba-tiba terjadi ketidaksesuaian operasional di tempat kerja. Kamu harus segera melapor kepada mandor.",
+              "dailyMission": "Menyampaikan laporan kendala kerja dalam 15 detik pertama.",
+              "whyOrder": "Dalam situasi krisis industri Jepang, kecepatan pelaporan menyelamatkan nyawa dan aset pabrik."
+            },
+            "cultural_notes": {
+              "title": "Etika Tanggap Darurat di Tempat Kerja Jepang",
+              "etiquette": "Berbicaralah dengan nada tenang namun tegas, tatap mata supervisor, dan tunjukkan lokasi masalah.",
+              "taboos": "Jangan menyembunyikan kesalahan atau menunda laporan karena takut dimarahi."
+            },
+            "common_pitfalls": [
+              {
+                "title": "Jebakan Menunda Laporan",
+                "caseScenario": "Ada tetesan oli atau baut longgar tapi didiamkan.",
+                "pitfallWarning": "❌ \"Nanti saja lapornya saat jam istirahat siang.\"",
+                "rightSolution": "✅ Segera lapor saat itu juga: \"Shunin, ima yoroshii desu ka.\"",
+                "explanation": "Kecelakaan kerja fatal sering berawal dari kelalaian kecil yang tidak segera dilaporkan."
+              }
+            ]
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Anda (Pekerja SSW)",
+              "speakerRole": "Staf Operasional",
+              "jp": "主任、すみません！機械に異常音が聞こえます。すぐに確認をお願いします。",
+              "furigana": "しゅにん、すみません！きかいにいじょうおんがきこえます。すぐにかくにんをおねがいします。",
+              "romaji": "Shunin, sumimasen! Kikai ni ijouon ga kikoemasu. Sugu ni kakunin wo onegai shimasu.",
+              "idText": "Mandor, permisi! Terdengar suara tidak wajar pada mesin. Mohon segera diperiksa."
+            },
+            {
+              "id": "d2",
+              "speaker": "Mandor (Shunin)",
+              "speakerRole": "Supervisor Kerja",
+              "jp": "よく気づいてくれた！直ちに停止ボタンを押して安全を確保しよう。",
+              "furigana": "よくきづいてくれた！ただちにていしボタンをおしてあんぜんをかくほしよう。",
+              "romaji": "Yoku kizuite kureta! Tadachi ni teishi botan wo oshite anzen wo kakuho shiyou.",
+              "idText": "Terima kasih sudah sigap menyadarinya! Segera tekan tombol berhenti dan amankan lokasi."
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa yang harus dikatakan saat mendengar suara aneh pada mesin kerja?",
+              "options": [
+                "主任、機械に異常音が聞こえます。確認をお願いします。",
+                "大丈夫ですから、そのまま続けましょう。",
+                "明日の朝、報告すればいいです。",
+                "何も聞こえませんでした。"
+              ],
+              "correctAnswer": "主任、機械に異常音が聞こえます。確認をお願いします。",
+              "explanation": "Melaporkan kejanggalan suara mesin secara langsung adalah tindakan keselamatan yang tepat."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
