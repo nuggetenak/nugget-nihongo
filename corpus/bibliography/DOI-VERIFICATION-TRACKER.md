@@ -386,3 +386,4 @@ All 40 entries from `SECTION13-INDIVIDUAL-DIFFS.md` have been fully verified via
 | MV-01 | Deci & Ryan (1985) *Intrinsic Motivation and Self-Determination in Human Behavior* | `10.1007/978-1-4899-2271-7` | Springer CrossRef | ✅ CONFIRMED |
 | MV-02 | Ryan & Deci (2000) *Am. Psychol.* 55(1) | `10.1037/0003-066X.55.1.68` | APA PsycNet CrossRef | ✅ CONFIRMED |
 | WM-02 | Cowan (2001) *Behav. Brain Sci.* 24(1) | `10.1017/S0140525X01003922` | Cambridge UP CrossRef | ✅ CONFIRMED |
+| TE-02 | Roediger & Karpicke (2006) *Psychol. Sci.* 17(3) | `10.1111/j.1467-9280.2006.01693.x` | Wiley CrossRef | ✅ CONFIRMED |

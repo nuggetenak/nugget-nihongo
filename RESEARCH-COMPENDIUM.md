@@ -64,7 +64,14 @@ nugget-nihongo-research/
 │   │   │
 │   │   └── synthesis/                         ← Pedagogical synthesis specifications
 │   │       ├── LEVEL-LADDER-SPEC-v1.md        ← 5-level exit criteria ladder (N5 to N1)
-│   │       └── SECTION18-SYNTHESIS-v1.md      ← Unified pedagogical model & cross-strand architecture
+│   │       ├── SECTION18-SYNTHESIS-v1.md      ← Unified pedagogical model & cross-strand architecture
+│   │       └── syllabi/                       ← Authoritative Canonical Syllabi Suite (Corpus v30 Canonical)
+│   │           ├── NUGGET-CURRICULUM-N5-SYLLABUS-v1.md  ← Full 10 Units + Unit 0, 94 N5 grammar points, PT Stages 1-2
+│   │           ├── NUGGET-CURRICULUM-N4-SYLLABUS-v1.md  ← Full 10 Units, 92 N4 grammar points, PT Stages 3-4, JFT-Basic
+│   │           ├── NUGGET-CURRICULUM-N3-SYLLABUS-v1.md  ← Full 10 Units, 163 N3 grammar points, PT Stages 4-5, Ruigigo
+│   │           ├── NUGGET-CURRICULUM-N2-SYLLABUS-v1.md  ← Full 10 Units, 310 N2 grammar points, PT Stages 5-6, SBAR, Keigo
+│   │           ├── NUGGET-CURRICULUM-N1-SYLLABUS-v1.md  ← Full 10 Units, 200 N1 grammar points, PT Stage 6, Bungo
+│   │           └── NUGGET-CURRICULUM-SSW-MASTER-SYLLABUS-v1.md ← 18-Sector Tokutei Ginou Master Syllabus (4 Clusters, 42 Pain Onomatopoeias, 36 K3 Sims, Rousai 4-Tier)
 │   │
 │   └── bibliography/
 │       ├── MASTER-BIBLIOGRAPHY-FINAL.md       ← Canonical bibliographic registry (807+ unique entries, Corpus v30 Canonical)
