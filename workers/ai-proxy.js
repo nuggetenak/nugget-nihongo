@@ -4,7 +4,7 @@
 //
 //  Provider chain (auto-fallback):
 //    1. Groq        (fastest — llama 3.1 8b)
-//    2. Gemini      (Google — gemini-2.0-flash)
+//    2. Gemini      (Google — gemini-3.8-flash)
 //    3. OpenRouter  (50+ free models — optional, set OPENROUTER_API_KEY)
 //    4. KV Cache    (stored previous answers — always available)
 //
@@ -27,7 +27,7 @@ const DAILY_LIMIT = 20; // bumped from 15 → 20 with caching reducing actual AP
 
 // ── Model config ────────────────────────────────────────────────
 const GROQ_URL   = 'https://api.groq.com/openai/v1/chat/completions';
-const GEMINI_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent';
+const GEMINI_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent';
 const OR_URL     = 'https://openrouter.ai/api/v1/chat/completions';
 
 const GROQ_MODEL_FAST = 'llama-3.1-8b-instant';
@@ -349,7 +349,7 @@ async function rawGemini(apiKey, systemPrompt, userPrompt, opts = {}) {
   const data = await res.json();
   const text = data?.candidates?.[0]?.content?.parts?.[0]?.text;
   if (!text) throw new Error('Gemini empty');
-  return { text, provider: 'gemini', model: 'gemini-2.0-flash', tokens_used: data?.usageMetadata?.totalTokenCount || 0 };
+  return { text, provider: 'gemini', model: 'gemini-3.8-flash', tokens_used: data?.usageMetadata?.totalTokenCount || 0 };
 }
 
 async function rawOpenRouter(apiKey, systemPrompt, userPrompt, opts = {}, modelIndex = 0) {
@@ -470,7 +470,7 @@ async function callGemini(apiKey, messages, systemCtx, mode) {
   const data = await res.json();
   const text = data?.candidates?.[0]?.content?.parts?.[0]?.text;
   if (!text) throw new Error('Gemini empty');
-  return { reply: text, model_used: 'gemini-2.0-flash', tokens_used: data?.usageMetadata?.totalTokenCount || 0 };
+  return { reply: text, model_used: 'gemini-3.8-flash', tokens_used: data?.usageMetadata?.totalTokenCount || 0 };
 }
 
 // ── Provider: OpenRouter ──────────────────────────────────────────

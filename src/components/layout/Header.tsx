@@ -1,5 +1,5 @@
 import React from 'react';
-import { Search, Flame, Zap, Download, RefreshCw, User as UserIcon, Cloud, HelpCircle, Compass, Menu } from 'lucide-react';
+import { Search, Flame, Zap, Download, RefreshCw, User as UserIcon, Cloud, HelpCircle, Compass, Menu, Wrench } from 'lucide-react';
 import { useAppStore } from '../../store/useAppStore';
 import { usePwaStore } from '../../lib/pwa/pwaStore';
 import { useAuthStore } from '../../lib/supabase/authStore';
@@ -10,14 +10,15 @@ interface HeaderProps {
   onOpenSearch?: () => void;
   onOpenShortcuts?: () => void;
   onOpenMobileDrawer?: () => void;
+  onOpenToolbox?: () => void;
 }
 
-export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onOpenShortcuts, onOpenMobileDrawer }) => {
+export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onOpenShortcuts, onOpenMobileDrawer, onOpenToolbox }) => {
   const {
     streak, xp, selectedLevel, setSelectedLevel,
     showFurigana, setShowFurigana,
     showRomaji, setShowRomaji, showToast,
-    openFeatureGuide, setActiveTab
+    openFeatureGuide, setActiveTab, openToolbox
   } = useAppStore();
   const { isInstalled, setShowInstallModal } = usePwaStore();
   const { user, syncStatus, openAuthModal, syncNow } = useAuthStore();
@@ -114,11 +115,21 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onOpenShortcuts, o
         {/* Offline Status Pill */}
         <OfflineStatusPill />
 
+        {/* Study Toolbox Button (Peralatan Belajar) */}
+        <button
+          onClick={onOpenToolbox || openToolbox}
+          title="Kotak Peralatan Belajar (Bagan Kana, Konjugasi, Nuansa, CAT Placement)"
+          className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-full bg-surface-2 hover:bg-surface-3 text-appText-bright border border-accent/20 hover:border-accent text-xs font-bold transition-all shadow-sm active:scale-95 shrink-0"
+        >
+          <Wrench className="w-3.5 h-3.5 text-accent" />
+          <span className="hidden sm:inline">Peralatan</span>
+        </button>
+
         {/* Navigation & Feature Guide Button (Desktop/Tablet) */}
         <button
           onClick={openFeatureGuide}
           title="Panduan Fitur & Bantuan (Tekan untuk melihat seluruh modul & tips)"
-          className="hidden sm:flex items-center gap-1.5 px-2.5 py-1.5 rounded-full bg-amber-500/10 hover:bg-amber-500/20 text-accent border border-accent/25 text-xs font-bold transition-all shadow-sm active:scale-95"
+          className="hidden md:flex items-center gap-1.5 px-2.5 py-1.5 rounded-full bg-amber-500/10 hover:bg-amber-500/20 text-accent border border-accent/25 text-xs font-bold transition-all shadow-sm active:scale-95"
         >
           <Compass className="w-3.5 h-3.5" />
           <span>Panduan</span>

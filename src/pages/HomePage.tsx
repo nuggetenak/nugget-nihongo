@@ -15,6 +15,10 @@ import {
   ChevronRight,
   BookMarked,
   Quote,
+  Play,
+  Target,
+  Wrench,
+  CheckCircle2,
 } from 'lucide-react';
 import { useAppStore } from '../store/useAppStore';
 import { useCurriculumStore, TrackId } from '../lib/curriculum/curriculumStore';
@@ -39,6 +43,10 @@ export const HomePage: React.FC = () => {
     openKotowaza,
     cards,
     setSelectedLevel,
+    openLessonStudy,
+    lastStudiedLesson,
+    openToolbox,
+    openCatPlacement,
   } = useAppStore();
 
   const [isBadgesOpen, setIsBadgesOpen] = useState(false);
@@ -168,43 +176,60 @@ export const HomePage: React.FC = () => {
 
             <p className="text-xs sm:text-sm text-appText-muted leading-relaxed">
               {dueCount > 0
-                ? `Ada ${dueCount} kartu memori yang mencapai interval kritis kelupaan FSRS. Ulas sekarang selama ~3 menit untuk mempertahankan daya ingat jangka panjang.`
-                : 'Semua kartu memori telah direview dengan baik. Luangkan waktu untuk menjelajahi kosakata atau pola tata bahasa baru!'}
+                ? `Ada ${dueCount} kartu memori yang mencapai interval kritis kelupaan FSRS. Ulas sekarang atau lanjutkan pelajaran terpandumu.`
+                : 'Semua kartu memori telah direview dengan baik. Lanjutkan pelajaran kurikulum atau uji kemampuanmu dengan tes adaptif!'}
             </p>
 
+            {/* Core Action Buttons: 1-Tap Lanjut Belajar, FSRS Review, Kotak Peralatan */}
             <div className="pt-1 flex flex-wrap gap-2.5">
-              {dueCount > 0 ? (
+              {/* Primary 1-Tap Resume Lesson */}
+              <button
+                onClick={() => {
+                  if (lastStudiedLesson) {
+                    openLessonStudy(
+                      lastStudiedLesson.trackId,
+                      lastStudiedLesson.unitId,
+                      lastStudiedLesson.lessonId
+                    );
+                  } else {
+                    openLessonStudy('n5', 'n5-u1', 'n5-l1');
+                  }
+                }}
+                className="px-5 py-2.5 rounded-xl bg-accent hover:bg-accent-hot text-bg font-extrabold text-xs sm:text-sm flex items-center gap-2 transition-all shadow-glow active:scale-95 cursor-pointer"
+              >
+                <Play className="w-4 h-4 fill-bg" />
+                <span>
+                  {lastStudiedLesson
+                    ? `Lanjut Belajar · ${lastStudiedLesson.trackId.toUpperCase()} Unit ${lastStudiedLesson.unitId.replace(/[^0-9]/g, '') || '1'}`
+                    : 'Mulai Belajar · Bab 1 (N5)'}
+                </span>
+              </button>
+
+              {dueCount > 0 && (
                 <button
                   onClick={() => setActiveTab('quiz')}
-                  className="px-5 py-2.5 rounded-xl bg-accent hover:bg-accent-hot text-bg font-bold text-xs flex items-center gap-2 transition-all shadow-glow active:scale-95"
+                  className="px-4 py-2.5 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 text-accent-hot border border-amber-500/35 font-bold text-xs flex items-center gap-1.5 transition-all active:scale-95"
                 >
-                  <Zap className="w-4 h-4 fill-bg" />
-                  <span>Review Sekarang ({dueCount})</span>
-                </button>
-              ) : (
-                <button
-                  onClick={() => setActiveTab('quiz')}
-                  className="px-5 py-2.5 rounded-xl bg-accent hover:bg-accent-hot text-bg font-bold text-xs flex items-center gap-2 transition-all shadow-glow active:scale-95"
-                >
-                  <span>Mulai Latihan Kuis</span>
-                  <ArrowRight className="w-4 h-4" />
+                  <Zap className="w-4 h-4 fill-accent-hot" />
+                  <span>Review FSRS ({dueCount})</span>
                 </button>
               )}
 
               <button
-                onClick={() => setActiveTab('materi')}
-                className="px-4 py-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-bright border border-accent/25 hover:border-accent/40 font-bold text-xs transition-all active:scale-95 flex items-center gap-1.5"
+                onClick={openToolbox}
+                className="px-4 py-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-bright border border-accent/25 hover:border-accent/40 font-bold text-xs transition-all active:scale-95 flex items-center gap-1.5 cursor-pointer"
+                title="Buka Kotak Peralatan Belajar Lengkap"
               >
-                <Sparkles className="w-3.5 h-3.5 text-accent" />
-                <span>Kurikulum 8 Jalur</span>
+                <Wrench className="w-3.5 h-3.5 text-accent" />
+                <span>Kotak Peralatan</span>
               </button>
 
               <button
                 onClick={openFeatureGuide}
-                className="px-3.5 py-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-accent border border-accent/15 text-xs font-semibold transition-all flex items-center gap-1.5"
+                className="px-3.5 py-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-accent border border-accent/15 text-xs font-semibold transition-all flex items-center gap-1.5 cursor-pointer"
               >
                 <Compass className="w-3.5 h-3.5" />
-                <span>Panduan Fitur</span>
+                <span>Panduan</span>
               </button>
             </div>
           </div>
@@ -219,7 +244,97 @@ export const HomePage: React.FC = () => {
         </div>
       </div>
 
-      {/* Tier 2: Sleek Low-Profile Quick Utilities Ribbon */}
+      {/* Tier 2: "Mulai Dari Mana? (Where to Start)" Pathway Guidance Cards */}
+      <div className="space-y-2.5">
+        <div className="flex items-center justify-between px-1">
+          <div className="flex items-center gap-2">
+            <Compass className="w-4 h-4 text-accent" />
+            <span className="text-xs font-bold uppercase tracking-wider text-appText-bright">
+              Mulai Dari Mana? · Panduan Memilih Jalur
+            </span>
+          </div>
+          <span className="text-[11px] text-appText-muted">Pilih alur belajarmu</span>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+          {/* Pathway 1: Absolute Beginner */}
+          <div className="p-4 rounded-2xl bg-surface border border-accent/20 hover:border-accent/40 transition-all flex flex-col justify-between space-y-3 group shadow-sm">
+            <div className="space-y-1.5">
+              <div className="flex items-center justify-between">
+                <span className="text-xl">🌱</span>
+                <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-500/25">
+                  Dari Nol
+                </span>
+              </div>
+              <h3 className="text-sm font-bold text-appText-bright group-hover:text-emerald-400 transition-colors">
+                Belum Hafal Huruf?
+              </h3>
+              <p className="text-[11px] text-appText-muted leading-relaxed">
+                Mulai dari menguasai Hiragana & Katakana dengan Bagan Kana bersuara penutur asli dan latihan goresan stroke.
+              </p>
+            </div>
+            <button
+              onClick={() => setIsKanaOpen(true)}
+              className="w-full py-2 px-3 rounded-xl bg-surface-2 group-hover:bg-emerald-500/20 text-emerald-400 border border-accent/15 group-hover:border-emerald-500/30 text-xs font-bold transition-all flex items-center justify-center gap-1.5 cursor-pointer active:scale-98"
+            >
+              <span>Buka Bagan Kana</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </button>
+          </div>
+
+          {/* Pathway 2: Has Background / Placement Test */}
+          <div className="p-4 rounded-2xl bg-surface border border-accent/20 hover:border-accent/40 transition-all flex flex-col justify-between space-y-3 group shadow-sm">
+            <div className="space-y-1.5">
+              <div className="flex items-center justify-between">
+                <span className="text-xl">🎯</span>
+                <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-500/15 text-accent-hot border border-amber-500/25">
+                  10 Soal IRT
+                </span>
+              </div>
+              <h3 className="text-sm font-bold text-appText-bright group-hover:text-accent transition-colors">
+                Sudah Punya Dasar?
+              </h3>
+              <p className="text-[11px] text-appText-muted leading-relaxed">
+                Uji kemampuanmu lewat Tes Penempatan Mandiri (CAT). Sistem akan mendiagnosis level JLPT-mu secara adaptif.
+              </p>
+            </div>
+            <button
+              onClick={openCatPlacement}
+              className="w-full py-2 px-3 rounded-xl bg-accent/15 group-hover:bg-accent text-accent group-hover:text-bg border border-accent/30 text-xs font-bold transition-all flex items-center justify-center gap-1.5 cursor-pointer active:scale-98"
+            >
+              <span>Tes Penempatan Kilat</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </button>
+          </div>
+
+          {/* Pathway 3: Authentic Textbook Follower */}
+          <div className="p-4 rounded-2xl bg-surface border border-accent/20 hover:border-accent/40 transition-all flex flex-col justify-between space-y-3 group shadow-sm">
+            <div className="space-y-1.5">
+              <div className="flex items-center justify-between">
+                <span className="text-xl">📚</span>
+                <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-blue-500/15 text-blue-300 border border-blue-500/25">
+                  9 Seri Buku
+                </span>
+              </div>
+              <h3 className="text-sm font-bold text-appText-bright group-hover:text-blue-400 transition-colors">
+                Pakai Buku Teks Resmi?
+              </h3>
+              <p className="text-[11px] text-appText-muted leading-relaxed">
+                Akses materi dan bank latihan otentik Minna, Genki, Soumatome, Tobira, Quartet, TRY!, dan Shin Kanzen Master.
+              </p>
+            </div>
+            <button
+              onClick={() => setActiveTab('materi')}
+              className="w-full py-2 px-3 rounded-xl bg-surface-2 group-hover:bg-blue-500/20 text-blue-400 border border-accent/15 group-hover:border-blue-500/30 text-xs font-bold transition-all flex items-center justify-center gap-1.5 cursor-pointer active:scale-98"
+            >
+              <span>Perpustakaan Buku</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Tier 2B: Sleek Low-Profile Quick Utilities Ribbon */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
         <button
           onClick={() => setIsKanaOpen(true)}
@@ -267,17 +382,17 @@ export const HomePage: React.FC = () => {
         </button>
 
         <button
-          onClick={openOnboarding}
+          onClick={openToolbox}
           className="p-2.5 rounded-2xl bg-surface border border-accent/20 hover:border-accent/40 text-left transition-all hover:bg-surface-2 group flex items-center gap-2.5 active:scale-98 shadow-sm"
         >
           <div className="w-8 h-8 rounded-xl bg-emerald-500/15 text-emerald-400 font-bold flex items-center justify-center text-xs shrink-0 group-hover:scale-105 transition-transform">
-            🍙
+            🧰
           </div>
           <div className="min-w-0">
             <div className="text-xs font-bold text-appText-bright truncate group-hover:text-emerald-300 transition-colors">
-              Tur Aplikasi
+              Semua Alat
             </div>
-            <div className="text-[10px] text-appText-muted truncate">Panduan Interaktif</div>
+            <div className="text-[10px] text-appText-muted truncate">7 Referensi Belajar</div>
           </div>
         </button>
       </div>

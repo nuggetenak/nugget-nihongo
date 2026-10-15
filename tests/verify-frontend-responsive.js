@@ -189,7 +189,7 @@ async function runVerification() {
         await page.waitForTimeout(300);
 
         // Select SSW Pengolahan track
-        const sswFoodPill = page.locator('div[role="dialog"] button:has-text("SSW Pengolahan")');
+        const sswFoodPill = page.locator('div[role="dialog"] button:has-text("SSW Pengolahan")').first();
         await sswFoodPill.click();
         await page.waitForTimeout(600);
 
@@ -197,7 +197,7 @@ async function runVerification() {
         await foodHeading.waitFor({ state: 'visible', timeout: 5000 });
         pass(`SSW Food Service & Processing track loaded successfully (mobile modal)`);
       } else {
-        const sswCategoryBtn = page.locator('button:has-text("Jalur Kerja SSW Vokasional")');
+        const sswCategoryBtn = page.locator('button:has-text("Jalur Kerja SSW")').first();
         await sswCategoryBtn.click();
         await page.waitForTimeout(500);
 
@@ -221,7 +221,7 @@ async function runVerification() {
         await switchSubBtn.click();
         await page.waitForTimeout(300);
 
-        const jawaOption = page.locator('button:has-text("Substratum Jawa")').first();
+        const jawaOption = page.locator('button:has-text("Jawa")').first();
         await jawaOption.waitFor({ state: 'visible', timeout: 3000 });
         await jawaOption.click();
         await page.waitForTimeout(300);
@@ -231,21 +231,24 @@ async function runVerification() {
         await switchSubBtn.click();
         await page.waitForTimeout(300);
 
-        const jawaOption = page.locator('button:has-text("Substratum Jawa")').locator('visible=true').first();
+        const jawaOption = page.locator('button:has-text("Jawa")').locator('visible=true').first();
         await jawaOption.waitFor({ state: 'visible', timeout: 3000 });
         await jawaOption.click();
         await page.waitForTimeout(300);
 
-        const activeDialectText = page.locator('text=Substratum Jawa').first();
+        const activeDialectText = page.locator('text=Jawa').first();
         await activeDialectText.waitFor({ state: 'visible', timeout: 3000 });
         pass(`Substratum dynamically switched to Substratum Jawa`);
       }
 
       // 10. Navigate to Settings Page and verify L1 Dialect preferences
       if (isBottomNav) {
-        const settingsBtn = page.locator('nav.fixed button:has-text("Setelan")');
-        await settingsBtn.waitFor({ state: 'visible', timeout: 5000 });
-        await settingsBtn.click();
+        const menuBtn = page.locator('header button[title="Buka Menu Navigasi Lengkap"], header button:has(svg.lucide-menu)').first();
+        await menuBtn.click();
+        await page.waitForTimeout(300);
+        const settingsItem = page.locator('div.fixed button:has-text("Pengaturan")').first();
+        await settingsItem.waitFor({ state: 'visible', timeout: 5000 });
+        await settingsItem.click();
       } else {
         const settingsBtn = page.locator('button:has-text("Pengaturan")').first();
         await settingsBtn.waitFor({ state: 'visible', timeout: 5000 });

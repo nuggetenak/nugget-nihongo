@@ -26,6 +26,8 @@ import {
   CloudOff,
   History,
   Quote,
+  Target,
+  Wrench,
 } from 'lucide-react';
 import { useAppStore, AppState } from '../../store/useAppStore';
 import { useAuthStore } from '../../lib/supabase/authStore';
@@ -46,7 +48,16 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({
   onOpenConjugation,
   onOpenNuance,
 }) => {
-  const { activeTab, setActiveTab, openFeatureGuide, openOnboarding, openPatchNotes, openKotowaza } = useAppStore();
+  const {
+    activeTab,
+    setActiveTab,
+    openFeatureGuide,
+    openOnboarding,
+    openPatchNotes,
+    openKotowaza,
+    openToolbox,
+    openCatPlacement,
+  } = useAppStore();
   const { user, openAuthModal } = useAuthStore();
 
   if (!isOpen) return null;
@@ -147,10 +158,35 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({
 
           {/* Quick Learning Tools */}
           <div className="pt-3">
-            <div className="text-[10px] font-bold uppercase tracking-wider text-accent/80 px-3 py-1.5">
-              Alat Pembelajaran
+            <div className="text-[10px] font-bold uppercase tracking-wider text-accent/80 px-3 py-1.5 flex items-center justify-between">
+              <span>Alat Pembelajaran</span>
+              <button
+                onClick={() => {
+                  openToolbox();
+                  onClose();
+                }}
+                className="text-accent hover:underline font-bold text-[10px] flex items-center gap-1"
+              >
+                <span>Kotak Peralatan</span>
+                <Wrench className="w-2.5 h-2.5" />
+              </button>
             </div>
             <div className="space-y-1">
+              <button
+                onClick={() => {
+                  openCatPlacement();
+                  onClose();
+                }}
+                className="w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs bg-amber-500/15 border border-amber-500/30 text-accent-hot font-bold transition-all shadow-sm"
+              >
+                <div className="flex items-center gap-3">
+                  <Target className="w-4 h-4 text-accent" />
+                  <span>Tes Penempatan Mandiri (CAT)</span>
+                </div>
+                <span className="text-[9px] font-bold px-1.5 py-0.5 rounded bg-amber-500/20 text-accent border border-amber-500/30">
+                  10 Soal
+                </span>
+              </button>
               {onOpenKana && (
                 <button
                   onClick={() => {

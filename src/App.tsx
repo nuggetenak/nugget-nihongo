@@ -18,6 +18,9 @@ import { ConjugationModal } from './components/grammar/ConjugationModal';
 import { NuanceCompareModal } from './components/grammar/NuanceCompareModal';
 import { PatchNotesModal } from './components/ui/PatchNotesModal';
 import { KotowazaModal } from './components/kotowaza/KotowazaModal';
+import { StudyToolboxModal } from './components/tools/StudyToolboxModal';
+import { CatPlacementModal } from './components/cat/CatPlacementModal';
+import { ContextualSenseiSheet } from './components/sensei/ContextualSenseiSheet';
 import { usePwaStore } from './lib/pwa/pwaStore';
 import { useAuthStore } from './lib/supabase/authStore';
 import { NormalizedVocab, NormalizedGrammar } from './lib/data/dataManager';
@@ -41,6 +44,14 @@ export const App: React.FC = () => {
     closePatchNotes,
     isKotowazaOpen,
     closeKotowaza,
+    isToolboxOpen,
+    closeToolbox,
+    isCatPlacementOpen,
+    closeCatPlacement,
+    openCatPlacement,
+    openKotowaza,
+    openFeatureGuide,
+    theme,
   } = useAppStore();
   const { initPwa } = usePwaStore();
   const { initAuth } = useAuthStore();
@@ -52,6 +63,19 @@ export const App: React.FC = () => {
   const [isMobileDrawerOpen, setIsMobileDrawerOpen] = useState(false);
   const [selectedModalItem, setSelectedModalItem] = useState<(NormalizedVocab | NormalizedGrammar) | null>(null);
   const [modalItemType, setModalItemType] = useState<'vocab' | 'grammar'>('vocab');
+
+  // Sync dark/light theme to document root
+  useEffect(() => {
+    if (typeof document !== 'undefined') {
+      if (theme === 'light') {
+        document.documentElement.classList.add('light');
+        document.documentElement.classList.remove('dark');
+      } else {
+        document.documentElement.classList.remove('light');
+        document.documentElement.classList.add('dark');
+      }
+    }
+  }, [theme]);
 
   // Initialize PWA Service Worker, Supabase Auth session, & Streak Check on mount
   useEffect(() => {
@@ -263,6 +287,28 @@ export const App: React.FC = () => {
         isOpen={isKotowazaOpen}
         onClose={closeKotowaza}
       />
+
+      {/* Unified Kotak Peralatan Belajar (Study Toolbox Modal) */}
+      <StudyToolboxModal
+        isOpen={isToolboxOpen}
+        onClose={closeToolbox}
+        onOpenKana={() => setIsKanaOpen(true)}
+        onOpenConjugation={() => setIsConjugationOpen(true)}
+        onOpenNuance={() => setIsNuanceOpen(true)}
+        onOpenKotowaza={openKotowaza}
+        onOpenCatPlacement={openCatPlacement}
+        onOpenFeatureGuide={openFeatureGuide}
+        onOpenShortcuts={() => setIsShortcutsOpen(true)}
+      />
+
+      {/* Adaptive Diagnostic Placement Test (CAT) Modal */}
+      <CatPlacementModal
+        isOpen={isCatPlacementOpen}
+        onClose={closeCatPlacement}
+      />
+
+      {/* Context-Injected Sensei Studio Bottom Sheet */}
+      <ContextualSenseiSheet />
     </div>
   );
 };

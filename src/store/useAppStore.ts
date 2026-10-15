@@ -84,6 +84,40 @@ export interface AppState {
   openKotowaza: () => void;
   closeKotowaza: () => void;
 
+  // Study Toolbox & Adaptive Placement Modal
+  isToolboxOpen: boolean;
+  openToolbox: () => void;
+  closeToolbox: () => void;
+  isCatPlacementOpen: boolean;
+  openCatPlacement: () => void;
+  closeCatPlacement: () => void;
+  lastStudiedLesson: { trackId: string; unitId: string; lessonId: string; title?: string } | null;
+  setLastStudiedLesson: (lesson: { trackId: string; unitId: string; lessonId: string; title?: string }) => void;
+
+  // Contextual Sensei Sheet Modal
+  isSenseiSheetOpen: boolean;
+  senseiSheetContext: {
+    id: string;
+    type: 'grammar' | 'vocab' | 'quiz' | 'kanji';
+    level: string;
+    target: string;
+    meaning_id?: string;
+    structure?: string;
+    exampleJa?: string;
+    exampleId?: string;
+  } | null;
+  openSenseiSheet: (ctx: {
+    id: string;
+    type: 'grammar' | 'vocab' | 'quiz' | 'kanji';
+    level: string;
+    target: string;
+    meaning_id?: string;
+    structure?: string;
+    exampleJa?: string;
+    exampleId?: string;
+  }) => void;
+  closeSenseiSheet: () => void;
+
   // Reset entire store
   resetAllData: () => void;
 }
@@ -108,6 +142,16 @@ function getStoredCards(): Record<string, { card: FSRSCard; source?: string }> {
     return raw ? JSON.parse(raw) : {};
   } catch {
     return {};
+  }
+}
+
+function getStoredLastStudiedLesson(): { trackId: string; unitId: string; lessonId: string; title?: string } | null {
+  if (typeof window === 'undefined') return null;
+  try {
+    const raw = localStorage.getItem('nn_last_studied_lesson');
+    return raw ? JSON.parse(raw) : null;
+  } catch {
+    return null;
   }
 }
 
@@ -148,13 +192,25 @@ export const useAppStore = create<AppState>((set, get) => ({
   },
 
   activeLessonContext: getInitialLessonContext(),
+  lastStudiedLesson: getStoredLastStudiedLesson(),
+  setLastStudiedLesson: (lesson) => {
+    set({ lastStudiedLesson: lesson });
+    if (typeof window !== 'undefined') {
+      try {
+        localStorage.setItem('nn_last_studied_lesson', JSON.stringify(lesson));
+      } catch {}
+    }
+  },
   openLessonStudy: (trackId, unitId, lessonId, trackType = 'curriculum') => {
+    const lastLesson = { trackId, unitId, lessonId };
     set({
       activeLessonContext: { trackId, unitId, lessonId, trackType },
+      lastStudiedLesson: lastLesson,
       activeTab: 'study',
     });
     if (typeof window !== 'undefined') {
       try {
+        localStorage.setItem('nn_last_studied_lesson', JSON.stringify(lastLesson));
         history.replaceState(null, '', '#study?track=' + trackId + '&unit=' + unitId + '&lesson=' + lessonId + '&type=' + trackType);
       } catch {}
     }
@@ -321,12 +377,21 @@ export const useAppStore = create<AppState>((set, get) => ({
     }
   },
 
-  theme: 'dark',
+  theme: (typeof window !== 'undefined' ? (localStorage.getItem('bunpou-theme') as 'dark' | 'light') : 'dark') || 'dark',
   toggleTheme: () => {
     const nextTheme = get().theme === 'dark' ? 'light' : 'dark';
     set({ theme: nextTheme });
     if (typeof window !== 'undefined') {
-      try { localStorage.setItem('bunpou-theme', nextTheme); } catch {}
+      try {
+        localStorage.setItem('bunpou-theme', nextTheme);
+        if (nextTheme === 'light') {
+          document.documentElement.classList.add('light');
+          document.documentElement.classList.remove('dark');
+        } else {
+          document.documentElement.classList.remove('light');
+          document.documentElement.classList.add('dark');
+        }
+      } catch {}
     }
   },
   showFurigana: true,
@@ -400,6 +465,19 @@ export const useAppStore = create<AppState>((set, get) => ({
   isKotowazaOpen: false,
   openKotowaza: () => set({ isKotowazaOpen: true }),
   closeKotowaza: () => set({ isKotowazaOpen: false }),
+
+  isToolboxOpen: false,
+  openToolbox: () => set({ isToolboxOpen: true }),
+  closeToolbox: () => set({ isToolboxOpen: false }),
+
+  isCatPlacementOpen: false,
+  openCatPlacement: () => set({ isCatPlacementOpen: true }),
+  closeCatPlacement: () => set({ isCatPlacementOpen: false }),
+
+  isSenseiSheetOpen: false,
+  senseiSheetContext: null,
+  openSenseiSheet: (ctx) => set({ isSenseiSheetOpen: true, senseiSheetContext: ctx }),
+  closeSenseiSheet: () => set({ isSenseiSheetOpen: false, senseiSheetContext: null }),
 
   resetAllData: () => {
     if (typeof window !== 'undefined') {

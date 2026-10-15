@@ -3,6 +3,35 @@
 > Catatan pembaruan ini disinkronkan secara otomatis dari `src/lib/data/patchNotes.ts`
 > Single Source of Truth: Jalankan `npm run changelog` atau `npm run build` untuk memutakhirkan.
 
+## v19.1.0 (15 Oktober 2026) — Interactive AI Dojo, CAT Diagnostic, Dojo Kanji (2.383 Kanji), & 9-Book Pedagogical Matrix
+
+### Sorotan Pembaruan (Highlights)
+- Dojo Kanji Master: 2.383 Kanji N5–N1, Lensa Kurikulum Buku (GENKI, Minna, Soumatome), Animasi Vektor Goresan (KanjiVG SVG) & Kanvas Latihan Tulis Tangan Interaktif
+- Sensei AI Studio Terintegrasi: Didukung Google Gemini 3.8 Flash dengan Guardrails Anti-Jailbreak, Mode Roleplay Situasional, dan Feedback Pengucapan Audio Asli
+- Mesin Diagnostik Adaptif CAT (Computer Adaptive Testing): 10 Pertanyaan Item Response Theory (IRT) untuk Memetakan Level JLPT & JFT Secara Instan
+- Matriks Metodologi 5W+1H untuk 9 Buku Teks Kanonikal: Penjelasan Pedagogis Komparatif Mengapa Setiap Buku Memiliki Urutan & Metodologi Berbeda
+- Bank Latihan Otentik 9 Seri Buku: Renshuu B/C Minna, Bintang Susun ★ Soumatome & TRY!, Substitusi GENKI, Nuansa Shin Kanzen Master, dan Roleplay QUARTET
+- Overhaul Navigasi & Responsif Multi-Device: Navigasi Bersih 4 Tab [Beranda, Materi, Latihan, Sensei AI], Tombol Lanjut Belajar 1-Ketuk, dan Bebas Bocor di Semua Ukuran Layar
+- Pustaka Kosakata Diperluas: +5.669 Kosakata Baru Terindeks Lengkap Bebas Duplikasi dengan Pengucapan Audio
+
+### Rincian Perubahan (Details)
+#### Dojo Kanji & Visualisasi Animasi Goresan
+- Pustaka Lengkap 2.383 Kanji: Mencakup seluruh kanji N5 (84), N4 (169), N3 (387), N2 (398), dan N1 (1.345) lengkap dengan radikal, Onyomi, Kunyomi, arti Indonesia, dan jukugo.
+- Lensa Kurikulum Buku: Filter kanji spesifik sesuai silabus buku ajar (GENKI I & II 303 kanji, Minna no Nihongo 518 kanji, Nihongo Sou Matome).
+- Animasi Vektor SVG: Visualisasi urutan goresan presisi berbasis KanjiVG dengan kontrol putar, jeda, langkah-demi-langkah, dan kanvas latihan tulis tangan.
+
+#### Sensei AI Studio & Asisten Pembelajaran
+- Didukung Model Cerdas Gemini 3.8 Flash: Respons instan, penjelasan ramah pembelajar Indonesia, dan guardrails keamanan tanpa jailbreak.
+- Mode Interaktif: Bedah tata bahasa mendalam, simulasi roleplay percakapan situasional, dan koreksi tulisan bahasa Jepang.
+- Integrasi Lembar Kontekstual: Tombol [🍵 Tanya Sensei] di setiap penjelasan materi dan pembahasan kuis.
+
+#### Diagnostik CAT & Matriks Pedagogis 5W+1H
+- Computer Adaptive Testing (CAT): 10 soal adaptif dengan parameter diskriminasi, kesulitan, dan tebakan (3PL IRT) untuk mendiagnosis level secara akurat dalam <3 menit.
+- Analisis Metodologi 5W+1H 9 Buku: Membedah filosofi pedagogis di balik setiap buku teks kanonikal untuk membantu pembelajar memahami alasan di balik kurikulum masing-masing buku.
+- Bank Soal Otentik: Latihan ciri khas setiap penerbit terkemuka langsung dapat dimainkan secara interaktif.
+
+---
+
 ## v19.0.0 (15 Oktober 2026) — Master Overhaul: 4 Kategori Kurikulum, 9 Seri Buku, 19 Sektor SSW & Interactive Studio
 
 ### Sorotan Pembaruan (Highlights)

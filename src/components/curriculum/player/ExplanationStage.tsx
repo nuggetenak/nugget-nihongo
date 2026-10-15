@@ -18,6 +18,7 @@ import { PedagogicalFrameworkCard } from './PedagogicalFrameworkCard';
 import { speakJapanese } from '../../../lib/audio/speechEngine';
 import { PitchAccentBadge } from '../interactive/PitchAccentBadge';
 import { KanjiStrokeModal, KanjiDetailInfo } from '../interactive/KanjiStrokeModal';
+import { useAppStore } from '../../../store/useAppStore';
 
 interface ExplanationStageProps {
   explanations?: LessonExplanationSection[];
@@ -32,6 +33,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
   vocabBreakdown = [],
   commonPitfalls = [],
 }) => {
+  const { openSenseiSheet } = useAppStore();
   const [selectedKanji, setSelectedKanji] = useState<KanjiDetailInfo | null>(null);
   const [isKanjiModalOpen, setIsKanjiModalOpen] = useState(false);
 
@@ -116,15 +118,35 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                       </div>
                     </div>
 
-                    <button
-                      type="button"
-                      onClick={() => handlePlayAudio(vb.word)}
-                      className="min-h-[40px] min-w-[40px] p-2 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/20 text-accent transition-colors shrink-0 flex items-center justify-center active:scale-95"
-                      title={`Dengarkan pelafalan ${vb.word}`}
-                      aria-label={`Dengarkan pelafalan ${vb.word}`}
-                    >
-                      <Volume2 className="w-4 h-4" />
-                    </button>
+                    <div className="flex items-center gap-1.5 shrink-0">
+                      <button
+                        type="button"
+                        onClick={() =>
+                          openSenseiSheet({
+                            id: vb.id,
+                            type: 'vocab',
+                            level: 'n5',
+                            target: vb.word,
+                            meaning_id: vb.meaning,
+                          })
+                        }
+                        className="min-h-[40px] min-w-[40px] p-2 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-amber-300 transition-colors flex items-center justify-center active:scale-95"
+                        title={`Tanya Sensei tentang kata ${vb.word}`}
+                        aria-label={`Tanya Sensei tentang kata ${vb.word}`}
+                      >
+                        <span className="text-sm">🍵</span>
+                      </button>
+
+                      <button
+                        type="button"
+                        onClick={() => handlePlayAudio(vb.word)}
+                        className="min-h-[40px] min-w-[40px] p-2 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/20 text-accent transition-colors flex items-center justify-center active:scale-95"
+                        title={`Dengarkan pelafalan ${vb.word}`}
+                        aria-label={`Dengarkan pelafalan ${vb.word}`}
+                      >
+                        <Volume2 className="w-4 h-4" />
+                      </button>
+                    </div>
                   </div>
 
                   <div className="flex flex-wrap items-center gap-1.5 pt-1">
@@ -210,17 +232,36 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
             >
               {/* Header Pola */}
               <div className="flex items-start justify-between gap-2">
-                <div className="space-y-0.5">
+                <div className="space-y-0.5 min-w-0">
                   <span className="text-[10px] font-bold uppercase tracking-wider text-accent bg-accent/15 px-2 py-0.5 rounded-md border border-accent/20">
                     Pola #{idx + 1}
                   </span>
-                  <h3 className="text-base sm:text-lg font-bold text-appText-bright pt-1">
+                  <h3 className="text-base sm:text-lg font-bold text-appText-bright pt-1 truncate">
                     {exp.title}
                   </h3>
                   <div className="text-xs text-appText-muted">
                     {exp.meaning}
                   </div>
                 </div>
+
+                <button
+                  type="button"
+                  onClick={() =>
+                    openSenseiSheet({
+                      id: exp.id || `exp-${idx}`,
+                      type: 'grammar',
+                      level: 'n5',
+                      target: exp.title,
+                      meaning_id: exp.meaning,
+                      structure: exp.formula,
+                    })
+                  }
+                  className="px-3 py-1.5 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-amber-300 font-bold text-xs flex items-center gap-1.5 transition-all active:scale-95 shrink-0 shadow-xs"
+                  title="Tanya penjelasan detail ke Sensei AI"
+                >
+                  <span>🍵</span>
+                  <span className="hidden sm:inline">Tanya Sensei</span>
+                </button>
               </div>
 
               {/* Rumus Formula */}

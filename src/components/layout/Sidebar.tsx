@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, BookOpen, Layers, Sprout, Sparkles, Settings, HelpCircle, History, Quote } from 'lucide-react';
+import { Home, BookOpen, Layers, Sprout, Sparkles, Settings, HelpCircle, History, Quote, Wrench } from 'lucide-react';
 import { useAppStore, AppState } from '../../store/useAppStore';
 import { APP_VERSION } from '../../config/version';
 
@@ -13,7 +13,7 @@ interface NavItem {
 }
 
 export const Sidebar: React.FC = () => {
-  const { activeTab, setActiveTab, openPatchNotes, openKotowaza } = useAppStore();
+  const { activeTab, setActiveTab, openPatchNotes, openKotowaza, openToolbox } = useAppStore();
 
   const navItems: NavItem[] = [
     { id: 'home', label: 'Beranda', jp: 'ホーム', icon: <Home className="w-5 h-5" /> },
@@ -86,6 +86,23 @@ export const Sidebar: React.FC = () => {
             </button>
           );
         })}
+
+        {/* Quick Study Toolbox Button */}
+        <div className="pt-2">
+          <button
+            onClick={openToolbox}
+            className="w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs font-semibold bg-surface-2 hover:bg-surface-3 border border-accent/20 hover:border-accent text-appText-bright transition-all group"
+            title="Buka Kotak Peralatan Belajar (Bagan Kana, Konjugasi, Nuansa, Tes CAT)"
+          >
+            <div className="flex items-center gap-2.5">
+              <Wrench className="w-4 h-4 text-accent group-hover:rotate-12 transition-transform" />
+              <span>Kotak Peralatan</span>
+            </div>
+            <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-amber-500/15 text-accent-hot border border-amber-500/25">
+              7 Alat
+            </span>
+          </button>
+        </div>
       </nav>
 
       {/* Bottom User / Info Card */}

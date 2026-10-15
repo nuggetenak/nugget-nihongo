@@ -20,6 +20,7 @@ import { speakJapanese } from '../lib/audio/tts';
 import { DetailModal } from '../components/ui/DetailModal';
 import { BookTrackBrowser } from '../components/materi/BookTrackBrowser';
 import { CurriculumTrackBrowser } from '../components/materi/CurriculumTrackBrowser';
+import { KanjiDojoView } from '../components/kanji/KanjiDojoView';
 import { KanaChartModal } from '../components/kana/KanaChartModal';
 import { ConjugationModal } from '../components/grammar/ConjugationModal';
 import { NuanceCompareModal } from '../components/grammar/NuanceCompareModal';
@@ -34,7 +35,7 @@ export const MateriHubPage: React.FC = () => {
     cards,
   } = useAppStore();
 
-  const [activeTrack, setActiveTrack] = useState<'kurikulum' | 'jlpt' | 'buku' | 'freeway'>('kurikulum');
+  const [activeTrack, setActiveTrack] = useState<'kurikulum' | 'jlpt' | 'buku' | 'kanji' | 'freeway'>('kurikulum');
   const [activeTab, setActiveTab] = useState<'all' | 'vocab' | 'grammar'>('vocab');
   const [viewMode, setViewMode] = useState<'grid' | 'compact'>('grid');
   const [selectedParticle, setSelectedParticle] = useState<string>('all');
@@ -215,61 +216,80 @@ export const MateriHubPage: React.FC = () => {
         </div>
       </div>
 
-      {/* Robust 4-Column Responsive Segmented Track Switcher (Zero Collision) */}
-      <div className="grid grid-cols-4 gap-1 p-1 bg-surface rounded-2xl border border-accent/20 shadow-sm">
+      {/* Robust Responsive Segmented Track Switcher (Zero Truncation) */}
+      <div className="grid grid-cols-5 gap-1 p-1 bg-surface rounded-2xl border border-accent/20 shadow-sm w-full max-w-full overflow-hidden">
         <button
           onClick={() => setActiveTrack('kurikulum')}
-          className={`py-2 px-1 sm:px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1 sm:gap-2 min-h-[44px] active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
+          className={`py-2 px-1 sm:px-2.5 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1 sm:gap-1.5 min-h-[44px] min-w-0 flex-1 active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
             activeTrack === 'kurikulum'
               ? 'bg-accent text-bg shadow-sm font-extrabold'
               : 'text-appText-muted hover:text-appText-bright hover:bg-surface-2'
           }`}
         >
           <Sparkles className="w-3.5 h-3.5 shrink-0 text-accent-hot" />
-          <span className="truncate">
-            Kurikulum<span className="hidden sm:inline"> Orisinal</span>
+          <span className="min-w-0 truncate text-[11px] sm:text-xs">
+            <span className="sm:hidden">Orisinal</span>
+            <span className="hidden sm:inline">Kurikulum Orisinal</span>
           </span>
         </button>
 
         <button
           onClick={() => setActiveTrack('jlpt')}
-          className={`py-2 px-1 sm:px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1 sm:gap-2 min-h-[44px] active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
+          className={`py-2 px-1 sm:px-2.5 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1 sm:gap-1.5 min-h-[44px] min-w-0 flex-1 active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
             activeTrack === 'jlpt'
               ? 'bg-accent text-bg shadow-sm font-extrabold'
               : 'text-appText-muted hover:text-appText-bright hover:bg-surface-2'
           }`}
         >
           <Award className="w-3.5 h-3.5 shrink-0" />
-          <span className="truncate">
-            <span className="hidden sm:inline">Indeks </span>JLPT
+          <span className="min-w-0 truncate text-[11px] sm:text-xs">
+            <span className="sm:hidden">JLPT</span>
+            <span className="hidden sm:inline">Indeks JLPT</span>
           </span>
         </button>
 
         <button
           onClick={() => setActiveTrack('buku')}
-          className={`py-2 px-1 sm:px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1 sm:gap-2 min-h-[44px] active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
+          className={`py-2 px-1 sm:px-2.5 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1 sm:gap-1.5 min-h-[44px] min-w-0 flex-1 active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
             activeTrack === 'buku'
               ? 'bg-accent text-bg shadow-sm font-extrabold'
               : 'text-appText-muted hover:text-appText-bright hover:bg-surface-2'
           }`}
         >
           <BookMarked className="w-3.5 h-3.5 shrink-0" />
-          <span className="truncate">
-            Buku<span className="hidden sm:inline"> Teks</span>
+          <span className="min-w-0 truncate text-[11px] sm:text-xs">
+            <span className="sm:hidden">9 Buku</span>
+            <span className="hidden sm:inline">Buku Teks</span>
+          </span>
+        </button>
+
+        <button
+          onClick={() => setActiveTrack('kanji')}
+          className={`py-2 px-1 sm:px-2.5 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1 sm:gap-1.5 min-h-[44px] min-w-0 flex-1 active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
+            activeTrack === 'kanji'
+              ? 'bg-accent text-bg shadow-sm font-extrabold'
+              : 'text-appText-muted hover:text-appText-bright hover:bg-surface-2'
+          }`}
+        >
+          <span className="shrink-0 text-xs font-black font-japanese">漢</span>
+          <span className="min-w-0 truncate text-[11px] sm:text-xs">
+            <span className="sm:hidden">Kanji</span>
+            <span className="hidden sm:inline">Dojo Kanji</span>
           </span>
         </button>
 
         <button
           onClick={() => setActiveTrack('freeway')}
-          className={`py-2 px-1 sm:px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1 sm:gap-2 min-h-[44px] active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
+          className={`py-2 px-1 sm:px-2.5 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1 sm:gap-1.5 min-h-[44px] min-w-0 flex-1 active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
             activeTrack === 'freeway'
               ? 'bg-accent text-bg shadow-sm font-extrabold'
               : 'text-appText-muted hover:text-appText-bright hover:bg-surface-2'
           }`}
         >
           <span className="shrink-0 text-xs">🛣️</span>
-          <span className="truncate">
-            Freeway<span className="hidden sm:inline"> (0 Nol)</span>
+          <span className="min-w-0 truncate text-[11px] sm:text-xs">
+            <span className="sm:hidden">0 Nol</span>
+            <span className="hidden sm:inline">Freeway (0 Nol)</span>
           </span>
         </button>
       </div>
@@ -744,6 +764,21 @@ export const MateriHubPage: React.FC = () => {
           onSelectItem={(item, type) => {
             setSelectedItem(item);
             setItemType(type);
+          }}
+        />
+      )}
+
+      {/* Dojo Kanji (2.383 Kanji N5–N1 & Stroke Order Animations) */}
+      {activeTrack === 'kanji' && (
+        <KanjiDojoView
+          onAskSensei={(prompt) => {
+            if (typeof window !== 'undefined') {
+              window.dispatchEvent(
+                new CustomEvent('nn_open_sensei_sheet', {
+                  detail: { initialContext: prompt }
+                })
+              );
+            }
           }}
         />
       )}

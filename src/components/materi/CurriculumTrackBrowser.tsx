@@ -121,10 +121,9 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
     openLessonStudy,
   } = useAppStore();
 
-  // Category filter: JLPT academic, Book series, SSW vocational, or JFT & Life
-  const [trackCategory, setTrackCategory] = useState<'jlpt' | 'books' | 'ssw' | 'jft_life'>(() => {
+  // Category filter: JLPT academic, SSW vocational, or JFT & Life
+  const [trackCategory, setTrackCategory] = useState<'jlpt' | 'ssw' | 'jft_life'>(() => {
     if (activeTrackId.startsWith('ssw')) return 'ssw';
-    if (activeTrackId.startsWith('book')) return 'books';
     if (activeTrackId.startsWith('jft') || activeTrackId === 'seikatsu') return 'jft_life';
     return 'jlpt';
   });
@@ -356,38 +355,17 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
             </div>
           </button>
 
-          {/* Dialect selector button */}
-          <div className="relative shrink-0">
+          {/* Dialect selector button (Triggers Unified Bottom Sheet) */}
+          <div className="shrink-0">
             <button
               type="button"
-              onClick={() => setIsSubstratumDropdownOpen(!isSubstratumDropdownOpen)}
+              onClick={() => setIsSubstratumDropdownOpen(true)}
               className="px-2.5 py-1.5 rounded-xl bg-surface-3 hover:bg-surface border border-accent/20 text-[11px] font-bold text-appText-bright flex items-center gap-1 active:scale-95"
+              aria-label="Pilih Penyesuaian Bahasa Daerah"
             >
               <span>🗣️ {activeSubstratumMeta.label.split(' ')[0]}</span>
               <ChevronDown className="w-3 h-3 text-appText-muted" />
             </button>
-
-            {isSubstratumDropdownOpen && (
-              <div className="absolute right-0 top-full mt-2 w-64 bg-surface-2 border border-accent/30 rounded-2xl shadow-xl p-2 z-40 space-y-1 animate-in fade-in">
-                <div className="px-2 py-1 text-[10px] font-bold uppercase text-appText-muted tracking-wider border-b border-accent/15 mb-1">
-                  Pilih Penyesuaian Bahasa Daerah
-                </div>
-                {DIALECT_OPTIONS.map((opt) => (
-                  <button
-                    key={opt.id}
-                    onClick={() => handleSelectDialect(opt.id)}
-                    className={`w-full min-h-[40px] p-2 rounded-xl text-left text-xs transition-colors flex items-center gap-2 active:scale-95 ${
-                      userSubstratum === opt.id
-                        ? 'bg-accent text-bg font-bold shadow-sm'
-                        : 'text-appText hover:bg-surface-3'
-                    }`}
-                  >
-                    <span>{opt.badge}</span>
-                    <span className="truncate">{opt.label}</span>
-                  </button>
-                ))}
-              </div>
-            )}
           </div>
         </div>
 
@@ -414,8 +392,8 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
       <div className="hidden sm:block space-y-4 sm:space-y-6">
         {/* 1. FOUR CATEGORY TABS & RESEARCH MODAL TRIGGER */}
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-2.5">
-          {/* Category Switcher: JLPT, Buku, SSW, JFT/Hidup */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-1 p-1 bg-surface-2/90 rounded-2xl border border-accent/20 w-full md:w-auto">
+          {/* Category Switcher: JLPT, SSW, JFT/Hidup */}
+          <div className="grid grid-cols-3 gap-1 p-1 bg-surface-2/90 rounded-2xl border border-accent/20 w-full md:w-auto">
             <button
               onClick={() => {
                 setTrackCategory('jlpt');
@@ -431,23 +409,6 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
             >
               <GraduationCap className="w-4 h-4 shrink-0" />
               <span className="truncate">Jalur JLPT</span>
-            </button>
-
-            <button
-              onClick={() => {
-                setTrackCategory('books');
-                if (!activeTrackId.startsWith('book')) {
-                  setActiveTrack('book-genki');
-                }
-              }}
-              className={`min-h-[44px] px-3 sm:px-4 py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
-                trackCategory === 'books'
-                  ? 'bg-accent text-bg shadow-sm font-extrabold'
-                  : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3'
-              }`}
-            >
-              <BookOpen className="w-4 h-4 shrink-0" />
-              <span className="truncate">Jalur Buku Terkenal</span>
             </button>
 
             <button
@@ -520,33 +481,6 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                     <div className="leading-tight text-xs font-bold">{trk.title}</div>
                     <div className="text-[10px] opacity-80 font-normal tabular-nums hidden sm:block">
                       {trk.units} · {completedCount > 0 ? `${completedCount} selesai` : trk.grammarCount}
-                    </div>
-                  </div>
-                </button>
-              );
-            })}
-
-          {trackCategory === 'books' &&
-            bookTracks.map((trk) => {
-              const isSelected = activeTrackId === trk.id;
-              const stats = trackProgress[trk.id];
-              const completedCount = stats?.completedLessons?.length || 0;
-
-              return (
-                <button
-                  key={trk.id}
-                  onClick={() => setActiveTrack(trk.id)}
-                  className={`min-h-[44px] px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-colors border flex items-center gap-1.5 sm:gap-2 shrink-0 active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
-                    isSelected
-                      ? 'bg-amber-500 text-bg border-amber-500 shadow-md font-extrabold'
-                      : 'bg-surface-2 border-accent/20 text-appText-muted hover:text-appText-bright hover:border-accent/40'
-                  }`}
-                >
-                  <span className="text-sm sm:text-base">{trk.icon}</span>
-                  <div className="text-left">
-                    <div className="leading-tight text-xs font-bold">{trk.title}</div>
-                    <div className="text-[10px] opacity-80 font-normal tabular-nums hidden sm:block">
-                      {trk.publisher} · {trk.units} {completedCount > 0 ? `(${completedCount} selesai)` : ''}
                     </div>
                   </div>
                 </button>
@@ -698,48 +632,16 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
             </div>
           </div>
 
-          <div className="relative shrink-0">
+          <div className="shrink-0">
             <button
-              onClick={() => setIsSubstratumDropdownOpen(!isSubstratumDropdownOpen)}
+              type="button"
+              onClick={() => setIsSubstratumDropdownOpen(true)}
               className="min-h-[40px] sm:min-h-[44px] px-3 sm:px-3.5 py-1.5 sm:py-2 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/25 text-appText-bright font-bold text-xs flex items-center gap-1.5 transition-colors active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none"
-              aria-expanded={isSubstratumDropdownOpen}
-              aria-haspopup="listbox"
+              aria-label="Ganti Dialek"
             >
               <span>Ganti Dialek</span>
               <ChevronDown className="w-3.5 h-3.5 text-appText-muted" />
             </button>
-
-            {isSubstratumDropdownOpen && (
-              <div
-                className="absolute right-0 bottom-full sm:bottom-auto sm:top-full mt-2 mb-2 w-72 bg-surface-2 border border-accent/30 rounded-2xl shadow-xl p-2 z-30 space-y-1 animate-in fade-in duration-150"
-                role="listbox"
-              >
-                <div className="px-2 py-1 text-[10px] font-bold uppercase text-appText-muted tracking-wider border-b border-accent/15 mb-1">
-                  Pilih Penyesuaian Bahasa Daerah
-                </div>
-                {DIALECT_OPTIONS.map((opt) => (
-                  <button
-                    key={opt.id}
-                    onClick={() => handleSelectDialect(opt.id)}
-                    className={`w-full min-h-[44px] p-2 rounded-xl text-left text-xs transition-colors flex items-start gap-2 active:scale-95 ${
-                      userSubstratum === opt.id
-                        ? 'bg-accent text-bg font-bold shadow-sm'
-                        : 'text-appText hover:bg-surface-3'
-                    }`}
-                    role="option"
-                    aria-selected={userSubstratum === opt.id}
-                  >
-                    <span className="font-bold shrink-0">{opt.badge}</span>
-                    <div className="min-w-0">
-                      <div className="leading-tight">{opt.label}</div>
-                      <div className={`text-[10px] mt-0.5 line-clamp-1 ${userSubstratum === opt.id ? 'opacity-90' : 'text-appText-muted'}`}>
-                        {opt.desc}
-                      </div>
-                    </div>
-                  </button>
-                ))}
-              </div>
-            )}
           </div>
         </div>
       </div>
@@ -1118,44 +1020,33 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
             </div>
 
             {/* Category Switcher in Modal */}
-            <div className="grid grid-cols-2 gap-1 p-1 bg-surface rounded-xl border border-accent/15">
+            <div className="grid grid-cols-3 gap-1 p-1 bg-surface rounded-xl border border-accent/15">
               <button
                 type="button"
                 onClick={() => setTrackCategory('jlpt')}
-                className={`py-2 px-3 rounded-lg text-xs font-bold transition-all min-h-[40px] ${
+                className={`py-2 px-2.5 rounded-lg text-xs font-bold transition-all min-h-[40px] truncate ${
                   trackCategory === 'jlpt'
                     ? 'bg-accent text-bg shadow-sm font-extrabold'
                     : 'text-appText-muted hover:text-appText-bright'
                 }`}
               >
-                JLPT (N5–N1)
-              </button>
-              <button
-                type="button"
-                onClick={() => setTrackCategory('books')}
-                className={`py-2 px-3 rounded-lg text-xs font-bold transition-all min-h-[40px] ${
-                  trackCategory === 'books'
-                    ? 'bg-accent text-bg shadow-sm font-extrabold'
-                    : 'text-appText-muted hover:text-appText-bright'
-                }`}
-              >
-                Buku Teks
+                JLPT
               </button>
               <button
                 type="button"
                 onClick={() => setTrackCategory('ssw')}
-                className={`py-2 px-3 rounded-lg text-xs font-bold transition-all min-h-[40px] ${
+                className={`py-2 px-2.5 rounded-lg text-xs font-bold transition-all min-h-[40px] truncate ${
                   trackCategory === 'ssw'
                     ? 'bg-accent text-bg shadow-sm font-extrabold'
                     : 'text-appText-muted hover:text-appText-bright'
                 }`}
               >
-                SSW Kerja
+                SSW Vokasional
               </button>
               <button
                 type="button"
                 onClick={() => setTrackCategory('jft_life')}
-                className={`py-2 px-3 rounded-lg text-xs font-bold transition-all min-h-[40px] ${
+                className={`py-2 px-2.5 rounded-lg text-xs font-bold transition-all min-h-[40px] truncate ${
                   trackCategory === 'jft_life'
                     ? 'bg-accent text-bg shadow-sm font-extrabold'
                     : 'text-appText-muted hover:text-appText-bright'
@@ -1198,43 +1089,6 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                           <span className="text-[10px] text-emerald-400 font-bold">{completedCount} tuntas</span>
                         ) : (
                           <span className="text-[10px] text-appText-muted">{trk.grammarCount}</span>
-                        )}
-                      </div>
-                    </button>
-                  );
-                })}
-
-              {trackCategory === 'books' &&
-                bookTracks.map((trk) => {
-                  const isSelected = activeTrackId === trk.id;
-                  const stats = trackProgress[trk.id];
-                  const completedCount = stats?.completedLessons?.length || 0;
-                  return (
-                    <button
-                      key={trk.id}
-                      type="button"
-                      onClick={() => {
-                        setActiveTrack(trk.id);
-                        setIsMobileTrackPickerOpen(false);
-                      }}
-                      className={`w-full p-3 rounded-xl border text-left flex items-center justify-between gap-3 transition-colors min-h-[52px] active:scale-98 ${
-                        isSelected
-                          ? 'bg-amber-500/15 border-amber-500 text-appText-bright font-bold ring-1 ring-amber-500'
-                          : 'bg-surface hover:bg-surface-3 border-accent/15 text-appText'
-                      }`}
-                    >
-                      <div className="flex items-center gap-2.5 min-w-0">
-                        <span className="text-xl shrink-0">{trk.icon}</span>
-                        <div className="min-w-0">
-                          <div className="font-bold text-xs text-appText-bright">{trk.title}</div>
-                          <div className="text-[10px] text-appText-muted">{trk.publisher} · {trk.units}</div>
-                        </div>
-                      </div>
-                      <div className="text-right shrink-0">
-                        {completedCount > 0 ? (
-                          <span className="text-[10px] text-emerald-400 font-bold">{completedCount} tuntas</span>
-                        ) : (
-                          <span className="text-[10px] text-appText-muted">{trk.units}</span>
                         )}
                       </div>
                     </button>
@@ -1329,6 +1183,67 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                 <Info className="w-4 h-4 text-accent" />
                 <span>Pelajari Landasan Riset Kurikulum</span>
               </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* ── UNIFIED DIALECT SELECTOR BOTTOM SHEET MODAL ── */}
+      {isSubstratumDropdownOpen && (
+        <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-4 bg-black/60 backdrop-blur-sm animate-fade-in">
+          <div
+            className="fixed inset-0"
+            onClick={() => setIsSubstratumDropdownOpen(false)}
+            aria-hidden="true"
+          />
+          <div className="relative w-full sm:max-w-md bg-surface-2 border border-accent/30 rounded-t-3xl sm:rounded-3xl shadow-2xl p-4 sm:p-6 z-10 max-h-[85vh] overflow-y-auto space-y-3 animate-slide-up">
+            <div className="w-12 h-1.5 bg-accent/30 rounded-full mx-auto sm:hidden" />
+            
+            <div className="flex items-center justify-between pb-2 border-b border-accent/15">
+              <div>
+                <h3 className="font-extrabold text-sm sm:text-base text-appText-bright flex items-center gap-2">
+                  <span>🗣️</span> Penyesuaian Bahasa Daerah
+                </h3>
+                <p className="text-[11px] text-appText-muted mt-0.5">
+                  Jembatan perbandingan logika tata bahasa dengan bahasa ibumu
+                </p>
+              </div>
+              <button
+                type="button"
+                onClick={() => setIsSubstratumDropdownOpen(false)}
+                className="w-8 h-8 rounded-full bg-surface-3 hover:bg-surface text-appText-muted hover:text-appText-bright flex items-center justify-center text-xs"
+                aria-label="Tutup modal"
+              >
+                ✕
+              </button>
+            </div>
+
+            <div className="space-y-1.5 pt-1">
+              {DIALECT_OPTIONS.map((opt) => (
+                <button
+                  key={opt.id}
+                  type="button"
+                  onClick={() => handleSelectDialect(opt.id)}
+                  className={`w-full min-h-[48px] p-3 rounded-2xl text-left text-xs transition-all flex items-start gap-3 active:scale-98 ${
+                    userSubstratum === opt.id
+                      ? 'bg-accent text-bg font-bold shadow-md ring-2 ring-accent'
+                      : 'bg-surface hover:bg-surface-3 text-appText border border-accent/10'
+                  }`}
+                >
+                  <span className="text-base shrink-0 p-1 rounded-lg bg-surface-2/60">{opt.badge}</span>
+                  <div className="min-w-0 flex-1">
+                    <div className="font-bold leading-tight">{opt.label}</div>
+                    <div className={`text-[11px] mt-0.5 ${userSubstratum === opt.id ? 'text-bg/85' : 'text-appText-muted'}`}>
+                      {opt.desc}
+                    </div>
+                  </div>
+                  {userSubstratum === opt.id && (
+                    <span className="shrink-0 text-xs font-extrabold bg-bg/20 px-2 py-0.5 rounded-full">
+                      ✓ Aktif
+                    </span>
+                  )}
+                </button>
+              ))}
             </div>
           </div>
         </div>

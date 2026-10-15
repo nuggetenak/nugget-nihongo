@@ -6,6 +6,7 @@
 import React from 'react';
 import { BookOpen, Sparkles, Volume2, Languages, HelpCircle } from 'lucide-react';
 import { speakJapanese } from '../../lib/audio/tts';
+import { useAppStore } from '../../store/useAppStore';
 
 interface QuizExplanationDetailProps {
   rawExplanation: string;
@@ -48,6 +49,8 @@ export const QuizExplanationDetail: React.FC<QuizExplanationDetailProps> = ({
     );
   };
 
+  const { openSenseiSheet } = useAppStore();
+
   return (
     <div className="p-4 sm:p-5 rounded-2xl bg-surface-2/95 border border-accent/25 space-y-3 text-xs leading-relaxed animate-in fade-in duration-200 shadow-sm">
       {/* Header bar */}
@@ -56,16 +59,37 @@ export const QuizExplanationDetail: React.FC<QuizExplanationDetailProps> = ({
           <BookOpen className="w-3.5 h-3.5" />
           <span>Penjelasan Mendalam · 解説</span>
         </span>
-        {jpSentence && (
+        <div className="flex items-center gap-1.5">
+          {jpSentence && (
+            <button
+              type="button"
+              onClick={() => speakJapanese(jpSentence)}
+              className="px-2 py-1 rounded-lg bg-surface hover:bg-amber-500/20 text-accent transition-all flex items-center gap-1 font-semibold text-[11px] active:scale-95"
+              title="Dengarkan pelafalan kalimat Jepang"
+            >
+              <Volume2 className="w-3.5 h-3.5" />
+              <span>Audio</span>
+            </button>
+          )}
+
           <button
-            onClick={() => speakJapanese(jpSentence)}
-            className="px-2 py-1 rounded-lg bg-surface hover:bg-amber-500/20 text-accent transition-all flex items-center gap-1 font-semibold text-[11px] active:scale-95"
-            title="Dengarkan pelafalan kalimat Jepang"
+            type="button"
+            onClick={() =>
+              openSenseiSheet({
+                id: `quiz-exp-${Date.now()}`,
+                type: 'quiz',
+                level: 'n5',
+                target: jpSentence || rawExplanation.slice(0, 35),
+                meaning_id: translation || rawExplanation,
+              })
+            }
+            className="px-2.5 py-1 rounded-lg bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-amber-300 font-bold transition-all flex items-center gap-1 text-[11px] active:scale-95 shadow-xs"
+            title="Tanya penjelasan kuis ini ke Sensei AI"
           >
-            <Volume2 className="w-3.5 h-3.5" />
-            <span>Audio</span>
+            <span>🍵</span>
+            <span>Tanya Sensei</span>
           </button>
-        )}
+        </div>
       </div>
 
       {/* Japanese Sentence with breakdown */}

@@ -9,25 +9,25 @@ module.exports = {
     extend: {
       colors: {
         bg: {
-          DEFAULT: '#0D0B08',
-          deep: '#070503',
+          DEFAULT: 'var(--bg)',
+          deep: 'var(--bg-deep, #070503)',
         },
         surface: {
-          DEFAULT: '#181410',
-          2: '#211B13',
-          3: '#2C2418',
-          4: '#3A2F1E',
+          DEFAULT: 'var(--surface)',
+          2: 'var(--surface-2)',
+          3: 'var(--surface-3, #2C2418)',
+          4: 'var(--surface-4, #3A2F1E)',
         },
         accent: {
-          DEFAULT: '#F59E0B',
-          hot: '#FBBF24',
+          DEFAULT: 'var(--accent)',
+          hot: 'var(--accent-hot)',
           ember: '#D97706',
         },
         appText: {
-          DEFAULT: '#FEF3C7',
-          bright: '#FFFBEB',
-          muted: 'rgba(254, 243, 199, 0.56)',
-          dim: 'rgba(254, 243, 199, 0.32)',
+          DEFAULT: 'var(--text)',
+          bright: 'var(--text-bright)',
+          muted: 'var(--text-muted, rgba(254, 243, 199, 0.60))',
+          dim: 'var(--text-dim, rgba(254, 243, 199, 0.35))',
         },
         jlpt: {
           n5: '#C084FC',

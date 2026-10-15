@@ -120,11 +120,16 @@ export const LessonStudyPage: React.FC = () => {
     trackProgress[trackId]?.completedLessons?.includes(currentLesson.id);
 
   // Navigasi langkah internal
-  const stages: Array<{ id: 'dialogue' | 'explanation' | 'drills' | 'cando'; label: string; icon: React.ReactNode }> = [
-    { id: 'dialogue', label: '1. Dialog Otentik', icon: <MessageSquare className="w-4 h-4" /> },
-    { id: 'explanation', label: '2. Bedah Materi & Pola', icon: <BookOpen className="w-4 h-4" /> },
-    { id: 'drills', label: '3. Cek Pemahaman', icon: <HelpCircle className="w-4 h-4" /> },
-    { id: 'cando', label: '4. Tantangan Nyata', icon: <Trophy className="w-4 h-4" /> },
+  const stages: Array<{
+    id: 'dialogue' | 'explanation' | 'drills' | 'cando';
+    label: string;
+    shortLabel: string;
+    icon: React.ReactNode;
+  }> = [
+    { id: 'dialogue', label: '1. Dialog Otentik', shortLabel: '1. Dialog', icon: <MessageSquare className="w-4 h-4 shrink-0" /> },
+    { id: 'explanation', label: '2. Bedah Materi & Pola', shortLabel: '2. Bedah', icon: <BookOpen className="w-4 h-4 shrink-0" /> },
+    { id: 'drills', label: '3. Cek Pemahaman', shortLabel: '3. Kuis', icon: <HelpCircle className="w-4 h-4 shrink-0" /> },
+    { id: 'cando', label: '4. Tantangan Nyata', shortLabel: '4. Can-Do', icon: <Trophy className="w-4 h-4 shrink-0" /> },
   ];
 
   // Handler saat latihan selesai
@@ -266,8 +271,8 @@ export const LessonStudyPage: React.FC = () => {
         </button>
       </div>
 
-      {/* ── 2. BILAH STEPPER 4-TAHAP INTERAKTIF ───────────────────── */}
-      <div className="grid grid-cols-4 gap-1 sm:gap-2 p-1 sm:p-1.5 bg-surface rounded-2xl border border-accent/20 shadow-sm max-w-full">
+      {/* ── 2. BILAH STEPPER 4-TAHAP INTERAKTIF (RESPONSIF & ANTI-TABRAKAN) ───── */}
+      <div className="grid grid-cols-4 gap-1 sm:gap-2 p-1 sm:p-1.5 bg-surface rounded-2xl border border-accent/20 shadow-sm w-full max-w-full overflow-hidden">
         {stages.map((st) => {
           const isActive = activeStage === st.id;
           return (
@@ -275,14 +280,17 @@ export const LessonStudyPage: React.FC = () => {
               key={st.id}
               type="button"
               onClick={() => setActiveStage(st.id)}
-              className={`min-h-[44px] px-2 sm:px-3 py-2 rounded-xl text-xs font-bold transition-all flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-1.5 active:scale-95 ${
+              className={`min-w-0 flex-1 min-h-[44px] px-1 sm:px-3 py-1.5 sm:py-2 rounded-xl text-xs font-bold transition-all flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-1.5 overflow-hidden active:scale-95 ${
                 isActive
                   ? 'bg-accent text-bg shadow-sm font-extrabold'
                   : 'text-appText-muted hover:text-appText-bright hover:bg-surface-2'
               }`}
             >
               <span className="shrink-0">{st.icon}</span>
-              <span className="truncate text-[10px] sm:text-xs">{st.label}</span>
+              <span className="min-w-0 truncate text-[11px] sm:text-xs">
+                <span className="sm:hidden">{st.shortLabel}</span>
+                <span className="hidden sm:inline">{st.label}</span>
+              </span>
             </button>
           );
         })}

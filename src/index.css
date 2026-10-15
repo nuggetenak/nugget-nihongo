@@ -4,20 +4,31 @@
 
 :root {
   --bg: #0D0B08;
+  --bg-deep: #070503;
   --surface: #181410;
   --surface-2: #211B13;
+  --surface-3: #2C2418;
+  --surface-4: #3A2F1E;
   --text: #FEF3C7;
   --text-bright: #FFFBEB;
+  --text-muted: rgba(254, 243, 199, 0.60);
+  --text-dim: rgba(254, 243, 199, 0.35);
   --accent: #F59E0B;
   --accent-hot: #FBBF24;
 }
 
-:root.light {
+:root.light,
+html.light {
   --bg: #FDFBF7;
+  --bg-deep: #F7F1E7;
   --surface: #F5EFE6;
   --surface-2: #EAE0D2;
+  --surface-3: #DFD2BF;
+  --surface-4: #D2C2AA;
   --text: #2D2319;
   --text-bright: #1A130B;
+  --text-muted: rgba(45, 35, 25, 0.68);
+  --text-dim: rgba(45, 35, 25, 0.42);
   --accent: #D97706;
   --accent-hot: #B45309;
 }

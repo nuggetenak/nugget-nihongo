@@ -51,6 +51,49 @@ export const SettingsPage: React.FC = () => {
     openAuthModal, signOut, syncNow
   } = useAuthStore();
 
+  const [apiKeyInput, setApiKeyInput] = useState(() => {
+    return (typeof window !== 'undefined' ? localStorage.getItem('nn_gemini_api_key') : '') || '';
+  });
+  const [isTestingAi, setIsTestingAi] = useState(false);
+
+  const handleSaveApiKey = () => {
+    if (apiKeyInput.trim()) {
+      localStorage.setItem('nn_gemini_api_key', apiKeyInput.trim());
+      showToast('Kunci Gemini API tersimpan!', '🔑');
+    } else {
+      localStorage.removeItem('nn_gemini_api_key');
+      showToast('Menggunakan kunci API bawaan lingkungan', '🔄');
+    }
+  };
+
+  const handleTestAi = async () => {
+    setIsTestingAi(true);
+    try {
+      const activeKey =
+        apiKeyInput.trim() ||
+        (typeof window !== 'undefined' ? localStorage.getItem('nn_gemini_api_key') : '') ||
+        import.meta.env.VITE_GEMINI_API_KEY;
+
+      if (!activeKey) throw new Error('API Key belum diisi');
+      const res = await fetch(
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent?key=${activeKey}`,
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            contents: [{ role: 'user', parts: [{ text: 'Halo Sensei, tes koneksi 1 kata.' }] }],
+          }),
+        }
+      );
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      showToast('Koneksi ke Gemini 3.8 Flash Berhasil! 🍵', '✅');
+    } catch (e: any) {
+      showToast(`Gagal: ${e.message}`, '⚠️');
+    } finally {
+      setIsTestingAi(false);
+    }
+  };
+
   const handleExportBackup = () => {
     try {
       const backupData: Record<string, any> = {};
@@ -529,6 +572,75 @@ export const SettingsPage: React.FC = () => {
             <span>Impor Cadangan</span>
             <input type="file" accept=".json" onChange={handleImportBackup} className="hidden" />
           </label>
+        </div>
+      </div>
+
+      {/* AI Sensei & Google Gemini API Studio */}
+      <div className="bg-surface border border-accent/20 rounded-2xl p-6 space-y-5">
+        <div className="flex items-center justify-between border-b border-accent/15 pb-3">
+          <h2 className="font-bold text-sm text-appText-bright flex items-center gap-2">
+            <span className="text-base">🍵</span>
+            <span>Sensei AI Studio & Kunci API Google Gemini</span>
+          </h2>
+          <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 font-bold text-[10px] uppercase tracking-wider">
+            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping" />
+            Gemini 3.8 Flash
+          </span>
+        </div>
+
+        <p className="text-xs text-appText-muted leading-relaxed">
+          Sensei Nugget & Senpai Aoi ditenagai oleh model AI multimodal Google Gemini. Kunci API lingkungan telah terpasang secara aman. Kamu juga dapat memasukkan kunci API kustom dari Google AI Studio secara independen.
+        </p>
+
+        <div className="space-y-3">
+          <label className="block text-xs font-semibold text-appText-bright">
+            Kunci API Google AI Studio (Opsional / Override):
+          </label>
+          <div className="flex flex-col sm:flex-row items-center gap-2">
+            <input
+              type="password"
+              value={apiKeyInput}
+              onChange={(e) => setApiKeyInput(e.target.value)}
+              placeholder="AQ.Ab8... atau biarkan kosong untuk bawaan lingkungan"
+              className="w-full flex-1 bg-surface-2 border border-accent/20 focus:border-accent rounded-xl px-3.5 py-2 text-xs font-mono text-appText-bright placeholder:text-appText-muted/50 focus:outline-hidden"
+            />
+            <div className="flex items-center gap-2 w-full sm:w-auto">
+              <button
+                type="button"
+                onClick={handleSaveApiKey}
+                className="flex-1 sm:flex-none px-4 py-2 rounded-xl bg-accent text-bg font-bold text-xs hover:bg-accent-hot transition-all active:scale-95"
+              >
+                Simpan
+              </button>
+              <button
+                type="button"
+                disabled={isTestingAi}
+                onClick={handleTestAi}
+                className="flex-1 sm:flex-none px-4 py-2 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/25 text-accent font-bold text-xs flex items-center justify-center gap-1.5 transition-all active:scale-95"
+              >
+                {isTestingAi ? (
+                  <>
+                    <RefreshCw className="w-3.5 h-3.5 animate-spin" />
+                    <span>Menguji...</span>
+                  </>
+                ) : (
+                  <span>Tes Koneksi</span>
+                )}
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div className="p-3.5 rounded-xl bg-surface-2/60 border border-accent/10 space-y-1 text-xs text-appText-muted">
+          <div className="font-semibold text-appText-bright flex items-center gap-1.5">
+            <Sparkles className="w-3.5 h-3.5 text-accent" />
+            <span>Karakteristik Voice & Tutor Aktif:</span>
+          </div>
+          <ul className="list-disc list-inside space-y-0.5 text-[11px] pt-1">
+            <li><strong>Sensei Nugget:</strong> Senpai to the point, pitch 0.95 (analogi tajam tanpa basa-basi).</li>
+            <li><strong>Senpai Aoi:</strong> Tutor ramah & sabar, pitch 1.15 (analogi kehidupan sehari-hari).</li>
+            <li><strong>Keamanan:</strong> Dilengkapi pertahanan prompt injection dan guardrails ramah budaya (*malu-awareness*).</li>
+          </ul>
         </div>
       </div>
 

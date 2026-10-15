@@ -1,0 +1,7220 @@
+// Nugget Nihongo Enriched Kanji Database — N5
+// 100% Idea-Expression Distinction & Pedagogical Enrichment
+window.nuggetKanjiN5 = [
+  {
+    "id": "kj-n5-001",
+    "character": "日",
+    "unicode": "065e5",
+    "level": "N5",
+    "strokes": 4,
+    "grade": 1,
+    "freq_rank": 1,
+    "radical": {
+      "character": "日",
+      "number": 72,
+      "strokes": 4,
+      "name_ja": "ひ",
+      "name_id": "Matahari / Hari"
+    },
+    "readings": {
+      "onyomi": [
+        "ニチ",
+        "ジツ"
+      ],
+      "kunyomi": [
+        "ひ",
+        "-び",
+        "-か"
+      ],
+      "nanori": [
+        "あ",
+        "あき",
+        "いる",
+        "く",
+        "くさ",
+        "こう",
+        "す",
+        "たち",
+        "に",
+        "にっ",
+        "につ",
+        "へ"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "hari",
+        "matahari",
+        "Jepang",
+        "satuan hitung hari"
+      ],
+      "en": [
+        "day",
+        "sun",
+        "Japan",
+        "counter for days"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Matahari (日)"
+      ],
+      "hint_id": "Bentuk piktograf visual Matahari (日) yang melambangkan konsep 'hari'."
+    },
+    "jukugo": [
+      {
+        "word": "明日",
+        "reading": "あした",
+        "meaning_id": "besok"
+      },
+      {
+        "word": "一日",
+        "reading": "いちにち",
+        "meaning_id": "satu hari / tanggal satu"
+      },
+      {
+        "word": "五日",
+        "reading": "いつか",
+        "meaning_id": "lima hari / tanggal 5"
+      },
+      {
+        "word": "昨日",
+        "reading": "きのう",
+        "meaning_id": "kemarin"
+      },
+      {
+        "word": "今日",
+        "reading": "きょう",
+        "meaning_id": "hari ini"
+      },
+      {
+        "word": "九日",
+        "reading": "ここのか",
+        "meaning_id": "sembilan hari / tanggal 9"
+      },
+      {
+        "word": "十日",
+        "reading": "とおか",
+        "meaning_id": "sepuluh hari / tanggal 10"
+      },
+      {
+        "word": "七日",
+        "reading": "なのか",
+        "meaning_id": "tujuh hari / tanggal 7"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-002",
+    "character": "一",
+    "unicode": "04e00",
+    "level": "N5",
+    "strokes": 1,
+    "grade": 1,
+    "freq_rank": 2,
+    "radical": {
+      "character": "一",
+      "number": 1,
+      "strokes": 1,
+      "name_ja": "いち",
+      "name_id": "Satu / Garis horizontal"
+    },
+    "readings": {
+      "onyomi": [
+        "イチ",
+        "イツ"
+      ],
+      "kunyomi": [
+        "ひと-",
+        "ひと.つ"
+      ],
+      "nanori": [
+        "かず",
+        "い",
+        "いっ",
+        "いる",
+        "かつ",
+        "かづ",
+        "てん",
+        "はじめ",
+        "ひ",
+        "ひとつ",
+        "まこと"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "satu",
+        "one radical (no.1)"
+      ],
+      "en": [
+        "one",
+        "one radical (no.1)"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Garis Satu (一)"
+      ],
+      "hint_id": "Bentuk piktograf visual Garis Satu (一) yang melambangkan konsep 'satu'."
+    },
+    "jukugo": [
+      {
+        "word": "一",
+        "reading": "いち",
+        "meaning_id": "satu"
+      },
+      {
+        "word": "一日",
+        "reading": "いちにち",
+        "meaning_id": "satu hari / tanggal satu"
+      },
+      {
+        "word": "一緒",
+        "reading": "いっしょ",
+        "meaning_id": "together"
+      },
+      {
+        "word": "一つ",
+        "reading": "ひとつ",
+        "meaning_id": "satu"
+      },
+      {
+        "word": "一月",
+        "reading": "ひとつき",
+        "meaning_id": "one month"
+      },
+      {
+        "word": "一人",
+        "reading": "ひとり",
+        "meaning_id": "one person"
+      },
+      {
+        "word": "一昨日",
+        "reading": "おととい",
+        "meaning_id": "day before yesterday"
+      },
+      {
+        "word": "一昨年",
+        "reading": "おととし",
+        "meaning_id": "year before last"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-003",
+    "character": "国",
+    "unicode": "056fd",
+    "level": "N5",
+    "strokes": 8,
+    "grade": 2,
+    "freq_rank": 3,
+    "radical": {
+      "character": "囗",
+      "number": 31,
+      "strokes": 3,
+      "name_ja": "くにがまえ",
+      "name_id": "Kurungan / Batas keliling"
+    },
+    "readings": {
+      "onyomi": [
+        "コク"
+      ],
+      "kunyomi": [
+        "くに"
+      ],
+      "nanori": [
+        "くな",
+        "こ"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "negara"
+      ],
+      "en": [
+        "country"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Mulut (口)",
+        "King (囗)",
+        "Drop (囗)"
+      ],
+      "hint_id": "Gabungan dari Mulut (口) dan King (囗) dan Drop (囗) yang membentuk makna visual 'negara'."
+    },
+    "jukugo": [
+      {
+        "word": "国",
+        "reading": "くに",
+        "meaning_id": "negara"
+      },
+      {
+        "word": "外国",
+        "reading": "がいこく",
+        "meaning_id": "foreign country"
+      },
+      {
+        "word": "外国人",
+        "reading": "がいこくじん",
+        "meaning_id": "foreigner"
+      },
+      {
+        "word": "国際",
+        "reading": "こくさい",
+        "meaning_id": "international"
+      },
+      {
+        "word": "国語",
+        "reading": "こくご",
+        "meaning_id": "national language"
+      },
+      {
+        "word": "国民",
+        "reading": "こくみん",
+        "meaning_id": "national"
+      },
+      {
+        "word": "国家",
+        "reading": "こっか",
+        "meaning_id": "negara bagian"
+      },
+      {
+        "word": "国会",
+        "reading": "こっかい",
+        "meaning_id": "National Diet"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-004",
+    "character": "人",
+    "unicode": "04eba",
+    "level": "N5",
+    "strokes": 2,
+    "grade": 1,
+    "freq_rank": 5,
+    "radical": {
+      "character": "人",
+      "number": 9,
+      "strokes": 2,
+      "name_ja": "ひと",
+      "name_id": "Orang / Manusia"
+    },
+    "readings": {
+      "onyomi": [
+        "ジン",
+        "ニン"
+      ],
+      "kunyomi": [
+        "ひと",
+        "-り",
+        "-と"
+      ],
+      "nanori": [
+        "じ",
+        "と",
+        "ね",
+        "ひこ",
+        "ふみ"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "orang / manusia"
+      ],
+      "en": [
+        "person"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Orang (人)"
+      ],
+      "hint_id": "Bentuk piktograf visual Orang (人) yang melambangkan konsep 'orang / manusia'."
+    },
+    "jukugo": [
+      {
+        "word": "人",
+        "reading": "ひと",
+        "meaning_id": "orang"
+      },
+      {
+        "word": "大人",
+        "reading": "おとな",
+        "meaning_id": "adult"
+      },
+      {
+        "word": "一人",
+        "reading": "ひとり",
+        "meaning_id": "one person"
+      },
+      {
+        "word": "二人",
+        "reading": "ふたり",
+        "meaning_id": "two people"
+      },
+      {
+        "word": "外国人",
+        "reading": "がいこくじん",
+        "meaning_id": "foreigner"
+      },
+      {
+        "word": "人口",
+        "reading": "じんこう",
+        "meaning_id": "population"
+      },
+      {
+        "word": "人形",
+        "reading": "にんぎょう",
+        "meaning_id": "doll"
+      },
+      {
+        "word": "御主人",
+        "reading": "ごしゅじん",
+        "meaning_id": "(honorable) your husband"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-005",
+    "character": "年",
+    "unicode": "05e74",
+    "level": "N5",
+    "strokes": 6,
+    "grade": 1,
+    "freq_rank": 6,
+    "radical": {
+      "character": "干",
+      "number": 51,
+      "strokes": 3,
+      "name_ja": "かん",
+      "name_id": "Perisai / Kering"
+    },
+    "readings": {
+      "onyomi": [
+        "ネン"
+      ],
+      "kunyomi": [
+        "とし"
+      ],
+      "nanori": [
+        "ね"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "tahun",
+        "satuan tahun"
+      ],
+      "en": [
+        "year",
+        "counter for years"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Gun (干)",
+        "Cow (干)"
+      ],
+      "hint_id": "Gabungan dari Gun (干) dan Cow (干) yang membentuk makna visual 'tahun'."
+    },
+    "jukugo": [
+      {
+        "word": "年",
+        "reading": "とし",
+        "meaning_id": "tahun"
+      },
+      {
+        "word": "去年",
+        "reading": "きょねん",
+        "meaning_id": "tahun lalu"
+      },
+      {
+        "word": "今年",
+        "reading": "ことし",
+        "meaning_id": "tahun ini"
+      },
+      {
+        "word": "毎年",
+        "reading": "まいねん",
+        "meaning_id": "every year"
+      },
+      {
+        "word": "来年",
+        "reading": "らいねん",
+        "meaning_id": "tahun depan"
+      },
+      {
+        "word": "一昨年",
+        "reading": "おととし",
+        "meaning_id": "year before last"
+      },
+      {
+        "word": "再来年",
+        "reading": "さらいねん",
+        "meaning_id": "year after next"
+      },
+      {
+        "word": "万年筆",
+        "reading": "まんねんひつ",
+        "meaning_id": "fountain pen"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-006",
+    "character": "大",
+    "unicode": "05927",
+    "level": "N5",
+    "strokes": 3,
+    "grade": 1,
+    "freq_rank": 7,
+    "radical": {
+      "character": "大",
+      "number": 37,
+      "strokes": 3,
+      "name_ja": "だい",
+      "name_id": "Besar"
+    },
+    "readings": {
+      "onyomi": [
+        "ダイ",
+        "タイ"
+      ],
+      "kunyomi": [
+        "おお-",
+        "おお.きい",
+        "-おお.いに"
+      ],
+      "nanori": [
+        "うふ",
+        "お",
+        "おう",
+        "た",
+        "たかし",
+        "とも",
+        "はじめ",
+        "ひろ",
+        "ひろし",
+        "まさ",
+        "まさる",
+        "もと",
+        "わ"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "besar"
+      ],
+      "en": [
+        "large",
+        "big"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Big (大)"
+      ],
+      "hint_id": "Bentuk piktograf visual Big (大) yang melambangkan konsep 'besar'."
+    },
+    "jukugo": [
+      {
+        "word": "大勢",
+        "reading": "おおぜい",
+        "meaning_id": "great number of people"
+      },
+      {
+        "word": "大人",
+        "reading": "おとな",
+        "meaning_id": "adult"
+      },
+      {
+        "word": "大学",
+        "reading": "だいがく",
+        "meaning_id": "universitas"
+      },
+      {
+        "word": "大切",
+        "reading": "たいせつ",
+        "meaning_id": "important"
+      },
+      {
+        "word": "大きい",
+        "reading": "おおきい",
+        "meaning_id": "besar"
+      },
+      {
+        "word": "大きな",
+        "reading": "おおきな",
+        "meaning_id": "besar"
+      },
+      {
+        "word": "大使館",
+        "reading": "たいしかん",
+        "meaning_id": "embassy"
+      },
+      {
+        "word": "大丈夫",
+        "reading": "だいじょうぶ",
+        "meaning_id": "all right"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-007",
+    "character": "十",
+    "unicode": "05341",
+    "level": "N5",
+    "strokes": 2,
+    "grade": 1,
+    "freq_rank": 8,
+    "radical": {
+      "character": "十",
+      "number": 24,
+      "strokes": 2,
+      "name_ja": "じゅう",
+      "name_id": "Sepuluh / Sempurna"
+    },
+    "readings": {
+      "onyomi": [
+        "ジュウ",
+        "ジッ",
+        "ジュッ"
+      ],
+      "kunyomi": [
+        "とお",
+        "と",
+        "そ"
+      ],
+      "nanori": [
+        "い",
+        "か",
+        "ぎ",
+        "さ",
+        "し",
+        "そう",
+        "ち",
+        "とう",
+        "ね",
+        "ま",
+        "る",
+        "わ"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "sepuluh"
+      ],
+      "en": [
+        "ten"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Cross (十)"
+      ],
+      "hint_id": "Bentuk piktograf visual Cross (十) yang melambangkan konsep 'sepuluh'."
+    },
+    "jukugo": [
+      {
+        "word": "十",
+        "reading": "じゅう",
+        "meaning_id": "sepuluh"
+      },
+      {
+        "word": "十日",
+        "reading": "とおか",
+        "meaning_id": "sepuluh hari / tanggal 10"
+      },
+      {
+        "word": "二十歳",
+        "reading": "はたち",
+        "meaning_id": "20 years old"
+      },
+      {
+        "word": "二十日",
+        "reading": "はつか",
+        "meaning_id": "twenty days"
+      },
+      {
+        "word": "十分",
+        "reading": "じゅうぶん",
+        "meaning_id": "enough"
+      },
+      {
+        "word": "五十音",
+        "reading": "ごじゅうおん",
+        "meaning_id": "the Japanese syllabary"
+      },
+      {
+        "word": "十字路",
+        "reading": "じゅうじろ",
+        "meaning_id": "crossroads"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-008",
+    "character": "二",
+    "unicode": "04e8c",
+    "level": "N5",
+    "strokes": 2,
+    "grade": 1,
+    "freq_rank": 9,
+    "radical": {
+      "character": "二",
+      "number": 7,
+      "strokes": 2,
+      "name_ja": "に",
+      "name_id": "Dua"
+    },
+    "readings": {
+      "onyomi": [
+        "ニ",
+        "ジ"
+      ],
+      "kunyomi": [
+        "ふた",
+        "ふた.つ",
+        "ふたたび"
+      ],
+      "nanori": [
+        "おと",
+        "つぐ",
+        "つぎ",
+        "にい",
+        "は",
+        "ふ",
+        "ふたつ",
+        "ふだ",
+        "わ"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "dua",
+        "two radical (no. 7)"
+      ],
+      "en": [
+        "two",
+        "two radical (no. 7)"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Dua (二)"
+      ],
+      "hint_id": "Bentuk piktograf visual Dua (二) yang melambangkan konsep 'dua'."
+    },
+    "jukugo": [
+      {
+        "word": "二",
+        "reading": "に",
+        "meaning_id": "dua"
+      },
+      {
+        "word": "二つ",
+        "reading": "ふたつ",
+        "meaning_id": "dua"
+      },
+      {
+        "word": "二人",
+        "reading": "ふたり",
+        "meaning_id": "two people"
+      },
+      {
+        "word": "二日",
+        "reading": "ふつか",
+        "meaning_id": "dua hari / tanggal 2"
+      },
+      {
+        "word": "二十歳",
+        "reading": "はたち",
+        "meaning_id": "20 years old"
+      },
+      {
+        "word": "二十日",
+        "reading": "はつか",
+        "meaning_id": "twenty days"
+      },
+      {
+        "word": "二階建て",
+        "reading": "にかいだて",
+        "meaning_id": "two storied"
+      },
+      {
+        "word": "真っ二つ",
+        "reading": "まっぷたつ",
+        "meaning_id": "in two equal parts"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-009",
+    "character": "本",
+    "unicode": "0672c",
+    "level": "N5",
+    "strokes": 5,
+    "grade": 1,
+    "freq_rank": 10,
+    "radical": {
+      "character": "木",
+      "number": 75,
+      "strokes": 4,
+      "name_ja": "き",
+      "name_id": "Pohon / Kayu"
+    },
+    "readings": {
+      "onyomi": [
+        "ホン"
+      ],
+      "kunyomi": [
+        "もと"
+      ],
+      "nanori": [
+        "まと",
+        "ごう"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "buku / asal usul",
+        "masa kini",
+        "utama",
+        "asal usul / akar",
+        "true",
+        "real",
+        "satuan hitung long cylindrical things"
+      ],
+      "en": [
+        "book",
+        "present",
+        "main",
+        "origin",
+        "true",
+        "real",
+        "counter for long cylindrical things"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Book (木)"
+      ],
+      "hint_id": "Bentuk piktograf visual Book (木) yang melambangkan konsep 'buku / asal usul'."
+    },
+    "jukugo": [
+      {
+        "word": "本",
+        "reading": "ほん",
+        "meaning_id": "buku"
+      },
+      {
+        "word": "本棚",
+        "reading": "ほんだな",
+        "meaning_id": "bookshelves"
+      },
+      {
+        "word": "基本",
+        "reading": "きほん",
+        "meaning_id": "foundation"
+      },
+      {
+        "word": "資本",
+        "reading": "しほん",
+        "meaning_id": "funds"
+      },
+      {
+        "word": "日本",
+        "reading": "にっぽん",
+        "meaning_id": "Jepang"
+      },
+      {
+        "word": "本人",
+        "reading": "ほんにん",
+        "meaning_id": "the person himself"
+      },
+      {
+        "word": "本物",
+        "reading": "ほんもの",
+        "meaning_id": "genuine article"
+      },
+      {
+        "word": "標本",
+        "reading": "ひょうほん",
+        "meaning_id": "example; specimen"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-010",
+    "character": "中",
+    "unicode": "04e2d",
+    "level": "N5",
+    "strokes": 4,
+    "grade": 1,
+    "freq_rank": 11,
+    "radical": {
+      "character": "丨",
+      "number": 2,
+      "strokes": 1,
+      "name_ja": "ぼう",
+      "name_id": "Garis vertikal"
+    },
+    "readings": {
+      "onyomi": [
+        "チュウ"
+      ],
+      "kunyomi": [
+        "なか",
+        "うち",
+        "あた.る"
+      ],
+      "nanori": [
+        "あたる",
+        "かなえ"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "in",
+        "dalam",
+        "pertengahan",
+        "mean",
+        "pusat"
+      ],
+      "en": [
+        "in",
+        "inside",
+        "middle",
+        "mean",
+        "center"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Middle (丨)"
+      ],
+      "hint_id": "Bentuk piktograf visual Middle (丨) yang melambangkan konsep 'in'."
+    },
+    "jukugo": [
+      {
+        "word": "中",
+        "reading": "なか",
+        "meaning_id": "pertengahan"
+      },
+      {
+        "word": "背中",
+        "reading": "せなか",
+        "meaning_id": "back of the body"
+      },
+      {
+        "word": "途中",
+        "reading": "とちゅう",
+        "meaning_id": "on the way"
+      },
+      {
+        "word": "中々",
+        "reading": "なかなか",
+        "meaning_id": "considerably"
+      },
+      {
+        "word": "中学校",
+        "reading": "ちゅうがっこう",
+        "meaning_id": "junior high school; middle school"
+      },
+      {
+        "word": "真ん中",
+        "reading": "まんなか",
+        "meaning_id": "pertengahan"
+      },
+      {
+        "word": "最中",
+        "reading": "さいちゅう",
+        "meaning_id": "in the middle of"
+      },
+      {
+        "word": "集中",
+        "reading": "しゅうちゅう",
+        "meaning_id": "concentration"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-011",
+    "character": "長",
+    "unicode": "09577",
+    "level": "N5",
+    "strokes": 8,
+    "grade": 2,
+    "freq_rank": 12,
+    "radical": {
+      "character": "長",
+      "number": 168,
+      "strokes": 8,
+      "name_ja": "ながい",
+      "name_id": "Panjang / Pemimpin"
+    },
+    "readings": {
+      "onyomi": [
+        "チョウ"
+      ],
+      "kunyomi": [
+        "なが.い",
+        "おさ"
+      ],
+      "nanori": [
+        "お",
+        "おしゃ",
+        "たかし",
+        "たけ",
+        "な",
+        "は",
+        "ひさ"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "panjang / pemimpin",
+        "leader",
+        "superior",
+        "senior"
+      ],
+      "en": [
+        "long",
+        "leader",
+        "superior",
+        "senior"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Long (長)"
+      ],
+      "hint_id": "Bentuk piktograf visual Long (長) yang melambangkan konsep 'panjang / pemimpin'."
+    },
+    "jukugo": [
+      {
+        "word": "長い",
+        "reading": "ながい",
+        "meaning_id": "panjang / pemimpin"
+      },
+      {
+        "word": "課長",
+        "reading": "かちょう",
+        "meaning_id": "section manager"
+      },
+      {
+        "word": "校長",
+        "reading": "こうちょう",
+        "meaning_id": "headmaster"
+      },
+      {
+        "word": "社長",
+        "reading": "しゃちょう",
+        "meaning_id": "company president"
+      },
+      {
+        "word": "部長",
+        "reading": "ぶちょう",
+        "meaning_id": "head of a section"
+      },
+      {
+        "word": "議長",
+        "reading": "ぎちょう",
+        "meaning_id": "chairman"
+      },
+      {
+        "word": "身長",
+        "reading": "しんちょう",
+        "meaning_id": "height (of body); stature"
+      },
+      {
+        "word": "成長",
+        "reading": "せいちょう",
+        "meaning_id": "growth"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-012",
+    "character": "出",
+    "unicode": "051fa",
+    "level": "N5",
+    "strokes": 5,
+    "grade": 1,
+    "freq_rank": 13,
+    "radical": {
+      "character": "凵",
+      "number": 17,
+      "strokes": 2,
+      "name_ja": "かんにょう",
+      "name_id": "Wadah terbuka / Kotak terbuka"
+    },
+    "readings": {
+      "onyomi": [
+        "シュツ",
+        "スイ"
+      ],
+      "kunyomi": [
+        "で.る",
+        "-で",
+        "だ.す",
+        "-だ.す",
+        "い.でる",
+        "い.だす"
+      ],
+      "nanori": [
+        "いず",
+        "いづ",
+        "いで",
+        "じ",
+        "すっ",
+        "すつ",
+        "てん"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "exit",
+        "leave",
+        "go out",
+        "come out",
+        "put out",
+        "protrude"
+      ],
+      "en": [
+        "exit",
+        "leave",
+        "go out",
+        "come out",
+        "put out",
+        "protrude"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Gunung (山)"
+      ],
+      "hint_id": "Bentuk piktograf visual Gunung (山) yang melambangkan konsep 'exit'."
+    },
+    "jukugo": [
+      {
+        "word": "出す",
+        "reading": "だす",
+        "meaning_id": "me-put out"
+      },
+      {
+        "word": "出口",
+        "reading": "でぐち",
+        "meaning_id": "exit"
+      },
+      {
+        "word": "出る",
+        "reading": "でる",
+        "meaning_id": "me-appear"
+      },
+      {
+        "word": "出かける",
+        "reading": "でかける",
+        "meaning_id": "melakukan go out"
+      },
+      {
+        "word": "出席",
+        "reading": "しゅっせき",
+        "meaning_id": "me-attend"
+      },
+      {
+        "word": "出発",
+        "reading": "しゅっぱつ",
+        "meaning_id": "me-depart"
+      },
+      {
+        "word": "輸出",
+        "reading": "ゆしゅつ",
+        "meaning_id": "melakukan export"
+      },
+      {
+        "word": "思い出す",
+        "reading": "おもいだす",
+        "meaning_id": "melakukan remember"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-013",
+    "character": "三",
+    "unicode": "04e09",
+    "level": "N5",
+    "strokes": 3,
+    "grade": 1,
+    "freq_rank": 14,
+    "radical": {
+      "character": "一",
+      "number": 1,
+      "strokes": 1,
+      "name_ja": "いち",
+      "name_id": "Satu / Garis horizontal"
+    },
+    "readings": {
+      "onyomi": [
+        "サン",
+        "ゾウ"
+      ],
+      "kunyomi": [
+        "み",
+        "み.つ",
+        "みっ.つ"
+      ],
+      "nanori": [
+        "か",
+        "さ",
+        "さい",
+        "さえ",
+        "さぶ",
+        "ざ",
+        "ざえ",
+        "ざぶ",
+        "そう",
+        "ぞ",
+        "ただ",
+        "みつ",
+        "みん",
+        "も",
+        "や"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "tiga"
+      ],
+      "en": [
+        "three"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Garis Satu (一)",
+        "Dua (二)"
+      ],
+      "hint_id": "Gabungan dari Garis Satu (一) dan Dua (二) yang membentuk makna visual 'tiga'."
+    },
+    "jukugo": [
+      {
+        "word": "三",
+        "reading": "さん",
+        "meaning_id": "tiga"
+      },
+      {
+        "word": "三日",
+        "reading": "みっか",
+        "meaning_id": "tiga hari / tanggal 3"
+      },
+      {
+        "word": "三つ",
+        "reading": "みっつ",
+        "meaning_id": "tiga"
+      },
+      {
+        "word": "再三",
+        "reading": "さいさん",
+        "meaning_id": "again and again; repeatedly"
+      },
+      {
+        "word": "三角",
+        "reading": "さんかく",
+        "meaning_id": "triangle; triangular"
+      },
+      {
+        "word": "三日月",
+        "reading": "みかづき",
+        "meaning_id": "new moon; crescent moon"
+      },
+      {
+        "word": "三味線",
+        "reading": "しゃみせん",
+        "meaning_id": "three-stringed Japanese guitar; shamisen"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-014",
+    "character": "時",
+    "unicode": "06642",
+    "level": "N5",
+    "strokes": 10,
+    "grade": 2,
+    "freq_rank": 16,
+    "radical": {
+      "character": "日",
+      "number": 72,
+      "strokes": 4,
+      "name_ja": "ひ",
+      "name_id": "Matahari / Hari"
+    },
+    "readings": {
+      "onyomi": [
+        "ジ"
+      ],
+      "kunyomi": [
+        "とき",
+        "-どき"
+      ],
+      "nanori": [
+        "と",
+        "とぎ"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "waktu / jam",
+        "jam"
+      ],
+      "en": [
+        "time",
+        "hour"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Matahari (日)",
+        "Temple (日)"
+      ],
+      "hint_id": "Gabungan dari Matahari (日) dan Temple (日) yang membentuk makna visual 'waktu / jam'."
+    },
+    "jukugo": [
+      {
+        "word": "時間",
+        "reading": "じかん",
+        "meaning_id": "waktu / jam"
+      },
+      {
+        "word": "時々",
+        "reading": "ときどき",
+        "meaning_id": "sometimes"
+      },
+      {
+        "word": "時計",
+        "reading": "とけい",
+        "meaning_id": "watch"
+      },
+      {
+        "word": "時代",
+        "reading": "じだい",
+        "meaning_id": "era"
+      },
+      {
+        "word": "時",
+        "reading": "とき",
+        "meaning_id": "waktu / jam"
+      },
+      {
+        "word": "一時",
+        "reading": "いちじ",
+        "meaning_id": "moment"
+      },
+      {
+        "word": "時期",
+        "reading": "じき",
+        "meaning_id": "waktu / jam"
+      },
+      {
+        "word": "時刻",
+        "reading": "じこく",
+        "meaning_id": "instant"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-015",
+    "character": "行",
+    "unicode": "0884c",
+    "level": "N5",
+    "strokes": 6,
+    "grade": 2,
+    "freq_rank": 20,
+    "radical": {
+      "character": "行",
+      "number": 144,
+      "strokes": 6,
+      "name_ja": "ぎょう",
+      "name_id": "Perjalanan / Berjalan"
+    },
+    "readings": {
+      "onyomi": [
+        "コウ",
+        "ギョウ",
+        "アン"
+      ],
+      "kunyomi": [
+        "い.く",
+        "ゆ.く",
+        "-ゆ.き",
+        "-ゆき",
+        "-い.き",
+        "-いき",
+        "おこな.う",
+        "おこ.なう"
+      ],
+      "nanori": [
+        "いく",
+        "なみ",
+        "なめ",
+        "みち",
+        "ゆき",
+        "ゆく"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "going",
+        "petualangan",
+        "carry out",
+        "conduct",
+        "act",
+        "line",
+        "row",
+        "bank"
+      ],
+      "en": [
+        "going",
+        "journey",
+        "carry out",
+        "conduct",
+        "act",
+        "line",
+        "row",
+        "bank"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Go (行)"
+      ],
+      "hint_id": "Bentuk piktograf visual Go (行) yang melambangkan konsep 'going'."
+    },
+    "jukugo": [
+      {
+        "word": "行く",
+        "reading": "いく",
+        "meaning_id": "pergi"
+      },
+      {
+        "word": "銀行",
+        "reading": "ぎんこう",
+        "meaning_id": "bank"
+      },
+      {
+        "word": "旅行",
+        "reading": "りょこう",
+        "meaning_id": "perjalanan / wisata"
+      },
+      {
+        "word": "飛行機",
+        "reading": "ひこうき",
+        "meaning_id": "aeroplane"
+      },
+      {
+        "word": "行う",
+        "reading": "おこなう",
+        "meaning_id": "melakukan do"
+      },
+      {
+        "word": "急行",
+        "reading": "きゅうこう",
+        "meaning_id": "speedy; express"
+      },
+      {
+        "word": "飛行場",
+        "reading": "ひこうじょう",
+        "meaning_id": "airport"
+      },
+      {
+        "word": "行き",
+        "reading": "いき",
+        "meaning_id": "going"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-016",
+    "character": "見",
+    "unicode": "0898b",
+    "level": "N5",
+    "strokes": 7,
+    "grade": 1,
+    "freq_rank": 22,
+    "radical": {
+      "character": "見",
+      "number": 147,
+      "strokes": 7,
+      "name_ja": "みる",
+      "name_id": "Melihat"
+    },
+    "readings": {
+      "onyomi": [
+        "ケン"
+      ],
+      "kunyomi": [
+        "み.る",
+        "み.える",
+        "み.せる"
+      ],
+      "nanori": []
+    },
+    "meanings": {
+      "id": [
+        "see",
+        "hopes",
+        "chances",
+        "idea",
+        "opinion",
+        "look at",
+        "visible"
+      ],
+      "en": [
+        "see",
+        "hopes",
+        "chances",
+        "idea",
+        "opinion",
+        "look at",
+        "visible"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "See (見)"
+      ],
+      "hint_id": "Bentuk piktograf visual See (見) yang melambangkan konsep 'see'."
+    },
+    "jukugo": [
+      {
+        "word": "見る",
+        "reading": "みる",
+        "meaning_id": "melihat"
+      },
+      {
+        "word": "見せる",
+        "reading": "みせる",
+        "meaning_id": "melakukan show"
+      },
+      {
+        "word": "意見",
+        "reading": "いけん",
+        "meaning_id": "opinion"
+      },
+      {
+        "word": "見物",
+        "reading": "けんぶつ",
+        "meaning_id": "sightseeing"
+      },
+      {
+        "word": "拝見",
+        "reading": "はいけん",
+        "meaning_id": "(humble) to look at"
+      },
+      {
+        "word": "花見",
+        "reading": "はなみ",
+        "meaning_id": "cherry-blossom viewing"
+      },
+      {
+        "word": "見える",
+        "reading": "みえる",
+        "meaning_id": "me-be in sight"
+      },
+      {
+        "word": "お見舞い",
+        "reading": "おみまい",
+        "meaning_id": "calling on someone who is ill"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-017",
+    "character": "月",
+    "unicode": "06708",
+    "level": "N5",
+    "strokes": 4,
+    "grade": 1,
+    "freq_rank": 23,
+    "radical": {
+      "character": "月",
+      "number": 74,
+      "strokes": 4,
+      "name_ja": "つき",
+      "name_id": "Bulan / Bagian tubuh (daging)"
+    },
+    "readings": {
+      "onyomi": [
+        "ゲツ",
+        "ガツ"
+      ],
+      "kunyomi": [
+        "つき"
+      ],
+      "nanori": [
+        "おと",
+        "がっ",
+        "す",
+        "ずき",
+        "もり"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "bulan",
+        "bulan (angkasa)"
+      ],
+      "en": [
+        "month",
+        "moon"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Bulan (月)"
+      ],
+      "hint_id": "Bentuk piktograf visual Bulan (月) yang melambangkan konsep 'bulan'."
+    },
+    "jukugo": [
+      {
+        "word": "今月",
+        "reading": "こんげつ",
+        "meaning_id": "bulan ini"
+      },
+      {
+        "word": "先月",
+        "reading": "せんげつ",
+        "meaning_id": "bulan lalu"
+      },
+      {
+        "word": "一月",
+        "reading": "ひとつき",
+        "meaning_id": "one month"
+      },
+      {
+        "word": "毎月",
+        "reading": "まいげつ",
+        "meaning_id": "every month"
+      },
+      {
+        "word": "来月",
+        "reading": "らいげつ",
+        "meaning_id": "bulan depan"
+      },
+      {
+        "word": "月曜日",
+        "reading": "げつようび",
+        "meaning_id": "hari Senin"
+      },
+      {
+        "word": "再来月",
+        "reading": "さらいげつ",
+        "meaning_id": "the month after next"
+      },
+      {
+        "word": "月曜",
+        "reading": "げつよう",
+        "meaning_id": "hari Senin"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-018",
+    "character": "分",
+    "unicode": "05206",
+    "level": "N5",
+    "strokes": 4,
+    "grade": 2,
+    "freq_rank": 24,
+    "radical": {
+      "character": "刀",
+      "number": 18,
+      "strokes": 2,
+      "name_ja": "かたな",
+      "name_id": "Pedang / Pisau"
+    },
+    "readings": {
+      "onyomi": [
+        "ブン",
+        "フン",
+        "ブ"
+      ],
+      "kunyomi": [
+        "わ.ける",
+        "わ.け",
+        "わ.かれる",
+        "わ.かる",
+        "わ.かつ"
+      ],
+      "nanori": [
+        "いた",
+        "わけ"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "bagian",
+        "minute of time",
+        "segment",
+        "share",
+        "degree",
+        "one's lot",
+        "duty",
+        "understand",
+        "know",
+        "rate",
+        "1%",
+        "chances",
+        "shaku/100"
+      ],
+      "en": [
+        "part",
+        "minute of time",
+        "segment",
+        "share",
+        "degree",
+        "one's lot",
+        "duty",
+        "understand",
+        "know",
+        "rate",
+        "1%",
+        "chances",
+        "shaku/100"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Fins (刀)",
+        "Pedang (刀)"
+      ],
+      "hint_id": "Gabungan dari Fins (刀) dan Pedang (刀) yang membentuk makna visual 'bagian'."
+    },
+    "jukugo": [
+      {
+        "word": "自分",
+        "reading": "じぶん",
+        "meaning_id": "oneself"
+      },
+      {
+        "word": "半分",
+        "reading": "はんぶん",
+        "meaning_id": "half minute"
+      },
+      {
+        "word": "分かる",
+        "reading": "わかる",
+        "meaning_id": "melakukan be understood"
+      },
+      {
+        "word": "気分",
+        "reading": "きぶん",
+        "meaning_id": "suasana hati"
+      },
+      {
+        "word": "十分",
+        "reading": "じゅうぶん",
+        "meaning_id": "enough"
+      },
+      {
+        "word": "大分",
+        "reading": "だいぶ",
+        "meaning_id": "greatly"
+      },
+      {
+        "word": "分",
+        "reading": "ぶん",
+        "meaning_id": "dividing"
+      },
+      {
+        "word": "部分",
+        "reading": "ぶぶん",
+        "meaning_id": "portion; section"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-019",
+    "character": "後",
+    "unicode": "05f8c",
+    "level": "N5",
+    "strokes": 9,
+    "grade": 2,
+    "freq_rank": 26,
+    "radical": {
+      "character": "彳",
+      "number": 60,
+      "strokes": 3,
+      "name_ja": "ぎょうにんべん",
+      "name_id": "Langkah kaki / Berjalan"
+    },
+    "readings": {
+      "onyomi": [
+        "ゴ",
+        "コウ"
+      ],
+      "kunyomi": [
+        "のち",
+        "うし.ろ",
+        "うしろ",
+        "あと",
+        "おく.れる"
+      ],
+      "nanori": [
+        "こし",
+        "し",
+        "しい",
+        "しり"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "belakang",
+        "punggung",
+        "nanti / kemudian"
+      ],
+      "en": [
+        "behind",
+        "back",
+        "later"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Loiter (彳)",
+        "Poop (彳)",
+        "Winter (彳)"
+      ],
+      "hint_id": "Gabungan dari Loiter (彳) dan Poop (彳) dan Winter (彳) yang membentuk makna visual 'belakang'."
+    },
+    "jukugo": [
+      {
+        "word": "後",
+        "reading": "あと",
+        "meaning_id": "afterwards"
+      },
+      {
+        "word": "後ろ",
+        "reading": "うしろ",
+        "meaning_id": "belakang"
+      },
+      {
+        "word": "午後",
+        "reading": "ごご",
+        "meaning_id": "sore / siang"
+      },
+      {
+        "word": "最後",
+        "reading": "さいご",
+        "meaning_id": "akhir / ujung"
+      },
+      {
+        "word": "後者",
+        "reading": "こうしゃ",
+        "meaning_id": "the latter"
+      },
+      {
+        "word": "今後",
+        "reading": "こんご",
+        "meaning_id": "from now on"
+      },
+      {
+        "word": "明後日",
+        "reading": "みょうごにち",
+        "meaning_id": "lusa"
+      },
+      {
+        "word": "以後",
+        "reading": "いご",
+        "meaning_id": "after this; from now on"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-020",
+    "character": "前",
+    "unicode": "0524d",
+    "level": "N5",
+    "strokes": 9,
+    "grade": 2,
+    "freq_rank": 27,
+    "radical": {
+      "character": "刀",
+      "number": 18,
+      "strokes": 2,
+      "name_ja": "かたな",
+      "name_id": "Pedang / Pisau"
+    },
+    "readings": {
+      "onyomi": [
+        "ゼン"
+      ],
+      "kunyomi": [
+        "まえ",
+        "-まえ"
+      ],
+      "nanori": [
+        "さき",
+        "さと",
+        "まい"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "in front",
+        "sebelum / depan"
+      ],
+      "en": [
+        "in front",
+        "before"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Horns (刀)",
+        "Garis Satu (一)",
+        "Bulan (月)",
+        "Knife (刀)"
+      ],
+      "hint_id": "Gabungan dari Horns (刀) dan Garis Satu (一) dan Bulan (月) dan Knife (刀) yang membentuk makna visual 'in front'."
+    },
+    "jukugo": [
+      {
+        "word": "前",
+        "reading": "まえ",
+        "meaning_id": "sebelum / depan"
+      },
+      {
+        "word": "午前",
+        "reading": "ごぜん",
+        "meaning_id": "pagi"
+      },
+      {
+        "word": "名前",
+        "reading": "なまえ",
+        "meaning_id": "nama"
+      },
+      {
+        "word": "以前",
+        "reading": "いぜん",
+        "meaning_id": "ago"
+      },
+      {
+        "word": "前者",
+        "reading": "ぜんしゃ",
+        "meaning_id": "the former"
+      },
+      {
+        "word": "前進",
+        "reading": "ぜんしん",
+        "meaning_id": "advance"
+      },
+      {
+        "word": "前後",
+        "reading": "ぜんご",
+        "meaning_id": "around; throughout"
+      },
+      {
+        "word": "直前",
+        "reading": "ちょくぜん",
+        "meaning_id": "just before"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-021",
+    "character": "生",
+    "unicode": "0751f",
+    "level": "N5",
+    "strokes": 5,
+    "grade": 1,
+    "freq_rank": 29,
+    "radical": {
+      "character": "生",
+      "number": 100,
+      "strokes": 5,
+      "name_ja": "うまれる",
+      "name_id": "Hidup / Lahir"
+    },
+    "readings": {
+      "onyomi": [
+        "セイ",
+        "ショウ"
+      ],
+      "kunyomi": [
+        "い.きる",
+        "い.かす",
+        "い.ける",
+        "う.まれる",
+        "うま.れる",
+        "う.まれ",
+        "うまれ",
+        "う.む",
+        "お.う",
+        "は.える",
+        "は.やす",
+        "き",
+        "なま",
+        "なま-",
+        "な.る",
+        "な.す",
+        "む.す",
+        "-う"
+      ],
+      "nanori": [
+        "あさ",
+        "いき",
+        "いく",
+        "いけ",
+        "うぶ",
+        "うまい",
+        "え",
+        "おい",
+        "ぎゅう",
+        "くるみ",
+        "ごせ",
+        "さ",
+        "じょう",
+        "すぎ",
+        "そ",
+        "そう",
+        "ちる",
+        "なば",
+        "にう",
+        "にゅう",
+        "ふ",
+        "み",
+        "もう",
+        "よい",
+        "りゅう"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "hidup / kelahiran",
+        "genuine",
+        "birth"
+      ],
+      "en": [
+        "life",
+        "genuine",
+        "birth"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Life (生)"
+      ],
+      "hint_id": "Bentuk piktograf visual Life (生) yang melambangkan konsep 'hidup / kelahiran'."
+    },
+    "jukugo": [
+      {
+        "word": "学生",
+        "reading": "がくせい",
+        "meaning_id": "pelajar / siswa"
+      },
+      {
+        "word": "生徒",
+        "reading": "せいと",
+        "meaning_id": "pupil"
+      },
+      {
+        "word": "先生",
+        "reading": "せんせい",
+        "meaning_id": "guru"
+      },
+      {
+        "word": "誕生日",
+        "reading": "たんじょうび",
+        "meaning_id": "birthday"
+      },
+      {
+        "word": "留学生",
+        "reading": "りゅうがくせい",
+        "meaning_id": "overseas student"
+      },
+      {
+        "word": "生まれる",
+        "reading": "うまれる",
+        "meaning_id": "lahir / hidup"
+      },
+      {
+        "word": "生活",
+        "reading": "せいかつ",
+        "meaning_id": "tinggal / hidup"
+      },
+      {
+        "word": "生産",
+        "reading": "せいさん",
+        "meaning_id": "me-produce"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-022",
+    "character": "五",
+    "unicode": "04e94",
+    "level": "N5",
+    "strokes": 4,
+    "grade": 1,
+    "freq_rank": 31,
+    "radical": {
+      "character": "二",
+      "number": 7,
+      "strokes": 2,
+      "name_ja": "に",
+      "name_id": "Dua"
+    },
+    "readings": {
+      "onyomi": [
+        "ゴ"
+      ],
+      "kunyomi": [
+        "いつ",
+        "いつ.つ"
+      ],
+      "nanori": [
+        "い",
+        "さ",
+        "さつ",
+        "ち",
+        "ふ",
+        "み",
+        "め"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "lima"
+      ],
+      "en": [
+        "five"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Five (二)"
+      ],
+      "hint_id": "Bentuk piktograf visual Five (二) yang melambangkan konsep 'lima'."
+    },
+    "jukugo": [
+      {
+        "word": "五",
+        "reading": "ご",
+        "meaning_id": "lima"
+      },
+      {
+        "word": "五日",
+        "reading": "いつか",
+        "meaning_id": "lima hari / tanggal 5"
+      },
+      {
+        "word": "五つ",
+        "reading": "いつつ",
+        "meaning_id": "lima"
+      },
+      {
+        "word": "五十音",
+        "reading": "ごじゅうおん",
+        "meaning_id": "the Japanese syllabary"
+      },
+      {
+        "word": "四捨五入",
+        "reading": "ししゃごにゅう",
+        "meaning_id": "rounding up (fractions)"
+      },
+      {
+        "word": "五月蝿い",
+        "reading": "うるさい",
+        "meaning_id": "noisy; loud"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-023",
+    "character": "間",
+    "unicode": "09593",
+    "level": "N5",
+    "strokes": 12,
+    "grade": 2,
+    "freq_rank": 33,
+    "radical": {
+      "character": "門",
+      "number": 169,
+      "strokes": 8,
+      "name_ja": "もん",
+      "name_id": "Gerbang / Pintu gerbang"
+    },
+    "readings": {
+      "onyomi": [
+        "カン",
+        "ケン"
+      ],
+      "kunyomi": [
+        "あいだ",
+        "ま",
+        "あい"
+      ],
+      "nanori": [
+        "ちか",
+        "は",
+        "はざ",
+        "はし"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "interval",
+        "ruang angkasa / celah"
+      ],
+      "en": [
+        "interval",
+        "space"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Gerbang (門)",
+        "Matahari (日)"
+      ],
+      "hint_id": "Gabungan dari Gerbang (門) dan Matahari (日) yang membentuk makna visual 'interval'."
+    },
+    "jukugo": [
+      {
+        "word": "時間",
+        "reading": "じかん",
+        "meaning_id": "waktu / jam"
+      },
+      {
+        "word": "間",
+        "reading": "あいだ",
+        "meaning_id": "ruang; jeda waktu; celah"
+      },
+      {
+        "word": "昼間",
+        "reading": "ひるま",
+        "meaning_id": "daytime"
+      },
+      {
+        "word": "間違える",
+        "reading": "まちがえる",
+        "meaning_id": "melakukan make a mistake"
+      },
+      {
+        "word": "間に合う",
+        "reading": "まにあう",
+        "meaning_id": "me-be in time for"
+      },
+      {
+        "word": "居間",
+        "reading": "いま",
+        "meaning_id": "living room (western style)"
+      },
+      {
+        "word": "期間",
+        "reading": "きかん",
+        "meaning_id": "period"
+      },
+      {
+        "word": "週間",
+        "reading": "しゅうかん",
+        "meaning_id": "week; weekly"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-024",
+    "character": "上",
+    "unicode": "04e0a",
+    "level": "N5",
+    "strokes": 3,
+    "grade": 1,
+    "freq_rank": 35,
+    "radical": {
+      "character": "一",
+      "number": 1,
+      "strokes": 1,
+      "name_ja": "いち",
+      "name_id": "Satu / Garis horizontal"
+    },
+    "readings": {
+      "onyomi": [
+        "ジョウ",
+        "ショウ",
+        "シャン"
+      ],
+      "kunyomi": [
+        "うえ",
+        "-うえ",
+        "うわ-",
+        "かみ",
+        "あ.げる",
+        "-あ.げる",
+        "あ.がる",
+        "-あ.がる",
+        "あ.がり",
+        "-あ.がり",
+        "のぼ.る",
+        "のぼ.り",
+        "のぼ.せる",
+        "のぼ.す",
+        "たてまつ.る"
+      ],
+      "nanori": [
+        "あおい",
+        "あげ",
+        "い",
+        "か",
+        "かき",
+        "かず",
+        "かん",
+        "こう",
+        "のぼり",
+        "ほつ"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "atas"
+      ],
+      "en": [
+        "above",
+        "up"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Toe (一)",
+        "Garis Satu (一)"
+      ],
+      "hint_id": "Gabungan dari Toe (一) dan Garis Satu (一) yang membentuk makna visual 'atas'."
+    },
+    "jukugo": [
+      {
+        "word": "上",
+        "reading": "うえ",
+        "meaning_id": "on top of"
+      },
+      {
+        "word": "上着",
+        "reading": "うわぎ",
+        "meaning_id": "jacket"
+      },
+      {
+        "word": "上手",
+        "reading": "じょうず",
+        "meaning_id": "skillful"
+      },
+      {
+        "word": "上げる",
+        "reading": "あげる",
+        "meaning_id": "melakukan give"
+      },
+      {
+        "word": "以上",
+        "reading": "いじょう",
+        "meaning_id": "more than"
+      },
+      {
+        "word": "屋上",
+        "reading": "おくじょう",
+        "meaning_id": "rooftop"
+      },
+      {
+        "word": "上がる",
+        "reading": "あがる",
+        "meaning_id": "melakukan rise"
+      },
+      {
+        "word": "差し上げる",
+        "reading": "さしあげる",
+        "meaning_id": "(polite) to give"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-025",
+    "character": "東",
+    "unicode": "06771",
+    "level": "N5",
+    "strokes": 8,
+    "grade": 2,
+    "freq_rank": 37,
+    "radical": {
+      "character": "木",
+      "number": 75,
+      "strokes": 4,
+      "name_ja": "き",
+      "name_id": "Pohon / Kayu"
+    },
+    "readings": {
+      "onyomi": [
+        "トウ"
+      ],
+      "kunyomi": [
+        "ひがし"
+      ],
+      "nanori": [
+        "あい",
+        "あがり",
+        "あずま",
+        "あづま",
+        "こち",
+        "さき",
+        "しの",
+        "とお",
+        "はる",
+        "ひが",
+        "もと"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "timur"
+      ],
+      "en": [
+        "east"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Pohon (木)",
+        "Matahari (日)"
+      ],
+      "hint_id": "Gabungan dari Pohon (木) dan Matahari (日) yang membentuk makna visual 'timur'."
+    },
+    "jukugo": [
+      {
+        "word": "東",
+        "reading": "ひがし",
+        "meaning_id": "timur"
+      },
+      {
+        "word": "関東",
+        "reading": "かんとう",
+        "meaning_id": "eastern half of Japan; including Tokyo"
+      },
+      {
+        "word": "東西",
+        "reading": "とうざい",
+        "meaning_id": "East and West; whole country"
+      },
+      {
+        "word": "東洋",
+        "reading": "とうよう",
+        "meaning_id": "Orient"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-026",
+    "character": "四",
+    "unicode": "056db",
+    "level": "N5",
+    "strokes": 5,
+    "grade": 1,
+    "freq_rank": 47,
+    "radical": {
+      "character": "囗",
+      "number": 31,
+      "strokes": 3,
+      "name_ja": "くにがまえ",
+      "name_id": "Kurungan / Batas keliling"
+    },
+    "readings": {
+      "onyomi": [
+        "シ"
+      ],
+      "kunyomi": [
+        "よ",
+        "よ.つ",
+        "よっ.つ",
+        "よん"
+      ],
+      "nanori": [
+        "あ",
+        "つ",
+        "よつ"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "empat"
+      ],
+      "en": [
+        "four"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Mulut (口)",
+        "Legs (囗)"
+      ],
+      "hint_id": "Gabungan dari Mulut (口) dan Legs (囗) yang membentuk makna visual 'empat'."
+    },
+    "jukugo": [
+      {
+        "word": "四",
+        "reading": "し",
+        "meaning_id": "empat"
+      },
+      {
+        "word": "四日",
+        "reading": "よっか",
+        "meaning_id": "empat hari / tanggal 4"
+      },
+      {
+        "word": "四つ",
+        "reading": "よっつ",
+        "meaning_id": "empat"
+      },
+      {
+        "word": "四角",
+        "reading": "しかく",
+        "meaning_id": "square"
+      },
+      {
+        "word": "四季",
+        "reading": "しき",
+        "meaning_id": "four seasons"
+      },
+      {
+        "word": "四角い",
+        "reading": "しかくい",
+        "meaning_id": "square"
+      },
+      {
+        "word": "四つ角",
+        "reading": "よつかど",
+        "meaning_id": "four corners; crossroads"
+      },
+      {
+        "word": "四捨五入",
+        "reading": "ししゃごにゅう",
+        "meaning_id": "rounding up (fractions)"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-027",
+    "character": "今",
+    "unicode": "04eca",
+    "level": "N5",
+    "strokes": 4,
+    "grade": 2,
+    "freq_rank": 49,
+    "radical": {
+      "character": "人",
+      "number": 9,
+      "strokes": 2,
+      "name_ja": "ひと",
+      "name_id": "Orang / Manusia"
+    },
+    "readings": {
+      "onyomi": [
+        "コン",
+        "キン"
+      ],
+      "kunyomi": [
+        "いま"
+      ],
+      "nanori": [
+        "な"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "sekarang"
+      ],
+      "en": [
+        "now"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Now (人)"
+      ],
+      "hint_id": "Bentuk piktograf visual Now (人) yang melambangkan konsep 'sekarang'."
+    },
+    "jukugo": [
+      {
+        "word": "今",
+        "reading": "いま",
+        "meaning_id": "sekarang"
+      },
+      {
+        "word": "今日",
+        "reading": "きょう",
+        "meaning_id": "hari ini"
+      },
+      {
+        "word": "今朝",
+        "reading": "けさ",
+        "meaning_id": "this morning"
+      },
+      {
+        "word": "今年",
+        "reading": "ことし",
+        "meaning_id": "tahun ini"
+      },
+      {
+        "word": "今月",
+        "reading": "こんげつ",
+        "meaning_id": "bulan ini"
+      },
+      {
+        "word": "今週",
+        "reading": "こんしゅう",
+        "meaning_id": "minggu ini"
+      },
+      {
+        "word": "今晩",
+        "reading": "こんばん",
+        "meaning_id": "this evening"
+      },
+      {
+        "word": "今度",
+        "reading": "こんど",
+        "meaning_id": "sekarang"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-028",
+    "character": "金",
+    "unicode": "091d1",
+    "level": "N5",
+    "strokes": 8,
+    "grade": 1,
+    "freq_rank": 53,
+    "radical": {
+      "character": "金",
+      "number": 167,
+      "strokes": 8,
+      "name_ja": "かね",
+      "name_id": "Logam / Emas / Uang"
+    },
+    "readings": {
+      "onyomi": [
+        "キン",
+        "コン",
+        "ゴン"
+      ],
+      "kunyomi": [
+        "かね",
+        "かな-",
+        "-がね"
+      ],
+      "nanori": [
+        "かん",
+        "きむ",
+        "こ",
+        "この",
+        "ん"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "emas / logam"
+      ],
+      "en": [
+        "gold"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Logam / Emas (金)"
+      ],
+      "hint_id": "Bentuk piktograf visual Logam / Emas (金) yang melambangkan konsep 'emas / logam'."
+    },
+    "jukugo": [
+      {
+        "word": "お金",
+        "reading": "おかね",
+        "meaning_id": "uang"
+      },
+      {
+        "word": "金曜日",
+        "reading": "きんようび",
+        "meaning_id": "hari Jumat"
+      },
+      {
+        "word": "お金持ち",
+        "reading": "おかねもち",
+        "meaning_id": "rich man"
+      },
+      {
+        "word": "金",
+        "reading": "かね",
+        "meaning_id": "uang"
+      },
+      {
+        "word": "金額",
+        "reading": "きんがく",
+        "meaning_id": "amount of money"
+      },
+      {
+        "word": "金庫",
+        "reading": "きんこ",
+        "meaning_id": "safe"
+      },
+      {
+        "word": "金銭",
+        "reading": "きんせん",
+        "meaning_id": "uang"
+      },
+      {
+        "word": "金属",
+        "reading": "きんぞく",
+        "meaning_id": "metal"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-029",
+    "character": "九",
+    "unicode": "04e5d",
+    "level": "N5",
+    "strokes": 2,
+    "grade": 1,
+    "freq_rank": 55,
+    "radical": {
+      "character": "乙",
+      "number": 5,
+      "strokes": 1,
+      "name_ja": "おつ",
+      "name_id": "Kedua / Belokan"
+    },
+    "readings": {
+      "onyomi": [
+        "キュウ",
+        "ク"
+      ],
+      "kunyomi": [
+        "ここの",
+        "ここの.つ"
+      ],
+      "nanori": [
+        "いちじく",
+        "いちのく",
+        "この",
+        "ひさし"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "sembilan"
+      ],
+      "en": [
+        "nine"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Nine (乙)"
+      ],
+      "hint_id": "Bentuk piktograf visual Nine (乙) yang melambangkan konsep 'sembilan'."
+    },
+    "jukugo": [
+      {
+        "word": "九",
+        "reading": "きゅう",
+        "meaning_id": "sembilan"
+      },
+      {
+        "word": "九日",
+        "reading": "ここのか",
+        "meaning_id": "sembilan hari / tanggal 9"
+      },
+      {
+        "word": "九つ",
+        "reading": "ここのつ",
+        "meaning_id": "sembilan"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-030",
+    "character": "入",
+    "unicode": "05165",
+    "level": "N5",
+    "strokes": 2,
+    "grade": 1,
+    "freq_rank": 56,
+    "radical": {
+      "character": "入",
+      "number": 11,
+      "strokes": 2,
+      "name_ja": "いる",
+      "name_id": "Masuk"
+    },
+    "readings": {
+      "onyomi": [
+        "ニュウ",
+        "ジュ"
+      ],
+      "kunyomi": [
+        "い.る",
+        "-い.る",
+        "-い.り",
+        "い.れる",
+        "-い.れ",
+        "はい.る"
+      ],
+      "nanori": [
+        "いり",
+        "いる",
+        "に",
+        "の",
+        "りり"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "enter",
+        "insert"
+      ],
+      "en": [
+        "enter",
+        "insert"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Enter (入)"
+      ],
+      "hint_id": "Bentuk piktograf visual Enter (入) yang melambangkan konsep 'enter'."
+    },
+    "jukugo": [
+      {
+        "word": "入口",
+        "reading": "いりぐち",
+        "meaning_id": "entrance"
+      },
+      {
+        "word": "入る",
+        "reading": "はいる",
+        "meaning_id": "melakukan enter"
+      },
+      {
+        "word": "入れる",
+        "reading": "いれる",
+        "meaning_id": "melakukan put in"
+      },
+      {
+        "word": "入院",
+        "reading": "にゅういん",
+        "meaning_id": "me-hospitalise"
+      },
+      {
+        "word": "入学",
+        "reading": "にゅうがく",
+        "meaning_id": "me-enter school or university"
+      },
+      {
+        "word": "輸入",
+        "reading": "ゆにゅう",
+        "meaning_id": "melakukan import"
+      },
+      {
+        "word": "押し入れ",
+        "reading": "おしいれ",
+        "meaning_id": "closet"
+      },
+      {
+        "word": "記入",
+        "reading": "きにゅう",
+        "meaning_id": "entry"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-031",
+    "character": "学",
+    "unicode": "05b66",
+    "level": "N5",
+    "strokes": 8,
+    "grade": 1,
+    "freq_rank": 63,
+    "radical": {
+      "character": "子",
+      "number": 39,
+      "strokes": 3,
+      "name_ja": "こ",
+      "name_id": "Anak / Keturunan"
+    },
+    "readings": {
+      "onyomi": [
+        "ガク"
+      ],
+      "kunyomi": [
+        "まな.ぶ"
+      ],
+      "nanori": [
+        "たか",
+        "のり"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "kajian / riset",
+        "belajar",
+        "sains / ilmu pengetahuan"
+      ],
+      "en": [
+        "study",
+        "learning",
+        "science"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Viking (子)",
+        "Anak (子)"
+      ],
+      "hint_id": "Gabungan dari Viking (子) dan Anak (子) yang membentuk makna visual 'kajian / riset'."
+    },
+    "jukugo": [
+      {
+        "word": "学生",
+        "reading": "がくせい",
+        "meaning_id": "pelajar / siswa"
+      },
+      {
+        "word": "学校",
+        "reading": "がっこう",
+        "meaning_id": "sekolah"
+      },
+      {
+        "word": "大学",
+        "reading": "だいがく",
+        "meaning_id": "universitas"
+      },
+      {
+        "word": "留学生",
+        "reading": "りゅうがくせい",
+        "meaning_id": "overseas student"
+      },
+      {
+        "word": "医学",
+        "reading": "いがく",
+        "meaning_id": "medical science"
+      },
+      {
+        "word": "科学",
+        "reading": "かがく",
+        "meaning_id": "sains / ilmu pengetahuan"
+      },
+      {
+        "word": "数学",
+        "reading": "すうがく",
+        "meaning_id": "mathematics; arithmetic"
+      },
+      {
+        "word": "入学",
+        "reading": "にゅうがく",
+        "meaning_id": "me-enter school or university"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-032",
+    "character": "高",
+    "unicode": "09ad8",
+    "level": "N5",
+    "strokes": 10,
+    "grade": 2,
+    "freq_rank": 65,
+    "radical": {
+      "character": "高",
+      "number": 189,
+      "strokes": 10,
+      "name_ja": "たかい",
+      "name_id": "Tinggi"
+    },
+    "readings": {
+      "onyomi": [
+        "コウ"
+      ],
+      "kunyomi": [
+        "たか.い",
+        "たか",
+        "-だか",
+        "たか.まる",
+        "たか.める"
+      ],
+      "nanori": [
+        "か",
+        "こ",
+        "じょい",
+        "た",
+        "はか"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "tall",
+        "tinggi / mahal",
+        "mahal"
+      ],
+      "en": [
+        "tall",
+        "high",
+        "expensive"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Lid (高)",
+        "Mulut (口)",
+        "Mustache (高)"
+      ],
+      "hint_id": "Gabungan dari Lid (高) dan Mulut (口) dan Mustache (高) yang membentuk makna visual 'tall'."
+    },
+    "jukugo": [
+      {
+        "word": "高い",
+        "reading": "たかい",
+        "meaning_id": "tall"
+      },
+      {
+        "word": "高校",
+        "reading": "こうこう",
+        "meaning_id": "SMA"
+      },
+      {
+        "word": "高校生",
+        "reading": "こうこうせい",
+        "meaning_id": "high school student"
+      },
+      {
+        "word": "高等学校",
+        "reading": "こうとうがっこう",
+        "meaning_id": "SMA"
+      },
+      {
+        "word": "高価",
+        "reading": "こうか",
+        "meaning_id": "high price"
+      },
+      {
+        "word": "高速",
+        "reading": "こうそく",
+        "meaning_id": "high speed"
+      },
+      {
+        "word": "最高",
+        "reading": "さいこう",
+        "meaning_id": "highest"
+      },
+      {
+        "word": "高級",
+        "reading": "こうきゅう",
+        "meaning_id": "high class; high grade"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-033",
+    "character": "円",
+    "unicode": "05186",
+    "level": "N5",
+    "strokes": 4,
+    "grade": 1,
+    "freq_rank": 69,
+    "radical": {
+      "character": "冂",
+      "number": 13,
+      "strokes": 2,
+      "name_ja": "けいがまえ",
+      "name_id": "Batas luar / Pinggiran kota"
+    },
+    "readings": {
+      "onyomi": [
+        "エン"
+      ],
+      "kunyomi": [
+        "まる.い",
+        "まる",
+        "まど",
+        "まど.か",
+        "まろ.やか"
+      ],
+      "nanori": [
+        "つぶら",
+        "のぶ",
+        "まどか",
+        "みつ"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "lingkaran",
+        "yen / lingkaran",
+        "bulat / lingkaran"
+      ],
+      "en": [
+        "circle",
+        "yen",
+        "round"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Lid (冂)",
+        "Head (冂)"
+      ],
+      "hint_id": "Gabungan dari Lid (冂) dan Head (冂) yang membentuk makna visual 'lingkaran'."
+    },
+    "jukugo": [
+      {
+        "word": "円",
+        "reading": "えん",
+        "meaning_id": "lingkaran"
+      },
+      {
+        "word": "円周",
+        "reading": "えんしゅう",
+        "meaning_id": "circumference"
+      },
+      {
+        "word": "楕円",
+        "reading": "だえん",
+        "meaning_id": "ellipse"
+      },
+      {
+        "word": "円い",
+        "reading": "まるい",
+        "meaning_id": "bulat / lingkaran"
+      },
+      {
+        "word": "円滑",
+        "reading": "えんかつ",
+        "meaning_id": "harmony; smoothness"
+      },
+      {
+        "word": "円満",
+        "reading": "えんまん",
+        "meaning_id": "perfection; harmony"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-034",
+    "character": "子",
+    "unicode": "05b50",
+    "level": "N5",
+    "strokes": 3,
+    "grade": 1,
+    "freq_rank": 72,
+    "radical": {
+      "character": "子",
+      "number": 39,
+      "strokes": 3,
+      "name_ja": "こ",
+      "name_id": "Anak / Keturunan"
+    },
+    "readings": {
+      "onyomi": [
+        "シ",
+        "ス",
+        "ツ"
+      ],
+      "kunyomi": [
+        "こ",
+        "-こ",
+        "ね"
+      ],
+      "nanori": [
+        "い",
+        "き",
+        "ぎ",
+        "く",
+        "け",
+        "ねっ"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "anak",
+        "sign of the rat",
+        "11PM-1AM",
+        "first sign of Chinese zodiac"
+      ],
+      "en": [
+        "child",
+        "sign of the rat",
+        "11PM-1AM",
+        "first sign of Chinese zodiac"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Anak (子)"
+      ],
+      "hint_id": "Bentuk piktograf visual Anak (子) yang melambangkan konsep 'anak'."
+    },
+    "jukugo": [
+      {
+        "word": "子供",
+        "reading": "こども",
+        "meaning_id": "anak"
+      },
+      {
+        "word": "帽子",
+        "reading": "ぼうし",
+        "meaning_id": "hat"
+      },
+      {
+        "word": "お菓子",
+        "reading": "おかし",
+        "meaning_id": "sweets; candy"
+      },
+      {
+        "word": "男の子",
+        "reading": "おとこのこ",
+        "meaning_id": "boy"
+      },
+      {
+        "word": "女の子",
+        "reading": "おんなのこ",
+        "meaning_id": "girl"
+      },
+      {
+        "word": "子",
+        "reading": "こ",
+        "meaning_id": "anak"
+      },
+      {
+        "word": "息子",
+        "reading": "むすこ",
+        "meaning_id": "(humble) son"
+      },
+      {
+        "word": "王子",
+        "reading": "おうじ",
+        "meaning_id": "pangeran"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-035",
+    "character": "外",
+    "unicode": "05916",
+    "level": "N5",
+    "strokes": 5,
+    "grade": 2,
+    "freq_rank": 81,
+    "radical": {
+      "character": "夕",
+      "number": 36,
+      "strokes": 3,
+      "name_ja": "ゆうべ",
+      "name_id": "Malam / Sore"
+    },
+    "readings": {
+      "onyomi": [
+        "ガイ",
+        "ゲ"
+      ],
+      "kunyomi": [
+        "そと",
+        "ほか",
+        "はず.す",
+        "はず.れる",
+        "と-"
+      ],
+      "nanori": [
+        "うい",
+        "け",
+        "ふか"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "outside"
+      ],
+      "en": [
+        "outside"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Evening (夕)",
+        "Toe (夕)"
+      ],
+      "hint_id": "Gabungan dari Evening (夕) dan Toe (夕) yang membentuk makna visual 'outside'."
+    },
+    "jukugo": [
+      {
+        "word": "外",
+        "reading": "そと",
+        "meaning_id": "outside"
+      },
+      {
+        "word": "外国",
+        "reading": "がいこく",
+        "meaning_id": "foreign country"
+      },
+      {
+        "word": "外国人",
+        "reading": "がいこくじん",
+        "meaning_id": "foreigner"
+      },
+      {
+        "word": "以外",
+        "reading": "いがい",
+        "meaning_id": "with the exception of"
+      },
+      {
+        "word": "郊外",
+        "reading": "こうがい",
+        "meaning_id": "outskirts"
+      },
+      {
+        "word": "意外",
+        "reading": "いがい",
+        "meaning_id": "unexpected"
+      },
+      {
+        "word": "海外",
+        "reading": "かいがい",
+        "meaning_id": "foreign; abroad"
+      },
+      {
+        "word": "外交",
+        "reading": "がいこう",
+        "meaning_id": "diplomacy"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-036",
+    "character": "八",
+    "unicode": "0516b",
+    "level": "N5",
+    "strokes": 2,
+    "grade": 1,
+    "freq_rank": 92,
+    "radical": {
+      "character": "八",
+      "number": 12,
+      "strokes": 2,
+      "name_ja": "はち",
+      "name_id": "Delapan / Terbuka"
+    },
+    "readings": {
+      "onyomi": [
+        "ハチ",
+        "ハツ"
+      ],
+      "kunyomi": [
+        "や",
+        "や.つ",
+        "やっ.つ",
+        "よう"
+      ],
+      "nanori": [
+        "な",
+        "は",
+        "はっ",
+        "やち",
+        "やつ"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "delapan",
+        "eight radical (no. 12)"
+      ],
+      "en": [
+        "eight",
+        "eight radical (no. 12)"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Fins (八)"
+      ],
+      "hint_id": "Bentuk piktograf visual Fins (八) yang melambangkan konsep 'delapan'."
+    },
+    "jukugo": [
+      {
+        "word": "八",
+        "reading": "はち",
+        "meaning_id": "delapan"
+      },
+      {
+        "word": "八つ",
+        "reading": "やっつ",
+        "meaning_id": "delapan"
+      },
+      {
+        "word": "八日",
+        "reading": "ようか",
+        "meaning_id": "delapan hari / tanggal 8"
+      },
+      {
+        "word": "八百屋",
+        "reading": "やおや",
+        "meaning_id": "greengrocer"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-037",
+    "character": "六",
+    "unicode": "0516d",
+    "level": "N5",
+    "strokes": 4,
+    "grade": 1,
+    "freq_rank": 93,
+    "radical": {
+      "character": "八",
+      "number": 12,
+      "strokes": 2,
+      "name_ja": "はち",
+      "name_id": "Delapan / Terbuka"
+    },
+    "readings": {
+      "onyomi": [
+        "ロク",
+        "リク"
+      ],
+      "kunyomi": [
+        "む",
+        "む.つ",
+        "むっ.つ",
+        "むい"
+      ],
+      "nanori": [
+        "く",
+        "むつ",
+        "ろっ",
+        "ろつ"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "enam"
+      ],
+      "en": [
+        "six"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Lid (八)",
+        "Fins (八)"
+      ],
+      "hint_id": "Gabungan dari Lid (八) dan Fins (八) yang membentuk makna visual 'enam'."
+    },
+    "jukugo": [
+      {
+        "word": "六",
+        "reading": "ろく",
+        "meaning_id": "enam"
+      },
+      {
+        "word": "六日",
+        "reading": "むいか",
+        "meaning_id": "enam hari / tanggal 6"
+      },
+      {
+        "word": "六つ",
+        "reading": "むっつ",
+        "meaning_id": "enam"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-038",
+    "character": "下",
+    "unicode": "04e0b",
+    "level": "N5",
+    "strokes": 3,
+    "grade": 1,
+    "freq_rank": 97,
+    "radical": {
+      "character": "一",
+      "number": 1,
+      "strokes": 1,
+      "name_ja": "いち",
+      "name_id": "Satu / Garis horizontal"
+    },
+    "readings": {
+      "onyomi": [
+        "カ",
+        "ゲ"
+      ],
+      "kunyomi": [
+        "した",
+        "しも",
+        "もと",
+        "さ.げる",
+        "さ.がる",
+        "くだ.る",
+        "くだ.り",
+        "くだ.す",
+        "-くだ.す",
+        "くだ.さる",
+        "お.ろす",
+        "お.りる"
+      ],
+      "nanori": [
+        "さか",
+        "しと"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "bawah",
+        "descend",
+        "give",
+        "low",
+        "inferior"
+      ],
+      "en": [
+        "below",
+        "down",
+        "descend",
+        "give",
+        "low",
+        "inferior"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Garis Satu (一)",
+        "Toe (一)"
+      ],
+      "hint_id": "Gabungan dari Garis Satu (一) dan Toe (一) yang membentuk makna visual 'bawah'."
+    },
+    "jukugo": [
+      {
+        "word": "下",
+        "reading": "した",
+        "meaning_id": "bawah"
+      },
+      {
+        "word": "靴下",
+        "reading": "くつした",
+        "meaning_id": "socks"
+      },
+      {
+        "word": "下手",
+        "reading": "へた",
+        "meaning_id": "unskillful"
+      },
+      {
+        "word": "廊下",
+        "reading": "ろうか",
+        "meaning_id": "corridor"
+      },
+      {
+        "word": "地下鉄",
+        "reading": "ちかてつ",
+        "meaning_id": "underground train"
+      },
+      {
+        "word": "以下",
+        "reading": "いか",
+        "meaning_id": "less than"
+      },
+      {
+        "word": "下宿",
+        "reading": "げしゅく",
+        "meaning_id": "lodging"
+      },
+      {
+        "word": "下着",
+        "reading": "したぎ",
+        "meaning_id": "underwear"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-039",
+    "character": "来",
+    "unicode": "06765",
+    "level": "N5",
+    "strokes": 7,
+    "grade": 2,
+    "freq_rank": 102,
+    "radical": {
+      "character": "木",
+      "number": 75,
+      "strokes": 4,
+      "name_ja": "き",
+      "name_id": "Pohon / Kayu"
+    },
+    "readings": {
+      "onyomi": [
+        "ライ",
+        "タイ"
+      ],
+      "kunyomi": [
+        "く.る",
+        "きた.る",
+        "きた.す",
+        "き.たす",
+        "き.たる",
+        "き",
+        "こ"
+      ],
+      "nanori": [
+        "くり",
+        "くる",
+        "ごろ",
+        "さ"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "come",
+        "due",
+        "next",
+        "cause",
+        "become"
+      ],
+      "en": [
+        "come",
+        "due",
+        "next",
+        "cause",
+        "become"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Garis Satu (一)",
+        "Sawah (田)"
+      ],
+      "hint_id": "Gabungan dari Garis Satu (一) dan Sawah (田) yang membentuk makna visual 'come'."
+    },
+    "jukugo": [
+      {
+        "word": "来る",
+        "reading": "くる",
+        "meaning_id": "datang"
+      },
+      {
+        "word": "来月",
+        "reading": "らいげつ",
+        "meaning_id": "bulan depan"
+      },
+      {
+        "word": "来週",
+        "reading": "らいしゅう",
+        "meaning_id": "minggu depan"
+      },
+      {
+        "word": "来年",
+        "reading": "らいねん",
+        "meaning_id": "tahun depan"
+      },
+      {
+        "word": "再来年",
+        "reading": "さらいねん",
+        "meaning_id": "year after next"
+      },
+      {
+        "word": "将来",
+        "reading": "しょうらい",
+        "meaning_id": "masa depan"
+      },
+      {
+        "word": "再来月",
+        "reading": "さらいげつ",
+        "meaning_id": "the month after next"
+      },
+      {
+        "word": "再来週",
+        "reading": "さらいしゅう",
+        "meaning_id": "the week after next"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-040",
+    "character": "気",
+    "unicode": "06c17",
+    "level": "N5",
+    "strokes": 6,
+    "grade": 1,
+    "freq_rank": 113,
+    "radical": {
+      "character": "气",
+      "number": 84,
+      "strokes": 4,
+      "name_ja": "きがまえ",
+      "name_id": "Udara / Uap / Gas"
+    },
+    "readings": {
+      "onyomi": [
+        "キ",
+        "ケ"
+      ],
+      "kunyomi": [
+        "いき",
+        "き"
+      ],
+      "nanori": []
+    },
+    "meanings": {
+      "id": [
+        "roh / jiwa",
+        "pikiran",
+        "udara",
+        "atmosphere",
+        "suasana hati"
+      ],
+      "en": [
+        "spirit",
+        "mind",
+        "air",
+        "atmosphere",
+        "mood"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Energy (气)",
+        "Treasure (气)"
+      ],
+      "hint_id": "Gabungan dari Energy (气) dan Treasure (气) yang membentuk makna visual 'roh / jiwa'."
+    },
+    "jukugo": [
+      {
+        "word": "元気",
+        "reading": "げんき",
+        "meaning_id": "kesehatan"
+      },
+      {
+        "word": "天気",
+        "reading": "てんき",
+        "meaning_id": "cuaca"
+      },
+      {
+        "word": "電気",
+        "reading": "でんき",
+        "meaning_id": "listrik"
+      },
+      {
+        "word": "病気",
+        "reading": "びょうき",
+        "meaning_id": "penyakit"
+      },
+      {
+        "word": "気",
+        "reading": "き",
+        "meaning_id": "roh / jiwa"
+      },
+      {
+        "word": "気分",
+        "reading": "きぶん",
+        "meaning_id": "suasana hati"
+      },
+      {
+        "word": "空気",
+        "reading": "くうき",
+        "meaning_id": "udara"
+      },
+      {
+        "word": "気持ち",
+        "reading": "きもち",
+        "meaning_id": "perasaan"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-041",
+    "character": "小",
+    "unicode": "05c0f",
+    "level": "N5",
+    "strokes": 3,
+    "grade": 1,
+    "freq_rank": 114,
+    "radical": {
+      "character": "小",
+      "number": 42,
+      "strokes": 3,
+      "name_ja": "しょう",
+      "name_id": "Kecil"
+    },
+    "readings": {
+      "onyomi": [
+        "ショウ"
+      ],
+      "kunyomi": [
+        "ちい.さい",
+        "こ-",
+        "お-",
+        "さ-"
+      ],
+      "nanori": [
+        "いさら",
+        "こう",
+        "さざ",
+        "しゃお",
+        "ちいさ"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "sedikit",
+        "kecil"
+      ],
+      "en": [
+        "little",
+        "small"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Small (小)"
+      ],
+      "hint_id": "Bentuk piktograf visual Small (小) yang melambangkan konsep 'sedikit'."
+    },
+    "jukugo": [
+      {
+        "word": "小さい",
+        "reading": "ちいさい",
+        "meaning_id": "sedikit"
+      },
+      {
+        "word": "小さな",
+        "reading": "ちいさな",
+        "meaning_id": "sedikit"
+      },
+      {
+        "word": "小鳥",
+        "reading": "ことり",
+        "meaning_id": "small bird"
+      },
+      {
+        "word": "小説",
+        "reading": "しょうせつ",
+        "meaning_id": "novel"
+      },
+      {
+        "word": "小学校",
+        "reading": "しょうがっこう",
+        "meaning_id": "SD"
+      },
+      {
+        "word": "小",
+        "reading": "しょう",
+        "meaning_id": "smallness"
+      },
+      {
+        "word": "小包",
+        "reading": "こづつみ",
+        "meaning_id": "parcel"
+      },
+      {
+        "word": "小麦",
+        "reading": "こむぎ",
+        "meaning_id": "wheat"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-042",
+    "character": "七",
+    "unicode": "04e03",
+    "level": "N5",
+    "strokes": 2,
+    "grade": 1,
+    "freq_rank": 115,
+    "radical": {
+      "character": "一",
+      "number": 1,
+      "strokes": 1,
+      "name_ja": "いち",
+      "name_id": "Satu / Garis horizontal"
+    },
+    "readings": {
+      "onyomi": [
+        "シチ"
+      ],
+      "kunyomi": [
+        "なな",
+        "なな.つ",
+        "なの"
+      ],
+      "nanori": [
+        "し",
+        "しっ",
+        "な",
+        "ひち"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "tujuh"
+      ],
+      "en": [
+        "seven"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Seven (一)"
+      ],
+      "hint_id": "Bentuk piktograf visual Seven (一) yang melambangkan konsep 'tujuh'."
+    },
+    "jukugo": [
+      {
+        "word": "七",
+        "reading": "しち",
+        "meaning_id": "tujuh"
+      },
+      {
+        "word": "七つ",
+        "reading": "ななつ",
+        "meaning_id": "tujuh"
+      },
+      {
+        "word": "七日",
+        "reading": "なのか",
+        "meaning_id": "tujuh hari / tanggal 7"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-043",
+    "character": "山",
+    "unicode": "05c71",
+    "level": "N5",
+    "strokes": 3,
+    "grade": 1,
+    "freq_rank": 131,
+    "radical": {
+      "character": "山",
+      "number": 46,
+      "strokes": 3,
+      "name_ja": "やま",
+      "name_id": "Gunung"
+    },
+    "readings": {
+      "onyomi": [
+        "サン",
+        "セン"
+      ],
+      "kunyomi": [
+        "やま"
+      ],
+      "nanori": [
+        "さ",
+        "やの",
+        "やん"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "gunung"
+      ],
+      "en": [
+        "mountain"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Gunung (山)"
+      ],
+      "hint_id": "Bentuk piktograf visual Gunung (山) yang melambangkan konsep 'gunung'."
+    },
+    "jukugo": [
+      {
+        "word": "山",
+        "reading": "やま",
+        "meaning_id": "gunung"
+      },
+      {
+        "word": "登山",
+        "reading": "とざん",
+        "meaning_id": "mountain-climbing"
+      },
+      {
+        "word": "火山",
+        "reading": "かざん",
+        "meaning_id": "volcano"
+      },
+      {
+        "word": "山林",
+        "reading": "さんりん",
+        "meaning_id": "mountain forest; mountains and forest"
+      },
+      {
+        "word": "鉱山",
+        "reading": "こうざん",
+        "meaning_id": "mine (ore)"
+      },
+      {
+        "word": "山岳",
+        "reading": "さんがく",
+        "meaning_id": "mountains"
+      },
+      {
+        "word": "山腹",
+        "reading": "さんぷく",
+        "meaning_id": "hillside; mountainside"
+      },
+      {
+        "word": "山脈",
+        "reading": "さんみゃく",
+        "meaning_id": "mountain range"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-044",
+    "character": "話",
+    "unicode": "08a71",
+    "level": "N5",
+    "strokes": 13,
+    "grade": 2,
+    "freq_rank": 134,
+    "radical": {
+      "character": "言",
+      "number": 149,
+      "strokes": 7,
+      "name_ja": "ことば",
+      "name_id": "Kata / Bahasa / Ucapan"
+    },
+    "readings": {
+      "onyomi": [
+        "ワ"
+      ],
+      "kunyomi": [
+        "はな.す",
+        "はなし"
+      ],
+      "nanori": []
+    },
+    "meanings": {
+      "id": [
+        "tale",
+        "pembicaraan / cerita"
+      ],
+      "en": [
+        "tale",
+        "talk"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Kata / Ucapan (言)",
+        "Tongue (言)"
+      ],
+      "hint_id": "Gabungan dari Kata / Ucapan (言) dan Tongue (言) yang membentuk makna visual 'tale'."
+    },
+    "jukugo": [
+      {
+        "word": "話",
+        "reading": "はなし",
+        "meaning_id": "pembicaraan / cerita"
+      },
+      {
+        "word": "電話",
+        "reading": "でんわ",
+        "meaning_id": "telepon"
+      },
+      {
+        "word": "話す",
+        "reading": "はなす",
+        "meaning_id": "berbicara"
+      },
+      {
+        "word": "会話",
+        "reading": "かいわ",
+        "meaning_id": "percakapan"
+      },
+      {
+        "word": "世話",
+        "reading": "せわ",
+        "meaning_id": "me-look after"
+      },
+      {
+        "word": "話題",
+        "reading": "わだい",
+        "meaning_id": "topic"
+      },
+      {
+        "word": "話し合う",
+        "reading": "はなしあう",
+        "meaning_id": "me-discuss"
+      },
+      {
+        "word": "神話",
+        "reading": "しんわ",
+        "meaning_id": "myth; legend"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-045",
+    "character": "女",
+    "unicode": "05973",
+    "level": "N5",
+    "strokes": 3,
+    "grade": 1,
+    "freq_rank": 151,
+    "radical": {
+      "character": "女",
+      "number": 38,
+      "strokes": 3,
+      "name_ja": "おんな",
+      "name_id": "Wanita / Perempuan"
+    },
+    "readings": {
+      "onyomi": [
+        "ジョ",
+        "ニョ",
+        "ニョウ"
+      ],
+      "kunyomi": [
+        "おんな",
+        "め"
+      ],
+      "nanori": [
+        "おな",
+        "た",
+        "つき",
+        "な"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "perempuan / wanita",
+        "wanita"
+      ],
+      "en": [
+        "woman",
+        "female"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Wanita (女)"
+      ],
+      "hint_id": "Bentuk piktograf visual Wanita (女) yang melambangkan konsep 'perempuan / wanita'."
+    },
+    "jukugo": [
+      {
+        "word": "女",
+        "reading": "おんな",
+        "meaning_id": "perempuan / wanita"
+      },
+      {
+        "word": "女の子",
+        "reading": "おんなのこ",
+        "meaning_id": "girl"
+      },
+      {
+        "word": "彼女",
+        "reading": "かのじょ",
+        "meaning_id": "she; girlfriend"
+      },
+      {
+        "word": "女性",
+        "reading": "じょせい",
+        "meaning_id": "perempuan"
+      },
+      {
+        "word": "少女",
+        "reading": "しょうじょ",
+        "meaning_id": "daughter"
+      },
+      {
+        "word": "女王",
+        "reading": "じょおう",
+        "meaning_id": "ratu"
+      },
+      {
+        "word": "女子",
+        "reading": "じょし",
+        "meaning_id": "perempuan / wanita"
+      },
+      {
+        "word": "女優",
+        "reading": "じょゆう",
+        "meaning_id": "actress"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-046",
+    "character": "北",
+    "unicode": "05317",
+    "level": "N5",
+    "strokes": 5,
+    "grade": 2,
+    "freq_rank": 153,
+    "radical": {
+      "character": "匕",
+      "number": 21,
+      "strokes": 2,
+      "name_ja": "ひ",
+      "name_id": "Sendok / Belati kecil"
+    },
+    "readings": {
+      "onyomi": [
+        "ホク"
+      ],
+      "kunyomi": [
+        "きた"
+      ],
+      "nanori": [
+        "きら",
+        "ほう",
+        "ほっ",
+        "ほつ"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "utara"
+      ],
+      "en": [
+        "north"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Fingers (匕)",
+        "Spoon (匕)"
+      ],
+      "hint_id": "Gabungan dari Fingers (匕) dan Spoon (匕) yang membentuk makna visual 'utara'."
+    },
+    "jukugo": [
+      {
+        "word": "北",
+        "reading": "きた",
+        "meaning_id": "utara"
+      },
+      {
+        "word": "南北",
+        "reading": "なんぼく",
+        "meaning_id": "south and north"
+      },
+      {
+        "word": "北極",
+        "reading": "ほっきょく",
+        "meaning_id": "North Pole"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-047",
+    "character": "午",
+    "unicode": "05348",
+    "level": "N5",
+    "strokes": 4,
+    "grade": 2,
+    "freq_rank": 154,
+    "radical": {
+      "character": "十",
+      "number": 24,
+      "strokes": 2,
+      "name_ja": "じゅう",
+      "name_id": "Sepuluh / Sempurna"
+    },
+    "readings": {
+      "onyomi": [
+        "ゴ"
+      ],
+      "kunyomi": [
+        "うま"
+      ],
+      "nanori": []
+    },
+    "meanings": {
+      "id": [
+        "noon",
+        "sign of the horse",
+        "11AM-1PM",
+        "seventh sign of Chinese zodiac"
+      ],
+      "en": [
+        "noon",
+        "sign of the horse",
+        "11AM-1PM",
+        "seventh sign of Chinese zodiac"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Slide (十)",
+        "Dry (十)"
+      ],
+      "hint_id": "Gabungan dari Slide (十) dan Dry (十) yang membentuk makna visual 'noon'."
+    },
+    "jukugo": [
+      {
+        "word": "午後",
+        "reading": "ごご",
+        "meaning_id": "sore / siang"
+      },
+      {
+        "word": "午前",
+        "reading": "ごぜん",
+        "meaning_id": "pagi"
+      },
+      {
+        "word": "正午",
+        "reading": "しょうご",
+        "meaning_id": "noon"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-048",
+    "character": "百",
+    "unicode": "0767e",
+    "level": "N5",
+    "strokes": 6,
+    "grade": 1,
+    "freq_rank": 163,
+    "radical": {
+      "character": "白",
+      "number": 106,
+      "strokes": 5,
+      "name_ja": "しろ",
+      "name_id": "Putih / Murni"
+    },
+    "readings": {
+      "onyomi": [
+        "ヒャク",
+        "ビャク"
+      ],
+      "kunyomi": [
+        "もも"
+      ],
+      "nanori": [
+        "お",
+        "ど",
+        "どう",
+        "なり",
+        "ひゃっ",
+        "ひゅく",
+        "も",
+        "もんど",
+        "ゆう"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "ratus / seratus"
+      ],
+      "en": [
+        "hundred"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Leaf (白)",
+        "Matahari (日)"
+      ],
+      "hint_id": "Gabungan dari Leaf (白) dan Matahari (日) yang membentuk makna visual 'ratus / seratus'."
+    },
+    "jukugo": [
+      {
+        "word": "百",
+        "reading": "ひゃく",
+        "meaning_id": "ratus / seratus"
+      },
+      {
+        "word": "八百屋",
+        "reading": "やおや",
+        "meaning_id": "greengrocer"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-049",
+    "character": "書",
+    "unicode": "066f8",
+    "level": "N5",
+    "strokes": 10,
+    "grade": 2,
+    "freq_rank": 169,
+    "radical": {
+      "character": "曰",
+      "number": 73,
+      "strokes": 4,
+      "name_ja": "ひらび",
+      "name_id": "Mengatakan / Berujar"
+    },
+    "readings": {
+      "onyomi": [
+        "ショ"
+      ],
+      "kunyomi": [
+        "か.く",
+        "-が.き",
+        "-がき"
+      ],
+      "nanori": [
+        "かき"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "write"
+      ],
+      "en": [
+        "write"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Brush (曰)",
+        "Matahari (日)"
+      ],
+      "hint_id": "Gabungan dari Brush (曰) dan Matahari (日) yang membentuk makna visual 'write'."
+    },
+    "jukugo": [
+      {
+        "word": "書く",
+        "reading": "かく",
+        "meaning_id": "menulis"
+      },
+      {
+        "word": "辞書",
+        "reading": "じしょ",
+        "meaning_id": "dictionary"
+      },
+      {
+        "word": "葉書",
+        "reading": "はがき",
+        "meaning_id": "postcard"
+      },
+      {
+        "word": "図書館",
+        "reading": "としょかん",
+        "meaning_id": "library"
+      },
+      {
+        "word": "書斎",
+        "reading": "しょさい",
+        "meaning_id": "kajian / riset"
+      },
+      {
+        "word": "書物",
+        "reading": "しょもつ",
+        "meaning_id": "books"
+      },
+      {
+        "word": "書類",
+        "reading": "しょるい",
+        "meaning_id": "documents"
+      },
+      {
+        "word": "読書",
+        "reading": "どくしょ",
+        "meaning_id": "membaca"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-050",
+    "character": "先",
+    "unicode": "05148",
+    "level": "N5",
+    "strokes": 6,
+    "grade": 1,
+    "freq_rank": 173,
+    "radical": {
+      "character": "儿",
+      "number": 10,
+      "strokes": 2,
+      "name_ja": "にんにょう",
+      "name_id": "Kaki manusia / Anak berjalan"
+    },
+    "readings": {
+      "onyomi": [
+        "セン"
+      ],
+      "kunyomi": [
+        "さき",
+        "ま.ず"
+      ],
+      "nanori": [
+        "ぽん"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "sebelum / depan",
+        "lebih dulu",
+        "sebelumnya",
+        "masa depan",
+        "precedence"
+      ],
+      "en": [
+        "before",
+        "ahead",
+        "previous",
+        "future",
+        "precedence"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Slide (儿)",
+        "Dirt (儿)",
+        "Legs (儿)"
+      ],
+      "hint_id": "Gabungan dari Slide (儿) dan Dirt (儿) dan Legs (儿) yang membentuk makna visual 'sebelum / depan'."
+    },
+    "jukugo": [
+      {
+        "word": "先",
+        "reading": "さき",
+        "meaning_id": "the future"
+      },
+      {
+        "word": "先月",
+        "reading": "せんげつ",
+        "meaning_id": "bulan lalu"
+      },
+      {
+        "word": "先週",
+        "reading": "せんしゅう",
+        "meaning_id": "minggu lalu"
+      },
+      {
+        "word": "先生",
+        "reading": "せんせい",
+        "meaning_id": "guru"
+      },
+      {
+        "word": "先輩",
+        "reading": "せんぱい",
+        "meaning_id": "senior"
+      },
+      {
+        "word": "先日",
+        "reading": "せんじつ",
+        "meaning_id": "the other day"
+      },
+      {
+        "word": "先程",
+        "reading": "さきほど",
+        "meaning_id": "some time ago"
+      },
+      {
+        "word": "先祖",
+        "reading": "せんぞ",
+        "meaning_id": "ancestor"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-051",
+    "character": "名",
+    "unicode": "0540d",
+    "level": "N5",
+    "strokes": 6,
+    "grade": 1,
+    "freq_rank": 177,
+    "radical": {
+      "character": "口",
+      "number": 30,
+      "strokes": 3,
+      "name_ja": "くち",
+      "name_id": "Mulut / Bukaan"
+    },
+    "readings": {
+      "onyomi": [
+        "メイ",
+        "ミョウ"
+      ],
+      "kunyomi": [
+        "な",
+        "-な"
+      ],
+      "nanori": [
+        "と"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "nama",
+        "noted",
+        "distinguished",
+        "reputation"
+      ],
+      "en": [
+        "name",
+        "noted",
+        "distinguished",
+        "reputation"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Evening (口)",
+        "Mulut (口)"
+      ],
+      "hint_id": "Gabungan dari Evening (口) dan Mulut (口) yang membentuk makna visual 'nama'."
+    },
+    "jukugo": [
+      {
+        "word": "名前",
+        "reading": "なまえ",
+        "meaning_id": "nama"
+      },
+      {
+        "word": "有名",
+        "reading": "ゆうめい",
+        "meaning_id": "terkenal"
+      },
+      {
+        "word": "名",
+        "reading": "な",
+        "meaning_id": "nama"
+      },
+      {
+        "word": "署名",
+        "reading": "しょめい",
+        "meaning_id": "signature"
+      },
+      {
+        "word": "名人",
+        "reading": "めいじん",
+        "meaning_id": "master"
+      },
+      {
+        "word": "宛名",
+        "reading": "あてな",
+        "meaning_id": "address; direction"
+      },
+      {
+        "word": "仮名",
+        "reading": "かな",
+        "meaning_id": "kana; Japanese syllabaries (i.e. hiragana and katakana)"
+      },
+      {
+        "word": "氏名",
+        "reading": "しめい",
+        "meaning_id": "full name; identity"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-052",
+    "character": "川",
+    "unicode": "05ddd",
+    "level": "N5",
+    "strokes": 3,
+    "grade": 1,
+    "freq_rank": 181,
+    "radical": {
+      "character": "巛",
+      "number": 47,
+      "strokes": 3,
+      "name_ja": "まがりがわ",
+      "name_id": "Sungai berliku"
+    },
+    "readings": {
+      "onyomi": [
+        "セン"
+      ],
+      "kunyomi": [
+        "かわ"
+      ],
+      "nanori": [
+        "か",
+        "こ",
+        "さわ"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "stream",
+        "sungai",
+        "river or three-stroke river radical (no. 47)"
+      ],
+      "en": [
+        "stream",
+        "river",
+        "river or three-stroke river radical (no. 47)"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Sungai (川)"
+      ],
+      "hint_id": "Bentuk piktograf visual Sungai (川) yang melambangkan konsep 'stream'."
+    },
+    "jukugo": [
+      {
+        "word": "川",
+        "reading": "かわ",
+        "meaning_id": "sungai"
+      },
+      {
+        "word": "河川",
+        "reading": "かせん",
+        "meaning_id": "rivers"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-053",
+    "character": "千",
+    "unicode": "05343",
+    "level": "N5",
+    "strokes": 3,
+    "grade": 1,
+    "freq_rank": 195,
+    "radical": {
+      "character": "十",
+      "number": 24,
+      "strokes": 2,
+      "name_ja": "じゅう",
+      "name_id": "Sepuluh / Sempurna"
+    },
+    "readings": {
+      "onyomi": [
+        "セン"
+      ],
+      "kunyomi": [
+        "ち"
+      ],
+      "nanori": [
+        "かず",
+        "ゆき"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "ribu / seribu"
+      ],
+      "en": [
+        "thousand"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Thousand (十)"
+      ],
+      "hint_id": "Bentuk piktograf visual Thousand (十) yang melambangkan konsep 'ribu / seribu'."
+    },
+    "jukugo": [
+      {
+        "word": "千",
+        "reading": "せん",
+        "meaning_id": "ribu / seribu"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-054",
+    "character": "水",
+    "unicode": "06c34",
+    "level": "N5",
+    "strokes": 4,
+    "grade": 1,
+    "freq_rank": 223,
+    "radical": {
+      "character": "水",
+      "number": 85,
+      "strokes": 4,
+      "name_ja": "みず",
+      "name_id": "Air"
+    },
+    "readings": {
+      "onyomi": [
+        "スイ"
+      ],
+      "kunyomi": [
+        "みず",
+        "みず-"
+      ],
+      "nanori": [
+        "うず",
+        "ずみ",
+        "つ",
+        "ど",
+        "み",
+        "みさ",
+        "みつ",
+        "みな",
+        "みん"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "air"
+      ],
+      "en": [
+        "water"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Air (水)"
+      ],
+      "hint_id": "Bentuk piktograf visual Air (水) yang melambangkan konsep 'air'."
+    },
+    "jukugo": [
+      {
+        "word": "水",
+        "reading": "みず",
+        "meaning_id": "udara"
+      },
+      {
+        "word": "水曜日",
+        "reading": "すいようび",
+        "meaning_id": "hari Rabu"
+      },
+      {
+        "word": "水泳",
+        "reading": "すいえい",
+        "meaning_id": "swimming"
+      },
+      {
+        "word": "水道",
+        "reading": "すいどう",
+        "meaning_id": "water supply"
+      },
+      {
+        "word": "水準",
+        "reading": "すいじゅん",
+        "meaning_id": "water level"
+      },
+      {
+        "word": "下水",
+        "reading": "げすい",
+        "meaning_id": "drainage; sewage"
+      },
+      {
+        "word": "香水",
+        "reading": "こうすい",
+        "meaning_id": "perfume"
+      },
+      {
+        "word": "水産",
+        "reading": "すいさん",
+        "meaning_id": "marine products; fisheries"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-055",
+    "character": "半",
+    "unicode": "0534a",
+    "level": "N5",
+    "strokes": 5,
+    "grade": 2,
+    "freq_rank": 224,
+    "radical": {
+      "character": "十",
+      "number": 24,
+      "strokes": 2,
+      "name_ja": "じゅう",
+      "name_id": "Sepuluh / Sempurna"
+    },
+    "readings": {
+      "onyomi": [
+        "ハン"
+      ],
+      "kunyomi": [
+        "なか.ば"
+      ],
+      "nanori": [
+        "は"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "setengah / separuh",
+        "pertengahan",
+        "odd number",
+        "semi-",
+        "part-"
+      ],
+      "en": [
+        "half",
+        "middle",
+        "odd number",
+        "semi-",
+        "part-"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Triceratops (十)",
+        "Dry (十)"
+      ],
+      "hint_id": "Gabungan dari Triceratops (十) dan Dry (十) yang membentuk makna visual 'setengah / separuh'."
+    },
+    "jukugo": [
+      {
+        "word": "半",
+        "reading": "はん",
+        "meaning_id": "setengah / separuh"
+      },
+      {
+        "word": "半分",
+        "reading": "はんぶん",
+        "meaning_id": "half minute"
+      },
+      {
+        "word": "大半",
+        "reading": "たいはん",
+        "meaning_id": "majority"
+      },
+      {
+        "word": "半ば",
+        "reading": "なかば",
+        "meaning_id": "pertengahan"
+      },
+      {
+        "word": "半径",
+        "reading": "はんけい",
+        "meaning_id": "radius"
+      },
+      {
+        "word": "半島",
+        "reading": "はんとう",
+        "meaning_id": "peninsula"
+      },
+      {
+        "word": "過半数",
+        "reading": "かはんすう",
+        "meaning_id": "majority"
+      },
+      {
+        "word": "半端",
+        "reading": "はんぱ",
+        "meaning_id": "remnant; fragment"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-056",
+    "character": "男",
+    "unicode": "07537",
+    "level": "N5",
+    "strokes": 7,
+    "grade": 1,
+    "freq_rank": 240,
+    "radical": {
+      "character": "田",
+      "number": 102,
+      "strokes": 5,
+      "name_ja": "た",
+      "name_id": "Sawah / Ladang padi"
+    },
+    "readings": {
+      "onyomi": [
+        "ダン",
+        "ナン"
+      ],
+      "kunyomi": [
+        "おとこ",
+        "お"
+      ],
+      "nanori": [
+        "み"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "pria"
+      ],
+      "en": [
+        "male"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Rice Paddy (田)",
+        "Kekuatan (力)"
+      ],
+      "hint_id": "Gabungan dari Rice Paddy (田) dan Kekuatan (力) yang membentuk makna visual 'pria'."
+    },
+    "jukugo": [
+      {
+        "word": "男",
+        "reading": "おとこ",
+        "meaning_id": "laki-laki / pria"
+      },
+      {
+        "word": "男の子",
+        "reading": "おとこのこ",
+        "meaning_id": "boy"
+      },
+      {
+        "word": "男性",
+        "reading": "だんせい",
+        "meaning_id": "pria"
+      },
+      {
+        "word": "男子",
+        "reading": "だんし",
+        "meaning_id": "youth"
+      },
+      {
+        "word": "男の人",
+        "reading": "おとこのひと",
+        "meaning_id": "laki-laki"
+      },
+      {
+        "word": "長男",
+        "reading": "ちょうなん",
+        "meaning_id": "eldest son"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-057",
+    "character": "西",
+    "unicode": "0897f",
+    "level": "N5",
+    "strokes": 6,
+    "grade": 2,
+    "freq_rank": 259,
+    "radical": {
+      "character": "襾",
+      "number": 146,
+      "strokes": 6,
+      "name_ja": "おおいかんむり",
+      "name_id": "Penutup barat"
+    },
+    "readings": {
+      "onyomi": [
+        "セイ",
+        "サイ",
+        "ス"
+      ],
+      "kunyomi": [
+        "にし"
+      ],
+      "nanori": [
+        "いり",
+        "ひし",
+        "むら"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "barat",
+        "Spain"
+      ],
+      "en": [
+        "west",
+        "Spain"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "West (襾)"
+      ],
+      "hint_id": "Bentuk piktograf visual West (襾) yang melambangkan konsep 'barat'."
+    },
+    "jukugo": [
+      {
+        "word": "西",
+        "reading": "にし",
+        "meaning_id": "barat"
+      },
+      {
+        "word": "西洋",
+        "reading": "せいよう",
+        "meaning_id": "western countries"
+      },
+      {
+        "word": "関西",
+        "reading": "かんさい",
+        "meaning_id": "Kansai (region comprising Kyoto, Osaka, Kobe and surrounding prefectures)"
+      },
+      {
+        "word": "西暦",
+        "reading": "せいれき",
+        "meaning_id": "Christian Era; anno domini (A.D.)"
+      },
+      {
+        "word": "東西",
+        "reading": "とうざい",
+        "meaning_id": "East and West; whole country"
+      },
+      {
+        "word": "西日",
+        "reading": "にしび",
+        "meaning_id": "westering sun"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-058",
+    "character": "電",
+    "unicode": "096fb",
+    "level": "N5",
+    "strokes": 13,
+    "grade": 2,
+    "freq_rank": 268,
+    "radical": {
+      "character": "雨",
+      "number": 173,
+      "strokes": 8,
+      "name_ja": "あめ",
+      "name_id": "Hujan"
+    },
+    "readings": {
+      "onyomi": [
+        "デン"
+      ],
+      "kunyomi": [],
+      "nanori": []
+    },
+    "meanings": {
+      "id": [
+        "listrik"
+      ],
+      "en": [
+        "electricity"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Hujan (雨)",
+        "Rice Paddy (雨)",
+        "Umbrella (雨)"
+      ],
+      "hint_id": "Gabungan dari Hujan (雨) dan Rice Paddy (雨) dan Umbrella (雨) yang membentuk makna visual 'listrik'."
+    },
+    "jukugo": [
+      {
+        "word": "電気",
+        "reading": "でんき",
+        "meaning_id": "listrik"
+      },
+      {
+        "word": "電車",
+        "reading": "でんしゃ",
+        "meaning_id": "electric train"
+      },
+      {
+        "word": "電話",
+        "reading": "でんわ",
+        "meaning_id": "telepon"
+      },
+      {
+        "word": "電灯",
+        "reading": "でんとう",
+        "meaning_id": "electric light"
+      },
+      {
+        "word": "電報",
+        "reading": "でんぽう",
+        "meaning_id": "telegram"
+      },
+      {
+        "word": "電子",
+        "reading": "でんし",
+        "meaning_id": "electron"
+      },
+      {
+        "word": "停電",
+        "reading": "ていでん",
+        "meaning_id": "failure of electricity"
+      },
+      {
+        "word": "電球",
+        "reading": "でんきゅう",
+        "meaning_id": "light bulb"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-059",
+    "character": "無",
+    "unicode": "07121",
+    "level": "N5",
+    "strokes": 12,
+    "grade": 4,
+    "freq_rank": 274,
+    "radical": {
+      "character": "火",
+      "number": 86,
+      "strokes": 4,
+      "name_ja": "ひ",
+      "name_id": "Api"
+    },
+    "readings": {
+      "onyomi": [
+        "ム",
+        "ブ"
+      ],
+      "kunyomi": [
+        "な.い"
+      ],
+      "nanori": []
+    },
+    "meanings": {
+      "id": [
+        "nothingness",
+        "none",
+        "ain't",
+        "nothing",
+        "nil",
+        "not"
+      ],
+      "en": [
+        "nothingness",
+        "none",
+        "ain't",
+        "nothing",
+        "nil",
+        "not"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Nothing (火)"
+      ],
+      "hint_id": "Bentuk piktograf visual Nothing (火) yang melambangkan konsep 'nothingness'."
+    },
+    "jukugo": [
+      {
+        "word": "無くす",
+        "reading": "なくす",
+        "meaning_id": "melakukan lose something"
+      },
+      {
+        "word": "無理",
+        "reading": "むり",
+        "meaning_id": "impossible"
+      },
+      {
+        "word": "無くなる",
+        "reading": "なくなる",
+        "meaning_id": "melakukan disappear"
+      },
+      {
+        "word": "無",
+        "reading": "む",
+        "meaning_id": "nothing"
+      },
+      {
+        "word": "無し",
+        "reading": "なし",
+        "meaning_id": "without"
+      },
+      {
+        "word": "無事",
+        "reading": "ぶじ",
+        "meaning_id": "safety"
+      },
+      {
+        "word": "無視",
+        "reading": "むし",
+        "meaning_id": "disregard; ignore"
+      },
+      {
+        "word": "無駄",
+        "reading": "むだ",
+        "meaning_id": "futility"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-060",
+    "character": "校",
+    "unicode": "06821",
+    "level": "N5",
+    "strokes": 10,
+    "grade": 1,
+    "freq_rank": 294,
+    "radical": {
+      "character": "木",
+      "number": 75,
+      "strokes": 4,
+      "name_ja": "き",
+      "name_id": "Pohon / Kayu"
+    },
+    "readings": {
+      "onyomi": [
+        "コウ",
+        "キョウ"
+      ],
+      "kunyomi": [],
+      "nanori": [
+        "めん"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "exam",
+        "sekolah",
+        "printing",
+        "proof",
+        "correction"
+      ],
+      "en": [
+        "exam",
+        "school",
+        "printing",
+        "proof",
+        "correction"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Pohon (木)",
+        "Lid (木)",
+        "Father (木)"
+      ],
+      "hint_id": "Gabungan dari Pohon (木) dan Lid (木) dan Father (木) yang membentuk makna visual 'exam'."
+    },
+    "jukugo": [
+      {
+        "word": "学校",
+        "reading": "がっこう",
+        "meaning_id": "sekolah"
+      },
+      {
+        "word": "高校",
+        "reading": "こうこう",
+        "meaning_id": "SMA"
+      },
+      {
+        "word": "校長",
+        "reading": "こうちょう",
+        "meaning_id": "headmaster"
+      },
+      {
+        "word": "高校生",
+        "reading": "こうこうせい",
+        "meaning_id": "high school student"
+      },
+      {
+        "word": "小学校",
+        "reading": "しょうがっこう",
+        "meaning_id": "SD"
+      },
+      {
+        "word": "中学校",
+        "reading": "ちゅうがっこう",
+        "meaning_id": "junior high school; middle school"
+      },
+      {
+        "word": "高等学校",
+        "reading": "こうとうがっこう",
+        "meaning_id": "SMA"
+      },
+      {
+        "word": "校舎",
+        "reading": "こうしゃ",
+        "meaning_id": "school building"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-061",
+    "character": "語",
+    "unicode": "08a9e",
+    "level": "N5",
+    "strokes": 14,
+    "grade": 2,
+    "freq_rank": 301,
+    "radical": {
+      "character": "言",
+      "number": 149,
+      "strokes": 7,
+      "name_ja": "ことば",
+      "name_id": "Kata / Bahasa / Ucapan"
+    },
+    "readings": {
+      "onyomi": [
+        "ゴ"
+      ],
+      "kunyomi": [
+        "かた.る",
+        "かた.らう"
+      ],
+      "nanori": []
+    },
+    "meanings": {
+      "id": [
+        "kata / bahasa",
+        "speech",
+        "bahasa"
+      ],
+      "en": [
+        "word",
+        "speech",
+        "language"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Kata / Ucapan (言)",
+        "Five (言)",
+        "Mulut (口)"
+      ],
+      "hint_id": "Gabungan dari Kata / Ucapan (言) dan Five (言) dan Mulut (口) yang membentuk makna visual 'kata / bahasa'."
+    },
+    "jukugo": [
+      {
+        "word": "英語",
+        "reading": "えいご",
+        "meaning_id": "English language"
+      },
+      {
+        "word": "語",
+        "reading": "ご",
+        "meaning_id": "bahasa"
+      },
+      {
+        "word": "語る",
+        "reading": "かたる",
+        "meaning_id": "pembicaraan / cerita"
+      },
+      {
+        "word": "言語",
+        "reading": "げんご",
+        "meaning_id": "bahasa"
+      },
+      {
+        "word": "語学",
+        "reading": "ごがく",
+        "meaning_id": "language study"
+      },
+      {
+        "word": "国語",
+        "reading": "こくご",
+        "meaning_id": "national language"
+      },
+      {
+        "word": "単語",
+        "reading": "たんご",
+        "meaning_id": "kata / bahasa"
+      },
+      {
+        "word": "物語",
+        "reading": "ものがたり",
+        "meaning_id": "tale"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-062",
+    "character": "土",
+    "unicode": "0571f",
+    "level": "N5",
+    "strokes": 3,
+    "grade": 1,
+    "freq_rank": 307,
+    "radical": {
+      "character": "土",
+      "number": 32,
+      "strokes": 3,
+      "name_ja": "つち",
+      "name_id": "Tanah / Bumi"
+    },
+    "readings": {
+      "onyomi": [
+        "ド",
+        "ト"
+      ],
+      "kunyomi": [
+        "つち"
+      ],
+      "nanori": [
+        "つく",
+        "は",
+        "ひじ"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "tanah",
+        "bumi",
+        "Turkey"
+      ],
+      "en": [
+        "soil",
+        "earth",
+        "ground",
+        "Turkey"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Dirt (土)"
+      ],
+      "hint_id": "Bentuk piktograf visual Dirt (土) yang melambangkan konsep 'tanah'."
+    },
+    "jukugo": [
+      {
+        "word": "土曜日",
+        "reading": "どようび",
+        "meaning_id": "hari Sabtu"
+      },
+      {
+        "word": "お土産",
+        "reading": "おみやげ",
+        "meaning_id": "souvenir"
+      },
+      {
+        "word": "土",
+        "reading": "つち",
+        "meaning_id": "bumi"
+      },
+      {
+        "word": "土地",
+        "reading": "とち",
+        "meaning_id": "plot of land"
+      },
+      {
+        "word": "土曜",
+        "reading": "どよう",
+        "meaning_id": "hari Sabtu"
+      },
+      {
+        "word": "土産",
+        "reading": "みやげ",
+        "meaning_id": "masa kini"
+      },
+      {
+        "word": "国土",
+        "reading": "こくど",
+        "meaning_id": "realm"
+      },
+      {
+        "word": "土台",
+        "reading": "どだい",
+        "meaning_id": "foundation; base"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-063",
+    "character": "木",
+    "unicode": "06728",
+    "level": "N5",
+    "strokes": 4,
+    "grade": 1,
+    "freq_rank": 317,
+    "radical": {
+      "character": "木",
+      "number": 75,
+      "strokes": 4,
+      "name_ja": "き",
+      "name_id": "Pohon / Kayu"
+    },
+    "readings": {
+      "onyomi": [
+        "ボク",
+        "モク"
+      ],
+      "kunyomi": [
+        "き",
+        "こ-"
+      ],
+      "nanori": [
+        "ぐ",
+        "も",
+        "もと"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "pohon",
+        "kayu"
+      ],
+      "en": [
+        "tree",
+        "wood"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Pohon (木)"
+      ],
+      "hint_id": "Bentuk piktograf visual Pohon (木) yang melambangkan konsep 'pohon'."
+    },
+    "jukugo": [
+      {
+        "word": "木",
+        "reading": "き",
+        "meaning_id": "pohon"
+      },
+      {
+        "word": "木曜日",
+        "reading": "もくようび",
+        "meaning_id": "hari Kamis"
+      },
+      {
+        "word": "木綿",
+        "reading": "もめん",
+        "meaning_id": "cotton"
+      },
+      {
+        "word": "木曜",
+        "reading": "もくよう",
+        "meaning_id": "hari Kamis"
+      },
+      {
+        "word": "植木",
+        "reading": "うえき",
+        "meaning_id": "garden shrubs; trees"
+      },
+      {
+        "word": "材木",
+        "reading": "ざいもく",
+        "meaning_id": "lumber; timber"
+      },
+      {
+        "word": "大木",
+        "reading": "たいぼく",
+        "meaning_id": "large tree"
+      },
+      {
+        "word": "並木",
+        "reading": "なみき",
+        "meaning_id": "roadside tree; row of trees"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-064",
+    "character": "聞",
+    "unicode": "0805e",
+    "level": "N5",
+    "strokes": 14,
+    "grade": 2,
+    "freq_rank": 319,
+    "radical": {
+      "character": "耳",
+      "number": 128,
+      "strokes": 6,
+      "name_ja": "みみ",
+      "name_id": "Telinga"
+    },
+    "readings": {
+      "onyomi": [
+        "ブン",
+        "モン"
+      ],
+      "kunyomi": [
+        "き.く",
+        "き.こえる"
+      ],
+      "nanori": []
+    },
+    "meanings": {
+      "id": [
+        "hear",
+        "ask",
+        "listen"
+      ],
+      "en": [
+        "hear",
+        "ask",
+        "listen"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Gerbang (門)",
+        "Ear (耳)"
+      ],
+      "hint_id": "Gabungan dari Gerbang (門) dan Ear (耳) yang membentuk makna visual 'hear'."
+    },
+    "jukugo": [
+      {
+        "word": "聞く",
+        "reading": "きく",
+        "meaning_id": "mendengar"
+      },
+      {
+        "word": "新聞",
+        "reading": "しんぶん",
+        "meaning_id": "newspaper"
+      },
+      {
+        "word": "新聞社",
+        "reading": "しんぶんしゃ",
+        "meaning_id": "newspaper company"
+      },
+      {
+        "word": "聞こえる",
+        "reading": "きこえる",
+        "meaning_id": "me-be heard"
+      },
+      {
+        "word": "聞き取り",
+        "reading": "ききとり",
+        "meaning_id": "listening comprehension"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-065",
+    "character": "食",
+    "unicode": "098df",
+    "level": "N5",
+    "strokes": 9,
+    "grade": 2,
+    "freq_rank": 328,
+    "radical": {
+      "character": "食",
+      "number": 184,
+      "strokes": 9,
+      "name_ja": "しょく",
+      "name_id": "Makan / Makanan"
+    },
+    "readings": {
+      "onyomi": [
+        "ショク",
+        "ジキ"
+      ],
+      "kunyomi": [
+        "く.う",
+        "く.らう",
+        "た.べる",
+        "は.む"
+      ],
+      "nanori": [
+        "ぐい"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "eat",
+        "food"
+      ],
+      "en": [
+        "eat",
+        "food"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Eat (食)"
+      ],
+      "hint_id": "Bentuk piktograf visual Eat (食) yang melambangkan konsep 'eat'."
+    },
+    "jukugo": [
+      {
+        "word": "食堂",
+        "reading": "しょくどう",
+        "meaning_id": "dining hall"
+      },
+      {
+        "word": "食べ物",
+        "reading": "たべもの",
+        "meaning_id": "makanan"
+      },
+      {
+        "word": "食べる",
+        "reading": "たべる",
+        "meaning_id": "makan"
+      },
+      {
+        "word": "食事",
+        "reading": "しょくじ",
+        "meaning_id": "me-have a meal"
+      },
+      {
+        "word": "食料品",
+        "reading": "しょくりょうひん",
+        "meaning_id": "groceries"
+      },
+      {
+        "word": "食う",
+        "reading": "くう",
+        "meaning_id": "(male) (vulgar) to eat"
+      },
+      {
+        "word": "食卓",
+        "reading": "しょくたく",
+        "meaning_id": "dining table"
+      },
+      {
+        "word": "食品",
+        "reading": "しょくひん",
+        "meaning_id": "commodity"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-066",
+    "character": "車",
+    "unicode": "08eca",
+    "level": "N5",
+    "strokes": 7,
+    "grade": 1,
+    "freq_rank": 333,
+    "radical": {
+      "character": "車",
+      "number": 159,
+      "strokes": 7,
+      "name_ja": "くるま",
+      "name_id": "Kereta / Mobil / Kendaraan"
+    },
+    "readings": {
+      "onyomi": [
+        "シャ"
+      ],
+      "kunyomi": [
+        "くるま"
+      ],
+      "nanori": [
+        "くら",
+        "くろま"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "mobil / kendaraan"
+      ],
+      "en": [
+        "car"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Car (車)"
+      ],
+      "hint_id": "Bentuk piktograf visual Car (車) yang melambangkan konsep 'mobil / kendaraan'."
+    },
+    "jukugo": [
+      {
+        "word": "車",
+        "reading": "くるま",
+        "meaning_id": "mobil"
+      },
+      {
+        "word": "電車",
+        "reading": "でんしゃ",
+        "meaning_id": "electric train"
+      },
+      {
+        "word": "自転車",
+        "reading": "じてんしゃ",
+        "meaning_id": "sepeda"
+      },
+      {
+        "word": "自動車",
+        "reading": "じどうしゃ",
+        "meaning_id": "automobile"
+      },
+      {
+        "word": "汽車",
+        "reading": "きしゃ",
+        "meaning_id": "steam train"
+      },
+      {
+        "word": "駐車場",
+        "reading": "ちゅうしゃじょう",
+        "meaning_id": "parking lot"
+      },
+      {
+        "word": "駐車",
+        "reading": "ちゅうしゃ",
+        "meaning_id": "parking (e.g. car)"
+      },
+      {
+        "word": "発車",
+        "reading": "はっしゃ",
+        "meaning_id": "departure of a vehicle"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-067",
+    "character": "何",
+    "unicode": "04f55",
+    "level": "N5",
+    "strokes": 7,
+    "grade": 2,
+    "freq_rank": 340,
+    "radical": {
+      "character": "人",
+      "number": 9,
+      "strokes": 2,
+      "name_ja": "ひと",
+      "name_id": "Orang / Manusia"
+    },
+    "readings": {
+      "onyomi": [
+        "カ"
+      ],
+      "kunyomi": [
+        "なに",
+        "なん",
+        "なに-",
+        "なん-"
+      ],
+      "nanori": [
+        "あが"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "what"
+      ],
+      "en": [
+        "what"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Orang (人)",
+        "Lip Ring (人)"
+      ],
+      "hint_id": "Gabungan dari Orang (人) dan Lip Ring (人) yang membentuk makna visual 'what'."
+    },
+    "jukugo": [
+      {
+        "word": "何",
+        "reading": "なん",
+        "meaning_id": "what"
+      },
+      {
+        "word": "何か",
+        "reading": "なにか",
+        "meaning_id": "something"
+      },
+      {
+        "word": "何で",
+        "reading": "なんで",
+        "meaning_id": "Why?"
+      },
+      {
+        "word": "何でも",
+        "reading": "なんでも",
+        "meaning_id": "by all means"
+      },
+      {
+        "word": "何とか",
+        "reading": "なんとか",
+        "meaning_id": "somehow"
+      },
+      {
+        "word": "何々",
+        "reading": "なになに",
+        "meaning_id": "such and such; What?"
+      },
+      {
+        "word": "何分",
+        "reading": "なにぶん",
+        "meaning_id": "some; any"
+      },
+      {
+        "word": "何卒",
+        "reading": "なにとぞ",
+        "meaning_id": "please; kindly"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-068",
+    "character": "南",
+    "unicode": "05357",
+    "level": "N5",
+    "strokes": 9,
+    "grade": 2,
+    "freq_rank": 341,
+    "radical": {
+      "character": "十",
+      "number": 24,
+      "strokes": 2,
+      "name_ja": "じゅう",
+      "name_id": "Sepuluh / Sempurna"
+    },
+    "readings": {
+      "onyomi": [
+        "ナン",
+        "ナ"
+      ],
+      "kunyomi": [
+        "みなみ"
+      ],
+      "nanori": [
+        "なみ",
+        "は",
+        "みな",
+        "みまみ"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "selatan"
+      ],
+      "en": [
+        "south"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Cross (十)",
+        "Head (十)",
+        "Horns (十)",
+        "Dry (十)"
+      ],
+      "hint_id": "Gabungan dari Cross (十) dan Head (十) dan Horns (十) dan Dry (十) yang membentuk makna visual 'selatan'."
+    },
+    "jukugo": [
+      {
+        "word": "南",
+        "reading": "みなみ",
+        "meaning_id": "selatan"
+      },
+      {
+        "word": "南極",
+        "reading": "なんきょく",
+        "meaning_id": "south pole; Antarctic"
+      },
+      {
+        "word": "南米",
+        "reading": "なんべい",
+        "meaning_id": "South America"
+      },
+      {
+        "word": "南北",
+        "reading": "なんぼく",
+        "meaning_id": "south and north"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-069",
+    "character": "万",
+    "unicode": "04e07",
+    "level": "N5",
+    "strokes": 3,
+    "grade": 2,
+    "freq_rank": 375,
+    "radical": {
+      "character": "一",
+      "number": 1,
+      "strokes": 1,
+      "name_ja": "いち",
+      "name_id": "Satu / Garis horizontal"
+    },
+    "readings": {
+      "onyomi": [
+        "マン",
+        "バン"
+      ],
+      "kunyomi": [
+        "よろず"
+      ],
+      "nanori": [
+        "かず",
+        "ま",
+        "ゆる"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "puluh ribu / sepuluh ribu",
+        "10,000"
+      ],
+      "en": [
+        "ten thousand",
+        "10,000"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Leaf (一)",
+        "Pedang (刀)"
+      ],
+      "hint_id": "Gabungan dari Leaf (一) dan Pedang (刀) yang membentuk makna visual 'puluh ribu / sepuluh ribu'."
+    },
+    "jukugo": [
+      {
+        "word": "万",
+        "reading": "まん",
+        "meaning_id": "puluh ribu / sepuluh ribu"
+      },
+      {
+        "word": "万年筆",
+        "reading": "まんねんひつ",
+        "meaning_id": "fountain pen"
+      },
+      {
+        "word": "万一",
+        "reading": "まんいち",
+        "meaning_id": "by some chance"
+      },
+      {
+        "word": "万歳",
+        "reading": "ばんざい",
+        "meaning_id": "hurrah; cheers"
+      },
+      {
+        "word": "万人",
+        "reading": "ばんじん",
+        "meaning_id": "all people; everybody"
+      },
+      {
+        "word": "万能",
+        "reading": "ばんのう",
+        "meaning_id": "all-purpose; almighty"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-070",
+    "character": "毎",
+    "unicode": "06bce",
+    "level": "N5",
+    "strokes": 6,
+    "grade": 2,
+    "freq_rank": 436,
+    "radical": {
+      "character": "毋",
+      "number": 80,
+      "strokes": 4,
+      "name_ja": "なかれ",
+      "name_id": "Ibu / Larangan"
+    },
+    "readings": {
+      "onyomi": [
+        "マイ"
+      ],
+      "kunyomi": [
+        "ごと",
+        "-ごと.に"
+      ],
+      "nanori": [
+        "つね"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "every"
+      ],
+      "en": [
+        "every"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Gun (毋)",
+        "Window (毋)"
+      ],
+      "hint_id": "Gabungan dari Gun (毋) dan Window (毋) yang membentuk makna visual 'every'."
+    },
+    "jukugo": [
+      {
+        "word": "毎朝",
+        "reading": "まいあさ",
+        "meaning_id": "every morning"
+      },
+      {
+        "word": "毎月",
+        "reading": "まいげつ",
+        "meaning_id": "every month"
+      },
+      {
+        "word": "毎週",
+        "reading": "まいしゅう",
+        "meaning_id": "every week"
+      },
+      {
+        "word": "毎日",
+        "reading": "まいにち",
+        "meaning_id": "setiap hari"
+      },
+      {
+        "word": "毎年",
+        "reading": "まいねん",
+        "meaning_id": "every year"
+      },
+      {
+        "word": "毎晩",
+        "reading": "まいばん",
+        "meaning_id": "every night"
+      },
+      {
+        "word": "毎度",
+        "reading": "まいど",
+        "meaning_id": "each time; common service-sector greeting"
+      },
+      {
+        "word": "毎",
+        "reading": "ごと",
+        "meaning_id": "each respectively"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-071",
+    "character": "白",
+    "unicode": "0767d",
+    "level": "N5",
+    "strokes": 5,
+    "grade": 1,
+    "freq_rank": 483,
+    "radical": {
+      "character": "白",
+      "number": 106,
+      "strokes": 5,
+      "name_ja": "しろ",
+      "name_id": "Putih / Murni"
+    },
+    "readings": {
+      "onyomi": [
+        "ハク",
+        "ビャク"
+      ],
+      "kunyomi": [
+        "しろ",
+        "しら-",
+        "しろ.い"
+      ],
+      "nanori": [
+        "あき",
+        "か",
+        "はっ"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "putih"
+      ],
+      "en": [
+        "white"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "White (白)"
+      ],
+      "hint_id": "Bentuk piktograf visual White (白) yang melambangkan konsep 'putih'."
+    },
+    "jukugo": [
+      {
+        "word": "白",
+        "reading": "しろ",
+        "meaning_id": "putih"
+      },
+      {
+        "word": "白い",
+        "reading": "しろい",
+        "meaning_id": "putih"
+      },
+      {
+        "word": "白髪",
+        "reading": "しらが",
+        "meaning_id": "white or grey hair; trendy hair bleaching"
+      },
+      {
+        "word": "青白い",
+        "reading": "あおじろい",
+        "meaning_id": "pale; pallid"
+      },
+      {
+        "word": "真っ白",
+        "reading": "まっしろ",
+        "meaning_id": "pure white"
+      },
+      {
+        "word": "告白",
+        "reading": "こくはく",
+        "meaning_id": "confession; acknowledgement"
+      },
+      {
+        "word": "白状",
+        "reading": "はくじょう",
+        "meaning_id": "confession"
+      },
+      {
+        "word": "明白",
+        "reading": "めいはく",
+        "meaning_id": "obvious; overt"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-072",
+    "character": "天",
+    "unicode": "05929",
+    "level": "N5",
+    "strokes": 4,
+    "grade": 1,
+    "freq_rank": 512,
+    "radical": {
+      "character": "大",
+      "number": 37,
+      "strokes": 3,
+      "name_ja": "だい",
+      "name_id": "Besar"
+    },
+    "readings": {
+      "onyomi": [
+        "テン"
+      ],
+      "kunyomi": [
+        "あまつ",
+        "あめ",
+        "あま-"
+      ],
+      "nanori": [
+        "あき",
+        "あも",
+        "た",
+        "たかし",
+        "て",
+        "なま"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "surga / angkasa",
+        "langit",
+        "imperial"
+      ],
+      "en": [
+        "heavens",
+        "sky",
+        "imperial"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Heaven (大)"
+      ],
+      "hint_id": "Bentuk piktograf visual Heaven (大) yang melambangkan konsep 'surga / angkasa'."
+    },
+    "jukugo": [
+      {
+        "word": "天気",
+        "reading": "てんき",
+        "meaning_id": "cuaca"
+      },
+      {
+        "word": "天気予報",
+        "reading": "てんきよほう",
+        "meaning_id": "weather forecast"
+      },
+      {
+        "word": "天候",
+        "reading": "てんこう",
+        "meaning_id": "cuaca"
+      },
+      {
+        "word": "天然",
+        "reading": "てんねん",
+        "meaning_id": "nature"
+      },
+      {
+        "word": "天皇",
+        "reading": "てんのう",
+        "meaning_id": "Emperor of Japan"
+      },
+      {
+        "word": "天津",
+        "reading": "あまつ",
+        "meaning_id": "heavenly; imperial"
+      },
+      {
+        "word": "雨天",
+        "reading": "うてん",
+        "meaning_id": "rainy weather"
+      },
+      {
+        "word": "晴天",
+        "reading": "せいてん",
+        "meaning_id": "fine weather"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-073",
+    "character": "母",
+    "unicode": "06bcd",
+    "level": "N5",
+    "strokes": 5,
+    "grade": 2,
+    "freq_rank": 570,
+    "radical": {
+      "character": "毋",
+      "number": 80,
+      "strokes": 4,
+      "name_ja": "なかれ",
+      "name_id": "Ibu / Larangan"
+    },
+    "readings": {
+      "onyomi": [
+        "ボ"
+      ],
+      "kunyomi": [
+        "はは",
+        "も"
+      ],
+      "nanori": []
+    },
+    "meanings": {
+      "id": [
+        "ibu"
+      ],
+      "en": [
+        "mother"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Matahari (日)",
+        "Drop (毋)"
+      ],
+      "hint_id": "Gabungan dari Matahari (日) dan Drop (毋) yang membentuk makna visual 'ibu'."
+    },
+    "jukugo": [
+      {
+        "word": "お母さん",
+        "reading": "おかあさん",
+        "meaning_id": "(honorable) mother"
+      },
+      {
+        "word": "伯母さん",
+        "reading": "おばさん",
+        "meaning_id": "aunt"
+      },
+      {
+        "word": "祖母",
+        "reading": "そぼ",
+        "meaning_id": "grandmother"
+      },
+      {
+        "word": "母親",
+        "reading": "ははおや",
+        "meaning_id": "ibu"
+      },
+      {
+        "word": "父母",
+        "reading": "ふぼ",
+        "meaning_id": "father and mother; parents"
+      },
+      {
+        "word": "叔母さん",
+        "reading": "おばさん",
+        "meaning_id": "aunt; middle-aged lady"
+      },
+      {
+        "word": "分母",
+        "reading": "ぶんぼ",
+        "meaning_id": "denominator"
+      },
+      {
+        "word": "母校",
+        "reading": "ぼこう",
+        "meaning_id": "alma mater"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-074",
+    "character": "火",
+    "unicode": "0706b",
+    "level": "N5",
+    "strokes": 4,
+    "grade": 1,
+    "freq_rank": 574,
+    "radical": {
+      "character": "火",
+      "number": 86,
+      "strokes": 4,
+      "name_ja": "ひ",
+      "name_id": "Api"
+    },
+    "readings": {
+      "onyomi": [
+        "カ"
+      ],
+      "kunyomi": [
+        "ひ",
+        "-び",
+        "ほ-"
+      ],
+      "nanori": []
+    },
+    "meanings": {
+      "id": [
+        "api"
+      ],
+      "en": [
+        "fire"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Api (火)"
+      ],
+      "hint_id": "Bentuk piktograf visual Api (火) yang melambangkan konsep 'api'."
+    },
+    "jukugo": [
+      {
+        "word": "火曜日",
+        "reading": "かようび",
+        "meaning_id": "hari Selasa"
+      },
+      {
+        "word": "火",
+        "reading": "ひ",
+        "meaning_id": "api"
+      },
+      {
+        "word": "火事",
+        "reading": "かじ",
+        "meaning_id": "api"
+      },
+      {
+        "word": "火災",
+        "reading": "かさい",
+        "meaning_id": "conflagration"
+      },
+      {
+        "word": "火曜",
+        "reading": "かよう",
+        "meaning_id": "(abbreviation) Tuesday"
+      },
+      {
+        "word": "火口",
+        "reading": "かこう",
+        "meaning_id": "a burner; origin of a fire"
+      },
+      {
+        "word": "火山",
+        "reading": "かざん",
+        "meaning_id": "volcano"
+      },
+      {
+        "word": "花火",
+        "reading": "はなび",
+        "meaning_id": "fireworks"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-075",
+    "character": "右",
+    "unicode": "053f3",
+    "level": "N5",
+    "strokes": 5,
+    "grade": 1,
+    "freq_rank": 602,
+    "radical": {
+      "character": "口",
+      "number": 30,
+      "strokes": 3,
+      "name_ja": "くち",
+      "name_id": "Mulut / Bukaan"
+    },
+    "readings": {
+      "onyomi": [
+        "ウ",
+        "ユウ"
+      ],
+      "kunyomi": [
+        "みぎ"
+      ],
+      "nanori": [
+        "あき",
+        "すけ"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "kanan"
+      ],
+      "en": [
+        "right"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Narwhal (口)",
+        "Mulut (口)"
+      ],
+      "hint_id": "Gabungan dari Narwhal (口) dan Mulut (口) yang membentuk makna visual 'kanan'."
+    },
+    "jukugo": [
+      {
+        "word": "右",
+        "reading": "みぎ",
+        "meaning_id": "right side"
+      },
+      {
+        "word": "左右",
+        "reading": "さゆう",
+        "meaning_id": "left and right"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-076",
+    "character": "読",
+    "unicode": "08aad",
+    "level": "N5",
+    "strokes": 14,
+    "grade": 2,
+    "freq_rank": 618,
+    "radical": {
+      "character": "言",
+      "number": 149,
+      "strokes": 7,
+      "name_ja": "ことば",
+      "name_id": "Kata / Bahasa / Ucapan"
+    },
+    "readings": {
+      "onyomi": [
+        "ドク",
+        "トク",
+        "トウ"
+      ],
+      "kunyomi": [
+        "よ.む",
+        "-よ.み"
+      ],
+      "nanori": [
+        "よみ"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "read"
+      ],
+      "en": [
+        "read"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Kata / Ucapan (言)",
+        "Sell (言)"
+      ],
+      "hint_id": "Gabungan dari Kata / Ucapan (言) dan Sell (言) yang membentuk makna visual 'read'."
+    },
+    "jukugo": [
+      {
+        "word": "読む",
+        "reading": "よむ",
+        "meaning_id": "membaca"
+      },
+      {
+        "word": "読書",
+        "reading": "どくしょ",
+        "meaning_id": "membaca"
+      },
+      {
+        "word": "読み",
+        "reading": "よみ",
+        "meaning_id": "membaca"
+      },
+      {
+        "word": "句読点",
+        "reading": "くとうてん",
+        "meaning_id": "punctuation marks"
+      },
+      {
+        "word": "講読",
+        "reading": "こうどく",
+        "meaning_id": "reading; translation"
+      },
+      {
+        "word": "購読",
+        "reading": "こうどく",
+        "meaning_id": "subscription (e.g. magazine)"
+      },
+      {
+        "word": "読者",
+        "reading": "どくしゃ",
+        "meaning_id": "reader"
+      },
+      {
+        "word": "朗読",
+        "reading": "ろうどく",
+        "meaning_id": "reading aloud; recitation"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-077",
+    "character": "友",
+    "unicode": "053cb",
+    "level": "N5",
+    "strokes": 4,
+    "grade": 2,
+    "freq_rank": 622,
+    "radical": {
+      "character": "又",
+      "number": 29,
+      "strokes": 2,
+      "name_ja": "また",
+      "name_id": "Lagi / Tangan kanan"
+    },
+    "readings": {
+      "onyomi": [
+        "ユウ"
+      ],
+      "kunyomi": [
+        "とも"
+      ],
+      "nanori": [
+        "う",
+        "ど",
+        "ゆ"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "teman / sahabat"
+      ],
+      "en": [
+        "friend"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Narwhal (又)",
+        "Stool (又)"
+      ],
+      "hint_id": "Gabungan dari Narwhal (又) dan Stool (又) yang membentuk makna visual 'teman / sahabat'."
+    },
+    "jukugo": [
+      {
+        "word": "友達",
+        "reading": "ともだち",
+        "meaning_id": "teman / sahabat"
+      },
+      {
+        "word": "友",
+        "reading": "とも",
+        "meaning_id": "teman / sahabat"
+      },
+      {
+        "word": "親友",
+        "reading": "しんゆう",
+        "meaning_id": "close friend"
+      },
+      {
+        "word": "友情",
+        "reading": "ゆうじょう",
+        "meaning_id": "friendship"
+      },
+      {
+        "word": "友人",
+        "reading": "ゆうじん",
+        "meaning_id": "teman"
+      },
+      {
+        "word": "友好",
+        "reading": "ゆうこう",
+        "meaning_id": "friendship"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-078",
+    "character": "左",
+    "unicode": "05de6",
+    "level": "N5",
+    "strokes": 5,
+    "grade": 1,
+    "freq_rank": 630,
+    "radical": {
+      "character": "工",
+      "number": 48,
+      "strokes": 3,
+      "name_ja": "こう",
+      "name_id": "Pekerjaan / Pertukangan"
+    },
+    "readings": {
+      "onyomi": [
+        "サ",
+        "シャ"
+      ],
+      "kunyomi": [
+        "ひだり"
+      ],
+      "nanori": [
+        "そ"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "kiri"
+      ],
+      "en": [
+        "left"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Narwhal (工)",
+        "Construction (工)"
+      ],
+      "hint_id": "Gabungan dari Narwhal (工) dan Construction (工) yang membentuk makna visual 'kiri'."
+    },
+    "jukugo": [
+      {
+        "word": "左",
+        "reading": "ひだり",
+        "meaning_id": "left hand side"
+      },
+      {
+        "word": "左右",
+        "reading": "さゆう",
+        "meaning_id": "left and right"
+      },
+      {
+        "word": "左利き",
+        "reading": "ひだりきき",
+        "meaning_id": "left-handedness; sake drinker"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-079",
+    "character": "休",
+    "unicode": "04f11",
+    "level": "N5",
+    "strokes": 6,
+    "grade": 1,
+    "freq_rank": 642,
+    "radical": {
+      "character": "人",
+      "number": 9,
+      "strokes": 2,
+      "name_ja": "ひと",
+      "name_id": "Orang / Manusia"
+    },
+    "readings": {
+      "onyomi": [
+        "キュウ"
+      ],
+      "kunyomi": [
+        "やす.む",
+        "やす.まる",
+        "やす.める"
+      ],
+      "nanori": []
+    },
+    "meanings": {
+      "id": [
+        "rest",
+        "day off",
+        "retire",
+        "sleep"
+      ],
+      "en": [
+        "rest",
+        "day off",
+        "retire",
+        "sleep"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Orang (人)",
+        "Pohon (木)"
+      ],
+      "hint_id": "Gabungan dari Orang (人) dan Pohon (木) yang membentuk makna visual 'rest'."
+    },
+    "jukugo": [
+      {
+        "word": "休み",
+        "reading": "やすみ",
+        "meaning_id": "rest; holiday"
+      },
+      {
+        "word": "休む",
+        "reading": "やすむ",
+        "meaning_id": "me-rest"
+      },
+      {
+        "word": "夏休み",
+        "reading": "なつやすみ",
+        "meaning_id": "summer holiday"
+      },
+      {
+        "word": "昼休み",
+        "reading": "ひるやすみ",
+        "meaning_id": "noon break"
+      },
+      {
+        "word": "休暇",
+        "reading": "きゅうか",
+        "meaning_id": "holiday"
+      },
+      {
+        "word": "休憩",
+        "reading": "きゅうけい",
+        "meaning_id": "rest"
+      },
+      {
+        "word": "休業",
+        "reading": "きゅうぎょう",
+        "meaning_id": "closed (e.g. store); business suspended"
+      },
+      {
+        "word": "休講",
+        "reading": "きゅうこう",
+        "meaning_id": "lecture cancelled"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-080",
+    "character": "父",
+    "unicode": "07236",
+    "level": "N5",
+    "strokes": 4,
+    "grade": 2,
+    "freq_rank": 646,
+    "radical": {
+      "character": "父",
+      "number": 88,
+      "strokes": 4,
+      "name_ja": "ちち",
+      "name_id": "Ayah"
+    },
+    "readings": {
+      "onyomi": [
+        "フ"
+      ],
+      "kunyomi": [
+        "ちち"
+      ],
+      "nanori": []
+    },
+    "meanings": {
+      "id": [
+        "ayah"
+      ],
+      "en": [
+        "father"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Father (父)"
+      ],
+      "hint_id": "Bentuk piktograf visual Father (父) yang melambangkan konsep 'ayah'."
+    },
+    "jukugo": [
+      {
+        "word": "お父さん",
+        "reading": "おとうさん",
+        "meaning_id": "(honorable) father"
+      },
+      {
+        "word": "お祖父さん",
+        "reading": "おじいさん",
+        "meaning_id": "grandfather; male senior citizen"
+      },
+      {
+        "word": "祖父",
+        "reading": "そふ",
+        "meaning_id": "grandfather"
+      },
+      {
+        "word": "父親",
+        "reading": "ちちおや",
+        "meaning_id": "ayah"
+      },
+      {
+        "word": "父母",
+        "reading": "ふぼ",
+        "meaning_id": "father and mother; parents"
+      },
+      {
+        "word": "叔父さん",
+        "reading": "おじさん",
+        "meaning_id": "middle-aged gentleman; uncle"
+      },
+      {
+        "word": "小父さん",
+        "reading": "おじさん",
+        "meaning_id": "middle-aged gentleman; uncle"
+      },
+      {
+        "word": "伯父さん",
+        "reading": "おじさん",
+        "meaning_id": "middle-aged gentleman; uncle"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-081",
+    "character": "雨",
+    "unicode": "096e8",
+    "level": "N5",
+    "strokes": 8,
+    "grade": 1,
+    "freq_rank": 950,
+    "radical": {
+      "character": "雨",
+      "number": 173,
+      "strokes": 8,
+      "name_ja": "あめ",
+      "name_id": "Hujan"
+    },
+    "readings": {
+      "onyomi": [
+        "ウ"
+      ],
+      "kunyomi": [
+        "あめ",
+        "あま-",
+        "-さめ"
+      ],
+      "nanori": []
+    },
+    "meanings": {
+      "id": [
+        "hujan"
+      ],
+      "en": [
+        "rain"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Hujan (雨)"
+      ],
+      "hint_id": "Bentuk piktograf visual Hujan (雨) yang melambangkan konsep 'hujan'."
+    },
+    "jukugo": [
+      {
+        "word": "雨",
+        "reading": "あめ",
+        "meaning_id": "hujan"
+      },
+      {
+        "word": "梅雨",
+        "reading": "つゆ",
+        "meaning_id": "rainy season"
+      },
+      {
+        "word": "雨戸",
+        "reading": "あまど",
+        "meaning_id": "sliding storm door"
+      },
+      {
+        "word": "雨具",
+        "reading": "あまぐ",
+        "meaning_id": "rain gear"
+      },
+      {
+        "word": "雨天",
+        "reading": "うてん",
+        "meaning_id": "rainy weather"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-082",
+    "character": "丈",
+    "unicode": "04e08",
+    "level": "N5",
+    "strokes": 3,
+    "grade": 8,
+    "freq_rank": 1375,
+    "radical": {
+      "character": "一",
+      "number": 1,
+      "strokes": 1,
+      "name_ja": "いち",
+      "name_id": "Satu / Garis horizontal"
+    },
+    "readings": {
+      "onyomi": [
+        "ジョウ"
+      ],
+      "kunyomi": [
+        "たけ",
+        "だけ"
+      ],
+      "nanori": [
+        "とも",
+        "ますら"
+      ]
+    },
+    "meanings": {
+      "id": [
+        "length",
+        "ten shaku",
+        "measure",
+        "Mr.",
+        "Ms.",
+        "height",
+        "stature",
+        "all (one has)",
+        "only",
+        "that's all",
+        "merely"
+      ],
+      "en": [
+        "length",
+        "ten shaku",
+        "measure",
+        "Mr.",
+        "Ms.",
+        "height",
+        "stature",
+        "all (one has)",
+        "only",
+        "that's all",
+        "merely"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Height (一)"
+      ],
+      "hint_id": "Bentuk piktograf visual Height (一) yang melambangkan konsep 'length'."
+    },
+    "jukugo": [
+      {
+        "word": "丈夫",
+        "reading": "じょうぶ",
+        "meaning_id": "kuat"
+      },
+      {
+        "word": "大丈夫",
+        "reading": "だいじょうぶ",
+        "meaning_id": "all right"
+      },
+      {
+        "word": "丈",
+        "reading": "たけ",
+        "meaning_id": "height; stature"
+      },
+      {
+        "word": "頑丈",
+        "reading": "がんじょう",
+        "meaning_id": "solid; firm"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-083",
+    "character": "誰",
+    "unicode": "08ab0",
+    "level": "N5",
+    "strokes": 15,
+    "grade": 8,
+    "freq_rank": 1933,
+    "radical": {
+      "character": "言",
+      "number": 149,
+      "strokes": 7,
+      "name_ja": "ことば",
+      "name_id": "Kata / Bahasa / Ucapan"
+    },
+    "readings": {
+      "onyomi": [
+        "スイ"
+      ],
+      "kunyomi": [
+        "だれ",
+        "たれ",
+        "た"
+      ],
+      "nanori": []
+    },
+    "meanings": {
+      "id": [
+        "who",
+        "someone",
+        "somebody"
+      ],
+      "en": [
+        "who",
+        "someone",
+        "somebody"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Kata / Ucapan (言)",
+        "Turkey (言)"
+      ],
+      "hint_id": "Gabungan dari Kata / Ucapan (言) dan Turkey (言) yang membentuk makna visual 'who'."
+    },
+    "jukugo": [
+      {
+        "word": "誰",
+        "reading": "だれ",
+        "meaning_id": "who"
+      },
+      {
+        "word": "誰か",
+        "reading": "だれか",
+        "meaning_id": "someone; somebody"
+      }
+    ]
+  },
+  {
+    "id": "kj-n5-084",
+    "character": "貼",
+    "unicode": "08cbc",
+    "level": "N5",
+    "strokes": 12,
+    "grade": 8,
+    "freq_rank": 2444,
+    "radical": {
+      "character": "貝",
+      "number": 154,
+      "strokes": 7,
+      "name_ja": "かい",
+      "name_id": "Kerang / Uang kuno / Harta"
+    },
+    "readings": {
+      "onyomi": [
+        "テン",
+        "チョウ"
+      ],
+      "kunyomi": [
+        "は.る",
+        "つ.く"
+      ],
+      "nanori": []
+    },
+    "meanings": {
+      "id": [
+        "stick",
+        "paste",
+        "apply"
+      ],
+      "en": [
+        "stick",
+        "paste",
+        "apply"
+      ]
+    },
+    "mnemonic": {
+      "components": [
+        "Shellfish (貝)",
+        "Fortune (貝)"
+      ],
+      "hint_id": "Gabungan dari Shellfish (貝) dan Fortune (貝) yang membentuk makna visual 'stick'."
+    },
+    "jukugo": [
+      {
+        "word": "貼る",
+        "reading": "はる",
+        "meaning_id": "me-stick"
+      }
+    ]
+  }
+];

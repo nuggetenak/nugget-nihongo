@@ -160,13 +160,47 @@ export async function loadVocab(level: string): Promise<NormalizedVocab[]> {
     }
   }
 
+  // Also load staged vocabulary expansion for N5–N1 if available
+  const isJLPT = ['n5', 'n4', 'n3', 'n2', 'n1'].includes(level.toLowerCase());
+  const stagedVarName = `stagedVocab${level.toUpperCase()}` as keyof Window;
+  if (isJLPT && !window[stagedVarName]) {
+    try {
+      await loadScript(`/data/staged-expansion/vocab/${level.toLowerCase()}-staged.js`);
+    } catch {}
+  }
+
   const rawList: any[] = (window[varName] as any[]) || [];
-  if (rawList.length === 0) {
+  const stagedList: any[] = isJLPT ? ((window[stagedVarName] as any[]) || []) : [];
+
+  if (rawList.length === 0 && stagedList.length === 0) {
     // Do not cache transient empty array so future retries can succeed
     return [];
   }
 
-  const normalized: NormalizedVocab[] = rawList.map((item) => ({
+  // Combine and deduplicate by unique word and id
+  const seenIds = new Set<string>();
+  const seenWords = new Set<string>();
+  const combined: any[] = [];
+
+  for (const item of rawList) {
+    const id = item.id || `vocab-${level}-${item.word}`;
+    if (!seenIds.has(id)) {
+      seenIds.add(id);
+      if (item.word) seenWords.add(item.word);
+      combined.push(item);
+    }
+  }
+
+  for (const item of stagedList) {
+    const id = item.id || `vocab-${level}-${item.word}`;
+    if (!seenIds.has(id) && item.word && !seenWords.has(item.word)) {
+      seenIds.add(id);
+      seenWords.add(item.word);
+      combined.push(item);
+    }
+  }
+
+  const normalized: NormalizedVocab[] = combined.map((item) => ({
     id: item.id || `vocab-${level}-${item.word}`,
     word: item.word || item.reading || '',
     reading: item.reading || item.word || '',
