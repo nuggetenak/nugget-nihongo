@@ -26,7 +26,7 @@ Research library for the evidence-based Japanese learning platform tailored spec
 | Vocational EPA/SSW SLA Corpus | `corpus/sections/vocational/EPA-KAIGO-SSW-WORKPLACE-CORPUS-v1.md` | 42-item atomized pain onomatopoeia matrix, 4-tier Rousai incident escalation protocol, eldercare speech shifts, gemba nihongo safety (Jalur B) |
 | All-Sector SSW Master Taxonomy | `corpus/sections/vocational/ALL-SECTOR-SSW-TAXONOMY-CORPUS-v1.md` | 18-sector Tokutei Ginou master taxonomy (100% lengkap seluruh 18 sektor: JAIM 17 divisi, JAC 3 divisi, Klaster I–IV operasional penuh) dan 36 simulasi darurat K3 gemba |
 | Prometric SSW Exam Specification | `corpus/sections/vocational/PROMETRIC-SSW-EXAM-SPECIFICATION-CORPUS-v1.md` | Prometric CBT test matrix, 17 JAIM manufacturing sub-divisions, JAVADA Business Career Kentei L3, JAC 3 divisions, & 4 visa pipelines |
-| Master Bibliography | `corpus/bibliography/MASTER-BIBLIOGRAPHY-FINAL.md` | Canonical bibliography registry (807+ unique entries, v30 / v23 biblio) |
+| Master Bibliography | `corpus/bibliography/MASTER-BIBLIOGRAPHY-FINAL.md` | Canonical bibliography registry (807+ unique entries, Corpus v30 Canonical) |
 | DOI Verification Tracker | `corpus/bibliography/DOI-VERIFICATION-TRACKER.md` | Audit registry of publisher DOIs and verification statuses (100% accounted for) |
 | Repository Index | `INDEX.md` | Comprehensive file and section index |
 | Compass Foundation | `corpus/source-of-truth/compass_artifact.md` | 44 foundational SLA and cognitive psychology citations |
@@ -96,17 +96,18 @@ Examples:
 
 ---
 
-## 6. Current Corpus Status (v21)
+## 6. Current Corpus Status (v30 Canonical)
 
 | Metric | Status |
 |---|---|
-| Total Unique Citations | **765** |
-| Verified DOIs | **369** (100% accounted for in `DOI-VERIFICATION-TRACKER.md`) |
-| Open Duplicate Flags | **0** (all 11 resolved) |
-| Open Literature Gaps | **0** (EA-22 resolved via Maarif 2023, Prihantoro 2024/2025, Haristiani 2024, Husna 2022, Maarif 2021, Alifah 2020, Nurjaman 2025, Lestari 2022, Pramesti 2019, Pratama 2024, Mustaqim 2026, Aror 2025, Supriatnaningsih 2024, Sari 2023, Nurjaleka 2022) |
+| Total Unique Citations | **807+** |
+| Verified DOIs | **539+** (100% accounted for, zero pending flags across all 18 sections) |
+| Master Design Decisions | **123 / 123** fully articulated in `blueprint/DESIGN-DECISION-MASTER-v1.md` |
+| Open Duplicate Flags | **0** (all 11 resolved: DUP-01 through DUP-11) |
+| Open Literature Gaps | **0** (EA-22 resolved and expanded to EA-33 via empirical Indonesian L1 studies: Maarif 2018, Prihantoro 2021, Sutedi 2016, Puspitosari & Setiawati 2024, etc.) |
 | Canonical Assignment | Matsunaga (1999) canonicalized as **`[OD-20]`** |
-| Cross-Section Design Flags | Reconciled in `DESIGN-DECISION-MASTER-v1.md` (Flags A, B, C, D, E) |
-| Operational Deliverables | Complete (Jalur A: Diagnostic Inventory, Jalur B: Vocational Corpus, 18-Sector Master Taxonomy & Prometric CBT Specification, Jalur C: Algorithmic Spec, Level Ladder, §18 Synthesis, Methodology Page) |
+| Cross-Section Design Flags | Reconciled in `DESIGN-DECISION-MASTER-v1.md` (CONF-01–04, Flags A–E) |
+| Operational Deliverables | Complete (Jalur A: 150-Item Diagnostic Inventory, Jalur B: 18-Sector SSW Master Taxonomy & 36 K3 Disaster Simulations, Jalur C: Micro-Session Algorithmic Spec, Jalur D: 150-Item HVPT Matrix, Jalur E: Cross-Matrix Audit & RTM) |
 
 ---
 
@@ -121,4 +122,4 @@ When communicating curriculum design publicly, adhere to the following empirical
 
 ---
 
-*CLAUDE.md — Updated to v21 Prometric CBT Master Ecosystem & Fieldwork Expansion Standards.*
+*CLAUDE.md — Updated to Corpus v30 Canonical Standards (807+ Unique Citations, 539+ Verified DOIs, 123 Master Decisions).*

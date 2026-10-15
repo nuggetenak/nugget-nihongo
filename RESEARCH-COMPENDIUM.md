@@ -67,8 +67,8 @@ nugget-nihongo-research/
 │   │       └── SECTION18-SYNTHESIS-v1.md      ← Unified pedagogical model & cross-strand architecture
 │   │
 │   └── bibliography/
-│       ├── MASTER-BIBLIOGRAPHY-FINAL.md       ← Canonical bibliographic registry (807+ unique citations, 773 master entries, v23)
-│       └── DOI-VERIFICATION-TRACKER.md        ← CrossRef & publisher audit registry (100% accounted for)
+│       ├── MASTER-BIBLIOGRAPHY-FINAL.md       ← Canonical bibliographic registry (807+ unique entries, Corpus v30 Canonical)
+│       └── DOI-VERIFICATION-TRACKER.md        ← CrossRef & publisher audit registry (100% accounted for, 539+ DOIs)
 │
 ├── blueprint/
 │   ├── DESIGN-DECISION-MASTER-v1.md          ← 123 citation-grounded engineering & UX decisions

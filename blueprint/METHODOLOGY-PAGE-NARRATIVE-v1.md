@@ -1,7 +1,7 @@
 # METHODOLOGY PAGE — NARRATIVE SKELETON v1
 **For:** Nugget Nihongo public-facing methodology page
 **Authored by:** Nugget Nihongo Curriculum Architecture Team
-**Date:** 17 April 2026
+**Date:** Canonical Revision — October 2026 (Corpus v30 Canonical Synchronization)
 **Target audience:** Prospective Nugget Nihongo users (Indonesian-speaking, considering the app), journalists, researchers, educators evaluating the platform.
 **Tone:** Authoritative but accessible. Indonesian-language page (with English mirror later). Not marketing copy — genuine pedagogical accounting.
 **Target length:** 500–800 words per the arc below. This skeleton is the English-language working draft; Indonesian translation/adaptation is a separate step.
@@ -86,11 +86,11 @@ Kami jujur tentang apa yang telah dibuktikan dan apa yang belum:
 
 **Yang *tidak* kami klaim telah terbukti:**
 - Bahwa FSRS "secara ilmiah terbukti" lebih baik dari SM-2 dalam RCT independen.
-- Bahwa JLPT N4 "cukup" untuk bekerja di sektor SSW — penelitian Ogawa 2012 di konteks EPA menunjukkan ada kesenjangan sistematik antara keigo ujian dan keigo autentik workplace.
+- Bahwa JLPT N4 "cukup" untuk bekerja di sektor SSW — penelitian Noyama (2012) `[VS-08]` dan Ogawa (2011) `[VS-06]` di konteks EPA/Kaigo menunjukkan ada kesenjangan sistematik antara keigo ujian dan keigo autentik workplace.
 - Bahwa gamification meningkatkan pembelajaran kosakata Jepang — engagement dan learning outcome adalah dua hal berbeda, dan literature tidak mendukung klaim yang terakhir.
 - Bahwa "semua pembelajar Indonesia mengalami malu" — ada heterogenitas budaya yang besar di dalam Indonesia, dan generalisasi pada tingkat ini tidak valid.
 
-*[Supporting evidence: §16 CALL/MALL cluster CM-01 through CM-25; §1 SRS cluster evidence base + boundary conditions §1.12; §8 Flag-3 malu heterogeneity acknowledgment.]*
+*[Supporting evidence: §16 CALL/MALL cluster CM-01 through CM-25; §1 SRS cluster evidence base + boundary conditions §1.12; §8 Flag-3 malu heterogeneity acknowledgment; §15 VS-06/VS-08 workplace sociopragmatics.]*
 
 ---
 
@@ -98,13 +98,13 @@ Kami jujur tentang apa yang telah dibuktikan dan apa yang belum:
 
 Beberapa pertanyaan penting belum dapat dijawab dengan literature yang ada. Dalam dokumen Platform Research Agenda, kami mencatat pertanyaan-pertanyaan ini sebagai agenda riset yang Nugget Nihongo sendiri dapat kontribusikan:
 
-- **Study 1:** Survei orientasi motivasional pembelajar Bahasa Jepang Indonesia — belum ada data publikasi yang spesifik untuk populasi ini menggunakan kerangka SDT atau L2MSS.
-- **Study 2:** Pola error L1-transfer Bahasa Indonesia → Bahasa Jepang yang sistematis — telah diakui secara eksplisit sebagai kesenjangan literature (marker EA-22 dalam corpus).
+- **Study 1:** Survei orientasi motivasional pembelajar Bahasa Jepang Indonesia — belum ada data publikasi berskala besar yang spesifik untuk populasi ini menggunakan kerangka komparatif SDT dan L2MSS.
+- **Study 2:** Pola error L1-transfer Bahasa Indonesia → Bahasa Jepang yang sistematis — meskipun korpus telah mensintesis 150 butir diagnostik empiris (klaster EA-22 s.d. EA-33: Maarif 2018, Prihantoro 2021, Sutedi 2016), telemetri platform secara longitudinal akan terus memperbarui model probabilitas transfer interlanguage real-time.
 - **Study 3:** Pengukuran malu yang sebenarnya pada pembelajar Bahasa Jepang Indonesia — kesenjangan paling penting dalam seluruh pustaka §8; Zhang 2019 dan Liu & Jackson 2008 adalah proxy terbaik yang tersedia.
 
 Platform ini dirancang untuk dapat mengumpulkan data (dengan consent, anonim) yang pada akhirnya akan membantu menjawab pertanyaan-pertanyaan ini — tidak sebagai produk tambahan, tetapi sebagai kontribusi untuk community pembelajaran Bahasa Jepang Indonesia yang lebih luas.
 
-*[Supporting evidence: PLATFORM-RESEARCH-AGENDA.md; §8 Flag-1/Flag-3; EA-22 formalized gap marker; §5.6.6.]*
+*[Supporting evidence: PLATFORM-RESEARCH-AGENDA.md; §8 Flag-1/Flag-3; EA-22–EA-33 empirical cluster; §5.6.6.]*
 
 ---
 
@@ -128,8 +128,8 @@ Platform ini dirancang untuk dapat mengumpulkan data (dengan consent, anonim) ya
 ## DELIVERABLE STATUS
 
 **File:** `blueprint/METHODOLOGY-PAGE-NARRATIVE-v1.md`
-**Version:** 1.0 — first synthesis draft (English working copy; Indonesian production copy to follow)
+**Version:** 1.1 — Canonical Revision (Corpus v30 Synchronization — 807+ unique citations, 539+ verified DOIs, 18 SSW sectors)
 **Canonical?** Yes — authoritative narrative skeleton for the methodology page.
 **Downstream dependencies:** Indonesian translation/adaptation → methodology-page UI implementation in `public/js/pages/about.js` extension → Daftar Pustaka page linking corpus sections.
 
-*Nugget Nihongo Curriculum Architecture Team — Canonical Synthesis*
+*Nugget Nihongo Curriculum Architecture Team — Canonical Synthesis — October 2026*

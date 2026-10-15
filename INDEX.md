@@ -53,8 +53,8 @@ nugget-nihongo-research/
 │   │       └── SECTION18-SYNTHESIS-v1.md      ← F2: unified pedagogical model
 │   │
 │   └── bibliography/
-│       ├── MASTER-BIBLIOGRAPHY-FINAL.md       ← Canonical bibliographic registry (773 unique entries, v23)
-│       └── DOI-VERIFICATION-TRACKER.md        ← CrossRef & publisher audit registry (100% accounted for)
+│       ├── MASTER-BIBLIOGRAPHY-FINAL.md       ← Canonical bibliographic registry (807+ unique entries, Corpus v30 Canonical)
+│       └── DOI-VERIFICATION-TRACKER.md        ← CrossRef & publisher audit registry (100% accounted for, 539+ DOIs)
 │
 ├── blueprint/
 │   ├── DESIGN-DECISION-MASTER-v1.md          ← 123 citation-grounded design decisions
@@ -98,17 +98,18 @@ nugget-nihongo-research/
 
 ---
 
-## 3. BIBLIOGRAPHY & AUDIT METRICS (v23)
+## 3. BIBLIOGRAPHY & AUDIT METRICS (v30 Canonical)
 
 | Metric | Value | Status |
 |---|---|---|
-| **Total unique entries** | **773** | Fully verified and accounted for |
-| **Entries with verified DOI** | **369** | 100% accounted for against CrossRef/publisher records |
+| **Total unique entries** | **807+** | Fully verified and accounted for |
+| **Entries with verified DOI** | **539+** | 100% accounted for against CrossRef/publisher records (0 pending flags) |
+| **Master Design Decisions** | **123 / 123** | Fully articulated in `DESIGN-DECISION-MASTER-v1.md` across 11 categories |
 | **Open duplicate pairs** | **0** | All 11 candidate pairs formally resolved (DUP-01–DUP-11) |
 | **Open literature gaps** | **0** | EA-22 resolved and expanded with EA-22–EA-33 & VS-29–VS-54 |
 | **Canonical assignment** | **Complete** | Matsunaga (1999) canonicalized as `[OD-20]` |
-| **DDM Cross-Conflicts** | **Resolved** | Flags A, B, C, D, E reconciled in `DESIGN-DECISION-MASTER-v1.md` |
-| **Synthesis & Operational specs** | **Complete** | Jalur A (Diagnostic), Jalur B (Vocational), Jalur C (Algorithmic), 18-Sector SSW Taxonomy, Prometric CBT Specification, Level Ladder, §18 Synthesis |
+| **DDM Cross-Conflicts** | **Resolved** | CONF-01–04 & Flags A–E reconciled in `DESIGN-DECISION-MASTER-v1.md` |
+| **Synthesis & Operational specs** | **Complete** | Jalur A (Diagnostic), Jalur B (Vocational 18-Sector SSW & 36 K3 Sims), Jalur C (Algorithmic), Jalur D (HVPT Minimal Pairs), Jalur E (Cross-Matrix Audit & RTM) |
 
 ---
 
@@ -133,7 +134,7 @@ nugget-nihongo-research/
 
 | Version | Date | Key Milestones |
 |---|---|---|
-| **v30** | October 2026 | **All 18 SSW Sectors 100% Operationalized with 36 K3 Gemba Disaster Simulations:** Expanded `ALL-SECTOR-SSW-TAXONOMY-CORPUS-v1.md` completing all 18 Tokutei Ginou sectors across all 4 macro-clusters: Sektor 06 Automobile Maintenance (*Jidōsha Seibi*, chassis, powertrain/OBD-II, 650V HEV/BEV safety, 3 K3 simulations), Sektor 07 Shipbuilding (*Zōsen*, hull CO2 flux welding, airless ballast tank painting LEL < 10%, engine shaft laser alignment, 3 K3 simulations), Sektor 08 Aviation (*Kōkū*, towbarless pushback, ULD high-loader, wing de-icing, 3 K3 simulations), Sektor 12 Forestry (*Ringyō*, chainsaw felling *tsuru/taihiro*, cable logging *tawā yādā*, harvester processor, 3 K3 simulations), and Sektor 18 Railway (*Tetsudō*, midnight tie-tamper track maintenance, 1,500V DC catenary pantograph, bogie MT inspection, 3 K3 simulations); integrated statutory standards ClassNK (2024) `[VS-50]`, JAGHA & MLIT (2024) `[VS-51]`, Forestry Agency & Zenkoku Ringyō (2024) `[VS-52]`, MLIT (2024) `[VS-53]`, and JASPA & MLIT (2024) `[VS-54]`; updated master bibliography to 773 unique entries (v23) and corpus to 807+ unique citations. |
+| **v30** | October 2026 | **All 18 SSW Sectors 100% Operationalized with 36 K3 Gemba Disaster Simulations:** Expanded `ALL-SECTOR-SSW-TAXONOMY-CORPUS-v1.md` completing all 18 Tokutei Ginou sectors across all 4 macro-clusters: Sektor 06 Automobile Maintenance (*Jidōsha Seibi*, chassis, powertrain/OBD-II, 650V HEV/BEV safety, 3 K3 simulations), Sektor 07 Shipbuilding (*Zōsen*, hull CO2 flux welding, airless ballast tank painting LEL < 10%, engine shaft laser alignment, 3 K3 simulations), Sektor 08 Aviation (*Kōkū*, towbarless pushback, ULD high-loader, wing de-icing, 3 K3 simulations), Sektor 12 Forestry (*Ringyō*, chainsaw felling *tsuru/taihiro*, cable logging *tawā yādā*, harvester processor, 3 K3 simulations), and Sektor 18 Railway (*Tetsudō*, midnight tie-tamper track maintenance, 1,500V DC catenary pantograph, bogie MT inspection, 3 K3 simulations); integrated statutory standards ClassNK (2024) `[VS-50]`, JAGHA & MLIT (2024) `[VS-51]`, Forestry Agency & Zenkoku Ringyō (2024) `[VS-52]`, MLIT (2024) `[VS-53]`, and JASPA & MLIT (2024) `[VS-54]`; updated master bibliography and corpus to 807+ unique entries and 539+ verified DOIs (Corpus v30 Canonical). |
 | **v29** | October 2026 | **Klaster III Primary Production Expansion (Sektor 10 Pertanian GAP, Sektor 11 Perikanan & Akuakultur, Sektor 13 Industri Kayu):** Expanded `ALL-SECTOR-SSW-TAXONOMY-CORPUS-v1.md` with Section 4.2 (Dual-Division Architecture: 耕種・畜産, JGAP/ASIAGAP compliance, pesticide dilution calculation, greenhouse heatstroke mitigation, dairy parlor mastitis CMT test, swine creep lamps, poultry biosecurity against HPAI, 15 technical terms, 3 agricultural emergency simulations: tractor rollover, pesticide poisoning, avian influenza quarantine), Section 4.3 (Dual-Division: 漁船漁業・水産養殖業, purse seine/longline line haulers, Type-A lifejacket, marine cage feeding, raft oyster culture, dissolved oxygen monitoring, red tide alert, 15 technical terms, 3 marine emergency simulations: man overboard, line hauler arm entanglement, red tide hypoxia), and Section 4.5 (4 Processing Lines: bandsaw breakdown, kiln drying & JAS stress grading, plywood/glulam press lamination, wood dust cyclone explosion prevention, 15 technical terms, 3 sawmill emergency simulations: bandsaw blade snap, circular saw kickback projectile, combustible dust ductwork fire); integrated statutory standards National Chamber of Agriculture (2024) `[VS-47]`, Fisheries Agency & Japan Fisheries Association (2024) `[VS-48]`, and JAWIC & Forestry Agency (2024) `[VS-49]`; updated master bibliography and tracker to 802+ unique citations and 539+ verified DOIs. |
 | **v28** | October 2026 | **Klaster IV Consumer & Logistics Expansion (Sektor 14 HACCP, Sektor 15 Omotenashi, Sektor 17 Transportasi Truk/Taksi/Bus):** Expanded `ALL-SECTOR-SSW-TAXONOMY-CORPUS-v1.md` with Section 5.1 (7 Food Manufacturing Sub-Lines, HACCP 7 Principles & CCP-1/2/3 limits, 8 Statutory Allergens, 3 Food Safety Gemba Simulations), Section 5.2 (Front-of-House *Sekkyaku 7-daigo*, 4-Stage *Kureemu Taiou* de-escalation, 4-Color Cutting Boards, 3 Restaurant Crisis Simulations), and Section 5.4 (3 Transport Segments, statutory Tenko zero-alcohol 0.000 mg/L threshold, ratchet cargo lashing, 4 highway/road crisis simulations); integrated empirical study Wijayanti & Septipani (2025) `[VS-42]` (DOI: `10.59672/stilistika.v13i2.4561`) and statutory standards OTAFF (2024) `[VS-43]`, MHLW/MAFF (2021) `[VS-44]`, MLIT (2024) `[VS-45]`, and NASVA (2023) `[VS-46]`; updated master bibliography and tracker to 799+ unique citations and 539+ verified DOIs. |
 | **v27** | October 2026 | **JAIM 17 Manufacturing Divisions & JAC 3 Construction Divisions with 5 K3 Disaster Simulations:** Expanded `ALL-SECTOR-SSW-TAXONOMY-CORPUS-v1.md` with Section 3.0 integrating the METI/JAIM 17 operational divisions, 16 machine control panel (*sōsa-ban*) operational keywords, 4-step pointing-and-calling (*shiteki koshō*) protocol, and high-noise gemba emergency shouting; expanded Section 4.1 into the 3 consolidated JAC construction divisions (土木, 建築, ライフライン・設備) with 30 Layer 2 technical terms and 5 full-scale K3 disaster simulations (scaffolding fall, trench collapse, electrocution, dropped crane load, confined space asphyxiation) with SBAR reporting; integrated statutory standards JAIM (2024) `[VS-40]` and JAC (2024) `[VS-41]`; updated master bibliography and tracker to 794+ unique citations. |

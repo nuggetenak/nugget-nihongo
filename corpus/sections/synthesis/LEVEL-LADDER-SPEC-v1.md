@@ -126,6 +126,33 @@ A learner exits N4 when they can:
 
 ---
 
+## PARALLEL TRACK — 18-SECTOR SSW VOCATIONAL SPECIALIZATION (POST-N4)
+
+Upon graduating from Level N4, learners who are pursuing employment in Japan under the Specified Skilled Worker (SSW / *Tokutei Ginou*) visa program enter the **Parallel SSW Vocational Specialization Track (Jalur B)**, either in parallel with or in place of academic N3 preparation.
+
+### SSW Curricular Architecture:
+1. **18-Sector Master Taxonomy Coverage:**
+   - *Klaster I (Industri Primer):* Sektor 12 Kehutanan (*Ringyō*), Sektor 13 Pertanian Pangan (*Nōgyō Kōki*), Sektor 14 Peternakan (*Chikusan*), Sektor 15 Perikanan & Budidaya (*Suisangyō*).
+   - *Klaster II (Manufaktur & Logistik):* Sektor 03 Material Dasar (*Sozai*), Sektor 04 Permesinan Industri (*Sangyō Kikai*), Sektor 05 Elektro & Elektronika (*Denki Denshi*), Sektor 06 Bengkel Mobil (*Jidōsha Seibi* / 650V HEV), Sektor 07 Galangan Kapal (*Zōsen*), Sektor 08 Aviasi (*Kōkū* / Ground Handling), Sektor 16 Pengolahan Makanan (*Inshokuryōhin*).
+   - *Klaster III (Infrastruktur & Lingkungan):* Sektor 02 Pembersihan Gedung (*Biru Kuriiningu*), Sektor 09 Konstruksi Bangunan (*Kōji Kensetsu*), Sektor 10 Teknik Sipil (*Doboku*), Sektor 11 Utilitas Bangunan (*Kenchiku Setsubi*), Sektor 18 Perkeretaapian (*Tetsudō*).
+   - *Klaster IV (Jasa & Komunikasi Sosial):* Sektor 01 Keperawatan Lansia (*Kaigo*), Sektor 17 Restoran & F&B (*Gaishokugyō*).
+2. **36 K3 Gemba Disaster Simulations:**
+   - 2 high-stress simulations per sector featuring shouted warning acoustics (*kansei*) under 80–95 dB industrial background noise, requiring split-second ($\le 2.0\text{s}$) hazard decisions.
+3. **Kaigo Eldercare 42 Pain Onomatopoeia Matrix:**
+   - Specialized diagnostic training in nuanced Japanese bodily sensations (*chikuchiku, zukin-zukin, kirikiri*) paired with anatomical symptom inquiries.
+4. **Prometric CBT Technical Test Specifications:**
+   - Complete alignment with 17 JAIM manufacturing sub-divisions, 3 JAC construction classifications, and JAVADA Business Career Kentei Level 3 (Production Management Planning & Operations) for SSW-2 candidates.
+5. **4-Tier Rousai Industrial Accident Escalation:**
+   - Institutionalized emergency reporting and labor compensation rights training.
+
+### Can-Do Exit Criteria (SSW Tier 1 / Tokutei Ginou 1-gō)
+1. Pass the official Prometric SSW Skills Evaluation Exam in the candidate's target sector.
+2. Accurately decode shouted gemba safety commands (*Abunai!*, *Tomare!*, *Nigero!*) and execute protocol within $\le 2.0\text{s}$.
+3. Deliver standardized SBAR workplace verbal reports to Japanese supervisors without omission of critical facts.
+4. Correctly identify at least 35 of 42 pain onomatopoeias in simulated patient consultations (Kaigo sector).
+
+---
+
 ## LEVEL N3 — INTERMEDIATE (THE PLATEAU)
 
 ### Vocabulary Load Target
@@ -192,7 +219,7 @@ Structural scope: ~100–120 grammar points (current grammar-n3.js = 103 entries
 - **Stage 4 consolidation:** All productive and receptive grammar at native-like parse speed. Aspect markers (〜てしまう、〜ておく、〜てある semantic distinctions).
 - **Stage 5 (Target-like morpho-syntax):** Formal register grammar (〜において、〜に関して、〜をめぐって), literary tense/aspect (〜ていた historical framing), nominalizers (こと vs の distinction under verb selection), hearsay/evidentiality markers (〜そうだ、〜らしい、〜ようだ — three evidentials with distinct epistemic profiles).
 
-Structural scope: ~150–200 grammar points. Current grammar-n2.js has 30 seed entries — **this represents a real content gap** the platform should address before N2 becomes a meaningful level for users.
+Structural scope: ~150–200 grammar points (spanning formal written registers, evidential markers, and complex causative-passive discourse mappings).
 
 ### SRS Card Type Distribution
 
@@ -235,7 +262,7 @@ Structural scope: ~150–200 grammar points. Current grammar-n2.js has 30 seed e
 - Register-marked grammar (archaic forms in literary texts, keigo subsystems with full productive command, dialect awareness at receptive level).
 - Pragmatic-grammatical interface fully integrated (§14 SC-08 Kasper & Rose — pragmatic competence reaches ceiling at N1; beyond this level, gains are sociolinguistic register mastery not grammatical).
 
-Structural scope: Fewer *new* grammar points (~80–120 items) but much higher complexity per item. Current grammar-n1.js has 8 seed entries — **also a content gap**, but lower priority than N2 because fewer Nugget Nihongo users will reach N1 in the medium term.
+Structural scope: ~80–120 advanced patterns characterized by high stylistic specialization, literary nuance, and advanced sociopragmatic register governance.
 
 ### SRS Card Type Distribution
 
@@ -308,8 +335,8 @@ Stability triggers in the ladder reflect level-appropriate retention demands, no
 ## DELIVERABLE STATUS
 
 **File:** `corpus/sections/synthesis/LEVEL-LADDER-SPEC-v1.md`
-**Version:** 1.0 — first synthesis draft
-**Canonical?** Yes — this is the authoritative ladder spec for the Nugget Nihongo methodology page.
-**Revision triggers:** If BC cluster boundary conditions are revised (Pass 17+) or if FSRS Indonesian prior calibration data arrives from platform telemetry, this document's trigger thresholds should be reviewed.
+**Version:** 1.1 — Canonical Revision (Corpus v30 Master Overhaul & 18-Sector SSW Integration)
+**Canonical?** Yes — authoritative ladder and milestone specification for the Nugget Nihongo platform.
+**Revision triggers:** If BC cluster boundary conditions are revised or if FSRS Indonesian prior calibration data arrives from platform telemetry, this document's trigger thresholds should be reviewed.
 
 *Nugget Nihongo Curriculum & Pedagogical Synthesis Group — Canonical Specification — October 2026*
