@@ -1,8 +1,8 @@
 # ── Not deployed (build/dev tools only) ─────────────
-agents/
-tools/
-logs/
-state/
+/agents/
+/tools/
+/logs/
+/state/
 # docs/ is intentionally tracked — project knowledge base
 # _MAP.md and session recaps are tracked — project governance
 
