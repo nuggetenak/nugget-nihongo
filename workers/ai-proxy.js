@@ -27,7 +27,7 @@ const DAILY_LIMIT = 20; // bumped from 15 → 20 with caching reducing actual AP
 
 // ── Model config ────────────────────────────────────────────────
 const GROQ_URL   = 'https://api.groq.com/openai/v1/chat/completions';
-const GEMINI_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent';
+const GEMINI_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent';
 const OR_URL     = 'https://openrouter.ai/api/v1/chat/completions';
 
 const GROQ_MODEL_FAST = 'llama-3.1-8b-instant';

@@ -1,93 +1,169 @@
-# Nugget Nihongo 🍙
+# Nugget Nihongo 🍙 (ナゲット日本語)
 
-> Referensi & Quiz Tata Bahasa Jepang JLPT — Gratis, Offline, Tanpa Akun
+> **Ekosistem Pembelajaran Bahasa Jepang Modern, Ilmiah, & Mandiri untuk Penutur Indonesia.**  
+> *Dari Nol (Jalur Freeway) hingga JLPT N1 & Pekerja Keterampilan Khusus (SSW/Tokutei Ginou).*
 
-[![Deploy](https://github.com/nuggetenak/nugget-nihongo/actions/workflows/deploy.yml/badge.svg)](https://github.com/nuggetenak/nugget-nihongo/actions/workflows/deploy.yml)
-[![Validate](https://github.com/nuggetenak/nugget-nihongo/actions/workflows/validate.yml/badge.svg)](https://github.com/nuggetenak/nugget-nihongo/actions/workflows/validate.yml)
+[![Nugget Nihongo Version](https://img.shields.io/badge/version-v19.3.2-amber.svg?style=flat-square)](CHANGELOG.md)
+[![Test Suite Status](https://img.shields.io/badge/tests-75%2C136%20passed-emerald.svg?style=flat-square)](tests/run.js)
+[![Responsive Audit](https://img.shields.io/badge/responsive-58%2F58%20passed-blue.svg?style=flat-square)](tests/verify-frontend-responsive.js)
+[![Corpus Size](https://img.shields.io/badge/vocab-10%2C508%2B%20entries-orange.svg?style=flat-square)](public/data/vocab/)
+[![Grammar Points](https://img.shields.io/badge/grammar-859%20patterns-purple.svg?style=flat-square)](public/data/grammar/)
+[![PWA Ready](https://img.shields.io/badge/PWA-100%25%20Offline-success.svg?style=flat-square)](public/sw.js)
+[![License: MIT](https://img.shields.io/badge/License-MIT-stone.svg?style=flat-square)](LICENSE)
 
-## What is this?
+**Aplikasi Live:** [nugget-nihongo.pages.dev](https://nugget-nihongo.pages.dev)  
+*(Bisa langsung diakses via peramban atau dipasang sebagai PWA di Android, iOS, Windows, dan macOS)*
 
-A Progressive Web App for learning Japanese, built for JLPT N5–N1 preparation.
-Works completely offline after first load. No account needed. No ads. Free forever.
+---
 
-**Live**: [nugget-nihongo.pages.dev](https://nugget-nihongo.pages.dev)
+## 🌟 Mengapa Nugget Nihongo?
 
-## Features
+Mempelajari bahasa Jepang sering kali terasa mengintimidasi bagi penutur Indonesia karena perbedaan rumpun bahasa, ribuan kanji, dan sistem kesopanan (*Keigo*) yang rumit. Sebagian besar aplikasi yang ada hanya menerjemahkan materi dari bahasa Inggris secara kaku tanpa mempertimbangkan cara berpikir bahasa ibu kita.
 
-- 📚 **4,800+ vocabulary entries** across JLPT N5–N1 plus dedicated Tokutei Ginou (SSW) tracks (Konstruksi, Pengolahan Makanan, Kaigo)
-- 📝 **850+ grammar points** with authentic examples, furigana, and Indonesian contrastive notes
-- 🎯 **9 quiz modes** — flashcard, fill-in, rearrange, conjugation, translation, error-find, multiple choice
-- 🔄 **SRS (Spaced Repetition)** — FSRS algorithm for optimized review
-- 📖 **Book index** — learn by textbook chapter (Irodori, Sou Matome, Minna no Nihongo)
-- 🌐 **Bilingual** — Indonesian interface tailored for Indonesian native learners
-- 📱 **PWA & Offline** — install on any device, works completely offline
-- 🌙 **Dark mode** — easy on the eyes
+**Nugget Nihongo** lahir untuk menjawab tantangan tersebut. Memadukan **prinsip linguistik kontrastif L1 (Bahasa Indonesia & Dialek Nusantara)**, kurikulum pedagogis spiral, algoritma daya ingat ilmiah **FSRS**, dan integrasi **AI Sensei dwibahasa**, aplikasi ini dirancang agar siapa pun bisa belajar bahasa Jepang dengan percaya diri, menyenangkan, dan bebas dari rasa takut salah (*malu-awareness*).
 
-## Quick Start
+---
+
+## 🚀 Fitur Unggulan
+
+### 1. 🥋 Studio Dojo Kanji
+- **Fisika Goresan Kaligrafi Presisi**: Dilengkapi data vektor resmi KanjiVG dengan animasi aliran tinta dinamis (`--stroke-len`) yang tuntas hingga goresan pamungkas.
+- **Intelligent Touch Drift Engine**: Latihan menulis langsung di atas kanvas dengan toleransi sentuh cerdas. Mendeteksi jika goresan melenceng dari jalur kanji asli dan memberikan getaran lembut (*haptic feedback*).
+- **Kartu Terpadu Kosakata & Kalimat Nyata**: Setiap bacaan **Onyomi (音読み)** dan **Kunyomi (訓読み)** langsung diperkaya contoh kosakata riil, arti bahasa Indonesia, contoh kalimat berpasangan (JP + ID), serta pemutar audio pelafalan asli.
+
+### 2. 📚 Perpustakaan 9 Buku Teks Jepang Resmi
+Akses materi dan latihan bab demi bab dari 9 buku teks kanonikal terpopuler di dunia:
+- **Jalur Akademik**: *Minna no Nihongo (Shokyu I & II)*, *Genki (I & II)*, dan *Quartet (I & II)*.
+- **Jalur Komunikatif & SSW**: *Irodori: Bahasa Jepang untuk Kehidupan di Jepang (Starter A1, A2-1, A2-2)* dan *Marugoto (A1, A2-1, A2-2)*.
+- **Jalur Ujian JLPT**: *Shin Kanzen Master (N3–N1)*, *Nihongo Sou Matome (N5–N1)*, dan *TRY!*.
+- **Jalur Budaya & Lanjutan**: *Tobira Gateway to Advanced Japanese* dan *Dekiru Nihongo*.
+- **Metodologi Pedagogis 5W+1H**: Setiap bab dilengkapi alasan pedagogis mengapa materi tersebut diletakkan di sana, perbandingannya dengan buku lain, serta *Signature Drills* interaktif.
+
+### 3. 🧠 Pusat Retensi FSRS Ilmiah (Memory Vault)
+- Menggantikan sistem flashcard konvensional (*Leitner/SM-2*) dengan **Free Spaced Repetition Scheduler (FSRS)** modern.
+- Menghitung secara matematis **Stabilitas Ingatan ($S$)**, **Tingkat Kesulitan ($D$)**, dan **Probabilitas Penarikan Ingatan ($R$)**.
+- Visualisasi grafik status retensi (*New, Learning, Review, Relearning*), kurva kelupaan Ebbinghaus, dan pemantauan kartu jatuh tempo agar belajar tetap efisien tanpa membuang waktu mengulang kata yang sudah hafal.
+
+### 4. 🍵 AI Sensei Multi-Model Auto-Router
+- **Dua Persona Karakter Otentik**:
+  - **Sensei Nugget**: Senpai berpengalaman yang tajam, bernas, langsung pada inti persoalan, dan mendasarkan penjelasan pada linguistik terapan.
+  - **Senpai Aoi (葵先輩)**: Tutor pembimbing yang ramah, hangat, sabar, dan menguraikan konsep rumit lewat analogi kehidupan sehari-hari.
+- **Dukungan Multi-Model Fleksibel**:
+  - Terhubung langsung dengan **OpenRouter** (*Qwen 2.5 72B, Llama 3.3 70B, DeepSeek*) dan **Google Gemini** (*Gemini 2.5 Flash & 2.0 Flash*).
+  - Dilengkapi *Guardrails* ketat: penolakan topik di luar pembelajaran bahasa Jepang dan metode koreksi berbasis wacana (*swap + alasan + langkah konkret*).
+
+### 5. 🎯 Arena Kuis & Mission Launchpad
+- **9 Mode Kuis Komprehensif**: Pilihan Ganda, Susun Kalimat, Tebak Partikel, Konjugasi Kata Kerja, Deteksi Kesalahan (*Error-find*), dan Terjemahan.
+- **Bilah Zen Focus**: Tampilan pengerjaan soal bersih tanpa distraksi dengan indikator streak animasi api.
+- **Putaran Pemulihan (Remediation Loop)**: Setiap soal yang salah dijawab akan otomatis ditandai dan diujikan kembali di akhir sesi hingga konsep benar-benar dikuasai.
+
+### 6. 📱 Desain Responsif & Estetika Jepang Alami
+- **Tema Terang Kertas Washi (Default)**: Palet lembut bernuansa serat kertas Washi tradisional (`#FDFBF7`) yang ramah di mata untuk sesi belajar siang hari.
+- **Tema Gelap Warm Sumi & Makie (蒔絵)**: Palet pernis emas arang hangat (`#121110`, `#1A1816`, `#F59E0B`) yang elegan dan bebas dari benturan warna biru dingin.
+- **Standar Multi-Perangkat (Zero Blowout)**: Divalidasi secara otomatis melalui Playwright pada ponsel ringkas 320px–375px (iPhone SE), ponsel modern 390px–430px, tablet/iPad, hingga monitor desktop 1920px+.
+
+### 7. ⚡ 100% Offline-First & Privasi Terjaga
+- Beroperasi penuh secara offline berkat arsitektur Service Worker hibrida (*Cache-First* untuk antarmuka dan *Stale-While-Revalidate* untuk korpus data).
+- Tidak mewajibkan login/akun. Seluruh riwayat belajar, streak, dan metrik memori tersimpan aman di peramban pengguna (*LocalStorage & IndexedDB*).
+
+---
+
+## 📊 Cakupan Korpus Basis Data (v19.3.2)
+
+| Tingkat / Jalur Belajar | Kosakata Aktif | Pola Tata Bahasa | Karakter Kanji | Fokus & Kompetensi Utama |
+| :--- | :---: | :---: | :---: | :--- |
+| **JLPT N5 / JFT A1** | **1.321** | **94** | 103 | Salam harian, partikel primer, angka, kopula, kata kerja sopan (*~masu*). |
+| **JLPT N4 / JFT A2** | **1.286** | **92** | 181 | Bentuk sambung (*te-form*), syarat (*~tara/~ba*), izin (*~te mo ii*), keharusan. |
+| **JLPT N3 / B1** | **2.580** | **163** | 367 | Nuansa emosi, wacana transisi, ragam bahasa kasual vs formal sehari-hari. |
+| **JLPT N2 / B2** | **2.104** | **310** | 415 | Bahasa berita, percakapan kantor & bisnis (*Keigo*), relasi logis abstrak. |
+| **JLPT N1 / C1** | **3.217** | **200** | 1.144 | Wacana tingkat tinggi, ekspresi literatur klasik, dokumen legal & editorial. |
+| **19 Sektor SSW / Kaigo** | **380+** | **42** | — | Istilah keperawatan lansia (*Kaigo*), pengolahan makanan, konstruksi (*JAC*). |
+| **TOTAL KORPUS** | **10.508+** | **859** | **2.210** | **Terverifikasi 100% dengan audio TTS, furigana, & contoh kalimat ID** |
+
+---
+
+## 🛠️ Panduan Memulai Cepat (Quick Start)
+
+### Prasyarat
+- Node.js versi `20.x` atau `22.x`
+- npm versi `10.x` atau lebih baru
+
+### Instalasi & Menjalankan Lokal
 
 ```bash
-# Clone
+# 1. Kloning repositori
 git clone https://github.com/nuggetenak/nugget-nihongo.git
 cd nugget-nihongo
 
-# Install dependencies
+# 2. Pasang dependensi
 npm install
 
-# Run development server
+# 3. Jalankan server pengembang
 npm run dev
+```
 
-# Run comprehensive test suite
+Buka `http://localhost:5173` pada peramban Anda.
+
+### Menjalankan Uji Otomatis & Build
+
+```bash
+# Menjalankan 75.136+ unit test & integritas korpus data
 npm test
 
-# Build for production
+# Menjalankan 58 uji responsif multi-perangkat Playwright
+npm run test:responsive
+
+# Membangun bundel produksi (otomatis menyinkronkan CHANGELOG & korpus)
 npm run build
 ```
 
-Open `http://localhost:5173` in your browser.
+---
 
-## Project Structure
+## 📂 Struktur Repositori
 
 ```
-src/             → React 18 + TypeScript application source
-  components/    → Accessible, multi-device UI components (Sidebar, BottomNav, Modals)
-  pages/         → Router views (HomePage, LessonStudyPage, QuizPage, MateriHubPage)
-  lib/           → Core engines (dataManager, lessonContentAdapter, fsrs, supabase)
-  types/         → Strong TypeScript definitions
-public/          → Static assets & canonical corpora
-  data/          → Authoritative vocab, grammar, textbook lenses, SSW tracks
-  fonts/         → Subsetted web fonts
-tests/           → Automated unit, regression, and semantic test suite
-workers/         → Cloudflare Edge workers (ai-proxy, admin-api)
-scripts/         → Corpus merging and build automation compilers
+nugget-nihongo/
+├── public/
+│   ├── assets/generated/    # Sampul 9 buku teks & ilustrasi maskot Shin-Hanga
+│   ├── data/                # Korpus terkompilasi (vocab, grammar, kurikulum, buku)
+│   ├── js/core/             # Inisialisasi versi runtime & deteksi tema
+│   └── sw.js                # Mesin Service Worker PWA & caching luring
+├── src/
+│   ├── components/
+│   │   ├── kanji/           # KanjiStrokeModal, KanjiDojoView, kalkulator goresan
+│   │   ├── materi/          # BookTrackBrowser, CurriculumTrackBrowser, DrillModal
+│   │   ├── quiz/            # Arena Kuis, Flashcards, Session Config, Zen Bar
+│   │   ├── sensei/          # Contextual Sensei Sheet, AI chat interface
+│   │   └── ui/              # DetailModal, PatchNotesModal, Navbar, Sidebar
+│   ├── config/              # Konfigurasi versi (APP_VERSION) & tema
+│   ├── lib/
+│   │   ├── ai/              # senseiClient (Auto-router OpenRouter & Gemini)
+│   │   ├── audio/           # voiceManager (Web Speech TTS) & SFX kaligrafi
+│   │   ├── data/            # dataManager, kanjiManager, authenticExerciseManager
+│   │   └── srs/             # fsrs-engine, kurva memori, jadwal review
+│   ├── pages/               # Halaman utama (Home, Materi, Kuis, Kebun, Sensei, Settings)
+│   └── index.css            # Desain token tema Washi, Warm Sumi, dan animasi goresan
+├── tests/                   # 75.136 unit test & suite audit visual Playwright
+└── workers/                 # Edge Worker Cloudflare untuk proksi AI aman
 ```
 
-See [ARCHITECTURE.md](ARCHITECTURE.md) for detailed structure.
+---
 
-## Tech Stack
+## 🤝 Kontribusi & Kode Etik
 
-- **Frontend:** React 18, Vite, TypeScript, Tailwind CSS, Lucide React
-- **State & Storage:** Zustand, LocalStorage, IndexedDB
-- **Offline / PWA:** Service Worker (Cache-First shell, Stale-While-Revalidate data)
-- **Backend / Edge:** Cloudflare Workers (Multi-model AI proxy, Admin promotion API), Supabase
-- **Testing & CI:** Node test runners, GitHub Actions
+Kami menyambut kontribusi dari komunitas pembelajar bahasa Jepang dan pengembang perangkat lunak!  
+Jika Anda menemukan kesalahan ketik (*typo*), kalimat contoh yang kurang alami, atau ingin mengusulkan fitur baru:
+1. Buka [Issues](https://github.com/nuggetenak/nugget-nihongo/issues) untuk mendiskusikan perubahan.
+2. Buat branch baru (`git checkout -b fitur/nama-fitur`).
+3. Pastikan seluruh pengujian lolos (`npm test` dan `npm run test:responsive`).
+4. Ajukan *Pull Request* ke branch `main`.
 
-## Data Inventory
+---
 
-| Level / Sector | Vocab | Grammar | Description |
-|---|---|---|---|
-| **N5** | 991 | 94 | Salam dasar, partikel primer, kopula & verba sopan |
-| **N4** | 946 | 92 | Bentuk sambung, syarat (~ba/~tara), keharusan & izin |
-| **N3** | 2,368 | 163 | Wacana menengah, nuansa emosi, ragam kasual vs formal |
-| **N2** | 344 | 310 | Bahasa bisnis, koran, penulisan formal, relasi logis |
-| **N1** | 190 | 200 | Wacana tingkat tinggi, ekspresi klasik/resmi |
-| **SSW Specialist** | 72 | — | Konstruksi (JAC), Pengolahan Makanan, Kaigo |
-| **Total Corpus** | **4,839+** | **859** | Terindeks 100% dengan audio, romaji & contoh kalimat |
+## 📜 Lisensi & Atribusi
 
-## Contributing
+Proyek ini dirilis di bawah lisensi **[MIT License](LICENSE)** — bebas digunakan, dipelajari, dan dikembangkan untuk kepentingan pendidikan.
 
-This project is managed through a multi-agent AI governance system.
-See [ROADMAP.md](ROADMAP.md) for the development plan.
-
-## License
-
-[MIT](LICENSE) — Nugget Nihongo, 2026
+- **Data Kanji**: Bersumber dari proyek terbuka [KanjiVG](https://kanjivg.tagaini.net/) oleh Ulrich Apel (berlisensi CC BY-SA 3.0).
+- **Inspirasi Pedagogis**: Format silabus mengacu pada standar resmi Japan Foundation (*Irodori / Marugoto*), standar JLPT/JEES, dan buku teks kanonikal (*Minna no Nihongo, Genki, Tobira, Quartet, Shin Kanzen Master, Sou Matome*).
+- **Dibuat dengan ❤️ di Indonesia untuk para pejuang bahasa Jepang di seluruh Nusantara.**
