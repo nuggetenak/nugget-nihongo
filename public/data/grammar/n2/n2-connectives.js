@@ -497,7 +497,7 @@ window.grammarN2_Connectives = [
 
 {
   id: 'gn2-00088', level: 'n2', pattern: '〜手前', reading: '〜temae',
-  meaning: 'karena sudah terlanjur ... di depan orang, tidak bisa mundur',
+  meaning: 'karena sudah telanjur ... di depan orang, tidak bisa mundur',
   cat: 'reason-cause',
   connection: 'V-dict / V-ta / N + の + 手前',
   desc: '<b>〜手前</b> menyatakan bahwa karena pembicara sudah mengatakan atau melakukan sesuatu di depan orang lain, ada tekanan sosial untuk menjaga konsistensi — tidak bisa mundur karena menjaga muka atau wibawa.',

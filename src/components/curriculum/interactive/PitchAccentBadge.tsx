@@ -100,26 +100,41 @@ export const PitchAccentBadge: React.FC<PitchAccentProps> = ({
   });
 
   if (compact) {
+    const compactStep = 8;
+    const compactWidth = Math.max(24, pitchInfo.length * compactStep);
+    const compactHighY = 3;
+    const compactLowY = 11;
+    const compactPoints = pitchInfo.map((p, i) => {
+      const x = i * compactStep + compactStep / 2;
+      const y = p.isHigh ? compactHighY : compactLowY;
+      return `${x},${y}`;
+    });
+
     return (
       <button
         type="button"
         onClick={() => setShowModal(true)}
-        className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-md bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/25 text-[10px] text-amber-300 font-mono transition-colors active:scale-95"
+        className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md bg-amber-500/15 dark:bg-amber-500/10 hover:bg-amber-500/25 border border-amber-500/30 text-[10px] text-amber-800 dark:text-amber-300 font-mono transition-colors active:scale-95 shrink-0"
         title={`Intonasi Tokyo: ${patternMeta.kanji} (${patternMeta.name})`}
       >
         <span className="font-bold">{patternMeta.kanji}</span>
-        <svg className="w-8 h-3.5 overflow-visible">
+        <svg
+          width={compactWidth}
+          height={14}
+          viewBox={`0 0 ${compactWidth} 14`}
+          className="shrink-0 overflow-hidden"
+        >
           <polyline
             fill="none"
             stroke="#F59E0B"
             strokeWidth="1.5"
-            points={points.join(' ')}
+            points={compactPoints.join(' ')}
           />
           {pitchInfo.map((p, i) => (
             <circle
               key={i}
-              cx={i * stepWidth + stepWidth / 2}
-              cy={p.isHigh ? highY : lowY}
+              cx={i * compactStep + compactStep / 2}
+              cy={p.isHigh ? compactHighY : compactLowY}
               r="2"
               fill={p.hasDrop ? '#EF4444' : '#F59E0B'}
             />
@@ -134,7 +149,7 @@ export const PitchAccentBadge: React.FC<PitchAccentProps> = ({
       <div className="flex items-center justify-between w-full gap-2 mb-1">
         <span className="text-[10px] font-bold uppercase tracking-wider text-accent flex items-center gap-1">
           <span>Intonasi Nada Tokyo:</span>
-          <span className="px-1.5 py-0.2 rounded bg-amber-500/15 text-amber-300 font-mono">
+          <span className="px-1.5 py-0.5 rounded bg-amber-500/15 text-amber-800 dark:text-amber-300 font-mono">
             {patternMeta.kanji}
           </span>
         </span>

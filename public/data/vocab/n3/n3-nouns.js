@@ -38469,7 +38469,7 @@ window.vocabN3_Nouns = [
     },
     {
       "jp": "郵便ポストに手紙を投函するのを忘れて、出勤してしまった。",
-      "id": "Saya lupa memasukkan surat ke kotak pos dan terlanjur berangkat kerja.",
+      "id": "Saya lupa memasukkan surat ke kotak pos dan telanjur berangkat kerja.",
       "level": "n3",
       "tags": [
         "kehidupan-sehari",
@@ -62129,7 +62129,7 @@ window.vocabN3_Nouns = [
     "atasan",
     "umum"
   ],
-  "nuance": "Unit satuan bahasa yang terdiri dari susunan kata bermakna utuh dan diakhiri dengan tanda baca titik (kalimat/sentence). Berbeda dari 単語 (tango - kosa kata satuan) dan 文章 (bunshou - rangkaian wacana atau karangan paragraf yang tersusun dari beberapa kalimat).",
+  "nuance": "Unit satuan bahasa yang terdiri dari susunan kata bermakna utuh dan diakhiri dengan tanda baca titik (kalimat/sentence). Berbeda dari 単語 (tango - kosakata satuan) dan 文章 (bunshou - rangkaian wacana atau karangan paragraf yang tersusun dari beberapa kalimat).",
   "conj_type": null,
   "examples": [
     {

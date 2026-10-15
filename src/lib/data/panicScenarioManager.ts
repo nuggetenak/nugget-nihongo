@@ -107,7 +107,7 @@ export const CANONICAL_PANIC_SCENARIOS: VocationalPanicScenario[] = [
       'Hentikan seluruh mesin dan derek di area sekitar seketika.',
       'Cegah sindrom trauma suspensi (harness hang syndrome) dengan mempercepat evakuasi tali.',
       'Imobilisasi leher dan tulang belakang saat korban diturunkan ke tanah datar.',
-      'Hubungi 119 dengan format SBAR: lokasi proyek, lantai, kondisi nafas korban.'
+      'Hubungi 119 dengan format SBAR: lokasi proyek, lantai, kondisi napas korban.'
     ],
     context: 'Proyek Gedung Bertingkat · Perancah Luar (Ashiba)',
     level: 'n4',

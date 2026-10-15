@@ -107,7 +107,7 @@ window.vocabLensSoumatomeN3 = {
           "title": "Hari ke-5: 人・家族・人間関係 Bagian 5",
           "vocab_ids": [
             "vg-n3-00085",
-            "Ada antrian panjang di depan restoran ramen yang terkenal.",
+            "Ada antrean panjang di depan restoran ramen yang terkenal.",
             "vg-n3-00086",
             "Saya membungkus hadiah dengan kertas cantik.",
             "Pohon roboh karena topan dan menutup jalan.",

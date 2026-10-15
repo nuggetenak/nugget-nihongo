@@ -83,8 +83,8 @@ export const PedagogicalFrameworkCard: React.FC<PedagogicalFrameworkCardProps> =
               </div>
             )}
             {who_and_when.when_not_to_use && (
-              <div className="sm:col-span-2 text-[11px] text-amber-300/90 bg-amber-500/10 p-2 rounded-lg border border-amber-500/20">
-                💡 <strong className="text-amber-200">Catatan Pemakaian:</strong> {who_and_when.when_not_to_use}
+              <div className="sm:col-span-2 text-[11px] text-amber-800 dark:text-amber-200 bg-amber-500/15 dark:bg-amber-500/20 p-2 rounded-lg border border-amber-500/30">
+                💡 <strong className="text-amber-900 dark:text-amber-200">Catatan Pemakaian:</strong> {who_and_when.when_not_to_use}
               </div>
             )}
           </div>
@@ -166,8 +166,8 @@ export const PedagogicalFrameworkCard: React.FC<PedagogicalFrameworkCardProps> =
                 {cultural_notes.etiquette}
               </p>
               {cultural_notes.taboos && (
-                <div className="p-3 rounded-xl bg-amber-500/10 border border-amber-500/20 text-xs space-y-1">
-                  <div className="font-bold text-amber-300 flex items-center gap-1.5">
+                <div className="p-3 rounded-xl bg-amber-500/15 dark:bg-amber-500/10 border border-amber-500/30 text-xs space-y-1">
+                  <div className="font-bold text-amber-800 dark:text-amber-300 flex items-center gap-1.5">
                     <span>⚠️</span>
                     <span>Hal yang Perlu Dihindari:</span>
                   </div>

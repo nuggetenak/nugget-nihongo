@@ -77,7 +77,7 @@ window.curriculumSSW_building_cleaning = {
                 "title": "Jebakan Asumsi Mandiri (Dokusen)",
                 "caseScenario": "Ragu tentang tombol mesin tetapi mencoba menekan tanpa bertanya.",
                 "pitfallWarning": "❌ Bertindak sendiri tanpa melapor saat ada bunyi aneh pada mesin.",
-                "rightSolution": "✅ Segera hentikan pekerjaan, lapor supervisor: \"Sumimasen, ijin ga arimasu.\"",
+                "rightSolution": "✅ Segera hentikan pekerjaan, lapor supervisor: \"Sumimasen, ijou ga arimasu.\"",
                 "explanation": "Prinsip nomor satu pekerja Jepang adalah Horenso (Houkoku, Renraku, Soudan)."
               }
             ]
@@ -268,7 +268,7 @@ window.curriculumSSW_building_cleaning = {
                 "title": "Jebakan Asumsi Mandiri (Dokusen)",
                 "caseScenario": "Ragu tentang tombol mesin tetapi mencoba menekan tanpa bertanya.",
                 "pitfallWarning": "❌ Bertindak sendiri tanpa melapor saat ada bunyi aneh pada mesin.",
-                "rightSolution": "✅ Segera hentikan pekerjaan, lapor supervisor: \"Sumimasen, ijin ga arimasu.\"",
+                "rightSolution": "✅ Segera hentikan pekerjaan, lapor supervisor: \"Sumimasen, ijou ga arimasu.\"",
                 "explanation": "Prinsip nomor satu pekerja Jepang adalah Horenso (Houkoku, Renraku, Soudan)."
               }
             ]
@@ -459,7 +459,7 @@ window.curriculumSSW_building_cleaning = {
                 "title": "Jebakan Asumsi Mandiri (Dokusen)",
                 "caseScenario": "Ragu tentang tombol mesin tetapi mencoba menekan tanpa bertanya.",
                 "pitfallWarning": "❌ Bertindak sendiri tanpa melapor saat ada bunyi aneh pada mesin.",
-                "rightSolution": "✅ Segera hentikan pekerjaan, lapor supervisor: \"Sumimasen, ijin ga arimasu.\"",
+                "rightSolution": "✅ Segera hentikan pekerjaan, lapor supervisor: \"Sumimasen, ijou ga arimasu.\"",
                 "explanation": "Prinsip nomor satu pekerja Jepang adalah Horenso (Houkoku, Renraku, Soudan)."
               }
             ]
@@ -650,7 +650,7 @@ window.curriculumSSW_building_cleaning = {
                 "title": "Jebakan Asumsi Mandiri (Dokusen)",
                 "caseScenario": "Ragu tentang tombol mesin tetapi mencoba menekan tanpa bertanya.",
                 "pitfallWarning": "❌ Bertindak sendiri tanpa melapor saat ada bunyi aneh pada mesin.",
-                "rightSolution": "✅ Segera hentikan pekerjaan, lapor supervisor: \"Sumimasen, ijin ga arimasu.\"",
+                "rightSolution": "✅ Segera hentikan pekerjaan, lapor supervisor: \"Sumimasen, ijou ga arimasu.\"",
                 "explanation": "Prinsip nomor satu pekerja Jepang adalah Horenso (Houkoku, Renraku, Soudan)."
               }
             ]

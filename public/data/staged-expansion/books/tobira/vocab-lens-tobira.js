@@ -173,7 +173,7 @@ window.vocabLensTobira = {
         "Saya menyusun piring-piring di atas meja.",
         "Tolong susun barang-barang dengan rapi di rak.",
         "vg-n3-00085",
-        "Ada antrian panjang di depan restoran ramen yang terkenal."
+        "Ada antrean panjang di depan restoran ramen yang terkenal."
       ],
       "grammar_ids": [
         "gn3-00055"
@@ -317,7 +317,7 @@ window.vocabLensTobira = {
     },
     "10": {
       "topic": "第10章: 職場環境と働き方 (Work Environment and Working Styles)",
-      "topic_id": "Dunia Kerja, Budaya Korporat & Reformasi Karir",
+      "topic_id": "Dunia Kerja, Budaya Korporat & Reformasi Karier",
       "vocab_ids": [
         "Belakangan ini wisatawan asing semakin bertambah.",
         "Berat badanku bertambah 3 kg tanpa terasa.",

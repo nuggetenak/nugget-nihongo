@@ -112,6 +112,8 @@ export const KanaChartModal: React.FC<KanaChartModalProps> = ({ isOpen, onClose 
             <button
               onClick={onClose}
               className="w-8 h-8 rounded-full bg-surface-2 hover:bg-surface-3 flex items-center justify-center text-appText-muted hover:text-appText-bright transition-all"
+              title="Tutup"
+              aria-label="Tutup modal"
             >
               <X className="w-4 h-4" />
             </button>
@@ -159,9 +161,9 @@ export const KanaChartModal: React.FC<KanaChartModalProps> = ({ isOpen, onClose 
             <div className="flex items-center justify-center gap-3">
               <button
                 onClick={() => handleNextPractice(false)}
-                className="px-5 py-2.5 rounded-xl bg-surface-3 hover:bg-red-950/40 text-red-300 border border-red-500/30 text-xs font-bold transition-all"
+                className="px-5 py-2.5 rounded-xl bg-surface-3 hover:bg-red-500/15 dark:hover:bg-red-950/40 text-red-700 dark:text-red-300 border border-red-500/30 text-xs font-bold transition-all"
               >
-                Belum Hapal ❌
+                Belum Hafal ❌
               </button>
               <button
                 onClick={() => {
@@ -180,7 +182,7 @@ export const KanaChartModal: React.FC<KanaChartModalProps> = ({ isOpen, onClose 
                 onClick={() => handleNextPractice(true)}
                 className="px-5 py-2.5 rounded-xl bg-accent hover:bg-accent-hot text-bg font-bold text-xs transition-all shadow-glow"
               >
-                Sudah Hapal ✅
+                Sudah Hafal ✅
               </button>
             </div>
           </div>

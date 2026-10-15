@@ -404,7 +404,7 @@ raw: 'N/na/A/V普通形＋としたら／とすれば', desc: 'Menyatakan kondis
       pattern: '〜つもりだった',
       meaning: 'Tadinya berencana... / Berniat untuk... (tapi tidak jadi)',
       old_id: 'n3-w3d3-01',
-raw: 'Vる／Vない＋つもりだった', desc: 'Menyatakan <strong>niat atau rencana di masa lalu yang tidak terwujud</strong>. Bentuk lampau dari 〜つもりだ.', examples: [{jp: '昨日は買い物に行く<b>つもりでした</b>が、頭が痛かったのでずっと家にいました。', id: 'Kemarin tadinya berniat belanja, tapi kepala sakit jadi di rumah terus.'}, {jp: 'お菓子を食べない<b>つもりでした</b>が、ついたべてしまいました。', id: 'Tadinya tidak mau makan cemilan, tapi terlanjur dimakan juga.'}],
+raw: 'Vる／Vない＋つもりだった', desc: 'Menyatakan <strong>niat atau rencana di masa lalu yang tidak terwujud</strong>. Bentuk lampau dari 〜つもりだ.', examples: [{jp: '昨日は買い物に行く<b>つもりでした</b>が、頭が痛かったのでずっと家にいました。', id: 'Kemarin tadinya berniat belanja, tapi kepala sakit jadi di rumah terus.'}, {jp: 'お菓子を食べない<b>つもりでした</b>が、ついたべてしまいました。', id: 'Tadinya tidak mau makan cemilan, tapi telanjur dimakan juga.'}],
     },
     {
       id: 'sm-n3-049', global_grammar_id: 'gn3-00027', // score:1.14

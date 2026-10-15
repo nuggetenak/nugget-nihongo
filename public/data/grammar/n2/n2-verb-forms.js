@@ -161,7 +161,7 @@ window.grammarN2_Verb_Forms = [
   desc: '<b>〜こむ</b> sebagai sufiks verba majemuk mengandung dua makna utama: (1) masuk ke dalam suatu ruang atau kondisi secara fisik (押し込む, 飛び込む); dan (2) melakukan sesuatu secara intensif, mendalam, atau hingga terbenam — termasuk keyakinan atau pemikiran yang tertanam kuat (思い込む, 信じ込む). Sufiks ini sangat produktif dalam bahasa Jepang.',
   nuance: null,
   examples: [
-    { jp: '彼は自分が絶対に正しいと思い<b>こんでいる</b>。', id: 'Dia sudah terlanjur yakin sekali bahwa dirinya pasti benar.' },
+    { jp: '彼は自分が絶対に正しいと思い<b>こんでいる</b>。', id: 'Dia sudah telanjur yakin sekali bahwa dirinya pasti benar.' },
     { jp: 'ノートにポイントをしっかり書き<b>こんで</b>おいた。', id: 'Aku sudah menuliskan poin-poin penting secara lengkap di buku catatan.' },
   ],
   see_also_grammar: [],

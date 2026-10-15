@@ -53,7 +53,7 @@ export const QuizConfigModal: React.FC<QuizConfigModalProps> = ({
     { id: 'flashcard', label: 'Flashcard 3D', icon: '🃏' },
     { id: 'multiple-choice', label: 'Pilihan Ganda', icon: '🔘' },
     { id: 'listening', label: 'Latihan Mendengar', icon: '🎧' },
-    { id: 'conjugation', label: 'Konjugasi Verba', icon: '🔄' },
+    { id: 'conjugation', label: 'Konjugasi Kata Kerja', icon: '🔄' },
     { id: 'fill-in', label: 'Isian Kosong', icon: '✍️' },
     { id: 'rearrange', label: 'Susun Kalimat', icon: '🧩' },
     { id: 'translation', label: 'Terjemahan', icon: '🌐' },
@@ -88,6 +88,8 @@ export const QuizConfigModal: React.FC<QuizConfigModalProps> = ({
           <button
             onClick={onClose}
             className="w-8 h-8 rounded-full bg-surface-2 hover:bg-surface-3 flex items-center justify-center text-appText-muted hover:text-appText-bright transition-all"
+            title="Tutup"
+            aria-label="Tutup modal"
           >
             <X className="w-4 h-4" />
           </button>

@@ -3824,7 +3824,7 @@ window.vocabN3 = [
   "examples": [
     {
       "jp": "人気のラーメン店の前に長い列が並んでいた。",
-      "id": "Ada antrian panjang di depan restoran ramen yang terkenal.",
+      "id": "Ada antrean panjang di depan restoran ramen yang terkenal.",
       "level": "n3",
       "tags": [
         "makanan-minuman"
@@ -26321,7 +26321,7 @@ window.vocabN3 = [
   "lawan_bicara": [
     "umum"
   ],
-  "nuance": "Menekankan komponen latihan atau praktek aktif — di universitas Jepang merujuk pada kelas seminar kecil di mana mahasiswa berdiskusi atau mengerjakan soal bersama. Berbeda dari 講義 yang pasif-mendengarkan; 演習 menuntut partisipasi aktif dari peserta.",
+  "nuance": "Menekankan komponen latihan atau praktik aktif — di universitas Jepang merujuk pada kelas seminar kecil di mana mahasiswa berdiskusi atau mengerjakan soal bersama. Berbeda dari 講義 yang pasif-mendengarkan; 演習 menuntut partisipasi aktif dari peserta.",
   "conj_type": "suru",
   "examples": [
     {
@@ -43129,7 +43129,7 @@ window.vocabN3 = [
     "rekan",
     "umum"
   ],
-  "nuance": "Istilah fisiologis untuk aktivitas bernapas menghirup dan mengeluarkan udara (seperti 深呼吸する). Dapat pula digunakan secara kiasan untuk kekompakan ritme antaranggota (seperti 呼吸が合う). Berbeda dengan '息' (iki) yang merupakan kosa kata asli Jepang sehari-hari untuk napas fisik.",
+  "nuance": "Istilah fisiologis untuk aktivitas bernapas menghirup dan mengeluarkan udara (seperti 深呼吸する). Dapat pula digunakan secara kiasan untuk kekompakan ritme antaranggota (seperti 呼吸が合う). Berbeda dengan '息' (iki) yang merupakan kosakata asli Jepang sehari-hari untuk napas fisik.",
   "conj_type": "suru",
   "examples": [
     {
@@ -54259,7 +54259,7 @@ window.vocabN3 = [
   "examples": [
     {
       "jp": "友達とおしゃべりに夢中になって歩いていたら、曲がるはずの角を通り過ぎてしまった。",
-      "id": "Karena keasyikan mengobrol dengan kawan saat melangkah, saya terlanjur melewati tikungan yang semestinya saya belok.",
+      "id": "Karena keasyikan mengobrol dengan kawan saat melangkah, saya telanjur melewati tikungan yang semestinya saya belok.",
       "level": "n3",
       "tags": [
         "perjalanan",
@@ -85981,7 +85981,7 @@ window.vocabN3 = [
     "atasan",
     "umum"
   ],
-  "nuance": "Tiruan bunyi tarikan napas lega setelah ketegangan, kekhawatiran besar, atau kepanikan mereda (sangat sering dalam frasa ほっとする bernapas lega, atau ほっと胸をなで下ろす mengelus dada lega). Berbeda dengan 安心する yang berupa kosa kata Sino-Jepang (kango).",
+  "nuance": "Tiruan bunyi tarikan napas lega setelah ketegangan, kekhawatiran besar, atau kepanikan mereda (sangat sering dalam frasa ほっとする bernapas lega, atau ほっと胸をなで下ろす mengelus dada lega). Berbeda dengan 安心する yang berupa kosakata Sino-Jepang (kango).",
   "conj_type": null,
   "examples": [
     {
@@ -124552,7 +124552,7 @@ window.vocabN3 = [
     },
     {
       "jp": "郵便ポストに手紙を投函するのを忘れて、出勤してしまった。",
-      "id": "Saya lupa memasukkan surat ke kotak pos dan terlanjur berangkat kerja.",
+      "id": "Saya lupa memasukkan surat ke kotak pos dan telanjur berangkat kerja.",
       "level": "n3",
       "tags": [
         "kehidupan-sehari",
@@ -148212,7 +148212,7 @@ window.vocabN3 = [
     "atasan",
     "umum"
   ],
-  "nuance": "Unit satuan bahasa yang terdiri dari susunan kata bermakna utuh dan diakhiri dengan tanda baca titik (kalimat/sentence). Berbeda dari 単語 (tango - kosa kata satuan) dan 文章 (bunshou - rangkaian wacana atau karangan paragraf yang tersusun dari beberapa kalimat).",
+  "nuance": "Unit satuan bahasa yang terdiri dari susunan kata bermakna utuh dan diakhiri dengan tanda baca titik (kalimat/sentence). Berbeda dari 単語 (tango - kosakata satuan) dan 文章 (bunshou - rangkaian wacana atau karangan paragraf yang tersusun dari beberapa kalimat).",
   "conj_type": null,
   "examples": [
     {
@@ -155418,7 +155418,7 @@ window.vocabN3 = [
   "word": "後回しにする",
   "reading": "あとまわしにする",
   "romaji": "atomawashi ni suru",
-  "meaning_id": "menunda, memindahkan ke belakang antrian, menangguhkan",
+  "meaning_id": "menunda, memindahkan ke belakang antrean, menangguhkan",
   "meaning_en": "to put off, to postpone, to push to the back",
   "jlpt": "n3",
   "pos": "expression",
@@ -155428,7 +155428,7 @@ window.vocabN3 = [
   "domain": ["kehidupan-sehari", "keputusan"],
   "register": "neutral",
   "lawan_bicara": ["umum"],
-  "nuance": "Merujuk pada tindakan sengaja menggeser suatu pekerjaan ke waktu yang lebih lambat — menaruhnya di akhir antrian. Berbeda dari 延期する yang lebih formal (menunda secara resmi, biasanya dengan batas waktu baru); 後回しにする lebih kasual dan sering berkonotasi negatif (procrastination) — sesuatu yang sebenarnya perlu dikerjakan tapi ditunda-tunda.",
+  "nuance": "Merujuk pada tindakan sengaja menggeser suatu pekerjaan ke waktu yang lebih lambat — menaruhnya di akhir antrean. Berbeda dari 延期する yang lebih formal (menunda secara resmi, biasanya dengan batas waktu baru); 後回しにする lebih kasual dan sering berkonotasi negatif (procrastination) — sesuatu yang sebenarnya perlu dikerjakan tapi ditunda-tunda.",
   "conj_type": null,
   "examples": [
     {"jp": "苦手なことをいつも<b>後回しにして</b>しまう。", "id": "Aku selalu menunda-nunda hal yang tidak aku sukai.", "level": "n3", "tags": ["kehidupan-sehari", "karakter"]},

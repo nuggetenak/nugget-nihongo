@@ -97,7 +97,7 @@ window.vocabLensSoumatomeN4 = {
             "Meskipun gagal, jangan menyerah dan mari ulangi sekali lagi.",
             "Memahami bahasa Jepang yang berkecepatan cepat itu sulit.",
             "Saya terkejut dengan kabar yang mendadak.",
-            "Saya sedang pusing memikirkan pilihan karir.",
+            "Saya sedang pusing memikirkan pilihan karier.",
             "Saya tersesat di kota yang asing.",
             "Saya bangga terhadap anak laki-laki saya yang gigih dan lulus ujian."
           ]
@@ -181,7 +181,7 @@ window.vocabLensSoumatomeN4 = {
             "Setelah rutin jogging setiap pagi, saya berhasil menurunkan berat badan lima kilogram dalam tiga bulan.",
             "Karena lupa menyetel jam weker, pagi ini saya tidak sengaja bangun kesiangan.",
             "Terlihat kilat menyambar dan bersinar terang benderang di langit gelap yang jauh.",
-            "Saya terlanjur menjatuhkan tiket berharga yang baru saja dibeli di suatu tempat.",
+            "Saya telanjur menjatuhkan tiket berharga yang baru saja dibeli di suatu tempat.",
             "Karena kari yang dimasak untuk makan malam masih tersisa sedikit, saya akan memakannya besok pagi.",
             "Saya mengalami cedera pada bagian kaki karena terpeleset keras saat pertandingan sepak bola di hari hujan.",
             "Memasuki siang hari langit mendadak menggelap dan hujan lebat mulai turun secara tiba-tiba.",

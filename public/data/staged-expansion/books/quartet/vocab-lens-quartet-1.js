@@ -160,7 +160,7 @@ window.vocabLensQuartet1 = {
         "Saya menyusun piring-piring di atas meja.",
         "Tolong susun barang-barang dengan rapi di rak.",
         "vg-n3-00085",
-        "Ada antrian panjang di depan restoran ramen yang terkenal.",
+        "Ada antrean panjang di depan restoran ramen yang terkenal.",
         "Saya mengantri dari pagi untuk membeli tiket konser.",
         "vg-n3-00086",
         "Saya membungkus hadiah dengan kertas cantik.",

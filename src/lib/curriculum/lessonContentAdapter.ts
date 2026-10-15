@@ -49,22 +49,22 @@ const CURATED_LESSONS_MAP: Record<string, Partial<CurriculumLesson>> = {
         moraNote:
           'Bahasa Jepang memakai ketukan waktu yang rata (mora), bukan suku kata yang ditekan keras-lemah.',
         soundTip:
-          'Bunyi "su" pada akhiran "desu" dilafalkan sangat tipis dan terbisukan laksana embusan nafas (des\'), jangan dibaca tebal atau ditekan seperti kata "desa" dalam bahasa Indonesia.',
+          'Bunyi "su" pada akhiran "desu" dilafalkan sangat tipis dan terbisukan laksana embusan napas (des\'), jangan dibaca tebal atau ditekan seperti kata "desa" dalam bahasa Indonesia.',
       },
       common_pitfalls: [
         {
           title: 'Jebakan Kata "Adalah" (Struktur SVO Indonesia vs SOV Jepang)',
           caseScenario: 'Menerjemahkan kata "adalah" di tengah kalimat seperti susunan bahasa Indonesia.',
-          pitfallWarning: '❌ "わたし は です ブディ。" (Watashi wa desu Budi)',
-          rightSolution: '✅ "わたし は ブディ です。" (Watashi wa Budi desu)',
+          pitfallWarning: '"わたしは です ブディ。" (Watashi wa desu Budi)',
+          rightSolution: '"わたしは ブディ です。" (Watashi wa Budi desu)',
           explanation:
             'Di bahasa Indonesia kita meletakkan "adalah" di tengah kalimat. Namun dalam kalimat pernyataan dasar bahasa Jepang, "desu" berfungsi menutup predikat sopan (dapat diikuti partikel penanya/penegas seperti "ka", "yo", atau "ne").',
         },
         {
           title: 'Pantangan Menempelkan Gelar "-san" ke Diri Sendiri',
           caseScenario: 'Memperkenalkan nama diri dengan embel-embel sopan.',
-          pitfallWarning: '❌ "わたし は ブディさん です。" (Watashi wa Budi-san desu)',
-          rightSolution: '✅ "わたし は ブディ です。" (Watashi wa Budi desu)',
+          pitfallWarning: '"わたしは ブディさん です。" (Watashi wa Budi-san desu)',
+          rightSolution: '"わたしは ブディ です。" (Watashi wa Budi desu)',
           explanation:
             'Gelar "-san" adalah tanda penghormatan eksklusif untuk orang lain. Menggunakannya untuk diri sendiri terdengar sombong dan janggal bagi telinga orang Jepang.',
         },
@@ -214,7 +214,7 @@ const CURATED_LESSONS_MAP: Record<string, Partial<CurriculumLesson>> = {
         reading: 'かいしゃいん',
         romaji: 'kaishain',
         meaning: 'Karyawan Perusahaan / Pegawai Kantor',
-        nuance: 'Dipakai saat menyebut profesi diri ("Saya karyawan"). Jika menyebut nama kantor tertentu, gunakan kata "shain" (misal: Timedoor no shain).',
+        nuance: 'Dipakai saat menyebut profesi diri ("Saya karyawan"). Jika menyebut nama kantor tertentu, gunakan kata "shain" (misal: Toyota no shain).',
         particleTip: 'かいしゃいんです。(Saya karyawan kantor.)',
         exampleSentence: {
           jp: 'わたしは かいしゃいんです。',
@@ -484,8 +484,8 @@ const CURATED_LESSONS_MAP: Record<string, Partial<CurriculumLesson>> = {
         {
           title: 'Ja Arimasen vs Bukan Bahasa Indonesia',
           caseScenario: 'Mencoba membuat kalimat negatif dengan menyisipkan kata "bukan" di depan kata benda.',
-          pitfallWarning: '❌ "わたし は じゃない がくせい。" (Susunan kata salah)',
-          rightSolution: '✅ "わたし は がくせいじゃ ありません。" (Susunan kata benar)',
+          pitfallWarning: '"わたしは じゃない がくせい。" (Susunan kata salah)',
+          rightSolution: '"わたしは がくせいじゃ ありません。" (Susunan kata benar)',
           explanation:
             'Di bahasa Jepang, penanda negatif "ja arimasen" SELALU ditaruh di belakang kata bendanya, bukan di depannya.',
         },
@@ -760,8 +760,8 @@ const CURATED_LESSONS_MAP: Record<string, Partial<CurriculumLesson>> = {
         {
           title: 'Memanggil Lansia Seperti Kerabat Sendiri',
           caseScenario: 'Memanggil kakek residen dengan panggilan Ojiichan.',
-          pitfallWarning: '❌ "おじいちゃん、おはよう！" (Dilarang keras dalam SOP Kaigo)',
-          rightSolution: '✅ "山田様、おはようございます。失礼いたします。" (Yamada-sama, ohayou gozaimasu.)',
+          pitfallWarning: '"おじいちゃん、おはよう！" (Dilarang keras dalam SOP Kaigo)',
+          rightSolution: '"山田様、おはようございます。失礼いたします。" (Yamada-sama, ohayou gozaimasu.)',
           explanation:
             'Di Jepang, residen panti wreda adalah pelanggan terhormat. Selalu gunakan nama keluarga + sama.',
         },

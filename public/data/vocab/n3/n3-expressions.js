@@ -333,7 +333,7 @@ window.vocabN3_Expressions = [
   "word": "後回しにする",
   "reading": "あとまわしにする",
   "romaji": "atomawashi ni suru",
-  "meaning_id": "menunda, memindahkan ke belakang antrian, menangguhkan",
+  "meaning_id": "menunda, memindahkan ke belakang antrean, menangguhkan",
   "meaning_en": "to put off, to postpone, to push to the back",
   "jlpt": "n3",
   "pos": "expression",
@@ -343,7 +343,7 @@ window.vocabN3_Expressions = [
   "domain": ["kehidupan-sehari", "keputusan"],
   "register": "neutral",
   "lawan_bicara": ["umum"],
-  "nuance": "Merujuk pada tindakan sengaja menggeser suatu pekerjaan ke waktu yang lebih lambat — menaruhnya di akhir antrian. Berbeda dari 延期する yang lebih formal (menunda secara resmi, biasanya dengan batas waktu baru); 後回しにする lebih kasual dan sering berkonotasi negatif (procrastination) — sesuatu yang sebenarnya perlu dikerjakan tapi ditunda-tunda.",
+  "nuance": "Merujuk pada tindakan sengaja menggeser suatu pekerjaan ke waktu yang lebih lambat — menaruhnya di akhir antrean. Berbeda dari 延期する yang lebih formal (menunda secara resmi, biasanya dengan batas waktu baru); 後回しにする lebih kasual dan sering berkonotasi negatif (procrastination) — sesuatu yang sebenarnya perlu dikerjakan tapi ditunda-tunda.",
   "conj_type": null,
   "examples": [
     {"jp": "苦手なことをいつも<b>後回しにして</b>しまう。", "id": "Aku selalu menunda-nunda hal yang tidak aku sukai.", "level": "n3", "tags": ["kehidupan-sehari", "karakter"]},

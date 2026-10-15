@@ -77,6 +77,7 @@ export const AuthModal: React.FC = () => {
         <button
           onClick={closeAuthModal}
           className="absolute top-4 right-4 p-2 text-appText-muted hover:text-appText-bright rounded-full hover:bg-surface-2 transition-colors z-10"
+          title="Tutup"
           aria-label="Tutup modal"
         >
           <X className="w-5 h-5" />
@@ -113,7 +114,7 @@ export const AuthModal: React.FC = () => {
             </div>
             <div className="text-xs">
               <span className="font-bold text-appText-bright">Kartu Repetisi FSRS:</span>{' '}
-              <span className="text-appText-muted">Jadwal review kosa kata & kanji tersimpan aman tanpa takut hilang.</span>
+              <span className="text-appText-muted">Jadwal review kosakata & kanji tersimpan aman tanpa takut hilang.</span>
             </div>
           </div>
 

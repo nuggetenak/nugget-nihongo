@@ -9493,7 +9493,7 @@ window.vocabN3_Adverbs = [
     "atasan",
     "umum"
   ],
-  "nuance": "Tiruan bunyi tarikan napas lega setelah ketegangan, kekhawatiran besar, atau kepanikan mereda (sangat sering dalam frasa ほっとする bernapas lega, atau ほっと胸をなで下ろす mengelus dada lega). Berbeda dengan 安心する yang berupa kosa kata Sino-Jepang (kango).",
+  "nuance": "Tiruan bunyi tarikan napas lega setelah ketegangan, kekhawatiran besar, atau kepanikan mereda (sangat sering dalam frasa ほっとする bernapas lega, atau ほっと胸をなで下ろす mengelus dada lega). Berbeda dengan 安心する yang berupa kosakata Sino-Jepang (kango).",
   "conj_type": null,
   "examples": [
     {

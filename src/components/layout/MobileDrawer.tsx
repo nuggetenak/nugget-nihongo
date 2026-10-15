@@ -73,7 +73,7 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({
     { id: 'materi', label: 'Materi Hub', jp: '学習', icon: <BookOpen className="w-5 h-5 text-blue-400" />, badge: '4.800+' },
     { id: 'quiz', label: 'Arena Kuis', jp: '練習', icon: <Layers className="w-5 h-5 text-emerald-400" />, badge: '13 Mode' },
     { id: 'kebun', label: 'Kebun Kata', jp: '庭園', icon: <Sprout className="w-5 h-5 text-green-400" /> },
-    { id: 'sensei', label: 'Sensei AI', jp: '先生', icon: <Sparkles className="w-5 h-5 text-purple-400" />, badge: 'Soon' },
+    { id: 'sensei', label: 'Sensei AI', jp: '先生', icon: <Sparkles className="w-5 h-5 text-purple-400" /> },
     { id: 'about', label: 'Tentang Aplikasi', jp: '情報', icon: <HelpCircle className="w-5 h-5 text-cyan-400" />, badge: 'FAQ' },
     { id: 'settings', label: 'Pengaturan', jp: '設定', icon: <Settings className="w-5 h-5 text-orange-400" /> },
   ];

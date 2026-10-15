@@ -606,7 +606,7 @@ window.vocabN2_Nouns = [
   "lawan_bicara": [
     "umum"
   ],
-  "nuance": "Menunjukkan urutan bertahap dalam suatu proses; 〜の段階で berarti 'pada tahap ~'; berbeda dari ステップ yang lebih kasual/kosa kata serapan.",
+  "nuance": "Menunjukkan urutan bertahap dalam suatu proses; 〜の段階で berarti 'pada tahap ~'; berbeda dari ステップ yang lebih kasual/kosakata serapan.",
   "conj_type": null,
   "examples": [
     {
@@ -5140,7 +5140,7 @@ window.vocabN2_Nouns = [
   "lawan_bicara": [
     "umum"
   ],
-  "nuance": "Konsep luas yang mencakup kebebasan fisik, kebebasan berbicara, kebebasan berpikir, dan lainnya. Juga digunakan dalam konteks sehari-hari (自由な時間 = waktu luang; 自由にしてください = silakan lakukan sesukamu). 自由 dalam konteks hak asasi lebih bernuansa filosofis-politis dari pada 許可 (ijin) yang bersifat praktis.",
+  "nuance": "Konsep luas yang mencakup kebebasan fisik, kebebasan berbicara, kebebasan berpikir, dan lainnya. Juga digunakan dalam konteks sehari-hari (自由な時間 = waktu luang; 自由にしてください = silakan lakukan sesukamu). 自由 dalam konteks hak asasi lebih bernuansa filosofis-politis dari pada 許可 (izin) yang bersifat praktis.",
   "conj_type": 'na-adj',
   "examples": [
     {

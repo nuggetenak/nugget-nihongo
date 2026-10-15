@@ -268,7 +268,7 @@ export function generateDiscourseQuestions(
       questions.push({
         id: `disc-${p.id}-${Date.now()}`,
         mode: 'discourse-deconstruct',
-        prompt: `[Dekonstruksi Wacana Makro ${p.level.toUpperCase()}] Analisis peran retorika dalam wacana:`,
+        prompt: `[Bedah Paragraf ${p.level.toUpperCase()}] Temukan ide utama dan alur dalam bacaan:`,
         targetItem: {
           id: p.id,
           word: p.title_jp,
@@ -312,7 +312,7 @@ export function generateCollocationQuestions(
       questions.push({
         id: `colloc-${entry.id}-${pat.pattern}-${Date.now()}`,
         mode: 'collocation-matrix',
-        prompt: `[Diferensiasi Nuansa Kolokasi ${entry.level.toUpperCase()}] Pilih nuansa pragmatis yang paling tepat untuk pola:`,
+        prompt: `[Perbedaan Nuansa Pasangan Kata ${entry.level.toUpperCase()}] Pilih nuansa makna yang paling pas untuk pola ini:`,
         targetItem: {
           id: entry.id,
           word: pat.pattern,
@@ -324,7 +324,7 @@ export function generateCollocationQuestions(
           examples: pat.collocations.map((c) => ({ jp: c, id: pat.meaning })),
         } as any,
         questionText: `Pola: 「${pat.pattern}」\nKolokasi khas: ${pat.collocations.join(' / ')}`,
-        subText: `Batasan Distribusi: ${pat.distributionConstraint}`,
+        subText: `Aturan Pemakaian: ${pat.distributionConstraint}`,
         correctAnswer: pat.nuance,
         options,
         explanation: `✅ Nuansa Pola: ${pat.nuance}\n⚠️ Pembeda Kritis: ${entry.diagnostic_contrast}`,

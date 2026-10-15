@@ -119,6 +119,8 @@ export const AuthenticDrillModal: React.FC<AuthenticDrillModalProps> = ({
           <button
             onClick={onClose}
             className="p-2 rounded-xl bg-surface hover:bg-surface-3 text-appText-muted hover:text-appText-bright transition-colors"
+            title="Tutup"
+            aria-label="Tutup modal"
           >
             <X className="w-4 h-4" />
           </button>

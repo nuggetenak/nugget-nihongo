@@ -47,25 +47,25 @@ const FAQ_LIST: FAQItem[] = [
     id: 'faq-3',
     category: 'fsrs',
     q: 'Apa itu FSRS v4 dan apa bedanya dengan Anki lama atau Duolingo?',
-    a: 'FSRS (Free Spaced Repetition Scheduler) adalah model matematis memori modern yang dipublikasikan oleh Ye et al. (2022). Berbeda dari algoritma SM-2 lawas (yang dipakai Anki lama) yang hanya mengalikan interval secara kasar, FSRS memodelkan tiga variabel kognitif manusia: Retrievability (kemudahan mengingat), Stability (daya tahan memori), dan Difficulty (tingkat kesulitan kata). Hasilnya, kamu hanya mereview kartu saat otakmu hampir lupa, menghemat waktu belajar hingga 30-40%.',
+    a: 'FSRS (Free Spaced Repetition Scheduler) adalah sistem jadwal review memori modern. Berbeda dari sistem flashcard lama yang kaku, FSRS memperhitungkan seberapa kuat ingatanmu pada tiap kata dan tingkat kesulitannya. Hasilnya, kamu hanya mengulang kartu tepat di saat otakmu hampir lupa, sehingga waktu belajarmu jauh lebih hemat dan efisien.',
   },
   {
     id: 'faq-4',
     category: 'materi',
     q: 'Apa itu Kurikulum Orisinal Nugget Nihongo dan apa bedanya dengan Jalur Buku?',
-    a: 'Kurikulum Orisinal Nugget Nihongo adalah jalur belajar 8 trek mandiri (JLPT N5–N1 & SSW Kaigo, Food Service, Konstruksi) dengan 74 unit dan 155 pelajaran yang disusun memakai Processability Theory (Pienemann) dan deskriptor Can-Do standar CEFR-J. Di samping itu, tersedia pula Jalur Kamus JLPT, Jalur Buku Teks pendamping kelas (Minna no Nihongo & Irodori), serta Jalur Cepat Freeway.',
+    a: 'Kurikulum Orisinal Nugget Nihongo adalah jalur belajar 8 trek mandiri (JLPT N5–N1 & SSW Kaigo, Restoran, Konstruksi) dengan 74 unit dan 155 pelajaran bertahap yang diselaraskan dengan standar Can-Do CEFR-J dan JLPT. Di samping itu, tersedia pula Jalur Kamus & Indeks, Jalur 9 Buku Teks pendamping kelas (Minna no Nihongo, Genki, Sou Matome, dll.), Dojo Kanji, serta Jalur Nol (Freeway).',
   },
   {
     id: 'faq-4b',
     category: 'materi',
     q: 'Apa itu Jalur Vokasional SSW (Tokutei Ginou) dan sektor apa saja yang tersedia?',
-    a: 'Jalur Vokasional SSW membekali calon pekerja migran terampil di Jepang dengan standar kerja nyata: (1) SSW Kaigo: Komunikasi empatik Koe-kake lansia & laporan darurat SBAR; (2) SSW Food Service & Processing: Sanitasi 5S, standar HACCP, alergen, & etika Omotenashi; (3) SSW Konstruksi: Keselamatan K3 Gemba, komando akustik kansei KYT (Kiken Yochi Training), & aba-aba alat berat.',
+    a: 'Jalur Vokasional SSW membekali calon pekerja terampil di Jepang dengan bahasa kerja nyata: (1) SSW Kaigo: Komunikasi empatik menyapa lansia dan laporan situasi darurat; (2) SSW Restoran & Pengolahan: Standar kebersihan, keamanan pangan, dan etika pelayanan; (3) SSW Konstruksi: Keselamatan kerja di lapangan proyek (K3), aba-aba kerja, dan pencegahan bahaya.',
   },
   {
     id: 'faq-4c',
     category: 'materi',
-    q: 'Bagaimana Nugget Nihongo membantu mengatasi interferensi bahasa ibu (L1 Substratum)?',
-    a: 'Melalui 300 butir data diagnostik empiris, Nugget Nihongo mendeteksi titik transfer negatif bahasa Indonesia ke bahasa Jepang (seperti jebakan kopula "adalah" vs desu, partikel wa vs ga). Pengguna juga dapat memilih dialek asal (Umum, Jawa, Sunda, Batak/Indonesia Timur) untuk mendapatkan penyesuaian khusus pada latihan fonologis dan nada Tokyo (Pitch Accent).',
+    q: 'Bagaimana Nugget Nihongo membantu mengatasi kebiasaan salah kaprah dari bahasa Indonesia?',
+    a: 'Melalui 300+ catatan jebakan bahasa yang sering dialami orang Indonesia, Nugget Nihongo langsung menandai titik salah kaprah (seperti menyisipkan kata "adalah" di tengah kalimat atau tertukar partikel wa vs ga). Kamu juga bisa memilih penyesuaian logat daerahmu di Pengaturan untuk menyempurnakan pelafalan nada Tokyo (Pitch Accent).',
   },
   {
     id: 'faq-5',
@@ -370,13 +370,13 @@ export const AboutPage: React.FC = () => {
         <div className="space-y-1">
           <div className="inline-flex items-center gap-2 text-accent font-bold text-xs uppercase tracking-wider">
             <Brain className="w-4 h-4" />
-            <span>Landasan Riset & Metodologi Ilmiah</span>
+            <span>Metode Belajar Terstruktur</span>
           </div>
           <h2 className="text-xl sm:text-2xl font-extrabold text-appText-bright">
-            Arsitektur Pedagogis Berbasis Bukti (Evidence-Based Learning)
+            Dirancang Khusus untuk Pembelajar Indonesia
           </h2>
           <p className="text-xs text-appText-muted leading-relaxed">
-            Nugget Nihongo dirancang bukan atas dasar intuisi semata, melainkan mengintegrasikan temuan riset Second Language Acquisition (SLA), Computer-Assisted Language Learning (CALL), dan model matematika kognitif terkini.
+            Nugget Nihongo dirancang sistematis agar kamu belajar secara bertahap tanpa merasa kewalahan, menggabungkan metode jadwal review modern dan pemahaman mendalam tentang kebiasaan berbahasa orang Indonesia.
           </p>
         </div>
 
@@ -385,13 +385,14 @@ export const AboutPage: React.FC = () => {
           <div className="p-4 sm:p-5 rounded-2xl bg-surface-2/80 border border-accent/15 space-y-2.5">
             <div className="flex items-center gap-2 text-xs font-bold text-accent">
               <span className="p-1 rounded-md bg-accent/15 text-accent">1</span>
-              <span>Alur Belajar Bertahap (Processability Theory)</span>
+              <span>Alur Belajar Bertahap & Rapi</span>
             </div>
             <p className="text-xs text-appText leading-relaxed">
-              Materi disusun bertingkat mengikuti tahapan kapasitas memori kerja manusia: mulai dari tingkat leksikal dasar, frase penanda topik (は), hingga pergeseran urutan kata dan klausa bertingkat tanpa membebani otak secara tiba-tiba.
+              Materi disusun bertingkat mengikuti kapasitas memori: mulai dari tingkat kosakata dasar, frasa penanda topik (は), hingga pergeseran urutan kata dan anak kalimat bertingkat tanpa membuatmu bingung.
             </p>
-            <div className="text-[11px] font-mono text-appText-muted border-t border-accent/10 pt-2">
-              📖 Pienemann, M. (1998). <em>Language Processing and Second Language Development</em>. John Benjamins.
+            <div className="text-[11px] text-appText-muted border-t border-accent/10 pt-2 flex items-center gap-1.5">
+              <span>💡</span>
+              <span>Fondasi disusun kuat dari kalimat sederhana sebelum beralih ke struktur kompleks.</span>
             </div>
           </div>
 
@@ -399,13 +400,14 @@ export const AboutPage: React.FC = () => {
           <div className="p-4 sm:p-5 rounded-2xl bg-surface-2/80 border border-accent/15 space-y-2.5">
             <div className="flex items-center gap-2 text-xs font-bold text-red-400">
               <span className="p-1 rounded-md bg-red-500/15 text-red-400">2</span>
-              <span>Pencegahan Transfer Negatif Bahasa Ibu (L1)</span>
+              <span>Pencegahan Salah Kaprah Bahasa Indonesia</span>
             </div>
             <p className="text-xs text-appText leading-relaxed">
-              Mengakomodasi kekhasan lidah dan pola pikir pembelajar Indonesia: mengatasi jebakan struktur kalimat SVO vs SOV, posisi kopula "adalah" di tengah vs "desu" di akhir, serta modul penyesuaian logat daerah (Jawa, Sunda, Batak/Timur).
+              Mengakomodasi kebiasaan pembelajar Indonesia: mengatasi jebakan perbedaan susunan kata, posisi kata "adalah", serta modul penyesuaian logat daerah (Jawa, Sunda, Batak/Timur).
             </p>
-            <div className="text-[11px] font-mono text-appText-muted border-t border-accent/10 pt-2">
-              📖 Sutedi, D. (2014). <em>Dasar-Dasar Linguistik Bahasa Jepang</em>. Humaniora Bandung.
+            <div className="text-[11px] text-appText-muted border-t border-accent/10 pt-2 flex items-center gap-1.5">
+              <span>💡</span>
+              <span>Membantu melatih refleks bahasa Jepang alami tanpa terikat kata "adalah".</span>
             </div>
           </div>
 
@@ -416,10 +418,11 @@ export const AboutPage: React.FC = () => {
               <span>Penyajian Kosakata Tematik Kontekstual</span>
             </div>
             <p className="text-xs text-appText leading-relaxed">
-              Menghindari pengajaran kosakata berbasis daftar sinonim serumpun dalam satu waktu untuk mencegah kebingungan semantis. Kosakata disajikan dalam relasi skenario nyata (misal: pakaian di toko, makanan di restoran).
+              Menghindari menghafal daftar kata yang membingungkan secara serentak. Kosakata disajikan dalam situasi nyata sehari-hari (misal: belanja di minimarket, situasi kerja, makan di restoran).
             </p>
-            <div className="text-[11px] font-mono text-appText-muted border-t border-accent/10 pt-2">
-              📖 Tinkham, T. (1997). <em>The effects of semantic and thematic clustering on vocabulary learning</em>. Second Language Research.
+            <div className="text-[11px] text-appText-muted border-t border-accent/10 pt-2 flex items-center gap-1.5">
+              <span>💡</span>
+              <span>Kosakata dipelajari per situasi nyata, bukan sekadar hafalan kamus acak.</span>
             </div>
           </div>
 
@@ -427,13 +430,14 @@ export const AboutPage: React.FC = () => {
           <div className="p-4 sm:p-5 rounded-2xl bg-surface-2/80 border border-accent/15 space-y-2.5">
             <div className="flex items-center gap-2 text-xs font-bold text-sky-400">
               <span className="p-1 rounded-md bg-sky-500/15 text-sky-400">4</span>
-              <span>Penjadwalan Interval Bebas Lupa (FSRS v4)</span>
+              <span>Penjadwalan Pengulangan Cerdas (FSRS v4)</span>
             </div>
             <p className="text-xs text-appText leading-relaxed">
-              Menggantikan algoritma SM-2 lawas dengan model matematika stokastik DSR (Difficulty, Stability, Retrievability) yang menyesuaikan kecepatan belajar pribadi dan menghemat hingga 40% waktu ulasan.
+              Menggunakan sistem jadwal pengulangan modern yang menyesuaikan kecepatan belajar pribadi, memastikan materi diingat jangka panjang dan menghemat hingga 40% waktu ulasan harian.
             </p>
-            <div className="text-[11px] font-mono text-appText-muted border-t border-accent/10 pt-2">
-              📖 Ye, J., et al. (2022). <em>A Stochastic Shortest Path Algorithm for Optimizing Spaced Repetition</em>. ACM KDD.
+            <div className="text-[11px] text-appText-muted border-t border-accent/10 pt-2 flex items-center gap-1.5">
+              <span>💡</span>
+              <span>Mengulang materi tepat sebelum kamu lupa, menghemat waktu belajar.</span>
             </div>
           </div>
         </div>

@@ -242,7 +242,7 @@ window.vocabLensTryN4 = {
         "Memahami bahasa Jepang yang berkecepatan cepat itu sulit.",
         "Saya tak bisa mendengar suara di telepon dengan baik karena bising.",
         "Saya terkejut dengan kabar yang mendadak.",
-        "Saya sedang pusing memikirkan pilihan karir.",
+        "Saya sedang pusing memikirkan pilihan karier.",
         "Kita bisa bosan jika setiap hari memakan hidangan yang sama melulu.",
         "Gim ini menarik dan tidak membosankan walau dimainkan berkali-kali.",
         "Saya tersesat di kota yang asing.",

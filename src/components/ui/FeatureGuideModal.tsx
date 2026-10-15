@@ -80,6 +80,7 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
           <button
             onClick={closeFeatureGuide}
             className="p-1.5 rounded-xl text-appText-muted hover:text-appText-bright hover:bg-surface-2 transition-colors"
+            title="Tutup"
             aria-label="Tutup panduan"
           >
             <X className="w-5 h-5" />

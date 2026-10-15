@@ -167,9 +167,9 @@ export const MoraPacingCard: React.FC<MoraPacingCardProps> = ({
               let btnStyle = 'bg-surface-2 border-accent/20 text-appText-bright hover:border-accent/40';
               if (feedback) {
                 if (isCorrect) {
-                  btnStyle = 'bg-emerald-950/40 border-emerald-500/60 text-emerald-300 font-bold';
+                  btnStyle = 'bg-emerald-500/15 dark:bg-emerald-950/40 border-emerald-500/60 text-emerald-800 dark:text-emerald-300 font-bold';
                 } else if (isSelected && !isCorrect) {
-                  btnStyle = 'bg-rose-950/40 border-rose-500/60 text-rose-300';
+                  btnStyle = 'bg-rose-500/15 dark:bg-rose-950/40 border-rose-500/60 text-rose-800 dark:text-rose-300 font-bold';
                 } else {
                   btnStyle = 'bg-surface-2/40 border-accent/10 text-appText-muted opacity-50';
                 }

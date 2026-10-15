@@ -25,11 +25,10 @@ export const Sidebar: React.FC = () => {
       label: 'Sensei AI', 
       jp: '先生', 
       icon: <Sparkles className="w-5 h-5 text-accent-hot" />,
-      badge: 'Soon',
       isSpecial: true
     },
     { id: 'settings', label: 'Pengaturan', jp: '設定', icon: <Settings className="w-5 h-5" /> },
-    { id: 'about', label: 'Tentang App', jp: '情報', icon: <HelpCircle className="w-5 h-5" /> },
+    { id: 'about', label: 'Tentang Aplikasi', jp: '情報', icon: <HelpCircle className="w-5 h-5" /> },
   ];
 
   return (

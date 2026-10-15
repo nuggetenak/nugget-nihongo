@@ -117,6 +117,8 @@ export const ReportIssueModal: React.FC<ReportIssueModalProps> = ({
           <button
             onClick={onClose}
             className="p-1.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-appText-bright transition-colors"
+            title="Tutup"
+            aria-label="Tutup modal"
           >
             <X className="w-5 h-5" />
           </button>

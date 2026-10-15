@@ -76,8 +76,8 @@ const ONBOARDING_SLIDES: OnboardingSlide[] = [
     accentBg: 'from-yellow-500/20 to-amber-700/10',
     points: [
       {
-        title: 'Prediksi Kurva Lupa Otak',
-        desc: 'Berdasarkan riset Ye et al. (2022), sistem menghitung retrievability memori untuk tiap kata.',
+        title: 'Prediksi Daya Ingat Otak',
+        desc: 'Sistem cerdas memprediksi daya ingatmu dan menentukan momen paling pas untuk mengulang tiap kata.',
         icon: '📈',
       },
       {

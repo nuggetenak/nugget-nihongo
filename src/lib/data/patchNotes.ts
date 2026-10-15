@@ -17,6 +17,46 @@ export interface PatchNote {
 
 export const PATCH_NOTES_HISTORY: PatchNote[] = [
   {
+    version: 'v19.2.0',
+    releaseName: 'Charcoal Obsidian Theme, Humanized Copywriting & UI/UX Hardening',
+    date: '15 Oktober 2026',
+    type: 'minor',
+    highlights: [
+      'Tema Gelap Premium Charcoal Obsidian & Deep Slate: Menggantikan palet cokelat redup dengan obsidian slate modern (#0B0F17, #131926) berpadu aksen amber emas (#F59E0B) dengan rasio kontras WCAG AAA.',
+      'Humanisasi Copywriting & Eliminasi Jargon: Menghapus seluruh istilah akademis berat (cognitive overload, PT-1..6, IRT theta psychometrics, doktrin hukum) menjadi bahasa Indonesia yang ramah, hangat, dan mudah dipahami.',
+      'Aksen Nada Tokyo (Pitch Accent) Dinamis: Perbaikan visualisasi SVG kontur nada tinggi-rendah dengan lebar adaptif per-mora, bebas distorsi, dan kontras tajam.',
+      'Penyatuan Modal Kanji: Penggabungan komponen stroke modal sehingga animasi KanjiVG SVG dan kanvas latihan tulis tangan berfungsi penuh di semua halaman materi.',
+      'Pembersihan Header & Navigasi Materi: Menghapus pil level ganda di header untuk mempertahankan kolom pencarian ≥ 320px, serta perapian tab navigasi Materi Hub.',
+      'Standardisasi Ejaan KBBI & Aksesibilitas: Menyelaraskan ratusan kata baku (kosakata, izin, napas, telanjur, karier, antrean, praktik, respons, frasa) serta melengkapi atribut title dan aria-label pada seluruh tombol modal.',
+    ],
+    details: [
+      {
+        category: 'Desain & Tema Gelap',
+        items: [
+          'Palet Charcoal Obsidian (#0B0F17, #070A0F, #131926, #1E2638) diterapkan pada :root dan Tailwind tokens, bebas elemen kusam/berlumpur.',
+          'Pembersihan 37+ kelas warna gelap tanpa awalan dark:, menjamin keterbacaan sempurna di tema terang dan gelap.',
+          'Penyesuaian kontras kartu evaluasi, kartu FSRS rating, dan kartu skenario tanggap darurat.',
+        ],
+      },
+      {
+        category: 'Copywriting & Pengalaman Belajar',
+        items: [
+          'Redaksi ramah pembelajar pada Tes Penempatan Kilat, Arena Kuis, Pengaturan Logat Daerah, dan Landasan Belajar.',
+          'Penjelasan kurikulum disederhanakan tanpa membebani pembelajar dengan jargon linguistik teoretis.',
+          'Penyempurnaan tips salah kaprah kontrasif bahasa Indonesia vs Jepang.',
+        ],
+      },
+      {
+        category: 'Aksesibilitas & Kerapian Sistem',
+        items: [
+          'Atribut aria-label dan title standar disematkan pada seluruh tombol tutup modal dan ikon interaktif.',
+          'Harmonisasi ejaan baku KBBI pada seluruh modul kurikulum, bank soal diagnostik, dan pustaka kosakata.',
+          'Verifikasi 100% lulus pada seluruh suite pengujian otomatis unit dan responsif Playwright.',
+        ],
+      },
+    ],
+  },
+  {
     version: 'v19.1.0',
     releaseName: 'Interactive AI Dojo, CAT Diagnostic, Dojo Kanji (2.383 Kanji), & 9-Book Pedagogical Matrix',
     date: '15 Oktober 2026',
@@ -395,7 +435,7 @@ export const PATCH_NOTES_HISTORY: PatchNote[] = [
       {
         category: 'Kurikulum & Data',
         items: [
-          'Penyusunan data kosa kata dengan kanji, kana, romaji, arti bahasa Indonesia, dan contoh kalimat berpasangan.',
+          'Penyusunan data kosakata dengan kanji, kana, romaji, arti bahasa Indonesia, dan contoh kalimat berpasangan.',
           'Pengelompokan tata bahasa berdasar partikel, bentuk verba, pengandaian, dan modalitas.',
         ],
       },
@@ -456,7 +496,7 @@ export const PATCH_NOTES_HISTORY: PatchNote[] = [
       {
         category: 'Fondasi Teknis',
         items: [
-          'Seluruh data kosa kata dan tata bahasa di-cache lokal sehingga aplikasi tetap responsif di area minim sinyal.',
+          'Seluruh data kosakata dan tata bahasa di-cache lokal sehingga aplikasi tetap responsif di area minim sinyal.',
         ],
       },
     ],

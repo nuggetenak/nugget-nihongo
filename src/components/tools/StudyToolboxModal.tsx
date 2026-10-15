@@ -57,9 +57,9 @@ export const StudyToolboxModal: React.FC<StudyToolboxModalProps> = ({
   const tools: ToolItem[] = [
     {
       id: 'cat',
-      name: 'Tes Penempatan Mandiri (CAT)',
+      name: 'Tes Penempatan Mandiri',
       nameJp: '適応型レベル判定',
-      desc: 'Tes adaptif 10 soal berbasis IRT untuk mendiagnosis level JLPT Anda (N5–N1) secara akurat.',
+      desc: 'Tes kilat 10 soal untuk menentukan rekomendasi level JLPT belajarmu (N5–N1) secara akurat.',
       icon: <Target className="w-5 h-5 text-amber-400" />,
       badge: '10 Soal Kilat',
       action: () => {
@@ -174,6 +174,8 @@ export const StudyToolboxModal: React.FC<StudyToolboxModalProps> = ({
           <button
             onClick={onClose}
             className="p-2 rounded-xl bg-surface hover:bg-surface-3 text-appText-muted hover:text-appText-bright transition-colors"
+            title="Tutup"
+            aria-label="Tutup modal"
           >
             <X className="w-4 h-4" />
           </button>

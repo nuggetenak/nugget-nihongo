@@ -645,7 +645,7 @@ export const QuizPage: React.FC = () => {
                     onClick={toggleFlip}
                     className={`relative cursor-pointer min-h-[260px] sm:min-h-[300px] rounded-2xl sm:rounded-3xl border-2 p-5 sm:p-8 flex flex-col justify-between text-center transition-all duration-300 select-none shadow-xl overflow-hidden ${
                       isFlipped
-                        ? 'bg-amber-950/40 border-amber-500/60'
+                        ? 'bg-amber-500/15 dark:bg-amber-950/40 border-amber-500/60'
                         : 'bg-surface border-accent/30 hover:border-accent/50'
                     }`}
                   >
@@ -734,28 +734,28 @@ export const QuizPage: React.FC = () => {
                     <div className="grid grid-cols-4 gap-2 sm:gap-2.5 animate-in fade-in slide-in-from-bottom-2 duration-200">
                       <button
                         onClick={() => handleFlashcardRate(1)}
-                        className="py-3.5 sm:py-4 rounded-2xl bg-red-950/40 hover:bg-red-900/60 border border-red-500/30 text-red-300 text-xs font-bold transition-all flex flex-col items-center gap-1 active:scale-95"
+                        className="py-3.5 sm:py-4 rounded-2xl bg-red-500/15 dark:bg-red-950/40 hover:bg-red-500/25 dark:hover:bg-red-900/60 border border-red-500/30 text-red-700 dark:text-red-300 text-xs font-bold transition-all flex flex-col items-center gap-1 active:scale-95"
                       >
                         <span>Lupa</span>
                         <kbd className="text-[9px] opacity-60">1</kbd>
                       </button>
                       <button
                         onClick={() => handleFlashcardRate(2)}
-                        className="py-3.5 sm:py-4 rounded-2xl bg-amber-950/40 hover:bg-amber-900/60 border border-amber-500/30 text-amber-300 text-xs font-bold transition-all flex flex-col items-center gap-1 active:scale-95"
+                        className="py-3.5 sm:py-4 rounded-2xl bg-amber-500/15 dark:bg-amber-950/40 hover:bg-amber-500/25 dark:hover:bg-amber-900/60 border border-amber-500/30 text-amber-700 dark:text-amber-300 text-xs font-bold transition-all flex flex-col items-center gap-1 active:scale-95"
                       >
                         <span>Ragu</span>
                         <kbd className="text-[9px] opacity-60">2</kbd>
                       </button>
                       <button
                         onClick={() => handleFlashcardRate(3)}
-                        className="py-3.5 sm:py-4 rounded-2xl bg-emerald-950/40 hover:bg-emerald-900/60 border border-emerald-500/30 text-emerald-300 text-xs font-bold transition-all flex flex-col items-center gap-1 active:scale-95"
+                        className="py-3.5 sm:py-4 rounded-2xl bg-emerald-500/15 dark:bg-emerald-950/40 hover:bg-emerald-500/25 dark:hover:bg-emerald-900/60 border border-emerald-500/30 text-emerald-700 dark:text-emerald-300 text-xs font-bold transition-all flex flex-col items-center gap-1 active:scale-95"
                       >
                         <span>Ingat</span>
                         <kbd className="text-[9px] opacity-60">3</kbd>
                       </button>
                       <button
                         onClick={() => handleFlashcardRate(4)}
-                        className="py-3.5 sm:py-4 rounded-2xl bg-sky-950/40 hover:bg-sky-900/60 border border-sky-500/30 text-sky-300 text-xs font-bold transition-all flex flex-col items-center gap-1 active:scale-95"
+                        className="py-3.5 sm:py-4 rounded-2xl bg-sky-500/15 dark:bg-sky-950/40 hover:bg-sky-500/25 dark:hover:bg-sky-900/60 border border-sky-500/30 text-sky-700 dark:text-sky-300 text-xs font-bold transition-all flex flex-col items-center gap-1 active:scale-95"
                       >
                         <span>Mudah</span>
                         <kbd className="text-[9px] opacity-60">4</kbd>
@@ -831,9 +831,9 @@ export const QuizPage: React.FC = () => {
                       let btnStyle = 'bg-surface-2 border-accent/20 text-appText-bright hover:border-accent/40';
                       if (feedback) {
                         if (isCorrect) {
-                          btnStyle = 'bg-emerald-950/50 border-emerald-500 text-emerald-300 font-bold';
+                          btnStyle = 'bg-emerald-500/15 dark:bg-emerald-950/50 border-emerald-500 text-emerald-800 dark:text-emerald-300 font-bold';
                         } else if (isSelected && !isCorrect) {
-                          btnStyle = 'bg-red-950/50 border-red-500 text-red-300 font-bold';
+                          btnStyle = 'bg-red-500/15 dark:bg-red-950/50 border-red-500 text-red-800 dark:text-red-300 font-bold';
                         } else {
                           btnStyle = 'bg-surface-2/40 border-transparent text-appText-muted opacity-50';
                         }
@@ -945,8 +945,8 @@ export const QuizPage: React.FC = () => {
                   <div
                     className={`p-4 rounded-2xl border flex items-center justify-between gap-3 animate-in fade-in duration-200 ${
                       feedback.isCorrect
-                        ? 'bg-emerald-950/40 border-emerald-500/40 text-emerald-300'
-                        : 'bg-red-950/40 border-red-500/40 text-red-300'
+                        ? 'bg-emerald-500/15 dark:bg-emerald-950/40 border-emerald-500/40 text-emerald-800 dark:text-emerald-300'
+                        : 'bg-red-500/15 dark:bg-red-950/40 border-red-500/40 text-red-800 dark:text-red-300'
                     }`}
                   >
                     <div className="text-xs sm:text-sm font-semibold leading-relaxed">

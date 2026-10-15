@@ -214,29 +214,29 @@ export function finalizeCATResult(
 
   if (finalTheta < -0.85) {
     estimatedLevel = 'n5';
-    levelName = 'JLPT N5 · Pemula (Akses Lemma Dasar)';
+    levelName = 'JLPT N5 · Pemula (Pondasi Dasar & Partikel)';
     recommendedTrack = 'n5';
-    summary = 'Kuasai partikel dasar (は, が, を, に, で), konjugasi bentuk-Masu, dan tata bahasa harian sebelum beranjak ke klausa majemuk.';
+    summary = 'Kuasai partikel dasar (は, が, を, に, で), konjugasi bentuk-Masu, dan tata bahasa harian sebelum beranjak ke materi yang lebih kompleks.';
   } else if (finalTheta < -0.1) {
     estimatedLevel = 'n4';
-    levelName = 'JLPT N4 · Dasar Menengah (Kategori Frasa)';
+    levelName = 'JLPT N4 · Dasar Menengah (Tata Bahasa Harian)';
     recommendedTrack = 'n4';
-    summary = 'Fondasi N5 Anda sudah baik! Anda siap memperdalam bentuk Te, Nai, bentuk kamus, serta kalimat pengandaian (Tara, Ba).';
+    summary = 'Fondasi N5 kamu sudah baik! Kamu siap memperdalam bentuk Te, Nai, bentuk kamus, serta kalimat pengandaian (Tara, Ba).';
   } else if (finalTheta < 0.65) {
     estimatedLevel = 'n3';
-    levelName = 'JLPT N3 · Menengah (Prosedur Kalimat & Nuansa)';
+    levelName = 'JLPT N3 · Menengah (Percakapan & Nuansa)';
     recommendedTrack = 'n3';
-    summary = 'Kemampuan bahasa Jepang Anda solid! Anda siap menguasai nuansa kalimat ekspresif, ragam honorifik (Keigo), dan wacana kontekstual.';
+    summary = 'Kemampuan bahasa Jepangmu solid! Kamu siap menguasai nuansa kalimat ekspresif, ragam bahasa sopan (Keigo), dan percakapan kontekstual.';
   } else if (finalTheta < 1.35) {
     estimatedLevel = 'n2';
-    levelName = 'JLPT N2 · Menengah Atas (Klausa Subordinat)';
+    levelName = 'JLPT N2 · Menengah Atas (Teks & Kerja)';
     recommendedTrack = 'n2';
-    summary = 'Tingkat kemahiran tinggi! Anda mampu memahami teks artikel, berita bisnis, serta pola ekspresi formal dan idiomatis.';
+    summary = 'Tingkat kemahiranmu tinggi! Kamu mampu memahami artikel, berita, serta pola ekspresi formal dan idiomatis.';
   } else {
     estimatedLevel = 'n1';
-    levelName = 'JLPT N1 · Mahir & Lanjut (Variasi Pragmatis)';
+    levelName = 'JLPT N1 · Mahir & Lanjut (Ekspresi Alami)';
     recommendedTrack = 'n1';
-    summary = 'Kemahiran mendekati penutur asli! Anda menguasai struktur sastra klasik, dokumen resmi, dan nuansa pragmatis kompleks.';
+    summary = 'Kemahiranmu luar biasa! Kamu menguasai struktur bacaan tingkat lanjut, dokumen resmi, dan beragam nuansa ekspresi penutur asli.';
   }
 
   // Extract strengths and areas of focus

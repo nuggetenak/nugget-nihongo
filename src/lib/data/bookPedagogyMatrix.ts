@@ -115,7 +115,7 @@ export const BOOK_PEDAGOGY_REGISTRY: Record<string, Book5W1HProfile> = {
     publisher: 'The Japan Foundation (JF)',
     philosophy: 'Pendekatan Berorientasi Aksi (Action-Oriented CEFR-J Can-Do Framework)',
     who: 'Warga negara asing yang tinggal atau berencana bekerja di Jepang (khususnya visa Tokutei Ginou / SSW) yang butuh berkomunikasi nyata di tempat kerja dan lingkungan bertetangga.',
-    what: 'Tugas-tugas komunikasi praktis (*Can-Do*): mengenali pengumuman stasiun, membaca label harga supermarket, menyapa tetangga saat buang sampah, hingga merespon instruksi keselamatan darurat.',
+    what: 'Tugas-tugas komunikasi praktis (*Can-Do*): mengenali pengumuman stasiun, membaca label harga supermarket, menyapa tetangga saat buang sampah, hingga merespons instruksi keselamatan darurat.',
     when: 'Tidak diurutkan berdasarkan kerumitan rumus tata bahasa, melainkan berdasarkan urgensi kebutuhan hidup di Jepang. Contoh: cara membaca rambu dan label darurat diajarkan sejak level Starter (A1).',
     where: 'Jepang otentik masa kini: konbini, balai kota (*kuyakusho*), halte bus, apartemen, pabrik, dan restoran.',
     why: 'Di dunia nyata, orang tidak berbicara dengan urutan bab buku teks. Irodori menggunakan audio autentik berlatar kebisingan asli (stasiun, kafe) agar telinga pelajar terlatih menghadapi situasi sebenarnya.',

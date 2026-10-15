@@ -17,13 +17,14 @@ export const StreakBrokenModal: React.FC = () => {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fade-in">
       <div
-        className="w-full max-w-md max-h-[90vh] overflow-y-auto bg-[#181410] border border-amber-900/50 rounded-3xl p-6 sm:p-8 relative text-center shadow-2xl scrollbar-none"
+        className="w-full max-w-md max-h-[90vh] overflow-y-auto bg-surface border border-accent/25 rounded-3xl p-6 sm:p-8 relative text-center shadow-2xl scrollbar-none"
         onClick={(e) => e.stopPropagation()}
       >
         <button
           onClick={closeStreakBrokenModal}
-          className="absolute top-4 right-4 p-2 text-stone-400 hover:text-stone-200 rounded-full hover:bg-white/5 transition-colors"
-          aria-label="Tutup"
+          className="absolute top-4 right-4 p-2 text-appText-muted hover:text-appText-bright rounded-full hover:bg-surface-2 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center active:scale-95"
+          title="Tutup"
+          aria-label="Tutup modal"
         >
           <X className="w-5 h-5" />
         </button>
@@ -36,7 +37,7 @@ export const StreakBrokenModal: React.FC = () => {
           Streak Terputus, Tapi Jangan Menyerah!
         </h3>
 
-        <div className="p-4 my-4 rounded-2xl bg-amber-950/30 border border-amber-800/30 text-amber-200/90 text-xs sm:text-sm leading-relaxed italic">
+        <div className="p-4 my-4 rounded-2xl bg-amber-500/15 dark:bg-amber-950/30 border border-amber-500/30 text-amber-800 dark:text-amber-200/90 text-xs sm:text-sm leading-relaxed italic">
           "{streakBrokenTip}"
         </div>
 
@@ -46,7 +47,7 @@ export const StreakBrokenModal: React.FC = () => {
 
         <button
           onClick={handleStartStudy}
-          className="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-stone-950 font-bold text-sm flex items-center justify-center gap-2 shadow-lg shadow-amber-950/50 transition-all active:scale-[0.98]"
+          className="w-full py-3 px-4 rounded-xl bg-accent hover:brightness-110 text-bg font-bold text-sm flex items-center justify-center gap-2 shadow-lg transition-all active:scale-[0.98]"
         >
           <span>Mulai Belajar Lagi Hari Ini 🍙</span>
           <ArrowRight className="w-4 h-4" />

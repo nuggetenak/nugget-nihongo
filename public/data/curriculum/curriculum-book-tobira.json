@@ -828,7 +828,7 @@
       "id": "unit-curriculum-book-tobira-10",
       "level": "n3",
       "pt_stage": 5,
-      "title_id": "Tobira: Dunia Kerja, Budaya Korporat & Reformasi Karir",
+      "title_id": "Tobira: Dunia Kerja, Budaya Korporat & Reformasi Karier",
       "title_jp": "第10章: 職場環境と働き方 (Work Environment and Working Styles)",
       "theme": "Tobira",
       "icon": "🚪",
@@ -846,7 +846,7 @@
         {
           "id": "les-curriculum-book-tobira-u10-01",
           "lesson_number": 1,
-          "title_id": "Dunia Kerja, Budaya Korporat & Reformasi Karir (Eksplorasi Materi & Pola)",
+          "title_id": "Dunia Kerja, Budaya Korporat & Reformasi Karier (Eksplorasi Materi & Pola)",
           "title_jp": "第10章: 職場環境と働き方 (Work Environment and Working Styles)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Tobira: Gateway to Advanced Japanese pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
           "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Tobira: Gateway to Advanced Japanese bab ini dalam konteks nyata.",
@@ -892,14 +892,14 @@
               "jp": "第10章: 職場環境と働き方 (Work Environment and Working Styles)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Dunia Kerja, Budaya Korporat & Reformasi Karir!"
+              "idText": "Mari kita mulai belajar Dunia Kerja, Budaya Korporat & Reformasi Karier!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Dunia Kerja, Budaya Korporat & Reformasi Karir di buku Tobira: Gateway to Advanced Japanese?",
+              "prompt": "Apa fokus utama pada materi Dunia Kerja, Budaya Korporat & Reformasi Karier di buku Tobira: Gateway to Advanced Japanese?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",

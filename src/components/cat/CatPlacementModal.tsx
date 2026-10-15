@@ -188,6 +188,8 @@ export const CatPlacementModal: React.FC<CatPlacementModalProps> = ({ isOpen, on
           <button
             onClick={onClose}
             className="p-2 rounded-xl bg-surface hover:bg-surface-3 text-appText-muted hover:text-appText-bright transition-colors"
+            title="Tutup"
+            aria-label="Tutup modal"
           >
             <X className="w-4 h-4" />
           </button>
@@ -198,7 +200,7 @@ export const CatPlacementModal: React.FC<CatPlacementModalProps> = ({ isOpen, on
           {isLoading ? (
             <div className="py-16 text-center space-y-3">
               <div className="w-10 h-10 border-3 border-accent border-t-transparent rounded-full animate-spin mx-auto" />
-              <p className="text-xs text-appText-muted">Menyiapkan bank soal adaptif IRT...</p>
+              <p className="text-xs text-appText-muted">Menyiapkan soal penempatanmu...</p>
             </div>
           ) : result ? (
             /* Result Screen */
@@ -231,11 +233,11 @@ export const CatPlacementModal: React.FC<CatPlacementModalProps> = ({ isOpen, on
                 </div>
 
                 <div className="p-3 rounded-2xl bg-surface-2 border border-accent/15 text-center">
-                  <div className="text-[10px] text-appText-muted uppercase font-bold">Skor Kemampuan (θ)</div>
+                  <div className="text-[10px] text-appText-muted uppercase font-bold">Poin Kemahiran</div>
                   <div className="text-base sm:text-lg font-black text-blue-400 font-mono">
-                    {result.theta > 0 ? `+${result.theta}` : result.theta}
+                    {Math.min(100, Math.max(10, Math.round(((result.theta + 3) / 6) * 100)))}
                   </div>
-                  <div className="text-[10px] text-appText-muted">Skala IRT 3PL</div>
+                  <div className="text-[10px] text-appText-muted">Skor Relatif / 100</div>
                 </div>
 
                 <div className="p-3 rounded-2xl bg-surface-2 border border-accent/15 text-center">

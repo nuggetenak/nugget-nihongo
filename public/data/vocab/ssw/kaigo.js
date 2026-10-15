@@ -165,7 +165,7 @@ window.vocabSSW_Kaigo = [
     word: '誤嚥',
     reading: 'ごえん',
     romaji: 'goen',
-    meaning: 'tersedak makanan ke saluran nafas',
+    meaning: 'tersedak makanan ke saluran napas',
     level: 'n4',
     pos: 'noun',
     nuance: 'Bahaya besar pada lansia yang dapat menyebabkan pneumonia aspirasi (Gonen-sei Haien).',

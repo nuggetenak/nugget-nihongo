@@ -149,13 +149,13 @@ window.vocabLensSkmN3 = {
       ]
     },
     "5": {
-      "theme": "仕事・職場・ビジネス (Dunia Kerja, Karir & Bisnis)",
+      "theme": "仕事・職場・ビジネス (Dunia Kerja, Karier & Bisnis)",
       "vocab_ids": [
         "vg-n3-00084",
         "Saya menyusun piring-piring di atas meja.",
         "Tolong susun barang-barang dengan rapi di rak.",
         "vg-n3-00085",
-        "Ada antrian panjang di depan restoran ramen yang terkenal.",
+        "Ada antrean panjang di depan restoran ramen yang terkenal.",
         "Saya mengantri dari pagi untuk membeli tiket konser.",
         "vg-n3-00086",
         "Saya membungkus hadiah dengan kertas cantik.",

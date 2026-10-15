@@ -24,7 +24,7 @@ export const InstallModal: React.FC = () => {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fade-in">
       <div
-        className="w-full max-w-md max-h-[90vh] overflow-y-auto bg-[#181410] border border-amber-900/40 rounded-2xl shadow-2xl p-6 relative text-left scrollbar-none"
+        className="w-full max-w-md max-h-[90vh] overflow-y-auto bg-surface border border-accent/25 rounded-2xl shadow-2xl p-6 relative text-left scrollbar-none"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Glow corner accent */}
@@ -33,7 +33,8 @@ export const InstallModal: React.FC = () => {
         {/* Close Button */}
         <button
           onClick={() => setShowInstallModal(false)}
-          className="absolute top-4 right-4 p-2 text-amber-500/60 hover:text-amber-300 rounded-full hover:bg-white/5 transition-colors"
+          className="absolute top-4 right-4 p-2 text-appText-muted hover:text-appText-bright rounded-full hover:bg-surface-2 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center active:scale-95"
+          title="Tutup"
           aria-label="Tutup modal"
         >
           <X className="w-5 h-5" />

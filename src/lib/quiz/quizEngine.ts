@@ -716,8 +716,8 @@ export function generateDiagnosticQuestions(
       prompt: isPitch
         ? `[Kontur Aksen Nada Tokyo] Bedakan pola nada tinggi-rendah kata:`
         : isPhon
-        ? `[Diskriminasi Fonologis ${item.level.toUpperCase()}] Pilih bentuk ujaran/pasangan yang benar:`
-        : `[Diagnostik L1 Indonesia ${item.level.toUpperCase()}] Hindari jebakan interferensi bahasa Indonesia:`,
+        ? `[Latihan Pendengaran & Bunyi ${item.level.toUpperCase()}] Pilih bentuk ujaran/pasangan yang benar:`
+        : `[Cek Ketelitian ${item.level.toUpperCase()}] Hindari salah kaprah kebiasaan bahasa Indonesia:`,
       targetItem: {
         id: item.id,
         word: item.title,
@@ -737,11 +737,11 @@ export function generateDiagnosticQuestions(
         ? `Pola nada: ${item.accent_pattern || 'Standar Tokyo'}`
         : isPhon
         ? `Tantangan: ${item.stimulus_l1}`
-        : `Bentuk yang salah (jebakan L1): ${item.l1_trap_form}`,
+        : `Bentuk yang sering keliru: ${item.l1_trap_form}`,
       correctAnswer: item.target_form,
       options,
       explanation: `✅ Bentuk benar: ${item.target_form}\n⚠️ Aturan: ${item.prescription}\n🔍 Analisis: ${item.root_cause}${
-        item.l1_substratum ? `\n📌 Substratum: ${item.l1_substratum}` : ''
+        item.l1_substratum ? `\n📌 Penjelasan Kebiasaan: ${item.l1_substratum}` : ''
       }`,
       level: item.level,
       pitchContour: item.accent_pattern,
@@ -767,7 +767,7 @@ export function generatePanicRecallQuestions(
     questions.push({
       id: `panic-${s.id}-${Date.now()}`,
       mode: 'panic-recall',
-      prompt: `[Simulasi Kedaruratan Gemba K3 / SBAR] Lafalkan instruksi/komando dalam ${s.timeoutSeconds || 5} detik!`,
+      prompt: `[Simulasi Tanggap Darurat K3] Ucapkan kalimat penting ini dalam ${s.timeoutSeconds || 5} detik!`,
       targetItem: {
         id: s.id,
         word: s.japaneseOutput,

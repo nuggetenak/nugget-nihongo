@@ -70,14 +70,14 @@ export const HomePage: React.FC = () => {
       lessons: number;
       icon: string;
     }> = [
-      { id: 'n5', label: 'JLPT N5', badge: 'Akses Lemma (PT-1)', units: 10, lessons: 20, icon: '🌱' },
-      { id: 'n4', label: 'JLPT N4', badge: 'Kategori Frasa (PT-2)', units: 10, lessons: 20, icon: '📘' },
-      { id: 'n3', label: 'JLPT N3', badge: 'Prosedur Kalimat (PT-4)', units: 12, lessons: 25, icon: '📙' },
-      { id: 'n2', label: 'JLPT N2', badge: 'Klausa Subordinat (PT-5)', units: 12, lessons: 25, icon: '📕' },
-      { id: 'n1', label: 'JLPT N1', badge: 'Variasi Pragmatis (PT-6)', units: 10, lessons: 20, icon: '👑' },
-      { id: 'ssw-kaigo', label: 'SSW Kaigo', badge: 'Perawat Lansia SBAR', units: 8, lessons: 18, icon: '🏥' },
-      { id: 'ssw-food', label: 'SSW Restoran', badge: 'Higiene & HACCP', units: 6, lessons: 14, icon: '🍳' },
-      { id: 'ssw-construction', label: 'SSW Konstruksi', badge: 'K3 Gemba & KYT', units: 6, lessons: 13, icon: '🦺' },
+      { id: 'n5', label: 'JLPT N5', badge: 'Dasar & Kosakata Pemula', units: 10, lessons: 20, icon: '🌱' },
+      { id: 'n4', label: 'JLPT N4', badge: 'Tata Bahasa Sehari-hari', units: 10, lessons: 20, icon: '📘' },
+      { id: 'n3', label: 'JLPT N3', badge: 'Percakapan Menengah', units: 12, lessons: 25, icon: '📙' },
+      { id: 'n2', label: 'JLPT N2', badge: 'Tingkat Mahir & Kerja', units: 12, lessons: 25, icon: '📕' },
+      { id: 'n1', label: 'JLPT N1', badge: 'Ahli & Nuansa Alami', units: 10, lessons: 20, icon: '👑' },
+      { id: 'ssw-kaigo', label: 'SSW Kaigo', badge: 'Perawat Lansia & Medis', units: 8, lessons: 18, icon: '🏥' },
+      { id: 'ssw-food', label: 'SSW Restoran', badge: 'Restoran & Pengolahan', units: 6, lessons: 14, icon: '🍳' },
+      { id: 'ssw-construction', label: 'SSW Konstruksi', badge: 'Konstruksi & K3 Kerja', units: 6, lessons: 13, icon: '🦺' },
     ];
 
     return list.map((trk) => {
@@ -288,14 +288,14 @@ export const HomePage: React.FC = () => {
               <div className="flex items-center justify-between">
                 <span className="text-xl">🎯</span>
                 <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-500/15 text-accent-hot border border-amber-500/25">
-                  10 Soal IRT
+                  10 Soal Kilat
                 </span>
               </div>
               <h3 className="text-sm font-bold text-appText-bright group-hover:text-accent transition-colors">
                 Sudah Punya Dasar?
               </h3>
               <p className="text-[11px] text-appText-muted leading-relaxed">
-                Uji kemampuanmu lewat Tes Penempatan Mandiri (CAT). Sistem akan mendiagnosis level JLPT-mu secara adaptif.
+                Uji kemampuanmu lewat Tes Penempatan Mandiri. Sistem akan menentukan rekomendasi level belajarmu secara akurat.
               </p>
             </div>
             <button

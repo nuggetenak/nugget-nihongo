@@ -130,7 +130,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                             meaning_id: vb.meaning,
                           })
                         }
-                        className="min-h-[40px] min-w-[40px] p-2 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-amber-300 transition-colors flex items-center justify-center active:scale-95"
+                        className="min-h-[40px] min-w-[40px] p-2 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-amber-800 dark:text-amber-300 transition-colors flex items-center justify-center active:scale-95"
                         title={`Tanya Sensei tentang kata ${vb.word}`}
                         aria-label={`Tanya Sensei tentang kata ${vb.word}`}
                       >
@@ -167,8 +167,8 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                   )}
 
                   {vb.particleTip && (
-                    <div className="text-[11px] text-amber-300/90 bg-amber-500/10 p-2 rounded-xl border border-amber-500/20 font-medium">
-                      🔗 <strong className="text-amber-200">Pasangan Partikel:</strong> {vb.particleTip}
+                    <div className="text-[11px] text-amber-800 dark:text-amber-200 bg-amber-500/15 dark:bg-amber-500/20 p-2 rounded-xl border border-amber-500/30 font-medium">
+                      🔗 <strong className="text-amber-900 dark:text-amber-200">Pasangan Partikel:</strong> {vb.particleTip}
                     </div>
                   )}
                 </div>
@@ -481,7 +481,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                 key={pfIdx}
                 className="p-4 sm:p-5 rounded-2xl bg-surface border border-red-500/20 space-y-2.5 shadow-sm"
               >
-                <div className="font-bold text-xs sm:text-sm text-red-300 flex items-center gap-1.5">
+                <div className="font-bold text-xs sm:text-sm text-red-700 dark:text-red-300 flex items-center gap-1.5">
                   <span>⚡</span>
                   <span>{pf.title}</span>
                 </div>
@@ -493,13 +493,13 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                 )}
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-mono">
-                  <div className="p-2.5 rounded-xl bg-red-500/10 border border-red-500/25 text-red-300 flex items-start gap-2">
-                    <X className="w-4 h-4 text-red-400 shrink-0 mt-0.5" />
-                    <span className="break-words">{pf.pitfallWarning}</span>
+                  <div className="p-2.5 rounded-xl bg-red-500/10 border border-red-500/25 text-red-800 dark:text-red-300 flex items-start gap-2">
+                    <X className="w-4 h-4 text-red-500 shrink-0 mt-0.5" />
+                    <span className="break-words">{pf.pitfallWarning?.replace(/^[❌✅✔]\s*/, '')}</span>
                   </div>
-                  <div className="p-2.5 rounded-xl bg-emerald-500/10 border border-emerald-500/25 text-emerald-300 flex items-start gap-2">
-                    <Check className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                    <span className="break-words">{pf.rightSolution}</span>
+                  <div className="p-2.5 rounded-xl bg-emerald-500/10 border border-emerald-500/25 text-emerald-800 dark:text-emerald-300 flex items-start gap-2">
+                    <Check className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
+                    <span className="break-words">{pf.rightSolution?.replace(/^[❌✅✔]\s*/, '')}</span>
                   </div>
                 </div>
 

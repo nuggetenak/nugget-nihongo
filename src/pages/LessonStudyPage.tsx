@@ -342,7 +342,7 @@ export const LessonStudyPage: React.FC = () => {
             if (activeStage === 'cando') setActiveStage('drills');
             window.scrollTo({ top: 0, behavior: 'smooth' });
           }}
-          className="min-h-[44px] px-4 py-2 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/20 text-xs font-bold text-appText-muted hover:text-appText-bright disabled:opacity-30 disabled:pointer-events-none transition-all active:scale-95"
+          className="min-h-[44px] px-4 py-2 rounded-xl bg-surface hover:bg-surface-2 border border-accent/30 text-xs font-bold text-appText hover:text-appText-bright disabled:opacity-30 disabled:pointer-events-none shadow-sm transition-all active:scale-95"
         >
           ← Tahap Sebelumnya
         </button>

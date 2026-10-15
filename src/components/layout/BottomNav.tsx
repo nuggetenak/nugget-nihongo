@@ -13,7 +13,7 @@ export const BottomNav: React.FC = () => {
   const items: Array<{ id: AppState['activeTab']; label: string; icon: React.ReactNode }> = [
     { id: 'home', label: 'Beranda', icon: <Home className="w-5 h-5" /> },
     { id: 'materi', label: 'Materi', icon: <BookOpen className="w-5 h-5" /> },
-    { id: 'quiz', label: 'Latihan', icon: <Layers className="w-5 h-5" /> },
+    { id: 'quiz', label: 'Arena Kuis', icon: <Layers className="w-5 h-5" /> },
     { id: 'sensei', label: 'Sensei AI', icon: <Sparkles className="w-5 h-5" /> },
   ];
 

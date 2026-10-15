@@ -341,25 +341,25 @@ export const SettingsPage: React.FC = () => {
               id: 'general_indonesian' as L1Substratum,
               title: 'Bahasa Indonesia Umum',
               badge: 'Umum',
-              desc: 'Fokus interferensi dasar struktur SVO vs SOV, partikel wa/ga, dan jebakan kopula adalah.',
+              desc: 'Fokus pada perbedaan urutan kalimat Indonesia vs Jepang, partikel wa/ga, dan kata "adalah".',
             },
             {
               id: 'javanese' as L1Substratum,
               title: 'Logat Jawa',
               badge: 'Jawa',
-              desc: 'Pemberat konsonan plosif b/d/g, kecenderungan pemanjangan vokal chōon, & partikel penegas.',
+              desc: 'Latihan pengucapan bunyi b/d/g, panjang-pendek vokal, dan intonasi penegas.',
             },
             {
               id: 'sundanese' as L1Substratum,
               title: 'Logat Sunda',
               badge: 'Sunda',
-              desc: 'Netralisasi konsonan f/p/v, vokal sentral /ə/, & kelembutan intonasi.',
+              desc: 'Latihan membedakan bunyi f/p/v, vokal, dan intonasi lembut khas bahasa Jepang.',
             },
             {
               id: 'batak_eastern' as L1Substratum,
               title: 'Logat Batak & Indonesia Timur',
               badge: 'Batak / Timur',
-              desc: 'Ritme suku kata bertekanan, intonasi dinamis vs nada Tokyo heiban (datar).',
+              desc: 'Latihan menyesuaikan ritme ketukan mora dan pola nada datar (Heiban) khas Tokyo.',
             },
           ].map((item) => {
             const isSelected = userSubstratum === item.id;
@@ -370,11 +370,11 @@ export const SettingsPage: React.FC = () => {
                   setUserSubstratum(item.id);
                   useCurriculumStore.getState().setUserSubstratum(item.id);
                   if (soundEffects) playSuccessSfx();
-                  showToast(`Substratum dialek disetel ke: ${item.title}`, '🗣️');
+                  showToast(`Penyesuaian logat disetel ke: ${item.title}`, '🗣️');
                 }}
                 className={`p-4 rounded-xl border text-left transition-colors flex items-start gap-3 min-h-[56px] active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
                   isSelected
-                    ? 'bg-amber-950/40 border-amber-500/60 shadow-sm'
+                    ? 'bg-amber-500/15 dark:bg-amber-950/40 border-amber-500/60 shadow-sm'
                     : 'bg-surface-2 border-accent/20 hover:border-accent/40 hover:bg-surface-3'
                 }`}
               >

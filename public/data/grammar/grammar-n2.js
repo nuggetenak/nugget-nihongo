@@ -1030,7 +1030,7 @@ window.grammarN2 = [
   desc: '<b>〜こむ</b> sebagai sufiks verba majemuk mengandung dua makna utama: (1) masuk ke dalam suatu ruang atau kondisi secara fisik (押し込む, 飛び込む); dan (2) melakukan sesuatu secara intensif, mendalam, atau hingga terbenam — termasuk keyakinan atau pemikiran yang tertanam kuat (思い込む, 信じ込む). Sufiks ini sangat produktif dalam bahasa Jepang.',
   nuance: null,
   examples: [
-    { jp: '彼は自分が絶対に正しいと思い<b>こんでいる</b>。', id: 'Dia sudah terlanjur yakin sekali bahwa dirinya pasti benar.' },
+    { jp: '彼は自分が絶対に正しいと思い<b>こんでいる</b>。', id: 'Dia sudah telanjur yakin sekali bahwa dirinya pasti benar.' },
     { jp: 'ノートにポイントをしっかり書き<b>こんで</b>おいた。', id: 'Aku sudah menuliskan poin-poin penting secara lengkap di buku catatan.' },
   ],
   see_also_grammar: [],
@@ -3381,7 +3381,7 @@ window.grammarN2 = [
 
 {
   id: 'gn2-00088', level: 'n2', pattern: '〜手前', reading: '〜temae',
-  meaning: 'karena sudah terlanjur ... di depan orang, tidak bisa mundur',
+  meaning: 'karena sudah telanjur ... di depan orang, tidak bisa mundur',
   cat: 'reason-cause',
   connection: 'V-dict / V-ta / N + の + 手前',
   desc: '<b>〜手前</b> menyatakan bahwa karena pembicara sudah mengatakan atau melakukan sesuatu di depan orang lain, ada tekanan sosial untuk menjaga konsistensi — tidak bisa mundur karena menjaga muka atau wibawa.',

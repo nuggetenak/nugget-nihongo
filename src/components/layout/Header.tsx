@@ -15,15 +15,13 @@ interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onOpenShortcuts, onOpenMobileDrawer, onOpenToolbox }) => {
   const {
-    streak, xp, selectedLevel, setSelectedLevel,
+    streak, xp,
     showFurigana, setShowFurigana,
     showRomaji, setShowRomaji, showToast,
     openFeatureGuide, setActiveTab, openToolbox
   } = useAppStore();
   const { isInstalled, setShowInstallModal } = usePwaStore();
   const { user, syncStatus, openAuthModal, syncNow } = useAuthStore();
-
-  const levels: (JLPTLevel | 'all')[] = ['all', 'n5', 'n4', 'n3', 'n2', 'n1'];
 
   return (
     <header className="sticky top-0 z-30 bg-surface/90 backdrop-blur-md border-b border-accent/15 px-2.5 sm:px-6 lg:px-8 py-2.5 sm:py-3 flex items-center justify-between gap-2 sm:gap-4 max-w-full overflow-hidden">
@@ -60,26 +58,6 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onOpenShortcuts, o
         <kbd className="hidden sm:inline-block absolute right-2.5 top-1/2 -translate-y-1/2 text-[10px] font-mono bg-surface-3/80 text-appText-muted px-1.5 py-0.5 rounded border border-accent/15">
           ⌘K
         </kbd>
-      </div>
-
-      {/* Level Filters (Desktop/Tablet) */}
-      <div className="hidden md:flex items-center gap-1 bg-surface-2 p-1 rounded-xl border border-accent/15">
-        {levels.map((lvl) => {
-          const isSelected = selectedLevel === lvl;
-          return (
-            <button
-              key={lvl}
-              onClick={() => setSelectedLevel(lvl)}
-              className={`px-2.5 py-1 text-xs font-bold rounded-lg transition-all uppercase ${
-                isSelected
-                  ? 'bg-accent text-bg font-extrabold shadow-sm'
-                  : 'text-appText-muted hover:text-appText-bright'
-              }`}
-            >
-              {lvl}
-            </button>
-          );
-        })}
       </div>
 
       {/* Quick Furigana & Romaji Toggles (Desktop only) */}

@@ -3012,7 +3012,7 @@ window.vocabN4 = [
   lawan_bicara: [],
   nuance: '悩む = dilema/pusing memikirkan masalah. 悩み = kekhawatiran/masalah batin.',
   conj_type: 'godan',
-  examples: [{"jp": "進路について悩んでいます。", "id": "Saya sedang pusing memikirkan pilihan karir.", "level": "n4", "tags": ["emosi", "keputusan"]}],
+  examples: [{"jp": "進路について悩んでいます。", "id": "Saya sedang pusing memikirkan pilihan karier.", "level": "n4", "tags": ["emosi", "keputusan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -5129,7 +5129,7 @@ window.vocabN4 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: 'suru',
-  examples: [{"jp":"将来の進路について担任の先生に相談しました。","id":"Saya berembuk membicarakan arah kelanjutan karir dengan wali pengajar.","level":"n4","tags":["pendidikan"]},{"jp":"一人で悩まないで何でも友達に相談してください。","id":"Jangan memendam nestapa seorang diri, berbicaralah luwes dengan teman.","level":"n4","tags":["pertemanan"]}],
+  examples: [{"jp":"将来の進路について担任の先生に相談しました。","id":"Saya berembuk membicarakan arah kelanjutan karier dengan wali pengajar.","level":"n4","tags":["pendidikan"]},{"jp":"一人で悩まないで何でも友達に相談してください。","id":"Jangan memendam nestapa seorang diri, berbicaralah luwes dengan teman.","level":"n4","tags":["pertemanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -5883,7 +5883,7 @@ window.vocabN4 = [
   lawan_bicara: [],
   nuance: null,
   conj_type: 'suru',
-  examples: [{"jp":"買わなかった限定の商品が売り切れて後悔しました。","id":"Saya terlanjur menyesal karena pernak-pernik incaran edisi khusus itu ludes terjual.","level":"n4","tags":["belanja"]},{"jp":"若い時にもっと一生懸命勉強すればよかったと後悔しています。","id":"Saya menyesali diri, mengandaikan dahulu tekun belajar semasa masih usia muda.","level":"n4","tags":["pendidikan"]}],
+  examples: [{"jp":"買わなかった限定の商品が売り切れて後悔しました。","id":"Saya telanjur menyesal karena pernak-pernik incaran edisi khusus itu ludes terjual.","level":"n4","tags":["belanja"]},{"jp":"若い時にもっと一生懸命勉強すればよかったと後悔しています。","id":"Saya menyesali diri, mengandaikan dahulu tekun belajar semasa masih usia muda.","level":"n4","tags":["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -6923,7 +6923,7 @@ window.vocabN4 = [
     },
     {
       "jp": "些細なことで友達とけんかしてしまったので早く謝りたいです。",
-      "id": "Karena terlanjur bertengkar dengan teman akibat masalah sepele, saya ingin lekas meminta maaf.",
+      "id": "Karena telanjur bertengkar dengan teman akibat masalah sepele, saya ingin lekas meminta maaf.",
       "level": "n4",
       "tags": [
         "pertemanan",
@@ -7335,7 +7335,7 @@ window.vocabN4 = [
   "word": "～(て) しまう",
   "reading": "～(て) しまう",
   "romaji": "~(te) shimau",
-  "meaning_id": "terlanjur ~, tuntas melakukan ~",
+  "meaning_id": "telanjur ~, tuntas melakukan ~",
   "meaning_en": "to end up doing; to do accidentally; to finish completely",
   "jlpt": "n4",
   "pos": "verb-u",
@@ -7353,12 +7353,12 @@ window.vocabN4 = [
     "rekan",
     "umum"
   ],
-  "nuance": "Bentuk tata bahasa kata kerja bantu godan setelah bentuk -te. Memiliki dua nuansa utama: (1) menyatakan penyesalan atau kekecewaan atas perbuatan yang tidak disengaja/terlanjur terjadi; (2) menyelesaikan suatu perbuatan sampai tuntas. Dalam percakapan kasual sering disingkat menjadi ～ちゃう atau ～じゃう.",
+  "nuance": "Bentuk tata bahasa kata kerja bantu godan setelah bentuk -te. Memiliki dua nuansa utama: (1) menyatakan penyesalan atau kekecewaan atas perbuatan yang tidak disengaja/telanjur terjadi; (2) menyelesaikan suatu perbuatan sampai tuntas. Dalam percakapan kasual sering disingkat menjadi ～ちゃう atau ～じゃう.",
   "conj_type": "godan",
   "examples": [
     {
       "jp": "買ったばかりの大切な切符をどこかに落としてしまいました。",
-      "id": "Saya terlanjur menjatuhkan tiket berharga yang baru saja dibeli di suatu tempat.",
+      "id": "Saya telanjur menjatuhkan tiket berharga yang baru saja dibeli di suatu tempat.",
       "level": "n4",
       "tags": [
         "kejadian",

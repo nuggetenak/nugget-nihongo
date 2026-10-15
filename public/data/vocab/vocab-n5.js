@@ -5502,7 +5502,7 @@ window.vocabN5 = [
     "rekan",
     "umum"
   ],
-  "nuance": "Kata kerja godan transitif (五段動詞). Digunakan untuk menghirup udara/nafas (息を吸う) serta menghisap rokok (たばこを吸う). Dalam konteks tes JLPT N5, kata ini paling sering muncul dalam larangan merokok (吸わないでください).",
+  "nuance": "Kata kerja godan transitif (五段動詞). Digunakan untuk menghirup udara/napas (息を吸う) serta menghisap rokok (たばこを吸う). Dalam konteks tes JLPT N5, kata ini paling sering muncul dalam larangan merokok (吸わないでください).",
   "conj_type": "godan",
   "examples": [
     {

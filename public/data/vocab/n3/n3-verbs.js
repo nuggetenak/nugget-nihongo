@@ -3825,7 +3825,7 @@ window.vocabN3_Verbs = [
   "examples": [
     {
       "jp": "人気のラーメン店の前に長い列が並んでいた。",
-      "id": "Ada antrian panjang di depan restoran ramen yang terkenal.",
+      "id": "Ada antrean panjang di depan restoran ramen yang terkenal.",
       "level": "n3",
       "tags": [
         "makanan-minuman"
@@ -26322,7 +26322,7 @@ window.vocabN3_Verbs = [
   "lawan_bicara": [
     "umum"
   ],
-  "nuance": "Menekankan komponen latihan atau praktek aktif — di universitas Jepang merujuk pada kelas seminar kecil di mana mahasiswa berdiskusi atau mengerjakan soal bersama. Berbeda dari 講義 yang pasif-mendengarkan; 演習 menuntut partisipasi aktif dari peserta.",
+  "nuance": "Menekankan komponen latihan atau praktik aktif — di universitas Jepang merujuk pada kelas seminar kecil di mana mahasiswa berdiskusi atau mengerjakan soal bersama. Berbeda dari 講義 yang pasif-mendengarkan; 演習 menuntut partisipasi aktif dari peserta.",
   "conj_type": "suru",
   "examples": [
     {
@@ -43130,7 +43130,7 @@ window.vocabN3_Verbs = [
     "rekan",
     "umum"
   ],
-  "nuance": "Istilah fisiologis untuk aktivitas bernapas menghirup dan mengeluarkan udara (seperti 深呼吸する). Dapat pula digunakan secara kiasan untuk kekompakan ritme antaranggota (seperti 呼吸が合う). Berbeda dengan '息' (iki) yang merupakan kosa kata asli Jepang sehari-hari untuk napas fisik.",
+  "nuance": "Istilah fisiologis untuk aktivitas bernapas menghirup dan mengeluarkan udara (seperti 深呼吸する). Dapat pula digunakan secara kiasan untuk kekompakan ritme antaranggota (seperti 呼吸が合う). Berbeda dengan '息' (iki) yang merupakan kosakata asli Jepang sehari-hari untuk napas fisik.",
   "conj_type": "suru",
   "examples": [
     {
@@ -54260,7 +54260,7 @@ window.vocabN3_Verbs = [
   "examples": [
     {
       "jp": "友達とおしゃべりに夢中になって歩いていたら、曲がるはずの角を通り過ぎてしまった。",
-      "id": "Karena keasyikan mengobrol dengan kawan saat melangkah, saya terlanjur melewati tikungan yang semestinya saya belok.",
+      "id": "Karena keasyikan mengobrol dengan kawan saat melangkah, saya telanjur melewati tikungan yang semestinya saya belok.",
       "level": "n3",
       "tags": [
         "perjalanan",
