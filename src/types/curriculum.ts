@@ -151,14 +151,14 @@ export interface LessonPedagogicalFramework {
 
 export interface CurriculumLesson {
   id: string; // e.g., "les-n5-u01-01"
-  unit_id: string; // e.g., "unit-n5-01"
+  unit_id?: string; // e.g., "unit-n5-01"
   lesson_number: number;
   title_id: string;
   title_jp: string;
   desc_id: string;
   can_do_statement: string;
   grammar_ids: string[];
-  vocab_ids: string[];
+  vocab_ids?: string[];
   l2d_contrastive_tags?: string[];
   estimated_minutes?: number;
 

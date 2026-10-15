@@ -1,0 +1,776 @@
+{
+  "meta": {
+    "track_id": "curriculum-ssw-shipbuilding",
+    "title": "Kurikulum SSW Perkapalan & Kemaritiman (Zousen)",
+    "sector": "造船・舶用工業",
+    "version": "1.2.0",
+    "total_units": 4,
+    "authoritative": true
+  },
+  "units": [
+    {
+      "unit_number": 1,
+      "id": "unit-curriculum-ssw-shipbuilding-01",
+      "level": "n4_ssw",
+      "pt_stage": 3,
+      "title_id": "Penyambungan Plat Lambung Kapal (Ship Hull Fitting)",
+      "title_jp": "船体ブロックのぎ装・構造組立",
+      "theme": "Hull Fitting",
+      "icon": "🚢",
+      "can_do_summary": "Mampu mengukur kelurusan pelat baja lambung kapal, memasang klem pengunci, dan tack-welding.",
+      "l2d_focus_notes": "Pemasangan harness tali pengaman (Full-body safety harness) saat bekerja di ketinggian dok kapal.",
+      "grammar_ids": [
+        "gn4-00021",
+        "gn4-00028"
+      ],
+      "vocab_ids": [
+        "v-ssw-shipbuilding-001",
+        "v-ssw-shipbuilding-002",
+        "v-ssw-shipbuilding-003"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-ssw-shipbuilding-u01-01",
+          "lesson_number": 1,
+          "title_id": "Penyambungan Plat Lambung Kapal (Ship Hull Fitting) (SOP & Terminologi Kerja)",
+          "title_jp": "船体ブロックのぎ装・構造組立（手順と専門用語）",
+          "desc_id": "Standar operasional prosedur resmi, kosakata kunci, dan protokol kerja di tempat kerja Jepang.",
+          "can_do_statement": "Mampu mengukur kelurusan pelat baja lambung kapal, memasang klem pengunci, dan tack-welding.",
+          "grammar_ids": [
+            "gn4-00021"
+          ],
+          "vocab_ids": [
+            "v-ssw-shipbuilding-001",
+            "v-ssw-shipbuilding-002"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Penguasaan istilah operasional dan komunikasi sopan dalam bidang 造船・舶用工業.",
+              "canDo": "Mampu mengukur kelurusan pelat baja lambung kapal, memasang klem pengunci, dan tack-welding.",
+              "targetPatterns": [
+                "〜てください",
+                "〜てもいいですか"
+              ],
+              "coreVocabSample": [
+                "v-ssw-shipbuilding-001"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang bertugas di stasiun kerja bidang 造船・舶用工業 di Jepang. Mandor (Koujoucho / Shunin) memberikan instruksi shift pagi ini.",
+              "dailyMission": "Mampu mengukur kelurusan pelat baja lambung kapal, memasang klem pengunci, dan tack-welding.",
+              "whyOrder": "Pondasi keselamatan kerja Jepang selalu diawali dari pemahaman instruksi lisan di tempat kerja."
+            },
+            "cultural_notes": {
+              "title": "Budaya Keselamatan Kerja & Horenso di Bidang 造船・舶用工業",
+              "etiquette": "Sebelum memulai pekerjaan, ucapkan 'Yoroshiku onegai shimasu' dan pastikan helm keselamatan serta APD terpasang kencang.",
+              "taboos": "Jangan pernah memulai mengoperasikan mesin sebelum ada instruksi 'Yoshi!' dari mandor pendamping."
+            },
+            "pronunciation_tips": {
+              "title": "Tips Pelafalan Aba-Aba Suara Lantang",
+              "moraNote": "Gunakan suara diafragma yang tegas dan jelas saat menjawab perintah atasan.",
+              "soundTip": "Katakan \"Hai, kashikomarimashita\" dengan tegas tanpa ragu-ragu."
+            },
+            "common_pitfalls": [
+              {
+                "title": "Jebakan Asumsi Mandiri (Dokusen)",
+                "caseScenario": "Ragu tentang tombol mesin tetapi mencoba menekan tanpa bertanya.",
+                "pitfallWarning": "❌ Bertindak sendiri tanpa melapor saat ada bunyi aneh pada mesin.",
+                "rightSolution": "✅ Segera hentikan pekerjaan, lapor supervisor: \"Sumimasen, ijin ga arimasu.\"",
+                "explanation": "Prinsip nomor satu pekerja Jepang adalah Horenso (Houkoku, Renraku, Soudan)."
+              }
+            ]
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Atasan (Tanaka-san)",
+              "speakerRole": "Supervisor Kerja",
+              "jp": "作業を始める前に、保護具を確認してください。",
+              "furigana": "さぎょうをはじめるまえに、ほごぐをかくにんしてください。",
+              "romaji": "Sagyou wo hajimeru mae ni, hogogu wo kakunin shite kudasai.",
+              "idText": "Sebelum memulai pekerjaan, tolong pastikan alat pelindung diri Anda sudah terpasang."
+            },
+            {
+              "id": "d2",
+              "speaker": "Anda (Pekerja SSW)",
+              "speakerRole": "Staf Operasional",
+              "jp": "はい、了解いたしました！点検よし！",
+              "furigana": "はい、りょうかいいいたしました！てんけんよし！",
+              "romaji": "Hai, ryoukai itashimashita! Tenken yoshi!",
+              "idText": "Baik, saya mengerti! Pemeriksaan siap/aman!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa tindakan pertama sebelum memulai pekerjaan di sektor 造船・舶用工業?",
+              "options": [
+                "Memeriksa alat pelindung diri (Hogogu) dan konfirmasi aman (Yoshi)",
+                "Langsung menekan tombol mesin tanpa instruksi",
+                "Pergi istirahat makan siang",
+                "Mematikan lampu pabrik"
+              ],
+              "correctAnswer": "Memeriksa alat pelindung diri (Hogogu) dan konfirmasi aman (Yoshi)",
+              "explanation": "SOP keselamatan kerja Jepang mewajibkan pemeriksaan APD sebelum menyentuh peralatan kerja."
+            }
+          ]
+        },
+        {
+          "id": "les-curriculum-ssw-shipbuilding-u01-02",
+          "lesson_number": 2,
+          "title_id": "Penyambungan Plat Lambung Kapal (Ship Hull Fitting) (Simulasi Darurat & Laporan SBAR)",
+          "title_jp": "船体ブロックのぎ装・構造組立（緊急時対応と報告）",
+          "desc_id": "Simulasi tanggap darurat, mitigasi kecelakaan kerja K3, dan teknik pelaporan ringkas kepada atasan.",
+          "can_do_statement": "Mampu melaporkan insiden keselamatan atau kendala operasional dengan cepat dan tepat.",
+          "grammar_ids": [
+            "gn4-00028"
+          ],
+          "vocab_ids": [
+            "v-ssw-shipbuilding-003"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Komunikasi tanggap darurat dan pelaporan cepat saat terjadi kendala.",
+              "canDo": "Bisa melaporkan insiden darurat dengan formula situasi-latar belakang-solusi.",
+              "targetPatterns": [
+                "〜てしまいました",
+                "〜てください"
+              ],
+              "coreVocabSample": [
+                "v-ssw-shipbuilding-003"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Tiba-tiba terjadi ketidaksesuaian operasional di tempat kerja. Kamu harus segera melapor kepada mandor.",
+              "dailyMission": "Menyampaikan laporan kendala kerja dalam 15 detik pertama.",
+              "whyOrder": "Dalam situasi krisis industri Jepang, kecepatan pelaporan menyelamatkan nyawa dan aset pabrik."
+            },
+            "cultural_notes": {
+              "title": "Etika Tanggap Darurat di Tempat Kerja Jepang",
+              "etiquette": "Berbicaralah dengan nada tenang namun tegas, tatap mata supervisor, dan tunjukkan lokasi masalah.",
+              "taboos": "Jangan menyembunyikan kesalahan atau menunda laporan karena takut dimarahi."
+            },
+            "common_pitfalls": [
+              {
+                "title": "Jebakan Menunda Laporan",
+                "caseScenario": "Ada tetesan oli atau baut longgar tapi didiamkan.",
+                "pitfallWarning": "❌ \"Nanti saja lapornya saat jam istirahat siang.\"",
+                "rightSolution": "✅ Segera lapor saat itu juga: \"Shunin, ima yoroshii desu ka.\"",
+                "explanation": "Kecelakaan kerja fatal sering berawal dari kelalaian kecil yang tidak segera dilaporkan."
+              }
+            ]
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Anda (Pekerja SSW)",
+              "speakerRole": "Staf Operasional",
+              "jp": "主任、すみません！機械に異常音が聞こえます。すぐに確認をお願いします。",
+              "furigana": "しゅにん、すみません！きかいにいじょうおんがきこえます。すぐにかくにんをおねがいします。",
+              "romaji": "Shunin, sumimasen! Kikai ni ijouon ga kikoemasu. Sugu ni kakunin wo onegai shimasu.",
+              "idText": "Mandor, permisi! Terdengar suara tidak wajar pada mesin. Mohon segera diperiksa."
+            },
+            {
+              "id": "d2",
+              "speaker": "Mandor (Shunin)",
+              "speakerRole": "Supervisor Kerja",
+              "jp": "よく気づいてくれた！直ちに停止ボタンを押して安全を確保しよう。",
+              "furigana": "よくきづいてくれた！ただちにていしボタンをおしてあんぜんをかくほしよう。",
+              "romaji": "Yoku kizuite kureta! Tadachi ni teishi botan wo oshite anzen wo kakuho shiyou.",
+              "idText": "Terima kasih sudah sigap menyadarinya! Segera tekan tombol berhenti dan amankan lokasi."
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa yang harus dikatakan saat mendengar suara aneh pada mesin kerja?",
+              "options": [
+                "主任、機械に異常音が聞こえます。確認をお願いします。",
+                "大丈夫ですから、そのまま続けましょう。",
+                "明日の朝、報告すればいいです。",
+                "何も聞こえませんでした。"
+              ],
+              "correctAnswer": "主任、機械に異常音が聞こえます。確認をお願いします。",
+              "explanation": "Melaporkan kejanggalan suara mesin secara langsung adalah tindakan keselamatan yang tepat."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 2,
+      "id": "unit-curriculum-ssw-shipbuilding-02",
+      "level": "n4_ssw",
+      "pt_stage": 3,
+      "title_id": "Pengelasan Otomatis Pelat Baja Tebal (Submerged Arc)",
+      "title_jp": "厚板自動溶接と非破壊検査準備",
+      "theme": "Heavy Welding",
+      "icon": "🚢",
+      "can_do_summary": "Mampu mengoperasikan traktor las otomatis untuk menyambung pelat baja dek kapal tebal.",
+      "l2d_focus_notes": "Pengujian visual tidak ada rongga udara (Blowhole) pada alur sambungan las.",
+      "grammar_ids": [
+        "gn4-00021",
+        "gn4-00028"
+      ],
+      "vocab_ids": [
+        "v-ssw-shipbuilding-001",
+        "v-ssw-shipbuilding-002",
+        "v-ssw-shipbuilding-003"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-ssw-shipbuilding-u02-01",
+          "lesson_number": 1,
+          "title_id": "Pengelasan Otomatis Pelat Baja Tebal (Submerged Arc) (SOP & Terminologi Kerja)",
+          "title_jp": "厚板自動溶接と非破壊検査準備（手順と専門用語）",
+          "desc_id": "Standar operasional prosedur resmi, kosakata kunci, dan protokol kerja di tempat kerja Jepang.",
+          "can_do_statement": "Mampu mengoperasikan traktor las otomatis untuk menyambung pelat baja dek kapal tebal.",
+          "grammar_ids": [
+            "gn4-00021"
+          ],
+          "vocab_ids": [
+            "v-ssw-shipbuilding-001",
+            "v-ssw-shipbuilding-002"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Penguasaan istilah operasional dan komunikasi sopan dalam bidang 造船・舶用工業.",
+              "canDo": "Mampu mengoperasikan traktor las otomatis untuk menyambung pelat baja dek kapal tebal.",
+              "targetPatterns": [
+                "〜てください",
+                "〜てもいいですか"
+              ],
+              "coreVocabSample": [
+                "v-ssw-shipbuilding-001"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang bertugas di stasiun kerja bidang 造船・舶用工業 di Jepang. Mandor (Koujoucho / Shunin) memberikan instruksi shift pagi ini.",
+              "dailyMission": "Mampu mengoperasikan traktor las otomatis untuk menyambung pelat baja dek kapal tebal.",
+              "whyOrder": "Pondasi keselamatan kerja Jepang selalu diawali dari pemahaman instruksi lisan di tempat kerja."
+            },
+            "cultural_notes": {
+              "title": "Budaya Keselamatan Kerja & Horenso di Bidang 造船・舶用工業",
+              "etiquette": "Sebelum memulai pekerjaan, ucapkan 'Yoroshiku onegai shimasu' dan pastikan helm keselamatan serta APD terpasang kencang.",
+              "taboos": "Jangan pernah memulai mengoperasikan mesin sebelum ada instruksi 'Yoshi!' dari mandor pendamping."
+            },
+            "pronunciation_tips": {
+              "title": "Tips Pelafalan Aba-Aba Suara Lantang",
+              "moraNote": "Gunakan suara diafragma yang tegas dan jelas saat menjawab perintah atasan.",
+              "soundTip": "Katakan \"Hai, kashikomarimashita\" dengan tegas tanpa ragu-ragu."
+            },
+            "common_pitfalls": [
+              {
+                "title": "Jebakan Asumsi Mandiri (Dokusen)",
+                "caseScenario": "Ragu tentang tombol mesin tetapi mencoba menekan tanpa bertanya.",
+                "pitfallWarning": "❌ Bertindak sendiri tanpa melapor saat ada bunyi aneh pada mesin.",
+                "rightSolution": "✅ Segera hentikan pekerjaan, lapor supervisor: \"Sumimasen, ijin ga arimasu.\"",
+                "explanation": "Prinsip nomor satu pekerja Jepang adalah Horenso (Houkoku, Renraku, Soudan)."
+              }
+            ]
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Atasan (Tanaka-san)",
+              "speakerRole": "Supervisor Kerja",
+              "jp": "作業を始める前に、保護具を確認してください。",
+              "furigana": "さぎょうをはじめるまえに、ほごぐをかくにんしてください。",
+              "romaji": "Sagyou wo hajimeru mae ni, hogogu wo kakunin shite kudasai.",
+              "idText": "Sebelum memulai pekerjaan, tolong pastikan alat pelindung diri Anda sudah terpasang."
+            },
+            {
+              "id": "d2",
+              "speaker": "Anda (Pekerja SSW)",
+              "speakerRole": "Staf Operasional",
+              "jp": "はい、了解いたしました！点検よし！",
+              "furigana": "はい、りょうかいいいたしました！てんけんよし！",
+              "romaji": "Hai, ryoukai itashimashita! Tenken yoshi!",
+              "idText": "Baik, saya mengerti! Pemeriksaan siap/aman!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa tindakan pertama sebelum memulai pekerjaan di sektor 造船・舶用工業?",
+              "options": [
+                "Memeriksa alat pelindung diri (Hogogu) dan konfirmasi aman (Yoshi)",
+                "Langsung menekan tombol mesin tanpa instruksi",
+                "Pergi istirahat makan siang",
+                "Mematikan lampu pabrik"
+              ],
+              "correctAnswer": "Memeriksa alat pelindung diri (Hogogu) dan konfirmasi aman (Yoshi)",
+              "explanation": "SOP keselamatan kerja Jepang mewajibkan pemeriksaan APD sebelum menyentuh peralatan kerja."
+            }
+          ]
+        },
+        {
+          "id": "les-curriculum-ssw-shipbuilding-u02-02",
+          "lesson_number": 2,
+          "title_id": "Pengelasan Otomatis Pelat Baja Tebal (Submerged Arc) (Simulasi Darurat & Laporan SBAR)",
+          "title_jp": "厚板自動溶接と非破壊検査準備（緊急時対応と報告）",
+          "desc_id": "Simulasi tanggap darurat, mitigasi kecelakaan kerja K3, dan teknik pelaporan ringkas kepada atasan.",
+          "can_do_statement": "Mampu melaporkan insiden keselamatan atau kendala operasional dengan cepat dan tepat.",
+          "grammar_ids": [
+            "gn4-00028"
+          ],
+          "vocab_ids": [
+            "v-ssw-shipbuilding-003"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Komunikasi tanggap darurat dan pelaporan cepat saat terjadi kendala.",
+              "canDo": "Bisa melaporkan insiden darurat dengan formula situasi-latar belakang-solusi.",
+              "targetPatterns": [
+                "〜てしまいました",
+                "〜てください"
+              ],
+              "coreVocabSample": [
+                "v-ssw-shipbuilding-003"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Tiba-tiba terjadi ketidaksesuaian operasional di tempat kerja. Kamu harus segera melapor kepada mandor.",
+              "dailyMission": "Menyampaikan laporan kendala kerja dalam 15 detik pertama.",
+              "whyOrder": "Dalam situasi krisis industri Jepang, kecepatan pelaporan menyelamatkan nyawa dan aset pabrik."
+            },
+            "cultural_notes": {
+              "title": "Etika Tanggap Darurat di Tempat Kerja Jepang",
+              "etiquette": "Berbicaralah dengan nada tenang namun tegas, tatap mata supervisor, dan tunjukkan lokasi masalah.",
+              "taboos": "Jangan menyembunyikan kesalahan atau menunda laporan karena takut dimarahi."
+            },
+            "common_pitfalls": [
+              {
+                "title": "Jebakan Menunda Laporan",
+                "caseScenario": "Ada tetesan oli atau baut longgar tapi didiamkan.",
+                "pitfallWarning": "❌ \"Nanti saja lapornya saat jam istirahat siang.\"",
+                "rightSolution": "✅ Segera lapor saat itu juga: \"Shunin, ima yoroshii desu ka.\"",
+                "explanation": "Kecelakaan kerja fatal sering berawal dari kelalaian kecil yang tidak segera dilaporkan."
+              }
+            ]
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Anda (Pekerja SSW)",
+              "speakerRole": "Staf Operasional",
+              "jp": "主任、すみません！機械に異常音が聞こえます。すぐに確認をお願いします。",
+              "furigana": "しゅにん、すみません！きかいにいじょうおんがきこえます。すぐにかくにんをおねがいします。",
+              "romaji": "Shunin, sumimasen! Kikai ni ijouon ga kikoemasu. Sugu ni kakunin wo onegai shimasu.",
+              "idText": "Mandor, permisi! Terdengar suara tidak wajar pada mesin. Mohon segera diperiksa."
+            },
+            {
+              "id": "d2",
+              "speaker": "Mandor (Shunin)",
+              "speakerRole": "Supervisor Kerja",
+              "jp": "よく気づいてくれた！直ちに停止ボタンを押して安全を確保しよう。",
+              "furigana": "よくきづいてくれた！ただちにていしボタンをおしてあんぜんをかくほしよう。",
+              "romaji": "Yoku kizuite kureta! Tadachi ni teishi botan wo oshite anzen wo kakuho shiyou.",
+              "idText": "Terima kasih sudah sigap menyadarinya! Segera tekan tombol berhenti dan amankan lokasi."
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa yang harus dikatakan saat mendengar suara aneh pada mesin kerja?",
+              "options": [
+                "主任、機械に異常音が聞こえます。確認をお願いします。",
+                "大丈夫ですから、そのまま続けましょう。",
+                "明日の朝、報告すればいいです。",
+                "何も聞こえませんでした。"
+              ],
+              "correctAnswer": "主任、機械に異常音が聞こえます。確認をお願いします。",
+              "explanation": "Melaporkan kejanggalan suara mesin secara langsung adalah tindakan keselamatan yang tepat."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 3,
+      "id": "unit-curriculum-ssw-shipbuilding-03",
+      "level": "n4_ssw",
+      "pt_stage": 3,
+      "title_id": "Pemasangan Pipa Ruang Mesin Kapal (Pipe Fitting)",
+      "title_jp": "機関室配管とバルブの据付作業",
+      "theme": "Engine Room Piping",
+      "icon": "🚢",
+      "can_do_summary": "Mampu merangkai sambungan pipa pendingin laut dan mengencangkan flens baut katup valve.",
+      "l2d_focus_notes": "Pemeriksaan kadar oksigen ruang palka sempit tertutup (Confined space entry permit).",
+      "grammar_ids": [
+        "gn4-00021",
+        "gn4-00028"
+      ],
+      "vocab_ids": [
+        "v-ssw-shipbuilding-001",
+        "v-ssw-shipbuilding-002",
+        "v-ssw-shipbuilding-003"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-ssw-shipbuilding-u03-01",
+          "lesson_number": 1,
+          "title_id": "Pemasangan Pipa Ruang Mesin Kapal (Pipe Fitting) (SOP & Terminologi Kerja)",
+          "title_jp": "機関室配管とバルブの据付作業（手順と専門用語）",
+          "desc_id": "Standar operasional prosedur resmi, kosakata kunci, dan protokol kerja di tempat kerja Jepang.",
+          "can_do_statement": "Mampu merangkai sambungan pipa pendingin laut dan mengencangkan flens baut katup valve.",
+          "grammar_ids": [
+            "gn4-00021"
+          ],
+          "vocab_ids": [
+            "v-ssw-shipbuilding-001",
+            "v-ssw-shipbuilding-002"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Penguasaan istilah operasional dan komunikasi sopan dalam bidang 造船・舶用工業.",
+              "canDo": "Mampu merangkai sambungan pipa pendingin laut dan mengencangkan flens baut katup valve.",
+              "targetPatterns": [
+                "〜てください",
+                "〜てもいいですか"
+              ],
+              "coreVocabSample": [
+                "v-ssw-shipbuilding-001"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang bertugas di stasiun kerja bidang 造船・舶用工業 di Jepang. Mandor (Koujoucho / Shunin) memberikan instruksi shift pagi ini.",
+              "dailyMission": "Mampu merangkai sambungan pipa pendingin laut dan mengencangkan flens baut katup valve.",
+              "whyOrder": "Pondasi keselamatan kerja Jepang selalu diawali dari pemahaman instruksi lisan di tempat kerja."
+            },
+            "cultural_notes": {
+              "title": "Budaya Keselamatan Kerja & Horenso di Bidang 造船・舶用工業",
+              "etiquette": "Sebelum memulai pekerjaan, ucapkan 'Yoroshiku onegai shimasu' dan pastikan helm keselamatan serta APD terpasang kencang.",
+              "taboos": "Jangan pernah memulai mengoperasikan mesin sebelum ada instruksi 'Yoshi!' dari mandor pendamping."
+            },
+            "pronunciation_tips": {
+              "title": "Tips Pelafalan Aba-Aba Suara Lantang",
+              "moraNote": "Gunakan suara diafragma yang tegas dan jelas saat menjawab perintah atasan.",
+              "soundTip": "Katakan \"Hai, kashikomarimashita\" dengan tegas tanpa ragu-ragu."
+            },
+            "common_pitfalls": [
+              {
+                "title": "Jebakan Asumsi Mandiri (Dokusen)",
+                "caseScenario": "Ragu tentang tombol mesin tetapi mencoba menekan tanpa bertanya.",
+                "pitfallWarning": "❌ Bertindak sendiri tanpa melapor saat ada bunyi aneh pada mesin.",
+                "rightSolution": "✅ Segera hentikan pekerjaan, lapor supervisor: \"Sumimasen, ijin ga arimasu.\"",
+                "explanation": "Prinsip nomor satu pekerja Jepang adalah Horenso (Houkoku, Renraku, Soudan)."
+              }
+            ]
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Atasan (Tanaka-san)",
+              "speakerRole": "Supervisor Kerja",
+              "jp": "作業を始める前に、保護具を確認してください。",
+              "furigana": "さぎょうをはじめるまえに、ほごぐをかくにんしてください。",
+              "romaji": "Sagyou wo hajimeru mae ni, hogogu wo kakunin shite kudasai.",
+              "idText": "Sebelum memulai pekerjaan, tolong pastikan alat pelindung diri Anda sudah terpasang."
+            },
+            {
+              "id": "d2",
+              "speaker": "Anda (Pekerja SSW)",
+              "speakerRole": "Staf Operasional",
+              "jp": "はい、了解いたしました！点検よし！",
+              "furigana": "はい、りょうかいいいたしました！てんけんよし！",
+              "romaji": "Hai, ryoukai itashimashita! Tenken yoshi!",
+              "idText": "Baik, saya mengerti! Pemeriksaan siap/aman!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa tindakan pertama sebelum memulai pekerjaan di sektor 造船・舶用工業?",
+              "options": [
+                "Memeriksa alat pelindung diri (Hogogu) dan konfirmasi aman (Yoshi)",
+                "Langsung menekan tombol mesin tanpa instruksi",
+                "Pergi istirahat makan siang",
+                "Mematikan lampu pabrik"
+              ],
+              "correctAnswer": "Memeriksa alat pelindung diri (Hogogu) dan konfirmasi aman (Yoshi)",
+              "explanation": "SOP keselamatan kerja Jepang mewajibkan pemeriksaan APD sebelum menyentuh peralatan kerja."
+            }
+          ]
+        },
+        {
+          "id": "les-curriculum-ssw-shipbuilding-u03-02",
+          "lesson_number": 2,
+          "title_id": "Pemasangan Pipa Ruang Mesin Kapal (Pipe Fitting) (Simulasi Darurat & Laporan SBAR)",
+          "title_jp": "機関室配管とバルブの据付作業（緊急時対応と報告）",
+          "desc_id": "Simulasi tanggap darurat, mitigasi kecelakaan kerja K3, dan teknik pelaporan ringkas kepada atasan.",
+          "can_do_statement": "Mampu melaporkan insiden keselamatan atau kendala operasional dengan cepat dan tepat.",
+          "grammar_ids": [
+            "gn4-00028"
+          ],
+          "vocab_ids": [
+            "v-ssw-shipbuilding-003"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Komunikasi tanggap darurat dan pelaporan cepat saat terjadi kendala.",
+              "canDo": "Bisa melaporkan insiden darurat dengan formula situasi-latar belakang-solusi.",
+              "targetPatterns": [
+                "〜てしまいました",
+                "〜てください"
+              ],
+              "coreVocabSample": [
+                "v-ssw-shipbuilding-003"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Tiba-tiba terjadi ketidaksesuaian operasional di tempat kerja. Kamu harus segera melapor kepada mandor.",
+              "dailyMission": "Menyampaikan laporan kendala kerja dalam 15 detik pertama.",
+              "whyOrder": "Dalam situasi krisis industri Jepang, kecepatan pelaporan menyelamatkan nyawa dan aset pabrik."
+            },
+            "cultural_notes": {
+              "title": "Etika Tanggap Darurat di Tempat Kerja Jepang",
+              "etiquette": "Berbicaralah dengan nada tenang namun tegas, tatap mata supervisor, dan tunjukkan lokasi masalah.",
+              "taboos": "Jangan menyembunyikan kesalahan atau menunda laporan karena takut dimarahi."
+            },
+            "common_pitfalls": [
+              {
+                "title": "Jebakan Menunda Laporan",
+                "caseScenario": "Ada tetesan oli atau baut longgar tapi didiamkan.",
+                "pitfallWarning": "❌ \"Nanti saja lapornya saat jam istirahat siang.\"",
+                "rightSolution": "✅ Segera lapor saat itu juga: \"Shunin, ima yoroshii desu ka.\"",
+                "explanation": "Kecelakaan kerja fatal sering berawal dari kelalaian kecil yang tidak segera dilaporkan."
+              }
+            ]
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Anda (Pekerja SSW)",
+              "speakerRole": "Staf Operasional",
+              "jp": "主任、すみません！機械に異常音が聞こえます。すぐに確認をお願いします。",
+              "furigana": "しゅにん、すみません！きかいにいじょうおんがきこえます。すぐにかくにんをおねがいします。",
+              "romaji": "Shunin, sumimasen! Kikai ni ijouon ga kikoemasu. Sugu ni kakunin wo onegai shimasu.",
+              "idText": "Mandor, permisi! Terdengar suara tidak wajar pada mesin. Mohon segera diperiksa."
+            },
+            {
+              "id": "d2",
+              "speaker": "Mandor (Shunin)",
+              "speakerRole": "Supervisor Kerja",
+              "jp": "よく気づいてくれた！直ちに停止ボタンを押して安全を確保しよう。",
+              "furigana": "よくきづいてくれた！ただちにていしボタンをおしてあんぜんをかくほしよう。",
+              "romaji": "Yoku kizuite kureta! Tadachi ni teishi botan wo oshite anzen wo kakuho shiyou.",
+              "idText": "Terima kasih sudah sigap menyadarinya! Segera tekan tombol berhenti dan amankan lokasi."
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa yang harus dikatakan saat mendengar suara aneh pada mesin kerja?",
+              "options": [
+                "主任、機械に異常音が聞こえます。確認をお願いします。",
+                "大丈夫ですから、そのまま続けましょう。",
+                "明日の朝、報告すればいいです。",
+                "何も聞こえませんでした。"
+              ],
+              "correctAnswer": "主任、機械に異常音が聞こえます。確認をお願いします。",
+              "explanation": "Melaporkan kejanggalan suara mesin secara langsung adalah tindakan keselamatan yang tepat."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 4,
+      "id": "unit-curriculum-ssw-shipbuilding-04",
+      "level": "n4_ssw",
+      "pt_stage": 3,
+      "title_id": "Pengecatan Lambung Kapal Anti-Teritip (Antifouling)",
+      "title_jp": "船体サンドブラストと防汚塗装",
+      "theme": "Blasting & Coating",
+      "icon": "🚢",
+      "can_do_summary": "Mampu menyemprotkan pasir grit blasting untuk merontokkan karat dan mengecat lambung luar bawah air.",
+      "l2d_focus_notes": "Pemakaian helm air-fed helmet bertekanan udara bersih saat sandblasting.",
+      "grammar_ids": [
+        "gn4-00021",
+        "gn4-00028"
+      ],
+      "vocab_ids": [
+        "v-ssw-shipbuilding-001",
+        "v-ssw-shipbuilding-002",
+        "v-ssw-shipbuilding-003"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-ssw-shipbuilding-u04-01",
+          "lesson_number": 1,
+          "title_id": "Pengecatan Lambung Kapal Anti-Teritip (Antifouling) (SOP & Terminologi Kerja)",
+          "title_jp": "船体サンドブラストと防汚塗装（手順と専門用語）",
+          "desc_id": "Standar operasional prosedur resmi, kosakata kunci, dan protokol kerja di tempat kerja Jepang.",
+          "can_do_statement": "Mampu menyemprotkan pasir grit blasting untuk merontokkan karat dan mengecat lambung luar bawah air.",
+          "grammar_ids": [
+            "gn4-00021"
+          ],
+          "vocab_ids": [
+            "v-ssw-shipbuilding-001",
+            "v-ssw-shipbuilding-002"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Penguasaan istilah operasional dan komunikasi sopan dalam bidang 造船・舶用工業.",
+              "canDo": "Mampu menyemprotkan pasir grit blasting untuk merontokkan karat dan mengecat lambung luar bawah air.",
+              "targetPatterns": [
+                "〜てください",
+                "〜てもいいですか"
+              ],
+              "coreVocabSample": [
+                "v-ssw-shipbuilding-001"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang bertugas di stasiun kerja bidang 造船・舶用工業 di Jepang. Mandor (Koujoucho / Shunin) memberikan instruksi shift pagi ini.",
+              "dailyMission": "Mampu menyemprotkan pasir grit blasting untuk merontokkan karat dan mengecat lambung luar bawah air.",
+              "whyOrder": "Pondasi keselamatan kerja Jepang selalu diawali dari pemahaman instruksi lisan di tempat kerja."
+            },
+            "cultural_notes": {
+              "title": "Budaya Keselamatan Kerja & Horenso di Bidang 造船・舶用工業",
+              "etiquette": "Sebelum memulai pekerjaan, ucapkan 'Yoroshiku onegai shimasu' dan pastikan helm keselamatan serta APD terpasang kencang.",
+              "taboos": "Jangan pernah memulai mengoperasikan mesin sebelum ada instruksi 'Yoshi!' dari mandor pendamping."
+            },
+            "pronunciation_tips": {
+              "title": "Tips Pelafalan Aba-Aba Suara Lantang",
+              "moraNote": "Gunakan suara diafragma yang tegas dan jelas saat menjawab perintah atasan.",
+              "soundTip": "Katakan \"Hai, kashikomarimashita\" dengan tegas tanpa ragu-ragu."
+            },
+            "common_pitfalls": [
+              {
+                "title": "Jebakan Asumsi Mandiri (Dokusen)",
+                "caseScenario": "Ragu tentang tombol mesin tetapi mencoba menekan tanpa bertanya.",
+                "pitfallWarning": "❌ Bertindak sendiri tanpa melapor saat ada bunyi aneh pada mesin.",
+                "rightSolution": "✅ Segera hentikan pekerjaan, lapor supervisor: \"Sumimasen, ijin ga arimasu.\"",
+                "explanation": "Prinsip nomor satu pekerja Jepang adalah Horenso (Houkoku, Renraku, Soudan)."
+              }
+            ]
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Atasan (Tanaka-san)",
+              "speakerRole": "Supervisor Kerja",
+              "jp": "作業を始める前に、保護具を確認してください。",
+              "furigana": "さぎょうをはじめるまえに、ほごぐをかくにんしてください。",
+              "romaji": "Sagyou wo hajimeru mae ni, hogogu wo kakunin shite kudasai.",
+              "idText": "Sebelum memulai pekerjaan, tolong pastikan alat pelindung diri Anda sudah terpasang."
+            },
+            {
+              "id": "d2",
+              "speaker": "Anda (Pekerja SSW)",
+              "speakerRole": "Staf Operasional",
+              "jp": "はい、了解いたしました！点検よし！",
+              "furigana": "はい、りょうかいいいたしました！てんけんよし！",
+              "romaji": "Hai, ryoukai itashimashita! Tenken yoshi!",
+              "idText": "Baik, saya mengerti! Pemeriksaan siap/aman!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa tindakan pertama sebelum memulai pekerjaan di sektor 造船・舶用工業?",
+              "options": [
+                "Memeriksa alat pelindung diri (Hogogu) dan konfirmasi aman (Yoshi)",
+                "Langsung menekan tombol mesin tanpa instruksi",
+                "Pergi istirahat makan siang",
+                "Mematikan lampu pabrik"
+              ],
+              "correctAnswer": "Memeriksa alat pelindung diri (Hogogu) dan konfirmasi aman (Yoshi)",
+              "explanation": "SOP keselamatan kerja Jepang mewajibkan pemeriksaan APD sebelum menyentuh peralatan kerja."
+            }
+          ]
+        },
+        {
+          "id": "les-curriculum-ssw-shipbuilding-u04-02",
+          "lesson_number": 2,
+          "title_id": "Pengecatan Lambung Kapal Anti-Teritip (Antifouling) (Simulasi Darurat & Laporan SBAR)",
+          "title_jp": "船体サンドブラストと防汚塗装（緊急時対応と報告）",
+          "desc_id": "Simulasi tanggap darurat, mitigasi kecelakaan kerja K3, dan teknik pelaporan ringkas kepada atasan.",
+          "can_do_statement": "Mampu melaporkan insiden keselamatan atau kendala operasional dengan cepat dan tepat.",
+          "grammar_ids": [
+            "gn4-00028"
+          ],
+          "vocab_ids": [
+            "v-ssw-shipbuilding-003"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Komunikasi tanggap darurat dan pelaporan cepat saat terjadi kendala.",
+              "canDo": "Bisa melaporkan insiden darurat dengan formula situasi-latar belakang-solusi.",
+              "targetPatterns": [
+                "〜てしまいました",
+                "〜てください"
+              ],
+              "coreVocabSample": [
+                "v-ssw-shipbuilding-003"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Tiba-tiba terjadi ketidaksesuaian operasional di tempat kerja. Kamu harus segera melapor kepada mandor.",
+              "dailyMission": "Menyampaikan laporan kendala kerja dalam 15 detik pertama.",
+              "whyOrder": "Dalam situasi krisis industri Jepang, kecepatan pelaporan menyelamatkan nyawa dan aset pabrik."
+            },
+            "cultural_notes": {
+              "title": "Etika Tanggap Darurat di Tempat Kerja Jepang",
+              "etiquette": "Berbicaralah dengan nada tenang namun tegas, tatap mata supervisor, dan tunjukkan lokasi masalah.",
+              "taboos": "Jangan menyembunyikan kesalahan atau menunda laporan karena takut dimarahi."
+            },
+            "common_pitfalls": [
+              {
+                "title": "Jebakan Menunda Laporan",
+                "caseScenario": "Ada tetesan oli atau baut longgar tapi didiamkan.",
+                "pitfallWarning": "❌ \"Nanti saja lapornya saat jam istirahat siang.\"",
+                "rightSolution": "✅ Segera lapor saat itu juga: \"Shunin, ima yoroshii desu ka.\"",
+                "explanation": "Kecelakaan kerja fatal sering berawal dari kelalaian kecil yang tidak segera dilaporkan."
+              }
+            ]
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Anda (Pekerja SSW)",
+              "speakerRole": "Staf Operasional",
+              "jp": "主任、すみません！機械に異常音が聞こえます。すぐに確認をお願いします。",
+              "furigana": "しゅにん、すみません！きかいにいじょうおんがきこえます。すぐにかくにんをおねがいします。",
+              "romaji": "Shunin, sumimasen! Kikai ni ijouon ga kikoemasu. Sugu ni kakunin wo onegai shimasu.",
+              "idText": "Mandor, permisi! Terdengar suara tidak wajar pada mesin. Mohon segera diperiksa."
+            },
+            {
+              "id": "d2",
+              "speaker": "Mandor (Shunin)",
+              "speakerRole": "Supervisor Kerja",
+              "jp": "よく気づいてくれた！直ちに停止ボタンを押して安全を確保しよう。",
+              "furigana": "よくきづいてくれた！ただちにていしボタンをおしてあんぜんをかくほしよう。",
+              "romaji": "Yoku kizuite kureta! Tadachi ni teishi botan wo oshite anzen wo kakuho shiyou.",
+              "idText": "Terima kasih sudah sigap menyadarinya! Segera tekan tombol berhenti dan amankan lokasi."
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa yang harus dikatakan saat mendengar suara aneh pada mesin kerja?",
+              "options": [
+                "主任、機械に異常音が聞こえます。確認をお願いします。",
+                "大丈夫ですから、そのまま続けましょう。",
+                "明日の朝、報告すればいいです。",
+                "何も聞こえませんでした。"
+              ],
+              "correctAnswer": "主任、機械に異常音が聞こえます。確認をお願いします。",
+              "explanation": "Melaporkan kejanggalan suara mesin secara langsung adalah tindakan keselamatan yang tepat."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

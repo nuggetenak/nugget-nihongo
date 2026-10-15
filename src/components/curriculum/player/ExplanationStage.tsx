@@ -6,8 +6,8 @@
 //  4. Waspada Kesalahan Umum Orang Indonesia (❌ vs ✅)
 // ══════════════════════════════════════════════════════════════════
 
-import React from 'react';
-import { Volume2, BookOpen, AlertCircle, ArrowRight, Layers, Sparkles, Check, X, MessageCircle } from 'lucide-react';
+import React, { useState } from 'react';
+import { Volume2, BookOpen, AlertCircle, ArrowRight, Layers, Sparkles, Check, X, MessageCircle, PenTool } from 'lucide-react';
 import {
   LessonExplanationSection,
   LessonPedagogicalFramework,
@@ -16,6 +16,8 @@ import {
 } from '../../../types/curriculum';
 import { PedagogicalFrameworkCard } from './PedagogicalFrameworkCard';
 import { speakJapanese } from '../../../lib/audio/speechEngine';
+import { PitchAccentBadge } from '../interactive/PitchAccentBadge';
+import { KanjiStrokeModal, KanjiDetailInfo } from '../interactive/KanjiStrokeModal';
 
 interface ExplanationStageProps {
   explanations?: LessonExplanationSection[];
@@ -30,6 +32,19 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
   vocabBreakdown = [],
   commonPitfalls = [],
 }) => {
+  const [selectedKanji, setSelectedKanji] = useState<KanjiDetailInfo | null>(null);
+  const [isKanjiModalOpen, setIsKanjiModalOpen] = useState(false);
+
+  const handleOpenKanji = (kanjiChar: string, meaning: string, reading: string) => {
+    setSelectedKanji({
+      kanji: kanjiChar,
+      meanings: [meaning],
+      onyomi: [reading],
+      kunyomi: [],
+    });
+    setIsKanjiModalOpen(true);
+  };
+
   const handlePlayAudio = (text: string) => {
     speakJapanese(text, 1.0);
   };
@@ -71,11 +86,30 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                 <div className="space-y-1.5">
                   <div className="flex items-start justify-between gap-2">
                     <div className="min-w-0">
-                      <div className="text-lg font-bold font-jp text-appText-bright leading-tight break-words">
-                        {vb.word}
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <div className="text-lg font-bold font-jp text-appText-bright leading-tight break-words">
+                          {vb.word}
+                        </div>
+                        {/[一-龯]/.test(vb.word) && (
+                          <button
+                            type="button"
+                            onClick={() => {
+                              const firstKanji = vb.word.match(/[一-龯]/)?.[0] || vb.word[0];
+                              handleOpenKanji(firstKanji, vb.meaning, vb.reading);
+                            }}
+                            className="px-2 py-0.5 rounded-lg bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-accent border border-accent/20 text-[10px] font-bold flex items-center gap-1 active:scale-95 transition-colors"
+                            title="Latihan goresan kanji"
+                          >
+                            <PenTool className="w-3 h-3 text-accent" />
+                            <span>Goresan</span>
+                          </button>
+                        )}
                       </div>
-                      <div className="text-xs text-accent font-jp font-semibold">
-                        {vb.reading}
+                      <div className="flex items-center gap-2 mt-0.5 flex-wrap">
+                        <span className="text-xs text-accent font-jp font-semibold">
+                          {vb.reading}
+                        </span>
+                        <PitchAccentBadge reading={vb.reading || vb.word} compact />
                       </div>
                       <div className="text-[11px] font-mono text-appText-muted">
                         {vb.romaji}
@@ -436,6 +470,13 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
           </div>
         </div>
       )}
+
+      {/* Kanji Stroke Animator & Practice Modal */}
+      <KanjiStrokeModal
+        isOpen={isKanjiModalOpen}
+        onClose={() => setIsKanjiModalOpen(false)}
+        kanjiInfo={selectedKanji}
+      />
     </div>
   );
 };

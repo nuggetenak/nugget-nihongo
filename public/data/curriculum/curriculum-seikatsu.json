@@ -1,0 +1,380 @@
+{
+  "meta": {
+    "track_id": "curriculum-seikatsu",
+    "title": "Kurikulum Hidup & Bekerja di Jepang (Seikatsu Nihongo)",
+    "level": "seikatsu",
+    "version": "1.2.0",
+    "total_units": 4,
+    "authoritative": true
+  },
+  "units": [
+    {
+      "unit_number": 1,
+      "id": "unit-curriculum-seikatsu-01",
+      "level": "seikatsu",
+      "pt_stage": 1,
+      "title_id": "Unit 1: Shiyakusho & Juminhyo (Prosedur Resmi Balai Kota)",
+      "title_jp": "市役所での住民登録とマイナンバー",
+      "theme": "City Hall & Registration",
+      "icon": "🏛️",
+      "can_do_summary": "Mampu mengurus surat pindah (Juminhyo), mendaftar asuransi kesehatan (Kokumin Kenko Hoken), dan mengambil kartu My Number.",
+      "grammar_ids": [
+        "gn5-00001"
+      ],
+      "vocab_ids": [
+        "vg-n5-00990"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-seikatsu-u01-01",
+          "lesson_number": 1,
+          "title_id": "Unit 1: Shiyakusho & Juminhyo (Prosedur Resmi Balai Kota) (Prosedur & Kosakata Baku)",
+          "title_jp": "市役所での住民登録とマイナンバー（手続きと必須表現）",
+          "desc_id": "Langkah pertama yang wajib dilakukan dalam 14 hari pertama kedatangan di Jepang di loket balai kota.",
+          "can_do_statement": "Mampu mengurus surat pindah (Juminhyo), mendaftar asuransi kesehatan (Kokumin Kenko Hoken), dan mengambil kartu My Number.",
+          "grammar_ids": [
+            "gn5-00001"
+          ],
+          "vocab_ids": [
+            "vg-n5-00990"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Langkah pertama yang wajib dilakukan dalam 14 hari pertama kedatangan di Jepang di loket balai kota.",
+              "canDo": "Mampu mengurus surat pindah (Juminhyo), mendaftar asuransi kesehatan (Kokumin Kenko Hoken), dan mengambil kartu My Number.",
+              "targetPatterns": [
+                "Pola Prosedur Layanan Umum"
+              ],
+              "coreVocabSample": [
+                "住民票",
+                "保険証",
+                "分別"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang menjalani kehidupan sehari-hari di Jepang dan harus menyelesaikan urusan Unit 1: Shiyakusho & Juminhyo (Prosedur Resmi Balai Kota).",
+              "dailyMission": "Mampu mengurus surat pindah (Juminhyo), mendaftar asuransi kesehatan (Kokumin Kenko Hoken), dan mengambil kartu My Number.",
+              "whyOrder": "Prosedur administrasi dan etika lingkungan adalah kunci kenyamanan hidup rukun bersama warga lokal Jepang."
+            },
+            "cultural_notes": {
+              "title": "Etika & Kebiasaan Sosial Warga Jepang",
+              "etiquette": "Selalu siapkan cap nama resmi (Inkan/Hanko), kartu izin tinggal (Zairyu Card), dan paspor di dalam satu map rapi.",
+              "taboos": "Jangan membuang sampah di luar jadwal jam buang sampah (biasanya sebelum pukul 08.00 pagi pada hari yang ditentukan)."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Petugas Loket (Madoguchi)",
+              "speakerRole": "Staf Balai Kota",
+              "jp": "在留カードとパスポートをお預かりします。こちらの書類にご記入ください。",
+              "furigana": "ざいりゅうカードとパスポートをおあずかりします。こちらのしょるいにごきにゅうください。",
+              "romaji": "Zairyuu kaado to pasupooto wo oazukari shimasu. Kochira no shorui ni gokinyuu kudasai.",
+              "idText": "Saya pinjam kartu izin tinggal dan paspor Anda. Mohon mengisi formulir dokumen ini."
+            },
+            {
+              "id": "d2",
+              "speaker": "Anda",
+              "speakerRole": "Warga Pendatang",
+              "jp": "はい、よろしくお願いします。書き方を教えていただけますか。",
+              "furigana": "はい、よろしくおねがいします。かきかたをおしえていただけますか。",
+              "romaji": "Hai, yoroshiku onegai shimasu. Kakikata wo oshiete itadakemasu ka.",
+              "idText": "Baik, terima kasih atas bantuannya. Bisakah tolong ajari cara mengisinya?"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa langkah wajib saat mengurus dokumen di Unit 1: Shiyakusho & Juminhyo (Prosedur Resmi Balai Kota)?",
+              "options": [
+                "Membawa Kartu Izin Tinggal (Zairyu Card) dan paspor",
+                "Meninggalkan tas di pinggir jalan",
+                "Berteriak di depan loket",
+                "Membayar tanpa tanda terima"
+              ],
+              "correctAnswer": "Membawa Kartu Izin Tinggal (Zairyu Card) dan paspor",
+              "explanation": "Zairyu Card dan paspor adalah kartu identitas resmi primer bagi seluruh warga asing di Jepang."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 2,
+      "id": "unit-curriculum-seikatsu-02",
+      "level": "seikatsu",
+      "pt_stage": 2,
+      "title_id": "Unit 2: Gomi no Bunbetsu (Aturan Ketat Pemilahan Sampah)",
+      "title_jp": "ごみの分別ルールと回収スケジュール",
+      "theme": "Waste Sorting & Environment",
+      "icon": "🗑️",
+      "can_do_summary": "Mampu membedakan sampah mudah terbakar (Moeru), tidak terbakar (Moenai), plastik daur ulang (Shigen), dan sampah perabot besar (Sodai Gomi).",
+      "grammar_ids": [
+        "gn5-00001"
+      ],
+      "vocab_ids": [
+        "vg-n5-00990"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-seikatsu-u02-01",
+          "lesson_number": 1,
+          "title_id": "Unit 2: Gomi no Bunbetsu (Aturan Ketat Pemilahan Sampah) (Prosedur & Kosakata Baku)",
+          "title_jp": "ごみの分別ルールと回収スケジュール（手続きと必須表現）",
+          "desc_id": "Etika bermasyarakat nomor satu di Jepang untuk menghindari teguran tetangga dan pengurus apartemen.",
+          "can_do_statement": "Mampu membedakan sampah mudah terbakar (Moeru), tidak terbakar (Moenai), plastik daur ulang (Shigen), dan sampah perabot besar (Sodai Gomi).",
+          "grammar_ids": [
+            "gn5-00001"
+          ],
+          "vocab_ids": [
+            "vg-n5-00990"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Etika bermasyarakat nomor satu di Jepang untuk menghindari teguran tetangga dan pengurus apartemen.",
+              "canDo": "Mampu membedakan sampah mudah terbakar (Moeru), tidak terbakar (Moenai), plastik daur ulang (Shigen), dan sampah perabot besar (Sodai Gomi).",
+              "targetPatterns": [
+                "Pola Prosedur Layanan Umum"
+              ],
+              "coreVocabSample": [
+                "住民票",
+                "保険証",
+                "分別"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang menjalani kehidupan sehari-hari di Jepang dan harus menyelesaikan urusan Unit 2: Gomi no Bunbetsu (Aturan Ketat Pemilahan Sampah).",
+              "dailyMission": "Mampu membedakan sampah mudah terbakar (Moeru), tidak terbakar (Moenai), plastik daur ulang (Shigen), dan sampah perabot besar (Sodai Gomi).",
+              "whyOrder": "Prosedur administrasi dan etika lingkungan adalah kunci kenyamanan hidup rukun bersama warga lokal Jepang."
+            },
+            "cultural_notes": {
+              "title": "Etika & Kebiasaan Sosial Warga Jepang",
+              "etiquette": "Selalu siapkan cap nama resmi (Inkan/Hanko), kartu izin tinggal (Zairyu Card), dan paspor di dalam satu map rapi.",
+              "taboos": "Jangan membuang sampah di luar jadwal jam buang sampah (biasanya sebelum pukul 08.00 pagi pada hari yang ditentukan)."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Petugas Loket (Madoguchi)",
+              "speakerRole": "Staf Balai Kota",
+              "jp": "在留カードとパスポートをお預かりします。こちらの書類にご記入ください。",
+              "furigana": "ざいりゅうカードとパスポートをおあずかりします。こちらのしょるいにごきにゅうください。",
+              "romaji": "Zairyuu kaado to pasupooto wo oazukari shimasu. Kochira no shorui ni gokinyuu kudasai.",
+              "idText": "Saya pinjam kartu izin tinggal dan paspor Anda. Mohon mengisi formulir dokumen ini."
+            },
+            {
+              "id": "d2",
+              "speaker": "Anda",
+              "speakerRole": "Warga Pendatang",
+              "jp": "はい、よろしくお願いします。書き方を教えていただけますか。",
+              "furigana": "はい、よろしくおねがいします。かきかたをおしえていただけますか。",
+              "romaji": "Hai, yoroshiku onegai shimasu. Kakikata wo oshiete itadakemasu ka.",
+              "idText": "Baik, terima kasih atas bantuannya. Bisakah tolong ajari cara mengisinya?"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa langkah wajib saat mengurus dokumen di Unit 2: Gomi no Bunbetsu (Aturan Ketat Pemilahan Sampah)?",
+              "options": [
+                "Membawa Kartu Izin Tinggal (Zairyu Card) dan paspor",
+                "Meninggalkan tas di pinggir jalan",
+                "Berteriak di depan loket",
+                "Membayar tanpa tanda terima"
+              ],
+              "correctAnswer": "Membawa Kartu Izin Tinggal (Zairyu Card) dan paspor",
+              "explanation": "Zairyu Card dan paspor adalah kartu identitas resmi primer bagi seluruh warga asing di Jepang."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 3,
+      "id": "unit-curriculum-seikatsu-03",
+      "level": "seikatsu",
+      "pt_stage": 3,
+      "title_id": "Unit 3: Sumai & Ginkou (Sewa Apartemen & Rekening Bank Yucho)",
+      "title_jp": "住まい探し・銀行口座開設・公共料金",
+      "theme": "Housing & Banking",
+      "icon": "🏢",
+      "can_do_summary": "Mampu membuka rekening tabungan bank Yucho, memahami tagihan listrik/air/gas, dan membayar di konbini.",
+      "grammar_ids": [
+        "gn5-00001"
+      ],
+      "vocab_ids": [
+        "vg-n5-00990"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-seikatsu-u03-01",
+          "lesson_number": 1,
+          "title_id": "Unit 3: Sumai & Ginkou (Sewa Apartemen & Rekening Bank Yucho) (Prosedur & Kosakata Baku)",
+          "title_jp": "住まい探し・銀行口座開設・公共料金（手続きと必須表現）",
+          "desc_id": "Navigasi finansial mandiri dan kontrak sewa tempat tinggal di Jepang tanpa kendala.",
+          "can_do_statement": "Mampu membuka rekening tabungan bank Yucho, memahami tagihan listrik/air/gas, dan membayar di konbini.",
+          "grammar_ids": [
+            "gn5-00001"
+          ],
+          "vocab_ids": [
+            "vg-n5-00990"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Navigasi finansial mandiri dan kontrak sewa tempat tinggal di Jepang tanpa kendala.",
+              "canDo": "Mampu membuka rekening tabungan bank Yucho, memahami tagihan listrik/air/gas, dan membayar di konbini.",
+              "targetPatterns": [
+                "Pola Prosedur Layanan Umum"
+              ],
+              "coreVocabSample": [
+                "住民票",
+                "保険証",
+                "分別"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang menjalani kehidupan sehari-hari di Jepang dan harus menyelesaikan urusan Unit 3: Sumai & Ginkou (Sewa Apartemen & Rekening Bank Yucho).",
+              "dailyMission": "Mampu membuka rekening tabungan bank Yucho, memahami tagihan listrik/air/gas, dan membayar di konbini.",
+              "whyOrder": "Prosedur administrasi dan etika lingkungan adalah kunci kenyamanan hidup rukun bersama warga lokal Jepang."
+            },
+            "cultural_notes": {
+              "title": "Etika & Kebiasaan Sosial Warga Jepang",
+              "etiquette": "Selalu siapkan cap nama resmi (Inkan/Hanko), kartu izin tinggal (Zairyu Card), dan paspor di dalam satu map rapi.",
+              "taboos": "Jangan membuang sampah di luar jadwal jam buang sampah (biasanya sebelum pukul 08.00 pagi pada hari yang ditentukan)."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Petugas Loket (Madoguchi)",
+              "speakerRole": "Staf Balai Kota",
+              "jp": "在留カードとパスポートをお預かりします。こちらの書類にご記入ください。",
+              "furigana": "ざいりゅうカードとパスポートをおあずかりします。こちらのしょるいにごきにゅうください。",
+              "romaji": "Zairyuu kaado to pasupooto wo oazukari shimasu. Kochira no shorui ni gokinyuu kudasai.",
+              "idText": "Saya pinjam kartu izin tinggal dan paspor Anda. Mohon mengisi formulir dokumen ini."
+            },
+            {
+              "id": "d2",
+              "speaker": "Anda",
+              "speakerRole": "Warga Pendatang",
+              "jp": "はい、よろしくお願いします。書き方を教えていただけますか。",
+              "furigana": "はい、よろしくおねがいします。かきかたをおしえていただけますか。",
+              "romaji": "Hai, yoroshiku onegai shimasu. Kakikata wo oshiete itadakemasu ka.",
+              "idText": "Baik, terima kasih atas bantuannya. Bisakah tolong ajari cara mengisinya?"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa langkah wajib saat mengurus dokumen di Unit 3: Sumai & Ginkou (Sewa Apartemen & Rekening Bank Yucho)?",
+              "options": [
+                "Membawa Kartu Izin Tinggal (Zairyu Card) dan paspor",
+                "Meninggalkan tas di pinggir jalan",
+                "Berteriak di depan loket",
+                "Membayar tanpa tanda terima"
+              ],
+              "correctAnswer": "Membawa Kartu Izin Tinggal (Zairyu Card) dan paspor",
+              "explanation": "Zairyu Card dan paspor adalah kartu identitas resmi primer bagi seluruh warga asing di Jepang."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 4,
+      "id": "unit-curriculum-seikatsu-04",
+      "level": "seikatsu",
+      "pt_stage": 4,
+      "title_id": "Unit 4: Bousai & Kinkyu (Mitigasi Gempa, Alarm J-Alert & Panggilan Darurat)",
+      "title_jp": "防災と緊急時の対応（110番・119番・避難所）",
+      "theme": "Disaster Safety & Emergency",
+      "icon": "🚨",
+      "can_do_summary": "Mampu merespon bunyi alarm gempa HP (J-Alert), menghubungi 110 (polisi) / 119 (ambulans), dan evakuasi ke Hinanjo.",
+      "grammar_ids": [
+        "gn5-00001"
+      ],
+      "vocab_ids": [
+        "vg-n5-00990"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-seikatsu-u04-01",
+          "lesson_number": 1,
+          "title_id": "Unit 4: Bousai & Kinkyu (Mitigasi Gempa, Alarm J-Alert & Panggilan Darurat) (Prosedur & Kosakata Baku)",
+          "title_jp": "防災と緊急時の対応（110番・119番・避難所）（手続きと必須表現）",
+          "desc_id": "Prosedur keselamatan darurat untuk melindungi diri sendiri saat bencana gempa bumi, angin topan, atau kebakaran.",
+          "can_do_statement": "Mampu merespon bunyi alarm gempa HP (J-Alert), menghubungi 110 (polisi) / 119 (ambulans), dan evakuasi ke Hinanjo.",
+          "grammar_ids": [
+            "gn5-00001"
+          ],
+          "vocab_ids": [
+            "vg-n5-00990"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Prosedur keselamatan darurat untuk melindungi diri sendiri saat bencana gempa bumi, angin topan, atau kebakaran.",
+              "canDo": "Mampu merespon bunyi alarm gempa HP (J-Alert), menghubungi 110 (polisi) / 119 (ambulans), dan evakuasi ke Hinanjo.",
+              "targetPatterns": [
+                "Pola Prosedur Layanan Umum"
+              ],
+              "coreVocabSample": [
+                "住民票",
+                "保険証",
+                "分別"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang menjalani kehidupan sehari-hari di Jepang dan harus menyelesaikan urusan Unit 4: Bousai & Kinkyu (Mitigasi Gempa, Alarm J-Alert & Panggilan Darurat).",
+              "dailyMission": "Mampu merespon bunyi alarm gempa HP (J-Alert), menghubungi 110 (polisi) / 119 (ambulans), dan evakuasi ke Hinanjo.",
+              "whyOrder": "Prosedur administrasi dan etika lingkungan adalah kunci kenyamanan hidup rukun bersama warga lokal Jepang."
+            },
+            "cultural_notes": {
+              "title": "Etika & Kebiasaan Sosial Warga Jepang",
+              "etiquette": "Selalu siapkan cap nama resmi (Inkan/Hanko), kartu izin tinggal (Zairyu Card), dan paspor di dalam satu map rapi.",
+              "taboos": "Jangan membuang sampah di luar jadwal jam buang sampah (biasanya sebelum pukul 08.00 pagi pada hari yang ditentukan)."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Petugas Loket (Madoguchi)",
+              "speakerRole": "Staf Balai Kota",
+              "jp": "在留カードとパスポートをお預かりします。こちらの書類にご記入ください。",
+              "furigana": "ざいりゅうカードとパスポートをおあずかりします。こちらのしょるいにごきにゅうください。",
+              "romaji": "Zairyuu kaado to pasupooto wo oazukari shimasu. Kochira no shorui ni gokinyuu kudasai.",
+              "idText": "Saya pinjam kartu izin tinggal dan paspor Anda. Mohon mengisi formulir dokumen ini."
+            },
+            {
+              "id": "d2",
+              "speaker": "Anda",
+              "speakerRole": "Warga Pendatang",
+              "jp": "はい、よろしくお願いします。書き方を教えていただけますか。",
+              "furigana": "はい、よろしくおねがいします。かきかたをおしえていただけますか。",
+              "romaji": "Hai, yoroshiku onegai shimasu. Kakikata wo oshiete itadakemasu ka.",
+              "idText": "Baik, terima kasih atas bantuannya. Bisakah tolong ajari cara mengisinya?"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa langkah wajib saat mengurus dokumen di Unit 4: Bousai & Kinkyu (Mitigasi Gempa, Alarm J-Alert & Panggilan Darurat)?",
+              "options": [
+                "Membawa Kartu Izin Tinggal (Zairyu Card) dan paspor",
+                "Meninggalkan tas di pinggir jalan",
+                "Berteriak di depan loket",
+                "Membayar tanpa tanda terima"
+              ],
+              "correctAnswer": "Membawa Kartu Izin Tinggal (Zairyu Card) dan paspor",
+              "explanation": "Zairyu Card dan paspor adalah kartu identitas resmi primer bagi seluruh warga asing di Jepang."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

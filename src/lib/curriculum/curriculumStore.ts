@@ -16,7 +16,35 @@ export type TrackId =
   | 'n1'
   | 'ssw-kaigo'
   | 'ssw-food'
-  | 'ssw-construction';
+  | 'ssw-construction'
+  | 'ssw-agriculture'
+  | 'ssw-accommodation'
+  | 'ssw-building-cleaning'
+  | 'ssw-manufacturing'
+  | 'ssw-automobile'
+  | 'ssw-aviation'
+  | 'ssw-fishery'
+  | 'ssw-food-service'
+  | 'ssw-industrial-machinery'
+  | 'ssw-electric-electronic'
+  | 'ssw-shipbuilding'
+  | 'ssw-logistics'
+  | 'ssw-railway'
+  | 'ssw-forestry'
+  | 'ssw-timber'
+  | 'ssw-textile'
+  | 'jft-a1'
+  | 'jft-a2'
+  | 'seikatsu'
+  | 'book-genki'
+  | 'book-minna'
+  | 'book-soumatome'
+  | 'book-tobira'
+  | 'book-quartet'
+  | 'book-try'
+  | 'book-shin-kanzen-master'
+  | 'book-marugoto'
+  | 'book-irodori';
 
 export interface TrackProgressState {
   completedUnits: string[];
@@ -68,6 +96,34 @@ const DEFAULT_TRACK_PROGRESS: Record<TrackId, TrackProgressState> = {
   'ssw-kaigo': { completedUnits: [], completedLessons: [], lessonScores: {} },
   'ssw-food': { completedUnits: [], completedLessons: [], lessonScores: {} },
   'ssw-construction': { completedUnits: [], completedLessons: [], lessonScores: {} },
+  'ssw-agriculture': { completedUnits: [], completedLessons: [], lessonScores: {} },
+  'ssw-accommodation': { completedUnits: [], completedLessons: [], lessonScores: {} },
+  'ssw-building-cleaning': { completedUnits: [], completedLessons: [], lessonScores: {} },
+  'ssw-manufacturing': { completedUnits: [], completedLessons: [], lessonScores: {} },
+  'ssw-automobile': { completedUnits: [], completedLessons: [], lessonScores: {} },
+  'ssw-aviation': { completedUnits: [], completedLessons: [], lessonScores: {} },
+  'ssw-fishery': { completedUnits: [], completedLessons: [], lessonScores: {} },
+  'ssw-food-service': { completedUnits: [], completedLessons: [], lessonScores: {} },
+  'ssw-industrial-machinery': { completedUnits: [], completedLessons: [], lessonScores: {} },
+  'ssw-electric-electronic': { completedUnits: [], completedLessons: [], lessonScores: {} },
+  'ssw-shipbuilding': { completedUnits: [], completedLessons: [], lessonScores: {} },
+  'ssw-logistics': { completedUnits: [], completedLessons: [], lessonScores: {} },
+  'ssw-railway': { completedUnits: [], completedLessons: [], lessonScores: {} },
+  'ssw-forestry': { completedUnits: [], completedLessons: [], lessonScores: {} },
+  'ssw-timber': { completedUnits: [], completedLessons: [], lessonScores: {} },
+  'ssw-textile': { completedUnits: [], completedLessons: [], lessonScores: {} },
+  'jft-a1': { completedUnits: [], completedLessons: [], lessonScores: {} },
+  'jft-a2': { completedUnits: [], completedLessons: [], lessonScores: {} },
+  seikatsu: { completedUnits: [], completedLessons: [], lessonScores: {} },
+  'book-genki': { completedUnits: [], completedLessons: [], lessonScores: {} },
+  'book-minna': { completedUnits: [], completedLessons: [], lessonScores: {} },
+  'book-soumatome': { completedUnits: [], completedLessons: [], lessonScores: {} },
+  'book-tobira': { completedUnits: [], completedLessons: [], lessonScores: {} },
+  'book-quartet': { completedUnits: [], completedLessons: [], lessonScores: {} },
+  'book-try': { completedUnits: [], completedLessons: [], lessonScores: {} },
+  'book-shin-kanzen-master': { completedUnits: [], completedLessons: [], lessonScores: {} },
+  'book-marugoto': { completedUnits: [], completedLessons: [], lessonScores: {} },
+  'book-irodori': { completedUnits: [], completedLessons: [], lessonScores: {} },
 };
 
 function loadStoredProgress(): Record<TrackId, TrackProgressState> {
@@ -154,7 +210,7 @@ export const useCurriculumStore = create<CurriculumStoreState>((set, get) => ({
     // Award XP to global gamification store if first time completing or improved score
     if (!currentTrack.completedLessons.includes(lessonId) && xpReward > 0) {
       try {
-        useGamificationStore.getState().addXp(xpReward);
+        useGamificationStore.getState().recordActivity(1, xpReward);
       } catch {
         // Safe fallback if gamification store not initialized
       }

@@ -673,17 +673,6 @@ export function splitIntoMora(text: string): string[] {
   return morae;
 }
 
-export interface PanicScenarioItem {
-  id: string;
-  situation: string;
-  japaneseOutput: string;
-  romaji?: string;
-  actionChecklist: string[];
-  context: string;
-  level?: JLPTLevel;
-  timeoutSeconds?: number;
-}
-
 /**
  * Generate diagnostic confusion pair drill questions from the 300 compiled items.
  * Supports L1 Substratum prioritization (Sunda, Jawa, Batak, General Indonesian).

@@ -5,6 +5,7 @@
 // ══════════════════════════════════════════════════════════════════
 
 import { JLPTLevel } from '../../types/vocab';
+import { TrackId } from '../curriculum/curriculumStore';
 
 export interface NormalizedVocab {
   id: string;
@@ -299,6 +300,7 @@ export async function loadFreewayTrack(): Promise<NormalizedGrammar[]> {
 
 export interface CurriculumLesson {
   id: string;
+  unit_id?: string;
   lesson_number: number;
   title_id: string;
   title_jp: string;
@@ -307,6 +309,7 @@ export interface CurriculumLesson {
   grammar_ids: string[];
   vocab_ids?: string[];
   l2d_contrastive_tags?: string[];
+  estimated_minutes?: number;
 }
 
 export interface CurriculumUnit {
@@ -358,10 +361,10 @@ function normalizeTrackData(raw: any, trackKey: string): CurriculumTrackData {
 }
 
 /**
- * Load any curriculum track (N5, N4, N3, N2, N1, SSW Kaigo, SSW Food, SSW Construction)
+ * Load any curriculum track (JLPT N5–N1, 19 SSW Sectors, JFT-A1/A2, Seikatsu, or Book tracks)
  */
 export async function loadCurriculumTrack(
-  trackKey: 'n5' | 'n4' | 'n3' | 'n2' | 'n1' | 'ssw-kaigo' | 'ssw-food' | 'ssw-construction'
+  trackKey: TrackId | string
 ): Promise<CurriculumTrackData | null> {
   if (curriculumCache[trackKey]) return curriculumCache[trackKey];
 
@@ -376,8 +379,10 @@ export async function loadCurriculumTrack(
     'ssw-construction': { src: '/data/curriculum/curriculum-ssw-construction.js', varKey: 'curriculumSSWConstruction' },
   };
 
-  const target = fileMap[trackKey];
-  if (!target) return null;
+  const target = fileMap[trackKey] || {
+    src: `/data/curriculum/curriculum-${trackKey}.js`,
+    varKey: `curriculum_${trackKey.replace(/[^a-zA-Z0-9]/g, '_')}`,
+  };
 
   const hasWindow = typeof window !== 'undefined';
   let raw: any = hasWindow ? (window as any)[target.varKey] : null;
@@ -387,7 +392,7 @@ export async function loadCurriculumTrack(
       await loadScript(target.src);
       raw = (window as any)[target.varKey];
     } catch {
-      // Fallback: fetch JSON
+      // Fallback to fetch JSON
     }
   }
 

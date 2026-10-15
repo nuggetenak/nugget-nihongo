@@ -1,6 +1,6 @@
 // n3-staged.js — Staged Expansion for N3
-// Total New Entries: 212
-// Generated: 2026-10-15
+// Total Entries: 212
+// Curated & Cleaned (100% Indonesian): 2026-10-15
 window.stagedVocabN3 = [
   {
     "id": "vg-n3-02432",
@@ -27,7 +27,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "彼女はにっこり挨拶をした。",
-        "id": "[Terjemahan] She greeted us with a smile.",
+        "id": "Dia menyapa kami dengan senyuman.",
         "level": "n3",
         "tags": [
           "umum"
@@ -35,7 +35,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "この場をお借りして一言挨拶を申し上げます。",
-        "id": "[Terjemahan] Please allow me to say a few words on this occasion.",
+        "id": "Izinkan saya menyampaikan sepatah dua patah kata pada kesempatan ini.",
         "level": "n3",
         "tags": [
           "umum"
@@ -68,7 +68,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "アイスクリームを３つください。",
-        "id": "[Terjemahan] Give me three ice creams, please.",
+        "id": "Tolong beri saya tiga es krim.",
         "level": "n3",
         "tags": [
           "umum"
@@ -76,7 +76,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼女はアイスクリームが好きだ。",
-        "id": "[Terjemahan] She has liking for ice cream.",
+        "id": "She has liking for ice cream.",
         "level": "n3",
         "tags": [
           "umum"
@@ -109,7 +109,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "アイロンで手をやけどしました。",
-        "id": "[Terjemahan] I burned my hand with an iron.",
+        "id": "I burned my hand with an iron.",
         "level": "n3",
         "tags": [
           "umum"
@@ -117,7 +117,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "私はハンカチにアイロンをかけた。",
-        "id": "[Terjemahan] I ironed my handkerchiefs.",
+        "id": "I ironed my handkerchiefs.",
         "level": "n3",
         "tags": [
           "umum"
@@ -150,7 +150,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "字と字の間の空きをもっと広くしなさい。",
-        "id": "[Terjemahan] Leave more space between characters.",
+        "id": "Leave more space between characters.",
         "level": "n3",
         "tags": [
           "umum"
@@ -158,7 +158,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "うちの会社には空きがない。",
-        "id": "[Terjemahan] There is no opening in our firm.",
+        "id": "Ada no opening in our firm.",
         "level": "n3",
         "tags": [
           "umum"
@@ -191,7 +191,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "息子はハンバーガーにあきています。",
-        "id": "[Terjemahan] My son is tired of hamburgers.",
+        "id": "My son is tired of hamburgers.",
         "level": "n3",
         "tags": [
           "umum"
@@ -199,7 +199,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼はテレビを見るのに飽きている。",
-        "id": "[Terjemahan] He is tired of watching television.",
+        "id": "Dia tired of watching television.",
         "level": "n3",
         "tags": [
           "umum"
@@ -232,7 +232,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "夜が明ける。",
-        "id": "[Terjemahan] Day breaks.",
+        "id": "Day breaks.",
         "level": "n3",
         "tags": [
           "umum"
@@ -240,7 +240,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "夜がちょうど明けようとしている。",
-        "id": "[Terjemahan] The dawn is just breaking.",
+        "id": "The dawn is just breaking.",
         "level": "n3",
         "tags": [
           "umum"
@@ -253,7 +253,7 @@ window.stagedVocabN3 = [
     "word": "あっ",
     "reading": "あっ",
     "romaji": "a",
-    "meaning_id": "Ah!; Oh!",
+    "meaning_id": "Ah!; Wah!; Aduh!",
     "meaning_en": "Ah!; Oh!",
     "jlpt": "n3",
     "pos": "noun",
@@ -306,7 +306,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "その女性の顔には悲しみの跡があった。",
-        "id": "[Terjemahan] The woman's face was marked with grief.",
+        "id": "The woman's face was marked with grief.",
         "level": "n3",
         "tags": [
           "umum"
@@ -314,7 +314,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "多少あとが残るかもしれません。",
-        "id": "[Terjemahan] There may be some scars.",
+        "id": "There may be some scars.",
         "level": "n3",
         "tags": [
           "umum"
@@ -347,7 +347,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "＆のマークはａｎｄの文字を表す。",
-        "id": "[Terjemahan] The sign \"&\" stands for \"and\".",
+        "id": "The sign \"&\" stands for \"and\".",
         "level": "n3",
         "tags": [
           "umum"
@@ -355,7 +355,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "正規表現で空白はどのように表されるのでしょうか？",
-        "id": "[Terjemahan] How is whitespace represented in regular expressions?",
+        "id": "How is whitespace represented in regular expressions?",
         "level": "n3",
         "tags": [
           "umum"
@@ -388,7 +388,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "ある学生に会うところです。",
-        "id": "[Terjemahan] I'm going to meet a certain student.",
+        "id": "I'm going to meet a certain student.",
         "level": "n3",
         "tags": [
           "umum"
@@ -396,7 +396,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "ある夕方、一人の男がやってきた。",
-        "id": "[Terjemahan] One evening a man came to my house.",
+        "id": "One evening a man came to my house.",
         "level": "n3",
         "tags": [
           "umum"
@@ -429,7 +429,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "彼は私にアルバムを見せてくれた。",
-        "id": "[Terjemahan] He showed me his photograph album.",
+        "id": "He showed me his photograph album.",
         "level": "n3",
         "tags": [
           "umum"
@@ -437,7 +437,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "あなたのアルバムを見せてくれる？",
-        "id": "[Terjemahan] Will you show me your album?",
+        "id": "Will you show me your album?",
         "level": "n3",
         "tags": [
           "umum"
@@ -503,7 +503,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "私は辞職する意志はまったくない。",
-        "id": "[Terjemahan] I have no intention of resigning.",
+        "id": "I have no intention of resigning.",
         "level": "n3",
         "tags": [
           "umum"
@@ -511,7 +511,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "意志を持たない事が最悪の不利だ。",
-        "id": "[Terjemahan] Having no will is the worst handicap.",
+        "id": "Having no will is the worst handicap.",
         "level": "n3",
         "tags": [
           "umum"
@@ -544,7 +544,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "人間は互いに言葉で意思を通じ合う。",
-        "id": "[Terjemahan] Human beings communicate with each other by means of language.",
+        "id": "Human beings communicate with each other by means of language.",
         "level": "n3",
         "tags": [
           "umum"
@@ -552,7 +552,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "にやりと笑って賛成の意思を示した。",
-        "id": "[Terjemahan] She grinned her approval.",
+        "id": "She grinned her approval.",
         "level": "n3",
         "tags": [
           "umum"
@@ -585,7 +585,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "彼は医師になるために勉強している。",
-        "id": "[Terjemahan] He studies with a view to becoming a doctor.",
+        "id": "He studies with a view to becoming a doctor.",
         "level": "n3",
         "tags": [
           "umum"
@@ -593,7 +593,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "医師はすぐに手術をする事に決めた。",
-        "id": "[Terjemahan] The doctor decided to operate at once.",
+        "id": "The doctor decided to operate at once.",
         "level": "n3",
         "tags": [
           "umum"
@@ -626,7 +626,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "市は月曜ごとに立つ。",
-        "id": "[Terjemahan] The market is held every Monday.",
+        "id": "The market is held every Monday.",
         "level": "n3",
         "tags": [
           "umum"
@@ -634,7 +634,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "女３人と鵞鳥一羽で市ができる。",
-        "id": "[Terjemahan] Three women and a goose make a market.",
+        "id": "Three women and a goose make a market.",
         "level": "n3",
         "tags": [
           "umum"
@@ -667,7 +667,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "私はパレードが見えるいい位置にいた。",
-        "id": "[Terjemahan] I was in a good position to see the parade.",
+        "id": "I was in a good position to see the parade.",
         "level": "n3",
         "tags": [
           "umum"
@@ -675,7 +675,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼の事務所は町の中心部に位置している。",
-        "id": "[Terjemahan] His office is located in the center of the town.",
+        "id": "His office is located in the center of the town.",
         "level": "n3",
         "tags": [
           "umum"
@@ -708,7 +708,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "彼は私の兄ではなくて、いとこである。",
-        "id": "[Terjemahan] He isn't my brother. He's my cousin.",
+        "id": "He isn't my brother. He's my cousin.",
         "level": "n3",
         "tags": [
           "umum"
@@ -716,7 +716,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "ジョンは私の兄弟ではなくて、私のいとこだ。",
-        "id": "[Terjemahan] John is not my brother, but my cousin.",
+        "id": "John is not my brother, but my cousin.",
         "level": "n3",
         "tags": [
           "umum"
@@ -749,7 +749,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "彼らは居間でお茶を飲んでいます。",
-        "id": "[Terjemahan] They are having tea in the living room.",
+        "id": "Mereka having tea in the living room.",
         "level": "n3",
         "tags": [
           "umum"
@@ -757,7 +757,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼女は台所にも居間にもいない。",
-        "id": "[Terjemahan] She is neither in the kitchen nor in the living room.",
+        "id": "Dia neither in the kitchen nor in the living room.",
         "level": "n3",
         "tags": [
           "umum"
@@ -790,7 +790,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "彼は医療に一生を捧げた。",
-        "id": "[Terjemahan] He dedicated his life to medical work.",
+        "id": "He dedicated his life to medical work.",
         "level": "n3",
         "tags": [
           "umum"
@@ -798,7 +798,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "その子は病院で適切な医療を受ける必要がある。",
-        "id": "[Terjemahan] He needs proper medical attention at a hospital.",
+        "id": "He needs proper medical attention at a hospital.",
         "level": "n3",
         "tags": [
           "umum"
@@ -831,7 +831,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "この贈り物は受け取れません。",
-        "id": "[Terjemahan] I cannot accept this gift.",
+        "id": "I cannot accept this gift.",
         "level": "n3",
         "tags": [
           "umum"
@@ -839,7 +839,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "小切手で受け取ってもらえますか。",
-        "id": "[Terjemahan] Will you take a check?",
+        "id": "Will you take a check?",
         "level": "n3",
         "tags": [
           "umum"
@@ -872,7 +872,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "音楽は気持ちを動かします。",
-        "id": "[Terjemahan] Music moves the feelings.",
+        "id": "Music moves the feelings.",
         "level": "n3",
         "tags": [
           "umum"
@@ -880,7 +880,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "ここからあそこへこの石を動かして下さい。",
-        "id": "[Terjemahan] Please move this stone from here to there.",
+        "id": "Tolong move this stone from here to there.",
         "level": "n3",
         "tags": [
           "umum"
@@ -913,7 +913,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "彼は市場に出す牛を育てている。",
-        "id": "[Terjemahan] He breeds cattle for market.",
+        "id": "He breeds cattle for market.",
         "level": "n3",
         "tags": [
           "umum"
@@ -921,7 +921,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "今までに本物の牛を見たことがない。",
-        "id": "[Terjemahan] I've never seen a real cow.",
+        "id": "I've never seen a real cow.",
         "level": "n3",
         "tags": [
           "umum"
@@ -987,7 +987,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "うわさは四方八方に広がった。",
-        "id": "[Terjemahan] The rumor spread far and wide.",
+        "id": "The rumor spread far and wide.",
         "level": "n3",
         "tags": [
           "umum"
@@ -995,7 +995,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "人の噂って当てにならないからな。",
-        "id": "[Terjemahan] You can't trust rumors.",
+        "id": "You can't trust rumors.",
         "level": "n3",
         "tags": [
           "umum"
@@ -1028,7 +1028,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "衛星は今軌道に乗っている。",
-        "id": "[Terjemahan] The satellite is now in orbit.",
+        "id": "The satellite is now in orbit.",
         "level": "n3",
         "tags": [
           "umum"
@@ -1036,7 +1036,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "月は地球のただ一つの衛星である。",
-        "id": "[Terjemahan] The moon is the earth's only satellite.",
+        "id": "The moon is the earth's only satellite.",
         "level": "n3",
         "tags": [
           "umum"
@@ -1069,7 +1069,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "彼らは私を笑顔で迎えてくれた。",
-        "id": "[Terjemahan] They greeted me with a smile.",
+        "id": "They greeted me with a smile.",
         "level": "n3",
         "tags": [
           "umum"
@@ -1077,7 +1077,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "ナンシーはなかなか笑顔を見せない。",
-        "id": "[Terjemahan] Nancy seldom smiles.",
+        "id": "Nancy seldom smiles.",
         "level": "n3",
         "tags": [
           "umum"
@@ -1110,7 +1110,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "熱はエネルギーの一種である。",
-        "id": "[Terjemahan] Heat is a form of energy.",
+        "id": "Heat is a form of energy.",
         "level": "n3",
         "tags": [
           "umum"
@@ -1118,7 +1118,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "僕はエネルギーを使い果たした。",
-        "id": "[Terjemahan] I have exhausted my energy.",
+        "id": "I have exhausted my energy.",
         "level": "n3",
         "tags": [
           "umum"
@@ -1151,7 +1151,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "私はそのレコードを買うのに３０００円かかった。",
-        "id": "[Terjemahan] It cost me 3,000 yen to buy the record.",
+        "id": "It cost me 3,000 yen to buy the record.",
         "level": "n3",
         "tags": [
           "umum"
@@ -1159,7 +1159,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "完全な円にはもう見えないのである。",
-        "id": "[Terjemahan] It no longer seems to be a perfect circle.",
+        "id": "It no longer seems to be a perfect circle.",
         "level": "n3",
         "tags": [
           "umum"
@@ -1192,7 +1192,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "御社のお考えを先におっしゃってください。",
-        "id": "[Terjemahan] Please let us know your company's thoughts on this matter first.",
+        "id": "Tolong let us know your company's thoughts on this matter first.",
         "level": "n3",
         "tags": [
           "umum"
@@ -1200,7 +1200,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "お、タエ、このチーズいけるよ。",
-        "id": "[Terjemahan] Oh, Tae, this cheese is a winner!",
+        "id": "Oh, Tae, this cheese is a winner!",
         "level": "n3",
         "tags": [
           "umum"
@@ -1233,7 +1233,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "少年老い易く学成り難し。",
-        "id": "[Terjemahan] Art is long, time is fleeting.",
+        "id": "Art is long, time is fleeting.",
         "level": "n3",
         "tags": [
           "umum"
@@ -1266,7 +1266,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "あなたはオーバーなしですますつもりですか。",
-        "id": "[Terjemahan] Do you mean to do without an overcoat?",
+        "id": "Do you mean to do without an overcoat?",
         "level": "n3",
         "tags": [
           "umum"
@@ -1274,7 +1274,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "このバッグは４キロの重量オーバーです。",
-        "id": "[Terjemahan] This bag is 4 kilograms overweight.",
+        "id": "This bag is 4 kilograms overweight.",
         "level": "n3",
         "tags": [
           "umum"
@@ -1307,7 +1307,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "彼らはレストランの奥の方に座った。",
-        "id": "[Terjemahan] The group was seated in the back of the restaurant.",
+        "id": "The group was seated in the back of the restaurant.",
         "level": "n3",
         "tags": [
           "umum"
@@ -1315,7 +1315,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "心の奥からわきあがる。",
-        "id": "[Terjemahan] I've got a feeling.",
+        "id": "I've got a feeling.",
         "level": "n3",
         "tags": [
           "umum"
@@ -1348,7 +1348,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "ドロシーは彼にすばらしい贈り物を贈った。",
-        "id": "[Terjemahan] Dorothy sent him a nice present.",
+        "id": "Dorothy sent him a nice present.",
         "level": "n3",
         "tags": [
           "umum"
@@ -1356,7 +1356,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "市長は彼に市の鍵を贈った。",
-        "id": "[Terjemahan] The mayor presented him with the key to the city.",
+        "id": "The mayor presented him with the key to the city.",
         "level": "n3",
         "tags": [
           "umum"
@@ -1389,7 +1389,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "彼らは天気についておしゃべりした。",
-        "id": "[Terjemahan] They chatted about the weather.",
+        "id": "They chatted about the weather.",
         "level": "n3",
         "tags": [
           "umum"
@@ -1397,7 +1397,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼女は要するにおしゃべりなんだ。",
-        "id": "[Terjemahan] She is, in brief, a chatterbox.",
+        "id": "She is, in brief, a chatterbox.",
         "level": "n3",
         "tags": [
           "umum"
@@ -1430,7 +1430,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "その嵐の天候は恐ろしかった。",
-        "id": "[Terjemahan] The stormy weather was dreadful.",
+        "id": "The stormy weather was dreadful.",
         "level": "n3",
         "tags": [
           "umum"
@@ -1438,7 +1438,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼は恐ろしい病気にとりつかれた。",
-        "id": "[Terjemahan] He fell a victim to a deadly disease.",
+        "id": "He fell a victim to a deadly disease.",
         "level": "n3",
         "tags": [
           "umum"
@@ -1471,7 +1471,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "若い男の人がドアの前で歌っています。",
-        "id": "[Terjemahan] A young man is singing in front of the door.",
+        "id": "A young man is singing in front of the door.",
         "level": "n3",
         "tags": [
           "umum"
@@ -1479,7 +1479,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "写真のこの男の人を知っていますか。",
-        "id": "[Terjemahan] Do you know this man in the picture?",
+        "id": "Do you know this man in the picture?",
         "level": "n3",
         "tags": [
           "umum"
@@ -1512,7 +1512,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "お前を娘の夫にしよう。",
-        "id": "[Terjemahan] You shall be my daughter's husband.",
+        "id": "You shall be my daughter's husband.",
         "level": "n3",
         "tags": [
           "umum"
@@ -1520,7 +1520,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "今度だけはお前の行いを見逃そう。",
-        "id": "[Terjemahan] I'll overlook your conduct this time.",
+        "id": "I'll overlook your conduct this time.",
         "level": "n3",
         "tags": [
           "umum"
@@ -1553,7 +1553,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "おかげで元気にしております。",
-        "id": "[Terjemahan] They're all fine, thank you.",
+        "id": "They're all fine, thank you.",
         "level": "n3",
         "tags": [
           "umum"
@@ -1561,7 +1561,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "私は疑念を表明せずにはおれない。",
-        "id": "[Terjemahan] I cannot forbear expressing my doubts.",
+        "id": "I cannot forbear expressing my doubts.",
         "level": "n3",
         "tags": [
           "umum"
@@ -1594,7 +1594,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "この会の名称はＥ．Ｓ．Ｓ．とする。",
-        "id": "[Terjemahan] This association shall be called the E.S.S.",
+        "id": "This association shall be called the E.S.S.",
         "level": "n3",
         "tags": [
           "umum"
@@ -1602,7 +1602,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "会に先立って彼らは夕食をとった。",
-        "id": "[Terjemahan] Prior to the meeting, they had dinner.",
+        "id": "Prior to the meeting, they had dinner.",
         "level": "n3",
         "tags": [
           "umum"
@@ -1635,7 +1635,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "彼女は毎週１回映画を見に行く。",
-        "id": "[Terjemahan] She goes to the movies once a week.",
+        "id": "She goes to the movies once a week.",
         "level": "n3",
         "tags": [
           "umum"
@@ -1643,7 +1643,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼は月に２～３回ゴルフをする。",
-        "id": "[Terjemahan] He plays golf two or three times a month.",
+        "id": "He plays golf two or three times a month.",
         "level": "n3",
         "tags": [
           "umum"
@@ -1676,7 +1676,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "君はどれくらいよく海外に行きますか。",
-        "id": "[Terjemahan] How often do you go abroad?",
+        "id": "How often do you go abroad?",
         "level": "n3",
         "tags": [
           "umum"
@@ -1684,7 +1684,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼は海外で勉強しようと決心した。",
-        "id": "[Terjemahan] He made up his mind to study abroad.",
+        "id": "He made up his mind to study abroad.",
         "level": "n3",
         "tags": [
           "umum"
@@ -1717,7 +1717,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "天候のためレースの開始は遅れるだろう。",
-        "id": "[Terjemahan] The weather will delay the start of the race.",
+        "id": "The weather will delay the start of the race.",
         "level": "n3",
         "tags": [
           "umum"
@@ -1725,7 +1725,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "パーティーの開始に間に合うでしょうか。",
-        "id": "[Terjemahan] Will we be in time for the beginning of the party?",
+        "id": "Will we be in time for the beginning of the party?",
         "level": "n3",
         "tags": [
           "umum"
@@ -1758,7 +1758,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "ナンシーは犬を飼いたがっていますか。",
-        "id": "[Terjemahan] Does Nancy want to have a dog?",
+        "id": "Does Nancy want to have a dog?",
         "level": "n3",
         "tags": [
           "umum"
@@ -1766,7 +1766,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼女は小さな黒い犬を飼っている。",
-        "id": "[Terjemahan] She has a small black dog.",
+        "id": "She has a small black dog.",
         "level": "n3",
         "tags": [
           "umum"
@@ -1799,7 +1799,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "銀行に行けばその５０ドルの小切手を現金に換えてくれる。",
-        "id": "[Terjemahan] The bank will cash your fifty dollar check.",
+        "id": "The bank will cash your fifty dollar check.",
         "level": "n3",
         "tags": [
           "umum"
@@ -1807,7 +1807,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "これを現金に換えてもらえますか。",
-        "id": "[Terjemahan] Can you cash these for me?",
+        "id": "Can you cash these for me?",
         "level": "n3",
         "tags": [
           "umum"
@@ -1840,7 +1840,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "お花の水を替えましょう。",
-        "id": "[Terjemahan] Shall I change the water for the flowers?",
+        "id": "Shall I change the water for the flowers?",
         "level": "n3",
         "tags": [
           "umum"
@@ -1848,7 +1848,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "チャンネルを替えてもかまわない？",
-        "id": "[Terjemahan] Do you mind if I change the channel?",
+        "id": "Do you mind if I change the channel?",
         "level": "n3",
         "tags": [
           "umum"
@@ -1881,7 +1881,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "今、誰か係りの者を差し向けます。",
-        "id": "[Terjemahan] I'll send someone up to help you now.",
+        "id": "I'll send someone up to help you now.",
         "level": "n3",
         "tags": [
           "umum"
@@ -1889,7 +1889,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "こちら国際電話の係りです。",
-        "id": "[Terjemahan] Overseas service here.",
+        "id": "Overseas service here.",
         "level": "n3",
         "tags": [
           "umum"
@@ -1922,7 +1922,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "私はかつて大病にかかったことがあった。",
-        "id": "[Terjemahan] Once I had a very bad disease.",
+        "id": "Once I had a very bad disease.",
         "level": "n3",
         "tags": [
           "umum"
@@ -1930,7 +1930,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "食中毒に罹ったことはありますか。",
-        "id": "[Terjemahan] Have you ever had food poisoning?",
+        "id": "Have you ever had food poisoning?",
         "level": "n3",
         "tags": [
           "umum"
@@ -1963,7 +1963,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "メアリーは思いやりに欠けている。",
-        "id": "[Terjemahan] Mary is lacking in delicacy.",
+        "id": "Mary is lacking in delicacy.",
         "level": "n3",
         "tags": [
           "umum"
@@ -1971,7 +1971,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "奥歯が欠けました。",
-        "id": "[Terjemahan] My back tooth has chipped.",
+        "id": "My back tooth has chipped.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2004,7 +2004,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "旅行者の数が近年大きく増加した。",
-        "id": "[Terjemahan] The number of tourists has increased greatly in recent years.",
+        "id": "The number of tourists has increased greatly in recent years.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2012,7 +2012,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "市内を走る自動車の数が増えた。",
-        "id": "[Terjemahan] The number of cars driven in the city has increased.",
+        "id": "The number of cars driven in the city has increased.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2045,7 +2045,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "あの子は２０まで数えられる。",
-        "id": "[Terjemahan] That child can count to twenty.",
+        "id": "That child can count to twenty.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2053,7 +2053,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "目を閉じて、１０まで数えなさい。",
-        "id": "[Terjemahan] Close your eyes, and count to ten.",
+        "id": "Close your eyes, and count to ten.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2086,7 +2086,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "卵は硬くゆでてください。",
-        "id": "[Terjemahan] Boil the eggs hard.",
+        "id": "Boil the eggs hard.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2094,7 +2094,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "ダイヤモンドほど硬いものはない。",
-        "id": "[Terjemahan] Nothing is as hard as a diamond.",
+        "id": "Nothing is as hard as a diamond.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2127,7 +2127,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "金持ちが必ずしも幸福とは限らない。",
-        "id": "[Terjemahan] The rich are not always happy.",
+        "id": "The rich are not always happy.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2135,7 +2135,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼女は金持ちなのに幸せではない。",
-        "id": "[Terjemahan] For all her riches, she's not happy.",
+        "id": "For all her riches, she's not happy.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2168,7 +2168,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "その機械はほこりをかぶっていた。",
-        "id": "[Terjemahan] The machine was coated with dust.",
+        "id": "The machine was coated with dust.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2176,7 +2176,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "教室では帽子を被るべきではない。",
-        "id": "[Terjemahan] Your hat should not be worn in the classroom.",
+        "id": "Your hat should not be worn in the classroom.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2209,7 +2209,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "火曜の朝までにすべて終えなければならないのです。",
-        "id": "[Terjemahan] We must finish everything before Tuesday morning.",
+        "id": "We must finish everything before Tuesday morning.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2217,7 +2217,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "来週の月曜と火曜は連休だ。",
-        "id": "[Terjemahan] Next Monday and Tuesday are consecutive holidays.",
+        "id": "Next Monday and Tuesday are consecutive holidays.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2250,7 +2250,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "ほとんど空なのでガソリンを入れなくてはなりません。",
-        "id": "[Terjemahan] I need to put some gas in the car, as it's almost empty.",
+        "id": "I need to put some gas in the car, as it's almost empty.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2258,7 +2258,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "その箱は空であることがわかった。",
-        "id": "[Terjemahan] I found the box empty.",
+        "id": "I found the box empty.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2291,7 +2291,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "この河はニューオリンズまで続いている。",
-        "id": "[Terjemahan] This river flows all the way to New Orleans.",
+        "id": "This river flows all the way to New Orleans.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2299,7 +2299,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "この河で泳ぐのは危ない。",
-        "id": "[Terjemahan] It's dangerous to swim in this river.",
+        "id": "It's dangerous to swim in this river.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2332,7 +2332,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "くつは革でつくられている。",
-        "id": "[Terjemahan] The shoes are made of leather.",
+        "id": "The shoes are made of leather.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2340,7 +2340,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "このバッグは革でできています。",
-        "id": "[Terjemahan] This bag is made of leather.",
+        "id": "This bag is made of leather.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2373,7 +2373,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "動物の皮は毛でおおわれている。",
-        "id": "[Terjemahan] The skin of animals is covered with hair.",
+        "id": "The skin of animals is covered with hair.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2381,7 +2381,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼らは腹の皮がよじれるほど笑った。",
-        "id": "[Terjemahan] They split their sides laughing.",
+        "id": "They split their sides laughing.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2414,7 +2414,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "彼女は可哀想に思って、その子達の面倒をみた。",
-        "id": "[Terjemahan] She cared for the children out of charity.",
+        "id": "She cared for the children out of charity.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2447,7 +2447,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "兄は私にかわいらしい人形をくれました。",
-        "id": "[Terjemahan] My brother gave me a cute doll.",
+        "id": "My brother gave me a cute doll.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2455,7 +2455,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼女は本当にかわいらしく見える。",
-        "id": "[Terjemahan] She really looks pretty.",
+        "id": "She really looks pretty.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2488,7 +2488,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "勘定は合計５００ドルになる。",
-        "id": "[Terjemahan] The bill amounts to 500 dollars.",
+        "id": "The bill amounts to 500 dollars.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2496,7 +2496,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "勘定は全部で５０ドルになります。",
-        "id": "[Terjemahan] The bill amounts to fifty dollars.",
+        "id": "The bill amounts to fifty dollars.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2529,7 +2529,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "彼はその新しい機械を試してみた。",
-        "id": "[Terjemahan] He tried out that new machine.",
+        "id": "He tried out that new machine.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2537,7 +2537,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "わかった。機械が空きしだい送る。",
-        "id": "[Terjemahan] OK. I'll send it out as soon as a machine is available.",
+        "id": "OK. I'll send it out as soon as a machine is available.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2570,7 +2570,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "よくもまあ私にそんな口がきけるね。",
-        "id": "[Terjemahan] How dare you speak to me like that?",
+        "id": "How dare you speak to me like that?",
         "level": "n3",
         "tags": [
           "umum"
@@ -2578,7 +2578,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "この薬は君にはおおいに効くと思う。",
-        "id": "[Terjemahan] I think this medicine will do you a lot of good.",
+        "id": "I think this medicine will do you a lot of good.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2611,7 +2611,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "こんな余計な機能なんでつけたんだろう。",
-        "id": "[Terjemahan] What did they add this needless function for?",
+        "id": "What did they add this needless function for?",
         "level": "n3",
         "tags": [
           "umum"
@@ -2619,7 +2619,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "ブレーキの機能は車を止めることだ。",
-        "id": "[Terjemahan] The function of the brake is to stop the car.",
+        "id": "The function of the brake is to stop the car.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2652,7 +2652,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "その事件には何となく気味の悪いところがあった。",
-        "id": "[Terjemahan] There was something weird about the incident.",
+        "id": "There was something weird about the incident.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2685,7 +2685,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "彼は１０年級に在学中だ。",
-        "id": "[Terjemahan] He is in the tenth grade.",
+        "id": "Dia in the tenth grade.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2693,7 +2693,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "４級の漢字をどれだけ覚えていますか。",
-        "id": "[Terjemahan] How many grade four kanji have you memorised?",
+        "id": "How many grade four kanji have you memorised?",
         "level": "n3",
         "tags": [
           "umum"
@@ -2726,7 +2726,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "新トンネルは旧トンネルの２倍の長さだ。",
-        "id": "[Terjemahan] The new tunnel is twice as long as the old one.",
+        "id": "The new tunnel is twice as long as the old one.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2734,7 +2734,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "官僚は旧法規の改正に関して、成り行きを見守っています。",
-        "id": "[Terjemahan] Bureaucrats are testing the waters over revising old regulations.",
+        "id": "Bureaucrats are testing the waters over revising old regulations.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2767,7 +2767,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "教科書はどうしたらいいんでしょうか。",
-        "id": "[Terjemahan] Where do we get the textbooks?",
+        "id": "Where do we get the textbooks?",
         "level": "n3",
         "tags": [
           "umum"
@@ -2775,7 +2775,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "教科書の５０ページを開きなさい。",
-        "id": "[Terjemahan] Open your texts to page 50.",
+        "id": "Open your texts to page 50.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2808,7 +2808,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "私の兄は教師です。",
-        "id": "[Terjemahan] My older brother is a teacher.",
+        "id": "My older brother is a teacher.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2816,7 +2816,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼は教師をして生計を立てている。",
-        "id": "[Terjemahan] He earns his living by teaching.",
+        "id": "He earns his living by teaching.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2849,7 +2849,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "彼は月曜から金曜まで働く。",
-        "id": "[Terjemahan] He works from Monday to Friday.",
+        "id": "He works from Monday to Friday.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2857,7 +2857,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "私は月曜と金曜に英語を勉強する。",
-        "id": "[Terjemahan] I study English on Monday and Friday.",
+        "id": "I study English on Monday and Friday.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2890,7 +2890,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "昨夜はぐっすり眠れなかった。",
-        "id": "[Terjemahan] I couldn't sleep well last night.",
+        "id": "I couldn't sleep well last night.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2898,7 +2898,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "疲れた少年はぐっすり眠っている。",
-        "id": "[Terjemahan] The tired boy is fast asleep.",
+        "id": "The tired boy is fast asleep.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2931,7 +2931,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "クラシックはありません。",
-        "id": "[Terjemahan] I don't have any classical music.",
+        "id": "I don't have any classical music.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2939,7 +2939,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "私はクラシックが好きではない。",
-        "id": "[Terjemahan] I don't like classical music.",
+        "id": "I don't like classical music.",
         "level": "n3",
         "tags": [
           "umum"
@@ -2972,7 +2972,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "このあたりはお詳しいですか。",
-        "id": "[Terjemahan] Are you familiar with this area?",
+        "id": "Are you familiar with this area?",
         "level": "n3",
         "tags": [
           "umum"
@@ -2980,7 +2980,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "もっと詳しい情報が欲しい。",
-        "id": "[Terjemahan] I want more detailed information.",
+        "id": "I want more detailed information.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3013,7 +3013,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "ラグビーをしているとき、彼はけがをした。",
-        "id": "[Terjemahan] Playing rugby, he got injured.",
+        "id": "Playing rugby, he got injured.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3021,7 +3021,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "「あいたたたー」「ケガないか？」",
-        "id": "[Terjemahan] \"Ow-ow-ouch.\" \"Are you alright?\"",
+        "id": "\"Ow-ow-ouch.\" \"Are you alright?\"",
         "level": "n3",
         "tags": [
           "umum"
@@ -3054,7 +3054,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "国会は来週月曜に開かれる。",
-        "id": "[Terjemahan] The Diet will open next Monday.",
+        "id": "The Diet will open next Monday.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3062,7 +3062,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "私は月曜と金曜に英語を勉強する。",
-        "id": "[Terjemahan] I study English on Monday and Friday.",
+        "id": "I study English on Monday and Friday.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3095,7 +3095,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "ケンとけんかしたのか。",
-        "id": "[Terjemahan] Did you have a fight with Ken?",
+        "id": "Did you have a fight with Ken?",
         "level": "n3",
         "tags": [
           "umum"
@@ -3103,7 +3103,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼らは絶えずけんかばかりしていた。",
-        "id": "[Terjemahan] They were constantly quarreling.",
+        "id": "They were constantly quarreling.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3136,7 +3136,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "彼らは家の建築にとりかかった。",
-        "id": "[Terjemahan] They set about building a house.",
+        "id": "They set about building a house.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3144,7 +3144,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼らは建築においてとても進歩していた。",
-        "id": "[Terjemahan] They were making great progress in architecture.",
+        "id": "They were making great progress in architecture.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3177,7 +3177,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "メキシコではなに語を話すのですか。",
-        "id": "[Terjemahan] What is the language spoken in Mexico?",
+        "id": "What is the language spoken in Mexico?",
         "level": "n3",
         "tags": [
           "umum"
@@ -3185,7 +3185,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "２００語以内でその文章を要約してください。",
-        "id": "[Terjemahan] Sum up the passage within 200 words.",
+        "id": "Sum up the passage within 200 words.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3218,7 +3218,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "今夜の講演は誰ですか。",
-        "id": "[Terjemahan] Who is going to speak tonight?",
+        "id": "Who is going to speak tonight?",
         "level": "n3",
         "tags": [
           "umum"
@@ -3226,7 +3226,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "その講演を聞き逃して残念です。",
-        "id": "[Terjemahan] I regret missing the speech.",
+        "id": "I regret missing the speech.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3259,7 +3259,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "この数字の列を合計しなさい。",
-        "id": "[Terjemahan] Add up this column of figures.",
+        "id": "Add up this column of figures.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3267,7 +3267,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "それらの数字は、合計があわない。",
-        "id": "[Terjemahan] These figures don't add up.",
+        "id": "These figures don't add up.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3300,7 +3300,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "私の父と兄はこの工場で働いている。",
-        "id": "[Terjemahan] My father and my brother work in this factory.",
+        "id": "My father and my brother work in this factory.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3308,7 +3308,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "工場では彼を欲しがりませんでした。",
-        "id": "[Terjemahan] The factory did not want him.",
+        "id": "The factory did not want him.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3341,7 +3341,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "このページをコピーして下さい。",
-        "id": "[Terjemahan] Please copy this page.",
+        "id": "Tolong copy this page.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3349,7 +3349,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "これをコピーしてくれますか。",
-        "id": "[Terjemahan] Can you copy this for me?",
+        "id": "Can you copy this for me?",
         "level": "n3",
         "tags": [
           "umum"
@@ -3382,7 +3382,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "おひる頃やっと太陽が顔を出した。",
-        "id": "[Terjemahan] The sun at last broke through at about noon.",
+        "id": "The sun at last broke through at about noon.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3390,7 +3390,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "金がなくなる頃にはもうひと月ある。",
-        "id": "[Terjemahan] When the money runs out, there'll still be one month left.",
+        "id": "When the money runs out, there'll still be one month left.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3423,7 +3423,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "彼の言ってる事を理解するのは困難だ。",
-        "id": "[Terjemahan] I found it difficult to understand what he was saying.",
+        "id": "I found it difficult to understand what he was saying.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3431,7 +3431,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "仕事がだんだん困難になってきた。",
-        "id": "[Terjemahan] The work begins to get more difficult.",
+        "id": "The work begins to get more difficult.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3464,7 +3464,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "彼は宿題を今日終えねばならない。",
-        "id": "[Terjemahan] He must finish his homework today.",
+        "id": "He must finish his homework today.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3472,7 +3472,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼がその会社を今日の会社にした。",
-        "id": "[Terjemahan] He has made the company what it is today.",
+        "id": "He has made the company what it is today.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3505,7 +3505,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "そのコンピューターは新しいです。",
-        "id": "[Terjemahan] The computer is new.",
+        "id": "The computer is new.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3513,7 +3513,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "コンピューター業界は景気がいい。",
-        "id": "[Terjemahan] The computer industry is enjoying a boom.",
+        "id": "The computer industry is enjoying a boom.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3546,7 +3546,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "やつらに実力の差を見せ付けてやった。",
-        "id": "[Terjemahan] I showed them the difference of ability.",
+        "id": "I showed them the difference of ability.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3554,7 +3554,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "２つの意見に大した差はない。",
-        "id": "[Terjemahan] There is not much difference between the two opinions.",
+        "id": "Ada not much difference between the two opinions.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3587,7 +3587,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "あの店はサービスが良い。",
-        "id": "[Terjemahan] That store gives good service.",
+        "id": "That store gives good service.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3595,7 +3595,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "あのレストランはサービスがよい。",
-        "id": "[Terjemahan] They give good service at that restaurant.",
+        "id": "They give good service at that restaurant.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3628,7 +3628,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "すぐれた材料で作られた家具は、売れ行きがよい。",
-        "id": "[Terjemahan] Furniture made of good materials sells well.",
+        "id": "Furniture made of good materials sells well.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3636,7 +3636,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "私たちには材料に加えて見本も必要だ。",
-        "id": "[Terjemahan] We need a sample in addition to materials.",
+        "id": "We need a sample in addition to materials.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3669,7 +3669,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "これは母の作品の一つです。",
-        "id": "[Terjemahan] It is something my mother made.",
+        "id": "It is something my mother made.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3677,7 +3677,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼は不眠不休でその作品を仕上げた。",
-        "id": "[Terjemahan] He finished his work without sleep or rest.",
+        "id": "He finished his work without sleep or rest.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3710,7 +3710,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "桜もそろそろじゃないでしょうか。",
-        "id": "[Terjemahan] It's almost time for the cherry blossoms.",
+        "id": "It's almost time for the cherry blossoms.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3718,7 +3718,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "かつて庭に大きな桜の木があった。",
-        "id": "[Terjemahan] There used to be a big cherry tree in the garden.",
+        "id": "There used to be a big cherry tree in the garden.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3751,7 +3751,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "その作家は私たちによく知られています。",
-        "id": "[Terjemahan] The writer is well known to us.",
+        "id": "The writer is well known to us.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3759,7 +3759,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼らはその作家を一流だと思った。",
-        "id": "[Terjemahan] They looked on the writer as first-rate.",
+        "id": "They looked on the writer as first-rate.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3792,7 +3792,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "私はこの手のことにはさっぱりだ。",
-        "id": "[Terjemahan] I'm a total stranger to things of this kind.",
+        "id": "I'm a total stranger to things of this kind.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3800,7 +3800,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "あなたをさっぱり理解できない。",
-        "id": "[Terjemahan] I can never make you out.",
+        "id": "I can never make you out.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3833,7 +3833,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "彼女はテーブルの上に皿を置いた。",
-        "id": "[Terjemahan] She set the tray down on the table.",
+        "id": "She set the tray down on the table.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3841,7 +3841,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "私は彼女が皿を洗うのを手伝った。",
-        "id": "[Terjemahan] I helped her wash dishes.",
+        "id": "I helped her wash dishes.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3874,7 +3874,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "その小説は彼の名声を更に高めた。",
-        "id": "[Terjemahan] The novel added to his reputation.",
+        "id": "The novel added to his reputation.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3882,7 +3882,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "この木は高いがあの木は更に高い。",
-        "id": "[Terjemahan] This tree is tall, but that one is even taller.",
+        "id": "This tree is tall, but that one is even taller.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3915,7 +3915,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "参考のためにカタログをお送りください。",
-        "id": "[Terjemahan] Please send me a catalogue for review.",
+        "id": "Tolong send me a catalogue for review.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3923,7 +3923,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "ご参考までに。",
-        "id": "[Terjemahan] For your information.",
+        "id": "For your information.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3956,7 +3956,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "金持ちが幸せとは限らない。",
-        "id": "[Terjemahan] The rich are not always happy.",
+        "id": "The rich are not always happy.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3964,7 +3964,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼女は幸せの絶頂ってところだね。",
-        "id": "[Terjemahan] She must be on cloud nine.",
+        "id": "She must be on cloud nine.",
         "level": "n3",
         "tags": [
           "umum"
@@ -3997,7 +3997,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "彼は事故でその式に出席できなかった。",
-        "id": "[Terjemahan] An accident prohibited his attending the ceremony.",
+        "id": "An accident prohibited his attending the ceremony.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4005,7 +4005,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "体育館は式のために使用されます。",
-        "id": "[Terjemahan] The gym is used for the ceremony.",
+        "id": "The gym is used for the ceremony.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4038,7 +4038,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "ジェーン自身がこの手紙を書いた。",
-        "id": "[Terjemahan] Jane wrote the letter herself.",
+        "id": "Jane wrote the letter herself.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4046,7 +4046,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "君自身が会合に出席すべきである。",
-        "id": "[Terjemahan] You should attend the meeting yourself.",
+        "id": "You should attend the meeting yourself.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4079,7 +4079,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "コーヒーは舌が焼けるほど熱かった。",
-        "id": "[Terjemahan] The coffee was so hot that I nearly burned my tongue.",
+        "id": "The coffee was so hot that I nearly burned my tongue.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4087,7 +4087,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼は熱いお茶で舌をやけどした。",
-        "id": "[Terjemahan] He scalded his tongue on the hot tea.",
+        "id": "He scalded his tongue on the hot tea.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4120,7 +4120,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "事態はかなり切迫している。",
-        "id": "[Terjemahan] The matter is really pressing.",
+        "id": "The matter is really pressing.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4128,7 +4128,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "心配するな。事態は好転している。",
-        "id": "[Terjemahan] Take it easy. Things are looking up.",
+        "id": "Take it easy. Things are looking up.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4161,7 +4161,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "小さいおうちはお金で売れなかったのでじーとそこにとどまったままながめつづけていました。",
-        "id": "[Terjemahan] She couldn't be sold for gold or silver, so she just stayed there and watched.",
+        "id": "She couldn't be sold for gold or silver, so she just stayed there and watched.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4194,7 +4194,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "彼の姉妹は二人とも美人です。",
-        "id": "[Terjemahan] Both his sisters are beautiful.",
+        "id": "Both his sisters are beautiful.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4202,7 +4202,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "姉妹はやっきになって言い争った。",
-        "id": "[Terjemahan] The sisters dueled with each other verbally.",
+        "id": "The sisters dueled with each other verbally.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4235,7 +4235,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "本とノートをしまいなさい。",
-        "id": "[Terjemahan] Put away your books and notebooks.",
+        "id": "Put away your books and notebooks.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4243,7 +4243,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "やってしまったことは元に戻らない。",
-        "id": "[Terjemahan] What is done cannot be undone.",
+        "id": "What is done cannot be undone.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4276,7 +4276,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "しまった！ウッカリして、携帯電話をお店に忘れてきちゃった。",
-        "id": "[Terjemahan] Oh no! I wasn't paying attention and left my cell phone in the restaurant!",
+        "id": "Oh no! I wasn't paying attention and left my cell phone in the restaurant!",
         "level": "n3",
         "tags": [
           "umum"
@@ -4309,7 +4309,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "退職する前に彼は事務を渡した。",
-        "id": "[Terjemahan] Before he retired, he had handed over charge of his office.",
+        "id": "Before he retired, he had handed over charge of his office.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4317,7 +4317,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼は事務に従事している。",
-        "id": "[Terjemahan] He is engaged in business.",
+        "id": "Dia engaged in business.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4350,7 +4350,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "ギャンブルで味を占めるとなかなか止められない。",
-        "id": "[Terjemahan] Once you get the taste for gambling, it's hard to give it up.",
+        "id": "Once you get the taste for gambling, it's hard to give it up.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4358,7 +4358,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "広告費はこの会社の経費の約７％を占めている。",
-        "id": "[Terjemahan] Advertising makes up about 7% of this company's expenses.",
+        "id": "Advertising makes up about 7% of this company's expenses.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4391,7 +4391,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "「安いですね。じゃあ10ヤードください」小娘が答えた。",
-        "id": "[Terjemahan] \"That's cheap. I'll take ten yards,\" the girl answered.",
+        "id": "\"That's cheap. I'll take ten yards,\" the girl answered.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4399,7 +4399,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "じゃあパーティーで会いましょう。",
-        "id": "[Terjemahan] See you at the party.",
+        "id": "See you at the party.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4432,7 +4432,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "警察は簡単に銃を使ってはいけない。",
-        "id": "[Terjemahan] Police can't be trigger happy.",
+        "id": "Police can't be trigger happy.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4440,7 +4440,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "銃にはたまが入ってなかった。",
-        "id": "[Terjemahan] The gun was out of shot.",
+        "id": "The gun was out of shot.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4473,7 +4473,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "もう２週間たったら帰ります。",
-        "id": "[Terjemahan] I will be back in another two weeks.",
+        "id": "I will be back in another two weeks.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4481,7 +4481,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼女が病気になってから３週間だ。",
-        "id": "[Terjemahan] She has been ill for three weeks.",
+        "id": "She has been ill for three weeks.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4514,7 +4514,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "私はニワトコジュースが好きだ。",
-        "id": "[Terjemahan] I love elderberry juice.",
+        "id": "I love elderberry juice.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4522,7 +4522,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "このジュースは少しすっぱい。",
-        "id": "[Terjemahan] This juice tastes sour.",
+        "id": "This juice tastes sour.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4555,7 +4555,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "収入以上の生活をするな。",
-        "id": "[Terjemahan] Do not live above your income.",
+        "id": "Do not live above your income.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4563,7 +4563,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼には給料の他に少し収入がある。",
-        "id": "[Terjemahan] He has some income in addition to his salary.",
+        "id": "He has some income in addition to his salary.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4596,7 +4596,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "彼は商用で上京した。",
-        "id": "[Terjemahan] He came up to Tokyo on business.",
+        "id": "He came up to Tokyo on business.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4604,7 +4604,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "高校を出るとすぐ、私は上京した。",
-        "id": "[Terjemahan] On leaving high school, I went to Tokyo.",
+        "id": "On leaving high school, I went to Tokyo.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4637,7 +4637,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "そちらの条件を受け入れましょう。",
-        "id": "[Terjemahan] We will accept your conditions.",
+        "id": "We will accept your conditions.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4645,7 +4645,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼はこの条件でがまんしています。",
-        "id": "[Terjemahan] He puts up with these terms.",
+        "id": "He puts up with these terms.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4678,7 +4678,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "その城は１６１０年に建てられた。",
-        "id": "[Terjemahan] The castle dates back to 1610.",
+        "id": "The castle dates back to 1610.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4686,7 +4686,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "その町の東の方に古い城があった。",
-        "id": "[Terjemahan] There was an old castle to the east of the town.",
+        "id": "There was an old castle to the east of the town.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4719,7 +4719,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "この庭の美しさは自然より人工のおかげだ。",
-        "id": "[Terjemahan] This beautiful garden owes more to art than to nature.",
+        "id": "This beautiful garden owes more to art than to nature.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4727,7 +4727,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "その湖は自然のものではなく人工によって造られたものである。",
-        "id": "[Terjemahan] The lake is made not by nature but by art.",
+        "id": "The lake is made not by nature but by art.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4760,7 +4760,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "きっと彼はあなたを信じると思いますよ。",
-        "id": "[Terjemahan] I am sure of his trusting you.",
+        "id": "I am sure of his trusting you.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4768,7 +4768,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼らは地球が平らであると信じた。",
-        "id": "[Terjemahan] They believed that the earth was flat.",
+        "id": "They believed that the earth was flat.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4801,7 +4801,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "フィリップとトムは親戚である。",
-        "id": "[Terjemahan] Philip and Tom are related to each other.",
+        "id": "Philip and Tom are related to each other.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4809,7 +4809,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "キュウリはスイカの親戚だ。",
-        "id": "[Terjemahan] Cucumbers are related to watermelons.",
+        "id": "Cucumbers are related to watermelons.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4842,7 +4842,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "息子はもう私と同じ身長だ。",
-        "id": "[Terjemahan] My son is now as tall as I am.",
+        "id": "My son is now as tall as I am.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4850,7 +4850,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼はもう父親とほぼ同じ身長だ。",
-        "id": "[Terjemahan] He is now almost as tall as his father.",
+        "id": "Dia now almost as tall as his father.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4883,7 +4883,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "今日は少し頭痛がする。",
-        "id": "[Terjemahan] I have a slight headache today.",
+        "id": "I have a slight headache today.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4891,7 +4891,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "この薬で頭痛はおさまるでしょう。",
-        "id": "[Terjemahan] This medicine will soothe your headache.",
+        "id": "This medicine will soothe your headache.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4924,7 +4924,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "この時計はあれよりもずっと高価だ。",
-        "id": "[Terjemahan] This clock is far more expensive than that.",
+        "id": "This clock is far more expensive than that.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4932,7 +4932,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼女はずっと質問ばかりしていた。",
-        "id": "[Terjemahan] She kept on asking me questions the whole time.",
+        "id": "She kept on asking me questions the whole time.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4965,7 +4965,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "私はもう既に朝食を済ませました。",
-        "id": "[Terjemahan] I've already eaten breakfast.",
+        "id": "I've already eaten breakfast.",
         "level": "n3",
         "tags": [
           "umum"
@@ -4973,7 +4973,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼女は既にその話を知っていた。",
-        "id": "[Terjemahan] She knew the story already.",
+        "id": "She knew the story already.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5006,7 +5006,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "私たちは彼にスピーチを頼んだ。",
-        "id": "[Terjemahan] We called on him for a speech.",
+        "id": "We called on him for a speech.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5014,7 +5014,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼はスピーチの最中に気を失った。",
-        "id": "[Terjemahan] He fainted in the midst of his speech.",
+        "id": "He fainted in the midst of his speech.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5047,7 +5047,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "あなたの頭痛は過労のせいだ。",
-        "id": "[Terjemahan] Your headache comes from overwork.",
+        "id": "Your headache comes from overwork.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5055,7 +5055,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼は失敗を弟のせいだと非難した。",
-        "id": "[Terjemahan] He blamed the failure on his brother.",
+        "id": "He blamed the failure on his brother.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5121,7 +5121,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "あいつもアバウトな性格だよな。",
-        "id": "[Terjemahan] He's not a very meticulous guy.",
+        "id": "He's not a very meticulous guy.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5129,7 +5129,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼女は性格がお父さんそっくりだ。",
-        "id": "[Terjemahan] She resembles her father in character.",
+        "id": "She resembles her father in character.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5162,7 +5162,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "新しい税金がワインにかせられた。",
-        "id": "[Terjemahan] A new tax was imposed on wine.",
+        "id": "A new tax was imposed on wine.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5170,7 +5170,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "どんな品物に税金がかかりますか。",
-        "id": "[Terjemahan] What sort of thing must I pay tax on?",
+        "id": "What sort of thing must I pay tax on?",
         "level": "n3",
         "tags": [
           "umum"
@@ -5203,7 +5203,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "母親はトムの咳のことを心配している。",
-        "id": "[Terjemahan] Tom's mother worries about his cough.",
+        "id": "Tom's mother worries about his cough.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5211,7 +5211,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "おじいさんは、咳で何度も話を中断した。",
-        "id": "[Terjemahan] The old man's narrative was punctuated by coughs.",
+        "id": "The old man's narrative was punctuated by coughs.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5244,7 +5244,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "アキラは上手なテニス選手です。",
-        "id": "[Terjemahan] Akira is a good tennis player.",
+        "id": "Akira is a good tennis player.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5252,7 +5252,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼はサッカーの選手として有名だ。",
-        "id": "[Terjemahan] He is noted as a soccer player.",
+        "id": "Dia noted as a soccer player.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5285,7 +5285,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "このコンピューターの操作は難しい。",
-        "id": "[Terjemahan] Operating this computer is tricky.",
+        "id": "Operating this computer is tricky.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5293,7 +5293,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "その操作に全く危険はありません。",
-        "id": "[Terjemahan] The operation is quite free from danger.",
+        "id": "The operation is quite free from danger.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5326,7 +5326,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "そして世はこの方によって造られた。",
-        "id": "[Terjemahan] And the world was made through him.",
+        "id": "And the world was made through him.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5359,7 +5359,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "それでもそれはやはり本当だ。",
-        "id": "[Terjemahan] It is none the less true.",
+        "id": "It is none the less true.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5367,7 +5367,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "それでも、おまえは人間だ。",
-        "id": "[Terjemahan] Even so, you are a human.",
+        "id": "Even so, you are a human.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5400,7 +5400,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "この台の上に花瓶を置いてはいけません。",
-        "id": "[Terjemahan] Please don't place a vase on this stand.",
+        "id": "Tolong don't place a vase on this stand.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5408,7 +5408,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "車を２台もつ人はほとんどいない。",
-        "id": "[Terjemahan] Few people have two cars.",
+        "id": "Few people have two cars.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5441,7 +5441,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "時が経つうちに彼は心変わりした。",
-        "id": "[Terjemahan] In the course of time, he changed his mind.",
+        "id": "In the course of time, he changed his mind.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5449,7 +5449,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "時が経つにつれて、問題が生じてきた。",
-        "id": "[Terjemahan] The problem came about as time passed.",
+        "id": "The problem came about as time passed.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5482,7 +5482,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "彼は東京へ来るたび私を訪ねてきた。",
-        "id": "[Terjemahan] He visited me every time he came up to Tokyo.",
+        "id": "He visited me every time he came up to Tokyo.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5490,7 +5490,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "私が訪ねるたびあなたは留守だ。",
-        "id": "[Terjemahan] Every time I call on you, you're out.",
+        "id": "Every time I call on you, you're out.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5523,7 +5523,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "旅はよりよい教育法の一つである。",
-        "id": "[Terjemahan] Travel is one of the better forms of education.",
+        "id": "Travel is one of the better forms of education.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5531,7 +5531,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "以前は、人々は歩いて旅をしたものだった。",
-        "id": "[Terjemahan] People used to travel on foot.",
+        "id": "People used to travel on foot.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5564,7 +5564,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "通りを歩いていたとき、私はたまたま旧友に出会った。",
-        "id": "[Terjemahan] Walking along the street, I happened to meet my old friend.",
+        "id": "Walking along the street, I happened to meet my old friend.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5572,7 +5572,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "私はたまたま駅で先生に出会った。",
-        "id": "[Terjemahan] It happened that I saw my teacher at the station.",
+        "id": "It happened that I saw my teacher at the station.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5605,7 +5605,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "もう一度試したが失敗しただけだった。",
-        "id": "[Terjemahan] I tried it again, only to fail.",
+        "id": "I tried it again, only to fail.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5613,7 +5613,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "おいしいよ。試してみるべきだよ。",
-        "id": "[Terjemahan] It's good. You should try it.",
+        "id": "It's good. You should try it.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5646,7 +5646,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "「誰か車の中にいるのですか」「トムがいます」",
-        "id": "[Terjemahan] \"Who is in the car?\" \"Tom is.\"",
+        "id": "\"Who is in the car?\" \"Tom is.\"",
         "level": "n3",
         "tags": [
           "umum"
@@ -5654,7 +5654,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼女は彼を他の誰かとまちがえた。",
-        "id": "[Terjemahan] She mixed him up with someone else.",
+        "id": "She mixed him up with someone else.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5687,7 +5687,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "彼は地に足がついていない。",
-        "id": "[Terjemahan] He doesn't have his feet on the ground.",
+        "id": "He doesn't have his feet on the ground.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5695,7 +5695,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼女はあきらめてその地に住むことにした。",
-        "id": "[Terjemahan] She reconciled herself to living there.",
+        "id": "She reconciled herself to living there.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5728,7 +5728,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "あなたはこの地区をよく知っていますか。",
-        "id": "[Terjemahan] Are you familiar with this area?",
+        "id": "Are you familiar with this area?",
         "level": "n3",
         "tags": [
           "umum"
@@ -5736,7 +5736,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼はロンドンの貧しい地区に住んでいる。",
-        "id": "[Terjemahan] He lives in a poor district of London.",
+        "id": "He lives in a poor district of London.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5769,7 +5769,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "お願いだ！俺にチャンスをくれ。",
-        "id": "[Terjemahan] Come on! Give me a chance.",
+        "id": "Come on! Give me a chance.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5777,7 +5777,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "私は最後のチャンスを待ち構えた。",
-        "id": "[Terjemahan] I watched for the last chance.",
+        "id": "I watched for the last chance.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5810,7 +5810,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "１０人中３人はビデオを持っている。",
-        "id": "[Terjemahan] Three out of ten persons have a video.",
+        "id": "Three out of ten persons have a video.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5818,7 +5818,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼は旅行中に病気になった。",
-        "id": "[Terjemahan] He got sick during the trip.",
+        "id": "He got sick during the trip.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5851,7 +5851,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "あなたの新しい車は調子よく動いていますか。",
-        "id": "[Terjemahan] Is your new car behaving well?",
+        "id": "Is your new car behaving well?",
         "level": "n3",
         "tags": [
           "umum"
@@ -5859,7 +5859,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "声の調子が感情を伝える事もある。",
-        "id": "[Terjemahan] Tone of voice can indicate feelings.",
+        "id": "Tone of voice can indicate feelings.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5892,7 +5892,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "彼女に直接言ったらどうですか。",
-        "id": "[Terjemahan] Why don't you tell her directly?",
+        "id": "Why don't you tell her directly?",
         "level": "n3",
         "tags": [
           "umum"
@@ -5900,7 +5900,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "私は彼から直接その情報を入手した。",
-        "id": "[Terjemahan] I got the information from him directly.",
+        "id": "I got the information from him directly.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5933,7 +5933,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "友人の好意で職に就くことができた。",
-        "id": "[Terjemahan] I was able to get a job through the good offices of my friend.",
+        "id": "I was able to get a job through the good offices of my friend.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5941,7 +5941,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "私たちは家路についた。",
-        "id": "[Terjemahan] We set out for home.",
+        "id": "We set out for home.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5974,7 +5974,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "彼女は昔、日記を付けていたが今はつけていない。",
-        "id": "[Terjemahan] She used to keep a diary, but she no longer does.",
+        "id": "She used to keep a diary, but she no longer does.",
         "level": "n3",
         "tags": [
           "umum"
@@ -5982,7 +5982,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "君この車に高い値を付けすぎだよ。",
-        "id": "[Terjemahan] You are asking too much for this car.",
+        "id": "You are asking too much for this car.",
         "level": "n3",
         "tags": [
           "umum"
@@ -6015,7 +6015,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "カタツムリがすっと角を出した。",
-        "id": "[Terjemahan] The snail shot out its horns.",
+        "id": "The snail shot out its horns.",
         "level": "n3",
         "tags": [
           "umum"
@@ -6023,7 +6023,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "水牛は大きな角をもっている。",
-        "id": "[Terjemahan] Buffaloes have big horns.",
+        "id": "Buffaloes have big horns.",
         "level": "n3",
         "tags": [
           "umum"
@@ -6056,7 +6056,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "流産はとても辛い経験です。",
-        "id": "[Terjemahan] Miscarriage is a heart-breaking experience.",
+        "id": "Miscarriage is a heart-breaking experience.",
         "level": "n3",
         "tags": [
           "umum"
@@ -6064,7 +6064,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "寒い朝は起きるのが辛い。",
-        "id": "[Terjemahan] It is difficult to wake up on cold mornings.",
+        "id": "It is difficult to wake up on cold mornings.",
         "level": "n3",
         "tags": [
           "umum"
@@ -6097,7 +6097,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "そこは風景が美しいことで有名だ。",
-        "id": "[Terjemahan] This place is famous for its scenic beauty.",
+        "id": "This place is famous for its scenic beauty.",
         "level": "n3",
         "tags": [
           "umum"
@@ -6105,7 +6105,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "あなたの意見をさしはさまないで。",
-        "id": "[Terjemahan] Don't cut in with your remarks.",
+        "id": "Don't cut in with your remarks.",
         "level": "n3",
         "tags": [
           "umum"
@@ -6138,7 +6138,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "古い伝統が消滅しつつある。",
-        "id": "[Terjemahan] Old traditions are crumbling away.",
+        "id": "Old traditions are crumbling away.",
         "level": "n3",
         "tags": [
           "umum"
@@ -6146,7 +6146,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "伝統はもはや何の意味もない。",
-        "id": "[Terjemahan] Traditions no longer make any sense.",
+        "id": "Traditions no longer make any sense.",
         "level": "n3",
         "tags": [
           "umum"
@@ -6179,7 +6179,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "どうか明朝６時に起こして下さい。",
-        "id": "[Terjemahan] Please wake me up at six tomorrow morning.",
+        "id": "Tolong wake me up at six tomorrow morning.",
         "level": "n3",
         "tags": [
           "umum"
@@ -6187,7 +6187,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "どうか私のことをお許しください。",
-        "id": "[Terjemahan] I beg you forgive me.",
+        "id": "I beg you forgive me.",
         "level": "n3",
         "tags": [
           "umum"
@@ -6220,7 +6220,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "その列車は予定どおりに到着した。",
-        "id": "[Terjemahan] The train arrived on schedule.",
+        "id": "The train arrived on schedule.",
         "level": "n3",
         "tags": [
           "umum"
@@ -6228,7 +6228,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "列車は１０番ホームに到着します。",
-        "id": "[Terjemahan] The train will come in at platform ten.",
+        "id": "The train will come in at platform ten.",
         "level": "n3",
         "tags": [
           "umum"
@@ -6261,7 +6261,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "私の同僚は報告書を改ざんした。",
-        "id": "[Terjemahan] My colleague doctored the report.",
+        "id": "My colleague doctored the report.",
         "level": "n3",
         "tags": [
           "umum"
@@ -6269,7 +6269,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼は同僚となかなか打ち解けない。",
-        "id": "[Terjemahan] He is hardly friendly with his fellow workers.",
+        "id": "Dia hardly friendly with his fellow workers.",
         "level": "n3",
         "tags": [
           "umum"
@@ -6302,7 +6302,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "その崖は道路の上に突き出ている。",
-        "id": "[Terjemahan] The cliff hangs over the road.",
+        "id": "The cliff hangs over the road.",
         "level": "n3",
         "tags": [
           "umum"
@@ -6310,7 +6310,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "ニューヨークの道路はとても広い。",
-        "id": "[Terjemahan] The streets of New York are very wide.",
+        "id": "The streets of New York are very wide.",
         "level": "n3",
         "tags": [
           "umum"
@@ -6343,7 +6343,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "この煙突は通りが悪くなった。",
-        "id": "[Terjemahan] This chimney has begun to draw badly.",
+        "id": "This chimney has begun to draw badly.",
         "level": "n3",
         "tags": [
           "umum"
@@ -6351,7 +6351,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "この横町は人の通りが多い。",
-        "id": "[Terjemahan] This cross street is busy with pedestrian traffic.",
+        "id": "This cross street is busy with pedestrian traffic.",
         "level": "n3",
         "tags": [
           "umum"
@@ -6384,7 +6384,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "１２才の時彼は声変わりした。",
-        "id": "[Terjemahan] His voice broke when he was twelve.",
+        "id": "His voice broke when he was twelve.",
         "level": "n3",
         "tags": [
           "umum"
@@ -6392,7 +6392,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "夜はたいていの人が寝る時である。",
-        "id": "[Terjemahan] Night is when most people go to bed.",
+        "id": "Night is when most people go to bed.",
         "level": "n3",
         "tags": [
           "umum"
@@ -6425,7 +6425,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "猫が部屋から飛び出した。",
-        "id": "[Terjemahan] A cat dashed out of the room.",
+        "id": "A cat dashed out of the room.",
         "level": "n3",
         "tags": [
           "umum"
@@ -6433,7 +6433,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "通りに飛び出してしまったのです。",
-        "id": "[Terjemahan] He ran out into traffic.",
+        "id": "He ran out into traffic.",
         "level": "n3",
         "tags": [
           "umum"
@@ -6466,7 +6466,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "木片は１本の留め木で留めてある。",
-        "id": "[Terjemahan] The wooden pieces are fastened with a peg.",
+        "id": "The wooden pieces are fastened with a peg.",
         "level": "n3",
         "tags": [
           "umum"
@@ -6474,7 +6474,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "この文書はあなたのお目にだけ留めていただきたい。",
-        "id": "[Terjemahan] This document is for your eyes only.",
+        "id": "This document is for your eyes only.",
         "level": "n3",
         "tags": [
           "umum"
@@ -6507,7 +6507,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "土曜に学校がありますか。",
-        "id": "[Terjemahan] Do you go to school on Saturday?",
+        "id": "Do you go to school on Saturday?",
         "level": "n3",
         "tags": [
           "umum"
@@ -6515,7 +6515,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼はよく土曜の夜に外食します。",
-        "id": "[Terjemahan] He often eats out on Saturday nights.",
+        "id": "He often eats out on Saturday nights.",
         "level": "n3",
         "tags": [
           "umum"
@@ -6548,7 +6548,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "私はどんな戦争にも反対だ。",
-        "id": "[Terjemahan] I'm opposed to any type of war.",
+        "id": "I'm opposed to any type of war.",
         "level": "n3",
         "tags": [
           "umum"
@@ -6556,7 +6556,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "どんな所がお好きですか。",
-        "id": "[Terjemahan] What kind of places do you like?",
+        "id": "What kind of places do you like?",
         "level": "n3",
         "tags": [
           "umum"
@@ -6589,7 +6589,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "料理の内容を見せてもらえますか。",
-        "id": "[Terjemahan] Could you show me what you're serving?",
+        "id": "Could you show me what you're serving?",
         "level": "n3",
         "tags": [
           "umum"
@@ -6597,7 +6597,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "本日のランチの内容はなんですか。",
-        "id": "[Terjemahan] What are you serving today?",
+        "id": "What are you serving today?",
         "level": "n3",
         "tags": [
           "umum"
@@ -6630,7 +6630,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "あとで起こったことはなお悪かった。",
-        "id": "[Terjemahan] What followed was still worse.",
+        "id": "What followed was still worse.",
         "level": "n3",
         "tags": [
           "umum"
@@ -6638,7 +6638,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼は背が高いが、兄はなお高い。",
-        "id": "[Terjemahan] He is tall, but his brother is much taller.",
+        "id": "Dia tall, but his brother is much taller.",
         "level": "n3",
         "tags": [
           "umum"
@@ -6671,7 +6671,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "私は彼とは訪問し合う仲だ。",
-        "id": "[Terjemahan] I am on visiting terms with him.",
+        "id": "I am on visiting terms with him.",
         "level": "n3",
         "tags": [
           "umum"
@@ -6679,7 +6679,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼女は友達というより知り合いの仲です。",
-        "id": "[Terjemahan] She is more of an acquaintance than a friend.",
+        "id": "Dia more of an acquaintance than a friend.",
         "level": "n3",
         "tags": [
           "umum"
@@ -6712,7 +6712,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "今のアナウンスは何だったのですか。",
-        "id": "[Terjemahan] What did the announcement just say?",
+        "id": "What did the announcement just say?",
         "level": "n3",
         "tags": [
           "umum"
@@ -6720,7 +6720,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "おい、おっさん！何やってんだよ！",
-        "id": "[Terjemahan] Hey, pops! What are you doing!",
+        "id": "Hey, pops! What are you doing!",
         "level": "n3",
         "tags": [
           "umum"
@@ -6753,7 +6753,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "銀行は日曜にはやってません。",
-        "id": "[Terjemahan] The bank isn't open on Sundays.",
+        "id": "The bank isn't open on Sundays.",
         "level": "n3",
         "tags": [
           "umum"
@@ -6761,7 +6761,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "父はその日曜の朝、ゴルフをした。",
-        "id": "[Terjemahan] My father played golf on the Sunday morning.",
+        "id": "My father played golf on the Sunday morning.",
         "level": "n3",
         "tags": [
           "umum"
@@ -6794,7 +6794,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "日本は中国の東方にある。",
-        "id": "[Terjemahan] Japan is to the east of China.",
+        "id": "Japan is to the east of China.",
         "level": "n3",
         "tags": [
           "umum"
@@ -6802,7 +6802,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼らは日本に来てから５年になる。",
-        "id": "[Terjemahan] Five years have passed since they came to Japan.",
+        "id": "Five years have passed since they came to Japan.",
         "level": "n3",
         "tags": [
           "umum"
@@ -6835,7 +6835,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "彼はその絵にたいへん高い値をつけた。",
-        "id": "[Terjemahan] He put the painting at a very high price.",
+        "id": "He put the painting at a very high price.",
         "level": "n3",
         "tags": [
           "umum"
@@ -6843,7 +6843,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "ねぇ、お願い。",
-        "id": "[Terjemahan] Oh, have a heart.",
+        "id": "Oh, have a heart.",
         "level": "n3",
         "tags": [
           "umum"
@@ -6876,7 +6876,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "日曜日はのんびりしています。",
-        "id": "[Terjemahan] We always take it easy on Sundays.",
+        "id": "We always take it easy on Sundays.",
         "level": "n3",
         "tags": [
           "umum"
@@ -6884,7 +6884,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "退職したのでしばらくのんびり暮らすつもりです。",
-        "id": "[Terjemahan] I've retired and I'm going to take it easy for a while.",
+        "id": "I've retired and I'm going to take it easy for a while.",
         "level": "n3",
         "tags": [
           "umum"
@@ -6917,7 +6917,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "・・・はぁ、どう状況を受け止めればいいのかしら。",
-        "id": "[Terjemahan] ... Aaah, just how am I supposed to cope with this I wonder?",
+        "id": "... Aaah, just how am I supposed to cope with this I wonder?",
         "level": "n3",
         "tags": [
           "umum"
@@ -6983,7 +6983,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "こっちの端を持っててくれる？",
-        "id": "[Terjemahan] Will you please hold this edge?",
+        "id": "Will you please hold this edge?",
         "level": "n3",
         "tags": [
           "umum"
@@ -6991,7 +6991,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "その部屋はホールの端にあります。",
-        "id": "[Terjemahan] The room is at the end of the hall.",
+        "id": "The room is at the end of the hall.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7024,7 +7024,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "バッグはどこに置けばいいですか。",
-        "id": "[Terjemahan] Where can I put my bag?",
+        "id": "Where can I put my bag?",
         "level": "n3",
         "tags": [
           "umum"
@@ -7032,7 +7032,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "ほら、あなたのバッグはそこですよ。",
-        "id": "[Terjemahan] There is your bag.",
+        "id": "Ada your bag.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7065,7 +7065,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "ここでその問題について話し合いましょう。",
-        "id": "[Terjemahan] Let's discuss the matter here.",
+        "id": "Let's discuss the matter here.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7073,7 +7073,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "父と話し合って、転職を決意した。",
-        "id": "[Terjemahan] I discussed it with my father and decided to change my job.",
+        "id": "I discussed it with my father and decided to change my job.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7106,7 +7106,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "その犬はボールを放そうとしなかった。",
-        "id": "[Terjemahan] The dog wouldn't let go of the ball.",
+        "id": "The dog wouldn't let go of the ball.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7114,7 +7114,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "犬を放さないよう、ご注意ください。",
-        "id": "[Terjemahan] Please be careful not to let the dog loose.",
+        "id": "Tolong be careful not to let the dog loose.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7147,7 +7147,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "すみません。いま手が離せないんです。",
-        "id": "[Terjemahan] I'm sorry, I'm busy right now.",
+        "id": "I'm sorry, I'm busy right now.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7155,7 +7155,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "私から手を離してくださらない？",
-        "id": "[Terjemahan] Will you take your hand off me?",
+        "id": "Will you take your hand off me?",
         "level": "n3",
         "tags": [
           "umum"
@@ -7188,7 +7188,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "問題はどこにテントを張るかだった。",
-        "id": "[Terjemahan] The problem was where to set up the tent.",
+        "id": "The problem was where to set up the tent.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7196,7 +7196,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "明るい内にテントを張ってしまおう。",
-        "id": "[Terjemahan] Let's put up the tent while it is still light.",
+        "id": "Let's put up the tent while it is still light.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7262,7 +7262,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "列車は１０番ホームに到着します。",
-        "id": "[Terjemahan] The train will come in at platform ten.",
+        "id": "The train will come in at platform ten.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7270,7 +7270,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "今度はあなたが運転する番だ。",
-        "id": "[Terjemahan] It's your turn to drive.",
+        "id": "It's your turn to drive.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7303,7 +7303,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "このビールはアルコール分が５％だ。",
-        "id": "[Terjemahan] This beer contains 5% alcohol.",
+        "id": "This beer contains 5% alcohol.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7336,7 +7336,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "その犬は車にひかれた。",
-        "id": "[Terjemahan] The dog was run over by a car.",
+        "id": "The dog was run over by a car.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7344,7 +7344,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼は危うく車に轢かれそうになった。",
-        "id": "[Terjemahan] He came near being run over by a car.",
+        "id": "He came near being run over by a car.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7377,7 +7377,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "彼はびっくりして彼女を見つめた。",
-        "id": "[Terjemahan] He stared at her in astonishment.",
+        "id": "He stared at her in astonishment.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7385,7 +7385,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼にはいつもびっくりさせられる。",
-        "id": "[Terjemahan] I'm always surprised by him.",
+        "id": "I'm always surprised by him.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7418,7 +7418,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "彼女は夫のそばにぴったり寄り添っていた。",
-        "id": "[Terjemahan] She stood close to her husband.",
+        "id": "She stood close to her husband.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7426,7 +7426,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "オフィスに時間ぴったりについた。",
-        "id": "[Terjemahan] We arrived at the office on time.",
+        "id": "We arrived at the office on time.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7459,7 +7459,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "とても美しい風景がいくつかありました。",
-        "id": "[Terjemahan] I saw some very beautiful scenes.",
+        "id": "I saw some very beautiful scenes.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7467,7 +7467,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "そこは風景が美しいことで有名だ。",
-        "id": "[Terjemahan] This place is famous for its scenic beauty.",
+        "id": "This place is famous for its scenic beauty.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7500,7 +7500,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "彼らは船を岸に引き上げた。",
-        "id": "[Terjemahan] They drew their boat on the beach.",
+        "id": "They drew their boat on the beach.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7508,7 +7508,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼は通りかかった船に助けられた。",
-        "id": "[Terjemahan] He was picked up by a passing ship.",
+        "id": "He was picked up by a passing ship.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7541,7 +7541,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "パズルのここの部分が仕上がらない。",
-        "id": "[Terjemahan] I can't finish this part of the puzzle.",
+        "id": "I can't finish this part of the puzzle.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7549,7 +7549,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "ある部分は部下にやらせばいいんだよ。",
-        "id": "[Terjemahan] You could always hand off some of the work to the junior staff.",
+        "id": "You could always hand off some of the work to the junior staff.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7582,7 +7582,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "私は頭を数回振った。",
-        "id": "[Terjemahan] I shook my head a few times.",
+        "id": "I shook my head a few times.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7590,7 +7590,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "よく振ってから使用してください。",
-        "id": "[Terjemahan] Shake before using.",
+        "id": "Shake before using.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7623,7 +7623,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "これが、私が英語を勉強した方法だ。",
-        "id": "[Terjemahan] This is how I learned English.",
+        "id": "Ini adalah how I learned English.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7631,7 +7631,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "猫を殺すにも方法はいろいろある。",
-        "id": "[Terjemahan] There's more ways than one to kill a cat.",
+        "id": "There's more ways than one to kill a cat.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7664,7 +7664,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "遠くにぼんやりした明かりが見えた。",
-        "id": "[Terjemahan] We saw a dim light in the distance.",
+        "id": "We saw a dim light in the distance.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7672,7 +7672,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "ジムは、いわゆるぼんやりした学生だ。",
-        "id": "[Terjemahan] Jim is what is called an absent-minded student.",
+        "id": "Jim is what is called an absent-minded student.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7705,7 +7705,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "彼は孫への愛におぼれている。",
-        "id": "[Terjemahan] He dotes on his grandson.",
+        "id": "He dotes on his grandson.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7713,7 +7713,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "孫と一緒にいると彼女はいつも楽しい。",
-        "id": "[Terjemahan] Being with her grandson always makes her happy.",
+        "id": "Being with her grandson always makes her happy.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7746,7 +7746,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "これは格好のよい松の木だ。",
-        "id": "[Terjemahan] This is a well-shaped pine tree.",
+        "id": "Ini adalah a well-shaped pine tree.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7754,7 +7754,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼の家の前には松の木が立っている。",
-        "id": "[Terjemahan] A pine stands in front of his house.",
+        "id": "A pine stands in front of his house.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7787,7 +7787,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "トムさん，モーターを回してください。",
-        "id": "[Terjemahan] Please start up the motor, Tom.",
+        "id": "Tolong start up the motor, Tom.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7795,7 +7795,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "社長に電話を回します。",
-        "id": "[Terjemahan] I'll put you through to the president.",
+        "id": "I'll put you through to the president.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7828,7 +7828,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "私たちは先生の回りに集まった。",
-        "id": "[Terjemahan] We grouped ourselves round our teacher.",
+        "id": "We grouped ourselves round our teacher.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7836,7 +7836,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "私たちは公園の回りを走った。",
-        "id": "[Terjemahan] We ran around the park.",
+        "id": "We ran around the park.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7869,7 +7869,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "彼はすべての申し込みを無視した。",
-        "id": "[Terjemahan] He set all offers aside.",
+        "id": "He set all offers aside.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7877,7 +7877,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "警察は君の事を無視すると思うよ。",
-        "id": "[Terjemahan] I believe the police will ignore you.",
+        "id": "I believe the police will ignore you.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7910,7 +7910,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "やっとチューリップが芽を出した。",
-        "id": "[Terjemahan] The tulips budded finally.",
+        "id": "The tulips budded finally.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7918,7 +7918,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "木々は芽を出し始めた。",
-        "id": "[Terjemahan] The trees are beginning to bud.",
+        "id": "The trees are beginning to bud.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7951,7 +7951,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "今、私はめったに映画を見に行きません。",
-        "id": "[Terjemahan] Now I seldom go to the movies.",
+        "id": "Now I seldom go to the movies.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7959,7 +7959,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "当地では滅多に雪が降らない。",
-        "id": "[Terjemahan] We seldom have snow here.",
+        "id": "We seldom have snow here.",
         "level": "n3",
         "tags": [
           "umum"
@@ -7992,7 +7992,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "私の電話番号をメモしましたか。",
-        "id": "[Terjemahan] Did you note down my phone number?",
+        "id": "Did you note down my phone number?",
         "level": "n3",
         "tags": [
           "umum"
@@ -8000,7 +8000,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼はいつもメモを見ながら話す。",
-        "id": "[Terjemahan] He always speaks from notes.",
+        "id": "He always speaks from notes.",
         "level": "n3",
         "tags": [
           "umum"
@@ -8033,7 +8033,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "木曜の夜はビールが無料なのです。",
-        "id": "[Terjemahan] Thursday night is free beer night.",
+        "id": "Thursday night is free beer night.",
         "level": "n3",
         "tags": [
           "umum"
@@ -8041,7 +8041,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "月曜から木曜までここにおります。",
-        "id": "[Terjemahan] I will be here from Monday to Thursday.",
+        "id": "I will be here from Monday to Thursday.",
         "level": "n3",
         "tags": [
           "umum"
@@ -8074,7 +8074,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "この動物は日本語で何と言いますか。",
-        "id": "[Terjemahan] What do you call this animal in Japanese?",
+        "id": "What do you call this animal in Japanese?",
         "level": "n3",
         "tags": [
           "umum"
@@ -8082,7 +8082,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "「みんなひと休みしようぜ」とジョンは言った。",
-        "id": "[Terjemahan] John said, \"Hey guys, let's take a break.\"",
+        "id": "John said, \"Hey guys, let's take a break.\"",
         "level": "n3",
         "tags": [
           "umum"
@@ -8115,7 +8115,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "私の友人の１人が私に会いにきました。",
-        "id": "[Terjemahan] A friend of mine came to see me.",
+        "id": "A friend of mine came to see me.",
         "level": "n3",
         "tags": [
           "umum"
@@ -8123,7 +8123,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "友人は助け合わなければいけない。",
-        "id": "[Terjemahan] Friends should help one another.",
+        "id": "Friends should help one another.",
         "level": "n3",
         "tags": [
           "umum"
@@ -8189,7 +8189,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "ゆっくりしてお茶でも飲んでいきませんか。",
-        "id": "[Terjemahan] Won't you stay for tea?",
+        "id": "Won't you stay for tea?",
         "level": "n3",
         "tags": [
           "umum"
@@ -8197,7 +8197,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "ゆっくりでも着実にやってゆけば勝負には勝つ。",
-        "id": "[Terjemahan] Slow and steady wins the race.",
+        "id": "Slow and steady wins the race.",
         "level": "n3",
         "tags": [
           "umum"
@@ -8230,7 +8230,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "私にはよい友達が数人いる。",
-        "id": "[Terjemahan] I have several good friends.",
+        "id": "I have several good friends.",
         "level": "n3",
         "tags": [
           "umum"
@@ -8238,7 +8238,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼女は彼らはよい友達だといった。",
-        "id": "[Terjemahan] She said that they were good friends of hers.",
+        "id": "She said that they were good friends of hers.",
         "level": "n3",
         "tags": [
           "umum"
@@ -8271,7 +8271,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "彼はそれについて知っている様だ。",
-        "id": "[Terjemahan] It seems that he knows about it.",
+        "id": "It seems that he knows about it.",
         "level": "n3",
         "tags": [
           "umum"
@@ -8279,7 +8279,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "この様にして、彼は失敗したのだ。",
-        "id": "[Terjemahan] This is how he failed.",
+        "id": "Ini adalah how he failed.",
         "level": "n3",
         "tags": [
           "umum"
@@ -8312,7 +8312,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "彼はどうしたら良いのかわからない様子だった。",
-        "id": "[Terjemahan] He looked uncertain what to do.",
+        "id": "He looked uncertain what to do.",
         "level": "n3",
         "tags": [
           "umum"
@@ -8320,7 +8320,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "彼女はその様子を見てぞっとした。",
-        "id": "[Terjemahan] She shivered at the sight.",
+        "id": "She shivered at the sight.",
         "level": "n3",
         "tags": [
           "umum"
@@ -8353,7 +8353,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "今夜の予報は雨である。",
-        "id": "[Terjemahan] Rain is forecast for this evening.",
+        "id": "Rain is forecast for this evening.",
         "level": "n3",
         "tags": [
           "umum"
@@ -8361,7 +8361,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "予報はさらに降雪があると伝えていた。",
-        "id": "[Terjemahan] The prediction was for more snow.",
+        "id": "The prediction was for more snow.",
         "level": "n3",
         "tags": [
           "umum"
@@ -8394,7 +8394,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "新聞によると昨夜大火事があった。",
-        "id": "[Terjemahan] According to the newspaper, there was a big fire last night.",
+        "id": "According to the newspaper, there was a big fire last night.",
         "level": "n3",
         "tags": [
           "umum"
@@ -8402,7 +8402,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "新聞によると台風がやってくる。",
-        "id": "[Terjemahan] The paper says that a typhoon is on its way.",
+        "id": "The paper says that a typhoon is on its way.",
         "level": "n3",
         "tags": [
           "umum"
@@ -8435,7 +8435,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "読書の喜びほど大きな喜びはない。",
-        "id": "[Terjemahan] No pleasure is greater than that of reading.",
+        "id": "No pleasure is greater than that of reading.",
         "level": "n3",
         "tags": [
           "umum"
@@ -8443,7 +8443,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "山頂から日の出を見るのは喜びだ。",
-        "id": "[Terjemahan] To see the sunrise from a mountaintop is a delight.",
+        "id": "To see the sunrise from a mountaintop is a delight.",
         "level": "n3",
         "tags": [
           "umum"
@@ -8476,7 +8476,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "ご家族の皆さんによろしく。",
-        "id": "[Terjemahan] Give my love to your family.",
+        "id": "Give my love to your family.",
         "level": "n3",
         "tags": [
           "umum"
@@ -8484,7 +8484,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "あなたのおうちの皆様によろしく。",
-        "id": "[Terjemahan] Please remember me to all your family.",
+        "id": "Tolong remember me to all your family.",
         "level": "n3",
         "tags": [
           "umum"
@@ -8517,7 +8517,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "料金は会計係へ払って下さい。",
-        "id": "[Terjemahan] Pay your dues to the treasurer.",
+        "id": "Pay your dues to the treasurer.",
         "level": "n3",
         "tags": [
           "umum"
@@ -8525,7 +8525,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "どのくらいの料金がかかりますか。",
-        "id": "[Terjemahan] How much will it cost?",
+        "id": "How much will it cost?",
         "level": "n3",
         "tags": [
           "umum"
@@ -8558,7 +8558,7 @@ window.stagedVocabN3 = [
     "examples": [
       {
         "jp": "彼は労働の給料を何ももらわなかった。",
-        "id": "[Terjemahan] He wasn't given any reward for his service.",
+        "id": "He wasn't given any reward for his service.",
         "level": "n3",
         "tags": [
           "umum"
@@ -8566,7 +8566,7 @@ window.stagedVocabN3 = [
       },
       {
         "jp": "むかしのような激しい日雇い労働はできやしない。",
-        "id": "[Terjemahan] I can't work as hard as I used to.",
+        "id": "I can't work as hard as I used to.",
         "level": "n3",
         "tags": [
           "umum"

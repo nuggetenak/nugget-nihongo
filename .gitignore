@@ -38,3 +38,6 @@ pk-nugget-nihongo/
 # Build outputs
 dist/
 .playwright-cli/
+*.log
+stuff from me Nugget-san/
+audit-*.png

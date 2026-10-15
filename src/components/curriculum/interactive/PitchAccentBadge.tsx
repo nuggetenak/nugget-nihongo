@@ -1,0 +1,277 @@
+// ══════════════════════════════════════════════════════════════════
+//  PitchAccentBadge.tsx — Japanese Pitch Accent Contour Visualizer
+//  Renders Tokyo High/Low tone SVG polyline & mora breakdown
+//  Based on OJAD & Wadoku Tokyo Pitch Accent Standards
+// ══════════════════════════════════════════════════════════════════
+
+import React, { useState } from 'react';
+import { HelpCircle, ChevronRight } from 'lucide-react';
+
+export interface PitchAccentProps {
+  reading: string;
+  pattern?: number; // 0: Heiban, 1: Atamadaka, 2: Nakadaka, etc.
+  compact?: boolean;
+}
+
+const SUTEGANA = new Set(['ゃ', 'ゅ', 'ょ', 'ぁ', 'ぃ', 'ぅ', 'ぇ', 'ぉ', 'ャ', 'ュ', 'ョ', 'ァ', 'ィ', 'ゥ', 'ェ', 'ォ']);
+
+/**
+ * Splits Japanese kana string into moras, grouping small digraph kana (ゃ, ゅ, ょ)
+ * with their preceding consonant kana (e.g. "きょ" = 1 mora).
+ */
+export function extractMoras(text: string): string[] {
+  const moras: string[] = [];
+  const chars = Array.from(text.trim());
+
+  for (let i = 0; i < chars.length; i++) {
+    const char = chars[i];
+    const next = chars[i + 1];
+
+    if (next && SUTEGANA.has(next)) {
+      moras.push(char + next);
+      i++; // Skip digraph suffix
+    } else {
+      moras.push(char);
+    }
+  }
+
+  return moras.filter((m) => m.length > 0);
+}
+
+/**
+ * Calculates high/low pitch status for each mora in Tokyo Japanese
+ */
+export function getMoraPitches(
+  moras: string[],
+  pattern: number = 0
+): Array<{ mora: string; isHigh: boolean; hasDrop: boolean }> {
+  if (moras.length === 0) return [];
+
+  return moras.map((mora, idx) => {
+    let isHigh = false;
+    let hasDrop = false;
+
+    if (pattern === 0) {
+      // Heiban (平板): [Low, High, High, ...] No drop
+      isHigh = idx > 0;
+      hasDrop = false;
+    } else if (pattern === 1) {
+      // Atamadaka (頭高): [High, Low, Low, ...] Drop after 1st mora
+      isHigh = idx === 0;
+      hasDrop = idx === 0;
+    } else {
+      // Nakadaka / Odaka: [Low, High... Drop at pattern index]
+      const downstepIndex = pattern - 1;
+      isHigh = idx > 0 && idx <= downstepIndex;
+      hasDrop = idx === downstepIndex;
+    }
+
+    return { mora, isHigh, hasDrop };
+  });
+}
+
+const PATTERN_NAMES: Record<number, { name: string; kanji: string; desc: string }> = {
+  0: { name: 'Heiban', kanji: '平板 [0]', desc: 'Mulai rendah, naik di mora ke-2, tetap tinggi menyatu dengan partikel.' },
+  1: { name: 'Atamadaka', kanji: '頭高 [1]', desc: 'Mora pertama tinggi, langsung turun tajam ke rendah pada mora ke-2.' },
+  2: { name: 'Nakadaka', kanji: '中高 [2]', desc: 'Mulai rendah, naik di mora ke-2, lalu turun sebelum akhir kata.' },
+  3: { name: 'Odaka', kanji: '尾高 [3]', desc: 'Mulai rendah, naik sampai mora terakhir, lalu turun pada partikel penerus.' },
+};
+
+export const PitchAccentBadge: React.FC<PitchAccentProps> = ({
+  reading,
+  pattern = 0,
+  compact = false,
+}) => {
+  const [showModal, setShowModal] = useState(false);
+  const moras = extractMoras(reading);
+  if (moras.length === 0) return null;
+
+  const pitchInfo = getMoraPitches(moras, pattern);
+  const patternMeta = PATTERN_NAMES[pattern] || PATTERN_NAMES[0];
+
+  const stepWidth = 24;
+  const highY = 6;
+  const lowY = 20;
+
+  const points = pitchInfo.map((p, i) => {
+    const x = i * stepWidth + stepWidth / 2;
+    const y = p.isHigh ? highY : lowY;
+    return `${x},${y}`;
+  });
+
+  if (compact) {
+    return (
+      <button
+        type="button"
+        onClick={() => setShowModal(true)}
+        className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-md bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/25 text-[10px] text-amber-300 font-mono transition-colors active:scale-95"
+        title={`Intonasi Tokyo: ${patternMeta.kanji} (${patternMeta.name})`}
+      >
+        <span className="font-bold">{patternMeta.kanji}</span>
+        <svg className="w-8 h-3.5 overflow-visible">
+          <polyline
+            fill="none"
+            stroke="#F59E0B"
+            strokeWidth="1.5"
+            points={points.join(' ')}
+          />
+          {pitchInfo.map((p, i) => (
+            <circle
+              key={i}
+              cx={i * stepWidth + stepWidth / 2}
+              cy={p.isHigh ? highY : lowY}
+              r="2"
+              fill={p.hasDrop ? '#EF4444' : '#F59E0B'}
+            />
+          ))}
+        </svg>
+      </button>
+    );
+  }
+
+  return (
+    <div className="inline-flex flex-col items-center p-2.5 rounded-2xl bg-surface-2 border border-accent/20 shadow-sm max-w-full">
+      <div className="flex items-center justify-between w-full gap-2 mb-1">
+        <span className="text-[10px] font-bold uppercase tracking-wider text-accent flex items-center gap-1">
+          <span>Intonasi Nada Tokyo:</span>
+          <span className="px-1.5 py-0.2 rounded bg-amber-500/15 text-amber-300 font-mono">
+            {patternMeta.kanji}
+          </span>
+        </span>
+        <button
+          type="button"
+          onClick={() => setShowModal(true)}
+          className="text-appText-muted hover:text-accent transition-colors p-0.5 active:scale-95"
+          title="Pelajari jenis intonasi nada nada Jepang"
+        >
+          <HelpCircle className="w-3.5 h-3.5" />
+        </button>
+      </div>
+
+      {/* SVG Contour Line & Mora Text */}
+      <div className="flex flex-col items-center overflow-x-auto max-w-full py-1">
+        <svg
+          width={moras.length * stepWidth}
+          height={26}
+          className="overflow-visible"
+        >
+          {/* Guide horizontal lines */}
+          <line x1={0} y1={highY} x2={moras.length * stepWidth} y2={highY} stroke="currentColor" strokeOpacity={0.1} strokeDasharray="2,2" />
+          <line x1={0} y1={lowY} x2={moras.length * stepWidth} y2={lowY} stroke="currentColor" strokeOpacity={0.1} strokeDasharray="2,2" />
+
+          {/* Polyline contour */}
+          <polyline
+            fill="none"
+            stroke="#F59E0B"
+            strokeWidth="2.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            points={points.join(' ')}
+          />
+
+          {/* Nodes */}
+          {pitchInfo.map((p, i) => (
+            <g key={i}>
+              <circle
+                cx={i * stepWidth + stepWidth / 2}
+                cy={p.isHigh ? highY : lowY}
+                r="3.5"
+                fill={p.hasDrop ? '#EF4444' : '#F59E0B'}
+              />
+              {p.hasDrop && (
+                <line
+                  x1={i * stepWidth + stepWidth / 2 + 3}
+                  y1={highY}
+                  x2={i * stepWidth + stepWidth / 2 + 8}
+                  y2={lowY}
+                  stroke="#EF4444"
+                  strokeWidth="1.5"
+                  strokeDasharray="1,1"
+                />
+              )}
+            </g>
+          ))}
+        </svg>
+
+        {/* Mora Kana Labels */}
+        <div className="flex mt-1">
+          {pitchInfo.map((p, i) => (
+            <span
+              key={i}
+              style={{ width: `${stepWidth}px` }}
+              className={`text-center font-jp text-xs font-bold leading-tight ${
+                p.hasDrop ? 'text-rose-400' : p.isHigh ? 'text-amber-300' : 'text-appText-muted'
+              }`}
+            >
+              {p.mora}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      {/* Pitch Info Modal */}
+      {showModal && (
+        <div
+          className="fixed inset-0 z-50 bg-black/75 backdrop-blur-sm flex items-center justify-center p-4 animate-in fade-in"
+          onClick={() => setShowModal(false)}
+        >
+          <div
+            className="w-full max-w-md bg-surface-2 border border-accent/25 rounded-3xl p-5 space-y-4 shadow-2xl max-h-[90vh] overflow-y-auto"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between pb-2 border-b border-accent/15">
+              <h3 className="text-sm font-bold text-appText-bright flex items-center gap-2">
+                <span>🎵</span>
+                <span>Panduan Intonasi Nada (Pitch Accent)</span>
+              </h3>
+              <button
+                type="button"
+                onClick={() => setShowModal(false)}
+                className="w-7 h-7 rounded-full bg-surface-3 hover:bg-surface text-appText-muted hover:text-appText-bright flex items-center justify-center text-xs font-bold"
+              >
+                ✕
+              </button>
+            </div>
+
+            <p className="text-xs text-appText leading-relaxed">
+              Bahasa Jepang menggunakan <strong>Pitch Accent</strong> (tinggi-rendah nada suara per ketukan mora), bukan penekanan volume (stress accent) seperti bahasa Inggris atau Indonesia. Nada yang tepat membedakan kata serupa seperti <em>ame</em> (hujan 🌧️ = nada tinggi di awal) vs <em>ame</em> (permen 🍬 = nada rendah lalu naik).
+            </p>
+
+            <div className="space-y-2 pt-1">
+              {Object.entries(PATTERN_NAMES).map(([key, item]) => (
+                <div
+                  key={key}
+                  className={`p-3 rounded-2xl border text-xs space-y-1 ${
+                    Number(key) === pattern
+                      ? 'bg-amber-500/15 border-amber-500 text-appText-bright font-medium'
+                      : 'bg-surface border-accent/15 text-appText'
+                  }`}
+                >
+                  <div className="flex items-center justify-between font-bold">
+                    <span className="text-accent">{item.kanji} — {item.name}</span>
+                    {Number(key) === pattern && (
+                      <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-amber-500/30 text-amber-300">
+                        Kata Ini
+                      </span>
+                    )}
+                  </div>
+                  <p className="text-[11px] text-appText-muted leading-relaxed">
+                    {item.desc}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            <button
+              type="button"
+              onClick={() => setShowModal(false)}
+              className="w-full min-h-[44px] rounded-xl bg-accent text-bg font-bold text-xs active:scale-95 transition-all shadow-md"
+            >
+              Mengerti
+            </button>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};

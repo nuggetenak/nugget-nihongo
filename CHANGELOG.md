@@ -3,6 +3,40 @@
 > Catatan pembaruan ini disinkronkan secara otomatis dari `src/lib/data/patchNotes.ts`
 > Single Source of Truth: Jalankan `npm run changelog` atau `npm run build` untuk memutakhirkan.
 
+## v19.0.0 (15 Oktober 2026) — Master Overhaul: 4 Kategori Kurikulum, 9 Seri Buku, 19 Sektor SSW & Interactive Studio
+
+### Sorotan Pembaruan (Highlights)
+- Master Kurikulum 4 Kategori: Jalur JLPT Akademik (N5–N1), Jalur 9 Seri Buku Teks, Jalur Kerja SSW (19 Sektor), dan Jalur JFT-Basic & Hidup di Jepang (Seikatsu)
+- Integrasi 9 Seri Buku Teks Kanonikal: GENKI I/II, Minna no Nihongo, Sou Matome, Tobira, QUARTET, TRY!, Shin Kanzen Master, Marugoto, dan Irodori
+- Ekspansi Penuh 19 Sektor SSW Tokutei Ginou: Prosedur Keselamatan K3 Gemba, Protokol Komunikasi Koe-kake, Sanitasi HACCP, dan Pelaporan SBAR
+- Kurasi Lengkap & Eliminasi Total String Placeholder: 9.565 Kalimat Contoh Divalidasi 100% Bebas [Terjemahan]
+- Sanitasi Terminologi UI/UX: Bahasa Indonesia Hangat & Ramah Pembelajar, Memindahkan Teori SLA ke Modal Riset Mandiri
+- Interactive Learning Studio: Tokyo Pitch Accent Contour Visualizer (SVG Polyline) & Kanji Stroke Order Practice Canvas
+- Verifikasi Menyeluruh: 40.484 Uji Unit Lolos 100% & Audit Responsif Bebas Bocor di Semua Ukuran Layar
+
+### Rincian Perubahan (Details)
+#### Ekspansi Kurikulum Multi-Jalur (4 Kategori)
+- Jalur JLPT Akademik (N5–N1): 74 unit dan ratusan pelajaran terstruktur dengan alur belajar bertahap Tahap 1–6.
+- Jalur Buku Teks: Mengompilasi 9 seri buku teks bahasa Jepang terpopuler di dunia ke dalam format kurikulum terpadu.
+- Jalur Kerja SSW: 19 sektor pekerjaan (Keperawatan, Makanan, Konstruksi, Pertanian, Perhotelan, Pembersihan Gedung, Manufaktur, Otomotif, Penerbangan, Perikanan, Permesinan, Elektronik, Perkapalan, Logistik, Kereta Api, Kehutanan, Kayu, dan Tekstil).
+- Jalur JFT & Hidup di Jepang: Persiapan ujian JFT-Basic A1 & A2 (Huruf/Kata, Percakapan, Choukai, Dokkai) serta Panduan Seikatsu (Shiyakusho, pemilahan sampah, perbankan, & mitigasi bencana).
+
+#### Kurasi Konten & Kualitas Data
+- Memvalidasi dan menerjemahkan 9.565 kalimat contoh di seluruh paket ekspansi, memastikan zero missing translation.
+- 129/129 modul ekspansi terverifikasi lolos uji validasi otomatis.
+- Penataan file statis pra-kompilasi untuk menjamin kecepatan pemuatan instan tanpa latensi jaringan.
+
+#### Fitur Studio Interaktif
+- Visualisasi Nada Intonasi Tokyo (Pitch Accent) menggunakan grafik SVG poliline dengan penanda ketukan mora dan penurunan nada (downstep).
+- Modal Bedah & Latihan Goresan Kanji interaktif dengan kanvas sentuh untuk melatih goresan langsung di layar gawai.
+
+#### Sanitasi Terminologi & Responsivitas Tampilan
+- Mengganti istilah akademis teknis seperti PT Stage dan Substratum dengan bahasa Indonesia yang natural dan ramah.
+- Menyediakan modal khusus Landasan Riset Kurikulum bagi pembelajar dan pengajar yang ingin mempelajari dasar ilmiah pedagogi.
+- Memastikan zero horizontal overflow (0px) pada seluruh breakpoint perangkat dari iPhone SE hingga layar lebar.
+
+---
+
 ## v18.1.0 (15 Oktober 2026) — Remediasi Kurikulum Semantik, Spesialisasi SSW & Penguatan Keamanan Publik
 
 ### Sorotan Pembaruan (Highlights)

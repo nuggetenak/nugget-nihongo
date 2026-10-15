@@ -30,6 +30,7 @@ import {
   Zap,
   RotateCcw,
   ExternalLink,
+  Info,
 } from 'lucide-react';
 import {
   useCurriculumStore,
@@ -46,6 +47,7 @@ import {
 import { useAppStore } from '../../store/useAppStore';
 import { speakJapanese } from '../../lib/audio/tts';
 import { playSuccessSfx } from '../../lib/audio/sfx';
+import { ResearchMethodologyModal } from './ResearchMethodologyModal';
 
 interface CurriculumTrackBrowserProps {
   vocabList: NormalizedVocab[];
@@ -54,16 +56,16 @@ interface CurriculumTrackBrowserProps {
   onNavigateToQuiz?: (trackId: string, unitId?: string) => void;
 }
 
-const PT_STAGE_NAMES: Record<number, { title: string; desc: string }> = {
-  1: { title: 'Akses Lemma', desc: 'Kosakata dasar & sapaan formulaik' },
-  2: { title: 'Prosedur Kategori', desc: 'Kopula desu, partikel kasus, kelas kata' },
-  3: { title: 'Prosedur Frasa', desc: 'Keselarasan frasa nomina & modifikasi sifat' },
-  4: { title: 'Prosedur Kalimat (S)', desc: 'Konjugasi verba, bentuk-Te & klausa dasar' },
-  5: { title: 'Klausa Subordinat', desc: 'Klausa relatif, pengandaian ~tara/~ba' },
-  6: { title: 'Variasi Pragmatis', desc: 'Keigo (Sonkeigo/Kenjougo) & register formal' },
+const STAGE_NAMES: Record<number, { title: string; desc: string }> = {
+  1: { title: 'Tahap 1: Fondasi Kata & Sapaan', desc: 'Kosakata penting & ungkapan sehari-hari' },
+  2: { title: 'Tahap 2: Pola Kalimat Pokok', desc: 'Susunan kalimat dasar, partikel, & identitas' },
+  3: { title: 'Tahap 3: Frasa & Modifikasi Kata', desc: 'Menjelaskan sifat benda & ungkapan keinginan' },
+  4: { title: 'Tahap 4: Bentuk Kata Kerja & Tindakan', desc: 'Konjugasi tindakan, bentuk-Te & izin' },
+  5: { title: 'Tahap 5: Kalimat Majemuk & Hubungan', desc: 'Pengandaian, alasan, & hubungan peristiwa' },
+  6: { title: 'Tahap 6: Ragam Santai & Bahasa Sopan Kerja', desc: 'Percakapan akrab hingga etika sopan (Keigo)' },
 };
 
-const SUBSTRATUM_OPTIONS: Array<{
+const DIALECT_OPTIONS: Array<{
   id: L1Substratum;
   label: string;
   badge: string;
@@ -73,25 +75,25 @@ const SUBSTRATUM_OPTIONS: Array<{
     id: 'general_indonesian',
     label: 'Bahasa Indonesia Umum',
     badge: 'Umum',
-    desc: 'Fokus interferensi SVO ↔ SOV, kopula adalah vs desu, partikel wa/ga.',
+    desc: 'Menjelaskan perbedaan pola kalimat SOV Jepang vs SVO Indonesia serta partikel wa & ga.',
   },
   {
     id: 'javanese',
-    label: 'Substratum Jawa',
+    label: 'Logat Daerah Jawa',
     badge: 'Jawa',
-    desc: 'Waspadai plosif bersuara b/d/g, chōon vokal terbuka, & partikel penegas.',
+    desc: 'Tips intonasi dan pengucapan vokal panjang agar tidak tertukar dengan konsonan tebal.',
   },
   {
     id: 'sundanese',
-    label: 'Substratum Sunda',
+    label: 'Logat Daerah Sunda',
     badge: 'Sunda',
-    desc: 'Waspadai netralisasi fonem F/P/V, vokal sentral /ə/, & kelembutan vokalisasi.',
+    desc: 'Tips artikulasi bunyi huruf F/P/V dan vokal Jepang agar terdengar natural.',
   },
   {
     id: 'batak_eastern',
-    label: 'Substratum Batak & Timur',
+    label: 'Logat Batak & Indonesia Timur',
     badge: 'Batak / Timur',
-    desc: 'Waspadai ritme suku kata isokronis, aksen nada Tokyo heiban vs nada dinamis.',
+    desc: 'Tips menjaga ketukan waktu suku kata (mora) yang rata dan intonasi Tokyo standar.',
   },
 ];
 
@@ -119,10 +121,13 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
     openLessonStudy,
   } = useAppStore();
 
-  // Category filter: JLPT academic vs SSW vocational
-  const [trackCategory, setTrackCategory] = useState<'jlpt' | 'ssw'>(
-    activeTrackId.startsWith('ssw') ? 'ssw' : 'jlpt'
-  );
+  // Category filter: JLPT academic, Book series, SSW vocational, or JFT & Life
+  const [trackCategory, setTrackCategory] = useState<'jlpt' | 'books' | 'ssw' | 'jft_life'>(() => {
+    if (activeTrackId.startsWith('ssw')) return 'ssw';
+    if (activeTrackId.startsWith('book')) return 'books';
+    if (activeTrackId.startsWith('jft') || activeTrackId === 'seikatsu') return 'jft_life';
+    return 'jlpt';
+  });
 
   // Loaded curriculum data
   const [trackData, setTrackData] = useState<CurriculumTrackData | null>(null);
@@ -136,6 +141,9 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
 
   // Mobile track picker modal state
   const [isMobileTrackPickerOpen, setIsMobileTrackPickerOpen] = useState(false);
+
+  // Research modal state
+  const [isResearchModalOpen, setIsResearchModalOpen] = useState(false);
 
   // Track definitions metadata
   const jlptTracks: Array<{
@@ -154,6 +162,26 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
     { id: 'n1', title: 'Jalur N1', level: 'N1 · Mahir', units: '16 Unit', grammarCount: '200 Pola', icon: '⛩️', themeColor: 'rose' },
   ];
 
+  const bookTracks: Array<{
+    id: TrackId;
+    title: string;
+    publisher: string;
+    units: string;
+    desc: string;
+    icon: string;
+    themeColor: string;
+  }> = [
+    { id: 'book-genki', title: 'GENKI I & II', publisher: 'The Japan Times', units: '23 Bab', desc: 'Standar emas percakapan dasar universitas global.', icon: '📘', themeColor: 'blue' },
+    { id: 'book-minna', title: 'Minna no Nihongo I & II', publisher: '3A Corporation', units: '8 Bab Utama', desc: 'Buku teks kanonikal terpopuler di LPK seluruh dunia.', icon: '📙', themeColor: 'amber' },
+    { id: 'book-soumatome', title: 'Nihongo Sou Matome', publisher: 'ASK Publishing', units: 'N5–N1', desc: 'Silabus persiapan maraton ujian JLPT mingguan.', icon: '📗', themeColor: 'emerald' },
+    { id: 'book-tobira', title: 'Tobira: Advanced Gateway', publisher: 'Kuroshio', units: 'Bab 1–15', desc: 'Jembatan level menengah menuju pemahaman otentik.', icon: '🚪', themeColor: 'indigo' },
+    { id: 'book-quartet', title: 'QUARTET I & II', publisher: 'The Japan Times', units: '12 Lesson', desc: 'Menghubungkan 4 kemahiran tingkat menengah.', icon: '🎻', themeColor: 'purple' },
+    { id: 'book-try', title: 'TRY! Communicative', publisher: 'ASK Publishing', units: 'N5–N1', desc: 'Tata bahasa berbasis dialog alami percakapan nyata.', icon: '🎯', themeColor: 'rose' },
+    { id: 'book-shin-kanzen-master', title: 'Shin Kanzen Master', publisher: '3A Corporation', units: 'N3–N1', desc: 'Pembedahan nuansa tata bahasa paling tajam & presisi.', icon: '🏆', themeColor: 'amber' },
+    { id: 'book-marugoto', title: 'Marugoto Nihongo', publisher: 'Japan Foundation', units: 'A1–A2', desc: 'Komunikasi praktis & pemahaman lintas budaya JF.', icon: '🌸', themeColor: 'pink' },
+    { id: 'book-irodori', title: 'Irodori: Seikatsu', publisher: 'Japan Foundation', units: 'A1–A2', desc: 'Bahasa Jepang kehidupan nyata terbuka dari pemerintah.', icon: '🌈', themeColor: 'teal' },
+  ];
+
   const sswTracks: Array<{
     id: TrackId;
     title: string;
@@ -163,33 +191,39 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
     icon: string;
     themeColor: string;
   }> = [
-    {
-      id: 'ssw-kaigo',
-      title: 'SSW Keperawatan Lansia',
-      sector: 'Kaigo (介護)',
-      units: '8 Unit · 24 Pelajaran',
-      desc: 'Prosedur Koe-kake, komunikasi empatik lansia, & laporan SBAR medis darurat.',
-      icon: '👵',
-      themeColor: 'rose',
-    },
-    {
-      id: 'ssw-food',
-      title: 'SSW Pengolahan & Restoran',
-      sector: 'Food Service & Processing (外食・飲食)',
-      units: '8 Unit · 24 Pelajaran',
-      desc: 'Protokol sanitasi 5S/HACCP, instruksi koki, mitigasi alergen, & etika Omotenashi.',
-      icon: '🍱',
-      themeColor: 'amber',
-    },
-    {
-      id: 'ssw-construction',
-      title: 'SSW Konstruksi & Gemba',
-      sector: 'Construction (建設業)',
-      units: '8 Unit · 24 Pelajaran',
-      desc: 'Pencegahan celaka K3 Gemba, komando akustik KYT, & instruksi alat berat.',
-      icon: '👷',
-      themeColor: 'orange',
-    },
+    { id: 'ssw-kaigo', title: 'SSW Keperawatan Lansia', sector: 'Kaigo (介護)', units: '8 Unit · 24 Pelajaran', desc: 'Prosedur Koe-kake, komunikasi empatik lansia, & laporan SBAR darurat.', icon: '👵', themeColor: 'rose' },
+    { id: 'ssw-food', title: 'SSW Pengolahan & Restoran', sector: 'Food Service (外食・飲食)', units: '8 Unit · 24 Pelajaran', desc: 'Sanitasi 5S/HACCP, instruksi dapur, mitigasi alergen, & etika Omotenashi.', icon: '🍱', themeColor: 'amber' },
+    { id: 'ssw-construction', title: 'SSW Konstruksi & Gemba', sector: 'Construction (建設業)', units: '8 Unit · 24 Pelajaran', desc: 'Pencegahan celaka K3 Gemba, komando akustik KYT, & alat berat.', icon: '👷', themeColor: 'orange' },
+    { id: 'ssw-agriculture', title: 'SSW Pertanian & Peternakan', sector: 'Agriculture (農業)', units: '4 Unit · 8 Pelajaran', desc: 'Budidaya tanaman rumah kaca, pemberian pakan ternak, & traktor.', icon: '🌱', themeColor: 'emerald' },
+    { id: 'ssw-accommodation', title: 'SSW Perhotelan & Hospitality', sector: 'Accommodation (宿泊)', units: '4 Unit · 8 Pelajaran', desc: 'Layanan resepsionis, check-in tamu, housekeeping, & omotenashi.', icon: '🏨', themeColor: 'sky' },
+    { id: 'ssw-building-cleaning', title: 'SSW Pembersihan Gedung', sector: 'Cleaning (ビルクリーニング)', units: '4 Unit · 8 Pelajaran', desc: 'Perawatan lantai, disinfeksi sanitasi, polisher, & pemilahan limbah.', icon: '🧹', themeColor: 'teal' },
+    { id: 'ssw-manufacturing', title: 'SSW Manufaktur & Pengolahan', sector: 'Manufacturing (製造)', units: '4 Unit · 8 Pelajaran', desc: 'Mesin press, pengecoran logam, perakitan presisi, & kontrol QC.', icon: '⚙️', themeColor: 'indigo' },
+    { id: 'ssw-automobile', title: 'SSW Perawatan Otomotif', sector: 'Automobile (自動車整備)', units: '4 Unit · 8 Pelajaran', desc: 'Ganti oli, servis rem, diagnostik scanner OBD-II, & edukasi servis.', icon: '🚗', themeColor: 'blue' },
+    { id: 'ssw-aviation', title: 'SSW Layanan Darat Bandara', sector: 'Aviation (航空)', units: '4 Unit · 8 Pelajaran', desc: 'Marshalling pesawat, kargo bagasi apron, & armada kendaraan GSE.', icon: '✈️', themeColor: 'cyan' },
+    { id: 'ssw-fishery', title: 'SSW Perikanan & Budidaya', sector: 'Fishery (漁業)', units: '4 Unit · 8 Pelajaran', desc: 'Operasi jaring kapal, pembekuan palka, & keramba apung laut.', icon: '🐟', themeColor: 'blue' },
+    { id: 'ssw-food-service', title: 'SSW Kuliner & Restoran', sector: 'Food Service (外食業)', units: '4 Unit · 8 Pelajaran', desc: 'Penyambutan tamu, handy order, sanitasi dapur, & kasir.', icon: '🍽️', themeColor: 'amber' },
+    { id: 'ssw-industrial-machinery', title: 'SSW Permesinan Industri', sector: 'Machinery (産業機械)', units: '4 Unit · 8 Pelajaran', desc: 'Mesin bubut, pengelasan busur, pengecatan, & commissioning mesin.', icon: '🏭', themeColor: 'slate' },
+    { id: 'ssw-electric-electronic', title: 'SSW Elektrik & Elektronik', sector: 'Electronics (電気電子)', units: '4 Unit · 8 Pelajaran', desc: 'Solder PCB, kabel wire harness, uji multimeter, & barcode QA.', icon: '⚡', themeColor: 'yellow' },
+    { id: 'ssw-shipbuilding', title: 'SSW Perkapalan & Maritim', sector: 'Shipbuilding (造船)', units: '4 Unit · 8 Pelajaran', desc: 'Blok lambung kapal, las pelat tebal, pipa mesin, & blasting cat.', icon: '🚢', themeColor: 'indigo' },
+    { id: 'ssw-logistics', title: 'SSW Logistik & Gudang', sector: 'Logistics (物流)', units: '4 Unit · 8 Pelajaran', desc: 'Inbound scanning, manuver forklift gudang, picking, & stok audit.', icon: '📦', themeColor: 'orange' },
+    { id: 'ssw-railway', title: 'SSW Operasional Kereta Api', sector: 'Railway (鉄道)', units: '4 Unit · 8 Pelajaran', desc: 'Pemanduan peron, pembersihan cepat shinkansen, & inspeksi rel.', icon: '🚆', themeColor: 'red' },
+    { id: 'ssw-forestry', title: 'SSW Kehutanan & Hutan', sector: 'Forestry (林業)', units: '4 Unit · 8 Pelajaran', desc: 'Penanaman lereng, operasi chainsaw terarah, & kabel winch kayu.', icon: '🌲', themeColor: 'emerald' },
+    { id: 'ssw-timber', title: 'SSW Pengolahan Kayu', sector: 'Timber (木材産業)', units: '4 Unit · 8 Pelajaran', desc: 'Gergaji band-saw, kiln pengering, serut precut, & JAS grading.', icon: '🪵', themeColor: 'amber' },
+    { id: 'ssw-textile', title: 'SSW Tekstil & Garmen', sector: 'Textile (繊維・縫製)', units: '4 Unit · 8 Pelajaran', desc: 'Pemotongan pola CAM, mesin jahit high-speed, press, & detektor jarum.', icon: '🧵', themeColor: 'pink' },
+  ];
+
+  const jftLifeTracks: Array<{
+    id: TrackId;
+    title: string;
+    level: string;
+    units: string;
+    desc: string;
+    icon: string;
+    themeColor: string;
+  }> = [
+    { id: 'jft-a1', title: 'JFT-Basic A1 Starter', level: 'JF Standard A1', units: '4 Seksi Ujian', desc: '4 Seksi Resmi: Huruf/Kata, Percakapan, Audio Choukai, & Membaca Singkat.', icon: '🔰', themeColor: 'emerald' },
+    { id: 'jft-a2', title: 'JFT-Basic A2 Elementary', level: 'JF Standard A2', units: '4 Seksi Ujian', desc: 'Kanji terapan, izin kerja, instruksi kerja audio, & rambu sosial.', icon: '🎯', themeColor: 'sky' },
+    { id: 'seikatsu', title: 'Hidup di Jepang (Seikatsu)', level: 'Praktis Harian', units: '4 Panduan Utama', desc: 'Balai kota (Shiyakusho), pemilahan sampah, bank/sewa, & mitigasi gempa.', icon: '🗾', themeColor: 'rose' },
   ];
 
   // Load track data whenever activeTrackId changes
@@ -278,19 +312,19 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
     }
   };
 
-  // Switch Substratum
-  const handleSelectSubstratum = (sub: L1Substratum) => {
+  // Switch Dialect
+  const handleSelectDialect = (sub: L1Substratum) => {
     setUserSubstratum(sub);
     setAppSubstratum(sub);
     setIsSubstratumDropdownOpen(false);
-    showToast(`Dialek disetel ke: ${SUBSTRATUM_OPTIONS.find((s) => s.id === sub)?.label}`, '🗣️');
+    showToast(`Logat disetel ke: ${DIALECT_OPTIONS.find((s) => s.id === sub)?.label}`, '🗣️');
   };
 
-  const activeSubstratumMeta = SUBSTRATUM_OPTIONS.find((s) => s.id === userSubstratum) || SUBSTRATUM_OPTIONS[0];
+  const activeSubstratumMeta = DIALECT_OPTIONS.find((s) => s.id === userSubstratum) || DIALECT_OPTIONS[0];
 
   const activeTrackMeta = useMemo(() => {
-    return [...jlptTracks, ...sswTracks].find((t) => t.id === activeTrackId);
-  }, [activeTrackId, jlptTracks, sswTracks]);
+    return [...jlptTracks, ...bookTracks, ...sswTracks, ...jftLifeTracks].find((t) => t.id === activeTrackId);
+  }, [activeTrackId, jlptTracks, bookTracks, sswTracks, jftLifeTracks]);
 
   return (
     <div className="space-y-4 sm:space-y-6 animate-in fade-in duration-300">
@@ -336,12 +370,12 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
             {isSubstratumDropdownOpen && (
               <div className="absolute right-0 top-full mt-2 w-64 bg-surface-2 border border-accent/30 rounded-2xl shadow-xl p-2 z-40 space-y-1 animate-in fade-in">
                 <div className="px-2 py-1 text-[10px] font-bold uppercase text-appText-muted tracking-wider border-b border-accent/15 mb-1">
-                  Pilih Substratum Bahasa
+                  Pilih Penyesuaian Bahasa Daerah
                 </div>
-                {SUBSTRATUM_OPTIONS.map((opt) => (
+                {DIALECT_OPTIONS.map((opt) => (
                   <button
                     key={opt.id}
-                    onClick={() => handleSelectSubstratum(opt.id)}
+                    onClick={() => handleSelectDialect(opt.id)}
                     className={`w-full min-h-[40px] p-2 rounded-xl text-left text-xs transition-colors flex items-center gap-2 active:scale-95 ${
                       userSubstratum === opt.id
                         ? 'bg-accent text-bg font-bold shadow-sm'
@@ -378,48 +412,94 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
           DESKTOP / TABLET CURRICULUM SELECTOR & HERO (hidden sm:block)
          ───────────────────────────────────────────────────────────── */}
       <div className="hidden sm:block space-y-4 sm:space-y-6">
-        {/* 1. TWO-TIER CATEGORY & TRACK SELECTOR */}
-        <div className="space-y-2.5 sm:space-y-3">
-          {/* Category Switcher: JLPT vs SSW */}
-          <div className="grid grid-cols-2 gap-1 p-1 bg-surface-2/90 rounded-2xl border border-accent/20 w-full sm:w-fit">
-          <button
-            onClick={() => {
-              setTrackCategory('jlpt');
-              if (activeTrackId.startsWith('ssw')) {
-                setActiveTrack('n5');
-              }
-            }}
-            className={`min-h-[44px] px-3 sm:px-4 py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 sm:gap-2 active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
-              trackCategory === 'jlpt'
-                ? 'bg-accent text-bg shadow-sm font-extrabold'
-                : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3'
-            }`}
-          >
-            <GraduationCap className="w-4 h-4 shrink-0" />
-            <span className="truncate">Jalur JLPT Akademik (N5–N1)</span>
-          </button>
+        {/* 1. FOUR CATEGORY TABS & RESEARCH MODAL TRIGGER */}
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-2.5">
+          {/* Category Switcher: JLPT, Buku, SSW, JFT/Hidup */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-1 p-1 bg-surface-2/90 rounded-2xl border border-accent/20 w-full md:w-auto">
+            <button
+              onClick={() => {
+                setTrackCategory('jlpt');
+                if (!activeTrackId.match(/^n[1-5]$/)) {
+                  setActiveTrack('n5');
+                }
+              }}
+              className={`min-h-[44px] px-3 sm:px-4 py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
+                trackCategory === 'jlpt'
+                  ? 'bg-accent text-bg shadow-sm font-extrabold'
+                  : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3'
+              }`}
+            >
+              <GraduationCap className="w-4 h-4 shrink-0" />
+              <span className="truncate">Jalur JLPT</span>
+            </button>
 
+            <button
+              onClick={() => {
+                setTrackCategory('books');
+                if (!activeTrackId.startsWith('book')) {
+                  setActiveTrack('book-genki');
+                }
+              }}
+              className={`min-h-[44px] px-3 sm:px-4 py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
+                trackCategory === 'books'
+                  ? 'bg-accent text-bg shadow-sm font-extrabold'
+                  : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3'
+              }`}
+            >
+              <BookOpen className="w-4 h-4 shrink-0" />
+              <span className="truncate">Jalur Buku Terkenal</span>
+            </button>
+
+            <button
+              onClick={() => {
+                setTrackCategory('ssw');
+                if (!activeTrackId.startsWith('ssw')) {
+                  setActiveTrack('ssw-kaigo');
+                }
+              }}
+              className={`min-h-[44px] px-3 sm:px-4 py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
+                trackCategory === 'ssw'
+                  ? 'bg-accent text-bg shadow-sm font-extrabold'
+                  : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3'
+              }`}
+            >
+              <Briefcase className="w-4 h-4 shrink-0" />
+              <span className="truncate">Jalur Kerja SSW</span>
+            </button>
+
+            <button
+              onClick={() => {
+                setTrackCategory('jft_life');
+                if (!activeTrackId.startsWith('jft') && activeTrackId !== 'seikatsu') {
+                  setActiveTrack('jft-a1');
+                }
+              }}
+              className={`min-h-[44px] px-3 sm:px-4 py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
+                trackCategory === 'jft_life'
+                  ? 'bg-accent text-bg shadow-sm font-extrabold'
+                  : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3'
+              }`}
+            >
+              <HeartPulse className="w-4 h-4 shrink-0" />
+              <span className="truncate">JFT & Hidup di Jepang</span>
+            </button>
+          </div>
+
+          {/* Research & Methodology Modal Trigger */}
           <button
-            onClick={() => {
-              setTrackCategory('ssw');
-              if (!activeTrackId.startsWith('ssw')) {
-                setActiveTrack('ssw-kaigo');
-              }
-            }}
-            className={`min-h-[44px] px-3 sm:px-4 py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 sm:gap-2 active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
-              trackCategory === 'ssw'
-                ? 'bg-accent text-bg shadow-sm font-extrabold'
-                : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3'
-            }`}
+            type="button"
+            onClick={() => setIsResearchModalOpen(true)}
+            className="min-h-[44px] px-3.5 py-2 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/25 text-appText-muted hover:text-appText-bright text-xs font-bold flex items-center justify-center gap-2 transition-colors active:scale-95 shrink-0 self-end md:self-auto"
+            title="Pelajari landasan ilmiah dan metodologi riset kurikulum"
           >
-            <Briefcase className="w-4 h-4 shrink-0" />
-            <span className="truncate">Jalur Kerja SSW Vokasional</span>
+            <Info className="w-4 h-4 text-accent shrink-0" />
+            <span>Landasan Riset Kurikulum</span>
           </button>
         </div>
 
         {/* Track Pills: Horizontal Scroll with Touch Targets >= 44px */}
         <div className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto scrollbar-none pb-1 max-w-full">
-          {trackCategory === 'jlpt' ? (
+          {trackCategory === 'jlpt' &&
             jlptTracks.map((trk) => {
               const isSelected = activeTrackId === trk.id;
               const stats = trackProgress[trk.id];
@@ -444,8 +524,36 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                   </div>
                 </button>
               );
-            })
-          ) : (
+            })}
+
+          {trackCategory === 'books' &&
+            bookTracks.map((trk) => {
+              const isSelected = activeTrackId === trk.id;
+              const stats = trackProgress[trk.id];
+              const completedCount = stats?.completedLessons?.length || 0;
+
+              return (
+                <button
+                  key={trk.id}
+                  onClick={() => setActiveTrack(trk.id)}
+                  className={`min-h-[44px] px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-colors border flex items-center gap-1.5 sm:gap-2 shrink-0 active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
+                    isSelected
+                      ? 'bg-amber-500 text-bg border-amber-500 shadow-md font-extrabold'
+                      : 'bg-surface-2 border-accent/20 text-appText-muted hover:text-appText-bright hover:border-accent/40'
+                  }`}
+                >
+                  <span className="text-sm sm:text-base">{trk.icon}</span>
+                  <div className="text-left">
+                    <div className="leading-tight text-xs font-bold">{trk.title}</div>
+                    <div className="text-[10px] opacity-80 font-normal tabular-nums hidden sm:block">
+                      {trk.publisher} · {trk.units} {completedCount > 0 ? `(${completedCount} selesai)` : ''}
+                    </div>
+                  </div>
+                </button>
+              );
+            })}
+
+          {trackCategory === 'ssw' &&
             sswTracks.map((trk) => {
               const isSelected = activeTrackId === trk.id;
               const stats = trackProgress[trk.id];
@@ -470,8 +578,34 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                   </div>
                 </button>
               );
-            })
-          )}
+            })}
+
+          {trackCategory === 'jft_life' &&
+            jftLifeTracks.map((trk) => {
+              const isSelected = activeTrackId === trk.id;
+              const stats = trackProgress[trk.id];
+              const completedCount = stats?.completedLessons?.length || 0;
+
+              return (
+                <button
+                  key={trk.id}
+                  onClick={() => setActiveTrack(trk.id)}
+                  className={`min-h-[44px] px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-colors border flex items-center gap-2 shrink-0 active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
+                    isSelected
+                      ? 'bg-amber-500 text-bg border-amber-500 shadow-md font-extrabold'
+                      : 'bg-surface-2 border-accent/20 text-appText-muted hover:text-appText-bright hover:border-accent/40'
+                  }`}
+                >
+                  <span className="text-sm sm:text-base">{trk.icon}</span>
+                  <div className="text-left">
+                    <div className="leading-tight text-xs font-bold">{trk.title}</div>
+                    <div className="text-[10px] opacity-80 font-normal tabular-nums hidden sm:block">
+                      {trk.level} · {trk.units} {completedCount > 0 ? `(${completedCount} selesai)` : ''}
+                    </div>
+                  </div>
+                </button>
+              );
+            })}
         </div>
       </div>
 
@@ -581,12 +715,12 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                 role="listbox"
               >
                 <div className="px-2 py-1 text-[10px] font-bold uppercase text-appText-muted tracking-wider border-b border-accent/15 mb-1">
-                  Pilih Substratum Bahasa Daerah
+                  Pilih Penyesuaian Bahasa Daerah
                 </div>
-                {SUBSTRATUM_OPTIONS.map((opt) => (
+                {DIALECT_OPTIONS.map((opt) => (
                   <button
                     key={opt.id}
-                    onClick={() => handleSelectSubstratum(opt.id)}
+                    onClick={() => handleSelectDialect(opt.id)}
                     className={`w-full min-h-[44px] p-2 rounded-xl text-left text-xs transition-colors flex items-start gap-2 active:scale-95 ${
                       userSubstratum === opt.id
                         ? 'bg-accent text-bg font-bold shadow-sm'
@@ -609,7 +743,6 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
           </div>
         </div>
       </div>
-      </div>
 
       {/* ─────────────────────────────────────────────────────────────
           4. ALUR BELAJAR BERTAHAP (ROADMAP TAHAP 1-6)
@@ -628,7 +761,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
           {/* Desktop 6-stage roadmap grid */}
           <div className="grid sm:grid-cols-3 lg:grid-cols-6 gap-2">
             {[1, 2, 3, 4, 5, 6].map((stageNum) => {
-              const info = PT_STAGE_NAMES[stageNum];
+              const info = STAGE_NAMES[stageNum];
               const hasUnitsInTrack = trackData?.units?.some((u) => u.pt_stage === stageNum);
 
               return (
@@ -692,7 +825,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
             ).length;
             const isUnitFullyCompleted =
               unitLessons.length > 0 && completedInUnit === unitLessons.length;
-            const stageInfo = PT_STAGE_NAMES[unit.pt_stage] || {
+            const stageInfo = STAGE_NAMES[unit.pt_stage] || {
               title: `Tahap ${unit.pt_stage}`,
               desc: '',
             };
@@ -999,6 +1132,17 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
               </button>
               <button
                 type="button"
+                onClick={() => setTrackCategory('books')}
+                className={`py-2 px-3 rounded-lg text-xs font-bold transition-all min-h-[40px] ${
+                  trackCategory === 'books'
+                    ? 'bg-accent text-bg shadow-sm font-extrabold'
+                    : 'text-appText-muted hover:text-appText-bright'
+                }`}
+              >
+                Buku Teks
+              </button>
+              <button
+                type="button"
                 onClick={() => setTrackCategory('ssw')}
                 className={`py-2 px-3 rounded-lg text-xs font-bold transition-all min-h-[40px] ${
                   trackCategory === 'ssw'
@@ -1006,13 +1150,24 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                     : 'text-appText-muted hover:text-appText-bright'
                 }`}
               >
-                SSW Vokasional
+                SSW Kerja
+              </button>
+              <button
+                type="button"
+                onClick={() => setTrackCategory('jft_life')}
+                className={`py-2 px-3 rounded-lg text-xs font-bold transition-all min-h-[40px] ${
+                  trackCategory === 'jft_life'
+                    ? 'bg-accent text-bg shadow-sm font-extrabold'
+                    : 'text-appText-muted hover:text-appText-bright'
+                }`}
+              >
+                JFT & Hidup
               </button>
             </div>
 
-            {/* Track Options Grid */}
-            <div className="space-y-2">
-              {trackCategory === 'jlpt' ? (
+            {/* Track Options List */}
+            <div className="space-y-2 max-h-[50vh] overflow-y-auto pr-1">
+              {trackCategory === 'jlpt' &&
                 jlptTracks.map((trk) => {
                   const isSelected = activeTrackId === trk.id;
                   const stats = trackProgress[trk.id];
@@ -1047,8 +1202,46 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                       </div>
                     </button>
                   );
-                })
-              ) : (
+                })}
+
+              {trackCategory === 'books' &&
+                bookTracks.map((trk) => {
+                  const isSelected = activeTrackId === trk.id;
+                  const stats = trackProgress[trk.id];
+                  const completedCount = stats?.completedLessons?.length || 0;
+                  return (
+                    <button
+                      key={trk.id}
+                      type="button"
+                      onClick={() => {
+                        setActiveTrack(trk.id);
+                        setIsMobileTrackPickerOpen(false);
+                      }}
+                      className={`w-full p-3 rounded-xl border text-left flex items-center justify-between gap-3 transition-colors min-h-[52px] active:scale-98 ${
+                        isSelected
+                          ? 'bg-amber-500/15 border-amber-500 text-appText-bright font-bold ring-1 ring-amber-500'
+                          : 'bg-surface hover:bg-surface-3 border-accent/15 text-appText'
+                      }`}
+                    >
+                      <div className="flex items-center gap-2.5 min-w-0">
+                        <span className="text-xl shrink-0">{trk.icon}</span>
+                        <div className="min-w-0">
+                          <div className="font-bold text-xs text-appText-bright">{trk.title}</div>
+                          <div className="text-[10px] text-appText-muted">{trk.publisher} · {trk.units}</div>
+                        </div>
+                      </div>
+                      <div className="text-right shrink-0">
+                        {completedCount > 0 ? (
+                          <span className="text-[10px] text-emerald-400 font-bold">{completedCount} tuntas</span>
+                        ) : (
+                          <span className="text-[10px] text-appText-muted">{trk.units}</span>
+                        )}
+                      </div>
+                    </button>
+                  );
+                })}
+
+              {trackCategory === 'ssw' &&
                 sswTracks.map((trk) => {
                   const isSelected = activeTrackId === trk.id;
                   const stats = trackProgress[trk.id];
@@ -1083,12 +1276,69 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                       </div>
                     </button>
                   );
-                })
-              )}
+                })}
+
+              {trackCategory === 'jft_life' &&
+                jftLifeTracks.map((trk) => {
+                  const isSelected = activeTrackId === trk.id;
+                  const stats = trackProgress[trk.id];
+                  const completedCount = stats?.completedLessons?.length || 0;
+                  return (
+                    <button
+                      key={trk.id}
+                      type="button"
+                      onClick={() => {
+                        setActiveTrack(trk.id);
+                        setIsMobileTrackPickerOpen(false);
+                      }}
+                      className={`w-full p-3 rounded-xl border text-left flex items-center justify-between gap-3 transition-colors min-h-[52px] active:scale-98 ${
+                        isSelected
+                          ? 'bg-amber-500/15 border-amber-500 text-appText-bright font-bold ring-1 ring-amber-500'
+                          : 'bg-surface hover:bg-surface-3 border-accent/15 text-appText'
+                      }`}
+                    >
+                      <div className="flex items-center gap-2.5 min-w-0">
+                        <span className="text-xl shrink-0">{trk.icon}</span>
+                        <div className="min-w-0">
+                          <div className="font-bold text-xs text-appText-bright">{trk.title}</div>
+                          <div className="text-[10px] text-appText-muted">{trk.level} · {trk.units}</div>
+                        </div>
+                      </div>
+                      <div className="text-right shrink-0">
+                        {completedCount > 0 ? (
+                          <span className="text-[10px] text-emerald-400 font-bold">{completedCount} tuntas</span>
+                        ) : (
+                          <span className="text-[10px] text-appText-muted">{trk.units}</span>
+                        )}
+                      </div>
+                    </button>
+                  );
+                })}
+            </div>
+
+            {/* Research Modal Trigger from Mobile Bottom Sheet */}
+            <div className="pt-2 border-t border-accent/15">
+              <button
+                type="button"
+                onClick={() => {
+                  setIsMobileTrackPickerOpen(false);
+                  setIsResearchModalOpen(true);
+                }}
+                className="w-full min-h-[44px] p-2.5 rounded-xl bg-surface-3 hover:bg-surface border border-accent/20 text-appText text-xs font-bold flex items-center justify-center gap-2 active:scale-95 transition-colors"
+              >
+                <Info className="w-4 h-4 text-accent" />
+                <span>Pelajari Landasan Riset Kurikulum</span>
+              </button>
             </div>
           </div>
         </div>
       )}
+
+      {/* Academic SLA & Methodology Modal */}
+      <ResearchMethodologyModal
+        isOpen={isResearchModalOpen}
+        onClose={() => setIsResearchModalOpen(false)}
+      />
     </div>
   );
 };
