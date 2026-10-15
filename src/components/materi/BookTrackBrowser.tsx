@@ -152,6 +152,20 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
 
   const currentDrills = currentChapterDrillData.drills || [];
 
+  const BOOK_COVER_MAP: Record<string, string> = {
+    minna: '/assets/generated/book-cover-minna.jpg',
+    genki: '/assets/generated/book-cover-genki.jpg',
+    marugoto: '/assets/generated/book-cover-marugoto.jpg',
+    irodori: '/assets/generated/book-cover-irodori.jpg',
+    tobira: '/assets/generated/book-cover-tobira.jpg',
+    'shin-kanzen-master': '/assets/generated/book-cover-shinkanzen.jpg',
+    shin_kanzen_master: '/assets/generated/book-cover-shinkanzen.jpg',
+    soumatome: '/assets/generated/book-cover-soumatome.jpg',
+    dekiru: '/assets/generated/book-cover-dekiru.jpg',
+    quartet: '/assets/generated/book-cover-quartet.jpg',
+    try: '/assets/generated/book-cover-soumatome.jpg',
+  };
+
   const BOOK_TRACK_MAPPING: Record<string, 'academic' | 'communicative' | 'exam' | 'culture'> = {
     minna: 'academic',
     genki: 'academic',
@@ -160,6 +174,7 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
     marugoto: 'communicative',
     soumatome: 'exam',
     shin_kanzen_master: 'exam',
+    'shin-kanzen-master': 'exam',
     try: 'exam',
     tobira: 'culture',
   };
@@ -219,10 +234,13 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
           ))}
         </div>
 
-        {/* Books Cards Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2.5">
+        {/* Books Cards Grid with Official Illustrated Covers */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
           {filteredBooks.map((b) => {
             const isSelected = selectedBookId === b.id;
+            const coverImg = BOOK_COVER_MAP[b.id] || '/assets/generated/book-cover-minna.jpg';
+            const jlptBadges = b.jlpt ? b.jlpt.map((j) => j.toUpperCase()).join('·') : 'N5';
+
             return (
               <button
                 key={b.id}
@@ -230,20 +248,51 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
                   setSelectedBookId(b.id);
                   setSelectedVolumeIndex(0);
                 }}
-                className={`p-3 rounded-2xl border text-left transition-all active:scale-98 cursor-pointer flex flex-col justify-between ${
+                className={`group rounded-2xl border text-left transition-all active:scale-98 cursor-pointer flex flex-col overflow-hidden ${
                   isSelected
-                    ? 'bg-amber-500/20 border-accent text-appText-bright shadow-glow font-bold'
+                    ? 'bg-amber-500/15 border-accent text-appText-bright shadow-glow ring-2 ring-accent'
                     : 'bg-surface-2 border-accent/15 text-appText-muted hover:border-accent/40 hover:text-appText-bright'
                 }`}
               >
-                <div>
-                  <div className="text-xs font-black truncate">{b.title}</div>
-                  <div className="text-[10px] font-jp text-accent truncate mt-0.5">
+                {/* Book Cover Banner Image */}
+                <div className="relative aspect-[16/10] w-full overflow-hidden bg-stone-900">
+                  <img
+                    src={coverImg}
+                    alt={b.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-stone-950/85 via-stone-950/25 to-transparent" />
+                  
+                  {/* JLPT / CEFR Level Pill */}
+                  <span className="absolute top-2 right-2 px-1.5 py-0.5 rounded-md text-[10px] font-black bg-stone-950/90 text-amber-400 border border-amber-500/40 backdrop-blur-xs">
+                    {jlptBadges}
+                  </span>
+
+                  {/* Japanese Kanji / Kana Title Overlay */}
+                  <span className="absolute bottom-1.5 left-2 right-2 font-japanese text-[11px] font-bold text-white drop-shadow truncate">
                     {b.title_ja}
-                  </div>
+                  </span>
                 </div>
-                <div className="text-[9px] text-appText-muted/80 mt-2 truncate">
-                  {b.publisher}
+
+                {/* Card Meta Content */}
+                <div className="p-2.5 sm:p-3 flex flex-col justify-between flex-1">
+                  <div>
+                    <h4 className="text-xs font-black text-appText-bright line-clamp-1 leading-snug">
+                      {b.title}
+                    </h4>
+                    <p className="text-[10px] text-appText-muted/90 truncate mt-0.5 font-medium">
+                      {b.publisher}
+                    </p>
+                  </div>
+                  <div className="flex items-center justify-between mt-2 pt-2 border-t border-accent/10 text-[9.5px]">
+                    <span className="text-accent font-semibold">
+                      {b.volumes?.length || 1} Jilid Lengkap
+                    </span>
+                    {isSelected && (
+                      <span className="text-accent font-bold">✓ Terpilih</span>
+                    )}
+                  </div>
                 </div>
               </button>
             );
@@ -334,17 +383,26 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
         {/* Chapter Details & Authentic Drills Showcase */}
         <div className="md:col-span-2 space-y-5">
           {/* Chapter Banner */}
-          <div className="bg-surface-2 border border-accent/20 rounded-2xl p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 shadow-sm">
-            <div className="space-y-1 min-w-0">
-              <span className="text-[10px] font-bold uppercase tracking-wider text-accent">
-                Bab {selectedChapter} · {activeVolume?.label || activeBook?.title}
-              </span>
-              <h3 className="text-base sm:text-lg font-bold text-appText-bright truncate">
-                {currentChapterDrillData.topic || `Latihan Bab ${selectedChapter}`}
-              </h3>
-              <p className="text-xs text-appText-muted">
-                {activeBook?.credit_short || 'Kurikulum Buku Standar'}
-              </p>
+          <div className="bg-surface-2 border border-accent/20 rounded-2xl p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 shadow-sm">
+            <div className="flex items-center gap-3.5 min-w-0">
+              <div className="w-16 h-12 sm:w-20 sm:h-14 rounded-xl overflow-hidden shrink-0 border border-accent/30 shadow-md bg-stone-900">
+                <img
+                  src={BOOK_COVER_MAP[selectedBookId] || '/assets/generated/book-cover-minna.jpg'}
+                  alt={activeBook?.title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="space-y-0.5 min-w-0">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-accent">
+                  Bab {selectedChapter} · {activeVolume?.label || activeBook?.title}
+                </span>
+                <h3 className="text-sm sm:text-base font-bold text-appText-bright truncate">
+                  {currentChapterDrillData.topic || `Latihan Bab ${selectedChapter}`}
+                </h3>
+                <p className="text-xs text-appText-muted truncate">
+                  {activeBook?.credit_short || 'Kurikulum Buku Standar'}
+                </p>
+              </div>
             </div>
 
             <button

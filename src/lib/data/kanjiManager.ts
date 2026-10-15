@@ -36,6 +36,11 @@ export interface MasterKanjiItem {
     reading: string;
     meaning_id: string;
   }[];
+  jukugo?: {
+    word: string;
+    reading: string;
+    meaning_id: string;
+  }[];
 }
 
 export interface KanjiStrokePaths {

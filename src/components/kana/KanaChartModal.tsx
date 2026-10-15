@@ -4,6 +4,7 @@
 // ══════════════════════════════════════════════════════════════════
 
 import React, { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { X, Volume2, Sparkles, BookOpen, Layers, CheckCircle2, RotateCcw } from 'lucide-react';
 import { GOJUON_KANA, DAKUON_KANA, YOON_KANA, KanaItem } from './kanaData';
 import { speakJapanese } from '../../lib/audio/tts';
@@ -66,10 +67,10 @@ export const KanaChartModal: React.FC<KanaChartModalProps> = ({ isOpen, onClose 
     }
   };
 
-  return (
+  const modalContent = (
     <div
       onClick={onClose}
-      className="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-end sm:items-center justify-center p-0 sm:p-5 animate-in fade-in duration-200"
+      className="fixed inset-0 z-[9999] bg-black/80 backdrop-blur-md flex items-end sm:items-center justify-center p-0 sm:p-5 animate-in fade-in duration-200"
       role="dialog"
       aria-label="Tabel Huruf Kana"
     >
@@ -323,4 +324,8 @@ export const KanaChartModal: React.FC<KanaChartModalProps> = ({ isOpen, onClose 
       </div>
     </div>
   );
+
+  return typeof document !== 'undefined'
+    ? createPortal(modalContent, document.body)
+    : modalContent;
 };

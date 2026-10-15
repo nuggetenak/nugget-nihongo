@@ -455,4 +455,35 @@ export * from './diagnosticManager';
 export * from './panicScenarioManager';
 export * from './discourseManager';
 
+/**
+ * Find vocabulary entries with authentic example sentences featuring a given Kanji character
+ */
+export async function findVocabWithExamplesForKanji(
+  kanjiChar: string,
+  preferredLevel?: JLPTLevel
+): Promise<NormalizedVocab[]> {
+  const levelsToTry: JLPTLevel[] = preferredLevel
+    ? [preferredLevel, 'n5', 'n4', 'n3', 'n2', 'n1'].filter((v, i, a) => a.indexOf(v) === i)
+    : ['n5', 'n4', 'n3', 'n2', 'n1'];
+
+  const results: NormalizedVocab[] = [];
+  const seenWords = new Set<string>();
+
+  for (const lvl of levelsToTry) {
+    try {
+      const vocabs = await loadVocab(lvl);
+      for (const v of vocabs) {
+        if (v.word.includes(kanjiChar) && !seenWords.has(v.word)) {
+          seenWords.add(v.word);
+          results.push(v);
+          if (results.length >= 8) break;
+        }
+      }
+      if (results.length >= 8) break;
+    } catch (_) {}
+  }
+
+  return results;
+}
+
 

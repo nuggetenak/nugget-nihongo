@@ -89,11 +89,11 @@ export const MateriHubPage: React.FC = () => {
   }, [selectedLevel]);
 
   const jlptLevels: Array<{ id: JLPTLevel; label: string; desc: string; count: string }> = [
-    { id: 'n5', label: 'JLPT N5', desc: 'Pemula', count: '991 Kata · 94 Pola' },
-    { id: 'n4', label: 'JLPT N4', desc: 'Dasar Harian', count: '946 Kata · 92 Pola' },
-    { id: 'n3', label: 'JLPT N3', desc: 'Menengah', count: '2.368 Kata · 163 Pola' },
-    { id: 'n2', label: 'JLPT N2', desc: 'Pra-Lanjutan', count: '344 Kata · 310 Pola' },
-    { id: 'n1', label: 'JLPT N1', desc: 'Mahir', count: '190 Kata · 200 Pola' },
+    { id: 'n5', label: 'JLPT N5', desc: 'Pemula', count: '1.321 Kata · 94 Pola' },
+    { id: 'n4', label: 'JLPT N4', desc: 'Dasar Harian', count: '1.286 Kata · 92 Pola' },
+    { id: 'n3', label: 'JLPT N3', desc: 'Menengah', count: '2.580 Kata · 163 Pola' },
+    { id: 'n2', label: 'JLPT N2', desc: 'Pra-Lanjutan', count: '2.104 Kata · 310 Pola' },
+    { id: 'n1', label: 'JLPT N1', desc: 'Mahir', count: '3.217 Kata · 200 Pola' },
   ];
 
   const particles = ['all', 'は', 'が', 'を', 'に', 'で', 'へ', 'と', 'も', 'から', 'まで'];

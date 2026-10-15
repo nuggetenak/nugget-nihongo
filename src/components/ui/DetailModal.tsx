@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { Volume2, X, Sparkles, BookOpen, RotateCcw, Flag, Eye, EyeOff, Zap } from 'lucide-react';
 import { NormalizedVocab, NormalizedGrammar } from '../../lib/data/dataManager';
 import { speakJapanese } from '../../lib/audio/tts';
@@ -37,10 +38,10 @@ export const DetailModal: React.FC<DetailModalProps> = ({ item, type, onClose })
   const reading = vocab ? vocab.reading : grammar?.reading;
   const meaning = vocab ? vocab.meaning : grammar?.meaning;
 
-  return (
+  const modalContent = (
     <div
       onClick={onClose}
-      className="fixed inset-0 z-50 bg-black/75 backdrop-blur-sm flex items-end sm:items-center justify-center p-0 sm:p-4 animate-in fade-in duration-200"
+      className="fixed inset-0 z-[9999] bg-black/80 backdrop-blur-md flex items-end sm:items-center justify-center p-0 sm:p-4 animate-in fade-in duration-200"
     >
       <div
         onClick={(e) => e.stopPropagation()}
@@ -233,4 +234,8 @@ export const DetailModal: React.FC<DetailModalProps> = ({ item, type, onClose })
       />
     </div>
   );
+
+  return typeof document !== 'undefined'
+    ? createPortal(modalContent, document.body)
+    : modalContent;
 };
