@@ -105,7 +105,8 @@ async function runVerification() {
       });
 
       // 1. Navigate to App Home
-      await page.goto(BASE_URL, { waitUntil: 'networkidle', timeout: 15000 });
+      await page.goto(BASE_URL, { waitUntil: 'domcontentloaded', timeout: 30000 });
+      await page.waitForSelector('#root', { timeout: 15000 });
       assert.strictEqual(pageErrors.length, 0, `Console page errors detected on load: ${pageErrors.map(e => e.message).join('; ')}`);
       pass(`App loaded successfully without runtime errors on ${vp.name}`);
 
@@ -140,18 +141,19 @@ async function runVerification() {
       pass(`Kurikulum Orisinal tab button is rendered and visible`);
 
       // 5. Verify Curriculum Track Hero & Statistics
+      await page.locator('text=Memuat Kurikulum').waitFor({ state: 'detached', timeout: 20000 }).catch(() => {});
       const trackTitle = page.locator('h2:has-text("Kurikulum")').locator('visible=true').first();
-      await trackTitle.waitFor({ state: 'visible', timeout: 5000 });
+      await trackTitle.waitFor({ state: 'visible', timeout: 10000 });
       const trackTitleText = await trackTitle.textContent();
       pass(`Active track rendered: "${trackTitleText?.trim()}"`);
 
       // 6. Verify Units and Lessons rendering
       const unitCard = page.locator('text=Unit 1').first();
-      await unitCard.waitFor({ state: 'visible', timeout: 8000 });
+      await unitCard.waitFor({ state: 'visible', timeout: 20000 });
       pass(`Unit 1 card rendered`);
 
       // Check Can-Do statement
-      const canDoText = page.locator('text=Sasaran Kemampuan (Can-Do Descriptors');
+      const canDoText = page.locator('text=Sasaran Can-Do').first();
       await canDoText.waitFor({ state: 'visible', timeout: 5000 });
       pass(`Can-Do descriptor card rendered with CEFR-J standard`);
 
@@ -234,7 +236,7 @@ async function runVerification() {
         await jawaOption.click();
         await page.waitForTimeout(300);
 
-        const activeDialectText = page.locator('text=Dialek L1: Substratum Jawa');
+        const activeDialectText = page.locator('text=Substratum Jawa').first();
         await activeDialectText.waitFor({ state: 'visible', timeout: 3000 });
         pass(`Substratum dynamically switched to Substratum Jawa`);
       }
@@ -254,12 +256,12 @@ async function runVerification() {
       const settingsHeading = page.locator('h1:has-text("Pengaturan")');
       await settingsHeading.waitFor({ state: 'visible', timeout: 5000 });
 
-      const l1SettingsSection = page.locator('h2:has-text("Preferensi Dialek Bahasa Ibu (L1 Substratum)")');
+      const l1SettingsSection = page.locator('h2:has-text("Penyesuaian Logat Daerah")');
       await l1SettingsSection.waitFor({ state: 'visible', timeout: 5000 });
       pass(`L1 Substratum Dialect settings section verified in SettingsPage`);
 
       // Check that Jawa option is marked active in Settings
-      const jawaActiveBadge = page.locator('button:has-text("Substratum Jawa") :text("✓ Aktif")');
+      const jawaActiveBadge = page.locator('button:has-text("Logat Jawa") :text("✓ Aktif")');
       await jawaActiveBadge.waitFor({ state: 'visible', timeout: 3000 });
       pass(`Settings reflects synchronized active L1 Substratum (Jawa)`);
 

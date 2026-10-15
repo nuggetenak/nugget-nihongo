@@ -279,15 +279,15 @@ export const SettingsPage: React.FC = () => {
         </div>
       </div>
 
-      {/* L1 Substratum Dialect & Contrastive Diagnostics Settings */}
+      {/* Penyesuaian Logat Daerah (Latar Belakang Bahasa Ibu) */}
       <div className="bg-surface border border-accent/20 rounded-2xl p-6 space-y-4">
         <h2 className="font-bold text-sm text-appText-bright flex items-center gap-2 border-b border-accent/15 pb-3">
           <Languages className="w-4 h-4 text-accent" />
-          <span>Preferensi Dialek Bahasa Ibu (L1 Substratum)</span>
+          <span>Penyesuaian Logat Daerah (Latar Belakang Bahasa)</span>
         </h2>
 
         <p className="text-xs text-appText-muted leading-relaxed">
-          Nugget Nihongo menyesuaikan diagnosis kesalahan tata bahasa dan latihan nada Tokyo (Pitch Accent) berdasarkan latar belakang bahasa daerahmu untuk membedah interferensi fonologis spesifik.
+          Nugget Nihongo menyesuaikan diagnosis tata bahasa dan latihan nada Tokyo (Pitch Accent) berdasarkan latar belakang logat daerahmu untuk mengatasi kebiasaan pengucapan yang terbawa dari bahasa ibu.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
@@ -300,19 +300,19 @@ export const SettingsPage: React.FC = () => {
             },
             {
               id: 'javanese' as L1Substratum,
-              title: 'Substratum Jawa',
+              title: 'Logat Jawa',
               badge: 'Jawa',
               desc: 'Pemberat konsonan plosif b/d/g, kecenderungan pemanjangan vokal chōon, & partikel penegas.',
             },
             {
               id: 'sundanese' as L1Substratum,
-              title: 'Substratum Sunda',
+              title: 'Logat Sunda',
               badge: 'Sunda',
               desc: 'Netralisasi konsonan f/p/v, vokal sentral /ə/, & kelembutan intonasi.',
             },
             {
               id: 'batak_eastern' as L1Substratum,
-              title: 'Substratum Batak & Timur',
+              title: 'Logat Batak & Indonesia Timur',
               badge: 'Batak / Timur',
               desc: 'Ritme suku kata bertekanan, intonasi dinamis vs nada Tokyo heiban (datar).',
             },

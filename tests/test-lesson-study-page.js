@@ -92,32 +92,32 @@ async function run() {
       console.log(`  ✓ Lesson Title rendered: "${title.trim()}"`);
 
       // 4. Verify 4-Stage Stepper Buttons
-      const stepperButtons = page.locator('button:has-text("Dialog"), button:has-text("Bedah Pola"), button:has-text("Latihan"), button:has-text("Verifikasi")');
+      const stepperButtons = page.locator('button:has-text("Dialog"), button:has-text("Bedah Materi"), button:has-text("Cek Pemahaman"), button:has-text("Tantangan Nyata")');
       const stepperCount = await stepperButtons.count();
       assert(stepperCount >= 4, `Expected at least 4 stepper buttons, found ${stepperCount}`);
       console.log(`  ✓ Stepper 4-Tahap buttons visible`);
 
       // 5. Test Stepper Navigation to Explanation Stage
-      const expBtn = page.locator('button:has-text("Bedah Pola")').first();
+      const expBtn = page.locator('button:has-text("Bedah Materi")').first();
       await expBtn.click();
       await page.waitForTimeout(300);
-      const whyBox = page.locator('text=Mengapa Urutan Materi Ini?');
-      assert(await whyBox.isVisible(), 'Pedagogical framework SLA research box must be visible');
-      console.log(`  ✓ Explanation Stage & SLA Pedagogical Framework verified`);
+      const whyBox = page.locator('text=Kenapa Pola Ini Dipelajari Duluan?');
+      assert(await whyBox.isVisible(), 'Pedagogical framework why order box must be visible');
+      console.log(`  ✓ Explanation Stage & Pedagogical Framework verified`);
 
       // 6. Test Stepper Navigation to Micro-Drills Stage (Zero Menu-Jumping)
-      const drillBtn = page.locator('button:has-text("Latihan")').first();
+      const drillBtn = page.locator('button:has-text("Cek Pemahaman")').first();
       await drillBtn.click();
       await page.waitForTimeout(300);
-      const drillContainer = page.locator('text=Latihan Soal #1');
+      const drillContainer = page.locator('text=Cek Pemahaman #1');
       assert(await drillContainer.isVisible(), 'In-place micro-drills container must be visible');
       console.log(`  ✓ MicroDrillStage rendered in-place (No Menu Jumping!)`);
 
       // 7. Test Stepper Navigation to Can-Do Stage
-      const candoBtn = page.locator('button:has-text("Verifikasi")').first();
+      const candoBtn = page.locator('button:has-text("Tantangan Nyata")').first();
       await candoBtn.click();
       await page.waitForTimeout(300);
-      const candoText = page.locator('text=Target Capaian Komunikasi (CEFR-J Can-Do)');
+      const candoText = page.locator('text=Target Kemampuan Nyata');
       assert(await candoText.isVisible(), 'Can-Do challenge stage must be visible');
       console.log(`  ✓ Can-Do Stage & model answer prompt verified`);
 

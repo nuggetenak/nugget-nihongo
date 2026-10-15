@@ -41,7 +41,6 @@ window.bookMinna1 = {
       topic      : "これは〜です — Menanyakan Benda",
       vocab_ids  : [
         'vg-n5-00108', // 本 — buku
-        'vg-n5-00108', // 本 — buku
         'vg-n5-00526', // 辞書 — kamus
         'vg-n5-00486', // 新聞 — koran
         'vg-n5-00406', // ノート — buku catatan
@@ -140,7 +139,6 @@ window.bookMinna1 = {
         'vg-n5-00049', // 送る — mengirim; mengantarkan
         'vg-n5-00416', // 誕生日 — ulang tahun
         'vg-n5-00133', // 花 — bunga
-        'vg-n5-00133', // 花 — bunga
         'vg-n5-00539', // 花びん — vas bunga
         'vg-n5-00092', // 友達 — teman
         'vg-n5-00101', // 家族 — keluarga
@@ -220,8 +218,6 @@ window.bookMinna1 = {
         'vg-n5-00131', // 山 — gunung
         'vg-n5-00132', // 川 — sungai
         'vg-n5-00133', // 花 — bunga
-        'vg-n5-00132', // 川 — sungai
-        'vg-n5-00131', // 山 — gunung
         'vg-n5-00438', // 富士山 — Gunung Fuji
         'vg-n5-00081', // 静か — tenang, hening
         'vg-n5-00082', // 賑やか — ramai, meriah
@@ -241,7 +237,6 @@ window.bookMinna1 = {
         'vg-n5-00012', // 書く — menulis
         'vg-n5-00112', // 手紙 — surat
         'vg-n5-00049', // 送る — mengirim; mengantarkan
-        'vg-n5-00012', // 書く — menulis
         'vg-n5-00033', // 読む — membaca
         'vg-n5-00037', // 買う — membeli
       ],
@@ -252,15 +247,12 @@ window.bookMinna1 = {
       topic      : "電話します — Komunikasi",
       vocab_ids  : [
         'vg-n5-00111', // 電話 — telepon
-        'vg-n5-00111', // 電話 — telepon
         'vg-n5-00535', // 電気 — listrik, lampu
         'vg-n5-00031', // 話す — berbicara
         'vg-n5-00041', // 教える — mengajar; memberitahu
         'vg-n5-00055', // 見せる — memperlihatkan
         'vg-n5-00013', // 聞く — mendengar; bertanya
-        'vg-n5-00031', // 話す — berbicara
         'vg-n5-00536', // 話 — pembicaraan, cerita
-        'vg-n5-00008', // 言う — berkata, mengatakan
         'vg-n5-00008', // 言う — berkata, mengatakan
       ],
       grammar_ids: ['gn5-00030', 'gn5-00031', 'gn5-00032'],
@@ -293,7 +285,6 @@ window.bookMinna1 = {
         'vg-n5-00080', // きれい — cantik; bersih
         'vg-n5-00081', // 静か — tenang, hening
         'vg-n5-00082', // 賑やか — ramai, meriah
-        'vg-n5-00083', // 大切 — penting, berharga
         'vg-n5-00083', // 大切 — penting, berharga
         'vg-n5-00723', // 大変 — sangat; parah; berat
         'vg-n5-00724', // 有名 — terkenal; termasyhur
@@ -330,12 +321,9 @@ window.bookMinna1 = {
         'vg-n5-00030', // 働く — bekerja
         'vg-n5-00111', // 電話 — telepon
         'vg-n5-00725', // 勤める — bekerja di (perusahaan/instansi)
-        'vg-n5-00019', // 住む — tinggal, menetap
-        'vg-n5-00030', // 働く — bekerja
         'vg-n4-00684', // 結婚する — menikah
         'vg-n5-00101', // 家族 — keluarga
         'vg-n5-00086', // 会社 — perusahaan
-        'vg-n5-00019', // 住む — tinggal, menetap
       ],
       grammar_ids: ['gn5-00029', 'gn5-00089'],
     },

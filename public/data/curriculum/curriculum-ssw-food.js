@@ -5,7 +5,7 @@ window.curriculumSSWFood = {
     "track_id": "curriculum-ssw-food",
     "title": "Kurikulum SSW Pengolahan Makanan & Restoran",
     "sector": "Pengolahan Makanan & Restoran",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "total_units": 8,
     "authoritative": true
   },
@@ -22,13 +22,13 @@ window.curriculumSSWFood = {
       "can_do_summary": "Bisa memakai APD steril, mencuci tangan 6-langkah, dan air shower.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn4-00010",
-        "gn4-00013",
-        "gn4-00021"
+        "gn4-00021",
+        "gn4-00028"
       ],
       "vocab_ids": [
-        "vg-n4-00001",
-        "vg-n4-00002"
+        "v-ssw-food-001",
+        "v-ssw-food-002",
+        "v-ssw-food-003"
       ],
       "lessons": [
         {
@@ -39,11 +39,11 @@ window.curriculumSSWFood = {
           "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Sanitasi Diri & Prosedur Masuk Pabrik Steril.",
           "can_do_statement": "Bisa memakai APD steril, mencuci tangan 6-langkah, dan air shower.",
           "grammar_ids": [
-            "gn4-00010",
-            "gn4-00013"
+            "gn4-00021"
           ],
           "vocab_ids": [
-            "vg-n4-00001"
+            "v-ssw-food-001",
+            "v-ssw-food-002"
           ]
         },
         {
@@ -54,10 +54,10 @@ window.curriculumSSWFood = {
           "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
           "can_do_statement": "Bisa memakai APD steril, mencuci tangan 6-langkah, dan air shower.",
           "grammar_ids": [
-            "gn4-00021"
+            "gn4-00028"
           ],
           "vocab_ids": [
-            "vg-n4-00002"
+            "v-ssw-food-003"
           ]
         }
       ]
@@ -74,13 +74,13 @@ window.curriculumSSWFood = {
       "can_do_summary": "Bisa memantau suhu sterilisasi pemanasan inti 85C dan detektor logam.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn4-00010",
-        "gn4-00013",
-        "gn4-00021"
+        "gn4-00030",
+        "gn4-00041"
       ],
       "vocab_ids": [
-        "vg-n4-00001",
-        "vg-n4-00002"
+        "v-ssw-food-004",
+        "v-ssw-food-005",
+        "v-ssw-food-006"
       ],
       "lessons": [
         {
@@ -91,11 +91,11 @@ window.curriculumSSWFood = {
           "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja 7 Prinsip HACCP & Titik Kendali Kritis CCP.",
           "can_do_statement": "Bisa memantau suhu sterilisasi pemanasan inti 85C dan detektor logam.",
           "grammar_ids": [
-            "gn4-00010",
-            "gn4-00013"
+            "gn4-00030"
           ],
           "vocab_ids": [
-            "vg-n4-00001"
+            "v-ssw-food-004",
+            "v-ssw-food-005"
           ]
         },
         {
@@ -106,10 +106,10 @@ window.curriculumSSWFood = {
           "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
           "can_do_statement": "Bisa memantau suhu sterilisasi pemanasan inti 85C dan detektor logam.",
           "grammar_ids": [
-            "gn4-00021"
+            "gn4-00041"
           ],
           "vocab_ids": [
-            "vg-n4-00002"
+            "v-ssw-food-006"
           ]
         }
       ]
@@ -126,13 +126,13 @@ window.curriculumSSWFood = {
       "can_do_summary": "Bisa mencegah kontaminasi silang 8 alergen statutori MAFF.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn4-00010",
-        "gn4-00013",
-        "gn4-00021"
+        "gn4-00023",
+        "gn4-00024"
       ],
       "vocab_ids": [
-        "vg-n4-00001",
-        "vg-n4-00002"
+        "v-ssw-food-007",
+        "v-ssw-food-008",
+        "v-ssw-food-009"
       ],
       "lessons": [
         {
@@ -143,11 +143,11 @@ window.curriculumSSWFood = {
           "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Deklarasi 8 Alergen Wajib Hukum Jepang.",
           "can_do_statement": "Bisa mencegah kontaminasi silang 8 alergen statutori MAFF.",
           "grammar_ids": [
-            "gn4-00010",
-            "gn4-00013"
+            "gn4-00023"
           ],
           "vocab_ids": [
-            "vg-n4-00001"
+            "v-ssw-food-007",
+            "v-ssw-food-008"
           ]
         },
         {
@@ -158,10 +158,10 @@ window.curriculumSSWFood = {
           "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
           "can_do_statement": "Bisa mencegah kontaminasi silang 8 alergen statutori MAFF.",
           "grammar_ids": [
-            "gn4-00021"
+            "gn4-00024"
           ],
           "vocab_ids": [
-            "vg-n4-00002"
+            "v-ssw-food-009"
           ]
         }
       ]
@@ -178,13 +178,13 @@ window.curriculumSSWFood = {
       "can_do_summary": "Bisa memisahkan talenan daging, ikan, sayur, dan matang.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn4-00010",
-        "gn4-00013",
-        "gn4-00021"
+        "gn4-00025",
+        "gn4-00026"
       ],
       "vocab_ids": [
-        "vg-n4-00001",
-        "vg-n4-00002"
+        "v-ssw-food-010",
+        "v-ssw-food-011",
+        "v-ssw-food-012"
       ],
       "lessons": [
         {
@@ -195,11 +195,11 @@ window.curriculumSSWFood = {
           "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Sistem Kode 4 Warna Talenan & Pisau.",
           "can_do_statement": "Bisa memisahkan talenan daging, ikan, sayur, dan matang.",
           "grammar_ids": [
-            "gn4-00010",
-            "gn4-00013"
+            "gn4-00025"
           ],
           "vocab_ids": [
-            "vg-n4-00001"
+            "v-ssw-food-010",
+            "v-ssw-food-011"
           ]
         },
         {
@@ -210,10 +210,10 @@ window.curriculumSSWFood = {
           "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
           "can_do_statement": "Bisa memisahkan talenan daging, ikan, sayur, dan matang.",
           "grammar_ids": [
-            "gn4-00021"
+            "gn4-00026"
           ],
           "vocab_ids": [
-            "vg-n4-00002"
+            "v-ssw-food-012"
           ]
         }
       ]
@@ -230,13 +230,13 @@ window.curriculumSSWFood = {
       "can_do_summary": "Bisa mengarantina batch jika alarm detektor logam berbunyi.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn4-00010",
-        "gn4-00013",
-        "gn4-00021"
+        "gn4-00027",
+        "gn4-00034"
       ],
       "vocab_ids": [
-        "vg-n4-00001",
-        "vg-n4-00002"
+        "v-ssw-food-013",
+        "v-ssw-food-014",
+        "v-ssw-food-015"
       ],
       "lessons": [
         {
@@ -247,11 +247,11 @@ window.curriculumSSWFood = {
           "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Pengemasan Hermetis & Karantina Patahan Pisau.",
           "can_do_statement": "Bisa mengarantina batch jika alarm detektor logam berbunyi.",
           "grammar_ids": [
-            "gn4-00010",
-            "gn4-00013"
+            "gn4-00027"
           ],
           "vocab_ids": [
-            "vg-n4-00001"
+            "v-ssw-food-013",
+            "v-ssw-food-014"
           ]
         },
         {
@@ -262,10 +262,10 @@ window.curriculumSSWFood = {
           "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
           "can_do_statement": "Bisa mengarantina batch jika alarm detektor logam berbunyi.",
           "grammar_ids": [
-            "gn4-00021"
+            "gn4-00034"
           ],
           "vocab_ids": [
-            "vg-n4-00002"
+            "v-ssw-food-015"
           ]
         }
       ]
@@ -282,13 +282,13 @@ window.curriculumSSWFood = {
       "can_do_summary": "Bisa mengisolasi area muntahan dan disinfeksi klorin 1000 ppm.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn4-00010",
-        "gn4-00013",
-        "gn4-00021"
+        "gn4-00038",
+        "gn4-00045"
       ],
       "vocab_ids": [
-        "vg-n4-00001",
-        "vg-n4-00002"
+        "v-ssw-food-016",
+        "v-ssw-food-017",
+        "v-ssw-food-018"
       ],
       "lessons": [
         {
@@ -299,11 +299,11 @@ window.curriculumSSWFood = {
           "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Protokol Outbreak Norovirus & Klorin 1.000 ppm.",
           "can_do_statement": "Bisa mengisolasi area muntahan dan disinfeksi klorin 1000 ppm.",
           "grammar_ids": [
-            "gn4-00010",
-            "gn4-00013"
+            "gn4-00038"
           ],
           "vocab_ids": [
-            "vg-n4-00001"
+            "v-ssw-food-016",
+            "v-ssw-food-017"
           ]
         },
         {
@@ -314,10 +314,10 @@ window.curriculumSSWFood = {
           "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
           "can_do_statement": "Bisa mengisolasi area muntahan dan disinfeksi klorin 1000 ppm.",
           "grammar_ids": [
-            "gn4-00021"
+            "gn4-00045"
           ],
           "vocab_ids": [
-            "vg-n4-00002"
+            "v-ssw-food-018"
           ]
         }
       ]
@@ -334,13 +334,13 @@ window.curriculumSSWFood = {
       "can_do_summary": "Bisa menyapa tamu, mencatat pesanan, dan meminta maaf sopan.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn4-00010",
-        "gn4-00013",
-        "gn4-00021"
+        "gn4-00046",
+        "gn4-00047"
       ],
       "vocab_ids": [
-        "vg-n4-00001",
-        "vg-n4-00002"
+        "v-ssw-food-019",
+        "v-ssw-food-020",
+        "v-ssw-food-021"
       ],
       "lessons": [
         {
@@ -351,11 +351,11 @@ window.curriculumSSWFood = {
           "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Sekkyaku 7-Daigo & Layanan Omotenashi Restoran.",
           "can_do_statement": "Bisa menyapa tamu, mencatat pesanan, dan meminta maaf sopan.",
           "grammar_ids": [
-            "gn4-00010",
-            "gn4-00013"
+            "gn4-00046"
           ],
           "vocab_ids": [
-            "vg-n4-00001"
+            "v-ssw-food-019",
+            "v-ssw-food-020"
           ]
         },
         {
@@ -366,10 +366,10 @@ window.curriculumSSWFood = {
           "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
           "can_do_statement": "Bisa menyapa tamu, mencatat pesanan, dan meminta maaf sopan.",
           "grammar_ids": [
-            "gn4-00021"
+            "gn4-00047"
           ],
           "vocab_ids": [
-            "vg-n4-00002"
+            "v-ssw-food-021"
           ]
         }
       ]
@@ -386,13 +386,13 @@ window.curriculumSSWFood = {
       "can_do_summary": "Bisa menangani komplain rambut dan panggil 119 untuk syok alergi.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn4-00010",
-        "gn4-00013",
-        "gn4-00021"
+        "gn4-00050",
+        "gn4-00051"
       ],
       "vocab_ids": [
-        "vg-n4-00001",
-        "vg-n4-00002"
+        "v-ssw-food-022",
+        "v-ssw-food-023",
+        "v-ssw-food-024"
       ],
       "lessons": [
         {
@@ -403,11 +403,11 @@ window.curriculumSSWFood = {
           "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Penanganan Komplain & SBAR Syok Anafilaksis.",
           "can_do_statement": "Bisa menangani komplain rambut dan panggil 119 untuk syok alergi.",
           "grammar_ids": [
-            "gn4-00010",
-            "gn4-00013"
+            "gn4-00050"
           ],
           "vocab_ids": [
-            "vg-n4-00001"
+            "v-ssw-food-022",
+            "v-ssw-food-023"
           ]
         },
         {
@@ -418,10 +418,10 @@ window.curriculumSSWFood = {
           "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
           "can_do_statement": "Bisa menangani komplain rambut dan panggil 119 untuk syok alergi.",
           "grammar_ids": [
-            "gn4-00021"
+            "gn4-00051"
           ],
           "vocab_ids": [
-            "vg-n4-00002"
+            "v-ssw-food-024"
           ]
         }
       ]

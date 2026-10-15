@@ -497,7 +497,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
 
             <p className="text-xs sm:text-sm text-appText-muted leading-relaxed break-words line-clamp-2 sm:line-clamp-none hidden sm:block">
               {trackCategory === 'jlpt'
-                ? 'Jalur belajar bertahap yang diorkestrasi menggunakan Processability Theory (Pienemann) dan Analisis Kontrasif L1 Bahasa Indonesia untuk menjamin pemahaman alami tanpa salah kaprah.'
+                ? 'Jalur belajar bertahap yang dirancang berdasarkan kurikulum terstruktur dan pemahaman gaya bahasa Indonesia agar kamu bisa berbicara bahasa Jepang alami tanpa salah kaprah.'
                 : 'Kurikulum vokasional berbasis skenario kerja nyata: protokol keselamatan K3 Gemba, komunikasi Koe-kake lansia, standar HACCP, dan pelaporan SBAR baku kepada penyelia Jepang.'}
             </p>
           </div>
@@ -542,7 +542,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
         </div>
 
         {/* ─────────────────────────────────────────────────────────────
-            3. L1 SUBSTRATUM DIALECT SELECTOR BANNER (Sleek Compact Bar)
+            3. LOGAT DAERAH SELECTOR BANNER (Sleek Compact Bar)
            ───────────────────────────────────────────────────────────── */}
         <div className="bg-surface/90 border border-amber-500/30 rounded-xl sm:rounded-2xl p-2.5 sm:p-4 flex items-center justify-between gap-2.5 text-xs">
           <div className="flex items-center gap-2 sm:gap-3 min-w-0">
@@ -552,7 +552,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
             <div className="min-w-0">
               <div className="flex items-center gap-1.5">
                 <span className="font-extrabold text-appText-bright truncate text-xs sm:text-sm">
-                  Dialek L1: {activeSubstratumMeta.label}
+                  Logat Daerah: {activeSubstratumMeta.label}
                 </span>
                 <span className="px-1.5 py-0.2 rounded-full bg-amber-500/20 text-accent font-bold text-[9px] sm:text-[10px] shrink-0">
                   Aktif
@@ -612,15 +612,15 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
       </div>
 
       {/* ─────────────────────────────────────────────────────────────
-          4. PROCESSABILITY THEORY STAGE ROADMAP RIBBON (Desktop/Tablet)
+          4. ALUR BELAJAR BERTAHAP (ROADMAP TAHAP 1-6)
          ───────────────────────────────────────────────────────────── */}
       {trackCategory === 'jlpt' && (
         <div className="hidden sm:block space-y-2">
           <div className="flex items-center justify-between text-xs">
             <div className="font-bold text-appText-bright flex items-center gap-1.5">
-              <span>Tangga Perkembangan Bahasa (Processability Theory)</span>
-              <span className="text-[10px] px-1.5 py-0.5 rounded bg-surface-3 text-appText-muted font-normal">
-                Pienemann
+              <span>Alur Belajar Bertahap</span>
+              <span className="text-[10px] px-1.5 py-0.5 rounded bg-surface-3 text-accent font-semibold">
+                Tahap 1–6
               </span>
             </div>
           </div>
@@ -774,7 +774,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                     <div className="bg-surface-2/90 border border-accent/20 rounded-2xl p-4 space-y-1.5">
                       <div className="flex items-center gap-1.5 text-xs font-bold text-appText-bright">
                         <span className="text-sm">🎯</span>
-                        <span>Sasaran Kemampuan (Can-Do Descriptors · CEFR-J):</span>
+                        <span>Target Kemampuan Nyata (Sasaran Can-Do):</span>
                       </div>
                       <p className="text-xs text-appText leading-relaxed break-words">
                         {unit.can_do_summary}
@@ -786,7 +786,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                       <div className="bg-amber-950/20 border border-amber-500/35 rounded-2xl p-4 space-y-1 text-xs">
                         <div className="flex items-center gap-1.5 font-bold text-accent-hot">
                           <AlertTriangle className="w-3.5 h-3.5 shrink-0" />
-                          <span>Fokus Analisis Kontrasif L1 Bahasa Indonesia:</span>
+                          <span>Tips Penyesuaian Bahasa Indonesia:</span>
                         </div>
                         <p className="text-[11px] text-appText leading-relaxed break-words">
                           {unit.l2d_focus_notes}

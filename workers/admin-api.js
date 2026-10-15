@@ -65,6 +65,52 @@ function checkAuth(request, env) {
   return token && token === env.ADMIN_SECRET;
 }
 
+// ── UTF-8 safe Base64 converters (handles Japanese Kanji/Kana without InvalidCharacterError)
+function utf8ToBase64(str) {
+  const bytes = new TextEncoder().encode(str);
+  let binary = '';
+  for (let i = 0; i < bytes.length; i++) {
+    binary += String.fromCharCode(bytes[i]);
+  }
+  return btoa(binary);
+}
+
+function base64ToUtf8(b64) {
+  const binary = atob(b64);
+  const bytes = new Uint8Array(binary.length);
+  for (let i = 0; i < binary.length; i++) {
+    bytes[i] = binary.charCodeAt(i);
+  }
+  return new TextDecoder().decode(bytes);
+}
+
+function formatAppendedContent(currentContent, targetFile, promotedPayload, item) {
+  if (targetFile.endsWith('.json')) {
+    try {
+      const parsed = JSON.parse(currentContent);
+      if (Array.isArray(parsed)) {
+        parsed.push(promotedPayload);
+        return JSON.stringify(parsed, null, 2) + '\n';
+      } else if (parsed && Array.isArray(parsed.items)) {
+        parsed.items.push(promotedPayload);
+        return JSON.stringify(parsed, null, 2) + '\n';
+      }
+    } catch {
+      // Fallback if parsing fails
+    }
+  }
+
+  if (targetFile.endsWith('.md')) {
+    const entryMd = `\n\n### Promoted Item: ${item.ai_item_id}\n\n\`\`\`json\n${JSON.stringify(promotedPayload, null, 2)}\n\`\`\`\n`;
+    return currentContent.trimEnd() + entryMd;
+  }
+
+  // Default: JS file where array closes with ];
+  const newEntryJSON = JSON.stringify(promotedPayload, null, 2);
+  const newEntry = ',\n' + newEntryJSON.split('\n').map(l => '  ' + l).join('\n');
+  return currentContent.trimEnd().replace(/\];?\s*$/, newEntry + '\n];\n');
+}
+
 // ── Supabase client helpers ───────────────────────────────────────
 function sbHeaders(env) {
   return {
@@ -125,12 +171,10 @@ async function openPromotionPR(env, item, promotedPayload, targetFile) {
     const fileRes = await fetch(`${api}/contents/${targetFile}?ref=develop`, { headers: ghHeaders });
     if (!fileRes.ok) throw new Error(`GitHub GET file: ${fileRes.status}`);
     const fileData = await fileRes.json();
-    const currentContent = atob(fileData.content.replace(/\n/g, ''));
+    const currentContent = base64ToUtf8(fileData.content.replace(/\n/g, ''));
 
-    // 2. Append new entry (items are in a JS array — insert before closing ])
-    const newEntryJSON = JSON.stringify(promotedPayload, null, 2);
-    const newEntry = ',\n' + newEntryJSON.split('\n').map(l => '  ' + l).join('\n');
-    const updatedContent = currentContent.trimEnd().replace(/\];?\s*$/, newEntry + '\n];\n');
+    // 2. Format and append new entry based on file extension (.json, .md, or .js)
+    const updatedContent = formatAppendedContent(currentContent, targetFile, promotedPayload, item);
 
     // 3. Create a branch
     const ts = Date.now();
@@ -147,13 +191,13 @@ async function openPromotionPR(env, item, promotedPayload, targetFile) {
       body: JSON.stringify({ ref: `refs/heads/${branchName}`, sha: baseSHA }),
     });
 
-    // 4. Commit the file update
+    // 4. Commit the file update (UTF-8 safe base64)
     await fetch(`${api}/contents/${targetFile}`, {
       method: 'PUT',
       headers: ghHeaders,
       body: JSON.stringify({
         message: `promote(ai): ${item.ai_item_id} → ${targetFile}`,
-        content: btoa(updatedContent),
+        content: utf8ToBase64(updatedContent),
         sha: fileData.sha,
         branch: branchName,
       }),

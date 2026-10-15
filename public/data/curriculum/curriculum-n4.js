@@ -23,16 +23,16 @@ window.curriculumN4 = {
       "can_do_summary": "Bisa merencanakan kegiatan dan memberi saran sopan.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn4-00001",
-        "gn4-00002",
-        "gn4-00003",
-        "gn4-00004",
-        "gn4-00005",
-        "gn4-00006",
-        "gn4-00007",
-        "gn4-00008",
-        "gn4-00009",
-        "gn4-00010"
+        "gn4-00011",
+        "gn4-00012",
+        "gn4-00013",
+        "gn4-00014",
+        "gn4-00015",
+        "gn4-00017",
+        "gn4-00018",
+        "gn4-00019",
+        "gn4-00020",
+        "gn4-00021"
       ],
       "vocab_ids": [
         "vg-n4-00001",
@@ -140,11 +140,11 @@ window.curriculumN4 = {
           "desc_id": "Pengenalan struktur inti dan pola dasar Niat, Rencana & Rekomendasi.",
           "can_do_statement": "Bisa merencanakan kegiatan dan memberi saran sopan.",
           "grammar_ids": [
-            "gn4-00001",
-            "gn4-00002",
-            "gn4-00003",
-            "gn4-00004",
-            "gn4-00005"
+            "gn4-00011",
+            "gn4-00012",
+            "gn4-00013",
+            "gn4-00014",
+            "gn4-00015"
           ],
           "vocab_ids": [
             "vg-n4-00001",
@@ -205,11 +205,11 @@ window.curriculumN4 = {
           "desc_id": "Latihan produksi aktif, perbandingan nuansa, dan konsolidasi.",
           "can_do_statement": "Bisa merencanakan kegiatan dan memberi saran sopan.",
           "grammar_ids": [
-            "gn4-00006",
-            "gn4-00007",
-            "gn4-00008",
-            "gn4-00009",
-            "gn4-00010"
+            "gn4-00017",
+            "gn4-00018",
+            "gn4-00019",
+            "gn4-00020",
+            "gn4-00021"
           ],
           "vocab_ids": [
             "vg-n4-00132",
@@ -275,16 +275,16 @@ window.curriculumN4 = {
       "can_do_summary": "Bisa menjelaskan keterampilan kerja dan izin bertindak.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn4-00011",
-        "gn4-00012",
-        "gn4-00013",
-        "gn4-00014",
-        "gn4-00015",
-        "gn4-00017",
-        "gn4-00018",
-        "gn4-00019",
-        "gn4-00020",
-        "gn4-00021"
+        "gn4-00022",
+        "gn4-00040",
+        "gn4-00043",
+        "gn4-00064",
+        "gn4-00073",
+        "gn4-00086",
+        "gn4-00089",
+        "gn4-00091",
+        "gn4-00092",
+        "gn4-00028"
       ],
       "vocab_ids": [
         "vg-n4-00271",
@@ -392,11 +392,11 @@ window.curriculumN4 = {
           "desc_id": "Pengenalan struktur inti dan pola dasar Kemampuan, Izin & Kapasitas.",
           "can_do_statement": "Bisa menjelaskan keterampilan kerja dan izin bertindak.",
           "grammar_ids": [
-            "gn4-00011",
-            "gn4-00012",
-            "gn4-00013",
-            "gn4-00014",
-            "gn4-00015"
+            "gn4-00022",
+            "gn4-00040",
+            "gn4-00043",
+            "gn4-00064",
+            "gn4-00073"
           ],
           "vocab_ids": [
             "vg-n4-00271",
@@ -457,11 +457,11 @@ window.curriculumN4 = {
           "desc_id": "Latihan produksi aktif, perbandingan nuansa, dan konsolidasi.",
           "can_do_statement": "Bisa menjelaskan keterampilan kerja dan izin bertindak.",
           "grammar_ids": [
-            "gn4-00017",
-            "gn4-00018",
-            "gn4-00019",
-            "gn4-00020",
-            "gn4-00021"
+            "gn4-00086",
+            "gn4-00089",
+            "gn4-00091",
+            "gn4-00092",
+            "gn4-00028"
           ],
           "vocab_ids": [
             "vg-n4-00435",
@@ -527,16 +527,16 @@ window.curriculumN4 = {
       "can_do_summary": "Bisa mengurutkan SOP kerja dan menyatakan keharusan.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn4-00022",
-        "gn4-00040",
-        "gn4-00043",
-        "gn4-00064",
-        "gn4-00073",
-        "gn4-00086",
-        "gn4-00089",
-        "gn4-00091",
-        "gn4-00092",
-        "gn4-00028"
+        "gn4-00029",
+        "gn4-00030",
+        "gn4-00031",
+        "gn4-00041",
+        "gn4-00074",
+        "gn4-00075",
+        "gn4-00076",
+        "gn4-00090",
+        "gn4-00016",
+        "gn4-00035"
       ],
       "vocab_ids": [
         "vg-n4-00676",
@@ -644,11 +644,11 @@ window.curriculumN4 = {
           "desc_id": "Pengenalan struktur inti dan pola dasar Rantai Kronologis & Keharusan.",
           "can_do_statement": "Bisa mengurutkan SOP kerja dan menyatakan keharusan.",
           "grammar_ids": [
-            "gn4-00022",
-            "gn4-00040",
-            "gn4-00043",
-            "gn4-00064",
-            "gn4-00073"
+            "gn4-00029",
+            "gn4-00030",
+            "gn4-00031",
+            "gn4-00041",
+            "gn4-00074"
           ],
           "vocab_ids": [
             "vg-n4-00676",
@@ -709,11 +709,11 @@ window.curriculumN4 = {
           "desc_id": "Latihan produksi aktif, perbandingan nuansa, dan konsolidasi.",
           "can_do_statement": "Bisa mengurutkan SOP kerja dan menyatakan keharusan.",
           "grammar_ids": [
-            "gn4-00086",
-            "gn4-00089",
-            "gn4-00091",
-            "gn4-00092",
-            "gn4-00028"
+            "gn4-00075",
+            "gn4-00076",
+            "gn4-00090",
+            "gn4-00016",
+            "gn4-00035"
           ],
           "vocab_ids": [
             "vg-n4-00817",
@@ -779,16 +779,16 @@ window.curriculumN4 = {
       "can_do_summary": "Bisa melaporkan persiapan kerja dan kondisi resultant.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn4-00029",
-        "gn4-00030",
-        "gn4-00031",
-        "gn4-00041",
-        "gn4-00074",
-        "gn4-00075",
-        "gn4-00076",
-        "gn4-00090",
-        "gn4-00016",
-        "gn4-00035"
+        "gn4-00036",
+        "gn4-00023",
+        "gn4-00024",
+        "gn4-00025",
+        "gn4-00026",
+        "gn4-00027",
+        "gn4-00032",
+        "gn4-00033",
+        "gn4-00034",
+        "gn4-00038"
       ],
       "vocab_ids": [
         "vg-n4-00193",
@@ -896,11 +896,11 @@ window.curriculumN4 = {
           "desc_id": "Pengenalan struktur inti dan pola dasar Aspek Kondisi & Persiapan.",
           "can_do_statement": "Bisa melaporkan persiapan kerja dan kondisi resultant.",
           "grammar_ids": [
-            "gn4-00029",
-            "gn4-00030",
-            "gn4-00031",
-            "gn4-00041",
-            "gn4-00074"
+            "gn4-00036",
+            "gn4-00023",
+            "gn4-00024",
+            "gn4-00025",
+            "gn4-00026"
           ],
           "vocab_ids": [
             "vg-n4-00193",
@@ -961,11 +961,11 @@ window.curriculumN4 = {
           "desc_id": "Latihan produksi aktif, perbandingan nuansa, dan konsolidasi.",
           "can_do_statement": "Bisa melaporkan persiapan kerja dan kondisi resultant.",
           "grammar_ids": [
-            "gn4-00075",
-            "gn4-00076",
-            "gn4-00090",
-            "gn4-00016",
-            "gn4-00035"
+            "gn4-00027",
+            "gn4-00032",
+            "gn4-00033",
+            "gn4-00034",
+            "gn4-00038"
           ],
           "vocab_ids": [
             "vg-n4-00509",
@@ -1031,16 +1031,16 @@ window.curriculumN4 = {
       "can_do_summary": "Bisa meminta dan memberi bantuan secara santun.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn4-00036",
-        "gn4-00023",
-        "gn4-00024",
-        "gn4-00025",
-        "gn4-00026",
-        "gn4-00027",
-        "gn4-00032",
-        "gn4-00033",
-        "gn4-00034",
-        "gn4-00038"
+        "gn4-00039",
+        "gn4-00048",
+        "gn4-00053",
+        "gn4-00054",
+        "gn4-00055",
+        "gn4-00056",
+        "gn4-00057",
+        "gn4-00058",
+        "gn4-00065",
+        "gn4-00066"
       ],
       "vocab_ids": [
         "vg-n4-00016",
@@ -1148,11 +1148,11 @@ window.curriculumN4 = {
           "desc_id": "Pengenalan struktur inti dan pola dasar Bantuan & Arah Tindakan.",
           "can_do_statement": "Bisa meminta dan memberi bantuan secara santun.",
           "grammar_ids": [
-            "gn4-00036",
-            "gn4-00023",
-            "gn4-00024",
-            "gn4-00025",
-            "gn4-00026"
+            "gn4-00039",
+            "gn4-00048",
+            "gn4-00053",
+            "gn4-00054",
+            "gn4-00055"
           ],
           "vocab_ids": [
             "vg-n4-00016",
@@ -1213,11 +1213,11 @@ window.curriculumN4 = {
           "desc_id": "Latihan produksi aktif, perbandingan nuansa, dan konsolidasi.",
           "can_do_statement": "Bisa meminta dan memberi bantuan secara santun.",
           "grammar_ids": [
-            "gn4-00027",
-            "gn4-00032",
-            "gn4-00033",
-            "gn4-00034",
-            "gn4-00038"
+            "gn4-00056",
+            "gn4-00057",
+            "gn4-00058",
+            "gn4-00065",
+            "gn4-00066"
           ],
           "vocab_ids": [
             "vg-n4-00081",
@@ -1283,16 +1283,16 @@ window.curriculumN4 = {
       "can_do_summary": "Bisa menceritakan kendala kerja dengan konstruksi pasif.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn4-00039",
-        "gn4-00048",
-        "gn4-00053",
-        "gn4-00054",
-        "gn4-00055",
-        "gn4-00056",
-        "gn4-00057",
-        "gn4-00058",
-        "gn4-00065",
-        "gn4-00066"
+        "gn4-00069",
+        "gn4-00071",
+        "gn4-00072",
+        "gn4-00077",
+        "gn4-00078",
+        "gn4-00079",
+        "gn4-00080",
+        "gn4-00082",
+        "gn4-00083",
+        "gn4-00084"
       ],
       "vocab_ids": [
         "vg-n4-00172",
@@ -1400,11 +1400,11 @@ window.curriculumN4 = {
           "desc_id": "Pengenalan struktur inti dan pola dasar Suara Pasif & Pengalaman Korban.",
           "can_do_statement": "Bisa menceritakan kendala kerja dengan konstruksi pasif.",
           "grammar_ids": [
-            "gn4-00039",
-            "gn4-00048",
-            "gn4-00053",
-            "gn4-00054",
-            "gn4-00055"
+            "gn4-00069",
+            "gn4-00071",
+            "gn4-00072",
+            "gn4-00077",
+            "gn4-00078"
           ],
           "vocab_ids": [
             "vg-n4-00172",
@@ -1465,11 +1465,11 @@ window.curriculumN4 = {
           "desc_id": "Latihan produksi aktif, perbandingan nuansa, dan konsolidasi.",
           "can_do_statement": "Bisa menceritakan kendala kerja dengan konstruksi pasif.",
           "grammar_ids": [
-            "gn4-00056",
-            "gn4-00057",
-            "gn4-00058",
-            "gn4-00065",
-            "gn4-00066"
+            "gn4-00079",
+            "gn4-00080",
+            "gn4-00082",
+            "gn4-00083",
+            "gn4-00084"
           ],
           "vocab_ids": [
             "vg-n4-00296",
@@ -1535,16 +1535,16 @@ window.curriculumN4 = {
       "can_do_summary": "Bisa meminta izin cuti sakit dan mematuhi instruksi atasan.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn4-00069",
-        "gn4-00071",
-        "gn4-00072",
-        "gn4-00077",
-        "gn4-00078",
-        "gn4-00079",
-        "gn4-00080",
-        "gn4-00082",
-        "gn4-00083",
-        "gn4-00084"
+        "gn4-00085",
+        "gn4-00087",
+        "gn4-00044",
+        "gn4-00045",
+        "gn4-00068",
+        "gn4-00037",
+        "gn4-00042",
+        "gn4-00046",
+        "gn4-00047",
+        "gn4-00049"
       ],
       "vocab_ids": [
         "vg-n4-00353",
@@ -1652,11 +1652,11 @@ window.curriculumN4 = {
           "desc_id": "Pengenalan struktur inti dan pola dasar Kausatif & Permohonan Izin.",
           "can_do_statement": "Bisa meminta izin cuti sakit dan mematuhi instruksi atasan.",
           "grammar_ids": [
-            "gn4-00069",
-            "gn4-00071",
-            "gn4-00072",
-            "gn4-00077",
-            "gn4-00078"
+            "gn4-00085",
+            "gn4-00087",
+            "gn4-00044",
+            "gn4-00045",
+            "gn4-00068"
           ],
           "vocab_ids": [
             "vg-n4-00353",
@@ -1717,11 +1717,11 @@ window.curriculumN4 = {
           "desc_id": "Latihan produksi aktif, perbandingan nuansa, dan konsolidasi.",
           "can_do_statement": "Bisa meminta izin cuti sakit dan mematuhi instruksi atasan.",
           "grammar_ids": [
-            "gn4-00079",
-            "gn4-00080",
-            "gn4-00082",
-            "gn4-00083",
-            "gn4-00084"
+            "gn4-00037",
+            "gn4-00042",
+            "gn4-00046",
+            "gn4-00047",
+            "gn4-00049"
           ],
           "vocab_ids": [
             "vg-n4-00451",
@@ -1787,16 +1787,16 @@ window.curriculumN4 = {
       "can_do_summary": "Bisa menjelaskan cara kerja mesin dan memberikan rute.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn4-00085",
-        "gn4-00087",
-        "gn4-00044",
-        "gn4-00045",
-        "gn4-00068",
-        "gn4-00037",
-        "gn4-00042",
-        "gn4-00046",
-        "gn4-00047",
-        "gn4-00049"
+        "gn4-00050",
+        "gn4-00059",
+        "gn4-00060",
+        "gn4-00061",
+        "gn4-00062",
+        "gn4-00063",
+        "gn4-00067",
+        "gn4-00081",
+        "gn4-00088",
+        "gn4-00051"
       ],
       "vocab_ids": [
         "vg-n4-00525",
@@ -1904,11 +1904,11 @@ window.curriculumN4 = {
           "desc_id": "Pengenalan struktur inti dan pola dasar Sistem Pengandaian & Syarat.",
           "can_do_statement": "Bisa menjelaskan cara kerja mesin dan memberikan rute.",
           "grammar_ids": [
-            "gn4-00085",
-            "gn4-00087",
-            "gn4-00044",
-            "gn4-00045",
-            "gn4-00068"
+            "gn4-00050",
+            "gn4-00059",
+            "gn4-00060",
+            "gn4-00061",
+            "gn4-00062"
           ],
           "vocab_ids": [
             "vg-n4-00525",
@@ -1969,11 +1969,11 @@ window.curriculumN4 = {
           "desc_id": "Latihan produksi aktif, perbandingan nuansa, dan konsolidasi.",
           "can_do_statement": "Bisa menjelaskan cara kerja mesin dan memberikan rute.",
           "grammar_ids": [
-            "gn4-00037",
-            "gn4-00042",
-            "gn4-00046",
-            "gn4-00047",
-            "gn4-00049"
+            "gn4-00063",
+            "gn4-00067",
+            "gn4-00081",
+            "gn4-00088",
+            "gn4-00051"
           ],
           "vocab_ids": [
             "vg-n4-00578",
@@ -2039,16 +2039,16 @@ window.curriculumN4 = {
       "can_do_summary": "Bisa menduga anomali mesin dan menyampaikan kabar pengumuman.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn4-00050",
-        "gn4-00059",
-        "gn4-00060",
-        "gn4-00061",
-        "gn4-00062",
-        "gn4-00063",
-        "gn4-00067",
-        "gn4-00081",
-        "gn4-00088",
-        "gn4-00051"
+        "gn4-00052",
+        "gn4-00070",
+        "gn4-00001",
+        "gn4-00002",
+        "gn4-00003",
+        "gn4-00004",
+        "gn4-00005",
+        "gn4-00006",
+        "gn4-00007",
+        "gn4-00008"
       ],
       "vocab_ids": [
         "vg-n4-00626",
@@ -2156,11 +2156,11 @@ window.curriculumN4 = {
           "desc_id": "Pengenalan struktur inti dan pola dasar Dugaan, Bukti Visual & Kabar.",
           "can_do_statement": "Bisa menduga anomali mesin dan menyampaikan kabar pengumuman.",
           "grammar_ids": [
-            "gn4-00050",
-            "gn4-00059",
-            "gn4-00060",
-            "gn4-00061",
-            "gn4-00062"
+            "gn4-00052",
+            "gn4-00070",
+            "gn4-00001",
+            "gn4-00002",
+            "gn4-00003"
           ],
           "vocab_ids": [
             "vg-n4-00626",
@@ -2221,11 +2221,11 @@ window.curriculumN4 = {
           "desc_id": "Latihan produksi aktif, perbandingan nuansa, dan konsolidasi.",
           "can_do_statement": "Bisa menduga anomali mesin dan menyampaikan kabar pengumuman.",
           "grammar_ids": [
-            "gn4-00063",
-            "gn4-00067",
-            "gn4-00081",
-            "gn4-00088",
-            "gn4-00051"
+            "gn4-00004",
+            "gn4-00005",
+            "gn4-00006",
+            "gn4-00007",
+            "gn4-00008"
           ],
           "vocab_ids": [
             "vg-n4-00735",
@@ -2291,8 +2291,8 @@ window.curriculumN4 = {
       "can_do_summary": "Bisa menyapa tamu dan menjawab telepon standar kantor.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn4-00052",
-        "gn4-00070"
+        "gn4-00009",
+        "gn4-00010"
       ],
       "vocab_ids": [
         "vg-n4-00815",
@@ -2396,7 +2396,7 @@ window.curriculumN4 = {
           "desc_id": "Pengenalan struktur inti dan pola dasar Fondasi Keigo & Kesantunan Kerja.",
           "can_do_statement": "Bisa menyapa tamu dan menjawab telepon standar kantor.",
           "grammar_ids": [
-            "gn4-00052"
+            "gn4-00009"
           ],
           "vocab_ids": [
             "vg-n4-00815",
@@ -2455,7 +2455,7 @@ window.curriculumN4 = {
           "desc_id": "Latihan produksi aktif, perbandingan nuansa, dan konsolidasi.",
           "can_do_statement": "Bisa menyapa tamu dan menjawab telepon standar kantor.",
           "grammar_ids": [
-            "gn4-00070"
+            "gn4-00010"
           ],
           "vocab_ids": [
             "vg-n4-00887",

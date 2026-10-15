@@ -30,7 +30,6 @@ window.bookIrodoriA1 = {
         'vg-n5-00421', // 人 — orang
         'vg-n5-00435', // 名前 — nama
         'vg-n5-00092', // 友達 — teman
-        'vg-n5-00093', // 先生 — guru
         'vg-n5-00124', // すみません — permisi; maaf
         'vg-n5-00125', // ありがとうございます — terima kasih
         'vg-n5-00126', // どうぞ — silakan
@@ -62,7 +61,6 @@ window.bookIrodoriA1 = {
       topic      : "これ、ください — Meminta Benda (かつどう)",
       topic_id   : 2,
       vocab_ids  : [
-        'vg-n5-00108', // 本 — buku
         'vg-n5-00108', // 本 — buku
         'vg-n5-00526', // 辞書 — kamus
         'vg-n5-00406', // ノート — buku catatan
@@ -232,7 +230,6 @@ window.bookIrodoriA1 = {
         'vg-n5-00323', // くだもの — buah
         'vg-n5-00316', // りんご — apel
         'vg-n5-00552', // 牛肉 — daging sapi
-        'vg-n5-00139', // 魚 — ikan
         'vg-n5-00090', // 食べ物 — makanan-minuman
         'vg-n5-00091', // 飲み物 — minuman
       ],
@@ -330,7 +327,6 @@ window.bookIrodoriA1 = {
         'vg-n4-00042', // 海 — laut
         'vg-n5-00135', // 雪 — salju
         'vg-n5-00134', // 雨 — hujan
-        'vg-n5-00098', // 天気 — cuaca
         'vg-n5-00098', // 天気 — cuaca
         'vg-n5-00110', // 写真 — foto
         'vg-n5-00672', // はれ — cerah

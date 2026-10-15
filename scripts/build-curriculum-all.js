@@ -39,6 +39,10 @@ const vocabN2 = loadData('public/data/vocab/vocab-n2.js', 'vocabN2');
 const grammarN1 = loadData('public/data/grammar/grammar-n1.js', 'grammarN1');
 const vocabN1 = loadData('public/data/vocab/vocab-n1.js', 'vocabN1');
 
+const vocabSSWKaigo = loadData('public/data/vocab/ssw/kaigo.js', 'vocabSSW_Kaigo');
+const vocabSSWFood = loadData('public/data/vocab/ssw/food.js', 'vocabSSW_Food');
+const vocabSSWConstruction = loadData('public/data/vocab/ssw/construction.js', 'vocabSSW_Construction');
+
 // Partition array into N chunks
 function chunkArray(arr, numChunks) {
   const chunks = [];
@@ -169,50 +173,61 @@ const n1UnitsDef = [
 ];
 
 // 5. SSW Track Builders
-function buildSSWCurriculum(trackId, title, sectorName, icon, modules) {
-  const units = modules.map((mod, idx) => ({
-    unit_number: idx + 1,
-    id: `unit-${trackId}-${String(idx + 1).padStart(2, '0')}`,
-    level: 'n4_ssw',
-    pt_stage: 3,
-    title_id: mod.title_id,
-    title_jp: mod.title_jp,
-    theme: mod.theme,
-    icon: mod.icon || icon,
-    can_do_summary: mod.can_do,
-    l2d_focus_notes: mod.k3_notes || '',
-    grammar_ids: mod.grammar_ids || ['gn4-00010', 'gn4-00013', 'gn4-00021'],
-    vocab_ids: mod.vocab_ids || ['vg-n4-00001', 'vg-n4-00002'],
-    lessons: [
-      {
-        id: `les-${trackId}-u${String(idx + 1).padStart(2, '0')}-01`,
-        lesson_number: 1,
-        title_id: `${mod.title_id} (Prosedur & Terminologi)`,
-        title_jp: `${mod.title_jp}（手順と用語）`,
-        desc_id: `Standar operasional prosedur dan terminologi keselamatan kerja ${mod.title_id}.`,
-        can_do_statement: mod.can_do,
-        grammar_ids: mod.grammar_ids || ['gn4-00010', 'gn4-00013'],
-        vocab_ids: mod.vocab_ids || ['vg-n4-00001']
-      },
-      {
-        id: `les-${trackId}-u${String(idx + 1).padStart(2, '0')}-02`,
-        lesson_number: 2,
-        title_id: `${mod.title_id} (Simulasi Darurat & Laporan SBAR)`,
-        title_jp: `${mod.title_jp}（緊急時SBAR報告）`,
-        desc_id: `Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.`,
-        can_do_statement: mod.can_do,
-        grammar_ids: mod.grammar_ids || ['gn4-00021'],
-        vocab_ids: mod.vocab_ids || ['vg-n4-00002']
-      }
-    ]
-  }));
+function buildSSWCurriculum(trackId, title, sectorName, icon, modules, vocabList, grammarList) {
+  const vocabChunks = chunkArray(vocabList || [], modules.length);
+  const grammarChunks = chunkArray(grammarList || [], modules.length);
+
+  const units = modules.map((mod, idx) => {
+    const unitV = mod.vocab_ids && mod.vocab_ids.length ? mod.vocab_ids : (vocabChunks[idx] || []).map(v => v.id);
+    const unitG = mod.grammar_ids && mod.grammar_ids.length ? mod.grammar_ids : (grammarChunks[idx] || []).map(g => g.id);
+
+    const vHalf = Math.max(1, Math.ceil(unitV.length / 2));
+    const gHalf = Math.max(1, Math.ceil(unitG.length / 2));
+
+    return {
+      unit_number: idx + 1,
+      id: `unit-${trackId}-${String(idx + 1).padStart(2, '0')}`,
+      level: 'n4_ssw',
+      pt_stage: 3,
+      title_id: mod.title_id,
+      title_jp: mod.title_jp,
+      theme: mod.theme,
+      icon: mod.icon || icon,
+      can_do_summary: mod.can_do,
+      l2d_focus_notes: mod.k3_notes || '',
+      grammar_ids: unitG,
+      vocab_ids: unitV,
+      lessons: [
+        {
+          id: `les-${trackId}-u${String(idx + 1).padStart(2, '0')}-01`,
+          lesson_number: 1,
+          title_id: `${mod.title_id} (Prosedur & Terminologi)`,
+          title_jp: `${mod.title_jp}（手順と用語）`,
+          desc_id: `Standar operasional prosedur dan terminologi keselamatan kerja ${mod.title_id}.`,
+          can_do_statement: mod.can_do,
+          grammar_ids: unitG.slice(0, gHalf),
+          vocab_ids: unitV.slice(0, vHalf)
+        },
+        {
+          id: `les-${trackId}-u${String(idx + 1).padStart(2, '0')}-02`,
+          lesson_number: 2,
+          title_id: `${mod.title_id} (Simulasi Darurat & Laporan SBAR)`,
+          title_jp: `${mod.title_jp}（緊急時SBAR報告）`,
+          desc_id: `Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.`,
+          can_do_statement: mod.can_do,
+          grammar_ids: unitG.slice(gHalf).length > 0 ? unitG.slice(gHalf) : unitG.slice(0, gHalf),
+          vocab_ids: unitV.slice(vHalf).length > 0 ? unitV.slice(vHalf) : unitV.slice(0, vHalf)
+        }
+      ]
+    };
+  });
 
   return {
     meta: {
       track_id: trackId,
       title: title,
       sector: sectorName,
-      version: '1.0.0',
+      version: '1.1.0',
       total_units: units.length,
       authoritative: true
     },
@@ -286,16 +301,24 @@ function main() {
   const n1Data = buildLevelCurriculum('n1', grammarN1, vocabN1, n1UnitsDef);
   writeCurriculumFiles('curriculum-n1', 'curriculumN1', n1Data);
 
+  // Workplace / Safety N4 Grammar subset for SSW tracks
+  const sswGrammar = grammarN4.filter(g =>
+    ['gn4-00021', 'gn4-00023', 'gn4-00024', 'gn4-00025', 'gn4-00026', 'gn4-00027',
+     'gn4-00028', 'gn4-00030', 'gn4-00034', 'gn4-00038', 'gn4-00041', 'gn4-00045',
+     'gn4-00046', 'gn4-00047', 'gn4-00050', 'gn4-00051'].includes(g.id)
+  );
+  const fallbackGrammar = sswGrammar.length >= 16 ? sswGrammar : grammarN4.slice(0, 16);
+
   // Build SSW Kaigo
-  const sswKaigoData = buildSSWCurriculum('curriculum-ssw-kaigo', 'Kurikulum SSW Keperawatan Lansia (Kaigo)', 'Kaigo', '👵', sswKaigoModules);
+  const sswKaigoData = buildSSWCurriculum('curriculum-ssw-kaigo', 'Kurikulum SSW Keperawatan Lansia (Kaigo)', 'Kaigo', '👵', sswKaigoModules, vocabSSWKaigo, fallbackGrammar);
   writeCurriculumFiles('curriculum-ssw-kaigo', 'curriculumSSWKaigo', sswKaigoData);
 
   // Build SSW Food
-  const sswFoodData = buildSSWCurriculum('curriculum-ssw-food', 'Kurikulum SSW Pengolahan Makanan & Restoran', 'Pengolahan Makanan & Restoran', '🍱', sswFoodModules);
+  const sswFoodData = buildSSWCurriculum('curriculum-ssw-food', 'Kurikulum SSW Pengolahan Makanan & Restoran', 'Pengolahan Makanan & Restoran', '🍱', sswFoodModules, vocabSSWFood, fallbackGrammar);
   writeCurriculumFiles('curriculum-ssw-food', 'curriculumSSWFood', sswFoodData);
 
   // Build SSW Construction
-  const sswConstData = buildSSWCurriculum('curriculum-ssw-construction', 'Kurikulum SSW Konstruksi (JAC)', 'Konstruksi', '🏗️', sswConstructionModules);
+  const sswConstData = buildSSWCurriculum('curriculum-ssw-construction', 'Kurikulum SSW Konstruksi (JAC)', 'Konstruksi', '🏗️', sswConstructionModules, vocabSSWConstruction, fallbackGrammar);
   writeCurriculumFiles('curriculum-ssw-construction', 'curriculumSSWConstruction', sswConstData);
 
   console.log('\nAll 7 curriculum tracks compiled successfully!');

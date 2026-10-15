@@ -35,6 +35,7 @@ export const LessonStudyPage: React.FC = () => {
   const [trackData, setTrackData] = useState<any>(null);
   const [drillScore, setDrillScore] = useState<number>(100);
   const [isLoading, setIsLoading] = useState(true);
+  const [notFound, setNotFound] = useState(false);
 
   const trackId = (activeLessonContext?.trackId || 'n5') as TrackId;
   const unitId = activeLessonContext?.unitId || '';
@@ -44,6 +45,7 @@ export const LessonStudyPage: React.FC = () => {
   useEffect(() => {
     let isMounted = true;
     setIsLoading(true);
+    setNotFound(false);
 
     const loadContent = async () => {
       try {
@@ -53,17 +55,35 @@ export const LessonStudyPage: React.FC = () => {
 
         setTrackData(rawTrack);
 
-        // Cari unit dan lesson
-        const foundUnit = rawTrack?.units?.find((u: any) => u.id === unitId) || rawTrack?.units?.[0];
-        const foundLesson = foundUnit?.lessons?.find((l: any) => l.id === lessonId) || foundUnit?.lessons?.[0];
+        // Cari unit dan lesson secara ketat bila ID ditentukan (F-10)
+        const foundUnit = unitId
+          ? rawTrack?.units?.find((u: any) => u.id === unitId)
+          : rawTrack?.units?.[0];
+
+        if (unitId && !foundUnit) {
+          if (isMounted) setNotFound(true);
+          return;
+        }
+
+        const foundLesson = lessonId
+          ? foundUnit?.lessons?.find((l: any) => l.id === lessonId)
+          : foundUnit?.lessons?.[0];
+
+        if (lessonId && !foundLesson) {
+          if (isMounted) setNotFound(true);
+          return;
+        }
 
         setCurrentUnit(foundUnit);
 
         if (foundLesson) {
-          const jlptLevel = (['n5', 'n4', 'n3', 'n2', 'n1'].includes(trackId) ? trackId : 'n5') as any;
+          const isSsw = trackId?.includes('ssw');
+          const jlptLevel = (['n5', 'n4', 'n3', 'n2', 'n1'].includes(trackId) ? trackId : (isSsw ? 'n4' : 'n5')) as any;
           const [grammarList, vocabList] = await Promise.all([
             loadGrammar(jlptLevel).catch(() => []),
-            loadVocab(jlptLevel).catch(() => []),
+            isSsw
+              ? Promise.all([loadVocab(trackId).catch(() => []), loadVocab('n4').catch(() => [])]).then(([vSsw, vN4]) => [...vSsw, ...vN4])
+              : loadVocab(jlptLevel).catch(() => []),
           ]);
 
           if (!isMounted) return;
@@ -101,10 +121,10 @@ export const LessonStudyPage: React.FC = () => {
 
   // Navigasi langkah internal
   const stages: Array<{ id: 'dialogue' | 'explanation' | 'drills' | 'cando'; label: string; icon: React.ReactNode }> = [
-    { id: 'dialogue', label: '1. Dialog', icon: <MessageSquare className="w-4 h-4" /> },
-    { id: 'explanation', label: '2. Bedah Pola & 5W1H', icon: <BookOpen className="w-4 h-4" /> },
-    { id: 'drills', label: '3. Latihan di Tempat', icon: <HelpCircle className="w-4 h-4" /> },
-    { id: 'cando', label: '4. Verifikasi Can-Do', icon: <Trophy className="w-4 h-4" /> },
+    { id: 'dialogue', label: '1. Dialog Otentik', icon: <MessageSquare className="w-4 h-4" /> },
+    { id: 'explanation', label: '2. Bedah Materi & Pola', icon: <BookOpen className="w-4 h-4" /> },
+    { id: 'drills', label: '3. Cek Pemahaman', icon: <HelpCircle className="w-4 h-4" /> },
+    { id: 'cando', label: '4. Tantangan Nyata', icon: <Trophy className="w-4 h-4" /> },
   ];
 
   // Handler saat latihan selesai
@@ -161,13 +181,41 @@ export const LessonStudyPage: React.FC = () => {
     }
   };
 
-  if (isLoading || !currentLesson) {
+  if (isLoading) {
     return (
       <div className="py-24 text-center space-y-4">
         <div className="w-10 h-10 border-2 border-accent border-t-transparent rounded-full animate-spin mx-auto" />
         <p className="text-xs text-appText-muted animate-pulse">
           Memuat studio materi pelajaran... 📖
         </p>
+      </div>
+    );
+  }
+
+  if (notFound || !currentLesson) {
+    return (
+      <div className="w-full max-w-xl mx-auto py-16 px-4 text-center space-y-5 animate-fade-in">
+        <div className="w-16 h-16 rounded-3xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center mx-auto text-2xl shadow-sm">
+          🔍
+        </div>
+        <div className="space-y-2">
+          <h2 className="text-lg sm:text-xl font-bold text-appText-bright">
+            Materi Pelajaran Tidak Ditemukan
+          </h2>
+          <p className="text-xs sm:text-sm text-appText-muted max-w-md mx-auto">
+            Pelajaran dengan ID <code className="px-1.5 py-0.5 rounded bg-surface-2 text-accent font-mono">{lessonId || unitId || 'terpilih'}</code> tidak ditemukan dalam kurikulum jalur ini, atau tautan telah diperbarui.
+          </p>
+        </div>
+        <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
+          <button
+            type="button"
+            onClick={closeLessonStudy}
+            className="min-h-[44px] px-4 py-2.5 rounded-xl bg-accent hover:bg-accent-hover text-surface-0 text-xs sm:text-sm font-bold transition-all shadow-sm active:scale-95 flex items-center gap-2"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Kembali ke Silabus Track
+          </button>
+        </div>
       </div>
     );
   }
@@ -253,6 +301,8 @@ export const LessonStudyPage: React.FC = () => {
           <ExplanationStage
             explanations={currentLesson.explanations}
             pedagogicalFramework={currentLesson.pedagogical_framework}
+            vocabBreakdown={currentLesson.vocab_breakdown}
+            commonPitfalls={currentLesson.common_pitfalls || currentLesson.pedagogical_framework?.common_pitfalls}
           />
         )}
 

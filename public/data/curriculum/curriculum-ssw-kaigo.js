@@ -5,7 +5,7 @@ window.curriculumSSWKaigo = {
     "track_id": "curriculum-ssw-kaigo",
     "title": "Kurikulum SSW Keperawatan Lansia (Kaigo)",
     "sector": "Kaigo",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "total_units": 8,
     "authoritative": true
   },
@@ -22,13 +22,13 @@ window.curriculumSSWKaigo = {
       "can_do_summary": "Bisa meminta izin verbal dengan ramah sebelum menyentuh lansia.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn4-00010",
-        "gn4-00013",
-        "gn4-00021"
+        "gn4-00021",
+        "gn4-00028"
       ],
       "vocab_ids": [
-        "vg-n4-00001",
-        "vg-n4-00002"
+        "v-ssw-kaigo-001",
+        "v-ssw-kaigo-002",
+        "v-ssw-kaigo-003"
       ],
       "lessons": [
         {
@@ -39,11 +39,11 @@ window.curriculumSSWKaigo = {
           "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Sapaan Empatik & Izin Tindakan (Koe-kake).",
           "can_do_statement": "Bisa meminta izin verbal dengan ramah sebelum menyentuh lansia.",
           "grammar_ids": [
-            "gn4-00010",
-            "gn4-00013"
+            "gn4-00021"
           ],
           "vocab_ids": [
-            "vg-n4-00001"
+            "v-ssw-kaigo-001",
+            "v-ssw-kaigo-002"
           ]
         },
         {
@@ -54,10 +54,10 @@ window.curriculumSSWKaigo = {
           "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
           "can_do_statement": "Bisa meminta izin verbal dengan ramah sebelum menyentuh lansia.",
           "grammar_ids": [
-            "gn4-00021"
+            "gn4-00028"
           ],
           "vocab_ids": [
-            "vg-n4-00002"
+            "v-ssw-kaigo-003"
           ]
         }
       ]
@@ -74,13 +74,13 @@ window.curriculumSSWKaigo = {
       "can_do_summary": "Bisa memberi makan bertahap dan merespons kondisi tersedak Heimlich.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn4-00010",
-        "gn4-00013",
-        "gn4-00021"
+        "gn4-00030",
+        "gn4-00041"
       ],
       "vocab_ids": [
-        "vg-n4-00001",
-        "vg-n4-00002"
+        "v-ssw-kaigo-004",
+        "v-ssw-kaigo-005",
+        "v-ssw-kaigo-006"
       ],
       "lessons": [
         {
@@ -91,11 +91,11 @@ window.curriculumSSWKaigo = {
           "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Bantuan Makan & Pencegahan Tersedak (Shokuji).",
           "can_do_statement": "Bisa memberi makan bertahap dan merespons kondisi tersedak Heimlich.",
           "grammar_ids": [
-            "gn4-00010",
-            "gn4-00013"
+            "gn4-00030"
           ],
           "vocab_ids": [
-            "vg-n4-00001"
+            "v-ssw-kaigo-004",
+            "v-ssw-kaigo-005"
           ]
         },
         {
@@ -106,10 +106,10 @@ window.curriculumSSWKaigo = {
           "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
           "can_do_statement": "Bisa memberi makan bertahap dan merespons kondisi tersedak Heimlich.",
           "grammar_ids": [
-            "gn4-00021"
+            "gn4-00041"
           ],
           "vocab_ids": [
-            "vg-n4-00002"
+            "v-ssw-kaigo-006"
           ]
         }
       ]
@@ -126,13 +126,13 @@ window.curriculumSSWKaigo = {
       "can_do_summary": "Bisa mengunci rem kursi roda dan memandu lansia bangun aman.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn4-00010",
-        "gn4-00013",
-        "gn4-00021"
+        "gn4-00023",
+        "gn4-00024"
       ],
       "vocab_ids": [
-        "vg-n4-00001",
-        "vg-n4-00002"
+        "v-ssw-kaigo-007",
+        "v-ssw-kaigo-008",
+        "v-ssw-kaigo-009"
       ],
       "lessons": [
         {
@@ -143,11 +143,11 @@ window.curriculumSSWKaigo = {
           "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Mobilisasi Kursi Roda & Pencegahan Jatuh.",
           "can_do_statement": "Bisa mengunci rem kursi roda dan memandu lansia bangun aman.",
           "grammar_ids": [
-            "gn4-00010",
-            "gn4-00013"
+            "gn4-00023"
           ],
           "vocab_ids": [
-            "vg-n4-00001"
+            "v-ssw-kaigo-007",
+            "v-ssw-kaigo-008"
           ]
         },
         {
@@ -158,10 +158,10 @@ window.curriculumSSWKaigo = {
           "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
           "can_do_statement": "Bisa mengunci rem kursi roda dan memandu lansia bangun aman.",
           "grammar_ids": [
-            "gn4-00021"
+            "gn4-00024"
           ],
           "vocab_ids": [
-            "vg-n4-00002"
+            "v-ssw-kaigo-009"
           ]
         }
       ]
@@ -178,13 +178,13 @@ window.curriculumSSWKaigo = {
       "can_do_summary": "Bisa mengecek suhu air hangat dan menjaga privasi lansia.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn4-00010",
-        "gn4-00013",
-        "gn4-00021"
+        "gn4-00025",
+        "gn4-00026"
       ],
       "vocab_ids": [
-        "vg-n4-00001",
-        "vg-n4-00002"
+        "v-ssw-kaigo-010",
+        "v-ssw-kaigo-011",
+        "v-ssw-kaigo-012"
       ],
       "lessons": [
         {
@@ -195,11 +195,11 @@ window.curriculumSSWKaigo = {
           "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Bantuan Mandi & Privasi Pasien (Nyuyoku).",
           "can_do_statement": "Bisa mengecek suhu air hangat dan menjaga privasi lansia.",
           "grammar_ids": [
-            "gn4-00010",
-            "gn4-00013"
+            "gn4-00025"
           ],
           "vocab_ids": [
-            "vg-n4-00001"
+            "v-ssw-kaigo-010",
+            "v-ssw-kaigo-011"
           ]
         },
         {
@@ -210,10 +210,10 @@ window.curriculumSSWKaigo = {
           "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
           "can_do_statement": "Bisa mengecek suhu air hangat dan menjaga privasi lansia.",
           "grammar_ids": [
-            "gn4-00021"
+            "gn4-00026"
           ],
           "vocab_ids": [
-            "vg-n4-00002"
+            "v-ssw-kaigo-012"
           ]
         }
       ]
@@ -230,13 +230,13 @@ window.curriculumSSWKaigo = {
       "can_do_summary": "Bisa membedakan rasa nyeri menusuk chikuchiku vs berdenyut zukinzukin.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn4-00010",
-        "gn4-00013",
-        "gn4-00021"
+        "gn4-00027",
+        "gn4-00034"
       ],
       "vocab_ids": [
-        "vg-n4-00001",
-        "vg-n4-00002"
+        "v-ssw-kaigo-013",
+        "v-ssw-kaigo-014",
+        "v-ssw-kaigo-015"
       ],
       "lessons": [
         {
@@ -247,11 +247,11 @@ window.curriculumSSWKaigo = {
           "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Dekoding 42 Onomatopoeia Nyeri Fisik.",
           "can_do_statement": "Bisa membedakan rasa nyeri menusuk chikuchiku vs berdenyut zukinzukin.",
           "grammar_ids": [
-            "gn4-00010",
-            "gn4-00013"
+            "gn4-00027"
           ],
           "vocab_ids": [
-            "vg-n4-00001"
+            "v-ssw-kaigo-013",
+            "v-ssw-kaigo-014"
           ]
         },
         {
@@ -262,10 +262,10 @@ window.curriculumSSWKaigo = {
           "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
           "can_do_statement": "Bisa membedakan rasa nyeri menusuk chikuchiku vs berdenyut zukinzukin.",
           "grammar_ids": [
-            "gn4-00021"
+            "gn4-00034"
           ],
           "vocab_ids": [
-            "vg-n4-00002"
+            "v-ssw-kaigo-015"
           ]
         }
       ]
@@ -282,13 +282,13 @@ window.curriculumSSWKaigo = {
       "can_do_summary": "Bisa menenangkan lansia gelisah tanpa membantah ilusi mereka.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn4-00010",
-        "gn4-00013",
-        "gn4-00021"
+        "gn4-00038",
+        "gn4-00045"
       ],
       "vocab_ids": [
-        "vg-n4-00001",
-        "vg-n4-00002"
+        "v-ssw-kaigo-016",
+        "v-ssw-kaigo-017",
+        "v-ssw-kaigo-018"
       ],
       "lessons": [
         {
@@ -299,11 +299,11 @@ window.curriculumSSWKaigo = {
           "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja De-eskalasi Agitasi Demensia (Ninchishou).",
           "can_do_statement": "Bisa menenangkan lansia gelisah tanpa membantah ilusi mereka.",
           "grammar_ids": [
-            "gn4-00010",
-            "gn4-00013"
+            "gn4-00038"
           ],
           "vocab_ids": [
-            "vg-n4-00001"
+            "v-ssw-kaigo-016",
+            "v-ssw-kaigo-017"
           ]
         },
         {
@@ -314,10 +314,10 @@ window.curriculumSSWKaigo = {
           "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
           "can_do_statement": "Bisa menenangkan lansia gelisah tanpa membantah ilusi mereka.",
           "grammar_ids": [
-            "gn4-00021"
+            "gn4-00045"
           ],
           "vocab_ids": [
-            "vg-n4-00002"
+            "v-ssw-kaigo-018"
           ]
         }
       ]
@@ -334,13 +334,13 @@ window.curriculumSSWKaigo = {
       "can_do_summary": "Bisa mencatat intake cairan, suhu tubuh, dan buang air.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn4-00010",
-        "gn4-00013",
-        "gn4-00021"
+        "gn4-00046",
+        "gn4-00047"
       ],
       "vocab_ids": [
-        "vg-n4-00001",
-        "vg-n4-00002"
+        "v-ssw-kaigo-019",
+        "v-ssw-kaigo-020",
+        "v-ssw-kaigo-021"
       ],
       "lessons": [
         {
@@ -351,11 +351,11 @@ window.curriculumSSWKaigo = {
           "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Pelaporan Catatan Shift (Moushiokuri).",
           "can_do_statement": "Bisa mencatat intake cairan, suhu tubuh, dan buang air.",
           "grammar_ids": [
-            "gn4-00010",
-            "gn4-00013"
+            "gn4-00046"
           ],
           "vocab_ids": [
-            "vg-n4-00001"
+            "v-ssw-kaigo-019",
+            "v-ssw-kaigo-020"
           ]
         },
         {
@@ -366,10 +366,10 @@ window.curriculumSSWKaigo = {
           "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
           "can_do_statement": "Bisa mencatat intake cairan, suhu tubuh, dan buang air.",
           "grammar_ids": [
-            "gn4-00021"
+            "gn4-00047"
           ],
           "vocab_ids": [
-            "vg-n4-00002"
+            "v-ssw-kaigo-021"
           ]
         }
       ]
@@ -386,13 +386,13 @@ window.curriculumSSWKaigo = {
       "can_do_summary": "Bisa melapor insiden jatuh dan dugaan fraktur tulang 119 SBAR.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn4-00010",
-        "gn4-00013",
-        "gn4-00021"
+        "gn4-00050",
+        "gn4-00051"
       ],
       "vocab_ids": [
-        "vg-n4-00001",
-        "vg-n4-00002"
+        "v-ssw-kaigo-022",
+        "v-ssw-kaigo-023",
+        "v-ssw-kaigo-024"
       ],
       "lessons": [
         {
@@ -403,11 +403,11 @@ window.curriculumSSWKaigo = {
           "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Protokol Pelaporan Medis Darurat SBAR.",
           "can_do_statement": "Bisa melapor insiden jatuh dan dugaan fraktur tulang 119 SBAR.",
           "grammar_ids": [
-            "gn4-00010",
-            "gn4-00013"
+            "gn4-00050"
           ],
           "vocab_ids": [
-            "vg-n4-00001"
+            "v-ssw-kaigo-022",
+            "v-ssw-kaigo-023"
           ]
         },
         {
@@ -418,10 +418,10 @@ window.curriculumSSWKaigo = {
           "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
           "can_do_statement": "Bisa melapor insiden jatuh dan dugaan fraktur tulang 119 SBAR.",
           "grammar_ids": [
-            "gn4-00021"
+            "gn4-00051"
           ],
           "vocab_ids": [
-            "vg-n4-00002"
+            "v-ssw-kaigo-024"
           ]
         }
       ]

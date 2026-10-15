@@ -10,9 +10,11 @@
 (function () {
   'use strict';
 
-  // ── CONFIG (replace these) ───────────────────────────
-  var SUPABASE_URL  = 'https://oxeuwkpgrtojjzhcboqz.supabase.co';
-  var SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im94ZXV3a3BncnRvamp6aGNib3F6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzUwNDczNTMsImV4cCI6MjA5MDYyMzM1M30.0kEo4o6U9YNWA0RA5h83W9nMacoxQR9uUL2lHiDiZPk';
+  // ── CONFIG (read dynamically or fallback to unconfigured placeholder) ──
+  var storedUrl = (typeof localStorage !== 'undefined' && localStorage.getItem('nn_supabase_url')) || '';
+  var storedKey = (typeof localStorage !== 'undefined' && localStorage.getItem('nn_supabase_anon_key')) || '';
+  var SUPABASE_URL  = storedUrl || 'https://unconfigured.supabase.co';
+  var SUPABASE_ANON_KEY = storedKey || 'placeholder-anon-key';
 
   // ── INIT ─────────────────────────────────────────────
   if (typeof window.supabase === 'undefined') {

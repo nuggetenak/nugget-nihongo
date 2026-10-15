@@ -5,7 +5,7 @@ window.curriculumSSWConstruction = {
     "track_id": "curriculum-ssw-construction",
     "title": "Kurikulum SSW Konstruksi (JAC)",
     "sector": "Konstruksi",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "total_units": 8,
     "authoritative": true
   },
@@ -22,13 +22,13 @@ window.curriculumSSWConstruction = {
       "can_do_summary": "Bisa mengecek tali dagu helm, sepatu baja, dan hazard KYK.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn4-00010",
-        "gn4-00013",
-        "gn4-00021"
+        "gn4-00021",
+        "gn4-00028"
       ],
       "vocab_ids": [
-        "vg-n4-00001",
-        "vg-n4-00002"
+        "v-ssw-const-001",
+        "v-ssw-const-002",
+        "v-ssw-const-003"
       ],
       "lessons": [
         {
@@ -39,11 +39,11 @@ window.curriculumSSWConstruction = {
           "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja APD Wajib Konstruksi & Senam Pagi KYK.",
           "can_do_statement": "Bisa mengecek tali dagu helm, sepatu baja, dan hazard KYK.",
           "grammar_ids": [
-            "gn4-00010",
-            "gn4-00013"
+            "gn4-00021"
           ],
           "vocab_ids": [
-            "vg-n4-00001"
+            "v-ssw-const-001",
+            "v-ssw-const-002"
           ]
         },
         {
@@ -54,10 +54,10 @@ window.curriculumSSWConstruction = {
           "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
           "can_do_statement": "Bisa mengecek tali dagu helm, sepatu baja, dan hazard KYK.",
           "grammar_ids": [
-            "gn4-00021"
+            "gn4-00028"
           ],
           "vocab_ids": [
-            "vg-n4-00002"
+            "v-ssw-const-003"
           ]
         }
       ]
@@ -74,13 +74,13 @@ window.curriculumSSWConstruction = {
       "can_do_summary": "Bisa mengecek sakelar dan kait derek dengan rumus Yoshi.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn4-00010",
-        "gn4-00013",
-        "gn4-00021"
+        "gn4-00030",
+        "gn4-00041"
       ],
       "vocab_ids": [
-        "vg-n4-00001",
-        "vg-n4-00002"
+        "v-ssw-const-004",
+        "v-ssw-const-005",
+        "v-ssw-const-006"
       ],
       "lessons": [
         {
@@ -91,11 +91,11 @@ window.curriculumSSWConstruction = {
           "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Protokol Pointing-and-Calling (Shiteki Koshou).",
           "can_do_statement": "Bisa mengecek sakelar dan kait derek dengan rumus Yoshi.",
           "grammar_ids": [
-            "gn4-00010",
-            "gn4-00013"
+            "gn4-00030"
           ],
           "vocab_ids": [
-            "vg-n4-00001"
+            "v-ssw-const-004",
+            "v-ssw-const-005"
           ]
         },
         {
@@ -106,10 +106,10 @@ window.curriculumSSWConstruction = {
           "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
           "can_do_statement": "Bisa mengecek sakelar dan kait derek dengan rumus Yoshi.",
           "grammar_ids": [
-            "gn4-00021"
+            "gn4-00041"
           ],
           "vocab_ids": [
-            "vg-n4-00002"
+            "v-ssw-const-006"
           ]
         }
       ]
@@ -126,13 +126,13 @@ window.curriculumSSWConstruction = {
       "can_do_summary": "Bisa mengaitkan harness ganda di perancah lantai 4.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn4-00010",
-        "gn4-00013",
-        "gn4-00021"
+        "gn4-00023",
+        "gn4-00024"
       ],
       "vocab_ids": [
-        "vg-n4-00001",
-        "vg-n4-00002"
+        "v-ssw-const-007",
+        "v-ssw-const-008",
+        "v-ssw-const-009"
       ],
       "lessons": [
         {
@@ -143,11 +143,11 @@ window.curriculumSSWConstruction = {
           "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Pekerjaan Ketinggian & Pencegahan Jatuh (Tsuiraku).",
           "can_do_statement": "Bisa mengaitkan harness ganda di perancah lantai 4.",
           "grammar_ids": [
-            "gn4-00010",
-            "gn4-00013"
+            "gn4-00023"
           ],
           "vocab_ids": [
-            "vg-n4-00001"
+            "v-ssw-const-007",
+            "v-ssw-const-008"
           ]
         },
         {
@@ -158,10 +158,10 @@ window.curriculumSSWConstruction = {
           "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
           "can_do_statement": "Bisa mengaitkan harness ganda di perancah lantai 4.",
           "grammar_ids": [
-            "gn4-00021"
+            "gn4-00024"
           ],
           "vocab_ids": [
-            "vg-n4-00002"
+            "v-ssw-const-009"
           ]
         }
       ]
@@ -178,13 +178,13 @@ window.curriculumSSWConstruction = {
       "can_do_summary": "Bisa memasang kotak pelindung shoring dan evakuasi longsor.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn4-00010",
-        "gn4-00013",
-        "gn4-00021"
+        "gn4-00025",
+        "gn4-00026"
       ],
       "vocab_ids": [
-        "vg-n4-00001",
-        "vg-n4-00002"
+        "v-ssw-const-010",
+        "v-ssw-const-011",
+        "v-ssw-const-012"
       ],
       "lessons": [
         {
@@ -195,11 +195,11 @@ window.curriculumSSWConstruction = {
           "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Pekerjaan Galian & Shoring Longsor Parit.",
           "can_do_statement": "Bisa memasang kotak pelindung shoring dan evakuasi longsor.",
           "grammar_ids": [
-            "gn4-00010",
-            "gn4-00013"
+            "gn4-00025"
           ],
           "vocab_ids": [
-            "vg-n4-00001"
+            "v-ssw-const-010",
+            "v-ssw-const-011"
           ]
         },
         {
@@ -210,10 +210,10 @@ window.curriculumSSWConstruction = {
           "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
           "can_do_statement": "Bisa memasang kotak pelindung shoring dan evakuasi longsor.",
           "grammar_ids": [
-            "gn4-00021"
+            "gn4-00026"
           ],
           "vocab_ids": [
-            "vg-n4-00002"
+            "v-ssw-const-012"
           ]
         }
       ]
@@ -230,13 +230,13 @@ window.curriculumSSWConstruction = {
       "can_do_summary": "Bisa memberi isyarat peluit derek dan barikade radius putar.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn4-00010",
-        "gn4-00013",
-        "gn4-00021"
+        "gn4-00027",
+        "gn4-00034"
       ],
       "vocab_ids": [
-        "vg-n4-00001",
-        "vg-n4-00002"
+        "v-ssw-const-013",
+        "v-ssw-const-014",
+        "v-ssw-const-015"
       ],
       "lessons": [
         {
@@ -247,11 +247,11 @@ window.curriculumSSWConstruction = {
           "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Pengoperasian Crane, Sling & Zona Bahaya Radius.",
           "can_do_statement": "Bisa memberi isyarat peluit derek dan barikade radius putar.",
           "grammar_ids": [
-            "gn4-00010",
-            "gn4-00013"
+            "gn4-00027"
           ],
           "vocab_ids": [
-            "vg-n4-00001"
+            "v-ssw-const-013",
+            "v-ssw-const-014"
           ]
         },
         {
@@ -262,10 +262,10 @@ window.curriculumSSWConstruction = {
           "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
           "can_do_statement": "Bisa memberi isyarat peluit derek dan barikade radius putar.",
           "grammar_ids": [
-            "gn4-00021"
+            "gn4-00034"
           ],
           "vocab_ids": [
-            "vg-n4-00002"
+            "v-ssw-const-015"
           ]
         }
       ]
@@ -282,13 +282,13 @@ window.curriculumSSWConstruction = {
       "can_do_summary": "Bisa menjaga jarak kabel 6600V dan memutus daya sakelar.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn4-00010",
-        "gn4-00013",
-        "gn4-00021"
+        "gn4-00038",
+        "gn4-00045"
       ],
       "vocab_ids": [
-        "vg-n4-00001",
-        "vg-n4-00002"
+        "v-ssw-const-016",
+        "v-ssw-const-017",
+        "v-ssw-const-018"
       ],
       "lessons": [
         {
@@ -299,11 +299,11 @@ window.curriculumSSWConstruction = {
           "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Bahaya Kelistrikan & Pencegahan Sengatan (Kanden).",
           "can_do_statement": "Bisa menjaga jarak kabel 6600V dan memutus daya sakelar.",
           "grammar_ids": [
-            "gn4-00010",
-            "gn4-00013"
+            "gn4-00038"
           ],
           "vocab_ids": [
-            "vg-n4-00001"
+            "v-ssw-const-016",
+            "v-ssw-const-017"
           ]
         },
         {
@@ -314,10 +314,10 @@ window.curriculumSSWConstruction = {
           "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
           "can_do_statement": "Bisa menjaga jarak kabel 6600V dan memutus daya sakelar.",
           "grammar_ids": [
-            "gn4-00021"
+            "gn4-00045"
           ],
           "vocab_ids": [
-            "vg-n4-00002"
+            "v-ssw-const-018"
           ]
         }
       ]
@@ -334,13 +334,13 @@ window.curriculumSSWConstruction = {
       "can_do_summary": "Bisa mengecek oksigen >18% dan menyalakan blower udara segar.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn4-00010",
-        "gn4-00013",
-        "gn4-00021"
+        "gn4-00046",
+        "gn4-00047"
       ],
       "vocab_ids": [
-        "vg-n4-00001",
-        "vg-n4-00002"
+        "v-ssw-const-019",
+        "v-ssw-const-020",
+        "v-ssw-const-021"
       ],
       "lessons": [
         {
@@ -351,11 +351,11 @@ window.curriculumSSWConstruction = {
           "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Ruang Terbatas, Terowongan & Asfiksia Gas Beracun.",
           "can_do_statement": "Bisa mengecek oksigen >18% dan menyalakan blower udara segar.",
           "grammar_ids": [
-            "gn4-00010",
-            "gn4-00013"
+            "gn4-00046"
           ],
           "vocab_ids": [
-            "vg-n4-00001"
+            "v-ssw-const-019",
+            "v-ssw-const-020"
           ]
         },
         {
@@ -366,10 +366,10 @@ window.curriculumSSWConstruction = {
           "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
           "can_do_statement": "Bisa mengecek oksigen >18% dan menyalakan blower udara segar.",
           "grammar_ids": [
-            "gn4-00021"
+            "gn4-00047"
           ],
           "vocab_ids": [
-            "vg-n4-00002"
+            "v-ssw-const-021"
           ]
         }
       ]
@@ -386,13 +386,13 @@ window.curriculumSSWConstruction = {
       "can_do_summary": "Bisa melapor kecelakaan kerja ke kementerian dan ambulans 119.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn4-00010",
-        "gn4-00013",
-        "gn4-00021"
+        "gn4-00050",
+        "gn4-00051"
       ],
       "vocab_ids": [
-        "vg-n4-00001",
-        "vg-n4-00002"
+        "v-ssw-const-022",
+        "v-ssw-const-023",
+        "v-ssw-const-024"
       ],
       "lessons": [
         {
@@ -403,11 +403,11 @@ window.curriculumSSWConstruction = {
           "desc_id": "Standar operasional prosedur dan terminologi keselamatan kerja Protokol 4-Tier Rousai & Pelaporan Bencana SBAR.",
           "can_do_statement": "Bisa melapor kecelakaan kerja ke kementerian dan ambulans 119.",
           "grammar_ids": [
-            "gn4-00010",
-            "gn4-00013"
+            "gn4-00050"
           ],
           "vocab_ids": [
-            "vg-n4-00001"
+            "v-ssw-const-022",
+            "v-ssw-const-023"
           ]
         },
         {
@@ -418,10 +418,10 @@ window.curriculumSSWConstruction = {
           "desc_id": "Simulasi tanggap darurat dan pelaporan baku SBAR kepada supervisor.",
           "can_do_statement": "Bisa melapor kecelakaan kerja ke kementerian dan ambulans 119.",
           "grammar_ids": [
-            "gn4-00021"
+            "gn4-00051"
           ],
           "vocab_ids": [
-            "vg-n4-00002"
+            "v-ssw-const-024"
           ]
         }
       ]

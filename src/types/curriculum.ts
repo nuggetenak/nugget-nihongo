@@ -20,6 +20,23 @@ export interface LessonContrastiveTrap {
   explanation: string;
 }
 
+export interface LessonVocabDetail {
+  id: string;
+  word: string;
+  reading: string;
+  romaji: string;
+  meaning: string;
+  pos?: string;
+  nuance?: string;
+  particleTip?: string; // Pasangan partikel / collocation
+  exampleSentence?: {
+    jp: string;
+    furigana?: string;
+    romaji?: string;
+    idText: string;
+  };
+}
+
 export interface LessonExplanationSection {
   id: string;
   grammarId?: string;
@@ -27,25 +44,48 @@ export interface LessonExplanationSection {
   formula: string;
   meaning: string;
   nuanceNotes: string;
+  patternLogic?: string; // Logika berpikir di balik pola kalimat
+  particleNotes?: string; // Peran partikel dalam pola
+  formVariations?: {
+    label: string; // misal: "Bentuk Positif", "Bentuk Negatif", "Bentuk Tanya"
+    jp: string;
+    idText: string;
+  }[];
   examples: {
     jp: string;
     furigana?: string;
     romaji?: string;
     idText: string;
   }[];
+  pairedExamples?: {
+    speakerA: string;
+    jpA: string;
+    idA: string;
+    speakerB: string;
+    jpB: string;
+    idB: string;
+  }[];
   contrastiveTrap?: LessonContrastiveTrap;
 }
 
 export interface LessonDrillItem {
   id: string;
-  type: 'reorder' | 'cloze' | 'trap_detect';
+  type: 'reorder' | 'cloze' | 'trap_detect' | 'vocab_context' | 'response';
   instruction: string;
   sentencePrompt?: string;
   tokens?: string[]; // for 'reorder'
   correctOrder?: string[]; // for 'reorder'
-  options?: string[]; // for 'cloze' or 'trap_detect'
+  options?: string[]; // for 'cloze' or 'trap_detect' or 'vocab_context' or 'response'
   correctAnswer: string;
   explanation: string;
+  diagnosticFeedback?: Record<string, string>; // Umpan balik diagnostik spesifik bila opsi tertentu dipilih
+}
+
+export interface PocketSummary {
+  keyFormula: string;
+  coreWords: string[];
+  coreWarning: string;
+  quickDialogue: string;
 }
 
 export interface CanDoChallenge {
@@ -54,6 +94,17 @@ export interface CanDoChallenge {
   promptTask: string;
   modelAnswer: string;
   modelAnswerId: string;
+  culturalEtiquette?: string;
+  skillUnlocked?: string[];
+  pocketSummary?: PocketSummary;
+}
+
+export interface CommonPitfallItem {
+  title: string;
+  caseScenario: string;
+  pitfallWarning: string; // ❌ Contoh salah
+  rightSolution: string; // ✅ Contoh benar
+  explanation: string;
 }
 
 export interface LessonPedagogicalFramework {
@@ -63,9 +114,26 @@ export interface LessonPedagogicalFramework {
     targetPatterns: string[];
     coreVocabSample: string[];
   };
-  why_research: {
+  sensei_context?: {
+    sceneIntro: string;
+    dailyMission: string;
+    whyOrder: string;
+  };
+  cultural_notes?: {
+    title: string;
+    etiquette: string;
+    taboos?: string;
+  };
+  pronunciation_tips?: {
+    title: string;
+    moraNote: string;
+    soundTip: string;
+  };
+  common_pitfalls?: CommonPitfallItem[];
+  // Field lama tetap dipertahankan opsional agar kompatibel ke belakang
+  why_research?: {
     cognitive_rationale: string;
-    sla_citations: string[];
+    sla_citations?: string[];
     prerequisite_link: string;
   };
   who_and_when: {
@@ -78,13 +146,7 @@ export interface LessonPedagogicalFramework {
     setting: string;
     narrative: string;
   };
-  edge_cases: {
-    title: string;
-    caseScenario: string;
-    pitfallWarning: string;
-    rightSolution: string;
-    explanation: string;
-  }[];
+  edge_cases?: CommonPitfallItem[];
 }
 
 export interface CurriculumLesson {
@@ -94,25 +156,28 @@ export interface CurriculumLesson {
   title_id: string;
   title_jp: string;
   desc_id: string;
-  can_do_statement: string; // CEFR-J in Indonesian
-  grammar_ids: string[]; // references gn5-*****
-  vocab_ids: string[]; // references vg-n5-*****
-  l2d_contrastive_tags?: string[]; // e.g., ['contrastive-adalah-copula']
+  can_do_statement: string;
+  grammar_ids: string[];
+  vocab_ids: string[];
+  l2d_contrastive_tags?: string[];
   estimated_minutes?: number;
 
   // ── Rich Interactive Content ──────────────────────────────
   pedagogical_framework?: LessonPedagogicalFramework;
   dialogue?: LessonDialogueLine[];
+  vocab_breakdown?: LessonVocabDetail[];
   explanations?: LessonExplanationSection[];
+  common_pitfalls?: CommonPitfallItem[];
   drills?: LessonDrillItem[];
   can_do_challenge?: CanDoChallenge;
+  pocket_summary?: PocketSummary;
 }
 
 export interface CurriculumUnit {
   id: string; // e.g., "unit-n5-01"
   unit_number: number;
   level: JLPTLevel;
-  pt_stage: number; // Processability Theory stage (1-6)
+  pt_stage: number; // Alur belajar bertahap (1-6)
   title_id: string;
   title_jp: string;
   theme: string;

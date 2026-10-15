@@ -14,13 +14,13 @@ Works completely offline after first load. No account needed. No ads. Free forev
 
 ## Features
 
-- 📚 **2,400+ vocabulary entries** across JLPT N5–N1
-- 📝 **450+ grammar points** with examples and explanations
+- 📚 **4,800+ vocabulary entries** across JLPT N5–N1 plus dedicated Tokutei Ginou (SSW) tracks (Konstruksi, Pengolahan Makanan, Kaigo)
+- 📝 **850+ grammar points** with authentic examples, furigana, and Indonesian contrastive notes
 - 🎯 **9 quiz modes** — flashcard, fill-in, rearrange, conjugation, translation, error-find, multiple choice
 - 🔄 **SRS (Spaced Repetition)** — FSRS algorithm for optimized review
 - 📖 **Book index** — learn by textbook chapter (Irodori, Sou Matome, Minna no Nihongo)
-- 🌐 **Bilingual** — Indonesian interface with Japanese content
-- 📱 **PWA** — install on any device, works offline
+- 🌐 **Bilingual** — Indonesian interface tailored for Indonesian native learners
+- 📱 **PWA & Offline** — install on any device, works completely offline
 - 🌙 **Dark mode** — easy on the eyes
 
 ## Quick Start
@@ -30,46 +30,58 @@ Works completely offline after first load. No account needed. No ads. Free forev
 git clone https://github.com/nuggetenak/nugget-nihongo.git
 cd nugget-nihongo
 
-# Serve locally
-npx http-server public -p 3000 -c-1
+# Install dependencies
+npm install
 
-# Run tests
-node tests/run.js
+# Run development server
+npm run dev
+
+# Run comprehensive test suite
+npm test
+
+# Build for production
+npm run build
 ```
 
-Open `http://localhost:3000` in your browser.
+Open `http://localhost:5173` in your browser.
 
 ## Project Structure
 
 ```
-public/          → Deploy root (what users see)
-  js/            → Application JavaScript
-  data/          → Vocab, grammar, quiz data
-  styles/        → CSS
+src/             → React 18 + TypeScript application source
+  components/    → Accessible, multi-device UI components (Sidebar, BottomNav, Modals)
+  pages/         → Router views (HomePage, LessonStudyPage, QuizPage, MateriHubPage)
+  lib/           → Core engines (dataManager, lessonContentAdapter, fsrs, supabase)
+  types/         → Strong TypeScript definitions
+public/          → Static assets & canonical corpora
+  data/          → Authoritative vocab, grammar, textbook lenses, SSW tracks
   fonts/         → Subsetted web fonts
-tests/           → Test runner
-tools/           → Development scripts (133 total)
-docs/            → Documentation & governance
+tests/           → Automated unit, regression, and semantic test suite
+workers/         → Cloudflare Edge workers (ai-proxy, admin-api)
+scripts/         → Corpus merging and build automation compilers
 ```
 
 See [ARCHITECTURE.md](ARCHITECTURE.md) for detailed structure.
 
 ## Tech Stack
 
-- Vanilla JavaScript (ES2020) — no framework, no build step
-- Service Worker for offline caching
-- GitHub Actions for CI/CD
-- GitHub Pages for hosting
+- **Frontend:** React 18, Vite, TypeScript, Tailwind CSS, Lucide React
+- **State & Storage:** Zustand, LocalStorage, IndexedDB
+- **Offline / PWA:** Service Worker (Cache-First shell, Stale-While-Revalidate data)
+- **Backend / Edge:** Cloudflare Workers (Multi-model AI proxy, Admin promotion API), Supabase
+- **Testing & CI:** Node test runners, GitHub Actions
 
-## Data
+## Data Inventory
 
-| Level | Vocab | Grammar |
-|-------|-------|---------|
-| N5 | 725 | 94 |
-| N4 | 692 | 92 |
-| N3 | 615 | 119 |
-| N2 | 260 | 250 |
-| N1 | 130 | 140 |
+| Level / Sector | Vocab | Grammar | Description |
+|---|---|---|---|
+| **N5** | 991 | 94 | Salam dasar, partikel primer, kopula & verba sopan |
+| **N4** | 946 | 92 | Bentuk sambung, syarat (~ba/~tara), keharusan & izin |
+| **N3** | 2,368 | 163 | Wacana menengah, nuansa emosi, ragam kasual vs formal |
+| **N2** | 344 | 310 | Bahasa bisnis, koran, penulisan formal, relasi logis |
+| **N1** | 190 | 200 | Wacana tingkat tinggi, ekspresi klasik/resmi |
+| **SSW Specialist** | 72 | — | Konstruksi (JAC), Pengolahan Makanan, Kaigo |
+| **Total Corpus** | **4,839+** | **859** | Terindeks 100% dengan audio, romaji & contoh kalimat |
 
 ## Contributing
 

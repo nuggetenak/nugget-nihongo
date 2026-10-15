@@ -7,24 +7,44 @@ export interface SupabaseConfig {
   isCustom: boolean;
 }
 
-const DEFAULT_DEAD_URL = 'https://oxeuwkpgrtojjzhcboqz.supabase.co';
-const DEFAULT_ANON_KEY =
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im94ZXV3a3BncnRvamp6aGNib3F6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzUwNDczNTMsImV4cCI6MjA5MDYyMzM1M30.0kEo4o6U9YNWA0RA5h83W9nMacoxQR9uUL2lHiDiZPk';
+const DEFAULT_DEAD_URL = 'https://unconfigured.supabase.co';
+const DEFAULT_ANON_KEY = 'placeholder-anon-key';
 
 export function getStoredSupabaseConfig(): SupabaseConfig {
   let url = '';
   let anonKey = '';
 
   if (typeof window !== 'undefined') {
-    // Check URL query parameters for one-time developer setup (e.g. ?sb_url=...&sb_key=...)
+    // Check URL query parameters for developer setup (strictly validated)
     try {
       const params = new URLSearchParams(window.location.search);
       const qUrl = params.get('sb_url') || params.get('supabase_url');
       const qKey = params.get('sb_key') || params.get('supabase_anon_key');
       if (qUrl && qKey) {
-        localStorage.setItem('nn_supabase_url', qUrl.trim());
-        localStorage.setItem('nn_supabase_anon_key', qKey.trim());
-        console.info('[supabase] Configured via URL params!');
+        const trimmedUrl = qUrl.trim().replace(/\/$/, '');
+        const trimmedKey = qKey.trim();
+
+        // Security validation (F-09): strictly allow only valid https supabase.co domains or localhost in dev
+        const parsedUrl = new URL(trimmedUrl);
+        const isDev = typeof import.meta !== 'undefined' && !import.meta.env?.PROD;
+        const isOfficialSupabase = /^https:\/\/[a-z0-9-]+\.supabase\.co$/.test(parsedUrl.origin);
+        const isLocalDev = isDev && (parsedUrl.hostname === 'localhost' || parsedUrl.hostname === '127.0.0.1');
+
+        if ((isOfficialSupabase || isLocalDev) && trimmedKey.length > 20) {
+          localStorage.setItem('nn_supabase_url', trimmedUrl);
+          localStorage.setItem('nn_supabase_anon_key', trimmedKey);
+          console.info('[supabase] Configured via validated URL params!');
+
+          // Clean query parameters from URL to avoid leaking in history / referrer
+          params.delete('sb_url');
+          params.delete('supabase_url');
+          params.delete('sb_key');
+          params.delete('supabase_anon_key');
+          const cleanUrl = window.location.pathname + (params.toString() ? `?${params.toString()}` : '') + window.location.hash;
+          window.history.replaceState({}, document.title, cleanUrl);
+        } else {
+          console.warn('[supabase] Rejected unsafe URL query parameter config override');
+        }
       }
     } catch {
       // Ignore URL parsing errors
@@ -41,7 +61,7 @@ export function getStoredSupabaseConfig(): SupabaseConfig {
     anonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
   }
 
-  const isConfigured = !!url && !url.includes('oxeuwkpgrtojjzhcboqz') && !url.includes('your-project-id');
+  const isConfigured = !!url && !url.includes('unconfigured') && !url.includes('oxeuwkpgrtojjzhcboqz') && !url.includes('your-project-id') && anonKey !== 'placeholder-anon-key';
   const isCustom = isConfigured;
 
   return {

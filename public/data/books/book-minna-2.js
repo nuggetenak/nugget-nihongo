@@ -59,7 +59,6 @@ window.bookMinna2 = {
       topic      : "〜でしょう — Perkiraan dan Ramalan",
       vocab_ids  : [
         'vg-n5-00098', // 天気 — cuaca
-        'vg-n5-00098', // 天気 — cuaca
         'vg-n5-00672', // はれ — cerah
         'vg-n5-00673', // くもり — mendung
         'vg-n5-00134', // 雨 — hujan
@@ -159,7 +158,6 @@ window.bookMinna2 = {
         'vg-n5-00061', // 高い — tinggi; mahal
         'vg-n5-00062', // 安い — murah
         'vg-n4-00524', // 季節 — musim
-        'vg-n5-00065', // 新しい — baru
       ],
       grammar_ids: ['gn5-00072', 'gn4-00047'],
     },
@@ -250,7 +248,6 @@ window.bookMinna2 = {
         'vg-n4-00144', // 悲しい — sedih
         'vg-n4-00142', // 喜ぶ — merasa senang, bergembira
         'vg-n4-00335', // 驚く — terkejut, terkagum
-        'vg-n5-00098', // 天気 — cuaca
         'vg-n5-00098', // 天気 — cuaca
       ],
       grammar_ids: ['gn4-00029'],
@@ -364,7 +361,6 @@ window.bookMinna2 = {
         'vg-n5-00016', // 消す — mematikan; menghapus
         'vg-n5-00002', // 開く — terbuka
         'vg-n5-00194', // しめる — menutup
-        'vg-n5-00017', // つける — menyalakan; menempelkan
         'vg-n5-00190', // けす — mematikan; menghapus
         'vg-n5-00003', // 開ける — membuka
         'vg-n5-00409', // エアコン — AC

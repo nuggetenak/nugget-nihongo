@@ -6,7 +6,7 @@
 //  - Network-first for dynamic API endpoints (Supabase / Cloudflare Workers)
 // ══════════════════════════════════════
 
-const CACHE = 'nihongo-v18.0.0';
+const CACHE = 'nihongo-v18.1.0';
 
 const CORE_ASSETS = [
   '/',
@@ -44,7 +44,7 @@ const CORE_ASSETS = [
   '/data/curriculum/curriculum-ssw-construction.js',
 
   // ── Inventaris Diagnostik L1 ────────────────────────────
-  '/data/diagnostics/confusion-pairs.js',
+  '/data/confusion-pairs.js',
 
   // ── Books & Tracks ──────────────────────────────────────
   '/data/books/sources.js',
@@ -100,12 +100,18 @@ const NETWORK_FIRST = [
 self.addEventListener('install', e => {
   e.waitUntil(
     caches.open(CACHE).then(async cache => {
-      // Use Promise.allSettled so missing legacy assets do NOT block modern PWA installation
+      // 1. Core assets: log diagnostic warnings if any are missing
       await Promise.allSettled(
-        ALL_PRECACHE.map(url =>
+        CORE_ASSETS.map(url =>
           cache.add(url).catch(err => {
-            // Optional asset missing in modern bundle; safe to ignore
+            console.warn(`[SW] Core precache asset missing or failed to fetch: ${url}`, err);
           })
+        )
+      );
+      // 2. Optional legacy assets: safe to ignore without noise
+      await Promise.allSettled(
+        LEGACY_OPTIONAL_ASSETS.map(url =>
+          cache.add(url).catch(() => {})
         )
       );
     })

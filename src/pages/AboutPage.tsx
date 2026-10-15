@@ -366,21 +366,90 @@ export const AboutPage: React.FC = () => {
       </div>
 
       {/* Research Basis & Pedagogical Foundation */}
-      <div className="bg-surface border border-accent/20 rounded-3xl p-6 sm:p-8 space-y-4 shadow-sm">
-        <h2 className="font-bold text-sm sm:text-base text-appText-bright flex items-center gap-2 border-b border-accent/15 pb-3">
-          <Brain className="w-4 h-4 text-accent" />
-          <span>Basis Riset & Metodologi Pedagogis</span>
-        </h2>
-        <div className="space-y-3 text-xs text-appText-muted leading-relaxed">
-          <p>
-            • <strong>Ye et al. (2022)</strong>: <em>A Stochastic Shortest Path Algorithm for Optimizing Spaced Repetition</em> (KDD). Nugget Nihongo mengadopsi model DSR (Difficulty, Stability, Retrievability) untuk menghitung jarak ulasan memori optimal.
+      <div className="bg-surface border border-accent/20 rounded-3xl p-6 sm:p-8 space-y-5 shadow-sm">
+        <div className="space-y-1">
+          <div className="inline-flex items-center gap-2 text-accent font-bold text-xs uppercase tracking-wider">
+            <Brain className="w-4 h-4" />
+            <span>Landasan Riset & Metodologi Ilmiah</span>
+          </div>
+          <h2 className="text-xl sm:text-2xl font-extrabold text-appText-bright">
+            Arsitektur Pedagogis Berbasis Bukti (Evidence-Based Learning)
+          </h2>
+          <p className="text-xs text-appText-muted leading-relaxed">
+            Nugget Nihongo dirancang bukan atas dasar intuisi semata, melainkan mengintegrasikan temuan riset Second Language Acquisition (SLA), Computer-Assisted Language Learning (CALL), dan model matematika kognitif terkini.
           </p>
-          <p>
-            • <strong>Matsunaga (1999)</strong>: Pemelajar bahasa Jepang dengan bahasa ibu berlatar belakang aksara alfabet latin (non-kanji L1) membutuhkan rata-rata 2.3× lebih banyak paparan kontekstual untuk menguasai kanji dibanding pemelajar berlatar belakang aksara Hanzi/Kanji. Nugget Nihongo menghadirkan furigana dua arah, pelafalan audio aksen Tokyo, dan metafora Kebun Kata untuk menjembatani kesenjangan ini.
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+          {/* Pilar 1: Processability Theory */}
+          <div className="p-4 sm:p-5 rounded-2xl bg-surface-2/80 border border-accent/15 space-y-2.5">
+            <div className="flex items-center gap-2 text-xs font-bold text-accent">
+              <span className="p-1 rounded-md bg-accent/15 text-accent">1</span>
+              <span>Alur Belajar Bertahap (Processability Theory)</span>
+            </div>
+            <p className="text-xs text-appText leading-relaxed">
+              Materi disusun bertingkat mengikuti tahapan kapasitas memori kerja manusia: mulai dari tingkat leksikal dasar, frase penanda topik (は), hingga pergeseran urutan kata dan klausa bertingkat tanpa membebani otak secara tiba-tiba.
+            </p>
+            <div className="text-[11px] font-mono text-appText-muted border-t border-accent/10 pt-2">
+              📖 Pienemann, M. (1998). <em>Language Processing and Second Language Development</em>. John Benjamins.
+            </div>
+          </div>
+
+          {/* Pilar 2: Analisis Kontrasif L1 Indonesia */}
+          <div className="p-4 sm:p-5 rounded-2xl bg-surface-2/80 border border-accent/15 space-y-2.5">
+            <div className="flex items-center gap-2 text-xs font-bold text-red-400">
+              <span className="p-1 rounded-md bg-red-500/15 text-red-400">2</span>
+              <span>Pencegahan Transfer Negatif Bahasa Ibu (L1)</span>
+            </div>
+            <p className="text-xs text-appText leading-relaxed">
+              Mengakomodasi kekhasan lidah dan pola pikir pembelajar Indonesia: mengatasi jebakan struktur kalimat SVO vs SOV, posisi kopula "adalah" di tengah vs "desu" di akhir, serta modul penyesuaian logat daerah (Jawa, Sunda, Batak/Timur).
+            </p>
+            <div className="text-[11px] font-mono text-appText-muted border-t border-accent/10 pt-2">
+              📖 Sutedi, D. (2014). <em>Dasar-Dasar Linguistik Bahasa Jepang</em>. Humaniora Bandung.
+            </div>
+          </div>
+
+          {/* Pilar 3: Pengelompokan Tematik (Thematic Clustering) */}
+          <div className="p-4 sm:p-5 rounded-2xl bg-surface-2/80 border border-accent/15 space-y-2.5">
+            <div className="flex items-center gap-2 text-xs font-bold text-emerald-400">
+              <span className="p-1 rounded-md bg-emerald-500/15 text-emerald-400">3</span>
+              <span>Penyajian Kosakata Tematik Kontekstual</span>
+            </div>
+            <p className="text-xs text-appText leading-relaxed">
+              Menghindari pengajaran kosakata berbasis daftar sinonim serumpun dalam satu waktu untuk mencegah kebingungan semantis. Kosakata disajikan dalam relasi skenario nyata (misal: pakaian di toko, makanan di restoran).
+            </p>
+            <div className="text-[11px] font-mono text-appText-muted border-t border-accent/10 pt-2">
+              📖 Tinkham, T. (1997). <em>The effects of semantic and thematic clustering on vocabulary learning</em>. Second Language Research.
+            </div>
+          </div>
+
+          {/* Pilar 4: Retensi Memori Optimal FSRS v4 */}
+          <div className="p-4 sm:p-5 rounded-2xl bg-surface-2/80 border border-accent/15 space-y-2.5">
+            <div className="flex items-center gap-2 text-xs font-bold text-sky-400">
+              <span className="p-1 rounded-md bg-sky-500/15 text-sky-400">4</span>
+              <span>Penjadwalan Interval Bebas Lupa (FSRS v4)</span>
+            </div>
+            <p className="text-xs text-appText leading-relaxed">
+              Menggantikan algoritma SM-2 lawas dengan model matematika stokastik DSR (Difficulty, Stability, Retrievability) yang menyesuaikan kecepatan belajar pribadi dan menghemat hingga 40% waktu ulasan.
+            </p>
+            <div className="text-[11px] font-mono text-appText-muted border-t border-accent/10 pt-2">
+              📖 Ye, J., et al. (2022). <em>A Stochastic Shortest Path Algorithm for Optimizing Spaced Repetition</em>. ACM KDD.
+            </div>
+          </div>
+        </div>
+
+        {/* Pilar 5: Standar Kemampuan Aksi Nyata (CEFR-J) */}
+        <div className="p-4 rounded-2xl bg-amber-500/10 border border-amber-500/20 text-xs space-y-1.5">
+          <div className="font-bold text-amber-300 flex items-center gap-2">
+            <span>🎯</span>
+            <span>Standar Kemampuan Komunikatif Nyata (CEFR-J & JF Standard)</span>
+          </div>
+          <p className="text-appText leading-relaxed">
+            Setiap pelajaran dipandu oleh target capaian Can-Do yang jelas: bukan sekadar menghafal rumus, melainkan kemampuan menyelesaikan misi nyata di Jepang (registrasi balai kota, memesan makanan, komunikasi empatik di tempat kerja).
           </p>
-          <p>
-            • <strong>The Japan Foundation & 3A Corporation</strong>: Selaras dengan standar JF Standard for Japanese-Language Education (Buku Irodori) dan Minna no Nihongo Shokyu.
-          </p>
+          <div className="text-[11px] font-mono text-appText-muted pt-1">
+            The Japan Foundation (2017). <em>JF Standard for Japanese-Language Education</em> & CEFR-J Framework.
+          </div>
         </div>
       </div>
 

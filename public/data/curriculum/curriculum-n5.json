@@ -4,9 +4,11 @@
     "level": "n5",
     "title": "Kurikulum Original Nugget Nihongo · N5",
     "title_id": "Jalur Mandiri N5 (Kurikulum Nugget)",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "total_units": 10,
     "total_grammar_points": 94,
+    "core_target_vocab_count": 124,
+    "bank_supporting_vocab_count": 870,
     "authoritative": true
   },
   "id": "trk-nugget-n5",
@@ -14,7 +16,7 @@
   "name_id": "Jalur Mandiri N5 (Kurikulum Nugget)",
   "level": "n5",
   "tagline": "Dirancang khusus untuk penutur bahasa Indonesia dengan Processability Theory & Analisis Kontrasif.",
-  "desc": "Jalur belajar bertahap 10 unit lengkap dari salam dasar hingga penguasaan 94 pola tata bahasa dan 990+ kosakata JLPT N5.",
+  "desc": "Jalur belajar bertahap 10 unit lengkap: menguasai 94 pola tata bahasa inti dan 124 kosakata target pelajaran, didukung bank 870+ kosakata N5 untuk latihan mandiri dan flashcards.",
   "total_units": 10,
   "total_grammar_count": 94,
   "units": [

@@ -261,15 +261,24 @@ function buildContext(ctx) {
 }
 
 // ── Rate limiter ─────────────────────────────────────────────────
-async function checkRateLimit(env, userId) {
+function getRateLimitId(request, explicitUserId) {
+  const clientIp = request.headers.get('CF-Connecting-IP') || 'anon';
+  if (explicitUserId && typeof explicitUserId === 'string' && explicitUserId.trim()) {
+    // Anchor custom user ID to client IP to prevent rotating userIds on the same edge IP
+    return `ip:${clientIp}:u:${explicitUserId.trim().slice(0, 32)}`;
+  }
+  return `ip:${clientIp}`;
+}
+
+async function checkRateLimit(env, userId, cost = 1) {
   if (!env.RATE_LIMITS) return { allowed: true, remaining: DAILY_LIMIT };
   const today = new Date().toISOString().slice(0, 10);
   const key = `rl:${userId}:${today}`;
   const raw = await env.RATE_LIMITS.get(key);
   const count = raw ? parseInt(raw) : 0;
-  if (count >= DAILY_LIMIT) return { allowed: false, remaining: 0 };
-  await env.RATE_LIMITS.put(key, String(count + 1), { expirationTtl: 90000 });
-  return { allowed: true, remaining: DAILY_LIMIT - count - 1 };
+  if (count + cost > DAILY_LIMIT) return { allowed: false, remaining: Math.max(0, DAILY_LIMIT - count) };
+  await env.RATE_LIMITS.put(key, String(count + cost), { expirationTtl: 90000 });
+  return { allowed: true, remaining: Math.max(0, DAILY_LIMIT - count - cost) };
 }
 
 // ── KV response cache ─────────────────────────────────────────────
@@ -552,9 +561,9 @@ async function handleChat(request, env, cors) {
     return new Response(JSON.stringify({ error: 'messages required' }), { status: 400, headers: { ...cors, 'Content-Type': 'application/json' } });
   }
 
-  // Rate limiting (uses IP as fallback if no userId)
-  const uid = userId || request.headers.get('CF-Connecting-IP') || 'anon';
-  const { allowed, remaining } = await checkRateLimit(env, uid);
+  // Rate limiting (uses IP anchor to prevent rotation bypass)
+  const uid = getRateLimitId(request, userId);
+  const { allowed, remaining } = await checkRateLimit(env, uid, 1);
   if (!allowed) {
     return new Response(JSON.stringify({
       error: 'daily_limit_reached',
@@ -603,10 +612,10 @@ async function handleGenerateQuiz(request, env, cors) {
   }
 
   // Rate limiting: quiz-gen counts 2 against the daily budget (batch is expensive)
-  const userId = body.userId || request.headers.get('CF-Connecting-IP') || 'anon';
-  const { allowed } = await checkRateLimit(env, userId);
+  const uid = getRateLimitId(request, body.userId);
+  const { allowed, remaining } = await checkRateLimit(env, uid, 2);
   if (!allowed) {
-    return new Response(JSON.stringify({ error: 'daily_limit_reached' }), {
+    return new Response(JSON.stringify({ error: 'daily_limit_reached', remaining: 0 }), {
       status: 429, headers: { ...cors, 'Content-Type': 'application/json' },
     });
   }
@@ -673,6 +682,15 @@ async function handleCritique(request, env, cors) {
   if (!questions || !questions.length) {
     return new Response(JSON.stringify({ error: 'questions[] required' }), {
       status: 400, headers: { ...cors, 'Content-Type': 'application/json' },
+    });
+  }
+
+  // Rate limiting: critique counts 2 against the daily budget
+  const uid = getRateLimitId(request, body.userId);
+  const { allowed, remaining } = await checkRateLimit(env, uid, 2);
+  if (!allowed) {
+    return new Response(JSON.stringify({ error: 'daily_limit_reached', remaining: 0 }), {
+      status: 429, headers: { ...cors, 'Content-Type': 'application/json' },
     });
   }
 

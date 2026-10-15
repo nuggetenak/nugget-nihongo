@@ -465,7 +465,7 @@ export const HomePage: React.FC = () => {
           /* View 1: 8-Track Original Curriculum Progression */
           <div className="space-y-3 animate-in fade-in duration-200">
             <div className="flex items-center justify-between text-xs text-appText-muted">
-              <span>Kurikulum Orisinal Berbasis Riset (Processability Theory & SSW):</span>
+              <span>Kurikulum Terstruktur (JLPT N5–N1 & Vokasional SSW):</span>
               <button
                 onClick={() => setActiveTab('materi')}
                 className="font-bold text-accent hover:underline flex items-center gap-1"

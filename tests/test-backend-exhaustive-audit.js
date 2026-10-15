@@ -39,10 +39,19 @@ const dataDir = path.resolve(__dirname, '../public/data');
   const p = path.join(dataDir, `vocab/vocab-${lvl}.js`);
   if (fs.existsSync(p)) eval(fs.readFileSync(p, 'utf8'));
 });
+['construction', 'food', 'kaigo'].forEach(sector => {
+  const p = path.join(dataDir, `vocab/ssw/${sector}.js`);
+  if (fs.existsSync(p)) eval(fs.readFileSync(p, 'utf8'));
+});
 const vocabIndexPath = path.join(dataDir, 'vocab/vocab-index.js');
 auditAssert(fs.existsSync(vocabIndexPath), 'vocab-index.js exists');
 eval(fs.readFileSync(vocabIndexPath, 'utf8'));
 const canonicalVocabIds = new Set((global.vocabDB || []).map(v => v.id));
+[
+  ...(global.vocabSSW_Construction || []),
+  ...(global.vocabSSW_Food || []),
+  ...(global.vocabSSW_Kaigo || []),
+].forEach(v => canonicalVocabIds.add(v.id));
 auditAssert(canonicalVocabIds.size >= 4800, `Canonical Vocab DB loaded (${canonicalVocabIds.size} entries)`);
 
 // Load grammar files

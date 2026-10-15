@@ -38,6 +38,9 @@ declare global {
     vocabN3?: any[];
     vocabN2?: any[];
     vocabN1?: any[];
+    vocabSSW_Construction?: any[];
+    vocabSSW_Food?: any[];
+    vocabSSW_Kaigo?: any[];
     grammarN5?: any[];
     grammarN4?: any[];
     grammarN3?: any[];
@@ -48,6 +51,14 @@ declare global {
     bookIrodoriA1?: any;
     bookIrodoriA2_1?: any;
     bookIrodoriA2_2?: any;
+    curriculumN5?: any;
+    curriculumN4?: any;
+    curriculumN3?: any;
+    curriculumN2?: any;
+    curriculumN1?: any;
+    curriculumSSWKaigo?: any;
+    curriculumSSWFood?: any;
+    curriculumSSWConstruction?: any;
   }
 }
 
@@ -70,52 +81,97 @@ export interface BookData {
 }
 
 // Memory cache
-const vocabCache: Partial<Record<JLPTLevel, NormalizedVocab[]>> = {};
+const vocabCache: Partial<Record<string, NormalizedVocab[]>> = {};
 const grammarCache: Partial<Record<JLPTLevel, NormalizedGrammar[]>> = {};
+
+// In-flight script loads to prevent duplicate loads & concurrent race conditions (F-04)
+const inFlightLoads = new Map<string, Promise<void>>();
 
 // Script load helper
 function loadScript(src: string): Promise<void> {
-  return new Promise((resolve, reject) => {
-    // If already loaded or present
-    const existing = document.querySelector(`script[src="${src}"]`);
+  if (inFlightLoads.has(src)) {
+    return inFlightLoads.get(src)!;
+  }
+
+  const existing = document.querySelector(`script[src="${src}"]`) as HTMLScriptElement | null;
+  if (existing && existing.dataset.loaded === 'true') {
+    return Promise.resolve();
+  }
+
+  const promise = new Promise<void>((resolve, reject) => {
     if (existing) {
-      resolve();
+      existing.addEventListener('load', () => {
+        existing.dataset.loaded = 'true';
+        resolve();
+      });
+      existing.addEventListener('error', () => {
+        reject(new Error(`Failed to load ${src}`));
+      });
       return;
     }
+
     const script = document.createElement('script');
     script.src = src;
     script.async = true;
-    script.onload = () => resolve();
-    script.onerror = () => reject(new Error(`Failed to load ${src}`));
+    script.onload = () => {
+      script.dataset.loaded = 'true';
+      resolve();
+    };
+    script.onerror = () => {
+      reject(new Error(`Failed to load ${src}`));
+    };
     document.head.appendChild(script);
+  }).finally(() => {
+    inFlightLoads.delete(src);
   });
+
+  inFlightLoads.set(src, promise);
+  return promise;
 }
 
 /**
- * Load and normalize vocabulary for a specific JLPT level
+ * Load and normalize vocabulary for a specific JLPT level or SSW specialist track
  */
-export async function loadVocab(level: JLPTLevel): Promise<NormalizedVocab[]> {
-  if (vocabCache[level]) {
+export async function loadVocab(level: string): Promise<NormalizedVocab[]> {
+  if (vocabCache[level] && vocabCache[level]!.length > 0) {
     return vocabCache[level]!;
   }
 
-  const varName = `vocab${level.toUpperCase()}` as keyof Window;
-  if (!window[varName]) {
+  let src = `/data/vocab/vocab-${level}.js`;
+  let varName: keyof Window = `vocab${level.toUpperCase()}` as keyof Window;
+
+  if (level === 'ssw-construction' || level === 'curriculum-ssw-construction') {
+    src = '/data/vocab/ssw/construction.js';
+    varName = 'vocabSSW_Construction' as keyof Window;
+  } else if (level === 'ssw-food' || level === 'curriculum-ssw-food') {
+    src = '/data/vocab/ssw/food.js';
+    varName = 'vocabSSW_Food' as keyof Window;
+  } else if (level === 'ssw-kaigo' || level === 'curriculum-ssw-kaigo') {
+    src = '/data/vocab/ssw/kaigo.js';
+    varName = 'vocabSSW_Kaigo' as keyof Window;
+  }
+
+  if (!window[varName] || (window[varName] as any[]).length === 0) {
     try {
-      await loadScript(`/data/vocab/vocab-${level}.js`);
+      await loadScript(src);
     } catch (err) {
-      console.warn(`[dataManager] Could not load /data/vocab/vocab-${level}.js, fallback to empty array.`, err);
+      console.warn(`[dataManager] Could not load ${src}, fallback to empty array.`, err);
     }
   }
 
   const rawList: any[] = (window[varName] as any[]) || [];
+  if (rawList.length === 0) {
+    // Do not cache transient empty array so future retries can succeed
+    return [];
+  }
+
   const normalized: NormalizedVocab[] = rawList.map((item) => ({
     id: item.id || `vocab-${level}-${item.word}`,
     word: item.word || item.reading || '',
     reading: item.reading || item.word || '',
     romaji: item.romaji || '',
     meaning: item.meaning_id || item.meaning || item.meaning_en || '',
-    level: level,
+    level: (['n5', 'n4', 'n3', 'n2', 'n1'].includes(level) ? level : 'n4') as JLPTLevel,
     pos: item.pos || item.type || 'vocab',
     nuance: item.nuance || undefined,
     examples: Array.isArray(item.examples) ? item.examples : [],
@@ -129,12 +185,12 @@ export async function loadVocab(level: JLPTLevel): Promise<NormalizedVocab[]> {
  * Load and normalize grammar for a specific JLPT level
  */
 export async function loadGrammar(level: JLPTLevel): Promise<NormalizedGrammar[]> {
-  if (grammarCache[level]) {
+  if (grammarCache[level] && grammarCache[level]!.length > 0) {
     return grammarCache[level]!;
   }
 
   const varName = `grammar${level.toUpperCase()}` as keyof Window;
-  if (!window[varName]) {
+  if (!window[varName] || (window[varName] as any[]).length === 0) {
     try {
       await loadScript(`/data/grammar/grammar-${level}.js`);
     } catch (err) {
@@ -143,6 +199,11 @@ export async function loadGrammar(level: JLPTLevel): Promise<NormalizedGrammar[]
   }
 
   const rawList: any[] = (window[varName] as any[]) || [];
+  if (rawList.length === 0) {
+    // Do not cache transient empty array
+    return [];
+  }
+
   const normalized: NormalizedGrammar[] = rawList.map((item) => ({
     id: item.id || `grammar-${level}-${item.pattern}`,
     pattern: item.pattern || item.title || item.grammar || '',

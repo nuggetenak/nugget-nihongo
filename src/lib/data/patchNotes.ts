@@ -17,6 +17,63 @@ export interface PatchNote {
 
 export const PATCH_NOTES_HISTORY: PatchNote[] = [
   {
+    version: 'v18.1.0',
+    releaseName: 'Remediasi Kurikulum Semantik, Spesialisasi SSW & Penguatan Keamanan Publik',
+    date: '15 Oktober 2026',
+    type: 'minor',
+    highlights: [
+      'Sentence-Extraction & Slot-Filling Engine Mengeliminasi Total Kalimat Sintetis (Synthetic Gibberish)',
+      'Penyelarasan 100% ID Latihan Fallback Kuis (vocab-drills.json & grammar-drills.json) 1:1 Terhadap Korpus Kanonikal',
+      'Pencegahan Race Condition & Cache Poisoning dataManager Melalui inFlightLoads Concurrency Map',
+      'Studio Pelajaran dengan Penanganan 404 Mandiri (LessonNotFoundState) & Pemuatan Kosakata SSW Khusus',
+      'Ekspansi Korpus Tokutei Ginou SSW: 72 Kosakata Otentik Konstruksi, Pengolahan Makanan, dan Keperawatan (Kaigo)',
+      'Restorasi Taksonomi Partikel N5/N4 dan Deduplikasi Referensi Buku Minna no Nihongo & Irodori',
+      'Penguatan Keamanan Edge Workers (Rate Limiting /critique & UTF-8 Safe Admin Base64 Encoding)',
+      'Eliminasi Token Statis Publik & Sistem Sinkronisasi Otomatis Changelog Antar Versi',
+      'Anti-Leakage Layout Terverifikasi: 0px Horizontal Overflow di Seluruh Perangkat (iPhone SE hingga Desktop)',
+    ],
+    details: [
+      {
+        category: 'Remediasi Semantik & Adapter Konten Kurikulum',
+        items: [
+          'Mengganti generator template statis dengan Sentence-Extraction & Slot-Filling Engine yang mengekstraksi kalimat otentik langsung dari korpus kosakata/tata bahasa.',
+          'Penyelarasan ID fallback kuis dari format lama ke format kanonikal (vocab_v-n5-*, grammar_g-n5-*) sehingga tidak ada drill yang terputus.',
+          'Format tampilan pedagogis dirancang kontekstual dan komunikatif tanpa menyulitkan pembelajar umum.',
+        ],
+      },
+      {
+        category: 'Stabilitas Data & Concurrency Guard',
+        items: [
+          'Mengimplementasikan inFlightLoads Map pada DataManager untuk mencegah race condition pemanggilan simultan dan cache poisoning berupa array kosong.',
+          'Halaman LessonStudyPage dilengkapi LessonNotFoundState ramah pengguna dengan tombol kembali jika rute/pelajaran tidak ditemukan.',
+          'Pemuatan otomatis spesialisasi SSW vokasional (Konstruksi, Makanan, Kaigo) saat pengguna mengakses unit track SSW.',
+        ],
+      },
+      {
+        category: 'Pengayaan Korpus Vokasional SSW (Tokutei Ginou)',
+        items: [
+          'Penambahan 72 entitas kosakata otentik untuk sektor Kaigo (Keperawatan lansia), Konstruksi (K3 & Keselamatan kerja), dan Pengolahan Makanan (Standar HACCP).',
+          'Katalog kurikulum SSW diperbarui lengkap dengan target kalimat dan model dialog kerja nyata di Jepang.',
+        ],
+      },
+      {
+        category: 'Pembersihan Taksonomi & Buku Pelajaran',
+        items: [
+          'Restorasi kategori partikel pada n5-particles.js dan n4-particles.js yang sebelumnya salah terlabel sebagai tense-aspect.',
+          'Deduplikasi 24 entitas pada materi referensi buku teks (Minna no Nihongo 1 & 2, Irodori A1 & A2).',
+        ],
+      },
+      {
+        category: 'Keamanan Publik, Edge Workers & Otomasi Rilis',
+        items: [
+          'Pencegahan kebocoran kredensial dengan mengganti token anonim hardcoded menjadi placeholder aman unconfigured.',
+          'Rate limiting ketat pada endpoint /critique berbasis IP nyata (CF-Connecting-IP).',
+          'Sistem generator otomatis scripts/sync-changelog.js yang menyinkronkan patchNotes.ts ke CHANGELOG.md pada setiap proses build & rilis.',
+        ],
+      },
+    ],
+  },
+  {
     version: 'v18.0.0',
     releaseName: 'Studio Pembelajaran Berbasis Riset SLA & Latihan Tersemat Mandiri',
     date: '10 Oktober 2026',

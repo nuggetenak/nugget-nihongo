@@ -42,7 +42,7 @@ for (const level of LEVELS) {
     const raw = fs.readFileSync(f, 'utf-8');
     const block = extractEntries(raw);
     if (!block) continue;
-    const count = (block.match(/id\s*:\s*'gn\d-/g) || []).length;
+    const count = (block.match(/["']?id["']?\s*:\s*["']gn\d-/g) || []).length;
     totalEntries += count;
     sections.push({ group, block: ensureTrailingComma(block), count });
   }

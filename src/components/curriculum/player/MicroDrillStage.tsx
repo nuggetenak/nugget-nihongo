@@ -1,6 +1,6 @@
 // ══════════════════════════════════════════════════════════════════
-//  MicroDrillStage.tsx — Tahap 3: Latihan Tersemat di Tempat
-//  100% In-Place, Zero Menu-Jumping, Umpan Balik Instan & Retry Loop
+//  MicroDrillStage.tsx — Tahap 3: Cek Pemahaman (5-Step Progressive Ladder)
+//  100% In-Place, Zero Menu-Jumping, Umpan Balik Diagnostik & Retry Loop
 // ══════════════════════════════════════════════════════════════════
 
 import React, { useState } from 'react';
@@ -19,7 +19,7 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [reorderedTokens, setReorderedTokens] = useState<string[]>([]);
   const [feedback, setFeedback] = useState<{ isCorrect: boolean; text: string } | null>(null);
-  
+
   // Statistik
   const [firstAttemptCorrect, setFirstAttemptCorrect] = useState<Record<string, boolean>>({});
   const [retryQueue, setRetryQueue] = useState<LessonDrillItem[]>([]);
@@ -36,7 +36,7 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
           onClick={() => onComplete(100)}
           className="min-h-[44px] px-6 py-2.5 rounded-xl bg-accent text-bg font-bold shadow-md active:scale-95"
         >
-          Lanjut ke Verifikasi Can-Do
+          Lanjut ke Tantangan Nyata
         </button>
       </div>
     );
@@ -75,11 +75,21 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
       setRetryQueue((prev) => (prev.some((q) => q.id === currentItem.id) ? prev : [...prev, currentItem]));
     }
 
+    // Umpan balik diagnostik spesifik bila opsi tertentu dipilih
+    const specificDiagnostic =
+      !isCorrect && currentItem.diagnosticFeedback
+        ? currentItem.diagnosticFeedback[answerToTest] || currentItem.diagnosticFeedback[cleanAnswer]
+        : null;
+
+    const feedbackText = isCorrect
+      ? `Tepat sekali! ${currentItem.explanation}`
+      : specificDiagnostic
+      ? `${specificDiagnostic} (Kunci yang benar: "${currentItem.correctAnswer}")`
+      : `Belum tepat. Jawaban yang benar adalah "${currentItem.correctAnswer}". ${currentItem.explanation}`;
+
     setFeedback({
       isCorrect,
-      text: isCorrect
-        ? `Tepat sekali! ${currentItem.explanation}`
-        : `Belum tepat. Jawaban yang benar adalah "${currentItem.correctAnswer}". ${currentItem.explanation}`,
+      text: feedbackText,
     });
   };
 
@@ -118,32 +128,51 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
           <Sparkles className="w-7 h-7" />
         </div>
         <div className="space-y-1">
-          <h3 className="text-lg font-bold text-appText-bright">Latihan Tersemat Selesai!</h3>
+          <h3 className="text-lg font-bold text-appText-bright">Cek Pemahaman Tuntas!</h3>
           <p className="text-xs text-appText-muted">
-            Seluruh butir soal telah dijawab dan dipahami dengan tuntas.
+            Seluruh butir pemahaman telah kamu selesaikan dan pahami dengan tuntas.
           </p>
         </div>
         <div className="text-3xl font-extrabold text-accent font-mono">
           {finalScore}%
         </div>
         <p className="text-xs text-appText">
-          {finalScore >= 80 ? '🎉 Anda memenuhi ambang batas kelulusan (≥ 80%)!' : '💪 Tetap semangat, silakan ulas kembali materi jika perlu.'}
+          {finalScore >= 80 ? '🎉 Pemahaman mantap (≥ 80%)! Siap lanjut ke tantangan nyata.' : '💪 Tetap semangat, silakan ulas kembali materi jika perlu.'}
         </p>
       </div>
     );
   }
+
+  // Label badge berdasarkan tipe soal tangga progresif
+  const getBadgeLabel = () => {
+    switch (currentItem.type) {
+      case 'vocab_context':
+        return { label: '📚 Arti Kosakata dalam Konteks', color: 'text-blue-400' };
+      case 'trap_detect':
+        return { label: '🔍 Deteksi Kesalahan Umum', color: 'text-red-400' };
+      case 'reorder':
+        return { label: '🧩 Susun Kepingan Kalimat', color: 'text-amber-400' };
+      case 'response':
+        return { label: '💬 Respon Percakapan Alami', color: 'text-emerald-400' };
+      case 'cloze':
+      default:
+        return { label: '📝 Pilihan Partikel & Pola', color: 'text-accent' };
+    }
+  };
+
+  const badge = getBadgeLabel();
 
   return (
     <div className="space-y-4">
       {/* ── Progress Counter Bilah Atas ──────────────────────────── */}
       <div className="flex items-center justify-between text-xs text-appText-muted font-bold">
         <span>
-          Latihan Soal #{currentIndex + 1} dari {activeQueue.length}
+          Cek Pemahaman #{currentIndex + 1} dari {activeQueue.length}
         </span>
         {retryQueue.length > 0 && (
           <span className="text-amber-400 flex items-center gap-1 text-[11px]">
             <RotateCcw className="w-3 h-3" />
-            Putaran Koreksi: {retryQueue.length} Soal
+            Putaran Ulas: {retryQueue.length} Soal
           </span>
         )}
       </div>
@@ -151,20 +180,14 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
       {/* ── Kartu Soal Utama ─────────────────────────────────────── */}
       <div className="p-5 sm:p-6 rounded-3xl bg-surface border border-accent/25 space-y-5 shadow-sm">
         <div className="space-y-1.5">
-          <div className="text-xs font-bold uppercase tracking-wider text-accent flex items-center gap-1.5">
-            {currentItem.type === 'trap_detect' ? (
-              <span className="text-red-400 font-extrabold">⚠️ Spot the Edge Case</span>
-            ) : currentItem.type === 'reorder' ? (
-              <span>🧩 Susun Kepingan Kata</span>
-            ) : (
-              <span>📝 Pilihan Partikel & Kosakata</span>
-            )}
+          <div className={`text-xs font-bold uppercase tracking-wider flex items-center gap-1.5 ${badge.color}`}>
+            <span>{badge.label}</span>
           </div>
           <h3 className="text-sm sm:text-base font-bold text-appText-bright leading-relaxed">
             {currentItem.instruction}
           </h3>
           {currentItem.sentencePrompt && (
-            <div className="p-3 rounded-2xl bg-surface-2 border border-accent/15 text-sm sm:text-base font-jp font-semibold text-appText-bright mt-2">
+            <div className="p-3.5 rounded-2xl bg-surface-2 border border-accent/15 text-sm sm:text-base font-jp font-semibold text-appText-bright mt-2">
               {currentItem.sentencePrompt}
             </div>
           )}
@@ -222,7 +245,7 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
           </div>
         )}
 
-        {/* ── Area Interaksi Pilihan Ganda (Cloze & Trap Detect) ───── */}
+        {/* ── Area Interaksi Pilihan Ganda (Cloze, Trap Detect, Vocab Context, Response) ─ */}
         {currentItem.options && currentItem.type !== 'reorder' && (
           <div className="space-y-2 pt-1">
             {currentItem.options.map((opt, oIdx) => {
@@ -252,7 +275,7 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
           </div>
         )}
 
-        {/* ── Kartu Umpan Balik Instan ─────────────────────────────── */}
+        {/* ── Kartu Umpan Balik Diagnostik Instan ───────────────────── */}
         {feedback && (
           <div
             className={`p-4 rounded-2xl border space-y-3 animate-fade-in ${
@@ -270,7 +293,7 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
               ) : (
                 <>
                   <XCircle className="w-5 h-5 text-red-400" />
-                  <span>Perlu Diperbaiki!</span>
+                  <span>Perlu Koreksi!</span>
                 </>
               )}
             </div>

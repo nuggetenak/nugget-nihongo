@@ -1,20 +1,275 @@
 # Changelog — Nugget Nihongo
 
-## v15.16.0 (30 September 2026) — Action-First Dashboard & Desktop Dual-Column Shell
+> Catatan pembaruan ini disinkronkan secara otomatis dari `src/lib/data/patchNotes.ts`
+> Single Source of Truth: Jalankan `npm run changelog` atau `npm run build` untuk memutakhirkan.
 
-### v15.16.0 — feat(ui): Beranda Dashboard, Duolingo-style 3D gamification, and Desktop Dual-Column Shell
-- **Action-First Dashboard (`#homePage` & `pages/home.js`)**:
-  - Greet users with dynamic time-based greetings ("おはよう / こんにちは / こんばんは") and friendly mascot badge 🍙.
-  - Interactive Daily SRS Mission Card: calculates real-time due reviews from FSRS and provides a prominent 3D button ("Mulai Review Sekarang").
-  - Quick Action Navigation Grid (4 bubbly cards for Materi, Latihan Kuis, Kebun Mastery, and Tanya Sensei).
-  - Quick textbook access strip (Minna 1 & 2, Irodori A1, Soumatome N3).
-- **Desktop Dual-Column App Shell (`@media (min-width: 960px)`)**:
-  - Transformed bottom tab navigation into a fixed, branded left sidebar with mascot header ("🍙 Nugget日本語") and tactile navigation items.
-  - Divided dashboard on desktop into a spacious main activity stream and right-hand stats/streak/daily-word panel.
-  - Thumb-friendly responsive mobile bottom bar with bouncy feedback on smaller viewports.
-- **Duolingo-Inspired Gamified Styling (`styles/home-dashboard.css`)**:
-  - Implemented 3D tactile buttons (`.btn-3d`, `.btn-3d--primary`, `.btn-3d--accent`) with responsive push feedback.
-  - Bubbly cards with rounded corners, lively icons, and mascot wiggle animations.
+## v18.1.0 (15 Oktober 2026) — Remediasi Kurikulum Semantik, Spesialisasi SSW & Penguatan Keamanan Publik
+
+### Sorotan Pembaruan (Highlights)
+- Sentence-Extraction & Slot-Filling Engine Mengeliminasi Total Kalimat Sintetis (Synthetic Gibberish)
+- Penyelarasan 100% ID Latihan Fallback Kuis (vocab-drills.json & grammar-drills.json) 1:1 Terhadap Korpus Kanonikal
+- Pencegahan Race Condition & Cache Poisoning dataManager Melalui inFlightLoads Concurrency Map
+- Studio Pelajaran dengan Penanganan 404 Mandiri (LessonNotFoundState) & Pemuatan Kosakata SSW Khusus
+- Ekspansi Korpus Tokutei Ginou SSW: 72 Kosakata Otentik Konstruksi, Pengolahan Makanan, dan Keperawatan (Kaigo)
+- Restorasi Taksonomi Partikel N5/N4 dan Deduplikasi Referensi Buku Minna no Nihongo & Irodori
+- Penguatan Keamanan Edge Workers (Rate Limiting /critique & UTF-8 Safe Admin Base64 Encoding)
+- Eliminasi Token Statis Publik & Sistem Sinkronisasi Otomatis Changelog Antar Versi
+- Anti-Leakage Layout Terverifikasi: 0px Horizontal Overflow di Seluruh Perangkat (iPhone SE hingga Desktop)
+
+### Rincian Perubahan (Details)
+#### Remediasi Semantik & Adapter Konten Kurikulum
+- Mengganti generator template statis dengan Sentence-Extraction & Slot-Filling Engine yang mengekstraksi kalimat otentik langsung dari korpus kosakata/tata bahasa.
+- Penyelarasan ID fallback kuis dari format lama ke format kanonikal (vocab_v-n5-*, grammar_g-n5-*) sehingga tidak ada drill yang terputus.
+- Format tampilan pedagogis dirancang kontekstual dan komunikatif tanpa menyulitkan pembelajar umum.
+
+#### Stabilitas Data & Concurrency Guard
+- Mengimplementasikan inFlightLoads Map pada DataManager untuk mencegah race condition pemanggilan simultan dan cache poisoning berupa array kosong.
+- Halaman LessonStudyPage dilengkapi LessonNotFoundState ramah pengguna dengan tombol kembali jika rute/pelajaran tidak ditemukan.
+- Pemuatan otomatis spesialisasi SSW vokasional (Konstruksi, Makanan, Kaigo) saat pengguna mengakses unit track SSW.
+
+#### Pengayaan Korpus Vokasional SSW (Tokutei Ginou)
+- Penambahan 72 entitas kosakata otentik untuk sektor Kaigo (Keperawatan lansia), Konstruksi (K3 & Keselamatan kerja), dan Pengolahan Makanan (Standar HACCP).
+- Katalog kurikulum SSW diperbarui lengkap dengan target kalimat dan model dialog kerja nyata di Jepang.
+
+#### Pembersihan Taksonomi & Buku Pelajaran
+- Restorasi kategori partikel pada n5-particles.js dan n4-particles.js yang sebelumnya salah terlabel sebagai tense-aspect.
+- Deduplikasi 24 entitas pada materi referensi buku teks (Minna no Nihongo 1 & 2, Irodori A1 & A2).
+
+#### Keamanan Publik, Edge Workers & Otomasi Rilis
+- Pencegahan kebocoran kredensial dengan mengganti token anonim hardcoded menjadi placeholder aman unconfigured.
+- Rate limiting ketat pada endpoint /critique berbasis IP nyata (CF-Connecting-IP).
+- Sistem generator otomatis scripts/sync-changelog.js yang menyinkronkan patchNotes.ts ke CHANGELOG.md pada setiap proses build & rilis.
+
+---
+
+## v18.0.0 (10 Oktober 2026) — Studio Pembelajaran Berbasis Riset SLA & Latihan Tersemat Mandiri
+
+### Sorotan Pembaruan (Highlights)
+- Dedicated Full-Page Learning Studio (LessonStudyPage) Menggantikan Infinite Scroll Vertikal
+- Integrasi Kerangka Pedagogis 5W1H Berbasis Riset Akuisisi Bahasa Kedua (Processability Theory & Analisis Kontrasif L1)
+- 100% Latihan Tersemat di Tempat (Zero Menu-Jumping) Tanpa Memental Pembelajar ke Menu Arena Kuis
+- Umpan Balik Instan & Putaran Koreksi Otomatis (Retry Loop) untuk Setiap Soal yang Keliru
+- Handoff Memori Otomatis ke Algoritma FSRS Setelah Mencapai Skor Kelulusan ≥ 80%
+- Sintesis Suara Offline Bahasa Jepang (Web Speech API) dengan Pilihan Kecepatan 0.8x dan 1.0x
+- Tantangan Komunikasi Nyata Berstandar CEFR-J (Can-Do Real-World Challenge) & Kunci Jawaban Model Percakapan
+- Anti-Leakage Layout Terverifikasi: 0px Horizontal Overflow di Seluruh Perangkat (iPhone SE hingga Desktop)
+
+### Rincian Perubahan (Details)
+#### Dedicated Studio Belajar & Stepper 4-Tahap
+- Penggantian scrolling vertikal panjang dengan halaman studio mandiri yang fokus dan bebas distraksi.
+- Bilah Stepper 4-Tahap: 1. Dialog Otentik, 2. Bedah Pola & 5W1H, 3. Latihan di Tempat, 4. Verifikasi Can-Do.
+- Navigasi mulus antar pelajaran dalam satu unit atau unit berikutnya tanpa perlu bolak-balik ke menu katalog.
+
+#### Kerangka Pedagogis 5W1H Berbasis Riset SLA
+- WHAT: Rangkuman target kalimat, pola gramatikal, dan kosakata pokok.
+- WHY: Justifikasi kognitif ilmiah (Processability Theory Pienemann, Semantic Clustering Tinkham, Analisis Kontrasif Sutedi) dengan kartu akordeon progressive disclosure.
+- WHO & WHEN: Konteks sosiolinguistik, relasi hierarkis lawan bicara (Teineigo/Sonkeigo), dan aturan pantangan budaya.
+- SCENARIO: Studi kasus situasional nyata di Jepang (balai kota, rumah sakit, tempat kerja).
+- EDGE CASES: Analisis kontrasif mendalam (Contrastive Copula Trap, partikel WA vs GA, batasan penggunaan).
+
+#### Latihan Tersemat 100% In-Place (Zero Menu-Jumping)
+- Seluruh latihan interaktif (susun kata, cloze partikel, spot the edge case) dikerjakan langsung di dalam halaman materi.
+- Sistem koreksi cerdas: soal yang dijawab salah otomatis dimasukkan ke putaran koreksi (retry loop) hingga tuntas.
+- Pencapaian skor kelulusan (≥ 80%) secara otomatis menginjeksi kartu tata bahasa dan kosakata ke antrean FSRS Beranda.
+
+---
+
+## v17.1.0 (10 Oktober 2026) — Desain Seluler Adaptif & Optimasi Lintas Perangkat
+
+### Sorotan Pembaruan (Highlights)
+- Perombakan Total Antarmuka Seluler (Mobile UX Overhaul) di Seluruh Menu Utama
+- Eliminasi Tab Collisions & Stacked Navigation Chrome dengan Bounded Responsive Grid
+- Navigasi Kurikulum Cerdas dengan Bottom Sheet Picker & Target Sentuh Adaptif ≥ 44px
+- Bilah Metrik Ringkas 4-Kolom di Arena Kuis & Sinkronisasi 13 Mode Latihan Lengkap
+- Kebun Kata Format 2-Kolom Zen Garden yang Proporsional di Layar Sempit
+- Horizontal Chip Carousel pada Penjelajah Bab Buku Pegangan (Minna no Nihongo & Genki)
+- Zero Horizontal Overflow Guarantee (0px) Terverifikasi Otomatis Melalui Playwright Test Suite
+
+### Rincian Perubahan (Details)
+#### Restrukturisasi Tata Letak Seluler (Mobile UX)
+- Materi Hub: Tab switcher (Kurikulum, Buku, Kosakata, Tata Bahasa) direkayasa ulang menggunakan CSS Grid 4-kolom terkendali untuk mengeliminasi bug tab menumpuk.
+- Materi Hub Quick Tools: Tombol pintasan Kana, Konjugasi, dan Nuansa dipadatkan menjadi satu baris horizontal 36px yang elegan di mobile.
+- Penjelajah Kurikulum: 4 lapis selector bertingkat digantikan oleh kartu ringkas (~85px) yang memunculkan Bottom Sheet Picker saat disentuh, membawa materi pelajaran langsung di atas lipatan layar (above the fold).
+- Penjelajah Buku: Daftar bab vertikal 500px digantikan dengan horizontal carousel chip bab yang efisien.
+- Kebun Kata: Ditransformasikan dari kartu memanjang tunggal menjadi tata letak 2-kolom mobile yang seimbang.
+
+#### Arena Kuis & Interaktivitas
+- Kartu metrik kuis disederhanakan menjadi bilah status 4-kolom kompak (~48px) menampilkan Soal, Akurasi, FSRS, dan Air.
+- Seluruh 13 mode kuis (termasuk Panic Recall, Mora Pacing, dan Pitch Accent) dapat diakses dengan mudah tanpa perlu scrolling panjang.
+- Sinkronisasi badge Arena Kuis pada Mobile Drawer menjadi "13 Mode".
+
+#### Aksesibilitas & Pengujian Lintas Perangkat
+- Seluruh tombol dan kartu interaktif memenuhi standar tap target ≥ 44px dengan umpan balik sentuhan active:scale-95.
+- Pemberian padding cushion bawah dinamis (calc(5.5rem + env(safe-area-inset-bottom))) mencegah konten tertutup oleh BottomNav.
+- Verifikasi otomatis 62/62 skenario Playwright pada iPhone SE (375px), Mobile Standar (390px), Tablet (768px), dan Desktop (1440px) dengan zero overflow.
+
+---
+
+## v17.0.0 (10 Oktober 2026) — Kurikulum Orisinal, Diagnostik L1, & Vokasional SSW
+
+### Sorotan Pembaruan (Highlights)
+- Peluncuran 8 Jalur Kurikulum Orisinal Nugget Nihongo (JLPT N5–N1 & SSW Kaigo, Food Service, Konstruksi)
+- Pengorganisasian 74 Unit & 155 Pelajaran Mandiri Lengkap dengan Sasaran Can-Do Standar CEFR-J
+- Peta Tangga Kognitif Berbasis Processability Theory (Stages 1–6 Pienemann)
+- Mesin Diagnostik Empiris L1 Bahasa Indonesia: 300 Butir Uji (150 Morfosintaksis & 150 Nada Fonologis)
+- Personalisasi 4 Substratum Dialek Daerah (Umum, Jawa, Sunda, Batak/Timur) di Materi & Pengaturan
+- 21 Protokol Kedaruratan Gemba K3 & Kaigo SBAR Berstandar Kerja Nyata Jepang
+- Ekspansi Arena Kuis Menjadi 13 Mode: Panic Recall (5s Fading), Mora Pacing (240 bpm), Pitch Accent, dll.
+- Kalibrasi FSRS Fatigue-Aware Clamping & Penyesuaian Peluruhan Waktu Malam
+- Audit Responsif Multi-Device Headless Playwright: 64/64 Cek Lolos Melintasi iPhone SE hingga Desktop
+
+### Rincian Perubahan (Details)
+#### Kurikulum Orisinal & Vokasional
+- Jalur Akademik N5–N1 terstruktur dari Aisatsu dasar hingga dekonstruksi wacana editorial surat kabar tingkat mahir.
+- Jalur Vokasional SSW Kaigo (Keperawatan Lansia): SOP Koe-kake, komunikasi empatik, & format baku pelaporan darurat SBAR.
+- Jalur Vokasional SSW Food Service: Protokol sanitasi 5S, standar HACCP, penanganan alergen, & etika pelayanan Omotenashi.
+- Jalur Vokasional SSW Konstruksi: Pencegahan celaka K3 Gemba, komando akustik kansei KYT (Kiken Yochi Training), & aba-aba alat berat.
+- Setiap unit dilengkapi catatan fokus analisis kontrasif L1 untuk membongkar jebakan bahasa ibu.
+
+#### Diagnostik L1 & Substratum Daerah
+- Database 300 butir diagnostik empiris membedah interferensi transfer L1 Indonesia ↔ L2 Jepang.
+- Substratum Jawa: Latihan fonologis plosif b/d/g dan pemanjangan vokal chōon.
+- Substratum Sunda: Mitigasi netralisasi konsonan f/p/v dan artikulasi vokal sentral /ə/.
+- Substratum Batak & Indonesia Timur: Penyetaraan aksen nada Tokyo heiban (datar) dari irama silabel dinamis.
+
+#### Arena Kuis & Mode Latihan Baru
+- Panic Recall Drill: Latihan cover-recall-check dengan hitungan mundur 5 detik tanpa bantuan opsi ganda.
+- Mora Pacing Drill: Metronom visual 240 bpm untuk menjaga kestabilan isokroni tiap ketukan suku kata mora.
+- Pitch Accent Drill: Visualisasi kontur nada tinggi-rendah Tokyo (Heiban, Atamadaka, Nakadaka, Odaka).
+- Macro-Discourse Deconstruct: Bedah struktur argumen premis-antitesis-bukti-sintesis teks N2/N1.
+- Collocation Matrix: Analisis batas kompatibilitas pragmatis pasangan kata alami.
+
+#### Performa & Keandalan Offline
+- Precache Service Worker mencakup seluruh 8 berkas kurikulum mandiri dan basis data diagnostik.
+- Pencapaian 41.018 tes lolos 100% tanpa kegagalan pada rangkaian pengujian backend dan integrasi.
+- Audit otomatis Playwright mengonfirmasi 0px kebocoran horizontal melintasi seluruh resolusi layar.
+
+---
+
+## v16.0.0 (10 Oktober 2026) — Renaissance & Spaced Mastery
+
+### Sorotan Pembaruan (Highlights)
+- Migrasi Penuh ke Single Page Application (SPA) React 18, Vite, & Tailwind CSS
+- Penyatuan Kalkulasi Algoritma FSRS v4 di Seluruh 8 Mode Arena Kuis
+- Pembersihan Form Pengaturan & Penyederhanaan Masuk Murni dengan Google (Google Sign-In)
+- Widget Review Cerdas FSRS & Bilah Penguasaan Kurikulum JLPT N5–N1 di Beranda
+- Koleksi Peribahasa Harian Otentik (Kotowaza · ことわざ) dengan Audio Pelafalan
+- Penataan Ulang Materi Hub dengan Mode Daftar Ringkas (Compact List View) & Filter Jenis Kata
+- Penataan Ulang Arena Kuis dengan Klaster Fondasi vs Keterampilan Khusus
+- Mode Spoiler / Blur Interaktif untuk Mencegah Tebak Buta Arti Kalimat
+- Sistem Pelaporan Kesalahan Konten In-App (Report Issue 🚩) dengan Offline Queue
+- Optimalisasi Seluler Komprehensif: Pencegahan Bocor Layar (Anti-Horizontal Overflow)
+
+### Rincian Perubahan (Details)
+#### Arsitektur & Kinerja
+- Memigrasikan ribuan baris Vanilla JS lama menjadi komponen modular React dengan Zustand store.
+- Mengurangi waktu muat awal dengan pemisahan bundel Vite dan caching Service Worker offline.
+- Menghilangkan ketergantungan form input API key mentah bagi pengguna akhir di menu Pengaturan.
+- Pencegahan galat jaringan DNS NXDOMAIN dengan isolasi client Supabase yang aman offline.
+
+#### UI & UX Beranda & Materi
+- Menghadirkan kartu prioritas FSRS Due yang mendeteksi kartu memori kritis secara dinamis.
+- Menambahkan bilah progres visual kurikulum N5 hingga N1.
+- Mode Tampilan Ganda pada Materi Hub: Kartu Grid luas atau Daftar Ringkas untuk memindai cepat.
+- Pintasan langsung ke Bagan Kana, Matriks Konjugasi, dan Inspektor Nuansa dari Beranda.
+
+#### Arena Kuis & Spaced Repetition
+- Memperbarui 8 mode latihan: Flashcard FSRS, Pilihan Ganda, Isian Partikel, Susun Kata, Audio Mendengar, Konjugasi, Terjemahan, dan Deteksi Jebakan.
+- Setiap jawaban benar/salah kini otomatis memperbarui stabilitas memori FSRS dan menyemai bibit Kebun Kata.
+- Pemberian hadiah tetes air dinamis (+1 hingga +5 tetes) berdasarkan performa sesi latihan.
+
+#### Penyempurnaan Seluler
+- Mengunci viewport tanpa bocor horizontal (`overflow-x: hidden`, `viewport-fit=cover`).
+- Drawer navigasi seluler lengkap dan tab menu "Tentang" permanen pada Bottom Navigation.
+- Dukungan safe-area-inset-bottom pada ponsel modern (iPhone notch & gesture bar Android).
+
+---
+
+## v15.16.0 (17 April 2026) — AI Content Engine & Validator
+
+### Sorotan Pembaruan (Highlights)
+- Integrasi Pipeline Promosi Konten AI (Edge Router & Critic Engine)
+- Widget Umpan Balik Konten AI (Jempol Naik/Turun & Usulan Koreksi)
+- Pengujian Persona Sensei & Pencegahan Halusinasi Model Bahasa
+
+### Rincian Perubahan (Details)
+#### Kecerdasan Buatan
+- Sistem validasi silang antara model generator dan model kritikus untuk memastikan keaslian bahasa.
+- Tabel antrean promosi konten cerdas ke dalam bank soal resmi.
+
+---
+
+## v15.0.0 (8 April 2026) — Kurikulum Akbar & FSRS Engine
+
+### Sorotan Pembaruan (Highlights)
+- Database 4.800+ Kosakata & 850+ Tata Bahasa JLPT N5 sampai N1
+- Penerapan Rumus Matematika Retensi FSRS v4 (Stabilitas & Kesulitan)
+- Jalur Belajar Buku Teks: Minna no Nihongo & Modul Irodori
+- Jalur Freeway: 21 Pola Kalimat Paling Vital untuk Bertahan Hidup
+
+### Rincian Perubahan (Details)
+#### Kurikulum & Data
+- Penyusunan data kosa kata dengan kanji, kana, romaji, arti bahasa Indonesia, dan contoh kalimat berpasangan.
+- Pengelompokan tata bahasa berdasar partikel, bentuk verba, pengandaian, dan modalitas.
+
+---
+
+## v14.0.0 (25 Maret 2026) — Kebun Kata & Gamifikasi
+
+### Sorotan Pembaruan (Highlights)
+- Fitur Kebun Kata (Kanji Garden) dengan 5 Fase Pertumbuhan (Benih → Mekar)
+- Sistem Tetes Air Penyiram & Konversi Jawaban Kuis Menjadi Bunga
+- Heatmap Kalender Aktivitas Belajar 49 Hari
+- Sistem Lencana Prestasi (12 Badges Penghargaan)
+
+### Rincian Perubahan (Details)
+#### Gamifikasi & Motivasi
+- Merawat pohon kanji menciptakan keterikatan emosional belajar tanpa beban.
+- Pencatatan rekor streak beruntun dengan kompensasi pemulihan streak (Streak Saver).
+
+---
+
+## v12.0.0 (14 Februari 2026) — Arena Latihan Multi-Dimensi
+
+### Sorotan Pembaruan (Highlights)
+- Peluncuran Mode Flashcard Interaktif 3D
+- Mode Isian Rumpang Partikel Kalimat
+- Mode Builder Susun Kata Acak
+- Matriks Interaktif Perubahan Bentuk Kata Kerja (Konjugasi Te, Nai, Ta, Masu)
+
+### Rincian Perubahan (Details)
+#### Latihan Interaktif
+- Mendukung latihan berbagai gaya belajar: visual, motorik, dan analisis sintaksis.
+
+---
+
+## v10.0.0 (1 Januari 2026) — PWA Offline & Mesin Suara TTS
+
+### Sorotan Pembaruan (Highlights)
+- Dukungan Progressive Web App (PWA) — Dapat Diinstal di Home Screen HP/PC
+- 100% Berfungsi Tanpa Koneksi Internet (Offline-First Service Worker)
+- Integrasi Web Speech API untuk Pelafalan Suara Asli Bahasa Jepang
+
+### Rincian Perubahan (Details)
+#### Fondasi Teknis
+- Seluruh data kosa kata dan tata bahasa di-cache lokal sehingga aplikasi tetap responsif di area minim sinyal.
+
+---
+
+## v1.0.0 (10 Agustus 2025) — Lahirnya Nugget Nihongo
+
+### Sorotan Pembaruan (Highlights)
+- Inisiasi Proyek Pembelajaran Bahasa Jepang Khusus Penutur Bahasa Indonesia
+- Bagan Interaktif Huruf Hiragana & Katakana
+- Daftar Kosakata Dasar JLPT N5
+
+### Rincian Perubahan (Details)
+#### Awal Mula
+- Berangkat dari keresahan sulitnya menemukan aplikasi belajar bahasa Jepang gratis, tanpa iklan, dan terstruktur dalam bahasa Indonesia.
+
+---
+
+## Arsip Pembaruan Historis (v15.15.0 ke Bawah)
 
 ## v15.15.0 (30 September 2026) — 100% N5/N4 Vocab Examples & CSS Overhaul
 
