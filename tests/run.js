@@ -226,11 +226,17 @@ assert(vocabDB.length >= 2400, `vocabDB merged count: ${vocabDB.length} (expecte
 console.log('── Version sync ──');
 const vjs = fs.readFileSync(path.join(ROOT, 'public/js/core/version.js'), 'utf8');
 const sw  = fs.readFileSync(path.join(ROOT, 'public/sw.js'), 'utf8');
-const vMatch  = vjs.match(/APP_VERSION\s*=\s*'(v[\d.]+)'/);
-const swMatch = sw.match(/nihongo-(v[\d.]+)/);
-assert(vMatch && swMatch, 'Version strings parseable');
-if (vMatch && swMatch) {
+const cfg = fs.readFileSync(path.join(ROOT, 'src/config/version.ts'), 'utf8');
+const pkg = JSON.parse(fs.readFileSync(path.join(ROOT, 'package.json'), 'utf8'));
+const vMatch   = vjs.match(/APP_VERSION\s*=\s*'(v[\d.]+)'/);
+const swMatch  = sw.match(/nihongo-(v[\d.]+)/);
+const cfgMatch = cfg.match(/APP_VERSION\s*=\s*'(v[\d.]+)'/);
+const pkgVer   = 'v' + pkg.version;
+assert(vMatch && swMatch && cfgMatch, 'Version strings parseable');
+if (vMatch && swMatch && cfgMatch) {
   assert(vMatch[1] === swMatch[1], `Version sync: version.js=${vMatch[1]} sw.js=${swMatch[1]}`);
+  assert(vMatch[1] === cfgMatch[1], `Version sync: version.js=${vMatch[1]} config/version.ts=${cfgMatch[1]}`);
+  assert(vMatch[1] === pkgVer, `Version sync: version.js=${vMatch[1]} package.json=${pkgVer}`);
 }
 
 // ── Duplicate ID check ──
