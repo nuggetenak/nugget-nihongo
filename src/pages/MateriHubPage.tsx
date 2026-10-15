@@ -35,7 +35,8 @@ export const MateriHubPage: React.FC = () => {
     cards,
   } = useAppStore();
 
-  const [activeTrack, setActiveTrack] = useState<'kurikulum' | 'jlpt' | 'buku' | 'kanji' | 'freeway'>('kurikulum');
+  const [activeStudio, setActiveStudio] = useState<'kurikulum' | 'kanji' | 'buku'>('kurikulum');
+  const [kurikulumSub, setKurikulumSub] = useState<'spiral' | 'freeway' | 'jlpt'>('spiral');
   const [activeTab, setActiveTab] = useState<'all' | 'vocab' | 'grammar'>('vocab');
   const [viewMode, setViewMode] = useState<'grid' | 'compact'>('grid');
   const [selectedParticle, setSelectedParticle] = useState<string>('all');
@@ -216,86 +217,115 @@ export const MateriHubPage: React.FC = () => {
         </div>
       </div>
 
-      {/* Responsive Segmented Track Switcher: Clean touch targets >= 44px with zero overflow */}
-      <div className="flex items-center gap-1.5 p-1.5 bg-surface rounded-2xl border border-accent/20 shadow-sm w-full max-w-full overflow-x-auto scrollbar-none">
+      {/* 3 Dedicated Studios Navigation Bar */}
+      <div className="grid grid-cols-3 gap-1.5 sm:gap-2.5 p-1.5 bg-surface rounded-2xl border border-accent/20 shadow-sm w-full max-w-full">
         <button
-          onClick={() => setActiveTrack('kurikulum')}
-          className={`py-2 px-3 sm:px-3.5 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 min-h-[44px] shrink-0 active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
-            activeTrack === 'kurikulum'
-              ? 'bg-accent text-bg shadow-sm font-extrabold'
+          onClick={() => setActiveStudio('kanji')}
+          className={`py-2 sm:py-2.5 px-2 sm:px-3 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-1.5 sm:gap-2 min-h-[44px] active:scale-95 ${
+            activeStudio === 'kanji'
+              ? 'bg-accent text-bg shadow-sm font-black'
               : 'text-appText-muted hover:text-appText-bright hover:bg-surface-2'
           }`}
         >
-          <Sparkles className="w-3.5 h-3.5 shrink-0 text-accent-hot" />
-          <span className="whitespace-nowrap">
-            <span className="sm:hidden">Kurikulum</span>
-            <span className="hidden sm:inline">Kurikulum Belajar</span>
-          </span>
+          <span className="text-sm sm:text-base font-japanese font-black">漢</span>
+          <span className="truncate">Studio Kanji</span>
         </button>
 
         <button
-          onClick={() => setActiveTrack('jlpt')}
-          className={`py-2 px-3 sm:px-3.5 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 min-h-[44px] shrink-0 active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
-            activeTrack === 'jlpt'
-              ? 'bg-accent text-bg shadow-sm font-extrabold'
+          onClick={() => setActiveStudio('buku')}
+          className={`py-2 sm:py-2.5 px-2 sm:px-3 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-1.5 sm:gap-2 min-h-[44px] active:scale-95 ${
+            activeStudio === 'buku'
+              ? 'bg-accent text-bg shadow-sm font-black'
               : 'text-appText-muted hover:text-appText-bright hover:bg-surface-2'
           }`}
         >
-          <Award className="w-3.5 h-3.5 shrink-0" />
-          <span className="whitespace-nowrap">
-            <span className="sm:hidden">Kamus</span>
-            <span className="hidden sm:inline">Kamus & Indeks</span>
-          </span>
+          <BookMarked className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
+          <span className="truncate">9 Buku Teks</span>
         </button>
 
         <button
-          onClick={() => setActiveTrack('buku')}
-          className={`py-2 px-3 sm:px-3.5 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 min-h-[44px] shrink-0 active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
-            activeTrack === 'buku'
-              ? 'bg-accent text-bg shadow-sm font-extrabold'
+          onClick={() => setActiveStudio('kurikulum')}
+          className={`py-2 sm:py-2.5 px-2 sm:px-3 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-1.5 sm:gap-2 min-h-[44px] active:scale-95 ${
+            activeStudio === 'kurikulum'
+              ? 'bg-accent text-bg shadow-sm font-black'
               : 'text-appText-muted hover:text-appText-bright hover:bg-surface-2'
           }`}
         >
-          <BookMarked className="w-3.5 h-3.5 shrink-0" />
-          <span className="whitespace-nowrap">
-            <span className="sm:hidden">Buku Teks</span>
-            <span className="hidden sm:inline">9 Buku Teks</span>
-          </span>
-        </button>
-
-        <button
-          onClick={() => setActiveTrack('kanji')}
-          className={`py-2 px-3 sm:px-3.5 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 min-h-[44px] shrink-0 active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
-            activeTrack === 'kanji'
-              ? 'bg-accent text-bg shadow-sm font-extrabold'
-              : 'text-appText-muted hover:text-appText-bright hover:bg-surface-2'
-          }`}
-        >
-          <span className="shrink-0 text-xs font-black font-japanese">漢</span>
-          <span className="whitespace-nowrap">
-            <span className="sm:hidden">Kanji</span>
-            <span className="hidden sm:inline">Dojo Kanji</span>
-          </span>
-        </button>
-
-        <button
-          onClick={() => setActiveTrack('freeway')}
-          className={`py-2 px-3 sm:px-3.5 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 min-h-[44px] shrink-0 active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
-            activeTrack === 'freeway'
-              ? 'bg-accent text-bg shadow-sm font-extrabold'
-              : 'text-appText-muted hover:text-appText-bright hover:bg-surface-2'
-          }`}
-        >
-          <span className="shrink-0 text-xs">🛣️</span>
-          <span className="whitespace-nowrap">
-            <span className="sm:hidden">Jalur Nol</span>
-            <span className="hidden sm:inline">Jalur Nol (Freeway)</span>
-          </span>
+          <Sparkles className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0 text-accent-hot" />
+          <span className="truncate">Kurikulum & Kamus</span>
         </button>
       </div>
 
-      {/* Kurikulum Orisinal Track View */}
-      {activeTrack === 'kurikulum' && (
+      {/* Sub-Track Switcher for Kurikulum & Kamus Hub */}
+      {activeStudio === 'kurikulum' && (
+        <div className="flex items-center gap-2 overflow-x-auto scrollbar-none pb-1 max-w-full animate-in fade-in duration-200">
+          <button
+            onClick={() => setKurikulumSub('spiral')}
+            className={`px-3.5 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap shrink-0 transition-all active:scale-95 flex items-center gap-1.5 ${
+              kurikulumSub === 'spiral'
+                ? 'bg-surface-3 text-accent border border-accent/40 font-extrabold shadow-sm'
+                : 'bg-surface-2 border border-accent/15 text-appText-muted hover:text-appText-bright'
+            }`}
+          >
+            <span>🌀</span>
+            <span>Kurikulum Orisinal</span>
+          </button>
+
+          <button
+            onClick={() => setKurikulumSub('freeway')}
+            className={`px-3.5 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap shrink-0 transition-all active:scale-95 flex items-center gap-1.5 ${
+              kurikulumSub === 'freeway'
+                ? 'bg-surface-3 text-accent border border-accent/40 font-extrabold shadow-sm'
+                : 'bg-surface-2 border border-accent/15 text-appText-muted hover:text-appText-bright'
+            }`}
+          >
+            <span>🛣️</span>
+            <span>Jalur Nol (Freeway Survival)</span>
+          </button>
+
+          <button
+            onClick={() => setKurikulumSub('jlpt')}
+            className={`px-3.5 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap shrink-0 transition-all active:scale-95 flex items-center gap-1.5 ${
+              kurikulumSub === 'jlpt'
+                ? 'bg-surface-3 text-accent border border-accent/40 font-extrabold shadow-sm'
+                : 'bg-surface-2 border border-accent/15 text-appText-muted hover:text-appText-bright'
+            }`}
+          >
+            <Award className="w-3.5 h-3.5" />
+            <span>Kamus & Indeks JLPT N5–N1</span>
+          </button>
+        </div>
+      )}
+
+      {/* ── STUDIO 1: STUDIO DOJO KANJI ── */}
+      {activeStudio === 'kanji' && (
+        <KanjiDojoView
+          onAskSensei={(prompt) => {
+            if (typeof window !== 'undefined') {
+              window.dispatchEvent(
+                new CustomEvent('nn_open_sensei_sheet', {
+                  detail: { initialContext: prompt }
+                })
+              );
+            }
+          }}
+        />
+      )}
+
+      {/* ── STUDIO 2: PERPUSTAKAAN 9 BUKU TEKS ── */}
+      {activeStudio === 'buku' && (
+        <BookTrackBrowser
+          vocabList={vocabList}
+          grammarList={grammarList}
+          onSelectItem={(item, type) => {
+            setSelectedItem(item);
+            setItemType(type);
+          }}
+        />
+      )}
+
+      {/* ── STUDIO 3: KURIKULUM & KAMUS HUB ── */}
+      {activeStudio === 'kurikulum' && kurikulumSub === 'spiral' && (
         <CurriculumTrackBrowser
           vocabList={vocabList}
           grammarList={grammarList}
@@ -310,7 +340,7 @@ export const MateriHubPage: React.FC = () => {
       )}
 
       {/* JLPT Track Main View */}
-      {activeTrack === 'jlpt' && (
+      {activeStudio === 'kurikulum' && kurikulumSub === 'jlpt' && (
         <div className="space-y-4">
           {/* Level Selector Pills */}
           <div className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto pb-1 scrollbar-none">
@@ -756,35 +786,8 @@ export const MateriHubPage: React.FC = () => {
         </div>
       )}
 
-      {/* Jalur Buku Teks (Minna no Nihongo & Irodori) */}
-      {activeTrack === 'buku' && (
-        <BookTrackBrowser
-          vocabList={vocabList}
-          grammarList={grammarList}
-          onSelectItem={(item, type) => {
-            setSelectedItem(item);
-            setItemType(type);
-          }}
-        />
-      )}
-
-      {/* Dojo Kanji (2.383 Kanji N5–N1 & Stroke Order Animations) */}
-      {activeTrack === 'kanji' && (
-        <KanjiDojoView
-          onAskSensei={(prompt) => {
-            if (typeof window !== 'undefined') {
-              window.dispatchEvent(
-                new CustomEvent('nn_open_sensei_sheet', {
-                  detail: { initialContext: prompt }
-                })
-              );
-            }
-          }}
-        />
-      )}
-
       {/* Jalur Freeway (Survival Japanese for Beginners) */}
-      {activeTrack === 'freeway' && (
+      {activeStudio === 'kurikulum' && kurikulumSub === 'freeway' && (
         <div className="space-y-6 animate-in fade-in duration-300">
           <div className="bg-gradient-to-r from-amber-950/40 via-surface-2 to-surface-2 border border-accent/25 rounded-3xl p-6 sm:p-8 space-y-2">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/15 border border-amber-500/30 text-accent-hot text-xs font-bold">

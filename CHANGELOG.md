@@ -3,6 +3,42 @@
 > Catatan pembaruan ini disinkronkan secara otomatis dari `src/lib/data/patchNotes.ts`
 > Single Source of Truth: Jalankan `npm run changelog` atau `npm run build` untuk memutakhirkan.
 
+## v19.3.0 (16 Oktober 2026) — Warm Sumi & Golden Lacquerware Theme, Kanji Studio Surgery, 3 Dedicated Studios & Arena Kuis Overhaul
+
+### Sorotan Pembaruan (Highlights)
+- Harmonisasi Tema Gelap Warm Sumi & Golden Lacquerware (Makie 蒔絵): Mengeliminasi benturan temperatur warna biru/slate dingin dengan palet hangat pernis emas Jepang (#121110, #1A1816, #24211E, #F5EFE6, #F59E0B) yang serasi dengan tema terang.
+- Bedah Total Animasi Urutan Goresan Kanji (Progressive Stroke Animator): Menggantikan kemunculan garis instan dengan animasi aliran tinta kaligrafi progresif (stroke-dasharray/offset + pathLength=1000) lengkap dengan nomor awal goresan dan sapuan kuas otentik.
+- Mesin Validasi Sentuhan Presisi (Intelligent Touch Drift Engine): Menghapus kanvas bebas tanpa aturan dan menggantikannya dengan deteksi koridor sentuh cerdas (toleransi start <= 36px, koridor <= 42px), getaran & goyangan halus (soft wobble) saat melenceng, serta snap otomatis ke vektor emas saat tuntas.
+- Transformasi Materi Hub ke 3 Studio Terdedikasi: Menata ulang Materi Hub menjadi 3 studio terfokus: (1) Studio Dojo Kanji, (2) Perpustakaan 9 Buku Teks dengan 4 Jalur Pedagogis & Metodologi 5W+1H, dan (3) Kurikulum & Kamus Hub.
+- Bedah Total Arena Kuis (Zen Focus & Two-Phase Floating Action Sheet): Bilah kontrol Zen Focus dengan shimmer progress, lembar aksi mengambang bebas pergeseran tata letak (zero CLS), tombol taktil 3D (.btn-tactile), dan Putaran Pemulihan (Remediation Loop).
+- Integrasi Fleksibel OpenRouter & Dual-Engine AI: Mendukung API key OpenRouter (Qwen 2.5 72B / Llama 3.3) dengan deteksi otomatis dan fallback cerdas ke Gemini API.
+- Pembersihan Typo & Humanisasi Bahasa: Perbaikan istilah "Catatan Kilaf" -> "Catatan Evaluasi", eliminasi 500x [TBD] pada contoh terjemahan, dan harmonisasi gaya sapaan hangat.
+
+### Rincian Perubahan (Details)
+#### Desain & Palet Warna Makie
+- Penggantian latar belakang dingin slate ke warna arang hangat (Warm Sumi #121110, #1A1816, #24211E).
+- Penambahan utility animasi taktil .btn-tactile, @keyframes softShake, @keyframes drawStroke, dan @keyframes guideRingPulse.
+- Tipografi cerdas yang otomatis menerapkan font-japanese hanya pada karakter kanji/kana, menjaga teks Indonesia tetap jernih dan proporsional.
+
+#### Kanji Master Studio & Animasi Goresan
+- Animasi goresan KanjiVG berkecepatan dinamis (0.75x, 1x, 1.5x) dengan aliran tinta progresif beraturan.
+- Lingkaran pemandu titik awal berdenyut lembut (pulsing guide ring) untuk memandu jari pembelajar.
+- Deteksi penyimpangan goresan (touch corridor drift engine) dengan audio thud dan animasi getar lembut sebelum mengulang.
+- Efek suara sapuan kuas kaligrafi otentik (playBrushSfx) yang disintesis 100% offline via Web Audio API.
+
+#### Perpustakaan 9 Buku Teks & Metodologi 5W+1H
+- Pengelompokan 9 buku kanonikal ke dalam 4 jalur: Akademik, Komunikatif & SSW, Ujian JLPT, dan Budaya.
+- Kartu bedah pedagogis 5W+1H (Who, What, When, Where, Why, How) yang mengungkap alasan di balik urutan bab tiap buku.
+- Komparasi langsung antar-buku teks populer (Minna vs Genki vs Irodori vs Soumatome).
+
+#### Arena Kuis & Pengalaman Ujian
+- Bilah Zen Focus di bagian atas arena kuis untuk fokus maksimal tanpa elemen yang mengganggu.
+- Floating Bottom Action Sheet untuk feedback jawaban instan tanpa lonjakan tinggi layar (zero CLS).
+- Putaran Pemulihan (Remediation Loop) untuk mengulas kembali soal-soal evaluasi hingga tuntas 100%.
+- Hujan konfeti kanvas (lightweight zero-dependency confetti) saat mencapai akurasi tinggi.
+
+---
+
 ## v19.2.0 (15 Oktober 2026) — Charcoal Obsidian Theme, Humanized Copywriting & UI/UX Hardening
 
 ### Sorotan Pembaruan (Highlights)

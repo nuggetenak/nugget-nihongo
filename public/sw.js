@@ -6,7 +6,7 @@
 //  - Network-first for dynamic API endpoints (Supabase / Cloudflare Workers)
 // ══════════════════════════════════════
 
-const CACHE = 'nihongo-v19.2.0';
+const CACHE = 'nihongo-v19.3.0';
 
 const CORE_ASSETS = [
   '/',

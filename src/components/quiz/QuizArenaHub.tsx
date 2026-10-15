@@ -380,7 +380,7 @@ export const QuizArenaHub: React.FC<QuizArenaHubProps> = ({
             </div>
             <div>
               <div className="text-xs sm:text-sm font-bold text-red-300">
-                Catatan Kilaf: Ada {mistakesCount} soal yang pernah salah dijawab
+                Catatan Evaluasi: Ada {mistakesCount} soal yang pernah salah dijawab
               </div>
               <div className="text-[11px] text-appText-muted">
                 Latih ulang sekarang sebelum pola yang keliru terpatri di ingatan.

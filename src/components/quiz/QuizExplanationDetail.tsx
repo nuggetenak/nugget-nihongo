@@ -119,7 +119,7 @@ export const QuizExplanationDetail: React.FC<QuizExplanationDetailProps> = ({
           )}
 
           {/* Indonesian Translation */}
-          {translation && (
+          {translation && !translation.includes('[TBD]') && (
             <div className="mt-2 pt-2 border-t border-accent/10 flex items-start gap-1.5 text-xs text-appText-bright font-medium">
               <span className="text-accent font-bold shrink-0">Arti:</span>
               <span className="italic leading-relaxed">{translation}</span>

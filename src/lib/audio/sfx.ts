@@ -169,3 +169,29 @@ export function playFanfareSfx() {
     osc.stop(noteTime + 0.3);
   });
 }
+
+/**
+ * Play soft calligraphy brush stroke sound
+ */
+export function playBrushSfx() {
+  if (!isSfxEnabled()) return;
+  const ctx = getAudioContext();
+  if (!ctx) return;
+
+  const now = ctx.currentTime;
+  const osc = ctx.createOscillator();
+  const gain = ctx.createGain();
+
+  osc.type = 'sine';
+  osc.frequency.setValueAtTime(320, now);
+  osc.frequency.exponentialRampToValueAtTime(540, now + 0.12);
+
+  gain.gain.setValueAtTime(0.08, now);
+  gain.gain.exponentialRampToValueAtTime(0.001, now + 0.15);
+
+  osc.connect(gain);
+  gain.connect(ctx.destination);
+
+  osc.start(now);
+  osc.stop(now + 0.16);
+}

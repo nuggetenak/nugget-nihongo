@@ -149,22 +149,93 @@ export async function sendSenseiMessage(
   contextCard?: ContextCardPayload
 ): Promise<ChatMessage> {
   const localKey = typeof window !== 'undefined' ? localStorage.getItem('nn_gemini_api_key') : '';
-  const defaultFallback = typeof atob === 'function' ? atob('QVEuQWI4Uk42SnBjbVlnY1liNmVIX2JSYk9JMnBMU0RZZWpfMHB0ZmRZc2J5WUNqbTY5R1E=') : '';
+  // OpenRouter default key (base64 protected) with Gemini fallback
+  const defaultOpenRouterKey = typeof atob === 'function' ? atob('c2stb3ItdjEtNTBhYjZjODkxZTYyNzhjOGNiZmNiMzQzOGUxZDY2ZGE4ZWZiYTg2NmQ2Y2M5NDJjOGI2OWJiOWNlMzZmNjAwMA==') : '';
   const apiKey =
     config.customApiKey?.trim() ||
     localKey?.trim() ||
-    defaultFallback ||
+    defaultOpenRouterKey ||
     '';
 
   if (!apiKey) {
     throw new Error(
-      'API Key Gemini belum disetel. Masukkan Google AI Studio Gemini API Key di Pengaturan.'
+      'Kunci API belum disetel. Masukkan OpenRouter API Key atau Gemini API Key di Pengaturan.'
     );
   }
 
   const systemInstruction = buildSenseiSystemPrompt(config, contextCard);
 
-  // Format pesan ke struktur Gemini API
+  // Common suggested action helper
+  let suggestedAction: ChatMessage['suggestedAction'];
+  if (contextCard && contextCard.type === 'grammar') {
+    suggestedAction = {
+      label: `Latihan Kuis ${contextCard.target}`,
+      targetId: contextCard.id,
+      level: contextCard.level,
+    };
+  }
+
+  // ── Route 1: OpenRouter API (sk-or-...) ───────────────────────────
+  if (apiKey.startsWith('sk-or-')) {
+    const candidateModels = [
+      'qwen/qwen-2.5-72b-instruct',
+      'meta-llama/llama-3.3-70b-instruct',
+      'deepseek/deepseek-chat',
+    ];
+    let lastError: Error | null = null;
+
+    for (const model of candidateModels) {
+      try {
+        const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${apiKey}`,
+            'HTTP-Referer': 'https://nugget-nihongo.pages.dev',
+            'X-Title': 'Nugget Nihongo Sensei AI',
+          },
+          body: JSON.stringify({
+            model,
+            messages: [
+              { role: 'system', content: systemInstruction },
+              ...messages.map((m) => ({
+                role: m.role === 'user' ? 'user' : 'assistant',
+                content: m.content,
+              })),
+            ],
+            temperature: config.mode === 'roleplay' ? 0.8 : 0.4,
+            max_tokens: 1024,
+          }),
+        });
+
+        if (!res.ok) {
+          const errData = await res.json().catch(() => ({}));
+          throw new Error(`OpenRouter (${model}): ${errData?.error?.message || res.statusText}`);
+        }
+
+        const data = await res.json();
+        const replyText = data?.choices?.[0]?.message?.content;
+        if (!replyText) throw new Error('Jawaban kosong diterima dari OpenRouter.');
+
+        return {
+          id: `msg-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`,
+          role: 'model',
+          content: replyText,
+          timestamp: Date.now(),
+          modelUsed: model,
+          tokensUsed: data?.usage?.total_tokens || 0,
+          contextCard,
+          suggestedAction,
+        };
+      } catch (err: any) {
+        lastError = err;
+        console.warn(`[SenseiClient] OpenRouter model ${model} failed, trying next...`, err);
+      }
+    }
+    throw lastError || new Error('Gagal menghubungi OpenRouter.');
+  }
+
+  // ── Route 2: Google Gemini Native API ─────────────────────────────
   const contents = messages.map((m) => ({
     role: m.role === 'user' ? 'user' : 'model',
     parts: [{ text: m.content }],

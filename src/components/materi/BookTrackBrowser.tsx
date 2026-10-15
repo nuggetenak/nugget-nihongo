@@ -48,6 +48,7 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
   const [selectedBookId, setSelectedBookId] = useState<string>('minna');
   const [selectedVolumeIndex, setSelectedVolumeIndex] = useState<number>(0);
   const [selectedChapter, setSelectedChapter] = useState<number>(1);
+  const [selectedTrackFilter, setSelectedTrackFilter] = useState<'all' | 'academic' | 'communicative' | 'exam' | 'culture'>('all');
   const [drillsByChapter, setDrillsByChapter] = useState<
     Record<string, { chapter: number | string; topic?: string; drills: AuthenticDrillItem[] }>
   >({});
@@ -151,24 +152,76 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
 
   const currentDrills = currentChapterDrillData.drills || [];
 
+  const BOOK_TRACK_MAPPING: Record<string, 'academic' | 'communicative' | 'exam' | 'culture'> = {
+    minna: 'academic',
+    genki: 'academic',
+    quartet: 'academic',
+    irodori: 'communicative',
+    marugoto: 'communicative',
+    soumatome: 'exam',
+    shin_kanzen_master: 'exam',
+    try: 'exam',
+    tobira: 'culture',
+  };
+
+  const filteredBooks = useMemo(() => {
+    if (selectedTrackFilter === 'all') return booksCatalog;
+    return booksCatalog.filter((b) => BOOK_TRACK_MAPPING[b.id] === selectedTrackFilter);
+  }, [booksCatalog, selectedTrackFilter]);
+
   return (
     <div className="space-y-6 animate-in fade-in duration-300">
-      {/* 9-Book Series Switcher Carousel */}
-      <div className="space-y-2">
+      {/* 4 Categorized Learning Paths Filter */}
+      <div className="space-y-2.5">
         <div className="flex items-center justify-between px-1">
           <div className="flex items-center gap-2">
             <BookOpen className="w-4 h-4 text-accent" />
             <span className="text-xs font-bold uppercase tracking-wider text-appText-bright">
-              Katalog 9 Buku Teks Jepang Resmi
+              Perpustakaan 9 Buku Teks Jepang Resmi
             </span>
           </div>
           <span className="text-[11px] text-accent font-semibold">
-            {booksCatalog.length} Seri Kanonikal
+            {filteredBooks.length} dari {booksCatalog.length} Seri
           </span>
         </div>
 
+        {/* Path Selector Pills */}
+        <div className="flex items-center gap-2 overflow-x-auto scrollbar-none pb-1 max-w-full">
+          {[
+            { id: 'all', label: 'Semua (9 Buku)', icon: '📚' },
+            { id: 'academic', label: 'Jalur Akademik (Minna, Genki, Quartet)', icon: '🏛️' },
+            { id: 'communicative', label: 'Jalur Komunikatif & SSW (Irodori, Marugoto)', icon: '🗣️' },
+            { id: 'exam', label: 'Jalur Ujian JLPT (Soumatome, SKM, TRY!)', icon: '🎯' },
+            { id: 'culture', label: 'Jalur Budaya & Menengah (Tobira)', icon: '⛩️' },
+          ].map((track) => (
+            <button
+              key={track.id}
+              onClick={() => {
+                setSelectedTrackFilter(track.id as any);
+                // If current selectedBookId not in new filtered list, auto-select first of that track
+                if (track.id !== 'all') {
+                  const firstOfTrack = booksCatalog.find((b) => BOOK_TRACK_MAPPING[b.id] === track.id);
+                  if (firstOfTrack) {
+                    setSelectedBookId(firstOfTrack.id);
+                    setSelectedVolumeIndex(0);
+                  }
+                }
+              }}
+              className={`px-3 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap shrink-0 transition-all active:scale-95 flex items-center gap-1.5 ${
+                selectedTrackFilter === track.id
+                  ? 'bg-accent text-bg shadow-sm font-extrabold'
+                  : 'bg-surface-2 border border-accent/20 text-appText-muted hover:text-appText-bright'
+              }`}
+            >
+              <span>{track.icon}</span>
+              <span>{track.label}</span>
+            </button>
+          ))}
+        </div>
+
+        {/* Books Cards Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2.5">
-          {booksCatalog.map((b) => {
+          {filteredBooks.map((b) => {
             const isSelected = selectedBookId === b.id;
             return (
               <button

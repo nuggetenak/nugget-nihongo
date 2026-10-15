@@ -10,13 +10,13 @@ module.exports = {
       colors: {
         bg: {
           DEFAULT: 'var(--bg)',
-          deep: 'var(--bg-deep, #070A0F)',
+          deep: 'var(--bg-deep, #0C0B0A)',
         },
         surface: {
           DEFAULT: 'var(--surface)',
           2: 'var(--surface-2)',
-          3: 'var(--surface-3, #2A344C)',
-          4: 'var(--surface-4, #384564)',
+          3: 'var(--surface-3, #322D28)',
+          4: 'var(--surface-4, #423B34)',
         },
         accent: {
           DEFAULT: 'var(--accent)',
@@ -26,8 +26,8 @@ module.exports = {
         appText: {
           DEFAULT: 'var(--text)',
           bright: 'var(--text-bright)',
-          muted: 'var(--text-muted, rgba(226, 232, 240, 0.65))',
-          dim: 'var(--text-dim, rgba(226, 232, 240, 0.38))',
+          muted: 'var(--text-muted, rgba(245, 239, 230, 0.68))',
+          dim: 'var(--text-dim, rgba(245, 239, 230, 0.40))',
         },
         jlpt: {
           n5: '#C084FC',

@@ -88,7 +88,7 @@ export const QuizResultView: React.FC<QuizResultViewProps> = ({
               className="w-full py-3 rounded-2xl bg-red-950/50 hover:bg-red-900/60 border border-red-500/50 text-red-200 font-bold text-xs flex items-center justify-center gap-2 transition-all shadow-sm active:scale-95"
             >
               <RotateCcw className="w-4 h-4" />
-              <span>Latih Ulang {answers.filter(a => !a.isCorrect).length} Soal yang Salah 🔁</span>
+              <span>Putaran Pemulihan (Kuasai {answers.filter(a => !a.isCorrect).length} Soal Evaluasi) 🔁</span>
             </button>
           </div>
         )}

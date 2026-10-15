@@ -4,7 +4,7 @@
 // ══════════════════════════════════════════════════════════════════
 
 import React, { useState, useEffect } from 'react';
-import { Layers, RotateCcw, Volume2, Sparkles, Check, ArrowRight, CornerDownLeft, ChevronLeft, Flag } from 'lucide-react';
+import { Layers, RotateCcw, Volume2, Sparkles, Check, ArrowRight, CornerDownLeft, ChevronLeft, Flag, CheckCircle2, XCircle, Flame, HelpCircle } from 'lucide-react';
 import { useAppStore } from '../store/useAppStore';
 import { QuizMode } from '../types/quiz';
 import { JLPTLevel } from '../types/vocab';
@@ -20,6 +20,7 @@ import {
 } from '../lib/quiz/quizEngine';
 import { speakJapanese } from '../lib/audio/tts';
 import { playFlipSfx, playSuccessSfx, playErrorSfx, playFanfareSfx } from '../lib/audio/sfx';
+import { fireConfetti } from '../lib/ui/confetti';
 import { QuizArenaHub } from '../components/quiz/QuizArenaHub';
 import { QuizAudioListeningCard } from '../components/quiz/QuizAudioListeningCard';
 import { QuizExplanationDetail } from '../components/quiz/QuizExplanationDetail';
@@ -55,6 +56,7 @@ export const QuizPage: React.FC = () => {
   const [isFlipped, setIsFlipped] = useState(false); // for flashcards
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [feedback, setFeedback] = useState<{ isCorrect: boolean; text: string } | null>(null);
+  const [isDetailDrawerOpen, setIsDetailDrawerOpen] = useState(false);
 
   // Rearrange mode tokens state
   const [assembledTokens, setAssembledTokens] = useState<string[]>([]);
@@ -482,6 +484,13 @@ export const QuizPage: React.FC = () => {
   const finishSession = () => {
     setIsFinished(true);
     playFanfareSfx();
+
+    if (sessionScore === questions.length && questions.length > 0) {
+      fireConfetti({ count: 75 });
+    } else if (sessionScore / Math.max(1, questions.length) >= 0.8) {
+      fireConfetti({ count: 40 });
+    }
+
     const appStore = useAppStore.getState();
     appStore.recordStudyActivity();
     useGamificationStore.getState().recordActivity(questions.length, sessionXp);
@@ -516,6 +525,7 @@ export const QuizPage: React.FC = () => {
     setSelectedOption(null);
     setFeedback(null);
     setIsFlipped(false);
+    setIsDetailDrawerOpen(false);
 
     if (currentIndex + 1 < questions.length) {
       setCurrentIndex((prev) => prev + 1);
@@ -543,33 +553,38 @@ export const QuizPage: React.FC = () => {
       ) : (
         /* State 2: Active Focused Quiz Arena */
         <div className="space-y-5 animate-in fade-in duration-200">
-          {/* Top In-Quiz Control Bar */}
-          <div className="flex items-center justify-between gap-3 border-b border-accent/15 pb-3">
+          {/* Zen Focus Top Control Bar */}
+          <div className="flex items-center justify-between gap-3 border-b border-theme pb-3.5">
             <button
               onClick={handleRequestExitToHub}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/20 text-appText-muted hover:text-appText-bright text-xs font-bold transition-all shrink-0 active:scale-95"
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-2 hover:bg-surface-3 border border-theme text-muted hover:text-text text-xs font-bold transition-all shrink-0 active:scale-95"
             >
               <ChevronLeft className="w-4 h-4" />
-              <span>Dasbor Kuis</span>
+              <span>Keluar</span>
             </button>
 
             {!isFinished && questions.length > 0 && (
               <div className="flex items-center gap-3 flex-1 max-w-xs sm:max-w-md mx-2">
-                <div className="w-full bg-surface-2 rounded-full h-2 overflow-hidden border border-accent/10">
+                <div className="w-full bg-surface-2 rounded-full h-2.5 overflow-hidden border border-theme">
                   <div
-                    className="bg-accent h-full transition-all duration-300 rounded-full"
+                    className="bg-theme-primary h-full transition-all duration-300 rounded-full animate-shimmer-flow"
                     style={{ width: `${((currentIndex + 1) / questions.length) * 100}%` }}
                   />
                 </div>
-                <span className="text-[11px] font-mono font-bold text-accent shrink-0">
+                <span className="text-[11px] font-mono font-black text-theme-primary shrink-0">
                   {currentIndex + 1}/{questions.length}
                 </span>
               </div>
             )}
 
             <div className="flex items-center gap-2 shrink-0">
-              <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-amber-500/15 border border-amber-500/30 text-accent font-mono">
-                {currentQ?.level || selectedLevel}
+              <div className="hidden sm:flex items-center gap-1 px-2.5 py-1 rounded-full bg-amber-500/10 border border-amber-500/25 text-amber-500 text-xs font-bold">
+                <Flame className="w-3.5 h-3.5 animate-flame-pulse" />
+                <span>{useAppStore.getState().streak} Hari</span>
+              </div>
+
+              <span className="text-[10px] font-black uppercase px-2.5 py-1 rounded-full bg-theme-primary/10 border border-theme-primary/25 text-theme-primary font-mono">
+                {(currentQ?.level || selectedLevel).toUpperCase()}
               </span>
             </div>
           </div>
@@ -607,7 +622,7 @@ export const QuizPage: React.FC = () => {
               </button>
             </div>
           ) : (
-            <div className="max-w-xl mx-auto space-y-5">
+            <div className="max-w-xl mx-auto space-y-5 pb-32">
               {/* Mode: Listening Drill */}
               {activeMode === 'listening' && (
                 <QuizAudioListeningCard
@@ -823,19 +838,20 @@ export const QuizPage: React.FC = () => {
                   </div>
 
                   {/* Options Grid */}
-                  <div className="grid grid-cols-1 gap-2.5">
+                  <div className="grid grid-cols-1 gap-3">
                     {currentQ.options?.map((opt, idx) => {
                       const isSelected = selectedOption === opt;
                       const isCorrect = opt.trim().toLowerCase() === currentQ.correctAnswer.trim().toLowerCase();
+                      const isJp = /[\u3000-\u303f\u3040-\u309f\u30a0-\u30ff\uff00-\uff9f\u4e00-\u9faf]/.test(opt);
 
-                      let btnStyle = 'bg-surface-2 border-accent/20 text-appText-bright hover:border-accent/40';
+                      let btnStyle = 'bg-surface-2 border-theme text-appText-bright hover:border-theme-primary/50';
                       if (feedback) {
                         if (isCorrect) {
-                          btnStyle = 'bg-emerald-500/15 dark:bg-emerald-950/50 border-emerald-500 text-emerald-800 dark:text-emerald-300 font-bold';
+                          btnStyle = 'bg-emerald-500/15 dark:bg-emerald-950/60 border-emerald-500 text-emerald-700 dark:text-emerald-300 font-bold';
                         } else if (isSelected && !isCorrect) {
-                          btnStyle = 'bg-red-500/15 dark:bg-red-950/50 border-red-500 text-red-800 dark:text-red-300 font-bold';
+                          btnStyle = 'bg-red-500/15 dark:bg-red-950/60 border-red-500 text-red-700 dark:text-red-300 font-bold';
                         } else {
-                          btnStyle = 'bg-surface-2/40 border-transparent text-appText-muted opacity-50';
+                          btnStyle = 'bg-surface-2/30 border-transparent text-appText-muted opacity-40';
                         }
                       }
 
@@ -844,15 +860,17 @@ export const QuizPage: React.FC = () => {
                           key={idx}
                           onClick={() => handleSelectOption(opt)}
                           disabled={!!feedback}
-                          className={`w-full p-3.5 sm:p-4 rounded-xl sm:rounded-2xl border text-xs sm:text-sm font-semibold text-left transition-all flex items-center justify-between ${btnStyle} active:scale-[0.99]`}
+                          className={`btn-tactile w-full p-3.5 sm:p-4 rounded-xl sm:rounded-2xl border text-left transition-all flex items-center justify-between ${btnStyle} active:scale-[0.99]`}
                         >
-                          <div className="flex items-center gap-3">
-                            <span className="w-7 h-7 rounded-xl bg-surface border border-accent/15 flex items-center justify-center text-xs font-mono text-appText-muted shrink-0">
+                          <div className="flex items-center gap-3 min-w-0">
+                            <span className="w-7 h-7 rounded-xl bg-surface border border-theme flex items-center justify-center text-xs font-mono font-bold text-appText-muted shrink-0">
                               {idx + 1}
                             </span>
-                            <span className="font-jp">{opt}</span>
+                            <span className={`truncate ${isJp ? 'font-japanese text-sm sm:text-base font-bold' : 'font-sans text-xs sm:text-sm font-semibold text-text'}`}>
+                              {opt}
+                            </span>
                           </div>
-                          {feedback && isCorrect && <Check className="w-4 h-4 text-emerald-400" />}
+                          {feedback && isCorrect && <Check className="w-4 h-4 text-emerald-400 shrink-0" />}
                         </button>
                       );
                     })}
@@ -939,62 +957,109 @@ export const QuizPage: React.FC = () => {
                 </div>
               )}
 
-              {/* Rich Feedback Breakdown & Next Action Button */}
+              {/* Floating Two-Phase Bottom Action Sheet */}
               {feedback && (
-                <div className="space-y-3">
-                  <div
-                    className={`p-4 rounded-2xl border flex items-center justify-between gap-3 animate-in fade-in duration-200 ${
-                      feedback.isCorrect
-                        ? 'bg-emerald-500/15 dark:bg-emerald-950/40 border-emerald-500/40 text-emerald-800 dark:text-emerald-300'
-                        : 'bg-red-500/15 dark:bg-red-950/40 border-red-500/40 text-red-800 dark:text-red-300'
-                    }`}
-                  >
-                    <div className="text-xs sm:text-sm font-semibold leading-relaxed">
-                      {feedback.text}
+                <div className="fixed bottom-0 inset-x-0 z-40 bg-surface/95 backdrop-blur-md border-t-2 border-theme-primary/30 p-3.5 sm:p-5 shadow-2xl animate-slide-up">
+                  <div className="max-w-2xl mx-auto flex flex-col sm:flex-row sm:items-center justify-between gap-3.5">
+                    <div className="space-y-1 min-w-0 flex-1">
+                      <div className="flex items-center gap-2">
+                        {feedback.isCorrect ? (
+                          <div className="flex items-center gap-1.5 text-emerald-600 dark:text-emerald-400 font-black text-sm sm:text-base">
+                            <CheckCircle2 className="w-5 h-5 shrink-0 text-emerald-500" />
+                            <span>Tepat Sekali! 🎉</span>
+                          </div>
+                        ) : (
+                          <div className="flex items-center gap-1.5 text-red-600 dark:text-red-400 font-black text-sm sm:text-base">
+                            <XCircle className="w-5 h-5 shrink-0 text-red-500" />
+                            <span>Belum Tepat</span>
+                          </div>
+                        )}
+                        <span className="text-[10px] text-muted font-mono hidden sm:inline">[Tekan Enter atau Spasi]</span>
+                      </div>
+                      <p className="text-xs text-text/80 line-clamp-2 leading-relaxed">
+                        {feedback.text}
+                      </p>
                     </div>
-                    <button
-                      onClick={handleNextQuestion}
-                      className="px-5 py-2.5 rounded-xl bg-accent text-bg font-extrabold text-xs flex items-center gap-1.5 shrink-0 hover:bg-accent-hot transition-all shadow-glow active:scale-95"
-                    >
-                      <span>Lanjut</span>
-                      <ArrowRight className="w-3.5 h-3.5" />
-                    </button>
-                  </div>
 
-                  {/* Pedagogical Particle & Sentence Structure Detail */}
-                  <QuizExplanationDetail
-                    rawExplanation={currentQ.explanation}
-                    jpSentence={
-                      activeMode === 'rearrange'
-                        ? currentQ.correctAnswer
-                        : activeMode === 'translation'
-                        ? currentQ.questionText
-                        : currentQ.targetItem?.examples?.[0]?.jp ||
-                          (activeMode !== 'flashcard' && !currentQ.questionText.startsWith('Bentuk')
-                            ? currentQ.questionText
-                            : (currentQ.targetItem && 'word' in currentQ.targetItem ? (currentQ.targetItem as any).word : currentQ.questionText))
-                    }
-                    reading={
-                      (currentQ.targetItem && 'reading' in currentQ.targetItem ? currentQ.targetItem.reading : undefined) ||
-                      (currentQ.subText?.startsWith('【') ? currentQ.subText.replace(/[【】]/g, '') : undefined) ||
-                      (currentQ.targetItem && 'word' in currentQ.targetItem ? (currentQ.targetItem as any).reading : undefined)
-                    }
-                    romaji={
-                      currentQ.targetItem && 'romaji' in currentQ.targetItem
-                        ? (currentQ.targetItem as any).romaji
-                        : undefined
-                    }
-                    translation={
-                      activeMode === 'rearrange'
-                        ? currentQ.questionText
-                        : activeMode === 'translation'
-                        ? currentQ.correctAnswer
-                        : currentQ.targetItem?.examples?.[0]?.id ||
-                          (currentQ.subText && !currentQ.subText.startsWith('【')
-                            ? currentQ.subText.replace(/^Arti:\s*"?/, '').replace(/"?$/, '')
-                            : currentQ.targetItem?.meaning)
-                    }
-                  />
+                    <div className="flex items-center gap-2 shrink-0">
+                      <button
+                        onClick={() => setIsDetailDrawerOpen(true)}
+                        className="px-3.5 py-3 rounded-xl bg-surface-2 hover:bg-surface-3 border border-theme text-text text-xs font-bold transition-all active:scale-95 flex items-center gap-1.5"
+                        title="Lihat Bedah Tata Bahasa & Partikel"
+                      >
+                        <HelpCircle className="w-4 h-4 text-theme-primary shrink-0" />
+                        <span className="hidden sm:inline">Bedah Tata Bahasa</span>
+                      </button>
+
+                      <button
+                        onClick={handleNextQuestion}
+                        className="btn-tactile flex-1 sm:flex-initial px-7 py-3 rounded-xl bg-theme-primary text-white font-black text-xs sm:text-sm flex items-center justify-center gap-2 shadow-lg active:scale-95"
+                      >
+                        <span>Lanjut</span>
+                        <ArrowRight className="w-4 h-4" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* Bedah Tata Bahasa Detail Modal */}
+              {isDetailDrawerOpen && (
+                <div
+                  className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/70 backdrop-blur-sm p-0 sm:p-4 animate-fade-in"
+                  onClick={() => setIsDetailDrawerOpen(false)}
+                >
+                  <div
+                    className="w-full max-w-lg bg-surface border border-theme rounded-t-3xl sm:rounded-3xl shadow-2xl p-5 sm:p-6 max-h-[85vh] overflow-y-auto space-y-4 animate-slide-up"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <div className="flex items-center justify-between border-b border-theme pb-3">
+                      <div className="flex items-center gap-2">
+                        <Sparkles className="w-4 h-4 text-theme-primary" />
+                        <h4 className="text-sm font-bold text-text">Bedah Struktur & Tata Bahasa</h4>
+                      </div>
+                      <button
+                        onClick={() => setIsDetailDrawerOpen(false)}
+                        className="text-xs font-bold text-muted hover:text-text px-2 py-1 rounded-lg"
+                      >
+                        ✕ Tutup
+                      </button>
+                    </div>
+
+                    <QuizExplanationDetail
+                      rawExplanation={currentQ.explanation}
+                      jpSentence={
+                        activeMode === 'rearrange'
+                          ? currentQ.correctAnswer
+                          : activeMode === 'translation'
+                          ? currentQ.questionText
+                          : currentQ.targetItem?.examples?.[0]?.jp ||
+                            (activeMode !== 'flashcard' && !currentQ.questionText.startsWith('Bentuk')
+                              ? currentQ.questionText
+                              : (currentQ.targetItem && 'word' in currentQ.targetItem ? (currentQ.targetItem as any).word : currentQ.questionText))
+                      }
+                      reading={
+                        (currentQ.targetItem && 'reading' in currentQ.targetItem ? currentQ.targetItem.reading : undefined) ||
+                        (currentQ.subText?.startsWith('【') ? currentQ.subText.replace(/[【】]/g, '') : undefined) ||
+                        (currentQ.targetItem && 'word' in currentQ.targetItem ? (currentQ.targetItem as any).reading : undefined)
+                      }
+                      romaji={
+                        currentQ.targetItem && 'romaji' in currentQ.targetItem
+                          ? (currentQ.targetItem as any).romaji
+                          : undefined
+                      }
+                      translation={
+                        activeMode === 'rearrange'
+                          ? currentQ.questionText
+                          : activeMode === 'translation'
+                          ? currentQ.correctAnswer
+                          : currentQ.targetItem?.examples?.[0]?.id ||
+                            (currentQ.subText && !currentQ.subText.startsWith('【')
+                              ? currentQ.subText.replace(/^Arti:\s*"?/, '').replace(/"?$/, '')
+                              : currentQ.targetItem?.meaning)
+                      }
+                    />
+                  </div>
                 </div>
               )}
             </div>
