@@ -149,7 +149,7 @@ Every single decision in this document is numbered canonically (**DD-01** throug
 ### DD-12: Retrieval Prompt Format by Feature Type
 - **Feature Category:** 1. Card Front Design
 - **Pedagogical Decision:** The card front prompt format is strictly differentiated by target feature: morphosyntactic targets (particles, verbal aspect, keigo) default to active type-answer / cloze retrieval; lexical targets (concrete nouns, familiar loanwords) default to flip-to-reveal.
-- **Empirical Evidence:** `[TR-03]` Adesope et al. (2017) (meta-analysis: cued retrieval / production testing effect $g = 0.78$ vs multiple-choice recognition $g = 0.43$); `[EA-18]` Lyster (2004) (prompts obligating active self-repair outperform passive recasts for morphosyntax).
+- **Empirical Evidence:** `[TE-05]` Adesope et al. (2017) (meta-analysis: cued retrieval / production testing effect $g = 0.78$ vs multiple-choice recognition $g = 0.43$); `[EA-18]` Lyster (2004) (prompts obligating active self-repair outperform passive recasts for morphosyntax).
 - **Corpus Section:** §1.3, §5.6.5, §12.3
 - **Implementation Module:** Card Archetype Selector (`public/js/srs-engine.js`)
 - **Priority / Status:** HIGH / ✅ CERTIFIED
@@ -725,7 +725,7 @@ Every single decision in this document is numbered canonically (**DD-01** throug
 ### DD-64: Extensive Reading Flag-and-Continue Queue Integration
 - **Feature Category:** 5. Scheduling Algorithm & FSRS
 - **Pedagogical Decision:** When engaging with reading passages, learners can tap unknown words to flag them for automatic ingestion into their personal FSRS SRS review deck along with the source sentence context.
-- **Empirical Evidence:** `[ER-01]` Nation (2001); `[ER-10]` Webb (2007) (incidental vocabulary encountered in reading that is followed by deliberate spaced retrieval achieves the highest long-term retention rates).
+- **Empirical Evidence:** `[ER-01]` Nation (2001); `[VD-05]` Webb (2007) (incidental vocabulary encountered in reading that is followed by deliberate spaced retrieval achieves the highest long-term retention rates; ex-ER-10).
 - **Corpus Section:** §4.7, §CA.6
 - **Implementation Module:** Reading Interface / "Add to Nugget" Handler
 - **Priority / Status:** HIGH / ✅ CERTIFIED
@@ -903,7 +903,7 @@ Every single decision in this document is numbered canonically (**DD-01** throug
 ### DD-80: Speech Act Refusal Softening Scaffolding (*Kushon Kotoba*)
 - **Feature Category:** 7. Sociopragmatics & Interaction
 - **Pedagogical Decision:** Refusal and disagreement speech act drills must teach prerequisite cushioning phrases (*Kushon Kotoba*: e.g. *Kyoukushuku desu ga...*, *Chotto ima wa...*, *Moushiwake gozaimasen ga...*), strictly prohibiting blunt negative responses (*Iie*, *Dekimasen*).
-- **Empirical Evidence:** `[SC-23]`–`[SC-27]` Beebe, Takahashi, & Uliss-Weltz (1990) *Pragmatic Transfer in ESL Refusals*; Taguchi (2015) *Instructed Pragmatics* (direct refusals in Japanese workplace contexts cause severe face threat and social ostracization; soft refusal pre-sequences are mandatory for pragmatic competence).
+- **Empirical Evidence:** `[SC-37]` Beebe, Takahashi, & Uliss-Weltz (1990) *Pragmatic Transfer in ESL Refusals* (ex-SC-23); `[SC-29]`–`[SC-31]` Taguchi (2012, 2013) *Pragmatic Competence* (direct refusals in Japanese workplace contexts cause severe face threat and social ostracization; soft refusal pre-sequences are mandatory for pragmatic competence).
 - **Corpus Section:** §14.4, §14.5
 - **Implementation Module:** Workplace Roleplay Simulator
 - **Priority / Status:** HIGH / ✅ CERTIFIED
@@ -947,7 +947,7 @@ Every single decision in this document is numbered canonically (**DD-01** throug
 ### DD-84: Pragmatic Cards as a Distinct Card Category
 - **Feature Category:** 7. Sociopragmatics & Interaction
 - **Pedagogical Decision:** Sociopragmatic judgment cards (e.g., selecting the appropriate greeting when arriving at the workplace 10 minutes early vs 10 minutes late; addressing a hospital patient's family) must exist as a dedicated card type in the deck taxonomy with scenario-based cued evaluation.
-- **Empirical Evidence:** `[SC-14]`, `[SC-35]` Rose & Kasper (2001) *Pragmatic Development in Instructional Contexts*; Taguchi (2015) (pragmatic judgment cannot be acquired through vocabulary memorization alone; it requires situated contextual scenario evaluation).
+- **Empirical Evidence:** `[SC-08]` Kasper & Rose (2002) *Pragmatic Development in a Second Language* (ex-SC-14/SC-15); `[SC-35]` Kondo (2008) (pragmatic judgment cannot be acquired through vocabulary memorization alone; it requires situated contextual scenario evaluation).
 - **Corpus Section:** §14.5, §15.5
 - **Implementation Module:** Pragmatic Scenario Card Archetype (`archetype: "pragmatic_scenario"`)
 - **Priority / Status:** HIGH / ✅ CERTIFIED
@@ -1047,7 +1047,7 @@ Every single decision in this document is numbered canonically (**DD-01** throug
 ### DD-93: Offline-First Local Storage Architecture with Zero Data Loss
 - **Feature Category:** 8. UX & Accessibility
 - **Pedagogical Decision:** The PWA must function 100% offline using IndexedDB via TinyBase / custom storage adapter; card reviews, streak updates, and user notes are written locally first, with background synchronization triggered automatically upon reconnection.
-- **Empirical Evidence:** `[CM-20]`–`[CM-25]` Burston (2013); Stockwell & Hubbard (2013) (unreliable mobile connectivity in transit environments leads to data corruption and churn in online-only language apps).
+- **Empirical Evidence:** `[CM-06]` Burston (2015); `[CM-23]` Stockwell & Hubbard (2013) (unreliable mobile connectivity in transit environments leads to data corruption and churn in online-only language apps).
 - **Corpus Section:** §8.10, §16.6
 - **Implementation Module:** Service Worker & IndexedDB Adapter (`public/js/db.js`, `public/sw.js`)
 - **Priority / Status:** CRITICAL / ✅ CERTIFIED
@@ -1169,7 +1169,7 @@ Every single decision in this document is numbered canonically (**DD-01** throug
 ### DD-104: JLPT N4 (~1,500 Lemmas) as Extensive Reading Threshold
 - **Feature Category:** 9. Content Sequencing
 - **Pedagogical Decision:** Formal Extensive Reading (ER) tracks are unlocked when a learner crosses the N4 threshold (~1,500 cumulative lemmas and ~300 kanji), ensuring they achieve the requisite 98% text coverage threshold on graded readers.
-- **Empirical Evidence:** `[ER-01]` Carver (1994); `[ER-05]` / `[BC-08]` Hu & Nation (2000) (reading texts with $<98\%$ vocabulary coverage forces frequent dictionary interruption, collapsing reading speed and reading-for-pleasure comprehension).
+- **Empirical Evidence:** `[ER-01]` Carver (1994); `[BC-08]` Hu & Nation (2000) (reading texts with $<98\%$ vocabulary coverage forces frequent dictionary interruption, collapsing reading speed and reading-for-pleasure comprehension; ex-ER-05).
 - **Corpus Section:** §4.1, §4.7, §1.12.2
 - **Implementation Module:** Graded Reader Library Gateway
 - **Priority / Status:** HIGH / ✅ CERTIFIED

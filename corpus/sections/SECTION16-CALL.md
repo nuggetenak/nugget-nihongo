@@ -153,8 +153,8 @@ The comparative evidence on dedicated SRS tools (Anki, Memrise) versus gamified 
 **Note:** CM-20 (Plonsky & Ziegler 2016) → merged to CM-03. CM-21 (Golonka et al. 2014) → merged to CM-01.
 
 # §16: CALL/MALL — META-ANALYTIC EVIDENCE, Part 2
-## §16.4–§16.6 | CM-14–CM-24 | v17
-**ID Range:** CM-14–CM-25 | **Citations this file:** 11 | **Corpus baseline:** ~814 (v9)
+## §16.4–§16.6 | CM-14–CM-24 | Corpus v30 Canonical Revision (October 2026)
+**ID Range:** CM-14–CM-24 | **Citations this file:** 11 | **Corpus baseline:** 807+ unique citations, 539+ verified DOIs
 
 ---
 

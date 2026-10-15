@@ -1,7 +1,7 @@
 # §15 — VOCATIONAL JAPANESE & THE SSW LEARNER CONTEXT
 **Date:** October 2026  
 **Citations:** VS-01–VS-35 (33 citations)  
-**Status:** Canonical — v21 (Prometric CBT & Specialized Agency Master Ecosystem Expansion)  
+**Status:** Corpus v30 Canonical Revision (Prometric CBT & Specialized Agency Master Ecosystem Expansion)  
 **Scope:** 18 Designated Tokutei Ginou Industry Sectors, Prometric & Non-Prometric Agency Exam Specifications, 17 JAIM Sub-Divisions, Business Career Kentei, & Indonesian SLA Fieldwork
 
 ---

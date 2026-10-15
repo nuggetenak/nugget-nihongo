@@ -1,6 +1,6 @@
 # NUGGET NIHONGO — EVIDENCE BASE
 ## SECTION 12 — OUTPUT THEORY & NOTICING HYPOTHESIS
-**Status:** Canonical — v17
+**Status:** Corpus v30 Canonical Revision (October 2026)
 
 ---
 
@@ -18,7 +18,7 @@ Argumentasi §12 bergerak dari makro ke mikro:
 
 **Yang TIDAK dibahas di §12** (sudah ada, cross-reference saja):
 - Comprehensible input → §1 [CI-01–CI-05]
-- Testing Effect / Retrieval Practice → §1 [AR-01, TE-01–TE-02]
+- Testing Effect / Retrieval Practice → §1 [TE-01–TE-02]
 - Cognitive Load Theory → §9 [CL-01–CL-08]
 - HVPT / phonological output → §11 [PH-30–PH-39]
 - Contrastive analysis Indonesia ↔ Jepang → §5.5 [CA cluster]
@@ -53,12 +53,12 @@ Untuk Nugget Nihongo, implikasi ketiga fungsi ini konkret dan langsung. *Type-an
 
 2. **"Hint" button = pushed output scaffold.** Menampilkan petunjuk setelah jawaban salah (bukan langsung menunjukkan jawaban) mengimplementasikan pushed output: learner dipaksa mencoba lagi. Ini berbeda dari sekadar memberikan jawaban — scaffolding yang tepat mempertahankan tantangan produktif.
 
-3. **OT-04 cross-reference §1 [AR-01, TE-01]:** Output-before-input meningkatkan noticing selama input berikutnya — "failed retrieval" (FSRS "again") bukan kegagalan, melainkan priming untuk pembelajaran lebih efektif dari pengulangan berikutnya.
+3. **OT-04 cross-reference §1 [TE-01]:** Output-before-input meningkatkan noticing selama input berikutnya — "failed retrieval" (FSRS "again") bukan kegagalan, melainkan priming untuk pembelajaran lebih efektif dari pengulangan berikutnya.
 
 ### Cross-Section Integration Notes
 
 - **§12.1 → §1 [CI-01–CI-05]:** §12 *tidak* menggantikan comprehensible input — §12 menambah *output* sebagai mekanisme paralel. Swain sendiri tidak menolak Krashen; ia memperluas model. Di corpus, posisikan sebagai: "input yang comprehensible adalah kondisi perlu; output yang pushed adalah mekanisme pemercepat."
-- **§12.1 → §1 [AR-01, TE-01–TE-02]:** Testing Effect (retrieval practice) adalah *output event*. Konvergensi teoritis: Roediger/Karpicke membuktikan retrieval secara empiris; Swain menjelaskan *mengapa* retrieval bekerja secara teoritis — ia memaksa gap-noticing.
+- **§12.1 → §1 [TE-01–TE-02]:** Testing Effect (retrieval practice) adalah *output event*. Konvergensi teoritis: Roediger/Karpicke membuktikan retrieval secara empiris; Swain menjelaskan *mengapa* retrieval bekerja secara teoritis — ia memaksa gap-noticing.
 
 ---
 
@@ -175,7 +175,7 @@ Untuk Nugget Nihongo, ini mengandung implikasi yang sangat spesifik. FSRS-based 
 ### Cross-Section Integration Notes
 
 - **§12.4 → §11 [PH-30–PH-39]:** DeKeyser's procedural practice dan HVPT's production training adalah dua implementasi SAT dalam domain berbeda (lexical/grammatical vs. phonological). Cross-reference memperkuat kohesi corpus.
-- **§12.4 → §1 [AR-01, TE-01–TE-02]:** Testing Effect membuktikan retrieval lebih kuat dari re-study secara empiris; SAT menjelaskan *mengapa* — retrieval adalah production event yang mendorong proceduralization, re-study hanya memperkuat declarative representation.
+- **§12.4 → §1 [TE-01–TE-02]:** Testing Effect membuktikan retrieval lebih kuat dari re-study secara empiris; SAT menjelaskan *mengapa* — retrieval adalah production event yang mendorong proceduralization, re-study hanya memperkuat declarative representation.
 
 ---
 
@@ -206,7 +206,7 @@ Untuk Nugget Nihongo, §12.5 memberikan justifikasi langsung untuk FSRS "Again" 
 
 ### Design Implications untuk Nugget Nihongo
 
-1. **"Again" button = productive failed retrieval.** Berdasarkan OT-27 (Izumi) dan konvergensi dengan §1 [AR-01], kegagalan retrieval bukan sia-sia — ia memprime sistem belajar untuk acquisition yang lebih efektif saat kartu muncul kembali. Komunikasikan ini kepada user: "jawaban salah = proses belajar yang berharga, bukan kegagalan."
+1. **"Again" button = productive failed retrieval.** Berdasarkan OT-27 (Izumi) dan konvergensi dengan §1 [TE-01], kegagalan retrieval bukan sia-sia — ia memprime sistem belajar untuk acquisition yang lebih efektif saat kartu muncul kembali. Komunikasikan ini kepada user: "jawaban salah = proses belajar yang berharga, bukan kegagalan."
 
 2. **OT-29 (Laufer & Hulstijn):** Involvement Load Hypothesis memprediksi bahwa tasks dengan involvement tinggi (need + search + evaluation semua terpenuhi) menghasilkan incidental vocabulary acquisition terbaik. Type-answer dalam konteks SRS memiliki *need* (harus jawab) dan *evaluation* (lihat back card) — dua dari tiga komponen involvement terpenuhi.
 
@@ -216,7 +216,7 @@ Untuk Nugget Nihongo, §12.5 memberikan justifikasi langsung untuk FSRS "Again" 
 
 ### Cross-Section Integration Notes
 
-- **§12.5 → §1 [AR-01, TE-01–TE-02]:** Testing Effect + Output Vocabulary Consolidation adalah dua literatur independen yang converge pada satu desain principle: failed retrieval is productive, not neutral.
+- **§12.5 → §1 [TE-01–TE-02]:** Testing Effect + Output Vocabulary Consolidation adalah dua literatur independen yang converge pada satu desain principle: failed retrieval is productive, not neutral.
 - **§12.5 → §5.5 [CA cluster]:** Indonesian L1 interference points yang diidentifikasi §5.5 adalah *predicted production failure points* — exactly where type-answer errors akan terjadi, exactly where noticing-the-gap akan paling intens.
 
 ---

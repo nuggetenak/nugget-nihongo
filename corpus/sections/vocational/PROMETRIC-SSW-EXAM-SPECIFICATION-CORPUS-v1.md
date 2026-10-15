@@ -1,5 +1,5 @@
 # PROMETRIC CBT & MULTI-AGENCY SSW EXAM SPECIFICATION CORPUS
-**Corpus Version:** v1.0 — Comprehensive Operational Edition (Corpus v21)  
+**Corpus Version:** v1.0 — Comprehensive Operational Edition (Corpus v30 Canonical Revision)  
 **Date:** October 2026  
 **Curated by:** Vocational SLA Directorate, SSW Curriculum Consortium & Nugget Nihongo Research Team  
 **Scope:** Exhaustive Mapping of Prometric CBT Tests, Multi-Agency Examinations, 17 Manufacturing Divisions, Business Career Kentei, and Tier 1 $\rightarrow$ Tier 2 Progression

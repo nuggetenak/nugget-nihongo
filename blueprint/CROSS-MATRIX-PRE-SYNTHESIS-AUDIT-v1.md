@@ -75,7 +75,7 @@ Audit mendalam terhadap seluruh 123 keputusan desain pada [`DESIGN-DECISION-MAST
 
 ### 3.2 Kategori 2: Card Back Design (Keputusan 13 s.d. 26)
 - **DD-13 (Contrastive Notes as Noticing Triggers):** Didukung `OT-06` (Schmidt 1990 Noticing) & `CP-cluster` (§5.5). Setiap kartu dengan risiko interferensi memuat catatan metalinguistik eksplisit *"Ini beda dari BI karena X"*.
-- **DD-14 (Multiple Contextual Sentences):** Didukung `VD-03` (Schmitt 2008) & `ER-10` (Webb 2007). Minimal 2 kalimat contoh kontekstual yang bervariasi.
+- **DD-14 (Multiple Contextual Sentences):** Didukung `VD-03` (Schmitt 2008) & `VD-05` (Webb 2007; ex-ER-10). Minimal 2 kalimat contoh kontekstual yang bervariasi.
 - **DD-15 (Pitch Accent Contour Display):** Didukung `PH-25` (Pierrehumbert & Beckman 1988) & `PH-58` (Vance 2008). Grafik garis H/L SVG wajib hadir di atas teks kana pada setiap kartu kata konten.
 - **DD-16 (Mora Visual Counter):** Didukung `PH-13` (Cutler & Otake 1994) & `PH-16` (Port et al. 1987). Indikator titik mora (●●●) untuk kata sokuon/chōon.
 - **DD-17–DD-26 (Keigo Register Flags, SBAR Clinical Flags, Error Gap Highlighting):** Didukung `SC-16–37`, `VS-33–39`, `EA-22–28`. Terpetakan pada sistem tag metadata kartu.
@@ -110,7 +110,7 @@ Audit mendalam terhadap seluruh 123 keputusan desain pada [`DESIGN-DECISION-MAST
 
 ### 3.7 Kategori 7: Sociopragmatics & Interaction (Keputusan 79 s.d. 84)
 - **DD-79 (Explicit Keigo Triad Mapping):** Didukung `SC-16–22` (Ide 1989 discernment/wakimae, Wetzel 2004). Kartu tata bahasa N3+ membedakan secara eksplisit *Teineigo* (kesopanan umum), *Sonkeigo* (meninggikan lawan bicara), dan *Kenjougo* (merendahkan diri sendiri).
-- **DD-80 (Speech Act Refusal Softening Scaffolding):** Didukung `SC-23–27` (Beebe et al. 1990, Taguchi 2015). Latihan menolak permintaan atasan/rekan menggunakan rumus *Kushon Kotoba* (kata bantalan: *Kyoukushuku desu ga...*, *Chotto...*) alih-alih penolakan langsung *iie*.
+- **DD-80 (Speech Act Refusal Softening Scaffolding):** Didukung `SC-37` (Beebe et al. 1990; ex-SC-23), `SC-29–31` (Taguchi 2012, 2013). Latihan menolak permintaan atasan/rekan menggunakan rumus *Kushon Kotoba* (kata bantalan: *Kyoukushuku desu ga...*, *Chotto...*) alih-alih penolakan langsung *iie*.
 - **DD-81 (Safe Error Review for Keigo Calibration):** Didukung `ID-05` (Young 1991 low-anxiety speaking design). Menjadikan sesi SRS sebagai ruang teraman mencoba kalibrasi keigo tanpa risiko kehilangan muka di tempat kerja.
 - **DD-82–DD-84 (Aizuchi Feedback Loops, Hierarchy Demarcation):** Didukung `SC-28–37`, `VS-33/34`. Integrasi respons anggukan aktif penutur asli dalam dialog listening.
 

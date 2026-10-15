@@ -286,7 +286,7 @@ Hasil utama HVPT (dari Logan et al. 1991 melalui Thomson 2012):
 ### Cross-Section Integration Notes (§11.5)
 
 - **§9 [CT, audio-visual integration]:** HVPT beroperasi melalui perceptual learning (bottom-up), sementara multimedia learning (§9) beroperasi melalui representational construction (top-down). Keduanya complementary untuk pronunciation cards — perceptual training (PH-30–PH-39) + visual pitch display (§9) mengaktifkan dua jalur.
-- **§1 [AR, retrieval practice]:** HVPT secara implisit menggunakan identification task yang adalah retrieval practice. Cross-reference §1 [AR-01] untuk justifikasi tambahan bahwa identification > passive listening.
+- **§1 [TE, retrieval practice]:** HVPT secara implisit menggunakan identification task yang adalah retrieval practice. Cross-reference §1 [TE-01–TE-02] untuk justifikasi tambahan bahwa identification > passive listening.
 - **§8 [CC cluster, kecemasan pronunciation]:** HVPT dilakukan secara private (computer-mediated, Thomson PH-33) — ini mengurangi anxiety yang didokumentasikan di §8 [CC cluster] sebagai barrier pronunciation practice. Ini sebuah hidden benefit dari computer-mediated phonological training.
 
 ---

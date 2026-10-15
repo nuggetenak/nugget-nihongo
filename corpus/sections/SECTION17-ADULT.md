@@ -1,7 +1,7 @@
 # NUGGET NIHONGO — §17 ADULT LANGUAGE LEARNING & SELF-DIRECTED STUDY
 
 ## Part 1: Andragogy, Self-Regulated Learning, and Learner Autonomy
-**Agent:** 26 | **Date:** 3 April 2026 | **IDs:** AL-01–AL-11 | **Status:** Canonical — v17
+**Agent:** 26 | **Date:** Canonical Revision — October 2026 | **IDs:** AL-01–AL-11 | **Status:** Corpus v30 Canonical Revision
 
 ---
 
@@ -157,8 +157,8 @@ The SDT autonomy-need addressed in §8 (MV-01/MV-02) is a *psychological need* f
 
 # NUGGET NIHONGO — EVIDENCE BASE
 ## SECTION 17 — ADULT LANGUAGE LEARNING & SELF-DIRECTED STUDY, Part 2
-**Scope:** §17.4–§17.6 (AL-14–AL-22; 9 citations)  
-**Status:** Canonical — v17
+**Scope:** §17.4–§17.6 (AL-14–AL-22; 9 citations, with AL-21 consolidated to AL-03)  
+**Status:** Corpus v30 Canonical Revision (October 2026)
 
 ---
 
@@ -259,9 +259,9 @@ Arnold and Brown's (1999) comprehensive survey of affect in language learning sy
 
 The preceding subsections of §17 — §17.1–§17.3 (andragogy, SRL, and autonomy; AL-01–AL-13) and §17.4–§17.5 (adult motivation, language ego; AL-14–AL-20 above) — have built a theoretical framework for adult language learning applicable to self-directed contexts. This capstone subsection draws on that framework, together with §15 (SSW and vocational Japanese context; VS-01–VS-28), §13 (individual differences; ID-01–ID-43), §11 (phonology; PH-01–PH-44), §14 (sociolinguistics and keigo; SC-01–SC-28), and §8 (platform and motivation; MV-01–MV-03+) to construct a **concrete, research-grounded learner profile** for Nugget Nihongo's primary user — the Indonesian SSW candidate preparing for JFT-Basic or JLPT N4 while targeting placement in a Japanese care, food service, or construction sector.
 
-Adult learning theory since Mezirow (1991) has emphasized that the most powerful driver of adult learning engagement is not merely relevance (Knowles' andragogic principle, AL-01–AL-03 cross-reference) but **transformative perspective**: adults invest most deeply in learning when they can see the learning as part of a fundamental life reorientation — a change in who they are and what futures are available to them. The SSW candidate's learning context is archetypal in this respect: the Japanese language is not being acquired as an academic exercise or a cultural enrichment activity but as a **gateway to a different life trajectory** — employment in Japan, remittances, family mobility, professional identity. The design of Nugget Nihongo must honor this transformative stakes dimension: the platform is not a gamified vocabulary trainer but a preparation tool for a life transition **[AL-21]**.
+Adult learning theory since Mezirow (1991) has emphasized that the most powerful driver of adult learning engagement is not merely relevance (Knowles' andragogic principle, AL-01–AL-03 cross-reference) but **transformative perspective**: adults invest most deeply in learning when they can see the learning as part of a fundamental life reorientation — a change in who they are and what futures are available to them. The SSW candidate's learning context is archetypal in this respect: the Japanese language is not being acquired as an academic exercise or a cultural enrichment activity but as a **gateway to a different life trajectory** — employment in Japan, remittances, family mobility, professional identity. The design of Nugget Nihongo must honor this transformative stakes dimension: the platform is not a gamified vocabulary trainer but a preparation tool for a life transition **[AL-03]**.
 
-**[AL-21]** Mezirow, J. (1991). *Transformative dimensions of adult learning.* Jossey-Bass. No DOI (monograph).
+**[AL-03]** Mezirow, J. (1991). *Transformative dimensions of adult learning.* Jossey-Bass. No DOI (monograph). *(Formerly AL-21; consolidated under canonical ID AL-03)*
 
 - **Core contribution:** Mezirow's monograph is the foundational text of transformative learning theory — the adult education framework that explains why and how adults commit to deep, effortful learning in the absence of external institutional enforcement. Mezirow argues that adult learning is most durably motivated when it is connected to a **disorienting dilemma** — a life situation that challenges the learner's existing frame of reference and requires perspective transformation to resolve. The SSW candidate's situation is a paradigmatic disorienting dilemma: they face a labor market and life trajectory that requires Japanese language competence, and the acquisition of that competence will transform their practical identity (worker, migrant, professional). Mezirow's framework explains why the SSW learner's instrumental motivation, though fragile by Gardner's analysis (AL-14), has an emotionally deep and life-committal quality that is absent from much classroom language learning — and which, if activated by platform design, can sustain engagement through the most demanding phases of the learning curve.
 - **Relevance to Nugget Nihongo:** Platform onboarding, progress messaging, and milestone celebrations should explicitly acknowledge the transformative stakes dimension of the SSW learner's investment. Framing card review completions as steps toward the JFT-Basic pass, deck completion milestones as competence thresholds, and 日本の文化 cultural content as preparation for authentic life in Japan — rather than abstract cultural enrichment — activates the transformative motivation Mezirow describes. This framing is not marketing; it is a pedagogically grounded design decision rooted in adult motivation theory.
@@ -318,11 +318,11 @@ Drawing on the full §17 framework (AL-01–AL-22), §13 (ID-01–ID-43), §15 (
 | **Keigo challenge / no L1 equivalent** | §14 SC cluster; §17.6 synthesis | Keigo cards carry explicit register labels (丁寧語, 謙譲語, 尊敬語) and authentic social context sentences. Care-sector deck (介護) includes keigo as a first-tier content category, not supplementary. Disambiguation notes explain the social encoding logic rather than listing substitution rules. Cross-ref §14 SC-08, SC-16–SC-28 for pragmatic development framework. |
 | **Phonological challenge (mora, pitch, devoicing)** | §11 PH cross-ref; §13 ID-22–ID-28 (CPH); AL-17–AL-18 (ego) | Every card with an audio field uses human-recorded native-speaker audio (not TTS). Mora-count annotations for high-frequency vocabulary. Pitch accent marking on audio-forward cards where pitch accent is lexically distinctive (§11 PH cross-ref for discriminative pairs). |
 | **Variable SRL capacity** | §17.1–§17.3 AL-01–AL-13; AL-15 (Wenden metacognitive deficit) | Onboarding flow includes explicit SRL scaffolding: session-length recommendation, new-card-limit explanation, and a "how FSRS works" explanation that builds metacognitive understanding of spaced practice. Optional "guided mode" for first 30 days caps new cards at 7/day and provides in-session progress indicators. |
-| **Transformative motivation (life transition stakes)** | AL-21 (Mezirow); AL-16 (Crookes & Schmidt satisfaction) | Deck completion milestones framed in terms of SSW readiness ("You've mastered the 介護 sector core vocabulary. You're ready for the care-work section of the JFT-Basic."). Cultural content milestones framed as pre-departure cultural preparation. Avoid gamification language (points, streaks) that trivializes the transformative stakes. Cross-ref §10 GI/HB cluster for gamification design boundaries. |
+| **Transformative motivation (life transition stakes)** | AL-03 (Mezirow; formerly AL-21); AL-16 (Crookes & Schmidt satisfaction) | Deck completion milestones framed in terms of SSW readiness ("You've mastered the 介護 sector core vocabulary. You're ready for the care-work section of the JFT-Basic."). Cultural content milestones framed as pre-departure cultural preparation. Avoid gamification language (points, streaks) that trivializes the transformative stakes. Cross-ref §10 GI/HB cluster for gamification design boundaries. |
 
 ---
 
-## CITATION LIST — §17 Part 2 (AL-14–AL-22)
+## CITATION LIST — §17 Part 2 (AL-14–AL-22, AL-21 consolidated to AL-03)
 
 **[AL-14]** Gardner, R. C. (1985). *Social psychology and second language learning: The role of attitudes and motivation.* Edward Arnold. No DOI (monograph).
 
@@ -338,7 +338,7 @@ Drawing on the full §17 framework (AL-01–AL-22), §13 (ID-01–ID-43), §15 (
 
 **[AL-20]** Arnold, J., & Brown, H. D. (1999). A map of the terrain. In J. Arnold (Ed.), *Affect in language learning* (pp. 1–24). Cambridge University Press. No DOI (book chapter).
 
-**[AL-21]** Mezirow, J. (1991). *Transformative dimensions of adult learning.* Jossey-Bass. No DOI (monograph).
+**[AL-03]** Mezirow, J. (1991). *Transformative dimensions of adult learning.* Jossey-Bass. No DOI (monograph). *(Canonical entry; duplicate AL-21 retired)*
 
 **[AL-22]** Ushioda, E. (2011). Why autonomy? Insights from motivation theory and research. *Innovation in Language Learning and Teaching, 5*(2), 221–232. https://doi.org/10.1080/17501229.2011.577536
 

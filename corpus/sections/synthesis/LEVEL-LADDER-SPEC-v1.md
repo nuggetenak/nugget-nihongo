@@ -162,7 +162,7 @@ Upon graduating from Level N4, learners who are pursuing employment in Japan und
 This is the level where vocabulary becomes the dominant bottleneck:
 - Nation (2006) CA-31 written text comprehension threshold (~5,000 word families for general written text at 98% coverage) starts to come into reach at upper-N3.
 - Schmitt & Schmitt (2014) CA-41 mid-frequency plateau begins here — learners encounter the "frequency wall" where new items are individually useful but less frequent, reducing naturalistic exposure per item.
-- Laufer (1992) CA-24 and Hu & Nation (2000) ER-05 coverage-threshold research applies directly: N3 is the first level where extensive reading becomes pedagogically efficient. Below N3, ER has coverage gaps too large to sustain meaning-focused input; above N3, ER compounds acquisition rapidly.
+- Laufer (1992) CA-24 and Hu & Nation (2000) BC-08 coverage-threshold research applies directly: N3 is the first level where extensive reading becomes pedagogically efficient. Below N3, ER has coverage gaps too large to sustain meaning-focused input; above N3, ER compounds acquisition rapidly.
 
 ### Grammar Structures (PT Stage Mapping)
 

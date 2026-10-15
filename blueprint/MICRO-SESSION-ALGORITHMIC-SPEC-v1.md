@@ -4,11 +4,11 @@
 **Scope:** Cognitive Engineering, Mathematical Modeling of Working Memory Load, Mobile SLA Architecture, and SRS Algorithm Optimization  
 **Target Architecture:** Nugget Nihongo Mobile Client & Core Spaced Repetition Scheduling Engine  
 **Theoretical Anchors:**
-- Cognitive Load Theory: Sweller (1988) [CLT-01], Sweller, van Merriënboer, & Paas (2019) [CLT-02]
+- Cognitive Load Theory: Sweller (1988) [CL-01], Sweller, van Merriënboer, & Paas (1998) [CL-03]
 - Working Memory Chunk Capacity Limits: Cowan (2001) [WM-02] ($4 \pm 1$ Working Memory Chunks)
-- Mobile-Assisted Language Learning (MALL) Micro-Learning Constraints: Stockwell (2010) [MALL-01], Kukulska-Hulme (2009) [MALL-02]
-- Skill Acquisition Theory & Proceduralization: DeKeyser (2007) [SLA-08], Anderson (1982) [SLA-09]
-- Free Spaced Repetition Scheduler (FSRS) Core Algorithm: Ye et al. (2024) [SRS-05]
+- Mobile-Assisted Language Learning (MALL) Micro-Learning Constraints: Stockwell (2010) [CA-44], Kukulska-Hulme & Shield (2008) [CM-07]
+- Skill Acquisition Theory & Proceduralization: DeKeyser (2015) [GA-21], Anderson (1982) [GA-26]
+- Free Spaced Repetition Scheduler (FSRS) Core Algorithm: Ye et al. (2022, 2023) [SR-10, SR-11]
 - Corrective Feedback & Morphosyntactic Prompts: Ellis, Loewen, & Erlam (2006) [EA-17], Lyster (2004) [EA-18]
 - Contrastive L1 Interference & Metalanguage Scaffolding: Corder (1967) [EA-01], Maarif (2021 [EA-27], 2023 [EA-22]), Alifah et al. (2020) [EA-28]
 
@@ -17,10 +17,10 @@
 ## 1. MATHEMATICAL FORMULATION OF THE 5-TO-7 MINUTE SESSION
 
 ### 1.1 Cognitive Load & Working Memory Capacity Constraints
-Human working memory under mobile learning conditions is severely constrained by divided attention, environmental distractions, and cognitive fatigue (Stockwell 2010 [MALL-01]). According to Cowan's embedded-processes model (Cowan 2001 [WM-02]), the capacity limit of the focus of attention is strictly:
+Human working memory under mobile learning conditions is severely constrained by divided attention, environmental distractions, and cognitive fatigue (Stockwell 2010 [CA-44]). According to Cowan's embedded-processes model (Cowan 2001 [WM-02]), the capacity limit of the focus of attention is strictly:
 $$K = 4 \pm 1 \text{ unintegrated chunks}$$
 
-Under Sweller's Cognitive Load Theory (Sweller 1988 [CLT-01]; Sweller et al. 2019 [CLT-02]), total cognitive load $L_{\text{total}}$ at any instant $t$ is composed of three additive components:
+Under Sweller's Cognitive Load Theory (Sweller 1988 [CL-01]; Sweller et al. 1998 [CL-03]), total cognitive load $L_{\text{total}}$ at any instant $t$ is composed of three additive components:
 $$L_{\text{total}}(t) = L_{\text{intrinsic}}(t) + L_{\text{extraneous}}(t) + L_{\text{germane}}(t)$$
 
 Where:
@@ -71,7 +71,7 @@ Every session executes a rigid, rhythmically sequenced four-phase progression de
 
 3. **Phase 3: High-Intensity Active Production Practice ($t \in [210, 360\text{ s}]$)**
    - **Target:** 8–10 mixed cards: testing the 2 newly introduced chunks alongside 6–8 critical interlanguage review items.
-   - **Cognitive Purpose:** Proceduralization (DeKeyser 2007 [SLA-08]). Forcing retrieval effort via typing prompts (Ellis et al. 2006 [EA-17]) rather than passive recognition.
+   - **Cognitive Purpose:** Proceduralization (DeKeyser 2015 [GA-21]). Forcing retrieval effort via typing prompts (Ellis et al. 2006 [EA-17]) rather than passive recognition.
    - **Card Archetypes:** `production_type_cloze`, `pragmatic_register_pivot`, `contrastive_pair_slot`.
    - **Dynamic Feedback:** Immediate error-classification trigger if learner falls into an Indonesian L1 false equivalence trap.
 
@@ -344,7 +344,7 @@ Each card in Nugget Nihongo belongs to one of six mathematically and pedagogical
 ---
 
 ### Archetype 6: `speed_comprehension_blast`
-- **Pedagogical Objective:** Automate declarative knowledge into procedural reflex (DeKeyser 2007 [SLA-08]). Target latency: $\le 1200\text{ ms}$.
+- **Pedagogical Objective:** Automate declarative knowledge into procedural reflex (DeKeyser 2015 [GA-21]). Target latency: $\le 1200\text{ ms}$.
 - **Interaction Mechanism:** Instant binary decision (True/False or Meaning Match). Giant 1.5-second visual countdown dial.
 
 ```json
@@ -380,7 +380,7 @@ Each card in Nugget Nihongo belongs to one of six mathematically and pedagogical
 
 ### 3.1 The Necessity of Dual-Track Stability ($S_{\text{audio}}$ vs. $S_{\text{ortho}}$)
 
-Standard FSRS models (Ye et al. 2024 [SRS-05]) maintain a single scalar stability value $S$ for each memory trace. For Indonesian learners acquiring Japanese, this single-scalar approach fails due to **modality asymmetry**:
+Standard FSRS models (Ye et al. 2022 [SR-10], Su et al. 2023 [SR-11]) maintain a single scalar stability value $S$ for each memory trace. For Indonesian learners acquiring Japanese, this single-scalar approach fails due to **modality asymmetry**:
 - Indonesian learners using Latin alphabet L1 often decode Japanese orthography (kanji/kana/romaji) visually with high accuracy when reading at their own leisure ($S_{\text{ortho}} \gg 30 \text{ days}$).
 - However, when the exact same lexical item is presented in fast spoken acoustic streams or with background noise, their phonological loop collapses ($S_{\text{audio}} < 3 \text{ days}$).
 

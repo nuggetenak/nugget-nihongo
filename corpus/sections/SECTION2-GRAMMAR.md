@@ -1,14 +1,13 @@
-
 # §2 — GRAMMAR ACQUISITION THEORY, PART 1
 ## Processability Theory, Japanese Morphosyntax Acquisition Order & Teachability Hypothesis
 
 **Prepared by:** Nugget Nihongo Grammar Acquisition Research Team  
-**Date:** 3 April 2026  
-**Version:** v1  
-**Citation IDs:** GA-01 – GA-18 (GA-19–GA-31 in Part 2)  
-**Section count:** 3 subsections (§2.1, §2.2, §2.3)  
-**Citations delivered:** 18 (GA-01–GA-18)  
-**Status:** Canonical — v17
+**Date:** Canonical Revision — October 2026  
+**Version:** Corpus v30 Canonical Revision  
+**Citation IDs:** GA-01–GA-18 (Part 1); GA-19/GA-19b–GA-31 (Part 2)  
+**Section count:** 6 subsections (§2.1–§2.6)  
+**Citations delivered:** 31 canonical citations (GA-01–GA-31)  
+**Status:** Canonical — Corpus v30 (807+ unique citations, 539+ verified DOIs)
 
 ---
 
@@ -264,9 +263,9 @@ The Teachability Hypothesis translates into four operational principles for Nugg
 
 **Prepared by:** Nugget Nihongo Grammar Acquisition Research Team  
 **Section:** §2.4–§2.6  
-**Citations:** GA-19 – GA-31 (13 citations)  
-**Version:** v1  
-**Date:** 3 April 2026  
+**Citations:** GA-19b, GA-20–GA-31 (13 citations)  
+**Version:** Corpus v30 Canonical Revision  
+**Date:** Canonical Revision — October 2026  
 **Cross-references:** §12.4 [OT-18–OT-24] (SAT — do not duplicate); §1.7 [Nation Four Strands]; §1.12 [BC-03, BC-04]; §CA (Curriculum Architecture); §3 (Listening)
 
 ---
@@ -281,7 +280,7 @@ Posisi ekstrim pertama adalah **non-interface position**, yang dikaitkan dengan 
 
 ### DeKeyser dan Interface Debate: Posisi Revisionis
 
-DeKeyser (2003) **[GA-19]** menolak posisi Krashen yang kaku dengan argumen yang secara empiris lebih solid. DeKeyser membedakan tiga posisi dalam interface debate: *no interface* (Krashen), *strong interface* (explicit knowledge langsung dapat menjadi implicit), dan **weak interface** — posisi yang DeKeyser argumentasikan sebagai paling sesuai dengan bukti. Dalam weak interface view, explicit knowledge *dapat* berkontribusi pada perkembangan implicit knowledge, tetapi bukan melalui konversi langsung, melainkan melalui mekanisme mediasi: explicit knowledge membuat form tertentu lebih *salient* dalam input, sehingga meningkatkan kemungkinan noticing (Schmidt, 1990 — lihat §12.2) dan pada akhirnya akuisisi implisit.
+DeKeyser (2003) **[GA-19b]** *(disambiguated from Kanno 2007 [GA-19])* menolak posisi Krashen yang kaku dengan argumen yang secara empiris lebih solid. DeKeyser membedakan tiga posisi dalam interface debate: *no interface* (Krashen), *strong interface* (explicit knowledge langsung dapat menjadi implicit), dan **weak interface** — posisi yang DeKeyser argumentasikan sebagai paling sesuai dengan bukti. Dalam weak interface view, explicit knowledge *dapat* berkontribusi pada perkembangan implicit knowledge, tetapi bukan melalui konversi langsung, melainkan melalui mekanisme mediasi: explicit knowledge membuat form tertentu lebih *salient* dalam input, sehingga meningkatkan kemungkinan noticing (Schmidt, 1990 — lihat §12.2) dan pada akhirnya akuisisi implisit.
 
 DeKeyser (2005) **[GA-20]** memperhalus argumen ini dengan mengidentifikasi faktor-faktor yang menentukan seberapa efektif explicit learning: kompleksitas aturan gramatikal, working memory capacity learner, dan tersedianya cukup meaningful input setelah explicit instruction. Aturan dengan *high regularity* dan *low complexity* — seperti banyak aspek morfologi aglutinatif bahasa Jepang — adalah kandidat terbaik untuk explicit instruction, karena pola-pola ini dapat dinyatakan sebagai aturan yang mudah diaplikasikan. Sebaliknya, aturan dengan *high complexity* dan *low frequency* (seperti nuansa aspektual antara ~ている dan ~てある dalam konteks tertentu) lebih sulit diinternalisasi melalui explicit instruction saja.
 
@@ -311,7 +310,7 @@ Robinson mengintegrasikan temuannya dengan **Noticing Hypothesis** (Schmidt, 199
 
 Pertanyaan yang relevan untuk platform Nugget Nihongo adalah: apakah menampilkan aturan gramatikal di kartu SRS membantu atau menghambat pembelajaran? Berdasarkan literatur di atas, jawabannya adalah **membantu, dengan catatan**:
 
-- Explicit rules di kartu **membantu** dalam hal: (a) membuat form yang jarang muncul dalam input natural menjadi salient; (b) menyediakan *attentional anchor* yang mempersiapkan learner untuk notice pola dalam input berikutnya (Robinson 1996 **[GA-24]**; DeKeyser 2003 **[GA-19]**); (c) khususnya efektif untuk aturan dengan low instance frequency (Hulstijn & de Graaff 1994 **[GA-23]**).
+- Explicit rules di kartu **membantu** dalam hal: (a) membuat form yang jarang muncul dalam input natural menjadi salient; (b) menyediakan *attentional anchor* yang mempersiapkan learner untuk notice pola dalam input berikutnya (Robinson 1996 **[GA-24]**; DeKeyser 2003 **[GA-19b]**); (c) khususnya efektif untuk aturan dengan low instance frequency (Hulstijn & de Graaff 1994 **[GA-23]**).
 - Explicit rules di kartu **tidak cukup sendiri**: declarative knowledge tentang aturan tidak secara otomatis menghasilkan procedural fluency — untuk itu dibutuhkan production practice (*Cross-reference §12.4 [OT-18–OT-24]*; *Cross-reference §2.5 di bawah*).
 - **Konfigurasi yang optimal:** Kartu yang menampilkan pola gramatikal dengan contoh kalimat representatif, penjelasan eksplisit singkat, dan mode type-answer (bukan hanya recognition) mengkombinasikan keunggulan explicit noticing dengan minimal production practice yang diprediksi oleh Skill Acquisition Theory.
 
@@ -405,7 +404,7 @@ CxG dan chunking research secara kolektif menghasilkan beberapa implikasi operas
 
 | ID | Referensi | DOI/Catatan | Peran | Subseksi |
 |---|---|---|---|---|
-| **GA-19** | DeKeyser, R. M. (2003). Implicit and explicit learning. In C. J. Doughty & M. H. Long (Eds.), *The Handbook of Second Language Acquisition* (pp. 313–348). Blackwell. | *(no DOI — book chapter)* | Interface debate — weak interface position | §2.4 |
+| **GA-19b** | DeKeyser, R. M. (2003). Implicit and explicit learning. In C. J. Doughty & M. H. Long (Eds.), *The Handbook of Second Language Acquisition* (pp. 313–348). Blackwell. | *(no DOI — book chapter)* | Interface debate — weak interface position (disambiguated from Kanno 2007 [GA-19]) | §2.4 |
 | **GA-20** | DeKeyser, R. M. (2005). What makes learning second-language grammar difficult? A review of issues. *Language Learning, 55*(S1), 1–25. | https://doi.org/10.1111/j.0023-8333.2005.00294.x | Rule complexity dan conditions for explicit learning | §2.4 |
 | **GA-21** | DeKeyser, R. M. (2015). Skill acquisition theory. In B. VanPatten & J. Williams (Eds.), *Theories in Second Language Acquisition: An Introduction* (2nd ed., pp. 94–112). Routledge. | *(no DOI — book chapter)* | Sintesis interface debate terbaru — explicit sebagai akselerator | §2.4 |
 | **GA-22** | Ellis, R. (2008). *The Study of Second Language Acquisition* (2nd ed.). Oxford University Press. | ISBN: 978-0194422574 | Panorama komprehensif grammar learning research | §2.4 |
@@ -419,8 +418,8 @@ CxG dan chunking research secara kolektif menghasilkan beberapa implikasi operas
 | **GA-30** | Ellis, N. C. (2001). Memory for language. In P. Robinson (Ed.), *Cognition and Second Language Instruction* (pp. 33–68). Cambridge University Press. | *(no DOI — book chapter)* | Chunking mechanism — dari formulaic sequences ke productive grammar | §2.6 |
 | **GA-31** | Bybee, J. (2010). *Language, Usage and Cognition.* Cambridge University Press. | https://doi.org/10.1017/CBO9780511750526 | Usage-based linguistics — token & type frequency dalam grammar acquisition | §2.6 |
 
-**Total GA citations (Part 2):** 13 (GA-19–GA-31)  
-**Total §2 citations combined (Part 1 + Part 2):** 31 canonical citations (GA-01–GA-31)
+**Total GA citations (Part 2):** 13 (GA-19b, GA-20–GA-31)  
+**Total §2 citations combined (Part 1 + Part 2):** 31 canonical citations (GA-01–GA-18, GA-19, GA-19b, GA-20–GA-31)
 
 ---
 
@@ -428,7 +427,7 @@ CxG dan chunking research secara kolektif menghasilkan beberapa implikasi operas
 
 | Dari | Ke | Basis |
 |---|---|---|
-| §2.4 [GA-19, GA-24] | §12.2 [Noticing Hypothesis] | Explicit instruction → noticing → incidental acquisition |
+| §2.4 [GA-19b, GA-24] | §12.2 [Noticing Hypothesis] | Explicit instruction → noticing → incidental acquisition |
 | §2.4 | §12.4 [OT-18–OT-24] | Interface debate → proceduralization (do not duplicate) |
 | §2.4 [GA-23] | §1.12 [BC-03, BC-04] | Explicit/implicit distinction dalam SRS design |
 | §2.5 [GA-26] | §12.4 [OT-18–OT-19] | Anderson 1982 → Anderson 1983/1992 (extension) |

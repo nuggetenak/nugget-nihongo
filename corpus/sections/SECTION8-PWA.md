@@ -32,7 +32,7 @@ This document supersedes §8 v1. It expands and deepens every existing subsectio
 | §8.9 | Accessibility & Inclusive Design | Dyslexia, low-vision, cognitive accessibility |
 
 **Total new citations: +107 across §8.1–§8.9**
-**Combined corpus total (§1 + §CA + §5.5 + §8 v2):** approximately **~754 citations**
+**Canonical corpus total:** **807+ unique citations, 539+ verified DOIs** (Corpus v30 Canonical Revision)
 
 ---
 
@@ -1125,7 +1125,7 @@ Universal Design for Learning (UDL) — the CAST framework — provides the acad
 | **TOTAL NEW IN v2** | | **+54 new citations** |
 
 **Total citations in §8 (v1 + v2 combined): approximately 107 citations**
-**Combined corpus total (§1 + §CA + §5.5 + §8 v2): approximately ~754 citations**
+**Canonical corpus total:** **807+ unique citations, 539+ verified DOIs** (Corpus v30 Canonical Revision)
 
 ---
 
@@ -1249,7 +1249,7 @@ These three facts, taken together, establish that the Nugget Nihongo PWA archite
 - **Critical data:** 732,914 Japanese learners in Indonesia across 3,411 institutions as of 2021 survey (most recent available). Indonesia = 2nd globally after China (1,019,197). Indonesian learner count grew 25% between 2015 and 2021 surveys despite the COVID-19 disruption to formal education, suggesting high self-study demand.
 - **Learner profile breakdown:** Secondary school students form the largest segment (~45%); university students (~30%); self-study/community ~25%. Self-study and community learners — the primary Nugget Nihongo target — account for approximately 183,000 learners. This is the specific addressable market for an informal digital platform.
 - **Regional distribution:** Java-concentrated (>60% of all learners), with growing populations in Sumatra and Sulawesi. Urban bias in formal institution data; actual self-study learner count in peri-urban and rural areas is undercounted.
-- **Curriculum Design Note:** The most authoritative data source for the learner market. Cannot be substituted. Verified as `[CIJ-05]` in empirical bibliography audit. Use this data in the methodology page intro and marketing copy.
+- **Curriculum Design Note:** The most authoritative data source for the learner market. Cannot be substituted. Verified as `[CP-28]` in empirical bibliography audit. Use this data in the methodology page intro and marketing copy.
 
 ---
 

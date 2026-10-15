@@ -11,7 +11,7 @@
 - Syntactic Error Analysis of Indonesian Vocational Trainees (LPK): Prihantoro et al. (2024) [EA-26] (DOI: `10.33633/jr.v6i2.11252`)
 - Sokuon Duration & Industrial Intelligibility: Husna & Febriyanti (2022) [EA-25] (DOI: `10.17509/japanedu.v7i1.44578`)
 - Interlanguage Pragmatic Speech Acts & Apology Routines: Haristiani & Christinawati (2024) [EA-24] (DOI: `10.26858/ijole.v8i1.60904`)
-- Workplace Foreign Language Anxiety & Willingness to Communicate: Horwitz, Horwitz, & Cope (1986) [FLA-01], Yashima (2002) [VS-05]
+- Workplace Foreign Language Anxiety & Willingness to Communicate: Horwitz, Horwitz, & Cope (1986) [ID-01], Yashima (2002) [VS-05]
 - Official Regulatory Frameworks: Immigration Services Agency of Japan (2023) [VS-05], Ministry of Health, Labour and Welfare (2019) [VS-28]
 - Clinical Pain Onomatopoeia Communication: Sakamoto, Ueda, Doizaki, & Shimizu (2014) [VS-36] (DOI: `10.20965/jaciii.2014.p1020`)
 - Medical Onomatopoeia Metaphorical Modeling: Doizaki, Matsuda, Utsumi, & Sakamoto (2015) [VS-37] (DOI: `10.5057/ijae.ijae-d-15-00028`)
@@ -489,7 +489,7 @@ Below are 20 concrete, granular workplace interaction scenarios mapped directly 
 
 ## 6. FOREIGN LANGUAGE WORKPLACE ANXIETY (FLWA) MITIGATION PROTOCOL
 
-Indonesian workers in Japan experience heightened **Foreign Language Workplace Anxiety** (Horwitz et al. 1986 [FLA-01]; Yashima 2002 [VS-05]), driven by three acute psychological stressors:
+Indonesian workers in Japan experience heightened **Foreign Language Workplace Anxiety** (Horwitz et al. 1986 [ID-01]; Yashima 2002 [VS-05]), driven by three acute psychological stressors:
 1. **Fear of Negative Evaluation (*Hyouka Fuan*):** Fear that a linguistic slip will lead to dismissal, reprimand, or visa non-renewal.
 2. **Communication Apprehension under Asymmetric Power:** Traditional Indonesian deference to authority figures paralyzes spontaneous speech when facing a strict Japanese foreman (*koujoucho*).
 3. **Cognitive Overload in Auditory Noise:** Decoupling sounds from high-tempo machine chatter causes cognitive panic.

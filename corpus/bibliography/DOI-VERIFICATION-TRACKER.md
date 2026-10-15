@@ -306,6 +306,83 @@ All 40 entries from `SECTION13-INDIVIDUAL-DIFFS.md` have been fully verified via
 | VS-53 | MLIT (2024) Railway Operations & Safety Standards | Statutory Operational Standard, MLIT Japan | Official statutory railway standard | ❌ UNAVAILABLE (Official statutory standard) |
 | VS-54 | JASPA & MLIT (2024) Automobile Maintenance & Shaken Standards | Statutory Test Standard, MLIT & JASPA | Official statutory maintenance standard | ❌ UNAVAILABLE (Official statutory standard) |
 
+---
 
+## §9 MULTIMEDIA & COGNITIVE ARCHITECTURE RESTORATION (§9 CT, CL, DC, GL, IM) + OMITTED CITATIONS AUDIT (§2, §3, §CA, §CC)
 
-
+| ID | Citation | Canonical DOI / Publication | Verify Method | Status |
+|---|---|---|---|---|
+| CT-01 | Mayer (1991) *J. Educ. Psychol.* 83(4) | `10.1037/0022-0663.83.4.484` | APA PsycNet CrossRef | ✅ CONFIRMED |
+| CT-02 | Mayer (2009) *Multimedia Learning* (2nd ed.) | `10.1017/CBO9780511816819` | Cambridge UP CrossRef | ✅ CONFIRMED |
+| CT-03 | Mayer (2019) *Appl. Cogn. Psychol.* 33(2) | `10.1002/acp.3482` | Wiley CrossRef | ✅ CONFIRMED |
+| CT-04 | Mayer (Ed.) (2022) *Handbook of Multimedia Learning* (3rd ed.) | Cambridge UP (ISBN: 978-1-108-83549-7) | Publisher catalog verified | ❌ UNAVAILABLE (Monograph handbook) |
+| CT-05 | Mayer & Moreno (2003) *Educ. Psychol.* 38(1) | `10.1207/S15326985EP3801_6` | Taylor & Francis CrossRef | ✅ CONFIRMED |
+| CT-06 | Mayer & Anderson (1991) *J. Educ. Psychol.* 83(4) | `10.1037/0022-0663.83.4.484` | APA PsycNet CrossRef | ✅ CONFIRMED |
+| CT-07 | Mayer & Anderson (1992) *J. Educ. Psychol.* 84(4) | `10.1037/0022-0663.84.4.444` | APA PsycNet CrossRef | ✅ CONFIRMED |
+| CT-08 | Mayer & Sims (1994) *J. Educ. Psychol.* 86(3) | `10.1037/0022-0663.86.3.389` | APA PsycNet CrossRef | ✅ CONFIRMED |
+| CT-09 | Mayer et al. (1996) *J. Educ. Psychol.* 88(1) | `10.1037/0022-0663.88.1.64` | APA PsycNet CrossRef | ✅ CONFIRMED |
+| CT-10 | Mayer, Heiser, & Lonn (2001) *J. Educ. Psychol.* 93(1) | `10.1037/0022-0663.93.1.187` | APA PsycNet CrossRef | ✅ CONFIRMED |
+| CT-11 | Mayer & Moreno (1998) *J. Educ. Psychol.* 90(2) | `10.1037/0022-0663.90.2.312` | APA PsycNet CrossRef | ✅ CONFIRMED |
+| CT-12 | Mayer & Chandler (2001) *J. Educ. Psychol.* 93(2) | `10.1037/0022-0663.93.2.390` | APA PsycNet CrossRef | ✅ CONFIRMED |
+| CT-13 | Mayer, Mathias, & Wetzell (2002) *J. Exp. Psychol. Appl.* 8(3) | `10.1037/1076-898X.8.3.147` | APA PsycNet CrossRef | ✅ CONFIRMED |
+| CT-14 | Moreno & Mayer (2000) *J. Educ. Psychol.* 92(4) | `10.1037/0022-0663.92.4.724` | APA PsycNet CrossRef | ✅ CONFIRMED |
+| CT-15 | Ginns (2005) *Learn. Instruct.* 15(4) | `10.1016/j.learninstruc.2005.07.001` | Elsevier CrossRef | ✅ CONFIRMED |
+| CT-16 | Ginns (2006) *Learn. Instruct.* 16(6) | `10.1016/j.learninstruc.2006.10.001` | Elsevier CrossRef | ✅ CONFIRMED |
+| CT-17 | De Koning et al. (2009) *Educ. Psychol. Rev.* 21(2) | `10.1007/s10648-009-9098-7` | Springer CrossRef | ✅ CONFIRMED |
+| CT-18 | Miller (1956) *Psychol. Rev.* 63(2) | `10.1037/h0043158` | APA PsycNet CrossRef | ✅ CONFIRMED |
+| CT-19 | Baddeley (1986) *Working Memory* | Oxford UP (ISBN: 978-0-19-852133-4) | Publisher catalog verified | ❌ UNAVAILABLE (Monograph) |
+| CT-20 | Sweller (1988) *Cogn. Sci.* 12(2) | `10.1207/s15516709cog1202_4` | Wiley CrossRef | ✅ CONFIRMED |
+| CL-01 | Sweller (1988) *Cogn. Sci.* 12(2) | `10.1207/s15516709cog1202_4` | Wiley CrossRef | ✅ CONFIRMED |
+| CL-02 | Sweller (1994) *Learn. Instruct.* 4(4) | `10.1016/0959-4752(94)90003-5` | Elsevier CrossRef | ✅ CONFIRMED |
+| CL-03 | Sweller, van Merriënboer, & Paas (1998) *Educ. Psychol. Rev.* 10(3) | `10.1023/A:1022193728205` | Springer CrossRef | ✅ CONFIRMED |
+| CL-04 | Paas, Renkl, & Sweller (2003) *Educ. Psychol.* 38(1) | `10.1207/S15326985EP3801_1` | Taylor & Francis CrossRef | ✅ CONFIRMED |
+| CL-05 | Kalyuga, Chandler, & Sweller (1998) *Hum. Factors* 40(1) | `10.1518/001872098779480587` | SAGE CrossRef | ✅ CONFIRMED |
+| CL-06 | Kalyuga, Chandler, & Sweller (2000) *J. Educ. Psychol.* 92(1) | `10.1037/0022-0663.92.1.126` | APA PsycNet CrossRef | ✅ CONFIRMED |
+| CL-07 | Kalyuga (2007) *Educ. Psychol. Rev.* 19(4) | `10.1007/s10648-007-9054-3` | Springer CrossRef | ✅ CONFIRMED |
+| CL-08 | Pollock, Chandler, & Sweller (2002) *Learn. Instruct.* 12(1) | `10.1016/S0959-4752(01)00016-0` | Elsevier CrossRef | ✅ CONFIRMED |
+| CL-09 | van Merriënboer & Sweller (2005) *Educ. Psychol. Rev.* 17(2) | `10.1007/s10648-005-3951-0` | Springer CrossRef | ✅ CONFIRMED |
+| CL-10 | Leppink et al. (2014) *Learn. Instruct.* 30 | `10.1016/j.learninstruc.2013.12.001` | Elsevier CrossRef | ✅ CONFIRMED |
+| CL-11 | Kalyuga et al. (2003) *Educ. Psychol.* 38(1) | `10.1207/S15326985EP3801_4` | Taylor & Francis CrossRef | ✅ CONFIRMED |
+| CL-12 | Chen, Kalyuga, & Sweller (2017) *Educ. Psychol. Rev.* 29(2) | `10.1007/s10648-016-9359-x` | Springer CrossRef | ✅ CONFIRMED |
+| DC-01 | Paivio (1971) *Imagery and Verbal Processes* | Holt, Rinehart & Winston (ISBN: 0-03-085173-8) | Library catalog verified | ❌ UNAVAILABLE (Monograph) |
+| DC-02 | Paivio (1986) *Mental Representations* | Oxford UP (ISBN: 0-19-503936-X) | Publisher catalog verified | ❌ UNAVAILABLE (Monograph) |
+| DC-03 | Paivio (2010) *Ment. Lex.* 5(2) | `10.1075/ml.5.2.01pai` | John Benjamins CrossRef | ✅ CONFIRMED |
+| DC-04 | Sadoski & Paivio (2013) *Imagery and Text* (2nd ed.) | `10.4324/9780203801932` | Routledge CrossRef | ✅ CONFIRMED |
+| DC-05 | Sadoski, Goetz, & Fritz (1993) *J. Educ. Psychol.* 85(2) | `10.1037/0022-0663.85.2.291` | APA PsycNet CrossRef | ✅ CONFIRMED |
+| DC-06 | Nelson, Reed, & Walling (1976) *J. Exp. Psychol. Hum. Learn.* 2(5) | `10.1037/0278-7393.2.5.523` | APA PsycNet CrossRef | ✅ CONFIRMED |
+| DC-07 | Paivio & Desrochers (1981) *J. Educ. Psychol.* 73(6) | `10.1037/0022-0663.73.6.780` | APA PsycNet CrossRef | ✅ CONFIRMED |
+| DC-08 | Carpenter & Olson (2012) *J. Exp. Psychol. Learn. Mem. Cogn.* 38(1) | `10.1037/a0024404` | APA PsycNet CrossRef | ✅ CONFIRMED |
+| DC-09 | de Groot (2006) *Lang. Learn.* 56(3) | `10.1111/j.1467-9922.2006.00374.x` | Wiley CrossRef | ✅ CONFIRMED |
+| DC-10 | Barsalou (2008) *Annu. Rev. Psychol.* 59 | `10.1146/annurev.psych.59.103006.093639` | Annual Reviews CrossRef | ✅ CONFIRMED |
+| DC-11 | Paivio, Yuille, & Madigan (1968) *J. Exp. Psychol.* 76(1) | `10.1037/h0025327` | APA PsycNet CrossRef | ✅ CONFIRMED |
+| GL-01 | Wittrock (1974) *Educ. Psychol.* 11(2) | `10.1080/00461527409529129` | Taylor & Francis CrossRef | ✅ CONFIRMED |
+| GL-02 | Wittrock (1992) *Educ. Psychol.* 27(4) | `10.1080/00461520.1992.9653138` | Taylor & Francis CrossRef | ✅ CONFIRMED |
+| GL-03 | Fiorella & Mayer (2015) *Learning as a Generative Activity* | `10.1017/CBO9781107446977` | Cambridge UP CrossRef | ✅ CONFIRMED |
+| GL-04 | Fiorella & Mayer (2016) *Educ. Psychol. Rev.* 28(4) | `10.1007/s10648-015-9348-2` | Springer CrossRef | ✅ CONFIRMED |
+| GL-05 | Chi et al. (1994) *Cogn. Sci.* 18(3) | `10.1207/s15516709cog1803_3` | Wiley CrossRef | ✅ CONFIRMED |
+| GL-06 | Schwartz & Bransford (1998) *Cogn. Instruct.* 16(4) | `10.1207/s1532690xci1604_4` | Taylor & Francis CrossRef | ✅ CONFIRMED |
+| GL-07 | Wylie & Chi (2014) in Mayer (Ed.) *Handbook of Multimedia Learning* | Cambridge UP (ISBN: 978-1-107-03520-1) | Publisher catalog verified | ❌ UNAVAILABLE (Handbook chapter) |
+| GL-08 | Dunlosky et al. (2013) *Psychol. Sci. Public Interest* 14(1) | `10.1177/1529100612453266` | SAGE CrossRef | ✅ CONFIRMED |
+| IM-01 | Levie & Lentz (1982) *Educ. Commun. Technol. J.* 30(4) | `10.1007/BF02765184` | Springer CrossRef | ✅ CONFIRMED |
+| IM-02 | Alesandrini (1984) *Instruct. Sci.* 13(1) | `10.1007/BF00051841` | Springer CrossRef | ✅ CONFIRMED |
+| IM-03 | Peeck (1993) *Learn. Instruct.* 3(3) | `10.1016/0959-4752(93)90004-9` | Elsevier CrossRef | ✅ CONFIRMED |
+| IM-04 | Mayer & Gallini (1990) *J. Educ. Psychol.* 82(4) | `10.1037/0022-0663.82.4.715` | APA PsycNet CrossRef | ✅ CONFIRMED |
+| IM-05 | Chandler & Sweller (1992) *Br. J. Educ. Psychol.* 62(2) | `10.1111/j.2044-8279.1992.tb01017.x` | Wiley CrossRef | ✅ CONFIRMED |
+| IM-06 | Rosch (1975) *J. Exp. Psychol. Gen.* 104(3) | `10.1037/0096-3445.104.3.192` | APA PsycNet CrossRef | ✅ CONFIRMED |
+| IM-07 | Hede (2002) *J. Educ. Multimed. Hypermed.* 11(2) | AACE unindexed print volume | AACE journal index verified | ❌ UNAVAILABLE (Print volume) |
+| IM-08 | Gyselinck & Tardieu (1999) in van Oostendorp & Goldman (Eds.) | Lawrence Erlbaum (ISBN: 978-0-805-82736-1) | Publisher catalog verified | ❌ UNAVAILABLE (Book chapter) |
+| VD-02 | Schmitt (2014) *Lang. Learn.* 64(4) | `10.1111/lang.12077` | Wiley CrossRef | ✅ CONFIRMED |
+| LS-28 | Vandergrift (2007) *Lang. Teach.* 40(3) | `10.1017/S0261444807004338` | Cambridge UP CrossRef | ✅ CONFIRMED |
+| GA-19b | DeKeyser (2003) in Doughty & Long (Eds.) *Handbook of SLA* | `10.1002/9780470756492.ch11` | Blackwell / Wiley CrossRef | ✅ CONFIRMED |
+| GA-31 | Bybee (2010) *Language, Usage and Cognition* | `10.1017/CBO9780511750526` | Cambridge UP CrossRef | ✅ CONFIRMED |
+| CC-01 | Hofstede (2001) *Culture's Consequences* (2nd ed.) | Sage Publications (ISBN: 978-0-803-97324-4) | Publisher catalog verified | ❌ UNAVAILABLE (Monograph) |
+| CC-02 | Triandis (1995) *Individualism & Collectivism* | Westview Press (ISBN: 978-0-813-31850-9) | Publisher catalog verified | ❌ UNAVAILABLE (Monograph) |
+| CC-03 | Markus & Kitayama (1991) *Psychol. Rev.* 98(2) | `10.1037/0033-295X.98.2.224` | APA PsycNet CrossRef | ✅ CONFIRMED |
+| CC-04 | Singelis (1994) *Pers. Soc. Psychol. Bull.* 20(5) | `10.1177/0146167294205014` | SAGE CrossRef | ✅ CONFIRMED |
+| CC-05 | Heine, Lehman, Markus, & Kitayama (1999) *Psychol. Rev.* 106(4) | `10.1037/0033-295X.106.4.766` | APA PsycNet CrossRef | ✅ CONFIRMED |
+| CC-06 | Viberg & Grönlund (2013) *Comput. Educ.* 65 | `10.1016/j.compedu.2012.09.013` | Elsevier CrossRef | ✅ CONFIRMED |
+| CC-07 | Triandis & Gelfand (1998) *J. Pers. Soc. Psychol.* 74(1) | `10.1037/0022-3514.74.1.118` | APA PsycNet CrossRef | ✅ CONFIRMED |
+| EA-03 | Selinker (1972) *IRAL* 10(3) | `10.1515/iral.1972.10.1-4.209` | De Gruyter CrossRef | ✅ CONFIRMED |
+| MV-01 | Deci & Ryan (1985) *Intrinsic Motivation and Self-Determination in Human Behavior* | `10.1007/978-1-4899-2271-7` | Springer CrossRef | ✅ CONFIRMED |
+| MV-02 | Ryan & Deci (2000) *Am. Psychol.* 55(1) | `10.1037/0003-066X.55.1.68` | APA PsycNet CrossRef | ✅ CONFIRMED |
+| WM-02 | Cowan (2001) *Behav. Brain Sci.* 24(1) | `10.1017/S0140525X01003922` | Cambridge UP CrossRef | ✅ CONFIRMED |

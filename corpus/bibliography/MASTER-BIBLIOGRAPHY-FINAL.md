@@ -278,6 +278,22 @@ Wilkins, D. A. (1976). *Notional syllabuses.* Oxford University Press. [CA-53]
 
 Willis, D. (1990). *The lexical syllabus: A new approach to language teaching.* Collins COBUILD. [CA-54]
 
+### CC
+
+Hofstede, G. (2001). *Culture's consequences: Comparing values, behaviors, institutions and organizations across nations* (2nd ed.). Sage. [CC-01]
+
+Triandis, H. C. (1995). *Individualism & collectivism.* Westview Press. [CC-02]
+
+Markus, H. R., & Kitayama, S. (1991). Culture and the self: Implications for cognition, emotion, and motivation. *Psychological Review, 98*(2), 224–253. https://doi.org/10.1037/0033-295X.98.2.224 [CC-03]
+
+Singelis, T. M. (1994). The measurement of independent and interdependent self-construals. *Personality and Social Psychology Bulletin, 20*(5), 580–591. https://doi.org/10.1177/0146167294205014 [CC-04]
+
+Heine, S. J., Lehman, D. R., Markus, H. R., & Kitayama, S. (1999). Is there a universal need for positive self-regard? *Psychological Review, 106*(4), 766–794. https://doi.org/10.1037/0033-295X.106.4.766 [CC-05]
+
+Viberg, O., & Grönlund, Å. (2013). Cross-cultural analysis of mobile learning: Observations and lessons from implementations in five countries. *Computers & Education, 65*, 82–94. https://doi.org/10.1016/j.compedu.2012.09.013 [CC-06]
+
+Triandis, H. C., & Gelfand, M. J. (1998). Converging measurement of horizontal and vertical individualism and collectivism. *Journal of Personality and Social Psychology, 74*(1), 118–128. https://doi.org/10.1037/0022-3514.74.1.118 [CC-07]
+
 ### CI
 
 Brunmair, M., & Richter, T. (2019). Similarity matters: A meta-analysis of interleaved learning and its moderators. *Psychological Bulletin, 145*(11), 1029–1052. https://doi.org/10.1037/bul0000209 [CI-01] [COMPASS]
@@ -298,29 +314,29 @@ Pan, S. C. (2015). The interleaving effect: Mixing it up boosts learning. *Scien
 
 ### CL
 
-Sweller, J. (1988). Cognitive load during problem solving: Effects on learning. *Cognitive Science, 12*(2), 257–285. [CL-01]
+Sweller, J. (1988). Cognitive load during problem solving: Effects on learning. *Cognitive Science, 12*(2), 257–285. https://doi.org/10.1207/s15516709cog1202_4 [CL-01]
 
-Sweller, J. (1994). Cognitive load theory, learning difficulty, and instructional design. *Learning and Instruction, 4*(4), 295–312. [CL-02]
+Sweller, J. (1994). Cognitive load theory, learning difficulty, and instructional design. *Learning and Instruction, 4*(4), 295–312. https://doi.org/10.1016/0959-4752(94)90003-5 [CL-02]
 
-Sweller, J., van Merriënboer, J. J. G., & Paas, F. (1998). Cognitive architecture and instructional design. *Educational Psychology Review, 10*(3), 251–296. [CL-03]
+Sweller, J., van Merriënboer, J. J. G., & Paas, F. (1998). Cognitive architecture and instructional design. *Educational Psychology Review, 10*(3), 251–296. https://doi.org/10.1023/A:1022193728205 [CL-03]
 
-Paas, F., Renkl, A., & Sweller, J. (2003). Cognitive load theory and instructional design: Recent developments. *Educational Psychologist, 38*(1), 1–4. [CL-04]
+Paas, F., Renkl, A., & Sweller, J. (2003). Cognitive load theory and instructional design: Recent developments. *Educational Psychologist, 38*(1), 1–4. https://doi.org/10.1207/S15326985EP3801_1 [CL-04]
 
-Kalyuga, S., Chandler, P., & Sweller, J. (1998). Levels of expertise and instructional design. *Human Factors, 40*(1), 1–17. [CL-05]
+Kalyuga, S., Chandler, P., & Sweller, J. (1998). Levels of expertise and instructional design. *Human Factors, 40*(1), 1–17. https://doi.org/10.1518/001872098779480587 [CL-05]
 
-Kalyuga, S., Chandler, P., & Sweller, J. (2000). Incorporating learner experience into the design of multimedia instruction. *Journal of Educational Psychology, 92*(1), 126–136. [CL-06]
+Kalyuga, S., Chandler, P., & Sweller, J. (2000). Incorporating learner experience into the design of multimedia instruction. *Journal of Educational Psychology, 92*(1), 126–136. https://doi.org/10.1037/0022-0663.92.1.126 [CL-06]
 
-Kalyuga, S. (2007). Expertise reversal effect and its implications for learner-tailored instruction. *Educational Psychology Review, 19*(4), 509–539. [CL-07]
+Kalyuga, S. (2007). Expertise reversal effect and its implications for learner-tailored instruction. *Educational Psychology Review, 19*(4), 509–539. https://doi.org/10.1007/s10648-007-9054-3 [CL-07]
 
-Pollock, E., Chandler, P., & Sweller, J. (2002). Assimilating complex information. *Learning and Instruction, 12*(1), 61–86. [CL-08]
+Pollock, E., Chandler, P., & Sweller, J. (2002). Assimilating complex information. *Learning and Instruction, 12*(1), 61–86. https://doi.org/10.1016/S0959-4752(01)00016-0 [CL-08]
 
-van Merriënboer, J. J. G., & Sweller, J. (2005). Cognitive load theory and complex learning: Recent developments and future directions. *Educational Psychology Review, 17*(2), 147–177. [CL-09]
+van Merriënboer, J. J. G., & Sweller, J. (2005). Cognitive load theory and complex learning: Recent developments and future directions. *Educational Psychology Review, 17*(2), 147–177. https://doi.org/10.1007/s10648-005-3951-0 [CL-09]
 
-Leppink, J., Paas, F., van Gog, T., van der Vleuten, C. P. M., & van Merriënboer, J. J. G. (2014). Effects of pairs of problems and examples on task performance and different types of cognitive load. *Learning and Instruction, 30*, 32–42. [CL-10]
+Leppink, J., Paas, F., van Gog, T., van der Vleuten, C. P. M., & van Merriënboer, J. J. G. (2014). Effects of pairs of problems and examples on task performance and different types of cognitive load. *Learning and Instruction, 30*, 32–42. https://doi.org/10.1016/j.learninstruc.2013.12.001 [CL-10]
 
-Kalyuga, S., Ayres, P., Chandler, P., & Sweller, J. (2003). The expertise reversal effect. *Educational Psychologist, 38*(1), 23–31. [CL-11]
+Kalyuga, S., Ayres, P., Chandler, P., & Sweller, J. (2003). The expertise reversal effect. *Educational Psychologist, 38*(1), 23–31. https://doi.org/10.1207/S15326985EP3801_4 [CL-11]
 
-Chen, O., Kalyuga, S., & Sweller, J. (2017). The expertise reversal effect is a variant of the more general element interactivity effect. *Educational Psychology Review, 29*(2), 393–405. [CL-12]
+Chen, O., Kalyuga, S., & Sweller, J. (2017). The expertise reversal effect is a variant of the more general element interactivity effect. *Educational Psychology Review, 29*(2), 393–405. https://doi.org/10.1007/s10648-016-9359-x [CL-12]
 
 ### CM
 
@@ -524,37 +540,45 @@ Wierzbicka, A. (1991). Japanese keywords and core cultural values. *Language in 
 
 ### CT
 
-Mayer, R. E. (2009). *Multimedia learning* (2nd ed.). Cambridge University Press. [CT-02]
+Mayer, R. E. (1991). A cognitive theory of multimedia learning: Implications for design principles. *Journal of Educational Psychology, 83*(4), 484–490. https://doi.org/10.1037/0022-0663.83.4.484 [CT-01]
 
-Mayer, R. E. (2019). Thirty years of research on online learning. *Applied Cognitive Psychology, 33*(2), 152–159. [CT-03]
+Mayer, R. E. (2009). *Multimedia learning* (2nd ed.). Cambridge University Press. https://doi.org/10.1017/CBO9780511816819 [CT-02]
 
-Mayer, R. E. (Ed.). (2022). *The Cambridge handbook of multimedia learning* (3rd ed.). Cambridge University Press. [CT-04]
+Mayer, R. E. (2019). Thirty years of research on online learning. *Applied Cognitive Psychology, 33*(2), 152–159. https://doi.org/10.1002/acp.3482 [CT-03]
 
-Mayer, R. E., & Moreno, R. (2003). Nine ways to reduce cognitive overload in multimedia learning. *Educational Psychologist, 38*(1), 43–52. [CT-05]
+Mayer, R. E. (Ed.). (2022). *The Cambridge handbook of multimedia learning* (3rd ed.). Cambridge University Press. ISBN: 978-1-108-83549-7. [CT-04]
 
-Mayer, R. E., & Anderson, R. B. (1991). Animations need narrations: An experimental test of a dual-coding hypothesis. *Journal of Educational Psychology, 83*(4), 484–490. [CT-06]
+Mayer, R. E., & Moreno, R. (2003). Nine ways to reduce cognitive overload in multimedia learning. *Educational Psychologist, 38*(1), 43–52. https://doi.org/10.1207/S15326985EP3801_6 [CT-05]
 
-Mayer, R. E., & Anderson, R. B. (1992). The instructive animation: Helping students build connections between words and pictures in multimedia learning. *Journal of Educational Psychology, 84*(4), 444–452. [CT-07]
+Mayer, R. E., & Anderson, R. B. (1991). Animations need narrations: An experimental test of a dual-coding hypothesis. *Journal of Educational Psychology, 83*(4), 484–490. https://doi.org/10.1037/0022-0663.83.4.484 [CT-06]
 
-Mayer, R. E., & Sims, V. K. (1994). For whom is a picture worth a thousand words? Extensions of a dual-coding theory of multimedia learning. *Journal of Educational Psychology, 86*(3), 389–401. [CT-08]
+Mayer, R. E., & Anderson, R. B. (1992). The instructive animation: Helping students build connections between words and pictures in multimedia learning. *Journal of Educational Psychology, 84*(4), 444–452. https://doi.org/10.1037/0022-0663.84.4.444 [CT-07]
 
-Mayer, R. E., Bove, W., Bryman, A., Mars, R., & Tapangco, L. (1996). When less is more: Meaningful learning from visual and verbal summaries. *Journal of Educational Psychology, 88*(1), 64–73. [CT-09]
+Mayer, R. E., & Sims, V. K. (1994). For whom is a picture worth a thousand words? Extensions of a dual-coding theory of multimedia learning. *Journal of Educational Psychology, 86*(3), 389–401. https://doi.org/10.1037/0022-0663.86.3.389 [CT-08]
 
-Mayer, R. E., & Moreno, R. (1998). A split-attention effect in multimedia learning: Evidence for dual processing systems in working memory. *Journal of Educational Psychology, 90*(2), 312–320. [CT-11]
+Mayer, R. E., Bove, W., Bryman, A., Mars, R., & Tapangco, L. (1996). When less is more: Meaningful learning from visual and verbal summaries. *Journal of Educational Psychology, 88*(1), 64–73. https://doi.org/10.1037/0022-0663.88.1.64 [CT-09]
 
-Mayer, R. E., & Chandler, P. (2001). When learning is just a click away: Does simple user interaction foster deeper understanding of multimedia messages? *Journal of Educational Psychology, 93*(2), 390–397. [CT-12]
+Mayer, R. E., Heiser, J., & Lonn, S. (2001). Cognitive constraints on multimedia learning: When presenting more material results in less understanding. *Journal of Educational Psychology, 93*(1), 187–198. https://doi.org/10.1037/0022-0663.93.1.187 [CT-10]
 
-Mayer, R. E., Mathias, A., & Wetzell, K. (2002). Fostering understanding of multimedia messages through pre-training: Evidence for a two-stage theory of mental model construction. *Journal of Experimental Psychology: Applied, 8*(3), 147–154. [CT-13]
+Mayer, R. E., & Moreno, R. (1998). A split-attention effect in multimedia learning: Evidence for dual processing systems in working memory. *Journal of Educational Psychology, 90*(2), 312–320. https://doi.org/10.1037/0022-0663.90.2.312 [CT-11]
 
-Moreno, R., & Mayer, R. E. (2000). Engaging students in active learning: The case for personalized multimedia messages. *Journal of Educational Psychology, 92*(4), 724–733. [CT-14]
+Mayer, R. E., & Chandler, P. (2001). When learning is just a click away: Does simple user interaction foster deeper understanding of multimedia messages? *Journal of Educational Psychology, 93*(2), 390–397. https://doi.org/10.1037/0022-0663.93.2.390 [CT-12]
 
-Ginns, P. (2006). Integrating information: A meta-analysis of the spatial contiguity and temporal contiguity effects. *Learning and Instruction, 16*(6), 511–525. [CT-16]
+Mayer, R. E., Mathias, A., & Wetzell, K. (2002). Fostering understanding of multimedia messages through pre-training: Evidence for a two-stage theory of mental model construction. *Journal of Experimental Psychology: Applied, 8*(3), 147–154. https://doi.org/10.1037/1076-898X.8.3.147 [CT-13]
 
-De Koning, B. B., Tabbers, H. K., Rikers, R. M. J. P., & Paas, F. (2009). Towards a framework for attention cueing in instructional animations: Guidelines for research and design. *Educational Psychology Review, 21*(2), 113–140. [CT-17]
+Moreno, R., & Mayer, R. E. (2000). Engaging students in active learning: The case for personalized multimedia messages. *Journal of Educational Psychology, 92*(4), 724–733. https://doi.org/10.1037/0022-0663.92.4.724 [CT-14]
 
-Miller, G. A. (1956). The magical number seven, plus or minus two: Some limits on our capacity for processing information. *Psychological Review, 63*(2), 81–97. [CT-18]
+Ginns, P. (2005). Meta-analysis of the modality effect. *Learning and Instruction, 15*(4), 313–331. https://doi.org/10.1016/j.learninstruc.2005.07.001 *(Canonical entry for CT-15 / AV-02)* [CT-15]
 
-Baddeley, A. D. (1986). *Working memory.* Oxford University Press. [CT-19]
+Ginns, P. (2006). Integrating information: A meta-analysis of the spatial contiguity and temporal contiguity effects. *Learning and Instruction, 16*(6), 511–525. https://doi.org/10.1016/j.learninstruc.2006.10.001 [CT-16]
+
+De Koning, B. B., Tabbers, H. K., Rikers, R. M. J. P., & Paas, F. (2009). Towards a framework for attention cueing in instructional animations: Guidelines for research and design. *Educational Psychology Review, 21*(2), 113–140. https://doi.org/10.1007/s10648-009-9098-7 [CT-17]
+
+Miller, G. A. (1956). The magical number seven, plus or minus two: Some limits on our capacity for processing information. *Psychological Review, 63*(2), 81–97. https://doi.org/10.1037/h0043158 [CT-18]
+
+Baddeley, A. D. (1986). *Working memory.* Oxford University Press. ISBN: 978-0-19-852133-4. [CT-19]
+
+Sweller, J. (1988). Cognitive load during problem solving: Effects on learning. *Cognitive Science, 12*(2), 257–285. https://doi.org/10.1207/s15516709cog1202_4 *(Cross-referenced to CL-01)* [CT-20]
 
 ### CV
 
@@ -570,27 +594,27 @@ Ross, M., Xun, W. Q. E., & Wilson, A. E. (2002). Language and the bicultural sel
 
 ### DC
 
-Paivio, A. (1971). *Imagery and verbal processes.* Holt, Rinehart & Winston. [DC-01]
+Paivio, A. (1971). *Imagery and verbal processes.* Holt, Rinehart & Winston. ISBN: 0-03-085173-8. [DC-01]
 
-Paivio, A. (1986). *Mental representations: A dual coding approach.* Oxford University Press. [DC-02]
+Paivio, A. (1986). *Mental representations: A dual coding approach.* Oxford University Press. ISBN: 0-19-503936-X. [DC-02]
 
-Paivio, A. (2010). Dual coding theory and the mental lexicon. *The Mental Lexicon, 5*(2), 205–230. [DC-03]
+Paivio, A. (2010). Dual coding theory and the mental lexicon. *The Mental Lexicon, 5*(2), 205–230. https://doi.org/10.1075/ml.5.2.01pai [DC-03]
 
-Sadoski, M., & Paivio, A. (2013). *Imagery and text: A dual coding theory of reading and writing* (2nd ed.). Routledge. [DC-04]
+Sadoski, M., & Paivio, A. (2013). *Imagery and text: A dual coding theory of reading and writing* (2nd ed.). Routledge. https://doi.org/10.4324/9780203801932 [DC-04]
 
-Sadoski, M., Goetz, E. T., & Fritz, J. B. (1993). Impact of concreteness on comprehensibility, interest, and memory for text. *Journal of Educational Psychology, 85*(2), 291–304. [DC-05]
+Sadoski, M., Goetz, E. T., & Fritz, J. B. (1993). Impact of concreteness on comprehensibility, interest, and memory for text. *Journal of Educational Psychology, 85*(2), 291–304. https://doi.org/10.1037/0022-0663.85.2.291 [DC-05]
 
-Nelson, D. L., Reed, V. S., & Walling, J. R. (1976). Pictorial superiority effect. *Journal of Experimental Psychology: Human Learning and Memory, 2*(5), 523–528. [DC-06]
+Nelson, D. L., Reed, V. S., & Walling, J. R. (1976). Pictorial superiority effect. *Journal of Experimental Psychology: Human Learning and Memory, 2*(5), 523–528. https://doi.org/10.1037/0278-7393.2.5.523 [DC-06]
 
-Paivio, A., & Desrochers, A. (1981). Mnemonic techniques in second-language learning. *Journal of Educational Psychology, 73*(6), 780–795. [DC-07]
+Paivio, A., & Desrochers, A. (1981). Mnemonic techniques in second-language learning. *Journal of Educational Psychology, 73*(6), 780–795. https://doi.org/10.1037/0022-0663.73.6.780 [DC-07]
 
-Carpenter, S. K., & Olson, K. M. (2012). Are pictures good for learning new vocabulary in a foreign language? Only if you think they are not. *Journal of Experimental Psychology: Learning, Memory, and Cognition, 38*(1), 92–101. [DC-08]
+Carpenter, S. K., & Olson, K. M. (2012). Are pictures good for learning new vocabulary in a foreign language? Only if you think they are not. *Journal of Experimental Psychology: Learning, Memory, and Cognition, 38*(1), 92–101. https://doi.org/10.1037/a0024404 [DC-08]
 
-de Groot, A. M. B. (2006). Effects of stimulus characteristics and background music on foreign language vocabulary learning and forgetting. *Language Learning, 56*(3), 463–506. [DC-09]
+de Groot, A. M. B. (2006). Effects of stimulus characteristics and background music on foreign language vocabulary learning and forgetting. *Language Learning, 56*(3), 463–506. https://doi.org/10.1111/j.1467-9922.2006.00374.x [DC-09]
 
-Barsalou, L. W. (2008). Grounded cognition. *Annual Review of Psychology, 59*, 617–645. [DC-10]
+Barsalou, L. W. (2008). Grounded cognition. *Annual Review of Psychology, 59*, 617–645. https://doi.org/10.1146/annurev.psych.59.103006.093639 [DC-10]
 
-Paivio, A., Yuille, J. C., & Madigan, S. A. (1968). Concreteness, imagery, and meaningfulness values for 925 nouns. *Journal of Experimental Psychology, 76*(1, Pt.2), 1–25. [DC-11]
+Paivio, A., Yuille, J. C., & Madigan, S. A. (1968). Concreteness, imagery, and meaningfulness values for 925 nouns. *Journal of Experimental Psychology, 76*(1, Pt.2), 1–25. https://doi.org/10.1037/h0025327 [DC-11]
 
 ### DD
 
@@ -613,6 +637,8 @@ Bjork, R. A., Dunlosky, J., & Kornell, N. (2013). Self-regulated learning: Belie
 Corder, S. P. (1967). The significance of learners' errors. *International Review of Applied Linguistics in Language Teaching*, *5*(4), 161–170. https://doi.org/10.1515/iral.1967.5.1-4.161 > Section: §5.6.1. Foundational distinction between mistakes (performance failures) and errors (competence failures); errors as evidence of learner hypothesis-testing. Paradigm shift from behaviorist error-prevention to cognitive error-interpretation. [EA-01]
 
 Corder, S. P. (1981). *Error analysis and interlanguage*. Oxford University Press. > Section: §5.6.1. Full procedural framework for EA: collection, identification, classification, explanation, evaluation. Introduces "idiosyncratic dialect" concept — learner production as systematic grammar. [EA-02]
+
+Selinker, L. (1972). Interlanguage. *International Review of Applied Linguistics in Language Teaching*, *10*(3), 209–241. https://doi.org/10.1515/iral.1972.10.1-4.209 > Section: §5.6.2 (Interlanguage Theory). Foundational paper defining interlanguage, language transfer, overgeneralization, and fossilization. Canonical ID for DUP-06 (CP-64 retired). [EA-03]
 
 Nemser, W. (1971). Approximative systems of foreign language learners. *International Review of Applied Linguistics in Language Teaching*, *9*(2), 115–123. https://doi.org/10.1515/iral.1971.9.2.115 > Section: §5.6.2. Independent corroboration of interlanguage concept ("approximative system"); foregrounds developmental/directional character of learner language. [EA-04]
 
@@ -790,6 +816,8 @@ DeKeyser, R. M. (1998). Beyond focus on form: Cognitive perspectives on learning
 
 Kanno, K. (2007). Factors affecting the processing of Japanese relative clauses by L2 learners. *Studies in Second Language Acquisition, 29*(2), 197-218. https://doi.org/10.1017/S0272263107070106 [GA-19]
 
+DeKeyser, R. M. (2003). Implicit and explicit learning. In C. J. Doughty & M. H. Long (Eds.), *The Handbook of Second Language Acquisition* (pp. 313–348). Blackwell Publishing. https://doi.org/10.1002/9780470756492.ch11 [GA-19b]
+
 DeKeyser, R. M. (2005). What makes learning second-language grammar difficult? A review of issues. *Language Learning, 55*(S1), 1-25. https://doi.org/10.1111/j.0023-8333.2005.00294.x [GA-20]
 
 DeKeyser, R. M. (2015). Skill acquisition theory. In B. VanPatten & J. Williams (Eds.), *Theories in second language acquisition* (2nd ed., pp. 94-112). Routledge. [GA-21]
@@ -811,6 +839,8 @@ Goldberg, A. E. (2006). *Constructions at work: The nature of generalization in 
 Wray, A. (2002). *Formulaic language and the lexicon.* Cambridge University Press. https://doi.org/10.1017/CBO9780511519772 [GA-29]
 
 Ellis, N. C. (2001). Memory for language. In P. Robinson (Ed.), *Cognition and Second Language Instruction* (pp. 33–68). Cambridge University Press. [GA-30]
+
+Bybee, J. (2010). *Language, Usage and Cognition.* Cambridge University Press. https://doi.org/10.1017/CBO9780511750526 [GA-31]
 
 ### GE
 
@@ -844,21 +874,21 @@ Faisal, I., & Hijriya, I. (2021). Gamification in Indonesian higher education: A
 
 ### GL
 
-Wittrock, M. C. (1974). Learning as a generative process. *Educational Psychologist, 11*(2), 87–95. [GL-01]
+Wittrock, M. C. (1974). Learning as a generative process. *Educational Psychologist, 11*(2), 87–95. https://doi.org/10.1080/00461527409529129 [GL-01]
 
-Wittrock, M. C. (1992). Generative learning processes of the brain. *Educational Psychologist, 27*(4), 531–541. [GL-02]
+Wittrock, M. C. (1992). Generative learning processes of the brain. *Educational Psychologist, 27*(4), 531–541. https://doi.org/10.1080/00461520.1992.9653138 [GL-02]
 
-Fiorella, L., & Mayer, R. E. (2015). *Learning as a generative activity: Eight learning strategies that promote understanding.* Cambridge University Press. [GL-03]
+Fiorella, L., & Mayer, R. E. (2015). *Learning as a generative activity: Eight learning strategies that promote understanding.* Cambridge University Press. https://doi.org/10.1017/CBO9781107446977 [GL-03]
 
-Fiorella, L., & Mayer, R. E. (2016). Eight ways to promote generative learning. *Educational Psychology Review, 28*(4), 717–741. [GL-04]
+Fiorella, L., & Mayer, R. E. (2016). Eight ways to promote generative learning. *Educational Psychology Review, 28*(4), 717–741. https://doi.org/10.1007/s10648-015-9348-2 [GL-04]
 
-Chi, M. T. H., de Leeuw, N., Chiu, M.-H., & LaVancher, C. (1994). Eliciting self-explanations improves understanding. *Cognitive Science, 18*(3), 439–477. [GL-05]
+Chi, M. T. H., de Leeuw, N., Chiu, M.-H., & LaVancher, C. (1994). Eliciting self-explanations improves understanding. *Cognitive Science, 18*(3), 439–477. https://doi.org/10.1207/s15516709cog1803_3 [GL-05]
 
-Schwartz, D. L., & Bransford, J. D. (1998). A time for telling. *Cognition and Instruction, 16*(4), 475–522. [GL-06]
+Schwartz, D. L., & Bransford, J. D. (1998). A time for telling. *Cognition and Instruction, 16*(4), 475–522. https://doi.org/10.1207/s1532690xci1604_4 [GL-06]
 
-Wylie, R., & Chi, M. T. H. (2014). The self-explanation principle in multimedia learning. In R. E. Mayer (Ed.), *The Cambridge handbook of multimedia learning* (2nd ed., pp. 413–432). Cambridge University Press. [GL-07]
+Wylie, R., & Chi, M. T. H. (2014). The self-explanation principle in multimedia learning. In R. E. Mayer (Ed.), *The Cambridge handbook of multimedia learning* (2nd ed., pp. 413–432). Cambridge University Press. ISBN: 978-1-107-03520-1. [GL-07]
 
-Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J., & Willingham, D. T. (2013). Improving students' learning with effective learning techniques: Promising directions from cognitive and educational psychology. *Psychological Science in the Public Interest, 14*(1), 4–58. [GL-08]
+Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J., & Willingham, D. T. (2013). Improving students' learning with effective learning techniques: Promising directions from cognitive and educational psychology. *Psychological Science in the Public Interest, 14*(1), 4–58. https://doi.org/10.1177/1529100612453266 [GL-08]
 
 ### GM
 
@@ -1000,21 +1030,21 @@ Clément, R., Dörnyei, Z., & Noels, K. A. (1994). Motivation, self-confidence, 
 
 ### IM
 
-Levie, W. H., & Lentz, R. (1982). Effects of text illustrations: A review of research. *Educational Communication and Technology Journal, 30*(4), 195–232. [IM-01]
+Levie, W. H., & Lentz, R. (1982). Effects of text illustrations: A review of research. *Educational Communication and Technology Journal, 30*(4), 195–232. https://doi.org/10.1007/BF02765184 [IM-01]
 
-Alesandrini, K. L. (1984). Pictures and adult learning. *Instructional Science, 13*(1), 63–77. [IM-02]
+Alesandrini, K. L. (1984). Pictures and adult learning. *Instructional Science, 13*(1), 63–77. https://doi.org/10.1007/BF00051841 [IM-02]
 
-Peeck, J. (1993). Increasing picture effects in learning from illustrated text. *Learning and Instruction, 3*(3), 227–238. [IM-03]
+Peeck, J. (1993). Increasing picture effects in learning from illustrated text. *Learning and Instruction, 3*(3), 227–238. https://doi.org/10.1016/0959-4752(93)90004-9 [IM-03]
 
-Mayer, R. E., & Gallini, J. K. (1990). When is an illustration worth ten thousand words? *Journal of Educational Psychology, 82*(4), 715–726. [IM-04]
+Mayer, R. E., & Gallini, J. K. (1990). When is an illustration worth ten thousand words? *Journal of Educational Psychology, 82*(4), 715–726. https://doi.org/10.1037/0022-0663.82.4.715 [IM-04]
 
-Chandler, P., & Sweller, J. (1992). The split-attention effect as a factor in the design of instruction. *British Journal of Educational Psychology, 62*(2), 233–246. [IM-05]
+Chandler, P., & Sweller, J. (1992). The split-attention effect as a factor in the design of instruction. *British Journal of Educational Psychology, 62*(2), 233–246. https://doi.org/10.1111/j.2044-8279.1992.tb01017.x [IM-05]
 
-Rosch, E. (1975). Cognitive representations of semantic categories. *Journal of Experimental Psychology: General, 104*(3), 192–233. [IM-06]
+Rosch, E. (1975). Cognitive representations of semantic categories. *Journal of Experimental Psychology: General, 104*(3), 192–233. https://doi.org/10.1037/0096-3445.104.3.192 [IM-06]
 
 Hede, A. (2002). An integrated model of multimedia effects on learning. *Journal of Educational Multimedia and Hypermedia, 11*(2), 177–191. [IM-07]
 
-Gyselinck, V., & Tardieu, H. (1999). The role of illustrations in text comprehension: What, when, for whom, and why? In H. van Oostendorp & S. R. Goldman (Eds.), *The construction of mental representations during reading* (pp. 195–218). Lawrence Erlbaum. [IM-08]
+Gyselinck, V., & Tardieu, H. (1999). The role of illustrations in text comprehension: What, when, for whom, and why? In H. van Oostendorp & S. R. Goldman (Eds.), *The construction of mental representations during reading* (pp. 195–218). Lawrence Erlbaum. ISBN: 978-0-805-82736-1. [IM-08]
 
 ### KR
 
@@ -1101,6 +1131,14 @@ Levy, M., & Stockwell, G. (2006). *CALL dimensions: Options and issues in comput
 Vandergrift, L., & Goh, C. C. M. (2012). *Teaching and learning second language listening: Metacognition in action*. Routledge. [LS-26]
 
 Rost, M. (2011). *Teaching and researching listening* (2nd ed.). Pearson Longman. [LS-27]
+
+Vandergrift, L. (2007). Recent developments in second and foreign language listening comprehension research. *Language Teaching, 40*(3), 191–210. https://doi.org/10.1017/S0261444807004338 [LS-28]
+
+### MV
+
+Deci, E. L., & Ryan, R. M. (1985). *Intrinsic motivation and self-determination in human behavior.* Springer. https://doi.org/10.1007/978-1-4899-2271-7 [MV-01]
+
+Ryan, R. M., & Deci, E. L. (2000). Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being. *American Psychologist, 55*(1), 68–78. https://doi.org/10.1037/0003-066X.55.1.68 [MV-02]
 
 ### OD
 
@@ -1522,6 +1560,8 @@ VanPatten, B. (1996). *Input processing and grammar instruction: Theory and rese
 
 Read, J. (2004). Plumbing the depths: How should the construct of vocabulary knowledge be defined? In P. Bogaards & B. Laufer (Eds.), *Vocabulary in a second language: Selection, acquisition, and testing* (pp. 209–227). John Benjamins. [VD-01]
 
+Schmitt, N. (2014). Size and depth of vocabulary knowledge: What the research shows. *Language Learning, 64*(4), 913–951. https://doi.org/10.1111/lang.12077 [VD-02]
+
 Qian, D. D. (1999). Assessing the roles of depth and breadth of vocabulary knowledge in reading comprehension. *Canadian Modern Language Review, 56*(2), 282–307. https://doi.org/10.3138/cmlr.56.2.282 [VD-03]
 
 Henriksen, B. (1999). Three dimensions of vocabulary development. *Studies in Second Language Acquisition, 21*(2), 303–317. https://doi.org/10.1017/S0272263199002028 [VD-04]
@@ -1683,7 +1723,7 @@ Kondo, D. S., & Ying-Ling, Y. (2004). Strategies for coping with language anxiet
 
 Saito, Y., Garza, T. J., & Horwitz, E. K. (1999). Foreign language reading anxiety. *The Modern Language Journal, 83*(2), 202–218. https://doi.org/10.1111/0026-7902.00016 [§8/§5/§CA]
 
-Cowan, N. (2001). The magical number 4 in short-term memory: A reconsideration of mental storage capacity. *Behavioral and Brain Sciences, 24*(1), 87–114. https://doi.org/10.1017/S0140525X01003922 [§8/§5/§CA]
+Cowan, N. (2001). The magical number 4 in short-term memory: A reconsideration of mental storage capacity. *Behavioral and Brain Sciences, 24*(1), 87–114. https://doi.org/10.1017/S0140525X01003922 [WM-02] [§8/§5/§CA]
 
 Sutedi, D. (2003). *Dasar-Dasar Linguistik Bahasa Jepang*. Humaniora Utama Press, Bandung. [Chapter on Japanese writing system and pedagogy for Indonesian learners] [§8/§5/§CA]
 
@@ -1750,7 +1790,7 @@ App Annie (data.ai). (2022). *State of mobile 2022: Southeast Asia.* data.ai. [S
 
 StatCounter GlobalStats. (2024). *Mobile operating system market share Indonesia.* StatCounter. Retrieved from https://gs.statcounter.com/os-market-share/mobile/indonesia [SM-10] [MALL/§8.10 — Canonical Bibliographic Audit]
 
-Triandis, H. C., & Gelfand, M. J. (1998). Converging measurement of horizontal and vertical individualism and collectivism. *Journal of Personality and Social Psychology, 74*(1), 118–128. https://doi.org/10.1037/0022-3514.74.1.118 [CC-17] [CC/§8.11 — Canonical Bibliographic Audit]
+Triandis, H. C., & Gelfand, M. J. (1998). Converging measurement of horizontal and vertical individualism and collectivism. *Journal of Personality and Social Psychology, 74*(1), 118–128. https://doi.org/10.1037/0022-3514.74.1.118 *(Canonical entry at CC-07)* [CC-07]
 
 ### INLINE REFERENCES (author-year only, full APA needed)
 
@@ -1802,10 +1842,6 @@ Hidi, S., & Renninger, K. A. (2006). The four-phase model of interest developmen
 
 Hockly, N. (2013). Mobile learning. *ELT Journal, 67*(1), 80-84. https://doi.org/10.1093/elt/ccs064 [INLINE]
 
-Hofstede, G. (2001). *Culture's consequences: Comparing values, behaviors, institutions and organizations across nations* (2nd ed.). Sage. [INLINE]
-
-Hofstede, G., Hofstede, G. J., & Minkov, M. (2010). *Cultures and organizations: Software of the mind* (3rd ed.). McGraw-Hill. [INLINE]
-
 Huang, B., & Hew, K. F. (2018). Implementing a theory-driven gamification model in higher education flipped courses. *Computers & Education, 125*, 254-272. https://doi.org/10.1016/j.compedu.2018.06.018 [INLINE]
 
 Hulme, C., & Snowling, M. J. (2009). *Developmental disorders of language learning and cognition.* Wiley-Blackwell. [INLINE]
@@ -1824,8 +1860,6 @@ Lamb, M. (2012). A self system perspective on young adolescents' motivation to l
 
 Loewen, S. (2015). *Introduction to instructed second language acquisition.* Routledge. [INLINE]
 
-Markus, H. R., & Kitayama, S. (1991). Culture and the self: Implications for cognition, emotion, and motivation. *Psychological Review, 98*(2), 224-253. https://doi.org/10.1037/0033-295X.98.2.224 [INLINE]
-
 McCall, J. (2012). Gaming the past: Using video games to teach secondary history. Routledge. [INLINE]
 
 McLean, S., & Kramer, B. (2015). The creation of a new vocabulary levels test. *Shiken Research Bulletin, 19*(2), 1-11. [INLINE]
@@ -1842,13 +1876,9 @@ Pekrun, R., Goetz, T., Titz, W., & Perry, R. P. (2002). Academic emotions in stu
 
 Ryan, R. M., & Deci, E. L. (2017). *Self-determination theory: Basic psychological needs in motivation, development, and wellness.* Guilford Press. [INLINE]
 
-Singelis, T. M. (1994). The measurement of independent and interdependent self-construals. *Personality and Social Psychology Bulletin, 20*(5), 580-591. https://doi.org/10.1177/0146167294205014 [INLINE]
-
 Stockwell, G. (2012). *Computer-assisted language learning: Diversity in research and practice.* Cambridge University Press. [INLINE]
 
 Thorne, S. L. (2003). Artifacts and cultures-of-use in intercultural communication. *Language Learning & Technology, 7*(2), 38-67. [INLINE]
-
-Triandis, H. C. (1995). *Individualism & collectivism.* Westview Press. [INLINE]
 
 VanPatten, B. (Ed.). (2004). *Processing instruction: Theory, research, and commentary.* Lawrence Erlbaum. [INLINE]
 
