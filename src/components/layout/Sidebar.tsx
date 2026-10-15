@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, BookOpen, Layers, Sprout, Sparkles, Settings, HelpCircle, History, Quote, Wrench } from 'lucide-react';
+import { Home, BookOpen, Layers, Sprout, Brain, Sparkles, Settings, HelpCircle, History, Quote, Wrench } from 'lucide-react';
 import { useAppStore, AppState } from '../../store/useAppStore';
 import { APP_VERSION } from '../../config/version';
 
@@ -19,7 +19,7 @@ export const Sidebar: React.FC = () => {
     { id: 'home', label: 'Beranda', jp: 'ホーム', icon: <Home className="w-5 h-5" /> },
     { id: 'materi', label: 'Materi Hub', jp: '学習', icon: <BookOpen className="w-5 h-5" /> },
     { id: 'quiz', label: 'Arena Kuis', jp: '練習', icon: <Layers className="w-5 h-5" /> },
-    { id: 'kebun', label: 'Kebun Kata', jp: '庭園', icon: <Sprout className="w-5 h-5" /> },
+    { id: 'kebun', label: 'Pusat Retensi', jp: '保持', icon: <Brain className="w-5 h-5" /> },
     { 
       id: 'sensei', 
       label: 'Sensei AI', 

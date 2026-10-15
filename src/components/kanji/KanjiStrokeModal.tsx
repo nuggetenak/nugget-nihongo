@@ -141,7 +141,7 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
       setCurrentStep(0);
     }
 
-    const delay = Math.round(750 / playbackSpeed);
+    const delay = Math.round(1350 / playbackSpeed);
     const interval = setInterval(() => {
       setCurrentStep((prev) => {
         if (prev >= strokeData.paths.length) {
@@ -379,24 +379,24 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
         {/* Modal Header */}
         <div className="flex items-center justify-between px-5 sm:px-6 py-3.5 border-b border-theme bg-surface-2/40">
           <div className="flex items-center gap-3">
-            <span className="text-3xl sm:text-4xl font-black text-theme-primary font-japanese leading-none">
+            <span className="text-3xl sm:text-4xl font-black text-accent font-japanese leading-none">
               {kanji.character}
             </span>
             <div>
               <div className="flex items-center gap-2">
-                <span className="px-2 py-0.5 rounded text-xs font-bold bg-theme-primary/10 text-theme-primary border border-theme-primary/20">
+                <span className="px-2 py-0.5 rounded text-xs font-bold bg-amber-500/15 text-accent border border-amber-500/25">
                   {kanji.level}
                 </span>
-                <span className="text-xs text-muted font-medium">
+                <span className="text-xs text-appText-muted font-medium">
                   {totalStrokes} Goresan
                 </span>
                 {kanji.grade > 0 && (
-                  <span className="text-xs text-muted/70">
+                  <span className="text-xs text-appText-muted/70">
                     Kelas {kanji.grade}
                   </span>
                 )}
               </div>
-              <p className="text-sm font-semibold text-text truncate max-w-[220px] sm:max-w-xs mt-0.5">
+              <p className="text-sm font-semibold text-appText-bright truncate max-w-[220px] sm:max-w-xs mt-0.5">
                 {meaningsId}
               </p>
             </div>
@@ -404,7 +404,7 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
           <button
             onClick={onClose}
             aria-label="Tutup modal"
-            className="w-10 h-10 rounded-full flex items-center justify-center text-muted hover:text-text hover:bg-surface-2 transition-colors active:scale-95"
+            className="w-10 h-10 rounded-full flex items-center justify-center text-appText-muted hover:text-appText-bright hover:bg-surface-2 transition-colors active:scale-95"
           >
             <X size={20} />
           </button>
@@ -416,8 +416,8 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
             onClick={() => setActiveTab('animate')}
             className={`flex-1 py-3 text-xs sm:text-sm font-bold flex items-center justify-center gap-2 border-b-2 transition-colors ${
               activeTab === 'animate'
-                ? 'border-theme-primary text-theme-primary'
-                : 'border-transparent text-muted hover:text-text'
+                ? 'border-accent text-accent font-black'
+                : 'border-transparent text-appText-muted hover:text-appText-bright'
             }`}
           >
             <Play size={16} />
@@ -427,8 +427,8 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
             onClick={() => setActiveTab('practice')}
             className={`flex-1 py-3 text-xs sm:text-sm font-bold flex items-center justify-center gap-2 border-b-2 transition-colors ${
               activeTab === 'practice'
-                ? 'border-theme-primary text-theme-primary'
-                : 'border-transparent text-muted hover:text-text'
+                ? 'border-accent text-accent font-black'
+                : 'border-transparent text-appText-muted hover:text-appText-bright'
             }`}
           >
             <PenTool size={16} />
@@ -440,7 +440,7 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
         <div className="p-4 sm:p-6 overflow-y-auto space-y-4 flex-1">
           {/* Main Visual Stage with Traditional Calligraphy Grid */}
           <div
-            className={`relative mx-auto w-64 h-64 sm:w-72 sm:h-72 rounded-2xl bg-surface-2/60 border-2 border-theme-primary/30 flex items-center justify-center shadow-inner overflow-hidden select-none transition-transform ${
+            className={`relative mx-auto w-64 h-64 sm:w-72 sm:h-72 rounded-2xl bg-surface-2/60 border border-theme flex items-center justify-center shadow-inner overflow-hidden select-none transition-transform ${
               wobble ? 'animate-soft-shake border-red-500' : ''
             }`}
           >
@@ -457,8 +457,8 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
             </svg>
 
             {loading ? (
-              <div className="flex flex-col items-center gap-2 text-muted">
-                <div className="w-8 h-8 border-2 border-theme-primary border-t-transparent rounded-full animate-spin" />
+              <div className="flex flex-col items-center gap-2 text-appText-muted">
+                <div className="w-8 h-8 border-2 border-accent border-t-transparent rounded-full animate-spin" />
                 <span className="text-xs">Memuat goresan kanji...</span>
               </div>
             ) : activeTab === 'animate' ? (
@@ -478,7 +478,7 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
                         fill="none"
                         stroke="currentColor"
                         strokeWidth="4"
-                        className="opacity-15 text-muted"
+                        className="opacity-15 text-appText-muted"
                       />
                     ))}
 
@@ -490,14 +490,14 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
                           key={`active-${idx}`}
                           d={d}
                           fill="none"
-                          stroke={isLatest ? '#F59E0B' : '#C29B38'}
+                          stroke={isLatest ? '#F59E0B' : '#D97706'}
                           strokeWidth={isLatest ? '5.5' : '4.5'}
                           pathLength="1000"
                           strokeDasharray="1000"
-                          strokeDashoffset="0"
+                          strokeDashoffset={isLatest ? "1000" : "0"}
                           className={isLatest ? 'animate-draw-stroke' : ''}
                           style={{
-                            animationDuration: isLatest ? `${Math.round(650 / playbackSpeed)}ms` : undefined,
+                            animationDuration: isLatest ? `${Math.round(1200 / playbackSpeed)}ms` : undefined,
                           }}
                         />
                       );
@@ -607,18 +607,18 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
                 {/* Completion Overlay Banner */}
                 {isPracticeComplete && (
                   <div className="absolute inset-0 bg-surface/85 backdrop-blur-sm flex flex-col items-center justify-center p-4 text-center animate-fade-in">
-                    <div className="w-12 h-12 rounded-full bg-theme-primary/20 text-theme-primary flex items-center justify-center mb-2">
+                    <div className="w-12 h-12 rounded-full bg-amber-500/20 text-accent flex items-center justify-center mb-2">
                       <CheckCircle2 size={28} />
                     </div>
-                    <span className="text-base font-black text-theme-primary">
+                    <span className="text-base font-black text-accent">
                       Latihan Tuntas!
                     </span>
-                    <p className="text-xs text-muted mt-1 max-w-[200px]">
+                    <p className="text-xs text-appText-muted mt-1 max-w-[200px]">
                       Kamu berhasil menulis seluruh goresan kanji 「{kanji.character}」 dengan urutan yang tepat!
                     </p>
                     <button
                       onClick={handleResetPractice}
-                      className="mt-3 px-4 py-2 rounded-xl bg-theme-primary text-white text-xs font-bold hover:brightness-110 active:scale-95 transition-all flex items-center gap-1.5 shadow-sm"
+                      className="mt-3 px-4 py-2 rounded-xl bg-amber-500 hover:bg-amber-600 text-stone-950 font-black text-xs active:scale-95 transition-all flex items-center gap-1.5 shadow-sm"
                     >
                       <RotateCcw size={14} />
                       <span>Ulangi Latihan</span>
@@ -645,7 +645,7 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
                 <button
                   onClick={() => setIsPlaying(!isPlaying)}
                   aria-label={isPlaying ? 'Jeda animasi' : 'Putar animasi'}
-                  className="px-5 py-2.5 rounded-full flex items-center gap-2 font-bold text-xs sm:text-sm bg-theme-primary text-white shadow-md hover:brightness-110 transition-transform active:scale-95"
+                  className="px-5 py-2.5 rounded-full flex items-center gap-2 font-black text-xs sm:text-sm bg-amber-500 hover:bg-amber-600 text-stone-950 shadow-md transition-transform active:scale-95"
                 >
                   {isPlaying ? <Pause size={16} /> : <Play size={16} />}
                   <span>{isPlaying ? 'Jeda' : 'Putar Animasi'}</span>
@@ -678,7 +678,7 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
               </div>
 
               {/* Secondary Speed & Number Toggles */}
-              <div className="flex items-center justify-between w-full max-w-xs text-xs text-muted pt-1">
+              <div className="flex items-center justify-between w-full max-w-xs text-xs text-appText-muted pt-1">
                 <div className="flex items-center gap-1">
                   <span className="text-[11px] font-medium mr-1">Kecepatan:</span>
                   {[0.75, 1, 1.5].map((spd) => (
@@ -687,8 +687,8 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
                       onClick={() => setPlaybackSpeed(spd)}
                       className={`px-2 py-0.5 rounded text-[10px] font-bold transition-all ${
                         playbackSpeed === spd
-                          ? 'bg-theme-primary/20 text-theme-primary border border-theme-primary/30'
-                          : 'bg-surface-2 text-muted hover:text-text'
+                          ? 'bg-amber-500/20 text-accent border border-amber-500/30 font-black'
+                          : 'bg-surface-2 text-appText-muted hover:text-appText-bright'
                       }`}
                     >
                       {spd}x
@@ -699,14 +699,14 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
                 <button
                   onClick={() => setShowNumbers(!showNumbers)}
                   className={`text-[11px] font-semibold underline underline-offset-2 ${
-                    showNumbers ? 'text-theme-primary' : 'text-muted'
+                    showNumbers ? 'text-accent' : 'text-appText-muted'
                   }`}
                 >
                   {showNumbers ? 'Sembunyikan Nomor' : 'Tampilkan Nomor'}
                 </button>
               </div>
 
-              <span className="text-xs text-muted font-medium">
+              <span className="text-xs text-appText-muted font-medium">
                 Goresan ke-{currentStep} dari {totalStrokes}
               </span>
             </div>
@@ -716,12 +716,12 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
               {/* Practice Guidance Alert Bar */}
               <div className="p-2.5 rounded-xl bg-surface-2 border border-theme flex items-center justify-between gap-2">
                 <div className="flex items-center gap-2 min-w-0">
-                  <Zap size={14} className="text-theme-primary shrink-0" />
-                  <p className="text-xs text-text truncate font-medium">
+                  <Zap size={14} className="text-accent shrink-0" />
+                  <p className="text-xs text-appText-bright truncate font-medium">
                     {practiceHint}
                   </p>
                 </div>
-                <span className="text-xs font-bold font-mono text-theme-primary shrink-0">
+                <span className="text-xs font-bold font-mono text-accent shrink-0">
                   {practiceStep}/{totalStrokes}
                 </span>
               </div>
@@ -730,7 +730,7 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
                 <button
                   onClick={handleUndoPracticeStroke}
                   disabled={practiceStep === 0}
-                  className="px-3.5 py-1.5 rounded-xl flex items-center gap-1.5 text-xs font-semibold border border-theme bg-surface hover:bg-surface-2 text-text transition-transform active:scale-95 disabled:opacity-30 disabled:pointer-events-none"
+                  className="px-3.5 py-1.5 rounded-xl flex items-center gap-1.5 text-xs font-semibold border border-theme bg-surface hover:bg-surface-2 text-appText-bright transition-transform active:scale-95 disabled:opacity-30 disabled:pointer-events-none"
                 >
                   <Undo2 size={14} />
                   <span>Urungkan Goresan</span>
@@ -738,7 +738,7 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
 
                 <button
                   onClick={handleResetPractice}
-                  className="px-3.5 py-1.5 rounded-xl flex items-center gap-1.5 text-xs font-semibold border border-theme bg-surface hover:bg-surface-2 text-text transition-transform active:scale-95"
+                  className="px-3.5 py-1.5 rounded-xl flex items-center gap-1.5 text-xs font-semibold border border-theme bg-surface hover:bg-surface-2 text-appText-bright transition-transform active:scale-95"
                 >
                   <RotateCcw size={14} />
                   <span>Ulangi Semua</span>
@@ -748,8 +748,8 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
                   onClick={() => setShowGuide(!showGuide)}
                   className={`px-3.5 py-1.5 rounded-xl flex items-center gap-1.5 text-xs font-semibold border transition-transform active:scale-95 ${
                     showGuide
-                      ? 'border-theme-primary/40 bg-theme-primary/10 text-theme-primary'
-                      : 'border-theme bg-surface text-muted'
+                      ? 'border-amber-500/40 bg-amber-500/15 text-accent font-bold'
+                      : 'border-theme bg-surface text-appText-muted'
                   }`}
                 >
                   <Eye size={14} />
@@ -870,7 +870,7 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
               }
               onClose();
             }}
-            className="flex-1 py-2.5 px-4 rounded-xl flex items-center justify-center gap-2 text-xs sm:text-sm font-bold bg-theme-primary/10 text-theme-primary border border-theme-primary/20 hover:bg-theme-primary/20 transition-all active:scale-95"
+            className="flex-1 py-2.5 px-4 rounded-xl flex items-center justify-center gap-2 text-xs sm:text-sm font-bold bg-amber-500/15 text-accent border border-amber-500/25 hover:bg-amber-500/25 transition-all active:scale-95"
           >
             <MessageSquare size={16} />
             <span>🍵 Tanya Sensei tentang Kanji 「{kanji.character}」</span>

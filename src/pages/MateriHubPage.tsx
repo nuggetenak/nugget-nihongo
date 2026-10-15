@@ -26,6 +26,7 @@ import { ConjugationModal } from '../components/grammar/ConjugationModal';
 import { NuanceCompareModal } from '../components/grammar/NuanceCompareModal';
 import { SkeletonGrid } from '../components/ui/SkeletonCard';
 import { loadFreewayTrack } from '../lib/data/dataManager';
+import { JapaneseFormattedText } from '../components/ui/JapaneseFormattedText';
 
 export const MateriHubPage: React.FC = () => {
   const {
@@ -159,7 +160,7 @@ export const MateriHubPage: React.FC = () => {
             Materi Hub <span className="text-xs sm:text-base font-normal text-appText-muted">· 学習ハブ</span>
           </h1>
           <p className="text-xs sm:text-sm text-appText-muted mt-0.5 hidden sm:block">
-            Eksplor 4.800+ kosakata dan 850+ tata bahasa lengkap dengan audio pelafalan asli.
+            Eksplor 10.500+ kosakata dan 850+ tata bahasa lengkap dengan audio pelafalan asli.
           </p>
         </div>
 
@@ -846,7 +847,7 @@ export const MateriHubPage: React.FC = () => {
 
                 {item.examples?.[0] && (
                   <div className="mt-3 pt-3 border-t border-accent/10 text-xs text-appText-muted italic">
-                    "{item.examples[0].jp}" ({item.examples[0].id})
+                    <JapaneseFormattedText text={`"${item.examples[0].jp}"`} /> ({item.examples[0].id})
                   </div>
                 )}
               </div>

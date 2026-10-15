@@ -1836,4 +1836,57 @@ window.vocabN3_Expressions = [
     "review_notes": ""
   }
 },
+
+// ── Staged Expansion (1) ──
+
+{
+  "id": "vg-n3-02468",
+  "word": "男の人",
+  "reading": "おとこのひと",
+  "romaji": "otokonohito",
+  "meaning_id": "man",
+  "meaning_en": "man",
+  "jlpt": "n3",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N3: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "若い男の人がドアの前で歌っています。",
+      "id": "A young man is singing in front of the door.",
+      "level": "n3",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "写真のこの男の人を知っていますか。",
+      "id": "Do you know this man in the picture?",
+      "level": "n3",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+}
+
 ];

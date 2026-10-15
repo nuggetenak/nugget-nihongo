@@ -616,4 +616,57 @@ window.vocabN4_Expressions = [
     "review_notes": ""
   }
 },
+
+// ── Staged Expansion (1) ──
+
+{
+  "id": "vg-n4-01058",
+  "word": "これから",
+  "reading": "これから",
+  "romaji": "korekara",
+  "meaning_id": "after this",
+  "meaning_en": "after this",
+  "jlpt": "n4",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "これからも人生を楽しんでください。",
+      "id": "Wishing you an enjoyable future.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "これからはもっと勉強します。",
+      "id": "I'll study harder in the future.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+}
+
 ];

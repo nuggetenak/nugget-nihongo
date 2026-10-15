@@ -41,7 +41,7 @@ const FAQ_LIST: FAQItem[] = [
     id: 'faq-2',
     category: 'umum',
     q: 'Apakah aplikasi ini benar-benar bisa dipakai 100% offline tanpa kuota?',
-    a: 'Ya, 100%! Seluruh basis data (4.800+ kosakata dan 850+ pola tata bahasa), mesin evaluasi kuis, konjugasi verba, pelacak memori FSRS, dan sintesis suara pelafalan (Web Speech API) berjalan secara lokal di perangkatmu. Kamu bisa belajar lancar saat naik pesawat, kereta bawah tanah, atau di daerah tanpa sinyal internet.',
+    a: 'Ya, 100%! Seluruh basis data (10.500+ kosakata dan 850+ pola tata bahasa), mesin evaluasi kuis, konjugasi verba, pelacak memori FSRS, dan sintesis suara pelafalan (Web Speech API) berjalan secara lokal di perangkatmu. Kamu bisa belajar lancar saat naik pesawat, kereta bawah tanah, atau di daerah tanpa sinyal internet.',
   },
   {
     id: 'faq-3',
@@ -325,42 +325,58 @@ export const AboutPage: React.FC = () => {
           <GraduationCap className="w-4 h-4 text-accent" />
           <span>Cakupan Kurikulum & Data Terverifikasi</span>
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-1">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5 pt-1">
           <div className="p-4 rounded-2xl bg-surface-2/80 border border-purple-500/20 flex items-center justify-between">
             <span className="flex items-center gap-2.5 text-xs font-bold text-appText-bright">
-              <span className="w-3 h-3 rounded-full bg-purple-400" />
+              <span className="w-3 h-3 rounded-full bg-purple-400 shrink-0" />
               JLPT N5 (Dasar Pemula)
             </span>
-            <span className="text-xs text-appText-muted font-mono">991 Kosakata · 94 Grammar</span>
+            <span className="text-xs text-appText-muted font-mono">1.321 Kosakata · 94 Grammar</span>
           </div>
 
           <div className="p-4 rounded-2xl bg-surface-2/80 border border-orange-500/20 flex items-center justify-between">
             <span className="flex items-center gap-2.5 text-xs font-bold text-appText-bright">
-              <span className="w-3 h-3 rounded-full bg-orange-400" />
+              <span className="w-3 h-3 rounded-full bg-orange-400 shrink-0" />
               JLPT N4 (Percakapan Dasar)
             </span>
-            <span className="text-xs text-appText-muted font-mono">946 Kosakata · 92 Grammar</span>
+            <span className="text-xs text-appText-muted font-mono">1.286 Kosakata · 92 Grammar</span>
           </div>
 
           <div className="p-4 rounded-2xl bg-surface-2/80 border border-sky-500/20 flex items-center justify-between">
             <span className="flex items-center gap-2.5 text-xs font-bold text-appText-bright">
-              <span className="w-3 h-3 rounded-full bg-sky-400" />
-              JLPT N3 (Menengah / Intermediate)
+              <span className="w-3 h-3 rounded-full bg-sky-400 shrink-0" />
+              JLPT N3 (Menengah)
             </span>
-            <span className="text-xs text-appText-muted font-mono">2.368 Kosakata · 163 Grammar</span>
+            <span className="text-xs text-appText-muted font-mono">2.580 Kosakata · 163 Grammar</span>
           </div>
 
-          <div className="p-4 rounded-2xl bg-surface-2/80 border border-emerald-500/20 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+          <div className="p-4 rounded-2xl bg-surface-2/80 border border-emerald-500/20 flex items-center justify-between">
             <span className="flex items-center gap-2.5 text-xs font-bold text-appText-bright">
-              <span className="w-3 h-3 rounded-full bg-emerald-400" />
-              JLPT N2 & N1 (Lanjutan & Profesional)
+              <span className="w-3 h-3 rounded-full bg-emerald-400 shrink-0" />
+              JLPT N2 (Tingkat Mahir)
             </span>
-            <span className="text-xs text-appText-muted font-mono">534 Kosakata · 510 Grammar</span>
+            <span className="text-xs text-appText-muted font-mono">2.104 Kosakata · 310 Grammar</span>
+          </div>
+
+          <div className="p-4 rounded-2xl bg-surface-2/80 border border-rose-500/20 flex items-center justify-between">
+            <span className="flex items-center gap-2.5 text-xs font-bold text-appText-bright">
+              <span className="w-3 h-3 rounded-full bg-rose-400 shrink-0" />
+              JLPT N1 (Tingkat Ahli)
+            </span>
+            <span className="text-xs text-appText-muted font-mono">3.217 Kosakata · 200 Grammar</span>
+          </div>
+
+          <div className="p-4 rounded-2xl bg-surface-2/80 border border-amber-500/30 flex items-center justify-between bg-amber-500/5">
+            <span className="flex items-center gap-2.5 text-xs font-bold text-accent">
+              <span className="w-3 h-3 rounded-full bg-amber-500 shrink-0" />
+              Jalur SSW Vokasional
+            </span>
+            <span className="text-xs text-appText-muted font-mono">3 Sektor · 45 Pelajaran</span>
           </div>
         </div>
 
         <div className="p-3.5 rounded-xl bg-amber-500/10 border border-amber-500/20 text-xs text-appText-muted flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-          <span>Total Database: <b>4.839 Kosakata</b> & <b>859 Pola Tata Bahasa</b></span>
+          <span>Total Database: <b>10.508 Kosakata</b> & <b>859 Pola Tata Bahasa</b></span>
           <span className="text-accent font-semibold">100% Bebas Typo & Terindeks</span>
         </div>
       </div>

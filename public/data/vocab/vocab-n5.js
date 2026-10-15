@@ -2,12 +2,12 @@
 //  vocab-n5.js — Nugget Nihongo · JLPT N5
 //  AUTO-GENERATED — DO NOT EDIT DIRECTLY
 //  Edit: public/data/vocab/n5/*.js  then run: node scripts/merge-vocab.js
-//  Entries: 991 | Generated: 2026-10-15
+//  Entries: 1321 | Generated: 2026-10-15
 // ══════════════════════════════════════════════════════════════
 
 window.vocabN5 = [
 
-  // ── VERBS (181) ────────────────────────────────────────
+  // ── VERBS (294) ────────────────────────────────────────
 
 {
   id: 'vg-n5-00001',
@@ -58,7 +58,7 @@ window.vocabN5 = [
   nuance: 'Intransitif — benda yang terbuka sendiri. Beda dengan 開ける (transitif).',
   conj_type: 'godan',
   examples: [
-      { jp: '心を開くんだ。', en: 'Open your hearts.', id: '[TBD]' },{"jp": "ドアが開きました。", "id": "Pintunya terbuka.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "ドアが開きました。", "id": "Pintunya terbuka.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: ['vg-n5-00003'],
   see_also: ['vg-n5-00004'],
@@ -178,7 +178,7 @@ window.vocabN5 = [
   nuance: 'Refers specifically to washing with water or a liquid. Not used for \'washing\' a car using a rag without water, for example.',
   conj_type: 'godan',
   examples: [
-      { jp: '洗う必要がある。', en: 'It needs washing.', id: '[TBD]' },{"jp": "手を洗ってください。", "id": "Tolong cuci tangan.", "level": "n5", "tags": ["kesehatan"]}],
+      {"jp": "手を洗ってください。", "id": "Tolong cuci tangan.", "level": "n5", "tags": ["kesehatan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -208,7 +208,7 @@ window.vocabN5 = [
   nuance: 'Denotes the physical action of walking on foot. Often contrasted with 走る (はしる, to run).',
   conj_type: 'godan',
   examples: [
-      { jp: '彼は歩くつもりだ。', en: 'He will walk.', id: '[TBD]' },{"jp": "駅まで歩いて行きます。", "id": "Saya berjalan ke stasiun.", "level": "n5", "tags": ["perjalanan"]}],
+      {"jp": "駅まで歩いて行きます。", "id": "Saya berjalan ke stasiun.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -238,7 +238,7 @@ window.vocabN5 = [
   nuance: 'Sangat umum. Keigo: おっしゃる (sonkei), 申す (kenjo).',
   conj_type: 'godan',
   examples: [
-      { jp: '言うとおりにして。', en: 'Do as I say.', id: '[TBD]' },{"jp": "何と言いましたか。", "id": "Apa yang kamu katakan?", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "何と言いましたか。", "id": "Apa yang kamu katakan?", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -269,7 +269,7 @@ window.vocabN5 = [
   nuance: 'Te-form irregular: いって (bukan いいて).',
   conj_type: 'godan',
   examples: [
-      { jp: '行くよ。', en: 'I\'ll go.', id: '[TBD]' },{"jp": "学校に行きます。", "id": "Saya pergi ke sekolah.", "level": "n5", "tags": ["pendidikan"]}],
+      {"jp": "学校に行きます。", "id": "Saya pergi ke sekolah.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: ['vg-n5-00010'],
   see_also: [],
@@ -330,7 +330,7 @@ window.vocabN5 = [
   nuance: 'Godan meski berakhiran る. Beda dengan 戻る (kembali ke tempat sebelumnya).',
   conj_type: 'godan',
   examples: [
-      { jp: '家に帰るよ。', en: 'I\'m going home.', id: '[TBD]' },{"jp": "６時に家に帰ります。", "id": "Saya pulang jam 6.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "６時に家に帰ります。", "id": "Saya pulang jam 6.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -361,7 +361,7 @@ window.vocabN5 = [
   nuance: '図書館 = perpustakaan umum. Beda: 本屋 (honya) = toko buku.',
   conj_type: 'godan',
   examples: [
-      { jp: '私は書くことに飽きた。', en: 'I\'m tired of writing.', id: '[TBD]' },{"jp": "図書館で本を借りることができます。", "id": "Di perpustakaan bisa meminjam buku.", "level": "n5", "tags": ["pendidikan"]}],
+      {"jp": "図書館で本を借りることができます。", "id": "Di perpustakaan bisa meminjam buku.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -391,7 +391,7 @@ window.vocabN5 = [
   nuance: 'Dua arti: mendengarkan (音楽を聞く) dan bertanya (先生に聞く).',
   conj_type: 'godan',
   examples: [
-      { jp: 'トムは聞く。', en: 'Tom listens.', id: '[TBD]' },{"jp": "音楽を聞いています。", "id": "Saya sedang mendengarkan musik.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "音楽を聞いています。", "id": "Saya sedang mendengarkan musik.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -422,7 +422,7 @@ window.vocabN5 = [
   nuance: 'Godan meski berakhiran る.',
   conj_type: 'godan',
   examples: [
-      { jp: '道路を横切るな。', en: 'Don\'t cross the road.', id: '[TBD]' },{"jp": "野菜を切ります。", "id": "Saya memotong sayuran.", "level": "n5", "tags": ["makanan-minuman"]}],
+      {"jp": "野菜を切ります。", "id": "Saya memotong sayuran.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -452,7 +452,7 @@ window.vocabN5 = [
   nuance: 'Hanya untuk pakaian di bagian atas tubuh. 履く untuk celana/sepatu, かぶる untuk topi.',
   conj_type: 'ichidan',
   examples: [
-      { jp: '恩に着るよ。', en: 'I owe you one.', id: '[TBD]' },{"jp": "コートを着て出かけました。", "id": "Saya keluar memakai mantel.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "コートを着て出かけました。", "id": "Saya keluar memakai mantel.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -483,7 +483,7 @@ window.vocabN5 = [
   nuance: '聞く = mendengarkan (sengaja) ATAU bertanya. Konteks menentukan. Lawan: 聞こえる = terdengar.',
   conj_type: 'godan',
   examples: [
-      { jp: 'ガスを消すのを忘れたわ。', en: 'I forgot to turn off the gas!', id: '[TBD]' },{"jp": "電気を消してください。", "id": "Tolong matikan lampunya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "電気を消してください。", "id": "Tolong matikan lampunya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: ['vg-n5-00017'],
   see_also: [],
@@ -543,7 +543,7 @@ window.vocabN5 = [
   nuance: '知っている = keadaan tahu sekarang. 知らない = tidak tahu.',
   conj_type: 'godan',
   examples: [
-      { jp: '知るもんか。', en: 'Who cares?', id: '[TBD]' },{"jp": "彼の名前を知っていますか。", "id": "Apakah kamu tahu namanya?", "level": "n5", "tags": ["hubungan"]}],
+      {"jp": "彼の名前を知っていますか。", "id": "Apakah kamu tahu namanya?", "level": "n5", "tags": ["hubungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -574,7 +574,7 @@ window.vocabN5 = [
   nuance: 'Untuk tempat tinggal permanen. 〜に住む pakai partikel に.',
   conj_type: 'godan',
   examples: [
-      { jp: '私には住む家がない。', en: 'I have no home to live in.', id: '[TBD]' },{"jp": "東京に住んでいます。", "id": "Saya tinggal di Tokyo.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "東京に住んでいます。", "id": "Saya tinggal di Tokyo.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -603,7 +603,7 @@ window.vocabN5 = [
   nuance: 'Irregular verb. Paling sering dipakai untuk suru-compound: 勉強する, 仕事する, dll.',
   conj_type: 'suru',
   examples: [
-      { jp: '感謝する。', en: 'Thanks.', id: '[TBD]' },{"jp": "毎日運動します。", "id": "Saya olahraga setiap hari.", "level": "n5", "tags": ["olahraga"]}],
+      {"jp": "毎日運動します。", "id": "Saya olahraga setiap hari.", "level": "n5", "tags": ["olahraga"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -634,7 +634,7 @@ window.vocabN5 = [
   nuance: '来る (くる) — CATATAN: entry ini duplikat v-n5-0010? Cek.',
   conj_type: 'godan',
   examples: [
-      { jp: 'ここに座るのはよそう。', en: 'Let\'s not sit here.', id: '[TBD]' },{"jp": "椅子に座ってください。", "id": "Silakan duduk di kursi.", "level": "n5", "tags": ["sopan-santun"]}],
+      {"jp": "椅子に座ってください。", "id": "Silakan duduk di kursi.", "level": "n5", "tags": ["sopan-santun"]}],
   synonyms: [],
   antonyms: ['vg-n5-00022'],
   see_also: [],
@@ -695,7 +695,7 @@ window.vocabN5 = [
   nuance: 'Keigo: 召し上がる (sonkei), いただく (kenjo).',
   conj_type: 'ichidan',
   examples: [
-      { jp: '彼はたくさん食べる。', en: 'He eats a lot.', id: '[TBD]' },{"jp": "朝ご飯を食べました。", "id": "Saya makan sarapan.", "level": "n5", "tags": ["makanan-minuman"]}],
+      {"jp": "朝ご飯を食べました。", "id": "Saya makan sarapan.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n5-00024'],
@@ -756,7 +756,7 @@ window.vocabN5 = [
   nuance: 'わかる = mengerti/paham (intransitif). Tidak ada objek-を; pakai が: 日本語がわかります.',
   conj_type: 'godan',
   examples: [
-      { jp: '何に使うの？', en: 'What for?', id: '[TBD]' },{"jp": "日本語を使って話してください。", "id": "Tolong bicara menggunakan bahasa Jepang.", "level": "n5", "tags": ["pendidikan"]}],
+      {"jp": "日本語を使って話してください。", "id": "Tolong bicara menggunakan bahasa Jepang.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -787,7 +787,7 @@ window.vocabN5 = [
   nuance: 'できる = bisa/mampu. 日本語ができる = bisa bahasa Jepang. Juga: selesai dibuat/terjadi.',
   conj_type: 'godan',
   examples: [
-      { jp: '夕飯、作るね。', en: 'I\'ll make dinner.', id: '[TBD]' },{"jp": "ケーキを作りました。", "id": "Saya membuat kue.", "level": "n5", "tags": ["makanan-minuman"]}],
+      {"jp": "ケーキを作りました。", "id": "Saya membuat kue.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -818,7 +818,7 @@ window.vocabN5 = [
   nuance: '出かける = pergi keluar (dari rumah/kantor). Lebih spesifik dari 行く.',
   conj_type: 'ichidan',
   examples: [
-      { jp: '今出かける所なんですよ。', en: 'I\'m leaving now.', id: '[TBD]' },{"jp": "今から出かけます。", "id": "Saya akan keluar sekarang.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "今から出かけます。", "id": "Saya akan keluar sekarang.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -849,7 +849,7 @@ window.vocabN5 = [
   nuance: '〜を出る: keluar dari tempat. 〜に出る: muncul di acara.',
   conj_type: 'ichidan',
   examples: [
-      { jp: 'よくしゃっくりが出る。', en: 'I often hiccup.', id: '[TBD]' },{"jp": "学校を出ました。", "id": "Saya keluar dari sekolah.", "level": "n5", "tags": ["pendidikan"]}],
+      {"jp": "学校を出ました。", "id": "Saya keluar dari sekolah.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: ['vg-n5-00029'],
   see_also: [],
@@ -910,7 +910,7 @@ window.vocabN5 = [
   nuance: '寝る = tidur/berbaring. 寝る時間 = jam tidur. Berbeda: 眠る (nemuru) = tertidur (intransitif).',
   conj_type: 'godan',
   examples: [
-      { jp: '働くのが好きなんだよ。', en: 'I like working.', id: '[TBD]' },{"jp": "会社で働いています。", "id": "Saya bekerja di perusahaan.", "level": "n5", "tags": ["pekerjaan"]}],
+      {"jp": "会社で働いています。", "id": "Saya bekerja di perusahaan.", "level": "n5", "tags": ["pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -940,7 +940,7 @@ window.vocabN5 = [
   nuance: 'はたらく (働く) = bekerja (aktif). Berbeda: 仕事する (aktivitas kerja).',
   conj_type: 'godan',
   examples: [
-      { jp: '私は話すことができない。', en: 'I can\'t talk.', id: '[TBD]' },{"jp": "日本語で話しましょう。", "id": "Ayo bicara dalam bahasa Jepang.", "level": "n5", "tags": ["pendidikan"]}],
+      {"jp": "日本語で話しましょう。", "id": "Ayo bicara dalam bahasa Jepang.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -971,7 +971,7 @@ window.vocabN5 = [
   nuance: 'Keigo: ご覧になる (sonkei), 拝見する (kenjo).',
   conj_type: 'ichidan',
   examples: [
-      { jp: 'じろじろ見るな。', en: 'Don\'t stare.', id: '[TBD]' },{"jp": "映画を見ました。", "id": "Saya menonton film.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "映画を見ました。", "id": "Saya menonton film.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -1003,7 +1003,7 @@ window.vocabN5 = [
   nuance: '郵便局 = kantor pos. 郵便 = surat/pos. 郵便局でお金を送る = kirim uang di kantor pos.',
   conj_type: 'godan',
   examples: [
-      { jp: '私は読むことができます。', en: 'I can read.', id: '[TBD]' },{"jp": "郵便局で荷物を送りました。", "id": "Saya mengirim paket di kantor pos.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "郵便局で荷物を送りました。", "id": "Saya mengirim paket di kantor pos.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -1034,7 +1034,7 @@ window.vocabN5 = [
   nuance: 'かける = menelepon / menggantungkan / menuangkan. Konteks tergantung objek.',
   conj_type: 'godan',
   examples: [
-      { jp: '私は泳ぐことが出来ます。', en: 'I can swim.', id: '[TBD]' },{"jp": "プールで泳ぎました。", "id": "Saya berenang di kolam renang.", "level": "n5", "tags": ["olahraga"]}],
+      {"jp": "プールで泳ぎました。", "id": "Saya berenang di kolam renang.", "level": "n5", "tags": ["olahraga"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -1065,7 +1065,7 @@ window.vocabN5 = [
   nuance: '乗る = naik (kendaraan). 電車に乗る. Lawan: 降りる (oriru) = turun.',
   conj_type: 'ichidan',
   examples: [
-      { jp: '起きる時間よ。', en: 'Time to get up.', id: '[TBD]' },{"jp": "毎朝６時に起きます。", "id": "Setiap pagi saya bangun jam 6.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "毎朝６時に起きます。", "id": "Setiap pagi saya bangun jam 6.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: ['vg-n5-00036'],
   see_also: [],
@@ -1125,7 +1125,7 @@ window.vocabN5 = [
   nuance: 'Nai-form: 買わない (う→わ).',
   conj_type: 'godan',
   examples: [
-      { jp: 'それ買うよ。', en: 'I\'ll buy it.', id: '[TBD]' },{"jp": "スーパーで野菜を買いました。", "id": "Saya membeli sayuran di supermarket.", "level": "n5", "tags": ["belanja", "makanan-minuman"]}],
+      {"jp": "スーパーで野菜を買いました。", "id": "Saya membeli sayuran di supermarket.", "level": "n5", "tags": ["belanja", "makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -1155,7 +1155,7 @@ window.vocabN5 = [
   nuance: '売る = menjual. Lawan: 買う. 売り場 = counter/bagian di toko.',
   conj_type: 'godan',
   examples: [
-      { jp: '売ることにしたんだ。', en: 'I decided to sell it.', id: '[TBD]' },{"jp": "この店は本を売っています。", "id": "Toko ini menjual buku.", "level": "n5", "tags": ["belanja"]}],
+      {"jp": "この店は本を売っています。", "id": "Toko ini menjual buku.", "level": "n5", "tags": ["belanja"]}],
   synonyms: [],
   antonyms: ['vg-n5-00037'],
   see_also: [],
@@ -1185,7 +1185,7 @@ window.vocabN5 = [
   nuance: 'Lawan: 借りる (meminjam).',
   conj_type: 'godan',
   examples: [
-      { jp: '噂話に耳を貸すな。', en: 'Don\'t listen to gossip.', id: '[TBD]' },{"jp": "傘を貸してください。", "id": "Tolong pinjamkan payung.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "傘を貸してください。", "id": "Tolong pinjamkan payung.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: ['vg-n5-00040'],
   see_also: [],
@@ -1247,7 +1247,7 @@ window.vocabN5 = [
   nuance: 'もらう = menerima/mendapat (dari orang). Lawan: あげる (ageru) = memberi.',
   conj_type: 'ichidan',
   examples: [
-      { jp: 'トムは教える。', en: 'Tom teaches.', id: '[TBD]' },{"jp": "日本語を教えています。", "id": "Saya mengajar bahasa Jepang.", "level": "n5", "tags": ["pendidikan", "pekerjaan"]}],
+      {"jp": "日本語を教えています。", "id": "Saya mengajar bahasa Jepang.", "level": "n5", "tags": ["pendidikan", "pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -1278,7 +1278,7 @@ window.vocabN5 = [
   nuance: 'あげる = memberi (ke orang). Keigo: さしあげる (humble). Lawan: もらう.',
   conj_type: 'ichidan',
   examples: [
-      { jp: '僕は覚えるのが遅いんだ。', en: 'I\'m a slow learner.', id: '[TBD]' },{"jp": "単語を覚えました。", "id": "Saya menghafal kosakata.", "level": "n5", "tags": ["pendidikan"]}],
+      {"jp": "単語を覚えました。", "id": "Saya menghafal kosakata.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -1309,7 +1309,7 @@ window.vocabN5 = [
   nuance: 'くれる = memberi (ke saya/pihak saya). Berbeda dari あげる: perspektif penerima.',
   conj_type: 'godan',
   examples: [
-      { jp: '鼻歌を歌うのはやめろ。', en: 'Stop humming.', id: '[TBD]' },{"jp": "カラオケで歌いました。", "id": "Saya bernyanyi di karaoke.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "カラオケで歌いました。", "id": "Saya bernyanyi di karaoke.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -1340,7 +1340,7 @@ window.vocabN5 = [
   nuance: 'Lawan: 乗る (naik). Pakai partikel で atau を.',
   conj_type: 'ichidan',
   examples: [
-      { jp: '終点で降りる。', en: 'I\'ll get off at the last stop.', id: '[TBD]' },{"jp": "次の駅で降ります。", "id": "Saya turun di stasiun berikutnya.", "level": "n5", "tags": ["perjalanan"]}],
+      {"jp": "次の駅で降ります。", "id": "Saya turun di stasiun berikutnya.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n5-00045'],
@@ -1401,7 +1401,7 @@ window.vocabN5 = [
   nuance: 'Intransitif. Transitif: 終える (jarang).',
   conj_type: 'godan',
   examples: [
-      { jp: 'いつ終わるの？', en: 'When\'s it over?', id: '[TBD]' },{"jp": "授業が終わりました。", "id": "Pelajaran sudah selesai.", "level": "n5", "tags": ["pendidikan"]}],
+      {"jp": "授業が終わりました。", "id": "Pelajaran sudah selesai.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -1433,7 +1433,7 @@ window.vocabN5 = [
   nuance: 'Intransitif. Transitif: 始める.',
   conj_type: 'godan',
   examples: [
-      { jp: 'ほら、始まるわよ。', en: 'It\'s starting now.', id: '[TBD]' },{"jp": "映画が始まりました。", "id": "Filmnya mulai.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "映画が始まりました。", "id": "Filmnya mulai.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: ['vg-n5-00046'],
   see_also: [],
@@ -1463,7 +1463,7 @@ window.vocabN5 = [
   nuance: '終わる = selesai/berakhir (intransitif). 仕事が終わる. Transitif: 終える (lebih formal).',
   conj_type: 'godan',
   examples: [
-      { jp: '押すなよ。', en: 'Don\'t push.', id: '[TBD]' },{"jp": "ボタンを押してください。", "id": "Tolong tekan tombolnya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "ボタンを押してください。", "id": "Tolong tekan tombolnya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -1494,7 +1494,7 @@ window.vocabN5 = [
   nuance: 'Can mean to send a thing or to see someone off. When used for people, it implies accompanying someone to their point of departure.',
   conj_type: 'godan',
   examples: [
-      { jp: '家まで送るよ。', en: 'I will take you home.', id: '[TBD]' },{"jp": "メールを送りました。", "id": "Saya mengirim email.", "level": "n5", "tags": ["pekerjaan"]}],
+      {"jp": "メールを送りました。", "id": "Saya mengirim email.", "level": "n5", "tags": ["pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -1524,7 +1524,7 @@ window.vocabN5 = [
   nuance: 'Keigo: いただく (kenjo). Berlawanan perspektif dengan あげる/くれる.',
   conj_type: 'godan',
   examples: [
-      { jp: '医者に診てもらうべきですよ。', en: 'You should see a doctor.', id: '[TBD]' },{"jp": "プレゼントをもらいました。", "id": "Saya menerima hadiah.", "level": "n5", "tags": ["hubungan"]}],
+      {"jp": "プレゼントをもらいました。", "id": "Saya menerima hadiah.", "level": "n5", "tags": ["hubungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n5-00051', 'vg-n5-00052'],
@@ -1616,7 +1616,7 @@ window.vocabN5 = [
   nuance: 'Untuk orang dan hewan. Benda mati pakai ある. Keigo: いらっしゃる.',
   conj_type: 'ichidan',
   examples: [
-      { jp: '私は太っている。', en: 'I\'m fat.', id: '[TBD]' },{"jp": "猫が二匹います。", "id": "Ada dua ekor kucing.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "猫が二匹います。", "id": "Ada dua ekor kucing.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n5-00054'],
@@ -1676,7 +1676,7 @@ window.vocabN5 = [
   nuance: '知る = tahu/mengetahui. Perhatian: 知っています (bukan 知ります) untuk state "sedang tahu".',
   conj_type: 'ichidan',
   examples: [
-      { jp: '喜怒哀楽を見せるな。', en: 'Don\'t let your feelings show.', id: '[TBD]' },{"jp": "パスポートを見せてください。", "id": "Tolong tunjukkan paspornya.", "level": "n5", "tags": ["perjalanan"]}],
+      {"jp": "パスポートを見せてください。", "id": "Tolong tunjukkan paspornya.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -1707,7 +1707,7 @@ window.vocabN5 = [
   nuance: '思う = berpikir/merasa (opini). Lebih subjektif dari 考える (kangaeru) = memikirkan secara aktif.',
   conj_type: 'ichidan',
   examples: [
-      { jp: 'もうすぐ子供が生まれるんです。', en: 'We\'re about to have a baby.', id: '[TBD]' },{"jp": "東京で生まれました。", "id": "Saya lahir di Tokyo.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "東京で生まれました。", "id": "Saya lahir di Tokyo.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -1737,7 +1737,7 @@ window.vocabN5 = [
   nuance: '電話する = menelepon. 電話をかける juga umum.',
   conj_type: 'suru',
   examples: [
-      { jp: '電話してね。', en: 'Call me.', id: '[TBD]' },{"jp": "後で電話します。", "id": "Nanti saya telepon.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "後で電話します。", "id": "Nanti saya telepon.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -1933,7 +1933,7 @@ window.vocabN5 = [
   nuance: 'あける = membuka (transitif, ada pelaku). Intransitif: あく.',
   conj_type: 'ichidan',
   examples: [
-      { jp: '行と行の間をあけること。', en: 'Leave a space between the lines.', id: '[TBD]' },{"jp": "窓を開けてください。", "id": "Tolong buka jendelanya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "窓を開けてください。", "id": "Tolong buka jendelanya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2051,7 +2051,7 @@ window.vocabN5 = [
   nuance: '言う vs 話す: 言う = menyatakan sesuatu, 話す = bercakap-cakap.',
   conj_type: 'godan',
   examples: [
-      { jp: 'そういうこと。', en: 'That\'s it.', id: '[TBD]' },{"jp": "何と言いましたか。", "id": "Anda bilang apa?", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "何と言いましたか。", "id": "Anda bilang apa?", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2081,7 +2081,7 @@ window.vocabN5 = [
   nuance: 'Keigo: いらっしゃる (sonkei). Berbeda dari 来る: 行く = menjauh dari pembicara.',
   conj_type: 'godan',
   examples: [
-      { jp: '歩いていくよ。', en: 'We\'ll walk.', id: '[TBD]' },{"jp": "学校に行きます。", "id": "Saya pergi ke sekolah.", "level": "n5", "tags": ["pendidikan"]}],
+      {"jp": "学校に行きます。", "id": "Saya pergi ke sekolah.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2167,7 +2167,7 @@ window.vocabN5 = [
   nuance: 'Means both to wake up from sleep and to physically get up from a bed. Also used for things that \'happen\' or \'occur\'.',
   conj_type: 'ichidan',
   examples: [
-      { jp: '私はたいてい６時におきる。', en: 'I usually get up at six.', id: '[TBD]' },{"jp": "毎朝七時に起きます。", "id": "Setiap pagi saya bangun jam tujuh.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "毎朝七時に起きます。", "id": "Setiap pagi saya bangun jam tujuh.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2197,7 +2197,7 @@ window.vocabN5 = [
   nuance: 'Denotes applying pressure, such as pressing a button or pushing a door. Can also mean to affix a seal (stamp).',
   conj_type: 'godan',
   examples: [
-      { jp: 'どうぞ、おすわりください。', en: 'Please sit down.', id: '[TBD]' },{"jp": "ボタンを押してください。", "id": "Tolong tekan tombolnya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "ボタンを押してください。", "id": "Tolong tekan tombolnya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2259,7 +2259,7 @@ window.vocabN5 = [
   nuance: '帰る = pulang ke tempat asal (rumah). Berbeda: 戻る = kembali ke tempat sebelumnya.',
   conj_type: 'godan',
   examples: [
-      { jp: '今のところ買いかえる予定はないなあ。', en: 'I don\'t plan to buy a new one at this time.', id: '[TBD]' },{"jp": "今日は早く帰ります。", "id": "Hari ini saya pulang lebih awal.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "今日は早く帰ります。", "id": "Hari ini saya pulang lebih awal.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2290,7 +2290,7 @@ window.vocabN5 = [
   nuance: '時間がかかる / お金がかかる。 Selalu intransitif.',
   conj_type: 'godan',
   examples: [
-      { jp: 'めっちゃ時間がかかるのよ。', en: 'It takes a lot of time.', id: '[TBD]' },{"jp": "ここから駅まで十分かかります。", "id": "Dari sini ke stasiun butuh sepuluh menit.", "level": "n5", "tags": ["perjalanan"]}],
+      {"jp": "ここから駅まで十分かかります。", "id": "Dari sini ke stasiun butuh sepuluh menit.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2318,7 +2318,7 @@ window.vocabN5 = [
   nuance: 'Used broadly for writing words or drawing pictures. Kanji varies depending on whether you write letters (書く) or draw pictures (描く).',
   conj_type: 'godan',
   examples: [
-      { jp: 'あったかくしてなさい。', en: 'Keep warm.', id: '[TBD]' },{"jp": "名前を書いてください。", "id": "Tolong tulis namanya.", "level": "n5", "tags": ["pendidikan"]}],
+      {"jp": "名前を書いてください。", "id": "Tolong tulis namanya.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2346,7 +2346,7 @@ window.vocabN5 = [
   nuance: '電話をかける = menelepon. 鍵をかける = mengunci. 眼鏡をかける = memakai kacamata.',
   conj_type: 'ichidan',
   examples: [
-      { jp: '３かける５は１５。', en: '3 times 5 is 15.', id: '[TBD]' },{"jp": "後で電話をかけます。", "id": "Nanti saya akan menelepon.", "level": "n5", "tags": ["hubungan"]}],
+      {"jp": "後で電話をかけます。", "id": "Nanti saya akan menelepon.", "level": "n5", "tags": ["hubungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2378,7 +2378,7 @@ window.vocabN5 = [
   nuance: '貸す = meminjamkan (ke orang). Lawan: 借りる = meminjam (dari orang).',
   conj_type: 'godan',
   examples: [
-      { jp: 'かっかするな。', en: 'Don\'t get mad.', id: '[TBD]' },{"jp": "傘を貸してもらえますか。", "id": "Bisakah kamu meminjamkan payung?", "level": "n5", "tags": ["hubungan"]}],
+      {"jp": "傘を貸してもらえますか。", "id": "Bisakah kamu meminjamkan payung?", "level": "n5", "tags": ["hubungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2437,7 +2437,7 @@ window.vocabN5 = [
   nuance: 'かぶる = khusus topi, helm, masker (di kepala). Beda: きる = pakaian atas, はく = bawah.',
   conj_type: 'godan',
   examples: [
-      { jp: '彼らは帽子をかぶると外へ出た。', en: 'They put their hats on and went outside.', id: '[TBD]' },{"jp": "ヘルメットをかぶってください。", "id": "Tolong pakai helmnya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "ヘルメットをかぶってください。", "id": "Tolong pakai helmnya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2499,7 +2499,7 @@ window.vocabN5 = [
   nuance: '聞く = mendengarkan (musik, dll) ATAU bertanya. 聞こえる = terdengar (involuntar).',
   conj_type: 'godan',
   examples: [
-      { jp: 'もう少し大きくして。', en: 'Turn it up.', id: '[TBD]' },{"jp": "音楽を聞きながら勉強します。", "id": "Saya belajar sambil mendengarkan musik.", "level": "n5", "tags": ["pendidikan"]}],
+      {"jp": "音楽を聞きながら勉強します。", "id": "Saya belajar sambil mendengarkan musik.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2528,7 +2528,7 @@ window.vocabN5 = [
   nuance: '着る = pakaian atas (kemeja, jaket, kimono). Beda: はく = bawah, かぶる = kepala.',
   conj_type: 'ichidan',
   examples: [
-      { jp: '私は走ることができる。', en: 'I can run.', id: '[TBD]' },{"jp": "今日は白いシャツを着ています。", "id": "Hari ini saya memakai kemeja putih.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "今日は白いシャツを着ています。", "id": "Hari ini saya memakai kemeja putih.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2557,7 +2557,7 @@ window.vocabN5 = [
   nuance: '来る = datang menuju pembicara. Keigo: いらっしゃる (sonkei), 参る (kenjo).',
   conj_type: 'kuru',
   examples: [
-      { jp: '戻ってくるんだ。', en: 'Come back.', id: '[TBD]' },{"jp": "友達がうちに来ます。", "id": "Teman akan datang ke rumah saya.", "level": "n5", "tags": ["hubungan"]}],
+      {"jp": "友達がうちに来ます。", "id": "Teman akan datang ke rumah saya.", "level": "n5", "tags": ["hubungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2587,7 +2587,7 @@ window.vocabN5 = [
   nuance: '電気を消す = matikan lampu. 黒板を消す = hapus papan tulis. Lawan: つける.',
   conj_type: 'godan',
   examples: [
-      { jp: '今夜はお出かけするよ。', en: 'I\'m going out this evening.', id: '[TBD]' },{"jp": "電気を消してください。", "id": "Tolong matikan lampunya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "電気を消してください。", "id": "Tolong matikan lampunya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2618,7 +2618,7 @@ window.vocabN5 = [
   nuance: 'Refers to replying to a question, answering a test, or responding to someone. Takes the particle に for what you are answering.',
   conj_type: 'ichidan',
   examples: [
-      { jp: '我が家がハリケーンに持ちこたえるなんて奇跡だよ。', en: 'It\'s a miracle that our house survived the hurricane.', id: '[TBD]' },{"jp": "質問に答えてください。", "id": "Tolong jawab pertanyaannya.", "level": "n5", "tags": ["pendidikan"]}],
+      {"jp": "質問に答えてください。", "id": "Tolong jawab pertanyaannya.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2649,7 +2649,7 @@ window.vocabN5 = [
   nuance: 'Means to physically touch something. Often used with the particle に to indicate the object being touched (e.g., 絵にさわる).',
   conj_type: 'godan',
   examples: [
-      { jp: 'ああいう人は神経にさわる。', en: 'A man like that gets on my nerves.', id: '[TBD]' },{"jp": "これに触らないでください。", "id": "Tolong jangan sentuh ini.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "これに触らないでください。", "id": "Tolong jangan sentuh ini.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2707,7 +2707,7 @@ window.vocabN5 = [
   nuance: '閉める (transitif). Intransitif: 閉まる (shimaru). ドアを閉める = menutup pintu.',
   conj_type: 'ichidan',
   examples: [
-      { jp: 'ドアの鍵をしめるんだ。', en: 'Lock the doors.', id: '[TBD]' },{"jp": "ドアを閉めてください。", "id": "Tolong tutup pintunya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "ドアを閉めてください。", "id": "Tolong tutup pintunya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2736,7 +2736,7 @@ window.vocabN5 = [
   nuance: '知っています (bukan 知ります) untuk "sedang tahu". 知りません = tidak tahu.',
   conj_type: 'godan',
   examples: [
-      { jp: '腹を立てると彼はよく口汚くののしる。', en: 'He often swears when he is angry.', id: '[TBD]' },{"jp": "彼の電話番号を知っていますか。", "id": "Apakah kamu tahu nomor teleponnya?", "level": "n5", "tags": ["hubungan"]}],
+      {"jp": "彼の電話番号を知っていますか。", "id": "Apakah kamu tahu nomor teleponnya?", "level": "n5", "tags": ["hubungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2767,7 +2767,7 @@ window.vocabN5 = [
   nuance: 'Focuses on the state of residing somewhere. When currently living in a place, you use the continuous form (住んでいる).',
   conj_type: 'godan',
   examples: [
-      { jp: 'あまり長く待たなくてすむといいんだけど。', en: 'I hope we don\'t have to wait for too long.', id: '[TBD]' },{"jp": "東京に住んでいます。", "id": "Saya tinggal di Tokyo.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "東京に住んでいます。", "id": "Saya tinggal di Tokyo.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2798,7 +2798,7 @@ window.vocabN5 = [
   nuance: 'Means to physically stand up from a sitting or lying position. It\'s an action, not the state of standing.',
   conj_type: 'godan',
   examples: [
-      { jp: '時のたつのは早いものだ。', en: 'Time flies.', id: '[TBD]' },{"jp": "立ってください。", "id": "Tolong berdiri.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "立ってください。", "id": "Tolong berdiri.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2826,7 +2826,7 @@ window.vocabN5 = [
   nuance: 'Keigo: 召し上がる (sonkei), いただく (kenjo).',
   conj_type: 'ichidan',
   examples: [
-      { jp: '僕のおじいちゃんは、ふつうは６時に朝食をたべる。', en: 'My grandfather usually eats breakfast at six.', id: '[TBD]' },{"jp": "何を食べますか。", "id": "Mau makan apa?", "level": "n5", "tags": ["makanan-minuman"]}],
+      {"jp": "何を食べますか。", "id": "Mau makan apa?", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2887,7 +2887,7 @@ window.vocabN5 = [
   nuance: 'Refers to creating or building something from raw materials, such as cooking food or building a table.',
   conj_type: 'godan',
   examples: [
-      { jp: '鳥は巣をつくる。', en: 'Birds build nests.', id: '[TBD]' },{"jp": "料理を作ります。", "id": "Saya membuat masakan.", "level": "n5", "tags": ["makanan-minuman"]}],
+      {"jp": "料理を作ります。", "id": "Saya membuat masakan.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2918,7 +2918,7 @@ window.vocabN5 = [
   nuance: 'Specifically means leaving one\'s home or current location to go somewhere else, usually with a purpose like shopping or an errand.',
   conj_type: 'ichidan',
   examples: [
-      { jp: '時々散歩にでかける。', en: 'I sometimes go out for a walk.', id: '[TBD]' },{"jp": "友達と買い物に出かけます。", "id": "Saya pergi belanja dengan teman.", "level": "n5", "tags": ["belanja"]}],
+      {"jp": "友達と買い物に出かけます。", "id": "Saya pergi belanja dengan teman.", "level": "n5", "tags": ["belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2949,7 +2949,7 @@ window.vocabN5 = [
   nuance: '出る = keluar/berangkat (intransitif). Lawan: 入る.',
   conj_type: 'ichidan',
   examples: [
-      { jp: '楽しんでるよ。', en: 'I\'m amused.', id: '[TBD]' },{"jp": "バスはもう出ましたか。", "id": "Apakah busnya sudah berangkat?", "level": "n5", "tags": ["perjalanan"]}],
+      {"jp": "バスはもう出ましたか。", "id": "Apakah busnya sudah berangkat?", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -2980,7 +2980,7 @@ window.vocabN5 = [
   nuance: 'Can mean to fly through the air (like a bird or airplane) or to jump high. Written with different kanji depending on the meaning.',
   conj_type: 'godan',
   examples: [
-      { jp: '彼女は私の給料が安いとぶつぶつ言った。', en: 'She complained about my low salary.', id: '[TBD]' },{"jp": "鳥が空を飛んでいます。", "id": "Burung terbang di langit.", "level": "n5", "tags": ["alam-lingkungan"]}],
+      {"jp": "鳥が空を飛んでいます。", "id": "Burung terbang di langit.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3041,7 +3041,7 @@ window.vocabN5 = [
   nuance: '写真を撮る = mengambil foto. 手紙を取る = mengambil surat.',
   conj_type: 'godan',
   examples: [
-      { jp: '軽率な行動はとるな。', en: 'Don\'t act rashly.', id: '[TBD]' },{"jp": "写真を撮ってもいいですか。", "id": "Boleh saya mengambil foto?", "level": "n5", "tags": ["perjalanan"]}],
+      {"jp": "写真を撮ってもいいですか。", "id": "Boleh saya mengambil foto?", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3072,7 +3072,7 @@ window.vocabN5 = [
   nuance: 'Refers to crying or weeping (humans) or making a sound (animals, like barking or meowing). Kanji differs: 泣く for humans, 鳴く for animals.',
   conj_type: 'godan',
   examples: [
-      { jp: '行かなくちゃ。', en: 'I must go.', id: '[TBD]' },{"jp": "悲しい映画を見て泣きました。", "id": "Saya menangis menonton film sedih.", "level": "n5", "tags": ["emosi"]}],
+      {"jp": "悲しい映画を見て泣きました。", "id": "Saya menangis menonton film sedih.", "level": "n5", "tags": ["emosi"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3102,7 +3102,7 @@ window.vocabN5 = [
   nuance: 'Means to accidentally lose or misplace an item. Contrast with 負ける (to lose a game or match).',
   conj_type: 'godan',
   examples: [
-      { jp: 'トムはよく物をなくす。', en: 'Tom often loses things.', id: '[TBD]' },{"jp": "財布をなくしてしまいました。", "id": "Saya kehilangan dompet.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "財布をなくしてしまいました。", "id": "Saya kehilangan dompet.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3134,7 +3134,7 @@ window.vocabN5 = [
   nuance: '習う = belajar dari guru/orang lain. Berbeda: 勉強する = belajar mandiri.',
   conj_type: 'godan',
   examples: [
-      { jp: 'お前ならうまくやれるよ。', en: 'I know you can make it.', id: '[TBD]' },{"jp": "先生に日本語を習っています。", "id": "Saya belajar bahasa Jepang dari guru.", "level": "n5", "tags": ["pendidikan"]}],
+      {"jp": "先生に日本語を習っています。", "id": "Saya belajar bahasa Jepang dari guru.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3163,7 +3163,7 @@ window.vocabN5 = [
   nuance: '〜になる (noun/adj-na), 〜くなる (adj-i). 医者になる = menjadi dokter.',
   conj_type: 'godan',
   examples: [
-      { jp: 'なるほど。', en: 'I see.', id: '[TBD]' },{"jp": "将来, 医者になりたいです。", "id": "Di masa depan, saya ingin menjadi dokter.", "level": "n5", "tags": ["pekerjaan"]}],
+      {"jp": "将来, 医者になりたいです。", "id": "Di masa depan, saya ingin menjadi dokter.", "level": "n5", "tags": ["pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3195,7 +3195,7 @@ window.vocabN5 = [
   nuance: '脱ぐ = melepas pakaian/alas kaki. Lawan: 着る/はく/かぶる.',
   conj_type: 'godan',
   examples: [
-      { jp: '彼女は涙をぬぐった。', en: 'She wiped away her tears.', id: '[TBD]' },{"jp": "家に入る前に靴を脱いでください。", "id": "Tolong lepas sepatu sebelum masuk rumah.", "level": "n5", "tags": ["kehidupan-sehari", "sopan-santun"]}],
+      {"jp": "家に入る前に靴を脱いでください。", "id": "Tolong lepas sepatu sebelum masuk rumah.", "level": "n5", "tags": ["kehidupan-sehari", "sopan-santun"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3224,7 +3224,7 @@ window.vocabN5 = [
   nuance: 'Primarily means to drink liquids, but uniquely in Japanese, it is also used for swallowing pills or taking medicine (薬を飲む).',
   conj_type: 'godan',
   examples: [
-      { jp: '私の家はちょうど通りのむこうにある。', en: 'My house is just across the street.', id: '[TBD]' },{"jp": "水をたくさん飲んでください。", "id": "Tolong banyak minum air.", "level": "n5", "tags": ["kesehatan"]}],
+      {"jp": "水をたくさん飲んでください。", "id": "Tolong banyak minum air.", "level": "n5", "tags": ["kesehatan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3285,7 +3285,7 @@ window.vocabN5 = [
   nuance: '入る (intransitif). Lawan: 出る. お風呂に入る = mandi berendam.',
   conj_type: 'godan',
   examples: [
-      { jp: '火星に生き物はいるの？', en: 'Is there life on Mars?', id: '[TBD]' },{"jp": "どうぞ, お入りください。", "id": "Silakan masuk.", "level": "n5", "tags": ["sopan-santun"]}],
+      {"jp": "どうぞ, お入りください。", "id": "Silakan masuk.", "level": "n5", "tags": ["sopan-santun"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3316,7 +3316,7 @@ window.vocabN5 = [
   nuance: 'はく = pakaian bawah (celana, rok) dan alas kaki (sepatu, kaus kaki). Beda: きる = atas.',
   conj_type: 'godan',
   examples: [
-      { jp: 'トムはくしゃみをした。', en: 'Tom sneezed.', id: '[TBD]' },{"jp": "このズボンをはいてみてください。", "id": "Tolong coba pakai celana ini.", "level": "n5", "tags": ["belanja"]}],
+      {"jp": "このズボンをはいてみてください。", "id": "Tolong coba pakai celana ini.", "level": "n5", "tags": ["belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3376,7 +3376,7 @@ window.vocabN5 = [
   nuance: 'Means to speak or talk. It focuses on the action of conversing or delivering a speech, compared to 言う (to say a specific thing).',
   conj_type: 'godan',
   examples: [
-      { jp: '彼はドイツなまりの英語をはなす。', en: 'He speaks English with a German accent.', id: '[TBD]' },{"jp": "ゆっくり話してください。", "id": "Tolong bicara pelan-pelan.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "ゆっくり話してください。", "id": "Tolong bicara pelan-pelan.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3406,7 +3406,7 @@ window.vocabN5 = [
   nuance: 'Refers to affixing or sticking something flat onto a surface, like putting a stamp on an envelope or a poster on a wall.',
   conj_type: 'godan',
   examples: [
-      { jp: 'はるか遠くに明かりが見えた。', en: 'I saw a light far away.', id: '[TBD]' },{"jp": "ポスターを壁に貼りました。", "id": "Saya menempelkan poster di dinding.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "ポスターを壁に貼りました。", "id": "Saya menempelkan poster di dinding.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3436,7 +3436,7 @@ window.vocabN5 = [
   nuance: '弾く = memainkan alat musik petik/tuts. 引く = menarik.',
   conj_type: 'godan',
   examples: [
-      { jp: '俺、毎年風邪をひくんだよ。', en: 'I catch a cold every year.', id: '[TBD]' },{"jp": "ピアノを弾くことが好きです。", "id": "Saya suka memainkan piano.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "ピアノを弾くことが好きです。", "id": "Saya suka memainkan piano.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3468,7 +3468,7 @@ window.vocabN5 = [
   nuance: 'Specifically used for precipitation falling from the sky, such as rain (雨が降る) or snow (雪が降る).',
   conj_type: 'godan',
   examples: [
-      { jp: '年相応にふるまえ。', en: 'Act your age.', id: '[TBD]' },{"jp": "雨が降っています。", "id": "Hujan turun.", "level": "n5", "tags": ["alam-lingkungan"]}],
+      {"jp": "雨が降っています。", "id": "Hujan turun.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3528,7 +3528,7 @@ window.vocabN5 = [
   nuance: 'お待ちください = harap tunggu (formal). 待ってください = tolong tunggu.',
   conj_type: 'godan',
   examples: [
-      { jp: 'な起こしたてまつりそ。', en: 'Don\'t wake him up.', id: '[TBD]' },{"jp": "少し待ってください。", "id": "Tolong tunggu sebentar.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "少し待ってください。", "id": "Tolong tunggu sebentar.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3558,7 +3558,7 @@ window.vocabN5 = [
   nuance: 'The causative form of 見る (to see), literally meaning \'to make someone see\' or \'to show\'. Takes に for the person being shown.',
   conj_type: 'ichidan',
   examples: [
-      { jp: 'どんな手を使ってでも勝ちとってみせる。', en: 'I\'ll win using whatever means it takes.', id: '[TBD]' },{"jp": "パスポートを見せてください。", "id": "Tolong tunjukkan paspornya.", "level": "n5", "tags": ["perjalanan"]}],
+      {"jp": "パスポートを見せてください。", "id": "Tolong tunjukkan paspornya.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3619,7 +3619,7 @@ window.vocabN5 = [
   nuance: 'Means to hold or carry something in your hands. When expressing ownership or possessing something, the continuous form 持っている is used.',
   conj_type: 'godan',
   examples: [
-      { jp: 'とてもつかれました。', en: 'I was very tired.', id: '[TBD]' },{"jp": "荷物を持ちましょうか。", "id": "Boleh saya bawakan barangnya?", "level": "n5", "tags": ["sopan-santun"]}],
+      {"jp": "荷物を持ちましょうか。", "id": "Boleh saya bawakan barangnya?", "level": "n5", "tags": ["sopan-santun"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3739,7 +3739,7 @@ window.vocabN5 = [
   nuance: '日本語がわかります (pakai が, bukan を). Intransitif.',
   conj_type: 'godan',
   examples: [
-      { jp: '今にわかる。', en: 'You\'ll see.', id: '[TBD]' },{"jp": "説明がわかりましたか。", "id": "Apakah penjelasannya dimengerti?", "level": "n5", "tags": ["pendidikan"]}],
+      {"jp": "説明がわかりましたか。", "id": "Apakah penjelasannya dimengerti?", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3802,7 +3802,7 @@ window.vocabN5 = [
   nuance: '〜と思います = saya pikir... Lebih subjektif dari 考える (memikirkan secara aktif).',
   conj_type: 'godan',
   examples: [
-      { jp: 'この本は読む値打ちがあるとおもう。', en: 'I think this book is worth reading.', id: '[TBD]' },{"jp": "彼は優しいと思います。", "id": "Saya pikir dia baik hati.", "level": "n5", "tags": ["emosi"]}],
+      {"jp": "彼は優しいと思います。", "id": "Saya pikir dia baik hati.", "level": "n5", "tags": ["emosi"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3833,7 +3833,7 @@ window.vocabN5 = [
   nuance: '日本語ができます = bisa bahasa Jepang. Juga: できました = sudah selesai.',
   conj_type: 'ichidan',
   examples: [
-      { jp: '私は走ることができる。', en: 'I can run.', id: '[TBD]' },{"jp": "日本語を少し話すことができます。", "id": "Saya bisa berbicara sedikit bahasa Jepang.", "level": "n5", "tags": ["pendidikan"]}],
+      {"jp": "日本語を少し話すことができます。", "id": "Saya bisa berbicara sedikit bahasa Jepang.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3861,7 +3861,7 @@ window.vocabN5 = [
   nuance: '合う = cocok/pas (baju, rasa). Berbeda: 会う = bertemu orang.',
   conj_type: 'godan',
   examples: [
-      { jp: '悪い友達とつきあうな。', en: 'Don\'t keep bad company.', id: '[TBD]' },{"jp": "この服, サイズが合いますか。", "id": "Apakah ukuran baju ini cocok?", "level": "n5", "tags": ["belanja"]}],
+      {"jp": "この服, サイズが合いますか。", "id": "Apakah ukuran baju ini cocok?", "level": "n5", "tags": ["belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3893,7 +3893,7 @@ window.vocabN5 = [
   nuance: 'Means to sell something, exchanging goods for money. Often used in the continuous form (売っている) to describe what a store carries.',
   conj_type: 'godan',
   examples: [
-      { jp: 'トムは口うるさい。', en: 'Tom is picky.', id: '[TBD]' },{"jp": "ここでは新鮮な野菜を売っています。", "id": "Di sini menjual sayuran segar.", "level": "n5", "tags": ["belanja", "makanan-minuman"]}],
+      {"jp": "ここでは新鮮な野菜を売っています。", "id": "Di sini menjual sayuran segar.", "level": "n5", "tags": ["belanja", "makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -3953,7 +3953,7 @@ window.vocabN5 = [
   nuance: 'A noun meaning cleaning or sweeping that becomes a verb when \'する\' is added. Focuses on removing dirt and dust.',
   conj_type: 'suru',
   examples: [
-      { jp: 'そうじゃない？', en: 'Isn\'t that so?', id: '[TBD]' },{"jp": "毎週掃除をします。", "id": "Saya bersih-bersih setiap minggu.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "毎週掃除をします。", "id": "Saya bersih-bersih setiap minggu.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -4042,7 +4042,7 @@ window.vocabN5 = [
   nuance: 'Means the act of shopping. Used as a verb with する. Generally refers to buying everyday goods, clothes, or groceries.',
   conj_type: 'suru',
   examples: [
-      { jp: '柔らかいものだけを食べてくださいね。', en: 'Please eat only soft foods.', id: '[TBD]' },{"jp": "週末に買い物をします。", "id": "Saya berbelanja di akhir pekan.", "level": "n5", "tags": ["belanja"]}],
+      {"jp": "週末に買い物をします。", "id": "Saya berbelanja di akhir pekan.", "level": "n5", "tags": ["belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -4159,7 +4159,7 @@ window.vocabN5 = [
   nuance: 'A loanword meaning email or text message. To send an email, you say メールを送る or メールする.',
   conj_type: 'suru',
   examples: [
-      { jp: 'メールするね。', en: 'I\'ll text you.', id: '[TBD]' },{"jp": "後でメールします。", "id": "Nanti saya email.", "level": "n5", "tags": ["teknologi", "pekerjaan"]}],
+      {"jp": "後でメールします。", "id": "Nanti saya email.", "level": "n5", "tags": ["teknologi", "pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -4189,7 +4189,7 @@ window.vocabN5 = [
   nuance: 'テスト = tes/kuis. 試験 (しけん) = ujian yang lebih besar/formal.',
   conj_type: 'suru',
   examples: [
-      { jp: 'テストなんか、大嫌い。', en: 'I hate tests.', id: '[TBD]' },{"jp": "明日テストがあります。", "id": "Besok ada tes.", "level": "n5", "tags": ["pendidikan"]}],
+      {"jp": "明日テストがあります。", "id": "Besok ada tes.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -4219,7 +4219,7 @@ window.vocabN5 = [
   nuance: 'Refers to one\'s daily life, livelihood, or lifestyle. It focuses on the everyday routines of living, rather than life as a biological state (命).',
   conj_type: 'suru',
   examples: [
-      { jp: 'ここでの生活は大変ですか？', en: 'Is life here hard?', id: '[TBD]' },{"jp":"日本での生活はとても楽しいです。","id":"Kehidupan di Jepang sangat menyenangkan.","level":"n5","tags":["kehidupan-sehari"]}],
+      {"jp":"日本での生活はとても楽しいです。","id":"Kehidupan di Jepang sangat menyenangkan.","level":"n5","tags":["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -4249,7 +4249,7 @@ window.vocabN5 = [
   nuance: 'Means to be on time for an event or deadline. It is an intransitive verb, so it takes に for the event (e.g., 電車に間に合う).',
   conj_type: 'godan',
   examples: [
-      { jp: 'それで間に合うでしょう。', en: 'That\'ll do.', id: '[TBD]' },{"jp":"急いで走れば、電車に間に合います。","id":"Kalau buru-buru lari, akan sempat mengejar kereta tepat waktu.","level":"n5","tags":["kehidupan-sehari","waktu"]}],
+      {"jp":"急いで走れば、電車に間に合います。","id":"Kalau buru-buru lari, akan sempat mengejar kereta tepat waktu.","level":"n5","tags":["kehidupan-sehari","waktu"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -4306,7 +4306,7 @@ window.vocabN5 = [
   nuance: '聞こえる = terdengar (involuntar). Berbeda: 聞く = mendengarkan (sengaja).',
   conj_type: 'ichidan',
   examples: [
-      { jp: '音楽が聞こえる。', en: 'I hear music.', id: '[TBD]' },{"jp": "隣の部屋から音楽が聞こえます。", "id": "Terdengar musik dari kamar sebelah.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "隣の部屋から音楽が聞こえます。", "id": "Terdengar musik dari kamar sebelah.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -4338,7 +4338,7 @@ window.vocabN5 = [
   nuance: 'A versatile verb meaning to take out, to submit (homework), or to send (a letter). It implies moving something from inside to outside.',
   conj_type: 'godan',
   examples: [
-      { jp: '彼らは思い出すでしょう。', en: 'They\'ll remember.', id: '[TBD]' },{"jp":"郵便局で手紙を出しました。","id":"Saya mengirim surat di kantor pos.","level":"n5","tags":["kehidupan-sehari"]}],
+      {"jp":"郵便局で手紙を出しました。","id":"Saya mengirim surat di kantor pos.","level":"n5","tags":["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -4368,7 +4368,7 @@ window.vocabN5 = [
   nuance: 'Means to put something into a container or space (e.g., かばんに本を入れる). The transitive counterpart to 入る (to enter).',
   conj_type: 'ichidan',
   examples: [
-      { jp: '犬を中に入れるな。', en: 'Keep the dog out.', id: '[TBD]' },{"jp":"かばんに本とノートを入れます。","id":"Saya memasukkan buku dan buku catatan ke dalam tas.","level":"n5","tags":["kehidupan-sehari","pendidikan"]}],
+      {"jp":"かばんに本とノートを入れます。","id":"Saya memasukkan buku dan buku catatan ke dalam tas.","level":"n5","tags":["kehidupan-sehari","pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -4399,7 +4399,7 @@ window.vocabN5 = [
   nuance: 'Means to take a rest, take a day off, or go to sleep. Same as やすむ but presented here with its kanji.',
   conj_type: 'godan',
   examples: [
-      { jp: '彼は休む必要があった。', en: 'He needed to rest.', id: '[TBD]' },{"jp":"風邪をひいたので、会社を休みます。","id":"Karena masuk angin, saya izin tidak masuk kerja.","level":"n5","tags":["kesehatan","pekerjaan"]}],
+      {"jp":"風邪をひいたので、会社を休みます。","id":"Karena masuk angin, saya izin tidak masuk kerja.","level":"n5","tags":["kesehatan","pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -4429,7 +4429,7 @@ window.vocabN5 = [
   nuance: 'Refers to a field trip or study tour where one learns by observing. Often used in educational contexts.',
   conj_type: 'suru',
   examples: [
-      { jp: 'どういう所を見学したいですか。', en: 'What places would you like to visit?', id: '[TBD]' },{"jp":"あした自動車の工場を見学します。","id":"Besok kami akan melakukan kunjungan belajar ke pabrik mobil.","level":"n5","tags":["pendidikan","pekerjaan"]}],
+      {"jp":"あした自動車の工場を見学します。","id":"Besok kami akan melakukan kunjungan belajar ke pabrik mobil.","level":"n5","tags":["pendidikan","pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -4459,7 +4459,7 @@ window.vocabN5 = [
   nuance: 'Means sightseeing or looking at interesting things for fun. Focuses on enjoyment rather than learning, unlike 見学.',
   conj_type: 'suru',
   examples: [
-      { jp: '彼はバスで奈良を見物した。', en: 'He visited Nara by bus.', id: '[TBD]' },{"jp":"京都の有名なお寺を見物しました。","id":"Saya berkeliling melihat-lihat kuil terkenal di Kyoto.","level":"n5","tags":["kehidupan-sehari"]}],
+      {"jp":"京都の有名なお寺を見物しました。","id":"Saya berkeliling melihat-lihat kuil terkenal di Kyoto.","level":"n5","tags":["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -4488,7 +4488,7 @@ window.vocabN5 = [
   nuance: 'Means that something is naturally visible or in sight. Contrast with 見られる, which means having the ability or permission to see.',
   conj_type: 'ichidan',
   examples: [
-      { jp: 'トムが見える。', en: 'I see Tom.', id: '[TBD]' },{"jp":"部屋の窓からきれいな海が見えます。","id":"Dari jendela kamar terlihat laut yang indah.","level":"n5","tags":["alam-lingkungan","kehidupan-sehari"]}],
+      {"jp":"部屋の窓からきれいな海が見えます。","id":"Dari jendela kamar terlihat laut yang indah.","level":"n5","tags":["alam-lingkungan","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -4519,7 +4519,7 @@ window.vocabN5 = [
   nuance: 'The kanji for \'travel\' or \'trip\'. Same usage as りょこう, involving taking a journey away from home.',
   conj_type: 'suru',
   examples: [
-      { jp: '私は旅行が好きです。', en: 'I love trips.', id: '[TBD]' },{"jp":"夏休みに家族と旅行します。","id":"Saya akan berlibur bersama keluarga saat liburan musim panas.","level":"n5","tags":["keluarga","kehidupan-sehari"]}],
+      {"jp":"夏休みに家族と旅行します。","id":"Saya akan berlibur bersama keluarga saat liburan musim panas.","level":"n5","tags":["keluarga","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -4548,7 +4548,7 @@ window.vocabN5 = [
   nuance: 'Means to be sufficient or enough. Usually used to describe having enough money, time, or materials for a purpose.',
   conj_type: 'ichidan',
   examples: [
-      { jp: 'これで足りる？', en: 'Is this enough?', id: '[TBD]' },{"jp":"このお金で買い物の代金は足りますか。","id":"Apakah uang ini cukup untuk biaya belanja?","level":"n5","tags":["belanja"]}],
+      {"jp":"このお金で買い物の代金は足りますか。","id":"Apakah uang ini cukup untuk biaya belanja?","level":"n5","tags":["belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -4578,7 +4578,7 @@ window.vocabN5 = [
   nuance: '駐車場 = tempat parkir. 無料駐車場 = parkir gratis. 有料駐車場 = parkir berbayar.',
   conj_type: 'godan',
   examples: [
-      { jp: '１足す２は３である。', en: 'One plus two equals three.', id: '[TBD]' },{"jp": "駐車場はありますか。", "id": "Apakah ada tempat parkir?", "level": "n5", "tags": ["perjalanan"]}],
+      {"jp": "駐車場はありますか。", "id": "Apakah ada tempat parkir?", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -4637,7 +4637,7 @@ window.vocabN5 = [
   nuance: '〜階 = suffix untuk lantai gedung. 何階 (nankai) = lantai berapa?',
   conj_type: 'godan',
   examples: [
-      { jp: 'アリは夏じゅうせっせとはたらく。', en: 'Ants work hard all summer.', id: '[TBD]' },{"jp": "こうじょうではたらいている", "id": "work in a factory", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "こうじょうではたらいている", "id": "work in a factory", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -4721,7 +4721,7 @@ window.vocabN5 = [
   nuance: 'Means to lie down, go to bed, or to sleep. It often focuses on the action of going to sleep, while 眠る focuses on the state of sleeping.',
   conj_type: 'ichidan',
   examples: [
-      { jp: '尋ねるだけの価値がある。', en: 'I think it\'s worth asking.', id: '[TBD]' },{"jp":"毎晩十一時にねます。","id":"Setiap malam saya tidur pada jam 11.","level":"n5","tags":["kehidupan-sehari","waktu"]}],
+      {"jp":"毎晩十一時にねます。","id":"Setiap malam saya tidur pada jam 11.","level":"n5","tags":["kehidupan-sehari","waktu"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -4752,7 +4752,7 @@ window.vocabN5 = [
   nuance: 'Means to put or place an object somewhere. The destination is marked with に (e.g., 机の上に置く).',
   conj_type: 'godan',
   examples: [
-      { jp: 'トムは知っておくべきだ。', en: 'Tom ought to know.', id: '[TBD]' },{"jp":"つくえの上に荷物をおいてください。","id":"Tolong letakkan barang bawaan di atas meja.","level":"n5","tags":["kehidupan-sehari"]}],
+      {"jp":"つくえの上に荷物をおいてください。","id":"Tolong letakkan barang bawaan di atas meja.","level":"n5","tags":["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -4783,7 +4783,7 @@ window.vocabN5 = [
   nuance: 'Lawan kata: しまる (close)',
   conj_type: 'godan',
   examples: [
-      { jp: 'あくびをした。', en: 'I yawned.', id: '[TBD]' },{"jp": "ドアが開いています。", "id": "Pintunya terbuka.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "ドアが開いています。", "id": "Pintunya terbuka.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -4897,7 +4897,7 @@ window.vocabN5 = [
   nuance: 'A set phrase meaning to get hungry. Literally translates to \'the stomach becomes empty\'. Often used in the past tense (おなかがすきました) to say \'I am hungry\'.',
   conj_type: 'godan',
   examples: [
-      { jp: '赤ん坊はおなかがすくと泣く。', en: 'Babies cry when they\'re hungry.', id: '[TBD]' },{"jp":"おなかがすいたので、ラーメンを食べたいです。","id":"Karena lapar, saya ingin makan ramen.","level":"n5","tags":["makanan-minuman","kesehatan"]}],
+      {"jp":"おなかがすいたので、ラーメンを食べたいです。","id":"Karena lapar, saya ingin makan ramen.","level":"n5","tags":["makanan-minuman","kesehatan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -5974,7 +5974,5643 @@ window.vocabN5 = [
   }
 },
 
-  // ── ADJECTIVES (129) ────────────────────────────────────────
+// ── Staged Expansion (113) ──
+
+{
+  "id": "vg-n5-00993",
+  "word": "秋",
+  "reading": "あき",
+  "romaji": "aki",
+  "meaning_id": "musim gugur",
+  "meaning_en": "autumn",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "秋はもうすぐそこまで来ている。",
+      "id": "Musim gugur sudah dekat.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "さわやかな秋となりました。",
+      "id": "Cool fall is here.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-00994",
+  "word": "朝",
+  "reading": "あさ",
+  "romaji": "asa",
+  "meaning_id": "pagi",
+  "meaning_en": "morning",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "朝のラッシュは今がピークだ。",
+      "id": "The morning rush is at its peak now.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ジョージは朝にたくさんのチーズを食べた。",
+      "id": "George had a lot of cheese for breakfast.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-00996",
+  "word": "あさって",
+  "reading": "あさって",
+  "romaji": "asatte",
+  "meaning_id": "lusa",
+  "meaning_en": "day after tomorrow",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あさって彼にここへ来てもらうつもりです。",
+      "id": "I will have him come here the day after tomorrow.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "あさって、時間がありませんか。",
+      "id": "Do you have time the day after tomorrow?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-00998",
+  "word": "明日",
+  "reading": "あした",
+  "romaji": "ashita",
+  "meaning_id": "besok",
+  "meaning_en": "tomorrow",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あしたは一日中ひまです。",
+      "id": "I'll be free all day tomorrow.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "明日はピクニックに行くつもりだ。",
+      "id": "I am going on a picnic tomorrow.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01005",
+  "word": "あびる",
+  "reading": "あびる",
+  "romaji": "abiru",
+  "meaning_id": "me-bathe",
+  "meaning_en": "to bathe; to shower",
+  "jlpt": "n5",
+  "pos": "verb-ichidan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その時はシャワーを浴びていた。",
+      "id": "I was taking a shower then.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "シャワーを浴びてもよいでしょうか。",
+      "id": "May I take a shower?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01008",
+  "word": "あまり",
+  "reading": "あまり",
+  "romaji": "amari",
+  "meaning_id": "not very",
+  "meaning_en": "not very",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この手の本はあまり読まない。",
+      "id": "I don't read this kind of book much.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "フランス語ではあまり話しません。",
+      "id": "I don't speak French very much.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01011",
+  "word": "洗う",
+  "reading": "あらう",
+  "romaji": "arau",
+  "meaning_id": "mencuci",
+  "meaning_en": "to wash",
+  "jlpt": "n5",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "いつこの車は洗われましたか。",
+      "id": "When was this car washed?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "車を洗っているのはジョーンズさんです。",
+      "id": "The man washing the car is Mr Jones.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01013",
+  "word": "ある",
+  "reading": "ある",
+  "romaji": "aru",
+  "meaning_id": "me-be",
+  "meaning_en": "to be; to have (used for inanimate objects)",
+  "jlpt": "n5",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "話があったら電話をかけて下さい。",
+      "id": "If you want to speak to me, please call me up.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "木はたとえあってもほとんどない。",
+      "id": "There were few, if any, trees.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01022",
+  "word": "いつも",
+  "reading": "いつも",
+  "romaji": "itsumo",
+  "meaning_id": "always",
+  "meaning_en": "always",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あの子はいつもニコニコしている。",
+      "id": "Dia always smiling.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "あの子はいつもだだをこねている。",
+      "id": "That child is always throwing tantrums.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01023",
+  "word": "今",
+  "reading": "いま",
+  "romaji": "ima",
+  "meaning_id": "now",
+  "meaning_en": "now",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "今のアナウンスは何だったのですか。",
+      "id": "What did the announcement just say?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "トムもビルも今テニスをしている。",
+      "id": "Both Tom and Bill are playing tennis now.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01024",
+  "word": "意味",
+  "reading": "いみ",
+  "romaji": "imi",
+  "meaning_id": "meaning",
+  "meaning_en": "meaning",
+  "jlpt": "n5",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その語にはいくつかの意味がある。",
+      "id": "The word has several meanings.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "おっしゃる意味がわかりませんが。",
+      "id": "What you said does not make sense.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01026",
+  "word": "いる",
+  "reading": "いる",
+  "romaji": "iru",
+  "meaning_id": "me-be",
+  "meaning_en": "to be; to have (used for people and animals)",
+  "jlpt": "n5",
+  "pos": "verb-ichidan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "すっかり食べ終わってはいない。",
+      "id": "I haven't quite finished eating.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "あんないい男そうそういないぞ！！",
+      "id": "There aren't many blokes that nice!",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01027",
+  "word": "要る",
+  "reading": "いる",
+  "romaji": "iru",
+  "meaning_id": "me-need",
+  "meaning_en": "to need",
+  "jlpt": "n5",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "今のところお金はいらない。",
+      "id": "I don't need money at present.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "バターが要るんだけど、いくらかありますか。",
+      "id": "I need some butter. Do you have any?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01033",
+  "word": "売る",
+  "reading": "うる",
+  "romaji": "uru",
+  "meaning_id": "menjual",
+  "meaning_en": "to sell",
+  "jlpt": "n5",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "トムはメアリーにバイクを売った。",
+      "id": "Tom sold his motorcycle to Mary.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "バターは１ポンドいくらで売られる。",
+      "id": "Butter is sold by the pound.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01043",
+  "word": "起きる",
+  "reading": "おきる",
+  "romaji": "okiru",
+  "meaning_id": "me-get up",
+  "meaning_en": "to get up",
+  "jlpt": "n5",
+  "pos": "verb-ichidan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "お子さんはまだ起きているのですか。",
+      "id": "Is the kid still up?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "６時ごろ起きた。",
+      "id": "I got up at about six.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01044",
+  "word": "置く",
+  "reading": "おく",
+  "romaji": "oku",
+  "meaning_id": "meletakkan",
+  "meaning_en": "to put",
+  "jlpt": "n5",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "それをテーブルの上に置きなさい。",
+      "id": "Lay it on the table.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "バッグはどこに置けばいいですか。",
+      "id": "Where can I put my bag?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01050",
+  "word": "一昨日",
+  "reading": "おととい",
+  "romaji": "ototoi",
+  "meaning_id": "day before yesterday",
+  "meaning_en": "day before yesterday",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "一昨日、彼は学校を休んだかもしれない。",
+      "id": "He may have absented himself from school the day before yesterday.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "一昨日から、雨が降ったりやんだりしている。",
+      "id": "It has been raining on and off since the day before yesterday.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01051",
+  "word": "一昨年",
+  "reading": "おととし",
+  "romaji": "ototoshi",
+  "meaning_id": "year before last",
+  "meaning_en": "year before last",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼女は、一昨年よりもはるかに暮らし向きがよい。",
+      "id": "She's far better off than she was the year before last.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01065",
+  "word": "買う",
+  "reading": "かう",
+  "romaji": "kau",
+  "meaning_id": "membeli",
+  "meaning_en": "to buy",
+  "jlpt": "n5",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "買うかどうかはあなたしだいです。",
+      "id": "It is up to you whether to buy it or not.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "外国から買わなくてはなりません。",
+      "id": "We have to buy them from abroad.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01066",
+  "word": "返す",
+  "reading": "かえす",
+  "romaji": "kaesu",
+  "meaning_id": "me-return something",
+  "meaning_en": "to return something",
+  "jlpt": "n5",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "車はいつ返したらいいでしょうか。",
+      "id": "When should I return the car?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "いつこれを返していただけますか。",
+      "id": "When will this be returned to me?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01067",
+  "word": "かかる",
+  "reading": "かかる",
+  "romaji": "kakaru",
+  "meaning_id": "me-take time or money",
+  "meaning_en": "to take time or money",
+  "jlpt": "n5",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "どうしたらエンジンがかかりますか。",
+      "id": "How can I start the engine?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "それはほとんど終わりかかっています。",
+      "id": "It's almost over.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01069",
+  "word": "書く",
+  "reading": "かく",
+  "romaji": "kaku",
+  "meaning_id": "menulis",
+  "meaning_en": "to write",
+  "jlpt": "n5",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "すぐに書かなければなりませんか。",
+      "id": "Should I fill it in now?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "これらの語をノートに書きなさい。",
+      "id": "Write these words in your notebook.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01070",
+  "word": "かける",
+  "reading": "かける",
+  "romaji": "kakeru",
+  "meaning_id": "me-call by phone",
+  "meaning_en": "to call by phone",
+  "jlpt": "n5",
+  "pos": "verb-ichidan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "１０円で電話がかけられますか。",
+      "id": "Can I make a phone call for ten yen?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "コックさんは少しもかけていない。",
+      "id": "The cook hasn't put any on it.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01079",
+  "word": "火曜日",
+  "reading": "かようび",
+  "romaji": "kayoubi",
+  "meaning_id": "Tuesday",
+  "meaning_en": "Tuesday",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "火曜日に国会が開かれる。",
+      "id": "The Diet will meet on Tuesday.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "火曜日まで待ってもよいのではありませんか。",
+      "id": "You might as well wait until Tuesday.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01088",
+  "word": "昨日",
+  "reading": "きのう",
+  "romaji": "kinou",
+  "meaning_id": "kemarin",
+  "meaning_en": "yesterday",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "きのう先生は今日テストをすると言った。",
+      "id": "Yesterday the teacher told us that he would give us a test today.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "昨日はなんともひどい天気だった。",
+      "id": "The weather was miserable yesterday.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01092",
+  "word": "今日",
+  "reading": "きょう",
+  "romaji": "kyou",
+  "meaning_id": "today",
+  "meaning_en": "today",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "今日は何をしたいですか。",
+      "id": "What would you like to do today?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "今日は父さんはそわそわしている。",
+      "id": "Dad's in an impatient mood today.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01095",
+  "word": "去年",
+  "reading": "きょねん",
+  "romaji": "kyonen",
+  "meaning_id": "last year",
+  "meaning_en": "last year",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ビルは去年の秋に私に会いに来た。",
+      "id": "Bill came to see me last autumn.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "わたしは去年一年生でした。",
+      "id": "I was a first year student last year.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01097",
+  "word": "切る",
+  "reading": "きる",
+  "romaji": "kiru",
+  "meaning_id": "me-cut",
+  "meaning_en": "to cut",
+  "jlpt": "n5",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "トランプをよく切ってください。",
+      "id": "Tolong shuffle the cards carefully.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "エアコンを切ってもかまいませんか。",
+      "id": "Do you mind if I turn off the AC?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01101",
+  "word": "金曜日",
+  "reading": "きんようび",
+  "romaji": "kin'youbi",
+  "meaning_id": "Friday",
+  "meaning_en": "Friday",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あなたは金曜日に何をするつもりですか。",
+      "id": "What will you do on Friday?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "金曜日の銀行は遅じまいだ。",
+      "id": "The bank shuts late on Fridays.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01109",
+  "word": "今朝",
+  "reading": "けさ",
+  "romaji": "kesa",
+  "meaning_id": "this morning",
+  "meaning_en": "this morning",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "今朝はとても寒かった。",
+      "id": "It was very cold this morning.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "今朝はするべきことがたくさんある。",
+      "id": "I have a lot of things to do this morning.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01110",
+  "word": "消す",
+  "reading": "けす",
+  "romaji": "kesu",
+  "meaning_id": "me-erase",
+  "meaning_en": "to erase; to turn off power",
+  "jlpt": "n5",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "寝る前に電気を消してください。",
+      "id": "Turn off the light before you go to bed.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ローソクを消していただけますか。",
+      "id": "Would you put out the candles?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01111",
+  "word": "月曜日",
+  "reading": "げつようび",
+  "romaji": "getsuyoubi",
+  "meaning_id": "Monday",
+  "meaning_en": "Monday",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "月曜日までにここに来ています。",
+      "id": "I'll be here by Monday.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "月曜日以外ならいつでもいいですよ。",
+      "id": "Any day will do except Monday.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01114",
+  "word": "午前",
+  "reading": "ごぜん",
+  "romaji": "gozen",
+  "meaning_id": "pagi",
+  "meaning_en": "morning",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その電車は午前９時にここを出発します。",
+      "id": "The train departs here at 9:00 a.m.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "午前１０時に駅であいましょう。",
+      "id": "I will meet you at the station at 10 a.m.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01115",
+  "word": "答える",
+  "reading": "こたえる",
+  "romaji": "kotaeru",
+  "meaning_id": "me-answer",
+  "meaning_en": "to answer",
+  "jlpt": "n5",
+  "pos": "verb-ichidan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "「はい、ありません」とジョーダンさんは答えた。",
+      "id": "\"No, I don't,\" said Mr Jordan.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "何と答えていいかわかりません。",
+      "id": "I don't know how to reply to that question.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01118",
+  "word": "今年",
+  "reading": "ことし",
+  "romaji": "kotoshi",
+  "meaning_id": "this year",
+  "meaning_en": "this year",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "今年もよい年でありますように。",
+      "id": "May the new year bring you happiness!",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "今年の六月はあまり雨の日がなかった。",
+      "id": "There were not many rainy days in June this year.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01119",
+  "word": "困る",
+  "reading": "こまる",
+  "romaji": "komaru",
+  "meaning_id": "me-be worried",
+  "meaning_en": "to be worried",
+  "jlpt": "n5",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "時間がなくてたいへん困っている。",
+      "id": "I am pressed for time.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "車のことで困ってるんだよね。",
+      "id": "I have a problem with my car.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01121",
+  "word": "今月",
+  "reading": "こんげつ",
+  "romaji": "kongetsu",
+  "meaning_id": "this month",
+  "meaning_en": "this month",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "今月の売り上げはよくない。",
+      "id": "Sales have been off this month.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "今月いっぱいここにいます。",
+      "id": "I will stay here all this month.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01122",
+  "word": "今週",
+  "reading": "こんしゅう",
+  "romaji": "konshuu",
+  "meaning_id": "this week",
+  "meaning_en": "this week",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "今週はどちらにいらしゃいましたか。",
+      "id": "Where have you been this week?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "今週あなたは何をしていましたか。",
+      "id": "What have you been doing this week?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01130",
+  "word": "再来年",
+  "reading": "さらいねん",
+  "romaji": "sarainen",
+  "meaning_id": "year after next",
+  "meaning_en": "year after next",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "祖父は、再来年引退する予定です。",
+      "id": "My grandfather is planning to retire the year after next.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01136",
+  "word": "仕事",
+  "reading": "しごと",
+  "romaji": "shigoto",
+  "meaning_id": "job",
+  "meaning_en": "job",
+  "jlpt": "n5",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "仕事をサボったからクビになった。",
+      "id": "He got the sack for slacking off at work.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "どの仕事もやすやすとはできない。",
+      "id": "No work can be done with ease.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01140",
+  "word": "死ぬ",
+  "reading": "しぬ",
+  "romaji": "shinu",
+  "meaning_id": "me-die",
+  "meaning_en": "to die",
+  "jlpt": "n5",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その少年は死んだものとしてあきらめられた。",
+      "id": "The boy was given up for dead.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "生きるものはすべていつかは死ぬ。",
+      "id": "All living things die some day.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01141",
+  "word": "閉まる",
+  "reading": "しまる",
+  "romaji": "shimaru",
+  "meaning_id": "menutup",
+  "meaning_en": "to close; to be closed",
+  "jlpt": "n5",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あいにく店は閉まっていた。",
+      "id": "Unfortunately, the store was closed.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ドアが閉まっていたので、入ることが出来なかった。",
+      "id": "The door was locked, so I couldn't get in.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01142",
+  "word": "締める",
+  "reading": "しめる",
+  "romaji": "shimeru",
+  "meaning_id": "me-tie",
+  "meaning_en": "to tie",
+  "jlpt": "n5",
+  "pos": "verb-ichidan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "いつもシートベルトを締めなさい。",
+      "id": "Always fasten your seatbelt.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "シートベルトをお締めください。",
+      "id": "Tolong fasten your seat belt.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01143",
+  "word": "閉める",
+  "reading": "しめる",
+  "romaji": "shimeru",
+  "meaning_id": "me-close something",
+  "meaning_en": "to close something",
+  "jlpt": "n5",
+  "pos": "verb-ichidan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "どうかドアを閉めてくれませんか。",
+      "id": "Will you please shut the door?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "このデパートは７時に閉められる。",
+      "id": "This department store is closed at seven.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01147",
+  "word": "授業",
+  "reading": "じゅぎょう",
+  "romaji": "jugyou",
+  "meaning_id": "lesson; class work",
+  "meaning_en": "lesson; class work",
+  "jlpt": "n5",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "それは授業の終わりだった。",
+      "id": "That was the end of the class.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "そんなに授業をさぼっちゃダメよ。",
+      "id": "Don't cut your classes so often.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01155",
+  "word": "水曜日",
+  "reading": "すいようび",
+  "romaji": "suiyoubi",
+  "meaning_id": "Wednesday",
+  "meaning_en": "Wednesday",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "今度の水曜日ならいいですよ。",
+      "id": "Next Wednesday will be fine.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼女は先週の水曜日から病気です。",
+      "id": "She has been sick since last Wednesday.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01157",
+  "word": "すぐ",
+  "reading": "すぐ",
+  "romaji": "sugu",
+  "meaning_id": "immediately; soon",
+  "meaning_en": "immediately; soon; easily; right (near); honest; upright",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "すぐわかるところにあるよ。",
+      "id": "It's in plain sight.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "「雨がすぐあがるでしょうか」「あがらないと思うよ」",
+      "id": "\"Will it stop raining soon?\" \"I'm afraid not.\"",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01158",
+  "word": "すぐに",
+  "reading": "すぐに",
+  "romaji": "suguni",
+  "meaning_id": "instantly",
+  "meaning_en": "instantly",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "すぐに書かなければなりませんか。",
+      "id": "Should I fill it in now?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "すぐに出かけるほうがよさそうだ。",
+      "id": "I may as well start at once.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01161",
+  "word": "住む",
+  "reading": "すむ",
+  "romaji": "sumu",
+  "meaning_id": "me-live in",
+  "meaning_en": "to live in",
+  "jlpt": "n5",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "どうしてアメリカに住んでいたの？",
+      "id": "Why did he live in the United States?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ここにかつて住んでいたのですか。",
+      "id": "Did you use to live here?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01163",
+  "word": "する",
+  "reading": "する",
+  "romaji": "suru",
+  "meaning_id": "me-do",
+  "meaning_en": "to do",
+  "jlpt": "n5",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ログアウトするんじゃなかったよ。",
+      "id": "I shouldn't have logged off.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "父がもっと長生きしていたらなあ。",
+      "id": "I wish my father had lived longer.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01165",
+  "word": "せっけん",
+  "reading": "せっけん",
+  "romaji": "sekken",
+  "meaning_id": "economy",
+  "meaning_en": "economy",
+  "jlpt": "n5",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "せっけんだらけの手で私にさわらないで。",
+      "id": "Don't touch me with your soapy hands.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "せっけんで手を洗いました。",
+      "id": "I washed my hands with soap.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01167",
+  "word": "先月",
+  "reading": "せんげつ",
+  "romaji": "sengetsu",
+  "meaning_id": "last month",
+  "meaning_en": "last month",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "先月は、ほとんど雨が降らなかった。",
+      "id": "We had little rain last month.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "先月インフルエンザにかかった。",
+      "id": "I had the flu last month.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01168",
+  "word": "先週",
+  "reading": "せんしゅう",
+  "romaji": "senshuu",
+  "meaning_id": "last week",
+  "meaning_en": "last week",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あの人は先週ここにいた人です。",
+      "id": "He's the man that was here last week.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "あなたは先週ここにいましたか。",
+      "id": "Were you here last week?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01170",
+  "word": "全部",
+  "reading": "ぜんぶ",
+  "romaji": "zenbu",
+  "meaning_id": "all",
+  "meaning_en": "all",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "トッピングは全部のせて下さい。",
+      "id": "I want everything on it.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "それは全部で１００ドルでした。",
+      "id": "It has cost me $100 altogether.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01176",
+  "word": "たいへん",
+  "reading": "たいへん",
+  "romaji": "taihen",
+  "meaning_id": "very",
+  "meaning_en": "very",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "それはたいへんなショックでした。",
+      "id": "It was such a shock.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この本はたいへんおもしろい。",
+      "id": "This book is very interesting.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01179",
+  "word": "出す",
+  "reading": "だす",
+  "romaji": "dasu",
+  "meaning_id": "me-put out",
+  "meaning_en": "to put out",
+  "jlpt": "n5",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ここではおいしい食べ物が出されます。",
+      "id": "They serve excellent food here.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この件では名前を出したくない。",
+      "id": "Saya ingin remain anonymous in this.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01180",
+  "word": "立つ",
+  "reading": "たつ",
+  "romaji": "tatsu",
+  "meaning_id": "berdiri",
+  "meaning_en": "to stand",
+  "jlpt": "n5",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "立っているのは、みんな男だった。",
+      "id": "Those standing were all men.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "なぜぼくをここに立たせておくの？",
+      "id": "Why leave me standing here?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01182",
+  "word": "頼む",
+  "reading": "たのむ",
+  "romaji": "tanomu",
+  "meaning_id": "me-ask",
+  "meaning_en": "to ask",
+  "jlpt": "n5",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あなたに頼んでもよろしいですか。",
+      "id": "May I request a favour of you?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "このテーブルを頼んだのではない。",
+      "id": "I didn't ask for a table here.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01183",
+  "word": "たぶん",
+  "reading": "たぶん",
+  "romaji": "tabun",
+  "meaning_id": "probably",
+  "meaning_en": "probably",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "君にはたぶんみんなわかっていることでしょう。",
+      "id": "I expect you know all about it.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "たぶんガールフレンドがたくさんいるのよ。",
+      "id": "Maybe he has lots of girlfriends.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01185",
+  "word": "だんだん",
+  "reading": "だんだん",
+  "romaji": "dandan",
+  "meaning_id": "gradually",
+  "meaning_en": "gradually",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "日がだんだん長くなってきています。",
+      "id": "The days are getting longer and longer.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "それはだんだん大きくなった。",
+      "id": "It grew larger and larger.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01188",
+  "word": "違う",
+  "reading": "ちがう",
+  "romaji": "chigau",
+  "meaning_id": "me-differ",
+  "meaning_en": "to differ",
+  "jlpt": "n5",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ライオンとヒョウの違いは何ですか。",
+      "id": "What's the difference between lions and leopards?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "そうかもしれないけど、たぶん違う。",
+      "id": "That could be true, but I don't really think so.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01192",
+  "word": "ちょうど",
+  "reading": "ちょうど",
+  "romaji": "choudo",
+  "meaning_id": "exactly",
+  "meaning_en": "exactly",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ちょうど食べたかったものでした。",
+      "id": "That hit the spot.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ちょうどチェックインするところです。",
+      "id": "I'm just about to check in.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01193",
+  "word": "ちょっと",
+  "reading": "ちょっと",
+  "romaji": "chotto",
+  "meaning_id": "somewhat",
+  "meaning_en": "somewhat",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ちょっと、そこのきみ！",
+      "id": "Hey, you there!",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "もうほんのちょっと気をつけねば。",
+      "id": "You should be a thought more careful.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01194",
+  "word": "着く",
+  "reading": "つく",
+  "romaji": "tsuku",
+  "meaning_id": "me-arrive at",
+  "meaning_en": "to arrive at",
+  "jlpt": "n5",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "シカゴに着いたらすぐ電話します。",
+      "id": "I'll call you as soon as I get to Chicago.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ロンドンにはいつ着きましたか。",
+      "id": "When did you get to London?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01195",
+  "word": "つける",
+  "reading": "つける",
+  "romaji": "tsukeru",
+  "meaning_id": "me-turn on",
+  "meaning_en": "to turn on",
+  "jlpt": "n5",
+  "pos": "verb-ichidan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "テレビをつけて。",
+      "id": "Tolong turn on the television.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ラジオをつけてもかまいませんか。",
+      "id": "Do you mind if I turn on the radio?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01200",
+  "word": "できる",
+  "reading": "できる",
+  "romaji": "dekiru",
+  "meaning_id": "me-be able to",
+  "meaning_en": "to be able to",
+  "jlpt": "n5",
+  "pos": "verb-ichidan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あの二人はどうもできているらしい。",
+      "id": "They seem to be in love with each other.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "トイレお借りできますか。",
+      "id": "May I use your toilet?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01201",
+  "word": "テスト",
+  "reading": "テスト",
+  "romaji": "tesuto",
+  "meaning_id": "test",
+  "meaning_en": "test",
+  "jlpt": "n5",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "そのテストはむずかしかった。",
+      "id": "I found the test difficult.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "テストはなんとかなった。",
+      "id": "I just got by on the test.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01204",
+  "word": "出る",
+  "reading": "でる",
+  "romaji": "deru",
+  "meaning_id": "me-appear",
+  "meaning_en": "to appear; to leave",
+  "jlpt": "n5",
+  "pos": "verb-ichidan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "電話には出なかったからメールしておきました。",
+      "id": "He didn't answer the phone, so I left him an email.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "電気シェーバーから火が出ました。",
+      "id": "My electric razor is on fire.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01208",
+  "word": "電話",
+  "reading": "でんわ",
+  "romaji": "denwa",
+  "meaning_id": "telephone",
+  "meaning_en": "telephone",
+  "jlpt": "n5",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ブラウンさんから電話のようです。",
+      "id": "It's a phone call from a Mr Brown.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "電話では、ありがとうございました。",
+      "id": "Thank you very much for your time on the phone.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01210",
+  "word": "どうぞ",
+  "reading": "どうぞ",
+  "romaji": "douzo",
+  "meaning_id": "please",
+  "meaning_en": "please",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "写真をどうぞ見せて下さい。",
+      "id": "Tolong show me your picture.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "どうぞごゆっくりなさって下さい。",
+      "id": "Tolong make yourself at home.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01216",
+  "word": "とても",
+  "reading": "とても",
+  "romaji": "totemo",
+  "meaning_id": "very",
+  "meaning_en": "very",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この雨の中を外出することはとてもできないことです。",
+      "id": "Going out in this rain is out of the question.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "それらはとても大きなりんごです。",
+      "id": "Mereka very big apples.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01217",
+  "word": "土曜日",
+  "reading": "どようび",
+  "romaji": "doyoubi",
+  "meaning_id": "Saturday",
+  "meaning_en": "Saturday",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私は土曜日からここにいます。",
+      "id": "I've been here since Saturday.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "その年のクリスマスは土曜日だった。",
+      "id": "Christmas fell on Saturday that year.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01219",
+  "word": "取る",
+  "reading": "とる",
+  "romaji": "toru",
+  "meaning_id": "me-take something",
+  "meaning_en": "to take something",
+  "jlpt": "n5",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "そのお金はいざというときのために取っておくよ。",
+      "id": "I'm going to lay aside that money for emergencies.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "水分をたくさん取ってください。",
+      "id": "You should drink a lot of liquid.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01221",
+  "word": "鳴く",
+  "reading": "なく",
+  "romaji": "naku",
+  "meaning_id": "me-make a sound",
+  "meaning_en": "to make a sound (of an animal); to cry; to chirp; to sing (of birds)",
+  "jlpt": "n5",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "カエルが鳴いたら帰ろう。",
+      "id": "Let's return when the frog croaks.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "あのかわいい鳥は来る日も来る日も鳴いてばかりいた。",
+      "id": "That pretty bird did nothing but sing day after day.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01222",
+  "word": "夏",
+  "reading": "なつ",
+  "romaji": "natsu",
+  "meaning_id": "musim panas",
+  "meaning_en": "summer",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "アリは夏じゅうせっせとはたらく。",
+      "id": "Ants work away during summer.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "とうとう夏がやってきたようだ。",
+      "id": "Summer seems to have come at last.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01224",
+  "word": "習う",
+  "reading": "ならう",
+  "romaji": "narau",
+  "meaning_id": "belajar",
+  "meaning_en": "to learn",
+  "jlpt": "n5",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "車の運転を習っています。",
+      "id": "I've been learning to drive.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "今ギターを習っています。",
+      "id": "I am learning to play the guitar now.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01225",
+  "word": "並ぶ",
+  "reading": "ならぶ",
+  "romaji": "narabu",
+  "meaning_id": "me-line up",
+  "meaning_en": "to line up; to stand in a line",
+  "jlpt": "n5",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あんた、なぜに並んでいるのだい。",
+      "id": "What are you lining up for?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "女の子たちは並んで座っていました。",
+      "id": "The girls were sitting side by side.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01226",
+  "word": "並べる",
+  "reading": "ならべる",
+  "romaji": "naraberu",
+  "meaning_id": "me-line up",
+  "meaning_en": "to line up; to set up",
+  "jlpt": "n5",
+  "pos": "verb-ichidan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "メイドはテーブルにナイフとフォークを並べた。",
+      "id": "The maid arranged the knives and forks on the table.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "夕食がテーブルに並べられた。",
+      "id": "Supper was laid out on the table.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01227",
+  "word": "なる",
+  "reading": "なる",
+  "romaji": "naru",
+  "meaning_id": "me-become",
+  "meaning_en": "to become",
+  "jlpt": "n5",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ちまたではインターネットなるものがはやっています。",
+      "id": "People are talking about this Internet phenomenon.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "日がだんだん長くなってきています。",
+      "id": "The days are getting longer and longer.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01231",
+  "word": "日曜日",
+  "reading": "にちようび",
+  "romaji": "nichiyoubi",
+  "meaning_id": "Sunday",
+  "meaning_en": "Sunday",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ちょうど日曜日にぶつかりますね。",
+      "id": "It falls on Sunday.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "日曜日にはよくテニスをします。",
+      "id": "I often play tennis on Sunday.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01233",
+  "word": "脱ぐ",
+  "reading": "ぬぐ",
+  "romaji": "nugu",
+  "meaning_id": "me-take off clothes",
+  "meaning_en": "to take off clothes",
+  "jlpt": "n5",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ここで靴を脱がなければなりませんか。",
+      "id": "Do I have to take off my shoes here?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "コートを脱いだらどうですか。",
+      "id": "Why not take your coat off?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01237",
+  "word": "はく",
+  "reading": "はく",
+  "romaji": "haku",
+  "meaning_id": "me-wear",
+  "meaning_en": "to wear; to put on trousers",
+  "jlpt": "n5",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この靴はきつすぎてはけない。",
+      "id": "These shoes are too tight to get into.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "どうしたの、ベルボトムなんかはいて。",
+      "id": "Have you lost your marbles, wearing those bell-bottoms?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01240",
+  "word": "始まる",
+  "reading": "はじまる",
+  "romaji": "hajimaru",
+  "meaning_id": "me-begin",
+  "meaning_en": "to begin",
+  "jlpt": "n5",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "今コンサートが始まろうとしている。",
+      "id": "The concert is beginning now.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "学校は８時半に始まりますか。",
+      "id": "Does school start at eight-thirty?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01241",
+  "word": "初め",
+  "reading": "はじめ",
+  "romaji": "hajime",
+  "meaning_id": "beginning",
+  "meaning_en": "beginning",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "旅行の初めの二日間は雨降りだった。",
+      "id": "The first two days of my trip were rainy.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "初めよければすべてよし。",
+      "id": "Well begun, well finished.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01242",
+  "word": "初めて",
+  "reading": "はじめて",
+  "romaji": "hajimete",
+  "meaning_id": "for the first time",
+  "meaning_en": "for the first time",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "初めてドリアンを食べました。",
+      "id": "I ate durian for the first time.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "初めてのものばかりです。",
+      "id": "Everything is so new to me!",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01245",
+  "word": "働く",
+  "reading": "はたらく",
+  "romaji": "hataraku",
+  "meaning_id": "bekerja",
+  "meaning_en": "to work",
+  "jlpt": "n5",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "スイッチは時間通りに働かなかった。",
+      "id": "The switch didn't work on time.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "先生はここで働いているのだろう。",
+      "id": "I wonder if the teacher works here.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01249",
+  "word": "春",
+  "reading": "はる",
+  "romaji": "haru",
+  "meaning_id": "musim semi",
+  "meaning_en": "spring",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "カッコウは春にここにやってくる。",
+      "id": "Cuckoos visit here in spring.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "春になると川がここであふれる。",
+      "id": "Every spring the river floods here.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01250",
+  "word": "貼る",
+  "reading": "はる",
+  "romaji": "haru",
+  "meaning_id": "me-stick",
+  "meaning_en": "to stick",
+  "jlpt": "n5",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その写真はアルバムに貼ったほうがよい。",
+      "id": "You should stick those pictures in your album.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "あなたの名前がテープでケースに貼ってあります。",
+      "id": "Your name is taped on the case.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01252",
+  "word": "半分",
+  "reading": "はんぶん",
+  "romaji": "hanbun",
+  "meaning_id": "half minute",
+  "meaning_en": "half minute",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ケーキのどちらの半分でもとりなさい。",
+      "id": "You may take either half of the cake.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "それを半分にきりなさい。",
+      "id": "Cut it in half.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01254",
+  "word": "弾く",
+  "reading": "ひく",
+  "romaji": "hiku",
+  "meaning_id": "me-play an instrument with strings",
+  "meaning_en": "to play an instrument with strings; including piano",
+  "jlpt": "n5",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ギターをひくのはおもしろい。",
+      "id": "Playing the guitar is fun.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "アンがピアノをひいているはずがない。",
+      "id": "Ann cannot be playing the piano.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01262",
+  "word": "冬",
+  "reading": "ふゆ",
+  "romaji": "fuyu",
+  "meaning_id": "musim dingin",
+  "meaning_en": "winter",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "まもなく冬だ。",
+      "id": "It will be winter before long.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "冬でもなおアスパラガスが食べられる。",
+      "id": "You can still get asparagus in the winter.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01263",
+  "word": "降る",
+  "reading": "ふる",
+  "romaji": "furu",
+  "meaning_id": "musim gugur / jatuh",
+  "meaning_en": "to fall (e.g. rain or snow)",
+  "jlpt": "n5",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "シカゴのあたりでは雨が降っていました。",
+      "id": "It was raining around Chicago.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "六月は来る日も来る日も雨が降る。",
+      "id": "In June, it rains day after day.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01277",
+  "word": "毎月",
+  "reading": "まいげつ",
+  "romaji": "maigetsu",
+  "meaning_id": "every month",
+  "meaning_en": "every month",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "毎月のガス代はいくらですか。",
+      "id": "How much is your monthly gas bill?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私は本代に毎月千円もらいます。",
+      "id": "I am allowed 1,000 yen a month for books.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01278",
+  "word": "毎日",
+  "reading": "まいにち",
+  "romaji": "mainichi",
+  "meaning_id": "every day",
+  "meaning_en": "every day",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "毎日うっとうしくていやですね。",
+      "id": "Don't you just hate this weather?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "あなたは毎日どれぐらいテニスをしますか。",
+      "id": "How long do you play tennis every day?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01279",
+  "word": "毎年",
+  "reading": "まいねん",
+  "romaji": "mainen",
+  "meaning_id": "every year",
+  "meaning_en": "every year",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "毎年ここに来なきゃ。",
+      "id": "I'll have to come here every year.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "毎年行きます。",
+      "id": "I go every year.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01281",
+  "word": "また",
+  "reading": "また",
+  "romaji": "mata",
+  "meaning_id": "again; and",
+  "meaning_en": "again; and",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ジムもまたパーティーに来ます。",
+      "id": "Jim is coming to the party, too.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "あの人は医者でありまた大学の先生でもある。",
+      "id": "Dia a doctor and a university professor.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01282",
+  "word": "まだ",
+  "reading": "まだ",
+  "romaji": "mada",
+  "meaning_id": "yet; still",
+  "meaning_en": "yet; still",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "なすべきことがまだたくさんある。",
+      "id": "There still remains much to be done.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "まだたっぷり時間がありますよ。",
+      "id": "You've got plenty of time.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01283",
+  "word": "待つ",
+  "reading": "まつ",
+  "romaji": "matsu",
+  "meaning_id": "menunggu",
+  "meaning_en": "to wait",
+  "jlpt": "n5",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ちょっと待っていてもらえますか。",
+      "id": "Would you mind waiting a few minutes?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "すこし待つのは気になさいますか。",
+      "id": "Do you mind waiting for a minute?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01291",
+  "word": "もう",
+  "reading": "もう",
+  "romaji": "mou",
+  "meaning_id": "already",
+  "meaning_en": "already",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "もう～、なにやってんだよ。",
+      "id": "Jeez, what're you up to?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "もうそろそろ帰る時間だ。",
+      "id": "It is about time we were leaving.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01292",
+  "word": "もう一度",
+  "reading": "もういちど",
+  "romaji": "mouichido",
+  "meaning_id": "again",
+  "meaning_en": "again",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "もう一度ゆっくりお話しください。",
+      "id": "Could you please repeat it slowly?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "もう一度それにトライしてみたら。",
+      "id": "Why don't you give it another try?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01293",
+  "word": "木曜日",
+  "reading": "もくようび",
+  "romaji": "mokuyoubi",
+  "meaning_id": "Thursday",
+  "meaning_en": "Thursday",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "やあ、フレッド。木曜日にバドミントンはどう。",
+      "id": "Hi, Fred, how about badminton on Thursday?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "木曜日よりむしろ金曜日においでいただきたい。",
+      "id": "I would rather you came on Friday than on Thursday.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01294",
+  "word": "持つ",
+  "reading": "もつ",
+  "romaji": "motsu",
+  "meaning_id": "me-hold",
+  "meaning_en": "to hold",
+  "jlpt": "n5",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "コートを持ちましょうか。",
+      "id": "Shall I carry your coat?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "今持っているお金はこれだけです。",
+      "id": "Ini adalah all the money that I have now.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01295",
+  "word": "もっと",
+  "reading": "もっと",
+  "romaji": "motto",
+  "meaning_id": "more",
+  "meaning_en": "more",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "父がもっと長生きしていたらなあ。",
+      "id": "I wish my father had lived longer.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "もっと大きいサイズはありますか。",
+      "id": "Do you have a larger size?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01301",
+  "word": "休む",
+  "reading": "やすむ",
+  "romaji": "yasumu",
+  "meaning_id": "me-rest",
+  "meaning_en": "to rest",
+  "jlpt": "n5",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "父はまだ休んでいる。",
+      "id": "Father is still in bed.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼はしばらくの間休んだ。",
+      "id": "He rested for a while.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01302",
+  "word": "やる",
+  "reading": "やる",
+  "romaji": "yaru",
+  "meaning_id": "me-do",
+  "meaning_en": "to do",
+  "jlpt": "n5",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "５ドルをやる。",
+      "id": "Here's $5.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "サイン書いてやってもいいぞ。",
+      "id": "I can give you an autograph if you want.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01306",
+  "word": "よく",
+  "reading": "よく",
+  "romaji": "yoku",
+  "meaning_id": "often; well",
+  "meaning_en": "often; well",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ジャック、よく来てくれたね。",
+      "id": "You are welcome, Jack!",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "よく、そんな口がきけるな！",
+      "id": "How dare you say that!",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01308",
+  "word": "夜",
+  "reading": "よる",
+  "romaji": "yoru",
+  "meaning_id": "evening; night",
+  "meaning_en": "evening; night",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あなたは夜よく寝れませんか。",
+      "id": "Don't you sleep well at night?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "夜にスタジオでは電気をつけない。",
+      "id": "I don't switch on the light in my studio at night.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01310",
+  "word": "来週",
+  "reading": "らいしゅう",
+  "romaji": "raishuu",
+  "meaning_id": "next week",
+  "meaning_en": "next week",
+  "jlpt": "n5",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "来週ヨーロッパへ行くつもりなんです。",
+      "id": "I'm going to Europe next week.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "来週はうちへいらしゃいませんか。",
+      "id": "Won't you come and see me next week?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01314",
+  "word": "料理",
+  "reading": "りょうり",
+  "romaji": "ryouri",
+  "meaning_id": "cuisine",
+  "meaning_en": "cuisine",
+  "jlpt": "n5",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "これらのりんごは料理用にもってこいだ。",
+      "id": "These apples are good cookers.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "なんておいしい料理なんでしょう。",
+      "id": "This dish is terrific.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01315",
+  "word": "旅行",
+  "reading": "りょこう",
+  "romaji": "ryokou",
+  "meaning_id": "travel",
+  "meaning_en": "travel",
+  "jlpt": "n5",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "いつ旅行においでになりますか。",
+      "id": "When will you go on a journey?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "お金がないので、プチッと旅行。",
+      "id": "As I don't have the money, it'll just be a short trip.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01317",
+  "word": "練習",
+  "reading": "れんしゅう",
+  "romaji": "renshuu",
+  "meaning_id": "me-practice",
+  "meaning_en": "to practice",
+  "jlpt": "n5",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あなたはいつピアノの練習をしますか。",
+      "id": "When do you practice the piano?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "後でテニスの練習があるんだよ。",
+      "id": "I have tennis practice later.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01320",
+  "word": "忘れる",
+  "reading": "わすれる",
+  "romaji": "wasureru",
+  "meaning_id": "lupa / melupakan",
+  "meaning_en": "to forget",
+  "jlpt": "n5",
+  "pos": "verb-ichidan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "電話するのを忘れてごめんなさい。",
+      "id": "Tolong forgive me for forgetting to call you.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "名前をすっかり忘れてしまいました。",
+      "id": "I've completely forgotten its name.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01321",
+  "word": "渡す",
+  "reading": "わたす",
+  "romaji": "watasu",
+  "meaning_id": "me-hand over",
+  "meaning_en": "to hand over",
+  "jlpt": "n5",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "わたしを川のむこうに渡してください。",
+      "id": "Tolong take me across the river.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "走者がリレーでバトンを渡さなければなりません。",
+      "id": "A runner must pass the baton in a relay race.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+  // ── ADJECTIVES (174) ────────────────────────────────────────
 
 {
   id: 'vg-n5-00057',
@@ -5994,7 +11630,7 @@ window.vocabN5 = [
   nuance: 'Used for physical size and can also apply to abstract concepts like voices or dreams. It is an i-adjective, unlike the na-adjective 大きな which must precede a noun.',
   conj_type: 'adj-i',
   examples: [
-      { jp: '大きいね。', en: 'It\'s big.', id: '[TBD]' },{"jp": "大きい犬がいます。", "id": "Ada anjing besar.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "大きい犬がいます。", "id": "Ada anjing besar.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: ['vg-n5-00058'],
   see_also: [],
@@ -6052,7 +11688,7 @@ window.vocabN5 = [
   nuance: 'Konjugasi pakai よ sebagai stem: よくない, よかった. いい hanya untuk bentuk kamus.',
   conj_type: 'adj-i',
   examples: [
-      { jp: 'トムは頭が良い。', en: 'Tom\'s smart.', id: '[TBD]' },{"jp": "いい天気ですね。", "id": "Cuacanya bagus ya.", "level": "n5", "tags": ["alam-lingkungan"]}],
+      {"jp": "いい天気ですね。", "id": "Cuacanya bagus ya.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: ['vg-n5-00060'],
   see_also: [],
@@ -6111,7 +11747,7 @@ window.vocabN5 = [
   nuance: 'Dua arti: tinggi secara fisik (山が高い) dan harga mahal (値段が高い).',
   conj_type: 'adj-i',
   examples: [
-      { jp: '私は背が高い。', en: 'I\'m tall.', id: '[TBD]' },{"jp": "この店は高いです。", "id": "Toko ini mahal.", "level": "n5", "tags": ["belanja"]}],
+      {"jp": "この店は高いです。", "id": "Toko ini mahal.", "level": "n5", "tags": ["belanja"]}],
   synonyms: [],
   antonyms: ['vg-n5-00062'],
   see_also: [],
@@ -6170,7 +11806,7 @@ window.vocabN5 = [
   nuance: 'Untuk suhu udara. 熱い untuk benda panas (お湯が熱い).',
   conj_type: 'adj-i',
   examples: [
-      { jp: '暑い？', en: 'Is it hot?', id: '[TBD]' },{"jp": "今日はとても暑いですね。", "id": "Hari ini sangat panas ya.", "level": "n5", "tags": ["alam-lingkungan"]}],
+      {"jp": "今日はとても暑いですね。", "id": "Hari ini sangat panas ya.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: ['vg-n5-00064'],
   see_also: [],
@@ -6227,7 +11863,7 @@ window.vocabN5 = [
   nuance: '暖かい = hangat (cuaca yang menyenangkan). Berbeda: 熱い = panas menyengat.',
   conj_type: 'adj-i',
   examples: [
-      { jp: 'それは新しいです。', en: 'It\'s new.', id: '[TBD]' },{"jp": "新しい車を買いました。", "id": "Saya membeli mobil baru.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "新しい車を買いました。", "id": "Saya membeli mobil baru.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: ['vg-n5-00066'],
   see_also: [],
@@ -6285,7 +11921,7 @@ window.vocabN5 = [
   nuance: 'Can mean both intellectually stimulating and humorously amusing. Context usually clarifies whether a book is \'interesting\' or a comedian is \'funny\'.',
   conj_type: 'adj-i',
   examples: [
-      { jp: '面白いですね。', en: 'It\'s funny.', id: '[TBD]' },{"jp": "この映画は面白いです。", "id": "Film ini menarik.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "この映画は面白いです。", "id": "Film ini menarik.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: ['vg-n5-00068'],
   see_also: [],
@@ -6344,7 +11980,7 @@ window.vocabN5 = [
   nuance: '難しい = sulit/susah. Lawan: やさしい/簡単な. 発音が難しい = pengucapannya sulit.',
   conj_type: 'adj-i',
   examples: [
-      { jp: 'それ美味しい？', en: 'Is that tasty?', id: '[TBD]' },{"jp": "このラーメンはおいしいです。", "id": "Ramen ini enak.", "level": "n5", "tags": ["makanan-minuman"]}],
+      {"jp": "このラーメンはおいしいです。", "id": "Ramen ini enak.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -6375,7 +12011,7 @@ window.vocabN5 = [
   nuance: '易しい/簡単な = mudah. HATI-HATI: 易しい (yaさしい) vs 優しい (やさしい = baik hati). Kanji beda!',
   conj_type: 'adj-i',
   examples: [
-      { jp: 'それは難しいね。', en: 'That\'s hard.', id: '[TBD]' },{"jp": "日本語は難しいです。", "id": "Bahasa Jepang itu sulit.", "level": "n5", "tags": ["pendidikan"]}],
+      {"jp": "日本語は難しいです。", "id": "Bahasa Jepang itu sulit.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: ['vg-n5-00071'],
   see_also: [],
@@ -6434,7 +12070,7 @@ window.vocabN5 = [
   nuance: '安い = murah. Lawan: 高い. 安くておいしい = murah dan enak (sering dipakai bersama).',
   conj_type: 'adj-i',
   examples: [
-      { jp: '僕は忙しい。', en: 'I\'m busy.', id: '[TBD]' },{"jp": "最近, とても忙しいです。", "id": "Belakangan ini saya sangat sibuk.", "level": "n5", "tags": ["pekerjaan"]}],
+      {"jp": "最近, とても忙しいです。", "id": "Belakangan ini saya sangat sibuk.", "level": "n5", "tags": ["pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -6463,7 +12099,7 @@ window.vocabN5 = [
   nuance: '長い = panjang (ukuran) ATAU lama (waktu). Lawan: 短い. 長い時間 = waktu yang lama.',
   conj_type: 'adj-i',
   examples: [
-      { jp: 'なんて可愛いんでしょう。', en: 'How cute!', id: '[TBD]' },{"jp": "かわいいネコですね。", "id": "Kucing yang lucu ya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "かわいいネコですね。", "id": "Kucing yang lucu ya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -6492,7 +12128,7 @@ window.vocabN5 = [
   nuance: '短い = pendek (ukuran/waktu). Lawan: 長い. 時間が短い = waktunya singkat.',
   conj_type: 'adj-i',
   examples: [
-      { jp: '人生は長い。', en: 'Life is good.', id: '[TBD]' },{"jp": "この川は長いです。", "id": "Sungai ini panjang.", "level": "n5", "tags": ["alam-lingkungan"]}],
+      {"jp": "この川は長いです。", "id": "Sungai ini panjang.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: ['vg-n5-00075'],
   see_also: [],
@@ -6551,7 +12187,7 @@ window.vocabN5 = [
   nuance: 'Secara gramatikal adalah な形容詞. 〜が好き (bukan 〜を).',
   conj_type: 'adj-na',
   examples: [
-      { jp: 'それ好き。', en: 'I like it.', id: '[TBD]' },{"jp": "音楽が好きです。", "id": "Saya suka musik.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "音楽が好きです。", "id": "Saya suka musik.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: ['vg-n5-00077'],
   see_also: [],
@@ -6605,7 +12241,7 @@ window.vocabN5 = [
   nuance: 'Jangan pakai untuk diri sendiri — terkesan sombong. Gunakan 得意 untuk diri sendiri.',
   conj_type: 'adj-na',
   examples: [
-      { jp: '万事上手くいってます。', en: 'All is well.', id: '[TBD]' },{"jp": "田中さんは料理が上手ですね。", "id": "Tanaka-san pandai masak ya.", "level": "n5", "tags": ["makanan-minuman", "sopan-santun"]}],
+      {"jp": "田中さんは料理が上手ですね。", "id": "Tanaka-san pandai masak ya.", "level": "n5", "tags": ["makanan-minuman", "sopan-santun"]}],
   synonyms: [],
   antonyms: ['vg-n5-00079'],
   see_also: [],
@@ -6661,7 +12297,7 @@ window.vocabN5 = [
   nuance: 'Dua arti: cantik/indah dan bersih. Perhatikan konteks.',
   conj_type: 'adj-na',
   examples: [
-      { jp: 'これってきれいかな？', en: 'Is it clean?', id: '[TBD]' },{"jp": "この花はきれいですね。", "id": "Bunga ini cantik ya.", "level": "n5", "tags": ["alam-lingkungan"]}],
+      {"jp": "この花はきれいですね。", "id": "Bunga ini cantik ya.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -6692,7 +12328,7 @@ window.vocabN5 = [
   nuance: 'Describes peaceful environments, silence, or a calm personality. It\'s a na-adjective, meaning you must append \'na\' when directly modifying a noun.',
   conj_type: 'adj-na',
   examples: [
-      { jp: '静かにしてくれ。', en: 'Be quiet.', id: '[TBD]' },{"jp": "この図書館は静かです。", "id": "Perpustakaan ini tenang.", "level": "n5", "tags": ["pendidikan"]}],
+      {"jp": "この図書館は静かです。", "id": "Perpustakaan ini tenang.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: ['vg-n5-00082'],
   see_also: [],
@@ -6750,7 +12386,7 @@ window.vocabN5 = [
   nuance: 'Refers to something highly valued or carefully treated, often with an emotional attachment. It\'s a na-adjective and commonly used when telling someone to take care.',
   conj_type: 'adj-na',
   examples: [
-      { jp: 'お体を大切に。', en: 'Take care.', id: '[TBD]' },{"jp": "健康が大切です。", "id": "Kesehatan itu penting.", "level": "n5", "tags": ["kesehatan"]}],
+      {"jp": "健康が大切です。", "id": "Kesehatan itu penting.", "level": "n5", "tags": ["kesehatan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -6778,7 +12414,7 @@ window.vocabN5 = [
   nuance: 'Warna sebagai adj-i: 白い. Sebagai noun: 白 (shiro).',
   conj_type: 'adj-i',
   examples: [
-      { jp: '面白いですね。', en: 'It\'s funny.', id: '[TBD]' },{"jp": "白い猫がいます。", "id": "Ada kucing putih.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "白い猫がいます。", "id": "Ada kucing putih.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: ['vg-n5-00146'],
   see_also: [],
@@ -6836,7 +12472,7 @@ window.vocabN5 = [
   nuance: 'An i-adjective for the color red. It functions grammatically to describe red objects directly without needing the particle \'no\'.',
   conj_type: 'adj-i',
   examples: [
-      { jp: 'リンゴは赤い。', en: 'Apples are red.', id: '[TBD]' },{"jp": "赤いりんごがおいしいです。", "id": "Apel merah itu enak.", "level": "n5", "tags": ["makanan-minuman"]}],
+      {"jp": "赤いりんごがおいしいです。", "id": "Apel merah itu enak.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -6867,7 +12503,7 @@ window.vocabN5 = [
   nuance: 'Bahasa Jepang klasik: 青 mencakup biru dan hijau untuk alam (青信号=lampu hijau).',
   conj_type: 'adj-i',
   examples: [
-      { jp: '彼は青い顔をしている。', en: 'He looks pale.', id: '[TBD]' },{"jp": "青い空がきれいです。", "id": "Langit biru itu indah.", "level": "n5", "tags": ["alam-lingkungan"]}],
+      {"jp": "青い空がきれいです。", "id": "Langit biru itu indah.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -7011,7 +12647,7 @@ window.vocabN5 = [
   nuance: 'An i-adjective describing the color white. Distinct from the noun form, it can conjugate and directly modify nouns.',
   conj_type: 'adj-i',
   examples: [
-      { jp: 'テニスをするのはおもしろい。', en: 'Playing tennis is fun.', id: '[TBD]' },{"jp": "白いシャツを着ています。", "id": "Dia memakai kemeja putih.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "白いシャツを着ています。", "id": "Dia memakai kemeja putih.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -7126,7 +12762,7 @@ window.vocabN5 = [
   nuance: '高い = mahal (uang) ATAU tinggi (fisik). Konteks menentukan.',
   conj_type: 'adj-i',
   examples: [
-      { jp: '彼はもう来たかい。', en: 'Has he come yet?', id: '[TBD]' },{"jp": "このレストランは高いですが, おいしいです。", "id": "Restoran ini mahal tapi enak.", "level": "n5", "tags": ["makanan-minuman", "belanja"]}],
+      {"jp": "このレストランは高いですが, おいしいです。", "id": "Restoran ini mahal tapi enak.", "level": "n5", "tags": ["makanan-minuman", "belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -7156,7 +12792,7 @@ window.vocabN5 = [
   nuance: 'Refers primarily to price and affordability. It is an i-adjective and does not generally carry the negative connotation of poor quality that \'cheap\' sometimes has in English.',
   conj_type: 'adj-i',
   examples: [
-      { jp: '彼は疲れやすい。', en: 'He tires easily.', id: '[TBD]' },{"jp": "このスーパーは安くて便利です。", "id": "Supermarket ini murah dan praktis.", "level": "n5", "tags": ["belanja"]}],
+      {"jp": "このスーパーは安くて便利です。", "id": "Supermarket ini murah dan praktis.", "level": "n5", "tags": ["belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -7186,7 +12822,7 @@ window.vocabN5 = [
   nuance: 'Used for spatial length and temporal duration. It applies to distances, objects, time, and abstract things like stories.',
   conj_type: 'adj-i',
   examples: [
-      { jp: 'みんながいつも私にそれをたずねる。', en: 'Everyone always asks me that.', id: '[TBD]' },{"jp": "この道はとても長いです。", "id": "Jalan ini sangat panjang.", "level": "n5", "tags": ["perjalanan"]}],
+      {"jp": "この道はとても長いです。", "id": "Jalan ini sangat panjang.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -7387,7 +13023,7 @@ window.vocabN5 = [
   nuance: 'Can refer to mild, pleasant weather or things that are warm to the touch, like food. The kanji changes depending on whether it describes climate or physical temperature.',
   conj_type: 'adj-i',
   examples: [
-      { jp: 'その島は一年中あたたかい。', en: 'The island is warm all year.', id: '[TBD]' },{"jp": "春は暖かくて気持ちいいですね。", "id": "Musim semi itu hangat dan enak ya.", "level": "n5", "tags": ["alam-lingkungan"]}],
+      {"jp": "春は暖かくて気持ちいいですね。", "id": "Musim semi itu hangat dan enak ya.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -7417,7 +13053,7 @@ window.vocabN5 = [
   nuance: 'Refers to a pleasant, cool temperature, usually in the context of weather or a breeze. It has a positive connotation compared to feeling uncomfortably cold.',
   conj_type: 'adj-i',
   examples: [
-      { jp: '今日は少しすずしい。', en: 'It\'s a bit cold today.', id: '[TBD]' },{"jp": "秋は涼しくて好きです。", "id": "Saya suka musim gugur karena sejuk.", "level": "n5", "tags": ["alam-lingkungan"]}],
+      {"jp": "秋は涼しくて好きです。", "id": "Saya suka musim gugur karena sejuk.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -7476,7 +13112,7 @@ window.vocabN5 = [
   nuance: '嬉しい = senang atas sesuatu yang diterima. 楽しい = saat melakukan sesuatu yang menyenangkan.',
   conj_type: 'adj-i',
   examples: [
-      { jp: '僕はとてもうれしい。', en: 'I\'m so happy.', id: '[TBD]' },{"jp": "合格して, とても嬉しいです。", "id": "Saya sangat senang bisa lulus.", "level": "n5", "tags": ["emosi", "pendidikan"]}],
+      {"jp": "合格して, とても嬉しいです。", "id": "Saya sangat senang bisa lulus.", "level": "n5", "tags": ["emosi", "pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -7506,7 +13142,7 @@ window.vocabN5 = [
   nuance: 'A versatile i-adjective used for babies, animals, clothing, and anything endearing. It implies affection and a sense of charm.',
   conj_type: 'adj-i',
   examples: [
-      { jp: 'かわいい！', en: 'How cute!', id: '[TBD]' },{"jp": "この猫はとても可愛いですね。", "id": "Kucing ini sangat lucu ya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "この猫はとても可愛いですね。", "id": "Kucing ini sangat lucu ya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -7536,7 +13172,7 @@ window.vocabN5 = [
   nuance: '辛い = pedas (料理が辛い) ATAU asin (塩辛い). Konteks menentukan.',
   conj_type: 'adj-i',
   examples: [
-      { jp: 'ペンキを塗るからいいわ。', en: 'We\'ll paint it.', id: '[TBD]' },{"jp": "この料理は辛いですか。", "id": "Apakah masakan ini pedas?", "level": "n5", "tags": ["makanan-minuman"]}],
+      {"jp": "この料理は辛いですか。", "id": "Apakah masakan ini pedas?", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -7593,7 +13229,7 @@ window.vocabN5 = [
   nuance: 'にがい (苦い) = pahit. 苦手 (nigate) = tidak pandai/tidak suka — kata turunan penting.',
   conj_type: 'adj-i',
   examples: [
-      { jp: 'この薬はにがい味がする。', en: 'This medicine tastes bitter.', id: '[TBD]' },{"jp": "コーヒーは苦いですが, 好きです。", "id": "Kopi itu pahit tapi saya suka.", "level": "n5", "tags": ["makanan-minuman"]}],
+      {"jp": "コーヒーは苦いですが, 好きです。", "id": "Kopi itu pahit tapi saya suka.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -7621,7 +13257,7 @@ window.vocabN5 = [
   nuance: 'Describes a person\'s schedule or state of having a lot to do. It should not be used to describe a place as bustling or busy.',
   conj_type: 'adj-i',
   examples: [
-      { jp: '彼は今朝からずっといそがしい。', en: 'He has been busy since this morning.', id: '[TBD]' },{"jp": "今週はとても忙しいです。", "id": "Minggu ini saya sangat sibuk.", "level": "n5", "tags": ["pekerjaan"]}],
+      {"jp": "今週はとても忙しいです。", "id": "Minggu ini saya sangat sibuk.", "level": "n5", "tags": ["pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -7651,7 +13287,7 @@ window.vocabN5 = [
   nuance: 'A na-adjective or noun describing a state of having nothing to do or being unoccupied. It contrasts with being busy and can sometimes imply boredom.',
   conj_type: 'adj-na',
   examples: [
-      { jp: '私は今日はひまです。', en: 'I\'m free today.', id: '[TBD]' },{"jp": "今週末はひまですか。", "id": "Apakah akhir pekan ini kamu bebas?", "level": "n5", "tags": ["hubungan"]}],
+      {"jp": "今週末はひまですか。", "id": "Apakah akhir pekan ini kamu bebas?", "level": "n5", "tags": ["hubungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -7678,7 +13314,7 @@ window.vocabN5 = [
   nuance: 'A na-adjective for a bustling atmosphere filled with people and cheerful activity. It is generally positive and not used to mean just noisy.',
   conj_type: 'adj-na',
   examples: [
-      { jp: 'にぎやかなところが好きだ。', en: 'I like busy places.', id: '[TBD]' },{"jp": "渋谷はとても賑やかな街です。", "id": "Shibuya adalah kota yang sangat ramai.", "level": "n5", "tags": ["perjalanan"]}],
+      {"jp": "渋谷はとても賑やかな街です。", "id": "Shibuya adalah kota yang sangat ramai.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -7736,7 +13372,7 @@ window.vocabN5 = [
   nuance: '〜が好きです = saya suka ~. Derajat: 大好き > 好き。',
   conj_type: 'adj-na',
   examples: [
-      { jp: '逃げるすきはなかった。', en: 'I had no chance to escape.', id: '[TBD]' },{"jp": "日本語が好きです。", "id": "Saya suka bahasa Jepang.", "level": "n5", "tags": ["emosi", "pendidikan"]}],
+      {"jp": "日本語が好きです。", "id": "Saya suka bahasa Jepang.", "level": "n5", "tags": ["emosi", "pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -7766,7 +13402,7 @@ window.vocabN5 = [
   nuance: '嫌い = tidak suka. 大嫌い = sangat benci. Lawan: 好き.',
   conj_type: 'adj-na',
   examples: [
-      { jp: '彼は何でもないようなことで怒り出すきらいがある。', en: 'He tends to get upset over nothing.', id: '[TBD]' },{"jp": "野菜が嫌いな子どもが多いです。", "id": "Banyak anak yang tidak suka sayuran.", "level": "n5", "tags": ["makanan-minuman", "keluarga"]}],
+      {"jp": "野菜が嫌いな子どもが多いです。", "id": "Banyak anak yang tidak suka sayuran.", "level": "n5", "tags": ["makanan-minuman", "keluarga"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -7795,7 +13431,7 @@ window.vocabN5 = [
   nuance: '上手 = pandai (bicara tentang orang lain). Untuk diri sendiri: 得意 (tokui). Lawan: 下手.',
   conj_type: 'adj-na',
   examples: [
-      { jp: 'きみがこんなに料理がじょうずだとは知らなかった。', en: 'I didn\'t know you could cook this well.', id: '[TBD]' },{"jp": "彼女はピアノが上手ですね。", "id": "Dia pandai bermain piano ya.", "level": "n5", "tags": ["pendidikan"]}],
+      {"jp": "彼女はピアノが上手ですね。", "id": "Dia pandai bermain piano ya.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -7824,7 +13460,7 @@ window.vocabN5 = [
   nuance: '下手 = tidak pandai. Lawan: 上手。 苦手 (nigate) = kurang ahli/kurang suka.',
   conj_type: 'adj-na',
   examples: [
-      { jp: '妻は、運転がへたっぴなんです。', en: 'My wife drives very poorly.', id: '[TBD]' },{"jp": "私は料理が下手です。", "id": "Saya tidak pandai memasak.", "level": "n5", "tags": ["makanan-minuman"]}],
+      {"jp": "私は料理が下手です。", "id": "Saya tidak pandai memasak.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -7909,7 +13545,7 @@ window.vocabN5 = [
   nuance: '大丈夫 = serbaguna: persetujuan, ketenangan, atau penolakan halus.',
   conj_type: 'adj-na',
   examples: [
-      { jp: 'そんなこと心配しなくてだいじょうぶだよ。', en: 'You don\'t need to worry about such a thing.', id: '[TBD]' },{"jp": "大丈夫ですか。怪我はないですか。", "id": "Apakah kamu baik-baik saja? Tidak ada yang luka?", "level": "n5", "tags": ["kesehatan", "hubungan"]}],
+      {"jp": "大丈夫ですか。怪我はないですか。", "id": "Apakah kamu baik-baik saja? Tidak ada yang luka?", "level": "n5", "tags": ["kesehatan", "hubungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -7939,7 +13575,7 @@ window.vocabN5 = [
   nuance: 'Can mean hard to understand or accomplish, and is also a polite way to indirectly say \'no\' or \'impossible\'. It implies complexity and challenge.',
   conj_type: 'adj-i',
   examples: [
-      { jp: 'それがどれほどむずかしいか君に説明できそうにない。', en: 'I don\'t think I can get you to understand how difficult that is.', id: '[TBD]' },{"jp": "この問題はとても難しいです。", "id": "Soal ini sangat sulit.", "level": "n5", "tags": ["pendidikan"]}],
+      {"jp": "この問題はとても難しいです。", "id": "Soal ini sangat sulit.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -7970,7 +13606,7 @@ window.vocabN5 = [
   nuance: '優しい = baik hati. HATI-HATI: 易しい = mudah. Kanji berbeda!',
   conj_type: 'adj-i',
   examples: [
-      { jp: '彼女はやさしい。', en: 'She is kind.', id: '[TBD]' },{"jp": "田中さんはとても優しい人です。", "id": "Tanaka-san adalah orang yang sangat baik hati.", "level": "n5", "tags": ["hubungan", "emosi"]}],
+      {"jp": "田中さんはとても優しい人です。", "id": "Tanaka-san adalah orang yang sangat baik hati.", "level": "n5", "tags": ["hubungan", "emosi"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -7999,7 +13635,7 @@ window.vocabN5 = [
   nuance: 'Lawan kata: つまらない (boring)',
   conj_type: 'adj-i',
   examples: [
-      { jp: 'テニスをするのはおもしろい。', en: 'Playing tennis is fun.', id: '[TBD]' },{"jp": "この本はとても面白いです。", "id": "Buku ini sangat menarik.", "level": "n5", "tags": ["emosi", "kehidupan-sehari"]}],
+      {"jp": "この本はとても面白いです。", "id": "Buku ini sangat menarik.", "level": "n5", "tags": ["emosi", "kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -8138,7 +13774,7 @@ window.vocabN5 = [
   nuance: '多い = banyak (adj). Berbeda dari たくさん (adv). 多い人 = banyak orang.',
   conj_type: 'adj-i',
   examples: [
-      { jp: '彼はおおいに稼ぐ。', en: 'He earns a great deal.', id: '[TBD]' },{"jp": "今日は人が多いですね。", "id": "Hari ini banyak orang ya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "今日は人が多いですね。", "id": "Hari ini banyak orang ya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -8252,7 +13888,7 @@ window.vocabN5 = [
   nuance: '早い (hayai) = awal/pagi. 速い (hayai) = cepat. Pelafalan sama, kanji beda.',
   conj_type: 'adj-i',
   examples: [
-      { jp: '彼は動作がはやい。', en: 'He acts quickly.', id: '[TBD]' },{"jp": "新幹線はとても速いです。", "id": "Shinkansen sangat cepat.", "level": "n5", "tags": ["perjalanan"]}],
+      {"jp": "新幹線はとても速いです。", "id": "Shinkansen sangat cepat.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -8282,7 +13918,7 @@ window.vocabN5 = [
   nuance: 'Refers to physical weight and can also describe a heavy atmosphere, mood, or serious illness. It is an i-adjective describing a state of being burdensome.',
   conj_type: 'adj-i',
   examples: [
-      { jp: 'それはすばらしいおもいつきだ。', en: 'That\'s a bright idea.', id: '[TBD]' },{"jp": "このスーツケースは重いですね。", "id": "Koper ini berat ya.", "level": "n5", "tags": ["perjalanan"]}],
+      {"jp": "このスーツケースは重いですね。", "id": "Koper ini berat ya.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -8421,7 +14057,7 @@ window.vocabN5 = [
   nuance: '大変 = susah (adj-na) ATAU sangat (adv). 大変でしたね = pasti susah ya.',
   conj_type: 'adj-na',
   examples: [
-      { jp: '彼は音楽がたいへん好きである。', en: 'He loves music.', id: '[TBD]' },{"jp": "仕事がとても大変です。", "id": "Pekerjaannya sangat berat.", "level": "n5", "tags": ["pekerjaan", "emosi"]}],
+      {"jp": "仕事がとても大変です。", "id": "Pekerjaannya sangat berat.", "level": "n5", "tags": ["pekerjaan", "emosi"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -8506,7 +14142,7 @@ window.vocabN5 = [
   nuance: 'An i-adjective used to express physical pain, often exclaimed when hurt. It can also describe a sore body part by combining with the body part name.',
   conj_type: 'adj-i',
   examples: [
-      { jp: '死んじゃいたい。', en: 'I want to die.', id: '[TBD]' },{"jp": "頭が痛いです。", "id": "Kepala saya sakit.", "level": "n5", "tags": ["kesehatan"]}],
+      {"jp": "頭が痛いです。", "id": "Kepala saya sakit.", "level": "n5", "tags": ["kesehatan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -8533,7 +14169,7 @@ window.vocabN5 = [
   nuance: 'The attributive na-adjective form of \'yuumei\' used directly before a noun. It explicitly links the quality of being well-known to the following noun.',
   conj_type: 'adj-na',
   examples: [
-      { jp: 'トムって有名なの？', en: 'Is Tom famous?', id: '[TBD]' },{"jp":"京都はとても有名な町です。","id":"Kyoto adalah kota yang sangat terkenal.","level":"n5","tags":["kehidupan-sehari"]}],
+      {"jp":"京都はとても有名な町です。","id":"Kyoto adalah kota yang sangat terkenal.","level":"n5","tags":["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -8559,7 +14195,7 @@ window.vocabN5 = [
   nuance: '少ない (すくない) = sedikit (adj-i, untuk kuantitas). Berbeda: 少し (adv).',
   conj_type: 'adj-i',
   examples: [
-      { jp: '５は８より少ない。', en: '5 is less than 8.', id: '[TBD]' },{"jp": "今日はお客さんが少ないです。", "id": "Hari ini pelanggannya sedikit.", "level": "n5", "tags": ["pekerjaan", "belanja"]}],
+      {"jp": "今日はお客さんが少ないです。", "id": "Hari ini pelanggannya sedikit.", "level": "n5", "tags": ["pekerjaan", "belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -8588,7 +14224,7 @@ window.vocabN5 = [
   nuance: '多い (おおい) = banyak (adj-i). Berbeda dari たくさん (adv). 多い人 = banyak orang.',
   conj_type: 'adj-i',
   examples: [
-      { jp: '口数が多いぞ。', en: 'You talk too much.', id: '[TBD]' },{"jp": "駅に人が多いです。", "id": "Di stasiun banyak orang.", "level": "n5", "tags": ["perjalanan"]}],
+      {"jp": "駅に人が多いです。", "id": "Di stasiun banyak orang.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -8642,7 +14278,7 @@ window.vocabN5 = [
   nuance: '大切な = penting/berharga (bernilai emosional). Berbeda: 重要な = penting (objektif).',
   conj_type: 'adj-na',
   examples: [
-      { jp: '彼女は私の大切な人です。', en: 'She is dear to me.', id: '[TBD]' },{"jp": "これは私にとって大切なものです。", "id": "Ini adalah sesuatu yang berharga bagi saya.", "level": "n5", "tags": ["emosi", "motivasi"]}],
+      {"jp": "これは私にとって大切なものです。", "id": "Ini adalah sesuatu yang berharga bagi saya.", "level": "n5", "tags": ["emosi", "motivasi"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -8668,7 +14304,7 @@ window.vocabN5 = [
   nuance: '安全な = aman (bebas dari bahaya). Lawan: 危険な (kiken-na = berbahaya).',
   conj_type: 'adj-na',
   examples: [
-      { jp: 'ここなら安全なのですか。', en: 'Am I safe here?', id: '[TBD]' },{"jp": "この道は安全ですか。", "id": "Apakah jalan ini aman?", "level": "n5", "tags": ["perjalanan"]}],
+      {"jp": "この道は安全ですか。", "id": "Apakah jalan ini aman?", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -8694,7 +14330,7 @@ window.vocabN5 = [
   nuance: 'Lawan kata: おそい (late/slow)',
   conj_type: 'adj-i',
   examples: [
-      { jp: '時のたつのは早いものだ。', en: 'Time flies.', id: '[TBD]' },{"jp":"毎朝、早い時間に起きます。","id":"Setiap pagi, saya bangun di waktu yang awal.","level":"n5","tags":["kehidupan-sehari","waktu"]}],
+      {"jp":"毎朝、早い時間に起きます。","id":"Setiap pagi, saya bangun di waktu yang awal.","level":"n5","tags":["kehidupan-sehari","waktu"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -8724,7 +14360,7 @@ window.vocabN5 = [
   nuance: 'A na-adjective used to praise someone\'s skill or proficiency, often in arts, sports, or languages. It is typically used for others, as using it for oneself sounds boastful.',
   conj_type: 'adj-na',
   examples: [
-      { jp: 'トムってキスが上手なの？', en: 'Is Tom a good kisser?', id: '[TBD]' },{"jp":"田中さんは日本語がとても上手です。","id":"Tanaka sangat pandai berbahasa Jepang.","level":"n5","tags":["pendidikan","pertemanan"]}],
+      {"jp":"田中さんは日本語がとても上手です。","id":"Tanaka sangat pandai berbahasa Jepang.","level":"n5","tags":["pendidikan","pertemanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -8750,7 +14386,7 @@ window.vocabN5 = [
   nuance: 'Lawan kata: 上手な skillful',
   conj_type: 'adj-na',
   examples: [
-      { jp: '僕、絵が下手なんだ。', en: 'I\'m poor at drawing.', id: '[TBD]' },{"jp":"私は歌が下手ですから、歌いません。","id":"Karena saya tidak pandai bernyanyi, saya tidak bernyanyi.","level":"n5","tags":["kehidupan-sehari"]}],
+      {"jp":"私は歌が下手ですから、歌いません。","id":"Karena saya tidak pandai bernyanyi, saya tidak bernyanyi.","level":"n5","tags":["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -8851,7 +14487,7 @@ window.vocabN5 = [
   nuance: 'Lawan dari 狭い (sempit).',
   conj_type: 'i-adj',
   examples: [
-      { jp: '広いな！', en: 'Large, isn\'t it?', id: '[TBD]' },{"jp": "この部屋は広いですね。", "id": "Ruangan ini luas ya.", "level": "n5", "tags": ["tempat"]}],
+      {"jp": "この部屋は広いですね。", "id": "Ruangan ini luas ya.", "level": "n5", "tags": ["tempat"]}],
   synonyms: [],
   antonyms: ['vg-n5-00717'],
   see_also: [],
@@ -8908,7 +14544,7 @@ window.vocabN5 = [
   nuance: 'Lawan dari 近い (dekat).',
   conj_type: 'i-adj',
   examples: [
-      { jp: 'そこって遠いですか？', en: 'Is it far?', id: '[TBD]' },{"jp": "駅から遠いです。", "id": "Jauh dari stasiun.", "level": "n5", "tags": ["tempat"]}],
+      {"jp": "駅から遠いです。", "id": "Jauh dari stasiun.", "level": "n5", "tags": ["tempat"]}],
   synonyms: [],
   antonyms: ['vg-n5-00719'],
   see_also: [],
@@ -8965,7 +14601,7 @@ window.vocabN5 = [
   nuance: 'Bisa berarti punya waktu luang (positif) atau tidak ada kegiatan (bisa negatif tergantung konteks).',
   conj_type: 'na-adj',
   examples: [
-      { jp: '私は暇だ。', en: 'I\'m free.', id: '[TBD]' },{"jp": "暇なとき, 何をしますか。", "id": "Kalau punya waktu luang, kamu ngapain?", "level": "n5", "tags": ["waktu"]}],
+      {"jp": "暇なとき, 何をしますか。", "id": "Kalau punya waktu luang, kamu ngapain?", "level": "n5", "tags": ["waktu"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -9025,7 +14661,7 @@ window.vocabN5 = [
   nuance: 'A na-adjective for something widely recognized. As the base form, it requires \'na\' when modifying nouns and conjugates like a noun at the end of a sentence.',
   conj_type: 'na-adj',
   examples: [
-      { jp: 'トムって有名なの？', en: 'Is Tom famous?', id: '[TBD]' },{"jp": "あの歌手はとても有名です。", "id": "Penyanyi itu sangat terkenal.", "level": "n5", "tags": ["bahasa-komunikasi"]}],
+      {"jp": "あの歌手はとても有名です。", "id": "Penyanyi itu sangat terkenal.", "level": "n5", "tags": ["bahasa-komunikasi"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -10396,6 +16032,2258 @@ window.vocabN5 = [
   }
 },
 
+// ── Staged Expansion (45) ──
+
+{
+  "id": "vg-n5-01000",
+  "word": "暑い",
+  "reading": "あつい",
+  "romaji": "atsui",
+  "meaning_id": "panas",
+  "meaning_en": "hot",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "どうして、こんなに暑いのですか。",
+      "id": "Why is it so hot?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "暑くならないうちに出かけよう。",
+      "id": "Let's go out before it gets hot.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01001",
+  "word": "熱い",
+  "reading": "あつい",
+  "romaji": "atsui",
+  "meaning_id": "hot to the touch",
+  "meaning_en": "hot to the touch",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "熱いコーヒーを入れてあげましょう。",
+      "id": "Let me make you a cup of hot coffee.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "熱いダックスフント・ソーセージはいかが。",
+      "id": "Get your hot dachshund sausages!",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01006",
+  "word": "危ない",
+  "reading": "あぶない",
+  "romaji": "abunai",
+  "meaning_id": "dangerous",
+  "meaning_en": "dangerous",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "間一髪！危ないところでした。",
+      "id": "That was a close call.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "危ない！トラックが来るぞ！",
+      "id": "Look out! There's a truck coming!",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01007",
+  "word": "甘い",
+  "reading": "あまい",
+  "romaji": "amai",
+  "meaning_id": "sweet",
+  "meaning_en": "sweet",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "メアリーにはつい甘くなってしまう。",
+      "id": "I have always had a soft spot in my heart for Mary.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "このチョコレートはとっても甘くておいしい。",
+      "id": "This chocolate is very sweet and tasty.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01014",
+  "word": "いい",
+  "reading": "いい",
+  "romaji": "ii",
+  "meaning_id": "bagus / baik",
+  "meaning_en": "good",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "もう２、３ページ読みさえすればいい。",
+      "id": "You have only to read a few more pages.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ダンスはスタイルをよくするのにいい。",
+      "id": "Dancing is good for the figure.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01019",
+  "word": "痛い",
+  "reading": "いたい",
+  "romaji": "itai",
+  "meaning_id": "painful",
+  "meaning_en": "painful",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ほかに痛いところはありますか。",
+      "id": "Do you feel pain in any other part of your body?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "痛くないようにしてください。",
+      "id": "Tolong be gentle.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01029",
+  "word": "いろいろ",
+  "reading": "いろいろ",
+  "romaji": "iroiro",
+  "meaning_id": "various",
+  "meaning_en": "various",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "先生といってもいろいろある。",
+      "id": "Ada teachers and then there are teachers.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "コーヒーにもいろいろある。",
+      "id": "Ada various kinds of coffee.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01031",
+  "word": "薄い",
+  "reading": "うすい",
+  "romaji": "usui",
+  "meaning_id": "thin; weak",
+  "meaning_en": "thin; weak",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "コーヒーは薄いのが好きです。",
+      "id": "I'd like my coffee weak.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "肉を薄く切りなさい。",
+      "id": "Cut the meat into thin slices.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01034",
+  "word": "煩い",
+  "reading": "うるさい",
+  "romaji": "urusai",
+  "meaning_id": "noisy; annoying",
+  "meaning_en": "noisy; annoying",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あの子はなんてうるさい子だろう。",
+      "id": "What a nuisance that child is!",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "つべこべうるさいよ。やるのかやらないのか！？",
+      "id": "Quit your bellyaching. You goin' to do it, or not!?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01040",
+  "word": "おいしい",
+  "reading": "おいしい",
+  "romaji": "oishii",
+  "meaning_id": "enak / lezat",
+  "meaning_en": "delicious",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "おいしい食事をありがとう。",
+      "id": "Thanks for the delicious meal.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "なんておいしいスープなんだろう。",
+      "id": "This soup is exquisite.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01041",
+  "word": "多い",
+  "reading": "おおい",
+  "romaji": "ooi",
+  "meaning_id": "many",
+  "meaning_en": "many",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この学校は男子よりも女子が多い。",
+      "id": "Ada more girls than boys in this school.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "そこには、水が多かったからである。",
+      "id": "Because there was plenty of water...",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01052",
+  "word": "大人",
+  "reading": "おとな",
+  "romaji": "otona",
+  "meaning_id": "adult",
+  "meaning_en": "adult",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "大人だけこの映画が見える。",
+      "id": "Only adults can see this film.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この本は大人によく読まれている。",
+      "id": "Ini adalah a book often read by adults.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01054",
+  "word": "同じ",
+  "reading": "おなじ",
+  "romaji": "onaji",
+  "meaning_id": "sama",
+  "meaning_en": "same",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この木はあの木とほぼ同じ高さだ。",
+      "id": "This tree is about as high as that one.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "マイクとトムは同じクラスです。",
+      "id": "Mike and Tom are in the same class.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01060",
+  "word": "重い",
+  "reading": "おもい",
+  "romaji": "omoi",
+  "meaning_id": "heavy",
+  "meaning_en": "heavy",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "トムはジャックよりも１０ポンド重い。",
+      "id": "Tom is heavier than Jack by ten pounds.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この本はあの本ほど重くない。",
+      "id": "This book isn't as heavy as that book.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01061",
+  "word": "おもしろい",
+  "reading": "おもしろい",
+  "romaji": "omoshiroi",
+  "meaning_id": "interesting",
+  "meaning_en": "interesting",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "スケートはとてもおもしろかった。",
+      "id": "We had a lot of fun skating.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "これはとってもおもしろい本です。",
+      "id": "Ini adalah a very interesting book.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01080",
+  "word": "辛い",
+  "reading": "からい",
+  "romaji": "karai",
+  "meaning_id": "spicy",
+  "meaning_en": "spicy",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "このカレーは辛すぎて食べられない。",
+      "id": "This curry is too hot to eat.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "できるだけ辛くしてください。",
+      "id": "Make it as spicy as you can.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01081",
+  "word": "軽い",
+  "reading": "かるい",
+  "romaji": "karui",
+  "meaning_id": "light",
+  "meaning_en": "light",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "軽く食べましょう。",
+      "id": "Let's catch a bite.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "朝食はたいてい軽くとります。",
+      "id": "I usually have a light breakfast.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01083",
+  "word": "かわいい",
+  "reading": "かわいい",
+  "romaji": "kawaii",
+  "meaning_id": "cute",
+  "meaning_en": "cute",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ルーシーはかわいい女の子だ。",
+      "id": "Lucy is a pretty little girl.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ナンシーさんはとてもかわいいそうです。",
+      "id": "I hear that Nancy is very pretty.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01085",
+  "word": "黄色",
+  "reading": "きいろ",
+  "romaji": "kiiro",
+  "meaning_id": "kuning",
+  "meaning_en": "yellow",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "木の葉は秋には黄色になる。",
+      "id": "The leaves of the trees turn yellow in fall.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この花は黄色だが、ほかの花はみな青い。",
+      "id": "This flower is yellow, but all the others are blue.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01096",
+  "word": "嫌い",
+  "reading": "きらい",
+  "romaji": "kirai",
+  "meaning_id": "hate",
+  "meaning_en": "hate",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ジムくんは行き過ぎの嫌いがある。",
+      "id": "Jim tends to go too far.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "いいや。あいつは水がキライなんだ。",
+      "id": "No. He doesn't like water!",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01098",
+  "word": "きれい",
+  "reading": "きれい",
+  "romaji": "kirei",
+  "meaning_id": "pretty; clean",
+  "meaning_en": "pretty; clean",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "それからすっきりきれいにしてくれ。",
+      "id": "Then clean it really well.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "その川はあまりきれいではなかった。",
+      "id": "The river was not so clean.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01108",
+  "word": "黒い",
+  "reading": "くろい",
+  "romaji": "kuroi",
+  "meaning_id": "hitam",
+  "meaning_en": "black",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ナンシーはヘレンよりもほんのすこし色が黒い。",
+      "id": "Nancy is a shade darker than Helen.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "あの黒いかばんはあなたのですか。",
+      "id": "Is that black bag yours?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01128",
+  "word": "寒い",
+  "reading": "さむい",
+  "romaji": "samui",
+  "meaning_id": "dingin",
+  "meaning_en": "cold",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "寒いからコートを着るべきだ。",
+      "id": "It's cold so you should wear a coat.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "天気は寒いだけでなく雨であった。",
+      "id": "The weather was not only cold, but also wet.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01149",
+  "word": "上手",
+  "reading": "じょうず",
+  "romaji": "jouzu",
+  "meaning_id": "skillful",
+  "meaning_en": "skillful",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あなたは上手にバスケットボールができますか。",
+      "id": "Do you play basketball well?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "マイクは日本語を話すのが上手だ。",
+      "id": "Mike speaks good Japanese.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01153",
+  "word": "白い",
+  "reading": "しろい",
+  "romaji": "shiroi",
+  "meaning_id": "putih",
+  "meaning_en": "white",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "白いベルトがついてるのがいいな。",
+      "id": "Saya suka the one with a white belt.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "それはここからでは白く見える。",
+      "id": "It shows white from here.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01156",
+  "word": "好き",
+  "reading": "すき",
+  "romaji": "suki",
+  "meaning_id": "likeable",
+  "meaning_en": "likeable",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あなたのそんなところが好きです。",
+      "id": "Saya suka that about you.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "あなたはマルチーズは好きですか。",
+      "id": "Are you fond of Maltese dogs?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01166",
+  "word": "狭い",
+  "reading": "せまい",
+  "romaji": "semai",
+  "meaning_id": "narrow",
+  "meaning_en": "narrow",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "オランダは狭い国です。",
+      "id": "The Netherlands is a small country.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "その通りはとても狭いんだ。",
+      "id": "The street is very narrow.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01175",
+  "word": "大丈夫",
+  "reading": "だいじょうぶ",
+  "romaji": "daijoubu",
+  "meaning_id": "all right",
+  "meaning_en": "all right",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "いや、大丈夫だ。",
+      "id": "No, no, that's okay.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼女は今のところ大丈夫です。",
+      "id": "Dia all right at the moment.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01177",
+  "word": "たくさん",
+  "reading": "たくさん",
+  "romaji": "takusan",
+  "meaning_id": "many",
+  "meaning_en": "many",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "なすべきことがまだたくさんある。",
+      "id": "There still remains much to be done.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "そんなにたくさんくださいました。",
+      "id": "You have given me so many.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01186",
+  "word": "小さい",
+  "reading": "ちいさい",
+  "romaji": "chiisai",
+  "meaning_id": "little",
+  "meaning_en": "little",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "もっと小さいサイズがありますか。",
+      "id": "Do you have a smaller size?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "これより小さいのはないんですか？",
+      "id": "Don't you have anything smaller than this?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01187",
+  "word": "近い",
+  "reading": "ちかい",
+  "romaji": "chikai",
+  "meaning_id": "dekat",
+  "meaning_en": "near",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "クリスマスが近くなってきた。",
+      "id": "Christmas is fast approaching.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "トイレが近いのです。",
+      "id": "Is there a toilet near here?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01196",
+  "word": "つまらない",
+  "reading": "つまらない",
+  "romaji": "tsumaranai",
+  "meaning_id": "boring",
+  "meaning_en": "boring",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "このビデオはつまらないよ。",
+      "id": "This video is boring.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "あの新しい映画は、つまらんかった。",
+      "id": "That new movie was a bummer.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01197",
+  "word": "冷たい",
+  "reading": "つめたい",
+  "romaji": "tsumetai",
+  "meaning_id": "cold to the touch",
+  "meaning_en": "cold to the touch",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "もう手が冷たくって。",
+      "id": "My hand's getting too cold.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "夏は冷たいポテトサラダがいいな。",
+      "id": "Saya suka cold potato salad in the summertime.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01214",
+  "word": "遠い",
+  "reading": "とおい",
+  "romaji": "tooi",
+  "meaning_id": "jauh",
+  "meaning_en": "far",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "それはホテルから遠くありません。",
+      "id": "It is not far away from the hotel.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ここからシドニーは遠いですね。",
+      "id": "Sydney is far from here.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01229",
+  "word": "賑やか",
+  "reading": "にぎやか",
+  "romaji": "nigiyaka",
+  "meaning_id": "bustling; busy",
+  "meaning_en": "bustling; busy",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この通りは賑やかだ。",
+      "id": "This street is lively.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "にぎやかなところが好きだ。",
+      "id": "Saya suka busy places.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01261",
+  "word": "太い",
+  "reading": "ふとい",
+  "romaji": "futoi",
+  "meaning_id": "fat",
+  "meaning_en": "fat",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は太い首をしている。",
+      "id": "He has a thick neck.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私の妹は足が太いのをひどく気にしている。",
+      "id": "My sister is sensitive about her thick legs.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01265",
+  "word": "下手",
+  "reading": "へた",
+  "romaji": "heta",
+  "meaning_id": "unskillful",
+  "meaning_en": "unskillful",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "いいわけをするのがとても下手。",
+      "id": "Dia very bad at inventing excuses.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼はイギリス生まれだが、英語がとても下手である。",
+      "id": "He comes from England, but is very poor at English.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01268",
+  "word": "便利",
+  "reading": "べんり",
+  "romaji": "benri",
+  "meaning_id": "useful; convenient",
+  "meaning_en": "useful; convenient",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "電話は便利なものである。",
+      "id": "The telephone is a convenience.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "そりゃ便利だね。",
+      "id": "That comes in handy.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01272",
+  "word": "細い",
+  "reading": "ほそい",
+  "romaji": "hosoi",
+  "meaning_id": "thin",
+  "meaning_en": "thin",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は太っているくせに声は細い。",
+      "id": "His voice is thin even though he is fat.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "細く長く愛して。",
+      "id": "Love me lithe, love me long.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01276",
+  "word": "ほんとう",
+  "reading": "ほんとう",
+  "romaji": "hontou",
+  "meaning_id": "truth",
+  "meaning_en": "truth",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "本当のマンションではありません。",
+      "id": "It isn't a real apartment.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "もしそれが本当ならどうしますか。",
+      "id": "Suppose it were true; what would you do?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01284",
+  "word": "丸い",
+  "reading": "まるい",
+  "romaji": "marui",
+  "meaning_id": "round; circular",
+  "meaning_en": "round; circular",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ボールは丸い。",
+      "id": "Balls are round.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私たちは丸いテーブルを買った。",
+      "id": "We bought a round table.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01299",
+  "word": "易しい",
+  "reading": "やさしい",
+  "romaji": "yasashii",
+  "meaning_id": "mudah / gampang",
+  "meaning_en": "easy; simple",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "もっと易しい事を聞いて下さい。",
+      "id": "Ask me something easier.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この本は易しい英語で書かれている。",
+      "id": "This book is written in easy English.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01304",
+  "word": "有名",
+  "reading": "ゆうめい",
+  "romaji": "yuumei",
+  "meaning_id": "famous",
+  "meaning_en": "famous",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "そのホテルは食事で有名である。",
+      "id": "The hotel is noted for its food.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "トーマス先生はとても有名な先生です。",
+      "id": "Mr Thomas is a very able teacher.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01309",
+  "word": "弱い",
+  "reading": "よわい",
+  "romaji": "yowai",
+  "meaning_id": "weak",
+  "meaning_en": "weak",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "それを言われると弱いなあ。",
+      "id": "That sure puts me on the spot.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "そのひもはとても弱い。",
+      "id": "The string is very weak.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01319",
+  "word": "若い",
+  "reading": "わかい",
+  "romaji": "wakai",
+  "meaning_id": "young",
+  "meaning_en": "young",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "「彼女は若いですか」「はい」",
+      "id": "\"Is she young?\" \"Yes, she is.\"",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "若いときは、よくサッカーをした。",
+      "id": "I often played soccer when I was young.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
   // ── ADVERBS (28) ────────────────────────────────────────
 
 {
@@ -10416,7 +18304,7 @@ window.vocabN5 = [
   nuance: 'Used to indicate a large quantity of countable or uncountable things. It can function as an adverb or be linked to nouns using \'no\' (たくさんの).',
   conj_type: 'na-adj',
   examples: [
-      { jp: 'たくさん食べちゃった。', en: 'I ate a lot.', id: '[TBD]' },{"jp": "たくさん食べました。", "id": "Saya makan banyak.", "level": "n5", "tags": ["makanan-minuman"]}],
+      {"jp": "たくさん食べました。", "id": "Saya makan banyak.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: ['vg-n5-00114'],
   see_also: [],
@@ -10475,7 +18363,7 @@ window.vocabN5 = [
   nuance: 'Dengan positif = sudah (もう食べた). Dengan negatif = tidak lagi (もう食べない).',
   conj_type: null,
   examples: [
-      { jp: '私ももう年だ。', en: 'I\'m old.', id: '[TBD]' },{"jp": "もう食べましたか。", "id": "Sudah makan?", "level": "n5", "tags": ["makanan-minuman"]}],
+      {"jp": "もう食べましたか。", "id": "Sudah makan?", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -10504,7 +18392,7 @@ window.vocabN5 = [
   nuance: 'まだ〜ている = masih. まだ〜ていない = belum.',
   conj_type: 'na-adj',
   examples: [
-      { jp: '何てざまだ。', en: 'What a mess!', id: '[TBD]' },{"jp": "まだ食べていません。", "id": "Saya belum makan.", "level": "n5", "tags": ["makanan-minuman"]}],
+      {"jp": "まだ食べていません。", "id": "Saya belum makan.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: ['vg-n5-00115'],
   see_also: [],
@@ -10534,7 +18422,7 @@ window.vocabN5 = [
   nuance: 'Means doing something together with someone else. Often paired with \'to\' (と) to indicate the person you are doing the action with.',
   conj_type: null,
   examples: [
-      { jp: 'さあ、一緒に来いよ。', en: 'Come along.', id: '[TBD]' },{"jp": "一緒に行きましょう。", "id": "Ayo pergi bersama.", "level": "n5", "tags": ["hubungan"]}],
+      {"jp": "一緒に行きましょう。", "id": "Ayo pergi bersama.", "level": "n5", "tags": ["hubungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -10563,7 +18451,7 @@ window.vocabN5 = [
   nuance: 'Implies doing an action at a relaxed or slow pace. Commonly used to tell someone to take their time or relax, as in \'ゆっくり休んでください\' (please rest well).',
   conj_type: 'suru',
   examples: [
-      { jp: 'ゆっくり、ゆっくり。', en: 'Go slow.', id: '[TBD]' },{"jp": "ゆっくり話してください。", "id": "Tolong bicara pelan-pelan.", "level": "n5", "tags": ["pendidikan"]}],
+      {"jp": "ゆっくり話してください。", "id": "Tolong bicara pelan-pelan.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -10594,7 +18482,7 @@ window.vocabN5 = [
   nuance: 'Describes an action that happens habitually or constantly without fail. It is higher in frequency than both \'たいてい\' (usually) and \'ときどき\' (sometimes).',
   conj_type: null,
   examples: [
-      { jp: '私はいつも忙しい。', en: 'I\'m always busy.', id: '[TBD]' },{"jp": "いつも朝ご飯を食べます。", "id": "Saya selalu sarapan.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "いつも朝ご飯を食べます。", "id": "Saya selalu sarapan.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -10624,7 +18512,7 @@ window.vocabN5 = [
   nuance: 'Indicates an action that happens occasionally, lower in frequency than \'たいてい\' (usually). Notice the repetition mark \'々\', which repeats the kanji \'時\' (time).',
   conj_type: null,
   examples: [
-      { jp: '私ね、時々吃音しちゃうの。', en: 'I sometimes stutter.', id: '[TBD]' },{"jp": "時々映画を見ます。", "id": "Saya kadang-kadang menonton film.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "時々映画を見ます。", "id": "Saya kadang-kadang menonton film.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n5-00119'],
@@ -10654,7 +18542,7 @@ window.vocabN5 = [
   nuance: 'Lebih kasual dari しかし. Biasa di awal kalimat.',
   conj_type: null,
   examples: [
-      { jp: 'とんでもない！', en: 'No way!', id: '[TBD]' },{"jp": "行きたいです。でも, 時間がありません。", "id": "Saya ingin pergi. Tapi tidak ada waktu.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "行きたいです。でも, 時間がありません。", "id": "Saya ingin pergi. Tapi tidak ada waktu.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -10683,7 +18571,7 @@ window.vocabN5 = [
   nuance: 'Used at the beginning of a sentence to link it to the previous one, meaning \'and\' or \'and then\'. It connects actions sequentially or adds extra information.',
   conj_type: null,
   examples: [
-      { jp: '１、３そして５は奇数です。', en: 'One, three, and five are odd numbers.', id: '[TBD]' },{"jp": "朝起きて, そして朝ご飯を食べました。", "id": "Saya bangun pagi, lalu sarapan.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "朝起きて, そして朝ご飯を食べました。", "id": "Saya bangun pagi, lalu sarapan.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -10713,7 +18601,7 @@ window.vocabN5 = [
   nuance: 'Means \'usually\' or \'mostly\', indicating a routine action that happens on most days but not always. It sits between \'いつも\' (always) and \'ときどき\' (sometimes) in frequency.',
   conj_type: 'na-adj',
   examples: [
-      { jp: 'たいてい歩いて行きます。', en: 'I usually walk.', id: '[TBD]' },{"jp":"休みの日はたいてい家にいます。","id":"Pada hari libur, biasanya saya ada di rumah.","level":"n5","tags":["kehidupan-sehari","waktu"]}],
+      {"jp":"休みの日はたいてい家にいます。","id":"Pada hari libur, biasanya saya ada di rumah.","level":"n5","tags":["kehidupan-sehari","waktu"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -10744,7 +18632,7 @@ window.vocabN5 = [
   nuance: 'Indicates an action that happens occasionally, lower in frequency than \'たいてい\' (usually). This is the kana representation of 時々.',
   conj_type: null,
   examples: [
-      { jp: '彼はときどき寝坊する。', en: 'He sometimes sleeps in.', id: '[TBD]' },{"jp":"ときどき友達と図書館へ行きます。","id":"Kadang-kadang saya pergi ke perpustakaan bersama teman.","level":"n5","tags":["pertemanan","pendidikan"]}],
+      {"jp":"ときどき友達と図書館へ行きます。","id":"Kadang-kadang saya pergi ke perpustakaan bersama teman.","level":"n5","tags":["pertemanan","pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -10774,7 +18662,7 @@ window.vocabN5 = [
   nuance: 'Must always be paired with a negative verb form to mean \'not very\' or \'not often\'. Used to soften a negative statement or express low frequency.',
   conj_type: 'na-adj',
   examples: [
-      { jp: 'これはあまり良くないな。', en: 'This is not good.', id: '[TBD]' },{"jp":"この料理はあまり辛くないです。","id":"Masakan ini tidak terlalu pedas.","level":"n5","tags":["makanan-minuman"]}],
+      {"jp":"この料理はあまり辛くないです。","id":"Masakan ini tidak terlalu pedas.","level":"n5","tags":["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -10805,7 +18693,7 @@ window.vocabN5 = [
   nuance: 'Strongly indicates \'not at all\' and must be paired with a negative verb form in standard Japanese. It emphasizes complete absence or zero frequency.',
   conj_type: null,
   examples: [
-      { jp: 'ぜんぜん乾いてないね。', en: 'It\'s not dry at all.', id: '[TBD]' },{"jp":"きのうのテストはぜんぜん分かりませんでした。","id":"Ujian kemarin sama sekali tidak saya mengerti.","level":"n5","tags":["pendidikan"]}],
+      {"jp":"きのうのテストはぜんぜん分かりませんでした。","id":"Ujian kemarin sama sekali tidak saya mengerti.","level":"n5","tags":["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -10836,7 +18724,7 @@ window.vocabN5 = [
   nuance: 'Can mean \'often\' (frequency) or \'well\' (skill or quality), depending on the context. For example, \'よく食べます\' means \'eats often\', while \'よくできました\' means \'well done\'.',
   conj_type: null,
   examples: [
-      { jp: 'お行儀よくしなさい。', en: 'Be nice.', id: '[TBD]' },{"jp":"この喫茶店にはよく来ます。","id":"Saya sering datang ke kafe ini.","level":"n5","tags":["kehidupan-sehari"]}],
+      {"jp":"この喫茶店にはよく来ます。","id":"Saya sering datang ke kafe ini.","level":"n5","tags":["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -10865,7 +18753,7 @@ window.vocabN5 = [
   nuance: 'とても = sangat (intensifier positif). Untuk negatif pakai あまり+ない.',
   conj_type: null,
   examples: [
-      { jp: 'とても感動したわ。', en: 'I was moved.', id: '[TBD]' },{"jp": "この料理はとてもおいしいです。", "id": "Masakan ini sangat enak.", "level": "n5", "tags": ["makanan-minuman"]}],
+      {"jp": "この料理はとてもおいしいです。", "id": "Masakan ini sangat enak.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -10895,7 +18783,7 @@ window.vocabN5 = [
   nuance: 'Means \'mostly\', \'roughly\', or \'almost\', often used to indicate an approximate amount or a general understanding. For instance, \'だいたいわかりました\' means \'I mostly understood\'.',
   conj_type: null,
   examples: [
-      { jp: 'だいたいそんなところです。', en: 'That\'s about it.', id: '[TBD]' },{"jp":"宿題はだいたい終わりました。","id":"PR kira-kira sudah selesai sebagian besar.","level":"n5","tags":["pendidikan"]}],
+      {"jp":"宿題はだいたい終わりました。","id":"PR kira-kira sudah selesai sebagian besar.","level":"n5","tags":["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -10925,7 +18813,7 @@ window.vocabN5 = [
   nuance: 'もっと = lebih (komparatif). もっとゆっくり = lebih pelan. もっと食べる = makan lebih banyak.',
   conj_type: null,
   examples: [
-      { jp: 'もっと頑張れよ。', en: 'Try harder.', id: '[TBD]' },{"jp": "もっとゆっくり話してください。", "id": "Tolong bicara lebih pelan.", "level": "n5", "tags": ["kehidupan-sehari", "sopan-santun"]}],
+      {"jp": "もっとゆっくり話してください。", "id": "Tolong bicara lebih pelan.", "level": "n5", "tags": ["kehidupan-sehari", "sopan-santun"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -10978,7 +18866,7 @@ window.vocabN5 = [
   nuance: 'A highly versatile word meaning \'a little\' or \'just a moment\'. It is often used to soften requests, express slight hesitation, or politely refuse an invitation.',
   conj_type: null,
   examples: [
-      { jp: 'ちょっと見せて。', en: 'Show me.', id: '[TBD]' },{"jp":"ここでちょっと待ってください。","id":"Tolong tunggu sebentar di sini.","level":"n5","tags":["kehidupan-sehari"]}],
+      {"jp":"ここでちょっと待ってください。","id":"Tolong tunggu sebentar di sini.","level":"n5","tags":["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -11482,7 +19370,7 @@ window.vocabN5 = [
   }
 },
 
-  // ── NOUNS (625) ────────────────────────────────────────
+  // ── NOUNS (788) ────────────────────────────────────────
 
 {
   id: 'vg-n5-00084',
@@ -11502,7 +19390,7 @@ window.vocabN5 = [
   nuance: 'うち lebih kasual/personal. いえ lebih netral/formal.',
   conj_type: null,
   examples: [
-      { jp: '家に電話して！', en: 'Call home!', id: '[TBD]' },{"jp": "うちに帰りましょう。", "id": "Ayo pulang ke rumah.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "うちに帰りましょう。", "id": "Ayo pulang ke rumah.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -11530,7 +19418,7 @@ window.vocabN5 = [
   nuance: 'Literally means \'learning place\'. Used for any educational institution from elementary to high school, but less commonly for universities (which are 大学, だいがく).',
   conj_type: null,
   examples: [
-      { jp: '学校へ行きなさい。', en: 'Go to school.', id: '[TBD]' },{"jp": "学校は９時に始まります。", "id": "Sekolah mulai jam 9.", "level": "n5", "tags": ["pendidikan"]}],
+      {"jp": "学校は９時に始まります。", "id": "Sekolah mulai jam 9.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -11559,7 +19447,7 @@ window.vocabN5 = [
   nuance: '会社 = perusahaan. 会社員 = karyawan. 会社に行く = pergi kerja.',
   conj_type: null,
   examples: [
-      { jp: 'トムは会社にいる？', en: 'Is Tom at work?', id: '[TBD]' },{"jp": "父は大きい会社で働いています。", "id": "Ayah bekerja di perusahaan besar.", "level": "n5", "tags": ["pekerjaan", "keluarga"]}],
+      {"jp": "父は大きい会社で働いています。", "id": "Ayah bekerja di perusahaan besar.", "level": "n5", "tags": ["pekerjaan", "keluarga"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -11589,7 +19477,7 @@ window.vocabN5 = [
   nuance: '教室 = ruang kelas. 教室に入る = masuk ke kelas.',
   conj_type: null,
   examples: [
-      { jp: '電車が好きだ。', en: 'I like trains.', id: '[TBD]' },{"jp": "教室に先生がいます。", "id": "Di ruang kelas ada guru.", "level": "n5", "tags": ["pendidikan"]}],
+      {"jp": "教室に先生がいます。", "id": "Di ruang kelas ada guru.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -11617,7 +19505,7 @@ window.vocabN5 = [
   nuance: 'Refers to a train or subway station. It is not used for bus stops, which are instead called バス停 (バスてい).',
   conj_type: null,
   examples: [
-      { jp: 'あれが駅なの？', en: 'Is that the station?', id: '[TBD]' },{"jp": "駅の近くに住んでいます。", "id": "Saya tinggal dekat stasiun.", "level": "n5", "tags": ["perjalanan"]}],
+      {"jp": "駅の近くに住んでいます。", "id": "Saya tinggal dekat stasiun.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -11648,7 +19536,7 @@ window.vocabN5 = [
   nuance: 'Literally \'illness institution\'. Refers to a large hospital or medical center, whereas a small clinic is often called クリニック or 医院 (いいん).',
   conj_type: null,
   examples: [
-      { jp: 'トムは病院に行った。', en: 'Tom saw a doctor.', id: '[TBD]' },{"jp": "病院に行きました。", "id": "Saya pergi ke rumah sakit.", "level": "n5", "tags": ["kesehatan"]}],
+      {"jp": "病院に行きました。", "id": "Saya pergi ke rumah sakit.", "level": "n5", "tags": ["kesehatan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -11676,7 +19564,7 @@ window.vocabN5 = [
   nuance: 'A combination of \'eat\' (食べる) and \'thing\' (物). Used generally for any solid food or edible item.',
   conj_type: null,
   examples: [
-      { jp: 'これは食べ物です。', en: 'This is food.', id: '[TBD]' },{"jp": "好きな食べ物は何ですか。", "id": "Makanan apa yang kamu suka?", "level": "n5", "tags": ["makanan-minuman"]}],
+      {"jp": "好きな食べ物は何ですか。", "id": "Makanan apa yang kamu suka?", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -11705,7 +19593,7 @@ window.vocabN5 = [
   nuance: 'A combination of \'drink\' (飲む) and \'thing\' (物). Used broadly for any type of beverage.',
   conj_type: null,
   examples: [
-      { jp: '飲み物をもらえませんか？', en: 'Can I get a drink?', id: '[TBD]' },{"jp": "飲み物は何がいいですか。", "id": "Minuman apa yang kamu mau?", "level": "n5", "tags": ["makanan-minuman"]}],
+      {"jp": "飲み物は何がいいですか。", "id": "Minuman apa yang kamu mau?", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -11734,7 +19622,7 @@ window.vocabN5 = [
   nuance: 'Refers to a friend, but implies a platonic relationship. When referring to a boyfriend or girlfriend, 彼氏 (かれし) or 彼女 (かのじょ) is used instead.',
   conj_type: null,
   examples: [
-      { jp: '私たち友達でしょ？', en: 'Are we friends?', id: '[TBD]' },{"jp": "友達と映画を見ました。", "id": "Saya menonton film dengan teman.", "level": "n5", "tags": ["hubungan"]}],
+      {"jp": "友達と映画を見ました。", "id": "Saya menonton film dengan teman.", "level": "n5", "tags": ["hubungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -11791,7 +19679,7 @@ window.vocabN5 = [
   nuance: '時間がある = punya waktu. 時間がかかる = butuh waktu.',
   conj_type: null,
   examples: [
-      { jp: '時間はあります。', en: 'I\'m free.', id: '[TBD]' },{"jp": "時間がありますか。", "id": "Apakah kamu punya waktu?", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "時間がありますか。", "id": "Apakah kamu punya waktu?", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -11820,7 +19708,7 @@ window.vocabN5 = [
   nuance: '午前 = AM. 午前中 = sepanjang pagi. Lawan: 午後.',
   conj_type: null,
   examples: [
-      { jp: '今日は私が。', en: 'It is on me.', id: '[TBD]' },{"jp": "今日は何曜日ですか。", "id": "Hari ini hari apa?", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "今日は何曜日ですか。", "id": "Hari ini hari apa?", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n5-00096', 'vg-n5-00097'],
@@ -11904,7 +19792,7 @@ window.vocabN5 = [
   nuance: '天気がいい/わるい adalah kolokasi paling umum.',
   conj_type: null,
   examples: [
-      { jp: 'いい天気ですね。', en: 'It\'s a fine day.', id: '[TBD]' },{"jp": "今日は天気がいいです。", "id": "Hari ini cuacanya bagus.", "level": "n5", "tags": ["alam-lingkungan"]}],
+      {"jp": "今日は天気がいいです。", "id": "Hari ini cuacanya bagus.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -11933,7 +19821,7 @@ window.vocabN5 = [
   nuance: 'お adalah prefix hormat — sudah melekat, tidak bisa dihilangkan dalam percakapan biasa.',
   conj_type: null,
   examples: [
-      { jp: 'ぼくはお金がいる。', en: 'I need money.', id: '[TBD]' },{"jp": "お金がありません。", "id": "Saya tidak punya uang.", "level": "n5", "tags": ["belanja"]}],
+      {"jp": "お金がありません。", "id": "Saya tidak punya uang.", "level": "n5", "tags": ["belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -11963,7 +19851,7 @@ window.vocabN5 = [
   nuance: 'Refers to a spoken or written word, phrase, or language as a whole. It often implies human expression rather than just a grammatical unit.',
   conj_type: null,
   examples: [
-      { jp: '僕は君の言葉を信じる。', en: 'I believe you.', id: '[TBD]' },{"jp": "難しい言葉を覚えました。", "id": "Saya menghafal kata-kata sulit.", "level": "n5", "tags": ["pendidikan"]}],
+      {"jp": "難しい言葉を覚えました。", "id": "Saya menghafal kata-kata sulit.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -11993,7 +19881,7 @@ window.vocabN5 = [
   nuance: '家族 = keluarga (sebagai unit). Beda: 家 (ie/uchi) = rumah/keluarga saya.',
   conj_type: null,
   examples: [
-      { jp: '私たちは家族です。', en: 'We\'re a family.', id: '[TBD]' },{"jp": "家族と旅行しました。", "id": "Saya berwisata dengan keluarga.", "level": "n5", "tags": ["keluarga", "perjalanan"]}],
+      {"jp": "家族と旅行しました。", "id": "Saya berwisata dengan keluarga.", "level": "n5", "tags": ["keluarga", "perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -12021,7 +19909,7 @@ window.vocabN5 = [
   nuance: 'Untuk bicara tentang ayah sendiri. お父さん untuk ayah orang lain.',
   conj_type: null,
   examples: [
-      { jp: '父は家にいません。', en: 'Dad isn\'t home.', id: '[TBD]' },{"jp": "父は会社員です。", "id": "Ayah saya pegawai kantor.", "level": "n5", "tags": ["keluarga", "pekerjaan"]}],
+      {"jp": "父は会社員です。", "id": "Ayah saya pegawai kantor.", "level": "n5", "tags": ["keluarga", "pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -12050,7 +19938,7 @@ window.vocabN5 = [
   nuance: 'Untuk bicara tentang ibu sendiri. お母さん untuk ibu orang lain.',
   conj_type: null,
   examples: [
-      { jp: 'お母さんはどこ？', en: 'Where\'s mom?', id: '[TBD]' },{"jp": "母は料理が上手です。", "id": "Ibu saya pandai masak.", "level": "n5", "tags": ["keluarga", "makanan-minuman"]}],
+      {"jp": "母は料理が上手です。", "id": "Ibu saya pandai masak.", "level": "n5", "tags": ["keluarga", "makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -12078,7 +19966,7 @@ window.vocabN5 = [
   nuance: '弟 (おとうと) = adik laki-laki saya. Bicara tentang adik orang lain: 弟さん.',
   conj_type: null,
   examples: [
-      { jp: '朝飯前だ。', en: 'It\'s too easy.', id: '[TBD]' },{"jp": "朝ご飯を食べましたか。", "id": "Apakah kamu sudah sarapan?", "level": "n5", "tags": ["makanan-minuman"]}],
+      {"jp": "朝ご飯を食べましたか。", "id": "Apakah kamu sudah sarapan?", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: ['vg-n5-00105'],
   see_also: [],
@@ -12132,7 +20020,7 @@ window.vocabN5 = [
   nuance: 'Literally \'end of the week\'. Usually refers to Saturday and Sunday, matching the Western concept of a weekend.',
   conj_type: null,
   examples: [
-      { jp: 'よい週末を！', en: 'Have a good weekend!', id: '[TBD]' },{"jp": "週末は何をしますか。", "id": "Akhir pekan kamu ngapain?", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "週末は何をしますか。", "id": "Akhir pekan kamu ngapain?", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -12160,7 +20048,7 @@ window.vocabN5 = [
   nuance: 'Means \'coming year\'. It is used for the next calendar year, not just a year from now.',
   conj_type: null,
   examples: [
-      { jp: '来年30歳になります。', en: 'I\'ll be 30 next year.', id: '[TBD]' },{"jp": "来年, 日本に行きたいです。", "id": "Tahun depan saya ingin pergi ke Jepang.", "level": "n5", "tags": ["perjalanan"]}],
+      {"jp": "来年, 日本に行きたいです。", "id": "Tahun depan saya ingin pergi ke Jepang.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -12189,7 +20077,7 @@ window.vocabN5 = [
   nuance: '本 juga dibaca もと (asal-usul) dan ほん (buku). Konteks menentukan.',
   conj_type: null,
   examples: [
-      { jp: '本当？', en: 'Really?', id: '[TBD]' },{"jp": "図書館で本を借りました。", "id": "Saya meminjam buku di perpustakaan.", "level": "n5", "tags": ["pendidikan"]}],
+      {"jp": "図書館で本を借りました。", "id": "Saya meminjam buku di perpustakaan.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -12218,7 +20106,7 @@ window.vocabN5 = [
   nuance: 'Originally meaning \'wheel\', this now primarily refers to a car or automobile. It can also refer to wheeled vehicles in general in compound words.',
   conj_type: null,
   examples: [
-      { jp: 'ご乗車願います！', en: 'All aboard!', id: '[TBD]' },{"jp": "車で来ました。", "id": "Saya datang naik mobil.", "level": "n5", "tags": ["perjalanan"]}],
+      {"jp": "車で来ました。", "id": "Saya datang naik mobil.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -12246,7 +20134,7 @@ window.vocabN5 = [
   nuance: 'バス (bukan 風呂 = ofuro). Kalau ini バス = bus: transportasi. Cek kata sebenarnya di entry.',
   conj_type: null,
   examples: [
-      { jp: '写真、送って。', en: 'Send a photo.', id: '[TBD]' },{"jp": "写真を撮ってもいいですか。", "id": "Boleh saya ambil foto?", "level": "n5", "tags": ["perjalanan", "sopan-santun"]}],
+      {"jp": "写真を撮ってもいいですか。", "id": "Boleh saya ambil foto?", "level": "n5", "tags": ["perjalanan", "sopan-santun"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -12277,7 +20165,7 @@ window.vocabN5 = [
   nuance: 'Literally \'hand paper\'. Specifically refers to a physical written letter, not an email or text message.',
   conj_type: null,
   examples: [
-      { jp: 'トムに手紙を書きなよ。', en: 'Write Tom.', id: '[TBD]' },{"jp": "友達に手紙を書きました。", "id": "Saya menulis surat untuk teman.", "level": "n5", "tags": ["hubungan"]}],
+      {"jp": "友達に手紙を書きました。", "id": "Saya menulis surat untuk teman.", "level": "n5", "tags": ["hubungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -12305,7 +20193,7 @@ window.vocabN5 = [
   nuance: '頭が痛い = sakit kepala.',
   conj_type: null,
   examples: [
-      { jp: '頭を下げろ！', en: 'Duck!', id: '[TBD]' },{"jp": "頭が痛いです。", "id": "Kepala saya sakit.", "level": "n5", "tags": ["kesehatan"]}],
+      {"jp": "頭が痛いです。", "id": "Kepala saya sakit.", "level": "n5", "tags": ["kesehatan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -12333,7 +20221,7 @@ window.vocabN5 = [
   nuance: 'Refers to the physical eye, but is also used in idioms related to sight, perception, or experience.',
   conj_type: null,
   examples: [
-      { jp: '目は覚めています。', en: 'I\'m up.', id: '[TBD]' },{"jp": "目が疲れました。", "id": "Mata saya lelah.", "level": "n5", "tags": ["kesehatan"]}],
+      {"jp": "目が疲れました。", "id": "Mata saya lelah.", "level": "n5", "tags": ["kesehatan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -12361,7 +20249,7 @@ window.vocabN5 = [
   nuance: 'Means the hand, and sometimes the entire arm. It is often used in expressions relating to skill, help, or human labor.',
   conj_type: null,
   examples: [
-      { jp: '手伝ってよ。', en: 'Help me.', id: '[TBD]' },{"jp": "手を洗ってください。", "id": "Tolong cuci tangan.", "level": "n5", "tags": ["kesehatan"]}],
+      {"jp": "手を洗ってください。", "id": "Tolong cuci tangan.", "level": "n5", "tags": ["kesehatan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -12491,7 +20379,7 @@ window.vocabN5 = [
   nuance: 'Refers to a mountain. In Japanese culture, mountains are often considered sacred, and the kanji is very common in family names.',
   conj_type: null,
   examples: [
-      { jp: '山羊座です。', en: 'I\'m a Capricorn.', id: '[TBD]' },{"jp": "富士山は高いです。", "id": "Gunung Fuji itu tinggi.", "level": "n5", "tags": ["alam-lingkungan"]}],
+      {"jp": "富士山は高いです。", "id": "Gunung Fuji itu tinggi.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -12520,7 +20408,7 @@ window.vocabN5 = [
   nuance: '薬 = obat. 薬を飲む = minum obat. 薬局 (yakkyoku) = apotek.',
   conj_type: null,
   examples: [
-      { jp: 'その川は広い。', en: 'The river is wide.', id: '[TBD]' },{"jp": "熱があるので薬を飲みました。", "id": "Saya demam jadi minum obat.", "level": "n5", "tags": ["kesehatan"]}],
+      {"jp": "熱があるので薬を飲みました。", "id": "Saya demam jadi minum obat.", "level": "n5", "tags": ["kesehatan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -12550,7 +20438,7 @@ window.vocabN5 = [
   nuance: 'みかん = jeruk mandarin (khas Jepang). Beda: オレンジ = jeruk biasa.',
   conj_type: null,
   examples: [
-      { jp: '無花果が好きなんだ。', en: 'I like figs.', id: '[TBD]' },{"jp": "冬はみかんをよく食べます。", "id": "Di musim dingin saya sering makan jeruk mandarin.", "level": "n5", "tags": ["makanan-minuman", "alam-lingkungan"]}],
+      {"jp": "冬はみかんをよく食べます。", "id": "Di musim dingin saya sering makan jeruk mandarin.", "level": "n5", "tags": ["makanan-minuman", "alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -12581,7 +20469,7 @@ window.vocabN5 = [
   nuance: '値段 = harga. 値段はいくらですか = Berapa harganya? 値段が高い/安い.',
   conj_type: null,
   examples: [
-      { jp: '雨って大嫌い。', en: 'I hate rain.', id: '[TBD]' },{"jp": "この服の値段はいくらですか。", "id": "Berapa harga baju ini?", "level": "n5", "tags": ["belanja"]}],
+      {"jp": "この服の値段はいくらですか。", "id": "Berapa harga baju ini?", "level": "n5", "tags": ["belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -12610,7 +20498,7 @@ window.vocabN5 = [
   nuance: 'Means snow. It is often associated with winter imagery in traditional Japanese poetry and art.',
   conj_type: null,
   examples: [
-      { jp: '雪は大嫌いだ。', en: 'I hate snow.', id: '[TBD]' },{"jp": "北海道は雪が多いです。", "id": "Di Hokkaido banyak salju.", "level": "n5", "tags": ["alam-lingkungan"]}],
+      {"jp": "北海道は雪が多いです。", "id": "Di Hokkaido banyak salju.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -12638,7 +20526,7 @@ window.vocabN5 = [
   nuance: 'Bisa berarti nasi atau makan secara umum (朝ご飯=sarapan).',
   conj_type: null,
   examples: [
-      { jp: 'ご飯は食べた？', en: 'Did you eat?', id: '[TBD]' },{"jp": "ご飯を食べましょう。", "id": "Ayo makan.", "level": "n5", "tags": ["makanan-minuman"]}],
+      {"jp": "ご飯を食べましょう。", "id": "Ayo makan.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -12668,7 +20556,7 @@ window.vocabN5 = [
   nuance: 'Means cold or room-temperature water. Hot water has its own distinct word, お湯 (おゆ), so never use 水 for hot water.',
   conj_type: null,
   examples: [
-      { jp: '私は水を飲みました。', en: 'I drank water.', id: '[TBD]' },{"jp": "水を一杯ください。", "id": "Tolong berikan segelas air.", "level": "n5", "tags": ["makanan-minuman", "belanja"]}],
+      {"jp": "水を一杯ください。", "id": "Tolong berikan segelas air.", "level": "n5", "tags": ["makanan-minuman", "belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -12697,7 +20585,7 @@ window.vocabN5 = [
   nuance: 'Generally means meat, most commonly beef, pork, or chicken. If unspecified in Western Japan, it often defaults to beef, while in Eastern Japan, it may default to pork.',
   conj_type: null,
   examples: [
-      { jp: '皮肉だな。', en: 'It\'s ironic.', id: '[TBD]' },{"jp": "肉が好きです。", "id": "Saya suka daging.", "level": "n5", "tags": ["makanan-minuman"]}],
+      {"jp": "肉が好きです。", "id": "Saya suka daging.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -12725,7 +20613,7 @@ window.vocabN5 = [
   nuance: '体温 = suhu tubuh. 体温を測る = mengukur suhu tubuh. 平熱 (heinetsu) = suhu normal.',
   conj_type: null,
   examples: [
-      { jp: '魚をお願いします。', en: 'Fish, please.', id: '[TBD]' },{"jp": "体温を測ったら３８度ありました。", "id": "Setelah diukur, suhu tubuhnya 38 derajat.", "level": "n5", "tags": ["kesehatan"]}],
+      {"jp": "体温を測ったら３８度ありました。", "id": "Setelah diukur, suhu tubuhnya 38 derajat.", "level": "n5", "tags": ["kesehatan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -12753,7 +20641,7 @@ window.vocabN5 = [
   nuance: 'Used for vegetables. Literally means \'field greens\' and covers most edible plant matter excluding fruits.',
   conj_type: null,
   examples: [
-      { jp: '野菜を食べなさい。', en: 'Eat your vegetables.', id: '[TBD]' },{"jp": "野菜をたくさん食べてください。", "id": "Tolong makan banyak sayuran.", "level": "n5", "tags": ["makanan-minuman", "kesehatan"]}],
+      {"jp": "野菜をたくさん食べてください。", "id": "Tolong makan banyak sayuran.", "level": "n5", "tags": ["makanan-minuman", "kesehatan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -12783,7 +20671,7 @@ window.vocabN5 = [
   nuance: 'Means the direction right. Often paired with left (左) to form the concept of both sides (左右, さゆう).',
   conj_type: null,
   examples: [
-      { jp: '右に曲がって。', en: 'Turn right.', id: '[TBD]' },{"jp": "右に曲がってください。", "id": "Tolong belok kanan.", "level": "n5", "tags": ["perjalanan"]}],
+      {"jp": "右に曲がってください。", "id": "Tolong belok kanan.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: ['vg-n5-00150'],
   see_also: [],
@@ -13088,7 +20976,7 @@ window.vocabN5 = [
   nuance: 'うち = rumah/keluargaku (kasual). 家 (いえ) = rumah (bangunan). お宅 (formal).',
   conj_type: null,
   examples: [
-      { jp: 'ではまた近いうちに！', en: 'See you soon!', id: '[TBD]' },{"jp": "うちでご飯を食べましょう。", "id": "Mari makan di rumah.", "level": "n5", "tags": ["keluarga"]}],
+      {"jp": "うちでご飯を食べましょう。", "id": "Mari makan di rumah.", "level": "n5", "tags": ["keluarga"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -13118,7 +21006,7 @@ window.vocabN5 = [
   nuance: 'Refers to a room within a building. It implies a personal or specific enclosed space rather than an open hall.',
   conj_type: null,
   examples: [
-      { jp: '背の高い男が私のほうへやってきた。', en: 'A tall man came up to me.', id: '[TBD]' },{"jp": "私の部屋は二階にあります。", "id": "Kamar saya ada di lantai dua.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "私の部屋は二階にあります。", "id": "Kamar saya ada di lantai dua.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -13148,7 +21036,7 @@ window.vocabN5 = [
   nuance: 'A loanword from English \'door\', usually referring to Western-style hinged doors. Traditional Japanese sliding doors are called ふすま or しょうじ.',
   conj_type: null,
   examples: [
-      { jp: 'ドアに鍵をかけろ！', en: 'Lock the door!', id: '[TBD]' },{"jp": "ドアを閉めてください。", "id": "Tolong tutup pintunya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "ドアを閉めてください。", "id": "Tolong tutup pintunya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -13232,7 +21120,7 @@ window.vocabN5 = [
   nuance: '空港 = bandara. 空港に着く = tiba di bandara. 国際空港 = bandara internasional.',
   conj_type: null,
   examples: [
-      { jp: '子ども扱いするなよ。', en: 'I\'m not a kid.', id: '[TBD]' },{"jp": "空港まで迎えに来てください。", "id": "Tolong jemput saya di bandara.", "level": "n5", "tags": ["perjalanan"]}],
+      {"jp": "空港まで迎えに来てください。", "id": "Tolong jemput saya di bandara.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -13262,7 +21150,7 @@ window.vocabN5 = [
   nuance: 'Can mean either the physical key or the lock itself. You \'hang\' a lock (かぎをかける) to lock a door.',
   conj_type: null,
   examples: [
-      { jp: '門にかぎを掛けなさい。', en: 'Lock the gate.', id: '[TBD]' },{"jp": "鍵を忘れました。", "id": "Saya lupa membawa kunci.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "鍵を忘れました。", "id": "Saya lupa membawa kunci.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -13292,7 +21180,7 @@ window.vocabN5 = [
   nuance: 'A general term for an umbrella used for rain. A parasol used for sun protection is usually called 日傘 (ひがさ).',
   conj_type: null,
   examples: [
-      { jp: '急かさないで。', en: 'Don\'t rush me.', id: '[TBD]' },{"jp": "雨なので傘を持っていきます。", "id": "Karena hujan, saya bawa payung.", "level": "n5", "tags": ["alam-lingkungan"]}],
+      {"jp": "雨なので傘を持っていきます。", "id": "Karena hujan, saya bawa payung.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -13347,7 +21235,7 @@ window.vocabN5 = [
   nuance: 'A broad term for any bag, briefcase, or satchel. It is not usually used for plastic shopping bags, which are 袋 (ふくろ).',
   conj_type: 'suru',
   examples: [
-      { jp: '私のかばんです。', en: 'This is my bag.', id: '[TBD]' },{"jp": "かばんの中に何がありますか。", "id": "Apa yang ada di dalam tas?", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "かばんの中に何がありますか。", "id": "Apa yang ada di dalam tas?", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -13374,7 +21262,7 @@ window.vocabN5 = [
   nuance: 'Refers to medicine or drugs. In Japanese, you \'drink\' medicine (くすりをのむ), even if it is a solid pill.',
   conj_type: null,
   examples: [
-      { jp: '細かくすりおろしたチーズを60g入れます。', en: 'Add sixty grams of grated cheese.', id: '[TBD]' },{"jp": "薬を飲んでください。", "id": "Tolong minum obat.", "level": "n5", "tags": ["kesehatan"]}],
+      {"jp": "薬を飲んでください。", "id": "Tolong minum obat.", "level": "n5", "tags": ["kesehatan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -13433,7 +21321,7 @@ window.vocabN5 = [
   nuance: 'Refers to a fever or high body temperature. \'To have a fever\' is expressed as 熱がある (ねつがある).',
   conj_type: null,
   examples: [
-      { jp: 'どうして彼らは君の提案をはねつけたんだい。', en: 'Why did they turn down your proposal?', id: '[TBD]' },{"jp": "熱が三十八度あります。", "id": "Suhu badannya 38 derajat.", "level": "n5", "tags": ["kesehatan"]}],
+      {"jp": "熱が三十八度あります。", "id": "Suhu badannya 38 derajat.", "level": "n5", "tags": ["kesehatan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -13462,7 +21350,7 @@ window.vocabN5 = [
   nuance: 'Means face. Often used in idioms related to reputation, expression, or personal connections.',
   conj_type: null,
   examples: [
-      { jp: '何かお探しですか。', en: 'May I help you?', id: '[TBD]' },{"jp": "顔を洗ってください。", "id": "Tolong cuci muka.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "顔を洗ってください。", "id": "Tolong cuci muka.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -13492,7 +21380,7 @@ window.vocabN5 = [
   nuance: 'Refers to the eye. It is foundational in many Japanese expressions about attention and observation.',
   conj_type: null,
   examples: [
-      { jp: 'やめろ！', en: 'Stop!', id: '[TBD]' },{"jp": "目が痛いです。", "id": "Mata saya sakit.", "level": "n5", "tags": ["kesehatan"]}],
+      {"jp": "目が痛いです。", "id": "Mata saya sakit.", "level": "n5", "tags": ["kesehatan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -13521,7 +21409,7 @@ window.vocabN5 = [
   nuance: 'Means the ear. Also used metaphorically for the edges of things, like the crust of a piece of bread (パンのみみ).',
   conj_type: null,
   examples: [
-      { jp: 'そんなみみっちいこと言うな。', en: 'Don\'t be so stingy.', id: '[TBD]' },{"jp": "耳が聞こえません。", "id": "Telinganya tidak bisa mendengar.", "level": "n5", "tags": ["kesehatan"]}],
+      {"jp": "耳が聞こえません。", "id": "Telinganya tidak bisa mendengar.", "level": "n5", "tags": ["kesehatan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -13550,7 +21438,7 @@ window.vocabN5 = [
   nuance: '鼻 = hidung (juga dibaca: 花 = bunga — beda kanji).',
   conj_type: null,
   examples: [
-      { jp: '私は公平ではない。', en: 'I\'m biased.', id: '[TBD]' },{"jp": "鼻が詰まっています。", "id": "Hidung saya tersumbat.", "level": "n5", "tags": ["kesehatan"]}],
+      {"jp": "鼻が詰まっています。", "id": "Hidung saya tersumbat.", "level": "n5", "tags": ["kesehatan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -13581,7 +21469,7 @@ window.vocabN5 = [
   nuance: 'Means the mouth. Can also refer to an opening or entrance, and is used in idioms regarding speaking or eating.',
   conj_type: null,
   examples: [
-      { jp: '行かなくちゃ。', en: 'I must go.', id: '[TBD]' },{"jp": "口を開けてください。", "id": "Tolong buka mulutnya.", "level": "n5", "tags": ["kesehatan"]}],
+      {"jp": "口を開けてください。", "id": "Tolong buka mulutnya.", "level": "n5", "tags": ["kesehatan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -13610,7 +21498,7 @@ window.vocabN5 = [
   nuance: '足 = kaki keseluruhan (termasuk betis dan kaki bawah).',
   conj_type: null,
   examples: [
-      { jp: 'あしたは家に居るつもりだ。', en: 'I will stay home tomorrow.', id: '[TBD]' },{"jp": "足が痛くて歩けません。", "id": "Kaki sakit sehingga tidak bisa berjalan.", "level": "n5", "tags": ["kesehatan"]}],
+      {"jp": "足が痛くて歩けません。", "id": "Kaki sakit sehingga tidak bisa berjalan.", "level": "n5", "tags": ["kesehatan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -13638,7 +21526,7 @@ window.vocabN5 = [
   nuance: 'Refers to the entire back of a person or animal. Literally translates to \'back center\'.',
   conj_type: null,
   examples: [
-      { jp: '彼の家を見つけだせなかった。', en: 'I couldn\'t find his house.', id: '[TBD]' },{"jp": "背中が痛いです。", "id": "Punggung saya sakit.", "level": "n5", "tags": ["kesehatan"]}],
+      {"jp": "背中が痛いです。", "id": "Punggung saya sakit.", "level": "n5", "tags": ["kesehatan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -13667,7 +21555,7 @@ window.vocabN5 = [
   nuance: 'ご飯 = nasi (makanan) ATAU waktu makan. 朝ご飯 = sarapan.',
   conj_type: null,
   examples: [
-      { jp: 'お昼ごはんよ。', en: 'Lunch is on.', id: '[TBD]' },{"jp": "ご飯を食べましょう。", "id": "Mari makan.", "level": "n5", "tags": ["makanan-minuman"]}],
+      {"jp": "ご飯を食べましょう。", "id": "Mari makan.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -13697,7 +21585,7 @@ window.vocabN5 = [
   nuance: 'A loanword from Portuguese (pão) meaning bread. It is a staple word since bread has been long integrated into the Japanese diet.',
   conj_type: null,
   examples: [
-      { jp: '私はパン屋です。', en: 'I\'m a baker.', id: '[TBD]' },{"jp": "朝はパンを食べます。", "id": "Di pagi hari saya makan roti.", "level": "n5", "tags": ["makanan-minuman"]}],
+      {"jp": "朝はパンを食べます。", "id": "Di pagi hari saya makan roti.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -13726,7 +21614,7 @@ window.vocabN5 = [
   nuance: 'Means egg, typically a chicken egg. The kanji 卵 is used for biological eggs, while 玉子 is often used for cooked eggs in cuisine.',
   conj_type: null,
   examples: [
-      { jp: 'たまごサンドは安くて手軽に作れてよく食べます。', en: 'Egg salad sandwiches are cheap and easy to make, so I often eat them.', id: '[TBD]' },{"jp": "卵を三個買いました。", "id": "Saya membeli tiga butir telur.", "level": "n5", "tags": ["makanan-minuman", "belanja"]}],
+      {"jp": "卵を三個買いました。", "id": "Saya membeli tiga butir telur.", "level": "n5", "tags": ["makanan-minuman", "belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -13813,7 +21701,7 @@ window.vocabN5 = [
   nuance: 'Refers specifically to unheated water. Remember that hot water is always referred to as お湯 (おゆ).',
   conj_type: null,
   examples: [
-      { jp: 'トムはみずがめ座です。', en: 'Tom is an Aquarius.', id: '[TBD]' },{"jp": "水をください。", "id": "Tolong berikan air.", "level": "n5", "tags": ["makanan-minuman"]}],
+      {"jp": "水をください。", "id": "Tolong berikan air.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -13842,7 +21730,7 @@ window.vocabN5 = [
   nuance: '歌 = lagu / nyanyian. 歌う = bernyanyi. 歌手 (kashu) = penyanyi.',
   conj_type: null,
   examples: [
-      { jp: '私はりんごが好きです。', en: 'I like apples.', id: '[TBD]' },{"jp": "好きな歌を歌いました。", "id": "Saya menyanyikan lagu favorit saya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "好きな歌を歌いました。", "id": "Saya menyanyikan lagu favorit saya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -13872,7 +21760,7 @@ window.vocabN5 = [
   nuance: 'A loanword from English for banana. Often written in katakana as it is a foreign import.',
   conj_type: null,
   examples: [
-      { jp: 'バナナは好きですよ。', en: 'I like bananas.', id: '[TBD]' },{"jp": "バナナは安くておいしいです。", "id": "Pisang itu murah dan enak.", "level": "n5", "tags": ["makanan-minuman", "belanja"]}],
+      {"jp": "バナナは安くておいしいです。", "id": "Pisang itu murah dan enak.", "level": "n5", "tags": ["makanan-minuman", "belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -13928,7 +21816,7 @@ window.vocabN5 = [
   nuance: 'Means salt. It has cultural significance in Japan for purification purposes, such as in sumo wrestling.',
   conj_type: null,
   examples: [
-      { jp: '少しお待ちください。', en: 'Wait a bit.', id: '[TBD]' },{"jp": "塩を少し入れてください。", "id": "Tolong masukkan sedikit garam.", "level": "n5", "tags": ["makanan-minuman"]}],
+      {"jp": "塩を少し入れてください。", "id": "Tolong masukkan sedikit garam.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -13958,7 +21846,7 @@ window.vocabN5 = [
   nuance: 'Means fish, either alive or as food. The kanji 魚 is used broadly for all aquatic life resembling fish.',
   conj_type: null,
   examples: [
-      { jp: 'あれって、これと同じくらいの重さかな？', en: 'Is that as heavy as this?', id: '[TBD]' },{"jp": "魚を焼きました。", "id": "Saya memanggang ikan.", "level": "n5", "tags": ["makanan-minuman"]}],
+      {"jp": "魚を焼きました。", "id": "Saya memanggang ikan.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -13988,7 +21876,7 @@ window.vocabN5 = [
   nuance: '肉 saja = daging. 牛肉 = sapi, 豚肉 = babi, 鶏肉 = ayam.',
   conj_type: null,
   examples: [
-      { jp: 'それを私にください。', en: 'Give me that.', id: '[TBD]' },{"jp": "肉と野菜を炒めました。", "id": "Saya menumis daging dan sayuran.", "level": "n5", "tags": ["makanan-minuman"]}],
+      {"jp": "肉と野菜を炒めました。", "id": "Saya menumis daging dan sayuran.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -14046,7 +21934,7 @@ window.vocabN5 = [
   nuance: '音楽 = musik. 音楽を聞く = mendengarkan musik. 音楽家 = musisi.',
   conj_type: null,
   examples: [
-      { jp: 'レモンはすっぱいくだものだ。', en: 'The lemon is a sour fruit.', id: '[TBD]' },{"jp": "音楽を聞きながら勉強します。", "id": "Saya belajar sambil mendengarkan musik.", "level": "n5", "tags": ["kehidupan-sehari", "pendidikan"]}],
+      {"jp": "音楽を聞きながら勉強します。", "id": "Saya belajar sambil mendengarkan musik.", "level": "n5", "tags": ["kehidupan-sehari", "pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -14516,7 +22404,7 @@ window.vocabN5 = [
   nuance: 'ちゃいろ (茶色) = coklat. 茶 = teh, dan warna teh itu coklat.',
   conj_type: null,
   examples: [
-      { jp: '歯茎からうみが出ます。', en: 'I have pus coming out of my gums.', id: '[TBD]' },{"jp": "茶色いくまのぬいぐるみを買いました。", "id": "Saya beli boneka beruang berwarna coklat.", "level": "n5", "tags": ["belanja"]}],
+      {"jp": "茶色いくまのぬいぐるみを買いました。", "id": "Saya beli boneka beruang berwarna coklat.", "level": "n5", "tags": ["belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -14544,7 +22432,7 @@ window.vocabN5 = [
   nuance: 'Refers to the physical sky above. Can be combined with weather terms, like \'あおぞら\' (blue sky) or \'ほしぞら\' (starry sky).',
   conj_type: null,
   examples: [
-      { jp: '彼女は目をそらした。', en: 'She looked away.', id: '[TBD]' },{"jp": "空が青くてきれいですね。", "id": "Langitnya biru dan indah ya.", "level": "n5", "tags": ["alam-lingkungan"]}],
+      {"jp": "空が青くてきれいですね。", "id": "Langitnya biru dan indah ya.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -14601,7 +22489,7 @@ window.vocabN5 = [
   nuance: 'The hottest season of the year in Japan, associated with festivals (matsuri) and cicadas. Used in combinations like \'なつやすみ\' (summer vacation).',
   conj_type: null,
   examples: [
-      { jp: 'そんなつもりではなかったんだ。', en: 'I didn\'t mean it.', id: '[TBD]' },{"jp": "夏は暑くて好きじゃないです。", "id": "Saya tidak suka musim panas karena panas.", "level": "n5", "tags": ["alam-lingkungan"]}],
+      {"jp": "夏は暑くて好きじゃないです。", "id": "Saya tidak suka musim panas karena panas.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -14629,7 +22517,7 @@ window.vocabN5 = [
   nuance: 'The season of cooling temperatures and autumn leaves (momiji). Often associated with appetite, reading, and sports in Japanese culture.',
   conj_type: null,
   examples: [
-      { jp: 'あきらめるな。', en: 'Don\'t give up!', id: '[TBD]' },{"jp": "秋は涼しくてきれいです。", "id": "Musim gugur itu sejuk dan indah.", "level": "n5", "tags": ["alam-lingkungan"]}],
+      {"jp": "秋は涼しくてきれいです。", "id": "Musim gugur itu sejuk dan indah.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -14710,7 +22598,7 @@ window.vocabN5 = [
   nuance: 'A natural flowing watercourse. The kanji \'川\' visually represents a flowing river.',
   conj_type: null,
   examples: [
-      { jp: 'かわいい！', en: 'How cute!', id: '[TBD]' },{"jp": "川のそばを歩きました。", "id": "Saya berjalan di pinggir sungai.", "level": "n5", "tags": ["alam-lingkungan"]}],
+      {"jp": "川のそばを歩きました。", "id": "Saya berjalan di pinggir sungai.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -14738,7 +22626,7 @@ window.vocabN5 = [
   nuance: 'Refers to mountains or hills. Frequently used in place names and family names in Japan, reflecting the country\'s mountainous geography.',
   conj_type: null,
   examples: [
-      { jp: 'おやまあ、なんて大きな箱なの。', en: 'Wow! What a big box!', id: '[TBD]' },{"jp": "富士山は日本一高い山です。", "id": "Gunung Fuji adalah gunung tertinggi di Jepang.", "level": "n5", "tags": ["alam-lingkungan", "perjalanan"]}],
+      {"jp": "富士山は日本一高い山です。", "id": "Gunung Fuji adalah gunung tertinggi di Jepang.", "level": "n5", "tags": ["alam-lingkungan", "perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -14768,7 +22656,7 @@ window.vocabN5 = [
   nuance: 'Can refer to a living tree, wood as a material, or timber. The context usually clarifies whether it means a tree in a park or wood for building.',
   conj_type: 'na-adj',
   examples: [
-      { jp: '行きなさい。', en: 'Go.', id: '[TBD]' },{"jp": "公園に大きな木があります。", "id": "Di taman ada pohon besar.", "level": "n5", "tags": ["alam-lingkungan"]}],
+      {"jp": "公園に大きな木があります。", "id": "Di taman ada pohon besar.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -14825,7 +22713,7 @@ window.vocabN5 = [
   nuance: 'A general term for cats. Very popular in Japanese culture, appearing in words like \'まねきねこ\' (beckoning cat).',
   conj_type: null,
   examples: [
-      { jp: 'ねこっかぶり！', en: 'You hypocrite!', id: '[TBD]' },{"jp": "うちには猫が二匹います。", "id": "Di rumah saya ada dua kucing.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "うちには猫が二匹います。", "id": "Di rumah saya ada dua kucing.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -14855,7 +22743,7 @@ window.vocabN5 = [
   nuance: '鳥 = burung (umum). 鶏 (にわとり) = ayam (hewan). 鶏肉 (とりにく) = daging ayam.',
   conj_type: null,
   examples: [
-      { jp: 'ひとりにさせて！', en: 'Leave me alone!', id: '[TBD]' },{"jp": "鳥が歌っています。", "id": "Burung berkicau.", "level": "n5", "tags": ["alam-lingkungan"]}],
+      {"jp": "鳥が歌っています。", "id": "Burung berkicau.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -14885,7 +22773,7 @@ window.vocabN5 = [
   nuance: 'Refers to the iconic Japanese cherry blossoms, deeply ingrained in the culture symbolizing the fleeting nature of life. A major symbol of spring.',
   conj_type: null,
   examples: [
-      { jp: '赤ちゃんはこの人形の大きさくらいしかない。', en: 'The baby is no bigger than this doll.', id: '[TBD]' },{"jp": "桜がきれいな季節です。", "id": "Ini adalah musim sakura yang indah.", "level": "n5", "tags": ["alam-lingkungan", "perjalanan"]}],
+      {"jp": "桜がきれいな季節です。", "id": "Ini adalah musim sakura yang indah.", "level": "n5", "tags": ["alam-lingkungan", "perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -15080,7 +22968,7 @@ window.vocabN5 = [
   nuance: 'Can mean a single word, a phrase, a language, or speech in general. A very versatile noun for verbal communication.',
   conj_type: null,
   examples: [
-      { jp: '今日は驚くことばかり。', en: 'Today has been full of surprises.', id: '[TBD]' },{"jp": "この言葉の意味がわかりません。", "id": "Saya tidak mengerti arti kata ini.", "level": "n5", "tags": ["pendidikan"]}],
+      {"jp": "この言葉の意味がわかりません。", "id": "Saya tidak mengerti arti kata ini.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -15194,7 +23082,7 @@ window.vocabN5 = [
   nuance: '父 (humble, untuk ayah sendiri). お父さん = panggilan/bicara tentang ayah orang lain.',
   conj_type: null,
   examples: [
-      { jp: '携帯の電源が落ちちゃった。', en: 'My phone shut off.', id: '[TBD]' },{"jp": "父は会社員です。", "id": "Ayah saya karyawan.", "level": "n5", "tags": ["keluarga", "pekerjaan"]}],
+      {"jp": "父は会社員です。", "id": "Ayah saya karyawan.", "level": "n5", "tags": ["keluarga", "pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -15223,7 +23111,7 @@ window.vocabN5 = [
   nuance: '母 (humble, untuk ibu sendiri). お母さん = panggilan/bicara tentang ibu orang lain.',
   conj_type: null,
   examples: [
-      { jp: 'バブルははじけた。', en: 'The bubble burst.', id: '[TBD]' },{"jp": "母は料理が上手です。", "id": "Ibu saya pandai memasak.", "level": "n5", "tags": ["keluarga"]}],
+      {"jp": "母は料理が上手です。", "id": "Ibu saya pandai memasak.", "level": "n5", "tags": ["keluarga"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -15252,7 +23140,7 @@ window.vocabN5 = [
   nuance: '兄 (humble). お兄さん = kakak laki-laki orang lain.',
   conj_type: null,
   examples: [
-      { jp: 'なあに、その椅子？', en: 'What\'s this chair doing here?', id: '[TBD]' },{"jp": "兄は大学生です。", "id": "Kakak laki-laki saya mahasiswa.", "level": "n5", "tags": ["keluarga", "pendidikan"]}],
+      {"jp": "兄は大学生です。", "id": "Kakak laki-laki saya mahasiswa.", "level": "n5", "tags": ["keluarga", "pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -15281,7 +23169,7 @@ window.vocabN5 = [
   nuance: '姉 (humble). お姉さん = kakak perempuan orang lain.',
   conj_type: null,
   examples: [
-      { jp: '「私のこと愛してる？」「さあね」', en: '"Do you love me?" "I don\'t know."', id: '[TBD]' },{"jp": "姉は看護師として働いています。", "id": "Kakak perempuan saya bekerja sebagai perawat.", "level": "n5", "tags": ["keluarga", "pekerjaan"]}],
+      {"jp": "姉は看護師として働いています。", "id": "Kakak perempuan saya bekerja sebagai perawat.", "level": "n5", "tags": ["keluarga", "pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -15422,7 +23310,7 @@ window.vocabN5 = [
   nuance: 'A loanword (gairaigo) for coffee. Often ordered in cafes, known as \'きっさてん\' (kissaten) or \'カフェ\' (kafe).',
   conj_type: null,
   examples: [
-      { jp: 'コーヒーを飲んだよ。', en: 'I had coffee.', id: '[TBD]' },{"jp": "コーヒーを一杯飲みました。", "id": "Saya minum secangkir kopi.", "level": "n5", "tags": ["makanan-minuman"]}],
+      {"jp": "コーヒーを一杯飲みました。", "id": "Saya minum secangkir kopi.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -15451,7 +23339,7 @@ window.vocabN5 = [
   nuance: 'Generally refers to any sweet, non-alcoholic cold drink, including fruit juices and soft drinks like cola. Less strict than the English \'juice\'.',
   conj_type: null,
   examples: [
-      { jp: 'ジュースをください。', en: 'Juice, please.', id: '[TBD]' },{"jp": "オレンジジュースをください。", "id": "Tolong berikan jus jeruk.", "level": "n5", "tags": ["makanan-minuman"]}],
+      {"jp": "オレンジジュースをください。", "id": "Tolong berikan jus jeruk.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -15480,7 +23368,7 @@ window.vocabN5 = [
   nuance: 'A loanword from Dutch for beer. The standard first drink at Japanese drinking parties, leading to the phrase \'とりあえずビール\' (beer for now).',
   conj_type: null,
   examples: [
-      { jp: 'ビールを飲むのはやめている。', en: 'I\'m off beer.', id: '[TBD]' },{"jp": "冷たいビールが飲みたいです。", "id": "Saya ingin minum bir dingin.", "level": "n5", "tags": ["makanan-minuman"]}],
+      {"jp": "冷たいビールが飲みたいです。", "id": "Saya ingin minum bir dingin.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -15507,7 +23395,7 @@ window.vocabN5 = [
   nuance: 'A loanword for Western-style cakes. Japanese traditional sweets are instead called \'わがし\' (wagashi).',
   conj_type: null,
   examples: [
-      { jp: '私はケーキが好きだ。', en: 'I like cake.', id: '[TBD]' },{"jp": "誕生日ケーキを買いました。", "id": "Saya membeli kue ulang tahun.", "level": "n5", "tags": ["makanan-minuman", "hubungan"]}],
+      {"jp": "誕生日ケーキを買いました。", "id": "Saya membeli kue ulang tahun.", "level": "n5", "tags": ["makanan-minuman", "hubungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -15535,7 +23423,7 @@ window.vocabN5 = [
   nuance: 'A loanword for ice cream. Often shortened to \'アイス\' (aisu) in casual conversation.',
   conj_type: null,
   examples: [
-      { jp: 'アイスクリームが欲しいよ。', en: 'I want ice cream.', id: '[TBD]' },{"jp": "暑いのでアイスクリームを食べました。", "id": "Karena panas, saya makan es krim.", "level": "n5", "tags": ["makanan-minuman"]}],
+      {"jp": "暑いのでアイスクリームを食べました。", "id": "Karena panas, saya makan es krim.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -15563,7 +23451,7 @@ window.vocabN5 = [
   nuance: 'Refers generally to Western-style dining establishments, though often used for any formal sit-down eatery.',
   conj_type: null,
   examples: [
-      { jp: 'レストランは満席です。', en: 'The restaurant is full.', id: '[TBD]' },{"jp": "レストランで夕食を食べます。", "id": "Saya makan malam di restoran.", "level": "n5", "tags": ["makanan-minuman", "perjalanan"]}],
+      {"jp": "レストランで夕食を食べます。", "id": "Saya makan malam di restoran.", "level": "n5", "tags": ["makanan-minuman", "perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -15591,7 +23479,7 @@ window.vocabN5 = [
   nuance: 'An abbreviation of \'スーパーマーケット\' (supermarket). Refers to a standard grocery store, distinct from convenience stores.',
   conj_type: null,
   examples: [
-      { jp: 'スーパーに行ってきました。', en: 'I went to the supermarket.', id: '[TBD]' },{"jp": "スーパーで野菜を買いました。", "id": "Saya membeli sayuran di supermarket.", "level": "n5", "tags": ["belanja", "makanan-minuman"]}],
+      {"jp": "スーパーで野菜を買いました。", "id": "Saya membeli sayuran di supermarket.", "level": "n5", "tags": ["belanja", "makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -15621,7 +23509,7 @@ window.vocabN5 = [
   nuance: 'An abbreviation of \'コンビニエンスストア\'. Open 24/7 in Japan, offering a vast array of goods and services.',
   conj_type: null,
   examples: [
-      { jp: 'ちょっとコンビニ行ってくるね。', en: 'I\'m going to the convenience store.', id: '[TBD]' },{"jp": "コンビニで弁当を買います。", "id": "Saya beli bento di konbini.", "level": "n5", "tags": ["makanan-minuman", "belanja"]}],
+      {"jp": "コンビニで弁当を買います。", "id": "Saya beli bento di konbini.", "level": "n5", "tags": ["makanan-minuman", "belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -15649,7 +23537,7 @@ window.vocabN5 = [
   nuance: 'An abbreviation of \'デパートメントストア\'. Represents high-end retail stores, often with luxury brands and a basement food hall.',
   conj_type: null,
   examples: [
-      { jp: 'デパートで買った。', en: 'I bought it at a department store.', id: '[TBD]' },{"jp": "デパートでプレゼントを買いました。", "id": "Saya beli hadiah di department store.", "level": "n5", "tags": ["belanja"]}],
+      {"jp": "デパートでプレゼントを買いました。", "id": "Saya beli hadiah di department store.", "level": "n5", "tags": ["belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -15679,7 +23567,7 @@ window.vocabN5 = [
   nuance: 'Refers to Western-style hotels. Traditional Japanese inns are called \'りょかん\' (ryokan).',
   conj_type: null,
   examples: [
-      { jp: '今、ホテル。', en: 'I\'m at the hotel.', id: '[TBD]' },{"jp": "駅の近くのホテルに泊まりました。", "id": "Saya menginap di hotel dekat stasiun.", "level": "n5", "tags": ["perjalanan"]}],
+      {"jp": "駅の近くのホテルに泊まりました。", "id": "Saya menginap di hotel dekat stasiun.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -15707,7 +23595,7 @@ window.vocabN5 = [
   nuance: 'A loanword for a small, typically two-story wooden or light-steel apartment building. Larger concrete condominium buildings are called \'マンション\' (manshon).',
   conj_type: null,
   examples: [
-      { jp: '僕は君のアパートが好きだ。', en: 'I like your apartment.', id: '[TBD]' },{"jp": "駅から近いアパートに住んでいます。", "id": "Saya tinggal di apartemen dekat stasiun.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "駅から近いアパートに住んでいます。", "id": "Saya tinggal di apartemen dekat stasiun.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -15737,7 +23625,7 @@ window.vocabN5 = [
   nuance: '季節 = musim (konsep/kategori). Berbeda: 春/夏/秋/冬 = nama-nama musim.',
   conj_type: null,
   examples: [
-      { jp: 'それはテレビだよ。', en: 'It\'s a TV.', id: '[TBD]' },{"jp": "一番好きな季節は秋です。", "id": "Musim favorit saya adalah musim gugur.", "level": "n5", "tags": ["alam-lingkungan"]}],
+      {"jp": "一番好きな季節は秋です。", "id": "Musim favorit saya adalah musim gugur.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -15767,7 +23655,7 @@ window.vocabN5 = [
   nuance: 'Refers to the device or radio broadcasts. Used with the verb \'きく\' (to listen).',
   conj_type: null,
   examples: [
-      { jp: 'これはラジオですか。', en: 'Is this a radio?', id: '[TBD]' },{"jp": "車の中でラジオを聞きます。", "id": "Saya mendengarkan radio di dalam mobil.", "level": "n5", "tags": ["kehidupan-sehari", "perjalanan"]}],
+      {"jp": "車の中でラジオを聞きます。", "id": "Saya mendengarkan radio di dalam mobil.", "level": "n5", "tags": ["kehidupan-sehari", "perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -15795,7 +23683,7 @@ window.vocabN5 = [
   nuance: 'Refers to a standalone camera, though nowadays also used for smartphone cameras. Associated with the verb \'とる\' (to take).',
   conj_type: null,
   examples: [
-      { jp: 'カメラが壊れちゃった。', en: 'My camera broke.', id: '[TBD]' },{"jp": "旅行にカメラを持っていきます。", "id": "Saya membawa kamera saat bepergian.", "level": "n5", "tags": ["perjalanan"]}],
+      {"jp": "旅行にカメラを持っていきます。", "id": "Saya membawa kamera saat bepergian.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -15823,7 +23711,7 @@ window.vocabN5 = [
   nuance: 'スマホ = singkatan dari スマートフォン.',
   conj_type: null,
   examples: [
-      { jp: '私のスマホって、重いのよ。', en: 'My phone is heavy.', id: '[TBD]' },{"jp": "スマホで地図を見ました。", "id": "Saya melihat peta di smartphone.", "level": "n5", "tags": ["teknologi", "perjalanan"]}],
+      {"jp": "スマホで地図を見ました。", "id": "Saya melihat peta di smartphone.", "level": "n5", "tags": ["teknologi", "perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -15852,7 +23740,7 @@ window.vocabN5 = [
   nuance: 'パソコン = singkatan dari パーソナルコンピューター.',
   conj_type: null,
   examples: [
-      { jp: 'ノートパソコン持ってるよ。', en: 'I have a laptop.', id: '[TBD]' },{"jp": "パソコンでメールを送りました。", "id": "Saya mengirim email menggunakan komputer.", "level": "n5", "tags": ["teknologi", "pekerjaan"]}],
+      {"jp": "パソコンでメールを送りました。", "id": "Saya mengirim email menggunakan komputer.", "level": "n5", "tags": ["teknologi", "pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -15881,7 +23769,7 @@ window.vocabN5 = [
   nuance: 'The global network. Frequently shortened to \'ネット\' (netto) in everyday speech.',
   conj_type: null,
   examples: [
-      { jp: 'トムはインターネットで物販を手掛けている。', en: 'Tom sells things online.', id: '[TBD]' },{"jp": "インターネットで調べました。", "id": "Saya mencari di internet.", "level": "n5", "tags": ["teknologi"]}],
+      {"jp": "インターネットで調べました。", "id": "Saya mencari di internet.", "level": "n5", "tags": ["teknologi"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -15909,7 +23797,7 @@ window.vocabN5 = [
   nuance: 'ピンク = pink/merah muda. Dari bahasa Inggris.',
   conj_type: null,
   examples: [
-      { jp: 'スポーツをするのが好き。', en: 'I like sports.', id: '[TBD]' },{"jp": "桜の花はピンクです。", "id": "Bunga sakura berwarna pink.", "level": "n5", "tags": ["alam-lingkungan", "perjalanan"]}],
+      {"jp": "桜の花はピンクです。", "id": "Bunga sakura berwarna pink.", "level": "n5", "tags": ["alam-lingkungan", "perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -15937,7 +23825,7 @@ window.vocabN5 = [
   nuance: '野球 = baseball. Olahraga paling populer di Jepang bersama sepak bola.',
   conj_type: null,
   examples: [
-      { jp: 'サッカーが好きです。', en: 'I like soccer.', id: '[TBD]' },{"jp": "父と野球を見に行きました。", "id": "Saya pergi nonton baseball bersama ayah.", "level": "n5", "tags": ["olahraga", "keluarga"]}],
+      {"jp": "父と野球を見に行きました。", "id": "Saya pergi nonton baseball bersama ayah.", "level": "n5", "tags": ["olahraga", "keluarga"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -15965,7 +23853,7 @@ window.vocabN5 = [
   nuance: 'スポーツ = olahraga (umum). スポーツをする = berolahraga.',
   conj_type: null,
   examples: [
-      { jp: '私はテニスが好き。', en: 'I like tennis.', id: '[TBD]' },{"jp": "毎週末スポーツをします。", "id": "Setiap akhir pekan saya berolahraga.", "level": "n5", "tags": ["olahraga"]}],
+      {"jp": "毎週末スポーツをします。", "id": "Setiap akhir pekan saya berolahraga.", "level": "n5", "tags": ["olahraga"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -15993,7 +23881,7 @@ window.vocabN5 = [
   nuance: 'Refers to a swimming pool. Associated with the verbs \'およぐ\' (to swim) or \'はいる\' (to enter).',
   conj_type: 'suru',
   examples: [
-      { jp: 'プールがあるの？', en: 'Is there a pool?', id: '[TBD]' },{"jp": "プールで泳ぎます。", "id": "Saya berenang di kolam renang.", "level": "n5", "tags": ["olahraga"]}],
+      {"jp": "プールで泳ぎます。", "id": "Saya berenang di kolam renang.", "level": "n5", "tags": ["olahraga"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -16022,7 +23910,7 @@ window.vocabN5 = [
   nuance: '音楽 (おんがく) lebih umum. ミュージック = loanword, lebih kasual/modern.',
   conj_type: null,
   examples: [
-      { jp: 'トムはカントリーミュージックが好きだ。', en: 'Tom likes country.', id: '[TBD]' },{"jp": "ミュージックを聞きながら走ります。", "id": "Saya berlari sambil mendengarkan musik.", "level": "n5", "tags": ["olahraga", "kehidupan-sehari"]}],
+      {"jp": "ミュージックを聞きながら走ります。", "id": "Saya berlari sambil mendengarkan musik.", "level": "n5", "tags": ["olahraga", "kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -16050,7 +23938,7 @@ window.vocabN5 = [
   nuance: 'Refers to news broadcasts or information. Used with the verbs \'みる\' (to watch) or \'きく\' (to listen).',
   conj_type: null,
   examples: [
-      { jp: 'それは良いニュースなのか？', en: 'Is it good news?', id: '[TBD]' },{"jp": "毎晩ニュースを見ます。", "id": "Saya menonton berita setiap malam.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "毎晩ニュースを見ます。", "id": "Saya menonton berita setiap malam.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -16078,7 +23966,7 @@ window.vocabN5 = [
   nuance: 'Can refer to either a physical photo album or a music record/CD album.',
   conj_type: null,
   examples: [
-      { jp: '彼はアルバムを見せてくれた。', en: 'He showed me his album.', id: '[TBD]' },{"jp": "旅行のアルバムを作りました。", "id": "Saya membuat album perjalanan.", "level": "n5", "tags": ["perjalanan"]}],
+      {"jp": "旅行のアルバムを作りました。", "id": "Saya membuat album perjalanan.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -16106,7 +23994,7 @@ window.vocabN5 = [
   nuance: 'Refers to a group of students taking a course together. Contrasts with \'じゅぎょう\' (jugyou) which means the lesson itself.',
   conj_type: null,
   examples: [
-      { jp: '私たちはクラスメイトです。', en: 'We\'re classmates.', id: '[TBD]' },{"jp": "私のクラスは三十人います。", "id": "Di kelas saya ada tiga puluh orang.", "level": "n5", "tags": ["pendidikan"]}],
+      {"jp": "私のクラスは三十人います。", "id": "Di kelas saya ada tiga puluh orang.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -16134,7 +24022,7 @@ window.vocabN5 = [
   nuance: 'ノート = buku catatan/notebook (benda fisik). Juga: ノートパソコン = laptop.',
   conj_type: 'suru',
   examples: [
-      { jp: 'ノートパソコン持ってるよ。', en: 'I have a laptop.', id: '[TBD]' },{"jp": "ノートに書いてください。", "id": "Tolong tulis di buku catatan.", "level": "n5", "tags": ["pendidikan"]}],
+      {"jp": "ノートに書いてください。", "id": "Tolong tulis di buku catatan.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -16164,7 +24052,7 @@ window.vocabN5 = [
   nuance: 'A ubiquitous writing instrument in Japan. The name is a combination of \'ball\' and \'pen\'.',
   conj_type: null,
   examples: [
-      { jp: 'ボールペンで書いてください。', en: 'Write with a ballpoint pen.', id: '[TBD]' },{"jp": "ボールペンを貸してください。", "id": "Tolong pinjamkan bolpoinnya.", "level": "n5", "tags": ["pendidikan"]}],
+      {"jp": "ボールペンを貸してください。", "id": "Tolong pinjamkan bolpoinnya.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -16192,7 +24080,7 @@ window.vocabN5 = [
   nuance: 'Refers to a lift or elevator. Escalator is similarly borrowed as \'エスカレーター\' (esukarētā).',
   conj_type: null,
   examples: [
-      { jp: 'エレベーターはありますか？', en: 'Is there an elevator?', id: '[TBD]' },{"jp": "エレベーターで三階まで行きます。", "id": "Saya naik lift ke lantai tiga.", "level": "n5", "tags": ["perjalanan"]}],
+      {"jp": "エレベーターで三階まで行きます。", "id": "Saya naik lift ke lantai tiga.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -16221,7 +24109,7 @@ window.vocabN5 = [
   nuance: '天気 = cuaca. 天気がいい/悪い = cuaca bagus/buruk. 天気予報 = ramalan cuaca.',
   conj_type: null,
   examples: [
-      { jp: 'バスはエアコンが効いていた。', en: 'The bus was air-conditioned.', id: '[TBD]' },{"jp": "今日は天気がいいですね。", "id": "Hari ini cuacanya bagus ya.", "level": "n5", "tags": ["alam-lingkungan"]}],
+      {"jp": "今日は天気がいいですね。", "id": "Hari ini cuacanya bagus ya.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -16250,7 +24138,7 @@ window.vocabN5 = [
   nuance: 'Loanword for \'bag\', often implying a stylish or Western-style handbag or briefcase. Contrast with \'かばん\' which is the general Japanese word for bags of all kinds.',
   conj_type: null,
   examples: [
-      { jp: 'バッグが開いてるよ。', en: 'Your bag\'s open.', id: '[TBD]' },{"jp": "新しいバッグを買いました。", "id": "Saya membeli tas baru.", "level": "n5", "tags": ["belanja"]}],
+      {"jp": "新しいバッグを買いました。", "id": "Saya membeli tas baru.", "level": "n5", "tags": ["belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -16278,7 +24166,7 @@ window.vocabN5 = [
   nuance: 'シャワーをあびる = mandi shower. Berbeda: お風呂に入る = mandi berendam.',
   conj_type: null,
   examples: [
-      { jp: 'シャワーしてきて。', en: 'Take a shower.', id: '[TBD]' },{"jp": "毎朝シャワーをあびます。", "id": "Setiap pagi saya mandi shower.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "毎朝シャワーをあびます。", "id": "Setiap pagi saya mandi shower.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -16306,7 +24194,7 @@ window.vocabN5 = [
   nuance: 'Refers to the calendar month immediately preceding the current one. Commonly used in business and daily life when reflecting on recent past events.',
   conj_type: null,
   examples: [
-      { jp: '先月引っ越しました。', en: 'I moved last month.', id: '[TBD]' },{"jp":"先月、新しいカメラを買いました。","id":"Bulan lalu, saya membeli kamera baru.","level":"n5","tags":["waktu","belanja"]}],
+      {"jp":"先月、新しいカメラを買いました。","id":"Bulan lalu, saya membeli kamera baru.","level":"n5","tags":["waktu","belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -16334,7 +24222,7 @@ window.vocabN5 = [
   nuance: '生徒 = murid SD/SMP/SMA. Untuk mahasiswa pakai 学生.',
   conj_type: null,
   examples: [
-      { jp: 'トムは生徒です。', en: 'Tom is a student.', id: '[TBD]' },{"jp": "この学校には生徒が五百人います。", "id": "Di sekolah ini ada 500 murid.", "level": "n5", "tags": ["pendidikan"]}],
+      {"jp": "この学校には生徒が五百人います。", "id": "Di sekolah ini ada 500 murid.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -16362,7 +24250,7 @@ window.vocabN5 = [
   nuance: 'Used to celebrate the day of one\'s birth. Often combined with \'お\' as \'お誕生日\' (otanjoubi) to make it polite when referring to someone else\'s birthday.',
   conj_type: null,
   examples: [
-      { jp: '誕生日おめでとうございます。', en: 'Happy birthday!', id: '[TBD]' },{"jp":"友達の誕生日にプレゼントをあげました。","id":"Saya memberi hadiah pada ulang tahun teman saya.","level":"n5","tags":["pertemanan","kehidupan-sehari"]}],
+      {"jp":"友達の誕生日にプレゼントをあげました。","id":"Saya memberi hadiah pada ulang tahun teman saya.","level":"n5","tags":["pertemanan","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -16390,7 +24278,7 @@ window.vocabN5 = [
   nuance: '学生 = mahasiswa atau pelajar secara umum. Untuk SD-SMA lebih tepat 生徒.',
   conj_type: null,
   examples: [
-      { jp: '私は学生です。', en: 'I\'m a student.', id: '[TBD]' },{"jp": "私は大学の学生です。", "id": "Saya mahasiswa universitas.", "level": "n5", "tags": ["pendidikan"]}],
+      {"jp": "私は大学の学生です。", "id": "Saya mahasiswa universitas.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -16419,7 +24307,7 @@ window.vocabN5 = [
   nuance: '日本人 = orang berkebangsaan/etnis Jepang. Pola: [国名]+人.',
   conj_type: null,
   examples: [
-      { jp: '私は日本人です。', en: 'I am Japanese.', id: '[TBD]' },{"jp": "田中さんは日本人です。", "id": "Tanaka-san adalah orang Jepang.", "level": "n5", "tags": ["hubungan", "perjalanan"]}],
+      {"jp": "田中さんは日本人です。", "id": "Tanaka-san adalah orang Jepang.", "level": "n5", "tags": ["hubungan", "perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -16448,7 +24336,7 @@ window.vocabN5 = [
   nuance: '外国人 = orang asing (non-Jepang). Di Jepang sering disingkat 外人 (agak kasar).',
   conj_type: null,
   examples: [
-      { jp: '僕ら、外国人じゃないよ。', en: 'We aren\'t foreigners.', id: '[TBD]' },{"jp": "駅に外国人がたくさんいます。", "id": "Di stasiun banyak orang asing.", "level": "n5", "tags": ["perjalanan"]}],
+      {"jp": "駅に外国人がたくさんいます。", "id": "Di stasiun banyak orang asing.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -16501,7 +24389,7 @@ window.vocabN5 = [
   nuance: 'Kata paling dasar untuk "orang". Juga bisa dibaca ひと (hito) dalam komposisi.',
   conj_type: null,
   examples: [
-      { jp: '一人でいるよ。', en: 'I\'m alone.', id: '[TBD]' },{"jp": "あの人はだれですか。", "id": "Siapa orang itu?", "level": "n5", "tags": ["hubungan"]}],
+      {"jp": "あの人はだれですか。", "id": "Siapa orang itu?", "level": "n5", "tags": ["hubungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -16529,7 +24417,7 @@ window.vocabN5 = [
   nuance: 'Refers to a fully grown person or legal adult. Its kanji literally mean \'big person\', contrasting with \'子ども\' (kodomo) for children.',
   conj_type: 'na-adj',
   examples: [
-      { jp: '大人しく待ってなさい。', en: 'Sit tight.', id: '[TBD]' },{"jp":"この映画のチケットは大人は千円です。","id":"Tiket film ini untuk orang dewasa seribu yen.","level":"n5","tags":["belanja","kehidupan-sehari"]}],
+      {"jp":"この映画のチケットは大人は千円です。","id":"Tiket film ini untuk orang dewasa seribu yen.","level":"n5","tags":["belanja","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -16557,7 +24445,7 @@ window.vocabN5 = [
   nuance: 'Broadly refers to any country other than one\'s own. It emphasizes the concept of \'outside country\', whereas \'海外\' (kaigai, overseas) focuses on crossing borders.',
   conj_type: null,
   examples: [
-      { jp: '彼は外国へ行った。', en: 'He went abroad.', id: '[TBD]' },{"jp":"いつか外国へ旅行に行きたいです。","id":"Suatu saat saya ingin pergi berlibur ke luar negeri.","level":"n5","tags":["kehidupan-sehari"]}],
+      {"jp":"いつか外国へ旅行に行きたいです。","id":"Suatu saat saya ingin pergi berlibur ke luar negeri.","level":"n5","tags":["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -16585,7 +24473,7 @@ window.vocabN5 = [
   nuance: 'Can refer to a sovereign nation as well as one\'s home country or hometown. Often polite as \'お国\' (okuni) when asking someone where they are from.',
   conj_type: null,
   examples: [
-      { jp: '私は中国人です。', en: 'I am Chinese.', id: '[TBD]' },{"jp":"あなたの国はどちらですか。","id":"Negara Anda dari mana?","level":"n5","tags":["pertemanan","umum"]}],
+      {"jp":"あなたの国はどちらですか。","id":"Negara Anda dari mana?","level":"n5","tags":["pertemanan","umum"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -16616,7 +24504,7 @@ window.vocabN5 = [
   nuance: 'The standard, polite way to refer to an adult male in daily conversation. Literally translates to \'person of male (gender)\'.',
   conj_type: null,
   examples: [
-      { jp: 'あの男の人は誰ですか。', en: 'Who\'s that man?', id: '[TBD]' },{"jp":"あそこに背が高い男の人がいます。","id":"Di sana ada seorang pria berbadan tinggi.","level":"n5","tags":["kehidupan-sehari"]}],
+      {"jp":"あそこに背が高い男の人がいます。","id":"Di sana ada seorang pria berbadan tinggi.","level":"n5","tags":["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -16644,7 +24532,7 @@ window.vocabN5 = [
   nuance: 'Refers to a male child or young boy. Combining \'男\' (male) with \'子\' (child), it is only used for children, never for adults.',
   conj_type: null,
   examples: [
-      { jp: '男の子ですよ。', en: 'It\'s a boy.', id: '[TBD]' },{"jp":"公園で小さい男の子が遊んでいます。","id":"Seorang anak laki-laki kecil sedang bermain di taman.","level":"n5","tags":["kehidupan-sehari"]}],
+      {"jp":"公園で小さい男の子が遊んでいます。","id":"Seorang anak laki-laki kecil sedang bermain di taman.","level":"n5","tags":["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -16673,7 +24561,7 @@ window.vocabN5 = [
   nuance: 'The most common and polite way to say \'woman\' or adult female. Literally means \'person of female (gender)\'.',
   conj_type: null,
   examples: [
-      { jp: 'あの女の人は誰ですか。', en: 'Who\'s that woman?', id: '[TBD]' },{"jp":"あそこで本を読んでいる女の人は誰ですか。","id":"Siapa wanita yang sedang membaca buku di sana itu?","level":"n5","tags":["kehidupan-sehari"]}],
+      {"jp":"あそこで本を読んでいる女の人は誰ですか。","id":"Siapa wanita yang sedang membaca buku di sana itu?","level":"n5","tags":["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -16701,7 +24589,7 @@ window.vocabN5 = [
   nuance: 'Refers to a female child or young girl. Just like its male counterpart, it strictly denotes young age and shouldn\'t be used for adult women.',
   conj_type: null,
   examples: [
-      { jp: '僕は女の子が好きです。', en: 'I like girls.', id: '[TBD]' },{"jp":"その女の子は赤い帽子をかぶっています。","id":"Anak perempuan itu memakai topi merah.","level":"n5","tags":["kehidupan-sehari"]}],
+      {"jp":"その女の子は赤い帽子をかぶっています。","id":"Anak perempuan itu memakai topi merah.","level":"n5","tags":["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -16729,7 +24617,7 @@ window.vocabN5 = [
   nuance: 'Can mean \'she\' as a third-person pronoun, but is very frequently used to mean \'girlfriend\' depending on the context. Use with care to avoid romantic misunderstandings.',
   conj_type: null,
   examples: [
-      { jp: '彼女は泣いた。', en: 'She cried.', id: '[TBD]' },{"jp":"彼女はとても親切で優しい人です。","id":"Dia adalah orang yang sangat ramah dan baik hati.","level":"n5","tags":["pertemanan"]}],
+      {"jp":"彼女はとても親切で優しい人です。","id":"Dia adalah orang yang sangat ramah dan baik hati.","level":"n5","tags":["pertemanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -16758,7 +24646,7 @@ window.vocabN5 = [
   nuance: 'Refers to children or one\'s own child, generally implying youth or immaturity. The word is often written with hiragana for \'domo\' to soften its appearance.',
   conj_type: null,
   examples: [
-      { jp: '子ども扱いするなよ。', en: 'I\'m not a kid.', id: '[TBD]' },{"jp":"子どもたちが庭で元気に遊んでいます。","id":"Anak-anak sedang bermain dengan ceria di halaman.","level":"n5","tags":["keluarga","kehidupan-sehari"]}],
+      {"jp":"子どもたちが庭で元気に遊んでいます。","id":"Anak-anak sedang bermain dengan ceria di halaman.","level":"n5","tags":["keluarga","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -16787,7 +24675,7 @@ window.vocabN5 = [
   nuance: '友だち = teman (umum). Lebih kasual: 友 (tomo). Lebih formal: 友人 (yuujin).',
   conj_type: null,
   examples: [
-      { jp: '彼らには友だちがたくさんいる。', en: 'They have many friends.', id: '[TBD]' },{"jp": "友だちと映画を見に行きました。", "id": "Saya pergi nonton film bersama teman.", "level": "n5", "tags": ["hubungan"]}],
+      {"jp": "友だちと映画を見に行きました。", "id": "Saya pergi nonton film bersama teman.", "level": "n5", "tags": ["hubungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -16816,7 +24704,7 @@ window.vocabN5 = [
   nuance: 'A polite term for \'father\', typically used to address one\'s own father or when speaking about someone else\'s. Use \'父\' (chichi) when humbly talking about your father to outsiders.',
   conj_type: null,
   examples: [
-      { jp: 'お父さんはお元気ですか？', en: 'How\'s your dad?', id: '[TBD]' },{"jp":"あなたのお父さんの仕事は何ですか。","id":"Apa pekerjaan ayah Anda?","level":"n5","tags":["keluarga","pekerjaan"]}],
+      {"jp":"あなたのお父さんの仕事は何ですか。","id":"Apa pekerjaan ayah Anda?","level":"n5","tags":["keluarga","pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -16847,7 +24735,7 @@ window.vocabN5 = [
   nuance: 'A polite and affectionate term for \'mother\', used to address your own mother or refer to someone else\'s. Humbly refer to your own mother as \'母\' (haha) to others.',
   conj_type: null,
   examples: [
-      { jp: 'お母さんはどこ？', en: 'Where\'s mom?', id: '[TBD]' },{"jp":"お母さんは台所でおいしい料理を作っています。","id":"Ibu sedang membuat masakan enak di dapur.","level":"n5","tags":["keluarga","makanan-minuman"]}],
+      {"jp":"お母さんは台所でおいしい料理を作っています。","id":"Ibu sedang membuat masakan enak di dapur.","level":"n5","tags":["keluarga","makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -16878,7 +24766,7 @@ window.vocabN5 = [
   nuance: 'お名前 (formal, sopan). 名前 (neutral). Sering dipakai: お名前は何ですか。',
   conj_type: null,
   examples: [
-      { jp: '私の名前はトムです。', en: 'My name\'s Tom.', id: '[TBD]' },{"jp": "お名前は何ですか。", "id": "Nama Anda siapa?", "level": "n5", "tags": ["hubungan", "sopan-santun"]}],
+      {"jp": "お名前は何ですか。", "id": "Nama Anda siapa?", "level": "n5", "tags": ["hubungan", "sopan-santun"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -16958,7 +24846,7 @@ window.vocabN5 = [
   nuance: 'The highest and most iconic mountain in Japan. Note that \'山\' is read as \'san\' here, which means mountain, not Mr./Ms.',
   conj_type: null,
   examples: [
-      { jp: '私は富士山に登った。', en: 'I climbed Mt. Fuji.', id: '[TBD]' },{"jp":"新幹線から富士山がきれいに見えました。","id":"Gunung Fuji terlihat indah dari Shinkansen.","level":"n5","tags":["alam-lingkungan","kehidupan-sehari"]}],
+      {"jp":"新幹線から富士山がきれいに見えました。","id":"Gunung Fuji terlihat indah dari Shinkansen.","level":"n5","tags":["alam-lingkungan","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -16987,7 +24875,7 @@ window.vocabN5 = [
   nuance: '日本語 = bahasa Jepang. Pola: [国名]+語 untuk bahasa.',
   conj_type: null,
   examples: [
-      { jp: '私は日本語が上手です。', en: 'I\'m good at Japanese.', id: '[TBD]' },{"jp": "日本語を勉強しています。", "id": "Saya sedang belajar bahasa Jepang.", "level": "n5", "tags": ["pendidikan"]}],
+      {"jp": "日本語を勉強しています。", "id": "Saya sedang belajar bahasa Jepang.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -17015,7 +24903,7 @@ window.vocabN5 = [
   nuance: '英語 = bahasa Inggris. 英語ができますか = Bisa berbahasa Inggris?',
   conj_type: null,
   examples: [
-      { jp: '彼は英語を話します。', en: 'He speaks English.', id: '[TBD]' },{"jp": "英語は少しわかります。", "id": "Saya sedikit mengerti bahasa Inggris.", "level": "n5", "tags": ["pendidikan"]}],
+      {"jp": "英語は少しわかります。", "id": "Saya sedikit mengerti bahasa Inggris.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -17043,7 +24931,7 @@ window.vocabN5 = [
   nuance: 'The formal and most common way to say Japan, literally meaning \'sun origin\'. Can be pronounced as \'Nihon\' or the more emphatic \'Nippon\'.',
   conj_type: null,
   examples: [
-      { jp: '私は日本人です。', en: 'I am Japanese.', id: '[TBD]' },{"jp":"日本には桜の木がたくさんあります。","id":"Di Jepang ada banyak pohon sakura.","level":"n5","tags":["alam-lingkungan"]}],
+      {"jp":"日本には桜の木がたくさんあります。","id":"Di Jepang ada banyak pohon sakura.","level":"n5","tags":["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -17096,7 +24984,7 @@ window.vocabN5 = [
   nuance: 'Used to ask the current time or the time an event occurs. Combines \'何\' (what) and \'時\' (hour/o\'clock).',
   conj_type: null,
   examples: [
-      { jp: '何時ごろ？', en: 'About what time?', id: '[TBD]' },{"jp":"明日の会議は何時から始まりますか。","id":"Rapat besok dimulai dari jam berapa?","level":"n5","tags":["waktu","pekerjaan"]}],
+      {"jp":"明日の会議は何時から始まりますか。","id":"Rapat besok dimulai dari jam berapa?","level":"n5","tags":["waktu","pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -17126,7 +25014,7 @@ window.vocabN5 = [
   nuance: 'Asks for a duration of time in hours rather than a specific clock time. The suffix \'間\' (kan) indicates an interval or period.',
   conj_type: null,
   examples: [
-      { jp: 'あと何時間で到着しますか。', en: 'When will we arrive?', id: '[TBD]' },{"jp":"毎日、何時間日本語を勉強しますか。","id":"Setiap hari Anda belajar bahasa Jepang berapa jam?","level":"n5","tags":["pendidikan","waktu"]}],
+      {"jp":"毎日、何時間日本語を勉強しますか。","id":"Setiap hari Anda belajar bahasa Jepang berapa jam?","level":"n5","tags":["pendidikan","waktu"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -17154,7 +25042,7 @@ window.vocabN5 = [
   nuance: 'The fundamental question word for \'what\'. It is pronounced \'nani\' by itself or before certain particles, but shifts to \'nan\' before \'desu\', \'no\', or counters.',
   conj_type: null,
   examples: [
-      { jp: '何てことだ！', en: 'Oh no!', id: '[TBD]' },{"jp":"朝ごはんに何を食べましたか。","id":"Apa yang Anda makan untuk sarapan pagi?","level":"n5","tags":["makanan-minuman","kehidupan-sehari"]}],
+      {"jp":"朝ごはんに何を食べましたか。","id":"Apa yang Anda makan untuk sarapan pagi?","level":"n5","tags":["makanan-minuman","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -17183,7 +25071,7 @@ window.vocabN5 = [
   nuance: 'Used to ask \'what language\' someone speaks or is written. Formed by adding the language suffix \'語\' (go) to \'what\'.',
   conj_type: null,
   examples: [
-      { jp: 'それって、何語？', en: 'What language is it?', id: '[TBD]' },{"jp":"インドネシアでは何語を話しますか。","id":"Di Indonesia Anda berbicara bahasa apa?","level":"n5","tags":["pendidikan","umum"]}],
+      {"jp":"インドネシアでは何語を話しますか。","id":"Di Indonesia Anda berbicara bahasa apa?","level":"n5","tags":["pendidikan","umum"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -17210,7 +25098,7 @@ window.vocabN5 = [
   nuance: 'Specifies nine o\'clock. Pay attention to the pronunciation \'ku-ji\' instead of \'kyuu-ji\', which is an important exception for time telling.',
   conj_type: null,
   examples: [
-      { jp: '学校は九時から始まります。', en: 'School begins at 9.', id: '[TBD]' },{"jp":"学校の授業は朝九時に始まります。","id":"Pelajaran sekolah dimulai pada pukul sembilan pagi.","level":"n5","tags":["pendidikan","waktu"]}],
+      {"jp":"学校の授業は朝九時に始まります。","id":"Pelajaran sekolah dimulai pada pukul sembilan pagi.","level":"n5","tags":["pendidikan","waktu"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -17238,7 +25126,7 @@ window.vocabN5 = [
   nuance: 'Represents a duration of four hours. Notably uses \'yo\' instead of \'yon\' or \'shi\' before \'ji\' (time).',
   conj_type: null,
   examples: [
-      { jp: '一日は二十四時間ある。', en: 'A day has twenty-four hours.', id: '[TBD]' },{"jp":"東京から京都まで四時間かかりました。","id":"Dari Tokyo sampai Kyoto memakan waktu empat jam.","level":"n5","tags":["waktu","kehidupan-sehari"]}],
+      {"jp":"東京から京都まで四時間かかりました。","id":"Dari Tokyo sampai Kyoto memakan waktu empat jam.","level":"n5","tags":["waktu","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -17264,7 +25152,7 @@ window.vocabN5 = [
   nuance: '時計 bisa berarti jam tangan (腕時計) atau jam dinding. Konteks menentukan.',
   conj_type: null,
   examples: [
-      { jp: '時計をなくしました。', en: 'I lost my watch.', id: '[TBD]' },{"jp": "この時計は父にもらいました。", "id": "Jam ini saya dapat dari ayah.", "level": "n5", "tags": ["belanja", "keluarga"]}],
+      {"jp": "この時計は父にもらいました。", "id": "Jam ini saya dapat dari ayah.", "level": "n5", "tags": ["belanja", "keluarga"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -17293,7 +25181,7 @@ window.vocabN5 = [
   nuance: 'Denotes five minutes. In Japanese time counting, minutes alternate between \'fun\' and \'pun\', and five takes the unvoiced \'fun\'.',
   conj_type: null,
   examples: [
-      { jp: '二時十五分前です。', en: 'It\'s a quarter to two.', id: '[TBD]' },{"jp":"駅から家まで歩いて五分です。","id":"Dari stasiun ke rumah jalan kaki lima menit.","level":"n5","tags":["waktu","kehidupan-sehari"]}],
+      {"jp":"駅から家まで歩いて五分です。","id":"Dari stasiun ke rumah jalan kaki lima menit.","level":"n5","tags":["waktu","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -17321,7 +25209,7 @@ window.vocabN5 = [
   nuance: 'Means thirty minutes, often used interchangeably with \'半\' (han, half). Notice it takes the strong \'pun\' sound.',
   conj_type: null,
   examples: [
-      { jp: '七時三十分だった。', en: 'It was seven thirty.', id: '[TBD]' },{"jp":"三十分休んでからまた勉強しましょう。","id":"Mari istirahat tiga puluh menit lalu belajar lagi.","level":"n5","tags":["waktu","pendidikan"]}],
+      {"jp":"三十分休んでからまた勉強しましょう。","id":"Mari istirahat tiga puluh menit lalu belajar lagi.","level":"n5","tags":["waktu","pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -17349,7 +25237,7 @@ window.vocabN5 = [
   nuance: 'Literally means \'half part\' and is used to describe half of a physical object or quantity. Don\'t confuse it with \'半\' (han) which is used for time.',
   conj_type: null,
   examples: [
-      { jp: '半分よこせ。', en: 'Give me half.', id: '[TBD]' },{"jp":"りんごを半分に切って食べました。","id":"Saya memotong apel menjadi setengah bagian lalu memakannya.","level":"n5","tags":["makanan-minuman"]}],
+      {"jp":"りんごを半分に切って食べました。","id":"Saya memotong apel menjadi setengah bagian lalu memakannya.","level":"n5","tags":["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -17376,7 +25264,7 @@ window.vocabN5 = [
   nuance: 'Specifies a duration of one full week. The double consonant in \'isshūkan\' implies an interval \'間\' of one week \'一週\'.',
   conj_type: null,
   examples: [
-      { jp: '一週間休んでいました。', en: 'I took a week off.', id: '[TBD]' },{"jp":"一週間に二回テニスをします。","id":"Saya bermain tenis dua kali dalam seminggu.","level":"n5","tags":["kehidupan-sehari","waktu"]}],
+      {"jp":"一週間に二回テニスをします。","id":"Saya bermain tenis dua kali dalam seminggu.","level":"n5","tags":["kehidupan-sehari","waktu"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -17405,7 +25293,7 @@ window.vocabN5 = [
   nuance: 'Used to describe a physical or temporal space existing \'between A and B\'. \'間\' (aida) implies a distinct gap or relationship connecting two points.',
   conj_type: null,
   examples: [
-      { jp: '彼は長いあいだ病気です。', en: 'He has been sick for a long time.', id: '[TBD]' },{"jp":"机とベッドの間にゴミ箱があります。","id":"Ada tempat sampah di antara meja dan tempat tidur.","level":"n5","tags":["ruang-arah","kehidupan-sehari"]}],
+      {"jp":"机とベッドの間にゴミ箱があります。","id":"Ada tempat sampah di antara meja dan tempat tidur.","level":"n5","tags":["ruang-arah","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -17435,7 +25323,7 @@ window.vocabN5 = [
   nuance: 'An everyday expression meaning \'the other day\' or \'recently\'. It refers to an unspecified time in the near past, rather than a physical space.',
   conj_type: null,
   examples: [
-      { jp: 'いとこの間柄です。', en: 'We are cousins.', id: '[TBD]' },{"jp":"この間、デパートで田中さんに会いました。","id":"Tempo hari, saya bertemu Tanaka-san di toserba.","level":"n5","tags":["pertemanan","waktu"]}],
+      {"jp":"この間、デパートで田中さんに会いました。","id":"Tempo hari, saya bertemu Tanaka-san di toserba.","level":"n5","tags":["pertemanan","waktu"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -17465,7 +25353,7 @@ window.vocabN5 = [
   nuance: 'Means \'half past seven\' or 7:30. The character \'半\' (han) conveniently replaces \'三十分\' (sanjuppun) when telling time.',
   conj_type: null,
   examples: [
-      { jp: '私は七時半に起きます。', en: 'I get up at 7:30.', id: '[TBD]' },{"jp":"毎朝七時半に朝ごはんを食べます。","id":"Setiap pagi pukul setengah delapan saya sarapan.","level":"n5","tags":["makanan-minuman","waktu"]}],
+      {"jp":"毎朝七時半に朝ごはんを食べます。","id":"Setiap pagi pukul setengah delapan saya sarapan.","level":"n5","tags":["makanan-minuman","waktu"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -17516,7 +25404,7 @@ window.vocabN5 = [
   nuance: '午後 = PM (setelah jam 12 siang). Lawan: 午前. Formal: 午後3時.',
   conj_type: null,
   examples: [
-      { jp: '午後二時です。', en: 'It\'s 2:00 p.m.', id: '[TBD]' },{"jp": "午後から雨が降るそうです。", "id": "Katanya sore nanti akan hujan.", "level": "n5", "tags": ["alam-lingkungan"]}],
+      {"jp": "午後から雨が降るそうです。", "id": "Katanya sore nanti akan hujan.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -17545,7 +25433,7 @@ window.vocabN5 = [
   nuance: '午前 = AM (sebelum jam 12 siang). 午前中に = di pagi hari / sebelum siang.',
   conj_type: null,
   examples: [
-      { jp: '彼女は午前７時に起きる。', en: 'She gets up at seven.', id: '[TBD]' },{"jp": "午前中に宿題を終わらせました。", "id": "Saya menyelesaikan PR sebelum siang.", "level": "n5", "tags": ["pendidikan"]}],
+      {"jp": "午前中に宿題を終わらせました。", "id": "Saya menyelesaikan PR sebelum siang.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -17573,7 +25461,7 @@ window.vocabN5 = [
   nuance: 'Can mean \'in front of\' physically or \'before\' temporally. Context dictates whether it refers to space or time.',
   conj_type: null,
   examples: [
-      { jp: '前述参照のこと。', en: 'See above.', id: '[TBD]' },{"jp":"駅の前で友達を待っています。","id":"Saya sedang menunggu teman di depan stasiun.","level":"n5","tags":["ruang-arah","pertemanan"]}],
+      {"jp":"駅の前で友達を待っています。","id":"Saya sedang menunggu teman di depan stasiun.","level":"n5","tags":["ruang-arah","pertemanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -17603,7 +25491,7 @@ window.vocabN5 = [
   nuance: 'Specifically means \'later\' or \'after an action\' in a temporal sense. It usually follows a verb in the past tense or a noun + \'no\'.',
   conj_type: null,
   examples: [
-      { jp: '後でやって。', en: 'Do it later.', id: '[TBD]' },{"jp":"ご飯を食べた後で、薬を飲みます。","id":"Setelah makan nasi, saya meminum obat.","level":"n5","tags":["kesehatan","waktu"]}],
+      {"jp":"ご飯を食べた後で、薬を飲みます。","id":"Setelah makan nasi, saya meminum obat.","level":"n5","tags":["kesehatan","waktu"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -17630,7 +25518,7 @@ window.vocabN5 = [
   nuance: 'Strictly refers to the physical space \'behind\' or to the \'back\' of something. Unlike \'後\' (ato), it is rarely used for time.',
   conj_type: null,
   examples: [
-      { jp: '後ろを見ろ。', en: 'Look back!', id: '[TBD]' },{"jp":"私の後ろに山田さんが座っています。","id":"Yamada-san duduk di belakang saya.","level":"n5","tags":["ruang-arah","kehidupan-sehari"]}],
+      {"jp":"私の後ろに山田さんが座っています。","id":"Yamada-san duduk di belakang saya.","level":"n5","tags":["ruang-arah","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -17659,7 +25547,7 @@ window.vocabN5 = [
   nuance: 'Refers to the current calendar month. It pairs \'今\' (now) with \'月\' (month), commonly used in scheduling and deadlines.',
   conj_type: null,
   examples: [
-      { jp: '今月いっぱいここにいます。', en: 'I\'ll be here all month.', id: '[TBD]' },{"jp":"今月はとても仕事が忙しいです。","id":"Bulan ini pekerjaan sangat sibuk.","level":"n5","tags":["pekerjaan","waktu"]}],
+      {"jp":"今月はとても仕事が忙しいです。","id":"Bulan ini pekerjaan sangat sibuk.","level":"n5","tags":["pekerjaan","waktu"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -17687,7 +25575,7 @@ window.vocabN5 = [
   nuance: 'Means the current week, running from Monday to Sunday. Widely used for making short-term plans or describing recent ongoing events.',
   conj_type: null,
   examples: [
-      { jp: '今週、休みなんだ。', en: 'I\'m off this week.', id: '[TBD]' },{"jp":"今週の日曜日に映画を見に行きます。","id":"Minggu ini pada hari Minggu saya akan pergi menonton film.","level":"n5","tags":["waktu","kehidupan-sehari"]}],
+      {"jp":"今週の日曜日に映画を見に行きます。","id":"Minggu ini pada hari Minggu saya akan pergi menonton film.","level":"n5","tags":["waktu","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -17715,7 +25603,7 @@ window.vocabN5 = [
   nuance: '今 (いま) = sekarang (momen ini). Beda: 現在 (genzai) = saat ini (lebih formal).',
   conj_type: null,
   examples: [
-      { jp: '今すぐそれをやりなさい。', en: 'Do it now.', id: '[TBD]' },{"jp": "今, 何時ですか。", "id": "Sekarang jam berapa?", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "今, 何時ですか。", "id": "Sekarang jam berapa?", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -17743,7 +25631,7 @@ window.vocabN5 = [
   nuance: 'Refers to the current year. Note its unique reading \'kotoshi\' which does not follow the standard on-yomi for \'今\' and \'年\'.',
   conj_type: null,
   examples: [
-      { jp: '今年の冬は暖かい。', en: 'This winter is warm.', id: '[TBD]' },{"jp":"今年、日本語の試験を受けます。","id":"Tahun ini saya akan mengikuti ujian bahasa Jepang.","level":"n5","tags":["pendidikan","waktu"]}],
+      {"jp":"今年、日本語の試験を受けます。","id":"Tahun ini saya akan mengikuti ujian bahasa Jepang.","level":"n5","tags":["pendidikan","waktu"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -17771,7 +25659,7 @@ window.vocabN5 = [
   nuance: 'Means \'this morning\' and refers to the morning of the current day. It has a special reading \'kesa\' instead of a literal character-by-character pronunciation.',
   conj_type: null,
   examples: [
-      { jp: 'トムは今朝亡くなりました。', en: 'Tom died this morning.', id: '[TBD]' },{"jp":"今朝はパンとコーヒーを食べました。","id":"Pagi ini saya sarapan roti dan kopi.","level":"n5","tags":["makanan-minuman","waktu"]}],
+      {"jp":"今朝はパンとコーヒーを食べました。","id":"Pagi ini saya sarapan roti dan kopi.","level":"n5","tags":["makanan-minuman","waktu"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -17799,7 +25687,7 @@ window.vocabN5 = [
   nuance: 'Means \'last week\', representing the seven days prior to the current week. The character \'先\' indicates what has preceded or gone before.',
   conj_type: null,
   examples: [
-      { jp: '先週、トムに会ったよ。', en: 'I met Tom last week.', id: '[TBD]' },{"jp":"先週、新しい服を買いました。","id":"Minggu lalu, saya membeli pakaian baru.","level":"n5","tags":["belanja","waktu"]}],
+      {"jp":"先週、新しい服を買いました。","id":"Minggu lalu, saya membeli pakaian baru.","level":"n5","tags":["belanja","waktu"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -17827,7 +25715,7 @@ window.vocabN5 = [
   nuance: 'Means \'next week\'. The kanji \'来\' implies the week that is \'coming\' in the future.',
   conj_type: null,
   examples: [
-      { jp: 'また来週！', en: 'See you next week!', id: '[TBD]' },{"jp":"来週の月曜日にテストがあります。","id":"Ada ujian pada hari Senin minggu depan.","level":"n5","tags":["pendidikan","waktu"]}],
+      {"jp":"来週の月曜日にテストがあります。","id":"Ada ujian pada hari Senin minggu depan.","level":"n5","tags":["pendidikan","waktu"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -17855,7 +25743,7 @@ window.vocabN5 = [
   nuance: 'Means \'one year\', whether referring to a specific year or a duration. It is straightforwardly \'ichi\' (one) and \'nen\' (year).',
   conj_type: null,
   examples: [
-      { jp: '一年生です。', en: 'I\'m a freshman.', id: '[TBD]' },{"jp":"一年は十二か月あります。","id":"Satu tahun terdiri dari dua belas bulan.","level":"n5","tags":["waktu","umum"]}],
+      {"jp":"一年は十二か月あります。","id":"Satu tahun terdiri dari dua belas bulan.","level":"n5","tags":["waktu","umum"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -17884,7 +25772,7 @@ window.vocabN5 = [
   nuance: 'Refers specifically to \'last year\'. Note that it uses \'去\' (past/leave) instead of \'先\' like other time words (e.g., 先月).',
   conj_type: null,
   examples: [
-      { jp: '私は去年退職しました。', en: 'I retired last year.', id: '[TBD]' },{"jp":"去年、日本へ旅行に行きました。","id":"Tahun lalu, saya pergi berlibur ke Jepang.","level":"n5","tags":["waktu","kehidupan-sehari"]}],
+      {"jp":"去年、日本へ旅行に行きました。","id":"Tahun lalu, saya pergi berlibur ke Jepang.","level":"n5","tags":["waktu","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -17912,7 +25800,7 @@ window.vocabN5 = [
   nuance: 'Means \'half a year\' or six months. It doesn\'t require the interval character \'間\' (kan) to express duration.',
   conj_type: null,
   examples: [
-      { jp: '部屋代は半年分支払い済みだ。', en: 'The rent is paid for six months.', id: '[TBD]' },{"jp":"半年間、日本語を勉強しています。","id":"Saya sudah belajar bahasa Jepang selama setengah tahun.","level":"n5","tags":["pendidikan","waktu"]}],
+      {"jp":"半年間、日本語を勉強しています。","id":"Saya sudah belajar bahasa Jepang selama setengah tahun.","level":"n5","tags":["pendidikan","waktu"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -17940,7 +25828,7 @@ window.vocabN5 = [
   nuance: '毎年 = setiap tahun. Pola: 毎+時間. 毎日/毎週/毎月/毎年.',
   conj_type: null,
   examples: [
-      { jp: '毎年行きます。', en: 'I go every year.', id: '[TBD]' },{"jp": "毎年, 夏に海へ行きます。", "id": "Setiap tahun saya pergi ke pantai di musim panas.", "level": "n5", "tags": ["alam-lingkungan", "perjalanan"]}],
+      {"jp": "毎年, 夏に海へ行きます。", "id": "Setiap tahun saya pergi ke pantai di musim panas.", "level": "n5", "tags": ["alam-lingkungan", "perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -17968,7 +25856,7 @@ window.vocabN5 = [
   nuance: '毎日 = setiap hari. Paling sering dipakai dari seri 毎〜.',
   conj_type: null,
   examples: [
-      { jp: '私は毎日走ります。', en: 'I jog every day.', id: '[TBD]' },{"jp": "毎日日本語を練習しています。", "id": "Saya berlatih bahasa Jepang setiap hari.", "level": "n5", "tags": ["pendidikan"]}],
+      {"jp": "毎日日本語を練習しています。", "id": "Saya berlatih bahasa Jepang setiap hari.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -17996,7 +25884,7 @@ window.vocabN5 = [
   nuance: '毎月 = setiap bulan. Sering dalam konteks pembayaran/tagihan.',
   conj_type: null,
   examples: [
-      { jp: '毎月給料をもらいます。', en: 'I get paid every month.', id: '[TBD]' },{"jp": "毎月, 家賃を払います。", "id": "Saya membayar sewa setiap bulan.", "level": "n5", "tags": ["belanja"]}],
+      {"jp": "毎月, 家賃を払います。", "id": "Saya membayar sewa setiap bulan.", "level": "n5", "tags": ["belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -18024,7 +25912,7 @@ window.vocabN5 = [
   nuance: 'Refers to elementary school, which in Japan spans six years. Combines \'small\' with \'school\' to indicate primary education.',
   conj_type: null,
   examples: [
-      { jp: 'あなたは小学校に通っているの？', en: 'Do you go to an elementary school?', id: '[TBD]' },{"jp":"弟は近くの小学校に通っています。","id":"Adik laki-laki saya bersekolah di SD terdekat.","level":"n5","tags":["pendidikan","keluarga"]}],
+      {"jp":"弟は近くの小学校に通っています。","id":"Adik laki-laki saya bersekolah di SD terdekat.","level":"n5","tags":["pendidikan","keluarga"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -18052,7 +25940,7 @@ window.vocabN5 = [
   nuance: 'Means university or college. Literally translates to \'big school\', marking the highest level of standard education.',
   conj_type: null,
   examples: [
-      { jp: '私は大学教授です。', en: 'I\'m a professor.', id: '[TBD]' },{"jp":"兄は東京の大学で経済を学んでいます。","id":"Kakak laki-laki saya kuliah ekonomi di universitas di Tokyo.","level":"n5","tags":["pendidikan","keluarga"]}],
+      {"jp":"兄は東京の大学で経済を学んでいます。","id":"Kakak laki-laki saya kuliah ekonomi di universitas di Tokyo.","level":"n5","tags":["pendidikan","keluarga"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -18083,7 +25971,7 @@ window.vocabN5 = [
   nuance: 'An abbreviation for \'高等学校\' (koutougakkou), meaning senior high school. In Japan, this covers three years of non-compulsory education before university.',
   conj_type: null,
   examples: [
-      { jp: '私は高校2年生だ。', en: 'I\'m a junior.', id: '[TBD]' },{"jp":"高校の時、サッカー部にいました。","id":"Saat SMA, saya masuk klub sepak bola.","level":"n5","tags":["pendidikan"]}],
+      {"jp":"高校の時、サッカー部にいました。","id":"Saat SMA, saya masuk klub sepak bola.","level":"n5","tags":["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -18112,7 +26000,7 @@ window.vocabN5 = [
   nuance: '新聞を読む = membaca koran. 新聞社 = perusahaan surat kabar.',
   conj_type: null,
   examples: [
-      { jp: '新聞を燃やした。', en: 'I burned the paper.', id: '[TBD]' },{"jp": "毎朝新聞を読みます。", "id": "Setiap pagi saya membaca koran.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "毎朝新聞を読みます。", "id": "Setiap pagi saya membaca koran.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -18140,7 +26028,7 @@ window.vocabN5 = [
   nuance: '社長 = direktur/presiden perusahaan. Keigo untuk menyapa: 社長, 〜。',
   conj_type: null,
   examples: [
-      { jp: '社長はどこですか。', en: 'Where\'s the boss?', id: '[TBD]' },{"jp": "社長は今会議中です。", "id": "Direktur sedang rapat sekarang.", "level": "n5", "tags": ["pekerjaan"]}],
+      {"jp": "社長は今会議中です。", "id": "Direktur sedang rapat sekarang.", "level": "n5", "tags": ["pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -18168,7 +26056,7 @@ window.vocabN5 = [
   nuance: '円 = yen (mata uang) DAN bulat/lingkaran. Beda kanji: 円 (yen) vs 丸 (bulat).',
   conj_type: null,
   examples: [
-      { jp: '５０円です。', en: 'It\'s 50 yen.', id: '[TBD]' },{"jp": "これは千円です。", "id": "Ini seribu yen.", "level": "n5", "tags": ["belanja"]}],
+      {"jp": "これは千円です。", "id": "Ini seribu yen.", "level": "n5", "tags": ["belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -18199,7 +26087,7 @@ window.vocabN5 = [
   nuance: 'Refers to a school principal or headmaster. Combines \'school\' (校) with \'chief/head\' (長).',
   conj_type: null,
   examples: [
-      { jp: 'あれはきっと校長先生だ。', en: 'He must be the principal.', id: '[TBD]' },{"jp":"校長先生が朝礼で話をしました。","id":"Bapak kepala sekolah berpidato di apel pagi.","level":"n5","tags":["pendidikan"]}],
+      {"jp":"校長先生が朝礼で話をしました。","id":"Bapak kepala sekolah berpidato di apel pagi.","level":"n5","tags":["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -18227,7 +26115,7 @@ window.vocabN5 = [
   nuance: '社員 = karyawan tetap. Berbeda dengan アルバイト (part-time) dan 派遣社員.',
   conj_type: null,
   examples: [
-      { jp: '私は会社員です。', en: 'I\'m an office worker.', id: '[TBD]' },{"jp": "あの会社の社員は三百人います。", "id": "Karyawan perusahaan itu ada 300 orang.", "level": "n5", "tags": ["pekerjaan"]}],
+      {"jp": "あの会社の社員は三百人います。", "id": "Karyawan perusahaan itu ada 300 orang.", "level": "n5", "tags": ["pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -18256,7 +26144,7 @@ window.vocabN5 = [
   nuance: 'Refers specifically to grades 7-9 in the Japanese education system. Note that Japanese middle schools usually have clubs and strict uniform rules.',
   conj_type: null,
   examples: [
-      { jp: '中学校は家から遠かった？', en: 'Was your junior high school far from your home?', id: '[TBD]' },{"jp":"妹は今年から中学校に入りました。","id":"Adik perempuan saya masuk SMP mulai tahun ini.","level":"n5","tags":["pendidikan","keluarga"]}],
+      {"jp":"妹は今年から中学校に入りました。","id":"Adik perempuan saya masuk SMP mulai tahun ini.","level":"n5","tags":["pendidikan","keluarga"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -18284,7 +26172,7 @@ window.vocabN5 = [
   nuance: 'Emphasizes that an action or state continued from morning until night without interruption. Often paired with verbs expressing continuous action.',
   conj_type: null,
   examples: [
-      { jp: '彼は一日中眠った。', en: 'He slept all day.', id: '[TBD]' },{"jp":"雨が降っていたので、一日中家で本を読みました。","id":"Karena hujan turun, sepanjang hari saya membaca buku di rumah.","level":"n5","tags":["kehidupan-sehari","waktu"]}],
+      {"jp":"雨が降っていたので、一日中家で本を読みました。","id":"Karena hujan turun, sepanjang hari saya membaca buku di rumah.","level":"n5","tags":["kehidupan-sehari","waktu"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -18313,7 +26201,7 @@ window.vocabN5 = [
   nuance: 'Lawan kata: 外 (outside)',
   conj_type: null,
   examples: [
-      { jp: '中に入れてよ。', en: 'Let me in.', id: '[TBD]' },{"jp": "バッグの中に財布があります。", "id": "Di dalam tas ada dompet.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "バッグの中に財布があります。", "id": "Di dalam tas ada dompet.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -18342,7 +26230,7 @@ window.vocabN5 = [
   nuance: 'Literally \'mouth,\' but frequently used to mean an entrance or exit in physical spaces, or even a \'job opening.\'',
   conj_type: null,
   examples: [
-      { jp: '利口だね。', en: 'He\'s smart.', id: '[TBD]' },{"jp":"薬を飲むときは、口を大きく開けてください。","id":"Saat minum obat, tolong buka mulut lebar-lebar.","level":"n5","tags":["kesehatan"]}],
+      {"jp":"薬を飲むときは、口を大きく開けてください。","id":"Saat minum obat, tolong buka mulut lebar-lebar.","level":"n5","tags":["kesehatan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -18370,7 +26258,7 @@ window.vocabN5 = [
   nuance: 'Lawan kata: 出口 exit',
   conj_type: null,
   examples: [
-      { jp: '入り口はふさがれていた。', en: 'The entrance was blocked.', id: '[TBD]' },{"jp":"デパートの入り口で待ち合わせをしましょう。","id":"Mari kita janjian bertemu di pintu masuk toserba.","level":"n5","tags":["ruang-arah","pertemanan"]}],
+      {"jp":"デパートの入り口で待ち合わせをしましょう。","id":"Mari kita janjian bertemu di pintu masuk toserba.","level":"n5","tags":["ruang-arah","pertemanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -18399,7 +26287,7 @@ window.vocabN5 = [
   nuance: 'The capital city of Japan, literally meaning \'Eastern Capital.\' Often used metonymically for the Japanese government or urban center.',
   conj_type: null,
   examples: [
-      { jp: '東京に住んでいます。', en: 'I live in Tokyo.', id: '[TBD]' },{"jp":"東京は人が多くてにぎやかな町です。","id":"Tokyo adalah kota yang ramai dan banyak orang.","level":"n5","tags":["kehidupan-sehari"]}],
+      {"jp":"東京は人が多くてにぎやかな町です。","id":"Tokyo adalah kota yang ramai dan banyak orang.","level":"n5","tags":["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -18428,7 +26316,7 @@ window.vocabN5 = [
   nuance: 'The cardinal direction where the sun rises. Used extensively in place names and geographical terms.',
   conj_type: null,
   examples: [
-      { jp: '東京に住んでいます。', en: 'I live in Tokyo.', id: '[TBD]' },{"jp":"太陽は東から昇ります。","id":"Matahari terbit dari sebelah timur.","level":"n5","tags":["alam-lingkungan","ruang-arah"]}],
+      {"jp":"太陽は東から昇ります。","id":"Matahari terbit dari sebelah timur.","level":"n5","tags":["alam-lingkungan","ruang-arah"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -18484,7 +26372,7 @@ window.vocabN5 = [
   nuance: 'A broad cultural and geographical term referring to Western countries (Europe and the Americas), contrasting with 東洋 (the East).',
   conj_type: null,
   examples: [
-      { jp: '大西洋を飛行機で横断した。', en: 'We flew across the Atlantic.', id: '[TBD]' },{"jp":"美術館で西洋の絵画を見ました。","id":"Saya melihat lukisan Barat di museum seni.","level":"n5","tags":["pendidikan","umum"]}],
+      {"jp":"美術館で西洋の絵画を見ました。","id":"Saya melihat lukisan Barat di museum seni.","level":"n5","tags":["pendidikan","umum"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -18512,7 +26400,7 @@ window.vocabN5 = [
   nuance: 'The cardinal direction where the sun sets. Frequently found in regional names like Kansai (関西) denoting western Japan.',
   conj_type: null,
   examples: [
-      { jp: '私たちは、西へ行く。', en: 'We\'re going west.', id: '[TBD]' },{"jp":"夕方になると、西の空が赤くなります。","id":"Ketika menjelang sore, langit barat berubah menjadi merah.","level":"n5","tags":["alam-lingkungan","ruang-arah"]}],
+      {"jp":"夕方になると、西の空が赤くなります。","id":"Ketika menjelang sore, langit barat berubah menjadi merah.","level":"n5","tags":["alam-lingkungan","ruang-arah"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -18567,7 +26455,7 @@ window.vocabN5 = [
   nuance: 'The southern cardinal direction. In Japan, southern-facing rooms (南向き) are highly valued for getting good sunlight.',
   conj_type: null,
   examples: [
-      { jp: '南アフリカは遠い。', en: 'South Africa is far away.', id: '[TBD]' },{"jp":"南の島へ旅行に行きました。","id":"Saya pergi berlibur ke pulau di sebelah selatan.","level":"n5","tags":["ruang-arah","kehidupan-sehari"]}],
+      {"jp":"南の島へ旅行に行きました。","id":"Saya pergi berlibur ke pulau di sebelah selatan.","level":"n5","tags":["ruang-arah","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -18622,7 +26510,7 @@ window.vocabN5 = [
   nuance: 'The northernmost main island of Japan, famous for snow, dairy, and vast nature. Notice it uses the suffix \'-dou\' (circuit/region) rather than \'-ken\' (prefecture).',
   conj_type: null,
   examples: [
-      { jp: '彼は北海道に行ってしまった。', en: 'He has gone to Hokkaido.', id: '[TBD]' },{"jp":"冬の北海道は雪がたくさん降って寒いです。","id":"Di Hokkaido musim dingin salju turun banyak dan dingin.","level":"n5","tags":["alam-lingkungan","kehidupan-sehari"]}],
+      {"jp":"冬の北海道は雪がたくさん降って寒いです。","id":"Di Hokkaido musim dingin salju turun banyak dan dingin.","level":"n5","tags":["alam-lingkungan","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -18650,7 +26538,7 @@ window.vocabN5 = [
   nuance: 'The northern cardinal direction. Often associated with colder regions.',
   conj_type: null,
   examples: [
-      { jp: '我々は真っすぐ北へ進んだ。', en: 'We went due north.', id: '[TBD]' },{"jp":"この部屋の窓は北を向いています。","id":"Jendela kamar ini menghadap ke arah utara.","level":"n5","tags":["ruang-arah","kehidupan-sehari"]}],
+      {"jp":"この部屋の窓は北を向いています。","id":"Jendela kamar ini menghadap ke arah utara.","level":"n5","tags":["ruang-arah","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -18705,7 +26593,7 @@ window.vocabN5 = [
   nuance: '上 (うえ) = atas/di atas. Juga: 上 (じょう) dalam komposisi: 上手 = pandai.',
   conj_type: null,
   examples: [
-      { jp: 'お手上げだ。', en: 'I give up.', id: '[TBD]' },{"jp": "机の上に本があります。", "id": "Di atas meja ada buku.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "机の上に本があります。", "id": "Di atas meja ada buku.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -18734,7 +26622,7 @@ window.vocabN5 = [
   nuance: 'A general term for outerwear worn over a shirt or blouse. Literally \'upper clothes,\' it covers items from suit jackets to winter coats.',
   conj_type: null,
   examples: [
-      { jp: '彼は上着を着ていなかった。', en: 'He had no coat on.', id: '[TBD]' },{"jp":"寒いので暖かい上着を着ました。","id":"Karena dingin, saya memakai jaket hangat.","level":"n5","tags":["kehidupan-sehari"]}],
+      {"jp":"寒いので暖かい上着を着ました。","id":"Karena dingin, saya memakai jaket hangat.","level":"n5","tags":["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -18764,7 +26652,7 @@ window.vocabN5 = [
   nuance: 'そば/傍 = di samping/dekat. Lebih spesifik dari 近く (chikaku = dekat area).',
   conj_type: null,
   examples: [
-      { jp: '彼らは地下鉄で行きました。', en: 'They went by subway.', id: '[TBD]' },{"jp": "銀行のそばにコンビニがあります。", "id": "Di samping bank ada konbini.", "level": "n5", "tags": ["perjalanan"]}],
+      {"jp": "銀行のそばにコンビニがあります。", "id": "Di samping bank ada konbini.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -18793,7 +26681,7 @@ window.vocabN5 = [
   nuance: '下 (した) = bawah/di bawah. Lawan: 上 (うえ). Juga: 下 (か/げ) dalam komposisi.',
   conj_type: null,
   examples: [
-      { jp: '頭を下げろ！', en: 'Duck!', id: '[TBD]' },{"jp": "いすの下に猫がいます。", "id": "Di bawah kursi ada kucing.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "いすの下に猫がいます。", "id": "Di bawah kursi ada kucing.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -18821,7 +26709,7 @@ window.vocabN5 = [
   nuance: 'Refers to the physical outdoors or external space. Also conceptually used to mean \'outside one\'s in-group\' (soto).',
   conj_type: null,
   examples: [
-      { jp: '外に出ろ。', en: 'Get out.', id: '[TBD]' },{"jp":"外は雨が降っていますから、傘を持って行きます。","id":"Di luar sedang hujan, jadi saya membawa payung.","level":"n5","tags":["alam-lingkungan","kehidupan-sehari"]}],
+      {"jp":"外は雨が降っていますから、傘を持って行きます。","id":"Di luar sedang hujan, jadi saya membawa payung.","level":"n5","tags":["alam-lingkungan","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -18849,7 +26737,7 @@ window.vocabN5 = [
   nuance: '休み = istirahat/libur/cuti. 夏休み = libur musim panas. お休みなさい = selamat tidur.',
   conj_type: null,
   examples: [
-      { jp: 'トムはお休みです。', en: 'Tom is absent.', id: '[TBD]' },{"jp": "明日は休みですか。", "id": "Besok libur?", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "明日は休みですか。", "id": "Besok libur?", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -18878,7 +26766,7 @@ window.vocabN5 = [
   nuance: 'A midday break typically taken for lunch. In Japanese schools and companies, this is usually a strict, designated time period.',
   conj_type: null,
   examples: [
-      { jp: 'お昼休みはいつ？', en: 'When is your lunch break?', id: '[TBD]' },{"jp":"昼休みに同僚とお弁当を食べました。","id":"Saat istirahat siang saya makan bento bersama rekan kerja.","level":"n5","tags":["pekerjaan","makanan-minuman"]}],
+      {"jp":"昼休みに同僚とお弁当を食べました。","id":"Saat istirahat siang saya makan bento bersama rekan kerja.","level":"n5","tags":["pekerjaan","makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -18906,7 +26794,7 @@ window.vocabN5 = [
   nuance: '銀行 = bank (tempat). Berbeda: お金 = uang. 銀行口座 = rekening bank.',
   conj_type: null,
   examples: [
-      { jp: '私は銀行員です。', en: 'I\'m a banker.', id: '[TBD]' },{"jp": "銀行でお金をおろします。", "id": "Saya ambil uang di bank.", "level": "n5", "tags": ["belanja"]}],
+      {"jp": "銀行でお金をおろします。", "id": "Saya ambil uang di bank.", "level": "n5", "tags": ["belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -18934,7 +26822,7 @@ window.vocabN5 = [
   nuance: '辞書 = kamus. 辞書を引く = mencari di kamus (ungkapan khas).',
   conj_type: null,
   examples: [
-      { jp: 'それは辞書だよ。', en: 'It\'s a dictionary.', id: '[TBD]' },{"jp": "わからない言葉は辞書で調べてください。", "id": "Kata yang tidak dimengerti, tolong cari di kamus.", "level": "n5", "tags": ["pendidikan"]}],
+      {"jp": "わからない言葉は辞書で調べてください。", "id": "Kata yang tidak dimengerti, tolong cari di kamus.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -18965,7 +26853,7 @@ window.vocabN5 = [
   nuance: 'Refers to the act of buying goods, most commonly daily necessities or groceries rather than large purchases. Often used with the verb する (to do).',
   conj_type: 'suru',
   examples: [
-      { jp: '午後から買いものに行くけど、一緒にいかがですか？', en: 'I\'m going shopping this afternoon. Would you like to come along?', id: '[TBD]' },{"jp":"日曜日にスーパーへ買いものに行きます。","id":"Pada hari Minggu saya pergi berbelanja ke supermarket.","level":"n5","tags":["belanja","kehidupan-sehari"]}],
+      {"jp":"日曜日にスーパーへ買いものに行きます。","id":"Pada hari Minggu saya pergi berbelanja ke supermarket.","level":"n5","tags":["belanja","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -18994,7 +26882,7 @@ window.vocabN5 = [
   nuance: 'A relative time word that doesn\'t require a particle like に when used as an adverb in a sentence.',
   conj_type: null,
   examples: [
-      { jp: '来月に引っ越す予定です。', en: 'I\'m moving next month.', id: '[TBD]' },{"jp":"来月、新しいアパートに引っ越します。","id":"Bulan depan, saya akan pindah ke apartemen baru.","level":"n5","tags":["waktu","kehidupan-sehari"]}],
+      {"jp":"来月、新しいアパートに引っ越します。","id":"Bulan depan, saya akan pindah ke apartemen baru.","level":"n5","tags":["waktu","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -19023,7 +26911,7 @@ window.vocabN5 = [
   nuance: 'スーパー (スーパーマーケット) = supermarket.',
   conj_type: 'suru',
   examples: [
-      { jp: '今食事中。', en: 'I\'m eating.', id: '[TBD]' },{"jp": "スーパーで野菜を買いました。", "id": "Saya beli sayuran di supermarket.", "level": "n5", "tags": ["belanja", "makanan-minuman"]}],
+      {"jp": "スーパーで野菜を買いました。", "id": "Saya beli sayuran di supermarket.", "level": "n5", "tags": ["belanja", "makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -19052,7 +26940,7 @@ window.vocabN5 = [
   nuance: 'デパート (デパートメントストア) = department store.',
   conj_type: null,
   examples: [
-      { jp: '食堂はどこですか。', en: 'Where\'s the cafeteria?', id: '[TBD]' },{"jp": "誕生日プレゼントをデパートで買いました。", "id": "Saya beli hadiah ulang tahun di department store.", "level": "n5", "tags": ["belanja"]}],
+      {"jp": "誕生日プレゼントをデパートで買いました。", "id": "Saya beli hadiah ulang tahun di department store.", "level": "n5", "tags": ["belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -19079,7 +26967,7 @@ window.vocabN5 = [
   nuance: 'A slightly formal word for food products sold in supermarkets. Compare with \'tabemono,\' which is the general word for things you eat.',
   conj_type: null,
   examples: [
-      { jp: '食料品買わなくちゃ。', en: 'I need to buy some groceries.', id: '[TBD]' },{"jp":"デパートの地下で食料品を買いました。","id":"Saya membeli bahan makanan di lantai bawah tanah toserba.","level":"n5","tags":["belanja","makanan-minuman"]}],
+      {"jp":"デパートの地下で食料品を買いました。","id":"Saya membeli bahan makanan di lantai bawah tanah toserba.","level":"n5","tags":["belanja","makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -19135,7 +27023,7 @@ window.vocabN5 = [
   nuance: 'An everyday word for any kind of drink, literally \'things to drink.\' Often used to offer a guest something to drink.',
   conj_type: null,
   examples: [
-      { jp: '何か飲みものをください。', en: 'Give me something to drink.', id: '[TBD]' },{"jp":"冷たい飲みものを一杯いかがですか。","id":"Bagaimana kalau segelas minuman dingin?","level":"n5","tags":["makanan-minuman"]}],
+      {"jp":"冷たい飲みものを一杯いかがですか。","id":"Bagaimana kalau segelas minuman dingin?","level":"n5","tags":["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -19164,7 +27052,7 @@ window.vocabN5 = [
   nuance: 'Focuses on the back-and-forth exchange of spoken words between two or more people. Used for both language practice and daily chatting.',
   conj_type: 'suru',
   examples: [
-      { jp: '私は彼との会話を楽しんだ。', en: 'I enjoyed talking with him.', id: '[TBD]' },{"jp":"毎日の授業で日本語の会話を練習します。","id":"Setiap hari di kelas saya berlatih percakapan bahasa Jepang.","level":"n5","tags":["pendidikan"]}],
+      {"jp":"毎日の授業で日本語の会話を練習します。","id":"Setiap hari di kelas saya berlatih percakapan bahasa Jepang.","level":"n5","tags":["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -19192,7 +27080,7 @@ window.vocabN5 = [
   nuance: '事務所 = kantor (ruangan/gedung kerja). Berbeda: 会社 = perusahaan (entitas).',
   conj_type: null,
   examples: [
-      { jp: '電気消して。', en: 'Put out the light.', id: '[TBD]' },{"jp": "事務所は三階にあります。", "id": "Kantornya ada di lantai tiga.", "level": "n5", "tags": ["pekerjaan"]}],
+      {"jp": "事務所は三階にあります。", "id": "Kantornya ada di lantai tiga.", "level": "n5", "tags": ["pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -19222,7 +27110,7 @@ window.vocabN5 = [
   nuance: '食べもの = makanan (umum). Berbeda: 料理 (ryouri) = masakan yang dimasak.',
   conj_type: null,
   examples: [
-      { jp: '電話してね。', en: 'Call me.', id: '[TBD]' },{"jp": "好きな食べものは何ですか。", "id": "Makanan favorit kamu apa?", "level": "n5", "tags": ["makanan-minuman"]}],
+      {"jp": "好きな食べものは何ですか。", "id": "Makanan favorit kamu apa?", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -19249,7 +27137,7 @@ window.vocabN5 = [
   nuance: '飲みもの = minuman. 飲みもの何にする？= Mau minum apa?',
   conj_type: null,
   examples: [
-      { jp: 'これは私の自動車です。', en: 'This is my car.', id: '[TBD]' },{"jp": "飲みものはコーヒーにします。", "id": "Untuk minumannya saya pilih kopi.", "level": "n5", "tags": ["makanan-minuman"]}],
+      {"jp": "飲みものはコーヒーにします。", "id": "Untuk minumannya saya pilih kopi.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -19277,7 +27165,7 @@ window.vocabN5 = [
   nuance: 'くだもの (果物) = buah-buahan. 果物屋 (kudamonoya) = toko buah.',
   conj_type: null,
   examples: [
-      { jp: '自転車で通勤しています。', en: 'I bike to work.', id: '[TBD]' },{"jp": "毎日くだものを食べています。", "id": "Saya makan buah setiap hari.", "level": "n5", "tags": ["makanan-minuman", "kesehatan"]}],
+      {"jp": "毎日くだものを食べています。", "id": "Saya makan buah setiap hari.", "level": "n5", "tags": ["makanan-minuman", "kesehatan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -19305,7 +27193,7 @@ window.vocabN5 = [
   nuance: 'りんご = apel. Salah satu contoh paling klasik dalam soal JLPT.',
   conj_type: null,
   examples: [
-      { jp: '両手でその花びんを持ちなさい。', en: 'Hold the vase with both hands.', id: '[TBD]' },{"jp": "一日一個りんごを食べると健康にいいです。", "id": "Makan satu apel sehari itu bagus untuk kesehatan.", "level": "n5", "tags": ["makanan-minuman", "kesehatan"]}],
+      {"jp": "一日一個りんごを食べると健康にいいです。", "id": "Makan satu apel sehari itu bagus untuk kesehatan.", "level": "n5", "tags": ["makanan-minuman", "kesehatan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -19334,7 +27222,7 @@ window.vocabN5 = [
   nuance: 'バナナ = pisang. Dari bahasa Portugis/Inggris "banana".',
   conj_type: 'suru',
   examples: [
-      { jp: 'あのお花見て。', en: 'Look at those flowers.', id: '[TBD]' },{"jp": "バナナは安くておいしいです。", "id": "Pisang itu murah dan enak.", "level": "n5", "tags": ["makanan-minuman", "belanja"]}],
+      {"jp": "バナナは安くておいしいです。", "id": "Pisang itu murah dan enak.", "level": "n5", "tags": ["makanan-minuman", "belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -19362,7 +27250,7 @@ window.vocabN5 = [
   nuance: 'にく (肉) = daging. 牛肉 (gyuuniku) = sapi, 豚肉 (butaniku) = babi, 鶏肉 (toriniku) = ayam.',
   conj_type: null,
   examples: [
-      { jp: '彼らは花火を打ち上げた。', en: 'They set off fireworks.', id: '[TBD]' },{"jp": "このレストランの肉料理はおいしいです。", "id": "Masakan daging di restoran ini enak.", "level": "n5", "tags": ["makanan-minuman"]}],
+      {"jp": "このレストランの肉料理はおいしいです。", "id": "Masakan daging di restoran ini enak.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -19391,7 +27279,7 @@ window.vocabN5 = [
   nuance: '料理 = masakan (yang sudah dimasak) / memasak. 料理する = memasak.',
   conj_type: null,
   examples: [
-      { jp: '病気です。', en: 'I\'m sick.', id: '[TBD]' },{"jp": "日本料理が好きです。", "id": "Saya suka masakan Jepang.", "level": "n5", "tags": ["makanan-minuman"]}],
+      {"jp": "日本料理が好きです。", "id": "Saya suka masakan Jepang.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -19419,7 +27307,7 @@ window.vocabN5 = [
   nuance: 'メニュー = menu restoran. Dari kata Perancis "menu".',
   conj_type: 'na-adj',
   examples: [
-      { jp: '元気です。', en: 'I\'m OK.', id: '[TBD]' },{"jp": "メニューを見せてください。", "id": "Tolong tunjukkan menunya.", "level": "n5", "tags": ["makanan-minuman", "perjalanan"]}],
+      {"jp": "メニューを見せてください。", "id": "Tolong tunjukkan menunya.", "level": "n5", "tags": ["makanan-minuman", "perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -19449,7 +27337,7 @@ window.vocabN5 = [
   nuance: 'The body part for hearing. Also appears in idioms, such as having \'quick ears\' (learning news quickly).',
   conj_type: null,
   examples: [
-      { jp: 'トムは耳が聞こえない。', en: 'Tom\'s deaf.', id: '[TBD]' },{"jp":"昨日から右の耳が少し痛いです。","id":"Sejak kemarin telinga kanan saya terasa agak sakit.","level":"n5","tags":["kesehatan"]}],
+      {"jp":"昨日から右の耳が少し痛いです。","id":"Sejak kemarin telinga kanan saya terasa agak sakit.","level":"n5","tags":["kesehatan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -19478,7 +27366,7 @@ window.vocabN5 = [
   nuance: 'お手洗い = toilet (ekspresi halus). 近くにお手洗いがありますか = Apakah ada toilet di dekat sini?',
   conj_type: null,
   examples: [
-      { jp: 'お手洗いはどこですか。', en: 'Where\'s the bathroom?', id: '[TBD]' },{"jp": "お手洗いはどこですか。", "id": "Di mana toiletnya?", "level": "n5", "tags": ["perjalanan", "sopan-santun"]}],
+      {"jp": "お手洗いはどこですか。", "id": "Di mana toiletnya?", "level": "n5", "tags": ["perjalanan", "sopan-santun"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -19507,7 +27395,7 @@ window.vocabN5 = [
   nuance: 'Can refer to either the foot or the entire leg. The context or specific kanji (足 for foot, 脚 for leg) clarifies which, though 足 is common for both.',
   conj_type: null,
   examples: [
-      { jp: 'トムは足が速い。', en: 'Tom is fast.', id: '[TBD]' },{"jp":"たくさん歩いたので、足が疲れました。","id":"Karena banyak berjalan, kaki saya merasa lelah.","level":"n5","tags":["kesehatan"]}],
+      {"jp":"たくさん歩いたので、足が疲れました。","id":"Karena banyak berjalan, kaki saya merasa lelah.","level":"n5","tags":["kesehatan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -19559,7 +27447,7 @@ window.vocabN5 = [
   nuance: 'Refers to physical strength, but also broadly covers mental ability, academic proficiency, or political power.',
   conj_type: null,
   examples: [
-      { jp: '私たちは努力しております。', en: 'We try.', id: '[TBD]' },{"jp":"重い荷物を運ぶために力が必要です。","id":"Tenaga diperlukan untuk mengangkut barang bawaan berat.","level":"n5","tags":["kehidupan-sehari"]}],
+      {"jp":"重い荷物を運ぶために力が必要です。","id":"Tenaga diperlukan untuk mengangkut barang bawaan berat.","level":"n5","tags":["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -19587,7 +27475,7 @@ window.vocabN5 = [
   nuance: 'Describes someone who naturally possesses great physical strength. Literally someone who \'holds\' power.',
   conj_type: null,
   examples: [
-      { jp: '彼は縁の下の力持ちだ。', en: 'He is an unsung hero.', id: '[TBD]' },{"jp":"彼は力持ちですから、重い箱を一人で持ち上げました。","id":"Karena dia orang kuat, dia mengangkat kotak berat itu sendirian.","level":"n5","tags":["pertemanan","kehidupan-sehari"]}],
+      {"jp":"彼は力持ちですから、重い箱を一人で持ち上げました。","id":"Karena dia orang kuat, dia mengangkat kotak berat itu sendirian.","level":"n5","tags":["pertemanan","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -19616,7 +27504,7 @@ window.vocabN5 = [
   nuance: '医者 = dokter. お医者さん (lebih sopan). 医者に行く = pergi ke dokter.',
   conj_type: null,
   examples: [
-      { jp: '牛肉にしてください。', en: 'Beef, please.', id: '[TBD]' },{"jp": "体の調子が悪いので, 医者に行きます。", "id": "Badan saya tidak enak, jadi pergi ke dokter.", "level": "n5", "tags": ["kesehatan"]}],
+      {"jp": "体の調子が悪いので, 医者に行きます。", "id": "Badan saya tidak enak, jadi pergi ke dokter.", "level": "n5", "tags": ["kesehatan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -19644,7 +27532,7 @@ window.vocabN5 = [
   nuance: '看護師 = perawat (gender-neutral, modern). Dahulu: 看護婦 (perempuan) / 看護士 (laki-laki).',
   conj_type: null,
   examples: [
-      { jp: '私は牛乳を飲みました。', en: 'I drank milk.', id: '[TBD]' },{"jp": "姉は看護師として病院で働いています。", "id": "Kakak perempuan saya bekerja sebagai perawat di rumah sakit.", "level": "n5", "tags": ["kesehatan", "pekerjaan"]}],
+      {"jp": "姉は看護師として病院で働いています。", "id": "Kakak perempuan saya bekerja sebagai perawat di rumah sakit.", "level": "n5", "tags": ["kesehatan", "pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -19672,7 +27560,7 @@ window.vocabN5 = [
   nuance: 'Represents cattle in general (cows, bulls, oxen). Beef is usually called gyuuniku (牛肉) using the on-yomi reading.',
   conj_type: null,
   examples: [
-      { jp: 'それは種牛です。', en: 'It\'s a bull.', id: '[TBD]' },{"jp":"牧場にたくさんの牛がいます。","id":"Ada banyak sapi di peternakan.","level":"n5","tags":["alam-lingkungan"]}],
+      {"jp":"牧場にたくさんの牛がいます。","id":"Ada banyak sapi di peternakan.","level":"n5","tags":["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -19727,7 +27615,7 @@ window.vocabN5 = [
   nuance: '喫茶店 = kafe tradisional Jepang. Lebih tua/klasik dari カフェ (kafe modern).',
   conj_type: null,
   examples: [
-      { jp: '私は喫茶店に入った。', en: 'I entered a coffee shop.', id: '[TBD]' },{"jp": "駅の近くの喫茶店でコーヒーを飲みました。", "id": "Saya minum kopi di kafe dekat stasiun.", "level": "n5", "tags": ["makanan-minuman", "perjalanan"]}],
+      {"jp": "駅の近くの喫茶店でコーヒーを飲みました。", "id": "Saya minum kopi di kafe dekat stasiun.", "level": "n5", "tags": ["makanan-minuman", "perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -19756,7 +27644,7 @@ window.vocabN5 = [
   nuance: '店 (みせ) = toko/warung. Lebih umum dari 店舗 (tentou = outlet resmi).',
   conj_type: null,
   examples: [
-      { jp: 'もう開店してる？', en: 'Is it open yet?', id: '[TBD]' },{"jp": "あの店はいつも混んでいます。", "id": "Toko itu selalu ramai.", "level": "n5", "tags": ["belanja"]}],
+      {"jp": "あの店はいつも混んでいます。", "id": "Toko itu selalu ramai.", "level": "n5", "tags": ["belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -19785,7 +27673,7 @@ window.vocabN5 = [
   nuance: 'コンビニ = convenience store (7-Eleven, FamilyMart, dll). Fitur penting budaya Jepang.',
   conj_type: null,
   examples: [
-      { jp: '道に迷ってしまいました。', en: 'I\'m lost.', id: '[TBD]' },{"jp": "コンビニで弁当を買います。", "id": "Saya beli bento di konbini.", "level": "n5", "tags": ["makanan-minuman", "belanja"]}],
+      {"jp": "コンビニで弁当を買います。", "id": "Saya beli bento di konbini.", "level": "n5", "tags": ["makanan-minuman", "belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -19815,7 +27703,7 @@ window.vocabN5 = [
   nuance: 'A physical gate, often large and structural, like a school or temple gate. Contrast with a simple door (ドア).',
   conj_type: null,
   examples: [
-      { jp: '専門家に聞いて。', en: 'Ask an expert.', id: '[TBD]' },{"jp":"学校の正門は朝八時に開きます。","id":"Pintu gerbang utama sekolah buka jam delapan pagi.","level":"n5","tags":["pendidikan","ruang-arah"]}],
+      {"jp":"学校の正門は朝八時に開きます。","id":"Pintu gerbang utama sekolah buka jam delapan pagi.","level":"n5","tags":["pendidikan","ruang-arah"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -19843,7 +27731,7 @@ window.vocabN5 = [
   nuance: 'Refers to a person\'s major in college or their professional area of expertise. Often used when asking about someone\'s field of study.',
   conj_type: null,
   examples: [
-      { jp: '専門家に聞いて。', en: 'Ask an expert.', id: '[TBD]' },{"jp":"大学での私の専門は日本文学です。","id":"Spesialisasi saya di universitas adalah sastra Jepang.","level":"n5","tags":["pendidikan"]}],
+      {"jp":"大学での私の専門は日本文学です。","id":"Spesialisasi saya di universitas adalah sastra Jepang.","level":"n5","tags":["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -19873,7 +27761,7 @@ window.vocabN5 = [
   nuance: 'The physical air we breathe. Also widely used metaphorically for the \'mood\' or \'atmosphere\' of a room (e.g., \'reading the air\').',
   conj_type: null,
   examples: [
-      { jp: '空気は目に見えない。', en: 'Air is invisible.', id: '[TBD]' },{"jp":"山の朝の空気はとてもきれいで涼しいです。","id":"Udara pagi di gunung sangat bersih dan sejuk.","level":"n5","tags":["alam-lingkungan"]}],
+      {"jp":"山の朝の空気はとてもきれいで涼しいです。","id":"Udara pagi di gunung sangat bersih dan sejuk.","level":"n5","tags":["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -19903,7 +27791,7 @@ window.vocabN5 = [
   nuance: '電車 = kereta listrik (bukan shinkansen). 電車に乗る = naik kereta.',
   conj_type: null,
   examples: [
-      { jp: '空港って、遠いの？', en: 'Is the airport far?', id: '[TBD]' },{"jp": "毎日電車で通学しています。", "id": "Saya naik kereta setiap hari untuk sekolah.", "level": "n5", "tags": ["perjalanan", "pendidikan"]}],
+      {"jp": "毎日電車で通学しています。", "id": "Saya naik kereta setiap hari untuk sekolah.", "level": "n5", "tags": ["perjalanan", "pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -19931,7 +27819,7 @@ window.vocabN5 = [
   nuance: 'The sky above. Frequently combined with adjectives like blue (aozora) or starry (hoshizora), where the pronunciation changes to \'zora.\'',
   conj_type: null,
   examples: [
-      { jp: '手は空いていますよ。', en: 'I\'m free.', id: '[TBD]' },{"jp":"青い空に白い雲が浮かんでいます。","id":"Awan putih terapung di langit yang biru.","level":"n5","tags":["alam-lingkungan"]}],
+      {"jp":"青い空に白い雲が浮かんでいます。","id":"Awan putih terapung di langit yang biru.","level":"n5","tags":["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -19960,7 +27848,7 @@ window.vocabN5 = [
   nuance: 'The noun form of the color white. For the adjective form \'white,\' you must add an \'i\' (白い).',
   conj_type: null,
   examples: [
-      { jp: '私は潔白だ。', en: 'I\'m clean.', id: '[TBD]' },{"jp":"白は清潔な感じがする色です。","id":"Putih adalah warna yang memberikan kesan bersih.","level":"n5","tags":["kehidupan-sehari","umum"]}],
+      {"jp":"白は清潔な感じがする色です。","id":"Putih adalah warna yang memberikan kesan bersih.","level":"n5","tags":["kehidupan-sehari","umum"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -19989,7 +27877,7 @@ window.vocabN5 = [
   nuance: 'The base number one. Used in compound numbers and math, but counting physical objects usually requires \'hitotsu\' or a specific counter.',
   conj_type: null,
   examples: [
-      { jp: '精一杯やってみなさい。', en: 'Try hard.', id: '[TBD]' },{"jp":"一番好きな季節は春です。","id":"Musim yang paling disukai adalah musim semi.","level":"n5","tags":["kehidupan-sehari","alam-lingkungan"]}],
+      {"jp":"一番好きな季節は春です。","id":"Musim yang paling disukai adalah musim semi.","level":"n5","tags":["kehidupan-sehari","alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -20017,7 +27905,7 @@ window.vocabN5 = [
   nuance: 'The number two. Used in counting sequences or math. When counting two physical objects, use \'futatsu\' or a counter.',
   conj_type: null,
   examples: [
-      { jp: 'もう二度と嘘つかないでよ。', en: 'Stop lying.', id: '[TBD]' },{"jp":"りんごを二個買って食べました。","id":"Saya membeli dua buah apel lalu memakannya.","level":"n5","tags":["makanan-minuman","belanja"]}],
+      {"jp":"りんごを二個買って食べました。","id":"Saya membeli dua buah apel lalu memakannya.","level":"n5","tags":["makanan-minuman","belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -20045,7 +27933,7 @@ window.vocabN5 = [
   nuance: 'The number three. When counting three objects, use \'mittsu\' or an appropriate counter.',
   conj_type: null,
   examples: [
-      { jp: '私は猫を十三匹飼っている。', en: 'I have 13 cats.', id: '[TBD]' },{"jp":"私の家族は父と母と私の三人です。","id":"Keluarga saya terdiri dari tiga orang: ayah, ibu, dan saya.","level":"n5","tags":["keluarga"]}],
+      {"jp":"私の家族は父と母と私の三人です。","id":"Keluarga saya terdiri dari tiga orang: ayah, ibu, dan saya.","level":"n5","tags":["keluarga"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -20072,7 +27960,7 @@ window.vocabN5 = [
   nuance: 'The number four. Pronounced either \'shi\' or \'yon,\' though \'yon\' is often preferred to avoid the association of \'shi\' with the word for death.',
   conj_type: null,
   examples: [
-      { jp: '四月一日です。', en: 'It\'s April first.', id: '[TBD]' },{"jp":"テーブルの上に四冊の本があります。","id":"Ada empat buah buku di atas meja.","level":"n5","tags":["kehidupan-sehari"]}],
+      {"jp":"テーブルの上に四冊の本があります。","id":"Ada empat buah buku di atas meja.","level":"n5","tags":["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -20099,7 +27987,7 @@ window.vocabN5 = [
   nuance: 'The number five. Used in general math and digit sequences.',
   conj_type: null,
   examples: [
-      { jp: '五日待ってくれ。', en: 'Wait five days.', id: '[TBD]' },{"jp":"鉛筆を五本持っています。","id":"Saya mempunyai lima batang pensil.","level":"n5","tags":["pendidikan"]}],
+      {"jp":"鉛筆を五本持っています。","id":"Saya mempunyai lima batang pensil.","level":"n5","tags":["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -20126,7 +28014,7 @@ window.vocabN5 = [
   nuance: 'The number six. Used for general math. When combined with some counters, the pronunciation can change to \'rop-\'.',
   conj_type: null,
   examples: [
-      { jp: '私は六時半に起きる。', en: 'I get up at 6:30.', id: '[TBD]' },{"jp":"毎朝六時に起きて散歩します。","id":"Setiap pagi pukul enam saya bangun dan jalan-jalan.","level":"n5","tags":["kehidupan-sehari","waktu"]}],
+      {"jp":"毎朝六時に起きて散歩します。","id":"Setiap pagi pukul enam saya bangun dan jalan-jalan.","level":"n5","tags":["kehidupan-sehari","waktu"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -20153,7 +28041,7 @@ window.vocabN5 = [
   nuance: 'The number seven. Pronounced \'shichi\' or \'nana.\' \'Nana\' is usually preferred when counting down or avoiding confusion with \'ichi\' (1) and \'shi\' (4).',
   conj_type: null,
   examples: [
-      { jp: '私は七時に起きる。', en: 'I get up at 7:00.', id: '[TBD]' },{"jp":"夜の七時に晩ごはんを食べます。","id":"Saya makan malam pada pukul tujuh malam.","level":"n5","tags":["makanan-minuman","waktu"]}],
+      {"jp":"夜の七時に晩ごはんを食べます。","id":"Saya makan malam pada pukul tujuh malam.","level":"n5","tags":["makanan-minuman","waktu"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -20180,7 +28068,7 @@ window.vocabN5 = [
   nuance: 'The number eight. Often considered a lucky number in Japanese culture due to the shape of the kanji widening at the bottom.',
   conj_type: null,
   examples: [
-      { jp: '八方塞がりだ。', en: 'We\'re sunk.', id: '[TBD]' },{"jp":"毎朝八時に家を出て学校へ行きます。","id":"Setiap pagi pukul delapan saya keluar rumah pergi ke sekolah.","level":"n5","tags":["pendidikan","waktu"]}],
+      {"jp":"毎朝八時に家を出て学校へ行きます。","id":"Setiap pagi pukul delapan saya keluar rumah pergi ke sekolah.","level":"n5","tags":["pendidikan","waktu"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -20207,7 +28095,7 @@ window.vocabN5 = [
   nuance: 'The number nine. Pronounced \'kyuu\' or \'ku.\' \'Ku\' is sometimes avoided because it sounds like the word for suffering.',
   conj_type: null,
   examples: [
-      { jp: '九ページを開きなさい。', en: 'Turn to page 9.', id: '[TBD]' },{"jp":"私の部屋は九階にあります。","id":"Kamar saya berada di lantai sembilan.","level":"n5","tags":["kehidupan-sehari"]}],
+      {"jp":"私の部屋は九階にあります。","id":"Kamar saya berada di lantai sembilan.","level":"n5","tags":["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -20234,7 +28122,7 @@ window.vocabN5 = [
   nuance: 'The number ten. When combined with some counters, it often causes phonetic changes, like \'juppun\' (10 minutes) instead of \'juufun.\'',
   conj_type: null,
   examples: [
-      { jp: 'もうそれで十分だ。', en: 'That\'ll do.', id: '[TBD]' },{"jp":"みかんを十個買いました。","id":"Saya membeli sepuluh buah jeruk.","level":"n5","tags":["belanja","makanan-minuman"]}],
+      {"jp":"みかんを十個買いました。","id":"Saya membeli sepuluh buah jeruk.","level":"n5","tags":["belanja","makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -20261,7 +28149,7 @@ window.vocabN5 = [
   nuance: 'One hundred. Watch out for phonetic shifts when combining it with 3 (sanbyaku), 6 (roppyaku), and 8 (happyaku).',
   conj_type: null,
   examples: [
-      { jp: '私は彼に百ドル借りている。', en: 'I owe him $100.', id: '[TBD]' },{"jp":"このノートは百円です。","id":"Buku catatan ini harganya seratus yen.","level":"n5","tags":["belanja"]}],
+      {"jp":"このノートは百円です。","id":"Buku catatan ini harganya seratus yen.","level":"n5","tags":["belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -20290,7 +28178,7 @@ window.vocabN5 = [
   nuance: 'One thousand. Note the phonetic shifts for 3,000 (sanzen) and 8,000 (hassen).',
   conj_type: null,
   examples: [
-      { jp: '悪事千里を走る', en: 'Bad news travels fast.', id: '[TBD]' },{"jp":"財布の中に千円札が一枚あります。","id":"Di dalam dompet ada satu lembar uang seribu yen.","level":"n5","tags":["belanja","kehidupan-sehari"]}],
+      {"jp":"財布の中に千円札が一枚あります。","id":"Di dalam dompet ada satu lembar uang seribu yen.","level":"n5","tags":["belanja","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -20319,7 +28207,7 @@ window.vocabN5 = [
   nuance: 'Ten thousand. Japanese numbers group by four digits, making \'man\' the base for counting large numbers, unlike English which groups by three. Note that 10,000 is always \'ichi-man\' rather than just \'man\'.',
   conj_type: null,
   examples: [
-      { jp: '万事上手くいってます。', en: 'All is well.', id: '[TBD]' },{"jp":"この時計は一万円でした。","id":"Jam tangan ini harganya sepuluh ribu yen.","level":"n5","tags":["belanja"]}],
+      {"jp":"この時計は一万円でした。","id":"Jam tangan ini harganya sepuluh ribu yen.","level":"n5","tags":["belanja"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -20350,7 +28238,7 @@ window.vocabN5 = [
   nuance: 'The traditional Japanese counting word for one item. Highly versatile and can be used to count almost any non-living object lacking a specific counter.',
   conj_type: null,
   examples: [
-      { jp: '一つ選んで。', en: 'Choose one.', id: '[TBD]' },{"jp":"パンを一つ買いました。","id":"Saya membeli satu buah roti.","level":"n5","tags":["belanja","makanan-minuman"]}],
+      {"jp":"パンを一つ買いました。","id":"Saya membeli satu buah roti.","level":"n5","tags":["belanja","makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -20380,7 +28268,7 @@ window.vocabN5 = [
   nuance: 'The traditional counting word for two objects. Used similarly to \'hitotsu\' for a wide variety of general items.',
   conj_type: null,
   examples: [
-      { jp: 'コーラを二つお願いします。', en: 'Two colas, please.', id: '[TBD]' },{"jp":"りんごを二つください。","id":"Tolong berikan dua buah apel.","level":"n5","tags":["belanja","makanan-minuman"]}],
+      {"jp":"りんごを二つください。","id":"Tolong berikan dua buah apel.","level":"n5","tags":["belanja","makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -20409,7 +28297,7 @@ window.vocabN5 = [
   nuance: 'Used for counting small, solid objects, or specifying the age of a three-year-old child. It uses the native Japanese counting system, avoiding the need for specific counter suffixes.',
   conj_type: null,
   examples: [
-      { jp: 'これを三つください。', en: 'I\'d like three of these.', id: '[TBD]' },{"jp":"ケーキを三つ注文しました。","id":"Saya memesan tiga buah kue.","level":"n5","tags":["belanja","makanan-minuman"]}],
+      {"jp":"ケーキを三つ注文しました。","id":"Saya memesan tiga buah kue.","level":"n5","tags":["belanja","makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -20439,7 +28327,7 @@ window.vocabN5 = [
   nuance: 'Used for counting up to four small, solid objects or concepts. As part of the native Japanese counting system, it can be used when you\'re unsure which specific counter word to apply.',
   conj_type: null,
   examples: [
-      { jp: '正方形には四つの辺がある。', en: 'A square has four sides.', id: '[TBD]' },{"jp":"いすが四つ並んでいます。","id":"Ada empat buah kursi berjejer.","level":"n5","tags":["kehidupan-sehari"]}],
+      {"jp":"いすが四つ並んでいます。","id":"Ada empat buah kursi berjejer.","level":"n5","tags":["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -20470,7 +28358,7 @@ window.vocabN5 = [
   nuance: 'Used to count five items of varying shapes, especially when a specific counter isn\'t known. It can also refer to a child who is five years old.',
   conj_type: null,
   examples: [
-      { jp: 'この箱にはりんごが五つ入っている。', en: 'This box contains five apples.', id: '[TBD]' },{"jp":"箱の中に卵が五つ入っています。","id":"Di dalam kotak ada lima butir telur.","level":"n5","tags":["makanan-minuman"]}],
+      {"jp":"箱の中に卵が五つ入っています。","id":"Di dalam kotak ada lima butir telur.","level":"n5","tags":["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -20558,7 +28446,7 @@ window.vocabN5 = [
   nuance: 'Used for counting eight items. Be careful to pronounce the small \'tsu\' clearly to differentiate it from other words.',
   conj_type: null,
   examples: [
-      { jp: '彼女は八つだ。', en: 'She is eight.', id: '[TBD]' },{"jp":"お菓子を八つ買いました。","id":"Saya membeli delapan bungkus makanan ringan.","level":"n5","tags":["belanja","makanan-minuman"]}],
+      {"jp":"お菓子を八つ買いました。","id":"Saya membeli delapan bungkus makanan ringan.","level":"n5","tags":["belanja","makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -20617,7 +28505,7 @@ window.vocabN5 = [
   nuance: 'Literally \'moon day\', it refers to the first day of the traditional workweek. Often abbreviated to \'月\' (げつ) in calendars or schedules.',
   conj_type: null,
   examples: [
-      { jp: '月曜日です。', en: 'It\'s Monday.', id: '[TBD]' },{"jp": "月曜日から金曜日まで仕事があります。", "id": "Senin sampai Jumat ada kerja.", "level": "n5", "tags": ["pekerjaan"]}],
+      {"jp": "月曜日から金曜日まで仕事があります。", "id": "Senin sampai Jumat ada kerja.", "level": "n5", "tags": ["pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -20645,7 +28533,7 @@ window.vocabN5 = [
   nuance: 'Literally \'fire day\'. In everyday conversation, people often drop the \'bi\' and just say \'kayou\'.',
   conj_type: null,
   examples: [
-      { jp: '火曜日はお暇ですか。', en: 'Are you free on Tuesday?', id: '[TBD]' },{"jp":"毎週火曜日に英語のテストがあります。","id":"Setiap hari Selasa ada ujian bahasa Inggris.","level":"n5","tags":["pendidikan","waktu"]}],
+      {"jp":"毎週火曜日に英語のテストがあります。","id":"Setiap hari Selasa ada ujian bahasa Inggris.","level":"n5","tags":["pendidikan","waktu"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -20673,7 +28561,7 @@ window.vocabN5 = [
   nuance: 'Literally \'water day\'. Remember that the kanji for water (水) is used here to represent the middle of the week.',
   conj_type: null,
   examples: [
-      { jp: '今度の水曜日に会いましょう。', en: 'I\'ll see you next Wednesday.', id: '[TBD]' },{"jp":"水曜日の午後は授業がありません。","id":"Hari Rabu siang tidak ada pelajaran.","level":"n5","tags":["pendidikan","waktu"]}],
+      {"jp":"水曜日の午後は授業がありません。","id":"Hari Rabu siang tidak ada pelajaran.","level":"n5","tags":["pendidikan","waktu"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -20701,7 +28589,7 @@ window.vocabN5 = [
   nuance: 'Literally \'wood day\' or \'tree day\'. It pairs well with other elemental days of the week.',
   conj_type: null,
   examples: [
-      { jp: '今日は木曜日です。', en: 'Today is Thursday.', id: '[TBD]' },{"jp":"木曜日は友達とテニスをします。","id":"Hari Kamis saya bermain tenis bersama teman.","level":"n5","tags":["pertemanan","waktu"]}],
+      {"jp":"木曜日は友達とテニスをします。","id":"Hari Kamis saya bermain tenis bersama teman.","level":"n5","tags":["pertemanan","waktu"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -20729,7 +28617,7 @@ window.vocabN5 = [
   nuance: 'Literally \'gold day\' or \'money day\'. It marks the end of the traditional workweek, often celebrated as \'hana-kin\' (golden Friday).',
   conj_type: null,
   examples: [
-      { jp: '今日って、金曜日？', en: 'Is today Friday?', id: '[TBD]' },{"jp":"金曜日の夜は映画を見ます。","id":"Pada Jumat malam saya menonton film.","level":"n5","tags":["kehidupan-sehari","waktu"]}],
+      {"jp":"金曜日の夜は映画を見ます。","id":"Pada Jumat malam saya menonton film.","level":"n5","tags":["kehidupan-sehari","waktu"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -20757,7 +28645,7 @@ window.vocabN5 = [
   nuance: 'Literally \'earth day\' or \'soil day\'. Unlike English, Saturday and Sunday don\'t share a common \'weekend\' root word, though \'shuumatsu\' covers both.',
   conj_type: null,
   examples: [
-      { jp: '土曜日だよ。', en: 'It is Saturday.', id: '[TBD]' },{"jp": "土曜日は学校がありません。", "id": "Hari Sabtu tidak ada sekolah.", "level": "n5", "tags": ["pendidikan"]}],
+      {"jp": "土曜日は学校がありません。", "id": "Hari Sabtu tidak ada sekolah.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -20785,7 +28673,7 @@ window.vocabN5 = [
   nuance: 'Literally \'sun day\'. It uses the kanji for sun (日) twice, but with two different readings (\'nichi\' and \'bi\').',
   conj_type: null,
   examples: [
-      { jp: '私は日曜日に働く。', en: 'I work on Sunday.', id: '[TBD]' },{"jp": "日曜日はたいてい家にいます。", "id": "Hari Minggu biasanya saya di rumah.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "日曜日はたいてい家にいます。", "id": "Hari Minggu biasanya saya di rumah.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -20813,7 +28701,7 @@ window.vocabN5 = [
   nuance: 'Read as \'ichigatsu\' for the month of January. Be careful not to read it as \'hitotsuki\', which means \'one month\' in duration.',
   conj_type: null,
   examples: [
-      { jp: '一月に彼に会いました。', en: 'I met him in January.', id: '[TBD]' },{"jp": "一月は冬です。", "id": "Januari adalah musim dingin.", "level": "n5", "tags": ["alam-lingkungan"]}],
+      {"jp": "一月は冬です。", "id": "Januari adalah musim dingin.", "level": "n5", "tags": ["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -20842,7 +28730,7 @@ window.vocabN5 = [
   nuance: 'The second month of the year. The pronunciation is short and snappy, unlike traditional Japanese month names like \'Kisaragi\'.',
   conj_type: null,
   examples: [
-      { jp: '二月には雪が多い。', en: 'We have a lot of snow in February.', id: '[TBD]' },{"jp":"二月は一年の中で一番寒いです。","id":"Bulan Februari adalah bulan paling dingin dalam setahun.","level":"n5","tags":["alam-lingkungan","waktu"]}],
+      {"jp":"二月は一年の中で一番寒いです。","id":"Bulan Februari adalah bulan paling dingin dalam setahun.","level":"n5","tags":["alam-lingkungan","waktu"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -20869,7 +28757,7 @@ window.vocabN5 = [
   nuance: 'Refers strictly to the calendar month of March. The season of cherry blossoms generally begins around the end of this month in Japan.',
   conj_type: null,
   examples: [
-      { jp: '三月にはたくさんの花が咲く。', en: 'In March, many flowers come out.', id: '[TBD]' },{"jp":"日本では三月に卒業式があります。","id":"Di Jepang ada upacara kelulusan pada bulan Maret.","level":"n5","tags":["pendidikan","waktu"]}],
+      {"jp":"日本では三月に卒業式があります。","id":"Di Jepang ada upacara kelulusan pada bulan Maret.","level":"n5","tags":["pendidikan","waktu"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -20896,7 +28784,7 @@ window.vocabN5 = [
   nuance: 'Always read as \'shigatsu\', never \'yongatsu\'. This month is highly significant in Japan as it marks the start of the school and fiscal year.',
   conj_type: null,
   examples: [
-      { jp: '四月一日です。', en: 'It\'s April first.', id: '[TBD]' },{"jp": "四月から新学期が始まります。", "id": "Tahun ajaran baru dimulai dari bulan April.", "level": "n5", "tags": ["pendidikan"]}],
+      {"jp": "四月から新学期が始まります。", "id": "Tahun ajaran baru dimulai dari bulan April.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -20923,7 +28811,7 @@ window.vocabN5 = [
   nuance: 'The fifth month of the year. It includes \'Golden Week\', a major string of public holidays in Japan.',
   conj_type: null,
   examples: [
-      { jp: '五月五日は彼の誕生日だ。', en: 'His birthday is May 5th.', id: '[TBD]' },{"jp":"五月に長い休みがあります。","id":"Pada bulan Mei ada liburan panjang.","level":"n5","tags":["kehidupan-sehari","waktu"]}],
+      {"jp":"五月に長い休みがあります。","id":"Pada bulan Mei ada liburan panjang.","level":"n5","tags":["kehidupan-sehari","waktu"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -20953,7 +28841,7 @@ window.vocabN5 = [
   nuance: 'The month of June, heavily associated with \'tsuyu\', Japan\'s rainy season.',
   conj_type: null,
   examples: [
-      { jp: '六月には雨が多い。', en: 'It rains a lot in June.', id: '[TBD]' },{"jp":"六月は日本で雨がたくさん降ります。","id":"Pada bulan Juni, banyak hujan turun di Jepang.","level":"n5","tags":["alam-lingkungan","waktu"]}],
+      {"jp":"六月は日本で雨がたくさん降ります。","id":"Pada bulan Juni, banyak hujan turun di Jepang.","level":"n5","tags":["alam-lingkungan","waktu"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -21012,7 +28900,7 @@ window.vocabN5 = [
   nuance: 'The peak of Japanese summer. It usually contains the Obon festival, a major holiday when people return to their hometowns.',
   conj_type: null,
   examples: [
-      { jp: '日本では、八月八日はヒゲの日です。', en: 'August eighth is Beard Day in Japan.', id: '[TBD]' },{"jp":"八月はとても暑いので海へ行きます。","id":"Bulan Agustus sangat panas, jadi saya pergi ke laut.","level":"n5","tags":["alam-lingkungan","waktu"]}],
+      {"jp":"八月はとても暑いので海へ行きます。","id":"Bulan Agustus sangat panas, jadi saya pergi ke laut.","level":"n5","tags":["alam-lingkungan","waktu"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -21071,7 +28959,7 @@ window.vocabN5 = [
   nuance: 'The tenth month of the year. Known traditionally as \'kannazuki\' (the month with no gods) because all gods supposedly gather in Izumo.',
   conj_type: null,
   examples: [
-      { jp: '木の葉は十月に落ち始める。', en: 'Leaves begin to fall in October.', id: '[TBD]' },{"jp":"十月は涼しくて過ごしやすい季節です。","id":"Bulan Oktober sejuk dan merupakan musim yang nyaman.","level":"n5","tags":["alam-lingkungan","waktu"]}],
+      {"jp":"十月は涼しくて過ごしやすい季節です。","id":"Bulan Oktober sejuk dan merupakan musim yang nyaman.","level":"n5","tags":["alam-lingkungan","waktu"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -21130,7 +29018,7 @@ window.vocabN5 = [
   nuance: 'The final month of the year. Often referred to as \'shiwasu\' in traditional contexts, implying that even teachers are busy running around.',
   conj_type: null,
   examples: [
-      { jp: '十二月は一年の最後の月です。', en: 'December is the last month of the year.', id: '[TBD]' },{"jp":"十二月は年末でとても忙しいです。","id":"Bulan Desember sangat sibuk karena akhir tahun.","level":"n5","tags":["kehidupan-sehari","waktu"]}],
+      {"jp":"十二月は年末でとても忙しいです。","id":"Bulan Desember sangat sibuk karena akhir tahun.","level":"n5","tags":["kehidupan-sehari","waktu"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -21188,7 +29076,7 @@ window.vocabN5 = [
   nuance: 'Bentuk sopan: おばあさん',
   conj_type: null,
   examples: [
-      { jp: 'その内気な少年はぼそぼそと自分の名前をつぶやいた。', en: 'The shy boy murmured his name.', id: '[TBD]' },{"jp":"祖母が編んだセーターを着ています。","id":"Saya memakai sweter yang dirajut oleh nenek saya.","level":"n5","tags":["keluarga","kehidupan-sehari"]}],
+      {"jp":"祖母が編んだセーターを着ています。","id":"Saya memakai sweter yang dirajut oleh nenek saya.","level":"n5","tags":["keluarga","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -21243,7 +29131,7 @@ window.vocabN5 = [
   nuance: 'Bentuk sopan: ごきょうだい',
   conj_type: 'na-adj',
   examples: [
-      { jp: '女のきょうだいはいません。', en: 'I have no sisters.', id: '[TBD]' },{"jp":"兄弟は何人いますか。","id":"Anda punya saudara kandung berapa orang?","level":"n5","tags":["keluarga","pertemanan"]}],
+      {"jp":"兄弟は何人いますか。","id":"Anda punya saudara kandung berapa orang?","level":"n5","tags":["keluarga","pertemanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -21271,7 +29159,7 @@ window.vocabN5 = [
   nuance: 'Bentuk sopan: おじさん',
   conj_type: null,
   examples: [
-      { jp: '丁寧におじぎをしました。', en: 'I bowed politely.', id: '[TBD]' },{"jp":"私の叔父は東京で会社員をしています。","id":"Paman saya bekerja sebagai karyawan kantor di Tokyo.","level":"n5","tags":["keluarga","pekerjaan"]}],
+      {"jp":"私の叔父は東京で会社員をしています。","id":"Paman saya bekerja sebagai karyawan kantor di Tokyo.","level":"n5","tags":["keluarga","pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -21300,7 +29188,7 @@ window.vocabN5 = [
   nuance: 'Bentuk sopan: おばさん',
   conj_type: null,
   examples: [
-      { jp: '僕、おばけじゃないよ。', en: 'I\'m not a ghost.', id: '[TBD]' },{"jp":"叔母からおいしいお菓子をもらいました。","id":"Saya mendapat makanan ringan yang lezat dari bibi saya.","level":"n5","tags":["keluarga","makanan-minuman"]}],
+      {"jp":"叔母からおいしいお菓子をもらいました。","id":"Saya mendapat makanan ringan yang lezat dari bibi saya.","level":"n5","tags":["keluarga","makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -21386,7 +29274,7 @@ window.vocabN5 = [
   nuance: 'Bentuk sopan: おまごさん',
   conj_type: null,
   examples: [
-      { jp: 'たまごサンドは安くて手軽に作れてよく食べます。', en: 'Egg salad sandwiches are cheap and easy to make, so I often eat them.', id: '[TBD]' },{"jp":"孫が遊びに来てとてもうれしいです。","id":"Saya sangat senang cucu saya datang bermain.","level":"n5","tags":["keluarga"]}],
+      {"jp":"孫が遊びに来てとてもうれしいです。","id":"Saya sangat senang cucu saya datang bermain.","level":"n5","tags":["keluarga"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -21464,7 +29352,7 @@ window.vocabN5 = [
   nuance: 'Refers specifically to one\'s own nephew. If referring to someone else\'s nephew, you would typically use the more polite \'oigo-san\'.',
   conj_type: null,
   examples: [
-      { jp: '入っておいでよ。', en: 'Come in.', id: '[TBD]' },{"jp":"甥の誕生日に本をプレゼントしました。","id":"Saya menghadiahi buku pada hari ulang tahun keponakan laki-laki saya.","level":"n5","tags":["keluarga","kehidupan-sehari"]}],
+      {"jp":"甥の誕生日に本をプレゼントしました。","id":"Saya menghadiahi buku pada hari ulang tahun keponakan laki-laki saya.","level":"n5","tags":["keluarga","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -21494,7 +29382,7 @@ window.vocabN5 = [
   nuance: 'Used for your own niece. When speaking about someone else\'s niece, the honorific form \'meigo-san\' is preferred.',
   conj_type: null,
   examples: [
-      { jp: 'いいことひらめいたよ。', en: 'I\'ve got a good idea.', id: '[TBD]' },{"jp":"姪は今年小学校に入学しました。","id":"Keponakan perempuan saya masuk SD tahun ini.","level":"n5","tags":["keluarga","pendidikan"]}],
+      {"jp":"姪は今年小学校に入学しました。","id":"Keponakan perempuan saya masuk SD tahun ini.","level":"n5","tags":["keluarga","pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -21522,7 +29410,7 @@ window.vocabN5 = [
   nuance: 'A gender-neutral term for one\'s own cousin, though it can be written with different kanji depending on their age and gender (e.g., 従兄弟, 従姉妹). Use \'itokogo-san\' for someone else\'s cousin.',
   conj_type: null,
   examples: [
-      { jp: 'いとこの間柄です。', en: 'We are cousins.', id: '[TBD]' },{"jp":"夏休みにいとこと一緒に海へ行きました。","id":"Saat liburan musim panas saya pergi ke laut bersama sepupu.","level":"n5","tags":["keluarga","kehidupan-sehari"]}],
+      {"jp":"夏休みにいとこと一緒に海へ行きました。","id":"Saat liburan musim panas saya pergi ke laut bersama sepupu.","level":"n5","tags":["keluarga","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -21550,7 +29438,7 @@ window.vocabN5 = [
   nuance: 'A general term for color. It can also metaphorically refer to a lover or sensuality in older literature, though this is rare in N5 contexts.',
   conj_type: null,
   examples: [
-      { jp: '下がっていろ！', en: 'Back off!', id: '[TBD]' },{"jp":"どんな色が好きですか。","id":"Warna seperti apa yang Anda sukai?","level":"n5","tags":["kehidupan-sehari","umum"]}],
+      {"jp":"どんな色が好きですか。","id":"Warna seperti apa yang Anda sukai?","level":"n5","tags":["kehidupan-sehari","umum"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -21579,7 +29467,7 @@ window.vocabN5 = [
   nuance: 'Refers to the noun \'red\'. To use it as an adjective modifying a noun (like \'red car\'), you must add an \'i\' to make it \'akai\'.',
   conj_type: null,
   examples: [
-      { jp: 'あからさまに言えば彼は嫌いだ。', en: 'Frankly, I don\'t like him.', id: '[TBD]' },{"jp":"赤はとても目立つ色です。","id":"Merah adalah warna yang sangat mencolok.","level":"n5","tags":["kehidupan-sehari","umum"]}],
+      {"jp":"赤はとても目立つ色です。","id":"Merah adalah warna yang sangat mencolok.","level":"n5","tags":["kehidupan-sehari","umum"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -21606,7 +29494,7 @@ window.vocabN5 = [
   nuance: 'The noun form of white. It\'s often associated with purity and is the color of traditional Japanese bridal wear.',
   conj_type: null,
   examples: [
-      { jp: '無視しろ。', en: 'Ignore it.', id: '[TBD]' },{"jp":"私の車は白です。","id":"Mobil saya berwarna putih.","level":"n5","tags":["kehidupan-sehari"]}],
+      {"jp":"私の車は白です。","id":"Mobil saya berwarna putih.","level":"n5","tags":["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -21634,7 +29522,7 @@ window.vocabN5 = [
   nuance: 'The noun for blue. Historically, \'ao\' covered both blue and green, which is why green traffic lights and green apples are still called \'ao\'.',
   conj_type: null,
   examples: [
-      { jp: 'トムはあおむけに寝ていた。', en: 'Tom lay on his back.', id: '[TBD]' },{"jp":"青いペンでノートに名前を書きました。","id":"Saya menulis nama di buku catatan dengan pulpen biru.","level":"n5","tags":["pendidikan","kehidupan-sehari"]}],
+      {"jp":"青いペンでノートに名前を書きました。","id":"Saya menulis nama di buku catatan dengan pulpen biru.","level":"n5","tags":["pendidikan","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -21692,7 +29580,7 @@ window.vocabN5 = [
   nuance: 'The noun form of black. It can also carry connotations of guilt or a hidden truth in Japanese slang.',
   conj_type: null,
   examples: [
-      { jp: 'ふくろうは暗闇で目が見える。', en: 'Owls can see in the dark.', id: '[TBD]' },{"jp":"黒いかばんを買いました。","id":"Saya membeli tas berwarna hitam.","level":"n5","tags":["belanja","kehidupan-sehari"]}],
+      {"jp":"黒いかばんを買いました。","id":"Saya membeli tas berwarna hitam.","level":"n5","tags":["belanja","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -21723,7 +29611,7 @@ window.vocabN5 = [
   nuance: 'Refers to the color green, but historically meant fresh shoots or trees. Unlike \'ao\', \'midori\' exclusively means green in modern Japanese.',
   conj_type: null,
   examples: [
-      { jp: '私たちはその家をみどり色に塗った。', en: 'We painted the house green.', id: '[TBD]' },{"jp":"この町は緑が多くて空気がきれいです。","id":"Kota ini banyak tanaman hijau dan udaranya bersih.","level":"n5","tags":["alam-lingkungan"]}],
+      {"jp":"この町は緑が多くて空気がきれいです。","id":"Kota ini banyak tanaman hijau dan udaranya bersih.","level":"n5","tags":["alam-lingkungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -21781,7 +29669,7 @@ window.vocabN5 = [
   nuance: 'A loanword from English for pink. The native word \'momo-iro\' (peach color) is also used but \'pinku\' is far more common in daily life.',
   conj_type: null,
   examples: [
-      { jp: 'ピンクって、可愛い色だね。', en: 'Pink is a pretty color.', id: '[TBD]' },{"jp":"妹はピンクのドレスが好きです。","id":"Adik perempuan saya menyukai gaun merah muda.","level":"n5","tags":["keluarga","kehidupan-sehari"]}],
+      {"jp":"妹はピンクのドレスが好きです。","id":"Adik perempuan saya menyukai gaun merah muda.","level":"n5","tags":["keluarga","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -21810,7 +29698,7 @@ window.vocabN5 = [
   nuance: 'Can refer to a physical location, but also an abstract point in time or a state of being (e.g., \'just about to do something\').',
   conj_type: null,
   examples: [
-      { jp: '痛いところはありますか？', en: 'Are you in pain?', id: '[TBD]' },{"jp":"ここはとても静かでいい所です。","id":"Di sini adalah tempat yang sangat tenang dan bagus.","level":"n5","tags":["kehidupan-sehari","umum"]}],
+      {"jp":"ここはとても静かでいい所です。","id":"Di sini adalah tempat yang sangat tenang dan bagus.","level":"n5","tags":["kehidupan-sehari","umum"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -21922,7 +29810,7 @@ window.vocabN5 = [
   nuance: 'The sport of basketball. In colloquial speech, this is almost always shortened to \'basuke\'.',
   conj_type: null,
   examples: [
-      { jp: '彼はバスケットボールがうまい。', en: 'He is good at basketball.', id: '[TBD]' },{"jp":"放課後にバスケットボールの練習をします。","id":"Sepulang sekolah kami berlatih bola basket.","level":"n5","tags":["pendidikan","kehidupan-sehari"]}],
+      {"jp":"放課後にバスケットボールの練習をします。","id":"Sepulang sekolah kami berlatih bola basket.","level":"n5","tags":["pendidikan","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -22005,7 +29893,7 @@ window.vocabN5 = [
   nuance: 'Refers specifically to Western classical music. It is rarely used to describe traditional Japanese music (hougaku).',
   conj_type: 'na-adj',
   examples: [
-      { jp: '私はクラシックが好きです。', en: 'I like classical music.', id: '[TBD]' },{"jp":"夜、寝る前にクラシックの音楽を聴きます。","id":"Pada malam hari sebelum tidur, saya mendengarkan musik klasik.","level":"n5","tags":["kehidupan-sehari"]}],
+      {"jp":"夜、寝る前にクラシックの音楽を聴きます。","id":"Pada malam hari sebelum tidur, saya mendengarkan musik klasik.","level":"n5","tags":["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -22035,7 +29923,7 @@ window.vocabN5 = [
   nuance: 'The musical genre of jazz. Japan has a rich jazz culture, and \'jazu-kissa\' (jazz cafes) are a popular phenomenon.',
   conj_type: null,
   examples: [
-      { jp: '僕はジャズが好きだ。', en: 'I like jazz.', id: '[TBD]' },{"jp":"父はジャズが好きで、よくCDを聴いています。","id":"Ayah suka jazz dan sering mendengarkan CD.","level":"n5","tags":["keluarga","kehidupan-sehari"]}],
+      {"jp":"父はジャズが好きで、よくCDを聴いています。","id":"Ayah suka jazz dan sering mendengarkan CD.","level":"n5","tags":["keluarga","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -22063,7 +29951,7 @@ window.vocabN5 = [
   nuance: 'Refers to rock music. Can also mean \'on the rocks\' when ordering a drink with ice.',
   conj_type: 'suru',
   examples: [
-      { jp: '私はロックが好きです。', en: 'I like rock.', id: '[TBD]' },{"jp":"兄はロックバンドでギターを弾いています。","id":"Kakak laki-laki saya bermain gitar di band rock.","level":"n5","tags":["keluarga","kehidupan-sehari"]}],
+      {"jp":"兄はロックバンドでギターを弾いています。","id":"Kakak laki-laki saya bermain gitar di band rock.","level":"n5","tags":["keluarga","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -22092,7 +29980,7 @@ window.vocabN5 = [
   nuance: 'Used for popular music, particularly Western-style pop. Japanese pop is usually referred to explicitly as \'J-Pop\'.',
   conj_type: null,
   examples: [
-      { jp: 'ポップスが好きです。', en: 'I like pop music.', id: '[TBD]' },{"jp":"日本のポップスをよく聴いて日本語を覚えました。","id":"Saya sering mendengarkan musik pop Jepang dan menghafal bahasa Jepang.","level":"n5","tags":["pendidikan","kehidupan-sehari"]}],
+      {"jp":"日本のポップスをよく聴いて日本語を覚えました。","id":"Saya sering mendengarkan musik pop Jepang dan menghafal bahasa Jepang.","level":"n5","tags":["pendidikan","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -22119,7 +30007,7 @@ window.vocabN5 = [
   nuance: 'Refers specifically to the Japanese mandarin orange, a staple winter fruit often eaten while sitting under a kotatsu.',
   conj_type: null,
   examples: [
-      { jp: 'このみかんは食べ頃だ。', en: 'These oranges are good to eat.', id: '[TBD]' },{"jp":"冬にこたつでみかんを食べるのが好きです。","id":"Saya suka makan jeruk keprok di kotatsu saat musim dingin.","level":"n5","tags":["makanan-minuman","kehidupan-sehari"]}],
+      {"jp":"冬にこたつでみかんを食べるのが好きです。","id":"Saya suka makan jeruk keprok di kotatsu saat musim dingin.","level":"n5","tags":["makanan-minuman","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -22146,7 +30034,7 @@ window.vocabN5 = [
   nuance: 'A popular fruit in Japan, especially associated with Christmas cakes. The word can be written in kanji (苺) but is usually written in hiragana.',
   conj_type: null,
   examples: [
-      { jp: 'いちごあるけど食べる？', en: 'I have some strawberries. Do you want some?', id: '[TBD]' },{"jp":"甘くておいしいいちごを食べました。","id":"Saya makan stroberi yang manis dan enak.","level":"n5","tags":["makanan-minuman"]}],
+      {"jp":"甘くておいしいいちごを食べました。","id":"Saya makan stroberi yang manis dan enak.","level":"n5","tags":["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -22174,7 +30062,7 @@ window.vocabN5 = [
   nuance: 'Refers to grapes. Japanese grapes are often eaten peeled, unlike in many Western countries.',
   conj_type: null,
   examples: [
-      { jp: '彼女はぶどう酒が好きだ。', en: 'She likes wine.', id: '[TBD]' },{"jp":"スーパーで紫色のぶどうを一房買いました。","id":"Saya membeli satu tangkai anggur ungu di supermarket.","level":"n5","tags":["belanja","makanan-minuman"]}],
+      {"jp":"スーパーで紫色のぶどうを一房買いました。","id":"Saya membeli satu tangkai anggur ungu di supermarket.","level":"n5","tags":["belanja","makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -22231,7 +30119,7 @@ window.vocabN5 = [
   nuance: 'A Japanese portmanteau of \'auto\' and \'bicycle\' (bike). The shorter term \'baiku\' is also very commonly used for motorcycles.',
   conj_type: null,
   examples: [
-      { jp: 'オートバイを持っていますか。', en: 'Do you have a bike?', id: '[TBD]' },{"jp":"兄はオートバイに乗って会社へ行きます。","id":"Kakak laki-laki saya naik motor pergi ke kantor.","level":"n5","tags":["pekerjaan","kehidupan-sehari"]}],
+      {"jp":"兄はオートバイに乗って会社へ行きます。","id":"Kakak laki-laki saya naik motor pergi ke kantor.","level":"n5","tags":["pekerjaan","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -22315,7 +30203,7 @@ window.vocabN5 = [
   nuance: '写真 = foto. 写真を撮る = mengambil foto. 写真家 = fotografer.',
   conj_type: null,
   examples: [
-      { jp: '霧がはれた。', en: 'The fog has lifted.', id: '[TBD]' },{"jp": "旅行でたくさん写真を撮りました。", "id": "Saya banyak foto saat perjalanan.", "level": "n5", "tags": ["perjalanan"]}],
+      {"jp": "旅行でたくさん写真を撮りました。", "id": "Saya banyak foto saat perjalanan.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -22345,7 +30233,7 @@ window.vocabN5 = [
   nuance: '新幹線 = shinkansen (kereta cepat). Simbol teknologi Jepang.',
   conj_type: null,
   examples: [
-      { jp: '彼の腕のぬくもりを思い出す。', en: 'I remember the warmth of his arms.', id: '[TBD]' },{"jp": "新幹線で東京から大阪まで行きました。", "id": "Saya pergi dari Tokyo ke Osaka naik shinkansen.", "level": "n5", "tags": ["perjalanan"]}],
+      {"jp": "新幹線で東京から大阪まで行きました。", "id": "Saya pergi dari Tokyo ke Osaka naik shinkansen.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -22486,7 +30374,7 @@ window.vocabN5 = [
   nuance: 'Refers to flat dishes or plates, rather than bowls. Often preceded by \'お\' (osara) in polite speech.',
   conj_type: null,
   examples: [
-      { jp: '彼女は危険にさらされている。', en: 'She\'s in danger.', id: '[TBD]' },{"jp":"料理を大きなお皿に盛り付けました。","id":"Saya menata hidangan di atas piring besar.","level":"n5","tags":["makanan-minuman","kehidupan-sehari"]}],
+      {"jp":"料理を大きなお皿に盛り付けました。","id":"Saya menata hidangan di atas piring besar.","level":"n5","tags":["makanan-minuman","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -22516,7 +30404,7 @@ window.vocabN5 = [
   nuance: 'The primary eating utensil in Japan. Usually written in hiragana or kanji (箸) and often pronounced with \'お\' (ohashi) for politeness.',
   conj_type: null,
   examples: [
-      { jp: '釣りはしますか？', en: 'Do you fish?', id: '[TBD]' },{"jp":"お箸を使って上手にうどんを食べました。","id":"Saya makan udon dengan pandai menggunakan sumpit.","level":"n5","tags":["makanan-minuman","kehidupan-sehari"]}],
+      {"jp":"お箸を使って上手にうどんを食べました。","id":"Saya makan udon dengan pandai menggunakan sumpit.","level":"n5","tags":["makanan-minuman","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -22544,7 +30432,7 @@ window.vocabN5 = [
   nuance: 'A loanword typically referring to western-style cups with handles, like a coffee cup or tea mug.',
   conj_type: null,
   examples: [
-      { jp: 'カップが割れた。', en: 'The cup broke.', id: '[TBD]' },{"jp":"温かいコーヒーをカップに注ぎました。","id":"Saya menuangkan kopi hangat ke dalam cangkir.","level":"n5","tags":["makanan-minuman","kehidupan-sehari"]}],
+      {"jp":"温かいコーヒーをカップに注ぎました。","id":"Saya menuangkan kopi hangat ke dalam cangkir.","level":"n5","tags":["makanan-minuman","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -22572,7 +30460,7 @@ window.vocabN5 = [
   nuance: 'Despite sounding like \'cup\', this refers to a glass or tumbler without a handle, often used for serving cold drinks like water or juice.',
   conj_type: null,
   examples: [
-      { jp: 'コップが一つ欲しい。', en: 'I want a glass.', id: '[TBD]' },{"jp":"コップに冷たい水を一杯ください。","id":"Tolong berikan segelas air dingin di gelas.","level":"n5","tags":["makanan-minuman","kehidupan-sehari"]}],
+      {"jp":"コップに冷たい水を一杯ください。","id":"Tolong berikan segelas air dingin di gelas.","level":"n5","tags":["makanan-minuman","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -22603,7 +30491,7 @@ window.vocabN5 = [
   nuance: '旅行 = perjalanan/wisata. 旅行する = berwisata. 旅行者 = wisatawan.',
   conj_type: null,
   examples: [
-      { jp: 'ベッドへいけ。', en: 'Get to bed.', id: '[TBD]' },{"jp": "来月, 京都へ旅行します。", "id": "Bulan depan saya wisata ke Kyoto.", "level": "n5", "tags": ["perjalanan"]}],
+      {"jp": "来月, 京都へ旅行します。", "id": "Bulan depan saya wisata ke Kyoto.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -22712,7 +30600,7 @@ window.vocabN5 = [
   nuance: 'A common abbreviation for \'リモートコントロール\' (remote control). Used for TV, AC, and other electronic remotes.',
   conj_type: null,
   examples: [
-      { jp: 'テレビのリモコンって、どこ？', en: 'Where\'s the TV remote?', id: '[TBD]' },{"jp":"エアコンのリモコンはどこにありますか。","id":"Remote kontrol AC ada di mana?","level":"n5","tags":["kehidupan-sehari"]}],
+      {"jp":"エアコンのリモコンはどこにありますか。","id":"Remote kontrol AC ada di mana?","level":"n5","tags":["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -22770,7 +30658,7 @@ window.vocabN5 = [
   nuance: 'Refers to the neck. It is also used metaphorically to mean being fired from a job (クビになる).',
   conj_type: null,
   examples: [
-      { jp: 'あくびをした。', en: 'I yawned.', id: '[TBD]' },{"jp":"朝起きたら、首が痛くなりました。","id":"Ketika bangun di pagi hari, leher saya terasa sakit.","level":"n5","tags":["kesehatan"]}],
+      {"jp":"朝起きたら、首が痛くなりました。","id":"Ketika bangun di pagi hari, leher saya terasa sakit.","level":"n5","tags":["kesehatan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -22801,7 +30689,7 @@ window.vocabN5 = [
   nuance: 'Refers to the physical body. It can also imply one\'s health in phrases like \'体に気をつけて\' (take care of your health).',
   conj_type: null,
   examples: [
-      { jp: '夜はまだこれからだ。', en: 'The night is young.', id: '[TBD]' },{"jp":"健康のために毎日体を動かします。","id":"Demi kesehatan, saya menggerakkan tubuh setiap hari.","level":"n5","tags":["kesehatan"]}],
+      {"jp":"健康のために毎日体を動かします。","id":"Demi kesehatan, saya menggerakkan tubuh setiap hari.","level":"n5","tags":["kesehatan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -22831,7 +30719,7 @@ window.vocabN5 = [
   nuance: 'Can mean hand or arm depending on the context. Also used in idioms related to helping or skill.',
   conj_type: null,
   examples: [
-      { jp: '走って！', en: 'Run.', id: '[TBD]' },{"jp":"ご飯を食べる前に、手をきれいに洗います。","id":"Sebelum makan nasi, saya mencuci tangan sampai bersih.","level":"n5","tags":["kesehatan","kehidupan-sehari"]}],
+      {"jp":"ご飯を食べる前に、手をきれいに洗います。","id":"Sebelum makan nasi, saya mencuci tangan sampai bersih.","level":"n5","tags":["kesehatan","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -22861,7 +30749,7 @@ window.vocabN5 = [
   nuance: 'Refers to both the foot and the entire leg. Written as 足 for foot and 脚 for leg, though often just written in hiragana for simplicity.',
   conj_type: null,
   examples: [
-      { jp: 'あしたは家に居るつもりだ。', en: 'I will stay home tomorrow.', id: '[TBD]' },{"jp":"階段から落ちて、足を怪我しました。","id":"Saya jatuh dari tangga dan melukai kaki saya.","level":"n5","tags":["kesehatan"]}],
+      {"jp":"階段から落ちて、足を怪我しました。","id":"Saya jatuh dari tangga dan melukai kaki saya.","level":"n5","tags":["kesehatan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -22889,7 +30777,7 @@ window.vocabN5 = [
   nuance: 'Refers to the physical eye. Also used in various idioms related to sight, observation, or experience.',
   conj_type: null,
   examples: [
-      { jp: 'やめろ！', en: 'Stop!', id: '[TBD]' },{"jp":"パソコンを長く使ったので、目が疲れました。","id":"Karena memakai komputer lama, mata saya lelah.","level":"n5","tags":["kesehatan","pekerjaan"]}],
+      {"jp":"パソコンを長く使ったので、目が疲れました。","id":"Karena memakai komputer lama, mata saya lelah.","level":"n5","tags":["kesehatan","pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -22918,7 +30806,7 @@ window.vocabN5 = [
   nuance: 'Refers to the ear. Often used in idioms related to hearing, listening, or acquiring information.',
   conj_type: null,
   examples: [
-      { jp: 'そんなみみっちいこと言うな。', en: 'Don\'t be so stingy.', id: '[TBD]' },{"jp":"イヤホンを外して、耳を休ませます。","id":"Saya melepas earphone dan mengistirahatkan telinga.","level":"n5","tags":["kesehatan","kehidupan-sehari"]}],
+      {"jp":"イヤホンを外して、耳を休ませます。","id":"Saya melepas earphone dan mengistirahatkan telinga.","level":"n5","tags":["kesehatan","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -22947,7 +30835,7 @@ window.vocabN5 = [
   nuance: 'Refers to teeth. Usually written in kanji as 歯.',
   conj_type: null,
   examples: [
-      { jp: 'こんにちは。', en: 'Hi.', id: '[TBD]' },{"jp":"毎食の後で、歯をきれいに磨きます。","id":"Setelah setiap kali makan, saya menyikat gigi sampai bersih.","level":"n5","tags":["kesehatan","kehidupan-sehari"]}],
+      {"jp":"毎食の後で、歯をきれいに磨きます。","id":"Setelah setiap kali makan, saya menyikat gigi sampai bersih.","level":"n5","tags":["kesehatan","kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -22977,7 +30865,7 @@ window.vocabN5 = [
   nuance: 'Refers to the mouth. Also means an opening or entrance when used as a suffix in compound words (e.g., 出口 - deguchi / exit).',
   conj_type: null,
   examples: [
-      { jp: '行かなくちゃ。', en: 'I must go.', id: '[TBD]' },{"jp":"歯医者で大きく口を開けました。","id":"Saya membuka mulut lebar-lebar di dokter gigi.","level":"n5","tags":["kesehatan"]}],
+      {"jp":"歯医者で大きく口を開けました。","id":"Saya membuka mulut lebar-lebar di dokter gigi.","level":"n5","tags":["kesehatan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -23006,7 +30894,7 @@ window.vocabN5 = [
   nuance: 'A loanword for pockets in clothing or bags.',
   conj_type: null,
   examples: [
-      { jp: 'ポケットを確認して。', en: 'Check your pockets.', id: '[TBD]' },{"jp":"ズボンのポケットに財布を入れました。","id":"Saya memasukkan dompet ke dalam saku celana.","level":"n5","tags":["kehidupan-sehari"]}],
+      {"jp":"ズボンのポケットに財布を入れました。","id":"Saya memasukkan dompet ke dalam saku celana.","level":"n5","tags":["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -23134,7 +31022,7 @@ window.vocabN5 = [
   nuance: 'Taman umum untuk rekreasi.',
   conj_type: null,
   examples: [
-      { jp: '公園に行っておいで。', en: 'Go to the park.', id: '[TBD]' },{"jp": "公園で遊びました。", "id": "Saya bermain di taman.", "level": "n5", "tags": ["kegiatan"]}],
+      {"jp": "公園で遊びました。", "id": "Saya bermain di taman.", "level": "n5", "tags": ["kegiatan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -23163,7 +31051,7 @@ window.vocabN5 = [
   nuance: 'Refers to airplanes. The kanji literally mean \'flying machine\'.',
   conj_type: null,
   examples: [
-      { jp: '飛行機が見えた。', en: 'I saw a plane.', id: '[TBD]' },{"jp": "飛行機で日本に来ました。", "id": "Saya datang ke Jepang dengan pesawat.", "level": "n5", "tags": ["perjalanan"]}],
+      {"jp": "飛行機で日本に来ました。", "id": "Saya datang ke Jepang dengan pesawat.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -23191,7 +31079,7 @@ window.vocabN5 = [
   nuance: 'A general term for boats and ships. Different kanji may be used to distinguish between small boats (舟) and larger ships (船).',
   conj_type: null,
   examples: [
-      { jp: '船を離れろ。', en: 'Abandon ship!', id: '[TBD]' },{"jp": "船で島に行きます。", "id": "Saya pergi ke pulau dengan kapal.", "level": "n5", "tags": ["perjalanan"]}],
+      {"jp": "船で島に行きます。", "id": "Saya pergi ke pulau dengan kapal.", "level": "n5", "tags": ["perjalanan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -23218,7 +31106,7 @@ window.vocabN5 = [
   nuance: 'Refers to music in general. The kanji mean \'sound\' and \'comfort/enjoyment\'.',
   conj_type: null,
   examples: [
-      { jp: '音楽が聞こえる。', en: 'I hear music.', id: '[TBD]' },{"jp": "音楽を聴くのが好きです。", "id": "Saya suka mendengarkan musik.", "level": "n5", "tags": ["hiburan"]}],
+      {"jp": "音楽を聴くのが好きです。", "id": "Saya suka mendengarkan musik.", "level": "n5", "tags": ["hiburan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -23247,7 +31135,7 @@ window.vocabN5 = [
   nuance: 'A theme park or amusement park. Combines kanji for \'play\', \'park/garden\', and \'ground\'.',
   conj_type: null,
   examples: [
-      { jp: 'その遊園地を建設するのに１０年かかった。', en: 'It took ten years to build the amusement park.', id: '[TBD]' },{"jp": "遊園地に行きたいです。", "id": "Saya ingin pergi ke taman hiburan.", "level": "n5", "tags": ["kegiatan"]}],
+      {"jp": "遊園地に行きたいです。", "id": "Saya ingin pergi ke taman hiburan.", "level": "n5", "tags": ["kegiatan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -23275,7 +31163,7 @@ window.vocabN5 = [
   nuance: 'Dipakai untuk menghitung benda tipis dan datar: kertas, piring, baju, dll.',
   conj_type: null,
   examples: [
-      { jp: '彼は三枚目だ。', en: 'He\'s a comedian.', id: '[TBD]' },{"jp": "紙を三枚ください。", "id": "Tolong berikan 3 lembar kertas.", "level": "n5", "tags": ["angka"]}],
+      {"jp": "紙を三枚ください。", "id": "Tolong berikan 3 lembar kertas.", "level": "n5", "tags": ["angka"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -35971,7 +43859,8111 @@ window.vocabN5 = [
   }
 },
 
-  // ── EXPRESSIONS (28) ────────────────────────────────────────
+// ── Staged Expansion (163) ──
+
+{
+  "id": "vg-n5-00992",
+  "word": "赤",
+  "reading": "あか",
+  "romaji": "aka",
+  "meaning_id": "merah",
+  "meaning_en": "red",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "赤インクで書いてはいけない。",
+      "id": "Jangan menulis dengan tinta merah.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "その家は赤レンガづくりです。",
+      "id": "Rumah itu dibangun dari batu bata merah.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-00995",
+  "word": "朝ごはん",
+  "reading": "あさごはん",
+  "romaji": "asagohan",
+  "meaning_id": "sarapan",
+  "meaning_en": "breakfast",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "朝ごはんにはなにがよろしいですか。",
+      "id": "What would you like for breakfast?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "朝ご飯に何を食べますか。",
+      "id": "What do you usually have for breakfast?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-00997",
+  "word": "足",
+  "reading": "あし",
+  "romaji": "ashi",
+  "meaning_id": "foot; leg",
+  "meaning_en": "foot; leg",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "また足がしびれた。",
+      "id": "My foot's asleep again!",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ヘビを見て足がすくんでしまった。",
+      "id": "I froze at the sight of the snake.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-00999",
+  "word": "頭",
+  "reading": "あたま",
+  "romaji": "atama",
+  "meaning_id": "head",
+  "meaning_en": "head",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "アリスは頭に花をさしています。",
+      "id": "Alice has a flower in her hair.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ジルはかわいいだけでなく頭もよい。",
+      "id": "Jill is smart as well as pretty.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01002",
+  "word": "兄",
+  "reading": "あに",
+  "romaji": "ani",
+  "meaning_id": "kakak laki-laki",
+  "meaning_en": "(humble) older brother",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "これは兄です。かっこいいですね。",
+      "id": "Ini adalah my brother. Handsome, isn't he?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "兄はアパートをさがしています。",
+      "id": "My brother is looking for an apartment.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01003",
+  "word": "姉",
+  "reading": "あね",
+  "romaji": "ane",
+  "meaning_id": "kakak perempuan",
+  "meaning_en": "(humble) older sister",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "先月、姉は６ポンドの男の子を生んだ。",
+      "id": "Last month my sister gave birth to a six-pound baby.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "姉は私のズボンにアイロンをかけてくれる。",
+      "id": "My sister presses my trousers.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01004",
+  "word": "アパート",
+  "reading": "アパート",
+  "romaji": "apaato",
+  "meaning_id": "apartment",
+  "meaning_en": "apartment",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "兄はアパートをさがしています。",
+      "id": "My brother is looking for an apartment.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "いいアパートね。",
+      "id": "Ini adalah a great apartment.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01009",
+  "word": "飴",
+  "reading": "あめ",
+  "romaji": "ame",
+  "meaning_id": "candy",
+  "meaning_en": "candy",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "いい子にしていたら、あめをあげよう。",
+      "id": "If you are a good girl, you shall have candy.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "息子は箱から飴を一つ取った。",
+      "id": "My son took a candy from the box.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01010",
+  "word": "雨",
+  "reading": "あめ",
+  "romaji": "ame",
+  "meaning_id": "hujan",
+  "meaning_en": "rain",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "木のおかげで雨にぬれずにすんだ。",
+      "id": "The trees kept me out of the rain.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "今すぐにも雨がふるかもしれない。",
+      "id": "It may rain any minute.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01012",
+  "word": "ありがとう",
+  "reading": "ありがとう",
+  "romaji": "arigatou",
+  "meaning_id": "Thank you",
+  "meaning_en": "Thank you",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "はるばる来てくれてありがとう。",
+      "id": "It was nice of you to come all the way.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "そうおっしゃって下さってありがとう。",
+      "id": "It's very kind of you to say so.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01015",
+  "word": "家",
+  "reading": "いえ",
+  "romaji": "ie",
+  "meaning_id": "house",
+  "meaning_en": "house",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "木立の間に家が見える。",
+      "id": "I see a house among the trees.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "母はいつも家にいるわけではない。",
+      "id": "My mother is not always at home.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01016",
+  "word": "池",
+  "reading": "いけ",
+  "romaji": "ike",
+  "meaning_id": "pond",
+  "meaning_en": "pond",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その池にはほとんど水がない。",
+      "id": "Ada little water in the pond.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この前の夏にこの池は水がなくなりました。",
+      "id": "The pond dried up last summer.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01017",
+  "word": "医者",
+  "reading": "いしゃ",
+  "romaji": "isha",
+  "meaning_id": "medical doctor",
+  "meaning_en": "medical doctor",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "医者になるつもりだったのですが。",
+      "id": "I intended to become a doctor.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "日本語の話せる医者はいますか。",
+      "id": "Do you know any doctors who speak Japanese?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01018",
+  "word": "いす",
+  "reading": "いす",
+  "romaji": "isu",
+  "meaning_id": "chair",
+  "meaning_en": "chair",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ちょっと椅子をずらしてくれない？",
+      "id": "Could you move the chair a bit?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "イスはそのままにしておきなさい。",
+      "id": "Leave the chairs as they are.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01021",
+  "word": "いちばん",
+  "reading": "いちばん",
+  "romaji": "ichiban",
+  "meaning_id": "best; first",
+  "meaning_en": "best; first",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "このリンゴがいちばんおいしい。",
+      "id": "Ini adalah the most delicious apple.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "あいつはクラスでいちばんのまぬけだ。",
+      "id": "Dia the dumbest kid in the class.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01025",
+  "word": "妹",
+  "reading": "いもうと",
+  "romaji": "imouto",
+  "meaning_id": "adik perempuan",
+  "meaning_en": "(humble) younger sister",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "男の子は妹を見下ろしがちである。",
+      "id": "Boys tend to look down on their younger sisters.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "あいつの妹、とてもかわいいね。",
+      "id": "His little sister is very cute, isn't she?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01028",
+  "word": "色",
+  "reading": "いろ",
+  "romaji": "iro",
+  "meaning_id": "colour",
+  "meaning_en": "colour",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "カメレオンはどんな色にでもなれる。",
+      "id": "The chameleon can take on any color.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この色、気に入りましたか。",
+      "id": "Do you like this color?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01030",
+  "word": "上",
+  "reading": "うえ",
+  "romaji": "ue",
+  "meaning_id": "on top of",
+  "meaning_en": "on top of",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "テーブルの上にリンゴがあります。",
+      "id": "Ada an apple on the table.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "テーブルの上にオレンジがある。",
+      "id": "Ada an orange on the table.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01032",
+  "word": "海",
+  "reading": "うみ",
+  "romaji": "umi",
+  "meaning_id": "laut",
+  "meaning_en": "sea",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "何としても海をひと目みたいものだ。",
+      "id": "I ache for a sight of the sea.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "海までは、たった１マイルです。",
+      "id": "It is no more than a mile to the sea.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01035",
+  "word": "絵",
+  "reading": "え",
+  "romaji": "e",
+  "meaning_id": "picture",
+  "meaning_en": "picture",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "絵がテーブルの上にかかっている。",
+      "id": "The picture hangs over the table.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "なぜその絵を見なかったのですか。",
+      "id": "Why didn't you look at the picture?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01036",
+  "word": "映画館",
+  "reading": "えいがかん",
+  "romaji": "eigakan",
+  "meaning_id": "cinema",
+  "meaning_en": "cinema",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その映画館は人々でいっぱいだった。",
+      "id": "The cinema was filled with people.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この近くに映画館はありますか。",
+      "id": "Are there any movie theaters near here?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01037",
+  "word": "英語",
+  "reading": "えいご",
+  "romaji": "eigo",
+  "meaning_id": "English language",
+  "meaning_en": "English language",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "アメリカでは英語を話します。",
+      "id": "They speak English in America.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "先生のように英語が話せたらなぁ。",
+      "id": "I wish I could speak English the way my teacher does.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01038",
+  "word": "エレベーター",
+  "reading": "エレベーター",
+  "romaji": "erebeetaa",
+  "meaning_id": "elevator",
+  "meaning_en": "elevator",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "エレベーターはどこですか。",
+      "id": "Where is the elevator?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私はエレベーターで下におりた。",
+      "id": "I went down by elevator.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01039",
+  "word": "鉛筆",
+  "reading": "えんぴつ",
+  "romaji": "enpitsu",
+  "meaning_id": "pencil",
+  "meaning_en": "pencil",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "えんぴつであなたの名前を書きなさい。",
+      "id": "Write your name with the pencil.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ペンか鉛筆を持っていますか。",
+      "id": "Do you have a pen or a pencil?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01042",
+  "word": "お菓子",
+  "reading": "おかし",
+  "romaji": "okashi",
+  "meaning_id": "sweets; candy",
+  "meaning_en": "sweets; candy",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "もうすこしお菓子を食べませんか。",
+      "id": "Will you have some more cake?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "このお菓子を食べてもいいですか。",
+      "id": "May I eat this cake?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01045",
+  "word": "奥さん",
+  "reading": "おくさん",
+  "romaji": "okusan",
+  "meaning_id": "(honorable) wife",
+  "meaning_en": "(honorable) wife",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "奥さんがどこかに出かけているらしいから。",
+      "id": "I think his wife is going out of town.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "奥さんがカンカンだぞ。",
+      "id": "Your wife is mad at you.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01046",
+  "word": "お酒",
+  "reading": "おさけ",
+  "romaji": "osake",
+  "meaning_id": "alcohol; rice wine",
+  "meaning_en": "alcohol; rice wine",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "マイクはお酒をやめたの？",
+      "id": "Is Mike off the bottle?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "お酒を飲んでもいいですか。",
+      "id": "Can I drink alcohol?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01047",
+  "word": "お皿",
+  "reading": "おさら",
+  "romaji": "osara",
+  "meaning_id": "plate; dish",
+  "meaning_en": "plate; dish",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "スープを入れるくぼんだお皿がありますか。",
+      "id": "Do you have a bowl for soup?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私はお皿を洗ってからテレビを見た。",
+      "id": "I watched TV after I washed the dishes.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01048",
+  "word": "お祖父さん",
+  "reading": "おじいさん",
+  "romaji": "ojiisan",
+  "meaning_id": "grandfather; male senior citizen",
+  "meaning_en": "grandfather; male senior citizen",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "おじいさんはとてもゆっくりと話す。",
+      "id": "Grandfather speaks very slowly.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "おじいさんの世話をする。",
+      "id": "I take care of my grandfather.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01049",
+  "word": "弟",
+  "reading": "おとうと",
+  "romaji": "otouto",
+  "meaning_id": "adik laki-laki",
+  "meaning_en": "younger brother",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "弟のことなんかほっときなさい。",
+      "id": "Leave him alone.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "マイクは弟にひどいいたずらをした。",
+      "id": "Mike played a bad trick on his brother.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01053",
+  "word": "おなか",
+  "reading": "おなか",
+  "romaji": "onaka",
+  "meaning_id": "stomach",
+  "meaning_en": "stomach",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "何かおなかに入れてから出かけなさい。",
+      "id": "You should put something in your stomach before you go.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ううん、もういいよ。お腹いっぱい。",
+      "id": "No, thank you. I'm full.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01056",
+  "word": "おばあさん",
+  "reading": "おばあさん",
+  "romaji": "obaasan",
+  "meaning_id": "grandmother; female senior-citizen",
+  "meaning_en": "grandmother; female senior-citizen",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "トムのおばあさんは元気そうですよ。",
+      "id": "Tom's grandmother looks healthy.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私は一人のおばあさんに会った。",
+      "id": "I met an old woman.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01057",
+  "word": "伯母さん",
+  "reading": "おばさん",
+  "romaji": "obasan",
+  "meaning_id": "aunt",
+  "meaning_en": "aunt",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "叔母さんを訪ねた時はすごいごちそうだったね。",
+      "id": "What a feast we had when we visited my aunt!",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "これクララ叔母さんのと同じネックレスじゃない？",
+      "id": "Isn't this the same necklace that Aunt Clara wears?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01058",
+  "word": "おはよう",
+  "reading": "おはよう",
+  "romaji": "ohayou",
+  "meaning_id": "(abbreviation) Good morning",
+  "meaning_en": "(abbreviation) Good morning",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "おはよう。ご飯をよそっても良いかしら？",
+      "id": "Morning. Shall I dish up?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "やぁ、トム。おはよう。",
+      "id": "Hello, Tom. Good morning.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01059",
+  "word": "お弁当",
+  "reading": "おべんとう",
+  "romaji": "obentou",
+  "meaning_id": "boxed lunch",
+  "meaning_en": "boxed lunch",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は今日、お弁当を持って来た。",
+      "id": "He brought his lunch today.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "お弁当食べたんでしょう。",
+      "id": "You have eaten lunch, haven't you?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01063",
+  "word": "外国",
+  "reading": "がいこく",
+  "romaji": "gaikoku",
+  "meaning_id": "foreign country",
+  "meaning_en": "foreign country",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あなたは外国の本を持っていますか。",
+      "id": "Do you have any foreign books?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ひとりで外国へ出かけてみなさい。",
+      "id": "You must go to a foreign country for yourself.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01064",
+  "word": "外国人",
+  "reading": "がいこくじん",
+  "romaji": "gaikokujin",
+  "meaning_id": "foreigner",
+  "meaning_en": "foreigner",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その外国人はかなりうまく日本語を話す。",
+      "id": "The foreigner speaks Japanese fairly well.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "その外国人はまるで母語のように日本語を話した。",
+      "id": "The foreigner spoke Japanese as if it were her mother tongue.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01068",
+  "word": "かぎ",
+  "reading": "かぎ",
+  "romaji": "kagi",
+  "meaning_id": "key",
+  "meaning_en": "key",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "車のカギをなくしちゃった。",
+      "id": "I've lost my car key.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ドアのカギをなくしたので家に入れない。",
+      "id": "I lost the door key, so I can't enter the house.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01071",
+  "word": "傘",
+  "reading": "かさ",
+  "romaji": "kasa",
+  "meaning_id": "payung",
+  "meaning_en": "umbrella",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "タクシーに傘を忘れてしまった。",
+      "id": "I left my umbrella in the cab.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "傘をもっていかなくてはならない。",
+      "id": "I've got to take an umbrella with me.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01072",
+  "word": "風",
+  "reading": "かぜ",
+  "romaji": "kaze",
+  "meaning_id": "wind",
+  "meaning_en": "wind",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "カーテンが風になびいた。",
+      "id": "The curtains blew in the wind.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ただの風のいたずらだよ。",
+      "id": "It's just a trick of the wind.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01073",
+  "word": "風邪",
+  "reading": "かぜ",
+  "romaji": "kaze",
+  "meaning_id": "a cold",
+  "meaning_en": "a cold",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ただの風邪でしょう。",
+      "id": "You probably just have a cold.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "かぜがなおるのに３週間かかった。",
+      "id": "It took three weeks for me to get over my cold.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01074",
+  "word": "家族",
+  "reading": "かぞく",
+  "romaji": "kazoku",
+  "meaning_id": "family",
+  "meaning_en": "family",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あなたの家族はきっと親切でしょう。",
+      "id": "Your family must be very nice.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "家族について聞いてもいいですか。",
+      "id": "May I ask about your family?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01075",
+  "word": "カップ",
+  "reading": "カップ",
+  "romaji": "kappu",
+  "meaning_id": "cup",
+  "meaning_en": "cup",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "テーブルの上にカップがある。",
+      "id": "Ada a cup on the table.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "このカップは金でできている。",
+      "id": "The cup is made of gold.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01076",
+  "word": "角",
+  "reading": "かど",
+  "romaji": "kado",
+  "meaning_id": "a corner",
+  "meaning_en": "a corner",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "角のテーブルがいいのですが。",
+      "id": "Could we have a table in the corner?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "あの角には、かつて本屋があった。",
+      "id": "There used to be a bookstore on that corner.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01077",
+  "word": "かばん",
+  "reading": "かばん",
+  "romaji": "kaban",
+  "meaning_id": "tas",
+  "meaning_en": "bag; basket",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "これはジェーンさんのかばんです。",
+      "id": "Ini adalah Jane's bag.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "このかばんは６ポンドしました。",
+      "id": "This bag cost me 6 pounds.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01078",
+  "word": "カメラ",
+  "reading": "カメラ",
+  "romaji": "kamera",
+  "meaning_id": "camera",
+  "meaning_en": "camera",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "おじさんがぼくにカメラをくれました。",
+      "id": "My uncle gave me a camera.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "このカメラはドイツでつくられた。",
+      "id": "This camera was made in Germany.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01082",
+  "word": "カレンダー",
+  "reading": "カレンダー",
+  "romaji": "karendaa",
+  "meaning_id": "calendar",
+  "meaning_en": "calendar",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "このカレンダーはどこにかけましょうか。",
+      "id": "Where shall I hang this calendar?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼はカレンダーをめくった。",
+      "id": "He turned over a calendar.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01084",
+  "word": "木",
+  "reading": "き",
+  "romaji": "ki",
+  "meaning_id": "tree; wood",
+  "meaning_en": "tree; wood",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その木には実がたわわになっていた。",
+      "id": "The tree was heavy with fruit.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "木はたとえあってもほとんどない。",
+      "id": "There were few, if any, trees.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01086",
+  "word": "北",
+  "reading": "きた",
+  "romaji": "kita",
+  "meaning_id": "north",
+  "meaning_en": "north",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その町はロンドンのすぐ北にある。",
+      "id": "The town lies just above London.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "船はまっすぐ北に向かっている。",
+      "id": "The ship is bearing due north.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01087",
+  "word": "喫茶店",
+  "reading": "きっさてん",
+  "romaji": "kissaten",
+  "meaning_id": "coffee lounge",
+  "meaning_en": "coffee lounge",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私たちは喫茶店で昼食をとった。",
+      "id": "We ate lunch in a coffee lounge.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この喫茶店でよくおしゃべりしたわね。",
+      "id": "We would often have a chat in this coffee shop.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01089",
+  "word": "九",
+  "reading": "きゅう",
+  "romaji": "kyuu",
+  "meaning_id": "nine",
+  "meaning_en": "nine",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は「九時だ」と言った。",
+      "id": "He said, \"It's nine o'clock.\"",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "九ページを開きなさい。",
+      "id": "Open your book to page nine.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01090",
+  "word": "牛肉",
+  "reading": "ぎゅうにく",
+  "romaji": "gyuuniku",
+  "meaning_id": "beef",
+  "meaning_en": "beef",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "日本人はイギリス人より牛肉を食べる。",
+      "id": "The Japanese eat more beef than the British do.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この牛肉は１ポンドにつき４ドルです。",
+      "id": "This beef is four dollars per pound.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01091",
+  "word": "牛乳",
+  "reading": "ぎゅうにゅう",
+  "romaji": "gyuunyuu",
+  "meaning_id": "milk",
+  "meaning_en": "milk",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "牛乳はバターやチーズになります。",
+      "id": "Milk is made into butter and cheese.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "牛乳をチーズとバターにする。",
+      "id": "We make milk into cheese and butter.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01093",
+  "word": "教室",
+  "reading": "きょうしつ",
+  "romaji": "kyoushitsu",
+  "meaning_id": "classroom",
+  "meaning_en": "classroom",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ＬＬ教室を使ってもよいですか。",
+      "id": "May we use the language lab?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "エアロビクス教室に一日入学したいのですが。",
+      "id": "I'd like to try out the aerobics class for a day.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01094",
+  "word": "兄弟",
+  "reading": "きょうだい",
+  "romaji": "kyoudai",
+  "meaning_id": "(humble) siblings",
+  "meaning_en": "(humble) siblings",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あなたは何人兄弟がいますか。",
+      "id": "How many siblings do you have?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "あの人はトムの兄弟にちがいない。",
+      "id": "He must be Tom's brother.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01099",
+  "word": "キロ",
+  "reading": "キロ",
+  "romaji": "kiro",
+  "meaning_id": "kilometre; kilogram",
+  "meaning_en": "kilometre; kilogram",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ヘレンはせいぜい４０キロだ。",
+      "id": "Helen weighs not more than 40 kilograms.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この車は時速６０キロで走っている。",
+      "id": "This car is going 60km an hour.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01100",
+  "word": "銀行",
+  "reading": "ぎんこう",
+  "romaji": "ginkou",
+  "meaning_id": "bank",
+  "meaning_en": "bank",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "銀行にどれだけお金がありますか。",
+      "id": "How much money do you have in the bank?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "銀行でお金をおろさなくちゃ。",
+      "id": "I have to withdraw some cash from the bank.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01102",
+  "word": "薬",
+  "reading": "くすり",
+  "romaji": "kusuri",
+  "meaning_id": "medicine",
+  "meaning_en": "medicine",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "４時間おきにこの薬をのみなさい。",
+      "id": "Take this medicine every four hours.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "薬がなくなったら来てください。",
+      "id": "Come back again when you finish your medicine.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01104",
+  "word": "口",
+  "reading": "くち",
+  "romaji": "kuchi",
+  "meaning_id": "mouth; opening",
+  "meaning_en": "mouth; opening",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "口にものをほおばってしゃべるな。",
+      "id": "Don't speak with your mouth full.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "なぜ、あなたの口はそんなに大きいの？",
+      "id": "Why is your mouth so big?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01105",
+  "word": "クラス",
+  "reading": "クラス",
+  "romaji": "kurasu",
+  "meaning_id": "class",
+  "meaning_en": "class",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あいつはクラスでいちばんのまぬけだ。",
+      "id": "Dia the dumbest kid in the class.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "このクラスには何人の男の子がいますか。",
+      "id": "How many boys are there in this class?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01106",
+  "word": "車",
+  "reading": "くるま",
+  "romaji": "kuruma",
+  "meaning_id": "mobil",
+  "meaning_en": "car; vehicle",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "車のわきの男の子をごらんなさい。",
+      "id": "Look at the boy beside the car.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "トレーラーがその車についている。",
+      "id": "The trailer goes with the car.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01107",
+  "word": "黒",
+  "reading": "くろ",
+  "romaji": "kuro",
+  "meaning_id": "hitam",
+  "meaning_en": "black",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "黒に黒をたしても白にはならぬ。",
+      "id": "Two blacks do not make a white.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "赤と黒のマジックかサインペン持ってない？",
+      "id": "I need red and black markers or felt-tip pens. Do you have any?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01112",
+  "word": "五",
+  "reading": "ご",
+  "romaji": "go",
+  "meaning_id": "five",
+  "meaning_en": "five",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "どこかは今五時だろう。",
+      "id": "It's five o'clock somewhere now.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "これは日本円で五千円です。",
+      "id": "Ini adalah five thousand yen in the Japanese Yen.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01113",
+  "word": "コーヒー",
+  "reading": "コーヒー",
+  "romaji": "koohii",
+  "meaning_id": "kopi",
+  "meaning_en": "coffee",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "そのコーヒーはいいにおいがする。",
+      "id": "That coffee smells good.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "コーヒーをもういっぱいください。",
+      "id": "Give me another cup of coffee.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01116",
+  "word": "ごちそうさま",
+  "reading": "ごちそうさま",
+  "romaji": "gochisousama",
+  "meaning_id": "feast",
+  "meaning_en": "feast",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "コーヒー、ごちそうさまでした。",
+      "id": "Thank you for the coffee.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "もうごちそうさましなさい。",
+      "id": "Now, say thank you for the meal.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01117",
+  "word": "コップ",
+  "reading": "コップ",
+  "romaji": "koppu",
+  "meaning_id": "a glass",
+  "meaning_en": "a glass",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "コップを使います。",
+      "id": "Menggunakan a glass.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01123",
+  "word": "こんにちは",
+  "reading": "こんにちは",
+  "romaji": "konnichiwa",
+  "meaning_id": "hello; good day (daytime greeting, id)",
+  "meaning_en": "hello; good day (daytime greeting, id)",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "こんにちはジョージ、どう？",
+      "id": "Hi, George! How's it going?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "こんにちは、ジャッキー・スコットさんですか。",
+      "id": "Hello. Are you Jackie Scott?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01124",
+  "word": "こんばんは",
+  "reading": "こんばんは",
+  "romaji": "konbanwa",
+  "meaning_id": "good evening",
+  "meaning_en": "good evening",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "シカゴのみなさん、こんばんは。",
+      "id": "Hello, Chicago!",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "こんばんは。",
+      "id": "Good evening.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01125",
+  "word": "財布",
+  "reading": "さいふ",
+  "romaji": "saifu",
+  "meaning_id": "wallet",
+  "meaning_en": "wallet",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "サイフがないのにふと気がついた。",
+      "id": "He suddenly noticed his wallet was missing.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "財布とパスポートがなくなってます。",
+      "id": "My wallet and passport are missing.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01126",
+  "word": "魚",
+  "reading": "さかな",
+  "romaji": "sakana",
+  "meaning_id": "ikan",
+  "meaning_en": "fish",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "日本人は魚をたくさん食べますか。",
+      "id": "Do Japanese eat a lot of fish?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "魚は水中でなければ生きられない。",
+      "id": "Fish cannot live out of water.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01127",
+  "word": "砂糖",
+  "reading": "さとう",
+  "romaji": "satou",
+  "meaning_id": "sugar",
+  "meaning_en": "sugar",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ポットにはあまり砂糖がなかった。",
+      "id": "There wasn't much sugar in the pot.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "砂糖なしですまさなければならない。",
+      "id": "We have to do without sugar.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01129",
+  "word": "さようなら",
+  "reading": "さようなら",
+  "romaji": "sayounara",
+  "meaning_id": "good-bye",
+  "meaning_en": "good-bye",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "では今晩またね、さようなら。",
+      "id": "See you tonight, then. Cheers!",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "さようなら。また会いましょう。",
+      "id": "I'll be seeing you.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01131",
+  "word": "三",
+  "reading": "さん",
+  "romaji": "san",
+  "meaning_id": "three",
+  "meaning_en": "three",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "二、三デメリットがありますね。",
+      "id": "Ada a few disadvantages to it.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この本は三千円する。",
+      "id": "This book costs 3,000 yen.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01132",
+  "word": "四",
+  "reading": "し",
+  "romaji": "shi",
+  "meaning_id": "four",
+  "meaning_en": "four",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "列車でならここからたった四分だ。",
+      "id": "It's only four minutes from here by train.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "月に三ないし四回映画を見に行く。",
+      "id": "I go to the movies three or four times a month.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01133",
+  "word": "塩",
+  "reading": "しお",
+  "romaji": "shio",
+  "meaning_id": "salt",
+  "meaning_en": "salt",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "このスープは塩が少し足りない。",
+      "id": "This soup wants a bit of salt.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "塩をこっちへまわしてくれませんか。",
+      "id": "Pass me the salt, would you?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01134",
+  "word": "しかし",
+  "reading": "しかし",
+  "romaji": "shikashi",
+  "meaning_id": "however",
+  "meaning_en": "however",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "しかしこの本をしまっておきなさい。",
+      "id": "However, please put this book away first.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "しかし、人間はちがっている。",
+      "id": "But human beings are different.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01135",
+  "word": "時間",
+  "reading": "じかん",
+  "romaji": "jikan",
+  "meaning_id": "time",
+  "meaning_en": "time",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "いつだって読書の時間は見つけられる。",
+      "id": "We can always find time for reading.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "時間がたつのに気がつかなかった。",
+      "id": "I took no note of the time.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01137",
+  "word": "七",
+  "reading": "しち",
+  "romaji": "shichi",
+  "meaning_id": "seven",
+  "meaning_en": "seven",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "どういっても七時までにいかないと。",
+      "id": "However we go, we must get there by seven.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ちょうど七時半です。",
+      "id": "It is just half past seven.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01138",
+  "word": "自転車",
+  "reading": "じてんしゃ",
+  "romaji": "jitensha",
+  "meaning_id": "sepeda",
+  "meaning_en": "bicycle",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ぼくの自転車はパンクしている。",
+      "id": "My bicycle has a flat tire.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "マユコは自転車で学校にいく。",
+      "id": "Mayuko goes to school by bicycle.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01139",
+  "word": "自動車",
+  "reading": "じどうしゃ",
+  "romaji": "jidousha",
+  "meaning_id": "automobile",
+  "meaning_en": "automobile",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "自動車にひかれたのではないですか。",
+      "id": "Wasn't he killed by a car?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ぼくの自動車はずいぶんガソリンをくう。",
+      "id": "My car burns a lot of gas.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01144",
+  "word": "じゃ",
+  "reading": "じゃ",
+  "romaji": "ja",
+  "meaning_id": "well then…",
+  "meaning_en": "well then…",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "じゃあ、キーをもらえますか。",
+      "id": "Can I have the key now, please?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "じゃまた後から来ます。",
+      "id": "Then I'll come again later.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01145",
+  "word": "シャワー",
+  "reading": "シャワー",
+  "romaji": "shawaa",
+  "meaning_id": "shower",
+  "meaning_en": "shower",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "シャワーの水が出ません。",
+      "id": "There's no water coming out of the shower.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "シャワーにするわ。",
+      "id": "I'll take a shower.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01146",
+  "word": "十",
+  "reading": "じゅう",
+  "romaji": "juu",
+  "meaning_id": "ten",
+  "meaning_en": "ten",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その会は十時に終わった。",
+      "id": "The party ended at ten o'clock.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "日本に来てから十年になります。",
+      "id": "It is ten years since he came to Japan.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01148",
+  "word": "宿題",
+  "reading": "しゅくだい",
+  "romaji": "shukudai",
+  "meaning_id": "homework",
+  "meaning_en": "homework",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "宿題はもうやってしまいましたか。",
+      "id": "Have you done your assignment yet?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "やるべき宿題がたくさんあります。",
+      "id": "I have a lot of homework to do.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01150",
+  "word": "しょうゆ",
+  "reading": "しょうゆ",
+  "romaji": "shouyu",
+  "meaning_id": "soy sauce",
+  "meaning_en": "soy sauce",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "同社は醤油その他の食品を生産する。",
+      "id": "The company produces soy sauce and other food products.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01151",
+  "word": "食堂",
+  "reading": "しょくどう",
+  "romaji": "shokudou",
+  "meaning_id": "dining hall",
+  "meaning_en": "dining hall",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "食堂はセルフサービスでした。",
+      "id": "The cafeteria was self-service.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "食堂は何時にあきますか。",
+      "id": "What time does the dining room open?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01152",
+  "word": "白",
+  "reading": "しろ",
+  "romaji": "shiro",
+  "meaning_id": "putih",
+  "meaning_en": "white",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "黒に黒をたしても白にはならぬ。",
+      "id": "Two blacks do not make a white.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "赤白まだらのタオルを一本ください。",
+      "id": "A red and spotted white towel, please.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01154",
+  "word": "新聞",
+  "reading": "しんぶん",
+  "romaji": "shinbun",
+  "meaning_id": "newspaper",
+  "meaning_en": "newspaper",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ジョンのことが新聞に出ていた。",
+      "id": "John was mentioned in the paper.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "新聞はもうおすみになりましたか。",
+      "id": "Are you through with the paper?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01159",
+  "word": "スポーツ",
+  "reading": "スポーツ",
+  "romaji": "supootsu",
+  "meaning_id": "sport",
+  "meaning_en": "sport",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ビリーはスポーツがうまいです。",
+      "id": "Billy is good at sports.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "どのようなスポーツをなさいますか。",
+      "id": "What sports do you go in for?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01162",
+  "word": "スリッパ",
+  "reading": "スリッパ",
+  "romaji": "surippa",
+  "meaning_id": "slippers",
+  "meaning_en": "slippers",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "スリッパをはいてください。",
+      "id": "Tolong put on your slippers.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "スリッパでロビーに降りたらだめだよ。",
+      "id": "You're not supposed to wear your slippers down to the lobby.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01164",
+  "word": "生徒",
+  "reading": "せいと",
+  "romaji": "seito",
+  "meaning_id": "pupil",
+  "meaning_en": "pupil",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この学校はたくさんの生徒がいます。",
+      "id": "This school has many students.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "あなたは生徒ではありません。",
+      "id": "You are not a student.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01169",
+  "word": "先生",
+  "reading": "せんせい",
+  "romaji": "sensei",
+  "meaning_id": "guru",
+  "meaning_en": "teacher; doctor",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "校長が先生の後ろから入ってきた。",
+      "id": "The principal came in after the teacher.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "あの先生の話にはうんざりするよ。",
+      "id": "That Prof.'s talk is driving me up the wall.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01171",
+  "word": "そうして",
+  "reading": "そうして",
+  "romaji": "soushite",
+  "meaning_id": "and",
+  "meaning_en": "and",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "そうしてくださればとてもうれしい。",
+      "id": "I can't be sorry.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "そうしてくれて君は親切ですね。",
+      "id": "It is kind of you to do so.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01172",
+  "word": "外",
+  "reading": "そと",
+  "romaji": "soto",
+  "meaning_id": "outside",
+  "meaning_en": "outside",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "外に出してやってくれませんか。",
+      "id": "Could you let him out?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "テントの中ではなくて外で食べよう。",
+      "id": "Let's eat outside instead of in our tents.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01174",
+  "word": "大使館",
+  "reading": "たいしかん",
+  "romaji": "taishikan",
+  "meaning_id": "embassy",
+  "meaning_en": "embassy",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "日本大使館はどこにありますか。",
+      "id": "Where is the Japanese Embassy?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼はアメリカ大使館に出入りしている。",
+      "id": "He has access to the American Embassy.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01178",
+  "word": "タクシー",
+  "reading": "タクシー",
+  "romaji": "takushii",
+  "meaning_id": "taxi",
+  "meaning_en": "taxi",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "そのタクシーはいきなり左に曲がった。",
+      "id": "The taxi abruptly turned left.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ここでタクシーをつかまえられますか。",
+      "id": "Can I catch a taxi here?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01181",
+  "word": "建物",
+  "reading": "たてもの",
+  "romaji": "tatemono",
+  "meaning_id": "building",
+  "meaning_en": "building",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "建物がとっても小さく見えるよ。",
+      "id": "The buildings look so tiny.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "リンダは建物の中に入って来ました。",
+      "id": "Linda came into the building.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01184",
+  "word": "誕生日",
+  "reading": "たんじょうび",
+  "romaji": "tanjoubi",
+  "meaning_id": "birthday",
+  "meaning_en": "birthday",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "誕生日とは人が生まれた日のことだ。",
+      "id": "The birthday is the day on which a person was born.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "これ誕生日のプレゼントなんだ。",
+      "id": "Here is a present for your birthday.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01189",
+  "word": "地下鉄",
+  "reading": "ちかてつ",
+  "romaji": "chikatetsu",
+  "meaning_id": "underground train",
+  "meaning_en": "underground train",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "地下鉄で行きたいのです。",
+      "id": "Saya ingin get there by subway.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "地下鉄から出るのに私はもがいた。",
+      "id": "I struggled to get out of the subway.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01190",
+  "word": "地図",
+  "reading": "ちず",
+  "romaji": "chizu",
+  "meaning_id": "map",
+  "meaning_en": "map",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この大きなアメリカの地図を見て。",
+      "id": "Look at this large map of America.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ちょっとこの地図を見なさい。",
+      "id": "Take a look at this map.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01191",
+  "word": "ちゃわん",
+  "reading": "ちゃわん",
+  "romaji": "chawan",
+  "meaning_id": "rice bowl",
+  "meaning_en": "rice bowl",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この茶わんはなんとすばらしいのでしょう。",
+      "id": "How nice this cup is!",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "テーブルの上に茶碗があります。",
+      "id": "Ada a cup on the table.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01198",
+  "word": "手",
+  "reading": "て",
+  "romaji": "te",
+  "meaning_id": "hand",
+  "meaning_en": "hand",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ここに手のないナベがある。",
+      "id": "Here is a pan without handles.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "いい手を思いついた。",
+      "id": "I hit upon a good idea.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01199",
+  "word": "手紙",
+  "reading": "てがみ",
+  "romaji": "tegami",
+  "meaning_id": "letter",
+  "meaning_en": "letter",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "書かねばならない手紙があります。",
+      "id": "I have to write a letter.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "フレッドは母に長い手紙を書いた。",
+      "id": "Fred wrote his mother a long letter.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01202",
+  "word": "デパート",
+  "reading": "デパート",
+  "romaji": "depaato",
+  "meaning_id": "department store",
+  "meaning_en": "department store",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あのデパートで新しいコートを買いたい。",
+      "id": "I would like to buy a new coat at that department store.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "そのデパートの前に書店がある。",
+      "id": "Ada a bookstore in front of the department store.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01203",
+  "word": "でも",
+  "reading": "でも",
+  "romaji": "demo",
+  "meaning_id": "but",
+  "meaning_en": "but",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "どんな人でもいないよりはましだ。",
+      "id": "Anybody would be better than nobody.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "どんなベッドでもないよりはよい。",
+      "id": "Any bed is better than no bed.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01205",
+  "word": "テレビ",
+  "reading": "テレビ",
+  "romaji": "terebi",
+  "meaning_id": "television",
+  "meaning_en": "television",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あなたはどこでテレビを見ますか。",
+      "id": "Where do you watch television?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "テレビはここでは見られていない。",
+      "id": "TV is not watched here.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01206",
+  "word": "天気",
+  "reading": "てんき",
+  "romaji": "tenki",
+  "meaning_id": "cuaca",
+  "meaning_en": "weather",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "今日が天気ならいいのに。",
+      "id": "I wish it were fine today.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "一日いい天気になりそうですよ。",
+      "id": "I think it's going to be a nice day.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01207",
+  "word": "電車",
+  "reading": "でんしゃ",
+  "romaji": "densha",
+  "meaning_id": "electric train",
+  "meaning_en": "electric train",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "電車の中ですりにやられちゃったんだ。",
+      "id": "I had my pocket picked on the train.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "電車でポケットの中にあるものをすられた。",
+      "id": "I had my pocket picked in the train.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01209",
+  "word": "ドア",
+  "reading": "ドア",
+  "romaji": "doa",
+  "meaning_id": "Western style door",
+  "meaning_en": "Western style door",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "入る前にドアをノックして下さい。",
+      "id": "Tolong knock on the door before you enter.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ドアをあけてくださいませんか。",
+      "id": "Will you open the door?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01212",
+  "word": "動物",
+  "reading": "どうぶつ",
+  "romaji": "doubutsu",
+  "meaning_id": "animal",
+  "meaning_en": "animal",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私はその動物の名前を知っている。",
+      "id": "I know the name of this animal.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "人は何よりもまず話す動物である。",
+      "id": "Man is above all things the talking animal.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01213",
+  "word": "どうも",
+  "reading": "どうも",
+  "romaji": "doumo",
+  "meaning_id": "thanks",
+  "meaning_en": "thanks",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あの二人はどうもできているらしい。",
+      "id": "They seem to be in love with each other.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "先生、どうもありがとうございました。",
+      "id": "Thank you very much, doctor.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01215",
+  "word": "図書館",
+  "reading": "としょかん",
+  "romaji": "toshokan",
+  "meaning_id": "library",
+  "meaning_en": "library",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "図書館の中で話をしてはいけない。",
+      "id": "We must not speak in the library.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "図書館にはたくさんの本があります。",
+      "id": "Ada a lot of books in the library.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01218",
+  "word": "鳥",
+  "reading": "とり",
+  "romaji": "tori",
+  "meaning_id": "bird",
+  "meaning_en": "bird",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "なんてきれいな鳥なんだろう。",
+      "id": "What a beautiful bird it is!",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "木の中でさえずっている鳥を見てごらん。",
+      "id": "Look at the bird singing in the tree.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01220",
+  "word": "中",
+  "reading": "なか",
+  "romaji": "naka",
+  "meaning_id": "middle",
+  "meaning_en": "middle",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "テントの中ではなくて外で食べよう。",
+      "id": "Let's eat outside instead of in our tents.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "かごの中にはほとんどリンゴがない。",
+      "id": "Ada few apples in the basket.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01223",
+  "word": "など",
+  "reading": "など",
+  "romaji": "nado",
+  "meaning_id": "et cetera",
+  "meaning_en": "et cetera",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ぬくもりなどどこにも見つからない。",
+      "id": "I can't find anything like warmth anywhere.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この雨の中を外出などできるものじゃない。",
+      "id": "Going out in this rain is out of the question.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01228",
+  "word": "何",
+  "reading": "なん",
+  "romaji": "nan",
+  "meaning_id": "what",
+  "meaning_en": "what",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "学校の前に何本か木が見えます。",
+      "id": "You see some trees in front of the school.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "「ユリ」を英語で何といいますか。",
+      "id": "What do you call \"yuri\" in English?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01230",
+  "word": "西",
+  "reading": "にし",
+  "romaji": "nishi",
+  "meaning_id": "west",
+  "meaning_en": "west",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "列車は西へ走っていた。",
+      "id": "The train was hurrying west.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "駅はホテルの西の方にある。",
+      "id": "The station is to the west of the hotel.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01232",
+  "word": "ニュース",
+  "reading": "ニュース",
+  "romaji": "nyuusu",
+  "meaning_id": "news",
+  "meaning_en": "news",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "そのニュースはラジオで聞いたよ。",
+      "id": "I heard the news on the radio.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "あのテレビニュースはいかがです？",
+      "id": "How do you like that TV news program?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01234",
+  "word": "猫",
+  "reading": "ねこ",
+  "romaji": "neko",
+  "meaning_id": "cat",
+  "meaning_en": "cat",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "猫はにゃーにゃーいいつづけた。",
+      "id": "The cat continued to mew.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "猫がソファーでねむっている。",
+      "id": "The cat is sleeping on the sofa.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01235",
+  "word": "ノート",
+  "reading": "ノート",
+  "romaji": "nooto",
+  "meaning_id": "notebook; exercise book",
+  "meaning_en": "notebook; exercise book",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "これらの語をノートに書きなさい。",
+      "id": "Write these words in your notebook.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "あなたのノートを見せてください。",
+      "id": "Tolong show me your notebook.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01236",
+  "word": "歯",
+  "reading": "は",
+  "romaji": "ha",
+  "meaning_id": "tooth",
+  "meaning_en": "tooth",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その赤ちゃんは歯が生えはじめている。",
+      "id": "The baby is cutting his teeth.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "歯をくいしばってください。",
+      "id": "Bite together, please.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01238",
+  "word": "はし",
+  "reading": "はし",
+  "romaji": "hashi",
+  "meaning_id": "chopsticks",
+  "meaning_en": "chopsticks",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "パーカーさんは箸で食べてみました。",
+      "id": "Mr Parker tried eating with chopsticks.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ルーシーは箸が使えないんだ。",
+      "id": "Lucy cannot use chopsticks.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01239",
+  "word": "橋",
+  "reading": "はし",
+  "romaji": "hashi",
+  "meaning_id": "bridge",
+  "meaning_en": "bridge",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その橋はどれくらいの長さですか。",
+      "id": "How long is the bridge?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "その橋は長さが１００メートルある。",
+      "id": "The bridge has a span of 100 meters.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01244",
+  "word": "バス",
+  "reading": "バス",
+  "romaji": "basu",
+  "meaning_id": "bus",
+  "meaning_en": "bus",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "バス通学と積極的差別是正措置などが論争の多い話題だった。",
+      "id": "School busing and taking a proactive stance against discrimination were hotly debated topics.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01246",
+  "word": "八",
+  "reading": "はち",
+  "romaji": "hachi",
+  "meaning_id": "eight",
+  "meaning_en": "eight",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "そのハイキングは八時間もかかるでしょう。",
+      "id": "The hike will take no less than eight hours.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "それは八時から十時の間に起こった。",
+      "id": "It happened between eight and ten.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01247",
+  "word": "鼻",
+  "reading": "はな",
+  "romaji": "hana",
+  "meaning_id": "nose",
+  "meaning_en": "nose",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "鼻が出ているよ。かみなさい。",
+      "id": "Your nose is running. Blow it.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "鼻にポリープがあるようです。",
+      "id": "I'm afraid I have a polyp in my nose.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01248",
+  "word": "話",
+  "reading": "はなし",
+  "romaji": "hanashi",
+  "meaning_id": "talk; story",
+  "meaning_en": "talk; story",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "話を聞かせてくれ。",
+      "id": "I want a full report though.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "話があったら電話をかけて下さい。",
+      "id": "If you want to speak to me, please call me up.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01251",
+  "word": "パン",
+  "reading": "パン",
+  "romaji": "pan",
+  "meaning_id": "roti",
+  "meaning_en": "bread",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "パンを使います。",
+      "id": "Menggunakan roti.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01253",
+  "word": "東",
+  "reading": "ひがし",
+  "romaji": "higashi",
+  "meaning_id": "east",
+  "meaning_en": "east",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その市はロンドンの東にある。",
+      "id": "The city lies east of London.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "東の空が白み始めていた。",
+      "id": "The eastern sky was getting light.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01255",
+  "word": "飛行機",
+  "reading": "ひこうき",
+  "romaji": "hikouki",
+  "meaning_id": "aeroplane",
+  "meaning_en": "aeroplane",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あなたは飛行機で旅行したことがありますか。",
+      "id": "Have you ever traveled by air?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "飛行機はまもなく見えなくなった。",
+      "id": "The airplane soon went out of sight.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01256",
+  "word": "左",
+  "reading": "ひだり",
+  "romaji": "hidari",
+  "meaning_id": "left hand side",
+  "meaning_en": "left hand side",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "アラビア語は右から左へ書きます。",
+      "id": "Arabic is written from right to left.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "入るお金が右から左へと出てしまう。",
+      "id": "I spend money as soon as I get it.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01257",
+  "word": "人",
+  "reading": "ひと",
+  "romaji": "hito",
+  "meaning_id": "person",
+  "meaning_en": "person",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "どんな人でもいないよりはましだ。",
+      "id": "Anybody would be better than nobody.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "お前はすぐ人のせいにするからな。",
+      "id": "You always try to blame somebody else.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01258",
+  "word": "百",
+  "reading": "ひゃく",
+  "romaji": "hyaku",
+  "meaning_id": "hundred",
+  "meaning_en": "hundred",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "百年後にはみな同じになる。",
+      "id": "It will be all the same a hundred years hence.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "百歳まで生きる人はほとんどいません。",
+      "id": "Few people live to be 100 years old.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01259",
+  "word": "病院",
+  "reading": "びょういん",
+  "romaji": "byouin",
+  "meaning_id": "rumah sakit",
+  "meaning_en": "hospital",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この近くに病院はありますか。",
+      "id": "Is there a hospital near here?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "病院まで１０マイルもある。",
+      "id": "It is no less than ten miles to the hospital.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01260",
+  "word": "プール",
+  "reading": "プール",
+  "romaji": "puuru",
+  "meaning_id": "swimming pool",
+  "meaning_en": "swimming pool",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "サウナとプールがあります。",
+      "id": "There's a sauna and a pool.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "それはこころをひきつけるようなプールだ。",
+      "id": "That pool really looks inviting.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01264",
+  "word": "ふろ",
+  "reading": "ふろ",
+  "romaji": "furo",
+  "meaning_id": "bath",
+  "meaning_en": "bath",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私は一日おきにふろに入ります。",
+      "id": "I have a bath every other day.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼はふろに水を入れた。",
+      "id": "He ran water into the bathtub.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01266",
+  "word": "ベッド",
+  "reading": "ベッド",
+  "romaji": "beddo",
+  "meaning_id": "bed",
+  "meaning_en": "bed",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "どんなベッドでもないよりはよい。",
+      "id": "Any bed is better than no bed.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "もうベッドにつかなくてはなりません。",
+      "id": "I'd better go to bed now.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01267",
+  "word": "部屋",
+  "reading": "へや",
+  "romaji": "heya",
+  "meaning_id": "kamar; ruangan",
+  "meaning_en": "room",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "マユコは部屋に入った。",
+      "id": "Mayuko entered the room.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "部屋をそのままにしておきなさい。",
+      "id": "Leave the room as it is.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01269",
+  "word": "ボールペン",
+  "reading": "ボールペン",
+  "romaji": "boorupen",
+  "meaning_id": "ball-point pen",
+  "meaning_en": "ball-point pen",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ボールペンのインクがなくなった。",
+      "id": "My ballpoint pen just ran out of ink.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ボールペンで書いていただけませんか？",
+      "id": "Will you write with a ballpoint pen?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01270",
+  "word": "ほか",
+  "reading": "ほか",
+  "romaji": "hoka",
+  "meaning_id": "other; the rest",
+  "meaning_en": "other; the rest",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ほかの女の子たちはどこにいるの。",
+      "id": "Where are the other girls?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "これはほかのどの木よりも高い。",
+      "id": "Ini adalah taller than any other tree.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01271",
+  "word": "ポケット",
+  "reading": "ポケット",
+  "romaji": "poketto",
+  "meaning_id": "pocket",
+  "meaning_en": "pocket",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ポケットに何を持っていますか。",
+      "id": "What do you have in your pocket?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "このコートにはポケットがない。",
+      "id": "The coat doesn't have any pockets.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01273",
+  "word": "ホテル",
+  "reading": "ホテル",
+  "romaji": "hoteru",
+  "meaning_id": "hotel",
+  "meaning_en": "hotel",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あなたはこのホテルのお客ですか。",
+      "id": "Are you staying at this hotel?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ヒルトンホテルまでいくらですか。",
+      "id": "How much is the fare to the Hilton Hotel?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01274",
+  "word": "本",
+  "reading": "ほん",
+  "romaji": "hon",
+  "meaning_id": "book",
+  "meaning_en": "book",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ウイスキーを１本持っています。",
+      "id": "I have a bottle of whiskey.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "本をさかさまに入れないで下さい。",
+      "id": "Don't put the books in the shelf upside down.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01275",
+  "word": "本棚",
+  "reading": "ほんだな",
+  "romaji": "hondana",
+  "meaning_id": "bookshelves",
+  "meaning_en": "bookshelves",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私は本棚の本をすべて読んだわけではない。",
+      "id": "I haven't read all the books on the shelves.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ジョンは本棚を作った。",
+      "id": "John built a bookcase.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01280",
+  "word": "前",
+  "reading": "まえ",
+  "romaji": "mae",
+  "meaning_id": "before",
+  "meaning_en": "before",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "外へ出る前に靴を磨きなさい。",
+      "id": "Shine your shoes before going out.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01285",
+  "word": "右",
+  "reading": "みぎ",
+  "romaji": "migi",
+  "meaning_id": "right side",
+  "meaning_en": "right side",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "アラビア語は右から左へ書きます。",
+      "id": "Arabic is written from right to left.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "入るお金が右から左へと出てしまう。",
+      "id": "I spend money as soon as I get it.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01286",
+  "word": "水",
+  "reading": "みず",
+  "romaji": "mizu",
+  "meaning_id": "air",
+  "meaning_en": "water",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ひざに水がたまっているようです。",
+      "id": "I'm afraid I have water in my knee joint.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "バケツに水がいっぱい入っている。",
+      "id": "The bucket is full of water.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01287",
+  "word": "店",
+  "reading": "みせ",
+  "romaji": "mise",
+  "meaning_id": "shop",
+  "meaning_en": "shop",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "店はたたまれ、それっきりだった。",
+      "id": "The store closed down for good.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "店にあるのは、これ一つだけです。",
+      "id": "It is the only one there is in the shop.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01288",
+  "word": "南",
+  "reading": "みなみ",
+  "romaji": "minami",
+  "meaning_id": "south",
+  "meaning_en": "south",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "フランスは英国の南にある。",
+      "id": "France is to the south of England.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "まもなくツバメが南からやってくる。",
+      "id": "Soon, swallows will come from the south.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01289",
+  "word": "耳",
+  "reading": "みみ",
+  "romaji": "mimi",
+  "meaning_id": "ear",
+  "meaning_en": "ear",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "なぜ、あなたの耳はそんなに大きいの？",
+      "id": "Why are your ears so big?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "耳がしもやけになったんだ。",
+      "id": "My ears are frostbitten.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01290",
+  "word": "目",
+  "reading": "め",
+  "romaji": "me",
+  "meaning_id": "eye",
+  "meaning_en": "eye",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼女はきれいな目をしている。",
+      "id": "She has beautiful eyes.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "３時間目にはフランス語があります。",
+      "id": "We have French third period.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01296",
+  "word": "門",
+  "reading": "もん",
+  "romaji": "mon",
+  "meaning_id": "gate",
+  "meaning_en": "gate",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ジョンは門のところまで出てきた。",
+      "id": "John moved forward to the gate.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "門をたたけたたくものはあけてもらえるだろう。",
+      "id": "Knock, and it will be opened to you.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01297",
+  "word": "問題",
+  "reading": "もんだい",
+  "romaji": "mondai",
+  "meaning_id": "problem",
+  "meaning_en": "problem",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "問題はお金がないということです。",
+      "id": "The trouble is that we have no money.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "そのことは問題にしたくないんだ。",
+      "id": "I don't want to make an issue of it.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01298",
+  "word": "野菜",
+  "reading": "やさい",
+  "romaji": "yasai",
+  "meaning_id": "sayuran",
+  "meaning_en": "vegetable",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その店は野菜を売っている。",
+      "id": "The store deals in vegetables.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "野菜をたくさん食べなさい。",
+      "id": "Eat a lot of vegetables.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01300",
+  "word": "休み",
+  "reading": "やすみ",
+  "romaji": "yasumi",
+  "meaning_id": "rest; holiday",
+  "meaning_en": "rest; holiday",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "学校はクリスマスで休みになった。",
+      "id": "School has closed for the Christmas holidays.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "でも休みはとったほうがいいわよ。",
+      "id": "I think you should get more rest.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01303",
+  "word": "郵便局",
+  "reading": "ゆうびんきょく",
+  "romaji": "yuubinkyoku",
+  "meaning_id": "post office",
+  "meaning_en": "post office",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あの～郵便局はどちらでしょうか。",
+      "id": "Uh..., where's the post office?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "このあたりに郵便局はありますか。",
+      "id": "Is there a post office around here?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01305",
+  "word": "雪",
+  "reading": "ゆき",
+  "romaji": "yuki",
+  "meaning_id": "salju",
+  "meaning_en": "snow",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ひどい雪のため外出できなかった。",
+      "id": "The heavy snow kept us from going out.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "雪のため、外に出られなかった。",
+      "id": "The snow kept us from going out.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01307",
+  "word": "より",
+  "reading": "より",
+  "romaji": "yori",
+  "meaning_id": "than; (used for comparison)",
+  "meaning_en": "than; (used for comparison)",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "もうこれよりほかに手はない。",
+      "id": "There's no other way than this now.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "どんなベッドでもないよりはよい。",
+      "id": "Any bed is better than no bed.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01311",
+  "word": "ラジオ",
+  "reading": "ラジオ",
+  "romaji": "rajio",
+  "meaning_id": "radio",
+  "meaning_en": "radio",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "そのニュースはラジオで聞いたよ。",
+      "id": "I heard the news on the radio.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ラジオをつけてもかまいませんか。",
+      "id": "Do you mind if I turn on the radio?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01312",
+  "word": "ラジカセ",
+  "reading": "ラジカセ",
+  "romaji": "rajikase",
+  "meaning_id": "radio cassette player",
+  "meaning_en": "radio cassette player",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "確かに今の日本では、「ラジカセ」はもう古い言葉なのかもしれない。",
+      "id": "The word \"raji-kase\", meaning radio cassette in Japan, is probably more of an antiquated term by now.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01313",
+  "word": "両親",
+  "reading": "りょうしん",
+  "romaji": "ryoushin",
+  "meaning_id": "both parents",
+  "meaning_en": "both parents",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "両親は二人ともまだ生きています。",
+      "id": "Both the parents are still living.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "両親とも生きているわけではない。",
+      "id": "Neither of my parents is alive.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01316",
+  "word": "レストラン",
+  "reading": "レストラン",
+  "romaji": "resutoran",
+  "meaning_id": "restaurant",
+  "meaning_en": "restaurant",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あのレストランはサービスがよい。",
+      "id": "They give good service at that restaurant.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "このレストランのカレーはうまいよ。",
+      "id": "The curry at this restaurant is good.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01318",
+  "word": "六",
+  "reading": "ろく",
+  "romaji": "roku",
+  "meaning_id": "six",
+  "meaning_en": "six",
+  "jlpt": "n5",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私は毎朝六時に起きます。",
+      "id": "I get up at six every morning.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "もうすぐ六時です。",
+      "id": "It's nearly six o'clock.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+  // ── EXPRESSIONS (37) ────────────────────────────────────────
 
 {
   id: 'vg-n5-00124',
@@ -35991,7 +51983,7 @@ window.vocabN5 = [
   nuance: 'Serba guna: minta perhatian, minta maaf, berterima kasih.',
   conj_type: null,
   examples: [
-      { jp: 'すみません。', en: 'Excuse me.', id: '[TBD]' },{"jp": "すみません, トイレはどこですか。", "id": "Permisi, di mana toiletnya?", "level": "n5", "tags": ["perjalanan", "sopan-santun"]}],
+      {"jp": "すみません, トイレはどこですか。", "id": "Permisi, di mana toiletnya?", "level": "n5", "tags": ["perjalanan", "sopan-santun"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -36021,7 +52013,7 @@ window.vocabN5 = [
   nuance: 'ありがとう untuk kasual. ありがとうございます untuk formal.',
   conj_type: null,
   examples: [
-      { jp: 'ありがとうございます！', en: 'Thanks.', id: '[TBD]' },{"jp": "ありがとうございます。助かりました。", "id": "Terima kasih. Sangat membantu.", "level": "n5", "tags": ["sopan-santun"]}],
+      {"jp": "ありがとうございます。助かりました。", "id": "Terima kasih. Sangat membantu.", "level": "n5", "tags": ["sopan-santun"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -36051,7 +52043,7 @@ window.vocabN5 = [
   nuance: 'Menawarkan atau mempersilakan. どうぞ〜ください = tolong…',
   conj_type: 'suru',
   examples: [
-      { jp: 'どうぞ、お先に！', en: 'Go ahead!', id: '[TBD]' },{"jp": "どうぞ, 座ってください。", "id": "Silakan duduk.", "level": "n5", "tags": ["sopan-santun"]}],
+      {"jp": "どうぞ, 座ってください。", "id": "Silakan duduk.", "level": "n5", "tags": ["sopan-santun"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -36131,7 +52123,7 @@ window.vocabN5 = [
   nuance: 'This is a standard workplace phrase used when leaving the office before your colleagues. It literally translates to \'I am doing something rude before you\', acknowledging the perceived impoliteness of leaving while others are still working.',
   conj_type: null,
   examples: [
-      { jp: 'それじゃお先に失礼します。', en: 'I\'m leaving.', id: '[TBD]' },{"jp":"仕事が終わりましたので、お先に失礼します。","id":"Karena pekerjaan sudah selesai, permisi saya pulang duluan.","level":"n5","tags":["pekerjaan"]}],
+      {"jp":"仕事が終わりましたので、お先に失礼します。","id":"Karena pekerjaan sudah selesai, permisi saya pulang duluan.","level":"n5","tags":["pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -37050,6 +53042,458 @@ window.vocabN5 = [
     "needs_review": false,
     "review_notes": ""
   }
+},
+
+// ── Staged Expansion (9) ──
+
+{
+  "id": "vg-n5-01020",
+  "word": "いただきます",
+  "reading": "いただきます",
+  "romaji": "itadakimasu",
+  "meaning_id": "expression of gratitude before meals",
+  "meaning_en": "expression of gratitude before meals",
+  "jlpt": "n5",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "８ドル５０セントいただきます。",
+      "id": "$8.50, please.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ワインをいただきます。",
+      "id": "We'd like to have some wine.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01055",
+  "word": "お願いします",
+  "reading": "おねがいします",
+  "romaji": "onegaishimasu",
+  "meaning_id": "please",
+  "meaning_en": "please",
+  "jlpt": "n5",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ファーストクラスでお願いします。",
+      "id": "I'd like to travel first-class.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "できれば、６時半でお願いします。",
+      "id": "Six-thirty, it's possible.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01062",
+  "word": "女の子",
+  "reading": "おんなのこ",
+  "romaji": "onnanoko",
+  "meaning_id": "girl",
+  "meaning_en": "girl",
+  "jlpt": "n5",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "女の子はほとんどみんなやさしい。",
+      "id": "Almost all girls are kind.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ほかの女の子たちはどこにいるの。",
+      "id": "Where are the other girls?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01103",
+  "word": "ください",
+  "reading": "ください",
+  "romaji": "kudasai",
+  "meaning_id": "please",
+  "meaning_en": "please",
+  "jlpt": "n5",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ニューススタンドで聞いて下さい。",
+      "id": "You'll have to ask at the newsstand.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "話があったら電話をかけて下さい。",
+      "id": "If you want to speak to me, please call me up.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01120",
+  "word": "ごめんなさい",
+  "reading": "ごめんなさい",
+  "romaji": "gomennasai",
+  "meaning_id": "I beg your pardon; excuse me",
+  "meaning_en": "I beg your pardon; excuse me",
+  "jlpt": "n5",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "お話し中、ごめんなさい。",
+      "id": "Excuse me for interrupting you.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ごめんなさい、でもよく聞こえないんです。",
+      "id": "I'm sorry, but I can't hear you well.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01160",
+  "word": "すみません",
+  "reading": "すみません",
+  "romaji": "sumimasen",
+  "meaning_id": "sorry; excuse me",
+  "meaning_en": "sorry; excuse me",
+  "jlpt": "n5",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "すみません、この席あいていますか。",
+      "id": "Excuse me, is this seat taken?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "すみませんが電話に出てください。",
+      "id": "Tolong answer the phone.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01173",
+  "word": "それから",
+  "reading": "それから",
+  "romaji": "sorekara",
+  "meaning_id": "after that",
+  "meaning_en": "after that",
+  "jlpt": "n5",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "それからすっきりきれいにしてくれ。",
+      "id": "Then clean it really well.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "それから先の話を聞きたい。",
+      "id": "I'd like to know the rest of the story.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01211",
+  "word": "どうぞよろしく",
+  "reading": "どうぞよろしく",
+  "romaji": "douzoyoroshiku",
+  "meaning_id": "pleased to meet you",
+  "meaning_en": "pleased to meet you",
+  "jlpt": "n5",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "どうぞよろしく。",
+      "id": "Nice to meet you.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ご家族の皆さんにどうぞよろしく。",
+      "id": "Give my best regards to all your family.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01243",
+  "word": "はじめまして",
+  "reading": "はじめまして",
+  "romaji": "hajimemashite",
+  "meaning_id": "How do you do?; I am glad to meet you",
+  "meaning_en": "How do you do?; I am glad to meet you",
+  "jlpt": "n5",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "初めましてケン。",
+      "id": "Nice to meet you, Ken.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "はじめまして、ジョーンズ夫人。",
+      "id": "How do you do, Mrs. Jones?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
 }
 
 ];

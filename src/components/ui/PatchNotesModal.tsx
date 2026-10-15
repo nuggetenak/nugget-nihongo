@@ -27,6 +27,7 @@ interface PatchNotesModalProps {
 
 export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClose }) => {
   const [selectedFilter, setSelectedFilter] = useState<'all' | 'major'>('all');
+  const [showTechnical, setShowTechnical] = useState(false);
   const [expandedVersions, setExpandedVersions] = useState<Record<string, boolean>>({
     [APP_VERSION]: true, // Expanded by default
   });
@@ -94,27 +95,41 @@ export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClos
           </button>
         </div>
 
-        {/* Filter Pills */}
-        <div className="flex items-center gap-2 shrink-0">
+        {/* Filter Pills & Technical Mode Toggle */}
+        <div className="flex flex-wrap items-center justify-between gap-2 shrink-0">
+          <div className="flex items-center gap-1.5">
+            <button
+              onClick={() => setSelectedFilter('all')}
+              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all active:scale-95 ${
+                selectedFilter === 'all'
+                  ? 'bg-amber-500 text-stone-950 shadow-sm font-black'
+                  : 'text-appText-muted hover:text-appText-bright bg-surface-2 border border-theme'
+              }`}
+            >
+              Semua Versi ({PATCH_NOTES_HISTORY.length})
+            </button>
+            <button
+              onClick={() => setSelectedFilter('major')}
+              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all active:scale-95 ${
+                selectedFilter === 'major'
+                  ? 'bg-amber-500 text-stone-950 shadow-sm font-black'
+                  : 'text-appText-muted hover:text-appText-bright bg-surface-2 border border-theme'
+              }`}
+            >
+              Rilis Mayor ({PATCH_NOTES_HISTORY.filter((n) => n.type === 'major').length})
+            </button>
+          </div>
+
           <button
-            onClick={() => setSelectedFilter('all')}
-            className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all ${
-              selectedFilter === 'all'
-                ? 'bg-accent text-bg shadow-sm font-extrabold'
-                : 'text-appText-muted hover:text-appText-bright bg-surface-2'
+            onClick={() => setShowTechnical(!showTechnical)}
+            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-all border active:scale-95 ${
+              showTechnical
+                ? 'bg-amber-500/15 border-amber-500/40 text-accent font-extrabold shadow-sm'
+                : 'bg-surface-2 border-theme text-appText-muted hover:text-appText-bright'
             }`}
+            title="Alihkan antara bahasa ramah pembelajar dan detail teknis arsitektur"
           >
-            Semua Versi ({PATCH_NOTES_HISTORY.length})
-          </button>
-          <button
-            onClick={() => setSelectedFilter('major')}
-            className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all ${
-              selectedFilter === 'major'
-                ? 'bg-accent text-bg shadow-sm font-extrabold'
-                : 'text-appText-muted hover:text-appText-bright bg-surface-2'
-            }`}
-          >
-            Rilis Mayor ({PATCH_NOTES_HISTORY.filter((n) => n.type === 'major').length})
+            <span>{showTechnical ? '⚙️ Detail Teknis (Dev)' : '🌿 Bahasa Ramah Pelajar'}</span>
           </button>
         </div>
 
@@ -174,10 +189,21 @@ export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClos
                   </div>
                 </div>
 
+                {/* Friendly Learner Summary Card (When available) */}
+                {note.friendlySummary && (
+                  <div className="mx-4 sm:mx-5 mb-3 p-3.5 rounded-2xl bg-amber-500/10 border border-amber-500/25 text-xs text-appText-bright leading-relaxed flex items-start gap-2.5">
+                    <Sparkles className="w-4 h-4 text-accent shrink-0 mt-0.5" />
+                    <div>
+                      <span className="font-extrabold text-accent">Pembaruan untuk Kamu: </span>
+                      <span>{note.friendlySummary}</span>
+                    </div>
+                  </div>
+                )}
+
                 {/* Highlights List */}
                 <div className="px-4 sm:px-5 pb-3">
                   <div className="text-[11px] font-bold uppercase tracking-wider text-appText-muted mb-2">
-                    Sorotan Pembaruan:
+                    {showTechnical ? 'Sorotan Teknis Arsitektur:' : 'Poin Penting untuk Belajar:'}
                   </div>
                   <ul className="space-y-1.5">
                     {note.highlights.map((h, i) => (
@@ -189,9 +215,13 @@ export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClos
                   </ul>
                 </div>
 
-                {/* Detailed Breakdown (Collapsible) */}
-                {isExpanded && note.details && note.details.length > 0 && (
+                {/* Detailed Breakdown (Shown when expanded AND showTechnical is active) */}
+                {isExpanded && showTechnical && note.details && note.details.length > 0 && (
                   <div className="px-4 sm:px-5 pb-5 pt-3 border-t border-accent/10 space-y-3.5 animate-in fade-in duration-200">
+                    <div className="text-[11px] font-extrabold uppercase text-amber-500 flex items-center gap-1.5">
+                      <Tag className="w-3.5 h-3.5" />
+                      <span>Spesifikasi & Log Rekayasa (Dev Log)</span>
+                    </div>
                     {note.details.map((d, di) => (
                       <div key={di} className="space-y-1.5">
                         <div className="text-xs font-bold text-amber-400 flex items-center gap-1.5">

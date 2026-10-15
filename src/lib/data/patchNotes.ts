@@ -8,6 +8,7 @@ export interface PatchNote {
   releaseName: string;
   date: string;
   type: 'major' | 'minor' | 'patch';
+  friendlySummary?: string;
   highlights: string[];
   details: {
     category: string;
@@ -16,6 +17,55 @@ export interface PatchNote {
 }
 
 export const PATCH_NOTES_HISTORY: PatchNote[] = [
+  {
+    version: 'v19.3.1',
+    releaseName: 'Light Theme Default, Continuous Kanji Ink Flow, FSRS Memory Vault & 10.508+ Vocab Ingestion',
+    date: '16 Oktober 2026',
+    type: 'patch',
+    friendlySummary: 'Pembaruan besar untuk kenyamanan belajar harian: tampilan tema terang ramah di mata sebagai setelan awal, goresan kanji mengalir mulus bagai kuas kaligrafi, pusat pemantauan daya ingat FSRS, dan penambahan basis data lengkap hingga 10.508 kosakata.',
+    highlights: [
+      'Tema Terang Hangat Bawaan (Default Light Theme): Tampilan aplikasi kini dimulai dalam mode terang bernuansa kertas Washi Jepang (#FDFBF7) yang nyaman di mata untuk sesi belajar siang hari, dengan garis tepi proporsional.',
+      'Aliran Tinta Kaligrafi Kanji Kontinu: Animasi goresan kanji kini mengalir mulus dari ujung kuas secara bertahap (1.2 detik per goresan) tanpa garis yang melompat tiba-tiba.',
+      'Transformasi Pusat Retensi FSRS (Memory Vault): Menu Kebun Kata kini berevolusi menjadi Pusat Retensi ilmiah untuk melihat sebaran stabilitas ingatan, kurva kelupaan, dan kartu jatuh tempo.',
+      'Integrasi 10.508+ Kosakata Lengkap: Seluruh data staged expansion berhasil digabungkan ke database aktif (N5: 1.321, N4: 1.286, N3: 2.580, N2: 2.104, N1: 3.217) lengkap dengan contoh kalimat bahasa Indonesia.',
+      'Bedah Arena Kuis Mission Launchpad: Tata letak arena kuis ditata ulang dengan kontrol langsung level dan panjang sesi (10–30 soal), kartu review prioritas, dan tombol "Lanjut" kontras tinggi.',
+      'Sensei AI Dynamic Router: Indikator tutor cerdas kini secara dinamis menampilkan model aktif (OpenRouter Qwen 2.5 72B / Gemini) serta statistik token yang transparan.',
+      'Humanisasi Catatan Rilis: Tombol alih bahasa ramah pelajar vs detail teknis pengembang agar pengguna tidak merasa terasing dengan istilah rumit.',
+    ],
+    details: [
+      {
+        category: 'Tema & Visual Refinement',
+        items: [
+          'Inisialisasi :root dan <html> dengan kelas default .light bernuansa #FDFBF7, token border var(--border-theme) 12% opacity.',
+          'Penyempurnaan tombol taktil dengan kontras tinggi (bg-amber-500 text-stone-950 font-black) untuk menghilangkan tombol yang tersamar di tema terang.',
+          'Perbaikan ketebalan garis tepi (outlines) pada seluruh card komponen agar tidak terasa tebal berlebihan.',
+        ],
+      },
+      {
+        category: 'Animasi & Interaksi Kanji Dojo',
+        items: [
+          'Kalibrasi @keyframes drawStroke dengan stroke-dashoffset 1000 -> 0 dan durasi 1.2s.',
+          'Eliminasi pil redundant "N5+N4 Dasar" dan perbaikan kontras teks tombol aktif.',
+          'Penghilangan teks putih pada latar belakang transparan/terang pada pil level aktif.',
+        ],
+      },
+      {
+        category: 'Arsitektur Basis Data & FSRS',
+        items: [
+          'Ingesti 5.669 entri staged expansion (n1-staged hingga n5-staged) melampaui 10.508+ kosakata aktif terverifikasi.',
+          'Pembersihan 500x placeholder [TBD] menjadi contoh kalimat bahasa Indonesia yang bermakna.',
+          'Metrik analitik FSRS (Stabilitas S, Kesulitan D, Retrievability R) dan distribusi status memori (New, Learning, Review, Relearning).',
+        ],
+      },
+      {
+        category: 'Sensei AI & Integrasi API',
+        items: [
+          'Auto-router mendeteksi token sk-or- dan mengarahkan ke OpenRouter (Qwen 2.5 72B / Llama 3.3 70B / DeepSeek).',
+          'Pencatatan tokensUsed dan label modelUsed dinamis per-bubble percakapan.',
+        ],
+      },
+    ],
+  },
   {
     version: 'v19.3.0',
     releaseName: 'Warm Sumi & Golden Lacquerware Theme, Kanji Studio Surgery, 3 Dedicated Studios & Arena Kuis Overhaul',

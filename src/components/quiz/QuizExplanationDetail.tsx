@@ -25,9 +25,11 @@ export const QuizExplanationDetail: React.FC<QuizExplanationDetailProps> = ({
 }) => {
   if (!rawExplanation && !jpSentence) return null;
 
-  // Highlight Japanese particles (は, が, を, に, で, へ, と, から, まで, より, だけ, しか)
+  // Highlight Japanese particles safely without leaking raw <b> or </b> tags
   const renderHighlightedSentence = (text: string) => {
-    const parts = text.split(/(は|が|を|に|で|へ|と|から|まで|より|だけ|しか)/g);
+    // Strip raw HTML tags if already present in database string
+    const cleanText = text.replace(/<\/?b>/g, '');
+    const parts = cleanText.split(/(は|が|を|に|で|へ|と|から|まで|より|だけ|しか)/g);
     return (
       <span className="font-jp text-sm sm:text-base leading-relaxed text-appText-bright">
         {parts.map((p, idx) => {

@@ -10202,4 +10202,8241 @@ window.vocabN4_Verbs = [
     "review_notes": ""
   }
 },
+
+// ── Staged Expansion (165) ──
+
+{
+  "id": "vg-n4-00947",
+  "word": "ああ",
+  "reading": "ああ",
+  "romaji": "aa",
+  "meaning_id": "seperti itu",
+  "meaning_en": "like that",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ある人はこうだと言い、またある人はああだと言う。",
+      "id": "Satu orang berkata begini, yang lain berkata begitu.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ああ、ああいうふうにやるんだな。",
+      "id": "Oh, jadi begitu caranya melakukannya.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-00948",
+  "word": "あいさつする",
+  "reading": "あいさつする",
+  "romaji": "aisatsusuru",
+  "meaning_id": "menyapa",
+  "meaning_en": "to greet",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私にあいさつするような人はいない。",
+      "id": "Tidak ada seorang pun yang menyapa saya.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "お別れのあいさつに来ました。",
+      "id": "I've come to say goodbye.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-00950",
+  "word": "合う",
+  "reading": "あう",
+  "romaji": "au",
+  "meaning_id": "cocok; pas",
+  "meaning_en": "to match",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "このチョッキは前が合わない。",
+      "id": "This waistcoat won't meet at the front.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この白いコートはあなたによく合うでしょう。",
+      "id": "This white coat will look very nice on you.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-00956",
+  "word": "明日",
+  "reading": "あす",
+  "romaji": "asu",
+  "meaning_id": "besok",
+  "meaning_en": "tomorrow",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あしたは一日中ひまです。",
+      "id": "I'll be free all day tomorrow.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "明日は雨天ではなかろうかと思う。",
+      "id": "I'm afraid it will be rainy tomorrow.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-00957",
+  "word": "集める",
+  "reading": "あつめる",
+  "romaji": "atsumeru",
+  "meaning_id": "me-collect something",
+  "meaning_en": "to collect something",
+  "jlpt": "n4",
+  "pos": "verb-ichidan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "毎週月曜日にゴミを集めにきます。",
+      "id": "They collect our garbage every Monday.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ケンは古いコインを集めている。",
+      "id": "Ken collects old coins.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-00961",
+  "word": "謝る",
+  "reading": "あやまる",
+  "romaji": "ayamaru",
+  "meaning_id": "me-apologize",
+  "meaning_en": "to apologize",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私は彼女に謝らなければならない。",
+      "id": "I must make an apology to her.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "たとえ悪くなくても、謝るべきだ。",
+      "id": "Even if you are not to blame, you should apologize.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-00963",
+  "word": "アルバイト",
+  "reading": "アルバイト",
+  "romaji": "arubaito",
+  "meaning_id": "part-time job",
+  "meaning_en": "part-time job",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "アルバイトを使います。",
+      "id": "Menggunakan part-time job.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-00964",
+  "word": "安心",
+  "reading": "あんしん",
+  "romaji": "anshin",
+  "meaning_id": "relief",
+  "meaning_en": "relief",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あいつに仕事を任せておけば安心だ。",
+      "id": "You can trust him with any job.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私はそのことについては安心している。",
+      "id": "I feel at ease about it.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-00967",
+  "word": "案内",
+  "reading": "あんない",
+  "romaji": "annai",
+  "meaning_id": "me-guide",
+  "meaning_en": "to guide",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私をあちこちに案内してください。",
+      "id": "Tolong show me around.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "このあたりを案内いたしましょう。",
+      "id": "May I show you around?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-00971",
+  "word": "急ぐ",
+  "reading": "いそぐ",
+  "romaji": "isogu",
+  "meaning_id": "me-hurry",
+  "meaning_en": "to hurry",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ニックはバスに間に合うように急いだ。",
+      "id": "Nick hurried to catch the bus.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "水を少しもってきてくれ——急いで。",
+      "id": "Bring me some water, and be quick about it.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-00972",
+  "word": "いただく",
+  "reading": "いただく",
+  "romaji": "itadaku",
+  "meaning_id": "menerima",
+  "meaning_en": "(humble) to receive",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "九時に来ていただきたいのですが。",
+      "id": "I'd like you to come at nine.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "とても親切にしていただきました。",
+      "id": "You've been very good to me.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-00974",
+  "word": "いらっしゃる",
+  "reading": "いらっしゃる",
+  "romaji": "irassharu",
+  "meaning_id": "(respectful) to be; to come or to go",
+  "meaning_en": "(respectful) to be; to come or to go",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "いらっしゃるを使います。",
+      "id": "Menggunakan (respectful) to be; to come or to go.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-00975",
+  "word": "動く",
+  "reading": "うごく",
+  "romaji": "ugoku",
+  "meaning_id": "me-move",
+  "meaning_en": "to move",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "まだ動くうちに売ってしまわなきゃ。",
+      "id": "I should sell it while it still runs.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私は家の中で何かが動くのを感じた。",
+      "id": "I felt something move in the house.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-00977",
+  "word": "うち",
+  "reading": "うち",
+  "romaji": "uchi",
+  "meaning_id": "within",
+  "meaning_en": "within",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "教会は私の家とあなたの家の中にあります。",
+      "id": "The church is between my house and yours.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "来週はうちへいらしゃいませんか。",
+      "id": "Won't you come and see me next week?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-00978",
+  "word": "打つ",
+  "reading": "うつ",
+  "romaji": "utsu",
+  "meaning_id": "me-hit",
+  "meaning_en": "to hit",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "８時をちょうど打ちましたね。",
+      "id": "It has just struck eight, hasn't it?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "スロットを打っているうちに、あれよあれよと今の時間です。",
+      "id": "I was hitting the slots, and before I knew it, it's this time already.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-00979",
+  "word": "写す",
+  "reading": "うつす",
+  "romaji": "utsusu",
+  "meaning_id": "me-copy or photograph",
+  "meaning_en": "to copy or photograph",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その写真は空から写されたものである。",
+      "id": "The picture was taken from the air.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "このページをノートに写しておきなさい。",
+      "id": "Copy this page in your notebook.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-00980",
+  "word": "移る",
+  "reading": "うつる",
+  "romaji": "utsuru",
+  "meaning_id": "me-move house or transfer",
+  "meaning_en": "to move house or transfer",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "もっとお金があれば大きな家に移れるのにな。",
+      "id": "If I had more money, I could move to a bigger house.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "今、席を移ってもかまいませんか。",
+      "id": "Would you mind if I changed seats now?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-00982",
+  "word": "運転",
+  "reading": "うんてん",
+  "romaji": "unten",
+  "meaning_id": "me-drive",
+  "meaning_en": "to drive",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "キャロルはレンタカーを運転しています。",
+      "id": "Carol is driving a rent-a-car.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "父は自動車の運転がとても上手い。",
+      "id": "My father drives very well.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-00984",
+  "word": "運動",
+  "reading": "うんどう",
+  "romaji": "undou",
+  "meaning_id": "me-exercise",
+  "meaning_en": "to exercise",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "週に一度でいいから運動しなさい。",
+      "id": "Try to exercise at least once a week.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "その運動をして若返った。",
+      "id": "The exercise took years off me.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-00989",
+  "word": "送る",
+  "reading": "おくる",
+  "romaji": "okuru",
+  "meaning_id": "mengirim",
+  "meaning_en": "to send",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この手紙を日本に送ってくれませんか。",
+      "id": "Could you send this letter to Japan?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "車で家まで送ってもらえませんか？",
+      "id": "Will you drive me home?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-00990",
+  "word": "おっしゃる",
+  "reading": "おっしゃる",
+  "romaji": "ossharu",
+  "meaning_id": "berkata",
+  "meaning_en": "(respectful) to say",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "全くおっしゃる通りです。",
+      "id": "You are absolutely right.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "あなたがメールでおっしゃることは全て正当です。価格を除いては。",
+      "id": "Everything you said in your mail is just right - except the price.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-00991",
+  "word": "思う",
+  "reading": "おもう",
+  "romaji": "omou",
+  "meaning_id": "berpikir",
+  "meaning_en": "to think; to feel",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "晴れだと思うよ。",
+      "id": "I think it will be sunny.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "新しい車を買おうかと思っている。",
+      "id": "I have a mind to buy a new car.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-00993",
+  "word": "下りる",
+  "reading": "おりる",
+  "romaji": "oriru",
+  "meaning_id": "me-get off",
+  "meaning_en": "to get off",
+  "jlpt": "n4",
+  "pos": "verb-ichidan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "一行は、歩いてその山を下りた。",
+      "id": "The party walked down the mountain.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ケンが木から下りてきた。",
+      "id": "Ken climbed down from the tree.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-00994",
+  "word": "折る",
+  "reading": "おる",
+  "romaji": "oru",
+  "meaning_id": "me-break or to fold",
+  "meaning_en": "to break or to fold",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その紙を四つ折りにしなさい。",
+      "id": "Fold the paper in four.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "折ろうとしても指が弱くなりすぎていた。",
+      "id": "Her fingers were too weak to fold it.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-00996",
+  "word": "会議",
+  "reading": "かいぎ",
+  "romaji": "kaigi",
+  "meaning_id": "meeting",
+  "meaning_en": "meeting",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "会議は終わりに近づきつつあった。",
+      "id": "The conference was drawing to an end.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "会議に彼は現れましたか。",
+      "id": "Did he show up at the meeting?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-00997",
+  "word": "会話",
+  "reading": "かいわ",
+  "romaji": "kaiwa",
+  "meaning_id": "conversation",
+  "meaning_en": "conversation",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その作家は会話を書くのがうまい。",
+      "id": "The writer is very good at a dialog.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私たちの会話はいつもけんかで終わる。",
+      "id": "Our conversation always ends in a quarrel.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-00998",
+  "word": "変える",
+  "reading": "かえる",
+  "romaji": "kaeru",
+  "meaning_id": "me-change",
+  "meaning_en": "to change",
+  "jlpt": "n4",
+  "pos": "verb-ichidan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "なんで彼は考えを変えたのか。",
+      "id": "What made him change his mind?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "父さんは考えを変えると思うかい。",
+      "id": "Do you think Dad will change his mind?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01002",
+  "word": "片付ける",
+  "reading": "かたづける",
+  "romaji": "katazukeru",
+  "meaning_id": "me-tidy up",
+  "meaning_en": "to tidy up",
+  "jlpt": "n4",
+  "pos": "verb-ichidan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あすの朝まっさきにそれを片付けます。",
+      "id": "I'll do that first thing in the morning.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "おもちゃを片づけなさい。",
+      "id": "Put away your toys.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01005",
+  "word": "必ず",
+  "reading": "かならず",
+  "romaji": "kanarazu",
+  "meaning_id": "certainly; necessarily",
+  "meaning_en": "certainly; necessarily",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あの歌は必ずヒットするよ。",
+      "id": "That song's bound to be a hit.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "あなたに会えば必ず父を思い出す。",
+      "id": "I never see you without thinking of my father.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01007",
+  "word": "乾く",
+  "reading": "かわく",
+  "romaji": "kawaku",
+  "meaning_id": "me-get dry",
+  "meaning_en": "to get dry",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "そのぬれたシャツはすぐに乾くだろう。",
+      "id": "The wet shirt will soon dry up.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "このドアのペンキはまだ乾いていない。",
+      "id": "The paint on the door is not dry yet.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01008",
+  "word": "関係",
+  "reading": "かんけい",
+  "romaji": "kankei",
+  "meaning_id": "relationship",
+  "meaning_en": "relationship",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "これとあれはどういう関係があるの。",
+      "id": "How is this connected to that?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私はそのこととは何の関係もない。",
+      "id": "I am not concerned with the matter.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01012",
+  "word": "聞こえる",
+  "reading": "きこえる",
+  "romaji": "kikoeru",
+  "meaning_id": "me-be heard",
+  "meaning_en": "to be heard",
+  "jlpt": "n4",
+  "pos": "verb-ichidan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "車が家の前に止まる音が聞こえた。",
+      "id": "I heard a car stop in front of the house.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "お前にはあの音が聞こえないのか。",
+      "id": "Can't you hear the sound?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01020",
+  "word": "教育",
+  "reading": "きょういく",
+  "romaji": "kyouiku",
+  "meaning_id": "education",
+  "meaning_en": "education",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この世界の教育にはがっかりしてしまう。",
+      "id": "Education in this world disappoints me.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "それは教育に次いで大きな問題だ。",
+      "id": "Itu adalah the principle problem next to education.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01021",
+  "word": "競争",
+  "reading": "きょうそう",
+  "romaji": "kyousou",
+  "meaning_id": "competition",
+  "meaning_en": "competition",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "みんなでカブトムシを競争させた。",
+      "id": "We raced our beetles.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "競争は本来悪いものではない。",
+      "id": "Competition is not by nature evil.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01027",
+  "word": "くださる",
+  "reading": "くださる",
+  "romaji": "kudasaru",
+  "meaning_id": "memberi",
+  "meaning_en": "(respectful) to give",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "もう一度言ってくださいますか。",
+      "id": "Could you repeat that, please?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "来てくださってどうもありがとう。",
+      "id": "Thank you for coming.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01029",
+  "word": "くれる",
+  "reading": "くれる",
+  "romaji": "kureru",
+  "meaning_id": "memberi",
+  "meaning_en": "to give",
+  "jlpt": "n4",
+  "pos": "verb-ichidan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "友達がはがきをくれるように私に頼んだ。",
+      "id": "A friend of mine asked me to send her a postcard.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "母さんが昼食の用意をしてくれた。",
+      "id": "Mother is preparing lunch.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01030",
+  "word": "暮れる",
+  "reading": "くれる",
+  "romaji": "kureru",
+  "meaning_id": "me-get dark",
+  "meaning_en": "to get dark; to come to an end",
+  "jlpt": "n4",
+  "pos": "verb-ichidan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "知らぬ間に日はとっぷりと暮れていた。",
+      "id": "Night had completely fallen before we knew.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "日が暮れてからは外出してはいけません。",
+      "id": "Don't go out after dark.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01032",
+  "word": "計画",
+  "reading": "けいかく",
+  "romaji": "keikaku",
+  "meaning_id": "me-plan",
+  "meaning_en": "to plan",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その計画では彼に同調できました。",
+      "id": "We went with him on that plan.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私はその計画にはノータッチです。",
+      "id": "I'm not concerned with the plan.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01033",
+  "word": "経験",
+  "reading": "けいけん",
+  "romaji": "keiken",
+  "meaning_id": "me-experience",
+  "meaning_en": "to experience",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この仕事では経験がものを言う。",
+      "id": "Experience counts in this job.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "アルバイトはいい経験になるの。",
+      "id": "I think a part-time job is a good experience.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01038",
+  "word": "下宿",
+  "reading": "げしゅく",
+  "romaji": "geshuku",
+  "meaning_id": "lodging",
+  "meaning_en": "lodging",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼女は学生を下宿させている。",
+      "id": "She boards students.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私は下宿を探していました。",
+      "id": "I was on the hunt for lodgings.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01039",
+  "word": "決して",
+  "reading": "けっして",
+  "romaji": "kesshite",
+  "meaning_id": "never",
+  "meaning_en": "never",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "これは決して小さなことではない。",
+      "id": "It's no small matter.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "父は長い休みを決してとらない。",
+      "id": "My father never takes a long rest.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01041",
+  "word": "原因",
+  "reading": "げんいん",
+  "romaji": "gen'in",
+  "meaning_id": "cause; source",
+  "meaning_en": "cause; source",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "火事の原因はだいたいわかっている。",
+      "id": "Ada not much doubt about the cause of the fire.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "火事の原因が明らかになった。",
+      "id": "The cause of the fire was known.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01042",
+  "word": "見物",
+  "reading": "けんぶつ",
+  "romaji": "kenbutsu",
+  "meaning_id": "sightseeing",
+  "meaning_en": "sightseeing",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "どこを見物すればいいでしょうか。",
+      "id": "What should I see?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私は見物に来ました。",
+      "id": "I've come to see the sights.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01043",
+  "word": "講義",
+  "reading": "こうぎ",
+  "romaji": "kougi",
+  "meaning_id": "lecture",
+  "meaning_en": "lecture",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その講義へ来た人はほとんどいなかった。",
+      "id": "Few people came to the lecture.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "その講義へ来た人は少しはいた。",
+      "id": "A few people came to the lecture.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01047",
+  "word": "交通",
+  "reading": "こうつう",
+  "romaji": "koutsuu",
+  "meaning_id": "traffic; transportation",
+  "meaning_en": "traffic; transportation",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "交通に注意しなければいけない。",
+      "id": "You must take care driving.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ここは特に朝は交通がはげしい。",
+      "id": "The traffic is heavy here, especially in the morning.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01050",
+  "word": "故障",
+  "reading": "こしょう",
+  "romaji": "koshou",
+  "meaning_id": "me-break-down",
+  "meaning_en": "to break-down",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "車が故障したので遅れました。",
+      "id": "I was late because my car broke down.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "時計がどこか故障しているらしい。",
+      "id": "I'm afraid something is wrong with my watch.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01053",
+  "word": "このあいだ",
+  "reading": "このあいだ",
+  "romaji": "konoaida",
+  "meaning_id": "the other day; recently",
+  "meaning_en": "the other day; recently",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この間の台風で、時速２００キロの風が吹きました。",
+      "id": "In the last typhoon, the wind blew at over 200 kilometers per hour!",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この間あなたたちの国の人についてのテレビを見ました。",
+      "id": "We watched a TV program the other day about your people.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01054",
+  "word": "このごろ",
+  "reading": "このごろ",
+  "romaji": "konogoro",
+  "meaning_id": "these days; nowadays",
+  "meaning_en": "these days; nowadays",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "このごろは読書する時間が少しはある。",
+      "id": "I have a little time for reading these days.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "このごろ少しも見ないです。",
+      "id": "I have seen nothing of him lately.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01057",
+  "word": "ごらんになる",
+  "reading": "ごらんになる",
+  "romaji": "goranninaru",
+  "meaning_id": "melihat",
+  "meaning_en": "(respectful) to see",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私たちの新居をご覧になってはいかがですか。",
+      "id": "What do you think of our new abode?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ローマを訪れたことがおありなら、コロセウムをご覧になったにちがいない。",
+      "id": "If you have ever visited Rome, you must have seen the Coliseum.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01060",
+  "word": "今度",
+  "reading": "こんど",
+  "romaji": "kondo",
+  "meaning_id": "now; next time",
+  "meaning_en": "now; next time",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "今度の土曜日、テニスをしませんか。",
+      "id": "How about playing tennis next Saturday?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "試験は今度の月曜日に始まります。",
+      "id": "The examination begins next Monday.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01062",
+  "word": "今夜",
+  "reading": "こんや",
+  "romaji": "kon'ya",
+  "meaning_id": "tonight",
+  "meaning_en": "tonight",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "今夜、パーティーを開きます。",
+      "id": "We're giving a party tonight.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私は今夜ふろに入ろうと思います。",
+      "id": "I think I'll take a bath tonight.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01063",
+  "word": "最近",
+  "reading": "さいきん",
+  "romaji": "saikin",
+  "meaning_id": "latest; nowadays",
+  "meaning_en": "latest; nowadays",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "最近は読書の時間がほとんどない。",
+      "id": "I've got little time for reading these days.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "母は最近まで入院していました。",
+      "id": "My mother has been in the hospital until recently.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01065",
+  "word": "最初",
+  "reading": "さいしょ",
+  "romaji": "saisho",
+  "meaning_id": "beginning; first",
+  "meaning_en": "beginning; first",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私は最初からその事は知っていた。",
+      "id": "I knew that all along.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "最初にきたのはグレーさんでした。",
+      "id": "Mr Gray was the first man that arrived.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01066",
+  "word": "下げる",
+  "reading": "さげる",
+  "romaji": "sageru",
+  "meaning_id": "me-hang",
+  "meaning_en": "to hang; to lower; to move back",
+  "jlpt": "n4",
+  "pos": "verb-ichidan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ラジオの音を下げてくれませんか。",
+      "id": "Could you turn down the radio?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ボリュームを下げてもらえますか。",
+      "id": "Would you mind turning down the volume?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01067",
+  "word": "さっき",
+  "reading": "さっき",
+  "romaji": "sakki",
+  "meaning_id": "some time ago",
+  "meaning_en": "some time ago",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "さっきなぜかマイクが入らなかった。",
+      "id": "For some reason the microphone didn't work earlier.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "さっき電話が鳴ってたよね？",
+      "id": "The telephone was just ringing, wasn't it?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01069",
+  "word": "触る",
+  "reading": "さわる",
+  "romaji": "sawaru",
+  "meaning_id": "me-touch",
+  "meaning_en": "to touch",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "触らずそのままにしておきなさい。",
+      "id": "Don't touch it. Leave it as it is.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ぼくのカメラに触らないでくれ。",
+      "id": "Leave my camera alone.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01075",
+  "word": "試験",
+  "reading": "しけん",
+  "romaji": "shiken",
+  "meaning_id": "examination",
+  "meaning_en": "examination",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "とにかく、試験が終わってほっとしたよ。",
+      "id": "Anyhow, I'm relieved the test is over.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "試験は今度の月曜日に始まります。",
+      "id": "The examination begins next Monday.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01080",
+  "word": "しっかり",
+  "reading": "しっかり",
+  "romaji": "shikkari",
+  "meaning_id": "firmly; steadily",
+  "meaning_en": "firmly; steadily",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "君にはもっとしっかり仕事をしてもらいたい。",
+      "id": "I want you to work harder.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ラケットをしっかりにぎりなさい。",
+      "id": "Hold the racket tight.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01081",
+  "word": "失敗",
+  "reading": "しっぱい",
+  "romaji": "shippai",
+  "meaning_id": "failure; mistake",
+  "meaning_en": "failure; mistake",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "１度や２度の失敗はだれにでもある。",
+      "id": "Everybody fails once or twice.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "失敗したらもう一度やってごらん。",
+      "id": "If you fail, try again!",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01082",
+  "word": "しばらく",
+  "reading": "しばらく",
+  "romaji": "shibaraku",
+  "meaning_id": "little while",
+  "meaning_en": "little while",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ここしばらく彼にまるで会わない。",
+      "id": "I haven't seen anything of him for some time.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "どうかしばらく私を一人にさせて。",
+      "id": "Tolong don't interrupt me for a while.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01087",
+  "word": "じゃま",
+  "reading": "じゃま",
+  "romaji": "jama",
+  "meaning_id": "hindrance; intrusion",
+  "meaning_en": "hindrance; intrusion",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その車がじゃまです。動かしてください。",
+      "id": "The car is in the way. Please move it.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "いすをどかして下さい。じゃまなのです。",
+      "id": "Tolong put the chair away. It is in the way.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01092",
+  "word": "出席",
+  "reading": "しゅっせき",
+  "romaji": "shusseki",
+  "meaning_id": "me-attend",
+  "meaning_en": "to attend",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "出席できないんですか。どうして？",
+      "id": "You can't attend? Why not?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "出席した人はたいてい学生だった。",
+      "id": "Those present were, for the most part, students.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01093",
+  "word": "出発",
+  "reading": "しゅっぱつ",
+  "romaji": "shuppatsu",
+  "meaning_id": "me-depart",
+  "meaning_en": "to depart",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "すぐに出発した方がいいですよ。",
+      "id": "You had better depart at once.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "早く出発したほうがよいだろうか。",
+      "id": "Would it be better to start early?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01095",
+  "word": "準備",
+  "reading": "じゅんび",
+  "romaji": "junbi",
+  "meaning_id": "me-prepare",
+  "meaning_en": "to prepare",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "準備ができるまでちょっと待ってくれ。",
+      "id": "Hang on a bit until I'm ready.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "母は私に昼食の準備をしてくれた。",
+      "id": "Mother prepared lunch for me.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01096",
+  "word": "紹介",
+  "reading": "しょうかい",
+  "romaji": "shoukai",
+  "meaning_id": "introduction",
+  "meaning_en": "introduction",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あなたを私の両親に紹介したい。",
+      "id": "I want you to meet my parents.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "兄のトムを紹介させていただきます。",
+      "id": "I'd like you to meet my brother, Tom.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01099",
+  "word": "食事",
+  "reading": "しょくじ",
+  "romaji": "shokuji",
+  "meaning_id": "me-have a meal",
+  "meaning_en": "to have a meal",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "食事は母に作ってもらっています。",
+      "id": "I'm cooked meals by my mother.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "食事はじつにおいしかったですね。",
+      "id": "The meal was great, wasn't it?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01102",
+  "word": "調べる",
+  "reading": "しらべる",
+  "romaji": "shiraberu",
+  "meaning_id": "me-investigate",
+  "meaning_en": "to investigate",
+  "jlpt": "n4",
+  "pos": "verb-ichidan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ちょっと調べてることがあるから。",
+      "id": "I just wanna nose around a bit.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "家は買う前によく調べるべきだ。",
+      "id": "You should go over a house before buying it.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01105",
+  "word": "心配",
+  "reading": "しんぱい",
+  "romaji": "shinpai",
+  "meaning_id": "me-worry",
+  "meaning_en": "to worry",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その男の子は心配して病気になった。",
+      "id": "The boy got sick from anxiety.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "心配してくれる人がいて幸せだ。",
+      "id": "I'm so lucky to have someone who cares.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01106",
+  "word": "水泳",
+  "reading": "すいえい",
+  "romaji": "suiei",
+  "meaning_id": "swimming",
+  "meaning_en": "swimming",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "水泳が私の楽しみの１つです。",
+      "id": "Swimming is one thing I enjoy.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私は夏休み中午後には水泳をした。",
+      "id": "I swam in the afternoons during the summer vacation.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01108",
+  "word": "ずいぶん",
+  "reading": "ずいぶん",
+  "romaji": "zuibun",
+  "meaning_id": "extremely",
+  "meaning_en": "extremely",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私たちはもうずいぶん長くここにいます。",
+      "id": "We've been here long enough.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "それはずいぶん気の長い話だ。",
+      "id": "It's a very slow business.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01112",
+  "word": "すく",
+  "reading": "すく",
+  "romaji": "suku",
+  "meaning_id": "me-become empty",
+  "meaning_en": "to become empty",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "どの車両がすいていますか。",
+      "id": "Which car is less crowded?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "バスの前の方は空いていた。",
+      "id": "The front of the bus was not crowded.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01114",
+  "word": "すっかり",
+  "reading": "すっかり",
+  "romaji": "sukkari",
+  "meaning_id": "completely",
+  "meaning_en": "completely",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私はすっかり息が切れた。",
+      "id": "I am completely out of breath.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "先生はまたすっかり元気になった。",
+      "id": "The teacher got quite well again.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01118",
+  "word": "滑る",
+  "reading": "すべる",
+  "romaji": "suberu",
+  "meaning_id": "me-slide",
+  "meaning_en": "to slide; to slip",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "来年はうまく滑れるようになるでしょう。",
+      "id": "You will be able to ski well next year.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "子供たちは氷の上を滑っていた。",
+      "id": "The children were sliding on the ice.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01120",
+  "word": "生活",
+  "reading": "せいかつ",
+  "romaji": "seikatsu",
+  "meaning_id": "tinggal / hidup",
+  "meaning_en": "to live",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "どのようにして生活していきますか。",
+      "id": "How are you getting along?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "父親は家族の生活をまかなう。",
+      "id": "A father provides for his family.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01121",
+  "word": "生産",
+  "reading": "せいさん",
+  "romaji": "seisan",
+  "meaning_id": "me-produce",
+  "meaning_en": "to produce",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この工場はＣＤプレーヤーを生産している。",
+      "id": "This factory produces CD players.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この自動車の生産は１９８０年に始まった。",
+      "id": "Production of this automobile started in 1980.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01125",
+  "word": "説明",
+  "reading": "せつめい",
+  "romaji": "setsumei",
+  "meaning_id": "explanation",
+  "meaning_en": "explanation",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あなたはそれをどう説明しますか。",
+      "id": "How do you account for that?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "本日の特別料理について説明します。",
+      "id": "Let me tell you about our special.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01126",
+  "word": "ぜひ",
+  "reading": "ぜひ",
+  "romaji": "zehi",
+  "meaning_id": "without fail",
+  "meaning_en": "without fail",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ぜひパーティーにおいでください。",
+      "id": "You must come to the party by all means.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ぜひその映画を見てみたいです。",
+      "id": "I'd love to see the movie.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01127",
+  "word": "世話",
+  "reading": "せわ",
+  "romaji": "sewa",
+  "meaning_id": "me-look after",
+  "meaning_en": "to look after",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あなたはペットの世話ができない。",
+      "id": "You can't care for pets.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私はこの犬の世話をするつもりです。",
+      "id": "I'll take care of this dog.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01129",
+  "word": "ぜんぜん",
+  "reading": "ぜんぜん",
+  "romaji": "zenzen",
+  "meaning_id": "not entirely (used in a negative sentence)",
+  "meaning_en": "not entirely (used in a negative sentence)",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私はビールはぜんぜん飲みません。",
+      "id": "I never touch beer.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "計画は雨でぜんぜんだめになった。",
+      "id": "The plan was altogether spoiled by the rain.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01130",
+  "word": "戦争",
+  "reading": "せんそう",
+  "romaji": "sensou",
+  "meaning_id": "war",
+  "meaning_en": "war",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "戦争が起こらなければいいと思う。",
+      "id": "I hope war doesn't break out.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "戦争がいつ終わるのかわからない。",
+      "id": "Ada no telling when the war will end.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01132",
+  "word": "相談",
+  "reading": "そうだん",
+  "romaji": "soudan",
+  "meaning_id": "me-discuss",
+  "meaning_en": "to discuss",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あなたに相談したいことがあるの。",
+      "id": "I have something to talk over with you.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "集まってそのことを相談しよう。",
+      "id": "Let's get together and talk about the matter.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01133",
+  "word": "育てる",
+  "reading": "そだてる",
+  "romaji": "sodateru",
+  "meaning_id": "me-rear",
+  "meaning_en": "to rear; to bring up",
+  "jlpt": "n4",
+  "pos": "verb-ichidan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "クッキーはケイトによって育てられた。",
+      "id": "Cookie was raised by Kate.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼はオーストラリアで育てられた。",
+      "id": "He was brought up in Australia.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01134",
+  "word": "卒業",
+  "reading": "そつぎょう",
+  "romaji": "sotsugyou",
+  "meaning_id": "graduation",
+  "meaning_en": "graduation",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私はポップ・ミュージックはそろそろ卒業しようと思っているの。",
+      "id": "I feel I'm growing out of pop music.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "卒業したらどうするつもりですか。",
+      "id": "What will you do after graduation?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01139",
+  "word": "それほど",
+  "reading": "それほど",
+  "romaji": "sorehodo",
+  "meaning_id": "me-that extent",
+  "meaning_en": "to that extent",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "いや、それほど混んでなかったよ。",
+      "id": "No, the traffic wasn't too bad.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "それほどばかげた意見は聞いた事がない。",
+      "id": "That's the most absurd idea I've ever heard.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01140",
+  "word": "そろそろ",
+  "reading": "そろそろ",
+  "romaji": "sorosoro",
+  "meaning_id": "gradually; soon",
+  "meaning_en": "gradually; soon",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "そろそろ寝る時間だぞ。",
+      "id": "It's time you went to bed.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "もうそろそろ出発の時間です。",
+      "id": "It's about time to start.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01141",
+  "word": "そんなに",
+  "reading": "そんなに",
+  "romaji": "sonnani",
+  "meaning_id": "so much; like that",
+  "meaning_en": "so much; like that",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "でも、そんなに悪くはなかったよ。",
+      "id": "Well, it wasn't all that bad.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "そんなに食べると、病気になるよ。",
+      "id": "If you eat so much, you'll get sick.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01142",
+  "word": "退院",
+  "reading": "たいいん",
+  "romaji": "taiin",
+  "meaning_id": "me-leave hospital",
+  "meaning_en": "to leave hospital",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼女は１時間前に退院しました。",
+      "id": "She left the hospital an hour ago.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼女はまもなく退院するでしょう。",
+      "id": "She will leave the hospital soon.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01143",
+  "word": "大体",
+  "reading": "だいたい",
+  "romaji": "daitai",
+  "meaning_id": "generally",
+  "meaning_en": "generally",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "それらはだいたい同じくらいの大きさだ。",
+      "id": "Mereka more or less the same size.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ぼくは大体用意ができた。",
+      "id": "I'm about ready.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01145",
+  "word": "大分",
+  "reading": "だいぶ",
+  "romaji": "daibu",
+  "meaning_id": "greatly",
+  "meaning_en": "greatly",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "だいぶ痛みがなくなりました。",
+      "id": "The pain has mostly gone away.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "だいぶ秋めいてまいりました。",
+      "id": "It has become quite autumnal.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01147",
+  "word": "足す",
+  "reading": "たす",
+  "romaji": "tasu",
+  "meaning_id": "me-add a number",
+  "meaning_en": "to add a number",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "６０にするためには１７に何を足せばよいの。",
+      "id": "What do you have to add to 17 to get 60?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "６と４を足すと１０になる。",
+      "id": "Add six and four and you have ten.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01148",
+  "word": "訪ねる",
+  "reading": "たずねる",
+  "romaji": "tazuneru",
+  "meaning_id": "me-visit",
+  "meaning_en": "to visit",
+  "jlpt": "n4",
+  "pos": "verb-ichidan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "いつでも私のオフィスを訪ねなさい。",
+      "id": "Call at my office at any time.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "出かけている間にだれか訪ねてきた。",
+      "id": "Somebody came to see me while I was out.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01151",
+  "word": "建てる",
+  "reading": "たてる",
+  "romaji": "tateru",
+  "meaning_id": "me-build",
+  "meaning_en": "to build",
+  "jlpt": "n4",
+  "pos": "verb-ichidan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この寺院は７８０年に建てられた。",
+      "id": "This temple dates back to 780.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "それを建てるのに何年もかかった。",
+      "id": "It took many years to build it.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01152",
+  "word": "立てる",
+  "reading": "たてる",
+  "romaji": "tateru",
+  "meaning_id": "me-stand something up",
+  "meaning_en": "to stand something up",
+  "jlpt": "n4",
+  "pos": "verb-ichidan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "図書館では物音を立ててはいけない。",
+      "id": "Don't make a noise in the library.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "その車はほこりをたてて立ち去った。",
+      "id": "The car left a trail of dust.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01153",
+  "word": "例えば",
+  "reading": "たとえば",
+  "romaji": "tatoeba",
+  "meaning_id": "for example",
+  "meaning_en": "for example",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "例えば、ロンドンは今は朝７時です。",
+      "id": "For example, it is 7:00 a.m. in London now.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "例えば、これは一本のペンです。",
+      "id": "For example, this is a pen.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01155",
+  "word": "たまに",
+  "reading": "たまに",
+  "romaji": "tamani",
+  "meaning_id": "occasionally",
+  "meaning_en": "occasionally",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "たまには会いに来て下さい。",
+      "id": "Come and see me once in a while.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私にはたまに文通する友人がいる。",
+      "id": "I have a friend to correspond with now and then.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01156",
+  "word": "足りる",
+  "reading": "たりる",
+  "romaji": "tariru",
+  "meaning_id": "me-be enough",
+  "meaning_en": "to be enough",
+  "jlpt": "n4",
+  "pos": "verb-ichidan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "今、ちょっとお金が足りなくてね。",
+      "id": "I'm a bit short of money now.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ときどきお金が足りなくなります。",
+      "id": "Sometimes I run out of money.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01160",
+  "word": "ちっとも",
+  "reading": "ちっとも",
+  "romaji": "chittomo",
+  "meaning_id": "not at all (used with a negative verb)",
+  "meaning_en": "not at all (used with a negative verb)",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "最近エリザベスにちっともあってない。",
+      "id": "I have not seen anything of Elizabeth lately.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ちっとも気にしていない。",
+      "id": "I am not the least bit worried.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01162",
+  "word": "注意",
+  "reading": "ちゅうい",
+  "romaji": "chuui",
+  "meaning_id": "caution",
+  "meaning_en": "caution",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼に遅れないように注意した。",
+      "id": "I cautioned him against being late.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "今後はお金にもっと注意しなさい。",
+      "id": "In future, be more careful with your money.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01167",
+  "word": "付く",
+  "reading": "つく",
+  "romaji": "tsuku",
+  "meaning_id": "me-be attached",
+  "meaning_en": "to be attached",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "うちの車にはエアコンが付いている。",
+      "id": "Our car is equipped with air conditioning.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "もっと食べないと体力が付きませんよ。",
+      "id": "Eat more, or you won't gain strength.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01168",
+  "word": "漬ける",
+  "reading": "つける",
+  "romaji": "tsukeru",
+  "meaning_id": "me-soak",
+  "meaning_en": "to soak; to pickle",
+  "jlpt": "n4",
+  "pos": "verb-ichidan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼はスプーンをスープの中につけた。",
+      "id": "He dipped his spoon into the soup.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼女は汚れた皿を流しに浸けた。",
+      "id": "She put the dirty dishes in the sink.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01170",
+  "word": "伝える",
+  "reading": "つたえる",
+  "romaji": "tsutaeru",
+  "meaning_id": "me-report",
+  "meaning_en": "to report",
+  "jlpt": "n4",
+  "pos": "verb-ichidan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その話は親から子へと伝えられた。",
+      "id": "The story was handed down from father to son.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ご用でしたら父に伝えましょうか。",
+      "id": "Can I tell my father what you want?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01171",
+  "word": "続く",
+  "reading": "つづく",
+  "romaji": "tsuzuku",
+  "meaning_id": "me-be continued",
+  "meaning_en": "to be continued",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "どれくらいこの寒い天気は続きますか。",
+      "id": "How long will this cold weather go on?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "天気がこのまま続くといいですね。",
+      "id": "I hope the weather stays this way.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01172",
+  "word": "続ける",
+  "reading": "つづける",
+  "romaji": "tsuzukeru",
+  "meaning_id": "me-continue",
+  "meaning_en": "to continue",
+  "jlpt": "n4",
+  "pos": "verb-ichidan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ケンはその歌を歌い続けた。",
+      "id": "Ken kept on singing that song.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "走り続けると明かりが見えてきた。",
+      "id": "I ran on and on and came in sight of a light.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01173",
+  "word": "包む",
+  "reading": "つつむ",
+  "romaji": "tsutsumu",
+  "meaning_id": "me-wrap",
+  "meaning_en": "to wrap",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "プレゼント用に包んでもらえますか。",
+      "id": "Can you gift-wrap this, please?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "プレゼント用に包んでください。",
+      "id": "Could you gift wrap it?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01174",
+  "word": "釣る",
+  "reading": "つる",
+  "romaji": "tsuru",
+  "meaning_id": "ikan",
+  "meaning_en": "to fish",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "思っていたほど魚は釣れなかった。",
+      "id": "I could not catch as many fish as I had expected.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私は昨日大きな魚を釣った。",
+      "id": "I caught a big fish yesterday.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01175",
+  "word": "連れる",
+  "reading": "つれる",
+  "romaji": "tsureru",
+  "meaning_id": "me-lead",
+  "meaning_en": "to lead",
+  "jlpt": "n4",
+  "pos": "verb-ichidan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "でもさ、母を連れて行かなくてはいけないんだ。",
+      "id": "But, I have to take my mother.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "大きな犬を連れた男が入って来た。",
+      "id": "A man with a big dog came in.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01178",
+  "word": "できるだけ",
+  "reading": "できるだけ",
+  "romaji": "dekirudake",
+  "meaning_id": "as much as possible",
+  "meaning_en": "as much as possible",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "できるだけ多くの本を読みなさい。",
+      "id": "Read as many books as you can.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "出来るだけゆっくり話して下さい。",
+      "id": "Tolong speak as slowly as possible.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01185",
+  "word": "とうとう",
+  "reading": "とうとう",
+  "romaji": "toutou",
+  "meaning_id": "finally; after all",
+  "meaning_en": "finally; after all",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "トムはとうとうタバコをやめた。",
+      "id": "Tom finally gave up smoking.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "とうとう私たちは家が買えます。",
+      "id": "At last we can afford a house.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01187",
+  "word": "遠く",
+  "reading": "とおく",
+  "romaji": "tooku",
+  "meaning_id": "distant",
+  "meaning_en": "distant",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "遠くにぼんやりした明かりが見えた。",
+      "id": "We saw a dim light in the distance.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "はるか遠くに明かりが見えた。",
+      "id": "I saw a light far away.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01188",
+  "word": "特に",
+  "reading": "とくに",
+  "romaji": "tokuni",
+  "meaning_id": "particularly; especially",
+  "meaning_en": "particularly; especially",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私は音楽、特にロックが大好きだ。",
+      "id": "I love music, especially rock.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私は、やることは特にありません。",
+      "id": "I have nothing particular to do.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01191",
+  "word": "途中",
+  "reading": "とちゅう",
+  "romaji": "tochuu",
+  "meaning_id": "on the way",
+  "meaning_en": "on the way",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "途中であきらめるな。",
+      "id": "Don't give up halfway.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "学校へ行く途中でトムに会った。",
+      "id": "I met Tom on my way to school.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01192",
+  "word": "直す",
+  "reading": "なおす",
+  "romaji": "naosu",
+  "meaning_id": "me-fix",
+  "meaning_en": "to fix; to repair",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あなたの時計は明日までには直しておきますよ。",
+      "id": "I will have repaired your watch by tomorrow.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "なぜヒューズを直さないのですか。",
+      "id": "Why don't you mend that fuse?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01193",
+  "word": "治る",
+  "reading": "なおる",
+  "romaji": "naoru",
+  "meaning_id": "me-be cured",
+  "meaning_en": "to be cured; to heal",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "２週間もすれば自然に治ります。",
+      "id": "It will go away by itself in two weeks.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "治るのにしばらくかかりますね。",
+      "id": "It will take a while to go away.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01194",
+  "word": "直る",
+  "reading": "なおる",
+  "romaji": "naoru",
+  "meaning_id": "me-be fixed",
+  "meaning_en": "to be fixed; to be repaired",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "いったい、いつになったらそのケチは直るの？",
+      "id": "When will you ever loosen your purse strings?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "それは直らないよ。新しいのを買った方がいいよ。",
+      "id": "You can't fix it. You should buy a new one.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01195",
+  "word": "泣く",
+  "reading": "なく",
+  "romaji": "naku",
+  "meaning_id": "me-weep",
+  "meaning_en": "to weep",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ビルは何時間も泣き続けた。",
+      "id": "Bill kept on crying for hours.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "だからほら、もう泣くのをおやめ。",
+      "id": "Now stop crying.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01196",
+  "word": "投げる",
+  "reading": "なげる",
+  "romaji": "nageru",
+  "meaning_id": "me-throw or cast away",
+  "meaning_en": "to throw or cast away",
+  "jlpt": "n4",
+  "pos": "verb-ichidan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その子は犬に石を投げた。",
+      "id": "That child threw a stone at the dog.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ボールをこっちに投げてくれ。",
+      "id": "Chuck me the ball.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01197",
+  "word": "なさる",
+  "reading": "なさる",
+  "romaji": "nasaru",
+  "meaning_id": "(respectful) to do",
+  "meaning_en": "(respectful) to do",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ステーキの焼き方はどうなさいますか。",
+      "id": "How would you like your steak?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "どうぞごゆっくりなさって下さい。",
+      "id": "Tolong make yourself at home.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01198",
+  "word": "鳴る",
+  "reading": "なる",
+  "romaji": "naru",
+  "meaning_id": "me-sound",
+  "meaning_en": "to sound",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "電話が鳴ったらただちに出なさい。",
+      "id": "When the telephone rings, you must answer right away.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私はベルが鳴っている音を聞いた。",
+      "id": "I heard the sound of a ringing bell.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01199",
+  "word": "慣れる",
+  "reading": "なれる",
+  "romaji": "nareru",
+  "meaning_id": "me-grow accustomed to",
+  "meaning_en": "to grow accustomed to",
+  "jlpt": "n4",
+  "pos": "verb-ichidan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "朝早く起きるのには慣れています。",
+      "id": "I'm accustomed to getting up early.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "人前で話をするのにも慣れました。",
+      "id": "I've got accustomed to speaking in public.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01203",
+  "word": "逃げる",
+  "reading": "にげる",
+  "romaji": "nigeru",
+  "meaning_id": "me-escape",
+  "meaning_en": "to escape",
+  "jlpt": "n4",
+  "pos": "verb-ichidan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "現実から逃げることはできない。",
+      "id": "You can't escape from reality.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "その犬が逃げないようにしなさい。",
+      "id": "Make sure that the dog does not escape.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01204",
+  "word": "入院",
+  "reading": "にゅういん",
+  "romaji": "nyuuin",
+  "meaning_id": "me-hospitalise",
+  "meaning_en": "to hospitalise",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "入院しなければいけませんか。",
+      "id": "Do I have to stay in the hospital?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "一週間入院していたんです。",
+      "id": "I was in the hospital for a week.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01205",
+  "word": "入学",
+  "reading": "にゅうがく",
+  "romaji": "nyuugaku",
+  "meaning_id": "me-enter school or university",
+  "meaning_en": "to enter school or university",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私はこの学校に２年前に入学した。",
+      "id": "I entered this school two years ago.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私の息子は、高校に入学した。",
+      "id": "My son entered high school.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01206",
+  "word": "似る",
+  "reading": "にる",
+  "romaji": "niru",
+  "meaning_id": "me-be similar",
+  "meaning_en": "to be similar",
+  "jlpt": "n4",
+  "pos": "verb-ichidan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私も似た話を聞いたことがある。",
+      "id": "I also heard a similar story.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "あなたの妹はだれに似ていますか。",
+      "id": "Who does your sister take after?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01207",
+  "word": "ぬれる",
+  "reading": "ぬれる",
+  "romaji": "nureru",
+  "meaning_id": "me-get wet",
+  "meaning_en": "to get wet",
+  "jlpt": "n4",
+  "pos": "verb-ichidan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "木のおかげで雨にぬれずにすんだ。",
+      "id": "The trees kept me out of the rain.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私はすっかりぬれてしまった。",
+      "id": "I've got wet inside out.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01218",
+  "word": "運ぶ",
+  "reading": "はこぶ",
+  "romaji": "hakobu",
+  "meaning_id": "me-transport",
+  "meaning_en": "to transport",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "仕事はすらすらと運んだ。",
+      "id": "The work progressed smoothly.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "そのかばんは重くて運べなかった。",
+      "id": "The bag was too heavy to carry.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01221",
+  "word": "発音",
+  "reading": "はつおん",
+  "romaji": "hatsuon",
+  "meaning_id": "pronunciation",
+  "meaning_en": "pronunciation",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あなたのお名前はどのように発音するのですか。",
+      "id": "How do you pronounce your name?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私は英語の発音をもっとよくしたい。",
+      "id": "I would like to improve my English pronunciation.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01222",
+  "word": "はっきり",
+  "reading": "はっきり",
+  "romaji": "hakkiri",
+  "meaning_id": "clearly",
+  "meaning_en": "clearly",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私はまだはっきりとは知らない。",
+      "id": "I don't know for certain yet.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "今ははっきりとはわかりません。",
+      "id": "I'm not sure right now.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01223",
+  "word": "花見",
+  "reading": "はなみ",
+  "romaji": "hanami",
+  "meaning_id": "cherry-blossom viewing",
+  "meaning_en": "cherry-blossom viewing",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "花見ができる春が待ち遠しい。",
+      "id": "I can't wait for spring to come so we can sit under the cherry trees.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "お花見に行きませんか？",
+      "id": "Why don't we go and see the cherry blossoms?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01225",
+  "word": "反対",
+  "reading": "はんたい",
+  "romaji": "hantai",
+  "meaning_id": "opposition",
+  "meaning_en": "opposition",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この考えには反対せざるをえない。",
+      "id": "I have to oppose this idea.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私はそれと反対の事は何も知らない。",
+      "id": "I know nothing to the contrary.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01227",
+  "word": "引き出す",
+  "reading": "ひきだす",
+  "romaji": "hikidasu",
+  "meaning_id": "me-withdraw",
+  "meaning_en": "to withdraw",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼のいいところを引き出すようにしなさい。",
+      "id": "Try to bring out the best in him.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼女は銀行からお金を引き出した。",
+      "id": "She drew out the money from the bank.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01229",
+  "word": "びっくりする",
+  "reading": "びっくりする",
+  "romaji": "bikkurisuru",
+  "meaning_id": "me-be surprised",
+  "meaning_en": "to be surprised",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼はびっくりするほどのアクロバットができる。",
+      "id": "He can do the most amazing acrobatics.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼らはそのニュースを聞いたらびっくりするでしょう。",
+      "id": "They will be surprised to hear the news.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01231",
+  "word": "開く",
+  "reading": "ひらく",
+  "romaji": "hiraku",
+  "meaning_id": "me-open an event",
+  "meaning_en": "to open an event",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "庭のバラの木のつぼみが少しずつ開き始める。",
+      "id": "Little by little, the buds on the rosebush in my garden begin to open.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "パーティーを開いたらどうですか。",
+      "id": "Why don't you have a party?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01233",
+  "word": "昼休み",
+  "reading": "ひるやすみ",
+  "romaji": "hiruyasumi",
+  "meaning_id": "noon break",
+  "meaning_en": "noon break",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "お昼休みは、１時間です。",
+      "id": "Lunch break is an hour long.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "12時から1時まで、1時間の昼休みがある。",
+      "id": "We have an hour's recess for lunch from twelve to one.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01234",
+  "word": "拾う",
+  "reading": "ひろう",
+  "romaji": "hirou",
+  "meaning_id": "me-pick up",
+  "meaning_en": "to pick up; to gather",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ホテルの前で私を車で拾ってください。",
+      "id": "Tolong pick me up by car in front of the hotel.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "床からペンを拾って下さい。",
+      "id": "Tolong pick up the pen from the floor.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01237",
+  "word": "復習",
+  "reading": "ふくしゅう",
+  "romaji": "fukushuu",
+  "meaning_id": "revision",
+  "meaning_en": "revision",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その課の復習をしましたか。",
+      "id": "Have you gone over the lesson?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "君は英語の復習をしようとしましたか。",
+      "id": "Did you try to review the English lessons?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01241",
+  "word": "降り出す",
+  "reading": "ふりだす",
+  "romaji": "furidasu",
+  "meaning_id": "me-start to rain",
+  "meaning_en": "to start to rain",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その上雨が降り出している。",
+      "id": "Besides, it's starting to rain.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "まるで雨が降り出しそうに見える。",
+      "id": "It looks as if it's going to rain.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01242",
+  "word": "プレゼント",
+  "reading": "プレゼント",
+  "romaji": "purezento",
+  "meaning_id": "present",
+  "meaning_en": "present",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ハーモニカはお父さんからのプレゼントですか。",
+      "id": "Is the harmonica a present from his father?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "おじは私にプレゼントをくれた。",
+      "id": "My uncle gave me a present.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01247",
+  "word": "貿易",
+  "reading": "ぼうえき",
+  "romaji": "boueki",
+  "meaning_id": "trade",
+  "meaning_en": "trade",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "日本は貿易に頼っている。",
+      "id": "Japan depends on foreign trade.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "イギリス人はそのころ茶の貿易を始めた。",
+      "id": "The English entered into the tea trade at that time.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01248",
+  "word": "放送",
+  "reading": "ほうそう",
+  "romaji": "housou",
+  "meaning_id": "me-broadcast",
+  "meaning_en": "to broadcast",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ニュースは毎時放送しています。",
+      "id": "We broadcast news on the hour.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "そのショーは午後７時に放送される。",
+      "id": "The show will be on the air at 7 p.m.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01250",
+  "word": "ほど",
+  "reading": "ほど",
+  "romaji": "hodo",
+  "meaning_id": "extent",
+  "meaning_en": "extent",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "スージーほど上手にピアノをひけるとよいのだが。",
+      "id": "I wish I could play the piano as well as Susie.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ここから３キロほど川上に村が１つある。",
+      "id": "Ada a village about three kilometers up the river from here.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01251",
+  "word": "ほとんど",
+  "reading": "ほとんど",
+  "romaji": "hotondo",
+  "meaning_id": "mostly",
+  "meaning_en": "mostly",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ケイトは中国語をほとんど話せない。",
+      "id": "Kate can hardly speak Chinese.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "用意がほとんど出来ていなかった。",
+      "id": "I was hardly prepared.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01252",
+  "word": "ほめる",
+  "reading": "ほめる",
+  "romaji": "homeru",
+  "meaning_id": "me-praise",
+  "meaning_en": "to praise",
+  "jlpt": "n4",
+  "pos": "verb-ichidan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ヘレンはみんなにほめられて顔を赤くした。",
+      "id": "Helen blushed at their praise.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "あなたは先生にほめられましたか。",
+      "id": "Were you praised by the teacher?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01253",
+  "word": "翻訳",
+  "reading": "ほんやく",
+  "romaji": "hon'yaku",
+  "meaning_id": "translation",
+  "meaning_en": "translation",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼女はそれを一語一語翻訳した。",
+      "id": "She translated it word for word.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "これをフランス語に翻訳してくれないか。",
+      "id": "Will you translate this into French?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01255",
+  "word": "まず",
+  "reading": "まず",
+  "romaji": "mazu",
+  "meaning_id": "first of all",
+  "meaning_en": "first of all",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "バリウムをまず一口飲んでください。",
+      "id": "First, swallow one dose of barium.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "まず私に話させてください。",
+      "id": "Tolong let me speak first.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01256",
+  "word": "間に合う",
+  "reading": "まにあう",
+  "romaji": "maniau",
+  "meaning_id": "me-be in time for",
+  "meaning_en": "to be in time for",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "急げば何とか間に合うと思います。",
+      "id": "I think we'll make it if we hurry.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "急がないと電車に間に合わないよ。",
+      "id": "Hurry up, or you will miss the train.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01257",
+  "word": "回る",
+  "reading": "まわる",
+  "romaji": "mawaru",
+  "meaning_id": "me-go around",
+  "meaning_en": "to go around",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私たちは車の後ろに回って押した。",
+      "id": "We got behind the car and pushed.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "お昼を少し回った時に彼が来た。",
+      "id": "He came a little after noon.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01259",
+  "word": "見える",
+  "reading": "みえる",
+  "romaji": "mieru",
+  "meaning_id": "me-be in sight",
+  "meaning_en": "to be in sight",
+  "jlpt": "n4",
+  "pos": "verb-ichidan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "すべてのものがすばらしく見えた。",
+      "id": "Everything looked nice.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "あそこに赤い家が見えるでしょう。",
+      "id": "You will see a red house over there.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01261",
+  "word": "見つかる",
+  "reading": "みつかる",
+  "romaji": "mitsukaru",
+  "meaning_id": "me-be discovered",
+  "meaning_en": "to be discovered",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "運悪く仕事が見つからなかった。",
+      "id": "He had no luck in finding work.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "同じ物はどこにでも見つかります。",
+      "id": "You can find the same thing anywhere.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01262",
+  "word": "見つける",
+  "reading": "みつける",
+  "romaji": "mitsukeru",
+  "meaning_id": "me-discover",
+  "meaning_en": "to discover",
+  "jlpt": "n4",
+  "pos": "verb-ichidan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ぼくはこの本を古本屋で見つけた。",
+      "id": "I came across this book in a secondhand bookstore.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "すっごくいいものを見つけたよ！",
+      "id": "I've found something amazing!",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01264",
+  "word": "向かう",
+  "reading": "むかう",
+  "romaji": "mukau",
+  "meaning_id": "me-face",
+  "meaning_en": "to face",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あなたは何処へ向かっているのですか。",
+      "id": "Where are you bound for?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "秋にはたくさんの鳥が南に向かう。",
+      "id": "In the fall, many birds head for the south.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01265",
+  "word": "迎える",
+  "reading": "むかえる",
+  "romaji": "mukaeru",
+  "meaning_id": "me-go out to meet",
+  "meaning_en": "to go out to meet",
+  "jlpt": "n4",
+  "pos": "verb-ichidan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "６時にホテルに車で迎えて下さい。",
+      "id": "Tolong pick me up at the hotel at six o'clock.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "よいお年をお迎えください。",
+      "id": "I wish you a Happy New Year.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01268",
+  "word": "申す",
+  "reading": "もうす",
+  "romaji": "mousu",
+  "meaning_id": "(humble) to be called; to say",
+  "meaning_en": "(humble) to be called; to say",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "こちらはスミスと申します。ジョンソンさんはおいででしょうか。",
+      "id": "Ini adalah Mr Smith speaking. Is Mr Johnson in?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "アンドレアと申します。",
+      "id": "My name is Andrea.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01269",
+  "word": "もうすぐ",
+  "reading": "もうすぐ",
+  "romaji": "mousugu",
+  "meaning_id": "soon",
+  "meaning_en": "soon",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "明るくなってきた。もうすぐ朝だ。",
+      "id": "It's getting light. Morning is coming.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この車はもうすぐスクラップだ。",
+      "id": "This car will soon have to go for scrap.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01270",
+  "word": "もし",
+  "reading": "もし",
+  "romaji": "moshi",
+  "meaning_id": "if",
+  "meaning_en": "if",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "もし電話がなったら出てくれますか。",
+      "id": "If the telephone rings, can you answer it?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "もし金があれば、それが買えるのに。",
+      "id": "If I had money, I could buy it.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01271",
+  "word": "もちろん",
+  "reading": "もちろん",
+  "romaji": "mochiron",
+  "meaning_id": "of course",
+  "meaning_en": "of course",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "「ご一緒してもいいですか」「もちろんです」",
+      "id": "\"May I go with you?\" \"Of course.\"",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "もちろん町でコンサートはありました。",
+      "id": "Of course, there were concerts in the town.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01272",
+  "word": "もっとも",
+  "reading": "もっとも",
+  "romaji": "mottomo",
+  "meaning_id": "extremely",
+  "meaning_en": "extremely",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ケンは三人のなかでもっとも速く走ります。",
+      "id": "Ken runs fastest of the three.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "もっともやさしい問題から始めた方がいい。",
+      "id": "You had better begin with easier questions.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01273",
+  "word": "もらう",
+  "reading": "もらう",
+  "romaji": "morau",
+  "meaning_id": "menerima",
+  "meaning_en": "to receive",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あさって彼にここへ来てもらうつもりです。",
+      "id": "I will have him come here the day after tomorrow.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "新しいスーツを仕立ててもらった。",
+      "id": "I had a new suit made.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01274",
+  "word": "約束",
+  "reading": "やくそく",
+  "romaji": "yakusoku",
+  "meaning_id": "promise",
+  "meaning_en": "promise",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "約束したことを思い出して下さい。",
+      "id": "I must remind you of your promise.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "約束どおりにピアノをひいた。",
+      "id": "She played the piano as promised.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01276",
+  "word": "やっと",
+  "reading": "やっと",
+  "romaji": "yatto",
+  "meaning_id": "at last",
+  "meaning_en": "at last",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "こ、こら！ナニやっとるかぁぁ！！",
+      "id": "H-Hey! What're you up to!!",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "今朝になってやっと雨がやんだ。",
+      "id": "It was not till this morning that it stopped raining.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01277",
+  "word": "やはり",
+  "reading": "やはり",
+  "romaji": "yahari",
+  "meaning_id": "as I thought; absolutely",
+  "meaning_en": "as I thought; absolutely",
+  "jlpt": "n4",
+  "pos": "adverb",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "やっぱり何とかやってのけたね。",
+      "id": "You managed it after all.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "やっぱりしんどいものだろうな。",
+      "id": "This must be annoying!",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01279",
+  "word": "予習",
+  "reading": "よしゅう",
+  "romaji": "yoshuu",
+  "meaning_id": "preparation for a lesson",
+  "meaning_en": "preparation for a lesson",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "予習を始めた方がいいですよ。",
+      "id": "You may as well begin to prepare your lessons.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "君は予習をするべきだ。",
+      "id": "You should prepare your lessons.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01280",
+  "word": "予定",
+  "reading": "よてい",
+  "romaji": "yotei",
+  "meaning_id": "arrangement",
+  "meaning_en": "arrangement",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私は６時にボブに会う予定だった。",
+      "id": "I was meeting Bob at six.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "来週ヨーロッパに発つ予定です。",
+      "id": "I'm planning to leave for Europe next week.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01281",
+  "word": "予約",
+  "reading": "よやく",
+  "romaji": "yoyaku",
+  "meaning_id": "reservation",
+  "meaning_en": "reservation",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "「ホテルの予約はしてありますか」「すみませんが、まだなんです」",
+      "id": "\"Have you reserved a hotel room?\" \"Sorry, not yet.\"",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "前もって予約しなければならない。",
+      "id": "You have to make reservations in advance.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01282",
+  "word": "寄る",
+  "reading": "よる",
+  "romaji": "yoru",
+  "meaning_id": "me-visit",
+  "meaning_en": "to visit",
+  "jlpt": "n4",
+  "pos": "verb-godan",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ちょっと寄って行きませんか。",
+      "id": "Won't you come in for a moment?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "犬は私を見るなり私に走り寄った。",
+      "id": "No sooner had the dog seen me than it ran up to me.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01286",
+  "word": "レポート",
+  "reading": "レポート",
+  "romaji": "repooto",
+  "meaning_id": "report",
+  "meaning_en": "report",
+  "jlpt": "n4",
+  "pos": "verb-suru",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "このレポートを終えたら休もうと思う。",
+      "id": "On finishing this report, I will rest.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "いつレポートを提出するのですか。",
+      "id": "When do we hand in the report?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+}
+
 ];

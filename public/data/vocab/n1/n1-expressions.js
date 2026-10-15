@@ -255,6 +255,484 @@ window.vocabN1_Expressions = [
   "misc_jm": [
     "yojijukugo"
   ]
+},
+
+// ── Staged Expansion (10) ──
+
+{
+  "id": "vg-n1-00448",
+  "word": "云々",
+  "reading": "うんぬん",
+  "romaji": "unnun",
+  "meaning_id": "and so on; and so forth",
+  "meaning_en": "and so on; and so forth; comment",
+  "jlpt": "n1",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N1: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "云々を使います。",
+      "id": "Menggunakan and so on; and so forth.",
+      "level": "n1",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n1-00489",
+  "word": "おいて",
+  "reading": "おいて",
+  "romaji": "oite",
+  "meaning_id": "at; in",
+  "meaning_en": "at; in; on",
+  "jlpt": "n1",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N1: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ちょっとの時間、電話を切らないでおいて下さい。",
+      "id": "Hold on a moment, please.",
+      "level": "n1",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n1-00558",
+  "word": "主なる",
+  "reading": "おもなる",
+  "romaji": "omonaru",
+  "meaning_id": "main; principal",
+  "meaning_en": "main; principal; important",
+  "jlpt": "n1",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N1: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "主なるを使います。",
+      "id": "Menggunakan main; principal.",
+      "level": "n1",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n1-01181",
+  "word": "ございます",
+  "reading": "ございます",
+  "romaji": "gozaimasu",
+  "meaning_id": "me-be",
+  "meaning_en": "to be (polite); to exist",
+  "jlpt": "n1",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N1: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ご親切誠にありがとうございます。",
+      "id": "Thank you for your kindness.",
+      "level": "n1",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "クリスマスおめでとうございます。",
+      "id": "I wish you a Merry Christmas.",
+      "level": "n1",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n1-01206",
+  "word": "事によると",
+  "reading": "ことによると",
+  "romaji": "kotoniyoruto",
+  "meaning_id": "depending on the circumstances",
+  "meaning_en": "depending on the circumstances",
+  "jlpt": "n1",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N1: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ことによると、きみにも一緒にきてもらう。",
+      "id": "Maybe you'd better come with us.",
+      "level": "n1",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ことによると父は次の列車で帰るかもしれません。",
+      "id": "My father will possibly come on the next train.",
+      "level": "n1",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n1-01868",
+  "word": "対して",
+  "reading": "たいして",
+  "romaji": "taishite",
+  "meaning_id": "for; in regard to",
+  "meaning_en": "for; in regard to; per",
+  "jlpt": "n1",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N1: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は目上の人に対して丁重である。",
+      "id": "He behaves respectfully toward his superiors.",
+      "level": "n1",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼は批評に対してたいへん敏感だ。",
+      "id": "Dia very sensitive to criticism.",
+      "level": "n1",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n1-02062",
+  "word": "束の間",
+  "reading": "つかのま",
+  "romaji": "tsukanoma",
+  "meaning_id": "moment; brief time",
+  "meaning_en": "moment; brief time; brief; transient",
+  "jlpt": "n1",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N1: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "がっかりしたことに、彼の勝利は、つかの間の勝利にすぎなかった。",
+      "id": "To my regret, his was nothing but a short-lived triumph.",
+      "level": "n1",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "つかの間の平和の後でまた戦争が起こった。",
+      "id": "After a brief peace, war broke out again.",
+      "level": "n1",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n1-02348",
+  "word": "何より",
+  "reading": "なにより",
+  "romaji": "naniyori",
+  "meaning_id": "most; best",
+  "meaning_en": "most; best",
+  "jlpt": "n1",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N1: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "一日中働いたあとは、一杯のビールが何よりだ。",
+      "id": "Ada nothing like a glass of beer after a whole day's work.",
+      "level": "n1",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私は自分が健康で何よりだと思っている。",
+      "id": "I count myself lucky in having good health.",
+      "level": "n1",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n1-02391",
+  "word": "にも拘らず",
+  "reading": "にもかかわらず",
+  "romaji": "nimokakawarazu",
+  "meaning_id": "in spite of; nevertheless",
+  "meaning_en": "in spite of; nevertheless",
+  "jlpt": "n1",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N1: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "それにも関わらず彼は試験に合格することができた。",
+      "id": "And yet he could pass the exam.",
+      "level": "n1",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼は大雪にもかかわらず来ました。",
+      "id": "He came in spite of the heavy snow.",
+      "level": "n1",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n1-03033",
+  "word": "以て",
+  "reading": "もって",
+  "romaji": "motte",
+  "meaning_id": "with; by",
+  "meaning_en": "with; by; by means of; because; in view of",
+  "jlpt": "n1",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N1: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その状況は戦争を以てしか決着できない。",
+      "id": "The situation could only be settled by war.",
+      "level": "n1",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "どうしてもって時以外は、タクシーは使わないんだ。",
+      "id": "I don't use taxis unless it's absolutely necessary.",
+      "level": "n1",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
 }
 
 ];

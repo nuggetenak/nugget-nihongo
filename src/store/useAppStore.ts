@@ -377,7 +377,7 @@ export const useAppStore = create<AppState>((set, get) => ({
     }
   },
 
-  theme: (typeof window !== 'undefined' ? (localStorage.getItem('bunpou-theme') as 'dark' | 'light') : 'dark') || 'dark',
+  theme: (typeof window !== 'undefined' ? (localStorage.getItem('bunpou-theme') as 'dark' | 'light') : 'light') || 'light',
   toggleTheme: () => {
     const nextTheme = get().theme === 'dark' ? 'light' : 'dark';
     set({ theme: nextTheme });

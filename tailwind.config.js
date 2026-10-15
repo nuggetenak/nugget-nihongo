@@ -36,6 +36,16 @@ module.exports = {
           n2: '#4ADE80',
           n1: '#FBBF24',
         },
+        theme: {
+          DEFAULT: 'var(--border-theme)',
+          primary: 'var(--theme-primary)',
+          'primary-hover': 'var(--theme-primary-hover)',
+        },
+        muted: 'var(--text-muted)',
+      },
+      borderColor: {
+        theme: 'var(--border-theme)',
+        'theme-primary': 'var(--theme-primary)',
       },
       fontFamily: {
         ui: ['"DM Sans"', 'sans-serif'],

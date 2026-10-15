@@ -24,7 +24,7 @@ window.vocabN5_Expressions = [
   nuance: 'Serba guna: minta perhatian, minta maaf, berterima kasih.',
   conj_type: null,
   examples: [
-      { jp: 'すみません。', en: 'Excuse me.', id: '[TBD]' },{"jp": "すみません, トイレはどこですか。", "id": "Permisi, di mana toiletnya?", "level": "n5", "tags": ["perjalanan", "sopan-santun"]}],
+      {"jp": "すみません, トイレはどこですか。", "id": "Permisi, di mana toiletnya?", "level": "n5", "tags": ["perjalanan", "sopan-santun"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -54,7 +54,7 @@ window.vocabN5_Expressions = [
   nuance: 'ありがとう untuk kasual. ありがとうございます untuk formal.',
   conj_type: null,
   examples: [
-      { jp: 'ありがとうございます！', en: 'Thanks.', id: '[TBD]' },{"jp": "ありがとうございます。助かりました。", "id": "Terima kasih. Sangat membantu.", "level": "n5", "tags": ["sopan-santun"]}],
+      {"jp": "ありがとうございます。助かりました。", "id": "Terima kasih. Sangat membantu.", "level": "n5", "tags": ["sopan-santun"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -84,7 +84,7 @@ window.vocabN5_Expressions = [
   nuance: 'Menawarkan atau mempersilakan. どうぞ〜ください = tolong…',
   conj_type: 'suru',
   examples: [
-      { jp: 'どうぞ、お先に！', en: 'Go ahead!', id: '[TBD]' },{"jp": "どうぞ, 座ってください。", "id": "Silakan duduk.", "level": "n5", "tags": ["sopan-santun"]}],
+      {"jp": "どうぞ, 座ってください。", "id": "Silakan duduk.", "level": "n5", "tags": ["sopan-santun"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -164,7 +164,7 @@ window.vocabN5_Expressions = [
   nuance: 'This is a standard workplace phrase used when leaving the office before your colleagues. It literally translates to \'I am doing something rude before you\', acknowledging the perceived impoliteness of leaving while others are still working.',
   conj_type: null,
   examples: [
-      { jp: 'それじゃお先に失礼します。', en: 'I\'m leaving.', id: '[TBD]' },{"jp":"仕事が終わりましたので、お先に失礼します。","id":"Karena pekerjaan sudah selesai, permisi saya pulang duluan.","level":"n5","tags":["pekerjaan"]}],
+      {"jp":"仕事が終わりましたので、お先に失礼します。","id":"Karena pekerjaan sudah selesai, permisi saya pulang duluan.","level":"n5","tags":["pekerjaan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -1084,4 +1084,457 @@ window.vocabN5_Expressions = [
     "review_notes": ""
   }
 },
+
+// ── Staged Expansion (9) ──
+
+{
+  "id": "vg-n5-01020",
+  "word": "いただきます",
+  "reading": "いただきます",
+  "romaji": "itadakimasu",
+  "meaning_id": "expression of gratitude before meals",
+  "meaning_en": "expression of gratitude before meals",
+  "jlpt": "n5",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "８ドル５０セントいただきます。",
+      "id": "$8.50, please.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ワインをいただきます。",
+      "id": "We'd like to have some wine.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01055",
+  "word": "お願いします",
+  "reading": "おねがいします",
+  "romaji": "onegaishimasu",
+  "meaning_id": "please",
+  "meaning_en": "please",
+  "jlpt": "n5",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ファーストクラスでお願いします。",
+      "id": "I'd like to travel first-class.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "できれば、６時半でお願いします。",
+      "id": "Six-thirty, it's possible.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01062",
+  "word": "女の子",
+  "reading": "おんなのこ",
+  "romaji": "onnanoko",
+  "meaning_id": "girl",
+  "meaning_en": "girl",
+  "jlpt": "n5",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "女の子はほとんどみんなやさしい。",
+      "id": "Almost all girls are kind.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ほかの女の子たちはどこにいるの。",
+      "id": "Where are the other girls?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01103",
+  "word": "ください",
+  "reading": "ください",
+  "romaji": "kudasai",
+  "meaning_id": "please",
+  "meaning_en": "please",
+  "jlpt": "n5",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ニューススタンドで聞いて下さい。",
+      "id": "You'll have to ask at the newsstand.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "話があったら電話をかけて下さい。",
+      "id": "If you want to speak to me, please call me up.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01120",
+  "word": "ごめんなさい",
+  "reading": "ごめんなさい",
+  "romaji": "gomennasai",
+  "meaning_id": "I beg your pardon; excuse me",
+  "meaning_en": "I beg your pardon; excuse me",
+  "jlpt": "n5",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "お話し中、ごめんなさい。",
+      "id": "Excuse me for interrupting you.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ごめんなさい、でもよく聞こえないんです。",
+      "id": "I'm sorry, but I can't hear you well.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01160",
+  "word": "すみません",
+  "reading": "すみません",
+  "romaji": "sumimasen",
+  "meaning_id": "sorry; excuse me",
+  "meaning_en": "sorry; excuse me",
+  "jlpt": "n5",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "すみません、この席あいていますか。",
+      "id": "Excuse me, is this seat taken?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "すみませんが電話に出てください。",
+      "id": "Tolong answer the phone.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01173",
+  "word": "それから",
+  "reading": "それから",
+  "romaji": "sorekara",
+  "meaning_id": "after that",
+  "meaning_en": "after that",
+  "jlpt": "n5",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "それからすっきりきれいにしてくれ。",
+      "id": "Then clean it really well.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "それから先の話を聞きたい。",
+      "id": "I'd like to know the rest of the story.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01211",
+  "word": "どうぞよろしく",
+  "reading": "どうぞよろしく",
+  "romaji": "douzoyoroshiku",
+  "meaning_id": "pleased to meet you",
+  "meaning_en": "pleased to meet you",
+  "jlpt": "n5",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "どうぞよろしく。",
+      "id": "Nice to meet you.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ご家族の皆さんにどうぞよろしく。",
+      "id": "Give my best regards to all your family.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n5-01243",
+  "word": "はじめまして",
+  "reading": "はじめまして",
+  "romaji": "hajimemashite",
+  "meaning_id": "How do you do?; I am glad to meet you",
+  "meaning_en": "How do you do?; I am glad to meet you",
+  "jlpt": "n5",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N5: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "初めましてケン。",
+      "id": "Nice to meet you, Ken.",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "はじめまして、ジョーンズ夫人。",
+      "id": "How do you do, Mrs. Jones?",
+      "level": "n5",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+}
+
 ];

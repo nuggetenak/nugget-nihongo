@@ -12175,4 +12175,549 @@ window.vocabN3_Adjectives = [
     "review_notes": ""
   }
 },
+
+// ── Staged Expansion (11) ──
+
+{
+  "id": "vg-n3-02467",
+  "word": "恐ろしい",
+  "reading": "おそろしい",
+  "romaji": "osoroshii",
+  "meaning_id": "terrible; dreadful",
+  "meaning_en": "terrible; dreadful",
+  "jlpt": "n3",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N3: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その嵐の天候は恐ろしかった。",
+      "id": "The stormy weather was dreadful.",
+      "level": "n3",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼は恐ろしい病気にとりつかれた。",
+      "id": "He fell a victim to a deadly disease.",
+      "level": "n3",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n3-02483",
+  "word": "硬い",
+  "reading": "かたい",
+  "romaji": "katai",
+  "meaning_id": "solid; hard (esp. metal, stone)",
+  "meaning_en": "solid; hard (esp. metal, stone); unpolished writing",
+  "jlpt": "n3",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N3: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "卵は硬くゆでてください。",
+      "id": "Boil the eggs hard.",
+      "level": "n3",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ダイヤモンドほど硬いものはない。",
+      "id": "Nothing is as hard as a diamond.",
+      "level": "n3",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n3-02491",
+  "word": "かわいそう",
+  "reading": "かわいそう",
+  "romaji": "kawaisou",
+  "meaning_id": "poor; pitiable",
+  "meaning_en": "poor; pitiable; pathetic",
+  "jlpt": "n3",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N3: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼女は可哀想に思って、その子達の面倒をみた。",
+      "id": "She cared for the children out of charity.",
+      "level": "n3",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n3-02492",
+  "word": "かわいらしい",
+  "reading": "かわいらしい",
+  "romaji": "kawairashii",
+  "meaning_id": "lovely; sweet",
+  "meaning_en": "lovely; sweet",
+  "jlpt": "n3",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N3: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "兄は私にかわいらしい人形をくれました。",
+      "id": "My brother gave me a cute doll.",
+      "level": "n3",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼女は本当にかわいらしく見える。",
+      "id": "She really looks pretty.",
+      "level": "n3",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n3-02504",
+  "word": "クラシック",
+  "reading": "クラシック",
+  "romaji": "kurashikku",
+  "meaning_id": "classic(s)",
+  "meaning_en": "classic(s)",
+  "jlpt": "n3",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N3: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "クラシックはありません。",
+      "id": "I don't have any classical music.",
+      "level": "n3",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私はクラシックが好きではない。",
+      "id": "I don't like classical music.",
+      "level": "n3",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n3-02505",
+  "word": "詳しい",
+  "reading": "くわしい",
+  "romaji": "kuwashii",
+  "meaning_id": "knowing very well; detailed",
+  "meaning_en": "knowing very well; detailed; full; accurate",
+  "jlpt": "n3",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N3: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "このあたりはお詳しいですか。",
+      "id": "Are you familiar with this area?",
+      "level": "n3",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "もっと詳しい情報が欲しい。",
+      "id": "I want more detailed information.",
+      "level": "n3",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n3-02516",
+  "word": "困難",
+  "reading": "こんなん",
+  "romaji": "konnan",
+  "meaning_id": "difficulty; distress",
+  "meaning_en": "difficulty; distress",
+  "jlpt": "n3",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N3: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼の言ってる事を理解するのは困難だ。",
+      "id": "I found it difficult to understand what he was saying.",
+      "level": "n3",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "仕事がだんだん困難になってきた。",
+      "id": "The work begins to get more difficult.",
+      "level": "n3",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n3-02529",
+  "word": "幸せ",
+  "reading": "しあわせ",
+  "romaji": "shiawase",
+  "meaning_id": "happiness; good fortune",
+  "meaning_en": "happiness; good fortune; luck; blessing",
+  "jlpt": "n3",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N3: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "金持ちが幸せとは限らない。",
+      "id": "The rich are not always happy.",
+      "level": "n3",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼女は幸せの絶頂ってところだね。",
+      "id": "She must be on cloud nine.",
+      "level": "n3",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n3-02577",
+  "word": "直接",
+  "reading": "ちょくせつ",
+  "romaji": "chokusetsu",
+  "meaning_id": "direct; immediate",
+  "meaning_en": "direct; immediate; personal; firsthand",
+  "jlpt": "n3",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N3: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼女に直接言ったらどうですか。",
+      "id": "Why don't you tell her directly?",
+      "level": "n3",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私は彼から直接その情報を入手した。",
+      "id": "I got the information from him directly.",
+      "level": "n3",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n3-02581",
+  "word": "辛い",
+  "reading": "つらい",
+  "romaji": "tsurai",
+  "meaning_id": "painful; heart-breaking",
+  "meaning_en": "painful; heart-breaking",
+  "jlpt": "n3",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N3: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "流産はとても辛い経験です。",
+      "id": "Miscarriage is a heart-breaking experience.",
+      "level": "n3",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "寒い朝は起きるのが辛い。",
+      "id": "It is difficult to wake up on cold mornings.",
+      "level": "n3",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n3-02635",
+  "word": "よい",
+  "reading": "よい",
+  "romaji": "yoi",
+  "meaning_id": "bagus / baik",
+  "meaning_en": "good; nice; pleasant; ok",
+  "jlpt": "n3",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N3: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私にはよい友達が数人いる。",
+      "id": "I have several good friends.",
+      "level": "n3",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼女は彼らはよい友達だといった。",
+      "id": "She said that they were good friends of hers.",
+      "level": "n3",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+}
+
 ];

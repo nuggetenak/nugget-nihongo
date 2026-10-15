@@ -103,12 +103,25 @@ export const SenseiPage: React.FC = () => {
           ? 'Punya kalimat bahasa Jepang buatanmu sendiri? Tulis di sini, biar kita cek partikel dan tingkat kealamiannya sama-sama.'
           : 'Tulis kalimat bahasa Jepang yang sudah kamu buat, nanti kita periksa bersama agar terdengar lebih alami dan tepat! ✍️';
 
+function formatModelName(model?: string): string {
+  if (!model) return 'Auto-Router';
+  if (model.includes('qwen')) return 'Qwen 2.5 72B';
+  if (model.includes('llama')) return 'Llama 3.3 70B';
+  if (model.includes('deepseek')) return 'DeepSeek V3';
+  if (model.includes('gemini-3.8')) return 'Gemini 3.8 Flash';
+  if (model.includes('gemini')) return 'Gemini Flash';
+  return model.split('/').pop() || model;
+}
+
+      const activeKey = typeof window !== 'undefined' ? localStorage.getItem('nn_gemini_api_key') || '' : '';
+      const isOR = activeKey.startsWith('sk-or-') || !activeKey;
+
       const initialGreeting: ChatMessage = {
         id: `welcome-${mode}-${Date.now()}`,
         role: 'model',
         content: welcomeText,
         timestamp: Date.now(),
-        modelUsed: 'gemini-3.8-flash',
+        modelUsed: isOR ? 'qwen/qwen-2.5-72b-instruct' : 'gemini-3.8-flash',
       };
       setMessages([initialGreeting]);
     }
@@ -209,8 +222,8 @@ export const SenseiPage: React.FC = () => {
               <h1 className="text-lg sm:text-xl font-bold text-appText-bright truncate">
                 {persona === 'sensei_nugget' ? 'Sensei Nugget' : 'Senpai Aoi'}
               </h1>
-              <span className="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-accent/15 text-accent border border-accent/30 shrink-0">
-                Gemini 3.8
+              <span className="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-amber-500/15 text-accent border border-amber-500/30 shrink-0">
+                {typeof window !== 'undefined' && localStorage.getItem('nn_gemini_api_key')?.startsWith('AIza') ? 'Gemini 3.8 Flash' : 'OpenRouter · Qwen 2.5 72B'}
               </span>
             </div>
             <p className="text-xs text-appText-muted truncate">
@@ -385,8 +398,8 @@ export const SenseiPage: React.FC = () => {
                       </button>
 
                       {msg.modelUsed && (
-                        <span className="text-[10px] text-appText-muted/70">
-                          via {msg.modelUsed}
+                        <span className="text-[10px] text-appText-muted/80 font-mono">
+                          via {formatModelName(msg.modelUsed)} {msg.tokensUsed ? `· ${msg.tokensUsed} tokens` : ''}
                         </span>
                       )}
                     </div>

@@ -3,9 +3,9 @@
 //  Single source of truth across React SPA, Service Worker, and PWA
 // ══════════════════════════════════════════════════════════════════
 
-export const APP_VERSION = 'v19.3.0';
-export const APP_VERSION_NUMBER = '19.3.0';
-export const APP_RELEASE_NAME = 'Warm Sumi & Golden Lacquerware Theme, Kanji Studio Surgery, 3 Dedicated Studios & Arena Kuis Overhaul';
+export const APP_VERSION = 'v19.3.1';
+export const APP_VERSION_NUMBER = '19.3.1';
+export const APP_RELEASE_NAME = 'Light Theme Default, Continuous Kanji Ink Flow, FSRS Memory Vault & 10.508+ Vocab Ingestion';
 export const APP_BUILD_DATE = '2026-10-16';
 
 export const APP_CHANGELOG_HIGHLIGHTS = [

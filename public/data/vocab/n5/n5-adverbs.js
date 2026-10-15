@@ -24,7 +24,7 @@ window.vocabN5_Adverbs = [
   nuance: 'Used to indicate a large quantity of countable or uncountable things. It can function as an adverb or be linked to nouns using \'no\' (たくさんの).',
   conj_type: 'na-adj',
   examples: [
-      { jp: 'たくさん食べちゃった。', en: 'I ate a lot.', id: '[TBD]' },{"jp": "たくさん食べました。", "id": "Saya makan banyak.", "level": "n5", "tags": ["makanan-minuman"]}],
+      {"jp": "たくさん食べました。", "id": "Saya makan banyak.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: ['vg-n5-00114'],
   see_also: [],
@@ -83,7 +83,7 @@ window.vocabN5_Adverbs = [
   nuance: 'Dengan positif = sudah (もう食べた). Dengan negatif = tidak lagi (もう食べない).',
   conj_type: null,
   examples: [
-      { jp: '私ももう年だ。', en: 'I\'m old.', id: '[TBD]' },{"jp": "もう食べましたか。", "id": "Sudah makan?", "level": "n5", "tags": ["makanan-minuman"]}],
+      {"jp": "もう食べましたか。", "id": "Sudah makan?", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -112,7 +112,7 @@ window.vocabN5_Adverbs = [
   nuance: 'まだ〜ている = masih. まだ〜ていない = belum.',
   conj_type: 'na-adj',
   examples: [
-      { jp: '何てざまだ。', en: 'What a mess!', id: '[TBD]' },{"jp": "まだ食べていません。", "id": "Saya belum makan.", "level": "n5", "tags": ["makanan-minuman"]}],
+      {"jp": "まだ食べていません。", "id": "Saya belum makan.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: ['vg-n5-00115'],
   see_also: [],
@@ -142,7 +142,7 @@ window.vocabN5_Adverbs = [
   nuance: 'Means doing something together with someone else. Often paired with \'to\' (と) to indicate the person you are doing the action with.',
   conj_type: null,
   examples: [
-      { jp: 'さあ、一緒に来いよ。', en: 'Come along.', id: '[TBD]' },{"jp": "一緒に行きましょう。", "id": "Ayo pergi bersama.", "level": "n5", "tags": ["hubungan"]}],
+      {"jp": "一緒に行きましょう。", "id": "Ayo pergi bersama.", "level": "n5", "tags": ["hubungan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -171,7 +171,7 @@ window.vocabN5_Adverbs = [
   nuance: 'Implies doing an action at a relaxed or slow pace. Commonly used to tell someone to take their time or relax, as in \'ゆっくり休んでください\' (please rest well).',
   conj_type: 'suru',
   examples: [
-      { jp: 'ゆっくり、ゆっくり。', en: 'Go slow.', id: '[TBD]' },{"jp": "ゆっくり話してください。", "id": "Tolong bicara pelan-pelan.", "level": "n5", "tags": ["pendidikan"]}],
+      {"jp": "ゆっくり話してください。", "id": "Tolong bicara pelan-pelan.", "level": "n5", "tags": ["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -202,7 +202,7 @@ window.vocabN5_Adverbs = [
   nuance: 'Describes an action that happens habitually or constantly without fail. It is higher in frequency than both \'たいてい\' (usually) and \'ときどき\' (sometimes).',
   conj_type: null,
   examples: [
-      { jp: '私はいつも忙しい。', en: 'I\'m always busy.', id: '[TBD]' },{"jp": "いつも朝ご飯を食べます。", "id": "Saya selalu sarapan.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "いつも朝ご飯を食べます。", "id": "Saya selalu sarapan.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -232,7 +232,7 @@ window.vocabN5_Adverbs = [
   nuance: 'Indicates an action that happens occasionally, lower in frequency than \'たいてい\' (usually). Notice the repetition mark \'々\', which repeats the kanji \'時\' (time).',
   conj_type: null,
   examples: [
-      { jp: '私ね、時々吃音しちゃうの。', en: 'I sometimes stutter.', id: '[TBD]' },{"jp": "時々映画を見ます。", "id": "Saya kadang-kadang menonton film.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "時々映画を見ます。", "id": "Saya kadang-kadang menonton film.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: ['vg-n5-00119'],
@@ -262,7 +262,7 @@ window.vocabN5_Adverbs = [
   nuance: 'Lebih kasual dari しかし. Biasa di awal kalimat.',
   conj_type: null,
   examples: [
-      { jp: 'とんでもない！', en: 'No way!', id: '[TBD]' },{"jp": "行きたいです。でも, 時間がありません。", "id": "Saya ingin pergi. Tapi tidak ada waktu.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "行きたいです。でも, 時間がありません。", "id": "Saya ingin pergi. Tapi tidak ada waktu.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -291,7 +291,7 @@ window.vocabN5_Adverbs = [
   nuance: 'Used at the beginning of a sentence to link it to the previous one, meaning \'and\' or \'and then\'. It connects actions sequentially or adds extra information.',
   conj_type: null,
   examples: [
-      { jp: '１、３そして５は奇数です。', en: 'One, three, and five are odd numbers.', id: '[TBD]' },{"jp": "朝起きて, そして朝ご飯を食べました。", "id": "Saya bangun pagi, lalu sarapan.", "level": "n5", "tags": ["kehidupan-sehari"]}],
+      {"jp": "朝起きて, そして朝ご飯を食べました。", "id": "Saya bangun pagi, lalu sarapan.", "level": "n5", "tags": ["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -321,7 +321,7 @@ window.vocabN5_Adverbs = [
   nuance: 'Means \'usually\' or \'mostly\', indicating a routine action that happens on most days but not always. It sits between \'いつも\' (always) and \'ときどき\' (sometimes) in frequency.',
   conj_type: 'na-adj',
   examples: [
-      { jp: 'たいてい歩いて行きます。', en: 'I usually walk.', id: '[TBD]' },{"jp":"休みの日はたいてい家にいます。","id":"Pada hari libur, biasanya saya ada di rumah.","level":"n5","tags":["kehidupan-sehari","waktu"]}],
+      {"jp":"休みの日はたいてい家にいます。","id":"Pada hari libur, biasanya saya ada di rumah.","level":"n5","tags":["kehidupan-sehari","waktu"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -352,7 +352,7 @@ window.vocabN5_Adverbs = [
   nuance: 'Indicates an action that happens occasionally, lower in frequency than \'たいてい\' (usually). This is the kana representation of 時々.',
   conj_type: null,
   examples: [
-      { jp: '彼はときどき寝坊する。', en: 'He sometimes sleeps in.', id: '[TBD]' },{"jp":"ときどき友達と図書館へ行きます。","id":"Kadang-kadang saya pergi ke perpustakaan bersama teman.","level":"n5","tags":["pertemanan","pendidikan"]}],
+      {"jp":"ときどき友達と図書館へ行きます。","id":"Kadang-kadang saya pergi ke perpustakaan bersama teman.","level":"n5","tags":["pertemanan","pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -382,7 +382,7 @@ window.vocabN5_Adverbs = [
   nuance: 'Must always be paired with a negative verb form to mean \'not very\' or \'not often\'. Used to soften a negative statement or express low frequency.',
   conj_type: 'na-adj',
   examples: [
-      { jp: 'これはあまり良くないな。', en: 'This is not good.', id: '[TBD]' },{"jp":"この料理はあまり辛くないです。","id":"Masakan ini tidak terlalu pedas.","level":"n5","tags":["makanan-minuman"]}],
+      {"jp":"この料理はあまり辛くないです。","id":"Masakan ini tidak terlalu pedas.","level":"n5","tags":["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -413,7 +413,7 @@ window.vocabN5_Adverbs = [
   nuance: 'Strongly indicates \'not at all\' and must be paired with a negative verb form in standard Japanese. It emphasizes complete absence or zero frequency.',
   conj_type: null,
   examples: [
-      { jp: 'ぜんぜん乾いてないね。', en: 'It\'s not dry at all.', id: '[TBD]' },{"jp":"きのうのテストはぜんぜん分かりませんでした。","id":"Ujian kemarin sama sekali tidak saya mengerti.","level":"n5","tags":["pendidikan"]}],
+      {"jp":"きのうのテストはぜんぜん分かりませんでした。","id":"Ujian kemarin sama sekali tidak saya mengerti.","level":"n5","tags":["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -444,7 +444,7 @@ window.vocabN5_Adverbs = [
   nuance: 'Can mean \'often\' (frequency) or \'well\' (skill or quality), depending on the context. For example, \'よく食べます\' means \'eats often\', while \'よくできました\' means \'well done\'.',
   conj_type: null,
   examples: [
-      { jp: 'お行儀よくしなさい。', en: 'Be nice.', id: '[TBD]' },{"jp":"この喫茶店にはよく来ます。","id":"Saya sering datang ke kafe ini.","level":"n5","tags":["kehidupan-sehari"]}],
+      {"jp":"この喫茶店にはよく来ます。","id":"Saya sering datang ke kafe ini.","level":"n5","tags":["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -473,7 +473,7 @@ window.vocabN5_Adverbs = [
   nuance: 'とても = sangat (intensifier positif). Untuk negatif pakai あまり+ない.',
   conj_type: null,
   examples: [
-      { jp: 'とても感動したわ。', en: 'I was moved.', id: '[TBD]' },{"jp": "この料理はとてもおいしいです。", "id": "Masakan ini sangat enak.", "level": "n5", "tags": ["makanan-minuman"]}],
+      {"jp": "この料理はとてもおいしいです。", "id": "Masakan ini sangat enak.", "level": "n5", "tags": ["makanan-minuman"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -503,7 +503,7 @@ window.vocabN5_Adverbs = [
   nuance: 'Means \'mostly\', \'roughly\', or \'almost\', often used to indicate an approximate amount or a general understanding. For instance, \'だいたいわかりました\' means \'I mostly understood\'.',
   conj_type: null,
   examples: [
-      { jp: 'だいたいそんなところです。', en: 'That\'s about it.', id: '[TBD]' },{"jp":"宿題はだいたい終わりました。","id":"PR kira-kira sudah selesai sebagian besar.","level":"n5","tags":["pendidikan"]}],
+      {"jp":"宿題はだいたい終わりました。","id":"PR kira-kira sudah selesai sebagian besar.","level":"n5","tags":["pendidikan"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -533,7 +533,7 @@ window.vocabN5_Adverbs = [
   nuance: 'もっと = lebih (komparatif). もっとゆっくり = lebih pelan. もっと食べる = makan lebih banyak.',
   conj_type: null,
   examples: [
-      { jp: 'もっと頑張れよ。', en: 'Try harder.', id: '[TBD]' },{"jp": "もっとゆっくり話してください。", "id": "Tolong bicara lebih pelan.", "level": "n5", "tags": ["kehidupan-sehari", "sopan-santun"]}],
+      {"jp": "もっとゆっくり話してください。", "id": "Tolong bicara lebih pelan.", "level": "n5", "tags": ["kehidupan-sehari", "sopan-santun"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],
@@ -586,7 +586,7 @@ window.vocabN5_Adverbs = [
   nuance: 'A highly versatile word meaning \'a little\' or \'just a moment\'. It is often used to soften requests, express slight hesitation, or politely refuse an invitation.',
   conj_type: null,
   examples: [
-      { jp: 'ちょっと見せて。', en: 'Show me.', id: '[TBD]' },{"jp":"ここでちょっと待ってください。","id":"Tolong tunggu sebentar di sini.","level":"n5","tags":["kehidupan-sehari"]}],
+      {"jp":"ここでちょっと待ってください。","id":"Tolong tunggu sebentar di sini.","level":"n5","tags":["kehidupan-sehari"]}],
   synonyms: [],
   antonyms: [],
   see_also: [],

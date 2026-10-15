@@ -89,7 +89,7 @@ export const App: React.FC = () => {
     const handleHashChange = () => {
       const fullHash = (window.location.hash || '').replace('#', '');
       const baseTab = fullHash.split('?')[0].toLowerCase();
-      const mapped = baseTab === 'browse' ? 'materi' : baseTab === 'stats' ? 'kebun' : baseTab;
+      const mapped = baseTab === 'browse' ? 'materi' : (baseTab === 'stats' || baseTab === 'retensi') ? 'kebun' : baseTab;
 
       if (mapped === 'study') {
         const qIndex = fullHash.indexOf('?');

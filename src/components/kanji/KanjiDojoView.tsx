@@ -139,14 +139,14 @@ export const KanjiDojoView: React.FC<KanjiDojoViewProps> = ({ onAskSensei }) => 
       <div className="rounded-2xl border border-theme bg-surface-variant/20 p-5 sm:p-7 relative overflow-hidden shadow-sm">
         <div className="relative z-10 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div className="space-y-1.5 min-w-0">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-theme-primary/10 text-theme-primary border border-theme-primary/20 text-xs font-bold tracking-wide">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/15 text-accent border border-amber-500/25 text-xs font-bold tracking-wide">
               <Sparkles size={14} />
               <span>Dojo Kanji Master · 2.383 Kanji N5–N1</span>
             </div>
-            <h1 className="text-2xl sm:text-3xl font-black text-text tracking-tight">
+            <h1 className="text-2xl sm:text-3xl font-black text-appText-bright tracking-tight">
               Kurikulum & Urutan Goresan Kanji
             </h1>
-            <p className="text-xs sm:text-sm text-muted max-w-2xl leading-relaxed">
+            <p className="text-xs sm:text-sm text-appText-muted max-w-2xl leading-relaxed">
               Kuasai kanji melalui kurikulum terstruktur JLPT N5–N1 atau lensa buku pegangan populer
               (GENKI, Minna no Nihongo, Soumatome), lengkap dengan animasi vektor goresan (KanjiVG) dan latihan kanvas interaktif.
             </p>
@@ -154,10 +154,10 @@ export const KanjiDojoView: React.FC<KanjiDojoViewProps> = ({ onAskSensei }) => 
 
           <div className="flex sm:flex-col items-center sm:items-end justify-between sm:justify-center gap-2 shrink-0 border-t sm:border-t-0 pt-3 sm:pt-0 border-theme">
             <div className="text-left sm:text-right">
-              <span className="text-2xl sm:text-3xl font-black text-theme-primary">
+              <span className="text-2xl sm:text-3xl font-black text-accent">
                 {filteredKanji.length}
               </span>
-              <span className="text-xs text-muted block font-medium">Kanji Tersedia</span>
+              <span className="text-xs text-appText-muted block font-medium">Kanji Tersedia</span>
             </div>
           </div>
         </div>
@@ -167,25 +167,25 @@ export const KanjiDojoView: React.FC<KanjiDojoViewProps> = ({ onAskSensei }) => 
       <div className="space-y-3">
         {/* Level Selector Pills */}
         <div className="flex items-center gap-2 overflow-x-auto scrollbar-none pb-1 max-w-full">
-          <span className="text-xs font-bold text-muted uppercase tracking-wider shrink-0 mr-1 flex items-center gap-1">
+          <span className="text-xs font-bold text-appText-muted uppercase tracking-wider shrink-0 mr-1 flex items-center gap-1">
             <Layers size={14} />
             <span>Level:</span>
           </span>
           {[
-            { id: 'all', label: 'N5+N4 Dasar' },
             { id: 'n5', label: 'N5 (84 Kanji)' },
             { id: 'n4', label: 'N4 (169 Kanji)' },
             { id: 'n3', label: 'N3 (387 Kanji)' },
             { id: 'n2', label: 'N2 (398 Kanji)' },
-            { id: 'n1', label: 'N1 (1.345 Kanji)' }
+            { id: 'n1', label: 'N1 (1.345 Kanji)' },
+            { id: 'all', label: 'Semua Level' }
           ].map((lvl) => (
             <button
               key={lvl.id}
               onClick={() => setSelectedLevel(lvl.id as LevelFilter)}
               className={`px-3.5 py-2 rounded-xl text-xs font-bold whitespace-nowrap shrink-0 transition-all active:scale-95 ${
                 selectedLevel === lvl.id
-                  ? 'bg-theme-primary text-white shadow-sm'
-                  : 'bg-surface border border-theme text-muted hover:text-text hover:bg-surface-variant'
+                  ? 'bg-amber-500 text-stone-950 font-black shadow-sm'
+                  : 'bg-surface border border-theme text-appText-muted hover:text-appText-bright hover:bg-surface-2'
               }`}
             >
               {lvl.label}
@@ -195,7 +195,7 @@ export const KanjiDojoView: React.FC<KanjiDojoViewProps> = ({ onAskSensei }) => 
 
         {/* Book Lens Selector Pills */}
         <div className="flex items-center gap-2 overflow-x-auto scrollbar-none pb-1 max-w-full">
-          <span className="text-xs font-bold text-muted uppercase tracking-wider shrink-0 mr-1 flex items-center gap-1">
+          <span className="text-xs font-bold text-appText-muted uppercase tracking-wider shrink-0 mr-1 flex items-center gap-1">
             <BookOpen size={14} />
             <span>Lensa Buku:</span>
           </span>
@@ -210,8 +210,8 @@ export const KanjiDojoView: React.FC<KanjiDojoViewProps> = ({ onAskSensei }) => 
               onClick={() => setSelectedLens(lens.id as BookLensFilter)}
               className={`px-3 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap shrink-0 transition-all active:scale-95 ${
                 selectedLens === lens.id
-                  ? 'bg-amber-600 text-white font-bold shadow-sm'
-                  : 'bg-surface border border-theme text-muted hover:text-text hover:bg-surface-variant'
+                  ? 'bg-amber-500 text-stone-950 font-black shadow-sm'
+                  : 'bg-surface border border-theme text-appText-muted hover:text-appText-bright hover:bg-surface-2'
               }`}
             >
               {lens.label}
@@ -260,7 +260,7 @@ export const KanjiDojoView: React.FC<KanjiDojoViewProps> = ({ onAskSensei }) => 
               setSearchQuery('');
               setSelectedLens('all');
             }}
-            className="px-4 py-2 rounded-xl text-xs font-bold bg-theme-primary text-white hover:brightness-110 active:scale-95 transition-all"
+            className="px-4 py-2 rounded-xl text-xs font-bold bg-amber-500 text-stone-950 font-black hover:bg-amber-600 active:scale-95 transition-all shadow-sm"
           >
             Reset Filter
           </button>
@@ -276,21 +276,21 @@ export const KanjiDojoView: React.FC<KanjiDojoViewProps> = ({ onAskSensei }) => 
               <div
                 key={item.id}
                 onClick={() => handleCardClick(item)}
-                className="group relative rounded-xl border border-theme bg-surface hover:border-theme-primary/50 hover:shadow-md transition-all duration-200 cursor-pointer p-4 flex flex-col justify-between overflow-hidden active:scale-[0.98]"
+                className="group relative rounded-xl border border-theme bg-surface hover:border-accent/50 hover:shadow-md transition-all duration-200 cursor-pointer p-4 flex flex-col justify-between overflow-hidden active:scale-[0.98]"
               >
                 {/* Top Badge: Level & Strokes */}
                 <div className="flex items-center justify-between mb-2">
-                  <span className="px-2 py-0.5 rounded text-[10px] font-black bg-theme-primary/10 text-theme-primary border border-theme-primary/20">
+                  <span className="px-2 py-0.5 rounded text-[10px] font-black bg-amber-500/15 text-accent border border-amber-500/25">
                     {item.level}
                   </span>
                   <div className="flex items-center gap-1">
-                    <span className="text-[10px] text-muted font-medium">
+                    <span className="text-[10px] text-appText-muted font-medium">
                       {item.strokes} g
                     </span>
                     <button
                       onClick={(e) => handleAudioPlay(e, item.character)}
                       aria-label={`Dengarkan ${item.character}`}
-                      className="p-1 text-muted hover:text-theme-primary rounded transition-colors active:scale-90"
+                      className="p-1 text-appText-muted hover:text-accent rounded transition-colors active:scale-90"
                     >
                       <Volume2 size={13} />
                     </button>
@@ -299,23 +299,23 @@ export const KanjiDojoView: React.FC<KanjiDojoViewProps> = ({ onAskSensei }) => 
 
                 {/* Center Character */}
                 <div className="my-2 text-center">
-                  <span className="text-4xl sm:text-5xl font-black font-japanese text-text group-hover:text-theme-primary transition-colors">
+                  <span className="text-4xl sm:text-5xl font-black font-japanese text-appText-bright group-hover:text-accent transition-colors">
                     {item.character}
                   </span>
                 </div>
 
                 {/* Bottom: Meaning and Readings */}
                 <div className="space-y-1 pt-2 border-t border-theme/60 text-center">
-                  <p className="text-xs font-bold text-text truncate">
+                  <p className="text-xs font-bold text-appText truncate">
                     {meaningsId}
                   </p>
-                  <p className="text-[10px] text-muted font-japanese truncate">
+                  <p className="text-[10px] text-appText-muted font-japanese truncate">
                     {onyomiPreview || kunyomiPreview || '-'}
                   </p>
                 </div>
 
                 {/* Subtle Hover Cue */}
-                <div className="absolute inset-x-0 bottom-0 h-0.5 bg-theme-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-200 origin-center" />
+                <div className="absolute inset-x-0 bottom-0 h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-200 origin-center" />
               </div>
             );
           })}

@@ -32,6 +32,7 @@ import { loadVocab, NormalizedVocab } from '../lib/data/dataManager';
 import { getDailyKotowaza, Kotowaza } from '../lib/data/kotowaza';
 import { speakJapanese } from '../lib/audio/tts';
 import { JLPTLevel } from '../types/vocab';
+import { JapaneseFormattedText } from '../components/ui/JapaneseFormattedText';
 
 export const HomePage: React.FC = () => {
   const {
@@ -442,11 +443,21 @@ export const HomePage: React.FC = () => {
               {dailyWord ? dailyWord.meaning : 'Berusaha keras / Bersemangat'}
             </div>
 
-            {dailyWord?.examples?.[0] ? (
-              <div className="text-xs text-appText-muted italic leading-relaxed">
-                "{dailyWord.examples[0].jp}" ({dailyWord.examples[0].id})
-              </div>
-            ) : (
+            {dailyWord ? (() => {
+              const ex = dailyWord.examples?.find((e) => e.id && !e.id.includes('[TBD]')) || dailyWord.examples?.[0];
+              if (ex && ex.jp) {
+                return (
+                  <div className="text-xs text-appText-muted italic leading-relaxed">
+                    <JapaneseFormattedText text={`"${ex.jp}"`} /> {ex.id && !ex.id.includes('[TBD]') ? `(${ex.id})` : ''}
+                  </div>
+                );
+              }
+              return (
+                <div className="text-xs text-appText-muted italic leading-relaxed">
+                  "諦めずに最後まで頑張りましょう。" (Mari berusaha keras sampai akhir tanpa menyerah.)
+                </div>
+              );
+            })() : (
               <div className="text-xs text-appText-muted italic leading-relaxed">
                 "諦めずに最後まで頑張りましょう。" (Mari berusaha keras sampai akhir tanpa menyerah.)
               </div>
@@ -539,12 +550,12 @@ export const HomePage: React.FC = () => {
           </div>
 
           {/* Segmented Switcher */}
-          <div className="flex items-center gap-1 bg-surface-2 p-1 rounded-xl border border-accent/15 overflow-x-auto scrollbar-none max-w-full">
+          <div className="flex items-center gap-1 bg-surface-2 p-1 rounded-xl border border-accent/15 overflow-x-auto scrollbar-none w-full sm:w-auto shrink-0">
             <button
               onClick={() => setActiveSection('curriculum')}
-              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 shrink-0 ${
+              className={`flex-1 sm:flex-initial justify-center px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 shrink-0 whitespace-nowrap active:scale-95 ${
                 activeSection === 'curriculum'
-                  ? 'bg-accent text-bg shadow-sm font-extrabold'
+                  ? 'bg-amber-500 text-stone-950 shadow-sm font-extrabold'
                   : 'text-appText-muted hover:text-appText-bright'
               }`}
             >
@@ -553,9 +564,9 @@ export const HomePage: React.FC = () => {
             </button>
             <button
               onClick={() => setActiveSection('mastery')}
-              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 shrink-0 ${
+              className={`flex-1 sm:flex-initial justify-center px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 shrink-0 whitespace-nowrap active:scale-95 ${
                 activeSection === 'mastery'
-                  ? 'bg-accent text-bg shadow-sm font-extrabold'
+                  ? 'bg-amber-500 text-stone-950 shadow-sm font-extrabold'
                   : 'text-appText-muted hover:text-appText-bright'
               }`}
             >
@@ -564,9 +575,9 @@ export const HomePage: React.FC = () => {
             </button>
             <button
               onClick={() => setActiveSection('stats')}
-              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 shrink-0 ${
+              className={`flex-1 sm:flex-initial justify-center px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 shrink-0 whitespace-nowrap active:scale-95 ${
                 activeSection === 'stats'
-                  ? 'bg-accent text-bg shadow-sm font-extrabold'
+                  ? 'bg-amber-500 text-stone-950 shadow-sm font-extrabold'
                   : 'text-appText-muted hover:text-appText-bright'
               }`}
             >

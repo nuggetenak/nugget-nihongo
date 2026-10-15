@@ -2679,4 +2679,1207 @@ window.vocabN4_Adjectives = [
     "review_notes": ""
   }
 },
+
+// ── Staged Expansion (24) ──
+
+{
+  "id": "vg-n4-00953",
+  "word": "浅い",
+  "reading": "あさい",
+  "romaji": "asai",
+  "meaning_id": "shallow; superficial",
+  "meaning_en": "shallow; superficial",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この川はあそこで浅くなっている。",
+      "id": "This river becomes shallow at that point.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この学校のカリキュラムは広く浅い。",
+      "id": "The curriculum of this school is wide and shallow.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-00965",
+  "word": "安全",
+  "reading": "あんぜん",
+  "romaji": "anzen",
+  "meaning_id": "safety",
+  "meaning_en": "safety",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私たちは思っているほど安全ではない。",
+      "id": "Kami not all that safe.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この川で泳ぐのは、安全ですか。",
+      "id": "Is it safe to swim in this river?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-00981",
+  "word": "うれしい",
+  "reading": "うれしい",
+  "romaji": "ureshii",
+  "meaning_id": "glad",
+  "meaning_en": "glad",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あなたに再会できてうれしい。",
+      "id": "I am pleased to see you again.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私はその知らせを聞いてうれしい。",
+      "id": "I am glad to hear the news.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-00987",
+  "word": "おかしい",
+  "reading": "おかしい",
+  "romaji": "okashii",
+  "meaning_id": "strange or funny",
+  "meaning_en": "strange or funny",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "君のジョークは何度聞いてもおかしい。",
+      "id": "Your joke is funny no matter how many times I hear it.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この車のエンジンはおかしい。",
+      "id": "Something is wrong with the engine of this car.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01000",
+  "word": "堅い",
+  "reading": "かたい",
+  "romaji": "katai",
+  "meaning_id": "hard",
+  "meaning_en": "hard",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ダイヤモンドは本来堅いものだ。",
+      "id": "Diamond is essentially hard.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "このステーキは堅すぎる。",
+      "id": "This steak is too tough.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01011",
+  "word": "危険",
+  "reading": "きけん",
+  "romaji": "kiken",
+  "meaning_id": "danger",
+  "meaning_en": "danger",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "危険は見くびるとすぐやってくる。",
+      "id": "Danger comes soonest when it is despised.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "はっきりわかる危険はなかった。",
+      "id": "There were no visible dangers.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01018",
+  "word": "急",
+  "reading": "きゅう",
+  "romaji": "kyuu",
+  "meaning_id": "urgent; steep",
+  "meaning_en": "urgent; steep",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この川の流れは急だ。",
+      "id": "The current of this river is rapid.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "急がなくてもいいよ。",
+      "id": "You can take your time.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01055",
+  "word": "細かい",
+  "reading": "こまかい",
+  "romaji": "komakai",
+  "meaning_id": "kecil",
+  "meaning_en": "small; fine",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼はひどく金に細かい。",
+      "id": "Dia very careful with his money.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "わたしはこまかい点までしらべました。",
+      "id": "I went into details.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01073",
+  "word": "残念",
+  "reading": "ざんねん",
+  "romaji": "zannen",
+  "meaning_id": "disappointment",
+  "meaning_en": "disappointment",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "お伺いできないのが残念です。",
+      "id": "I regret to say I can't come.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "そんなことをしたのは残念である。",
+      "id": "I'm sorry for what I did.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01089",
+  "word": "自由",
+  "reading": "じゆう",
+  "romaji": "jiyuu",
+  "meaning_id": "freedom",
+  "meaning_en": "freedom",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "お金を使うも貯めるも自由にしなさい。",
+      "id": "You may spend or save at will.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "自由すぎると人はみなだめになる。",
+      "id": "Too much liberty spoils all.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01113",
+  "word": "凄い",
+  "reading": "すごい",
+  "romaji": "sugoi",
+  "meaning_id": "terrific",
+  "meaning_en": "terrific",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "凄い明かりが野球場にあたっていた。",
+      "id": "A great light was diffused over the baseball stadium.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "マドンナのコンサートはすごい数の客を集めた。",
+      "id": "Madonna's concert drew a large audience.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01117",
+  "word": "すばらしい",
+  "reading": "すばらしい",
+  "romaji": "subarashii",
+  "meaning_id": "wonderful",
+  "meaning_en": "wonderful",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その日は実にすばらしい日だった。",
+      "id": "It was a really beautiful day.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "なんてすばらしい家族なんだろう。",
+      "id": "What a wonderful family.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01144",
+  "word": "たいてい",
+  "reading": "たいてい",
+  "romaji": "taitei",
+  "meaning_id": "usually",
+  "meaning_en": "usually",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "夜はたいていの人が寝る時である。",
+      "id": "Night is when most people go to bed.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "父は、日曜日はたいてい家にいます。",
+      "id": "My father is usually at home on Sundays.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01149",
+  "word": "正しい",
+  "reading": "ただしい",
+  "romaji": "tadashii",
+  "meaning_id": "correct",
+  "meaning_en": "correct",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "これが正しいかどうか自信がないんだ。",
+      "id": "I'm not sure if this is correct.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "どちらの方が正しいと思いますか。",
+      "id": "Which one do you think is correct?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01177",
+  "word": "適当",
+  "reading": "てきとう",
+  "romaji": "tekitou",
+  "meaning_id": "suitability",
+  "meaning_en": "suitability",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あなたが適当だと思う本なら何でも読みなさい。",
+      "id": "Read whatever books you think proper.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "靴下は適当な大きさのものがよい。",
+      "id": "Stockings should be of the proper size.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01189",
+  "word": "特別",
+  "reading": "とくべつ",
+  "romaji": "tokubetsu",
+  "meaning_id": "special",
+  "meaning_en": "special",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "特別料理がございますが。",
+      "id": "We have something special for you, sir.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ベジタリアン用の特別メニューはありますか？",
+      "id": "Do you have a special menu for vegetarians?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01201",
+  "word": "苦い",
+  "reading": "にがい",
+  "romaji": "nigai",
+  "meaning_id": "bitter",
+  "meaning_en": "bitter",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "このコーヒーは苦い味がする。",
+      "id": "This coffee tastes bitter.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "このビールは苦い。",
+      "id": "This beer tastes bitter.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01210",
+  "word": "ねっしん",
+  "reading": "ねっしん",
+  "romaji": "nesshin",
+  "meaning_id": "enthusiasm",
+  "meaning_en": "enthusiasm",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼女は熱心に小鳥にえさをやった。",
+      "id": "She was eager to feed the birds.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼女は熱心にピアノをひきだした。",
+      "id": "She played the piano with enthusiasm.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01211",
+  "word": "眠い",
+  "reading": "ねむい",
+  "romaji": "nemui",
+  "meaning_id": "mengantuk",
+  "meaning_en": "sleepy",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "テレビを見ているとすぐ眠くなる。",
+      "id": "I fall asleep easily while watching television.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "コーヒーを飲むと眠くならない。",
+      "id": "Coffee keeps me awake.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01230",
+  "word": "ひどい",
+  "reading": "ひどい",
+  "romaji": "hidoi",
+  "meaning_id": "awful",
+  "meaning_en": "awful",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この薬はひどい味がする。",
+      "id": "This medicine tastes horrible.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私は仕事でひどくくたびれている。",
+      "id": "I'm very tired from work.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01235",
+  "word": "深い",
+  "reading": "ふかい",
+  "romaji": "fukai",
+  "meaning_id": "deep",
+  "meaning_en": "deep",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "湖の深さはどのくらいですか。",
+      "id": "What is the depth of the lake?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "水はここがいちばん深い。",
+      "id": "The water is deepest here.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01236",
+  "word": "複雑",
+  "reading": "ふくざつ",
+  "romaji": "fukuzatsu",
+  "meaning_id": "complexity; complication",
+  "meaning_en": "complexity; complication",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "どのぐらい複雑なのだろうか。",
+      "id": "How complex?",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "それは問題をより複雑にするでしょう。",
+      "id": "That'll complicate matters more.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01254",
+  "word": "まじめ",
+  "reading": "まじめ",
+  "romaji": "majime",
+  "meaning_id": "serious",
+  "meaning_en": "serious",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "サムは仕事に関してまじめです。",
+      "id": "Sam is serious about his work.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "トムは勉強にまじめでない。",
+      "id": "Tom is not serious about his studies.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n4-01275",
+  "word": "優しい",
+  "reading": "やさしい",
+  "romaji": "yasashii",
+  "meaning_id": "kind",
+  "meaning_en": "kind",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "standard",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N4: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "みんなには優しく話してください。",
+      "id": "Speak gently to everyone.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "母は優しい目で私を見た。",
+      "id": "My mother gazed at me fondly.",
+      "level": "n4",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+}
+
 ];

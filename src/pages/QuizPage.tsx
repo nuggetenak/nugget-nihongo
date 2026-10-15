@@ -993,10 +993,10 @@ export const QuizPage: React.FC = () => {
 
                       <button
                         onClick={handleNextQuestion}
-                        className="btn-tactile flex-1 sm:flex-initial px-7 py-3 rounded-xl bg-theme-primary text-white font-black text-xs sm:text-sm flex items-center justify-center gap-2 shadow-lg active:scale-95"
+                        className="btn-tactile flex-1 sm:flex-initial px-7 py-3 rounded-xl bg-amber-500 hover:bg-amber-600 text-stone-950 font-black text-xs sm:text-sm flex items-center justify-center gap-2 shadow-lg active:scale-95 transition-all"
                       >
                         <span>Lanjut</span>
-                        <ArrowRight className="w-4 h-4" />
+                        <ArrowRight className="w-4 h-4 text-stone-950 stroke-[3]" />
                       </button>
                     </div>
                   </div>

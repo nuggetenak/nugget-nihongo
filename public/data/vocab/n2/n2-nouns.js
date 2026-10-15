@@ -9194,6 +9194,42530 @@ window.vocabN2_Nouns = [
   "provenance": "jlpt-corpus",
   "added_v": "v15",
   "jmdict_seq": "1989910"
+},
+
+// ── Staged Expansion (885) ──
+
+{
+  "id": "vg-n2-00459",
+  "word": "アイデア",
+  "reading": "アイデア",
+  "romaji": "aidea",
+  "meaning_id": "idea",
+  "meaning_en": "idea",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "アイディアが足りないということはない。",
+      "id": "Tidak ada kekurangan ide.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私はよいアイディアを思いついた。",
+      "id": "I hit on a good idea.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00464",
+  "word": "明き",
+  "reading": "あき",
+  "romaji": "aki",
+  "meaning_id": "kamar; ruangan",
+  "meaning_en": "room; time to spare; emptiness",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "字と字の間の空きをもっと広くしなさい。",
+      "id": "Leave more space between characters.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "うちの会社には空きがない。",
+      "id": "Ada no opening in our firm.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00466",
+  "word": "アクセント",
+  "reading": "アクセント",
+  "romaji": "akusento",
+  "meaning_id": "accent",
+  "meaning_en": "accent",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "Australiaという語のアクセントはどこですか。",
+      "id": "Where do you place the stress in the word \"Australia\"?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この語のアクセントはどこにあるか。",
+      "id": "How is the word accented?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00473",
+  "word": "足跡",
+  "reading": "あしあと",
+  "romaji": "ashiato",
+  "meaning_id": "footprints",
+  "meaning_en": "footprints",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "足跡が床に残っていた。",
+      "id": "Footprints were left on the floor.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "テーブルに猫の足跡が付いている。",
+      "id": "Ada footprints of a cat on the table.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00482",
+  "word": "宛名",
+  "reading": "あてな",
+  "romaji": "atena",
+  "meaning_id": "address; direction",
+  "meaning_en": "address; direction",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この手紙は宛名が違っている。",
+      "id": "This letter is wrongly addressed.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "郵便の宛名ははっきり正確に。",
+      "id": "Tolong address your mail clearly and correctly.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00486",
+  "word": "脂",
+  "reading": "あぶら",
+  "romaji": "abura",
+  "meaning_id": "fat; tallow",
+  "meaning_en": "fat; tallow; lard",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "肌が脂っぽいのです。",
+      "id": "I have greasy skin.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00489",
+  "word": "雨戸",
+  "reading": "あまど",
+  "romaji": "amado",
+  "meaning_id": "sliding storm door",
+  "meaning_en": "sliding storm door",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "嵐が雨戸をがたがたとならした。",
+      "id": "The storm rattled the shutters.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00492",
+  "word": "編物",
+  "reading": "あみもの",
+  "romaji": "amimono",
+  "meaning_id": "knitting; web",
+  "meaning_en": "knitting; web",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼女はせっせと編み物に精を出していた。",
+      "id": "She was busy with her knitting.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼女は編み物に夢中になっている。",
+      "id": "Dia absorbed in knitting.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00498",
+  "word": "あらすじ",
+  "reading": "あらすじ",
+  "romaji": "arasuji",
+  "meaning_id": "outline; summary",
+  "meaning_en": "outline; summary",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あらすじを使います。",
+      "id": "Menggunakan outline; summary.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00509",
+  "word": "アンテナ",
+  "reading": "アンテナ",
+  "romaji": "antena",
+  "meaning_id": "antenna",
+  "meaning_en": "antenna",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "このアンテナを屋根につけると画面がはっきりする。",
+      "id": "You'll get a clear picture with this antenna on the roof.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "その男はアンテナを取り付けようとした。",
+      "id": "The man tried to install his own antenna.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00512",
+  "word": "意義",
+  "reading": "いぎ",
+  "romaji": "igi",
+  "meaning_id": "meaning; significance",
+  "meaning_en": "meaning; significance",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は重大な意義のある決定を下した。",
+      "id": "He has made a significant decision.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私はしばしば人生の意義について深く考えることがある。",
+      "id": "I often meditate on the meaning of life.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00516",
+  "word": "生け花",
+  "reading": "いけばな",
+  "romaji": "ikebana",
+  "meaning_id": "flower arrangement",
+  "meaning_en": "flower arrangement",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼女は生け花の大家になった。",
+      "id": "She has made herself master of flower arranging.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "母は生け花を教えている。",
+      "id": "My mother teaches flower arranging.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00521",
+  "word": "衣食住",
+  "reading": "いしょくじゅう",
+  "romaji": "ishokujuu",
+  "meaning_id": "necessities of life (food, clothing, etc.)",
+  "meaning_en": "necessities of life (food, clothing, etc.)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私達が生きていくためには衣食住が必要です。",
+      "id": "We need food, clothes and a home in order to live.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "子供は衣食住を親に依存している。",
+      "id": "Children depend on their parents for food, clothing and shelter.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00525",
+  "word": "一段と",
+  "reading": "いちだんと",
+  "romaji": "ichidanto",
+  "meaning_id": "greater; more",
+  "meaning_en": "greater; more; further; still more",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "冬は暗くなるのが一段と早くなる。",
+      "id": "It becomes dark much earlier in winter.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "前よりまた一段ときれいになったね。",
+      "id": "You're much prettier than I remember.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00526",
+  "word": "一流",
+  "reading": "いちりゅう",
+  "romaji": "ichiryuu",
+  "meaning_id": "first class; top grade",
+  "meaning_en": "first class; top grade; foremost; top-notch",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "こんな一流選手が相手では勝ち目がない。",
+      "id": "We have no chance against those top players.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼らはその作家を一流だと思った。",
+      "id": "They looked on the writer as first-rate.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00527",
+  "word": "佚",
+  "reading": "いつ",
+  "romaji": "itsu",
+  "meaning_id": "be lost; peace",
+  "meaning_en": "be lost; peace; hide; mistake; beautiful; in turn",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "佚を使います。",
+      "id": "Menggunakan be lost; peace.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00531",
+  "word": "一定",
+  "reading": "いってい",
+  "romaji": "ittei",
+  "meaning_id": "fixed; settled",
+  "meaning_en": "fixed; settled; definite",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "金利自由化の方向性を一定するのはむずかしいことです。",
+      "id": "It is difficult to peg the direction of interest deregulation.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼は口座の中の一定額を子供用に用いた。",
+      "id": "He had some money in an account that he'd set aside for his kids.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00532",
+  "word": "いっていらっしゃい",
+  "reading": "いっていらっしゃい",
+  "romaji": "itteirasshai",
+  "meaning_id": "see you later; take care (said to someone leaving home)",
+  "meaning_en": "see you later; take care (said to someone leaving home)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "いっていらっしゃいを使います。",
+      "id": "Menggunakan see you later; take care (said to someone leaving home).",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00534",
+  "word": "いってらっしゃい",
+  "reading": "いってらっしゃい",
+  "romaji": "itterasshai",
+  "meaning_id": "have a good day; take care",
+  "meaning_en": "have a good day; take care; see you",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "そう、いいわよ。いってらっしゃい。でも運転には気を付けてね。",
+      "id": "Oh, OK. See you. But drive carefully.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00537",
+  "word": "緯度",
+  "reading": "いど",
+  "romaji": "ido",
+  "meaning_id": "latitude (nav.)",
+  "meaning_en": "latitude (nav.)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "緯度を使います。",
+      "id": "Menggunakan latitude (nav.).",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00538",
+  "word": "井戸",
+  "reading": "いど",
+  "romaji": "ido",
+  "meaning_id": "water well",
+  "meaning_en": "water well",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "井戸には少しの水も無かった。",
+      "id": "There was no water in the well.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "真相は井戸の底にあり探りにくい。",
+      "id": "Truth is difficult to find at the bottom of a well.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00539",
+  "word": "従姉妹",
+  "reading": "いとこ",
+  "romaji": "itoko",
+  "meaning_id": "cousin (female)",
+  "meaning_en": "cousin (female)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "従姉妹の連絡先を教えられなくてごめん。",
+      "id": "I'm sorry I haven't been able to give you my cousin's contact info.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼の従姉妹は、名前は忘れたが、看護婦だった。",
+      "id": "His cousin, whose name I forget, was a nurse.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00545",
+  "word": "入れ物",
+  "reading": "いれもの",
+  "romaji": "iremono",
+  "meaning_id": "container; case",
+  "meaning_en": "container; case; receptacle",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "眼窩とは、目をいれている骨のいれもののことです。",
+      "id": "The eye socket is the bone receptacle in which the eye fits.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00546",
+  "word": "インキ",
+  "reading": "インキ",
+  "romaji": "inki",
+  "meaning_id": "ink",
+  "meaning_en": "ink",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "印刷インキが不足している。",
+      "id": "Printing ink is in short supply.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ペンとインキで書きなさい。",
+      "id": "Write with pen and ink.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00548",
+  "word": "引力",
+  "reading": "いんりょく",
+  "romaji": "inryoku",
+  "meaning_id": "gravity",
+  "meaning_en": "gravity",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ニュートンは引力の法則を確立した。",
+      "id": "Newton established the law of gravity.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "引力によって物体が重さを持つようになる。",
+      "id": "Gravity causes objects to have weight.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00549",
+  "word": "ウーマン",
+  "reading": "ウーマン",
+  "romaji": "uuman",
+  "meaning_id": "woman",
+  "meaning_en": "woman",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼女はウーマンリブ運動の指導者だと言われている。",
+      "id": "Dia said to be a leader in the women's liberation movement.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ウーマン・リブは底辺は広いが、非公式な民衆の運動である。",
+      "id": "Women's Liberation is a broad-based but informal popular movement.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00550",
+  "word": "ウール",
+  "reading": "ウール",
+  "romaji": "uuru",
+  "meaning_id": "wool",
+  "meaning_en": "wool",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼はウールと綿の区別がつかない。",
+      "id": "He cannot tell wool from cotton.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼はウールのセーターを着ている。",
+      "id": "He wears a wool sweater.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00551",
+  "word": "ウエートレス",
+  "reading": "ウエートレス",
+  "romaji": "ueetoresu",
+  "meaning_id": "waitress",
+  "meaning_en": "waitress",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ウエートレスはテーブルの上に白いテーブルクロスをかけた。",
+      "id": "The waitress spread a white cloth over the table.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00552",
+  "word": "植木",
+  "reading": "うえき",
+  "romaji": "ueki",
+  "meaning_id": "garden shrubs; trees",
+  "meaning_en": "garden shrubs; trees; potted plant",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "母は植木の世話をよくする人だ。",
+      "id": "My mother looks after the plants well.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私は植木が好きだ。",
+      "id": "Saya suka a garden tree.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00558",
+  "word": "受取",
+  "reading": "うけとり",
+  "romaji": "uketori",
+  "meaning_id": "receipt",
+  "meaning_en": "receipt",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "お受け取りくださって幸いに存じます。",
+      "id": "It was gracious of you to accept.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "招待状お受け取りをお知らせください。",
+      "id": "Tolong respond at your earliest convenience.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00569",
+  "word": "うどん",
+  "reading": "うどん",
+  "romaji": "udon",
+  "meaning_id": "noodles (Japanese)",
+  "meaning_en": "noodles (Japanese)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "そばはそば粉から、うどんやきしめんは普通の小麦粉からできてるの。",
+      "id": "Soba is made of buckwheat flour, and udon and kishimen are made of plain wheat flour.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00570",
+  "word": "有無",
+  "reading": "うむ",
+  "romaji": "umu",
+  "meaning_id": "yes or no; existence",
+  "meaning_en": "yes or no; existence; flag indicator (comp); presence or absence marker",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "排卵の有無を調べる方法はありますか？",
+      "id": "Is there some way to check for ovulation?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00574",
+  "word": "裏口",
+  "reading": "うらぐち",
+  "romaji": "uraguchi",
+  "meaning_id": "backdoor; rear entrance",
+  "meaning_en": "backdoor; rear entrance",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は裏口入学した。",
+      "id": "He bought his way into college.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "少年は裏口から入った。",
+      "id": "The boy entered by the back door.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00576",
+  "word": "恨み",
+  "reading": "うらみ",
+  "romaji": "urami",
+  "meaning_id": "resentment",
+  "meaning_en": "resentment",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "リサはスタンに恨みがある。",
+      "id": "Lisa bears a grudge against Stan.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼は父の死の恨みを晴らした。",
+      "id": "He avenged his father's death.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00580",
+  "word": "売上",
+  "reading": "うりあげ",
+  "romaji": "uriage",
+  "meaning_id": "amount sold; proceeds",
+  "meaning_en": "amount sold; proceeds",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "今年の売り上げは倍増と見込んでいます。",
+      "id": "Sales should double this year.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "売り上げはいくらにもならなかった。",
+      "id": "The sales didn't amount to anything.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00581",
+  "word": "売り切れ",
+  "reading": "うりきれ",
+  "romaji": "urikire",
+  "meaning_id": "sold-out",
+  "meaning_en": "sold-out",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "切符はすべて売り切れです。",
+      "id": "All the tickets are sold out.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "その雑誌は売り切れだった。",
+      "id": "The magazines were sold out.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00583",
+  "word": "売れ行き",
+  "reading": "うれゆき",
+  "romaji": "ureyuki",
+  "meaning_id": "sales",
+  "meaning_en": "sales",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "売れ行きは目標に達しなかった。",
+      "id": "Sales fell short of their goal.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ビールの売れ行きは天候しだいです。",
+      "id": "Beer sales are at the mercy of the weather.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00585",
+  "word": "運河",
+  "reading": "うんが",
+  "romaji": "unga",
+  "meaning_id": "canal; waterway",
+  "meaning_en": "canal; waterway",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この船は大きすぎて運河を通れない。",
+      "id": "This ship is too big to pass through the canal.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "船はパナマ運河を通り抜けた。",
+      "id": "The ship went through the Panama Canal.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00587",
+  "word": "英文",
+  "reading": "えいぶん",
+  "romaji": "eibun",
+  "meaning_id": "sentence in English",
+  "meaning_en": "sentence in English",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は英文の手紙の書き方をしりません。",
+      "id": "He doesn't know how to write a letter in English.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この内容を６０語の英文で要約しなさい。",
+      "id": "Summarize the contents in 60 English words.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00588",
+  "word": "英和",
+  "reading": "えいわ",
+  "romaji": "eiwa",
+  "meaning_id": "English-Japanese (e.g. dictionary)",
+  "meaning_en": "English-Japanese (e.g. dictionary)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "英和を使います。",
+      "id": "Menggunakan English-Japanese (e.g. dictionary).",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00589",
+  "word": "ええと",
+  "reading": "ええと",
+  "romaji": "eeto",
+  "meaning_id": "let me see; well",
+  "meaning_en": "let me see; well; er....",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ええと、私はジョギングはよいと思う。",
+      "id": "Well, I think jogging is good.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ええと、買ったのは先週でした。",
+      "id": "Let's see. I bought it last week.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00590",
+  "word": "液体",
+  "reading": "えきたい",
+  "romaji": "ekitai",
+  "meaning_id": "liquid; fluid",
+  "meaning_en": "liquid; fluid",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "水と石油は共に液体である。",
+      "id": "Water and oil are both liquids.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "水は液体である。凍ると固体になる。",
+      "id": "Water is liquid. When it freezes, it becomes solid.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00591",
+  "word": "エチケット",
+  "reading": "エチケット",
+  "romaji": "echiketto",
+  "meaning_id": "etiquette",
+  "meaning_en": "etiquette",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "それはエチケットの問題だ。",
+      "id": "It's a matter of etiquette.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼らがエチケットを知らないことに彼女はがっかりした。",
+      "id": "She was dismayed at their ignorance in etiquette.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00593",
+  "word": "エプロン",
+  "reading": "エプロン",
+  "romaji": "epuron",
+  "meaning_id": "apron",
+  "meaning_en": "apron",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "エプロンの紐を結んでください。",
+      "id": "Tie the apron.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00595",
+  "word": "宴会",
+  "reading": "えんかい",
+  "romaji": "enkai",
+  "meaning_id": "party; banquet",
+  "meaning_en": "party; banquet",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "宴会はたけなわだった。",
+      "id": "The banquet was in full swing.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼は宴会の事について触れた。",
+      "id": "He mentioned the matter of the banquet.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00596",
+  "word": "園芸",
+  "reading": "えんげい",
+  "romaji": "engei",
+  "meaning_id": "horticulture; gardening",
+  "meaning_en": "horticulture; gardening",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼女は園芸の入門書を読んでいる。",
+      "id": "Dia reading a manual on gardening.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "園芸がここ数年、流行しています。",
+      "id": "Gardening has been popular for some years.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00597",
+  "word": "演劇",
+  "reading": "えんげき",
+  "romaji": "engeki",
+  "meaning_id": "play (theatrical)",
+  "meaning_en": "play (theatrical)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私はイギリス演劇を勉強しています。",
+      "id": "I'm studying the English drama.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "演劇がみたいのですが情報をください。",
+      "id": "I'd like to see a play. Do you have any information?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00598",
+  "word": "円周",
+  "reading": "えんしゅう",
+  "romaji": "enshuu",
+  "meaning_id": "circumference",
+  "meaning_en": "circumference",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "円周の長さの求め方ってどうでしたっけ？忘れました。",
+      "id": "How do you derive the length of the circumference? I've forgotten.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "円周から直径を求めることは可能ですか？",
+      "id": "Is it possible to determine the diameter from the circumference?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00601",
+  "word": "煙突",
+  "reading": "えんとつ",
+  "romaji": "entotsu",
+  "meaning_id": "chimney",
+  "meaning_en": "chimney",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あの煙突はとても高い。",
+      "id": "That chimney is very high.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "煙突から煙がもくもくと出ていた。",
+      "id": "The smoke poured out of the chimney.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00604",
+  "word": "オイル",
+  "reading": "オイル",
+  "romaji": "oiru",
+  "meaning_id": "oil; engine oil",
+  "meaning_en": "oil; engine oil; kerosene",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "新しいオイル・タンカーが進水した。",
+      "id": "A new oil tanker was launched.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "石油を運ぶ船をオイル・タンカーという。",
+      "id": "A ship which conveys oil is called an oil tanker.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00606",
+  "word": "王女",
+  "reading": "おうじょ",
+  "romaji": "oujo",
+  "meaning_id": "princess",
+  "meaning_en": "princess",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "王女があくどい化粧をしていた。",
+      "id": "The princess was wearing too much makeup.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "王女は彼を見て笑わずにいられなかった。",
+      "id": "The princess couldn't help laughing at him.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00607",
+  "word": "応ずる",
+  "reading": "おうずる",
+  "romaji": "ouzuru",
+  "meaning_id": "me-answer",
+  "meaning_en": "to answer; to respond; to meet; to satisfy; to accept",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "応ずるを使います。",
+      "id": "Menggunakan me-answer.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00611",
+  "word": "欧米",
+  "reading": "おうべい",
+  "romaji": "oubei",
+  "meaning_id": "Europe and America; the West",
+  "meaning_en": "Europe and America; the West",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "医学では日本は欧米に追いつきました。",
+      "id": "Japan has caught up with Europe and America in medicine.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "欧米では犬を家族の一員とみなす。",
+      "id": "In Europe and America they regard the dog as a member of the family.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00613",
+  "word": "オーケストラ",
+  "reading": "オーケストラ",
+  "romaji": "ookesutora",
+  "meaning_id": "orchestra",
+  "meaning_en": "orchestra",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "指揮者はオーケストラの指揮をする。",
+      "id": "A conductor directs an orchestra.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "学校のオーケストラに入るつもりなのだ。",
+      "id": "I'm going to join the school orchestra.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00615",
+  "word": "大通り",
+  "reading": "おおどおり",
+  "romaji": "oodoori",
+  "meaning_id": "main street",
+  "meaning_en": "main street",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私は大通りをずっと一人で歩いた。",
+      "id": "I walked along the main street.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼は大通りに店を構えている。",
+      "id": "He has a store on the main road.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00616",
+  "word": "オートメーション",
+  "reading": "オートメーション",
+  "romaji": "ootomeeshon",
+  "meaning_id": "automation",
+  "meaning_en": "automation",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "生産性はオートメーションの徹底によって向上する。",
+      "id": "Production improves by becoming more automatic.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "オートメーションは必ず重要な社会的結果をもたらすだろう。",
+      "id": "Automation is bound to have important social consequences.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00617",
+  "word": "オーバーコート",
+  "reading": "オーバーコート",
+  "romaji": "oobaakooto",
+  "meaning_id": "overcoat",
+  "meaning_en": "overcoat",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "とても寒かったのにもかかわらず、その子供はオーバーコートを身につけていなかった。",
+      "id": "The child had no overcoat on although it was very cold.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00619",
+  "word": "お帰り",
+  "reading": "おかえり",
+  "romaji": "okaeri",
+  "meaning_id": "return; welcome",
+  "meaning_en": "return; welcome",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あなたのお帰りを一日千秋の思いでお待ちしています。",
+      "id": "I can hardly wait till I see you.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "会計はお帰りのレジでおねがいします。",
+      "id": "Pay the cashier on the way out.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00622",
+  "word": "おかず",
+  "reading": "おかず",
+  "romaji": "okazu",
+  "meaning_id": "side dish; accompaniment for rice dishes",
+  "meaning_en": "side dish; accompaniment for rice dishes",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "今晩のおかずはもう決めてあります。",
+      "id": "I've decided what to cook for dinner.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "今晩のおかずは魚だ。",
+      "id": "Today's dinner is fish.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00627",
+  "word": "屋外",
+  "reading": "おくがい",
+  "romaji": "okugai",
+  "meaning_id": "outdoors",
+  "meaning_en": "outdoors",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼らは屋外スポーツに熱心である。",
+      "id": "Mereka keen on outdoor sports.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ラグビーは屋外競技である。",
+      "id": "Rugby is an outdoor game.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00628",
+  "word": "送り仮名",
+  "reading": "おくりがな",
+  "romaji": "okurigana",
+  "meaning_id": "part of word written in kana",
+  "meaning_en": "part of word written in kana",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この漢字、送り仮名が間違ってるよ。",
+      "id": "The okurigana on this kanji is wrong.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00629",
+  "word": "おげんきで",
+  "reading": "おげんきで",
+  "romaji": "ogenkide",
+  "meaning_id": "take care; stay well (said when parting)",
+  "meaning_en": "take care; stay well (said when parting)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼女が私に近づいてきて「おげんきですか」と言った。",
+      "id": "She came up to me and said \"How are you?\"",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00637",
+  "word": "叔父さん",
+  "reading": "おじさん",
+  "romaji": "ojisan",
+  "meaning_id": "middle-aged gentleman; uncle",
+  "meaning_en": "middle-aged gentleman; uncle",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あなたの叔父さんと話し合いたい。",
+      "id": "Saya ingin talk with your uncle.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ヘレンは日曜日ごとに叔父さんを訪問する。",
+      "id": "Helen visits her uncle every Sunday.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00638",
+  "word": "小父さん",
+  "reading": "おじさん",
+  "romaji": "ojisan",
+  "meaning_id": "middle-aged gentleman; uncle",
+  "meaning_en": "middle-aged gentleman; uncle",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あなたの叔父さんと話し合いたい。",
+      "id": "Saya ingin talk with your uncle.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ヘレンは日曜日ごとに叔父さんを訪問する。",
+      "id": "Helen visits her uncle every Sunday.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00639",
+  "word": "伯父さん",
+  "reading": "おじさん",
+  "romaji": "ojisan",
+  "meaning_id": "middle-aged gentleman; uncle",
+  "meaning_en": "middle-aged gentleman; uncle",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あなたの叔父さんと話し合いたい。",
+      "id": "Saya ingin talk with your uncle.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ヘレンは日曜日ごとに叔父さんを訪問する。",
+      "id": "Helen visits her uncle every Sunday.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00645",
+  "word": "お出掛け",
+  "reading": "おでかけ",
+  "romaji": "odekake",
+  "meaning_id": "about to start out; just about to leave or go out",
+  "meaning_en": "about to start out; just about to leave or go out",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "いつお出かけになりますか。",
+      "id": "When will you go out?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "散歩にお出かけになりませんか。",
+      "id": "Won't you go for a walk?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00646",
+  "word": "お手伝いさん",
+  "reading": "おてつだいさん",
+  "romaji": "otetsudaisan",
+  "meaning_id": "maid",
+  "meaning_en": "maid",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "お手伝いさんたちは主人の命令を実行しようと努めた。",
+      "id": "The servants tried to carry out their master's order.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "お手伝いさんは毎日の家事にはほとほとうんざりしていた。",
+      "id": "The maid was dead tired of her household chores.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00648",
+  "word": "落し物",
+  "reading": "おとしもの",
+  "romaji": "otoshimono",
+  "meaning_id": "lost property",
+  "meaning_en": "lost property",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "落とし物カウンターはどこですか？",
+      "id": "Where is the lost and found?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00652",
+  "word": "叔母さん",
+  "reading": "おばさん",
+  "romaji": "obasan",
+  "meaning_id": "aunt; middle-aged lady",
+  "meaning_en": "aunt; middle-aged lady",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "叔母さんを訪ねた時はすごいごちそうだったね。",
+      "id": "What a feast we had when we visited my aunt!",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼は叔母さんの家に下宿していた。",
+      "id": "He boarded with his aunt.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00655",
+  "word": "おまちください",
+  "reading": "おまちください",
+  "romaji": "omachikudasai",
+  "meaning_id": "Please wait a moment",
+  "meaning_en": "Please wait a moment",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "少々おまちください。",
+      "id": "Hold on a minute, please.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00663",
+  "word": "おやすみ",
+  "reading": "おやすみ",
+  "romaji": "oyasumi",
+  "meaning_id": "holiday; absence",
+  "meaning_en": "holiday; absence; rest; Good night",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "お休み、いい夢たくさん見てね。",
+      "id": "Good night and sweet dreams.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼女はお母さんにおやすみのキスをした。",
+      "id": "She kissed her mother good night.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00664",
+  "word": "おやつ",
+  "reading": "おやつ",
+  "romaji": "oyatsu",
+  "meaning_id": "between meal snack; afternoon refreshment",
+  "meaning_en": "between meal snack; afternoon refreshment",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "おやつにプリンを食べた。",
+      "id": "I had some custard pudding for an afternoon snack.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "別荘にもどって、三時のおやつ。",
+      "id": "Returned to the villa, afternoon snack.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00665",
+  "word": "親指",
+  "reading": "おやゆび",
+  "romaji": "oyayubi",
+  "meaning_id": "thumb",
+  "meaning_en": "thumb",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その手袋は親指に穴があいている。",
+      "id": "The glove has a hole in the thumb.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "針で親指を突いてしまった。",
+      "id": "I pricked my thumb with a needle.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00666",
+  "word": "オルガン",
+  "reading": "オルガン",
+  "romaji": "orugan",
+  "meaning_id": "organ",
+  "meaning_en": "organ",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "教会には普通オルガンがあります。",
+      "id": "Ada usually an organ in a church.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "オルガンは弾けますか？",
+      "id": "Can you play the organ?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00668",
+  "word": "恩恵",
+  "reading": "おんけい",
+  "romaji": "onkei",
+  "meaning_id": "grace; favor",
+  "meaning_en": "grace; favor; blessing; benefit",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "熱帯雨林は地球に多くの恩恵を与える。",
+      "id": "Rainforests provide the earth with many benefits.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私は君に何から何まで恩恵を受けている。",
+      "id": "I owe everything to you.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00669",
+  "word": "温室",
+  "reading": "おんしつ",
+  "romaji": "onshitsu",
+  "meaning_id": "greenhouse",
+  "meaning_en": "greenhouse",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私は温室でランを栽培している。",
+      "id": "I grow orchids in my greenhouse.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼らは温室でいちごを栽培している。",
+      "id": "They grow strawberries in their greenhouse.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00670",
+  "word": "温泉",
+  "reading": "おんせん",
+  "romaji": "onsen",
+  "meaning_id": "spa; hot spring",
+  "meaning_en": "spa; hot spring; onsen",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "温泉はあなたに効くでしょう。",
+      "id": "The hot spring will do you good.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私はひなびた温泉が好きだ。",
+      "id": "Saya suka onsen off the beaten track.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00671",
+  "word": "温帯",
+  "reading": "おんたい",
+  "romaji": "ontai",
+  "meaning_id": "temperate zone",
+  "meaning_en": "temperate zone",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "我々のところの気候は温帯性です。",
+      "id": "Our country's climate is temperate.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00672",
+  "word": "御中",
+  "reading": "おんちゅう",
+  "romaji": "onchuu",
+  "meaning_id": "and Company; Messrs.",
+  "meaning_en": "and Company; Messrs.",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "御中を使います。",
+      "id": "Menggunakan and Company; Messrs..",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00674",
+  "word": "蚊",
+  "reading": "か",
+  "romaji": "ka",
+  "meaning_id": "mosquito",
+  "meaning_en": "mosquito",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "蚊にたくさん刺されました。",
+      "id": "I got a lot of mosquito bites.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私は蚊を入れないよう窓を閉めた。",
+      "id": "I shut the window to keep the mosquitoes out.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00676",
+  "word": "貝",
+  "reading": "かい",
+  "romaji": "kai",
+  "meaning_id": "shell; shellfish",
+  "meaning_en": "shell; shellfish",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私が手にしてるのは貝の化石です。",
+      "id": "What I have in my hand is a fossil seashell.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "貝は好きではない。",
+      "id": "I don't like shellfish.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00678",
+  "word": "会館",
+  "reading": "かいかん",
+  "romaji": "kaikan",
+  "meaning_id": "meeting hall; assembly hall",
+  "meaning_en": "meeting hall; assembly hall",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その日に限って子供たちは会館に入ることを許される。",
+      "id": "The hall allows children in only on that day.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私は少年に会ったが、彼はこの会館への道を教えてくれた。",
+      "id": "I met a boy, who showed me the way to this hall.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00681",
+  "word": "海水浴",
+  "reading": "かいすいよく",
+  "romaji": "kaisuiyoku",
+  "meaning_id": "sea bathing; seawater bath",
+  "meaning_en": "sea bathing; seawater bath",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ハワイでは１年中海水浴が楽しめる。",
+      "id": "In Hawaii, we can enjoy swimming in the ocean all year round.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "海水浴中に彼は友達に会った。",
+      "id": "He met his friend while bathing in the sea.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00682",
+  "word": "回数",
+  "reading": "かいすう",
+  "romaji": "kaisuu",
+  "meaning_id": "number of times; frequency",
+  "meaning_en": "number of times; frequency",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "いつもより尿の回数が多いです。",
+      "id": "I urinate more often than usual.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼の旅行は幅広く回数も多い。",
+      "id": "His travels were wide and frequent.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00683",
+  "word": "回数券",
+  "reading": "かいすうけん",
+  "romaji": "kaisuuken",
+  "meaning_id": "book of tickets",
+  "meaning_en": "book of tickets",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "回数券を下さい。",
+      "id": "May I have coupon tickets?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00684",
+  "word": "快晴",
+  "reading": "かいせい",
+  "romaji": "kaisei",
+  "meaning_id": "good weather",
+  "meaning_en": "good weather",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "今日は快晴だ。これで一日中仕事が出来る。",
+      "id": "It's fair today, so we can work all day.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "さっきまでの快晴がうそのようだ。",
+      "id": "It's hard to believe it was so clear and sunny up to just now.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00692",
+  "word": "外部",
+  "reading": "がいぶ",
+  "romaji": "gaibu",
+  "meaning_id": "the outside; external",
+  "meaning_en": "the outside; external",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "外部からの助言が必要かもしれません。",
+      "id": "Outside advice may be necessary.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "外部からの圧力がますます強くなってきている。",
+      "id": "External pressure grows ever more intense.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00695",
+  "word": "海洋",
+  "reading": "かいよう",
+  "romaji": "kaiyou",
+  "meaning_id": "ocean",
+  "meaning_en": "ocean",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ロブスターは海洋動物の一種に属します。",
+      "id": "Lobsters belong to a class of marine animals.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "世界には四つの海洋がある。",
+      "id": "Ada four oceans in the world.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00700",
+  "word": "家屋",
+  "reading": "かおく",
+  "romaji": "kaoku",
+  "meaning_id": "house; building",
+  "meaning_en": "house; building",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この前の嵐で数軒の家屋が被害を受けた。",
+      "id": "Several houses were damaged in the last storm.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "日本の家屋は木造で、火がつきやすい。",
+      "id": "Japanese houses are built of wood and they catch fire easily.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00701",
+  "word": "書留",
+  "reading": "かきとめ",
+  "romaji": "kakitome",
+  "meaning_id": "writing down; putting on record",
+  "meaning_en": "writing down; putting on record; recording; making a note of; registration (of mail)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この小包を書留にしたいのですが。",
+      "id": "I'd like to have this parcel registered.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この手紙は紛失するといけないから、書留にするがよい。",
+      "id": "You had better get this letter registered for fear it should be lost.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00702",
+  "word": "書取",
+  "reading": "かきとり",
+  "romaji": "kakitori",
+  "meaning_id": "dictation",
+  "meaning_en": "dictation",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "今日は漢字の書き取りがある。",
+      "id": "We have a kanji dictation test today.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00703",
+  "word": "垣根",
+  "reading": "かきね",
+  "romaji": "kakine",
+  "meaning_id": "hedge",
+  "meaning_en": "hedge",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "よい垣根はよい隣人をつくる。",
+      "id": "Good fences make good neighbors.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私は彼に垣根のペンキを塗らせた。",
+      "id": "I got him to paint the fence.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00706",
+  "word": "架空",
+  "reading": "かくう",
+  "romaji": "kakuu",
+  "meaning_id": "aerial; overhead",
+  "meaning_en": "aerial; overhead; fiction; fanciful",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "このドラマの登場人物はすべて架空のものです。",
+      "id": "All the characters in this drama are fictitious.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この物語の中で書かれているすべての出来事は架空のものです。",
+      "id": "All the events described in this story are imaginary.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00709",
+  "word": "学術",
+  "reading": "がくじゅつ",
+  "romaji": "gakujutsu",
+  "meaning_id": "science; learning",
+  "meaning_en": "science; learning; scholarship",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は学術会議に出席した。",
+      "id": "He attended the scientific conference.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00710",
+  "word": "各地",
+  "reading": "かくち",
+  "romaji": "kakuchi",
+  "meaning_id": "every place; various places",
+  "meaning_en": "every place; various places",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私はイギリス各地を見物した。",
+      "id": "I visited many parts of England.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "台風のために各地に被害が発生した。",
+      "id": "The typhoon caused damage in many areas.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00712",
+  "word": "角度",
+  "reading": "かくど",
+  "romaji": "kakudo",
+  "meaning_id": "angle",
+  "meaning_en": "angle",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "それでは角度が小さすぎよう。",
+      "id": "The angle would be too narrow.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "９０度の角度は直角と呼ばれている。",
+      "id": "An angle of 90 degrees is called a right angle.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00713",
+  "word": "学年",
+  "reading": "がくねん",
+  "romaji": "gakunen",
+  "meaning_id": "year in school; grade in school",
+  "meaning_en": "year in school; grade in school",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "第１学年には５つクラスがあった。",
+      "id": "There were five classes in the first year.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私たちの新学年がスタートするのは四月です。",
+      "id": "It is in April that our school years start.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00714",
+  "word": "学部",
+  "reading": "がくぶ",
+  "romaji": "gakubu",
+  "meaning_id": "department of a university; undergraduate",
+  "meaning_en": "department of a university; undergraduate",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "学部の選択で迷った。",
+      "id": "He was at a loss as to which faculty to choose.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私たちの大学は８つの学部から成っている。",
+      "id": "Our university consists of eight departments.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00716",
+  "word": "確率",
+  "reading": "かくりつ",
+  "romaji": "kakuritsu",
+  "meaning_id": "probability",
+  "meaning_en": "probability",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "キャンセル待ちで乗れる確率はどれくらいですか。",
+      "id": "If I wait, what's the possibility I can get a seat?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼が回復する確率はあるにしても極めて少ない。",
+      "id": "Ada little if any hope for his recovery.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00717",
+  "word": "学力",
+  "reading": "がくりょく",
+  "romaji": "gakuryoku",
+  "meaning_id": "scholarship; knowledge",
+  "meaning_en": "scholarship; knowledge; literary ability",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "学力を使います。",
+      "id": "Menggunakan scholarship; knowledge.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00718",
+  "word": "掛け算",
+  "reading": "かけざん",
+  "romaji": "kakezan",
+  "meaning_id": "multiplication",
+  "meaning_en": "multiplication",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "子供たちは掛け算を暗記している。",
+      "id": "The children are learning the multiplication tables by heart.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00721",
+  "word": "火口",
+  "reading": "かこう",
+  "romaji": "kakou",
+  "meaning_id": "a burner; origin of a fire",
+  "meaning_en": "a burner; origin of a fire",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "火口を使います。",
+      "id": "Menggunakan a burner; origin of a fire.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00724",
+  "word": "飾り",
+  "reading": "かざり",
+  "romaji": "kazari",
+  "meaning_id": "decoration",
+  "meaning_en": "decoration",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その箱に飾りのテープをかけてください。",
+      "id": "Do up the box with decorative tape.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "それは飾りにすぎない。",
+      "id": "It is merely an ornament.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00725",
+  "word": "火山",
+  "reading": "かざん",
+  "romaji": "kazan",
+  "meaning_id": "volcano",
+  "meaning_en": "volcano",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その火山は溶岩を流し出した。",
+      "id": "The volcano poured molten rock.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "火山の爆発がその村をおびやかした。",
+      "id": "The volcanic eruption threatened the village.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00728",
+  "word": "過失",
+  "reading": "かしつ",
+  "romaji": "kashitsu",
+  "meaning_id": "error; blunder",
+  "meaning_en": "error; blunder; accident",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私は彼の過失を指摘している。",
+      "id": "I'm pointing a finger at his mistake.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "それはすべて私たちの過失です。",
+      "id": "It was all our fault.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00729",
+  "word": "果実",
+  "reading": "かじつ",
+  "romaji": "kajitsu",
+  "meaning_id": "buah-buahan",
+  "meaning_en": "fruit; nut; berry.",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "果実になる花は少ない。",
+      "id": "Few flowers develop into fruit.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "木は果実のみの重さでたわんだ。",
+      "id": "The tree bent down beneath their weight of fruit.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00730",
+  "word": "貸間",
+  "reading": "かしま",
+  "romaji": "kashima",
+  "meaning_id": "room to let",
+  "meaning_en": "room to let",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私は貸間を探しているところです。",
+      "id": "I'm looking for a room for rent.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この家に貸間はありますか。",
+      "id": "Have you a room to let in this house?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00731",
+  "word": "貸家",
+  "reading": "かしや",
+  "romaji": "kashiya",
+  "meaning_id": "house for rent",
+  "meaning_en": "house for rent",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "これは貸家だ、売家ではない。",
+      "id": "Ini adalah a house to let, not to be sold.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "わたしは貸家をさがしている。",
+      "id": "I am looking for a house to rent.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00732",
+  "word": "個所",
+  "reading": "かしょ",
+  "romaji": "kasho",
+  "meaning_id": "passage; place",
+  "meaning_en": "passage; place; point; part",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私はスキー中に２箇所も骨折した。",
+      "id": "I broke my leg in two places during a skiing mishap.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この湖はこの箇所が一番深い。",
+      "id": "The lake is deepest at this point.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00736",
+  "word": "カセット",
+  "reading": "カセット",
+  "romaji": "kasetto",
+  "meaning_id": "cassette (tape)",
+  "meaning_en": "cassette (tape)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私は財布をなくしてしまっていた、それでそのカセットが買えなかった。",
+      "id": "I had lost my purse, so I couldn't buy the cassette.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私はそのカセットにさらに１０ドル払わなければならなかった。",
+      "id": "I had to pay ten dollars for the cassette in addition.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00737",
+  "word": "下線",
+  "reading": "かせん",
+  "romaji": "kasen",
+  "meaning_id": "underline; underscore",
+  "meaning_en": "underline; underscore",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "下線のある文を訳しなさい。",
+      "id": "Translate the underlined sentences.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "下線を引いた語を正しい形にしなさい。",
+      "id": "Correct the underlined words.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00739",
+  "word": "加速度",
+  "reading": "かそくど",
+  "romaji": "kasokudo",
+  "meaning_id": "acceleration",
+  "meaning_en": "acceleration",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "加速度を使います。",
+      "id": "Menggunakan acceleration.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00741",
+  "word": "片仮名",
+  "reading": "かたかな",
+  "romaji": "katakana",
+  "meaning_id": "katakana",
+  "meaning_en": "katakana",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "平仮名は書けるんだけど、片仮名はまだ書けないんだ。",
+      "id": "I can write hiragana, but I can't yet write katakana.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00743",
+  "word": "塊",
+  "reading": "かたまり",
+  "romaji": "katamari",
+  "meaning_id": "lump; mass",
+  "meaning_en": "lump; mass; clod; cluster",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "巨大な肉の塊が当たった。",
+      "id": "I was hit by a huge chunk of meat.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "石の塊はセメントで接合された。",
+      "id": "The blocks of stone were jointed with cement.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00745",
+  "word": "片道",
+  "reading": "かたみち",
+  "romaji": "katamichi",
+  "meaning_id": "one-way (trip)",
+  "meaning_en": "one-way (trip)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "運賃は片道1ドルです。",
+      "id": "The fare is one dollar each way.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "Ａ市からＢ市までのチケット、片道２まいください。",
+      "id": "I'd like two one-way tickets from A to B.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00748",
+  "word": "学科",
+  "reading": "がっか",
+  "romaji": "gakka",
+  "meaning_id": "study subject; course of study",
+  "meaning_en": "study subject; course of study",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "数学は私の好きな学科です。",
+      "id": "Mathematics is my favorite subject.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私は学科では美術と音楽が好きです。",
+      "id": "Saya suka art and music among my school subjects.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00749",
+  "word": "学会",
+  "reading": "がっかい",
+  "romaji": "gakkai",
+  "meaning_id": "scientific society; academic meeting",
+  "meaning_en": "scientific society; academic meeting",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "盛田教授は化学学会で司会を務めた。",
+      "id": "Professor Morita presided at a meeting of the Chemical Society.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00750",
+  "word": "楽器",
+  "reading": "がっき",
+  "romaji": "gakki",
+  "meaning_id": "musical instrument",
+  "meaning_en": "musical instrument",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "楽器をなにか演奏しますか。",
+      "id": "Do you play a musical instrument?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "僕は楽器よりも声楽のほうが好きだ。",
+      "id": "Saya suka vocal music better than instrumental music.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00751",
+  "word": "学級",
+  "reading": "がっきゅう",
+  "romaji": "gakkyuu",
+  "meaning_id": "grade in school",
+  "meaning_en": "grade in school",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私たちは同じ学級で英語を勉強します。",
+      "id": "We study English in the same class.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私たちの学校には１０の学級がある。",
+      "id": "Our school has ten classes.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00754",
+  "word": "活字",
+  "reading": "かつじ",
+  "romaji": "katsuji",
+  "meaning_id": "printing type",
+  "meaning_en": "printing type",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は新聞の小さな活字をじっとみた。",
+      "id": "He peered at the small print in a newspaper.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "小さい活字がかすんで見えます。",
+      "id": "The small print looks faded.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00756",
+  "word": "活力",
+  "reading": "かつりょく",
+  "romaji": "katsuryoku",
+  "meaning_id": "vitality; energy",
+  "meaning_en": "vitality; energy",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この薬は活力を補給してくれます。",
+      "id": "This medicine renews your strength.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "いつも彼は活力がみなぎっている。",
+      "id": "Dia always full of power.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00758",
+  "word": "課程",
+  "reading": "かてい",
+  "romaji": "katei",
+  "meaning_id": "course; curriculum",
+  "meaning_en": "course; curriculum",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その大学の課程は自然科学と社会科学から成り立っている。",
+      "id": "That university's curriculum covers natural science and social science.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私は高校の全課程を修了した。",
+      "id": "I completed the whole high school curriculum.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00759",
+  "word": "仮名",
+  "reading": "かな",
+  "romaji": "kana",
+  "meaning_id": "kana; Japanese syllabaries (i.e. hiragana and katakana)",
+  "meaning_en": "kana; Japanese syllabaries (i.e. hiragana and katakana)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この漢字、送り仮名が間違ってるよ。",
+      "id": "The okurigana on this kanji is wrong.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "振り仮名はどうやって付けますか？",
+      "id": "How do I add furigana?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00760",
+  "word": "仮名遣い",
+  "reading": "かなづかい",
+  "romaji": "kanazukai",
+  "meaning_id": "kana orthography; syllabary spelling",
+  "meaning_en": "kana orthography; syllabary spelling",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "祖父は古い仮名遣いで書くことがあるの。",
+      "id": "My grandfather sometimes writes in the old kana orthography.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00761",
+  "word": "鐘",
+  "reading": "かね",
+  "romaji": "kane",
+  "meaning_id": "bell; chime",
+  "meaning_en": "bell; chime",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "鐘の合図で彼らは食事をした。",
+      "id": "The bell chimed them to meals.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "教会の鐘は３時に鳴ったものです。",
+      "id": "The church bell used to ring at three.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00764",
+  "word": "カバー",
+  "reading": "カバー",
+  "romaji": "kabaa",
+  "meaning_id": "cover (ex. book)",
+  "meaning_en": "cover (ex. book)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その本のカバーにはインクのしみがいくつかあった。",
+      "id": "There were some ink spots on the book jacket.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "事故の場合、全て保険でカバーされていますか。",
+      "id": "Am I fully covered in case of an accident?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00765",
+  "word": "過半数",
+  "reading": "かはんすう",
+  "romaji": "kahansuu",
+  "meaning_id": "majority",
+  "meaning_en": "majority",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "与党は前の選挙で過半数を占めた。",
+      "id": "The government got their majority at the last election.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "合格者の過半数は大学出身者であった。",
+      "id": "The majority of the successful candidates were university graduates.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00767",
+  "word": "釜",
+  "reading": "かま",
+  "romaji": "kama",
+  "meaning_id": "iron pot; kettle",
+  "meaning_en": "iron pot; kettle",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "きのう交差点でお釜を掘られちゃったよ。",
+      "id": "Someone ploughed into me from behind at an intersection yesterday.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "あの店の釜めしは絶品だよ。",
+      "id": "That restaurant's kamameshi is absolutely superb.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00768",
+  "word": "紙屑",
+  "reading": "かみくず",
+  "romaji": "kamikuzu",
+  "meaning_id": "wastepaper",
+  "meaning_en": "wastepaper",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その部屋は紙くずだらけだった。",
+      "id": "The room was littered with scraps of paper.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00769",
+  "word": "神様",
+  "reading": "かみさま",
+  "romaji": "kamisama",
+  "meaning_id": "god",
+  "meaning_en": "god",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "危険が過ぎると神様は忘れられる。",
+      "id": "The danger past and God forgotten.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "神様のおぼしめしで息子は死んだ。",
+      "id": "It pleased God to take away my son.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00770",
+  "word": "剃刀",
+  "reading": "かみそり",
+  "romaji": "kamisori",
+  "meaning_id": "razor",
+  "meaning_en": "razor",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "かみそりの刃で指を切りました。",
+      "id": "I cut my finger with a razor blade.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この電気かみそりは買う前に試してみるべきだった。",
+      "id": "I should have tried out this electric shaver before buying it.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00771",
+  "word": "ガム",
+  "reading": "ガム",
+  "romaji": "gamu",
+  "meaning_id": "chewing gum",
+  "meaning_en": "chewing gum",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ガムが靴底にくっついた。",
+      "id": "The gum adhered to the sole of the shoe.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "なんとガムのおまけだったんだよ。",
+      "id": "Believe it or not, it came in a pack of gum.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00772",
+  "word": "貨物",
+  "reading": "かもつ",
+  "romaji": "kamotsu",
+  "meaning_id": "cargo; freight",
+  "meaning_en": "cargo; freight",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その航空会社は貨物のみを扱っている。",
+      "id": "That aircraft company deals in freight only.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "今では多くの貨物が飛行機で輸送されている。",
+      "id": "Many goods are now transported by air.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00774",
+  "word": "歌謡",
+  "reading": "かよう",
+  "romaji": "kayou",
+  "meaning_id": "song; ballad",
+  "meaning_en": "song; ballad",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "歌謡を使います。",
+      "id": "Menggunakan song; ballad.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00775",
+  "word": "殻",
+  "reading": "から",
+  "romaji": "kara",
+  "meaning_id": "shell; husk",
+  "meaning_en": "shell; husk; hull; chaff",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "飲み物はヤシの実の殻に入れてあった。",
+      "id": "The drinks were served in coconut shells.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "卵の殻は壊れやすい。",
+      "id": "The shell of an egg is easily broken.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00776",
+  "word": "カラー",
+  "reading": "カラー",
+  "romaji": "karaa",
+  "meaning_id": "collar; color",
+  "meaning_en": "collar; color; colour",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "カラーを使います。",
+      "id": "Menggunakan collar; color.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00779",
+  "word": "かるた",
+  "reading": "かるた",
+  "romaji": "karuta",
+  "meaning_id": "playing cards (pt: carta)",
+  "meaning_en": "playing cards (pt: carta)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "カルタを配ってください。",
+      "id": "Tolong deal the cards.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00781",
+  "word": "カロリー",
+  "reading": "カロリー",
+  "romaji": "karorii",
+  "meaning_id": "calorie",
+  "meaning_en": "calorie",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あなたは必要以上のカロリーをとっている。",
+      "id": "You take more calories than are necessary.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "カロリーの高い食物は私の健康にはよくない。",
+      "id": "Rich foods don't agree with my health.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00785",
+  "word": "為替",
+  "reading": "かわせ",
+  "romaji": "kawase",
+  "meaning_id": "money order; exchange",
+  "meaning_en": "money order; exchange",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この為替を作るのに銀行の手数料が５０ドルかかった。",
+      "id": "Arranging this money order cost $50 in bank fees and commissions.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00786",
+  "word": "瓦",
+  "reading": "かわら",
+  "romaji": "kawara",
+  "meaning_id": "roof tile",
+  "meaning_en": "roof tile",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "瓦を使います。",
+      "id": "Menggunakan roof tile.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00788",
+  "word": "間隔",
+  "reading": "かんかく",
+  "romaji": "kankaku",
+  "meaning_id": "ruang / celah",
+  "meaning_en": "space; interval; SPC",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼が答える前に長い時間の間隔があった。",
+      "id": "There was a long interval before he replied.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "小屋は５０メートルの間隔で建てられた。",
+      "id": "The huts were built with a space of 50 meters in between.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00791",
+  "word": "関西",
+  "reading": "かんさい",
+  "romaji": "kansai",
+  "meaning_id": "Kansai (region comprising Kyoto, Osaka, Kobe and surrounding prefectures)",
+  "meaning_en": "Kansai (region comprising Kyoto, Osaka, Kobe and surrounding prefectures)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その飛行機は今ごろは関西空港に当然着いているはずだ。",
+      "id": "The plane should have arrived at Kansai Airport by now.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私は関西国際空港でトニー君を見送った。",
+      "id": "I saw Tony off at Kansai International Airport.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00793",
+  "word": "感ずる",
+  "reading": "かんずる",
+  "romaji": "kanzuru",
+  "meaning_id": "me-feel",
+  "meaning_en": "to feel; to sense",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "人生から非常な喜びを感ずる。",
+      "id": "I get a kick out of life.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼の言葉は正論だったが、僕は心のどこかで引っかかりを感じていた。",
+      "id": "Even though what he said was sound, I still wasn't completely convinced.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00794",
+  "word": "間接",
+  "reading": "かんせつ",
+  "romaji": "kansetsu",
+  "meaning_id": "indirection; indirectness",
+  "meaning_en": "indirection; indirectness",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "間接を使います。",
+      "id": "Menggunakan indirection; indirectness.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00796",
+  "word": "感想",
+  "reading": "かんそう",
+  "romaji": "kansou",
+  "meaning_id": "impressions; thoughts",
+  "meaning_en": "impressions; thoughts",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ゲームについてのご感想は？",
+      "id": "How did you feel about the game?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼はその詩の感想を述べた。",
+      "id": "He gave us his impression of the poem.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00798",
+  "word": "寒帯",
+  "reading": "かんたい",
+  "romaji": "kantai",
+  "meaning_id": "frigid zone",
+  "meaning_en": "frigid zone",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "寒帯を使います。",
+      "id": "Menggunakan frigid zone.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00800",
+  "word": "官庁",
+  "reading": "かんちょう",
+  "romaji": "kanchou",
+  "meaning_id": "government office; authorities",
+  "meaning_en": "government office; authorities",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は官庁で相当な職についている。",
+      "id": "He has a good position in a government office.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00801",
+  "word": "缶詰",
+  "reading": "かんづめ",
+  "romaji": "kanzume",
+  "meaning_id": "packing (in cans); canning",
+  "meaning_en": "packing (in cans); canning; canned goods; tin can",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "なしはこの工場で缶詰にされます。",
+      "id": "Nashi are tinned in this factory.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "メグはトマトの缶詰を買った。",
+      "id": "Meg bought a can of tomatoes.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00802",
+  "word": "乾電池",
+  "reading": "かんでんち",
+  "romaji": "kandenchi",
+  "meaning_id": "dry cell; battery",
+  "meaning_en": "dry cell; battery",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "乾電池を探しているのですが。",
+      "id": "I'm looking for batteries.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "1.5V乾電池を直接触っただけでは感電死することはないでしょう。",
+      "id": "You're not going to get electrocuted just by directly touching a 1.5V battery.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00803",
+  "word": "関東",
+  "reading": "かんとう",
+  "romaji": "kantou",
+  "meaning_id": "eastern half of Japan; including Tokyo",
+  "meaning_en": "eastern half of Japan; including Tokyo",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ジョンは関東地区、そして太郎は関西地区を担当している。",
+      "id": "John covers the Kanto area and Taro covers the Kansai area.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "台風が関東地方に上陸した。",
+      "id": "The typhoon struck the Kanto district.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00804",
+  "word": "観念",
+  "reading": "かんねん",
+  "romaji": "kannen",
+  "meaning_id": "idea; notion",
+  "meaning_en": "idea; notion; conception; sense (e.g. of duty)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "もう助からないものと観念した。",
+      "id": "I gave up all hope of survival.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "幸福の観念はきわめて抽象的だ。",
+      "id": "The idea of happiness is extremely abstract.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00806",
+  "word": "看板",
+  "reading": "かんばん",
+  "romaji": "kanban",
+  "meaning_id": "sign; signboard",
+  "meaning_en": "sign; signboard; doorplate; poster",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "日光で看板の文字があせた。",
+      "id": "The sun had faded the lettering on the sign.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "その警官は家から看板をはがした。",
+      "id": "The policeman tore the signboard from the house.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00808",
+  "word": "冠",
+  "reading": "かんむり",
+  "romaji": "kanmuri",
+  "meaning_id": "crown; diadem",
+  "meaning_en": "crown; diadem; first; best",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "先生は生徒の作った花の冠をかぶった。",
+      "id": "The teacher put on a crown of flowers made by her pupils.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "マユコは花の冠をつけていた。",
+      "id": "Mayuko wore a flower crown.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00809",
+  "word": "漢和",
+  "reading": "かんわ",
+  "romaji": "kanwa",
+  "meaning_id": "Chinese Character-Japanese (e.g. dictionary)",
+  "meaning_en": "Chinese Character-Japanese (e.g. dictionary)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "漢和を使います。",
+      "id": "Menggunakan Chinese Character-Japanese (e.g. dictionary).",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00810",
+  "word": "気圧",
+  "reading": "きあつ",
+  "romaji": "kiatsu",
+  "meaning_id": "atmospheric pressure",
+  "meaning_en": "atmospheric pressure",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "飛行機でお酒飲むと、気圧のせいか酔いやすい。",
+      "id": "Maybe it's the low air pressure that means you get drunk more easily on planes.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ただし押し込む瞬間気圧の変化のせいでしょうか、耳がツンとするのが難点です。",
+      "id": "However, maybe from the sudden change in pressure when you push them in, having your ears pop is a problem.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00811",
+  "word": "器械",
+  "reading": "きかい",
+  "romaji": "kikai",
+  "meaning_id": "instrument",
+  "meaning_en": "instrument",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼はその新しい機械を試してみた。",
+      "id": "He tried out that new machine.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "機械は油がきれてキイキイいった。",
+      "id": "The machine squealed for lack of oil.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00813",
+  "word": "機関車",
+  "reading": "きかんしゃ",
+  "romaji": "kikansha",
+  "meaning_id": "locomotive; engine",
+  "meaning_en": "locomotive; engine",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "機関車は長い貨物車の列を引っ張って走っていた。",
+      "id": "The locomotive was pulling a long line of freight cars.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00814",
+  "word": "飢饉",
+  "reading": "ききん",
+  "romaji": "kikin",
+  "meaning_id": "famine",
+  "meaning_en": "famine",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "これらの国はしばしば飢饉に襲われた。",
+      "id": "These countries were often visited with famine.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "その長い干ばつの後に飢饉が起こった。",
+      "id": "The long drought was followed by famine.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00815",
+  "word": "器具",
+  "reading": "きぐ",
+  "romaji": "kigu",
+  "meaning_id": "utensil",
+  "meaning_en": "utensil",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "これは主婦の手間を省く便利な器具です。",
+      "id": "Ini adalah a great time-saving gadget for the housewife.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "温度計は温度を測る器具です。",
+      "id": "The thermometer is an instrument for measuring temperature.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00816",
+  "word": "期限",
+  "reading": "きげん",
+  "romaji": "kigen",
+  "meaning_id": "term; period",
+  "meaning_en": "term; period",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "期限前にこの仕事を仕上げなさい。",
+      "id": "You must get the job done before the deadline.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "すべてのレポートは期限を守って提出されなければならない。",
+      "id": "All essays must be handed in on time.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00817",
+  "word": "記号",
+  "reading": "きごう",
+  "romaji": "kigou",
+  "meaning_id": "symbol; code",
+  "meaning_en": "symbol; code",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "＆という記号は、ａｎｄを指す。",
+      "id": "The sign '&' stands for 'and'.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この記号は何を表すのかわかりません。",
+      "id": "I don't know what this symbol stands for.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00819",
+  "word": "儀式",
+  "reading": "ぎしき",
+  "romaji": "gishiki",
+  "meaning_id": "ceremony; rite",
+  "meaning_en": "ceremony; rite; ritual; service",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この儀式は幾世代にもわたって伝わってきた。",
+      "id": "This ceremony has been handed down from generation to generation.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "儀式は彼の話から始まった。",
+      "id": "The ceremony began with his speech.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00822",
+  "word": "基礎",
+  "reading": "きそ",
+  "romaji": "kiso",
+  "meaning_id": "foundation; basis",
+  "meaning_en": "foundation; basis",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その考えが彼の理論の基礎となっている。",
+      "id": "The idea underlies his theory.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "数学はすべての科学の基礎である。",
+      "id": "Mathematics is basic to all sciences.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00823",
+  "word": "気体",
+  "reading": "きたい",
+  "romaji": "kitai",
+  "meaning_id": "vapour; gas",
+  "meaning_en": "vapour; gas",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その気体は悪臭を放つ。",
+      "id": "This gas gives off a bad smell.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "空気はさまざまな気体の混合物である。",
+      "id": "Air is a mixture of various gases.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00824",
+  "word": "基地",
+  "reading": "きち",
+  "romaji": "kichi",
+  "meaning_id": "base",
+  "meaning_en": "base",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この近くに軍の基地がある。",
+      "id": "Ada a military base near here.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "昨日、彼は基地に帰らなかった。",
+      "id": "He didn't come back to the base yesterday.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00825",
+  "word": "きっかけ",
+  "reading": "きっかけ",
+  "romaji": "kikkake",
+  "meaning_id": "chance; start",
+  "meaning_en": "chance; start; cue; excuse",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼等は彼に逃げるきっかけを与えた。",
+      "id": "They gave him a chance to escape.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私の意見がそのグループでの議論のきっかけになった。",
+      "id": "My comment sparked off an argument in the group.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00827",
+  "word": "基盤",
+  "reading": "きばん",
+  "romaji": "kiban",
+  "meaning_id": "foundation; basis",
+  "meaning_en": "foundation; basis",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "日記が彼女が後に書いた本の基盤となった。",
+      "id": "Her diaries formed the basis of the book she later wrote.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "自由諸国の基盤は民主主義である。",
+      "id": "The foundation of free nations is democracy.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00828",
+  "word": "客席",
+  "reading": "きゃくせき",
+  "romaji": "kyakuseki",
+  "meaning_id": "guest seating",
+  "meaning_en": "guest seating",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "このお庭の方にね。縁台を出して客席を増やしたいんです。こんな感じに。",
+      "id": "In the garden, you know. I'd like to put out benches and increase the customer seating. Like this ...",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00829",
+  "word": "客間",
+  "reading": "きゃくま",
+  "romaji": "kyakuma",
+  "meaning_id": "parlor; guest room",
+  "meaning_en": "parlor; guest room",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この書斎は客間兼用だ。",
+      "id": "I also use this study for receiving guests.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "夜遅くに、若い男は少女とふたりきりで長い間客間に座っていた。",
+      "id": "The young man had been sitting in the drawing room alone with the girl for a long time, and it was getting late.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00830",
+  "word": "ギャング",
+  "reading": "ギャング",
+  "romaji": "gyangu",
+  "meaning_id": "gang",
+  "meaning_en": "gang",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ギャングの一団が金を盗んだ。",
+      "id": "A group of gangsters stole the money.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ギャング仲間の間ではダンで通っていた。",
+      "id": "Among the gangsters he went by Dan.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00831",
+  "word": "キャンパス",
+  "reading": "キャンパス",
+  "romaji": "kyanpasu",
+  "meaning_id": "campus",
+  "meaning_en": "campus",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼女は私を連れてキャンパスを案内してくれた。",
+      "id": "She showed me around the campus.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "キャンパスを案内してもらえますか。",
+      "id": "Could you show me the campus?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00839",
+  "word": "境界",
+  "reading": "きょうかい",
+  "romaji": "kyoukai",
+  "meaning_id": "boundary",
+  "meaning_en": "boundary",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼らは境界を越えてスペインに入った。",
+      "id": "They crossed the border into Spain.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼らは石を並べて家の敷地の境界にした。",
+      "id": "They marked off the land for their house with rows of stones.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00840",
+  "word": "行事",
+  "reading": "ぎょうじ",
+  "romaji": "gyouji",
+  "meaning_id": "event; function",
+  "meaning_en": "event; function",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "メグは学校のいろいろな行事に参加する。",
+      "id": "Meg attends many school affairs.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "それはわくわくする夜の行事です。",
+      "id": "It is an exciting night event.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00842",
+  "word": "教養",
+  "reading": "きょうよう",
+  "romaji": "kyouyou",
+  "meaning_id": "culture; education",
+  "meaning_en": "culture; education; refinement; cultivation",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その医者は教養のある人だ。",
+      "id": "The doctor is a man of culture.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼女はいわゆる教養のある女性です。",
+      "id": "Dia what is called a woman of culture.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00844",
+  "word": "漁業",
+  "reading": "ぎょぎょう",
+  "romaji": "gyogyou",
+  "meaning_id": "fishing (industry)",
+  "meaning_en": "fishing (industry)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その島には漁業を営む人たちが住んでいた。",
+      "id": "The island was inhabited by a fishing people.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "その島の経済は漁業に依存している。",
+      "id": "The economy of the island is dependent on the fishing industry.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00845",
+  "word": "曲線",
+  "reading": "きょくせん",
+  "romaji": "kyokusen",
+  "meaning_id": "curve",
+  "meaning_en": "curve",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "本当の女性には曲線がある。",
+      "id": "Real women have curves.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "新幹線の先頭車両の曲線は、職人がひとつひとつ手作業で仕上げています。",
+      "id": "A craftsman manually adds the finishing touches to each curve of a bullet train's lead car.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00846",
+  "word": "規律",
+  "reading": "きりつ",
+  "romaji": "kiritsu",
+  "meaning_id": "order; rules",
+  "meaning_en": "order; rules; law",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この学校は規律がやや緩やかだ。",
+      "id": "Discipline is rather mild at this school.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "生徒の中には規律を守るのが大変なものもいる。",
+      "id": "Some pupils find it difficult to follow the rules.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00849",
+  "word": "金魚",
+  "reading": "きんぎょ",
+  "romaji": "kingyo",
+  "meaning_id": "goldfish",
+  "meaning_en": "goldfish",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "金魚に餌をやってるの。",
+      "id": "I'm feeding the goldfish.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00850",
+  "word": "区域",
+  "reading": "くいき",
+  "romaji": "kuiki",
+  "meaning_id": "limits; boundary",
+  "meaning_en": "limits; boundary; domain; zone; sphere; territory",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "駐車禁止区域に車を止めてはいけません。",
+      "id": "You must not park your car in a no parking zone.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "府県はフランスや日本の行政区域である。",
+      "id": "Prefectures are governmental divisions of France and Japan.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00851",
+  "word": "偶数",
+  "reading": "ぐうすう",
+  "romaji": "guusuu",
+  "meaning_id": "even number",
+  "meaning_en": "even number",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "２、４、６などは偶数です。",
+      "id": "Two, four, six, etc. are even numbers.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "１２は偶数である。",
+      "id": "Twelve is an even number.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00853",
+  "word": "空中",
+  "reading": "くうちゅう",
+  "romaji": "kuuchuu",
+  "meaning_id": "sky; air",
+  "meaning_en": "sky; air",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "煙は空中へと舞い上がった。",
+      "id": "The smoke ascended into the air.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "葉が空中でぐるぐる回っていた。",
+      "id": "Leaves were whirling in the air.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00854",
+  "word": "クーラー",
+  "reading": "クーラー",
+  "romaji": "kuuraa",
+  "meaning_id": "cooler; air conditioner",
+  "meaning_en": "cooler; air conditioner",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "うちのクーラーが故障してしまった。",
+      "id": "The air conditioner is out of order.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "クーラーを入れていただけますか。",
+      "id": "Would you put on the air conditioning?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00855",
+  "word": "釘",
+  "reading": "くぎ",
+  "romaji": "kugi",
+  "meaning_id": "nail",
+  "meaning_en": "nail",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その板に釘を打ってください。",
+      "id": "Drive the nail into the board.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "セーターをあの釘にひっかけちゃった。",
+      "id": "I caught my sweater on that nail.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00857",
+  "word": "櫛",
+  "reading": "くし",
+  "romaji": "kushi",
+  "meaning_id": "comb",
+  "meaning_en": "comb",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "外出する前に髪を櫛でときなさい。",
+      "id": "Comb your hair before you go out.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私は木のくしを持っています。",
+      "id": "I have a wooden comb.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00859",
+  "word": "苦情",
+  "reading": "くじょう",
+  "romaji": "kujou",
+  "meaning_id": "complaint; troubles",
+  "meaning_en": "complaint; troubles; objection",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私はあなたの苦情について書いている。",
+      "id": "I am writing in relation to your complaint.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼女は支配人にサービスが悪いと苦情を言った。",
+      "id": "She complained to the manager about the service.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00861",
+  "word": "屑",
+  "reading": "くず",
+  "romaji": "kuzu",
+  "meaning_id": "waste; scrap",
+  "meaning_en": "waste; scrap",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ラップは屑だ。",
+      "id": "Rap is crap.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "残飯の屑は害虫の住処になる。",
+      "id": "Garbage harbors vermin.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00863",
+  "word": "薬指",
+  "reading": "くすりゆび",
+  "romaji": "kusuriyubi",
+  "meaning_id": "ring finger",
+  "meaning_en": "ring finger",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼女は左手の薬指にダイヤの指輪をはめていた。",
+      "id": "She wore a diamond ring on her left third finger.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00870",
+  "word": "唇",
+  "reading": "くちびる",
+  "romaji": "kuchibiru",
+  "meaning_id": "lips",
+  "meaning_en": "lips",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "冬は唇があれます。",
+      "id": "In winter, our lips get chapped.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ナプキンで唇をきれいにしなさい。",
+      "id": "Clean your lips with the napkin.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00871",
+  "word": "口紅",
+  "reading": "くちべに",
+  "romaji": "kuchibeni",
+  "meaning_id": "lipstick",
+  "meaning_en": "lipstick",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ブライアンはケイトのために口紅を買った。",
+      "id": "Brian bought a lipstick for Kate.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼女は口紅をたくさんつけていた。",
+      "id": "There was much lipstick on her lips.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00875",
+  "word": "句読点",
+  "reading": "くとうてん",
+  "romaji": "kutouten",
+  "meaning_id": "punctuation marks",
+  "meaning_en": "punctuation marks",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "クエスチョンマークは句読点です。",
+      "id": "A question mark is a punctuation mark.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "びっくりマークは句読点です。",
+      "id": "An exclamation mark is a punctuation mark.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00878",
+  "word": "組合せ",
+  "reading": "くみあわせ",
+  "romaji": "kumiawase",
+  "meaning_id": "combination",
+  "meaning_en": "combination",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "一国にとって金融政策と財政政策の適切な組み合わせが大切である。",
+      "id": "It is important for a nation to have an adequate mix of monetary and fiscal policies.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00888",
+  "word": "郡",
+  "reading": "ぐん",
+  "romaji": "gun",
+  "meaning_id": "country; district",
+  "meaning_en": "country; district",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "これは豊能郡の地図です。",
+      "id": "Ini adalah a map of the Toyono district.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "その発電所は、その遠く離れた郡に電気を供給している。",
+      "id": "The power plant supplies the remote district with electricity.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00890",
+  "word": "敬語",
+  "reading": "けいご",
+  "romaji": "keigo",
+  "meaning_id": "honorific; term of respect",
+  "meaning_en": "honorific; term of respect",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "日本語には敬語があります。",
+      "id": "The Japanese language has honorific expressions.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "最近、目上の人に敬語を使わない若者が多い。",
+      "id": "Recently there are a lot of young people who don't use respectful language to their superiors.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00891",
+  "word": "蛍光灯",
+  "reading": "けいこうとう",
+  "romaji": "keikoutou",
+  "meaning_id": "fluorescent lamp; person who is slow to react",
+  "meaning_en": "fluorescent lamp; person who is slow to react",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ハリーは本当に蛍光灯だね。",
+      "id": "Harry's really slow to catch on.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "蛍光灯がチカチカしてるな。新しいのと交換しないとダメかな。",
+      "id": "This fluorescent lamp is starting to flicker. We'll have to replace it.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00892",
+  "word": "形式",
+  "reading": "けいしき",
+  "romaji": "keishiki",
+  "meaning_id": "form; formality",
+  "meaning_en": "form; formality; format; math expression",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼はそれを小説の形式で表した。",
+      "id": "He expressed it in the form of fiction.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "朝食はバイキング形式だって。",
+      "id": "Breakfast is a smorgasbord.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00894",
+  "word": "毛糸",
+  "reading": "けいと",
+  "romaji": "keito",
+  "meaning_id": "knitting wool",
+  "meaning_en": "knitting wool",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "赤ん坊が毛糸の玉をもつれさせた。",
+      "id": "The baby tangled the ball of yarn.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼女は毛糸でセーターを編んでいる。",
+      "id": "Dia knitting a sweater.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00895",
+  "word": "経度",
+  "reading": "けいど",
+  "romaji": "keido",
+  "meaning_id": "longitude",
+  "meaning_en": "longitude",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "赤道における経度1度当たりの長さ。",
+      "id": "Distance per degree of longitude at equator.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この線は経度を表している。",
+      "id": "This line represents the longitude.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00896",
+  "word": "系統",
+  "reading": "けいとう",
+  "romaji": "keitou",
+  "meaning_id": "system; family line",
+  "meaning_en": "system; family line; geological formation",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "システムのこの予測されなかった機能不全は不適切な配線系統によって引き起こされた。",
+      "id": "This unexpected malfunctioning of the system was caused by improper wiring.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00897",
+  "word": "芸能",
+  "reading": "げいのう",
+  "romaji": "geinou",
+  "meaning_id": "public entertainment; accomplishments",
+  "meaning_en": "public entertainment; accomplishments; attainments",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "芸能を使います。",
+      "id": "Menggunakan public entertainment; accomplishments.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00898",
+  "word": "競馬",
+  "reading": "けいば",
+  "romaji": "keiba",
+  "meaning_id": "horse racing",
+  "meaning_en": "horse racing",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ダービー競馬の日は２週間後の水曜日だ。",
+      "id": "Derby Day is Wednesday fortnight.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼は競馬で時間をむだに過ごした。",
+      "id": "He wasted his time on gambling at the horse races.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00900",
+  "word": "形容詞",
+  "reading": "けいようし",
+  "romaji": "keiyoushi",
+  "meaning_id": "true adjective",
+  "meaning_en": "true adjective",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "英語の副詞の中には形容詞の役目をするものがある。",
+      "id": "Some English adverbs function as adjectives.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "名詞を修飾するものは、形容詞または形容詞相当語句です。",
+      "id": "Things that modify nouns are adjectives or equivalent to adjectives.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00901",
+  "word": "形容動詞",
+  "reading": "けいようどうし",
+  "romaji": "keiyoudoushi",
+  "meaning_id": "adjectival noun; quasi-adjective",
+  "meaning_en": "adjectival noun; quasi-adjective",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "形容動詞を使います。",
+      "id": "Menggunakan adjectival noun; quasi-adjective.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00902",
+  "word": "外科",
+  "reading": "げか",
+  "romaji": "geka",
+  "meaning_id": "surgical department",
+  "meaning_en": "surgical department",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "外科へ行ってください。",
+      "id": "Tolong go to the Surgery Department.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼は外科手術の為入院した。",
+      "id": "He was hospitalized for a surgical operation.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00903",
+  "word": "毛皮",
+  "reading": "けがわ",
+  "romaji": "kegawa",
+  "meaning_id": "fur; skin",
+  "meaning_en": "fur; skin; pelt",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "毛皮の服を着ている。",
+      "id": "Dia garbed in furs.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "毛皮を脱いでどうぞ楽にして下さい。",
+      "id": "Take off your fur, and make yourself at home.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00906",
+  "word": "下旬",
+  "reading": "げじゅん",
+  "romaji": "gejun",
+  "meaning_id": "month (last third of)",
+  "meaning_en": "month (last third of)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "８月下旬に彼らは繁殖のために長い旅に出発します。",
+      "id": "In late August, they set off on a long journey for breeding.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "その結果、５月下旬に不安神経症や不眠症と診断された。",
+      "id": "As a result, he was diagnosed with insomnia and anxiety neurosis near the end of May.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00907",
+  "word": "下水",
+  "reading": "げすい",
+  "romaji": "gesui",
+  "meaning_id": "drainage; sewage",
+  "meaning_en": "drainage; sewage; ditch; gutter; sewerage",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "下水が完全に詰まっている。",
+      "id": "The drains are blocked up.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "下水の通りがよくなった。",
+      "id": "The drain is running freely.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00909",
+  "word": "桁",
+  "reading": "けた",
+  "romaji": "keta",
+  "meaning_id": "column; beam",
+  "meaning_en": "column; beam; digit",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "医者なら６桁の収入は珍しくない。",
+      "id": "A six-figure income is not uncommon for physicians.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この２桁は省くべきだ。",
+      "id": "You should leave out these two lines.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00910",
+  "word": "下駄",
+  "reading": "げた",
+  "romaji": "geta",
+  "meaning_id": "geta (Japanese footwear); wooden clogs",
+  "meaning_en": "geta (Japanese footwear); wooden clogs",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "下駄を突っかけて表に飛び出した。",
+      "id": "I slipped on my geta and dashed outside.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00911",
+  "word": "血圧",
+  "reading": "けつあつ",
+  "romaji": "ketsuatsu",
+  "meaning_id": "blood pressure",
+  "meaning_en": "blood pressure",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "血圧を計りましょう。",
+      "id": "Let me take your blood pressure.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "血圧は上が１５５で下が１０５です。",
+      "id": "My blood pressure is 155 over 105.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00912",
+  "word": "血液",
+  "reading": "けつえき",
+  "romaji": "ketsueki",
+  "meaning_id": "blood",
+  "meaning_en": "blood",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "赤十字は病院に血液を供給した。",
+      "id": "The Red Cross supplied the hospital with blood.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "血液は体内を循環する。",
+      "id": "Blood circulates through the body.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00913",
+  "word": "月給",
+  "reading": "げっきゅう",
+  "romaji": "gekkyuu",
+  "meaning_id": "monthly salary",
+  "meaning_en": "monthly salary",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私の月給は30万円だ。",
+      "id": "My monthly wage is 300,000 yen.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼はたくさん月給をもらっている。",
+      "id": "Dia paid a handsome monthly salary.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00914",
+  "word": "傑作",
+  "reading": "けっさく",
+  "romaji": "kessaku",
+  "meaning_id": "masterpiece; best work",
+  "meaning_en": "masterpiece; best work; boner; blunder",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "わははは！そりゃ傑作だ！",
+      "id": "A-ha-ha-ha! What a blunder!",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "あの絵画は印象派美術の傑作である。",
+      "id": "That painting is a masterpiece of impressionist art.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00916",
+  "word": "気配",
+  "reading": "けはい",
+  "romaji": "kehai",
+  "meaning_id": "indication; market trend",
+  "meaning_en": "indication; market trend; worry",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "秋の気配が感じられた。",
+      "id": "There was a hint of fall in the air.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "その家には人の気配はなかった。",
+      "id": "There was no sign of life in the house.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00923",
+  "word": "原稿",
+  "reading": "げんこう",
+  "romaji": "genkou",
+  "meaning_id": "manuscript; copy",
+  "meaning_en": "manuscript; copy",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この原稿は書き直したほうがいいな。",
+      "id": "I'd better rewrite this paper.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "編集者は原稿にさっと目を通した。",
+      "id": "The editor glanced over the manuscript.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00924",
+  "word": "原産",
+  "reading": "げんさん",
+  "romaji": "gensan",
+  "meaning_id": "place of origin; habitat",
+  "meaning_en": "place of origin; habitat",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "サツマイモは、南アメリカが原産です。",
+      "id": "The sweet potato is native to South America.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00925",
+  "word": "原始",
+  "reading": "げんし",
+  "romaji": "genshi",
+  "meaning_id": "origin; primeval",
+  "meaning_en": "origin; primeval",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その人類学者は原始文化に関する講演をした。",
+      "id": "The anthropologist delivered a lecture on primitive cultures.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "原始社会では、物々交換が行われた。",
+      "id": "In primitive societies barter was used.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00928",
+  "word": "県庁",
+  "reading": "けんちょう",
+  "romaji": "kenchou",
+  "meaning_id": "prefectural office",
+  "meaning_en": "prefectural office",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "県庁を使います。",
+      "id": "Menggunakan prefectural office.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00929",
+  "word": "限度",
+  "reading": "げんど",
+  "romaji": "gendo",
+  "meaning_id": "limit; bounds",
+  "meaning_en": "limit; bounds",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "物事には限度がある。",
+      "id": "Ada a limit to everything.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "人間の進歩には限度がない。",
+      "id": "Ada no limit to human progress.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00931",
+  "word": "顕微鏡",
+  "reading": "けんびきょう",
+  "romaji": "kenbikyou",
+  "meaning_id": "microscope",
+  "meaning_en": "microscope",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "顕微鏡の焦点を合わせなさい。",
+      "id": "Adjust the microscope's focus.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼はそのスライドを顕微鏡で見た。",
+      "id": "He looked at the slide under the microscope.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00932",
+  "word": "原理",
+  "reading": "げんり",
+  "romaji": "genri",
+  "meaning_id": "principle; theory",
+  "meaning_en": "principle; theory; fundamental truth",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "多数決原理が民主主義の根本原則だ。",
+      "id": "Majority rule is a basic principle of democracy.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼はひとつの原理を考えだした。",
+      "id": "He figured out a principle.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00933",
+  "word": "原料",
+  "reading": "げんりょう",
+  "romaji": "genryou",
+  "meaning_id": "raw materials",
+  "meaning_en": "raw materials",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "日本はいろんな原料に乏しい。",
+      "id": "Japan is lacking in raw materials.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "これはマレーシアから輸入した原料です。",
+      "id": "Ini adalah a crude material imported from Malaysia.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00934",
+  "word": "碁",
+  "reading": "ご",
+  "romaji": "go",
+  "meaning_id": "Go (board game of capturing territory)",
+  "meaning_en": "Go (board game of capturing territory)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "碁を打つことが一番の気晴らしだ。",
+      "id": "Playing go is my favorite pastime.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "父は碁をやります。",
+      "id": "Father goes in for the game of Go.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00937",
+  "word": "工員",
+  "reading": "こういん",
+  "romaji": "kouin",
+  "meaning_id": "factory worker",
+  "meaning_en": "factory worker",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は新しい工員を採用した。",
+      "id": "He hired some new workers.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00939",
+  "word": "公害",
+  "reading": "こうがい",
+  "romaji": "kougai",
+  "meaning_id": "public nuisance; pollution",
+  "meaning_en": "public nuisance; pollution",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この地域に公害はない。",
+      "id": "This district is free from environmental pollution.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "政府は公害を除去しようと努めている。",
+      "id": "The government is trying to get rid of pollution.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00941",
+  "word": "公共",
+  "reading": "こうきょう",
+  "romaji": "koukyou",
+  "meaning_id": "public; community",
+  "meaning_en": "public; community; public service; society; communal",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "公共の場所をきれいにしておこう。",
+      "id": "Let's keep public places clean.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ここは公共の乗り物が不便だ。",
+      "id": "This place isn't convenient to public transportation.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00942",
+  "word": "工芸",
+  "reading": "こうげい",
+  "romaji": "kougei",
+  "meaning_id": "industrial arts",
+  "meaning_en": "industrial arts",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "腕のいい工芸師は自分の作品に誇りを持っている。",
+      "id": "A good craftsman takes pride in his work.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00945",
+  "word": "講師",
+  "reading": "こうし",
+  "romaji": "koushi",
+  "meaning_id": "lecturer",
+  "meaning_en": "lecturer",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "講師は本題から脱線してしまった。",
+      "id": "The speaker wandered away from the subject.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "正確に言うと私は大学講師です。",
+      "id": "Specifically, I'm a university lecturer.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00947",
+  "word": "公式",
+  "reading": "こうしき",
+  "romaji": "koushiki",
+  "meaning_id": "formula; formality",
+  "meaning_en": "formula; formality; official",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は立候補することを公式に発表した。",
+      "id": "He officially announced himself as a candidate.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "まずは公式を暗記しなさい。",
+      "id": "First of all, learn the formula by heart.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00948",
+  "word": "口実",
+  "reading": "こうじつ",
+  "romaji": "koujitsu",
+  "meaning_id": "excuse",
+  "meaning_en": "excuse",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "病気を口実にして彼は来なかった。",
+      "id": "He did not come on the pretext of sickness.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼は遅刻の口実をこしらえた。",
+      "id": "He invented an excuse for being late.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00949",
+  "word": "こうして",
+  "reading": "こうして",
+  "romaji": "koushite",
+  "meaning_id": "thus",
+  "meaning_en": "thus",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "こうして私はいつも魚を料理する。",
+      "id": "Ini adalah how I usually cook fish.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "飛行船ってどんなかっこうしているの。",
+      "id": "What does an airship look like?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00950",
+  "word": "校舎",
+  "reading": "こうしゃ",
+  "romaji": "kousha",
+  "meaning_id": "school building",
+  "meaning_en": "school building",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "校舎内では走ってはいけません。",
+      "id": "You must not run in the school buildings.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "新しい校舎が建設中です。",
+      "id": "A new school building is under construction.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00951",
+  "word": "公衆",
+  "reading": "こうしゅう",
+  "romaji": "koushuu",
+  "meaning_id": "the public",
+  "meaning_en": "the public",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この建物には公衆トイレがありますか。",
+      "id": "Is there a public toilet in this building?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私は公衆の面前で演説するのに慣れてない。",
+      "id": "I am not accustomed to making speeches in public.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00952",
+  "word": "香水",
+  "reading": "こうすい",
+  "romaji": "kousui",
+  "meaning_id": "perfume",
+  "meaning_en": "perfume",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼女はいつも香水のにおいがきつすぎる。",
+      "id": "She always wears too much scent.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼女は香水の香りがきつすぎだ。",
+      "id": "She was too heavy on the perfume.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00954",
+  "word": "功績",
+  "reading": "こうせき",
+  "romaji": "kouseki",
+  "meaning_id": "achievements; merit",
+  "meaning_en": "achievements; merit; meritorious service; meritorious deed",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "イタリアンルネッサンスを開花させるきっかけを作ったのはジョットの功績だ。",
+      "id": "Giotto is credited with sowing the seeds of the Italian Renaissance.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "それはたいした功績だ。",
+      "id": "It is quite an achievement!",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00955",
+  "word": "光線",
+  "reading": "こうせん",
+  "romaji": "kousen",
+  "meaning_id": "beam; light ray",
+  "meaning_en": "beam; light ray",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "このランプは強い光線を出す。",
+      "id": "This lamp sends out a powerful beam.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "夜空に光線が見えた。",
+      "id": "We found a beam of light in the night sky.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00956",
+  "word": "高層",
+  "reading": "こうそう",
+  "romaji": "kousou",
+  "meaning_id": "upper",
+  "meaning_en": "upper",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その高層ビルの上からは町がよく見える。",
+      "id": "The roof of the high rise building overlooks the whole town.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ニューヨークには高層ビルが林立している。",
+      "id": "New York bristles with towering buildings.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00957",
+  "word": "構造",
+  "reading": "こうぞう",
+  "romaji": "kouzou",
+  "meaning_id": "structure; construction",
+  "meaning_en": "structure; construction",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "心臓の構造については中学で習う。",
+      "id": "We learn about the structure of the heart in junior high school.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この増加に加えて、世界の経済構造の変化があった。",
+      "id": "Along with this increase, there has been a change in the world's economic organization.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00959",
+  "word": "耕地",
+  "reading": "こうち",
+  "romaji": "kouchi",
+  "meaning_id": "arable land",
+  "meaning_en": "arable land",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "耕地を使います。",
+      "id": "Menggunakan arable land.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00960",
+  "word": "交通機関",
+  "reading": "こうつうきかん",
+  "romaji": "koutsuukikan",
+  "meaning_id": "transportation facilities",
+  "meaning_en": "transportation facilities",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "交通機関は何を使うんですか。",
+      "id": "What form of transport will we take?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "その町の交通機関は大変よい。",
+      "id": "The transportation system in that city is quite good.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00961",
+  "word": "校庭",
+  "reading": "こうてい",
+  "romaji": "koutei",
+  "meaning_id": "campus",
+  "meaning_en": "campus",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "校庭はたいへん小さかったです。",
+      "id": "The schoolyard was very small.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼らは校庭でしゃべっていた。",
+      "id": "They were chatting on the campus.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00963",
+  "word": "高度",
+  "reading": "こうど",
+  "romaji": "koudo",
+  "meaning_id": "altitude; height",
+  "meaning_en": "altitude; height; advanced",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この仕事は高度の熟練を必要とする。",
+      "id": "This work calls for a high degree of skill.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "これより次第に高度を下げてまいります。",
+      "id": "Kami beginning our descent.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00966",
+  "word": "後輩",
+  "reading": "こうはい",
+  "romaji": "kouhai",
+  "meaning_id": "junior (at work or school)",
+  "meaning_en": "junior (at work or school)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は私より３年後輩です。",
+      "id": "Dia my junior by three years.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "後輩にノートＰＣをかりた。",
+      "id": "I borrowed the notebook PC from the junior staff member.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00968",
+  "word": "鉱物",
+  "reading": "こうぶつ",
+  "romaji": "koubutsu",
+  "meaning_id": "mineral",
+  "meaning_en": "mineral",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "オーストラリアは鉱物が豊富だ。",
+      "id": "Australia is abundant in minerals.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "岩石や鉱物はいろいろな面で私たちに有益である。",
+      "id": "Rocks and minerals are useful for us in many ways.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00969",
+  "word": "公務",
+  "reading": "こうむ",
+  "romaji": "koumu",
+  "meaning_id": "official business; public business",
+  "meaning_en": "official business; public business",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "公務のために多くの時間がとられる。",
+      "id": "My public duties take a lot of time.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "会議のたびにノートをとることは、秘書の公務の一つです。",
+      "id": "Taking notes at each meeting is one of the official duties.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00970",
+  "word": "項目",
+  "reading": "こうもく",
+  "romaji": "koumoku",
+  "meaning_id": "item",
+  "meaning_en": "item",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "これは何の項目に入るか。",
+      "id": "What heading does this come under?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この本は何の項目に入りますか。",
+      "id": "What heading does this book come under?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00972",
+  "word": "合理",
+  "reading": "ごうり",
+  "romaji": "gouri",
+  "meaning_id": "rational",
+  "meaning_en": "rational",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "合理を使います。",
+      "id": "Menggunakan rational.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00975",
+  "word": "効力",
+  "reading": "こうりょく",
+  "romaji": "kouryoku",
+  "meaning_id": "effect; efficacy",
+  "meaning_en": "effect; efficacy; validity; potency",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その法律はもう効力はなくなっている。",
+      "id": "The law is not in effect any longer.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "今夜の１２時からその契約は効力を発する。",
+      "id": "As of midnight tonight the contract becomes effective.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00977",
+  "word": "コース",
+  "reading": "コース",
+  "romaji": "koosu",
+  "meaning_id": "course",
+  "meaning_en": "course",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "おすすめのコースはどこですか。",
+      "id": "Which course do you recommend?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "車はコースをはずれた。",
+      "id": "The car veered from its course.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00978",
+  "word": "コーラス",
+  "reading": "コーラス",
+  "romaji": "koorasu",
+  "meaning_id": "chorus",
+  "meaning_en": "chorus",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼らはみな一緒にコーラスを歌いました。",
+      "id": "They all joined in the chorus.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "誰がコーラスを指揮しますか。",
+      "id": "Who leads the chorus?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00980",
+  "word": "国王",
+  "reading": "こくおう",
+  "romaji": "kokuou",
+  "meaning_id": "king",
+  "meaning_en": "king",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "国民は歓呼して彼を国王に迎えた。",
+      "id": "The people acclaimed him King.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "今の国王が会合に出席されている。",
+      "id": "The current king is present at the party.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00981",
+  "word": "国籍",
+  "reading": "こくせき",
+  "romaji": "kokuseki",
+  "meaning_id": "nationality",
+  "meaning_en": "nationality",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "国籍に関係なくすべての人に資格がある。",
+      "id": "Everyone is eligible regardless of nationality.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "我々の真の国籍は人類である。",
+      "id": "Our true nationality is mankind.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00982",
+  "word": "国立",
+  "reading": "こくりつ",
+  "romaji": "kokuritsu",
+  "meaning_id": "national",
+  "meaning_en": "national",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "老人のための国立の病院がもっとあってしかるべきだ。",
+      "id": "There should be more national hospitals for old people.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00986",
+  "word": "心当たり",
+  "reading": "こころあたり",
+  "romaji": "kokoroatari",
+  "meaning_id": "having some knowledge of; happening to know",
+  "meaning_en": "having some knowledge of; happening to know",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その名前に心当たりある？",
+      "id": "Does that name ring a bell?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "心当たりはないよ。",
+      "id": "That doesn't ring a bell.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00988",
+  "word": "腰掛け",
+  "reading": "こしかけ",
+  "romaji": "koshikake",
+  "meaning_id": "seat; bench",
+  "meaning_en": "seat; bench",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "君が座っている腰掛けのペンキはまだ塗り立てだよ。",
+      "id": "The paint on the seat on which you are sitting is still wet.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "腰掛けのつもりだったのに、気がついたら私もこの会社で古株になってしまった。",
+      "id": "I only figured on staying with this company a little while when I started, but before I knew it I'd become an old timer here.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00990",
+  "word": "五十音",
+  "reading": "ごじゅうおん",
+  "romaji": "gojuuon",
+  "meaning_id": "the Japanese syllabary",
+  "meaning_en": "the Japanese syllabary",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "氏名は五十音順です。",
+      "id": "The names are in Japanese alphabetical order.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00991",
+  "word": "胡椒",
+  "reading": "こしょう",
+  "romaji": "koshou",
+  "meaning_id": "pepper",
+  "meaning_en": "pepper",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "コショウを入れすぎたね。",
+      "id": "You put far too much pepper in it.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "コショウで彼の口がひりひりした。",
+      "id": "Pepper burned his mouth.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00995",
+  "word": "ごぞんじですか",
+  "reading": "ごぞんじですか",
+  "romaji": "gozonjidesuka",
+  "meaning_id": "do you know? (honorific)",
+  "meaning_en": "do you know? (honorific)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この辺はよくごぞんじですか。",
+      "id": "Do you know this part of the city very well?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00996",
+  "word": "個体",
+  "reading": "こたい",
+  "romaji": "kotai",
+  "meaning_id": "an individual",
+  "meaning_en": "an individual",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "個体を使います。",
+      "id": "Menggunakan an individual.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00998",
+  "word": "小遣い",
+  "reading": "こづかい",
+  "romaji": "kozukai",
+  "meaning_id": "personal expenses; pocket money",
+  "meaning_en": "personal expenses; pocket money; spending money; incidental expenses; allowance",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "つまらないものに小遣いを使うな。",
+      "id": "Don't waste your allowance on useless things.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "小遣いの増額を父に掛け合った。",
+      "id": "I approached my father about an increase in allowance.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-00999",
+  "word": "コック",
+  "reading": "コック",
+  "romaji": "kokku",
+  "meaning_id": "cook (nl:); tap",
+  "meaning_en": "cook (nl:); tap; spigot; faucet; cock",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "コックを使います。",
+      "id": "Menggunakan cook (nl:); tap.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01001",
+  "word": "古典",
+  "reading": "こてん",
+  "romaji": "koten",
+  "meaning_id": "old book; classics",
+  "meaning_en": "old book; classics; classic",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "古典の文学書を読むことは価値のあることです。",
+      "id": "It is worthwhile reading classical works of literature.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼女は古典の教育を受けている。",
+      "id": "Dia a woman with a classical education.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01002",
+  "word": "琴",
+  "reading": "こと",
+  "romaji": "koto",
+  "meaning_id": "Koto (Japanese harp)",
+  "meaning_en": "Koto (Japanese harp)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼女は琴を弾くことがとても好きだ。",
+      "id": "She likes to play the koto very much.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01004",
+  "word": "言葉遣い",
+  "reading": "ことばづかい",
+  "romaji": "kotobazukai",
+  "meaning_id": "speech; expression",
+  "meaning_en": "speech; expression; wording",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "言葉遣いにはいつも気をつけるべきです。",
+      "id": "You should always be careful in your speech.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "あの子供たちは言葉使いが悪い。",
+      "id": "Those children use bad words.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01009",
+  "word": "ゴム",
+  "reading": "ゴム",
+  "romaji": "gomu",
+  "meaning_id": "gum; rubber",
+  "meaning_en": "gum; rubber; eraser",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ゴムを使います。",
+      "id": "Menggunakan gum; rubber.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01010",
+  "word": "御免",
+  "reading": "ごめん",
+  "romaji": "gomen",
+  "meaning_id": "your pardon; declining (something)",
+  "meaning_en": "your pardon; declining (something); dismissal; permission",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "待たせてごめん。",
+      "id": "Sorry to have kept you waiting.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "自分の手を汚すようなことだけはごめんだ。",
+      "id": "I don't want to get my hands dirty.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01012",
+  "word": "小指",
+  "reading": "こゆび",
+  "romaji": "koyubi",
+  "meaning_id": "little finger",
+  "meaning_en": "little finger",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "小指がはれました。",
+      "id": "My little finger is swollen.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "足の小指が痛むんだ。",
+      "id": "I have a pain in my little toe.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01015",
+  "word": "御覧",
+  "reading": "ごらん",
+  "romaji": "goran",
+  "meaning_id": "(honorific) look; inspection",
+  "meaning_en": "(honorific) look; inspection; try",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あの木のてっぺんを見てごらん。",
+      "id": "Look at the top of that tree.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "辞書のその文字をご覧。",
+      "id": "Look up the word in the dictionary.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01019",
+  "word": "紺",
+  "reading": "こん",
+  "romaji": "kon",
+  "meaning_id": "navy blue; deep blue",
+  "meaning_en": "navy blue; deep blue",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "医者は紺のスーツの上に白衣を着ていた。",
+      "id": "The doctor was wearing a white coat over a blue suit.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01020",
+  "word": "コンクール",
+  "reading": "コンクール",
+  "romaji": "konkuuru",
+  "meaning_id": "contest (fr: concours)",
+  "meaning_en": "contest (fr: concours)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私はそのコンクールに参加した。",
+      "id": "I took part in the contest.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ピアノ・コンクールで私が第１位になるなんて夢想だにしなかった。",
+      "id": "Never did I dream that I would take first place in the piano contest.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01021",
+  "word": "コンクリート",
+  "reading": "コンクリート",
+  "romaji": "konkuriito",
+  "meaning_id": "concrete",
+  "meaning_en": "concrete",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "土台はコンクリートで固められている。",
+      "id": "The foundation is bedded in concrete.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼はコンクリートも発明したと言われている。",
+      "id": "It is said that he also invented concrete.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01023",
+  "word": "コンセント",
+  "reading": "コンセント",
+  "romaji": "konsento",
+  "meaning_id": "electrical outlet; power point",
+  "meaning_en": "electrical outlet; power point; socket",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼はラジオをコンセントにつないだ。",
+      "id": "He plugged in the radio.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01024",
+  "word": "献立",
+  "reading": "こんだて",
+  "romaji": "kondate",
+  "meaning_id": "menu; program",
+  "meaning_en": "menu; program; schedule",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "それほど多くの人々のための料理の献立を考えるのはむずかしい。",
+      "id": "It is difficult planning meals for so many people.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01025",
+  "word": "サークル",
+  "reading": "サークル",
+  "romaji": "saakuru",
+  "meaning_id": "circle; sports club (i.e. at a company)",
+  "meaning_en": "circle; sports club (i.e. at a company)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "サークルを使います。",
+      "id": "Menggunakan circle; sports club (i.e. at a company).",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01028",
+  "word": "祭日",
+  "reading": "さいじつ",
+  "romaji": "saijitsu",
+  "meaning_id": "national holiday; festival day",
+  "meaning_en": "national holiday; festival day",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "今度の祭日は日曜日と重なります。",
+      "id": "The next holiday falls on a Sunday.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "祭日が日曜にダブると月曜が休みになる。",
+      "id": "When a holiday falls on Sunday, we have an extra holiday on Monday.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01031",
+  "word": "災難",
+  "reading": "さいなん",
+  "romaji": "sainan",
+  "meaning_id": "calamity; misfortune",
+  "meaning_en": "calamity; misfortune",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "人生に災難は付き物。",
+      "id": "Accidents will happen.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "まずその災難の原因を確かめよう。",
+      "id": "We will first ascertain the cause of the disaster.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01033",
+  "word": "材木",
+  "reading": "ざいもく",
+  "romaji": "zaimoku",
+  "meaning_id": "lumber; timber",
+  "meaning_en": "lumber; timber",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ひろしは材木をひいて板にしています。",
+      "id": "Hiroshi is sawing the wood into boards.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "その船には石炭や材木などが積まれていた。",
+      "id": "The vessel was loaded with coal, lumber, and so on.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01034",
+  "word": "サイレン",
+  "reading": "サイレン",
+  "romaji": "sairen",
+  "meaning_id": "siren",
+  "meaning_en": "siren",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "サイレンが急変を知らせました。",
+      "id": "The siren sounded an emergency.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "正午のサイレンが鳴っている。",
+      "id": "The noon siren is blowing.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01039",
+  "word": "酒場",
+  "reading": "さかば",
+  "romaji": "sakaba",
+  "meaning_id": "bar; bar-room",
+  "meaning_en": "bar; bar-room",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼はその酒場で歯医者に成りすましていた。",
+      "id": "He posed as a dentist at that bar.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "労働者たちはくつろげる酒場に集まることが好きである。",
+      "id": "The workers like to gather in a pub where they can let their hair down.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01043",
+  "word": "索引",
+  "reading": "さくいん",
+  "romaji": "sakuin",
+  "meaning_id": "index; indices",
+  "meaning_en": "index; indices",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その本には索引がついていますか。",
+      "id": "Is there an index to the book?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01044",
+  "word": "作者",
+  "reading": "さくしゃ",
+  "romaji": "sakusha",
+  "meaning_id": "author; authoress",
+  "meaning_en": "author; authoress",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その小説の作者は誰でしょうか。",
+      "id": "Who is the author of the novel?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この小説の作者はだれだと思いますか。",
+      "id": "Who do you think is the writer of this novel?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01051",
+  "word": "匙",
+  "reading": "さじ",
+  "romaji": "saji",
+  "meaning_id": "spoon",
+  "meaning_en": "spoon",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私たちはさじでスープを飲む。",
+      "id": "We eat soup with a spoon.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01052",
+  "word": "座敷",
+  "reading": "ざしき",
+  "romaji": "zashiki",
+  "meaning_id": "tatami room",
+  "meaning_en": "tatami room",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "座敷を使います。",
+      "id": "Menggunakan tatami room.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01053",
+  "word": "差し支え",
+  "reading": "さしつかえ",
+  "romaji": "sashitsukae",
+  "meaning_id": "hindrance; impediment",
+  "meaning_en": "hindrance; impediment",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その家は理想的とはいえないが、まぁさしつかえはない。",
+      "id": "The house is not ideal, but it's all right.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01055",
+  "word": "刺身",
+  "reading": "さしみ",
+  "romaji": "sashimi",
+  "meaning_id": "sliced raw fish",
+  "meaning_en": "sliced raw fish",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "刺し身は好きではないのでしょう。",
+      "id": "You don't like sashimi, do you?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "夕食には刺し身をつくりましょう。",
+      "id": "I'll prepare sashimi for dinner.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01062",
+  "word": "雑音",
+  "reading": "ざつおん",
+  "romaji": "zatsuon",
+  "meaning_id": "noise (jarring, grating)",
+  "meaning_en": "noise (jarring, grating)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ラジオに雑音が入る。",
+      "id": "The radio is disturbed by noises.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "雑音のせいで仕事に集中できません。",
+      "id": "I can't concentrate on my work because of the noise.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01065",
+  "word": "錆",
+  "reading": "さび",
+  "romaji": "sabi",
+  "meaning_id": "rust (colour)",
+  "meaning_en": "rust (colour)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この車は錆に強い。",
+      "id": "This car is resistant to rust.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼はやすりで錆を落とした。",
+      "id": "He rubbed the rust off with a file.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01067",
+  "word": "座布団",
+  "reading": "ざぶとん",
+  "romaji": "zabuton",
+  "meaning_id": "cushion (Japanese)",
+  "meaning_en": "cushion (Japanese)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この座布団を干して下さい。",
+      "id": "Tolong air the zabuton.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "お祖母さんが座布団の上にちんまりとすわっていました。",
+      "id": "The old woman was snugly sitting on a cushion.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01070",
+  "word": "サラリーマン",
+  "reading": "サラリーマン",
+  "romaji": "sarariiman",
+  "meaning_id": "salary man; company employee",
+  "meaning_en": "salary man; company employee",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "なあに、しがないサラリーマンですよ。",
+      "id": "Me? I'm a plain old salaryman.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼は普通のサラリーマンだ。",
+      "id": "He's just an ordinary office worker.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01073",
+  "word": "三角",
+  "reading": "さんかく",
+  "romaji": "sankaku",
+  "meaning_id": "triangle; triangular",
+  "meaning_en": "triangle; triangular",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "どうやったら三角のおにぎりができるの？何度やっても丸いおにぎりしかできないよ。",
+      "id": "How do you make a triangle-shaped onigiri? No matter how many times I try I can only make round onigiri.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01074",
+  "word": "算数",
+  "reading": "さんすう",
+  "romaji": "sansuu",
+  "meaning_id": "arithmetic",
+  "meaning_en": "arithmetic",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "算数は数を取り扱う。",
+      "id": "Arithmetic deals with numbers.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "その子は算数ならどんな問題でも解ける。",
+      "id": "The boy can solve any problem in arithmetic.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01075",
+  "word": "酸性",
+  "reading": "さんせい",
+  "romaji": "sansei",
+  "meaning_id": "acidity",
+  "meaning_en": "acidity",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "パイナップルやレモンのような酸性の果実はすっぱい。",
+      "id": "Acid fruits like pineapples and lemons are sour.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "小学校のときから、酸性・アルカリ性という性質をリトマス紙で調べたりしてきていますね。",
+      "id": "Since primary school we've been checking for the qualities known as acidity and alkalinity with litmus paper.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01076",
+  "word": "産地",
+  "reading": "さんち",
+  "romaji": "sanchi",
+  "meaning_id": "producing area",
+  "meaning_en": "producing area",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その地方はお茶の産地です。",
+      "id": "The region is a production center for tea leaves.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01077",
+  "word": "サンプル",
+  "reading": "サンプル",
+  "romaji": "sanpuru",
+  "meaning_id": "sample",
+  "meaning_en": "sample",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ＤＮＡのサンプルを貯える事は許されるべきではない。",
+      "id": "It shouldn't be permitted to store samples of DNA.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "サンプルは世界２００の医療機関から収集された。",
+      "id": "The samples were collected from two hundred medical institutions all over the world.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01078",
+  "word": "山林",
+  "reading": "さんりん",
+  "romaji": "sanrin",
+  "meaning_id": "mountain forest; mountains and forest",
+  "meaning_en": "mountain forest; mountains and forest",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "山林を使います。",
+      "id": "Menggunakan mountain forest; mountains and forest.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01081",
+  "word": "シーズン",
+  "reading": "シーズン",
+  "romaji": "shiizun",
+  "meaning_id": "season (sporting)",
+  "meaning_en": "season (sporting)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "まもなく野球シーズンが始まる。",
+      "id": "The baseball season opens before long.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私はＸ—ファイル４シーズンを見ました。",
+      "id": "I watched the 4th season of X-files.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01082",
+  "word": "シーツ",
+  "reading": "シーツ",
+  "romaji": "shiitsu",
+  "meaning_id": "sheet",
+  "meaning_en": "sheet",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼女はベッドにきれいなシーツを敷いた。",
+      "id": "She put clean sheets on the bed.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ベッドの上にシーツが２枚あった。",
+      "id": "Two sheets were on the bed.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01083",
+  "word": "寺院",
+  "reading": "じいん",
+  "romaji": "jiin",
+  "meaning_id": "temple",
+  "meaning_en": "temple",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この寺院は７８０年に建てられた。",
+      "id": "This temple dates back to 780.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "京都は古い寺院で有名である。",
+      "id": "Kyoto is famous for its old temples.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01084",
+  "word": "しいんと",
+  "reading": "しいんと",
+  "romaji": "shiinto",
+  "meaning_id": "silent (as the grave); (deathly) quiet",
+  "meaning_en": "silent (as the grave); (deathly) quiet",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "叔父の死因は癌だったそうです。",
+      "id": "I hear my uncle died of cancer.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼の死因はガンだった。",
+      "id": "He died of cancer.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01090",
+  "word": "時間割",
+  "reading": "じかんわり",
+  "romaji": "jikanwari",
+  "meaning_id": "timetable; schedule",
+  "meaning_en": "timetable; schedule",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私たちは時間割に従って勉強する。",
+      "id": "We study according to the schedule.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "時間割をもらえますか。",
+      "id": "May I have a class schedule?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01091",
+  "word": "四季",
+  "reading": "しき",
+  "romaji": "shiki",
+  "meaning_id": "four seasons",
+  "meaning_en": "four seasons",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "四季のうちで春が一番好きだ。",
+      "id": "Spring is my favourite of the four seasons.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "一年には四季があります。",
+      "id": "Ada four seasons in a year.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01092",
+  "word": "敷地",
+  "reading": "しきち",
+  "romaji": "shikichi",
+  "meaning_id": "site",
+  "meaning_en": "site",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼らは石を並べて家の敷地の境界にした。",
+      "id": "They marked off the land for their house with rows of stones.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "学校の敷地はこの垣根まで続いている。",
+      "id": "The school grounds extend as far as this fence.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01093",
+  "word": "至急",
+  "reading": "しきゅう",
+  "romaji": "shikyuu",
+  "meaning_id": "urgent; pressing",
+  "meaning_en": "urgent; pressing",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼女は私に至急電報を打ってきた。",
+      "id": "She sent me an urgent telegram.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "至急電報が彼女を大急ぎで東京に連れ戻した。",
+      "id": "An urgent telegram brought her hurrying back to Tokyo.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01097",
+  "word": "磁石",
+  "reading": "じしゃく",
+  "romaji": "jishaku",
+  "meaning_id": "magnet",
+  "meaning_en": "magnet",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "キートンはハトの頭に磁石を取り付けた。",
+      "id": "Keeton put magnets on the heads of his pigeons.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "磁石の針は北を指す。",
+      "id": "Compass needles point to the north.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01102",
+  "word": "姿勢",
+  "reading": "しせい",
+  "romaji": "shisei",
+  "meaning_id": "attitude; posture",
+  "meaning_en": "attitude; posture",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼はまっすぐな姿勢で立っていた。",
+      "id": "He stood in an upright position.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼は楽な姿勢で横になった。",
+      "id": "He lay down in a comfortable position.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01103",
+  "word": "自然科学",
+  "reading": "しぜんかがく",
+  "romaji": "shizenkagaku",
+  "meaning_id": "natural science",
+  "meaning_en": "natural science",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その大学の課程は自然科学と社会科学から成り立っている。",
+      "id": "That university's curriculum covers natural science and social science.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "娘は言語や芸術よりも自然科学が好きです。",
+      "id": "My daughter prefers science to languages or art.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01104",
+  "word": "時速",
+  "reading": "じそく",
+  "romaji": "jisoku",
+  "meaning_id": "speed (per hour)",
+  "meaning_en": "speed (per hour)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この車は時速６０キロで走っている。",
+      "id": "This car is going 60km an hour.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼は時速８０キロで車を運転した。",
+      "id": "He drove the car at eighty kilometers an hour.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01105",
+  "word": "子孫",
+  "reading": "しそん",
+  "romaji": "shison",
+  "meaning_id": "descendants; posterity",
+  "meaning_en": "descendants; posterity; offspring",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "子孫にきれいな、緑の地球を残したい。",
+      "id": "We want to leave our descendants a clean and green earth.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "もし核戦争になったら、われわれの子孫はどうなるのでしょう。",
+      "id": "What will become of our offspring if a nuclear war breaks out?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01106",
+  "word": "死体",
+  "reading": "したい",
+  "romaji": "shitai",
+  "meaning_id": "corpse",
+  "meaning_en": "corpse",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "警官たちはその死体を運び去った。",
+      "id": "The policemen carried away the body.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "これが死体の発見された部屋です。",
+      "id": "Ini adalah the room where the body was found.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01108",
+  "word": "下町",
+  "reading": "したまち",
+  "romaji": "shitamachi",
+  "meaning_id": "Shitamachi; lower parts of town",
+  "meaning_en": "Shitamachi; lower parts of town",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼女は下町で生まれ育った。",
+      "id": "She was born and brought up on the backstreets.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ディッケンズの考えが、ロンドンの下町の生き生きした描写と共に読者には伝わる。",
+      "id": "Dickens' thoughts come across along with the vivid depiction of old London.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01109",
+  "word": "自治",
+  "reading": "じち",
+  "romaji": "jichi",
+  "meaning_id": "self-government; autonomy",
+  "meaning_en": "self-government; autonomy",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その教師は学生自治委員会の決定を支持した。",
+      "id": "The teacher affirmed the decision of the student council.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01110",
+  "word": "実感",
+  "reading": "じっかん",
+  "romaji": "jikkan",
+  "meaning_id": "feelings (actual, true)",
+  "meaning_en": "feelings (actual, true)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "オーストラリアへ行って初めて、日本はなんと小さい国かと実感した。",
+      "id": "I didn't realize till I visited Australia how small Japan really is.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "動けるようになると健康の有難さを実感しますよね。",
+      "id": "It's when you become able to move that the real value of health hits home.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01111",
+  "word": "湿気",
+  "reading": "しっけ",
+  "romaji": "shikke",
+  "meaning_id": "moisture; humidity",
+  "meaning_en": "moisture; humidity; dampness",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "夏はとても湿気が多いんです。",
+      "id": "In the summer, it's very humid.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "当地の夏はひどく湿気が多い。",
+      "id": "It gets very humid here in the summer.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01114",
+  "word": "湿度",
+  "reading": "しつど",
+  "romaji": "shitsudo",
+  "meaning_id": "level of humidity",
+  "meaning_en": "level of humidity",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ニューヨークの天候は、夏は暑く湿度も高い。",
+      "id": "New York weather is hot and humid in the summer.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "暑かった。その上湿度が高かった。",
+      "id": "It was hot, and in addition, it was humid.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01116",
+  "word": "実物",
+  "reading": "じつぶつ",
+  "romaji": "jitsubutsu",
+  "meaning_id": "real thing; original",
+  "meaning_en": "real thing; original",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あの彼の写真は実物より悪く撮れている。",
+      "id": "That picture does not do justice to him.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "これは実物そっくりだ、生き写しだ。",
+      "id": "Ini adalah the spitting image of the real thing, perfectly true to life.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01117",
+  "word": "しっぽ",
+  "reading": "しっぽ",
+  "romaji": "shippo",
+  "meaning_id": "tail (animal)",
+  "meaning_en": "tail (animal)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その犬はしっぽを振っていた。",
+      "id": "The dog was wagging his tail.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "子犬がしっぽをふってついてきた。",
+      "id": "A puppy followed me wagging its tail.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01118",
+  "word": "実用",
+  "reading": "じつよう",
+  "romaji": "jitsuyou",
+  "meaning_id": "practical use; utility",
+  "meaning_en": "practical use; utility",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "そのような技術は多くの実用が可能であろう。",
+      "id": "Such skills could be put to many practical uses.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "実用性と芸術性が相まって住みよい家ができる。",
+      "id": "Practical utility and artistic beauty combine to make a comfortable house to live in.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01119",
+  "word": "実力",
+  "reading": "じつりょく",
+  "romaji": "jitsuryoku",
+  "meaning_id": "merit; efficiency",
+  "meaning_en": "merit; efficiency; arms; force",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "けっきょく、実力が勝つ。",
+      "id": "Real ability wins in the end.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼はメキメキ英語の実力をつけている。",
+      "id": "Dia making great progress in English.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01120",
+  "word": "実例",
+  "reading": "じつれい",
+  "romaji": "jitsurei",
+  "meaning_id": "example; illustration",
+  "meaning_en": "example; illustration",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "実例は教訓にまさる。",
+      "id": "Example is better than precept.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼は私に実例をあたえてくれた。",
+      "id": "He gave me an example.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01123",
+  "word": "私鉄",
+  "reading": "してつ",
+  "romaji": "shitetsu",
+  "meaning_id": "private railway",
+  "meaning_en": "private railway",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私鉄を使います。",
+      "id": "Menggunakan private railway.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01124",
+  "word": "児童",
+  "reading": "じどう",
+  "romaji": "jidou",
+  "meaning_id": "children; juvenile",
+  "meaning_en": "children; juvenile",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その学校の児童はみんなその新しい先生になついた。",
+      "id": "Every child in the school took to the new teacher.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "児童はみんなその新しい先生が好きになった。",
+      "id": "Every child took to the new teacher.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01126",
+  "word": "地盤",
+  "reading": "じばん",
+  "romaji": "jiban",
+  "meaning_id": "(the) ground",
+  "meaning_en": "(the) ground",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "地盤を使います。",
+      "id": "Menggunakan (the) ground.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01128",
+  "word": "紙幣",
+  "reading": "しへい",
+  "romaji": "shihei",
+  "meaning_id": "paper money; notes",
+  "meaning_en": "paper money; notes; bills",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "５ポンド紙幣をお持ちですか。",
+      "id": "Do you have a five-pound note?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "紙幣が合計５０枚になる。",
+      "id": "The bill amounts to fifty dollars.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01131",
+  "word": "縞",
+  "reading": "しま",
+  "romaji": "shima",
+  "meaning_id": "stripe",
+  "meaning_en": "stripe",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あのグリーンの縞のシャツ、今洗濯してるん？",
+      "id": "Is that green striped shirt in the wash?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01134",
+  "word": "氏名",
+  "reading": "しめい",
+  "romaji": "shimei",
+  "meaning_id": "full name; identity",
+  "meaning_en": "full name; identity",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この封筒に住所・氏名を書きなさい。",
+      "id": "Write your name and address on this envelope.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "あなたの氏名は何ですか。",
+      "id": "What is your name?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01135",
+  "word": "締切",
+  "reading": "しめきり",
+  "romaji": "shimekiri",
+  "meaning_id": "closing; cut-off",
+  "meaning_en": "closing; cut-off; end; deadline; Closed; No Entrance",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私はいつも締め切りを守っている。",
+      "id": "I always keep my deadlines.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "締め切りに間に合わせるために、私は夜通し働いた。",
+      "id": "I worked all night so as to meet the deadline.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01138",
+  "word": "ジャーナリスト",
+  "reading": "ジャーナリスト",
+  "romaji": "jaanarisuto",
+  "meaning_id": "journalist",
+  "meaning_en": "journalist",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "そのジャーナリストはいわゆる国際人だ。",
+      "id": "The journalist is what you call a cosmopolitan.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ジャーナリストになりたいんです。",
+      "id": "I hope to be a journalist.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01139",
+  "word": "社会科学",
+  "reading": "しゃかいかがく",
+  "romaji": "shakaikagaku",
+  "meaning_id": "social science",
+  "meaning_en": "social science",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その大学の課程は自然科学と社会科学から成り立っている。",
+      "id": "That university's curriculum covers natural science and social science.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01141",
+  "word": "蛇口",
+  "reading": "じゃぐち",
+  "romaji": "jaguchi",
+  "meaning_id": "faucet; tap",
+  "meaning_en": "faucet; tap",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この蛇口は使えません。故障しています。",
+      "id": "You can't use this faucet. It's out of order.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "水が壊れた蛇口から吹き出した。",
+      "id": "Water spouted from the broken faucet.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01142",
+  "word": "弱点",
+  "reading": "じゃくてん",
+  "romaji": "jakuten",
+  "meaning_id": "weak point; weakness",
+  "meaning_en": "weak point; weakness",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "数学は彼女の弱点です。",
+      "id": "Mathematics is her weak point.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼女はその男の弱点につけいった。",
+      "id": "She presumed on his weakness.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01143",
+  "word": "車庫",
+  "reading": "しゃこ",
+  "romaji": "shako",
+  "meaning_id": "garage; car shed",
+  "meaning_en": "garage; car shed",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私は車庫付きの家を借りた。",
+      "id": "I rented a house with a garage.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼は車をバックさせて車庫に入れた。",
+      "id": "He backed his car into the garage.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01144",
+  "word": "車掌",
+  "reading": "しゃしょう",
+  "romaji": "shashou",
+  "meaning_id": "(train) conductor",
+  "meaning_en": "(train) conductor",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "オレンジカードは車掌が販売している。",
+      "id": "\"Orange Cards\" are available from the conductor.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "車掌さん。次の町ってどこですか？",
+      "id": "Say, Conductor! What's the next town?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01146",
+  "word": "社説",
+  "reading": "しゃせつ",
+  "romaji": "shasetsu",
+  "meaning_id": "editorial; leading article",
+  "meaning_en": "editorial; leading article",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "今朝の新聞の社説を読みましたか。",
+      "id": "Have you read the leading article in today's paper?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "今日の社説でそれを読んだ。",
+      "id": "I read it in today's edition.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01148",
+  "word": "シャッター",
+  "reading": "シャッター",
+  "romaji": "shattaa",
+  "meaning_id": "shutter",
+  "meaning_en": "shutter",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "シャッターを押してくれますか。",
+      "id": "Could you press this button?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "これがシャッターです。押すだけです。",
+      "id": "The shutter's over here. All you have to do is press it.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01150",
+  "word": "車輪",
+  "reading": "しゃりん",
+  "romaji": "sharin",
+  "meaning_id": "(car) wheel",
+  "meaning_en": "(car) wheel",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "一輪車は車輪がひとつしかありません。",
+      "id": "A unicycle has only one wheel.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "車輪はゆっくり転がり始めた。",
+      "id": "The wheel began to roll slowly.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01151",
+  "word": "洒落",
+  "reading": "しゃれ",
+  "romaji": "share",
+  "meaning_id": "joke; pun",
+  "meaning_en": "joke; pun; witticism",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "非常にうまい洒落だったので、満場爆笑した。",
+      "id": "It was such a nice joke that everybody burst out laughing.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私たちはその教授が昔から言っているしゃれにうんざりしている。",
+      "id": "Kami tired of the professor's old joke.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01157",
+  "word": "習字",
+  "reading": "しゅうじ",
+  "romaji": "shuuji",
+  "meaning_id": "penmanship",
+  "meaning_en": "penmanship",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "手本を見ながら習字をしました。",
+      "id": "I practiced calligraphy by looking at examples.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01159",
+  "word": "重体",
+  "reading": "じゅうたい",
+  "romaji": "juutai",
+  "meaning_id": "seriously ill; serious condition",
+  "meaning_en": "seriously ill; serious condition; critical state",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その患者は重態だ。",
+      "id": "The patient is in critical condition.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "メアリーは重態だ。死にかけているのではないだろうか。",
+      "id": "Mary is very ill and I'm afraid she is dying.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01160",
+  "word": "じゅうたん",
+  "reading": "じゅうたん",
+  "romaji": "juutan",
+  "meaning_id": "carpet",
+  "meaning_en": "carpet",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "猫はじゅうたんをひっかき始めた。",
+      "id": "The cat started to scratch the carpet.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "新しいじゅうたんが欲しい。",
+      "id": "We want a new carpet.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01161",
+  "word": "終点",
+  "reading": "しゅうてん",
+  "romaji": "shuuten",
+  "meaning_id": "terminus; last stop (e.g train)",
+  "meaning_en": "terminus; last stop (e.g train)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この線の終点はどこですか。",
+      "id": "Where is the end of this line?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "車がいかれるかと思ったころ終点に着きました。",
+      "id": "We reached our destination just as I thought the car was going to give up the ghost.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01162",
+  "word": "重点",
+  "reading": "じゅうてん",
+  "romaji": "juuten",
+  "meaning_id": "important point; lay stress on",
+  "meaning_en": "important point; lay stress on; colon; emphasis",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "このショーではロボットに重点がおかれている。",
+      "id": "In this show, the accent is on robots.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この辞書は特に語法に重点を置いている。",
+      "id": "This dictionary puts a special emphasis on usage.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01164",
+  "word": "周辺",
+  "reading": "しゅうへん",
+  "romaji": "shuuhen",
+  "meaning_id": "circumference; outskirts",
+  "meaning_en": "circumference; outskirts; environs; (computer) peripheral",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "北極圏とは北極周辺の地域の事である。",
+      "id": "The Arctic is the area round the North Pole.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ケイトのお父さんは家の周辺にいる。",
+      "id": "Kate's father is about the house.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01165",
+  "word": "重役",
+  "reading": "じゅうやく",
+  "romaji": "juuyaku",
+  "meaning_id": "director; high executive",
+  "meaning_en": "director; high executive",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼はどこかの会社の重役に違いない。",
+      "id": "One must be an executive in some company.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "われわれは重役と向かい合って座った。",
+      "id": "We sat face to face with executives.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01167",
+  "word": "重量",
+  "reading": "じゅうりょう",
+  "romaji": "juuryou",
+  "meaning_id": "weight; heavyweight boxer",
+  "meaning_en": "weight; heavyweight boxer",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "体積が大きいからといって常に重量も重いとは限らない。",
+      "id": "Great bulk does not always mean great weight.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "このバッグは４キロの重量オーバーです。",
+      "id": "This bag is 4 kilograms overweight.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01168",
+  "word": "重力",
+  "reading": "じゅうりょく",
+  "romaji": "juuryoku",
+  "meaning_id": "gravity",
+  "meaning_en": "gravity",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "月の重力は地球の６分の１である。",
+      "id": "The gravity of the moon is one-sixth of that of the earth.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "重力が物を地球の中心に引っ張っている。",
+      "id": "Gravity pulls things toward the center of the earth.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01169",
+  "word": "熟語",
+  "reading": "じゅくご",
+  "romaji": "jukugo",
+  "meaning_id": "idiom; idiomatic phrase",
+  "meaning_en": "idiom; idiomatic phrase; kanji compound",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "できるだけたくさん熟語を暗記しなさい。",
+      "id": "Learn as many idioms as possible by heart.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "今まで私たちは熟語をいくつ勉強しましたか。",
+      "id": "How many idioms have we studied so far?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01170",
+  "word": "祝日",
+  "reading": "しゅくじつ",
+  "romaji": "shukujitsu",
+  "meaning_id": "national holiday",
+  "meaning_en": "national holiday",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その日は国会の法令によって祝日になった。",
+      "id": "That day was made a holiday by an act of the diet.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私たちは国民の祝日に旗を立てる。",
+      "id": "We put up the flags on national holidays.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01173",
+  "word": "主語",
+  "reading": "しゅご",
+  "romaji": "shugo",
+  "meaning_id": "(gram) subject",
+  "meaning_en": "(gram) subject",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "文には普通、主語と動詞がある。",
+      "id": "A sentence normally has a subject and a verb.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "英語の文構造は大抵、主語、動詞、目的語／補語だ。",
+      "id": "In English, the usual sentence structure is Subject - Verb - Object/Complement.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01175",
+  "word": "述語",
+  "reading": "じゅつご",
+  "romaji": "jutsugo",
+  "meaning_id": "predicate",
+  "meaning_en": "predicate",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "述語を使います。",
+      "id": "Menggunakan predicate.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01177",
+  "word": "寿命",
+  "reading": "じゅみょう",
+  "romaji": "jumyou",
+  "meaning_id": "life span",
+  "meaning_en": "life span",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "これらの発見のおかげで人間の寿命が以前の２倍になった。",
+      "id": "Thanks to these discoveries, man's life span has become twice as long as before.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "作動温度が高いと、潤滑剤の寿命は短くなる。",
+      "id": "High operating temperatures shorten lubricant life.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01178",
+  "word": "主役",
+  "reading": "しゅやく",
+  "romaji": "shuyaku",
+  "meaning_id": "leading part; leading actor (actress)",
+  "meaning_en": "leading part; leading actor (actress)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ケイトは映画で主役を演じる機会を与えられました。",
+      "id": "Kate has been given an opportunity to play a major role in a movie.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ボブは今度の学園祭で初めて主役を演じる。",
+      "id": "Bob will play the leading role for the first time in the next school festival.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01179",
+  "word": "受話器",
+  "reading": "じゅわき",
+  "romaji": "juwaki",
+  "meaning_id": "(telephone) receiver",
+  "meaning_en": "(telephone) receiver",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は急いで受話器を置いた。",
+      "id": "He put the phone down in haste.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼は座るとすぐに受話器をとった。",
+      "id": "As soon as he sat down, he picked up the telephone.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01181",
+  "word": "巡査",
+  "reading": "じゅんさ",
+  "romaji": "junsa",
+  "meaning_id": "police; policeman",
+  "meaning_en": "police; policeman",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "すぐに巡査が呼びにやられた。",
+      "id": "A policeman was sent for at once.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "巡査はいつものように夜間の巡回中だった。",
+      "id": "The policeman was on his usual nightly round.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01183",
+  "word": "順序",
+  "reading": "じゅんじょ",
+  "romaji": "junjo",
+  "meaning_id": "order; sequence",
+  "meaning_en": "order; sequence; procedure",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "まずご両親に話してみるのが順序というものだろう。",
+      "id": "First of all, you should talk it over with your parents.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "何をするにも順序を踏んでやりなさい。",
+      "id": "No matter what you do, you must follow the correct order.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01187",
+  "word": "小学生",
+  "reading": "しょうがくせい",
+  "romaji": "shougakusei",
+  "meaning_id": "grade school student",
+  "meaning_en": "grade school student",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼らはそのころ小学生でした。",
+      "id": "They were school children then.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼はまるで小学生のように赤くなった。",
+      "id": "He reddened like a schoolboy.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01189",
+  "word": "将棋",
+  "reading": "しょうぎ",
+  "romaji": "shougi",
+  "meaning_id": "Japanese chess",
+  "meaning_en": "Japanese chess",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "いつ来てくださっても、将棋の相手をしますよ。",
+      "id": "No matter when you come, I'll play a game of Japanese chess with you.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私は将棋をすることが好きだ。",
+      "id": "I'm fond of playing shogi.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01190",
+  "word": "蒸気",
+  "reading": "じょうき",
+  "romaji": "jouki",
+  "meaning_id": "steam; vapour",
+  "meaning_en": "steam; vapour",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "そのエンジンは蒸気で動く。",
+      "id": "The engine is driven by steam.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "蒸気でメガネが曇ってしまった。",
+      "id": "The steam has fogged my glasses.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01191",
+  "word": "定規",
+  "reading": "じょうぎ",
+  "romaji": "jougi",
+  "meaning_id": "(measuring) ruler",
+  "meaning_en": "(measuring) ruler",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私は本を買い、彼は定規を買った。",
+      "id": "I bought a book and he a ruler.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "定規は直線を引くのに役立つ。",
+      "id": "A ruler helps one to draw a straight line.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01192",
+  "word": "上級",
+  "reading": "じょうきゅう",
+  "romaji": "joukyuu",
+  "meaning_id": "advanced level; high grade",
+  "meaning_en": "advanced level; high grade; senior",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この辞書は初級者に、いやそれどころか上級者にも役に立つ。",
+      "id": "This dictionary is useful to beginners, yes, and to advanced learners.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "例えば、私は、来年進学する大学の単位が実際にもらえる数学の上級クラスにいます。",
+      "id": "For example, I am in a high-level math class that actually gives me college credits for next year.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01193",
+  "word": "商業",
+  "reading": "しょうぎょう",
+  "romaji": "shougyou",
+  "meaning_id": "commerce; trade",
+  "meaning_en": "commerce; trade; business",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "英語は商業において役に立つ。",
+      "id": "English is useful in commerce.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "その手紙は商業用語で書かれた。",
+      "id": "The letter was written using business terms.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01195",
+  "word": "賞金",
+  "reading": "しょうきん",
+  "romaji": "shoukin",
+  "meaning_id": "prize; monetary award",
+  "meaning_en": "prize; monetary award",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "協力者に対しては賞金が出ます。",
+      "id": "You'll get a reward for your cooperation.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼は賞金を銀行に預金した。",
+      "id": "He deposited the prize money in the bank.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01196",
+  "word": "上下",
+  "reading": "じょうげ",
+  "romaji": "jouge",
+  "meaning_id": "high and low; up and down",
+  "meaning_en": "high and low; up and down; unloading and loading; praising and blaming",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は旗を上下に動かした。",
+      "id": "He moved the flags up and down.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼女はその絵を上下さかさまにかえた。",
+      "id": "She hung the picture upside down.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01197",
+  "word": "障子",
+  "reading": "しょうじ",
+  "romaji": "shouji",
+  "meaning_id": "paper sliding door",
+  "meaning_en": "paper sliding door",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "壁に耳あり障子に目あり。",
+      "id": "Walls have ears, shouji have eyes.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01198",
+  "word": "商社",
+  "reading": "しょうしゃ",
+  "romaji": "shousha",
+  "meaning_id": "trading company; firm",
+  "meaning_en": "trading company; firm",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ニューヨークにはたくさんの商社がある。",
+      "id": "Ada many commercial firms in New York.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私は商社で働いています。",
+      "id": "I work for a trading company.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01200",
+  "word": "上旬",
+  "reading": "じょうじゅん",
+  "romaji": "joujun",
+  "meaning_id": "first 10 days of month",
+  "meaning_en": "first 10 days of month",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "７月の上旬は、海に行くのは早いかな？",
+      "id": "I wonder if the first week or so of July is too early to go to the beach.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01201",
+  "word": "小数",
+  "reading": "しょうすう",
+  "romaji": "shousuu",
+  "meaning_id": "fraction (part of); decimal",
+  "meaning_en": "fraction (part of); decimal",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "次の分数を小数に直しなさい。",
+      "id": "Convert the following fractions to decimals.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01202",
+  "word": "生ずる",
+  "reading": "しょうずる",
+  "romaji": "shouzuru",
+  "meaning_id": "me-cause",
+  "meaning_en": "to cause; to arise; to be generated",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "再開発によって地域に便益が生ずる。",
+      "id": "Benefits accrue to the community from reconstruction.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この構成において、三角形の代わりに長方形を用いても類似の困難が生ずる。",
+      "id": "We encounter similar difficulties when we substitute rectangles for triangles in this configuration.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01203",
+  "word": "商店",
+  "reading": "しょうてん",
+  "romaji": "shouten",
+  "meaning_id": "shop; business firm",
+  "meaning_en": "shop; business firm",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この地域は商店が多い。",
+      "id": "Ada many stores in this area.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "商店も彼を欲しがりませんでした。",
+      "id": "The shop did not want him.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01204",
+  "word": "焦点",
+  "reading": "しょうてん",
+  "romaji": "shouten",
+  "meaning_id": "focus; point",
+  "meaning_en": "focus; point",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "話の焦点は内容に置かれている。",
+      "id": "The focus of the talk is put on the content.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "顕微鏡の焦点を合わせなさい。",
+      "id": "Adjust the microscope's focus.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01206",
+  "word": "勝敗",
+  "reading": "しょうはい",
+  "romaji": "shouhai",
+  "meaning_id": "victory or defeat; issue (of battle)",
+  "meaning_en": "victory or defeat; issue (of battle)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "勝敗は問題ではない。",
+      "id": "It doesn't matter whether you win or not.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01208",
+  "word": "賞品",
+  "reading": "しょうひん",
+  "romaji": "shouhin",
+  "meaning_id": "prize; trophy",
+  "meaning_en": "prize; trophy",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "先生はジョンに賞品を与えた。",
+      "id": "The teacher gave John a prize.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01211",
+  "word": "消防署",
+  "reading": "しょうぼうしょ",
+  "romaji": "shoubousho",
+  "meaning_id": "fire station",
+  "meaning_en": "fire station",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "消防署に連絡してください。",
+      "id": "Tolong call the fire department.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "火事のときには消防署に電話しなさい。",
+      "id": "In case of fire, telephone the fire station.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01212",
+  "word": "正味",
+  "reading": "しょうみ",
+  "romaji": "shoumi",
+  "meaning_id": "net (weight)",
+  "meaning_en": "net (weight)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "正味を使います。",
+      "id": "Menggunakan net (weight).",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01213",
+  "word": "正面",
+  "reading": "しょうめん",
+  "romaji": "shoumen",
+  "meaning_id": "the front; honesty",
+  "meaning_en": "the front; honesty",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "正面のドアは鍵がかかったままだった。",
+      "id": "The front door remained locked.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この建物は正面から見ると大きいが横から見るとそうでもない。",
+      "id": "This building looks large from the front, but not from the side.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01216",
+  "word": "初級",
+  "reading": "しょきゅう",
+  "romaji": "shokyuu",
+  "meaning_id": "elementary level",
+  "meaning_en": "elementary level",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この辞書は初級者に、いやそれどころか上級者にも役に立つ。",
+      "id": "This dictionary is useful to beginners, yes, and to advanced learners.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01217",
+  "word": "助教授",
+  "reading": "じょきょうじゅ",
+  "romaji": "jokyouju",
+  "meaning_id": "assistant professor",
+  "meaning_en": "assistant professor",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私は教授です、いやもっと正確に言えば、助教授です。",
+      "id": "I'm a professor, or rather an associate professor, to be exact.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01218",
+  "word": "食塩",
+  "reading": "しょくえん",
+  "romaji": "shokuen",
+  "meaning_id": "table salt",
+  "meaning_en": "table salt",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "めんどうですが食塩をとっていただけませんか。",
+      "id": "May I trouble you for the salt?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01219",
+  "word": "職人",
+  "reading": "しょくにん",
+  "romaji": "shokunin",
+  "meaning_id": "worker; mechanic",
+  "meaning_en": "worker; mechanic; artisan; craftsman",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私はその職人がとても腕がよいと分かった。",
+      "id": "I found the workman very good.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "職人がその家にペンキを塗っている。",
+      "id": "A professional is painting the house.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01221",
+  "word": "書籍",
+  "reading": "しょせき",
+  "romaji": "shoseki",
+  "meaning_id": "book; publication",
+  "meaning_en": "book; publication",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ここのところ書籍の価格が上がっている。",
+      "id": "The price of books is getting higher these days.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私は書籍売り場を担当している。",
+      "id": "I'm in charge of the book department.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01222",
+  "word": "食器",
+  "reading": "しょっき",
+  "romaji": "shokki",
+  "meaning_id": "tableware",
+  "meaning_en": "tableware",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "弟は銀の食器類を磨いた。",
+      "id": "My brother polished the silver.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "汚れた食器を洗うのを手伝いましょうか。",
+      "id": "Shall I help you with the washing-up?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01223",
+  "word": "ショップ",
+  "reading": "ショップ",
+  "romaji": "shoppu",
+  "meaning_id": "a shop",
+  "meaning_en": "a shop",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "こちらはワンダーミュージックショップです。",
+      "id": "Ini adalah Wonder Music Shop.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "一番近いアンティークショップはどこにあるか教えていただけますか。",
+      "id": "Can you tell me where the nearest antique shop is?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01224",
+  "word": "書店",
+  "reading": "しょてん",
+  "romaji": "shoten",
+  "meaning_id": "bookshop",
+  "meaning_en": "bookshop",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "書店で手に入ります。",
+      "id": "You can get it at a bookstore.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この本は駅前の書店で買ったんだ。",
+      "id": "I bought this book at the bookstore in front of the station.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01225",
+  "word": "書道",
+  "reading": "しょどう",
+  "romaji": "shodou",
+  "meaning_id": "calligraphy",
+  "meaning_en": "calligraphy",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "書道を習うのは楽しい。",
+      "id": "Learning calligraphy is fun.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01226",
+  "word": "白髪",
+  "reading": "しらが",
+  "romaji": "shiraga",
+  "meaning_id": "white or grey hair; trendy hair bleaching",
+  "meaning_en": "white or grey hair; trendy hair bleaching",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "父の髪は白髪交じりになった。",
+      "id": "My father's hair has become streaked with gray.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "父は白髪が混じってきた。",
+      "id": "My father is becoming gray.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01227",
+  "word": "知り合い",
+  "reading": "しりあい",
+  "romaji": "shiriai",
+  "meaning_id": "acquaintance",
+  "meaning_en": "acquaintance",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "どこで彼女と知り合いになったのか。",
+      "id": "Where did you get to know her?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私たちは彼女と知り合いではない。",
+      "id": "We have no acquaintance with her.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01228",
+  "word": "シリーズ",
+  "reading": "シリーズ",
+  "romaji": "shiriizu",
+  "meaning_id": "series",
+  "meaning_en": "series",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その人気テレビシリーズが発端となって、秋には二つのショー番組が誕生することになっている。",
+      "id": "That popular television series is going to spin off two new shows in the fall.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01229",
+  "word": "私立",
+  "reading": "しりつ",
+  "romaji": "shiritsu",
+  "meaning_id": "private (establishment)",
+  "meaning_en": "private (establishment)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私立の学校はどういう感じですか。",
+      "id": "How is it in a private school?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "あなたは、私立高校の生徒ですか。",
+      "id": "Are you a student of a private high school?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01230",
+  "word": "資料",
+  "reading": "しりょう",
+  "romaji": "shiryou",
+  "meaning_id": "materials; data",
+  "meaning_en": "materials; data",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "新しい資料をお送りください。",
+      "id": "Tolong send us more information.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "その資料はこの部署にはありません。",
+      "id": "Our department doesn't have that information.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01231",
+  "word": "汁",
+  "reading": "しる",
+  "romaji": "shiru",
+  "meaning_id": "juice; sap",
+  "meaning_en": "juice; sap; soup; broth",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼女は御茶にレモンの汁をたらした。",
+      "id": "She dropped lemon juice into her tea.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "奴が一人でうまい汁を吸いやがった。",
+      "id": "That guy took the best for himself.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01232",
+  "word": "素人",
+  "reading": "しろうと",
+  "romaji": "shirouto",
+  "meaning_id": "amateur; novice",
+  "meaning_en": "amateur; novice",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "法律用語の大半は素人にはわかりにくい。",
+      "id": "Much legal language is obscure to a layman.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "その協会は設立以来、素人の入会を断ってきた。",
+      "id": "The association has excluded amateurs ever since its foundation.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01233",
+  "word": "芯",
+  "reading": "しん",
+  "romaji": "shin",
+  "meaning_id": "core; heart",
+  "meaning_en": "core; heart; wick; marrow",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私は体の芯まで冷え切った。",
+      "id": "I was frozen to the bone.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "シャーペンの芯２・３本もらえるかな。",
+      "id": "Could you lend me a few mechanical pencil leads?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01234",
+  "word": "新幹線",
+  "reading": "しんかんせん",
+  "romaji": "shinkansen",
+  "meaning_id": "bullet train (very high speed); shinkansen",
+  "meaning_en": "bullet train (very high speed); shinkansen",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "新しい新幹線の速いこと！",
+      "id": "How fast the new Shinkansen goes!",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "台風のために新幹線が一時間も遅れた。",
+      "id": "The train was delayed for one hour on account of the typhoon.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01235",
+  "word": "真空",
+  "reading": "しんくう",
+  "romaji": "shinkuu",
+  "meaning_id": "vacuum; hollow",
+  "meaning_en": "vacuum; hollow; empty",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その実験には真空が必要だ。",
+      "id": "For that experiment they need a complete vacuum.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "自然は真空を嫌う。",
+      "id": "Nature abhors a vacuum.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01236",
+  "word": "心身",
+  "reading": "しんしん",
+  "romaji": "shinshin",
+  "meaning_id": "mind and body",
+  "meaning_en": "mind and body",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は心身ともに健康だ。",
+      "id": "Dia sound in both mind and body.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "青年時代は心身の発達が著しい。",
+      "id": "Moral and physical development are remarkable in the youth.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01237",
+  "word": "信ずる",
+  "reading": "しんずる",
+  "romaji": "shinzuru",
+  "meaning_id": "me-believe",
+  "meaning_en": "to believe; to believe in; to place trust in",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "見ることは信ずることなり。",
+      "id": "Seeing is believing.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "信ずるところに従って行動した。",
+      "id": "I acted upon what I believed.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01239",
+  "word": "人造",
+  "reading": "じんぞう",
+  "romaji": "jinzou",
+  "meaning_id": "man-made; synthetic",
+  "meaning_en": "man-made; synthetic; artificial",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "これらの真珠は人造ではなく本物です。",
+      "id": "These pearls are genuine, not artificial.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "人造皮革は本物の皮にかなわない。",
+      "id": "Artificial leather can't compare with the real thing.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01240",
+  "word": "寝台",
+  "reading": "しんだい",
+  "romaji": "shindai",
+  "meaning_id": "bed; couch",
+  "meaning_en": "bed; couch",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は、寝台の長さを測った。",
+      "id": "He measured the length of the bed.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "その部屋は寝台が２台備えられている。",
+      "id": "The room is furnished with two beds.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01243",
+  "word": "人文科学",
+  "reading": "じんぶんかがく",
+  "romaji": "jinbunkagaku",
+  "meaning_id": "social sciences; humanities",
+  "meaning_en": "social sciences; humanities",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "歴史学は人文科学の一部門である。",
+      "id": "History is a branch of the humanities.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "哲学研究は人文科学の１つだ。",
+      "id": "The study of philosophy belongs to the humanities.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01244",
+  "word": "人命",
+  "reading": "じんめい",
+  "romaji": "jinmei",
+  "meaning_id": "(human) life",
+  "meaning_en": "(human) life",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "どんな大金も人命には換えられない。",
+      "id": "Even a large sum of money cannot take the place of a man's life.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "その勝利は多数の人命を犠牲にしてかちとられた。",
+      "id": "The victory was won at the cost of many lives.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01246",
+  "word": "森林",
+  "reading": "しんりん",
+  "romaji": "shinrin",
+  "meaning_id": "forest; woods",
+  "meaning_en": "forest; woods",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その国は森林でおおわれている。",
+      "id": "The land is clothed with woods.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "山火事が発生して森林を焼いた。",
+      "id": "A mountain fire broke out and burnt the forest.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01247",
+  "word": "親類",
+  "reading": "しんるい",
+  "romaji": "shinrui",
+  "meaning_id": "relation; kin",
+  "meaning_en": "relation; kin",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は親類の者と意見が合わない。",
+      "id": "He disagrees with his relatives.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼は働かないで親類にたかることばかり考えている。",
+      "id": "He doesn't work, but only thinks of sponging off his relatives.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01248",
+  "word": "針路",
+  "reading": "しんろ",
+  "romaji": "shinro",
+  "meaning_id": "course; direction",
+  "meaning_en": "course; direction; compass bearing",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "針路を使います。",
+      "id": "Menggunakan course; direction.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01249",
+  "word": "神話",
+  "reading": "しんわ",
+  "romaji": "shinwa",
+  "meaning_id": "myth; legend",
+  "meaning_en": "myth; legend",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "どの民族も独自の神話を持っている。",
+      "id": "Every nation has its own myths.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "小説はおとぎ話や神話と同じぐらい古い。",
+      "id": "Fiction is as old as fairy tales and myths.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01250",
+  "word": "酢",
+  "reading": "す",
+  "romaji": "su",
+  "meaning_id": "vinegar",
+  "meaning_en": "vinegar",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "酢はすっぱい味がする。",
+      "id": "Vinegar has a sharp taste.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01251",
+  "word": "水産",
+  "reading": "すいさん",
+  "romaji": "suisan",
+  "meaning_id": "marine products; fisheries",
+  "meaning_en": "marine products; fisheries",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "水産を使います。",
+      "id": "Menggunakan marine products; fisheries.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01253",
+  "word": "水蒸気",
+  "reading": "すいじょうき",
+  "romaji": "suijouki",
+  "meaning_id": "water vapour; steam",
+  "meaning_en": "water vapour; steam",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "熱は水を水蒸気に変える。",
+      "id": "Heat turns water into steam.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "雲は水蒸気のかたまりである。",
+      "id": "A cloud is a mass of vapor.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01254",
+  "word": "水素",
+  "reading": "すいそ",
+  "romaji": "suiso",
+  "meaning_id": "hydrogen",
+  "meaning_en": "hydrogen",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "酸素と水素から水ができる。",
+      "id": "Oxygen and hydrogen make water.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "水素の原子番号は１である。",
+      "id": "The atomic number for hydrogen is 1.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01257",
+  "word": "水滴",
+  "reading": "すいてき",
+  "romaji": "suiteki",
+  "meaning_id": "drop of water",
+  "meaning_en": "drop of water",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "気密性でない窓ならば、水滴ができるだろう。",
+      "id": "If your windows are not airtight, moisture will seep in.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01258",
+  "word": "水筒",
+  "reading": "すいとう",
+  "romaji": "suitou",
+  "meaning_id": "canteen; flask",
+  "meaning_en": "canteen; flask; water bottle",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "水筒にはほとんど水が残っていない。",
+      "id": "Ada little water left in the canteen.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01259",
+  "word": "随筆",
+  "reading": "ずいひつ",
+  "romaji": "zuihitsu",
+  "meaning_id": "essays; miscellaneous writings",
+  "meaning_en": "essays; miscellaneous writings",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この随筆は一個の旅行かばんについてのものです。",
+      "id": "This essay is about a piece of luggage.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼女は随筆を書き始めた。",
+      "id": "She set about writing the essay.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01260",
+  "word": "水分",
+  "reading": "すいぶん",
+  "romaji": "suibun",
+  "meaning_id": "moisture",
+  "meaning_en": "moisture",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "水分をたくさん取ってください。",
+      "id": "You should drink a lot of liquid.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "植物は土壌から水分をとる。",
+      "id": "Plants take in water from the soil.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01262",
+  "word": "水平線",
+  "reading": "すいへいせん",
+  "romaji": "suiheisen",
+  "meaning_id": "horizon",
+  "meaning_en": "horizon",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "太陽が水平線の下に沈んだ。",
+      "id": "The sun sank below the horizon.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "水平線に漁船がいくつか見えます。",
+      "id": "I see some fishing boats on the horizon.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01263",
+  "word": "水曜",
+  "reading": "すいよう",
+  "romaji": "suiyou",
+  "meaning_id": "Wednesday",
+  "meaning_en": "Wednesday",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あなたからご都合が悪いというお知らせがなければ水曜の夕方に参ります。",
+      "id": "I will come on Wednesday evening unless I hear from you to the contrary.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "水曜の午後は授業はありません。",
+      "id": "We have no classes on Wednesday afternoons.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01266",
+  "word": "末っ子",
+  "reading": "すえっこ",
+  "romaji": "suekko",
+  "meaning_id": "youngest child",
+  "meaning_en": "youngest child",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私は末っ子です。",
+      "id": "I'm the youngest in the family.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "スティーブ、あなたは末っ子なんだってね。",
+      "id": "Steve, I heard you were the baby of the family.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01267",
+  "word": "スカーフ",
+  "reading": "スカーフ",
+  "romaji": "sukaafu",
+  "meaning_id": "scarf",
+  "meaning_en": "scarf",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "このスカーフは手触りが柔らかくてすべすべしている。",
+      "id": "This scarf feels soft and smooth.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼女は首にスカーフをまいている。",
+      "id": "She has a scarf around her neck.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01268",
+  "word": "図鑑",
+  "reading": "ずかん",
+  "romaji": "zukan",
+  "meaning_id": "picture book",
+  "meaning_en": "picture book",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "昔は、平気で昆虫触れたのに、今は、図鑑を見るだけでもだめ。",
+      "id": "When I was a kid, touching bugs didn't bother me a bit. Now I can hardly stand looking at pictures of them.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01269",
+  "word": "杉",
+  "reading": "すぎ",
+  "romaji": "sugi",
+  "meaning_id": "Japanese cedar",
+  "meaning_en": "Japanese cedar",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "昔そこにはスギの大木があった。",
+      "id": "There used to be a large cedar tree there.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01270",
+  "word": "好き嫌い",
+  "reading": "すききらい",
+  "romaji": "sukikirai",
+  "meaning_id": "likes and dislikes; taste",
+  "meaning_en": "likes and dislikes; taste",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "好き嫌い言わないで全部食べなさい。",
+      "id": "You shouldn't be so picky about food.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "食事の好き嫌いはありますか。",
+      "id": "Do you have strong likes and dislikes for certain food?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01271",
+  "word": "好き好き",
+  "reading": "すきずき",
+  "romaji": "sukizuki",
+  "meaning_id": "matter of taste",
+  "meaning_en": "matter of taste",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "音楽の好みは人によって好きずきです。",
+      "id": "Music preferences vary from person to person.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "蓼食う虫も好き好き。",
+      "id": "Ada no accounting for tastes.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01273",
+  "word": "隙間",
+  "reading": "すきま",
+  "romaji": "sukima",
+  "meaning_id": "crevice; crack",
+  "meaning_en": "crevice; crack; gap; opening",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "歯が抜けて隙間が空いていた。",
+      "id": "His teeth had gaps.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "雨が屋根の隙間からぽたぽた落ちていた。",
+      "id": "The rain was dripping through a leak in the roof.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01274",
+  "word": "スクール",
+  "reading": "スクール",
+  "romaji": "sukuuru",
+  "meaning_id": "sekolah",
+  "meaning_en": "school",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "人物画を描けるスクールを探しています。",
+      "id": "I'm looking for a school where I can paint portraits.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01276",
+  "word": "図形",
+  "reading": "ずけい",
+  "romaji": "zukei",
+  "meaning_id": "figure",
+  "meaning_en": "figure",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この線を軸にして図形を回転してください。",
+      "id": "Tolong take this line as the axis and rotate the figure around it.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01277",
+  "word": "スケジュール",
+  "reading": "スケジュール",
+  "romaji": "sukejuuru",
+  "meaning_id": "schedule",
+  "meaning_en": "schedule",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "スケジュールがバッティングしなきゃ大丈夫です。",
+      "id": "The schedule's fine as long as nothing clashes.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "いずれにしてもスケジュールは変更できない。",
+      "id": "At any rate, we can't change the schedule.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01278",
+  "word": "鈴",
+  "reading": "すず",
+  "romaji": "suzu",
+  "meaning_id": "bell",
+  "meaning_en": "bell",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "だれがその猫に鈴をつけられるか。",
+      "id": "Who can put a bell on the cat?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "問題は誰が猫に鈴をつけるかだ。",
+      "id": "The question is: Who will bell the cat.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01281",
+  "word": "スチュワーデス",
+  "reading": "スチュワーデス",
+  "romaji": "suchuwaadesu",
+  "meaning_id": "stewardess",
+  "meaning_en": "stewardess",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "日本語を話すスチュワーデスはいるか。",
+      "id": "Is there a Japanese-speaking stewardess?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "そのスチュワーデスは多少フランス語が話せる。",
+      "id": "The stewardess can speak French after a fashion.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01284",
+  "word": "ステージ",
+  "reading": "ステージ",
+  "romaji": "suteeji",
+  "meaning_id": "stage; performance",
+  "meaning_en": "stage; performance",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ジョンはステージの上で「イマジン」を歌った。",
+      "id": "John sang \"Imagine\" on the stage.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼は私をステージの上で歌わせた。",
+      "id": "He made me sing on the stage.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01285",
+  "word": "ストッキング",
+  "reading": "ストッキング",
+  "romaji": "sutokkingu",
+  "meaning_id": "stockings",
+  "meaning_en": "stockings",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "このストッキングはとても高い。",
+      "id": "These stockings are very dear.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "やだストッキング伝線しちゃってる。",
+      "id": "Fudge! My stocking's run.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01288",
+  "word": "頭脳",
+  "reading": "ずのう",
+  "romaji": "zunou",
+  "meaning_id": "head; brains",
+  "meaning_en": "head; brains; intellect",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "二人の頭脳は一人の頭脳に勝る。",
+      "id": "Two heads are better than one.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "コンピューターはよく人の頭脳にたとえられる。",
+      "id": "The computer is often compared to the human brain.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01289",
+  "word": "スピーカー",
+  "reading": "スピーカー",
+  "romaji": "supiikaa",
+  "meaning_id": "speaker",
+  "meaning_en": "speaker",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "おかしいな、スピーカーがガーガーいってるよ。",
+      "id": "That's funny. The speaker is crackling.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼女はいわば歩くスピーカーだ。",
+      "id": "She is, as it were, a walking speaker.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01290",
+  "word": "図表",
+  "reading": "ずひょう",
+  "romaji": "zuhyou",
+  "meaning_id": "chart; diagram",
+  "meaning_en": "chart; diagram; graph",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "図表２を見ると、これらの貿易サイクルのいくつかは非常に短期のものであることが判明する。",
+      "id": "A glance at Chart 2 will reveal that some of these trade cycles are very short-lived.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01292",
+  "word": "住まい",
+  "reading": "すまい",
+  "romaji": "sumai",
+  "meaning_id": "dwelling; house",
+  "meaning_en": "dwelling; house; residence; address",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ところで、お住まいはどちらですか。",
+      "id": "By the way, where do you live?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ここにどれくらいお住まいですか。",
+      "id": "How long have you lived here?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01294",
+  "word": "墨",
+  "reading": "すみ",
+  "romaji": "sumi",
+  "meaning_id": "ink",
+  "meaning_en": "ink",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "墨を染料として使うと面白い模様ができます。",
+      "id": "India ink produces an interesting pattern when used as a dye.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01297",
+  "word": "相撲",
+  "reading": "すもう",
+  "romaji": "sumou",
+  "meaning_id": "sumo wrestling",
+  "meaning_en": "sumo wrestling",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "相撲を見たことがありますか。",
+      "id": "Have you ever watched sumo wrestling?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ここでは私は議論を、なぜ相撲の好きな外国人が多いか、に限定したい。",
+      "id": "Here, I'll confine this discussion to why many foreigners enjoy sumo.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01298",
+  "word": "スライド",
+  "reading": "スライド",
+  "romaji": "suraido",
+  "meaning_id": "slide",
+  "meaning_en": "slide",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼はそのスライドを顕微鏡で見た。",
+      "id": "He looked at the slide under the microscope.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "年金の額は原則として前年の物価変動にスライドして算出される。",
+      "id": "As a general rule, the pension amount is based on price changes in the previous year.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01305",
+  "word": "寸法",
+  "reading": "すんぽう",
+  "romaji": "sunpou",
+  "meaning_id": "measurement; size",
+  "meaning_en": "measurement; size; dimension",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あなたの寸法を計るのを許して下さい。",
+      "id": "Tolong allow me to measure you.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "これらの寸法は設計図に一致する。",
+      "id": "These measurements conform to the blueprints.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01306",
+  "word": "姓",
+  "reading": "せい",
+  "romaji": "sei",
+  "meaning_id": "surname; family name",
+  "meaning_en": "surname; family name",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あなたの姓はどう発音するのですか。",
+      "id": "How do you pronounce your last name?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "あなたの姓が聞き取れませんでした。",
+      "id": "I didn't catch your last name.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01307",
+  "word": "税関",
+  "reading": "ぜいかん",
+  "romaji": "zeikan",
+  "meaning_id": "customs house",
+  "meaning_en": "customs house",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "税関では長い列が出来ているだろう。",
+      "id": "There will be long lines at the Customs.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "税関はどこですか。",
+      "id": "Where is the Customs Service?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01310",
+  "word": "性質",
+  "reading": "せいしつ",
+  "romaji": "seishitsu",
+  "meaning_id": "nature; property",
+  "meaning_en": "nature; property; disposition",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は性質が頑固だ。",
+      "id": "Dia obstinate in disposition.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "その２つの性質は相容れない。",
+      "id": "The two qualities are mutually exclusive.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01312",
+  "word": "青少年",
+  "reading": "せいしょうねん",
+  "romaji": "seishounen",
+  "meaning_id": "youth; young person",
+  "meaning_en": "youth; young person",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私には青少年の心理がわからない。",
+      "id": "I can not understand the psychology of adolescents.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼は青少年向きの本をたくさん持っている。",
+      "id": "He has a lot of books for the young.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01313",
+  "word": "整数",
+  "reading": "せいすう",
+  "romaji": "seisuu",
+  "meaning_id": "integer",
+  "meaning_en": "integer",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "整数を使います。",
+      "id": "Menggunakan integer.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01317",
+  "word": "政党",
+  "reading": "せいとう",
+  "romaji": "seitou",
+  "meaning_id": "(member of) political party",
+  "meaning_en": "(member of) political party",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "２つのグループが団結して１つの政党になった。",
+      "id": "Two groups united to form a party.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼はその政党の主導権をにぎった。",
+      "id": "He assumed the leadership of the political party.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01318",
+  "word": "生年月日",
+  "reading": "せいねんがっぴ",
+  "romaji": "seinengappi",
+  "meaning_id": "birth date",
+  "meaning_en": "birth date",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "生年月日は１９６０年２月１４日です。",
+      "id": "I was born on February 14, 1960.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "生年月日を教えてくださいますか？",
+      "id": "May I have your birth date?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01319",
+  "word": "性能",
+  "reading": "せいのう",
+  "romaji": "seinou",
+  "meaning_id": "ability; efficiency",
+  "meaning_en": "ability; efficiency",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この車はあの車より性能がよい。",
+      "id": "This car has a better performance than that one.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "電気自動車の性能はよくなっている。",
+      "id": "The performance of electric cars has improved.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01321",
+  "word": "成分",
+  "reading": "せいぶん",
+  "romaji": "seibun",
+  "meaning_id": "ingredient; component",
+  "meaning_en": "ingredient; component; composition",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "子宮内の羊水は、海水とほぼ同じ成分だそうです。",
+      "id": "They say amniotic fluid has roughly the same composition as sea water.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "グリーンピースは鉄分が豊富で爪の色がよくなる成分が含まれている。",
+      "id": "Green peas are high in iron and contain nutrients that improve the colour of fingernails.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01322",
+  "word": "性別",
+  "reading": "せいべつ",
+  "romaji": "seibetsu",
+  "meaning_id": "distinction by sex; sex",
+  "meaning_en": "distinction by sex; sex; gender",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "国籍や性別または職業などで人を差別してはいけない。",
+      "id": "Don't discriminate against people based on nationality, gender, or occupation.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ニワトリの赤く立派なトサカは性別や種類を見分けるときに役立っていると考えられている。",
+      "id": "The cockerel's splendid red cockscomb is thought to play a part in determining gender and breed.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01323",
+  "word": "正方形",
+  "reading": "せいほうけい",
+  "romaji": "seihoukei",
+  "meaning_id": "square",
+  "meaning_en": "square",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "正方形は４つの同じ長さの辺をもつ。",
+      "id": "A square has four equal sides.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼は黒板に正方形を二つ書いた。",
+      "id": "He drew two squares on the blackboard.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01324",
+  "word": "正門",
+  "reading": "せいもん",
+  "romaji": "seimon",
+  "meaning_id": "main gate; main entrance",
+  "meaning_en": "main gate; main entrance",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "車が正門のところへきて止まった。",
+      "id": "A car drew up at the main gate.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "正門前には、まだ人の姿もない。",
+      "id": "There isn't anybody in front of the main gate yet.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01326",
+  "word": "西暦",
+  "reading": "せいれき",
+  "romaji": "seireki",
+  "meaning_id": "Christian Era; anno domini (A.D.)",
+  "meaning_en": "Christian Era; anno domini (A.D.)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "昭和１０年は西暦１９３５年です。",
+      "id": "The 10th year of Showa is 1935 in the Western calendar.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01328",
+  "word": "赤道",
+  "reading": "せきどう",
+  "romaji": "sekidou",
+  "meaning_id": "equator",
+  "meaning_en": "equator",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "船は今夜赤道を越すだろう。",
+      "id": "The ship will cross the equator tonight.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "エクアドルのキトは赤道のすぐ南にある。",
+      "id": "Quito, Ecuador, is a little south of the equator.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01331",
+  "word": "石鹸",
+  "reading": "せっけん",
+  "romaji": "sekken",
+  "meaning_id": "soap",
+  "meaning_en": "soap",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ひげをそる前に石けんをつける。",
+      "id": "I lather my face before shaving.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "石けんは泥を落とすのに役立つ。",
+      "id": "Soap helps remove the dirt.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01335",
+  "word": "瀬戸物",
+  "reading": "せともの",
+  "romaji": "setomono",
+  "meaning_id": "earthenware; crockery",
+  "meaning_en": "earthenware; crockery; china",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その店は瀬戸物を使っている。",
+      "id": "The store carries earthenware.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01338",
+  "word": "ゼミ",
+  "reading": "ゼミ",
+  "romaji": "zemi",
+  "meaning_id": "seminar",
+  "meaning_en": "seminar",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ゼミを使います。",
+      "id": "Menggunakan seminar.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01339",
+  "word": "せめて",
+  "reading": "せめて",
+  "romaji": "semete",
+  "meaning_id": "offense; method of attack",
+  "meaning_en": "offense; method of attack",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "せめて日常会話ができるくらいになりたい。",
+      "id": "At the very least, I'd like to be able to have everyday conversations.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "一日にせめて二回は歯を磨くべきだ。",
+      "id": "You should brush your teeth at least twice a day.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01341",
+  "word": "セメント",
+  "reading": "セメント",
+  "romaji": "semento",
+  "meaning_id": "cement",
+  "meaning_en": "cement",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "石の塊はセメントで接合された。",
+      "id": "The blocks of stone were jointed with cement.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "砂利をセメントで固める必要がある。",
+      "id": "We need to bind gravel with cement.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01342",
+  "word": "栓",
+  "reading": "せん",
+  "romaji": "sen",
+  "meaning_id": "stopper; cork",
+  "meaning_en": "stopper; cork; stopcock",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "シャンパンの栓がぽんと音を立ててとんだ。",
+      "id": "The champagne cork popped out.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "コルクの栓がどうしても抜けなかった。",
+      "id": "The cork would not come out.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01343",
+  "word": "前後",
+  "reading": "ぜんご",
+  "romaji": "zengo",
+  "meaning_id": "around; throughout",
+  "meaning_en": "around; throughout; front and back; before and behind; before and after",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は首を前後に振りました。",
+      "id": "He shook his head back and forth.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "倒置法は言葉の前後を入れ替えることにより文章を強調する効果があります。",
+      "id": "Anastrophe, by switching around words, has the effect of emphasizing text.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01344",
+  "word": "洗剤",
+  "reading": "せんざい",
+  "romaji": "senzai",
+  "meaning_id": "detergent; washing material",
+  "meaning_en": "detergent; washing material",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "誤って洗剤を飲んでしまいました。",
+      "id": "He swallowed detergent by mistake.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ランドリーには洗剤がありますか。",
+      "id": "Are there any detergents in the laundry?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01345",
+  "word": "全集",
+  "reading": "ぜんしゅう",
+  "romaji": "zenshuu",
+  "meaning_id": "complete works",
+  "meaning_en": "complete works",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この全集の５巻目が見当たらない。",
+      "id": "The fifth volume of this set is missing.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私はシェークスピア全集を持っている。",
+      "id": "I have the complete works of Shakespeare.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01346",
+  "word": "全身",
+  "reading": "ぜんしん",
+  "romaji": "zenshin",
+  "meaning_id": "the whole body; full-length (portrait)",
+  "meaning_en": "the whole body; full-length (portrait)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼女は全身ずぶぬれだった。",
+      "id": "She was soaked from head to foot.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼は全身ペンキだらけになった。",
+      "id": "He was covered all over with paint.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01347",
+  "word": "扇子",
+  "reading": "せんす",
+  "romaji": "sensu",
+  "meaning_id": "folding fan",
+  "meaning_en": "folding fan",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "犬が腕時計と扇子を食った。",
+      "id": "The dog ate a watch and a Japanese fan.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01351",
+  "word": "先祖",
+  "reading": "せんぞ",
+  "romaji": "senzo",
+  "meaning_id": "ancestor",
+  "meaning_en": "ancestor",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この日私たちは先祖の墓参りをする。",
+      "id": "We visit the tombs of our ancestors on this day.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "うちの先祖には有名な人がいく人かいる。",
+      "id": "Our family has some distinguished ancestors.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01352",
+  "word": "先端",
+  "reading": "せんたん",
+  "romaji": "sentan",
+  "meaning_id": "pointed end; tip",
+  "meaning_en": "pointed end; tip; fine point",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼女は先端を行っています。",
+      "id": "Dia on the cutting edge.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "水面に現れてるのは氷山の先端にすぎない。",
+      "id": "What you see above the water is just the tip of the iceberg.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01353",
+  "word": "センチ",
+  "reading": "センチ",
+  "romaji": "senchi",
+  "meaning_id": "centimeter; centi-",
+  "meaning_en": "centimeter; centi-; 10^-2",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "１メートルは１００センチである。",
+      "id": "A metre is 100 centimetres.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私はほとんど１８０センチです。",
+      "id": "I am almost 180 centimeters tall.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01355",
+  "word": "先頭",
+  "reading": "せんとう",
+  "romaji": "sentou",
+  "meaning_id": "head; lead",
+  "meaning_en": "head; lead; vanguard; first",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "さあ出発しよう。君先頭を行きなさい。",
+      "id": "Let's start now, and you go first.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "市長は行列の先頭に立って歩いた。",
+      "id": "The mayor walked at the head of the procession.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01356",
+  "word": "全般",
+  "reading": "ぜんぱん",
+  "romaji": "zenpan",
+  "meaning_id": "(the) whole; universal",
+  "meaning_en": "(the) whole; universal; wholly; general",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "そのことは人間全般に言える。",
+      "id": "That can be said of mankind at large.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01357",
+  "word": "扇風機",
+  "reading": "せんぷうき",
+  "romaji": "senpuuki",
+  "meaning_id": "electric fan",
+  "meaning_en": "electric fan",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "暑かったので扇風機をつけた。",
+      "id": "Feeling hot, I turned on the fan.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "そんな古い扇風機は役に立たない。",
+      "id": "Such an old fan would be next to useless.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01358",
+  "word": "線路",
+  "reading": "せんろ",
+  "romaji": "senro",
+  "meaning_id": "line; track",
+  "meaning_en": "line; track; roadbed",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ポーターはしばしば線路を歩いて渡らなければならない。",
+      "id": "Porters often have to walk across the tracks.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "鉄道の線路を歩くのは危険だ。",
+      "id": "It's dangerous to walk on railway lines.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01361",
+  "word": "雑巾",
+  "reading": "ぞうきん",
+  "romaji": "zoukin",
+  "meaning_id": "house-cloth; dust cloth",
+  "meaning_en": "house-cloth; dust cloth",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ぬれたぞうきんで窓をふきなさい。",
+      "id": "Clean the window with a damp cloth.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01363",
+  "word": "倉庫",
+  "reading": "そうこ",
+  "romaji": "souko",
+  "meaning_id": "storehouse; warehouse",
+  "meaning_en": "storehouse; warehouse; godown",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は倉庫の警備員として仕事をしている。",
+      "id": "Dia working as a security guard at a warehouse.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "倉庫には家具が一つの他には何もなかった。",
+      "id": "The warehouse was empty except for a piece of furniture.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01364",
+  "word": "相互",
+  "reading": "そうご",
+  "romaji": "sougo",
+  "meaning_id": "mutual; reciprocal",
+  "meaning_en": "mutual; reciprocal",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "それは相互理解の欠如がもとになっていると思う。",
+      "id": "I think that is based on a lack of mutual understanding.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "友情は相互理解にある。",
+      "id": "Friendship consists of mutual understanding.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01366",
+  "word": "葬式",
+  "reading": "そうしき",
+  "romaji": "soushiki",
+  "meaning_id": "funeral",
+  "meaning_en": "funeral",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "１月３０日、３１日は葬式のため休みます。",
+      "id": "I'm taking bereavement leave on Jan. 30 and 31.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "葬式には黒い服を着ていくのが習慣です。",
+      "id": "It is traditional to wear black to a funeral.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01372",
+  "word": "草履",
+  "reading": "ぞうり",
+  "romaji": "zouri",
+  "meaning_id": "zoori (Japanese footwear); sandals",
+  "meaning_en": "zoori (Japanese footwear); sandals",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "草履、忘れた。",
+      "id": "I forgot my sandals.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01373",
+  "word": "総理大臣",
+  "reading": "そうりだいじん",
+  "romaji": "souridaijin",
+  "meaning_id": "Prime Minister",
+  "meaning_en": "Prime Minister",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "総理大臣が辞任した。",
+      "id": "The Prime Minister has resigned.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "総理大臣は彼を外務大臣に任命した。",
+      "id": "The Prime Minister nominated him as Foreign Minister.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01374",
+  "word": "送料",
+  "reading": "そうりょう",
+  "romaji": "souryou",
+  "meaning_id": "postage; carriage",
+  "meaning_en": "postage; carriage",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "もしも無料でなければ、カタログの価格と日本までの送料をお教えください。",
+      "id": "If they are not free, please let me know how much the catalogue and the postage to Japan are.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01380",
+  "word": "速力",
+  "reading": "そくりょく",
+  "romaji": "sokuryoku",
+  "meaning_id": "speed",
+  "meaning_en": "speed",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "速力を使います。",
+      "id": "Menggunakan speed.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01381",
+  "word": "素質",
+  "reading": "そしつ",
+  "romaji": "soshitsu",
+  "meaning_id": "character; qualities",
+  "meaning_en": "character; qualities; genius",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私は優れた彼の妻になる素質がある。",
+      "id": "I make an excellent wife for him.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私には政治家の素質はありません。",
+      "id": "I am not cut out to be a politician.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01382",
+  "word": "祖先",
+  "reading": "そせん",
+  "romaji": "sosen",
+  "meaning_id": "ancestor",
+  "meaning_en": "ancestor",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私たちは祖先をうやまうべきだ。",
+      "id": "We should worship our ancestors.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "インディアンの祖先はアジアからやってきた。",
+      "id": "The Indians' ancestors arrived from Asia.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01389",
+  "word": "蕎麦",
+  "reading": "そば",
+  "romaji": "soba",
+  "meaning_id": "soba (buckwheat noodles)",
+  "meaning_en": "soba (buckwheat noodles)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "すぐそこでそばを立ち食いしてきた。",
+      "id": "I had a bowl of noodles at a street nearby.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "そばはそば粉から、うどんやきしめんは普通の小麦粉からできてるの。",
+      "id": "Soba is made of buckwheat flour, and udon and kishimen are made of plain wheat flour.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01392",
+  "word": "それなのに",
+  "reading": "それなのに",
+  "romaji": "sorenanoni",
+  "meaning_id": "and yet; despite this",
+  "meaning_en": "and yet; despite this; but even so; but even then",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は若い、それなのに分別がある。",
+      "id": "Dia young, and yet he is prudent.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼は帰ってくると約束した。それなのに帰ってこなかった。",
+      "id": "He promised to return and yet he didn't.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01396",
+  "word": "算盤",
+  "reading": "そろばん",
+  "romaji": "soroban",
+  "meaning_id": "abacus",
+  "meaning_en": "abacus",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "算盤とは日本のアバカスのことだ。",
+      "id": "A \"soroban\" is a type of Japanese abacus.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "いや算盤やってるから暗算得意なのかと思って。",
+      "id": "No, I just thought that since you can use an abacus, you might be good at doing calculations in your head.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01398",
+  "word": "存ずる",
+  "reading": "ぞんずる",
+  "romaji": "zonzuru",
+  "meaning_id": "mengetahui / kenal",
+  "meaning_en": "to know; to be aware (of); to be acquainted (with)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "こちらが考えられるデザインとなります。ご検討いただきたく存じます。",
+      "id": "We have submitted these possible designs for your consideration.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01399",
+  "word": "損得",
+  "reading": "そんとく",
+  "romaji": "sontoku",
+  "meaning_id": "loss and gain; advantage and disadvantage",
+  "meaning_en": "loss and gain; advantage and disadvantage",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "損得なしにしよう。",
+      "id": "Let's make it a fair trade.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01400",
+  "word": "タイア",
+  "reading": "タイア",
+  "romaji": "taia",
+  "meaning_id": "tire; tyre",
+  "meaning_en": "tire; tyre",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "タイアを使います。",
+      "id": "Menggunakan tire; tyre.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01401",
+  "word": "だいいち",
+  "reading": "だいいち",
+  "romaji": "daiichi",
+  "meaning_id": "first; foremost",
+  "meaning_en": "first; foremost",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "まず、第一に名前を書きなさい。",
+      "id": "Write your name, first of all.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "日本は天下第一の国である。",
+      "id": "Japan is the best country under the sun.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01402",
+  "word": "大学院",
+  "reading": "だいがくいん",
+  "romaji": "daigakuin",
+  "meaning_id": "graduate school",
+  "meaning_en": "graduate school",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "大学院に進学するつもりです。",
+      "id": "I'm planning to go to graduate school.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼は大学院に進学しないだろう。",
+      "id": "He won't go on to graduate school.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01403",
+  "word": "大工",
+  "reading": "だいく",
+  "romaji": "daiku",
+  "meaning_id": "carpenter",
+  "meaning_en": "carpenter",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私のおじいちゃんは大工です。",
+      "id": "My grandfather is a carpenter.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "父と妹は大工さんです。",
+      "id": "My father and sister are carpenters.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01404",
+  "word": "体系",
+  "reading": "たいけい",
+  "romaji": "taikei",
+  "meaning_id": "system; organization",
+  "meaning_en": "system; organization",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼らはその体系を大変な思索と労力を費やして仕上げた。",
+      "id": "They worked out the system with much thought and labor.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01405",
+  "word": "太鼓",
+  "reading": "たいこ",
+  "romaji": "taiko",
+  "meaning_id": "drum; tambourine",
+  "meaning_en": "drum; tambourine",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼らは太鼓をずっとたたき続けた。",
+      "id": "They had been thumping the drum all along.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "太鼓の音が聞こえる。",
+      "id": "I hear the drum.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01408",
+  "word": "大小",
+  "reading": "だいしょう",
+  "romaji": "daishou",
+  "meaning_id": "size",
+  "meaning_en": "size",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "道路上の大小の石に気をつけなさい。",
+      "id": "Watch out for big and small stones on the road!",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01409",
+  "word": "体制",
+  "reading": "たいせい",
+  "romaji": "taisei",
+  "meaning_id": "order; system",
+  "meaning_en": "order; system; structure; set-up; organization",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "共産主義はソ連で実践された体制である。",
+      "id": "Communism is the system practiced in the Soviet Union.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "爆破予告以来、空港の警備体制は強化された。",
+      "id": "Security at the airport has been stepped up since the bomb scare.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01410",
+  "word": "体積",
+  "reading": "たいせき",
+  "romaji": "taiseki",
+  "meaning_id": "capacity; volume",
+  "meaning_en": "capacity; volume",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "体積が大きいからといって常に重量も重いとは限らない。",
+      "id": "Great bulk does not always mean great weight.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "体積を計算するなら、縦と横と深さを掛ければよい。",
+      "id": "To calculate the volume, multiply the length by the width by the depth.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01414",
+  "word": "大木",
+  "reading": "たいぼく",
+  "romaji": "taiboku",
+  "meaning_id": "large tree",
+  "meaning_en": "large tree",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "昔そこにはスギの大木があった。",
+      "id": "There used to be a large cedar tree there.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "大木の陰に避難した。",
+      "id": "We took refuge behind a big tree.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01415",
+  "word": "題名",
+  "reading": "だいめい",
+  "romaji": "daimei",
+  "meaning_id": "title",
+  "meaning_en": "title",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その小説は聖書から題名をとっている。",
+      "id": "The novel takes its title from the Bible.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼女は私が題名を知らない歌を歌った。",
+      "id": "She sang a song, the title of which I did not know.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01416",
+  "word": "代名詞",
+  "reading": "だいめいし",
+  "romaji": "daimeishi",
+  "meaning_id": "pronoun",
+  "meaning_en": "pronoun",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "「クレオパトラ」は美人の代名詞になっている。",
+      "id": "The name Cleopatra has become a byword for a beautiful woman.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "関係代名詞は「接続詞+代名詞」のはたらきをしています。",
+      "id": "Relative pronouns perform as 'conjunction + pronoun'.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01417",
+  "word": "ダイヤグラム",
+  "reading": "ダイヤグラム",
+  "romaji": "daiyaguramu",
+  "meaning_id": "diagram",
+  "meaning_en": "diagram",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ダイヤグラムを使います。",
+      "id": "Menggunakan diagram.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01418",
+  "word": "ダイヤモンド",
+  "reading": "ダイヤモンド",
+  "romaji": "daiyamondo",
+  "meaning_id": "diamond",
+  "meaning_en": "diamond",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ダイヤモンドほど硬いものはない。",
+      "id": "Nothing is as hard as a diamond.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ダイヤモンドの硬度は１０である。",
+      "id": "The hardness of diamond is 10.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01420",
+  "word": "田植え",
+  "reading": "たうえ",
+  "romaji": "taue",
+  "meaning_id": "rice planting",
+  "meaning_en": "rice planting",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私たちは田植えをしました。",
+      "id": "We planted rice.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01422",
+  "word": "楕円",
+  "reading": "だえん",
+  "romaji": "daen",
+  "meaning_id": "ellipse",
+  "meaning_en": "ellipse",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "卵は、真ん丸ではなく楕円です。",
+      "id": "An egg is not round but oval.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01425",
+  "word": "滝",
+  "reading": "たき",
+  "romaji": "taki",
+  "meaning_id": "waterfall",
+  "meaning_en": "waterfall",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "雨が滝のように降ってきた。",
+      "id": "Down came the rain in torrents.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "滝のような汗が顔から流れ始めた。",
+      "id": "A waterfall of sweat began to pour down my face.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01429",
+  "word": "竹",
+  "reading": "たけ",
+  "romaji": "take",
+  "meaning_id": "bamboo; middle (of a three-tier ranking system)",
+  "meaning_en": "bamboo; middle (of a three-tier ranking system)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "林に竹が目立つ。",
+      "id": "Bamboo stands out in the woods.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "その竹はしなったが折れなかった。",
+      "id": "The bamboo gave but did not break.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01431",
+  "word": "但し",
+  "reading": "ただし",
+  "romaji": "tadashi",
+  "meaning_id": "but; however",
+  "meaning_en": "but; however; provided that",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ただし、列をつくって並ばなくてはならないが・・・。",
+      "id": "However, you have to queue...",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ただし、調子に乗ると失敗を招くので注意！",
+      "id": "However if you get carried away you'll risk failure so take care!",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01440",
+  "word": "足袋",
+  "reading": "たび",
+  "romaji": "tabi",
+  "meaning_id": "tabi; Japanese socks (with split toe)",
+  "meaning_en": "tabi; Japanese socks (with split toe)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "着物に足袋は欠かせません。",
+      "id": "In a kimono, tabi can't be absent.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01441",
+  "word": "ダブル",
+  "reading": "ダブル",
+  "romaji": "daburu",
+  "meaning_id": "double",
+  "meaning_en": "double",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ダブルのバスつきの部屋がいいです。",
+      "id": "I'd like a double with a bath.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ダブルにしてください。",
+      "id": "A double, please.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01444",
+  "word": "ダム",
+  "reading": "ダム",
+  "romaji": "damu",
+  "meaning_id": "dumb",
+  "meaning_en": "dumb",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "大雨のためにダムが決壊した。",
+      "id": "The dam burst owing to the heavy rain.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ダムの下流に水車小屋があった。",
+      "id": "There was a water mill below the dam.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01445",
+  "word": "溜息",
+  "reading": "ためいき",
+  "romaji": "tameiki",
+  "meaning_id": "a sigh",
+  "meaning_en": "a sigh",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は安心してホッとため息をもらした。",
+      "id": "He gave a sigh of relief.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "「ごめんなさい」少年は、ため息混じりにいいました。",
+      "id": "\"I am sorry,\" sighed the boy.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01450",
+  "word": "短期",
+  "reading": "たんき",
+  "romaji": "tanki",
+  "meaning_id": "short term",
+  "meaning_en": "short term",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "どんな語学も短期では無理だ。",
+      "id": "Whatever language you study, it takes time.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "短期契約社員達は予告なしに解雇された。",
+      "id": "The short term contract employees were dismissed without notice.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01451",
+  "word": "炭鉱",
+  "reading": "たんこう",
+  "romaji": "tankou",
+  "meaning_id": "coal mine; coal pit",
+  "meaning_en": "coal mine; coal pit",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あの支部は炭鉱労働組合に属している。",
+      "id": "That branch is affiliated to the miners' union.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01452",
+  "word": "短所",
+  "reading": "たんしょ",
+  "romaji": "tansho",
+  "meaning_id": "defect; demerit",
+  "meaning_en": "defect; demerit; weak point; disadvantage",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "すべての人は長所と短所を持っている。",
+      "id": "Everybody has his merits and demerits.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "なんにでも、長所と短所の両方がある。",
+      "id": "Ada pros and cons to anything.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01453",
+  "word": "たんす",
+  "reading": "たんす",
+  "romaji": "tansu",
+  "meaning_id": "chest of drawers",
+  "meaning_en": "chest of drawers",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "タンスで探していた物が見つかった。",
+      "id": "I found what I was looking for in the drawers.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01454",
+  "word": "淡水",
+  "reading": "たんすい",
+  "romaji": "tansui",
+  "meaning_id": "fresh water",
+  "meaning_en": "fresh water",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "塩水の方が淡水よりも浮力が大きい。",
+      "id": "Salt water is more buoyant than fresh water.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "サケは淡水で産卵する。",
+      "id": "Salmon lay their eggs in fresh water.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01456",
+  "word": "単数",
+  "reading": "たんすう",
+  "romaji": "tansuu",
+  "meaning_id": "singular (number)",
+  "meaning_en": "singular (number)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "単数を使います。",
+      "id": "Menggunakan singular (number).",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01457",
+  "word": "団地",
+  "reading": "だんち",
+  "romaji": "danchi",
+  "meaning_id": "multi-unit apartments",
+  "meaning_en": "multi-unit apartments",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "団地も昔と変わっていなかった。",
+      "id": "Even the apartment buildings were the same as they used to be.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "公園を囲む団地からは明かりが漏れている。",
+      "id": "Light escaped from the apartment complex surrounding the park.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01459",
+  "word": "短編",
+  "reading": "たんぺん",
+  "romaji": "tanpen",
+  "meaning_id": "pendek",
+  "meaning_en": "short (e.g. story, film)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "トムは短編を読んでいる。",
+      "id": "Tom is reading a short story.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "カフカは長篇より短篇の方が好きです。",
+      "id": "I prefer Kafka's shorter works more than his longer ones.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01460",
+  "word": "田んぼ",
+  "reading": "たんぼ",
+  "romaji": "tanbo",
+  "meaning_id": "paddy field; farm",
+  "meaning_en": "paddy field; farm",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この辺りは昔、田んぼだったんだよ。",
+      "id": "There used to be rice fields around here.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "その田んぼは荒れ果てたままだ。",
+      "id": "The rice field lies waste.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01462",
+  "word": "地下水",
+  "reading": "ちかすい",
+  "romaji": "chikasui",
+  "meaning_id": "underground water",
+  "meaning_en": "underground water",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ワイン畑の中には、未だ地下水を使用した灌漑を選択するところもある。",
+      "id": "Some vineyards still choose to irrigate using underground water sources.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01468",
+  "word": "地質",
+  "reading": "ちしつ",
+  "romaji": "chishitsu",
+  "meaning_id": "geological features",
+  "meaning_en": "geological features",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "地質学者が私たちの農場で石油の実地調査を行った。",
+      "id": "The geologists explored for oil on our farm.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "そうした決定は、今度は、丘そのものの地質的構造に影響される。",
+      "id": "That decision, in turn, was affected by the geological structure of the hill itself.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01469",
+  "word": "知人",
+  "reading": "ちじん",
+  "romaji": "chijin",
+  "meaning_id": "friend; acquaintance",
+  "meaning_en": "friend; acquaintance",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼には知人は多いが友人は少ない。",
+      "id": "He has many acquaintances but few friends.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "仕事上の知人はこの電話番号を知っている。",
+      "id": "My business acquaintances know this number.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01470",
+  "word": "地帯",
+  "reading": "ちたい",
+  "romaji": "chitai",
+  "meaning_id": "area; zone",
+  "meaning_en": "area; zone",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ツンドラ地帯の気候は厳しい。",
+      "id": "The tundra has a harsh climate.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "兵隊達は全員その地帯の地図を持っていた。",
+      "id": "The soldiers were all supplied with a map of the place.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01474",
+  "word": "チップ",
+  "reading": "チップ",
+  "romaji": "chippu",
+  "meaning_id": "gratuity; tip",
+  "meaning_en": "gratuity; tip; chip",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "チップを使います。",
+      "id": "Menggunakan gratuity; tip.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01475",
+  "word": "地点",
+  "reading": "ちてん",
+  "romaji": "chiten",
+  "meaning_id": "site; point on a map",
+  "meaning_en": "site; point on a map",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その湖はこの地点が深い。",
+      "id": "The lake is deep at this point.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "道路はこの地点で右にカーブしている。",
+      "id": "The road bends sharply to the right at this point.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01476",
+  "word": "地名",
+  "reading": "ちめい",
+  "romaji": "chimei",
+  "meaning_id": "place name",
+  "meaning_en": "place name",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その地名は伝説に由来する。",
+      "id": "The legend gave the name to the place.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私はその地名を思い出せなかった。",
+      "id": "I couldn't think of the name of the place.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01479",
+  "word": "中間",
+  "reading": "ちゅうかん",
+  "romaji": "chuukan",
+  "meaning_id": "middle; midway",
+  "meaning_en": "middle; midway; interim",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "厳しさと甘さの中間を見つける。",
+      "id": "Find a mean between harshness and indulgence.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "駅はその二つの町の中間にある。",
+      "id": "The station is situated between the two towns.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01480",
+  "word": "中旬",
+  "reading": "ちゅうじゅん",
+  "romaji": "chuujun",
+  "meaning_id": "second third of a month",
+  "meaning_en": "second third of a month",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "予定日は１月の中旬頃です。",
+      "id": "I'm expecting my baby in the middle of January.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼は５月中旬に日本に戻れるでしょう。",
+      "id": "He will come back to Japan in the middle of May.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01482",
+  "word": "中世",
+  "reading": "ちゅうせい",
+  "romaji": "chuusei",
+  "meaning_id": "Middle Ages; mediaeval times",
+  "meaning_en": "Middle Ages; mediaeval times",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "中世は人間が自由でない時代だった。",
+      "id": "The medieval times were an age when a human being wasn't free.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私の専門は中世ヨーロッパ史です。",
+      "id": "My major is medieval European history.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01483",
+  "word": "中性",
+  "reading": "ちゅうせい",
+  "romaji": "chuusei",
+  "meaning_id": "neuter gender; neutral (chem.)",
+  "meaning_en": "neuter gender; neutral (chem.); indifference; sterility",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "中性を使います。",
+      "id": "Menggunakan neuter gender; neutral (chem.).",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01484",
+  "word": "中途",
+  "reading": "ちゅうと",
+  "romaji": "chuuto",
+  "meaning_id": "in the middle; half-way",
+  "meaning_en": "in the middle; half-way",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私たちは山の中途まで登った。",
+      "id": "We went halfway up the mountain.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼は中途で引き返した。",
+      "id": "He turned back halfway.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01485",
+  "word": "中年",
+  "reading": "ちゅうねん",
+  "romaji": "chuunen",
+  "meaning_id": "middle-aged",
+  "meaning_en": "middle-aged",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼女は中年の都会派プロフェッショナルでした。",
+      "id": "She was a middle-aged urban professional.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼女は中年デブだ。",
+      "id": "She's a middle-aged fat woman.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01488",
+  "word": "長所",
+  "reading": "ちょうしょ",
+  "romaji": "chousho",
+  "meaning_id": "strong point; merit",
+  "meaning_en": "strong point; merit; advantage",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あなたの計画は実際的だという長所がある。",
+      "id": "Your plan has the virtue of being practical.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "顔が美しいことは一つの長所である。",
+      "id": "It's an advantage to be good-looking.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01489",
+  "word": "長女",
+  "reading": "ちょうじょ",
+  "romaji": "choujo",
+  "meaning_id": "eldest daughter",
+  "meaning_en": "eldest daughter",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼が一番愛しているのは彼女の長女です。",
+      "id": "It is her eldest daughter that he loves most.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼は二番目のレストランの経営を、長女にまかせた。",
+      "id": "He put his eldest daughter in charge of his second restaurant.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01492",
+  "word": "長短",
+  "reading": "ちょうたん",
+  "romaji": "choutan",
+  "meaning_id": "length; long and short",
+  "meaning_en": "length; long and short; +-",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "長短を使います。",
+      "id": "Menggunakan length; long and short.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01493",
+  "word": "頂点",
+  "reading": "ちょうてん",
+  "romaji": "chouten",
+  "meaning_id": "top; summit",
+  "meaning_en": "top; summit",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "経済は今景気循環の頂点にある。",
+      "id": "The economy is at peak of a business cycle at present.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "自動車生産は頂点を超えた。",
+      "id": "Automobile production has peaked out.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01494",
+  "word": "長男",
+  "reading": "ちょうなん",
+  "romaji": "chounan",
+  "meaning_id": "eldest son",
+  "meaning_en": "eldest son",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は私の長男の名付け親であった。",
+      "id": "He stood godfather to my first son.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "長男がすべての財産を相続した。",
+      "id": "The eldest son succeeded to all the property.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01495",
+  "word": "長方形",
+  "reading": "ちょうほうけい",
+  "romaji": "chouhoukei",
+  "meaning_id": "rectangle; oblong",
+  "meaning_en": "rectangle; oblong",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "長方形の対辺は平行である。",
+      "id": "The opposite sides of a rectangle are parallel.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この構成において、三角形の代わりに長方形を用いても類似の困難が生ずる。",
+      "id": "We encounter similar difficulties when we substitute rectangles for triangles in this configuration.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01496",
+  "word": "調味料",
+  "reading": "ちょうみりょう",
+  "romaji": "choumiryou",
+  "meaning_id": "condiment; seasoning",
+  "meaning_en": "condiment; seasoning",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "市販の調味料よりうまいと言いきれる。",
+      "id": "I can definitively say that this seasoning tastes better than anything you could buy in a store.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この調味料、万能すぎて何にでもかけてる。",
+      "id": "This seasoning is so versatile that you can put it on anything.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01497",
+  "word": "チョーク",
+  "reading": "チョーク",
+  "romaji": "chooku",
+  "meaning_id": "chock; chalk",
+  "meaning_en": "chock; chalk",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "チョークを使います。",
+      "id": "Menggunakan chock; chalk.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01499",
+  "word": "直線",
+  "reading": "ちょくせん",
+  "romaji": "chokusen",
+  "meaning_id": "straight line",
+  "meaning_en": "straight line",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この２つの直線は直角に交わっている。",
+      "id": "These two lines are at right angles.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "定規は直線を引くのに役立つ。",
+      "id": "A ruler helps one to draw a straight line.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01502",
+  "word": "直流",
+  "reading": "ちょくりゅう",
+  "romaji": "chokuryuu",
+  "meaning_id": "direct current",
+  "meaning_en": "direct current",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "直流を使います。",
+      "id": "Menggunakan direct current.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01505",
+  "word": "直径",
+  "reading": "ちょっけい",
+  "romaji": "chokkei",
+  "meaning_id": "diameter",
+  "meaning_en": "diameter",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その池は直径１００メートルある。",
+      "id": "The pond is 100 meters in diameter.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "その穴は直径二メートルです。",
+      "id": "The hole is two meters across.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01509",
+  "word": "塵紙",
+  "reading": "ちりがみ",
+  "romaji": "chirigami",
+  "meaning_id": "tissue paper; toilet paper",
+  "meaning_en": "tissue paper; toilet paper",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私は古新聞をちり紙と交換した。",
+      "id": "I traded old newspapers for toilet paper.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私はいつもポケットに十分なちり紙を持っています。",
+      "id": "I always have a good supply of tissues in my pockets.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01512",
+  "word": "ついで",
+  "reading": "ついで",
+  "romaji": "tsuide",
+  "meaning_id": "opportunity; occasion",
+  "meaning_en": "opportunity; occasion",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "買い物ついでにでもお寄りください。",
+      "id": "Tolong drop by when you go out for shopping sometimes.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "父親は息子の体をかついで部屋から運び出した。",
+      "id": "The father carried his son bodily from the room.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01513",
+  "word": "通貨",
+  "reading": "つうか",
+  "romaji": "tsuuka",
+  "meaning_id": "currency",
+  "meaning_en": "currency",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "欧州通貨はドルに対して弱くなった。",
+      "id": "European currencies weakened against the dollar.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "当局は自国の通貨を何とか安定させた。",
+      "id": "The authorities managed to stabilize the currency.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01515",
+  "word": "通ずる",
+  "reading": "つうずる",
+  "romaji": "tsuuzuru",
+  "meaning_id": "me-be open",
+  "meaning_en": "to be open (to traffic); to lead (to); to connect (to); to run (from, between; e.g. bus service)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "これは古今東西に通ずる真理である。",
+      "id": "Ini adalah a universal truth that transcends time.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "すべての道はローマに通ず。",
+      "id": "All roads lead to Rome.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01517",
+  "word": "通帳",
+  "reading": "つうちょう",
+  "romaji": "tsuuchou",
+  "meaning_id": "passbook",
+  "meaning_en": "passbook",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私は自分の通帳を見たが、幸運にも５０ドル余分に入っていた。",
+      "id": "I looked at my bank account book, and happily discovered that I had an extra $50!",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01520",
+  "word": "通路",
+  "reading": "つうろ",
+  "romaji": "tsuuro",
+  "meaning_id": "passage; pathway",
+  "meaning_en": "passage; pathway",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "これが海への通路だ。",
+      "id": "Ini adalah the passage to the sea.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "車が通路を防いでいた。",
+      "id": "A car was blocking the gateway.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01522",
+  "word": "突き当たり",
+  "reading": "つきあたり",
+  "romaji": "tsukiatari",
+  "meaning_id": "end (e.g. of street)",
+  "meaning_en": "end (e.g. of street)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "次の通りのつきあたりに私達の家があります。",
+      "id": "You'll find our house at the end of the next street.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01524",
+  "word": "月日",
+  "reading": "つきひ",
+  "romaji": "tsukihi",
+  "meaning_id": "time; years",
+  "meaning_en": "time; years; days",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その二つの事件の間には何年もの月日が経っている。",
+      "id": "Years intervene between the two incidents.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "月日がどんどん過ぎていったが、彼の消息は何も聞こえてこなかった。",
+      "id": "The months slipped by and still there was no news of him.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01534",
+  "word": "綱",
+  "reading": "つな",
+  "romaji": "tsuna",
+  "meaning_id": "rope",
+  "meaning_en": "rope",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "綱は張りすぎて切れた。",
+      "id": "The rope broke under the strain.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼は綱から手を放して川に落ちた。",
+      "id": "He lost hold of the rope and fell into the river.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01535",
+  "word": "繋がり",
+  "reading": "つながり",
+  "romaji": "tsunagari",
+  "meaning_id": "connection; link",
+  "meaning_en": "connection; link; relationship",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "オランダ語はドイツ語と密接なつながりがある。",
+      "id": "Dutch is closely related to German.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "２つの間には重要なつながりがある。",
+      "id": "There's a vital link between the two.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01538",
+  "word": "粒",
+  "reading": "つぶ",
+  "romaji": "tsubu",
+  "meaning_id": "grain",
+  "meaning_en": "grain",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "２粒の涙が彼女のほおを流れ落ちた。",
+      "id": "Two tears fell down her cheeks.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私は６時間ごとに２粒飲まなければなりません。",
+      "id": "I have to take two pills every six hours.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01544",
+  "word": "爪",
+  "reading": "つめ",
+  "romaji": "tsume",
+  "meaning_id": "fingernail or toenail; claw",
+  "meaning_en": "fingernail or toenail; claw; talon; hoof",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私は夜には決して爪を切らない。",
+      "id": "I never cut my nails at night.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "親指の爪をはがしてしまいました。",
+      "id": "I had my thumbnail torn off.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01545",
+  "word": "艶",
+  "reading": "つや",
+  "romaji": "tsuya",
+  "meaning_id": "gloss; glaze",
+  "meaning_en": "gloss; glaze",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "飼い猫の毛のつやが悪くなった。",
+      "id": "Our cat's fur has lost its luster.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この金属は磨くとつやがでる。",
+      "id": "This metal burnishes well.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01550",
+  "word": "出合い",
+  "reading": "であい",
+  "romaji": "deai",
+  "meaning_id": "an encounter",
+  "meaning_en": "an encounter",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私たちの出会いはまったくの偶然でした。",
+      "id": "Our meeting was quite accidental.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼女との出会いが始まった。",
+      "id": "I began a meeting with her.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01551",
+  "word": "手洗い",
+  "reading": "てあらい",
+  "romaji": "tearai",
+  "meaning_id": "restroom; lavatory",
+  "meaning_en": "restroom; lavatory; hand-washing",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "婦人用手洗いはどこですか。",
+      "id": "Where is the ladies' room?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01552",
+  "word": "定員",
+  "reading": "ていいん",
+  "romaji": "teiin",
+  "meaning_id": "fixed number of regular personnel; capacity (of boat, etc.)",
+  "meaning_en": "fixed number of regular personnel; capacity (of boat, etc.)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "このエレベーターの定員は１０人だ。",
+      "id": "This elevator's capacity is ten people.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01554",
+  "word": "定価",
+  "reading": "ていか",
+  "romaji": "teika",
+  "meaning_id": "established price",
+  "meaning_en": "established price",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "定価から５％値引きいたします。",
+      "id": "We'll allow a 5 percent discount off list prices.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "これはバーゲン商品なので定価よりやすくなっているんじゃないですか。",
+      "id": "Aren't you selling this at a discount price?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01555",
+  "word": "定期券",
+  "reading": "ていきけん",
+  "romaji": "teikiken",
+  "meaning_id": "commuter pass; season ticket",
+  "meaning_en": "commuter pass; season ticket",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "スミス氏は定期券を持っていくのを忘れた。",
+      "id": "Mr Smith forgot to take his commuter ticket.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私は愚かにも定期券を家に置き忘れた。",
+      "id": "I was foolish enough to leave my commutation ticket at home.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01556",
+  "word": "定休日",
+  "reading": "ていきゅうび",
+  "romaji": "teikyuubi",
+  "meaning_id": "regular holiday",
+  "meaning_en": "regular holiday",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "本日定休日。",
+      "id": "Today is our regular closing day.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ブルースカイスポーツ店は、何曜日が定休日だったかしら。",
+      "id": "Do you remember what day of the week Blue Sky Sports is closed?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01561",
+  "word": "出入口",
+  "reading": "でいりぐち",
+  "romaji": "deiriguchi",
+  "meaning_id": "exit and entrance",
+  "meaning_en": "exit and entrance",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "乗務員がただいま出入り口を開けております。",
+      "id": "The crew is now opening the hatch.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "出入り口は開けたままになっていた。",
+      "id": "The gate was left open.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01563",
+  "word": "テーマ",
+  "reading": "テーマ",
+  "romaji": "teema",
+  "meaning_id": "theme; project",
+  "meaning_en": "theme; project; topic (de: Thema)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "卒論のテーマは決めましたか。",
+      "id": "Have you decided on the subject of your thesis?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼の発言はそのテーマとは何の関係もない。",
+      "id": "His remark has nothing to do with the subject.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01564",
+  "word": "出来上がり",
+  "reading": "できあがり",
+  "romaji": "dekiagari",
+  "meaning_id": "be finished; ready",
+  "meaning_en": "be finished; ready; made for; cut out",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "どのくらいでこの洗濯物は出来上がりますか。",
+      "id": "How soon will this laundry be ready?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "これらの写真は、たいへんよく出来上がりました。",
+      "id": "These photos have come out very well.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01568",
+  "word": "手首",
+  "reading": "てくび",
+  "romaji": "tekubi",
+  "meaning_id": "wrist",
+  "meaning_en": "wrist",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "転んで手首を痛めました。",
+      "id": "I fell down and hurt my wrist.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "その男は少女の手首をつかんだ。",
+      "id": "The man caught the girl by the wrist.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01572",
+  "word": "手帳",
+  "reading": "てちょう",
+  "romaji": "techou",
+  "meaning_id": "notebook",
+  "meaning_en": "notebook",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "腰を下ろし、手帳を開きました。",
+      "id": "I sat down and opened my notebook.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "手帳にお名前を書いていただけませんか。",
+      "id": "Would you write your name in my notebook?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01573",
+  "word": "鉄橋",
+  "reading": "てっきょう",
+  "romaji": "tekkyou",
+  "meaning_id": "railway bridge; iron bridge",
+  "meaning_en": "railway bridge; iron bridge",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その川には鉄橋がすでに建設中だ。",
+      "id": "A railway bridge is already being built over the river.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "鉄橋が川にかけられた。",
+      "id": "An iron bridge was built across the river.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01574",
+  "word": "手続き",
+  "reading": "てつづき",
+  "romaji": "tetsuzuki",
+  "meaning_id": "procedure; (legal) process",
+  "meaning_en": "procedure; (legal) process; formalities",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "搭乗手続きをするのはどこですか。",
+      "id": "Where is the check-in counter?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "受付で入院の手続きをしてください。",
+      "id": "You have to fill out an application for admission to the hospital at the front desk.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01575",
+  "word": "鉄砲",
+  "reading": "てっぽう",
+  "romaji": "teppou",
+  "meaning_id": "gun",
+  "meaning_en": "gun",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "矢でも鉄砲でも持ってこい。",
+      "id": "Let them all come.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼が鉄砲を掃除していたら暴発し、もう少しで妻に当たるところだった。",
+      "id": "The gun went off while he was cleaning it, and the bullet almost struck his wife.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01576",
+  "word": "テニスコート",
+  "reading": "テニスコート",
+  "romaji": "tenisukooto",
+  "meaning_id": "tennis court",
+  "meaning_en": "tennis court",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "テニスコートを使います。",
+      "id": "Menggunakan tennis court.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01577",
+  "word": "手拭い",
+  "reading": "てぬぐい",
+  "romaji": "tenugui",
+  "meaning_id": "(hand) towel",
+  "meaning_en": "(hand) towel",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "手拭いを使います。",
+      "id": "Menggunakan (hand) towel.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01578",
+  "word": "手前",
+  "reading": "てまえ",
+  "romaji": "temae",
+  "meaning_id": "before; this side",
+  "meaning_en": "before; this side; we; you",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あの信号の手前で降ろしてください。",
+      "id": "Tolong let me off on this side of that traffic light.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "手前にひいて開けてください。",
+      "id": "Pull it open.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01579",
+  "word": "出迎え",
+  "reading": "でむかえ",
+  "romaji": "demukae",
+  "meaning_id": "meeting; reception",
+  "meaning_en": "meeting; reception",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "出迎えにきてくださってありがとう。",
+      "id": "Thank you for coming to meet me.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼はウエストさんを出迎えに空港に来ていました。",
+      "id": "He was at the airport to meet Mr West.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01584",
+  "word": "伝記",
+  "reading": "でんき",
+  "romaji": "denki",
+  "meaning_id": "biography; life story",
+  "meaning_en": "biography; life story",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "世界の歴史は偉人の伝記に外ならない。",
+      "id": "The history of the world is but the biography of great men.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "良い伝記はおもしろくて、ためにもなる。",
+      "id": "A good biography is interesting and instructive.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01585",
+  "word": "電球",
+  "reading": "でんきゅう",
+  "romaji": "denkyuu",
+  "meaning_id": "light bulb",
+  "meaning_en": "light bulb",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "電球が切れた。",
+      "id": "The light bulb has burned out.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "トマス・エジソンが電球を発明した。",
+      "id": "Thomas Edison invented the light bulb.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01586",
+  "word": "点数",
+  "reading": "てんすう",
+  "romaji": "tensuu",
+  "meaning_id": "marks; points",
+  "meaning_en": "marks; points; score; runs",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼女は英語の点数がよい。",
+      "id": "She gets good marks in English.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "あなたはよい点数をとりましたか。",
+      "id": "Did you get good marks?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01588",
+  "word": "電池",
+  "reading": "でんち",
+  "romaji": "denchi",
+  "meaning_id": "battery",
+  "meaning_en": "battery",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "このおもちゃの自動車は電池で動く。",
+      "id": "This toy car runs on batteries.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この電池はどれくらいもちますか。",
+      "id": "How long will this battery last?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01589",
+  "word": "電柱",
+  "reading": "でんちゅう",
+  "romaji": "denchuu",
+  "meaning_id": "telephone pole; telegraph pole",
+  "meaning_en": "telephone pole; telegraph pole; lightpole",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は車を電柱にぶつけた。",
+      "id": "He ran the car into a lamppost.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "そのバイクは電柱にぶつかった。",
+      "id": "The motorbike struck the telephone pole.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01592",
+  "word": "天皇",
+  "reading": "てんのう",
+  "romaji": "tennou",
+  "meaning_id": "Emperor of Japan",
+  "meaning_en": "Emperor of Japan",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "天皇は国家の象徴である。",
+      "id": "The Emperor shall be the symbol of the State.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "天皇は亡くなった方々の霊に祈りを捧げた。",
+      "id": "The Emperor prayed for the souls of the deceased.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01593",
+  "word": "電波",
+  "reading": "でんぱ",
+  "romaji": "denpa",
+  "meaning_id": "electro-magnetic wave",
+  "meaning_en": "electro-magnetic wave",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼の携帯電話は他の電話を妨害する電波を出した。",
+      "id": "His mobile phone produced radio emissions that interfered with other phones.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "小笠原諸島では、ＮＨＫの電波しか入らない。",
+      "id": "You can get only NHK in the Ogasawara islands.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01594",
+  "word": "テンポ",
+  "reading": "テンポ",
+  "romaji": "tenpo",
+  "meaning_id": "tempo",
+  "meaning_en": "tempo",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "リズムは軽快でテンポは速く、その曲は若者に好まれている。",
+      "id": "The rhythm is light, and the tempo fast - that song is liked by young people.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "その試合はテンポが遅くおまけに退屈だった。",
+      "id": "The game was slow, and it was also boring.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01595",
+  "word": "電流",
+  "reading": "でんりゅう",
+  "romaji": "denryuu",
+  "meaning_id": "electric current",
+  "meaning_en": "electric current",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "電流が流れる電線にコイルを近づけると、コイルにも電気が流れます。",
+      "id": "When a coil is moved near to a wire with current flowing in it current flows in the coil as well.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ソレノイドへの突入電流でノイズが発生します。",
+      "id": "Noise is produced by the sudden flow of current into a solenoid.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01596",
+  "word": "電力",
+  "reading": "でんりょく",
+  "romaji": "denryoku",
+  "meaning_id": "electric power",
+  "meaning_en": "electric power",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "うちの大学はあまりにも大量の電力を消費している。",
+      "id": "Our college uses far too much electricity.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "その川は町に電力を供給する。",
+      "id": "The river furnishes electric power to the town.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01597",
+  "word": "問い合わせ",
+  "reading": "といあわせ",
+  "romaji": "toiawase",
+  "meaning_id": "enquiry; ENQ",
+  "meaning_en": "enquiry; ENQ",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ご兄弟のことはカンザス州から問い合わせを受けたばかりです。",
+      "id": "We have just received an inquiry from Kansas concerning your brother.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "会社は心配の問い合わせでてんやわんやだった。",
+      "id": "The office was besieged by anxious inquiries.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01598",
+  "word": "銅",
+  "reading": "どう",
+  "romaji": "dou",
+  "meaning_id": "copper",
+  "meaning_en": "copper",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "銅はよく電気を通す。",
+      "id": "Copper conducts electricity well.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "青銅は銅とすずから成り立っている。",
+      "id": "Bronze is composed of copper and tin.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01601",
+  "word": "峠",
+  "reading": "とうげ",
+  "romaji": "touge",
+  "meaning_id": "ridge; (mountain) pass",
+  "meaning_en": "ridge; (mountain) pass; difficult part",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私達が峠にさしかかる頃に雨になった。",
+      "id": "It began to rain as we came near the pass.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01602",
+  "word": "動作",
+  "reading": "どうさ",
+  "romaji": "dousa",
+  "meaning_id": "action; movements",
+  "meaning_en": "action; movements; motions; bearing; behaviour; manners",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は動作がぎこちない。",
+      "id": "Dia awkward in his movements.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "過去の動作については過去形を用います。",
+      "id": "\"Past tense\" is used in connection with actions in the past.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01603",
+  "word": "東西",
+  "reading": "とうざい",
+  "romaji": "touzai",
+  "meaning_id": "East and West; whole country",
+  "meaning_en": "East and West; whole country",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この国では東西の文化が交じり合っている。",
+      "id": "Cultures of the East and the West are mixed in this country.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "バルカン山脈はブルガリアの中央を東西に走る山脈。",
+      "id": "The Balkan Mountain range runs across Bulgaria from west to east.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01608",
+  "word": "灯台",
+  "reading": "とうだい",
+  "romaji": "toudai",
+  "meaning_id": "lighthouse",
+  "meaning_en": "lighthouse",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "遠い灯台のかすかな光を見た。",
+      "id": "We saw the gleam of a distant lighthouse.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "灯台はきらきらと光を放っていた。",
+      "id": "The lighthouse was beaming forth rays of light.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01609",
+  "word": "盗難",
+  "reading": "とうなん",
+  "romaji": "tounan",
+  "meaning_id": "theft; robbery",
+  "meaning_en": "theft; robbery",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "盗難の届をだしたいのですけど。",
+      "id": "I would like to report a theft.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼は盗難車を見たと知らせてきた。",
+      "id": "He reported having seen the stolen car.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01610",
+  "word": "当番",
+  "reading": "とうばん",
+  "romaji": "touban",
+  "meaning_id": "being on duty",
+  "meaning_en": "being on duty",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "先月の日直当番全部私に押し付けた形でエスケープした野郎だ。",
+      "id": "He's the pest that, on last month's class-help day, escaped leaving me with all the work.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "今日はジョンが当番です。",
+      "id": "John is on duty today.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01613",
+  "word": "灯油",
+  "reading": "とうゆ",
+  "romaji": "touyu",
+  "meaning_id": "lamp oil; kerosene",
+  "meaning_en": "lamp oil; kerosene",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "雪の多いところでは、灯油は必需品です。",
+      "id": "In places where it snows a lot, kerosene is an indispensable item.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01614",
+  "word": "東洋",
+  "reading": "とうよう",
+  "romaji": "touyou",
+  "meaning_id": "Orient",
+  "meaning_en": "Orient",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は東洋芸術のかなりの専門家だ。",
+      "id": "Dia something of an expert on oriental art.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "東洋の陶器に興味があります。",
+      "id": "I have an interest in oriental ceramics.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01615",
+  "word": "童話",
+  "reading": "どうわ",
+  "romaji": "douwa",
+  "meaning_id": "fairy tale",
+  "meaning_en": "fairy tale",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あなたはこの童話を一人で書いたのですか。",
+      "id": "Did you write this fairy tale by yourself?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼はこの童話をひとりで書いた。",
+      "id": "He wrote this fairy tale by himself.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01623",
+  "word": "特色",
+  "reading": "とくしょく",
+  "romaji": "tokushoku",
+  "meaning_id": "characteristic; feature",
+  "meaning_en": "characteristic; feature",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "日本には多くのはっきりとした特色がある。",
+      "id": "Japan has many distinctive traits.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "湿気の多い気候はその半島の特色です。",
+      "id": "A humid climate is characteristic of the peninsula.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01624",
+  "word": "特長",
+  "reading": "とくちょう",
+  "romaji": "tokuchou",
+  "meaning_id": "forte; merit",
+  "meaning_en": "forte; merit",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "燃料の節約がこの自動車の大きな特長だ。",
+      "id": "Fuel economy is a big advantage of this car.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01625",
+  "word": "特定",
+  "reading": "とくてい",
+  "romaji": "tokutei",
+  "meaning_id": "specific; special",
+  "meaning_en": "specific; special; particular",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "別に特定の人をさして言っているのではない。",
+      "id": "I am not alluding to any person in particular.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "警察はいまだ犯人を特定できないでいる。",
+      "id": "The police still can't point out who committed the crime.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01630",
+  "word": "床の間",
+  "reading": "とこのま",
+  "romaji": "tokonoma",
+  "meaning_id": "alcove",
+  "meaning_en": "alcove",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "手紙に貼る三銭切手が買えないで、幾日も床の間の上に置いてあるようになった。",
+      "id": "I could not buy the 3 sen stamp to put on the letter, so it ended up staying for many days on top of the tokonoma.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01632",
+  "word": "都心",
+  "reading": "としん",
+  "romaji": "toshin",
+  "meaning_id": "heart (of city)",
+  "meaning_en": "heart (of city)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼はその商売を都心に集中した。",
+      "id": "He centered his business on the metropolitan area.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "都心では高層ビルが雨後のたけのこのように増えている。",
+      "id": "High rises are mushrooming in the heart of the city.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01633",
+  "word": "戸棚",
+  "reading": "とだな",
+  "romaji": "todana",
+  "meaning_id": "cupboard; locker",
+  "meaning_en": "cupboard; locker; closet; wardrobe",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この本は戸棚の上です。",
+      "id": "This book goes on the top shelf.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "皿を戸棚へしまってくれますか。",
+      "id": "Will you put the dishes away in the cupboard?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01650",
+  "word": "丼",
+  "reading": "どんぶり",
+  "romaji": "donburi",
+  "meaning_id": "porcelain bowl; bowl of rice with food on top",
+  "meaning_en": "porcelain bowl; bowl of rice with food on top",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼はご飯を丼で食べたよ。",
+      "id": "He ate rice in a big bowl.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01651",
+  "word": "内科",
+  "reading": "ないか",
+  "romaji": "naika",
+  "meaning_id": "internist clinic; internal medicine",
+  "meaning_en": "internist clinic; internal medicine",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "内科はどこですか。",
+      "id": "Where is the Internal Medicine Department?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01652",
+  "word": "内線",
+  "reading": "ないせん",
+  "romaji": "naisen",
+  "meaning_id": "phone extension; indoor wiring",
+  "meaning_en": "phone extension; indoor wiring; inner line",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "内線２１４に出る人なら誰でも構いません。",
+      "id": "I'll speak to anyone at extension 214.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "内線４５番をお願いします。",
+      "id": "Extension 45, please.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01653",
+  "word": "ナイロン",
+  "reading": "ナイロン",
+  "romaji": "nairon",
+  "meaning_id": "nylon",
+  "meaning_en": "nylon",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ナイロンストッキングはすぐ伝線する。",
+      "id": "Nylon stockings often run.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "このナイロンソックスは、洗濯がきく。",
+      "id": "These nylon socks wash well.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01658",
+  "word": "中身",
+  "reading": "なかみ",
+  "romaji": "nakami",
+  "meaning_id": "contents; interior",
+  "meaning_en": "contents; interior; substance; filling; (sword) blade",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "財布の中身をこの袋に空けなさい。",
+      "id": "Empty the purse into this bag.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼はポケットから中身を出した。",
+      "id": "He emptied his pockets of their contents.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01659",
+  "word": "中味",
+  "reading": "なかみ",
+  "romaji": "nakami",
+  "meaning_id": "contents; interior",
+  "meaning_en": "contents; interior; substance; filling; (sword) blade",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "財布の中身をこの袋に空けなさい。",
+      "id": "Empty the purse into this bag.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼はポケットから中身を出した。",
+      "id": "He emptied his pockets of their contents.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01660",
+  "word": "中指",
+  "reading": "なかゆび",
+  "romaji": "nakayubi",
+  "meaning_id": "middle finger",
+  "meaning_en": "middle finger",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "トムは今日校長に中指を立てました。",
+      "id": "Tom gave the middle finger to the principal today.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "中指が一番長いです。",
+      "id": "The middle finger is the longest.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01661",
+  "word": "仲良し",
+  "reading": "なかよし",
+  "romaji": "nakayoshi",
+  "meaning_id": "intimate friend; bosom buddy",
+  "meaning_en": "intimate friend; bosom buddy; chum",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "トムとジョンは仲良しです。",
+      "id": "Tom and John are good friends.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "わたしはベスと大の仲良しです。",
+      "id": "I am good friends with Beth.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01666",
+  "word": "謎謎",
+  "reading": "なぞなぞ",
+  "romaji": "nazonazo",
+  "meaning_id": "riddle; puzzle",
+  "meaning_en": "riddle; puzzle; enigma",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼はそのなぞなぞを難なく解いた。",
+      "id": "He had no difficulty explaining the mystery.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "そのなぞなぞは今も未解決である。",
+      "id": "The mystery still remains unsolved.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01671",
+  "word": "何々",
+  "reading": "なになに",
+  "romaji": "naninani",
+  "meaning_id": "such and such; What?",
+  "meaning_en": "such and such; What?",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "何々を使います。",
+      "id": "Menggunakan such and such; What?.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01672",
+  "word": "何分",
+  "reading": "なにぶん",
+  "romaji": "nanibun",
+  "meaning_id": "some; any",
+  "meaning_en": "some; any; (a) little; of some kind",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "なにぶんこんな辺ぴな村に住んでいるので、めったに客は来ない。",
+      "id": "Living as I do in a remote village, I seldom have visitors.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01674",
+  "word": "並木",
+  "reading": "なみき",
+  "romaji": "namiki",
+  "meaning_id": "roadside tree; row of trees",
+  "meaning_en": "roadside tree; row of trees",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "我々は背の高いポプラ並木を歩いた。",
+      "id": "We walked along an avenue of tall poplars.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01679",
+  "word": "南極",
+  "reading": "なんきょく",
+  "romaji": "nankyoku",
+  "meaning_id": "south pole; Antarctic",
+  "meaning_en": "south pole; Antarctic",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "新聞で彼が南極から帰って来たのを知った。",
+      "id": "I saw in the paper that he had returned from the South Pole.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "探検家は南極への出発を延期した。",
+      "id": "The expedition has postponed its departure to the Antarctic.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01682",
+  "word": "ナンバー",
+  "reading": "ナンバー",
+  "romaji": "nanbaa",
+  "meaning_id": "number",
+  "meaning_en": "number",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "車のナンバーを書き留められなかった。",
+      "id": "I was unable to write down the number of the car.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01683",
+  "word": "南米",
+  "reading": "なんべい",
+  "romaji": "nanbei",
+  "meaning_id": "South America",
+  "meaning_en": "South America",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私は清水の舞台から飛び降りる気持ちで南米に渡ります。",
+      "id": "I am going to take a big chance by migrating to South America.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私達は南米を旅行した。",
+      "id": "We traveled in South America.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01684",
+  "word": "南北",
+  "reading": "なんぼく",
+  "romaji": "nanboku",
+  "meaning_id": "south and north",
+  "meaning_en": "south and north",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "日本は南北に長い国です。",
+      "id": "Japan is a very long country from north to south.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01693",
+  "word": "虹",
+  "reading": "にじ",
+  "romaji": "niji",
+  "meaning_id": "rainbow",
+  "meaning_en": "rainbow",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "虹は自然現象である。",
+      "id": "A rainbow is a natural phenomenon.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "虹は最も美しい自然現象の１つだ。",
+      "id": "A rainbow is one of the most beautiful phenomena of nature.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01694",
+  "word": "日時",
+  "reading": "にちじ",
+  "romaji": "nichiji",
+  "meaning_id": "date and time",
+  "meaning_en": "date and time",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "会合の日時はおってお知らせします。",
+      "id": "We will let you know the time and date of the meeting soon.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "その日時はコーチに都合がよかった。",
+      "id": "The time and date suited our coach.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01695",
+  "word": "日用品",
+  "reading": "にちようひん",
+  "romaji": "nichiyouhin",
+  "meaning_id": "daily necessities",
+  "meaning_en": "daily necessities",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あのスーパーに行けば、たいていの日用品は間に合います。",
+      "id": "If you go to that supermarket, you can buy most things you use in your daily life.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "日用品の値段が上がった。",
+      "id": "Daily commodities increased in price.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01696",
+  "word": "日課",
+  "reading": "にっか",
+  "romaji": "nikka",
+  "meaning_id": "daily lesson; daily work",
+  "meaning_en": "daily lesson; daily work; daily routine",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "朝食前に新聞を読むのが私の日課です。",
+      "id": "My routine is to read the newspaper before breakfast.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01697",
+  "word": "日程",
+  "reading": "にってい",
+  "romaji": "nittei",
+  "meaning_id": "agenda",
+  "meaning_en": "agenda",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あす雨の場合は別の日程を組まなくちゃ。",
+      "id": "In case it rains tomorrow, we should make another arrangement.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私たちは日程を考慮に入れるべきだった。",
+      "id": "We should have taken the schedule into consideration.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01700",
+  "word": "女房",
+  "reading": "にょうぼう",
+  "romaji": "nyoubou",
+  "meaning_id": "wife",
+  "meaning_en": "wife",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "女房の手は店員さんより一回り小さい。",
+      "id": "My wife's hands are slightly smaller than the shop assistant's.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "女房にどなってたのはおまえさんか。",
+      "id": "Were you shouting at my wife?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01706",
+  "word": "ねじ",
+  "reading": "ねじ",
+  "romaji": "neji",
+  "meaning_id": "(a) screw",
+  "meaning_en": "(a) screw",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この機械は１時間に千個のねじを製造する。",
+      "id": "This machine cranks out a thousand screws an hour.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ネジを回すと、急に水が吹き出してきた。",
+      "id": "When I turned the screw, water burst out.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01708",
+  "word": "ネックレス",
+  "reading": "ネックレス",
+  "romaji": "nekkuresu",
+  "meaning_id": "necklace",
+  "meaning_en": "necklace",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その婦人は真珠のネックレスをかけていた。",
+      "id": "The lady wore a necklace of pearls.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "そのネックレスが１００ドルとは安い。",
+      "id": "The necklace is cheap at a hundred dollars.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01710",
+  "word": "寝巻",
+  "reading": "ねまき",
+  "romaji": "nemaki",
+  "meaning_id": "sleep-wear; nightclothes",
+  "meaning_en": "sleep-wear; nightclothes; pyjamas; nightgown; nightdress",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "寝巻きのままで朝ごはんを食べた。",
+      "id": "I had breakfast in pajamas.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "寝巻のまま学校に行ってしまった。",
+      "id": "I went to school in my pajamas.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01711",
+  "word": "寝間着",
+  "reading": "ねまき",
+  "romaji": "nemaki",
+  "meaning_id": "sleep-wear; nightclothes",
+  "meaning_en": "sleep-wear; nightclothes; pyjamas; nightgown; nightdress",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "寝巻きのままで朝ごはんを食べた。",
+      "id": "I had breakfast in pajamas.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "寝巻のまま学校に行ってしまった。",
+      "id": "I went to school in my pajamas.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01712",
+  "word": "狙い",
+  "reading": "ねらい",
+  "romaji": "nerai",
+  "meaning_id": "aim",
+  "meaning_en": "aim",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼女のねらいは教師になることである。",
+      "id": "She aims to become a teacher.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "またアフィ狙いの記事か。",
+      "id": "Another spam article hoping for click-throughs?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01714",
+  "word": "年度",
+  "reading": "ねんど",
+  "romaji": "nendo",
+  "meaning_id": "year; fiscal year",
+  "meaning_en": "year; fiscal year; school year; term",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "零細小売店などは新年度には利益を上げるでしょう。",
+      "id": "Mom-and-pop stores will turn a profit in the new fiscal year.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01715",
+  "word": "農産物",
+  "reading": "のうさんぶつ",
+  "romaji": "nousanbutsu",
+  "meaning_id": "agricultural produce",
+  "meaning_en": "agricultural produce",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "わが国の主な農産物は米である。",
+      "id": "The chief crop of our country is rice.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "今年の農産物の出来は思ったより良い。",
+      "id": "The farm production of this year is better than we expected.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01716",
+  "word": "農村",
+  "reading": "のうそん",
+  "romaji": "nouson",
+  "meaning_id": "agricultural community; farm village",
+  "meaning_en": "agricultural community; farm village; rural",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "農村を使います。",
+      "id": "Menggunakan agricultural community; farm village.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01717",
+  "word": "濃度",
+  "reading": "のうど",
+  "romaji": "noudo",
+  "meaning_id": "concentration; brightness",
+  "meaning_en": "concentration; brightness",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "濃度10%の食塩水の作り方を教えてください。",
+      "id": "Show me how to make 10% saline solution.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01718",
+  "word": "農薬",
+  "reading": "のうやく",
+  "romaji": "nouyaku",
+  "meaning_id": "agricultural chemicals",
+  "meaning_en": "agricultural chemicals",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼らは果樹に農薬を散布している。",
+      "id": "Mereka spraying the fruit trees.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "無農薬栽培とは、農薬を使わずに穀物、野菜、果物などの植物を栽培する方法です。",
+      "id": "Organic cultivation is a method of growing plants (grains, vegetables, fruit, etc.) without using agricultural chemicals.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01719",
+  "word": "能率",
+  "reading": "のうりつ",
+  "romaji": "nouritsu",
+  "meaning_id": "efficiency",
+  "meaning_en": "efficiency",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "そうすれば能率が上がりますよ。",
+      "id": "That makes for efficiency.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "商売では能率のよさということが最も重要な考えである。",
+      "id": "Efficiency is the dominant idea in business.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01720",
+  "word": "のこぎり",
+  "reading": "のこぎり",
+  "romaji": "nokogiri",
+  "meaning_id": "saw",
+  "meaning_en": "saw",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は丸太をのこぎりでひいて板にしている。",
+      "id": "Dia sawing a log into boards.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "父はのこぎりで木を切った。",
+      "id": "My father cut wood with a saw.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01726",
+  "word": "上り",
+  "reading": "のぼり",
+  "romaji": "nobori",
+  "meaning_id": "up-train (going to Tokyo); ascent",
+  "meaning_en": "up-train (going to Tokyo); ascent",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "道はここからゆるやかな上りだ。",
+      "id": "The road ascends gently here.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "頂上までの登りに６時間かかった。",
+      "id": "The climb to the summit took six hours.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01728",
+  "word": "糊",
+  "reading": "のり",
+  "romaji": "nori",
+  "meaning_id": "paste; starch",
+  "meaning_en": "paste; starch",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼はメモをドアに糊で貼った。",
+      "id": "He pasted the notice on the door.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "こののりはプラスチックには付かない。",
+      "id": "This glue does not adhere to plastic.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01733",
+  "word": "灰色",
+  "reading": "はいいろ",
+  "romaji": "haiiro",
+  "meaning_id": "grey; gray",
+  "meaning_en": "grey; gray; ashen",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私の父は青と灰色のネクタイを持っている。",
+      "id": "My father has a blue and gray tie.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "道路はほこりで灰色になっていた。",
+      "id": "The road was gray with dust.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01734",
+  "word": "俳句",
+  "reading": "はいく",
+  "romaji": "haiku",
+  "meaning_id": "haiku poetry",
+  "meaning_en": "haiku poetry",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "俳句は季節と関連が深い。",
+      "id": "Haiku are closely related to the seasons of the year.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "これは芭蕉の非常に有名な俳句です。",
+      "id": "Ini adalah a very famous haiku by Basho.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01735",
+  "word": "売店",
+  "reading": "ばいてん",
+  "romaji": "baiten",
+  "meaning_id": "shop; stand",
+  "meaning_en": "shop; stand",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "アイスクリーム売りが外の売店で客にアイスクリームを売っている。",
+      "id": "The ice cream vendor is waiting on customers at his outdoor stand.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "病院売店はどこにありますか。",
+      "id": "Where is the hospital shop?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01736",
+  "word": "バイバイ",
+  "reading": "バイバイ",
+  "romaji": "baibai",
+  "meaning_id": "bye-bye; goodbye",
+  "meaning_en": "bye-bye; goodbye",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "診察室を出る間際、先生が「バイバイ」と手を振ってくださいました。",
+      "id": "Just as we were leaving the exam room the doctor waved his hand saying, 'bye-bye'.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01742",
+  "word": "秤",
+  "reading": "はかり",
+  "romaji": "hakari",
+  "meaning_id": "scales; weighing machine",
+  "meaning_en": "scales; weighing machine",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "浴室の秤で体重を計った。",
+      "id": "I weighed myself on the bathroom scales.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "このはかりであなたの荷物を量っていいですよ。",
+      "id": "You can weigh your baggage in this balance.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01745",
+  "word": "吐き気",
+  "reading": "はきけ",
+  "romaji": "hakike",
+  "meaning_id": "nausea; sickness in the stomach",
+  "meaning_en": "nausea; sickness in the stomach",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "なんだかめまいと吐き気がします。",
+      "id": "I feel sort of dizzy and I feel like throwing up.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "吐き気がします。",
+      "id": "I feel like throwing up.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01748",
+  "word": "歯車",
+  "reading": "はぐるま",
+  "romaji": "haguruma",
+  "meaning_id": "gear; cog-wheel",
+  "meaning_en": "gear; cog-wheel",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "歯車がかみ合っている。",
+      "id": "The cog-wheels are in gear.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ここの小さな歯車がないんだ。",
+      "id": "A small gear is missing here.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01749",
+  "word": "バケツ",
+  "reading": "バケツ",
+  "romaji": "baketsu",
+  "meaning_id": "bucket; pail",
+  "meaning_en": "bucket; pail",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼はバケツに水をいっぱい入れた。",
+      "id": "He filled the bucket with water.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私はバケツを水でいっぱいにした。",
+      "id": "I filled the pail with water.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01752",
+  "word": "梯子",
+  "reading": "はしご",
+  "romaji": "hashigo",
+  "meaning_id": "ladder; stairs",
+  "meaning_en": "ladder; stairs",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は平衡を失ってはしごから落ちた。",
+      "id": "He lost his balance and fell off the ladder.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私ははしごを使って屋根に登った。",
+      "id": "I went up to the roof by means of a ladder.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01755",
+  "word": "斜",
+  "reading": "はす",
+  "romaji": "hasu",
+  "meaning_id": "diagonal",
+  "meaning_en": "diagonal",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼の発想はいつも斜め上だ。",
+      "id": "His ideas always come out of left field.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "布を斜めにカットします。",
+      "id": "Cut the cloth diagonally.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01757",
+  "word": "パターン",
+  "reading": "パターン",
+  "romaji": "pataan",
+  "meaning_id": "pattern",
+  "meaning_en": "pattern",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "世界貿易の変動パターンが次の表で明らかにされている。",
+      "id": "The shifting pattern of world trade is made clear in the following table.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この母音変化はそれぞれの単語に指定される全体のアクセントパターンと大いに関係している。",
+      "id": "This vowel change has much to do with the overall accent pattern assigned to each word.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01758",
+  "word": "肌着",
+  "reading": "はだぎ",
+  "romaji": "hadagi",
+  "meaning_id": "underwear",
+  "meaning_en": "underwear",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は肌着を裏返しに着た。",
+      "id": "He put on his undershirt inside out.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01760",
+  "word": "鉢",
+  "reading": "はち",
+  "romaji": "hachi",
+  "meaning_id": "a bowl; a pot",
+  "meaning_en": "a bowl; a pot",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "はちには砂糖が全然ない。",
+      "id": "Ada no sugar in the bowl.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼は粘土で鉢をつくった。",
+      "id": "He formed the clay into a bowl.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01762",
+  "word": "バック",
+  "reading": "バック",
+  "romaji": "bakku",
+  "meaning_id": "back",
+  "meaning_en": "back",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "バックを使います。",
+      "id": "Menggunakan back.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01764",
+  "word": "発想",
+  "reading": "はっそう",
+  "romaji": "hassou",
+  "meaning_id": "expression (music); conceptualization",
+  "meaning_en": "expression (music); conceptualization",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その人達は大胆な発想をすべきだ。",
+      "id": "They should have bold ideas.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "トランプでインチキをするという良い発想を偶然思い付いた。",
+      "id": "I hit on the terrific idea of cheating at cards by chance.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01770",
+  "word": "話中",
+  "reading": "はなしちゅう",
+  "romaji": "hanashichuu",
+  "meaning_id": "while talking; the line is busy",
+  "meaning_en": "while talking; the line is busy",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "すみません。ただいま話し中です。",
+      "id": "Sorry, the line is busy now.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ちょうど今電話で話し中なんだ。",
+      "id": "I've got my friend on the line right now.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01772",
+  "word": "花火",
+  "reading": "はなび",
+  "romaji": "hanabi",
+  "meaning_id": "fireworks",
+  "meaning_en": "fireworks",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "すごい花火だ！",
+      "id": "These fireworks are spectacular!",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "夜までいて花火を見ていこうよ。",
+      "id": "Let's stay until nightfall and watch the fireworks.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01773",
+  "word": "花嫁",
+  "reading": "はなよめ",
+  "romaji": "hanayome",
+  "meaning_id": "bride",
+  "meaning_en": "bride",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "花嫁はたいへん美しく見えた。",
+      "id": "The bride looked very beautiful.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼女は花嫁のような衣装を着ている。",
+      "id": "Dia dressed like a bride.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01775",
+  "word": "ばね",
+  "reading": "ばね",
+  "romaji": "bane",
+  "meaning_id": "musim semi",
+  "meaning_en": "spring (e.g. coil, leaf)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "そのばね１個で車の全重量を支えている。",
+      "id": "That one spring carries the whole weight of the car.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01777",
+  "word": "破片",
+  "reading": "はへん",
+  "romaji": "hahen",
+  "meaning_id": "fragment; splinter",
+  "meaning_en": "fragment; splinter; broken piece",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼はその破片をくっつけ合わした。",
+      "id": "He stuck the broken pieces together.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼女はガラスの破片で指を切った。",
+      "id": "She cut her finger on the broken glass.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01778",
+  "word": "歯磨き",
+  "reading": "はみがき",
+  "romaji": "hamigaki",
+  "meaning_id": "dentifrice; toothpaste",
+  "meaning_en": "dentifrice; toothpaste",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "歯磨きをしなさい。",
+      "id": "Brush your teeth.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "歯磨きはどこ？",
+      "id": "Where's the toothpaste?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01780",
+  "word": "早口",
+  "reading": "はやくち",
+  "romaji": "hayakuchi",
+  "meaning_id": "fast-talking",
+  "meaning_en": "fast-talking",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "アナウンサーは早口が出来る。",
+      "id": "The announcer can talk rapidly.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼女は早口で話す傾向が多い。",
+      "id": "She tends to speak rapidly.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01785",
+  "word": "針金",
+  "reading": "はりがね",
+  "romaji": "harigane",
+  "meaning_id": "wire",
+  "meaning_en": "wire",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私達は二本の柱の間に針金を張った。",
+      "id": "We extended a wire between two posts.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "このかごは、針金でできている。",
+      "id": "This cage is made of wire.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01788",
+  "word": "半径",
+  "reading": "はんけい",
+  "romaji": "hankei",
+  "meaning_id": "radius",
+  "meaning_en": "radius",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "地球の半径は、約6,000キロです。",
+      "id": "Earth's radius is about six thousand kilometres.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "原点を中心とする半径2の円と，直線 y = x − 1 の交点を求めよ。",
+      "id": "Consider a circle of radius 2 centered at the origin. Find its points of intersection with the line y = x - 1.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01789",
+  "word": "判子",
+  "reading": "はんこ",
+  "romaji": "hanko",
+  "meaning_id": "seal (used for signature)",
+  "meaning_en": "seal (used for signature)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私たちの生活には判子が必需品です。",
+      "id": "Hanko are essential in our daily life.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "例えば、宅配便の受け取りには、判子は必要有りません。",
+      "id": "For example, you don't need a personal seal to collect a parcel.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01791",
+  "word": "判事",
+  "reading": "はんじ",
+  "romaji": "hanji",
+  "meaning_id": "judge; judiciary",
+  "meaning_en": "judge; judiciary",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "君はあの判事を買収できない。",
+      "id": "You cannot buy that judge.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "判事には時間を止めれない。",
+      "id": "The judge can't stop.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01793",
+  "word": "番地",
+  "reading": "ばんち",
+  "romaji": "banchi",
+  "meaning_id": "house number; address",
+  "meaning_en": "house number; address",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼女はラッセルスクエア５６番地に住んでいた。",
+      "id": "She lived at 56 Russell Square.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01794",
+  "word": "パンツ",
+  "reading": "パンツ",
+  "romaji": "pantsu",
+  "meaning_id": "underpants",
+  "meaning_en": "underpants",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "パンツとブラジャー以外は全部脱いでください。",
+      "id": "Tolong take off all your clothes except your underpants and bra.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "おい、いい加減パンツネタはやめとけよな、読者が退く、ドンビキ。",
+      "id": "Hey, it's about time you quit it with the panty jokes. You'll put off the readers, you creeper!",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01795",
+  "word": "バンド",
+  "reading": "バンド",
+  "romaji": "bando",
+  "meaning_id": "band",
+  "meaning_en": "band",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "バンドの演奏は何時に始まりますか。",
+      "id": "What time will the band start playing?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "バンドが行進曲を終えたところです。",
+      "id": "The band has played a march.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01796",
+  "word": "半島",
+  "reading": "はんとう",
+  "romaji": "hantou",
+  "meaning_id": "peninsula",
+  "meaning_en": "peninsula",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "湿気の多い気候はその半島の特色です。",
+      "id": "A humid climate is characteristic of the peninsula.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "僕はこの夏休みに数人の友達と、伊豆半島を歩いて一周するのを楽しみにしています。",
+      "id": "I am looking forward to walking around the Izu Peninsula with some of my friends during summer vacation.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01797",
+  "word": "ハンドル",
+  "reading": "ハンドル",
+  "romaji": "handoru",
+  "meaning_id": "handle; steering wheel",
+  "meaning_en": "handle; steering wheel",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "このハンドルがどうしても回らないんだ。",
+      "id": "This handle will not turn.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "米国車のハンドルは左側にある。",
+      "id": "Steering wheels of American cars are on the left side.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01798",
+  "word": "日当たり",
+  "reading": "ひあたり",
+  "romaji": "hiatari",
+  "meaning_id": "exposure to the sun; sunny place",
+  "meaning_en": "exposure to the sun; sunny place",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼らは日当たりのよい家に住んでいる。",
+      "id": "They live in a sunny house.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この部屋は日当たりが良くない。",
+      "id": "This room doesn't get much sunshine.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01801",
+  "word": "日陰",
+  "reading": "ひかげ",
+  "romaji": "hikage",
+  "meaning_id": "shadow",
+  "meaning_en": "shadow",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "日陰で一休みしよう。",
+      "id": "Let's take a rest in the shade.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私は日陰に立っている。",
+      "id": "I'm standing in the shade.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01807",
+  "word": "引分け",
+  "reading": "ひきわけ",
+  "romaji": "hikiwake",
+  "meaning_id": "a draw (in competition); tie game",
+  "meaning_en": "a draw (in competition); tie game",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "野球の試合は引き分けに終わった。",
+      "id": "The baseball game ended in a draw.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "二人の口論は結局引き分けに終わった。",
+      "id": "Their argument eventually ended in a draw.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01808",
+  "word": "日差し",
+  "reading": "ひざし",
+  "romaji": "hizashi",
+  "meaning_id": "sunlight; rays of the sun",
+  "meaning_en": "sunlight; rays of the sun",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は手で目から日差しをさえぎった。",
+      "id": "He used his hand to screen the sunlight from his eyes.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "強い日差しで彼の背中はひどく焼けた。",
+      "id": "Due to the intense sunlight, his back was sunburnt.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01809",
+  "word": "肘",
+  "reading": "ひじ",
+  "romaji": "hiji",
+  "meaning_id": "elbow",
+  "meaning_en": "elbow",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼女は私の肘をちょっと押した。",
+      "id": "She gave my elbow a little jog.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "テニスで肘を痛めました。",
+      "id": "I have tennis elbow.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01810",
+  "word": "ピストル",
+  "reading": "ピストル",
+  "romaji": "pisutoru",
+  "meaning_id": "pistol",
+  "meaning_en": "pistol",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "暴漢のピストルが発射された。",
+      "id": "A ruffian's pistol went off.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼はピストルを取ろうと手を伸ばした。",
+      "id": "He reached for the pistol.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01811",
+  "word": "ビタミン",
+  "reading": "ビタミン",
+  "romaji": "bitamin",
+  "meaning_id": "vitamin",
+  "meaning_en": "vitamin",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ビタミンが豊富にある野菜を食べた方がいい。",
+      "id": "You should eat some vegetables rich in vitamins.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "オレンジはビタミンを多く含んでいる。",
+      "id": "Oranges have a high vitamin content.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01819",
+  "word": "筆者",
+  "reading": "ひっしゃ",
+  "romaji": "hissha",
+  "meaning_id": "writer; author",
+  "meaning_en": "writer; author",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あなたは筆者が言っていることを理解できますか。",
+      "id": "Can you make sense of what the writer is saying?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "筆者はそうした風潮を好まない。",
+      "id": "The present writer doesn't like such a tendency.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01820",
+  "word": "必需品",
+  "reading": "ひつじゅひん",
+  "romaji": "hitsujuhin",
+  "meaning_id": "necessities; necessary article",
+  "meaning_en": "necessities; necessary article; requisite; essential",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "カメラは私の必需品でした。",
+      "id": "The camera was essential for me.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "雪の多いところでは、灯油は必需品です。",
+      "id": "In places where it snows a lot, kerosene is an indispensable item.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01821",
+  "word": "人差し指",
+  "reading": "ひとさしゆび",
+  "romaji": "hitosashiyubi",
+  "meaning_id": "index finger",
+  "meaning_en": "index finger",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "火ばさみで人差し指をやけどした。",
+      "id": "I burned my forefinger on fire tongs.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼女はその箱を人差し指でとんとんとたたいた。",
+      "id": "She tapped the box with her forefinger.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01822",
+  "word": "一通り",
+  "reading": "ひととおり",
+  "romaji": "hitotoori",
+  "meaning_id": "ordinary; usual",
+  "meaning_en": "ordinary; usual; in general; briefly",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私は生け花を一通りは習いました。",
+      "id": "I have learned the basics of the art of flower arrangement.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "一通り読み終えたところで、あんぐり口を開けた。",
+      "id": "As his eyes ran over the paper, his jaw fell.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01823",
+  "word": "人通り",
+  "reading": "ひとどおり",
+  "romaji": "hitodoori",
+  "meaning_id": "pedestrian traffic",
+  "meaning_en": "pedestrian traffic",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その道路は人通りはなかった。",
+      "id": "The road was clear of traffic.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "夜は人通りが無くなった。",
+      "id": "The streets emptied in the night.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01825",
+  "word": "瞳",
+  "reading": "ひとみ",
+  "romaji": "hitomi",
+  "meaning_id": "pupil (of eye)",
+  "meaning_en": "pupil (of eye)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あなたの瞳に、吸い込まれそう！",
+      "id": "I feel like I'm being drawn into your eyes.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "瞳は日のあたる所では収縮する。",
+      "id": "The pupils of the eyes contract in sunlight.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01827",
+  "word": "独り言",
+  "reading": "ひとりごと",
+  "romaji": "hitorigoto",
+  "meaning_id": "a soliloquy; a monologue",
+  "meaning_en": "a soliloquy; a monologue; speaking to oneself",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私は彼がぶつぶつ独り言をいうのを聞いた。",
+      "id": "I heard him mumble to himself.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私はそうひとりごとを言った。",
+      "id": "I said that to myself.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01829",
+  "word": "ビニール",
+  "reading": "ビニール",
+  "romaji": "biniiru",
+  "meaning_id": "vinyl",
+  "meaning_en": "vinyl",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ビニールは熱に弱いのが難点だ。",
+      "id": "The weakness of vinyl is that it is easily affected by heat.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01831",
+  "word": "日日",
+  "reading": "ひにち",
+  "romaji": "hinichi",
+  "meaning_id": "every day; daily",
+  "meaning_en": "every day; daily; day after day",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "会合の日にちと場所が決定された。",
+      "id": "The date and place of the meeting have been fixed.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "日にちはどのくらいかかりますか。",
+      "id": "How long will it take?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01833",
+  "word": "日の入り",
+  "reading": "ひのいり",
+  "romaji": "hinoiri",
+  "meaning_id": "sunset",
+  "meaning_en": "sunset",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "こんなに美しい日の入りを見たことがありますか。",
+      "id": "Have you ever seen such a beautiful sunset?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "これは、私が今までに見たうちで一番美しい日の入りだ。",
+      "id": "Ini adalah the most beautiful sunset that I have ever seen.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01834",
+  "word": "日の出",
+  "reading": "ひので",
+  "romaji": "hinode",
+  "meaning_id": "sunrise",
+  "meaning_en": "sunrise",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "なんと美しい日の出でしょう。",
+      "id": "How beautiful a sunrise is!",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "頂上から見る日の出は美しかった。",
+      "id": "The rising sun seen from the top was beautiful.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01835",
+  "word": "響き",
+  "reading": "ひびき",
+  "romaji": "hibiki",
+  "meaning_id": "echo; sound",
+  "meaning_en": "echo; sound; reverberation; noise",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼の声に多少怒りの響きがあった。",
+      "id": "There was a suggestion of anger in his voice.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼のピアノ演奏はすばらしい響きがした。",
+      "id": "His piano playing sounded fantastic.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01837",
+  "word": "皮膚",
+  "reading": "ひふ",
+  "romaji": "hifu",
+  "meaning_id": "skin",
+  "meaning_en": "skin",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "日光は皮膚に作用する。",
+      "id": "The sunbeam acts upon the skin.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "日焼けは皮膚をヒリヒリさせる。",
+      "id": "Sunburn irritates the skin.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01839",
+  "word": "ひゃっかじてん",
+  "reading": "ひゃっかじてん",
+  "romaji": "hyakkajiten",
+  "meaning_id": "encyclopedia",
+  "meaning_en": "encyclopedia",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この百科事典は、妻のものです。",
+      "id": "This encyclopedia belongs to my wife.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼はいわゆる歩く百科事典だ。",
+      "id": "Dia what is called a walking encyclopedia.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01840",
+  "word": "美容",
+  "reading": "びよう",
+  "romaji": "biyou",
+  "meaning_id": "beauty of figure or form",
+  "meaning_en": "beauty of figure or form",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "間食は美容に悪い。",
+      "id": "Eating between meals is bad for the figure.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼女は美容室に行った。",
+      "id": "She went to the hairdresser's.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01841",
+  "word": "表紙",
+  "reading": "ひょうし",
+  "romaji": "hyoushi",
+  "meaning_id": "front cover; binding",
+  "meaning_en": "front cover; binding",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は手を伸ばして小さな皮表紙の本をとった。",
+      "id": "He reached out and took down a small leather bound book.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "本をその表紙で判断してはいけない。",
+      "id": "Don't judge a book by its cover.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01842",
+  "word": "標識",
+  "reading": "ひょうしき",
+  "romaji": "hyoushiki",
+  "meaning_id": "sign; mark",
+  "meaning_en": "sign; mark",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼らはその標識を壁に取り付けた。",
+      "id": "They fixed the sign to the wall.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "その標識は進む方向を示している。",
+      "id": "The sign indicates the way to go.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01843",
+  "word": "標準",
+  "reading": "ひょうじゅん",
+  "romaji": "hyoujun",
+  "meaning_id": "standard; level",
+  "meaning_en": "standard; level",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私は標準英語を勉強したい。",
+      "id": "Saya ingin learn standard English.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼の仕事は標準以下だ。",
+      "id": "His work is below average.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01844",
+  "word": "標本",
+  "reading": "ひょうほん",
+  "romaji": "hyouhon",
+  "meaning_id": "example; specimen",
+  "meaning_en": "example; specimen",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "たとえば、標本はいくつですか。",
+      "id": "How many samples, for example?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "これらの標本はいくつかの種類に分類される。",
+      "id": "These specimens are divided into several categories.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01846",
+  "word": "平仮名",
+  "reading": "ひらがな",
+  "romaji": "hiragana",
+  "meaning_id": "hiragana; 47 syllables",
+  "meaning_en": "hiragana; 47 syllables; the cursive syllabary",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "平仮名は書けるんだけど、片仮名はまだ書けないんだ。",
+      "id": "I can write hiragana, but I can't yet write katakana.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ひらがなって手書きできる？",
+      "id": "Can you write hiragana?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01847",
+  "word": "ビルディング",
+  "reading": "ビルディング",
+  "romaji": "birudingu",
+  "meaning_id": "building",
+  "meaning_en": "building",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ビルディングを使います。",
+      "id": "Menggunakan building.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01850",
+  "word": "広さ",
+  "reading": "ひろさ",
+  "romaji": "hirosa",
+  "meaning_id": "extent",
+  "meaning_en": "extent",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この家の広さはどのくらいありますか。",
+      "id": "What is the area of this house?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼の部屋は私の部屋の倍の広さだ。",
+      "id": "His room is twice as large as mine.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01851",
+  "word": "広場",
+  "reading": "ひろば",
+  "romaji": "hiroba",
+  "meaning_id": "plaza",
+  "meaning_en": "plaza",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "広場で野球をするのはどうでしょうか。",
+      "id": "How about we play baseball in the open space?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "広場にあるあの棒をみてごらん。",
+      "id": "Look at that pole in the square.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01854",
+  "word": "ピンク",
+  "reading": "ピンク",
+  "romaji": "pinku",
+  "meaning_id": "pink",
+  "meaning_en": "pink",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あのピンクの服を着た女性はだれですか。",
+      "id": "Who is the woman dressed in pink?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "服は赤、ピンク、青色などであった。",
+      "id": "The costumes were red, pink, blue, and so forth.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01855",
+  "word": "便箋",
+  "reading": "びんせん",
+  "romaji": "binsen",
+  "meaning_id": "writing paper; stationery",
+  "meaning_en": "writing paper; stationery",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その便せんには校章が打ち出しにされている。",
+      "id": "The note is embossed with the school emblem.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "便箋をください。",
+      "id": "I need some writing paper.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01857",
+  "word": "ファスナー",
+  "reading": "ファスナー",
+  "romaji": "fasunaa",
+  "meaning_id": "fastener; zipper",
+  "meaning_en": "fastener; zipper",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ファスナーを発明したとき、その実業家は何と言ったか。",
+      "id": "What did the businessman say when he invented the zip-fastener?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼女はファスナーをとめることができなかった。",
+      "id": "She couldn't fasten the zip of her dress.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01858",
+  "word": "風船",
+  "reading": "ふうせん",
+  "romaji": "fuusen",
+  "meaning_id": "balloon",
+  "meaning_en": "balloon",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "風船が空に上がっていった。",
+      "id": "The balloon went up in the sky.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "風船が空に向かって上昇しています。",
+      "id": "A balloon is ascending into the sky.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01864",
+  "word": "付近",
+  "reading": "ふきん",
+  "romaji": "fukin",
+  "meaning_id": "neighbourhood; vicinity",
+  "meaning_en": "neighbourhood; vicinity; environs",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この付近はモダンな建物が多い。",
+      "id": "Ada many modern buildings around here.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "２５号線北方面の入り口付近にいます。",
+      "id": "I'm near the on ramp to 25 north.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01866",
+  "word": "副詞",
+  "reading": "ふくし",
+  "romaji": "fukushi",
+  "meaning_id": "adverb",
+  "meaning_en": "adverb",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "英語の副詞の中には形容詞の役目をするものがある。",
+      "id": "Some English adverbs function as adjectives.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "補足情報には、副詞や副詞のはたらきをするものが入ります。",
+      "id": "Supplementary information includes adverbs and things that function as adverbs.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01868",
+  "word": "複数",
+  "reading": "ふくすう",
+  "romaji": "fukusuu",
+  "meaning_id": "plural; multiple",
+  "meaning_en": "plural; multiple",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "アジアの宗教から閃きを得て、彼は複数の素晴らしい彫刻を生み出した。",
+      "id": "Asian religions inspire him to create splendid sculptures.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01874",
+  "word": "符号",
+  "reading": "ふごう",
+  "romaji": "fugou",
+  "meaning_id": "sign; mark",
+  "meaning_en": "sign; mark; symbol",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "符号を使います。",
+      "id": "Menggunakan sign; mark.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01875",
+  "word": "夫妻",
+  "reading": "ふさい",
+  "romaji": "fusai",
+  "meaning_id": "man and wife; married couple",
+  "meaning_en": "man and wife; married couple",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ジョーンズ夫妻は娘を愛している。",
+      "id": "The Joneses love their daughter.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "夫妻は化学を近代科学へと一変させた。",
+      "id": "The couple transformed chemistry into a modern science.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01880",
+  "word": "武士",
+  "reading": "ぶし",
+  "romaji": "bushi",
+  "meaning_id": "warrior; samurai",
+  "meaning_en": "warrior; samurai",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "武士は食わねど高楊枝。",
+      "id": "A samurai, even when he has not eaten, uses a toothpick like a lord.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "江戸時代、武士は刀を２本刺していた。",
+      "id": "A samurai in the Edo era carried two swords.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01881",
+  "word": "部首",
+  "reading": "ぶしゅ",
+  "romaji": "bushu",
+  "meaning_id": "radical (of a kanji character)",
+  "meaning_en": "radical (of a kanji character)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "部首を使います。",
+      "id": "Menggunakan radical (of a kanji character).",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01882",
+  "word": "襖",
+  "reading": "ふすま",
+  "romaji": "fusuma",
+  "meaning_id": "sliding screen",
+  "meaning_en": "sliding screen",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "襖を使います。",
+      "id": "Menggunakan sliding screen.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01884",
+  "word": "蓋",
+  "reading": "ふた",
+  "romaji": "futa",
+  "meaning_id": "cover; lid",
+  "meaning_en": "cover; lid; cap",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "このふたはあのジャーのふただ。",
+      "id": "This lid belongs with that jar.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この箱の蓋はどうしても開かない。",
+      "id": "The lid of this box won't lift.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01885",
+  "word": "不通",
+  "reading": "ふつう",
+  "romaji": "futsuu",
+  "meaning_id": "suspension; interruption",
+  "meaning_en": "suspension; interruption; stoppage; tie-up; cessation",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "電話は不通なの。",
+      "id": "The phones aren't working.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "地震で鉄道の運行が不通になった。",
+      "id": "The train service was suspended by the earthquake.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01890",
+  "word": "船便",
+  "reading": "ふなびん",
+  "romaji": "funabin",
+  "meaning_id": "surface mail (ship)",
+  "meaning_en": "surface mail (ship)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この小包を船便で送ってください。",
+      "id": "Tolong send this parcel by surface mail.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "船便だといくらになりますか。",
+      "id": "How much will it cost by sea mail?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01891",
+  "word": "部品",
+  "reading": "ぶひん",
+  "romaji": "buhin",
+  "meaning_id": "parts; accessories",
+  "meaning_en": "parts; accessories",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この車の予備の部品を買うことができない。",
+      "id": "I cannot buy spare parts for this car.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "古い部品を新しいのと交換しなさい。",
+      "id": "Exchange the old part for a new one.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01892",
+  "word": "吹雪",
+  "reading": "ふぶき",
+  "romaji": "fubuki",
+  "meaning_id": "snow storm",
+  "meaning_en": "snow storm",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "吹雪はまる一週間荒れ狂った。",
+      "id": "The snowstorm raged for a full week.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "列車は吹雪のため２時間遅れた。",
+      "id": "The train was held up for two hours on account of the snowstorm.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01893",
+  "word": "父母",
+  "reading": "ふぼ",
+  "romaji": "fubo",
+  "meaning_id": "father and mother; parents",
+  "meaning_en": "father and mother; parents",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ケンは父母がけんかしたときはいつも母の味方をする。",
+      "id": "Ken always stands up for his mom when his parents quarrel.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私の父母は、そこに大きな農場を持っている。",
+      "id": "My father and mother have a big farm there.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01894",
+  "word": "踏切",
+  "reading": "ふみきり",
+  "romaji": "fumikiri",
+  "meaning_id": "railway crossing; level crossing",
+  "meaning_en": "railway crossing; level crossing; starting line; scratch; crossover",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "警報機が鳴っているときは絶対に踏切を渡らないでください。",
+      "id": "Don't cross the tracks when the alarm is ringing.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01895",
+  "word": "麓",
+  "reading": "ふもと",
+  "romaji": "fumoto",
+  "meaning_id": "the foot; the bottom",
+  "meaning_en": "the foot; the bottom; the base (of a mountain)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "山の麓に日が昇るが早いかただ一人山を登り始めた。",
+      "id": "The sun had barely risen at the foot of the mountain when she set out alone up the slope.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "丘の麓に白い建物が見えますね。",
+      "id": "You see a white building at the foot of the hill.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01897",
+  "word": "フライパン",
+  "reading": "フライパン",
+  "romaji": "furaipan",
+  "meaning_id": "fry pan; frying pan",
+  "meaning_en": "fry pan; frying pan",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "このフライパンのとっては持ちやすい。",
+      "id": "The handle of this pan is easy to hold.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "フライパンに油が回ってから肉を入れなさい。",
+      "id": "Put the meat in the frying pan after the oil has spread.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01898",
+  "word": "ブラウス",
+  "reading": "ブラウス",
+  "romaji": "burausu",
+  "meaning_id": "blouse",
+  "meaning_en": "blouse",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "そのブラウスを見せて下さい。",
+      "id": "May I see that blouse, please?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "このブラウスはボタンが背中にある。",
+      "id": "This blouse buttons at the back.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01900",
+  "word": "ブラシ",
+  "reading": "ブラシ",
+  "romaji": "burashi",
+  "meaning_id": "brushy; brush",
+  "meaning_en": "brushy; brush",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼女は私の靴にさっとブラシをかけてくれた。",
+      "id": "She gave my shoes a quick brush.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01901",
+  "word": "プラスチック",
+  "reading": "プラスチック",
+  "romaji": "purasuchikku",
+  "meaning_id": "plastic",
+  "meaning_en": "plastic",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この椅子はプラスチックからできている。",
+      "id": "This chair is made of plastic.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "その皿は、プラスチックで出来ている。",
+      "id": "The plate is made of plastic.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01902",
+  "word": "プラットホーム",
+  "reading": "プラットホーム",
+  "romaji": "purattohoomu",
+  "meaning_id": "platform",
+  "meaning_en": "platform",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "プラットホームにはとても多くの人がいた。",
+      "id": "There were a good many people on the platform.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼はプラットホームを行ったり来たりしていた。",
+      "id": "He was walking up and down the station platform.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01904",
+  "word": "振り仮名",
+  "reading": "ふりがな",
+  "romaji": "furigana",
+  "meaning_id": "pronunciation key",
+  "meaning_en": "pronunciation key",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "振り仮名はどうやって付けますか？",
+      "id": "How do I add furigana?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この本に振り仮名をつけてください。",
+      "id": "Tolong add furigana to this book.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01907",
+  "word": "ブローチ",
+  "reading": "ブローチ",
+  "romaji": "buroochi",
+  "meaning_id": "brooch",
+  "meaning_en": "brooch",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ブローチを使います。",
+      "id": "Menggunakan brooch.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01908",
+  "word": "プログラム",
+  "reading": "プログラム",
+  "romaji": "puroguramu",
+  "meaning_id": "program",
+  "meaning_en": "program",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私は解読プログラムを持っていません。",
+      "id": "I don't have a decryption program.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "プログラムをいただけますか。",
+      "id": "May I have a program?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01909",
+  "word": "風呂敷",
+  "reading": "ふろしき",
+  "romaji": "furoshiki",
+  "meaning_id": "wrapping cloth; cloth wrapper",
+  "meaning_en": "wrapping cloth; cloth wrapper",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は風呂敷を十分に活用した。",
+      "id": "He took full advantage of the wrapper.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01913",
+  "word": "文芸",
+  "reading": "ぶんげい",
+  "romaji": "bungei",
+  "meaning_id": "literature; art and literature",
+  "meaning_en": "literature; art and literature; belles-lettres",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "文芸を使います。",
+      "id": "Menggunakan literature; art and literature.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01914",
+  "word": "文献",
+  "reading": "ぶんけん",
+  "romaji": "bunken",
+  "meaning_id": "literature; books (reference)",
+  "meaning_en": "literature; books (reference)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その事実は古い文献のいくつかに見出される。",
+      "id": "The facts are buried in a few old books.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "専門の図書館が芸術に関する文献を収集している。",
+      "id": "Specialized libraries collect writings about art.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01915",
+  "word": "噴水",
+  "reading": "ふんすい",
+  "romaji": "funsui",
+  "meaning_id": "water fountain",
+  "meaning_en": "water fountain",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "駅の前に噴水があります。",
+      "id": "Ada a fountain in front of the station.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01916",
+  "word": "分数",
+  "reading": "ぶんすう",
+  "romaji": "bunsuu",
+  "meaning_id": "fraction (in math)",
+  "meaning_en": "fraction (in math)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "次の分数を小数に直しなさい。",
+      "id": "Convert the following fractions to decimals.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "分数b/aは1/aをb倍した数を意味する。",
+      "id": "The fraction b/a means b times 1/a.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01917",
+  "word": "文体",
+  "reading": "ぶんたい",
+  "romaji": "buntai",
+  "meaning_id": "literary style",
+  "meaning_en": "literary style",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あの作家の文体は優れている。",
+      "id": "The writer has an excellent style.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "これは純正の英語とは違った文体だ。",
+      "id": "Ini adalah a writing style different from genuine English.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01919",
+  "word": "文房具",
+  "reading": "ぶんぼうぐ",
+  "romaji": "bunbougu",
+  "meaning_id": "stationery",
+  "meaning_en": "stationery",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私はこのペンを近所の文房具店で買った。",
+      "id": "I bought this pen at the stationer's around the corner.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼は学校の売店で文房具を買った。",
+      "id": "He bought some stationery at the school store.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01920",
+  "word": "文脈",
+  "reading": "ぶんみゃく",
+  "romaji": "bunmyaku",
+  "meaning_id": "context",
+  "meaning_en": "context",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "言葉の意味は文脈によって変わりうる。",
+      "id": "The meaning of words can change according to their context.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "単語の意味はそれが使われている文脈で決まる。",
+      "id": "The meaning of a word is determined by the context where it is used.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01921",
+  "word": "分量",
+  "reading": "ぶんりょう",
+  "romaji": "bunryou",
+  "meaning_id": "amount; quantity",
+  "meaning_en": "amount; quantity",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その作り方の分量は六人分です。",
+      "id": "The recipe serves six people.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01927",
+  "word": "兵隊",
+  "reading": "へいたい",
+  "romaji": "heitai",
+  "meaning_id": "soldier; sailor",
+  "meaning_en": "soldier; sailor",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その市はやがて兵隊によって占領された。",
+      "id": "The city was soon occupied by the soldiers.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "もしあの時水がなければ、兵隊は死んでいただろう。",
+      "id": "Without water, the soldiers would have died.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01929",
+  "word": "平野",
+  "reading": "へいや",
+  "romaji": "heiya",
+  "meaning_id": "plain; open field",
+  "meaning_en": "plain; open field",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私たちは山の上から平野を見下ろした。",
+      "id": "We looked down on the plain from the hilltop.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "川はうねるように平野を流れている。",
+      "id": "The river meanders across the plain.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01931",
+  "word": "へそ",
+  "reading": "へそ",
+  "romaji": "heso",
+  "meaning_id": "navel; belly-button",
+  "meaning_en": "navel; belly-button",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は臍を固めて一世一代の大事業に乗り出した。",
+      "id": "He resolved to embark on a once-in-a-lifetime enterprise.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼女は姑の気にさわるようなことを言わなければよかったと臍を噛んだ。",
+      "id": "She bitterly regretted having said something that displeased her mother-in-law.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01933",
+  "word": "別荘",
+  "reading": "べっそう",
+  "romaji": "bessou",
+  "meaning_id": "holiday house; villa",
+  "meaning_en": "holiday house; villa",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼女は海辺に別荘を持っている。",
+      "id": "She has a cottage by the sea.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私は夏のために別荘を用意した。",
+      "id": "I took a cottage for the summer.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01935",
+  "word": "ベテラン",
+  "reading": "ベテラン",
+  "romaji": "beteran",
+  "meaning_id": "veteran",
+  "meaning_en": "veteran",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "父はこの道２０年のベテランです。",
+      "id": "My father has been doing this job for twenty years.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼はベテランのドライバーだ。",
+      "id": "Dia an expert driver.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01936",
+  "word": "ヘリコプター",
+  "reading": "ヘリコプター",
+  "romaji": "herikoputaa",
+  "meaning_id": "helicopter",
+  "meaning_en": "helicopter",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼らはヘリコプターで救出された。",
+      "id": "They were rescued by helicopter.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼はヘリコプターで病院に運ばれた。",
+      "id": "He was transported to the hospital by helicopter.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01938",
+  "word": "便所",
+  "reading": "べんじょ",
+  "romaji": "benjo",
+  "meaning_id": "toilet; lavatory",
+  "meaning_en": "toilet; lavatory; rest room; latrine; comfort station",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "生徒はこの便所を使ってはならない。",
+      "id": "Students must not use this toilet.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01939",
+  "word": "ペンチ",
+  "reading": "ペンチ",
+  "romaji": "penchi",
+  "meaning_id": "(abbreviation) pliers (lit: pinchers)",
+  "meaning_en": "(abbreviation) pliers (lit: pinchers)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ペンチは道具箱に入れといて。",
+      "id": "Put the pliers in the tool box.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "車にペンチがあるよ。",
+      "id": "I've got pliers in my car.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01940",
+  "word": "望遠鏡",
+  "reading": "ぼうえんきょう",
+  "romaji": "bouenkyou",
+  "meaning_id": "telescope",
+  "meaning_en": "telescope",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は望遠鏡に目を当てた。",
+      "id": "He put his eye to a telescope.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私は望遠鏡のピントを合わせた。",
+      "id": "I adjusted the telescope to my vision.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01941",
+  "word": "方角",
+  "reading": "ほうがく",
+  "romaji": "hougaku",
+  "meaning_id": "direction; way",
+  "meaning_en": "direction; way; compass point",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その物体は光を放ちながら南の方角へ飛んで行った。",
+      "id": "The object flew away to the south, giving out flashes of light.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私たちは間違った方角に進んでいるのではないかと思う。",
+      "id": "I am afraid we are advancing in the wrong direction.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01942",
+  "word": "箒",
+  "reading": "ほうき",
+  "romaji": "houki",
+  "meaning_id": "broom",
+  "meaning_en": "broom",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼女はほうきで部屋を掃除する。",
+      "id": "She sweeps the room with a broom.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "酔っ払っておそく家に帰ったかどで、怒った女房は亭主に食ってかかり、箒で亭主をひっぱたいた。",
+      "id": "The angry wife was on the warpath; she hit her husband with a broom for coming home late and drunk.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01943",
+  "word": "方言",
+  "reading": "ほうげん",
+  "romaji": "hougen",
+  "meaning_id": "dialect",
+  "meaning_en": "dialect",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼らは南部の方言で話していた。",
+      "id": "They were speaking in a Southern dialect.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "トムはジョンが方言を使うのでいつもからかう。",
+      "id": "Tom always makes fun of John because of his dialect.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01944",
+  "word": "坊さん",
+  "reading": "ぼうさん",
+  "romaji": "bousan",
+  "meaning_id": "Buddhist priest; monk",
+  "meaning_en": "Buddhist priest; monk",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あの偉い坊さんを見ろよ。",
+      "id": "Look at the big shot.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01947",
+  "word": "法則",
+  "reading": "ほうそく",
+  "romaji": "housoku",
+  "meaning_id": "law; rule",
+  "meaning_en": "law; rule",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あらゆるものは自然の法則を受けている。",
+      "id": "Everything is subject to the laws of nature.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ニュートンは引力の法則を確立した。",
+      "id": "Newton established the law of gravity.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01950",
+  "word": "庖丁",
+  "reading": "ほうちょう",
+  "romaji": "houchou",
+  "meaning_id": "kitchen knife; carving knife",
+  "meaning_en": "kitchen knife; carving knife",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "子供に包丁をいたずらさせてはダメだよ。",
+      "id": "Don't let your boy play with a knife.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼女は長年の間に包丁をすり減らした。",
+      "id": "She ground down a kitchen knife in the course of many years.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01951",
+  "word": "方程式",
+  "reading": "ほうていしき",
+  "romaji": "houteishiki",
+  "meaning_id": "equation",
+  "meaning_en": "equation",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "以下の方程式の解を求めよ。",
+      "id": "Find the solution to the following equation.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01952",
+  "word": "防犯",
+  "reading": "ぼうはん",
+  "romaji": "bouhan",
+  "meaning_id": "prevention of crime",
+  "meaning_en": "prevention of crime",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "防犯カメラの映像をよく見たら人がいた。",
+      "id": "If you look at the security camera footage closely, there's a person there.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "防犯のために登下校時は、名札を外してください。",
+      "id": "In order to prevent crime, please take off your name tag when travelling to and from school.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01953",
+  "word": "方面",
+  "reading": "ほうめん",
+  "romaji": "houmen",
+  "meaning_id": "direction; district",
+  "meaning_en": "direction; district; field (e.g., of study)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "２５号線北方面の入り口付近にいます。",
+      "id": "I'm near the on ramp to 25 north.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "兄はあなたと同じ方面の仕事をしています。",
+      "id": "My brother is in the same line of business as you are.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01954",
+  "word": "坊や",
+  "reading": "ぼうや",
+  "romaji": "bouya",
+  "meaning_id": "boy",
+  "meaning_en": "boy",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "楽しい夢を見てね、ティミー坊や。",
+      "id": "Sweet dreams, Timmy.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ぐっすり寝てね、ティミー坊や。",
+      "id": "Sleep well, Timmy.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01956",
+  "word": "ボーナス",
+  "reading": "ボーナス",
+  "romaji": "boonasu",
+  "meaning_id": "bonus",
+  "meaning_en": "bonus",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ボーナス全部を買い物と旅行に使ってしまった。",
+      "id": "I blew my whole bonus on shopping and travel.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ボーナスをもらった。",
+      "id": "I received my bonus.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01958",
+  "word": "牧場",
+  "reading": "ぼくじょう",
+  "romaji": "bokujou",
+  "meaning_id": "farm (livestock); pasture land",
+  "meaning_en": "farm (livestock); pasture land; meadow; grazing land",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あなたの牧場は何エーカーありますか。",
+      "id": "What is the acreage of your ranch?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "牛が牧場で草を食べている。",
+      "id": "Cows are eating grass in the meadow.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01959",
+  "word": "牧畜",
+  "reading": "ぼくちく",
+  "romaji": "bokuchiku",
+  "meaning_id": "stock-farming",
+  "meaning_en": "stock-farming",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "牧畜を使います。",
+      "id": "Menggunakan stock-farming.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01960",
+  "word": "保健",
+  "reading": "ほけん",
+  "romaji": "hoken",
+  "meaning_id": "health preservation; hygiene",
+  "meaning_en": "health preservation; hygiene; sanitation",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ＷＨＯとは世界保健機構を表す。",
+      "id": "WHO stands for World Health Organization.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01963",
+  "word": "ポスター",
+  "reading": "ポスター",
+  "romaji": "posutaa",
+  "meaning_id": "poster",
+  "meaning_en": "poster",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は立ち止まってポスターをのぞき込んだ。",
+      "id": "He paused to look at the poster.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼は壁一面にポスターをべたべた張った。",
+      "id": "He plastered the wall with posters.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01964",
+  "word": "北極",
+  "reading": "ほっきょく",
+  "romaji": "hokkyoku",
+  "meaning_id": "North Pole",
+  "meaning_en": "North Pole",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "シロクマは北極地方に住んでいる。",
+      "id": "Polar bears live in the Arctic.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "北極圏とは北極周辺の地域の事である。",
+      "id": "The Arctic is the area round the North Pole.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01965",
+  "word": "坊っちゃん",
+  "reading": "ぼっちゃん",
+  "romaji": "botchan",
+  "meaning_id": "son (of others)",
+  "meaning_en": "son (of others)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "坊っちゃんを使います。",
+      "id": "Menggunakan son (of others).",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01967",
+  "word": "堀",
+  "reading": "ほり",
+  "romaji": "hori",
+  "meaning_id": "moat; canal",
+  "meaning_en": "moat; canal",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "堀を使います。",
+      "id": "Menggunakan moat; canal.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01970",
+  "word": "ぼろ",
+  "reading": "ぼろ",
+  "romaji": "boro",
+  "meaning_id": "rag; scrap",
+  "meaning_en": "rag; scrap; tattered clothes; fault (esp. in a pretense)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ぼろ服が正直者を包んでいるかもしれない。",
+      "id": "A ragged coat may cover an honest man.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "その男はボロを着ていた。",
+      "id": "The man was in rags.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01971",
+  "word": "盆",
+  "reading": "ぼん",
+  "romaji": "bon",
+  "meaning_id": "Lantern Festival; Festival of the Dead",
+  "meaning_en": "Lantern Festival; Festival of the Dead; tray",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "アイリーン・ペパーバーグが、アレックスと名づけたオウムの前で丸いお盆を持っている。",
+      "id": "Irene Pepperberg holds a round tray in front of a parrot she has named Alex.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01972",
+  "word": "盆地",
+  "reading": "ぼんち",
+  "romaji": "bonchi",
+  "meaning_id": "basin (e.g. between mountains)",
+  "meaning_en": "basin (e.g. between mountains)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この地方は盆地になっている。",
+      "id": "This district forms a basin.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "河川の盆地には普通肥沃な農地がある。",
+      "id": "The basin of a river usually has rich farmland.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01973",
+  "word": "本部",
+  "reading": "ほんぶ",
+  "romaji": "honbu",
+  "meaning_id": "headquarters",
+  "meaning_en": "headquarters",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "大学本部はニューヨークに分校を設立することを決定した。",
+      "id": "The University Administration decided to set up a branch campus in New York.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01976",
+  "word": "枚数",
+  "reading": "まいすう",
+  "romaji": "maisuu",
+  "meaning_id": "the number of flat things",
+  "meaning_en": "the number of flat things",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "コピーの枚数を数えてください。",
+      "id": "Tolong count the number of copies.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01982",
+  "word": "枕",
+  "reading": "まくら",
+  "romaji": "makura",
+  "meaning_id": "pillow; bolster",
+  "meaning_en": "pillow; bolster",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は枕に頭を横たえた。",
+      "id": "He laid his head on the pillow.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "枕と毛布をもってきていただけるか。",
+      "id": "Could you bring me a pillow and blanket, please?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01985",
+  "word": "摩擦",
+  "reading": "まさつ",
+  "romaji": "masatsu",
+  "meaning_id": "friction; rubbing",
+  "meaning_en": "friction; rubbing; rubdown; chafe",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "米国人とイギリス人との間の摩擦が高まった。",
+      "id": "Friction between the Americans and the British mounted.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "タイヤはゴムと路面の摩擦によってすり減る。",
+      "id": "Tires wear down because of friction between the rubber and the road surface.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01990",
+  "word": "マスク",
+  "reading": "マスク",
+  "romaji": "masuku",
+  "meaning_id": "mask",
+  "meaning_en": "mask",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "医師は鼻と口に白のマスクをしていた。",
+      "id": "The doctors wore white masks over their mouths and noses.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01994",
+  "word": "待合室",
+  "reading": "まちあいしつ",
+  "romaji": "machiaishitsu",
+  "meaning_id": "waiting room",
+  "meaning_en": "waiting room",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は待合室に座っています。",
+      "id": "He's sitting in the waiting room.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼は待合室を見回した。",
+      "id": "He looked around the waiting room.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-01996",
+  "word": "街角",
+  "reading": "まちかど",
+  "romaji": "machikado",
+  "meaning_id": "street corner",
+  "meaning_en": "street corner",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あの町かどに公衆電話ボックスがある。",
+      "id": "Ada a telephone booth at the corner of the street.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "あの老人たちは街角に無駄話をしに行くのが好きだ。",
+      "id": "The old men like to meet on the street corner just to shoot the bull.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02000",
+  "word": "真っ先",
+  "reading": "まっさき",
+  "romaji": "massaki",
+  "meaning_id": "the head; the foremost",
+  "meaning_en": "the head; the foremost; beginning",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私は真っ先に母にそれを告げた。",
+      "id": "I told it to my mother first and foremost.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "地震が来たら、真っ先に何をしますか。",
+      "id": "When an earthquake occurs, what will you do first?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02003",
+  "word": "窓口",
+  "reading": "まどぐち",
+  "romaji": "madoguchi",
+  "meaning_id": "ticket window",
+  "meaning_en": "ticket window",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "予約はどの窓口でできますか。",
+      "id": "At which window can I make a reservation?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "入院の受付窓口はどこですか。",
+      "id": "Where is the admission's office?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02008",
+  "word": "まぶた",
+  "reading": "まぶた",
+  "romaji": "mabuta",
+  "meaning_id": "eyelids",
+  "meaning_en": "eyelids",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は眠くて瞼が重かった。",
+      "id": "His eyes were heavy with sleep.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "まぶたが熱を持っています。",
+      "id": "My eyelid feels hot.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02009",
+  "word": "マフラー",
+  "reading": "マフラー",
+  "romaji": "mafuraa",
+  "meaning_id": "muffler; scarf",
+  "meaning_en": "muffler; scarf",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "五次元のマフラーはよい音がする。",
+      "id": "The 5ZIGEN exhaust makes a nice sound.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02011",
+  "word": "マラソン",
+  "reading": "マラソン",
+  "romaji": "marason",
+  "meaning_id": "marathon",
+  "meaning_en": "marathon",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "マラソンを使います。",
+      "id": "Menggunakan marathon.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02015",
+  "word": "満員",
+  "reading": "まんいん",
+  "romaji": "man'in",
+  "meaning_id": "full house; no vacancy",
+  "meaning_en": "full house; no vacancy; sold out",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "バスは満員だった。",
+      "id": "The bus was filled to capacity.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "満員電車の中は息が詰まりそうだった。",
+      "id": "I thought I was going to suffocate on the crowded train.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02016",
+  "word": "マンション",
+  "reading": "マンション",
+  "romaji": "manshon",
+  "meaning_id": "large apartment; apartment house",
+  "meaning_en": "large apartment; apartment house",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私のおじはマンションに住んでいる。",
+      "id": "My uncle lives in an apartment.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "本当のマンションではありません。",
+      "id": "It isn't a real apartment.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02017",
+  "word": "満点",
+  "reading": "まんてん",
+  "romaji": "manten",
+  "meaning_id": "perfect score",
+  "meaning_en": "perfect score",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ベッドは寝心地満点だった。",
+      "id": "I found the bed quite comfortable.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼は数学で満点を取った。",
+      "id": "He got full marks in mathematics.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02020",
+  "word": "見掛け",
+  "reading": "みかけ",
+  "romaji": "mikake",
+  "meaning_id": "outward appearance",
+  "meaning_en": "outward appearance",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "見かけ通り彼女は行動力がある。",
+      "id": "Dia as active as she looks.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "人を見かけで判断してはいけない。",
+      "id": "You should not judge people by their appearance.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02021",
+  "word": "三日月",
+  "reading": "みかづき",
+  "romaji": "mikazuki",
+  "meaning_id": "new moon; crescent moon",
+  "meaning_en": "new moon; crescent moon",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "足で三日月を踏んでいる。",
+      "id": "I am stepping on the crescent moon with my feet.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02022",
+  "word": "岬",
+  "reading": "みさき",
+  "romaji": "misaki",
+  "meaning_id": "cape (on coast)",
+  "meaning_en": "cape (on coast)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その船は岬を回った。",
+      "id": "The ship sailed around the cape.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "そこでは岬が海に突き出している。",
+      "id": "There a cape pushes out into the sea.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02024",
+  "word": "ミシン",
+  "reading": "ミシン",
+  "romaji": "mishin",
+  "meaning_id": "sewing machine",
+  "meaning_en": "sewing machine",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私は新しいミシンを買った。",
+      "id": "I bought a new sewing machine.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "このミシンのこつをのみ込むのに、どのくらい時間がかかるのか。",
+      "id": "How long does it take to get the hang of this sewing machine?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02025",
+  "word": "店屋",
+  "reading": "みせや",
+  "romaji": "miseya",
+  "meaning_id": "store; shop",
+  "meaning_en": "store; shop",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "店屋を使います。",
+      "id": "Menggunakan store; shop.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02026",
+  "word": "見出し",
+  "reading": "みだし",
+  "romaji": "midashi",
+  "meaning_id": "heading; caption",
+  "meaning_en": "heading; caption; subtitle; index",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この辞書は見出し語が約４万はいっている。",
+      "id": "This dictionary contains about 40,000 headwords.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この辞書では発音は見出し語の直後にある。",
+      "id": "In this dictionary the pronunciation comes right after the headword.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02027",
+  "word": "道順",
+  "reading": "みちじゅん",
+  "romaji": "michijun",
+  "meaning_id": "itinerary; route",
+  "meaning_en": "itinerary; route",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "地下鉄の駅までの道順を教えていただけませんか。",
+      "id": "Can you give me directions to the subway station?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私に地図を書いて駅までの道順を教えてくれませんか。",
+      "id": "Will you draw me a map to show me the way to the station?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02032",
+  "word": "身分",
+  "reading": "みぶん",
+  "romaji": "mibun",
+  "meaning_id": "social position; social status",
+  "meaning_en": "social position; social status",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "支配人はドアを開いて身分を名乗った。",
+      "id": "The manager opened the door and identified himself.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼は身分の高い人です。",
+      "id": "Dia a man of high social status.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02033",
+  "word": "見本",
+  "reading": "みほん",
+  "romaji": "mihon",
+  "meaning_id": "sample",
+  "meaning_en": "sample",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は登山家の良い見本だ。",
+      "id": "Dia a fine type of mountain climber.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "無料で見本を配っています。",
+      "id": "They're giving away samples free.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02036",
+  "word": "名字",
+  "reading": "みょうじ",
+  "romaji": "myouji",
+  "meaning_id": "surname; family name",
+  "meaning_en": "surname; family name",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あなたの名字はどうつづるのですか。",
+      "id": "How do you spell your family name?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "トムはメアリーの苗字を知らなかった。",
+      "id": "Tom didn't know what Mary's last name was.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02037",
+  "word": "ミリ",
+  "reading": "ミリ",
+  "romaji": "miri",
+  "meaning_id": "milli-; 10^-3",
+  "meaning_en": "milli-; 10^-3",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "目の前で繰り広げられるやり取りは、俺が入り込む隙なんて一ミリもない。",
+      "id": "The exchange unfolding in front of my eyes had not a single millimetre of a gap in which for me to slip.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02039",
+  "word": "民間",
+  "reading": "みんかん",
+  "romaji": "minkan",
+  "meaning_id": "private; civilian",
+  "meaning_en": "private; civilian; civil; popular; folk; unofficial",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "今度の税金は全ての民間企業に適用される。",
+      "id": "This tax is applied to all private-sector enterprises.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "民間企業に対する投資をもっと認めてほしい。",
+      "id": "I'm eager to be allowed to do more private-sector investment.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02040",
+  "word": "民謡",
+  "reading": "みんよう",
+  "romaji": "min'you",
+  "meaning_id": "folk song; popular song",
+  "meaning_en": "folk song; popular song",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "兄が民謡に興味を抱き始めたのは十二歳ごろだった。",
+      "id": "My older brother started to take interest in Japanese folk songs when he was around 12 years old.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02043",
+  "word": "無地",
+  "reading": "むじ",
+  "romaji": "muji",
+  "meaning_id": "plain; unfigured",
+  "meaning_en": "plain; unfigured",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "無地の白い紙で十分です。",
+      "id": "Plain white paper will do.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02048",
+  "word": "紫",
+  "reading": "むらさき",
+  "romaji": "murasaki",
+  "meaning_id": "purple colour; violet",
+  "meaning_en": "purple colour; violet",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その色はピンクというより紫だ。",
+      "id": "The color is purple rather than pink.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "赤と青を混ぜると紫になる。",
+      "id": "Red and blue paint mixed together give us purple.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02049",
+  "word": "群れ",
+  "reading": "むれ",
+  "romaji": "mure",
+  "meaning_id": "group; crowd",
+  "meaning_en": "group; crowd; flock; herd",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "鳥は群れをなして飛んでいた。",
+      "id": "The birds were flying in a group.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "二人は仲間、三人は寄せ集めの群れ。",
+      "id": "Two's company, three's a crowd.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02050",
+  "word": "姪",
+  "reading": "めい",
+  "romaji": "mei",
+  "meaning_id": "niece",
+  "meaning_en": "niece",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その姪は彼女の叔母さんのように見えます。",
+      "id": "The niece looks like her aunt.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "エリオットさんの姪は女子大学に通っている。",
+      "id": "Mr Eliot's niece goes to a women's college.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02051",
+  "word": "名作",
+  "reading": "めいさく",
+  "romaji": "meisaku",
+  "meaning_id": "masterpiece",
+  "meaning_en": "masterpiece",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この映画はまさしく不朽の名作である。",
+      "id": "This film is indeed an enduring masterpiece.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02052",
+  "word": "名刺",
+  "reading": "めいし",
+  "romaji": "meishi",
+  "meaning_id": "business card",
+  "meaning_en": "business card",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は名刺を出した。",
+      "id": "He presented his card.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "「私の名刺です。追加情報があったらいつでも連絡下さい」と記者は言った。",
+      "id": "\"Here is my business card. Please call me anytime with more information,\" said the reporter.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02053",
+  "word": "名詞",
+  "reading": "めいし",
+  "romaji": "meishi",
+  "meaning_id": "noun",
+  "meaning_en": "noun",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "名詞を修飾するものは、形容詞または形容詞相当語句です。",
+      "id": "Things that modify nouns are adjectives or equivalent to adjectives.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "名詞から動詞が派生していることもあれば、その逆のこともある。",
+      "id": "Sometimes a verb is derived from a noun and sometimes it is the other way around.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02054",
+  "word": "名所",
+  "reading": "めいしょ",
+  "romaji": "meisho",
+  "meaning_id": "famous place",
+  "meaning_en": "famous place",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "スイスには名所が多い。",
+      "id": "Switzerland boasts many sights.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この辺りの観光名所はどこですか？",
+      "id": "What are the main sights around here?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02055",
+  "word": "迷信",
+  "reading": "めいしん",
+  "romaji": "meishin",
+  "meaning_id": "superstition",
+  "meaning_en": "superstition",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その迷信は彼らの間で今なお残っている。",
+      "id": "This superstition still lingers on among them.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "多くの迷信がまだ信じられている。",
+      "id": "Lots of superstitions are still believed in.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02056",
+  "word": "命ずる",
+  "reading": "めいずる",
+  "romaji": "meizuru",
+  "meaning_id": "me-command",
+  "meaning_en": "to command; to appoint",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私は後に残るよう命ぜられた。",
+      "id": "I was bidden to stay behind.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "皿洗いを命じられて彼女は口をとがらせた。",
+      "id": "She pouted when she was told to wash the dishes.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02057",
+  "word": "名物",
+  "reading": "めいぶつ",
+  "romaji": "meibutsu",
+  "meaning_id": "famous product; special product",
+  "meaning_en": "famous product; special product; speciality",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この地方の名物料理がありますか。",
+      "id": "Do you have any regional dishes?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02059",
+  "word": "目上",
+  "reading": "めうえ",
+  "romaji": "meue",
+  "meaning_id": "superior(s); senior",
+  "meaning_en": "superior(s); senior",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "目上の人には礼儀正しくしなければならない。",
+      "id": "You must be polite to your elders.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "最近、目上の人に敬語を使わない若者が多い。",
+      "id": "Recently there are a lot of young people who don't use respectful language to their superiors.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02060",
+  "word": "メーター",
+  "reading": "メーター",
+  "romaji": "meetaa",
+  "meaning_id": "meter (clock)",
+  "meaning_en": "meter (clock)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "メーターの数字を読んでください。",
+      "id": "Read the meter.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ロープは、２〜３メーター短すぎた。",
+      "id": "The rope was a couple of meters too short.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02063",
+  "word": "目覚し",
+  "reading": "めざまし",
+  "romaji": "mezamashi",
+  "meaning_id": "(abbreviation) alarm-clock",
+  "meaning_en": "(abbreviation) alarm-clock",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私はめざましの音で目が覚めた。",
+      "id": "I woke up at the sound of the alarm.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "目覚しは５時３０分に鳴った。",
+      "id": "The alarm went off at five-thirty.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02064",
+  "word": "目下",
+  "reading": "めした",
+  "romaji": "meshita",
+  "meaning_id": "subordinate; subordinates",
+  "meaning_en": "subordinate; subordinates; inferior; inferiors",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "目下の者をないがしろにするな。",
+      "id": "Don't ignore your subordinates.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "目下増築中である。",
+      "id": "An extension is currently under construction.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02065",
+  "word": "目印",
+  "reading": "めじるし",
+  "romaji": "mejirushi",
+  "meaning_id": "mark; sign",
+  "meaning_en": "mark; sign; landmark",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "そこに行く道がわかるように、近くの目印を教えて下さい。",
+      "id": "I wish to know a landmark nearby so I can find my way there.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼女は自分の傘に赤いリボンで目印を付けた。",
+      "id": "She put a red ribbon on her umbrella as a mark.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02070",
+  "word": "メニュー",
+  "reading": "メニュー",
+  "romaji": "menyuu",
+  "meaning_id": "menu",
+  "meaning_en": "menu",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "もう一度メニューを見せていただけますか。",
+      "id": "Can I have the menu again, please?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "メニューを見せて下さい。",
+      "id": "Tolong let me take a look at the menu.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02071",
+  "word": "めまい",
+  "reading": "めまい",
+  "romaji": "memai",
+  "meaning_id": "dizziness; giddiness",
+  "meaning_en": "dizziness; giddiness",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私は空腹でめまいがした。",
+      "id": "I felt faint with hunger.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "急に立ち上がったら、クラッとめまいがした。",
+      "id": "I suddenly stood up and felt faint and light-headed.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02072",
+  "word": "目安",
+  "reading": "めやす",
+  "romaji": "meyasu",
+  "meaning_id": "criterion; aim",
+  "meaning_en": "criterion; aim",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "目安を使います。",
+      "id": "Menggunakan criterion; aim.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02074",
+  "word": "面積",
+  "reading": "めんせき",
+  "romaji": "menseki",
+  "meaning_id": "area",
+  "meaning_en": "area",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この都市の面積はどれくらいか。",
+      "id": "What is the area of this city?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この床の面積は６００平方メートルある。",
+      "id": "The area of this floor is 600 square meters.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02080",
+  "word": "モーター",
+  "reading": "モーター",
+  "romaji": "mootaa",
+  "meaning_id": "motor",
+  "meaning_en": "motor",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "そのボートは動力にモーターを使用している。",
+      "id": "The boat uses a motor for the power.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "モーターについては何も問題がない。",
+      "id": "Ada nothing the matter with the motor.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02081",
+  "word": "木材",
+  "reading": "もくざい",
+  "romaji": "mokuzai",
+  "meaning_id": "lumber; timber",
+  "meaning_en": "lumber; timber; wood",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この古い家は木材でできている。",
+      "id": "This old house is made of wood.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私たちは像を木材で作った。",
+      "id": "We made statues out of wood.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02082",
+  "word": "目次",
+  "reading": "もくじ",
+  "romaji": "mokuji",
+  "meaning_id": "table of contents",
+  "meaning_en": "table of contents",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "皆さんは目次を見てください。",
+      "id": "Tolong look at the table of contents, everyone.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02088",
+  "word": "餅",
+  "reading": "もち",
+  "romaji": "mochi",
+  "meaning_id": "sticky rice cake",
+  "meaning_en": "sticky rice cake",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は餅をすっかり食べたわけではない。",
+      "id": "He didn't eat all of the rice cakes.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "餅は餅屋。",
+      "id": "Every man to his trade.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02090",
+  "word": "モデル",
+  "reading": "モデル",
+  "romaji": "moderu",
+  "meaning_id": "model",
+  "meaning_en": "model",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼女はモデルになる努力をしている。",
+      "id": "Dia making an effort at becoming a model.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼のオートバイは最新モデルだ。",
+      "id": "His motorcycle is the latest model.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02092",
+  "word": "物置",
+  "reading": "ものおき",
+  "romaji": "monooki",
+  "meaning_id": "storage room",
+  "meaning_en": "storage room",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "物置に鍵をかけるのを忘れちゃった。",
+      "id": "I forgot to lock the storeroom.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼は物置の中で偶然いくつかの古文書を見つけた。",
+      "id": "He came across some old documents in the closet.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02094",
+  "word": "物差し",
+  "reading": "ものさし",
+  "romaji": "monosashi",
+  "meaning_id": "ruler; measure",
+  "meaning_en": "ruler; measure",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "物差しを使って線を引きなさい。",
+      "id": "Draw a line with a ruler.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02096",
+  "word": "モノレール",
+  "reading": "モノレール",
+  "romaji": "monoreeru",
+  "meaning_id": "monorail",
+  "meaning_en": "monorail",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "モノレールを使います。",
+      "id": "Menggunakan monorail.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02099",
+  "word": "催し",
+  "reading": "もよおし",
+  "romaji": "moyooshi",
+  "meaning_id": "event; festivities",
+  "meaning_en": "event; festivities; function",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "今日の催しのチケットはありますか。",
+      "id": "Do you have any tickets for today's performance?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "アカデミー授賞式は、ハリウッド最大の華やかな催しだ。",
+      "id": "The Oscar ceremonies are Hollywood's biggest extravaganza.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02104",
+  "word": "薬缶",
+  "reading": "やかん",
+  "romaji": "yakan",
+  "meaning_id": "kettle",
+  "meaning_en": "kettle",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "薬缶がシュンシュンいうまで待ちなさい。",
+      "id": "Wait till the kettle begins to sing.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "薬缶から湯気が立っている。",
+      "id": "The kettle is steaming.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02105",
+  "word": "役者",
+  "reading": "やくしゃ",
+  "romaji": "yakusha",
+  "meaning_id": "actor; actress",
+  "meaning_en": "actor; actress",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その役者の事は聞いたことが無い。",
+      "id": "I've never heard of the actor.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "あの喜劇役者は大変こっけいだ。",
+      "id": "That comedian is very funny.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02106",
+  "word": "役所",
+  "reading": "やくしょ",
+  "romaji": "yakusho",
+  "meaning_id": "government office; public office",
+  "meaning_en": "government office; public office",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "君は役所に自分で出頭する事が必要なのだ。",
+      "id": "It is essential that you present yourself at the office.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02108",
+  "word": "役人",
+  "reading": "やくにん",
+  "romaji": "yakunin",
+  "meaning_id": "government official",
+  "meaning_en": "government official",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あの役人たちは全然、財政のことはわかっていない。",
+      "id": "Those officials don't understand finance at all.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼はこの町の住人によって役人に選ばれた。",
+      "id": "He was elected an official by the inhabitants of this town.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02109",
+  "word": "薬品",
+  "reading": "やくひん",
+  "romaji": "yakuhin",
+  "meaning_id": "medicine(s); chemical(s)",
+  "meaning_en": "medicine(s); chemical(s)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この薬品は日光に当てないようにしなさい。",
+      "id": "Don't expose this chemical to direct sunlight.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この薬品は場合によって毒にも薬にもなる。",
+      "id": "This medicine will do you good or harm, as the case may be.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02110",
+  "word": "役目",
+  "reading": "やくめ",
+  "romaji": "yakume",
+  "meaning_id": "duty; business",
+  "meaning_en": "duty; business",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "古い木箱がテーブルの役目をした。",
+      "id": "An old wooden box served as table.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼はその役目を引き受けましたか。",
+      "id": "Did he undertake the mission?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02113",
+  "word": "矢印",
+  "reading": "やじるし",
+  "romaji": "yajirushi",
+  "meaning_id": "directing arrow",
+  "meaning_en": "directing arrow",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "矢印が進むべき方向を指示する。",
+      "id": "The arrow indicates the way to go.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "矢印は東京へ行く道を示す。",
+      "id": "The arrow indicates the way to Tokyo.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02115",
+  "word": "薬局",
+  "reading": "やっきょく",
+  "romaji": "yakkyoku",
+  "meaning_id": "pharmacy; drugstore",
+  "meaning_en": "pharmacy; drugstore",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "一番近い薬局はどこにありますか。",
+      "id": "Where's the nearest drugstore?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "薬局は何時まで開いていますか。",
+      "id": "Until what time does your pharmacy stay open?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02118",
+  "word": "家主",
+  "reading": "やぬし",
+  "romaji": "yanushi",
+  "meaning_id": "landlord",
+  "meaning_en": "landlord",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "家主は彼がドアを赤く塗ることを許してくれない。",
+      "id": "The landlord won't permit him to paint the door red.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "犯人は家主から１０万ドルを強奪して逃走した。",
+      "id": "The criminal robbed the landlord of a hundred thousand dollars and ran away.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02123",
+  "word": "遊園地",
+  "reading": "ゆうえんち",
+  "romaji": "yuuenchi",
+  "meaning_id": "amusement park",
+  "meaning_en": "amusement park",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その遊園地を建設するのに１０年かかった。",
+      "id": "It took ten years to build the amusement park.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "今日はどこへ行こうか？遊園地？それとも映画でも見る？",
+      "id": "Where do you want to go today? An amusement park, or maybe a movie?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02124",
+  "word": "夕刊",
+  "reading": "ゆうかん",
+  "romaji": "yuukan",
+  "meaning_id": "evening paper",
+  "meaning_en": "evening paper",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "父は夕刊を読んで座っていた。",
+      "id": "My father sat reading the evening paper.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼は夕刊にさっと目を通した。",
+      "id": "He looked through the evening paper.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02125",
+  "word": "友好",
+  "reading": "ゆうこう",
+  "romaji": "yuukou",
+  "meaning_id": "friendship",
+  "meaning_en": "friendship",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "友好を使います。",
+      "id": "Menggunakan friendship.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02127",
+  "word": "夕立",
+  "reading": "ゆうだち",
+  "romaji": "yuudachi",
+  "meaning_id": "(sudden) evening shower (rain)",
+  "meaning_en": "(sudden) evening shower (rain)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私たちは夕立にあって、びしょ濡れになった。",
+      "id": "We were drenched in the shower.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "５分も歩いた後、夕立に出会った。",
+      "id": "We had already walked five minutes when we were caught in a shower.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02128",
+  "word": "夕日",
+  "reading": "ゆうひ",
+  "romaji": "yuuhi",
+  "meaning_id": "(in) the evening sun; setting sun",
+  "meaning_en": "(in) the evening sun; setting sun",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "そのとき彼らは夕日を見ていました。",
+      "id": "They were watching the sunset then.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "空は夕日で燃えているようだった。",
+      "id": "The sky was fiery with the setting sun.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02130",
+  "word": "有料",
+  "reading": "ゆうりょう",
+  "romaji": "yuuryou",
+  "meaning_id": "admission-paid; toll",
+  "meaning_en": "admission-paid; toll",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この道路は有料です。",
+      "id": "We must pay a toll to drive on this road.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "配達は有料ですか。",
+      "id": "Do you charge for delivery?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02131",
+  "word": "浴衣",
+  "reading": "ゆかた",
+  "romaji": "yukata",
+  "meaning_id": "bathrobe; informal summer kimono",
+  "meaning_en": "bathrobe; informal summer kimono; yukata",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ジャーン。それじゃ春田くん、もう見てもいいわよ。みんなの浴衣、お披露目ねぇ～。",
+      "id": "Ta-dah! Well then, Haruta, it's OK to look now! It's everybody's yukata debut.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02132",
+  "word": "湯気",
+  "reading": "ゆげ",
+  "romaji": "yuge",
+  "meaning_id": "steam; vapour",
+  "meaning_en": "steam; vapour",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "薬缶から湯気が立っている。",
+      "id": "The kettle is steaming.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02137",
+  "word": "湯飲み",
+  "reading": "ゆのみ",
+  "romaji": "yunomi",
+  "meaning_id": "teacup",
+  "meaning_en": "teacup",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "壊れた湯飲みの補充をした。",
+      "id": "I replaced the broken cups with new ones.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02139",
+  "word": "溶岩",
+  "reading": "ようがん",
+  "romaji": "yougan",
+  "meaning_id": "lava",
+  "meaning_en": "lava",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その火山は溶岩を流し出した。",
+      "id": "The volcano poured molten rock.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "火山は炎と溶岩を吹き出す。",
+      "id": "The volcano shoots out flames and lava.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02140",
+  "word": "容器",
+  "reading": "ようき",
+  "romaji": "youki",
+  "meaning_id": "container; vessel",
+  "meaning_en": "container; vessel",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "これらの容器は気密になっている。",
+      "id": "These containers are airtight.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼は容器から中に入っている物をすっかり出した。",
+      "id": "He emptied the container of its contents.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02141",
+  "word": "用語",
+  "reading": "ようご",
+  "romaji": "yougo",
+  "meaning_id": "term; terminology",
+  "meaning_en": "term; terminology",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その手紙は商業用語で書かれた。",
+      "id": "The letter was written using business terms.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "日本料理の用語はほかの言語に訳すのが難しい。",
+      "id": "Japanese food terms are difficult to render into other languages.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02142",
+  "word": "要旨",
+  "reading": "ようし",
+  "romaji": "youshi",
+  "meaning_id": "gist; essentials",
+  "meaning_en": "gist; essentials; summary; fundamentals",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "以下は大統領の演説の要旨だ。",
+      "id": "The following is a summary of the President's speech.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02143",
+  "word": "幼児",
+  "reading": "ようじ",
+  "romaji": "youji",
+  "meaning_id": "bayi",
+  "meaning_en": "infant; baby; child",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は幼児虐待で罰せられた。",
+      "id": "He was punished for child abuse.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "幼児は病気にかかりやすい。",
+      "id": "Infants are subject to diseases.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02144",
+  "word": "容積",
+  "reading": "ようせき",
+  "romaji": "youseki",
+  "meaning_id": "capacity; volume",
+  "meaning_en": "capacity; volume",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "容積を計算するためには縦と横と深さをかければよい。",
+      "id": "To calculate the capacity, multiply the length by the width by the depth.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "近い将来、ゴミ処理費用が容積基準で有料化される可能性が高い。",
+      "id": "We will soon most likely be charged for garbage disposal by how much of it there is.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02146",
+  "word": "幼稚園",
+  "reading": "ようちえん",
+  "romaji": "youchien",
+  "meaning_id": "kindergarten",
+  "meaning_en": "kindergarten",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "それにしても、幼稚園というところは、季節の行事にとても敏感です。",
+      "id": "Even so, kindergartens are sensitive to seasonal events.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "しげみちゃんを幼稚園に迎えに行けないの。",
+      "id": "I will not be able to pick up Shigemi at the kindergarten.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02147",
+  "word": "用途",
+  "reading": "ようと",
+  "romaji": "youto",
+  "meaning_id": "use; usefulness",
+  "meaning_en": "use; usefulness",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "その発見はいろいろな用途に応用できる。",
+      "id": "We can apply the discovery to various uses.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02148",
+  "word": "洋品店",
+  "reading": "ようひんてん",
+  "romaji": "youhinten",
+  "meaning_id": "shop which handles Western-style apparel and accessories",
+  "meaning_en": "shop which handles Western-style apparel and accessories",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "洋品店を使います。",
+      "id": "Menggunakan shop which handles Western-style apparel and accessories.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02149",
+  "word": "養分",
+  "reading": "ようぶん",
+  "romaji": "youbun",
+  "meaning_id": "nourishment; nutrient",
+  "meaning_en": "nourishment; nutrient",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "養分を使います。",
+      "id": "Menggunakan nourishment; nutrient.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02150",
+  "word": "羊毛",
+  "reading": "ようもう",
+  "romaji": "youmou",
+  "meaning_id": "wool",
+  "meaning_en": "wool",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "オーストラリアは多くの羊毛を輸出している。",
+      "id": "Australia exports a lot of wool.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "父のしごとは羊毛の買い付けです。",
+      "id": "My father's work is to buy wool.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02152",
+  "word": "要領",
+  "reading": "ようりょう",
+  "romaji": "youryou",
+  "meaning_id": "point; gist",
+  "meaning_en": "point; gist; essentials; outline",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この報告書は要領をえていない。",
+      "id": "This report isn't to the point.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "妹は要領が悪くて損ばかりしている。",
+      "id": "My sister is clumsy, which is a disadvantage to her.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02158",
+  "word": "余所",
+  "reading": "よそ",
+  "romaji": "yoso",
+  "meaning_id": "another place; somewhere else",
+  "meaning_en": "another place; somewhere else; strange parts",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ここの人たちはよそから来た人をみな嫌う。",
+      "id": "These people hate all foreigners.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私の兄は、未婚なので、所帯を持たず、奉公人と一緒によその家で食事をしていた。",
+      "id": "My brother, being yet unmarried, did not keep house, but boarded with his apprentices at the home of another family.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02159",
+  "word": "四つ角",
+  "reading": "よつかど",
+  "romaji": "yotsukado",
+  "meaning_id": "four corners; crossroads",
+  "meaning_en": "four corners; crossroads",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "四つ角は二つの道が十字に交わった所である。",
+      "id": "A crossroads is where two roads meet in an X.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02160",
+  "word": "酔っ払い",
+  "reading": "よっぱらい",
+  "romaji": "yopparai",
+  "meaning_id": "drunkard",
+  "meaning_en": "drunkard",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "酔っぱらいはよろよろと彼のところへやって来た。",
+      "id": "The drunk rolled up to him.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "その酔っ払いはまっすぐ歩けなかった。",
+      "id": "The drunken man couldn't walk straight.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02161",
+  "word": "予備",
+  "reading": "よび",
+  "romaji": "yobi",
+  "meaning_id": "preparation; preliminaries",
+  "meaning_en": "preparation; preliminaries; reserve; spare",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ガソリンがなくなったので、予備タンクに頼った。",
+      "id": "I fell back on the reserve tank when the gas ran out.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ところで、予備の電池はあるの？",
+      "id": "By the way, do you have any spare batteries?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02168",
+  "word": "ラッシュアワー",
+  "reading": "ラッシュアワー",
+  "romaji": "rasshuawaa",
+  "meaning_id": "rush hour",
+  "meaning_en": "rush hour",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ラッシュアワーの交通渋滞にあった。",
+      "id": "I was caught in the rush hour.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ラッシュアワーにでくわすのは最低だ。",
+      "id": "It's horrible to get caught in rush hour traffic.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02169",
+  "word": "欄",
+  "reading": "らん",
+  "romaji": "ran",
+  "meaning_id": "column of text (e.g. as in a newspaper)",
+  "meaning_en": "column of text (e.g. as in a newspaper)",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "注はページの下欄についている。",
+      "id": "The notes are at the bottom of the page.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "一番最初に見るのはスポーツ欄だよ。",
+      "id": "I always read the sports page first.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02170",
+  "word": "ランチ",
+  "reading": "ランチ",
+  "romaji": "ranchi",
+  "meaning_id": "launch; lunch",
+  "meaning_en": "launch; lunch",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あなたはこの店のランチがえらくお気に入りですね。",
+      "id": "You are very fond of the lunch menu of this restaurant.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "本日のランチの内容はなんですか。",
+      "id": "What are you serving today?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02171",
+  "word": "ランニング",
+  "reading": "ランニング",
+  "romaji": "ranningu",
+  "meaning_id": "running; tank top",
+  "meaning_en": "running; tank top",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私は毎朝朝食前にランニングをする。",
+      "id": "I run before breakfast every morning.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02173",
+  "word": "理科",
+  "reading": "りか",
+  "romaji": "rika",
+  "meaning_id": "science",
+  "meaning_en": "science",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼女は理科を勉強しなければなりません。",
+      "id": "She has to study science.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼は理科を２科目とらなければならない。",
+      "id": "He has to take two science classes.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02174",
+  "word": "利害",
+  "reading": "りがい",
+  "romaji": "rigai",
+  "meaning_id": "advantages and disadvantages; interest",
+  "meaning_en": "advantages and disadvantages; interest",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼は自分の利害に敏感である。",
+      "id": "Dia alive to his own interests.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "日米の利害がこの点で衝突した。",
+      "id": "Japanese and American interests clashed on this point.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02175",
+  "word": "リズム",
+  "reading": "リズム",
+  "romaji": "rizumu",
+  "meaning_id": "rhythm",
+  "meaning_en": "rhythm",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "妻はアメリカでの新しい生活のリズムに慣れるのにえらい苦労した。",
+      "id": "My wife had a hard time getting into the swing of our new life in America.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "サンバはブラジルのリズムですね。",
+      "id": "Samba is a Brazilian rhythm, isn't it?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02176",
+  "word": "リットル",
+  "reading": "リットル",
+  "romaji": "rittoru",
+  "meaning_id": "litre",
+  "meaning_en": "litre",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ガソリンはリットル単位で売られる。",
+      "id": "Gasoline is sold by the liter.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この瓶には２リットルのお湯が入る。",
+      "id": "This jar can hold two liters of hot water.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02178",
+  "word": "リボン",
+  "reading": "リボン",
+  "romaji": "ribon",
+  "meaning_id": "ribbon",
+  "meaning_en": "ribbon",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "リボンをかけてもらえますか。",
+      "id": "Could you tie it with a ribbon?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "そのリボンはドレスに合わない。",
+      "id": "The ribbon doesn't match the dress.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02180",
+  "word": "流域",
+  "reading": "りゅういき",
+  "romaji": "ryuuiki",
+  "meaning_id": "(river) basin",
+  "meaning_en": "(river) basin",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ダムが切れて流域に大水が押し寄せた。",
+      "id": "The dam gave way and sent a great flush of water down the valley.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "激しい雨がその流域に洪水をもたらした。",
+      "id": "The heavy rain brought floods in the valley.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02181",
+  "word": "寮",
+  "reading": "りょう",
+  "romaji": "ryou",
+  "meaning_id": "hostel; dormitory",
+  "meaning_en": "hostel; dormitory",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私の大学には寮があります。",
+      "id": "My university has a dorm.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "寮の規則は守らなければならない。",
+      "id": "You must observe the rules of the dormitory.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02182",
+  "word": "両側",
+  "reading": "りょうがわ",
+  "romaji": "ryougawa",
+  "meaning_id": "both sides",
+  "meaning_en": "both sides",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "舞台の両側からライトが照らされた。",
+      "id": "The stage was lit from both sides.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "その通りの両側に店が並んでいる。",
+      "id": "Ada stores on each side of the street.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02183",
+  "word": "漁師",
+  "reading": "りょうし",
+  "romaji": "ryoushi",
+  "meaning_id": "fisherman",
+  "meaning_en": "fisherman",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "漁師は釣り上げた魚の大きさをおおげさにいった。",
+      "id": "The fisherman exaggerated the size of the fish he had caught.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼らは漁師に変装し船に乗って逃げた。",
+      "id": "They disguised themselves as fishermen and escaped in a boat.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02184",
+  "word": "領事",
+  "reading": "りょうじ",
+  "romaji": "ryouji",
+  "meaning_id": "consul",
+  "meaning_en": "consul",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "領事を使います。",
+      "id": "Menggunakan consul.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02186",
+  "word": "臨時",
+  "reading": "りんじ",
+  "romaji": "rinji",
+  "meaning_id": "temporary; special",
+  "meaning_en": "temporary; special; extraordinary",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "私はその会社で臨時の仕事を得た。",
+      "id": "I got a temporary job at the firm.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼等は貿易問題について臨時の会合を開いた。",
+      "id": "They held a special session on trade problems.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02188",
+  "word": "例外",
+  "reading": "れいがい",
+  "romaji": "reigai",
+  "meaning_id": "exception",
+  "meaning_en": "exception",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この規則には例外は認められない。",
+      "id": "This rule allows no exception.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "例外は作るべきではないと思います。",
+      "id": "I insist that exceptions not be made.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02189",
+  "word": "零点",
+  "reading": "れいてん",
+  "romaji": "reiten",
+  "meaning_id": "zero; no marks",
+  "meaning_en": "zero; no marks",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "そのテストではだれも零点をとらなかった。",
+      "id": "Nobody got zero in that test.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "これは「零点」を意味する。",
+      "id": "This means nil.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02191",
+  "word": "レインコート",
+  "reading": "レインコート",
+  "romaji": "reinkooto",
+  "meaning_id": "raincoat",
+  "meaning_en": "raincoat",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "レインコートを使います。",
+      "id": "Menggunakan raincoat.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02192",
+  "word": "レクリェーション",
+  "reading": "レクリェーション",
+  "romaji": "rekurieeshon",
+  "meaning_id": "recreation",
+  "meaning_en": "recreation",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "レクリェーションを使います。",
+      "id": "Menggunakan recreation.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02193",
+  "word": "レジャー",
+  "reading": "レジャー",
+  "romaji": "rejaa",
+  "meaning_id": "leisure",
+  "meaning_en": "leisure",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "彼女はここにレジャーで来たのですか。",
+      "id": "Did she come here to relax?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私には彼のレジャー観が面白い。",
+      "id": "I find his ideas about leisure interesting.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02194",
+  "word": "列島",
+  "reading": "れっとう",
+  "romaji": "rettou",
+  "meaning_id": "chain of islands",
+  "meaning_en": "chain of islands",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "日本は列島であり、山が多く、森は殆どない。",
+      "id": "Japan is a group of islands with many mountains and almost no forests.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02195",
+  "word": "レベル",
+  "reading": "レベル",
+  "romaji": "reberu",
+  "meaning_id": "level",
+  "meaning_en": "level",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "レベルを使います。",
+      "id": "Menggunakan level.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02196",
+  "word": "煉瓦",
+  "reading": "れんが",
+  "romaji": "renga",
+  "meaning_id": "brick",
+  "meaning_en": "brick",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "あの家はレンガ造りだ。",
+      "id": "That house is built of bricks.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "この煙突はレンガで出来ている。",
+      "id": "This chimney is made of brick.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02198",
+  "word": "レンズ",
+  "reading": "レンズ",
+  "romaji": "renzu",
+  "meaning_id": "lens",
+  "meaning_en": "lens",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "レンズを通ると像は逆になった。",
+      "id": "Through the lens the image was inverted.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "レンズだけ交換できますか。",
+      "id": "Can I buy only the lenses?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02199",
+  "word": "蝋燭",
+  "reading": "ろうそく",
+  "romaji": "rousoku",
+  "meaning_id": "candle",
+  "meaning_en": "candle",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ろうそくはひとりでに消えた。",
+      "id": "The candle went out of itself.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "ローソクを消していただけますか。",
+      "id": "Would you put out the candles?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02200",
+  "word": "ローマじ",
+  "reading": "ローマじ",
+  "romaji": "roomaji",
+  "meaning_id": "romanization; Roman letters",
+  "meaning_en": "romanization; Roman letters",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "日本語を入力する時って、ひらがな入力してる？それともローマ字入力？",
+      "id": "When you type in Japanese, are you using hiragana input, or romaji input?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02202",
+  "word": "ロッカー",
+  "reading": "ロッカー",
+  "romaji": "rokkaa",
+  "meaning_id": "locker",
+  "meaning_en": "locker",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ロッカーを使います。",
+      "id": "Menggunakan locker.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02203",
+  "word": "ロビー",
+  "reading": "ロビー",
+  "romaji": "robii",
+  "meaning_id": "lobby",
+  "meaning_en": "lobby",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "７時までにロビーに来てください。",
+      "id": "Tolong come to the lobby by 7 o'clock.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "友人にロビーで待ってもらってます。",
+      "id": "I have a friend waiting for me in the lobby.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02204",
+  "word": "論ずる",
+  "reading": "ろんずる",
+  "romaji": "ronzuru",
+  "meaning_id": "me-argue",
+  "meaning_en": "to argue; to discuss; to debate",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "論ずるを使います。",
+      "id": "Menggunakan me-argue.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02205",
+  "word": "和英",
+  "reading": "わえい",
+  "romaji": "waei",
+  "meaning_id": "Japanese-English",
+  "meaning_en": "Japanese-English",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "和英を使います。",
+      "id": "Menggunakan Japanese-English.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02210",
+  "word": "和服",
+  "reading": "わふく",
+  "romaji": "wafuku",
+  "meaning_id": "Japanese clothes",
+  "meaning_en": "Japanese clothes",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "確かに彼女は和服を着ると美しく見える。",
+      "id": "She certainly looks beautiful in a Japanese kimono.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "彼女は和服の方が良く似合う。",
+      "id": "She looks better in Japanese clothes.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02214",
+  "word": "割引",
+  "reading": "わりびき",
+  "romaji": "waribiki",
+  "meaning_id": "diskon; potongan harga",
+  "meaning_en": "discount; reduction; rebate",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "現金払いには１０パーセント割引いたします。",
+      "id": "We give a 10% discount for cash.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "私はその車を１０％の割引で買った。",
+      "id": "I bought the car at a 10% discount.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02215",
+  "word": "椀",
+  "reading": "わん",
+  "romaji": "wan",
+  "meaning_id": "Japanese soup bowl; wooden bowl",
+  "meaning_en": "Japanese soup bowl; wooden bowl",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "そのお椀のスープはとてもおいしかった。",
+      "id": "The soup in the bowl was very delicious.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02216",
+  "word": "碗",
+  "reading": "わん",
+  "romaji": "wan",
+  "meaning_id": "mangkuk",
+  "meaning_en": "bowl",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "碗を使います。",
+      "id": "Menggunakan mangkuk.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
+},
+
+{
+  "id": "vg-n2-02217",
+  "word": "ワンピース",
+  "reading": "ワンピース",
+  "romaji": "wanpiisu",
+  "meaning_id": "one-piece dress",
+  "meaning_en": "one-piece dress",
+  "jlpt": "n2",
+  "pos": "noun",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "umum",
+    "kehidupan-sehari-hari"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "rekan-kerja",
+    "umum"
+  ],
+  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "このワンピースはいくらですか。",
+      "id": "How much is this dress?",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    },
+    {
+      "jp": "このワンピースは、君の雰囲気にぴったりだね。",
+      "id": "This dress is YOU.",
+      "level": "n2",
+      "tags": [
+        "umum"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v19.3.1-staged-merge",
+  "provenance": "expansion-staged",
+  "jmdict_seq": "",
+  "frequency": 1000
 }
 
 ];

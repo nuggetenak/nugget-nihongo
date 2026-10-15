@@ -2,22 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  /* Warm Sumi & Golden Lacquerware (Makie 蒔絵) */
-  --bg: #121110;
-  --bg-deep: #0C0B0A;
-  --surface: #1A1816;
-  --surface-2: #24211E;
-  --surface-3: #322D28;
-  --surface-4: #423B34;
-  --text: #F5EFE6;
-  --text-bright: #FFFDF9;
-  --text-muted: rgba(245, 239, 230, 0.68);
-  --text-dim: rgba(245, 239, 230, 0.40);
-  --accent: #F59E0B;
-  --accent-hot: #FBBF24;
-}
-
+:root,
 :root.light,
 html.light {
   --bg: #FDFBF7;
@@ -28,10 +13,33 @@ html.light {
   --surface-4: #D2C2AA;
   --text: #2D2319;
   --text-bright: #1A130B;
-  --text-muted: rgba(45, 35, 25, 0.68);
-  --text-dim: rgba(45, 35, 25, 0.42);
+  --text-muted: rgba(45, 35, 25, 0.74);
+  --text-dim: rgba(45, 35, 25, 0.50);
   --accent: #D97706;
   --accent-hot: #B45309;
+  --border-theme: rgba(45, 35, 25, 0.12);
+  --theme-primary: var(--accent);
+  --theme-primary-hover: var(--accent-hot);
+}
+
+:root.dark,
+html.dark {
+  /* Warm Sumi & Golden Lacquerware (Makie 蒔絵) */
+  --bg: #121110;
+  --bg-deep: #0C0B0A;
+  --surface: #1A1816;
+  --surface-2: #24211E;
+  --surface-3: #322D28;
+  --surface-4: #423B34;
+  --text: #F5EFE6;
+  --text-bright: #FFFDF9;
+  --text-muted: rgba(245, 239, 230, 0.72);
+  --text-dim: rgba(245, 239, 230, 0.46);
+  --accent: #F59E0B;
+  --accent-hot: #FBBF24;
+  --border-theme: rgba(245, 239, 230, 0.12);
+  --theme-primary: var(--accent);
+  --theme-primary-hover: var(--accent-hot);
 }
 
 *, *::before, *::after {
@@ -166,12 +174,15 @@ body {
 
 /* Progressive Kanji Stroke Drawing Animation */
 @keyframes drawStroke {
+  from {
+    stroke-dashoffset: 1000;
+  }
   to {
     stroke-dashoffset: 0;
   }
 }
 .animate-draw-stroke {
-  animation: drawStroke 0.65s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation: drawStroke 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
 /* Kanji touch guide start ring pulse */

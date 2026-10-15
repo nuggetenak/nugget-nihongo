@@ -16,7 +16,7 @@ const fs = require('fs');
 const http = require('http');
 const { spawn } = require('child_process');
 
-const BASE_URL = process.env.TEST_URL || 'http://localhost:5173';
+const BASE_URL = process.env.TEST_URL || 'http://127.0.0.1:5173';
 
 const VIEWPORTS = [
   { name: 'iPhone SE (375x667)', width: 375, height: 667, isMobile: true },
@@ -48,7 +48,8 @@ async function runVerification() {
   const running = await isServerRunning(BASE_URL);
   if (!running) {
     console.log(`⚡ Preview server not detected. Starting on ${BASE_URL}...`);
-    serverProcess = spawn('npx', ['vite', 'preview', '--port', '5173'], {
+    const cmd = process.platform === 'win32' ? 'npx.cmd' : 'npx';
+    serverProcess = spawn(cmd, ['vite', 'preview', '--port', '5173', '--host', '127.0.0.1'], {
       shell: true,
       cwd: path.join(__dirname, '..'),
       stdio: 'ignore',
