@@ -116,10 +116,10 @@ Setiap sektor telah dioperasionalkan secara terpisah dalam dokumen silabus menda
 #### 3.1 Sektor 01: Nursing Care / Eldercare (介護 - Kaigo)
 - **Kementerian & Lembaga Penguji:** Kementerian Kesehatan, Tenaga Kerja, dan Kesejahteraan (MHLW / 厚生労働省), Silver Service Association & Prometric.
 - **Buku Teks & Rujukan Resmi:**
-  - \`reference-books/ssw/01_kaigo_eldercare/Kaigo_Skills_Textbook_Rev2_JA.pdf\` (Revisi ke-2 MHLW, 276 halaman) & \`Kaigo_Skills_Textbook_Rev2_ID.pdf\`.
-  - \`reference-books/ssw/01_kaigo_eldercare/Kaigo_Japanese_Textbook_JA.pdf\` & \`Kaigo_Japanese_Textbook_ID_Multi.pdf\` (50 halaman).
-  - \`reference-books/ssw/01_kaigo_eldercare/Kaigo_Vocabulary_Glossary_ID.pdf\` (Kamus Glosarium Resmi MHLW).
-  - \`reference-books/ssw/01_kaigo_eldercare/Kaigo_Skills_Exam_Sample_JA.pdf\` & \`Kaigo_Japanese_Exam_Sample_JA.pdf\`.
+  - \`reference-books/ssw/01_kaigo_nursing_care/Kaigo_Skills_Textbook_Rev2_JA.pdf\` (Revisi ke-2 MHLW, 276 halaman) & \`Kaigo_Skills_Textbook_Rev2_ID.pdf\`.
+  - \`reference-books/ssw/01_kaigo_nursing_care/Kaigo_Japanese_Textbook_JA.pdf\` & \`Kaigo_Japanese_Textbook_ID_Multi.pdf\` (50 halaman).
+  - \`reference-books/ssw/01_kaigo_nursing_care/Kaigo_Vocabulary_Glossary_ID.pdf\` (Kamus Glosarium Resmi MHLW).
+  - \`reference-books/ssw/01_kaigo_nursing_care/Kaigo_Skills_Exam_Sample_JA.pdf\` & \`Kaigo_Japanese_Exam_Sample_JA.pdf\`.
 - **Spesifikasi Ujian Prometric CBT:**
   1. *Ujian Evaluasi Keterampilan Kaigo (介護特定技能評価試験 - 技能):* 45 soal, 60 menit, ambang kelulusan $\\ge 60\\%$. Bahasa Jepang (dengan furigana) atau Bahasa Indonesia. 4 ranah: Dasar Keperawatan (介護の基本), Mekanisme Tubuh & Jiwa (こころとからだのしくみ), Komunikasi (コミュニケーション技術), Bantuan Hidup (生活支援技術).
   2. *Ujian Evaluasi Bahasa Jepang Kaigo (介護日本語評価試験):* 15 soal, 30 menit, ambang kelulusan $\\ge 60\\%$. Bahasa Jepang dengan furigana. 3 ranah: Kosakata Kaigo (介護のことば), Percakapan & Koe-kake (介護の会話・声かけ), Dokumen Kaigo (介護の文書).
@@ -200,9 +200,9 @@ Setiap sektor telah dioperasionalkan secara terpisah dalam dokumen silabus menda
 #### 3.2 Sektor 02: Building Cleaning Management (ビルクリーニング分野)
 - **Kementerian & Lembaga Penguji:** MHLW (厚生労働省) / Asosiasi Pemeliharaan Gedung Jepang (JBMA / 公益社団法人 全国ビルメンテナンス協会) & Pearson VUE CBT.
 - **Buku Teks & Rujukan Resmi:**
-  - \`reference-books/ssw/02_building_cleaning/Building_Cleaning_Exam_Guide_ID.pdf\` (Panduan Peserta JBMA Bahasa Indonesia).
-  - \`reference-books/ssw/02_building_cleaning/Building_Cleaning_Exam_Sample_2025_JA.pdf\` (Spesifikasi CBT 2025 JBMA & Pearson VUE, 15 halaman).
-  - \`reference-books/ssw/02_building_cleaning/Building_Cleaning_Past_Exam_Questions_JA.pdf\` (Kumpulan Soal Ujian Tertulis Asli JBMA).
+  - \`reference-books/ssw/05_building_cleaning/Building_Cleaning_Exam_Guide_ID.pdf\` (Panduan Peserta JBMA Bahasa Indonesia).
+  - \`reference-books/ssw/05_building_cleaning/Building_Cleaning_Exam_Sample_2025_JA.pdf\` (Spesifikasi CBT 2025 JBMA & Pearson VUE, 15 halaman).
+  - \`reference-books/ssw/05_building_cleaning/Building_Cleaning_Past_Exam_Questions_JA.pdf\` (Kumpulan Soal Ujian Tertulis Asli JBMA).
 - **Spesifikasi Ujian Pearson VUE CBT (Mulai 10 Maret 2025):**
   - Ujian Teori (学科試験): 20 soal, 20 menit, ambang kelulusan $\\ge 60\\%$.
   - Ujian Praktik (実技試験): 30 soal simulasi visual layar komputer, 30 menit, ambang kelulusan $\\ge 60\\%$.
@@ -314,9 +314,9 @@ Setiap sektor telah dioperasionalkan secara terpisah dalam dokumen silabus menda
 #### 3.7 Sektor 07: Shipbuilding & Marine Machinery (造船・舶用工業分野)
 - **Kementerian & Lembaga Penguji:** Biro Maritim MLIT (海事局) / Nippon Kaiji Kyokai (ClassNK / 一般財団法人 日本海事協会).
 - **Buku Teks & Rujukan Resmi:**
-  - \`reference-books/ssw/10_zousen_shipbuilding/Shipbuilding_Welding_Sample_Exam_JA.pdf\` & \`Shipbuilding_Welding_Practical_Guide_JA.pdf\`.
-  - \`reference-books/ssw/10_zousen_shipbuilding/Shipbuilding_Machining_Sample_Exam_JA.pdf\` & \`Shipbuilding_Machining_Practical_Guide_JA.pdf\`.
-  - \`reference-books/ssw/10_zousen_shipbuilding/Shipbuilding_Finishing_Sample_Exam_JA.pdf\` & \`Shipbuilding_Ironwork_Sample_Exam_JA.pdf\`.
+  - \`reference-books/ssw/12_zousen_shipbuilding/Shipbuilding_Welding_Sample_Exam_JA.pdf\` & \`Shipbuilding_Welding_Practical_Guide_JA.pdf\`.
+  - \`reference-books/ssw/12_zousen_shipbuilding/Shipbuilding_Machining_Sample_Exam_JA.pdf\` & \`Shipbuilding_Machining_Practical_Guide_JA.pdf\`.
+  - \`reference-books/ssw/12_zousen_shipbuilding/Shipbuilding_Finishing_Sample_Exam_JA.pdf\` & \`Shipbuilding_Ironwork_Sample_Exam_JA.pdf\`.
 - **Spesifikasi Ujian ClassNK:**
   - 4 Sub-Bidang Spesialisasi: Pengelasan (溶接), Pemesinan (機械加工), Finishing (仕上げ), Fabrikasi Besi (鉄工).
   - Ujian Teori (学科): 30 soal, format ○× dan pilihan diagram. Ambang kelulusan $\\ge 60\\%$.
@@ -338,9 +338,9 @@ Setiap sektor telah dioperasionalkan secara terpisah dalam dokumen silabus menda
 #### 3.8 Sektor 08: Aviation Industry (航空分野 - Ground Handling & Maintenance)
 - **Kementerian & Lembaga Penguji:** Biro Penerbangan Sipil Jepang (JCAB) & MLIT / Asosiasi Teknisi Penerbangan Jepang (JAEA / 公益社団法人 日本航空技術協会) & Prometric CBT.
 - **Buku Teks & Rujukan Resmi:**
-  - \`reference-books/ssw/11_koukuu_aviation/Aviation_Ground_Handling_Safety_Textbook_JA.pdf\` (26 halaman) & \`Operations_Textbook_JA.pdf\` (52 halaman).
-  - \`reference-books/ssw/11_koukuu_aviation/Aviation_Maintenance_Basic_Skills_Textbook_EN_JA.pdf\` & \`Safety_Textbook_EN_JA.pdf\`.
-  - \`reference-books/ssw/11_koukuu_aviation/Aviation_Ground_Handling_Sample_Exam_JA.pdf\` & \`Aviation_Maintenance_Sample_Exam_JA.pdf\`.
+  - \`reference-books/ssw/10_koukuu_aviation/Aviation_Ground_Handling_Safety_Textbook_JA.pdf\` (26 halaman) & \`Operations_Textbook_JA.pdf\` (52 halaman).
+  - \`reference-books/ssw/10_koukuu_aviation/Aviation_Maintenance_Basic_Skills_Textbook_EN_JA.pdf\` & \`Safety_Textbook_EN_JA.pdf\`.
+  - \`reference-books/ssw/10_koukuu_aviation/Aviation_Ground_Handling_Sample_Exam_JA.pdf\` & \`Aviation_Maintenance_Sample_Exam_JA.pdf\`.
 - **Spesifikasi Ujian Prometric CBT:**
   - Ground Handling CBT: 40 soal, 60 menit, ambang kelulusan $\\ge 65\\%$.
   - Aircraft Maintenance CBT: 40 soal, 60 menit, ambang kelulusan $\\ge 65\\%$.
@@ -389,9 +389,9 @@ Setiap sektor telah dioperasionalkan secara terpisah dalam dokumen silabus menda
 #### 3.10 Sektor 10: Agriculture: Crop Cultivation (農業分野 - 耕種農業)
 - **Kementerian & Lembaga Penguji:** MAFF (農林水産省) / Kamar Dagang Pertanian Nasional (NCA / 一般社団法人 全国農業会議所 / ASAT) & Prometric CBT.
 - **Buku Teks & Rujukan Resmi:**
-  - \`reference-books/ssw/05_nougyou_agriculture/Agri_Crop_Farming_Textbook_JA.pdf\` (105 halaman) & \`Agri_Crop_Farming_Textbook_ID.pdf\`.
-  - \`reference-books/ssw/05_nougyou_agriculture/Agri_Japanese_Textbook_JA.pdf\` & \`Agri_Japanese_Textbook_ID.pdf\`.
-  - \`reference-books/ssw/05_nougyou_agriculture/Agri_SSW2_Crop_Farming_JA.pdf\` & \`Agri_Exam_Sample_Questions_JA.pdf\`.
+  - \`reference-books/ssw/04_nougyou_agriculture/Agri_Crop_Farming_Textbook_JA.pdf\` (105 halaman) & \`Agri_Crop_Farming_Textbook_ID.pdf\`.
+  - \`reference-books/ssw/04_nougyou_agriculture/Agri_Japanese_Textbook_JA.pdf\` & \`Agri_Japanese_Textbook_ID.pdf\`.
+  - \`reference-books/ssw/04_nougyou_agriculture/Agri_SSW2_Crop_Farming_JA.pdf\` & \`Agri_Exam_Sample_Questions_JA.pdf\`.
 - **Spesifikasi Ujian Prometric CBT:**
   - CBT 60 menit, ambang kelulusan $\\ge 60\\%$. Pilihan ganda bergambar dan ○×.
 - **Modul Kurikulum:**
@@ -411,9 +411,9 @@ Setiap sektor telah dioperasionalkan secara terpisah dalam dokumen silabus menda
 #### 3.11 Sektor 11: Agriculture: Livestock Farming (農業分野 - 畜産農業)
 - **Kementerian & Lembaga Penguji:** MAFF (農林水産省) / Kamar Dagang Pertanian Nasional (NCA / 一般社団法人 全国農業会議所 / ASAT) & Prometric CBT.
 - **Buku Teks & Rujukan Resmi:**
-  - \`reference-books/ssw/05_nougyou_agriculture/Agri_Livestock_Textbook_JA.pdf\` (158 halaman) & \`Agri_Livestock_Textbook_ID.pdf\`.
-  - \`reference-books/ssw/05_nougyou_agriculture/Agri_Japanese_Textbook_JA.pdf\` & \`Agri_Japanese_Textbook_ID.pdf\`.
-  - \`reference-books/ssw/05_nougyou_agriculture/Agri_SSW2_Livestock_JA.pdf\` & \`Agri_Exam_Sample_Questions_JA.pdf\`.
+  - \`reference-books/ssw/04_nougyou_agriculture/Agri_Livestock_Textbook_JA.pdf\` (158 halaman) & \`Agri_Livestock_Textbook_ID.pdf\`.
+  - \`reference-books/ssw/04_nougyou_agriculture/Agri_Japanese_Textbook_JA.pdf\` & \`Agri_Japanese_Textbook_ID.pdf\`.
+  - \`reference-books/ssw/04_nougyou_agriculture/Agri_SSW2_Livestock_JA.pdf\` & \`Agri_Exam_Sample_Questions_JA.pdf\`.
 - **Spesifikasi Ujian Prometric CBT:**
   - CBT 60 menit, ambang kelulusan $\\ge 60\\%$. Pilihan ganda bergambar dan ○×.
 - **Modul Kurikulum:**
@@ -433,9 +433,9 @@ Setiap sektor telah dioperasionalkan secara terpisah dalam dokumen silabus menda
 #### 3.12 Sektor 12: Fisheries & Aquaculture (漁業分野 - 漁業 & 養殖業)
 - **Kementerian & Lembaga Penguji:** Badan Perikanan Jepang (Fisheries Agency / 水産庁 / MAFF) / Asosiasi Perikanan Jepang Raya (Suisankai / 一般社団法人 大日本水産会) & Prometric CBT.
 - **Buku Teks & Rujukan Resmi (Revisi Terbaru 2025):**
-  - \`reference-books/ssw/06_gyogyou_fisheries/Fisheries_General_Textbook_2025_JA.pdf\` (46 halaman) & Terjemahan ID \`Fisheries_General_Textbook_ID.pdf\`.
-  - \`reference-books/ssw/06_gyogyou_fisheries/Fisheries_Safety_Textbook_2025_JA.pdf\` (12 halaman) & Terjemahan ID \`Fisheries_Safety_Textbook_ID.pdf\`.
-  - \`reference-books/ssw/06_gyogyou_fisheries/Fisheries_SSW1_Sample_Exam_JA.pdf\` & \`Fisheries_SSW2_Sample_Exam_JA.pdf\`.
+  - \`reference-books/ssw/11_gyogyou_fisheries/Fisheries_General_Textbook_2025_JA.pdf\` (46 halaman) & Terjemahan ID \`Fisheries_General_Textbook_ID.pdf\`.
+  - \`reference-books/ssw/11_gyogyou_fisheries/Fisheries_Safety_Textbook_2025_JA.pdf\` (12 halaman) & Terjemahan ID \`Fisheries_Safety_Textbook_ID.pdf\`.
+  - \`reference-books/ssw/11_gyogyou_fisheries/Fisheries_SSW1_Sample_Exam_JA.pdf\` & \`Fisheries_SSW2_Sample_Exam_JA.pdf\`.
 - **Spesifikasi Ujian Suisankai Prometric CBT:**
   - SSW 1 dan SSW 2 (Ujian Keterampilan Tingkat Lanjut).
   - Ujian Teori (学科): Format ○× True/False. Ambang kelulusan $\\ge 60\\%$.
@@ -523,9 +523,9 @@ Setiap sektor telah dioperasionalkan secara terpisah dalam dokumen silabus menda
 #### 3.16 Sektor 16: Food Service Industry / Restaurant (外食業分野)
 - **Kementerian & Lembaga Penguji:** MAFF (農林水産省) / Asosiasi Layanan Makanan Jepang (JFnet / 一般社団法人 日本フードサービス協会) & OTAFF / Prometric CBT.
 - **Buku Teks & Rujukan Resmi:**
-  - \`reference-books/ssw/04_gaishoku_restaurant/Gaishoku_Customer_Service_Textbook_JA.pdf\` & \`ID\` (Pelayanan Pelanggan Ver 1.1, 50 halaman).
-  - \`reference-books/ssw/04_gaishoku_restaurant/Gaishoku_Food_Preparation_Textbook_JA.pdf\` & \`ID\` (Pengolahan Makanan Dapur Ver 1.1, 49 halaman).
-  - \`reference-books/ssw/04_gaishoku_restaurant/Gaishoku_Hygiene_Control_Textbook_JA.pdf\` & \`ID\` (Manajemen Kebersihan Restoran Ver 1.2, 45 halaman).
+  - \`reference-books/ssw/02_gaishoku_food_service/Gaishoku_Customer_Service_Textbook_JA.pdf\` & \`ID\` (Pelayanan Pelanggan Ver 1.1, 50 halaman).
+  - \`reference-books/ssw/02_gaishoku_food_service/Gaishoku_Food_Preparation_Textbook_JA.pdf\` & \`ID\` (Pengolahan Makanan Dapur Ver 1.1, 49 halaman).
+  - \`reference-books/ssw/02_gaishoku_food_service/Gaishoku_Hygiene_Control_Textbook_JA.pdf\` & \`ID\` (Manajemen Kebersihan Restoran Ver 1.2, 45 halaman).
 - **Spesifikasi Ujian OTAFF/JFnet Prometric CBT:**
   - Ujian Tokutei Ginou 1-gō & 2-gō: 45 soal, 60 menit, ambang kelulusan $\\ge 65\\%$.
 - **Modul Kurikulum:**
@@ -545,10 +545,10 @@ Setiap sektor telah dioperasionalkan secara terpisah dalam dokumen silabus menda
 #### 3.17 Sektor 17: Accommodation & Hospitality (宿泊業分野)
 - **Kementerian & Lembaga Penguji:** Badan Pariwisata Jepang (JTA / 観光庁) & MLIT / Pusat Ujian Keterampilan Industri Akomodasi (CAIPT / 一般社団法人 宿泊業技能試験センター) & Zenryoren / Prometric CBT.
 - **Buku Teks & Rujukan Resmi:**
-  - \`reference-books/ssw/12_shukuhaku_hospitality/Hospitality_SSW1_Textbook_JA.pdf\` (52 halaman) & Terjemahan Resmi ID \`Hospitality_SSW1_Textbook_ID.pdf\`.
-  - \`reference-books/ssw/12_shukuhaku_hospitality/Hospitality_SSW2_Textbook_JA.pdf\` (Tingkat Lanjut 2-gō).
-  - \`reference-books/ssw/12_shukuhaku_hospitality/Hospitality_Terminology_Glossary_JA.pdf\` (Glosarium Resmi CAIPT).
-  - \`reference-books/ssw/12_shukuhaku_hospitality/Hospitality_Past_Exam_Questions_JA.pdf\` (Kumpulan Soal Asli CAIPT).
+  - \`reference-books/ssw/06_shukuhaku_hospitality/Hospitality_SSW1_Textbook_JA.pdf\` (52 halaman) & Terjemahan Resmi ID \`Hospitality_SSW1_Textbook_ID.pdf\`.
+  - \`reference-books/ssw/06_shukuhaku_hospitality/Hospitality_SSW2_Textbook_JA.pdf\` (Tingkat Lanjut 2-gō).
+  - \`reference-books/ssw/06_shukuhaku_hospitality/Hospitality_Terminology_Glossary_JA.pdf\` (Glosarium Resmi CAIPT).
+  - \`reference-books/ssw/06_shukuhaku_hospitality/Hospitality_Past_Exam_Questions_JA.pdf\` (Kumpulan Soal Asli CAIPT).
 - **Spesifikasi Ujian CAIPT Prometric CBT:**
   - Tokutei Ginou 1-gō & 2-gō: 30 soal, 45 menit, ambang kelulusan $\\ge 65\\%$. Format ○× dan pilihan ganda.
 - **Modul Kurikulum:**
