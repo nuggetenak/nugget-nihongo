@@ -9,8 +9,10 @@
 - `reference-books/ssw/05_building_cleaning/Building_Cleaning_Past_Exam_Questions_JA.pdf` (Kumpulan Soal Asli Ujian Masa Lalu JBMA)
 **Landasan Teoretis & Empiris:**
 - Needs Analysis & LSP (Hutchinson & Waters 1987 [VS-01]; Dudley-Evans & St John 1998 [VS-02])
-- Occupational Safety & Chemical Hazard Communication (JNIOSH 2020 [VS-39])
 - Technical Lexicon Stratification (Nation & Hwang 1995 [VS-09]; Chung & Nation 2003 [VS-10])
+- Cross-Cultural Communication in Service Operations & HOU-REN-SO (Mustaqim & Priventa 2026 [VS-31]; Supriatnaningsih et al. 2024 [VS-33])
+- Geminate Acoustic Intelligibility in Shouted Operational Directives (Husna & Febriyanti 2022 [EA-25])
+- Occupational Safety & Chemical Hazard Communication (JNIOSH 2020 [VS-39])
 
 ---
 
@@ -60,61 +62,54 @@ Kurikulum membedakan 4 domain kerja operasional:
 
 ## 3. MODUL PEMBELAJARAN KURIKULUM (PEDAGOGICAL MODULES)
 
-### MODUL 1: MATERIAL LANTAI & TEKNIK PEMBERSIHAN
-- **Topik 1.1: Klasifikasi Permukaan Lantai:**
-  - Lantai elastis (*dansei yukazai*): Vinyl composition tile (VCT), sheet vinyl, linoleum.
-  - Lantai keras (*kougyoku yukazai*): Marmer (*daisekiryuu*), granit (*mikageishi*), teraso, semen ekspos. Peringatan: Marmer sensitif terhadap asam!
-  - Lantai serat tekstil (*sen'i yukazai*): Karpet nilon, wol, tile carpet.
-- **Topik 1.2: Pembersihan Lantai Kering & Basah:**
-  - Dust mop (*furor moppu*): Pola dorong menyapu tanpa mengangkat mop agar debu tidak berhamburan ke udara.
-  - Wet mop 8 langkah: Menjaga postur punggung tegak, gerakan membentuk angka 8 (*hachinoji-gake*), pembilasan kain pel pada ember pemeras (*moppu shiboriki*).
+### MODUL 1: MATERIAL LANTAI & TEKNIK PEMBERSIHAN (床材と清掃技術)
+- **Topik 1.1: Klasifikasi & Karakteristik Permukaan Lantai:**
+  - **Topik 1.1.1: Lantai Elastis (弾性床材 - Dansei Yukazai):** Karakteristik vinyl composition tile (VCT), sheet vinyl, dan linoleum; sensitivitas terhadap goresan dan alkali kuat.
+  - **Topik 1.1.2: Lantai Keras & Batu Alam (硬質床材 - Kougyoku Yukazai):** Karakteristik marmer alam (*daisekiryuu*), granit (*mikageishi*), teraso, dan ubin keramik; peringatan mutlak: marmer larut rusak terkena zat asam!
+  - **Topik 1.1.3: Lantai Serat Tekstil (繊維床材 - Sen'i Yukazai):** Karakteristik karpet nilon, poliester, wol, dan karpet ubin (*tile carpet*); teknik penanganan noda cairan dan debu terperangkap.
+- **Topik 1.2: Teknik Pembersihan Lantai Kering & Basah:**
+  - **Topik 1.2.1: Prosedur Dust Mop & Sapu Lantai Lobi:** Pola mendorong sapu pel debu tanpa mengangkat bilah kain dari lantai agar partikel debu halus tidak berhamburan ke udara.
+  - **Topik 1.2.2: Prosedur Pengepelan Basah (Wet Mopping 8 Langkah):** Postur tubuh ergonomis, teknik mengayunkan pel membentuk lintasan angka 8 (*hachinoji-gake*), dan pembilasan pada ember ganda pemeras (*moppu shiboriki*).
+  - **Topik 1.2.3: Pemeliharaan & Sanitasi Alat Pel:** Prosedur pencucian kain pel, perendaman disinfektan, dan penjemuran terbalik di ruang ventilasi untuk mencegah bau apek dan jamur.
 - **Topik 1.3: Pengoperasian Mesin Pemoles Putar (ポリッシャー - Polisher):**
-  - Komponen: Tuas kendali, switch pengaman, motor penggerak, kabel daya, tangki cairan, pad holder.
-  - Pemilihan Warna Pad Sikat Putar:
-    - **Hitam / Cokelat:** Pad abrasif sangat kasar untuk pengupasan wax lama (*hakuri*).
-    - **Hijau / Biru:** Pad kasar sedang untuk pencucian lantai kotor berat (*senjou*).
-    - **Merah:** Pad halus untuk pencucian berkala harian (*buffing*).
-    - **Putih:** Pad sangat halus tanpa serat abrasif untuk pengkilapan wax kering (*glazing*).
-  - Prosedur Keselamatan: Kabel daya wajib disampirkan di atas bahu operator agar tidak terlilit putaran pad mesin polisher!
+  - **Topik 1.3.1: Anatomi & Mekanisme Kendali Mesin Polisher:** Tuas penyesuaian sudut handle, sakelar pengaman dua tahap, tangki larutan kimia, pad holder, dan putaran sentrifugal motor listrik.
+  - **Topik 1.3.2: Standar Kode Warna Pad Abrasif Pemoles:** Pad hitam/cokelat (pengupasan wax lama/hakuri), hijau/biru (pencucian kotoran membandel), merah (pencucian spray buffing harian), putih (pengkilapan wax kering/glazing).
+  - **Topik 1.3.3: Protokol K3 Kabel Listrik Polisher:** Kewajiban menyampirkan kabel daya melintasi bahu operator ke belakang tubuh guna mencegah kabel tergilas pad berputar kecepatan tinggi.
 
 ---
 
-### MODUL 2: KIMIA PEMBERSIH & SANITASI TOILET
-- **Topik 2.1: Sifat Kimiawi & Skala pH Deterjen:**
-  - Deterjen netral (*chuusei senzai* - pH 6 s.d. 8): Aman untuk semua jenis lantai termasuk marmer, membersihkan debu dan minyak ringan.
-  - Deterjen alkali (*arukari-sei senzai* - pH > 8): Menghilangkan kotoran minyak membandel dan wax lama.
-  - Deterjen asam (*sansei senzai* - pH < 6): Menghilangkan kerak kencing (*nyouseki*), kerak air kalsium di wastafel toilet. Dilarang terkena marmer!
-- **Topik 2.2: Peringatan Kematian K3 Mutlak:**
-  - **MAZERU NA KIKEN (混ぜるな危険 - JANGAN CAMPUR BERBAHAYA!):**
-    - Mencampur disinfektan pemutih klorin (*ensokei hyouhakuzai / sodium hipoklorit*) dengan pembersih toilet asam (*sansei senzai*) melepaskan **GAS KLORIN BERACUN MEMATIKAN** ($Cl_2$).
-    - SOP Darurat: Jika terhirup gas klorin, segera evakuasi ke udara terbuka, hubungi penanggung jawab, dan bilas mata dengan air mengalir selama 15 menit.
-- **Topik 2.3: Rasio Pengenceran Kimia (*Kishaku Bairitsu*):**
-  - Menghitung takaran: Pengenceran 50 kali = 20 mL cairan kimia + 980 mL air (total 1 liter).
-  - Pelabelan botol semprot (*spray bottle*): Nama zat kimia, tanggal pengenceran, paraf petugas.
+### MODUL 2: KIMIA PEMBERSIH & SANITASI TOILET (洗剤化学とトイレ清掃)
+- **Topik 2.1: Sifat Kimiawi & Skala pH Deterjen Pembersih:**
+  - **Topik 2.1.1: Deterjen Netral pH 6–8 (中性洗剤 - Chuusei Senzai):** Karakteristik larutan surfaktan aman untuk seluruh jenis permukaan termasuk batu alam marmer, efektif mengangkat debu dan lapisan minyak ringan.
+  - **Topik 2.1.2: Deterjen Alkali pH > 8 (アルカリ性洗剤):** Efektif mengemulsi noda minyak gemuk, jelaga dapur, dan melarutkan polimer lilin wax lama.
+  - **Topik 2.1.3: Deterjen Asam pH < 6 (酸性洗剤):** Karakteristik pengikisan kerak urin kalsium fosfat (*nyouseki*) dan kerak air wastafel; larangan keras kontak dengan marmer!
+- **Topik 2.2: Peringatan Kematian K3 Mutlak (混ぜるな危険):**
+  - **Topik 2.2.1: Reaksi Kimia Pelepasan Gas Klorin Beracun:** Larangan keras mencampur disinfektan pemutih natrium hipoklorit (*ensokei*) dengan pembersih kerak asam (*sansei*) yang memicu gas klorin ($Cl_2$) mematikan.
+  - **Topik 2.2.2: Tindakan Darurat Keracunan Gas Klorin:** Protokol evakuasi ke ruang terbuka arah angin, penyiraman mata dengan air mengalir 15 menit, dan aktivasi kode darurat 119.
+- **Topik 2.3: Rasio Pengenceran Kimia & Regulasi Wadah:**
+  - **Topik 2.3.1: Perhitungan Akurat Rasio Pengenceran (Kishaku Bairitsu):** Formula takaran larutan konsentrat (mis. 50x = 20 mL kimia + 980 mL air) dan penggunaan gelas ukur silinder.
+  - **Topik 2.3.2: Standar Pelabelan Wadah Semprot Sekunder:** Kewajiban label identitas nama bahan kimia, tanggal pengenceran, batas kedaluwarsa, dan identitas petugas pada botol semprot.
 
 ---
 
-### MODUL 3: TEKNIK PEMBERSIHAN KACA & SANITASI
-- **Topik 3.1: Penggunaan Washer & Squeegee:**
-  - Window washer: Meratakan cairan pembersih kaca tanpa menetes ke lantai.
-  - Squeegee karet (*sukuiiji*): Menarik air kotor dengan sudut 45 derajat, mengelap bilah karet dengan kain mikrofiber setiap akhir tarikan.
-  - Pola tarikan: Gerakan lurus horizontal (*ichimonji-biki*) dan gerakan berkesinambungan huruf S (*S-ji biki*).
-- **Topik 3.2: Sanitasi Fasilitas Toilet:**
-  - Urutan kerja sanitasi: Cermin wastafel $\rightarrow$ meja wastafel $\rightarrow$ urinal pria $\rightarrow$ kloset duduk $\rightarrow$ dinding partisi $\rightarrow$ lantai.
-  - Pembersihan kloset: Menguras air cekungan, mengoleskan pembersih kerak, menyikat bagian dalam rim, membersihkan dudukan washlet dengan kain khusus disinfektan.
+### MODUL 3: TEKNIK PEMBERSIHAN KACA & SANITASI (ガラス清掃と衛生管理)
+- **Topik 3.1: Penggunaan Window Washer & Squeegee Karet:**
+  - **Topik 3.1.1: Pembasahan Kaca Menggunakan Washer:** Teknik menyapukan larutan kimia pembersih kaca secara merata tanpa memicu tetesan ke lantai lobi atau bingkai kayu.
+  - **Topik 3.1.2: Tarikan Karet Squeegee Sudut 45 Derajat:** Teknik menekan bilah karet squeegee dengan kemiringan konstan, mengelap bilah karet dengan lap kering mikrofiber di setiap tarikan.
+  - **Topik 3.1.3: Pola Tarikan Lurus (Ichimonji) vs Berkelanjutan (S-ji Biki):** Prosedur tarikan horizontal untuk kaca bertingkat dan tarikan kontinu huruf S untuk bidang kaca lebar komersial.
+- **Topik 3.2: Sanitasi Terpadu Fasilitas Toilet Komersial:**
+  - **Topik 3.2.1: Urutan Alur Kerja Sanitasi Toilet Standar:** Cermin wastafel $\rightarrow$ counter wastafel $\rightarrow$ urinal pria $\rightarrow$ kloset duduk $\rightarrow$ dinding partisi $\rightarrow$ pembersihan lantai akhir.
+  - **Topik 3.2.2: Pembersihan Kerak Kloset & Dudukan Washlet:** Penurunan permukaan air cekungan, aplikasi asam terarah, penyikatan rim mangkok, dan disinfeksi panel elektrik washlet dengan kain khusus terpisah.
 
 ---
 
-### MODUL 4: K3, LIMBAH MEDIS & MANAJEMEN RISIKO GEDUNG
-- **Topik 4.1: Pengelolaan Limbah Infeksius Rumah Sakit (感染性廃棄物):**
-  - Kotak Biohazard Kuning: Jarum suntik, pisau bedah (benda tajam).
-  - Kotak Biohazard Merah: Darah cair, cairan tubuh.
-  - Kotak Biohazard Oranye: Kasa, perban, sarung tangan terkontaminasi darah (benda padat).
-  - Dilarang menekan sampah infeksius menggunakan kaki atau tangan kosong!
-- **Topik 4.2: K3 Pekerjaan Ketinggian & Tangga Lipat (脚立):**
-  - Menggunakan tangga lipat (*kyatatsu*) dengan tali pengunci tengah terpasang kokoh.
-  - Dilarang keras mengangkangi anak tangga teratas (*tenban ni matagaranai*)!
-  - Pemasangan tanda peringatan lantai licin (*Ashimoto chuui / Wet Floor Sign*) saat mengepel.
+### MODUL 4: K3, LIMBAH MEDIS & MANAJEMEN RISIKO GEDUNG (安全衛生と感染管理)
+- **Topik 4.1: Pengelolaan Limbah Medis Infeksius Rumah Sakit (感染性廃棄物):**
+  - **Topik 4.1.1: Pemisahan Wadah Berkode Warna Biohazard:** Wadah kuning (jarum suntik/bisturi tajam), wadah merah (darah cair/sampel patologi), wadah oranye (kasa/sarung tangan terkontaminasi).
+  - **Topik 4.1.2: Larangan Pemadatan Sampah Infeksius Manual:** Larangan keras menekan atau menginjak kantong limbah biohazard menggunakan kaki atau tangan guna mencegah tertusuk jarum (*hari-sashi*).
+- **Topik 4.2: K3 Pekerjaan Ketinggian & Pencegahan Jatuh:**
+  - **Topik 4.2.1: Standar Penggunaan Tangga Lipat Segitiga (Kyatatsu):** Pembukaan penuh sudut engsel penahan, penguncian klem penahan tengah, dan larangan keras mengangkangi anak tangga teratas (*tenban*).
+  - **Topik 4.2.2: Pemasangan Rambu Lantai Licin (Ashimoto Chuui):** Kewajiban mendirikan papan peringatan kuning (*Wet Floor Sign*) di kedua ujung koridor sebelum pekerjaan basah dimulai.
 
 ---
 
@@ -137,6 +132,27 @@ Kurikulum membedakan 4 domain kerja operasional:
 | 13 | 日常清掃 | にちじょうせいそう | *nichijou seisou* | Pembersihan rutin operasional harian gedung | Standard Procedure |
 | 14 | 定期清掃 | ていきせいそう | *teiki seisou* | Pembersihan mendalam berkala (stripping/wax) | Heavy Equipment Operation |
 | 15 | 保護具着用 | ほごぐちゃくよう | *hogogu chakuyou* | Kewajiban memakai APD kacamata & sarung tangan | Chemical Splash Injury |
+| 16 | 樹脂ワックス | じゅしわっくす | *jushi wakkusu* | Lilin polimer pelapis pelindung lantai | Slip Hazard during coating |
+| 17 | パッド台 | ぱっどだい | *paddodai* | Piringan pemegang pad abrasif pada polisher | Mechanical Ejection Risk |
+| 18 | 自走式洗浄機 | じそうしきせんじょうき | *jisoushiki senjouki* | Mesin pembersih lantai otomatis gerak mandiri | Collision / Floor Damage |
+| 19 | バキュームクリーナー | ばきゅーむくりーなー | *bakyuumu kuriinaa* | Alat penyedot debu basah dan kering industri | Electric Shock in wet use |
+| 20 | 針刺し事故 | はりさしじこ | *harisashi jiko* | Kecelakaan tertusuk jarum suntik bekas | Bloodborne Pathogen (HIV/HBV) |
+| 21 | バイオハザードマーク | ばいおはざーどまーく | *baiohazaado maaku* | Tanda simbol bahaya limbah medis infeksius | Containment Breach |
+| 22 | 大理石保護 | だいりせきほご | *daisekiri hogo* | Perlindungan batu marmer alam dari zat asam | Irreversible Chemical Etching |
+| 23 | 目地清掃 | めじせいそう | *meji seisou* | Pembersihan sela nat ubin keramik berjamur | Chemical Aerosol Inhalation |
+| 24 | 防毒マスク | ぼうどくますく | *boudoku masuku* | Masker respirator gas beracun/organik | Asphyxiation / Poisoning |
+| 25 | 保護メガネ | ほごめがね | *hogo megane* | Kacamata pelindung percikan cairan kimia | Eye Chemical Splash Blindness |
+| 26 | 耐薬品手袋 | たいやくひんてぶくろ | *taiyakuhin tebukuro* | Sarung tangan karet tahan zat kimia korosif | Dermatitis & Chemical Burns |
+| 27 | 踏み台 | ふみだい | *fumidai* | Bangku pijakan rendah kerja ketinggian | Loss of Balance / Fall |
+| 28 | 転倒防止看板 | てんとうぼうしかんばん | *tentou boushi kamban* | Papan rambu peringatan lantai basah licin | Public Slip Liability |
+| 29 | 残留洗剤除去 | ざんりゅうせんざいじょきょ | *zanryuu senzai jokyo* | Pembilasan residu kimia pembersih di lantai | Re-soiling & Slip Hazard |
+| 30 | 水拭き・乾拭き | みずぶき・からぶき | *mizubuki / karabuki* | Pengelapan lap basah disusul lap kering steril | Moisture Damage & Slipping |
+| 31 | 天板 | てんばん | *temban* | Pijakan paling atas tangga lipat (dilarang diinjak!) | Unstable Fall Catastrophe |
+| 32 | モップ絞り器 | もっぷしぼりき | *moppu shiboriki* | Ember pemeras kain pel sistem jepit | Finger Pinch Hazard |
+| 33 | 汚水回収 | おすいかいしゅう | *osui kaishuu* | Penyedotan air kotor sisa pencucian lantai | Bacterial Dispersion Hazard |
+| 34 | スプレーボトル | すぷれーぼとる | *supuree botoru* | Botol semprot aplikator larutan kimia kerja | Accidental Misidentification |
+| 35 | 便座除菌 | べんざじょきん | *benza jokin* | Disinfeksi dudukan kloset dengan alkohol | Cross-Contamination |
+| 36 | 換気確認 | かんきかくにん | *kanki kakunin* | Verifikasi exhaust sirkulasi udara ruang kimia | Toxic Vapor Accumulation |
 
 ---
 

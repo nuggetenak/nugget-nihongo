@@ -1,112 +1,94 @@
-# SILABUS KEJURUAN RESMI NUGGET NIHONGO · SEKTOR 11: AGRICULTURE - LIVESTOCK FARMING (畜産農業 / PETERNAKAN SAPI, BABI & UNGGAS)
+# SILABUS KEJURUAN RESMI NUGGET NIHONGO · SEKTOR 11: AGRICULTURE - LIVESTOCK FARMING (PETERNAKAN HEWAN)
 **Kode Sektor:** `SSW-AGRI-02` · **Versi:** v2.0 (Corpus v30 Canonical Revision)  
 **Status:** AUTHORITATIVE & EXHAUSTIVE SECTOR SYLLABUS  
 **Kementerian Pembina:** Kementerian Pertanian, Kehutanan dan Perikanan Jepang (MAFF / 農林水産省)  
-**Badan Pelaksana Uji:** Dewan Pertanian Nasional Jepang (ASAT / 一般社団法人全国農業会議所) & Prometric  
+**Badan Pelaksana Uji:** Kamar Dagang Pertanian Nasional (NCA / 一般社団法人 全国農業会議所 / ASAT) & Prometric  
 **Dasar Kurasi Primer:**
-- `reference-books/ssw/04_nougyou_agriculture/Agri_Livestock_Textbook_JA.pdf` (158 halaman) & `ID` (Buku Teks Resmi Peternakan ASAT)
-- `reference-books/ssw/04_nougyou_agriculture/Agri_Japanese_Textbook_JA.pdf` & `ID` (Bahasa Jepang Komunikasi Peternakan)
-- `reference-books/ssw/04_nougyou_agriculture/Agri_SSW2_Livestock_JA.pdf` & `Agri_SSW2_Safety_Common_JA.pdf`
-- `reference-books/ssw/04_nougyou_agriculture/Agri_Exam_Sample_Questions_JA.pdf` (Bank Soal Ujian Asli ASAT)
+- `reference-books/ssw/04_nougyou_agriculture/Agri_Livestock_Textbook_JA.pdf` (158 halaman) & `reference-books/ssw/04_nougyou_agriculture/Agri_Livestock_Textbook_ID.pdf` (Peternakan Hewan)
+- `reference-books/ssw/04_nougyou_agriculture/Agri_Japanese_Textbook_JA.pdf` (68 halaman) & `reference-books/ssw/04_nougyou_agriculture/Agri_Japanese_Textbook_ID.pdf` (Bahasa Jepang Pertanian)
+- `reference-books/ssw/04_nougyou_agriculture/Agri_SSW2_Livestock_JA.pdf` & `reference-books/ssw/04_nougyou_agriculture/Agri_SSW2_Safety_Common_JA.pdf` (Tingkat Lanjut 2-gō)
+- `reference-books/ssw/04_nougyou_agriculture/Agri_Exam_Sample_Questions_JA.pdf` (29 halaman Bank Soal Resmi ASAT)
 **Landasan Teoretis & Empiris:**
 - Needs Analysis & Technical Lexicon (Nation & Hwang 1995 [VS-09]; Chung & Nation 2003 [VS-10])
-- Cross-Cultural Communication in Livestock Gemba & HOU-REN-SO (Mustaqim & Priventa 2026 [VS-31]; Supriatnaningsih et al. 2024 [VS-33])
-- Geminate Acoustic Precision in High-Noise Barns & Parlors (Husna & Febriyanti 2022 [EA-25])
-- Animal Biosecurity & Slurry Pit Safety Standards (MAFF 2023; JNIOSH 2020 [VS-39])
+- Cross-Cultural Communication in Agricultural Gemba & HOU-REN-SO (Mustaqim & Priventa 2026 [VS-31]; Supriatnaningsih et al. 2024 [VS-33])
+- Geminate Acoustic Intelligibility in Animal Handling Calls (Husna & Febriyanti 2022 [EA-25])
+- Animal Handling Safety & Biosecurity Protocols (JNIOSH 2020 [VS-39]; National Chamber of Agriculture 2024 [VS-47])
 
 ---
 
-## 1. SPESIFIKASI UJIAN RESMI ASAT PROMETRIC CBT (STANDAR MAFF)
+## 1. SPESIFIKASI UJIAN RESMI PROMETRIC CBT (STANDAR ASAT / MAFF)
 
-Kandidat visa *Tokutei Ginou 1-gō* bidang Peternakan menempuh ujian Computer-Based Testing (CBT) ASAT:
+Kandidat visa *Tokutei Ginou 1-gō* bidang Peternakan menempuh ujian Computer-Based Testing (CBT) dengan spesifikasi regulasi resmi:
 
 ```
 ┌────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                        ASAT LIVESTOCK FARMING AGRICULTURE EXAM MATRIX                                  │
+│                        PROMETRIC CBT AGRICULTURE LIVESTOCK FARMING EXAM MATRIX                         │
 ├─────────────────────────┬────────────────────────────────────────┬─────────────┬───────────┬───────────┤
 │ Komponen Ujian          │ Cakupan Ranah Pengujian                │ Jumlah Soal │ Durasi    │ Ambang    │
 ├─────────────────────────┼────────────────────────────────────────┼─────────────┼───────────┼───────────┤
-│ 1. Ujian Teori          │ Fisiologi ternak (sapi, babi, ayam),   │ 35-40 Soal  │ 60 Menit  │ $\ge 60\%$│
-│    (学科試験 - Gakka)   │ pakan konsentrat & serat kasar, teknik │ (Format     │           │ (21 / 35  │
-│                         │ pemerahan susu, biosecurity penyakit,  │  Pilihan    │           │  atau     │
-│                         │ pengelolaan limbah kotoran kandang, K3 │  Ganda CBT) │           │  24 / 40) │
+│ 1. Ujian Teori          │ Fisiologi ternak sapi/babi/unggas,     │ 30–40 Soal  │ 60 Menit  │ $\ge 60\%$│
+│    (学科試験 - Gakka)   │ manajemen pakan & pemerahan susu, K3   │ (Format     │           │ (Berdasarkan│
+│                         │ kandang, biosekuriti karantina wabah   │  True/False │           │  skor total│
+│                         │ penyakit hewan menular nasional        │  ○× & Bergbr)│          │  CBT)      │
 ├─────────────────────────┼────────────────────────────────────────┼─────────────┼───────────┼───────────┤
-│ 2. Ujian Praktik Layar  │ Identifikasi foto gejala mastitis susu,│ 15-20       │ 30 Menit  │ $\ge 60\%$│
-│    (実技試験 - Jitsugi) │ cara pembersihan cangkir hisap perah,  │ Butir Soal  │           │ (Evaluasi │
-│                         │ prosedur disinfeksi kolam ban kendaraan,│ Simulasi    │           │  Visual)  │
-│                         │ pemotongan taring anak babi, grader telur│ Layar CBT  │           │           │
+│ 2. Ujian Praktik Layar  │ Identifikasi visual mastitis ambing,   │ Terpadu     │ Terpadu   │ $\ge 60\%$│
+│    (実技試験 - Jitsugi) │ urutan cuci putting sebelum perah,     │ dalam lembar│ dalam sesi│           │
+│                         │ penanganan kotoran dan disinfeksi bot  │  ujian CBT  │  60 Menit │           │
 └─────────────────────────┴────────────────────────────────────────┴─────────────┴───────────┴───────────┘
 ```
 
-> **Ketentuan Kelulusan Ganda:** Peserta wajib lulus **KEDUA-DUANYA** (Teori $\ge 60\%$ dan Praktik $\ge 60\%$).
+> **Catatan Bahasa Ujian:** Ujian disajikan dalam **Bahasa Jepang berfurigana**, dengan foto dokumentasi kandang ternak resmi Jepang pada setiap studi kasus evaluasi.
 
 ---
 
-## 2. JALUR OPERASIONAL SUB-BIDANG PETERNAKAN (ASAT)
+## 2. TIGA CABANG PETERNAKAN UTAMA JEPANG
 
-Sub-bidang Peternakan (*Chikusan Nougyou*) mengoperasikan 4 rantai produksi hewani:
-1. **Peternakan Sapi Perah (酪農 - Rakunou):**
-   - Pemeliharaan sapi betina perah Holstein: Pemberian pakan campuran TMR (*Total Mixed Ration*).
-   - Operasional ruang perah (*milking parlor*): Tandem, herringbone, atau rotary parlor.
-   - Pengecekan kualitas susu: Uji mastitis CMT (*California Mastitis Test*), pendinginan tangki pendingin susu (*bulk cooler* $< 4^\circ\text{C}$).
-2. **Peternakan Sapi Pedaging (肉用牛 - Nikuyougyu / Wagyu):**
-   - Pembiakan bibit pedaging (*hanshoku*) dan penggemukan (*hiku*): Kuroge Washu (Wagyu hitam Jepang).
-   - Pengendalian marbling lemak daging (*sashi*), perawatan kuku sapi (*teitei*), dan pencegahan kembung perut (*koufukuchou*).
-3. **Peternakan Babi (養豚 - Youton):**
-   - Manajemen induk bunting dan kandang melahirkan (*farrowing pen*).
-   - Perawatan anak babi baru lahir: Penyekatan penghangat lampu inframerah (30°C), pemotongan gigi taring pencegah luka puting induk, suntikan zat besi (*tetsubun chuusha*).
-4. **Peternakan Unggas (養鶏 - Youkei):**
-   - Ayam petelur komersial (*saitan-kei*): Pengumpulan telur otomatis, pencucian telur, deteksi retak cangkang dan telur bercak darah (*candling*).
-   - Ayam pedaging broiler (*nikuyou-kei*): Ventilasi kandang terowongan (*tunnel ventilation*), konversi pakan (FCR).
+1. **Peternakan Sapi Perah & Pedaging (酪農・肉用牛 - Dairy & Beef Cattle):**
+   - Sapi perah Holstein: Manajemen pemerahan susu otomatis (*milking parlor*), pencegahan mastitis radang puting, pemberian pakan konsentrat dan silase.
+   - Sapi potong Wagyu/Kuroge Washu: Pembesaran pedet (*ikusei*), penggemukan daging marbling (*shiage*), pemantauan kesehatan rumen.
+2. **Peternakan Babi (養豚 - Swine / Pig Farming):**
+   - Manajemen induk bunting dan melahirkan (*farrowing*), perawatan anak babi menyusui, pemberian pakan cair/kering otomatis, kontrol suhu kandang tertutup.
+3. **Peternakan Unggas Petelur & Pedaging (養鶏 - Poultry Layer & Broiler):**
+   - Kandang ayam petelur sistem baterai/aviary, pengumpulan dan grading telur otomatis, ventilasi penghisap debu amonia, biosekuriti flu burung steril.
 
 ---
 
 ## 3. MODUL PEMBELAJARAN KURIKULUM (PEDAGOGICAL MODULES)
 
-### MODUL 1: NUTRISI HEWAN, FISIOLOGI LAMBUNG & PAKAN
-- **Topik 1.1: Sistem Pencernaan Ruminansia (Sapi 4 Lambung):**
-  - Rumen (perut handuk), Retikulum (perut jala), Omasum (perut buku), Abomasum (perut sejati kelenjar).
-  - Fermentasi mikroba rumen: Penguraian serat selulosa menjadi asam lemak terbang (VFA: asetat, propionat, butirat).
-- **Topik 1.2: Manajemen Pakan Sapi:**
-  - Pakan serat kasar (*soshiryou*): Silase jagung fermentasi asam laktat pH $< 4.2$, jerami padi kering (*inawara*), rumput hay timothy/alfalfa.
-  - Pakan penguat (*noukou shiryou*): Jagung giling, bungkil kedelai, bekatul kaya protein dan energi.
+### MODUL 1: MANAJEMEN SAPI PERAH & PROSEDUR PEMERAHAN (酪農と搾乳衛生)
+- **Topik 1.1: Standar Higienitas Pemerahan Susu (搾乳衛生):**
+  - **Topik 1.1.1: Pemeriksaan Susu Awal & Tes Mastitis (前搾り・乳房炎検査):** Pemeriksaan 2–3 semprotan susu awal pada cawan hitam (*strip cup*), uji CMT (California Mastitis Test) mendeteksi gumpalan lendir radang ambing.
+  - **Topik 1.1.2: Pembersihan Puting & Pencelupan Antiseptik (ディッピング - Dipping):** Pengelapan puting menggunakan handuk kain sanitasi sekali pakai per ekor sapi (*1 cow 1 towel*), dan pencelupan puting cairan iodin (*post-dipping*).
+- **Topik 1.2: Pengoperasian Mesin Pemerah Susu Otomatis (ミルカー):**
+  - **Topik 1.2.1: Pemasangan Teat Cup & Tekanan Vakum:** Penyetelan tekanan vakum 40–50 kPa, pemasangan teat cup tanpa mendesis bocor angin, dan pelepasan otomatis (*automatic cluster remover*).
+  - **Topik 1.2.2: Pendinginan Susu di Tangki Pendingin (バルククーラー):** Penurunan suhu susu segar seketika hingga $le 4^circ	ext{C}$ di dalam bulk cooler untuk menghambat perkembangbiakan bakteri.
 
 ---
 
-### MODUL 2: PROSEDUR PEMERAHAN SUSU & PENCEGAHAN MASTITIS
-- **Topik 2.1: Enam Langkah Baku Pemerahan Higienis (ミルキング手順):**
-  1. *Fukitoki:* Pembersihan puting dengan lap basah disinfektan hangat terpisah per ekor sapi.
-  2. *Zen-sakunyuu (Foremilking):* Pemancaran 2–3 semprotan susu pertama ke cangkir bergaris hitam untuk mengecek adanya gumpalan susu putih atau darah.
-  3. *Uji Mastitis CMT:* Pencampuran susu dengan reagen detergen untuk mendeteksi kenaikan sel somatik leukosit.
-  4. *Souchaku (Unit Attachment):* Pemasangan 4 cangkir hisap perah (*teat cups*) dalam waktu 60–90 detik pasca stimulasi oksitosin puting.
-  5. *Rakkadaatsu:* Pelepasan unit vakum otomatis tanpa menarik paksa ambing.
-  6. *Dipingu (Post-dipping):* Pencelupan puting ke cairan iodin antiseptik untuk menutup lubang puting yang masih terbuka lebar pasca perah.
-- **Topik 2.2: Rantai Dingin Susu (コールドチェーン):**
-  - Penurunan suhu susu mentah di dalam bulk cooler dari 38°C ke bawah 4°C dalam waktu kurang dari 2 jam untuk mencegah perkembangbiakan bakteri koliform.
+### MODUL 2: MANAJEMEN PAKAN & FISIOLOGI PENCERNAAN (飼養管理と消化)
+- **Topik 2.1: Ruminansia & Manajemen Fermentasi Rumen Sapi:**
+  - **Topik 2.1.1: Pakan Hijauan & Fermentasi Silase (粗飼料・サイレージ):** Kualitas asam laktat gulungan silase (*roll bale*), bau fermentasi harum asam manis; larangan memberikan silase berjamur putih/hitam beracun!
+  - **Topik 2.1.2: Pakan Konsentrat & Pencegahan Asidosis Rumen (濃厚飼料):** Rasio seimbang serat kasar vs konsentrat biji-bijian guna mencegah kembung gas lambung akut (*bloat / kodoushou*) dan penurunan nafsu makan.
+- **Topik 2.2: Manajemen Air Minum & Fisiologi Laktasi:**
+  - **Topik 2.2.1: Pembersihan Bak Minum Otomatis (ウォーターカップ):** Verifikasi ketersediaan air bersih melimpah (sapi perah mengonsumsi 100–150 liter air/hari untuk produksi susu).
 
 ---
 
-### MODUL 3: BIOSECURITY PETERNAKAN & PENCEGAHAN WABAH VIRUS
-- **Topik 3.1: Tiga Penyakit Menular Hewan Kritis (家畜伝染病予防法):**
-  - Penyakit Mulut dan Kuku (PMK / *Kouteieki*): Menyerang hewan berkuku belah (sapi, babi, kambing).
-  - Flu Burung Sangat Patogenik (HPAI / *Kou-byougen-sei Tori Infuruenza*).
-  - Demam Babi Afrika (ASF / *Afurika Buta Netsu*): Mortalitas mendekati 100%.
-- **Topik 3.2: Sanitasi Gerbang Kandang (衛生管理区域):**
-  - Kolam disinfeksi roda kendaraan pengangkut pakan (*sharyou shoudoku*).
-  - Penggantian total sepatu boot kandang khusus (*senyou nagagutsu*) dan baju kandang sebelum melewati batas garis merah area sanitasi.
-  - Pemasangan jaring anti-burung liar (*boukei-netto*) di seluruh ventilasi kandang ayam dan babi.
+### MODUL 3: BIOSEKURITI & PENCEGAHAN WABAH PENYAKIT (防疫対策)
+- **Topik 3.1: Protokol Karantina & Sanitasi Masuk Kandang (衛生管理区域):**
+  - **Topik 3.1.1: Bak Celup Disinfektan Sepatu Boot (消毒槽):** Kewajiban menyikat kotoran tanah dari sepatu boot karet sebelum merendam ke dalam bak disinfektan klorin/iodin di pintu masuk kandang.
+  - **Topik 3.1.2: Pencegahan Penyakit Menular Strategis Nasional:** Karantina Flu Burung (*Kou-byouensei Tori Infuruenza*), Demam Babi Afrika (*ASF / Buta Netsu*), dan Penyakit Mulut dan Kuku (*Kouteieki*); larangan membawa produk daging dari luar ke area peternakan!
+- **Topik 3.2: Penanganan Bangkai & Pengolahan Kotoran Limbah (糞尿処理):**
+  - **Topik 3.2.1: Fermentasi Aerobik Pupuk Kandang (堆肥化):** Pengadukan berkala kotoran ternak dengan serbuk gergaji hingga suhu tumpukan mencapai 60°C–70°C untuk membunuh telur parasit dan biji gulma.
 
 ---
 
-### MODUL 4: K3 KANDANG TERNAK, ALAT BERAT & ASFIKSIA SLURRY PIT
-- **Topik 4.1: Penanganan Hewan Besar & Titik Buta Sapi (牛の死角):**
-  - Sapi memiliki sudut pandang panaroma hampir 330 derajat, namun memiliki titik buta tepat di belakang ekornya (*shinshin-bu*).
-  - Larangan mendekati sapi dari belakang tanpa menyapa atau memanggil suara ramah (*koe-kake*) terlebih dahulu; bahaya tendangan menyamping (*gyuu kettobashi*) berkekuatan ratusan kg.
-- **Topik 4.2: Bahaya Asfiksia & Gas Beracun di Bak Kotoran Cair (スラリーピット・堆肥舎):**
-  - Fermentasi anaerob kotoran di bak penampung menghasilkan gas Hidrogen Sulfida ($H_2S$) dan Amonia ($NH_3$) yang melumpuhkan saraf penciuman seketika pada dosis > 100 ppm.
-  - Larangan mutlak masuk ke dalam tangki penampung limbah kotoran tanpa blower ventilasi paksa dan tali pengaman.
-- **Topik 4.3: HOU-REN-SO Saat Sapi Ambruk / Susu Menggumpal:**
-  - *「農場長、3号牛舎のホルスタインが起立不能（ダウナー牛）になっています！体温が37.2度に低下しています。獣医への連絡をお願いします！」*
+### MODUL 4: K3 KANDANG, PERILAKU TERNAK & GAS BERACUN (家畜安全と環境K3)
+- **Topik 4.1: Pencegahan Bahaya Tertendang & Terjepit Sapi (蹴飛ばし・挟まれ):**
+  - **Topik 4.1.1: Memahami Zona Buta Penglihatan Sapi (盲点):** Sapi tidak dapat melihat area tepat di belakang pantatnya; kewajiban memberi aba-aba suara ramah (*koe-kake*) dan menyentuh punggung sapi dengan mantap saat mendekat dari arah samping.
+  - **Topik 4.1.2: Pengikatan Tali Moncong & Palang Penjepit (スタンチョン・カウトレーナー):** Prosedur fiksasi leher sapi pada stanchion saat tindakan medis suntik vaksin atau perawatan kuku (*teikan*).
+- **Topik 4.2: Bahaya Gas Beracun di Lubang Penampung Kotoran (スラリーピット):**
+  - **Topik 4.2.1: Keracunan Gas Hidrogen Sulfida & Amonia (硫化水素中毒):** Gas $H_2S$ di dasar kolam slurry limbah cair babi/sapi dapat mematikan indra penciuman seketika dan memicu kematian lemas asfiksia; larangan masuk tanpa ventilasi blower dan masker gas mandiri (SCBA)!
 
 ---
 
@@ -114,52 +96,73 @@ Sub-bidang Peternakan (*Chikusan Nougyou*) mengoperasikan 4 rantai produksi hewa
 
 | No | Kanji | Kana | Romaji | Indonesian Gloss | High-Stakes Risk Category |
 |---|---|---|---|---|---|
-| 1 | 蹴飛ばし | けとばし | *ketobashi* | Tendangan keras kaki belakang sapi ke tubuh | Blunt Force Internal Injury |
-| 2 | 乳房炎（マスタイティス）| にゅうぼうえん | *nyuubou'en / masutaitisu*| Radang kelenjar ambing susu sapi (Mastitis)| Severe Milk Contamination |
-| 3 | スラリーピット | すらりーぴっと | *surarii pitto* | Bak penampung limbah kotoran ternak cair | Toxic H2S Gas Suffocation |
-| 4 | 鳥インフルエンザ | とりいんふるえんざ | *tori infuruenza* | Virus flu burung patogenik tinggi | Mass Cull Epidemic |
-| 5 | 口蹄疫 | こうていえき | *kouteieki* | Penyakit mulut dan kuku ternak berkuku belah | Devastating National Quarantine|
-| 6 | 前搾り（ぜんさくり）| ぜんさくり | *zen-sakuri* | Pemerahan awal 3 pancaran uji kelainan susu | Milk Quality Gatekeeper |
-| 7 | ディッピング | でぃっぴんぐ | *dippingu* | Pencelupan puting ke cairan iodin pasca perah | Bacterial Teat Canal Infection |
-| 8 | バルククーラー | ばるくくーらー | *baruku kuuraa* | Tangki pendingin susu mentah bawah 4°C | Bacterial Proliferation Risk |
-| 9 | 濃厚飼料 | のうこうしりょう | *noukou shiryou* | Pakan konsentrat biji-bijian berenergi tinggi | Rumen Acidosis Hazard |
-| 10 | 粗飼料 | そしりょう | *soshiryou* | Pakan serat kasar (silase jagung, jerami, hay) | Ruminant Bloat / Impaction |
-| 11 | 初乳（しょにゅう）| しょにゅう | *shonyuu* | Kolostrum susu pertama kaya antibodi imun pedet| Calf Mortality Risk |
-| 12 | 蹄根・削蹄 | ていこん・さくてい | *teikon / sakutei* | Pemotongan dan perapian kuku sapi terpelihara| Hoof Rot / Inability to Stand |
-| 13 | 防鳥ネット | ぼうちょうねっと | *bouchou netto* | Jaring penghalang masuk burung liar ke kandang | Avian Influenza Vector |
-| 14 | 起立不能牛（ダウナー牛）| きりつふのうぎゅう | *daunaa gyuu* | Sapi ambruk tidak mampu berdiri (demam susu) | Downer Cow Emergency |
-| 15 | 踏込消毒槽 | ふみこみしょうどくそう| *fumikomi shoudokusou* | Bak rendam disinfektan sepatu boot pintu kandang| Biosecurity Breach |
+| 1 | 搾乳機（ミルカー） | さくにゅうき（みるかー） | *sakunyuuki (mirukaa)* | Mesin otomatis pemerah susu sapi ambing | Teat Tissue Trauma if Over-Milking |
+| 2 | 乳房炎（マスタイティス）| にゅうぼうえん | *nyuubouen (masutaitisu)*| Radang infeksi ambing puting sapi perah | Contaminated Milk Discard Loss |
+| 3 | 防疫対策 | ぼうえきたいさく | *boueki taisaku* | Protokol karantina biosekuriti kandang hewan | National Livestock Epidemic Outbreak |
+| 4 | 牛の蹴飛ばし | うしのけとばし | *ushi no ketobashi* | Sepakan tendangan kaki belakang sapi berbobot 600kg| Broken Ribs & Internal Hemorrhage |
+| 5 | 硫化水素ガス | りゅうかすいそがす | *ryuuka suiso gasu* | Gas beracun mematikan dari penampungan feses cair | Instant Asphyxiation Fatality |
+| 6 | ディッピング | でぃっぴんぐ | *dippingu* | Pencelupan puting sapi cairan antiseptik iodin | Mastitis Pathogen Infiltration |
+| 7 | バルククーラー | ばるくくーらー | *baruku kuuraa* | Tangki stainless pendingin susu segar $\le 4^\circ\text{C}$| Bacterial Spoilage of Raw Milk |
+| 8 | スタンチョン | すたんちょん | *sutanchon* | Palang besi penjepit leher sapi saat makan/periksa| Cow Neck Choking Hazard |
+| 9 | 蹄道・削蹄 | ていどう・さくてい | *teidou / sakutei* | Pemotongan dan perapian kuku sapi berkala | Hoof Lameness / Inability to Stand |
+| 10 | 前搾り | まえしぼり | *maeshibori* | Pemeriksaan semprotan susu pertama pada cup hitam | Unidentified Abnormal Milk Outflow |
+| 11 | 人工授精 | じんこうじゅせい | *jinkou jusei* | Inseminasi buatan bibit sperma beku nitrogen cair | Cryogenic Frostbite Hazard (-196°C) |
+| 12 | 粗飼料（乾草） | そしりょう（かんそう） | *soshiryou (kansou)* | Pakan serat kasar jerami rumput kering berkualitas | Rumen Acidosis / Bloat Hazard |
+| 13 | 濃厚飼料 | のうこうしりょう | *noukou shiryou* | Pakan penguat konsentrat biji-bijian jagung/kedelai| Liver Abscess if Overfed |
+| 14 | 盲点（死角） | もうてん（しかく） | *mouten (shikaku)* | Area buta tepat di belakang pantat sapi | Sudden Cow Strike Panic |
+| 15 | 踏込消毒槽 | ふみこみしょうどくそう | *fumikomi shoudokusou* | Bak rendam disinfektan sepatu boot pintu kandang | Cross-Farm Pathogen Spread |
+| 16 | 鳥インフルエンザ | とりいんふるえんざ | *tori infuruenza* | Wabah virus flu burung patogenik unggas | Total Farm Depopulation Cull |
+| 17 | 豚熱（ＣＳＦ） | ぶたねつ（しーえすえふ） | *butanetsu (CSF)* | Demam babi klasik virus menular ternak babi | Massive Economic Swine Cull |
+| 18 | 分娩房 | ぶんべんぼう | *bumbembou* | Kandang khusus proses persalinan induk sapi/babi | Maternal Aggression & Crushing |
+| 19 | 初乳給与 | しょにゅうきゅうよ | *shonyuu kyuuyo* | Pemberian susu kolostrum kaya antibodi pada pedet | Neonatal Calf Mortality |
+| 20 | 除角作業 | じょかくさぎょう | *jokaku sagyou* | Pemotongan tunas tanduk sapi muda pemanas besi | Severe Burn & Animal Struggle |
+| 21 | スラリーピット | すらりーぴっと | *surarii pitto* | Bak kolam bawah tanah penampung kotoran cair | Confined Poison Gas Death Trap |
+| 22 | 換気扇清掃 | かんきせんせいそう | *kankisen seisou* | Pembersihan kipas exhaust ventilasi debu amonia | Motor Fire & Toxic Air Hazard |
+| 23 | 家畜伝染病予防法 | かちくでんせんびょうよぼうほう| *kachiku densenbyou yobouhou*| Undang-undang karantina pencegahan wabah ternak | Criminal Penalties & Quarantine |
+| 24 | 耳標（個体識別） | じひょう（こたいしきべつ） | *jihyou (kotai shikibetsu)* | Anting barcode identitas wajib sapi nasional | Loss of Traceability Penalty |
+| 25 | 乾乳期 | かんにゅうき | *kannyuuki* | Masa istirahat laktasi sapi sebelum melahirkan | Udder Involution & Milk Fever |
+| 26 | ルーメン（第１胃） | るーめん（だいいちい） | *ruumen (dai-ichi-i)* | Lambung rumen fermentasi bakteri mikroflora sapi | Acute Tympany Bloat Hazard |
+| 27 | 鼓脹症 | こちょうしょう | *kochoushou* | Penyakit kembung gas rumen mematikan ternak sapi | Fatal Suffocation from Rumen Press |
+| 28 | 鼻環（モクシ） | びかん（もくし） | *bikan (mokushi)* | Tali tambat kepala sapi dan cincin tindik hidung | Animal Control Breakdown |
+| 29 | 飼槽清掃 | しそうせいそう | *shisou seisou* | Pembersihan palung sisa pakan basi kandang | Mycotoxin Feed Poisoning |
+| 30 | 集卵ベルト | しゅうらんべると | *shuuran beruto* | Sabuk konveyor telur otomatis kandang ayam petelur | Egg Breakage & Roller Pinch |
+| 31 | ウォーターカップ | うぉーたーかっぷ | *wootaa kappu* | Mangkuk klep air minum otomatis sapi perah | Dehydration due to Valve Stuck |
+| 32 | 生乳出荷検査 | せいにゅうしゅっかけんさ | *seinyuu shukka kensa* | Uji residu antibiotik dan bakteri susu tangki | Contaminated Batch Rejection |
+| 33 | 畜舎消毒噴霧 | ちくしゃしょうどくふんむ | *chikusha shoudoku fummu* | Pengabutan disinfektan sterilisasi ruang kandang | Chemical Eye & Inhalation Burn |
+| 34 | 踏みつけ防止柵 | ふみつけぼうしさく | *fumitsuke boushisaku* | Palang pelindung anak babi dari tertindih induk | Piglet Crushing Suffocation |
+| 35 | 給餌機ホッパー | きゅうじきほっぱー | *kyuujiki hoppaa* | Tangki corong pakan otomatis mesin babi/unggas | Auger Screw Entanglement |
+| 36 | ５Ｓ畜舎環境 | ごえすちくしゃかんきょう | *goesuchikusha kankyou* | Pembersihan lalat, bangkai tikus dan genangan | Rodent Vector Disease Outbreak |
 
 ---
 
 ## 5. DIRECTIVES K3 DARURAT & FORMULA YUBISASHI KOSHO
 
-### Teriakan Darurat Spontan di Peternakan (> 85 dB):
-- *「後ろから近づくな！声をかけて触れ！」* (*Ushiro kara chikazuku na! Koe wo kakete fure!* — Jangan mendekat dari belakang! Panggil namanya dulu!)
-- *「ピットに入るな！硫化水素ガスが出ているぞ！」* (*Pitto ni hairu na! Ryuuka suiso gasu ga dete iru zo!* — Jangan masuk pit! Keluar gas hidrogen sulfida!)
-- *「牛が暴れている！スタンチョンから離れろ！」* (*Ushi ga abarete iru! Sutanchon kara hanarero!* — Sapinya mengamuk! Menjauh dari stanchion!)
+### Teriakan Darurat Spontan di Tempat Kerja:
+- *「後ろから近づくな！牛が蹴るぞ！」* (*Ushiro kara chikadzuku na! Ushi ga keru zo!* — Jangan mendekat dari belakang! Sapinya bisa menendang!)
+- *「スラリーピットに入るな！硫化水素ガスだ！送風しろ！」* (*Surarii pitto ni hairu na! Ryuuka suiso gasu da! Soufuu shiro!* — Jangan masuk bak slurry! Ada gas hidrogen sulfida! Nyalakan blower!)
+- *「消毒を踏め！靴の裏を消毒槽に浸せ！」* (*Shoudoku wo fume! Kutsu no ura wo shoudokusou ni hitase!* — Injak disinfektan! Celupkan sol sepatu ke bak!)
 
 ### Formula Point-and-Call (指差し呼称):
-1. **Pengecekan Kebersihan & Desinfeksi Puting Susu:** *「ティートディッピング液塗布、被覆状態ヨシ！」*
-2. **Pengecekan Suhu Tangki Bulk Cooler:** *「バルククーラー温度、3.2度、基準内冷却ヨシ！」*
-3. **Pengecekan Disinfeksi Sepatu Boot Gerbang Masuk:** *「長靴洗浄、消毒槽浸漬10秒、消毒ヨシ！」*
-4. **Pengecekan Konsentrasi Gas Sebelum Masuk Ruang Kotoran:** *「ガス検知器硫化水素ゼロppm、送風換気作動ヨシ！」*
+1. **Pengecekan Mastitis Susu Awal:** *「前搾り確認、凝固物なし、正常、ヨシ！」*
+2. **Pengecekan Pencelupan Puting:** *「ディッピング完了、薬液被覆、ヨシ！」*
+3. **Pengecekan Bak Disinfektan Pintu:** *「衛生管理区域、靴底消毒、ヨシ！」*
+4. **Pengecekan Suhu Tangki Bulk Cooler:** *「生乳冷却温度、3度、冷却完了、ヨシ！」*
 
 ---
 
 ## 6. BANK SOAL UJIAN CBT ASAT RESMI
 
-### Contoh Soal Ujian Teori (学科試験 - Pilihan Ganda):
-> **Soal 1:** 搾乳作業において実施する「前搾り（ぜんさくり）」の主たる目的として、**最も適切なもの**を次の中から選びなさい。  
-> A. 乳房内の乳量を減らして、ミルカーの装着を容易にすること。  
-> B. 最初の数条の乳を観察することで、ブツ（凝固物）や血液の混入などの乳房炎の初期症状を発見し、異常乳の混入を防ぐこと。  
-> C. 乳頭管内の乳脂肪分を極限まで高めて、出荷時の乳質評価を向上させること。  
-> D. 牛の体温を低下させて、搾乳中のリラックス効果を高めること。  
-> **Kunci Jawaban:** **B** (Benar. Foremilking berfungsi memeriksa ada tidaknya gumpalan abnormal untuk deteksi dini radang ambing mastitis dan mencegah kontaminasi tangki susu).
+### Contoh Soal Ujian Teori (学科試験 ○×):
+> **Soal 1:** 搾乳作業を始めるときは、乳頭炎（マスタイティス）などの異常を発見するために、必ず前搾り（まえしぼり）を行って乳汁の状態を確認しなければならない。  
+> **Kunci Jawaban:** **○ (Benar)** (Uji semprotan susu awal pada cup hitam wajib dilakukan untuk mendeteksi gumpalan abnormal sebelum memasang mesin pemerah).
 
-> **Soal 2:** 畜舎における家畜伝染病（高病原性鳥インフルエンザや豚熱等）の侵入を防止するためのバイオセキュリティ対策として、**適切でないもの**（間違い）を選びなさい。  
-> A. 衛生管理区域へ立ち入る際は、専用の作業着と長靴に着替え、踏込消毒槽で長靴の泥を落として消毒する。  
-> B. 野鳥や野生動物が畜舎内に侵入して病原体を媒介するのを防ぐため、防鳥ネットの破損箇所を定期的に点検・補修する。  
-> C. 畜舎に入退出する車両は、タイヤハウスやタイヤ全体に十分な量の消毒液を噴霧して消毒する。  
-> D. 作業効率を優先するため、隣接する他の農場へ同じ作業着と長靴のままで行き来して作業を補助する。  
-> **Kunci Jawaban:** **D** (Salah. Berpindah antar-peternakan tanpa mengganti pakaian/sepatu kandang adalah pelanggaran biosecurity fatal yang menjadi vektor penularan wabah lintas farm).
+> **Soal 2:** 牛は視野が広いため、真正面よりも真後ろ（尻の真後ろ）に立ったほうが牛を驚かせずに安全に作業できる。  
+> **Kunci Jawaban:** **× (Salah)** (Titik tepat di belakang pantat sapi adalah area buta/blind spot; mendekat dari belakang membuat sapi panik dan menendang sekuat tenaga).
+
+### Contoh Soal Ujian Praktik On-Screen (実技試験):
+> **Soal 1:** 画面の写真を見て、家畜伝染病（鳥インフルエンザや豚熱など）の農場内への侵入を防ぐために、畜舎の出入口で作業者が必ず行わなければならない衛生対策として、正しいものを選びなさい。  
+> A. 畜舎内用の長靴に履き替え、踏込消毒槽で靴底を確実に消毒する  
+> B. 外部から持ち込んだ食品を畜舎内で食べる  
+> C. 野鳥や小動物が自由に畜舎内に入れるように窓を開け放つ  
+> D. 消毒液の交換は月に１回程度にとどめる  
+> **Kunci Jawaban:** **A** (Mengganti sepatu boot khusus kandang dan merendam sol pada bak disinfektan adalah pilar biosekuriti utama peternakan Jepang).

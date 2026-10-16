@@ -1,11 +1,11 @@
-# SILABUS KEJURUAN RESMI NUGGET NIHONGO · SEKTOR 05: ELECTRICAL & ELECTRONICS (電気電子情報関連産業 / MANUFAKTUR ELEKTRONIKA & INFORMASI)
+# SILABUS KEJURUAN RESMI NUGGET NIHONGO · SEKTOR 05: ELECTRICAL & ELECTRONICS (ELEKTRONIKA & KELISTRIKAN)
 **Kode Sektor:** `SSW-MFG-03` · **Versi:** v2.0 (Corpus v30 Canonical Revision)  
 **Status:** AUTHORITATIVE & EXHAUSTIVE SECTOR SYLLABUS  
 **Kementerian Pembina:** Kementerian Ekonomi, Perdagangan dan Industri Jepang (METI / 経済産業省)  
 **Badan Pelaksana Uji:** Organisasi SDM Manufaktur Internasional (JAIM / 一般社団法人工業製品製造技能人材機構) & Prometric  
 **Dasar Kurasi Primer:**
-- `reference-books/ssw/09_seizou_manufacturing/Manufacturing_Electrical_Assembly_Textbook_JA.pdf` (152 halaman) & `ID` (Perakitan Peralatan Listrik dan Elektronika)
-- `reference-books/ssw/09_seizou_manufacturing/Manufacturing_Electrical_Assembly_Sample_Exam_JA.pdf` (Bank Soal Ujian Resmi JAIM)
+- `reference-books/ssw/09_seizou_manufacturing/Manufacturing_Electrical_Assembly_Textbook_JA.pdf` (198 halaman) & `reference-books/ssw/09_seizou_manufacturing/Manufacturing_Electrical_Assembly_Textbook_ID.pdf`
+- `reference-books/ssw/09_seizou_manufacturing/Manufacturing_Electrical_Assembly_Sample_Exam_JA.pdf` (Bank Soal Ujian Perakitan Elektronik JAIM)
 - Standar Integrasi 17 Divisi Operasional JAIM (JAIM 2024 [VS-40])
 **Landasan Teoretis & Empiris:**
 - Needs Analysis & Technical Lexicon (Nation & Hwang 1995 [VS-09]; Chung & Nation 2003 [VS-10])
@@ -17,23 +17,22 @@
 
 ## 1. SPESIFIKASI UJIAN RESMI PROMETRIC CBT (STANDAR JAIM / METI)
 
-Kandidat visa *Tokutei Ginou 1-gō* bidang Manufaktur Kelistrikan dan Elektronika menempuh ujian Computer-Based Testing (CBT) dengan spesifikasi regulasi resmi:
+Kandidat visa *Tokutei Ginou 1-gō* bidang Perakitan Kelistrikan & Elektronika menempuh ujian Computer-Based Testing (CBT) dengan spesifikasi regulasi resmi:
 
 ```
 ┌────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                        PROMETRIC CBT ELECTRICAL & ELECTRONICS EXAM MATRIX                              │
+│                        PROMETRIC CBT ELECTRICAL & ELECTRONICS ASSEMBLY EXAM MATRIX                     │
 ├─────────────────────────┬────────────────────────────────────────┬─────────────┬───────────┬───────────┤
 │ Komponen Ujian          │ Cakupan Ranah Pengujian                │ Jumlah Soal │ Durasi    │ Ambang    │
 ├─────────────────────────┼────────────────────────────────────────┼─────────────┼───────────┼───────────┤
-│ 1. Ujian Teori          │ K3 listrik, pencegahan sengatan kawat, │ 30 Soal     │ 80 Menit  │ $\ge 65\%$│
-│    (学科試験 - Gakka)   │ Hukum Ohm/Kirchhoff, komponen pasif/   │ (Format     │ (Total    │ (20 / 30) │
-│                         │ aktif, teknik solder timbal-bebas,     │  True/False │  Alokasi  │           │
-│                         │ proteksi ESD, dan pengujian isolasi    │  ○× CBT)    │  Gakka &  │           │
+│ 1. Ujian Teori          │ Pengetahuan komponen listrik R-L-C,    │ 30 Soal     │ 80 Menit  │ $\ge 65\%$│
+│    (学科試験 - Gakka)   │ diagram sirkuit skematik, teknik solder│ (Format     │ (Total    │ (20 / 30) │
+│                         │ bebas timbal, proteksi ESD, kabel krimp│  True/False │  Alokasi  │           │
+│                         │ dan keselamatan K3 voltase tinggi      │  ○× CBT)    │  Gakka &  │           │
 ├─────────────────────────┼────────────────────────────────────────┼─────────────┤  Jitsugi) ├───────────┤
-│ 2. Ujian Praktik Layar  │ Identifikasi komponen SMD, pembacaan   │ 10 Soal     │           │ $\ge 60\%$│
-│    (実技試験 - Jitsugi) │ kode warna resistor 4/5 gelang,        │ (Simulasi   │           │ (6 / 10)  │
-│                         │ deteksi cacat solder (cold/bridging),  │  Visual CBT)│           │           │
-│                         │ perakitan harness & crimping terminal  │             │           │           │
+│ 2. Ujian Praktik Layar  │ Identifikasi cacat solder bridge,      │ 10 Soal     │           │ $\ge 60\%$│
+│    (実技試験 - Jitsugi) │ polaritas kapasitor elektrolit, urutan │ (Simulasi   │           │ (6 / 10)  │
+│                         │ crimping kabel, dan pembacaan tester   │  Visual CBT)│           │           │
 └─────────────────────────┴────────────────────────────────────────┴─────────────┴───────────┴───────────┘
 ```
 
@@ -41,64 +40,58 @@ Kandidat visa *Tokutei Ginou 1-gō* bidang Manufaktur Kelistrikan dan Elektronik
 
 ---
 
-## 2. JALUR OPERASIONAL SUB-BIDANG ELEKTRONIKA (JAIM)
+## 2. JALUR OPERASIONAL BIDANG PERAKITAN ELEKTRONIKA & KELISTRIKAN
 
-Sub-bidang Kelistrikan & Elektronika mencakup 4 divisi inti proses perakitan papan sirkuit dan kabel:
-1. **Perakitan Papan Sirkuit Cetak (プリント配線板製造・実装 - PCB / SMT Assembly):** Pemasangan komponen Surface Mount Technology (SMT), pasta solder (*solder paste*), pematrian oven reflow.
-2. **Penyolderan Tangan Manual (手はんだ付け作業 - Te-Handazuke):** Penyolderan kawat timah bebas timbal (*lead-free solder* Sn-Ag-Cu) pada titik through-hole komponen diskrit.
-3. **Perakitan Wiring Harness & Panel Kontrol (配線・ハーネス組立 - Hanesu Kumitate):** Pengupasan isolasi kabel (*strip*), crimping konektor (*atsuchaku*), pengikatan kabel (*kessoku*), perakitan kabinet panel kontrol.
-4. **Inspeksi Kelistrikan & Mutu (電気検査・品質保証 - Denki Kensa):** Uji kontinuitas (*doutsuu shiken*), resistansi isolasi (*zetsuen teikou*), dan uji ketahanan tegangan tembus (*taiatsu shiken*).
+Ruang lingkup perakitan kelistrikan mencakup 4 keahlian inti:
+1. **Perakitan Papan Sirkuit Cetak (プリント基板組立て - PCB Assembly):** Pemasangan komponen Through-Hole, penanganan komponen Surface Mount Device (SMD), inspeksi polaritas dioda dan IC.
+2. **Penyolderan Presisi & Rework (はんだ付け・修正):** Penyolderan manual solder iron suhu 350°C, pemakaian kawat timah bebas timbal (*lead-free / en-furi*), penyedotan timah berlebih (*desoldering braid*).
+3. **Perakitan Kabel Harness & Crimping (ワイヤーハーネス・圧着):** Pengupasan isolasi kabel (*wire stripping*), pengepresan skun terminal (*crimping / atchaku*), penyisipan konektor pin, bundling kabel ties.
+4. **Inspeksi Kelistrikan & Uji Isolasi (電気検査・耐電圧試験):** Uji kontinuitas (*doutsuu kensa*), pengukuran tegangan dan arus DC/AC, uji resistansi isolasi (*megger tester*), uji ketahanan dielektrik (*hipot test*).
 
 ---
 
 ## 3. MODUL PEMBELAJARAN KURIKULUM (PEDAGOGICAL MODULES)
 
-### MODUL 1: TEORI LISTRIK DASAR & KOMPONEN RANGKAIAN
-- **Topik 1.1: Parameter Listrik & Hukum Sirkuit:**
-  - Tegangan ($V$ Volt), Arus ($I$ Ampere), Hambatan ($R$ Ohm).
-  - Hukum Ohm $V = I \cdot R$ dan Daya Listrik $P = V \cdot I$ Watt.
-  - Perbedaan Arus Searah (DC / *Chokuryuu*) dan Arus Bolak-Balik (AC / *Kouryuu*).
-- **Topik 1.2: Komponen Elektronika Pasif & Aktif:**
-  - Resistor tetap & variabel: Kode warna 4 gelang (Hitam, Cokelat, Merah, Oranye, Kuning, Hijau, Biru, Ungu, Abu-abu, Putih, Emas 5%, Perak 10%).
-  - Kapasitor: Kapasitor keramik, film, dan elektrolit bertanda kutub (+ / -). Bahaya pemasangan terbalik kutub (*kyokusei machigai*) yang menyebabkan ledakan.
-  - Semikonduktor: Dioda penyearah, LED (*hakku daioudo*), transistor NPN/PNP, dan IC/LSI.
+### MODUL 1: KOMPONEN ELEKTRONIKA & PEMBACAAN SKEMA (電子部品と回路図)
+- **Topik 1.1: Identifikasi Komponen Pasif & Aktif:**
+  - **Topik 1.1.1: Resistor Kode Warna & Toleransi:** Pembacaan 4–5 pita warna nilai hambatan resistor ohm, daya watt, dan resistor chip SMD kode angka.
+  - **Topik 1.1.2: Kapasitor Elektrolit & Polaritas Positif-Negatif:** Peringatan polaritas pin panjang (+) vs pendek strip garis (-); bahaya kapasitor meledak jika terpasang terbalik pada PCB!
+  - **Topik 1.1.3: Semikonduktor Dioda, Transistor & Sirkuit Terpadu (IC):** Orientasi takik notch pin 1 pada IC, pin anoda-katoda LED, dan transistor bipolar NPN/PNP.
+- **Topik 1.2: Pembacaan Simbol & Diagram Skematik Sirkuit:**
+  - **Topik 1.2.1: Simbol Kelistrikan Standar JIS C 0617:** Pembacaan relai (*relay*), sakelar kontak NO/NC, transformator, sekring (*fuse*), dan simbol pembumian (*ground /接地*).
+  - **Topik 1.2.2: Alur Penelusuran Sinyal Skematik ke Jalur PCB:** Pencocokan kode referensi komponen (R1, C1, D1, U1) dengan silkscreen pada papan sirkuit fisik.
 
 ---
 
-### MODUL 2: TEKNOLOGI PENYOLDERAN & PERAKITAN PCB
-- **Topik 2.1: Karakteristik Solder Bebas Timbal (鉛フリーはんだ - Lead-Free):**
-  - Titik lebur timbal konvensional (183°C) vs paduan bebas timbal Sn-3.0Ag-0.5Cu (sekitar 217°C).
-  - Suhu ujung besi solder (*kote-saki*) yang diatur stabil antara 340°C – 360°C.
-  - Peran fluks (*furakkusu*) dalam melarutkan lapisan oksida dan membentuk sudut kontak meniskus basah (*wetting*).
-- **Topik 2.2: Kriteria Kualitas Sambungan Solder (JIS C 61191):**
-  - Bentuk ideal: Cekung merata seperti lereng gunung Fuji (*fujisan-gata / fillet* halus mengkilap).
-  - Cacat solder fatal:
-    - *Imo-handa* (Cold solder / solder dingin akibat panas kurang).
-    - *Buri-ji* (Solder bridge / jembatan lelehan timah yang menghubungkan dua jalur dan memicu arus pendek).
-    - *Handa-bori* (Solder void / lubang udara akibat fluks terperangkap).
-    - *Tsuno* (Solder spike / tanduk tajam akibat penarikan besi solder terlalu lambat).
+### MODUL 2: TEKNIK PENYOLDERAN BEBAS TIMBAL & REWORK (はんだ付け技術)
+- **Topik 2.1: Karakteristik Solder Bebas Timbal (鉛フリーはんだ):**
+  - **Topik 2.1.1: Suhu Ujung Solder & Fluks Terintegrasi:** Karakteristik paduan timah Sn-Ag-Cu (titik lebur 217°C), penyetelan temperatur solder iron 350°C–370°C, dan peranan fluks pembersih oksidasi.
+  - **Topik 2.1.2: Bentuk Sambungan Solder Ideal (フィレット - Fillet):** Pembentukan lereng cekung berkilau (*smooth concave fillet*) yang membasahi kaki komponen dan bantalan tembaga secara sempurna.
+- **Topik 2.2: Identifikasi & Penanganan Cacat Solderan:**
+  - **Topik 2.2.1: Cacat Jembatan Solder & Bola Timah (はんだブリッジ・はんだボール):** Korsleting antar-kaki IC akibat timah berlebih (*bridge*); prosedur pembersihan menggunakan pita tembaga penyerap solder (*solder wick*).
+  - **Topik 2.2.2: Solder Dingin & Penempelan Semu (いもはんだ・天ぷらはんだ):** Pemanasan bantalan yang kurang lama menghasilkan timah menempel bulat tanpa ikatan metalurgi intermetalik.
 
 ---
 
-### MODUL 3: TEKNIK WIRING HARNESS & TERMINASI KABEL
-- **Topik 3.1: Pengupasan & Crimping (圧着端子 - Acchaku Tanshi):**
-  - Pengupasan pembungkus isolasi menggunakan wire stripper (*waiaa sutorippaa*) tanpa melukai urat serat tembaga konduktor.
-  - Crimping terminal garpu/cincin dengan tang crimping bertanda warna (*atsuchaku kougu*).
-  - Uji tarik sambungan terminal (*hippari kensa*) untuk memastikan kawat tidak lolos terlepas.
-- **Topik 3.2: Penataan & Pengikatan Bundel Kabel:**
-  - Penggunaan tie-wrap kabel (*kessoku bando*), selongsong bakar panas (*shurinku chuubu*), dan pelabelan nomor pin terminal.
+### MODUL 3: WIRING HARNESS, CRIMPING & PENGUJIAN (配線ハーネスと検査)
+- **Topik 3.1: Pengupasan Kabel & Pengepresan Terminal Krimp (圧着):**
+  - **Topik 3.1.1: Pengupasan Isolasi Kawat (ワイヤーストリップ):** Pemilihan lubang stripper sesuai diameter kawat AWG; larangan memotong atau melukai serat serabut kawat tembaga inti!
+  - **Topik 3.1.2: Pengepresan Terminal Skun (端子圧着 - Atchaku):** Penggunaan tang krimp bersertifikasi JIS, verifikasi jendela krimp konduktor dan isolasi (*bell-mouth*), serta uji tarik kekuatan krimp (*tensile pull test*).
+- **Topik 3.2: Pengujian Fungsional Kelistrikan & Uji Beban:**
+  - **Topik 3.2.1: Pengukuran Multimeter Digital (テスター):** Uji kontinuitas kabel (buzzer berbunyi), pengukuran resistansi, tegangan DC 5V/12V/24V, dan arus beban.
+  - **Topik 3.2.2: Uji Resistansi Isolasi & Kebocoran Arus (絶縁抵抗試験):** Penggunaan insulation tester Megger pada tegangan 500V/1000V DC; standar resistansi isolasi wajib $ge 1	ext{ M}Omega$.
 
 ---
 
-### MODUL 4: K3 KELISTRIKAN, PROTEKSI ESD & KONTROL LINGKUNGAN
-- **Topik 4.1: Pengendalian Listrik Statis (静電気対策 - ESD Control):**
-  - Pelepasan muatan listrik statis (*seidenki*) yang dapat merusak lapisan gerbang semikonduktor MOS mikroskopis.
-  - Pemasangan gelang statis berkawat arde (*risuto sutorappu* 1 Megaohm), tikar lantai konduktif, dan sepatu antistatis (*seiden-kutsu*).
-- **Topik 4.2: Pencegahan Sengatan Arus Listrik (感電防止 - Kanden Boushi):**
-  - Pemadaman sumber tegangan utama (Breaker OFF) sebelum membongkar sirkuit berdaya.
-  - Prosedur pelepasan sisa muatan kapasitor tegangan tinggi (*houshouden*) dengan resistor pembuang.
-- **Topik 4.3: HOU-REN-SO Saat Kejadian Korsleting / Asap:**
-  - *「班長、基板の電源投入テスト中に異臭と白煙が発生しました！すぐに主電源スイッチをOFFにしました。原因調査をお願いします！」*
+### MODUL 4: K3 KELISTRIKAN, PROTEKSI ESD & PANEL DAYA (電気安全とESD対策)
+- **Topik 4.1: Pengendalian Muatan Statis Elektrostatik (静電気放電対策 - ESD):**
+  - **Topik 4.1.1: Tali Pergelangan Anti-Statis (リストストラップ):** Kewajiban memakai wrist strap berkabel grounding terhubung resistor $1	ext{ M}Omega$ saat memegang komponen IC sensitif tegangan.
+  - **Topik 4.1.2: Matras Meja & Wadah Konduktif ESD:** Penggunaan matras konduktif di atas meja kerja dan wadah kotak PCB anti-statis (*conductive tote box*).
+- **Topik 4.2: Pencegahan Bencana Sengatan Listrik Industri (感電防止):**
+  - **Topik 4.2.1: Prosedur Verifikasi Pemadaman Arus (検電 - Kenden):** Menguji ketiadaan tegangan menggunakan obeng tespen/detektor voltase sebelum membuka panel distribusi daya.
+  - **Topik 4.2.2: Protokol Lockout / Tagout (LOTO):** Penguncian gembok sakelar utama dan pemasangan label bahaya bertuliskan *「修理中・通電禁止」* saat perbaikan.
+- **Topik 4.3: HOU-REN-SO Saat Kebakaran Kabel & Asap:**
+  - **Topik 4.3.1: Prosedur Pemadaman Listrik & Evakuasi:** Pelaporan darurat saat tercium bau isolasi kabel terbakar, pemutusan pemutus arus MCCB seketika, dan pelarangan menyiramkan air ke instalasi listrik!
 
 ---
 
@@ -106,56 +99,73 @@ Sub-bidang Kelistrikan & Elektronika mencakup 4 divisi inti proses perakitan pap
 
 | No | Kanji | Kana | Romaji | Indonesian Gloss | High-Stakes Risk Category |
 |---|---|---|---|---|---|
-| 1 | 感電 | かんでん | *kanden* | Sengatan arus listrik pada tubuh manusia | Electrocution / Cardiac Arrest |
-| 2 | 静電気破壊 | せいでんきはかい | *seidenki hakai* | Kerusakan komponen akibat pelepasan muatan ESD | Silent Functional Defect |
-| 3 | はんだブリッジ | はんだぶりっじ | *handa burijji* | Jembatan solder menempel (korsleting 2 pin) | Circuit Short / Thermal Runaway |
-| 4 | イモはんだ | いもはんだ | *imo-handa* | Solder dingin / menempel rapuh tanpa difusi panas | Intermittent Electrical Failure |
-| 5 | リストストラップ | りすとすとらっぷ | *risuto sutorappu* | Gelang arde antistatis penangkal muatan ESD | Electrostatic Discharge Hazard |
-| 6 | 導通試験 | どうつうしけん | *doutsuu shiken* | Uji kontinuitas aliran arus pada sirkuit kabel | Open Circuit Detection |
-| 7 | 絶縁抵抗計 | ぜつえんていこうけい | *zetsuen teikoukei* | Megger meter pengukur kebocoran isolasi kabel | Insulation Breakdown Hazard |
-| 8 | 極性間違い | きょくせいまちがい | *kyokusei machigai* | Pemasangan kutub positif/negatif terbalik | Component Explosion / Burst |
-| 9 | 圧着不良 | あっちゃくふりょう | *acchaku furyou* | Cacat crimping kawat longgar / kabel putus | Fire / Arcing Ignition Hazard |
-| 10 | 短絡（ショート） | たんらく（しょーと） | *tanraku / shooto* | Hubungan arus pendek antara dua konduktor | Overcurrent Fire / Meltdown |
-| 11 | 定格電圧 | ていかくでんあつ | *teikaku den'atsu* | Tegangan nominal kerja batas maksimum komponen | Overvoltage Breakdown |
-| 12 | フラックス残渣 | ふらっくすざんさ | *furakkusu zansa* | Residu sisa cairan fluks korosif di atas PCB | Corrosion / Dendrite Growth |
-| 13 | アース線（接地） | あーすせん（せっち）| *aasu-sen / secchi* | Jalur pentanahan kabel arde pengaman kebocoran | Shock Hazard Prevention |
-| 14 | 誤配線 | ごはいせん | *gohaisen* | Kesalahan penyambungan nomor kabel pin harness | Unit Destruction / Fire Hazard |
-| 15 | サーマルプロテクタ | さーまるぷろてくた | *saamaru purotekuta* | Sekering pelindung panas otomatis pemutus arus | Overheat Safety Interlock |
+| 1 | はんだ付け | はんだづけ | *handazuke* | Proses penyolderan timah pada papan sirkuit | Burn & Toxic Flux Inhalation |
+| 2 | はんだブリッジ | はんだぶりっじ | *handa burijji* | Korsleting cacat jembatan timah antarpin | Fatal Short-Circuit Fire |
+| 3 | プリント基板 | ぷりんときばん | *purinto kiban* | Papan sirkuit cetak komponen elektronik (PCB) | Thermal Delamination Defect |
+| 4 | 静電気放電・ESD | せいでんきほうでん | *seidenki houden (ESD)* | Pelepasan muatan listrik statis perusak chip IC | Microchip Destruction Hazard |
+| 5 | リストストラップ | りすとすとらっぷ | *risuto sutorappu* | Tali gelang pentanahan anti-statis operator | ESD Protection Non-Compliance |
+| 6 | 導通検査 | どうつうけんさ | *doutsuu kensa* | Pengujian keterhubungan aliran jalur kabel | Open/Short Circuit Defect |
+| 7 | 端子圧着 | たんしあっちゃく | *tanshi atchaku* | Pengepresan skun terminal kabel konektor | Terminal Pull-Out Hazard |
+| 8 | 極性 | きょくせい | *kyokusei* | Polaritas kutub positif (+) dan negatif (-) | Component Explosion Hazard |
+| 9 | 絶縁破壊 | ぜつえんはかい | *zetsuen hakai* | Kerusakan lapisan isolator memicu kebocoran arus | Catastrophic Electric Shock |
+| 10 | 短絡（ショート） | たんらく（しょーと） | *tanraku (shooto)* | Hubungan arus pendek tegangan listrik | Fire & Arc Flash Explosion |
+| 11 | 感電防止 | かんでんぼうし | *kanden boushi* | Pencegahan sengatan kejut listrik mematikan | Fatal 200V Electrocution |
+| 12 | 検電器 | けんでんき | *kendenki* | Alat tespen penguji keberadaan tegangan listrik | High Voltage Inadvertent Contact |
+| 13 | 鉛フリーはんだ | なまりふりーはんだ | *namari-furii handa* | Paduan kawat timah solder ramah lingkungan | Higher Melting Temp Defect |
+| 14 | 非常停止スイッチ | ひじょうていしすいっち | *hijou teishi suitchi* | Sakelar tombol pemutus darurat jalur mesin | Life-Critical Escalation |
+| 15 | ワイヤーストリッパー | わいやーすとりっぱー | *waiyaa sutorippaa* | Tang pengupas kulit isolasi kabel tembaga | Wire Strand Nicking Hazard |
+| 16 | 抵抗器 | ていこうき | *teikouki* | Resistor pembatas besaran arus listrik | Overheating & Charring |
+| 17 | 電解コンデンサ | でんかいこんでんさ | *denkai kondensa* | Kapasitor elektrolit berpolaritas kutub | Burst Hazard if Reversed |
+| 18 | 集積回路（IC） | しゅうせきかいろ | *shuuseki kairo (IC)* | Sirkuit mikroelektronika terpadu terintegrasi | Electrostatic Damage Risk |
+| 19 | フラックス | ふらっくす | *furakkusu* | Cairan kimia pembersih oksida logam saat solder | Eye & Respiratory Irritation |
+| 20 | 吸取線 | すいとりせん | *suitorisen* | Pita tembaga anyam penyerap sisa timah solder | Thermal Burn Hazard |
+| 21 | テスター | てすたー | *tesutaa* | Multimeter digital pengukur tegangan/arus/ohm | Range Setting Explosion Risk |
+| 22 | メガー（絶縁抵抗計） | めがー | *megaa* | Alat ukur tahanan isolasi tegangan tinggi DC | Shock Hazard during testing |
+| 23 | 耐電圧試験 | たいでんあつしけん | *taiden'atsu shiken* | Pengujian ketahanan tegangan dielektrik komponen | Dielectric Puncture Hazard |
+| 24 | 接地（アース） | せっち（あーす） | *setchi (aasu)* | Saluran pembumian pengaman arus bocor listrik | Ground Fault Shock Hazard |
+| 25 | 配線図 | はいせんず | *haisenzu* | Diagram jalur perkabelan sambungan instrumen | Wiring Connection Misroute |
+| 26 | 端子台 | たんしだい | *tanshidai* | Blok deretan baut terminal penghubung kabel | Loose Terminal Heating Fire |
+| 27 | 圧着ペンチ | あっちゃくぺんち | *atchaku penchi* | Tang presisi crimping skun terminal kabel | Improper Crimp Force Defect |
+| 28 | 結束バンド | けっそくばんど | *kessoku bando* | Tali pengikat kabel ties nilon perapi harness | Sharp Cut-End Scratch Hazard |
+| 29 | ハーネス導通治具 | はーねすどうつうじぐ | *haanesu doutsuu jigu* | Alat jig otomatis pengecek susunan kabel pin | False Pin Insertion Defect |
+| 30 | はんだこて台 | はんだこてだい | *handakotedai* | Dudukan logam penyimpan ujung solder panas | Facility Fire & Skin Burn |
+| 31 | こて先酸化 | こてさきさんか | *kotesaki sanka* | Lapisan hitam oksida pada ujung mata solder | Poor Heat Transfer Defect |
+| 32 | イモはんだ | いもはんだ | *imo handa* | Cacat solder dingin menggumpal tanpa ikatan | Intermittent Circuit Open |
+| 33 | ブレーカー（配線遮断器）| ぶれーかー | *bureekaa* | Pemutus sirkuit otomatis arus lebih (MCCB) | Tripped Circuit Fire Hazard |
+| 34 | 配電盤 | はいでんばん | *haidenban* | Panel kotak distribusi pembagi daya listrik | Arc Flash Explosion Risk |
+| 35 | 通電禁止札 | つうでんきんしさつ | *tsuuden kinshi fuda* | Label peringatan dilarang mengalirkan arus listrik | Lockout / Tagout Violation |
+| 36 | ５Ｓ清掃 | ごえすせいそう | *goesuseisou* | Pembersihan meja kerja bebas serpihan timah tajam | Lead Dust Ingestion Hazard |
 
 ---
 
 ## 5. DIRECTIVES K3 DARURAT & FORMULA YUBISASHI KOSHO
 
-### Teriakan Darurat Spontan di Ruang Elektronika (> 85 dB):
-- *「電源切れ！基板から煙が出ているぞ！」* (*Dengen kire! Kiban kara kemuri ga dete iru zo!* — Matikan power! Keluar asap dari PCB!)
-- *「触るな！感電するぞ！ブレーカーを落とせ！」* (*Sawaru na! Kanden suru zo! Bureekaa wo otose!* — Jangan sentuh! Nanti tersetrum! Matikan breaker!)
-- *「コンデンサの放電を忘れるな！放電確認！」* (*Kondensa no houden wo wasureru na! Houden kakunin!* — Jangan lupa buang muatan kapasitor! Cek pembuangan muatan!)
+### Teriakan Darurat Spontan di Tempat Kerja:
+- *「通電するな！まだ配線作業中だ！」* (*Tsuuden suru na! Mada haisen sagyouchuu da!* — Jangan nyalakan arus! Masih ada pekerjaan kabel!)
+- *「コンデンサの極性が逆だ！爆発するぞ！」* (*Kondensa no kyokusei ga gyaku da! Bakuhatsu suru zo!* — Polaritas kapasitor terbalik! Bisa meledak!)
+- *「煙が出た！ブレーカーを落とせ！」* (*Kemuri ga deta! Bureekaa wo otose!* — Keluar asap! Matikan circuit breaker!)
 
 ### Formula Point-and-Call (指差し呼称):
-1. **Pengecekan Pemasangan Gelang Statis:** *「リストストラップ装着、アース接続、ヨシ！」*
-2. **Pengecekan Polaritas Kapasitor Elektrolit:** *「電解コンデンサ極性、プラス・マイナス確認、ヨシ！」*
-3. **Pengecekan Suhu Besi Solder:** *「はんだこて温度、350度設定、基準内ヨシ！」*
-4. **Pengecekan Tidak Adanya Tegangan Terbuka Sebelum Sentuh:** *「テスター検電、電圧ゼロボルト確認、ヨシ！」*
+1. **Pengecekan Tali Gelang Anti-Statis (ESD):** *「リストストラップ装着、アース接地、ヨシ！」*
+2. **Pengecekan Polaritas Kapasitor:** *「極性方向、プラス・マイナス確認、ヨシ！」*
+3. **Pengecekan Ketiadaan Tegangan Listrik:** *「検電器確認、無電圧、ヨシ！」*
+4. **Pengecekan Sambungan Solder:** *「はんだブリッジなし、フィレット良好、ヨシ！」*
 
 ---
 
 ## 6. BANK SOAL UJIAN CBT JAIM RESMI
 
-### Contoh Soal Ujian Teori (学科試験 - Format True/False ○×):
-> **Soal 1:** 電解コンデンサをプリント基板にはんだ付けする際、プラス（＋）とマイナス（ー）の極性を逆に接続して電源を投入すると、発煙や破裂の原因となる。  
-> A. 正しい（○）  
-> B. 間違い（×）  
-> **Kunci Jawaban:** **A** (Benar / ○. Pemasangan polaritas terbalik pada kapasitor elektrolit menimbulkan gas internal hingga selongsong meledak dan terbakar).
+### Contoh Soal Ujian Teori (学科試験 ○×):
+> **Soal 1:** 電解コンデンサをプリント基板に取り付けるときは、極性（プラスとマイナス）があるため、基板の表示に合わせて正しく挿入しなければならない。  
+> **Kunci Jawaban:** **○ (Benar)** (Kapasitor elektrolit memiliki polaritas ketat; pemasangan terbalik dapat memicu letupan gas atau ledakan tabung kapasitor).
 
-> **Soal 2:** はんだ付け作業において、はんだ付け部分に十分な熱が伝わらないままはんだを流し込むと、良好な接合部（フィレット）が形成される。  
-> A. 正しい（○）  
-> B. 間違い（×）  
-> **Kunci Jawaban:** **B** (Salah / ×. Kurangnya panas menyebabkan cacat solder dingin /*imo-handa*/ yang rapuh dan menimbulkan kegagalan kontak kelistrikan).
+> **Soal 2:** はんだ付け作業を行う際、接合部に十分な熱が伝わっていない状態で冷えると、強度の高い良好な「フィレット」が形成される。  
+> **Kunci Jawaban:** **× (Salah)** (Kurang panas memicu cacat solder dingin/imo-handa yang rapuh dan mudah lepas saat sirkuit bekerja).
 
-### Contoh Soal Ujian Praktik Visual (実技試験):
-> **Soal 1:** 画面に表示されたカラーコード「赤・赤・橙・金」を持つアキシャルリード型固定抵抗器の公称抵抗値として正しいものを選びなさい。  
-> A. 2.2 kΩ（許容差 ±5%）  
-> B. 22 kΩ（許容差 ±5%）  
-> C. 220 kΩ（許容差 ±5%）  
-> D. 22 Ω（許容差 ±10%）  
-> **Kunci Jawaban:** Cincin 1 (Merah = 2), Cincin 2 (Merah = 2), Cincin 3 (Oranye = $10^3 = 1.000$), Cincin 4 (Emas = $\pm 5\%$). Nilai $= 22 \times 10^3 = 22.000\ \Omega = 22\ \text{k}\Omega\ (\pm 5\%)$ $\rightarrow$ **B (22 kΩ)**.
+### Contoh Soal Ujian Praktik On-Screen (実技試験):
+> **Soal 1:** 画面の写真を見て、プリント基板上のICの足（リードピン）同士が余分なはんだでくっついている不良現象の名前として、正しいものを選びなさい。  
+> A. クラック（Crack）  
+> B. はんだブリッジ（Solder Bridge）  
+> C. ボイド（Void）  
+> D. ディウェッティング（Dewetting）  
+> **Kunci Jawaban:** **B** (Handa burijji adalah cacat korsleting akibat timah meluber menghubungkan dua pin bersebelahan).

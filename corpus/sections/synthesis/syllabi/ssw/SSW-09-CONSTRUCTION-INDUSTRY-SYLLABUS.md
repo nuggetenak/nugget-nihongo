@@ -1,117 +1,105 @@
-# SILABUS KEJURUAN RESMI NUGGET NIHONGO · SEKTOR 09: CONSTRUCTION INDUSTRY (建設業 / INDUSTRI KONSTRUKSI JEPANG)
-**Kode Sektor:** `SSW-CONST-01` · **Versi:** v2.0 (Corpus v30 Canonical Revision)  
+# SILABUS KEJURUAN RESMI NUGGET NIHONGO · SEKTOR 09: CONSTRUCTION INDUSTRY (INDUSTRI KONSTRUKSI)
+**Kode Sektor:** `SSW-CNST-01` · **Versi:** v2.0 (Corpus v30 Canonical Revision)  
 **Status:** AUTHORITATIVE & EXHAUSTIVE SECTOR SYLLABUS  
 **Kementerian Pembina:** Kementerian Pertanahan, Infrastruktur, Transportasi dan Pariwisata Jepang (MLIT / 国土交通省)  
-**Badan Pelaksana Uji:** Organisasi SDM Keahlian Konstruksi Jepang (JAC / 一般社団法人建設技能人材機構) & Prometric  
+**Badan Pelaksana Uji:** Organisasi SDM Keterampilan Konstruksi Jepang (JAC / 一般社団法人 建設技能人材機構) & Prometric  
 **Dasar Kurasi Primer:**
-- `reference-books/ssw/07_kensetsu_construction/Construction_Civil_Theory_Text1d_JA.pdf` & `ID` (Jalur Teknik Sipil - 土木 `d`)
-- `reference-books/ssw/07_kensetsu_construction/Construction_Building_Theory_Text1k_JA.pdf` & `ID` (Jalur Arsitektur Bangunan - 建築 `k`)
-- `reference-books/ssw/07_kensetsu_construction/Construction_Lifeline_Theory_Text1l_JA.pdf` & `ID` (Jalur Jalur Pipa & Peralatan Fasilitas - ライフライン・設備 `l`)
-- `reference-books/ssw/07_kensetsu_construction/Construction_Common_Safety_Text2_JA.pdf` (Buku Standar Keselamatan K3 Konstruksi JAC)
-- `reference-books/ssw/07_kensetsu_construction/Construction_Theory_Sample_JA.pdf` & `ID` (Bank Soal Ujian Teori)
-- `reference-books/ssw/07_kensetsu_construction/Construction_Civil_Practical_Sample_ID.pdf`, `Building_Practical_Sample_ID.pdf`, `Lifeline_Practical_Sample_ID.pdf`
+- `reference-books/ssw/07_kensetsu_construction/Construction_Common_Safety_Text2_JA.pdf` (Keselamatan Umum, K3 & Budaya Kerja Proyek, 18 halaman)
+- `reference-books/ssw/07_kensetsu_construction/Construction_Civil_Theory_Text1d_JA.pdf` & `reference-books/ssw/07_kensetsu_construction/Construction_Civil_Theory_Text14d_ID.pdf` & `reference-books/ssw/07_kensetsu_construction/Construction_Civil_Practical_Text57d_ID.pdf` (Teknik Sipil / 土木)
+- `reference-books/ssw/07_kensetsu_construction/Construction_Building_Theory_Text1k_JA.pdf` & `reference-books/ssw/07_kensetsu_construction/Construction_Building_Theory_Text14k_ID.pdf` & `reference-books/ssw/07_kensetsu_construction/Construction_Building_Practical_Text57k_ID.pdf` (Arsitektur Gedung / 建築)
+- `reference-books/ssw/07_kensetsu_construction/Construction_Lifeline_Theory_Text1l_JA.pdf` & `reference-books/ssw/07_kensetsu_construction/Construction_Lifeline_Theory_Text14l_ID.pdf` & `reference-books/ssw/07_kensetsu_construction/Construction_Lifeline_Practical_Text57l_ID.pdf` (Fasilitas & Jalur Kehidupan / 設備)
+- `reference-books/ssw/07_kensetsu_construction/Construction_Theory_Sample_JA.pdf` & `reference-books/ssw/07_kensetsu_construction/Construction_Theory_Sample_ID.pdf`
+- `reference-books/ssw/07_kensetsu_construction/Construction_Civil_Practical_Sample_ID.pdf`, `reference-books/ssw/07_kensetsu_construction/Construction_Building_Practical_Sample_ID.pdf`, `reference-books/ssw/07_kensetsu_construction/Construction_Lifeline_Practical_Sample_ID.pdf`
 **Landasan Teoretis & Empiris:**
 - Needs Analysis & Technical Lexicon (Nation & Hwang 1995 [VS-09]; Chung & Nation 2003 [VS-10])
-- Cross-Cultural Communication on Construction Sites & HOU-REN-SO (Mustaqim & Priventa 2026 [VS-31]; Supriatnaningsih et al. 2024 [VS-33])
-- High-Decibel Acoustic Precision in Open Pit & Scaffolding Gemba (Husna & Febriyanti 2022 [EA-25])
-- Construction Industrial Safety Standards & Shiteki Koshou (JNIOSH 2020 [VS-39]; JAC 2024 [VS-44])
+- Cross-Cultural Communication in Construction Gemba & HOU-REN-SO (Mustaqim & Priventa 2026 [VS-31]; Supriatnaningsih et al. 2024 [VS-33])
+- Geminate Acoustic Intelligibility in High-Noise Construction Sites (Husna & Febriyanti 2022 [EA-25])
+- Construction Safety Training & 3-Division Standards (JNIOSH 2020 [VS-39]; JAC 2024 [VS-41])
 
 ---
 
 ## 1. SPESIFIKASI UJIAN RESMI PROMETRIC CBT (STANDAR JAC / MLIT)
 
-Ujian Tokutei Ginou 1-gō Konstruksi diintegrasikan oleh JAC ke dalam **3 Jalur Ujian Utama (3 Tracks)** yang menggantikan 19 sub-klasifikasi lama:
+Kandidat visa *Tokutei Ginou 1-gō* bidang Konstruksi menempuh ujian Computer-Based Testing (CBT) dengan spesifikasi regulasi resmi:
 
 ```
 ┌────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                        PROMETRIC CBT JAC CONSTRUCTION INDUSTRY EXAM MATRIX                             │
+│                              PROMETRIC CBT CONSTRUCTION INDUSTRY EXAM MATRIX                           │
 ├─────────────────────────┬────────────────────────────────────────┬─────────────┬───────────┬───────────┤
 │ Komponen Ujian          │ Cakupan Ranah Pengujian                │ Jumlah Soal │ Durasi    │ Ambang    │
 ├─────────────────────────┼────────────────────────────────────────┼─────────────┼───────────┼───────────┤
-│ 1. Ujian Teori Umum     │ Standar K3 JAC, hukum keselamatan kerja│ 30 Soal     │ 60 Menit  │ $\ge 65\%$│
-│    & Khusus Jalur       │ konstruksi, perancah, tamakake crane,  │ (Pilihan    │           │ (20 / 30) │
-│    (学科試験 - Gakka)   │ penanganan alat berat, pencegahan jatuh│  Ganda CBT) │           │           │
+│ 1. Ujian Teori          │ K3 umum konstruksi, hukum ketenagaker- │ 30 Soal     │ 60 Menit  │ $\ge 60\%$│
+│    (学科試験 - Gakka)   │ jaan, gambar teknik, serta spesialisasi│ (Pilihan    │           │ (18 / 30) │
+│                         │ sub-bidang terpilih (Sipil/Gedung/Fas) │  Ganda 4)   │           │           │
 ├─────────────────────────┼────────────────────────────────────────┼─────────────┼───────────┼───────────┤
-│ 2. Ujian Praktik Layar  │ • Track d (Teknik Sipil): Galian tanah,│ 15-20       │ 40 Menit  │ $\ge 60\%$│
-│    Khusus Jalur Pilihan │   pemadatan aspal, penulangan beton    │ Butir Soal  │           │ (Rubrik   │
-│    (実技試験 - Jitsugi) │ • Track k (Arsitektur): Rangka baja,   │ Simulasi    │           │  Visual)  │
-│                         │   bekisting, plesteran, atap & interior│ Gambar/     │           │           │
-│                         │ • Track l (Lifeline): Instalasi pipa,  │ Diagram     │           │           │
-│                         │   kabel listrik, ducting pendingin     │ Kerja CBT   │           │           │
+│ 2. Ujian Praktik Layar  │ Identifikasi visual alat kerja, urutan │ Skenario    │ Terpadu   │ $\ge 60\%$│
+│    (実技試験 - Jitsugi) │ perancahan, sinyal tamakake kran, dan  │ Visual CBT  │ dalam sesi│           │
+│                         │ penanganan situasi bahaya tanah longsor│ 3 Divisi    │  CBT      │           │
 └─────────────────────────┴────────────────────────────────────────┴─────────────┴───────────┴───────────┘
 ```
 
-> **Ketentuan Kelulusan Ganda:** Peserta wajib lulus **KEDUA-DUANYA** (Teori $\ge 65\%$ dan Praktik $\ge 60\%$) pada jalur kejuruan yang dipilih.
+> **Catatan Bahasa Ujian:** Ujian Teori dan Praktik disajikan dalam **Bahasa Jepang (dengan furigana)** dan disediakan opsi terjemahan **Bahasa Indonesia**.
 
 ---
 
-## 2. ARSITEKTUR 3 JALUR KEJURUAN RESMI JAC (3 INTEGRATED TRACKS)
+## 2. TIGA DIVISI SPESIALISASI KONSTRUKSI JEPANG (JAC)
 
-### JALUR D: TEKNIK SIPIL (土木区分 - Doboku Track `d`)
-Mencakup pekerjaan infrastruktur skala besar di luar ruangan:
-- **Pekerjaan Tanah & Pondasi (土工・基礎工):** Penggalian tanah (*kussaku*), penahan tebing turap (*tomete*), penimbunan dan pemadatan tanah (*tetsuchi / tendou*), pengoperasian excavator backhoe (*yumbo*).
-- **Konstruksi Jalan & Perkerasan (舗装工):** Penghamparan aspal panas (*asufaruto hoso*), pemadatan roller getar (*rooraa*).
-- **Pekerjaan Beton Struktur Sipil (コンクリート工):** Pengecoran jembatan, bendungan, gorong-gorong drainase, pemadatan vibrator beton (*baibureetaa*).
-- **Penerowongan & Konstruksi Bawah Tanah (トンネル推進・シールド):** Pengeboran perisai bawah tanah (*shield tunneling*).
-
-### JALUR K: ARSITEKTUR BANGUNAN (建築区分 - Kenchiku Track `k`)
-Mencakup konstruksi gedung bertingkat dan perumahan:
-- **Pekerjaan Perancah & Scaffolding (とび・足場工):** Pemasangan perancah pipa modular (*kusabi-soku ashiba*), jaring pengaman jatuh (*anzen netto*), bordes kerja.
-- **Pekerjaan Bekisting & Penulangan (型枠・鉄筋工):** Pemasangan papan bekisting kayu lapis (*kataku*), perakitan batang baja tulangan beton (*tekkin*) dengan kawat pengikat (*hansen*).
-- **Ereksi Rangka Baja Gedung (鉄骨建方):** Pengencangan baut mutu tinggi (*toru-shea boruto*), penyambungan balok baja H-beam dengan crane.
-- **Pekerjaan Finishing & Interior (仕上げ・内装・左官):** Plesteran dinding semen (*sakan*), pemasangan papan gipsum langit-langit, waterproofing dak atap (*bousui*).
-
-### JALUR L: LIFELINE, PERPIPAAN & FASILITAS PERALATAN (ライフライン・設備区分 - Lifeline Track `l`)
-Mencakup instalasi urat nadi utilitas bangunan dan perkotaan:
-- **Instalasi Perpipaan Air Bersih & Kotor (配管工):** Pemotongan pipa PVC/baja galvanis, penyambungan ulir, pengelasan fusi pipa PE, uji tekanan air (*suia-tsu shiken*).
-- **Instalasi Tata Udara & Ventilasi Ducting (ダクト工・空調設備):** Pembuatan dan penggantungan saluran ducting seng, pemasangan unit outdoor AC chiller.
-- **Instalasi Kelistrikan Gedung (電気設備工):** Penarikan kabel daya melalui konduit, terminasi panel distribusi MCB, penerangan darurat (*hijoutou*).
-- **Instalasi Pipa Gas Kota & Telekomunikasi (ガス配管・通信設備):** Penyambungan pipa gas bumi bawah tanah dengan deteksi kebocoran gas metana.
+Sesuai konsolidasi regulasi MLIT, 19 sub-kejuruan lama dikonsolidasi menjadi 3 divisi terpadu:
+1. **Divisi Teknik Sipil (土木区分 - Doboku, Kode `d`):**
+   - Pekerjaan tanah (*doko*), pondasi tiang pancang, bekisting beton sipil, pengaspalan jalan raya, terowongan, bendungan, dan retaining wall perkuatan tebing.
+2. **Divisi Arsitektur Gedung (建築区分 - Kenchiku, Kode `k`):**
+   - Rangka baja gedung (*tekkin / tekkotsu*), bekisting kayu/panel (*katawaku*), pemasangan dinding eksterior (*siding*), waterproofing atap, plester semen, dan interior finishing.
+3. **Divisi Fasilitas & Jalur Kehidupan (ライフライン・設備区分 - Lifeline, Kode `l`):**
+   - Perpipaan air bersih dan limbah (*plumbing*), instalasi pipa gas kota bertekanan, saluran pendingin udara HVAC, perkabelan listrik gedung, dan insulasi termal pipa.
 
 ---
 
 ## 3. MODUL PEMBELAJARAN KURIKULUM (PEDAGOGICAL MODULES)
 
-### MODUL 1: STANDAR K3 KONSTRUKSI BERSAMA (COMMON SAFETY TEXT 2)
-- **Topik 1.1: Tiga Bencana Terbesar di Proyek Konstruksi (三大災害):**
-  1. Jatuh dari ketinggian (*Tsuiraku / Tenraku*): Mencakup > 40% fatalitas di Jepang.
-  2. Runtuhnya dinding tanah galian tebing (*Dosa houkai*): Penimbunan pekerja dalam hitungan detik.
-  3. Tertabrak alat berat konstruksi (*Jyuuki kousoku / Gekitotsu*): Titik buta blindspot excavator dan dump truck.
-- **Topik 1.2: Sabuk Pengaman Penuh (フルハーネス型安全帯):**
-  - Standar legalitas: Wajib digunakan pada pekerjaan di atas ketinggian 2 meter tanpa lantai kerja bertutup penuh.
-  - Pemeriksaan D-ring di punggung, pengait ganda (2-cho-gake / 100% tie-off), shock absorber peredam kejut benturan.
-- **Topik 1.3: Pekerjaan Pengikatan Muatan Crane (玉掛け - Tamakake):**
-  - Batas sudut angkat sling wire rope: Sudut sling tidak boleh melebihi 60 derajat (makin lebar sudut sling, gaya tegangan pada tali berlipat ganda secara eksponensial).
-  - Larangan mutlak berdiri di bawah muatan gantung (*tsurini no shita tachiri kinshi*).
+### MODUL 1: KESELAMATAN K3 PROYEK & BUDAYA KERJA GEMBA (共通安全衛生)
+- **Topik 1.1: Perlindungan Mutlak dari Bahaya Jatuh Ketinggian (墜落・転落防止):**
+  - **Topik 1.1.1: Standar Penggunaan Sabuk Pengaman Full Harness:** Kewajiban sabuk pengaman tubuh penuh (*full harness*) pada ketinggian $ge 2	ext{ meter}$, pemasangan pengait tali ganda (*nicho-gake*), dan pengecekan shock absorber.
+  - **Topik 1.1.2: Inspeksi Kekokohan Perancah (足場点検 - Ashiba):** Pengecekan papan lantai kerja rapat tanpa celah ($gap le 3	ext{ cm}$), pagar pengaman ganda (*tesuri* tinggi $ge 85	ext{ cm}$), dan toe-board penahan alat jatuh (*habaki* $ge 10	ext{ cm}$).
+- **Topik 1.2: Budaya Kerja Proyek & Pencegahan Pelecehan:**
+  - **Topik 1.2.1: Apel Pagi Proyek & Senam Keselamatan (朝礼・ラジオ体操):** Partisipasi aktif dalam briefing pagi, senam peregangan otot, dan latihan prediksi bahaya (*KYK / Kiken Yochi Katsudou*).
+  - **Topik 1.2.2: Regulasi Jam Kerja & Pelarangan Power Harassment:** Jam kerja maksimal 8 jam/hari (40 jam/minggu), istirahat wajib, dan penolakan tegas tindakan kekerasan fisik/verbal di proyek.
 
 ---
 
-### MODUL 2: KURIKULUM SPESIFIK TEKNIK SIPIL (TRACK D)
-- **Topik 2.1: Keselamatan Penggalian Tebing Tanah (掘削・土留め):**
-  - Kemiringan galian tanah alami: Jika kedalaman $> 1.5$ meter, wajib memasang dinding penahan turap (*tomete shichuu*) atau membuat undakan terasering (*danboko*).
-  - Bahaya rembesan air tanah (*wakimizu*) yang melunakkan dinding galian.
-- **Topik 2.2: Pengecoran Beton Infrastruktur:**
-  - Slump test untuk menguji kelecakan adukan, perataan beton, pencegahan segregasi butiran batu pecah (*bakketa / janmame*).
+### MODUL 2: TEKNIK SIPIL & PEKERJAAN TANAH (土木施工技術)
+- **Topik 2.1: Penggalian Tanah & Pencegahan Longsor (土砂崩壊防止):**
+  - **Topik 2.1.1: Kemiringan Lereng Galian & Turap Penahan (山留め):** Sudut kemiringan aman galian tanah terbuka, pemasangan dinding turap penahan tanah (*yamadome shicho*), dan pengecekan rembesan air tanah.
+  - **Topik 2.1.2: Pemadatan Tanah & Pengurukan (盛土・締固め):** Pengoperasian stamper/roller pemadat, pengujian kepadatan tanah timbunan lapis demi lapis.
+- **Topik 2.2: Pengecoran Beton Struktur Sipil (生コンクリート打設):**
+  - **Topik 2.2.1: Uji Slump & Suhu Beton Segar:** Pengukuran nilai slump kemudahan alir beton segar, rasio air-semen, dan batas waktu pengecoran $le 90	ext{–}120	ext{ menit}$ dari batching plant.
+  - **Topik 2.2.2: Penggetaran Beton Menggunakan Vibrator:** Teknik memasukkan jarum vibrator tegak lurus ke dalam adukan beton untuk mengeliminasi rongga udara tanpa mengenai rangka tulangan baja.
 
 ---
 
-### MODUL 3: KURIKULUM SPESIFIK ARSITEKTUR BANGUNAN (TRACK K)
-- **Topik 3.1: Konstruksi Perancah Modular (足場点検):**
-  - Lebar lantai kerja minimal 40 cm, celah antar papan $< 3$ cm.
-  - Pemasangan papan toe board penahan tendangan (*habaki* $\ge 15$ cm) untuk mencegah perkakas jatuh ke bawah.
-  - Palang pengaman ganda: Pagar tengah (*san*) ketinggian 85 cm dan pagar atas (*tesuri*) ketinggian $> 90$ cm.
-- **Topik 3.2: Penulangan & Pemasangan Bekisting:**
-  - Selimut beton minimum (*kaburi-atsusa*) untuk melindungi besi dari karat asam udara luar.
-  - Pemasangan separator penahan jarak bekisting dan tie-rod ulir.
+### MODUL 3: ARSITEKTUR GEDUNG & BEKISTING (建築施工技術)
+- **Topik 3.1: Pekerjaan Rangka Baja & Pembesian Tulangan (鉄筋・鉄骨):**
+  - **Topik 3.1.1: Pemasangan & Pengikatan Kawat Tulangan (鉄筋結束):** Penggunaan kawat bendrat pengikat (*kessokusen*), jarak selimut beton (*kaburiatsu*), dan pemasangan spacer beton penumpu tulangan.
+  - **Topik 3.1.2: Pengencangan Baut Geser Mutu Tinggi (ハイテンションボルト):** Pengencangan baut shear wrench hingga ujung baut (*pin-tail*) patah putus sebagai bukti tercapainya torsi desain JIS.
+- **Topik 3.2: Pemasangan Bekisting & Dinding Panel:**
+  - **Topik 3.2.1: Pemasangan Panel Kayu Lapis Bekisting (型枠工):** Pemasangan form-tie perapat tekanan samping beton cair, balok pipa penopang horizontal/vertikal, dan pembersihan serbuk kayu sisa.
+  - **Topik 3.2.2: Pemasangan Pelat Eksterior & Kedap Air (サイディング・防水):** Sambungan sealant silikon elastis elastis, membran kedap air aspal/uretan pada dak beton atap gedung.
 
 ---
 
-### MODUL 4: KURIKULUM SPESIFIK LIFELINE & PERALATAN (TRACK L)
-- **Topik 4.1: Instalasi Jalur Pipa Bawah Tanah & Saluran:**
-  - Pengujian kebocoran gas dengan alat detektor ultrasonik dan busa sabun.
-  - Uji tekanan statis hidrolik perpipaan air gedung pada 1.5 kali tekanan rencana selama 60 menit tanpa penurunan jarum manometer.
-- **Topik 4.2: Keselamatan Saluran Udara & Ruang Shaft Vertikal:**
-  - Bekerja di ruang sempit pipa (*pipe shaft / PS*) dengan sirkulasi terbatas dan risiko jatuh bebas antar-lantai.
+### MODUL 4: FASILITAS JALUR KEHIDUPAN & UTILITAS (ライフライン設備)
+- **Topik 4.1: Instalasi Perpipaan Air Bersih, Air Kotor & Gas:**
+  - **Topik 4.1.1: Penyambungan Pipa PVC & Pipa Baja Berulir:** Pemotongan tegak lurus pipa, pembersihan bram reamer, pengeleman semen solvent PVC, dan pelilitan pita teflon (*shiru teepu*).
+  - **Topik 4.1.2: Uji Tekanan & Deteksi Kebocoran Pipa Gas:** Uji tekanan udara/gas menggunakan cairan busa detektor kebocoran; larangan keras menggunakan api terbuka untuk mendeteksi gas!
+- **Topik 4.2: Instalasi Kabel Listrik Saluran Konduit & HVAC:**
+  - **Topik 4.2.1: Pembengkokan Pipa Konduit Baja (パイプベンダー):** Pembengkokan pipa kabel listrik tanpa retak, penarikan kawat pancing kabel (*tsuu-sen*), dan pentanahan pembumian bodi pipa.
+  - **Topik 4.2.2: Pemasangan Saluran Udara Seng (ダクト工 - Ducting):** Sambungan flange lipatan seng ducting AC, peredam getaran kanvas elastis, dan pembungkusan isolasi glasswool tahan api.
+
+---
+
+### MODUL 5: PENGOPERASIAN CRANE & PENGISYARATAN TAMAKAKE (玉掛け合図)
+- **Topik 5.1: Sinyal Tangan Standar JIS Pengangkatan Derek:**
+  - **Topik 5.1.1: Kode Isyarat Tangan Crane (玉掛け合図):** Angkat kait (*makiage* - telunjuk memutar ke atas), turunkan kait (*maki-sage* - telunjuk memutar ke bawah), berhenti darurat (*hijou teishi* - lambaian kedua lengan menyilang).
+  - **Topik 5.1.2: Larangan Masuk di Bawah Beban Gantung (立入禁止):** Larangan mutlak berdiri atau melintas di bawah muatan derek yang sedang melayang di udara!
 
 ---
 
@@ -119,52 +107,81 @@ Mencakup instalasi urat nadi utilitas bangunan dan perkotaan:
 
 | No | Kanji | Kana | Romaji | Indonesian Gloss | High-Stakes Risk Category |
 |---|---|---|---|---|---|
-| 1 | 墜落・転落 | ついらく・てんらく | *tsuiraku / tenraku* | Jatuh bebas dari ketinggian / tergelincir | Fatal Construction Fall |
-| 2 | フルハーネス型安全帯 | ふるはーねすがたあんぜんたい| *furu haanesu* | Tali kekang keselamatan tubuh penuh 2 pengait | Mandatory Fall Protection |
-| 3 | 玉掛け | たまかけ | *tamakake* | Prosedur pengikatan tali sling ke muatan crane | Dropped Load Crushing Hazard |
-| 4 | 土砂崩壊 | どしゃほうかい | *dosha houkai* | Longsoran / runtuhnya dinding tanah galian | Trench Cave-in Suffocation |
-| 5 | 幅木（はばき） | はばき | *habaki* | Papan penahan kaki di tepi lantai perancah ($\ge 15$cm)| Dropped Tool Hazard Prevention |
-| 6 | 吊り荷の下立ち入り禁止 | つりにのしたたちいりきんし| *tsurini no shita...*| Larangan keras masuk ke kolong muatan gantung | Fatal Crushing Elimination |
-| 7 | 手すり先行足場 | てすりせんこうあしば | *tesuri senkou ashiba* | Perancah dengan pagar yang dipasang duluan dari bawah| Fall from Open Edge Prevention |
-| 8 | 型枠支保工 | かたわくしほこう | *katawaku shihokou* | Tiang perancang penopang coran bekisting beton | Catastrophic Formwork Collapse|
-| 9 | 合図確認 | あいずかくにん | *aizu kakunin* | Konfirmasi sinyal peluit/tangan antar operator alat | Heavy Machinery Collision |
-| 10 | 重機旋回範囲 | じゅうきせんかいはんい | *juuki senkai han'i* | Radius putaran swing bodi excavator backhoe | Blindspot Pinch/Crush Hazard |
-| 11 | かぶり厚さ | かぶりあつさ | *kaburi atsusa* | Ketebalan selimut beton pelindung tulangan besi | Structural Rebar Corrosion |
-| 12 | 水圧試験 | すいあつしけん | *suiatsu shiken* | Uji tekanan air hidrostatis pipa utilitas | Pipe Rupture / Flood Hazard |
-| 13 | 親綱（おやづな） | おやづな | *oyazuna* | Tali baja lintasan pengait lanyard keselamatan | Anchor Line Failure Risk |
-| 14 | 開口部注意 | かいこうぶちゅうい | *kaikoubu chuui* | Waspada lubang bukaan lantai tanpa penutup | Floor Opening Fall Hazard |
-| 15 | 誘導員配置 | ゆうどういんはいち | *yuudouin haichi* | Penempatan petugas bendera pemandu manuver truk | Pedestrian Worker Struck-by |
+| 1 | フルハーネス | ふるはーねす | *furu haanesu* | Sabuk keselamatan tubuh penuh pencegah jatuh | High Fall Fatality ($\ge 2\text{m}$) |
+| 2 | 足場点検 | あしばてんけん | *ashiba tenken* | Inspeksi kekokohan lantai dan pagar perancah | Scaffolding Structural Collapse |
+| 3 | 土砂崩壊 | どしゃほうかい | *dosha houkai* | Longsoran runtuhan dinding tanah parit galian | Trench Cave-in Suffocation |
+| 4 | 玉掛け合図 | たまかけあいず | *tamakake aizu* | Sinyal tangan pemanduan pengangkatan derek kran | Crane Load Drop Disaster |
+| 5 | 朝礼・ＫＹＫ | ちょうれい・けーわいけー | *chourei / KYK* | Apel pagi dan latihan prediksi bahaya proyek | Gemba Hazard Misalignment |
+| 6 | 二丁掛け | にちょうがけ | *nichou gake* | Pemasangan kait ganda tali pengaman bergantian | 100% Tie-Off Compliance |
+| 7 | 生コンクリート | なまこんくりーと | *nama konkuriito* | Campuran adukan beton basah siap tuang | Slump Curing Failure |
+| 8 | 型枠支保工 | かたわくしほこう | *katawaku shihokou* | Tiang perancah penopang cetakan beton cor | Formwork Burst Collapse |
+| 9 | 鉄筋結束 | てっきんけっそく | *tekkin kessoku* | Pengikatan anyaman rangka tulangan kawat baja | Structural Integrity Defect |
+| 10 | 非常停止スイッチ | ひじょうていしすいっち | *hijou teishi suitchi* | Tombol pemutus darurat peralatan alat berat | Life-Critical Escalation |
+| 11 | 山留め支保工 | やまどめしほこう | *yamadome shihokou* | Dinding turap penahan tekanan tanah tebing | Excavation Wall Failure |
+| 12 | かぶり厚さ | かぶりあつさ | *kaburiatsusa* | Tebal selimut beton pelindung tulangan baja | Premature Rebar Corrosion |
+| 13 | スランプ試験 | すらんぷしけん | *surampu shiken* | Pengujian penurunan kekentalan beton segar | Concrete Quality Rejection |
+| 14 | 覆工板 | ふっこうばん | *fukkouban* | Pelat baja penutup lubang galian jalan sementara | Vehicle Breakthrough Drop |
+| 15 | 配管気密試験 | はいかんきみつしけん | *haikan kimitsu shiken* | Uji kebocoran tekanan udara/gas saluran pipa | Flammable Gas Explosion |
+| 16 | 立ち入り禁止区域 | たちいりきんしくいき | *tachiiri kinshi kuiki* | Zona steril larangan melintas di bawah kran | Struck by Falling Object |
+| 17 | 巾木（幅木） | はばき | *habaki* | Papan penahan kaki pencegah perkakas jatuh | Dropped Object Injury |
+| 18 | 安全ネット | あんぜんねっと | *anzen netto* | Jaring pengaman jatuh penahan tubuh di perancah | Fall Arrest Secondary Line |
+| 19 | 締固め（転圧） | しめかため（てんあつ） | *shimekatame (ten'atsu)* | Pemadatan tanah uruk menggunakan mesin compactor| Subgrade Subsidence Failure |
+| 20 | 誘導員 | ゆうどういん | *yuudouin* | Petugas pengatur lalu lintas kendaraan alat berat| Heavy Equipment Blind Collision |
+| 21 | 重機旋回範囲 | じゅうきせんかいはんい | *juuki senkai han'i* | Radius ayunan belakang kabin excavator tanah | Crushed by Excavator Counterweight |
+| 22 | バイブレーター | ばいぶれーたー | *baibureetaa* | Mesin penggetar adukan beton pemadat rongga | Honeycombing Void Defect |
+| 23 | シールテープ | しーるてーぷ | *shiiru teepu* | Pita teflon perapat ulir sambungan pipa air/gas | Pressurized Fluid Leakage |
+| 24 | パイプベンダー | ぱいぷべんだー | *paipu bendaa* | Alat pembengkok pipa konduit kabel listrik | Pipe Kinking & Conduit Block |
+| 25 | 水準器（水平器） | すいじゅんき（すいへいき） | *suijunki (suiheiki)* | Waterpass pengukur kedataran bidang permukaan | Leveling & Plumb Error |
+| 26 | 下げ振り | さげふり | *sagefuri* | Bandul lot pengukur ketegaklurusan vertikal | Wall Vertical Drift Error |
+| 27 | あご紐締め付け | あごひもしめつけ | *agohimo shimetsuke* | Pengencangan tali dagu helm pelindung kepala | Helmet Loss during Fall |
+| 28 | 落下物防止網 | らっかぶつぼうしあみ | *rakkabutsu boushi ami* | Jaring kawat penahan serpihan material runtuh | Pedestrian Struck Hazard |
+| 29 | 差し筋 | さしすじ | *sashisuji* | Besi stek tulangan sambungan cor beton lanjutan | Cold Joint Delamination |
+| 30 | 打設順序 | だせつじゅんじょ | *dasetsu junjo* | Urutan logis penuangan beton mencegah sambungan dingin | Structural Crack Line Defect |
+| 31 | 止水栓 | しすいせん | *shisuisen* | Katup penutup aliran air utama pipa gedung | Water Flooding Building Damage |
+| 32 | 酸欠測定器 | さんけつそくていき | *sanketsu sokuteiki* | Alat pengukur kadar oksigen ruang galian dalam | Manhole Hypoxia Fatality |
+| 33 | 投光器 | とうこうき | *toukouki* | Lampu sorot penerangan kerja lembur malam hari | Nighttime Visual Impairment |
+| 34 | 切梁（きりばり） | きりばり | *kiribari* | Balok baja horizontal penahan dinding galian | Structural Bracing Buckling |
+| 35 | ワイヤーロープ点検 | わいやーろーぷてんけん | *waiyaa roopu tenken* | Pemeriksaan kawat sling derek dari serat putus | Rigging Sling Catastrophic Snap |
+| 36 | ５Ｓ現場美化 | ごえすげんばびか | *goesugemba bika* | Pembersihan paku menonjol dan kawat di lantai | Puncture Wound & Tetanus |
 
 ---
 
 ## 5. DIRECTIVES K3 DARURAT & FORMULA YUBISASHI KOSHO
 
-### Teriakan Darurat Spontan di Lapangan Konstruksi (> 90 dB):
-- *「危ない！吊り荷から離れろ！ワイヤが切れるぞ！」* (*Abunai! Tsurini kara hanarero! Waiya ga kireru zo!* — Bahaya! Menjauh dari muatan gantung! Kawat seling mau putus!)
-- *「頭上注意！物が落ちてくるぞ！避けろ！」* (*Zujou chuui! Mono ga ochite kuru zo! Yokero!* — Awas kepala! Ada barang jatuh! Menghindar!)
-- *「バックホウ旋回中！後ろに入るな！」* (*Bakkuhou senkaichuu! Ushiro ni hairu na!* — Backhoe sedang berputar! Jangan ke belakangnya!)
+### Teriakan Darurat Spontan di Tempat Kerja:
+- *「危ない！吊り荷の下に入るな！退避しろ！」* (*Abunai! Tsuri-ni no shita ni hairu na! Taihi shiro!* — Bahaya! Jangan masuk ke bawah beban gantung! Menyingkir!)
+- *「土砂が崩れるぞ！溝から上がれ！」* (*Dosha ga kuzureru zo! Mizo kara agare!* — Tanah longsor! Cepat naik dari parit!)
+- *「フックを掛けろ！フルハーネス二丁掛け！」* (*Fukku wo kakero! Furu haanesu nichou-gake!* — Pasang kaitnya! Double hook harness!)
 
 ### Formula Point-and-Call (指差し呼称):
-1. **Pengecekan Pengait Lanyard Sabuk Pengaman Penuh:** *「フルハーネスフック、親綱二丁掛け、ロック確認、ヨシ！」*
-2. **Pengecekan Sudut Sling Angkat Crane:** *「玉掛けワイヤ角度、60度以内、地切り10cm静止確認、ヨシ！」*
-3. **Pengecekan Lubang Bukaan Lantai Kerja:** *「開口部フタ固定、安全表示ヨシ！」*
-4. **Pengecekan Dinding Penahan Tanah Tebing:** *「土留め支保工、歪み・湧水なし、異常なしヨシ！」*
+1. **Pengecekan Tali Dagu Helm:** *「ヘルメットあご紐、締め付け確認、ヨシ！」*
+2. **Pengecekan Sabuk Pengaman Ketinggian:** *「フルハーネス安全帯、フック二丁掛け、ヨシ！」*
+3. **Pengecekan Beban Derek Kran:** *「玉掛けワイヤー、外れ止めロック、ヨシ！」*
+4. **Pengecekan Dinding Parit Galian:** *「山留め支保工、異常なし、崩壊の危険なし、ヨシ！」*
 
 ---
 
 ## 6. BANK SOAL UJIAN CBT JAC RESMI
 
-### Contoh Soal Ujian Teori (学科試験 - Pilihan Ganda):
-> **Soal 1:** 建設現場において、クレーンを用いて荷を吊り上げる「玉掛け作業」に関する記述として、**最も適切なもの**を次の中から選びなさい。  
-> A. 荷を吊り上げる際、作業時間を短縮するため、地切りを行わずに一気に最高速度で巻き上げる。  
-> B. 玉掛け用ワイヤロープの吊り角度は、大きくなればなるほどワイヤにかかる張力が小さくなるため、できるだけ角度を広げて作業する。  
-> C. 荷を地切り（地面から10〜20cm浮かせた状態）して一旦停止させ、荷の傾きやワイヤの外れがないことを確認してから本格的に巻き上げる。  
-> D. クレーンが荷を吊り上げている最中は、荷の下を作業員が小走りで通過しても安全上問題ない。  
-> **Kunci Jawaban:** **C** (Benar. Prosedur *Jigiri* 10–20 cm dan berhenti sejenak adalah SOP mutlak untuk memastikan kestabilan ikatan dan mencegah muatan terguling bebas).
+### Contoh Soal Ujian Teori (学科試験 4 Pilihan):
+> **Soal 1:** 高所作業において使用するフルハーネス型安全帯の取り扱いとして、最も適切なものを１つ選びなさい。  
+> １. フックは腰よりも低い位置にある足場パイプに掛けるのが原則である。  
+> ２. 移動する際は、２つのフックを交互に掛け替える「二丁掛け」を行い、無胴綱状態（ノーランヤード）を作らない。  
+> ３. ショックアブソーバ（衝撃吸収器）は邪魔になるため取り外して使用する。  
+> ４. Ｄ環（ランヤード接続部）は胸の前に来るように装着する。  
+> **Kunci Jawaban:** **2** (Prinsip nicho-gake wajib diterapkan agar pekerja selalu terlindungi tali pengaman tanpa jeda sedetik pun).
 
-> **Soal 2:** 高さ2メートル以上の足場作業床における墜落防止措置として、**適切でないもの**（間違い）を選びなさい。  
-> A. 作業床の端には、高さ85cm以上の手すりと中桟を取り付けなければならない。  
-> B. 足場の作業床の隙間は、工具や材料が落下するのを防ぐため、3cm以下としなければならない。  
-> C. 幅木（はばき）は、足元からの工具等の落下を防止するために床面から15cm以上の高さで設置する。  
-> D. 安全帯（墜落制止用器具）は胴ベルト型を使用し、フルハーネス型は危険であるため使用してはならない。  
-> **Kunci Jawaban:** **D** (Salah. Regulasi keselamatan kerja konstruksi Jepang sejak 2022 mewajibkan pemakaian sabuk penahan tubuh penuh /*full harness* / フルハーネス型 pada ketinggian $\ge 2$ meter; pemakaian sabuk pinggang tunggal dilarang karena risiko trauma gantung organ perut).
+> **Soal 2:** 生コンクリートの打設作業において、棒状コンクリート振動機（バイブレーター）を使用する目的として、正しいものを１つ選びなさい。  
+> １. コンクリートの凝固時間を遅らせるため。  
+> ２. コンクリート中の余分な空気を追い出し、型枠の隅々まで密実に充填させるため。  
+> ３. 鉄筋の位置を動かして調整するため。  
+> ４. コンクリートの水分量を蒸発させるため。  
+> **Kunci Jawaban:** **2** (Vibrator digunakan untuk memadatkan adukan dan mengeliminasi rongga udara agar mutu beton padat sempurna).
+
+### Contoh Soal Ujian Praktik On-Screen (実技試験):
+> **Soal 1:** 画面の写真を見て、クレーンの玉掛け作業における合図として、人差し指を上に向け、手首を大きく上向きに回転させている動作の意味を選びなさい。  
+> A. 巻き下げ（降下）  
+> B. 巻き上げ（上昇）  
+> C. 転倒注意  
+> D. 緊急停止  
+> **Kunci Jawaban:** **B** (Gerakan memutar telunjuk ke atas adalah sinyal resmi pengangkatan kait derek kran/makiage).

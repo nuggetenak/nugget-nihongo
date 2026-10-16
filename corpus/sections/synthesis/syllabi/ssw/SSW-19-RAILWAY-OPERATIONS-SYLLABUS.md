@@ -4,9 +4,9 @@
 **Kementerian Pembina:** Kementerian Pertanahan, Infrastruktur, Transportasi dan Pariwisata Jepang - Biro Kereta Api (MLIT Railway Bureau / 国土交通省鉄道局)  
 **Badan Pelaksana Uji:** Asosiasi Teknologi Mesin Kereta Api Jepang (RMA / 日本鉄道車両機械技術協会), Asosiasi Subway Jepang (JTOA / 日本地下鉄協会), & Prometric  
 **Dasar Kurasi Primer:**
-- `reference-books/ssw/13_new_sectors/Railway_Rolling_Stock_Theory_Sample_JA.pdf` (Bank Soal Resmi Teori Sarana Kereta RMA)
-- `reference-books/ssw/13_new_sectors/Railway_Rolling_Stock_Practical_Sample_JA.pdf` (Bank Soal Ujian Praktik Sarana Kereta RMA)
-- `reference-books/ssw/13_new_sectors/Transport_Taxi_Driver_Sample_Exam_JA.pdf` (Naskah Asli Ujian Resmi Stasiun & Operasional JTOA)
+- `reference-books/ssw/13_new_sectors_transport_rail_forestry/Railway_Rolling_Stock_Theory_Sample_JA.pdf` (Bank Soal Resmi Teori Sarana Kereta RMA)
+- `reference-books/ssw/13_new_sectors_transport_rail_forestry/Railway_Rolling_Stock_Practical_Sample_JA.pdf` (Bank Soal Ujian Praktik Sarana Kereta RMA)
+- `reference-books/ssw/13_new_sectors_transport_rail_forestry/Transport_Taxi_Driver_Sample_Exam_JA.pdf` (Dokumen Asli Ujian Praktik Operasional Stasiun & Keselamatan JTOA)
 - Standar Ekspansi Sektor Baru Kabinet Jepang (Cabinet Decision 2024 Expansion)
 - Standar Keselamatan Operasi Kereta Api Jepang (Railway Operation Act & Shiteki Koshou)
 **Landasan Teoretis & Empiris:**
@@ -14,6 +14,7 @@
 - Cross-Cultural Communication in Railway Depots & Platform HOU-REN-SO (Mustaqim & Priventa 2026 [VS-31]; Supriatnaningsih et al. 2024 [VS-33])
 - Origin of Point-and-Call (指差し呼称 - Shiteki Koshou) in Japanese Railways (JNIOSH 2020 [VS-39]; RMA 2024)
 - Platform Safety, Train Clearances & Rolling Stock Inspection Acoustic Precision (Husna & Febriyanti 2022 [EA-25])
+- Railway Safety & Operations Operationalization Standards (MLIT 2024 [VS-53])
 
 ---
 
@@ -42,6 +43,9 @@ Kandidat visa *Tokutei Ginou 1-gō* bidang Perkeretaapian menempuh ujian Compute
 
 > **Ketentuan Kelulusan Ganda:** Peserta wajib lulus **KEDUA-DUANYA** (Teori $\ge 60\%$ dan Praktik $\ge 60\%$).
 
+> **Klarifikasi Provenans Dokumen Primer (Provenance Note):**  
+> Dokumen dengan nama file fisik `Transport_Taxi_Driver_Sample_Exam_JA.pdf` yang tersimpan di repositori adalah **100% naskah asli lembar soal ujian resmi Asosiasi Subway Jepang (JTOA / 日本地下鉄協会)** untuk kualifikasi Staf Stasiun & Penanganan Operasional Kereta Api (*Un'yu Kakariin / 運輸係員*). Terlepas dari anomali penamaan file "Taxi_Driver" pada rilis awal kementerian, isi materi naskah ini sepenuhnya memuat uji penanganan tombol darurat peron (*ressha hijou teishi botan*), evakuasi penumpang jatuh ke rel, pengoperasian jembatan kursi roda, penanganan gate tiket otomatis, dan protokol keselamatan peron kereta api.
+
 ---
 
 ## 2. JALUR OPERASIONAL SUB-BIDANG PERKERETAAPIAN (2 DUAL-TRACKS MLIT)
@@ -64,41 +68,43 @@ Sektor Perkeretaapian mengoperasikan dua jalur profesi berintegritas keselamatan
 
 ### MODUL 1: TEKNIK INSPEKSI KETUK PALU AKUSTIK (打音検査 - DASHIN TENKEN)
 - **Topik 1.1: Asal Usul Yubisashi Kosho & Prinsip Akustik Kereta Api:**
-  - Sejarah Shiteki Koshou yang lahir di jawatan kereta api Jepang (Kokutetsu 1913) terbukti menurunkan angka kesalahan manusia sebesar 85%.
-  - Palu uji ketukan bertangkai panjang (*tesuto hanmaa* 1/4 pon): Mengetuk kepala baut dan mur suspensi bogie secara ritmis.
-  - Pembedaan frekuensi gelombang suara:
-    - *Seijou-on (Suara Normal):* Nada tinggi berdering jernih tajam (*kiiiin* / *kan-kan*), getaran pantulan pegas terasa tegas di telapak tangan mekanik.
-    - *Kondaku-on / Ijou-on (Suara Abnormal):* Nada rendah teredam berat (*boko-boko* / *pot-pot*), getaran palu loyo menandakan adanya kelonggaran baut internal atau retakan tersembunyi pada struktur logam.
+  - **Topik 1.1.1: Sejarah & Efektivitas Shiteki Koshou di Depo Kereta:** Sejarah penemuan Point-and-Call di jawatan kereta api nasional Jepang (Kokutetsu 1913) yang terbukti memangkas angka kecelakaan manusia hingga 85%.
+  - **Topik 1.1.2: Metodologi Ayunan Palu Uji (Tesuto Hanmaa):** Teknik memegang palu ketuk bergagang panjang 1/4 pon dan irama pengetukan kepala baut suspensi bogie secara ritmis teratur.
+- **Topik 1.2: Pembedaan Frekuensi Nada Suara Ketukan:**
+  - **Topik 1.2.1: Analisis Resonansi Bersih (Seijou-on):** Identifikasi nada tinggi jernih berdering tajam (*kiiiin* / *kan-kan*) dan sensasi pantulan pegas tegas di telapak tangan mekanik yang menandakan baut terkencang sempurna.
+  - **Topik 1.2.2: Deteksi Suara Retak & Longgar (Kondaku-on / Ijou-on):** Pengenalan nada rendah teredam berat (*boko-boko* / *pot-pot*) dan hilangnya daya pantul palu yang mengindikasikan kelonggaran ulir baut atau retakan internal mikro pada logam rangka.
 
 ---
 
 ### MODUL 2: BOGIE KERETA, RODA & SISTEM PENGEREMAN UDARA
 - **Topik 2.1: Geometri Roda Kereta & Keausan Flens (車輪踏面・フランジ摩耗):**
-  - Profil tapak roda tirus (*touba*) 1/20 atau 1/40 penjamin gerak sentrasi alami di tikungan (*hunting motion / snake motion damping*).
-  - Batas keausan flens roda: Ketebalan flens tidak boleh menipis melampaui batas toleransi batas bahaya tergelincir anjlok dari rel (*datsusen*).
+  - **Topik 2.1.1: Profil Tirus Tapak Roda & Peredaman Hunting Motion:** Kemiringan tirus tapak roda (*touba*) rasio 1/20 atau 1/40 penjamin gerak sentrasi alami di tikungan rel kereta (*hunting motion damping*).
+  - **Topik 2.1.2: Batas Toleransi Keausan Flens Roda:** Pengukuran ketebalan dan sudut tegak flens roda dengan wheel caliper; penarikan gerbong jika keausan mendekati ambang batas bahaya anjlok (*datsusen boushi*).
 - **Topik 2.2: Sistem Pengereman Udara Tekan Kereta (空気ブレーキ):**
-  - Pipa utama udara rem (*main reservoir pipe* 0.7–0.88 MPa).
-  - Pengereman regeneratif listrik bersinergi dengan rem gesek udara pneumatik; saat darurat katup rem darurat (*hijou bureeki barubu*) membuang seluruh udara pipa dan mencengkeram roda sekuat tenaga dalam hitungan detik.
+  - **Topik 2.2.1: Tekanan Pipa Udara Utama & Katup ECB:** Pemantauan tekanan tabung udara utama (*main reservoir pipe* 0.7–0.88 MPa) dan respons katup pneumatik rem listrik proporsional.
+  - **Topik 2.2.2: Mekanisme Pembuangan Darurat Katup Rem:** Prosedur saat katup rem darurat (*hijou bureeki barubu*) membuang seluruh isi udara pipa ke atmosfer dan mencengkeram blok rem komposit ke tapak roda seketika.
 
 ---
 
 ### MODUL 3: KELISTRIKAN TEGANGAN TINGGI & PANTOGRAF
 - **Topik 3.1: Jalur Arus Tegangan Tinggi (架線・集電装置):**
-  - Kawat troli atas bermuatan tegangan mematikan: DC 1.500 Volt (kereta komuter perkotaan) atau AC 20.000–25.000 Volt (Shinkansen).
-  - Prosedur pentanahan kabel arde sebelum menyentuh atap kereta (*setchi-bou / grounding rod*).
-  - Batas ketebalan pelat gesek karbon pantograf (*shuudenshou*) terhadap keausan tergores kawat listrik.
+  - **Topik 3.1.1: Karakteristik Kawat Troli Atas DC 1500V & AC 25kV:** Bahaya busur api mematikan pada sistem elektrifikasi rel komuter (DC 1.500V) dan Shinkansen (AC 25.000V).
+  - **Topik 3.1.2: Prosedur Pentanahan Aman Kawat Troli (Secchi-bou):** Pemasangan tongkat pentanahan arde (*earthing rod*) ke kawat troli sebelum mekanik diizinkan naik ke atap gerbong.
+  - **Topik 3.1.3: Pengukuran Aus Pelat Gesek Pantograf (Shuudenshou):** Pengecekan ketebalan sisa karbon kontak pantograf terhadap keausan friksi gesekan kawat listrik.
 
 ---
 
 ### MODUL 4: KESELAMATAN PERON STASIUN & PROTOKOL DARURAT PENUMPANG
 - **Topik 4.1: Prosedur Penekanan Tombol Penghenti Darurat Kereta (列車非常停止ボタン):**
-  - Jika melihat penumpang terjatuh ke rel atau ada barang tersangkut di pintu kereta yang mulai bergerak: **JANGAN RAGU! TEKAN TOMBOL MERAH SEKETIKA!**
-  - Penekanan tombol memancarkan sinyal darurat radio pemancar otomatis yang menyalakan lampu sinyal putar merah di ujung peron dan memerintahkan kereta yang mendekat berhenti darurat seketika.
+  - **Topik 4.1.1: Tindakan Instan Saat Penumpang / Objek Terjatuh ke Rel:** Kewajiban menekan tombol darurat merah seketika tanpa perlu meminta izin atasan saat melihat orang/barang jatuh ke lintasan rel.
+  - **Topik 4.1.2: Aktivasi Radio Peringatan Kereta & Lampu Sinyal Peron:** Pemahaman sistem interlocking darurat di mana penekanan tombol memicu suar lampu merah berputar di ujung peron dan transmisi sinyal rem darurat ke masinis kereta terdekat.
 - **Topik 4.2: Asistensi Kursi Roda di Celah Peron (スロープ板介助):**
-  - Membawa jembatan papan lipat aluminium ke pintu gerbong yang ditentukan.
-  - Komunikasi ramah sopan dengan penumpang disabilitas, memasang pengait jembatan ke celah pintu kereta, memandu kursi roda mundur perlahan saat turun.
+  - **Topik 4.2.1: SOP Pemasangan Jembatan Ram Lipat Portabel:** Membawa jembatan papan lipat aluminium ke pintu gerbong yang ditentukan, mengaitkan lidah papan ke bibir pintu kereta, dan memastikan stabilitas pijakan.
+  - **Topik 4.2.2: Komunikasi Pelayanan Santun & Pemanduan Kursi Roda:** Etika menyapa pengguna kursi roda, memandu roda mundur perlahan saat menurunkan penumpang dari kereta demi keselamatan gravitasi.
 - **Topik 4.3: HOU-REN-SO Saat Penumpang Terjatuh ke Rel / Gangguan Sinyal:**
-  - *「駅長！2番線ホームで線路内転落が発生しました！直ちに非常停止ボタンを押し、接近中の上り電車を非常停車させました！救助に向かいます！」*
+  - **Topik 4.3.1: Protokol Evakuasi Korban & Koordinasi dengan Ruang Kendali Operasi (OCC):** Komunikasi darurat radio stasiun untuk mengamankan aliran listrik kawat atas sebelum personel turun ke jalur rel.
+  - **Topik 4.3.2: Format Pelaporan Darurat Radio ke Kepala Stasiun:**  
+    *「駅長！2番線ホームで線路内転落が発生しました！直ちに非常停止ボタンを押し、接近中の上り電車を非常停車させました！救助に向かいます！」*
 
 ---
 
@@ -106,21 +112,42 @@ Sektor Perkeretaapian mengoperasikan dua jalur profesi berintegritas keselamatan
 
 | No | Kanji | Kana | Romaji | Indonesian Gloss | High-Stakes Risk Category |
 |---|---|---|---|---|---|
-| 1 | 列車非常停止ボタン | れっしゃひじょうていし...| *ressha hijou teishi...* | Tombol darurat peron penghenti kereta mendekat | Life-or-Death Platform Rescue|
+| 1 | 列車非常停止ボタン | れっしゃひじょうていし... | *ressha hijou teishi...* | Tombol darurat peron penghenti kereta mendekat | Life-or-Death Platform Rescue |
 | 2 | ホーム転落事故 | ほーむてんらくじこ | *hoomu tenraku jiko* | Penumpang terjatuh dari peron ke atas rel kereta | Fatal Train Collision |
-| 3 | 打音検査（テストハンマー）| だおんけんさ | *daon kensa* | Uji ketukan palu akustik pendeteksi baut kendor | Derailment / Mechanical Loss |
-| 4 | 台車枠亀裂 | だいしゃわくきれつ | *daishawaku kiretsu* | Retakan mikro pada rangka baja bogie kereta | Catastrophic Derailment Hazard|
-| 5 | パンタグラフ集電舟 | ぱんたぐらふしゅうでんしゅう| *pantagurafu...* | Sepatu gesek karbon penerima arus listrik 1500V | High Voltage Arc Flash Hazard|
+| 3 | 打音検査（テストハンマー） | だおんけんさ | *daon kensa* | Uji ketukan palu akustik pendeteksi baut kendor | Derailment / Mechanical Loss |
+| 4 | 台車枠亀裂 | だいしゃわくきれつ | *daishawaku kiretsu* | Retakan mikro pada rangka baja bogie kereta | Catastrophic Derailment Hazard |
+| 5 | パンタグラフ集電舟 | ぱんたぐらふしゅうでんしゅう | *pantagurafu...* | Sepatu gesek karbon penerima arus listrik 1500V | High Voltage Arc Flash Hazard |
 | 6 | ホームドア挟まり | ほーむどあはさまり | *hoomu doa hasamari* | Penumpang/pakaian terjepit pintu pagar peron | Dragging Accident Hazard |
 | 7 | スロープ板介助 | すろーぷばんかいじょ | *suroupu-ban kaijo* | Pemasangan jembatan lipat asistensi kursi roda | Fall into Platform Gap Risk |
 | 8 | フランジ摩耗 | ふらんじまもう | *furanji mamou* | Keausan bibir flens penuntun roda kereta api | Flange Climb Derailment |
-| 9 | 触車事故（列車接触）| しょくしゃじこ | *shokusha jiko* | Pekerja/orang tertabrak badan kereta yang melintas | Instant Fatal Impact |
-| 10 | 軌道内立ち入り禁止 | きどうないたちいりきんし| *kidounai...* | Larangan keras masuk ke dalam area jalur rel | Statutory Severe Hazard Zone |
-| 11 | 発車合図（乗降終了）| はっしゃあいず | *hassha aizu* | Sinyal komando pintu tertutup dan kereta siap jalan| Passenger Door Trap Prevention|
-| 12 | 混濁音（異常打音）| こんだくおん | *kondaku-on* | Suara ketukan palu redup tanda kelonggaran baut | Hidden Fastener Failure |
-| 13 | 架線接地棒（アース棒）| かせんせっちぼう | *kasen secchibou* | Tongkat arde pentanahan kawat troli listrik atap | Electrocution / Arc Hazard |
-| 14 | 空気バネ（エアサス）| くうきばね | *kuuki bane* | Balon suspensi udara penopang keempukan gerbong | Uneven Carbody Tilt Hazard |
-| 15 | 出発指示合図 | しゅっぱつしじあいず | *shuppatsu shiji aizu*| Sinyal lampu hijau konfirmasi berangkat masinis | Signal Passed at Danger (SPAD)|
+| 9 | 触車事故（列車接触） | しょくしゃじこ | *shokusha jiko* | Pekerja/orang tertabrak badan kereta yang melintas | Instant Fatal Impact |
+| 10 | 軌道内立ち入り禁止 | きどうないたちいりきんし | *kidounai...* | Larangan keras masuk ke dalam area jalur rel | Statutory Severe Hazard Zone |
+| 11 | 発車合図（乗降終了） | はっしゃあいず | *hassha aizu* | Sinyal komando pintu tertutup dan kereta siap jalan | Passenger Door Trap Prevention |
+| 12 | 混濁音（異常打音） | こんだくおん | *kondaku-on* | Suara ketukan palu redup tanda kelonggaran baut | Hidden Fastener Failure |
+| 13 | 架線接地棒（アース棒） | かせんせっちぼう | *kasen secchibou* | Tongkat arde pentanahan kawat troli listrik atap | Electrocution / Arc Hazard |
+| 14 | 空気バネ（エアサス） | くうきばね | *kuuki bane* | Balon suspensi udara penopang keempukan gerbong | Uneven Carbody Tilt Hazard |
+| 15 | 出発指示合図 | しゅっぱつしじあいず | *shuppatsu shiji aizu* | Sinyal lampu hijau konfirmasi berangkat masinis | Signal Passed at Danger (SPAD) |
+| 16 | 指差呼称（シテキコショウ） | しさこしょう | *shisa koshou* | Protokol tunjuk dan sebut verifikasi keselamatan | 85% Human Error Reduction |
+| 17 | 踏面清掃装置 | とうめんせいそうそうち | *toumen seisou souchi* | Perangkat pembersih kotoran tapak roda kereta | Loss of Wheel-Rail Adhesion |
+| 18 | 車輪踏面剥離 | しゃりんとうめんはくり | *sharin toumen hakuri* | Pengelupasan logam tapak roda akibat gesekan rem | Vibration & Bearing Damage |
+| 19 | 車軸軸受（ジャーナル） | しゃじくじくうけ | *shajiku jikuuke* | Bantalan poros roda penahan putaran kecepatan tinggi | Axle Seizure / Hot Box Risk |
+| 20 | 制御弁（電磁弁） | せいぎょべん | *seigyoben* | Katup solenoid pengendali aliran udara rem kompresi | Air Brake Failure |
+| 21 | 主電動機（トラクションモータ） | しゅでんどうき | *shudendouki* | Motor listrik utama penggerak gandar roda kereta | Traction Power Loss Hazard |
+| 22 | 断路器（ディスコン） | だんろき | *danroki* | Sakelar isolator pemutus arus listrik daya atap kereta | High-Voltage Maintenance Arc |
+| 23 | 避雷器（アレスター） | ひらいき | *hiraiki* | Alat penangkal lonjakan petir pelindung sirkuit kereta | Lightning Surge Equipment Blast |
+| 24 | 自動列車停止装置（ATS） | じどうれっしゃていし... | *jidou ressha teishi...* | Sistem otomatis penghenti kereta saat langgar sinyal | Over-speed / Collision Prevention |
+| 25 | 自動列車制御装置（ATC） | じどうれっしゃせいぎょ... | *jidou ressha seigyo...* | Sistem otomatis pembatas kecepatan di kabin masinis | Signal Disregard Catastrophe |
+| 26 | 転てつ器（ポイント） | てんてつき | *tentetsuki* | Alat wesel pengalih persilangan jalur rel kereta | Switch Misalignment Derailment |
+| 27 | 隙間転落防止ゴム | すきまてんらくぼうし... | *sukima tenraku...* | Karet penutup celah antara lantai kereta dan peron | Platform Gap Passenger Fall |
+| 28 | 自動改札機障害 | じどうかいさつきしょうがい | *jidou kaisatsuki...* | Gangguan mekanis tiket/kartu tersangkut di gerbang | Platform Concourse Congestion |
+| 29 | 非常通報装置（車内SOS） | ひじょうつうほうそうち | *hijou tsuuhou souchi* | Tombol intercom darurat penumpang di dalam gerbong | In-Car Fire / Crime Alert |
+| 30 | 車両基地・留置線 | しゃりょうきち | *sharyou kichi* | Depo bengkel sarana perawatan dan parkir kereta | Gemba Shunting Collision Hazard |
+| 31 | 誘導無線（防護無線） | ゆうどうむせん | *yuudou musen* | Radio darurat pemancar peringatan henti serentak | Multi-Train Secondary Collision |
+| 32 | レール摩耗・波状摩耗 | れーるまもう | *reeru mamou* | Keausan bergelombang pada permukaan baja rel | Excessive Vibration & Noise |
+| 33 | 建築限界測定 | けんちくげんかいそくてい | *kenchiku genkai sokutei* | Pengukuran batas ruang bebas kereta dari tiang/dinding | Clearance Obstacle Collision |
+| 34 | 絶縁手袋・保護具 | ぜつえんてぶくろ | *zetsuen tebukuro* | Sarung tangan karet isolasi listrik tegangan tinggi | High-Voltage Electric Shock |
+| 35 | 乗務員引継ぎ | じょうむいんひきつぎ | *joumuin hikitsugi* | Serah terima operan tugas masinis & kondektur kereta | Operational Oversight Risk |
+| 36 | 構内入換作業 | こうないいれかえさぎょう | *kounai irekae sagyou* | Manuver pemindahan gerbong kereta di dalam area depo | Shunting Squeeze & Crushing Risk |
 
 ---
 

@@ -4,9 +4,9 @@
 **Kementerian Pembina:** Kementerian Ekonomi, Perdagangan dan Industri Jepang (METI / 経済産業省)  
 **Badan Pelaksana Uji:** Organisasi SDM Manufaktur Internasional (JAIM / 一般社団法人工業製品製造技能人材機構) & Prometric  
 **Dasar Kurasi Primer:**
-- `reference-books/ssw/09_seizou_manufacturing/Manufacturing_Machining_Metal_Textbook_JA.pdf` (169 halaman) & `ID` (Pemesinan & Pengolahan Logam)
-- `reference-books/ssw/09_seizou_manufacturing/Manufacturing_Surface_Treatment_Textbook_JA.pdf` (207 halaman) & `ID` (Perlakuan Permukaan)
-- `reference-books/ssw/09_seizou_manufacturing/Manufacturing_Machining_Sample_Exam_JA.pdf` (Bank Soal Ujian Resmi JAIM)
+- `reference-books/ssw/09_seizou_manufacturing/Manufacturing_Machining_Metal_Textbook_JA.pdf` (169 halaman) & `reference-books/ssw/09_seizou_manufacturing/Manufacturing_Machining_Metal_Textbook_ID.pdf`
+- `reference-books/ssw/09_seizou_manufacturing/Manufacturing_Surface_Treatment_Textbook_JA.pdf` (207 halaman) & `reference-books/ssw/09_seizou_manufacturing/Manufacturing_Surface_Treatment_Textbook_ID.pdf`
+- `reference-books/ssw/09_seizou_manufacturing/Manufacturing_Machining_Sample_Exam_JA.pdf` & `reference-books/ssw/09_seizou_manufacturing/Manufacturing_Surface_Treatment_Sample_Exam_JA.pdf`
 - Standar Integrasi 17 Divisi Operasional JAIM (JAIM 2024 [VS-40])
 **Landasan Teoretis & Empiris:**
 - Needs Analysis & Technical Lexicon (Nation & Hwang 1995 [VS-09]; Chung & Nation 2003 [VS-10])
@@ -53,44 +53,44 @@ Industri Sokeizai (素形材) berfokus pada pembentukan komponen logam mentah me
 
 ## 3. MODUL PEMBELAJARAN KURIKULUM (PEDAGOGICAL MODULES)
 
-### MODUL 1: MATERIAL LOGAM & DASAR METALURGI
-- **Topik 1.1: Sifat Fisik & Mekanik Logam Industri:**
-  - Baja karbon (*tansokou*), besi cor kelabu (*nezu-chutetsu*), paduan aluminium (*arumi goukin*), tembaga, dan kuningan.
-  - Kekerasan (*koudo*), kekuatan tarik (*hippari tsuyosa*), ketangguhan (*nebari*), kelelahan logam (*kinzoku hirou*).
-- **Topik 1.2: Perlakuan Panas (熱処理):**
-  - Quenching pendinginan cepat air/minyak (*yakiire*) untuk meningkatkan kekerasan.
-  - Tempering pendinginan ulang terkontrol (*yaki-modoshi*) untuk menghilangkan kerapuhan dan memulihkan keuletan.
+### MODUL 1: MATERIAL LOGAM & DASAR METALURGI (金属材料と熱処理)
+- **Topik 1.1: Sifat Fisik & Karakteristik Mekanik Logam Industri:**
+  - **Topik 1.1.1: Klasifikasi Baja Karbon & Paduan Non-Ferrous:** Karakteristik baja karbon (*tansokou* SS400, S45C), besi cor kelabu (*nezu-chutetsu* FC200), paduan aluminium (*arumi goukin*), dan tembaga.
+  - **Topik 1.1.2: Parameter Kekuatan Mekanik & Deformasi:** Konsep kekerasan (*koudo* Rockwell/Brinell), kekuatan tarik (*hippari tsuyosa*), keuletan (*dansei*), kegetasan (*zeisei*), dan kelelahan siklik logam (*kinzoku hirou*).
+- **Topik 1.2: Metalurgi Perlakuan Panas (熱処理 - Netsushori):**
+  - **Topik 1.2.1: Quenching Pendinginan Cepat (焼入れ - Yakiire):** Pemanasan melampaui titik austenit disusul pendinginan mendadak dalam air/oli guna membentuk martensit keras.
+  - **Topik 1.2.2: Tempering & Annealing Penstabil Struktur (焼戻し・焼なまし):** Pemanasan kembali suhu terkontrol (*yakimodoshi*) untuk mengeliminasi kerapuhan internal serta meningkatkan ketangguhan impak.
 
 ---
 
 ### MODUL 2: PROSES PENGECORAN & DIE CASTING (鋳造・ダイカスト)
-- **Topik 2.1: Aliran Logam Cair & Cetakan:**
-  - Peleburan logam dalam tungku induksi listrik (*youkai-ro*), penuangan logam cair menggunakan ladel (*yutsugi*).
-  - Kecepatan alir (*yunagare*), sistem saluran masuk (*yudamari / gate*).
-- **Topik 2.2: Deteksi & Pencegahan Cacat Coran (鋳造欠陥):**
-  - Rongga udara/gas void di dalam logam cor (*su - 巣*), salah alir (*yumawari furyou*), retak panas (*netsuware*), inklusi pasir (*sunakami*).
+- **Topik 2.1: Aliran Logam Cair & Sistem Cetakan:**
+  - **Topik 2.1.1: Peleburan Tungku Induksi & Penuangan Ladel:** Pengoperasian tungku induksi listrik (*youkai-ro*), pengukuran pirometer suhu leleh 1.400°C–1.500°C, dan penuangan ladle (*yutsugi*).
+  - **Topik 2.1.2: Dinamika Saluran Tuang & Penampung (Gate & Yudamari):** Pengaturan laju aliran cairan logam (*yunagare*) untuk mencegah turbulensi dan penjebakan gas atmosferik.
+- **Topik 2.2: Deteksi & Eliminasi Cacat Pengecoran (鋳造欠陥):**
+  - **Topik 2.2.1: Rongga Udara & Gas Blowhole (巣・ブローホール):** Identifikasi lubang porositas gas internal akibat kelembapan pasir cetak atau deoksidasi kurang sempurna.
+  - **Topik 2.2.2: Salah Alir & Retak Termal (湯回り不良・熱割れ):** Analisis kegagalan pengisian logam cair sebelum membeku (*misrun*) dan retak pendinginan tidak merata.
 
 ---
 
 ### MODUL 3: STAMPING PRESS & PENGOLAHAN PELAT LOGAM (プレス加工)
-- **Topik 3.1: Mekanisme Cetakan Mesin Press (金型 - Kanagata):**
-  - Cetakan atas (*punch / uwagata*) dan cetakan bawah (*die / shitagata*).
-  - Jarak celah pemotong (*clearance*): Celah terlalu kecil memicu ausnya pisau, celah terlalu besar memicu serpihan tajam memanjang (*bari*).
-- **Topik 3.2: Proses Pemotongan & Pembentukan:**
-  - Punching pelubangan (*uchinuki*), tekukan V (*V-mage*), deep drawing wadah mangkok (*shiborikakou*).
-  - Penghilangan geram tajam (*baritori*) menggunakan kikir atau mesin tumble.
+- **Topik 3.1: Mekanisme Cetakan Presisi Mesin Press (金型 - Kanagata):**
+  - **Topik 3.1.1: Konfigurasi Punch Atas & Die Bawah (上型・下型):** Pemasangan cetakan bergerak pada ram slide dan cetakan tetap pada bolster plate mesin press mekanik/hidrolik.
+  - **Topik 3.1.2: Kalibrasi Celah Potong (クリアランス - Clearance):** Dampak celah antara punch dan die; celah terlalu sempit mempercepat keausan mata pisau, celah terlalu longgar memicu serpihan tajam (*burr / bari*).
+- **Topik 3.2: Proses Pemotongan & Pembentukan Dingin:**
+  - **Topik 3.2.1: Operasi Punching, Bending & Deep Drawing:** Teknik pelubangan (*uchinuki*), tekukan pelat V (*V-mage*), dan penarikan mangkok silinder (*shiborikakou*).
+  - **Topik 3.2.2: Pembersihan Geram Tajam (バリ取り - Baritori):** Prosedur kikir manual, tumbling abrasif, dan deburring roda gerinda demi mencegah luka sayat tajam.
 
 ---
 
-### MODUL 4: K3 INDUSTRI LOGAM BERAT & PANEL PENGENDALI
+### MODUL 4: K3 INDUSTRI LOGAM BERAT & PANEL PENGENDALI (安全衛生と操作盤)
 - **Topik 4.1: Pencegahan Bencana Terjepit & Terpotong (挟まれ・巻き込まれ):**
-  - Area bahaya cetakan mesin press turun: Larangan keras memasukkan tangan ke dalam area gerak cetakan (*kanagata koukachuu*).
-  - Pemasangan sensor tirai cahaya infra-merah (*hikari-sen anzen souchi*) dan tombol dua tangan serentak (*ryoute-oushi botan*).
+  - **Topik 4.1.1: Sistem Proteksi Tirai Cahaya & Tombol Dua Tangan:** Verifikasi tirai sinar inframerah (*hikari-sen anzen souchi*) dan interlock tombol tekan serentak (*ryoute-oushi botan*) sebelum ram turun.
+  - **Topik 4.1.2: Penanganan Macet Cetakan (金型かみ込み):** Larangan keras merogohkan tangan ke ruang cetakan tanpa mematikan sakelar utama dan memasang balok penyangga pengaman (*safety block*).
 - **Topik 4.2: Perlindungan dari Logam Cair Panas & Percikan:**
-  - APD tahan api: Pelindung wajah (*feisu shiirudo*), jaket kulit lengan panjang, sarung tangan kulit tebal, kacamata pelindung panas, sepatu boot safety sol baja anti-tembus.
-- **Topik 4.3: HOU-REN-SO Saat Cacat Produksi:**
-  - *Bad news first:* Saat cetakan press macet (*kanagata kamikomi*) atau coran berongga (*su*), matikan mesin, pasang tanda bahaya, lapor seketika ke supervisor:  
-    *「班長、金型にかみ込みが発生しました！非常停止をかけてラインを止めました。確認をお願いします！」*
+  - **Topik 4.2.1: Spesifikasi APD Tahan Api Pengecoran:** Pemakaian pelindung wajah polikarbonat (*feisu shiirudo*), jaket kulit panjang anti-percikan, dan sepatu boot sol baja bertutup pelindung metatarsal.
+- **Topik 4.3: HOU-REN-SO Saat Anomali Produksi & Directives:**
+  - **Topik 4.3.1: Protokol HOU-REN-SO Kerusakan Cetakan:** Pelaporan seketika: *「班長、金型にかみ込みが発生しました！非常停止をかけてラインを止めました。確認をお願いします！」*
 
 ---
 
@@ -98,52 +98,73 @@ Industri Sokeizai (素形材) berfokus pada pembentukan komponen logam mentah me
 
 | No | Kanji | Kana | Romaji | Indonesian Gloss | High-Stakes Risk Category |
 |---|---|---|---|---|---|
-| 1 | 鋳造湯流れ | ちゅうぞうゆながれ | *chuuzou yunagare* | Aliran logam cair penuangan cetakan | Thermal Splatter Hazard |
-| 2 | 金型かみ込み | かながたかみこみ | *kanagata kamikomi* | Benda asing terjepit di antara cetakan press | Die Fracture / Hand Injury |
-| 3 | 焼入れ | やきいれ | *yakiire* | Proses pendinginan cepat pengerasan baja (quenching) | Thermal Shock Hazard |
-| 4 | バリ取り | ばりとり | *baritori* | Pembersihan geram tajam sisa pemotongan logam | Severe Laceration Hazard |
-| 5 | 巣（ス） | す | *su* | Cacat rongga udara / pori gas di dalam coran | Structural Part Failure |
-| 6 | 治具固定 | じぐこてい | *jigu kotei* | Penguncian benda kerja pada jig pneumatik | Projectile Fly-off Hazard |
-| 7 | 圧延ロール | あつえんろーる | *atsuen rooru* | Roll silinder penggiling penipis pelat baja | In-Running Nip Crush |
-| 8 | 溶解炉 | ようかいろ | *youkairo* | Tungku peleburan logam suhu tinggi (> 1.200°C) | Explosion / Burn Injury |
-| 9 | 湯冷め | ゆざめ | *yuzame* | Penurunan suhu logam cair sebelum mengisi cetakan | Cold Shut Casting Defect |
-| 10 | 寸法公差 | すんぽうこうさ | *sumpou kousa* | Batas toleransi deviasi ukuran milimeter | Quality Defect Out-of-Spec |
-| 11 | 光線安全装置 | こうせんあんぜんそうち | *kousen anzen souchi* | Sensor tirai cahaya infra-merah penghenti press | Safety Interlock Bypass |
-| 12 | 非常停止 | ひじょうていし | *hijou teishi* | Sakelar pemutus daya darurat (E-Stop) | Life-Saving Action |
-| 13 | 研削砥石 | けんさくといし | *kensaku toishi* | Batu roda gerinda putar penghalus logam | High-Speed Wheel Burst |
-| 14 | ポカヨケ | ぽかよけ | *poka-yoke* | Jig desain anti-salah arah pasang komponen | Human Error Prevention |
-| 15 | 鍛造プレス | たんぞうぷれす | *tanzou puresu* | Mesin tempa tekan panas hidrolik berkekuatan masif | Crush & Vibration Hazard |
+| 1 | 鋳造 | ちゅうぞう | *chuuzou* | Proses pengecoran peleburan logam | Molten Metal Splash Hazard |
+| 2 | 金型 | かながた | *kanagata* | Cetakan baja mesin press / die casting | Crush / Amputation Hazard |
+| 3 | 焼入れ | やきいれ | *yakiire* | Proses quenching pengerasan logam cepat | Thermal Burn / Explosion |
+| 4 | 溶解炉 | ようかいろ | *youkai-ro* | Tungku peleburan logam cair industri | Extreme Heat / Toxic Fumes |
+| 5 | バリ取り | ばりとり | *baritori* | Pembersihan geram tajam sisa pemotongan | Severe Laceration Hazard |
+| 6 | 湯つぎ | ゆつぎ | *yutsugi* | Penuangan logam cair dari ladle ke cetakan | Molten Metal Burn Hazard |
+| 7 | 巣（鋳巣） | す（ちゅうす） | *su (chuusu)* | Rongga cacat udara/gas dalam coran logam | Structural Rupture Defect |
+| 8 | クリアランス | くりあらんす | *kuriaransu* | Celah jarak presisi antara punch dan die | Tool Jamming / Part Fracture |
+| 9 | 非常停止ボタン | ひじょうていしぼたん | *hijou teishi botan* | Tombol darurat pemutus daya seketika | Life-Critical Escalation |
+| 10 | 光線安全装置 | こうせんあんぜんそうち | *kousen anzen souchi* | Sensor tirai cahaya penghenti mesin otomatis | Maiming / Bypass Violation |
+| 11 | 鍛造 | たんぞう | *tanzou* | Penempaan logam menggunakan gaya tekan | Flying Debris Hazard |
+| 12 | 焼戻し | やきもどし | *yakimodoshi* | Proses tempering penstabil keuletan logam | Heat Exposure Hazard |
+| 13 | プレスブレーキ | ぷれすぶれーき | *puresu bureeki* | Mesin tekuk pelat logam bertekanan tinggi | Finger Crushing Hazard |
+| 14 | かみ込み | かみこみ | *kamikomi* | Kondisi part logam terjepit macet di cetakan | Machine Jam / Recoil |
+| 15 | フェイスシールド | ふぇいすしーるど | *feisu shiirudo* | Pelindung seluruh wajah tahan panas logam | Facial Burn Blindness |
+| 16 | 湯道 | ゆみち | *yumichi* | Saluran masuk pengisian logam cair pada cetakan | Solidification Obstruction |
+| 17 | 砂型 | すながた | *sunagata* | Cetakan pasir untuk pengecoran logam besi/baja | Mold Collapse Hazard |
+| 18 | 焼なまし | やきなまし | *yakinamashi* | Proses annealing pelunakan struktur mikro logam | Thermal Gradient Stress |
+| 19 | 炭素鋼 | たんそこう | *tansokou* | Baja karbon paduan besi dan karbon | Material Failure if Wrong Grade |
+| 20 | 引張強さ | ひっぱりつよさ | *hippari tsuyosa* | Kekuatan batas tarik maksimal material logam | Catastrophic Rupture |
+| 21 | 硬さ試験 | かたさしけん | *katasa shiken* | Pengujian kekerasan permukaan (Rockwell/Vickers) | Quality Defect Outflow |
+| 22 | マイクロメーター | まいくろめーたー | *maikuromeetaa* | Alat ukur presisi ketebalan hingga 0.001 mm | Dimension Measurement Error |
+| 23 | ノギス | のぎす | *nogisu* | Jangka sorong pengukur diameter luar dan dalam | Dimensional Tolerance Error |
+| 24 | 寸法公差 | すんぽうこうさ | *sumpou kousa* | Batas toleransi penyimpangan ukuran gambar JIS | Out-of-Spec Rejection |
+| 25 | 両手押しボタン | りょうておしぼたん | *ryoute oshi botan* | Tombol kontrol dua tangan pengaman mesin press | Interlock Tampering Hazard |
+| 26 | セーフティブロック | せーふてぃぶろっく | *seefutii burokku* | Balok penopang mekanis cetakan ram mesin press | Die Fall Amputation |
+| 27 | 研削といし | けんさくといし | *kensaku toishi* | Batu gerinda putar penghalus logam | Wheel Burst Projectile Hazard |
+| 28 | 切削油 | せっさくゆ | *sessakuyu* | Cairan pendingin pelumas pemotongan logam | Slip Hazard & Skin Dermatitis |
+| 29 | 切粉 | きりこ | *kiriko* | Serpihan tatal gram sisa pemotongan logam | Eye Penetration & Laceration |
+| 30 | 集塵機 | しゅうじんき | *shuujinki* | Mesin penghisap debu dan serbuk logam | Dust Deflagration Hazard |
+| 31 | 保護具完全着用 | ほごぐかんぜんちゃくよう | *hogogu kanzen chakuyou* | Kewajiban memakai APD lengkap standar pabrik | Statutory Safety Violation |
+| 32 | 皮手袋 | かわてぶくろ | *kawatebukuro* | Sarung tangan kulit tebal anti-panas pengecoran | Heat Burn Prevention |
+| 33 | 安全靴 | あんぜんぐつ | *anzengutsu* | Sepatu keselamatan berujung pelat baja | Heavy Drop Crush Injury |
+| 34 | 原点復帰 | げんてんふっき | *genten fukki* | Prosedur pengembalian mesin ke koordinat nol | Calibration Crash Hazard |
+| 35 | チョコ停 | ちょこてい | *chokotei* | Penghentian mesin sesaat akibat sensor terhalang | Unplanned Intervention Hazard |
+| 36 | ５Ｓ活動 | ごえすかつどう | *goesukatsudou* | Penerapan Seiri, Seiton, Seiso, Seiketsu, Shitsuke | Fundamental Gemba Quality |
 
 ---
 
 ## 5. DIRECTIVES K3 DARURAT & FORMULA YUBISASHI KOSHO
 
-### Teriakan Darurat Spontan di Lantai Pabrik (> 85 dB):
-- *「非常停止！手を巻き込まれた！ブレーカーを落とせ！」* (*Hijou teishi! Te wo makikomareta! Bureekaa wo otose!* — Emergency Stop! Tangan terjepit! Matikan breaker!)
-- *「危ない！溶湯が飛ぶぞ！離れろ！」* (*Abunai! Youyou ga tobu zo! Hanarero!* — Bahaya! Logam cair menyiprat! Menjauh!)
+### Teriakan Darurat Spontan di Tempat Kerja:
+- *「危ない！手を引っ込めろ！非常停止！」* (*Abunai! Te wo hikkomero! Hijou teishi!* — Bahaya! Tarik tanganmu! Emergency stop!)
 - *「金型降下中！手を入れるな！」* (*Kanagata koukachuu! Te wo ireru na!* — Cetakan sedang turun! Jangan masukkan tangan!)
+- *「湯漏れだ！溶解炉から離れろ！」* (*Yumore da! Youkairo kara hanarero!* — Logam cair bocor! Menjauh dari tungku!)
 
 ### Formula Point-and-Call (指差し呼称):
-1. **Pengecekan Tekanan Hidrolik Cetakan:** *「油圧ゲージ、0.5メガパスカル、基準値ヨシ！」*
-2. **Pengecekan Tirai Pengaman Sensor:** *「光線安全装置、遮光停止確認、ヨシ！」*
-3. **Pengecekan Penguncian Benda Kerja:** *「クランプ固定、ガタツキなし、ヨシ！」*
-4. **Pengecekan Area Kerja Sekitar Sebelum Mulai:** *「周囲安全、合図確認、ヨシ！起動ON！」*
+1. **Pengecekan Tirai Cahaya Sensor:** *「光線安全装置、作動確認、ヨシ！」*
+2. **Pengecekan Balok Penyangga Cetakan:** *「セーフティブロック、挿入完了、ヨシ！」*
+3. **Pengecekan Suhu Tungku Peleburan:** *「溶解炉温度、1450度、ヨシ！」*
+4. **Pengecekan Dimensi Gambar Kerja:** *「寸法公差、公差内クリア、ヨシ！」*
 
 ---
 
 ## 6. BANK SOAL UJIAN CBT JAIM RESMI
 
-### Contoh Soal Ujian Teori (学科試験 - Format True/False ○×):
-> **Soal 1:** 鋳造作業において、溶融金属（溶湯）を鋳型に注ぎ込む際、水分が付着している取鍋（とりなべ）を使用しても問題ない。  
-> A. 正しい（○）  
-> B. 間違い（×）  
-> **Kunci Jawaban:** **B** (Salah / ×. Logam cair panas jika menyentuh air akan mengalami ledakan uap air seketika /*mizu-shui-jouki bakuhatsu*/ yang sangat mematikan).
+### Contoh Soal Ujian Teori (学科試験 ○×):
+> **Soal 1:** プレス機械の金型調整作業を行うときは、主電動機（モーター）を停止させ、セーフティブロックを金型間に確実にセットしなければならない。  
+> **Kunci Jawaban:** **○ (Benar)** (Wajib mematikan motor utama dan memasang safety block mekanis sebelum menyetel cetakan mesin press).
 
-> **Soal 2:** 金属プレス機械に設置されている光線式安全装置は、光線を遮断するとスライドの下降が直ちに停止する構造になっている。  
-> A. 正しい（○）  
-> B. 間違い（×）  
-> **Kunci Jawaban:** **A** (Benar / ○. Tirai cahaya adalah interlock pengaman pencegah tangan terjepit).
+> **Soal 2:** 焼入れ（やきいれ）を行った鋼材は、硬さが増加するとともに粘り強さ（靭性）も向上するため、そのまま最終部品として使用される。  
+> **Kunci Jawaban:** **× (Salah)** (Baja pasca-quenching menjadi sangat keras tetapi rapuh/getas, sehingga wajib melalui proses tempering/yakimodoshi untuk memulihkan keuletan).
 
-### Contoh Soal Ujian Praktik Visual (実技試験):
-> **Soal 1:** 画面の図記号を見て、JIS図面に定められている「表面粗さ（Roughness）」を表す記号として正しいものを選びなさい。  
-> **Kunci Jawaban:** Simbol segitiga akar bergaris horizontal (*surface finish mark*).
+### Contoh Soal Ujian Praktik On-Screen (実技試験):
+> **Soal 1:** 画面のマイクロメーターの目盛りを読み取り、正しい測定値を選びなさい（スリーブ目盛り：15.5 mm、シンブル目盛り：28）。  
+> A. 15.28 mm  
+> B. 15.78 mm  
+> C. 15.58 mm  
+> D. 16.28 mm  
+> **Kunci Jawaban:** **B** ($15.5	ext{ mm} + 0.28	ext{ mm} = 15.78	ext{ mm}$).

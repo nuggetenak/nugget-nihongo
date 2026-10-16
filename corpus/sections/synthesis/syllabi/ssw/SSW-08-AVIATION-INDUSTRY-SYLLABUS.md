@@ -1,106 +1,94 @@
-# SILABUS KEJURUAN RESMI NUGGET NIHONGO · SEKTOR 08: AVIATION INDUSTRY (航空業 / INDUSTRI PENERBANGAN & KEBANDARUDARAAN)
+# SILABUS KEJURUAN RESMI NUGGET NIHONGO · SEKTOR 08: AVIATION INDUSTRY (GROUND HANDLING & MAINTENANCE / INDUSTRI PENERBANGAN)
 **Kode Sektor:** `SSW-AVIA-01` · **Versi:** v2.0 (Corpus v30 Canonical Revision)  
 **Status:** AUTHORITATIVE & EXHAUSTIVE SECTOR SYLLABUS  
-**Kementerian Pembina:** Kementerian Pertanahan, Infrastruktur, Transportasi dan Pariwisata Jepang - Biro Penerbangan Sipil (MLIT JCAB / 国土交通省航空局)  
-**Badan Pelaksana Uji:** Asosiasi Teknologi Penerbangan Jepang (JAEA / 公益社団法人日本航空技術協会)  
+**Kementerian Pembina:** Biro Penerbangan Sipil Jepang (JCAB) & Kementerian Pertanahan, Infrastruktur, Transportasi dan Pariwisata (MLIT / 国土交通省航空局)  
+**Badan Pelaksana Uji:** Asosiasi Teknisi Penerbangan Jepang (JAEA / 公益社団法人 日本航空技術協会) & Prometric  
 **Dasar Kurasi Primer:**
-- `reference-books/ssw/10_koukuu_aviation/Aviation_Ground_Handling_Safety_Textbook_JA.pdf` (Pedoman K3 Ramp Apron JAEA)
-- `reference-books/ssw/10_koukuu_aviation/Aviation_Ground_Handling_Operations_Textbook_JA.pdf` (Operasional GSE & Marshalling JAEA)
-- `reference-books/ssw/10_koukuu_aviation/Aviation_Maintenance_Basic_Skills_Textbook_EN_JA.pdf` & `Safety_Textbook_EN_JA.pdf` (Keterampilan Dasar Perawatan Pesawat JAEA)
-- `reference-books/ssw/10_koukuu_aviation/Aviation_Ground_Handling_Sample_Exam_JA.pdf` & `Maintenance_Sample_Exam_JA.pdf` (Bank Soal Ujian Resmi)
+- `reference-books/ssw/10_koukuu_aviation/Aviation_Ground_Handling_Safety_Textbook_JA.pdf` (26 halaman) & `reference-books/ssw/10_koukuu_aviation/Aviation_Ground_Handling_Operations_Textbook_JA.pdf` (52 halaman)
+- `reference-books/ssw/10_koukuu_aviation/Aviation_Maintenance_Basic_Skills_Textbook_EN_JA.pdf` & `reference-books/ssw/10_koukuu_aviation/Aviation_Maintenance_Safety_Textbook_EN_JA.pdf`
+- `reference-books/ssw/10_koukuu_aviation/Aviation_Ground_Handling_Sample_Exam_JA.pdf` & `reference-books/ssw/10_koukuu_aviation/Aviation_Maintenance_Sample_Exam_JA.pdf`
 **Landasan Teoretis & Empiris:**
 - Needs Analysis & Technical Lexicon (Nation & Hwang 1995 [VS-09]; Chung & Nation 2003 [VS-10])
-- Cross-Cultural Communication on Airport Ramps & HOU-REN-SO (Mustaqim & Priventa 2026 [VS-31]; Supriatnaningsih et al. 2024 [VS-33])
-- High-Decibel Jet Engine Acoustic Precision & Aviation Phraseology (Husna & Febriyanti 2022 [EA-25])
-- Airport Apron Ground Safety Standards & Shiteki Koshou (JCAB 2023; JAEA 2024 [VS-43])
+- Cross-Cultural Communication in Ramp Operations & HOU-REN-SO (Mustaqim & Priventa 2026 [VS-31]; Supriatnaningsih et al. 2024 [VS-33])
+- Geminate Acoustic Precision in High-Noise Jet Apron Environments (Husna & Febriyanti 2022 [EA-25])
+- Industrial Ramp Safety Standards & Point-and-Call Protocols (JNIOSH 2020 [VS-39]; JAGHA / JAEA & MLIT 2024 [VS-51])
 
 ---
 
-## 1. SPESIFIKASI UJIAN RESMI JAEA CBT & PRAKTIK
+## 1. SPESIFIKASI UJIAN RESMI PROMETRIC CBT (STANDAR JAEA / MLIT JCAB)
 
-Kandidat visa *Tokutei Ginou 1-gō* bidang Penerbangan menempuh ujian kejuruan JAEA yang terbagi dalam dua jalur spesialisasi:
+Kandidat visa *Tokutei Ginou 1-gō* bidang Penerbangan menempuh ujian Computer-Based Testing (CBT) dengan spesifikasi regulasi resmi:
 
 ```
 ┌────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                        JAEA AVIATION INDUSTRY EXAM MATRIX (GROUND & MAINTENANCE)                       │
+│                              PROMETRIC CBT AVIATION INDUSTRY EXAM MATRIX                               │
 ├─────────────────────────┬────────────────────────────────────────┬─────────────┬───────────┬───────────┤
-│ Komponen Ujian          │ Cakupan Ranah Pengujian                │ Jumlah Soal │ Durasi    │ Ambang    │
+│ Jalur Pengujian         │ Cakupan Ranah Pengujian                │ Jumlah Soal │ Durasi    │ Ambang    │
 ├─────────────────────────┼────────────────────────────────────────┼─────────────┼───────────┼───────────┤
-│ 1. Ujian Teori          │ K3 Apron Ramp, zona bahaya jet intake/ │ 30 Soal     │ 60 Menit  │ $\ge 60\%$│
-│    (学科試験 - Gakka)   │ blast, rambu marka bandara, regulasi   │ (Pilihan    │           │ (18 / 30) │
-│                         │ GSE, FOD control, meteorologi, berat   │  Ganda CBT) │           │           │
-│                         │ & keseimbangan muatan kargo ULD        │             │           │           │
+│ 1. Airport Ground       │ Keselamatan sisi udara apron/ramp,     │ 40 Soal     │ 60 Menit  │ $\ge 65\%$│
+│    Handling CBT         │ operasi peralatan darat GSE, penanganan│ (Pilihan    │           │ (26 / 40) │
+│                         │ kargo kontainer ULD, pencegahan FOD,   │  Ganda CBT) │           │           │
+│                         │ dan sinyal pemanduan pesawat           │             │           │           │
 ├─────────────────────────┼────────────────────────────────────────┼─────────────┼───────────┼───────────┤
-│ 2. Ujian Praktik /      │ Jalur Ground Handling: Simulasi gerak  │ Simulasi    │ 20-30     │ $\ge 60\%$│
-│    Simulasi Layar       │ sinyal pemanduan (Marshalling) & GSE;  │ Layar CBT   │ Menit     │ (Evaluasi │
-│    (実技試験 - Jitsugi) │ Jalur Maintenance: Pemasangan kawat    │ atau Tugas  │           │  Rubrik)  │
-│                         │ pengaman baut (safety wire lock) &     │ Praktik     │           │           │
-│                         │ pembacaan kunci torsi penerbangan      │ Fisik       │           │           │
+│ 2. Aircraft Maintenance │ Keterampilan mekanik dasar pesawat,    │ 40 Soal     │ 60 Menit  │ $\ge 65\%$│
+│    CBT                  │ safety wire kawat pengaman, torsi baut,│ (Pilihan    │           │ (26 / 40) │
+│                         │ sistem hidrolik, dan K3 hanggar        │  Ganda CBT) │           │           │
 └─────────────────────────┴────────────────────────────────────────┴─────────────┴───────────┴───────────┘
 ```
 
+> **Catatan Bahasa Ujian:** Teks soal disajikan dalam **Bahasa Jepang berfurigana**, dengan glosarium istilah operasional standar ICAO/IATA dalam Bahasa Inggris (misal: FOD, Marshalling, Towing Tractor, Chocks).
+
 ---
 
-## 2. JALUR OPERASIONAL SUB-BIDANG PENERBANGAN (2 DUAL-TRACKS JAEA)
+## 2. DUA KATEGORI SPESIALISASI PENERBANGAN JEPANG
 
-Sektor Penerbangan mengoperasikan dua jalur profesi berintegritas tinggi:
-1. **Jalur Penanganan Darat Bandara (空港グランドハンドリング - Ground Handling):**
-   - Pemanduan manuver parkir pesawat di apron (*Marshalling* dengan tongkat marshaller menyala).
-   - Pengoperasian peralatan pendukung darat (GSE / *Ground Support Equipment*): Towing tractor kargo, belt loader, high-lift loader, ground power unit (GPU).
-   - Bongkar muat kontainer kargo dan palet Unit Load Device (ULD / LD3 / AKE).
-   - Prosedur tolak mundur pesawat (*pushback*) dan pelepasan pin roda depan (*steering bypass pin*).
-   - Pengawasan dan pembersihan serpihan benda asing di apron (FOD / *Foreign Object Debris*).
-2. **Jalur Perawatan & Pemeliharaan Pesawat (航空機整備 - Aircraft Maintenance):**
-   - Pemeliharaan harian (*Line Maintenance*) dan transit check di gerbang bandara.
-   - Pemasangan kawat pengunci pengaman baut (*safety wire locking*) standar militer MS/NAS.
-   - Penyetelan kekencangan baut struktural menggunakan kunci torsi (*torque wrench*) bersertifikat kalibrasi.
-   - Pemasangan dan pencabutan penutup sensor pitot-static tube dan bendera keselamatan (*Remove Before Flight*).
+1. **Penanganan Operasi Darat Bandara (空港グランドハンドリング - Ground Handling):**
+   - Marshalling pemanduan parkir pesawat, pemasangan ganjal roda (*chocks*), penarikan pesawat mundur (*pushback*), bongkar muat bagasi conveyer belt loader, pengangkutan kontainer kargo Unit Load Device (ULD).
+2. **Pemeliharaan & Rekayasa Rangka Pesawat (航空機整備 - Aircraft Maintenance):**
+   - Pemeriksaan harian transit (*transit check*), pelumasan bantalan flight control, pengikatan kawat puntir pengaman (*safety wire / lockwire*), pemasangan pin belah (*cotter pin*), penggantian roda pendarat (*landing gear brake assembly*).
 
 ---
 
 ## 3. MODUL PEMBELAJARAN KURIKULUM (PEDAGOGICAL MODULES)
 
-### MODUL 1: K3 APRON BANDARA & ZONA BAHAYA PESAWAT (RAMP SAFETY)
-- **Topik 1.1: Zona Bahaya Mesin Jet (Danger Areas):**
-  - Zona hisap mesin turbin (*Engine Intake Ingestion Zone*): Radius bahaya 5–7 meter di depan saluran masuk mesin saat idle, dan hingga 10 meter saat daya breakaway. Risiko fatal tersedot ke bilah kipas titanium.
-  - Zona semburan gas panas mesin jet (*Jet Blast Hazard Zone*): Semburan gas berkecepatan ratusan km/jam dengan suhu ratusan derajat hingga 50 meter ke belakang. Bahaya kendaraan GSE terguling dan personel terlempar.
-  - Zona putaran baling-baling turboprop (*Propeller Arc Zone*): Larangan keras mendekati bidang putaran baling-baling.
-- **Topik 1.2: Pengendalian Serpihan Benda Asing (FOD / Foreign Object Debris):**
-  - Prosedur ramp sweep berjalan berbaris mencari kerikil, baut, kawat, plastik, atau kertas.
-  - Satu baut kecil yang terhisap ke mesin jet dapat menghancurkan turbin senilai miliaran rupiah dan memicu kegagalan mesin saat lepas landas.
+### MODUL 1: KESELAMATAN SISI UDARA & ZONA BAHAYA APRON (エプロン安全管理)
+- **Topik 1.1: Regulasi Kendaraan GSE & Batas Kecepatan Sisi Udara:**
+  - **Topik 1.1.1: Zona Pergerakan Pesawat & Batas Kecepatan:** Jalur jalan darat ramp (maksimal 30 km/jam), area sekitar badan pesawat (maksimal 15 km/jam), dan larangan mendahului pesawat yang sedang taxying.
+  - **Topik 1.1.2: Jalur Evakuasi Peralatan Darat (ERA - Equipment Restraint Area):** Penempatan traktor penarik dan dollies hanya di dalam garis batas putih; larangan meninggalkan GSE di dalam zona aman pesawat (*Aircraft Safety Zone*).
+- **Topik 1.2: Zona Bahaya Maut Mesin Jet (ジェットエンジン危険区域):**
+  - **Topik 1.2.1: Bahaya Tersedot Turbin Mesin Jet (吸い込み危険域 - Ingestion Zone):** Radius steril hisap udara turbin jet (minimal 7.5 meter di depan intake saat idle, 10 meter saat breakaway power); bahaya fatal tersedot tubuh masuk ke dalam sudu turbin.
+  - **Topik 1.2.2: Bahaya Semburan Panas Gas Buang (ブラスト危険域 - Jet Blast):** Radius bahaya semburan angin gas buang mesin jet berkecapatan ratusan km/jam dan bersuhu ratusan derajat Celcius di belakang ekor pesawat.
 
 ---
 
-### MODUL 2: OPERASIONAL GROUND SUPPORT EQUIPMENT & CARGO LOADING
-- **Topik 2.1: Pergerakan Kendaraan di Daerah Sisi Udara (Airside Traffic):**
-  - Batas kecepatan kendaraan di apron (umumnya maks 15–30 km/jam, dan maks 5 km/jam di dekat badan pesawat).
-  - Prioritas pergerakan: Pesawat terbang bergerak $\rightarrow$ Pesawat sedang ditarik $\rightarrow$ Kendaraan darurat $\rightarrow$ Kendaraan GSE biasa.
-- **Topik 2.2: Pemuatan Kargo ULD & Penguncian Rel:**
-  - Penguncian kait penahan kontainer (*container locks / latches*) pada lantai kargo pesawat (*cargo bay*).
-  - Pengecekan posisi kunci tegak (*raised*) dan terkunci (*engaged*).
+### MODUL 2: OPERASI GROUND SUPPORT EQUIPMENT (GSE) & KARGO (GSE車両と貨物)
+- **Topik 2.1: Pengoperasian Traktor Penarik & Conveyor Belt Loader:**
+  - **Topik 2.1.1: Pemanduan Mundur Traktor Pushback Pesawat:** Prosedur komunikasi interfon headset dengan kokpit pilot (*Flight Interphone*), konfirmasi pin steering bypass, dan pelepasan chocks.
+  - **Topik 2.1.2: Pendekatan Mobil Conveyor Belt ke Pintu Kargo:** Berhenti sejenak (*ichi-ji teishi*) pada jarak 1 meter dari pintu kargo pesawat sebelum merapatkan bumper karet secara presisi.
+- **Topik 2.2: Penanganan Kontainer Kargo ULD & Barang Berbahaya:**
+  - **Topik 2.2.1: Penguncian Kargo Palet & Kontainer (ULD Locks):** Pengecekan kait pengunci rel lantai kargo (*pallet locks / container stoppers*) demi mencegah muatan bergeser (*nikuzure*) saat lepas landas.
+  - **Topik 2.2.2: Identifikasi Label Regulasi Barang Berbahaya (Dangerous Goods):** Prosedur segregasi baterai lithium-ion, gas bertekanan, dan bahan peledak sesuai regulasi DGR IATA.
 
 ---
 
-### MODUL 3: TEKNIK DASAR PERAWATAN PESAWAT (AIRCRAFT MAINTENANCE SKILLS)
-- **Topik 3.1: Pemasangan Safety Wire (セーフティワイヤ・ロックワイヤ):**
-  - Kawat baja tahan karat (stainless steel wire) diameter 0.032 inci (0.8 mm) atau 0.020 inci.
-  - Arah tarikan kawat harus selalu memutar baut ke arah pengencangan (*tightening direction / tightening pull*).
-  - Pilinan kawat menggunakan tang kawat putar (*wire twister pliers*) dengan kerapatan 6 hingga 8 pilinan per inci (*twists per inch*).
-  - Pemotongan ujung kawat dengan sisa 3–6 pilinan dan ditekuk ke dalam (*pig-tail*) agar tidak melukai tangan mekanik.
-- **Topik 3.2: Penyetelan Torsi Pengencangan (Torquing Procedures):**
-  - Nilai torsi spesifik dalam satuan Pound-inci (in-lb), Pound-kaki (ft-lb), atau Newton-meter (N·m).
-  - Gerakan pengencangan perlahan dan stabil hingga bunyi klik terdengar; tidak boleh menghentak.
+### MODUL 3: TEKNIK MEKANIK PESAWAT & SAFETY WIRING (整備基本技術)
+- **Topik 3.1: Pemasangan Kawat Pengaman Baut (セーフティワイヤー - Lockwire):**
+  - **Topik 3.1.1: Prosedur Puntiran Ganda Kawat Stainless Steel:** Penggunaan tang pemuntir kawat (*wire twister*), standar puntiran 6–8 pilinan per inci, arah tarikan kawat wajib mengencangkan kepala baut (*positive wiring*).
+  - **Topik 3.1.2: Pemotongan & Pembengkokan Ujung Kawat (*Pigtail*):** Pemotongan sisa pilinan sepanjang 1/4–1/2 inci dan menekuk ujungnya ke arah dalam guna mencegah luka sayat mekanik.
+- **Topik 3.2: Pemasangan Cotter Pin & Pengencangan Torsi Presisi:**
+  - **Topik 3.2.1: Pengencangan Mur Bermahkota (キャッスルナット - Castle Nut):** Penyelarasan lubang baut dengan celah mur tanpa melampaui batas torsi maksimal yang diizinkan manual perawatan pesawat.
+  - **Topik 3.2.2: Prosedur Pembengkokan Kaki Cotter Pin:** Kaki atas ditekuk melipat di atas ujung baut, kaki bawah ditekuk merapat ke permukaan mur kastel.
 
 ---
 
-### MODUL 4: KOMUNIKASI RAMP DI AREA KEBISINGAN TINGGI (> 100 dB)
-- **Topik 4.1: Isyarat Visual Pemanduan Tangan (Marshalling Signals):**
-  - Sinyal standar ICAO/JCAB: Maju lurus (*straight ahead*), belok kiri (*turn left*), belok kanan (*turn right*), pengereman darurat kedua tangan menyilang di atas kepala (*emergency stop*), pasang ganjal roda (*chocks inserted*).
-- **Topik 4.2: Komunikasi Intercom Headset Kokpit:**
-  - Protokol suara antara mekanik darat (*headset man*) dan kapten pilot di kokpit sebelum pushback:
-    *「Kokpit, Ground. Ganjal roda telah dicabut, bypass pin terpasang, area belakang bersih, izin pushback siap?」*
-- **Topik 4.3: HOU-REN-SO Saat Insiden Penabrakkan GSE / Kerusakan Badan Pesawat:**
-  - *「隊長、トーイングトラクターがコンテナに接触し、貨物ドア付近にスクラッチ（傷）が発生しました！直ちに機体確認と運航管理者への連絡をお願いします！」*
+### MODUL 4: PENCEGAHAN FOD & MANAJEMEN RISIKO PENERBANGAN (FOD防止と安全)
+- **Topik 4.1: Pencegahan Kerusakan Benda Asing (外国物質損傷 - FOD):**
+  - **Topik 4.1.1: Kampanye Pembersihan Ramp FOD Walk:** Inspeksi berjalan berbaris membersihkan baut lepas, kawat potongan, batu kerikil, dan serpihan plastik di sepanjang landas pacu dan taxiway.
+  - **Topik 4.1.2: Manajemen Kantong & Perkakas Tool Control Hanggar:** Kewajiban pengosongan saku pakaian kerja dari benda lepas dan perhitungan jumlah perkakas di shadow board sebelum pesawat dirilis (*tool sign-off*).
+- **Topik 4.2: Pemasangan Pelindung Sensor & Pin Pengunci:**
+  - **Topik 4.2.1: Spanduk Peringatan "Remove Before Flight":** Pemasangan penutup tabung pitot (*pitot tube covers*), pin pengunci landing gear ground lock pin, dan verifikasi pelepasan sebelum penerbangan.
+- **Topik 4.3: HOU-REN-SO Saat Benturan Kendaraan GSE ke Bodi Pesawat:**
+  - **Topik 4.3.1: Pelaporan Benturan Fisik Bodi Pesawat (Aircraft Strike):** Sekalipun hanya goresan cat mikro, wajib lapor seketika ke manajer ramp dan teknisi penerbangan; menyembunyikan benturan dapat menyebabkan dekompresi meledak di udara!
 
 ---
 
@@ -108,52 +96,74 @@ Sektor Penerbangan mengoperasikan dua jalur profesi berintegritas tinggi:
 
 | No | Kanji | Kana | Romaji | Indonesian Gloss | High-Stakes Risk Category |
 |---|---|---|---|---|---|
-| 1 | ジェットエンジン吸い込み | じぇっとえんじんすいこみ | *jetto enjin suikomi* | Terhisap ke dalam saluran masuk mesin jet | Instant Fatal Ingestion |
-| 2 | ジェットブラスト | じぇっとぶらすと | *jetto burasuto* | Semburan angin panas berkecepatan tinggi mesin jet | Severe Blast Impact / Burn |
-| 3 | 外国物質損傷（FOD）| がいこくぶっしつそんしょう| *gaikoku busshitsu sonshou*| Benda asing serpihan perusak mesin pesawat | Catastrophic In-Flight Engine Loss |
-| 4 | マーシャリング | まーしゃりんぐ | *maasharingu* | Pemanduan manuver pesawat dengan tongkat sinyal | Ground Aircraft Collision |
-| 5 | 輪止め（チョーク）| わどめ（ちょーく） | *wadome / chooku* | Balok ganjal roda pendarat penahan gerak pesawat | Aircraft Runaway Hazard |
-| 6 | プッシュバック | ぷっしゅばっく | *pusshubakku* | Pendorongan pesawat mundur dari garbarata | Heavy Vehicle Crush |
-| 7 | バイパスピン | ばいぱすぴん | *baipasu pin* | Pin bypass kemudi roda depan saat proses towing | Steering Gear Rupture |
-| 8 | セーフティワイヤ | せーふてぃわいや | *seefuti waiya* | Kawat baja pengunci pencegah baut kendur bergetar| Critical Hardware Detachment |
-| 9 | 規定トルク | きていとるく | *kitei toruku* | Nilai torsi pengencangan baut sesuai manual AMM | Structural Fastener Failure |
-| 10 | 誘導路一時停止線 | ゆうどうろいちじていしせん| *yuudouro ichiji teishisen*| Garis batas berhenti sebelum memasuki landasan pacu | Runway Incursion (Fatal Collision) |
-| 11 | イヤーマフ（防音具）| いやーまふ | *iyaamafu* | Pelindung penutup telinga dari deru jet > 100 dB | Permanent Hearing Loss |
-| 12 | 航空機受託手荷物 | こうくうきじゅたくてにもつ| *koukuuki jutaku tenimotsu*| Bagasi kargo penumpang yang dimuat ke lambung | Cargo Door Mislock / Jam |
-| 13 | 駐機場（エプロン）| ちゅうきじょう（えぷろん）| *chuukijou / epuron* | Pelataran parkir pesawat terbang aktif | Multi-Vehicle High Hazard Area |
-| 14 | ピトー管カバー | ぴとーかんかばー | *pitookan kabaa* | Penutup tabung sensor tekanan udara pitot | False Airspeed Flight Emergency |
-| 15 | 非常停止（クロスハンド）| ひじょうていし | *hijou teishi* | Sinyal silang tangan di atas kepala rem darurat | Immediate Emergency Collision Stop |
+| 1 | 外国物質損傷（FOD）| がいこくぶっしつそんしょう | *gaikoku busshitsu sons кра (FOD)* | Kerusakan mesin pesawat akibat serpihan benda asing | Fatal In-Flight Engine Failure |
+| 2 | ジェットエンジン吸い込み | じぇっとえんじんすいこみ | *jetto enjin suikomi* | Bahaya maut tersedot pusaran udara mesin jet | Instant Dismemberment Fatality |
+| 3 | セーフティワイヤー | せーふてぃわいやー | *seefutii waiyaa* | Kawat pengaman puntir baut anti-longgar pesawat | Fastener Back-out Disaster |
+| 4 | チョーク（輪止め） | ちょーく（わどめ） | *chooku (wadome)* | Balok ganjal roda pendarat pesawat terbang | Uncontrolled Aircraft Rollaway |
+| 5 | トーイングトラクター | とーいんぐとらくたー | *tooingu torakutaa* | Kendaraan traktor penarik gerobak kargo bagasi | Ramp Collision & Overturn |
+| 6 | プッシュバック | ぷっしゅばっく | *pusshubakku* | Prosedur mendorong mundur pesawat dari garbarata | Collision with Ground Crew/GSE |
+| 7 | マーシャリング | まーしゃりんぐ | *maasharingu* | Pemanduan parkir pesawat dengan tongkat sinyal | Wingtip Strike Hazard |
+| 8 | ロックピン | ろっくぴん | *rokku pin* | Pin pengunci sistem kemudi roda pendarat depan | Steering Bypass Inadvertence |
+| 9 | 危険物（DG） | きけんぶつ | *kikenbutsu (DG)* | Barang muatan kargo berbahaya berlabel IATA | In-Flight Fire & Explosion |
+| 10 | 誘導路（タクシーウェイ）| ゆうどうろ | *yuudouro (takushiiwei)* | Jalur pergerakan pesawat dari apron ke landasan | Runway Incursion Inadvertence |
+| 11 | 非常停止ボタン | ひじょうていしぼたん | *hijou teishi botan* | Tombol pemutus darurat sistem konveyor kargo | Immediate Emergency Halt |
+| 12 | ジェットブラスト | じぇっとぶらすと | *jetto burasuto* | Semburan angin gas buang panas ekor mesin jet | Personnel/GSE Blown Away |
+| 13 | ピトー管カバー | ぴとーかんかばー | *pitookan kabaa* | Sarung penutup tabung sensor kecepatan udara | Unreliable Airspeed Disaster |
+| 14 | ベルトローダー | べるとろーだー | *beruto roodaa* | Kendaraan ban berjalan pemuat bagasi ke lambung | Aircraft Hull Impact Dent |
+| 15 | キャッスルナット | きゃっするなっと | *kyassuru natto* | Mur kastel berlubang slot pin pengunci mekanik | Loss of Flight Control Linkage |
+| 16 | コッターピン | こったーぴん | *kottaa pin* | Pin belah pengaman anti-lepas mur kastel | Mechanical Fastener Disengagement |
+| 17 | 航空貨物コンテナ（ULD）| こうくうかもつこんてな | *koukuu kamotsu kontena (ULD)* | Kontainer kargo standar bentuk bodi pesawat | Unlatched In-Flight Cargo Shift |
+| 18 | イヤーマフ（防音具）| いやーまふ | *iyaamafu* | Pelindung telinga peredam kebisingan mesin jet | Severe Noise-Induced Hearing Loss |
+| 19 | 航空機接触事故 | こうくうきせっしょくじこ | *koukuuki sesshoku jiko* | Insiden tabrakan kendaraan GSE dengan bodi pesawat | Unreported Structural Breach |
+| 20 | 一時停止線 | いちじていしせん | *ichiji teishisen* | Garis batas putih wajib berhenti sebelum area pesawat | Runway/Apron Unauthorized Intrusion |
+| 21 | ステム（着陸装置） | すてむ（ちゃくりくそうち） | *sutemu (chakuriku souchi)* | Unit kaki roda pendarat pesawat (*landing gear*) | Gear Collapse on Ground |
+| 22 | 油圧作動油（スカイドロール）| ゆあつさどうゆ | *yuatsu sadouyu (sukaido rooru)*| Cairan hidrolik pesawat tahan api ester fosfat | Severe Chemical Burn to Eyes |
+| 23 | トルクレンチ校正 | とるくれんちこうせい | *toruku renchi kousei* | Kalibrasi presisi kunci torsi baut struktural | Over/Under Torquing Disaster |
+| 24 | フライトインターホン | ふらいといんたーほん | *furaito intaahon* | Sambungan komunikasi kabel darat teknisi ke kokpit | Loss of Ramp-Cockpit Comm |
+| 25 | デアイシング（防除氷）| であいしんぐ | *de aishingu* | Penyemprotan cairan penghilang lapisan es pesawat | In-Flight Stall Aerodynamic Loss |
+| 26 | タグ（手荷物札） | たぐ（てにもつふだ） | *tagu (tenimotsufuda)* | Label barcode pengenal rute bagasi penumpang | Mishandled Passenger Baggage |
+| 27 | ハイリフトローダー | はいりふとろーだー | *hai rifuto roodaa* | Mobil lift hidrolik pengangkat kontainer ULD | High-Altitude Platform Fall |
+| 28 | パレットロック | ぱれっとろっく | *paretto rokku* | Klem pengunci palet kargo pada lantai kompartemen | Cargo Shifting Disaster |
+| 29 | 工具管理棚 | こうぐかんりだな | *kougu kanridana* | Papan shadow board verifikasi keberadaan perkakas | Tool Left in Engine (FOD) |
+| 30 | センサ保護カバー | せんさほごかばー | *sensa hogo kabaa* | Penutup pelindung probe sensor sudut serang (AoA) | Erroneous Autopilot Response |
+| 31 | 給油作業安全 | きゅうゆさぎょうあんぜん | *kyuuyu sagyou anzen* | Protokol pentanahan grounding selang bahan bakar jet | Static Fuel Vapor Ignition Fire |
+| 32 | リフレクターベスト | りふれくたーべすと | *rifurektaa besuto* | Rompi scotlite visibilitas tinggi wajib sisi udara | Ramp Ground Worker Run-Over |
+| 33 | 制限区域立入証 | せいげんくいきたちいりしょう| *seigen kuiki tachiirishou* | Kartu ID pas izin masuk steril bandara | Airport Security Breach Penalty |
+| 34 | ノーズギアステアリングピン | のーずぎあすてありんぐぴん | *noozu gia sutearingu pin* | Pin pelepas sistem kemudi roda depan saat pushback | Nosewheel Mechanism Shearing |
+| 35 | パッセンジャーステップ | ぱっせんじゃーすてっぷ | *passenjaa suteppu* | Tangga bergerak jalan naik-turun penumpang pesawat | Passenger Fall from Height |
+| 36 | ５Ｓエプロン清掃 | ごえすえぷろんせいそう | *goesuepuron seisou* | Pembersihan tumpahan oli dan baut di pelataran apron | Complete Aviation Safety Culture |
 
 ---
 
 ## 5. DIRECTIVES K3 DARURAT & FORMULA YUBISASHI KOSHO
 
-### Teriakan Darurat Spontan di Apron Bandara (> 100 dB):
-- *「止まれ！機体が動いている！近寄るな！」* (*Tomare! Kitai ga ugoite iru! Chikayoru na!* — Berhenti! Pesawat sedang bergerak! Jangan mendekat!)
-- *「吸い込み危険！インテークから離れろ！」* (*Suikomi kiken! Inteeku kara hanarero!* — Bahaya terhisap! Menjauh dari intake!)
-- *「エマージェンシーストップ！両手をクロス！」* (*Emaajenshii sutoppu! Ryoute wo kurosu!* — Emergency Stop! Silangkan kedua tangan!)
+### Teriakan Darurat Spontan di Tempat Kerja:
+- *「止まれ！エンジン吸い込み危険域に入るな！」* (*Tomare! Enjin suikomi kiken'iki ni hairu na!* — Berhenti! Jangan masuk zona hisap mesin!)
+- *「GSE停止！機体に接触するぞ！」* (*Jii-esu-ii teishi! Kitai ni sesshoku suru zo!* — Hentikan GSE! Kau bisa menabrak bodi pesawat!)
+- *「FOD発見！エンジン始動前に回収しろ！」* (*Efu-oo-dii hakken! Enjin shidoumae ni kaishuu shiro!* — Temuan FOD! Ambil sebelum mesin dinyalakan!)
 
 ### Formula Point-and-Call (指差し呼称):
-1. **Pengecekan Pemasangan Ganjal Roda Pesawat:** *「前脚輪止め（チョーク）装着、前後密着ヨシ！」*
-2. **Pengecekan Pencabutan Bypass Pin Sebelum Lepas Landas:** *「ステアリング・バイパスピン抜き取り確認、フラグ確認ヨシ！」*
-3. **Pengecekan Penguncian Kargo ULD:** *「コンテナラッチロック、爪起立確認、固定ヨシ！」*
-4. **Pengecekan Arah Tarikan Safety Wire:** *「セーフティワイヤ、締め付け方向確認、引っ張りヨシ！」*
+1. **Pengecekan Ganjal Roda Pesawat:** *「ノーズギアチョーク、挟み込み装着、ヨシ！」*
+2. **Pengecekan Pin Kemudi Pushback:** *「ステアリングバイパスピン、挿入確認、ヨシ！」*
+3. **Pengecekan Kebersihan Ramp FOD:** *「エプロン路面、FODなし、クリア、ヨシ！」*
+4. **Pengecekan Kawat Pengaman Baut:** *「セーフティワイヤー、確実な締め方向、ヨシ！」*
 
 ---
 
 ## 6. BANK SOAL UJIAN CBT JAEA RESMI
 
-### Contoh Soal Ujian Teori (学科試験 - Pilihan Ganda):
-> **Soal 1:** 航空機がエプロンに駐機中、ジェットエンジンが停止した直後の危険区域に関する記述として、**最も適切なもの**を次の中から選びなさい。  
-> A. エンジンが停止していれば、回転翼（ファンブレード）や排気口は直ちに冷却されるため、触れても火傷の危険はない。  
-> B. エンジン停止直後であっても、エンジン排気口付近は極めて高温であり、またエンジン停止手順が完全に完了するまでは吸入口付近への接近も禁止されている。  
-> C. 衝突防止灯（アンチコリジョンライト）が点滅していても、エンジンが静かであれば近づいて作業を開始してよい。  
-> D. 輪止め（チョーク）が装着される前であっても、手荷物用ベルトローダーを機体に密着させてよい。  
-> **Kunci Jawaban:** **B** (Benar. Mesin jet menyimpan panas ekstrem ratusan derajat berjam-jam pasca mati, dan area mesin dilarang didekati sebelum kapten pilot mematikan beacon anti-collision lights).
+### Contoh Soal Ujian Teori Ground Handling (CBT 4 Pilihan):
+> **Soal 1:** 航空機エンジンの吸い込み危険区域（インジェスチョン・ゾーン）に関する記述として、最も適切なものを１つ選びなさい。  
+> １. アイドル回転中であっても、エンジン前面の規定距離内は強い吸引力が発生するため、絶対に立ち入ってはならない。  
+> ２. 航空機の翼端灯（ナビゲーションライト）が点灯している間は、エンジン前面に近づいても安全である。  
+> ３. 荷物運搬用のトーイングトラクターであれば、吸い込み区域を横断して走行してもよい。  
+> ４. エンジン停止直後であれば、ファンブレードに触れて温度を確認しなければならない。  
+> **Kunci Jawaban:** **1** (Intake mesin jet memiliki daya hisap luar biasa mematikan bahkan pada putaran idle; wajib steril dari personel dan kendaraan).
 
-> **Soal 2:** 航空機の整備作業において実施する「セーフティワイヤ（安全線）」の取り付け方法として、**適切でないもの**（間違い）を選びなさい。  
-> A. ワイヤを引っ張る方向は、ボルトが緩む方向ではなく、常に締まる方向になるように通す。  
-> B. ワイヤの撚り（より）数は、1インチあたり6〜8ピッチ程度が標準である。  
-> C. 余分なワイヤを切断した先端部は、作業者の怪我を防止するために内側に折り曲げる（ピグテール処理）。  
-> D. 一度使用して取り外したセーフティワイヤは、傷がなければ何度でも再利用してよい。  
-> **Kunci Jawaban:** **D** (Salah. Safety wire penerbangan dilarang keras digunakan kembali / reuse karena mengalami kelelahan logam pengerasan regangan dan dapat patah saat getaran penerbangan).
+### Contoh Soal Ujian Teori Aircraft Maintenance (CBT 4 Pilihan):
+> **Soal 1:** 航空機部品のセーフティワイヤー（ロックワイヤー）の施工方法として、正しいものを１つ選びなさい。  
+> １. ワイヤーを引っ張ったとき、ボルトが緩む方向に力がかかるように取り付ける。  
+> ２. ワイヤーを引っ張ったとき、ボルトが締まる方向（ポジティブ・ワイヤリング）に張力がかかるように取り付ける。  
+> ３. ワイヤーの撚りピッチ（ツイスト数）は、１インチあたり15回以上でなければならない。  
+> ４. 切断後のワイヤー先端部（ピグテール）は、作業者の怪我を防ぐために外側に向けて真っ直ぐ伸ばしておく。  
+> **Kunci Jawaban:** **2** (Kawat pengaman wajib dipasang sedemikian rupa sehingga tarikan kawat memberikan gaya pengencangan pada baut/positive wiring).
