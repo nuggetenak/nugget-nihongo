@@ -1,4 +1,5 @@
 import React from 'react';
+import { createPortal } from 'react-dom';
 import { X, Award, CheckCircle2, Lock } from 'lucide-react';
 import { useGamificationStore, BadgeItem } from '../../lib/gamification/gamificationStore';
 
@@ -14,14 +15,14 @@ export const BadgesModal: React.FC<BadgesModalProps> = ({ isOpen, onClose }) => 
 
   const earnedCount = badges.filter((b) => b.earned).length;
 
-  return (
+  const modalContent = (
     <div
       onClick={onClose}
-      className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-end sm:items-center justify-center p-0 sm:p-4 animate-in fade-in duration-200"
+      className="fixed inset-0 z-[9999] bg-black/80 backdrop-blur-sm flex items-end sm:items-center justify-center p-0 sm:p-4 animate-in fade-in duration-200"
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="w-full max-w-2xl bg-surface border-t-2 sm:border-2 border-accent/30 rounded-t-3xl sm:rounded-3xl p-5 sm:p-8 space-y-5 sm:space-y-6 shadow-2xl relative max-h-[88dvh] sm:max-h-[85vh] flex flex-col animate-in slide-in-from-bottom-6 sm:zoom-in-95 duration-200"
+        className="w-full max-w-2xl bg-surface border-t-2 sm:border-2 border-accent/30 rounded-t-3xl sm:rounded-3xl p-5 sm:p-8 space-y-5 sm:space-y-6 shadow-2xl relative max-h-[88dvh] sm:max-h-[85vh] flex flex-col animate-in slide-in-from-bottom-6 sm:zoom-in-95 duration-200 pb-[max(1.25rem,env(safe-area-inset-bottom))]"
       >
         <div className="w-12 h-1.5 rounded-full bg-accent/25 mx-auto -mt-1 mb-2 sm:hidden shrink-0" />
         {/* Header */}
@@ -89,4 +90,6 @@ export const BadgesModal: React.FC<BadgesModalProps> = ({ isOpen, onClose }) => 
       </div>
     </div>
   );
+
+  return createPortal(modalContent, document.body);
 };

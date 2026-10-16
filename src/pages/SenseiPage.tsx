@@ -70,6 +70,16 @@ const CORRECT_PROMPTS = [
   '先輩にメールで遅刻を伝える文章を作って添削してほしい。',
 ];
 
+function formatModelName(model?: string): string {
+  if (!model) return 'Auto-Router';
+  if (model.includes('qwen')) return 'Qwen 2.5 72B';
+  if (model.includes('llama')) return 'Llama 3.3 70B';
+  if (model.includes('deepseek')) return 'DeepSeek V3';
+  if (model.includes('gemini-3.8')) return 'Gemini 3.8 Flash';
+  if (model.includes('gemini')) return 'Gemini Flash';
+  return model.split('/').pop() || model;
+}
+
 export const SenseiPage: React.FC = () => {
   const { selectedLevel, setActiveTab, setSelectedLevel, showToast } = useAppStore();
 
@@ -103,15 +113,6 @@ export const SenseiPage: React.FC = () => {
           ? 'Punya kalimat bahasa Jepang buatanmu sendiri? Tulis di sini, biar kita cek partikel dan tingkat kealamiannya sama-sama.'
           : 'Tulis kalimat bahasa Jepang yang sudah kamu buat, nanti kita periksa bersama agar terdengar lebih alami dan tepat! ✍️';
 
-function formatModelName(model?: string): string {
-  if (!model) return 'Auto-Router';
-  if (model.includes('qwen')) return 'Qwen 2.5 72B';
-  if (model.includes('llama')) return 'Llama 3.3 70B';
-  if (model.includes('deepseek')) return 'DeepSeek V3';
-  if (model.includes('gemini-3.8')) return 'Gemini 3.8 Flash';
-  if (model.includes('gemini')) return 'Gemini Flash';
-  return model.split('/').pop() || model;
-}
 
       const activeKey = typeof window !== 'undefined' ? localStorage.getItem('nn_gemini_api_key') || '' : '';
       const isOR = activeKey.startsWith('sk-or-') || !activeKey;

@@ -7,6 +7,8 @@ import {
   RotateCcw,
   ChevronLeft,
   ChevronRight,
+  ChevronDown,
+  ChevronUp,
   PenTool,
   Eye,
   Eraser,
@@ -94,6 +96,8 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
   const [playbackSpeed, setPlaybackSpeed] = useState<number>(1); // 0.75, 1, 1.5
   const [showGuide, setShowGuide] = useState<boolean>(true);
   const [showNumbers, setShowNumbers] = useState<boolean>(true);
+  const [animEpoch, setAnimEpoch] = useState<number>(0);
+  const [showAllReadings, setShowAllReadings] = useState<boolean>(false);
 
   // Practice state
   const [practiceStep, setPracticeStep] = useState<number>(0);
@@ -179,43 +183,126 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
     );
   }, []);
 
-  // Classify vocabulary entries into Onyomi, Kunyomi, or Other
-  const categorizedVocabs = useMemo(() => {
-    if (!kanji) return { onyomi: [] as NormalizedVocab[], kunyomi: [] as NormalizedVocab[], other: [] as NormalizedVocab[] };
+  // Classify vocabulary entries by individual Onyomi and Kunyomi readings
+  const { readingGroups, otherVocabs } = useMemo(() => {
+    if (!kanji) return { readingGroups: [], otherVocabs: [] };
 
-    const onList = (kanji.readings?.onyomi || [])
-      .map((r) => katakanaToHiragana(r.replace(/[.-]/g, '').trim()))
-      .filter(Boolean);
+    const groups: Array<{
+      type: 'onyomi' | 'kunyomi';
+      rawReading: string;
+      displayReading: string;
+      cleanKana: string;
+      words: Array<{
+        word: string;
+        reading: string;
+        meaning: string;
+        examples?: Array<{ jp: string; id: string }>;
+      }>;
+    }> = [];
 
-    const kunList = (kanji.readings?.kunyomi || [])
-      .map((r) => r.replace(/[.-]/g, '').trim())
-      .filter(Boolean);
+    const usedWords = new Set<string>();
 
-    const onyomiWords: NormalizedVocab[] = [];
-    const kunyomiWords: NormalizedVocab[] = [];
-    const otherWords: NormalizedVocab[] = [];
+    // 1. Process Onyomi readings individually
+    (kanji.readings?.onyomi || []).forEach((on) => {
+      const cleanOn = on.replace(/[.-]/g, '').trim();
+      const hiraganaOn = katakanaToHiragana(cleanOn);
+      if (!cleanOn) return;
 
-    relatedVocabs.forEach((v) => {
-      const vReading = v.reading ? v.reading.trim() : '';
-      const matchesOn = onList.some((on) => vReading.includes(on));
-      const matchesKun = kunList.some((kun) => vReading.includes(kun));
+      const matchingWords: Array<{
+        word: string;
+        reading: string;
+        meaning: string;
+        examples?: Array<{ jp: string; id: string }>;
+      }> = [];
 
-      if (matchesOn && !matchesKun) {
-        onyomiWords.push(v);
-      } else if (matchesKun && !matchesOn) {
-        kunyomiWords.push(v);
-      } else if (matchesOn && matchesKun) {
-        if (v.word.length > 1 && !v.word.endsWith('る') && !v.word.endsWith('い') && !v.word.endsWith('う')) {
-          onyomiWords.push(v);
-        } else {
-          kunyomiWords.push(v);
+      relatedVocabs.forEach((v) => {
+        if (usedWords.has(v.word)) return;
+        const vRead = v.reading ? katakanaToHiragana(v.reading) : '';
+        if (vRead.includes(hiraganaOn) && v.word.includes(kanji.character)) {
+          usedWords.add(v.word);
+          matchingWords.push({
+            word: v.word,
+            reading: v.reading,
+            meaning: v.meaning,
+            examples: v.examples,
+          });
         }
-      } else {
-        otherWords.push(v);
-      }
+      });
+
+      (kanji.compounds || []).forEach((c) => {
+        if (usedWords.has(c.word)) return;
+        const cRead = c.reading ? katakanaToHiragana(c.reading) : '';
+        if (cRead.includes(hiraganaOn) && c.word.includes(kanji.character)) {
+          usedWords.add(c.word);
+          matchingWords.push({
+            word: c.word,
+            reading: c.reading,
+            meaning: c.meaning_id,
+          });
+        }
+      });
+
+      groups.push({
+        type: 'onyomi',
+        rawReading: on,
+        displayReading: on,
+        cleanKana: hiraganaOn,
+        words: matchingWords,
+      });
     });
 
-    return { onyomi: onyomiWords, kunyomi: kunyomiWords, other: otherWords };
+    // 2. Process Kunyomi readings individually
+    (kanji.readings?.kunyomi || []).forEach((kun) => {
+      const cleanKun = kun.replace(/[.-]/g, '').trim();
+      if (!cleanKun) return;
+
+      const matchingWords: Array<{
+        word: string;
+        reading: string;
+        meaning: string;
+        examples?: Array<{ jp: string; id: string }>;
+      }> = [];
+
+      relatedVocabs.forEach((v) => {
+        if (usedWords.has(v.word)) return;
+        const vRead = v.reading ? v.reading.trim() : '';
+        if (vRead.includes(cleanKun) && v.word.includes(kanji.character)) {
+          usedWords.add(v.word);
+          matchingWords.push({
+            word: v.word,
+            reading: v.reading,
+            meaning: v.meaning,
+            examples: v.examples,
+          });
+        }
+      });
+
+      (kanji.compounds || []).forEach((c) => {
+        if (usedWords.has(c.word)) return;
+        const cRead = c.reading ? c.reading.trim() : '';
+        if (cRead.includes(cleanKun) && c.word.includes(kanji.character)) {
+          usedWords.add(c.word);
+          matchingWords.push({
+            word: c.word,
+            reading: c.reading,
+            meaning: c.meaning_id,
+          });
+        }
+      });
+
+      groups.push({
+        type: 'kunyomi',
+        rawReading: kun,
+        displayReading: kun,
+        cleanKana: cleanKun,
+        words: matchingWords,
+      });
+    });
+
+    // Unassigned related vocabs
+    const other = relatedVocabs.filter((v) => !usedWords.has(v.word));
+
+    return { readingGroups: groups, otherVocabs: other };
   }, [kanji, relatedVocabs, katakanaToHiragana]);
 
   // Parse start coordinates from SVG paths for stroke numbers & guide points
@@ -283,38 +370,37 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
     const strokeDuration = Math.round(1100 / playbackSpeed);
     const stepDelay = strokeDuration + 200;
 
-    // If starting from 0, immediately trigger step 1
-    setCurrentStep((prev) => {
-      if (prev === 0) {
-        playBrushSfx();
-        return 1;
+    let timerId: ReturnType<typeof setTimeout> | null = null;
+
+    const stepForward = (current: number) => {
+      if (current >= total) {
+        // Last stroke reached! Wait for CSS animation to fully draw and settle before setting isPlaying to false
+        timerId = setTimeout(() => {
+          setIsPlaying(false);
+        }, strokeDuration + 300);
+        return;
       }
-      return prev;
+
+      timerId = setTimeout(() => {
+        playBrushSfx();
+        setCurrentStep((prev) => {
+          const next = prev + 1;
+          stepForward(next);
+          return next;
+        });
+      }, stepDelay);
+    };
+
+    // If starting from 0 or already completed
+    setCurrentStep((prev) => {
+      const startStep = prev <= 0 || prev >= total ? 1 : prev;
+      playBrushSfx();
+      stepForward(startStep);
+      return startStep;
     });
 
-    const intervalId = setInterval(() => {
-      setCurrentStep((prev) => {
-        if (prev >= total) {
-          clearInterval(intervalId);
-          setTimeout(() => {
-            setIsPlaying(false);
-          }, strokeDuration);
-          return prev;
-        }
-        playBrushSfx();
-        const next = prev + 1;
-        if (next >= total) {
-          clearInterval(intervalId);
-          setTimeout(() => {
-            setIsPlaying(false);
-          }, strokeDuration);
-        }
-        return next;
-      });
-    }, stepDelay);
-
     return () => {
-      clearInterval(intervalId);
+      if (timerId) clearTimeout(timerId);
     };
   }, [isPlaying, strokeData, playbackSpeed]);
 
@@ -658,20 +744,28 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
                     {strokeData.paths.slice(0, currentStep).map((d, idx) => {
                       const isLatest = idx === currentStep - 1 && isPlaying;
                       const pathLen = strokeLengths[idx] || 100;
+                      const safeLen = Math.max(15, Math.ceil(pathLen));
+                      const dash = safeLen + 30;
+                      const gap = safeLen * 5 + 500;
+
                       return (
                         <path
-                          key={`active-${idx}`}
+                          key={`stroke-${idx}-${isLatest ? `anim-${animEpoch}-${idx}` : 'solid'}`}
                           d={d}
                           fill="none"
                           stroke={isLatest ? '#F59E0B' : '#D97706'}
                           strokeWidth={isLatest ? '5.5' : '4.5'}
-                          strokeDasharray={`${pathLen} ${pathLen}`}
-                          strokeDashoffset={isLatest ? pathLen : 0}
+                          strokeDasharray={isLatest ? `${dash} ${gap}` : undefined}
+                          strokeDashoffset={isLatest ? dash : undefined}
                           className={isLatest ? 'animate-draw-dynamic-stroke' : ''}
-                          style={{
-                            '--stroke-len': `${pathLen}px`,
-                            '--stroke-dur': `${Math.round(1100 / playbackSpeed)}ms`,
-                          } as React.CSSProperties}
+                          style={
+                            isLatest
+                              ? ({
+                                  '--stroke-len': `${dash}px`,
+                                  '--stroke-dur': `${Math.round(1100 / playbackSpeed)}ms`,
+                                } as React.CSSProperties)
+                              : undefined
+                          }
                         />
                       );
                     })}
@@ -820,7 +914,8 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
                     if (isPlaying) {
                       setIsPlaying(false);
                     } else {
-                      if (currentStep >= totalStrokes) {
+                      setAnimEpoch((e) => e + 1);
+                      if (currentStep >= totalStrokes || currentStep <= 0) {
                         setCurrentStep(0);
                       }
                       setIsPlaying(true);
@@ -941,236 +1036,195 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
             </div>
           )}
 
-          {/* Readings: Onyomi & Kunyomi Integrated with Real Vocab & Sentences */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-            {/* Onyomi Card */}
-            <div className="p-3.5 rounded-2xl bg-surface-2/40 border border-theme flex flex-col justify-between">
-              <div>
-                <div className="flex items-center justify-between mb-1">
-                  <span className="text-[11px] font-bold text-appText-muted uppercase tracking-wider">
-                    Onyomi (音読み)
-                  </span>
-                  <button
-                    onClick={() => voiceManager.speakText(onyomiStr)}
-                    aria-label="Dengarkan Onyomi"
-                    className="p-1 rounded-md text-appText-muted hover:text-accent hover:bg-surface transition-colors active:scale-95"
-                    title="Dengarkan Cara Baca Onyomi"
-                  >
-                    <Volume2 size={15} />
-                  </button>
-                </div>
-                <p className="text-lg font-black font-japanese text-accent-hot break-words">
-                  {onyomiStr}
-                </p>
-              </div>
-
-              {/* Vocab Examples for Onyomi */}
-              <div className="mt-3 pt-2.5 border-t border-theme/60 space-y-2">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-appText-muted flex items-center gap-1">
-                  <BookOpen size={11} className="text-accent" />
-                  <span>Contoh Kata & Kalimat</span>
-                </span>
-
-                {loadingVocabs ? (
-                  <p className="text-[11px] text-appText-muted italic py-1">Memuat contoh...</p>
-                ) : categorizedVocabs.onyomi.length > 0 ? (
-                  <div className="space-y-2">
-                    {categorizedVocabs.onyomi.slice(0, 3).map((v) => (
-                      <div key={v.id || v.word} className="bg-surface/75 rounded-xl p-2.5 border border-theme/50 space-y-1.5 shadow-xs">
-                        <div className="flex items-center justify-between gap-1">
-                          <div className="flex items-baseline gap-1.5 min-w-0">
-                            <span className="text-sm font-bold font-japanese text-appText-bright">
-                              {v.word}
-                            </span>
-                            <span className="text-[11px] text-accent font-japanese truncate">
-                              【{v.reading}】
-                            </span>
-                          </div>
-                          <button
-                            onClick={() => voiceManager.speakText(v.word)}
-                            aria-label={`Dengarkan ${v.word}`}
-                            className="p-1 text-appText-muted hover:text-accent transition-colors active:scale-95 shrink-0"
-                            title="Dengarkan Kata"
-                          >
-                            <Volume2 size={13} />
-                          </button>
-                        </div>
-                        <p className="text-[11px] text-appText-muted line-clamp-1 font-medium">
-                          {v.meaning}
-                        </p>
-
-                        {v.examples && v.examples.length > 0 && (
-                          <div className="bg-surface-2/60 rounded-lg p-2 border border-theme/40 text-[10.5px] space-y-0.5 mt-1">
-                            <div className="flex items-start justify-between gap-1.5">
-                              <span className="font-japanese text-appText-bright leading-relaxed">
-                                {v.examples[0].jp}
-                              </span>
-                              <button
-                                onClick={() => voiceManager.speakText(v.examples[0].jp)}
-                                aria-label="Dengarkan contoh kalimat"
-                                className="p-0.5 text-appText-muted hover:text-accent shrink-0 transition-colors active:scale-95 mt-0.5"
-                                title="Dengarkan Kalimat"
-                              >
-                                <Volume2 size={12} />
-                              </button>
-                            </div>
-                            <p className="text-appText-muted/80 text-[10px]">
-                              {v.examples[0].id}
-                            </p>
-                          </div>
-                        )}
-                      </div>
-                    ))}
-                  </div>
-                ) : (
-                  <p className="text-[11px] text-appText-muted italic">
-                    Belum ada contoh kosakata khusus untuk bacaan ini.
-                  </p>
-                )}
-              </div>
-            </div>
-
-            {/* Kunyomi Card */}
-            <div className="p-3.5 rounded-2xl bg-surface-2/40 border border-theme flex flex-col justify-between">
-              <div>
-                <div className="flex items-center justify-between mb-1">
-                  <span className="text-[11px] font-bold text-appText-muted uppercase tracking-wider">
-                    Kunyomi (訓読み)
-                  </span>
-                  <button
-                    onClick={() => voiceManager.speakText(kunyomiStr)}
-                    aria-label="Dengarkan Kunyomi"
-                    className="p-1 rounded-md text-appText-muted hover:text-accent hover:bg-surface transition-colors active:scale-95"
-                    title="Dengarkan Cara Baca Kunyomi"
-                  >
-                    <Volume2 size={15} />
-                  </button>
-                </div>
-                <p className="text-lg font-black font-japanese text-accent-hot break-words">
-                  {kunyomiStr}
-                </p>
-              </div>
-
-              {/* Vocab Examples for Kunyomi */}
-              <div className="mt-3 pt-2.5 border-t border-theme/60 space-y-2">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-appText-muted flex items-center gap-1">
-                  <BookOpen size={11} className="text-accent" />
-                  <span>Contoh Kata & Kalimat</span>
-                </span>
-
-                {loadingVocabs ? (
-                  <p className="text-[11px] text-appText-muted italic py-1">Memuat contoh...</p>
-                ) : categorizedVocabs.kunyomi.length > 0 ? (
-                  <div className="space-y-2">
-                    {categorizedVocabs.kunyomi.slice(0, 3).map((v) => (
-                      <div key={v.id || v.word} className="bg-surface/75 rounded-xl p-2.5 border border-theme/50 space-y-1.5 shadow-xs">
-                        <div className="flex items-center justify-between gap-1">
-                          <div className="flex items-baseline gap-1.5 min-w-0">
-                            <span className="text-sm font-bold font-japanese text-appText-bright">
-                              {v.word}
-                            </span>
-                            <span className="text-[11px] text-accent font-japanese truncate">
-                              【{v.reading}】
-                            </span>
-                          </div>
-                          <button
-                            onClick={() => voiceManager.speakText(v.word)}
-                            aria-label={`Dengarkan ${v.word}`}
-                            className="p-1 text-appText-muted hover:text-accent transition-colors active:scale-95 shrink-0"
-                            title="Dengarkan Kata"
-                          >
-                            <Volume2 size={13} />
-                          </button>
-                        </div>
-                        <p className="text-[11px] text-appText-muted line-clamp-1 font-medium">
-                          {v.meaning}
-                        </p>
-
-                        {v.examples && v.examples.length > 0 && (
-                          <div className="bg-surface-2/60 rounded-lg p-2 border border-theme/40 text-[10.5px] space-y-0.5 mt-1">
-                            <div className="flex items-start justify-between gap-1.5">
-                              <span className="font-japanese text-appText-bright leading-relaxed">
-                                {v.examples[0].jp}
-                              </span>
-                              <button
-                                onClick={() => voiceManager.speakText(v.examples[0].jp)}
-                                aria-label="Dengarkan contoh kalimat"
-                                className="p-0.5 text-appText-muted hover:text-accent shrink-0 transition-colors active:scale-95 mt-0.5"
-                                title="Dengarkan Kalimat"
-                              >
-                                <Volume2 size={12} />
-                              </button>
-                            </div>
-                            <p className="text-appText-muted/80 text-[10px]">
-                              {v.examples[0].id}
-                            </p>
-                          </div>
-                        )}
-                      </div>
-                    ))}
-                  </div>
-                ) : (
-                  <p className="text-[11px] text-appText-muted italic">
-                    Belum ada contoh kosakata khusus untuk bacaan ini.
-                  </p>
-                )}
-              </div>
-            </div>
-          </div>
-
-          {/* Other Contextual Vocabs with Sentences if available */}
-          {categorizedVocabs.other.length > 0 && (
-            <div className="p-3.5 rounded-2xl bg-surface-2/30 border border-theme space-y-2">
-              <span className="text-[11px] font-bold text-appText-muted uppercase tracking-wider flex items-center gap-1.5">
-                <Sparkles size={13} className="text-amber-500" />
-                <span>Kosakata Terkait Lainnya ({categorizedVocabs.other.length})</span>
+          {/* Readings: Structured Breakdown by Individual Onyomi & Kunyomi Reading */}
+          <div className="space-y-3 pt-2">
+            <div className="flex items-center justify-between text-xs text-appText-muted">
+              <span className="font-bold uppercase tracking-wider text-[11px] text-appText-bright flex items-center gap-1.5">
+                <BookOpen size={13} className="text-accent" />
+                <span>Cara Baca & Contoh Kata per Bacaan ({readingGroups.length} Bacaan):</span>
               </span>
-              <div className="space-y-2">
-                {categorizedVocabs.other.slice(0, 3).map((v) => (
-                  <div key={v.id || v.word} className="bg-surface/75 rounded-xl p-2.5 border border-theme/50 space-y-1.5">
-                    <div className="flex items-center justify-between gap-1">
-                      <div className="flex items-baseline gap-1.5 min-w-0">
-                        <span className="text-sm font-bold font-japanese text-appText-bright">
-                          {v.word}
-                        </span>
-                        <span className="text-[11px] text-accent font-japanese truncate">
-                          【{v.reading}】
-                        </span>
-                      </div>
-                      <button
-                        onClick={() => voiceManager.speakText(v.word)}
-                        aria-label={`Dengarkan ${v.word}`}
-                        className="p-1 text-appText-muted hover:text-accent transition-colors active:scale-95 shrink-0"
-                      >
-                        <Volume2 size={13} />
-                      </button>
-                    </div>
-                    <p className="text-[11px] text-appText-muted line-clamp-1">
-                      {v.meaning}
-                    </p>
-                    {v.examples && v.examples.length > 0 && (
-                      <div className="bg-surface-2/60 rounded-lg p-2 border border-theme/40 text-[10.5px] space-y-0.5">
-                        <div className="flex items-start justify-between gap-1.5">
-                          <span className="font-japanese text-appText-bright leading-relaxed">
-                            {v.examples[0].jp}
-                          </span>
-                          <button
-                            onClick={() => voiceManager.speakText(v.examples[0].jp)}
-                            className="p-0.5 text-appText-muted hover:text-accent shrink-0 transition-colors active:scale-95"
-                          >
-                            <Volume2 size={12} />
-                          </button>
-                        </div>
-                        <p className="text-appText-muted/80 text-[10px]">
-                          {v.examples[0].id}
-                        </p>
-                      </div>
-                    )}
-                  </div>
-                ))}
-              </div>
+              {loadingVocabs && (
+                <span className="text-[11px] text-accent animate-pulse font-medium">
+                  Memindai contoh kalimat...
+                </span>
+              )}
             </div>
-          )}
+
+            <div className="grid grid-cols-1 gap-3">
+              {(showAllReadings ? readingGroups : readingGroups.slice(0, 3)).map((grp, gIdx) => (
+                <div
+                  key={`${grp.type}-${grp.rawReading}-${gIdx}`}
+                  className="p-3.5 sm:p-4 rounded-2xl bg-surface-2/45 border border-theme space-y-2.5 transition-all hover:border-accent/30 shadow-xs"
+                >
+                  {/* Reading Header */}
+                  <div className="flex items-center justify-between gap-2 border-b border-theme/50 pb-2">
+                    <div className="flex items-center gap-2">
+                      <span
+                        className={`text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full border ${
+                          grp.type === 'onyomi'
+                            ? 'bg-amber-500/15 border-amber-500/30 text-accent'
+                            : 'bg-emerald-500/15 border-emerald-500/30 text-emerald-400'
+                        }`}
+                      >
+                        {grp.type === 'onyomi' ? 'Onyomi (音)' : 'Kunyomi (訓)'}
+                      </span>
+                      <span className="text-base sm:text-lg font-black font-japanese text-accent-hot">
+                        {grp.displayReading}
+                      </span>
+                    </div>
+
+                    <button
+                      onClick={() => voiceManager.speakText(grp.cleanKana)}
+                      aria-label={`Dengarkan bacaan ${grp.displayReading}`}
+                      className="p-1.5 rounded-lg text-appText-muted hover:text-accent hover:bg-surface transition-colors active:scale-95"
+                      title="Dengarkan Cara Baca"
+                    >
+                      <Volume2 size={15} />
+                    </button>
+                  </div>
+
+                  {/* Word Examples for this Reading */}
+                  {grp.words.length > 0 ? (
+                    <div className="space-y-2">
+                      {grp.words.slice(0, 2).map((v, wIdx) => (
+                        <div
+                          key={`${v.word}-${wIdx}`}
+                          className="bg-surface/80 rounded-xl p-2.5 sm:p-3 border border-theme/60 space-y-1.5 shadow-2xs"
+                        >
+                          <div className="flex items-center justify-between gap-1.5">
+                            <div className="flex items-baseline gap-2 min-w-0">
+                              <span className="text-sm sm:text-base font-bold font-japanese text-appText-bright">
+                                {v.word}
+                              </span>
+                              <span className="text-xs font-bold text-accent font-japanese truncate">
+                                【{v.reading}】
+                              </span>
+                            </div>
+                            <button
+                              onClick={() => voiceManager.speakText(v.word)}
+                              aria-label={`Dengarkan kata ${v.word}`}
+                              className="p-1 text-appText-muted hover:text-accent transition-colors active:scale-95 shrink-0"
+                              title="Dengarkan Kata"
+                            >
+                              <Volume2 size={13} />
+                            </button>
+                          </div>
+
+                          <p className="text-xs text-appText-muted line-clamp-1">
+                            {v.meaning}
+                          </p>
+
+                          {/* Authentic Example Sentence */}
+                          {v.examples && v.examples.length > 0 && (
+                            <div className="bg-surface-2/70 rounded-lg p-2 sm:p-2.5 border border-theme/40 text-[11px] space-y-1 mt-1">
+                              <div className="flex items-start justify-between gap-1.5">
+                                <span className="font-japanese text-appText-bright leading-relaxed">
+                                  {v.examples[0].jp}
+                                </span>
+                                <button
+                                  onClick={() => {
+                                    if (v.examples?.[0]?.jp) {
+                                      voiceManager.speakText(v.examples[0].jp);
+                                    }
+                                  }}
+                                  aria-label="Dengarkan kalimat"
+                                  className="p-0.5 text-appText-muted hover:text-accent shrink-0 transition-colors active:scale-95 mt-0.5"
+                                  title="Dengarkan Kalimat"
+                                >
+                                  <Volume2 size={12} />
+                                </button>
+                              </div>
+                              <p className="text-appText-muted/80 text-[10.5px]">
+                                {v.examples[0].id}
+                              </p>
+                            </div>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <p className="text-[11px] text-appText-muted italic py-0.5">
+                      Contoh kata khusus untuk bacaan ini belum tercatat dalam kurikulum aktif.
+                    </p>
+                  )}
+                </div>
+              ))}
+            </div>
+
+            {/* Expand / Collapse Button if more than 3 readings */}
+            {readingGroups.length > 3 && (
+              <button
+                onClick={() => setShowAllReadings(!showAllReadings)}
+                className="w-full py-2.5 px-4 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/20 text-xs font-bold text-accent flex items-center justify-center gap-1.5 transition-all active:scale-98 shadow-xs"
+              >
+                {showAllReadings ? (
+                  <>
+                    <span>Tampilkan Lebih Sedikit Bacaan</span>
+                    <ChevronUp size={14} />
+                  </>
+                ) : (
+                  <>
+                    <span>Lihat {readingGroups.length - 3} Bacaan Lainnya</span>
+                    <ChevronDown size={14} />
+                  </>
+                )}
+              </button>
+            )}
+
+            {/* Other Contextual Vocabs with Sentences if available */}
+            {otherVocabs.length > 0 && (
+              <div className="p-3.5 rounded-2xl bg-surface-2/30 border border-theme space-y-2 mt-2">
+                <span className="text-[11px] font-bold text-appText-muted uppercase tracking-wider flex items-center gap-1.5">
+                  <Sparkles size={13} className="text-amber-500" />
+                  <span>Kosakata Terkait Lainnya ({otherVocabs.length})</span>
+                </span>
+                <div className="space-y-2">
+                  {otherVocabs.slice(0, 2).map((v, idx) => (
+                    <div key={`${v.word}-${idx}`} className="bg-surface/75 rounded-xl p-2.5 border border-theme/50 space-y-1.5">
+                      <div className="flex items-center justify-between gap-1">
+                        <div className="flex items-baseline gap-1.5 min-w-0">
+                          <span className="text-sm font-bold font-japanese text-appText-bright">
+                            {v.word}
+                          </span>
+                          <span className="text-[11px] text-accent font-japanese truncate">
+                            【{v.reading}】
+                          </span>
+                        </div>
+                        <button
+                          onClick={() => voiceManager.speakText(v.word)}
+                          aria-label={`Dengarkan ${v.word}`}
+                          className="p-1 text-appText-muted hover:text-accent transition-colors active:scale-95 shrink-0"
+                        >
+                          <Volume2 size={13} />
+                        </button>
+                      </div>
+                      <p className="text-[11px] text-appText-muted line-clamp-1">
+                        {v.meaning}
+                      </p>
+                      {v.examples && v.examples.length > 0 && (
+                        <div className="bg-surface-2/60 rounded-lg p-2 border border-theme/40 text-[10.5px] space-y-0.5">
+                          <div className="flex items-start justify-between gap-1.5">
+                            <span className="font-japanese text-appText-bright leading-relaxed">
+                              {v.examples[0].jp}
+                            </span>
+                            <button
+                              onClick={() => voiceManager.speakText(v.examples[0].jp)}
+                              className="p-0.5 text-appText-muted hover:text-accent shrink-0 transition-colors active:scale-95"
+                            >
+                              <Volume2 size={12} />
+                            </button>
+                          </div>
+                          <p className="text-appText-muted/80 text-[10px]">
+                            {v.examples[0].id}
+                          </p>
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
 
           {/* Radikal & Mnemonic */}
           <div className="p-4 rounded-xl bg-surface-2/30 border border-theme space-y-2">

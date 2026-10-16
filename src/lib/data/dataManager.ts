@@ -462,9 +462,10 @@ export async function findVocabWithExamplesForKanji(
   kanjiChar: string,
   preferredLevel?: JLPTLevel
 ): Promise<NormalizedVocab[]> {
-  const levelsToTry: JLPTLevel[] = preferredLevel
-    ? [preferredLevel, 'n5', 'n4', 'n3', 'n2', 'n1'].filter((v, i, a) => a.indexOf(v) === i)
+  const rawLevels: JLPTLevel[] = preferredLevel
+    ? [preferredLevel, 'n5', 'n4', 'n3', 'n2', 'n1']
     : ['n5', 'n4', 'n3', 'n2', 'n1'];
+  const levelsToTry: JLPTLevel[] = Array.from(new Set(rawLevels));
 
   const results: NormalizedVocab[] = [];
   const seenWords = new Set<string>();

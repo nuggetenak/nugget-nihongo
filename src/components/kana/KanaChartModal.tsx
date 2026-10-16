@@ -121,48 +121,103 @@ export const KanaChartModal: React.FC<KanaChartModalProps> = ({ isOpen, onClose 
           </div>
         </div>
 
-        {/* Practice Mode Mini Drawer */}
+        {/* Practice Mode Mini Drawer with 3D Flip Card */}
         {isPracticeMode ? (
-          <div className="bg-surface-2 border border-accent/30 rounded-2xl p-6 sm:p-8 text-center space-y-5 animate-in fade-in duration-200">
+          <div className="bg-surface-2 border border-accent/30 rounded-2xl p-5 sm:p-7 text-center space-y-4 sm:space-y-5 animate-in fade-in duration-200">
             <div className="flex items-center justify-between text-xs text-appText-muted">
               <span>Kartu {practiceIndex + 1} dari {currentList.length}</span>
-              <span className="font-bold text-accent">Skor: {practiceScore}</span>
+              <div className="flex items-center gap-2">
+                <span className="font-bold text-accent">Skor: {practiceScore}</span>
+                <span className="text-[11px] text-appText-muted/70">({Math.round((practiceScore / Math.max(1, practiceIndex)) * 100)}% akurat)</span>
+              </div>
             </div>
 
+            {/* 3D Flip Card Container */}
             <div
+              className="perspective-1000 max-w-sm mx-auto w-full h-52 sm:h-56 cursor-pointer select-none"
               onClick={() => {
                 playFlipSfx();
                 setPracticeFlipped(!practiceFlipped);
               }}
-              className="cursor-pointer max-w-sm mx-auto h-48 rounded-3xl bg-surface border-2 border-accent/40 hover:border-accent flex flex-col items-center justify-center p-6 transition-all hover:scale-[1.02] shadow-glow"
+              title="Ketuk untuk membalik kartu"
             >
-              <div className="text-6xl font-jp font-bold text-appText-bright mb-2">
-                {scriptType === 'hiragana'
-                  ? currentList[practiceIndex].hiragana
-                  : currentList[practiceIndex].katakana}
-              </div>
-              <div className="text-xs text-appText-muted">
-                {practiceFlipped ? (
-                  <div className="space-y-1">
-                    <span className="text-xl font-bold font-mono text-accent-hot">
+              <div
+                className={`relative w-full h-full duration-500 transform-style-3d transition-transform ${
+                  practiceFlipped ? 'rotate-y-180' : ''
+                }`}
+              >
+                {/* Front Face: Large Kana Character */}
+                <div className="absolute inset-0 backface-hidden rounded-3xl bg-surface border-2 border-accent/40 hover:border-accent flex flex-col items-center justify-center p-6 shadow-glow transition-all hover:scale-[1.01]">
+                  <div className="text-6xl sm:text-7xl font-jp font-extrabold text-appText-bright">
+                    {scriptType === 'hiragana'
+                      ? currentList[practiceIndex].hiragana
+                      : currentList[practiceIndex].katakana}
+                  </div>
+                  <div className="text-[11px] font-medium text-accent mt-3 flex items-center gap-1">
+                    <span>👆 Ketuk untuk melihat cara baca & contoh kata</span>
+                  </div>
+                </div>
+
+                {/* Back Face: Romaji + Example with Reading & Meaning + Audio */}
+                <div className="absolute inset-0 backface-hidden rotate-y-180 rounded-3xl bg-surface border-2 border-accent/60 flex flex-col items-center justify-center p-4 sm:p-5 shadow-glow space-y-2.5">
+                  <div className="flex items-center gap-2">
+                    <span className="text-2xl sm:text-3xl font-black font-mono text-accent-hot">
                       /{currentList[practiceIndex].romaji}/
                     </span>
-                    {currentList[practiceIndex].example && (
-                      <div className="text-xs text-appText-bright font-jp">
-                        {currentList[practiceIndex].example?.jp} ({currentList[practiceIndex].example?.meaning})
-                      </div>
-                    )}
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        const char =
+                          scriptType === 'hiragana'
+                            ? currentList[practiceIndex].hiragana
+                            : currentList[practiceIndex].katakana;
+                        speakJapanese(char, 0.8);
+                      }}
+                      className="p-1 rounded-lg bg-surface-2 border border-accent/20 text-accent hover:bg-amber-500/20 transition-all active:scale-95"
+                      title="Dengarkan Suara Huruf"
+                    >
+                      <Volume2 className="w-3.5 h-3.5" />
+                    </button>
                   </div>
-                ) : (
-                  'Ketuk untuk melihat cara baca'
-                )}
+
+                  {currentList[practiceIndex].example && (
+                    <div className="bg-surface-2/85 rounded-2xl p-2.5 sm:p-3 border border-accent/20 w-full max-w-xs space-y-1 text-left">
+                      <div className="flex items-center justify-between gap-1.5">
+                        <div className="flex items-baseline gap-1.5 min-w-0">
+                          <span className="text-sm sm:text-base font-bold font-jp text-appText-bright">
+                            {currentList[practiceIndex].example?.jp}
+                          </span>
+                          <span className="text-xs sm:text-sm font-bold text-accent font-jp">
+                            【{currentList[practiceIndex].example?.reading}】
+                          </span>
+                        </div>
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            if (currentList[practiceIndex].example) {
+                              speakJapanese(currentList[practiceIndex].example!.jp, 0.85);
+                            }
+                          }}
+                          className="p-1 rounded-md text-appText-muted hover:text-accent transition-colors active:scale-95 shrink-0"
+                          title="Dengarkan Contoh Kata"
+                        >
+                          <Volume2 className="w-3.5 h-3.5" />
+                        </button>
+                      </div>
+                      <p className="text-[11px] text-appText-muted leading-tight">
+                        Arti: <span className="text-appText-bright font-medium">{currentList[practiceIndex].example?.meaning}</span>
+                      </p>
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
 
-            <div className="flex items-center justify-center gap-3">
+            {/* Action Buttons */}
+            <div className="flex items-center justify-center gap-2.5 sm:gap-3 pt-1">
               <button
                 onClick={() => handleNextPractice(false)}
-                className="px-5 py-2.5 rounded-xl bg-surface-3 hover:bg-red-500/15 dark:hover:bg-red-950/40 text-red-700 dark:text-red-300 border border-red-500/30 text-xs font-bold transition-all"
+                className="flex-1 sm:flex-initial px-4 sm:px-5 py-2.5 rounded-xl bg-surface-3 hover:bg-red-500/15 text-red-600 dark:text-red-300 border border-red-500/30 text-xs font-bold transition-all active:scale-95 shadow-sm"
               >
                 Belum Hafal ❌
               </button>
@@ -174,14 +229,14 @@ export const KanaChartModal: React.FC<KanaChartModalProps> = ({ isOpen, onClose 
                       : currentList[practiceIndex].katakana;
                   speakJapanese(char, 0.8);
                 }}
-                className="p-2.5 rounded-xl bg-surface border border-accent/20 text-accent hover:bg-amber-500/20 transition-all"
-                title="Dengarkan Suara"
+                className="p-2.5 rounded-xl bg-surface border border-accent/20 text-accent hover:bg-amber-500/20 transition-all active:scale-95 shrink-0"
+                title="Dengarkan Suara Huruf"
               >
                 <Volume2 className="w-4 h-4" />
               </button>
               <button
                 onClick={() => handleNextPractice(true)}
-                className="px-5 py-2.5 rounded-xl bg-accent hover:bg-accent-hot text-bg font-bold text-xs transition-all shadow-glow"
+                className="flex-1 sm:flex-initial px-4 sm:px-5 py-2.5 rounded-xl bg-accent hover:bg-accent-hot text-bg font-bold text-xs transition-all shadow-glow active:scale-95"
               >
                 Sudah Hafal ✅
               </button>

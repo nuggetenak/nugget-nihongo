@@ -4,6 +4,7 @@
 // ══════════════════════════════════════════════════════════════════
 
 import React, { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import {
   X,
   Sparkles,
@@ -56,31 +57,40 @@ export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClos
     return true;
   });
 
-  return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/80 backdrop-blur-sm animate-fade-in">
+  const modalContent = (
+    <div
+      onClick={onClose}
+      className="fixed inset-0 z-[9999] flex items-end sm:items-center justify-center p-0 sm:p-4 bg-black/80 backdrop-blur-md animate-in fade-in duration-200"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Catatan Rilis dan Pembaruan"
+    >
       <div
-        className="relative w-full max-w-2xl bg-surface border border-accent/25 rounded-3xl p-5 sm:p-7 shadow-2xl space-y-5 animate-scale-in max-h-[90vh] flex flex-col overflow-hidden"
+        className="relative w-full max-w-2xl bg-surface border-t-2 sm:border border-accent/25 rounded-t-3xl sm:rounded-3xl p-4 sm:p-7 shadow-2xl space-y-4 sm:space-y-5 animate-in slide-in-from-bottom-6 sm:zoom-in-95 duration-200 max-h-[90dvh] sm:max-h-[88vh] flex flex-col overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
+        {/* Mobile Drag Indicator */}
+        <div className="w-12 h-1.5 rounded-full bg-accent/25 mx-auto -mt-1 mb-1 sm:hidden shrink-0" />
+
         {/* Subtle background glow */}
         <div className="absolute -top-24 -right-24 w-48 h-48 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
 
         {/* Modal Header */}
-        <div className="flex items-center justify-between border-b border-accent/15 pb-4 shrink-0">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-2xl bg-amber-500/15 border border-amber-500/30 text-accent flex items-center justify-center text-xl shrink-0">
+        <div className="flex items-start justify-between border-b border-accent/15 pb-3 sm:pb-4 shrink-0 gap-3">
+          <div className="flex items-center gap-2.5 sm:gap-3 min-w-0">
+            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-2xl bg-amber-500/15 border border-amber-500/30 text-accent flex items-center justify-center shrink-0">
               <History className="w-5 h-5 text-accent-hot" />
             </div>
-            <div>
-              <div className="flex items-center gap-2">
-                <h2 className="text-lg sm:text-xl font-extrabold text-appText-bright">
-                  Catatan Rilis & Pembaruan
+            <div className="min-w-0">
+              <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
+                <h2 className="text-base sm:text-xl font-extrabold text-appText-bright truncate">
+                  Catatan Rilis
                 </h2>
                 <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-full bg-accent text-bg">
-                  Aktif: {APP_VERSION}
+                  v{APP_VERSION}
                 </span>
               </div>
-              <p className="text-xs text-appText-muted mt-0.5">
+              <p className="text-[11px] sm:text-xs text-appText-muted mt-0.5 truncate">
                 Riwayat evolusi dan catatan perubahan Nugget Nihongo.
               </p>
             </div>
@@ -88,10 +98,10 @@ export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClos
 
           <button
             onClick={onClose}
-            className="p-2 text-appText-muted hover:text-appText-bright rounded-full hover:bg-surface-2 transition-colors shrink-0"
+            className="w-8 h-8 rounded-full bg-surface-2 hover:bg-surface-3 flex items-center justify-center text-appText-muted hover:text-appText-bright transition-all shrink-0 active:scale-95"
             aria-label="Tutup"
           >
-            <X className="w-5 h-5" />
+            <X className="w-4 h-4" />
           </button>
         </div>
 
@@ -134,7 +144,7 @@ export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClos
         </div>
 
         {/* Timeline Notes List (Scrollable) */}
-        <div className="flex-1 overflow-y-auto space-y-4 pr-1 sm:pr-2 scrollbar-thin">
+        <div className="flex-1 overflow-y-auto space-y-4 pr-1 sm:pr-2 scrollbar-thin pb-6">
           {filteredHistory.map((note) => {
             const isCurrent = note.version === APP_VERSION;
             const isExpanded = !!expandedVersions[note.version];
@@ -245,11 +255,12 @@ export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClos
         </div>
 
         {/* Modal Footer */}
-        <div className="pt-2 border-t border-accent/15 flex items-center justify-between text-xs text-appText-muted shrink-0">
-          <span>Nugget Nihongo PWA Offline Engine</span>
+        <div className="pt-2 pb-[max(0.25rem,env(safe-area-inset-bottom))] border-t border-accent/15 flex items-center justify-between text-xs text-appText-muted shrink-0">
+          <span className="hidden sm:inline">Nugget Nihongo PWA Offline Engine</span>
+          <span className="text-[11px] sm:hidden font-mono text-accent">v{APP_VERSION}</span>
           <button
             onClick={onClose}
-            className="px-4 py-2 rounded-xl bg-accent text-bg font-bold text-xs hover:bg-accent-hot transition-all shadow-sm active:scale-95"
+            className="px-4 py-2 rounded-xl bg-accent text-bg font-bold text-xs hover:bg-accent-hot transition-all shadow-sm active:scale-95 ml-auto"
           >
             Tutup Catatan
           </button>
@@ -257,4 +268,6 @@ export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClos
       </div>
     </div>
   );
+
+  return createPortal(modalContent, document.body);
 };

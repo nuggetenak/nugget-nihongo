@@ -1,9 +1,9 @@
 # Nugget Nihongo 🍙 (ナゲット日本語)
 
 > **Ekosistem Pembelajaran Bahasa Jepang Modern, Ilmiah, & Mandiri untuk Penutur Indonesia.**  
-> *Dari Nol (Jalur Freeway) hingga JLPT N1 & Pekerja Keterampilan Khusus (SSW/Tokutei Ginou).*
+> *Dari Nol (Jalur Huruf Kana & Freeway) hingga JLPT N1 & Vokasional Kerja Spesifik (SSW / Tokutei Ginou).*
 
-[![Nugget Nihongo Version](https://img.shields.io/badge/version-v19.3.2-amber.svg?style=flat-square)](CHANGELOG.md)
+[![Nugget Nihongo Version](https://img.shields.io/badge/version-v19.3.3-amber.svg?style=flat-square)](CHANGELOG.md)
 [![Test Suite Status](https://img.shields.io/badge/tests-75%2C136%20passed-emerald.svg?style=flat-square)](tests/run.js)
 [![Responsive Audit](https://img.shields.io/badge/responsive-58%2F58%20passed-blue.svg?style=flat-square)](tests/verify-frontend-responsive.js)
 [![Corpus Size](https://img.shields.io/badge/vocab-10%2C508%2B%20entries-orange.svg?style=flat-square)](public/data/vocab/)
@@ -12,63 +12,76 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-stone.svg?style=flat-square)](LICENSE)
 
 **Aplikasi Live:** [nugget-nihongo.pages.dev](https://nugget-nihongo.pages.dev)  
-*(Bisa langsung diakses via peramban atau dipasang sebagai PWA di Android, iOS, Windows, dan macOS)*
+*(Bisa langsung diakses via peramban atau dipasang sebagai Progressive Web App / PWA di Android, iOS, Windows, dan macOS)*
 
 ---
 
 ## 🌟 Mengapa Nugget Nihongo?
 
-Mempelajari bahasa Jepang sering kali terasa mengintimidasi bagi penutur Indonesia karena perbedaan rumpun bahasa, ribuan kanji, dan sistem kesopanan (*Keigo*) yang rumit. Sebagian besar aplikasi yang ada hanya menerjemahkan materi dari bahasa Inggris secara kaku tanpa mempertimbangkan cara berpikir bahasa ibu kita.
+Mempelajari bahasa Jepang sering kali terasa mengintimidasi bagi penutur Indonesia karena perbedaan rumpun bahasa yang signifikan, ribuan kanji berkarakter ganda, serta tingkatan kesopanan (*Keigo*) yang bernuansa halus. Sebagian besar aplikasi yang ada di pasar hanya menerjemahkan materi dari bahasa Inggris secara kaku tanpa mempertimbangkan cara berpikir bahasa ibu kita.
 
-**Nugget Nihongo** lahir untuk menjawab tantangan tersebut. Memadukan **prinsip linguistik kontrastif L1 (Bahasa Indonesia & Dialek Nusantara)**, kurikulum pedagogis spiral, algoritma daya ingat ilmiah **FSRS**, dan integrasi **AI Sensei dwibahasa**, aplikasi ini dirancang agar siapa pun bisa belajar bahasa Jepang dengan percaya diri, menyenangkan, dan bebas dari rasa takut salah (*malu-awareness*).
+**Nugget Nihongo** lahir untuk menjawab tantangan tersebut secara tuntas. Menggabungkan **prinsip linguistik kontrastif L1 (Bahasa Indonesia & Dialek Nusantara)**, kurikulum pedagogis spiral bertingkat, algoritma retensi daya ingat ilmiah **FSRS**, dan integrasi **AI Sensei dwibahasa**, aplikasi ini dirancang agar siapa pun dapat menguasai bahasa Jepang secara mandiri, percaya diri, dan bebas dari rasa takut salah (*malu-awareness*).
 
 ---
 
-## 🚀 Fitur Unggulan
+## 🚀 Fitur Unggulan & Ekosistem Pembelajaran
 
-### 1. 🥋 Studio Dojo Kanji
-- **Fisika Goresan Kaligrafi Presisi**: Dilengkapi data vektor resmi KanjiVG dengan animasi aliran tinta dinamis (`--stroke-len`) yang tuntas hingga goresan pamungkas.
-- **Intelligent Touch Drift Engine**: Latihan menulis langsung di atas kanvas dengan toleransi sentuh cerdas. Mendeteksi jika goresan melenceng dari jalur kanji asli dan memberikan getaran lembut (*haptic feedback*).
-- **Kartu Terpadu Kosakata & Kalimat Nyata**: Setiap bacaan **Onyomi (音読み)** dan **Kunyomi (訓読み)** langsung diperkaya contoh kosakata riil, arti bahasa Indonesia, contoh kalimat berpasangan (JP + ID), serta pemutar audio pelafalan asli.
+### 1. 🥋 Studio Dojo Kanji & Animasi Goresan Presisi
+- **Fisika Tinta Kaligrafi Zero-Glitch**: Menggunakan data kurva resmi KanjiVG dengan kalkulasi panjang busur dinamis (`--stroke-len`). Menjamin seluruh goresan—termasuk goresan pamungkas (*last stroke*) dan goresan titik pendek (*chou-on*)—teranimasi tuntas tanpa artefak kedipan.
+- **Kanvas Sentuh Cerdas (Intelligent Touch Canvas)**: Latihan menulis langsung di atas layar sentuh dengan panduan grid ortogonal dan deteksi batas toleransi (*haptic drift feedback*).
+- **Struktur Bacaan Onyomi & Kunyomi Riil**: Setiap bacaan dikelompokkan secara terstruktur dengan contoh kosakata nyata, penulisan furigana lengkap `【よみ】`, terjemahan bahasa Indonesia, contoh kalimat berpasangan (JP + ID), serta pemutar audio pelafalan asli. Dilengkapi tombol ekspansi *"Lihat Bacaan Lainnya"* untuk kanji dengan banyak bacaan.
 
-### 2. 📚 Perpustakaan 9 Buku Teks Jepang Resmi
-Akses materi dan latihan bab demi bab dari 9 buku teks kanonikal terpopuler di dunia:
+### 2. 🔤 Flashcard Huruf Kana 3D & Panduan Pemula
+- **Animasi 3D Flip Card Interaktif**: Kartu flashcard Hiragana & Katakana yang dapat dibalik secara mulus dengan sentuhan fisik nyata.
+- **Panduan Pembacaan Anti-Bingung**: Menghilangkan kebingungan pembelajar pemula dengan menyertakan pembacaan kana lengkap dalam kurung siku `【...】` mendampingi kanji dasar (contoh: `朝【あさ】 (Pagi)`).
+- **Audio Pelafalan Terpadu**: Dukungan pemutar suara langsung untuk pelafalan karakter kana dan contoh kosakata otentik.
+- **100% Cakupan Lengkap**: Meliputi 46 Gojuuon, 25 Dakuon/Handakuon, dan 36 Yoon kombinasi kana dengan contoh kata nyata.
+
+### 3. 🏠 Navigasi Beranda Terstruktur (4 Domain Belajar)
+Mengakhiri layout bertumpuk dengan membagi alur belajar secara tegas ke dalam 4 domain pembelajaran:
+1. **Tata Bahasa (Grammar)**: Kurikulum berjenjang JLPT N5 hingga N1 dengan total 859 pola kalimat riil, kartu persentase penguasaan, dan akses cepat ke Simulator Konjugasi kata kerja interaktif.
+2. **Kosakata & Kanji**: Jalur N5 hingga N1 dengan lebih dari 10.508 kosakata aktif dan 2.210 kanji, kartu penguasaan materi, serta akses langsung ke Tabel Huruf Kana.
+3. **Vokasional SSW (Tokutei Ginou)**: Panduan resmi visa kerja terampil Jepang untuk 3 sektor prioritas (*Kaigo* / Keperawatan Lansia, *Gaishoku* / Restoran & Pengolahan Makanan, dan *Kensetsu* / Konstruksi) dengan modul unit & pelajaran kerja terstruktur.
+4. **Statistik & Pencapaian**: Pemantauan XP, Streak belajar harian, status kartu memori FSRS, Kalender Aktivitas Belajar, dan Lencana Kehormatan (*Badges*).
+
+### 4. 📚 Perpustakaan 9 Buku Teks Jepang Resmi
+Akses materi dan latihan bab demi bab dari 9 buku teks kanonikal terpopuler di dunia, dihiasi sampul seni klasik Shin-Hanga editorial:
 - **Jalur Akademik**: *Minna no Nihongo (Shokyu I & II)*, *Genki (I & II)*, dan *Quartet (I & II)*.
 - **Jalur Komunikatif & SSW**: *Irodori: Bahasa Jepang untuk Kehidupan di Jepang (Starter A1, A2-1, A2-2)* dan *Marugoto (A1, A2-1, A2-2)*.
 - **Jalur Ujian JLPT**: *Shin Kanzen Master (N3–N1)*, *Nihongo Sou Matome (N5–N1)*, dan *TRY!*.
 - **Jalur Budaya & Lanjutan**: *Tobira Gateway to Advanced Japanese* dan *Dekiru Nihongo*.
-- **Metodologi Pedagogis 5W+1H**: Setiap bab dilengkapi alasan pedagogis mengapa materi tersebut diletakkan di sana, perbandingannya dengan buku lain, serta *Signature Drills* interaktif.
+- **Metodologi Pedagogis 5W+1H**: Setiap bab dilengkapi alasan pedagogis penempatan materi, perbandingan lintas buku teks, serta *Signature Drills* interaktif.
 
-### 3. 🧠 Pusat Retensi FSRS Ilmiah (Memory Vault)
-- Menggantikan sistem flashcard konvensional (*Leitner/SM-2*) dengan **Free Spaced Repetition Scheduler (FSRS)** modern.
+### 5. 🧠 Pusat Retensi FSRS Ilmiah (Memory Vault)
+- Menggantikan sistem flashcard konvensional (*Leitner/SM-2*) dengan **Free Spaced Repetition Scheduler (FSRS-5)** modern.
 - Menghitung secara matematis **Stabilitas Ingatan ($S$)**, **Tingkat Kesulitan ($D$)**, dan **Probabilitas Penarikan Ingatan ($R$)**.
-- Visualisasi grafik status retensi (*New, Learning, Review, Relearning*), kurva kelupaan Ebbinghaus, dan pemantauan kartu jatuh tempo agar belajar tetap efisien tanpa membuang waktu mengulang kata yang sudah hafal.
+- Visualisasi grafik status retensi (*New, Learning, Review, Relearning*), kurva kelupaan Ebbinghaus, dan pemantauan kartu jatuh tempo agar waktu belajar tidak terbuang sia-sia mengulang materi yang sudah dikuasai.
 
-### 4. 🍵 AI Sensei Multi-Model Auto-Router
+### 6. 🍵 AI Sensei Multi-Model Auto-Router
 - **Dua Persona Karakter Otentik**:
-  - **Sensei Nugget**: Senpai berpengalaman yang tajam, bernas, langsung pada inti persoalan, dan mendasarkan penjelasan pada linguistik terapan.
-  - **Senpai Aoi (葵先輩)**: Tutor pembimbing yang ramah, hangat, sabar, dan menguraikan konsep rumit lewat analogi kehidupan sehari-hari.
-- **Dukungan Multi-Model Fleksibel**:
-  - Terhubung langsung dengan **OpenRouter** (*Qwen 2.5 72B, Llama 3.3 70B, DeepSeek*) dan **Google Gemini** (*Gemini 2.5 Flash & 2.0 Flash*).
-  - Dilengkapi *Guardrails* ketat: penolakan topik di luar pembelajaran bahasa Jepang dan metode koreksi berbasis wacana (*swap + alasan + langkah konkret*).
+  - **Sensei Nugget**: Tutor berpengalaman yang lugas, bernas, langsung pada inti persoalan, dan mendasarkan penjelasan pada linguistik terapan.
+  - **Senpai Aoi (葵先輩)**: Pembimbing yang ramah, hangat, sabar, dan menguraikan konsep sulit lewat analogi keseharian di Jepang.
+- **Integrasi Multi-Model Bebas Kendala Autentikasi**:
+  - Terhubung langsung dengan provider **OpenRouter** (*Qwen 2.5 72B, Llama 3.3 70B, DeepSeek V3*) dan **Google Gemini** (*Gemini 3.8 Flash & Flash Lite*).
+  - Mode Latihan Skenario Percakapan (*Roleplay*) dan Pemeriksaan Tulisan Berbasis Wacana (*Discourse Correction*).
 
-### 5. 🎯 Arena Kuis & Mission Launchpad
-- **9 Mode Kuis Komprehensif**: Pilihan Ganda, Susun Kalimat, Tebak Partikel, Konjugasi Kata Kerja, Deteksi Kesalahan (*Error-find*), dan Terjemahan.
+### 7. 🎯 Arena Kuis & Mission Launchpad
+- **9 Mode Kuis Komprehensif**: Pilihan Ganda, Susun Kalimat, Tebak Partikel, Konjugasi Kata Kerja, Deteksi Kesalahan (*Error-find*), dan Terjemahan Balik.
 - **Bilah Zen Focus**: Tampilan pengerjaan soal bersih tanpa distraksi dengan indikator streak animasi api.
-- **Putaran Pemulihan (Remediation Loop)**: Setiap soal yang salah dijawab akan otomatis ditandai dan diujikan kembali di akhir sesi hingga konsep benar-benar dikuasai.
+- **Putaran Pemulihan (Remediation Loop)**: Setiap soal yang salah dijawab akan otomatis ditandai dan diujikan kembali di akhir sesi hingga konsep benar-benar tuntas dipahami.
 
-### 6. 📱 Desain Responsif & Estetika Jepang Alami
-- **Tema Terang Kertas Washi (Default)**: Palet lembut bernuansa serat kertas Washi tradisional (`#FDFBF7`) yang ramah di mata untuk sesi belajar siang hari.
-- **Tema Gelap Warm Sumi & Makie (蒔絵)**: Palet pernis emas arang hangat (`#121110`, `#1A1816`, `#F59E0B`) yang elegan dan bebas dari benturan warna biru dingin.
-- **Standar Multi-Perangkat (Zero Blowout)**: Divalidasi secara otomatis melalui Playwright pada ponsel ringkas 320px–375px (iPhone SE), ponsel modern 390px–430px, tablet/iPad, hingga monitor desktop 1920px+.
+### 8. 📱 Zero-Clipping Modal Portals & Desain Responsif Universal
+- **React Portal Body Mounting**: Seluruh dialog dan modal interaktif dimount langsung ke `document.body` via `createPortal`, memastikan latar belakang gelap memayungi 100% area layar tanpa celah terang di bawah navbar atau status bar ponsel.
+- **Standar Multi-Perangkat (Zero Blowout)**: Teruji pada ponsel ultra-ringkas 320px–375px (iPhone SE), ponsel modern 390px–430px, tablet/iPad, hingga monitor desktop lebar 1920px+.
+- **Dual-Theme Harmonis**: Pilihan tema **Warm Sumi & Makie (蒔絵)** bernuansa arang pernis emas (`#121110`, `#1A1816`, `#F59E0B`) yang ramah mata tanpa benturan warna biru dingin, serta tema **Kertas Washi (和紙)** lembut untuk sesi siang hari.
 
-### 7. ⚡ 100% Offline-First & Privasi Terjaga
-- Beroperasi penuh secara offline berkat arsitektur Service Worker hibrida (*Cache-First* untuk antarmuka dan *Stale-While-Revalidate* untuk korpus data).
-- Tidak mewajibkan login/akun. Seluruh riwayat belajar, streak, dan metrik memori tersimpan aman di peramban pengguna (*LocalStorage & IndexedDB*).
+### 9. ⚡ 100% Offline-First PWA & Privasi Mutlak
+- Bekerja penuh secara offline berkat arsitektur Service Worker hibrida (*Cache-First* untuk aset antarmuka dan *Stale-While-Revalidate* untuk korpus data).
+- Tidak mewajibkan login atau pembuatan akun. Seluruh kemajuan belajar, riwayat review, streak, dan metrik memori tersimpan aman di peramban lokal pengguna (*LocalStorage & IndexedDB*).
 
 ---
 
-## 📊 Cakupan Korpus Basis Data (v19.3.2)
+## 📊 Cakupan Korpus Basis Data (v19.3.3)
 
 | Tingkat / Jalur Belajar | Kosakata Aktif | Pola Tata Bahasa | Karakter Kanji | Fokus & Kompetensi Utama |
 | :--- | :---: | :---: | :---: | :--- |
@@ -77,7 +90,7 @@ Akses materi dan latihan bab demi bab dari 9 buku teks kanonikal terpopuler di d
 | **JLPT N3 / B1** | **2.580** | **163** | 367 | Nuansa emosi, wacana transisi, ragam bahasa kasual vs formal sehari-hari. |
 | **JLPT N2 / B2** | **2.104** | **310** | 415 | Bahasa berita, percakapan kantor & bisnis (*Keigo*), relasi logis abstrak. |
 | **JLPT N1 / C1** | **3.217** | **200** | 1.144 | Wacana tingkat tinggi, ekspresi literatur klasik, dokumen legal & editorial. |
-| **19 Sektor SSW / Kaigo** | **380+** | **42** | — | Istilah keperawatan lansia (*Kaigo*), pengolahan makanan, konstruksi (*JAC*). |
+| **Vokasional SSW / Kaigo** | **380+** | **42** | — | Istilah keperawatan lansia (*Kaigo*), pengolahan makanan, konstruksi (*JAC*). |
 | **TOTAL KORPUS** | **10.508+** | **859** | **2.210** | **Terverifikasi 100% dengan audio TTS, furigana, & contoh kalimat ID** |
 
 ---
@@ -130,10 +143,15 @@ nugget-nihongo/
 │   └── sw.js                # Mesin Service Worker PWA & caching luring
 ├── src/
 │   ├── components/
+│   │   ├── cat/             # CatPlacementModal (Diagnostik adaptif IRT)
+│   │   ├── gamification/    # BadgesModal, pencapaian, streak flame
+│   │   ├── kana/            # KanaChartModal (Flashcard 3D flip, audio, pembacaan)
 │   │   ├── kanji/           # KanjiStrokeModal, KanjiDojoView, kalkulator goresan
+│   │   ├── kotowaza/        # KotowazaModal (Peribahasa Jepang & padanan Indonesia)
 │   │   ├── materi/          # BookTrackBrowser, CurriculumTrackBrowser, DrillModal
 │   │   ├── quiz/            # Arena Kuis, Flashcards, Session Config, Zen Bar
 │   │   ├── sensei/          # Contextual Sensei Sheet, AI chat interface
+│   │   ├── tools/           # StudyToolboxModal (Simulator konjugasi, kalkulator pitch)
 │   │   └── ui/              # DetailModal, PatchNotesModal, Navbar, Sidebar
 │   ├── config/              # Konfigurasi versi (APP_VERSION) & tema
 │   ├── lib/
@@ -151,7 +169,7 @@ nugget-nihongo/
 
 ## 🤝 Kontribusi & Kode Etik
 
-Kami menyambut kontribusi dari komunitas pembelajar bahasa Jepang dan pengembang perangkat lunak!  
+Kami menyambut kontribusi dari komunitas pembelajar bahasa Jepang, guru, dan pengembang perangkat lunak!  
 Jika Anda menemukan kesalahan ketik (*typo*), kalimat contoh yang kurang alami, atau ingin mengusulkan fitur baru:
 1. Buka [Issues](https://github.com/nuggetenak/nugget-nihongo/issues) untuk mendiskusikan perubahan.
 2. Buat branch baru (`git checkout -b fitur/nama-fitur`).

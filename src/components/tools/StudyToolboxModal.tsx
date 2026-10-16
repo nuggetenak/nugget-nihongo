@@ -5,6 +5,7 @@
 // ══════════════════════════════════════════════════════════════════
 
 import React from 'react';
+import { createPortal } from 'react-dom';
 import {
   X,
   Wrench,
@@ -140,16 +141,16 @@ export const StudyToolboxModal: React.FC<StudyToolboxModalProps> = ({
     },
   ];
 
-  return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 animate-in fade-in duration-200">
-      {/* Backdrop */}
-      <div
-        onClick={onClose}
-        className="fixed inset-0 bg-black/80 backdrop-blur-sm transition-opacity"
-      />
-
+  const modalContent = (
+    <div
+      onClick={onClose}
+      className="fixed inset-0 z-[9999] flex items-end sm:items-center justify-center p-0 sm:p-4 bg-black/80 backdrop-blur-sm animate-in fade-in duration-200"
+    >
       {/* Modal Card / Responsive Bottom-Sheet */}
-      <div className="relative w-full max-w-xl bg-surface border border-accent/25 rounded-3xl shadow-2xl z-10 max-h-[90dvh] sm:max-h-[92vh] flex flex-col overflow-hidden animate-in zoom-in-95 duration-200">
+      <div
+        onClick={(e) => e.stopPropagation()}
+        className="relative w-full max-w-xl bg-surface border-t-2 sm:border border-accent/25 rounded-t-3xl sm:rounded-3xl shadow-2xl z-10 max-h-[90dvh] sm:max-h-[92vh] flex flex-col overflow-hidden animate-in slide-in-from-bottom-6 sm:zoom-in-95 duration-200 pb-[max(1rem,env(safe-area-inset-bottom))]"
+      >
         {/* Mobile Drag Indicator */}
         <div className="flex sm:hidden justify-center pt-2.5 pb-1">
           <div className="w-12 h-1.5 rounded-full bg-accent/30" />
@@ -173,7 +174,7 @@ export const StudyToolboxModal: React.FC<StudyToolboxModalProps> = ({
 
           <button
             onClick={onClose}
-            className="p-2 rounded-xl bg-surface hover:bg-surface-3 text-appText-muted hover:text-appText-bright transition-colors"
+            className="p-2 rounded-xl bg-surface hover:bg-surface-3 text-appText-muted hover:text-appText-bright transition-colors active:scale-95"
             title="Tutup"
             aria-label="Tutup modal"
           >
@@ -182,7 +183,7 @@ export const StudyToolboxModal: React.FC<StudyToolboxModalProps> = ({
         </div>
 
         {/* Tools Grid / List */}
-        <div className="p-4 sm:p-5 overflow-y-auto space-y-2.5 flex-1 min-w-0">
+        <div className="p-4 sm:p-5 overflow-y-auto space-y-2.5 flex-1 min-w-0 scrollbar-thin">
           {tools.map((tool) => (
             <button
               key={tool.id}
@@ -217,4 +218,6 @@ export const StudyToolboxModal: React.FC<StudyToolboxModalProps> = ({
       </div>
     </div>
   );
+
+  return createPortal(modalContent, document.body);
 };

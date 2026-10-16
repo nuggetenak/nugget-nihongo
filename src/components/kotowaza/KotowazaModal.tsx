@@ -4,6 +4,7 @@
 // ══════════════════════════════════════════════════════════════════
 
 import React, { useState, useMemo } from 'react';
+import { createPortal } from 'react-dom';
 import {
   X,
   Search,
@@ -70,16 +71,16 @@ export const KotowazaModal: React.FC<KotowazaModalProps> = ({ isOpen, onClose })
     }
   };
 
-  return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-5 md:p-6 animate-in fade-in duration-200">
-      {/* Backdrop */}
-      <div
-        onClick={onClose}
-        className="fixed inset-0 bg-black/85 backdrop-blur-md"
-      />
-
+  const modalContent = (
+    <div
+      onClick={onClose}
+      className="fixed inset-0 z-[9999] flex items-end sm:items-center justify-center p-0 sm:p-5 md:p-6 bg-black/85 backdrop-blur-md animate-in fade-in duration-200"
+    >
       {/* Modal Dialog Container */}
-      <div className="relative w-full max-w-4xl max-h-[92dvh] sm:max-h-[90vh] bg-surface border border-accent/30 rounded-3xl shadow-2xl flex flex-col overflow-hidden z-10 animate-in zoom-in-95 duration-200">
+      <div
+        onClick={(e) => e.stopPropagation()}
+        className="relative w-full max-w-4xl max-h-[92dvh] sm:max-h-[90vh] bg-surface border-t-2 sm:border border-accent/30 rounded-t-3xl sm:rounded-3xl shadow-2xl flex flex-col overflow-hidden z-10 animate-in slide-in-from-bottom-6 sm:zoom-in-95 duration-200 pb-[max(0.5rem,env(safe-area-inset-bottom))]"
+      >
         {/* Mobile Pull Handle Indicator */}
         <div className="sm:hidden flex justify-center pt-2 pb-1 bg-surface-2/40">
           <div className="w-10 h-1 rounded-full bg-accent/30" />
@@ -367,4 +368,6 @@ export const KotowazaModal: React.FC<KotowazaModalProps> = ({ isOpen, onClose })
       </div>
     </div>
   );
+
+  return createPortal(modalContent, document.body);
 };

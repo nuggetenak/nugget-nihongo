@@ -47,13 +47,13 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onOpenShortcuts, o
         onClick={onOpenSearch}
         className="flex-1 min-w-0 max-w-md relative cursor-pointer"
       >
-        <Search className="w-4 h-4 text-appText-muted absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" />
+        <Search className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-appText-muted absolute left-2.5 sm:left-3 top-1/2 -translate-y-1/2 pointer-events-none" />
         <input
           type="text"
           readOnly
           onClick={onOpenSearch}
-          placeholder="Cari materi, kanji, pola..."
-          className="w-full bg-surface-2 border border-accent/20 rounded-xl pl-9 pr-12 py-2 text-xs md:text-sm text-appText-bright placeholder-appText-muted/60 focus:outline-none focus:border-accent cursor-pointer transition-all"
+          placeholder="Cari materi..."
+          className="w-full bg-surface-2 border border-accent/20 rounded-xl pl-7 sm:pl-9 pr-3 sm:pr-12 py-1.5 sm:py-2 text-xs sm:text-sm text-appText-bright placeholder-appText-muted/60 focus:outline-none focus:border-accent cursor-pointer transition-all truncate"
         />
         <kbd className="hidden sm:inline-block absolute right-2.5 top-1/2 -translate-y-1/2 text-[10px] font-mono bg-surface-3/80 text-appText-muted px-1.5 py-0.5 rounded border border-accent/15">
           ⌘K

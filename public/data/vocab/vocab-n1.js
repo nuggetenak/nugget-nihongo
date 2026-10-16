@@ -2,7 +2,7 @@
 //  vocab-n1.js — Nugget Nihongo · JLPT N1
 //  AUTO-GENERATED — DO NOT EDIT DIRECTLY
 //  Edit: public/data/vocab/n1/*.js  then run: node scripts/merge-vocab.js
-//  Entries: 3217 | Generated: 2026-10-15
+//  Entries: 3217 | Generated: 2026-10-16
 // ══════════════════════════════════════════════════════════════
 
 window.vocabN1 = [
