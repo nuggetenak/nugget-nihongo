@@ -336,19 +336,21 @@ Menguji kesiapan pekerja dalam menuntut hak asuransi kecelakaan kerja tanpa rasa
 
 ---
 
-### 6.4 Mesin Simulasi Ujian Prometric CBT & Bank Soal Resmi 18 Sektor
-Berdasarkan kurasi 93 buku teks dan bank soal resmi kementerian (`reference-books/ssw/` & `NUGGET-CURRICULUM-SSW-MASTER-SYLLABUS-v1.md`):
+### 6.4 Mesin Simulasi Ujian Prometric CBT & Bank Soal Resmi 19 Sektor SSW
+Berdasarkan kurasi 93 buku teks dan bank soal resmi kementerian (`reference-books/ssw/`, `NUGGET-CURRICULUM-SSW-MASTER-SYLLABUS-v1.md`, dan Suite 19 Silabus Sektor di `corpus/sections/synthesis/syllabi/ssw/`):
 1. **Dukungan Modalitas Ujian Fleksibel:**
-   - *Model True/False (○×):* Digunakan pada sektor Pertanian, Perikanan, Perawatan Mobil, dan Galangan Kapal.
-   - *Model Pilihan Ganda (3-Pilihan & 4-Pilihan):* Digunakan pada Kaigo (4 pilihan), Pengolahan Makanan Pabrik OTAFF (3 pilihan), dan Restoran (4 pilihan).
-   - *Model Uji Hotspot Gambar & Diagram Teknis:* Identifikasi komponen mesin, alat ukur (mikrometer, torsi), diagram aliran K3, dan foto spesies ikan laut.
+   - *Model True/False (○×):* Digunakan pada sektor Pertanian (Crop/Livestock), Perikanan, Perawatan Mobil, Galangan Kapal, dan Sokeizai/Manufaktur (Gakka).
+   - *Model Pilihan Ganda (3-Pilihan & 4-Pilihan):* Digunakan pada Kaigo (4 pilihan), Pengolahan Makanan Pabrik OTAFF (3 pilihan), Restoran JFnet (4 pilihan), Perhotelan CAIPT (4 pilihan), dan Konstruksi JAC (3 pilihan).
+   - *Model Uji Hotspot Gambar & Diagram Teknis (Jitsugi Screen CBT):* Identifikasi komponen mesin, alat ukur (mikrometer, torsi, dial gauge), diagram aliran K3, foto spesies ikan laut, dan alur perancah konstruksi.
 2. **Mesin Penilaian Otomatis Ambang Kelulusan Regulasi:**
-   - Kaigo (MHLW): Keterampilan $\ge 60\%$, Bahasa Kaigo $\ge 60\%$.
-   - Manufaktur Produk Industri (JAIM): Teori $\ge 65\%$, Praktik $\ge 60\%$.
-   - Pembersihan Gedung (JBMA / Pearson VUE): Teori $\ge 60\%$, Praktik $\ge 60\%$.
-   - Pangan & Restoran (OTAFF / JFnet): $\ge 65\%$.
-   - Pertanian, Perikanan, Mobil, Konstruksi: $\ge 60\%$.
+   - Kaigo (MHLW / Prometric): Dual-Pass Gate (Keterampilan 45 soal $\ge 60\%$, Bahasa Kaigo 15 soal $\ge 60\%$).
+   - Manufaktur Produk Industri (JAIM / METI): Dual-Pass Gate 80 menit (Teori 30 soal $\ge 65\%$, Praktik 10 soal $\ge 60\%$).
+   - Pembersihan Gedung (JBMA / Pearson VUE CBT 2025): Teori 20 soal $\ge 60\%$, Praktik 30 soal $\ge 60\%$.
+   - Pangan & Restoran (OTAFF / JFnet): $\ge 65\%$ (Teori $\ge 20/30$, Praktik $\ge 7/10$ atau $\ge 10/15$).
+   - Konstruksi JAC (3 Tracks d/k/l): Teori $\ge 65\%$, Praktik $\ge 60\%$.
+   - Pertanian ASAT (Crop & Livestock), Perikanan, Mobil JASPA, Kehutanan, Kayu, Transportasi JTA/NBA, Kereta Api RMA/JTOA: $\ge 60\%$.
 3. **Timer Real-Time & Countdown Lockout:** Meniru antarmuka Prometric asli dengan batas waktu 30 hingga 80 menit, NDA 3 menit, dan tutorial interaktif.
+4. **Data Loader 19 Silabus Sektor:** Modul pembelajaran kejuruan di-load langsung dari berkas silabus individual `corpus/sections/synthesis/syllabi/ssw/SSW-01` s.d. `SSW-19`, menyajikan tabel Layer 2 Lexicon, K3 Emergency Directives, dan Yubisashi Kosho secara terisolasi per sektor pilihan pengguna.
 
 ---
 
