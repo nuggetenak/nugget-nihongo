@@ -11,8 +11,8 @@
 The Specified Skilled Worker (特定技能 — *Tokutei Ginou*) evaluation system is administered through a multi-tiered regulatory framework established by the Ministry of Justice (MOJ), Immigration Services Agency of Japan (ISA), and line ministries (MHLW, METI, MLIT, MAFF). 
 
 While **Prometric Japan Co., Ltd.** operates as the dominant testing delivery infrastructure for Computer-Based Testing (CBT) both within Japan and across 15+ overseas sending countries (including Indonesia, Philippines, Vietnam, Myanmar, Nepal, India, Mongolia, Uzbekistan, and Sri Lanka), the total SSW examination ecosystem is divided between:
-1. **Prometric CBT-Administered Exams:** Covering general Japanese (JFT-Basic), Nursing Care (Skills & Specialized Japanese), Food Service (Tier 1 & 2), Food Manufacturing (Tier 1 & 2), Agriculture (Tier 1 & 2), Automobile Maintenance (Tier 1 & 2), Fisheries & Aquaculture (Tier 1 & 2), Construction (Tier 1 & 2), Accommodation (Tier 1 & 2), Industrial Product Manufacturing (Tier 1 & 2 across 17 divisions), Wood Industry (Tier 1), and the **Business Career Kentei for SSW** (Tier 2 prerequisite).
-2. **Specialized Agency-Administered Exams:** Administered directly by national industry federations for sectors requiring heavy machinery yard performance or specialized physical simulation (Building Cleaning by JBMA, Shipbuilding by ClassNK, Aviation Ground Handling/MRO by JAAM/JAC, Automobile Transport by MLIT, Railway Operations by MLIT, and Forestry by JAFCO).
+1. **Prometric & Pearson VUE CBT-Administered Exams:** Covering general Japanese (JFT-Basic), Nursing Care (Skills & Specialized Japanese), Food Service (Tier 1 & 2), Food Manufacturing (Tier 1 & 2), Agriculture (Tier 1 & 2), Automobile Maintenance (Tier 1 & 2), Fisheries & Aquaculture (Tier 1 & 2), Construction (Tier 1 & 2), Accommodation (Tier 1 & 2), Industrial Product Manufacturing (Tier 1 & 2 across 17 divisions), Building Cleaning (Pearson VUE CBT from 2025), Aviation Ground Handling & Maintenance, Wood Industry (Tier 1), Automobile Transport, and the **Business Career Kentei for SSW** (Tier 2 prerequisite).
+2. **Specialized Agency-Administered Practical & Performance Exams:** Administered directly by national industry federations for sectors requiring heavy machinery yard performance or specialized physical simulation (Shipbuilding by ClassNK, Railway Operations by MLIT/RMA/JTOA, and Forestry by JAFCO/Forestry Agency).
 
 ### 1.1 The Dual-Tier Status Hierarchy: 1-gō vs. 2-gō
 
@@ -40,41 +40,45 @@ While **Prometric Japan Co., Ltd.** operates as the dominant testing delivery in
 
 ---
 
-## 2. EXHAUSTIVE PROMETRIC CBT EXAM MATRIX
+## 2. EXHAUSTIVE PROMETRIC & NATIONAL CBT EXAM MATRIX
 
-Below is the definitive catalog of all examinations managed on the Prometric platform, including exam names, testing codes, sponsoring ministries, target tiers, and test compositions.
+Below is the definitive catalog of all examinations managed on Prometric and accredited national CBT platforms, including exam names, testing codes, sponsoring ministries, target tiers, time limits, question counts, and passing benchmarks verified from primary government sample papers (`reference-books/ssw/`):
 
 ```
-┌────────────────────────────────────────────────────────────────────────────────────────┐
-│                              PROMETRIC CBT SSW EXAM MATRIX                             │
-├────────────────────┬──────────────────────────────────────────┬──────┬─────────────────┤
-│ Sector             │ Exam Name (Japanese / English)           │ Tier │ Sponsoring Body │
-├────────────────────┼──────────────────────────────────────────┼──────┼─────────────────┤
-│ Language (General) │ 国際交流基金日本語基礎テスト (JFT-Basic) │ 1    │ Japan Foundation│
-│ Nursing Care       │ 介護特定技能評価試験                     │ 1    │ MHLW            │
-│ Nursing Care       │ 介護日本語評価試験                       │ 1    │ MHLW            │
-│ Food Service       │ 外食業特定技能1号技能測定試験            │ 1    │ OTAFF           │
-│ Food Service       │ 外食業特定技能2号評価試験                │ 2    │ OTAFF           │
-│ Food Manufacturing │ 飲食料品製造業特定技能1号評価試験        │ 1    │ OTAFF           │
-│ Food Manufacturing │ 飲食料品製造業特定技能2号評価試験        │ 2    │ OTAFF           │
-│ Agriculture        │ 農業技能測定試験1号 (耕種 / 畜産)        │ 1    │ NCA (ASAT)      │
-│ Agriculture        │ 農業技能測定試験2号                      │ 2    │ NCA (ASAT)      │
-│ Auto Maintenance   │ 自動車整備分野特定技能1号評価試験        │ 1    │ JASPA           │
-│ Auto Maintenance   │ 自動車整備分野特定技能2号評価試験        │ 2    │ JASPA           │
-│ Fishery            │ 1号漁業特定技能評価試験 (漁業)           │ 1    │ Japan Fisheries │
-│ Fishery            │ 1号漁業特定技能評価試験 (養殖業)         │ 1    │ Japan Fisheries │
-│ Fishery            │ 2号漁業特定技能評価試験 (漁業)           │ 2    │ Japan Fisheries │
-│ Fishery            │ 2号漁業特定技能評価試験 (養殖業)         │ 2    │ Japan Fisheries │
-│ Construction       │ 建設分野特定技能1号評価試験 (3区分)      │ 1    │ JAC             │
-│ Construction       │ 建設分野特定技能2号評価試験              │ 2    │ JAC             │
-│ Accommodation      │ 宿泊分野特定技能1号評価試験              │ 1    │ CAIPT           │
-│ Accommodation      │ 宿泊分野特定技能2号評価試験              │ 2    │ CAIPT           │
-│ Manufacturing      │ 製造分野特定技能1号評価試験 (17区分)     │ 1    │ JAIM            │
-│ Manufacturing      │ 製造分野特定技能2号評価試験 (3区分)      │ 2    │ JAIM            │
-│ Wood Industry      │ 木材産業特定技能1号測定試験              │ 1    │ Zenmokuren      │
-│ Business Career    │ 特定技能外国人向けビジネス・キャリア     │ 2    │ JAVADA          │
-│                    │ 検定試験 (生産管理プランニング / オペ)   │      │                 │
-└────────────────────┴──────────────────────────────────────────┴──────┴─────────────────┘
+┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│                                       PROMETRIC & NATIONAL CBT SSW EXAM MATRIX                                    │
+├────────────────────┬──────────────────────────────────────────┬──────┬─────────────────┬──────────┬──────┬────────┤
+│ Sector             │ Exam Name (Japanese / English)           │ Tier │ Sponsoring Body │ Platform │ Time │ Pass   │
+├────────────────────┼──────────────────────────────────────────┼──────┼─────────────────┼──────────┼──────┼────────┤
+│ Language (General) │ 国際交流基金日本語基礎テスト (JFT-Basic) │ 1    │ Japan Foundation│ Prometric│ 60 m │ 80%    │
+│ Nursing Care       │ 介護特定技能評価試験 (技能 - 45問)       │ 1    │ MHLW            │ Prometric│ 60 m │ 60%    │
+│ Nursing Care       │ 介護日本語評価試験 (日本語 - 15問)       │ 1    │ MHLW            │ Prometric│ 30 m │ 60%    │
+│ Building Cleaning  │ ビルクリーニング評価試験 (学科20+実技30) │ 1    │ JBMA / MHLW     │ Pearson  │ 50 m │ 60%/60%│
+│ Food Service       │ 外食業特定技能1号技能測定試験 (45問)     │ 1    │ OTAFF / JFnet   │ Prometric│ 60 m │ 65%    │
+│ Food Service       │ 外食業特定技能2号評価試験                │ 2    │ OTAFF / JFnet   │ Prometric│ 60 m │ 65%    │
+│ Food Manufacturing │ 飲食料品製造業特定技能1号 (学科30+実技10)│ 1    │ OTAFF / MAFF    │ Prometric│ 60 m │ 65%    │
+│ Food Manufacturing │ 飲食料品製造業特定技能2号評価試験        │ 2    │ OTAFF / MAFF    │ Prometric│ 60 m │ 65%    │
+│ Agriculture        │ 農業技能測定試験1号 (耕種 - 29p Bank)    │ 1    │ NCA (ASAT)      │ Prometric│ 60 m │ 60%    │
+│ Agriculture        │ 農業技能測定試験1号 (畜産)               │ 1    │ NCA (ASAT)      │ Prometric│ 60 m │ 60%    │
+│ Agriculture        │ 農業技能測定試験2号                      │ 2    │ NCA (ASAT)      │ Prometric│ 60 m │ 60%    │
+│ Auto Maintenance   │ 自動車整備分野特定技能1号 (学科30+実技3) │ 1    │ JASPA / MLIT    │ Prometric│ 60 m │ 60%    │
+│ Auto Maintenance   │ 自動車整備分野特定技能2号評価試験        │ 2    │ JASPA / MLIT    │ Prometric│ 60 m │ 60%    │
+│ Fishery            │ 1号漁業特定技能評価試験 (漁業 / 養殖業)  │ 1    │ Japan Fisheries │ Prometric│ 60 m │ 60%    │
+│ Fishery            │ 2号漁業特定技能評価試験 (漁業 / 養殖業)  │ 2    │ Japan Fisheries │ Prometric│ 60 m │ 60%    │
+│ Construction       │ 建設分野特定技能1号評価試験 (3区分 30問) │ 1    │ JAC / MLIT      │ Prometric│ 60 m │ 60%    │
+│ Construction       │ 建設分野特定技能2号評価試験              │ 2    │ JAC / MLIT      │ Prometric│ 60 m │ 60%    │
+│ Accommodation      │ 宿泊分野特定技能1号評価試験 (30問)       │ 1    │ CAIPT / JTA     │ Prometric│ 45 m │ 65%    │
+│ Accommodation      │ 宿泊分野特定技能2号評価試験              │ 2    │ CAIPT / JTA     │ Prometric│ 45 m │ 65%    │
+│ Manufacturing      │ 製造分野特定技能1号 (17区分 学科30+実技10│ 1    │ JAIM / METI     │ Prometric│ 80 m │ 65%/60%│
+│ Manufacturing      │ 製造分野特定技能2号評価試験 (3区分)      │ 2    │ JAIM / METI     │ Prometric│ 80 m │ 65%/60%│
+│ Aviation           │ 航空分野特定技能評価 (GH / 整備 各40問)  │ 1    │ JAEA / MLIT JCAB│ Prometric│ 60 m │ 65%    │
+│ Transport          │ 自動車運送業特定技能1号 (トラック・バス) │ 1    │ ClassNK / MLIT  │ Prometric│ 60 m │ 60%    │
+│ Railway            │ 鉄道分野特定技能1号 (車両整備 / 運輸係員)│ 1    │ RMA / JTOA /MLIT│ Consort. │ 60 m │ 60%    │
+│ Forestry           │ 林業技能測定試験1号 (育林 / 素材生産)    │ 1    │ Forestry Agency │ Agency   │ 60 m │ 60%    │
+│ Wood Industry      │ 木材産業特定技能1号測定試験 (30問)       │ 1    │ Zenmokuren/MAFF │ Prometric│ 60 m │ 60%    │
+│ Business Career    │ 特定技能外国人向けビジネス・キャリア     │ 2    │ JAVADA          │ Prometric│ 90 m │ 70%    │
+│                    │ 検定試験 (生産管理プランニング / オペ)   │      │                 │          │      │        │
+└────────────────────┴──────────────────────────────────────────┴──────┴─────────────────┴──────────┴──────┴────────┘
 ```
 
 ---

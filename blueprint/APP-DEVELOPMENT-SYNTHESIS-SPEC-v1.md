@@ -336,6 +336,22 @@ Menguji kesiapan pekerja dalam menuntut hak asuransi kecelakaan kerja tanpa rasa
 
 ---
 
+### 6.4 Mesin Simulasi Ujian Prometric CBT & Bank Soal Resmi 18 Sektor
+Berdasarkan kurasi 93 buku teks dan bank soal resmi kementerian (`reference-books/ssw/` & `NUGGET-CURRICULUM-SSW-MASTER-SYLLABUS-v1.md`):
+1. **Dukungan Modalitas Ujian Fleksibel:**
+   - *Model True/False (○×):* Digunakan pada sektor Pertanian, Perikanan, Perawatan Mobil, dan Galangan Kapal.
+   - *Model Pilihan Ganda (3-Pilihan & 4-Pilihan):* Digunakan pada Kaigo (4 pilihan), Pengolahan Makanan Pabrik OTAFF (3 pilihan), dan Restoran (4 pilihan).
+   - *Model Uji Hotspot Gambar & Diagram Teknis:* Identifikasi komponen mesin, alat ukur (mikrometer, torsi), diagram aliran K3, dan foto spesies ikan laut.
+2. **Mesin Penilaian Otomatis Ambang Kelulusan Regulasi:**
+   - Kaigo (MHLW): Keterampilan $\ge 60\%$, Bahasa Kaigo $\ge 60\%$.
+   - Manufaktur Produk Industri (JAIM): Teori $\ge 65\%$, Praktik $\ge 60\%$.
+   - Pembersihan Gedung (JBMA / Pearson VUE): Teori $\ge 60\%$, Praktik $\ge 60\%$.
+   - Pangan & Restoran (OTAFF / JFnet): $\ge 65\%$.
+   - Pertanian, Perikanan, Mobil, Konstruksi: $\ge 60\%$.
+3. **Timer Real-Time & Countdown Lockout:** Meniru antarmuka Prometric asli dengan batas waktu 30 hingga 80 menit, NDA 3 menit, dan tutorial interaktif.
+
+---
+
 ## 7. ENGINE 6: ARSITEKTUR UI/UX BEBAS BEBAN KOGNITIF (CLT & ANTI-MALU)
 
 Sesuai Cognitive Load Theory (Sweller 1988 [CL-01]) dan penelitian Foreign Language Classroom Anxiety (Horwitz et al. 1986 [ID-14]):
