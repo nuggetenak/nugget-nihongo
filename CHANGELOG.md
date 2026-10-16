@@ -3,6 +3,36 @@
 > Catatan pembaruan ini disinkronkan secara otomatis dari `src/lib/data/patchNotes.ts`
 > Single Source of Truth: Jalankan `npm run changelog` atau `npm run build` untuk memutakhirkan.
 
+## v19.3.3 (16 Oktober 2026) — Homepage 4-Tier Navigation, 3D Kana Flipcards, Kanji Stroke Physics & Zero-Clipping Modal Portals
+
+### Sorotan Pembaruan (Highlights)
+- Navigasi Beranda Terstruktur (4 Domain Belajar): Menghapus tab tumpang tindih "8 Jalur & SSW" dan "Level JLPT", digantikan 4 domain mandiri: Tata Bahasa (N5–N1), Kosakata & Kanji (N5–N1), Vokasional SSW (Kaigo, Gaishoku, Kensetsu), dan Statistik & Pencapaian.
+- Flashcard Huruf Kana 3D Interaktif: Kartu Hiragana dan Katakana kini dapat dibalik 3D secara mulus dengan tombol pelafalan audio TTS mandiri untuk karakter utama dan kosakata contoh.
+- Panduan Pembacaan Lengkap pada Contoh Kosakata: Seluruh contoh kata kana kini menampilkan kanji yang langsung didampingi pembacaan furigana dalam tanda kurung 【...】 (contoh: 朝【あさ】 (Pagi)), mencegah kebingungan pembelajar pemula.
+- Fisika Goresan Kaligrafi Presisi Zero-Glitch: Animasi goresan kanji kini tuntas sampai goresan pamungkas dengan keyframe remount dinamis, goresan pendek titik terlindungi dari artefak berkedip, serta contoh kosakata terstruktur per bacaan Onyomi/Kunyomi.
+- Latar Belakang Modal Gelap Penuh (Zero-Clipping): Seluruh modal dan drawer dimount ke document.body via React Portal sehingga latar gelap memayungi 100% layar tanpa celah terang di bawah navbar atau status bar ponsel.
+
+### Rincian Perubahan (Details)
+#### Desain Beranda & Navigasi (HomePage)
+- Pengelompokan materi ke dalam 4 tab terpisah: Tata Bahasa, Kosakata & Kanji, Vokasional SSW, dan Statistik.
+- Penyediaan kartu progres visual dengan jumlah pola tata bahasa dan kosakata riil per level JLPT N5–N1.
+- Modul khusus Vokasional SSW dengan penjelasan visa kerja terampil Jepang dan kurikulum 3 sektor kerja (Kaigo, Gaishoku, Kensetsu).
+
+#### Huruf Kana & Flashcard Interaktif
+- Penerapan efek 3D flip card (.perspective-1000, .transform-style-3d, .backface-hidden).
+- Pelengkapan data contoh kata untuk seluruh 25 Dakuon/Handakuon dan 36 Yoon kombinasi kana di kanaData.ts.
+- Integrasi pemutar audio pelafalan TTS pada setiap karakter huruf dan contoh kosakata.
+
+#### Studio Kaligrafi Kanji (Kanji Dojo)
+- Penyempurnaan timing delay dan keyframe remount (--stroke-len) untuk memastikan goresan pamungkas terputar tuntas.
+- Pengelompokan kosakata berdasarkan bacaan Kunyomi dan Onyomi dengan kalimat contoh kontekstual dan toggle ekspansi bacaan.
+
+#### Arsitektur Modal & Viewport Responsif
+- Pemindahan seluruh dialog ke document.body via createPortal (KanjiStrokeModal, DetailModal, KanaChartModal, PatchNotesModal, BadgesModal, StudyToolboxModal, CatPlacementModal, KotowazaModal).
+- Penambahan padding aman pb-[calc(5.5rem+env(safe-area-inset-bottom))] untuk navigasi bawah ponsel.
+
+---
+
 ## v19.3.2 (16 Oktober 2026) — Dynamic Kanji Ink Physics, Integrated Real-World Examples, 9 Textbook Covers & Zero-Clipping Modal Portals
 
 ### Sorotan Pembaruan (Highlights)

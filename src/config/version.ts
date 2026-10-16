@@ -3,15 +3,15 @@
 //  Single source of truth across React SPA, Service Worker, and PWA
 // ══════════════════════════════════════════════════════════════════
 
-export const APP_VERSION = 'v19.3.2';
-export const APP_VERSION_NUMBER = '19.3.2';
-export const APP_RELEASE_NAME = 'Dynamic Kanji Ink Physics, Integrated Real-World Examples, 9 Textbook Covers & Zero-Clipping Modal Portals';
+export const APP_VERSION = 'v19.3.3';
+export const APP_VERSION_NUMBER = '19.3.3';
+export const APP_RELEASE_NAME = 'Homepage 4-Tier Navigation, 3D Kana Flipcards, Kanji Stroke Physics & Zero-Clipping Modal Portals';
 export const APP_BUILD_DATE = '2026-10-16';
 
 export const APP_CHANGELOG_HIGHLIGHTS = [
-  'Animasi Goresan Kanji Tuntas & Halus: Mengatasi kendala goresan terakhir yang tidak terputar serta goresan titik pendek yang berkedip dengan perhitungan panjang busur dinamis (--stroke-len) dan interval pemutaran yang menunggu animasi selesai sempurna.',
-  'Contoh Kata & Kalimat Nyata per Bacaan: Setiap kartu Onyomi dan Kunyomi kini langsung menampilkan kosakata nyata berbahasa Jepang beserta terjemahan bahasa Indonesia, contoh kalimat kontekstual, dan tombol pelafalan audio TTS.',
-  'Latar Belakang Modal Gelap Penuh (Zero-Clipping): Seluruh modal (Kanji Dojo, Detail Kosakata/Grammar, Tabel Kana) dipindahkan ke document.body via React Portal sehingga latar gelap memayungi seluruh layar tanpa ada celah terang di bilah atas.',
-  'Galeri 9 Sampul Buku Teks Resmi: Koleksi sampul ilustrasi bergaya editorial Jepang klasik untuk 9 seri buku teks (Minna no Nihongo, Genki, Marugoto, Irodori, Tobira, Shin Kanzen Master, Sou Matome, Dekiru Nihongo, dan Quartet).',
-  'Pembaruan Angka Cakupan Materi: Sinkronisasi statistik kosakata JLPT pada Materi Hub dengan basis data riil (N5: 1.321, N4: 1.286, N3: 2.580, N2: 2.104, N1: 3.217; Total: 10.508 kata dan 859 tata bahasa).',
+  'Navigasi Beranda Terstruktur (4 Domain Belajar): Menghapus tab tumpang tindih "8 Jalur & SSW" dan "Level JLPT", digantikan 4 domain mandiri: Tata Bahasa (N5–N1), Kosakata & Kanji (N5–N1), Vokasional SSW (Kaigo, Gaishoku, Kensetsu), dan Statistik & Pencapaian.',
+  'Flashcard Huruf Kana 3D Interaktif: Kartu Hiragana dan Katakana kini dapat dibalik 3D secara mulus dengan tombol pelafalan audio TTS mandiri untuk karakter utama dan kosakata contoh.',
+  'Panduan Pembacaan Lengkap pada Contoh Kosakata: Seluruh contoh kata kana kini menampilkan kanji yang langsung didampingi pembacaan furigana dalam tanda kurung 【...】 (contoh: 朝【あさ】 (Pagi)), mencegah kebingungan pembelajar pemula.',
+  'Fisika Goresan Kaligrafi Presisi Zero-Glitch: Animasi goresan kanji kini tuntas sampai goresan pamungkas dengan keyframe remount dinamis, goresan pendek titik terlindungi dari artefak berkedip, serta contoh kosakata terstruktur per bacaan Onyomi/Kunyomi.',
+  'Latar Belakang Modal Gelap Penuh (Zero-Clipping): Seluruh modal dan drawer dimount ke document.body via React Portal sehingga latar gelap memayungi 100% layar tanpa celah terang di bawah navbar atau status bar ponsel.',
 ];
