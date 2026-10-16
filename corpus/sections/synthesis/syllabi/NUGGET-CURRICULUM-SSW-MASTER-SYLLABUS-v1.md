@@ -97,9 +97,35 @@ Sesuai regulasi resmi Badan Pelayanan Imigrasi Jepang (*Immigration Services Age
     └── Sektor 18: Automobile Transport & Logistics (自動車運送業: トラック・バス・タクシー) & Railway (鉄道) [MLIT]
 ```
 
+### 2.1 Direktori Lengkap 19 Dokumen Silabus Sektor Tokutei Ginou Resmi (SSW Suite)
+
+Setiap sektor telah dioperasionalkan secara terpisah dalam dokumen silabus mendalam berkurasi penuh di direktori [`corpus/sections/synthesis/syllabi/ssw/`](file:///c:/Users/Timedoor/Downloads/nugget%20nihonggo%20project/nugget-nihongo-research/corpus/sections/synthesis/syllabi/ssw/):
+
+| No | Kode Sektor | Sektor Industri Resmi | Lembaga Penguji & CBT | Tautan Dokumen Silabus Lengkap |
+|---|---|---|---|---|
+| 01 | `SSW-CARE-01` | Nursing Care / Eldercare (介護) | MHLW / Prometric (2 Ujian: Skills + JPN) | [`SSW-01-KAIGO-ELDERCARE-SYLLABUS.md`](file:///c:/Users/Timedoor/Downloads/nugget%20nihonggo%20project/nugget-nihongo-research/corpus/sections/synthesis/syllabi/ssw/SSW-01-KAIGO-ELDERCARE-SYLLABUS.md) |
+| 02 | `SSW-CLEAN-01` | Building Cleaning Management (ビルクリーニング) | JBMA / Pearson VUE CBT 2025 | [`SSW-02-BUILDING-CLEANING-SYLLABUS.md`](file:///c:/Users/Timedoor/Downloads/nugget%20nihonggo%20project/nugget-nihongo-research/corpus/sections/synthesis/syllabi/ssw/SSW-02-BUILDING-CLEANING-SYLLABUS.md) |
+| 03 | `SSW-MFG-01` | Machine Parts & Tooling / Sokeizai (素形材産業) | METI / JAIM & Prometric (80m CBT) | [`SSW-03-SOKEIZAI-TOOLING-SYLLABUS.md`](file:///c:/Users/Timedoor/Downloads/nugget%20nihonggo%20project/nugget-nihongo-research/corpus/sections/synthesis/syllabi/ssw/SSW-03-SOKEIZAI-TOOLING-SYLLABUS.md) |
+| 04 | `SSW-MFG-02` | Industrial Machinery Manufacturing (産業機械製造業) | METI / JAIM & Prometric (80m CBT) | [`SSW-04-INDUSTRIAL-MACHINERY-SYLLABUS.md`](file:///c:/Users/Timedoor/Downloads/nugget%20nihonggo%20project/nugget-nihongo-research/corpus/sections/synthesis/syllabi/ssw/SSW-04-INDUSTRIAL-MACHINERY-SYLLABUS.md) |
+| 05 | `SSW-MFG-03` | Electrical & Electronics (電気電子情報関連産業) | METI / JAIM & Prometric (80m CBT) | [`SSW-05-ELECTRICAL-ELECTRONICS-SYLLABUS.md`](file:///c:/Users/Timedoor/Downloads/nugget%20nihonggo%20project/nugget-nihongo-research/corpus/sections/synthesis/syllabi/ssw/SSW-05-ELECTRICAL-ELECTRONICS-SYLLABUS.md) |
+| 06 | `SSW-AUTO-01` | Automobile Repair & Maintenance (自動車整備業) | MLIT / JASPA & Prometric | [`SSW-06-AUTOMOBILE-MAINTENANCE-SYLLABUS.md`](file:///c:/Users/Timedoor/Downloads/nugget%20nihonggo%20project/nugget-nihongo-research/corpus/sections/synthesis/syllabi/ssw/SSW-06-AUTOMOBILE-MAINTENANCE-SYLLABUS.md) |
+| 07 | `SSW-SHIP-01` | Shipbuilding & Marine Machinery (造船・舶用工業) | MLIT / ClassNK (4 Kejuruan) | [`SSW-07-SHIPBUILDING-MARINE-SYLLABUS.md`](file:///c:/Users/Timedoor/Downloads/nugget%20nihonggo%20project/nugget-nihongo-research/corpus/sections/synthesis/syllabi/ssw/SSW-07-SHIPBUILDING-MARINE-SYLLABUS.md) |
+| 08 | `SSW-AVIA-01` | Aviation Industry (航空業: Ramp & Maint.) | MLIT JCAB / JAEA & Prometric | [`SSW-08-AVIATION-INDUSTRY-SYLLABUS.md`](file:///c:/Users/Timedoor/Downloads/nugget%20nihonggo%20project/nugget-nihongo-research/corpus/sections/synthesis/syllabi/ssw/SSW-08-AVIATION-INDUSTRY-SYLLABUS.md) |
+| 09 | `SSW-CONST-01` | Construction Industry (建設業: 土木・建築・設備) | MLIT / JAC & Prometric (3 Tracks d/k/l) | [`SSW-09-CONSTRUCTION-INDUSTRY-SYLLABUS.md`](file:///c:/Users/Timedoor/Downloads/nugget%20nihonggo%20project/nugget-nihongo-research/corpus/sections/synthesis/syllabi/ssw/SSW-09-CONSTRUCTION-INDUSTRY-SYLLABUS.md) |
+| 10 | `SSW-AGRI-01` | Agriculture: Crop Cultivation (農業: 耕種農業) | MAFF / ASAT & Prometric | [`SSW-10-AGRICULTURE-CROP-FARMING-SYLLABUS.md`](file:///c:/Users/Timedoor/Downloads/nugget%20nihonggo%20project/nugget-nihongo-research/corpus/sections/synthesis/syllabi/ssw/SSW-10-AGRICULTURE-CROP-FARMING-SYLLABUS.md) |
+| 11 | `SSW-AGRI-02` | Agriculture: Livestock Farming (農業: 畜産農業) | MAFF / ASAT & Prometric | [`SSW-11-AGRICULTURE-LIVESTOCK-SYLLABUS.md`](file:///c:/Users/Timedoor/Downloads/nugget%20nihonggo%20project/nugget-nihongo-research/corpus/sections/synthesis/syllabi/ssw/SSW-11-AGRICULTURE-LIVESTOCK-SYLLABUS.md) |
+| 12 | `SSW-FISH-01` | Fishery & Aquaculture (漁業・養殖業) | MAFF / Suisankai & Prometric | [`SSW-12-FISHERIES-AQUACULTURE-SYLLABUS.md`](file:///c:/Users/Timedoor/Downloads/nugget%20nihonggo%20project/nugget-nihongo-research/corpus/sections/synthesis/syllabi/ssw/SSW-12-FISHERIES-AQUACULTURE-SYLLABUS.md) |
+| 13 | `SSW-FOREST-01` | Forestry Industry (林業: 育林・伐倒) | MAFF / Forestry Agency (Linya-chou) | [`SSW-13-FORESTRY-INDUSTRY-SYLLABUS.md`](file:///c:/Users/Timedoor/Downloads/nugget%20nihonggo%20project/nugget-nihongo-research/corpus/sections/synthesis/syllabi/ssw/SSW-13-FORESTRY-INDUSTRY-SYLLABUS.md) |
+| 14 | `SSW-TIMBER-01` | Timber & Wood Processing (木材産業: 製材・合板) | MAFF / Forestry Agency & JAWIC | [`SSW-14-TIMBER-PROCESSING-SYLLABUS.md`](file:///c:/Users/Timedoor/Downloads/nugget%20nihonggo%20project/nugget-nihongo-research/corpus/sections/synthesis/syllabi/ssw/SSW-14-TIMBER-PROCESSING-SYLLABUS.md) |
+| 15 | `SSW-FOOD-01` | Food & Beverage Manufacturing (飲食料品製造業) | MAFF / OTAFF & Prometric (Ver 5.1) | [`SSW-15-FOOD-MANUFACTURING-SYLLABUS.md`](file:///c:/Users/Timedoor/Downloads/nugget%20nihonggo%20project/nugget-nihongo-research/corpus/sections/synthesis/syllabi/ssw/SSW-15-FOOD-MANUFACTURING-SYLLABUS.md) |
+| 16 | `SSW-REST-01` | Food Service / Restaurant (外食業) | MAFF / JFnet & OTAFF / Prometric | [`SSW-16-FOOD-SERVICE-RESTAURANT-SYLLABUS.md`](file:///c:/Users/Timedoor/Downloads/nugget%20nihonggo%20project/nugget-nihongo-research/corpus/sections/synthesis/syllabi/ssw/SSW-16-FOOD-SERVICE-RESTAURANT-SYLLABUS.md) |
+| 17 | `SSW-HOSP-01` | Accommodation & Hospitality (宿泊業) | MLIT JTA / CAIPT & Prometric | [`SSW-17-HOSPITALITY-ACCOMMODATION-SYLLABUS.md`](file:///c:/Users/Timedoor/Downloads/nugget%20nihonggo%20project/nugget-nihongo-research/corpus/sections/synthesis/syllabi/ssw/SSW-17-HOSPITALITY-ACCOMMODATION-SYLLABUS.md) |
+| 18 | `SSW-TRANS-01` | Automobile Transport: Truck, Bus, Taxi (自動車運送) | MLIT / JTA & NBA & Prometric | [`SSW-18-AUTOMOBILE-TRANSPORT-SYLLABUS.md`](file:///c:/Users/Timedoor/Downloads/nugget%20nihonggo%20project/nugget-nihongo-research/corpus/sections/synthesis/syllabi/ssw/SSW-18-AUTOMOBILE-TRANSPORT-SYLLABUS.md) |
+| 19 | `SSW-RAIL-01` | Railway Operations & Rolling Stock (鉄道業) | MLIT / RMA & JTOA & Prometric | [`SSW-19-RAILWAY-OPERATIONS-SYLLABUS.md`](file:///c:/Users/Timedoor/Downloads/nugget%20nihonggo%20project/nugget-nihongo-research/corpus/sections/synthesis/syllabi/ssw/SSW-19-RAILWAY-OPERATIONS-SYLLABUS.md) |
+
 ---
 
-## 3. SILABUS DETAIL 18 SEKTOR BERDASARKAN DOKUMEN PRIMER RESMI
+## 3. RINGKASAN SILABUS SEKTOR UTAMA BERDASARKAN DOKUMEN PRIMER RESMI
 
 ---
 
