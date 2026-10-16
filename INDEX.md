@@ -64,6 +64,7 @@ nugget-nihongo-research/
 │       └── DOI-VERIFICATION-TRACKER.md        ← CrossRef & publisher audit registry (100% accounted for, 539+ DOIs)
 │
 ├── blueprint/
+│   ├── APP-DEVELOPMENT-SYNTHESIS-SPEC-v1.md  ← Master full-stack application development synthesis & engineering specification
 │   ├── DESIGN-DECISION-MASTER-v1.md          ← 123 citation-grounded design decisions
 │   ├── CURRICULUM-BLUEPRINT-v1.md            ← Authoritative end-to-end curriculum roadmap
 │   ├── METHODOLOGY-PAGE-NARRATIVE-v1.md      ← Public-facing empirical methodology narrative
@@ -140,6 +141,7 @@ nugget-nihongo-research/
 | **Official N2 Syllabus (Jalur F4)** | `corpus/sections/synthesis/syllabi/NUGGET-CURRICULUM-N2-SYLLABUS-v1.md` | Complete 10 Units, 310 N2 grammar points, PT Stages 5–6, SBAR reporting, Keigo soto-uchi, CEFR-J B2 | ✅ Complete |
 | **Official N1 Syllabus (Jalur F5)** | `corpus/sections/synthesis/syllabi/NUGGET-CURRICULUM-N1-SYLLABUS-v1.md` | Complete 10 Units, 200 N1 grammar points, PT Stage 6, Bungo remnants, executive rhetoric, CEFR-J C1 | ✅ Complete |
 | **Official SSW Master Syllabus (Jalur F6)** | `corpus/sections/synthesis/syllabi/NUGGET-CURRICULUM-SSW-MASTER-SYLLABUS-v1.md` | Unified 18-Sector Tokutei Ginou Master Syllabus (4 Clusters, 42 Pain Onomatopoeias, 36 K3 Sims, Rousai 4-Tier) | ✅ Complete |
+| **App Development Synthesis Spec** | `blueprint/APP-DEVELOPMENT-SYNTHESIS-SPEC-v1.md` | Master engineering specification translating all 18 research sections, 8 core engines, data schemas, and CLT UI into full-stack app architecture | ✅ Complete |
 
 ---
 

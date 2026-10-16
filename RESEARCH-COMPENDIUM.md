@@ -78,6 +78,7 @@ nugget-nihongo-research/
 │       └── DOI-VERIFICATION-TRACKER.md        ← CrossRef & publisher audit registry (100% accounted for, 539+ DOIs)
 │
 ├── blueprint/
+│   ├── APP-DEVELOPMENT-SYNTHESIS-SPEC-v1.md  ← Master full-stack application development synthesis & engineering specification
 │   ├── DESIGN-DECISION-MASTER-v1.md          ← 123 citation-grounded engineering & UX decisions
 │   ├── CURRICULUM-BLUEPRINT-v1.md            ← Authoritative end-to-end curriculum roadmap
 │   ├── METHODOLOGY-PAGE-NARRATIVE-v1.md      ← Public-facing empirical methodology narrative

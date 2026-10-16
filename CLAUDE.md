@@ -33,6 +33,7 @@ Research library for the evidence-based Japanese learning platform tailored spec
 | Level Ladder Specification | `corpus/sections/synthesis/LEVEL-LADDER-SPEC-v1.md` | 5-level exit criteria ladder (N5 to N1) |
 | Unified Pedagogical Synthesis | `corpus/sections/synthesis/SECTION18-SYNTHESIS-v1.md` | Unified pedagogical model across Nation's four strands |
 | Canonical Syllabi Suite (N5–N1 & SSW) | `corpus/sections/synthesis/syllabi/` | Authoritative 10-unit syllabi for N5, N4, N3, N2, N1, and 18-Sector SSW Master (Corpus v30 Canonical) |
+| App Development Synthesis Spec | `blueprint/APP-DEVELOPMENT-SYNTHESIS-SPEC-v1.md` | Master full-stack application development synthesis & engineering specification |
 | Methodology Page Narrative | `blueprint/METHODOLOGY-PAGE-NARRATIVE-v1.md` | Public-facing empirical methodology narrative |
 | Platform Research Agenda | `corpus/sections/PLATFORM-RESEARCH-AGENDA.md` | Empirical research studies roadmap (Studies 1–5) |
 
